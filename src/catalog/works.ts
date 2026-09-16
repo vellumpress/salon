@@ -271,7 +271,9 @@ export function worksByForm(form: Form): Work[] {
 }
 
 export async function loadWorkText(id: string): Promise<WorkText> {
-  const response = await fetch(`/catalog/${id}.json`);
+  const response = await fetch(
+    `${import.meta.env.BASE_URL}catalog/${id}.json`,
+  );
   if (!response.ok) {
     throw new Error(`Missing text for ${id}`);
   }

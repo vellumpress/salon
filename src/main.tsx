@@ -58,9 +58,12 @@ const routeTree = rootRoute.addChildren([
   readRoute,
 ]);
 
+const basepath = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
+
 const router = createRouter({
   routeTree,
   defaultPreload: "intent",
+  basepath,
 });
 
 declare module "@tanstack/react-router" {

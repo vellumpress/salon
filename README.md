@@ -38,25 +38,13 @@ Plus Blake, Strindberg, Tagore, and Čapek so the Novels / Stories / Poems / Pla
 
 Texts follow Vellum’s local catalog binds (and Gutenberg/Standard-Ebooks-era public-domain editions where that is how Vellum ships the title). Publication years are historical, not invented.
 
-## Vercel deploy
+## Public URL
 
-This is a Vite SPA. From a GitHub repo:
+Live on GitHub Pages: **https://vellumpress.github.io/vellum-lite/**
 
-1. Import the repository at [vercel.com/new](https://vercel.com/new).
-2. Framework preset: **Vite**.
-3. Build command: `npm run build`.
-4. Output directory: `dist`.
-5. Deploy.
+Pushes to `main` build with Vite (`base` `/vellum-lite/`) and deploy `dist/` via `.github/workflows/deploy-pages.yml`. Deep links fall back through `404.html` (a copy of `index.html`).
 
-`vercel.json` already rewrites every path to `index.html`, so `/read/$workId`, `/you`, and `/shuffle` work on refresh.
-
-CLI alternative:
-
-```bash
-npx vercel
-```
-
-No environment variables are required.
+`vercel.json` remains for anyone who still deploys to Vercel; the public HTTPS URL for this repo is the Pages site above.
 
 ## Using it
 
