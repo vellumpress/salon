@@ -1,25 +1,22 @@
 import { useMemo, useState } from "react";
-import { useNavigate } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import {
   FORM_RAILS,
   WORKS,
-  getWork,
   searchWorks,
   worksByForm,
 } from "../catalog/works";
 import { visitSeed, seededShuffle } from "../lib/hash";
 import { fillSequence } from "../lib/mondrian";
-import { randomWork } from "../lib/shuffle";
-import { setLastShuffle } from "../lib/storage";
+import { continueWorks, favoriteWorks, progressRatio } from "../lib/shelf";
 import { useShelf } from "../lib/use-shelf";
-import { ShelfRail, progressRatio } from "../components/ShelfRail";
+import { Mark } from "../components/Mark";
+import { ShelfRail } from "../components/ShelfRail";
 import { WorkCard } from "../components/WorkCard";
 
 export function HomePage() {
-  const navigate = useNavigate();
   const progress = useShelf((s) => s.progress);
   const favorites = useShelf((s) => s.favorites);
-  const lastShuffle = useShelf((s) => s.lastShuffle);
   const [query, setQuery] = useState("");
   const visit = visitSeed();
   const searching = Boolean(query.trim());
@@ -33,50 +30,17 @@ export function HomePage() {
     [curated.length, visit],
   );
   const jumpBack = useMemo(
-    () =>
-      WORKS.filter((work) => {
-        const item = progress[work.id];
-        return Boolean(item?.entered && (item.paragraphIndex > 0 || item.scrollRatio > 0));
-      })
-        .sort(
-          (a, b) =>
-            (progress[b.id]?.lastOpenedAt ?? 0) -
-            (progress[a.id]?.lastOpenedAt ?? 0),
-        )
-        .slice(0, 12),
+    () => continueWorks({ progress }).slice(0, 12),
     [progress],
   );
-  const favoriteWorks = useMemo(
-    () =>
-      favorites
-        .map((id) => getWork(id))
-        .filter((work): work is NonNullable<typeof work> => Boolean(work)),
+  const liked = useMemo(
+    () => favoriteWorks({ favorites }),
     [favorites],
   );
 
-  function shuffleNow() {
-    const work = randomWork(lastShuffle ?? undefined);
-    setLastShuffle(work.id);
-    void navigate({ to: "/read/$workId", params: { workId: work.id } });
-  }
-
   return (
     <main className="board board-alive">
-      <div className="cell-mark flex bg-paper">
-        <span className="flex h-full min-w-0 flex-1 items-center self-stretch bg-paper px-4 font-display text-xl font-medium tracking-tight text-ink sm:text-2xl">
-          Vellum
-          <span className="ml-2 font-sans text-[0.65rem] uppercase tracking-[0.14em] text-muted">
-            Lite
-          </span>
-        </span>
-        <button
-          type="button"
-          onClick={shuffleNow}
-          className="flex h-full shrink-0 items-center self-stretch border-l border-ink/15 bg-paper px-4 font-sans text-sm text-ink"
-        >
-          Shuffle
-        </button>
-      </div>
+      <Mark current="discover" />
 
       <div className="cell-search flex items-stretch bg-paper">
         <label
@@ -126,12 +90,12 @@ export function HomePage() {
           <nav className="cell-more" aria-label="Library">
             <span className="more-kicker">Library</span>
             <div className="more-links">
-              <button type="button" className="more-link" onClick={shuffleNow}>
+              <Link to="/shuffle" className="more-link">
                 Shuffle
-              </button>
-              <span className="more-link text-muted">
-                Public-domain classics, local
-              </span>
+              </Link>
+              <Link to="/you" className="more-link">
+                You
+              </Link>
             </div>
           </nav>
 
@@ -144,10 +108,10 @@ export function HomePage() {
             />
           ) : null}
 
-          {favoriteWorks.length > 0 ? (
+          {liked.length > 0 ? (
             <ShelfRail
               label="Favorites"
-              items={favoriteWorks}
+              items={liked}
               progress={progress}
               visit={visit}
             />

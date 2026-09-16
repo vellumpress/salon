@@ -6,6 +6,7 @@ import {
   saveProgress,
   setFontSize,
   setLastShuffle,
+  startSitting,
   subscribeShelf,
   toggleFavorite,
   type ShelfState,
@@ -37,4 +38,10 @@ export function useReaderPrefs() {
   return { fontSize, bump };
 }
 
-export { markEntered, saveProgress, setLastShuffle, toggleFavorite };
+export {
+  markEntered,
+  saveProgress,
+  setLastShuffle,
+  startSitting,
+  toggleFavorite,
+};

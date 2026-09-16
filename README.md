@@ -1,6 +1,6 @@
 # Vellum Lite
 
-A calm, phone-first reading app for public-domain classics. Same paper/ink Mondrian shelf as [Vellum](https://vellumpress.vercel.app/), cut down to search, shuffle, favorites, and a quiet reader.
+A calm, phone-first reading app for public-domain classics. Same paper/ink Mondrian shelf as [Vellum](https://vellumpress.vercel.app/), cut to three destinations: **Discover**, **Read**, and **You**.
 
 No account. No backend. Progress and favorites live in `localStorage`.
 
@@ -48,7 +48,7 @@ This is a Vite SPA. From a GitHub repo:
 4. Output directory: `dist`.
 5. Deploy.
 
-`vercel.json` already rewrites every path to `index.html`, so `/read/$workId` works on refresh.
+`vercel.json` already rewrites every path to `index.html`, so `/read/$workId`, `/you`, and `/shuffle` work on refresh.
 
 CLI alternative:
 
@@ -60,6 +60,7 @@ No environment variables are required.
 
 ## Using it
 
-- **Home** — quiet header, search (title / author / year), jump-back-in, a seeded “Curated for you” rail, form rails, and favorites.
-- **Shuffle** — one tap, a random local work. No sit-together, no pair codes.
-- **Reader** — optional intro veil and Begin, then clean serif type. Chrome is Home, progress, and font size. Scroll position is saved locally and restored after refresh.
+- **Discover (`/`)** — quiet header (You, not three pillars), search (title / author / year), jump-back-in, curated rail, form rails. Heart on a card is the only save action.
+- **You (`/you`)** — continue, favorites, and light stats (opened / favorites / finished).
+- **Shuffle (`/shuffle`)** — pick a duration, see the title, open it on this phone. No “with a friend.”
+- **Read (`/read/$workId`)** — intro veil with one Begin plus an optional 12 / 20 / Open sit control. Chrome is Back, TOC, a progress bar, optional timer, and type size.

@@ -4,6 +4,8 @@ export type WorkProgress = {
   lastOpenedAt: number;
   entered: boolean;
   completedAt: number | null;
+  sittingStartedAt: number | null;
+  sittingMinutes: number | null;
 };
 
 export type ShelfState = {
@@ -11,6 +13,7 @@ export type ShelfState = {
   progress: Record<string, WorkProgress>;
   fontSize: number;
   lastShuffle: string | null;
+  sittingMinutes: number;
 };
 
 const KEY = "vellum-lite-v1";
@@ -23,6 +26,8 @@ export const EMPTY_PROGRESS: WorkProgress = {
   lastOpenedAt: 0,
   entered: false,
   completedAt: null,
+  sittingStartedAt: null,
+  sittingMinutes: null,
 };
 
 const initial: ShelfState = {
@@ -30,6 +35,7 @@ const initial: ShelfState = {
   progress: {},
   fontSize: 20,
   lastShuffle: null,
+  sittingMinutes: 20,
 };
 
 let state: ShelfState = load();
@@ -50,6 +56,10 @@ function load(): ShelfState {
       fontSize:
         typeof parsed.fontSize === "number" ? parsed.fontSize : initial.fontSize,
       lastShuffle: parsed.lastShuffle ?? null,
+      sittingMinutes:
+        typeof parsed.sittingMinutes === "number"
+          ? parsed.sittingMinutes
+          : initial.sittingMinutes,
     };
   } catch {
     return initial;
@@ -107,6 +117,44 @@ export function markEntered(workId: string) {
   });
 }
 
+export function startSitting(workId: string, minutes: number) {
+  setState((prev) => {
+    const current = prev.progress[workId] ?? EMPTY_PROGRESS;
+    return {
+      ...prev,
+      sittingMinutes: minutes,
+      progress: {
+        ...prev.progress,
+        [workId]: {
+          ...current,
+          entered: true,
+          sittingMinutes: minutes,
+          sittingStartedAt: minutes > 0 ? Date.now() : null,
+          lastOpenedAt: Date.now(),
+        },
+      },
+    };
+  });
+}
+
+export function clearSitting(workId: string) {
+  setState((prev) => {
+    const current = prev.progress[workId] ?? EMPTY_PROGRESS;
+    if (!current.sittingStartedAt && !current.sittingMinutes) return prev;
+    return {
+      ...prev,
+      progress: {
+        ...prev.progress,
+        [workId]: {
+          ...current,
+          sittingStartedAt: null,
+          sittingMinutes: null,
+        },
+      },
+    };
+  });
+}
+
 export function saveProgress(workId: string, patch: Partial<WorkProgress>) {
   setState((prev) => {
     const current = prev.progress[workId] ?? EMPTY_PROGRESS;
@@ -140,6 +188,12 @@ export function saveProgress(workId: string, patch: Partial<WorkProgress>) {
 export function setFontSize(next: number) {
   const fontSize = Math.min(FONT_MAX, Math.max(FONT_MIN, next));
   setState((prev) => (prev.fontSize === fontSize ? prev : { ...prev, fontSize }));
+}
+
+export function setSittingMinutes(minutes: number) {
+  setState((prev) =>
+    prev.sittingMinutes === minutes ? prev : { ...prev, sittingMinutes: minutes },
+  );
 }
 
 export function setLastShuffle(workId: string) {

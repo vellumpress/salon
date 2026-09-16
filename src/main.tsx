@@ -9,6 +9,8 @@ import {
 } from "@tanstack/react-router";
 import { HomePage } from "./routes/HomePage";
 import { ReadPage } from "./routes/ReadPage";
+import { ShufflePage } from "./routes/ShufflePage";
+import { YouPage } from "./routes/YouPage";
 import "./styles.css";
 
 const rootRoute = createRootRoute({
@@ -21,13 +23,40 @@ const indexRoute = createRoute({
   component: HomePage,
 });
 
+const youRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/you",
+  component: YouPage,
+});
+
+const shuffleRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/shuffle",
+  component: ShufflePage,
+});
+
 const readRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/read/$workId",
+  validateSearch: (search: Record<string, unknown>): {
+    sit?: number;
+    from?: string;
+  } => {
+    const sit = Number(search.sit);
+    return {
+      sit: Number.isFinite(sit) ? sit : undefined,
+      from: typeof search.from === "string" ? search.from : undefined,
+    };
+  },
   component: ReadPage,
 });
 
-const routeTree = rootRoute.addChildren([indexRoute, readRoute]);
+const routeTree = rootRoute.addChildren([
+  indexRoute,
+  youRoute,
+  shuffleRoute,
+  readRoute,
+]);
 
 const router = createRouter({
   routeTree,
