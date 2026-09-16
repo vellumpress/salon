@@ -17,13 +17,13 @@ const KEY = "vellum-lite-v1";
 const FONT_MIN = 18;
 const FONT_MAX = 26;
 
-const emptyProgress = (): WorkProgress => ({
+export const EMPTY_PROGRESS: WorkProgress = {
   paragraphIndex: 0,
   scrollRatio: 0,
   lastOpenedAt: 0,
   entered: false,
   completedAt: null,
-});
+};
 
 const initial: ShelfState = {
   favorites: [],
@@ -61,7 +61,9 @@ function persist() {
 }
 
 function setState(patch: Partial<ShelfState> | ((prev: ShelfState) => ShelfState)) {
-  state = typeof patch === "function" ? patch(state) : { ...state, ...patch };
+  const next = typeof patch === "function" ? patch(state) : { ...state, ...patch };
+  if (next === state) return;
+  state = next;
   persist();
   listeners.forEach((fn) => fn());
 }
@@ -89,7 +91,8 @@ export function toggleFavorite(workId: string) {
 
 export function markEntered(workId: string) {
   setState((prev) => {
-    const current = prev.progress[workId] ?? emptyProgress();
+    const current = prev.progress[workId] ?? EMPTY_PROGRESS;
+    if (current.entered) return prev;
     return {
       ...prev,
       progress: {
@@ -104,12 +107,18 @@ export function markEntered(workId: string) {
   });
 }
 
-export function saveProgress(
-  workId: string,
-  patch: Partial<WorkProgress>,
-) {
+export function saveProgress(workId: string, patch: Partial<WorkProgress>) {
   setState((prev) => {
-    const current = prev.progress[workId] ?? emptyProgress();
+    const current = prev.progress[workId] ?? EMPTY_PROGRESS;
+    const paragraphIndex = patch.paragraphIndex ?? current.paragraphIndex;
+    const scrollRatio = patch.scrollRatio ?? current.scrollRatio;
+    const completedAt =
+      patch.completedAt !== undefined ? patch.completedAt : current.completedAt;
+    const samePlace =
+      paragraphIndex === current.paragraphIndex &&
+      Math.abs(scrollRatio - current.scrollRatio) < 0.004 &&
+      Boolean(completedAt) === Boolean(current.completedAt);
+    if (current.entered && samePlace) return prev;
     return {
       ...prev,
       progress: {
@@ -117,6 +126,9 @@ export function saveProgress(
         [workId]: {
           ...current,
           ...patch,
+          paragraphIndex,
+          scrollRatio,
+          completedAt,
           entered: true,
           lastOpenedAt: Date.now(),
         },
@@ -126,17 +138,18 @@ export function saveProgress(
 }
 
 export function setFontSize(next: number) {
-  setState({
-    fontSize: Math.min(FONT_MAX, Math.max(FONT_MIN, next)),
-  });
+  const fontSize = Math.min(FONT_MAX, Math.max(FONT_MIN, next));
+  setState((prev) => (prev.fontSize === fontSize ? prev : { ...prev, fontSize }));
 }
 
 export function setLastShuffle(workId: string) {
-  setState({ lastShuffle: workId });
+  setState((prev) =>
+    prev.lastShuffle === workId ? prev : { ...prev, lastShuffle: workId },
+  );
 }
 
 export function getProgress(workId: string): WorkProgress {
-  return state.progress[workId] ?? emptyProgress();
+  return state.progress[workId] ?? EMPTY_PROGRESS;
 }
 
 export { FONT_MIN, FONT_MAX };

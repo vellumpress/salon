@@ -1,6 +1,6 @@
 import { useCallback, useSyncExternalStore } from "react";
 import {
-  getProgress,
+  EMPTY_PROGRESS,
   getShelf,
   markEntered,
   saveProgress,
@@ -26,7 +26,7 @@ export function useFavorites(): [string[], (workId: string) => void] {
 }
 
 export function useWorkProgress(workId: string): WorkProgress {
-  return useShelf((s) => s.progress[workId] ?? getProgress(workId));
+  return useShelf((s) => s.progress[workId] ?? EMPTY_PROGRESS);
 }
 
 export function useReaderPrefs() {

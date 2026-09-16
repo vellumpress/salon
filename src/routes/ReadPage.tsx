@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useParams } from "@tanstack/react-router";
 import { getWork, loadWorkText, type WorkText } from "../catalog/works";
-import { FONT_MAX, FONT_MIN } from "../lib/storage";
+import { FONT_MAX, FONT_MIN, getProgress } from "../lib/storage";
 import {
   markEntered,
   saveProgress,
@@ -18,7 +18,9 @@ export function ReadPage() {
   const { fontSize, bump } = useReaderPrefs();
   const [text, setText] = useState<WorkText | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [showVeil, setShowVeil] = useState(Boolean(work?.intro && !progress.entered));
+  const [showVeil, setShowVeil] = useState(
+    () => Boolean(work?.intro && !getProgress(workId).entered),
+  );
   const restored = useRef(false);
   const articleRef = useRef<HTMLElement | null>(null);
 
@@ -27,8 +29,8 @@ export function ReadPage() {
     setText(null);
     setError(null);
     restored.current = false;
-    setShowVeil(Boolean(work?.intro && !progress.entered));
-    if (!work) return;
+    setShowVeil(Boolean(work?.intro && !getProgress(workId).entered));
+    if (!work) return undefined;
     loadWorkText(work.id)
       .then((loaded) => {
         if (!cancelled) setText(loaded);
@@ -39,14 +41,13 @@ export function ReadPage() {
     return () => {
       cancelled = true;
     };
-  }, [workId, work]);
+  }, [work, workId]);
 
   const paragraphs = useMemo(() => {
     if (!text) return [];
     return text.chapters.flatMap((chapter) =>
       chapter.paragraphs.map((paragraph, index) => ({
         key: `${chapter.id}-${index}`,
-        chapterId: chapter.id,
         chapterTitle: index === 0 ? chapter.title : null,
         text: paragraph,
       })),
@@ -56,20 +57,20 @@ export function ReadPage() {
   useEffect(() => {
     if (!text || showVeil || restored.current) return;
     restored.current = true;
-    const node =
-      document.querySelector<HTMLElement>(
-        `[data-para="${progress.paragraphIndex}"]`,
-      ) ?? articleRef.current;
-    if (progress.paragraphIndex > 0 && node) {
+    const saved = getProgress(workId);
+    const node = document.querySelector<HTMLElement>(
+      `[data-para="${saved.paragraphIndex}"]`,
+    );
+    if (saved.paragraphIndex > 0 && node) {
       node.scrollIntoView({ block: "start" });
-    } else if (progress.scrollRatio > 0) {
+    } else if (saved.scrollRatio > 0) {
       const max = document.documentElement.scrollHeight - window.innerHeight;
-      window.scrollTo({ top: max * progress.scrollRatio });
+      window.scrollTo({ top: max * saved.scrollRatio });
     }
-  }, [text, showVeil, progress.paragraphIndex, progress.scrollRatio]);
+  }, [text, showVeil, workId]);
 
   useEffect(() => {
-    if (showVeil || !text) return;
+    if (showVeil || !text) return undefined;
     const onScroll = () => {
       const nodes = document.querySelectorAll<HTMLElement>("[data-para]");
       let current = 0;
@@ -90,9 +91,8 @@ export function ReadPage() {
         completedAt: ratio > 0.97 ? Date.now() : null,
       });
     };
-    const timer = window.setInterval(onScroll, 700);
+    const timer = window.setInterval(onScroll, 900);
     window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
     return () => {
       window.clearInterval(timer);
       window.removeEventListener("scroll", onScroll);
@@ -117,8 +117,43 @@ export function ReadPage() {
 
   const percent = Math.round((progress.scrollRatio || 0) * 100);
 
+  if (showVeil) {
+    return (
+      <main className="reader-shell">
+        <div className="veil">
+          <div className="flex items-center justify-between border-b border-ink/15">
+            <Link
+              to="/"
+              className="flex h-12 items-center px-4 font-sans text-sm text-ink"
+            >
+              Home
+            </Link>
+            <span className="min-w-0 truncate px-2 font-sans text-xs tracking-wide text-muted">
+              {work.author} · {work.year}
+            </span>
+            <FavoriteButton workId={work.id} compact className="mr-2 border border-ink/20" />
+          </div>
+          <div className="veil-body">
+            <h1 className="veil-title">{work.title}</h1>
+            <p className="veil-note">{work.intro}</p>
+          </div>
+          <button
+            type="button"
+            className="veil-action-full"
+            onClick={() => {
+              markEntered(work.id);
+              setShowVeil(false);
+            }}
+          >
+            {progress.paragraphIndex > 0 ? "Continue" : "Begin"}
+          </button>
+        </div>
+      </main>
+    );
+  }
+
   return (
-    <main className="reader-shell relative">
+    <main className="reader-shell">
       <header className="reader-chrome">
         <Link
           to="/"
@@ -153,31 +188,6 @@ export function ReadPage() {
           </button>
         </div>
       </header>
-
-      {showVeil ? (
-        <div className="veil">
-          <div className="flex items-center justify-between px-4 py-3">
-            <span className="font-sans text-xs tracking-wide text-muted">
-              {work.author} · {work.year}
-            </span>
-            <FavoriteButton workId={work.id} compact />
-          </div>
-          <div className="veil-body">
-            <h1 className="veil-title">{work.title}</h1>
-            <p className="veil-note">{work.intro}</p>
-          </div>
-          <button
-            type="button"
-            className="veil-action-full"
-            onClick={() => {
-              markEntered(work.id);
-              setShowVeil(false);
-            }}
-          >
-            {progress.paragraphIndex > 0 ? "Continue" : "Begin"}
-          </button>
-        </div>
-      ) : null}
 
       <article
         ref={articleRef}
