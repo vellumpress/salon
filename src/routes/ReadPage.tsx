@@ -17,7 +17,7 @@ export function ReadPage() {
   const fromShuffle = search.from === "shuffle";
   const preferredSit = getShelf().sittingMinutes;
   const initialSit = asSittingMinutes(
-    isSitMinutes(sitFromUrl)
+    Number.isFinite(sitFromUrl)
       ? sitFromUrl
       : isSitMinutes(preferredSit)
         ? preferredSit

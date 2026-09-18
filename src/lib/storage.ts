@@ -210,6 +210,25 @@ export function endSitting(workId: string) {
   clearSitting(workId);
 }
 
+/** Mark the current sit as elapsed so the hourglass can empty and cue. */
+export function expireSitting(workId: string) {
+  setState((prev) => {
+    const current = prev.progress[workId] ?? EMPTY_PROGRESS;
+    const minutes = current.sittingMinutes;
+    if (!minutes || minutes <= 0 || !current.sittingStartedAt) return prev;
+    return {
+      ...prev,
+      progress: {
+        ...prev.progress,
+        [workId]: {
+          ...current,
+          sittingStartedAt: Date.now() - minutes * 60 * 1000 - 250,
+        },
+      },
+    };
+  });
+}
+
 export function setBreath(
   workId: string,
   breathIndex: number,

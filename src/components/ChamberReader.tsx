@@ -15,6 +15,7 @@ import {
 import {
   clearSitting,
   completeWork,
+  expireSitting,
   setBreath,
   setSittingMinutes,
   startSitting,
@@ -242,8 +243,22 @@ export function ChamberReader({
       return undefined;
     }
     const t = window.setTimeout(() => setSandCue(true), remaining);
-    return () => window.clearTimeout(t);
+    const onVisible = () => {
+      if (document.visibilityState !== "visible") return;
+      if (Date.now() >= endsAt) setSandCue(true);
+    };
+    document.addEventListener("visibilitychange", onVisible);
+    return () => {
+      window.clearTimeout(t);
+      document.removeEventListener("visibilitychange", onVisible);
+    };
   }, [overlay, progress.sittingMinutes, progress.sittingStartedAt]);
+
+  useEffect(() => {
+    const onExpire = () => expireSitting(work.id);
+    window.addEventListener("salon-expire-sit", onExpire);
+    return () => window.removeEventListener("salon-expire-sit", onExpire);
+  }, [work.id]);
 
   useEffect(() => {
     if (overlay !== "none") return undefined;
