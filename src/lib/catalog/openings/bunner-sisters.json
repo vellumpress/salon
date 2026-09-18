@@ -1,0 +1,141 @@
+{
+  "id": "bunner-sisters",
+  "title": "Bunner Sisters",
+  "author": "Edith Wharton",
+  "year": "1916",
+  "note": "Bite-sized ritual sit — Part I · Chapter I.\n\nNear Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Chapter I",
+      "place": "one sitting",
+      "reentry": "In the days when New York's traffic moved at the pace of the drooping horse-car, when society applauded Christine Nilsson at the Academy of Music and basked in the sunsets of the Hudson River School on the walls of the N",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "In the days when New York's traffic moved at the pace of the drooping horse-car, when society applauded Christine Nilsson at the Academy of Music and basked in the sunsets of the Hudson River School on the walls of the National Academy of Design, an inconspicuous shop with a single show-window was intimately and favourably known to the feminine population of the quarter bordering on Stuyvesant Square."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "It was a very small shop, in a shabby basement, in a side-street already doomed to decline; and from the miscellaneous display behind the window-pane, and the brevity of the sign surmounting it (merely “Bunner Sisters” in blotchy gold on a black ground) it would have been difficult for the uninitiated to guess the precise nature of the business carried on within."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "But that was of little consequence, since its fame was so purely local that the customers on whom its existence depended were almost congenitally aware of the exact range of “goods” to be found at Bunner Sisters'."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The house of which Bunner Sisters had annexed the basement was a private dwelling with a brick front, green shutters on weak hinges, and a dress-maker's sign in the window above the shop."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "On each side of its modest three stories stood higher buildings, with fronts of brown stone, cracked and blistered, cast-iron balconies and cat-haunted grass-patches behind twisted railings."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "These houses too had once been private, but now a cheap lunchroom filled the basement of one, while the other announced itself, above the knotty wistaria that clasped its central balcony, as the Mendoza Family Hotel."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "It was obvious from the chronic cluster of refuse-barrels at its area-gate and the blurred surface of its curtainless windows, that the families frequenting the Mendoza Hotel were not exacting in their tastes; though they doubtless indulged in as much fastidiousness as they could afford to pay for, and rather more than their landlord thought they had a right to express."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "These three houses fairly exemplified the general character of the street, which, as it stretched eastward, rapidly fell from shabbiness to squalor, with an increasing frequency of projecting sign-boards, and of swinging doors that softly shut or opened at the touch of red-nosed men and pale little girls with broken jugs."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "The middle of the street was full of irregular depressions, well adapted to retain the long swirls of dust and straw and twisted paper that the wind drove up and down its sad untended length; and toward the end of the day, when traffic had been active, the fissured pavement formed a mosaic of coloured hand-bills, lids of tomato-cans, old shoes, cigar-stumps and banana skins, cemented together by a layer of mud, or veiled in a powdering of dust, as the state of the weather determined."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "The sole refuge offered from the contemplation of this depressing waste was the sight of the Bunner Sisters' window."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Its panes were always well-washed, and though their display of artificial flowers, bands of scalloped flannel, wire hat-frames, and jars of home-made preserves, had the undefinable greyish tinge of objects long preserved in the show-case of a museum, the window revealed a background of orderly counters and white-washed walls in pleasant contrast to the adjoining dinginess."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "The Bunner sisters were proud of the neatness of their shop and content with its humble prosperity."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "It was not what they had once imagined it would be, but though it presented but a shrunken image of their earlier ambitions it enabled them to pay their rent and keep themselves alive and out of debt; and it was long since their hopes had soared higher."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "Now and then, however, among their greyer hours there came one not bright enough to be called sunny, but rather of the silvery twilight hue which sometimes ends a day of storm."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "It was such an hour that Ann Eliza, the elder of the firm, was soberly enjoying as she sat one January evening in the back room which served as bedroom, kitchen and parlour to herself and her sister Evelina."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "In the shop the blinds had been drawn down, the counters cleared and the wares in the window lightly covered with an old sheet; but the shop-door remained unlocked till Evelina, who had taken a parcel to the dyer's, should come back."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "In the back room a kettle bubbled on the stove, and Ann Eliza had laid a cloth over one end of the centre table, and placed near the green-shaded sewing lamp two tea-cups, two plates, a sugar-bowl and a piece of pie."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "The rest of the room remained in a greenish shadow which discreetly veiled the outline of an old-fashioned mahogany bedstead surmounted by a chromo of a young lady in a night-gown who clung with eloquently-rolling eyes to a crag described in illuminated letters as the Rock of Ages; and against the unshaded windows two rocking-chairs and a sewing-machine were silhouetted on the dusk."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "Ann Eliza, her small and habitually anxious face smoothed to unusual serenity, and the streaks of pale hair on her veined temples shining glossily beneath the lamp, had seated herself at the table, and was tying up, with her usual fumbling deliberation, a knobby object wrapped in paper."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Now and then, as she struggled with the string, which was too short, she fancied she heard the click of the shop-door, and paused to listen for her sister; then, as no one came, she straightened her spectacles and entered into renewed conflict with the parcel."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "In honour of some event of obvious importance, she had put on her double-dyed and triple-turned black silk."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "Age, while bestowing on this garment a patine worthy of a Renaissance bronze, had deprived it of whatever curves the wearer's pre-Raphaelite figure had once been able to impress on it; but this stiffness of outline gave it an air of sacerdotal state which seemed to emphasize the importance of the occasion."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "Seen thus, in her sacramental black silk, a wisp of lace turned over the collar and fastened by a mosaic brooch, and her face smoothed into harmony with her apparel, Ann Eliza looked ten years younger than behind the counter, in the heat and burden of the day."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "It would have been as difficult to guess her approximate age as that of the black silk, for she had the same worn and glossy aspect as her dress; but a faint tinge of pink still lingered on her cheek-bones, like the reflection of sunset which sometimes colours the west long after the day is over."
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "id": "passing",
+  "title": "Passing",
+  "author": "Nella Larsen",
+  "year": "1929",
+  "note": "Bite-sized ritual sit — Part I · Chapter I (Encounter).\n\nIrene Redfield sorts her morning mail in Harlem and finds a thin envelope in purple ink—no return address, a hand she knows at once. Clare Kendry, the childhood friend who slipped into another world, is writing again. Nella Larsen’s 1929 New York novel opens on that letter, still unopened, and the careful life it threatens to unsettle.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Chapter I (Encounter)",
+      "place": "one sitting",
+      "reentry": "It was the last letter in Irene Redfield’s little pile of morning mail.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was the last letter in Irene Redfield’s little pile of morning mail."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "After her other ordinary and clearly directed letters the long envelope of thin Italian paper with its almost illegible scrawl seemed out of place and alien."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "And there was, too, something mysterious and slightly furtive about it."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "A thin sly thing which bore no return address to betray the sender."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Not that she hadn’t immediately known who its sender was."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Some two years ago she had one very like it in outward appearance."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Furtive, but yet in some peculiar, determined way a little flaunting."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Purple ink."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Foreign paper of extraordinary size."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "It had been, Irene noted, postmarked in New York the day before."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Her brows came together in a tiny frown."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "The frown, however, was more from perplexity than from annoyance; though there was in her thoughts an element of both."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "She was wholly unable to comprehend such an attitude towards danger as she was sure the letter’s contents would reveal; and she disliked the idea of opening and reading it."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "This, she reflected, was of a piece with all that she knew of Clare Kendry."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "Stepping always on the edge of danger."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Always aware, but not drawing back or turning aside."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Certainly not because of any alarms or feeling of outrage on the part of others."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "And for a swift moment Irene Redfield seemed to see a pale small girl sitting on a ragged blue sofa, sewing pieces of bright red cloth together, while her drunken father, a tall, powerfully built man, raged threateningly up and down the shabby room, bellowing curses and making spasmodic lunges at her which were not the less frightening because they were, for the most part, ineffectual."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "Sometimes he did manage to reach her."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "But only the fact that the child had edged herself and her poor sewing over to the farthermost corner of the sofa suggested that she was in any way perturbed by this menace to herself and her work."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Clare had known well enough that it was unsafe to take a portion of the dollar that was her weekly wage for the doing of many errands for the dressmaker who lived on the top floor of the building of which Bob Kendry was janitor."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "But that knowledge had not deterred her."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "She wanted to go to her Sunday school’s picnic, and she had made up her mind to wear a new dress."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "So, in spite of certain unpleasantness and possible danger, she had taken the money to buy the material for that pathetic little red frock."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "There had been, even in those days, nothing sacrificial in Clare Kendry’s idea of life, no allegiance beyond her own immediate desire."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "She was selfish, and cold, and hard."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "And yet she had, too, a strange capacity of transforming warmth and passion, verging sometimes almost on theatrical heroics."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "Irene, who was a year or more older than Clare, remembered the day that Bob Kendry had been brought home dead, killed in a silly saloon-fight."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "Clare, who was at that time a scant fifteen years old, had just stood there with her lips pressed together, her thin arms folded across her narrow chest, staring down at the familiar pasty-white face of her parent with a sort of disdain in her slanting black eyes."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "For a very long time she had stood like that, silent and staring."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "Then, quite suddenly, she had given way to a torrent of weeping, swaying her thin body, tearing at her bright hair, and stamping her small feet."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "The outburst had ceased as suddenly as it had begun."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "She glanced quickly about the bare room, taking everyone in, even the two policemen, in a sharp look of flashing scorn."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "And, in the next instant, she had turned and vanished through the door."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "Seen across the long stretch of years, the thing had more the appearance of an outpouring of pent-up fury than of an overflow of grief for her dead father; though she had been, Irene admitted, fond enough of him in her own rather catlike way."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "Catlike."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "Certainly that was the word which best described Clare Kendry, if any single word could describe her."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "Sometimes she was hard and apparently without feeling at all; sometimes she was affectionate and rashly impulsive."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "And there was about her an amazing soft malice, hidden well away until provoked."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "Then she was capable of scratching, and very effectively too."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "Or, driven to anger, she would fight with a ferocity and impetuousness that disregarded or forgot any danger; superior strength, numbers, or other unfavourable circumstances."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "How savagely she had clawed those boys the day they had hooted her parent and sung a derisive rhyme, of their own composing, which pointed out certain eccentricities in his careening gait!"
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "And how deliberately she had—"
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "Irene brought her thoughts back to the present, to the letter from Clare Kendry that she still held unopened in her hand."
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "With a little feeling of apprehension, she very slowly cut the envelope, drew out the folded sheets, spread them, and began to read."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "It was, she saw at once, what she had expected since learning from the postmark that Clare was in the city."
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "An extravagantly phrased wish to see her again."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "Well, she needn’t and wouldn’t, Irene told herself, accede to that."
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "Nor would she assist Clare to realize her foolish desire to return for a moment to that life which long ago, and of her own choice, she had left behind her."
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "She ran through the letter, puzzling out, as best she could, the carelessly formed words or making instinctive guesses at them. “…"
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "For I am lonely, so lonely… cannot help longing to be with you again, as I have never longed for anything before; and I have wanted many things in my life.…"
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "You can’t know how in this pale life of mine I am all the time seeing the bright pictures of that other that I once thought I was glad to be free of.…"
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "It’s like an ache, a pain that never ceases.…”"
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "Sheets upon thin sheets of it."
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "And ending finally with,"
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "“and it’s your fault, ’Rene dear."
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "At least partly."
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "For I wouldn’t now, perhaps, have this terrible, this wild desire if I hadn’t seen you that time in Chicago.…”"
+    },
+    {
+      "id": "sit-0-58",
+      "sceneId": "sit-0",
+      "text": "Brilliant red patches flamed in Irene Redfield’s warm olive cheeks."
+    },
+    {
+      "id": "sit-0-59",
+      "sceneId": "sit-0",
+      "text": "“That time in Chicago.”"
+    },
+    {
+      "id": "sit-0-60",
+      "sceneId": "sit-0",
+      "text": "The words stood out from among the many paragraphs of other words, bringing with them a clear, sharp remembrance, in which even now, after two years, humiliation, resentment, and rage were mingled."
+    }
+  ]
+}

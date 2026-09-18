@@ -1,0 +1,165 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+import { readFileSync } from "node:fs";
+import { SHELF } from "./shelf.ts";
+import { LOCAL_WORKS } from "./full-pdf.ts";
+import { countryFor, isCityHubLabel } from "./countries.ts";
+import { blurbFor, sentenceCount } from "./blurbs.ts";
+import { isBoundLocal } from "./en-rights.ts";
+
+test("every shelf work has a country that is not a map city hub", () => {
+  const missing: string[] = [];
+  const cities: string[] = [];
+  for (const work of SHELF) {
+    const country = countryFor(work);
+    if (!country) missing.push(`${work.id} (${work.author}, ${work.language})`);
+    else if (isCityHubLabel(country)) cities.push(`${work.id}=${country}`);
+  }
+  assert.deepEqual(missing, [], `missing country: ${missing.join("; ")}`);
+  assert.deepEqual(cities, [], `city hub used as country: ${cities.join("; ")}`);
+});
+
+test("English is not dumped into a single country", () => {
+  const localEnglish = LOCAL_WORKS.filter((work) => work.language === "English");
+  const countries = new Set(localEnglish.map((work) => countryFor(work)));
+  assert.ok(countries.has("United States"), "expected United States");
+  assert.ok(countries.has("United Kingdom"), "expected United Kingdom");
+  assert.ok(countries.has("Ireland"), "expected Ireland");
+  assert.ok(countries.size > 8, `English countries too few: ${[...countries].join(", ")}`);
+});
+
+test("known origin overrides", () => {
+  const byId = new Map(SHELF.map((work) => [work.id, work]));
+  const expect = {
+    dorian: "Ireland",
+    dubliners: "Ireland",
+    "african-farm": "South Africa",
+    botchan: "Japan",
+    "bel-ami": "France",
+    liliom: "Hungary",
+    "the-cherry-orchard": "Russia",
+    underdogs: "Mexico",
+    madmen: "Argentina",
+    wallpaper: "United States",
+    gatsby: "United States",
+    "the-bridge-of-san-luis-rey": "United States",
+    "the-sun-also-rises": "United States",
+    "lolly-willowes": "United Kingdom",
+    "a-passage-to-india": "United Kingdom",
+    "plum-bun": "United States",
+    "plain-tales-from-the-hills": "India",
+    "kwaidan-stories-and-studies-of-strange-things": "Japan",
+    "chita-a-memory-of-last-island": "United States",
+    banjo: "France",
+    "constab-ballads": "Jamaica",
+    basilio: "Portugal",
+    rur: "Czechia",
+    odessa: "Ukraine",
+  } as const;
+  for (const [id, country] of Object.entries(expect)) {
+    const work = byId.get(id);
+    assert.ok(work, id);
+    assert.equal(countryFor(work!), country, id);
+  }
+});
+
+test("every local homepage work has a one-sentence blurb", () => {
+  const missing: string[] = [];
+  const multi: string[] = [];
+  for (const work of LOCAL_WORKS) {
+    const blurb = blurbFor(work);
+    if (!blurb) missing.push(work.id);
+    else if (sentenceCount(blurb) !== 1) multi.push(`${work.id}: ${blurb}`);
+  }
+  assert.deepEqual(missing, [], `missing blurb: ${missing.join("; ")}`);
+  assert.deepEqual(multi, [], `not one sentence: ${multi.join(" | ")}`);
+});
+
+test("2026-09-17 LE binds open at story start, not chrome", () => {
+  const expect = {
+    "the-sun-also-rises": {
+      scene: /Book I/i,
+      opening: /^Robert Cohn was once middleweight boxing champion of Princeton/,
+    },
+    "lolly-willowes": {
+      scene: /Chapter I/i,
+      opening: /^When her father died, Laura Willowes went to live in London/,
+    },
+    "a-passage-to-india": {
+      scene: /Part I.*Mosque/i,
+      opening: /^Except for the Marabar Caves/,
+    },
+    "plum-bun": {
+      scene: /^Home$/i,
+      opening: /^Opal Street, as streets go, is no jewel of the first water/,
+    },
+    "the-cherry-orchard": {
+      scene: /^ACT ONE$/i,
+      opening: /^\[A room which is still called the nursery\./,
+    },
+  } as const;
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.match(work!.opening ?? "", want.opening, `${id} shelf opening`);
+    const packed = JSON.parse(
+      readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8"),
+    ) as { scenes: { title: string }[]; breaths: { text: string }[] };
+    assert.match(packed.scenes[0]?.title ?? "", want.scene, `${id} scene`);
+    assert.match(packed.breaths[0]?.text ?? "", want.opening, `${id} open breath`);
+    const early = packed.breaths.slice(0, 12).map((b) => b.text).join(" ");
+    assert.doesNotMatch(early, /project gutenberg|standard ebooks|table of contents|transcriber/i, id);
+  }
+});
+
+test("The Cherry Orchard is a readable four-act play, not one breath per page", () => {
+  const packed = JSON.parse(
+    readFileSync(new URL("./texts/the-cherry-orchard.json", import.meta.url), "utf8"),
+  ) as {
+    scenes: { title: string }[];
+    breaths: { sceneId: string; text: string }[];
+  };
+  assert.deepEqual(
+    packed.scenes.map((scene) => scene.title),
+    ["ACT ONE", "ACT TWO", "ACT THREE", "ACT FOUR"],
+  );
+  assert.equal(packed.breaths[0]?.text, "[A room which is still called the nursery.");
+  const cues = packed.breaths.filter((breath) =>
+    /^(LOPAKHIN|DUNYASHA|ANYA|LUBOV|GAEV|VARYA|TROFIMOV|FIERS|YASHA|EPIKHODOV|CHARLOTTA|PISCHIN)\.$/.test(
+      breath.text,
+    ),
+  );
+  assert.equal(cues.length, 0, `cue-only breaths remain: ${cues.length}`);
+  assert.ok(
+    packed.breaths.some((breath) =>
+      breath.text.startsWith("Dunyasha: The dogs didn’t sleep all night"),
+    ),
+    "speaker and line share one breath",
+  );
+  assert.ok(
+    packed.breaths.some((breath) => breath.text.startsWith("Lopakhin: What’s up with you, Dunyasha")),
+    "Lopakhin line is prefixed",
+  );
+  assert.ok(
+    packed.breaths.some((breath) => breath.text.includes("[Blows out candle]")),
+    "keeps bracketed stage directions",
+  );
+  const giant = packed.breaths.filter((breath) => breath.text.length > 500);
+  assert.deepEqual(giant, [], "giant breaths");
+  const joined = packed.breaths.map((breath) => breath.text).join(" ");
+  assert.doesNotMatch(joined, /project gutenberg|transcriber|table of contents/i);
+  assert.equal(packed.breaths.at(-1)?.text, "Curtain.");
+});
+
+test("homepage examples keep country + concrete sentence", () => {
+  assert.equal(countryFor(SHELF.find((w) => w.id === "passing")!), "United States");
+  assert.match(blurbFor("passing"), /color line/i);
+  assert.equal(sentenceCount(blurbFor("passing")), 1);
+  assert.equal(countryFor(SHELF.find((w) => w.id === "we")!), "Russia");
+  assert.equal(sentenceCount(blurbFor("we")), 1);
+  assert.equal(countryFor(SHELF.find((w) => w.id === "gold")!), "United States");
+  assert.match(blurbFor("gold"), /Michael Gold/);
+  assert.doesNotMatch(blurbFor("gold"), /Yezierska/);
+});

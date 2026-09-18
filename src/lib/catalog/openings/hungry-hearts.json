@@ -1,0 +1,381 @@
+{
+  "id": "hungry-hearts",
+  "title": "Hungry Hearts",
+  "author": "Anzia Yezierska",
+  "year": "1920",
+  "note": "Bite-sized ritual sit — Wings (opening) · WINGS.\n\nBasement light on a Lower East Side Sunday—and Shenah Pessah opens the window for the first spring sun. Anzia Yezierska’s 1920 story “Wings” starts with a hunger that isn’t only for bread: love, dignity, a little beauty, a life that feels like America and not just work.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Wings",
+      "place": "one sitting",
+      "reentry": "\"My heart chokes in me like in a prison!",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "\"My heart chokes in me like in a prison!"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "I'm dying for a little love and I got nobody--nobody!\" wailed Shenah Pessah, as she looked out of the dismal basement window."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "It was a bright Sunday afternoon in May, and into the gray, cheerless, janitor's basement a timid ray of sunlight announced the dawn of spring."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Oi weh!"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Light!\" breathed Shenah Pessah, excitedly, throwing open the sash."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"A little light in the room for the first time!\""
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "And she stretched out her hands hungrily for the warming bit of sun."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "The happy laughter of the shopgirls standing on the stoop with their beaux and the sight of the young mothers with their husbands and babies fanned anew the consuming fire in her breast."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"I'm not jealous!\" she gasped, chokingly."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"My heart hurts too deep to want to tear from them their luck to happiness."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "But why should they live and enjoy life and why must I only look on how they are happy?\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "She clutched at her throat like one stifled for want of air."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"What is the matter with you?"
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "Are you going out of your head?"
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "For what is your crying?"
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Who will listen to you?"
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Who gives a care what's going to become from you?\""
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Crushed by her loneliness, she sank into a chair."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "For a long time she sat motionless, finding drear fascination in the mocking faces traced in the patches of the torn plaster."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Gradually, she became aware of a tingling warmth playing upon her cheeks."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "And with a revived breath, she drank in the miracle of the sunlit wall."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"Ach!\" she sighed."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Once a year the sun comes to light up even this dark cellar, so why shouldn't the High One send on me too a little brightness?\""
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "This new wave of hope swept aside the fact that she was the \"greenhorn\" janitress, that she was twenty-two and dowryless, and, according to the traditions of her people, condemned to be shelved aside as an unmated thing--a creature of pity and ridicule."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"I can't help it how old I am or how poor I am!\" she burst out to the deaf and dumb air."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"I want a little life!"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "I want a little joy!\""
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "The bell rang sharply, and as she turned to answer the call, she saw a young man at the doorway--a framed picture of her innermost dreams."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "The stranger spoke."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "Shenah Pessah did not hear the words, she heard only the music of his voice."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "She gazed fascinated at his clothes--the loose Scotch tweeds, the pongee shirt, a bit open at the neck, but she did not see him or the things he wore."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "She only felt an irresistible presence seize her soul."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "It was as though the god of her innermost longings had suddenly taken shape in human form and lifted her in mid-air."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "\"Does the janitor live here?\" the stranger repeated."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "Shenah Pessah nodded."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "\"Can you show me the room to let?\""
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "\"Yes, right away, but wait only a minute,\" stammered Shenah Pessah, fumbling for the key on the shelf."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "\"Don't fly into the air!\""
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "She tried to reason with her wild, throbbing heart, as she walked upstairs with him."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "In an effort to down the chaos of emotion that shook her she began to talk nervously: \"Mrs."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "Stein who rents out the room ain't going to be back till the evening, but I can tell you the price and anything you want to know."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "She's a grand cook and you can eat by her your breakfast and dinner--\" She did not have the slightest notion of what she was saying, but talked on in a breathless stream lest he should hear the loud beating of her heart."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "\"Could I have a drop-light put in here?\" the man asked, as he looked about the room."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "Shenah Pessah stole a quick, shy glance at him."
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "\"Are you maybe a teacher or a writing man?\""
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "\"Yes, sometimes I teach,\" he said, studying her, drawn by the struggling soul of her that cried aloud to him out of her eyes."
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "\"I could tell right away that you must be some kind of a somebody,\" she said, looking up with wistful worship in her eyes."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "\"Ach, how grand it must be to live only for learning and thinking.\""
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "\"Is this your home?\""
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "\"I never had a home since I was eight years old."
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "I was living by strangers even in Russia.\""
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "\"Russia?\" he repeated with quickened attention."
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "So he was in their midst, the people he had come to study."
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "The girl with her hungry eyes and intense eagerness now held a new interest for him."
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "John Barnes, the youngest instructor of sociology in his university, congratulated himself at his good fortune in encountering such a splendid type for his research."
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "He was preparing his thesis on the \"Educational Problems of the Russian Jews,\" and in order to get into closer touch with his subject, he had determined to live on the East Side during his spring and summer vacation."
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "He went on questioning her, unconsciously using all the compelling power that made people open their hearts to him."
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "\"And how long have you been here?\""
+    },
+    {
+      "id": "sit-0-58",
+      "sceneId": "sit-0",
+      "text": "\"Two years already.\""
+    },
+    {
+      "id": "sit-0-59",
+      "sceneId": "sit-0",
+      "text": "\"You seem to be fond of study."
+    },
+    {
+      "id": "sit-0-60",
+      "sceneId": "sit-0",
+      "text": "I suppose you go to night-school?\""
+    },
+    {
+      "id": "sit-0-61",
+      "sceneId": "sit-0",
+      "text": "\"I never yet stepped into a night-school since I came to America."
+    },
+    {
+      "id": "sit-0-62",
+      "sceneId": "sit-0",
+      "text": "From where could I get the time?"
+    },
+    {
+      "id": "sit-0-63",
+      "sceneId": "sit-0",
+      "text": "My uncle is such an old man he can't do much and he got already used to leave the whole house on me.\""
+    },
+    {
+      "id": "sit-0-64",
+      "sceneId": "sit-0",
+      "text": "\"You stay with your uncle, then?\""
+    },
+    {
+      "id": "sit-0-65",
+      "sceneId": "sit-0",
+      "text": "\"Yes, my uncle sent for me the ticket for America when my aunt was yet living."
+    },
+    {
+      "id": "sit-0-66",
+      "sceneId": "sit-0",
+      "text": "She got herself sick."
+    },
+    {
+      "id": "sit-0-67",
+      "sceneId": "sit-0",
+      "text": "And what could an old man like him do with only two hands?\""
+    },
+    {
+      "id": "sit-0-68",
+      "sceneId": "sit-0",
+      "text": "\"Was that sufficient reason for you to leave your homeland?\""
+    },
+    {
+      "id": "sit-0-69",
+      "sceneId": "sit-0",
+      "text": "\"What did I have out there in Savel that I should be afraid to lose?"
+    },
+    {
+      "id": "sit-0-70",
+      "sceneId": "sit-0",
+      "text": "The cows that I used to milk had it better than me."
+    },
+    {
+      "id": "sit-0-71",
+      "sceneId": "sit-0",
+      "text": "They got at least enough to eat and me slaving from morning till night went around hungry.\""
+    }
+  ]
+}

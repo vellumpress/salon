@@ -1,0 +1,261 @@
+{
+  "id": "kwaidan-stories-and-studies-of-strange-things",
+  "title": "Kwaidan",
+  "author": "Lafcadio Hearn",
+  "year": "1904",
+  "note": "Bite-sized ritual sit — The Story of Mimi-Nashi-Hōïchi (opening) · THE STORY OF MIMI-NASHI-HŌÏCHI.\n\nMore than seven hundred years after a drowned clan haunted the Straits of Shimonoséki, a blind minstrel named Hōïchi is about to be summoned by listeners who aren’t quite alive. Lafcadio Hearn’s 1904 ghost tale opens on that coast—demon-fires on the water, a temple built to quiet the dead, and a musician whose ears will matter more than he knows.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "The Story of Mimi-Nashi-Hōïchi",
+      "place": "one sitting",
+      "reentry": "More than seven hundred years ago, at Dan-no-ura, in the Straits of Shimonoséki, was fought the last battle of the long contest between the Heiké, or Taira clan, and the Genji, or Minamoto clan.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "More than seven hundred years ago, at Dan-no-ura, in the Straits of Shimonoséki, was fought the last battle of the long contest between the Heiké, or Taira clan, and the Genji, or Minamoto clan."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "There the Heiké perished utterly, with their women and children, and their infant emperor likewise—now remembered as Antoku Tennō."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "And that sea and shore have been haunted for seven hundred years..."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Elsewhere I told you about the strange crabs found there, called Heiké crabs, which have human faces on their backs, and are said to be the spirits of the Heiké warriors[1]."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "But there are many strange things to be seen and heard along that coast."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "On dark nights thousands of ghostly fires hover about the beach, or flit above the waves,—pale lights which the fishermen call Oni-bi, or demon-fires; and, whenever the winds are up, a sound of great shouting comes from that sea, like a clamor of battle."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "In former years the Heiké were much more restless than they now are."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "They would rise about ships passing in the night, and try to sink them; and at all times they would watch for swimmers, to pull them down."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "It was in order to appease those dead that the Buddhist temple, Amidaji, was built at Akamagaséki[2]."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "A cemetery also was made close by, near the beach; and within it were set up monuments inscribed with the names of the drowned emperor and of his great vassals; and Buddhist services were regularly performed there, on behalf of the spirits of them."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "After the temple had been built, and the tombs erected, the Heiké gave less trouble than before; but they continued to do queer things at intervals,—proving that they had not found the perfect peace."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Some centuries ago there lived at Akamagaséki a blind man named Hōïchi, who was famed for his skill in recitation and in playing upon the biwa[3]."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "From childhood he had been trained to recite and to play; and while yet a lad he had surpassed his teachers."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "As a professional biwa-hōshi he became famous chiefly by his recitations of the history of the Heiké and the Genji; and it is said that when he sang the song of the battle of Dan-no-ura “even the goblins [kijin] could not refrain from tears.”"
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "At the outset of his career, Hōïchi was very poor; but he found a good friend to help him."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "The priest of the Amidaji was fond of poetry and music; and he often invited Hōïchi to the temple, to play and recite."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Afterwards, being much impressed by the wonderful skill of the lad, the priest proposed that Hōïchi should make the temple his home; and this offer was gratefully accepted."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Hōïchi was given a room in the temple-building; and, in return for food and lodging, he was required only to gratify the priest with a musical performance on certain evenings, when otherwise disengaged."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "One summer night the priest was called away, to perform a Buddhist service at the house of a dead parishioner; and he went there with his acolyte, leaving Hōïchi alone in the temple."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "It was a hot night; and the blind man sought to cool himself on the verandah before his sleeping-room."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "The verandah overlooked a small garden in the rear of the Amidaji."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "There Hōïchi waited for the priest’s return, and tried to relieve his solitude by practicing upon his biwa."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "Midnight passed; and the priest did not appear."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "But the atmosphere was still too warm for comfort within doors; and Hōïchi remained outside."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "At last he heard steps approaching from the back gate."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "Somebody crossed the garden, advanced to the verandah, and halted directly in front of him—but it was not the priest."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "A deep voice called the blind man’s name—abruptly and unceremoniously, in the manner of a samurai summoning an inferior:— “Hōïchi!”"
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "Hōïchi was too much startled, for the moment, to respond; and the voice called again, in a tone of harsh command,— “Hōïchi!”"
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "“Hai!”(1) answered the blind man, frightened by the menace in the voice,—“I am blind!—I cannot know who calls!”"
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "“There is nothing to fear,” the stranger exclaimed, speaking more gently."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "“I am stopping near this temple, and have been sent to you with a message."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "My present lord, a person of exceedingly high rank, is now staying in Akamagaséki, with many noble attendants."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "He wished to view the scene of the battle of Dan-no-ura; and to-day he visited that place."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "Having heard of your skill in reciting the story of the battle, he now desires to hear your performance: so you will take your biwa and come with me at once to the house where the august assembly is waiting.”"
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "In those times, the order of a samurai was not to be lightly disobeyed."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "Hōïchi donned his sandals, took his biwa, and went away with the stranger, who guided him deftly, but obliged him to walk very fast."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "The hand that guided was iron; and the clank of the warrior’s stride proved him fully armed,—probably some palace-guard on duty."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "Hōïchi’s first alarm was over: he began to imagine himself in good luck;—for, remembering the retainer’s assurance about a “person of exceedingly high rank,” he thought that the lord who wished to hear the recitation could not be less than a daimyō of the first class."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "Presently the samurai halted; and Hōïchi became aware that they had arrived at a large gateway;—and he wondered, for he could not remember any large gate in that part of the town, except the main gate of the Amidaji."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "“Kaimon!”[4] the samurai called,—and there was a sound of unbarring; and the twain passed on."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "They traversed a space of garden, and halted again before some entrance; and the retainer cried in a loud voice, “Within there!"
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "I have brought Hōïchi.”"
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "Then came sounds of feet hurrying, and screens sliding, and rain-doors opening, and voices of women in converse."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "By the language of the women Hōïchi knew them to be domestics in some noble household; but he could not imagine to what place he had been conducted."
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "Little time was allowed him for conjecture."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "After he had been helped to mount several stone steps, upon the last of which he was told to leave his sandals, a woman’s hand guided him along interminable reaches of polished planking, and round pillared angles too many to remember, and over widths amazing of matted floor,—into the middle of some vast apartment."
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "There he thought that many great people were assembled: the sound of the rustling of silk was like the sound of leaves in a forest."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "He heard also a great humming of voices,—talking in undertones; and the speech was the speech of courts."
+    }
+  ]
+}

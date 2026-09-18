@@ -1,6 +1,8 @@
-node_modules
-dist
-.DS_Store
-*.log
-.vercel
-.vite
+node_modules/
+.project_id
+.github_repo
+.env
+.env.*
+
+# Never commit Vercel build output (forces stale PWA)
+.vercel/output/
