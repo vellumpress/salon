@@ -1,12 +1,14 @@
-# NOTES — Vellum Lite vs full Vellum
+# NOTES — Salon vs full Vellum
 
-Vellum Lite is a reading-first twin of [Vellum](https://vellumpress.vercel.app/), not a port of the whole product. The live app and its private source (`vellumpress/vellumpress`: TanStack Start, chamber-reader, `shelf.ts`, Mondrian UI) were used as reference only. Nothing was pushed back to that repository.
+Renamed from **Vellum Lite** to **Salon**. The user-facing brand is Salon; the GitHub repo, Pages path (`/vellum-lite/`), and `localStorage` key (`vellum-lite-v1`) stay as they are so the live URL and existing reader progress keep working.
 
-A live UX study of the full product (Sep 2026) confirmed overlapping modes, a crowded intro veil, and chrome that mixed reading with Curator/Shuffle. Lite follows those findings.
+Salon is a reading-first twin of [Vellum](https://vellumpress.vercel.app/), not a port of the whole product. The live app and its private source (`vellumpress/vellumpress`: TanStack Start, chamber-reader, `shelf.ts`, Mondrian UI) were used as reference only. Nothing was pushed back to that repository.
+
+A live UX study of the full product (Sep 2026) confirmed overlapping modes, a crowded intro veil, and chrome that mixed reading with Curator/Shuffle. Salon follows those findings.
 
 ## Primary destinations
 
-| Lite | Full Vellum |
+| Salon | Full Vellum |
 | --- | --- |
 | Discover `/` | Home, minus Rituals / Curator / Sit pillars |
 | Read `/read/$workId` | Chamber reader, minus pair/RTC and extra CTAs |
@@ -27,7 +29,7 @@ No Clubs, Map, Stores, Rituals, Curator, Hourglass, Desk, `/form`, or Page impor
 
 ## Cut from v1
 
-| Full Vellum | Lite |
+| Full Vellum | Salon |
 | --- | --- |
 | Rituals, Curator, Hourglass | Gone — overlapping “how to start” modes |
 | Sit with someone / pair / RTC | Gone |
@@ -51,4 +53,4 @@ No Clubs, Map, Stores, Rituals, Curator, Hourglass, Desk, `/form`, or Page impor
 
 ## Tech
 
-Vite 7 + React 19 + TypeScript + TanStack Router + Tailwind v4. Deploy as a static Vercel SPA. State key: `vellum-lite-v1` in `localStorage`.
+Vite 7 + React 19 + TypeScript + TanStack Router + Tailwind v4. Deploy as a static GitHub Pages SPA under `/vellum-lite/` (`vercel.json` remains for optional Vercel deploys). State key: `vellum-lite-v1` in `localStorage`.

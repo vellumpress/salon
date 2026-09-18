@@ -1,6 +1,8 @@
-# Vellum Lite
+# Salon
 
 A calm, phone-first reading app for public-domain classics. Same paper/ink Mondrian shelf as [Vellum](https://vellumpress.vercel.app/), cut to three destinations: **Discover**, **Read**, and **You**.
+
+Renamed from Vellum Lite. The product name is Salon; the GitHub repo and Pages path stay `vellum-lite`.
 
 No account. No backend. Progress and favorites live in `localStorage`.
 
@@ -11,7 +13,7 @@ npm install
 npm run dev
 ```
 
-Open the printed local URL (usually `http://localhost:5173`).
+Open the printed local URL (usually `http://localhost:5173/vellum-lite/`).
 
 ```bash
 npm run build
