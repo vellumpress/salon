@@ -4,7 +4,7 @@ import type { Work } from "../catalog/works";
 import { cn } from "../lib/hash";
 import { fillClass, fillForWork, inkClass } from "../lib/mondrian";
 import { randomWork } from "../lib/shuffle";
-import { SIT_OPTIONS, type SitMinutes } from "../lib/sitting";
+import { SIT_PRESETS, type SitMinutes } from "../lib/sitting";
 import { setLastShuffle, setSittingMinutes } from "../lib/storage";
 import { useShelf } from "../lib/use-shelf";
 import { Mark } from "../components/Mark";
@@ -12,6 +12,15 @@ import { Mark } from "../components/Mark";
 type Step =
   | { kind: "time" }
   | { kind: "title"; minutes: SitMinutes; work: Work };
+
+const SIT_FILLS = [
+  "bg-yellow text-ink",
+  "bg-paper text-ink",
+  "bg-blue text-paper",
+  "bg-forest text-paper",
+  "bg-red text-paper",
+  "bg-ink text-paper",
+] as const;
 
 export function ShufflePage() {
   const navigate = useNavigate();
@@ -92,16 +101,14 @@ export function ShufflePage() {
           How long would you like to read for?
         </h1>
       </div>
-      {SIT_OPTIONS.map((option, index) => (
+      {SIT_PRESETS.map((option, index) => (
         <button
           key={option.minutes}
           type="button"
           onClick={() => pickTime(option.minutes)}
           className={cn(
-            "cell-wide flex min-h-0 flex-col justify-end p-5 text-left",
-            index === 0 && "bg-yellow text-ink",
-            index === 1 && "bg-blue text-paper",
-            index === 2 && "bg-forest text-paper",
+            "cell-stat flex min-h-0 flex-col justify-end p-5 text-left",
+            SIT_FILLS[index],
           )}
         >
           <span className="font-display text-2xl font-medium tracking-tight sm:text-3xl">

@@ -5,7 +5,8 @@ export function continueWorks(state: Pick<ShelfState, "progress">): Work[] {
   return WORKS.filter((work) => {
     const item = state.progress[work.id];
     return Boolean(
-      item?.entered && (item.paragraphIndex > 0 || item.scrollRatio > 0),
+      item?.entered &&
+        (item.breathIndex > 0 || item.paragraphIndex > 0 || item.scrollRatio > 0),
     );
   }).sort(
     (a, b) =>
@@ -40,5 +41,8 @@ export function progressRatio(
   if (!progress?.entered) return 0;
   if (progress.completedAt) return 1;
   if (progress.scrollRatio > 0) return Math.min(0.92, progress.scrollRatio);
+  if (progress.breathIndex > 0) {
+    return Math.min(0.92, progress.breathIndex / Math.max(12, fallback));
+  }
   return Math.min(0.92, progress.paragraphIndex / Math.max(12, fallback));
 }

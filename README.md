@@ -50,7 +50,7 @@ Pushes to `main` build with Vite (`base` `/vellum-lite/`) and deploy `dist/` via
 
 ## Using it
 
-- **Discover (`/`)** — quiet header (You, not three pillars), search (title / author / year), jump-back-in, curated rail, form rails. Heart on a card is the only save action.
+- **Discover (`/`)** — quiet header (You, not three pillars), search (title / author / year), jump-back-in, curated rail, form rails. Heart on a card favorites the whole work.
 - **You (`/you`)** — continue, favorites, and light stats (opened / favorites / finished).
-- **Shuffle (`/shuffle`)** — pick a duration, see the title, open it on this phone. No “with a friend.”
-- **Read (`/read/$workId`)** — intro veil with one Begin plus an optional 12 / 20 / Open sit control. Chrome is Back, TOC, a progress bar, optional timer, and type size.
+- **Shuffle (`/shuffle`)** — pick a duration (5 / 12 / 20 / 30 / Sit / Open), see the title, open it on this phone. No “with a friend.”
+- **Read (`/read/$workId`)** — one-breath chamber: veil with one Begin + sit length, then one sentence/line at a time with faded lookback. Keep a breath (separate from Favorite), tap the hourglass to sit, sand runs until a gentle end cue. Arrow keys, Space, and left/right taps move; `K` keeps. Deep links fall back through `404.html`.

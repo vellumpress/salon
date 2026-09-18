@@ -1,9 +1,9 @@
 import { cn } from "../lib/hash";
-import { SIT_OPTIONS, type SitMinutes } from "../lib/sitting";
+import { SIT_PRESETS } from "../lib/sitting";
 
 type Props = {
-  value: SitMinutes;
-  onChange: (value: SitMinutes) => void;
+  value: number;
+  onChange: (value: number) => void;
   compact?: boolean;
 };
 
@@ -12,12 +12,9 @@ export function DurationControl({ value, onChange, compact = false }: Props) {
     <div
       role="radiogroup"
       aria-label="How long to sit"
-      className={cn(
-        "duration-control",
-        compact ? "duration-control-compact" : "",
-      )}
+      className={cn("sit-presets", compact && "sit-presets-compact")}
     >
-      {SIT_OPTIONS.map((option) => {
+      {SIT_PRESETS.map((option) => {
         const on = option.minutes === value;
         return (
           <button
@@ -25,7 +22,7 @@ export function DurationControl({ value, onChange, compact = false }: Props) {
             type="button"
             role="radio"
             aria-checked={on}
-            className={cn("duration-option", on && "is-on")}
+            className={cn("sit-preset", on && "sit-preset-on")}
             onClick={() => onChange(option.minutes)}
           >
             {compact ? option.short : option.label}
