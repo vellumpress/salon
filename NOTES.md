@@ -44,6 +44,10 @@ No Clubs, Map, Stores, Rituals, Curator, Hourglass, Desk, `/form`, or Page impor
 | Shuffle + Curator in reader chrome | Reader stays on the page |
 | Three giant home pillars | Intentionally absent |
 
+## Next
+
+Salon will center **timed routines/sits** and **live reading + chat book clubs**. Clubs and rituals are not out of scope forever — they are the next core after this rename.
+
 ## Catalog notes
 
 - Years are first-publication (or first English collection) years from Vellum’s shelf, not copyright-expiry math.
