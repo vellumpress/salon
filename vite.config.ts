@@ -1,5 +1,5 @@
-import { readdirSync } from "node:fs";
-import { join } from "node:path";
+import { copyFileSync, existsSync, readdirSync } from "node:fs";
+import { join, resolve } from "node:path";
 import type { Plugin } from "vite";
 import { defineConfig } from "vite";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
@@ -142,42 +142,71 @@ function authPopupPlugin(): Plugin {
   };
 }
 
+/** GitHub Pages serves 404.html for unknown paths — copy the SPA shell so deep links work. */
+function spaFallback404(): Plugin {
+  return {
+    name: "spa-fallback-404",
+    closeBundle() {
+      const index = resolve("dist/index.html");
+      const shell = resolve("dist/_shell.html");
+      const dest = resolve("dist/404.html");
+      if (existsSync(index)) copyFileSync(index, dest);
+      else if (existsSync(shell)) copyFileSync(shell, dest);
+    },
+  };
+}
+
+const PAGES_BASE = "/vellum-lite/";
+
 // `0.0.0.0:8080` is the live-preview contract — don't change host/port.
 // The dev server starts once `src/router.tsx` and `src/routes/` exist — see
 // AGENTS.md § "First scaffold".
-export default defineConfig(({ command, isPreview }) => ({
-  server: {
-    host: "0.0.0.0",
-    port: 8080,
-    strictPort: true,
-  },
-  preview: {
-    host: "127.0.0.1",
-    port: 8081,
-    strictPort: true,
-  },
-  resolve: { tsconfigPaths: true },
-  plugins: [
-    pgliteBootstrapPlugin(),
-    // Before tanstackStart so /auth/popup never falls through to the SPA.
-    authPopupPlugin(),
-    // Dev-only /__app-env, read by scripts/check-auth-invariant.mjs.
-    appEnvPlugin(),
-    // PWA head + ?install=1 tutorial page; runs before Start/Nitro.
-    grokPwaPlugin(),
-    tailwindcss(),
-    tanstackStart(),
-    ...(command === "build" || isPreview
-      ? [
-          nitro({
-            preset: "vercel",
-            // Auto-registers server/middleware/* (the PWA install page +
-            // manifest + head-tag middleware). Nitro v3 defaults serverDir to
-            // false, so removing this silently unwires /?install=1 on deploys.
-            serverDir: "./server",
-          }),
-        ]
-      : []),
-    viteReact(),
-  ],
-}));
+export default defineConfig(({ command, isPreview }) => {
+  const nitroPreset = process.env.NITRO_PRESET || "github_pages";
+  return {
+    base: PAGES_BASE,
+    server: {
+      host: "0.0.0.0",
+      port: 8080,
+      strictPort: true,
+    },
+    preview: {
+      host: "127.0.0.1",
+      port: 8081,
+      strictPort: true,
+    },
+    resolve: { tsconfigPaths: true },
+    plugins: [
+      pgliteBootstrapPlugin(),
+      // Before tanstackStart so /auth/popup never falls through to the SPA.
+      authPopupPlugin(),
+      // Dev-only /__app-env, read by scripts/check-auth-invariant.mjs.
+      appEnvPlugin(),
+      // PWA head + ?install=1 tutorial page; runs before Start/Nitro.
+      grokPwaPlugin(),
+      tailwindcss(),
+      tanstackStart({
+        spa: {
+          enabled: true,
+          prerender: {
+            outputPath: "/index.html",
+            crawlLinks: false,
+          },
+        },
+      }),
+      ...(command === "build" || isPreview
+        ? [
+            nitro({
+              preset: nitroPreset,
+              // Auto-registers server/middleware/* (the PWA install page +
+              // manifest + head-tag middleware). Nitro v3 defaults serverDir to
+              // false, so removing this silently unwires /?install=1 on deploys.
+              serverDir: "./server",
+            }),
+          ]
+        : []),
+      viteReact(),
+      spaFallback404(),
+    ],
+  };
+});

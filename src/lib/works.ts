@@ -36,7 +36,12 @@ export function catalogIds() {
 }
 
 async function pullRemote(id: string, opening: boolean) {
-  const packed = await fetchShelfWork({ data: { id, opening } });
+  let packed;
+  try {
+    packed = await fetchShelfWork({ data: { id, opening } });
+  } catch {
+    return undefined;
+  }
   if (!packed) return undefined;
   const work = inflateWork(packed);
   const prior = cache.get(id);

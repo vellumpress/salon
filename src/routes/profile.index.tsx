@@ -16,6 +16,7 @@ import { ResumeLink, useLastRead } from "@/components/resume-link";
 import { cn } from "@/lib/utils";
 import { mixSeed, takeShuffled } from "@/lib/recommend";
 import { useFavoriteSync } from "@/lib/use-favorite-sync";
+import { liveBackendEnabled } from "@/lib/site";
 import { useVisitSeed } from "@/lib/use-visit-seed";
 
 export const Route = createFileRoute("/profile/")({
@@ -97,7 +98,7 @@ function ProfileBody({ user }: { user: AppUser | null }) {
   const [saving, setSaving] = useState(false);
 
   useEffect(() => {
-    if (!user) return;
+    if (!user || user.isDevFallback || !liveBackendEnabled) return;
     let alive = true;
     void getMe({ data: { name: user.displayName ?? "" } })
       .then((row) => {
@@ -120,7 +121,7 @@ function ProfileBody({ user }: { user: AppUser | null }) {
   }, [user, setSittingMinutes, setTaste]);
 
   useEffect(() => {
-    if (!hydrated || !user) return;
+    if (!hydrated || !user || user.isDevFallback || !liveBackendEnabled) return;
     const entries = Object.entries(progress)
       .filter(([id, item]) => item.entered && id !== "page")
       .slice(0, 80)

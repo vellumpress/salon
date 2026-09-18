@@ -27,6 +27,7 @@ import {
   shareOrCopy,
   sittingSharePath,
 } from "@/lib/shuffle";
+import { publicUrl } from "@/lib/site";
 import { createSentenceShare } from "@/lib/sentence-share";
 import {
   SIT_PRESETS,
@@ -244,7 +245,7 @@ export function VellumReader({
   function beginTogetherShare() {
     const minutes = asSittingMinutes(sittingMinutes);
     const code = makePair();
-    const href = `${typeof window !== "undefined" ? window.location.origin : ""}${sittingSharePath(work.id, minutes, code, serializeEp?.n)}`;
+    const href = publicUrl(sittingSharePath(work.id, minutes, code, serializeEp?.n));
     setCompany("together");
     setInvitePair(code);
     setInviteHref(href);
@@ -1129,16 +1130,14 @@ export function VellumReader({
                   },
                 })
                   .then(async (row) => {
-                    const origin =
-                      typeof window !== "undefined" ? window.location.origin : "";
-                    const url = `${origin}/s/${row.token}`;
+                    const url = publicUrl(`/s/${row.token}`);
                     const snippet =
                       breath.text.length > 160
                         ? `${breath.text.slice(0, 157)}…`
                         : breath.text;
                     const result = await shareOrCopy({
                       title: work.title,
-                      text: `${snippet}\n\nA private sitting link from Vellum.`,
+                      text: `${snippet}\n\nA private sitting link from Salon.`,
                       url,
                     });
                     if (result === "shared" || result === "copied") {

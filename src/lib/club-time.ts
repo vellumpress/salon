@@ -1,4 +1,5 @@
 import type { Fill } from "./mondrian";
+import { publicUrl } from "./site";
 
 export const INVITE_TOKEN_RE = /^[A-Za-z0-9_-]{10,24}$/;
 export const CLUB_ID_RE = /^[a-z0-9]{4,16}$/;
@@ -34,7 +35,7 @@ export function clubJoinPath(token: string) {
 
 export function clubInviteUrl(token: string) {
   if (typeof window === "undefined") return clubInvitePath(token);
-  return `${window.location.origin}${clubInvitePath(token)}`;
+  return publicUrl(clubInvitePath(token));
 }
 
 /** Scheduled sits are authored and shown in Eastern Time. */

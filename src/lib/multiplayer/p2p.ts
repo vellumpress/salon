@@ -74,6 +74,12 @@ interface PeerSlot {
   pingSentAt?: number;
 }
 
+function rtcHref(query?: string) {
+  const base = String(import.meta.env.BASE_URL || "/").replace(/\/$/, "");
+  const path = `${base}/api/rtc`;
+  return query ? `${path}?${query}` : path;
+}
+
 const FAST_POLL_MS = 400;
 const IDLE_POLL_MS = 2000;
 const PING_INTERVAL_MS = 2000;
@@ -106,6 +112,7 @@ export class P2PRoom {
   private closed = false;
   private everPolled = false;
   private lastPeersFingerprint = "";
+  private signalingGone = false;
 
   constructor(opts: P2PRoomOptions) {
     this.opts = opts;
@@ -122,7 +129,7 @@ export class P2PRoom {
     } catch {
       // First poll can fail transiently; the scheduled loop below retries.
     }
-    if (this.closed) return;
+    if (this.closed || this.signalingGone) return;
     this.schedulePoll(this.anyPairConnecting() ? FAST_POLL_MS : IDLE_POLL_MS);
     this.pingTimer = setInterval(() => {
       this.pingAll();
@@ -138,7 +145,7 @@ export class P2PRoom {
     this.peers.clear();
     // Leaving the roster is the teardown broadcast: everyone's next poll
     // drops this peer and closes their side of the pair.
-    void fetch("/api/rtc", {
+    void fetch(rtcHref(), {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ op: "leave", room: this.opts.room, peer: this.opts.selfId }),
@@ -196,11 +203,15 @@ export class P2PRoom {
     const timer = setTimeout(() => ctrl.abort(), 4000);
     let res: Response;
     try {
-      res = await fetch(`/api/rtc?${params}`, { signal: ctrl.signal });
+      res = await fetch(rtcHref(params.toString()), { signal: ctrl.signal });
     } finally {
       clearTimeout(timer);
     }
     if (this.closed) return;
+    if (res.status === 404 || res.status === 405) {
+      this.signalingGone = true;
+      throw new Error(`signaling poll failed: ${res.status}`);
+    }
     if (!res.ok) throw new Error(`signaling poll failed: ${res.status}`);
     const body = (await res.json()) as RtcPollResponse;
     if (this.closed) return;
@@ -218,12 +229,13 @@ export class P2PRoom {
   }
 
   private async poll(): Promise<void> {
-    if (this.closed) return;
+    if (this.closed || this.signalingGone) return;
     try {
       await this.pollOnce();
     } catch {
       // Transient poll failures are expected (tab sleep, deploy roll); retry.
     }
+    if (this.closed || this.signalingGone) return;
     this.schedulePoll(this.anyPairConnecting() ? FAST_POLL_MS : IDLE_POLL_MS);
   }
 
@@ -455,7 +467,7 @@ export class P2PRoom {
     for (let attempt = 0; ; attempt++) {
       if (this.closed) return;
       try {
-        const res = await fetch("/api/rtc", {
+        const res = await fetch(rtcHref(), {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({

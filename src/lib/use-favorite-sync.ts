@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { listFavorites, pushFavorites } from "@/lib/account";
 import type { AppUser } from "@/lib/auth/use-current-user";
+import { liveBackendEnabled } from "@/lib/site";
 import { useVellum } from "@/lib/store";
 
 /** Local hearts always; merge + push when a signed-in reader is present. */
@@ -13,7 +14,7 @@ export function useFavoriteSync(user: AppUser | null) {
   useEffect(() => setHydrated(true), []);
 
   useEffect(() => {
-    if (!user || !hydrated) return;
+    if (!user || user.isDevFallback || !liveBackendEnabled || !hydrated) return;
     let alive = true;
     void listFavorites()
       .then((remote) => {
@@ -38,7 +39,7 @@ export function useFavoriteSync(user: AppUser | null) {
   }, [user, hydrated, setFavorites]);
 
   useEffect(() => {
-    if (!user || !hydrated || !favSyncRef.current) return;
+    if (!user || user.isDevFallback || !liveBackendEnabled || !hydrated || !favSyncRef.current) return;
     void pushFavorites({ data: { workIds: favorites } }).catch(() => undefined);
   }, [user, hydrated, favorites]);
 

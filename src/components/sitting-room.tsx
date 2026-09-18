@@ -280,8 +280,9 @@ function isPresent(peer: PeerInfo, here: Record<string, HereNote>, lines: ChatLi
   return lines.some((line) => line.from === peer.id);
 }
 
-function presenceLabel(joined: boolean, present: number, peers: PeerInfo[]) {
+function presenceLabel(joined: boolean, present: number, peers: PeerInfo[], offline?: boolean) {
   if (present > 0) return "";
+  if (offline && !joined) return "needs a server";
   if (!joined) return "sitting";
   const failed = peers.filter((peer) => peer.connectionState === "failed");
   if (failed.length > 0 && failed.length === peers.length) return "can't reach";
@@ -304,8 +305,14 @@ export function TogetherShell({
   const lock = useSittingLock(onLeave);
   const chat = useSittingChat(pair, place, breathIndex);
   const [live, setLive] = useState(false);
+  const [offline, setOffline] = useState(false);
   const dockRef = useRef<HTMLDivElement>(null);
   useEffect(() => setLive(true), []);
+  useEffect(() => {
+    if (chat.joined) return;
+    const timer = window.setTimeout(() => setOffline(true), 4000);
+    return () => window.clearTimeout(timer);
+  }, [chat.joined]);
   useEffect(() => () => exitTogetherCompose(), []);
 
   const beginCompose = useCallback(() => {
@@ -320,7 +327,7 @@ export function TogetherShell({
   }, []);
 
   const present = chat.peers.filter((peer) => isPresent(peer, chat.here, chat.lines));
-  const status = presenceLabel(chat.joined, present.length, chat.peers);
+  const status = presenceLabel(chat.joined, present.length, chat.peers, offline);
   const elsewhere = [
     ...new Set(
       present

@@ -3,6 +3,7 @@ node_modules/
 .github_repo
 .env
 .env.*
+dist/
 
 # Never commit Vercel build output (forces stale PWA)
 .vercel/output/

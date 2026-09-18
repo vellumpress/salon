@@ -2,10 +2,9 @@ import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-r
 import { useEffect } from "react";
 import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
+import { APP_NAME, withBase } from "@/lib/site";
 import { attachVisualViewport } from "@/lib/vvh";
 import appCss from "../styles.css?url";
-
-const APP_NAME = "Vellum";
 const FONT_HREF =
   "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap";
 
@@ -26,18 +25,18 @@ export const Route = createRootRoute({
       { title: APP_NAME },
       {
         name: "description",
-        content: "Timed reading rituals. Sit together — friends and book clubs, live on the page.",
+        content: "Timed reading rituals. Public-domain sitting, on this phone.",
       },
       { name: "theme-color", content: "#ffffff" },
     ],
     links: [
-      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "icon", type: "image/svg+xml", href: withBase("/favicon.svg") },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: FONT_HREF },
-      { rel: "manifest", href: "/__grok/manifest.webmanifest" },
-      { rel: "apple-touch-icon", href: "/icon-192.png" },
+      { rel: "manifest", href: withBase("/__grok/manifest.webmanifest") },
+      { rel: "apple-touch-icon", href: withBase("/icon-192.png") },
     ],
   }),
   component: () => (

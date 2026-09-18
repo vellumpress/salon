@@ -11,6 +11,7 @@ import {
 } from "@/lib/shuffle";
 import { boardWork } from "@/lib/mondrian";
 import { useVellum } from "@/lib/store";
+import { publicUrl } from "@/lib/site";
 import { prefetchWork } from "@/lib/works";
 
 export const Route = createFileRoute("/shuffle")({
@@ -69,7 +70,7 @@ function ShufflePage() {
     if (together) {
       const code = makePair();
       setPair(code);
-      setHref(`${window.location.origin}${sittingSharePath(id, next, code)}`);
+      setHref(publicUrl(sittingSharePath(id, next, code)));
       stepRef.current = "share";
       setStep("share");
       return;
@@ -91,7 +92,7 @@ function ShufflePage() {
     if (stepRef.current !== "company") return;
     const code = makePair();
     setPair(code);
-    setHref(`${window.location.origin}${sittingSharePath(workId, sit, code)}`);
+    setHref(publicUrl(sittingSharePath(workId, sit, code)));
     stepRef.current = "share";
     setStep("share");
   }
@@ -107,7 +108,7 @@ function ShufflePage() {
 
   async function sendLink() {
     const result = await shareOrCopy({
-      title: meta?.title ?? "Vellum",
+      title: meta?.title ?? "Salon",
       text: meta?.title ?? "A sitting",
       url: href,
     });

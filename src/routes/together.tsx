@@ -30,6 +30,7 @@ import {
 } from "@/lib/clubs";
 import { defaultSitClock, etWallToIso, formatClubWhen, formatClubWhenLong } from "@/lib/club-time";
 import { enterClubCompose, exitClubCompose, syncVisualViewport } from "@/lib/vvh";
+import { liveBackendEnabled } from "@/lib/site";
 import { useShelfSearch } from "@/components/shelf-search";
 
 type TogetherSearch = { join?: string; start?: boolean };
@@ -200,6 +201,12 @@ function TogetherPage() {
               Share a link. Name a night. The room holds both of you — two phones, one hour,
               live chat on the page.
             </p>
+            {!liveBackendEnabled ? (
+              <p className="mt-3 max-w-xl font-serif text-base leading-snug text-paper/70">
+                This Pages build has no live backend. Clubs, invites, and RTC sitting stay
+                local until auth and `/api/rtc` are hosted.
+              </p>
+            ) : null}
           </div>
 
           <div className="grid grid-cols-1 border-b border-ink sm:grid-cols-2">

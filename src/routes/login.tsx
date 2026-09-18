@@ -8,6 +8,7 @@ import {
   signIn,
 } from "@/lib/auth/client";
 import { useCurrentUserState } from "@/lib/auth/use-current-user";
+import { withBase } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 type Door = "reader" | "staff";
@@ -58,7 +59,7 @@ function LoginHeader() {
         Home
       </Link>
       <h1 className="flex min-w-0 flex-1 items-center px-4 font-display text-xl font-medium tracking-tight">
-        Vellum
+        Salon
       </h1>
     </header>
   );
@@ -103,7 +104,7 @@ function LoginPage() {
     setError("");
     try {
       await runEmail(mode, address, password, address.split("@")[0] || "Reader");
-      window.location.assign("/profile");
+      window.location.assign(withBase("/profile"));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not sign in");
       setBusy(null);
@@ -130,7 +131,7 @@ function LoginPage() {
         address.split("@")[0] || "Staff",
       );
       await claimStaff();
-      window.location.assign("/desk");
+      window.location.assign(withBase("/desk"));
     } catch (err) {
       setStaffError(err instanceof Error ? err.message : "Could not open the desk");
       setBusy(null);
@@ -159,8 +160,8 @@ function LoginPage() {
                   setBusy(provider.providerId === "grok-google" ? "google" : "x");
                   setError("");
                   void signIn(provider.providerId, {
-                    callbackURL: "/profile",
-                    errorCallbackURL: "/login",
+                    callbackURL: withBase("/profile"),
+                    errorCallbackURL: withBase("/login"),
                   }).catch((err: unknown) => {
                     setError(err instanceof Error ? err.message : "Could not sign in");
                     setBusy(null);
@@ -179,7 +180,8 @@ function LoginPage() {
           </div>
         ) : (
           <p className="border-b border-ink px-5 py-6 font-serif text-lg text-ink/70">
-            Sign-in is disabled.
+            Accounts need a hosted backend. This Pages build is the static reader —
+            progress and favorites stay on this phone.
           </p>
         )}
 
