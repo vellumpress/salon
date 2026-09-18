@@ -1,10 +1,18 @@
 # Salon
 
-A calm, phone-first reading app for public-domain classics. Same paper/ink Mondrian shelf as [Vellum](https://vellumpress.vercel.app/), cut to three destinations: **Discover**, **Read**, and **You**.
+A calm, phone-first reading app for public-domain classics. This repository is the GitHub Pages twin of [Vellum](https://vellumpress.vercel.app/): same catalog and chamber reader, named **Salon**.
 
-Renamed from Vellum Lite. The product name is Salon; the GitHub repo and Pages path stay `vellum-lite`.
+The product name is Salon. The GitHub repo and Pages path stay `vellum-lite`.
 
-No account. No backend. Progress and favorites live in `localStorage`.
+This tree is a full mirror of Vellum V4 (`c9c405`), including every local catalog text and opening (389 each). Do not thin the catalog to save size.
+
+On GitHub Pages the app is a **static SPA**. Reading, shuffle, rituals, and local progress work in the browser. Live accounts, clubs, and RTC sitting need a hosted backend (see below).
+
+## Public URL
+
+Live on GitHub Pages: **https://vellumpress.github.io/vellum-lite/**
+
+Pushes to `main` run `.github/workflows/deploy-pages.yml`. Vite/`tanstackStart` use `base` `/vellum-lite/`. Deep links fall back through `dist/404.html` (a copy of the SPA shell).
 
 ## Local run
 
@@ -13,44 +21,56 @@ npm install
 npm run dev
 ```
 
-Open the printed local URL (usually `http://localhost:5173/vellum-lite/`).
+Open the printed local URL (usually `http://localhost:8080/vellum-lite/`).
 
 ```bash
 npm run build
 npm run preview
 ```
 
-`npm run build` typechecks and emits a static `dist/` folder.
+`npm run build` emits a static `dist/` folder for Pages. `npm run preview` serves that folder at `/vellum-lite/` with the same `404.html` fallback GitHub Pages uses. `pnpm` and `bun` install/build the same way if you prefer those clients.
 
-## What’s on the shelf
+Optional Vercel output (server functions + Nitro `vercel` preset):
 
-Fourteen readable works, including the titles called out for this twin:
+```bash
+npm run build:vercel
+```
 
-- Nella Larsen, *Passing* (1929)
-- Joseph Sheridan Le Fanu, *Carmilla* (1872)
-- Anzia Yezierska, *Hungry Hearts* (1920)
-- Stephen Crane, *Maggie: A Girl of the Streets* (1893)
-- Claude McKay, *Banjo* (1929) — local bind
-- Ernest Hemingway, *In Our Time* (1925 Boni & Liveright local bind; not Project Gutenberg 61085)
-- Edith Wharton, *The House of Mirth* (1905) and *Bunner Sisters* (1916)
-- Lafcadio Hearn, *Kwaidan* (1904)
-- Langston Hughes, *The Weary Blues* (1926)
+## What works on Pages (no secrets)
 
-Plus Blake, Strindberg, Tagore, and Čapek so the Novels / Stories / Poems / Plays rails all have company.
+- Discover, search, form rails, rituals, shuffle, curator UI (picks fail closed without an LLM backend)
+- Chamber reader for all **389 local binds** (texts + openings stay in `src/lib/catalog/texts` and `src/lib/catalog/openings`)
+- Progress, favorites, kept breaths — `localStorage` (`vellum-v1`)
+- Share links that stay on this origin (`/vellum-lite/read/…`)
 
-Texts follow Vellum’s local catalog binds (and Gutenberg/Standard-Ebooks-era public-domain editions where that is how Vellum ships the title). Publication years are historical, not invented.
+## Env / backend gaps (not on Pages)
 
-## Public URL
+Pages has no Node server. These stay off unless you host the app with a real backend and set the flags. **Do not commit secrets.**
 
-Live on GitHub Pages: **https://vellumpress.github.io/vellum-lite/**
+| Feature | Needs | Pages behavior |
+| --- | --- | --- |
+| Sign-in / staff desk | `VITE_AUTH_ENABLED=true`, Better Auth secret, OAuth broker, `DATABASE_URL` | Disabled. Profile is local. `/login` explains the gap. |
+| Synced favorites / reading | Auth + Postgres / PGlite | Local only. |
+| Book clubs / invites | `VITE_LIVE_BACKEND=true` + DB | Create/list/join fail closed; cards stay local. |
+| Sit-together RTC | `/api/rtc` signaling + optional `VITE_STUN_URLS` | Room shows “needs a server”; no mesh. |
+| Curator replies | Server function + model API key | UI loads; ask fails with a quiet error. |
+| Gutenberg-only shelf rows | Server fetch (`fetchShelfWork`) | Local binds still open. Remote-only titles have no text on Pages. |
+| Page import / sentence share | Server extract + DB | Routes load; actions fail closed. |
 
-Pushes to `main` build with Vite (`base` `/vellum-lite/`) and deploy `dist/` via `.github/workflows/deploy-pages.yml`. Deep links fall back through `404.html` (a copy of `index.html`).
+Placeholder flags (already in `.grok/app-env.json` for this static build):
 
-`vercel.json` remains for anyone who still deploys to Vercel; the public HTTPS URL for this repo is the Pages site above.
+```
+VITE_AUTH_ENABLED=false
+VITE_LIVE_BACKEND=false
+# DATABASE_URL=
+# BETTER_AUTH_SECRET=
+# VITE_STUN_URLS=
+```
 
-## Using it
+## Catalog
 
-- **Discover (`/`)** — quiet header (You, not three pillars), search (title / author / year), jump-back-in, curated rail, form rails. Heart on a card favorites the whole work.
-- **You (`/you`)** — continue, favorites, and light stats (opened / favorites / finished).
-- **Shuffle (`/shuffle`)** — pick a duration (5 / 12 / 20 / 30 / Sit / Open), see the title, open it on this phone. No “with a friend.”
-- **Read (`/read/$workId`)** — one-breath chamber: veil with one Begin + sit length, then one sentence/line at a time with faded lookback. Keep a breath (separate from Favorite), tap the hourglass to sit, sand runs until a gentle end cue. Arrow keys, Space, and left/right taps move; `K` keeps. Deep links fall back through `404.html`.
+389 locally bound works with full text and openings. Years and rights notes come from the V4 shelf. English-off ids stay unlistable as full-text reads.
+
+## Tech
+
+TanStack Start (SPA mode) + Vite + React 19 + Tailwind v4. Default production build targets GitHub Pages under `/vellum-lite/`.

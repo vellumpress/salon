@@ -1,0 +1,511 @@
+{
+  "id": "in-our-time",
+  "title": "In Our Time",
+  "author": "Ernest Hemingway",
+  "year": "1925",
+  "note": "Bite-sized ritual sit — Chapter I (vignette) · Indian Camp (opening).\n\nA drunk battery on a dark road—then a Michigan lake at dawn, and Nick Adams in a rowboat with his father. Ernest Hemingway’s 1925 American collection opens with a war vignette snapped against “Indian Camp”: spare sentences, long silences, the method already underway.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I (vignette) · Indian Camp (opening)",
+      "place": "one sitting",
+      "reentry": "The whole battery was drunk going along the road in the dark.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Everybody was drunk."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The whole battery was drunk going along the road in the dark."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "We were going to the Champagne."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The lieutenant kept riding his horse out into the fields and saying to him, “I’m drunk, I tell you, mon vieux."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Oh, I am so soused.”"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "We went along the road all night in the dark, and the adjutant kept riding up alongside my kitchen and saying, “You must put it out."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "It is dangerous."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "It will be observed.”"
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "We were fifty kilometers from the front, but the adjutant worried about the fire in my kitchen."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "It was funny going along that road."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "That was when I was a kitchen Corporal."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "INDIAN CAMP"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "At the lake shore there was another rowboat drawn up."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "The two Indians stood waiting."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "Nick and his father got in the stern of the boat and the Indians shoved it off and one of them got in to row."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Uncle George sat in the stern of the camp rowboat."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "The young Indian shoved the camp boat off and got in to row Uncle George."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "The two boats started off in the dark."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "Nick heard the oar-locks of the other boat quite a way ahead of them in the mist."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "The Indians rowed with quick choppy strokes."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Nick lay back with his father’s arm around him."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "It was cold on the water."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "The Indian who was rowing them was working very hard, but the other boat moved further ahead in the mist all the time."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "“Where are we going, Dad?”"
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "Nick asked."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "“Over to the Indian camp."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "There is an Indian lady very sick.”"
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "“Oh,” said Nick."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "Across the bay they found the other boat beached."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "Uncle George was smoking a cigar in the dark."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "The young Indian pulled the boat way up the beach."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "Uncle George gave both the Indians cigars."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "They walked up from the beach through a meadow that was soaking wet with dew, following the young Indian who carried a lantern."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "Then they went into the woods and followed a trail that led to the logging road that ran back into the hills."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "It was much lighter on the logging road as the timber was cut away on both sides."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "The young Indian stopped and blew out his lantern and they all walked on along the road."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "They came around a bend and a dog came out barking."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "Ahead were the lights of the shanties where the Indian bark-peelers lived."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "More dogs rushed out at them."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "The two Indians sent them back to the shanties."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "In the shanty nearest the road there was a light in the window."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "An old woman stood in the doorway holding a lamp."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "Inside on a wooden bunk lay a young Indian woman."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "She had been trying to have her baby for two days."
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "All the old women in the camp had been helping her."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "The men had moved off up the road to sit in the dark and smoke out of range of the noise she made."
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "She screamed just as Nick and the two Indians followed his father and Uncle George into the shanty."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "She lay in the lower bunk, very big under a quilt."
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "Her head was turned to one side."
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "In the upper bunk was her husband."
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "He had cut his foot very badly with an ax three days before."
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "He was smoking a pipe."
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "The room smelled very bad."
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "Nick’s father ordered some water to be put on the stove, and while it was heating he spoke to Nick."
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "“This lady is going to have a baby, Nick,” he said."
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "“I know,” said Nick."
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "“You don’t know,” said his father."
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "“Listen to me."
+    },
+    {
+      "id": "sit-0-58",
+      "sceneId": "sit-0",
+      "text": "What she is going through is called being in labor."
+    },
+    {
+      "id": "sit-0-59",
+      "sceneId": "sit-0",
+      "text": "The baby wants to be born and she wants it to be born."
+    },
+    {
+      "id": "sit-0-60",
+      "sceneId": "sit-0",
+      "text": "All her muscles are trying to get the baby born."
+    },
+    {
+      "id": "sit-0-61",
+      "sceneId": "sit-0",
+      "text": "That is what is happening when she screams.”"
+    },
+    {
+      "id": "sit-0-62",
+      "sceneId": "sit-0",
+      "text": "“I see,” Nick said."
+    },
+    {
+      "id": "sit-0-63",
+      "sceneId": "sit-0",
+      "text": "Just then the woman cried out."
+    },
+    {
+      "id": "sit-0-64",
+      "sceneId": "sit-0",
+      "text": "“Oh, Daddy, can’t you give her something to make her stop screaming?” asked Nick."
+    },
+    {
+      "id": "sit-0-65",
+      "sceneId": "sit-0",
+      "text": "“No. I haven’t any anæsthetic,” his father said."
+    },
+    {
+      "id": "sit-0-66",
+      "sceneId": "sit-0",
+      "text": "“But her screams are not important."
+    },
+    {
+      "id": "sit-0-67",
+      "sceneId": "sit-0",
+      "text": "I don’t hear them because they are not important.”"
+    },
+    {
+      "id": "sit-0-68",
+      "sceneId": "sit-0",
+      "text": "The husband in the upper bunk rolled over against the wall."
+    },
+    {
+      "id": "sit-0-69",
+      "sceneId": "sit-0",
+      "text": "The woman in the kitchen motioned to the doctor that the water was hot."
+    },
+    {
+      "id": "sit-0-70",
+      "sceneId": "sit-0",
+      "text": "Nick’s father went into the kitchen and poured about half of the water out of the big kettle into a basin."
+    },
+    {
+      "id": "sit-0-71",
+      "sceneId": "sit-0",
+      "text": "Into the water left in the kettle he put several things he unwrapped from a handkerchief."
+    },
+    {
+      "id": "sit-0-72",
+      "sceneId": "sit-0",
+      "text": "“Those must boil,” he said, and began to scrub his hands in the basin of hot water with a cake of soap he had brought from the camp."
+    },
+    {
+      "id": "sit-0-73",
+      "sceneId": "sit-0",
+      "text": "Nick watched his father’s hands scrubbing each other with the soap."
+    },
+    {
+      "id": "sit-0-74",
+      "sceneId": "sit-0",
+      "text": "While his father washed his hands very carefully and thoroughly, he talked."
+    },
+    {
+      "id": "sit-0-75",
+      "sceneId": "sit-0",
+      "text": "“You see, Nick, babies are supposed to be born head first but sometimes they’re not."
+    },
+    {
+      "id": "sit-0-76",
+      "sceneId": "sit-0",
+      "text": "When they’re not they make a lot of trouble for everybody."
+    },
+    {
+      "id": "sit-0-77",
+      "sceneId": "sit-0",
+      "text": "Maybe I’ll have to operate on this lady."
+    },
+    {
+      "id": "sit-0-78",
+      "sceneId": "sit-0",
+      "text": "We’ll know in a little while.”"
+    },
+    {
+      "id": "sit-0-79",
+      "sceneId": "sit-0",
+      "text": "When he was satisfied with his hands he went in and went to work."
+    },
+    {
+      "id": "sit-0-80",
+      "sceneId": "sit-0",
+      "text": "“Pull back that quilt, will you, George?” he said."
+    },
+    {
+      "id": "sit-0-81",
+      "sceneId": "sit-0",
+      "text": "“I’d rather not touch it.”"
+    },
+    {
+      "id": "sit-0-82",
+      "sceneId": "sit-0",
+      "text": "Later when he started to operate Uncle George and three Indian men held the woman still."
+    },
+    {
+      "id": "sit-0-83",
+      "sceneId": "sit-0",
+      "text": "She bit Uncle George on the arm and Uncle George said, “Damn squaw bitch!” and the young Indian who had rowed Uncle George over laughed at him."
+    },
+    {
+      "id": "sit-0-84",
+      "sceneId": "sit-0",
+      "text": "Nick held the basin for his father."
+    },
+    {
+      "id": "sit-0-85",
+      "sceneId": "sit-0",
+      "text": "It all took a long time."
+    },
+    {
+      "id": "sit-0-86",
+      "sceneId": "sit-0",
+      "text": "His father picked the baby up and slapped it to make it breathe and handed it to the old woman."
+    },
+    {
+      "id": "sit-0-87",
+      "sceneId": "sit-0",
+      "text": "“See, it’s a boy, Nick,” he said."
+    },
+    {
+      "id": "sit-0-88",
+      "sceneId": "sit-0",
+      "text": "“How do you like being an interne?”"
+    },
+    {
+      "id": "sit-0-89",
+      "sceneId": "sit-0",
+      "text": "Nick said, “All right.”"
+    },
+    {
+      "id": "sit-0-90",
+      "sceneId": "sit-0",
+      "text": "He was looking away so as not to see what his father was doing."
+    },
+    {
+      "id": "sit-0-91",
+      "sceneId": "sit-0",
+      "text": "“There. That gets it,” said his father and put something into the basin."
+    },
+    {
+      "id": "sit-0-92",
+      "sceneId": "sit-0",
+      "text": "Nick didn’t look at it."
+    },
+    {
+      "id": "sit-0-93",
+      "sceneId": "sit-0",
+      "text": "“Now,” his father said, “there’s some stitches to put in."
+    },
+    {
+      "id": "sit-0-94",
+      "sceneId": "sit-0",
+      "text": "You can watch this or not, Nick, just as you like."
+    },
+    {
+      "id": "sit-0-95",
+      "sceneId": "sit-0",
+      "text": "I’m going to sew up the incision I made.”"
+    },
+    {
+      "id": "sit-0-96",
+      "sceneId": "sit-0",
+      "text": "Nick did not watch."
+    },
+    {
+      "id": "sit-0-97",
+      "sceneId": "sit-0",
+      "text": "His curiosity has been gone for a long time."
+    }
+  ]
+}

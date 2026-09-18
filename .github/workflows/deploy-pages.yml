@@ -32,6 +32,10 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          GITHUB_PAGES: "1"
+          VITE_AUTH_ENABLED: "false"
+          VITE_LIVE_BACKEND: "false"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

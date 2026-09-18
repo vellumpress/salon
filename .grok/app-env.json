@@ -1,0 +1,7 @@
+{
+  "deploy": {
+    "database": true
+  },
+  "VITE_AUTH_ENABLED": "false",
+  "VITE_LIVE_BACKEND": "false"
+}

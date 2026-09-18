@@ -1,4 +1,4 @@
-/** Shared sitting-length presets for the reader hourglass + shuffle. */
+/** Shared sitting-length presets for reader hourglass + profile. */
 
 export type SittingMinutes = 5 | 12 | 20 | 30 | 45 | 0;
 
@@ -15,21 +15,14 @@ export const SIT_PRESETS: ReadonlyArray<{
   { minutes: 0, label: "Open", short: "Open" },
 ];
 
-const PRESET_SET = new Set<number>(SIT_PRESETS.map((preset) => preset.minutes));
-
-export type SitMinutes = SittingMinutes;
+const PRESET_SET = new Set<number>(SIT_PRESETS.map((p) => p.minutes));
 
 export function isSittingMinutes(value: unknown): value is SittingMinutes {
   return typeof value === "number" && PRESET_SET.has(value);
 }
 
-export const isSitMinutes = isSittingMinutes;
-
 /** Clamp any stored / search value into a usable sitting length (0–180). */
-export function asSittingMinutes(
-  value: unknown,
-  fallback: SittingMinutes = 20,
-): number {
+export function asSittingMinutes(value: unknown, fallback: SittingMinutes = 20): number {
   if (typeof value === "string" && /^\d+$/.test(value)) {
     value = Number.parseInt(value, 10);
   }
@@ -41,19 +34,21 @@ export function asSittingMinutes(
 }
 
 export function sitLabel(minutes: number): string {
-  const preset = SIT_PRESETS.find((item) => item.minutes === minutes);
+  const preset = SIT_PRESETS.find((p) => p.minutes === minutes);
   if (preset) return preset.label;
   if (minutes <= 0) return "Open";
   return `${minutes} min`;
 }
 
-export function remainingMs(
-  startedAt: number | null | undefined,
-  minutes: number | null | undefined,
-  now = Date.now(),
-): number | null {
-  if (!startedAt || !minutes || minutes <= 0) return null;
-  return startedAt + minutes * 60_000 - now;
+/** Map a ritual estimate onto the nearest timed preset (or Open). */
+export function nearestSitPreset(estimateMinutes: number): SittingMinutes {
+  if (!Number.isFinite(estimateMinutes) || estimateMinutes <= 0) return 20;
+  if (estimateMinutes <= 7) return 5;
+  if (estimateMinutes <= 14) return 12;
+  if (estimateMinutes <= 22) return 20;
+  if (estimateMinutes <= 40) return 30;
+  if (estimateMinutes <= 90) return 45;
+  return 0;
 }
 
 export function formatSitClock(ms: number): string {
@@ -62,5 +57,3 @@ export function formatSitClock(ms: number): string {
   const s = total % 60;
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
-
-export const formatRemaining = formatSitClock;
