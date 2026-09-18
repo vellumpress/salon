@@ -28,7 +28,7 @@ npm run build
 npm run preview
 ```
 
-`npm run build` emits a static `dist/` folder for Pages. `pnpm` and `bun` install/build the same way if you prefer those clients.
+`npm run build` emits a static `dist/` folder for Pages. `npm run preview` serves that folder at `/vellum-lite/` with the same `404.html` fallback GitHub Pages uses. `pnpm` and `bun` install/build the same way if you prefer those clients.
 
 Optional Vercel output (server functions + Nitro `vercel` preset):
 

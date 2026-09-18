@@ -44,6 +44,15 @@ export const Route = createFileRoute("/together")({
     return next;
   },
   component: TogetherPage,
+  errorComponent: ({ error }) => (
+    <div className="frame-screen bg-paper p-8 text-ink">
+      <p className="font-sans text-xs tracking-wide opacity-70">Read together</p>
+      <p className="mt-2 font-display text-3xl font-medium tracking-tight">The room is dark on Pages.</p>
+      <p className="mt-3 max-w-md font-serif text-lg text-ink/70">
+        Clubs and live sitting need a hosted backend. {error.message}
+      </p>
+    </div>
+  ),
 });
 
 function TogetherPage() {
@@ -64,10 +73,14 @@ function TogetherPage() {
   useEffect(() => setHydrated(true), []);
 
   useEffect(() => {
+    if (!liveBackendEnabled) {
+      setUpcoming([]);
+      return;
+    }
     let live = true;
     void listUpcomingSessions()
       .then((rows) => {
-        if (live) setUpcoming(rows);
+        if (live) setUpcoming(Array.isArray(rows) ? rows : []);
       })
       .catch(() => {
         if (live) setUpcoming([]);
@@ -84,10 +97,14 @@ function TogetherPage() {
       setUserClubs([]);
       return;
     }
+    if (!liveBackendEnabled) {
+      setUserClubs([]);
+      return;
+    }
     let live = true;
     void listBookClubs({ data: { ids } })
       .then((rows) => {
-        if (live) setUserClubs(rows);
+        if (live) setUserClubs(Array.isArray(rows) ? rows : []);
       })
       .catch(() => {
         if (live) setUserClubs([]);
@@ -101,6 +118,11 @@ function TogetherPage() {
     if (!join) {
       setWelcome(null);
       setJoinMissing(false);
+      return;
+    }
+    if (!liveBackendEnabled) {
+      setWelcome(null);
+      setJoinMissing(true);
       return;
     }
     let live = true;

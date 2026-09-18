@@ -163,6 +163,10 @@ const PAGES_BASE = "/vellum-lite/";
 // AGENTS.md § "First scaffold".
 export default defineConfig(({ command, isPreview }) => {
   const nitroPreset = process.env.NITRO_PRESET || "github_pages";
+  const pagesBuild =
+    nitroPreset === "github_pages" ||
+    nitroPreset === "github-pages" ||
+    process.env.GITHUB_PAGES === "1";
   return {
     base: PAGES_BASE,
     server: {
@@ -186,6 +190,7 @@ export default defineConfig(({ command, isPreview }) => {
       grokPwaPlugin(),
       tailwindcss(),
       tanstackStart({
+        router: { basepath: "/vellum-lite" },
         spa: {
           enabled: true,
           prerender: {
@@ -194,16 +199,17 @@ export default defineConfig(({ command, isPreview }) => {
           },
         },
       }),
+      // GitHub Pages is a static SPA: skip Nitro. The vercel preset still
+      // needs it for server functions and the PWA install middleware.
       ...(command === "build" || isPreview
-        ? [
-            nitro({
-              preset: nitroPreset,
-              // Auto-registers server/middleware/* (the PWA install page +
-              // manifest + head-tag middleware). Nitro v3 defaults serverDir to
-              // false, so removing this silently unwires /?install=1 on deploys.
-              serverDir: "./server",
-            }),
-          ]
+        ? pagesBuild
+          ? []
+          : [
+              nitro({
+                preset: nitroPreset,
+                serverDir: "./server",
+              }),
+            ]
         : []),
       viteReact(),
       spaFallback404(),
