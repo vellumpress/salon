@@ -11,10 +11,7 @@ export function Mark({ current }: Props) {
         to="/"
         className="flex h-full min-w-0 flex-1 items-center self-stretch bg-paper px-4 font-display text-xl font-medium tracking-tight text-ink sm:text-2xl"
       >
-        Vellum
-        <span className="ml-2 font-sans text-[0.65rem] uppercase tracking-[0.14em] text-muted">
-          Lite
-        </span>
+        Salon
       </Link>
       {current === "you" ? (
         <Link
