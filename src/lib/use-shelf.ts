@@ -4,11 +4,13 @@ import {
   getShelf,
   markEntered,
   saveProgress,
+  setBreath,
   setFontSize,
   setLastShuffle,
   startSitting,
   subscribeShelf,
   toggleFavorite,
+  toggleKept,
   type ShelfState,
   type WorkProgress,
 } from "./storage";
@@ -41,7 +43,9 @@ export function useReaderPrefs() {
 export {
   markEntered,
   saveProgress,
+  setBreath,
   setLastShuffle,
   startSitting,
   toggleFavorite,
+  toggleKept,
 };
