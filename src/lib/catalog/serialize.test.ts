@@ -129,7 +129,7 @@ test("club read search uses the next sitting's night", () => {
     { serializePlanId: gatsby.id, startEpisode: 3, sessions: [{ id: 1 }, { id: 2 }], nextSession: { id: 2 } },
     "abc123",
   );
-  assert.equal(first.episode, 4);
+  assert.equal("episode" in first ? first.episode : undefined, 4);
   assert.equal(first.pair, "abc123");
   assert.ok((first.sit ?? 0) > 0);
 });
