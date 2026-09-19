@@ -7,6 +7,7 @@ import {
   contactId,
   type FriendContact,
 } from "./friends.ts";
+import { handlesInVault } from "./reader-account.ts";
 import { handleError, normalizeHandle, readerByHandle, READERS } from "./social.ts";
 import {
   addSitKeep,
@@ -300,6 +301,7 @@ export const useVellum = create<VellumState>()(
         const taken = [
           ...READERS.map((row) => row.handle),
           ...(get().contacts ?? []).map((row) => row.handle),
+          ...handlesInVault().filter((row) => row !== get().handle),
         ];
         const error = handleError(handle, taken);
         if (error) return { ok: false as const, error };

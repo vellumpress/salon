@@ -3,6 +3,7 @@ import { useMemo, useState, type FormEvent } from "react";
 import { ResumeLink, usePersistHydrated } from "@/components/resume-link";
 import { fillClass, fillInk, planeOf } from "@/lib/mondrian";
 import { friendKeptLine, friendsFeed, searchPeople, youCard } from "@/lib/friends";
+import { renameActiveHandle } from "@/lib/reader-account";
 import { formatHandle, handleError, normalizeHandle, readerByHandle } from "@/lib/social";
 import { liveBackendEnabled, publicUrl } from "@/lib/site";
 import { useVellum } from "@/lib/store";
@@ -111,6 +112,7 @@ function FriendsPage() {
       setMessage(result.error);
       return;
     }
+    renameActiveHandle(result.handle);
     setDraft("");
     setMessage(`Sitting as ${formatHandle(result.handle)}.`);
   }

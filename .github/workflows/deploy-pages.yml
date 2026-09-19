@@ -35,6 +35,9 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAGES: "1"
+          # Keep false: Pages has no /api/auth. Reader accounts are local-first
+          # (You / login). Enabling this flag would either call a missing API
+          # or treat the sandbox Dev User as signed in.
           VITE_AUTH_ENABLED: "false"
           VITE_LIVE_BACKEND: "false"
 

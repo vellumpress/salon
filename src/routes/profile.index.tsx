@@ -2,10 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { getMe, pushReading, saveSettings, type Me } from "@/lib/account";
 import { SIT_PRESETS } from "@/lib/sitting";
-import { useCurrentUserState, type AppUser } from "@/lib/auth/use-current-user";
 import { FavoriteWorks } from "@/components/favorite-works";
+import { ReaderAuthForm } from "@/components/reader-auth-form";
 import { SignOutMark } from "@/components/sign-out";
-import { CLUBS } from "@/lib/social";
+import { CLUBS, formatHandle } from "@/lib/social";
 import { fillClass, fillInk } from "@/lib/mondrian";
 import { useVellum } from "@/lib/store";
 import { deriveReadingStats } from "@/lib/reading-stats";
@@ -28,8 +28,8 @@ import { cn } from "@/lib/utils";
 import { mixSeed, takeShuffled } from "@/lib/recommend";
 import { useFavoriteSync } from "@/lib/use-favorite-sync";
 import { liveBackendEnabled } from "@/lib/site";
+import { useReaderSession, type ReaderAuthMode } from "@/lib/use-reader-session";
 import { useVisitSeed } from "@/lib/use-visit-seed";
-import { formatHandle } from "@/lib/social";
 
 export const Route = createFileRoute("/profile/")({
   component: ProfilePage,
@@ -66,8 +66,8 @@ function dayPrompt() {
 }
 
 function ProfilePage() {
-  const { user, isPending } = useCurrentUserState();
-  if (isPending) {
+  const session = useReaderSession();
+  if (session.isPending) {
     return (
       <div className="frame-screen bg-paper text-ink">
         <header className="flex shrink-0 items-stretch border-b border-ink">
@@ -95,10 +95,15 @@ function ProfilePage() {
       </div>
     );
   }
-  return <ProfileBody user={user} />;
+  return <ProfileBody session={session} />;
 }
 
-function ProfileBody({ user }: { user: AppUser | null }) {
+function ProfileBody({
+  session,
+}: {
+  session: ReturnType<typeof useReaderSession>;
+}) {
+  const { identity, liveUser, hasAccounts, storeHandle, createAccount, signIn } = session;
   const progress = useVellum((s) => s.progress);
   const joined = useVellum((s) => s.joined) ?? [];
   const sittingMinutes = useVellum((s) => s.sittingMinutes);
@@ -109,23 +114,30 @@ function ProfileBody({ user }: { user: AppUser | null }) {
   const handle = useVellum((s) => s.handle) ?? "";
   const setTaste = useVellum((s) => s.setTaste);
   const setSittingMinutes = useVellum((s) => s.setSittingMinutes);
-  const { hydrated, favorites } = useFavoriteSync(user);
+  const { hydrated, favorites } = useFavoriteSync(liveUser);
   const visit = useVisitSeed();
   const [me, setMe] = useState<Me | null>(null);
-  const [name, setName] = useState(user && !user.isDevFallback ? (user.displayName ?? "") : "");
+  const [name, setName] = useState(identity?.displayName ?? "");
   const [sit, setSit] = useState<number>(sittingMinutes);
   const [saved, setSaved] = useState(false);
   const [error, setError] = useState("");
   const [saving, setSaving] = useState(false);
+  const [authMode, setAuthMode] = useState<ReaderAuthMode>(hasAccounts ? "in" : "up");
+  const [authError, setAuthError] = useState("");
+  const [authBusy, setAuthBusy] = useState(false);
 
   useEffect(() => {
-    if (!user || user.isDevFallback || !liveBackendEnabled) return;
+    if (hasAccounts) setAuthMode("in");
+  }, [hasAccounts]);
+
+  useEffect(() => {
+    if (!liveUser || !liveBackendEnabled) return;
     let alive = true;
-    void getMe({ data: { name: user.displayName ?? "" } })
+    void getMe({ data: { name: liveUser.displayName ?? "" } })
       .then((row) => {
         if (!alive) return;
         setMe(row);
-        setName(row.name || user.displayName || "");
+        setName(row.name || liveUser.displayName || "");
         setSit(row.sittingMinutes);
         setSittingMinutes(row.sittingMinutes);
         setTaste(row.taste);
@@ -139,10 +151,10 @@ function ProfileBody({ user }: { user: AppUser | null }) {
     return () => {
       alive = false;
     };
-  }, [user, setSittingMinutes, setTaste]);
+  }, [liveUser, setSittingMinutes, setTaste]);
 
   useEffect(() => {
-    if (!hydrated || !user || user.isDevFallback || !liveBackendEnabled) return;
+    if (!hydrated || !liveUser || !liveBackendEnabled) return;
     const entries = Object.entries(progress)
       .filter(([id, item]) => item.entered && id !== "page")
       .slice(0, 80)
@@ -155,7 +167,7 @@ function ProfileBody({ user }: { user: AppUser | null }) {
       }));
     if (entries.length === 0) return;
     void pushReading({ data: { entries } }).catch(() => undefined);
-  }, [hydrated, progress, user]);
+  }, [hydrated, progress, liveUser]);
 
   const last = useLastRead();
   const reading = useMemo(
@@ -191,26 +203,53 @@ function ProfileBody({ user }: { user: AppUser | null }) {
   }, [visit]);
 
   const mine = hydrated ? CLUBS.filter((club) => joined.includes(club.id)) : [];
+  const shownHandle = formatHandle(identity?.handle || handle);
   const shownName =
-    name.trim() || (user && !user.isDevFallback ? user.displayName : "") || "You";
-  const shownHandle = formatHandle(handle);
+    shownHandle || name.trim() || identity?.displayName || "You";
+
+  async function submitCreate(input: { handle: string; email: string; password: string }) {
+    setAuthBusy(true);
+    setAuthError("");
+    try {
+      await createAccount(input);
+    } catch (err) {
+      setAuthError(err instanceof Error ? err.message : "Could not create the account");
+    } finally {
+      setAuthBusy(false);
+    }
+  }
+
+  async function submitSignIn(input: { email: string; password: string }) {
+    setAuthBusy(true);
+    setAuthError("");
+    try {
+      await signIn(input);
+    } catch (err) {
+      setAuthError(err instanceof Error ? err.message : "Could not sign in");
+    } finally {
+      setAuthBusy(false);
+    }
+  }
 
   async function save() {
-    if (!user) return;
+    if (!identity) return;
     setSaving(true);
     setError("");
     setSaved(false);
     try {
-      const row = await saveSettings({
-        data: {
-          name: name.trim().slice(0, 80),
-          sittingMinutes: sit,
-          taste: me?.taste ?? "",
-        },
-      });
-      setMe(row);
-      setSittingMinutes(row.sittingMinutes);
-      setTaste(row.taste);
+      setSittingMinutes(sit);
+      if (liveUser && liveBackendEnabled) {
+        const row = await saveSettings({
+          data: {
+            name: name.trim().slice(0, 80),
+            sittingMinutes: sit,
+            taste: me?.taste ?? "",
+          },
+        });
+        setMe(row);
+        setSittingMinutes(row.sittingMinutes);
+        setTaste(row.taste);
+      }
       setSaved(true);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not keep that");
@@ -247,13 +286,13 @@ function ProfileBody({ user }: { user: AppUser | null }) {
             Desk
           </Link>
         ) : null}
-        {user ? <SignOutMark className="border-l border-paper" /> : null}
-        {!user ? (
+        {identity ? <SignOutMark className="border-l border-paper" /> : null}
+        {!identity ? (
           <Link
             to="/login"
             className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
           >
-            Log in
+            Sign in
           </Link>
         ) : null}
       </header>
@@ -266,8 +305,28 @@ function ProfileBody({ user }: { user: AppUser | null }) {
             <div className="min-h-40 bg-blue sm:min-h-48" />
           </div>
         ) : (
+          <ReadinessHero reading={reading} handle={shownHandle} name={shownName} />
+        )}
+
+        {!identity ? (
+          <section>
+            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
+              {authMode === "up" ? "Create an account" : "Sign in"}
+            </p>
+            <ReaderAuthForm
+              mode={authMode}
+              onMode={setAuthMode}
+              defaultHandle={storeHandle}
+              busy={authBusy}
+              error={authError}
+              onCreate={(input) => void submitCreate(input)}
+              onSignIn={(input) => void submitSignIn(input)}
+            />
+          </section>
+        ) : null}
+
+        {!hydrated ? null : (
           <>
-            <ReadinessHero reading={reading} handle={shownHandle} name={shownName} />
             <YouRings rings={reading.rings} />
             {reading.hasSignal ? (
               <>
@@ -427,34 +486,27 @@ function ProfileBody({ user }: { user: AppUser | null }) {
           )}
         </section>
 
-        {user ? (
+        {identity ? (
           <section>
             <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
               Settings
             </p>
-            <Link
-              to="/friends"
-              preload="intent"
-              className="flex items-center justify-between border-b border-ink px-4 py-5"
-            >
-              <span>
-                <span className="block type-kicker text-muted">@username</span>
-                <span className="mt-1 block type-lede">
-                  {shownHandle || "Claim a name"}
-                </span>
-              </span>
-              <span className="font-sans text-sm">{shownHandle ? "Friends" : "Claim"}</span>
-            </Link>
-            <label className="flex items-stretch border-b border-ink">
+            <div className="flex items-stretch border-b border-ink">
               <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
-                Name
+                @name
               </span>
-              <input
-                value={name}
-                onChange={(event) => setName(event.target.value)}
-                className="h-12 min-w-0 flex-1 border-0 bg-transparent font-serif text-xl text-ink focus-visible:outline-none"
-              />
-            </label>
+              <span className="flex h-12 min-w-0 flex-1 items-center font-serif text-xl">
+                {formatHandle(identity.handle)}
+              </span>
+            </div>
+            <div className="flex items-stretch border-b border-ink">
+              <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
+                Email
+              </span>
+              <span className="flex h-12 min-w-0 flex-1 items-center font-serif text-xl">
+                {identity.email}
+              </span>
+            </div>
             <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
               A sitting
             </p>
@@ -499,40 +551,7 @@ function ProfileBody({ user }: { user: AppUser | null }) {
             </button>
             <SignOutMark className="h-14 w-full border-0" />
           </section>
-        ) : (
-          <section>
-            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-              Account
-            </p>
-            <Link
-              to="/friends"
-              preload="intent"
-              className="flex items-center justify-between border-b border-ink px-4 py-5"
-            >
-              <span>
-                <span className="block type-kicker text-muted">@username</span>
-                <span className="mt-1 block type-lede">
-                  {shownHandle || "Claim a name on this phone"}
-                </span>
-              </span>
-              <span className="font-sans text-sm">{shownHandle ? "Friends" : "Claim"}</span>
-            </Link>
-            <Link
-              to="/login"
-              className="flex items-center justify-between border-b border-ink px-4 py-5"
-            >
-              <span>
-                <span className="block type-lede">
-                  Log in to sync
-                </span>
-                <span className="mt-1 block font-serif text-sm text-ink/70">
-                  Name and sitting length stay on this device until you do.
-                </span>
-              </span>
-              <span className="font-sans text-sm">Log in</span>
-            </Link>
-          </section>
-        )}
+        ) : null}
       </div>
     </div>
   );
