@@ -11,6 +11,7 @@ import {
 import { useVellum } from "@/lib/store";
 import { fillClass, planeOf, type Fill } from "@/lib/mondrian";
 import { readerIntro } from "@/lib/reader-intro";
+import { shouldShowPreface } from "@/lib/reader-threshold";
 import { FavoriteMark } from "@/components/favorite-mark";
 import { Hourglass } from "@/components/hourglass";
 import { TogetherShell } from "@/components/sitting-room";
@@ -121,6 +122,7 @@ export function VellumReader({
   const [customSit, setCustomSit] = useState("");
   /** threshold: full = length+company; length = pair already set, sit missing; share = invite friend */
   const [gateMode, setGateMode] = useState<"full" | "length" | "share">("full");
+  const [showPreface, setShowPreface] = useState(false);
   const [company, setCompany] = useState<"alone" | "together" | null>(null);
   const [invitePair, setInvitePair] = useState<string | null>(null);
   const [inviteHref, setInviteHref] = useState("");
@@ -144,8 +146,11 @@ export function VellumReader({
     }
     booted.current = true;
     const prior = useVellum.getState().progress[work.id];
+    const firstSit = shouldShowPreface(prior);
+    setShowPreface(firstSit);
     if (shuffle) {
       useVellum.getState().startShuffle(work.id);
+      setShowPreface(false);
       setOverlay("none");
       return;
     }
@@ -164,6 +169,7 @@ export function VellumReader({
     if (deepLink !== null) {
       startSitting(work.id);
       setBreath(work.id, deepLink);
+      setShowPreface(false);
       setOverlay("none");
       return;
     }
@@ -175,6 +181,7 @@ export function VellumReader({
     // Friend already joining with pair+sit — skip the gate.
     if (pair && sit !== undefined) {
       startSitting(work.id);
+      setShowPreface(false);
       setOverlay("none");
       return;
     }
@@ -214,7 +221,7 @@ export function VellumReader({
   const kept = progress?.kept ?? [];
   const isKept = breath ? kept.includes(breath.id) : false;
   const plane: Fill = planeOf(breath?.sceneId ?? work.id);
-  const intro = readerIntro(work);
+  const intro = showPreface ? readerIntro(work) : "";
   const palimpsest = progress?.keywords[breath?.sceneId ?? ""] ?? "";
   const showPalimpsest = Boolean(palimpsest && palimpsest !== "—" && index > 0);
 
@@ -951,6 +958,59 @@ export function VellumReader({
                 </button>
               </div>
             </>
+          ) : showPreface ? (
+            <>
+              <div className="veil-body veil-preface">
+                <p className="type-kicker text-muted">
+                  {nightChrome ? `${work.title} · ${work.author}` : work.author}
+                </p>
+                <h1 className="veil-title">{nightChrome || work.title}</h1>
+                {intro ? <p className="veil-note veil-preface-note">{intro}</p> : null}
+                {gateMode === "length" ? (
+                  <>
+                    <p className="mt-8 type-kicker text-muted">How long will you sit</p>
+                    <div className="sit-presets mt-3" role="group" aria-label="Sitting length">
+                      {SIT_PRESETS.map((preset) => (
+                        <button
+                          key={preset.minutes}
+                          type="button"
+                          onClick={() => chooseSit(preset.minutes)}
+                          className={cn(
+                            "sit-preset",
+                            sittingMinutes === preset.minutes && "sit-preset-on",
+                          )}
+                        >
+                          {preset.short}
+                        </button>
+                      ))}
+                    </div>
+                    <p className="mt-2 font-sans text-xs text-muted">{sitLabel(sittingMinutes)}</p>
+                  </>
+                ) : null}
+              </div>
+              {gateMode === "full" ? (
+                <div className="flex shrink-0 flex-col gap-rule bg-ink">
+                  <button
+                    type="button"
+                    className="flex h-16 items-center justify-center bg-ink font-sans text-sm text-paper"
+                    onClick={beginAlone}
+                  >
+                    Sit
+                  </button>
+                  <button
+                    type="button"
+                    className="flex h-16 items-center justify-center bg-red font-sans text-sm text-paper"
+                    onClick={beginTogetherShare}
+                  >
+                    With a friend
+                  </button>
+                </div>
+              ) : (
+                <button type="button" onClick={crossThreshold} className="veil-action-full">
+                  Sit
+                </button>
+              )}
+            </>
           ) : (
             <>
               <div className="veil-body">
@@ -958,7 +1018,6 @@ export function VellumReader({
                 <p className="mt-3 font-sans text-sm text-muted">
                   {nightChrome ? `${work.title} · ${work.author}` : work.author}
                 </p>
-                {intro ? <p className="veil-note">{intro}</p> : null}
                 <p className="mt-8 type-kicker text-muted">How long will you sit</p>
                 <div className="sit-presets mt-3" role="group" aria-label="Sitting length">
                   {SIT_PRESETS.map((preset) => (

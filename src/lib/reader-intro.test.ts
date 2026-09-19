@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { readerIntro, trimReaderIntro } from "./reader-intro";
-import type { Work } from "./works";
+import { SHELF } from "./catalog/shelf.ts";
+import { readerIntro, trimReaderIntro } from "./reader-intro.ts";
+import type { Work } from "./works.ts";
 
 function work(id: string, note = ""): Work {
   return {
@@ -18,30 +19,46 @@ function work(id: string, note = ""): Work {
   };
 }
 
+function shelfAsWork(id: string): Work {
+  const item = SHELF.find((row) => row.id === id);
+  assert.ok(item, id);
+  return {
+    id: item.id,
+    title: item.title,
+    author: item.author,
+    year: String(item.year),
+    note: item.intro ?? "",
+    minutes: item.minutes,
+    cover: "",
+    coverAlt: "",
+    scenes: [],
+    breaths: [],
+  };
+}
+
 test("uses a Featured shelf pitch before other copy", () => {
   assert.equal(
     readerIntro(work("passing", "This LE About copy should not win.")),
-    'Nella Larsen’s two women, one secret, and the color line drawn through friendship. Chicago heat, Harlem rooms — belonging as a dangerous performance.',
+    "Irene Redfield sorts her morning mail in Harlem and finds a thin envelope in purple ink—no return address, a hand she knows at once. Clare Kendry, the childhood friend who slipped into another world, is writing again. Nella Larsen’s 1929 New York novel opens on that letter, still unopened, and the careful life it threatens to unsettle.",
   );
 });
 
 test("uses Featured before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),
-    'Paris pearls and a kept boy — Flanner’s Colette, appetite turning into recognition. Aging beauty meets the younger lover who was never going to stay.',
+    "Paris pearls and a kept boy — Flanner’s Colette, appetite turning into recognition. Aging beauty meets the younger lover who was never going to stay.",
   );
 });
 
-test("trims a local Literary Editor About to two sentences", () => {
-  assert.equal(
-    readerIntro(
-      work(
-        "the-man-who-was-afraid",
-        "First immersive sentence. Second immersive sentence! Academic third sentence.",
-      ),
+test("stored preface wins over a long About note", () => {
+  const copy = readerIntro(
+    work(
+      "the-man-who-was-afraid",
+      "This LE About copy should not win because a stored preface already exists.",
     ),
-    "First immersive sentence. Second immersive sentence!",
   );
+  assert.match(copy, /Sit with the world/i);
+  assert.doesNotMatch(copy, /This LE About copy/);
 });
 
 test("omits metadata fallback for works without a local polished bind", () => {
@@ -54,8 +71,35 @@ test("omits metadata fallback for works without a local polished bind", () => {
 test("normalizes paragraph breaks while trimming About copy", () => {
   assert.equal(
     trimReaderIntro(
-      "  One sentence in the room.\n\nA second sentence at the door. A third stays out.  ",
+      "  One sentence in the room.\n\nA second sentence at the door. A third stays in. A fourth stays out.  ",
     ),
-    "One sentence in the room. A second sentence at the door.",
+    "One sentence in the room. A second sentence at the door. A third stays in.",
   );
+});
+
+test("Of Human Bondage has a stored 2–3 sentence preface", () => {
+  const copy = readerIntro(shelfAsWork("of-human-bondage"));
+  assert.match(copy, /club foot/i);
+  assert.match(copy, /Sit with that weather/i);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright/i);
+  const sentences = copy.split(/(?<=[.!?])\s+/).filter(Boolean);
+  assert.ok(sentences.length >= 2 && sentences.length <= 3, copy);
+});
+
+test("every shelf work has a non-empty readerIntro", () => {
+  const missing: string[] = [];
+  const thin: string[] = [];
+  const banned: string[] = [];
+  for (const item of SHELF) {
+    const copy = readerIntro(shelfAsWork(item.id));
+    if (!copy) {
+      missing.push(item.id);
+      continue;
+    }
+    if (copy.length < 24) thin.push(`${item.id}: ${copy}`);
+    if (/gutenberg|public domain|copyright ©/i.test(copy)) banned.push(item.id);
+  }
+  assert.deepEqual(missing, [], `empty readerIntro: ${missing.join(", ")}`);
+  assert.deepEqual(thin, [], `thin readerIntro: ${thin.join(" | ")}`);
+  assert.deepEqual(banned, [], `legal boilerplate in readerIntro: ${banned.join(", ")}`);
 });
