@@ -68,6 +68,23 @@ export function fillInk(fill: Fill) {
   return fill === "red" || fill === "blue" || fill === "forest" || fill === "ink" ? "text-paper" : "text-ink";
 }
 
+export function fillVar(fill: Fill) {
+  switch (fill) {
+    case "red":
+      return "var(--color-red)";
+    case "blue":
+      return "var(--color-blue)";
+    case "yellow":
+      return "var(--color-yellow)";
+    case "forest":
+      return "var(--color-forest)";
+    case "ink":
+      return "var(--color-ink)";
+    default:
+      return "var(--color-paper)";
+  }
+}
+
 export function fillOf(id: string): Fill {
   switch (id) {
     case "passing":

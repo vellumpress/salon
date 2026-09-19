@@ -88,8 +88,8 @@ function ProfilePage() {
             Friends
           </Link>
         </header>
-        <div className="flex min-h-36 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
-          <p className="type-kicker opacity-80">This sitting</p>
+        <div className="flex min-h-36 flex-col justify-end border-b border-ink bg-paper p-5 text-ink sm:p-8">
+          <p className="type-kicker text-muted">This sitting</p>
           <p className="mt-2 type-title">You</p>
         </div>
       </div>

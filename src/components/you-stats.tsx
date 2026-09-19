@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { fillClass, fillInk, type Fill } from "@/lib/mondrian";
+import { fillClass, fillInk, fillVar, type Fill } from "@/lib/mondrian";
 import {
   formatActivityWhen,
   formatMinutes,
@@ -11,6 +11,7 @@ import {
   type ReadingStats,
   type RingStat,
 } from "@/lib/reading-stats";
+import { useYouHeroPalette } from "@/lib/you-hero-palette";
 import { cn } from "@/lib/utils";
 
 const RING_FILLS: Record<string, Fill> = {
@@ -31,72 +32,56 @@ function ringOffset(value: number, max: number, circumference: number) {
 export function ReadinessHero({
   reading,
   handle,
-  name,
 }: {
   reading: ReadingStats;
   handle: string;
-  name: string;
+  /** Kept for callers; preview names stay off the hero. */
+  name?: string;
 }) {
+  const palette = useYouHeroPalette();
   const size = 168;
   const cx = size / 2;
-  const rings = [
-    { r: 74, width: 8, stat: reading.rings[1], stroke: "var(--color-yellow)" },
-    { r: 60, width: 8, stat: reading.rings[0], stroke: "var(--color-paper)" },
-    { r: 46, width: 7, stat: reading.rings[3], stroke: "var(--color-red)" },
-  ];
 
   return (
-    <section className="flex flex-col bg-ink text-paper">
+    <section className="flex flex-col border-b border-ink bg-paper text-ink">
       <div className="flex flex-col gap-5 px-5 py-6 sm:flex-row sm:items-end sm:gap-8 sm:px-8 sm:py-8">
         <div
           className="you-readiness relative mx-auto shrink-0 sm:mx-0"
           aria-label={`Reading score ${reading.readiness.score}, ${reading.readiness.label}`}
         >
           <svg viewBox={`0 0 ${size} ${size}`} className="h-full w-full" aria-hidden>
-            {rings.map((ring) => {
-              const c = 2 * Math.PI * ring.r;
-              return (
-                <g key={ring.stat?.id ?? ring.r}>
-                  <circle
-                    cx={cx}
-                    cy={cx}
-                    r={ring.r}
-                    fill="none"
-                    stroke="var(--color-paper)"
-                    strokeOpacity="0.18"
-                    strokeWidth={ring.width}
-                  />
-                  <circle
-                    cx={cx}
-                    cy={cx}
-                    r={ring.r}
-                    fill="none"
-                    stroke={ring.stroke}
-                    strokeWidth={ring.width}
-                    strokeDasharray={c}
-                    strokeDashoffset={ringOffset(ring.stat?.value ?? 0, ring.stat?.max ?? 1, c)}
-                    strokeLinecap="butt"
-                    transform={`rotate(-90 ${cx} ${cx})`}
-                  />
-                </g>
-              );
-            })}
+            <circle
+              cx={cx}
+              cy={cx}
+              r="72"
+              fill="none"
+              stroke="var(--color-ink)"
+              strokeWidth="1.25"
+            />
+            <circle
+              cx={cx}
+              cy={cx}
+              r="64"
+              fill="none"
+              stroke={fillVar(palette.ring)}
+              strokeWidth="8"
+            />
           </svg>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="type-kicker text-paper/70">Today</span>
-            <span className="type-title text-paper">{reading.readiness.score}</span>
+            <span className="type-kicker text-muted">Today</span>
+            <span className="type-title text-ink">{reading.readiness.score}</span>
           </div>
         </div>
         <div className="min-w-0 flex-1 pb-1">
-          <p className="type-kicker text-paper/70">
+          <p className="type-kicker text-muted">
             {handle || "This sitting"}
           </p>
           <p className="mt-2 type-title">{reading.readiness.label}</p>
-          <p className="type-pitch mt-2.5 max-w-xl text-paper/75">
+          <p className="type-pitch mt-2.5 max-w-xl text-ink/75">
             {reading.readiness.line}
           </p>
           {reading.hasSignal ? (
-            <p className="mt-3 font-sans text-xs tracking-chrome text-paper/55">
+            <p className="mt-3 font-sans text-xs tracking-chrome text-ink/55">
               Week {formatMinutes(reading.minutesWeek)}
               {reading.minutesAreEstimated ? " est." : ""}
             </p>
