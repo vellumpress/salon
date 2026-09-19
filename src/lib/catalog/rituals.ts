@@ -94,6 +94,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Teasdale’s grief poems that still catch the light. Flame, shadow, and the after-image of someone who won’t walk back through the door.",
   passing:
     `Irene Redfield sorts her morning mail in Harlem and finds a thin envelope in purple ink—no return address, a hand she knows at once. Clare Kendry, the childhood friend who slipped into another world, is writing again. Nella Larsen’s 1929 New York novel opens on that letter, still unopened, and the careful life it threatens to unsettle.`,
+  quicksand:
+    `Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door. Quicksand begins in intentional isolation after a taxing day among an unkind faculty. Nella Larsen’s 1928 novel is a character study with Copenhagen ahead — stop before the observer portrait.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":
@@ -134,6 +136,7 @@ export const RITUAL_LANES: RitualLane[] = [
     label: "Before sleep",
     hint: "Dreams / night",
     workIds: [
+      "quicksand",
       "the-wild-swans-at-coole",
       "kwaidan-stories-and-studies-of-strange-things",
       "the-listeners-and-other-poems",
@@ -220,6 +223,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "carmilla": 5,
   "hungry-hearts": 6,
   "in-our-time": 9,
+  quicksand: 5,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

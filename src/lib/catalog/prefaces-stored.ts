@@ -394,7 +394,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "prufrock-and-other-observations": `Prufrock and Other Observations (1917): London quatrains and the nerves of a city. Let the first line arrive when you are ready.`,
   "psyche": `Louis Couperus’s 1898 novel Psyche. Sit with the world a moment before the first breath.`,
   "pudd-nhead-wilson": `A switched baby in a Missouri town, and a lawyer who collects fingerprints. Sit with the world a moment before the first breath.`,
-  "quicksand": `Quicksand (1928): passing as a dangerous performance of belonging. Sit with the world a moment before the first breath.`,
+  "quicksand": `Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door. Quicksand begins in intentional isolation after a taxing day among an unkind faculty.`,
   "quincas": `Machado de Assis’s 1891 novel Quincas Borba. Sit with the world a moment before the first breath.`,
   "quiroga": `Horacio Quiroga’s 1917 stories, gathered as Tales of Love, Madness, and Death. Enter one room at a time.`,
   "quo-vadis": `Henryk Sienkiewicz’s 1896 novel Quo Vadis. Sit with the world a moment before the first breath.`,

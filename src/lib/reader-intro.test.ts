@@ -43,6 +43,13 @@ test("uses a Featured shelf pitch before other copy", () => {
   );
 });
 
+test("Quicksand uses the before-sleep closed-door sit, not Featured carousel copy", () => {
+  const copy = readerIntro(shelfAsWork("quicksand"));
+  assert.match(copy, /Helga Crane sits alone/);
+  assert.match(copy, /will not open the door/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright/i);
+});
+
 test("uses Featured before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),

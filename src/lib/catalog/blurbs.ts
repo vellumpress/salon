@@ -23,6 +23,8 @@ const BLURBS: Record<string, string> = {
     "Berlin talks through Franz Biberkopf after prison — noise, politics, and fate in Döblin’s street choir.",
   passing:
     "Larsen’s two women, one secret, and the color line drawn through friendship.",
+  quicksand:
+    "Eight in the evening in Naxos: Helga Crane sits alone and will not open the door.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:
