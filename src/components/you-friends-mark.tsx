@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 
 const slot =
-  "flex h-full shrink-0 items-center self-stretch border-l border-ink/15 bg-paper px-4 font-sans text-sm text-ink [touch-action:manipulation]";
+  "type-chrome flex h-full shrink-0 items-center self-stretch border-l border-ink/15 bg-paper px-4 text-ink [touch-action:manipulation]";
 
 /** Top-mark Friends + You — same chrome, Friends first. */
 export function YouFriendsMark({

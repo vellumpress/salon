@@ -134,11 +134,11 @@ function ShufflePage() {
       <header className="relative z-20 flex shrink-0 items-stretch border-b border-ink">
         <Link
           to={together ? "/together" : "/"}
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           {together ? "Together" : "Home"}
         </Link>
-        <span className="flex min-w-0 flex-1 items-center bg-paper px-4 font-sans text-xs tracking-wide text-ink">
+        <span className="flex min-w-0 flex-1 items-center bg-paper px-4 type-kicker text-ink">
           {together ? "Sit with a friend" : "A sitting"}
         </span>
         <span className="w-3 shrink-0 bg-red sm:w-4" />
@@ -179,7 +179,7 @@ function ShufflePage() {
         {step === "company" ? (
           <>
             <div className="veil-body">
-              <p className="mb-3 font-sans text-xs tracking-wide text-muted">{meta?.author}</p>
+              <p className="mb-3 type-kicker text-muted">{meta?.author}</p>
               <h1 className="veil-title">{meta?.title ?? "A sitting"}</h1>
               <p className="veil-note">Read with a friend?</p>
             </div>
@@ -205,7 +205,7 @@ function ShufflePage() {
         {step === "share" ? (
           <>
             <div className="veil-body">
-              <p className="mb-3 font-sans text-xs tracking-wide text-muted">{meta?.author}</p>
+              <p className="mb-3 type-kicker text-muted">{meta?.author}</p>
               <h1 className="veil-title">{meta?.title ?? "A sitting"}</h1>
               <p className="veil-note">They sit the same hour. The page holds both of you.</p>
               <p className="mt-5 break-all font-sans text-xs leading-relaxed tracking-wide text-ink">

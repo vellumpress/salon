@@ -45,7 +45,7 @@ export function ShelfSearchBar({
     >
       <label
         htmlFor={id}
-        className="flex shrink-0 items-center px-3 font-sans text-[0.65rem] uppercase tracking-[0.14em] text-muted"
+        className="type-kicker flex shrink-0 items-center px-3 uppercase text-muted"
       >
         Search
       </label>
@@ -59,9 +59,9 @@ export function ShelfSearchBar({
         autoCorrect="off"
         spellCheck={false}
         enterKeyHint="search"
-        className="h-9 min-w-0 flex-1 border-0 bg-transparent font-serif text-base text-ink placeholder:text-muted/70 focus-visible:outline-none sm:text-lg"
+        className="type-pitch h-9 min-w-0 flex-1 border-0 bg-transparent text-ink placeholder:text-muted/70 focus-visible:outline-none"
       />
-      <span className="flex shrink-0 items-center px-3 font-sans text-[0.65rem] tabular-nums tracking-wide text-muted">
+        <span className="type-kicker flex shrink-0 items-center px-3 tabular-nums text-muted">
         {count}
       </span>
     </div>
@@ -78,11 +78,11 @@ export function ShelfSearchHits({
   if (matches.length === 0) {
     return (
       <div className="cell-wide flex min-h-0 flex-col justify-end bg-paper p-5 text-ink">
-        <span className="font-sans text-xs tracking-wide opacity-70">The shelf</span>
-        <span className="mt-1 font-display text-2xl font-medium tracking-tight">
+        <span className="type-kicker opacity-70">The shelf</span>
+        <span className="type-lede mt-1">
           Nothing matches
         </span>
-        <span className="mt-2 font-serif text-base opacity-70">
+        <span className="type-pitch mt-2 opacity-70">
           No title, author, or year for “{query.trim()}”.
         </span>
       </div>
@@ -107,11 +107,11 @@ function ShelfSearchHit({ item }: { item: ShelfWork }) {
       onFocus={() => prefetchWork(item.id)}
       className="cell-search-hit relative flex min-h-0 flex-col justify-end overflow-hidden bg-paper p-4 text-ink sm:p-5"
     >
-      <span className="font-sans text-xs tracking-wide opacity-70">
+      <span className="type-kicker opacity-70">
         {item.author}
         <span className="opacity-60"> · {item.year}</span>
       </span>
-      <span className="mt-1 font-display text-lg font-medium leading-tight tracking-tight sm:text-xl">
+      <span className="type-lede mt-1">
         {item.title}
       </span>
     </Link>

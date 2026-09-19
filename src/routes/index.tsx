@@ -74,7 +74,7 @@ function Home() {
       data-hydrated={last ? "1" : "0"}
     >
       <div className="cell-mark flex bg-paper">
-        <span className="flex h-full min-w-0 flex-1 items-center self-stretch bg-paper px-4 font-display text-xl font-medium tracking-tight text-ink sm:text-2xl">
+        <span className="type-mark flex h-full min-w-0 flex-1 items-center self-stretch bg-paper px-4 text-ink">
           Salon
         </span>
         <ResumeLink />
@@ -99,15 +99,15 @@ function Home() {
               )}
             >
               <span className="flex min-w-0 flex-1 flex-col justify-center px-5 py-4 sm:px-8 sm:py-5">
-                <span className="font-sans text-xs tracking-wide opacity-80">Resume</span>
+                <span className="type-kicker opacity-80">Resume</span>
                 <span className="pillar-title mt-1">{last.title}</span>
                 {last.author ? (
-                  <span className="mt-1 truncate font-sans text-sm tracking-wide opacity-80">
+                  <span className="type-kicker mt-1 truncate opacity-75">
                     {last.author}
                   </span>
                 ) : null}
               </span>
-              <span className="flex shrink-0 items-center px-5 font-sans text-sm sm:px-8 sm:text-base">
+              <span className="type-chrome flex shrink-0 items-center px-5 sm:px-8">
                 Continue
               </span>
             </Link>
@@ -127,9 +127,9 @@ function Home() {
                   fillInk(fill),
                 )}
               >
-                <span className="font-sans text-xs tracking-wide opacity-70">{door.kicker}</span>
+                <span className="type-kicker opacity-70">{door.kicker}</span>
                 <span className="pillar-title mt-1">{door.label}</span>
-                <span className="pillar-pitch mt-3 max-w-md font-serif text-base leading-snug opacity-90 sm:text-lg">
+                <span className="type-pitch pillar-pitch mt-2.5 max-w-md">
                   {door.pitch}
                 </span>
               </Link>

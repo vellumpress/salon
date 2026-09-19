@@ -520,7 +520,7 @@ export function VellumReader({
         <header className="relative z-20 flex shrink-0 items-stretch border-b border-ink">
           <Link
             to="/"
-            className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
           >
             Home
           </Link>
@@ -631,7 +631,7 @@ export function VellumReader({
           <header className="chrome-fade relative z-20 flex shrink-0 items-stretch border-b border-ink">
             <Link
               to="/"
-              className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+              className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
               onClick={() => closeSit()}
             >
               Home
@@ -639,7 +639,7 @@ export function VellumReader({
             <button
               type="button"
               onClick={() => setOverlay("spine")}
-              className="flex min-w-0 flex-1 items-center truncate bg-paper px-4 font-sans text-xs tracking-wide text-ink"
+              className="flex min-w-0 flex-1 items-center truncate bg-paper px-4 type-kicker text-ink"
             >
               {nightChrome || scene.place}
             </button>
@@ -652,7 +652,7 @@ export function VellumReader({
             </Link>
             <Link
               to="/together"
-              className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 font-sans text-sm text-paper"
+              className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
               onClick={() => closeSit()}
             >
               Together
@@ -744,7 +744,7 @@ export function VellumReader({
           {gateMode === "share" ? (
             <>
               <div className="veil-body">
-                <p className="mb-3 font-sans text-xs tracking-wide text-muted">{work.author}</p>
+                <p className="mb-3 type-kicker text-muted">{work.author}</p>
                 <h1 className="veil-title">{work.title}</h1>
                 <p className="veil-note">They sit the same hour. The page holds both of you.</p>
                 <p className="mt-5 break-all font-sans text-xs leading-relaxed tracking-wide text-ink">
@@ -776,7 +776,7 @@ export function VellumReader({
                   {nightChrome ? `${work.title} · ${work.author}` : work.author}
                 </p>
                 {intro ? <p className="veil-note">{intro}</p> : null}
-                <p className="mt-8 font-sans text-xs tracking-wide text-muted">How long will you sit</p>
+                <p className="mt-8 type-kicker text-muted">How long will you sit</p>
                 <div className="sit-presets mt-3" role="group" aria-label="Sitting length">
                   {SIT_PRESETS.map((preset) => (
                     <button
@@ -793,7 +793,7 @@ export function VellumReader({
                   ))}
                 </div>
                 <label className="mt-3 flex items-center gap-2 border border-ink px-3 py-2">
-                  <span className="font-sans text-xs tracking-wide text-muted">Custom</span>
+                  <span className="type-kicker text-muted">Custom</span>
                   <input
                     type="number"
                     min={1}
@@ -813,14 +813,14 @@ export function VellumReader({
                   <button
                     type="button"
                     onClick={() => applyCustomSit()}
-                    className="font-sans text-xs tracking-wide text-ink"
+                    className="type-kicker text-ink"
                   >
                     Set
                   </button>
                 </label>
                 <p className="mt-2 font-sans text-xs text-muted">{sitLabel(sittingMinutes)}</p>
                 {gateMode === "full" ? (
-                  <p className="mt-8 font-sans text-xs tracking-wide text-muted">Read with a friend?</p>
+                  <p className="mt-8 type-kicker text-muted">Read with a friend?</p>
                 ) : null}
               </div>
               {gateMode === "full" ? (
@@ -899,7 +899,7 @@ export function VellumReader({
                         current ? fillClass(planeOf(item.id)) : reached ? "bg-ink" : "bg-paper-deep",
                       )}
                     />
-                    <span className="font-display text-xl font-medium tracking-tight sm:text-2xl">
+                    <span className="type-lede">
                       {item.place}
                     </span>
                   </span>
@@ -1026,7 +1026,7 @@ export function VellumReader({
             ))}
           </div>
           <label className="flex items-center gap-2 border-t border-ink px-3 py-2">
-            <span className="font-sans text-xs tracking-wide text-muted">Custom</span>
+            <span className="type-kicker text-muted">Custom</span>
             <input
               type="number"
               min={1}
@@ -1046,14 +1046,14 @@ export function VellumReader({
             <button
               type="button"
               onClick={() => applyCustomSit(true)}
-              className="font-sans text-xs tracking-wide"
+              className="type-kicker"
             >
               Set
             </button>
             <button
               type="button"
               onClick={closeNavReveal}
-              className="font-sans text-xs tracking-wide text-muted"
+              className="type-kicker text-muted"
             >
               Close
             </button>
@@ -1067,7 +1067,7 @@ export function VellumReader({
           <div className="flex shrink-0 items-stretch gap-px bg-ink">
             <button
               type="button"
-              className="bg-paper px-3 py-2 font-sans text-xs tracking-wide text-ink"
+              className="bg-paper px-3 py-2 type-kicker text-ink"
               onClick={() => {
                 setSandCue(false);
                 closeSit();
@@ -1077,7 +1077,7 @@ export function VellumReader({
             </button>
             <button
               type="button"
-              className="bg-ink px-3 py-2 font-sans text-xs tracking-wide text-paper"
+              className="bg-ink px-3 py-2 type-kicker text-paper"
               onClick={() => {
                 setSandCue(false);
                 startSitting(work.id, { restart: true });

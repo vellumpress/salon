@@ -65,18 +65,18 @@ function FriendsPage() {
       <header className="flex shrink-0 items-stretch border-b border-ink">
         <Link
           to="/"
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           Home
         </Link>
-        <h1 className="flex min-w-0 flex-1 items-center px-4 font-display text-xl font-medium tracking-tight">
+        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
           Friends
         </h1>
         <ResumeLink className="h-12 border-l border-ink" />
         <Link
           to="/profile"
           preload="intent"
-          className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 font-sans text-sm text-ink"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
         >
           You
         </Link>
@@ -84,19 +84,19 @@ function FriendsPage() {
 
       <div className="min-h-0 flex-1 overflow-y-auto">
         <div className="flex min-h-36 flex-col justify-end bg-red p-5 text-paper sm:min-h-44 sm:p-8">
-          <p className="font-sans text-xs tracking-wide opacity-80">
+          <p className="type-kicker opacity-80">
             {handle ? formatHandle(handle) : "Claim a name"}
           </p>
-          <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+          <p className="type-title mt-2">
             {handle ? formatHandle(handle) : "Who is sitting?"}
           </p>
-          <p className="mt-3 max-w-xl font-serif text-lg text-paper/80">
+          <p className="type-pitch mt-2.5 max-w-xl text-paper/80">
             Follow what others are reading. On this phone first; a live room can sync later.
           </p>
         </div>
 
         <section>
-          <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+          <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
             Your @username
           </p>
           <form onSubmit={claim} className="flex items-stretch border-b border-ink">
@@ -127,7 +127,7 @@ function FriendsPage() {
               {message}
             </p>
           ) : handleError(draft || handle || "ab") && (draft || !handle) ? (
-            <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
               Two to twenty letters. Friends find you by this name.
             </p>
           ) : null}
@@ -135,7 +135,7 @@ function FriendsPage() {
 
         {you.reading ? (
           <section>
-            <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
               You are reading
             </p>
             <Link
@@ -144,10 +144,10 @@ function FriendsPage() {
               className="flex items-stretch border-b border-ink bg-forest text-paper"
             >
               <span className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5">
-                <span className="font-sans text-xs tracking-wide opacity-80">
+                <span className="type-kicker opacity-80">
                   {you.author || "This sitting"}
                 </span>
-                <span className="mt-1 font-display text-2xl font-medium tracking-tight">
+                <span className="mt-1 type-lede">
                   {you.workTitle || you.reading}
                 </span>
               </span>
@@ -157,7 +157,7 @@ function FriendsPage() {
         ) : null}
 
         <section>
-          <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+          <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
             Friends are reading
           </p>
           {!hydrated ? (
@@ -184,10 +184,10 @@ function FriendsPage() {
                       params={{ readerId: row.id }}
                       className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5"
                     >
-                      <span className="font-sans text-xs tracking-wide opacity-80">
+                      <span className="type-kicker opacity-80">
                         {formatHandle(row.handle)}
                       </span>
-                      <span className="mt-1 font-display text-2xl font-medium tracking-tight">
+                      <span className="mt-1 type-lede">
                         {row.name}
                       </span>
                       <span className="mt-1 font-serif text-base opacity-90">
@@ -196,10 +196,10 @@ function FriendsPage() {
                     </Link>
                   ) : (
                     <span className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5">
-                      <span className="font-sans text-xs tracking-wide opacity-80">
+                      <span className="type-kicker opacity-80">
                         {formatHandle(row.handle)}
                       </span>
-                      <span className="mt-1 font-display text-2xl font-medium tracking-tight">
+                      <span className="mt-1 type-lede">
                         {row.name}
                       </span>
                       <span className="mt-1 font-serif text-base opacity-90">
@@ -228,7 +228,7 @@ function FriendsPage() {
         </section>
 
         <section>
-          <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+          <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
             Find / follow
           </p>
           <form onSubmit={connect} className="flex items-stretch border-b border-ink">
@@ -262,10 +262,10 @@ function FriendsPage() {
                     params={{ readerId: row.id }}
                     className="flex min-w-0 flex-1 flex-col justify-center px-4 py-4"
                   >
-                    <span className="font-sans text-xs tracking-wide text-muted">
+                    <span className="type-kicker text-muted">
                       {formatHandle(row.handle)} · {row.city}
                     </span>
-                    <span className="mt-1 font-display text-xl font-medium tracking-tight">
+                    <span className="mt-1 type-lede">
                       {row.name}
                     </span>
                     <span className="mt-1 font-serif text-sm text-ink/70">
@@ -274,10 +274,10 @@ function FriendsPage() {
                   </Link>
                 ) : (
                   <span className="flex min-w-0 flex-1 flex-col justify-center px-4 py-4">
-                    <span className="font-sans text-xs tracking-wide text-muted">
+                    <span className="type-kicker text-muted">
                       {formatHandle(row.handle)} · {row.city}
                     </span>
-                    <span className="mt-1 font-display text-xl font-medium tracking-tight">
+                    <span className="mt-1 type-lede">
                       {row.name}
                     </span>
                   </span>

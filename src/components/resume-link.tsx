@@ -53,7 +53,7 @@ export function ResumeLink({
       search={{ at: last.breathIndex }}
       aria-label={`Continue ${last.title}`}
       className={cn(
-        "flex h-full shrink-0 items-center self-stretch border-l border-ink/15 bg-forest px-3 font-sans text-sm text-paper sm:px-4",
+        "type-chrome flex h-full shrink-0 items-center self-stretch border-l border-ink/15 bg-forest px-3 text-paper sm:px-4",
         className,
       )}
     >

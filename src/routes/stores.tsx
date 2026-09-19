@@ -22,11 +22,11 @@ function StoresPage() {
       <header className="flex shrink-0 items-stretch border-b border-ink">
         <Link
           to="/"
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           Home
         </Link>
-        <h1 className="flex min-w-0 flex-1 items-center px-4 font-display text-xl font-medium tracking-tight">
+        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
           Book stores
         </h1>
       </header>
@@ -35,7 +35,7 @@ function StoresPage() {
           <StoreMap selected={selected} onSelect={setSelected} />
         </div>
         <aside className="min-h-0 flex-1 overflow-y-auto border-t border-ink md:h-full md:w-80 md:flex-none md:border-t-0 md:border-l">
-          <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+          <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
             New York shops to browse in person
           </p>
           {SHOPS.map((shop) => (

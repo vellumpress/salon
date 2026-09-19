@@ -24,11 +24,11 @@ function ImportPage() {
       <header className="flex shrink-0 items-stretch border-b border-ink">
         <Link
           to="/"
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           Home
         </Link>
-        <h1 className="flex min-w-0 flex-1 items-center px-4 font-display text-xl font-medium tracking-tight">
+        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
           Import
         </h1>
       </header>
@@ -41,8 +41,8 @@ function ImportShell() {
   return (
     <div className="flex min-h-0 flex-1 flex-col justify-end overflow-y-auto">
       <div className="flex min-h-36 flex-col justify-end p-5 sm:p-10">
-        <p className="font-sans text-xs tracking-wide text-muted">A sitting from elsewhere</p>
-        <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+        <p className="type-kicker text-muted">A sitting from elsewhere</p>
+        <p className="mt-2 type-title">
           A page or a PDF
         </p>
       </div>
@@ -127,14 +127,14 @@ function ImportBody() {
       onDrop={onDrop}
     >
       <div className="flex min-h-36 flex-col justify-end p-5 sm:p-10">
-        <p className="font-sans text-xs tracking-wide text-muted">A sitting from elsewhere</p>
-        <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+        <p className="type-kicker text-muted">A sitting from elsewhere</p>
+        <p className="mt-2 type-title">
           A page or a PDF
         </p>
       </div>
       <form onSubmit={onSubmit} className="flex flex-col">
         <label className="flex items-stretch border-t border-ink">
-          <span className="flex w-20 shrink-0 items-center px-4 font-sans text-xs tracking-wide text-muted">
+          <span className="flex w-20 shrink-0 items-center px-4 type-kicker text-muted">
             Link
           </span>
           <input

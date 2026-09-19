@@ -28,19 +28,19 @@ function CollectionPage() {
       <header className="flex shrink-0 items-stretch border-b border-ink">
         <Link
           to="/profile"
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           You
         </Link>
-        <h1 className="flex min-w-0 flex-1 items-center px-4 font-display text-xl font-medium tracking-tight">
+        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
           Collection
         </h1>
         <ResumeLink className="h-12 border-l border-ink" />
       </header>
       <div className="min-h-0 flex-1 overflow-y-auto">
         <div className="flex min-h-36 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
-          <p className="font-sans text-xs tracking-wide opacity-80">This sitting</p>
-          <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+          <p className="type-kicker opacity-80">This sitting</p>
+          <p className="mt-2 type-title">
             Collection
           </p>
           <p className="mt-3 max-w-xl font-serif text-lg text-paper/70">

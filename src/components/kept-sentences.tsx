@@ -136,10 +136,10 @@ export function KeptSentences({
               search={{ at: line.at }}
               className="block border-b border-ink px-4 py-5"
             >
-              <p className="font-display text-2xl font-medium italic leading-snug tracking-tight sm:text-3xl">
+              <p className="type-lede italic leading-snug">
                 {line.text}
               </p>
-              <p className="mt-2 font-sans text-xs tracking-wide text-muted">
+              <p className="mt-2 type-kicker text-muted">
                 {line.title}
                 {line.author ? ` · ${line.author}` : ""}
               </p>
@@ -151,7 +151,7 @@ export function KeptSentences({
               hash="lines"
               className="flex items-center justify-between border-b border-ink bg-ink px-4 py-5 text-paper"
             >
-              <span className="font-display text-xl font-medium tracking-tight">
+              <span className="type-lede">
                 {hidden === 1 ? "One more line" : `${hidden} more lines`}
               </span>
               <span className="font-sans text-sm">See all</span>

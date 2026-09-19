@@ -61,13 +61,13 @@ export function FavoriteWorks({
                   className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5"
                 >
                   {work.author ? (
-                    <span className="font-sans text-xs tracking-wide opacity-80">
+                    <span className="type-kicker opacity-80">
                       {work.author}
                     </span>
                   ) : null}
                   <span
                     className={cn(
-                      "font-display text-2xl font-medium tracking-tight",
+                      "type-lede",
                       work.author && "mt-1",
                     )}
                   >
@@ -87,7 +87,7 @@ export function FavoriteWorks({
               hash="books"
               className="flex items-center justify-between border-b border-ink bg-ink px-4 py-5 text-paper"
             >
-              <span className="font-display text-xl font-medium tracking-tight">
+              <span className="type-lede">
                 {hidden === 1 ? "One more on the shelf" : `${hidden} more on the shelf`}
               </span>
               <span className="font-sans text-sm">See all</span>
