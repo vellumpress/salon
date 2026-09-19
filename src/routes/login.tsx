@@ -21,9 +21,6 @@ export const Route = createFileRoute("/login")({
     if (search.door === "reader") return { door: "reader" };
     return {};
   },
-  pendingMs: 0,
-  pendingMinMs: 0,
-  pendingComponent: LoginPending,
   component: LoginPage,
 });
 
@@ -32,18 +29,6 @@ function isVellumPressEmail(email: string): boolean {
   const at = trimmed.lastIndexOf("@");
   if (at <= 0) return false;
   return trimmed.slice(at) === STAFF_DOMAIN;
-}
-
-function LoginPending() {
-  return (
-    <div className="frame-screen bg-paper text-ink">
-      <LoginHeader />
-      <div className="flex min-h-36 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
-        <p className="type-kicker opacity-80">This sitting</p>
-        <p className="mt-2 type-title">Create an account</p>
-      </div>
-    </div>
-  );
 }
 
 function LoginHeader() {
@@ -82,10 +67,15 @@ function LoginPage() {
   const [error, setError] = useState("");
   const [staffError, setStaffError] = useState("");
   const [showStaff, setShowStaff] = useState(door === "staff");
+  const [leave, setLeave] = useState(false);
 
   useEffect(() => {
     if (hasAccounts) setMode("in");
   }, [hasAccounts]);
+
+  useEffect(() => {
+    if (!isPending && identity) setLeave(true);
+  }, [identity, isPending]);
 
   useEffect(() => {
     if (door !== "staff") return;
@@ -96,7 +86,7 @@ function LoginPage() {
     return () => window.cancelAnimationFrame(id);
   }, [door]);
 
-  if (!isPending && identity && !busy) {
+  if (leave && identity && !busy) {
     return <Navigate to={door === "staff" ? "/desk" : "/profile"} />;
   }
 
