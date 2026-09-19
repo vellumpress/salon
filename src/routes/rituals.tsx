@@ -22,6 +22,8 @@ import {
 } from "@/lib/catalog/serialize";
 import { nearestSitPreset } from "@/lib/sitting";
 import { FavoriteMark } from "@/components/favorite-mark";
+import { PlaceChip, RegionSilhouette } from "@/components/place-chip";
+import { placeForId } from "@/lib/catalog/places";
 import { ResumeLink } from "@/components/resume-link";
 import {
   ShelfSearchBar,
@@ -275,6 +277,9 @@ function SerializeSeriesCell({
         {plan.author}
         <span className="opacity-60"> · {plan.year}</span>
       </span>
+      {plan.shelfWorkId ? (
+        <PlaceChip workId={plan.shelfWorkId} className="mt-1.5 opacity-80" />
+      ) : null}
       <span className="type-card mt-1">
         {plan.title}
       </span>
@@ -327,6 +332,7 @@ function SerializeEpisodeStack({
   const bound = isSerializeBound(plan);
   const workId = plan.shelfWorkId;
   const tonight = serializeTonight(plan, lastCompleted);
+  const place = workId ? placeForId(workId) : null;
   return (
     <>
       <div className="flex min-h-0 flex-col justify-end bg-paper p-4 text-ink sm:p-5">
@@ -351,8 +357,11 @@ function SerializeEpisodeStack({
         <span className="type-pitch mt-2 opacity-80">
           {plan.framing}
         </span>
-        <span className="mt-2 type-kicker opacity-70">
-          {plan.geography}
+        <span className="mt-2 flex min-w-0 items-center gap-2">
+          {place ? (
+            <RegionSilhouette region={place.region} className="place-chip-ink" />
+          ) : null}
+          <span className="type-kicker opacity-70">{plan.geography}</span>
         </span>
       </div>
       {coming ? (
@@ -461,6 +470,7 @@ function BookCell({
         {item.author}
         <span className="opacity-60"> · {item.year}</span>
       </span>
+      <PlaceChip work={item} className="mt-1.5 opacity-80" />
       <span className="type-card mt-1">
         {item.title}
       </span>

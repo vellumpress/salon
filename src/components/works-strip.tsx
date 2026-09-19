@@ -10,6 +10,7 @@ import {
   stripDriftDelta,
   stripItems,
 } from "@/lib/works-strip";
+import { PlaceChip } from "@/components/place-chip";
 import { prefetchWork } from "@/lib/works";
 
 export function WorksStrip() {
@@ -135,6 +136,7 @@ export function WorksStrip() {
           >
             <span className="works-title">{item.work.title}</span>
             <span className="works-author">{item.work.author}</span>
+            <PlaceChip work={item.work} tone="accent" className="works-place" />
           </Link>
         ))}
         <div ref={sentinel} className="works-sentinel" aria-hidden="true" />

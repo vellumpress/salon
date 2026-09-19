@@ -7,6 +7,7 @@ import {
   withFullPdf,
   withLocalBound,
 } from "@/lib/catalog/full-pdf";
+import { PlaceChip } from "@/components/place-chip";
 import { prefetchWork } from "@/lib/works";
 import { cn } from "@/lib/utils";
 
@@ -111,6 +112,7 @@ function ShelfSearchHit({ item }: { item: ShelfWork }) {
         {item.author}
         <span className="opacity-60"> · {item.year}</span>
       </span>
+      <PlaceChip work={item} tone="accent" className="mt-1.5" />
       <span className="type-lede mt-1">
         {item.title}
       </span>
