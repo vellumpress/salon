@@ -1,24 +1,40 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { lastReadProgress } from "@/lib/continuity";
+import { lastReadCue, lastReadPercent, lastReadProgress } from "@/lib/continuity";
 import { boardWork } from "@/lib/mondrian";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { useVellum } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
+export function usePersistHydrated() {
+  const [hydrated, setHydrated] = useState(() =>
+    typeof window === "undefined" ? false : useVellum.persist.hasHydrated(),
+  );
+  useEffect(() => {
+    if (useVellum.persist.hasHydrated()) {
+      setHydrated(true);
+      return;
+    }
+    return useVellum.persist.onFinishHydration(() => setHydrated(true));
+  }, []);
+  return hydrated;
+}
+
 export function useLastRead() {
   const progress = useVellum((s) => s.progress);
-  const [hydrated, setHydrated] = useState(false);
-  useEffect(() => setHydrated(true), []);
+  const hydrated = usePersistHydrated();
   if (!hydrated) return null;
   const last = lastReadProgress(progress);
   if (!last) return null;
   const work = shelfWork(last.id) ?? boardWork(last.id);
-  if (!work) return null;
+  const breaths = work && "breaths" in work ? work.breaths : undefined;
   return {
     ...last,
-    title: work.title,
-    author: work.author,
+    title: work?.title?.trim() || last.id,
+    author: work && "author" in work ? (work.author?.trim() ?? "") : "",
+    breaths,
+    cue: lastReadCue(last.breathIndex, breaths),
+    percent: lastReadPercent(last.breathIndex, breaths),
   };
 }
 

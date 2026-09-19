@@ -14,7 +14,7 @@ import { prefetchWork } from "@/lib/works";
 
 export function WorksStrip() {
   const visit = useVisitSeed();
-  const root = useRef<HTMLNavElement>(null);
+  const root = useRef<HTMLElement>(null);
   const scroller = useRef<HTMLDivElement>(null);
   const sentinel = useRef<HTMLDivElement>(null);
   const [count, setCount] = useState(STRIP_BATCH);

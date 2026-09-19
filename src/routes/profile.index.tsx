@@ -69,6 +69,12 @@ function ProfilePage() {
             You
           </h1>
           <ResumeLink className="h-12 border-l border-ink" />
+          <Link
+            to="/friends"
+            className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 font-sans text-sm text-ink"
+          >
+            Friends
+          </Link>
         </header>
         <div className="flex min-h-36 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
           <p className="font-sans text-xs tracking-wide opacity-80">This sitting</p>
@@ -196,6 +202,13 @@ function ProfileBody({ user }: { user: AppUser | null }) {
           You
         </h1>
         <ResumeLink className="h-12 border-l border-ink" />
+        <Link
+          to="/friends"
+          preload="intent"
+          className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 font-sans text-sm text-ink"
+        >
+          Friends
+        </Link>
         {me?.role === "staff" ? (
           <Link
             to="/desk"

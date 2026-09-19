@@ -27,7 +27,9 @@ export const Route = createRootRoute({
         name: "description",
         content: "Timed reading rituals. Public-domain sitting, on this phone.",
       },
-      { name: "theme-color", content: "#ffffff" },
+      { name: "theme-color", content: "#F3F1EB" },
+      { name: "apple-mobile-web-app-title", content: APP_NAME },
+      { name: "application-name", content: APP_NAME },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: withBase("/favicon.svg") },
@@ -36,7 +38,9 @@ export const Route = createRootRoute({
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: FONT_HREF },
       { rel: "manifest", href: withBase("/__grok/manifest.webmanifest") },
-      { rel: "apple-touch-icon", href: withBase("/icon-192.png") },
+      { rel: "manifest", href: withBase("/manifest.webmanifest") },
+      { rel: "apple-touch-icon", href: withBase("/icon-180.png") },
+      { rel: "apple-touch-icon", sizes: "192x192", href: withBase("/icon-192.png") },
     ],
   }),
   component: () => (

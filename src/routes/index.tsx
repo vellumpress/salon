@@ -1,6 +1,7 @@
 import { createFileRoute, Link, useRouter } from "@tanstack/react-router";
 import { useEffect, useMemo } from "react";
 import { ResumeLink, useLastRead } from "@/components/resume-link";
+import { YouFriendsMark } from "@/components/you-friends-mark";
 import { WorksStrip } from "@/components/works-strip";
 import {
   ShelfSearchBar,
@@ -55,6 +56,7 @@ function Home() {
     void router.preloadRoute({ to: "/login" });
     void router.preloadRoute({ to: "/rituals" });
     void router.preloadRoute({ to: "/together" });
+    void router.preloadRoute({ to: "/friends" });
     void router.preloadRoute({ to: "/shuffle", search: { together: true } });
     void router.preloadRoute({ to: "/profile" });
   }, [router]);
@@ -76,7 +78,7 @@ function Home() {
           Salon
         </span>
         <ResumeLink />
-        <AuthSlot />
+        <YouFriendsMark />
       </div>
 
       {searching ? (
@@ -89,25 +91,53 @@ function Home() {
               params={{ workId: last.id }}
               search={{ at: last.breathIndex }}
               preload="intent"
-              aria-label={`Continue ${last.title}`}
+              aria-label={`Continue ${last.title} by ${last.author || "unknown"}`}
               className={cn(
-                "cell-resume relative flex min-h-0 items-stretch",
+                "cell-resume relative flex min-h-0 flex-col",
                 fillClass(resumeFill),
                 fillInk(resumeFill),
               )}
             >
-              <span className="flex min-w-0 flex-1 flex-col justify-center px-4 py-3 sm:px-5">
-                <span className="font-sans text-xs tracking-wide opacity-80">Resume</span>
-                <span className="mt-0.5 truncate font-display text-lg font-medium tracking-tight sm:text-xl">
-                  {last.title}
+              <span className="flex min-h-0 min-w-0 flex-1 items-stretch">
+                <span className="flex min-w-0 flex-1 flex-col justify-end px-5 py-4 sm:px-8 sm:py-6">
+                  <span className="font-sans text-xs tracking-wide opacity-80">
+                    Continue reading
+                  </span>
+                  <span className="pillar-title mt-1">{last.title}</span>
+                  {last.author ? (
+                    <span className="mt-1 truncate font-sans text-sm tracking-wide opacity-80">
+                      {last.author}
+                    </span>
+                  ) : null}
+                  <span className="mt-2 font-sans text-xs tracking-wide opacity-75">
+                    {last.cue}
+                  </span>
                 </span>
-                <span className="truncate font-sans text-xs tracking-wide opacity-75">
-                  {last.author}
+                <span
+                  className={cn(
+                    "flex w-24 shrink-0 items-center justify-center px-3 text-center font-sans text-sm sm:w-32 sm:text-base",
+                    resumeFill === "ink" || resumeFill === "forest"
+                      ? "bg-paper text-ink"
+                      : "bg-ink text-paper",
+                  )}
+                >
+                  Resume
                 </span>
               </span>
-              <span className="flex shrink-0 items-center px-4 font-sans text-sm sm:px-5">
-                Continue
-              </span>
+              {last.percent != null ? (
+                <span
+                  className="block h-1.5 w-full bg-ink/20"
+                  aria-hidden
+                >
+                  <span
+                    className={cn(
+                      "block h-full",
+                      resumeFill === "ink" || resumeFill === "forest" ? "bg-paper" : "bg-ink",
+                    )}
+                    style={{ width: `${last.percent}%` }}
+                  />
+                </span>
+              ) : null}
             </Link>
           ) : null}
 
@@ -145,15 +175,5 @@ function Home() {
         count={searching ? matches.length : poolSize}
       />
     </main>
-  );
-}
-
-function AuthSlot() {
-  const slot =
-    "flex h-full shrink-0 items-center self-stretch border-l border-ink/15 bg-paper px-4 font-sans text-sm text-ink [touch-action:manipulation]";
-  return (
-    <Link to="/profile" preload="intent" className={slot}>
-      You
-    </Link>
   );
 }

@@ -28,6 +28,24 @@ export function lastReadProgress(
   };
 }
 
+/** Short home/header cue so resume is obviously in-progress. */
+export function lastReadCue(breathIndex: number, totalBreaths?: number): string {
+  const at = Math.max(0, Math.floor(breathIndex));
+  if (!totalBreaths || totalBreaths <= 0) {
+    return at <= 0 ? "Just opened" : `Sentence ${at + 1}`;
+  }
+  if (at <= 0) return "Opened · beginning";
+  const pct = Math.min(99, Math.max(1, Math.round((at / totalBreaths) * 100)));
+  return `${pct}% in · sentence ${at + 1}`;
+}
+
+export function lastReadPercent(breathIndex: number, totalBreaths?: number): number | null {
+  if (!totalBreaths || totalBreaths <= 0) return null;
+  const at = Math.max(0, Math.floor(breathIndex));
+  if (at <= 0) return 1;
+  return Math.min(99, Math.max(1, Math.round((at / totalBreaths) * 100)));
+}
+
 /** Kept breath ids, newest works first. Pass `Infinity` for the full collection. */
 export function keptRefs(
   progress: Record<string, WorkProgress>,

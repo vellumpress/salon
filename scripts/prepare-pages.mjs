@@ -2,7 +2,7 @@
 /**
  * Assemble a GitHub Pages `dist/` from the TanStack Start client output.
  * Drops the SSR `server/` tree (not served on Pages) and copies the SPA
- * shell to `404.html` so deep links under /vellum-lite/ work.
+ * shell to `404.html` so deep links under /salon/ work.
  */
 import {
   copyFileSync,

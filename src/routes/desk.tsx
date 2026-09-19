@@ -49,12 +49,20 @@ function DeskFrame({
           {title}
         </h1>
         {you ? (
-          <Link
-            to="/profile"
-            className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 font-sans text-sm text-paper"
-          >
-            You
-          </Link>
+          <>
+            <Link
+              to="/friends"
+              className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 font-sans text-sm text-ink"
+            >
+              Friends
+            </Link>
+            <Link
+              to="/profile"
+              className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 font-sans text-sm text-paper"
+            >
+              You
+            </Link>
+          </>
         ) : null}
         {you ? <SignOutMark className="border-l border-paper" /> : null}
       </header>
