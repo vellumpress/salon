@@ -8,6 +8,16 @@ import {
   type FriendContact,
 } from "./friends.ts";
 import { handleError, normalizeHandle, readerByHandle, READERS } from "./social.ts";
+import {
+  addSitKeep,
+  mergeHostedSit,
+  rsvpHostedSit,
+  type HostedSit,
+  type SitKeep,
+  type SitRsvp,
+} from "./hosted-sit.ts";
+import { mergePledge, type SitPledge, type SitPledgeStatus } from "./sit-pledge.ts";
+import { sameTogetherPair, type TogetherKeep } from "./together-keep.ts";
 
 export type WorkProgress = {
   breathIndex: number;
@@ -63,6 +73,16 @@ type VellumState = {
   sitHistory: SitSession[];
   /** Last completed episode number per serialize plan id. */
   serializeNight: Record<string, number>;
+  togetherKeeps: TogetherKeep[];
+  hostedSits: HostedSit[];
+  sitPledges: SitPledge[];
+  rememberTogetherKeep: (pair: TogetherKeep) => void;
+  rememberHostedSit: (sit: HostedSit) => void;
+  rsvpSit: (sitId: string, guest: { handle: string; name?: string; status: SitRsvp }) => void;
+  keepWithSit: (sitId: string, keep: Omit<SitKeep, "keptAt"> & { keptAt?: number }) => void;
+  endHostedSit: (sitId: string) => void;
+  rememberPledge: (pledge: SitPledge) => void;
+  setPledgeStatus: (id: string, status: SitPledgeStatus) => void;
   setTheme: (theme: "paper" | "dusk") => void;
   completeSerializeNight: (planId: string, n: number) => void;
   setSittingMinutes: (minutes: number) => void;
@@ -213,6 +233,61 @@ export const useVellum = create<VellumState>()(
       readingMinutesByDay: {},
       sitHistory: [],
       serializeNight: {},
+      togetherKeeps: [],
+      hostedSits: [],
+      sitPledges: [],
+      rememberTogetherKeep: (pair) =>
+        set((state) => {
+          const togetherKeeps = state.togetherKeeps ?? [];
+          if (togetherKeeps.some((row) => sameTogetherPair(row, pair))) return {};
+          return { togetherKeeps: [pair, ...togetherKeeps].slice(0, 40) };
+        }),
+      rememberHostedSit: (sit) =>
+        set((state) => {
+          const hostedSits = state.hostedSits ?? [];
+          const prior = hostedSits.find((row) => row.id === sit.id);
+          const next = mergeHostedSit(prior, sit);
+          return {
+            hostedSits: [next, ...hostedSits.filter((row) => row.id !== sit.id)].slice(0, 24),
+          };
+        }),
+      rsvpSit: (sitId, guest) =>
+        set((state) => {
+          const hostedSits = state.hostedSits ?? [];
+          return {
+            hostedSits: hostedSits.map((row) =>
+              row.id === sitId ? rsvpHostedSit(row, guest) : row,
+            ),
+          };
+        }),
+      keepWithSit: (sitId, keep) =>
+        set((state) => {
+          const hostedSits = state.hostedSits ?? [];
+          return {
+            hostedSits: hostedSits.map((row) => (row.id === sitId ? addSitKeep(row, keep) : row)),
+          };
+        }),
+      endHostedSit: (sitId) =>
+        set((state) => ({
+          hostedSits: (state.hostedSits ?? []).map((row) =>
+            row.id === sitId ? { ...row, endedAt: row.endedAt ?? Date.now() } : row,
+          ),
+        })),
+      rememberPledge: (pledge) =>
+        set((state) => {
+          const sitPledges = state.sitPledges ?? [];
+          const prior = sitPledges.find((row) => row.id === pledge.id);
+          const next = mergePledge(prior, pledge);
+          return {
+            sitPledges: [next, ...sitPledges.filter((row) => row.id !== pledge.id)].slice(0, 24),
+          };
+        }),
+      setPledgeStatus: (id, status) =>
+        set((state) => ({
+          sitPledges: (state.sitPledges ?? []).map((row) =>
+            row.id === id ? { ...row, status } : row,
+          ),
+        })),
       setTheme: (theme) => set({ theme }),
       setSittingMinutes: (sittingMinutes) => set({ sittingMinutes: asSittingMinutes(sittingMinutes) }),
       setPageWork: (pageWork) => set({ pageWork }),
@@ -476,6 +551,9 @@ export const useVellum = create<VellumState>()(
         readingMinutesByDay: state.readingMinutesByDay,
         sitHistory: state.sitHistory,
         serializeNight: state.serializeNight,
+        togetherKeeps: state.togetherKeeps,
+        hostedSits: state.hostedSits,
+        sitPledges: state.sitPledges,
       }),
     },
   ),

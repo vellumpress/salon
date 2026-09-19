@@ -49,6 +49,14 @@ test("local contacts join the friends feed", () => {
   assert.equal(feed[0]?.workTitle, "Passing");
 });
 
+test("catalog friends also surface a kept line to echo", () => {
+  const feed = friendsFeed(["ada"]);
+  assert.ok(feed.some((row) => row.kind === "sitting" && row.handle === "ada"));
+  const kept = feed.find((row) => row.kind === "kept" && row.handle === "ada");
+  assert.ok(kept?.line);
+  assert.equal(kept.reading, "passing");
+});
+
 test("youCard uses last-read as currently sitting", () => {
   const you = youCard({
     handle: "reader",

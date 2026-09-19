@@ -32,8 +32,12 @@ export type FriendPerson = {
 };
 
 export type FriendActivity = FriendPerson & {
-  kind: "sitting";
+  kind: "sitting" | "kept";
 };
+
+export function friendKeptLine(person: FriendPerson): string {
+  return (person.line ?? "").trim();
+}
 
 export function contactId(handle: string) {
   return `local:${normalizeHandle(handle)}`;
@@ -131,6 +135,9 @@ export function friendsFeed(
     if (!person || seen.has(person.id) || !person.reading) continue;
     seen.add(person.id);
     rows.push({ ...person, kind: "sitting" });
+    if (friendKeptLine(person)) {
+      rows.push({ ...person, kind: "kept" });
+    }
   }
   return rows;
 }
