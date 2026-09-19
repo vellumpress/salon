@@ -8,16 +8,28 @@ import { SignOutMark } from "@/components/sign-out";
 import { CLUBS } from "@/lib/social";
 import { fillClass, fillInk } from "@/lib/mondrian";
 import { useVellum } from "@/lib/store";
-import { deriveReadingStats, formatMinutes } from "@/lib/reading-stats";
+import { deriveReadingStats } from "@/lib/reading-stats";
 import { RITUAL_LANES, worksForRitualLane } from "@/lib/catalog/rituals";
 import { clubPair } from "@/lib/shuffle";
 import { KeptSentences } from "@/components/kept-sentences";
 import { ResumeLink, useLastRead } from "@/components/resume-link";
+import {
+  DeskStrip,
+  InsightStrip,
+  LaneStrip,
+  ReadinessHero,
+  WeekMinutes,
+  YouActivity,
+  YouBreakdown,
+  YouEmptyInvite,
+  YouRings,
+} from "@/components/you-stats";
 import { cn } from "@/lib/utils";
 import { mixSeed, takeShuffled } from "@/lib/recommend";
 import { useFavoriteSync } from "@/lib/use-favorite-sync";
 import { liveBackendEnabled } from "@/lib/site";
 import { useVisitSeed } from "@/lib/use-visit-seed";
+import { formatHandle } from "@/lib/social";
 
 export const Route = createFileRoute("/profile/")({
   component: ProfilePage,
@@ -92,12 +104,15 @@ function ProfileBody({ user }: { user: AppUser | null }) {
   const sittingMinutes = useVellum((s) => s.sittingMinutes);
   const readingMinutesByDay = useVellum((s) => s.readingMinutesByDay) ?? {};
   const sitHistory = useVellum((s) => s.sitHistory) ?? [];
+  const togetherKeeps = useVellum((s) => s.togetherKeeps) ?? [];
+  const hostedSits = useVellum((s) => s.hostedSits) ?? [];
+  const handle = useVellum((s) => s.handle) ?? "";
   const setTaste = useVellum((s) => s.setTaste);
   const setSittingMinutes = useVellum((s) => s.setSittingMinutes);
   const { hydrated, favorites } = useFavoriteSync(user);
   const visit = useVisitSeed();
   const [me, setMe] = useState<Me | null>(null);
-  const [name, setName] = useState(user?.displayName ?? "");
+  const [name, setName] = useState(user && !user.isDevFallback ? (user.displayName ?? "") : "");
   const [sit, setSit] = useState<number>(sittingMinutes);
   const [saved, setSaved] = useState(false);
   const [error, setError] = useState("");
@@ -150,8 +165,21 @@ function ProfileBody({ user }: { user: AppUser | null }) {
         favorites,
         readingMinutesByDay,
         sitHistory,
+        togetherKeeps,
+        hostedSits,
+        handle,
+        sittingMinutes,
       }),
-    [progress, favorites, readingMinutesByDay, sitHistory],
+    [
+      progress,
+      favorites,
+      readingMinutesByDay,
+      sitHistory,
+      togetherKeeps,
+      hostedSits,
+      handle,
+      sittingMinutes,
+    ],
   );
 
   const prompt = useMemo(() => {
@@ -163,7 +191,9 @@ function ProfileBody({ user }: { user: AppUser | null }) {
   }, [visit]);
 
   const mine = hydrated ? CLUBS.filter((club) => joined.includes(club.id)) : [];
-  const shownName = name.trim() || user?.displayName || "You";
+  const shownName =
+    name.trim() || (user && !user.isDevFallback ? user.displayName : "") || "You";
+  const shownHandle = formatHandle(handle);
 
   async function save() {
     if (!user) return;
@@ -228,15 +258,33 @@ function ProfileBody({ user }: { user: AppUser | null }) {
         ) : null}
       </header>
       <div className="min-h-0 flex-1 overflow-y-auto">
-        <div className="flex min-h-36 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
-          <p className="type-kicker opacity-80">This sitting</p>
-          <p className="mt-2 type-title">
-            {shownName}
-          </p>
-          <p className="type-pitch mt-2.5 max-w-xl text-paper/70">
-            Timed rituals and live rooms. Sign in to keep your name and sitting length.
-          </p>
-        </div>
+        {!hydrated ? (
+          <div className="grid grid-cols-2 gap-px bg-ink sm:grid-cols-4">
+            <div className="min-h-40 bg-ink sm:min-h-48" />
+            <div className="min-h-40 bg-yellow sm:min-h-48" />
+            <div className="min-h-40 bg-red sm:min-h-48" />
+            <div className="min-h-40 bg-blue sm:min-h-48" />
+          </div>
+        ) : (
+          <>
+            <ReadinessHero reading={reading} handle={shownHandle} name={shownName} />
+            <YouRings rings={reading.rings} />
+            {reading.hasSignal ? (
+              <>
+                <WeekMinutes days={reading.weekDays} estimated={reading.minutesAreEstimated} />
+                <InsightStrip reading={reading} />
+                <YouBreakdown reading={reading} />
+                <DeskStrip works={reading.desk} />
+              </>
+            ) : (
+              <YouEmptyInvite
+                label={prompt.label}
+                line="Sit once — minutes, keeps, and a quiet rhythm will gather here."
+                workId={prompt.work?.id}
+              />
+            )}
+          </>
+        )}
 
         {last ? (
           <section>
@@ -262,92 +310,50 @@ function ProfileBody({ user }: { user: AppUser | null }) {
           </section>
         ) : null}
 
-        <section>
-          <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-            Pulse
-          </p>
-          {!hydrated ? (
-            <div className="grid grid-cols-2 gap-px bg-ink sm:grid-cols-4">
-              <div className="min-h-28 bg-paper sm:min-h-32" />
-              <div className="min-h-28 bg-yellow sm:min-h-32" />
-              <div className="min-h-28 bg-blue sm:min-h-32" />
-              <div className="min-h-28 bg-forest sm:min-h-32" />
-            </div>
-          ) : !reading.hasSignal ? (
-            <div className="flex min-h-28 flex-col justify-end border-b border-ink bg-paper px-4 py-5 sm:min-h-32">
-              <span className="type-kicker text-muted">Reading</span>
-              <span className="mt-1 type-lede">
-                Sit once — minutes, pace, and form will gather here.
-              </span>
-            </div>
-          ) : (
-            <div className="grid grid-cols-2 gap-px bg-ink sm:grid-cols-4">
-              <div className="flex min-h-28 flex-col justify-end bg-yellow p-4 text-ink sm:min-h-32 sm:p-5">
-                <span className="type-kicker opacity-80">Today</span>
-                <span className="mt-1 type-title">
-                  {formatMinutes(reading.minutesToday)}
-                </span>
-                <span className="mt-1 font-sans text-xs opacity-70">
-                  {reading.minutesAreEstimated ? "est. minutes" : "minutes"}
-                </span>
+        {hydrated && reading.hasSignal ? (
+          <>
+            <YouActivity items={reading.activity} />
+            <LaneStrip lanes={reading.lanes} />
+            <section>
+              <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
+                For now
+              </p>
+              <div className="grid grid-cols-1 gap-px bg-ink sm:grid-cols-2">
+                <div className="flex min-h-28 flex-col justify-end bg-yellow p-4 text-ink sm:min-h-32 sm:p-5">
+                  <span className="type-kicker opacity-80">{prompt.label}</span>
+                  <span className="mt-1 type-lede">
+                    {prompt.line}
+                  </span>
+                </div>
+                {prompt.work ? (
+                  <Link
+                    to="/read/$workId"
+                    params={{ workId: prompt.work.id }}
+                    className="flex min-h-28 flex-col justify-end bg-blue p-4 text-paper sm:min-h-32 sm:p-5"
+                  >
+                    <span className="type-kicker opacity-80">
+                      {prompt.work.author}
+                    </span>
+                    <span className="mt-1 type-lede">
+                      {prompt.work.title}
+                    </span>
+                    <span className="mt-2 font-sans text-sm opacity-80">Sit</span>
+                  </Link>
+                ) : (
+                  <Link
+                    to="/rituals"
+                    className="flex min-h-28 flex-col justify-end bg-blue p-4 text-paper sm:min-h-32 sm:p-5"
+                  >
+                    <span className="type-kicker opacity-80">Rituals</span>
+                    <span className="mt-1 type-lede">
+                      Open a timed sit
+                    </span>
+                  </Link>
+                )}
               </div>
-              <div className="flex min-h-28 flex-col justify-end bg-red p-4 text-paper sm:min-h-32 sm:p-5">
-                <span className="type-kicker opacity-80">This week</span>
-                <span className="mt-1 type-title">
-                  {formatMinutes(reading.minutesWeek)}
-                </span>
-                <span className="mt-1 font-sans text-xs opacity-70">
-                  {reading.minutesAreEstimated ? "est. minutes" : "minutes"}
-                </span>
-              </div>
-              <div className="flex min-h-28 flex-col justify-end bg-blue p-4 text-paper sm:min-h-32 sm:p-5">
-                <span className="type-kicker opacity-80">Pace</span>
-                <span className="mt-1 type-lede">
-                  {reading.pace.label}
-                </span>
-                <span className="mt-1 font-sans text-xs opacity-70">{reading.pace.detail}</span>
-              </div>
-              <div className="flex min-h-28 flex-col justify-end bg-forest p-4 text-paper sm:min-h-32 sm:p-5">
-                <span className="type-kicker opacity-80">Streak</span>
-                <span className="mt-1 type-title">
-                  {reading.streak}
-                </span>
-                <span className="mt-1 font-sans text-xs opacity-70">
-                  {reading.streak === 1 ? "day" : "days"}
-                </span>
-              </div>
-              <div className="flex min-h-28 flex-col justify-end bg-paper p-4 text-ink sm:min-h-32 sm:p-5 sm:col-span-2">
-                <span className="type-kicker opacity-80">Resonating</span>
-                <span className="mt-1 type-lede">
-                  {reading.forms[0]?.label ?? "—"}
-                </span>
-                <span className="mt-1 font-sans text-xs opacity-70">
-                  {reading.forms.length > 1
-                    ? reading.forms
-                        .slice(1)
-                        .map((f) => f.label)
-                        .join(" · ")
-                    : reading.forms[0]
-                      ? "Most kept & finished"
-                      : "Favorites and kept lines will name a form"}
-                </span>
-              </div>
-              <div className="flex min-h-28 flex-col justify-end bg-ink p-4 text-paper sm:min-h-32 sm:p-5 sm:col-span-2">
-                <span className="type-kicker opacity-80">Where from</span>
-                <span className="mt-1 type-lede">
-                  {reading.origins.length
-                    ? reading.origins.map((o) => o.country).join(" · ")
-                    : "—"}
-                </span>
-                <span className="mt-1 font-sans text-xs opacity-70">
-                  {reading.kept || reading.favorites
-                    ? `${reading.kept} kept · ${reading.favorites} favorites`
-                    : `${reading.opened} opened · ${reading.completed} finished`}
-                </span>
-              </div>
-            </div>
-          )}
-        </section>
+            </section>
+          </>
+        ) : null}
 
         <FavoriteWorks
           ids={favorites}
@@ -363,45 +369,6 @@ function ProfileBody({ user }: { user: AppUser | null }) {
           preview
           empty="Tap Keep on a sentence. It will live in your collection."
         />
-
-        <section>
-          <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-            For now
-          </p>
-          <div className="grid grid-cols-1 gap-px bg-ink sm:grid-cols-2">
-            <div className="flex min-h-28 flex-col justify-end bg-yellow p-4 text-ink sm:min-h-32 sm:p-5">
-              <span className="type-kicker opacity-80">{prompt.label}</span>
-              <span className="mt-1 type-lede">
-                {prompt.line}
-              </span>
-            </div>
-            {prompt.work ? (
-              <Link
-                to="/read/$workId"
-                params={{ workId: prompt.work.id }}
-                className="flex min-h-28 flex-col justify-end bg-blue p-4 text-paper sm:min-h-32 sm:p-5"
-              >
-                <span className="type-kicker opacity-80">
-                  {prompt.work.author}
-                </span>
-                <span className="mt-1 type-lede">
-                  {prompt.work.title}
-                </span>
-                <span className="mt-2 font-sans text-sm opacity-80">Sit</span>
-              </Link>
-            ) : (
-              <Link
-                to="/rituals"
-                className="flex min-h-28 flex-col justify-end bg-blue p-4 text-paper sm:min-h-32 sm:p-5"
-              >
-                <span className="type-kicker opacity-80">Rituals</span>
-                <span className="mt-1 type-lede">
-                  Open a timed sit
-                </span>
-              </Link>
-            )}
-          </div>
-        </section>
 
         <section>
           <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
@@ -465,6 +432,19 @@ function ProfileBody({ user }: { user: AppUser | null }) {
             <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
               Settings
             </p>
+            <Link
+              to="/friends"
+              preload="intent"
+              className="flex items-center justify-between border-b border-ink px-4 py-5"
+            >
+              <span>
+                <span className="block type-kicker text-muted">@username</span>
+                <span className="mt-1 block type-lede">
+                  {shownHandle || "Claim a name"}
+                </span>
+              </span>
+              <span className="font-sans text-sm">{shownHandle ? "Friends" : "Claim"}</span>
+            </Link>
             <label className="flex items-stretch border-b border-ink">
               <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
                 Name
@@ -524,6 +504,19 @@ function ProfileBody({ user }: { user: AppUser | null }) {
             <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
               Account
             </p>
+            <Link
+              to="/friends"
+              preload="intent"
+              className="flex items-center justify-between border-b border-ink px-4 py-5"
+            >
+              <span>
+                <span className="block type-kicker text-muted">@username</span>
+                <span className="mt-1 block type-lede">
+                  {shownHandle || "Claim a name on this phone"}
+                </span>
+              </span>
+              <span className="font-sans text-sm">{shownHandle ? "Friends" : "Claim"}</span>
+            </Link>
             <Link
               to="/login"
               className="flex items-center justify-between border-b border-ink px-4 py-5"

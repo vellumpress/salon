@@ -18,6 +18,9 @@ import {
 } from "./hosted-sit.ts";
 import { mergePledge, type SitPledge, type SitPledgeStatus } from "./sit-pledge.ts";
 import { sameTogetherPair, type TogetherKeep } from "./together-keep.ts";
+import { dayKey } from "./day-key.ts";
+
+export { dayKey };
 
 export type WorkProgress = {
   breathIndex: number;
@@ -160,14 +163,6 @@ if (typeof window !== "undefined") {
   });
 }
 
-/** Calendar day key in local time (YYYY-MM-DD). */
-export function dayKey(ts: number) {
-  const d = new Date(ts);
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
-}
 
 function elapsedSittingMinutes(startedAt: number | null | undefined, endedAt: number) {
   if (typeof startedAt !== "number" || startedAt <= 0) return 0;

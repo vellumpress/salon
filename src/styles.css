@@ -394,6 +394,17 @@ html.together-compose.together-kb .chat-slot {
   line-height: var(--text-display--line-height);
 }
 
+.you-readiness {
+  width: 10.5rem;
+  height: 10.5rem;
+}
+
+.you-week-bar {
+  width: 100%;
+  background: currentColor;
+  opacity: 0.8;
+}
+
 /* Three-pillar front door (Rituals · Curator · Sit with someone) */
 .cell-pillar {
   grid-column: 1 / -1;
