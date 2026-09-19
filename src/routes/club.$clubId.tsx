@@ -360,7 +360,7 @@ function LiveClub({
                     type="date"
                     value={date}
                     onChange={(event) => setDate(event.target.value)}
-                    className="h-12 min-w-0 border-0 bg-transparent px-4 font-sans text-sm text-ink focus-visible:outline-none"
+                    className="h-12 min-w-0 border-0 bg-transparent px-4 font-sans text-base text-ink focus-visible:outline-none"
                   />
                 </label>
                 <label className="flex min-w-0 flex-col">
@@ -369,7 +369,7 @@ function LiveClub({
                     type="time"
                     value={time}
                     onChange={(event) => setTime(event.target.value)}
-                    className="h-12 min-w-0 border-0 bg-transparent px-4 font-sans text-sm text-ink focus-visible:outline-none"
+                    className="h-12 min-w-0 border-0 bg-transparent px-4 font-sans text-base text-ink focus-visible:outline-none"
                   />
                 </label>
               </div>

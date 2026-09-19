@@ -812,7 +812,7 @@ export function VellumReader({
                     }
                   }}
                   placeholder="min"
-                  className="min-w-0 flex-1 border-0 bg-transparent font-sans text-sm text-ink outline-none placeholder:text-muted"
+                  className="min-w-0 flex-1 border-0 bg-transparent font-sans text-base text-ink outline-none placeholder:text-muted"
                 />
                 <button
                   type="button"
@@ -991,7 +991,7 @@ export function VellumReader({
                       }
                     }}
                     placeholder="min"
-                    className="min-w-0 flex-1 border-0 bg-transparent font-sans text-sm text-ink outline-none placeholder:text-muted"
+                    className="min-w-0 flex-1 border-0 bg-transparent font-sans text-base text-ink outline-none placeholder:text-muted"
                   />
                   <button
                     type="button"
@@ -1216,7 +1216,7 @@ export function VellumReader({
                 value={sendPhone}
                 onChange={(e) => setSendPhone(e.target.value)}
                 placeholder="Friend's phone — for later"
-                className="w-full border border-ink bg-paper px-4 py-3 font-sans text-sm text-ink outline-none placeholder:text-muted"
+                className="w-full border border-ink bg-paper px-4 py-3 font-sans text-base text-ink outline-none placeholder:text-muted"
               />
             </label>
           </div>
