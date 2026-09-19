@@ -1205,6 +1205,19 @@ html.together-compose.together-kb .chat-slot {
   color: color-mix(in srgb, var(--color-ink) 70%, transparent);
 }
 
+.veil-preface {
+  justify-content: flex-end;
+  padding-bottom: 1.5rem;
+}
+
+.veil-preface-note {
+  margin-top: 1.25rem;
+  max-width: 28rem;
+  font-size: clamp(1rem, 0.92rem + 0.4vw, 1.15rem);
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--color-ink) 78%, transparent);
+}
+
 .veil-field {
   display: block;
   width: calc(100% - 3rem);
@@ -1522,6 +1535,11 @@ html.together-compose.together-kb .chat-slot {
   .veil-note {
     margin-top: 0.4rem;
     font-size: 0.95rem;
+  }
+  .veil-preface-note {
+    margin-top: 1rem;
+    font-size: 1.02rem;
+    line-height: 1.5;
   }
   .veil-field {
     width: calc(100% - 2.3rem);
