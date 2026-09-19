@@ -590,9 +590,17 @@ export function VellumReader({
         <header className="relative z-20 flex shrink-0 items-stretch border-b border-ink">
           <Link
             to="/"
-            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
+            className="type-chrome reader-mark-slot inline-flex h-12 shrink-0 items-center justify-center bg-ink text-paper"
           >
             Home
+          </Link>
+          <span className="min-w-0 flex-1" />
+          <Link
+            to="/profile"
+            preload="intent"
+            className="type-chrome reader-mark-slot inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper text-ink"
+          >
+            You
           </Link>
         </header>
         <div className="veil-body">
@@ -698,10 +706,10 @@ export function VellumReader({
         </TogetherShell>
       ) : (
         <>
-          <header className="chrome-fade relative z-20 flex shrink-0 items-stretch border-b border-ink">
+          <header className="chrome-fade reader-mark relative z-20 flex shrink-0 items-stretch border-b border-ink">
             <Link
               to="/"
-              className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
+              className="type-chrome reader-mark-slot inline-flex h-12 shrink-0 items-center justify-center bg-ink text-paper"
               onClick={() => closeSit()}
             >
               Home
@@ -709,25 +717,33 @@ export function VellumReader({
             <button
               type="button"
               onClick={() => setOverlay("spine")}
-              className="flex min-w-0 flex-1 items-center truncate bg-paper px-4 type-kicker text-ink"
+              className="flex min-w-0 flex-1 items-center truncate bg-paper px-2.5 type-kicker text-ink sm:px-4"
             >
               {nightChrome || scene.place}
             </button>
             <Link
               to="/rituals"
-              className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-yellow px-4 font-sans text-sm text-ink"
+              className="type-chrome reader-mark-slot inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-yellow text-ink"
               onClick={() => closeSit()}
             >
               Rituals
             </Link>
             <Link
               to="/together"
-              className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
+              className="type-chrome reader-mark-slot inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red text-paper"
               onClick={() => closeSit()}
             >
               Together
             </Link>
-            <span className={cn("w-3 shrink-0 sm:w-4", fillClass(plane))} />
+            <Link
+              to="/profile"
+              preload="intent"
+              className="type-chrome reader-mark-slot inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper text-ink"
+              onClick={() => closeSit()}
+            >
+              You
+            </Link>
+            <span className={cn("w-2.5 shrink-0 sm:w-4", fillClass(plane))} />
           </header>
           {pane}
           {echo ? (
@@ -741,7 +757,81 @@ export function VellumReader({
               ) : null}
             </div>
           ) : null}
-          <footer className="relative z-20 flex shrink-0 items-stretch">
+          {navReveal && overlay === "none" ? (
+            <div className="nav-reveal" role="dialog" aria-label="Reading navigation">
+              <div className="nav-reveal-nav" role="group" aria-label="Page">
+                <button
+                  type="button"
+                  tabIndex={-1}
+                  onMouseDown={(e) => e.preventDefault()}
+                  onClick={retreat}
+                  className="nav-reveal-btn"
+                >
+                  Prev
+                </button>
+                <button
+                  type="button"
+                  tabIndex={-1}
+                  onMouseDown={(e) => e.preventDefault()}
+                  onClick={advance}
+                  className="nav-reveal-btn nav-reveal-btn-ink"
+                >
+                  Next
+                </button>
+              </div>
+              <div className="sit-presets nav-reveal-sits" role="group" aria-label="Sitting length">
+                {SIT_PRESETS.map((preset) => (
+                  <button
+                    key={preset.minutes}
+                    type="button"
+                    onClick={() => {
+                      chooseSit(preset.minutes, true);
+                    }}
+                    className={cn(
+                      "sit-preset",
+                      sittingMinutes === preset.minutes && "sit-preset-on",
+                    )}
+                  >
+                    {preset.short}
+                  </button>
+                ))}
+              </div>
+              <label className="flex items-center gap-2 border-t border-ink px-3 py-2">
+                <span className="type-kicker text-muted">Custom</span>
+                <input
+                  type="number"
+                  min={1}
+                  max={180}
+                  inputMode="numeric"
+                  value={customSit}
+                  onChange={(e) => setCustomSit(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.preventDefault();
+                      applyCustomSit(true);
+                    }
+                  }}
+                  placeholder="min"
+                  className="min-w-0 flex-1 border-0 bg-transparent font-sans text-sm text-ink outline-none placeholder:text-muted"
+                />
+                <button
+                  type="button"
+                  onClick={() => applyCustomSit(true)}
+                  className="type-kicker"
+                >
+                  Set
+                </button>
+                <button
+                  type="button"
+                  onClick={closeNavReveal}
+                  className="type-kicker text-muted"
+                >
+                  Close
+                </button>
+              </label>
+            </div>
+          ) : null}
+          <footer className="relative z-30 flex shrink-0 items-stretch">
             <div className="chrome-fade flex min-w-0 flex-1 items-stretch">
             <button
               type="button"
@@ -1076,81 +1166,6 @@ export function VellumReader({
               Home
             </Link>
           )}
-        </div>
-      ) : null}
-
-      {navReveal && !together && overlay === "none" ? (
-        <div className="nav-reveal" role="dialog" aria-label="Reading navigation">
-          <div className="nav-reveal-nav" role="group" aria-label="Page">
-            <button
-              type="button"
-              tabIndex={-1}
-              onMouseDown={(e) => e.preventDefault()}
-              onClick={retreat}
-              className="nav-reveal-btn"
-            >
-              Prev
-            </button>
-            <button
-              type="button"
-              tabIndex={-1}
-              onMouseDown={(e) => e.preventDefault()}
-              onClick={advance}
-              className="nav-reveal-btn nav-reveal-btn-ink"
-            >
-              Next
-            </button>
-          </div>
-          <div className="sit-presets nav-reveal-sits" role="group" aria-label="Sitting length">
-            {SIT_PRESETS.map((preset) => (
-              <button
-                key={preset.minutes}
-                type="button"
-                onClick={() => {
-                  chooseSit(preset.minutes, true);
-                }}
-                className={cn(
-                  "sit-preset",
-                  sittingMinutes === preset.minutes && "sit-preset-on",
-                )}
-              >
-                {preset.short}
-              </button>
-            ))}
-          </div>
-          <label className="flex items-center gap-2 border-t border-ink px-3 py-2">
-            <span className="type-kicker text-muted">Custom</span>
-            <input
-              type="number"
-              min={1}
-              max={180}
-              inputMode="numeric"
-              value={customSit}
-              onChange={(e) => setCustomSit(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                  e.preventDefault();
-                  applyCustomSit(true);
-                }
-              }}
-              placeholder="min"
-              className="min-w-0 flex-1 border-0 bg-transparent font-sans text-sm text-ink outline-none placeholder:text-muted"
-            />
-            <button
-              type="button"
-              onClick={() => applyCustomSit(true)}
-              className="type-kicker"
-            >
-              Set
-            </button>
-            <button
-              type="button"
-              onClick={closeNavReveal}
-              className="type-kicker text-muted"
-            >
-              Close
-            </button>
-          </label>
         </div>
       ) : null}
 
