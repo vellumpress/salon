@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { CollectionHeader } from "@/components/collection-header";
+import { SalonCardShare } from "@/components/salon-card-share";
 import { keptRefs } from "@/lib/continuity";
 import { YOU_PREVIEW } from "@/lib/favorites";
 import { boardWork } from "@/lib/mondrian";
@@ -129,21 +130,30 @@ export function KeptSentences({
       ) : (
         <>
           {lines.map((line) => (
-            <Link
-              key={`${line.workId}-${line.breathId}`}
-              to="/read/$workId"
-              params={{ workId: line.workId }}
-              search={{ at: line.at }}
-              className="block border-b border-ink px-4 py-5"
-            >
-              <p className="type-lede italic leading-snug">
-                {line.text}
-              </p>
-              <p className="mt-2 type-kicker text-muted">
-                {line.title}
-                {line.author ? ` · ${line.author}` : ""}
-              </p>
-            </Link>
+            <div key={`${line.workId}-${line.breathId}`} className="border-b border-ink">
+              <Link
+                to="/read/$workId"
+                params={{ workId: line.workId }}
+                search={{ at: line.at }}
+                className="block px-4 py-5"
+              >
+                <p className="type-lede italic leading-snug">
+                  {line.text}
+                </p>
+                <p className="mt-2 type-kicker text-muted">
+                  {line.title}
+                  {line.author ? ` · ${line.author}` : ""}
+                </p>
+              </Link>
+              <SalonCardShare
+                workId={line.workId}
+                at={line.at}
+                text={line.text}
+                title={line.title}
+                author={line.author}
+                className="w-full border-t border-ink bg-paper text-ink"
+              />
+            </div>
           ))}
           {hidden > 0 ? (
             <Link

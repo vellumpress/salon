@@ -32,8 +32,11 @@ import { defaultSitClock, etWallToIso, formatClubWhen, formatClubWhenLong } from
 import { enterClubCompose, exitClubCompose, syncVisualViewport } from "@/lib/vvh";
 import { liveBackendEnabled } from "@/lib/site";
 import { useShelfSearch } from "@/components/shelf-search";
+import { HostSitForm } from "@/components/host-sit-form";
+import { encodeHostedSit, sitDurationLabel, sitInvolves, sitPhase } from "@/lib/hosted-sit";
+import { formatHandle } from "@/lib/social";
 
-type TogetherSearch = { join?: string; start?: boolean };
+type TogetherSearch = { join?: string; start?: boolean; host?: boolean };
 
 export const Route = createFileRoute("/together")({
   validateSearch: (search: Record<string, unknown>): TogetherSearch => {
@@ -41,6 +44,7 @@ export const Route = createFileRoute("/together")({
     const join = asInviteToken(search.join);
     if (join) next.join = join;
     if (searchFlag(search.start)) next.start = true;
+    if (searchFlag(search.host)) next.host = true;
     return next;
   },
   component: TogetherPage,
@@ -56,9 +60,11 @@ export const Route = createFileRoute("/together")({
 });
 
 function TogetherPage() {
-  const { join, start } = Route.useSearch();
+  const { join, start, host } = Route.useSearch();
   const joined = useVellum((s) => s.joined) ?? [];
   const lastShuffle = useVellum((s) => s.lastShuffle);
+  const handle = useVellum((s) => s.handle) ?? "";
+  const hostedSits = useVellum((s) => s.hostedSits) ?? [];
   const toggleJoin = useVellum((s) => s.toggleJoin);
   const joinClub = useVellum((s) => s.joinClub);
   const rememberInvite = useVellum((s) => s.rememberInvite);
@@ -66,6 +72,7 @@ function TogetherPage() {
   const [upcoming, setUpcoming] = useState<UpcomingSit[]>([]);
   const [userClubs, setUserClubs] = useState<BookClubView[]>([]);
   const [creating, setCreating] = useState(Boolean(start));
+  const [hosting, setHosting] = useState(Boolean(host));
   const [created, setCreated] = useState<BookClubView | null>(null);
   const [welcome, setWelcome] = useState<BookClubView | null>(null);
   const [joinMissing, setJoinMissing] = useState(false);
@@ -202,7 +209,9 @@ function TogetherPage() {
         </Link>
       </header>
 
-      {creating ? (
+      {hosting ? (
+        <HostSitForm onClose={() => setHosting(false)} />
+      ) : creating ? (
         <StartClubForm
           defaultWorkId={defaultWork}
           onClose={() => {
@@ -238,7 +247,7 @@ function TogetherPage() {
             ) : null}
           </div>
 
-          <div className="grid grid-cols-1 border-b border-ink sm:grid-cols-2">
+          <div className="grid grid-cols-1 border-b border-ink sm:grid-cols-3">
             <Link
               to="/shuffle"
               search={{ together: true }}
@@ -249,17 +258,53 @@ function TogetherPage() {
             </Link>
             <button
               type="button"
+              onClick={() => setHosting(true)}
+              className="flex h-14 items-center justify-center border-t border-ink bg-forest font-sans text-sm text-paper sm:border-l sm:border-t-0"
+            >
+              Host a sit
+            </button>
+            <button
+              type="button"
               onClick={() => {
                 setCreating(true);
                 setCreated(null);
               }}
-              className="flex h-14 items-center justify-center border-t border-ink bg-yellow font-sans text-sm text-ink sm:border-l sm:border-t-0"
+              className="flex h-14 items-center justify-center border-t border-ink bg-yellow font-sans text-sm text-ink sm:border-l"
             >
               Start a book club
             </button>
           </div>
 
           {created ? <InviteCard club={created} kicker="Your club is set" /> : null}
+
+          {hydrated && hostedSits.some((row) => sitInvolves(row, handle) || !handle) ? (
+            <section>
+              <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
+                Hosted sits
+              </p>
+              {hostedSits
+                .filter((row) => !handle || sitInvolves(row, handle))
+                .map((sit) => (
+                  <Link
+                    key={sit.id}
+                    to="/sit/$token"
+                    params={{ token: encodeHostedSit(sit) }}
+                    className="flex items-stretch border-b border-ink"
+                  >
+                    <span className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5">
+                      <span className="type-kicker text-muted">
+                        {formatHandle(sit.hostHandle)} · {sitDurationLabel(sit.minutes)}
+                        {sitPhase(sit) === "ghost" ? " · replay" : ""}
+                      </span>
+                      <span className="mt-1 type-lede">{sit.workTitle}</span>
+                    </span>
+                    <span className="inline-flex shrink-0 items-center px-4 font-sans text-sm">
+                      Open
+                    </span>
+                  </Link>
+                ))}
+            </section>
+          ) : null}
 
           {joinMissing ? (
             <div className="border-b border-ink bg-paper px-5 py-6 sm:px-8">

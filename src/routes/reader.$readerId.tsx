@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { clubsForReader, formatHandle, getReader } from "@/lib/social";
+import { encodeEchoInvite } from "@/lib/together-keep";
 import { fillClass, fillInk } from "@/lib/mondrian";
 import { useVellum } from "@/lib/store";
 import { cn } from "@/lib/utils";
@@ -81,8 +82,28 @@ function ReaderPage() {
         </Link>
         <div className="border-b border-ink px-5 py-8 sm:px-8">
           <p className="mb-3 type-kicker text-muted">Kept</p>
-          <p className="type-title italic">{reader.kept}</p>
+          <p className="type-title italic">{reader.line || reader.kept}</p>
         </div>
+        <Link
+          to="/read/$workId"
+          params={{ workId: reader.reading }}
+          search={{
+            echo: encodeEchoInvite({
+              workId: reader.reading,
+              handle: reader.handle,
+              name: reader.name,
+              line: reader.line,
+              word: reader.kept,
+            }),
+          }}
+          className="flex items-center justify-between border-b border-ink bg-yellow px-5 py-5 text-ink sm:px-8"
+        >
+          <span>
+            <span className="block type-kicker opacity-70">Together</span>
+            <span className="mt-1 block type-lede">Keep a line from the same page</span>
+          </span>
+          <span className="font-sans text-sm">Echo</span>
+        </Link>
         <div>
           {clubs.map((club) => (
             <Link

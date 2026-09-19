@@ -13,6 +13,8 @@ type ReadSearch = {
   pair?: string;
   at?: number;
   episode?: number;
+  echo?: string;
+  hosted?: string;
 };
 
 function asEpisodeNumber(value: unknown): number | undefined {
@@ -41,6 +43,12 @@ export const Route = createFileRoute("/read/$workId")({
     }
     const episode = asEpisodeNumber(search.episode);
     if (episode) next.episode = episode;
+    if (typeof search.echo === "string" && search.echo.length >= 8 && search.echo.length <= 2400) {
+      next.echo = search.echo;
+    }
+    if (typeof search.hosted === "string" && search.hosted.length >= 8 && search.hosted.length <= 2400) {
+      next.hosted = search.hosted;
+    }
     return next;
   },
   component: ReadPage,
@@ -48,7 +56,7 @@ export const Route = createFileRoute("/read/$workId")({
 
 function ReadPage() {
   const { workId } = Route.useParams();
-  const { shuffle, sit, pair, at, episode } = Route.useSearch();
+  const { shuffle, sit, pair, at, episode, echo, hosted } = Route.useSearch();
   const pageWork = useVellum((s) => s.pageWork);
   const meta = workId === "page" ? pageWork : shelfWork(workId);
   const [work, setWork] = useState<Work | null | undefined>(() =>
@@ -127,13 +135,15 @@ function ReadPage() {
 
   return (
     <VellumReader
-      key={`${work.id}-${pair ?? ""}-${at ?? ""}-${episode ?? ""}`}
+      key={`${work.id}-${pair ?? ""}-${at ?? ""}-${episode ?? ""}-${echo ?? ""}-${hosted ?? ""}`}
       work={work}
       shuffle={Boolean(shuffle)}
       sit={sit}
       pair={pair}
       at={at}
       episode={episode}
+      echo={echo}
+      hosted={hosted}
     />
   );
 }

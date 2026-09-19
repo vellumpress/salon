@@ -36,6 +36,14 @@ import {
   nearestSitPreset,
   sitLabel,
 } from "@/lib/sitting";
+import { SalonCardShare } from "@/components/salon-card-share";
+import {
+  decodeEchoInvite,
+  findEchoBreath,
+  pairTogetherKeep,
+} from "@/lib/together-keep";
+import { decodeHostedSit } from "@/lib/hosted-sit";
+import { formatHandle, normalizeHandle } from "@/lib/social";
 
 type Overlay =
   | "none"
@@ -55,6 +63,8 @@ export function VellumReader({
   pair,
   at,
   episode: episodeN,
+  echo: echoToken,
+  hosted: hostedToken,
 }: {
   work: Work;
   shuffle?: boolean;
@@ -62,6 +72,8 @@ export function VellumReader({
   pair?: string;
   at?: number;
   episode?: number;
+  echo?: string;
+  hosted?: string;
 }) {
   const navigate = useNavigate();
   const sittingMinutes = useVellum((s) => s.sittingMinutes);
@@ -78,9 +90,22 @@ export function VellumReader({
     serializePlan && serializeEp ? serializeNightChrome(serializePlan, serializeEp.n) : "";
 
   const toggleKept = useVellum((s) => s.toggleKept);
+  const rememberTogetherKeep = useVellum((s) => s.rememberTogetherKeep);
+  const rememberHostedSit = useVellum((s) => s.rememberHostedSit);
+  const keepWithSit = useVellum((s) => s.keepWithSit);
+  const myHandle = useVellum((s) => s.handle) ?? "";
   const complete = useVellum((s) => s.complete);
   const ensure = useVellum((s) => s.ensure);
   const setReadingNow = useVellum((s) => s.setReadingNow);
+  const echo = useMemo(
+    () => (echoToken ? decodeEchoInvite(echoToken) : null),
+    [echoToken],
+  );
+  const hostedSit = useMemo(
+    () => (hostedToken ? decodeHostedSit(hostedToken) : null),
+    [hostedToken],
+  );
+  const echoAt = echo ? findEchoBreath(work.breaths, echo) : null;
   const together = Boolean(pair);
   const [overlay, setOverlay] = useState<Overlay>("none");
   const [sendPhone, setSendPhone] = useState("");
@@ -130,7 +155,12 @@ export function VellumReader({
       at >= 0 &&
       at < work.breaths.length
         ? Math.floor(at)
-        : null;
+        : echoAt != null
+          ? echoAt
+          : null;
+    if (hostedSit) {
+      rememberHostedSit(hostedSit);
+    }
     if (deepLink !== null) {
       startSitting(work.id);
       setBreath(work.id, deepLink);
@@ -162,7 +192,7 @@ export function VellumReader({
     setInviteHref("");
     setGateMode(pair ? "length" : "full");
     setOverlay("threshold");
-  }, [at, ensure, pair, setBreath, shuffle, sit, startSitting, work]);
+  }, [at, echoAt, ensure, hostedSit, pair, rememberHostedSit, setBreath, shuffle, sit, startSitting, work]);
 
   useEffect(() => {
     document.documentElement.classList.add("sitting");
@@ -330,6 +360,45 @@ export function VellumReader({
     goTo(next);
   }
 
+  function keepCurrent() {
+    const current = work.breaths[Math.min(lastBreath, Math.max(0, progress?.breathIndex ?? 0))];
+    if (!current) return;
+    const already = (progress?.kept ?? []).includes(current.id);
+    toggleKept(work.id, current.id);
+    if (already) return;
+    const you = normalizeHandle(myHandle);
+    if (echo && you) {
+      const pairRow = pairTogetherKeep({
+        workId: work.id,
+        theirs: {
+          handle: echo.handle,
+          name: echo.name,
+          breathId: echo.breathId || work.breaths[echoAt ?? 0]?.id || current.id,
+          line: echo.line,
+          at: echoAt ?? 0,
+        },
+        yours: {
+          handle: you,
+          name: formatHandle(you),
+          breathId: current.id,
+          line: current.text,
+          at: work.breaths.findIndex((row) => row.id === current.id),
+        },
+      });
+      if (pairRow) rememberTogetherKeep(pairRow);
+    }
+    if (hostedSit && you) {
+      rememberHostedSit(hostedSit);
+      keepWithSit(hostedSit.id, {
+        handle: you,
+        name: formatHandle(you),
+        breathId: current.id,
+        line: current.text,
+        at: work.breaths.findIndex((row) => row.id === current.id),
+      });
+    }
+  }
+
   function closeSit() {
     endSitting(work.id);
     if (serializePlan && serializeEp) {
@@ -346,10 +415,12 @@ export function VellumReader({
   const retreatRef = useRef(retreat);
   const crossRef = useRef(beginFromGate);
   const breathRef = useRef(breath);
+  const keepRef = useRef(keepCurrent);
   advanceRef.current = advance;
   retreatRef.current = retreat;
   crossRef.current = beginFromGate;
   breathRef.current = breath;
+  keepRef.current = keepCurrent;
 
   useEffect(() => {
     if (together || overlay !== "none") {
@@ -401,8 +472,7 @@ export function VellumReader({
         e.preventDefault();
         retreatRef.current();
       } else if (e.key === "k" || e.key === "K") {
-        const current = breathRef.current;
-        if (current && now === "none") toggleKept(work.id, current.id);
+        if (now === "none") keepRef.current();
       } else if (e.key === "Escape") {
         if (navReveal) {
           setNavReveal(false);
@@ -417,7 +487,7 @@ export function VellumReader({
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [together, toggleKept, work.id, navReveal, sandCue]);
+  }, [together, work.id, navReveal, sandCue]);
 
   useEffect(() => {
     if (overlay !== "none") return;
@@ -660,19 +730,41 @@ export function VellumReader({
             <span className={cn("w-3 shrink-0 sm:w-4", fillClass(plane))} />
           </header>
           {pane}
+          {echo ? (
+            <div className="relative z-20 border-t border-ink bg-yellow px-4 py-3 text-ink">
+              <p className="type-kicker opacity-70">Together</p>
+              <p className="mt-1 font-serif text-base leading-snug">
+                {formatHandle(echo.handle)} kept a line on this page. Keep one of yours.
+              </p>
+              {echo.line ? (
+                <p className="mt-1 font-serif text-sm italic text-ink/70">{echo.line}</p>
+              ) : null}
+            </div>
+          ) : null}
           <footer className="relative z-20 flex shrink-0 items-stretch">
             <div className="chrome-fade flex min-w-0 flex-1 items-stretch">
-              <button
-                type="button"
-                onClick={() => toggleKept(work.id, breath.id)}
-                className={cn(
-                  "inline-flex h-12 shrink-0 items-center justify-center border-r border-ink px-4 font-sans text-sm",
-                  isKept ? "bg-red text-paper" : "bg-paper text-ink",
-                )}
-              >
-                Keep
-              </button>
-              <FavoriteMark workId={work.id} className="border-r border-ink" />
+            <button
+              type="button"
+              onClick={keepCurrent}
+              className={cn(
+                "inline-flex h-12 shrink-0 items-center justify-center border-r border-ink px-4 font-sans text-sm",
+                isKept ? "bg-red text-paper" : "bg-paper text-ink",
+              )}
+            >
+              Keep
+            </button>
+            <FavoriteMark workId={work.id} className="border-r border-ink" />
+            {isKept ? (
+              <SalonCardShare
+                compact
+                workId={work.id}
+                at={index}
+                text={breath.text}
+                title={work.title}
+                author={work.author}
+                className="border-r border-ink bg-yellow text-ink"
+              />
+            ) : (
               <button
                 type="button"
                 onClick={() => {
@@ -683,6 +775,7 @@ export function VellumReader({
               >
                 Send
               </button>
+            )}
               {kept.length > 0 ? (
                 <div className="flex min-w-0 flex-1 items-center gap-1 overflow-x-auto bg-paper px-2">
                   {kept.map((id) => (
