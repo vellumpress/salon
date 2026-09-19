@@ -6,6 +6,7 @@ import { formatHandle, normalizeHandle } from "./social.ts";
 import { dayKey } from "./day-key.ts";
 import type { SitSession, WorkProgress } from "./store.ts";
 import type { TogetherKeep } from "./together-keep.ts";
+import { buildRadarAxes, type RadarAxis } from "./you-radar.ts";
 
 export type FormCount = { form: ShelfForm; label: string; count: number };
 export type OriginCount = { country: string; count: number };
@@ -79,6 +80,8 @@ export type ReadingStats = {
   hourPattern: LaneCount[];
   weekDays: DayMinutes[];
   rings: RingStat[];
+  radar: RadarAxis[];
+  sits: number;
   activity: ActivityItem[];
   desk: DeskWork[];
 };
@@ -629,6 +632,18 @@ export function deriveReadingStats(input: {
     },
   ];
 
+  const sits = sitHistory.length;
+  const radar = buildRadarAxes({
+    minutesToday,
+    minutesWeek,
+    breaths,
+    kept,
+    streak,
+    sits,
+    sittingMinutes,
+    minutesAreEstimated,
+  });
+
   return {
     hasSignal,
     minutesToday: Math.round(minutesToday),
@@ -652,6 +667,8 @@ export function deriveReadingStats(input: {
     hourPattern,
     weekDays,
     rings,
+    radar,
+    sits,
     activity: activityTimeline({
       sitHistory,
       togetherKeeps,
