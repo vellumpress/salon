@@ -1,0 +1,39 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
+import { curatorialTrack, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
+import { RITUAL_LANES } from "./rituals.ts";
+import { SHELF } from "./shelf.ts";
+import { isBoundLocal } from "./en-rights.ts";
+
+test("Featured carousel is unchanged and does not include Quicksand", () => {
+  assert.ok(FEATURED_CAROUSEL_IDS.includes("passing"));
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("quicksand"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
+  for (const id of FEATURED_CAROUSEL_IDS) {
+    assert.equal(curatorialTrack(id), "featured", id);
+  }
+});
+
+test("Quicksand is Next Featured-track", () => {
+  assert.deepEqual([...NEXT_FEATURED_TRACK_IDS], ["quicksand"]);
+  assert.equal(curatorialTrack("quicksand"), "next");
+  assert.equal(curatorialTrack("the-house-of-mirth"), "later");
+});
+
+test("Quicksand is a local before-sleep bind with no Gutenberg id", () => {
+  const work = SHELF.find((item) => item.id === "quicksand");
+  assert.ok(work);
+  assert.equal(work.year, 1928);
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, undefined);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^Helga Crane sat alone/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("quicksand"));
+  assert.equal(
+    RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("quicksand"),
+    false,
+  );
+});

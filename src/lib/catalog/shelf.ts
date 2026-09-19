@@ -179,7 +179,21 @@ export const SHELF: ShelfWork[] = [
   { id: "home-harlem", title: "Home to Harlem", author: "Claude McKay", year: 1928, form: "novel", language: "English", minutes: 160 },
   { id: "nadja", title: "Nadja", author: "André Breton", year: 1928, form: "other", language: "French", minutes: 40 },
   { id: "orlando", title: "Orlando", author: "Virginia Woolf", year: 1928, form: "novel", language: "English", minutes: 406, local: true, opening: "He—for there could be no doubt of his sex, though the fashion of the time did something to disguise it—was in the act of slicing at the head of a Moor which swung from the rafters.", breaths: 3247 },
-  { id: "quicksand", title: "Quicksand", author: "Nella Larsen", year: 1928, form: "novel", language: "English", minutes: 160 },
+  {
+    id: "quicksand",
+    title: "Quicksand",
+    author: "Nella Larsen",
+    year: 1928,
+    form: "novel",
+    language: "English",
+    minutes: 421,
+    local: true,
+    opening:
+      "Helga Crane sat alone in her room, which at that hour, eight in the evening, was in soft gloom.",
+    breaths: 3366,
+    intro:
+      "Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door. Quicksand begins in intentional isolation after a taxing day among an unkind faculty.\n\nNella Larsen’s 1928 novel (Standard Ebooks / Wikisource local bind) is the worldly non-NY backup after Mirth: a character study, Copenhagen path ahead. Sit in the lamp-lit room. Stop before the observer portrait.",
+  },
   { id: "ryder", title: "Ryder", author: "Djuna Barnes", year: 1928, form: "novel", language: "English", minutes: 160 },
   {
     id: "banjo",

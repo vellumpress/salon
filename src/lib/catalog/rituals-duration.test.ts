@@ -85,3 +85,15 @@ test("bite-sized ritual sits use short overrides", () => {
   assert.equal(estimateRitualMinutes(item), 5);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
+
+test("Quicksand before-sleep sit is a short evening room, not the whole novel", () => {
+  const item = work({
+    id: "quicksand",
+    form: "novel",
+    breaths: 3366,
+    minutes: 421,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 5);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});

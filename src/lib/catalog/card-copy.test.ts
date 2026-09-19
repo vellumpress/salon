@@ -97,6 +97,10 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /^ACT ONE$/i,
       opening: /^\[A room which is still called the nursery\./,
     },
+    quicksand: {
+      scene: /Chapter I.*Closed door/i,
+      opening: /^Helga Crane sat alone in her room, which at that hour, eight in the evening, was in soft gloom/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -111,6 +115,13 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     assert.match(packed.breaths[0]?.text ?? "", want.opening, `${id} open breath`);
     const early = packed.breaths.slice(0, 12).map((b) => b.text).join(" ");
     assert.doesNotMatch(early, /project gutenberg|standard ebooks|table of contents|transcriber/i, id);
+    if (id === "quicksand") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /never opened her door\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /an observer would have thought/i,
+      );
+    }
   }
 });
 
