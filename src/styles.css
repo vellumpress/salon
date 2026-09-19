@@ -421,7 +421,7 @@ html.together-compose.together-kb .chat-slot {
 
 .you-radar-label {
   fill: var(--color-ink);
-  fill-opacity: 0.58;
+  fill-opacity: 0.7;
   font-family: var(--font-sans);
   font-size: 11px;
   font-weight: 400;
@@ -430,9 +430,15 @@ html.together-compose.together-kb .chat-slot {
 
 .you-radar-value {
   fill: var(--color-ink);
-  fill-opacity: 0.88;
+  fill-opacity: 0.92;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.02em;
+}
+
+.you-radar-score {
+  background: var(--color-paper);
+  line-height: 1;
+  padding: 0.15rem 0.4rem;
 }
 
 .you-radar-legend {

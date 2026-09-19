@@ -43,9 +43,9 @@ export type RadarLayout = {
 };
 
 /** ViewBox size — labels live outside the hexagon. */
-export const RADAR_SIZE = 320;
-export const RADAR_RADIUS = 78;
-export const RADAR_LABEL_RADIUS = 112;
+export const RADAR_SIZE = 336;
+export const RADAR_RADIUS = 86;
+export const RADAR_LABEL_RADIUS = 118;
 export const RADAR_RINGS = 4;
 /** Vertex at 12 o'clock, clockwise — FIFA hex. */
 export const RADAR_START_ANGLE = -Math.PI / 2;
@@ -145,7 +145,7 @@ export function buildRadarAxes(input: {
   ];
 }
 
-export function radarAngle(index: number, count = RADAR_AXIS_IDS.length): number {
+export function radarAngle(index: number, count: number = RADAR_AXIS_IDS.length): number {
   return RADAR_START_ANGLE + (index * 2 * Math.PI) / count;
 }
 
@@ -154,7 +154,7 @@ export function radarPoint(
   radius: number,
   cx = RADAR_SIZE / 2,
   cy = RADAR_SIZE / 2,
-  count = RADAR_AXIS_IDS.length,
+  count: number = RADAR_AXIS_IDS.length,
 ): RadarPoint {
   const angle = radarAngle(index, count);
   return {
@@ -172,7 +172,7 @@ function round(n: number) {
   return Math.round(n * 100) / 100;
 }
 
-function labelAnchor(index: number, count = RADAR_AXIS_IDS.length): RadarLabel["anchor"] {
+function labelAnchor(index: number, count: number = RADAR_AXIS_IDS.length): RadarLabel["anchor"] {
   const c = Math.cos(radarAngle(index, count));
   if (c > 0.4) return "start";
   if (c < -0.4) return "end";

@@ -31,9 +31,9 @@ function ringOffset(value: number, max: number, circumference: number) {
 }
 
 function radarFillOpacity(fill: Fill) {
-  if (fill === "yellow") return 0.3;
-  if (fill === "ink") return 0.1;
-  return 0.18;
+  if (fill === "yellow") return 0.38;
+  if (fill === "ink") return 0.14;
+  return 0.26;
 }
 
 export function ReadinessHero({
@@ -68,8 +68,8 @@ export function ReadinessHero({
                 d={d}
                 fill="none"
                 stroke="var(--color-ink)"
-                strokeOpacity={i === layout.grids.length - 1 ? 0.22 : 0.1}
-                strokeWidth="0.85"
+                strokeOpacity={i === layout.grids.length - 1 ? 0.26 : 0.12}
+                strokeWidth="0.9"
               />
             ))}
             {layout.spokes.map((spoke) => (
@@ -80,8 +80,8 @@ export function ReadinessHero({
                 x2={spoke.x2}
                 y2={spoke.y2}
                 stroke="var(--color-ink)"
-                strokeOpacity="0.12"
-                strokeWidth="0.75"
+                strokeOpacity="0.14"
+                strokeWidth="0.8"
               />
             ))}
             {peak > 0 ? (
@@ -90,7 +90,7 @@ export function ReadinessHero({
                 fill={accent}
                 fillOpacity={radarFillOpacity(palette.ring)}
                 stroke={accent}
-                strokeWidth="1.75"
+                strokeWidth="2"
                 strokeLinejoin="round"
               />
             ) : null}
@@ -102,17 +102,17 @@ export function ReadinessHero({
                 textAnchor={row.anchor}
                 className="you-radar-label"
               >
-                <tspan x={row.x} dy="-0.35em">
+                <tspan x={row.x} dy="-0.45em">
                   {row.label}
                 </tspan>
-                <tspan x={row.x} dy="1.25em" className="you-radar-value">
+                <tspan x={row.x} dy="1.4em" className="you-radar-value">
                   {row.display}
                 </tspan>
               </text>
             ))}
           </svg>
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-            <span className="type-title text-ink">{reading.readiness.score}</span>
+            <span className="you-radar-score type-title text-ink">{reading.readiness.score}</span>
           </div>
         </figure>
         <div className="min-w-0 flex-1 pb-1">
@@ -129,14 +129,14 @@ export function ReadinessHero({
               {reading.minutesAreEstimated ? " est." : ""}
             </p>
           ) : null}
-          <p className="you-radar-legend mt-4 text-ink/50">
-            {reading.radar.map((axis, i) => (
-              <span key={axis.id}>
-                {i > 0 ? <span aria-hidden> · </span> : null}
-                {axis.label} {axis.display}
-              </span>
+          <ul className="you-radar-legend mt-4 grid max-w-72 grid-cols-3 gap-x-3 gap-y-1 text-ink/50">
+            {reading.radar.map((axis) => (
+              <li key={axis.id}>
+                <span className="text-ink/40">{axis.label}</span>{" "}
+                <span className="text-ink/70">{axis.display}</span>
+              </li>
             ))}
-          </p>
+          </ul>
         </div>
       </div>
     </section>
