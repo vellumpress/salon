@@ -330,6 +330,7 @@ html.together-compose.together-kb .chat-slot {
 .board.board-doors > .cell-pillar {
   grid-column: 1 / -1;
   min-height: 10rem;
+  overflow: hidden;
 }
 
 .board.board-doors.has-resume {
@@ -339,6 +340,7 @@ html.together-compose.together-kb .chat-slot {
 .board.board-doors > .cell-resume {
   grid-column: 1 / -1;
   min-height: 8.25rem;
+  overflow: hidden;
   text-decoration: none;
 }
 
@@ -627,6 +629,7 @@ html.together-compose.together-kb .chat-slot {
   .cell-featured,
   .cell-together,
   .cell-pillar,
+  .cell-resume,
   .cell-shuffle,
   .cell-clubs,
   .cell-map,
@@ -665,7 +668,7 @@ html.together-compose.together-kb .chat-slot {
   }
   .board.board-doors {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-template-rows: 3rem minmax(14rem, 1fr) auto auto;
+    grid-template-rows: 3rem minmax(14rem, 1fr) minmax(14rem, 1fr) auto auto;
     min-height: 100svh;
     height: var(--vvh, 100dvh);
   }
@@ -673,15 +676,17 @@ html.together-compose.together-kb .chat-slot {
     grid-column: 1 / 13;
   }
   .board.board-doors > .cell-pillar {
-    grid-column: span 6;
-    min-height: 16rem;
+    grid-column: 1 / 13;
+    min-height: 14rem;
+    overflow: hidden;
   }
   .board.board-doors.has-resume {
-    grid-template-rows: 3rem minmax(10rem, auto) minmax(12rem, 1fr) auto auto;
+    grid-template-rows: 3rem minmax(10rem, auto) minmax(12rem, 1fr) minmax(12rem, 1fr) auto auto;
   }
   .board.board-doors > .cell-resume {
     grid-column: 1 / 13;
     min-height: 10rem;
+    overflow: hidden;
   }
   .board.board-doors > .cell-works,
   .cell-works {

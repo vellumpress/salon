@@ -91,53 +91,25 @@ function Home() {
               params={{ workId: last.id }}
               search={{ at: last.breathIndex }}
               preload="intent"
-              aria-label={`Continue ${last.title} by ${last.author || "unknown"}`}
+              aria-label={`Resume ${last.title} by ${last.author || "unknown"}`}
               className={cn(
-                "cell-resume relative flex min-h-0 flex-col",
+                "cell-resume relative flex min-h-0 items-stretch",
                 fillClass(resumeFill),
                 fillInk(resumeFill),
               )}
             >
-              <span className="flex min-h-0 min-w-0 flex-1 items-stretch">
-                <span className="flex min-w-0 flex-1 flex-col justify-end px-5 py-4 sm:px-8 sm:py-6">
-                  <span className="font-sans text-xs tracking-wide opacity-80">
-                    Continue reading
+              <span className="flex min-w-0 flex-1 flex-col justify-center px-5 py-4 sm:px-8 sm:py-5">
+                <span className="font-sans text-xs tracking-wide opacity-80">Resume</span>
+                <span className="pillar-title mt-1">{last.title}</span>
+                {last.author ? (
+                  <span className="mt-1 truncate font-sans text-sm tracking-wide opacity-80">
+                    {last.author}
                   </span>
-                  <span className="pillar-title mt-1">{last.title}</span>
-                  {last.author ? (
-                    <span className="mt-1 truncate font-sans text-sm tracking-wide opacity-80">
-                      {last.author}
-                    </span>
-                  ) : null}
-                  <span className="mt-2 font-sans text-xs tracking-wide opacity-75">
-                    {last.cue}
-                  </span>
-                </span>
-                <span
-                  className={cn(
-                    "flex w-24 shrink-0 items-center justify-center px-3 text-center font-sans text-sm sm:w-32 sm:text-base",
-                    resumeFill === "ink" || resumeFill === "forest"
-                      ? "bg-paper text-ink"
-                      : "bg-ink text-paper",
-                  )}
-                >
-                  Resume
-                </span>
+                ) : null}
               </span>
-              {last.percent != null ? (
-                <span
-                  className="block h-1.5 w-full bg-ink/20"
-                  aria-hidden
-                >
-                  <span
-                    className={cn(
-                      "block h-full",
-                      resumeFill === "ink" || resumeFill === "forest" ? "bg-paper" : "bg-ink",
-                    )}
-                    style={{ width: `${last.percent}%` }}
-                  />
-                </span>
-              ) : null}
+              <span className="flex shrink-0 items-center px-5 font-sans text-sm sm:px-8 sm:text-base">
+                Continue
+              </span>
             </Link>
           ) : null}
 
