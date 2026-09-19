@@ -54,7 +54,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "pictures-of-the-floating-world":
     "Lowell’s lacquer prints and quiet looking — Japan as color, surface, and pause. Poems that invite you to stand still and see.",
   silhouettes:
-    "Symons at Dieppe and other soft-focus shores. Seaside poems in silhouette — evening promenades, fog, and the half-seen face.",
+    "At Dieppe after sunset—the sea quieted, grape-flush on the clouds, a sickle moon and one gold star. Silhouettes opens on atmosphere, not argument. Arthur Symons’s 1892 seaside lyrics — a short After Sunset sit before sleep.",
   "the-garden-party-and-other-stories":
     "Mansfield mornings: party light, then a turn toward the lane you weren’t meant to notice. Domestic brilliance with a chill underneath.",
   "bliss-and-other-stories":
@@ -142,6 +142,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "love-songs",
       "the-house-of-souls",
       "wallpaper",
+      "silhouettes",
     ],
   },
   {

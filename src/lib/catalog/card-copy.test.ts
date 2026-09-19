@@ -114,6 +114,45 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
   }
 });
 
+test("Silhouettes opens in sentence case, not PG first-word ALL-CAPS", () => {
+  const work = SHELF.find((item) => item.id === "silhouettes");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.match(work!.opening ?? "", /^The sea lies quieted beneath/);
+  assert.equal(work!.gutenberg, 29531);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/silhouettes.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/silhouettes.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /At Dieppe/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^The sea lies quieted beneath/);
+  const early = packed.breaths.map((breath) => breath.text);
+  assert.equal(early[0], "At Dieppe.");
+  assert.equal(early[1], "After Sunset.");
+  assert.equal(early[2], "The sea lies quieted beneath");
+  assert.equal(early.at(-1), "Look down upon the sea.");
+  assert.equal(
+    early.includes("On the Beach."),
+    false,
+    "open-at should stop before On the Beach",
+  );
+  for (const pack of [packed, full]) {
+    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+    assert.doesNotMatch(joined, /\bTHE sea\b/);
+    assert.doesNotMatch(joined, /\bNIGHT, a grey\b/);
+    assert.doesNotMatch(joined, /\bAFTER SUNSET\b/);
+    assert.doesNotMatch(joined, /project gutenberg/i);
+    const decorative = pack.breaths.filter((breath) => {
+      const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
+      return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
+    });
+    assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
+  }
+});
+
 test("The Cherry Orchard is a readable four-act play, not one breath per page", () => {
   const packed = JSON.parse(
     readFileSync(new URL("./texts/the-cherry-orchard.json", import.meta.url), "utf8"),
