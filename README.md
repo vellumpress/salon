@@ -2,7 +2,7 @@
 
 A calm, phone-first reading app for public-domain classics. This repository is the GitHub Pages twin of [Vellum](https://vellumpress.vercel.app/): same catalog and chamber reader, named **Salon**.
 
-The product name is Salon. The GitHub repo and Pages path stay `vellum-lite`.
+The product name is Salon. The GitHub repo and Pages path are `salon`.
 
 This tree is a full mirror of Vellum V4 (`c9c405`), including every local catalog text and opening (389 each). Do not thin the catalog to save size.
 
@@ -10,9 +10,11 @@ On GitHub Pages the app is a **static SPA**. Reading, shuffle, rituals, and loca
 
 ## Public URL
 
-Live on GitHub Pages: **https://vellumpress.github.io/vellum-lite/**
+Live on GitHub Pages: **https://vellumpress.github.io/salon/**
 
-Pushes to `main` run `.github/workflows/deploy-pages.yml`. Vite/`tanstackStart` use `base` `/vellum-lite/`. Deep links fall back through `dist/404.html` (a copy of the SPA shell).
+Pushes to `main` run `.github/workflows/deploy-pages.yml`. Vite/`tanstackStart` use `base` `/salon/`. Deep links fall back through `dist/404.html` (a copy of the SPA shell).
+
+Add to Home Screen on iPhone uses the name **Salon** (`apple-mobile-web-app-title` + web app manifest) and a Mondrian red / blue / green icon.
 
 ## Local run
 
@@ -21,14 +23,14 @@ npm install
 npm run dev
 ```
 
-Open the printed local URL (usually `http://localhost:8080/vellum-lite/`).
+Open the printed local URL (usually `http://localhost:8080/salon/`).
 
 ```bash
 npm run build
 npm run preview
 ```
 
-`npm run build` emits a static `dist/` folder for Pages. `npm run preview` serves that folder at `/vellum-lite/` with the same `404.html` fallback GitHub Pages uses. `pnpm` and `bun` install/build the same way if you prefer those clients.
+`npm run build` emits a static `dist/` folder for Pages. `npm run preview` serves that folder at `/salon/` with the same `404.html` fallback GitHub Pages uses. `pnpm` and `bun` install/build the same way if you prefer those clients.
 
 Optional Vercel output (server functions + Nitro `vercel` preset):
 
@@ -41,7 +43,9 @@ npm run build:vercel
 - Discover, search, form rails, rituals, shuffle, curator UI (picks fail closed without an LLM backend)
 - Chamber reader for all **389 local binds** (texts + openings stay in `src/lib/catalog/texts` and `src/lib/catalog/openings`)
 - Progress, favorites, kept breaths — `localStorage` (`vellum-v1`)
-- Share links that stay on this origin (`/vellum-lite/read/…`)
+- Continue-reading on Home (header + primary resume cell) from that same local progress
+- Friends: claim an `@username`, follow Salon readers, see what they are sitting — local-first
+- Share links that stay on this origin (`/salon/read/…`)
 
 ## Env / backend gaps (not on Pages)
 
@@ -51,6 +55,7 @@ Pages has no Node server. These stay off unless you host the app with a real bac
 | --- | --- | --- |
 | Sign-in / staff desk | `VITE_AUTH_ENABLED=true`, Better Auth secret, OAuth broker, `DATABASE_URL` | Disabled. Profile is local. `/login` explains the gap. |
 | Synced favorites / reading | Auth + Postgres / PGlite | Local only. |
+| Friends graph / `@username` | Hosted follow + handle APIs (none in this tree yet) | Local `localStorage` graph. Catalog readers are followable offline. Cross-device / other-user sync needs a live backend. |
 | Book clubs / invites | `VITE_LIVE_BACKEND=true` + DB | Create/list/join fail closed; cards stay local. |
 | Sit-together RTC | `/api/rtc` signaling + optional `VITE_STUN_URLS` | Room shows “needs a server”; no mesh. |
 | Curator replies | Server function + model API key | UI loads; ask fails with a quiet error. |
@@ -73,4 +78,4 @@ VITE_LIVE_BACKEND=false
 
 ## Tech
 
-TanStack Start (SPA mode) + Vite + React 19 + Tailwind v4. Default production build targets GitHub Pages under `/vellum-lite/`.
+TanStack Start (SPA mode) + Vite + React 19 + Tailwind v4. Default production build targets GitHub Pages under `/salon/`.

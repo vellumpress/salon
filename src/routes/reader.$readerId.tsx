@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { clubsForReader, getReader } from "@/lib/social";
+import { clubsForReader, formatHandle, getReader } from "@/lib/social";
 import { fillClass, fillInk } from "@/lib/mondrian";
 import { useVellum } from "@/lib/store";
 import { cn } from "@/lib/utils";
@@ -22,10 +22,10 @@ function ReaderPage() {
       <div className="frame-screen bg-paper text-ink">
         <header className="flex shrink-0 items-stretch border-b border-ink">
           <Link
-            to="/together"
+            to="/friends"
             className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
           >
-            Together
+            Friends
           </Link>
         </header>
       </div>
@@ -39,13 +39,13 @@ function ReaderPage() {
     <div className="frame-screen bg-paper text-ink">
       <header className="flex shrink-0 items-stretch border-b border-ink">
         <Link
-          to="/together"
+          to="/friends"
           className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
         >
-          Together
+          Friends
         </Link>
         <h1 className="flex min-w-0 flex-1 items-center truncate px-4 font-display text-xl font-medium tracking-tight">
-          {reader.name}
+          {formatHandle(reader.handle)}
         </h1>
         <button
           type="button"
@@ -60,7 +60,9 @@ function ReaderPage() {
       </header>
       <div className="min-h-0 flex-1 overflow-y-auto">
         <div className={cn("flex min-h-36 flex-col justify-end p-5 sm:p-8", fillClass(reader.fill), fillInk(reader.fill))}>
-          <p className="font-sans text-xs tracking-wide opacity-80">{reader.city}</p>
+          <p className="font-sans text-xs tracking-wide opacity-80">
+            {formatHandle(reader.handle)} · {reader.city}
+          </p>
           <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">{reader.name}</p>
         </div>
         <div className="border-b border-ink px-5 py-6 sm:px-8">

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { keptRefs, lastReadProgress } from "./continuity.ts";
+import { keptRefs, lastReadCue, lastReadPercent, lastReadProgress } from "./continuity.ts";
 import type { WorkProgress } from "./store.ts";
 
 function progress(partial: Partial<WorkProgress>): WorkProgress {
@@ -42,6 +42,15 @@ test("keptRefs lists newest works first and skips page", () => {
     rows.map((row) => `${row.workId}:${row.breathId}`),
     ["we:s1-0", "passing:s0-2", "passing:s0-4"],
   );
+});
+
+test("lastReadCue names progress without requiring a catalog lookup", () => {
+  assert.equal(lastReadCue(0), "Just opened");
+  assert.equal(lastReadCue(11), "Sentence 12");
+  assert.equal(lastReadCue(0, 200), "Opened · beginning");
+  assert.equal(lastReadCue(50, 200), "25% in · sentence 51");
+  assert.equal(lastReadPercent(50, 200), 25);
+  assert.equal(lastReadPercent(3), null);
 });
 
 test("keptRefs honors a small limit and Infinity for the full collection", () => {

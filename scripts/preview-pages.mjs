@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Static preview of the Pages artifact: serve dist/ at /vellum-lite/
+ * Static preview of the Pages artifact: serve dist/ at /salon/
  * and fall unknown paths through 404.html (same as GitHub Pages).
  */
 import { createReadStream, existsSync, statSync } from "node:fs";
@@ -11,7 +11,7 @@ import { fileURLToPath } from "node:url";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dist = join(root, "dist");
-const base = "/vellum-lite";
+const base = "/salon";
 const host = "127.0.0.1";
 const port = Number(process.env.PORT || 8081);
 

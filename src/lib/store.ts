@@ -2,6 +2,12 @@ import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import type { Work } from "./literature";
 import { asSittingMinutes } from "./sitting";
+import {
+  asContact,
+  contactId,
+  type FriendContact,
+} from "./friends.ts";
+import { handleError, normalizeHandle, readerByHandle, READERS } from "./social.ts";
 
 export type WorkProgress = {
   breathIndex: number;
@@ -41,6 +47,9 @@ type VellumState = {
   progress: Record<string, WorkProgress>;
   pageWork: Work | null;
   following: string[];
+  /** Local @username. Pages has no handle API; this stays on the device. */
+  handle: string;
+  contacts: FriendContact[];
   joined: string[];
   clubInvites: Record<string, string>;
   lastShuffle: string | null;
@@ -59,6 +68,11 @@ type VellumState = {
   setSittingMinutes: (minutes: number) => void;
   setPageWork: (work: Work | null) => void;
   toggleFollow: (readerId: string) => void;
+  setHandle: (handle: string) => { ok: true; handle: string } | { ok: false; error: string };
+  addContact: (input: { handle: string; name?: string }) =>
+    | { ok: true; id: string }
+    | { ok: false; error: string };
+  removeContact: (id: string) => void;
   toggleJoin: (clubId: string) => void;
   joinClub: (clubId: string) => void;
   rememberInvite: (clubId: string, token: string) => void;
@@ -187,6 +201,8 @@ export const useVellum = create<VellumState>()(
       progress: {},
       pageWork: null,
       following: [],
+      handle: "",
+      contacts: [],
       joined: [],
       clubInvites: {},
       lastShuffle: null,
@@ -209,6 +225,57 @@ export const useVellum = create<VellumState>()(
               : [...following, readerId],
           };
         }),
+      setHandle: (raw) => {
+        const handle = normalizeHandle(raw);
+        const taken = [
+          ...READERS.map((row) => row.handle),
+          ...(get().contacts ?? []).map((row) => row.handle),
+        ];
+        const error = handleError(handle, taken);
+        if (error) return { ok: false as const, error };
+        set({ handle });
+        return { ok: true as const, handle };
+      },
+      addContact: (input) => {
+        const handle = normalizeHandle(input.handle);
+        if (handle && handle === get().handle) {
+          return { ok: false as const, error: "That is already you." };
+        }
+        const catalog = readerByHandle(handle);
+        if (catalog) {
+          const following = get().following ?? [];
+          if (!following.includes(catalog.id)) {
+            set({ following: [...following, catalog.id] });
+          }
+          return { ok: true as const, id: catalog.id };
+        }
+        const error = handleError(handle, [
+          get().handle,
+          ...(get().contacts ?? []).map((row) => row.handle),
+        ]);
+        if (error) return { ok: false as const, error };
+        const contact = asContact({ handle, name: input.name });
+        if (!contact) return { ok: false as const, error: "Use at least two letters." };
+        set((state) => {
+          const contacts = state.contacts ?? [];
+          const following = state.following ?? [];
+          const nextContacts = contacts.some((row) => row.handle === handle)
+            ? contacts
+            : [...contacts, contact];
+          return {
+            contacts: nextContacts,
+            following: following.includes(contact.id)
+              ? following
+              : [...following, contact.id],
+          };
+        });
+        return { ok: true as const, id: contactId(handle) };
+      },
+      removeContact: (id) =>
+        set((state) => ({
+          contacts: (state.contacts ?? []).filter((row) => row.id !== id),
+          following: (state.following ?? []).filter((row) => row !== id),
+        })),
       toggleJoin: (clubId) =>
         set((state) => {
           const joined = state.joined ?? [];
@@ -398,6 +465,8 @@ export const useVellum = create<VellumState>()(
         sittingMinutes: state.sittingMinutes,
         progress: state.progress,
         following: state.following,
+        handle: state.handle,
+        contacts: state.contacts,
         joined: state.joined,
         clubInvites: state.clubInvites,
         lastShuffle: state.lastShuffle,

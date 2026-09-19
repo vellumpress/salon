@@ -3,6 +3,7 @@ import type { Fill } from "./mondrian";
 export type Reader = {
   id: string;
   name: string;
+  handle: string;
   city: string;
   fill: Fill;
   reading: string;
@@ -34,6 +35,7 @@ export const READERS: Reader[] = [
   {
     id: "ada",
     name: "Ada Voss",
+    handle: "ada",
     city: "Fort Greene",
     fill: "yellow",
     reading: "passing",
@@ -45,6 +47,7 @@ export const READERS: Reader[] = [
   {
     id: "jules",
     name: "Jules Mallard",
+    handle: "jules",
     city: "Upper West",
     fill: "red",
     reading: "gold",
@@ -56,6 +59,7 @@ export const READERS: Reader[] = [
   {
     id: "nora",
     name: "Nora Chen",
+    handle: "nora",
     city: "Two Bridges",
     fill: "ink",
     reading: "we",
@@ -67,6 +71,7 @@ export const READERS: Reader[] = [
   {
     id: "vera",
     name: "Vera S.",
+    handle: "vera",
     city: "Gramercy",
     fill: "paper",
     reading: "naomi",
@@ -78,6 +83,7 @@ export const READERS: Reader[] = [
   {
     id: "ivo",
     name: "Ivo Reed",
+    handle: "ivo",
     city: "Greenpoint",
     fill: "blue",
     reading: "manhattan",
@@ -89,6 +95,7 @@ export const READERS: Reader[] = [
   {
     id: "cleo",
     name: "Cleo Hart",
+    handle: "cleo",
     city: "Harlem",
     fill: "red",
     reading: "tropic",
@@ -100,6 +107,7 @@ export const READERS: Reader[] = [
   {
     id: "leo",
     name: "Leo Joyce",
+    handle: "leo",
     city: "Inwood",
     fill: "ink",
     reading: "odessa",
@@ -111,6 +119,7 @@ export const READERS: Reader[] = [
   {
     id: "rene",
     name: "René Loisel",
+    handle: "rene",
     city: "Astoria",
     fill: "yellow",
     reading: "madmen",
@@ -221,6 +230,60 @@ export const CLUBS: Club[] = [
 
 export function getReader(id: string) {
   return READERS.find((reader) => reader.id === id);
+}
+
+export function formatHandle(handle: string) {
+  const clean = normalizeHandle(handle);
+  return clean ? `@${clean}` : "";
+}
+
+export function normalizeHandle(value: string) {
+  return value
+    .trim()
+    .replace(/^@+/, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9_]/g, "")
+    .slice(0, 20);
+}
+
+const RESERVED_HANDLES = new Set([
+  "salon",
+  "you",
+  "friends",
+  "admin",
+  "staff",
+  "vellum",
+  "profile",
+]);
+
+export function handleError(value: string, taken: Iterable<string> = []): string | null {
+  const handle = normalizeHandle(value);
+  if (handle.length < 2) return "Use at least two letters.";
+  if (RESERVED_HANDLES.has(handle)) return "That name is reserved.";
+  const blocked = new Set(
+    [...taken].map((item) => normalizeHandle(item)).filter(Boolean),
+  );
+  if (blocked.has(handle)) return "Someone already sits as that name.";
+  return null;
+}
+
+export function readerByHandle(handle: string) {
+  const clean = normalizeHandle(handle);
+  if (!clean) return undefined;
+  return READERS.find((reader) => reader.handle === clean);
+}
+
+export function searchReaders(query: string) {
+  const q = query.trim().toLowerCase().replace(/^@+/, "");
+  if (!q) return READERS;
+  return READERS.filter((reader) => {
+    return (
+      reader.handle.includes(q) ||
+      reader.name.toLowerCase().includes(q) ||
+      reader.city.toLowerCase().includes(q) ||
+      reader.workTitle.toLowerCase().includes(q)
+    );
+  });
 }
 
 export function getClub(id: string) {

@@ -333,12 +333,12 @@ html.together-compose.together-kb .chat-slot {
 }
 
 .board.board-doors.has-resume {
-  grid-template-rows: 3rem auto minmax(8.5rem, 1fr) minmax(8.5rem, 1fr) auto auto;
+  grid-template-rows: 3rem minmax(8.25rem, auto) minmax(7.5rem, 1fr) minmax(7.5rem, 1fr) auto auto;
 }
 
 .board.board-doors > .cell-resume {
   grid-column: 1 / -1;
-  min-height: 3.5rem;
+  min-height: 8.25rem;
   text-decoration: none;
 }
 
@@ -677,10 +677,11 @@ html.together-compose.together-kb .chat-slot {
     min-height: 16rem;
   }
   .board.board-doors.has-resume {
-    grid-template-rows: 3rem auto minmax(12rem, 1fr) auto auto;
+    grid-template-rows: 3rem minmax(10rem, auto) minmax(12rem, 1fr) auto auto;
   }
   .board.board-doors > .cell-resume {
     grid-column: 1 / 13;
+    min-height: 10rem;
   }
   .board.board-doors > .cell-works,
   .cell-works {

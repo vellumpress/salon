@@ -1,8 +1,8 @@
-/** User-facing product name. Repo / Pages path stay `vellum-lite`. */
+/** User-facing product name. Repo / Pages path are `salon`. */
 export const APP_NAME = "Salon";
 
 /** GitHub Pages subdirectory (no trailing slash). */
-export const APP_BASE_PATH = "/vellum-lite";
+export const APP_BASE_PATH = "/salon";
 
 /**
  * True when this build can call same-origin API routes and server functions

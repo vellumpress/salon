@@ -14,6 +14,7 @@ import { Route as ClubsRouteImport } from './routes/clubs'
 import { Route as CuratorRouteImport } from './routes/curator'
 import { Route as DeskRouteImport } from './routes/desk'
 import { Route as FormRouteImport } from './routes/form'
+import { Route as FriendsRouteImport } from './routes/friends'
 import { Route as GlassRouteImport } from './routes/glass'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as MapRouteImport } from './routes/map'
@@ -56,6 +57,11 @@ const DeskRoute = DeskRouteImport.update({
 const FormRoute = FormRouteImport.update({
   id: '/form',
   path: '/form',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FriendsRoute = FriendsRouteImport.update({
+  id: '/friends',
+  path: '/friends',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GlassRoute = GlassRouteImport.update({
@@ -155,6 +161,7 @@ export interface FileRoutesByFullPath {
   '/curator': typeof CuratorRoute
   '/desk': typeof DeskRoute
   '/form': typeof FormRoute
+  '/friends': typeof FriendsRoute
   '/glass': typeof GlassRoute
   '/login': typeof LoginRoute
   '/map': typeof MapRoute
@@ -180,6 +187,7 @@ export interface FileRoutesByTo {
   '/curator': typeof CuratorRoute
   '/desk': typeof DeskRoute
   '/form': typeof FormRoute
+  '/friends': typeof FriendsRoute
   '/glass': typeof GlassRoute
   '/login': typeof LoginRoute
   '/map': typeof MapRoute
@@ -205,6 +213,7 @@ export interface FileRoutesById {
   '/curator': typeof CuratorRoute
   '/desk': typeof DeskRoute
   '/form': typeof FormRoute
+  '/friends': typeof FriendsRoute
   '/glass': typeof GlassRoute
   '/login': typeof LoginRoute
   '/map': typeof MapRoute
@@ -232,6 +241,7 @@ export interface FileRouteTypes {
     | '/curator'
     | '/desk'
     | '/form'
+    | '/friends'
     | '/glass'
     | '/login'
     | '/map'
@@ -257,6 +267,7 @@ export interface FileRouteTypes {
     | '/curator'
     | '/desk'
     | '/form'
+    | '/friends'
     | '/glass'
     | '/login'
     | '/map'
@@ -281,6 +292,7 @@ export interface FileRouteTypes {
     | '/curator'
     | '/desk'
     | '/form'
+    | '/friends'
     | '/glass'
     | '/login'
     | '/map'
@@ -307,6 +319,7 @@ export interface RootRouteChildren {
   CuratorRoute: typeof CuratorRoute
   DeskRoute: typeof DeskRoute
   FormRoute: typeof FormRoute
+  FriendsRoute: typeof FriendsRoute
   GlassRoute: typeof GlassRoute
   LoginRoute: typeof LoginRoute
   MapRoute: typeof MapRoute
@@ -360,6 +373,13 @@ declare module '@tanstack/react-router' {
       path: '/form'
       fullPath: '/form'
       preLoaderRoute: typeof FormRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/friends': {
+      id: '/friends'
+      path: '/friends'
+      fullPath: '/friends'
+      preLoaderRoute: typeof FriendsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/glass': {
@@ -510,6 +530,7 @@ const rootRouteChildren: RootRouteChildren = {
   CuratorRoute: CuratorRoute,
   DeskRoute: DeskRoute,
   FormRoute: FormRoute,
+  FriendsRoute: FriendsRoute,
   GlassRoute: GlassRoute,
   LoginRoute: LoginRoute,
   MapRoute: MapRoute,

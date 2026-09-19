@@ -187,6 +187,13 @@ function TogetherPage() {
         </h1>
         <ResumeLink className="h-12 border-l border-ink" />
         <Link
+          to="/friends"
+          preload="intent"
+          className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 font-sans text-sm text-ink"
+        >
+          Friends
+        </Link>
+        <Link
           to="/profile"
           preload="intent"
           className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 font-sans text-sm text-ink"
