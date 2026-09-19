@@ -610,8 +610,8 @@ html.together-compose.together-kb .chat-slot {
 
 .place-chip-mark {
   display: block;
-  width: 1.05rem;
-  height: 0.72rem;
+  width: 1.2rem;
+  height: 0.82rem;
   flex-shrink: 0;
   fill: currentColor;
 }
