@@ -66,14 +66,14 @@ function InviteLanding() {
         <header className="flex shrink-0 items-stretch border-b border-ink">
           <Link
             to="/together"
-            className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
           >
             Together
           </Link>
         </header>
         <div className="flex min-h-0 flex-1 flex-col justify-end bg-blue p-5 text-paper sm:p-8">
-          <p className="font-sans text-xs tracking-wide opacity-80">Invite</p>
-          <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+          <p className="type-kicker opacity-80">Invite</p>
+          <p className="mt-2 type-title">
             A sitting
           </p>
         </div>
@@ -87,13 +87,13 @@ function InviteLanding() {
         <header className="flex shrink-0 items-stretch border-b border-ink">
           <Link
             to="/together"
-            className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
           >
             Together
           </Link>
         </header>
         <div className="flex min-h-0 flex-1 flex-col justify-end p-5 sm:p-8">
-          <p className="font-display text-3xl font-medium tracking-tight sm:text-4xl">
+          <p className="type-title">
             This invite
           </p>
           <p className="mt-3 font-serif text-lg text-ink/70">This invite would not come</p>
@@ -123,11 +123,11 @@ function InviteLanding() {
         <Link
           to="/together"
           search={{ join: club.inviteToken }}
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           Together
         </Link>
-        <h1 className="flex min-w-0 flex-1 items-center truncate px-4 font-display text-xl font-medium tracking-tight">
+        <h1 className="type-mark flex min-w-0 flex-1 items-center truncate px-4">
           {club.name}
         </h1>
       </header>
@@ -140,8 +140,8 @@ function InviteLanding() {
             fillInk(club.fill),
           )}
         >
-          <p className="font-sans text-xs tracking-wide opacity-80">You're invited</p>
-          <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+          <p className="type-kicker opacity-80">You're invited</p>
+          <p className="mt-2 type-title">
             {club.name}
           </p>
           {when ? (
@@ -157,13 +157,13 @@ function InviteLanding() {
               </>
             )}
           </p>
-          <p className="mt-4 break-all font-sans text-xs tracking-wide opacity-75">
+          <p className="mt-4 break-all type-kicker opacity-75">
             {clubInviteUrl(club.inviteToken)}
           </p>
         </div>
         {club.note ? (
           <div className="border-b border-ink px-5 py-6 sm:px-8">
-            <p className="font-display text-2xl font-medium tracking-tight">{club.note}</p>
+            <p className="type-lede">{club.note}</p>
           </div>
         ) : null}
         <Link

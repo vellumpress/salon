@@ -23,7 +23,7 @@ function ReaderPage() {
         <header className="flex shrink-0 items-stretch border-b border-ink">
           <Link
             to="/friends"
-            className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
           >
             Friends
           </Link>
@@ -40,11 +40,11 @@ function ReaderPage() {
       <header className="flex shrink-0 items-stretch border-b border-ink">
         <Link
           to="/friends"
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           Friends
         </Link>
-        <h1 className="flex min-w-0 flex-1 items-center truncate px-4 font-display text-xl font-medium tracking-tight">
+        <h1 className="type-mark flex min-w-0 flex-1 items-center truncate px-4">
           {formatHandle(reader.handle)}
         </h1>
         <button
@@ -60,10 +60,10 @@ function ReaderPage() {
       </header>
       <div className="min-h-0 flex-1 overflow-y-auto">
         <div className={cn("flex min-h-36 flex-col justify-end p-5 sm:p-8", fillClass(reader.fill), fillInk(reader.fill))}>
-          <p className="font-sans text-xs tracking-wide opacity-80">
+          <p className="type-kicker opacity-80">
             {formatHandle(reader.handle)} · {reader.city}
           </p>
-          <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">{reader.name}</p>
+          <p className="mt-2 type-title">{reader.name}</p>
         </div>
         <div className="border-b border-ink px-5 py-6 sm:px-8">
           <p className="font-serif text-lg text-ink/70">{reader.line}</p>
@@ -74,14 +74,14 @@ function ReaderPage() {
           className="flex items-center justify-between border-b border-ink px-5 py-5 sm:px-8"
         >
           <span>
-            <span className="block font-sans text-xs tracking-wide text-muted">Sitting</span>
-            <span className="mt-1 block font-display text-2xl font-medium tracking-tight">{reader.workTitle}</span>
+            <span className="block type-kicker text-muted">Sitting</span>
+            <span className="mt-1 block type-lede">{reader.workTitle}</span>
           </span>
           <span className="font-sans text-sm">Sit</span>
         </Link>
         <div className="border-b border-ink px-5 py-8 sm:px-8">
-          <p className="mb-3 font-sans text-xs tracking-wide text-muted">Kept</p>
-          <p className="font-display text-4xl font-medium italic tracking-tight">{reader.kept}</p>
+          <p className="mb-3 type-kicker text-muted">Kept</p>
+          <p className="type-title italic">{reader.kept}</p>
         </div>
         <div>
           {clubs.map((club) => (
@@ -92,8 +92,8 @@ function ReaderPage() {
               className="flex items-center justify-between border-b border-ink px-5 py-4 last:border-b-0 sm:px-8"
             >
               <span>
-                <span className="block font-sans text-xs tracking-wide text-muted">{club.place}</span>
-                <span className="mt-1 block font-display text-xl font-medium tracking-tight">{club.name}</span>
+                <span className="block type-kicker text-muted">{club.place}</span>
+                <span className="mt-1 block type-lede">{club.name}</span>
               </span>
               <span className={cn("size-2.5 shrink-0", fillClass(club.fill))} />
             </Link>

@@ -41,24 +41,24 @@ function DeskFrame({
       <header className="flex shrink-0 items-stretch border-b border-ink">
         <Link
           to="/"
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           Home
         </Link>
-        <h1 className="flex min-w-0 flex-1 items-center px-4 font-display text-xl font-medium tracking-tight">
+        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
           {title}
         </h1>
         {you ? (
           <>
             <Link
               to="/friends"
-              className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 font-sans text-sm text-ink"
+              className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
             >
               Friends
             </Link>
             <Link
               to="/profile"
-              className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 font-sans text-sm text-paper"
+              className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
             >
               You
             </Link>
@@ -171,8 +171,8 @@ function DeskBody() {
     return (
       <DeskFrame title="Desk" you>
         <div className="flex min-h-36 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
-          <p className="font-sans text-xs tracking-wide opacity-80">Staff</p>
-          <p className="mt-2 font-display text-3xl font-medium tracking-tight">The desk</p>
+          <p className="type-kicker opacity-80">Staff</p>
+          <p className="mt-2 type-title">The desk</p>
         </div>
       </DeskFrame>
     );
@@ -182,8 +182,8 @@ function DeskBody() {
     return (
       <DeskFrame title="Desk">
         <div className="flex min-h-48 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
-          <p className="font-sans text-xs tracking-wide opacity-80">Staff</p>
-          <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+          <p className="type-kicker opacity-80">Staff</p>
+          <p className="mt-2 type-title">
             The desk is for staff
           </p>
           <p className="mt-3 max-w-xl font-serif text-lg text-paper/80">
@@ -193,14 +193,14 @@ function DeskBody() {
         <div className="grid grid-cols-2 gap-px bg-ink">
           <Link
             to="/profile"
-            className="flex min-h-24 items-end bg-red p-5 font-display text-2xl font-medium tracking-tight text-paper"
+            className="flex min-h-24 items-end bg-red p-5 type-lede text-paper"
           >
             You
           </Link>
           <Link
             to="/login"
             search={{ door: "reader" }}
-            className="flex min-h-24 items-end bg-paper p-5 font-display text-2xl font-medium tracking-tight text-ink"
+            className="flex min-h-24 items-end bg-paper p-5 type-lede text-ink"
           >
             Sit
           </Link>
@@ -212,8 +212,8 @@ function DeskBody() {
   return (
     <DeskFrame title="Desk" you>
       <div className="flex min-h-36 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
-        <p className="font-sans text-xs tracking-wide opacity-80">Staff</p>
-        <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+        <p className="type-kicker opacity-80">Staff</p>
+        <p className="mt-2 type-title">
           The desk
         </p>
         <p className="mt-3 max-w-xl font-serif text-lg text-paper/80">
@@ -226,7 +226,7 @@ function DeskBody() {
       ) : null}
 
       <section>
-        <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+        <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
           Curated for you
         </p>
         {pins.length === 0 ? (
@@ -246,10 +246,10 @@ function DeskBody() {
                     fillInk(fill),
                   )}
                 >
-                  <span className="font-display text-lg font-medium tracking-tight">
+                  <span className="type-lede">
                     {work?.title ?? pin.workId}
                   </span>
-                  <span className="mt-0.5 font-sans text-xs tracking-wide opacity-80">
+                  <span className="mt-0.5 type-kicker opacity-80">
                     {work?.author ?? ""}
                   </span>
                 </span>
@@ -282,7 +282,7 @@ function DeskBody() {
           })
         )}
         <label className="flex items-stretch border-b border-ink">
-          <span className="flex shrink-0 items-center px-4 font-sans text-xs tracking-wide text-muted">
+          <span className="flex shrink-0 items-center px-4 type-kicker text-muted">
             Pin
           </span>
           <input
@@ -303,10 +303,10 @@ function DeskBody() {
                 className="flex w-full items-center justify-between border-b border-ink px-4 py-4 text-left disabled:opacity-40"
               >
                 <span className="min-w-0">
-                  <span className="block font-display text-lg font-medium tracking-tight">
+                  <span className="block type-lede">
                     {item.title}
                   </span>
-                  <span className="mt-0.5 block truncate font-sans text-xs tracking-wide text-muted">
+                  <span className="mt-0.5 block truncate type-kicker text-muted">
                     {item.author}
                   </span>
                 </span>
@@ -319,11 +319,11 @@ function DeskBody() {
       </section>
 
       <section>
-        <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+        <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
           Notices
         </p>
         <label className="flex items-stretch border-b border-ink">
-          <span className="flex w-24 shrink-0 items-center px-4 font-sans text-xs tracking-wide text-muted">
+          <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
             Title
           </span>
           <input
@@ -333,7 +333,7 @@ function DeskBody() {
           />
         </label>
         <label className="flex items-stretch border-b border-ink">
-          <span className="flex w-24 shrink-0 items-center px-4 font-sans text-xs tracking-wide text-muted">
+          <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
             Body
           </span>
           <input
@@ -353,7 +353,7 @@ function DeskBody() {
         {notices.map((notice) => (
           <div key={notice.id} className="flex items-stretch border-b border-ink">
             <span className="min-w-0 flex-1 px-4 py-4">
-              <span className="block font-display text-lg font-medium tracking-tight">
+              <span className="block type-lede">
                 {notice.title}
               </span>
               <span className="mt-1 block font-serif text-sm text-ink/70">{notice.body}</span>
@@ -379,16 +379,16 @@ function DeskBody() {
       </section>
 
       <section>
-        <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+        <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
           Who sits here
         </p>
         {people.map((person) => (
           <div key={person.userId} className="flex items-stretch border-b border-ink last:border-b-0">
             <span className="min-w-0 flex-1 px-4 py-4">
-              <span className="block font-display text-lg font-medium tracking-tight">
+              <span className="block type-lede">
                 {person.name || "Unnamed"}
               </span>
-              <span className="mt-0.5 block font-sans text-xs tracking-wide text-muted">
+              <span className="mt-0.5 block type-kicker text-muted">
                 {person.role === "staff" ? "Staff" : "Reader"}
               </span>
             </span>

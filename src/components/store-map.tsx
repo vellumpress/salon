@@ -63,15 +63,15 @@ export function ShopCard({
         onClick={onClick}
         className="flex w-full flex-col items-start px-4 pt-4 pb-2 text-left"
       >
-        <span className="font-display text-lg font-medium tracking-tight">{shop.name}</span>
-        <span className="mt-1 font-sans text-xs tracking-wide text-muted">{shop.neighborhood}</span>
+        <span className="type-lede">{shop.name}</span>
+        <span className="mt-1 type-kicker text-muted">{shop.neighborhood}</span>
         <span className="mt-0.5 font-serif text-sm">{shop.address}</span>
       </button>
       <a
         href={mapsUrl(shop)}
         target="_blank"
         rel="noreferrer"
-        className="inline-flex px-4 pb-4 font-sans text-xs tracking-wide underline decoration-ink/30 underline-offset-4"
+        className="inline-flex px-4 pb-4 type-kicker underline decoration-ink/30 underline-offset-4"
       >
         Directions
       </a>

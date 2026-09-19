@@ -6,7 +6,7 @@ import { APP_NAME, withBase } from "@/lib/site";
 import { attachVisualViewport } from "@/lib/vvh";
 import appCss from "../styles.css?url";
 const FONT_HREF =
-  "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap";
+  "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500&display=swap";
 
 function VisualViewport() {
   useEffect(() => attachVisualViewport(), []);

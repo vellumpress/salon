@@ -61,24 +61,24 @@ function ProfilePage() {
         <header className="flex shrink-0 items-stretch border-b border-ink">
           <Link
             to="/"
-            className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
           >
             Home
           </Link>
-          <h1 className="flex min-w-0 flex-1 items-center px-4 font-display text-xl font-medium tracking-tight">
+          <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
             You
           </h1>
           <ResumeLink className="h-12 border-l border-ink" />
           <Link
             to="/friends"
-            className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 font-sans text-sm text-ink"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
           >
             Friends
           </Link>
         </header>
         <div className="flex min-h-36 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
-          <p className="font-sans text-xs tracking-wide opacity-80">This sitting</p>
-          <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">You</p>
+          <p className="type-kicker opacity-80">This sitting</p>
+          <p className="mt-2 type-title">You</p>
         </div>
       </div>
     );
@@ -194,25 +194,25 @@ function ProfileBody({ user }: { user: AppUser | null }) {
       <header className="flex shrink-0 items-stretch border-b border-ink">
         <Link
           to="/"
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           Home
         </Link>
-        <h1 className="flex min-w-0 flex-1 items-center px-4 font-display text-xl font-medium tracking-tight">
+        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
           You
         </h1>
         <ResumeLink className="h-12 border-l border-ink" />
         <Link
           to="/friends"
           preload="intent"
-          className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 font-sans text-sm text-ink"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
         >
           Friends
         </Link>
         {me?.role === "staff" ? (
           <Link
             to="/desk"
-            className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 font-sans text-sm text-paper"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
           >
             Desk
           </Link>
@@ -221,7 +221,7 @@ function ProfileBody({ user }: { user: AppUser | null }) {
         {!user ? (
           <Link
             to="/login"
-            className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 font-sans text-sm text-paper"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
           >
             Log in
           </Link>
@@ -229,18 +229,18 @@ function ProfileBody({ user }: { user: AppUser | null }) {
       </header>
       <div className="min-h-0 flex-1 overflow-y-auto">
         <div className="flex min-h-36 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
-          <p className="font-sans text-xs tracking-wide opacity-80">This sitting</p>
-          <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+          <p className="type-kicker opacity-80">This sitting</p>
+          <p className="mt-2 type-title">
             {shownName}
           </p>
-          <p className="mt-3 max-w-xl font-serif text-lg text-paper/70">
+          <p className="type-pitch mt-2.5 max-w-xl text-paper/70">
             Timed rituals and live rooms. Sign in to keep your name and sitting length.
           </p>
         </div>
 
         {last ? (
           <section>
-            <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
               Resume
             </p>
             <Link
@@ -250,10 +250,10 @@ function ProfileBody({ user }: { user: AppUser | null }) {
               className="flex items-stretch border-b border-ink bg-forest text-paper"
             >
               <span className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5">
-                <span className="font-sans text-xs tracking-wide opacity-80">
+                <span className="type-kicker opacity-80">
                   {last.author}
                 </span>
-                <span className="mt-1 font-display text-2xl font-medium tracking-tight">
+                <span className="mt-1 type-lede">
                   {last.title}
                 </span>
               </span>
@@ -263,7 +263,7 @@ function ProfileBody({ user }: { user: AppUser | null }) {
         ) : null}
 
         <section>
-          <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+          <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
             Pulse
           </p>
           {!hydrated ? (
@@ -275,16 +275,16 @@ function ProfileBody({ user }: { user: AppUser | null }) {
             </div>
           ) : !reading.hasSignal ? (
             <div className="flex min-h-28 flex-col justify-end border-b border-ink bg-paper px-4 py-5 sm:min-h-32">
-              <span className="font-sans text-xs tracking-wide text-muted">Reading</span>
-              <span className="mt-1 font-display text-xl font-medium tracking-tight sm:text-2xl">
+              <span className="type-kicker text-muted">Reading</span>
+              <span className="mt-1 type-lede">
                 Sit once — minutes, pace, and form will gather here.
               </span>
             </div>
           ) : (
             <div className="grid grid-cols-2 gap-px bg-ink sm:grid-cols-4">
               <div className="flex min-h-28 flex-col justify-end bg-yellow p-4 text-ink sm:min-h-32 sm:p-5">
-                <span className="font-sans text-xs tracking-wide opacity-80">Today</span>
-                <span className="mt-1 font-serif text-3xl font-medium tracking-tight sm:text-4xl">
+                <span className="type-kicker opacity-80">Today</span>
+                <span className="mt-1 type-title">
                   {formatMinutes(reading.minutesToday)}
                 </span>
                 <span className="mt-1 font-sans text-xs opacity-70">
@@ -292,8 +292,8 @@ function ProfileBody({ user }: { user: AppUser | null }) {
                 </span>
               </div>
               <div className="flex min-h-28 flex-col justify-end bg-red p-4 text-paper sm:min-h-32 sm:p-5">
-                <span className="font-sans text-xs tracking-wide opacity-80">This week</span>
-                <span className="mt-1 font-serif text-3xl font-medium tracking-tight sm:text-4xl">
+                <span className="type-kicker opacity-80">This week</span>
+                <span className="mt-1 type-title">
                   {formatMinutes(reading.minutesWeek)}
                 </span>
                 <span className="mt-1 font-sans text-xs opacity-70">
@@ -301,15 +301,15 @@ function ProfileBody({ user }: { user: AppUser | null }) {
                 </span>
               </div>
               <div className="flex min-h-28 flex-col justify-end bg-blue p-4 text-paper sm:min-h-32 sm:p-5">
-                <span className="font-sans text-xs tracking-wide opacity-80">Pace</span>
-                <span className="mt-1 font-display text-2xl font-medium tracking-tight sm:text-3xl">
+                <span className="type-kicker opacity-80">Pace</span>
+                <span className="mt-1 type-lede">
                   {reading.pace.label}
                 </span>
                 <span className="mt-1 font-sans text-xs opacity-70">{reading.pace.detail}</span>
               </div>
               <div className="flex min-h-28 flex-col justify-end bg-forest p-4 text-paper sm:min-h-32 sm:p-5">
-                <span className="font-sans text-xs tracking-wide opacity-80">Streak</span>
-                <span className="mt-1 font-serif text-3xl font-medium tracking-tight sm:text-4xl">
+                <span className="type-kicker opacity-80">Streak</span>
+                <span className="mt-1 type-title">
                   {reading.streak}
                 </span>
                 <span className="mt-1 font-sans text-xs opacity-70">
@@ -317,8 +317,8 @@ function ProfileBody({ user }: { user: AppUser | null }) {
                 </span>
               </div>
               <div className="flex min-h-28 flex-col justify-end bg-paper p-4 text-ink sm:min-h-32 sm:p-5 sm:col-span-2">
-                <span className="font-sans text-xs tracking-wide opacity-80">Resonating</span>
-                <span className="mt-1 font-display text-2xl font-medium tracking-tight sm:text-3xl">
+                <span className="type-kicker opacity-80">Resonating</span>
+                <span className="mt-1 type-lede">
                   {reading.forms[0]?.label ?? "—"}
                 </span>
                 <span className="mt-1 font-sans text-xs opacity-70">
@@ -333,8 +333,8 @@ function ProfileBody({ user }: { user: AppUser | null }) {
                 </span>
               </div>
               <div className="flex min-h-28 flex-col justify-end bg-ink p-4 text-paper sm:min-h-32 sm:p-5 sm:col-span-2">
-                <span className="font-sans text-xs tracking-wide opacity-80">Where from</span>
-                <span className="mt-1 font-display text-xl font-medium tracking-tight sm:text-2xl">
+                <span className="type-kicker opacity-80">Where from</span>
+                <span className="mt-1 type-lede">
                   {reading.origins.length
                     ? reading.origins.map((o) => o.country).join(" · ")
                     : "—"}
@@ -365,13 +365,13 @@ function ProfileBody({ user }: { user: AppUser | null }) {
         />
 
         <section>
-          <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+          <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
             For now
           </p>
           <div className="grid grid-cols-1 gap-px bg-ink sm:grid-cols-2">
             <div className="flex min-h-28 flex-col justify-end bg-yellow p-4 text-ink sm:min-h-32 sm:p-5">
-              <span className="font-sans text-xs tracking-wide opacity-80">{prompt.label}</span>
-              <span className="mt-1 font-display text-xl font-medium tracking-tight sm:text-2xl">
+              <span className="type-kicker opacity-80">{prompt.label}</span>
+              <span className="mt-1 type-lede">
                 {prompt.line}
               </span>
             </div>
@@ -381,10 +381,10 @@ function ProfileBody({ user }: { user: AppUser | null }) {
                 params={{ workId: prompt.work.id }}
                 className="flex min-h-28 flex-col justify-end bg-blue p-4 text-paper sm:min-h-32 sm:p-5"
               >
-                <span className="font-sans text-xs tracking-wide opacity-80">
+                <span className="type-kicker opacity-80">
                   {prompt.work.author}
                 </span>
-                <span className="mt-1 font-display text-xl font-medium tracking-tight sm:text-2xl">
+                <span className="mt-1 type-lede">
                   {prompt.work.title}
                 </span>
                 <span className="mt-2 font-sans text-sm opacity-80">Sit</span>
@@ -394,8 +394,8 @@ function ProfileBody({ user }: { user: AppUser | null }) {
                 to="/rituals"
                 className="flex min-h-28 flex-col justify-end bg-blue p-4 text-paper sm:min-h-32 sm:p-5"
               >
-                <span className="font-sans text-xs tracking-wide opacity-80">Rituals</span>
-                <span className="mt-1 font-display text-xl font-medium tracking-tight sm:text-2xl">
+                <span className="type-kicker opacity-80">Rituals</span>
+                <span className="mt-1 type-lede">
                   Open a timed sit
                 </span>
               </Link>
@@ -404,7 +404,7 @@ function ProfileBody({ user }: { user: AppUser | null }) {
         </section>
 
         <section>
-          <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+          <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
             Clubs
           </p>
           {mine.length === 0 ? (
@@ -413,7 +413,7 @@ function ProfileBody({ user }: { user: AppUser | null }) {
               className="flex items-center justify-between border-b border-ink px-4 py-5"
             >
               <span>
-                <span className="block font-display text-xl font-medium tracking-tight">
+                <span className="block type-lede">
                   No rooms yet
                 </span>
                 <span className="mt-1 block font-serif text-sm text-ink/70">
@@ -437,8 +437,8 @@ function ProfileBody({ user }: { user: AppUser | null }) {
                   params={{ clubId: club.id }}
                   className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5"
                 >
-                  <span className="font-sans text-xs tracking-wide opacity-80">{club.place}</span>
-                  <span className="mt-1 font-display text-2xl font-medium tracking-tight">
+                  <span className="type-kicker opacity-80">{club.place}</span>
+                  <span className="mt-1 type-lede">
                     {club.name}
                   </span>
                 </Link>
@@ -462,11 +462,11 @@ function ProfileBody({ user }: { user: AppUser | null }) {
 
         {user ? (
           <section>
-            <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
               Settings
             </p>
             <label className="flex items-stretch border-b border-ink">
-              <span className="flex w-24 shrink-0 items-center px-4 font-sans text-xs tracking-wide text-muted">
+              <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
                 Name
               </span>
               <input
@@ -475,7 +475,7 @@ function ProfileBody({ user }: { user: AppUser | null }) {
                 className="h-12 min-w-0 flex-1 border-0 bg-transparent font-serif text-xl text-ink focus-visible:outline-none"
               />
             </label>
-            <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
               A sitting
             </p>
             <div className="grid grid-cols-3 gap-px bg-ink sm:grid-cols-6">
@@ -521,7 +521,7 @@ function ProfileBody({ user }: { user: AppUser | null }) {
           </section>
         ) : (
           <section>
-            <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
               Account
             </p>
             <Link
@@ -529,7 +529,7 @@ function ProfileBody({ user }: { user: AppUser | null }) {
               className="flex items-center justify-between border-b border-ink px-4 py-5"
             >
               <span>
-                <span className="block font-display text-xl font-medium tracking-tight">
+                <span className="block type-lede">
                   Log in to sync
                 </span>
                 <span className="mt-1 block font-serif text-sm text-ink/70">

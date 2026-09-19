@@ -135,18 +135,18 @@ function CuratorPage() {
       <header className="relative z-20 flex shrink-0 items-stretch border-b border-ink">
         <Link
           to="/"
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           Home
         </Link>
-        <span className="flex min-w-0 flex-1 items-center bg-paper px-4 font-sans text-xs tracking-wide text-ink">
+        <span className="flex min-w-0 flex-1 items-center bg-paper px-4 type-kicker text-ink">
           Curator
         </span>
         {from ? (
           <Link
             to="/read/$workId"
             params={{ workId: from }}
-            className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 font-sans text-sm text-ink"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
           >
             Back
           </Link>
@@ -203,7 +203,7 @@ function CuratorPage() {
                 {turn.text}
               </p>
             ))}
-            {busy ? <p className="font-sans text-xs tracking-wide text-muted">Listening.</p> : null}
+            {busy ? <p className="type-kicker text-muted">Listening.</p> : null}
             {error ? <p className="font-sans text-sm text-red">{error}</p> : null}
           </div>
         )}

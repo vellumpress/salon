@@ -37,14 +37,14 @@ function MapPage() {
       <header className="flex shrink-0 items-stretch border-b border-ink">
         <Link
           to="/"
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           Home
         </Link>
-        <h1 className="flex min-w-0 flex-1 items-center px-4 font-display text-xl font-medium tracking-tight">
+        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
           Map
         </h1>
-        <label className="inline-flex h-12 shrink-0 items-center gap-2 border-l border-ink px-3 font-sans text-xs tracking-wide">
+        <label className="inline-flex h-12 shrink-0 items-center gap-2 border-l border-ink px-3 type-kicker">
           <input
             type="checkbox"
             checked={onlyReadable}
@@ -66,7 +66,7 @@ function MapPage() {
         </div>
         <aside className="min-h-0 flex-1 overflow-y-auto border-t border-ink md:h-full md:w-[22rem] md:flex-none md:border-t-0 md:border-l">
           <div className="border-b border-ink px-4 py-3">
-            <p className="font-sans text-xs tracking-wide text-muted">
+            <p className="type-kicker text-muted">
               {works.length} titles · by literary geography
             </p>
             <div className="mt-2 flex flex-wrap gap-1.5">
@@ -94,7 +94,7 @@ function MapPage() {
               <p className="font-sans text-[0.65rem] uppercase tracking-[0.16em] text-muted">
                 {active.place}
               </p>
-              <p className="mt-1 font-display text-xl font-medium tracking-tight leading-tight">
+              <p className="mt-1 type-lede">
                 {active.title}
               </p>
               <p className="mt-1 font-serif text-sm text-muted">
@@ -114,7 +114,7 @@ function MapPage() {
                   Read
                 </Link>
               ) : (
-                <p className="mt-3 font-sans text-xs tracking-wide text-muted">
+                <p className="mt-3 type-kicker text-muted">
                   On the shelf — full text not bound yet
                 </p>
               )}
@@ -132,7 +132,7 @@ function MapPage() {
                 className={`flex w-full flex-col items-start border-b border-ink px-4 py-3 text-left ${work.id === active?.id ? "bg-paper-deep" : "bg-paper"}`}
               >
                 <span className="font-serif text-base leading-snug">{work.title}</span>
-                <span className="mt-0.5 font-sans text-xs tracking-wide text-muted">
+                <span className="mt-0.5 type-kicker text-muted">
                   {work.author}
                   <span aria-hidden="true"> · </span>
                   {work.place}

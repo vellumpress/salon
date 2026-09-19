@@ -80,14 +80,14 @@ function ReadPage() {
         <header className="flex shrink-0 items-stretch border-b border-ink">
           <Link
             to="/"
-            className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
           >
             Home
           </Link>
         </header>
         <div className="flex min-h-0 flex-1 flex-col justify-end p-5 sm:p-8">
-          <p className="font-sans text-xs tracking-wide text-muted">{meta?.author ?? ""}</p>
-          <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+          <p className="type-kicker text-muted">{meta?.author ?? ""}</p>
+          <p className="mt-2 type-title">
             {meta?.title ?? "Opening"}
           </p>
         </div>
@@ -101,14 +101,14 @@ function ReadPage() {
         <header className="flex shrink-0 items-stretch border-b border-ink">
           <Link
             to="/"
-            className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
           >
             Home
           </Link>
         </header>
         <div className="flex min-h-0 flex-1 flex-col justify-end p-5 sm:p-8">
-          <p className="font-sans text-xs tracking-wide text-muted">{meta?.author ?? ""}</p>
-          <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+          <p className="type-kicker text-muted">{meta?.author ?? ""}</p>
+          <p className="mt-2 type-title">
             {meta?.title ?? "This sitting"}
           </p>
           <p className="mt-3 font-serif text-lg text-ink/70">This text would not come.</p>

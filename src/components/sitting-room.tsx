@@ -341,7 +341,7 @@ export function TogetherShell({
     <>
       <header className="relative z-50 flex h-12 shrink-0 items-stretch overflow-hidden border-b border-ink">
         <HoldLeave progress={lock.hold} onStart={lock.startHold} onEnd={lock.clearHold} />
-        <p className="flex min-w-0 flex-1 items-center truncate bg-paper px-3 font-sans text-xs tracking-wide text-ink">
+        <p className="flex min-w-0 flex-1 items-center truncate bg-paper px-3 type-kicker text-ink">
           {place}
         </p>
         <div className="flex shrink-0 items-center gap-1.5 bg-paper px-3">
@@ -364,7 +364,7 @@ export function TogetherShell({
               ))
             : null}
           {status ? (
-            <span className="font-sans text-xs tracking-wide text-muted">{status}</span>
+            <span className="type-kicker text-muted">{status}</span>
           ) : null}
         </div>
       </header>

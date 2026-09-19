@@ -11,7 +11,7 @@ export function CollectionHeader({
   linked?: boolean;
 }) {
   const className =
-    "flex items-center justify-between border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted";
+    "flex items-center justify-between border-b border-ink px-4 py-3 type-kicker text-muted";
   if (linked) {
     return (
       <Link to="/profile/collection" hash={hash} className={className}>

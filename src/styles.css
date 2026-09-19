@@ -23,7 +23,31 @@
      The old 3.25rem "reading-room" pad stacked on --vvh and left a dead strip. */
   --spacing-chrome: env(safe-area-inset-bottom, 0px);
   --spacing-rule: 1px;
-  --tracking-mark: 0.18em;
+  --tracking-mark: 0.14em;
+  --tracking-display: -0.03em;
+  --tracking-kicker: 0.08em;
+  --tracking-chrome: 0.055em;
+  --tracking-pitch: 0.008em;
+  /* Door / Mondrian display — literary, not shouty. Phone-first clamp. */
+  --text-display: clamp(1.42rem, 0.95rem + 2vw, 2.15rem);
+  --text-display--line-height: 1.12;
+  /* Page heroes that used to sit at text-3xl / 4xl */
+  --text-title: clamp(1.35rem, 1rem + 1.45vw, 1.85rem);
+  --text-title--line-height: 1.16;
+  /* Mid display (was text-2xl) */
+  --text-lede: clamp(1.18rem, 0.98rem + 0.9vw, 1.5rem);
+  --text-lede--line-height: 1.2;
+  --text-card: 1rem;
+  --text-card--line-height: 1.22;
+  /* Wordmark in the 3rem mark bar */
+  --text-mark: 1.0625rem;
+  --text-mark--line-height: 1.2;
+  --text-kicker: 0.625rem;
+  --text-kicker--line-height: 1.35;
+  --text-chrome: 0.6875rem;
+  --text-chrome--line-height: 1.25;
+  --text-pitch: 0.875rem;
+  --text-pitch--line-height: 1.5;
   --text-breath: clamp(1.2rem, 0.9rem + 1.5vw, 1.6rem);
   --text-breath--line-height: 1.45;
   --text-lookback: 1.02rem;
@@ -39,6 +63,7 @@
     background: var(--color-paper);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
   }
   html,
   body,
@@ -55,6 +80,8 @@
     background: var(--color-paper);
     color: var(--color-ink);
     font-family: var(--font-sans);
+    font-weight: 400;
+    letter-spacing: 0.012em;
   }
   html.sitting,
   html.sitting body {
@@ -299,12 +326,72 @@ html.together-compose.together-kb .chat-slot {
   color: var(--color-paper);
 }
 
+.type-mark {
+  font-family: var(--font-display);
+  font-size: var(--text-mark);
+  font-weight: 400;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--text-mark--line-height);
+}
+
+.type-title {
+  font-family: var(--font-display);
+  font-size: var(--text-title);
+  font-weight: 400;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--text-title--line-height);
+  text-wrap: balance;
+}
+
+.type-lede {
+  font-family: var(--font-display);
+  font-size: var(--text-lede);
+  font-weight: 400;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--text-lede--line-height);
+  text-wrap: balance;
+}
+
+.type-card {
+  font-family: var(--font-display);
+  font-size: var(--text-card);
+  font-weight: 400;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--text-card--line-height);
+  text-wrap: balance;
+}
+
+.type-kicker {
+  font-family: var(--font-sans);
+  font-size: var(--text-kicker);
+  font-weight: 400;
+  letter-spacing: var(--tracking-kicker);
+  line-height: var(--text-kicker--line-height);
+}
+
+.type-chrome {
+  font-family: var(--font-sans);
+  font-size: var(--text-chrome);
+  font-weight: 400;
+  letter-spacing: var(--tracking-chrome);
+  line-height: var(--text-chrome--line-height);
+}
+
+.type-pitch {
+  font-family: var(--font-serif);
+  font-size: var(--text-pitch);
+  font-weight: 400;
+  letter-spacing: var(--tracking-pitch);
+  line-height: var(--text-pitch--line-height);
+  text-wrap: pretty;
+}
+
 .together-title {
   font-family: var(--font-display);
-  font-size: clamp(1.65rem, 1rem + 2.8vw, 3rem);
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.05;
+  font-size: var(--text-display);
+  font-weight: 400;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--text-display--line-height);
 }
 
 /* Three-pillar front door (Rituals · Curator · Sit with someone) */
@@ -428,20 +515,20 @@ html.together-compose.together-kb .chat-slot {
 .works-title {
   overflow: hidden;
   font-family: var(--font-display);
-  font-size: 1.05rem;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: var(--tracking-display);
+  line-height: 1.22;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .works-author {
-  margin-top: 0.2rem;
+  margin-top: 0.15rem;
   overflow: hidden;
   font-family: var(--font-sans);
-  font-size: 0.7rem;
-  letter-spacing: 0.04em;
+  font-size: var(--text-kicker);
+  letter-spacing: var(--tracking-kicker);
   color: var(--color-muted);
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -460,14 +547,14 @@ html.together-compose.together-kb .chat-slot {
 
 .pillar-title {
   font-family: var(--font-display);
-  font-size: clamp(1.65rem, 1rem + 2.8vw, 3rem);
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.05;
+  font-size: var(--text-display);
+  font-weight: 400;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--text-display--line-height);
 }
 
 .pillar-pitch {
-  opacity: 0.92;
+  opacity: 0.88;
 }
 
 .cell-wide,
@@ -509,8 +596,9 @@ html.together-compose.together-kb .chat-slot {
 .more-kicker {
   flex-shrink: 0;
   font-family: var(--font-sans);
-  font-size: 0.65rem;
-  letter-spacing: 0.14em;
+  font-size: var(--text-kicker);
+  font-weight: 400;
+  letter-spacing: var(--tracking-kicker);
   text-transform: uppercase;
   color: var(--color-muted);
 }
@@ -534,7 +622,9 @@ html.together-compose.together-kb .chat-slot {
   border-left: 1px solid color-mix(in srgb, var(--color-ink) 14%, transparent);
   padding: 0.45rem 0.85rem;
   font-family: var(--font-sans);
-  font-size: 0.8125rem;
+  font-size: var(--text-chrome);
+  font-weight: 400;
+  letter-spacing: var(--tracking-chrome);
   color: var(--color-ink);
   text-decoration: none;
 }
@@ -563,7 +653,9 @@ html.together-compose.together-kb .chat-slot {
   background: transparent;
   padding: 0.45rem 0.85rem;
   font-family: var(--font-sans);
-  font-size: 0.8125rem;
+  font-size: var(--text-chrome);
+  font-weight: 400;
+  letter-spacing: var(--tracking-chrome);
   color: var(--color-ink);
   cursor: pointer;
   touch-action: manipulation;
@@ -702,8 +794,15 @@ html.together-compose.together-kb .chat-slot {
     height: auto;
     max-height: none;
   }
-  .pillar-title {
-    font-size: clamp(1.75rem, 1rem + 1.6vw, 2.75rem);
+  .type-mark {
+    font-size: 1.1875rem;
+  }
+  .type-card {
+    font-size: 1.125rem;
+  }
+  .pillar-title,
+  .together-title {
+    font-size: clamp(1.5rem, 1rem + 1.15vw, 2.05rem);
   }
   .cell-shuffle {
     grid-column: 7 / 13;
@@ -746,7 +845,7 @@ html.together-compose.together-kb .chat-slot {
     min-height: 13rem;
   }
   .together-title {
-    font-size: clamp(2rem, 1.1rem + 2vw, 3.25rem);
+    font-size: clamp(1.5rem, 1rem + 1.15vw, 2.05rem);
   }
 }
 
@@ -789,6 +888,7 @@ html.together-compose.together-kb .chat-slot {
   font-family: var(--font-serif);
   font-size: var(--text-breath);
   line-height: var(--text-breath--line-height);
+  letter-spacing: 0;
   overflow-wrap: break-word;
   word-break: normal;
   hyphens: manual;
@@ -1020,7 +1120,9 @@ html.together-compose.together-kb .chat-slot {
   color-scheme: light;
   opacity: 1;
   font-family: var(--font-sans);
-  font-size: 0.875rem;
+  font-size: var(--text-chrome);
+  font-weight: 400;
+  letter-spacing: var(--tracking-chrome);
 }
 
 .tracking-mark {
@@ -1055,10 +1157,10 @@ html.together-compose.together-kb .chat-slot {
 .veil-title {
   overflow-wrap: break-word;
   font-family: var(--font-display);
-  font-size: clamp(1.35rem, 0.7rem + 4.2vw, 2.65rem);
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.12;
+  font-size: clamp(1.25rem, 0.75rem + 3.2vw, 2.15rem);
+  font-weight: 400;
+  letter-spacing: var(--tracking-display);
+  line-height: 1.14;
   text-wrap: balance;
 }
 
@@ -1066,8 +1168,9 @@ html.together-compose.together-kb .chat-slot {
   max-width: 34rem;
   margin-top: 0.75rem;
   font-family: var(--font-serif);
-  font-size: clamp(0.95rem, 0.85rem + 0.4vw, 1.125rem);
-  line-height: 1.4;
+  font-size: clamp(0.9rem, 0.82rem + 0.35vw, 1.05rem);
+  line-height: 1.45;
+  letter-spacing: var(--tracking-pitch);
   color: color-mix(in srgb, var(--color-ink) 70%, transparent);
 }
 
@@ -1104,7 +1207,9 @@ html.together-compose.together-kb .chat-slot {
   justify-content: center;
   padding-bottom: env(safe-area-inset-bottom, 0px);
   font-family: var(--font-sans);
-  font-size: 0.875rem;
+  font-size: var(--text-chrome);
+  font-weight: 400;
+  letter-spacing: var(--tracking-chrome);
 }
 
 .veil-action-full {
@@ -1118,7 +1223,9 @@ html.together-compose.together-kb .chat-slot {
   background: var(--color-ink);
   color: var(--color-paper);
   font-family: var(--font-sans);
-  font-size: 0.875rem;
+  font-size: var(--text-chrome);
+  font-weight: 400;
+  letter-spacing: var(--tracking-chrome);
 }
 
 .veil-rooms {
@@ -1273,7 +1380,9 @@ html.together-compose.together-kb .chat-slot {
   justify-content: center;
   background: var(--color-paper, #f4efe6);
   font-family: var(--font-sans, system-ui);
-  font-size: 0.875rem;
+  font-size: var(--text-chrome);
+  font-weight: 400;
+  letter-spacing: var(--tracking-chrome);
   color: var(--color-ink, #1a1a1a);
   touch-action: manipulation;
 }

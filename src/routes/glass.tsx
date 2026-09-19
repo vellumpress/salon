@@ -165,11 +165,11 @@ function GlassPage() {
           <button
             type="button"
             onClick={leave}
-            className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
           >
             Home
           </button>
-          <h1 className="flex min-w-0 flex-1 items-center px-4 font-display text-xl font-medium tracking-tight">
+          <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
             Hourglass
           </h1>
         </header>
@@ -208,7 +208,7 @@ function GlassPage() {
           <button
             type="button"
             onClick={leave}
-            className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
           >
             Home
           </button>

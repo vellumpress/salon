@@ -52,8 +52,8 @@ function ClubPage() {
     return (
       <ClubFrame title="Club">
         <div className="flex min-h-0 flex-1 flex-col justify-end p-5 sm:p-8">
-          <p className="font-sans text-xs tracking-wide text-muted">Opening</p>
-          <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+          <p className="type-kicker text-muted">Opening</p>
+          <p className="mt-2 type-title">
             The room
           </p>
         </div>
@@ -67,7 +67,7 @@ function ClubPage() {
   return (
     <ClubFrame title="Together">
       <div className="flex min-h-0 flex-1 flex-col justify-end p-5 sm:p-8">
-        <p className="font-display text-3xl font-medium tracking-tight sm:text-4xl">
+        <p className="type-title">
           This club
         </p>
         <p className="mt-3 font-serif text-lg text-ink/70">This club would not come</p>
@@ -90,11 +90,11 @@ function ClubFrame({
       <header className="flex shrink-0 items-stretch border-b border-ink">
         <Link
           to="/together"
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           Together
         </Link>
-        <h1 className="flex min-w-0 flex-1 items-center truncate px-4 font-display text-xl font-medium tracking-tight">
+        <h1 className="type-mark flex min-w-0 flex-1 items-center truncate px-4">
           {title}
         </h1>
         {action}
@@ -137,8 +137,8 @@ function HouseClub({ clubId }: { clubId: string }) {
       }
     >
       <div className={cn("flex min-h-36 flex-col justify-end p-5 sm:p-8", fillClass(club.fill), fillInk(club.fill))}>
-        <p className="font-sans text-xs tracking-wide opacity-80">{club.place}</p>
-        <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">{club.workTitle}</p>
+        <p className="type-kicker opacity-80">{club.place}</p>
+        <p className="mt-2 type-title">{club.workTitle}</p>
         <p className="mt-2 font-sans text-sm opacity-80">{club.author}</p>
       </div>
       <Link
@@ -153,14 +153,14 @@ function HouseClub({ clubId }: { clubId: string }) {
         Sit together
       </Link>
       <div className="border-b border-ink px-5 py-6 sm:px-8">
-        <p className="font-display text-2xl font-medium tracking-tight sm:text-3xl">{club.prompt}</p>
+        <p className="type-lede">{club.prompt}</p>
       </div>
       <div className="border-b border-ink px-5 py-5 sm:px-8">
-        <p className="mb-4 font-sans text-xs tracking-wide text-muted">Members</p>
+        <p className="mb-4 type-kicker text-muted">Members</p>
         {isIn ? (
           <div className="flex items-center gap-3 py-2">
             <span className="size-2.5 shrink-0 bg-ink" />
-            <span className="font-display text-lg font-medium tracking-tight">You</span>
+            <span className="type-lede">You</span>
           </div>
         ) : null}
         {members.map((reader) => {
@@ -175,8 +175,8 @@ function HouseClub({ clubId }: { clubId: string }) {
               >
                 <span className={cn("size-2.5 shrink-0", fillClass(reader.fill))} />
                 <span className="min-w-0">
-                  <span className="block font-display text-lg font-medium tracking-tight">{reader.name}</span>
-                  <span className="font-sans text-xs tracking-wide text-muted">{reader.city}</span>
+                  <span className="block type-lede">{reader.name}</span>
+                  <span className="type-kicker text-muted">{reader.city}</span>
                 </span>
               </Link>
               <button
@@ -194,17 +194,17 @@ function HouseClub({ clubId }: { clubId: string }) {
         })}
       </div>
       <div className="px-5 py-8 sm:px-8">
-        <p className="mb-6 font-sans text-xs tracking-wide text-muted">Kept</p>
+        <p className="mb-6 type-kicker text-muted">Kept</p>
         <div className="flex flex-col gap-5">
           {isIn ? (
-            <p className="font-display text-3xl font-medium italic tracking-tight text-ink/40">you</p>
+            <p className="type-title italic text-ink/40">you</p>
           ) : null}
           {club.traces.map((trace) => {
             const who = getReader(trace.readerId);
             return (
               <div key={`${trace.readerId}-${trace.word}`}>
-                <p className="font-display text-3xl font-medium italic tracking-tight sm:text-4xl">{trace.word}</p>
-                <p className="mt-1 font-sans text-xs tracking-wide text-muted">{who?.name}</p>
+                <p className="type-title italic">{trace.word}</p>
+                <p className="mt-1 type-kicker text-muted">{who?.name}</p>
               </div>
             );
           })}
@@ -293,8 +293,8 @@ function LiveClub({
       }
     >
       <div className={cn("flex min-h-36 flex-col justify-end p-5 sm:p-8", fillClass(club.fill), fillInk(club.fill))}>
-        <p className="font-sans text-xs tracking-wide opacity-80">{when || "A sitting"}</p>
-        <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+        <p className="type-kicker opacity-80">{when || "A sitting"}</p>
+        <p className="mt-2 type-title">
           {club.serializeLabel ?? club.workTitle}
         </p>
         <p className="mt-2 font-sans text-sm opacity-80">
@@ -319,16 +319,16 @@ function LiveClub({
       </button>
       {club.note ? (
         <div className="border-b border-ink px-5 py-6 sm:px-8">
-          <p className="font-display text-2xl font-medium tracking-tight sm:text-3xl">{club.note}</p>
+          <p className="type-lede">{club.note}</p>
         </div>
       ) : null}
       <div className="border-b border-ink px-5 py-5 sm:px-8">
-        <p className="mb-4 font-sans text-xs tracking-wide text-muted">Sittings</p>
+        <p className="mb-4 type-kicker text-muted">Sittings</p>
         {club.sessions.length === 0 ? (
           <p className="font-serif text-lg text-ink/70">No hour named yet.</p>
         ) : (
           club.sessions.map((session) => (
-            <p key={session.id} className="py-2 font-display text-xl font-medium tracking-tight">
+            <p key={session.id} className="py-2 type-lede">
               {formatClubWhenLong(session.startsAt)}
               {session.label ? (
                 <span className="mt-1 block font-sans text-sm font-normal tracking-wide opacity-70">
@@ -355,7 +355,7 @@ function LiveClub({
               ) : null}
               <div className="grid grid-cols-2 border-t border-ink">
                 <label className="flex min-w-0 flex-col border-r border-ink">
-                  <span className="px-4 pt-3 font-sans text-xs tracking-wide text-muted">Day</span>
+                  <span className="px-4 pt-3 type-kicker text-muted">Day</span>
                   <input
                     type="date"
                     value={date}
@@ -364,7 +364,7 @@ function LiveClub({
                   />
                 </label>
                 <label className="flex min-w-0 flex-col">
-                  <span className="px-4 pt-3 font-sans text-xs tracking-wide text-muted">Time · ET</span>
+                  <span className="px-4 pt-3 type-kicker text-muted">Time · ET</span>
                   <input
                     type="time"
                     value={time}
@@ -392,8 +392,8 @@ function LiveClub({
           fillInk(club.fill),
         )}
       >
-        <p className="font-sans text-xs tracking-wide opacity-80">The door</p>
-        <p className="mt-2 font-display text-2xl font-medium tracking-tight sm:text-3xl">
+        <p className="type-kicker opacity-80">The door</p>
+        <p className="mt-2 type-lede">
           Walk in when the hour comes. Chat is already on the page.
         </p>
       </div>

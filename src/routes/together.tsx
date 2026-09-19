@@ -46,9 +46,9 @@ export const Route = createFileRoute("/together")({
   component: TogetherPage,
   errorComponent: ({ error }) => (
     <div className="frame-screen bg-paper p-8 text-ink">
-      <p className="font-sans text-xs tracking-wide opacity-70">Read together</p>
-      <p className="mt-2 font-display text-3xl font-medium tracking-tight">The room is dark on Pages.</p>
-      <p className="mt-3 max-w-md font-serif text-lg text-ink/70">
+      <p className="type-kicker opacity-70">Read together</p>
+      <p className="type-title mt-2">The room is dark on Pages.</p>
+      <p className="type-pitch mt-2.5 max-w-md text-ink/70">
         Clubs and live sitting need a hosted backend. {error.message}
       </p>
     </div>
@@ -178,25 +178,25 @@ function TogetherPage() {
       <header className="flex shrink-0 items-stretch border-b border-ink">
         <Link
           to="/"
-          className="inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           Home
         </Link>
-        <h1 className="flex min-w-0 flex-1 items-center px-4 font-display text-xl font-medium tracking-tight">
+        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
           Read together
         </h1>
         <ResumeLink className="h-12 border-l border-ink" />
         <Link
           to="/friends"
           preload="intent"
-          className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 font-sans text-sm text-ink"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
         >
           Friends
         </Link>
         <Link
           to="/profile"
           preload="intent"
-          className="inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 font-sans text-sm text-ink"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
         >
           You
         </Link>
@@ -222,16 +222,16 @@ function TogetherPage() {
       ) : (
         <div className="min-h-0 flex-1 overflow-y-auto">
           <div className="flex min-h-40 flex-col justify-end bg-red p-5 text-paper sm:min-h-48 sm:p-8">
-            <p className="font-sans text-xs tracking-wide opacity-80">Friends</p>
-            <p className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+            <p className="type-kicker opacity-80">Friends</p>
+            <p className="type-title mt-2">
               Sit the same page.
             </p>
-            <p className="mt-3 max-w-xl font-serif text-lg leading-snug text-paper/85">
+            <p className="type-pitch mt-2.5 max-w-xl text-paper/85">
               Share a link. Name a night. The room holds both of you — two phones, one hour,
               live chat on the page.
             </p>
             {!liveBackendEnabled ? (
-              <p className="mt-3 max-w-xl font-serif text-base leading-snug text-paper/70">
+              <p className="type-pitch mt-2.5 max-w-xl text-paper/70">
                 This Pages build has no live backend. Clubs, invites, and RTC sitting stay
                 local until auth and `/api/rtc` are hosted.
               </p>
@@ -263,8 +263,8 @@ function TogetherPage() {
 
           {joinMissing ? (
             <div className="border-b border-ink bg-paper px-5 py-6 sm:px-8">
-              <p className="font-sans text-xs tracking-wide text-muted">Invite</p>
-              <p className="mt-2 font-display text-2xl font-medium tracking-tight">
+              <p className="type-kicker text-muted">Invite</p>
+              <p className="mt-2 type-lede">
                 This invite would not come
               </p>
             </div>
@@ -276,8 +276,8 @@ function TogetherPage() {
 
           <section>
             <div className="border-b border-ink bg-forest px-5 py-6 text-paper sm:px-8">
-              <p className="font-sans text-xs tracking-wide opacity-80">Upcoming</p>
-              <p className="mt-2 font-display text-2xl font-medium tracking-tight sm:text-3xl">
+              <p className="type-kicker opacity-80">Upcoming</p>
+              <p className="mt-2 type-lede">
                 Day and time, already named.
               </p>
               <p className="mt-2 max-w-xl font-serif text-base leading-snug text-paper/85 sm:text-lg">
@@ -314,7 +314,7 @@ function TogetherPage() {
 
           {liveRooms.length > 0 || mineStatic.length > 0 ? (
             <section>
-              <p className="border-b border-ink px-4 py-3 font-sans text-xs tracking-wide text-muted">
+              <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
                 Your rooms
               </p>
               {liveRooms.map((club) => (
@@ -357,8 +357,8 @@ function TogetherPage() {
           ) : null}
 
           <div className="border-b border-ink bg-yellow px-5 py-6 text-ink sm:px-8">
-            <p className="font-sans text-xs tracking-wide opacity-70">House clubs</p>
-            <p className="mt-2 font-display text-2xl font-medium tracking-tight sm:text-3xl">
+            <p className="type-kicker opacity-70">House clubs</p>
+            <p className="mt-2 type-lede">
               Live rooms, one book each.
             </p>
             <p className="mt-2 max-w-xl font-serif text-base leading-snug opacity-80 sm:text-lg">
@@ -410,8 +410,8 @@ function InviteCard({ club, kicker }: { club: BookClubView; kicker: string }) {
 
   return (
     <div className="border-b border-ink bg-blue p-5 text-paper sm:p-8">
-      <p className="font-sans text-xs tracking-wide opacity-80">{kicker}</p>
-      <p className="mt-2 font-display text-3xl font-medium tracking-tight">{club.name}</p>
+      <p className="type-kicker opacity-80">{kicker}</p>
+      <p className="mt-2 type-title">{club.name}</p>
       {when ? <p className="mt-2 font-serif text-lg text-paper/85">{when}</p> : null}
       <p className="mt-1 font-sans text-sm opacity-80">
         {bookLine ? (
@@ -424,7 +424,7 @@ function InviteCard({ club, kicker }: { club: BookClubView; kicker: string }) {
         )}
       </p>
       {club.note ? <p className="mt-3 font-serif text-base text-paper/85">{club.note}</p> : null}
-      <p className="mt-4 break-all font-sans text-xs tracking-wide text-paper/75">
+      <p className="mt-4 break-all type-kicker text-paper/75">
         {clubInviteUrl(club.inviteToken)}
       </p>
       <div className="mt-6 grid grid-cols-1 gap-px bg-paper/30 sm:grid-cols-2">
@@ -573,7 +573,7 @@ function StartClubForm({
             fillInk("yellow"),
           )}
         >
-          <p className="font-sans text-xs tracking-wide opacity-70">New club</p>
+          <p className="type-kicker opacity-70">New club</p>
         </div>
         <button
           type="button"
@@ -593,7 +593,7 @@ function StartClubForm({
         className="min-h-0 flex-1 overflow-y-auto overscroll-contain"
       >
         <div className={cn("px-5 py-5 sm:px-8", fillClass("red"), fillInk("red"))}>
-          <p className="font-display text-2xl font-medium tracking-tight sm:text-3xl">
+          <p className="type-lede">
             Name a night. Send the door.
           </p>
           <p className="mt-2 max-w-xl font-serif text-base leading-snug text-paper/85">
@@ -634,7 +634,7 @@ function StartClubForm({
             {selected.title}
             <span className="opacity-70"> · {selected.author}</span>
             {series ? (
-              <span className="mt-1 block font-sans text-xs tracking-wide opacity-70">
+              <span className="mt-1 block type-kicker opacity-70">
                 Serialize · {series.nights} nights
               </span>
             ) : null}
@@ -655,10 +655,10 @@ function StartClubForm({
                   )}
                 >
                   <span className="min-w-0">
-                    <span className="block font-display text-lg font-medium tracking-tight">
+                    <span className="block type-lede">
                       {item.title}
                     </span>
-                    <span className="mt-0.5 block truncate font-sans text-xs tracking-wide opacity-70">
+                    <span className="mt-0.5 block truncate type-kicker opacity-70">
                       {item.author}
                     </span>
                   </span>
@@ -674,7 +674,7 @@ function StartClubForm({
             fillInk("yellow"),
           )}
         >
-          <p className="font-sans text-xs tracking-wide opacity-70">Or a Serialize series</p>
+          <p className="type-kicker opacity-70">Or a Serialize series</p>
         </div>
         {boundSeries.map((plan, index) => {
           const on = plan.id === serializePlanId;
@@ -691,10 +691,10 @@ function StartClubForm({
               )}
             >
               <span className="min-w-0">
-                <span className="block font-display text-lg font-medium tracking-tight">
+                <span className="block type-lede">
                   {plan.title}
                 </span>
-                <span className="mt-0.5 block truncate font-sans text-xs tracking-wide opacity-70">
+                <span className="mt-0.5 block truncate type-kicker opacity-70">
                   {plan.nights} nights · {plan.author}
                 </span>
               </span>
@@ -801,7 +801,7 @@ function ComposeField({
       <span
         className={cn(
           stacked ? "px-4 pt-3" : "flex w-24 shrink-0 items-center px-4",
-          "font-sans text-xs tracking-wide opacity-70",
+          "type-kicker opacity-70",
         )}
       >
         {label}
@@ -844,11 +844,11 @@ function ClubRoom({
         params={{ clubId: id }}
         className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5"
       >
-        <span className="font-sans text-xs tracking-wide opacity-80">
+        <span className="type-kicker opacity-80">
           {place}
           {joined ? " · in" : ""}
         </span>
-        <span className="mt-1 font-display text-2xl font-medium tracking-tight">{name}</span>
+        <span className="mt-1 type-lede">{name}</span>
         <span className="mt-1 font-serif text-sm opacity-80">
           {bookLine ? (
             bookLine

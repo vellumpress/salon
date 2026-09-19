@@ -55,18 +55,18 @@ function RitualsPage() {
       <div className="cell-mark flex bg-paper">
         <Link
           to="/"
-          className="inline-flex h-full shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
+          className="type-chrome inline-flex h-full shrink-0 items-center justify-center bg-ink px-4 text-paper"
         >
           Home
         </Link>
-        <span className="flex h-full min-w-0 flex-1 items-center self-stretch bg-paper px-4 font-display text-xl font-medium tracking-tight text-ink sm:text-2xl">
+        <span className="type-mark flex h-full min-w-0 flex-1 items-center self-stretch bg-paper px-4 text-ink">
           Rituals
         </span>
         <ResumeLink />
         <Link
           to="/together"
           preload="intent"
-          className="flex h-full shrink-0 items-center self-stretch border-l border-ink/15 bg-paper px-4 font-sans text-sm text-ink"
+          className="type-chrome flex h-full shrink-0 items-center self-stretch border-l border-ink/15 bg-paper px-4 text-ink"
         >
           Together
         </Link>
@@ -77,13 +77,13 @@ function RitualsPage() {
       ) : (
         <>
           <div className="cell-wide flex min-h-0 flex-col justify-end bg-yellow p-5 text-ink">
-            <span className="font-sans text-xs tracking-wide opacity-70">
+            <span className="type-kicker opacity-70">
               For the hour
             </span>
-            <span className="mt-1 font-display text-2xl font-medium tracking-tight sm:text-3xl">
+            <span className="type-lede mt-1">
               Reading shaped for before sleep, waking, a walk, unwind.
             </span>
-            <span className="mt-2 max-w-xl font-serif text-base leading-snug opacity-80 sm:text-lg">
+            <span className="type-pitch mt-2 max-w-xl opacity-80">
               Pick a lane. One work at a time — contemporary New York hours, older
               pages.
             </span>
@@ -267,21 +267,21 @@ function SerializeSeriesCell({
         fillInk(fill),
       )}
     >
-      <span className="font-sans text-xs tracking-wide opacity-70">
+      <span className="type-kicker opacity-70">
         {serializeDurationLabel(plan)}
         {bound ? "" : " · text coming"}
       </span>
-      <span className="mt-1 font-sans text-xs tracking-wide opacity-70">
+      <span className="mt-1 type-kicker opacity-70">
         {plan.author}
         <span className="opacity-60"> · {plan.year}</span>
       </span>
-      <span className="mt-1 font-display text-base font-medium leading-tight tracking-tight sm:text-lg lg:text-xl">
+      <span className="type-card mt-1">
         {plan.title}
       </span>
-      <span className="mt-1.5 line-clamp-5 font-serif text-sm leading-snug opacity-75 sm:text-base">
+      <span className="type-pitch mt-1.5 line-clamp-5 opacity-75">
         {plan.framing}
       </span>
-      <span className="mt-2 font-sans text-xs tracking-wide opacity-70">
+      <span className="mt-2 type-kicker opacity-70">
         Tonight: Episode {tonight}
       </span>
       {ratio > 0 ? (
@@ -333,35 +333,35 @@ function SerializeEpisodeStack({
         <button
           type="button"
           onClick={onBack}
-          className="self-start font-sans text-xs tracking-wide text-ink/70"
+          className="self-start type-kicker text-ink/70"
         >
           Serialize
         </button>
-        <span className="mt-3 font-sans text-xs tracking-wide opacity-70">
+        <span className="mt-3 type-kicker opacity-70">
           {serializeDurationLabel(plan)}
           {bound ? "" : " · text coming"}
         </span>
-        <span className="mt-1 font-display text-2xl font-medium tracking-tight">
+        <span className="mt-1 type-lede">
           {plan.title}
         </span>
-        <span className="mt-1 font-sans text-xs tracking-wide opacity-70">
+        <span className="mt-1 type-kicker opacity-70">
           {plan.author}
           <span className="opacity-60"> · {plan.year}</span>
         </span>
-        <span className="mt-2 font-serif text-base leading-snug opacity-80">
+        <span className="type-pitch mt-2 opacity-80">
           {plan.framing}
         </span>
-        <span className="mt-2 font-sans text-xs tracking-wide opacity-70">
+        <span className="mt-2 type-kicker opacity-70">
           {plan.geography}
         </span>
       </div>
       {coming ? (
         <div className="bg-yellow p-4 text-ink sm:p-5">
-          <p className="font-sans text-xs tracking-wide opacity-70">Not on the shelf yet</p>
-          <p className="mt-2 font-display text-xl font-medium tracking-tight">
+          <p className="type-kicker opacity-70">Not on the shelf yet</p>
+          <p className="mt-2 type-lede">
             This text is still coming
           </p>
-          <p className="mt-2 font-serif text-base leading-snug opacity-80">
+          <p className="type-pitch mt-2 opacity-80">
             The nights are mapped. The bound file is not live — Read tonight stays closed
             until the shelf has it.
           </p>
@@ -372,21 +372,21 @@ function SerializeEpisodeStack({
         const isTonight = episode.n === tonight;
         const body = (
           <>
-            <span className="font-sans text-xs tracking-wide opacity-70">
+            <span className="type-kicker opacity-70">
               Night {episode.n} of {plan.nights}
               {isTonight ? " · tonight" : ""}
               <span className="opacity-60"> · {serializeEpisodeMinutesLabel(episode.minutes)}</span>
             </span>
-            <span className="mt-1 font-display text-base font-medium leading-tight tracking-tight sm:text-lg">
+            <span className="type-card mt-1">
               {episode.title}
             </span>
-            <span className="mt-1 font-sans text-xs tracking-wide opacity-70">
+            <span className="mt-1 type-kicker opacity-70">
               {episode.source}
             </span>
             {bound ? (
-              <span className="mt-2 font-sans text-xs tracking-wide opacity-80">Read tonight</span>
+              <span className="mt-2 type-kicker opacity-80">Read tonight</span>
             ) : (
-              <span className="mt-2 font-sans text-xs tracking-wide opacity-70">Text coming</span>
+              <span className="mt-2 type-kicker opacity-70">Text coming</span>
             )}
           </>
         );
@@ -456,16 +456,16 @@ function BookCell({
         fillInk(fill),
       )}
     >
-      <span className="font-sans text-xs tracking-wide opacity-70">{duration}</span>
-      <span className="mt-1 font-sans text-xs tracking-wide opacity-70">
+      <span className="type-kicker opacity-70">{duration}</span>
+      <span className="mt-1 type-kicker opacity-70">
         {item.author}
         <span className="opacity-60"> · {item.year}</span>
       </span>
-      <span className="mt-1 font-display text-base font-medium leading-tight tracking-tight sm:text-lg lg:text-xl">
+      <span className="type-card mt-1">
         {item.title}
       </span>
       {pitch ? (
-        <span className="mt-1.5 line-clamp-5 font-serif text-sm leading-snug opacity-75 sm:text-base">
+        <span className="type-pitch mt-1.5 line-clamp-5 opacity-75">
           {pitch}
         </span>
       ) : null}
