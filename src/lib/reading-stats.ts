@@ -98,7 +98,7 @@ const DAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"] as const;
 /** Ritual lanes that name a time of day, not a mood. */
 const HOUR_LANES = [
   { id: "waking-up", label: "Waking", start: 5, end: 10 },
-  { id: "on-a-walk", label: "Day", start: 10, end: 17 },
+  { id: "on-a-walk", label: "On a walk", start: 10, end: 17 },
   { id: "unwind", label: "Unwind", start: 17, end: 21 },
   { id: "before-sleep", label: "Before sleep", start: 21, end: 5 },
 ] as const;
@@ -447,7 +447,7 @@ export function activityTimeline(input: {
       at: sit.endedAt,
       kind: "sit",
       title: workTitle(sit.workId),
-      detail: `${formatMinutes(sit.minutes)} sit`,
+      detail: `${formatMinutes(sit.minutes)} min sit`,
       workId: sit.workId,
     });
   }

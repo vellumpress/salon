@@ -97,7 +97,7 @@ export function ReadinessHero({
           </p>
           {reading.hasSignal ? (
             <p className="mt-3 font-sans text-xs tracking-chrome text-paper/55">
-              {name} · week {formatMinutes(reading.minutesWeek)}
+              Week {formatMinutes(reading.minutesWeek)}
               {reading.minutesAreEstimated ? " est." : ""}
             </p>
           ) : null}
@@ -115,11 +115,13 @@ export function YouRings({ rings }: { rings: RingStat[] }) {
         const size = 72;
         const r = 28;
         const c = 2 * Math.PI * r;
+        const wide = ring.id === "lanes";
         return (
           <div
             key={ring.id}
             className={cn(
               "flex min-h-32 flex-col justify-between p-4 sm:min-h-36",
+              wide && "col-span-2 flex-row items-end gap-4 sm:col-span-1 sm:flex-col sm:items-stretch sm:gap-0",
               fillClass(fill),
               fillInk(fill),
             )}
@@ -183,12 +185,14 @@ export function WeekMinutes({
             <div
               key={day.key}
               className={cn(
-                "flex min-h-32 flex-col justify-end px-1.5 pb-3 pt-4 sm:min-h-36 sm:px-2",
+                "flex min-h-32 flex-col px-1.5 pb-3 pt-3 sm:min-h-36 sm:px-2",
                 fillClass(fill),
                 fillInk(fill),
               )}
             >
-              <div className="you-week-bar" style={{ height: tall }} aria-hidden />
+              <div className="flex min-h-16 flex-1 flex-col">
+                <div className="you-week-bar mt-auto shrink-0" style={{ height: tall }} aria-hidden />
+              </div>
               <p className="mt-2 type-kicker opacity-75">{day.label}</p>
               <p className="mt-1 font-sans text-xs tabular-nums">
                 {day.minutes > 0 ? formatMinutes(day.minutes) : "—"}
@@ -219,11 +223,11 @@ export function InsightStrip({
         <span className="mt-1 font-sans text-xs text-ink/65">{streakLine(reading.streak)}</span>
       </div>
       <div className="flex min-h-28 flex-col justify-end bg-blue p-4 text-paper sm:min-h-32 sm:p-5">
-        <span className="type-kicker opacity-80">Hour</span>
+        <span className="type-kicker opacity-80">When</span>
         <span className="mt-1 type-lede">{hour?.label ?? "Not yet"}</span>
         <span className="mt-1 font-sans text-xs opacity-75">
           {hour
-            ? more || "From the lanes and hours you sit"
+            ? more || "From the hours and lanes you sit"
             : "Before sleep, waking, unwind — after a sit"}
         </span>
       </div>

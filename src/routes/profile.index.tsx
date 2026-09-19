@@ -112,7 +112,7 @@ function ProfileBody({ user }: { user: AppUser | null }) {
   const { hydrated, favorites } = useFavoriteSync(user);
   const visit = useVisitSeed();
   const [me, setMe] = useState<Me | null>(null);
-  const [name, setName] = useState(user?.displayName ?? "");
+  const [name, setName] = useState(user && !user.isDevFallback ? (user.displayName ?? "") : "");
   const [sit, setSit] = useState<number>(sittingMinutes);
   const [saved, setSaved] = useState(false);
   const [error, setError] = useState("");
@@ -191,7 +191,8 @@ function ProfileBody({ user }: { user: AppUser | null }) {
   }, [visit]);
 
   const mine = hydrated ? CLUBS.filter((club) => joined.includes(club.id)) : [];
-  const shownName = name.trim() || user?.displayName || "You";
+  const shownName =
+    name.trim() || (user && !user.isDevFallback ? user.displayName : "") || "You";
   const shownHandle = formatHandle(handle);
 
   async function save() {
