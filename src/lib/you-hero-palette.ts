@@ -1,6 +1,6 @@
 import { type Fill } from "./mondrian.ts";
 
-/** Mondrian accents on paper — one painted ring per You visit. */
+/** Mondrian accents on paper — one painted stroke per You visit. */
 export const YOU_HERO_PALETTES = [
   { id: "yellow", ring: "yellow" },
   { id: "red", ring: "red" },

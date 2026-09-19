@@ -12,6 +12,7 @@ import {
   type RingStat,
 } from "@/lib/reading-stats";
 import { useYouHeroPalette } from "@/lib/use-you-hero-palette";
+import { radarCaption, radarLayout } from "@/lib/you-radar";
 import { cn } from "@/lib/utils";
 
 const RING_FILLS: Record<string, Fill> = {
@@ -29,6 +30,12 @@ function ringOffset(value: number, max: number, circumference: number) {
   return circumference * (1 - pct);
 }
 
+function radarFillOpacity(fill: Fill) {
+  if (fill === "yellow") return 0.38;
+  if (fill === "ink") return 0.14;
+  return 0.26;
+}
+
 export function ReadinessHero({
   reading,
   handle,
@@ -39,39 +46,75 @@ export function ReadinessHero({
   name?: string;
 }) {
   const palette = useYouHeroPalette();
-  const size = 168;
-  const cx = size / 2;
+  const accent = fillVar(palette.ring);
+  const layout = radarLayout(reading.radar);
+  const caption = radarCaption(reading.radar);
+  const peak = Math.max(0, ...reading.radar.map((axis) => axis.score));
 
   return (
     <section className="flex flex-col border-b border-ink bg-paper text-ink">
       <div className="flex flex-col gap-5 px-5 py-6 sm:flex-row sm:items-end sm:gap-8 sm:px-8 sm:py-8">
-        <div
-          className="you-readiness relative mx-auto shrink-0 sm:mx-0"
-          aria-label={`Reading score ${reading.readiness.score}, ${reading.readiness.label}`}
-        >
-          <svg viewBox={`0 0 ${size} ${size}`} className="h-full w-full" aria-hidden>
-            <circle
-              cx={cx}
-              cy={cx}
-              r="72"
-              fill="none"
-              stroke="var(--color-ink)"
-              strokeWidth="1.25"
-            />
-            <circle
-              cx={cx}
-              cy={cx}
-              r="64"
-              fill="none"
-              stroke={fillVar(palette.ring)}
-              strokeWidth="8"
-            />
+        <figure className="you-readiness relative mx-auto shrink-0 sm:mx-0">
+          <svg
+            viewBox={`0 0 ${layout.size} ${layout.size}`}
+            className="h-full w-full"
+            role="img"
+            aria-label={`Reading radar. Score ${reading.readiness.score}, ${reading.readiness.label}. ${caption}`}
+          >
+            <rect width={layout.size} height={layout.size} fill="var(--color-paper)" />
+            {layout.grids.map((d, i) => (
+              <path
+                key={`grid-${i}`}
+                d={d}
+                fill="none"
+                stroke="var(--color-ink)"
+                strokeOpacity={i === layout.grids.length - 1 ? 0.26 : 0.12}
+                strokeWidth="0.9"
+              />
+            ))}
+            {layout.spokes.map((spoke) => (
+              <line
+                key={`${spoke.x2}-${spoke.y2}`}
+                x1={spoke.x1}
+                y1={spoke.y1}
+                x2={spoke.x2}
+                y2={spoke.y2}
+                stroke="var(--color-ink)"
+                strokeOpacity="0.14"
+                strokeWidth="0.8"
+              />
+            ))}
+            {peak > 0 ? (
+              <path
+                d={layout.polygon}
+                fill={accent}
+                fillOpacity={radarFillOpacity(palette.ring)}
+                stroke={accent}
+                strokeWidth="2"
+                strokeLinejoin="round"
+              />
+            ) : null}
+            {layout.labels.map((row) => (
+              <text
+                key={row.id}
+                x={row.x}
+                y={row.y}
+                textAnchor={row.anchor}
+                className="you-radar-label"
+              >
+                <tspan x={row.x} dy="-0.45em">
+                  {row.label}
+                </tspan>
+                <tspan x={row.x} dy="1.4em" className="you-radar-value">
+                  {row.display}
+                </tspan>
+              </text>
+            ))}
           </svg>
-          <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="type-kicker text-muted">Today</span>
-            <span className="type-title text-ink">{reading.readiness.score}</span>
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+            <span className="you-radar-score type-title text-ink">{reading.readiness.score}</span>
           </div>
-        </div>
+        </figure>
         <div className="min-w-0 flex-1 pb-1">
           <p className="type-kicker text-muted">
             {handle || "This sitting"}
@@ -86,6 +129,14 @@ export function ReadinessHero({
               {reading.minutesAreEstimated ? " est." : ""}
             </p>
           ) : null}
+          <ul className="you-radar-legend mt-4 grid max-w-72 grid-cols-3 gap-x-3 gap-y-1 text-ink/50">
+            {reading.radar.map((axis) => (
+              <li key={axis.id}>
+                <span className="text-ink/40">{axis.label}</span>{" "}
+                <span className="text-ink/70">{axis.display}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

@@ -415,8 +415,38 @@ html.together-compose.together-kb .chat-slot {
 }
 
 .you-readiness {
-  width: 10.5rem;
-  height: 10.5rem;
+  width: 15.75rem;
+  height: 15.75rem;
+}
+
+.you-radar-label {
+  fill: var(--color-ink);
+  fill-opacity: 0.7;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: var(--tracking-kicker);
+}
+
+.you-radar-value {
+  fill: var(--color-ink);
+  fill-opacity: 0.92;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.you-radar-score {
+  background: var(--color-paper);
+  line-height: 1;
+  padding: 0.15rem 0.4rem;
+}
+
+.you-radar-legend {
+  font-family: var(--font-sans);
+  font-size: var(--text-kicker);
+  font-weight: 400;
+  letter-spacing: var(--tracking-kicker);
+  line-height: 1.55;
 }
 
 .you-week-bar {

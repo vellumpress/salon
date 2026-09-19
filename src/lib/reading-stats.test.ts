@@ -62,6 +62,8 @@ test("empty stats invite a first sit", () => {
   assert.equal(reading.weekDays.length, 7);
   assert.equal(reading.activity.length, 0);
   assert.equal(reading.rings.length, 5);
+  assert.equal(reading.radar.length, 6);
+  assert.equal(reading.sits, 0);
 });
 
 test("recorded sits drive today, week, and rings", () => {
@@ -96,6 +98,11 @@ test("recorded sits drive today, week, and rings", () => {
   assert.ok(reading.readiness.score <= 100);
   assert.equal(reading.rings[0]?.value, 18);
   assert.equal(reading.rings[0]?.max, 20);
+  assert.equal(reading.sits, 2);
+  assert.equal(reading.radar[0]?.id, "today");
+  assert.equal(reading.radar[0]?.score, 90);
+  assert.equal(reading.radar[5]?.id, "sits");
+  assert.equal(reading.radar[5]?.value, 2);
 });
 
 test("readiness labels stay literary", () => {
