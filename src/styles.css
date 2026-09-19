@@ -595,6 +595,54 @@ html.together-compose.together-kb .chat-slot {
   white-space: nowrap;
 }
 
+.works-place {
+  margin-top: 0.28rem;
+}
+
+.place-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+  max-width: 100%;
+  color: inherit;
+}
+
+.place-chip-mark {
+  display: block;
+  width: 1.2rem;
+  height: 0.82rem;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.place-chip-label {
+  overflow: hidden;
+  font-family: var(--font-sans);
+  font-size: var(--text-kicker);
+  font-weight: 400;
+  letter-spacing: var(--tracking-kicker);
+  line-height: var(--text-kicker--line-height);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.place-chip-ink {
+  color: var(--color-ink);
+}
+
+.place-chip-red {
+  color: var(--color-red);
+}
+
+.place-chip-blue {
+  color: var(--color-blue);
+}
+
+.place-chip-forest {
+  color: var(--color-forest);
+}
+
 .works-card:focus-visible {
   outline: 2px solid var(--color-ink);
   outline-offset: 3px;

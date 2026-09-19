@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { CollectionHeader } from "@/components/collection-header";
 import { FavoriteMark } from "@/components/favorite-mark";
+import { PlaceChip } from "@/components/place-chip";
 import { favoriteWorks, YOU_PREVIEW } from "@/lib/favorites";
 import { fillClass, fillInk, mosaicFills } from "@/lib/mondrian";
 import { cn } from "@/lib/utils";
@@ -65,6 +66,7 @@ export function FavoriteWorks({
                       {work.author}
                     </span>
                   ) : null}
+                  <PlaceChip workId={work.id} className="mt-1.5 opacity-80" />
                   <span
                     className={cn(
                       "type-lede",

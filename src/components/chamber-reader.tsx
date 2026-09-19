@@ -13,6 +13,7 @@ import { fillClass, planeOf, type Fill } from "@/lib/mondrian";
 import { readerIntro } from "@/lib/reader-intro";
 import { shouldShowPreface } from "@/lib/reader-threshold";
 import { FavoriteMark } from "@/components/favorite-mark";
+import { PlaceChip } from "@/components/place-chip";
 import { Hourglass } from "@/components/hourglass";
 import { TogetherShell } from "@/components/sitting-room";
 import { estimateRitualMinutes } from "@/lib/catalog/rituals";
@@ -964,6 +965,7 @@ export function VellumReader({
                 <p className="type-kicker text-muted">
                   {nightChrome ? `${work.title} · ${work.author}` : work.author}
                 </p>
+                <PlaceChip workId={work.id} tone="accent" className="mt-2" />
                 <h1 className="veil-title">{nightChrome || work.title}</h1>
                 {intro ? <p className="veil-note veil-preface-note">{intro}</p> : null}
                 {gateMode === "length" ? (
@@ -1018,6 +1020,7 @@ export function VellumReader({
                 <p className="mt-3 font-sans text-sm text-muted">
                   {nightChrome ? `${work.title} · ${work.author}` : work.author}
                 </p>
+                <PlaceChip workId={work.id} tone="accent" className="mt-2" />
                 <p className="mt-8 type-kicker text-muted">How long will you sit</p>
                 <div className="sit-presets mt-3" role="group" aria-label="Sitting length">
                   {SIT_PRESETS.map((preset) => (
