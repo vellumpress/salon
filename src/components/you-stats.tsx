@@ -11,7 +11,7 @@ import {
   type ReadingStats,
   type RingStat,
 } from "@/lib/reading-stats";
-import { useYouHeroPalette } from "@/lib/you-hero-palette";
+import { useYouHeroPalette } from "@/lib/use-you-hero-palette";
 import { cn } from "@/lib/utils";
 
 const RING_FILLS: Record<string, Fill> = {

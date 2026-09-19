@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { type Fill } from "./mondrian.ts";
 
 /** Mondrian accents on paper — one painted ring per You visit. */
@@ -81,15 +80,4 @@ export function resetYouHeroPaletteHold() {
   if (releaseTimer != null) clearTimeout(releaseTimer);
   releaseTimer = null;
   heldIndex = null;
-}
-
-export function useYouHeroPalette(): YouHeroPalette {
-  const [palette, setPalette] = useState<YouHeroPalette>(YOU_HERO_PALETTES[0]);
-  useEffect(() => {
-    setPalette(acquireYouHeroPalette());
-    return () => {
-      releaseYouHeroPalette();
-    };
-  }, []);
-  return palette;
 }
