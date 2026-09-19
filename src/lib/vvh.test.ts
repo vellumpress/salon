@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import {
+  fieldScrollDelta,
   togetherComposeTopPx,
   togetherPinActive,
   togetherRestingTopPx,
@@ -61,6 +62,58 @@ test("outside compose, --vvh is the visible layout height and offset stays 0", (
   assert.equal(vars.kbInset, 0);
   assert.equal(vars.composeBottom, "safe-area");
   assert.equal(vars.composeGap, 0);
+});
+
+test("outside compose, a keyboard-sized shrink freezes --vvh so Mondrian / login do not crush", () => {
+  const vars = visualViewportVars({
+    innerHeight: 844,
+    visualHeight: 430,
+    offsetTop: 40,
+    frozenVvh: 844,
+  });
+  assert.equal(vars.vvh, 844);
+  assert.equal(vars.visible, 430);
+  assert.equal(vars.offset, 0, "generic screens must not follow offsetTop — that hides bottom fields");
+  assert.equal(vars.kbOpen, true);
+  assert.equal(vars.kbInset, 0);
+});
+
+test("outside compose, a keyboard shrink without a stored rest height still freezes at innerHeight", () => {
+  const vars = visualViewportVars({
+    innerHeight: 844,
+    visualHeight: 430,
+    offsetTop: 0,
+  });
+  assert.equal(vars.vvh, 844);
+  assert.equal(vars.offset, 0);
+  assert.equal(vars.kbOpen, true);
+});
+
+test("field focus freezes --vvh before the keyboard opens, without moving offset", () => {
+  const vars = visualViewportVars({
+    fieldFocus: true,
+    frozenVvh: 780,
+    innerHeight: 844,
+    visualHeight: 780,
+    offsetTop: 12,
+  });
+  assert.equal(vars.vvh, 780);
+  assert.equal(vars.offset, 0);
+  assert.equal(vars.kbOpen, false);
+});
+
+test("field scroll delta is 0 when the field already sits in the visual viewport", () => {
+  assert.equal(
+    fieldScrollDelta({ fieldTop: 200, fieldBottom: 248, visibleHeight: 430 }),
+    0,
+  );
+});
+
+test("field scroll delta lifts a field that sits under the keyboard", () => {
+  assert.equal(
+    fieldScrollDelta({ fieldTop: 400, fieldBottom: 448, visibleHeight: 430, extra: 16 }),
+    34,
+  );
 });
 
 test("together + keyboard freezes --vvh so the reading pane does not shrink", () => {
@@ -296,4 +349,37 @@ test("enterTogetherCompose does not pinDocument before the keyboard is up", () =
   assert.doesNotMatch(enter[0], /pinDocument\(/);
   assert.match(enter[0], /TOGETHER_COMPOSE_CLASS/);
   assert.doesNotMatch(enter[0], /TOGETHER_KB_CLASS/);
+});
+
+test("attachVisualViewport freezes --vvh on focusin, not only on visualViewport resize", () => {
+  const src = readFileSync(new URL("./vvh.ts", import.meta.url), "utf8");
+  assert.match(src, /document\.addEventListener\("focusin"/);
+  assert.match(src, /KB_FOCUS_CLASS/);
+  assert.match(src, /function beginFieldFocus/);
+  const begin = src.match(
+    /function beginFieldFocus\(\) \{[\s\S]*?^function endFieldFocus/m,
+  );
+  assert.ok(begin, "missing beginFieldFocus");
+  assert.doesNotMatch(begin[0], /pinDocument\(/);
+  assert.match(begin[0], /KB_FOCUS_CLASS/);
+});
+
+test("generic keyboard CSS does not cancel Safari's visual-viewport pan on .frame-screen", () => {
+  assert.doesNotMatch(
+    css,
+    /html\.kb-open \.frame-screen\s*\{[^}]*top:\s*var\(--vv-offset/s,
+  );
+  assert.doesNotMatch(
+    css,
+    /html\.kb-focus \.frame-screen\s*\{[^}]*top:\s*var\(--vv-offset/s,
+  );
+});
+
+test("home search and form fields are at least 16px so iOS will not zoom on focus", () => {
+  assert.match(css, /\.cell-search input\s*\{[^}]*font-size:\s*1rem/s);
+  const search = readFileSync(new URL("../components/shelf-search.tsx", import.meta.url), "utf8");
+  const input = search.match(/<input[\s\S]*?className="([^"]+)"/);
+  assert.ok(input, "missing shelf search input");
+  assert.match(input[1], /text-base/);
+  assert.doesNotMatch(input[1], /type-pitch|text-sm|text-xs|type-kicker|type-chrome/);
 });

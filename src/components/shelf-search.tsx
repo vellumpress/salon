@@ -59,9 +59,9 @@ export function ShelfSearchBar({
         autoCorrect="off"
         spellCheck={false}
         enterKeyHint="search"
-        className="type-pitch h-9 min-w-0 flex-1 border-0 bg-transparent text-ink placeholder:text-muted/70 focus-visible:outline-none"
+        className="h-9 min-w-0 flex-1 border-0 bg-transparent font-serif text-base tracking-pitch text-ink placeholder:text-muted/70 focus-visible:outline-none"
       />
-        <span className="type-kicker flex shrink-0 items-center px-3 tabular-nums text-muted">
+      <span className="type-kicker flex shrink-0 items-center px-3 tabular-nums text-muted">
         {count}
       </span>
     </div>

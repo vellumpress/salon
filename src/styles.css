@@ -133,6 +133,26 @@
   background: var(--color-paper);
 }
 
+/* Freeze `--vvh` on focus so the keyboard cannot crush this frame.
+   Do not follow `--vv-offset` here — that cancel-the-pan move is for
+   together-kb / club-compose. On login / friends / curator it would
+   hide a bottom field. Safari pans the visual viewport instead. */
+html.kb-focus,
+html.kb-open {
+  overflow-anchor: none;
+}
+
+/* iOS Safari zooms the page when a focused field is under 16px. */
+.cell-search input {
+  font-size: 1rem;
+}
+
+input:not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="hidden"]):not([type="range"]):not([type="color"]):not([type="image"]),
+textarea,
+select {
+  scroll-margin-bottom: 1.25rem;
+}
+
 /* Curator chat: dock composer to the viewport bottom.
    Drop reading-room chrome padding (it floated the input above a dead zone)
    and lock document scroll so mobile focus/keyboard cannot shove the page. */

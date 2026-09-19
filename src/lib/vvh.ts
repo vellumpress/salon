@@ -37,12 +37,37 @@
  * `--kb-inset` under Create — the visual viewport already excludes the
  * keyboard, so the pad paints a void (Safari’s URL chip sits in it).
  * `--kb-inset` is always 0.
+ *
+ * Every other field (home search, @username, login, profile, curator)
+ * had the together problem without the together pin: the default path
+ * set `--vvh` to `min(visual, inner)`, so a keyboard-sized shrink
+ * crushed `.frame-screen` / the Mondrian board. Freeze `--vvh` on
+ * field focus (and while the keyboard is up). Do **not** follow
+ * `offsetTop` on those screens — that cancel-the-pan move is for
+ * together’s pinned strip; here it would hide a bottom field.
  */
 
 export const COMPOSE_CLASS = "club-compose";
 export const TOGETHER_COMPOSE_CLASS = "together-compose";
 /** Applied only once the visual viewport has actually shrunk (keyboard up). */
 export const TOGETHER_KB_CLASS = "together-kb";
+/** Generic field focus — freeze `--vvh` before the keyboard animation. */
+export const KB_FOCUS_CLASS = "kb-focus";
+/** Keyboard actually open on a non-together, non-club screen. */
+export const KB_OPEN_CLASS = "kb-open";
+
+const NON_TEXT_INPUT_TYPES = new Set([
+  "button",
+  "submit",
+  "reset",
+  "checkbox",
+  "radio",
+  "file",
+  "hidden",
+  "range",
+  "color",
+  "image",
+]);
 
 /** Keyboard is open when the visual viewport is this much shorter than layout. */
 export const KB_OPEN_PX = 80;
@@ -88,6 +113,8 @@ export function togetherPinActive(input: { together?: boolean; kbOpen: boolean }
 export function visualViewportVars(input: {
   composing?: boolean;
   together?: boolean;
+  /** Generic text-field focus. Freeze `--vvh`; do not follow offsetTop. */
+  fieldFocus?: boolean;
   innerHeight: number;
   visualHeight: number;
   offsetTop?: number;
@@ -134,6 +161,25 @@ export function visualViewportVars(input: {
   }
 
   const seen = Math.round(Math.min(visible, inner) || inner);
+
+  /* URL-bar chrome (~<80px) may still size the shell to the visible
+     height. A keyboard-sized shrink — or a focused field about to open
+     one — must not reflow Mondrian / login / friends. */
+  if (kbOpen || input.fieldFocus) {
+    const locked = frozen || (kbOpen ? Math.max(inner, seen) : seen);
+    const vis = Math.round(visible || inner);
+    return {
+      vvh: Math.round(locked),
+      offset: 0,
+      kbInset: 0,
+      visible: vis,
+      composeGap,
+      composeTop: togetherComposeTopPx({ offset: 0, visible: vis }),
+      composeBottom: "safe-area",
+      kbOpen,
+    };
+  }
+
   return {
     vvh: seen,
     offset: 0,
@@ -144,6 +190,85 @@ export function visualViewportVars(input: {
     composeBottom: "safe-area",
     kbOpen: false,
   };
+}
+
+export function isTextField(node: EventTarget | null): boolean {
+  if (typeof HTMLElement === "undefined" || !(node instanceof HTMLElement)) return false;
+  if (node.isContentEditable) return true;
+  const tag = node.tagName;
+  if (tag === "TEXTAREA" || tag === "SELECT") return true;
+  if (tag !== "INPUT") return false;
+  const type = (node.getAttribute("type") || "text").toLowerCase();
+  return !NON_TEXT_INPUT_TYPES.has(type);
+}
+
+/** How far to scroll so `field` sits inside the visible viewport. */
+export function fieldScrollDelta(input: {
+  fieldTop: number;
+  fieldBottom: number;
+  visibleHeight: number;
+  extra?: number;
+}): number {
+  const extra = input.extra ?? 16;
+  const limit = input.visibleHeight - extra;
+  if (input.fieldBottom <= limit && input.fieldTop >= extra) return 0;
+  if (input.fieldBottom > limit) return Math.round(input.fieldBottom - limit);
+  return Math.round(input.fieldTop - extra);
+}
+
+function nearestScrollable(el: HTMLElement): HTMLElement | null {
+  let node: HTMLElement | null = el.parentElement;
+  while (node && node !== document.body && node !== document.documentElement) {
+    const style = window.getComputedStyle(node);
+    const oy = style.overflowY;
+    if (
+      (oy === "auto" || oy === "scroll" || oy === "overlay") &&
+      node.scrollHeight > node.clientHeight + 1
+    ) {
+      return node;
+    }
+    node = node.parentElement;
+  }
+  return null;
+}
+
+let revealing = false;
+
+function revealActiveField() {
+  if (typeof document === "undefined") return;
+  if (!isTextField(document.activeElement)) return;
+  revealFocusedField(document.activeElement as HTMLElement);
+}
+
+function revealFocusedField(target: HTMLElement) {
+  if (revealing) return;
+  if (typeof window === "undefined" || typeof document === "undefined") return;
+  const root = document.documentElement;
+  if (root.classList.contains(COMPOSE_CLASS) || root.classList.contains(TOGETHER_COMPOSE_CLASS)) {
+    return;
+  }
+  const vv = window.visualViewport;
+  const visible = vv && vv.height > 1 ? vv.height : window.innerHeight;
+  const rect = target.getBoundingClientRect();
+  const delta = fieldScrollDelta({
+    fieldTop: rect.top,
+    fieldBottom: rect.bottom,
+    visibleHeight: visible,
+  });
+  if (!delta) return;
+  revealing = true;
+  try {
+    const scroller = nearestScrollable(target);
+    if (scroller) {
+      scroller.scrollTop += delta;
+      return;
+    }
+    if (!document.querySelector(".frame-screen")) {
+      window.scrollBy(0, delta);
+    }
+  } finally {
+    revealing = false;
+  }
 }
 
 function applyVars(root: HTMLElement, vars: ViewportVars) {
@@ -169,20 +294,33 @@ export function pinDocument() {
   document.body.scrollTop = 0;
 }
 
+function restVvhFromDom(root: HTMLElement): number | undefined {
+  const together = root.classList.contains(TOGETHER_COMPOSE_CLASS);
+  const raw = Number(together ? root.dataset.togetherVvh : root.dataset.restVvh);
+  return Number.isFinite(raw) && raw > 1 ? raw : undefined;
+}
+
+function rememberRestVvh(root: HTMLElement, height: number) {
+  if (root.classList.contains(TOGETHER_COMPOSE_CLASS)) return;
+  root.dataset.restVvh = String(Math.round(height));
+}
+
 export function syncVisualViewport() {
   if (typeof document === "undefined" || typeof window === "undefined") return;
   const root = document.documentElement;
   const inner = window.innerHeight || root.clientHeight;
   const vv = window.visualViewport;
   const together = root.classList.contains(TOGETHER_COMPOSE_CLASS);
-  const frozen = Number(root.dataset.togetherVvh);
+  const composing = root.classList.contains(COMPOSE_CLASS);
+  const fieldFocus = root.classList.contains(KB_FOCUS_CLASS);
   const vars = visualViewportVars({
-    composing: root.classList.contains(COMPOSE_CLASS),
+    composing,
     together,
+    fieldFocus,
     innerHeight: inner,
     visualHeight: vv && vv.height > 1 ? vv.height : inner,
     offsetTop: vv && Number.isFinite(vv.offsetTop) ? vv.offsetTop : 0,
-    frozenVvh: Number.isFinite(frozen) && frozen > 1 ? frozen : undefined,
+    frozenVvh: restVvhFromDom(root),
   });
   applyVars(root, vars);
   /* Fixed pin + overflow clip only after the keyboard is up. Applying them
@@ -193,6 +331,14 @@ export function syncVisualViewport() {
     pinDocument();
   } else {
     root.classList.remove(TOGETHER_KB_CLASS);
+  }
+  if (!together && !composing && vars.kbOpen) {
+    root.classList.add(KB_OPEN_CLASS);
+  } else if (!vars.kbOpen) {
+    root.classList.remove(KB_OPEN_CLASS);
+  }
+  if (!vars.kbOpen && !fieldFocus && !together) {
+    rememberRestVvh(root, vars.vvh);
   }
 }
 
@@ -245,6 +391,16 @@ export function exitTogetherCompose() {
 
 let togetherBurst = 0;
 
+function burstTracking(): boolean {
+  if (typeof document === "undefined") return false;
+  const root = document.documentElement;
+  return (
+    root.classList.contains(TOGETHER_COMPOSE_CLASS) ||
+    root.classList.contains(KB_FOCUS_CLASS) ||
+    root.classList.contains(KB_OPEN_CLASS)
+  );
+}
+
 function burstTogetherSync(ms = 800) {
   if (typeof window === "undefined" || typeof document === "undefined") return;
   const started = performance.now();
@@ -252,14 +408,45 @@ function burstTogetherSync(ms = 800) {
   const tick = (now: number) => {
     if (token !== togetherBurst) return;
     syncVisualViewport();
-    if (
-      now - started < ms &&
-      document.documentElement.classList.contains(TOGETHER_COMPOSE_CLASS)
-    ) {
+    if (now - started < ms && burstTracking()) {
       requestAnimationFrame(tick);
     }
   };
   requestAnimationFrame(tick);
+}
+
+function beginFieldFocus() {
+  if (typeof document === "undefined") return;
+  const root = document.documentElement;
+  if (root.classList.contains(COMPOSE_CLASS) || root.classList.contains(TOGETHER_COMPOSE_CLASS)) {
+    return;
+  }
+  if (!root.dataset.restVvh) {
+    const current =
+      parseFloat(root.style.getPropertyValue("--vvh")) ||
+      (typeof window !== "undefined" ? window.innerHeight : 0) ||
+      root.clientHeight;
+    rememberRestVvh(root, current);
+  }
+  root.classList.add(KB_FOCUS_CLASS);
+  syncVisualViewport();
+  burstTogetherSync();
+  if (typeof requestAnimationFrame === "function") {
+    requestAnimationFrame(revealActiveField);
+  }
+}
+
+function endFieldFocus() {
+  if (typeof window === "undefined" || typeof document === "undefined") return;
+  window.setTimeout(() => {
+    if (isTextField(document.activeElement)) return;
+    const root = document.documentElement;
+    root.classList.remove(KB_FOCUS_CLASS);
+    if (!root.classList.contains(TOGETHER_COMPOSE_CLASS)) {
+      delete root.dataset.restVvh;
+    }
+    syncVisualViewport();
+  }, 80);
 }
 
 export function attachVisualViewport() {
@@ -267,9 +454,19 @@ export function attachVisualViewport() {
   const sync = () => syncVisualViewport();
   const syncTogether = () => {
     sync();
-    if (document.documentElement.classList.contains(TOGETHER_COMPOSE_CLASS)) {
+    if (burstTracking()) {
       burstTogetherSync(600);
+      revealActiveField();
     }
+  };
+  const onFocusIn = (event: FocusEvent) => {
+    if (!isTextField(event.target)) return;
+    beginFieldFocus();
+  };
+  const onFocusOut = (event: FocusEvent) => {
+    if (!isTextField(event.target)) return;
+    if (isTextField(event.relatedTarget)) return;
+    endFieldFocus();
   };
   sync();
   window.visualViewport?.addEventListener("resize", syncTogether);
@@ -277,6 +474,8 @@ export function attachVisualViewport() {
   window.addEventListener("resize", syncTogether);
   window.addEventListener("orientationchange", syncTogether);
   window.addEventListener("scroll", sync, { passive: true });
+  document.addEventListener("focusin", onFocusIn);
+  document.addEventListener("focusout", onFocusOut);
   return () => {
     togetherBurst += 1;
     window.visualViewport?.removeEventListener("resize", syncTogether);
@@ -284,5 +483,7 @@ export function attachVisualViewport() {
     window.removeEventListener("resize", syncTogether);
     window.removeEventListener("orientationchange", syncTogether);
     window.removeEventListener("scroll", sync);
+    document.removeEventListener("focusin", onFocusIn);
+    document.removeEventListener("focusout", onFocusOut);
   };
 }
