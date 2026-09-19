@@ -6,7 +6,7 @@ The product name is Salon. The GitHub repo and Pages path are `salon`.
 
 This tree is a full mirror of Vellum V4 (`c9c405`), including every local catalog text and opening (389 each). Do not thin the catalog to save size.
 
-On GitHub Pages the app is a **static SPA**. Reading, shuffle, rituals, and local progress work in the browser. Live accounts, clubs, and RTC sitting need a hosted backend (see below).
+On GitHub Pages the app is a **static SPA**. Reading, shuffle, rituals, local progress, and **reader sign-up / sign-in** work in the browser. Synced accounts, clubs, and RTC sitting need a hosted backend (see below).
 
 ## Public URL
 
@@ -45,6 +45,7 @@ npm run build:vercel
 - Progress, favorites, kept breaths — `localStorage` (`vellum-v1`)
 - Continue-reading on Home (header + primary resume cell) from that same local progress
 - Friends: claim an `@username`, follow Salon readers, see what they are sitting — local-first
+- Reader accounts on **You** (`/profile`) and `/login`: `@username` + email + password. First visit creates; return visits sign in. Session restores after a hard refresh from `localStorage` (`salon-reader-v1`). Password is stored as a PBKDF2 hash, never plaintext. The same `@handle` is shared with Friends so a name is not claimed twice on this phone.
 - Share links that stay on this origin (`/salon/read/…`)
 
 ## Env / backend gaps (not on Pages)
@@ -53,7 +54,8 @@ Pages has no Node server. These stay off unless you host the app with a real bac
 
 | Feature | Needs | Pages behavior |
 | --- | --- | --- |
-| Sign-in / staff desk | `VITE_AUTH_ENABLED=true`, Better Auth secret, OAuth broker, `DATABASE_URL` | Disabled. Profile is local. `/login` explains the gap. |
+| Reader sign-up / sign-in | Works offline on this device (`salon-reader-v1`) | Create account and sign in on You / login. Session survives refresh. Not synced across phones. |
+| Hosted Better Auth / staff desk | `VITE_AUTH_ENABLED=true`, `VITE_LIVE_BACKEND=true`, Better Auth secret, OAuth broker, `DATABASE_URL` | Flags stay false on Pages so the fake Dev User is not treated as signed in. When a hosted backend is on, You / login also call `authClient.signUp.email` / `signIn.email`. Staff desk stays closed here. |
 | Synced favorites / reading | Auth + Postgres / PGlite | Local only. |
 | Friends graph / `@username` | Hosted follow + handle APIs (none in this tree yet) | Local `localStorage` graph. Catalog readers are followable offline. Cross-device / other-user sync needs a live backend. |
 | Book clubs / invites | `VITE_LIVE_BACKEND=true` + DB | Create/list/join fail closed; cards stay local. |

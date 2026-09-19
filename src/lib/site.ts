@@ -11,6 +11,13 @@ export const APP_BASE_PATH = "/salon";
  */
 export const liveBackendEnabled = import.meta.env.VITE_LIVE_BACKEND === "true";
 
+/**
+ * True when Better Auth `/api/auth` can actually run (hosted backend + auth
+ * flag). Pages keeps both flags false so a fake Dev User is not a session.
+ */
+export const liveAuthAvailable =
+  liveBackendEnabled && import.meta.env.VITE_AUTH_ENABLED !== "false";
+
 /** Prefix a root-relative app path with the Vite / Pages base. */
 export function withBase(path: string) {
   const base = String(import.meta.env.BASE_URL || "/").replace(/\/$/, "");

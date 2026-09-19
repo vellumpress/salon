@@ -12,6 +12,7 @@ import {
 } from "@/lib/account";
 import { useCurrentUserState } from "@/lib/auth/use-current-user";
 import { SignOutMark } from "@/components/sign-out";
+import { liveAuthAvailable } from "@/lib/site";
 import { searchShelf, shelfWork, type ShelfWork } from "@/lib/catalog/shelf";
 import { fillClass, fillInk, fillOf } from "@/lib/mondrian";
 import { cn } from "@/lib/utils";
@@ -23,7 +24,9 @@ export const Route = createFileRoute("/desk")({
 function DeskPage() {
   const { user, isPending } = useCurrentUserState();
   if (isPending) return <DeskFrame title="Desk" />;
-  if (!user) return <Navigate to="/login" search={{ door: "staff" }} />;
+  if (!liveAuthAvailable || !user || user.isDevFallback) {
+    return <Navigate to="/login" search={{ door: "staff" }} />;
+  }
   return <DeskBody />;
 }
 

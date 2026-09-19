@@ -4,11 +4,11 @@ import { claimStaff } from "@/lib/account";
 import {
   GROK_PROVIDERS,
   authClient,
-  authEnabled,
-  signIn,
+  signIn as signInProvider,
 } from "@/lib/auth/client";
-import { useCurrentUserState } from "@/lib/auth/use-current-user";
-import { withBase } from "@/lib/site";
+import { ReaderAuthForm } from "@/components/reader-auth-form";
+import { liveAuthAvailable, withBase } from "@/lib/site";
+import { useReaderSession, type ReaderAuthMode } from "@/lib/use-reader-session";
 import { cn } from "@/lib/utils";
 
 type Door = "reader" | "staff";
@@ -40,9 +40,7 @@ function LoginPending() {
       <LoginHeader />
       <div className="flex min-h-36 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
         <p className="type-kicker opacity-80">This sitting</p>
-        <p className="mt-2 type-title">
-          Sign in to sit
-        </p>
+        <p className="mt-2 type-title">Create an account</p>
       </div>
     </div>
   );
@@ -61,49 +59,64 @@ function LoginHeader() {
       <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
         Salon
       </h1>
+      <Link
+        to="/profile"
+        className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
+      >
+        You
+      </Link>
     </header>
   );
 }
 
 function LoginPage() {
   const { door } = Route.useSearch();
-  const { user, isPending } = useCurrentUserState();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const { identity, isPending, hasAccounts, storeHandle, createAccount, signIn } =
+    useReaderSession();
+  const [mode, setMode] = useState<ReaderAuthMode>(hasAccounts ? "in" : "up");
   const [staffEmail, setStaffEmail] = useState("");
   const [staffPassword, setStaffPassword] = useState("");
-  const [busy, setBusy] = useState<"google" | "x" | "in" | "up" | "staff-in" | "staff-up" | null>(
+  const [busy, setBusy] = useState<"google" | "x" | "reader" | "staff-in" | "staff-up" | null>(
     null,
   );
   const [error, setError] = useState("");
   const [staffError, setStaffError] = useState("");
+  const [showStaff, setShowStaff] = useState(door === "staff");
+
+  useEffect(() => {
+    if (hasAccounts) setMode("in");
+  }, [hasAccounts]);
 
   useEffect(() => {
     if (door !== "staff") return;
+    setShowStaff(true);
     const jump = () => document.getElementById("staff")?.scrollIntoView({ block: "start" });
     jump();
     const id = window.requestAnimationFrame(jump);
     return () => window.cancelAnimationFrame(id);
   }, [door]);
 
-  if (!isPending && user && !busy) {
+  if (!isPending && identity && !busy) {
     return <Navigate to={door === "staff" ? "/desk" : "/profile"} />;
   }
 
-  async function withReaderEmail(mode: "in" | "up") {
-    const address = email.trim().toLowerCase();
-    if (!address || !address.includes("@")) {
-      setError("A real email, please.");
-      return;
-    }
-    if (password.length < 8) {
-      setError("Eight characters at least.");
-      return;
-    }
-    setBusy(mode);
+  async function withReaderCreate(input: { handle: string; email: string; password: string }) {
+    setBusy("reader");
     setError("");
     try {
-      await runEmail(mode, address, password, address.split("@")[0] || "Reader");
+      await createAccount(input);
+      window.location.assign(withBase("/profile"));
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Could not create the account");
+      setBusy(null);
+    }
+  }
+
+  async function withReaderSignIn(input: { email: string; password: string }) {
+    setBusy("reader");
+    setError("");
+    try {
+      await signIn(input);
       window.location.assign(withBase("/profile"));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not sign in");
@@ -111,7 +124,7 @@ function LoginPage() {
     }
   }
 
-  async function withStaffEmail(mode: "staff-in" | "staff-up") {
+  async function withStaffEmail(staffMode: "staff-in" | "staff-up") {
     const address = staffEmail.trim().toLowerCase();
     if (!isVellumPressEmail(address)) {
       setStaffError("Staff sit at vellum.press");
@@ -121,11 +134,15 @@ function LoginPage() {
       setStaffError("Eight characters at least.");
       return;
     }
-    setBusy(mode);
+    if (!liveAuthAvailable) {
+      setStaffError("The desk needs a hosted backend.");
+      return;
+    }
+    setBusy(staffMode);
     setStaffError("");
     try {
       await runEmail(
-        mode === "staff-up" ? "up" : "in",
+        staffMode === "staff-up" ? "up" : "in",
         address,
         staffPassword,
         address.split("@")[0] || "Staff",
@@ -145,11 +162,14 @@ function LoginPage() {
         <div className="flex min-h-36 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
           <p className="type-kicker opacity-80">This sitting</p>
           <p className="mt-2 type-title">
-            Sign in to sit
+            {mode === "up" ? "Create an account" : "Sign in"}
+          </p>
+          <p className="type-pitch mt-2.5 max-w-xl text-paper/70">
+            An @name, an email, a password. No staff door for readers.
           </p>
         </div>
 
-        {authEnabled ? (
+        {liveAuthAvailable ? (
           <div className="flex flex-col gap-px bg-ink">
             {GROK_PROVIDERS.map((provider) => (
               <button
@@ -159,7 +179,7 @@ function LoginPage() {
                 onClick={() => {
                   setBusy(provider.providerId === "grok-google" ? "google" : "x");
                   setError("");
-                  void signIn(provider.providerId, {
+                  void signInProvider(provider.providerId, {
                     callbackURL: withBase("/profile"),
                     errorCallbackURL: withBase("/login"),
                   }).catch((err: unknown) => {
@@ -178,72 +198,66 @@ function LoginPage() {
               </button>
             ))}
           </div>
+        ) : null}
+
+        <ReaderAuthForm
+          mode={mode}
+          onMode={setMode}
+          defaultHandle={storeHandle}
+          busy={busy === "reader"}
+          error={error}
+          onCreate={(input) => void withReaderCreate(input)}
+          onSignIn={(input) => void withReaderSignIn(input)}
+        />
+
+        {showStaff ? (
+          <>
+            <div
+              id="staff"
+              className="flex min-h-36 flex-col justify-end bg-red p-5 text-paper sm:p-8"
+            >
+              <p className="type-kicker opacity-80">Staff</p>
+              <p className="mt-2 type-title">The desk</p>
+              <p className="mt-3 max-w-xl font-serif text-lg text-paper/80">
+                A vellum.press email, then the shelf. Readers do not need this door.
+              </p>
+            </div>
+            {liveAuthAvailable ? (
+              <StaffForm
+                email={staffEmail}
+                password={staffPassword}
+                error={staffError}
+                busyIn={busy === "staff-in"}
+                busyUp={busy === "staff-up"}
+                disabled={Boolean(busy)}
+                onEmail={setStaffEmail}
+                onPassword={setStaffPassword}
+                onSignIn={() => void withStaffEmail("staff-in")}
+                onCreate={() => void withStaffEmail("staff-up")}
+              />
+            ) : (
+              <p className="border-b border-ink px-5 py-6 font-serif text-lg text-ink/70">
+                Staff accounts need a hosted backend. This Pages build keeps the desk closed.
+              </p>
+            )}
+          </>
         ) : (
-          <p className="border-b border-ink px-5 py-6 font-serif text-lg text-ink/70">
-            Accounts need a hosted backend. This Pages build is the static reader —
-            progress and favorites stay on this phone.
-          </p>
+          <button
+            type="button"
+            onClick={() => setShowStaff(true)}
+            className="flex h-12 w-full items-center justify-center border-b border-ink font-sans text-xs uppercase tracking-chrome text-muted"
+          >
+            Staff desk
+          </button>
         )}
-
-        {authEnabled ? (
-          <EmailForm
-            email={email}
-            password={password}
-            emailName="email"
-            passwordName="password"
-            emailPlaceholder="you@vellum"
-            error={error}
-            busyIn={busy === "in"}
-            busyUp={busy === "up"}
-            disabled={Boolean(busy)}
-            onEmail={setEmail}
-            onPassword={setPassword}
-            onSignIn={() => void withReaderEmail("in")}
-            onCreate={() => void withReaderEmail("up")}
-          />
-        ) : null}
-
-        <div
-          id="staff"
-          className="flex min-h-36 flex-col justify-end bg-red p-5 text-paper sm:p-8"
-        >
-          <p className="type-kicker opacity-80">Staff</p>
-          <p className="mt-2 type-title">
-            The desk
-          </p>
-          <p className="mt-3 max-w-xl font-serif text-lg text-paper/80">
-            A vellum.press email, then the shelf.
-          </p>
-        </div>
-
-        {authEnabled ? (
-          <EmailForm
-            email={staffEmail}
-            password={staffPassword}
-            emailName="staff-email"
-            passwordName="staff-password"
-            emailPlaceholder="you@vellum.press"
-            error={staffError}
-            busyIn={busy === "staff-in"}
-            busyUp={busy === "staff-up"}
-            disabled={Boolean(busy)}
-            onEmail={setStaffEmail}
-            onPassword={setStaffPassword}
-            onSignIn={() => void withStaffEmail("staff-in")}
-            onCreate={() => void withStaffEmail("staff-up")}
-          />
-        ) : null}
       </div>
     </div>
   );
 }
 
-function EmailForm({
+function StaffForm({
   email,
   password,
-  emailName,
-  passwordName,
-  emailPlaceholder,
   error,
   busyIn,
   busyUp,
@@ -255,9 +269,6 @@ function EmailForm({
 }: {
   email: string;
   password: string;
-  emailName: string;
-  passwordName: string;
-  emailPlaceholder: string;
   error: string;
   busyIn: boolean;
   busyUp: boolean;
@@ -281,12 +292,12 @@ function EmailForm({
         </span>
         <input
           type="email"
-          name={emailName}
+          name="staff-email"
           autoComplete="email"
           value={email}
           onChange={(event) => onEmail(event.target.value)}
           className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-xl text-ink placeholder:text-muted focus-visible:outline-none"
-          placeholder={emailPlaceholder}
+          placeholder="you@vellum.press"
         />
       </label>
       <label className="flex items-stretch border-b border-ink">
@@ -295,7 +306,7 @@ function EmailForm({
         </span>
         <input
           type="password"
-          name={passwordName}
+          name="staff-password"
           autoComplete="current-password"
           value={password}
           onChange={(event) => onPassword(event.target.value)}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { signOut } from "@/lib/auth/client";
+import { useReaderSession } from "@/lib/use-reader-session";
 import { cn } from "@/lib/utils";
 
 export function SignOutMark({
@@ -9,6 +9,7 @@ export function SignOutMark({
   to?: string;
   className?: string;
 }) {
+  const { signOut } = useReaderSession();
   const [busy, setBusy] = useState(false);
   return (
     <button
