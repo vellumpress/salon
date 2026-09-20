@@ -163,6 +163,22 @@ export const SHELF: ShelfWork[] = [
   { id: "metamorphosis", title: "The Metamorphosis", author: "Franz Kafka", year: 1915, form: "other", language: "German", minutes: 40 }, // Thea PULL EN 2026-09-15: PG 5200 Wyllie copyrighted — catalog-only
   { id: "underdogs", title: "The Underdogs", author: "Mariano Azuela", year: 1915, form: "novel", language: "Spanish", local: true, opening: "\"How beautiful the revolution!", breaths: 2901, minutes: 363, gutenberg: 549 },
   { id: "home-world", title: "The Home and the World", author: "Rabindranath Tagore", year: 1916, form: "novel", language: "Bengali", minutes: 160, gutenberg: 7166 },
+  {
+    id: "the-home-and-the-world",
+    title: "The Home and the World",
+    author: "Rabindranath Tagore (tr. Surendranath Tagore)",
+    year: 1916,
+    form: "novel",
+    language: "English",
+    minutes: 2,
+    local: true,
+    gutenberg: 7166,
+    opening:
+      "Mother, today there comes back to mind the vermilion mark at the parting of your hair, the *sari* which you used to wear, with its wide red border, and those wonderful eyes of yours, full of depth and peace.",
+    breaths: 8,
+    intro:
+      "Mother’s vermilion mark, a red-bordered *sari*, a dark face that shamed vanity — and a daughter furious with her mirror. Bimala remembers beauty, colour, and duty in a Bengal house. Salon stops at the mirror prayer.",
+  },
   { id: "devdas", title: "Devdas", author: "Sarat Chandra Chattopadhyay", year: 1917, form: "novel", language: "Bengali", minutes: 160 },
   { id: "quiroga", title: "Tales of Love, Madness, and Death", author: "Horacio Quiroga", year: 1917, form: "stories", language: "Spanish", minutes: 80 }, // Thea HOLD EN 2026-09-16: ES OK; do not wire modern EN
   { id: "heartless", title: "The Heartless", author: "Yi Kwang-su", year: 1917, form: "novel", language: "Korean", minutes: 160 },
@@ -541,7 +557,22 @@ export const SHELF: ShelfWork[] = [
   { id: "misericordia", title: "Misericordia", author: "Benito Pérez Galdós", year: 1897, form: "novel", language: "Spanish", minutes: 160, gutenberg: 21831 },
   { id: "poems-from-the-divan-of-hafiz", title: "Poems from the Divan of Hafiz", author: "Hafiz (tr. Gertrude Lowthian Bell)", year: 1897, form: "poem", language: "Persian", minutes: 90, gutenberg: 74883 },
   { id: "the-beetle", title: "The Beetle", author: "Richard Marsh", year: 1897, form: "novel", language: "English", minutes: 645, local: true, opening: "BOOK I.", breaths: 5156, gutenberg: 5164 },
-  { id: "the-gadfly", title: "The Gadfly", author: "Ethel Lilian Voynich", year: 1897, form: "novel", language: "English", local: true, opening: "Arthur sat in the library of the theological seminary at Pisa, looking through a pile of manuscript sermons.", breaths: 6653, minutes: 832, gutenberg: 3431 },
+  {
+    id: "the-gadfly",
+    title: "The Gadfly",
+    author: "Ethel Lilian Voynich",
+    year: 1897,
+    form: "novel",
+    language: "English",
+    minutes: 832,
+    local: true,
+    gutenberg: 3431,
+    opening:
+      "Arthur sat in the library of the theological seminary at Pisa, looking through a pile of manuscript sermons.",
+    breaths: 6653,
+    intro:
+      "Pisa seminary heat — a lost sermon page, a caressing *Padre*, and a fruitseller calling *Fragola!* down the street. Later violence comes after this sit.",
+  },
   { id: "the-well-beloved", title: "The Well-Beloved", author: "Thomas Hardy", year: 1897, form: "novel", language: "English", minutes: 346, local: true, opening: "A person who differed from the local wayfarers was climbing the steep road which leads through the sea-skirted townlet definable as the Street of Wells, and forms a pass into that Gibraltar of Wessex, the singular peninsula once an island, and still called such, that stretches out like the head of a bird into the English Channel.", breaths: 2766, gutenberg: 3326 },
   { id: "what-maisie-knew", title: "What Maisie Knew", author: "Henry James", year: 1897, form: "novel", language: "English", minutes: 160, gutenberg: 7118 },
   {
@@ -651,7 +682,21 @@ export const SHELF: ShelfWork[] = [
   { id: "the-saint", title: "The Saint", author: "Antonio Fogazzaro", year: 1905, form: "novel", language: "Italian", minutes: 160, gutenberg: 8455 },
   { id: "the-song-of-the-blood-red-flower", title: "The Song of the Blood-Red Flower", author: "Johannes Linnankoski", year: 1905, form: "novel", language: "Finnish", minutes: 160, gutenberg: 12935 },
   { id: "the-troll-garden-and-selected-stories", title: "The Troll Garden, and Selected Stories", author: "Willa Cather", year: 1905, form: "stories", language: "English", minutes: 574, local: true, opening: "Near Rattlesnake Creek, on the side of a little draw stood Canute's shanty.", breaths: 4590, gutenberg: 346 },
-  { id: "where-angels-fear-to-tread", title: "Where Angels Fear to Tread", author: "E. M. Forster", year: 1905, form: "novel", language: "English", minutes: 160, gutenberg: 2948 },
+  {
+    id: "where-angels-fear-to-tread",
+    title: "Where Angels Fear to Tread",
+    author: "E. M. Forster",
+    year: 1905,
+    form: "novel",
+    language: "English",
+    minutes: 2,
+    local: true,
+    gutenberg: 2948,
+    opening: "They were all at Charing Cross to see Lilia off—Philip, Harriet, Irma, Mrs. Herriton herself.",
+    breaths: 6,
+    intro:
+      "Charing Cross chaos — Lilia laughing like royalty while Philip floods her with little towns to see: Gubbio, Pienza, Monteriano. Later the plot darkens; this open stays comic.",
+  },
   { id: "beneath-the-wheel", title: "Beneath the Wheel", author: "Hermann Hesse", year: 1906, form: "novel", language: "German", minutes: 160 },
   { id: "kusamakura-unhuman-tour", title: "Kusamakura (Unhuman Tour)", author: "Natsume Sōseki", year: 1906, form: "novel", language: "Japanese", minutes: 160 },
   { id: "moon-face-and-other-stories", title: "Moon-Face, and Other Stories", author: "Jack London", year: 1906, form: "stories", language: "English", minutes: 445, local: true, opening: "John Claverhouse was a moon-faced man.", breaths: 3563, gutenberg: 1089 },

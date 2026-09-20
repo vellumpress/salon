@@ -18,6 +18,10 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * On a Chinese Screen (China / waking Host-a-sit Parlour).
  * Futility (Petersburg coast / waking Host-a-sit sisters).
  * Trooper Peter Halket (Mashonaland / before-sleep Host-a-sit kopje).
+ * The Home and the World (Bengal / before-sleep) — worldly Asia, behind the
+ * Featured lead (April → Bridge → Maggot → Mirth → Quicksand).
+ * Where Angels Fear to Tread and The Gadfly are ritual Next sits only —
+ * not Featured-track, not Featured carousel.
  * The Poison Tree is Later (Bengal / unwind) — not Next, not Featured.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
@@ -34,6 +38,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "on-a-chinese-screen",
   "futility",
   "trooper-peter-halket",
+  "the-home-and-the-world",
 ] as const;
 
 /** Mira pack — Adapted by Salon lane only. Do not add to Featured / Next. */

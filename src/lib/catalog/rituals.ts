@@ -142,6 +142,12 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `His wife makes him promise: if a storm rises, leave the boat. On the Ganges in Joisto, the weather keeps that promise.`,
   "trooper-peter-halket":
     `A lone Chartered Company trooper on a Mashonaland kopje, fire quivering, inventing gold companies in the dark after losing his column. Written in 1897, the open already frames colonial scouting; missionary and racial language harden after Salon stops—before the stranger arrives. We cut there so the sit stays a night watch, not a sermon. If you Host further, name that colonial frame up front.`,
+  "the-home-and-the-world":
+    `Mother’s vermilion mark, a red-bordered *sari*, a dark face that shamed vanity — and a daughter furious with her mirror. Bimala remembers beauty, colour, and duty in a Bengal house. Salon stops at the mirror prayer.`,
+  "where-angels-fear-to-tread":
+    `Charing Cross chaos — Lilia laughing like royalty while Philip floods her with little towns to see: Gubbio, Pienza, Monteriano. Later the plot darkens; this open stays comic.`,
+  "the-gadfly":
+    `Pisa seminary heat — a lost sermon page, a caressing *Padre*, and a fruitseller calling *Fragola!* down the street. Later violence comes after this sit.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":
@@ -188,6 +194,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "high-wind-jamaica",
       "vera",
       "trooper-peter-halket",
+      "the-home-and-the-world",
+      "the-gadfly",
       "the-pattern",
       "it-was-not-nervousness",
       "between-the-drop-and-the-water",
@@ -210,6 +218,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "enchanted-april",
       "on-a-chinese-screen",
       "futility",
+      "where-angels-fear-to-tread",
       "the-rubaiyat-of-omar-khayyam",
       "spring-and-all",
       "a-few-figs-from-thistles",
@@ -307,6 +316,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   futility: 4,
   "poison-tree": 5,
   "trooper-peter-halket": 4,
+  "the-home-and-the-world": 2,
+  "where-angels-fear-to-tread": 2,
+  "the-gadfly": 2,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

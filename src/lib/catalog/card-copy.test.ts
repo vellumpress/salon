@@ -60,6 +60,9 @@ test("known origin overrides", () => {
     "high-wind-jamaica": "Jamaica",
     "noli-me-tangere": "Philippines",
     vera: "United Kingdom",
+    "the-home-and-the-world": "India",
+    "where-angels-fear-to-tread": "United Kingdom",
+    "the-gadfly": "Ireland",
     "on-a-chinese-screen": "United Kingdom",
     futility: "United Kingdom",
     "poison-tree": "India",
@@ -158,6 +161,18 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /Book I/i,
       opening: /^Selden paused in surprise/,
     },
+    "the-home-and-the-world": {
+      scene: /Mirror prayer/i,
+      opening: /^Mother, today there comes back to mind/,
+    },
+    "where-angels-fear-to-tread": {
+      scene: /Charing Cross/i,
+      opening: /^They were all at Charing Cross/,
+    },
+    "the-gadfly": {
+      scene: /Fragola/i,
+      opening: /^Arthur sat in the library/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -246,6 +261,22 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
         packed.breaths.map((b) => b.text).join(" "),
         /Tuxedo|Bellomont|three-fifteen/i,
       );
+    }
+    if (id === "the-home-and-the-world") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /model of what woman should be\.?$/);
+      assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /\bMOTHER\b/);
+      assert.ok(packed.breaths.some((breath) => /\*sari\*/.test(breath.text)));
+    }
+    if (id === "where-angels-fear-to-tread") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /Monteriano\.?"?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /Gino|baby|carriage accident/i,
+      );
+    }
+    if (id === "the-gadfly") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /Fragola/);
+      assert.ok(packed.breaths.some((breath) => /\*Fragola!\*/.test(breath.text)));
     }
   }
 });
@@ -601,6 +632,118 @@ test("Trooper Peter Halket opens on the kopje fire and stops before the stranger
   );
   assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
   assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("The Home and the World opens on Mother’s vermilion and binds only the mirror-prayer sit", () => {
+  const work = SHELF.find((item) => item.id === "the-home-and-the-world");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 7166);
+  assert.equal(work!.title, "The Home and the World");
+  assert.equal(work!.author, "Rabindranath Tagore (tr. Surendranath Tagore)");
+  assert.equal(work!.year, 1916);
+  assert.match(work!.opening ?? "", /^Mother, today there comes back to mind/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/the-home-and-the-world.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/the-home-and-the-world.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.note, /beauty, colour, and duty/);
+  assert.match(packed.note, /Salon stops at the mirror prayer/);
+  assert.doesNotMatch(packed.note, /Host further|Featured-track|Recommend/i);
+  assert.match(packed.scenes[0]?.title ?? "", /Mirror prayer/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^Mother, today there comes back to mind/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /model of what woman should be\.?$/);
+  assert.equal(packed.breaths[0]?.text.startsWith("Mother,"), true);
+  assert.doesNotMatch(packed.breaths.map((breath) => breath.text).join("\n"), /\bMOTHER\b/);
+  assert.ok(packed.breaths.some((breath) => /\*sari\*/.test(breath.text)));
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+  for (const pack of [packed, full]) {
+    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+    assert.doesNotMatch(joined, /project gutenberg/i);
+    const decorative = pack.breaths.filter((breath) => {
+      const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
+      return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
+    });
+    assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
+  }
+});
+
+test("Where Angels Fear to Tread opens at Charing Cross and binds only the town-list sit", () => {
+  const work = SHELF.find((item) => item.id === "where-angels-fear-to-tread");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 2948);
+  assert.equal(work!.title, "Where Angels Fear to Tread");
+  assert.equal(work!.author, "E. M. Forster");
+  assert.equal(work!.year, 1905);
+  assert.match(work!.opening ?? "", /^They were all at Charing Cross/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/where-angels-fear-to-tread.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/where-angels-fear-to-tread.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Charing Cross/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^They were all at Charing Cross/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /Monteriano\.?"?$/);
+  assert.equal(
+    packed.breaths.some((breath) => /Gino|baby/i.test(breath.text)),
+    false,
+    "open-at should stop before Gino / the rest of the novel",
+  );
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+  for (const pack of [packed, full]) {
+    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+    assert.doesNotMatch(joined, /project gutenberg/i);
+    const decorative = pack.breaths.filter((breath) => {
+      const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
+      return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
+    });
+    assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
+  }
+});
+
+test("The Gadfly opens in Pisa and binds the Fragola sit, with full text for continue", () => {
+  const work = SHELF.find((item) => item.id === "the-gadfly");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 3431);
+  assert.equal(work!.title, "The Gadfly");
+  assert.equal(work!.author, "Ethel Lilian Voynich");
+  assert.equal(work!.year, 1897);
+  assert.match(work!.opening ?? "", /^Arthur sat in the library/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/the-gadfly.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/the-gadfly.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Fragola/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^Arthur sat in the library/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /Fragola/);
+  assert.ok(packed.breaths.some((breath) => /\*Fragola!\*/.test(breath.text)));
+  assert.equal(
+    packed.breaths.some((breath) => /Switzerland|Burton/i.test(breath.text)),
+    false,
+    "open-at should stop before the rest of the novel",
+  );
+  assert.ok(full.breaths.length > packed.breaths.length, "full PG text remains for continue");
+  assert.match(full.breaths[0]?.text ?? "", /^Arthur sat in the library/);
+  assert.ok(full.scenes.some((scene) => /CHAPTER II/i.test(scene.title)));
+  const joined = packed.breaths.map((breath) => breath.text).join("\n");
+  assert.doesNotMatch(joined, /project gutenberg/i);
+  const decorative = packed.breaths.filter((breath) => {
+    const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
+    return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
+  });
+  assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
 });
 
 test("The Cherry Orchard is a readable four-act play, not one breath per page", () => {

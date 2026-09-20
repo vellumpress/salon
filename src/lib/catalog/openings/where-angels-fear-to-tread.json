@@ -1,0 +1,51 @@
+{
+  "id": "where-angels-fear-to-tread",
+  "title": "Where Angels Fear to Tread",
+  "author": "E. M. Forster",
+  "year": "1905",
+  "note": "Waking ritual sit — Charing Cross.\n\nCharing Cross chaos — Lilia laughing like royalty while Philip floods her with little towns to see: Gubbio, Pienza, Monteriano.\n\nWhere Angels Fear to Tread (Forster; 1905; PG 2948). Sit through the town list. Stop before the rest of the novel.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Charing Cross",
+      "place": "one sitting",
+      "reentry": "They were all at Charing Cross to see Lilia off—Philip, Harriet, Irma, Mrs. Herriton herself.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "They were all at Charing Cross to see Lilia off—Philip, Harriet, Irma, Mrs. Herriton herself."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Even Mrs. Theobald, squired by Mr. Kingcroft, had braved the journey from Yorkshire to bid her only daughter good-bye."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Miss Abbott was likewise attended by numerous relatives, and the sight of so many people talking at once and saying such different things caused Lilia to break into ungovernable peals of laughter."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Quite an ovation,\" she cried, sprawling out of her first-class carriage. \"They'll take us for royalty. Oh, Mr. Kingcroft, get us foot-warmers.\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "The good-natured young man hurried away, and Philip, taking his place, flooded her with a final stream of advice and injunctions—where to stop, how to learn Italian, when to use mosquito-nets, what pictures to look at."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Remember,\" he concluded, \"that it is only by going off the track that you get to know the country. See the little towns—Gubbio, Pienza, Cortona, San Gemignano, Monteriano.\""
+    }
+  ]
+}
