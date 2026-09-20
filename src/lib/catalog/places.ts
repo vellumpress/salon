@@ -52,6 +52,9 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   futility: { label: "Petersburg coast", region: "ru" },
   "poison-tree": { label: "Bengal", region: "in" },
   "trooper-peter-halket": { label: "Mashonaland", region: "za" },
+  "the-home-and-the-world": { label: "Bengal", region: "in" },
+  "where-angels-fear-to-tread": { label: "England → Italy", region: "it" },
+  "the-gadfly": { label: "Pisa", region: "it" },
 
   // Named examples
   botchan: { label: "Tokyo", region: "jp" },

@@ -28,6 +28,9 @@ test("Featured carousel is April, Bridge, Maggot, then Mirth, then Quicksand", (
   assert.equal(FEATURED_CAROUSEL_IDS.includes("futility"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("poison-tree"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("trooper-peter-halket"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-home-and-the-world"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("where-angels-fear-to-tread"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-gadfly"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("miss-brill-adapted"), false);
@@ -52,6 +55,7 @@ test("Next Featured-track no longer lists Mirth or Quicksand", () => {
     "on-a-chinese-screen",
     "futility",
     "trooper-peter-halket",
+    "the-home-and-the-world",
   ]);
   assert.equal(curatorialTrack("quicksand"), "featured");
   assert.equal(curatorialTrack("the-house-of-mirth"), "featured");
@@ -65,6 +69,9 @@ test("Next Featured-track no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("on-a-chinese-screen"), "next");
   assert.equal(curatorialTrack("futility"), "next");
   assert.equal(curatorialTrack("trooper-peter-halket"), "next");
+  assert.equal(curatorialTrack("the-home-and-the-world"), "next");
+  assert.equal(curatorialTrack("where-angels-fear-to-tread"), "later");
+  assert.equal(curatorialTrack("the-gadfly"), "later");
   assert.equal(curatorialTrack("poison-tree"), "later");
 });
 
@@ -329,6 +336,71 @@ test("House of Mirth stays on unwind and is Featured, not Next", () => {
   assert.equal(curatorialTrack("the-house-of-mirth"), "featured");
   const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
   assert.ok(unwind?.workIds.includes("the-house-of-mirth"));
+});
+
+test("The Home and the World is a local before-sleep bind on Next Featured-track", () => {
+  const work = SHELF.find((item) => item.id === "the-home-and-the-world");
+  assert.ok(work);
+  assert.equal(work.year, 1916);
+  assert.equal(work.title, "The Home and the World");
+  assert.equal(work.author, "Rabindranath Tagore (tr. Surendranath Tagore)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 7166);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^Mother, today there comes back to mind/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("the-home-and-the-world"));
+  assert.ok(lane!.workIds.indexOf("the-home-and-the-world") > lane!.workIds.indexOf("quicksand"));
+  assert.equal(
+    RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("the-home-and-the-world"),
+    false,
+  );
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-home-and-the-world"), false);
+  assert.equal(curatorialTrack("the-home-and-the-world"), "next");
+  const stub = SHELF.find((item) => item.id === "home-world");
+  assert.ok(stub);
+  assert.equal(stub.local, undefined);
+  assert.notEqual(stub.id, work.id);
+});
+
+test("Where Angels Fear to Tread is a local waking bind on Next, not Featured-track", () => {
+  const work = SHELF.find((item) => item.id === "where-angels-fear-to-tread");
+  assert.ok(work);
+  assert.equal(work.year, 1905);
+  assert.equal(work.title, "Where Angels Fear to Tread");
+  assert.equal(work.author, "E. M. Forster");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 2948);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^They were all at Charing Cross/);
+  const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
+  assert.ok(lane?.workIds.includes("where-angels-fear-to-tread"));
+  assert.ok(lane!.workIds.indexOf("where-angels-fear-to-tread") > lane!.workIds.indexOf("enchanted-april"));
+  assert.equal(
+    (NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("where-angels-fear-to-tread"),
+    false,
+  );
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("where-angels-fear-to-tread"), false);
+  assert.equal(curatorialTrack("where-angels-fear-to-tread"), "later");
+});
+
+test("The Gadfly is a local before-sleep bind on Next, behind Home and the World", () => {
+  const work = SHELF.find((item) => item.id === "the-gadfly");
+  assert.ok(work);
+  assert.equal(work.year, 1897);
+  assert.equal(work.title, "The Gadfly");
+  assert.equal(work.author, "Ethel Lilian Voynich");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 3431);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^Arthur sat in the library/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("the-gadfly"));
+  assert.ok(lane!.workIds.indexOf("the-gadfly") > lane!.workIds.indexOf("the-home-and-the-world"));
+  assert.ok(lane!.workIds.indexOf("the-home-and-the-world") > lane!.workIds.indexOf("quicksand"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-gadfly"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-gadfly"), false);
+  assert.equal(curatorialTrack("the-gadfly"), "later");
 });
 
 test("Featured five stay findable on ritual lanes, not a homepage rail", () => {

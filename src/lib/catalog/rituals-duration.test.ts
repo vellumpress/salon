@@ -218,6 +218,42 @@ test("Mr. Fortune’s Maggot unwind sit is the Fanua-call cut, not the novel", (
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
+test("The Home and the World before-sleep sit is the mirror-prayer cut", () => {
+  const item = work({
+    id: "the-home-and-the-world",
+    form: "novel",
+    breaths: 8,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Where Angels Fear to Tread waking sit is the platform cut", () => {
+  const item = work({
+    id: "where-angels-fear-to-tread",
+    form: "novel",
+    breaths: 6,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("The Gadfly before-sleep sit is the Fragola cut, not the novel", () => {
+  const item = work({
+    id: "the-gadfly",
+    form: "novel",
+    breaths: 6653,
+    minutes: 832,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
 test("Trooper Peter Halket before-sleep sit is the kopje-fire cut, not the novel", () => {
   const item = work({
     id: "trooper-peter-halket",

@@ -47,6 +47,12 @@ const BLURBS: Record<string, string> = {
     "His wife makes him promise: if a storm rises, leave the boat—and on the Ganges in Joisto the weather keeps that promise.",
   "trooper-peter-halket":
     "Alone on a kopje with a fire that only quivers—Trooper Peter Halket has lost his column, and the dark starts inventing fortunes for him.",
+  "the-home-and-the-world":
+    "A daughter furious with her mirror, and a mother’s vermilion mark that still shames vanity.",
+  "where-angels-fear-to-tread":
+    "Charing Cross chaos — Lilia laughing like royalty while Philip names the little towns: Gubbio, Pienza, Monteriano.",
+  "the-gadfly":
+    "Pisa seminary heat, a lost sermon page, and a fruitseller calling Fragola! down the street.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:
@@ -465,7 +471,6 @@ const BLURBS: Record<string, string> = {
   "the-longest-journey": "Forster’s Cambridge, a brother, and a life that keeps choosing the wrong loyalty.",
   "the-celestial-omnibus-and-other-stories": "Forster fantasies where a bus might actually go to heaven.",
   "the-eternal-moment-and-other-stories": "Later Forster stories of Italy, time, and the thing you didn’t say.",
-  "where-angels-fear-to-tread": "English visitors in Italy, and a baby who becomes a battlefield.",
   "a-passage-to-india": "A cave, an accusation, and the empire failing a friendship.",
   "the-country-house": "Galsworthy’s estate, a scandal, and the class that calls it taste.",
   "the-forsyte-saga": "A family that owns things, including people.",
@@ -528,7 +533,6 @@ const BLURBS: Record<string, string> = {
   "the-woman-who-did": "Grant Allen’s heroine who will not marry, and the novel that made a scandal of it.",
   "the-green-carnation": "Hichens’ satire of the Wilde circle, published while the trial was still a weather.",
   "the-sorrows-of-satan": "Corelli’s bestseller: the devil in London society, taking notes.",
-  "the-gadfly": "Voynich’s Italy of conspirators, a priest, and a son who will not forgive the church.",
   "esther-waters": "A servant has a child and keeps it — Moore’s London without the varnish.",
   "south-wind": "Capri as a talking shop: Douglas’s island of people who have already left England.",
   "a-voyage-to-arcturus": "Lindsay’s planet of colors that are also moral tests.",

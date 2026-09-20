@@ -130,6 +130,27 @@ test("Trooper Peter Halket uses the before-sleep kopje-fire sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|do not extend|locked/i);
 });
 
+test("The Home and the World uses the before-sleep mirror-prayer sit", () => {
+  const copy = readerIntro(shelfAsWork("the-home-and-the-world"));
+  assert.match(copy, /vermilion/);
+  assert.match(copy, /mirror/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
+});
+
+test("Where Angels Fear to Tread uses the waking Charing Cross sit", () => {
+  const copy = readerIntro(shelfAsWork("where-angels-fear-to-tread"));
+  assert.match(copy, /Charing Cross/);
+  assert.match(copy, /Monteriano/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
+});
+
+test("The Gadfly uses the before-sleep Fragola sit", () => {
+  const copy = readerIntro(shelfAsWork("the-gadfly"));
+  assert.match(copy, /Pisa/);
+  assert.match(copy, /Fragola/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
+});
+
 test("uses Featured before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),
