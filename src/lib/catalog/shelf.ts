@@ -240,6 +240,22 @@ export const SHELF: ShelfWork[] = [
     intro:
       "Lincoln Agrippa Daily—Banjo to anyone who knows him—comes swinging down the breakwater of Marseilles with an instrument in his hand and the whole Atlantic in his walk. Beach boys from the Caribbean, Senegal, the States, and points between share wine, jokes, and the next meal on the docks of the sailor’s dream port.\n\nClaude McKay’s Banjo, first published in 1929, is a story without a plot in the best sense: vignettes of music, hunger, friendship, and the international Black life that gathered between boxcar and bistro after the Great War. For New York readers who know McKay from Harlem, this is the same restless ear turned outward—to the Mediterranean, to the “Ditch,” to a city that feels as crowded and alive as any subway platform. Open at Chapter I and meet Banjo where the land meets the sea.",
   },
+  {
+    id: "high-wind-jamaica",
+    title: "A High Wind in Jamaica",
+    author: "Richard Hughes",
+    year: 1929,
+    form: "novel",
+    language: "English",
+    minutes: 3,
+    local: true,
+    gutenberg: 75530,
+    opening:
+      "One of the fruits of Emancipation in the West Indian islands is the number of the ruins, either attached to the houses that remain or within a stone’s throw of them: ruined slaves’ quarters, ruined sugar-grinding houses, ruined boiling houses; often ruined mansions that were too expensive to maintain.",
+    breaths: 12,
+    intro:
+      "Jamaica after Emancipation: ruins within a stone’s throw of what still stands, and Derby Hill swallowed by bush until the front door is held open by a rank plant. Richard Hughes’s 1929 novel opens on that swallowed house.",
+  },
   { id: "berlin", title: "Berlin Alexanderplatz", author: "Alfred Döblin", year: 1929, form: "novel", language: "German", minutes: 169, local: true, opening: "He stood before the gate of Tegel Prison and was free.", breaths: 3874 },
   { id: "barbara", title: "Doña Bárbara", author: "Rómulo Gallegos", year: 1929, form: "novel", language: "Spanish", minutes: 160 },
   { id: "grand-hotel", title: "Grand Hotel", author: "Vicki Baum", year: 1929, form: "novel", language: "German", minutes: 160 }, // Thea HOLD_EN_VERIFY 2026-09-16: Creighton US imprint uncleared — catalog-only / DE

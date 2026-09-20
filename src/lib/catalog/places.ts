@@ -39,6 +39,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   quicksand: { label: "Naxos / South", region: "us-south" },
   "attendants-confession": { label: "Brazil", region: "br" },
   rashomon: { label: "Kyoto / Japan", region: "jp" },
+  "high-wind-jamaica": { label: "Jamaica", region: "jm" },
 
   // Named examples + Italy stand-in (Enchanted April is not on this shelf)
   botchan: { label: "Tokyo", region: "jp" },

@@ -16,6 +16,7 @@ test("Featured carousel is unchanged and does not include Quicksand", () => {
   assert.equal(FEATURED_CAROUSEL_IDS.includes("quicksand"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("attendants-confession"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("rashomon"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("high-wind-jamaica"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("miss-brill-adapted"), false);
@@ -31,10 +32,12 @@ test("Quicksand is Next Featured-track", () => {
     "quicksand",
     "attendants-confession",
     "rashomon",
+    "high-wind-jamaica",
   ]);
   assert.equal(curatorialTrack("quicksand"), "next");
   assert.equal(curatorialTrack("attendants-confession"), "next");
   assert.equal(curatorialTrack("rashomon"), "next");
+  assert.equal(curatorialTrack("high-wind-jamaica"), "next");
   assert.equal(curatorialTrack("the-house-of-mirth"), "later");
 });
 
@@ -102,6 +105,24 @@ test("Rashōmon is a local before-sleep bind on Next Featured-track", () => {
   assert.ok(lane?.workIds.includes("rashomon"));
   assert.equal(
     RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("rashomon"),
+    false,
+  );
+});
+
+test("A High Wind in Jamaica is a local before-sleep bind on Next Featured-track", () => {
+  const work = SHELF.find((item) => item.id === "high-wind-jamaica");
+  assert.ok(work);
+  assert.equal(work.year, 1929);
+  assert.equal(work.title, "A High Wind in Jamaica");
+  assert.equal(work.author, "Richard Hughes");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 75530);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^One of the fruits of Emancipation/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("high-wind-jamaica"));
+  assert.equal(
+    RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("high-wind-jamaica"),
     false,
   );
 });

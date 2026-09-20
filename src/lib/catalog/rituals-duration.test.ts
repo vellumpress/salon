@@ -121,3 +121,15 @@ test("Rashōmon before-sleep sit is the empty gate, not the whole story", () => 
   assert.equal(estimateRitualMinutes(item), 2);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
+
+test("A High Wind in Jamaica before-sleep sit is the rank-plant cut, not the novel", () => {
+  const item = work({
+    id: "high-wind-jamaica",
+    form: "novel",
+    breaths: 12,
+    minutes: 3,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 3);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});

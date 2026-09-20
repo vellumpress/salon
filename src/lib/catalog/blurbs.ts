@@ -29,6 +29,8 @@ const BLURBS: Record<string, string> = {
     "A marked man offers a human document—and asks you not to publish it until he’s dead.",
   rashomon:
     "Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate.",
+  "high-wind-jamaica":
+    "After Emancipation, Derby Hill is swallowed by bush until a rank plant holds the front door open.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:
