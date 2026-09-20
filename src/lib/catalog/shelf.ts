@@ -254,7 +254,7 @@ export const SHELF: ShelfWork[] = [
       "One of the fruits of Emancipation in the West Indian islands is the number of the ruins, either attached to the houses that remain or within a stone’s throw of them: ruined slaves’ quarters, ruined sugar-grinding houses, ruined boiling houses; often ruined mansions that were too expensive to maintain.",
     breaths: 12,
     intro:
-      "Jamaica after Emancipation: ruins within a stone’s throw of what still stands, and Derby Hill swallowed by bush until the front door is held open by a rank plant. Richard Hughes’s 1929 novel opens on that swallowed house.",
+      "This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant. Hughes’s 1929 voice already uses period racial language in this stretch, and a sharper racial gaze continues immediately after Salon’s stop. We end at the plant on purpose so the timed sit stays bounded; if you Host further into the chapter, warn the room first.",
   },
   { id: "berlin", title: "Berlin Alexanderplatz", author: "Alfred Döblin", year: 1929, form: "novel", language: "German", minutes: 169, local: true, opening: "He stood before the gate of Tegel Prison and was free.", breaths: 3874 },
   { id: "barbara", title: "Doña Bárbara", author: "Rómulo Gallegos", year: 1929, form: "novel", language: "Spanish", minutes: 160 },
@@ -558,7 +558,7 @@ export const SHELF: ShelfWork[] = [
       "It was a dark night; a chill breath was coming from the east; not enough to disturb the blaze of Trooper Peter Halket’s fire, yet enough to make it quiver.",
     breaths: 16,
     intro:
-      "Alone on a kopje with a fire that only quivers—Trooper Peter Halket has lost his column, and the dark starts inventing fortunes for him.",
+      "A lone Chartered Company trooper on a Mashonaland kopje, fire quivering, inventing gold companies in the dark after losing his column. Written in 1897, the open already frames colonial scouting; missionary and racial language harden after Salon stops—before the stranger arrives. We cut there so the sit stays a night watch, not a sermon. If you Host further, name that colonial frame up front.",
   },
   { id: "folks-from-dixie", title: "Folks From Dixie", author: "Paul Laurence Dunbar", year: 1898, form: "stories", language: "English", minutes: 339, local: true, opening: "It was winter.", breaths: 2715, gutenberg: 74993 },
   { id: "in-the-cage", title: "In the Cage", author: "Henry James", year: 1898, form: "novel", language: "English", minutes: 217, local: true, opening: "It had occurred to her early that in her position—that of a young person spending, in framed and wired confinement, the life of a guinea-pig or a magpie—she", breaths: 1734 },
