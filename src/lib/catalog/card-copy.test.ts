@@ -441,7 +441,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       );
     }
     if (id === "death-comes-for-the-archbishop") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /as if he had stood still\.?$/);
+      assert.match(packed.breaths.at(-1)?.text ?? "", /than if he had stood still\.?$/);
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /Sabine|Cardinals|Rome/i,
@@ -1381,7 +1381,7 @@ test("Death Comes for the Archbishop opens on red hills, not the Rome prologue",
   assert.match(full.note, /Open on Book One New Mexico only/);
   assert.match(packed.scenes[0]?.title ?? "", /Red hills/i);
   assert.match(packed.scenes[0]?.reentry ?? "", /^One afternoon in the autumn of 1851 a solitary horseman/);
-  assert.match(packed.breaths.at(-1)?.text ?? "", /as if he had stood still\.?$/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /than if he had stood still\.?$/);
   assert.match(full.breaths[0]?.text ?? "", /^One afternoon in the autumn of 1851 a solitary horseman/);
   assert.doesNotMatch(full.scenes[0]?.title ?? "", /ROME/i);
   assert.doesNotMatch(
