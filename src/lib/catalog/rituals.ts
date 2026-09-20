@@ -124,6 +124,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate. Akutagawa’s Kyoto opens on desolation before the crime story blooms.`,
   "high-wind-jamaica":
     `Jamaica after Emancipation: ruins within a stone’s throw of what still stands, and Derby Hill swallowed by bush until the front door is held open by a rank plant. Richard Hughes’s 1929 novel opens on that swallowed house.`,
+  "noli-me-tangere":
+    `Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":
@@ -201,6 +203,7 @@ export const RITUAL_LANES: RitualLane[] = [
     label: "Unwind",
     hint: "De-stress",
     workIds: [
+      "noli-me-tangere",
       "gitanjali",
       "songs-of-kabir",
       "pictures-of-the-floating-world",
@@ -270,6 +273,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "attendants-confession": 2,
   rashomon: 2,
   "high-wind-jamaica": 3,
+  "noli-me-tangere": 2,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

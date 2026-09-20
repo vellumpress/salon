@@ -58,6 +58,7 @@ test("known origin overrides", () => {
     "attendants-confession": "Brazil",
     rashomon: "Japan",
     "high-wind-jamaica": "Jamaica",
+    "noli-me-tangere": "Philippines",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);
@@ -116,6 +117,10 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /Derby Hill/i,
       opening: /^One of the fruits of Emancipation/,
     },
+    "noli-me-tangere": {
+      scene: /Capitan Tiago/i,
+      opening: /^On the last of October Don Santiago de los Santos/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -156,6 +161,13 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /peering|negress/i,
+      );
+    }
+    if (id === "noli-me-tangere") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /Chinese water-carrier finds it convenient\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /project gutenberg|Ibarra|Crisostomo|Crisóstomo/i,
       );
     }
   }
@@ -309,6 +321,44 @@ test("A High Wind in Jamaica opens on Emancipation ruins and binds only the rank
   assert.equal(work!.breaths, packed.breaths.length);
   assert.match(full.breaths[0]?.text ?? "", /^One of the fruits of Emancipation/);
   assert.match(full.breaths.at(-1)?.text ?? "", /rank plant\.?$/);
+  for (const pack of [packed, full]) {
+    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+    assert.doesNotMatch(joined, /project gutenberg/i);
+    const decorative = pack.breaths.filter((breath) => {
+      const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
+      return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
+    });
+    assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
+  }
+});
+
+test("Noli Me Tangere opens on Capitan Tiago’s dinner and binds only the Pasig-house sit", () => {
+  const work = SHELF.find((item) => item.id === "noli-me-tangere");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 6737);
+  assert.equal(work!.title, "Noli Me Tangere (The Social Cancer)");
+  assert.equal(work!.author, "José Rizal (tr. Charles Derbyshire)");
+  assert.match(work!.opening ?? "", /^On the last of October Don Santiago de los Santos/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/noli-me-tangere.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/noli-me-tangere.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Capitan Tiago/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^On the last of October Don Santiago de los Santos/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /Chinese water-carrier finds it convenient\.?$/);
+  assert.equal(
+    packed.breaths.some((breath) => /Ibarra|Crisostomo|Crisóstomo/i.test(breath.text)),
+    false,
+    "open-at should stop before Ibarra / the rest of the novel",
+  );
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+  assert.match(full.breaths[0]?.text ?? "", /^On the last of October Don Santiago de los Santos/);
+  assert.match(full.breaths.at(-1)?.text ?? "", /convenient\.?$/);
   for (const pack of [packed, full]) {
     const joined = pack.breaths.map((breath) => breath.text).join("\n");
     assert.doesNotMatch(joined, /project gutenberg/i);

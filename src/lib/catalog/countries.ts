@@ -361,7 +361,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
   ],
   Mexico: ["Federico Gamboa", "Mariano Azuela"],
   Argentina: ["José Hernández", "Roberto Arlt", "Ricardo Güiraldes"],
-  Philippines: ["José Rizal"],
+  Philippines: ["José Rizal", "José Rizal (tr. Charles Derbyshire)"],
   India: [
     "Bankim Chandra Chatterjee",
     "Bibhutibhushan Bandyopadhyay",
@@ -521,6 +521,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "jamaican-song-and-story": "Jamaica",
   "jamaica-anansi-stories": "Jamaica",
   "high-wind-jamaica": "Jamaica",
+  "noli-me-tangere": "Philippines",
   "south-african-folk-tales": "South Africa",
   "west-african-folk-tales": "Ghana",
   "laos-folk-lore-of-farther-india": "Laos",
