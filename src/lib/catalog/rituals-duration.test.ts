@@ -314,6 +314,54 @@ test("Growth of the Soil waking sit is the first-sack cut", () => {
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
+test("All Quiet on the Western Front before-sleep sit is the double-rations cut", () => {
+  const item = work({
+    id: "all-quiet-on-the-western-front",
+    form: "novel",
+    breaths: 13,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("We waking sit is the wisest-of-lines cut", () => {
+  const item = work({
+    id: "we",
+    form: "novel",
+    breaths: 9,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("The Story of Gösta Berling before-sleep sit is the pulpit cut", () => {
+  const item = work({
+    id: "the-story-of-gosta-berling",
+    form: "novel",
+    breaths: 9,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Thaïs before-sleep sit is the Nile-huts cut", () => {
+  const item = work({
+    id: "thais",
+    form: "novel",
+    breaths: 6,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
 test("Nada the Lily before-sleep sit is the hidden-name cut", () => {
   const item = work({
     id: "nada-the-lily",

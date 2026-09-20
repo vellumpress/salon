@@ -24,7 +24,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   // Named examples / other local binds
   vengeance: { label: "Poland", region: "pl" },
   passing: { label: "Harlem", region: "us" },
-  we: { label: "Russia", region: "ru" },
+  we: { label: "One State / glass city", region: "ru" },
   berlin: { label: "Berlin", region: "de" },
   manhattan: { label: "New York", region: "us" },
   crime: { label: "Petersburg", region: "ru" },
@@ -66,6 +66,9 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-good-soldier": { label: "Bad Nauheim", region: "de" },
   "growth-of-the-soil": { label: "Norway", region: "no" },
   "nada-the-lily": { label: "Zululand", region: "za" },
+  "all-quiet-on-the-western-front": { label: "Western Front", region: "fr" },
+  "the-story-of-gosta-berling": { label: "Sweden — Värmland", region: "se" },
+  thais: { label: "Egypt — Thebaid / Nile", region: "eg" },
 
   // Named examples
   botchan: { label: "Tokyo", region: "jp" },

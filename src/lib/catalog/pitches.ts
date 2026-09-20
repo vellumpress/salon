@@ -9,7 +9,7 @@ export const PITCHES: Record<string, string> = {
   odessa:
     "Babel’s Black Sea city: gangsters, sun, and sudden violence between jokes. Odessa stories that move like rumor — bright, then sharp.",
   we:
-    "Zamyatin’s glass city of perfect numbers learns what a soul costs. Surveillance as architecture — and the crack where desire gets in.",
+    "Cheeks burning — D-503 will straighten the wild curve into the wisest of lines, and call the record *We*.",
   manhattan:
     "Dos Passos cuts New York as montage: arrivals, ads, and lives slicing across each other. The city as newsreel you can walk through.",
   tropic:

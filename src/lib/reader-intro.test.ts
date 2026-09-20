@@ -226,6 +226,36 @@ test("Growth of the Soil shows the soft Host note for period Lapp / Sámi", () =
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
+test("All Quiet on the Western Front uses the before-sleep double-rations sit", () => {
+  const copy = readerIntro(shelfAsWork("all-quiet-on-the-western-front"));
+  assert.match(copy, /five miles behind the front/i);
+  assert.match(copy, /double sausage/);
+  assert.match(copy, /Warn the room if you Host further/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
+test("We uses the waking wisest-of-lines sit", () => {
+  const copy = readerIntro(shelfAsWork("we"));
+  assert.match(copy, /cheeks burning/i);
+  assert.match(copy, /wisest of lines/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open|FOREWORD/i);
+});
+
+test("The Story of Gösta Berling uses the before-sleep pulpit sit", () => {
+  const copy = readerIntro(shelfAsWork("the-story-of-gosta-berling"));
+  assert.match(copy, /pulpit/);
+  assert.match(copy, /reeling out of the inn/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
+test("Thaïs uses the before-sleep Nile-huts sit and names the Host frame", () => {
+  const copy = readerIntro(shelfAsWork("thais"));
+  assert.match(copy, /Nile/);
+  assert.match(copy, /hyssop/);
+  assert.match(copy, /Paphnutius/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
 test("Nada the Lily shows the required colonial Host note before the sit", () => {
   const copy = readerIntro(shelfAsWork("nada-the-lily"));
   assert.match(copy, /Umslopogaas/);

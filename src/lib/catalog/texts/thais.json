@@ -1,0 +1,51 @@
+{
+  "id": "thais",
+  "title": "Thaïs",
+  "author": "Anatole France (tr. Robert B. Douglas)",
+  "year": "1909",
+  "note": "Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond.\n\nThaïs (Anatole France; tr. Robert B. Douglas; FR 1890; EN 1909; PG 2078). This local bind is the before-sleep cut — the Thebaid atlas — not the whole novel.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Nile huts",
+      "place": "one sitting",
+      "reentry": "In those days there were many hermits living in the desert.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "In those days there were many hermits living in the desert."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "On both banks of the Nile numerous huts, built by these solitary dwellers, of branches held together by clay, were scattered at a little distance from each other, so that the inhabitants could live alone, and yet help one another in case of need."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Churches, each surmounted by a cross, stood here and there amongst the huts, and the monks flocked to them at each festival to celebrate the services or to partake of the Communion."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "There were also, here and there on the banks of the river, monasteries, where the cenobites lived in separate cells, and only met together that they might the better enjoy their solitude."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Both hermits and cenobites led abstemious lives, taking no food till after sunset, and eating nothing but bread with a little salt and hyssop."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Some retired into the desert, and led a still more strange life in some cave or tomb."
+    }
+  ]
+}

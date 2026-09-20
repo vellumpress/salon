@@ -171,6 +171,14 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Who made the road over the moors? A man with a sack, a red beard, and scars — looking for land, or peace. Hamsun’s settler open uses the period word “Lapp” for Sámi herders on the common. Historical voice; Salon stays on the man with the sack. If you Host further, keep that named for the room.`,
   "nada-the-lily":
     `You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zululand frame — an old narrator under “the White Man” / Great Queen law — is colonial adventure voice, with period names and violence ahead. Name that frame for the room before you Host further; Salon stops at the hidden-name beat.`,
+  "all-quiet-on-the-western-front":
+    `Five miles behind the front — bellies full, double sausage, and a cook who won’t stop ladling. This sit is rest and double rations five miles behind the line; later chapters bring trench violence and period enemy language. Warn the room if you Host further.`,
+  we:
+    `Cheeks burning — D-503 will straighten the wild curve into the wisest of lines, and call the record *We*.`,
+  "the-story-of-gosta-berling":
+    `At last the priest is in the pulpit — marble-handsome — and the parish remembers him reeling out of the inn.`,
+  thais:
+    `Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond. Desire, conversion, and desert zeal intensify after this atlas-like open. Warn the room if you Host into Paphnutius / Thaïs.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":
@@ -246,6 +254,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-painted-veil",
       "the-good-soldier",
       "nada-the-lily",
+      "all-quiet-on-the-western-front",
+      "the-story-of-gosta-berling",
+      "thais",
       "the-pattern",
       "it-was-not-nervousness",
       "between-the-drop-and-the-water",
@@ -275,6 +286,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-underdogs",
       "diary-of-a-chambermaid",
       "growth-of-the-soil",
+      "we",
       "the-rubaiyat-of-omar-khayyam",
       "spring-and-all",
       "a-few-figs-from-thistles",
@@ -396,6 +408,10 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-good-soldier": 2,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
+  "all-quiet-on-the-western-front": 2,
+  we: 2,
+  "the-story-of-gosta-berling": 2,
+  thais: 2,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

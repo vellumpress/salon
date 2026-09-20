@@ -74,6 +74,10 @@ test("known origin overrides", () => {
     "the-good-soldier": "United Kingdom",
     "growth-of-the-soil": "Norway",
     "nada-the-lily": "South Africa",
+    "all-quiet-on-the-western-front": "Germany",
+    we: "Russia",
+    "the-story-of-gosta-berling": "Sweden",
+    thais: "France",
     "on-a-chinese-screen": "United Kingdom",
     futility: "United Kingdom",
     "poison-tree": "India",
@@ -225,6 +229,22 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /Hidden name/i,
       opening: /^You ask me, my father/,
     },
+    "all-quiet-on-the-western-front": {
+      scene: /Double rations/i,
+      opening: /^We are at rest five miles behind the front/,
+    },
+    we: {
+      scene: /The wisest of lines/i,
+      opening: /^I feel my cheeks are burning/,
+    },
+    "the-story-of-gosta-berling": {
+      scene: /The pulpit/i,
+      opening: /^At last the minister stood in the pulpit/,
+    },
+    thais: {
+      scene: /Nile huts/i,
+      opening: /^In those days there were many hermits/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -372,6 +392,31 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     if (id === "nada-the-lily") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /did any know my name\.?$/);
       assert.ok(packed.breaths.some((breath) => /White Man/.test(breath.text)));
+    }
+    if (id === "all-quiet-on-the-western-front") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /now that is decent\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /epigraph|this book is to be neither/i,
+      );
+    }
+    if (id === "we") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /despite my limitations\?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /FOREWORD|foreword|This is merely a copy/i,
+      );
+      assert.ok(packed.breaths.some((breath) => /\*Integral\*/.test(breath.text)));
+    }
+    if (id === "the-story-of-gosta-berling") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /Captain Christian Bergh\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /preface|translator/i,
+      );
+    }
+    if (id === "thais") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /cave or tomb\.?$/);
     }
   }
 });
@@ -1165,6 +1210,116 @@ test("The Diary of a Chambermaid opens on hiring day and binds only that sit", (
   assert.match(packed.scenes[0]?.reentry ?? "", /^To-day, September 14/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /without any interview with Madame\.?$/);
   assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("All Quiet on the Western Front opens on double rations and skips the epigraph", () => {
+  const work = SHELF.find((item) => item.id === "all-quiet-on-the-western-front");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 75011);
+  assert.equal(work!.title, "All Quiet on the Western Front");
+  assert.equal(work!.author, "Erich Maria Remarque (tr. A. W. Wheen)");
+  assert.equal(work!.year, 1929);
+  assert.match(work!.opening ?? "", /^We are at rest five miles behind the front/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/all-quiet-on-the-western-front.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/all-quiet-on-the-western-front.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.note, /double sausage/);
+  assert.match(packed.note, /Warn the room if you Host further/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(packed.scenes[0]?.title ?? "", /Double rations/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^We are at rest five miles behind the front/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /now that is decent\.?$/);
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("We opens on burning cheeks, skips FOREWORD, and keeps id we", () => {
+  const work = SHELF.find((item) => item.id === "we");
+  assert.ok(work);
+  assert.equal(work!.id, "we");
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 61963);
+  assert.equal(work!.title, "We");
+  assert.equal(work!.author, "Yevgeny Zamyatin (tr. Gregory Zilboorg)");
+  assert.equal(work!.year, 1924);
+  assert.match(work!.opening ?? "", /^I feel my cheeks are burning/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/we.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/we.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.note, /wisest of lines/);
+  assert.match(packed.note, /Skip FOREWORD/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(packed.scenes[0]?.title ?? "", /The wisest of lines/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^I feel my cheeks are burning/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /despite my limitations\?$/);
+  assert.equal(
+    packed.breaths.some((breath) => /FOREWORD|This is merely a copy/i.test(breath.text)),
+    false,
+    "open-at should skip FOREWORD and the newspaper copy",
+  );
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("The Story of Gösta Berling opens on the pulpit and skips the translator preface", () => {
+  const work = SHELF.find((item) => item.id === "the-story-of-gosta-berling");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 56158);
+  assert.equal(work!.title, "The Story of Gösta Berling");
+  assert.equal(work!.author, "Selma Lagerlöf (tr. Pauline Bancroft Flach)");
+  assert.equal(work!.year, 1898);
+  assert.match(work!.opening ?? "", /^At last the minister stood in the pulpit/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/the-story-of-gosta-berling.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/the-story-of-gosta-berling.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.note, /pulpit/);
+  assert.match(packed.note, /Skip the translator preface/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(packed.scenes[0]?.title ?? "", /The pulpit/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^At last the minister stood in the pulpit/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /Captain Christian Bergh\.?$/);
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("Thaïs opens on Nile hermit huts and binds only that sit", () => {
+  const work = SHELF.find((item) => item.id === "thais");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 2078);
+  assert.equal(work!.title, "Thaïs");
+  assert.equal(work!.author, "Anatole France (tr. Robert B. Douglas)");
+  assert.equal(work!.year, 1909);
+  assert.match(work!.opening ?? "", /^In those days there were many hermits/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/thais.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/thais.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.note, /hermits/);
+  assert.match(packed.note, /Paphnutius/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(packed.scenes[0]?.title ?? "", /Nile huts/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^In those days there were many hermits/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /cave or tomb\.?$/);
   assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
   assert.equal(work!.breaths, packed.breaths.length);
 });

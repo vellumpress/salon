@@ -42,6 +42,10 @@ test("Locked recommend order is April, Bridge, Maggot, then Mirth, then Quicksan
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-good-soldier"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("growth-of-the-soil"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("nada-the-lily"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("all-quiet-on-the-western-front"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("we"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-story-of-gosta-berling"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("thais"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("miss-brill-adapted"), false);
@@ -96,6 +100,10 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("the-good-soldier"), "later");
   assert.equal(curatorialTrack("growth-of-the-soil"), "later");
   assert.equal(curatorialTrack("nada-the-lily"), "later");
+  assert.equal(curatorialTrack("all-quiet-on-the-western-front"), "later");
+  assert.equal(curatorialTrack("we"), "later");
+  assert.equal(curatorialTrack("the-story-of-gosta-berling"), "later");
+  assert.equal(curatorialTrack("thais"), "later");
 });
 
 test("Quicksand is a local before-sleep bind with no Gutenberg id", () => {
@@ -659,6 +667,92 @@ test("Nada the Lily is a local before-sleep bind on Next, not locked recommend",
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("nada-the-lily"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("nada-the-lily"), false);
   assert.equal(curatorialTrack("nada-the-lily"), "later");
+});
+
+test("All Quiet on the Western Front is a local before-sleep Next lead, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "all-quiet-on-the-western-front");
+  assert.ok(work);
+  assert.equal(work.year, 1929);
+  assert.equal(work.title, "All Quiet on the Western Front");
+  assert.equal(work.author, "Erich Maria Remarque (tr. A. W. Wheen)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 75011);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^We are at rest five miles behind the front/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("all-quiet-on-the-western-front"));
+  assert.ok(lane!.workIds.indexOf("all-quiet-on-the-western-front") > lane!.workIds.indexOf("nada-the-lily"));
+  assert.ok(lane!.workIds.indexOf("all-quiet-on-the-western-front") > lane!.workIds.indexOf("quicksand"));
+  assert.equal(
+    (NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("all-quiet-on-the-western-front"),
+    false,
+  );
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("all-quiet-on-the-western-front"), false);
+  assert.equal(curatorialTrack("all-quiet-on-the-western-front"), "later");
+});
+
+test("We is a local waking bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "we");
+  assert.ok(work);
+  assert.equal(work.year, 1924);
+  assert.equal(work.title, "We");
+  assert.equal(work.author, "Yevgeny Zamyatin (tr. Gregory Zilboorg)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 61963);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^I feel my cheeks are burning/);
+  const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
+  assert.ok(lane?.workIds.includes("we"));
+  assert.ok(lane!.workIds.indexOf("we") > lane!.workIds.indexOf("growth-of-the-soil"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("we"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("we"), false);
+  assert.equal(curatorialTrack("we"), "later");
+});
+
+test("The Story of Gösta Berling is a local before-sleep bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "the-story-of-gosta-berling");
+  assert.ok(work);
+  assert.equal(work.year, 1898);
+  assert.equal(work.title, "The Story of Gösta Berling");
+  assert.equal(work.author, "Selma Lagerlöf (tr. Pauline Bancroft Flach)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 56158);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^At last the minister stood in the pulpit/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("the-story-of-gosta-berling"));
+  assert.ok(
+    lane!.workIds.indexOf("the-story-of-gosta-berling") >
+      lane!.workIds.indexOf("all-quiet-on-the-western-front"),
+  );
+  assert.equal(
+    (NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-story-of-gosta-berling"),
+    false,
+  );
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-story-of-gosta-berling"), false);
+  assert.equal(curatorialTrack("the-story-of-gosta-berling"), "later");
+  const stub = SHELF.find((item) => item.id === "gosta");
+  assert.ok(stub);
+  assert.equal(stub.local, undefined);
+  assert.notEqual(stub.id, work.id);
+});
+
+test("Thaïs is a local before-sleep bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "thais");
+  assert.ok(work);
+  assert.equal(work.year, 1909);
+  assert.equal(work.title, "Thaïs");
+  assert.equal(work.author, "Anatole France (tr. Robert B. Douglas)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 2078);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^In those days there were many hermits/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("thais"));
+  assert.ok(lane!.workIds.indexOf("thais") > lane!.workIds.indexOf("the-story-of-gosta-berling"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("thais"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("thais"), false);
+  assert.equal(curatorialTrack("thais"), "later");
 });
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {

@@ -15,7 +15,13 @@ const BLURBS: Record<string, string> = {
     "In Tokyo, a husband remakes a young woman into the Western ideal he cannot stop wanting.",
   odessa:
     "Babel’s Black Sea city: gangsters, sun, and sudden violence between jokes.",
-  we: "Zamyatin’s glass city of perfect numbers learns what a soul costs.",
+  we: "D-503 will straighten the wild curve into the wisest of lines, and call the record We.",
+  "all-quiet-on-the-western-front":
+    "Five miles behind the front: bellies full, double sausage, and a cook who will not stop ladling.",
+  "the-story-of-gosta-berling":
+    "At last the priest is in the pulpit — marble-handsome — and the parish remembers him reeling out of the inn.",
+  thais:
+    "Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset.",
   manhattan: "Dos Passos cuts New York as montage: arrivals, ads, and lives slicing across each other.",
   tropic:
     "Walrond’s Caribbean stories of color, labor, and heat that refuse soft focus.",
