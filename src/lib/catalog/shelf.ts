@@ -344,7 +344,7 @@ export const SHELF: ShelfWork[] = [
     opening: "We are at rest five miles behind the front.",
     breaths: 13,
     intro:
-      "Five miles behind the front — bellies full, double sausage, and a cook who won’t stop ladling. This sit is rest and double rations five miles behind the line. Later chapters bring trench violence and period enemy language. Warn the room if you Host further.",
+      "Five miles behind the front — bellies full, double sausage, and a cook who won’t stop ladling. This sit is rest and double rations five miles behind the line; later chapters bring trench violence and period enemy language. Warn the room if you Host further.",
   },
   { id: "berlin", title: "Berlin Alexanderplatz", author: "Alfred Döblin", year: 1929, form: "novel", language: "German", minutes: 169, local: true, opening: "He stood before the gate of Tegel Prison and was free.", breaths: 3874 },
   { id: "barbara", title: "Doña Bárbara", author: "Rómulo Gallegos", year: 1929, form: "novel", language: "Spanish", minutes: 160 },

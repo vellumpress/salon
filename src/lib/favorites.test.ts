@@ -36,6 +36,6 @@ test("favoriteWorks skips empty ids", () => {
   assert.deepEqual(favoriteWorks(["", "we"]), [{
     id: "we",
     title: "We",
-    author: "Yevgeny Zamyatin",
+    author: "Yevgeny Zamyatin (tr. Gregory Zilboorg)",
   }]);
 });

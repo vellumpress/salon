@@ -172,7 +172,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "nada-the-lily":
     `You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zululand frame — an old narrator under “the White Man” / Great Queen law — is colonial adventure voice, with period names and violence ahead. Name that frame for the room before you Host further; Salon stops at the hidden-name beat.`,
   "all-quiet-on-the-western-front":
-    `Five miles behind the front — bellies full, double sausage, and a cook who won’t stop ladling. This sit is rest and double rations five miles behind the line. Later chapters bring trench violence and period enemy language. Warn the room if you Host further.`,
+    `Five miles behind the front — bellies full, double sausage, and a cook who won’t stop ladling. This sit is rest and double rations five miles behind the line; later chapters bring trench violence and period enemy language. Warn the room if you Host further.`,
   we:
     `Cheeks burning — D-503 will straighten the wild curve into the wisest of lines, and call the record *We*.`,
   "the-story-of-gosta-berling":
