@@ -1,0 +1,221 @@
+{
+  "id": "bliss-tokyo",
+  "title": "Katherine Mansfield, Bliss recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "Omotesando gold, a flowering pear on a terrace, and a young wife's perfect evening that turns on a single glance. After Mansfield, Bliss, 1918.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Omotesando terrace",
+      "place": "Tokyo",
+      "reentry": "Bertha felt it in the elevator—bliss, absurd and physical, like champagne already in the blood.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Bertha felt it in the elevator—bliss, absurd and physical, like champagne already in the blood."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Thirty, married, a child asleep two floors below with the nanny she trusted too much and not enough."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Tokyo’s evening pressed soft gold against the glass of the Omotesando tower."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "She wanted to run, to fling her bag into the air, to tell the concierge that the world had arranged itself correctly for once."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Instead she keyed the apartment and stood in the entry smelling cedar and the florist’s last delivery: white pears of blossom, forced early, stems wrapped in black tape."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Harry would be late; Harry was always late in a way that announced importance."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "She moved through the rooms adjusting what did not need adjusting—the linen napkins folded into quiet architecture, the low bowls of citrus, the playlist she would pretend had chosen itself."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "In the nursery monitor’s gray hush she watched her daughter’s fist open and close, and felt a tenderness so sharp it bordered on fear."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "On the terrace the flowering pear stood in its planter like a held breath."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Pale, almost silver under the building’s lights."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Beyond it, Omotesando’s traffic made a continuous hush, taxis and black cars sliding as if on oil."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "A neighbor’s wind chime answered nothing."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "Bertha touched a petal and thought, without irony, that she and the tree understood each other: both ornamental, both briefly exact, both paid for by someone else’s calendar."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Guests arrived in carefully unstudied clothes."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "The critic who hated sincerity and collected grievances like stamps."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The couple who spoke only of ceramic ghosts and Kyoto kilns."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "And Pearl Fulton—cool, pale, wearing gray that made other people’s colors look effortful."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "Bertha’s bliss tightened around Pearl the way silk tightens when you sit wrong."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "She had told Harry that Pearl was “interesting,” a word that hid a warmer one."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Harry had shrugged with his mouth and checked his phone."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Dinner was a performance of ease."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Candlelight made everyone’s skin expensive."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Bertha laughed at the right intervals and felt, under the laugh, a current running toward Pearl as if the table were wired."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "She caught Pearl’s eye across the roast and felt, with a shock that was almost erotic, a shared quiet: as if both of them were listening to the same unplayed note."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "The critic said something cruel about a young painter; Pearl did not defend the painter, only tilted her glass, and Bertha loved her for the tilt."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Later, on the terrace, they stood before the pear without speaking."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "The blossom held."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "Somewhere a train announced itself and vanished under the city."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "A plane’s lights crossed the gap between towers."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "Bertha thought: this is what happiness is—recognition without demand, a secret that does not yet require betrayal to exist."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "Pearl’s shoulder nearly touched hers."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "The nearly was the whole evening."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "Harry came out with two glasses and the particular smile he used for people he intended to undress with conversation."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "He spoke to Pearl about a gallery opening in Roppongi, a mutual friend who had become a brand, a joke that required leaning close."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "Bertha watched the lean."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "She watched Pearl’s hand accept the glass."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "She watched Harry’s fingers brush Pearl’s wrist as if by accident and remain, for half a second, as if by contract."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "Pearl’s eyes flicked—not to Bertha, not away—only inward, toward a room already booked."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "The bliss did not leave; it changed temperature."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "It became a bright cold that made the pear tree look suddenly like stage dressing."
+    }
+  ]
+}

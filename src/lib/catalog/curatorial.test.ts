@@ -137,6 +137,16 @@ test("Adapted by Salon remakes are their own track — never locked recommend or
       "it-was-not-nervousness",
       "during-carnival",
       "what-we-sold",
+      "bliss-tokyo",
+      "open-window-singapore",
+      "story-of-an-hour-buenos-aires",
+      "masque-rio",
+      "boule-de-suif-istanbul",
+      "happy-prince-hong-kong",
+      "hunger-artist-milan",
+      "the-nose-cape-town",
+      "queen-of-spades-paris",
+      "decapitated-chicken-lisbon",
     ],
   );
   for (const id of ADAPTED_BY_SALON_IDS) {

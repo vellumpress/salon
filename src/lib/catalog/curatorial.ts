@@ -64,6 +64,16 @@ export const ADAPTED_BY_SALON_IDS = [
   "it-was-not-nervousness",
   "during-carnival",
   "what-we-sold",
+  "bliss-tokyo",
+  "open-window-singapore",
+  "story-of-an-hour-buenos-aires",
+  "masque-rio",
+  "boule-de-suif-istanbul",
+  "happy-prince-hong-kong",
+  "hunger-artist-milan",
+  "the-nose-cape-town",
+  "queen-of-spades-paris",
+  "decapitated-chicken-lisbon",
 ] as const;
 
 const FEATURED = new Set(FEATURED_CAROUSEL_IDS);

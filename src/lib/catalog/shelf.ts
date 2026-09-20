@@ -1714,6 +1714,154 @@ export const SHELF: ShelfWork[] = [
     intro:
       "Two broke lovers ruin their treasures for each other and invent a quieter wealth in the wreckage. After O. Henry, The Gift of the Magi, 1905.",
   },
+  {
+    id: "bliss-tokyo",
+    title: "Katherine Mansfield, Bliss recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 7,
+    local: true,
+    opening:
+      "Bertha felt it in the elevator—bliss, absurd and physical, like champagne already in the blood.",
+    breaths: 40,
+    intro:
+      "Omotesando gold, a flowering pear on a terrace, and a young wife's perfect evening that turns on a single glance. After Mansfield, Bliss, 1918.",
+  },
+  {
+    id: "open-window-singapore",
+    title: "Saki, The Open Window recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 7,
+    local: true,
+    opening:
+      "Framton Nuttel arrived with letters of introduction and a diagnosis that preferred quiet.",
+    breaths: 52,
+    intro:
+      "A nervous rest-cure visitor, a black-and-white bungalow off Bukit Timah, and a girl's exquisite lie about men who never came back from the green. After Saki, The Open Window, 1914.",
+  },
+  {
+    id: "story-of-an-hour-buenos-aires",
+    title: "Kate Chopin, The Story of an Hour recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 7,
+    local: true,
+    opening: "They told her carefully, as one tells a person with a weak heart.",
+    breaths: 36,
+    intro:
+      "A Recoleta apartment, a careful message about a crash, and one quiet hour in which a woman tastes a future that is not a room with one window. After Chopin, The Story of an Hour, 1894.",
+  },
+  {
+    id: "masque-rio",
+    title: "Edgar Allan Poe, The Masque of the Red Death recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening:
+      "While the fever moved through the favelas and the hospital corridors like a red rumor with teeth, Prince Prospero sealed his compound above Guanabara Bay.",
+    breaths: 43,
+    intro:
+      "A sealed hillside compound above Rio, seven rooms of curated light, and a guest who does not RSVP to plague. After Poe, The Masque of the Red Death, 1842.",
+  },
+  {
+    id: "boule-de-suif-istanbul",
+    title: "Guy de Maupassant, Boule de Suif recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening:
+      "The private van left Kadıköy at dusk with ten seats and nine consciences already rehearsing their innocence.",
+    breaths: 47,
+    intro:
+      "A delayed van out of Kadıköy, a cabin of respectable passengers, and one woman whose generosity is spent and then despised. After Maupassant, Boule de Suif, 1880.",
+  },
+  {
+    id: "happy-prince-hong-kong",
+    title: "Oscar Wilde, The Happy Prince recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening:
+      "High above Victoria Harbour the Happy Prince stood in gold leaf, sapphire eyes, a ruby at his sword hilt—commissioned by a committee that loved skyline photographs and disliked complaints from the street.",
+    breaths: 37,
+    intro:
+      "A gold-leaf statue above the harbour gives itself away; a late swallow stays; the city calls the bare pedestal an improvement. After Wilde, The Happy Prince, 1888.",
+  },
+  {
+    id: "hunger-artist-milan",
+    title: "Franz Kafka, A Hunger Artist recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening:
+      "In Brera they gave him a glass box on a polished courtyard and a spotlight the color of expensive water.",
+    breaths: 33,
+    intro:
+      "A glass box in Brera, a forty-day contract, and a city that prefers a panther's honest appetite to refusal as art. After Kafka, A Hunger Artist, 1922.",
+  },
+  {
+    id: "the-nose-cape-town",
+    title: "Nikolai Gogol, The Nose recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 7,
+    local: true,
+    opening:
+      "Collegiate Assessor Kovalev—title polished harder than his shoes—woke in his Sea Point flat to a flatness where his nose should have been.",
+    breaths: 36,
+    intro:
+      "A Sea Point assessor wakes without his nose; on Long Street the missing feature has better meetings than he does. After Gogol, The Nose, 1836.",
+  },
+  {
+    id: "queen-of-spades-paris",
+    title: "Alexander Pushkin, The Queen of Spades recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 7,
+    local: true,
+    opening:
+      "Hermann was not rich enough for the 8th arrondissement and too proud to admit the math.",
+    breaths: 28,
+    intro:
+      "An 8th-arrondissement obsession: three cards, a countess's secret, and a queen who will not stay buried in the deck. After Pushkin, The Queen of Spades, 1834.",
+  },
+  {
+    id: "decapitated-chicken-lisbon",
+    title: "Horacio Quiroga, The Decapitated Chicken recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 7,
+    local: true,
+    opening: "The villa stood white above the Tagus, all terrace and hired quiet.",
+    breaths: 33,
+    intro:
+      "A white villa above the Tagus, four brothers who learn by watching, and a kitchen lesson that does not stay in the kitchen. After Quiroga, The Decapitated Chicken, 1909.",
+  },
 ];
 
 const BY_ID = new Map(SHELF.map((item) => [item.id, item]));

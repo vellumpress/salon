@@ -82,6 +82,26 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Carnival noise above; the last brick set with intimate care below. After Poe, The Cask of Amontillado, 1846.",
   "what-we-sold":
     "Two broke lovers ruin their treasures for each other and invent a quieter wealth in the wreckage. After O. Henry, The Gift of the Magi, 1905.",
+  "bliss-tokyo":
+    "Omotesando gold, a flowering pear on a terrace, and a young wife's perfect evening that turns on a single glance. After Mansfield, Bliss, 1918.",
+  "open-window-singapore":
+    "A nervous rest-cure visitor, a black-and-white bungalow off Bukit Timah, and a girl's exquisite lie about men who never came back from the green. After Saki, The Open Window, 1914.",
+  "story-of-an-hour-buenos-aires":
+    "A Recoleta apartment, a careful message about a crash, and one quiet hour in which a woman tastes a future that is not a room with one window. After Chopin, The Story of an Hour, 1894.",
+  "masque-rio":
+    "A sealed hillside compound above Rio, seven rooms of curated light, and a guest who does not RSVP to plague. After Poe, The Masque of the Red Death, 1842.",
+  "boule-de-suif-istanbul":
+    "A delayed van out of Kadıköy, a cabin of respectable passengers, and one woman whose generosity is spent and then despised. After Maupassant, Boule de Suif, 1880.",
+  "happy-prince-hong-kong":
+    "A gold-leaf statue above the harbour gives itself away; a late swallow stays; the city calls the bare pedestal an improvement. After Wilde, The Happy Prince, 1888.",
+  "hunger-artist-milan":
+    "A glass box in Brera, a forty-day contract, and a city that prefers a panther's honest appetite to refusal as art. After Kafka, A Hunger Artist, 1922.",
+  "the-nose-cape-town":
+    "A Sea Point assessor wakes without his nose; on Long Street the missing feature has better meetings than he does. After Gogol, The Nose, 1836.",
+  "queen-of-spades-paris":
+    "An 8th-arrondissement obsession: three cards, a countess's secret, and a queen who will not stay buried in the deck. After Pushkin, The Queen of Spades, 1834.",
+  "decapitated-chicken-lisbon":
+    "A white villa above the Tagus, four brothers who learn by watching, and a kitchen lesson that does not stay in the kitchen. After Quiroga, The Decapitated Chicken, 1909.",
   "body-of-this-death":
     "Bogan on flesh, desire, and what it costs to keep living in a body. Spare, exact poems — no soft focus on the wound.",
   orlando:
@@ -261,6 +281,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "it-was-not-nervousness",
       "between-the-drop-and-the-water",
       "during-carnival",
+      "story-of-an-hour-buenos-aires",
+      "masque-rio",
+      "happy-prince-hong-kong",
+      "queen-of-spades-paris",
+      "decapitated-chicken-lisbon",
       "the-wild-swans-at-coole",
       "kwaidan-stories-and-studies-of-strange-things",
       "the-listeners-and-other-poems",
@@ -294,6 +319,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "second-april",
       "renascence-and-other-poems",
       "mountain-interval",
+      "open-window-singapore",
+      "the-nose-cape-town",
     ],
   },
   {
@@ -328,6 +355,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "what-she-borrowed",
       "what-we-sold",
       "a-coat-worthy-of-respect",
+      "bliss-tokyo",
+      "boule-de-suif-istanbul",
+      "hunger-artist-milan",
     ],
   },
   {

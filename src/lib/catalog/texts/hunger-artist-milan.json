@@ -1,0 +1,186 @@
+{
+  "id": "hunger-artist-milan",
+  "title": "Franz Kafka, A Hunger Artist recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A glass box in Brera, a forty-day contract, and a city that prefers a panther's honest appetite to refusal as art. After Kafka, A Hunger Artist, 1922.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The glass box in Brera",
+      "place": "Milan",
+      "reentry": "In Brera they gave him a glass box on a polished courtyard and a spotlight the color of expensive water.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "In Brera they gave him a glass box on a polished courtyard and a spotlight the color of expensive water."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "The hunger artist sat on clean straw in black trousers, ribs like a polite argument against abundance, and fasted while fashion-week crowds pressed their faces to the glass between aperitivo and the next show."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Forty days was the contract—any longer and the public grew suspicious of fraud, any shorter and the public grew bored of virtue."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "He could have gone longer."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "That was the private insult he carried under his sternum: his capacity exceeded their attention, and attention was the only currency Milan counted when the cameras were on."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Impresarios weighed him at dawn with a scale that also appeared in ads for a detox tea."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "They photographed him for limited-edition cards sold in the bookshop beside the gallery, argued with sponsors about whether his thinness was “on brand” or merely sad."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "A critic wrote that he made abstinence look like couture."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Women whispered that they could never."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Men checked watches and mirrored windows, adjusting collars."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Children asked if he was real and were told not to tap the glass."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "He smiled the thin smile of someone whose truth had become a seasonal product."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "At night, when the courtyard emptied and scooters stitched the side streets like hurried sentences, he whispered to himself the only honesty left: that he had not yet found a food he liked enough to break for—and that this was not metaphor, only biography."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Visitors came in waves: students sketching, couples on dates that needed a serious backdrop, a priest who looked uncomfortable, a wellness founder who took a selfie and left."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "The hunger artist watched them the way a mirror watches faces—without being changed."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "His keepers changed the straw."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Someone hung a small plaque with his name misspelled."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "He did not correct it."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Correction would have required a voice, and his art had become a kind of silence with ribs."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Taste shifted—as taste does in Milan, without apology and with better shoes."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "One season fasting was purity, a rebuke to excess; the next it was embarrassing, like last year’s silhouette worn without irony."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Attendance thinned to a trickle of the curious and the cruel."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "A journalist called him a relic of wellness culture, a punchline with cheekbones."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "The impresario shortened the lighting schedule to save power and moved the merchandise table nearer the exit, where people still bought tote bags printed with the word Enough."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "They relocated his cage to the edge of the courtyard where a new attraction drew queues under a corporate logo: a black panther pacing behind stronger glass, appetite visible, coat sleek as a shoe campaign, eyes like wet onyx."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "People loved the panther’s hunger because it was honest and would, eventually, be fed with ceremony and content."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "They filmed it."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "They forgot the man in the corner whose art was the refusal of feeding, whose cage now caught only stray cigarette smoke and the panther’s shadow."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "The hunger artist, straw dusty now, whispered to a keeper that he had only ever wanted to be understood—that fasting was easy if you never found the food you liked, that the hard part was living past the applause into the afternoon when no one queued."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "The keeper nodded without listening, busy with the panther’s gleaming meat and the influencer scheduled for noon, who needed the light to catch the animal’s shoulder just so."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "When they cleared the straw days later they found him already gone into the thinness he had practiced beyond contract, beyond spectacle, into a quiet that required no ticket and offered no encore."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "They replaced him without ceremony."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "The panther stretched, yawned, accepted a hunk of flesh under lights, and the crowd applauded the clarity of a creature that did not pretend refusal was an art."
+    }
+  ]
+}
