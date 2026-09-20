@@ -1,0 +1,71 @@
+{
+  "id": "unhuman-tour",
+  "title": "Unhuman Tour (*Kusamakura*)",
+  "author": "Natsume Sōseki (tr. Kazutomo Takahashi)",
+  "year": "1906",
+  "note": "Before-sleep ritual sit — climbing toward Nakoi.\n\nClimbing toward the spa, a painter decides this human world is unbearable—and that an “unhuman” one would be worse. Poetry, he says, begins exactly there.\n\n“Unhuman Tour” (*Kusamakura*) (Sōseki; EN Kazutomo Takahashi, 1927; PG 73131). Sit through the unhuman world. Stop before the poet’s mission.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Climbing the mountain",
+      "place": "one sitting",
+      "reentry": "Climbing the mountain, I was caught up into a train of thought.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Climbing the mountain, I was caught up into a train of thought."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Work with your brains, and you are liable to be harsh."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Punt in the stream of sentiment, and you may be carried away."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Pride stiffens you to discomfort."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Heigh-ho, this is a disagreeable world to live in."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "When the disagreeableness deepens, you wish to move to a world where life is less uneasy."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "It is precisely when you awake to the truth, that move where you will, it will be hard to live, that poetry is born and art creates."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "This human world of ours is the making neither of God nor of the Devil; but of common mortals; your neighbors on your right; your neighbors on your left, and your neighbors across the street."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Hate you may this world of common mortals, but where else can you go?"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "If anywhere else, it must be an unhuman world, but you will find an unhuman world a worse place to live in than this of humanity."
+    }
+  ]
+}

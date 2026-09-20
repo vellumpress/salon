@@ -126,6 +126,21 @@ export const SHELF: ShelfWork[] = [
   { id: "cat", title: "I Am a Cat", author: "Natsume Sōseki", year: 1905, form: "novel", language: "Japanese", minutes: 160 }, // Thea PULL EN 2026-09-16: no ≤1930 complete EN — catalog-only / JP
   { id: "solitude", title: "Solitude", author: "Víctor Català", year: 1905, form: "novel", language: "Catalan", minutes: 160 },
   { id: "botchan", title: "Botchan", author: "Natsume Sōseki", year: 1906, form: "novel", language: "English", minutes: 384, local: true, opening: "Because of an hereditary recklessness, I have been playing always a losing game since my childhood.", breaths: 3074, gutenberg: 8868 },
+  {
+    id: "unhuman-tour",
+    title: "Unhuman Tour (*Kusamakura*)",
+    author: "Natsume Sōseki (tr. Kazutomo Takahashi)",
+    year: 1906,
+    form: "novel",
+    language: "English",
+    minutes: 19,
+    local: true,
+    gutenberg: 73131,
+    opening: "Climbing the mountain, I was caught up into a train of thought.",
+    breaths: 167,
+    intro:
+      "Climbing toward the spa, a painter decides this human world is unbearable—and that an “unhuman” one would be worse. Poetry, he says, begins exactly there.",
+  },
   { id: "vengeance", title: "God of Vengeance", author: "Sholem Asch", year: 1907, form: "play", language: "Yiddish", minutes: 102, local: true, opening: "Scene: The Uncle's private dwelling on the ground floor of an old wooden house.", breaths: 2146 },
   { id: "liliom", title: "Liliom", author: "Ferenc Molnár", year: 1909, form: "play", language: "English", minutes: 330, local: true, opening: "An amusement park on the outskirts of Budapest on a late afternoon in Spring.", breaths: 2523 },
   { id: "vita-sexualis", title: "Vita Sexualis", author: "Mori Ōgai", year: 1909, form: "novel", language: "Japanese", minutes: 160 },

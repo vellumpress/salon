@@ -57,6 +57,7 @@ test("known origin overrides", () => {
     odessa: "Ukraine",
     "attendants-confession": "Brazil",
     rashomon: "Japan",
+    "unhuman-tour": "Japan",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);
@@ -111,6 +112,10 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /Evening under Rashōmon/i,
       opening: /^It was evening\./,
     },
+    "unhuman-tour": {
+      scene: /Climbing the mountain/i,
+      opening: /^Climbing the mountain, I was caught up into a train of thought/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -144,6 +149,16 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /earthquakes, cyclones, fires and famines|desolation was extraordinary/i,
+      );
+    }
+    if (id === "unhuman-tour") {
+      assert.match(
+        packed.breaths.at(-1)?.text ?? "",
+        /worse place to live in than this of humanity\.?$/,
+      );
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /heaven-ordained mission of the poet|short a span/i,
       );
     }
   }
@@ -219,6 +234,50 @@ test("The Attendant’s Confession opens in sentence case and stops before the M
   for (const pack of [packed, full]) {
     const joined = pack.breaths.map((breath) => breath.text).join("\n");
     assert.doesNotMatch(joined, /project gutenberg/i);
+    const decorative = pack.breaths.filter((breath) => {
+      const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
+      return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
+    });
+    assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
+  }
+});
+
+test("Unhuman Tour opens in sentence case and binds Chapter I only", () => {
+  const work = SHELF.find((item) => item.id === "unhuman-tour");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 73131);
+  assert.equal(work!.title, "Unhuman Tour (*Kusamakura*)");
+  assert.equal(work!.author, "Natsume Sōseki (tr. Kazutomo Takahashi)");
+  assert.match(work!.opening ?? "", /^Climbing the mountain, I was caught up into a train of thought/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/unhuman-tour.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/unhuman-tour.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Climbing the mountain/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^Climbing the mountain/);
+  assert.match(
+    packed.breaths.at(-1)?.text ?? "",
+    /worse place to live in than this of humanity\.?$/,
+  );
+  assert.equal(
+    packed.breaths.some((breath) => /heaven-ordained mission of the poet/.test(breath.text)),
+    false,
+    "open-at should stop before the poet’s mission",
+  );
+  assert.match(full.breaths[0]?.text ?? "", /^Climbing the mountain/);
+  assert.match(full.breaths.at(-1)?.text ?? "", /dose of unhumanity\.?$/);
+  assert.equal(
+    full.breaths.some((breath) => /Are you there\?|CHAPTER II/i.test(breath.text)),
+    false,
+    "full text should end before Chapter II",
+  );
+  for (const pack of [packed, full]) {
+    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+    assert.doesNotMatch(joined, /project gutenberg|replaced with|transcriber/i);
     const decorative = pack.breaths.filter((breath) => {
       const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
       return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);

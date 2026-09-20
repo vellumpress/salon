@@ -106,6 +106,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `A marked man offers a human document—and asks you not to publish it until he’s dead. Machado’s attendant begins in confidence and already smells of the grave.`,
   rashomon:
     `Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate. Akutagawa’s Kyoto opens on desolation before the crime story blooms.`,
+  "unhuman-tour":
+    `Climbing toward the spa, a painter decides this human world is unbearable—and that an “unhuman” one would be worse. Poetry, he says, begins exactly there.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":
@@ -149,6 +151,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "quicksand",
       "attendants-confession",
       "rashomon",
+      "unhuman-tour",
       "the-wild-swans-at-coole",
       "kwaidan-stories-and-studies-of-strange-things",
       "the-listeners-and-other-poems",
@@ -242,6 +245,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   quicksand: 5,
   "attendants-confession": 2,
   rashomon: 2,
+  "unhuman-tour": 2,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

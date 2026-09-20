@@ -16,6 +16,7 @@ test("Featured carousel is unchanged and does not include Quicksand", () => {
   assert.equal(FEATURED_CAROUSEL_IDS.includes("quicksand"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("attendants-confession"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("rashomon"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("unhuman-tour"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("miss-brill-adapted"), false);
@@ -35,7 +36,9 @@ test("Quicksand is Next Featured-track", () => {
   assert.equal(curatorialTrack("quicksand"), "next");
   assert.equal(curatorialTrack("attendants-confession"), "next");
   assert.equal(curatorialTrack("rashomon"), "next");
+  assert.equal(curatorialTrack("unhuman-tour"), "later");
   assert.equal(curatorialTrack("the-house-of-mirth"), "later");
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("unhuman-tour"), false);
 });
 
 test("Quicksand is a local before-sleep bind with no Gutenberg id", () => {
@@ -86,6 +89,33 @@ test("The Attendant’s Confession is a local before-sleep bind on Next Featured
   assert.equal(
     RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("attendants-confession"),
     false,
+  );
+});
+
+test("Unhuman Tour is a local before-sleep bind, Later — not Featured-track", () => {
+  const work = SHELF.find((item) => item.id === "unhuman-tour");
+  assert.ok(work);
+  assert.equal(work.year, 1906);
+  assert.equal(work.title, "Unhuman Tour (*Kusamakura*)");
+  assert.equal(work.author, "Natsume Sōseki (tr. Kazutomo Takahashi)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 73131);
+  assert.equal(isBoundLocal(work), true);
+  assert.equal(curatorialTrack("unhuman-tour"), "later");
+  assert.match(work.opening ?? "", /^Climbing the mountain/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("unhuman-tour"));
+  assert.equal(
+    RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("unhuman-tour"),
+    false,
+  );
+  const stubs = SHELF.filter(
+    (item) => item.id === "kusamakura-unhuman-tour" || item.id === "unhuman-tour-kusamakura",
+  );
+  assert.equal(stubs.length, 2);
+  assert.equal(
+    stubs.every((item) => item.local !== true),
+    true,
   );
 });
 

@@ -745,6 +745,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "under-western-eyes": `A student in Geneva, a betrayal in Russia, and the west watching. Sit with the world a moment before the first breath.`,
   "underdogs": `Azuela rides with Pancho Villa’s men and writes the revolution without a victory speech. Sit with the world a moment before the first breath.`,
   "une-saison-en-enfer": `Arthur Rimbaud’s 1873 poems: Une Saison en enfer. Let the first line arrive when you are ready.`,
+  "unhuman-tour": `Climbing toward the spa, a painter decides this human world is unbearable—and that an “unhuman” one would be worse. Poetry, he says, begins exactly there.`,
   "unhuman-tour-kusamakura": `Unhuman Tour (Kusamakura) (1906): a hot-headed teacher who refuses the provincial game. Sit with the world a moment before the first breath.`,
   "vandover-and-the-brute": `Norris’s San Francisco: a young man sliding toward the animal he fears. Sit with the world a moment before the first breath.`,
   "venice": `Thomas Mann’s 1912 work Death in Venice. Sit with the world a moment before the first breath.`,

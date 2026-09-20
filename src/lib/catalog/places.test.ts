@@ -12,6 +12,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     quicksand: { label: "Naxos / South", region: "us-south" },
     "attendants-confession": { label: "Brazil", region: "br" },
     rashomon: { label: "Kyoto / Japan", region: "jp" },
+    "unhuman-tour": { label: "Japan", region: "jp" },
     botchan: { label: "Tokyo", region: "jp" },
     "the-house-of-mirth": { label: "New York", region: "us" },
     silhouettes: { label: "Dieppe", region: "fr" },
