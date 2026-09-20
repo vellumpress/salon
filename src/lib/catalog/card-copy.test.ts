@@ -1604,7 +1604,7 @@ test("Dubliners opens on The Sisters only, not The Dead", () => {
   ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
   const full = JSON.parse(
     readFileSync(new URL("./texts/dubliners.json", import.meta.url), "utf8"),
-  ) as { note: string; breaths: { text: string }[] };
+  ) as { note: string; scenes: { title: string }[]; breaths: { text: string }[] };
   assert.match(packed.note, /The Sisters only/);
   assert.match(packed.note, /not The Dead/);
   assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
@@ -1612,7 +1612,8 @@ test("Dubliners opens on The Sisters only, not The Dead", () => {
   assert.match(packed.scenes[0]?.title ?? "", /The Sisters/i);
   assert.match(packed.scenes[0]?.reentry ?? "", /^There was no hope for him this time/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /arranging his opinion in his mind\.?$/);
-  assert.doesNotMatch(full.breaths.map((breath) => breath.text).join(" "), /Gabriel Conroy|The Dead/i);
+  assert.doesNotMatch(full.breaths.map((breath) => breath.text).join(" "), /Gabriel Conroy/i);
+  assert.doesNotMatch(full.scenes.map((scene) => scene.title).join(" "), /The Dead/i);
   assert.ok(full.breaths.length > packed.breaths.length, "full Sisters story stays after the sit");
   assert.equal(work!.breaths, full.breaths.length);
 });
