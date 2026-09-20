@@ -330,3 +330,17 @@ test("House of Mirth stays on unwind and is Featured, not Next", () => {
   const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
   assert.ok(unwind?.workIds.includes("the-house-of-mirth"));
 });
+
+test("Featured five stay findable on ritual lanes, not a homepage rail", () => {
+  const waking = RITUAL_LANES.find((item) => item.id === "waking-up");
+  const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(waking?.workIds.includes("enchanted-april"));
+  assert.ok(unwind?.workIds.includes("the-bridge-of-san-luis-rey"));
+  assert.ok(unwind?.workIds.includes("mr-fortunes-maggot"));
+  assert.ok(unwind?.workIds.includes("the-house-of-mirth"));
+  assert.ok(sleep?.workIds.includes("quicksand"));
+  for (const id of FEATURED_CAROUSEL_IDS) {
+    assert.equal(curatorialTrack(id), "featured", id);
+  }
+});

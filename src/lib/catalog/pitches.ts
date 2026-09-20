@@ -68,7 +68,7 @@ export const PITCHES: Record<string, string> = {
     "Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door.",
 };
 
-/** Preferred Featured carousel order (must have full text + pitch). */
+/** Preferred Featured recommend order (must have full text + pitch). Ranking only — not a homepage rail. */
 export const FEATURED_CAROUSEL_IDS: string[] = [
   "enchanted-april",
   "the-bridge-of-san-luis-rey",

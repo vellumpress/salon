@@ -3,9 +3,11 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 /**
  * Featured → Next → Later ranking for local binds, plus Adapted by Salon.
  *
- * Live Featured front door (Mike A24≥9, Mira elevate Sun Sep 20):
+ * Live Featured recommend rank (Mike A24≥9, Mira elevate Sun Sep 20):
  * Enchanted April, The Bridge of San Luis Rey, Mr. Fortune’s Maggot,
  * then The House of Mirth, then Quicksand. See FEATURED_CAROUSEL_IDS.
+ * Home does not render a Featured strip — those five live on Rituals
+ * (and remain the sit-together shuffle preference).
  *
  * Next Featured-track keeps the remaining Host-a-sit queue:
  * The Attendant’s Confession (A24 South America lane).

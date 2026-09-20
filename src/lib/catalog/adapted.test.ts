@@ -224,7 +224,7 @@ test("classic Miss Brill collection stays on the shelf beside the remake", () =>
   assert.equal(remake!.title, "Katherine Mansfield, Miss Brill recast");
 });
 
-test("homepage Featured rail is the locked five-title recommend order", () => {
+test("Featured recommend order stays the locked five titles", () => {
   assert.deepEqual(
     featuredWorks().map((item) => item.id),
     [...FEATURED_CAROUSEL_IDS],
@@ -259,8 +259,11 @@ test("homepage Adapted surface is a gateway, not a drifting remake strip", () =>
   assert.doesNotMatch(src, /STRIP_DRIFT|stripDriftDelta|stripItems|adapted-scroller/);
   assert.doesNotMatch(src, /to=["']\/read\/\$workId["']/);
   assert.doesNotMatch(src, /FEATURED_CAROUSEL|NEXT_FEATURED|CLASSIC_LOCAL_WORKS/);
-  assert.match(home, /<FeaturedStrip \/>/);
+  assert.doesNotMatch(home, /FeaturedStrip|featured-strip|cell-featured|Featured/);
   assert.match(home, /<AdaptedStrip \/>/);
+  assert.match(home, /Rituals/);
+  assert.match(home, /Read together/);
+  assert.doesNotMatch(css, /\.cell-featured|\.featured-kicker/);
   assert.match(lane, /ADAPTED_WORKS/);
   assert.match(lane, /to=["']\/read\/\$workId["']/);
   assert.doesNotMatch(lane, /FEATURED_CAROUSEL|stripDriftDelta|adapted-scroller/);
