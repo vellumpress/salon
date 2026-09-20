@@ -50,11 +50,11 @@ test("Quicksand open uses the before-sleep closed-door sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright/i);
 });
 
-test("Enchanted April open uses the Agony Column sit", () => {
+test("Enchanted April open uses the first-session Agony Column sit", () => {
   const copy = readerIntro(shelfAsWork("enchanted-april"));
   assert.match(copy, /Shaftesbury Avenue/);
   assert.match(copy, /Agony Column/);
-  assert.doesNotMatch(copy, /gutenberg|public domain|copyright/i);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured|nest-egg/i);
 });
 
 test("Mr. Fortune’s Maggot open uses the one-convert sit", () => {

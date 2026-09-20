@@ -206,15 +206,15 @@ test("The Poison Tree unwind sit is the storm cut, not the novel", () => {
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
-test("Enchanted April waking sit is the Agony Column cut, not the novel", () => {
+test("Enchanted April waking sit is the first-session dripping-street cut, not the novel", () => {
   const item = work({
     id: "enchanted-april",
     form: "novel",
-    breaths: 4375,
-    minutes: 547,
+    breaths: 7,
+    minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 5);
+  assert.equal(estimateRitualMinutes(item), 2);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
