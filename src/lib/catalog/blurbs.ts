@@ -66,6 +66,12 @@ const BLURBS: Record<string, string> = {
     "Midsummer night in the kitchen: a count’s daughter and a valet bet the house on desire.",
   wallpaper:
     "A rented room, a yellow pattern, and a mind under careful watch.",
+  "miss-brill-adapted":
+    "A camel coat, a river-park bench, and a couple who tell the afternoon what she is.",
+  "prefer-not":
+    "A midtown clerk prefers not to — and a gentle office learns the shape of its limits.",
+  "late-season":
+    "Off-season Cape May, a small white dog, and an affair that will not stay temporary.",
   botchan:
     "A hot-headed Tokyo teacher is posted to the provinces and refuses to learn the local game.",
   "post-office":

@@ -1,6 +1,6 @@
 import { countryFor } from "./countries.ts";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
-import { NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
+import { ADAPTED_BY_SALON_IDS, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { RITUAL_LANES } from "./rituals.ts";
 import { shelfWork, type ShelfWork } from "./shelf.ts";
 import { REGION_SHAPES, type PlaceRegion } from "./region-shapes.ts";
@@ -123,6 +123,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   swann: { label: "France", region: "fr" },
   nana: { label: "Paris", region: "fr" },
   "after-the-divorce": { label: "Sardinia", region: "it" },
+
+  // Adapted by Salon — remakes, not Featured / Next classics
+  "miss-brill-adapted": { label: "New York", region: "us" },
+  "prefer-not": { label: "New York", region: "us" },
+  "late-season": { label: "Cape May / New York", region: "us" },
 };
 
 /** Country-of-origin → reader label + silhouette when no setting override. */
@@ -198,11 +203,15 @@ export function hasPlaceShape(region: string): region is PlaceRegion {
   return region in REGION_SHAPES;
 }
 
-/** Featured carousel + Next track + ritual-lane ids (unique, catalog order). */
+/** Featured carousel + Next track + Adapted + ritual-lane ids (unique, catalog order). */
 export function surfacedPlaceWorkIds(): string[] {
   const seen = new Set<string>();
   const out: string[] = [];
-  for (const id of [...FEATURED_CAROUSEL_IDS, ...NEXT_FEATURED_TRACK_IDS]) {
+  for (const id of [
+    ...FEATURED_CAROUSEL_IDS,
+    ...NEXT_FEATURED_TRACK_IDS,
+    ...ADAPTED_BY_SALON_IDS,
+  ]) {
     if (seen.has(id)) continue;
     seen.add(id);
     out.push(id);

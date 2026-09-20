@@ -470,8 +470,8 @@ html.together-compose.together-kb .chat-slot {
   overflow: hidden;
   align-content: stretch;
   grid-template-columns: 1fr;
-  /* mark · pillars · works · bottom search — no extra chrome gap */
-  grid-template-rows: 3rem minmax(10rem, 1fr) minmax(10rem, 1fr) auto auto;
+  /* mark · pillars · adapted · works · bottom search — no extra chrome gap */
+  grid-template-rows: 3rem minmax(10rem, 1fr) minmax(10rem, 1fr) auto auto auto;
   grid-auto-rows: auto;
 }
 
@@ -482,7 +482,7 @@ html.together-compose.together-kb .chat-slot {
 }
 
 .board.board-doors.has-resume {
-  grid-template-rows: 3rem minmax(8.25rem, auto) minmax(7.5rem, 1fr) minmax(7.5rem, 1fr) auto auto;
+  grid-template-rows: 3rem minmax(8.25rem, auto) minmax(7.5rem, 1fr) minmax(7.5rem, 1fr) auto auto auto;
 }
 
 .board.board-doors > .cell-resume {
@@ -513,12 +513,50 @@ html.together-compose.together-kb .chat-slot {
   text-decoration: none;
 }
 
+.cell-adapted,
 .cell-works {
   position: relative;
   grid-column: 1 / -1;
   min-width: 0;
   overflow: hidden;
   background: var(--color-paper);
+}
+
+.cell-adapted {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: var(--spacing-rule) solid var(--color-rule);
+  min-height: 4.75rem;
+}
+
+.adapted-kicker {
+  padding: 0.7rem 1.35rem 0;
+  color: var(--color-muted);
+  letter-spacing: var(--tracking-kicker);
+  text-transform: uppercase;
+}
+
+.adapted-scroller {
+  display: flex;
+  align-items: stretch;
+  gap: 1.75rem;
+  min-width: 0;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  padding: 0.45rem 1.35rem 0.85rem;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+}
+
+.adapted-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.adapted-card {
+  min-width: 7.25rem;
+  max-width: 11.5rem;
 }
 
 .cell-works::before,
@@ -828,6 +866,7 @@ html.together-compose.together-kb .chat-slot {
   .cell-unit,
   .cell-search,
   .cell-featured,
+  .cell-adapted,
   .cell-together,
   .cell-pillar,
   .cell-resume,
@@ -848,6 +887,7 @@ html.together-compose.together-kb .chat-slot {
   .cell-notice,
   .cell-more,
   .cell-ritual-lanes,
+  .cell-adapted,
   .cell-works {
     grid-column: 1 / 13;
   }
@@ -869,7 +909,7 @@ html.together-compose.together-kb .chat-slot {
   }
   .board.board-doors {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-template-rows: 3rem minmax(14rem, 1fr) minmax(14rem, 1fr) auto auto;
+    grid-template-rows: 3rem minmax(14rem, 1fr) minmax(14rem, 1fr) auto auto auto;
     min-height: 100svh;
     height: var(--vvh, 100dvh);
   }
@@ -882,13 +922,15 @@ html.together-compose.together-kb .chat-slot {
     overflow: hidden;
   }
   .board.board-doors.has-resume {
-    grid-template-rows: 3rem minmax(10rem, auto) minmax(12rem, 1fr) minmax(12rem, 1fr) auto auto;
+    grid-template-rows: 3rem minmax(10rem, auto) minmax(12rem, 1fr) minmax(12rem, 1fr) auto auto auto;
   }
   .board.board-doors > .cell-resume {
     grid-column: 1 / 13;
     min-height: 10rem;
     overflow: hidden;
   }
+  .board.board-doors > .cell-adapted,
+  .cell-adapted,
   .board.board-doors > .cell-works,
   .cell-works {
     grid-column: 1 / 13;
@@ -1723,6 +1765,7 @@ html.together-compose .chat-field {
 .board-alive > .cell-more,
 .board-alive > .cell-ritual-lanes,
 .board-alive > .cell-notice,
+.board-alive > .cell-adapted,
 .board-alive > .cell-works {
   animation: vellum-settle 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -1751,8 +1794,11 @@ html.together-compose .chat-field {
 .board-alive > .cell-together {
   animation-delay: 0.16s;
 }
+.board-alive > .cell-adapted {
+  animation-delay: 0.16s;
+}
 .board-alive > .cell-works {
-  animation-delay: 0.2s;
+  animation-delay: 0.22s;
 }
 .board-alive > .cell-search {
   animation-delay: 0.2s;

@@ -1146,6 +1146,49 @@ export const SHELF: ShelfWork[] = [
   { id: "the-painted-veil", title: "The Painted Veil", author: "W. Somerset Maugham", year: 1925, form: "novel", language: "English", minutes: 160, gutenberg: 64682 },
   { id: "elmer-gantry", title: "Elmer Gantry", author: "Sinclair Lewis", year: 1927, form: "novel", language: "English", minutes: 160, gutenberg: 72609 },
   { id: "twilight-sleep", title: "Twilight Sleep", author: "Edith Wharton", year: 1927, form: "novel", language: "English", minutes: 160, gutenberg: 70844 },
+  {
+    id: "miss-brill-adapted",
+    title: "The Bench at Four",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 7,
+    local: true,
+    opening: "Miss Brill put on her coat the way other people put on a face.",
+    breaths: 49,
+    intro:
+      "She dresses for the audience she thinks she’s in — camel coat, fake-fur scarf, earbuds with nothing playing — until a couple on her bench tells the afternoon what she is. After Mansfield, Miss Brill, 1920.",
+  },
+  {
+    id: "prefer-not",
+    title: "Prefer Not",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening: "I am a man who believes in soft walls and quieter victories.",
+    breaths: 52,
+    intro:
+      "A mild refusal becomes the office’s true architecture—and pity learns the shape of its limits. After Melville, Bartleby, 1853.",
+  },
+  {
+    id: "late-season",
+    title: "Late Season",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening:
+      "Dmitri Gurov came to Cape May in September because the season had thinned and the hotels looked honest in their emptiness.",
+    breaths: 46,
+    intro:
+      "Off-season Cape May, a small white dog, and an affair that refuses to stay temporary once the city proves too small for what began. After Chekhov, The Lady with the Dog, 1899.",
+  },
 ];
 
 const BY_ID = new Map(SHELF.map((item) => [item.id, item]));

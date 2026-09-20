@@ -1,0 +1,281 @@
+{
+  "id": "prefer-not",
+  "title": "Prefer Not",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A mild refusal becomes the office’s true architecture—and pity learns the shape of its limits. After Melville, Bartleby, 1853.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Behind the screen",
+      "place": "New York",
+      "reentry": "I am a man who believes in soft walls and quieter victories.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "I am a man who believes in soft walls and quieter victories."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "I manage a small corporate practice near Bryant Park: contracts, compliance language, the kind of work that pays without making a spectacle of anyone."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "My associates were ordinary enough—useful in their weather—until I hired Bartleby."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "He arrived pale, neat, almost weightless, with a résumé that said little and eyes that said less."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "No LinkedIn."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "No chatter in the lobby."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "I placed him at a desk behind a folding screen, near the window that faced a brick air shaft and a slice of someone else’s fire escape."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "He copied with a silent diligence that pleased me."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "For three days I congratulated myself on the hire."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "The printer hummed."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "The city pressed its noise against the glass and failed to enter him."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "On the fourth day I asked him to review a clause with me—ordinary work, the sort of second pair of eyes I paid for."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "He stood, looked at the paper as if it were a mild weather report, and said, “I would prefer not to.”"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "I smiled, thinking it a joke."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "It was not."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "He returned to his desk and continued copying other pages as if preference were a law written above our letterhead."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "The phrase became his architecture."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "Proofreading?"
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "He would prefer not to."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Errands to the notary across Sixth?"
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Prefer not."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Joining a call with a nervous client?"
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Prefer not."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Leaving at closing when the cleaners arrived with their carts?"
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Prefer not—he remained, a gray shape in the after-hours fluorescence, eating nothing I could see."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "When I asked where he lived, he preferred not to say."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "I discovered, one Sunday when I came in for a forgotten flash drive, that he lived in the office."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "A thin blanket folded under the desk."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "A plastic cup."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "A phone that never lit."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "Soap from the common bathroom."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "I tried reason, then charity, then irritation."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "I offered other duties, a different desk, even money to leave quietly and start elsewhere."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Each time the same soft sentence, delivered without anger, without plea, without the courtesy of explanation."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "Clients noticed the stillness behind the screen and glanced at me as if I were keeping a ghost on payroll."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "I felt, absurdly, that Bartleby had become the office’s true center, and the rest of us orbited his refusal."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "At last I moved the practice to another floor in the same building and left him there with a sealed note and cash on his blotter."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "The landlord called within a week."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "Bartleby had remained."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "Security walked past him and then around him."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "He was removed to the Tombs—yes, still called that by the older clerks—where the walls were not soft and preference meant nothing to anyone with keys."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "I visited because not visiting felt like a second abandonment."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "He stood in the yard facing a wall the color of wet newspaper."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "When I spoke his name he did not turn."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "A grub-man laughed and said the man would prefer not to dine."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "I pressed money into a hand that smelled of metal and asked that Bartleby be fed anyway."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "Later I found him lying in the yard near the base of the wall, knees drawn, eyes open to nothing that included me."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "The grub-man shrugged."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "“He’s asleep.”"
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "He was not asleep."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "I left the prison and walked toward the park as evening came down between the buildings."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "For a long time I could not shake the mildness of his voice, how it had asked for nothing and taken everything, including the part of me that believed a gentle workplace could always find a door."
+    }
+  ]
+}
