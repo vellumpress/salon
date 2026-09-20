@@ -1869,10 +1869,10 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 21,
+    minutes: 37,
     local: true,
-    opening: "Emma woke before the light finished deciding what color to be.",
-    breaths: 204,
+    opening: "Haruto Mori’s white coat hung by the door of the Asaka condo like a flag of adequacy.",
+    breaths: 428,
     intro:
       "A New Town wife tries to live glamorous Tokyo as if desire were a credit line—kind clinic husband, Ginza nights, installments that collect themselves. After Flaubert, Madame Bovary, 1857. Later chapters include Emma’s collapse and deliberate self-poisoning — warn the room before you Host it.",
   },

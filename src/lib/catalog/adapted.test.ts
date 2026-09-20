@@ -220,11 +220,11 @@ const EXPECT = {
   },
   "madame-bovary-tokyo": {
     title: "Gustave Flaubert, Madame Bovary recast",
-    opening: /^Emma woke before the light finished deciding what color to be/,
-    last: /a currency that collected itself/,
+    opening: /^Haruto Mori’s white coat hung by the door of the Asaka condo/,
+    last: /ledgered, unmoved/,
     place: { label: "Tokyo", region: "jp" },
     credit: /After Flaubert, Madame Bovary, 1857/,
-    scene: /new rooms/i,
+    scene: /clinic coat/i,
   },
 } as const;
 
@@ -511,10 +511,11 @@ test("Madame Bovary Tokyo is one Adapted book, not three timed sits", () => {
   assert.match(packed.note, /Warn the room before you Host it/);
   assert.match(packed.note, /Ginza/);
   assert.doesNotMatch(packed.note, /Host note \(required|Featured/i);
-  assert.equal(packed.scenes.length, 3);
-  assert.match(packed.scenes[0]?.title ?? "", /New rooms/i);
-  assert.match(packed.scenes[1]?.title ?? "", /Ginza/i);
-  assert.match(packed.scenes[2]?.title ?? "", /Debt/i);
+  assert.equal(packed.scenes.length, 24);
+  assert.match(packed.scenes[0]?.title ?? "", /Clinic Coat/i);
+  assert.ok(packed.scenes.some((scene) => /Hotel Glass/i.test(scene.title)));
+  assert.ok(packed.scenes.some((scene) => /Channel Under the Shelf/i.test(scene.title)));
+  assert.ok(packed.scenes.some((scene) => /Tokyo Continues/i.test(scene.title)));
 
   const work = shelfWork(id);
   assert.ok(work);
