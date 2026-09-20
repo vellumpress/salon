@@ -1,0 +1,2417 @@
+{
+  "id": "crime-punishment-cape-town",
+  "title": "Fyodor Dostoevsky, Crime and Punishment recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "This whole-book remake includes murder, guilt, and psychological distress. Warn the room before you Host it; offer a midpoint pause if needed.",
+  "minutes": 37,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Long Street",
+      "place": "Cape Town",
+      "reentry": "Rodion Romanovich Raskolnikov lived in a garret above Long Street where bass from the clubs shook the floorboards and Table Mountain sat in the window like a mute jury.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Long Street · 2",
+      "place": "Cape Town",
+      "reentry": "Drawers opened.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Long Street · 3",
+      "place": "Cape Town",
+      "reentry": "He left more money.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Long Street · 4",
+      "place": "Cape Town",
+      "reentry": "He never said *you*.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Luzhin tried to frame Sonia with a planted",
+      "place": "Cape Town",
+      "reentry": "Luzhin tried to frame Sonia with a planted note at a memorial gathering for Marmeladov's family—a mean little theater of virtue.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "Long Street · 6",
+      "place": "Cape Town",
+      "reentry": "She rented a room nearby and visited.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "He asked her to stay while it sat in the",
+      "place": "Cape Town",
+      "reentry": "He asked her to stay while it sat in the room.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "He set the newspaper aside and returned to",
+      "place": "Cape Town",
+      "reentry": "He set the newspaper aside and returned to dull verbs.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Cape Town's glamorous surface would",
+      "place": "Cape Town",
+      "reentry": "Cape Town's glamorous surface would photograph well without him.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "Remorse, between them, became a private",
+      "place": "Cape Town",
+      "reentry": "Remorse, between them, became a private climate: some days clear, some days storm, always weather rather than speech.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "He passed the garret doorway without looking",
+      "place": "Cape Town",
+      "reentry": "He passed the garret doorway without looking up.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s11",
+      "title": "Long Street · 12",
+      "place": "Cape Town",
+      "reentry": "The chase had always been inside.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s12",
+      "title": "A man named Ismail showed him how to hold a",
+      "place": "Cape Town",
+      "reentry": "A man named Ismail showed him how to hold a tool without cutting himself.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s13",
+      "title": "Later he wrote Dunya a letter that did not",
+      "place": "Cape Town",
+      "reentry": "Later he wrote Dunya a letter that did not philosophize. *I am sorry I was not there.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s14",
+      "title": "It was only a child, and a street, and a city",
+      "place": "Cape Town",
+      "reentry": "It was only a child, and a street, and a city that contained murders and mercies without consulting theories.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s15",
+      "title": "Long Street · 16",
+      "place": "Cape Town",
+      "reentry": "Essays had been the problem.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s16",
+      "title": "Long Street · 17",
+      "place": "Cape Town",
+      "reentry": "Raskolnikov said, \"It was.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s17",
+      "title": "Long Street · 18",
+      "place": "Cape Town",
+      "reentry": "The difference was the whole book.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s18",
+      "title": "Allowed joy was part of the",
+      "place": "Cape Town",
+      "reentry": "Allowed joy was part of the apprenticeship.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Rodion Romanovich Raskolnikov lived in a garret above Long Street where bass from the clubs shook the floorboards and Table Mountain sat in the window like a mute jury."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "He was a former law student, thin, feverish, too proud for the kindness that might have saved him."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "His landlady's unpaid rent lived in the hallway as a smell of stew and complaint."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "In his coat pocket he kept a pawn ticket and the draft of an article he had never quite finished: that certain extraordinary men had the right to step over blood if the idea demanded it."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "He told himself he was testing a theory."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "The mountain did not agree or disagree."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "It only watched."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "July heat in Cape Town made thought sticky."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "He walked past students arguing about fees under fairy lights, past tourist laughter spilling from balconies, past a woman selling grilled corn whose smoke smelled like ordinary life refusing to be symbolic."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "He hated ordinary life for its refusal."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "He loved it in flashes—an ice-cream child's cry, a busker's wrong note—and hated himself for loving it."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "In the garret he lay with his boots on and rehearsed indifference until his face looked like a stranger's theory of a face."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "He walked to Alyona Ivanovna's flat off Buitengracht, where the pawnbroker kept soft administrative cruelty behind a chain and a ledger."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "She weighed watches and rings as if weighing souls by carat."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Her half-sister Lizaveta Ivanovna sometimes opened the door—kind, large-handed, always carrying someone else's errand."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Raskolnikov had pawned his father's watch twice."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "On the third visit he measured the stair, the time Lizaveta spent at market, the place in the caretaker's shed where an axe waited among brooms."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "He returned to Long Street certain and nauseated."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Certainty, he discovered, could feel like nausea wearing a clean shirt."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "The day of the murder arrived without ceremony."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "He wrapped the axe under his coat."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Alyona opened the chain for the pledged watch and smiled her collateral smile."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "He struck—once, then again—because theory, once begun, refused to remain elegant."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Blood made the room smaller than any idea."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Drawers opened."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Pledges filled a cloth."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "The door sounded."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Lizaveta stood with a parcel, kindness still on her face."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "He killed her too."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Kindness had entered the plan wrongly."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "He fled into public air—courtyard, street, Sea Point wind in his mouth—and walked until he could pretend the axe had belonged to someone else's afternoon."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Under a stone near the harbor cranes he hid what he had taken."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "He washed his hands in a public tap that tasted of pipes."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "Long Street received him back as if he had been at a lecture."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Fever took him within hours."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "He dreamed of a mare beaten in a street that was and was not Long Street; he woke tasting copper."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "Razumikhin—Dmitri Prokofych, his only friend from campus—arrived with soup, oranges, loud care, and an argument with the landlady that somehow ended in blankets."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "Raskolnikov muttered about blood and extraordinary men."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "Razumikhin heard only illness and stayed anyway."
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "When a trivial summons about debts pulled Raskolnikov to the station, he nearly laughed himself into confession amid forms and stamps."
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "He left shaking, hatred and relief braided so tightly he could not tell which fiber was which."
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "On the street he met Semyon Zakharovich Marmeladov—drunk, ruined, a former clerk who spoke of his daughter Sonia as if speaking of a saint who paid rent with her body."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "Marmeladov's confession in a tavern near the station was a river of shame and love: Katerina Ivanovna's cough, the children's hunger, Sonia's yellow-ticket necessity, his own bottles."
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "Raskolnikov listened as a man listens to a mirror that does not flatter."
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "He walked Marmeladov partway home and gave money he could not afford."
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "That night he stood at his window and watched Table Mountain's dark outline and felt the theory crack along a hairline he refused to name."
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "When Marmeladov was crushed by a car on a wet evening, Raskolnikov carried him through diesel and perfume toward a crowded room where Katerina Ivanovna screamed over the dying."
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "Sonia Marmeladova arrived from the street in her thin scarf, knelt, and became—for Raskolnikov—the only face in Cape Town that did not look like an accusation wearing makeup."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "He left more money."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "He walked out into wind off the harbor and understood, without accepting, that murder had not made him Napoleon."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "It had made him a man who needed witnesses he could neither bear nor dismiss."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "His mother Pulcheria Alexandrovna and his sister Avdotya Romanovna—Dunya—arrived from inland with news that tasted like investment."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Pyotr Petrovich Luzhin, a lawyer with clean cuffs and a purchaser's eye, intended to marry Dunya as a bargain: her beauty and gratitude against his money and control."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "At dinner in a rented Sea Point flat, Raskolnikov insulted Luzhin with protective cruelty that poisoned every plate."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Dunya looked at her brother with love that included fury."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "Razumikhin fell half in love between courses."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "Luzhin left offended, already plotting small revenge through paper and rumor."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "Pulcheria wept into a handkerchief that smelled of train travel."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "Raskolnikov hated himself for the scene and could not unsay it."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "Protection, in his mouth, had become another kind of violence."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "Arkady Ivanovich Svidrigailov appeared next—Dunya's former employer from the inland farm, a man of appetite and rumor, smiling as if Cape Town were a casino he already owned."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "He claimed business and forgiveness."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "He spoke of ghosts in hotel corridors and of a journey he might take."
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "He offered money with generosity that dirtied the air."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "Raskolnikov recognized in him a corruption without theory: the step-over without the essay."
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "That recognition frightened him more than Porfiry's smile would."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "Porfiry Petrovich entered like weather."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "An investigator with kind teeth and a soft voice, he invited Raskolnikov to discuss an article on extraordinary men—published under a thin veil, remembered by Porfiry with professional tenderness."
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "In an office smelling of coffee and case files, Porfiry circled."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "He praised psychology."
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "He mentioned painters who confess."
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "He mentioned that murderers return."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "He never said *you*."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "He made *you* unnecessary."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Raskolnikov left with sweat under his collar and a hatred so precise it felt like admiration."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "On the steps outside he almost turned back to speak and instead bought a bottle of water from a vendor and drank it as if thirst could replace confession."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "He went to Sonia's narrow room near the Bo-Kaap edge."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "Under a weak bulb he asked her to read the raising of Lazarus."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "Her voice shook and did not break."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "When she finished he told her he had killed Alyona and Lizaveta—not as triumph, not yet as repentance, as pressure that needed another living body to share the weight."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "Sonia wept, clung to him, said he must confess, must accept suffering, must live."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "She offered her cross."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "He left it, took it, left it again in the grammar of a man who could not yet decide which language he belonged to."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "Outside, Long Street bass continued."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "Pawnbrokers locked gates."
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "Students argued."
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "The mountain kept silence."
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "Porfiry returned for another conversation, softer, more dangerous."
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "He said he knew."
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "He said he would wait."
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "He said confession would be easier than the game."
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "Raskolnikov almost spoke, then walked into glare so bright it felt personal."
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "He wandered the Waterfront among tourists photographing seals and felt like a man photographing his own disappearance."
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "At a crossroads near the station he nearly knelt and failed into speech—almost said the words to the first stranger—then rose because pride is a kind of locomotion."
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "Sonia found him later and did not scold."
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "She walked beside him as logistics: water, silence, the refusal to abandon."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Luzhin tried to frame Sonia with a planted note at a memorial gathering for Marmeladov's family—a mean little theater of virtue."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Razumikhin and a sharp-eyed neighbor exposed him."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "Dunya broke the engagement cleanly, her voice steady as a signed document."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Luzhin's exit left cleaner air and cleaner danger: Svidrigailov had been listening at thresholds."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "He used knowledge of Raskolnikov's confession to Sonia as leverage toward Dunya."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "In a rented room near Sea Point he trapped her with talk of her brother's crime and his own desire."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "Dunya produced a revolver."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "She fired; the miss was mercy's shape or luck's."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "Svidrigailov's certainty broke."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "He let her go."
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "That night he wandered Cape Town's glittering edge, gave money to a stranger, and at dawn took the cold Atlantic logic of a gun."
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "Water and rumor took him."
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "The city reported it beside yacht listings."
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "Raskolnikov, alone with his stride, went to Sonia before the station."
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "She walked with him partway through morning traffic that did not know it was historic."
+    },
+    {
+      "id": "s4-15",
+      "sceneId": "s4",
+      "text": "At the crossroads he kissed the earth in a gesture that looked, to passersby, like drunken theater."
+    },
+    {
+      "id": "s4-16",
+      "sceneId": "s4",
+      "text": "He entered the police station and confessed to Porfiry without triumph."
+    },
+    {
+      "id": "s4-17",
+      "sceneId": "s4",
+      "text": "Porfiry's kind teeth did not gloat."
+    },
+    {
+      "id": "s4-18",
+      "sceneId": "s4",
+      "text": "Forms were filled."
+    },
+    {
+      "id": "s4-19",
+      "sceneId": "s4",
+      "text": "A clerk asked him to repeat a sentence."
+    },
+    {
+      "id": "s4-20",
+      "sceneId": "s4",
+      "text": "He repeated it."
+    },
+    {
+      "id": "s4-21",
+      "sceneId": "s4",
+      "text": "The mountain, invisible from that room, continued being older than theories."
+    },
+    {
+      "id": "s4-22",
+      "sceneId": "s4",
+      "text": "Sentencing and transfer moved him inland—dust, dry heat, labor, a settlement where brilliance had no currency."
+    },
+    {
+      "id": "s4-23",
+      "sceneId": "s4",
+      "text": "Sonia followed with her scarf, her book, her stubborn love-as-logistics."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "She rented a room nearby and visited."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "Raskolnikov was silent for a long time, proud even in punishment, angry at soft feeling as if soft feeling were the last lie."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "Other prisoners spoke of wives and knives and luck."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "He spoke little."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "When he did, he spoke of Sonia as a direction—toward, not about."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "Porfiry's last private words returned at odd hours: *You will confess because you are not the kind who can live as two men.* Inland, it sounded like a weather report he had finally believed."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "He had tried to live as theorist and brother, murderer and giver of funeral coins; Cape Town had refused the split."
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "The city's beauty had continued shift work without consulting him."
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "That refusal, too, had been a kind of justice."
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "Dunya's letters arrived with Razumikhin's handwriting in the margins."
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "She wrote of Luzhin's small social death in certain rooms, of Svidrigailov's end reported without poetry, of Pulcheria's sleep improving by half-hours."
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "She did not ask Raskolnikov to become inspiring."
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "She asked him to eat."
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "Razumikhin asked him to translate a dull legal pamphlet for money that would come later."
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "Work without glory."
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "He did it."
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "The sentences were clumsy and correct."
+    },
+    {
+      "id": "s5-17",
+      "sceneId": "s5",
+      "text": "Correctness felt like a new appetite."
+    },
+    {
+      "id": "s5-18",
+      "sceneId": "s5",
+      "text": "In the evenings after labor he sat on a bench behind the barracks and watched dust turn gold and then gray."
+    },
+    {
+      "id": "s5-19",
+      "sceneId": "s5",
+      "text": "He remembered the garret's geometry as one remembers a fever chart: the ceiling crack like a river, the window's mountain, the coat that had hidden the axe."
+    },
+    {
+      "id": "s5-20",
+      "sceneId": "s5",
+      "text": "Memory did not absolve."
+    },
+    {
+      "id": "s5-21",
+      "sceneId": "s5",
+      "text": "It inventoried."
+    },
+    {
+      "id": "s5-22",
+      "sceneId": "s5",
+      "text": "Lizaveta's face still arrived without knocking."
+    },
+    {
+      "id": "s5-23",
+      "sceneId": "s5",
+      "text": "He did not ask Sonia to erase it."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "He asked her to stay while it sat in the room."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "She stayed."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Sonia found a teaching hour with children who knew Table Mountain only from postcards."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "She came back smelling of chalk and cheap soap."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "One Sunday she set bread between them and did not preach."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "Shared bread, he thought, was the anti-article: not a proof, only a practice."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "He slept without dreaming of the mare."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "He woke to ordinary thirst and drank water as if water had been invented that morning."
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "A chaplain asked whether he believed."
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "Raskolnikov said he believed in guilt the way one believes in gravity."
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "The chaplain did not upgrade the metaphor."
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "Sonia touched the cross at her throat—the one he had finally accepted without theater."
+    },
+    {
+      "id": "s6-12",
+      "sceneId": "s6",
+      "text": "In the second year he began teaching a few men to read."
+    },
+    {
+      "id": "s6-13",
+      "sceneId": "s6",
+      "text": "The alphabet was not redemption."
+    },
+    {
+      "id": "s6-14",
+      "sceneId": "s6",
+      "text": "It was closer to carpentry."
+    },
+    {
+      "id": "s6-15",
+      "sceneId": "s6",
+      "text": "A man who could read a wage notice was slightly harder to cheat."
+    },
+    {
+      "id": "s6-16",
+      "sceneId": "s6",
+      "text": "Raskolnikov discovered he cared whether they were cheated."
+    },
+    {
+      "id": "s6-17",
+      "sceneId": "s6",
+      "text": "Caring embarrassed him."
+    },
+    {
+      "id": "s6-18",
+      "sceneId": "s6",
+      "text": "Embarrassment, inland, was a sign of life."
+    },
+    {
+      "id": "s6-19",
+      "sceneId": "s6",
+      "text": "News from the coast came in fragments: a new club under his old garret; a student protest; a photograph of the mountain at dusk used to sell apartments."
+    },
+    {
+      "id": "s6-20",
+      "sceneId": "s6",
+      "text": "He looked at the photograph and felt no claim."
+    },
+    {
+      "id": "s6-21",
+      "sceneId": "s6",
+      "text": "The mountain had never been his jury."
+    },
+    {
+      "id": "s6-22",
+      "sceneId": "s6",
+      "text": "It had been stone."
+    },
+    {
+      "id": "s6-23",
+      "sceneId": "s6",
+      "text": "The jury had been Sonia's eyes, Porfiry's patience, Dunya's revolver, Marmeladov's dying hand, his own unquiet blood."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "He set the newspaper aside and returned to dull verbs."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "One morning in dust that got into everything he found himself weeping at Sonia's knees without a speech prepared."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "Theory died into work."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Ordinary became a second language."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Cape Town glamoured on without him—Long Street lights, Sea Point sunsets, students inventing new extraordinary men over wine."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "He did not need the mountain's verdict anymore."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Decent mornings—anti-axe mornings—became the only brilliance left."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "In the settlement's thin chapel light Sonia read aloud and Raskolnikov listened as a man listens to a language he is finally willing to learn slowly."
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "He did not become pure."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "Purification, he understood, was not a single confession but a long apprenticeship to the fact of other people."
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "Razumikhin wrote that he and Dunya would marry; that Pulcheria's grief had softened into watchful hope; that Porfiry had asked to be remembered without drama."
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "Raskolnikov folded the letter and looked at Sonia's hands."
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "One evening he walked the fence line with her and said, without preface, that he loved her."
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "The words were not brilliant."
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "They did not need to be."
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "She answered by adjusting the scarf at his throat against the wind—a logistics of tenderness."
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "Behind them the settlement lamps came on in uneven rows."
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "Ahead, the road ran toward a horizon that did not care about extraordinary men."
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "Raskolnikov, for the first time since the axe, did not resent the horizon's indifference."
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "He had spent his cruelty."
+    },
+    {
+      "id": "s7-20",
+      "sceneId": "s7",
+      "text": "What remained was time, and work, and the long unglamorous brilliance of not killing the day."
+    },
+    {
+      "id": "s7-21",
+      "sceneId": "s7",
+      "text": "Years would be required."
+    },
+    {
+      "id": "s7-22",
+      "sceneId": "s7",
+      "text": "Suffering was not a costume and redemption was not a brand."
+    },
+    {
+      "id": "s7-23",
+      "sceneId": "s7",
+      "text": "Still, when Sonia smiled—tired, practical, unbroken—he felt the first clean fatigue of a man who has stopped auditioning for the role of exception."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Cape Town's glamorous surface would photograph well without him."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "He had work, and a book, and the difficult mercy of being ordinary on purpose."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "At night, before sleep, he sometimes still saw Alyona's ledger and Lizaveta's parcel."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "He did not look away."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "Looking away had been the first draft of the crime."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "Looking, and remaining, and taking Sonia's hand in the dust—those were the revisions he could still make."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "The plot that began as an article about stepping over blood ended as a decision to remain on the ground with someone who had never mistaken ideas for permission."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "Before the murder, there had been a rehearsal of courage that failed into peeping."
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "He had gone to Alyona's building and stood on the stair listening to her voice through the door—counting, scolding, living—and had fled back into sunlight like a coward with a timetable."
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "That failure had fed the next day's resolve."
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "He told himself Napoleon did not rehearse."
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "He told himself the world was full of Alyonas who bit poor students."
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "He told himself Lizaveta would be at market."
+    },
+    {
+      "id": "s8-13",
+      "sceneId": "s8",
+      "text": "The world, it turned out, did not arrange itself for clean proofs."
+    },
+    {
+      "id": "s8-14",
+      "sceneId": "s8",
+      "text": "After the confession, on the train inland, he watched the vineyards and then the dry country and felt the city's glamour peel away like a sticker."
+    },
+    {
+      "id": "s8-15",
+      "sceneId": "s8",
+      "text": "A woman across the aisle offered him a sandwich."
+    },
+    {
+      "id": "s8-16",
+      "sceneId": "s8",
+      "text": "He refused, then accepted half, then hated the acceptance for its softness, then ate."
+    },
+    {
+      "id": "s8-17",
+      "sceneId": "s8",
+      "text": "Sonia sat two seats behind because regulations and pride made a complicated seating chart of love."
+    },
+    {
+      "id": "s8-18",
+      "sceneId": "s8",
+      "text": "When he glanced back she was reading."
+    },
+    {
+      "id": "s8-19",
+      "sceneId": "s8",
+      "text": "He understood that she would outlast his moods."
+    },
+    {
+      "id": "s8-20",
+      "sceneId": "s8",
+      "text": "The understanding irritated and steadied him at once."
+    },
+    {
+      "id": "s8-21",
+      "sceneId": "s8",
+      "text": "In the first months he refused her visits twice and then stood at the gate like a man waiting for a verdict he had already received."
+    },
+    {
+      "id": "s8-22",
+      "sceneId": "s8",
+      "text": "She brought onions, paper, news of Katerina's children placed with relations."
+    },
+    {
+      "id": "s8-23",
+      "sceneId": "s8",
+      "text": "She did not ask him to perform remorse for an audience."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Remorse, between them, became a private climate: some days clear, some days storm, always weather rather than speech."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "Razumikhin visited once, louder than the settlement, full of plans for a translation business and for Dunya's peace."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "He hugged Raskolnikov with the violence of friendship and said, \"You look less like a ghost.\""
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "Raskolnikov almost smiled."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "Almost was enough for Razumikhin, who collected almosts the way other men collected proofs."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "On a hot afternoon a fight broke out in the yard over a stolen cup."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "Raskolnikov did not join."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "He watched and felt neither superiority nor indifference—only the thick fact of men living inside consequence."
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "That night he wrote a page to Dunya that he did not send: *I am learning the names of tools."
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "I am trying to become someone who can be trusted with a hammer.* He burned the page because sentiment embarrassed him, then regretted the burning, then slept."
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "Sonia, in her room, kept the New Testament open to Lazarus more often than superstition required."
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "She was not naive."
+    },
+    {
+      "id": "s9-12",
+      "sceneId": "s9",
+      "text": "She knew what yellow tickets cost."
+    },
+    {
+      "id": "s9-13",
+      "sceneId": "s9",
+      "text": "She knew what axes cost."
+    },
+    {
+      "id": "s9-14",
+      "sceneId": "s9",
+      "text": "She chose, daily, to treat cost as something that could be carried together."
+    },
+    {
+      "id": "s9-15",
+      "sceneId": "s9",
+      "text": "When Raskolnikov finally wept at her knees, it was not cinema."
+    },
+    {
+      "id": "s9-16",
+      "sceneId": "s9",
+      "text": "It was the body giving up a position it could no longer afford."
+    },
+    {
+      "id": "s9-17",
+      "sceneId": "s9",
+      "text": "She held his head and looked at the dust and thought of Long Street far away—bass, lights, students—and did not wish herself back."
+    },
+    {
+      "id": "s9-18",
+      "sceneId": "s9",
+      "text": "Wish had become too small a verb."
+    },
+    {
+      "id": "s9-19",
+      "sceneId": "s9",
+      "text": "So the inland years began their slow arithmetic."
+    },
+    {
+      "id": "s9-20",
+      "sceneId": "s9",
+      "text": "Cape Town remained glamorous and exacting and unaware."
+    },
+    {
+      "id": "s9-21",
+      "sceneId": "s9",
+      "text": "Raskolnikov remained guilty and, gradually, companioned."
+    },
+    {
+      "id": "s9-22",
+      "sceneId": "s9",
+      "text": "Between those facts a life became possible—not redeemed like a coupon, only continued like a road."
+    },
+    {
+      "id": "s9-23",
+      "sceneId": "s9",
+      "text": "On the morning before he finally went to the station for good, Raskolnikov walked the length of Long Street as a man takes leave of a courtroom."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "He passed the garret doorway without looking up."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "He passed the club whose bass had shaken his floorboards and felt no nostalgia—only the bodily memory of vibration."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "At a cafe window he saw students with laptops composing futures; one wore a shirt with Table Mountain printed like a logo."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "He almost laughed."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "The mountain as brand."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "The mountain as jury."
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "The mountain as stone."
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "All true at once, and none of it his business anymore."
+    },
+    {
+      "id": "s10-8",
+      "sceneId": "s10",
+      "text": "He bought nothing."
+    },
+    {
+      "id": "s10-9",
+      "sceneId": "s10",
+      "text": "He had Sonia's cross under his shirt and Porfiry's patience somewhere behind his ribs like a second heartbeat he resented."
+    },
+    {
+      "id": "s10-10",
+      "sceneId": "s10",
+      "text": "A street preacher spoke of repentance through a portable speaker; Raskolnikov walked faster, not because he disagreed, but because public repentance still felt like a costume and he was done with costumes."
+    },
+    {
+      "id": "s10-11",
+      "sceneId": "s10",
+      "text": "Confession, when it came, would be paperwork and earth-kissing and Sonia's hand—not theater for strangers with iced coffee."
+    },
+    {
+      "id": "s10-12",
+      "sceneId": "s10",
+      "text": "In Porfiry's office that final time, before the formal confession, the investigator poured tea as if tea could demilitarize a soul."
+    },
+    {
+      "id": "s10-13",
+      "sceneId": "s10",
+      "text": "\"You look tired,\" Porfiry said."
+    },
+    {
+      "id": "s10-14",
+      "sceneId": "s10",
+      "text": "\"Tired men tell the truth because lying requires calories.\""
+    },
+    {
+      "id": "s10-15",
+      "sceneId": "s10",
+      "text": "Raskolnikov stared at the cup."
+    },
+    {
+      "id": "s10-16",
+      "sceneId": "s10",
+      "text": "\"You enjoy this,\" he said."
+    },
+    {
+      "id": "s10-17",
+      "sceneId": "s10",
+      "text": "Porfiry shook his head with something like kindness."
+    },
+    {
+      "id": "s10-18",
+      "sceneId": "s10",
+      "text": "\"I enjoy endings that spare me another body."
+    },
+    {
+      "id": "s10-19",
+      "sceneId": "s10",
+      "text": "That is not the same.\""
+    },
+    {
+      "id": "s10-20",
+      "sceneId": "s10",
+      "text": "Silence held."
+    },
+    {
+      "id": "s10-21",
+      "sceneId": "s10",
+      "text": "Outside a siren went somewhere else."
+    },
+    {
+      "id": "s10-22",
+      "sceneId": "s10",
+      "text": "Raskolnikov did not speak then."
+    },
+    {
+      "id": "s10-23",
+      "sceneId": "s10",
+      "text": "He stood, left, and understood that Porfiry had opened a door and would leave it open without chasing."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "The chase had always been inside."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Svidrigailov's last smile—before Dunya's gun, before the dawn—returned as Raskolnikov crossed toward the station with Sonia."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "Svidrigailov had been what the theory became when it dropped its essay and kept only appetite."
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "To see him broken by Dunya's refusal had been a mirror with the silver flaking: Raskolnikov's own step-over, shown without philosophy's makeup."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "He had not thanked Dunya."
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "He did not know how."
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "In a letter later he would try: *You fired, and I lived in the sound.* It would be inadequate."
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "Adequacy was another long apprenticeship."
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "At the station desk the clerk's pen scratched."
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "Raskolnikov said the names—Alyona Ivanovna, Lizaveta Ivanovna—as if returning borrowed books."
+    },
+    {
+      "id": "s11-10",
+      "sceneId": "s11",
+      "text": "Sonia waited outside until they allowed her a moment."
+    },
+    {
+      "id": "s11-11",
+      "sceneId": "s11",
+      "text": "She did not cry for the audience of uniforms."
+    },
+    {
+      "id": "s11-12",
+      "sceneId": "s11",
+      "text": "She adjusted his collar."
+    },
+    {
+      "id": "s11-13",
+      "sceneId": "s11",
+      "text": "Logistics again."
+    },
+    {
+      "id": "s11-14",
+      "sceneId": "s11",
+      "text": "Love as the refusal to make suffering picturesque."
+    },
+    {
+      "id": "s11-15",
+      "sceneId": "s11",
+      "text": "The van inland smelled of metal and oranges someone had peeled and discarded."
+    },
+    {
+      "id": "s11-16",
+      "sceneId": "s11",
+      "text": "Through the grate he watched Cape Town thin: harbor cranes, then highway, then vineyards, then the dry country where glamour had no budget."
+    },
+    {
+      "id": "s11-17",
+      "sceneId": "s11",
+      "text": "He thought of Marmeladov's tavern voice—*Sonia has a yellow ticket*—and of his own article's cold sentences."
+    },
+    {
+      "id": "s11-18",
+      "sceneId": "s11",
+      "text": "He had wanted to be extraordinary."
+    },
+    {
+      "id": "s11-19",
+      "sceneId": "s11",
+      "text": "He had become specific: a particular murderer on a particular road toward a particular dust."
+    },
+    {
+      "id": "s11-20",
+      "sceneId": "s11",
+      "text": "Specificity, he decided, was the beginning of moral sight."
+    },
+    {
+      "id": "s11-21",
+      "sceneId": "s11",
+      "text": "In the settlement the first week was all edges: wire, sun, rules spoken too fast."
+    },
+    {
+      "id": "s11-22",
+      "sceneId": "s11",
+      "text": "He refused soup once out of pride and ate it the next day out of need."
+    },
+    {
+      "id": "s11-23",
+      "sceneId": "s11",
+      "text": "Need taught faster than Porfiry."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "A man named Ismail showed him how to hold a tool without cutting himself."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "\"City hands,\" Ismail said, not unkindly."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "Raskolnikov nodded."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "City hands had held an axe."
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "These hands would learn otherwise."
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "Sonia's first visit after transfer nearly undid him."
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "She stood in the visiting light looking like Long Street and Bo-Kaap and Lazarus all at once."
+    },
+    {
+      "id": "s12-7",
+      "sceneId": "s12",
+      "text": "He wanted to send her away for her sake and pull her close for his."
+    },
+    {
+      "id": "s12-8",
+      "sceneId": "s12",
+      "text": "He did neither well."
+    },
+    {
+      "id": "s12-9",
+      "sceneId": "s12",
+      "text": "She talked about the children, about a room with a stove that worked half the time, about Katerina's embroidered shawl sold for debts."
+    },
+    {
+      "id": "s12-10",
+      "sceneId": "s12",
+      "text": "He listened and hated how much he needed the listening."
+    },
+    {
+      "id": "s12-11",
+      "sceneId": "s12",
+      "text": "When time ended he said her name as if testing whether it still opened the air."
+    },
+    {
+      "id": "s12-12",
+      "sceneId": "s12",
+      "text": "Months arranged themselves."
+    },
+    {
+      "id": "s12-13",
+      "sceneId": "s12",
+      "text": "He translated Razumikhin's dull pamphlet by lamp."
+    },
+    {
+      "id": "s12-14",
+      "sceneId": "s12",
+      "text": "He taught letters to men who swore and then spelled carefully."
+    },
+    {
+      "id": "s12-15",
+      "sceneId": "s12",
+      "text": "He quarreled with Sonia twice about nothing and apologized badly."
+    },
+    {
+      "id": "s12-16",
+      "sceneId": "s12",
+      "text": "He dreamed of Lizaveta's parcel and woke with his fists closed."
+    },
+    {
+      "id": "s12-17",
+      "sceneId": "s12",
+      "text": "He opened them on purpose."
+    },
+    {
+      "id": "s12-18",
+      "sceneId": "s12",
+      "text": "Small drills of freedom."
+    },
+    {
+      "id": "s12-19",
+      "sceneId": "s12",
+      "text": "Pulcheria died in the second winter—quietly, Razumikhin wrote, with Dunya holding her hand and speaking of Rodion as if he were already returning in pieces."
+    },
+    {
+      "id": "s12-20",
+      "sceneId": "s12",
+      "text": "Grief reached inland as a letter that trembled in his fingers."
+    },
+    {
+      "id": "s12-21",
+      "sceneId": "s12",
+      "text": "He went behind the barracks and stood until the dust wind made his eyes stream so that weeping could wear an alibi."
+    },
+    {
+      "id": "s12-22",
+      "sceneId": "s12",
+      "text": "Sonia found him and did not offer slogans."
+    },
+    {
+      "id": "s12-23",
+      "sceneId": "s12",
+      "text": "She sat on the bench and let grief be a third person between them."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Later he wrote Dunya a letter that did not philosophize. *I am sorry I was not there."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "I am trying to become someone who can be there for the living.* He sent it."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "Sending felt like another kind of confession—smaller, truer."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "On an evening near the end of the hard middle—if endings have middles—he and Sonia walked the fence line and he said he loved her without preface."
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "She cried then, briefly, practical tears, and laughed at herself for crying."
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "\"I have waited,\" she said, \"not for the words."
+    },
+    {
+      "id": "s13-6",
+      "sceneId": "s13",
+      "text": "For you to mean them without using them as escape.\""
+    },
+    {
+      "id": "s13-7",
+      "sceneId": "s13",
+      "text": "He understood."
+    },
+    {
+      "id": "s13-8",
+      "sceneId": "s13",
+      "text": "Love as escape had been cousin to theory."
+    },
+    {
+      "id": "s13-9",
+      "sceneId": "s13",
+      "text": "Love as staying was cousin to work."
+    },
+    {
+      "id": "s13-10",
+      "sceneId": "s13",
+      "text": "Cape Town, far behind, continued its evenings: Sea Point sunsets for sale, Long Street bass, students mistaking intensity for proof."
+    },
+    {
+      "id": "s13-11",
+      "sceneId": "s13",
+      "text": "Raskolnikov did not hate the city."
+    },
+    {
+      "id": "s13-12",
+      "sceneId": "s13",
+      "text": "Hate required a claim."
+    },
+    {
+      "id": "s13-13",
+      "sceneId": "s13",
+      "text": "He had forfeited claims."
+    },
+    {
+      "id": "s13-14",
+      "sceneId": "s13",
+      "text": "What he had instead was Sonia's hand, the alphabet, the inland sky without mountain, and the daily decision not to step over anyone—including himself—in the name of an idea."
+    },
+    {
+      "id": "s13-15",
+      "sceneId": "s13",
+      "text": "If there was grace, it looked like this: shared bread, scarves against wind, letters with margins full of Razumikhin's jokes, Dunya's news of a wedding without spectacle, Porfiry's name spoken once without dread, Lizaveta remembered without flinching away, Alyona remembered without the comfort of calling her only monster."
+    },
+    {
+      "id": "s13-16",
+      "sceneId": "s13",
+      "text": "Monsters and pawnbrokers and students and saints shared the same air."
+    },
+    {
+      "id": "s13-17",
+      "sceneId": "s13",
+      "text": "He had tried to sort them with an axe."
+    },
+    {
+      "id": "s13-18",
+      "sceneId": "s13",
+      "text": "Sorting, he learned, was done with attention paid over years."
+    },
+    {
+      "id": "s13-19",
+      "sceneId": "s13",
+      "text": "So he paid."
+    },
+    {
+      "id": "s13-20",
+      "sceneId": "s13",
+      "text": "And Sonia paid beside him."
+    },
+    {
+      "id": "s13-21",
+      "sceneId": "s13",
+      "text": "And the glamorous city, which had never required his brilliance, got on with being beautiful."
+    },
+    {
+      "id": "s13-22",
+      "sceneId": "s13",
+      "text": "Somewhere a child bought ice cream on Long Street and cried when it fell."
+    },
+    {
+      "id": "s13-23",
+      "sceneId": "s13",
+      "text": "The cry was not blasphemy anymore."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "It was only a child, and a street, and a city that contained murders and mercies without consulting theories."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "Raskolnikov, hearing that imagined cry in memory, finally let it be ordinary."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "Ordinary, at last, was the miracle he could bear."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "Before all of that—before inland dust and shared bread—there had been the night after Marmeladov's funeral tea, when Katerina Ivanovna's madness glittered like broken glass and Luzhin's planted note nearly destroyed Sonia in public."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "Raskolnikov had watched the room tilt toward condemnation and felt his own crime pulse under his tongue."
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Razumikhin's loud loyalty and a neighbor's sharp eyes turned the theater back on Luzhin."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "Dunya's engagement died that night with a clean sentence."
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "Raskolnikov walked Sonia home through streets still wet from earlier rain and said nothing useful."
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "She said, \"You are not alone in this,\" and he flinched as if alone had been his last property."
+    },
+    {
+      "id": "s14-9",
+      "sceneId": "s14",
+      "text": "There had been, too, the afternoon Porfiry received him with exaggerated welcome, offered a chair, spoke of the painter who returned to the gallery, spoke of psychological certainty as a kind of weather you wait out."
+    },
+    {
+      "id": "s14-10",
+      "sceneId": "s14",
+      "text": "\"I will arrest you when you arrest yourself,\" Porfiry murmured, smiling."
+    },
+    {
+      "id": "s14-11",
+      "sceneId": "s14",
+      "text": "Raskolnikov left and stood among Waterfront crowds photographing seals, envious of animals without theories."
+    },
+    {
+      "id": "s14-12",
+      "sceneId": "s14",
+      "text": "He nearly threw himself into confession then, nearly knelt at the crossroads, nearly made a scene."
+    },
+    {
+      "id": "s14-13",
+      "sceneId": "s14",
+      "text": "Pride stood him up."
+    },
+    {
+      "id": "s14-14",
+      "sceneId": "s14",
+      "text": "Pride walked him home."
+    },
+    {
+      "id": "s14-15",
+      "sceneId": "s14",
+      "text": "Pride sat on his chest all night like a second landlady."
+    },
+    {
+      "id": "s14-16",
+      "sceneId": "s14",
+      "text": "And there had been Dunya in Svidrigailov's rented room—her back straight, the revolver not theatrical but practical, the shot that missed becoming the hinge on which Svidrigailov's certainty broke."
+    },
+    {
+      "id": "s14-17",
+      "sceneId": "s14",
+      "text": "Afterward she came to Raskolnikov white-faced and told him enough."
+    },
+    {
+      "id": "s14-18",
+      "sceneId": "s14",
+      "text": "He understood that his sister had paid a portion of his debt in fear."
+    },
+    {
+      "id": "s14-19",
+      "sceneId": "s14",
+      "text": "He could not repay it with ideas."
+    },
+    {
+      "id": "s14-20",
+      "sceneId": "s14",
+      "text": "He could only stop adding to it."
+    },
+    {
+      "id": "s14-21",
+      "sceneId": "s14",
+      "text": "Those scenes did not vanish inland."
+    },
+    {
+      "id": "s14-22",
+      "sceneId": "s14",
+      "text": "They became the furniture of his conscience: Luzhin's cufflinks, Porfiry's tea, Dunya's gunpowder smell, Sonia's Lazarus voice, Lizaveta's parcel, Alyona's ledger, Marmeladov's dying gratitude, Razumikhin's oranges, Pulcheria's train-smell handkerchief, Table Mountain's mute outline."
+    },
+    {
+      "id": "s14-23",
+      "sceneId": "s14",
+      "text": "He lived among them without arranging them into an essay."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Essays had been the problem."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "In the third year a letter came saying Razumikhin and Dunya had married in a small room with too many flowers and not enough chairs."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "Raskolnikov read it aloud to Sonia and surprised himself by laughing—real laughter, brief, untheoretical."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "Sonia smiled as if she had been waiting for that sound the way she waited for rain."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "That night he slept without the mare."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "In the morning he taught a man to write his children's names."
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "The man cried."
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "Raskolnikov looked away politely and felt, under politeness, a kinship that did not require crime to prove itself."
+    },
+    {
+      "id": "s15-8",
+      "sceneId": "s15",
+      "text": "Cape Town's glamour remained a rumor with good lighting."
+    },
+    {
+      "id": "s15-9",
+      "sceneId": "s15",
+      "text": "He did not need to return to verify it."
+    },
+    {
+      "id": "s15-10",
+      "sceneId": "s15",
+      "text": "What he needed was already beside him: Sonia's practical sainthood, work's dull verbs, guilt's gravity, and the long road of becoming trustworthy with a hammer."
+    },
+    {
+      "id": "s15-11",
+      "sceneId": "s15",
+      "text": "The book closed, for now, on dust, bread, and a man who had stepped over blood and was learning—slowly, without brilliance—how to step back into the human measure."
+    },
+    {
+      "id": "s15-12",
+      "sceneId": "s15",
+      "text": "What remained, after the arithmetic of years, was not a sermon but a practice."
+    },
+    {
+      "id": "s15-13",
+      "sceneId": "s15",
+      "text": "Raskolnikov rose when the bell said rise."
+    },
+    {
+      "id": "s15-14",
+      "sceneId": "s15",
+      "text": "He washed in cold water that tasted of pipes and patience."
+    },
+    {
+      "id": "s15-15",
+      "sceneId": "s15",
+      "text": "He ate porridge that did not care about Napoleon."
+    },
+    {
+      "id": "s15-16",
+      "sceneId": "s15",
+      "text": "He worked until his shoulders burned with an honesty the axe had never offered."
+    },
+    {
+      "id": "s15-17",
+      "sceneId": "s15",
+      "text": "In the visiting room he watched Sonia arrive with paper parcels and news, and each time he felt the old urge to perform suffering for her—and each time, more often, he refused the performance and simply sat."
+    },
+    {
+      "id": "s15-18",
+      "sceneId": "s15",
+      "text": "Razumikhin sent books: dull ones, useful ones, one novel Sonia had loved as a girl."
+    },
+    {
+      "id": "s15-19",
+      "sceneId": "s15",
+      "text": "Raskolnikov read slowly, suspicious of beauty, then less suspicious."
+    },
+    {
+      "id": "s15-20",
+      "sceneId": "s15",
+      "text": "Beauty, inland, could not be used as alibi."
+    },
+    {
+      "id": "s15-21",
+      "sceneId": "s15",
+      "text": "It could only be endured or shared."
+    },
+    {
+      "id": "s15-22",
+      "sceneId": "s15",
+      "text": "He shared a page with Ismail about a river that was not the harbor."
+    },
+    {
+      "id": "s15-23",
+      "sceneId": "s15",
+      "text": "Ismail said, \"Your city sounds expensive.\""
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Raskolnikov said, \"It was."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "I paid wrong currency.\""
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "Ismail nodded as men nod when they recognize a true sentence without needing its footnotes."
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "On a clear evening he stood alone at the fence and spoke aloud to Lizaveta—not prayer exactly, not apology as transaction, only address. *I see you."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "I do not get to use you as proof.* The wind took the words."
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "He did not ask for reply."
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "Reply was Sonia's footsteps behind him, late for curfew risk, carrying a scarf he had forgotten."
+    },
+    {
+      "id": "s16-7",
+      "sceneId": "s16",
+      "text": "\"You will freeze,\" she said."
+    },
+    {
+      "id": "s16-8",
+      "sceneId": "s16",
+      "text": "He took the scarf."
+    },
+    {
+      "id": "s16-9",
+      "sceneId": "s16",
+      "text": "Freezing had been a metaphor too long."
+    },
+    {
+      "id": "s16-10",
+      "sceneId": "s16",
+      "text": "Now it was weather."
+    },
+    {
+      "id": "s16-11",
+      "sceneId": "s16",
+      "text": "Weather could be met with wool."
+    },
+    {
+      "id": "s16-12",
+      "sceneId": "s16",
+      "text": "Dunya wrote that she was pregnant, that Razumikhin cried at the news in a way that made her respect him more, that she still sometimes woke from dreams of Svidrigailov's room and checked the locks and then laughed at herself and did not laugh."
+    },
+    {
+      "id": "s16-13",
+      "sceneId": "s16",
+      "text": "Raskolnikov wrote back: *Your shot taught me something Porfiry's tea could not."
+    },
+    {
+      "id": "s16-14",
+      "sceneId": "s16",
+      "text": "Thank you for living.* He hesitated before sending, afraid of melodrama, then sent anyway."
+    },
+    {
+      "id": "s16-15",
+      "sceneId": "s16",
+      "text": "Melodrama, he decided, was less dangerous than silence dressed as dignity."
+    },
+    {
+      "id": "s16-16",
+      "sceneId": "s16",
+      "text": "Porfiry never wrote."
+    },
+    {
+      "id": "s16-17",
+      "sceneId": "s16",
+      "text": "His absence was correct."
+    },
+    {
+      "id": "s16-18",
+      "sceneId": "s16",
+      "text": "Investigators are not godfathers to the guilty."
+    },
+    {
+      "id": "s16-19",
+      "sceneId": "s16",
+      "text": "Still, when Raskolnikov taught the alphabet, he sometimes heard Porfiry's soft voice in the rhythm of correction—*again, patiently, again*—and did not resent it."
+    },
+    {
+      "id": "s16-20",
+      "sceneId": "s16",
+      "text": "Patience had been the weapon that defeated his theory without drawing blood."
+    },
+    {
+      "id": "s16-21",
+      "sceneId": "s16",
+      "text": "In the settlement chapel, on a Sunday of thin singing, Sonia looked at him and he looked back without flinching from being seen."
+    },
+    {
+      "id": "s16-22",
+      "sceneId": "s16",
+      "text": "Being seen had once meant being hunted."
+    },
+    {
+      "id": "s16-23",
+      "sceneId": "s16",
+      "text": "Now it meant being known."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "The difference was the whole book."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "Cape Town kept its glamorous appointments: lights on Long Street, wind at Sea Point, mountain above the bowl of the city like a fact older than articles."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "Raskolnikov kept his: work, bread, scarf, letters, the names of the dead spoken without theory, the hand of the living held without escape."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "Between city and settlement a road of dust remembered every van that had carried a man from brilliance to measure."
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "He walked that road only in memory now."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "In memory it was enough."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "And if a reader asked what became of the extraordinary man, the answer was plain as water: he became a man."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "Not purified like laundry."
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "Not famous."
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "Not finished."
+    },
+    {
+      "id": "s17-10",
+      "sceneId": "s17",
+      "text": "Only human on purpose, beside Sonia Marmeladova, under an inland sky, with Table Mountain far enough away to stop pretending it had ever needed to judge him."
+    },
+    {
+      "id": "s17-11",
+      "sceneId": "s17",
+      "text": "In the last light of a visiting day, as guards shifted their weight and the room prepared to become empty, Raskolnikov asked Sonia whether she ever hated him for the axe."
+    },
+    {
+      "id": "s17-12",
+      "sceneId": "s17",
+      "text": "She considered—not performing consideration, actually using time."
+    },
+    {
+      "id": "s17-13",
+      "sceneId": "s17",
+      "text": "\"I hated the axe,\" she said."
+    },
+    {
+      "id": "s17-14",
+      "sceneId": "s17",
+      "text": "\"I hated what it made of you."
+    },
+    {
+      "id": "s17-15",
+      "sceneId": "s17",
+      "text": "I did not hate you enough to leave."
+    },
+    {
+      "id": "s17-16",
+      "sceneId": "s17",
+      "text": "Leaving would have been cleaner."
+    },
+    {
+      "id": "s17-17",
+      "sceneId": "s17",
+      "text": "I am not always clean.\""
+    },
+    {
+      "id": "s17-18",
+      "sceneId": "s17",
+      "text": "He almost argued for her purity and stopped himself."
+    },
+    {
+      "id": "s17-19",
+      "sceneId": "s17",
+      "text": "Purity arguments had killed Lizaveta in his mind before the blow."
+    },
+    {
+      "id": "s17-20",
+      "sceneId": "s17",
+      "text": "He said only, \"Stay unclean with me, then.\""
+    },
+    {
+      "id": "s17-21",
+      "sceneId": "s17",
+      "text": "She nodded, and the nod was a contract more binding than his old article."
+    },
+    {
+      "id": "s17-22",
+      "sceneId": "s17",
+      "text": "That night he dreamed not of the mare but of Marmeladov sober for one hour, telling a joke badly, Katerina laughing despite herself."
+    },
+    {
+      "id": "s17-23",
+      "sceneId": "s17",
+      "text": "He woke smiling and suspicious of the smile, then allowed it."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "Allowed joy was part of the apprenticeship."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "So was allowed grief."
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "So was the next day's labor."
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "The continuous book of his life—no timed sits, no glamorous intermission—went on in dust and bread and names: Raskolnikov, Sonia, Porfiry, Dunya, Marmeladov, Razumikhin, Lizaveta, Alyona."
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "The mountain remained."
+    },
+    {
+      "id": "s18-5",
+      "sceneId": "s18",
+      "text": "The man remained."
+    },
+    {
+      "id": "s18-6",
+      "sceneId": "s18",
+      "text": "The theory did not."
+    },
+    {
+      "id": "s18-7",
+      "sceneId": "s18",
+      "text": "Years later, when release became a rumor with a date, Sonia spoke of a small room near a school and work that did not require yellow tickets."
+    },
+    {
+      "id": "s18-8",
+      "sceneId": "s18",
+      "text": "Raskolnikov listened and felt fear—not of punishment, of freedom's unscripted rooms."
+    },
+    {
+      "id": "s18-9",
+      "sceneId": "s18",
+      "text": "He said so."
+    },
+    {
+      "id": "s18-10",
+      "sceneId": "s18",
+      "text": "She said fear was honest."
+    },
+    {
+      "id": "s18-11",
+      "sceneId": "s18",
+      "text": "They would walk into honesty the way they had walked to the station: together, without theater, Cape Town's glamour neither enemy nor prize."
+    },
+    {
+      "id": "s18-12",
+      "sceneId": "s18",
+      "text": "The axe would remain in the past as fact."
+    },
+    {
+      "id": "s18-13",
+      "sceneId": "s18",
+      "text": "The future would remain unwritten on purpose."
+    },
+    {
+      "id": "s18-14",
+      "sceneId": "s18",
+      "text": "That, too, was fidelity—to plot, to spirit, to the hard mercy of continuing."
+    },
+    {
+      "id": "s18-15",
+      "sceneId": "s18",
+      "text": "He kept Porfiry's tea in memory as a warning against cleverness and Sonia's scarf as a method."
+    },
+    {
+      "id": "s18-16",
+      "sceneId": "s18",
+      "text": "Between warning and method he lived."
+    },
+    {
+      "id": "s18-17",
+      "sceneId": "s18",
+      "text": "The continuous novel of guilt and love—reseeded in Cape Town's expensive light, faithful to the old names—closed only as mornings close: temporarily, with work waiting."
+    },
+    {
+      "id": "s18-18",
+      "sceneId": "s18",
+      "text": "The mountain watched nothing."
+    },
+    {
+      "id": "s18-19",
+      "sceneId": "s18",
+      "text": "He worked anyway."
+    },
+    {
+      "id": "s18-20",
+      "sceneId": "s18",
+      "text": "Sonia stayed."
+    },
+    {
+      "id": "s18-21",
+      "sceneId": "s18",
+      "text": "That was the whole of it."
+    }
+  ]
+}

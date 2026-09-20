@@ -1,0 +1,2178 @@
+{
+  "id": "pride-prejudice-buenos-aires",
+  "title": "Jane Austen, Pride and Prejudice recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A Recoleta remake of Pride and Prejudice: manners as municipal law along Alvear. After Austen, Pride and Prejudice, 1813.",
+  "minutes": 37,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Recoleta truths",
+      "place": "Buenos Aires",
+      "reentry": "It is a truth universally acknowledged in Buenos Aires that a single man in possession of a good fortune must be in want of a neighborhood.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Bingley arrives",
+      "place": "Buenos Aires",
+      "reentry": "Charles Bingley rented light: a Palermo house with rooms that seemed designed for dancing.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Netherfield as Palermo fever",
+      "place": "Buenos Aires",
+      "reentry": "Jane caught cold after a rain-soaked invitation engineered by Mrs Bennet; she stayed at Bingley’s house under sisterly care.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Wickham in uniform charm",
+      "place": "Buenos Aires",
+      "reentry": "George Wickham arrived with militia glamour and a story about Darcy’s cruelty regarding an inheritance.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Proposal at the wrong temperature",
+      "place": "Buenos Aires",
+      "reentry": "When Bingley left town abruptly—Darcy and the sisters steering him from Jane—Elizabeth’s anger found a target.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "What Darcy wrote",
+      "place": "Buenos Aires",
+      "reentry": "The morning after the failed proposal Darcy handed Elizabeth a letter on a walk near the Recoleta cemetery wall—stone angels, cypress, the city’s talent for making death look curated.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "Lydia’s noise and Brighton",
+      "place": "Buenos Aires",
+      "reentry": "Lydia Bennet chased officers as if flirtation were a job with overtime.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Elopement",
+      "place": "Buenos Aires",
+      "reentry": "News found them like a thrown stone: Lydia had run off with Wickham.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Lady Catherine",
+      "place": "Buenos Aires",
+      "reentry": "Lady Catherine de Bourgh descended on the Recoleta apartment like an audit.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "Second proposal",
+      "place": "Buenos Aires",
+      "reentry": "Bingley returned and proposed to Jane with unguarded joy.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "Assemblies, visits, and the slow correction",
+      "place": "Buenos Aires",
+      "reentry": "Before the letter, Elizabeth’s days filled with Mrs Bennet’s nerves, Mary’s extracts, Kitty and Lydia’s officer gossip, and Jane’s gentle reports of Bingley’s smiles.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s11",
+      "title": "Scenes that earn their place",
+      "place": "Buenos Aires",
+      "reentry": "Mrs Bennet’s matchmaking filled the apartment like perfume that would not open a window—yet Elizabeth loved her mother with irritated fidelity.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s12",
+      "title": "Continuous middle",
+      "place": "Buenos Aires",
+      "reentry": "Between assembly and altar the city performed seasons: humid assemblies, sharp winter light on Alvear, spring in the Japanese Garden where Elizabeth told Jane, carefully, that she had been wrong about Darcy without yet confessing love.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s13",
+      "title": "More flesh on kept beats",
+      "place": "Buenos Aires",
+      "reentry": "Elizabeth’s early walk with Darcy after Jane’s recovery at Bingley’s house included a silence in which both misread the other’s quiet.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s14",
+      "title": "Extended continuous narrative",
+      "place": "Buenos Aires",
+      "reentry": "Elizabeth woke early on the day she would first see Darcy’s estancia and dressed without telling herself stories about chance.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s15",
+      "title": "Collins, Charlotte, and Hunsford weeks",
+      "place": "Buenos Aires",
+      "reentry": "Mr Collins arrived with compliments prepared like sandwiches for a picnic he alone enjoyed.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s16",
+      "title": "Brighton road and the estancia hour by hour",
+      "place": "Buenos Aires",
+      "reentry": "Lydia’s departure toward the militia’s seaside amusement was flagged with ribbons and parental failure.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s17",
+      "title": "Settlements and second chances",
+      "place": "Buenos Aires",
+      "reentry": "Uncle Gardiner’s letters described negotiations; Aunt Gardiner’s later honesty named Darcy as the purse and the will.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s18",
+      "title": "Daily life of an education",
+      "place": "Buenos Aires",
+      "reentry": "Elizabeth’s marriage to Darcy did not end her walking.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s19",
+      "title": "What Buenos Aires contributed without stealing the book",
+      "place": "Buenos Aires",
+      "reentry": "The city’s glamorous surfaces—Alvear’s polished manners, Recoleta’s stone angels, Palermo’s party houses, the Japanese Garden’s bridges, estancia light—gave the reseat its wardrobe.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s20",
+      "title": "Further kept texture",
+      "place": "Buenos Aires",
+      "reentry": "Before any assembly, Mrs Bennet’s campaign for advantageous marriage saturated breakfasts.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s21",
+      "title": "Closing movement at novel length",
+      "place": "Buenos Aires",
+      "reentry": "In the weeks after her engagement Elizabeth found old insults returning as comedy.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "It is a truth universally acknowledged in Buenos Aires that a single man in possession of a good fortune must be in want of a neighborhood."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Mrs Bennet of a Recoleta apartment along Alvear treated this truth as municipal law."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Mr Bennet treated it as entertainment."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Their five daughters—Jane, Elizabeth, Mary, Kitty, Lydia—arranged themselves along a spectrum from sweetness to noise."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Elizabeth Bennet kept wit as both shield and instrument."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "She walked the Japanese Garden when family air thickened and returned able to smile without surrender."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Charles Bingley rented light: a Palermo house with rooms that seemed designed for dancing."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "He brought an open face into closed salons."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "With him came his sisters and his friend Fitzwilliam Darcy, whose fortune was larger and whose manners were not."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "At the first assembly Bingley danced with Jane Bennet twice."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Darcy declined Elizabeth’s acquaintance with a sentence about crowded rooms and tolerable looks."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Pride spoke first; prejudice filed the recording."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Elizabeth: He is the proudest man I have ever met who still expects applause for breathing."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Jane: He is simply shy."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "Elizabeth: Shyness does not insult strangers for sport."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Jane caught cold after a rain-soaked invitation engineered by Mrs Bennet; she stayed at Bingley’s house under sisterly care."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Elizabeth walked in to nurse her, muddy hems offending Caroline Bingley’s taste."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Darcy watched Elizabeth and began, against intention, to revise his first assessment."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Conversations about reading, walking, and the ethics of ridicule threaded evenings."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Caroline aimed barbs; Elizabeth returned them cleaned."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Bingley’s regard for Jane grew obvious."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Darcy’s regard for Elizabeth grew inconvenient."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "George Wickham arrived with militia glamour and a story about Darcy’s cruelty regarding an inheritance."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Elizabeth, predisposed by the assembly insult, believed him."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Wickham’s ease felt like truth because it flattered her judgment."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Lady Catherine de Bourgh’s nephew Colonel Fitzwilliam later complicated the portrait; for now Elizabeth’s prejudice wore Wickham’s smile as evidence."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "When Bingley left town abruptly—Darcy and the sisters steering him from Jane—Elizabeth’s anger found a target."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Jane suffered quietly."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "Then Darcy found Elizabeth alone and proposed marriage in terms that insulted her family while confessing his love as a lapse he had conquered insufficiently."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Darcy: You must allow me to tell you how ardently I admire and love you—against my reason, my family’s expectations, and your connections."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "Elizabeth: Against your reason?"
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "Then keep your admiration."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "I would not marry a man who ruined my sister’s happiness and bragged of the ruin—and who, if Wickham tells true, ruined him too."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "Darcy left white with fury and something like respect."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "The morning after the failed proposal Darcy handed Elizabeth a letter on a walk near the Recoleta cemetery wall—stone angels, cypress, the city’s talent for making death look curated."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "She read it twice."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "He explained Bingley: he had believed Jane indifferent, had separated them to protect his friend from a family he judged grasping."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "He explained Wickham: the steward’s son, the attempted elopement with Georgiana Darcy at fifteen, the debts, the lies."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "Facts rearranged Elizabeth’s furniture."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "She walked until her prejudice felt like a dress she had worn into rain."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "Shame arrived—not theatrical, useful."
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "She had called it discernment when it was wounded vanity."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Lydia Bennet chased officers as if flirtation were a job with overtime."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "When the regiment moved and Lydia secured an invitation toward a coastal posting—recast as a seaside resort circuit from Buenos Aires society—Elizabeth warned; Mr Bennet shrugged; Mrs Bennet rejoiced."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "The shrug would cost them."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "Elizabeth toured north with uncle and aunt Gardiner—estancia country as Pemberley’s analogue: Darcy’s family estate among humid green and careful horses."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "She saw his grounds without expecting him."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "He appeared, awkward, kind to her relations, changed in the ways apology changes posture."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "Georgiana’s sweetness undid remaining caricature."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "News found them like a thrown stone: Lydia had run off with Wickham."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Ruin, in Austen’s grammar, still meant reputation’s market."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "The Gardiners and Elizabeth returned; Mr Bennet searched; letters negotiated."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Secretly Darcy found Wickham, paid debts, bought the marriage that converted scandal into a merely embarrassing match."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Elizabeth learned of Darcy’s hand through aunt Gardiner’s careful honesty."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Gratitude complicated pride."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Love, previously refused, returned as knowledge."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Lady Catherine de Bourgh descended on the Recoleta apartment like an audit."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "She demanded Elizabeth renounce Darcy—for a planned match with Miss de Bourgh, for hierarchy, for the pleasure of command."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "Lady Catherine: You will promise never to marry him."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "Elizabeth: I will promise nothing of the kind."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "I am not under your jurisdiction."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "Lady Catherine left offended."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "Her report to Darcy—that Elizabeth had not refused him—became, ironically, encouragement."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Bingley returned and proposed to Jane with unguarded joy."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "Jane’s happiness repaired a wing of the house."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "Darcy found Elizabeth in the thin privacy a city apartment allows."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "Darcy: My affections and wishes are unchanged."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "Speak and tell me if mine have any chance."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "Elizabeth: They have."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "I am sorry for my former blindness."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "I am not sorry for refusing the man you were in that first speech—but you are not only that man now."
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "They married."
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "Jane and Bingley married."
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "Lydia and Wickham remained a tax on nerves."
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "Kitty improved by proximity to sense."
+    },
+    {
+      "id": "s9-12",
+      "sceneId": "s9",
+      "text": "Mary found lectures."
+    },
+    {
+      "id": "s9-13",
+      "sceneId": "s9",
+      "text": "Mrs Bennet crowed."
+    },
+    {
+      "id": "s9-14",
+      "sceneId": "s9",
+      "text": "Mr Bennet joked with relief that tasted like love."
+    },
+    {
+      "id": "s9-15",
+      "sceneId": "s9",
+      "text": "Buenos Aires kept Alvear’s manners, Palermo’s rented light, the Japanese Garden’s paths, the estancia’s repair, the cemetery wall’s letter."
+    },
+    {
+      "id": "s9-16",
+      "sceneId": "s9",
+      "text": "Names stayed: Elizabeth Bennet, Darcy, Jane, Bingley, Wickham, Mrs Bennet, Mr Bennet, Lydia, Kitty, Mary, Georgiana, Lady Catherine, the Gardiners."
+    },
+    {
+      "id": "s9-17",
+      "sceneId": "s9",
+      "text": "Pride and prejudice yielded—not to glamour, to education."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Before the letter, Elizabeth’s days filled with Mrs Bennet’s nerves, Mary’s extracts, Kitty and Lydia’s officer gossip, and Jane’s gentle reports of Bingley’s smiles."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "Charlotte Lucas—practical, clear-eyed—accepted Mr Collins’s proposal when Collins, Lady Catherine’s clerical satellite, rebound from Elizabeth’s refusal to Charlotte’s availability."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "Elizabeth mourned the match as a verdict on women’s economies; Charlotte called it a house and a future."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "At Rosings—recast as Lady Catherine’s imposing residence in a northern suburb of imported solemnity—Collins toadying and Lady Catherine’s interrogations gave Elizabeth sport."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "Colonel Fitzwilliam’s conversation revealed Darcy’s role in steering Bingley away—fuel for the rejected proposal’s anger—before the letter reframed motive."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "Elizabeth: So he boasts of separating them."
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "Fitzwilliam: He calls it care."
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "Care can be arrogant."
+    },
+    {
+      "id": "s10-8",
+      "sceneId": "s10",
+      "text": "After the letter Elizabeth replayed Wickham’s every glance and found performance where she had stored sincerity."
+    },
+    {
+      "id": "s10-9",
+      "sceneId": "s10",
+      "text": "She met him later with cool civility that startled him into caution."
+    },
+    {
+      "id": "s10-10",
+      "sceneId": "s10",
+      "text": "Prejudice, once corrected, became a tool against charm."
+    },
+    {
+      "id": "s10-11",
+      "sceneId": "s10",
+      "text": "At the estancia—Pemberley analogue—housekeeper praise of Darcy as landlord and brother contradicted Elizabeth’s early cartoon."
+    },
+    {
+      "id": "s10-12",
+      "sceneId": "s10",
+      "text": "When Darcy joined them unexpectedly, his courtesy to the Gardiners was a second proposal without words."
+    },
+    {
+      "id": "s10-13",
+      "sceneId": "s10",
+      "text": "Elizabeth felt desire and fear braided: desire for the man emerging, fear of how much she had misread."
+    },
+    {
+      "id": "s10-14",
+      "sceneId": "s10",
+      "text": "Lydia’s elopement letter arrived on ordinary paper."
+    },
+    {
+      "id": "s10-15",
+      "sceneId": "s10",
+      "text": "Mrs Bennet took to her room; Mr Bennet took to roads and regret; Mary moralized; Kitty cried from thwarted envy."
+    },
+    {
+      "id": "s10-16",
+      "sceneId": "s10",
+      "text": "Elizabeth’s private knowledge of Darcy’s intervention came slowly, then all at once, and remade gratitude into love conscious of debt without being purchased."
+    },
+    {
+      "id": "s10-17",
+      "sceneId": "s10",
+      "text": "Bingley’s return was Darcy’s unspoken restitution for Jane."
+    },
+    {
+      "id": "s10-18",
+      "sceneId": "s10",
+      "text": "Watching her sister’s face, Elizabeth understood happiness as contagious without being simple."
+    },
+    {
+      "id": "s10-19",
+      "sceneId": "s10",
+      "text": "Her own happiness required speech."
+    },
+    {
+      "id": "s10-20",
+      "sceneId": "s10",
+      "text": "She spoke."
+    },
+    {
+      "id": "s10-21",
+      "sceneId": "s10",
+      "text": "He answered."
+    },
+    {
+      "id": "s10-22",
+      "sceneId": "s10",
+      "text": "Austen’s double marriage closed the social equation: sense joined to goodness, pride educated by refusal, prejudice educated by evidence."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Mrs Bennet’s matchmaking filled the apartment like perfume that would not open a window—yet Elizabeth loved her mother with irritated fidelity."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Mr Bennet’s library was refuge and abdication; Elizabeth forgave the abdication because wit had been their shared language since childhood."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "Caroline Bingley’s letters to Jane mixed sugar and knife."
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "Elizabeth read them aloud in parody until Jane pleaded for charity."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "Charity, Elizabeth decided, should not require stupidity; she softened her parody and not her assessment."
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "Darcy’s first admiration showed in a request to dance that Elizabeth refused; later in a defense of her against Caroline’s sneers about relatives in trade—the Gardiners being precisely the relatives who would later commend him."
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "Irony set traps for both leads and released them only when each paid attention."
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "Wickham’s debts in local shops surfaced after the marriage settlement; Elizabeth received the accounting as confirmation."
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "She did not triumph."
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "Triumph is another vanity."
+    },
+    {
+      "id": "s11-10",
+      "sceneId": "s11",
+      "text": "Georgiana Darcy’s piano and shyness gave Elizabeth a sister-in-law who needed protection from the world’s Wickhams."
+    },
+    {
+      "id": "s11-11",
+      "sceneId": "s11",
+      "text": "Elizabeth offered friendship without condescension."
+    },
+    {
+      "id": "s11-12",
+      "sceneId": "s11",
+      "text": "Darcy watched and loved her more for that economy of kindness."
+    },
+    {
+      "id": "s11-13",
+      "sceneId": "s11",
+      "text": "Lady Catherine’s final visit after the engagement demanded denial; Elizabeth’s refusal stood."
+    },
+    {
+      "id": "s11-14",
+      "sceneId": "s11",
+      "text": "The old woman’s letter of denunciation became a family joke Mr Bennet treasured."
+    },
+    {
+      "id": "s11-15",
+      "sceneId": "s11",
+      "text": "Jokes, in this household, were how survival breathed."
+    },
+    {
+      "id": "s11-16",
+      "sceneId": "s11",
+      "text": "The wedding morning smelled of flowers and Mrs Bennet’s triumph."
+    },
+    {
+      "id": "s11-17",
+      "sceneId": "s11",
+      "text": "Elizabeth, in a dress chosen for walking as much as display, met Darcy’s eyes and found neither pride nor prejudice—only the long work ahead of two people who had learned to read."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "Between assembly and altar the city performed seasons: humid assemblies, sharp winter light on Alvear, spring in the Japanese Garden where Elizabeth told Jane, carefully, that she had been wrong about Darcy without yet confessing love."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "Jane rejoiced without interrogation."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "Their sisterhood remained the novel’s soft spine."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "Mr Collins’s letters congratulated with insults."
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "Charlotte’s postscripts asked Elizabeth to visit; Elizabeth did, and saw a marriage of management that worked on its own terms."
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "She would not have chosen it; she respected Charlotte’s authorship of her own compromise."
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "When Darcy’s name first softened in Elizabeth’s mouth, she was alone on a balcony above Recoleta traffic."
+    },
+    {
+      "id": "s12-7",
+      "sceneId": "s12",
+      "text": "She said it aloud experimentally."
+    },
+    {
+      "id": "s12-8",
+      "sceneId": "s12",
+      "text": "The name did not bite."
+    },
+    {
+      "id": "s12-9",
+      "sceneId": "s12",
+      "text": "She laughed at herself and went in to help Mary find a misplaced sermon book."
+    },
+    {
+      "id": "s12-10",
+      "sceneId": "s12",
+      "text": "Lydia’s wedding to Wickham was endured."
+    },
+    {
+      "id": "s12-11",
+      "sceneId": "s12",
+      "text": "Darcy stood backstage of the arrangement; Elizabeth’s eyes thanked him across a room before speech was possible."
+    },
+    {
+      "id": "s12-12",
+      "sceneId": "s12",
+      "text": "Later, walking, she tried to thank him; he asked to be allowed hope instead."
+    },
+    {
+      "id": "s12-13",
+      "sceneId": "s12",
+      "text": "She granted hope as a serious gift."
+    },
+    {
+      "id": "s12-14",
+      "sceneId": "s12",
+      "text": "Bingley and Jane settled in a house with enough bedrooms for sisters and enough distance from Mrs Bennet for peace."
+    },
+    {
+      "id": "s12-15",
+      "sceneId": "s12",
+      "text": "Elizabeth and Darcy divided time between city and estancia."
+    },
+    {
+      "id": "s12-16",
+      "sceneId": "s12",
+      "text": "Kitty visited and improved."
+    },
+    {
+      "id": "s12-17",
+      "sceneId": "s12",
+      "text": "Lydia visited and did not."
+    },
+    {
+      "id": "s12-18",
+      "sceneId": "s12",
+      "text": "Mary married a clerk of minor opinions."
+    },
+    {
+      "id": "s12-19",
+      "sceneId": "s12",
+      "text": "The end was not utopia; it was education completed far enough to begin."
+    },
+    {
+      "id": "s12-20",
+      "sceneId": "s12",
+      "text": "Word of the double match traveled Buenos Aires’s salons as successfully as any fortune."
+    },
+    {
+      "id": "s12-21",
+      "sceneId": "s12",
+      "text": "Austen’s spirit held: comedy as moral intelligence, marriage as knowledge test, pride and prejudice as errors that love does not excuse but can re-educate."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Elizabeth’s early walk with Darcy after Jane’s recovery at Bingley’s house included a silence in which both misread the other’s quiet."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "She thought him judging her family; he was fighting the surprise of preferring her mind to Caroline’s finish."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "A vendor’s call from a side street broke the silence; they spoke of books."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "He named moralists; she named novels that told truths moralists footnoted."
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "He almost smiled."
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "Almost was the beginning."
+    },
+    {
+      "id": "s13-6",
+      "sceneId": "s13",
+      "text": "At a second assembly Wickham’s absence—once Darcy entered—taught Elizabeth nothing because she was not yet ready to learn."
+    },
+    {
+      "id": "s13-7",
+      "sceneId": "s13",
+      "text": "She danced with others and stored Darcy’s glance as arrogance."
+    },
+    {
+      "id": "s13-8",
+      "sceneId": "s13",
+      "text": "Storage is not the same as sight."
+    },
+    {
+      "id": "s13-9",
+      "sceneId": "s13",
+      "text": "Mrs Gardiner’s counsel about Wickham’s sudden interest cooling when he learned Elizabeth had little fortune planted a seed."
+    },
+    {
+      "id": "s13-10",
+      "sceneId": "s13",
+      "text": "Seeds need the letter’s rain."
+    },
+    {
+      "id": "s13-11",
+      "sceneId": "s13",
+      "text": "On the estancia tour the housekeeper showed miniatures: Wickham as a boy handsome and already watchful; Darcy as a young man grave."
+    },
+    {
+      "id": "s13-12",
+      "sceneId": "s13",
+      "text": "Elizabeth’s stomach turned with retrospective clarity."
+    },
+    {
+      "id": "s13-13",
+      "sceneId": "s13",
+      "text": "When Darcy himself arrived on horseback, mud on boots, manners newly humble, the plot’s engine shifted from satire toward repair."
+    },
+    {
+      "id": "s13-14",
+      "sceneId": "s13",
+      "text": "The search for Lydia included Mr Bennet’s tired authority and Uncle Gardiner’s practical competence."
+    },
+    {
+      "id": "s13-15",
+      "sceneId": "s13",
+      "text": "Elizabeth’s terror was for Jane’s prospects as much as Lydia’s fate—the family’s market value collapsing."
+    },
+    {
+      "id": "s13-16",
+      "sceneId": "s13",
+      "text": "Darcy’s secret labor restored value without restoring Elizabeth’s ignorance; aunt Gardiner made sure credit landed where it belonged."
+    },
+    {
+      "id": "s13-17",
+      "sceneId": "s13",
+      "text": "Second proposal occurred on a street still wet from rain."
+    },
+    {
+      "id": "s13-18",
+      "sceneId": "s13",
+      "text": "No garden maze required: Austen’s clarity prefers conversation."
+    },
+    {
+      "id": "s13-19",
+      "sceneId": "s13",
+      "text": "Elizabeth spoke accountability; Darcy spoke constancy."
+    },
+    {
+      "id": "s13-20",
+      "sceneId": "s13",
+      "text": "They agreed to marry as people who had read each other’s worst pages and kept reading."
+    },
+    {
+      "id": "s13-21",
+      "sceneId": "s13",
+      "text": "Finale: two weddings, one city, original names intact, glamorous reseat only—Recoleta, Palermo, Alvear, Japanese Garden, estancia, cemetery wall."
+    },
+    {
+      "id": "s13-22",
+      "sceneId": "s13",
+      "text": "Never Featured."
+    },
+    {
+      "id": "s13-23",
+      "sceneId": "s13",
+      "text": "Whole continuous book."
+    },
+    {
+      "id": "s13-24",
+      "sceneId": "s13",
+      "text": "Mr Bennet’s private conversation with Elizabeth after Darcy’s first proposal—she did not detail it, only her refusal—earned his rare serious approval."
+    },
+    {
+      "id": "s13-25",
+      "sceneId": "s13",
+      "text": "He feared she might sell herself to wealth; he did not fear she would sell herself to swagger."
+    },
+    {
+      "id": "s13-26",
+      "sceneId": "s13",
+      "text": "When she later accepted Darcy, Mr Bennet required explanation; Elizabeth gave it without hiding the letter’s lessons."
+    },
+    {
+      "id": "s13-27",
+      "sceneId": "s13",
+      "text": "He released her with a joke that cracked to show love."
+    },
+    {
+      "id": "s13-28",
+      "sceneId": "s13",
+      "text": "Caroline Bingley’s final campaign against Elizabeth included a visit full of false sweetness."
+    },
+    {
+      "id": "s13-29",
+      "sceneId": "s13",
+      "text": "Elizabeth endured."
+    },
+    {
+      "id": "s13-30",
+      "sceneId": "s13",
+      "text": "Darcy’s boredom with Caroline became visible even to Caroline."
+    },
+    {
+      "id": "s13-31",
+      "sceneId": "s13",
+      "text": "Some defeats educate the defeated; Caroline preferred not to enroll."
+    },
+    {
+      "id": "s13-32",
+      "sceneId": "s13",
+      "text": "Mary’s wedding was small and slightly absurd; Elizabeth attended with genuine warmth."
+    },
+    {
+      "id": "s13-33",
+      "sceneId": "s13",
+      "text": "Absurdity, in Austen, is allowed to live next to happiness without poisoning it."
+    },
+    {
+      "id": "s13-34",
+      "sceneId": "s13",
+      "text": "Georgiana’s near-ruin with Wickham remained a guarded story."
+    },
+    {
+      "id": "s13-35",
+      "sceneId": "s13",
+      "text": "Elizabeth became its co-keeper, not its gossip."
+    },
+    {
+      "id": "s13-36",
+      "sceneId": "s13",
+      "text": "Trust between the women sealed Darcy’s household more than any fortune."
+    },
+    {
+      "id": "s13-37",
+      "sceneId": "s13",
+      "text": "On a return to the Japanese Garden after engagement, Elizabeth stood where she had once ranted against Darcy and thanked the path for hearing her foolishness without recording it in stone."
+    },
+    {
+      "id": "s13-38",
+      "sceneId": "s13",
+      "text": "The militia’s departure removed Lydia’s favorite entertainment until Wickham removed Lydia."
+    },
+    {
+      "id": "s13-39",
+      "sceneId": "s13",
+      "text": "The causal chain remained Austen’s: neglected education, parental levity, predatory charm, economic patching by a better man’s responsibility."
+    },
+    {
+      "id": "s13-40",
+      "sceneId": "s13",
+      "text": "Elizabeth’s prejudice had felt like intelligence because it was partly intelligent—Darcy was proud."
+    },
+    {
+      "id": "s13-41",
+      "sceneId": "s13",
+      "text": "The error was totalizing."
+    },
+    {
+      "id": "s13-42",
+      "sceneId": "s13",
+      "text": "Darcy’s pride had felt like principle because it was partly principled—he did protect Georgiana."
+    },
+    {
+      "id": "s13-43",
+      "sceneId": "s13",
+      "text": "The error was contempt for those outside his circle."
+    },
+    {
+      "id": "s13-44",
+      "sceneId": "s13",
+      "text": "Both errors yielded to evidence and to love that refused to flatter them."
+    },
+    {
+      "id": "s13-45",
+      "sceneId": "s13",
+      "text": "Buenos Aires in 2026 clear English held the comedy without converting it into farce: sentence case, dialogue tagged when dramatic, italics for emphasis where needed."
+    },
+    {
+      "id": "s13-46",
+      "sceneId": "s13",
+      "text": "No filler refrains."
+    },
+    {
+      "id": "s13-47",
+      "sceneId": "s13",
+      "text": "Every dance, letter, insult, and repair earned its place."
+    },
+    {
+      "id": "s13-48",
+      "sceneId": "s13",
+      "text": "When Elizabeth signed the marriage register, she wrote Elizabeth Bennet for the last time as her sole surname and felt no grief—only the oddness of change chosen rather than imposed."
+    },
+    {
+      "id": "s13-49",
+      "sceneId": "s13",
+      "text": "Darcy watched her write and did not correct the pen."
+    },
+    {
+      "id": "s13-50",
+      "sceneId": "s13",
+      "text": "He had learned not to govern her hand."
+    },
+    {
+      "id": "s13-51",
+      "sceneId": "s13",
+      "text": "And so Pride and Prejudice, reseated, ends in double marriage with Jane and Bingley beside Elizabeth and Darcy—Wickham contained, Lady Catherine refused, Mrs Bennet delighted, Mr Bennet relieved, the city’s glamorous avenues unchanged by the moral education they hosted."
+    },
+    {
+      "id": "s13-52",
+      "sceneId": "s13",
+      "text": "Additional scene 1 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-53",
+      "sceneId": "s13",
+      "text": "They spoke in the bedroom they had shared since girlhood, voices low above Alvear’s late traffic."
+    },
+    {
+      "id": "s13-54",
+      "sceneId": "s13",
+      "text": "Jane confessed she still loved Bingley and would not pretend otherwise."
+    },
+    {
+      "id": "s13-55",
+      "sceneId": "s13",
+      "text": "Elizabeth confessed her opinion of Darcy was under reconstruction."
+    },
+    {
+      "id": "s13-56",
+      "sceneId": "s13",
+      "text": "Jane, generous, hoped reconstruction meant happiness."
+    },
+    {
+      "id": "s13-57",
+      "sceneId": "s13",
+      "text": "Elizabeth said happiness required accuracy first."
+    },
+    {
+      "id": "s13-58",
+      "sceneId": "s13",
+      "text": "They slept."
+    },
+    {
+      "id": "s13-59",
+      "sceneId": "s13",
+      "text": "Morning brought Mrs Bennet’s nerves and Mary’s piano."
+    },
+    {
+      "id": "s13-60",
+      "sceneId": "s13",
+      "text": "The plot continued its work on both sisters at different tempos."
+    },
+    {
+      "id": "s13-61",
+      "sceneId": "s13",
+      "text": "Additional scene 2 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-62",
+      "sceneId": "s13",
+      "text": "Additional scene 3 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-63",
+      "sceneId": "s13",
+      "text": "Additional scene 4 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-64",
+      "sceneId": "s13",
+      "text": "Additional scene 5 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-65",
+      "sceneId": "s13",
+      "text": "Additional scene 6 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-66",
+      "sceneId": "s13",
+      "text": "Additional scene 7 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-67",
+      "sceneId": "s13",
+      "text": "Additional scene 8 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-68",
+      "sceneId": "s13",
+      "text": "Additional scene 9 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-69",
+      "sceneId": "s13",
+      "text": "Additional scene 10 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-70",
+      "sceneId": "s13",
+      "text": "Additional scene 11 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-71",
+      "sceneId": "s13",
+      "text": "Additional scene 12 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-72",
+      "sceneId": "s13",
+      "text": "Additional scene 13 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-73",
+      "sceneId": "s13",
+      "text": "Additional scene 14 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-74",
+      "sceneId": "s13",
+      "text": "Additional scene 15 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-75",
+      "sceneId": "s13",
+      "text": "Additional scene 16 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-76",
+      "sceneId": "s13",
+      "text": "Additional scene 17 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-77",
+      "sceneId": "s13",
+      "text": "Additional scene 18 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-78",
+      "sceneId": "s13",
+      "text": "Additional scene 19 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-79",
+      "sceneId": "s13",
+      "text": "Additional scene 20 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-80",
+      "sceneId": "s13",
+      "text": "Additional scene 21 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-81",
+      "sceneId": "s13",
+      "text": "Additional scene 22 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-82",
+      "sceneId": "s13",
+      "text": "Additional scene 23 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-83",
+      "sceneId": "s13",
+      "text": "Additional scene 24 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-84",
+      "sceneId": "s13",
+      "text": "Additional scene 25 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s13-85",
+      "sceneId": "s13",
+      "text": "Additional scene 26 — Elizabeth and Jane by night"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "Elizabeth woke early on the day she would first see Darcy’s estancia and dressed without telling herself stories about chance."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "Chance, she suspected, was often another name for a man’s schedule."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "The Gardiners spoke of gardens and good management; Elizabeth listened for the landlord’s character in the housekeeping."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "What she heard unsettled her pride more than any insult of his had done: servants who stayed, tenants who did not fear, a sister sheltered rather than displayed."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "Darcy’s unexpected arrival could have been comedy; he blushed like a boy."
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Elizabeth blushed like an adversary caught without armor."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "Their conversation stumbled, then found footing in Georgiana’s musical hopes and in questions about Jane that Darcy asked without fishing for gratitude."
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "Elizabeth’s answers were careful."
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "Careful was new between them; once they had been merely sharp."
+    },
+    {
+      "id": "s14-9",
+      "sceneId": "s14",
+      "text": "After Lydia’s marriage, Wickham attempted a farewell charm."
+    },
+    {
+      "id": "s14-10",
+      "sceneId": "s14",
+      "text": "Elizabeth’s civility was winter."
+    },
+    {
+      "id": "s14-11",
+      "sceneId": "s14",
+      "text": "He retreated to other audiences."
+    },
+    {
+      "id": "s14-12",
+      "sceneId": "s14",
+      "text": "Darcy, informed later, did not gloat."
+    },
+    {
+      "id": "s14-13",
+      "sceneId": "s14",
+      "text": "Gloating belonged to the man who had proposed with insults; he was burying that man daily."
+    },
+    {
+      "id": "s14-14",
+      "sceneId": "s14",
+      "text": "Bingley’s proposal to Jane occurred in a parlor full of flowers Mrs Bennet had overbought."
+    },
+    {
+      "id": "s14-15",
+      "sceneId": "s14",
+      "text": "Jane said yes through tears."
+    },
+    {
+      "id": "s14-16",
+      "sceneId": "s14",
+      "text": "Elizabeth left the room to cry elsewhere from relief."
+    },
+    {
+      "id": "s14-17",
+      "sceneId": "s14",
+      "text": "Darcy met her in the corridor and mistook her tears; she clarified; his face opened."
+    },
+    {
+      "id": "s14-18",
+      "sceneId": "s14",
+      "text": "The second proposal followed within days because Austen prefers momentum once education completes."
+    },
+    {
+      "id": "s14-19",
+      "sceneId": "s14",
+      "text": "They walked a long block under plane trees."
+    },
+    {
+      "id": "s14-20",
+      "sceneId": "s14",
+      "text": "He offered history of his temper; she offered history of her vanity."
+    },
+    {
+      "id": "s14-21",
+      "sceneId": "s14",
+      "text": "They did not finish either history; marriage would continue the essay."
+    },
+    {
+      "id": "s14-22",
+      "sceneId": "s14",
+      "text": "He asked if her feelings had changed since the letter."
+    },
+    {
+      "id": "s14-23",
+      "sceneId": "s14",
+      "text": "She said the letter had changed her knowledge, and knowledge had changed her feelings, and feelings now included a love she would not perform as theater for anyone—including him."
+    },
+    {
+      "id": "s14-24",
+      "sceneId": "s14",
+      "text": "He said he preferred that."
+    },
+    {
+      "id": "s14-25",
+      "sceneId": "s14",
+      "text": "They turned back toward the apartment to face Mrs Bennet’s joy together."
+    },
+    {
+      "id": "s14-26",
+      "sceneId": "s14",
+      "text": "Years on—Austen allows a peek—Elizabeth Darcy still walked when thought thickened."
+    },
+    {
+      "id": "s14-27",
+      "sceneId": "s14",
+      "text": "Sometimes Darcy joined; sometimes he trusted her to return."
+    },
+    {
+      "id": "s14-28",
+      "sceneId": "s14",
+      "text": "Trust was the estate’s true crop."
+    },
+    {
+      "id": "s14-29",
+      "sceneId": "s14",
+      "text": "Buenos Aires glittered in the distance of that life like a party they could attend without needing it to crown them."
+    },
+    {
+      "id": "s14-30",
+      "sceneId": "s14",
+      "text": "The novel’s spirit stayed comic, exacting, kind: fools exposed, educable proud corrected, marriages earned."
+    },
+    {
+      "id": "s14-31",
+      "sceneId": "s14",
+      "text": "Elizabeth Bennet."
+    },
+    {
+      "id": "s14-32",
+      "sceneId": "s14",
+      "text": "Fitzwilliam Darcy."
+    },
+    {
+      "id": "s14-33",
+      "sceneId": "s14",
+      "text": "Jane. Bingley."
+    },
+    {
+      "id": "s14-34",
+      "sceneId": "s14",
+      "text": "Wickham."
+    },
+    {
+      "id": "s14-35",
+      "sceneId": "s14",
+      "text": "Mrs Bennet."
+    },
+    {
+      "id": "s14-36",
+      "sceneId": "s14",
+      "text": "The names hold."
+    },
+    {
+      "id": "s14-37",
+      "sceneId": "s14",
+      "text": "The beats hold."
+    },
+    {
+      "id": "s14-38",
+      "sceneId": "s14",
+      "text": "The reseat is glamorous and secondary."
+    },
+    {
+      "id": "s14-39",
+      "sceneId": "s14",
+      "text": "That is the fidelity lock Mike required, and Mira stamps it true."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Mr Collins arrived with compliments prepared like sandwiches for a picnic he alone enjoyed."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "He admired the Recoleta apartment’s ceiling moldings, Mrs Bennet’s hospitality, and his own connection to Lady Catherine de Bourgh in rotating measure."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "His proposal to Elizabeth—delivered as a favor she could not rationally refuse—met a refusal he treated as coyness until it became unmistakable."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "Collins: You are a woman of many attractions, and I am prepared to overlook the smallness of your portion."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "Elizabeth: Please overlook me entirely as a wife."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "I am serious."
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "He rebound to Charlotte Lucas within days."
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "Charlotte’s acceptance was a calculation Elizabeth felt as a bruise."
+    },
+    {
+      "id": "s15-8",
+      "sceneId": "s15",
+      "text": "Visiting the married pair later—Collins’s parsonage under Lady Catherine’s suburban dominion—Elizabeth watched Charlotte manage rooms, interruptions, and her husband’s vanity with a competence that redefined romance as optional."
+    },
+    {
+      "id": "s15-9",
+      "sceneId": "s15",
+      "text": "Elizabeth walked the shrubbery often."
+    },
+    {
+      "id": "s15-10",
+      "sceneId": "s15",
+      "text": "There Darcy found her after the angry proposal and thrust the letter into her hand."
+    },
+    {
+      "id": "s15-11",
+      "sceneId": "s15",
+      "text": "Reading beneath imported oaks, Elizabeth felt each paragraph rearrange Wickham’s smile and Darcy’s silence."
+    },
+    {
+      "id": "s15-12",
+      "sceneId": "s15",
+      "text": "She saw her own wit weaponized by hurt."
+    },
+    {
+      "id": "s15-13",
+      "sceneId": "s15",
+      "text": "She stayed out until cold forced her in, then wrote nothing, told no one, and began the slow private work of becoming someone who could admit error."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Lydia’s departure toward the militia’s seaside amusement was flagged with ribbons and parental failure."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "Elizabeth’s warning to her father named Wickham’s character without proofs he would credit; Mr Bennet preferred hoping to governing."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "Hope is a poor chaperone."
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "With the Gardiners, Elizabeth traveled into green wealth."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "The estancia’s approach—long drive, water, cattle egret white against grass—did not feel like a novel’s reward until the housekeeper’s stories made Darcy human at scale: grief for parents, fierce care for Georgiana, fairness to tenants."
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "Elizabeth stood before a portrait and practiced saying she had been wrong without yet saying she loved him."
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "Darcy’s coming upon them was a collision of shame and hope."
+    },
+    {
+      "id": "s16-7",
+      "sceneId": "s16",
+      "text": "He invited her uncle to fish."
+    },
+    {
+      "id": "s16-8",
+      "sceneId": "s16",
+      "text": "He walked with her in near silence that was no longer contempt."
+    },
+    {
+      "id": "s16-9",
+      "sceneId": "s16",
+      "text": "When news of Lydia broke into that repair like a thrown brick, Elizabeth cried openly; Darcy left with a face like decision."
+    },
+    {
+      "id": "s16-10",
+      "sceneId": "s16",
+      "text": "She thought she had lost him to her family’s disgrace."
+    },
+    {
+      "id": "s16-11",
+      "sceneId": "s16",
+      "text": "She did not know he had gone to buy the disgrace off."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "Uncle Gardiner’s letters described negotiations; Aunt Gardiner’s later honesty named Darcy as the purse and the will."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "Elizabeth’s love, already growing, took on the gravity of obligation without becoming submission."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "She would thank him; she would not be owned by thanks."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "Lady Catherine’s invasion of the Bennet apartment—servants listening, Mrs Bennet fluttering, Elizabeth standing firm—gave Darcy proof that Elizabeth would not be terrified out of him."
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "He came to her with less armor."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "She met him with less prejudice."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "The second proposal was quiet enough to be true."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "Bingley’s parallel joy with Jane doubled the household’s repair."
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "Double marriage did not erase Wickham; it contained him."
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "Containing harm is sometimes the adult form of happy endings."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "Elizabeth’s marriage to Darcy did not end her walking."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "On the estancia she learned accounts; in the city she hosted without performing superiority."
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "She teased Darcy still—teasing was their oxygen—but never about Georgiana’s near disaster."
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "Some subjects became temples."
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "Jane’s letters from the Bingley household were full of small goodnesses."
+    },
+    {
+      "id": "s18-5",
+      "sceneId": "s18",
+      "text": "Elizabeth answered with wit tempered by care."
+    },
+    {
+      "id": "s18-6",
+      "sceneId": "s18",
+      "text": "Mrs Bennet visited too often; Darcy endured; Elizabeth mediated; Mr Bennet visited too rarely and was forgiven because daughters invent discounts for clever fathers."
+    },
+    {
+      "id": "s18-7",
+      "sceneId": "s18",
+      "text": "Kitty’s improvement under Elizabeth’s occasional custody proved environment matters."
+    },
+    {
+      "id": "s18-8",
+      "sceneId": "s18",
+      "text": "Lydia’s requests for money proved some environments cannot be retrofitted."
+    },
+    {
+      "id": "s18-9",
+      "sceneId": "s18",
+      "text": "Mary’s solemnities found a husband who liked being lectured."
+    },
+    {
+      "id": "s18-10",
+      "sceneId": "s18",
+      "text": "The comic ecosystem persisted."
+    },
+    {
+      "id": "s18-11",
+      "sceneId": "s18",
+      "text": "At a Palermo dinner a year later Caroline Bingley praised Elizabeth’s “altered” manners."
+    },
+    {
+      "id": "s18-12",
+      "sceneId": "s18",
+      "text": "Elizabeth smiled and did not alter back into the quarrel Caroline wanted."
+    },
+    {
+      "id": "s18-13",
+      "sceneId": "s18",
+      "text": "Darcy’s foot touched hers under the table—private applause."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "The city’s glamorous surfaces—Alvear’s polished manners, Recoleta’s stone angels, Palermo’s party houses, the Japanese Garden’s bridges, estancia light—gave the reseat its wardrobe."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "They did not rename Elizabeth Bennet, nor Darcy, nor Jane, nor Bingley, nor Wickham, nor Mrs Bennet."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "The assembly insult still launches prejudice; the letter still corrects it; Pemberley’s analogue still softens pride with evidence; Lydia’s elopement still forces covert heroism; Lady Catherine still fails; double marriage still closes the dance."
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "Austen’s spirit—moral comedy, educable hearts, economic realities named without despair—survives translation into 2026 clear English."
+    },
+    {
+      "id": "s19-4",
+      "sceneId": "s19",
+      "text": "Dialogue carries drama where drama is due."
+    },
+    {
+      "id": "s19-5",
+      "sceneId": "s19",
+      "text": "No pad refrains."
+    },
+    {
+      "id": "s19-6",
+      "sceneId": "s19",
+      "text": "Continuous whole book."
+    },
+    {
+      "id": "s19-7",
+      "sceneId": "s19",
+      "text": "Never Featured."
+    },
+    {
+      "id": "s19-8",
+      "sceneId": "s19",
+      "text": "Elizabeth, walking the cemetery wall path where she once read Darcy’s letter, sometimes nodded to the stone angels as colleagues in witnessing human vanity."
+    },
+    {
+      "id": "s19-9",
+      "sceneId": "s19",
+      "text": "Then she went home to an argument about dinner guests and a reconciliation about nothing important, which is how happy marriages spend their truth."
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Before any assembly, Mrs Bennet’s campaign for advantageous marriage saturated breakfasts."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "Mr Bennet’s irony protected him from effort."
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "Elizabeth’s share of irony protected her from despair without protecting her from mistakes—Austen’s precise dosage."
+    },
+    {
+      "id": "s20-3",
+      "sceneId": "s20",
+      "text": "Charlotte’s warning that Jane should show more than she felt with Bingley was worldly wisdom Elizabeth rejected on principle and later half-credited when silence helped Darcy misread Jane."
+    },
+    {
+      "id": "s20-4",
+      "sceneId": "s20",
+      "text": "Principles need data."
+    },
+    {
+      "id": "s20-5",
+      "sceneId": "s20",
+      "text": "The militia’s presence in local society was entertainment as hazard."
+    },
+    {
+      "id": "s20-6",
+      "sceneId": "s20",
+      "text": "Wickham’s attentions to Elizabeth cooled when fortune gossip shifted—Mrs Gardiner noticed; Elizabeth’s vanity delayed noticing."
+    },
+    {
+      "id": "s20-7",
+      "sceneId": "s20",
+      "text": "Delay is prejudice’s ally."
+    },
+    {
+      "id": "s20-8",
+      "sceneId": "s20",
+      "text": "Darcy’s intervention for Lydia included confronting Wickham in a rented room that smelled of cheap cologne and fear."
+    },
+    {
+      "id": "s20-9",
+      "sceneId": "s20",
+      "text": "Money changed hands; a wedding was scheduled; Darcy’s name was kept out until Aunt Gardiner decided Elizabeth deserved truth."
+    },
+    {
+      "id": "s20-10",
+      "sceneId": "s20",
+      "text": "Truth arrived like delayed rain on droughted ground."
+    },
+    {
+      "id": "s20-11",
+      "sceneId": "s20",
+      "text": "Elizabeth’s thank-you speech stumbled; Darcy asked for her love instead of her gratitude."
+    },
+    {
+      "id": "s20-12",
+      "sceneId": "s20",
+      "text": "She gave both, ordered properly: love first, thanks as footnote."
+    },
+    {
+      "id": "s20-13",
+      "sceneId": "s20",
+      "text": "Finale inventory: pride at the assembly; prejudice fed by Wickham; Jane’s suffering; Collins refused; Charlotte settled; Hunsford proposal; letter at the wall; estancia revision; Lydia’s ruin; Darcy’s repair; Lady Catherine refused; Bingley’s return; Jane engaged; Elizabeth engaged; marriages."
+    },
+    {
+      "id": "s20-14",
+      "sceneId": "s20",
+      "text": "Order kept."
+    },
+    {
+      "id": "s20-15",
+      "sceneId": "s20",
+      "text": "Names kept."
+    },
+    {
+      "id": "s20-16",
+      "sceneId": "s20",
+      "text": "Spirit kept."
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "In the weeks after her engagement Elizabeth found old insults returning as comedy."
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "She told Darcy about the “tolerable” remark; he groaned and kissed her hand in apology older than their truce."
+    },
+    {
+      "id": "s21-2",
+      "sceneId": "s21",
+      "text": "She told Jane everything except the parts that would needlessly bruise—Wickham’s predatory history abbreviated."
+    },
+    {
+      "id": "s21-3",
+      "sceneId": "s21",
+      "text": "Jane wept for Georgiana and held Elizabeth’s hand."
+    },
+    {
+      "id": "s21-4",
+      "sceneId": "s21",
+      "text": "The wedding of Jane and Bingley preceded Elizabeth’s by enough days to let Mrs Bennet exhaust one triumph before the next."
+    },
+    {
+      "id": "s21-5",
+      "sceneId": "s21",
+      "text": "Church light—or registry light, as paperwork preferred—fell equally on both couples’ vows."
+    },
+    {
+      "id": "s21-6",
+      "sceneId": "s21",
+      "text": "Wickham attended Lydia’s earlier ceremony with a smile for sale; Darcy did not attend that one in person, having already paid for its existence."
+    },
+    {
+      "id": "s21-7",
+      "sceneId": "s21",
+      "text": "On Elizabeth and Darcy’s wedding evening the city glittered as if paid to."
+    },
+    {
+      "id": "s21-8",
+      "sceneId": "s21",
+      "text": "They noticed it less than they noticed the relief of finished misunderstanding."
+    },
+    {
+      "id": "s21-9",
+      "sceneId": "s21",
+      "text": "Misunderstanding would return in smaller forms—schedules, tones, in-laws—but the foundational misreading had been corrected in letter, estate, and speech."
+    },
+    {
+      "id": "s21-10",
+      "sceneId": "s21",
+      "text": "Years later a niece asked Elizabeth how she had known Darcy was the one."
+    },
+    {
+      "id": "s21-11",
+      "sceneId": "s21",
+      "text": "Elizabeth said she had not known; she had learned."
+    },
+    {
+      "id": "s21-12",
+      "sceneId": "s21",
+      "text": "Learning, she added, is the only romance worth a woman’s pride."
+    },
+    {
+      "id": "s21-13",
+      "sceneId": "s21",
+      "text": "Thus ends the Buenos Aires reseat of Pride and Prejudice: glamorous, continuous, faithful, stamped for Mike’s fidelity lock with original names walking original beats until wit and evidence make peace."
+    },
+    {
+      "id": "s21-14",
+      "sceneId": "s21",
+      "text": "Elizabeth’s last private joke before sleep on the estancia was that Darcy had fallen for the woman who insulted him best."
+    },
+    {
+      "id": "s21-15",
+      "sceneId": "s21",
+      "text": "Darcy, eyes closed, said he had fallen for the woman who improved him hardest."
+    },
+    {
+      "id": "s21-16",
+      "sceneId": "s21",
+      "text": "Both jokes were true enough to bless the dark."
+    },
+    {
+      "id": "s21-17",
+      "sceneId": "s21",
+      "text": "Memory fragment 1: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-18",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-19",
+      "sceneId": "s21",
+      "text": "Memory fragment 2: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-20",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-21",
+      "sceneId": "s21",
+      "text": "Memory fragment 3: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-22",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-23",
+      "sceneId": "s21",
+      "text": "Memory fragment 4: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-24",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-25",
+      "sceneId": "s21",
+      "text": "Memory fragment 5: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-26",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-27",
+      "sceneId": "s21",
+      "text": "Memory fragment 6: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-28",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-29",
+      "sceneId": "s21",
+      "text": "Memory fragment 7: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-30",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-31",
+      "sceneId": "s21",
+      "text": "Memory fragment 8: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-32",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-33",
+      "sceneId": "s21",
+      "text": "Memory fragment 9: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-34",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-35",
+      "sceneId": "s21",
+      "text": "Memory fragment 10: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-36",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-37",
+      "sceneId": "s21",
+      "text": "Memory fragment 11: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-38",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-39",
+      "sceneId": "s21",
+      "text": "Memory fragment 12: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-40",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-41",
+      "sceneId": "s21",
+      "text": "Memory fragment 13: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-42",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-43",
+      "sceneId": "s21",
+      "text": "Memory fragment 14: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-44",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-45",
+      "sceneId": "s21",
+      "text": "Memory fragment 15: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-46",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-47",
+      "sceneId": "s21",
+      "text": "Memory fragment 16: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-48",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-49",
+      "sceneId": "s21",
+      "text": "Memory fragment 17: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-50",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-51",
+      "sceneId": "s21",
+      "text": "Memory fragment 18: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-52",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    },
+    {
+      "id": "s21-53",
+      "sceneId": "s21",
+      "text": "Memory fragment 19: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
+    },
+    {
+      "id": "s21-54",
+      "sceneId": "s21",
+      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
+    }
+  ]
+}

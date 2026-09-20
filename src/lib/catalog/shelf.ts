@@ -1920,6 +1920,155 @@ export const SHELF: ShelfWork[] = [
     intro:
       "A New Town wife tries to live glamorous Tokyo as if desire were a credit line—kind clinic husband, Ginza nights, installments that collect themselves. After Flaubert, Madame Bovary, 1857. Later chapters include Emma’s collapse and deliberate self-poisoning — warn the room before you Host it.",
   },
+  {
+    id: "dorian-gray-shanghai",
+    title: "Oscar Wilde, The Picture of Dorian Gray recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 37,
+    local: true,
+    opening:
+      "Basil Hallward painted in a top-floor studio above the Bund where Huangpu freight and ferry lights scored the glass.",
+    breaths: 460,
+    intro:
+      "A Bund portrait that ages while Dorian Gray does not—Shanghai clubs, a fruit-knife, the river unarchiving. After Wilde, The Picture of Dorian Gray, 1890. Later chapters include murder and the portrait’s self-destruction — warn the room before you Host it.",
+  },
+  {
+    id: "anna-karenina-milan",
+    title: "Leo Tolstoy, Anna Karenina recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 37,
+    local: true,
+    opening:
+      "All happy families in Milan resembled one another in the curated calm of their kitchens; every unhappy family was unhappy in its own address.",
+    breaths: 434,
+    intro:
+      "Fashion-week light at Milano Centrale: Anna Karenina in Milan’s arranged rooms. After Tolstoy, Anna Karenina, 1878. Later chapters include suicide at the station — warn the room before you Host it.",
+  },
+  {
+    id: "jane-eyre-singapore",
+    title: "Charlotte Brontë, Jane Eyre recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 37,
+    local: true,
+    opening: "Jane Eyre learned early that charity could feel like poor ventilation.",
+    breaths: 423,
+    intro:
+      "Charity as poor ventilation in Katong, then a house that answers back. After Charlotte Brontë, Jane Eyre, 1847. Later chapters include attic imprisonment and fire — warn the room before you Host it.",
+  },
+  {
+    id: "pride-prejudice-buenos-aires",
+    title: "Jane Austen, Pride and Prejudice recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 37,
+    local: true,
+    opening:
+      "It is a truth universally acknowledged in Buenos Aires that a single man in possession of a good fortune must be in want of a neighborhood.",
+    breaths: 402,
+    intro:
+      "Recoleta manners as municipal law: Elizabeth Bennet watches Buenos Aires arrange marriages along Alvear. After Austen, Pride and Prejudice, 1813.",
+  },
+  {
+    id: "dracula-istanbul",
+    title: "Bram Stoker, Dracula recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 37,
+    local: true,
+    opening:
+      "Jonathan Harker steamed up the Bosphorus toward a yalı that needed lawyers more than guests.",
+    breaths: 465,
+    intro:
+      "A yalı that needs lawyers more than guests: Istanbul split across the Bosphorus. After Stoker, Dracula, 1897. Later chapters include staking and death — warn the room before you Host it.",
+  },
+  {
+    id: "crime-punishment-cape-town",
+    title: "Fyodor Dostoevsky, Crime and Punishment recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 37,
+    local: true,
+    opening:
+      "Rodion Romanovich Raskolnikov lived in a garret above Long Street where bass from the clubs shook the floorboards and Table Mountain sat in the window like a mute jury.",
+    breaths: 454,
+    intro:
+      "A Long Street garret, Table Mountain as mute jury, and an article that becomes a crime. After Dostoevsky, Crime and Punishment, 1866. Later chapters include axe murder and exile — warn the room before you Host it.",
+  },
+  {
+    id: "age-of-innocence-venice",
+    title: "Edith Wharton, The Age of Innocence recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 37,
+    local: true,
+    opening:
+      "Newland Archer arrived at La Fenice on a damp Venetian evening when the lagoon held the theater's lights like a second, colder audience.",
+    breaths: 453,
+    intro:
+      "A Fenice box where Venetian lace cuts: Newland Archer watches Ellen Olenska refuse the costume of innocence. After Wharton, The Age of Innocence, 1920.",
+  },
+  {
+    id: "tess-lisbon",
+    title: "Thomas Hardy, Tess of the d'Urbervilles recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 37,
+    local: true,
+    opening:
+      "Tess Durbeyfield walked the Alentejo track before dawn while cork oaks held the last dark and Lisbon's glow waited beyond the hills like a rumor of money.",
+    breaths: 497,
+    intro:
+      "An Alentejo track and a Tagus-side villa: Tess Durbeyfield above Lisbon’s rumor of money. After Hardy, Tess of the d'Urbervilles, 1891. Later chapters include murder and execution — warn the room before you Host it.",
+  },
+  {
+    id: "scarlet-letter-kyoto",
+    title: "Nathaniel Hawthorne, The Scarlet Letter recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 37,
+    local: true,
+    opening:
+      "Hester Prynne stood on a merchant-quarter scaffold in Kyoto while phones rose like a second congregation and the embroidered A on her chest caught morning light with defiant craft.",
+    breaths: 490,
+    intro:
+      "A Kyoto scaffold, a letter that will not come off, and merchant-quarter shame. After Hawthorne, The Scarlet Letter, 1850. Later chapters include public shaming and a deathbed — warn the room before you Host it.",
+  },
+  {
+    id: "wuthering-heights-rio",
+    title: "Emily Brontë, Wuthering Heights recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 37,
+    local: true,
+    opening:
+      "Mr. Lockwood, a soft coastal tenant seeking quiet above Rio's postcard bay, rented the lower house—Thrushcross stand-in among Atlantic scrub and condo glitter far below—and walked uphill to pay respects at Wuthering Heights, a hill estate of old money and worse manners.",
+    breaths: 445,
+    intro:
+      "A hillside estate above Rio’s bay: glamour facing water, wind facing rock. After Emily Brontë, Wuthering Heights, 1847. Later chapters include cruelty, death, and haunting — warn the room before you Host it.",
+  },
 ];
 
 const BY_ID = new Map(SHELF.map((item) => [item.id, item]));

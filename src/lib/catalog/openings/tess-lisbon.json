@@ -1,0 +1,2646 @@
+{
+  "id": "tess-lisbon",
+  "title": "Thomas Hardy, Tess of the d'Urbervilles recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "This whole-book remake includes sexual violence, coercion, murder, and arrest. Exact harm, not spectacle. Warn the room before you Host it; offer a midpoint pause if needed.",
+  "minutes": 37,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Alentejo",
+      "place": "Lisbon",
+      "reentry": "Tess Durbeyfield walked the Alentejo track before dawn while cork oaks held the last dark and Lisbon's glow waited beyond the hills like a rumor of money.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "She tried, more than once, to tell him her",
+      "place": "Lisbon",
+      "reentry": "She tried, more than once, to tell him her past.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "She fled with Angel through the city and out",
+      "place": "Lisbon",
+      "reentry": "She fled with Angel through the city and out toward tourist stones—an ancient circle marketed for sunset photos, a Portuguese stand-in for final altar.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "When he died she walked to the priest and met",
+      "place": "Lisbon",
+      "reentry": "When he died she walked to the priest and met hierarchy's cold face; she baptized him herself under a sky that did not argue doctrine.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "She saw Alec's car once on a road and hid",
+      "place": "Lisbon",
+      "reentry": "She saw Alec's car once on a road and hid among vines.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "Angel understood too late what his purity had",
+      "place": "Lisbon",
+      "reentry": "Angel understood too late what his purity had built.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "At the dairy, before wedding, she walked to",
+      "place": "Lisbon",
+      "reentry": "At the dairy, before wedding, she walked to Angel's door at night to confess and found him asleep over books; she turned away rather than wake him into truth.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Alentejo · 8",
+      "place": "Lisbon",
+      "reentry": "Hate was too simple.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Alentejo · 9",
+      "place": "Lisbon",
+      "reentry": "The book held.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "She named him for what he was and what the",
+      "place": "Lisbon",
+      "reentry": "She named him for what he was and what the world had given.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "Alentejo · 11",
+      "place": "Lisbon",
+      "reentry": "\"I may learn.\"",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s11",
+      "title": "Alentejo · 12",
+      "place": "Lisbon",
+      "reentry": "Alec cursed from the bedroom.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s12",
+      "title": "In the dairy months Tess learned the names of",
+      "place": "Lisbon",
+      "reentry": "In the dairy months Tess learned the names of cows and the moods of fog.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s13",
+      "title": "He banged and then apologized with restaurant",
+      "place": "Lisbon",
+      "reentry": "He banged and then apologized with restaurant reservations.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s14",
+      "title": "Also the mother's hunger: Joan Durbeyfield",
+      "place": "Lisbon",
+      "reentry": "Also the mother's hunger: Joan Durbeyfield (name kept in spirit as mother) pushing Tess toward soft violence because soft violence sometimes paid.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s15",
+      "title": "Alentejo · 16",
+      "place": "Lisbon",
+      "reentry": "The knife was beside washed fruit.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s16",
+      "title": "Among the stones she traced lichen with a",
+      "place": "Lisbon",
+      "reentry": "Among the stones she traced lichen with a finger and thought of Sorrow's grave.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s17",
+      "title": "He kissed her neck as if contradiction were",
+      "place": "Lisbon",
+      "reentry": "He kissed her neck as if contradiction were spice.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s18",
+      "title": "Her siblings wrote thank-you notes for food",
+      "place": "Lisbon",
+      "reentry": "Her siblings wrote thank-you notes for food Alec funded through Tess's captivity.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s19",
+      "title": "Somewhere a villa party planned its evening",
+      "place": "Lisbon",
+      "reentry": "Somewhere a villa party planned its evening without a dead man's name yet printed.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s20",
+      "title": "Alec's body was removed; his appetite was not",
+      "place": "Lisbon",
+      "reentry": "Alec's body was removed; his appetite was not mourned by anyone who had lived under it.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Tess Durbeyfield walked the Alentejo track before dawn while cork oaks held the last dark and Lisbon's glow waited beyond the hills like a rumor of money."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Her father had come home drunk on a pedigree: Durbeyfield as d'Urberville, old name, possible claim."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Her mother, practical and hungry for lifts, packed Tess toward a Tagus-side villa where a rich \"relative\"—Alec d'Urberville—kept horses, parties, and an appetite that photographed as charm."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Tess went because the family cart needed repair and the children needed shoes."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "She went as duty."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Duty, in Hardy's spirit, was already a trap with good manners."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Alec met her among vines and glass walls facing the river's wide light."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "He was young-rich, practiced, calling her cousin with a smile that made cousin mean access."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "He taught her to whistle for birds she did not want; he cornered her with gifts; he drove her at night along roads where Lisbon's glamour thinned into private dark."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Tess refused him in daylight language."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Night has other dialects."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "In a wooded edge above the Tagus, after a fair and a fog of exhaustion, Alec violated her."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "The villa's beauty continued."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Tess returned inland carrying a fact her mother would rename as opportunity and Tess would rename as ruin."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "She bore a child—Sorrow—in a village room that smelled of soap and defeat."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "She baptized him herself when churches hesitated."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "He died young."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "She buried him with a tenderness that emptied her of slogans."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Then she left for work at a dairy on Lisbon's agrarian edge, where modern stainless tanks stood beside older stone and the city's skyline sometimes glittered on clear evenings like a false promise of purity."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "At the dairy she met Angel Clare—son of a pastor, student of farming as ideology, lover of \"nature\" as idea."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Angel saw Tess as maiden purity in motion: strong arms, clear eyes, a mouth that did not perform Lisbon nightlife."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "He did not see Alec."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Tess loved Angel with a hope so fierce it felt like prayer."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "They danced at a country evening; they walked among cattle and fog; he called her daughter of nature."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "She tried, more than once, to tell him her past."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Timing failed."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Fear edited her."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "On their wedding night in a Lisbon room hired for its view and its white bed, Angel confessed a prior affair with a woman in the city—brief, forgiven by himself in advance."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Tess, trusting reciprocity, told him of Alec and Sorrow."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Angel's purity theater collapsed into cruelty."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "He did not strike her."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "He froze."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "He spoke of the Tess he had loved as if she had died and this woman were an impostor wearing her face."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "He left—Brazil talk, then actual departure plans, then absence that functioned as exile for her while he traveled on his conscience's passport."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Tess worked."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "Tess endured."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "Letters went unanswered or answered with money and distance."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "Poverty returned like weather."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "Her family's need pulled her."
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "Alec—now wearing religious conversion like a new jacket, then shedding it when convenient—found her again."
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "He pursued with sermons that became transactions: he could save her family if she became his."
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "Tess resisted until resistance looked like letting her siblings starve in a glamorous country's blind spots."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "She went with Alec to a Lisbon flat that glittered with the wrong kind of safety."
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "She lived as his kept ghost."
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "Angel returned—humbled, ill, finally able to see his cruelty as cruelty."
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "He found Tess in that flat."
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "She saw him and broke."
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "In a room where Lisbon traffic murmured like a false absolution, she killed Alec—knife, blood, the end of being hunted by his claim."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "She fled with Angel through the city and out toward tourist stones—an ancient circle marketed for sunset photos, a Portuguese stand-in for final altar."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "There they rested among rocks while dawn came up like judgment."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Police found them."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Tess was arrested."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Angel held her as long as the state allowed."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Hardy's spirit held: the woman punished for men's appetites and men's ideals; purity as a police; desire's hunt finished by handcuffs in beautiful light."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Before the villa, there had been the morning her father learned the name and danced in the lane as if genealogy could pay rent."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "Tess had blushed for him and loved him and hated the theater of it."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "Her mother brushed Tess's hair until it shone like an argument."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "\"You smile at him,\" her mother said of Alec."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "\"Smiling costs nothing.\""
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "Smiling, Tess learned, could cost everything."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "At the villa Alec's mother—blind, sharp—mistrusted Tess's usefulness and sensed her son's hunger."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "Tess worked poultry and gardens under a sun that made the Tagus look painted."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "Alec appeared with strawberries, with roses, with a conversion van's worth of insistence."
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "\"You are mine, little cousin,\" he said."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "She said she was no one's."
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "He laughed as men laugh when refusal sounds like foreplay to them."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "After the violation she left without suitcase enough."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "On the bus inland a woman offered her water."
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "Tess drank and stared at industrial parks giving way to cork."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "Her body was a crime scene no one would call crime."
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "Sorrow's short life taught her a fierce practicality."
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "She sang to him songs without pedigree."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "When he died she walked to the priest and met hierarchy's cold face; she baptized him herself under a sky that did not argue doctrine."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "At the grave she did not ask Lisbon's glamorous God for explanations."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "She asked for work."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "The dairy hired her because she was strong and quiet."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Other girls gossiped about city boys and streaming idols."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "Tess listened and washed tanks until her hands reddened."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "Angel Clare arrived with notebooks and ideals, quoting essays about rural authenticity while recording milk yields."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "He noticed Tess as if noticing a painting that moved."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "\"You are pure,\" he said once, after she refused a crude joke from a hand."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "The word entered her like a second violation scheduled for later."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "Their courtship was walks at dusk, Angel's violin sometimes, Tess's laughter rare and therefore valued."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "He proposed among cows and evening insects."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "She said she was not worthy."
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "He heard modesty, not confession."
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "They married in a small ceremony Angel's family half-approved—his parents wanted missionary polish; Angel wanted nature's bride."
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "In the Lisbon wedding room, after his confession of the city woman, Tess spoke Alec's name and Sorrow's death."
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "Angel paced."
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "\"You were one person,\" he said."
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "\"Now you are another.\""
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "She knelt."
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "He did not lift her."
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "By morning he had decided that living with her would soil his idea of himself."
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "He left money and instructions and a silence that traveled farther than any sermon."
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "Tess labored at field work farther from Lisbon when dairy season ended—hard acres, thin pay, rain that ignored glamorous postcards of the city."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "She saw Alec's car once on a road and hid among vines."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "She wrote Angel letters that tried not to beg."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "Begging happened anyway between the lines."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "His replies, when they came, spoke of time and improvement and Brazil's distances."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "Improvement meant her erasure."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "Alec's return wore a preacher's coat at first: he had found God after illness, he said, and must redeem the wrong he did her by owning her salvation."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "Tess laughed a short bitter laugh."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "God, in his mouth, sounded like another key to her door."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "When her father died and her family faced eviction into winter, Alec dropped the coat."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "\"I can house them,\" he said."
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "\"You know the price.\""
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "Tess looked at her younger sister's thin shoes and entered the price."
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "The Lisbon flat Alec chose was high enough to see cranes and river light—glamour as alibi."
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "He bought Tess dresses."
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "She wore them like evidence."
+    },
+    {
+      "id": "s4-15",
+      "sceneId": "s4",
+      "text": "At night she lay awake counting the cost in her siblings' meals."
+    },
+    {
+      "id": "s4-16",
+      "sceneId": "s4",
+      "text": "By day she walked avenues where couples photographed pastel buildings and did not see her."
+    },
+    {
+      "id": "s4-17",
+      "sceneId": "s4",
+      "text": "When Angel appeared at the door—thinner, humbler, saying *forgive me*—Tess's mind split."
+    },
+    {
+      "id": "s4-18",
+      "sceneId": "s4",
+      "text": "She saw the boy who had called her pure and the man who had left her to Alec's arithmetic."
+    },
+    {
+      "id": "s4-19",
+      "sceneId": "s4",
+      "text": "She told Angel to go."
+    },
+    {
+      "id": "s4-20",
+      "sceneId": "s4",
+      "text": "He pleaded."
+    },
+    {
+      "id": "s4-21",
+      "sceneId": "s4",
+      "text": "Alec's voice rose from another room."
+    },
+    {
+      "id": "s4-22",
+      "sceneId": "s4",
+      "text": "Something in Tess that had been hunted for years stood up, found a knife in the kitchen's expensive quiet, and ended Alec's claim."
+    },
+    {
+      "id": "s4-23",
+      "sceneId": "s4",
+      "text": "They fled through Lisbon's dawn—trams starting, bakeries opening, beauty unaware."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Angel understood too late what his purity had built."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "He did not abandon her this time."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "They rode toward the tourist stones outside the city where stone circles and heritage signs staged ancientness for phones."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "There Tess slept against Angel's shoulder as if sleep could be a country."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "He watched the sky and loved her without the word pure."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "Police boots found them among rocks."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "Tess woke into arrest."
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "She said Angel should live."
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "He said he would not leave her spirit even if the state took her body."
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "Handcuffs clicked like a final punctuation Hardy would recognize: the woman finished by law after men finished her with desire and ideal."
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "In the van Tess watched Lisbon's skyline recede and felt no novel's comfort."
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "She had been Durbeyfield and d'Urberville and dairy maid and wife and mistress and murderer."
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "She remained Tess."
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "Angel held her hand until they forced separation."
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "Outside, the Tagus kept shining for tourists."
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "The glamorous city reseat held; the plot's cruelty held; the names held—Tess Durbeyfield, Alec, Angel Clare—faithful to the old wound under new light."
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "There are hours before a ruin that still look like choices."
+    },
+    {
+      "id": "s5-17",
+      "sceneId": "s5",
+      "text": "Tess, packing for the villa that first time, paused over a ribbon and almost stayed home."
+    },
+    {
+      "id": "s5-18",
+      "sceneId": "s5",
+      "text": "Her mother called her selfish."
+    },
+    {
+      "id": "s5-19",
+      "sceneId": "s5",
+      "text": "Tess put the ribbon in."
+    },
+    {
+      "id": "s5-20",
+      "sceneId": "s5",
+      "text": "At Alec's party she watched Lisbon guests drink by the river and felt her village body as wrong costume; Alec whispered that he could make her right."
+    },
+    {
+      "id": "s5-21",
+      "sceneId": "s5",
+      "text": "She stepped onto a balcony for air and he followed—always following."
+    },
+    {
+      "id": "s5-22",
+      "sceneId": "s5",
+      "text": "After Sorrow she burned a letter of pedigree."
+    },
+    {
+      "id": "s5-23",
+      "sceneId": "s5",
+      "text": "Ash did not cancel blood."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "At the dairy, before wedding, she walked to Angel's door at night to confess and found him asleep over books; she turned away rather than wake him into truth."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "That turning became the hinge."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "On the wedding night, when she spoke, she watched Angel's face become a closed church."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "Later, in the fields, she overheard workers praise \"women who keep themselves,\" and she worked harder, as if labor could rewrite a body."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "When Alec preached at her in a barn's shadow, quoting redemption, she said, \"You ruined me and now you want the credit for repair.\""
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "He flushed and returned the next week without scripture, with cash for her mother."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "Tess's mother took the cash and called it providence."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "Tess called it the road back to the Tagus villa's logic—Lisbon flat version."
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "Angel's return speech—*I have learned, I was wrong*—could not unkill what his leaving had built."
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "Still Tess loved him."
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "Love did not save her from the knife; love walked her to the stones afterward."
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "At arrest she looked at the heritage sign's cheerful English and Portuguese and thought: even stones are for sale."
+    },
+    {
+      "id": "s6-12",
+      "sceneId": "s6",
+      "text": "Then she looked at Angel and thought: not everything."
+    },
+    {
+      "id": "s6-13",
+      "sceneId": "s6",
+      "text": "He was not for sale."
+    },
+    {
+      "id": "s6-14",
+      "sceneId": "s6",
+      "text": "He was late."
+    },
+    {
+      "id": "s6-15",
+      "sceneId": "s6",
+      "text": "Late was still something."
+    },
+    {
+      "id": "s6-16",
+      "sceneId": "s6",
+      "text": "Hardy's spirit, continuous in this remake: violation; purity police; abandonment; return; murder; arrest under glamorous sky."
+    },
+    {
+      "id": "s6-17",
+      "sceneId": "s6",
+      "text": "No new cast."
+    },
+    {
+      "id": "s6-18",
+      "sceneId": "s6",
+      "text": "No filler refrain."
+    },
+    {
+      "id": "s6-19",
+      "sceneId": "s6",
+      "text": "Tess Durbeyfield's name stays on the wound."
+    },
+    {
+      "id": "s6-20",
+      "sceneId": "s6",
+      "text": "In the Alentejo schoolroom of her girlhood Tess had learned maps that put Lisbon at the center like a heart."
+    },
+    {
+      "id": "s6-21",
+      "sceneId": "s6",
+      "text": "After Alec she learned the city as a mouth."
+    },
+    {
+      "id": "s6-22",
+      "sceneId": "s6",
+      "text": "It swallowed village girls who arrived with pedigrees and ribbons and returned them as silence."
+    },
+    {
+      "id": "s6-23",
+      "sceneId": "s6",
+      "text": "She did not hate Lisbon's plazas or its river light."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Hate was too simple."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "She hated the way beauty made listeners doubt harm."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "When she told her mother, carefully, that Alec had wronged her, her mother asked whether he would marry her."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "The question was the culture speaking."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Tess went to the dairy partly to escape that question's house."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Angel Clare's family received Tess with polite thermometers."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "His brothers spoke of missions; his father of moral weather."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "Angel praised Tess's freshness until freshness became a job she could not keep."
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "After he left, one of the dairy women said, \"Men like him love statues."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "Statues don't bleed.\""
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "Tess washed a tank until the metal showed her face warped."
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "During the kept months with Alec she once stood on a viewpoint where tourists applauded sunset and calculated whether jumping would free her siblings from his money."
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "She stepped back because her death would not pay their rent."
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "Survival was her stubborn ethics."
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "The knife came later, when Angel's face reopened a future Alec blocked with his body and his lease."
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "At the stones Angel asked if she forgave him."
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "Tess said forgiveness was a long road they had started walking too late."
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "She did not refuse him the road."
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "Police silhouettes broke the dawn."
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "Tess rose."
+    },
+    {
+      "id": "s7-20",
+      "sceneId": "s7",
+      "text": "She smoothed her dress as if going to church."
+    },
+    {
+      "id": "s7-21",
+      "sceneId": "s7",
+      "text": "Arrest, in a glamorous 2026 reseat, still felt ancient: the state finishing what desire and ideal began."
+    },
+    {
+      "id": "s7-22",
+      "sceneId": "s7",
+      "text": "Angel shouted her name—Tess Durbeyfield—original and intact—as they took her."
+    },
+    {
+      "id": "s7-23",
+      "sceneId": "s7",
+      "text": "The name held."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "The book held."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "Lisbon's light held without mercy."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "The day Alec first drove her toward Lisbon lights, the Tagus villa falling behind, Tess counted orange streetlamps and tried to make arithmetic of danger."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "He talked of clubs, of a singer, of how village girls bloomed in cities."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "She said she wanted to go home."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "He said home was small."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "When he parked above a viewpoint where couples kissed for phones, she kept her hands on her bag."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "He kissed her anyway—pushing past no—and she shoved him and walked until a night bus took her inland with her pulse in her ears."
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "That refusal only trained him."
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "The later fog, the fair, the wooded edge, were his advanced lesson."
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "She woke to birds and a body that no longer felt like a simple tool for work."
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "She washed in cold water."
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "She did not scream."
+    },
+    {
+      "id": "s8-13",
+      "sceneId": "s8",
+      "text": "Screaming required an audience that believed her."
+    },
+    {
+      "id": "s8-14",
+      "sceneId": "s8",
+      "text": "Her mother met her with questions about rings."
+    },
+    {
+      "id": "s8-15",
+      "sceneId": "s8",
+      "text": "Tess said there was no ring."
+    },
+    {
+      "id": "s8-16",
+      "sceneId": "s8",
+      "text": "Her mother cried for the family's luck, not for Tess's skin."
+    },
+    {
+      "id": "s8-17",
+      "sceneId": "s8",
+      "text": "Her father spoke of d'Urberville blood as if blood could sue."
+    },
+    {
+      "id": "s8-18",
+      "sceneId": "s8",
+      "text": "Tess worked the garden until her hands blistered and thought blister preferable to villa silk."
+    },
+    {
+      "id": "s8-19",
+      "sceneId": "s8",
+      "text": "When she understood she was pregnant she told her mother in the kitchen among boiling potatoes."
+    },
+    {
+      "id": "s8-20",
+      "sceneId": "s8",
+      "text": "Her mother said, \"He must provide.\""
+    },
+    {
+      "id": "s8-21",
+      "sceneId": "s8",
+      "text": "Alec, contacted, sent money and a note that called her ungrateful."
+    },
+    {
+      "id": "s8-22",
+      "sceneId": "s8",
+      "text": "Tess kept the money for the child and burned the note's tone into memory."
+    },
+    {
+      "id": "s8-23",
+      "sceneId": "s8",
+      "text": "Sorrow's baptism—alone, with water from a cup—was the holiest act she knew."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "She named him for what he was and what the world had given."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "When fever took him she walked to the clinic too late and returned with emptiness as a companion."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "At the small burial she spoke to no God of Lisbon cathedrals."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "She spoke to the child: *I wanted you despite them.* Then she packed for the dairy."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "Angel Clare first saw her in mist at dawn, cheek against a cow's flank, and mistook necessity for poetry."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "He told his friend she was a fresh page."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "Tess, hearing later, flinched at pages."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "Pages get written on by other people."
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "Still she fell in love with his gentleness, his violin, his refusal of his family's harder dogmas—refusal that looked like courage until it became selective."
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "He loved the poor as idea."
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "He loved purity as brand."
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "Tess tried to hand him her history like a difficult letter."
+    },
+    {
+      "id": "s9-12",
+      "sceneId": "s9",
+      "text": "On a bridge over a canal near the dairy he kissed her and she swallowed the letter again."
+    },
+    {
+      "id": "s9-13",
+      "sceneId": "s9",
+      "text": "Wedding preparations made her dizzy with almost-confession."
+    },
+    {
+      "id": "s9-14",
+      "sceneId": "s9",
+      "text": "She wrote Angel a note explaining Alec and slipped it under his door; he misplaced it unread among farming pamphlets."
+    },
+    {
+      "id": "s9-15",
+      "sceneId": "s9",
+      "text": "Fate, Hardy-style, wore ordinary messiness."
+    },
+    {
+      "id": "s9-16",
+      "sceneId": "s9",
+      "text": "At the white bed in Lisbon she listened to his city-affair confession and thought: now."
+    },
+    {
+      "id": "s9-17",
+      "sceneId": "s9",
+      "text": "She spoke."
+    },
+    {
+      "id": "s9-18",
+      "sceneId": "s9",
+      "text": "The room's rented view of rooftops stayed beautiful while his face emptied."
+    },
+    {
+      "id": "s9-19",
+      "sceneId": "s9",
+      "text": "\"Forgive me as I forgive you,\" she begged."
+    },
+    {
+      "id": "s9-20",
+      "sceneId": "s9",
+      "text": "He said the cases differed."
+    },
+    {
+      "id": "s9-21",
+      "sceneId": "s9",
+      "text": "Difference, for Angel, was the knife."
+    },
+    {
+      "id": "s9-22",
+      "sceneId": "s9",
+      "text": "He lived with her a few days in cold courtesy, sleeping apart, then announced departure."
+    },
+    {
+      "id": "s9-23",
+      "sceneId": "s9",
+      "text": "\"I cannot live with what you were,\" he said."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "\"I may learn.\""
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "Learning required oceans."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "Tess asked if she was his wife."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "He said yes in law and no in his board of ideals."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "She watched his train from a platform where tourists rolled suitcases and did not know a marriage had died mid-sentence."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "Field work near Évora hardened her."
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "She slept in thin blankets among other women, ate little, hid her wedding ring on a string at her neck when employers mistrusted married hands."
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "News of Angel came as scraps—someone saw him at a port; someone said Brazil."
+    },
+    {
+      "id": "s10-8",
+      "sceneId": "s10",
+      "text": "She dreamed of him forgiving her and woke angry at the dream's obedience."
+    },
+    {
+      "id": "s10-9",
+      "sceneId": "s10",
+      "text": "Alec found her in a rain-soaked afternoon, car clean, smile resurrected."
+    },
+    {
+      "id": "s10-10",
+      "sceneId": "s10",
+      "text": "Conversion talk first: he would atone by guiding her."
+    },
+    {
+      "id": "s10-11",
+      "sceneId": "s10",
+      "text": "Tess said atonement would be staying away."
+    },
+    {
+      "id": "s10-12",
+      "sceneId": "s10",
+      "text": "He did not stay away."
+    },
+    {
+      "id": "s10-13",
+      "sceneId": "s10",
+      "text": "He returned with food for her siblings, with rent for her mother, with the slow choke of generosity."
+    },
+    {
+      "id": "s10-14",
+      "sceneId": "s10",
+      "text": "When her father died—heart, drink, pedigree jokes unfinished—the family faced the road."
+    },
+    {
+      "id": "s10-15",
+      "sceneId": "s10",
+      "text": "Alec sat in their small kitchen like a banker of flesh."
+    },
+    {
+      "id": "s10-16",
+      "sceneId": "s10",
+      "text": "\"Come to Lisbon,\" he said to Tess."
+    },
+    {
+      "id": "s10-17",
+      "sceneId": "s10",
+      "text": "\"They eat.\""
+    },
+    {
+      "id": "s10-18",
+      "sceneId": "s10",
+      "text": "Tess looked at her sister Liza-Lu's bare ankles and nodded once."
+    },
+    {
+      "id": "s10-19",
+      "sceneId": "s10",
+      "text": "The nod was not consent as desire; it was consent as triage."
+    },
+    {
+      "id": "s10-20",
+      "sceneId": "s10",
+      "text": "In the Lisbon flat she cooked his meals and flinched at his touch and wrote Angel one last letter she did not send: *Your purity delivered me to him again.*"
+    },
+    {
+      "id": "s10-21",
+      "sceneId": "s10",
+      "text": "Angel's knock broke the triage."
+    },
+    {
+      "id": "s10-22",
+      "sceneId": "s10",
+      "text": "He stood thinner, eyes opened by fever and regret, saying her name as if retrieving it from a well."
+    },
+    {
+      "id": "s10-23",
+      "sceneId": "s10",
+      "text": "Tess trembled."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Alec cursed from the bedroom."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "The knife was ordinary kitchen steel."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "She entered Alec's room while Angel waited in confusion and ended the hunter."
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "Blood on expensive sheets."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "She told Angel, \"I have killed him.\""
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "Angel—finally—did not flee."
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "They ran through streets waking into market noise, caught a bus toward the heritage stones marketed as mystic."
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "Among rocks Tess said she was glad to have been his wife even briefly."
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "He wept into her hair."
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "Dawn brought uniforms."
+    },
+    {
+      "id": "s11-10",
+      "sceneId": "s11",
+      "text": "Tess Durbeyfield rose for arrest under a sky Lisbon tourism would call perfect."
+    },
+    {
+      "id": "s11-11",
+      "sceneId": "s11",
+      "text": "HOST readers should know: sexual violence is in this book's spine; Host notes warn."
+    },
+    {
+      "id": "s11-12",
+      "sceneId": "s11",
+      "text": "The remake does not spectacle it."
+    },
+    {
+      "id": "s11-13",
+      "sceneId": "s11",
+      "text": "It names it and tracks consequence—child, labor, marriage rupture, return of the predator, murder, arrest—faithful, continuous, glamorous only in setting's surface."
+    },
+    {
+      "id": "s11-14",
+      "sceneId": "s11",
+      "text": "After arrest, Angel tried to take blame and was not allowed."
+    },
+    {
+      "id": "s11-15",
+      "sceneId": "s11",
+      "text": "Tess, in custody, asked after Liza-Lu."
+    },
+    {
+      "id": "s11-16",
+      "sceneId": "s11",
+      "text": "Bureaucracy answered slowly."
+    },
+    {
+      "id": "s11-17",
+      "sceneId": "s11",
+      "text": "She did not ask for Alec's soul."
+    },
+    {
+      "id": "s11-18",
+      "sceneId": "s11",
+      "text": "She asked whether Angel had slept."
+    },
+    {
+      "id": "s11-19",
+      "sceneId": "s11",
+      "text": "A guard laughed."
+    },
+    {
+      "id": "s11-20",
+      "sceneId": "s11",
+      "text": "Tess closed her eyes and saw Alentejo dawn, dairy mist, Tagus glass, the stones."
+    },
+    {
+      "id": "s11-21",
+      "sceneId": "s11",
+      "text": "She kept her name."
+    },
+    {
+      "id": "s11-22",
+      "sceneId": "s11",
+      "text": "She kept Hardy's plot."
+    },
+    {
+      "id": "s11-23",
+      "sceneId": "s11",
+      "text": "Lisbon's 2026 shine remained a backdrop that never paid for what it framed."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "In the dairy months Tess learned the names of cows and the moods of fog."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "Angel brought her a strawberry once—innocent echo of Alec's earlier forced strawberries—and she nearly cried at the fruit's complicated history in her life."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "She ate it so he would not ask why she stared."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "That night she dreamed of Sorrow alive and woke with milk smells in the dark and prayed without theology: *let me be allowed a future.*"
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "Angel's brothers visited and measured Tess as insufficiently educated for their mother's table."
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "Angel defended her with speeches about natural grace."
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "Tess heard the speeches as love and as future courtroom."
+    },
+    {
+      "id": "s12-7",
+      "sceneId": "s12",
+      "text": "When she met his parents, she wore her cleanest dress and spoke little."
+    },
+    {
+      "id": "s12-8",
+      "sceneId": "s12",
+      "text": "His father was kinder than expected; kindness made her confession harder to schedule."
+    },
+    {
+      "id": "s12-9",
+      "sceneId": "s12",
+      "text": "On the evening before the wedding she stood behind the dairy and whispered the truth to a wall."
+    },
+    {
+      "id": "s12-10",
+      "sceneId": "s12",
+      "text": "The wall did not absolve."
+    },
+    {
+      "id": "s12-11",
+      "sceneId": "s12",
+      "text": "Walls never do."
+    },
+    {
+      "id": "s12-12",
+      "sceneId": "s12",
+      "text": "She went inside and smiled for Angel's toast among workers."
+    },
+    {
+      "id": "s12-13",
+      "sceneId": "s12",
+      "text": "Smiling still cost."
+    },
+    {
+      "id": "s12-14",
+      "sceneId": "s12",
+      "text": "After Angel left, a dairy woman named Marian drank too much and said men were weather."
+    },
+    {
+      "id": "s12-15",
+      "sceneId": "s12",
+      "text": "Tess said some men were climate."
+    },
+    {
+      "id": "s12-16",
+      "sceneId": "s12",
+      "text": "Marian laughed and then looked sad."
+    },
+    {
+      "id": "s12-17",
+      "sceneId": "s12",
+      "text": "Tess walked under stars that also lit Lisbon clubs an hour away and felt the city's glamour as a separate species."
+    },
+    {
+      "id": "s12-18",
+      "sceneId": "s12",
+      "text": "Alec's preacher phase included a pamphlet he tried to force into her hands."
+    },
+    {
+      "id": "s12-19",
+      "sceneId": "s12",
+      "text": "She dropped it in mud."
+    },
+    {
+      "id": "s12-20",
+      "sceneId": "s12",
+      "text": "He called her pagan."
+    },
+    {
+      "id": "s12-21",
+      "sceneId": "s12",
+      "text": "She said pagans at least stayed consistent."
+    },
+    {
+      "id": "s12-22",
+      "sceneId": "s12",
+      "text": "When he reappeared without God, only wallet, she recognized the original Alec like an old scar brightening in weather."
+    },
+    {
+      "id": "s12-23",
+      "sceneId": "s12",
+      "text": "In the flat she once locked herself in the bathroom and counted tiles to stay inside her mind."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "He banged and then apologized with restaurant reservations."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "She unlocked because Liza-Lu's school fees lived in his apology."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "This is how kept ghosting works in glamorous cities: the leash is made of siblings' futures."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "When she killed him she did not feel cinematic."
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "She felt finished with being a resource."
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "Angel's horror was love's delayed arrival."
+    },
+    {
+      "id": "s13-6",
+      "sceneId": "s13",
+      "text": "At the stones she slept because the body shuts doors when story overflows."
+    },
+    {
+      "id": "s13-7",
+      "sceneId": "s13",
+      "text": "Arresting officers spoke Portuguese and English into radios."
+    },
+    {
+      "id": "s13-8",
+      "sceneId": "s13",
+      "text": "Tess gave her name clearly: Tess Durbeyfield."
+    },
+    {
+      "id": "s13-9",
+      "sceneId": "s13",
+      "text": "No pedigree shield."
+    },
+    {
+      "id": "s13-10",
+      "sceneId": "s13",
+      "text": "No purity mask."
+    },
+    {
+      "id": "s13-11",
+      "sceneId": "s13",
+      "text": "Name as last property."
+    },
+    {
+      "id": "s13-12",
+      "sceneId": "s13",
+      "text": "Angel Clare lived afterward—this remake allows Hardy's trajectory without inventing acquittal—carrying the knowledge that ideal had been accomplice."
+    },
+    {
+      "id": "s13-13",
+      "sceneId": "s13",
+      "text": "Tess's fate with the state remains the book's hard mercy: not spectacle death scene, but the arrest as ending chord, the city beautiful behind barricades of procedure."
+    },
+    {
+      "id": "s13-14",
+      "sceneId": "s13",
+      "text": "Continuous novel."
+    },
+    {
+      "id": "s13-15",
+      "sceneId": "s13",
+      "text": "Original names."
+    },
+    {
+      "id": "s13-16",
+      "sceneId": "s13",
+      "text": "No pad refrain."
+    },
+    {
+      "id": "s13-17",
+      "sceneId": "s13",
+      "text": "Fidelity held."
+    },
+    {
+      "id": "s13-18",
+      "sceneId": "s13",
+      "text": "One more strand Hardy demands: the chase's social mirror."
+    },
+    {
+      "id": "s13-19",
+      "sceneId": "s13",
+      "text": "Villagers who praised Tess's looks before Alec called her spoiled after."
+    },
+    {
+      "id": "s13-20",
+      "sceneId": "s13",
+      "text": "Dairy girls who envied Angel's preference later whispered."
+    },
+    {
+      "id": "s13-21",
+      "sceneId": "s13",
+      "text": "Lisbon strangers who smiled at Alec's arm around Tess assumed romance."
+    },
+    {
+      "id": "s13-22",
+      "sceneId": "s13",
+      "text": "Assumptions are a chorus."
+    },
+    {
+      "id": "s13-23",
+      "sceneId": "s13",
+      "text": "Tess walked through chorus without score."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "Also the mother's hunger: Joan Durbeyfield (name kept in spirit as mother) pushing Tess toward soft violence because soft violence sometimes paid."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "Tess refused to hate her mother cleanly."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "Clean hate is a luxury."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "She sent money when she could."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "She withheld story when story would only become another tool."
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Angel's Brazil—planned, partially enacted in letters from ports—taught him fever and failure and the look of his own meanness."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "He returned not as hero but as late witness."
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "Late witnesses still matter; they do not cancel knives."
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "At the heritage stones a sign explained pagan rites for visitors."
+    },
+    {
+      "id": "s14-9",
+      "sceneId": "s14",
+      "text": "Tess, half awake, said, \"They charge for old pain.\""
+    },
+    {
+      "id": "s14-10",
+      "sceneId": "s14",
+      "text": "Angel nodded."
+    },
+    {
+      "id": "s14-11",
+      "sceneId": "s14",
+      "text": "Police boots scratched gravel."
+    },
+    {
+      "id": "s14-12",
+      "sceneId": "s14",
+      "text": "The continuous book ended on handcuffs, river light far off, names intact: Tess, Alec, Angel Clare."
+    },
+    {
+      "id": "s14-13",
+      "sceneId": "s14",
+      "text": "Lisbon glamorous."
+    },
+    {
+      "id": "s14-14",
+      "sceneId": "s14",
+      "text": "Spirit cruel and true."
+    },
+    {
+      "id": "s14-15",
+      "sceneId": "s14",
+      "text": "Before dawn on the day of the heritage stones, while they still believed flight possible, Tess asked Angel whether he remembered the dairy fog."
+    },
+    {
+      "id": "s14-16",
+      "sceneId": "s14",
+      "text": "He said yes."
+    },
+    {
+      "id": "s14-17",
+      "sceneId": "s14",
+      "text": "She said she had been most herself then—working, loving him, carrying silence like a full pail."
+    },
+    {
+      "id": "s14-18",
+      "sceneId": "s14",
+      "text": "He said he had loved a statue and missed the woman."
+    },
+    {
+      "id": "s14-19",
+      "sceneId": "s14",
+      "text": "She forgave the statue remark because he was finally naming it."
+    },
+    {
+      "id": "s14-20",
+      "sceneId": "s14",
+      "text": "They drank water from a plastic bottle stamped with a Lisbon tourist logo."
+    },
+    {
+      "id": "s14-21",
+      "sceneId": "s14",
+      "text": "Even thirst came branded."
+    },
+    {
+      "id": "s14-22",
+      "sceneId": "s14",
+      "text": "Earlier, in the flat's kitchen, Alec had laughed at Angel's return: \"The pure boy comes back for leftovers.\""
+    },
+    {
+      "id": "s14-23",
+      "sceneId": "s14",
+      "text": "Tess heard leftovers and felt something lock."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "The knife was beside washed fruit."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "She did not plan a novelistic climax; she moved through a narrow tunnel of enough."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "Afterward her hands shook so hard Angel had to button her coat."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "On the stairwell a neighbor opened a door to the smell of blood and closed it—Lisbon privacy as survival."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "Sirens somewhere else took another emergency."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "Their emergency walked out into streetlight and tram spark."
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "On the bus out of the city a child sang."
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "Tess leaned on Angel and watched industrial outskirts become scrub."
+    },
+    {
+      "id": "s15-8",
+      "sceneId": "s15",
+      "text": "She said, \"I murdered him.\""
+    },
+    {
+      "id": "s15-9",
+      "sceneId": "s15",
+      "text": "Angel said, \"He murdered you by inches first.\""
+    },
+    {
+      "id": "s15-10",
+      "sceneId": "s15",
+      "text": "Legal systems do not accept inches."
+    },
+    {
+      "id": "s15-11",
+      "sceneId": "s15",
+      "text": "Tess knew."
+    },
+    {
+      "id": "s15-12",
+      "sceneId": "s15",
+      "text": "She was not seeking acquittal in speech."
+    },
+    {
+      "id": "s15-13",
+      "sceneId": "s15",
+      "text": "She was placing fact beside fact."
+    },
+    {
+      "id": "s15-14",
+      "sceneId": "s15",
+      "text": "At a rest stop she washed blood from a cuff in a metal sink while fluorescent light made her look already judged."
+    },
+    {
+      "id": "s15-15",
+      "sceneId": "s15",
+      "text": "A trucker asked if she was okay."
+    },
+    {
+      "id": "s15-16",
+      "sceneId": "s15",
+      "text": "She said yes."
+    },
+    {
+      "id": "s15-17",
+      "sceneId": "s15",
+      "text": "Okay was a lie in service of minutes."
+    },
+    {
+      "id": "s15-18",
+      "sceneId": "s15",
+      "text": "Back on the road Angel talked of living abroad under other names; Tess shook her head."
+    },
+    {
+      "id": "s15-19",
+      "sceneId": "s15",
+      "text": "\"I am tired of names that are not mine.\""
+    },
+    {
+      "id": "s15-20",
+      "sceneId": "s15",
+      "text": "Durbeyfield stood."
+    },
+    {
+      "id": "s15-21",
+      "sceneId": "s15",
+      "text": "D'Urberville had been bait."
+    },
+    {
+      "id": "s15-22",
+      "sceneId": "s15",
+      "text": "Mrs Clare had been a brief bright room."
+    },
+    {
+      "id": "s15-23",
+      "sceneId": "s15",
+      "text": "She would answer to Tess."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Among the stones she traced lichen with a finger and thought of Sorrow's grave."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "Maternal lines pulled taut across years."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "Angel slept a little; she watched his face softened by exhaustion and loved him without purity's passport."
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "When flashlights cut the dark she rose before ordered, hands visible."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "Compliance as last clarity."
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "They said her name into radios."
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "Tess Durbeyfield."
+    },
+    {
+      "id": "s16-7",
+      "sceneId": "s16",
+      "text": "The continuous remake does not invent escape."
+    },
+    {
+      "id": "s16-8",
+      "sceneId": "s16",
+      "text": "It invents—faithfully—only Lisbon's glamorous weather around the old ending."
+    },
+    {
+      "id": "s16-9",
+      "sceneId": "s16",
+      "text": "Months before any knife, during field season, Tess received a photo from a cousin showing Alec at a river party with a new girl."
+    },
+    {
+      "id": "s16-10",
+      "sceneId": "s16",
+      "text": "She felt sick for the girl and also relief that was temporary."
+    },
+    {
+      "id": "s16-11",
+      "sceneId": "s16",
+      "text": "Predators rotate."
+    },
+    {
+      "id": "s16-12",
+      "sceneId": "s16",
+      "text": "When he reappeared for her anyway she understood rotation could reverse."
+    },
+    {
+      "id": "s16-13",
+      "sceneId": "s16",
+      "text": "Her mother's letter—*he still asks for you*—arrived like a summons."
+    },
+    {
+      "id": "s16-14",
+      "sceneId": "s16",
+      "text": "Tess burned the letter and then cried because burning did not burn the asking."
+    },
+    {
+      "id": "s16-15",
+      "sceneId": "s16",
+      "text": "Angel's silence in those months was a climate change in her chest."
+    },
+    {
+      "id": "s16-16",
+      "sceneId": "s16",
+      "text": "She worked cold mornings and recited dairy tasks to keep from unraveling."
+    },
+    {
+      "id": "s16-17",
+      "sceneId": "s16",
+      "text": "Marian tried to set her up with a rough kind man; Tess refused."
+    },
+    {
+      "id": "s16-18",
+      "sceneId": "s16",
+      "text": "She was still married in the knot Angel had tied and fled."
+    },
+    {
+      "id": "s16-19",
+      "sceneId": "s16",
+      "text": "Fidelity, twisted, remained."
+    },
+    {
+      "id": "s16-20",
+      "sceneId": "s16",
+      "text": "When Alec offered the flat he took her to see it first—white sofa, river rectangle in glass, a fridge full of bright juices."
+    },
+    {
+      "id": "s16-21",
+      "sceneId": "s16",
+      "text": "\"You will forget the village,\" he said."
+    },
+    {
+      "id": "s16-22",
+      "sceneId": "s16",
+      "text": "She looked at the view and saw a prettier cage."
+    },
+    {
+      "id": "s16-23",
+      "sceneId": "s16",
+      "text": "\"I will never forget,\" she answered."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "He kissed her neck as if contradiction were spice."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "That night she slept on the sofa until he complained."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "She moved."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "This is the ledger of kept life: small surrenders logged until a final refusal spends them all at once."
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "Host note territory: the violation in the wooded edge is stated without pornographic staging; the murder is stated without gore-as-entertainment; the arrest closes."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "Readers warned."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "Spirit kept."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "Names kept."
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "No laughter-traveled-like-rumor pad."
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "Word and wound aligned."
+    },
+    {
+      "id": "s17-10",
+      "sceneId": "s17",
+      "text": "Angel Clare's childhood in a pastor's house had taught him confession as hygiene."
+    },
+    {
+      "id": "s17-11",
+      "sceneId": "s17",
+      "text": "He confessed his city woman to Tess expecting to be bathed in her absolution and to shine."
+    },
+    {
+      "id": "s17-12",
+      "sceneId": "s17",
+      "text": "When she offered her own confession he treated it as contamination."
+    },
+    {
+      "id": "s17-13",
+      "sceneId": "s17",
+      "text": "The asymmetry is Hardy's engine."
+    },
+    {
+      "id": "s17-14",
+      "sceneId": "s17",
+      "text": "In Lisbon 2026 the engine still runs: men forgive themselves with essays; women are asked to be essays' blank pages."
+    },
+    {
+      "id": "s17-15",
+      "sceneId": "s17",
+      "text": "Tess, working dairy stainless steel, sometimes caught her reflection and searched for the \"pure\" face Angel needed."
+    },
+    {
+      "id": "s17-16",
+      "sceneId": "s17",
+      "text": "She could not find it because it had never been a face—only his projection on her laboring body."
+    },
+    {
+      "id": "s17-17",
+      "sceneId": "s17",
+      "text": "After he left she stopped searching mirrors for his approval and used them only to check if grief showed enough to cost wages."
+    },
+    {
+      "id": "s17-18",
+      "sceneId": "s17",
+      "text": "Alec, in preacher mode, quoted verses at the edge of a mall parking lot outside a satellite town—glamour's cheap rim."
+    },
+    {
+      "id": "s17-19",
+      "sceneId": "s17",
+      "text": "Tess laughed until she coughed."
+    },
+    {
+      "id": "s17-20",
+      "sceneId": "s17",
+      "text": "\"You want a convert and a mistress,\" she said."
+    },
+    {
+      "id": "s17-21",
+      "sceneId": "s17",
+      "text": "He slapped her—first open slap—then apologized with tears that may have been real and still were tools."
+    },
+    {
+      "id": "s17-22",
+      "sceneId": "s17",
+      "text": "She walked away with a bruise she explained at work as a door."
+    },
+    {
+      "id": "s17-23",
+      "sceneId": "s17",
+      "text": "Doors, doors, always doors."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "Her siblings wrote thank-you notes for food Alec funded through Tess's captivity."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "The notes were knives of gratitude."
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "Tess kept them in a drawer and did not show Angel later; some pains you do not outsource even to late love."
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "At the stones' arrest, a young officer looked at Tess with something like pity and something like hunger for a story to tell later at drinks."
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "Tess gave no story beyond name and quiet."
+    },
+    {
+      "id": "s18-5",
+      "sceneId": "s18",
+      "text": "Angel tried to give story and was told to shut up."
+    },
+    {
+      "id": "s18-6",
+      "sceneId": "s18",
+      "text": "The van doors closed on Lisbon morning."
+    },
+    {
+      "id": "s18-7",
+      "sceneId": "s18",
+      "text": "Continuous book: closed on law, open on spirit's bruise."
+    },
+    {
+      "id": "s18-8",
+      "sceneId": "s18",
+      "text": "Tess Durbeyfield."
+    },
+    {
+      "id": "s18-9",
+      "sceneId": "s18",
+      "text": "Alec. Angel Clare."
+    },
+    {
+      "id": "s18-10",
+      "sceneId": "s18",
+      "text": "Fidelity."
+    },
+    {
+      "id": "s18-11",
+      "sceneId": "s18",
+      "text": "So the Alentejo track and the Tagus villa and the dairy fog and the Lisbon white bed and the kept flat and the tourist stones lined up as one continuous road."
+    },
+    {
+      "id": "s18-12",
+      "sceneId": "s18",
+      "text": "Tess walked every mile of it under names that stayed hers even when men tried to rebrand her as cousin, pure bride, leftover, prisoner."
+    },
+    {
+      "id": "s18-13",
+      "sceneId": "s18",
+      "text": "Hardy required that the world punish her for what was done to her and for what she did to end it."
+    },
+    {
+      "id": "s18-14",
+      "sceneId": "s18",
+      "text": "This remake does not soften that requirement with a new cast or a redeemed Alec or an Angel who stayed the first time."
+    },
+    {
+      "id": "s18-15",
+      "sceneId": "s18",
+      "text": "It reseats the cruelty in glamorous 2026 Lisbon light—cranes, river glass, heritage signage—and keeps the spirit exact."
+    },
+    {
+      "id": "s18-16",
+      "sceneId": "s18",
+      "text": "On the last morning before the stones, Tess had washed her face and looked at Angel as if memorizing a country."
+    },
+    {
+      "id": "s18-17",
+      "sceneId": "s18",
+      "text": "\"If they take me,\" she said, \"do not let them make you pure again.\""
+    },
+    {
+      "id": "s18-18",
+      "sceneId": "s18",
+      "text": "He promised."
+    },
+    {
+      "id": "s18-19",
+      "sceneId": "s18",
+      "text": "Promises from late men are fragile; she accepted fragility as the available sacrament."
+    },
+    {
+      "id": "s18-20",
+      "sceneId": "s18",
+      "text": "When cuffs closed she did not look at tourists beginning to arrive with cameras."
+    },
+    {
+      "id": "s18-21",
+      "sceneId": "s18",
+      "text": "She looked at scrub and sky."
+    },
+    {
+      "id": "s18-22",
+      "sceneId": "s18",
+      "text": "Somewhere the Tagus kept moving."
+    },
+    {
+      "id": "s18-23",
+      "sceneId": "s18",
+      "text": "Somewhere a dairy tank steamed."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "Somewhere a villa party planned its evening without a dead man's name yet printed."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "Tess Durbeyfield inhaled once, steady, and stepped into the state's custody as the book required—faithful, unbroken in name, finished in plot, glamorous only where the city insisted on shining."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "Angel, in the days after arrest, walked Lisbon plazas where musicians played for coins and felt the city's glamour as indictment."
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "He had wanted a pure bride from the dairy mist; he had produced a hunted woman with a knife."
+    },
+    {
+      "id": "s19-4",
+      "sceneId": "s19",
+      "text": "He hired lawyers who spoke of diminished stories; Tess, from custody, refused to cast herself as only victim if it meant lying about the blade."
+    },
+    {
+      "id": "s19-5",
+      "sceneId": "s19",
+      "text": "She had been violated by Alec; she had been abandoned by Angel; she had killed."
+    },
+    {
+      "id": "s19-6",
+      "sceneId": "s19",
+      "text": "All three true."
+    },
+    {
+      "id": "s19-7",
+      "sceneId": "s19",
+      "text": "Hardy's spirit allows complexity without acquittal fantasy."
+    },
+    {
+      "id": "s19-8",
+      "sceneId": "s19",
+      "text": "The remake ends where the police take her among tourist stones—continuous, named, unpadded—Tess Durbeyfield held a moment longer by Angel Clare while Alec's absence finally means what she made it mean: over."
+    },
+    {
+      "id": "s19-9",
+      "sceneId": "s19",
+      "text": "In custody Tess asked for water and for word of Liza-Lu."
+    },
+    {
+      "id": "s19-10",
+      "sceneId": "s19",
+      "text": "She did not ask for headlines."
+    },
+    {
+      "id": "s19-11",
+      "sceneId": "s19",
+      "text": "Angel Clare waited in corridors that smelled of disinfectant and old coffee, replaying dairy fog and wedding white and the knife's ordinary steel."
+    },
+    {
+      "id": "s19-12",
+      "sceneId": "s19",
+      "text": "He understood at last that purity had been his weapon and Alec's hunger the other, and Tess the ground they fought over until she refused to be ground."
+    },
+    {
+      "id": "s19-13",
+      "sceneId": "s19",
+      "text": "Lisbon's river light moved on without consulting the case file."
+    },
+    {
+      "id": "s19-14",
+      "sceneId": "s19",
+      "text": "The continuous remake holds there—Tess Durbeyfield named, Angel late, Alec ended, arrest complete—faithful to Hardy under glamorous 2026 sky, no new cast, no pad refrain, whole book unbroken."
+    },
+    {
+      "id": "s19-15",
+      "sceneId": "s19",
+      "text": "Years would not soften Alec's violation into romance or Angel's abandonment into growth montage."
+    },
+    {
+      "id": "s19-16",
+      "sceneId": "s19",
+      "text": "Tess's knife remained a fact; her arrest remained a fact; Lisbon's beauty remained a fact that did not apologize."
+    },
+    {
+      "id": "s19-17",
+      "sceneId": "s19",
+      "text": "Readers finish with her name clear in the mouth: Tess Durbeyfield—beside Alec, beside Angel Clare—under tourist-stone dawn, Hardy's spirit intact in a glamorous city that never earned the right to look away."
+    },
+    {
+      "id": "s19-18",
+      "sceneId": "s19",
+      "text": "Host note stands: sexual violence and murder inhabit this continuous remake without spectacle."
+    },
+    {
+      "id": "s19-19",
+      "sceneId": "s19",
+      "text": "Warn the room."
+    },
+    {
+      "id": "s19-20",
+      "sceneId": "s19",
+      "text": "Offer a pause."
+    },
+    {
+      "id": "s19-21",
+      "sceneId": "s19",
+      "text": "Then read Tess Durbeyfield's name as Hardy wrote the wound—reseeded in Lisbon's Tagus light, dairy edge, kept flat, tourist stones—Angel Clare late to love, Alec ended by the woman he hunted, the state closing the book with cuffs while the glamorous city shines on, indifferent and exact."
+    },
+    {
+      "id": "s19-22",
+      "sceneId": "s19",
+      "text": "After the arrest, Lisbon did what cities do: it filed the case, sold the morning papers, and kept the Tagus bright for visitors who would never know her name."
+    },
+    {
+      "id": "s19-23",
+      "sceneId": "s19",
+      "text": "Angel Clare walked until his shoes broke, then bought new ones and kept walking—not toward absolution, but toward the knowledge that purity, as he had defined it, had been a vanity with good manners."
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Alec's body was removed; his appetite was not mourned by anyone who had lived under it."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "In the hours before the end, Tess had asked Angel to remember her as she was in the dairy mornings—milk, mist, a laugh not yet taxed by the world's ledger."
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "He said he would."
+    },
+    {
+      "id": "s20-3",
+      "sceneId": "s20",
+      "text": "Whether he could was another novel, and not hers to finish."
+    },
+    {
+      "id": "s20-4",
+      "sceneId": "s20",
+      "text": "Hardy's plot does not gift her a soft landing."
+    },
+    {
+      "id": "s20-5",
+      "sceneId": "s20",
+      "text": "It gifts her clarity: the woman who was used, judged, abandoned, and still refused to become someone else's improved version of herself."
+    },
+    {
+      "id": "s20-6",
+      "sceneId": "s20",
+      "text": "So the continuous book closes on stone, river light, and the old names spoken without disguise—Tess Durbeyfield, Alec d'Urberville, Angel Clare—reseated in Lisbon's glamorous present, faithful to the country tragedy that invented them."
+    },
+    {
+      "id": "s20-7",
+      "sceneId": "s20",
+      "text": "Tess. Alec."
+    },
+    {
+      "id": "s20-8",
+      "sceneId": "s20",
+      "text": "Angel Clare."
+    },
+    {
+      "id": "s20-9",
+      "sceneId": "s20",
+      "text": "Alentejo."
+    },
+    {
+      "id": "s20-10",
+      "sceneId": "s20",
+      "text": "Tagus villa."
+    },
+    {
+      "id": "s20-11",
+      "sceneId": "s20",
+      "text": "Dairy. Lisbon room."
+    },
+    {
+      "id": "s20-12",
+      "sceneId": "s20",
+      "text": "Kept flat."
+    },
+    {
+      "id": "s20-13",
+      "sceneId": "s20",
+      "text": "Tourist stones."
+    },
+    {
+      "id": "s20-14",
+      "sceneId": "s20",
+      "text": "Arrest. The whole continuous road—done."
+    },
+    {
+      "id": "s20-15",
+      "sceneId": "s20",
+      "text": "She had been called pure and ruined and kept and murderer; she answered to Tess."
+    },
+    {
+      "id": "s20-16",
+      "sceneId": "s20",
+      "text": "That answer is the remake's last fidelity under Lisbon light."
+    }
+  ]
+}

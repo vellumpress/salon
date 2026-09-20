@@ -1,0 +1,2433 @@
+{
+  "id": "dorian-gray-shanghai",
+  "title": "Oscar Wilde, The Picture of Dorian Gray recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "This whole-book remake includes murder, corruption, and a violent death. Period-true to Wilde’s ending, written without gore spectacle. Warn the room before you Host it; offer a midpoint pause if needed.",
+  "minutes": 37,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Studio on the Bund",
+      "place": "Shanghai",
+      "reentry": "Basil Hallward painted in a top-floor studio above the Bund where Huangpu freight and ferry lights scored the glass.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Influence",
+      "place": "Shanghai",
+      "reentry": "They dined in the French Concession in a private room that smelled of citrus oil and expensive restraint.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Sibyl Vane",
+      "place": "Shanghai",
+      "reentry": "He found Sibyl Vane in a theater off Fuxing Road where Shakespeare was performed for tourists and the lonely.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "The bargain keeps accounts",
+      "place": "Shanghai",
+      "reentry": "He showed Basil nothing.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Murder",
+      "place": "Shanghai",
+      "reentry": "In the attic the portrait waited: corrupt, sly, older than any man of Dorian’s apparent years.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "James Vane",
+      "place": "Shanghai",
+      "reentry": "Sibyl’s brother, James Vane, a sailor with a long memory, came hunting through Shanghai’s docks for the gentleman who had destroyed his sister.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "The last knife",
+      "place": "Shanghai",
+      "reentry": "On the eve of a gallery opening for which his unbroken beauty was half the draw, Dorian stood before the canvas and understood that reform without confession was only another pose.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Continuous",
+      "place": "Shanghai",
+      "reentry": "The Bund kept its schedule.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "The years between",
+      "place": "Shanghai",
+      "reentry": "Between Sibyl’s death and Basil’s murder the calendar did not dramatize itself.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "Sibyl’s theater, again remembered",
+      "place": "Shanghai",
+      "reentry": "The night Sibyl died, Dorian did not go to the police station or the morgue.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "Influence as climate",
+      "place": "Shanghai",
+      "reentry": "Lord Henry’s house off Wukang Road held books, cigarettes, and young people who wanted to be ruined stylishly.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s11",
+      "title": "Basil’s return and the attic",
+      "place": "Shanghai",
+      "reentry": "When Basil came back from Europe he looked older in the honest way.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s12",
+      "title": "Hunting and hesitation",
+      "place": "Shanghai",
+      "reentry": "James Vane’s search gave the plot a simpler grammar.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s13",
+      "title": "Gallery eve",
+      "place": "Shanghai",
+      "reentry": "The night before the opening he stood long before the canvas.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s14",
+      "title": "Early lessons in outsourcing",
+      "place": "Shanghai",
+      "reentry": "Before Sibyl, before the attic lock, there was only Basil’s studio and Lord Henry’s voice and a young man who mistook attention for destiny.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s15",
+      "title": "After Campbell",
+      "place": "Shanghai",
+      "reentry": "Campbell’s suicide—if suicide was the word the lab preferred—left Dorian with a practical problem: fewer people who could be forced into intimacy with his secrets.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s16",
+      "title": "Closing inventory",
+      "place": "Shanghai",
+      "reentry": "On the last afternoon he visited Basil’s old studio building.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Basil Hallward painted in a top-floor studio above the Bund where Huangpu freight and ferry lights scored the glass."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "The portrait on the easel was nearly finished: Dorian Gray at twenty, beauty so complete it made the room look provisional."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Basil worked as if the paint might refuse to dry into anything less than mercy."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Lord Henry Wotton arrived without knocking, cologne and curiosity preceding him."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "He leaned on the sill and watched the river commerce like a man who believed cities existed to illustrate his epigrams."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Lord Henry: Your sitter has the face of a person who has not yet chosen a vice."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "How exhausting for him."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Basil: Leave him alone, Henry."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "He is not one of your experiments."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Dorian stepped down from the platform, smiling the way people smile when they have never been refused."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Shanghai had already forgiven his face in advance."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Basil introduced them with the reluctance of a man handing over a rare book."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "Lord Henry spoke of youth as a temporary republic and beauty as the only aristocracy that did not require paperwork."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Dorian listened as if hearing a language he had always half known."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "When Basil covered the canvas for the day, Dorian glanced once more at his own likeness and said, lightly, that it was a pity the painting could not stay young while he grew old."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "He did not know he had spoken a contract."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "They dined in the French Concession in a private room that smelled of citrus oil and expensive restraint."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Lord Henry’s doctrine arrived between courses: sensation as duty, morality as bad lighting, conscience as a provincial relative who stayed too long."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Dorian: And if beauty is the only thing that matters, what happens when it leaves?"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Lord Henry: It leaves."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "That is the joke."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "The clever live faster before the punchline."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Basil watched Dorian’s face change under the talk the way a plant turns toward a brighter window."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Afterward, walking along Huaihai, Basil begged Dorian not to see Lord Henry alone."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "Dorian laughed and promised nothing."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "That night the finished portrait hung opposite Dorian’s bed in his Huangpu apartment."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "River humidity softened the varnish."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "He looked from glass to canvas and wished again—clearer, hungrier—that the picture would bear every mark of age and sin while he remained untouched."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "Something in the room seemed to agree."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "He slept without dreaming and woke unmarked."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "He found Sibyl Vane in a theater off Fuxing Road where Shakespeare was performed for tourists and the lonely."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "She was Juliet, Ophelia, Imogen by rotation; her talent made the cheap scenery irrelevant."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Dorian went night after night."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "When he met her backstage, she called him Prince Charming because his name felt too ordinary for the story she needed."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Sibyl: You watch as if the play were happening to you."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Dorian: It is."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "You make it happen."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "They walked the Concession after curtain."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "She spoke of art as rescue; he spoke of her as the only real thing in a city of surfaces."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "He told Basil and Lord Henry he was engaged to an actress."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "Basil worried."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "Lord Henry applauded the experiment."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "Then Sibyl, loving him, lost the art that had made her luminous."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "On the night he brought his friends, she acted like a schoolgirl reading lines."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "The audience shifted."
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "Lord Henry’s smile sharpened."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "Afterward Dorian found her radiant with private happiness and empty of craft."
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "Dorian: You have killed my love."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "Without your art you are nothing to me."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "Sibyl: I have something better than art."
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "I have you."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "He left her in the dressing room with greasepaint and ruin."
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "By morning she was dead—poison, the papers said, or grief made chemical."
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "Dorian received the news with a strange calm."
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "When he looked at the portrait, the mouth had hardened into a cruelty he recognized as his own."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "He showed Basil nothing."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "He covered the portrait and moved it to the attic room above his apartment, locking the door."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Lord Henry sent a yellow-bound novel of French decadence; Dorian read it as scripture."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Years began to pass in Shanghai’s glamorous weather: clubs along the Bund, private views in converted lane houses, opium dens dressed as tea rooms for men who still required a story."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "The portrait aged."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "A wrinkle here, a stain of appetite there."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "Dorian’s face in mirrors stayed the face Basil had loved."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "Rumors attached themselves to his name—ruined protégés, vanished evenings, a married woman who left the city suddenly."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "He smiled through them."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "Beauty was still his passport."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "Basil, returning from months abroad, found Dorian unchanged and the city changed around him."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "He pleaded for honesty."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "Basil: They say terrible things."
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "Deny them for my sake."
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "Dorian: Come upstairs."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "In the attic the portrait waited: corrupt, sly, older than any man of Dorian’s apparent years."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Basil stared until prayer failed him."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "Basil: This is the face of your soul."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Good God, Dorian—"
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "Dorian: You taught me to worship it."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "Blame your own worship."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "Rage arrived like a decision already made."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "He stabbed Basil repeatedly with a knife kept for opening crates."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "Basil’s blood darkened the floorboards."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "The portrait’s hands gained a fresh red."
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "Dorian stood breathing hard, still beautiful, already planning the disposal."
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "He blackmailed Alan Campbell—chemist, once almost a friend—into destroying the body with acids and science."
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "Campbell obeyed and later shot himself."
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "Dorian returned to dinners."
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "Lord Henry noticed only that Dorian seemed tired of being interesting."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Sibyl’s brother, James Vane, a sailor with a long memory, came hunting through Shanghai’s docks for the gentleman who had destroyed his sister."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "He glimpsed Dorian near the Custom House and mistook youth for innocence until an old woman in an alley named the face that never aged."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "James tracked him to a shooting party upriver; a hunter’s accident killed James instead."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "Dorian felt relief so sharp it frightened him into a week of attempted goodness—charity, returned letters, refused invitations."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "The portrait did not soften."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "Hypocrisy, it seemed, stained worse than open vice."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "On the eve of a gallery opening for which his unbroken beauty was half the draw, Dorian stood before the canvas and understood that reform without confession was only another pose."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "He seized the knife that had killed Basil."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Dorian: Now you will die."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "He drove the blade into the portrait."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "A cry shook the building."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "Servants broke the attic door at dawn and found, on the floor, a withered old man in evening clothes, knife in his heart, face lined with every sin the city had whispered."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "On the wall, Basil Hallward’s portrait hung restored: Dorian Gray young, exquisite, unstained."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "They identified the body by the rings on its fingers."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "The Bund kept its schedule."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Ferries crossed."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "Lord Henry, hearing the news over coffee, remarked that it was a pity—Dorian had been the one person left in Shanghai who still looked like a theory come true."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Basil’s name rose briefly in obituaries and sank."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "The portrait entered a private collection and was later said to have been lost in a warehouse fire near the river."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "What remained was the story the painting had always told more honestly than the living face: that beauty without conscience is a loan, and Shanghai, like every glamorous city, collects."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Dorian’s early weeks after the wish had been almost innocent—parties where he practiced Lord Henry’s sentences until they fit his mouth."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "He learned which clubs photographed well and which required silence."
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "He discovered that people confessed to beauty as they confessed to priests."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "A young collector from Hong Kong offered him a share in a shipping concern; Dorian declined, preferring evenings that left no ledger."
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "Basil sent anxious notes."
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "Dorian answered with invitations and never arrived on time."
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "Sibyl’s theater smelled of dust and orange peel."
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "Before the fatal night she had performed Rosalind with a brightness that made Dorian believe love and art could share a body."
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "He bought her a bracelet from a jeweler on Nanjing Road and watched her turn it under the bulb as if it were proof of a future."
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "Her mother, shrewd and tired, asked what a gentleman intended."
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "Dorian spoke of marriage with the sincerity of a man who had not yet tested sincerity against boredom."
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "Lord Henry: Marry her."
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "Or don’t."
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "Either way you will learn something vulgar about yourself."
+    },
+    {
+      "id": "s7-20",
+      "sceneId": "s7",
+      "text": "The learning came when Sibyl’s talent collapsed into devotion."
+    },
+    {
+      "id": "s7-21",
+      "sceneId": "s7",
+      "text": "Dorian’s cruelty that night was precise because it felt aesthetic: he could not love a face that had stopped being a performance."
+    },
+    {
+      "id": "s7-22",
+      "sceneId": "s7",
+      "text": "After her death he walked until dawn along the river and found, in the locked attic, that the portrait had taken the first installment—a cruelty around the mouth, a shadow under the eyes."
+    },
+    {
+      "id": "s7-23",
+      "sceneId": "s7",
+      "text": "He laughed, then covered the canvas with a cloth that had once draped Basil’s model stand."
+    },
+    {
+      "id": "s7-24",
+      "sceneId": "s7",
+      "text": "Years thickened."
+    },
+    {
+      "id": "s7-25",
+      "sceneId": "s7",
+      "text": "He hosted dinners where conversation was a blood sport and left before dessert."
+    },
+    {
+      "id": "s7-26",
+      "sceneId": "s7",
+      "text": "He funded a sculptor and ruined him with attention."
+    },
+    {
+      "id": "s7-27",
+      "sceneId": "s7",
+      "text": "He kept a flat in a lane off Julu Road for evenings that required another address."
+    },
+    {
+      "id": "s7-28",
+      "sceneId": "s7",
+      "text": "The yellow book Lord Henry had given him became a map; he followed it into rooms where time softened and faces blurred."
+    },
+    {
+      "id": "s7-29",
+      "sceneId": "s7",
+      "text": "Always he returned to the attic to watch the portrait accept what his mirror refused."
+    },
+    {
+      "id": "s7-30",
+      "sceneId": "s7",
+      "text": "Basil’s final visit was not an accident."
+    },
+    {
+      "id": "s7-31",
+      "sceneId": "s7",
+      "text": "Basil had heard enough."
+    },
+    {
+      "id": "s7-32",
+      "sceneId": "s7",
+      "text": "In the attic, confronted with the painted ledger of Dorian’s life, Basil wept for the boy he had immortalized and for his own complicity in that immortality."
+    },
+    {
+      "id": "s7-33",
+      "sceneId": "s7",
+      "text": "Dorian’s murder was not rage alone; it was the panic of a man whose secret had grown a body."
+    },
+    {
+      "id": "s7-34",
+      "sceneId": "s7",
+      "text": "When Alan Campbell’s science erased Basil from the floor, Dorian wiped the knife and went to a concert at the Conservatory as if culture could bleach the afternoon."
+    },
+    {
+      "id": "s7-35",
+      "sceneId": "s7",
+      "text": "James Vane’s pursuit threaded the docks with a simpler morality: a sister dead, a gentleman to blame."
+    },
+    {
+      "id": "s7-36",
+      "sceneId": "s7",
+      "text": "Dorian’s unchanged face nearly saved him until folklore—Shanghai’s gossip in an older register—named the devil who did not age."
+    },
+    {
+      "id": "s7-37",
+      "sceneId": "s7",
+      "text": "James’s death in the upriver accident felt to Dorian like luck, and luck felt like permission."
+    },
+    {
+      "id": "s7-38",
+      "sceneId": "s7",
+      "text": "He tried kindness as a costume."
+    },
+    {
+      "id": "s7-39",
+      "sceneId": "s7",
+      "text": "The portrait sneered through varnish."
+    },
+    {
+      "id": "s7-40",
+      "sceneId": "s7",
+      "text": "On the last night he dressed for the gallery as if beauty were still an argument."
+    },
+    {
+      "id": "s7-41",
+      "sceneId": "s7",
+      "text": "Alone with the canvas he understood that the only remaining honesty was destruction."
+    },
+    {
+      "id": "s7-42",
+      "sceneId": "s7",
+      "text": "The knife entered paint and found flesh."
+    },
+    {
+      "id": "s7-43",
+      "sceneId": "s7",
+      "text": "Morning’s servants found the accounting complete: youth restored to oil, age and crime returned to the man who had borrowed against his soul."
+    },
+    {
+      "id": "s7-44",
+      "sceneId": "s7",
+      "text": "Lord Henry would dine out on the irony for a season."
+    },
+    {
+      "id": "s7-45",
+      "sceneId": "s7",
+      "text": "The Huangpu would take no notice."
+    },
+    {
+      "id": "s7-46",
+      "sceneId": "s7",
+      "text": "In a city that sold faces as currency, Dorian Gray had spent every coin and discovered, too late, that the portrait had been the bank."
+    },
+    {
+      "id": "s7-47",
+      "sceneId": "s7",
+      "text": "He had not always been monstrous."
+    },
+    {
+      "id": "s7-48",
+      "sceneId": "s7",
+      "text": "In the first months he still visited Basil’s studio, still sat for small studies, still let Basil believe influence could be rationed."
+    },
+    {
+      "id": "s7-49",
+      "sceneId": "s7",
+      "text": "Lord Henry’s friendship was a climate: witty, dry, impossible to leave without noticing how damp ordinary air had become."
+    },
+    {
+      "id": "s7-50",
+      "sceneId": "s7",
+      "text": "At a charity ball in a Bund bank’s marble hall Dorian danced with a diplomat’s daughter and forgot her name before the car arrived."
+    },
+    {
+      "id": "s7-51",
+      "sceneId": "s7",
+      "text": "He told himself forgetting was elegance."
+    },
+    {
+      "id": "s7-52",
+      "sceneId": "s7",
+      "text": "Sibyl’s dressing room after the ruined performance smelled of sweat and crushed flowers."
+    },
+    {
+      "id": "s7-53",
+      "sceneId": "s7",
+      "text": "She reached for him; he stepped back as if from a stain."
+    },
+    {
+      "id": "s7-54",
+      "sceneId": "s7",
+      "text": "Later he would tell Lord Henry he had been defending art."
+    },
+    {
+      "id": "s7-55",
+      "sceneId": "s7",
+      "text": "Lord Henry would reply that art needed no defense from love—only from sincerity."
+    },
+    {
+      "id": "s7-56",
+      "sceneId": "s7",
+      "text": "The line pleased Dorian enough to live inside for years."
+    },
+    {
+      "id": "s7-57",
+      "sceneId": "s7",
+      "text": "When he first locked the attic he placed a mirror opposite the covered portrait and practiced smiling until the smile looked inherited rather than learned."
+    },
+    {
+      "id": "s7-58",
+      "sceneId": "s7",
+      "text": "Servants were told the room held family papers."
+    },
+    {
+      "id": "s7-59",
+      "sceneId": "s7",
+      "text": "Once a cleaner found the door ajar and glimpsed a corner of canvas; Dorian dismissed her with a month’s wages and a reference that ensured silence."
+    },
+    {
+      "id": "s7-60",
+      "sceneId": "s7",
+      "text": "Shanghai’s service economy understood purchase."
+    },
+    {
+      "id": "s7-61",
+      "sceneId": "s7",
+      "text": "Corruption preferred company."
+    },
+    {
+      "id": "s7-62",
+      "sceneId": "s7",
+      "text": "He collected young men who wanted introductions and taught them Lord Henry’s doctrines until they could wound themselves without help."
+    },
+    {
+      "id": "s7-63",
+      "sceneId": "s7",
+      "text": "A painter from Hangzhou hanged himself after a season in Dorian’s circle; the portrait gained a tightness around the eyes."
+    },
+    {
+      "id": "s7-64",
+      "sceneId": "s7",
+      "text": "Dorian sent flowers to the funeral and was photographed looking grave."
+    },
+    {
+      "id": "s7-65",
+      "sceneId": "s7",
+      "text": "Basil’s murder left a smell the chemicals could not entirely erase."
+    },
+    {
+      "id": "s7-66",
+      "sceneId": "s7",
+      "text": "Dorian burned Basil’s coat and watch in a stove and kept a sketch Basil had made of him at nineteen—proof, he told himself, of affection."
+    },
+    {
+      "id": "s7-67",
+      "sceneId": "s7",
+      "text": "He slept poorly."
+    },
+    {
+      "id": "s7-68",
+      "sceneId": "s7",
+      "text": "Lord Henry prescribed a week in Hangzhou’s tea hills; Dorian went and returned no better, only better dressed."
+    },
+    {
+      "id": "s7-69",
+      "sceneId": "s7",
+      "text": "James Vane’s face in the Custom House crowd had been Sibyl’s face made hard by labor."
+    },
+    {
+      "id": "s7-70",
+      "sceneId": "s7",
+      "text": "For an instant Dorian felt something like fear of justice."
+    },
+    {
+      "id": "s7-71",
+      "sceneId": "s7",
+      "text": "Then he remembered his own reflection and walked on."
+    },
+    {
+      "id": "s7-72",
+      "sceneId": "s7",
+      "text": "When news of James’s death reached him at a dinner, he excused himself to the terrace and watched container lights crawl the river like a rosary for the unrepentant."
+    },
+    {
+      "id": "s7-73",
+      "sceneId": "s7",
+      "text": "The knife’s last work was almost tender."
+    },
+    {
+      "id": "s7-74",
+      "sceneId": "s7",
+      "text": "He apologized to the portrait as one apologizes to a creditor."
+    },
+    {
+      "id": "s7-75",
+      "sceneId": "s7",
+      "text": "The scream that followed was his own youth ending."
+    },
+    {
+      "id": "s7-76",
+      "sceneId": "s7",
+      "text": "Identification by rings was bureaucratic mercy: beauty had finally become evidence."
+    },
+    {
+      "id": "s7-77",
+      "sceneId": "s7",
+      "text": "In the years after, guides on the Bund sometimes pointed at Basil’s old studio building and told a shortened legend."
+    },
+    {
+      "id": "s7-78",
+      "sceneId": "s7",
+      "text": "Tourists photographed the facade."
+    },
+    {
+      "id": "s7-79",
+      "sceneId": "s7",
+      "text": "None of them looked for a soul in the paint."
+    },
+    {
+      "id": "s7-80",
+      "sceneId": "s7",
+      "text": "That was the city’s final joke, and Wilde’s: the picture had always been the only honest face in the room."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Between Sibyl’s death and Basil’s murder the calendar did not dramatize itself."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "It simply accrued."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "Dorian learned the difference between scandal that entertained and scandal that exiled."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "He kept to the first by remaining beautiful and solvent."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "Invitations continued."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "Mothers who warned daughters still seated him near the orchids."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "He bought a second apartment facing the river for no reason except that the view made loneliness look curated."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "He filled it with lacquer, French novels, and a piano he did not play."
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "Friends came to be seen leaving."
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "Lord Henry came to talk."
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "Basil came less and less, then went abroad with a commission and a hope that distance might restore the boy in the portrait of his memory."
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "Dorian’s cruelty refined."
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "He did not shout; he withdrew heat."
+    },
+    {
+      "id": "s8-13",
+      "sceneId": "s8",
+      "text": "A young curator who loved him waited through a winter of almosts and then left for Beijing with a letter Dorian never answered."
+    },
+    {
+      "id": "s8-14",
+      "sceneId": "s8",
+      "text": "The portrait’s left cheek hollowed as if appetite had chewed from inside."
+    },
+    {
+      "id": "s8-15",
+      "sceneId": "s8",
+      "text": "Dorian touched his own face in the bathroom glass and found it smooth as a salesman’s promise."
+    },
+    {
+      "id": "s8-16",
+      "sceneId": "s8",
+      "text": "Opium in Shanghai in those years wore good lighting."
+    },
+    {
+      "id": "s8-17",
+      "sceneId": "s8",
+      "text": "In a house behind a pharmacy near the old town, Dorian lay on clean mats and watched smoke invent architectures."
+    },
+    {
+      "id": "s8-18",
+      "sceneId": "s8",
+      "text": "He woke with ideas for parties and debts he did not owe."
+    },
+    {
+      "id": "s8-19",
+      "sceneId": "s8",
+      "text": "Once he dreamed Sibyl alive and speaking in perfect verse; he woke angry at the dream for being better than his memory."
+    },
+    {
+      "id": "s8-20",
+      "sceneId": "s8",
+      "text": "Lord Henry: You are becoming a myth about yourself."
+    },
+    {
+      "id": "s8-21",
+      "sceneId": "s8",
+      "text": "Myths are so difficult to divorce."
+    },
+    {
+      "id": "s8-22",
+      "sceneId": "s8",
+      "text": "Dorian: Then I shall stay married to mine."
+    },
+    {
+      "id": "s8-23",
+      "sceneId": "s8",
+      "text": "They laughed."
+    },
+    {
+      "id": "s8-24",
+      "sceneId": "s8",
+      "text": "Under the laugh Dorian heard the attic door."
+    },
+    {
+      "id": "s8-25",
+      "sceneId": "s8",
+      "text": "Alan Campbell had loved Dorian once in the careful way of men who fear newspapers."
+    },
+    {
+      "id": "s8-26",
+      "sceneId": "s8",
+      "text": "When Dorian summoned him after the murder, that old love became a lever."
+    },
+    {
+      "id": "s8-27",
+      "sceneId": "s8",
+      "text": "Campbell’s hands shook over the chemicals; Dorian’s did not."
+    },
+    {
+      "id": "s8-28",
+      "sceneId": "s8",
+      "text": "Afterward Campbell said he would never speak to him again."
+    },
+    {
+      "id": "s8-29",
+      "sceneId": "s8",
+      "text": "Dorian agreed as if granting a favor."
+    },
+    {
+      "id": "s8-30",
+      "sceneId": "s8",
+      "text": "Weeks later the shot in Campbell’s laboratory was reported as accident."
+    },
+    {
+      "id": "s8-31",
+      "sceneId": "s8",
+      "text": "Dorian sent no flowers."
+    },
+    {
+      "id": "s8-32",
+      "sceneId": "s8",
+      "text": "The gallery week that ended him had been meant as rehabilitation theater: Dorian Gray, still young, still collecting, still proof that Shanghai rewarded surface."
+    },
+    {
+      "id": "s8-33",
+      "sceneId": "s8",
+      "text": "He had planned to hang lesser works and stand among them like a living caption."
+    },
+    {
+      "id": "s8-34",
+      "sceneId": "s8",
+      "text": "Instead he climbed to the attic with the knife and closed the account."
+    },
+    {
+      "id": "s8-35",
+      "sceneId": "s8",
+      "text": "Servants testified to a cry."
+    },
+    {
+      "id": "s8-36",
+      "sceneId": "s8",
+      "text": "Police noted the aged corpse and the young painting and preferred not to write theology into the report."
+    },
+    {
+      "id": "s8-37",
+      "sceneId": "s8",
+      "text": "Lord Henry, informed at the Club, ordered another coffee and said that nature had a vulgar taste for endings."
+    },
+    {
+      "id": "s8-38",
+      "sceneId": "s8",
+      "text": "What Shanghai kept was simpler: a story about a face that would not pay its debts until the last morning, when the portrait—Basil’s love made durable—gave the debt back with interest."
+    },
+    {
+      "id": "s8-39",
+      "sceneId": "s8",
+      "text": "After the portrait first changed, Dorian tested the bargain like a scientist with a dangerous sample."
+    },
+    {
+      "id": "s8-40",
+      "sceneId": "s8",
+      "text": "He said a cutting thing to a waiter and checked the canvas: a minute hardness at the lip."
+    },
+    {
+      "id": "s8-41",
+      "sceneId": "s8",
+      "text": "He stayed out until the river light turned commercial and returned to find a shadow of fatigue painted under one eye while his own skin slept unmarked."
+    },
+    {
+      "id": "s8-42",
+      "sceneId": "s8",
+      "text": "The experiment thrilled him more than any lover."
+    },
+    {
+      "id": "s8-43",
+      "sceneId": "s8",
+      "text": "He began to keep the attic key on a chain against his chest."
+    },
+    {
+      "id": "s8-44",
+      "sceneId": "s8",
+      "text": "On nights of excess he visited the painting as penitents visit relics, except his pilgrimage was triumph."
+    },
+    {
+      "id": "s8-45",
+      "sceneId": "s8",
+      "text": "Look, he told the canvas, look what you carry for me."
+    },
+    {
+      "id": "s8-46",
+      "sceneId": "s8",
+      "text": "The canvas looked back with an intelligence Basil had never intended."
+    },
+    {
+      "id": "s8-47",
+      "sceneId": "s8",
+      "text": "Basil’s letters from abroad described light in other cities and asked after Dorian’s health with the anxiety of a man who senses a door closing."
+    },
+    {
+      "id": "s8-48",
+      "sceneId": "s8",
+      "text": "Dorian replied with photographs of himself at openings—proof of wellness, proof of stasis."
+    },
+    {
+      "id": "s8-49",
+      "sceneId": "s8",
+      "text": "Basil wrote that the photographs unsettled him."
+    },
+    {
+      "id": "s8-50",
+      "sceneId": "s8",
+      "text": "Dorian did not ask why."
+    },
+    {
+      "id": "s8-51",
+      "sceneId": "s8",
+      "text": "Sibyl’s mother once waited outside his building."
+    },
+    {
+      "id": "s8-52",
+      "sceneId": "s8",
+      "text": "He had her turned away with money."
+    },
+    {
+      "id": "s8-53",
+      "sceneId": "s8",
+      "text": "The portrait’s hands yellowed as if nicotine and guilt shared a pigment."
+    },
+    {
+      "id": "s8-54",
+      "sceneId": "s8",
+      "text": "He scrubbed his own hands until the soap burned and still felt clean."
+    },
+    {
+      "id": "s8-55",
+      "sceneId": "s8",
+      "text": "In the final year before the murder he grew bored of vice that required other people."
+    },
+    {
+      "id": "s8-56",
+      "sceneId": "s8",
+      "text": "He walked alone through the Concession at hours when delivery vans owned the streets."
+    },
+    {
+      "id": "s8-57",
+      "sceneId": "s8",
+      "text": "He stood on the Bund and watched fog erase towers and return them."
+    },
+    {
+      "id": "s8-58",
+      "sceneId": "s8",
+      "text": "He wondered whether Lord Henry had ever wished a portrait to age for him, and decided Henry’s genius was to need no magic—only sentences."
+    },
+    {
+      "id": "s8-59",
+      "sceneId": "s8",
+      "text": "When Basil returned and climbed those attic stairs, Dorian felt almost grateful."
+    },
+    {
+      "id": "s8-60",
+      "sceneId": "s8",
+      "text": "Confession would be forced; murder would be cleaner than speech."
+    },
+    {
+      "id": "s8-61",
+      "sceneId": "s8",
+      "text": "The knife made the choice for both of them."
+    },
+    {
+      "id": "s8-62",
+      "sceneId": "s8",
+      "text": "Years later a dealer claimed to have found Basil Hallward’s last portrait of Dorian Gray in a storage unit near Waigaoqiao."
+    },
+    {
+      "id": "s8-63",
+      "sceneId": "s8",
+      "text": "Experts disputed provenance."
+    },
+    {
+      "id": "s8-64",
+      "sceneId": "s8",
+      "text": "Collectors bid anyway."
+    },
+    {
+      "id": "s8-65",
+      "sceneId": "s8",
+      "text": "The winning buyer hung it in a private room and never invited guests to see it."
+    },
+    {
+      "id": "s8-66",
+      "sceneId": "s8",
+      "text": "Some bargains, even secondhand, prefer the dark."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "The night Sibyl died, Dorian did not go to the police station or the morgue."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "He went home and uncovered the portrait by lamplight."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "The change was small and absolute: the mouth had learned contempt."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "He touched the painted lip and found only oil."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "His own mouth in the dressing mirror remained soft, almost kind."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "He poured wine and drank until the river’s noise became abstract."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "Lord Henry arrived the next afternoon with newspapers and a theory."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "Lord Henry: The poor girl has solved her reviews permanently."
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "You look astonishingly well for a widower of twenty-four hours."
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "Dorian: We were not married."
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "Lord Henry: Precisely."
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "Tragedy without paperwork is so much cleaner."
+    },
+    {
+      "id": "s9-12",
+      "sceneId": "s9",
+      "text": "Basil came later, gray with sympathy, and found Dorian arranging flowers as if for a photograph."
+    },
+    {
+      "id": "s9-13",
+      "sceneId": "s9",
+      "text": "Basil spoke of guilt; Dorian spoke of art’s right to discard failed instruments."
+    },
+    {
+      "id": "s9-14",
+      "sceneId": "s9",
+      "text": "Basil left unconvinced and newly afraid."
+    },
+    {
+      "id": "s9-15",
+      "sceneId": "s9",
+      "text": "In the weeks that followed, Dorian visited the attic daily."
+    },
+    {
+      "id": "s9-16",
+      "sceneId": "s9",
+      "text": "Each minor sin—a lie to a creditor, a seduction performed as sport, a servant dismissed for seeing too much—registered on the canvas with bureaucratic patience."
+    },
+    {
+      "id": "s9-17",
+      "sceneId": "s9",
+      "text": "He began to feel affection for the painting the way gamblers feel affection for the table that ruins them."
+    },
+    {
+      "id": "s9-18",
+      "sceneId": "s9",
+      "text": "He returned once to Sibyl’s theater."
+    },
+    {
+      "id": "s9-19",
+      "sceneId": "s9",
+      "text": "A different Juliet spoke the balcony lines without danger."
+    },
+    {
+      "id": "s9-20",
+      "sceneId": "s9",
+      "text": "Dorian sat in the dark and understood that his love had been for a temperature, not a person."
+    },
+    {
+      "id": "s9-21",
+      "sceneId": "s9",
+      "text": "The portrait, that night, took a yellowish tone around the eyes, as if jaundice and knowledge shared a palette."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Lord Henry’s house off Wukang Road held books, cigarettes, and young people who wanted to be ruined stylishly."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "Dorian became the illustration of Henry’s talk: proof that beauty could outrun consequence."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "Women left marriages for a season of his attention and returned to their husbands with nothing actionable."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "Men imitated his clothes and his cruelty and called it modernity."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "Basil, painting less, wrote an essay on portraiture that never named Dorian and somehow named only him."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "Dealers asked Basil for another Gray."
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "Basil refused."
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "Dorian sent champagne."
+    },
+    {
+      "id": "s10-8",
+      "sceneId": "s10",
+      "text": "Basil did not drink it."
+    },
+    {
+      "id": "s10-9",
+      "sceneId": "s10",
+      "text": "One autumn Dorian traveled to Suzhou with a married collector and returned alone."
+    },
+    {
+      "id": "s10-10",
+      "sceneId": "s10",
+      "text": "Gossip preferred not to specify."
+    },
+    {
+      "id": "s10-11",
+      "sceneId": "s10",
+      "text": "The portrait’s hairline receded a fraction while Dorian’s remained a brochure for youth."
+    },
+    {
+      "id": "s10-12",
+      "sceneId": "s10",
+      "text": "He laughed in the attic until laughter sounded like someone else."
+    },
+    {
+      "id": "s10-13",
+      "sceneId": "s10",
+      "text": "He kept Sibyl’s bracelet in a drawer and never wore it."
+    },
+    {
+      "id": "s10-14",
+      "sceneId": "s10",
+      "text": "Once, drunk, he nearly threw it in the Huangpu; instead he locked it beside the attic key."
+    },
+    {
+      "id": "s10-15",
+      "sceneId": "s10",
+      "text": "Relics, he decided, were for people who still believed in shrines."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "When Basil came back from Europe he looked older in the honest way."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Dorian received him in the riverside flat among orchids and denied every rumor with a smile that could have sold insurance."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "Basil: There is a story about a boy in Hankou."
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "There is a story about a woman in the Concession."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "There is a story about you that does not match your face."
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "Dorian: Faces are poor evidence."
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "Basil: Then show me your soul."
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "The climb to the attic was short."
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "The unveiling was not."
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "Basil saw the painted ledger—vice, age, blood-hint, appetite—and fell to his knees as if beauty’s opposite required worship too."
+    },
+    {
+      "id": "s11-10",
+      "sceneId": "s11",
+      "text": "Basil: What have you done with my Dorian?"
+    },
+    {
+      "id": "s11-11",
+      "sceneId": "s11",
+      "text": "Dorian: I kept him."
+    },
+    {
+      "id": "s11-12",
+      "sceneId": "s11",
+      "text": "You only painted him."
+    },
+    {
+      "id": "s11-13",
+      "sceneId": "s11",
+      "text": "The knife was where it always was."
+    },
+    {
+      "id": "s11-14",
+      "sceneId": "s11",
+      "text": "Dorian used it without speech after Basil began to pray."
+    },
+    {
+      "id": "s11-15",
+      "sceneId": "s11",
+      "text": "Prayer felt like accusation."
+    },
+    {
+      "id": "s11-16",
+      "sceneId": "s11",
+      "text": "When it was finished, Dorian wiped his hands on Basil’s scarf and checked the portrait: fresh scarlet on the painted fingers."
+    },
+    {
+      "id": "s11-17",
+      "sceneId": "s11",
+      "text": "He nodded as if at a correct receipt."
+    },
+    {
+      "id": "s11-18",
+      "sceneId": "s11",
+      "text": "Alan Campbell arrived before midnight."
+    },
+    {
+      "id": "s11-19",
+      "sceneId": "s11",
+      "text": "Dorian did not threaten with violence; he threatened with memory—letters, photographs, a summer Campbell could not survive in daylight."
+    },
+    {
+      "id": "s11-20",
+      "sceneId": "s11",
+      "text": "Campbell worked until the body was chemistry."
+    },
+    {
+      "id": "s11-21",
+      "sceneId": "s11",
+      "text": "At the door he said Dorian had destroyed two men in one night."
+    },
+    {
+      "id": "s11-22",
+      "sceneId": "s11",
+      "text": "Dorian corrected him: one man and one inconvenience."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "James Vane’s search gave the plot a simpler grammar."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "He asked along the docks for a gentleman called Prince Charming."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "He found enough to wait outside theaters and clubs."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "The afternoon he seized Dorian near the Custom House, Dorian’s unchanged face made James release him—until an old woman from Sibyl’s neighborhood spat the truth: that face had worn years it refused to show."
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "James’s eyes changed."
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "Dorian fled into traffic and privilege."
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "Fear made Dorian almost good."
+    },
+    {
+      "id": "s12-7",
+      "sceneId": "s12",
+      "text": "He funded a clinic."
+    },
+    {
+      "id": "s12-8",
+      "sceneId": "s12",
+      "text": "He wrote an apology he did not send."
+    },
+    {
+      "id": "s12-9",
+      "sceneId": "s12",
+      "text": "He refused an invitation that would have required someone else’s marriage to bend."
+    },
+    {
+      "id": "s12-10",
+      "sceneId": "s12",
+      "text": "Then he checked the portrait and found hypocrisy uglier than crime."
+    },
+    {
+      "id": "s12-11",
+      "sceneId": "s12",
+      "text": "Goodness as costume, the painting suggested, was the worst pigment of all."
+    },
+    {
+      "id": "s12-12",
+      "sceneId": "s12",
+      "text": "The upriver shoot came as Lord Henry’s idea of fresh air."
+    },
+    {
+      "id": "s12-13",
+      "sceneId": "s12",
+      "text": "James Vane appeared in the brake; a nervous gun discharged; James died in wet reeds."
+    },
+    {
+      "id": "s12-14",
+      "sceneId": "s12",
+      "text": "Dorian’s relief disgusted even him."
+    },
+    {
+      "id": "s12-15",
+      "sceneId": "s12",
+      "text": "He returned to Shanghai determined to change in earnest and discovered he no longer knew what earnest meant."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "The night before the opening he stood long before the canvas."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "Basil’s murdered attention still lived in the brushwork beneath the corruption."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "Dorian spoke aloud."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "Dorian: If I destroy you, am I free—or only finished?"
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "The portrait offered no epigram."
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "That had always been Lord Henry’s job."
+    },
+    {
+      "id": "s13-6",
+      "sceneId": "s13",
+      "text": "Dorian drove the knife in."
+    },
+    {
+      "id": "s13-7",
+      "sceneId": "s13",
+      "text": "Pain found him at last: every deferred year, every outsourced line."
+    },
+    {
+      "id": "s13-8",
+      "sceneId": "s13",
+      "text": "He fell."
+    },
+    {
+      "id": "s13-9",
+      "sceneId": "s13",
+      "text": "Morning’s light—honest, bureaucratic—found an old dead man and a young restored painting."
+    },
+    {
+      "id": "s13-10",
+      "sceneId": "s13",
+      "text": "Lord Henry heard at noon."
+    },
+    {
+      "id": "s13-11",
+      "sceneId": "s13",
+      "text": "He said it was the first time Dorian had been late for his own myth."
+    },
+    {
+      "id": "s13-12",
+      "sceneId": "s13",
+      "text": "Then he asked who would inherit the apartment."
+    },
+    {
+      "id": "s13-13",
+      "sceneId": "s13",
+      "text": "Even elegy, in Shanghai, required an address."
+    },
+    {
+      "id": "s13-14",
+      "sceneId": "s13",
+      "text": "The servants who found the body never liked to tell the story complete."
+    },
+    {
+      "id": "s13-15",
+      "sceneId": "s13",
+      "text": "They mentioned rings."
+    },
+    {
+      "id": "s13-16",
+      "sceneId": "s13",
+      "text": "They mentioned the beautiful picture."
+    },
+    {
+      "id": "s13-17",
+      "sceneId": "s13",
+      "text": "They omitted the smell of a life returned all at once."
+    },
+    {
+      "id": "s13-18",
+      "sceneId": "s13",
+      "text": "Outside, the Bund performed another profitable day."
+    },
+    {
+      "id": "s13-19",
+      "sceneId": "s13",
+      "text": "Inside, Wilde’s accounting closed: the face that would not pay had paid in full, and the art—Basil’s stubborn love—hung clean above the ruin."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "Before Sibyl, before the attic lock, there was only Basil’s studio and Lord Henry’s voice and a young man who mistook attention for destiny."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "Dorian sat for hours while Basil negotiated light against the Bund’s glare."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "Below them, porters shouted; above them, pigeons argued on the ledge."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "Basil talked little when painting."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "Lord Henry talked enough for both."
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Lord Henry: People say they want to be good."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "What they want is to be admired for the effort."
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "Dorian: And what do you want?"
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "Lord Henry: To be quoted accurately."
+    },
+    {
+      "id": "s14-9",
+      "sceneId": "s14",
+      "text": "Basil scowled without looking away from the mouth he was refining."
+    },
+    {
+      "id": "s14-10",
+      "sceneId": "s14",
+      "text": "He loved Dorian with a painter’s panic—afraid that finishing the canvas would finish the feeling."
+    },
+    {
+      "id": "s14-11",
+      "sceneId": "s14",
+      "text": "When the portrait was done, Basil’s hands shook."
+    },
+    {
+      "id": "s14-12",
+      "sceneId": "s14",
+      "text": "Dorian kissed his cheek with theatrical gratitude and looked past him toward Henry for the real verdict."
+    },
+    {
+      "id": "s14-13",
+      "sceneId": "s14",
+      "text": "That evening the three of them walked the Bund’s upper promenade."
+    },
+    {
+      "id": "s14-14",
+      "sceneId": "s14",
+      "text": "Neon had begun its takeover of older signage; cranes stood like unfinished sentences over Pudong."
+    },
+    {
+      "id": "s14-15",
+      "sceneId": "s14",
+      "text": "Dorian felt newly invented."
+    },
+    {
+      "id": "s14-16",
+      "sceneId": "s14",
+      "text": "He told them he would live as if youth were a politics."
+    },
+    {
+      "id": "s14-17",
+      "sceneId": "s14",
+      "text": "Basil asked him to live as if friendship were one."
+    },
+    {
+      "id": "s14-18",
+      "sceneId": "s14",
+      "text": "Lord Henry suggested politics bored him except as metaphor."
+    },
+    {
+      "id": "s14-19",
+      "sceneId": "s14",
+      "text": "At home Dorian hung the portrait and spoke his wish a third time, no longer lightly."
+    },
+    {
+      "id": "s14-20",
+      "sceneId": "s14",
+      "text": "The room seemed to lean in."
+    },
+    {
+      "id": "s14-21",
+      "sceneId": "s14",
+      "text": "He slept."
+    },
+    {
+      "id": "s14-22",
+      "sceneId": "s14",
+      "text": "In the morning his face was the same and the painting—he could have sworn—looked slightly more tired around the eyes, as if it had stayed awake for him."
+    },
+    {
+      "id": "s14-23",
+      "sceneId": "s14",
+      "text": "He spent the next days testing small cruelties: a canceled lunch, a borrowed idea claimed as his, a smile withheld from Basil at a crowded opening."
+    },
+    {
+      "id": "s14-24",
+      "sceneId": "s14",
+      "text": "Each time the canvas took a mark."
+    },
+    {
+      "id": "s14-25",
+      "sceneId": "s14",
+      "text": "Each time the mirror refused."
+    },
+    {
+      "id": "s14-26",
+      "sceneId": "s14",
+      "text": "The bargain was no longer metaphor."
+    },
+    {
+      "id": "s14-27",
+      "sceneId": "s14",
+      "text": "It was infrastructure."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Campbell’s suicide—if suicide was the word the lab preferred—left Dorian with a practical problem: fewer people who could be forced into intimacy with his secrets."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "He became more careful and more reckless at once."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "Careful in correspondence; reckless in appetite."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "He hosted a masked dinner in a French Concession villa where no one used real names and everyone used real bodies."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "At dawn he walked home past lane houses still shut and felt immortal in the stupid way of the uncaught."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "He dreamed of Basil speaking from the floorboards."
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "He woke and opened windows until the river air scrubbed the room."
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "The portrait’s expression had grown sly."
+    },
+    {
+      "id": "s15-8",
+      "sceneId": "s15",
+      "text": "Dorian considered burning it and knew he would not."
+    },
+    {
+      "id": "s15-9",
+      "sceneId": "s15",
+      "text": "Destroying the ledger would not destroy the debt; it would only destroy the proof that someone else was paying."
+    },
+    {
+      "id": "s15-10",
+      "sceneId": "s15",
+      "text": "James Vane’s death should have ended fear."
+    },
+    {
+      "id": "s15-11",
+      "sceneId": "s15",
+      "text": "Instead it taught Dorian that luck was not absolution."
+    },
+    {
+      "id": "s15-12",
+      "sceneId": "s15",
+      "text": "He sat through a charity concert for flood relief and donated conspicuously."
+    },
+    {
+      "id": "s15-13",
+      "sceneId": "s15",
+      "text": "Photographers loved him."
+    },
+    {
+      "id": "s15-14",
+      "sceneId": "s15",
+      "text": "The attic, later, loved him less: the painted face wore a sanctimonious twist that made Dorian physically sick."
+    },
+    {
+      "id": "s15-15",
+      "sceneId": "s15",
+      "text": "He threw a cloth over it and drank until the sickness became abstract again."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "On the last afternoon he visited Basil’s old studio building."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "New tenants made industrial furniture."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "No one remembered the painter."
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "Dorian stood on the stair and smelled, impossibly, turpentine and Basil’s soap."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "He left before nostalgia became confession."
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "Lord Henry texted an invitation to supper."
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "Dorian answered that he would come after the gallery preview."
+    },
+    {
+      "id": "s16-7",
+      "sceneId": "s16",
+      "text": "He did not come."
+    },
+    {
+      "id": "s16-8",
+      "sceneId": "s16",
+      "text": "He went upstairs with the knife and finished the only true autobiography Shanghai would ever have of him—written in oil, paid in flesh."
+    },
+    {
+      "id": "s16-9",
+      "sceneId": "s16",
+      "text": "The police report remained thin."
+    },
+    {
+      "id": "s16-10",
+      "sceneId": "s16",
+      "text": "Beauty confused procedure."
+    },
+    {
+      "id": "s16-11",
+      "sceneId": "s16",
+      "text": "The restored portrait confused it more."
+    },
+    {
+      "id": "s16-12",
+      "sceneId": "s16",
+      "text": "In private, one detective said the old dead man had the young man’s rings and the young man’s rooms and somehow not the young man’s face."
+    },
+    {
+      "id": "s16-13",
+      "sceneId": "s16",
+      "text": "His partner told him to write what could be filed."
+    },
+    {
+      "id": "s16-14",
+      "sceneId": "s16",
+      "text": "Years on, Lord Henry still told the story as an anecdote about wishing too precisely."
+    },
+    {
+      "id": "s16-15",
+      "sceneId": "s16",
+      "text": "He never admitted he had taught the wish its vocabulary."
+    },
+    {
+      "id": "s16-16",
+      "sceneId": "s16",
+      "text": "Basil was remembered by a handful of canvases in storage."
+    },
+    {
+      "id": "s16-17",
+      "sceneId": "s16",
+      "text": "Dorian Gray was remembered as a face that had refused to learn time—until time, with a knife’s help, collected every lesson in a single night above the Huangpu."
+    },
+    {
+      "id": "s16-18",
+      "sceneId": "s16",
+      "text": "Coda — What the city kept"
+    },
+    {
+      "id": "s16-19",
+      "sceneId": "s16",
+      "text": "Shanghai did not moralize."
+    },
+    {
+      "id": "s16-20",
+      "sceneId": "s16",
+      "text": "It filed."
+    },
+    {
+      "id": "s16-21",
+      "sceneId": "s16",
+      "text": "The apartment was sold."
+    },
+    {
+      "id": "s16-22",
+      "sceneId": "s16",
+      "text": "The attic was renovated into a closet for seasonal clothes."
+    },
+    {
+      "id": "s16-23",
+      "sceneId": "s16",
+      "text": "A new tenant complained of a stain that would not leave the floorboards; workmen sanded and sealed until the wood looked innocent."
+    },
+    {
+      "id": "s16-24",
+      "sceneId": "s16",
+      "text": "Innocence, in real estate, is a finish."
+    },
+    {
+      "id": "s16-25",
+      "sceneId": "s16",
+      "text": "Somewhere a private collector still owns Basil Hallward’s portrait of Dorian Gray—or owns a convincing lie about it."
+    },
+    {
+      "id": "s16-26",
+      "sceneId": "s16",
+      "text": "Guests who glimpse it say the boy’s beauty feels like an argument mid-sentence."
+    },
+    {
+      "id": "s16-27",
+      "sceneId": "s16",
+      "text": "They do not know the sentence’s end."
+    },
+    {
+      "id": "s16-28",
+      "sceneId": "s16",
+      "text": "That is as close as the market comes to mercy."
+    },
+    {
+      "id": "s16-29",
+      "sceneId": "s16",
+      "text": "Lord Henry lived long enough to become a quotation without a source."
+    },
+    {
+      "id": "s16-30",
+      "sceneId": "s16",
+      "text": "On slow afternoons he walked the Bund and imagined Dorian beside him, still young, still listening."
+    },
+    {
+      "id": "s16-31",
+      "sceneId": "s16",
+      "text": "The fantasy was Henry’s last vanity: that influence could outlive the influenced."
+    },
+    {
+      "id": "s16-32",
+      "sceneId": "s16",
+      "text": "In truth the portrait had been the only student who took perfect notes."
+    },
+    {
+      "id": "s16-33",
+      "sceneId": "s16",
+      "text": "As for Dorian—his name surfaced in club stories and vanished."
+    },
+    {
+      "id": "s16-34",
+      "sceneId": "s16",
+      "text": "A few aging socialites claimed they had danced with him and that his hand had been cold."
+    },
+    {
+      "id": "s16-35",
+      "sceneId": "s16",
+      "text": "Others insisted he had been kinder than rumor."
+    },
+    {
+      "id": "s16-36",
+      "sceneId": "s16",
+      "text": "Kindness and coldness could both be true in a life that outsourced its reflection."
+    },
+    {
+      "id": "s16-37",
+      "sceneId": "s16",
+      "text": "The knife had simply merged the books."
+    },
+    {
+      "id": "s16-38",
+      "sceneId": "s16",
+      "text": "If there is a moral, Wilde already wrote it and Shanghai only translated it into river light and apartment keys: the soul will hang somewhere."
+    },
+    {
+      "id": "s16-39",
+      "sceneId": "s16",
+      "text": "Choose the frame carefully."
+    },
+    {
+      "id": "s16-40",
+      "sceneId": "s16",
+      "text": "Pay attention when the paint begins to look more honest than your face."
+    },
+    {
+      "id": "s16-41",
+      "sceneId": "s16",
+      "text": "And when you reach for a weapon against your own ledger, understand you are not ending a picture."
+    },
+    {
+      "id": "s16-42",
+      "sceneId": "s16",
+      "text": "You are calling due every hour you borrowed against a beauty that was never free."
+    },
+    {
+      "id": "s16-43",
+      "sceneId": "s16",
+      "text": "One more inventory, for the record: Dorian’s uncle’s allowance had funded the first years; later Dorian’s own investments in river shipping and a quiet stake in a Concession gallery funded the rest."
+    },
+    {
+      "id": "s16-44",
+      "sceneId": "s16",
+      "text": "Money made the bargain comfortable."
+    },
+    {
+      "id": "s16-45",
+      "sceneId": "s16",
+      "text": "Without money the portrait might have been found earlier—poverty is a detective."
+    },
+    {
+      "id": "s16-46",
+      "sceneId": "s16",
+      "text": "Wealth drew curtains."
+    },
+    {
+      "id": "s16-47",
+      "sceneId": "s16",
+      "text": "He once almost confessed to a priest in a church near Xintiandi, more for the architecture than the sacrament."
+    },
+    {
+      "id": "s16-48",
+      "sceneId": "s16",
+      "text": "He stood in the aisle, rehearsed a sentence about a painting, and left."
+    },
+    {
+      "id": "s16-49",
+      "sceneId": "s16",
+      "text": "Outside, tourists photographed brick."
+    },
+    {
+      "id": "s16-50",
+      "sceneId": "s16",
+      "text": "He photographed nothing."
+    },
+    {
+      "id": "s16-51",
+      "sceneId": "s16",
+      "text": "His life was already being painted elsewhere."
+    },
+    {
+      "id": "s16-52",
+      "sceneId": "s16",
+      "text": "On the morning after his death, a cleaner found Sibyl’s bracelet in a drawer and slipped it into her pocket before the police sealed the rooms."
+    },
+    {
+      "id": "s16-53",
+      "sceneId": "s16",
+      "text": "She sold it months later in a market without knowing its story."
+    },
+    {
+      "id": "s16-54",
+      "sceneId": "s16",
+      "text": "The bracelet outlived every principal."
+    },
+    {
+      "id": "s16-55",
+      "sceneId": "s16",
+      "text": "Objects are patient that way."
+    },
+    {
+      "id": "s16-56",
+      "sceneId": "s16",
+      "text": "Stories are less so—unless someone writes them down and refuses, this time, to rename the people who lived them."
+    },
+    {
+      "id": "s16-57",
+      "sceneId": "s16",
+      "text": "Basil’s sister, years after, petitioned quietly for news of her brother’s last days in Shanghai."
+    },
+    {
+      "id": "s16-58",
+      "sceneId": "s16",
+      "text": "Officials offered shrugs."
+    },
+    {
+      "id": "s16-59",
+      "sceneId": "s16",
+      "text": "Lord Henry offered lunch and anecdotes that made Basil sound like a charming footnote to Dorian’s legend."
+    },
+    {
+      "id": "s16-60",
+      "sceneId": "s16",
+      "text": "She left the lunch untouched and walked the Bund alone, looking up at windows that did not look back."
+    },
+    {
+      "id": "s16-61",
+      "sceneId": "s16",
+      "text": "She did not find the portrait."
+    },
+    {
+      "id": "s16-62",
+      "sceneId": "s16",
+      "text": "She found only the city’s gift for absorbing unfinished grief into commerce."
+    },
+    {
+      "id": "s16-63",
+      "sceneId": "s16",
+      "text": "And so the recast ends where Wilde ended: not with a sermon but with a recognition scene."
+    },
+    {
+      "id": "s16-64",
+      "sceneId": "s16",
+      "text": "Youth on the wall."
+    },
+    {
+      "id": "s16-65",
+      "sceneId": "s16",
+      "text": "Age on the floor."
+    },
+    {
+      "id": "s16-66",
+      "sceneId": "s16",
+      "text": "The knife between them like a signature."
+    },
+    {
+      "id": "s16-67",
+      "sceneId": "s16",
+      "text": "Call it magic if you need a genre."
+    },
+    {
+      "id": "s16-68",
+      "sceneId": "s16",
+      "text": "Call it conscience if you need a moral."
+    },
+    {
+      "id": "s16-69",
+      "sceneId": "s16",
+      "text": "Shanghai, glamorous and exacting in 2026’s hard light, simply calls it what happened—and keeps the ferries running while the story finds its next listener."
+    },
+    {
+      "id": "s16-70",
+      "sceneId": "s16",
+      "text": "Dorian Gray’s name, when it surfaces now, surfaces with Basil Hallward’s and Lord Henry Wotton’s and Sibyl Vane’s—together, as they must."
+    },
+    {
+      "id": "s16-71",
+      "sceneId": "s16",
+      "text": "The portrait bargain only makes sense if the painter, the tempter, the actress, and the beautiful boy keep their own names in the city’s mouth."
+    }
+  ]
+}
