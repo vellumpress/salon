@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
-import { NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
+import { ADAPTED_BY_SALON_IDS, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { RITUAL_LANES } from "./rituals.ts";
 import { SHELF, shelfWork } from "./shelf.ts";
 import { REGION_SHAPES } from "./region-shapes.ts";
@@ -21,20 +21,20 @@ test("named settings keep reader-friendly labels and real regions", () => {
     passing: { label: "Harlem", region: "us" },
     naomi: { label: "Tokyo", region: "jp" },
     dalloway: { label: "London", region: "gb" },
-    "miss-brill-adapted": { label: "New York", region: "us" },
+    "miss-brill-adapted": { label: "Menton / French Riviera", region: "fr" },
     "prefer-not": { label: "New York", region: "us" },
-    "late-season": { label: "Cape May / New York", region: "us" },
+    "late-season": { label: "Yalta / Moscow", region: "ru" },
     "between-the-drop-and-the-water": {
-      label: "Hudson River, upstate New York",
+      label: "Hudson River, New York",
       region: "us",
     },
-    "he-woke-changed": { label: "Newark, New Jersey", region: "us" },
+    "he-woke-changed": { label: "Prague", region: "cz" },
     "the-pattern": { label: "Hudson, New York", region: "us" },
-    "a-coat-worthy-of-respect": { label: "Brooklyn, New York", region: "us" },
-    "what-she-borrowed": { label: "Astoria / Midtown, New York", region: "us" },
-    "it-was-not-nervousness": { label: "Queens, New York", region: "us" },
-    "during-carnival": { label: "New Orleans", region: "us-south" },
-    "what-we-sold": { label: "Chicago, Illinois", region: "us" },
+    "a-coat-worthy-of-respect": { label: "St. Petersburg", region: "ru" },
+    "what-she-borrowed": { label: "Paris", region: "fr" },
+    "it-was-not-nervousness": { label: "East London", region: "gb" },
+    "during-carnival": { label: "Venice", region: "it" },
+    "what-we-sold": { label: "London", region: "gb" },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = shelfWork(id);
@@ -65,6 +65,22 @@ test("Featured, Next, and ritual-lane works all resolve a place with a silhouett
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("high-wind-jamaica"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("noli-me-tangere"));
   assert.ok(RITUAL_LANES.some((lane) => lane.workIds.includes("silhouettes")));
+});
+
+test("Adapted by Salon keeps exactly three America-set remakes", () => {
+  const america = ADAPTED_BY_SALON_IDS.filter((id) => {
+    const work = shelfWork(id);
+    assert.ok(work, id);
+    const place = placeFor(work!);
+    assert.ok(place, id);
+    return place!.region === "us" || place!.region === "us-south";
+  });
+  assert.deepEqual(
+    america,
+    ["prefer-not", "between-the-drop-and-the-water", "the-pattern"],
+  );
+  assert.equal(ADAPTED_BY_SALON_IDS.length, 11);
+  assert.equal(america.length, 3);
 });
 
 test("unknown geography is omitted instead of inventing a city", () => {
