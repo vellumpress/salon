@@ -34,6 +34,10 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Demian and Death Comes for the Archbishop are ritual Next sits only —
  * not the locked recommend list, not For you. The Getting of Wisdom is a
  * Rituals waking sit only — not locked recommend, not For you.
+ * Bliss, Dubliners, Gitanjali, and Martin Birck’s Youth are ritual Next
+ * sits only — not locked recommend, not For you. A Hundred and Seventy
+ * Chinese Poems is a Rituals before-sleep sit only — not locked recommend,
+ * not For you.
  * The Poison Tree is Later (Bengal / unwind) — not Next, not locked recommend.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own

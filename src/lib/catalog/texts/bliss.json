@@ -1,0 +1,1884 @@
+{
+  "id": "bliss",
+  "title": "Bliss",
+  "author": "Katherine Mansfield",
+  "year": "1920",
+  "note": "Desire floor lands hard; the open ends on the radiant mirror. Keep the dinner-party turn in the full story — that is the knife, not homework to soft-cut.\n\nOpen on title story Bliss only — never Prelude.\n\nBliss (Mansfield; 1920; PG 44385). This local bind is the title story — the dinner-party turn stays in. Never Prelude.",
+  "minutes": 45,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Radiant mirror",
+      "place": "one sitting",
+      "reentry": "Although Bertha Young was thirty she still had moments like this when she wanted to run instead of walk, to take dancing steps on and off the pavement, to bowl a hoop, to throw something up in the air and catch it again, or to stand still and laugh at—nothing—at nothing, simply.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Radiant mirror · 2",
+      "place": "later, 2",
+      "reentry": "And she seized her bag and coat and ran upstairs to the nursery.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Radiant mirror · 3",
+      "place": "later, 3",
+      "reentry": "Look here.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Radiant mirror · 4",
+      "place": "later, 4",
+      "reentry": "The sight of them, so intent and so quick, gave Bertha a curious shiver.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Radiant mirror · 5",
+      "place": "later, 5",
+      "reentry": "And her amber ear-rings; they were like little dangling nuts.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "Radiant mirror · 6",
+      "place": "later, 6",
+      "reentry": "Oh, how she appreciated it in him.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "Radiant mirror · 7",
+      "place": "later, 7",
+      "reentry": "Not half a bad idea.”",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Radiant mirror · 8",
+      "place": "later, 8",
+      "reentry": "She crossed the room, pulled the curtains apart, and opened those long windows.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Radiant mirror · 9",
+      "place": "later, 9",
+      "reentry": "The house will be quiet—quiet.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "Radiant mirror · 10",
+      "place": "later, 10",
+      "reentry": "Miss Fulton moved towards the hall and Bertha was following when Harry almost pushed past.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Although Bertha Young was thirty she still had moments like this when she wanted to run instead of walk, to take dancing steps on and off the pavement, to bowl a hoop, to throw something up in the air and catch it again, or to stand still and laugh at—nothing—at nothing, simply."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "What can you do if you are thirty and, turning the corner of your own street, you are overcome, suddenly, by a feeling of bliss—absolute bliss!—as though you’d suddenly swallowed a bright piece of that late afternoon sun and it burned in your bosom, sending out a little shower of sparks into every particle, into every finger and toe? . . ."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Oh, is there no way you can express it without being “drunk and disorderly”?"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "How idiotic civilization is!"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Why be given a body if you have to keep it shut up in a case like a rare, rare fiddle?"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "“No, that about the fiddle is not quite what I mean,” she thought, running up the steps and feeling in her bag for the key—she’d forgotten it, as usual—and rattling the letter-box."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "“It’s not what I mean, because—— Thank you, Mary”—she went into the hall."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "“Is nurse back?”"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "“Yes, M’m.”"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "“And has the fruit come?”"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "“Yes, M’m."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Everything’s come.”"
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "“Bring the fruit up to the dining-room, will you?"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "I’ll arrange it before I go upstairs.”"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "It was dusky in the dining-room and quite chilly."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "But all the same Bertha threw off her coat; she could not bear the tight clasp of it another moment, and the cold air fell on her arms."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "But in her bosom there was still that bright glowing place—that shower of little sparks coming from it."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "It was almost unbearable."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "She hardly dared to breathe for fear of fanning it higher, and yet she breathed deeply, deeply."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "She hardly dared to look into the cold mirror—but she did look, and it gave her back a woman, radiant, with smiling, trembling lips, with big, dark eyes and an air of listening, waiting for something . . . divine to happen . . . that she knew must happen . . . infallibly."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Mary brought in the fruit on a tray and with it a glass bowl, and a blue dish, very lovely, with a strange sheen on it as though it had been dipped in milk."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "“Shall I turn on the light, M’m?”"
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "“No, thank you."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "I can see quite well.”"
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "There were tangerines and apples stained with strawberry pink."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Some yellow pears, smooth as silk, some white grapes covered with a silver bloom and a big cluster of purple ones."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "These last she had bought to tone in with the new dining-room carpet."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "Yes, that did sound rather far-fetched and absurd, but it was really why she had bought them."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "She had thought in the shop: “I must have some purple ones to bring the carpet up to the table.”"
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "And it had seemed quite sense at the time."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "When she had finished with them and had made two pyramids of these bright round shapes, she stood away from the table to get the effect—and it really was most curious."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "For the dark table seemed to melt into the dusky light and the glass dish and the blue bowl to float in the air."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "This, of course in her present mood, was so incredibly beautiful. . . ."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "She began to laugh."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "“No, no."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "I’m getting hysterical.”"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "And she seized her bag and coat and ran upstairs to the nursery."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Nurse sat at a low table giving Little B her supper after her bath."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "The baby had on a white flannel gown and a blue woollen jacket, and her dark, fine hair was brushed up into a funny little peak."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "She looked up when she saw her mother and began to jump."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "“Now, my lovey, eat it up like a good girl,” said Nurse, setting her lips in a way that Bertha knew, and that meant she had come into the nursery at another wrong moment."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "“Has she been good, Nanny?”"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "“She’s been a little sweet all the afternoon,” whispered Nanny."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "“We went to the park and I sat down on a chair and took her out of the pram and a big dog came along and put its head on my knee and she clutched its ear, tugged it."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "Oh, you should have seen her.”"
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "Bertha wanted to ask if it wasn’t rather dangerous to let her clutch at a strange dog’s ear."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "But she did not dare to."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "She stood watching them, her hands by her side, like the poor little girl in front of the rich little girl with the doll."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "The baby looked up at her again, stared, and then smiled so charmingly that Bertha couldn’t help crying: “Oh, Nanny, do let me finish giving her her supper while you put the bath things away.”"
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "“Well, M’m, she oughtn’t to be changed hands while she’s eating,” said Nanny, still whispering."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "“It unsettles her; it’s very likely to upset her.”"
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "How absurd it was."
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "Why have a baby if it has to be kept—not in a case like a rare, rare fiddle—but in another woman’s arms?"
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "“Oh, I must!” said she."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "Very offended, Nanny handed her over."
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "“Now, don’t excite her after her supper."
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "You know you do, M’m."
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "And I have such a time with her after!”"
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "Thank heaven!"
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "Nanny went out of the room with the bath towels."
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "“Now I’ve got you to myself, my little precious,” said Bertha, as the baby leaned against her."
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "She ate delightfully, holding up her lips for spoon and then waving her hands."
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "Sometimes she wouldn’t let the spoon go; and sometimes, just as Bertha had filled it, she waved it away to the four winds."
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "When the soup was finished Bertha turned round to the fire."
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "“You’re nice—you’re very nice!” said she, kissing her warm baby."
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "“I’m fond of you."
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "I like you.”"
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "And, indeed, she loved Little B so much—her neck as she bent forward, her exquisite toes as they shone transparent in the firelight—that all her feeling of bliss came back again, and again she didn’t know how to express it—what to do with it."
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "“You’re wanted on the telephone,” said Nanny, coming back in triumph and seizing _her_ Little B."
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "Down she flew."
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "It was Harry."
+    },
+    {
+      "id": "s1-35",
+      "sceneId": "s1",
+      "text": "“Oh, is that you, Ber?"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Look here."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "I’ll be late."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "I’ll take a taxi and come along as quickly as I can, but get dinner put back ten minutes—will you?"
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "All right?”"
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "“Yes, perfectly."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Oh, Harry!”"
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "“Yes?” What had she to say?"
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "She’d nothing to say."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "She only wanted to get in touch with him for a moment."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "She couldn’t absurdly cry: “Hasn’t it been a divine day!”"
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "“What is it?” rapped out the little voice."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "“Nothing. _Entendu_,” said Bertha, and hung up the receiver, thinking how more than idiotic civilization was."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "They had people coming to dinner."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "The Norman Knights—a very sound couple—he was about to start a theatre, and she was awfully keen on interior decoration, a young man, Eddie Warren, who had just published a little book of poems and whom everybody was asking to dine, and a “find” of Bertha’s called Pearl Fulton."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "What Miss Fulton did, Bertha didn’t know."
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "They had met at the club and Bertha had fallen in love with her, as she always did fall in love with beautiful women who had something strange about them."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "The provoking thing was that, though they had been about together and met a number of times and really talked, Bertha couldn’t yet make her out."
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "Up to a certain point Miss Fulton was rarely, wonderfully frank, but the certain point was there, and beyond that she would not go."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "Was there anything beyond it?"
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "Harry said “No.”"
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "Voted her dullish, and “cold like all blond women, with a touch, perhaps, of anæmia of the brain.”"
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "But Bertha wouldn’t agree with him; not yet, at any rate."
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "“No, the way she has of sitting with her head a little on one side, and smiling, has something behind it, Harry, and I must find out what that something is.”"
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "“Most likely it’s a good stomach,” answered Harry."
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "He made a point of catching Bertha’s heels with replies of that kind . . . “liver frozen, my dear girl,” or “pure flatulence,” or “kidney disease,” . . . and so on."
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "For some strange reason Bertha liked this, and almost admired it in him very much."
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "She went into the drawing-room and lighted the fire; then, picking up the cushions, one by one, that Mary had disposed so carefully, she threw them back on to the chairs and the couches."
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "That made all the difference; the room came alive at once."
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "As she was about to throw the last one she surprised herself by suddenly hugging it to her, passionately, passionately."
+    },
+    {
+      "id": "s2-29",
+      "sceneId": "s2",
+      "text": "But it did not put out the fire in her bosom."
+    },
+    {
+      "id": "s2-30",
+      "sceneId": "s2",
+      "text": "Oh, on the contrary!"
+    },
+    {
+      "id": "s2-31",
+      "sceneId": "s2",
+      "text": "The windows of the drawing-room opened on to a balcony overlooking the garden."
+    },
+    {
+      "id": "s2-32",
+      "sceneId": "s2",
+      "text": "At the far end, against the wall, there was a tall, slender pear tree in fullest, richest bloom; it stood perfect, as though becalmed against the jade-green sky."
+    },
+    {
+      "id": "s2-33",
+      "sceneId": "s2",
+      "text": "Bertha couldn’t help feeling, even from this distance, that it had not a single bud or a faded petal."
+    },
+    {
+      "id": "s2-34",
+      "sceneId": "s2",
+      "text": "Down below, in the garden beds, the red and yellow tulips, heavy with flowers, seemed to lean upon the dusk."
+    },
+    {
+      "id": "s2-35",
+      "sceneId": "s2",
+      "text": "A grey cat, dragging its belly, crept across the lawn, and a black one, its shadow, trailed after."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "The sight of them, so intent and so quick, gave Bertha a curious shiver."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "“What creepy things cats are!” she stammered, and she turned away from the window and began walking up and down. . . ."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "How strong the jonquils smelled in the warm room."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Too strong?"
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Oh, no. And yet, as though overcome, she flung down on a couch and pressed her hands to her eyes."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "“I’m too happy—too happy!” she murmured."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "And she seemed to see on her eyelids the lovely pear tree with its wide open blossoms as a symbol of her own life."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "Really—really—she had everything."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "She was young."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "Harry and she were as much in love as ever, and they got on together splendidly and were really good pals."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "She had an adorable baby."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "They didn’t have to worry about money."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "They had this absolutely satisfactory house and garden."
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "And friends—modern, thrilling friends, writers and painters and poets or people keen on social questions—just the kind of friends they wanted."
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "And then there were books, and there was music, and she had found a wonderful little dressmaker, and they were going abroad in the summer, and their new cook made the most superb omelettes. . . ."
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "“I’m absurd."
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "Absurd!”"
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "She sat up; but she felt quite dizzy, quite drunk."
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "It must have been the spring."
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "Yes, it was the spring."
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "Now she was so tired she could not drag herself upstairs to dress."
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "A white dress, a string of jade beads, green shoes and stockings."
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "It wasn’t intentional."
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "She had thought of this scheme hours before she stood at the drawing-room window."
+    },
+    {
+      "id": "s3-24",
+      "sceneId": "s3",
+      "text": "Her petals rustled softly into the hall, and she kissed Mrs. Norman Knight, who was taking off the most amusing orange coat with a procession of black monkeys round the hem and up the fronts. “. . ."
+    },
+    {
+      "id": "s3-25",
+      "sceneId": "s3",
+      "text": "Why! Why!"
+    },
+    {
+      "id": "s3-26",
+      "sceneId": "s3",
+      "text": "Why is the middle-class so stodgy—so utterly without a sense of humour!"
+    },
+    {
+      "id": "s3-27",
+      "sceneId": "s3",
+      "text": "My dear, it’s only by a fluke that I am here at all—Norman being the protective fluke."
+    },
+    {
+      "id": "s3-28",
+      "sceneId": "s3",
+      "text": "For my darling monkeys so upset the train that it rose to a man and simply ate me with its eyes."
+    },
+    {
+      "id": "s3-29",
+      "sceneId": "s3",
+      "text": "Didn’t laugh—wasn’t amused—that I should have loved."
+    },
+    {
+      "id": "s3-30",
+      "sceneId": "s3",
+      "text": "No, just stared—and bored me through and through.”"
+    },
+    {
+      "id": "s3-31",
+      "sceneId": "s3",
+      "text": "“But the cream of it was,” said Norman, pressing a large tortoiseshell-rimmed monocle into his eye, “you don’t mind me telling this, Face, do you?”"
+    },
+    {
+      "id": "s3-32",
+      "sceneId": "s3",
+      "text": "(In their home and among their friends they called each other Face and Mug.) “The cream of it was when she, being full fed, turned to the woman beside her and said: ‘Haven’t you ever seen a monkey before?’” “Oh, yes!”"
+    },
+    {
+      "id": "s3-33",
+      "sceneId": "s3",
+      "text": "Mrs. Norman Knight joined in the laughter."
+    },
+    {
+      "id": "s3-34",
+      "sceneId": "s3",
+      "text": "“Wasn’t that too absolutely creamy?”"
+    },
+    {
+      "id": "s3-35",
+      "sceneId": "s3",
+      "text": "And a funnier thing still was that now her coat was off she did look like a very intelligent monkey—who had even made that yellow silk dress out of scraped banana skins."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "And her amber ear-rings; they were like little dangling nuts."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "“This is a sad, sad fall!” said Mug, pausing in front of Little B’s perambulator."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "“When the perambulator comes into the hall——” and he waved the rest of the quotation away."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "The bell rang."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "It was lean, pale Eddie Warren (as usual) in a state of acute distress."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "“It _is_ the right house, _isn’t_ it?” he pleaded."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "“Oh, I think so—I hope so,” said Bertha brightly."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "“I have had such a _dreadful_ experience with a taxi-man; he was _most_ sinister."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "I couldn’t get him to _stop._ The _more_ I knocked and called the _faster_ he went."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "And _in_ the moonlight this _bizarre_ figure with the _flattened_ head _crouching_ over the _lit-tle_ wheel. . . .”"
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "He shuddered, taking off an immense white silk scarf."
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "Bertha noticed that his socks were white, too—most charming."
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "“But how dreadful!” she cried."
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "“Yes, it really was,” said Eddie, following her into the drawing-room."
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "“I saw myself _driving_ through Eternity in a _timeless_ taxi.”"
+    },
+    {
+      "id": "s4-15",
+      "sceneId": "s4",
+      "text": "He knew the Norman Knights."
+    },
+    {
+      "id": "s4-16",
+      "sceneId": "s4",
+      "text": "In fact, he was going to write a play for N. K. when the theatre scheme came off."
+    },
+    {
+      "id": "s4-17",
+      "sceneId": "s4",
+      "text": "“Well, Warren, how’s the play?” said Norman Knight, dropping his monocle and giving his eye a moment in which to rise to the surface before it was screwed down again."
+    },
+    {
+      "id": "s4-18",
+      "sceneId": "s4",
+      "text": "And Mrs. Norman Knight: “Oh, Mr. Warren, what happy socks?”"
+    },
+    {
+      "id": "s4-19",
+      "sceneId": "s4",
+      "text": "“I _am_ so glad you like them,” said he, staring at his feet."
+    },
+    {
+      "id": "s4-20",
+      "sceneId": "s4",
+      "text": "“They seem to have got so _much_ whiter since the moon rose.”"
+    },
+    {
+      "id": "s4-21",
+      "sceneId": "s4",
+      "text": "And he turned his lean sorrowful young face to Bertha."
+    },
+    {
+      "id": "s4-22",
+      "sceneId": "s4",
+      "text": "“There _is_ a moon, you know.”"
+    },
+    {
+      "id": "s4-23",
+      "sceneId": "s4",
+      "text": "She wanted to cry: “I am sure there is—often—often!”"
+    },
+    {
+      "id": "s4-24",
+      "sceneId": "s4",
+      "text": "He really was a most attractive person."
+    },
+    {
+      "id": "s4-25",
+      "sceneId": "s4",
+      "text": "But so was Face, crouched before the fire in her banana skins, and so was Mug, smoking a cigarette and saying as he flicked the ash: “Why doth the bridegroom tarry?”"
+    },
+    {
+      "id": "s4-26",
+      "sceneId": "s4",
+      "text": "“There he is, now.”"
+    },
+    {
+      "id": "s4-27",
+      "sceneId": "s4",
+      "text": "Bang went the front door open and shut."
+    },
+    {
+      "id": "s4-28",
+      "sceneId": "s4",
+      "text": "Harry shouted: “Hullo, you people."
+    },
+    {
+      "id": "s4-29",
+      "sceneId": "s4",
+      "text": "Down in five minutes.”"
+    },
+    {
+      "id": "s4-30",
+      "sceneId": "s4",
+      "text": "And they heard him swarm up the stairs."
+    },
+    {
+      "id": "s4-31",
+      "sceneId": "s4",
+      "text": "Bertha couldn’t help smiling; she knew how he loved doing things at high pressure."
+    },
+    {
+      "id": "s4-32",
+      "sceneId": "s4",
+      "text": "What, after all, did an extra five minutes matter?"
+    },
+    {
+      "id": "s4-33",
+      "sceneId": "s4",
+      "text": "But he would pretend to himself that they mattered beyond measure."
+    },
+    {
+      "id": "s4-34",
+      "sceneId": "s4",
+      "text": "And then he would make a great point of coming into the drawing-room, extravagantly cool and collected."
+    },
+    {
+      "id": "s4-35",
+      "sceneId": "s4",
+      "text": "Harry had such a zest for life."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Oh, how she appreciated it in him."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "And his passion for fighting—for seeking in everything that came up against him another test of his power and of his courage—that, too, she understood."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "Even when it made him just occasionally, to other people, who didn’t know him well, a little ridiculous perhaps. . . ."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "For there were moments when he rushed into battle where no battle was. . . ."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "She talked and laughed and positively forgot until he had come in (just as she had imagined) that Pearl Fulton had not turned up."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "“I wonder if Miss Fulton has forgotten?”"
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "“I expect so,” said Harry."
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "“Is she on the ’phone?”"
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "“Ah! There’s a taxi, now.”"
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "And Bertha smiled with that little air of proprietorship that she always assumed while her women finds were new and mysterious."
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "“She lives in taxis.”"
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "“She’ll run to fat if she does,” said Harry coolly, ringing the bell for dinner."
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "“Frightful danger for blond women.”"
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "“Harry—don’t,” warned Bertha, laughing up at him."
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "Came another tiny moment, while they waited, laughing and talking, just a trifle too much at their ease, a trifle too unaware."
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "And then Miss Fulton, all in silver, with a silver fillet binding her pale blond hair, came in smiling, her head a little on one side."
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "“Am I late?”"
+    },
+    {
+      "id": "s5-17",
+      "sceneId": "s5",
+      "text": "“No, not at all,” said Bertha."
+    },
+    {
+      "id": "s5-18",
+      "sceneId": "s5",
+      "text": "“Come along.”"
+    },
+    {
+      "id": "s5-19",
+      "sceneId": "s5",
+      "text": "And she took her arm and they moved into the dining-room."
+    },
+    {
+      "id": "s5-20",
+      "sceneId": "s5",
+      "text": "What was there in the touch of that cool arm that could fan—fan—start blazing—blazing—the fire of bliss that Bertha did not know what to do with?"
+    },
+    {
+      "id": "s5-21",
+      "sceneId": "s5",
+      "text": "Miss Fulton did not look at her; but then she seldom did look at people directly."
+    },
+    {
+      "id": "s5-22",
+      "sceneId": "s5",
+      "text": "Her heavy eyelids lay upon her eyes and the strange half smile came and went upon her lips as though she lived by listening rather than seeing."
+    },
+    {
+      "id": "s5-23",
+      "sceneId": "s5",
+      "text": "But Bertha knew, suddenly, as if the longest, most intimate look had passed between them—as if they had said to each other: “You, too?”—that Pearl Fulton stirring the beautiful red soup in the grey plate was feeling just what she was feeling."
+    },
+    {
+      "id": "s5-24",
+      "sceneId": "s5",
+      "text": "And the others?"
+    },
+    {
+      "id": "s5-25",
+      "sceneId": "s5",
+      "text": "Face and Mug, Eddie and Harry, their spoons rising and falling—dabbing their lips with their napkins, crumbling bread, fiddling with the forks and glasses and talking."
+    },
+    {
+      "id": "s5-26",
+      "sceneId": "s5",
+      "text": "“I met her at the Alpha show—the weirdest little person."
+    },
+    {
+      "id": "s5-27",
+      "sceneId": "s5",
+      "text": "She’d not only cut off her hair, but she seemed to have taken a dreadfully good snip off her legs and arms and her neck and her poor little nose as well.”"
+    },
+    {
+      "id": "s5-28",
+      "sceneId": "s5",
+      "text": "“Isn’t she very _liée_ with Michael Oat?”"
+    },
+    {
+      "id": "s5-29",
+      "sceneId": "s5",
+      "text": "“The man who wrote _Love in False Teeth?_”"
+    },
+    {
+      "id": "s5-30",
+      "sceneId": "s5",
+      "text": "“He wants to write a play for me."
+    },
+    {
+      "id": "s5-31",
+      "sceneId": "s5",
+      "text": "One act."
+    },
+    {
+      "id": "s5-32",
+      "sceneId": "s5",
+      "text": "One man."
+    },
+    {
+      "id": "s5-33",
+      "sceneId": "s5",
+      "text": "Decides to commit suicide."
+    },
+    {
+      "id": "s5-34",
+      "sceneId": "s5",
+      "text": "Gives all the reasons why he should and why he shouldn’t."
+    },
+    {
+      "id": "s5-35",
+      "sceneId": "s5",
+      "text": "And just as he has made up his mind either to do it or not to do it—curtain."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Not half a bad idea.”"
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "“What’s he going to call it—‘Stomach Trouble’?”"
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "“I _think_ I’ve come across the same _idea_ in a lit-tle French review, _quite_ unknown in England.”"
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "No, they didn’t share it."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "They were dears—dears—and she loved having them there, at her table, and giving them delicious food and wine."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "In fact, she longed to tell them how delightful they were, and what a decorative group they made, how they seemed to set one another off and how they reminded her of a play by Tchekof!"
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "Harry was enjoying his dinner."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "It was part of his—well, not his nature, exactly, and certainly not his pose—his—something or other—to talk about food and to glory in his “shameless passion for the white flesh of the lobster” and “the green of pistachio ices—green and cold like the eyelids of Egyptian dancers.”"
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "When he looked up at her and said: “Bertha, this is a very admirable _soufflée!_” she almost could have wept with child-like pleasure."
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "Oh, why did she feel so tender towards the whole world to-night?"
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "Everything was good—was right."
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "All that happened seemed to fill again her brimming cup of bliss."
+    },
+    {
+      "id": "s6-12",
+      "sceneId": "s6",
+      "text": "And still, in the back of her mind, there was the pear tree."
+    },
+    {
+      "id": "s6-13",
+      "sceneId": "s6",
+      "text": "It would be silver now, in the light of poor dear Eddie’s moon, silver as Miss Fulton, who sat there turning a tangerine in her slender fingers that were so pale a light seemed to come from them."
+    },
+    {
+      "id": "s6-14",
+      "sceneId": "s6",
+      "text": "What she simply couldn’t make out—what was miraculous—was how she should have guessed Miss Fulton’s mood so exactly and so instantly."
+    },
+    {
+      "id": "s6-15",
+      "sceneId": "s6",
+      "text": "For she never doubted for a moment that she was right, and yet what had she to go on?"
+    },
+    {
+      "id": "s6-16",
+      "sceneId": "s6",
+      "text": "Less than nothing."
+    },
+    {
+      "id": "s6-17",
+      "sceneId": "s6",
+      "text": "“I believe this does happen very, very rarely between women."
+    },
+    {
+      "id": "s6-18",
+      "sceneId": "s6",
+      "text": "Never between men,” thought Bertha."
+    },
+    {
+      "id": "s6-19",
+      "sceneId": "s6",
+      "text": "“But while I am making the coffee in the drawing-room perhaps she will ‘give a sign.’” What she meant by that she did not know, and what would happen after that she could not imagine."
+    },
+    {
+      "id": "s6-20",
+      "sceneId": "s6",
+      "text": "While she thought like this she saw herself talking and laughing."
+    },
+    {
+      "id": "s6-21",
+      "sceneId": "s6",
+      "text": "She had to talk because of her desire to laugh."
+    },
+    {
+      "id": "s6-22",
+      "sceneId": "s6",
+      "text": "“I must laugh or die.”"
+    },
+    {
+      "id": "s6-23",
+      "sceneId": "s6",
+      "text": "But when she noticed Face’s funny little habit of tucking something down the front of her bodice—as if she kept a tiny, secret hoard of nuts there, too—Bertha had to dig her nails into her hands—so as not to laugh too much."
+    },
+    {
+      "id": "s6-24",
+      "sceneId": "s6",
+      "text": "It was over at last."
+    },
+    {
+      "id": "s6-25",
+      "sceneId": "s6",
+      "text": "And: “Come and see my new coffee machine,” said Bertha."
+    },
+    {
+      "id": "s6-26",
+      "sceneId": "s6",
+      "text": "“We only have a new coffee machine once a fortnight,” said Harry."
+    },
+    {
+      "id": "s6-27",
+      "sceneId": "s6",
+      "text": "Face took her arm this time; Miss Fulton bent her head and followed after."
+    },
+    {
+      "id": "s6-28",
+      "sceneId": "s6",
+      "text": "The fire had died down in the drawing-room to a red, flickering “nest of baby phœnixes,” said Face."
+    },
+    {
+      "id": "s6-29",
+      "sceneId": "s6",
+      "text": "“Don’t turn up the light for a moment."
+    },
+    {
+      "id": "s6-30",
+      "sceneId": "s6",
+      "text": "It is so lovely.”"
+    },
+    {
+      "id": "s6-31",
+      "sceneId": "s6",
+      "text": "And down she crouched by the fire again."
+    },
+    {
+      "id": "s6-32",
+      "sceneId": "s6",
+      "text": "She was always cold . . . “without her little red flannel jacket, of course,” thought Bertha."
+    },
+    {
+      "id": "s6-33",
+      "sceneId": "s6",
+      "text": "At that moment Miss Fulton “gave the sign.”"
+    },
+    {
+      "id": "s6-34",
+      "sceneId": "s6",
+      "text": "“Have you a garden?” said the cool, sleepy voice."
+    },
+    {
+      "id": "s6-35",
+      "sceneId": "s6",
+      "text": "This was so exquisite on her part that all Bertha could do was to obey."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "She crossed the room, pulled the curtains apart, and opened those long windows."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "“There!” she breathed."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "And the two women stood side by side looking at the slender, flowering tree."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Although it was so still it seemed, like the flame of a candle, to stretch up, to point, to quiver in the bright air, to grow taller and taller as they gazed—almost to touch the rim of the round, silver moon."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "How long did they stand there?"
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Both, as it were, caught in that circle of unearthly light, understanding each other perfectly, creatures of another world, and wondering what they were to do in this one with all this blissful treasure that burned in their bosoms and dropped, in silver flowers, from their hair and hands?"
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "For ever—for a moment?"
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "And did Miss Fulton murmur: “Yes."
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "Just _that._” Or did Bertha dream it?"
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "Then the light was snapped on and Face made the coffee and Harry said: “My dear Mrs. Knight, don’t ask me about my baby."
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "I never see her."
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "I shan’t feel the slightest interest in her until she has a lover,” and Mug took his eye out of the conservatory for a moment and then put it under glass again and Eddie Warren drank his coffee and set down the cup with a face of anguish as though he had drunk and seen the spider."
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "“What I want to do is to give the young men a show."
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "I believe London is simply teeming with first-chop, unwritten plays."
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "What I want to say to ’em is: ‘Here’s the theatre."
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "Fire ahead.’”"
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "“You know, my dear, I am going to decorate a room for the Jacob Nathans."
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "Oh, I am so tempted to do a fried-fish scheme, with the backs of the chairs shaped like frying pans and lovely chip potatoes embroidered all over the curtains.”"
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "“The trouble with our young writing men is that they are still too romantic."
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "You can’t put out to sea without being seasick and wanting a basin."
+    },
+    {
+      "id": "s7-20",
+      "sceneId": "s7",
+      "text": "Well, why won’t they have the courage of those basins?”"
+    },
+    {
+      "id": "s7-21",
+      "sceneId": "s7",
+      "text": "“A _dreadful_ poem about a _girl_ who was _violated_ by a beggar without a nose in a lit-tle wood. . . .”"
+    },
+    {
+      "id": "s7-22",
+      "sceneId": "s7",
+      "text": "Miss Fulton sank into the lowest, deepest chair and Harry handed round the cigarettes."
+    },
+    {
+      "id": "s7-23",
+      "sceneId": "s7",
+      "text": "From the way he stood in front of her shaking the silver box and saying abruptly: “Egyptian?"
+    },
+    {
+      "id": "s7-24",
+      "sceneId": "s7",
+      "text": "Turkish?"
+    },
+    {
+      "id": "s7-25",
+      "sceneId": "s7",
+      "text": "Virginian?"
+    },
+    {
+      "id": "s7-26",
+      "sceneId": "s7",
+      "text": "They’re all mixed up,” Bertha realized that she not only bored him; he really disliked her."
+    },
+    {
+      "id": "s7-27",
+      "sceneId": "s7",
+      "text": "And she decided from the way Miss Fulton said: “No, thank you, I won’t smoke,” that she felt it, too, and was hurt."
+    },
+    {
+      "id": "s7-28",
+      "sceneId": "s7",
+      "text": "“Oh, Harry, don’t dislike her."
+    },
+    {
+      "id": "s7-29",
+      "sceneId": "s7",
+      "text": "You are quite wrong about her."
+    },
+    {
+      "id": "s7-30",
+      "sceneId": "s7",
+      "text": "She’s wonderful, wonderful."
+    },
+    {
+      "id": "s7-31",
+      "sceneId": "s7",
+      "text": "And, besides, how can you feel so differently about someone who means so much to me."
+    },
+    {
+      "id": "s7-32",
+      "sceneId": "s7",
+      "text": "I shall try to tell you when we are in bed to-night what has been happening."
+    },
+    {
+      "id": "s7-33",
+      "sceneId": "s7",
+      "text": "What she and I have shared.”"
+    },
+    {
+      "id": "s7-34",
+      "sceneId": "s7",
+      "text": "At those last words something strange and almost terrifying darted into Bertha’s mind."
+    },
+    {
+      "id": "s7-35",
+      "sceneId": "s7",
+      "text": "And this something blind and smiling whispered to her: “Soon these people will go."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "The house will be quiet—quiet."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "The lights will be out."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "And you and he will be alone together in the dark room—the warm bed. . . .”"
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "She jumped up from her chair and ran over to the piano."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "“What a pity someone does not play!” she cried."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "“What a pity somebody does not play.”"
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "For the first time in her life Bertha Young desired her husband."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "Oh, she’d loved him—she’d been in love with him, of course, in every other way, but just not in that way."
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "And, equally, of course, she’d understood that he was different."
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "They’d discussed it so often."
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "It had worried her dreadfully at first to find that she was so cold, but after a time it had not seemed to matter."
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "They were so frank with each other—such good pals."
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "That was the best of being modern."
+    },
+    {
+      "id": "s8-13",
+      "sceneId": "s8",
+      "text": "But now—ardently! ardently!"
+    },
+    {
+      "id": "s8-14",
+      "sceneId": "s8",
+      "text": "The word ached in her ardent body!"
+    },
+    {
+      "id": "s8-15",
+      "sceneId": "s8",
+      "text": "Was this what that feeling of bliss had been leading up to?"
+    },
+    {
+      "id": "s8-16",
+      "sceneId": "s8",
+      "text": "But then then——"
+    },
+    {
+      "id": "s8-17",
+      "sceneId": "s8",
+      "text": "“My dear,” said Mrs. Norman Knight, “you know our shame."
+    },
+    {
+      "id": "s8-18",
+      "sceneId": "s8",
+      "text": "We are the victims of time and train."
+    },
+    {
+      "id": "s8-19",
+      "sceneId": "s8",
+      "text": "We live in Hampstead."
+    },
+    {
+      "id": "s8-20",
+      "sceneId": "s8",
+      "text": "It’s been so nice.”"
+    },
+    {
+      "id": "s8-21",
+      "sceneId": "s8",
+      "text": "“I’ll come with you into the hall,” said Bertha."
+    },
+    {
+      "id": "s8-22",
+      "sceneId": "s8",
+      "text": "“I loved having you."
+    },
+    {
+      "id": "s8-23",
+      "sceneId": "s8",
+      "text": "But you must not miss the last train."
+    },
+    {
+      "id": "s8-24",
+      "sceneId": "s8",
+      "text": "That’s so awful, isn’t it?”"
+    },
+    {
+      "id": "s8-25",
+      "sceneId": "s8",
+      "text": "“Have a whisky, Knight, before you go?” called Harry."
+    },
+    {
+      "id": "s8-26",
+      "sceneId": "s8",
+      "text": "“No, thanks, old chap.”"
+    },
+    {
+      "id": "s8-27",
+      "sceneId": "s8",
+      "text": "Bertha squeezed his hand for that as she shook it."
+    },
+    {
+      "id": "s8-28",
+      "sceneId": "s8",
+      "text": "“Good night, good-bye,” she cried from the top step, feeling that this self of hers was taking leave of them for ever."
+    },
+    {
+      "id": "s8-29",
+      "sceneId": "s8",
+      "text": "When she got back into the drawing-room the others were on the move. “. . ."
+    },
+    {
+      "id": "s8-30",
+      "sceneId": "s8",
+      "text": "Then you can come part of the way in my taxi.”"
+    },
+    {
+      "id": "s8-31",
+      "sceneId": "s8",
+      "text": "“I shall be _so_ thankful _not_ to have to face _another_ drive _alone_ after my _dreadful_ experience.”"
+    },
+    {
+      "id": "s8-32",
+      "sceneId": "s8",
+      "text": "“You can get a taxi at the rank just at the end of the street."
+    },
+    {
+      "id": "s8-33",
+      "sceneId": "s8",
+      "text": "You won’t have to walk more than a few yards.”"
+    },
+    {
+      "id": "s8-34",
+      "sceneId": "s8",
+      "text": "“That’s a comfort."
+    },
+    {
+      "id": "s8-35",
+      "sceneId": "s8",
+      "text": "I’ll go and put on my coat.”"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Miss Fulton moved towards the hall and Bertha was following when Harry almost pushed past."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "“Let me help you.”"
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "Bertha knew that he was repenting his rudeness—she let him go."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "What a boy he was in some ways—so impulsive—so—simple."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "And Eddie and she were left by the fire."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "“I _wonder_ if you have seen Bilks’ _new_ poem called _Table d’Hôte_,” said Eddie softly."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "“It’s _so_ wonderful."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "In the last Anthology."
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "Have you got a copy?"
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "I’d _so_ like to _show_ it to you."
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "It begins with an _incredibly_ beautiful line: ‘Why Must it Always be Tomato Soup?’” “Yes,” said Bertha."
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "And she moved noiselessly to a table opposite the drawing-room door and Eddie glided noiselessly after her."
+    },
+    {
+      "id": "s9-12",
+      "sceneId": "s9",
+      "text": "She picked up the little book and gave it to him; they had not made a sound."
+    },
+    {
+      "id": "s9-13",
+      "sceneId": "s9",
+      "text": "While he looked it up she turned her head towards the hall."
+    },
+    {
+      "id": "s9-14",
+      "sceneId": "s9",
+      "text": "And she saw . . ."
+    },
+    {
+      "id": "s9-15",
+      "sceneId": "s9",
+      "text": "Harry with Miss Fulton’s coat in his arms and Miss Fulton with her back turned to him and her head bent."
+    },
+    {
+      "id": "s9-16",
+      "sceneId": "s9",
+      "text": "He tossed the coat away, put his hands on her shoulders and turned her violently to him."
+    },
+    {
+      "id": "s9-17",
+      "sceneId": "s9",
+      "text": "His lips said: “I adore you,” and Miss Fulton laid her moonbeam fingers on his cheeks and smiled her sleepy smile."
+    },
+    {
+      "id": "s9-18",
+      "sceneId": "s9",
+      "text": "Harry’s nostrils quivered; his lips curled back in a hideous grin while he whispered: “To-morrow,” and with her eyelids Miss Fulton said: “Yes.”"
+    },
+    {
+      "id": "s9-19",
+      "sceneId": "s9",
+      "text": "“Here it is,” said Eddie."
+    },
+    {
+      "id": "s9-20",
+      "sceneId": "s9",
+      "text": "“‘Why Must it Always be Tomato Soup?’ It’s so _deeply_ true, don’t you feel?"
+    },
+    {
+      "id": "s9-21",
+      "sceneId": "s9",
+      "text": "Tomato soup is so _dreadfully_ eternal.”"
+    },
+    {
+      "id": "s9-22",
+      "sceneId": "s9",
+      "text": "“If you prefer,” said Harry’s voice, very loud, from the hall, “I can phone you a cab to come to the door.”"
+    },
+    {
+      "id": "s9-23",
+      "sceneId": "s9",
+      "text": "“Oh, no."
+    },
+    {
+      "id": "s9-24",
+      "sceneId": "s9",
+      "text": "It’s not necessary,” said Miss Fulton, and she came up to Bertha and gave her the slender fingers to hold."
+    },
+    {
+      "id": "s9-25",
+      "sceneId": "s9",
+      "text": "“Good-bye."
+    },
+    {
+      "id": "s9-26",
+      "sceneId": "s9",
+      "text": "Thank you so much.”"
+    },
+    {
+      "id": "s9-27",
+      "sceneId": "s9",
+      "text": "“Good-bye,” said Bertha."
+    },
+    {
+      "id": "s9-28",
+      "sceneId": "s9",
+      "text": "Miss Fulton held her hand a moment longer."
+    },
+    {
+      "id": "s9-29",
+      "sceneId": "s9",
+      "text": "“Your lovely pear tree!” she murmured."
+    },
+    {
+      "id": "s9-30",
+      "sceneId": "s9",
+      "text": "And then she was gone, with Eddie following, like the black cat following the grey cat."
+    },
+    {
+      "id": "s9-31",
+      "sceneId": "s9",
+      "text": "“I’ll shut up shop,” said Harry, extravagantly cool and collected."
+    },
+    {
+      "id": "s9-32",
+      "sceneId": "s9",
+      "text": "“Your lovely pear tree—pear tree—pear tree!”"
+    },
+    {
+      "id": "s9-33",
+      "sceneId": "s9",
+      "text": "Bertha simply ran over to the long windows."
+    },
+    {
+      "id": "s9-34",
+      "sceneId": "s9",
+      "text": "“Oh, what is going to happen now?” she cried."
+    },
+    {
+      "id": "s9-35",
+      "sceneId": "s9",
+      "text": "But the pear tree was as lovely as ever and as full of flower and as still."
+    }
+  ]
+}

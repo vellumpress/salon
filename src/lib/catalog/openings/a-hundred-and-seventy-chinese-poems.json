@@ -1,0 +1,81 @@
+{
+  "id": "a-hundred-and-seventy-chinese-poems",
+  "title": "A Hundred and Seventy Chinese Poems",
+  "author": "Various (tr. Arthur Waley)",
+  "year": "1918",
+  "note": "Before-sleep ritual sit — Winter Night.\n\nGentler China lyrics for a night sit. Open the Winter Night pack — not Battle.\n\nA Hundred and Seventy Chinese Poems (tr. Waley; 1918; PG 42290). Sit through Winter Night and the paired lyrics. Never Battle.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Winter Night",
+      "place": "one sitting",
+      "reentry": "My bed is so empty that I keep on waking up: As the cold increases, the night-wind begins to blow.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "My bed is so empty that I keep on waking up: As the cold increases, the night-wind begins to blow."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "It rustles the curtains, making a noise like the sea: Oh that those were waves which could carry me back to you!"
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "On the Birth of His Son"
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "By Su Tung-p’o (A.D. 1036-1101)"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Families, when a child is born, want it to be intelligent."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "I, through intelligence, having wrecked my whole life, only hope the baby will prove ignorant and stupid."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Then he will crown a tranquil life by becoming a Cabinet Minister."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "The Red Cockatoo"
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Sent as a present from Annam—a red cockatoo."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Coloured like the peach-tree blossom, speaking with the speech of men."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "And they did to it what is always done to the learned and eloquent."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "They took a cage with stout bars and shut it up inside."
+    }
+  ]
+}

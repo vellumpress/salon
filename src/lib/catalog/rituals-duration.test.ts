@@ -374,6 +374,66 @@ test("Death Comes for the Archbishop waking sit is the red-hills cut", () => {
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
+test("Bliss before-sleep sit is the radiant-mirror cut", () => {
+  const item = work({
+    id: "bliss",
+    form: "other",
+    breaths: 360,
+    minutes: 45,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("A Hundred and Seventy Chinese Poems before-sleep sit is the Winter Night cut", () => {
+  const item = work({
+    id: "a-hundred-and-seventy-chinese-poems",
+    form: "poem",
+    breaths: 896,
+    minutes: 112,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Dubliners before-sleep sit is The Sisters cut", () => {
+  const item = work({
+    id: "dubliners",
+    form: "stories",
+    breaths: 196,
+    minutes: 25,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Gitanjali before-sleep sit is the poem-1 cut", () => {
+  const item = work({
+    id: "gitanjali",
+    form: "poem",
+    breaths: 750,
+    minutes: 94,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Martin Birck's Youth before-sleep sit is the childhood-garden cut", () => {
+  const item = work({
+    id: "martin-bircks-youth",
+    form: "novel",
+    breaths: 1769,
+    minutes: 221,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
 test("The Getting of Wisdom waking sit is the dirty-sheet cut", () => {
   const item = work({
     id: "the-getting-of-wisdom",

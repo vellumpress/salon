@@ -40,6 +40,11 @@ test("named settings keep reader-friendly labels and real regions", () => {
     demian: { label: "Germany — little-town Latin school", region: "de" },
     "death-comes-for-the-archbishop": { label: "New Mexico — arid red hills", region: "us" },
     "the-getting-of-wisdom": { label: "Australia — Melbourne orbit", region: "au" },
+    bliss: { label: "London", region: "gb" },
+    "a-hundred-and-seventy-chinese-poems": { label: "China", region: "cn" },
+    dubliners: { label: "Dublin", region: "ie" },
+    gitanjali: { label: "Bengal", region: "in" },
+    "martin-bircks-youth": { label: "Stockholm", region: "se" },
     botchan: { label: "Tokyo", region: "jp" },
     "enchanted-april": { label: "Italy", region: "it" },
     "the-bridge-of-san-luis-rey": { label: "Peru", region: "pe" },
@@ -145,6 +150,11 @@ test("Locked recommend, Next, and ritual-lane works all resolve a place with a s
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("demian"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("death-comes-for-the-archbishop"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-getting-of-wisdom"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("bliss"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("a-hundred-and-seventy-chinese-poems"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("dubliners"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("gitanjali"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("martin-bircks-youth"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("poison-tree"), false);
   assert.ok(RITUAL_LANES.some((lane) => lane.workIds.includes("silhouettes")));
 });

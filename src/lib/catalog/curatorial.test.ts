@@ -49,6 +49,11 @@ test("Locked recommend order is April, Bridge, Maggot, then Mirth, then Quicksan
   assert.equal(FEATURED_CAROUSEL_IDS.includes("demian"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("death-comes-for-the-archbishop"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-getting-of-wisdom"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("bliss"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("a-hundred-and-seventy-chinese-poems"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("dubliners"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("gitanjali"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("martin-bircks-youth"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("steppenwolf"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
@@ -111,6 +116,11 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("demian"), "later");
   assert.equal(curatorialTrack("death-comes-for-the-archbishop"), "later");
   assert.equal(curatorialTrack("the-getting-of-wisdom"), "later");
+  assert.equal(curatorialTrack("bliss"), "later");
+  assert.equal(curatorialTrack("a-hundred-and-seventy-chinese-poems"), "later");
+  assert.equal(curatorialTrack("dubliners"), "later");
+  assert.equal(curatorialTrack("gitanjali"), "later");
+  assert.equal(curatorialTrack("martin-bircks-youth"), "later");
   assert.equal(curatorialTrack("steppenwolf"), "later");
 });
 
@@ -848,6 +858,103 @@ test("The Getting of Wisdom is a local waking Rituals bind, not locked recommend
   assert.equal(curatorialTrack("the-getting-of-wisdom"), "later");
 });
 
+test("Bliss is a local before-sleep bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "bliss");
+  assert.ok(work);
+  assert.equal(work.year, 1920);
+  assert.equal(work.title, "Bliss");
+  assert.equal(work.author, "Katherine Mansfield");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 44385);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^Although Bertha Young was thirty/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("bliss"));
+  assert.ok(lane!.workIds.indexOf("bliss") > lane!.workIds.indexOf("demian"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("bliss"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("bliss"), false);
+  assert.equal(curatorialTrack("bliss"), "later");
+});
+
+test("A Hundred and Seventy Chinese Poems is a local before-sleep Rituals bind, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "a-hundred-and-seventy-chinese-poems");
+  assert.ok(work);
+  assert.equal(work.year, 1918);
+  assert.equal(work.title, "A Hundred and Seventy Chinese Poems");
+  assert.equal(work.author, "Various (tr. Arthur Waley)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 42290);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^My bed is so empty/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("a-hundred-and-seventy-chinese-poems"));
+  assert.ok(
+    lane!.workIds.indexOf("a-hundred-and-seventy-chinese-poems") > lane!.workIds.indexOf("bliss"),
+  );
+  assert.equal(
+    (NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("a-hundred-and-seventy-chinese-poems"),
+    false,
+  );
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("a-hundred-and-seventy-chinese-poems"), false);
+  assert.equal(curatorialTrack("a-hundred-and-seventy-chinese-poems"), "later");
+});
+
+test("Dubliners is a local before-sleep bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "dubliners");
+  assert.ok(work);
+  assert.equal(work.year, 1914);
+  assert.equal(work.title, "Dubliners");
+  assert.equal(work.author, "James Joyce");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 2814);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^There was no hope for him this time/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("dubliners"));
+  assert.ok(lane!.workIds.indexOf("dubliners") > lane!.workIds.indexOf("a-hundred-and-seventy-chinese-poems"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("dubliners"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("dubliners"), false);
+  assert.equal(curatorialTrack("dubliners"), "later");
+});
+
+test("Gitanjali is a local before-sleep bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "gitanjali");
+  assert.ok(work);
+  assert.equal(work.year, 1912);
+  assert.equal(work.title, "Gitanjali");
+  assert.equal(work.author, "Rabindranath Tagore");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 7164);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^Thou hast made me endless/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
+  assert.ok(lane?.workIds.includes("gitanjali"));
+  assert.ok(lane!.workIds.indexOf("gitanjali") > lane!.workIds.indexOf("dubliners"));
+  assert.equal(unwind?.workIds.includes("gitanjali"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("gitanjali"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("gitanjali"), false);
+  assert.equal(curatorialTrack("gitanjali"), "later");
+});
+
+test("Martin Birck's Youth is a local before-sleep bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "martin-bircks-youth");
+  assert.ok(work);
+  assert.equal(work.year, 1930);
+  assert.equal(work.title, "Martin Birck's Youth");
+  assert.equal(work.author, "Hjalmar Söderberg (tr. Charles Wharton Stork)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 78363);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^Martin Birck was a little child/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("martin-bircks-youth"));
+  assert.ok(lane!.workIds.indexOf("martin-bircks-youth") > lane!.workIds.indexOf("gitanjali"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("martin-bircks-youth"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("martin-bircks-youth"), false);
+  assert.equal(curatorialTrack("martin-bircks-youth"), "later");
+});
+
 test("Steppenwolf stays off this Next / Rituals pack", () => {
   const work = SHELF.find((item) => item.id === "steppenwolf");
   assert.ok(work);
@@ -857,6 +964,19 @@ test("Steppenwolf stays off this Next / Rituals pack", () => {
   }
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("steppenwolf"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("steppenwolf"), false);
+});
+
+test("Unhuman Tour soft-holds stay off this Next / Rituals pack", () => {
+  for (const id of ["unhuman-tour-kusamakura", "kusamakura-unhuman-tour"]) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, undefined, id);
+    for (const lane of RITUAL_LANES) {
+      assert.equal(lane.workIds.includes(id), false, `${id} ${lane.id}`);
+    }
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+  }
 });
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {
