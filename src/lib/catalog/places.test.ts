@@ -100,12 +100,60 @@ test("country fallback stays a country, not a map hub city", () => {
   assert.equal(place!.region, "fi");
 });
 
-test("every region used by the shelf has a shape", () => {
+test("every shelf work resolves a place with a silhouette", () => {
   const missing: string[] = [];
+  const shapeless: string[] = [];
   for (const work of SHELF) {
     const place = placeFor(work);
-    if (!place) continue;
-    if (!REGION_SHAPES[place.region]) missing.push(`${work.id}=${place.region}`);
+    if (!place) missing.push(`${work.id} (${work.author}, ${work.language})`);
+    else if (!REGION_SHAPES[place.region]) shapeless.push(`${work.id}=${place.region}`);
   }
-  assert.deepEqual(missing, [], missing.join("; "));
+  assert.deepEqual(missing, [], `missing place: ${missing.join("; ")}`);
+  assert.deepEqual(shapeless, [], `no silhouette: ${shapeless.join("; ")}`);
+});
+
+test("The Purple Land and Hudson setting overrides chip honestly", () => {
+  assert.deepEqual(placeForId("the-purple-land"), { label: "Uruguay", region: "uy" });
+  assert.deepEqual(placeForId("green-mansions"), { label: "Guyana", region: "gy" });
+  assert.deepEqual(placeForId("a-crystal-age"), { label: "England", region: "gb" });
+  assert.deepEqual(placeForId("beowulf"), { label: "England", region: "gb" });
+});
+
+test("former no-place shelf rows now resolve a country chip", () => {
+  const expect: Record<string, { label: string; region: string }> = {
+    fishke: { label: "Belarus", region: "by" },
+    quiroga: { label: "Uruguay", region: "uy" },
+    breakdown: { label: "Palestine", region: "ps" },
+    dybbuk: { label: "Ukraine", region: "ua" },
+    iphigenia: { label: "Venezuela", region: "ve" },
+    tropic: { label: "Guyana", region: "gy" },
+    barbara: { label: "Venezuela", region: "ve" },
+    "mama-blanca": { label: "Venezuela", region: "ve" },
+    guatemala: { label: "Guatemala", region: "gt" },
+    beowulf: { label: "England", region: "gb" },
+    "song-of-songs": { label: "Israel", region: "il" },
+    "malay-annals-sejarah-melayu": { label: "Malaysia", region: "my" },
+    "kim-van-kieu-tan-truyen-the-tale-of-kieu": { label: "Vietnam", region: "vn" },
+    "the-purple-land": { label: "Uruguay", region: "uy" },
+    azul: { label: "Nicaragua", region: "ni" },
+    "malay-sketches": { label: "Malaysia", region: "my" },
+    "in-court-and-kampong": { label: "Malaysia", region: "my" },
+    "laos-folk-lore-of-farther-india": { label: "Laos", region: "la" },
+    "the-literature-of-arabia": { label: "Iraq", region: "iq" },
+    "green-mansions": { label: "Guyana", region: "gy" },
+    "cantos-de-vida-y-esperanza": { label: "Nicaragua", region: "ni" },
+    "the-book-of-the-birds-paksi-pakaranam": { label: "Thailand", region: "th" },
+    "the-epic-of-gilgamesh": { label: "Iraq", region: "iq" },
+    "west-african-folk-tales": { label: "Ghana", region: "gh" },
+    "south-american-jungle-tales": { label: "Uruguay", region: "uy" },
+    "the-autobiography-of-munshi-abdullah-hikayat-abd": { label: "Malaysia", region: "my" },
+    "letters-of-a-javanese-princess": { label: "Indonesia", region: "id" },
+    "the-garden-of-bright-waters": { label: "Iraq", region: "iq" },
+    "a-crystal-age": { label: "England", region: "gb" },
+  };
+  for (const [id, want] of Object.entries(expect)) {
+    const work = shelfWork(id);
+    assert.ok(work, id);
+    assert.deepEqual(placeFor(work!), want, id);
+  }
 });

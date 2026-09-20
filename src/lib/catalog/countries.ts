@@ -509,6 +509,8 @@ const WORK_COUNTRY: Record<string, string> = {
   // Folklore / anonymous / compiled
   njala: "Iceland",
   nights: "Egypt",
+  // Old English poem; narrative is Denmark/Geatland. Chip England
+  // (literary language/origin) rather than invent a North Sea city.
   beowulf: "United Kingdom",
   "the-nibelungenlied": "Germany",
   "laxd-la-saga": "Iceland",
@@ -532,6 +534,10 @@ const WORK_COUNTRY: Record<string, string> = {
   "an-african-tragedy": "South Africa",
   tropic: "Guyana",
   "the-purple-land": "Uruguay",
+  // Hudson wrote from Uruguay; Green Mansions is Guiana jungle, not the Banda Oriental.
+  "green-mansions": "Guyana",
+  // Pastoral utopia in a future English countryside, not Uruguay.
+  "a-crystal-age": "United Kingdom",
   "maria-chapdelaine": "Canada",
   cathay: "China",
   kalevala: "Finland",
@@ -551,7 +557,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "selected-polish-tales": "Poland",
   "yiddish-tales": "Poland",
   "brazilian-tales": "Brazil",
-  "the-dybbuk": "Ukraine",
+  dybbuk: "Ukraine",
   fishke: "Belarus",
   tevye: "Ukraine",
   bontshe: "Poland",
@@ -569,9 +575,9 @@ const WORK_COUNTRY: Record<string, string> = {
   maria: "Colombia",
   vortex: "Colombia",
   iphigenia: "Venezuela",
-  "dona-barbara": "Venezuela",
+  barbara: "Venezuela",
   "mama-blanca": "Venezuela",
-  "legends-of-guatemala": "Guatemala",
+  guatemala: "Guatemala",
   "don-segundo-sombra": "Argentina",
   "tradiciones-peruanas": "Peru",
   quiroga: "Uruguay",
