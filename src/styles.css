@@ -470,8 +470,8 @@ html.together-compose.together-kb .chat-slot {
   overflow: hidden;
   align-content: stretch;
   grid-template-columns: 1fr;
-  /* mark · pillars · featured · adapted · works · bottom search */
-  grid-template-rows: 3rem minmax(10rem, 1fr) minmax(10rem, 1fr) auto auto auto auto;
+  /* mark · pillars · adapted · works · bottom search — no extra chrome gap */
+  grid-template-rows: 3rem minmax(10rem, 1fr) minmax(10rem, 1fr) auto auto auto;
   grid-auto-rows: auto;
 }
 
@@ -482,7 +482,7 @@ html.together-compose.together-kb .chat-slot {
 }
 
 .board.board-doors.has-resume {
-  grid-template-rows: 3rem minmax(8.25rem, auto) minmax(7.5rem, 1fr) minmax(7.5rem, 1fr) auto auto auto auto;
+  grid-template-rows: 3rem minmax(8.25rem, auto) minmax(7.5rem, 1fr) minmax(7.5rem, 1fr) auto auto auto;
 }
 
 .board.board-doors > .cell-resume {
@@ -514,7 +514,6 @@ html.together-compose.together-kb .chat-slot {
 }
 
 .cell-adapted,
-.cell-featured,
 .cell-works {
   position: relative;
   grid-column: 1 / -1;
@@ -567,23 +566,6 @@ html.together-compose.together-kb .chat-slot {
 .cell-adapted:focus-visible {
   outline: 2px solid var(--color-ink);
   outline-offset: -2px;
-}
-
-.cell-featured {
-  display: flex;
-  flex-direction: column;
-  border-top: var(--spacing-rule) solid var(--color-rule);
-}
-
-.featured-kicker {
-  padding: 0.55rem 1.35rem 0;
-  color: var(--color-muted);
-  letter-spacing: var(--tracking-kicker);
-  text-transform: uppercase;
-}
-
-.cell-featured .works-scroller {
-  padding-top: 0.4rem;
 }
 
 .cell-works::before,
@@ -733,8 +715,7 @@ html.together-compose.together-kb .chat-slot {
 
 .cell-wide,
 .cell-band,
-.cell-search,
-.cell-featured {
+.cell-search {
   grid-column: 1 / -1;
 }
 
@@ -850,12 +831,6 @@ html.together-compose.together-kb .chat-slot {
   outline-offset: -2px;
 }
 
-.cell-featured {
-  min-height: 10.5rem;
-  content-visibility: auto;
-  contain-intrinsic-size: auto 13rem;
-}
-
 .cell-tall,
 .cell-unit,
 .cell-shuffle,
@@ -892,7 +867,6 @@ html.together-compose.together-kb .chat-slot {
   .cell-tall,
   .cell-unit,
   .cell-search,
-  .cell-featured,
   .cell-adapted,
   .cell-adapted-intro,
   .cell-adapted-lane,
@@ -919,7 +893,6 @@ html.together-compose.together-kb .chat-slot {
   .cell-adapted,
   .cell-adapted-intro,
   .cell-adapted-lane,
-  .cell-featured,
   .cell-works {
     grid-column: 1 / 13;
   }
@@ -941,7 +914,7 @@ html.together-compose.together-kb .chat-slot {
   }
   .board.board-doors {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-template-rows: 3rem minmax(14rem, 1fr) minmax(14rem, 1fr) auto auto auto auto;
+    grid-template-rows: 3rem minmax(14rem, 1fr) minmax(14rem, 1fr) auto auto auto;
     min-height: 100svh;
     height: var(--vvh, 100dvh);
   }
@@ -954,7 +927,7 @@ html.together-compose.together-kb .chat-slot {
     overflow: hidden;
   }
   .board.board-doors.has-resume {
-    grid-template-rows: 3rem minmax(10rem, auto) minmax(12rem, 1fr) minmax(12rem, 1fr) auto auto auto auto;
+    grid-template-rows: 3rem minmax(10rem, auto) minmax(12rem, 1fr) minmax(12rem, 1fr) auto auto auto;
   }
   .board.board-doors > .cell-resume {
     grid-column: 1 / 13;
@@ -963,8 +936,6 @@ html.together-compose.together-kb .chat-slot {
   }
   .board.board-doors > .cell-adapted,
   .cell-adapted,
-  .board.board-doors > .cell-featured,
-  .cell-featured,
   .board.board-doors > .cell-works,
   .cell-works {
     grid-column: 1 / 13;
@@ -1008,10 +979,6 @@ html.together-compose.together-kb .chat-slot {
   .cell-import {
     grid-column: 1 / 13;
     min-height: 9rem;
-  }
-  .cell-featured {
-    grid-column: span 6;
-    min-height: 13rem;
   }
   .cell-unit {
     grid-column: span 3;
