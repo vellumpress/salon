@@ -149,6 +149,12 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Charing Cross chaos — Lilia laughing like royalty while Philip floods her with little towns to see: Gubbio, Pienza, Monteriano. Later the plot darkens; this open stays comic.`,
   "the-gadfly":
     `Pisa seminary heat — a lost sermon page, a caressing *Padre*, and a fruitseller calling *Fragola!* down the street. Later violence comes after this sit.`,
+  "the-immoralist":
+    `Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for. This Salon cut stops on the freedom line.`,
+  "letters-of-a-javanese-princess":
+    `Kartini writing from colonial Java in 1899 — she uses period phrases like “Indian world” and “pale sisters” for the Indies / Europe. Historical voice; Salon stops at the cloistered-arms beat. If you Host further letters, keep that frame named for the room.`,
+  "blood-and-sand":
+    `Fight-day breakfast: meat, black coffee, a huge cigar — and a dining room that treats the matador like family glory.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":
@@ -218,6 +224,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "vera",
       "trooper-peter-halket",
       "the-home-and-the-world",
+      "the-immoralist",
       "the-gadfly",
       "the-pattern",
       "it-was-not-nervousness",
@@ -242,6 +249,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "on-a-chinese-screen",
       "futility",
       "where-angels-fear-to-tread",
+      "letters-of-a-javanese-princess",
+      "blood-and-sand",
       "the-rubaiyat-of-omar-khayyam",
       "spring-and-all",
       "a-few-figs-from-thistles",
@@ -352,6 +361,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "where-angels-fear-to-tread": 2,
   "the-gadfly": 2,
   botchan: 5,
+  "the-immoralist": 2,
+  "letters-of-a-javanese-princess": 2,
+  "blood-and-sand": 2,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

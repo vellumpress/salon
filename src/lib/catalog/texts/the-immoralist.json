@@ -1,0 +1,81 @@
+{
+  "id": "the-immoralist",
+  "title": "The Immoralist",
+  "author": "André Gide (tr. Dorothy Bussy)",
+  "year": "1930",
+  "note": "Before-sleep ritual sit — freedom line.\n\nFaithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for.\n\nMichel’s confession opens on freedom; the Maghreb chapters that follow intensify desire and illness. This Salon cut stops on the freedom line. Warn the room if you Host further.\n\nThe Immoralist (Gide; tr. Dorothy Bussy; FR 1902; EN 1930; PG 78975). Sit through the freedom line. Stop before the rest of the novel. Skip the 1930 preface.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Freedom line",
+      "place": "one sitting",
+      "reentry": "My dear friends, I knew you were faithful.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "My dear friends, I knew you were faithful."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "You have answered my summons as quickly as I should have answered yours."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "And yet three years have gone by without your seeing me."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "May your friendship, which has been so proof against absence, be equally proof against the story I am going to tell you."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "For it was solely to see you, solely that you might listen to me, that I called upon you so suddenly and made you take this journey to my distant abode."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "The only help I wish for is this—to talk to you."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "For I have reached a point in my life beyond which I cannot go."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Not from weariness though."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "But I can no longer understand things."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "I want ... I want to talk, I tell you."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "To know how to free oneself is nothing; the arduous thing is to know what to do with one's freedom."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Let me speak of myself; I am going to tell you my life simply, without modesty and without pride, more simply than if I were talking to myself."
+    }
+  ]
+}

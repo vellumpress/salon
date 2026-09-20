@@ -157,6 +157,28 @@ test("The Gadfly uses the before-sleep Fragola sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
 });
 
+test("The Immoralist uses the before-sleep freedom-line sit", () => {
+  const copy = readerIntro(shelfAsWork("the-immoralist"));
+  assert.match(copy, /freedom/);
+  assert.match(copy, /Michel/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
+});
+
+test("Letters of a Javanese Princess shows the hardened Host note before the sit", () => {
+  const copy = readerIntro(shelfAsWork("letters-of-a-javanese-princess"));
+  assert.match(copy, /Indian world/);
+  assert.match(copy, /pale sisters/);
+  assert.match(copy, /cloistered-arms/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
+});
+
+test("Blood and Sand uses the waking fight-day breakfast sit", () => {
+  const copy = readerIntro(shelfAsWork("blood-and-sand"));
+  assert.match(copy, /breakfast/);
+  assert.match(copy, /matador/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
+});
+
 test("uses Featured before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),

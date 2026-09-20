@@ -1,0 +1,46 @@
+{
+  "id": "letters-of-a-javanese-princess",
+  "title": "Letters of a Javanese Princess",
+  "author": "Raden Adjeng Kartini (tr. Agnes Louise Symmers)",
+  "year": "1920",
+  "note": "Kartini writing from colonial Java in 1899 — she uses period phrases like “Indian world” and “pale sisters” for the Indies / Europe. Historical voice; Salon stops at the cloistered-arms beat. If you Host further letters, keep that frame named for the room.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Cloistered arms",
+      "place": "one sitting",
+      "reentry": "I have longed to make the acquaintance of a \"modern girl,\" that proud, independent girl who has all my sympathy!",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "I have longed to make the acquaintance of a \"modern girl,\" that proud, independent girl who has all my sympathy!"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "She who, happy and self-reliant, lightly and alertly steps on her way through life, full of enthusiasm and warm feeling; working not only for her own well-being and happiness, but for the greater good of humanity as a whole."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "I glow with enthusiasm toward the new time which has come, and can truly say that in my thoughts and sympathies I do not belong to the Indian world, but to that of my pale sisters who are struggling forward in the distant West."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "If the laws of my land permitted it, there is nothing that I had rather do than give myself wholly to the working and striving of the new woman in Europe; but age-long traditions that cannot be broken hold us fast cloistered in their unyielding arms."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Some day those arms will loosen and let us go, but that time lies as yet far from us, infinitely far."
+    }
+  ]
+}

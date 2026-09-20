@@ -1,0 +1,56 @@
+{
+  "id": "blood-and-sand",
+  "title": "Blood and Sand",
+  "author": "Vicente Blasco Ibáñez (tr. Mrs. W. A. Gillespie)",
+  "year": "1908",
+  "note": "Waking ritual sit — fight-day breakfast.\n\nFight-day breakfast: meat, black coffee, a huge cigar — and a dining room that treats the matador like family glory.\n\nThis sit is hotel-morning ritual before the plaza. Later chapters bring gorings and crowd violence. Warn the room if you Host into the ring.\n\nBlood and Sand (Blasco Ibáñez; tr. Mrs. W. A. Gillespie; 1908; PG 54222). Sit through the iodoform memory. Stop before the rest of the novel.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Fight-day breakfast",
+      "place": "one sitting",
+      "reentry": "Juan Gallardo breakfasted early as was his custom on the days of a bull-fight.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Juan Gallardo breakfasted early as was his custom on the days of a bull-fight."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "A little roast meat was his only dish."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Wine he did not touch, and the bottle remained unopened before him."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "He had to keep himself steady."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "He drank two cups of strong black coffee and then, lighting an enormous cigar, sat with his elbows resting on the table and his chin on his hands, watching with drowsy eyes the customers who, little by little, began to fill the dining-room."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "For many years past, ever since he had been given *la alternativa* in the Bull-ring of Madrid, he had always lodged at that same hotel in the Calle de Alcalá, where the proprietors treated him as one of the family, and waiters, porters, kitchen scullions, and old chambermaids all adored him as the glory of the establishment."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "There also had he stayed many days, swathed in bandages, in a dense atmosphere of iodoform and cigar smoke, as the result of two bad gorings—but these evil memories had not made much impression."
+    }
+  ]
+}
