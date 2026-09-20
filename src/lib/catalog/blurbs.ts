@@ -53,6 +53,12 @@ const BLURBS: Record<string, string> = {
     "Charing Cross chaos — Lilia laughing like royalty while Philip names the little towns: Gubbio, Pienza, Monteriano.",
   "the-gadfly":
     "Pisa seminary heat, a lost sermon page, and a fruitseller calling Fragola! down the street.",
+  "the-immoralist":
+    "Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for.",
+  "letters-of-a-javanese-princess":
+    "She wants the modern girl — free, warm, working for more than herself — and names the arms that still hold her.",
+  "blood-and-sand":
+    "Fight-day breakfast: meat, black coffee, a huge cigar — and a dining room that treats the matador like family glory.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:

@@ -254,6 +254,42 @@ test("Where Angels Fear to Tread waking sit is the platform cut", () => {
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
+test("The Immoralist before-sleep sit is the freedom-line cut", () => {
+  const item = work({
+    id: "the-immoralist",
+    form: "novel",
+    breaths: 12,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Letters of a Javanese Princess waking sit is the cloistered-arms cut", () => {
+  const item = work({
+    id: "letters-of-a-javanese-princess",
+    form: "other",
+    breaths: 5,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Blood and Sand waking sit is the fight-day breakfast cut", () => {
+  const item = work({
+    id: "blood-and-sand",
+    form: "novel",
+    breaths: 7,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
 test("The Gadfly before-sleep sit is the Fragola cut, not the novel", () => {
   const item = work({
     id: "the-gadfly",

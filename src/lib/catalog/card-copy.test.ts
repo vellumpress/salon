@@ -61,8 +61,11 @@ test("known origin overrides", () => {
     "noli-me-tangere": "Philippines",
     vera: "United Kingdom",
     "the-home-and-the-world": "India",
+    "the-immoralist": "France",
     "where-angels-fear-to-tread": "United Kingdom",
     "the-gadfly": "Ireland",
+    "letters-of-a-javanese-princess": "Indonesia",
+    "blood-and-sand": "Spain",
     "on-a-chinese-screen": "United Kingdom",
     futility: "United Kingdom",
     "poison-tree": "India",
@@ -177,6 +180,18 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /Chapter I.*Scar/i,
       opening: /^Because of an hereditary recklessness, I have been playing always a losing game since my childhood/,
     },
+    "the-immoralist": {
+      scene: /Freedom line/i,
+      opening: /^My dear friends, I knew you were faithful/,
+    },
+    "letters-of-a-javanese-princess": {
+      scene: /Cloistered arms/i,
+      opening: /^I have longed to make the acquaintance/,
+    },
+    "blood-and-sand": {
+      scene: /Fight-day breakfast/i,
+      opening: /^Juan Gallardo breakfasted early/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -290,6 +305,24 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
         packed.breaths.map((b) => b.text).join(" "),
         /chestnut tree|Yamashiro-ya|Kantaro/i,
       );
+    }
+    if (id === "the-immoralist") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /talking to myself\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /preface|Bussy|Gide/i,
+      );
+    }
+    if (id === "letters-of-a-javanese-princess") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /infinitely far\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /Couperus|foreword|\[\d+\]/i,
+      );
+    }
+    if (id === "blood-and-sand") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /not made much impression\.?$/);
+      assert.ok(packed.breaths.some((breath) => /\*la alternativa\*/.test(breath.text)));
     }
   }
 });
@@ -757,6 +790,101 @@ test("The Gadfly opens in Pisa and binds the Fragola sit, with full text for con
     return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
   });
   assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
+});
+
+test("The Immoralist opens on the freedom line and skips the 1930 preface", () => {
+  const work = SHELF.find((item) => item.id === "the-immoralist");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 78975);
+  assert.equal(work!.title, "The Immoralist");
+  assert.equal(work!.author, "André Gide (tr. Dorothy Bussy)");
+  assert.equal(work!.year, 1930);
+  assert.match(work!.opening ?? "", /^My dear friends, I knew you were faithful/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/the-immoralist.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/the-immoralist.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.note, /freedom line/);
+  assert.match(packed.note, /Warn the room if you Host further/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(packed.scenes[0]?.title ?? "", /Freedom line/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^My dear friends, I knew you were faithful/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /talking to myself\.?$/);
+  assert.equal(
+    packed.breaths.some((breath) => /preface|Bussy/i.test(breath.text)),
+    false,
+    "open-at should skip the Gide/Bussy preface",
+  );
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+  for (const pack of [packed, full]) {
+    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+    assert.doesNotMatch(joined, /project gutenberg/i);
+  }
+});
+
+test("Letters of a Javanese Princess ships the hardened Host note and skips Couperus", () => {
+  const work = SHELF.find((item) => item.id === "letters-of-a-javanese-princess");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 34647);
+  assert.equal(work!.title, "Letters of a Javanese Princess");
+  assert.equal(work!.author, "Raden Adjeng Kartini (tr. Agnes Louise Symmers)");
+  assert.equal(work!.year, 1920);
+  assert.match(work!.opening ?? "", /^I have longed to make the acquaintance/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/letters-of-a-javanese-princess.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/letters-of-a-javanese-princess.json", import.meta.url), "utf8"),
+  ) as { note: string; breaths: { text: string }[] };
+  assert.match(packed.note, /Indian world/);
+  assert.match(packed.note, /pale sisters/);
+  assert.match(packed.note, /name that colonial frame for the room first/);
+  assert.match(packed.note, /not today’s usage/);
+  assert.match(full.note, /Indian world/);
+  assert.match(work!.intro ?? "", /Indian world/);
+  assert.match(work!.intro ?? "", /pale sisters/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|Couperus/i);
+  assert.match(packed.scenes[0]?.title ?? "", /Cloistered arms/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^I have longed to make the acquaintance/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /infinitely far\.?$/);
+  assert.equal(
+    packed.breaths.some((breath) => /Couperus|foreword|\[\d+\]/.test(breath.text)),
+    false,
+    "open-at should skip Couperus and footnote markers",
+  );
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the letters");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("Blood and Sand opens on fight-day breakfast and binds only that sit", () => {
+  const work = SHELF.find((item) => item.id === "blood-and-sand");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 54222);
+  assert.equal(work!.title, "Blood and Sand");
+  assert.equal(work!.author, "Vicente Blasco Ibáñez (tr. Mrs. W. A. Gillespie)");
+  assert.equal(work!.year, 1908);
+  assert.match(work!.opening ?? "", /^Juan Gallardo breakfasted early/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/blood-and-sand.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/blood-and-sand.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Fight-day breakfast/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^Juan Gallardo breakfasted early/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /not made much impression\.?$/);
+  assert.ok(packed.breaths.some((breath) => /\*la alternativa\*/.test(breath.text)));
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
 });
 
 test("The Cherry Orchard is a readable four-act play, not one breath per page", () => {

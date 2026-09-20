@@ -98,3 +98,24 @@ test("Trooper Peter Halket is a readable local EN bind", () => {
   assert.equal(isBoundLocal({ id: "trooper-peter-halket", local: true }), true);
   assert.equal(isBoundReadable({ id: "trooper-peter-halket", local: true, gutenberg: 1431 }), true);
 });
+
+test("The Immoralist is a readable local EN bind", () => {
+  assert.equal(isEnReadableOff("the-immoralist"), false);
+  assert.equal(isBoundLocal({ id: "the-immoralist", local: true }), true);
+  assert.equal(isBoundReadable({ id: "the-immoralist", local: true, gutenberg: 78975 }), true);
+});
+
+test("Letters of a Javanese Princess is a readable local EN bind", () => {
+  assert.equal(isEnReadableOff("letters-of-a-javanese-princess"), false);
+  assert.equal(isBoundLocal({ id: "letters-of-a-javanese-princess", local: true }), true);
+  assert.equal(
+    isBoundReadable({ id: "letters-of-a-javanese-princess", local: true, gutenberg: 34647 }),
+    true,
+  );
+});
+
+test("Blood and Sand is a readable local EN bind", () => {
+  assert.equal(isEnReadableOff("blood-and-sand"), false);
+  assert.equal(isBoundLocal({ id: "blood-and-sand", local: true }), true);
+  assert.equal(isBoundReadable({ id: "blood-and-sand", local: true, gutenberg: 54222 }), true);
+});

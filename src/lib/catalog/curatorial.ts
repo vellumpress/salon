@@ -20,6 +20,9 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Trooper Peter Halket (Mashonaland / before-sleep Host-a-sit kopje).
  * The Home and the World (Bengal / before-sleep) — worldly Asia, behind the
  * Featured lead (April → Bridge → Maggot → Mirth → Quicksand).
+ * The Immoralist (France / before-sleep) — Next Featured-track; not cold-open.
+ * Letters of a Javanese Princess and Blood and Sand are ritual Next sits only —
+ * not Featured-track, not Featured carousel.
  * Where Angels Fear to Tread and The Gadfly are ritual Next sits only —
  * not Featured-track, not Featured carousel.
  * The Poison Tree is Later (Bengal / unwind) — not Next, not Featured.
@@ -39,6 +42,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "futility",
   "trooper-peter-halket",
   "the-home-and-the-world",
+  "the-immoralist",
 ] as const;
 
 /** Mira pack — Adapted by Salon lane only. Do not add to Featured / Next. */

@@ -53,8 +53,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "poison-tree": { label: "Bengal", region: "in" },
   "trooper-peter-halket": { label: "Mashonaland", region: "za" },
   "the-home-and-the-world": { label: "Bengal", region: "in" },
+  "the-immoralist": { label: "France", region: "fr" },
   "where-angels-fear-to-tread": { label: "England → Italy", region: "it" },
   "the-gadfly": { label: "Pisa", region: "it" },
+  "letters-of-a-javanese-princess": { label: "Java — Japara", region: "id" },
+  "blood-and-sand": { label: "Madrid", region: "es" },
 
   // Named examples
   botchan: { label: "Tokyo", region: "jp" },

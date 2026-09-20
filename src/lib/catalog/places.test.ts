@@ -20,8 +20,11 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "poison-tree": { label: "Bengal", region: "in" },
     "trooper-peter-halket": { label: "Mashonaland", region: "za" },
     "the-home-and-the-world": { label: "Bengal", region: "in" },
+    "the-immoralist": { label: "France", region: "fr" },
     "where-angels-fear-to-tread": { label: "England → Italy", region: "it" },
     "the-gadfly": { label: "Pisa", region: "it" },
+    "letters-of-a-javanese-princess": { label: "Java — Japara", region: "id" },
+    "blood-and-sand": { label: "Madrid", region: "es" },
     botchan: { label: "Tokyo", region: "jp" },
     "enchanted-april": { label: "Italy", region: "it" },
     "the-bridge-of-san-luis-rey": { label: "Peru", region: "pe" },
@@ -86,8 +89,11 @@ test("Featured, Next, and ritual-lane works all resolve a place with a silhouett
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("futility"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("trooper-peter-halket"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("the-home-and-the-world"));
+  assert.ok(NEXT_FEATURED_TRACK_IDS.includes("the-immoralist"));
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("where-angels-fear-to-tread"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-gadfly"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("letters-of-a-javanese-princess"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("blood-and-sand"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("poison-tree"), false);
   assert.ok(RITUAL_LANES.some((lane) => lane.workIds.includes("silhouettes")));
 });
@@ -172,7 +178,7 @@ test("former no-place shelf rows now resolve a country chip", () => {
     "west-african-folk-tales": { label: "Ghana", region: "gh" },
     "south-american-jungle-tales": { label: "Uruguay", region: "uy" },
     "the-autobiography-of-munshi-abdullah-hikayat-abd": { label: "Malaysia", region: "my" },
-    "letters-of-a-javanese-princess": { label: "Indonesia", region: "id" },
+    "letters-of-a-javanese-princess": { label: "Java — Japara", region: "id" },
     "the-garden-of-bright-waters": { label: "Iraq", region: "iq" },
     "a-crystal-age": { label: "England", region: "gb" },
   };

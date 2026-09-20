@@ -31,6 +31,9 @@ test("Featured carousel is April, Bridge, Maggot, then Mirth, then Quicksand", (
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-home-and-the-world"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("where-angels-fear-to-tread"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-gadfly"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-immoralist"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("letters-of-a-javanese-princess"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("blood-and-sand"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("miss-brill-adapted"), false);
@@ -56,6 +59,7 @@ test("Next Featured-track no longer lists Mirth or Quicksand", () => {
     "futility",
     "trooper-peter-halket",
     "the-home-and-the-world",
+    "the-immoralist",
   ]);
   assert.equal(curatorialTrack("quicksand"), "featured");
   assert.equal(curatorialTrack("the-house-of-mirth"), "featured");
@@ -70,8 +74,11 @@ test("Next Featured-track no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("futility"), "next");
   assert.equal(curatorialTrack("trooper-peter-halket"), "next");
   assert.equal(curatorialTrack("the-home-and-the-world"), "next");
+  assert.equal(curatorialTrack("the-immoralist"), "next");
   assert.equal(curatorialTrack("where-angels-fear-to-tread"), "later");
   assert.equal(curatorialTrack("the-gadfly"), "later");
+  assert.equal(curatorialTrack("letters-of-a-javanese-princess"), "later");
+  assert.equal(curatorialTrack("blood-and-sand"), "later");
   assert.equal(curatorialTrack("poison-tree"), "later");
 });
 
@@ -361,6 +368,74 @@ test("The Home and the World is a local before-sleep bind on Next Featured-track
   assert.ok(stub);
   assert.equal(stub.local, undefined);
   assert.notEqual(stub.id, work.id);
+});
+
+test("The Immoralist is a local before-sleep bind on Next Featured-track", () => {
+  const work = SHELF.find((item) => item.id === "the-immoralist");
+  assert.ok(work);
+  assert.equal(work.year, 1930);
+  assert.equal(work.title, "The Immoralist");
+  assert.equal(work.author, "André Gide (tr. Dorothy Bussy)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 78975);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^My dear friends, I knew you were faithful/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("the-immoralist"));
+  assert.ok(lane!.workIds.indexOf("the-immoralist") > lane!.workIds.indexOf("the-home-and-the-world"));
+  assert.ok(lane!.workIds.indexOf("the-immoralist") > lane!.workIds.indexOf("quicksand"));
+  assert.equal(
+    RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("the-immoralist"),
+    false,
+  );
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-immoralist"), false);
+  assert.equal(curatorialTrack("the-immoralist"), "next");
+  const stub = SHELF.find((item) => item.id === "immoralist");
+  assert.ok(stub);
+  assert.equal(stub.local, undefined);
+  assert.notEqual(stub.id, work.id);
+});
+
+test("Letters of a Javanese Princess is a local waking bind on Next, not Featured-track", () => {
+  const work = SHELF.find((item) => item.id === "letters-of-a-javanese-princess");
+  assert.ok(work);
+  assert.equal(work.year, 1920);
+  assert.equal(work.title, "Letters of a Javanese Princess");
+  assert.equal(work.author, "Raden Adjeng Kartini (tr. Agnes Louise Symmers)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 34647);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^I have longed to make the acquaintance/);
+  const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
+  assert.ok(lane?.workIds.includes("letters-of-a-javanese-princess"));
+  assert.ok(
+    lane!.workIds.indexOf("letters-of-a-javanese-princess") >
+      lane!.workIds.indexOf("enchanted-april"),
+  );
+  assert.equal(
+    (NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("letters-of-a-javanese-princess"),
+    false,
+  );
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("letters-of-a-javanese-princess"), false);
+  assert.equal(curatorialTrack("letters-of-a-javanese-princess"), "later");
+});
+
+test("Blood and Sand is a local waking bind on Next, not Featured-track", () => {
+  const work = SHELF.find((item) => item.id === "blood-and-sand");
+  assert.ok(work);
+  assert.equal(work.year, 1908);
+  assert.equal(work.title, "Blood and Sand");
+  assert.equal(work.author, "Vicente Blasco Ibáñez (tr. Mrs. W. A. Gillespie)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 54222);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^Juan Gallardo breakfasted early/);
+  const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
+  assert.ok(lane?.workIds.includes("blood-and-sand"));
+  assert.ok(lane!.workIds.indexOf("blood-and-sand") > lane!.workIds.indexOf("letters-of-a-javanese-princess"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("blood-and-sand"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("blood-and-sand"), false);
+  assert.equal(curatorialTrack("blood-and-sand"), "later");
 });
 
 test("Where Angels Fear to Tread is a local waking bind on Next, not Featured-track", () => {
