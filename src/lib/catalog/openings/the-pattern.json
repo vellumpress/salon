@@ -1,0 +1,381 @@
+{
+  "id": "the-pattern",
+  "title": "The Pattern",
+  "author": "Salon",
+  "year": "2026",
+  "note": "Confined for her own good, she learns the wallpaper until the crawl is the only way out—calm, not thriller. After Gilman, The Yellow Wallpaper, 1892.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The wallpaper",
+      "place": "Hudson",
+      "reentry": "John said the country would fix me.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "John said the country would fix me."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "He said it the way doctors say things when they have already decided: gently, and without room for reply."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "The house was a Victorian rental with good reviews and a locked gate."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Our baby stayed in the city with my sister."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Air, rest, no screens—John's protocol."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "He took my phone the first night and put it in the kitchen drawer \"so I wouldn't spiral.\""
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "In the mornings he checked that the drawer was still locked with a small padlock he had bought for luggage."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "I was given the front bedroom because it had the best light."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "The wallpaper was the color of old mustard and bruised cream, a pattern that looked, at first glance, like vines trying to become handwriting."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "John laughed when I asked to strip it."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"You're tired,\" he said."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "\"It's just paper.\""
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "He opened the window an inch and called that enough air."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "At first I slept."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Then I didn't."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The nights were long and the radiator made a soft knocking, as if someone polite were asking to come in."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "I walked the room in bare feet and counted the repeats in the design."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "There were places where the pattern did not match—seams that lied."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "In those lies I began to see a second figure: a woman, or the suggestion of one, stooped behind the lattice as if the wallpaper were a fence."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "John came upstate on weekends."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "He brought fruit and checked my notes."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "I was supposed to write only cheerful observations."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "When I wrote about the pattern he frowned and closed the notebook."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "\"Rumination,\" he said."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "\"We're past that.\""
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "He kissed my forehead and slept deeply beside me while I watched the wall breathe in the dark."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Once I touched his shoulder to wake him and he murmured, without opening his eyes, that I should try lavender."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "By the third week the figure was clearer."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "She crawled when the light shifted."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "Sometimes there were many of her, a soft crowd moving behind the design, pressing outward."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "I stopped telling John."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "He had begun to speak about extending the rest."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "He said my sister was managing fine."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "He said the baby was thriving without my \"anxious energy.\""
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "On the video calls I was allowed twice a week, my sister held the baby just out of frame."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "I peeled a corner of the paper one afternoon while he was at a conference call downstairs."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "The paste smelled sweet and chemical."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "Underneath was older paper, greener, also patterned."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "I laughed once, sharply, and put my hand over my mouth."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "The woman behind the wall wanted out."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "I understood that without deciding to understand it."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "At night I whispered to her."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "In the morning I smoothed my hair and told John I felt stronger."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "He was pleased."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "He left early for the city and promised to return Friday."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "He left a printed schedule on the fridge: meals, naps, no correspondence."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "Alone, I worked carefully."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "I tore where the seams were weakest."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "Dust fell into my hair."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "My nails split."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "The room filled with the dry smell of plaster."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "Sometimes I slept on the floor near the longest tear, cheek against the cool baseboard, listening for the soft drag of her body."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "Rain tapped the window like fingernails."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "On Thursday I found a strip already loosened near the window, as if she had begun from her side."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "I pulled until my arms shook."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "Behind the paper the plaster was scored with old marks—nail holes, a child's height chart from some other family."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "Friday evening John's headlights swept the driveway."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "I heard his key, his call from the stairs."
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "I had locked the bedroom door from the inside."
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "The wallpaper hung in long sheets around me like shed skin."
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "I was circling the room on all fours, shoulder brushing the remaining strips, because that was how she moved, and I had learned her gait perfectly."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "\"Open the door,\" John said."
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "\"I can't,\" I answered, and found that I was smiling."
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "\"She's out."
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "I'm helping her stay out.\""
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "He forced the lock."
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "He stood in the doorway with his suitcase and his careful face, and for a moment he looked afraid of me in a way that felt almost like respect."
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "I kept crawling."
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "The torn paper whispered under my knees."
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "Outside, somewhere beyond the locked gate, a train passed and left the house quieter than before."
+    },
+    {
+      "id": "s0-70",
+      "sceneId": "s0",
+      "text": "\"I've got out at last,\" I told him, quite calmly, \"in spite of you.\""
+    },
+    {
+      "id": "s0-71",
+      "sceneId": "s0",
+      "text": "There was only the pattern, and the place where it ended, and the soft raw wall that finally, finally, did not try to hold anyone in."
+    }
+  ]
+}

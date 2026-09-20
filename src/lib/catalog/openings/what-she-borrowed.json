@@ -1,0 +1,266 @@
+{
+  "id": "what-she-borrowed",
+  "title": "What She Borrowed",
+  "author": "Salon",
+  "year": "2026",
+  "note": "One borrowed night of glitter; a decade to learn it was paste. After Maupassant, The Necklace, 1884.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The gala",
+      "place": "Astoria",
+      "reentry": "Mathilde Loisel believed she had been born for better rooms.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Mathilde Loisel believed she had been born for better rooms."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "She lived with her husband, a city clerk in a municipal office near Queens Boulevard, in a walk-up that smelled of radiator dust and takeout containers rinsed for reuse."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "She hated the cracked laminate, the fluorescent kitchen, the way their acquaintances posted dinners she could not afford and apartments with plants that looked watered by someone paid to care."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "When an invitation came—an industry gala at a Midtown hotel, her husband's office allotted two seats—she wept, not from joy."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "\"I have nothing to wear,\" she said, turning the envelope over as if a dress might fall out."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "He gave her the money he had saved for a used scooter that would have shortened his commute."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "She bought a dress the color of wet ink and stood before the mirror until she almost believed she was someone else."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Still she touched her bare throat and felt unfinished."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "She went to Madame Forestier, an old school friend with a doorman building and jewelry that lived in velvet."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"Lend me something,\" Mathilde said, trying to sound casual, as if borrowing beauty were ordinary."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Forestier opened a box."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Bracelets."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "A thin gold chain."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Then Mathilde's fingers stopped on a diamond necklace that caught every lamp in the room."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "She fastened it with shaking hands and left before gratitude could become honesty about how much she needed to be seen."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "At the gala she was noticed."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Men asked her name as if it mattered."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "Women watched her throat."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "She danced until her feet hurt inside rented shoes and forgot, for a few hours, the walk-up and the clerk's careful budget and the way desire had always made her mean to herself."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "In the cab home she laughed against her husband's shoulder, the city sliding by in wet streaks."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Then, in the fluorescent lobby of their building, beneath a notice about package theft, she put her hand to her neck and found only skin."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "They searched the cab company's lost-and-found, the hotel carpet near the ballroom doors, the sidewalk where the doorman swore he had seen nothing."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Nothing."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "They told Forestier the clasp had broken and needed repair; Mathilde could not bear to say lost."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "They borrowed from a cousin, financed through a storefront lender, signed papers that tasted like metal."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "They bought a necklace that matched—or nearly matched—in a bright shop where the salesman spoke softly of clarity and cut."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "They returned it in a box that felt heavier than the debt."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "Then the years began."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "Mathilde dismissed any thought of help she could not pay for."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "She scrubbed the building stairs for a reduction in rent."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "She took night shifts folding linen in a hotel basement where the air was always damp and the fluorescents never fully died."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "Her husband worked overtime until his handwriting slanted with fatigue and his jokes stopped."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "They moved to a cheaper unit with a view of a brick wall."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Her voice roughened."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "Her beauty—once her only inheritance—went thin and practical, hair tied back, hands red at the knuckles."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "Sometimes, walking home at 2 a.m. past a shared scooter tipped on its side, she remembered the weight of diamonds against her collarbone and felt sick with wanting and with the knowledge of what wanting had cost."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "Ten years."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "The debt died at last, paid to its final ugly cent."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "Mathilde's face had learned what work writes on a person."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "One Sunday on the river path she saw Madame Forestier, still young-looking, still easy in her coat, holding a coffee."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "Mathilde stopped her."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "Pride, or what was left of it, made her tell the story: the loss, the replacement, the decade of stairs and linen and silence at dinner."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "Forestier took her hands."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "Her eyes were strange—soft, almost frightened."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "\"Oh, my poor Mathilde,\" she said."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "\"Mine was paste."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "It was worth at most five hundred dollars.\""
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "The path kept moving around them—joggers, a dog shaking river water onto the boards, a child with a bright cup."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "Mathilde stood there and felt the years rearrange themselves behind her, glittering and worthless, impossible to put back on, impossible even to hate cleanly."
+    }
+  ]
+}

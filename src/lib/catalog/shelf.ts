@@ -1205,6 +1205,122 @@ export const SHELF: ShelfWork[] = [
     intro:
       "Off-season Cape May, a small white dog, and an affair that refuses to stay temporary once the city proves too small for what began. After Chekhov, The Lady with the Dog, 1899.",
   },
+  {
+    id: "between-the-drop-and-the-water",
+    title: "Between the Drop and the Water",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening:
+      "Peyton Farquhar stood on the edge of the condemned pier with his hands bound and a rope around his throat.",
+    breaths: 55,
+    intro:
+      "The rope fails—or seems to—until the Hudson remembers what it meant. After Bierce, An Occurrence at Owl Creek Bridge, 1890.",
+  },
+  {
+    id: "he-woke-changed",
+    title: "He Woke Changed",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening:
+      "Gregor Samsa woke from uneasy dreams and found himself changed into something that would not fit under the covers.",
+    breaths: 66,
+    intro:
+      "A breadwinner wakes wrong; the family ledger of duty and relief does the rest. After Kafka, The Metamorphosis, 1915.",
+  },
+  {
+    id: "the-pattern",
+    title: "The Pattern",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening: "John said the country would fix me.",
+    breaths: 72,
+    intro:
+      "Confined for her own good, she learns the wallpaper until the crawl is the only way out—calm, not thriller. After Gilman, The Yellow Wallpaper, 1892.",
+  },
+  {
+    id: "a-coat-worthy-of-respect",
+    title: "A Coat Worthy of Respect",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening:
+      "Akaky Akakievich Petrovich—called Akaky at the office because longer names took time—copied documents for the city with a devotion that looked, to happier people, like emptiness.",
+    breaths: 57,
+    intro:
+      "A meek clerk earns a coat meal by meal; winter takes it, and the city notices too late. After Gogol, The Overcoat, 1842.",
+  },
+  {
+    id: "what-she-borrowed",
+    title: "What She Borrowed",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening: "Mathilde Loisel believed she had been born for better rooms.",
+    breaths: 49,
+    intro:
+      "One borrowed night of glitter; a decade to learn it was paste. After Maupassant, The Necklace, 1884.",
+  },
+  {
+    id: "it-was-not-nervousness",
+    title: "It Was Not Nervousness",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening: "Listen. I can tell this calmly.",
+    breaths: 71,
+    intro:
+      "He can tell it calmly. The pulse under the Queens floorboards will not stay calm. After Poe, The Tell-Tale Heart, 1843.",
+  },
+  {
+    id: "during-carnival",
+    title: "During Carnival",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening: "I did not announce what Fortunato had done to me.",
+    breaths: 60,
+    intro:
+      "Carnival noise above; the last brick set with intimate care below. After Poe, The Cask of Amontillado, 1846.",
+  },
+  {
+    id: "what-we-sold",
+    title: "What We Sold",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 8,
+    local: true,
+    opening:
+      "Della counted the jar twice on Christmas Eve morning—coins saved one by one in what used to hold pasta sauce, the label still ghosting the glass—and still came up short of two dollars.",
+    breaths: 39,
+    intro:
+      "Two broke lovers ruin their treasures for each other and invent a quieter wealth in the wreckage. After O. Henry, The Gift of the Magi, 1905.",
+  },
 ];
 
 const BY_ID = new Map(SHELF.map((item) => [item.id, item]));

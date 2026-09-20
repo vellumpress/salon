@@ -29,6 +29,14 @@ export const ADAPTED_BY_SALON_IDS = [
   "miss-brill-adapted",
   "prefer-not",
   "late-season",
+  "between-the-drop-and-the-water",
+  "he-woke-changed",
+  "the-pattern",
+  "a-coat-worthy-of-respect",
+  "what-she-borrowed",
+  "it-was-not-nervousness",
+  "during-carnival",
+  "what-we-sold",
 ] as const;
 
 const FEATURED = new Set(FEATURED_CAROUSEL_IDS);

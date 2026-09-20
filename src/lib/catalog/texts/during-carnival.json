@@ -1,0 +1,321 @@
+{
+  "id": "during-carnival",
+  "title": "During Carnival",
+  "author": "Salon",
+  "year": "2026",
+  "note": "Carnival noise above; the last brick set with intimate care below. After Poe, The Cask of Amontillado, 1846.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The cellar",
+      "place": "New Orleans",
+      "reentry": "I did not announce what Fortunato had done to me.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "I did not announce what Fortunato had done to me."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Announcements are for people who want witnesses."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "I wanted a wall."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "He had smiled through a year of small humiliations—my name mispronounced in rooms that mattered, a deal whispered away, a joke at my expense that traveled farther than apology ever would."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "I bore it the way one bears damp in an old house: silently, taking measurements."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Carnival gave me cover."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Carnival gave him thirst and pride."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "The Quarter flooded with glitter, cheap beads, and the smell of sugar burned into night air."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "A brass band turned a corner and took the street with it."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Fortunato wore a jester's cap with bells that laughed whenever he moved, and a coat open to the humid cold."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "He was drunk enough to be generous and vain enough to be led by anyone who questioned his taste."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "I found him beneath a balcony dripping with plastic pearls and greeted him as a friend—because I had practiced friendship for months, carefully, until he took my arm without thinking."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"I bought a cask,\" I told him, pitching my voice toward embarrassment, almost shame."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "\"Amontillado."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Mid-carnival, of all times."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "I'm not sure it's genuine."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Luchresi said he'd come look tonight, but—\""
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "Fortunato's face pinched at the name."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Pride is a leash if you know where to stand."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "\"Luchresi cannot tell Amontillado from cooking sherry,\" he said."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"Show me."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Now. Before the night gets stupid.\""
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "The bells agreed, bright and idiotic."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "We left the music behind by degrees—first the drums, then the horns, then only our footsteps, his cough, and a scooter beeping somewhere as if startled."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "My family's old building kept a cellar that held wine, brick, and a damp that never left the bones of the place."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "On the stairs I offered him a bottle for his throat."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "He drank and toasted the buried and the soon-to-be-drunk."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "I smiled in the dark where he could not quite see my mouth."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "Deeper. The air grew colder and mineral, like a mouthful of coins."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "I showed him niches, bottles gray with dust, a trowel left among stones as if a workman had stepped away for a smoke."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "Water ticked somewhere in the walls."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "At the end of a narrow crypt I gestured to a recess barely wider than a man."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "\"There,\" I said."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "\"If it's anything, it's there.\""
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "He stepped in, unsteady, merry, already composing the lecture he would give me about vintage and trust."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "In a moment I had him against the granite."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "The chain went around his waist with a sound like heavy jewelry."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "The padlock clicked—small, polite, final."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "His bells rang once in surprise."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "Dust sifted from the ceiling onto his shoulders like cheap snow."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "\"This is a joke,\" he said, still half laughing, as if Carnival could not end in a cellar, as if I were still the man who absorbed insults for sport."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "\"Yes,\" I said, and began the wall."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "Brick after brick."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "Mortar wet on my gloves, gray as river fog."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "At first he pleaded with jokes, then with my first name spoken softly, then with threats that had no legs in the dark."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "Then he wept in a way that would have moved someone else—someone who had not already chosen the last brick."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "I worked without hurry."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "From the street far above, Carnival thundered on—horns, a sudden cheer, someone screaming with joy that belonged to another plot entirely."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "When only a single opening remained, I held the lantern close so he could see my face, calm, almost tender, the face of a host at the end of a long party."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "\"For the love of God, Montresor!\" he cried."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "\"Yes,\" I said."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "\"For the love of God.\""
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "I set the last brick with care and stepped back into the dark that now belonged only to me."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "I called his name once, for form."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "The bells did not answer."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "Only the drip in the walls, and my own breathing, steady as the mortar cooling."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "Years later I still walk past the building during Carnival."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "Beads click underfoot."
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "A shared scooter lies abandoned near the curb, one wheel still spinning."
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "Under the music I hear nothing from the cellar—only, if I stand long enough, the remembered drip, and the place where his bells went quiet."
+    }
+  ]
+}

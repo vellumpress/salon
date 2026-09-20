@@ -15,6 +15,20 @@ import { placeFor } from "./places.ts";
 import { readerIntro } from "../reader-intro.ts";
 import type { Work } from "../literature.ts";
 
+const LANE: Record<string, "unwind" | "before-sleep"> = {
+  "miss-brill-adapted": "unwind",
+  "prefer-not": "unwind",
+  "late-season": "unwind",
+  "between-the-drop-and-the-water": "before-sleep",
+  "he-woke-changed": "unwind",
+  "the-pattern": "before-sleep",
+  "a-coat-worthy-of-respect": "unwind",
+  "what-she-borrowed": "unwind",
+  "it-was-not-nervousness": "before-sleep",
+  "during-carnival": "before-sleep",
+  "what-we-sold": "unwind",
+};
+
 const EXPECT = {
   "miss-brill-adapted": {
     title: "The Bench at Four",
@@ -40,11 +54,77 @@ const EXPECT = {
     credit: /After Chekhov, The Lady with the Dog, 1899/,
     scene: /off season/i,
   },
+  "between-the-drop-and-the-water": {
+    title: "Between the Drop and the Water",
+    opening: /^Peyton Farquhar stood on the edge of the condemned pier/,
+    last: /let him go home/,
+    place: { label: "Hudson River, upstate New York", region: "us" },
+    credit: /After Bierce, An Occurrence at Owl Creek Bridge, 1890/,
+    scene: /pier/i,
+  },
+  "he-woke-changed": {
+    title: "He Woke Changed",
+    opening: /^Gregor Samsa woke from uneasy dreams and found himself changed/,
+    last: /someone else's problem/,
+    place: { label: "Newark, New Jersey", region: "us" },
+    credit: /After Kafka, The Metamorphosis, 1915/,
+    scene: /apartment/i,
+  },
+  "the-pattern": {
+    title: "The Pattern",
+    opening: /^John said the country would fix me/,
+    last: /did not try to hold anyone in/,
+    place: { label: "Hudson, New York", region: "us" },
+    credit: /After Gilman, The Yellow Wallpaper, 1892/,
+    scene: /wallpaper/i,
+  },
+  "a-coat-worthy-of-respect": {
+    title: "A Coat Worthy of Respect",
+    opening: /^Akaky Akakievich Petrovich/,
+    last: /impossible to ignore/,
+    place: { label: "Brooklyn, New York", region: "us" },
+    credit: /After Gogol, The Overcoat, 1842/,
+    scene: /coat/i,
+  },
+  "what-she-borrowed": {
+    title: "What She Borrowed",
+    opening: /^Mathilde Loisel believed she had been born for better rooms/,
+    last: /impossible even to hate cleanly/,
+    place: { label: "Astoria / Midtown, New York", region: "us" },
+    credit: /After Maupassant, The Necklace, 1884/,
+    scene: /gala/i,
+  },
+  "it-was-not-nervousness": {
+    title: "It Was Not Nervousness",
+    opening: /^Listen\. I can tell this calmly/,
+    last: /it is his heart/,
+    place: { label: "Queens, New York", region: "us" },
+    credit: /After Poe, The Tell-Tale Heart, 1843/,
+    scene: /walk-up/i,
+  },
+  "during-carnival": {
+    title: "During Carnival",
+    opening: /^I did not announce what Fortunato had done to me/,
+    last: /bells went quiet/,
+    place: { label: "New Orleans", region: "us-south" },
+    credit: /After Poe, The Cask of Amontillado, 1846/,
+    scene: /cellar/i,
+  },
+  "what-we-sold": {
+    title: "What We Sold",
+    opening: /^Della counted the jar twice on Christmas Eve morning/,
+    last: /did not need to be correct to be true/,
+    place: { label: "Chicago, Illinois", region: "us" },
+    credit: /After O\. Henry, The Gift of the Magi, 1905/,
+    scene: /christmas/i,
+  },
 } as const;
 
 test("Adapted remakes are local sits with source credit, not Featured", () => {
   const unwind = RITUAL_LANES.find((lane) => lane.id === "unwind");
+  const beforeSleep = RITUAL_LANES.find((lane) => lane.id === "before-sleep");
   assert.ok(unwind);
+  assert.ok(beforeSleep);
   for (const id of ADAPTED_BY_SALON_IDS) {
     const want = EXPECT[id];
     const work = shelfWork(id);
@@ -59,7 +139,12 @@ test("Adapted remakes are local sits with source credit, not Featured", () => {
     assert.equal(curatorialTrack(id), "adapted", id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
-    assert.ok(unwind.workIds.includes(id), `${id} unwind`);
+    const lane = LANE[id];
+    assert.ok(lane, `${id} lane`);
+    const home = lane === "unwind" ? unwind : beforeSleep;
+    const other = lane === "unwind" ? beforeSleep : unwind;
+    assert.ok(home.workIds.includes(id), `${id} ${lane}`);
+    assert.equal(other.workIds.includes(id), false, `${id} not other lane`);
     assert.deepEqual(placeFor(work), want.place, id);
 
     const copy = readerIntro({
@@ -114,4 +199,26 @@ test("homepage classics strip does not mix in Adapted remakes", () => {
   );
   assert.ok(LOCAL_WORKS.some((item) => item.id === "miss-brill-adapted"));
   assert.ok(CLASSIC_LOCAL_WORKS.some((item) => item.id === "passing"));
+  assert.ok(LOCAL_WORKS.some((item) => item.id === "the-pattern"));
+  assert.ok(LOCAL_WORKS.some((item) => item.id === "he-woke-changed"));
+});
+
+test("Adapted homepage strip drifts like the classics works strip", () => {
+  const src = readFileSync(new URL("../../components/adapted-strip.tsx", import.meta.url), "utf8");
+  assert.match(src, /STRIP_DRIFT_START_MS/);
+  assert.match(src, /stripDriftDelta/);
+  assert.match(src, /pointerdown/);
+  assert.match(src, /ADAPTED_WORKS/);
+  assert.doesNotMatch(src, /FEATURED_CAROUSEL|NEXT_FEATURED|CLASSIC_LOCAL_WORKS/);
+});
+
+test("batch-2 remakes use Mira open-ats, not raw keep-as-is extracts", () => {
+  const gregor = readFileSync(new URL("./texts/he-woke-changed.json", import.meta.url), "utf8");
+  const pattern = readFileSync(new URL("./texts/the-pattern.json", import.meta.url), "utf8");
+  const nerve = readFileSync(new URL("./texts/it-was-not-nervousness.json", import.meta.url), "utf8");
+  assert.doesNotMatch(gregor, /When Gregor Samsa woke one morning/);
+  assert.doesNotMatch(gregor, /transformed in his bed/);
+  assert.match(gregor, /would not fit under the covers/);
+  assert.match(pattern, /locked gate/);
+  assert.match(nerve, /Roosevelt/);
 });

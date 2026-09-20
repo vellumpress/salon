@@ -74,6 +74,22 @@ const BLURBS: Record<string, string> = {
     "A midtown clerk prefers not to — and a gentle office learns the shape of its limits.",
   "late-season":
     "Off-season Cape May, a small white dog, and an affair that will not stay temporary.",
+  "between-the-drop-and-the-water":
+    "A rope fails—or seems to—until the Hudson remembers what it meant.",
+  "he-woke-changed":
+    "A Newark breadwinner wakes wrong, and the family ledger of duty does the rest.",
+  "the-pattern":
+    "A rest-cure wallpaper that crawls until the only way out is through it.",
+  "a-coat-worthy-of-respect":
+    "A meek clerk earns a coat meal by meal, and the city notices too late.",
+  "what-she-borrowed":
+    "One borrowed night of glitter, and a decade to learn it was paste.",
+  "it-was-not-nervousness":
+    "A calm confession, and a pulse under the Queens floorboards that will not stay calm.",
+  "during-carnival":
+    "Carnival noise above, and the last brick set with intimate care below.",
+  "what-we-sold":
+    "Two broke lovers ruin their treasures and invent a quieter wealth in the wreckage.",
   botchan:
     "A hot-headed Tokyo teacher is posted to the provinces and refuses to learn the local game.",
   "post-office":

@@ -60,7 +60,19 @@ test("Quicksand is a local before-sleep bind with no Gutenberg id", () => {
 test("Adapted by Salon remakes are their own track — never Featured or Next", () => {
   assert.deepEqual(
     [...ADAPTED_BY_SALON_IDS],
-    ["miss-brill-adapted", "prefer-not", "late-season"],
+    [
+      "miss-brill-adapted",
+      "prefer-not",
+      "late-season",
+      "between-the-drop-and-the-water",
+      "he-woke-changed",
+      "the-pattern",
+      "a-coat-worthy-of-respect",
+      "what-she-borrowed",
+      "it-was-not-nervousness",
+      "during-carnival",
+      "what-we-sold",
+    ],
   );
   for (const id of ADAPTED_BY_SALON_IDS) {
     assert.equal(isAdaptedBySalon(id), true, id);

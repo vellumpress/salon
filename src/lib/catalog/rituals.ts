@@ -65,6 +65,22 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "A mild refusal becomes the office’s true architecture—and pity learns the shape of its limits. After Melville, Bartleby, 1853.",
   "late-season":
     "Off-season Cape May, a small white dog, and an affair that refuses to stay temporary once the city proves too small for what began. After Chekhov, The Lady with the Dog, 1899.",
+  "between-the-drop-and-the-water":
+    "The rope fails—or seems to—until the Hudson remembers what it meant. After Bierce, An Occurrence at Owl Creek Bridge, 1890.",
+  "he-woke-changed":
+    "A breadwinner wakes wrong; the family ledger of duty and relief does the rest. After Kafka, The Metamorphosis, 1915.",
+  "the-pattern":
+    "Confined for her own good, she learns the wallpaper until the crawl is the only way out—calm, not thriller. After Gilman, The Yellow Wallpaper, 1892.",
+  "a-coat-worthy-of-respect":
+    "A meek clerk earns a coat meal by meal; winter takes it, and the city notices too late. After Gogol, The Overcoat, 1842.",
+  "what-she-borrowed":
+    "One borrowed night of glitter; a decade to learn it was paste. After Maupassant, The Necklace, 1884.",
+  "it-was-not-nervousness":
+    "He can tell it calmly. The pulse under the Queens floorboards will not stay calm. After Poe, The Tell-Tale Heart, 1843.",
+  "during-carnival":
+    "Carnival noise above; the last brick set with intimate care below. After Poe, The Cask of Amontillado, 1846.",
+  "what-we-sold":
+    "Two broke lovers ruin their treasures for each other and invent a quieter wealth in the wreckage. After O. Henry, The Gift of the Magi, 1905.",
   "body-of-this-death":
     "Bogan on flesh, desire, and what it costs to keep living in a body. Spare, exact poems — no soft focus on the wound.",
   orlando:
@@ -152,6 +168,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "attendants-confession",
       "rashomon",
       "high-wind-jamaica",
+      "the-pattern",
+      "it-was-not-nervousness",
+      "between-the-drop-and-the-water",
+      "during-carnival",
       "the-wild-swans-at-coole",
       "kwaidan-stories-and-studies-of-strange-things",
       "the-listeners-and-other-poems",
@@ -190,6 +210,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "miss-brill-adapted",
       "prefer-not",
       "late-season",
+      "he-woke-changed",
+      "what-she-borrowed",
+      "what-we-sold",
+      "a-coat-worthy-of-respect",
     ],
   },
   {

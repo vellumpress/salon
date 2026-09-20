@@ -1,0 +1,376 @@
+{
+  "id": "it-was-not-nervousness",
+  "title": "It Was Not Nervousness",
+  "author": "Salon",
+  "year": "2026",
+  "note": "He can tell it calmly. The pulse under the Queens floorboards will not stay calm. After Poe, The Tell-Tale Heart, 1843.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The walk-up",
+      "place": "Queens",
+      "reentry": "Listen. I can tell this calmly.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Listen. I can tell this calmly."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "That is how you will know I am not mad."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Madness is disorder, and what I did was orderly—measured, patient, almost tender."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "I have never been more precise."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "I lived with the old man in a third-floor walk-up off Roosevelt."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "He had been there first; I took the smaller room when the rent became impossible alone."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "He was kind in the soft, irritating way of people who forgive you too quickly."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "He left tea bags on the counter for me."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "He asked about my shifts at the hospital cafeteria."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "None of that mattered."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "What mattered was the eye."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "One eye was filmed over, pale as milk left too long."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "When he looked at me with it, something in my chest tightened until I could taste metal."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "I loved him."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "I want that clear."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "I loved him and I could not bear the eye."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "At breakfast it rested on my hands."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "At night, if his door stood ajar, it found me in the hall like a pale coin."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "For a week I practiced."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Every night near midnight I opened his door by degrees—hinge oiled with cooking grease, breath held—until I could slide my head into the dark and wait."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "The building made its usual sounds: a neighbor's television through the plaster, the elevator complaining two floors down, a phone vibrating somewhere and going unanswered."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Once a scooter shrieked on the street and I nearly laughed aloud at my own stillness."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "I held a stripped flashlight closed in my fist and opened it only when I was sure."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Seven nights the eye was shut."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Seven nights I withdrew like someone closing a curtain."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "On the eighth night my thumb slipped on the switch."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "A thin click."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "The old man sat up."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "\"Who's there?\" he said."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "I did not answer."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "I stood in the doorway for an hour while he listened to the dark the way I had listened to him."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "Fear has a sound; I knew it in my own throat on bad nights after work."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "When at last I opened the light to a thread, it fell exactly on the filmed eye—wide, wet, unbearable."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "The rest of his face stayed in shadow, as if the eye alone had insisted on being seen."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "Afterward, under the mattress, the heart kept going for a while, muffled, like a watch wrapped in a sock."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "Then it stopped."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "I worked with the care of someone cleaning before guests: plastic sheeting from the dollar store, the tub, the loose floorboards under the rug I had always hated."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "By morning the room smelled of bleach and cold coffee."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "No stain."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "No proof."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "Only the quiet of a radiator ticking and my own hands, very steady, washing themselves raw."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "The officers came because a neighbor had heard a cry."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "I smiled."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "I showed them the kitchen, the fire escape, his empty bed made neatly."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "I said he was visiting a sister in Jersey."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "I offered them chairs in his room and sat myself on the rug, directly above what I had hidden, because confidence is a kind of camouflage."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "They believed me."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "Of course they did."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "I spoke steadily."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "I even laughed once, lightly, at a joke about the neighborhood traffic."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "One of them checked his phone and put it away."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "The other accepted water."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "Then the sound began."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "At first I thought it was the pipes."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "Then a phone left face-down somewhere under a cushion."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "Then I understood: soft, quick, cotton-wrapped, rising through the boards into the bones of my feet."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "I talked faster."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "I scraped my chair."
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "I offered more water, a pastry I did not have."
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "The officers kept chatting, polite, unhurried, while the beat climbed into my skull and made a mockery of every careful thing I had done."
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "I could see their mouths moving."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "I could not hear their words over it."
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "Louder. Louder."
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "The eye was gone and still the heart would not shut up."
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "Sweat ran into my collar."
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "The fluorescent fixture in the hall buzzed like an insect trapped in glass."
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "I stood."
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "The chair fell."
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "Something in my voice broke open, raw and ridiculous."
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "\"Stop smiling,\" I shouted."
+    },
+    {
+      "id": "s0-70",
+      "sceneId": "s0",
+      "text": "\"You hear it—you hear it—tear up the floor—here—here—it is his heart—\""
+    }
+  ]
+}
