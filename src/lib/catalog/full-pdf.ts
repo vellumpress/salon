@@ -16,7 +16,7 @@ export function withFullPdf<T extends { id: string }>(items: T[]) {
 
 /**
  * LE-polished local bind (`local: true` + catalog/texts JSON).
- * Use for Rituals, homepage form rails, Curator/Shuffle defaults — not for search.
+ * Use for Rituals, homepage search + form rails, Curator/Shuffle defaults.
  */
 export function isLocalBound(id: string) {
   if (isEnReadableOff(id)) return false;

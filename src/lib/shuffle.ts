@@ -8,7 +8,7 @@ export function searchFlag(value: unknown): boolean {
 
 export type SittingLength = 12 | 20 | 0;
 
-/** Shuffle / sit-together pool: local binds only (Gutenberg remains on search). */
+/** Shuffle / sit-together pool: local binds only (homepage search uses the same gate). */
 export const CURATED = LOCAL_WORKS.map((item) => item.id);
 
 export const WORK_MINUTES: Record<string, number> = Object.fromEntries(

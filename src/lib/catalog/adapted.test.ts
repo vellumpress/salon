@@ -10,9 +10,16 @@ import {
   isAdaptedBySalon,
   NEXT_FEATURED_TRACK_IDS,
 } from "./curatorial.ts";
-import { ADAPTED_WORKS, CLASSIC_LOCAL_WORKS, featuredWorks, LOCAL_WORKS } from "./full-pdf.ts";
+import {
+  ADAPTED_WORKS,
+  CLASSIC_LOCAL_WORKS,
+  featuredWorks,
+  FULL_TEXT_WORKS,
+  LOCAL_WORKS,
+  withLocalBound,
+} from "./full-pdf.ts";
 import { RITUAL_LANES, type RitualLane } from "./rituals.ts";
-import { SHELF, shelfWork } from "./shelf.ts";
+import { SHELF, searchShelf, shelfWork } from "./shelf.ts";
 import { isBoundLocal } from "./en-rights.ts";
 import { placeFor } from "./places.ts";
 import { readerIntro } from "../reader-intro.ts";
@@ -248,6 +255,29 @@ test("homepage classics strip does not mix in Adapted remakes", () => {
   assert.ok(CLASSIC_LOCAL_WORKS.some((item) => item.id === "passing"));
   assert.ok(LOCAL_WORKS.some((item) => item.id === "the-pattern"));
   assert.ok(LOCAL_WORKS.some((item) => item.id === "he-woke-changed"));
+});
+
+test("homepage search is local binds only — no Gutenberg-only dead ends", () => {
+  const home = readFileSync(new URL("../../routes/index.tsx", import.meta.url), "utf8");
+  assert.match(home, /useShelfSearch\("local"\)/);
+  assert.doesNotMatch(home, /useShelfSearch\("fullPdf"\)/);
+
+  assert.equal(LOCAL_WORKS.length, 423);
+  assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
+  assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
+
+  const crime = SHELF.find((item) => item.id === "crime");
+  assert.ok(crime);
+  assert.equal(isBoundLocal(crime), false);
+  assert.ok(crime.gutenberg);
+  assert.equal(
+    withLocalBound(searchShelf("crime and punishment")).some((item) => item.id === "crime"),
+    false,
+  );
+
+  assert.ok(
+    withLocalBound(searchShelf("house of mirth")).some((item) => item.id === "the-house-of-mirth"),
+  );
 });
 
 test("homepage Adapted surface is a gateway, not a drifting remake strip", () => {
