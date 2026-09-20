@@ -148,6 +148,16 @@ test("Adapted by Salon remakes are their own track — never locked recommend or
       "queen-of-spades-paris",
       "decapitated-chicken-lisbon",
       "madame-bovary-tokyo",
+      "dorian-gray-shanghai",
+      "anna-karenina-milan",
+      "jane-eyre-singapore",
+      "pride-prejudice-buenos-aires",
+      "dracula-istanbul",
+      "crime-punishment-cape-town",
+      "age-of-innocence-venice",
+      "tess-lisbon",
+      "scarlet-letter-kyoto",
+      "wuthering-heights-rio",
     ],
   );
   for (const id of ADAPTED_BY_SALON_IDS) {

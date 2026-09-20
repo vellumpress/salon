@@ -72,6 +72,16 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "queen-of-spades-paris": { label: "Paris", region: "fr" },
     "decapitated-chicken-lisbon": { label: "Lisbon", region: "pt" },
     "madame-bovary-tokyo": { label: "Tokyo", region: "jp" },
+    "dorian-gray-shanghai": { label: "Shanghai", region: "cn" },
+    "anna-karenina-milan": { label: "Milan", region: "it" },
+    "jane-eyre-singapore": { label: "Singapore", region: "sg" },
+    "pride-prejudice-buenos-aires": { label: "Buenos Aires", region: "ar" },
+    "dracula-istanbul": { label: "Istanbul", region: "tr" },
+    "crime-punishment-cape-town": { label: "Cape Town", region: "za" },
+    "age-of-innocence-venice": { label: "Venice", region: "it" },
+    "tess-lisbon": { label: "Lisbon", region: "pt" },
+    "scarlet-letter-kyoto": { label: "Kyoto", region: "jp" },
+    "wuthering-heights-rio": { label: "Rio de Janeiro", region: "br" },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = shelfWork(id);
@@ -145,7 +155,7 @@ test("Adapted by Salon keeps exactly three America-set remakes", () => {
     america,
     ["prefer-not", "between-the-drop-and-the-water", "the-pattern"],
   );
-  assert.equal(ADAPTED_BY_SALON_IDS.length, 22);
+  assert.equal(ADAPTED_BY_SALON_IDS.length, 32);
   assert.equal(america.length, 3);
 });
 
