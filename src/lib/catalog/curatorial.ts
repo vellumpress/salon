@@ -26,7 +26,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "noli-me-tangere",
 ] as const;
 
-/** Mira pack — homepage Adapted by Salon only. Do not add to Featured / Next. */
+/** Mira pack — Adapted by Salon lane only. Do not add to Featured / Next. */
 export const ADAPTED_BY_SALON_IDS = [
   "miss-brill-adapted",
   "prefer-not",
