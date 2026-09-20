@@ -4,7 +4,7 @@
   "author": "Salon",
   "year": "2026",
   "note": "This whole-book remake includes murder, corruption, and a violent death. Period-true to Wilde’s ending, written without gore spectacle. Warn the room before you Host it; offer a midpoint pause if needed.",
-  "minutes": 37,
+  "minutes": 38,
   "cover": "",
   "coverAlt": "",
   "scenes": [
@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Studio on the Bund",
       "place": "Shanghai",
-      "reentry": "Basil Hallward painted in a top-floor studio above the Bund where Huangpu freight and ferry lights scored the glass.",
+      "reentry": "Bai Sheng painted in a top-floor studio above the Bund where Huangpu freight and ferry lights scored the glass.",
       "prompt": "A word from this stretch."
     },
     {
@@ -24,37 +24,37 @@
     },
     {
       "id": "s2",
-      "title": "Sibyl Vane",
+      "title": "Su Yan",
       "place": "Shanghai",
-      "reentry": "He found Sibyl Vane in a theater off Fuxing Road where Shakespeare was performed for tourists and the lonely.",
+      "reentry": "He found Su Yan in a theater off Fuxing Road where Shakespeare was performed for tourists and the lonely.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
       "title": "The bargain keeps accounts",
       "place": "Shanghai",
-      "reentry": "He showed Basil nothing.",
+      "reentry": "He showed Bai nothing.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
       "title": "Murder",
       "place": "Shanghai",
-      "reentry": "In the attic the portrait waited: corrupt, sly, older than any man of Dorian’s apparent years.",
+      "reentry": "In the attic the portrait waited: corrupt, sly, older than any man of Du Yan’s apparent years.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s5",
-      "title": "James Vane",
+      "title": "Jian Yan",
       "place": "Shanghai",
-      "reentry": "Sibyl’s brother, James Vane, a sailor with a long memory, came hunting through Shanghai’s docks for the gentleman who had destroyed his sister.",
+      "reentry": "Su Yan’s brother, Jian Yan, a sailor with a long memory, came hunting through Shanghai’s docks for the gentleman who had destroyed his sister.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s6",
       "title": "The last knife",
       "place": "Shanghai",
-      "reentry": "On the eve of a gallery opening for which his unbroken beauty was half the draw, Dorian stood before the canvas and understood that reform without confession was only another pose.",
+      "reentry": "On the eve of a gallery opening for which his unbroken beauty was half the draw, Du Yan stood before the canvas and understood that reform without confession was only another pose.",
       "prompt": "A word from this stretch."
     },
     {
@@ -68,35 +68,35 @@
       "id": "s8",
       "title": "The years between",
       "place": "Shanghai",
-      "reentry": "Between Sibyl’s death and Basil’s murder the calendar did not dramatize itself.",
+      "reentry": "Between Su Yan’s death and Bai’s murder the calendar did not dramatize itself.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s9",
-      "title": "Sibyl’s theater, again remembered",
+      "title": "Su Yan’s theater, again remembered",
       "place": "Shanghai",
-      "reentry": "The night Sibyl died, Dorian did not go to the police station or the morgue.",
+      "reentry": "The night Su Yan died, Du Yan did not go to the police station or the morgue.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s10",
       "title": "Influence as climate",
       "place": "Shanghai",
-      "reentry": "Lord Henry’s house off Wukang Road held books, cigarettes, and young people who wanted to be ruined stylishly.",
+      "reentry": "Liu Heng’s house off Wukang Road held books, cigarettes, and young people who wanted to be ruined stylishly.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s11",
-      "title": "Basil’s return and the attic",
+      "title": "Bai’s return and the attic",
       "place": "Shanghai",
-      "reentry": "When Basil came back from Europe he looked older in the honest way.",
+      "reentry": "When Bai came back from Europe he looked older in the honest way.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s12",
       "title": "Hunting and hesitation",
       "place": "Shanghai",
-      "reentry": "James Vane’s search gave the plot a simpler grammar.",
+      "reentry": "Jian Yan’s search gave the plot a simpler grammar.",
       "prompt": "A word from this stretch."
     },
     {
@@ -110,21 +110,21 @@
       "id": "s14",
       "title": "Early lessons in outsourcing",
       "place": "Shanghai",
-      "reentry": "Before Sibyl, before the attic lock, there was only Basil’s studio and Lord Henry’s voice and a young man who mistook attention for destiny.",
+      "reentry": "Before Su Yan, before the attic lock, there was only Bai’s studio and Liu Heng’s voice and a young man who mistook attention for destiny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s15",
-      "title": "After Campbell",
+      "title": "After Kang",
       "place": "Shanghai",
-      "reentry": "Campbell’s suicide—if suicide was the word the lab preferred—left Dorian with a practical problem: fewer people who could be forced into intimacy with his secrets.",
+      "reentry": "Kang’s suicide—if suicide was the word the lab preferred—left Du Yan with a practical problem: fewer people who could be forced into intimacy with his secrets.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s16",
       "title": "Closing inventory",
       "place": "Shanghai",
-      "reentry": "On the last afternoon he visited Basil’s old studio building.",
+      "reentry": "On the last afternoon he visited Bai’s old studio building.",
       "prompt": "A word from this stretch."
     }
   ],
@@ -132,22 +132,22 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Basil Hallward painted in a top-floor studio above the Bund where Huangpu freight and ferry lights scored the glass."
+      "text": "Bai Sheng painted in a top-floor studio above the Bund where Huangpu freight and ferry lights scored the glass."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "The portrait on the easel was nearly finished: Dorian Gray at twenty, beauty so complete it made the room look provisional."
+      "text": "The portrait on the easel was nearly finished: Du Yan at twenty, beauty so complete it made the room look provisional."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "Basil worked as if the paint might refuse to dry into anything less than mercy."
+      "text": "Bai worked as if the paint might refuse to dry into anything less than mercy."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "Lord Henry Wotton arrived without knocking, cologne and curiosity preceding him."
+      "text": "Liu Heng arrived without knocking, cologne and curiosity preceding him."
     },
     {
       "id": "s0-4",
@@ -157,7 +157,7 @@
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "Lord Henry: Your sitter has the face of a person who has not yet chosen a vice."
+      "text": "Liu Heng: Your sitter has the face of a person who has not yet chosen a vice."
     },
     {
       "id": "s0-6",
@@ -167,7 +167,7 @@
     {
       "id": "s0-7",
       "sceneId": "s0",
-      "text": "Basil: Leave him alone, Henry."
+      "text": "Bai: Leave him alone, Liu Heng."
     },
     {
       "id": "s0-8",
@@ -177,7 +177,7 @@
     {
       "id": "s0-9",
       "sceneId": "s0",
-      "text": "Dorian stepped down from the platform, smiling the way people smile when they have never been refused."
+      "text": "Du Yan stepped down from the platform, smiling the way people smile when they have never been refused."
     },
     {
       "id": "s0-10",
@@ -187,22 +187,22 @@
     {
       "id": "s0-11",
       "sceneId": "s0",
-      "text": "Basil introduced them with the reluctance of a man handing over a rare book."
+      "text": "Bai introduced them with the reluctance of a man handing over a rare book."
     },
     {
       "id": "s0-12",
       "sceneId": "s0",
-      "text": "Lord Henry spoke of youth as a temporary republic and beauty as the only aristocracy that did not require paperwork."
+      "text": "Liu Heng spoke of youth as a temporary republic and beauty as the only aristocracy that did not require paperwork."
     },
     {
       "id": "s0-13",
       "sceneId": "s0",
-      "text": "Dorian listened as if hearing a language he had always half known."
+      "text": "Du Yan listened as if hearing a language he had always half known."
     },
     {
       "id": "s0-14",
       "sceneId": "s0",
-      "text": "When Basil covered the canvas for the day, Dorian glanced once more at his own likeness and said, lightly, that it was a pity the painting could not stay young while he grew old."
+      "text": "When Bai covered the canvas for the day, Du Yan glanced once more at his own likeness and said, lightly, that it was a pity the painting could not stay young while he grew old."
     },
     {
       "id": "s0-15",
@@ -217,17 +217,17 @@
     {
       "id": "s1-1",
       "sceneId": "s1",
-      "text": "Lord Henry’s doctrine arrived between courses: sensation as duty, morality as bad lighting, conscience as a provincial relative who stayed too long."
+      "text": "Liu Heng’s doctrine arrived between courses: sensation as duty, morality as bad lighting, conscience as a provincial relative who stayed too long."
     },
     {
       "id": "s1-2",
       "sceneId": "s1",
-      "text": "Dorian: And if beauty is the only thing that matters, what happens when it leaves?"
+      "text": "Du Yan: And if beauty is the only thing that matters, what happens when it leaves?"
     },
     {
       "id": "s1-3",
       "sceneId": "s1",
-      "text": "Lord Henry: It leaves."
+      "text": "Liu Heng: It leaves."
     },
     {
       "id": "s1-4",
@@ -242,22 +242,22 @@
     {
       "id": "s1-6",
       "sceneId": "s1",
-      "text": "Basil watched Dorian’s face change under the talk the way a plant turns toward a brighter window."
+      "text": "Bai watched Du Yan’s face change under the talk the way a plant turns toward a brighter window."
     },
     {
       "id": "s1-7",
       "sceneId": "s1",
-      "text": "Afterward, walking along Huaihai, Basil begged Dorian not to see Lord Henry alone."
+      "text": "Afterward, walking along Huaihai, Bai begged Du Yan not to see Liu Heng alone."
     },
     {
       "id": "s1-8",
       "sceneId": "s1",
-      "text": "Dorian laughed and promised nothing."
+      "text": "Du Yan laughed and promised nothing."
     },
     {
       "id": "s1-9",
       "sceneId": "s1",
-      "text": "That night the finished portrait hung opposite Dorian’s bed in his Huangpu apartment."
+      "text": "That night the finished portrait hung opposite Du Yan’s bed in his Huangpu apartment."
     },
     {
       "id": "s1-10",
@@ -282,7 +282,7 @@
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "He found Sibyl Vane in a theater off Fuxing Road where Shakespeare was performed for tourists and the lonely."
+      "text": "He found Su Yan in a theater off Fuxing Road where Shakespeare was performed for tourists and the lonely."
     },
     {
       "id": "s2-1",
@@ -292,7 +292,7 @@
     {
       "id": "s2-2",
       "sceneId": "s2",
-      "text": "Dorian went night after night."
+      "text": "Du Yan went night after night."
     },
     {
       "id": "s2-3",
@@ -302,12 +302,12 @@
     {
       "id": "s2-4",
       "sceneId": "s2",
-      "text": "Sibyl: You watch as if the play were happening to you."
+      "text": "Su Yan: You watch as if the play were happening to you."
     },
     {
       "id": "s2-5",
       "sceneId": "s2",
-      "text": "Dorian: It is."
+      "text": "Du Yan: It is."
     },
     {
       "id": "s2-6",
@@ -327,22 +327,22 @@
     {
       "id": "s2-9",
       "sceneId": "s2",
-      "text": "He told Basil and Lord Henry he was engaged to an actress."
+      "text": "He told Bai and Liu Heng he was engaged to an actress."
     },
     {
       "id": "s2-10",
       "sceneId": "s2",
-      "text": "Basil worried."
+      "text": "Bai worried."
     },
     {
       "id": "s2-11",
       "sceneId": "s2",
-      "text": "Lord Henry applauded the experiment."
+      "text": "Liu Heng applauded the experiment."
     },
     {
       "id": "s2-12",
       "sceneId": "s2",
-      "text": "Then Sibyl, loving him, lost the art that had made her luminous."
+      "text": "Then Su Yan, loving him, lost the art that had made her luminous."
     },
     {
       "id": "s2-13",
@@ -357,17 +357,17 @@
     {
       "id": "s2-15",
       "sceneId": "s2",
-      "text": "Lord Henry’s smile sharpened."
+      "text": "Liu Heng’s smile sharpened."
     },
     {
       "id": "s2-16",
       "sceneId": "s2",
-      "text": "Afterward Dorian found her radiant with private happiness and empty of craft."
+      "text": "Afterward Du Yan found her radiant with private happiness and empty of craft."
     },
     {
       "id": "s2-17",
       "sceneId": "s2",
-      "text": "Dorian: You have killed my love."
+      "text": "Du Yan: You have killed my love."
     },
     {
       "id": "s2-18",
@@ -377,7 +377,7 @@
     {
       "id": "s2-19",
       "sceneId": "s2",
-      "text": "Sibyl: I have something better than art."
+      "text": "Su Yan: I have something better than art."
     },
     {
       "id": "s2-20",
@@ -397,7 +397,7 @@
     {
       "id": "s2-23",
       "sceneId": "s2",
-      "text": "Dorian received the news with a strange calm."
+      "text": "Du Yan received the news with a strange calm."
     },
     {
       "id": "s2-24",
@@ -407,7 +407,7 @@
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "He showed Basil nothing."
+      "text": "He showed Bai nothing."
     },
     {
       "id": "s3-1",
@@ -417,7 +417,7 @@
     {
       "id": "s3-2",
       "sceneId": "s3",
-      "text": "Lord Henry sent a yellow-bound novel of French decadence; Dorian read it as scripture."
+      "text": "Liu Heng sent a yellow-bound novel of French decadence; Du Yan read it as scripture."
     },
     {
       "id": "s3-3",
@@ -437,7 +437,7 @@
     {
       "id": "s3-6",
       "sceneId": "s3",
-      "text": "Dorian’s face in mirrors stayed the face Basil had loved."
+      "text": "Du Yan’s face in mirrors stayed the face Bai had loved."
     },
     {
       "id": "s3-7",
@@ -457,7 +457,7 @@
     {
       "id": "s3-10",
       "sceneId": "s3",
-      "text": "Basil, returning from months abroad, found Dorian unchanged and the city changed around him."
+      "text": "Bai, returning from months abroad, found Du Yan unchanged and the city changed around him."
     },
     {
       "id": "s3-11",
@@ -467,7 +467,7 @@
     {
       "id": "s3-12",
       "sceneId": "s3",
-      "text": "Basil: They say terrible things."
+      "text": "Bai: They say terrible things."
     },
     {
       "id": "s3-13",
@@ -477,32 +477,32 @@
     {
       "id": "s3-14",
       "sceneId": "s3",
-      "text": "Dorian: Come upstairs."
+      "text": "Du Yan: Come upstairs."
     },
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "In the attic the portrait waited: corrupt, sly, older than any man of Dorian’s apparent years."
+      "text": "In the attic the portrait waited: corrupt, sly, older than any man of Du Yan’s apparent years."
     },
     {
       "id": "s4-1",
       "sceneId": "s4",
-      "text": "Basil stared until prayer failed him."
+      "text": "Bai stared until prayer failed him."
     },
     {
       "id": "s4-2",
       "sceneId": "s4",
-      "text": "Basil: This is the face of your soul."
+      "text": "Bai: This is the face of your soul."
     },
     {
       "id": "s4-3",
       "sceneId": "s4",
-      "text": "Good God, Dorian—"
+      "text": "Good God, Du Yan—"
     },
     {
       "id": "s4-4",
       "sceneId": "s4",
-      "text": "Dorian: You taught me to worship it."
+      "text": "Du Yan: You taught me to worship it."
     },
     {
       "id": "s4-5",
@@ -517,12 +517,12 @@
     {
       "id": "s4-7",
       "sceneId": "s4",
-      "text": "He stabbed Basil repeatedly with a knife kept for opening crates."
+      "text": "He stabbed Bai repeatedly with a knife kept for opening crates."
     },
     {
       "id": "s4-8",
       "sceneId": "s4",
-      "text": "Basil’s blood darkened the floorboards."
+      "text": "Bai’s blood darkened the floorboards."
     },
     {
       "id": "s4-9",
@@ -532,47 +532,47 @@
     {
       "id": "s4-10",
       "sceneId": "s4",
-      "text": "Dorian stood breathing hard, still beautiful, already planning the disposal."
+      "text": "Du Yan stood breathing hard, still beautiful, already planning the disposal."
     },
     {
       "id": "s4-11",
       "sceneId": "s4",
-      "text": "He blackmailed Alan Campbell—chemist, once almost a friend—into destroying the body with acids and science."
+      "text": "He blackmailed Kang Wei—chemist, once almost a friend—into destroying the body with acids and science."
     },
     {
       "id": "s4-12",
       "sceneId": "s4",
-      "text": "Campbell obeyed and later shot himself."
+      "text": "Kang obeyed and later shot himself."
     },
     {
       "id": "s4-13",
       "sceneId": "s4",
-      "text": "Dorian returned to dinners."
+      "text": "Du Yan returned to dinners."
     },
     {
       "id": "s4-14",
       "sceneId": "s4",
-      "text": "Lord Henry noticed only that Dorian seemed tired of being interesting."
+      "text": "Liu Heng noticed only that Du Yan seemed tired of being interesting."
     },
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "Sibyl’s brother, James Vane, a sailor with a long memory, came hunting through Shanghai’s docks for the gentleman who had destroyed his sister."
+      "text": "Su Yan’s brother, Jian Yan, a sailor with a long memory, came hunting through Shanghai’s docks for the gentleman who had destroyed his sister."
     },
     {
       "id": "s5-1",
       "sceneId": "s5",
-      "text": "He glimpsed Dorian near the Custom House and mistook youth for innocence until an old woman in an alley named the face that never aged."
+      "text": "He glimpsed Du Yan near the Custom House and mistook youth for innocence until an old woman in an alley named the face that never aged."
     },
     {
       "id": "s5-2",
       "sceneId": "s5",
-      "text": "James tracked him to a shooting party upriver; a hunter’s accident killed James instead."
+      "text": "Jian tracked him to a shooting party upriver; a hunter’s accident killed Jian instead."
     },
     {
       "id": "s5-3",
       "sceneId": "s5",
-      "text": "Dorian felt relief so sharp it frightened him into a week of attempted goodness—charity, returned letters, refused invitations."
+      "text": "Du Yan felt relief so sharp it frightened him into a week of attempted goodness—charity, returned letters, refused invitations."
     },
     {
       "id": "s5-4",
@@ -587,17 +587,17 @@
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "On the eve of a gallery opening for which his unbroken beauty was half the draw, Dorian stood before the canvas and understood that reform without confession was only another pose."
+      "text": "On the eve of a gallery opening for which his unbroken beauty was half the draw, Du Yan stood before the canvas and understood that reform without confession was only another pose."
     },
     {
       "id": "s6-1",
       "sceneId": "s6",
-      "text": "He seized the knife that had killed Basil."
+      "text": "He seized the knife that had killed Bai."
     },
     {
       "id": "s6-2",
       "sceneId": "s6",
-      "text": "Dorian: Now you will die."
+      "text": "Du Yan: Now you will die."
     },
     {
       "id": "s6-3",
@@ -617,7 +617,7 @@
     {
       "id": "s6-6",
       "sceneId": "s6",
-      "text": "On the wall, Basil Hallward’s portrait hung restored: Dorian Gray young, exquisite, unstained."
+      "text": "On the wall, Bai Sheng’s portrait hung restored: Du Yan young, exquisite, unstained."
     },
     {
       "id": "s6-7",
@@ -637,12 +637,12 @@
     {
       "id": "s7-2",
       "sceneId": "s7",
-      "text": "Lord Henry, hearing the news over coffee, remarked that it was a pity—Dorian had been the one person left in Shanghai who still looked like a theory come true."
+      "text": "Liu Heng, hearing the news over coffee, remarked that it was a pity—Du Yan had been the one person left in Shanghai who still looked like a theory come true."
     },
     {
       "id": "s7-3",
       "sceneId": "s7",
-      "text": "Basil’s name rose briefly in obituaries and sank."
+      "text": "Bai’s name rose briefly in obituaries and sank."
     },
     {
       "id": "s7-4",
@@ -657,7 +657,7 @@
     {
       "id": "s7-6",
       "sceneId": "s7",
-      "text": "Dorian’s early weeks after the wish had been almost innocent—parties where he practiced Lord Henry’s sentences until they fit his mouth."
+      "text": "Du Yan’s early weeks after the wish had been almost innocent—parties where he practiced Liu Heng’s sentences until they fit his mouth."
     },
     {
       "id": "s7-7",
@@ -672,27 +672,27 @@
     {
       "id": "s7-9",
       "sceneId": "s7",
-      "text": "A young collector from Hong Kong offered him a share in a shipping concern; Dorian declined, preferring evenings that left no ledger."
+      "text": "A young collector from Hong Kong offered him a share in a shipping concern; Du Yan declined, preferring evenings that left no ledger."
     },
     {
       "id": "s7-10",
       "sceneId": "s7",
-      "text": "Basil sent anxious notes."
+      "text": "Bai sent anxious notes."
     },
     {
       "id": "s7-11",
       "sceneId": "s7",
-      "text": "Dorian answered with invitations and never arrived on time."
+      "text": "Du Yan answered with invitations and never arrived on time."
     },
     {
       "id": "s7-12",
       "sceneId": "s7",
-      "text": "Sibyl’s theater smelled of dust and orange peel."
+      "text": "Su Yan’s theater smelled of dust and orange peel."
     },
     {
       "id": "s7-13",
       "sceneId": "s7",
-      "text": "Before the fatal night she had performed Rosalind with a brightness that made Dorian believe love and art could share a body."
+      "text": "Before the fatal night she had performed Rosalind with a brightness that made Du Yan believe love and art could share a body."
     },
     {
       "id": "s7-14",
@@ -707,12 +707,12 @@
     {
       "id": "s7-16",
       "sceneId": "s7",
-      "text": "Dorian spoke of marriage with the sincerity of a man who had not yet tested sincerity against boredom."
+      "text": "Du Yan spoke of marriage with the sincerity of a man who had not yet tested sincerity against boredom."
     },
     {
       "id": "s7-17",
       "sceneId": "s7",
-      "text": "Lord Henry: Marry her."
+      "text": "Liu Heng: Marry her."
     },
     {
       "id": "s7-18",
@@ -727,12 +727,12 @@
     {
       "id": "s7-20",
       "sceneId": "s7",
-      "text": "The learning came when Sibyl’s talent collapsed into devotion."
+      "text": "The learning came when Su Yan’s talent collapsed into devotion."
     },
     {
       "id": "s7-21",
       "sceneId": "s7",
-      "text": "Dorian’s cruelty that night was precise because it felt aesthetic: he could not love a face that had stopped being a performance."
+      "text": "Du Yan’s cruelty that night was precise because it felt aesthetic: he could not love a face that had stopped being a performance."
     },
     {
       "id": "s7-22",
@@ -742,7 +742,7 @@
     {
       "id": "s7-23",
       "sceneId": "s7",
-      "text": "He laughed, then covered the canvas with a cloth that had once draped Basil’s model stand."
+      "text": "He laughed, then covered the canvas with a cloth that had once draped Bai’s model stand."
     },
     {
       "id": "s7-24",
@@ -767,7 +767,7 @@
     {
       "id": "s7-28",
       "sceneId": "s7",
-      "text": "The yellow book Lord Henry had given him became a map; he followed it into rooms where time softened and faces blurred."
+      "text": "The yellow book Liu Heng had given him became a map; he followed it into rooms where time softened and faces blurred."
     },
     {
       "id": "s7-29",
@@ -777,42 +777,42 @@
     {
       "id": "s7-30",
       "sceneId": "s7",
-      "text": "Basil’s final visit was not an accident."
+      "text": "Bai’s final visit was not an accident."
     },
     {
       "id": "s7-31",
       "sceneId": "s7",
-      "text": "Basil had heard enough."
+      "text": "Bai had heard enough."
     },
     {
       "id": "s7-32",
       "sceneId": "s7",
-      "text": "In the attic, confronted with the painted ledger of Dorian’s life, Basil wept for the boy he had immortalized and for his own complicity in that immortality."
+      "text": "In the attic, confronted with the painted ledger of Du Yan’s life, Bai wept for the boy he had immortalized and for his own complicity in that immortality."
     },
     {
       "id": "s7-33",
       "sceneId": "s7",
-      "text": "Dorian’s murder was not rage alone; it was the panic of a man whose secret had grown a body."
+      "text": "Du Yan’s murder was not rage alone; it was the panic of a man whose secret had grown a body."
     },
     {
       "id": "s7-34",
       "sceneId": "s7",
-      "text": "When Alan Campbell’s science erased Basil from the floor, Dorian wiped the knife and went to a concert at the Conservatory as if culture could bleach the afternoon."
+      "text": "When Kang Wei’s science erased Bai from the floor, Du Yan wiped the knife and went to a concert at the Conservatory as if culture could bleach the afternoon."
     },
     {
       "id": "s7-35",
       "sceneId": "s7",
-      "text": "James Vane’s pursuit threaded the docks with a simpler morality: a sister dead, a gentleman to blame."
+      "text": "Jian Yan’s pursuit threaded the docks with a simpler morality: a sister dead, a gentleman to blame."
     },
     {
       "id": "s7-36",
       "sceneId": "s7",
-      "text": "Dorian’s unchanged face nearly saved him until folklore—Shanghai’s gossip in an older register—named the devil who did not age."
+      "text": "Du Yan’s unchanged face nearly saved him until folklore—Shanghai’s gossip in an older register—named the devil who did not age."
     },
     {
       "id": "s7-37",
       "sceneId": "s7",
-      "text": "James’s death in the upriver accident felt to Dorian like luck, and luck felt like permission."
+      "text": "Jian’s death in the upriver accident felt to Du Yan like luck, and luck felt like permission."
     },
     {
       "id": "s7-38",
@@ -847,7 +847,7 @@
     {
       "id": "s7-44",
       "sceneId": "s7",
-      "text": "Lord Henry would dine out on the irony for a season."
+      "text": "Liu Heng would dine out on the irony for a season."
     },
     {
       "id": "s7-45",
@@ -857,7 +857,7 @@
     {
       "id": "s7-46",
       "sceneId": "s7",
-      "text": "In a city that sold faces as currency, Dorian Gray had spent every coin and discovered, too late, that the portrait had been the bank."
+      "text": "In a city that sold faces as currency, Du Yan had spent every coin and discovered, too late, that the portrait had been the bank."
     },
     {
       "id": "s7-47",
@@ -867,17 +867,17 @@
     {
       "id": "s7-48",
       "sceneId": "s7",
-      "text": "In the first months he still visited Basil’s studio, still sat for small studies, still let Basil believe influence could be rationed."
+      "text": "In the first months he still visited Bai’s studio, still sat for small studies, still let Bai believe influence could be rationed."
     },
     {
       "id": "s7-49",
       "sceneId": "s7",
-      "text": "Lord Henry’s friendship was a climate: witty, dry, impossible to leave without noticing how damp ordinary air had become."
+      "text": "Liu Heng’s friendship was a climate: witty, dry, impossible to leave without noticing how damp ordinary air had become."
     },
     {
       "id": "s7-50",
       "sceneId": "s7",
-      "text": "At a charity ball in a Bund bank’s marble hall Dorian danced with a diplomat’s daughter and forgot her name before the car arrived."
+      "text": "At a charity ball in a Bund bank’s marble hall Du Yan danced with a diplomat’s daughter and forgot her name before the car arrived."
     },
     {
       "id": "s7-51",
@@ -887,7 +887,7 @@
     {
       "id": "s7-52",
       "sceneId": "s7",
-      "text": "Sibyl’s dressing room after the ruined performance smelled of sweat and crushed flowers."
+      "text": "Su Yan’s dressing room after the ruined performance smelled of sweat and crushed flowers."
     },
     {
       "id": "s7-53",
@@ -897,17 +897,17 @@
     {
       "id": "s7-54",
       "sceneId": "s7",
-      "text": "Later he would tell Lord Henry he had been defending art."
+      "text": "Later he would tell Liu Heng he had been defending art."
     },
     {
       "id": "s7-55",
       "sceneId": "s7",
-      "text": "Lord Henry would reply that art needed no defense from love—only from sincerity."
+      "text": "Liu Heng would reply that art needed no defense from love—only from sincerity."
     },
     {
       "id": "s7-56",
       "sceneId": "s7",
-      "text": "The line pleased Dorian enough to live inside for years."
+      "text": "The line pleased Du Yan enough to live inside for years."
     },
     {
       "id": "s7-57",
@@ -922,7 +922,7 @@
     {
       "id": "s7-59",
       "sceneId": "s7",
-      "text": "Once a cleaner found the door ajar and glimpsed a corner of canvas; Dorian dismissed her with a month’s wages and a reference that ensured silence."
+      "text": "Once a cleaner found the door ajar and glimpsed a corner of canvas; Du Yan dismissed her with a month’s wages and a reference that ensured silence."
     },
     {
       "id": "s7-60",
@@ -937,27 +937,27 @@
     {
       "id": "s7-62",
       "sceneId": "s7",
-      "text": "He collected young men who wanted introductions and taught them Lord Henry’s doctrines until they could wound themselves without help."
+      "text": "He collected young men who wanted introductions and taught them Liu Heng’s doctrines until they could wound themselves without help."
     },
     {
       "id": "s7-63",
       "sceneId": "s7",
-      "text": "A painter from Hangzhou hanged himself after a season in Dorian’s circle; the portrait gained a tightness around the eyes."
+      "text": "A painter from Hangzhou hanged himself after a season in Du Yan’s circle; the portrait gained a tightness around the eyes."
     },
     {
       "id": "s7-64",
       "sceneId": "s7",
-      "text": "Dorian sent flowers to the funeral and was photographed looking grave."
+      "text": "Du Yan sent flowers to the funeral and was photographed looking grave."
     },
     {
       "id": "s7-65",
       "sceneId": "s7",
-      "text": "Basil’s murder left a smell the chemicals could not entirely erase."
+      "text": "Bai’s murder left a smell the chemicals could not entirely erase."
     },
     {
       "id": "s7-66",
       "sceneId": "s7",
-      "text": "Dorian burned Basil’s coat and watch in a stove and kept a sketch Basil had made of him at nineteen—proof, he told himself, of affection."
+      "text": "Du Yan burned Bai’s coat and watch in a stove and kept a sketch Bai had made of him at nineteen—proof, he told himself, of affection."
     },
     {
       "id": "s7-67",
@@ -967,17 +967,17 @@
     {
       "id": "s7-68",
       "sceneId": "s7",
-      "text": "Lord Henry prescribed a week in Hangzhou’s tea hills; Dorian went and returned no better, only better dressed."
+      "text": "Liu Heng prescribed a week in Hangzhou’s tea hills; Du Yan went and returned no better, only better dressed."
     },
     {
       "id": "s7-69",
       "sceneId": "s7",
-      "text": "James Vane’s face in the Custom House crowd had been Sibyl’s face made hard by labor."
+      "text": "Jian Yan’s face in the Custom House crowd had been Su Yan’s face made hard by labor."
     },
     {
       "id": "s7-70",
       "sceneId": "s7",
-      "text": "For an instant Dorian felt something like fear of justice."
+      "text": "For an instant Du Yan felt something like fear of justice."
     },
     {
       "id": "s7-71",
@@ -987,7 +987,7 @@
     {
       "id": "s7-72",
       "sceneId": "s7",
-      "text": "When news of James’s death reached him at a dinner, he excused himself to the terrace and watched container lights crawl the river like a rosary for the unrepentant."
+      "text": "When news of Jian’s death reached him at a dinner, he excused himself to the terrace and watched container lights crawl the river like a rosary for the unrepentant."
     },
     {
       "id": "s7-73",
@@ -1012,7 +1012,7 @@
     {
       "id": "s7-77",
       "sceneId": "s7",
-      "text": "In the years after, guides on the Bund sometimes pointed at Basil’s old studio building and told a shortened legend."
+      "text": "In the years after, guides on the Bund sometimes pointed at Bai’s old studio building and told a shortened legend."
     },
     {
       "id": "s7-78",
@@ -1032,7 +1032,7 @@
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "Between Sibyl’s death and Basil’s murder the calendar did not dramatize itself."
+      "text": "Between Su Yan’s death and Bai’s murder the calendar did not dramatize itself."
     },
     {
       "id": "s8-1",
@@ -1042,7 +1042,7 @@
     {
       "id": "s8-2",
       "sceneId": "s8",
-      "text": "Dorian learned the difference between scandal that entertained and scandal that exiled."
+      "text": "Du Yan learned the difference between scandal that entertained and scandal that exiled."
     },
     {
       "id": "s8-3",
@@ -1077,17 +1077,17 @@
     {
       "id": "s8-9",
       "sceneId": "s8",
-      "text": "Lord Henry came to talk."
+      "text": "Liu Heng came to talk."
     },
     {
       "id": "s8-10",
       "sceneId": "s8",
-      "text": "Basil came less and less, then went abroad with a commission and a hope that distance might restore the boy in the portrait of his memory."
+      "text": "Bai came less and less, then went abroad with a commission and a hope that distance might restore the boy in the portrait of his memory."
     },
     {
       "id": "s8-11",
       "sceneId": "s8",
-      "text": "Dorian’s cruelty refined."
+      "text": "Du Yan’s cruelty refined."
     },
     {
       "id": "s8-12",
@@ -1097,7 +1097,7 @@
     {
       "id": "s8-13",
       "sceneId": "s8",
-      "text": "A young curator who loved him waited through a winter of almosts and then left for Beijing with a letter Dorian never answered."
+      "text": "A young curator who loved him waited through a winter of almosts and then left for Beijing with a letter Du Yan never answered."
     },
     {
       "id": "s8-14",
@@ -1107,7 +1107,7 @@
     {
       "id": "s8-15",
       "sceneId": "s8",
-      "text": "Dorian touched his own face in the bathroom glass and found it smooth as a salesman’s promise."
+      "text": "Du Yan touched his own face in the bathroom glass and found it smooth as a salesman’s promise."
     },
     {
       "id": "s8-16",
@@ -1117,7 +1117,7 @@
     {
       "id": "s8-17",
       "sceneId": "s8",
-      "text": "In a house behind a pharmacy near the old town, Dorian lay on clean mats and watched smoke invent architectures."
+      "text": "In a house behind a pharmacy near the old town, Du Yan lay on clean mats and watched smoke invent architectures."
     },
     {
       "id": "s8-18",
@@ -1127,12 +1127,12 @@
     {
       "id": "s8-19",
       "sceneId": "s8",
-      "text": "Once he dreamed Sibyl alive and speaking in perfect verse; he woke angry at the dream for being better than his memory."
+      "text": "Once he dreamed Su Yan alive and speaking in perfect verse; he woke angry at the dream for being better than his memory."
     },
     {
       "id": "s8-20",
       "sceneId": "s8",
-      "text": "Lord Henry: You are becoming a myth about yourself."
+      "text": "Liu Heng: You are becoming a myth about yourself."
     },
     {
       "id": "s8-21",
@@ -1142,7 +1142,7 @@
     {
       "id": "s8-22",
       "sceneId": "s8",
-      "text": "Dorian: Then I shall stay married to mine."
+      "text": "Du Yan: Then I shall stay married to mine."
     },
     {
       "id": "s8-23",
@@ -1152,47 +1152,47 @@
     {
       "id": "s8-24",
       "sceneId": "s8",
-      "text": "Under the laugh Dorian heard the attic door."
+      "text": "Under the laugh Du Yan heard the attic door."
     },
     {
       "id": "s8-25",
       "sceneId": "s8",
-      "text": "Alan Campbell had loved Dorian once in the careful way of men who fear newspapers."
+      "text": "Kang Wei had loved Du Yan once in the careful way of men who fear newspapers."
     },
     {
       "id": "s8-26",
       "sceneId": "s8",
-      "text": "When Dorian summoned him after the murder, that old love became a lever."
+      "text": "When Du Yan summoned him after the murder, that old love became a lever."
     },
     {
       "id": "s8-27",
       "sceneId": "s8",
-      "text": "Campbell’s hands shook over the chemicals; Dorian’s did not."
+      "text": "Kang’s hands shook over the chemicals; Du Yan’s did not."
     },
     {
       "id": "s8-28",
       "sceneId": "s8",
-      "text": "Afterward Campbell said he would never speak to him again."
+      "text": "Afterward Kang said he would never speak to him again."
     },
     {
       "id": "s8-29",
       "sceneId": "s8",
-      "text": "Dorian agreed as if granting a favor."
+      "text": "Du Yan agreed as if granting a favor."
     },
     {
       "id": "s8-30",
       "sceneId": "s8",
-      "text": "Weeks later the shot in Campbell’s laboratory was reported as accident."
+      "text": "Weeks later the shot in Kang’s laboratory was reported as accident."
     },
     {
       "id": "s8-31",
       "sceneId": "s8",
-      "text": "Dorian sent no flowers."
+      "text": "Du Yan sent no flowers."
     },
     {
       "id": "s8-32",
       "sceneId": "s8",
-      "text": "The gallery week that ended him had been meant as rehabilitation theater: Dorian Gray, still young, still collecting, still proof that Shanghai rewarded surface."
+      "text": "The gallery week that ended him had been meant as rehabilitation theater: Du Yan, still young, still collecting, still proof that Shanghai rewarded surface."
     },
     {
       "id": "s8-33",
@@ -1217,17 +1217,17 @@
     {
       "id": "s8-37",
       "sceneId": "s8",
-      "text": "Lord Henry, informed at the Club, ordered another coffee and said that nature had a vulgar taste for endings."
+      "text": "Liu Heng, informed at the Club, ordered another coffee and said that nature had a vulgar taste for endings."
     },
     {
       "id": "s8-38",
       "sceneId": "s8",
-      "text": "What Shanghai kept was simpler: a story about a face that would not pay its debts until the last morning, when the portrait—Basil’s love made durable—gave the debt back with interest."
+      "text": "What Shanghai kept was simpler: a story about a face that would not pay its debts until the last morning, when the portrait—Bai’s love made durable—gave the debt back with interest."
     },
     {
       "id": "s8-39",
       "sceneId": "s8",
-      "text": "After the portrait first changed, Dorian tested the bargain like a scientist with a dangerous sample."
+      "text": "After the portrait first changed, Du Yan tested the bargain like a scientist with a dangerous sample."
     },
     {
       "id": "s8-40",
@@ -1262,32 +1262,32 @@
     {
       "id": "s8-46",
       "sceneId": "s8",
-      "text": "The canvas looked back with an intelligence Basil had never intended."
+      "text": "The canvas looked back with an intelligence Bai had never intended."
     },
     {
       "id": "s8-47",
       "sceneId": "s8",
-      "text": "Basil’s letters from abroad described light in other cities and asked after Dorian’s health with the anxiety of a man who senses a door closing."
+      "text": "Bai’s letters from abroad described light in other cities and asked after Du Yan’s health with the anxiety of a man who senses a door closing."
     },
     {
       "id": "s8-48",
       "sceneId": "s8",
-      "text": "Dorian replied with photographs of himself at openings—proof of wellness, proof of stasis."
+      "text": "Du Yan replied with photographs of himself at openings—proof of wellness, proof of stasis."
     },
     {
       "id": "s8-49",
       "sceneId": "s8",
-      "text": "Basil wrote that the photographs unsettled him."
+      "text": "Bai wrote that the photographs unsettled him."
     },
     {
       "id": "s8-50",
       "sceneId": "s8",
-      "text": "Dorian did not ask why."
+      "text": "Du Yan did not ask why."
     },
     {
       "id": "s8-51",
       "sceneId": "s8",
-      "text": "Sibyl’s mother once waited outside his building."
+      "text": "Su Yan’s mother once waited outside his building."
     },
     {
       "id": "s8-52",
@@ -1322,12 +1322,12 @@
     {
       "id": "s8-58",
       "sceneId": "s8",
-      "text": "He wondered whether Lord Henry had ever wished a portrait to age for him, and decided Henry’s genius was to need no magic—only sentences."
+      "text": "He wondered whether Liu Heng had ever wished a portrait to age for him, and decided Liu Heng’s genius was to need no magic—only sentences."
     },
     {
       "id": "s8-59",
       "sceneId": "s8",
-      "text": "When Basil returned and climbed those attic stairs, Dorian felt almost grateful."
+      "text": "When Bai returned and climbed those attic stairs, Du Yan felt almost grateful."
     },
     {
       "id": "s8-60",
@@ -1342,7 +1342,7 @@
     {
       "id": "s8-62",
       "sceneId": "s8",
-      "text": "Years later a dealer claimed to have found Basil Hallward’s last portrait of Dorian Gray in a storage unit near Waigaoqiao."
+      "text": "Years later a dealer claimed to have found Bai Sheng’s last portrait of Du Yan in a storage unit near Waigaoqiao."
     },
     {
       "id": "s8-63",
@@ -1367,7 +1367,7 @@
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "The night Sibyl died, Dorian did not go to the police station or the morgue."
+      "text": "The night Su Yan died, Du Yan did not go to the police station or the morgue."
     },
     {
       "id": "s9-1",
@@ -1397,12 +1397,12 @@
     {
       "id": "s9-6",
       "sceneId": "s9",
-      "text": "Lord Henry arrived the next afternoon with newspapers and a theory."
+      "text": "Liu Heng arrived the next afternoon with newspapers and a theory."
     },
     {
       "id": "s9-7",
       "sceneId": "s9",
-      "text": "Lord Henry: The poor girl has solved her reviews permanently."
+      "text": "Liu Heng: The poor girl has solved her reviews permanently."
     },
     {
       "id": "s9-8",
@@ -1412,12 +1412,12 @@
     {
       "id": "s9-9",
       "sceneId": "s9",
-      "text": "Dorian: We were not married."
+      "text": "Du Yan: We were not married."
     },
     {
       "id": "s9-10",
       "sceneId": "s9",
-      "text": "Lord Henry: Precisely."
+      "text": "Liu Heng: Precisely."
     },
     {
       "id": "s9-11",
@@ -1427,22 +1427,22 @@
     {
       "id": "s9-12",
       "sceneId": "s9",
-      "text": "Basil came later, gray with sympathy, and found Dorian arranging flowers as if for a photograph."
+      "text": "Bai came later, gray with sympathy, and found Du Yan arranging flowers as if for a photograph."
     },
     {
       "id": "s9-13",
       "sceneId": "s9",
-      "text": "Basil spoke of guilt; Dorian spoke of art’s right to discard failed instruments."
+      "text": "Bai spoke of guilt; Du Yan spoke of art’s right to discard failed instruments."
     },
     {
       "id": "s9-14",
       "sceneId": "s9",
-      "text": "Basil left unconvinced and newly afraid."
+      "text": "Bai left unconvinced and newly afraid."
     },
     {
       "id": "s9-15",
       "sceneId": "s9",
-      "text": "In the weeks that followed, Dorian visited the attic daily."
+      "text": "In the weeks that followed, Du Yan visited the attic daily."
     },
     {
       "id": "s9-16",
@@ -1457,7 +1457,7 @@
     {
       "id": "s9-18",
       "sceneId": "s9",
-      "text": "He returned once to Sibyl’s theater."
+      "text": "He returned once to Su Yan’s theater."
     },
     {
       "id": "s9-19",
@@ -1467,7 +1467,7 @@
     {
       "id": "s9-20",
       "sceneId": "s9",
-      "text": "Dorian sat in the dark and understood that his love had been for a temperature, not a person."
+      "text": "Du Yan sat in the dark and understood that his love had been for a temperature, not a person."
     },
     {
       "id": "s9-21",
@@ -1477,12 +1477,12 @@
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "Lord Henry’s house off Wukang Road held books, cigarettes, and young people who wanted to be ruined stylishly."
+      "text": "Liu Heng’s house off Wukang Road held books, cigarettes, and young people who wanted to be ruined stylishly."
     },
     {
       "id": "s10-1",
       "sceneId": "s10",
-      "text": "Dorian became the illustration of Henry’s talk: proof that beauty could outrun consequence."
+      "text": "Du Yan became the illustration of Liu Heng’s talk: proof that beauty could outrun consequence."
     },
     {
       "id": "s10-2",
@@ -1497,32 +1497,32 @@
     {
       "id": "s10-4",
       "sceneId": "s10",
-      "text": "Basil, painting less, wrote an essay on portraiture that never named Dorian and somehow named only him."
+      "text": "Bai, painting less, wrote an essay on portraiture that never named Du Yan and somehow named only him."
     },
     {
       "id": "s10-5",
       "sceneId": "s10",
-      "text": "Dealers asked Basil for another Gray."
+      "text": "Dealers asked Bai for another Du Yan."
     },
     {
       "id": "s10-6",
       "sceneId": "s10",
-      "text": "Basil refused."
+      "text": "Bai refused."
     },
     {
       "id": "s10-7",
       "sceneId": "s10",
-      "text": "Dorian sent champagne."
+      "text": "Du Yan sent champagne."
     },
     {
       "id": "s10-8",
       "sceneId": "s10",
-      "text": "Basil did not drink it."
+      "text": "Bai did not drink it."
     },
     {
       "id": "s10-9",
       "sceneId": "s10",
-      "text": "One autumn Dorian traveled to Suzhou with a married collector and returned alone."
+      "text": "One autumn Du Yan traveled to Suzhou with a married collector and returned alone."
     },
     {
       "id": "s10-10",
@@ -1532,7 +1532,7 @@
     {
       "id": "s10-11",
       "sceneId": "s10",
-      "text": "The portrait’s hairline receded a fraction while Dorian’s remained a brochure for youth."
+      "text": "The portrait’s hairline receded a fraction while Du Yan’s remained a brochure for youth."
     },
     {
       "id": "s10-12",
@@ -1542,7 +1542,7 @@
     {
       "id": "s10-13",
       "sceneId": "s10",
-      "text": "He kept Sibyl’s bracelet in a drawer and never wore it."
+      "text": "He kept Su Yan’s bracelet in a drawer and never wore it."
     },
     {
       "id": "s10-14",
@@ -1557,17 +1557,17 @@
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "When Basil came back from Europe he looked older in the honest way."
+      "text": "When Bai came back from Europe he looked older in the honest way."
     },
     {
       "id": "s11-1",
       "sceneId": "s11",
-      "text": "Dorian received him in the riverside flat among orchids and denied every rumor with a smile that could have sold insurance."
+      "text": "Du Yan received him in the riverside flat among orchids and denied every rumor with a smile that could have sold insurance."
     },
     {
       "id": "s11-2",
       "sceneId": "s11",
-      "text": "Basil: There is a story about a boy in Hankou."
+      "text": "Bai: There is a story about a boy in Hankou."
     },
     {
       "id": "s11-3",
@@ -1582,12 +1582,12 @@
     {
       "id": "s11-5",
       "sceneId": "s11",
-      "text": "Dorian: Faces are poor evidence."
+      "text": "Du Yan: Faces are poor evidence."
     },
     {
       "id": "s11-6",
       "sceneId": "s11",
-      "text": "Basil: Then show me your soul."
+      "text": "Bai: Then show me your soul."
     },
     {
       "id": "s11-7",
@@ -1602,17 +1602,17 @@
     {
       "id": "s11-9",
       "sceneId": "s11",
-      "text": "Basil saw the painted ledger—vice, age, blood-hint, appetite—and fell to his knees as if beauty’s opposite required worship too."
+      "text": "Bai saw the painted ledger—vice, age, blood-hint, appetite—and fell to his knees as if beauty’s opposite required worship too."
     },
     {
       "id": "s11-10",
       "sceneId": "s11",
-      "text": "Basil: What have you done with my Dorian?"
+      "text": "Bai: What have you done with my Du Yan?"
     },
     {
       "id": "s11-11",
       "sceneId": "s11",
-      "text": "Dorian: I kept him."
+      "text": "Du Yan: I kept him."
     },
     {
       "id": "s11-12",
@@ -1627,7 +1627,7 @@
     {
       "id": "s11-14",
       "sceneId": "s11",
-      "text": "Dorian used it without speech after Basil began to pray."
+      "text": "Du Yan used it without speech after Bai began to pray."
     },
     {
       "id": "s11-15",
@@ -1637,7 +1637,7 @@
     {
       "id": "s11-16",
       "sceneId": "s11",
-      "text": "When it was finished, Dorian wiped his hands on Basil’s scarf and checked the portrait: fresh scarlet on the painted fingers."
+      "text": "When it was finished, Du Yan wiped his hands on Bai’s scarf and checked the portrait: fresh scarlet on the painted fingers."
     },
     {
       "id": "s11-17",
@@ -1647,32 +1647,32 @@
     {
       "id": "s11-18",
       "sceneId": "s11",
-      "text": "Alan Campbell arrived before midnight."
+      "text": "Kang Wei arrived before midnight."
     },
     {
       "id": "s11-19",
       "sceneId": "s11",
-      "text": "Dorian did not threaten with violence; he threatened with memory—letters, photographs, a summer Campbell could not survive in daylight."
+      "text": "Du Yan did not threaten with violence; he threatened with memory—letters, photographs, a summer Kang could not survive in daylight."
     },
     {
       "id": "s11-20",
       "sceneId": "s11",
-      "text": "Campbell worked until the body was chemistry."
+      "text": "Kang worked until the body was chemistry."
     },
     {
       "id": "s11-21",
       "sceneId": "s11",
-      "text": "At the door he said Dorian had destroyed two men in one night."
+      "text": "At the door he said Du Yan had destroyed two men in one night."
     },
     {
       "id": "s11-22",
       "sceneId": "s11",
-      "text": "Dorian corrected him: one man and one inconvenience."
+      "text": "Du Yan corrected him: one man and one inconvenience."
     },
     {
       "id": "s12-0",
       "sceneId": "s12",
-      "text": "James Vane’s search gave the plot a simpler grammar."
+      "text": "Jian Yan’s search gave the plot a simpler grammar."
     },
     {
       "id": "s12-1",
@@ -1687,22 +1687,22 @@
     {
       "id": "s12-3",
       "sceneId": "s12",
-      "text": "The afternoon he seized Dorian near the Custom House, Dorian’s unchanged face made James release him—until an old woman from Sibyl’s neighborhood spat the truth: that face had worn years it refused to show."
+      "text": "The afternoon he seized Du Yan near the Custom House, Du Yan’s unchanged face made Jian release him—until an old woman from Su Yan’s neighborhood spat the truth: that face had worn years it refused to show."
     },
     {
       "id": "s12-4",
       "sceneId": "s12",
-      "text": "James’s eyes changed."
+      "text": "Jian’s eyes changed."
     },
     {
       "id": "s12-5",
       "sceneId": "s12",
-      "text": "Dorian fled into traffic and privilege."
+      "text": "Du Yan fled into traffic and privilege."
     },
     {
       "id": "s12-6",
       "sceneId": "s12",
-      "text": "Fear made Dorian almost good."
+      "text": "Fear made Du Yan almost good."
     },
     {
       "id": "s12-7",
@@ -1732,17 +1732,17 @@
     {
       "id": "s12-12",
       "sceneId": "s12",
-      "text": "The upriver shoot came as Lord Henry’s idea of fresh air."
+      "text": "The upriver shoot came as Liu Heng’s idea of fresh air."
     },
     {
       "id": "s12-13",
       "sceneId": "s12",
-      "text": "James Vane appeared in the brake; a nervous gun discharged; James died in wet reeds."
+      "text": "Jian Yan appeared in the brake; a nervous gun discharged; Jian died in wet reeds."
     },
     {
       "id": "s12-14",
       "sceneId": "s12",
-      "text": "Dorian’s relief disgusted even him."
+      "text": "Du Yan’s relief disgusted even him."
     },
     {
       "id": "s12-15",
@@ -1757,17 +1757,17 @@
     {
       "id": "s13-1",
       "sceneId": "s13",
-      "text": "Basil’s murdered attention still lived in the brushwork beneath the corruption."
+      "text": "Bai’s murdered attention still lived in the brushwork beneath the corruption."
     },
     {
       "id": "s13-2",
       "sceneId": "s13",
-      "text": "Dorian spoke aloud."
+      "text": "Du Yan spoke aloud."
     },
     {
       "id": "s13-3",
       "sceneId": "s13",
-      "text": "Dorian: If I destroy you, am I free—or only finished?"
+      "text": "Du Yan: If I destroy you, am I free—or only finished?"
     },
     {
       "id": "s13-4",
@@ -1777,12 +1777,12 @@
     {
       "id": "s13-5",
       "sceneId": "s13",
-      "text": "That had always been Lord Henry’s job."
+      "text": "That had always been Liu Heng’s job."
     },
     {
       "id": "s13-6",
       "sceneId": "s13",
-      "text": "Dorian drove the knife in."
+      "text": "Du Yan drove the knife in."
     },
     {
       "id": "s13-7",
@@ -1802,12 +1802,12 @@
     {
       "id": "s13-10",
       "sceneId": "s13",
-      "text": "Lord Henry heard at noon."
+      "text": "Liu Heng heard at noon."
     },
     {
       "id": "s13-11",
       "sceneId": "s13",
-      "text": "He said it was the first time Dorian had been late for his own myth."
+      "text": "He said it was the first time Du Yan had been late for his own myth."
     },
     {
       "id": "s13-12",
@@ -1847,17 +1847,17 @@
     {
       "id": "s13-19",
       "sceneId": "s13",
-      "text": "Inside, Wilde’s accounting closed: the face that would not pay had paid in full, and the art—Basil’s stubborn love—hung clean above the ruin."
+      "text": "Inside, Wilde’s accounting closed: the face that would not pay had paid in full, and the art—Bai’s stubborn love—hung clean above the ruin."
     },
     {
       "id": "s14-0",
       "sceneId": "s14",
-      "text": "Before Sibyl, before the attic lock, there was only Basil’s studio and Lord Henry’s voice and a young man who mistook attention for destiny."
+      "text": "Before Su Yan, before the attic lock, there was only Bai’s studio and Liu Heng’s voice and a young man who mistook attention for destiny."
     },
     {
       "id": "s14-1",
       "sceneId": "s14",
-      "text": "Dorian sat for hours while Basil negotiated light against the Bund’s glare."
+      "text": "Du Yan sat for hours while Bai negotiated light against the Bund’s glare."
     },
     {
       "id": "s14-2",
@@ -1867,17 +1867,17 @@
     {
       "id": "s14-3",
       "sceneId": "s14",
-      "text": "Basil talked little when painting."
+      "text": "Bai talked little when painting."
     },
     {
       "id": "s14-4",
       "sceneId": "s14",
-      "text": "Lord Henry talked enough for both."
+      "text": "Liu Heng talked enough for both."
     },
     {
       "id": "s14-5",
       "sceneId": "s14",
-      "text": "Lord Henry: People say they want to be good."
+      "text": "Liu Heng: People say they want to be good."
     },
     {
       "id": "s14-6",
@@ -1887,32 +1887,32 @@
     {
       "id": "s14-7",
       "sceneId": "s14",
-      "text": "Dorian: And what do you want?"
+      "text": "Du Yan: And what do you want?"
     },
     {
       "id": "s14-8",
       "sceneId": "s14",
-      "text": "Lord Henry: To be quoted accurately."
+      "text": "Liu Heng: To be quoted accurately."
     },
     {
       "id": "s14-9",
       "sceneId": "s14",
-      "text": "Basil scowled without looking away from the mouth he was refining."
+      "text": "Bai scowled without looking away from the mouth he was refining."
     },
     {
       "id": "s14-10",
       "sceneId": "s14",
-      "text": "He loved Dorian with a painter’s panic—afraid that finishing the canvas would finish the feeling."
+      "text": "He loved Du Yan with a painter’s panic—afraid that finishing the canvas would finish the feeling."
     },
     {
       "id": "s14-11",
       "sceneId": "s14",
-      "text": "When the portrait was done, Basil’s hands shook."
+      "text": "When the portrait was done, Bai’s hands shook."
     },
     {
       "id": "s14-12",
       "sceneId": "s14",
-      "text": "Dorian kissed his cheek with theatrical gratitude and looked past him toward Henry for the real verdict."
+      "text": "Du Yan kissed his cheek with theatrical gratitude and looked past him toward Liu Heng for the real verdict."
     },
     {
       "id": "s14-13",
@@ -1927,7 +1927,7 @@
     {
       "id": "s14-15",
       "sceneId": "s14",
-      "text": "Dorian felt newly invented."
+      "text": "Du Yan felt newly invented."
     },
     {
       "id": "s14-16",
@@ -1937,17 +1937,17 @@
     {
       "id": "s14-17",
       "sceneId": "s14",
-      "text": "Basil asked him to live as if friendship were one."
+      "text": "Bai asked him to live as if friendship were one."
     },
     {
       "id": "s14-18",
       "sceneId": "s14",
-      "text": "Lord Henry suggested politics bored him except as metaphor."
+      "text": "Liu Heng suggested politics bored him except as metaphor."
     },
     {
       "id": "s14-19",
       "sceneId": "s14",
-      "text": "At home Dorian hung the portrait and spoke his wish a third time, no longer lightly."
+      "text": "At home Du Yan hung the portrait and spoke his wish a third time, no longer lightly."
     },
     {
       "id": "s14-20",
@@ -1967,7 +1967,7 @@
     {
       "id": "s14-23",
       "sceneId": "s14",
-      "text": "He spent the next days testing small cruelties: a canceled lunch, a borrowed idea claimed as his, a smile withheld from Basil at a crowded opening."
+      "text": "He spent the next days testing small cruelties: a canceled lunch, a borrowed idea claimed as his, a smile withheld from Bai at a crowded opening."
     },
     {
       "id": "s14-24",
@@ -1992,7 +1992,7 @@
     {
       "id": "s15-0",
       "sceneId": "s15",
-      "text": "Campbell’s suicide—if suicide was the word the lab preferred—left Dorian with a practical problem: fewer people who could be forced into intimacy with his secrets."
+      "text": "Kang’s suicide—if suicide was the word the lab preferred—left Du Yan with a practical problem: fewer people who could be forced into intimacy with his secrets."
     },
     {
       "id": "s15-1",
@@ -2017,7 +2017,7 @@
     {
       "id": "s15-5",
       "sceneId": "s15",
-      "text": "He dreamed of Basil speaking from the floorboards."
+      "text": "He dreamed of Bai speaking from the floorboards."
     },
     {
       "id": "s15-6",
@@ -2032,7 +2032,7 @@
     {
       "id": "s15-8",
       "sceneId": "s15",
-      "text": "Dorian considered burning it and knew he would not."
+      "text": "Du Yan considered burning it and knew he would not."
     },
     {
       "id": "s15-9",
@@ -2042,12 +2042,12 @@
     {
       "id": "s15-10",
       "sceneId": "s15",
-      "text": "James Vane’s death should have ended fear."
+      "text": "Jian Yan’s death should have ended fear."
     },
     {
       "id": "s15-11",
       "sceneId": "s15",
-      "text": "Instead it taught Dorian that luck was not absolution."
+      "text": "Instead it taught Du Yan that luck was not absolution."
     },
     {
       "id": "s15-12",
@@ -2062,7 +2062,7 @@
     {
       "id": "s15-14",
       "sceneId": "s15",
-      "text": "The attic, later, loved him less: the painted face wore a sanctimonious twist that made Dorian physically sick."
+      "text": "The attic, later, loved him less: the painted face wore a sanctimonious twist that made Du Yan physically sick."
     },
     {
       "id": "s15-15",
@@ -2072,7 +2072,7 @@
     {
       "id": "s16-0",
       "sceneId": "s16",
-      "text": "On the last afternoon he visited Basil’s old studio building."
+      "text": "On the last afternoon he visited Bai’s old studio building."
     },
     {
       "id": "s16-1",
@@ -2087,7 +2087,7 @@
     {
       "id": "s16-3",
       "sceneId": "s16",
-      "text": "Dorian stood on the stair and smelled, impossibly, turpentine and Basil’s soap."
+      "text": "Du Yan stood on the stair and smelled, impossibly, turpentine and Bai’s soap."
     },
     {
       "id": "s16-4",
@@ -2097,12 +2097,12 @@
     {
       "id": "s16-5",
       "sceneId": "s16",
-      "text": "Lord Henry texted an invitation to supper."
+      "text": "Liu Heng texted an invitation to supper."
     },
     {
       "id": "s16-6",
       "sceneId": "s16",
-      "text": "Dorian answered that he would come after the gallery preview."
+      "text": "Du Yan answered that he would come after the gallery preview."
     },
     {
       "id": "s16-7",
@@ -2142,7 +2142,7 @@
     {
       "id": "s16-14",
       "sceneId": "s16",
-      "text": "Years on, Lord Henry still told the story as an anecdote about wishing too precisely."
+      "text": "Years on, Liu Heng still told the story as an anecdote about wishing too precisely."
     },
     {
       "id": "s16-15",
@@ -2152,280 +2152,275 @@
     {
       "id": "s16-16",
       "sceneId": "s16",
-      "text": "Basil was remembered by a handful of canvases in storage."
+      "text": "Bai was remembered by a handful of canvases in storage."
     },
     {
       "id": "s16-17",
       "sceneId": "s16",
-      "text": "Dorian Gray was remembered as a face that had refused to learn time—until time, with a knife’s help, collected every lesson in a single night above the Huangpu."
+      "text": "Du Yan was remembered as a face that had refused to learn time—until time, with a knife’s help, collected every lesson in a single night above the Huangpu."
     },
     {
       "id": "s16-18",
       "sceneId": "s16",
-      "text": "Coda — What the city kept"
+      "text": "Coda — What the city kept Shanghai did not moralize."
     },
     {
       "id": "s16-19",
       "sceneId": "s16",
-      "text": "Shanghai did not moralize."
+      "text": "It filed."
     },
     {
       "id": "s16-20",
       "sceneId": "s16",
-      "text": "It filed."
+      "text": "The apartment was sold."
     },
     {
       "id": "s16-21",
       "sceneId": "s16",
-      "text": "The apartment was sold."
+      "text": "The attic was renovated into a closet for seasonal clothes."
     },
     {
       "id": "s16-22",
       "sceneId": "s16",
-      "text": "The attic was renovated into a closet for seasonal clothes."
+      "text": "A new tenant complained of a stain that would not leave the floorboards; workmen sanded and sealed until the wood looked innocent."
     },
     {
       "id": "s16-23",
       "sceneId": "s16",
-      "text": "A new tenant complained of a stain that would not leave the floorboards; workmen sanded and sealed until the wood looked innocent."
+      "text": "Innocence, in real estate, is a finish."
     },
     {
       "id": "s16-24",
       "sceneId": "s16",
-      "text": "Innocence, in real estate, is a finish."
+      "text": "Somewhere a private collector still owns Bai Sheng’s portrait of Du Yan—or owns a convincing lie about it."
     },
     {
       "id": "s16-25",
       "sceneId": "s16",
-      "text": "Somewhere a private collector still owns Basil Hallward’s portrait of Dorian Gray—or owns a convincing lie about it."
+      "text": "Guests who glimpse it say the boy’s beauty feels like an argument mid-sentence."
     },
     {
       "id": "s16-26",
       "sceneId": "s16",
-      "text": "Guests who glimpse it say the boy’s beauty feels like an argument mid-sentence."
+      "text": "They do not know the sentence’s end."
     },
     {
       "id": "s16-27",
       "sceneId": "s16",
-      "text": "They do not know the sentence’s end."
+      "text": "That is as close as the market comes to mercy."
     },
     {
       "id": "s16-28",
       "sceneId": "s16",
-      "text": "That is as close as the market comes to mercy."
+      "text": "Liu Heng lived long enough to become a quotation without a source."
     },
     {
       "id": "s16-29",
       "sceneId": "s16",
-      "text": "Lord Henry lived long enough to become a quotation without a source."
+      "text": "On slow afternoons he walked the Bund and imagined Du Yan beside him, still young, still listening."
     },
     {
       "id": "s16-30",
       "sceneId": "s16",
-      "text": "On slow afternoons he walked the Bund and imagined Dorian beside him, still young, still listening."
+      "text": "The fantasy was Liu Heng’s last vanity: that influence could outlive the influenced."
     },
     {
       "id": "s16-31",
       "sceneId": "s16",
-      "text": "The fantasy was Henry’s last vanity: that influence could outlive the influenced."
+      "text": "In truth the portrait had been the only student who took perfect notes."
     },
     {
       "id": "s16-32",
       "sceneId": "s16",
-      "text": "In truth the portrait had been the only student who took perfect notes."
+      "text": "As for Du Yan—his name surfaced in club stories and vanished."
     },
     {
       "id": "s16-33",
       "sceneId": "s16",
-      "text": "As for Dorian—his name surfaced in club stories and vanished."
+      "text": "A few aging socialites claimed they had danced with him and that his hand had been cold."
     },
     {
       "id": "s16-34",
       "sceneId": "s16",
-      "text": "A few aging socialites claimed they had danced with him and that his hand had been cold."
+      "text": "Others insisted he had been kinder than rumor."
     },
     {
       "id": "s16-35",
       "sceneId": "s16",
-      "text": "Others insisted he had been kinder than rumor."
+      "text": "Kindness and coldness could both be true in a life that outsourced its reflection."
     },
     {
       "id": "s16-36",
       "sceneId": "s16",
-      "text": "Kindness and coldness could both be true in a life that outsourced its reflection."
+      "text": "The knife had simply merged the books."
     },
     {
       "id": "s16-37",
       "sceneId": "s16",
-      "text": "The knife had simply merged the books."
+      "text": "If there is a moral, Wilde already wrote it and Shanghai only translated it into river light and apartment keys: the soul will hang somewhere."
     },
     {
       "id": "s16-38",
       "sceneId": "s16",
-      "text": "If there is a moral, Wilde already wrote it and Shanghai only translated it into river light and apartment keys: the soul will hang somewhere."
+      "text": "Choose the frame carefully."
     },
     {
       "id": "s16-39",
       "sceneId": "s16",
-      "text": "Choose the frame carefully."
+      "text": "Pay attention when the paint begins to look more honest than your face."
     },
     {
       "id": "s16-40",
       "sceneId": "s16",
-      "text": "Pay attention when the paint begins to look more honest than your face."
+      "text": "And when you reach for a weapon against your own ledger, understand you are not ending a picture."
     },
     {
       "id": "s16-41",
       "sceneId": "s16",
-      "text": "And when you reach for a weapon against your own ledger, understand you are not ending a picture."
+      "text": "You are calling due every hour you borrowed against a beauty that was never free."
     },
     {
       "id": "s16-42",
       "sceneId": "s16",
-      "text": "You are calling due every hour you borrowed against a beauty that was never free."
+      "text": "One more inventory, for the record: Du Yan’s uncle’s allowance had funded the first years; later Du Yan’s own investments in river shipping and a quiet stake in a Concession gallery funded the rest."
     },
     {
       "id": "s16-43",
       "sceneId": "s16",
-      "text": "One more inventory, for the record: Dorian’s uncle’s allowance had funded the first years; later Dorian’s own investments in river shipping and a quiet stake in a Concession gallery funded the rest."
+      "text": "Money made the bargain comfortable."
     },
     {
       "id": "s16-44",
       "sceneId": "s16",
-      "text": "Money made the bargain comfortable."
+      "text": "Without money the portrait might have been found earlier—poverty is a detective."
     },
     {
       "id": "s16-45",
       "sceneId": "s16",
-      "text": "Without money the portrait might have been found earlier—poverty is a detective."
+      "text": "Wealth drew curtains."
     },
     {
       "id": "s16-46",
       "sceneId": "s16",
-      "text": "Wealth drew curtains."
+      "text": "He once almost confessed to a priest in a church near Xintiandi, more for the architecture than the sacrament."
     },
     {
       "id": "s16-47",
       "sceneId": "s16",
-      "text": "He once almost confessed to a priest in a church near Xintiandi, more for the architecture than the sacrament."
+      "text": "He stood in the aisle, rehearsed a sentence about a painting, and left."
     },
     {
       "id": "s16-48",
       "sceneId": "s16",
-      "text": "He stood in the aisle, rehearsed a sentence about a painting, and left."
+      "text": "Outside, tourists photographed brick."
     },
     {
       "id": "s16-49",
       "sceneId": "s16",
-      "text": "Outside, tourists photographed brick."
+      "text": "He photographed nothing."
     },
     {
       "id": "s16-50",
       "sceneId": "s16",
-      "text": "He photographed nothing."
+      "text": "His life was already being painted elsewhere."
     },
     {
       "id": "s16-51",
       "sceneId": "s16",
-      "text": "His life was already being painted elsewhere."
+      "text": "On the morning after his death, a cleaner found Su Yan’s bracelet in a drawer and slipped it into her pocket before the police sealed the rooms."
     },
     {
       "id": "s16-52",
       "sceneId": "s16",
-      "text": "On the morning after his death, a cleaner found Sibyl’s bracelet in a drawer and slipped it into her pocket before the police sealed the rooms."
+      "text": "She sold it months later in a market without knowing its story."
     },
     {
       "id": "s16-53",
       "sceneId": "s16",
-      "text": "She sold it months later in a market without knowing its story."
+      "text": "The bracelet outlived every principal."
     },
     {
       "id": "s16-54",
       "sceneId": "s16",
-      "text": "The bracelet outlived every principal."
+      "text": "Objects are patient that way."
     },
     {
       "id": "s16-55",
       "sceneId": "s16",
-      "text": "Objects are patient that way."
+      "text": "Stories are less so—unless someone writes them down and refuses, this time, to rename the people who lived them."
     },
     {
       "id": "s16-56",
       "sceneId": "s16",
-      "text": "Stories are less so—unless someone writes them down and refuses, this time, to rename the people who lived them."
+      "text": "Bai’s sister, years after, petitioned quietly for news of her brother’s last days in Shanghai."
     },
     {
       "id": "s16-57",
       "sceneId": "s16",
-      "text": "Basil’s sister, years after, petitioned quietly for news of her brother’s last days in Shanghai."
+      "text": "Officials offered shrugs."
     },
     {
       "id": "s16-58",
       "sceneId": "s16",
-      "text": "Officials offered shrugs."
+      "text": "Liu Heng offered lunch and anecdotes that made Bai sound like a charming footnote to Du Yan’s legend."
     },
     {
       "id": "s16-59",
       "sceneId": "s16",
-      "text": "Lord Henry offered lunch and anecdotes that made Basil sound like a charming footnote to Dorian’s legend."
+      "text": "She left the lunch untouched and walked the Bund alone, looking up at windows that did not look back."
     },
     {
       "id": "s16-60",
       "sceneId": "s16",
-      "text": "She left the lunch untouched and walked the Bund alone, looking up at windows that did not look back."
+      "text": "She did not find the portrait."
     },
     {
       "id": "s16-61",
       "sceneId": "s16",
-      "text": "She did not find the portrait."
+      "text": "She found only the city’s gift for absorbing unfinished grief into commerce."
     },
     {
       "id": "s16-62",
       "sceneId": "s16",
-      "text": "She found only the city’s gift for absorbing unfinished grief into commerce."
+      "text": "And so the recast ends where Wilde ended: not with a sermon but with a recognition scene."
     },
     {
       "id": "s16-63",
       "sceneId": "s16",
-      "text": "And so the recast ends where Wilde ended: not with a sermon but with a recognition scene."
+      "text": "Youth on the wall."
     },
     {
       "id": "s16-64",
       "sceneId": "s16",
-      "text": "Youth on the wall."
+      "text": "Age on the floor."
     },
     {
       "id": "s16-65",
       "sceneId": "s16",
-      "text": "Age on the floor."
+      "text": "The knife between them like a signature."
     },
     {
       "id": "s16-66",
       "sceneId": "s16",
-      "text": "The knife between them like a signature."
+      "text": "Call it magic if you need a genre."
     },
     {
       "id": "s16-67",
       "sceneId": "s16",
-      "text": "Call it magic if you need a genre."
+      "text": "Call it conscience if you need a moral."
     },
     {
       "id": "s16-68",
       "sceneId": "s16",
-      "text": "Call it conscience if you need a moral."
+      "text": "Shanghai, glamorous and exacting in 2026’s hard light, simply calls it what happened—and keeps the ferries running while the story finds its next listener."
     },
     {
       "id": "s16-69",
       "sceneId": "s16",
-      "text": "Shanghai, glamorous and exacting in 2026’s hard light, simply calls it what happened—and keeps the ferries running while the story finds its next listener."
+      "text": "Du Yan’s name, when it surfaces now, surfaces with Bai Sheng’s and Liu Heng’s and Su Yan’s—together, as they must."
     },
     {
       "id": "s16-70",
-      "sceneId": "s16",
-      "text": "Dorian Gray’s name, when it surfaces now, surfaces with Basil Hallward’s and Lord Henry Wotton’s and Sibyl Vane’s—together, as they must."
-    },
-    {
-      "id": "s16-71",
       "sceneId": "s16",
       "text": "The portrait bargain only makes sense if the painter, the tempter, the actress, and the beautiful boy keep their own names in the city’s mouth."
     }

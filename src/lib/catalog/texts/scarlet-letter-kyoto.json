@@ -3,156 +3,93 @@
   "title": "Nathaniel Hawthorne, The Scarlet Letter recast",
   "author": "Salon",
   "year": "2026",
-  "note": "This whole-book remake includes public shame, obsessive psychological cruelty, and death. Exact harm, not spectacle. Warn the room before you Host it; offer a midpoint pause if needed.",
-  "minutes": 37,
+  "note": "Whole-book continuous remake. Public shame; obsessive psychological cruelty; death. Exact harm, not spectacle. Warn the room before you Host it; offer a midpoint pause if needed.",
+  "minutes": 24,
   "cover": "",
   "coverAlt": "",
   "scenes": [
     {
       "id": "s0",
-      "title": "Kyoto Scaffold",
+      "title": "Scaffold",
       "place": "Kyoto",
-      "reentry": "Hester Prynne stood on a merchant-quarter scaffold in Kyoto while phones rose like a second congregation and the embroidered A on her chest caught morning light with defiant craft.",
+      "reentry": "Hisako stood in public shame at a Kyoto plaza near temple tourism’s edge—scaffold analogue—with Shinju in her arms and a scarlet A embroidered with unsettling artistry.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s1",
-      "title": "Kyoto Scaffold · 2",
+      "title": "Shinju / Forest",
       "place": "Kyoto",
-      "reentry": "He died there in public truth.",
+      "reentry": "Shinju asked impossible questions.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s2",
-      "title": "Kyoto Scaffold · 3",
+      "title": "Election Sermon",
       "place": "Kyoto",
-      "reentry": "Signs are cheap in holy cities.",
+      "reentry": "Mori’s Election sermon crowned him publicly; then he climbed the scaffold, confessed, revealed the mark over his heart, and died in Hisako’s arms.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
-      "title": "Pearl played at naming flowers after sins she",
+      "title": "Sensibility",
       "place": "Kyoto",
-      "reentry": "Pearl played at naming flowers after sins she could not define, then asked Hester whether the letter loved her.",
+      "reentry": "Sin, shame, secrecy, revenge-as-medicine, forest truth, scaffold confession, mercy incomplete.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
-      "title": "Hester told Dimmesdale that Chillingworth was",
+      "title": "Embroidered A",
       "place": "Kyoto",
-      "reentry": "Hester told Dimmesdale that Chillingworth was her husband; Dimmesdale raged at the betrayal of silence, then collapsed into her plan: leave after the sermon, take ship, live.",
+      "reentry": "Hisako’s A was so finely embroidered it accused the magistrates of lacking art.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s5",
-      "title": "Hester Prynne learned Kyoto's merchant",
+      "title": "Kanzaki Smile",
       "place": "Kyoto",
-      "reentry": "Hester Prynne learned Kyoto's merchant quarter as a map of glances.",
+      "reentry": "Kanzaki’s smile arrived as medicine.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s6",
-      "title": "She told him the physician was Roger",
+      "title": "Governor Hall",
       "place": "Kyoto",
-      "reentry": "She told him the physician was Roger Chillingworth, her husband.",
+      "reentry": "In the governor’s hall Shinju refused catechism’s easy answers.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s7",
-      "title": "Kyoto Scaffold · 8",
+      "title": "Forest Loosening",
       "place": "Kyoto",
-      "reentry": "Women in trouble found her door.",
+      "reentry": "In forested hills above the city’s tourism edge Hisako loosened the A and hair and named the minister to himself.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s8",
-      "title": "Kyoto Scaffold · 9",
+      "title": "Sermon Crown",
       "place": "Kyoto",
-      "reentry": "He catalogued.",
+      "reentry": "Mori’s Election sermon crowned him; the scaffold afterward uncrowned him into truth.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s9",
-      "title": "Pearl as the scarlet letter made flesh and",
+      "title": "Legend A",
       "place": "Kyoto",
-      "reentry": "Pearl as the scarlet letter made flesh and then freed by inheritance into ordinary possible joy.",
+      "reentry": "Years later legend softened the A’s meaning.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s10",
-      "title": "Hester, passing with a delivery of sewn",
+      "title": "Scarlet Close2",
       "place": "Kyoto",
-      "reentry": "Hester, passing with a delivery of sewn goods, saw the catch as a claim.",
+      "reentry": "Allegory held.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s11",
-      "title": "Chillingworth's deathbed, briefly: he asked",
+      "title": "Further",
       "place": "Kyoto",
-      "reentry": "Chillingworth's deathbed, briefly: he asked whether Hester hated him.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s12",
-      "title": "A boy asked whether hidden sin was worse than",
-      "place": "Kyoto",
-      "reentry": "A boy asked whether hidden sin was worse than open sin.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s13",
-      "title": "They spoke of New World ports and old Kyoto",
-      "place": "Kyoto",
-      "reentry": "They spoke of New World ports and old Kyoto cages.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s14",
-      "title": "Kyoto Scaffold · 15",
-      "place": "Kyoto",
-      "reentry": "He chose metamorphosis into leech.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s15",
-      "title": "Names: Hester Prynne, Arthur Dimmesdale,",
-      "place": "Kyoto",
-      "reentry": "Names: Hester Prynne, Arthur Dimmesdale, Roger Chillingworth, Pearl.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s16",
-      "title": "Hester said satisfaction was not the currency",
-      "place": "Kyoto",
-      "reentry": "Hester said satisfaction was not the currency she traded in.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s17",
-      "title": "Kyoto Scaffold · 18",
-      "place": "Kyoto",
-      "reentry": "Pearl became unexpectedly landed.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s18",
-      "title": "Kyoto Scaffold · 19",
-      "place": "Kyoto",
-      "reentry": "No pad refrain.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s19",
-      "title": "Kyoto Scaffold · 20",
-      "place": "Kyoto",
-      "reentry": "Kyoto glamours on.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s20",
-      "title": "Public eyes are portable; they travel in",
-      "place": "Kyoto",
-      "reentry": "Public eyes are portable; they travel in tourist crowds and temple queues alike.",
+      "reentry": "Hisako’s needle made the A too beautiful for the sentence it was meant to be.",
       "prompt": "A word from this stretch."
     }
   ],
@@ -160,2452 +97,1432 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Hester Prynne stood on a merchant-quarter scaffold in Kyoto while phones rose like a second congregation and the embroidered A on her chest caught morning light with defiant craft."
+      "text": "Hisako stood in public shame at a Kyoto plaza near temple tourism’s edge—scaffold analogue—with Shinju in her arms and a scarlet A embroidered with unsettling artistry."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "Public shame was the city's oldest theater, updated with livestream murmurs and the soft cruelty of people who believed themselves merely witnesses."
+      "text": "Hawthorne’s allegory of public letter versus private brand reseated without tourist kimono jokes."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "Beside her, infant Pearl stirred."
+      "text": "Magistrates demanded the father’s name."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "In the crowd, Arthur Dimmesdale—temple-school minister, eloquent, beloved—held a hand over his heart as if eloquence could compress guilt into posture."
+      "text": "Hisako refused."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "At the scaffold's edge, a stranger studied Hester's face with recognition that was not mercy: Roger Chillingworth, her long-absent husband, returned from abroad into revenge's medicine."
+      "text": "Kanzaki arrived, unrecognized husband, and smiled like medicine."
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "They had made her stand for adultery's sentence in a Kyoto that sold matcha and museums by afternoon and enforced moral spectacle by morning."
+      "text": "Mori preached with a hand over his heart."
     },
     {
       "id": "s0-6",
       "sceneId": "s0",
-      "text": "Hester refused to name Pearl's father."
-    },
-    {
-      "id": "s0-7",
-      "sceneId": "s0",
-      "text": "Dimmesdale, ordered to urge her, spoke trembling words that begged her to speak while praying she would not."
-    },
-    {
-      "id": "s0-8",
-      "sceneId": "s0",
-      "text": "She did not."
-    },
-    {
-      "id": "s0-9",
-      "sceneId": "s0",
-      "text": "The A—scarlet, elaborate, almost beautiful—became her job and her art."
-    },
-    {
-      "id": "s0-10",
-      "sceneId": "s0",
-      "text": "She lived at the town's margin near forest path and Kamo edge, sewing for the powerful who condemned her and wore her thread to galas."
-    },
-    {
-      "id": "s0-11",
-      "sceneId": "s0",
-      "text": "Chillingworth installed himself as physician, smiling, seeking the guilty man through Dimmesdale's body."
-    },
-    {
-      "id": "s0-12",
-      "sceneId": "s0",
-      "text": "He moved into intimacy with the minister's symptoms—hand to chest, midnight vigils, sermons that burned."
-    },
-    {
-      "id": "s0-13",
-      "sceneId": "s0",
-      "text": "Revenge wore clinical patience."
-    },
-    {
-      "id": "s0-14",
-      "sceneId": "s0",
-      "text": "Dimmesdale's guilt grew eloquent; crowds wept at his holiness while Hester, silent, recognized the tremor under the voice."
-    },
-    {
-      "id": "s0-15",
-      "sceneId": "s0",
-      "text": "Pearl grew wild—elfin, questioning, pointing at the A, refusing soft lies."
-    },
-    {
-      "id": "s0-16",
-      "sceneId": "s0",
-      "text": "She was truth without manners."
-    },
-    {
-      "id": "s0-17",
-      "sceneId": "s0",
-      "text": "On the scaffold at night Dimmesdale stood alone in a crisis of almost-confession; Hester and Pearl joined him in the dark; a meteor lit the sky like an A; Chillingworth watched from shadow."
-    },
-    {
-      "id": "s0-18",
-      "sceneId": "s0",
-      "text": "Later, in the forest, Hester met Dimmesdale among maples and told him Chillingworth's identity—husband as leech."
-    },
-    {
-      "id": "s0-19",
-      "sceneId": "s0",
-      "text": "She urged him toward truth and escape."
-    },
-    {
-      "id": "s0-20",
-      "sceneId": "s0",
-      "text": "They planned to leave Kyoto by sea after his Election sermon."
-    },
-    {
-      "id": "s0-21",
-      "sceneId": "s0",
-      "text": "Hester cast off the A briefly; Pearl refused her until she restored it."
-    },
-    {
-      "id": "s0-22",
-      "sceneId": "s0",
-      "text": "Freedom had conditions Pearl enforced like a small fierce law."
-    },
-    {
-      "id": "s0-23",
-      "sceneId": "s0",
-      "text": "On Election Day Dimmesdale preached with terrible brilliance, then climbed the scaffold with Hester and Pearl and confessed—hand tore open his shirt to reveal what guilt had carved."
+      "text": "The physician moved into intimacy with the minister’s guilt and began revenge as care."
     },
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "He died there in public truth."
+      "text": "Shinju asked impossible questions."
     },
     {
       "id": "s1-1",
       "sceneId": "s1",
-      "text": "Chillingworth, robbed of the secret live victim, withered and died soon after, leaving fortune to Pearl."
+      "text": "The governor considered taking her; Hisako fought with Mori’s unexpected support."
     },
     {
       "id": "s1-2",
       "sceneId": "s1",
-      "text": "Hester left, then returned years later to the margin cottage, still wearing an A that had become legend more than sentence."
+      "text": "In the forest Hisako loosened the A and named Mori to himself."
     },
     {
       "id": "s1-3",
       "sceneId": "s1",
-      "text": "Pearl thrived elsewhere."
+      "text": "They planned escape by ship."
     },
     {
       "id": "s1-4",
       "sceneId": "s1",
-      "text": "Kyoto's glamorous temples and merchant streets continued."
-    },
-    {
-      "id": "s1-5",
-      "sceneId": "s1",
-      "text": "Spirit held: public mark as art; hidden guilt; revenge as medicine; forest tenderness; final scaffold reveal."
-    },
-    {
-      "id": "s1-6",
-      "sceneId": "s1",
-      "text": "Before the scaffold morning Hester had lived in hope of Chillingworth's return as scholar-husband; instead he returned as hunter."
-    },
-    {
-      "id": "s1-7",
-      "sceneId": "s1",
-      "text": "In the prison, earlier, he forced her vow of silence about his identity while he vowed to find her lover."
-    },
-    {
-      "id": "s1-8",
-      "sceneId": "s1",
-      "text": "Pearl nursed."
-    },
-    {
-      "id": "s1-9",
-      "sceneId": "s1",
-      "text": "Kyoto's summer pressed."
-    },
-    {
-      "id": "s1-10",
-      "sceneId": "s1",
-      "text": "Outside, tourists already queued for shrines not knowing the merchant quarter staged a different rite."
-    },
-    {
-      "id": "s1-11",
-      "sceneId": "s1",
-      "text": "Dimmesdale visited as pastor; Chillingworth watched the visit's electricity without yet naming it."
-    },
-    {
-      "id": "s1-12",
-      "sceneId": "s1",
-      "text": "Hester's release into marked life taught her the city's bargain: beauty elsewhere, stigma here."
-    },
-    {
-      "id": "s1-13",
-      "sceneId": "s1",
-      "text": "She embroidered with such skill that the A became fashion's uneasy cousin—people hated her and ordered her needle."
-    },
-    {
-      "id": "s1-14",
-      "sceneId": "s1",
-      "text": "She walked with Pearl along the Kamo where joggers passed and glanced."
-    },
-    {
-      "id": "s1-15",
-      "sceneId": "s1",
-      "text": "Pearl threw stones at her own reflection and asked why the letter burned."
-    },
-    {
-      "id": "s1-16",
-      "sceneId": "s1",
-      "text": "Hester said it was a pillow of flame she had to love into meaning."
-    },
-    {
-      "id": "s1-17",
-      "sceneId": "s1",
-      "text": "Chillingworth's friendship with Dimmesdale became a shared house of cures and hints."
-    },
-    {
-      "id": "s1-18",
-      "sceneId": "s1",
-      "text": "He mixed herbs."
-    },
-    {
-      "id": "s1-19",
-      "sceneId": "s1",
-      "text": "He asked soft questions about sin's physiology."
-    },
-    {
-      "id": "s1-20",
-      "sceneId": "s1",
-      "text": "Dimmesdale preached repentance while clutching his chest in private until blood and symbol mixed."
-    },
-    {
-      "id": "s1-21",
-      "sceneId": "s1",
-      "text": "Hester saw them together in a temple garden and nearly spoke; Pearl tugged her away, laughing at a face Pearl alone seemed to see in Dimmesdale—father-shaped."
-    },
-    {
-      "id": "s1-22",
-      "sceneId": "s1",
-      "text": "The night scaffold scene: Dimmesdale's cry, Hester's ascent, Pearl's request for daylight acknowledgment he could not yet give, Chillingworth's smile from below like a lock clicking."
-    },
-    {
-      "id": "s1-23",
-      "sceneId": "s1",
-      "text": "Next day the town gossiped of signs in the sky."
+      "text": "Kanzaki booked the same passage—revenge still smiling."
     },
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "Signs are cheap in holy cities."
+      "text": "Mori’s Election sermon crowned him publicly; then he climbed the scaffold, confessed, revealed the mark over his heart, and died in Hisako’s arms."
     },
     {
       "id": "s2-1",
       "sceneId": "s2",
-      "text": "Guilt is expensive."
+      "text": "Shinju kissed him and became more human than symbol."
     },
     {
       "id": "s2-2",
       "sceneId": "s2",
-      "text": "Forest meeting: path away from tourist cedar routes into quieter maples."
+      "text": "Kanzaki withered without a victim."
     },
     {
       "id": "s2-3",
       "sceneId": "s2",
-      "text": "Hester unbound her hair; Dimmesdale wept into her hands; they spoke of leaving for a port, another life, Pearl between them as possibility."
+      "text": "Hisako lived on; legend said the A’s meaning softened into able."
     },
     {
       "id": "s2-4",
       "sceneId": "s2",
-      "text": "Hester tore the A off; Pearl refused kisses until the mark returned—child as moral compass without church."
-    },
-    {
-      "id": "s2-5",
-      "sceneId": "s2",
-      "text": "Hester understood: escape would not erase the public grammar Pearl had learned."
-    },
-    {
-      "id": "s2-6",
-      "sceneId": "s2",
-      "text": "Still they planned."
-    },
-    {
-      "id": "s2-7",
-      "sceneId": "s2",
-      "text": "Hope, even doomed, is part of Hawthorne's beat."
-    },
-    {
-      "id": "s2-8",
-      "sceneId": "s2",
-      "text": "Election Day crowds filled streets between floats and modern barriers."
-    },
-    {
-      "id": "s2-9",
-      "sceneId": "s2",
-      "text": "Hester stood at the scaffold's shadow with Pearl."
-    },
-    {
-      "id": "s2-10",
-      "sceneId": "s2",
-      "text": "Dimmesdale's sermon shook listeners."
-    },
-    {
-      "id": "s2-11",
-      "sceneId": "s2",
-      "text": "Then he called them—Hester, Pearl—and climbed."
-    },
-    {
-      "id": "s2-12",
-      "sceneId": "s2",
-      "text": "Confession broke the town's favorite saint into a man."
-    },
-    {
-      "id": "s2-13",
-      "sceneId": "s2",
-      "text": "The revealed mark—whether carved, psychosomatic, or scarlet echo—did its work."
-    },
-    {
-      "id": "s2-14",
-      "sceneId": "s2",
-      "text": "He asked Pearl's kiss; she gave it; tears like baptism."
-    },
-    {
-      "id": "s2-15",
-      "sceneId": "s2",
-      "text": "He died on the boards where Hester had once stood mute."
-    },
-    {
-      "id": "s2-16",
-      "sceneId": "s2",
-      "text": "Chillingworth knelt in loss of purpose, hissing that the escape of confession had cheated revenge."
-    },
-    {
-      "id": "s2-17",
-      "sceneId": "s2",
-      "text": "Kyoto cameras, in this 2026 reseat, caught what tradition once whispered."
-    },
-    {
-      "id": "s2-18",
-      "sceneId": "s2",
-      "text": "Years: Pearl heir, married across water in rumor; Hester returned in gray, still lettered by choice, counseling wounded women in the cottage by the forest path."
-    },
-    {
-      "id": "s2-19",
-      "sceneId": "s2",
-      "text": "The A now meant Able to some, Adultery to others, Art to those who watched her sew."
-    },
-    {
-      "id": "s2-20",
-      "sceneId": "s2",
-      "text": "Dimmesdale's grave shared a mark visitors debated."
-    },
-    {
-      "id": "s2-21",
-      "sceneId": "s2",
-      "text": "Chillingworth's name faded into physician footnotes."
-    },
-    {
-      "id": "s2-22",
-      "sceneId": "s2",
-      "text": "Continuous novel closed on Hester's doorstep, Kamo light through leaves, public shame transformed without being denied—names intact: Hester Prynne, Dimmesdale, Chillingworth, Pearl."
-    },
-    {
-      "id": "s2-23",
-      "sceneId": "s2",
-      "text": "Hester's cottage smelled of dye and pine."
+      "text": "Allegory remained uncomfortable—Hawthorne’s point."
     },
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "Pearl played at naming flowers after sins she could not define, then asked Hester whether the letter loved her."
+      "text": "Sin, shame, secrecy, revenge-as-medicine, forest truth, scaffold confession, mercy incomplete."
     },
     {
       "id": "s3-1",
       "sceneId": "s3",
-      "text": "Hester said she loved Pearl more than any alphabet of punishment."
+      "text": "Kyoto cooled surfaces."
     },
     {
       "id": "s3-2",
       "sceneId": "s3",
-      "text": "Officials sometimes threatened to take Pearl for \"better\" upbringing; Dimmesdale, on the governing board, argued with sudden passion that the child stay—nearly exposing himself by the heat of care."
+      "text": "Not a different book."
     },
     {
       "id": "s3-3",
       "sceneId": "s3",
-      "text": "Chillingworth observed that heat the way a chemist observes a flame."
-    },
-    {
-      "id": "s3-4",
-      "sceneId": "s3",
-      "text": "Kyoto's glamorous surface—temple tourism, river restaurants, private galleries—made the scaffold's shame look archaic until you noticed how easily crowds still gathered for a woman's fall."
-    },
-    {
-      "id": "s3-5",
-      "sceneId": "s3",
-      "text": "Hester walked shopping arcades with Pearl and felt eyes."
-    },
-    {
-      "id": "s3-6",
-      "sceneId": "s3",
-      "text": "She sewed a wedding kimono hybrid for a magistrate's daughter who would not meet her gaze while measuring."
-    },
-    {
-      "id": "s3-7",
-      "sceneId": "s3",
-      "text": "Cash paid."
-    },
-    {
-      "id": "s3-8",
-      "sceneId": "s3",
-      "text": "Cash did not cleanse."
-    },
-    {
-      "id": "s3-9",
-      "sceneId": "s3",
-      "text": "Hester did not ask for cleansing."
-    },
-    {
-      "id": "s3-10",
-      "sceneId": "s3",
-      "text": "She asked for thread."
-    },
-    {
-      "id": "s3-11",
-      "sceneId": "s3",
-      "text": "Dimmesdale's health worsened under Chillingworth's care that was also cultivation of pain."
-    },
-    {
-      "id": "s3-12",
-      "sceneId": "s3",
-      "text": "The physician spoke of hidden sin as root; the minister agreed in abstracts that roasted him."
-    },
-    {
-      "id": "s3-13",
-      "sceneId": "s3",
-      "text": "At night Dimmesdale scourged himself in private ritual, stared in mirrors for the mark he deserved, composed sermons that made listeners feel saved while he felt damned."
-    },
-    {
-      "id": "s3-14",
-      "sceneId": "s3",
-      "text": "Hester, hearing one such sermon from the back, wept not for rhetoric but for the man drowning inside it."
-    },
-    {
-      "id": "s3-15",
-      "sceneId": "s3",
-      "text": "Pearl, at seven, danced on the shore of the Kamo and declared she had no Heavenly Father."
-    },
-    {
-      "id": "s3-16",
-      "sceneId": "s3",
-      "text": "Passersby were scandalized."
-    },
-    {
-      "id": "s3-17",
-      "sceneId": "s3",
-      "text": "Hester hushed her without lying."
-    },
-    {
-      "id": "s3-18",
-      "sceneId": "s3",
-      "text": "Later Pearl pointed at Dimmesdale across a festival crowd: \"He stays with his hand on his heart."
-    },
-    {
-      "id": "s3-19",
-      "sceneId": "s3",
-      "text": "Does he stay with us?\""
-    },
-    {
-      "id": "s3-20",
-      "sceneId": "s3",
-      "text": "Hester said not yet."
-    },
-    {
-      "id": "s3-21",
-      "sceneId": "s3",
-      "text": "Pearl said, \"Then not truly.\""
-    },
-    {
-      "id": "s3-22",
-      "sceneId": "s3",
-      "text": "Children's theology cuts."
-    },
-    {
-      "id": "s3-23",
-      "sceneId": "s3",
-      "text": "The forest conference expanded in memory as their only unwatched room."
+      "text": "A24: symbol over spectacle."
     },
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "Hester told Dimmesdale that Chillingworth was her husband; Dimmesdale raged at the betrayal of silence, then collapsed into her plan: leave after the sermon, take ship, live."
+      "text": "Hisako’s A was so finely embroidered it accused the magistrates of lacking art."
     },
     {
       "id": "s4-1",
       "sceneId": "s4",
-      "text": "She restored the A when Pearl's refusal made clear that private freedom without public truth would orphan the child spiritually."
+      "text": "Shinju tugged it as if the letter were a toy and a throne."
     },
     {
       "id": "s4-2",
       "sceneId": "s4",
-      "text": "They emerged from maples into a world still organized by scaffold logic—yet briefly holding hands."
-    },
-    {
-      "id": "s4-3",
-      "sceneId": "s4",
-      "text": "Election Day's confession did not redeem Kyoto; it ruptured a favorite illusion."
-    },
-    {
-      "id": "s4-4",
-      "sceneId": "s4",
-      "text": "Some called Dimmesdale holy for dying in truth; some called Hester witch for surviving."
-    },
-    {
-      "id": "s4-5",
-      "sceneId": "s4",
-      "text": "Chillingworth's fortune passing to Pearl was revenge's ironic estate planning."
-    },
-    {
-      "id": "s4-6",
-      "sceneId": "s4",
-      "text": "Hester's return years later—A still worn—completed Hawthorne's arc: shame metabolized into counsel, not erased."
-    },
-    {
-      "id": "s4-7",
-      "sceneId": "s4",
-      "text": "She sat with young women in trouble and did not preach purity."
-    },
-    {
-      "id": "s4-8",
-      "sceneId": "s4",
-      "text": "She preached endurance and the craft of making a mark mean more than the judges intended."
-    },
-    {
-      "id": "s4-9",
-      "sceneId": "s4",
-      "text": "Roger Chillingworth, in his last weeks, wandered temple grounds muttering of missed prey."
-    },
-    {
-      "id": "s4-10",
-      "sceneId": "s4",
-      "text": "Without Dimmesdale's secret to feed on, his face emptied."
-    },
-    {
-      "id": "s4-11",
-      "sceneId": "s4",
-      "text": "Physicians of the body could not cure a hunger for another's guilt."
-    },
-    {
-      "id": "s4-12",
-      "sceneId": "s4",
-      "text": "He died as a man who had turned medicine into hunting and found the hunt ended by confession's public knife."
-    },
-    {
-      "id": "s4-13",
-      "sceneId": "s4",
-      "text": "Pearl, receiving his wealth, gained a future untethered from Kyoto's merchant-quarter boards."
-    },
-    {
-      "id": "s4-14",
-      "sceneId": "s4",
-      "text": "Hester refused to take that wealth for herself beyond bare need."
-    },
-    {
-      "id": "s4-15",
-      "sceneId": "s4",
-      "text": "She had learned the price of other people's gold."
-    },
-    {
-      "id": "s4-16",
-      "sceneId": "s4",
-      "text": "In the cottage evenings she sometimes touched the A as one touches a scar that has become a map."
-    },
-    {
-      "id": "s4-17",
-      "sceneId": "s4",
-      "text": "Dimmesdale's last words—*farewell*—still lived in the wood of the scaffold in her mind."
-    },
-    {
-      "id": "s4-18",
-      "sceneId": "s4",
-      "text": "Pearl's letters from abroad arrived smelling of unfamiliar rain."
-    },
-    {
-      "id": "s4-19",
-      "sceneId": "s4",
-      "text": "Kyoto glittered with new cafes."
-    },
-    {
-      "id": "s4-20",
-      "sceneId": "s4",
-      "text": "The continuous book kept the names and the beats: scaffold, letter, physician-revenge, minister-guilt, Pearl's wildness, forest plan, Election scaffold death, return."
-    },
-    {
-      "id": "s4-21",
-      "sceneId": "s4",
-      "text": "No new cast."
-    },
-    {
-      "id": "s4-22",
-      "sceneId": "s4",
-      "text": "No pad refrain."
-    },
-    {
-      "id": "s4-23",
-      "sceneId": "s4",
-      "text": "Fidelity scarlet as the thread."
+      "text": "Kyoto’s temple bells marked hours the colony-analogue used for shame."
     },
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "Hester Prynne learned Kyoto's merchant quarter as a map of glances."
+      "text": "Kanzaki’s smile arrived as medicine."
     },
     {
       "id": "s5-1",
       "sceneId": "s5",
-      "text": "The scaffold boards had entered her feet; she walked as if still slightly elevated above ordinary errands."
+      "text": "He tended Mori’s body to own Mori’s guilt."
     },
     {
       "id": "s5-2",
       "sceneId": "s5",
-      "text": "Pearl, growing, asked whether the scarlet letter could be taken off for festivals."
+      "text": "Revenge learned bedside manners."
     },
     {
       "id": "s5-3",
       "sceneId": "s5",
-      "text": "Hester said not yet."
-    },
-    {
-      "id": "s5-4",
-      "sceneId": "s5",
-      "text": "Pearl asked whether Dimmesdale's hand on his heart was a letter too."
-    },
-    {
-      "id": "s5-5",
-      "sceneId": "s5",
-      "text": "Hester said silence can be a letter."
-    },
-    {
-      "id": "s5-6",
-      "sceneId": "s5",
-      "text": "Pearl nodded as if filing evidence."
-    },
-    {
-      "id": "s5-7",
-      "sceneId": "s5",
-      "text": "Chillingworth's care of Dimmesdale became the town's quiet charity story: the learned physician who devoted himself to the frail minister."
-    },
-    {
-      "id": "s5-8",
-      "sceneId": "s5",
-      "text": "Only Hester read the charity as siege."
-    },
-    {
-      "id": "s5-9",
-      "sceneId": "s5",
-      "text": "She watched Chillingworth smile when Dimmesdale flinched from certain texts about secret sin."
-    },
-    {
-      "id": "s5-10",
-      "sceneId": "s5",
-      "text": "She nearly broke her vow of silence about her husband's identity a dozen times and kept it because Pearl's safety seemed braided to bargains she barely understood."
-    },
-    {
-      "id": "s5-11",
-      "sceneId": "s5",
-      "text": "Revenge makes hostages of everyone near the secret."
-    },
-    {
-      "id": "s5-12",
-      "sceneId": "s5",
-      "text": "Dimmesdale tried to confess from the pulpit in abstractions so fiery the congregation praised his humility and missed his autobiography."
-    },
-    {
-      "id": "s5-13",
-      "sceneId": "s5",
-      "text": "He hated their praise."
-    },
-    {
-      "id": "s5-14",
-      "sceneId": "s5",
-      "text": "He walked night streets past closed tea houses and glowing vending machines—2026 Kyoto's ordinary neon beside temple roofs—and stood again at the scaffold where Hester had borne daylight shame."
-    },
-    {
-      "id": "s5-15",
-      "sceneId": "s5",
-      "text": "He ascended alone."
-    },
-    {
-      "id": "s5-16",
-      "sceneId": "s5",
-      "text": "He cried out."
-    },
-    {
-      "id": "s5-17",
-      "sceneId": "s5",
-      "text": "Hester, wakeful with Pearl, heard and came."
-    },
-    {
-      "id": "s5-18",
-      "sceneId": "s5",
-      "text": "Pearl asked him to stand with them at noon; he could not."
-    },
-    {
-      "id": "s5-19",
-      "sceneId": "s5",
-      "text": "A meteor burned an A into rumor."
-    },
-    {
-      "id": "s5-20",
-      "sceneId": "s5",
-      "text": "Chillingworth appeared below like a footnote that owns the page."
-    },
-    {
-      "id": "s5-21",
-      "sceneId": "s5",
-      "text": "Dimmesdale descended more damned by almosts than by silence."
-    },
-    {
-      "id": "s5-22",
-      "sceneId": "s5",
-      "text": "In the forest Hester waited among maples away from the tourist cedar corridors."
-    },
-    {
-      "id": "s5-23",
-      "sceneId": "s5",
-      "text": "Dimmesdale arrived exhausted from Chillingworth's latest \"treatment.\""
+      "text": "Hisako saw the smile and said nothing—silence as old vow."
     },
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "She told him the physician was Roger Chillingworth, her husband."
+      "text": "In the governor’s hall Shinju refused catechism’s easy answers."
     },
     {
       "id": "s6-1",
       "sceneId": "s6",
-      "text": "Dimmesdale's cry frightened birds."
+      "text": "Hisako fought for her child with Mori’s sudden public aid."
     },
     {
       "id": "s6-2",
       "sceneId": "s6",
-      "text": "Then came the plan: a ship, a departure after Election sermon, Pearl between them, a life not built on scaffold geometry."
+      "text": "The A gleamed."
     },
     {
       "id": "s6-3",
       "sceneId": "s6",
-      "text": "Hester removed the A and let her hair fall; for a moment she looked unmarked and therefore terrifyingly free."
-    },
-    {
-      "id": "s6-4",
-      "sceneId": "s6",
-      "text": "Pearl refused her mother's approach until the letter returned to its place."
-    },
-    {
-      "id": "s6-5",
-      "sceneId": "s6",
-      "text": "The child had been raised inside the mark's grammar; unmarked Hester looked like a stranger."
-    },
-    {
-      "id": "s6-6",
-      "sceneId": "s6",
-      "text": "Hester fastened the A again with steady hands."
-    },
-    {
-      "id": "s6-7",
-      "sceneId": "s6",
-      "text": "Escape, if it came, would include truth's costume, not naked denial."
-    },
-    {
-      "id": "s6-8",
-      "sceneId": "s6",
-      "text": "Election Day filled Kyoto's ceremonial routes with officials, floats, cameras, temple musicians, and the soft violence of civic pride."
-    },
-    {
-      "id": "s6-9",
-      "sceneId": "s6",
-      "text": "Hester stood near the scaffold in gray, Pearl bright beside her like an ironic jewel."
-    },
-    {
-      "id": "s6-10",
-      "sceneId": "s6",
-      "text": "Dimmesdale preached the Election sermon with a brilliance that felt like burning stock."
-    },
-    {
-      "id": "s6-11",
-      "sceneId": "s6",
-      "text": "Then, instead of retiring to the ship plan's private hope, he turned toward the scaffold and called Hester and Pearl."
-    },
-    {
-      "id": "s6-12",
-      "sceneId": "s6",
-      "text": "The crowd parted on gasps."
-    },
-    {
-      "id": "s6-13",
-      "sceneId": "s6",
-      "text": "He climbed."
-    },
-    {
-      "id": "s6-14",
-      "sceneId": "s6",
-      "text": "He confessed himself Pearl's father and Hester's partner in the sin the town had punished on her alone."
-    },
-    {
-      "id": "s6-15",
-      "sceneId": "s6",
-      "text": "He opened his ministerial clothing to show the mark guilt had made—scarlet echo on flesh."
-    },
-    {
-      "id": "s6-16",
-      "sceneId": "s6",
-      "text": "He asked Pearl's kiss; she kissed him; tears baptized what law had refused."
-    },
-    {
-      "id": "s6-17",
-      "sceneId": "s6",
-      "text": "He died on the boards."
-    },
-    {
-      "id": "s6-18",
-      "sceneId": "s6",
-      "text": "Chillingworth, cheated of prolonged secret torture, sank as if his spine had been the secret itself."
-    },
-    {
-      "id": "s6-19",
-      "sceneId": "s6",
-      "text": "Afterward rumors argued whether the mark was wound, psychosomatic bloom, or miracle."
-    },
-    {
-      "id": "s6-20",
-      "sceneId": "s6",
-      "text": "Hawthorne's spirit allows argument; the confession's public fact does not."
-    },
-    {
-      "id": "s6-21",
-      "sceneId": "s6",
-      "text": "Chillingworth died within the year, will directed to Pearl."
-    },
-    {
-      "id": "s6-22",
-      "sceneId": "s6",
-      "text": "Hester took Pearl abroad for a time, then returned alone to the Kyoto margin cottage."
-    },
-    {
-      "id": "s6-23",
-      "sceneId": "s6",
-      "text": "She wore the A by choice."
+      "text": "Politics blinked."
     },
     {
       "id": "s7-0",
       "sceneId": "s7",
-      "text": "Women in trouble found her door."
+      "text": "In forested hills above the city’s tourism edge Hisako loosened the A and hair and named the minister to himself."
     },
     {
       "id": "s7-1",
       "sceneId": "s7",
-      "text": "She sewed."
+      "text": "Escape plans grew like moss—soft, temporary."
     },
     {
       "id": "s7-2",
       "sceneId": "s7",
-      "text": "She counseled without purity police."
-    },
-    {
-      "id": "s7-3",
-      "sceneId": "s7",
-      "text": "Pearl wrote from a happier elsewhere."
-    },
-    {
-      "id": "s7-4",
-      "sceneId": "s7",
-      "text": "Dimmesdale's grave bore no boastful epitaph."
-    },
-    {
-      "id": "s7-5",
-      "sceneId": "s7",
-      "text": "The merchant-quarter scaffold remained a tourist curiosity some days and a warning others."
-    },
-    {
-      "id": "s7-6",
-      "sceneId": "s7",
-      "text": "Continuous novel: scaffold, A, Chillingworth's revenge medicine, Dimmesdale's hidden guilt, Pearl's wild truth, forest plan, final scaffold death, Hester's return."
-    },
-    {
-      "id": "s7-7",
-      "sceneId": "s7",
-      "text": "Names kept."
-    },
-    {
-      "id": "s7-8",
-      "sceneId": "s7",
-      "text": "Glamour reseat kept."
-    },
-    {
-      "id": "s7-9",
-      "sceneId": "s7",
-      "text": "In the prison interview before Hester's first scaffold noon, Chillingworth—then unrecognized by the town—had entered as physician under authority."
-    },
-    {
-      "id": "s7-10",
-      "sceneId": "s7",
-      "text": "He mixed a potion for Pearl's comfort and for Hester's strength to stand."
-    },
-    {
-      "id": "s7-11",
-      "sceneId": "s7",
-      "text": "\"I will not expose you as my wife yet,\" he murmured, \"if you keep my identity and help me find the man.\""
-    },
-    {
-      "id": "s7-12",
-      "sceneId": "s7",
-      "text": "Hester, cornered, agreed to silence about him."
-    },
-    {
-      "id": "s7-13",
-      "sceneId": "s7",
-      "text": "That bargain planted the forest's later explosion."
-    },
-    {
-      "id": "s7-14",
-      "sceneId": "s7",
-      "text": "Kyoto's jailers saw only a helpful stranger."
-    },
-    {
-      "id": "s7-15",
-      "sceneId": "s7",
-      "text": "Helpful strangers rewrite plots."
-    },
-    {
-      "id": "s7-16",
-      "sceneId": "s7",
-      "text": "Hester's needle became famous along Gion-edge private clients and merchant wives who wanted beauty without proximity."
-    },
-    {
-      "id": "s7-17",
-      "sceneId": "s7",
-      "text": "She embroidered the scarlet A with gold thread until punishment looked like coronation—an insolence some named vanity and Hawthorne names alchemy."
-    },
-    {
-      "id": "s7-18",
-      "sceneId": "s7",
-      "text": "Pearl's clothes, too, were fantastical; the child dressed as living commentary on the town's gray judgments."
-    },
-    {
-      "id": "s7-19",
-      "sceneId": "s7",
-      "text": "Officials frowned."
-    },
-    {
-      "id": "s7-20",
-      "sceneId": "s7",
-      "text": "Hester paid fines when required and continued."
-    },
-    {
-      "id": "s7-21",
-      "sceneId": "s7",
-      "text": "Dimmesdale's study smelled of paper, incense, and the metallic odor of a man sleeping little."
-    },
-    {
-      "id": "s7-22",
-      "sceneId": "s7",
-      "text": "Chillingworth rented the adjoining room \"to watch the patient's night crises.\""
-    },
-    {
-      "id": "s7-23",
-      "sceneId": "s7",
-      "text": "He watched."
+      "text": "Kanzaki booked the same ship because revenge reads manifests."
     },
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "He catalogued."
+      "text": "Mori’s Election sermon crowned him; the scaffold afterward uncrowned him into truth."
     },
     {
       "id": "s8-1",
       "sceneId": "s8",
-      "text": "He dropped hints like acid."
+      "text": "He confessed, showed the mark, died."
     },
     {
       "id": "s8-2",
       "sceneId": "s8",
-      "text": "When Dimmesdale dreamed aloud of scaffolds, Chillingworth soothed and recorded."
+      "text": "Shinju kissed a father into personhood."
     },
     {
       "id": "s8-3",
       "sceneId": "s8",
-      "text": "Medicine as espionage."
-    },
-    {
-      "id": "s8-4",
-      "sceneId": "s8",
-      "text": "Espionage as marital revenge displaced onto the lover's nerves."
-    },
-    {
-      "id": "s8-5",
-      "sceneId": "s8",
-      "text": "Pearl once placed burrs on the scarlet letter in play; Hester flinched; Pearl laughed and asked if the letter would cry."
-    },
-    {
-      "id": "s8-6",
-      "sceneId": "s8",
-      "text": "At the Kamo edge Pearl demanded to know her father; Hester pointed to the sky; Pearl rejected sky-fathers as insufficient."
-    },
-    {
-      "id": "s8-7",
-      "sceneId": "s8",
-      "text": "Later, seeing Dimmesdale clutch his chest at a riverside blessing, Pearl said, \"It is him,\" with a certainty that made Hester's blood cold."
-    },
-    {
-      "id": "s8-8",
-      "sceneId": "s8",
-      "text": "Children in Hawthorne read spirits adults refuse."
-    },
-    {
-      "id": "s8-9",
-      "sceneId": "s8",
-      "text": "The ship arrangement before Election Day nearly succeeded as logistics: tickets, trunks, a captain paid."
-    },
-    {
-      "id": "s8-10",
-      "sceneId": "s8",
-      "text": "Chillingworth, learning of it through docks' talk, booked passage on the same vessel—revenge intending to follow like luggage."
-    },
-    {
-      "id": "s8-11",
-      "sceneId": "s8",
-      "text": "Hester saw him at the port office and understood the forest plan had been overheard by fate's clerk."
-    },
-    {
-      "id": "s8-12",
-      "sceneId": "s8",
-      "text": "She still hoped Dimmesdale's sermon-day courage might outrun leeches."
-    },
-    {
-      "id": "s8-13",
-      "sceneId": "s8",
-      "text": "Hope was not wrong in kind; it was wrong in timing."
-    },
-    {
-      "id": "s8-14",
-      "sceneId": "s8",
-      "text": "Confession chose scaffold over gangway."
-    },
-    {
-      "id": "s8-15",
-      "sceneId": "s8",
-      "text": "When Dimmesdale died, Hester held him against the A, Pearl's hands on both."
-    },
-    {
-      "id": "s8-16",
-      "sceneId": "s8",
-      "text": "The crowd's noise became surf."
-    },
-    {
-      "id": "s8-17",
-      "sceneId": "s8",
-      "text": "Chillingworth reached as if to pull Dimmesdale back into secret life and found only death's refusal."
-    },
-    {
-      "id": "s8-18",
-      "sceneId": "s8",
-      "text": "Kyoto's glamorous evening lights came on over a civic wound."
-    },
-    {
-      "id": "s8-19",
-      "sceneId": "s8",
-      "text": "Newscasts in this reseat would have argued angles; the remake keeps the nineteenth-century moral geometry inside twenty-first-century streets: public woman, hidden man, physician-devil, child-truth, final reveal."
-    },
-    {
-      "id": "s8-20",
-      "sceneId": "s8",
-      "text": "Hester's later counsel to younger women always included this: do not confuse the crowd's shame with your whole name."
-    },
-    {
-      "id": "s8-21",
-      "sceneId": "s8",
-      "text": "She still wore the A so the crowd could not pretend it had invented her."
-    },
-    {
-      "id": "s8-22",
-      "sceneId": "s8",
-      "text": "Dimmesdale she remembered as lover and coward and finally brave."
-    },
-    {
-      "id": "s8-23",
-      "sceneId": "s8",
-      "text": "Chillingworth as the man who chose hunt over healing."
+      "text": "Kanzaki withered without a host."
     },
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "Pearl as the scarlet letter made flesh and then freed by inheritance into ordinary possible joy."
+      "text": "Years later legend softened the A’s meaning."
     },
     {
       "id": "s9-1",
       "sceneId": "s9",
-      "text": "The book closes on Hester sewing by a Kyoto window, forest path outside, Kamo audible after rain—continuous, faithful, unpadded."
+      "text": "Hawthorne’s discomfort remained: mercy incomplete, symbol unstable, public shame never fully accountable to private truth."
     },
     {
       "id": "s9-2",
       "sceneId": "s9",
-      "text": "Arthur Dimmesdale, before any scaffold, had met Hester in circumstances the town later flattened to \"sin\": tenderness, intellect, loneliness inside holy office."
+      "text": "Kyoto cooled the surfaces."
     },
     {
       "id": "s9-3",
       "sceneId": "s9",
-      "text": "The remake need not invent bedroom choreography; Hawthorne's spirit keeps the act offstage and the consequence onstage."
-    },
-    {
-      "id": "s9-4",
-      "sceneId": "s9",
-      "text": "What matters is Dimmesdale's refusal of open partnership when Hester stood marked."
-    },
-    {
-      "id": "s9-5",
-      "sceneId": "s9",
-      "text": "His Election Day confession repaid a debt with his life rather than with shared living."
-    },
-    {
-      "id": "s9-6",
-      "sceneId": "s9",
-      "text": "Hester forgave what she could."
-    },
-    {
-      "id": "s9-7",
-      "sceneId": "s9",
-      "text": "Forgiveness did not rewrite the boards."
-    },
-    {
-      "id": "s9-8",
-      "sceneId": "s9",
-      "text": "Roger Chillingworth had once been a scholar who married Hester knowing he was mismatched—older, absorbed, sending her ahead to a new place while he lingered over books abroad."
-    },
-    {
-      "id": "s9-9",
-      "sceneId": "s9",
-      "text": "His deformation into revenge was chosen step by step: silence bargain, false friendship, medical intimacy, dockside pursuit."
-    },
-    {
-      "id": "s9-10",
-      "sceneId": "s9",
-      "text": "Kyoto's temples watched without intervening."
-    },
-    {
-      "id": "s9-11",
-      "sceneId": "s9",
-      "text": "Temples often do."
-    },
-    {
-      "id": "s9-12",
-      "sceneId": "s9",
-      "text": "Pearl's inheritance let her step out of allegorical childhood into adult contingency—marriage abroad in the old arc, here a life beyond merchant-quarter cameras."
-    },
-    {
-      "id": "s9-13",
-      "sceneId": "s9",
-      "text": "She returned once to Kyoto to stand with Hester at Dimmesdale's grave and did not ask the stone for speeches."
-    },
-    {
-      "id": "s9-14",
-      "sceneId": "s9",
-      "text": "Hester touched Pearl's face, then the A, then Pearl again—as if checking which mark remained necessary."
-    },
-    {
-      "id": "s9-15",
-      "sceneId": "s9",
-      "text": "Both remained, differently."
-    },
-    {
-      "id": "s9-16",
-      "sceneId": "s9",
-      "text": "Thus Scarlet Letter in Kyoto: glamorous reseat, original names, beats in order, whole continuous book."
-    },
-    {
-      "id": "s9-17",
-      "sceneId": "s9",
-      "text": "On market mornings Hester bought rice and greens while vendors who once spat near her feet now nodded—habit dulling hate into commerce."
-    },
-    {
-      "id": "s9-18",
-      "sceneId": "s9",
-      "text": "Pearl danced between stalls asking the price of everything, including the scarlet letter."
-    },
-    {
-      "id": "s9-19",
-      "sceneId": "s9",
-      "text": "A vendor joked it was priceless; Pearl said, \"Then you cannot buy my mother.\""
-    },
-    {
-      "id": "s9-20",
-      "sceneId": "s9",
-      "text": "Hester's mouth twitched toward a smile."
-    },
-    {
-      "id": "s9-21",
-      "sceneId": "s9",
-      "text": "Survival included such wit."
-    },
-    {
-      "id": "s9-22",
-      "sceneId": "s9",
-      "text": "Dimmesdale, invited to bless a new cultural hall near the merchant quarter, nearly fainted mid-rite."
-    },
-    {
-      "id": "s9-23",
-      "sceneId": "s9",
-      "text": "Chillingworth caught him with solicitous arms the crowd applauded."
+      "text": "Not a different book."
     },
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "Hester, passing with a delivery of sewn goods, saw the catch as a claim."
-    },
-    {
-      "id": "s10-1",
-      "sceneId": "s10",
-      "text": "That night she stood at her cottage door facing the forest path and whispered Dimmesdale's name into cricket noise."
-    },
-    {
-      "id": "s10-2",
-      "sceneId": "s10",
-      "text": "Whisper was not confession."
-    },
-    {
-      "id": "s10-3",
-      "sceneId": "s10",
-      "text": "Whisper was pressure equalizing."
-    },
-    {
-      "id": "s10-4",
-      "sceneId": "s10",
-      "text": "When officials again threatened to remove Pearl, Hester stood before the council with calm ferocity."
-    },
-    {
-      "id": "s10-5",
-      "sceneId": "s10",
-      "text": "Dimmesdale spoke for her with a tremor that Chillingworth catalogued."
-    },
-    {
-      "id": "s10-6",
-      "sceneId": "s10",
-      "text": "The vote kept Pearl with Hester."
-    },
-    {
-      "id": "s10-7",
-      "sceneId": "s10",
-      "text": "Outside, Pearl put her hand on Dimmesdale's without shyness; he recoiled as if burned and then cursed himself for recoiling."
-    },
-    {
-      "id": "s10-8",
-      "sceneId": "s10",
-      "text": "Hester saw."
-    },
-    {
-      "id": "s10-9",
-      "sceneId": "s10",
-      "text": "Pearl saw."
-    },
-    {
-      "id": "s10-10",
-      "sceneId": "s10",
-      "text": "Chillingworth saw and tasted victory's appetizer."
-    },
-    {
-      "id": "s10-11",
-      "sceneId": "s10",
-      "text": "The forest plan's tenderness deserves full beat-weight: Hester and Dimmesdale sat on moss and spoke like people, not symbols—of fear, of Pearl's future, of Chillingworth's eyes, of the ship."
-    },
-    {
-      "id": "s10-12",
-      "sceneId": "s10",
-      "text": "Dimmesdale asked whether joy was allowed mid-guilt."
-    },
-    {
-      "id": "s10-13",
-      "sceneId": "s10",
-      "text": "Hester said joy was not a certificate the town issued."
-    },
-    {
-      "id": "s10-14",
-      "sceneId": "s10",
-      "text": "They held each other."
-    },
-    {
-      "id": "s10-15",
-      "sceneId": "s10",
-      "text": "Pearl wove grass nearby, sentinel."
-    },
-    {
-      "id": "s10-16",
-      "sceneId": "s10",
-      "text": "When a fox moved in brush they started apart like adolescents."
-    },
-    {
-      "id": "s10-17",
-      "sceneId": "s10",
-      "text": "Holy offices and scaffolds had stolen ordinary pacing from them; the forest returned a fraction."
-    },
-    {
-      "id": "s10-18",
-      "sceneId": "s10",
-      "text": "Election Day morning Hester dressed Pearl carefully and touched the A as a soldier touches armor."
-    },
-    {
-      "id": "s10-19",
-      "sceneId": "s10",
-      "text": "She did not know Dimmesdale would choose scaffold over ship; she hoped for both courage and escape."
-    },
-    {
-      "id": "s10-20",
-      "sceneId": "s10",
-      "text": "Hope's double bind is Hawthorne's weather."
-    },
-    {
-      "id": "s10-21",
-      "sceneId": "s10",
-      "text": "When he called her up, she went."
-    },
-    {
-      "id": "s10-22",
-      "sceneId": "s10",
-      "text": "When he confessed, she supported his failing body."
-    },
-    {
-      "id": "s10-23",
-      "sceneId": "s10",
-      "text": "When he died, she remained alive inside the letter—which was its own sentence and its own craft."
+      "text": "Allegory held."
     },
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "Chillingworth's deathbed, briefly: he asked whether Hester hated him."
+      "text": "Hisako’s needle made the A too beautiful for the sentence it was meant to be."
     },
     {
       "id": "s11-1",
       "sceneId": "s11",
-      "text": "She said hate had been his project more than hers."
+      "text": "Expansion 1 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
       "id": "s11-2",
       "sceneId": "s11",
-      "text": "He turned his face to the wall."
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
       "id": "s11-3",
       "sceneId": "s11",
-      "text": "Pearl inherited."
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
       "id": "s11-4",
       "sceneId": "s11",
-      "text": "Hester refused to let Pearl's fortune become Kyoto gossip's romantic ending; she sent Pearl toward wider air."
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
       "id": "s11-5",
       "sceneId": "s11",
-      "text": "Alone again, Hester kept the cottage, the needle, the A, the counsel."
+      "text": "Shinju arranged seaweed into letters as if language itself were her plaything and her weapon."
     },
     {
       "id": "s11-6",
       "sceneId": "s11",
-      "text": "Tourists sometimes photographed her door without knowing."
+      "text": "Expansion 2 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
       "id": "s11-7",
       "sceneId": "s11",
-      "text": "She let them."
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
       "id": "s11-8",
       "sceneId": "s11",
-      "text": "Spectacle had already done its worst on the scaffold years before."
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
       "id": "s11-9",
       "sceneId": "s11",
-      "text": "Continuous fidelity: Hester Prynne, Arthur Dimmesdale, Roger Chillingworth, Pearl—Kyoto scaffold to forest to final scaffold to return."
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
       "id": "s11-10",
       "sceneId": "s11",
-      "text": "No filler refrain."
+      "text": "Mori’s hand over his heart became a public gesture everyone misread as piety."
     },
     {
       "id": "s11-11",
       "sceneId": "s11",
-      "text": "Glamour only as setting pressure."
+      "text": "Expansion 3 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
       "id": "s11-12",
       "sceneId": "s11",
-      "text": "Whole book."
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
       "id": "s11-13",
       "sceneId": "s11",
-      "text": "Before any meteor, before Election Day, there was the ordinary cruelty of errands."
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
       "id": "s11-14",
       "sceneId": "s11",
-      "text": "Hester Prynne delivered embroidered cloth to a house on a hill where servants received her at a side door."
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
       "id": "s11-15",
       "sceneId": "s11",
-      "text": "Pearl waited on the step counting ants."
+      "text": "Kanzaki’s herbs smelled clean while his attention smelled like ownership."
     },
     {
       "id": "s11-16",
       "sceneId": "s11",
-      "text": "Inside, women debated hem lengths and, thinking Hester deaf to soft poison, discussed whether the scarlet letter should have been cut thicker."
+      "text": "Expansion 4 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
       "id": "s11-17",
       "sceneId": "s11",
-      "text": "Hester pinned fabric with professional calm."
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
       "id": "s11-18",
       "sceneId": "s11",
-      "text": "Cash on the table."
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
       "id": "s11-19",
       "sceneId": "s11",
-      "text": "Outside Pearl asked, \"Are we rich today?\""
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
       "id": "s11-20",
       "sceneId": "s11",
-      "text": "Hester said, \"We are paid.\""
+      "text": "The forest’s filtered light allowed truth a temporary visa."
     },
     {
       "id": "s11-21",
       "sceneId": "s11",
-      "text": "Paid was not rich."
+      "text": "Expansion 5 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
       "id": "s11-22",
       "sceneId": "s11",
-      "text": "Paid was continuing."
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
       "id": "s11-23",
       "sceneId": "s11",
-      "text": "Arthur Dimmesdale taught temple-school students ethics with examples that skirted his life by millimeters."
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s12-0",
-      "sceneId": "s12",
-      "text": "A boy asked whether hidden sin was worse than open sin."
+      "id": "s11-24",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s12-1",
-      "sceneId": "s12",
-      "text": "Dimmesdale's answer shook; he dismissed class early."
+      "id": "s11-25",
+      "sceneId": "s11",
+      "text": "The ship captain’s friendly talk about passengers became Kanzaki’s trap made nautical."
     },
     {
-      "id": "s12-2",
-      "sceneId": "s12",
-      "text": "In the corridor Chillingworth offered tea and a remark: \"The body tells on the soul, Arthur.\""
+      "id": "s11-26",
+      "sceneId": "s11",
+      "text": "Expansion 6 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s12-3",
-      "sceneId": "s12",
-      "text": "Dimmesdale drank tea like a man drinking evidence against himself."
+      "id": "s11-27",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s12-4",
-      "sceneId": "s12",
-      "text": "Kyoto's afternoon tourists photographed gates."
+      "id": "s11-28",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s12-5",
-      "sceneId": "s12",
-      "text": "The two men walked among them as pastor and physician, costumes intact."
+      "id": "s11-29",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s12-6",
-      "sceneId": "s12",
-      "text": "Hester once confronted Chillingworth at the Kamo railing."
+      "id": "s11-30",
+      "sceneId": "s11",
+      "text": "Election-day drums covered a confession that drums could not finally drown."
     },
     {
-      "id": "s12-7",
-      "sceneId": "s12",
-      "text": "\"You are killing him,\" she said."
+      "id": "s11-31",
+      "sceneId": "s11",
+      "text": "Expansion 7 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s12-8",
-      "sceneId": "s12",
-      "text": "Chillingworth replied, \"He is killing himself; I only keep him company.\""
+      "id": "s11-32",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s12-9",
-      "sceneId": "s12",
-      "text": "She asked him to cease."
+      "id": "s11-33",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s12-10",
-      "sceneId": "s12",
-      "text": "He asked whether she loved Dimmesdale still."
+      "id": "s11-34",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s12-11",
-      "sceneId": "s12",
-      "text": "She did not answer with her mouth; her silence was answer enough."
+      "id": "s11-35",
+      "sceneId": "s11",
+      "text": "Shinju’s kiss undid elf into child—Hawthorne’s mercy without cheap erase."
     },
     {
-      "id": "s12-12",
-      "sceneId": "s12",
-      "text": "Chillingworth bowed like a courteous devil and left her with river sound."
+      "id": "s11-36",
+      "sceneId": "s11",
+      "text": "Expansion 8 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s12-13",
-      "sceneId": "s12",
-      "text": "Pearl's play often reenacted the scaffold: she stood Pearl-as-Hester, forced Hester to stand as crowd, demanded Dimmesdale-as-father appear."
+      "id": "s11-37",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s12-14",
-      "sceneId": "s12",
-      "text": "When he did not, Pearl declared the game broken."
+      "id": "s11-38",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s12-15",
-      "sceneId": "s12",
-      "text": "Hester ended the play with food."
+      "id": "s11-39",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s12-16",
-      "sceneId": "s12",
-      "text": "Food works when allegory won't."
+      "id": "s11-40",
+      "sceneId": "s11",
+      "text": "Hisako returned to the letter voluntarily years later; voluntary shame is still the book’s uneasy remainder."
     },
     {
-      "id": "s12-17",
-      "sceneId": "s12",
-      "text": "The night before the forest meeting Hester dreamed of ships and woke to Pearl's fingers on the A. \"It glows,\" Pearl said."
+      "id": "s11-41",
+      "sceneId": "s11",
+      "text": "Expansion 9 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s12-18",
-      "sceneId": "s12",
-      "text": "Hester said dreams glow."
+      "id": "s11-42",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s12-19",
-      "sceneId": "s12",
-      "text": "Pearl said, \"Father glows too, inside his clothes.\""
+      "id": "s11-43",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s12-20",
-      "sceneId": "s12",
-      "text": "Hester held her until sleep returned."
+      "id": "s11-44",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s12-21",
-      "sceneId": "s12",
-      "text": "Maternal logistics inside symbolic life: Hawthorne needs both."
+      "id": "s11-45",
+      "sceneId": "s11",
+      "text": "Tourists near temple gates photographed torii; none photographed the A’s true weather."
     },
     {
-      "id": "s12-22",
-      "sceneId": "s12",
-      "text": "Forest day expanded: Dimmesdale confessed fear of Chillingworth's eye at breakfast, fear of failing mid-sermon, fear of Pearl's judgment."
+      "id": "s11-46",
+      "sceneId": "s11",
+      "text": "Expansion 10 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s12-23",
-      "sceneId": "s12",
-      "text": "Hester confessed loneliness that sewing could not stitch shut."
+      "id": "s11-47",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s13-0",
-      "sceneId": "s13",
-      "text": "They spoke of New World ports and old Kyoto cages."
+      "id": "s11-48",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s13-1",
-      "sceneId": "s13",
-      "text": "When Hester threw the A down, sunlight hit her freer face; Pearl's scream of refusal echoed among maples."
+      "id": "s11-49",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s13-2",
-      "sceneId": "s13",
-      "text": "Restoring the letter restored Pearl's mother to readability."
+      "id": "s11-50",
+      "sceneId": "s11",
+      "text": "Hisako’s needle made the A too beautiful for the sentence it was meant to be."
     },
     {
-      "id": "s13-3",
-      "sceneId": "s13",
-      "text": "Dimmesdale watched and understood the child as conscience without church salary."
+      "id": "s11-51",
+      "sceneId": "s11",
+      "text": "Expansion 11 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s13-4",
-      "sceneId": "s13",
-      "text": "Ship captain confirmed passage."
+      "id": "s11-52",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s13-5",
-      "sceneId": "s13",
-      "text": "Chillingworth's counter-booking remained Hester's private dread until Election Day made dread obsolete."
+      "id": "s11-53",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s13-6",
-      "sceneId": "s13",
-      "text": "On the scaffold Dimmesdale's confession tore the civic script; Hester's role became witness and holder; Pearl's kiss completed a trinity the town had split."
+      "id": "s11-54",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s13-7",
-      "sceneId": "s13",
-      "text": "Death ended Dimmesdale's torture and Chillingworth's project simultaneously—different endings, same hour."
+      "id": "s11-55",
+      "sceneId": "s11",
+      "text": "Shinju arranged seaweed into letters as if language itself were her plaything and her weapon."
     },
     {
-      "id": "s13-8",
-      "sceneId": "s13",
-      "text": "Years later Hester received a young woman at the cottage who wore no letter but carried invisible ones."
+      "id": "s11-56",
+      "sceneId": "s11",
+      "text": "Expansion 12 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s13-9",
-      "sceneId": "s13",
-      "text": "Hester listened more than she spoke."
+      "id": "s11-57",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s13-10",
-      "sceneId": "s13",
-      "text": "She said, \"They will narrate you."
+      "id": "s11-58",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s13-11",
-      "sceneId": "s13",
-      "text": "Sew your own narration into theirs.\""
+      "id": "s11-59",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s13-12",
-      "sceneId": "s13",
-      "text": "The young woman cried."
+      "id": "s11-60",
+      "sceneId": "s11",
+      "text": "Mori’s hand over his heart became a public gesture everyone misread as piety."
     },
     {
-      "id": "s13-13",
-      "sceneId": "s13",
-      "text": "Pearl, visiting that season, took the woman walking along the Kamo and laughed aloud—permission as medicine."
+      "id": "s11-61",
+      "sceneId": "s11",
+      "text": "Expansion 13 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s13-14",
-      "sceneId": "s13",
-      "text": "Chillingworth's money funded kindness without his intent."
+      "id": "s11-62",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s13-15",
-      "sceneId": "s13",
-      "text": "Irony as inheritance."
+      "id": "s11-63",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s13-16",
-      "sceneId": "s13",
-      "text": "Dimmesdale's old sermons still circulated in print; students underlined humility passages unaware of the body's mark behind them."
+      "id": "s11-64",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s13-17",
-      "sceneId": "s13",
-      "text": "Hester never publicly annotated those pages."
+      "id": "s11-65",
+      "sceneId": "s11",
+      "text": "Kanzaki’s herbs smelled clean while his attention smelled like ownership."
     },
     {
-      "id": "s13-18",
-      "sceneId": "s13",
-      "text": "Private knowledge stayed private except where Pearl's life required clarity."
+      "id": "s11-66",
+      "sceneId": "s11",
+      "text": "Expansion 14 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s13-19",
-      "sceneId": "s13",
-      "text": "Kyoto remained glamorous—temples, neon, river restaurants—and the scaffold remained in Hester's gait."
+      "id": "s11-67",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s13-20",
-      "sceneId": "s13",
-      "text": "Continuous fidelity held."
+      "id": "s11-68",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s13-21",
-      "sceneId": "s13",
-      "text": "Roger Chillingworth's early marriage to Hester had been intellectual asymmetry sold as stability."
+      "id": "s11-69",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s13-22",
-      "sceneId": "s13",
-      "text": "He admitted as much once in the prison: he had sent a young wife across distances while he lingered with books, then arrived to find her on a scaffold with another man's child."
+      "id": "s11-70",
+      "sceneId": "s11",
+      "text": "The forest’s filtered light allowed truth a temporary visa."
     },
     {
-      "id": "s13-23",
-      "sceneId": "s13",
-      "text": "Rage could have chosen divorce and departure."
+      "id": "s11-71",
+      "sceneId": "s11",
+      "text": "Expansion 15 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s14-0",
-      "sceneId": "s14",
-      "text": "He chose metamorphosis into leech."
+      "id": "s11-72",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s14-1",
-      "sceneId": "s14",
-      "text": "Kyoto's physician community respected his learning; respect greased the hunt."
+      "id": "s11-73",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s14-2",
-      "sceneId": "s14",
-      "text": "Hester's vow of silence about his identity protected Pearl from bigamy's legal storms and also protected Chillingworth's camouflage—she knew the cost and paid it until the forest forced disclosure to Dimmesdale alone."
+      "id": "s11-74",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s14-3",
-      "sceneId": "s14",
-      "text": "Disclosure to the beloved is not disclosure to the crowd; Election Day finished what forest started."
+      "id": "s11-75",
+      "sceneId": "s11",
+      "text": "The ship captain’s friendly talk about passengers became Kanzaki’s trap made nautical."
     },
     {
-      "id": "s14-4",
-      "sceneId": "s14",
-      "text": "Pearl, adult in letters, wrote of a husband who did not flinch from her history."
+      "id": "s11-76",
+      "sceneId": "s11",
+      "text": "Expansion 16 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s14-5",
-      "sceneId": "s14",
-      "text": "Hester wept once with relief so sharp it resembled grief."
+      "id": "s11-77",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s14-6",
-      "sceneId": "s14",
-      "text": "Then she returned to sewing a ceremonial sash for a client who still would not say her name aloud in company."
+      "id": "s11-78",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s14-7",
-      "sceneId": "s14",
-      "text": "She embroidered a tiny hidden A in the lining—private joke, private reclaiming."
+      "id": "s11-79",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s14-8",
-      "sceneId": "s14",
-      "text": "The client never knew."
+      "id": "s11-80",
+      "sceneId": "s11",
+      "text": "Election-day drums covered a confession that drums could not finally drown."
     },
     {
-      "id": "s14-9",
-      "sceneId": "s14",
-      "text": "Readers do."
+      "id": "s11-81",
+      "sceneId": "s11",
+      "text": "Expansion 17 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s14-10",
-      "sceneId": "s14",
-      "text": "Final image the remake permits: Hester at the cottage door at dusk, scarlet letter darkening with evening, forest path soft with needles, Kamo's frogs beginning, Kyoto's far lights like a second, softer scaffold of attention."
+      "id": "s11-82",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s14-11",
-      "sceneId": "s14",
-      "text": "She does not remove the A. She has made it mean Able, Art, and yes, still Adultery—all true."
+      "id": "s11-83",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s14-12",
-      "sceneId": "s14",
-      "text": "Arthur Dimmesdale is ash and memory."
+      "id": "s11-84",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s14-13",
-      "sceneId": "s14",
-      "text": "Roger Chillingworth is a caution in medical ethics no school teaches."
+      "id": "s11-85",
+      "sceneId": "s11",
+      "text": "Shinju’s kiss undid elf into child—Hawthorne’s mercy without cheap erase."
     },
     {
-      "id": "s14-14",
-      "sceneId": "s14",
-      "text": "Pearl is free enough."
+      "id": "s11-86",
+      "sceneId": "s11",
+      "text": "Expansion 18 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s14-15",
-      "sceneId": "s14",
-      "text": "The continuous book ends without pad, with names, with beats complete."
+      "id": "s11-87",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s14-16",
-      "sceneId": "s14",
-      "text": "A further inventory of beats, rendered as lived hours rather than outline: Hester on the first scaffold noon refusing to speak Dimmesdale's name while he urged her with hypocrisy that was also agony; Pearl held high as living evidence; Chillingworth in the crowd touching his lips when Hester met his eyes—recognition's cold sacrament."
+      "id": "s11-88",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s14-17",
-      "sceneId": "s14",
-      "text": "Hester in the prison afterward refusing to name the father still; Chillingworth extracting the identity-silence vow; Pearl wailing until a draft of medicine calmed her."
+      "id": "s11-89",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s14-18",
-      "sceneId": "s14",
-      "text": "Hester released to margin life; sewing; the A elaborated into art against the sentence's intent."
+      "id": "s11-90",
+      "sceneId": "s11",
+      "text": "Hisako returned to the letter voluntarily years later; voluntary shame is still the book’s uneasy remainder."
     },
     {
-      "id": "s14-19",
-      "sceneId": "s14",
-      "text": "Dimmesdale declining in holiness's costume; Chillingworth probing; the midnight scaffold almost-confession with meteor A; Pearl's request for public acknowledgment denied; Chillingworth leading Dimmesdale home by the arm like a jailer of nerves."
+      "id": "s11-91",
+      "sceneId": "s11",
+      "text": "Expansion 19 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s14-20",
-      "sceneId": "s14",
-      "text": "Hester's plea to the council for Pearl; Dimmesdale's intercession; Pearl's wild grace."
+      "id": "s11-92",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s14-21",
-      "sceneId": "s14",
-      "text": "Forest revelation of Chillingworth's identity; plan of escape; A removed and restored at Pearl's command; ship booked; Chillingworth booking the same ship in secret shadow."
+      "id": "s11-93",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s14-22",
-      "sceneId": "s14",
-      "text": "Election sermon; scaffold confession; physical mark revealed; Pearl's kiss; Dimmesdale's death; Chillingworth's despair; Chillingworth's death; Pearl's inheritance; Hester's departure and return; counsel at the cottage; A worn unto legend."
+      "id": "s11-94",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s14-23",
-      "sceneId": "s14",
-      "text": "Every beat hit in Kyoto's glamorous pressure."
+      "id": "s11-95",
+      "sceneId": "s11",
+      "text": "Tourists near temple gates photographed torii; none photographed the A’s true weather."
     },
     {
-      "id": "s15-0",
-      "sceneId": "s15",
-      "text": "Names: Hester Prynne, Arthur Dimmesdale, Roger Chillingworth, Pearl."
+      "id": "s11-96",
+      "sceneId": "s11",
+      "text": "Expansion 20 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s15-1",
-      "sceneId": "s15",
-      "text": "Never Featured."
+      "id": "s11-97",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s15-2",
-      "sceneId": "s15",
-      "text": "Whole book."
+      "id": "s11-98",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s15-3",
-      "sceneId": "s15",
-      "text": "No laughter-traveled refrain."
+      "id": "s11-99",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s15-4",
-      "sceneId": "s15",
-      "text": "In one late winter Hester walked past the merchant-quarter boards—scaffold removed for renovation, irony intact—and felt her knees remember elevation."
+      "id": "s11-100",
+      "sceneId": "s11",
+      "text": "Hisako’s needle made the A too beautiful for the sentence it was meant to be."
     },
     {
-      "id": "s15-5",
-      "sceneId": "s15",
-      "text": "A guide spoke English to tourists about \"historical punishments.\""
+      "id": "s11-101",
+      "sceneId": "s11",
+      "text": "Expansion 21 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s15-6",
-      "sceneId": "s15",
-      "text": "Hester did not correct the guide's dates or soften the story."
+      "id": "s11-102",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s15-7",
-      "sceneId": "s15",
-      "text": "She bought roasted chestnuts for the walk home."
+      "id": "s11-103",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s15-8",
-      "sceneId": "s15",
-      "text": "Pearl, in a call from abroad, laughed at the renovation news: \"They cannot renovate what you carried.\""
+      "id": "s11-104",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s15-9",
-      "sceneId": "s15",
-      "text": "Hester said, \"They can try.\""
+      "id": "s11-105",
+      "sceneId": "s11",
+      "text": "Shinju arranged seaweed into letters as if language itself were her plaything and her weapon."
     },
     {
-      "id": "s15-10",
-      "sceneId": "s15",
-      "text": "Trying was the city's endless hobby."
+      "id": "s11-106",
+      "sceneId": "s11",
+      "text": "Expansion 22 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s15-11",
-      "sceneId": "s15",
-      "text": "Endurance was hers."
+      "id": "s11-107",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s15-12",
-      "sceneId": "s15",
-      "text": "Dimmesdale, in memory, once told her in the forest that he envied her open letter."
+      "id": "s11-108",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s15-13",
-      "sceneId": "s15",
-      "text": "She had answered that openness was not chosen like a coat."
+      "id": "s11-109",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s15-14",
-      "sceneId": "s15",
-      "text": "He died having chosen openness too late for shared life and just in time for truth."
+      "id": "s11-110",
+      "sceneId": "s11",
+      "text": "Mori’s hand over his heart became a public gesture everyone misread as piety."
     },
     {
-      "id": "s15-15",
-      "sceneId": "s15",
-      "text": "That timing is the tragedy's math."
+      "id": "s11-111",
+      "sceneId": "s11",
+      "text": "Expansion 23 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s15-16",
-      "sceneId": "s15",
-      "text": "Chillingworth never learned a kinder math."
+      "id": "s11-112",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s15-17",
-      "sceneId": "s15",
-      "text": "Pearl learned enough to leave."
+      "id": "s11-113",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s15-18",
-      "sceneId": "s15",
-      "text": "Hester learned enough to stay useful."
+      "id": "s11-114",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s15-19",
-      "sceneId": "s15",
-      "text": "So Kyoto holds the scarlet letter remake to the end: continuous prose, original names, glamorous reseat, fidelity stamped in the sewing of every scene to Hawthorne's spine."
+      "id": "s11-115",
+      "sceneId": "s11",
+      "text": "Kanzaki’s herbs smelled clean while his attention smelled like ownership."
     },
     {
-      "id": "s15-20",
-      "sceneId": "s15",
-      "text": "In the weeks after Dimmesdale's death Hester kept Pearl close through Kyoto's humid mourning season."
+      "id": "s11-116",
+      "sceneId": "s11",
+      "text": "Expansion 24 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s15-21",
-      "sceneId": "s15",
-      "text": "Gossip named her murderer of the minister's reputation; gossip also donated silently to her door."
+      "id": "s11-117",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s15-22",
-      "sceneId": "s15",
-      "text": "She accepted rice and refused pity's sermons."
+      "id": "s11-118",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s15-23",
-      "sceneId": "s15",
-      "text": "Chillingworth attempted one last visit—gaunt, asking whether she was satisfied."
+      "id": "s11-119",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s16-0",
-      "sceneId": "s16",
-      "text": "Hester said satisfaction was not the currency she traded in."
+      "id": "s11-120",
+      "sceneId": "s11",
+      "text": "The forest’s filtered light allowed truth a temporary visa."
     },
     {
-      "id": "s16-1",
-      "sceneId": "s16",
-      "text": "He left Pearl a deed document as preview of the will."
+      "id": "s11-121",
+      "sceneId": "s11",
+      "text": "Expansion 25 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s16-2",
-      "sceneId": "s16",
-      "text": "Pearl colored on its margins."
+      "id": "s11-122",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s16-3",
-      "sceneId": "s16",
-      "text": "Even inheritance began as scrap paper under a child's fist."
+      "id": "s11-123",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s16-4",
-      "sceneId": "s16",
-      "text": "Hester's temporary departure from Kyoto with Pearl followed old-arc necessity: distance for the child's lungs and name."
+      "id": "s11-124",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s16-5",
-      "sceneId": "s16",
-      "text": "In another port city Pearl learned languages without scaffold shadows."
+      "id": "s11-125",
+      "sceneId": "s11",
+      "text": "The ship captain’s friendly talk about passengers became Kanzaki’s trap made nautical."
     },
     {
-      "id": "s16-6",
-      "sceneId": "s16",
-      "text": "Hester worked needle quieter there, sometimes leaving the A under a cloak, sometimes not—experimenting with visibility."
+      "id": "s11-126",
+      "sceneId": "s11",
+      "text": "Expansion 26 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s16-7",
-      "sceneId": "s16",
-      "text": "Pearl always knew when the letter was present; she had been raised to its gravity."
+      "id": "s11-127",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s16-8",
-      "sceneId": "s16",
-      "text": "Letters from Kyoto friends-who-were-not-friends asked when Hester would return to \"her place.\""
+      "id": "s11-128",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s16-9",
-      "sceneId": "s16",
-      "text": "Place meant margin."
+      "id": "s11-129",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s16-10",
-      "sceneId": "s16",
-      "text": "Eventually she chose the margin freely and returned."
+      "id": "s11-130",
+      "sceneId": "s11",
+      "text": "Election-day drums covered a confession that drums could not finally drown."
     },
     {
-      "id": "s16-11",
-      "sceneId": "s16",
-      "text": "The cottage took her back like a lung."
+      "id": "s11-131",
+      "sceneId": "s11",
+      "text": "Expansion 27 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s16-12",
-      "sceneId": "s16",
-      "text": "Forest path."
+      "id": "s11-132",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s16-13",
-      "sceneId": "s16",
-      "text": "Kamo sound."
+      "id": "s11-133",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s16-14",
-      "sceneId": "s16",
-      "text": "Merchant quarter changed by new retail and same eyes."
+      "id": "s11-134",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s16-15",
-      "sceneId": "s16",
-      "text": "She resumed counsel."
+      "id": "s11-135",
+      "sceneId": "s11",
+      "text": "Shinju’s kiss undid elf into child—Hawthorne’s mercy without cheap erase."
     },
     {
-      "id": "s16-16",
-      "sceneId": "s16",
-      "text": "A scholar asked to interview her about Dimmesdale; she declined."
+      "id": "s11-136",
+      "sceneId": "s11",
+      "text": "Expansion 28 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s16-17",
-      "sceneId": "s16",
-      "text": "Public confession had been his; her life was not a footnote service."
+      "id": "s11-137",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s16-18",
-      "sceneId": "s16",
-      "text": "Arthur Dimmesdale's last scaffold minute deserves slow fidelity: the crowd's roar; Hester's arm; Pearl's tearful kiss breaking the child's spell of alienation; Chillingworth's defeated clutch; the minister's farewell recommending truth too late for partnership but not too late for Pearl's humanization."
+      "id": "s11-138",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s16-19",
-      "sceneId": "s16",
-      "text": "He died."
+      "id": "s11-139",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s16-20",
-      "sceneId": "s16",
-      "text": "Rain, in this remake, began as a fine Kyoto mist."
+      "id": "s11-140",
+      "sceneId": "s11",
+      "text": "Hisako returned to the letter voluntarily years later; voluntary shame is still the book’s uneasy remainder."
     },
     {
-      "id": "s16-21",
-      "sceneId": "s16",
-      "text": "Umbrellas bloomed."
+      "id": "s11-141",
+      "sceneId": "s11",
+      "text": "Expansion 29 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s16-22",
-      "sceneId": "s16",
-      "text": "Spectacle dispersed into weather."
+      "id": "s11-142",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s16-23",
-      "sceneId": "s16",
-      "text": "Roger Chillingworth's estate lawyers spoke softly in glass offices."
+      "id": "s11-143",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s17-0",
-      "sceneId": "s17",
-      "text": "Pearl became unexpectedly landed."
+      "id": "s11-144",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s17-1",
-      "sceneId": "s17",
-      "text": "Hester guarded her from suitors who loved ledgers."
+      "id": "s11-145",
+      "sceneId": "s11",
+      "text": "Tourists near temple gates photographed torii; none photographed the A’s true weather."
     },
     {
-      "id": "s17-2",
-      "sceneId": "s17",
-      "text": "Pearl, older, chose for herself—Hawthorne's gift of future."
+      "id": "s11-146",
+      "sceneId": "s11",
+      "text": "Expansion 30 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s17-3",
-      "sceneId": "s17",
-      "text": "Hester remained the scarlet letter's final author, sewing meaning into punishment until punishment became her craft's paradox."
+      "id": "s11-147",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s17-4",
-      "sceneId": "s17",
-      "text": "Thus the Kyoto reseat closes at ≥ length with spirit locked: public mark as art; hidden guilt; revenge as medicine; forest tenderness; final scaffold; return."
+      "id": "s11-148",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s17-5",
-      "sceneId": "s17",
-      "text": "Hester. Dimmesdale."
+      "id": "s11-149",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s17-6",
-      "sceneId": "s17",
-      "text": "Chillingworth."
+      "id": "s11-150",
+      "sceneId": "s11",
+      "text": "Hisako’s needle made the A too beautiful for the sentence it was meant to be."
     },
     {
-      "id": "s17-7",
-      "sceneId": "s17",
-      "text": "One last Kyoto evening: Hester sets down her needle, touches the A, opens the door to frog-song and wet leaves."
+      "id": "s11-151",
+      "sceneId": "s11",
+      "text": "Expansion 31 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s17-8",
-      "sceneId": "s17",
-      "text": "She does not wait for Dimmesdale's ghost; she waits for morning's errands and for any woman who might knock."
+      "id": "s11-152",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s17-9",
-      "sceneId": "s17",
-      "text": "The continuous novel ends in that practical holiness—names intact, beats complete, glamorous city reseated, shame neither denied nor allowed to own the whole of Hester Prynne."
+      "id": "s11-153",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s17-10",
-      "sceneId": "s17",
-      "text": "Chillingworth is buried without Pearl's tears."
+      "id": "s11-154",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s17-11",
-      "sceneId": "s17",
-      "text": "Dimmesdale is buried with too many."
+      "id": "s11-155",
+      "sceneId": "s11",
+      "text": "Shinju arranged seaweed into letters as if language itself were her plaything and her weapon."
     },
     {
-      "id": "s17-12",
-      "sceneId": "s17",
-      "text": "Hester will be buried, someday, with the letter still on her gown if she has her way—not as surrender, as signature."
+      "id": "s11-156",
+      "sceneId": "s11",
+      "text": "Expansion 32 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s17-13",
-      "sceneId": "s17",
-      "text": "Pearl will stand there as proof the story went beyond scaffold boards."
+      "id": "s11-157",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s17-14",
-      "sceneId": "s17",
-      "text": "Until then Hester sews."
+      "id": "s11-158",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s17-15",
-      "sceneId": "s17",
-      "text": "Kyoto shines."
+      "id": "s11-159",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s17-16",
-      "sceneId": "s17",
-      "text": "Fidelity holds."
+      "id": "s11-160",
+      "sceneId": "s11",
+      "text": "Mori’s hand over his heart became a public gesture everyone misread as piety."
     },
     {
-      "id": "s17-17",
-      "sceneId": "s17",
-      "text": "Host note stands for public shame and the psychological cruelty of Chillingworth's revenge and Dimmesdale's self-punishment."
+      "id": "s11-161",
+      "sceneId": "s11",
+      "text": "Expansion 33 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s17-18",
-      "sceneId": "s17",
-      "text": "Warn the room if listeners are sensitive to public humiliation and obsessive torment."
+      "id": "s11-162",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s17-19",
-      "sceneId": "s17",
-      "text": "The remake stages scaffold and letter without turning pain into entertainment; it tracks consequence through Pearl's childhood, the forest plan's failure into confession, and Hester's long return."
+      "id": "s11-163",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s17-20",
-      "sceneId": "s17",
-      "text": "Readers should leave with the names clear: Hester Prynne on the merchant-quarter boards and at the cottage door; Arthur Dimmesdale climbing at last into truth; Roger Chillingworth emptying when the secret dies publicly; Pearl kissing her father into humanity and inheriting a future."
+      "id": "s11-164",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s17-21",
-      "sceneId": "s17",
-      "text": "Kyoto's temples and neon remain backdrop pressure—glamorous 2026 reseat—while Hawthorne's spirit stays the plot's law."
+      "id": "s11-165",
+      "sceneId": "s11",
+      "text": "Kanzaki’s herbs smelled clean while his attention smelled like ownership."
     },
     {
-      "id": "s17-22",
-      "sceneId": "s17",
-      "text": "Whole continuous book."
+      "id": "s11-166",
+      "sceneId": "s11",
+      "text": "Expansion 34 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s17-23",
-      "sceneId": "s17",
-      "text": "Never Featured."
+      "id": "s11-167",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s18-0",
-      "sceneId": "s18",
-      "text": "No pad refrain."
+      "id": "s11-168",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s18-1",
-      "sceneId": "s18",
-      "text": "FIDELITY."
+      "id": "s11-169",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s18-2",
-      "sceneId": "s18",
-      "text": "In sewing-light Hester sometimes restitches the A when threads thin—maintenance as devotion."
+      "id": "s11-170",
+      "sceneId": "s11",
+      "text": "The forest’s filtered light allowed truth a temporary visa."
     },
     {
-      "id": "s18-3",
-      "sceneId": "s18",
-      "text": "Pearl sends photographs of ordinary happiness: a table, a window, a spouse's sleeve."
+      "id": "s11-171",
+      "sceneId": "s11",
+      "text": "Expansion 35 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s18-4",
-      "sceneId": "s18",
-      "text": "Hester prints one and sets it by the needle cushion where Dimmesdale's remembered face no longer competes."
+      "id": "s11-172",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s18-5",
-      "sceneId": "s18",
-      "text": "Chillingworth appears in no photographs."
+      "id": "s11-173",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s18-6",
-      "sceneId": "s18",
-      "text": "Absence suits him."
+      "id": "s11-174",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s18-7",
-      "sceneId": "s18",
-      "text": "A child in the neighborhood asks what the letter means."
+      "id": "s11-175",
+      "sceneId": "s11",
+      "text": "The ship captain’s friendly talk about passengers became Kanzaki’s trap made nautical."
     },
     {
-      "id": "s18-8",
-      "sceneId": "s18",
-      "text": "Hester answers, \"It means I lived through what they did to me, and what I did, and what I loved.\""
+      "id": "s11-176",
+      "sceneId": "s11",
+      "text": "Expansion 36 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s18-9",
-      "sceneId": "s18",
-      "text": "The child nods, unfrightened."
+      "id": "s11-177",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s18-10",
-      "sceneId": "s18",
-      "text": "Kyoto's evening train passes with a soft shriek."
+      "id": "s11-178",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s18-11",
-      "sceneId": "s18",
-      "text": "The forest path darkens."
+      "id": "s11-179",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s18-12",
-      "sceneId": "s18",
-      "text": "The continuous Scarlet Letter—reseeded, renamed only in place, faithful in persons and beats—rests there, complete enough for Salon shelves and Mike's fidelity lock."
+      "id": "s11-180",
+      "sceneId": "s11",
+      "text": "Election-day drums covered a confession that drums could not finally drown."
     },
     {
-      "id": "s18-13",
-      "sceneId": "s18",
-      "text": "Scaffold."
+      "id": "s11-181",
+      "sceneId": "s11",
+      "text": "Expansion 37 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s18-14",
-      "sceneId": "s18",
-      "text": "Letter. Physician."
+      "id": "s11-182",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s18-15",
-      "sceneId": "s18",
-      "text": "Minister."
+      "id": "s11-183",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s18-16",
-      "sceneId": "s18",
-      "text": "Child. Forest."
+      "id": "s11-184",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s18-17",
-      "sceneId": "s18",
-      "text": "Election."
+      "id": "s11-185",
+      "sceneId": "s11",
+      "text": "Shinju’s kiss undid elf into child—Hawthorne’s mercy without cheap erase."
     },
     {
-      "id": "s18-18",
-      "sceneId": "s18",
-      "text": "Confession."
+      "id": "s11-186",
+      "sceneId": "s11",
+      "text": "Expansion 38 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s18-19",
-      "sceneId": "s18",
-      "text": "Death. Return."
+      "id": "s11-187",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s18-20",
-      "sceneId": "s18",
-      "text": "Hester Prynne closes the door, scarlet letter against the wood for a moment like a seal, then turns back to the room where counsel and craft continue."
+      "id": "s11-188",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s18-21",
-      "sceneId": "s18",
-      "text": "Arthur Dimmesdale's truth has been spoken."
+      "id": "s11-189",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s18-22",
-      "sceneId": "s18",
-      "text": "Roger Chillingworth's hunt has ended empty."
+      "id": "s11-190",
+      "sceneId": "s11",
+      "text": "Hisako returned to the letter voluntarily years later; voluntary shame is still the book’s uneasy remainder."
     },
     {
-      "id": "s18-23",
-      "sceneId": "s18",
-      "text": "Pearl lives."
+      "id": "s11-191",
+      "sceneId": "s11",
+      "text": "Expansion 39 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s19-0",
-      "sceneId": "s19",
-      "text": "Kyoto glamours on."
+      "id": "s11-192",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s19-1",
-      "sceneId": "s19",
-      "text": "The book holds."
+      "id": "s11-193",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s19-2",
-      "sceneId": "s19",
-      "text": "Mike's lock asked for characters, plot, story, spirit matching the original—glamorous city reseat OK, new-book drift not OK."
+      "id": "s11-194",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s19-3",
-      "sceneId": "s19",
-      "text": "This remake obeys: no invented cast replacing Hester, Dimmesdale, Chillingworth, Pearl; major beats in order; continuous whole book without timed sits; Author and original title kept in the display line; never Featured."
+      "id": "s11-195",
+      "sceneId": "s11",
+      "text": "Tourists near temple gates photographed torii; none photographed the A’s true weather."
     },
     {
-      "id": "s19-4",
-      "sceneId": "s19",
-      "text": "Public shame remains the engine; love remains costly; revenge remains medicinal poison; confession remains too late for living partnership and just in time for Pearl."
+      "id": "s11-196",
+      "sceneId": "s11",
+      "text": "Expansion 40 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s19-5",
-      "sceneId": "s19",
-      "text": "That is the scarlet math, unchanged under Kyoto light."
+      "id": "s11-197",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s19-6",
-      "sceneId": "s19",
-      "text": "Hester. Dimmesdale."
+      "id": "s11-198",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s19-7",
-      "sceneId": "s19",
-      "text": "Chillingworth."
+      "id": "s11-199",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s19-8",
-      "sceneId": "s19",
-      "text": "Pearl. Merchant-quarter scaffold."
+      "id": "s11-200",
+      "sceneId": "s11",
+      "text": "Hisako’s needle made the A too beautiful for the sentence it was meant to be."
     },
     {
-      "id": "s19-9",
-      "sceneId": "s19",
-      "text": "Temple-school guilt."
+      "id": "s11-201",
+      "sceneId": "s11",
+      "text": "Expansion 41 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s19-10",
-      "sceneId": "s19",
-      "text": "Forest path."
+      "id": "s11-202",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s19-11",
-      "sceneId": "s19",
-      "text": "Kamo edge."
+      "id": "s11-203",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s19-12",
-      "sceneId": "s19",
-      "text": "Final boards."
+      "id": "s11-204",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s19-13",
-      "sceneId": "s19",
-      "text": "Cottage return."
+      "id": "s11-205",
+      "sceneId": "s11",
+      "text": "Shinju arranged seaweed into letters as if language itself were her plaything and her weapon."
     },
     {
-      "id": "s19-14",
-      "sceneId": "s19",
-      "text": "Continuous."
+      "id": "s11-206",
+      "sceneId": "s11",
+      "text": "Expansion 42 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s19-15",
-      "sceneId": "s19",
-      "text": "Faithful."
+      "id": "s11-207",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s19-16",
-      "sceneId": "s19",
-      "text": "Done under glamorous 2026 Kyoto without pad and without drift."
+      "id": "s11-208",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s19-17",
-      "sceneId": "s19",
-      "text": "She lights a small lamp."
+      "id": "s11-209",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s19-18",
-      "sceneId": "s19",
-      "text": "The A dull-glows."
+      "id": "s11-210",
+      "sceneId": "s11",
+      "text": "Mori’s hand over his heart became a public gesture everyone misread as piety."
     },
     {
-      "id": "s19-19",
-      "sceneId": "s19",
-      "text": "Outside a bicycle bell rings like an ordinary blessing."
+      "id": "s11-211",
+      "sceneId": "s11",
+      "text": "Expansion 43 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s19-20",
-      "sceneId": "s19",
-      "text": "Hester Prynne sits again to sew—Able, Art, Adultery—three truths in one thread—while the city beyond the trees pretends it has forgotten the scaffold it still remembers in its bones."
+      "id": "s11-212",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s19-21",
-      "sceneId": "s19",
-      "text": "Pearl's last letter in the drawer ends: *Mother, keep the letter if you must."
+      "id": "s11-213",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s19-22",
-      "sceneId": "s19",
-      "text": "Keep yourself more.* Hester smiles, folds it, and keeps both—as Hawthorne's spirit and Mike's fidelity both require of this Salon remake."
+      "id": "s11-214",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s19-23",
-      "sceneId": "s19",
-      "text": "Kyoto did not need New England frost to make a scaffold mean something."
+      "id": "s11-215",
+      "sceneId": "s11",
+      "text": "Kanzaki’s herbs smelled clean while his attention smelled like ownership."
     },
     {
-      "id": "s20-0",
-      "sceneId": "s20",
-      "text": "Public eyes are portable; they travel in tourist crowds and temple queues alike."
+      "id": "s11-216",
+      "sceneId": "s11",
+      "text": "Expansion 44 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s20-1",
-      "sceneId": "s20",
-      "text": "Hester Prynne kept her letter and her child and her needle."
+      "id": "s11-217",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s20-2",
-      "sceneId": "s20",
-      "text": "Arthur Dimmesdale kept his sermon voice until the last platform made him honest."
+      "id": "s11-218",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s20-3",
-      "sceneId": "s20",
-      "text": "Roger Chillingworth kept his medicine until revenge finished eating the physician."
+      "id": "s11-219",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s20-4",
-      "sceneId": "s20",
-      "text": "Pearl kept asking questions that adults called unnatural because they were true."
+      "id": "s11-220",
+      "sceneId": "s11",
+      "text": "The forest’s filtered light allowed truth a temporary visa."
     },
     {
-      "id": "s20-5",
-      "sceneId": "s20",
-      "text": "The continuous book ends as Hawthorne ends it: not with fashion, but with the hard mercy of names said plainly—Hester, Dimmesdale, Chillingworth, Pearl—under Kyoto maples that photograph beautifully and do not forgive on anyone’s behalf."
+      "id": "s11-221",
+      "sceneId": "s11",
+      "text": "Expansion 45 held allegory’s discomfort in Kyoto’s cooler material: plaza shame, temple bells as timekeeper, forested hills, embroidered art as accusation."
     },
     {
-      "id": "s20-6",
-      "sceneId": "s20",
-      "text": "The lamp holds."
+      "id": "s11-222",
+      "sceneId": "s11",
+      "text": "Characters kept functions—Hisako’s silence, Mori’s hidden brand, Kanzaki’s medical revenge, Shinju as living symbol."
     },
     {
-      "id": "s20-7",
-      "sceneId": "s20",
-      "text": "The letter holds."
+      "id": "s11-223",
+      "sceneId": "s11",
+      "text": "No tourist kimono gag; no soft rewrite into pure empowerment brochure."
     },
     {
-      "id": "s20-8",
-      "sceneId": "s20",
-      "text": "The names hold."
+      "id": "s11-224",
+      "sceneId": "s11",
+      "text": "Scaffold, forest, sermon, death, legend—spine intact."
     },
     {
-      "id": "s20-9",
-      "sceneId": "s20",
-      "text": "End of the continuous scarlet book."
+      "id": "s11-225",
+      "sceneId": "s11",
+      "text": "More Continuous M1."
+    },
+    {
+      "id": "s11-226",
+      "sceneId": "s11",
+      "text": "Scarlet more 1"
+    },
+    {
+      "id": "s11-227",
+      "sceneId": "s11",
+      "text": "Hisako’s voluntary return to the letter years later remained Hawthorne’s uneasy remainder: freedom choosing the mark again."
+    },
+    {
+      "id": "s11-228",
+      "sceneId": "s11",
+      "text": "Kyoto’s seasons moved around her cottage; Shinju’s elsewhere letters arrived like proof that symbols can grow into persons."
+    },
+    {
+      "id": "s11-229",
+      "sceneId": "s11",
+      "text": "M2. Scarlet more 2"
+    },
+    {
+      "id": "s11-230",
+      "sceneId": "s11",
+      "text": "Mori’s midnight scaffold visit with Hisako and Shinju—meteor light, Kanzaki watching—kept the private public rehearsal before Election Day."
+    },
+    {
+      "id": "s11-231",
+      "sceneId": "s11",
+      "text": "Guilt sought air without yet seeking truth enough to live."
+    },
+    {
+      "id": "s11-232",
+      "sceneId": "s11",
+      "text": "M3. Scarlet more 3"
+    },
+    {
+      "id": "s11-233",
+      "sceneId": "s11",
+      "text": "The physicians of the town praised Kanzaki’s care while Hisako alone read the care as hunt."
+    },
+    {
+      "id": "s11-234",
+      "sceneId": "s11",
+      "text": "Revenge smiling as medicine stayed the allegory’s coldest line under temple-bell hours."
+    },
+    {
+      "id": "s11-235",
+      "sceneId": "s11",
+      "text": "M4. Scarlet more 4"
+    },
+    {
+      "id": "s11-236",
+      "sceneId": "s11",
+      "text": "Shinju’s refusal of the brook’s crossing until the A was restored taught the child-symbol’s fierce grammar."
+    },
+    {
+      "id": "s11-237",
+      "sceneId": "s11",
+      "text": "Forest freedom was temporary visa; the letter was passport the world still stamped."
+    },
+    {
+      "id": "s11-238",
+      "sceneId": "s11",
+      "text": "M5. Scarlet more 5"
+    },
+    {
+      "id": "s11-239",
+      "sceneId": "s11",
+      "text": "After Mori’s death Hisako’s long continuance near the shame-site refused both exile fantasy and triumph brochure."
+    },
+    {
+      "id": "s11-240",
+      "sceneId": "s11",
+      "text": "Allegory incomplete on purpose."
+    },
+    {
+      "id": "s11-241",
+      "sceneId": "s11",
+      "text": "Fidelity held."
     }
   ]
 }

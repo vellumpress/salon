@@ -4,141 +4,190 @@
   "author": "Salon",
   "year": "2026",
   "note": "A Fenice-box remake of The Age of Innocence: Venetian lace and arranged lives. After Wharton, The Age of Innocence, 1920.",
-  "minutes": 37,
+  "minutes": 33,
   "cover": "",
   "coverAlt": "",
   "scenes": [
     {
       "id": "s0",
-      "title": "La Fenice",
+      "title": "Fenice Box",
       "place": "Venice",
-      "reentry": "Newland Archer arrived at La Fenice on a damp Venetian evening when the lagoon held the theater's lights like a second, colder audience.",
+      "reentry": "Niccolò Archi arrived at La Fenice already engaged in the eyes of Venice’s invisible police—engaged to Maddalena Vianello, whose perfection photographed as innocence and functioned as law.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s1",
-      "title": "She received him without chaperone",
+      "title": "Palazzo Soup",
       "place": "Venice",
-      "reentry": "She received him without chaperone theater.",
+      "reentry": "At Signora Minghetti’s palazzo the soup arrived with strategy.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s2",
-      "title": "La Fenice · 3",
+      "title": "Almost",
       "place": "Venice",
-      "reentry": "He told himself he was protecting her.",
+      "reentry": "In a closed palazzo loaned for discretion, Archi and Elena stood among covered furniture like people visiting their own future too early.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
-      "title": "May announced, not long after, that she was",
+      "title": "Wedding Wax",
       "place": "Venice",
-      "reentry": "May announced, not long after, that she was pregnant.",
+      "reentry": "He married Maddalena in candle-wax and lace.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
-      "title": "Archer walked with his son toward her street",
+      "title": "Museum Hands",
       "place": "Venice",
-      "reentry": "Archer walked with his son toward her street in evening light.",
+      "reentry": "Among museum glass Archi’s hand almost touched Elena’s.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s5",
-      "title": "He touched his wedding ring, kept after May's",
+      "title": "Soft Lock",
       "place": "Venice",
-      "reentry": "He touched his wedding ring, kept after May's death out of habit more than display, and thought of Ellen's last look on the rain platform: not accusation, not farewell theater—*recognition*.",
+      "reentry": "Maddalena told him she was pregnant with timing that glittered.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s6",
-      "title": "The seeing became the wound he carried into",
+      "title": "Years",
       "place": "Venice",
-      "reentry": "The seeing became the wound he carried into the wedding like a concealed letter.",
+      "reentry": "Years arranged children and calendars.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s7",
-      "title": "Venice received him back with tourist season",
+      "title": "Paris Stair",
       "place": "Venice",
-      "reentry": "Venice received him back with tourist season gearing up, Fenice posters bright, palazzi rented to people who believed beauty was a property rather than a pressure.",
+      "reentry": "After Maddalena’s death—years on—Archi visited Paris with adult son Dario.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s8",
-      "title": "Archer intercepted with a question about",
+      "title": "Sensibility",
       "place": "Venice",
-      "reentry": "Archer intercepted with a question about books.",
+      "reentry": "Society as invisible police; desire braided with duty; innocence as performance and possible strategy; renunciation without melodrama; irony cool enough to sit beside Mirth.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s9",
-      "title": "La Fenice · 10",
+      "title": "Vaporetto Restraint",
       "place": "Venice",
-      "reentry": "The vaporetto arrived.",
+      "reentry": "Before the wedding Archi rode vaporetti as if water could argue him out of Maddalena.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s10",
-      "title": "La Fenice · 11",
+      "title": "Bevilacqua Spice",
       "place": "Venice",
-      "reentry": "He said yes.",
+      "reentry": "Bevilacqua’s spice warehouses funded dinners where Elena was discussed as a logistics problem.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s11",
-      "title": "He told her he felt buried in soft",
+      "title": "Gianna’s Warning",
       "place": "Venice",
-      "reentry": "He told her he felt buried in soft brick.",
+      "reentry": "Archi’s sister Gianna issued warnings disguised as gossip.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s12",
-      "title": "La Fenice · 13",
+      "title": "Maddalena’s Knowing",
       "place": "Venice",
-      "reentry": "Soft lamp.",
+      "reentry": "Late in the marriage Maddalena said one sentence that suggested she had always known the shape of his longing and had chosen to win anyway.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s13",
-      "title": "She never mentioned Ellen unless someone else",
+      "title": "Dario Modern",
       "place": "Venice",
-      "reentry": "She never mentioned Ellen unless someone else did, and then only with charitable precision.",
+      "reentry": "Dario, child of a later century’s frankness, could not understand why a living woman upstairs should remain downstairs in a father’s myth.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s14",
-      "title": "Dallas returned full of Ellen's kindness, her",
+      "title": "Continuous Deepening",
       "place": "Venice",
-      "reentry": "Dallas returned full of Ellen's kindness, her questions, her age worn as elegance rather than defeat.",
+      "reentry": "D1. After Fenice",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s15",
-      "title": "La Fenice · 16",
+      "title": "Sailing Committee",
       "place": "Venice",
-      "reentry": "After Ellen left, letters did not come.",
+      "reentry": "The committee that decided Elena should sail met in a room with good rugs and bad mercy.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s16",
-      "title": "At Fenice he sat beside May in a box that no",
+      "title": "Maddalena’s Sewing",
       "place": "Venice",
-      "reentry": "At Fenice he sat beside May in a box that no longer faced Ellen's absence because absence had become the room's climate.",
+      "reentry": "Maddalena sewed near a window that framed a church dome like a moral.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s17",
-      "title": "La Fenice · 18",
+      "title": "Carnival Distant",
       "place": "Venice",
-      "reentry": "He said yes.",
+      "reentry": "Carnival noise arrived distant and discarded by their set as vulgar.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s18",
-      "title": "That lesson—glamorous, costly, faithful to",
+      "title": "Son’s Question",
       "place": "Venice",
-      "reentry": "That lesson—glamorous, costly, faithful to the old plot—was the book he finished without writing Ellen's address again.",
+      "reentry": "Years later a young son asked why Aunt Elena lived away.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s19",
+      "title": "Lawyer Exclusion",
+      "place": "Venice",
+      "reentry": "A lawyer explained Elena’s settlement options with soft exclusion built into every clause.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s20",
+      "title": "Anniversary",
+      "place": "Venice",
+      "reentry": "On an anniversary Maddalena gave him cufflinks and a look that said she had won fairly.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s21",
+      "title": "Unsent Burn",
+      "place": "Venice",
+      "reentry": "He burned another unsent letter—this one to Elena in Paris—and washed ash down a sink that had carried years of similar hygiene.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s22",
+      "title": "Widow Archaeology",
+      "place": "Venice",
+      "reentry": "After Maddalena’s death he practiced archaeology in drawers: notes, lists, a dried flower from the Lido.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s23",
+      "title": "Hotel Night",
+      "place": "Venice",
+      "reentry": "In a Paris hotel before the courtyard visit he slept badly and dreamed of vaporetti that never docked.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s24",
+      "title": "End Note Archi",
+      "place": "Venice",
+      "reentry": "The continuous remake holds Wharton’s sensibility in cooler Venice: invisible police, almosts, soft locks, unclimbed stair.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s25",
+      "title": "Further",
+      "place": "Venice",
+      "reentry": "Archi’s cufflinks clicked like soft handcuffs at Fenice’s second act.",
       "prompt": "A word from this stretch."
     }
   ],
@@ -146,2267 +195,1967 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Newland Archer arrived at La Fenice on a damp Venetian evening when the lagoon held the theater's lights like a second, colder audience."
+      "text": "Niccolò Archi arrived at La Fenice already engaged in the eyes of Venice’s invisible police—engaged to Maddalena Vianello, whose perfection photographed as innocence and functioned as law."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "He was thirty, well-tailored, engaged to May Welland, and certain that his life had already been correctly arranged by families who confused continuity with virtue."
+      "text": "The opera was noise around a quieter plot: Elena Orsini’s return to a box that made fans pause mid-flutter."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "In the box opposite, society performed itself: pearls, opera glasses, the soft violence of being seen."
+      "text": "Wharton’s society did not need written rules; it had coughs, invitations, and the sudden absence of both."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "Archer watched the stage without watching."
+      "text": "Archi loved Maddalena as one loves a closed museum: arranged, protective, faintly airless."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "He was thinking of the announcement that would appear in the papers—his engagement to May—when Ellen Olenska entered the Welland box in a dress that refused Venice's costume of innocence."
+      "text": "He loved Elena as one loves a window opened on lagoon weather after a sealed room."
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "Countess Ellen Olenska had returned from a failed European marriage with a reputation that traveled faster than her trunks."
+      "text": "The contradiction was not hypocrisy yet; it was the city’s favorite sport."
     },
     {
       "id": "s0-6",
       "sceneId": "s0",
-      "text": "She sat beside May as if scandal were only weather."
+      "text": "Maddalena leaned toward him with luminous trust."
     },
     {
       "id": "s0-7",
       "sceneId": "s0",
-      "text": "Archer felt the old grammar of his set tighten: one did not look too long; one did not ask too directly; one protected girls like May from knowledge as if knowledge were a stain."
+      "text": "“Isn’t it nice that Elena is home?”"
     },
     {
       "id": "s0-8",
       "sceneId": "s0",
-      "text": "He looked too long."
+      "text": "Nice was the tribe’s favorite anesthetic."
     },
     {
       "id": "s0-9",
       "sceneId": "s0",
-      "text": "Ellen's eyes found him with a recognition that was not flirtation yet—something dryer, more dangerous: the look of a person who had already lived outside the lace."
-    },
-    {
-      "id": "s0-10",
-      "sceneId": "s0",
-      "text": "After the opera, in the foyer smelling of velvet and rain, May introduced them with perfect brightness."
-    },
-    {
-      "id": "s0-11",
-      "sceneId": "s0",
-      "text": "\"Newland, you remember Ellen.\""
-    },
-    {
-      "id": "s0-12",
-      "sceneId": "s0",
-      "text": "He did. Cousins, childhood gardens, a girl who asked questions adults preferred not to inventory."
-    },
-    {
-      "id": "s0-13",
-      "sceneId": "s0",
-      "text": "Now she was Countess Olenska, separated, possibly seeking divorce, certainly inconvenient."
-    },
-    {
-      "id": "s0-14",
-      "sceneId": "s0",
-      "text": "Archer heard himself offer to call."
-    },
-    {
-      "id": "s0-15",
-      "sceneId": "s0",
-      "text": "May smiled as if generosity toward Ellen were part of their engagement's public furniture."
-    },
-    {
-      "id": "s0-16",
-      "sceneId": "s0",
-      "text": "Ellen said, \"Please do,\" in a voice that made *please* sound like a dare against silence."
-    },
-    {
-      "id": "s0-17",
-      "sceneId": "s0",
-      "text": "Venice in 2026 wore its glamour as working clothes: vaporetto spray on wool, palazzi lit for donors, the Lido's winter hotels half asleep and half performing."
-    },
-    {
-      "id": "s0-18",
-      "sceneId": "s0",
-      "text": "Archer's family occupied a piano nobile near San Marco where conversations arrived already edited."
-    },
-    {
-      "id": "s0-19",
-      "sceneId": "s0",
-      "text": "His mother and sister spoke of Ellen with the careful pity reserved for women who had stepped outside the script."
-    },
-    {
-      "id": "s0-20",
-      "sceneId": "s0",
-      "text": "\"We must be kind,\" they said, meaning: we must contain her."
-    },
-    {
-      "id": "s0-21",
-      "sceneId": "s0",
-      "text": "Archer agreed aloud."
-    },
-    {
-      "id": "s0-22",
-      "sceneId": "s0",
-      "text": "Privately he walked at night along the Riva and felt the lagoon's slap against stone as a pulse he had misplaced."
-    },
-    {
-      "id": "s0-23",
-      "sceneId": "s0",
-      "text": "He called on Ellen in a rented apartment that did not apologize for its books or its view of a narrow canal where laundry and reflections shared the air."
+      "text": "Archi said nice was not the word and felt, already, the cost of accuracy."
     },
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "She received him without chaperone theater."
+      "text": "At Signora Minghetti’s palazzo the soup arrived with strategy."
     },
     {
       "id": "s1-1",
       "sceneId": "s1",
-      "text": "They spoke of Paris, of her husband's cruelties without naming them as melodrama, of Venice's talent for beautiful prisons."
+      "text": "Elena’s marriage abroad had cracked; Venice preferred cracks filled."
     },
     {
       "id": "s1-2",
       "sceneId": "s1",
-      "text": "Archer found himself defending May's world—duty, form, the sweetness of not knowing—and hearing how thin the defense sounded in a room that permitted smoke and honesty."
+      "text": "Lawrence Laffranchi sneered with elegance."
     },
     {
       "id": "s1-3",
       "sceneId": "s1",
-      "text": "Ellen did not mock May."
+      "text": "Julius Bevilacqua’s spice-money bought tolerance until it didn’t."
     },
     {
       "id": "s1-4",
       "sceneId": "s1",
-      "text": "That restraint undid him more than rivalry would have."
+      "text": "Archi was asked to make Elena “acceptable,” which meant smaller, quieter, less true."
     },
     {
       "id": "s1-5",
       "sceneId": "s1",
-      "text": "At a dinner in a palazzo whose ceilings had survived worse centuries than theirs, the set discussed Ellen as a problem of seating."
+      "text": "Elena watched him with a tired amusement that refused costume."
     },
     {
       "id": "s1-6",
       "sceneId": "s1",
-      "text": "Lawrence Lefferts (reseated as a financier with Beaufort's appetite for other men's wives and other men's tips) laughed too loudly."
+      "text": "“Do you all still pretend the lagoon is a moral?” she asked."
     },
     {
       "id": "s1-7",
       "sceneId": "s1",
-      "text": "Julius Beaufort himself—money without old lace—hovered near Ellen with a possessiveness that made Archer's hands tighten."
+      "text": "Archi had no answer that would survive the vaporetto ride home."
     },
     {
       "id": "s1-8",
       "sceneId": "s1",
-      "text": "May, in white, looked like a decision already framed."
+      "text": "He walked calli after midnight rehearsing speeches for Maddalena he would not give."
     },
     {
       "id": "s1-9",
       "sceneId": "s1",
-      "text": "Archer loved her."
+      "text": "Stone smelled of tide."
     },
     {
       "id": "s1-10",
       "sceneId": "s1",
-      "text": "He also saw, with a clarity that frightened him, that loving May meant loving a story about her that the family had written in advance."
-    },
-    {
-      "id": "s1-11",
-      "sceneId": "s1",
-      "text": "He urged Ellen not to divorce—urged her, shamefully, in the language of the tribe: think of the family, think of May, think of appearances."
-    },
-    {
-      "id": "s1-12",
-      "sceneId": "s1",
-      "text": "Ellen listened with a half-smile."
-    },
-    {
-      "id": "s1-13",
-      "sceneId": "s1",
-      "text": "\"You mean think of your engagement's comfort,\" she said."
-    },
-    {
-      "id": "s1-14",
-      "sceneId": "s1",
-      "text": "He flushed."
-    },
-    {
-      "id": "s1-15",
-      "sceneId": "s1",
-      "text": "She was right."
-    },
-    {
-      "id": "s1-16",
-      "sceneId": "s1",
-      "text": "He had come as society's messenger wearing his own desire like a hidden telegram."
-    },
-    {
-      "id": "s1-17",
-      "sceneId": "s1",
-      "text": "Still she softened."
-    },
-    {
-      "id": "s1-18",
-      "sceneId": "s1",
-      "text": "\"I will try to be less inconvenient,\" she said, and the promise hurt because it was made for people who would never repay it."
-    },
-    {
-      "id": "s1-19",
-      "sceneId": "s1",
-      "text": "May's family advanced the wedding."
-    },
-    {
-      "id": "s1-20",
-      "sceneId": "s1",
-      "text": "Archer, panicked by speed and by Ellen's possible departure to a quieter exile, asked May to move the date forward."
-    },
-    {
-      "id": "s1-21",
-      "sceneId": "s1",
-      "text": "May agreed with a sweetness that felt, later, like strategy."
-    },
-    {
-      "id": "s1-22",
-      "sceneId": "s1",
-      "text": "In the weeks before the wedding he saw Ellen at museums, at a Lido lunch where wind undid carefully set hair, at a charity evening where she stood apart from the lace."
-    },
-    {
-      "id": "s1-23",
-      "sceneId": "s1",
-      "text": "Each meeting tightened the cord."
+      "text": "A mask shop’s window held faces that looked more honest than dinner guests."
     },
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "He told himself he was protecting her."
+      "text": "In a closed palazzo loaned for discretion, Archi and Elena stood among covered furniture like people visiting their own future too early."
     },
     {
       "id": "s2-1",
       "sceneId": "s2",
-      "text": "He was rehearsing a life he would not choose."
+      "text": "Rain stitched the canal."
     },
     {
       "id": "s2-2",
       "sceneId": "s2",
-      "text": "They married at a church near the Fenice with flowers enough to hide doubt."
+      "text": "Their hands found each other and stopped—civilization’s preferred tense being almost."
     },
     {
       "id": "s2-3",
       "sceneId": "s2",
-      "text": "May was radiant in the way approved photographs require."
+      "text": "Elena: I want to be free."
     },
     {
       "id": "s2-4",
       "sceneId": "s2",
-      "text": "Archer spoke vows with a voice that did not shake and a mind that walked a canal toward Ellen's window."
+      "text": "Do you know what free costs here?"
     },
     {
       "id": "s2-5",
       "sceneId": "s2",
-      "text": "On the honeymoon—Paris first, then a lake—May was tender, physical, innocent in the official sense and shrewder than official language allowed."
+      "text": "Archi: I know what it costs me to say I don’t."
     },
     {
       "id": "s2-6",
       "sceneId": "s2",
-      "text": "She asked almost nothing about Ellen."
+      "text": "They parted without becoming lovers."
     },
     {
       "id": "s2-7",
       "sceneId": "s2",
-      "text": "Her almost became a wall papered with roses."
+      "text": "Wharton keeps the heat in restraint."
     },
     {
       "id": "s2-8",
       "sceneId": "s2",
-      "text": "Back in Venice, married life arranged itself into dinners, regattas, the Biennale's polite chaos, family Sundays."
-    },
-    {
-      "id": "s2-9",
-      "sceneId": "s2",
-      "text": "Archer worked in a firm that handled old money's new papers."
-    },
-    {
-      "id": "s2-10",
-      "sceneId": "s2",
-      "text": "At night he read books May did not ask to share."
-    },
-    {
-      "id": "s2-11",
-      "sceneId": "s2",
-      "text": "Ellen left for a while—friends in Paris, talk of a villa—then returned because Beaufort's financial scandal and the family's panic made her, again, a piece to place."
-    },
-    {
-      "id": "s2-12",
-      "sceneId": "s2",
-      "text": "Archer found her in a half-closed palazzo room and said what he should not: that his marriage was a duty he had mistaken for desire's whole country."
-    },
-    {
-      "id": "s2-13",
-      "sceneId": "s2",
-      "text": "Ellen stopped him."
-    },
-    {
-      "id": "s2-14",
-      "sceneId": "s2",
-      "text": "\"Don't,\" she said gently."
-    },
-    {
-      "id": "s2-15",
-      "sceneId": "s2",
-      "text": "\"You will hate me for hearing it.\""
-    },
-    {
-      "id": "s2-16",
-      "sceneId": "s2",
-      "text": "They met by arrangement that pretended not to be arrangement: a gallery, a vaporetto pier at an odd hour, a carriage to Torcello where tourists photographed ruins and they sat in a silence more intimate than touch."
-    },
-    {
-      "id": "s2-17",
-      "sceneId": "s2",
-      "text": "Archer pleaded for a world elsewhere."
-    },
-    {
-      "id": "s2-18",
-      "sceneId": "s2",
-      "text": "Ellen asked what he proposed to do with May—erase her?"
-    },
-    {
-      "id": "s2-19",
-      "sceneId": "s2",
-      "text": "Educate her into pain?"
-    },
-    {
-      "id": "s2-20",
-      "sceneId": "s2",
-      "text": "He had no answer that was not cruelty."
-    },
-    {
-      "id": "s2-21",
-      "sceneId": "s2",
-      "text": "Ellen stood."
-    },
-    {
-      "id": "s2-22",
-      "sceneId": "s2",
-      "text": "\"I am the woman who asks you to stay inside your promise,\" she said."
-    },
-    {
-      "id": "s2-23",
-      "sceneId": "s2",
-      "text": "\"That is my scandal now.\""
+      "text": "Archi went home to Maddalena’s clear eyes and felt like a man returning a book unread because the library was watching."
     },
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "May announced, not long after, that she was pregnant."
+      "text": "He married Maddalena in candle-wax and lace."
     },
     {
       "id": "s3-1",
       "sceneId": "s3",
-      "text": "She told Archer with soft triumph timed like a chess move."
+      "text": "Congratulations sealed the vault."
     },
     {
       "id": "s3-2",
       "sceneId": "s3",
-      "text": "He understood—without proof he could take to court—that she had known enough of his longing to close the door with a child."
+      "text": "Elena remained in rented hush across water."
     },
     {
       "id": "s3-3",
       "sceneId": "s3",
-      "text": "He held her."
+      "text": "Bevilacqua’s scandals provided the tribe a different prey for a season; Elena’s name still traveled like algae on a hull."
     },
     {
       "id": "s3-4",
       "sceneId": "s3",
-      "text": "He performed joy."
+      "text": "On the Lido Maddalena’s parasol described perfect circles."
     },
     {
       "id": "s3-5",
       "sceneId": "s3",
-      "text": "Inside, the stair he had imagined climbing toward Ellen collapsed into a corridor of nurseries and names."
+      "text": "Archi watched and understood that perfection was labor."
     },
     {
       "id": "s3-6",
       "sceneId": "s3",
-      "text": "Ellen agreed to leave Venice for Paris—an arrangement the family blessed as kindness and meant as removal."
+      "text": "He almost hated her for succeeding at it."
     },
     {
       "id": "s3-7",
       "sceneId": "s3",
-      "text": "Archer went to see her once more at the station near the lagoon where trains took people toward mainland decisions."
-    },
-    {
-      "id": "s3-8",
-      "sceneId": "s3",
-      "text": "He asked her to stay."
-    },
-    {
-      "id": "s3-9",
-      "sceneId": "s3",
-      "text": "She asked him to let her go."
-    },
-    {
-      "id": "s3-10",
-      "sceneId": "s3",
-      "text": "Rain made the platform honest."
-    },
-    {
-      "id": "s3-11",
-      "sceneId": "s3",
-      "text": "He did not kiss her."
-    },
-    {
-      "id": "s3-12",
-      "sceneId": "s3",
-      "text": "Kissing would have been a smaller betrayal than the one already completed by marriage and silence."
-    },
-    {
-      "id": "s3-13",
-      "sceneId": "s3",
-      "text": "She boarded."
-    },
-    {
-      "id": "s3-14",
-      "sceneId": "s3",
-      "text": "The train took her."
-    },
-    {
-      "id": "s3-15",
-      "sceneId": "s3",
-      "text": "Venice continued its appointments."
-    },
-    {
-      "id": "s3-16",
-      "sceneId": "s3",
-      "text": "Years passed in the city's expensive continuity: children, carnival without wildness, May's reign as a woman who had won without seeming to fight."
-    },
-    {
-      "id": "s3-17",
-      "sceneId": "s3",
-      "text": "Archer loved his son and daughter with a startled sincerity."
-    },
-    {
-      "id": "s3-18",
-      "sceneId": "s3",
-      "text": "He was a good husband in public and a careful one in private."
-    },
-    {
-      "id": "s3-19",
-      "sceneId": "s3",
-      "text": "Sometimes at Fenice he looked at the box where Ellen had sat and felt the ghost of a different plot."
-    },
-    {
-      "id": "s3-20",
-      "sceneId": "s3",
-      "text": "May watched him watching and said nothing."
-    },
-    {
-      "id": "s3-21",
-      "sceneId": "s3",
-      "text": "Her silence had always been fluent."
-    },
-    {
-      "id": "s3-22",
-      "sceneId": "s3",
-      "text": "When May died—illness, not drama—Archer was still young enough to imagine second lives and old enough to distrust them."
-    },
-    {
-      "id": "s3-23",
-      "sceneId": "s3",
-      "text": "His son, grown, invited him to Paris on business and mentioned, casually, that Madame Olenska lived there and would be glad to receive them."
+      "text": "The hate shamed him into renewed tenderness—another of Wharton’s traps."
     },
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "Archer walked with his son toward her street in evening light."
+      "text": "Among museum glass Archi’s hand almost touched Elena’s."
     },
     {
       "id": "s4-1",
       "sceneId": "s4",
-      "text": "At the building he looked up at her window."
+      "text": "The almost again."
     },
     {
       "id": "s4-2",
       "sceneId": "s4",
-      "text": "A servant's silhouette moved."
+      "text": "Maddalena, elsewhere, arranged flowers with a precision that could be innocence or strategy."
     },
     {
       "id": "s4-3",
       "sceneId": "s4",
-      "text": "His son said they should go up."
+      "text": "Wharton refuses to simplify the wife into fool or villain; that refusal is the sensibility."
     },
     {
       "id": "s4-4",
       "sceneId": "s4",
-      "text": "Archer smiled the smile May had taught him—the smile of a man who keeps faith with a story—and said he preferred to wait."
+      "text": "The tribe decided Elena should leave for everyone’s comfort—including Archi’s, which he called duty."
     },
     {
       "id": "s4-5",
       "sceneId": "s4",
-      "text": "He sat on a bench across the street while his son climbed."
-    },
-    {
-      "id": "s4-6",
-      "sceneId": "s4",
-      "text": "He did not climb the stair."
-    },
-    {
-      "id": "s4-7",
-      "sceneId": "s4",
-      "text": "The stair not climbed became the marriage's last true vow."
-    },
-    {
-      "id": "s4-8",
-      "sceneId": "s4",
-      "text": "Paris traffic moved."
-    },
-    {
-      "id": "s4-9",
-      "sceneId": "s4",
-      "text": "Above, Ellen's life continued without requiring his entrance."
-    },
-    {
-      "id": "s4-10",
-      "sceneId": "s4",
-      "text": "Archer watched the window until watching became a kind of prayer he refused to finish with an amen of contact."
-    },
-    {
-      "id": "s4-11",
-      "sceneId": "s4",
-      "text": "Then he rose, met his son afterward with questions about everything except Ellen, and walked into a city that did not know his renunciation because renunciation, done properly, leaves no headline."
-    },
-    {
-      "id": "s4-12",
-      "sceneId": "s4",
-      "text": "What Venice had taught him—what Wharton's spirit demanded keep—was that duty and desire are not a simple duel but a braid."
-    },
-    {
-      "id": "s4-13",
-      "sceneId": "s4",
-      "text": "May had not been a fool; she had been a citizen of innocence as policy."
-    },
-    {
-      "id": "s4-14",
-      "sceneId": "s4",
-      "text": "Ellen had not been a temptress; she had been a person who refused to pretend that lace was law."
-    },
-    {
-      "id": "s4-15",
-      "sceneId": "s4",
-      "text": "Archer had been the man in between, capable of longing and of choosing the cage with the better furniture."
-    },
-    {
-      "id": "s4-16",
-      "sceneId": "s4",
-      "text": "In Fenice light, years earlier, he had thought himself free because he could see the bars."
-    },
-    {
-      "id": "s4-17",
-      "sceneId": "s4",
-      "text": "Seeing was not freedom."
-    },
-    {
-      "id": "s4-18",
-      "sceneId": "s4",
-      "text": "Freedom would have cost May's peace and Ellen's already expensive name and his children's unclouded origin story."
-    },
-    {
-      "id": "s4-19",
-      "sceneId": "s4",
-      "text": "He paid with silence instead."
-    },
-    {
-      "id": "s4-20",
-      "sceneId": "s4",
-      "text": "On the vaporetto home from a later Venetian evening—after Paris, after the unclimbed stair—he stood at the rail and watched San Giorgio slide past like a postcard that knew too much."
-    },
-    {
-      "id": "s4-21",
-      "sceneId": "s4",
-      "text": "A young couple kissed without consulting the family's old scripts."
-    },
-    {
-      "id": "s4-22",
-      "sceneId": "s4",
-      "text": "Archer did not envy them simply."
-    },
-    {
-      "id": "s4-23",
-      "sceneId": "s4",
-      "text": "He envied their ignorance of how envy ages."
+      "text": "Duty tasted like a medicine that worked by thinning the blood."
     },
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "He touched his wedding ring, kept after May's death out of habit more than display, and thought of Ellen's last look on the rain platform: not accusation, not farewell theater—*recognition*."
+      "text": "Maddalena told him she was pregnant with timing that glittered."
     },
     {
       "id": "s5-1",
       "sceneId": "s5",
-      "text": "She had seen him whole: lover, coward, husband, citizen of beautiful prisons."
+      "text": "Soft lock."
     },
     {
       "id": "s5-2",
       "sceneId": "s5",
-      "text": "May, in memory, arranged flowers and closed doors with soft hands."
+      "text": "Elena, informed by currents Archi did not control, prepared departure."
     },
     {
       "id": "s5-3",
       "sceneId": "s5",
-      "text": "She had protected her version of him as fiercely as he had protected her version of the world."
+      "text": "On the pier Archi did not leap."
     },
     {
       "id": "s5-4",
       "sceneId": "s5",
-      "text": "Between those protections a real marriage had occurred—not the one opera promised, the one society underwrote."
+      "text": "Renunciation became the marriage’s private architecture—load-bearing, unphotographed."
     },
     {
       "id": "s5-5",
       "sceneId": "s5",
-      "text": "Archer accepted that underwriting at last without calling it noble."
+      "text": "Elena left for Paris."
     },
     {
       "id": "s5-6",
       "sceneId": "s5",
-      "text": "Nobility was another costume."
+      "text": "Fog took the lagoon and returned it unchanged."
     },
     {
       "id": "s5-7",
       "sceneId": "s5",
-      "text": "What he had done was survive as Newland Archer: engaged at Fenice, married in lace, tempted by Ellen Olenska, renouncing on a Paris stair, returning to Venice's glamorous continuity with his plot intact and his hunger unanswered on purpose."
+      "text": "Archi became an excellent husband."
     },
     {
       "id": "s5-8",
       "sceneId": "s5",
-      "text": "Before the engagement announcement, there had been a afternoon in May's family's sala where she showed him sketches of wedding flowers as if flowers could secure a future."
-    },
-    {
-      "id": "s5-9",
-      "sceneId": "s5",
-      "text": "He had kissed her forehead and felt safe."
-    },
-    {
-      "id": "s5-10",
-      "sceneId": "s5",
-      "text": "Safety, Ellen would later imply without cruelty, was Venice's favorite narcotic."
-    },
-    {
-      "id": "s5-11",
-      "sceneId": "s5",
-      "text": "After Ellen's arrival, safety tasted thinner."
-    },
-    {
-      "id": "s5-12",
-      "sceneId": "s5",
-      "text": "He began to notice how May's questions avoided certain continents, how her mother's voice sharpened when divorce was named, how Beaufort's money bought forgiveness the old names pretended not to sell."
-    },
-    {
-      "id": "s5-13",
-      "sceneId": "s5",
-      "text": "Archer's law work put him briefly in Ellen's service—papers, advice, the tribe's attempt to manage her separation without allowing her freedom."
-    },
-    {
-      "id": "s5-14",
-      "sceneId": "s5",
-      "text": "In her apartment he sorted through documents while she smoked by the window."
-    },
-    {
-      "id": "s5-15",
-      "sceneId": "s5",
-      "text": "\"You are kind,\" she said."
-    },
-    {
-      "id": "s5-16",
-      "sceneId": "s5",
-      "text": "\"Kindness is how your world keeps its hands clean.\""
-    },
-    {
-      "id": "s5-17",
-      "sceneId": "s5",
-      "text": "He set the papers down."
-    },
-    {
-      "id": "s5-18",
-      "sceneId": "s5",
-      "text": "\"What would you have me do?\""
-    },
-    {
-      "id": "s5-19",
-      "sceneId": "s5",
-      "text": "She answered too quickly, then slower: \"See me."
-    },
-    {
-      "id": "s5-20",
-      "sceneId": "s5",
-      "text": "Not as a case."
-    },
-    {
-      "id": "s5-21",
-      "sceneId": "s5",
-      "text": "Not as May's cousin."
-    },
-    {
-      "id": "s5-22",
-      "sceneId": "s5",
-      "text": "As Ellen.\""
-    },
-    {
-      "id": "s5-23",
-      "sceneId": "s5",
-      "text": "He saw her."
+      "text": "Excellence, Wharton knew, can be a life sentence spoken politely."
     },
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "The seeing became the wound he carried into the wedding like a concealed letter."
+      "text": "Years arranged children and calendars."
     },
     {
       "id": "s6-1",
       "sceneId": "s6",
-      "text": "On the Lido, in a winter of thin sun, he walked with Ellen while May visited relatives."
+      "text": "Venice processed tourists."
     },
     {
       "id": "s6-2",
       "sceneId": "s6",
-      "text": "The beach hotels were mostly closed; the glamour was off-duty, more honest."
+      "text": "Archi kept Elena like a closed museum of his own—visited in thought, never vandalized by action."
     },
     {
       "id": "s6-3",
       "sceneId": "s6",
-      "text": "Ellen spoke of her husband's house as a place where silence had been a weapon."
+      "text": "Laffranchi aged into worse sneers."
     },
     {
       "id": "s6-4",
       "sceneId": "s6",
-      "text": "Archer wanted to rescue her with the old scripts of male protection."
+      "text": "Bevilacqua’s money weather shifted."
     },
     {
       "id": "s6-5",
       "sceneId": "s6",
-      "text": "She laughed—not unkindly."
-    },
-    {
-      "id": "s6-6",
-      "sceneId": "s6",
-      "text": "\"Rescue me into what?"
-    },
-    {
-      "id": "s6-7",
-      "sceneId": "s6",
-      "text": "Another script with better lighting?\""
-    },
-    {
-      "id": "s6-8",
-      "sceneId": "s6",
-      "text": "He had no answer."
-    },
-    {
-      "id": "s6-9",
-      "sceneId": "s6",
-      "text": "Their hands did not touch."
-    },
-    {
-      "id": "s6-10",
-      "sceneId": "s6",
-      "text": "The not-touching was louder than the lagoon."
-    },
-    {
-      "id": "s6-11",
-      "sceneId": "s6",
-      "text": "May's pregnancy announcement came after a family dinner where Ellen's departure for Paris had been discussed as settled kindness."
-    },
-    {
-      "id": "s6-12",
-      "sceneId": "s6",
-      "text": "May took Archer aside among borrowed Renaissance chairs and told him their news with eyes that held a quiet checkmate."
-    },
-    {
-      "id": "s6-13",
-      "sceneId": "s6",
-      "text": "He understood he had been managed by innocence."
-    },
-    {
-      "id": "s6-14",
-      "sceneId": "s6",
-      "text": "He could not hate her for it without hating the whole machine that had made them both."
-    },
-    {
-      "id": "s6-15",
-      "sceneId": "s6",
-      "text": "He kissed her and tasted victory that was not his."
-    },
-    {
-      "id": "s6-16",
-      "sceneId": "s6",
-      "text": "In Paris, years later, sitting on the bench while his son climbed toward Ellen, Archer inventoried the major beats of his life as if preparing a brief he would never file: Fenice and the entrance; calls on Ellen; the urging against divorce; the rushed wedding; Torcello's silence; May's announcement; the station in rain; children; May's death; the stair."
-    },
-    {
-      "id": "s6-17",
-      "sceneId": "s6",
-      "text": "He had hit every mark society required and one mark love required—the refusal to smash May's world for a desire that would have had to live as secrecy or exile."
-    },
-    {
-      "id": "s6-18",
-      "sceneId": "s6",
-      "text": "Ellen had refused to be his secrecy."
-    },
-    {
-      "id": "s6-19",
-      "sceneId": "s6",
-      "text": "That refusal was her fidelity to something cleaner than Venice's lace."
-    },
-    {
-      "id": "s6-20",
-      "sceneId": "s6",
-      "text": "His son returned cheerful, speaking of Madame Olenska's warmth, her questions about Venice, her restraint when asking about May."
-    },
-    {
-      "id": "s6-21",
-      "sceneId": "s6",
-      "text": "Archer listened and felt the old braid tighten one last time: duty, desire, renunciation."
-    },
-    {
-      "id": "s6-22",
-      "sceneId": "s6",
-      "text": "He did not ask if Ellen had looked toward the window."
-    },
-    {
-      "id": "s6-23",
-      "sceneId": "s6",
-      "text": "Some evidence damages the verdict you need in order to keep living."
+      "text": "Maddalena’s innocence remained either intact or perfectly performed; Archi never finished the audit."
     },
     {
       "id": "s7-0",
       "sceneId": "s7",
-      "text": "Venice received him back with tourist season gearing up, Fenice posters bright, palazzi rented to people who believed beauty was a property rather than a pressure."
+      "text": "After Maddalena’s death—years on—Archi visited Paris with adult son Dario."
     },
     {
       "id": "s7-1",
       "sceneId": "s7",
-      "text": "He walked the Riva at evening and nodded to acquaintances who still measured him as May Welland's widower, successful enough, harmless."
+      "text": "Elena lived above a quiet courtyard."
     },
     {
       "id": "s7-2",
       "sceneId": "s7",
-      "text": "Harmlessness had been his final costume."
+      "text": "Dario urged him upstairs like a modern who believed stairs existed to be climbed."
     },
     {
       "id": "s7-3",
       "sceneId": "s7",
-      "text": "Under it, Newland Archer remained the man who had loved Ellen Olenska in the city's expensive light and had chosen—again, finally—not to climb."
+      "text": "Dario: Don’t sit in the car like an old novel."
     },
     {
       "id": "s7-4",
       "sceneId": "s7",
-      "text": "The age of innocence, reseated among vaporetti and donor galas, kept its spirit: society as lace and law; marriage as public architecture; longing as a private canal that does not reach the sea."
+      "text": "Archi sat in the car like an old novel."
     },
     {
       "id": "s7-5",
       "sceneId": "s7",
-      "text": "Archer did not rewrite the book."
+      "text": "He did not climb."
     },
     {
       "id": "s7-6",
       "sceneId": "s7",
-      "text": "He finished it as Wharton required—by stopping at the foot of the stair, in a glamorous elsewhere, with the original names intact and the heart unbroken only because it had learned to call breakage duty."
+      "text": "The unclimbed stair remained the marriage’s truth and the book’s ending."
     },
     {
       "id": "s7-7",
       "sceneId": "s7",
-      "text": "The engagement announcement appeared in the papers the morning after Fenice, and Venice treated it as weather: expected, bright, lightly discussed over coffee near Florian with the seriousness people give to other people's futures."
-    },
-    {
-      "id": "s7-8",
-      "sceneId": "s7",
-      "text": "Newland Archer read his own name beside May Welland's and felt the satisfaction of a correctly filed form."
-    },
-    {
-      "id": "s7-9",
-      "sceneId": "s7",
-      "text": "Then he remembered Ellen in the box—the dress that refused innocence—and the form looked suddenly like a net."
-    },
-    {
-      "id": "s7-10",
-      "sceneId": "s7",
-      "text": "He walked to work across bridges where tourists paused for selfies and locals passed without performing wonder."
-    },
-    {
-      "id": "s7-11",
-      "sceneId": "s7",
-      "text": "Wonder, he thought, was what Ellen still allowed herself."
-    },
-    {
-      "id": "s7-12",
-      "sceneId": "s7",
-      "text": "His world had professionalized wonder into opera subscriptions."
-    },
-    {
-      "id": "s7-13",
-      "sceneId": "s7",
-      "text": "May met him that afternoon in a garden behind her family's palazzo where camellias made a pink argument for simplicity."
-    },
-    {
-      "id": "s7-14",
-      "sceneId": "s7",
-      "text": "She took his arm with possessive gentleness."
-    },
-    {
-      "id": "s7-15",
-      "sceneId": "s7",
-      "text": "\"Mama says Ellen may come to the announcement party."
-    },
-    {
-      "id": "s7-16",
-      "sceneId": "s7",
-      "text": "Do you mind?\""
-    },
-    {
-      "id": "s7-17",
-      "sceneId": "s7",
-      "text": "He minded in ways he could not say."
-    },
-    {
-      "id": "s7-18",
-      "sceneId": "s7",
-      "text": "\"Of course not."
-    },
-    {
-      "id": "s7-19",
-      "sceneId": "s7",
-      "text": "She is family.\""
-    },
-    {
-      "id": "s7-20",
-      "sceneId": "s7",
-      "text": "May's smile thanked him for the correct line."
-    },
-    {
-      "id": "s7-21",
-      "sceneId": "s7",
-      "text": "He kissed her and tasted camellias and a future already upholstered."
-    },
-    {
-      "id": "s7-22",
-      "sceneId": "s7",
-      "text": "At the announcement party Ellen arrived late enough to be noticed and early enough not to be rude."
-    },
-    {
-      "id": "s7-23",
-      "sceneId": "s7",
-      "text": "Beaufort steered toward her with champagne and a story about yacht weeks."
+      "text": "Venice had reseated New York’s brownstone weather in lagoon stone; it had not invented another book."
     },
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "Archer intercepted with a question about books."
+      "text": "Society as invisible police; desire braided with duty; innocence as performance and possible strategy; renunciation without melodrama; irony cool enough to sit beside Mirth."
     },
     {
       "id": "s8-1",
       "sceneId": "s8",
-      "text": "Ellen answered about a novelist who understood wasted lives."
-    },
-    {
-      "id": "s8-2",
-      "sceneId": "s8",
-      "text": "May, nearby, laughed at something her mother said and did not hear."
-    },
-    {
-      "id": "s8-3",
-      "sceneId": "s8",
-      "text": "Archer felt the room divide into the spoken party and the silent one underneath."
-    },
-    {
-      "id": "s8-4",
-      "sceneId": "s8",
-      "text": "He was becoming bilingual in both."
-    },
-    {
-      "id": "s8-5",
-      "sceneId": "s8",
-      "text": "In the weeks that followed he became Ellen's informal solicitor in family matters—an intimacy of papers."
-    },
-    {
-      "id": "s8-6",
-      "sceneId": "s8",
-      "text": "Her husband's lawyers sent letters that smelled of expensive threat."
-    },
-    {
-      "id": "s8-7",
-      "sceneId": "s8",
-      "text": "Archer translated threat into Venetian caution: wait, soften, do not divorce in a way that splatters."
-    },
-    {
-      "id": "s8-8",
-      "sceneId": "s8",
-      "text": "Ellen paced her small sala."
-    },
-    {
-      "id": "s8-9",
-      "sceneId": "s8",
-      "text": "\"You want me safe and invisible,\" she said."
-    },
-    {
-      "id": "s8-10",
-      "sceneId": "s8",
-      "text": "\"Safe, yes,\" he answered."
-    },
-    {
-      "id": "s8-11",
-      "sceneId": "s8",
-      "text": "\"Invisible—no.\""
-    },
-    {
-      "id": "s8-12",
-      "sceneId": "s8",
-      "text": "It was a lie half intended as comfort."
-    },
-    {
-      "id": "s8-13",
-      "sceneId": "s8",
-      "text": "She heard the half and forgave it without saying so."
-    },
-    {
-      "id": "s8-14",
-      "sceneId": "s8",
-      "text": "One evening they stood on a vaporetto pier after a charity concert."
-    },
-    {
-      "id": "s8-15",
-      "sceneId": "s8",
-      "text": "Rain needled the lagoon."
-    },
-    {
-      "id": "s8-16",
-      "sceneId": "s8",
-      "text": "May had gone ahead in a water taxi with her mother."
-    },
-    {
-      "id": "s8-17",
-      "sceneId": "s8",
-      "text": "Archer held his umbrella badly over both of them."
-    },
-    {
-      "id": "s8-18",
-      "sceneId": "s8",
-      "text": "Ellen said, \"If I stay, I become their cautionary tale with good seats."
-    },
-    {
-      "id": "s8-19",
-      "sceneId": "s8",
-      "text": "If I go, I become a rumor."
-    },
-    {
-      "id": "s8-20",
-      "sceneId": "s8",
-      "text": "Which do you prefer for me?\""
-    },
-    {
-      "id": "s8-21",
-      "sceneId": "s8",
-      "text": "He said he preferred her happiness."
-    },
-    {
-      "id": "s8-22",
-      "sceneId": "s8",
-      "text": "She shook her head."
-    },
-    {
-      "id": "s8-23",
-      "sceneId": "s8",
-      "text": "\"That is the line men use when they will not choose.\""
+      "text": "A24: restraint as heat, no tourist gondola syrup, no cheap affair payoff."
     },
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "The vaporetto arrived."
+      "text": "Before the wedding Archi rode vaporetti as if water could argue him out of Maddalena."
     },
     {
       "id": "s9-1",
       "sceneId": "s9",
-      "text": "They boarded without choosing."
+      "text": "It could not."
     },
     {
       "id": "s9-2",
       "sceneId": "s9",
-      "text": "May's sweetness began to show its iron."
+      "text": "The city’s beauty continued shift work."
     },
     {
       "id": "s9-3",
       "sceneId": "s9",
-      "text": "She asked Archer, lightly, whether Ellen found Venice dull after Europe."
+      "text": "He drafted a letter to Elena and burned it in a sink, watching ash become plumbing’s problem."
     },
     {
       "id": "s9-4",
       "sceneId": "s9",
-      "text": "She asked whether Ellen needed money."
+      "text": "Maddalena’s notes to him were clear as glass and twice as cutting when he failed to answer on time."
     },
     {
       "id": "s9-5",
       "sceneId": "s9",
-      "text": "She asked, once, whether Archer found Ellen changed."
+      "text": "He answered on time."
     },
     {
       "id": "s9-6",
       "sceneId": "s9",
-      "text": "He said everyone changed."
-    },
-    {
-      "id": "s9-7",
-      "sceneId": "s9",
-      "text": "May replied, \"I hope not everyone,\" and arranged a bowl of fruit as if arranging a verdict."
-    },
-    {
-      "id": "s9-8",
-      "sceneId": "s9",
-      "text": "He understood he was married already in spirit—to her need for a world without certain questions."
-    },
-    {
-      "id": "s9-9",
-      "sceneId": "s9",
-      "text": "When he asked to advance the wedding, May's family glowed."
-    },
-    {
-      "id": "s9-10",
-      "sceneId": "s9",
-      "text": "An early wedding meant Ellen's scandal would have less time to lean against their announcement."
-    },
-    {
-      "id": "s9-11",
-      "sceneId": "s9",
-      "text": "Archer told himself he was eager for May."
-    },
-    {
-      "id": "s9-12",
-      "sceneId": "s9",
-      "text": "He was eager to close a door before he walked through the wrong one."
-    },
-    {
-      "id": "s9-13",
-      "sceneId": "s9",
-      "text": "Ellen, hearing the date, sent a note of congratulations so perfectly kind it felt like exile's first stamp."
-    },
-    {
-      "id": "s9-14",
-      "sceneId": "s9",
-      "text": "The wedding day blurred into ritual: church near Fenice, pearls, rice replaced by modern paper bits, a reception in a palazzo where windows opened onto a canal green as old glass."
-    },
-    {
-      "id": "s9-15",
-      "sceneId": "s9",
-      "text": "Archer spoke vows."
-    },
-    {
-      "id": "s9-16",
-      "sceneId": "s9",
-      "text": "May's hand was steady."
-    },
-    {
-      "id": "s9-17",
-      "sceneId": "s9",
-      "text": "In the back of the church Ellen sat in a dark dress and left before cake."
-    },
-    {
-      "id": "s9-18",
-      "sceneId": "s9",
-      "text": "That night in a hotel room with too many flowers, May came to him with trust that made his longing feel like theft."
-    },
-    {
-      "id": "s9-19",
-      "sceneId": "s9",
-      "text": "He was tender."
-    },
-    {
-      "id": "s9-20",
-      "sceneId": "s9",
-      "text": "Tenderness can be a form of penance."
-    },
-    {
-      "id": "s9-21",
-      "sceneId": "s9",
-      "text": "Paris honeymoon mornings: May planning museums with guidebook innocence; Archer watching her across croissants and feeling love and entrapment braid."
-    },
-    {
-      "id": "s9-22",
-      "sceneId": "s9",
-      "text": "He bought her a bracelet."
-    },
-    {
-      "id": "s9-23",
-      "sceneId": "s9",
-      "text": "She said, \"We will be happy.\""
+      "text": "Punctuality became his substitute for honesty."
     },
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "He said yes."
+      "text": "Bevilacqua’s spice warehouses funded dinners where Elena was discussed as a logistics problem."
     },
     {
       "id": "s10-1",
       "sceneId": "s10",
-      "text": "In the Louvre she paused before a painting of a woman looking away from a man."
+      "text": "Archi defended her and found defense was also a way of touching what he could not keep."
     },
     {
       "id": "s10-2",
       "sceneId": "s10",
-      "text": "\"She seems rude,\" May said."
+      "text": "Laffranchi smiled."
     },
     {
       "id": "s10-3",
       "sceneId": "s10",
-      "text": "Archer said, \"Or free.\""
-    },
-    {
-      "id": "s10-4",
-      "sceneId": "s10",
-      "text": "May laughed, not hearing the fault line."
-    },
-    {
-      "id": "s10-5",
-      "sceneId": "s10",
-      "text": "Back in Venice the firm gave him a quieter office and a heavier caseload of old families' new anxieties."
-    },
-    {
-      "id": "s10-6",
-      "sceneId": "s10",
-      "text": "At dinners he performed the married man."
-    },
-    {
-      "id": "s10-7",
-      "sceneId": "s10",
-      "text": "At night he stood at the window of their apartment near the Accademia and watched delivery boats stitch the dark."
-    },
-    {
-      "id": "s10-8",
-      "sceneId": "s10",
-      "text": "May slept with the untroubled breath of someone who believed arrangements held."
-    },
-    {
-      "id": "s10-9",
-      "sceneId": "s10",
-      "text": "Sometimes he loved her most in sleep, when she could not ask him to be simpler than he was."
-    },
-    {
-      "id": "s10-10",
-      "sceneId": "s10",
-      "text": "After the honeymoon, Ellen's presence in Venice became intermittent and therefore sharper—arriving for a week, departing for Paris talk, returning when Beaufort's financial tremor made every drawing room discuss who had danced too near his money."
-    },
-    {
-      "id": "s10-11",
-      "sceneId": "s10",
-      "text": "Archer saw her at a Biennale pavilion opening among glass and sponsored wine."
-    },
-    {
-      "id": "s10-12",
-      "sceneId": "s10",
-      "text": "May was beside him explaining a video installation with determined goodwill."
-    },
-    {
-      "id": "s10-13",
-      "sceneId": "s10",
-      "text": "Ellen looked at Archer across the crowd as if they shared a language May had not been taught."
-    },
-    {
-      "id": "s10-14",
-      "sceneId": "s10",
-      "text": "He looked away first."
-    },
-    {
-      "id": "s10-15",
-      "sceneId": "s10",
-      "text": "Looking away had become his primary athletic skill."
-    },
-    {
-      "id": "s10-16",
-      "sceneId": "s10",
-      "text": "He arranged, through a mutual acquaintance, a meeting that was not a meeting: Torcello, midday, tourists photographing the cathedral's stern Madonna."
-    },
-    {
-      "id": "s10-17",
-      "sceneId": "s10",
-      "text": "Ellen wore a coat too light for the wind."
-    },
-    {
-      "id": "s10-18",
-      "sceneId": "s10",
-      "text": "They sat on a wall and watched a cat ignore history."
-    },
-    {
-      "id": "s10-19",
-      "sceneId": "s10",
-      "text": "\"I think of you married,\" Ellen said, \"and I try to be glad.\""
-    },
-    {
-      "id": "s10-20",
-      "sceneId": "s10",
-      "text": "Archer said May was good."
-    },
-    {
-      "id": "s10-21",
-      "sceneId": "s10",
-      "text": "Ellen nodded."
-    },
-    {
-      "id": "s10-22",
-      "sceneId": "s10",
-      "text": "\"Goodness is real."
-    },
-    {
-      "id": "s10-23",
-      "sceneId": "s10",
-      "text": "It is also a wall.\""
+      "text": "Smiles were weapons that photographed as manners."
     },
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "He told her he felt buried in soft brick."
+      "text": "Archi’s sister Gianna issued warnings disguised as gossip."
     },
     {
       "id": "s11-1",
       "sceneId": "s11",
-      "text": "She put her gloved hand near his—not on it."
+      "text": "His mother issued silences disguised as care."
     },
     {
       "id": "s11-2",
       "sceneId": "s11",
-      "text": "\"If you leave her, you will become someone I cannot respect."
+      "text": "The family was a soft machine for continuity."
     },
     {
       "id": "s11-3",
       "sceneId": "s11",
-      "text": "If you stay and make me your secret, I will become someone I cannot respect."
-    },
-    {
-      "id": "s11-4",
-      "sceneId": "s11",
-      "text": "Do you see the cage?\""
-    },
-    {
-      "id": "s11-5",
-      "sceneId": "s11",
-      "text": "He saw it."
-    },
-    {
-      "id": "s11-6",
-      "sceneId": "s11",
-      "text": "The cage was made of love, duty, Ellen's pride, May's pregnancy-to-come, Venice's lace, his own fear of becoming Beaufort with better adjectives."
-    },
-    {
-      "id": "s11-7",
-      "sceneId": "s11",
-      "text": "They rode back in silence."
-    },
-    {
-      "id": "s11-8",
-      "sceneId": "s11",
-      "text": "That night May asked why he smelled of lagoon cold."
-    },
-    {
-      "id": "s11-9",
-      "sceneId": "s11",
-      "text": "He said he had walked."
-    },
-    {
-      "id": "s11-10",
-      "sceneId": "s11",
-      "text": "She believed him because believing him was part of her job as May Welland Archer, and she was excellent at her job."
-    },
-    {
-      "id": "s11-11",
-      "sceneId": "s11",
-      "text": "Beaufort's scandal broke like bad weather over the Rialto gossip lines: overreach, other people's money, a mistress in a modern flat that photographed like ambition."
-    },
-    {
-      "id": "s11-12",
-      "sceneId": "s11",
-      "text": "The old names who had tolerated him for dinners suddenly discovered morality."
-    },
-    {
-      "id": "s11-13",
-      "sceneId": "s11",
-      "text": "Ellen, who had been seen with him in public once too often for the lace's taste, became collateral."
-    },
-    {
-      "id": "s11-14",
-      "sceneId": "s11",
-      "text": "Archer's family spoke of \"helping Ellen find quieter ground.\""
-    },
-    {
-      "id": "s11-15",
-      "sceneId": "s11",
-      "text": "He understood: exile marketed as care."
-    },
-    {
-      "id": "s11-16",
-      "sceneId": "s11",
-      "text": "He went to warn her."
-    },
-    {
-      "id": "s11-17",
-      "sceneId": "s11",
-      "text": "She already knew."
-    },
-    {
-      "id": "s11-18",
-      "sceneId": "s11",
-      "text": "\"I will go to Paris,\" she said."
-    },
-    {
-      "id": "s11-19",
-      "sceneId": "s11",
-      "text": "\"Not because they win."
-    },
-    {
-      "id": "s11-20",
-      "sceneId": "s11",
-      "text": "Because I refuse to let them watch me drown for sport.\""
-    },
-    {
-      "id": "s11-21",
-      "sceneId": "s11",
-      "text": "He asked if he could write."
-    },
-    {
-      "id": "s11-22",
-      "sceneId": "s11",
-      "text": "She said writing would be a door they should not keep oiled."
-    },
-    {
-      "id": "s11-23",
-      "sceneId": "s11",
-      "text": "May chose that week to tell him she was pregnant."
+      "text": "Elena threatened continuity by existing as a person with history."
     },
     {
       "id": "s12-0",
       "sceneId": "s12",
-      "text": "Soft lamp."
+      "text": "Late in the marriage Maddalena said one sentence that suggested she had always known the shape of his longing and had chosen to win anyway."
     },
     {
       "id": "s12-1",
       "sceneId": "s12",
-      "text": "Soft voice."
+      "text": "Archi never asked her to clarify."
     },
     {
       "id": "s12-2",
       "sceneId": "s12",
-      "text": "Soft checkmate."
-    },
-    {
-      "id": "s12-3",
-      "sceneId": "s12",
-      "text": "Archer held her and felt the future close with a click he almost admired."
-    },
-    {
-      "id": "s12-4",
-      "sceneId": "s12",
-      "text": "May's eyes shone with tears that were joy and victory braided."
-    },
-    {
-      "id": "s12-5",
-      "sceneId": "s12",
-      "text": "\"You are happy,\" she whispered, half question."
-    },
-    {
-      "id": "s12-6",
-      "sceneId": "s12",
-      "text": "\"Yes,\" he said, and the yes was not entirely false."
-    },
-    {
-      "id": "s12-7",
-      "sceneId": "s12",
-      "text": "He wanted the child."
-    },
-    {
-      "id": "s12-8",
-      "sceneId": "s12",
-      "text": "He also understood he had been timed."
-    },
-    {
-      "id": "s12-9",
-      "sceneId": "s12",
-      "text": "Ellen's departure station smelled of rain and brake metal."
-    },
-    {
-      "id": "s12-10",
-      "sceneId": "s12",
-      "text": "Archer found her among trunks."
-    },
-    {
-      "id": "s12-11",
-      "sceneId": "s12",
-      "text": "May had sent flowers to the compartment—an elegance that made him dizzy."
-    },
-    {
-      "id": "s12-12",
-      "sceneId": "s12",
-      "text": "Ellen touched a petal."
-    },
-    {
-      "id": "s12-13",
-      "sceneId": "s12",
-      "text": "\"She knows more than she says.\""
-    },
-    {
-      "id": "s12-14",
-      "sceneId": "s12",
-      "text": "Archer said May was innocent."
-    },
-    {
-      "id": "s12-15",
-      "sceneId": "s12",
-      "text": "Ellen smiled the tired smile of someone done arguing definitions."
-    },
-    {
-      "id": "s12-16",
-      "sceneId": "s12",
-      "text": "\"Innocence is a dialect."
-    },
-    {
-      "id": "s12-17",
-      "sceneId": "s12",
-      "text": "She speaks it fluently.\""
-    },
-    {
-      "id": "s12-18",
-      "sceneId": "s12",
-      "text": "The train doors aligned."
-    },
-    {
-      "id": "s12-19",
-      "sceneId": "s12",
-      "text": "He wanted to pull her back into a novel that did not exist."
-    },
-    {
-      "id": "s12-20",
-      "sceneId": "s12",
-      "text": "She boarded."
-    },
-    {
-      "id": "s12-21",
-      "sceneId": "s12",
-      "text": "He stood until the train became a rumor of motion and then a lack."
-    },
-    {
-      "id": "s12-22",
-      "sceneId": "s12",
-      "text": "Years of Venetian marriage followed in faithful sequence: a son, a daughter, carnival parties where costumes licensed mildness rather than revelation, Fenice nights where Archer watched boxes out of habit, summers on the Lido when the hotels filled with bodies performing leisure."
-    },
-    {
-      "id": "s12-23",
-      "sceneId": "s12",
-      "text": "May reigned gently."
+      "text": "Clarification might have required a stair he was already practicing not to climb."
     },
     {
       "id": "s13-0",
       "sceneId": "s13",
-      "text": "She never mentioned Ellen unless someone else did, and then only with charitable precision."
+      "text": "Dario, child of a later century’s frankness, could not understand why a living woman upstairs should remain downstairs in a father’s myth."
     },
     {
       "id": "s13-1",
       "sceneId": "s13",
-      "text": "Archer worked, fathered, aged into the soft authority of men who have chosen the available happiness."
-    },
-    {
-      "id": "s13-2",
-      "sceneId": "s13",
-      "text": "Sometimes in his study he unfolded a map of Paris and folded it again."
-    },
-    {
-      "id": "s13-3",
-      "sceneId": "s13",
-      "text": "When May fell ill, the illness was not operatic."
-    },
-    {
-      "id": "s13-4",
-      "sceneId": "s13",
-      "text": "It was clinical appointments, then fewer walks, then a nurse who spoke quiet Italian and quieter English."
-    },
-    {
-      "id": "s13-5",
-      "sceneId": "s13",
-      "text": "May, dying, held Archer's hand and said, \"I want you to know I knew you were happy enough.\""
-    },
-    {
-      "id": "s13-6",
-      "sceneId": "s13",
-      "text": "Happy enough: her final gift and final blade."
-    },
-    {
-      "id": "s13-7",
-      "sceneId": "s13",
-      "text": "He wept."
-    },
-    {
-      "id": "s13-8",
-      "sceneId": "s13",
-      "text": "She forgave him for weeping."
-    },
-    {
-      "id": "s13-9",
-      "sceneId": "s13",
-      "text": "After the funeral Venice offered its usual beautiful indifference."
-    },
-    {
-      "id": "s13-10",
-      "sceneId": "s13",
-      "text": "His children stayed close for a month and then returned to their own plots."
-    },
-    {
-      "id": "s13-11",
-      "sceneId": "s13",
-      "text": "His son Dallas—grown, modern, less lace-bound—proposed the Paris trip."
-    },
-    {
-      "id": "s13-12",
-      "sceneId": "s13",
-      "text": "\"Madame Olenska has always asked after you,\" Dallas said casually."
-    },
-    {
-      "id": "s13-13",
-      "sceneId": "s13",
-      "text": "Archer's heart performed an old leap and an old halt."
-    },
-    {
-      "id": "s13-14",
-      "sceneId": "s13",
-      "text": "In Paris the streets smelled of rain and bread."
-    },
-    {
-      "id": "s13-15",
-      "sceneId": "s13",
-      "text": "They reached her building in the evening."
-    },
-    {
-      "id": "s13-16",
-      "sceneId": "s13",
-      "text": "Lights in her windows."
-    },
-    {
-      "id": "s13-17",
-      "sceneId": "s13",
-      "text": "Dallas pressed the bell."
-    },
-    {
-      "id": "s13-18",
-      "sceneId": "s13",
-      "text": "Archer looked at the stairwell's glow through glass and felt the whole Fenice evening return: Ellen's dress, May's smile, the braid beginning."
-    },
-    {
-      "id": "s13-19",
-      "sceneId": "s13",
-      "text": "\"Go up,\" he told Dallas."
-    },
-    {
-      "id": "s13-20",
-      "sceneId": "s13",
-      "text": "\"Tell her I... tell her I was delayed.\""
-    },
-    {
-      "id": "s13-21",
-      "sceneId": "s13",
-      "text": "He sat on the bench across the street."
-    },
-    {
-      "id": "s13-22",
-      "sceneId": "s13",
-      "text": "Above, a curtain moved."
-    },
-    {
-      "id": "s13-23",
-      "sceneId": "s13",
-      "text": "He did not climb."
+      "text": "Archi loved him for the incomprehension and refused to educate it into the old pain."
     },
     {
       "id": "s14-0",
       "sceneId": "s14",
-      "text": "Dallas returned full of Ellen's kindness, her questions, her age worn as elegance rather than defeat."
+      "text": "D1. After Fenice"
     },
     {
       "id": "s14-1",
       "sceneId": "s14",
-      "text": "Archer walked beside his son through Paris and understood renunciation as a completed architecture: not a mood, a building you live inside until living elsewhere would demolish people who already survived you once."
+      "text": "Archi left Fenice with Maddalena on his arm and Elena’s glance still lodged under his ribs like a second pulse."
     },
     {
       "id": "s14-2",
       "sceneId": "s14",
-      "text": "He returned to Venice."
+      "text": "Venice’s steps shone wet."
     },
     {
       "id": "s14-3",
       "sceneId": "s14",
-      "text": "The lagoon slapped stone."
+      "text": "A tourist couple argued about tickets in a language that made desire sound simple."
     },
     {
       "id": "s14-4",
       "sceneId": "s14",
-      "text": "Fenice lit its posters."
+      "text": "Archi envied simplicity without believing in it."
     },
     {
       "id": "s14-5",
       "sceneId": "s14",
-      "text": "Newland Archer, widower, father, man who had loved Ellen Olenska, kept the stair unclimbed and the original names intact in the only plot that had ever been his."
+      "text": "Maddalena spoke of tomorrow’s calls; he answered correctly; correctness was becoming his native tongue of betrayal."
     },
     {
       "id": "s14-6",
       "sceneId": "s14",
-      "text": "There were smaller Venetian hours that also belonged to the beat-arc, because Wharton's spirit lives in small hours as much as in stations."
+      "text": "D2. Minghetti’s Decree"
     },
     {
       "id": "s14-7",
       "sceneId": "s14",
-      "text": "An afternoon at Florian when Lawrence Lefferts dissected Ellen's dress with a cruelty dressed as taste, and Archer nearly tipped a cup in rage he had to swallow as cough."
+      "text": "Signora Minghetti received him among pillows and power."
     },
     {
       "id": "s14-8",
       "sceneId": "s14",
-      "text": "A morning in the firm when a partner joked that Countess Olenska might \"settle\" if Beaufort's wallet opened wider, and Archer heard his own silence as collaboration."
+      "text": "She wanted Elena contained, not destroyed—destruction was vulgar."
     },
     {
       "id": "s14-9",
       "sceneId": "s14",
-      "text": "A night when May, half asleep, murmured Ellen's name by mistake—or not mistake—and then woke to ask for water as if nothing had surfaced."
+      "text": "Containment was Venetian."
     },
     {
       "id": "s14-10",
       "sceneId": "s14",
-      "text": "Archer's mother, over tea near San Zaccaria, said, \"May is the kind of wife who saves a man from his imagination.\""
+      "text": "Archi agreed to help and hated the agreement’s shape."
     },
     {
       "id": "s14-11",
       "sceneId": "s14",
-      "text": "She meant praise."
+      "text": "Outside, a vaporetto horn wrote a long sentence across water he could not translate into courage."
     },
     {
       "id": "s14-12",
       "sceneId": "s14",
-      "text": "Archer smiled."
+      "text": "D3. Elena at the Window"
     },
     {
       "id": "s14-13",
       "sceneId": "s14",
-      "text": "Imagination, seated across from Ellen with canal light on her cheek, had felt less like danger than like oxygen."
+      "text": "Elena stood at a window overlooking a canal where laundry hung like surrendered flags."
     },
     {
       "id": "s14-14",
       "sceneId": "s14",
-      "text": "He had chosen still air instead."
+      "text": "She told Archi she had learned abroad that honesty could be a form of exile."
     },
     {
       "id": "s14-15",
       "sceneId": "s14",
-      "text": "He did not tell his mother."
+      "text": "He told her Venice called honesty bad manners."
     },
     {
       "id": "s14-16",
       "sceneId": "s14",
-      "text": "Mothers in his world were archivists of correct choices."
+      "text": "They laughed once—dangerous sound—and then the laugh became another almost."
     },
     {
       "id": "s14-17",
       "sceneId": "s14",
-      "text": "Once, before the wedding, he nearly ran away into honesty."
+      "text": "D4. Maddalena’s Letter"
     },
     {
       "id": "s14-18",
       "sceneId": "s14",
-      "text": "He walked to Ellen's building at midnight and stood on the bridge opposite watching her window until a neighbor's shutter scolded him with its slam."
+      "text": "Maddalena wrote him a letter so clear it hurt: trust, plans, a future arranged like furniture."
     },
     {
       "id": "s14-19",
       "sceneId": "s14",
-      "text": "He walked home through alleys where water licked steps and composed speeches he would never give May."
+      "text": "Archi folded it into his jacket and walked until his shoes were ruined."
     },
     {
       "id": "s14-20",
       "sceneId": "s14",
-      "text": "By morning the speech had become a compliment about her dress for the day."
+      "text": "Ruined shoes were easier to explain than a ruined engagement."
     },
     {
       "id": "s14-21",
       "sceneId": "s14",
-      "text": "May glowed."
+      "text": "He bought new shoes and kept the letter."
     },
     {
       "id": "s14-22",
       "sceneId": "s14",
-      "text": "The glow was real."
+      "text": "D5. Opera Again"
     },
     {
       "id": "s14-23",
       "sceneId": "s14",
-      "text": "That made everything worse and better."
+      "text": "A second opera night arranged the tribe in boxes like a jury with better clothes."
+    },
+    {
+      "id": "s14-24",
+      "sceneId": "s14",
+      "text": "Elena wore less jewelry than required and more truth than allowed."
+    },
+    {
+      "id": "s14-25",
+      "sceneId": "s14",
+      "text": "Laffranchi’s eye catalogued the deficit."
+    },
+    {
+      "id": "s14-26",
+      "sceneId": "s14",
+      "text": "Archi’s defense of her became public enough to be useful to gossip and private enough to be useless to Elena."
+    },
+    {
+      "id": "s14-27",
+      "sceneId": "s14",
+      "text": "D6. The Ring"
+    },
+    {
+      "id": "s14-28",
+      "sceneId": "s14",
+      "text": "Maddalena showed him wedding-ring options with luminous practicality."
+    },
+    {
+      "id": "s14-29",
+      "sceneId": "s14",
+      "text": "Archi chose one as if choosing a lock."
+    },
+    {
+      "id": "s14-30",
+      "sceneId": "s14",
+      "text": "The jeweler congratulated them."
+    },
+    {
+      "id": "s14-31",
+      "sceneId": "s14",
+      "text": "Congratulations, he was learning, were a civic technology for preventing thought."
+    },
+    {
+      "id": "s14-32",
+      "sceneId": "s14",
+      "text": "D7. Bevilacqua Dinner"
+    },
+    {
+      "id": "s14-33",
+      "sceneId": "s14",
+      "text": "At Bevilacqua’s table spice and scandal shared a sauce."
+    },
+    {
+      "id": "s14-34",
+      "sceneId": "s14",
+      "text": "Elena was discussed in the third person while present in the first."
+    },
+    {
+      "id": "s14-35",
+      "sceneId": "s14",
+      "text": "Archi interrupted and felt the room punish interruption with sweetness."
+    },
+    {
+      "id": "s14-36",
+      "sceneId": "s14",
+      "text": "Sweetness can be a fine blade."
+    },
+    {
+      "id": "s14-37",
+      "sceneId": "s14",
+      "text": "D8. Night Calli"
+    },
+    {
+      "id": "s14-38",
+      "sceneId": "s14",
+      "text": "He walked night calli rehearsing leaving Maddalena."
+    },
+    {
+      "id": "s14-39",
+      "sceneId": "s14",
+      "text": "Each rehearsal ended at a bridge where he turned back."
+    },
+    {
+      "id": "s14-40",
+      "sceneId": "s14",
+      "text": "Bridges in Venice are honest that way: they offer crossing and also return."
+    },
+    {
+      "id": "s14-41",
+      "sceneId": "s14",
+      "text": "Elena’s windows were dark."
+    },
+    {
+      "id": "s14-42",
+      "sceneId": "s14",
+      "text": "He did not throw stones."
+    },
+    {
+      "id": "s14-43",
+      "sceneId": "s14",
+      "text": "Wharton’s heroes specialize in not throwing stones."
+    },
+    {
+      "id": "s14-44",
+      "sceneId": "s14",
+      "text": "D9. Maddalena’s Trust"
+    },
+    {
+      "id": "s14-45",
+      "sceneId": "s14",
+      "text": "Maddalena said she trusted him completely."
+    },
+    {
+      "id": "s14-46",
+      "sceneId": "s14",
+      "text": "Complete trust is either gift or weapon; Archi received it as both and signed for the package."
+    },
+    {
+      "id": "s14-47",
+      "sceneId": "s14",
+      "text": "Their engagement photograph looked like happiness."
+    },
+    {
+      "id": "s14-48",
+      "sceneId": "s14",
+      "text": "Photographs are not under oath."
+    },
+    {
+      "id": "s14-49",
+      "sceneId": "s14",
+      "text": "D10. Elena’s Request"
+    },
+    {
+      "id": "s14-50",
+      "sceneId": "s14",
+      "text": "Elena asked him to find out what the family intended for her."
+    },
+    {
+      "id": "s14-51",
+      "sceneId": "s14",
+      "text": "The asking made him her advocate and her jailer’s clerk at once."
+    },
+    {
+      "id": "s14-52",
+      "sceneId": "s14",
+      "text": "He brought answers that were cages wrapped as advice."
+    },
+    {
+      "id": "s14-53",
+      "sceneId": "s14",
+      "text": "She thanked him with a look that withdrew."
+    },
+    {
+      "id": "s14-54",
+      "sceneId": "s14",
+      "text": "D11. Sailing Talk"
+    },
+    {
+      "id": "s14-55",
+      "sceneId": "s14",
+      "text": "Someone proposed Elena sail away for rest."
+    },
+    {
+      "id": "s14-56",
+      "sceneId": "s14",
+      "text": "Rest meant removal."
+    },
+    {
+      "id": "s14-57",
+      "sceneId": "s14",
+      "text": "Archi nodded in committee and shook in private."
+    },
+    {
+      "id": "s14-58",
+      "sceneId": "s14",
+      "text": "Maddalena, sewing, asked if he had a headache."
+    },
+    {
+      "id": "s14-59",
+      "sceneId": "s14",
+      "text": "He had a century."
+    },
+    {
+      "id": "s14-60",
+      "sceneId": "s14",
+      "text": "D12. Kiss Not Taken"
+    },
+    {
+      "id": "s14-61",
+      "sceneId": "s14",
+      "text": "In the closed palazzo rain stitched the canal louder."
+    },
+    {
+      "id": "s14-62",
+      "sceneId": "s14",
+      "text": "Their faces came close enough for a kiss that did not happen."
+    },
+    {
+      "id": "s14-63",
+      "sceneId": "s14",
+      "text": "The not-happening became the novel’s hottest event."
+    },
+    {
+      "id": "s14-64",
+      "sceneId": "s14",
+      "text": "They parted with manners intact and futures damaged."
+    },
+    {
+      "id": "s14-65",
+      "sceneId": "s14",
+      "text": "D13. Wedding Morning"
+    },
+    {
+      "id": "s14-66",
+      "sceneId": "s14",
+      "text": "Wedding morning smelled of wax and lilies."
+    },
+    {
+      "id": "s14-67",
+      "sceneId": "s14",
+      "text": "Archi felt like a man attending his own continuity ceremony."
+    },
+    {
+      "id": "s14-68",
+      "sceneId": "s14",
+      "text": "Maddalena was beautiful in the way rooms are beautiful when staged."
+    },
+    {
+      "id": "s14-69",
+      "sceneId": "s14",
+      "text": "He said the vows as if reading a translation of a feeling he used to have."
+    },
+    {
+      "id": "s14-70",
+      "sceneId": "s14",
+      "text": "D14. Gondola Quiet"
+    },
+    {
+      "id": "s14-71",
+      "sceneId": "s14",
+      "text": "After the wedding a gondola carried them through water that did not care."
+    },
+    {
+      "id": "s14-72",
+      "sceneId": "s14",
+      "text": "Maddalena rested her head on his shoulder with earned right."
+    },
+    {
+      "id": "s14-73",
+      "sceneId": "s14",
+      "text": "Archi watched a mask shop pass and thought of faces that could be removed."
+    },
+    {
+      "id": "s14-74",
+      "sceneId": "s14",
+      "text": "His could not."
+    },
+    {
+      "id": "s14-75",
+      "sceneId": "s14",
+      "text": "D15. Elena News"
+    },
+    {
+      "id": "s14-76",
+      "sceneId": "s14",
+      "text": "News of Elena’s planned departure arrived like weather."
+    },
+    {
+      "id": "s14-77",
+      "sceneId": "s14",
+      "text": "Archi went to stop it and found he had no language that was not tribal."
+    },
+    {
+      "id": "s14-78",
+      "sceneId": "s14",
+      "text": "Elena heard the tribe in his voice even when he tried to speak only as a man."
+    },
+    {
+      "id": "s14-79",
+      "sceneId": "s14",
+      "text": "D16. Pregnancy"
+    },
+    {
+      "id": "s14-80",
+      "sceneId": "s14",
+      "text": "Maddalena’s pregnancy announcement arrived with soft timing."
+    },
+    {
+      "id": "s14-81",
+      "sceneId": "s14",
+      "text": "Archi felt the lock click."
+    },
+    {
+      "id": "s14-82",
+      "sceneId": "s14",
+      "text": "He congratulated her and meant it and also meant the end of a door."
+    },
+    {
+      "id": "s14-83",
+      "sceneId": "s14",
+      "text": "Elena, somehow informed, left faster."
+    },
+    {
+      "id": "s14-84",
+      "sceneId": "s14",
+      "text": "D17. Pier On the pier he did not leap."
+    },
+    {
+      "id": "s14-85",
+      "sceneId": "s14",
+      "text": "Fog took the shapes of boats and returned them as duty."
+    },
+    {
+      "id": "s14-86",
+      "sceneId": "s14",
+      "text": "A porter asked if he needed help with bags."
+    },
+    {
+      "id": "s14-87",
+      "sceneId": "s14",
+      "text": "He had no bags—only an unclimbed life."
+    },
+    {
+      "id": "s14-88",
+      "sceneId": "s14",
+      "text": "D18. Excellent Years"
+    },
+    {
+      "id": "s14-89",
+      "sceneId": "s14",
+      "text": "Excellent years followed: children, calendars, Fenice again, Lido summers, Archi’s career of tasteful opinions."
+    },
+    {
+      "id": "s14-90",
+      "sceneId": "s14",
+      "text": "Maddalena managed innocence like a garden."
+    },
+    {
+      "id": "s14-91",
+      "sceneId": "s14",
+      "text": "He managed silence like an heirloom."
+    },
+    {
+      "id": "s14-92",
+      "sceneId": "s14",
+      "text": "D19. Maddalena’s Sentence"
+    },
+    {
+      "id": "s14-93",
+      "sceneId": "s14",
+      "text": "Once Maddalena said, lightly, that she had always known he would stay."
+    },
+    {
+      "id": "s14-94",
+      "sceneId": "s14",
+      "text": "The sentence rearranged his past."
+    },
+    {
+      "id": "s14-95",
+      "sceneId": "s14",
+      "text": "He did not ask how she knew."
+    },
+    {
+      "id": "s14-96",
+      "sceneId": "s14",
+      "text": "Knowing might have been love; it might have been strategy; Wharton leaves the blade in."
+    },
+    {
+      "id": "s14-97",
+      "sceneId": "s14",
+      "text": "D20. Widow Weather"
+    },
+    {
+      "id": "s14-98",
+      "sceneId": "s14",
+      "text": "After Maddalena’s death the apartment held her arrangements like a museum of successful continuity."
+    },
+    {
+      "id": "s14-99",
+      "sceneId": "s14",
+      "text": "Archi walked rooms and found no Elena-shaped empty—only Maddalena-shaped full."
+    },
+    {
+      "id": "s14-100",
+      "sceneId": "s14",
+      "text": "Grief was complicated by gratitude and by a stair still waiting in another country."
+    },
+    {
+      "id": "s14-101",
+      "sceneId": "s14",
+      "text": "D21. Dario"
+    },
+    {
+      "id": "s14-102",
+      "sceneId": "s14",
+      "text": "Dario, frank modern son, planned Paris and Elena’s address like a healthy person planning lunch."
+    },
+    {
+      "id": "s14-103",
+      "sceneId": "s14",
+      "text": "Archi loved him and feared him."
+    },
+    {
+      "id": "s14-104",
+      "sceneId": "s14",
+      "text": "Fear of the young is often fear of the action you refused."
+    },
+    {
+      "id": "s14-105",
+      "sceneId": "s14",
+      "text": "D22. Courtyard"
+    },
+    {
+      "id": "s14-106",
+      "sceneId": "s14",
+      "text": "In Paris the courtyard was quiet."
+    },
+    {
+      "id": "s14-107",
+      "sceneId": "s14",
+      "text": "Elena’s windows held light."
+    },
+    {
+      "id": "s14-108",
+      "sceneId": "s14",
+      "text": "Archi sat in the car while Dario offered the century’s obvious advice."
+    },
+    {
+      "id": "s14-109",
+      "sceneId": "s14",
+      "text": "He chose the nineteenth century’s hidden advice: do not climb."
+    },
+    {
+      "id": "s14-110",
+      "sceneId": "s14",
+      "text": "D23. Driver"
+    },
+    {
+      "id": "s14-111",
+      "sceneId": "s14",
+      "text": "The driver waited with professional boredom."
+    },
+    {
+      "id": "s14-112",
+      "sceneId": "s14",
+      "text": "Professional boredom is civilization’s soundtrack."
+    },
+    {
+      "id": "s14-113",
+      "sceneId": "s14",
+      "text": "Archi watched the door and practiced the climb in muscle and refused it in will."
+    },
+    {
+      "id": "s14-114",
+      "sceneId": "s14",
+      "text": "Will won."
+    },
+    {
+      "id": "s14-115",
+      "sceneId": "s14",
+      "text": "Love lost without spectacle."
+    },
+    {
+      "id": "s14-116",
+      "sceneId": "s14",
+      "text": "D24. Return"
+    },
+    {
+      "id": "s14-117",
+      "sceneId": "s14",
+      "text": "They returned to hotels and trains."
+    },
+    {
+      "id": "s14-118",
+      "sceneId": "s14",
+      "text": "Dario was puzzled, then kind."
+    },
+    {
+      "id": "s14-119",
+      "sceneId": "s14",
+      "text": "Archi was empty in a way that felt like integrity and also like cowardice."
+    },
+    {
+      "id": "s14-120",
+      "sceneId": "s14",
+      "text": "Wharton allows both readings."
+    },
+    {
+      "id": "s14-121",
+      "sceneId": "s14",
+      "text": "That allowance is the sensibility."
+    },
+    {
+      "id": "s14-122",
+      "sceneId": "s14",
+      "text": "D25. Venice After"
+    },
+    {
+      "id": "s14-123",
+      "sceneId": "s14",
+      "text": "Venice after Paris looked the same and meant differently."
+    },
+    {
+      "id": "s14-124",
+      "sceneId": "s14",
+      "text": "Archi walked Fenice’s exterior and did not buy a ticket."
+    },
+    {
+      "id": "s14-125",
+      "sceneId": "s14",
+      "text": "Some boxes are better left dark."
+    },
+    {
+      "id": "s14-126",
+      "sceneId": "s14",
+      "text": "The lagoon kept commuting."
+    },
+    {
+      "id": "s14-127",
+      "sceneId": "s14",
+      "text": "D26. Final"
+    },
+    {
+      "id": "s14-128",
+      "sceneId": "s14",
+      "text": "Duty braided longing until longing learned manners."
+    },
+    {
+      "id": "s14-129",
+      "sceneId": "s14",
+      "text": "The stair not climbed became the marriage."
+    },
+    {
+      "id": "s14-130",
+      "sceneId": "s14",
+      "text": "Cooler 2026 Venice reseated Wharton’s New York without inventing another book."
+    },
+    {
+      "id": "s14-131",
+      "sceneId": "s14",
+      "text": "A24: restraint as heat beside Mirth."
     },
     {
       "id": "s15-0",
       "sceneId": "s15",
-      "text": "After Ellen left, letters did not come."
+      "text": "The committee that decided Elena should sail met in a room with good rugs and bad mercy."
     },
     {
       "id": "s15-1",
       "sceneId": "s15",
-      "text": "The absence was their correspondence."
+      "text": "Archi translated their care into sentences Elena would recognize as cages."
     },
     {
       "id": "s15-2",
       "sceneId": "s15",
-      "text": "Archer kept a book she had lent him—never finished—on his shelf behind legal annuals."
+      "text": "When he delivered the cages, she thanked him for his honesty about other people’s dishonesties."
     },
     {
       "id": "s15-3",
       "sceneId": "s15",
-      "text": "May dusted it without comment."
-    },
-    {
-      "id": "s15-4",
-      "sceneId": "s15",
-      "text": "Perhaps she read the title."
-    },
-    {
-      "id": "s15-5",
-      "sceneId": "s15",
-      "text": "Perhaps she declined to."
-    },
-    {
-      "id": "s15-6",
-      "sceneId": "s15",
-      "text": "Declining was her art."
-    },
-    {
-      "id": "s15-7",
-      "sceneId": "s15",
-      "text": "In widowhood he sometimes attended Fenice alone and let the music arrange his regrets into something almost formal, almost bearable."
-    },
-    {
-      "id": "s15-8",
-      "sceneId": "s15",
-      "text": "During intermission he overheard young people discussing divorce as logistics rather than ruin."
-    },
-    {
-      "id": "s15-9",
-      "sceneId": "s15",
-      "text": "The age had changed its lace."
-    },
-    {
-      "id": "s15-10",
-      "sceneId": "s15",
-      "text": "He felt both relief for them and a strange loyalty to the old cage—because the cage had held May's peace and his children's clear names and Ellen's refusal to be diminished into affair."
-    },
-    {
-      "id": "s15-11",
-      "sceneId": "s15",
-      "text": "Loyalty to cages: the Archer specialty."
-    },
-    {
-      "id": "s15-12",
-      "sceneId": "s15",
-      "text": "On the bench in Paris, in the hour he did not climb, he imagined Ellen's room: books, a cigarette, a view of roofs, a life that had not waited like a museum closed for him."
-    },
-    {
-      "id": "s15-13",
-      "sceneId": "s15",
-      "text": "The imagination hurt cleanly."
-    },
-    {
-      "id": "s15-14",
-      "sceneId": "s15",
-      "text": "Clean hurt was preferable to the muddy hurt of half-choices."
-    },
-    {
-      "id": "s15-15",
-      "sceneId": "s15",
-      "text": "When Dallas spoke of her warmth, Archer felt gratitude that she could still offer warmth to his son—proof she had not been destroyed by Venice's lace or by Newland Archer's longing."
-    },
-    {
-      "id": "s15-16",
-      "sceneId": "s15",
-      "text": "He lived afterward as a man faithful to a completed pattern: duty braided with desire, renunciation as the last honest act, Venice glamorous and exacting, original names kept, no new cast invented for comfort."
-    },
-    {
-      "id": "s15-17",
-      "sceneId": "s15",
-      "text": "The stair remained."
-    },
-    {
-      "id": "s15-18",
-      "sceneId": "s15",
-      "text": "The man remained at the bottom on purpose."
-    },
-    {
-      "id": "s15-19",
-      "sceneId": "s15",
-      "text": "In the months after Ellen's train left Venice, Newland Archer learned the discipline of not speaking her name at breakfast."
-    },
-    {
-      "id": "s15-20",
-      "sceneId": "s15",
-      "text": "May Welland Archer—wife, soon mother, custodian of innocence as policy—filled their mornings with practical futures: nursery colors, godparent lists, a summer plan for the Lido that treated the lagoon as a family amenity."
-    },
-    {
-      "id": "s15-21",
-      "sceneId": "s15",
-      "text": "Archer agreed to everything."
-    },
-    {
-      "id": "s15-22",
-      "sceneId": "s15",
-      "text": "Agreement became his mother tongue."
-    },
-    {
-      "id": "s15-23",
-      "sceneId": "s15",
-      "text": "At the firm he drafted contracts with a precision that felt like displaced fidelity."
+      "text": "He left feeling useful and contaminated."
     },
     {
       "id": "s16-0",
       "sceneId": "s16",
-      "text": "At Fenice he sat beside May in a box that no longer faced Ellen's absence because absence had become the room's climate."
+      "text": "Maddalena sewed near a window that framed a church dome like a moral."
     },
     {
       "id": "s16-1",
       "sceneId": "s16",
-      "text": "Dallas was born on a morning when fog softened San Giorgio into a rumor."
+      "text": "Her needle was steady."
     },
     {
       "id": "s16-2",
       "sceneId": "s16",
-      "text": "Archer held his son and felt a love without loophole."
+      "text": "Archi watched the steadiness and wondered whether innocence was a talent."
     },
     {
       "id": "s16-3",
       "sceneId": "s16",
-      "text": "May watched him with exhausted triumph."
+      "text": "He praised the work."
     },
     {
       "id": "s16-4",
       "sceneId": "s16",
-      "text": "\"Now you are entirely ours,\" she said, smiling, and he understood *ours* as the family, the lace, the unbroken story."
-    },
-    {
-      "id": "s16-5",
-      "sceneId": "s16",
-      "text": "He kissed her damp hair and did not argue."
-    },
-    {
-      "id": "s16-6",
-      "sceneId": "s16",
-      "text": "Ellen Olenska, in Paris, became a private altar he visited only in thought—never with letters, never with trips timed as excuses."
-    },
-    {
-      "id": "s16-7",
-      "sceneId": "s16",
-      "text": "Yet Venice kept offering reminders."
-    },
-    {
-      "id": "s16-8",
-      "sceneId": "s16",
-      "text": "A cousin mentioned having seen Countess Olenska at a Left Bank gallery."
-    },
-    {
-      "id": "s16-9",
-      "sceneId": "s16",
-      "text": "Beaufort, ruined and then partially patched by new money elsewhere, laughed at a dinner about \"women who leave before the bill.\""
-    },
-    {
-      "id": "s16-10",
-      "sceneId": "s16",
-      "text": "Archer's hand tightened on a glass stem until May's glance loosened it."
-    },
-    {
-      "id": "s16-11",
-      "sceneId": "s16",
-      "text": "Later she said, lightly, \"You still mind for Ellen.\""
-    },
-    {
-      "id": "s16-12",
-      "sceneId": "s16",
-      "text": "He said he minded cruelty."
-    },
-    {
-      "id": "s16-13",
-      "sceneId": "s16",
-      "text": "May nodded as if cruelty were the only issue on the table."
-    },
-    {
-      "id": "s16-14",
-      "sceneId": "s16",
-      "text": "Their daughter was born two years after Dallas."
-    },
-    {
-      "id": "s16-15",
-      "sceneId": "s16",
-      "text": "Life thickened into school schedules, carnival costumes, the Biennale as social obligation."
-    },
-    {
-      "id": "s16-16",
-      "sceneId": "s16",
-      "text": "Archer took May to Torcello once—the same wall, the same catless afternoon—and felt the past lean against him."
-    },
-    {
-      "id": "s16-17",
-      "sceneId": "s16",
-      "text": "May said, \"It is peaceful here.\""
-    },
-    {
-      "id": "s16-18",
-      "sceneId": "s16",
-      "text": "He said yes."
-    },
-    {
-      "id": "s16-19",
-      "sceneId": "s16",
-      "text": "Peace was what they had purchased with renunciation."
-    },
-    {
-      "id": "s16-20",
-      "sceneId": "s16",
-      "text": "He did not tell her he had sat on that wall with Ellen and learned the shape of a cage made of love."
-    },
-    {
-      "id": "s16-21",
-      "sceneId": "s16",
-      "text": "When May's illness began, Ellen sent—through a third party—a brief note of sympathy without intimacy's greed."
-    },
-    {
-      "id": "s16-22",
-      "sceneId": "s16",
-      "text": "Archer read it in his study and wept in a way he had not wept at the wedding."
-    },
-    {
-      "id": "s16-23",
-      "sceneId": "s16",
-      "text": "May, finding him, asked if the letter was from Paris."
+      "text": "Praise was cheaper than confession and cleared the same social customs."
     },
     {
       "id": "s17-0",
       "sceneId": "s17",
-      "text": "He said yes."
+      "text": "Carnival noise arrived distant and discarded by their set as vulgar."
     },
     {
       "id": "s17-1",
       "sceneId": "s17",
-      "text": "She said, \"Good."
+      "text": "Archi briefly wanted vulgarity—wanted a mask that permitted climbing stairs."
     },
     {
       "id": "s17-2",
       "sceneId": "s17",
-      "text": "She should be kind."
+      "text": "He bought no mask."
     },
     {
       "id": "s17-3",
       "sceneId": "s17",
-      "text": "She always was, in her way.\""
-    },
-    {
-      "id": "s17-4",
-      "sceneId": "s17",
-      "text": "Then May slept."
-    },
-    {
-      "id": "s17-5",
-      "sceneId": "s17",
-      "text": "In that sentence Archer heard May's full intelligence: she had always known the braid, and had chosen to win without naming the contest."
-    },
-    {
-      "id": "s17-6",
-      "sceneId": "s17",
-      "text": "After May's death, and after the Paris stair he did not climb, Archer returned to Venice as a man who had completed Wharton's arc in modern light: engagement at Fenice; Ellen's return; duty versus desire; marriage; May's soft checkmate; Ellen's exile; years; renunciation renewed."
-    },
-    {
-      "id": "s17-7",
-      "sceneId": "s17",
-      "text": "He walked the Riva at dusk among tourists and locals and felt neither noble nor ruined—only finished in the way a correct sentence is finished."
-    },
-    {
-      "id": "s17-8",
-      "sceneId": "s17",
-      "text": "Newland Archer, Ellen Olenska, May Welland: the names held."
-    },
-    {
-      "id": "s17-9",
-      "sceneId": "s17",
-      "text": "The city glamoured on."
-    },
-    {
-      "id": "s17-10",
-      "sceneId": "s17",
-      "text": "The stair, somewhere in Paris, waited for no one."
-    },
-    {
-      "id": "s17-11",
-      "sceneId": "s17",
-      "text": "If there was a final Venetian coda, it was this: Archer, older, attending a Fenice gala alone, overheard two young women discuss open marriages as if discussing ferry schedules."
-    },
-    {
-      "id": "s17-12",
-      "sceneId": "s17",
-      "text": "He smiled despite himself."
-    },
-    {
-      "id": "s17-13",
-      "sceneId": "s17",
-      "text": "The lace had loosened in the world; his own lace had not."
-    },
-    {
-      "id": "s17-14",
-      "sceneId": "s17",
-      "text": "He did not wish to be young in their dialect."
-    },
-    {
-      "id": "s17-15",
-      "sceneId": "s17",
-      "text": "He wished—quietly, without drama—that Ellen had known, on that rain platform, that his failure to follow was not indifference but the only form of honor his training allowed."
-    },
-    {
-      "id": "s17-16",
-      "sceneId": "s17",
-      "text": "Whether she had known was a question the unclimbed stair refused to answer."
-    },
-    {
-      "id": "s17-17",
-      "sceneId": "s17",
-      "text": "He bought a small bunch of camellias the next day and placed them on May's grave on the mainland cemetery island, where water made all farewells look temporary."
-    },
-    {
-      "id": "s17-18",
-      "sceneId": "s17",
-      "text": "\"You won,\" he told the stone without bitterness."
-    },
-    {
-      "id": "s17-19",
-      "sceneId": "s17",
-      "text": "\"You also loved me."
-    },
-    {
-      "id": "s17-20",
-      "sceneId": "s17",
-      "text": "Both can be true.\""
-    },
-    {
-      "id": "s17-21",
-      "sceneId": "s17",
-      "text": "On the vaporetto back, Venice arranged its facades for sunset."
-    },
-    {
-      "id": "s17-22",
-      "sceneId": "s17",
-      "text": "Newland Archer watched the light hit windows Ellen had once stood behind and felt desire pass through him like a weather front that no longer broke the house."
-    },
-    {
-      "id": "s17-23",
-      "sceneId": "s17",
-      "text": "Duty had not killed desire; it had taught desire to sit without overturning the table."
+      "text": "He attended a discreet dinner instead and spoke well of opera."
     },
     {
       "id": "s18-0",
       "sceneId": "s18",
-      "text": "That lesson—glamorous, costly, faithful to the old plot—was the book he finished without writing Ellen's address again."
+      "text": "Years later a young son asked why Aunt Elena lived away."
     },
     {
       "id": "s18-1",
       "sceneId": "s18",
-      "text": "Dallas, visiting from Milan with a partner who used first names for everyone, asked once whether his father had ever loved someone before May."
+      "text": "Maddalena answered with geography."
     },
     {
       "id": "s18-2",
       "sceneId": "s18",
-      "text": "Archer looked at the lagoon and said, \"I loved May.\""
+      "text": "Archi answered with silence."
     },
     {
       "id": "s18-3",
       "sceneId": "s18",
-      "text": "Dallas waited."
+      "text": "Geography and silence raised the child into Dario’s frankness, which would one day offer a stair."
     },
     {
-      "id": "s18-4",
-      "sceneId": "s18",
-      "text": "Archer added, \"And I loved someone I did not marry."
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "A lawyer explained Elena’s settlement options with soft exclusion built into every clause."
     },
     {
-      "id": "s18-5",
-      "sceneId": "s18",
-      "text": "Loving both was the education.\""
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "Archi initialed where continuity required."
     },
     {
-      "id": "s18-6",
-      "sceneId": "s18",
-      "text": "Dallas, child of a looser age, squeezed his shoulder and did not dig."
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "Elena’s signature later looked like a person agreeing to become a rumor."
     },
     {
-      "id": "s18-7",
-      "sceneId": "s18",
-      "text": "Digging was not required."
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "On an anniversary Maddalena gave him cufflinks and a look that said she had won fairly."
     },
     {
-      "id": "s18-8",
-      "sceneId": "s18",
-      "text": "The continuous novel had already hit its marks: Fenice, Ellen, May, duty, desire, renunciation, the stair."
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "He wore the cufflinks to Fenice and felt metal against his pulse like a quiet verdict."
     },
     {
-      "id": "s18-9",
-      "sceneId": "s18",
-      "text": "Venice kept the names."
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "He burned another unsent letter—this one to Elena in Paris—and washed ash down a sink that had carried years of similar hygiene."
     },
     {
-      "id": "s18-10",
-      "sceneId": "s18",
-      "text": "Archer kept the silence that had always been his most expensive ticket."
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "Clean hands, dirty ledger."
     },
     {
-      "id": "s18-11",
-      "sceneId": "s18",
-      "text": "So the age of innocence, reseated in 2026 Venice among vaporetti and donor light, closed as Wharton required: not with possession of Ellen Olenska, but with Newland Archer's refusal to smash May Welland's world for a hunger that had already been answered by looking."
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "After Maddalena’s death he practiced archaeology in drawers: notes, lists, a dried flower from the Lido."
     },
     {
-      "id": "s18-12",
-      "sceneId": "s18",
-      "text": "Looking had been enough to ruin him politely."
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "No evidence of cruelty."
     },
     {
-      "id": "s18-13",
-      "sceneId": "s18",
-      "text": "Not climbing had been enough to save what could still be called a life."
+      "id": "s22-2",
+      "sceneId": "s22",
+      "text": "Evidence of successful containment."
     },
     {
-      "id": "s18-14",
-      "sceneId": "s18",
-      "text": "Ellen. May."
+      "id": "s22-3",
+      "sceneId": "s22",
+      "text": "He wept for the success."
     },
     {
-      "id": "s18-15",
-      "sceneId": "s18",
-      "text": "Newland."
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "In a Paris hotel before the courtyard visit he slept badly and dreamed of vaporetti that never docked."
     },
     {
-      "id": "s18-16",
-      "sceneId": "s18",
-      "text": "The lagoon kept their reflections without mixing them."
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "Waking, he chose the car over the stair again in advance, so the refusal would not have to be invented in the moment."
     },
     {
-      "id": "s18-17",
-      "sceneId": "s18",
-      "text": "That was fidelity enough for one continuous book."
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "The continuous remake holds Wharton’s sensibility in cooler Venice: invisible police, almosts, soft locks, unclimbed stair."
     },
     {
-      "id": "s18-18",
-      "sceneId": "s18",
-      "text": "The Fenice curtain fell."
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "Not a different book."
     },
     {
-      "id": "s18-19",
-      "sceneId": "s18",
-      "text": "The plot held."
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Archi’s cufflinks clicked like soft handcuffs at Fenice’s second act."
     },
     {
-      "id": "s18-20",
-      "sceneId": "s18",
-      "text": "He walked home alone through beautiful stone."
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "Thread 1 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-2",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-3",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-4",
+      "sceneId": "s25",
+      "text": "Elena’s rented hush smelled of stone damp and refused invitations."
+    },
+    {
+      "id": "s25-5",
+      "sceneId": "s25",
+      "text": "Thread 2 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-6",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-7",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-8",
+      "sceneId": "s25",
+      "text": "Maddalena’s pregnancy announcement rearranged furniture in Archi’s chest."
+    },
+    {
+      "id": "s25-9",
+      "sceneId": "s25",
+      "text": "Thread 3 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-10",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-11",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-12",
+      "sceneId": "s25",
+      "text": "Dario’s frankness was a foreign language Archi loved and would not speak."
+    },
+    {
+      "id": "s25-13",
+      "sceneId": "s25",
+      "text": "Thread 4 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-14",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-15",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-16",
+      "sceneId": "s25",
+      "text": "The Paris courtyard door stayed a rectangle of possible air."
+    },
+    {
+      "id": "s25-17",
+      "sceneId": "s25",
+      "text": "Thread 5 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-18",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-19",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-20",
+      "sceneId": "s25",
+      "text": "Laffranchi’s sneer aged into a landmark; Bevilacqua’s money weather shifted."
+    },
+    {
+      "id": "s25-21",
+      "sceneId": "s25",
+      "text": "Thread 6 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-22",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-23",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-24",
+      "sceneId": "s25",
+      "text": "Gianna’s gossip arrived gift-wrapped as sisterly care."
+    },
+    {
+      "id": "s25-25",
+      "sceneId": "s25",
+      "text": "Thread 7 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-26",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-27",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-28",
+      "sceneId": "s25",
+      "text": "A vaporetto’s wake wrote temporary grammar on black water."
+    },
+    {
+      "id": "s25-29",
+      "sceneId": "s25",
+      "text": "Thread 8 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-30",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-31",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-32",
+      "sceneId": "s25",
+      "text": "Archi’s career of tasteful opinions became a museum job for his own refusal."
+    },
+    {
+      "id": "s25-33",
+      "sceneId": "s25",
+      "text": "Thread 9 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-34",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-35",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-36",
+      "sceneId": "s25",
+      "text": "The unclimbed stair remained cooler than any consummation Venice could sell tourists."
+    },
+    {
+      "id": "s25-37",
+      "sceneId": "s25",
+      "text": "Thread 10 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-38",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-39",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-40",
+      "sceneId": "s25",
+      "text": "Archi’s cufflinks clicked like soft handcuffs at Fenice’s second act."
+    },
+    {
+      "id": "s25-41",
+      "sceneId": "s25",
+      "text": "Thread 11 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-42",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-43",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-44",
+      "sceneId": "s25",
+      "text": "Elena’s rented hush smelled of stone damp and refused invitations."
+    },
+    {
+      "id": "s25-45",
+      "sceneId": "s25",
+      "text": "Thread 12 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-46",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-47",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-48",
+      "sceneId": "s25",
+      "text": "Maddalena’s pregnancy announcement rearranged furniture in Archi’s chest."
+    },
+    {
+      "id": "s25-49",
+      "sceneId": "s25",
+      "text": "Thread 13 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-50",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-51",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-52",
+      "sceneId": "s25",
+      "text": "Dario’s frankness was a foreign language Archi loved and would not speak."
+    },
+    {
+      "id": "s25-53",
+      "sceneId": "s25",
+      "text": "Thread 14 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-54",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-55",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-56",
+      "sceneId": "s25",
+      "text": "The Paris courtyard door stayed a rectangle of possible air."
+    },
+    {
+      "id": "s25-57",
+      "sceneId": "s25",
+      "text": "Thread 15 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-58",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-59",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-60",
+      "sceneId": "s25",
+      "text": "Laffranchi’s sneer aged into a landmark; Bevilacqua’s money weather shifted."
+    },
+    {
+      "id": "s25-61",
+      "sceneId": "s25",
+      "text": "Thread 16 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-62",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-63",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-64",
+      "sceneId": "s25",
+      "text": "Gianna’s gossip arrived gift-wrapped as sisterly care."
+    },
+    {
+      "id": "s25-65",
+      "sceneId": "s25",
+      "text": "Thread 17 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-66",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-67",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-68",
+      "sceneId": "s25",
+      "text": "A vaporetto’s wake wrote temporary grammar on black water."
+    },
+    {
+      "id": "s25-69",
+      "sceneId": "s25",
+      "text": "Thread 18 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-70",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-71",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-72",
+      "sceneId": "s25",
+      "text": "Archi’s career of tasteful opinions became a museum job for his own refusal."
+    },
+    {
+      "id": "s25-73",
+      "sceneId": "s25",
+      "text": "Thread 19 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-74",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-75",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-76",
+      "sceneId": "s25",
+      "text": "The unclimbed stair remained cooler than any consummation Venice could sell tourists."
+    },
+    {
+      "id": "s25-77",
+      "sceneId": "s25",
+      "text": "Thread 20 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-78",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-79",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-80",
+      "sceneId": "s25",
+      "text": "Archi’s cufflinks clicked like soft handcuffs at Fenice’s second act."
+    },
+    {
+      "id": "s25-81",
+      "sceneId": "s25",
+      "text": "Thread 21 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-82",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-83",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-84",
+      "sceneId": "s25",
+      "text": "Elena’s rented hush smelled of stone damp and refused invitations."
+    },
+    {
+      "id": "s25-85",
+      "sceneId": "s25",
+      "text": "Thread 22 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-86",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-87",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-88",
+      "sceneId": "s25",
+      "text": "Maddalena’s pregnancy announcement rearranged furniture in Archi’s chest."
+    },
+    {
+      "id": "s25-89",
+      "sceneId": "s25",
+      "text": "Thread 23 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-90",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-91",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-92",
+      "sceneId": "s25",
+      "text": "Dario’s frankness was a foreign language Archi loved and would not speak."
+    },
+    {
+      "id": "s25-93",
+      "sceneId": "s25",
+      "text": "Thread 24 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-94",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-95",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-96",
+      "sceneId": "s25",
+      "text": "The Paris courtyard door stayed a rectangle of possible air."
+    },
+    {
+      "id": "s25-97",
+      "sceneId": "s25",
+      "text": "Thread 25 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-98",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-99",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-100",
+      "sceneId": "s25",
+      "text": "Laffranchi’s sneer aged into a landmark; Bevilacqua’s money weather shifted."
+    },
+    {
+      "id": "s25-101",
+      "sceneId": "s25",
+      "text": "Thread 26 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-102",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-103",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-104",
+      "sceneId": "s25",
+      "text": "Gianna’s gossip arrived gift-wrapped as sisterly care."
+    },
+    {
+      "id": "s25-105",
+      "sceneId": "s25",
+      "text": "Thread 27 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-106",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-107",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-108",
+      "sceneId": "s25",
+      "text": "A vaporetto’s wake wrote temporary grammar on black water."
+    },
+    {
+      "id": "s25-109",
+      "sceneId": "s25",
+      "text": "Thread 28 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-110",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-111",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-112",
+      "sceneId": "s25",
+      "text": "Archi’s career of tasteful opinions became a museum job for his own refusal."
+    },
+    {
+      "id": "s25-113",
+      "sceneId": "s25",
+      "text": "Thread 29 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-114",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-115",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-116",
+      "sceneId": "s25",
+      "text": "The unclimbed stair remained cooler than any consummation Venice could sell tourists."
+    },
+    {
+      "id": "s25-117",
+      "sceneId": "s25",
+      "text": "Thread 30 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-118",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-119",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-120",
+      "sceneId": "s25",
+      "text": "Archi’s cufflinks clicked like soft handcuffs at Fenice’s second act."
+    },
+    {
+      "id": "s25-121",
+      "sceneId": "s25",
+      "text": "Thread 31 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-122",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-123",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-124",
+      "sceneId": "s25",
+      "text": "Elena’s rented hush smelled of stone damp and refused invitations."
+    },
+    {
+      "id": "s25-125",
+      "sceneId": "s25",
+      "text": "Thread 32 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-126",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-127",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-128",
+      "sceneId": "s25",
+      "text": "Maddalena’s pregnancy announcement rearranged furniture in Archi’s chest."
+    },
+    {
+      "id": "s25-129",
+      "sceneId": "s25",
+      "text": "Thread 33 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-130",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-131",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-132",
+      "sceneId": "s25",
+      "text": "Dario’s frankness was a foreign language Archi loved and would not speak."
+    },
+    {
+      "id": "s25-133",
+      "sceneId": "s25",
+      "text": "Thread 34 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-134",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-135",
+      "sceneId": "s25",
+      "text": "Not a different book."
+    },
+    {
+      "id": "s25-136",
+      "sceneId": "s25",
+      "text": "The Paris courtyard door stayed a rectangle of possible air."
+    },
+    {
+      "id": "s25-137",
+      "sceneId": "s25",
+      "text": "Thread 35 held Wharton’s invisible police in lagoon stone: engagement, Elena, tribe, almost, wedding, soft lock, departure, years, Paris stair."
+    },
+    {
+      "id": "s25-138",
+      "sceneId": "s25",
+      "text": "Innocence as performance/possible strategy; renunciation without melodrama; irony beside Mirth."
+    },
+    {
+      "id": "s25-139",
+      "sceneId": "s25",
+      "text": "Not a different book."
     }
   ]
 }
