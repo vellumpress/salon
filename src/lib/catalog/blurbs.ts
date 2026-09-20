@@ -162,26 +162,6 @@ const BLURBS: Record<string, string> = {
     "A white villa above the Tagus, and a kitchen lesson that does not stay in the kitchen.",
   "madame-bovary-tokyo":
     "A New Town wife tries to live glamorous Tokyo as if desire were a credit line.",
-  "dorian-gray-shanghai":
-    "A Bund portrait that ages while Liang Duo does not.",
-  "anna-karenina-milan":
-    "Via della Spiga shutters, and a Milan station that will not forgive.",
-  "jane-eyre-singapore":
-    "Charity as poor ventilation in Katong, then a house that answers back.",
-  "pride-prejudice-buenos-aires":
-    "Recoleta manners as municipal law along Alvear.",
-  "dracula-istanbul":
-    "A Bosphorus yalı that needs papers more than guests.",
-  "crime-punishment-cape-town":
-    "A Long Street garret, and Table Mountain as mute jury.",
-  "age-of-innocence-venice":
-    "A Fenice box where Venetian lace learns to cut.",
-  "tess-lisbon":
-    "A spent noble name Lisbon salons perfume into prey.",
-  "scarlet-letter-kyoto":
-    "A Kyoto scaffold, and a letter that will not come off.",
-  "wuthering-heights-rio":
-    "A hillside estate above Rio: glamour facing water, wind facing rock.",
   botchan:
     "A hot-headed Tokyo teacher is posted to the provinces and refuses to learn the local game.",
   "post-office":
