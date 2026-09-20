@@ -8,7 +8,7 @@ import {
   NEXT_FEATURED_TRACK_IDS,
 } from "./curatorial.ts";
 import { ADAPTED_WORKS, CLASSIC_LOCAL_WORKS, LOCAL_WORKS } from "./full-pdf.ts";
-import { RITUAL_LANES } from "./rituals.ts";
+import { RITUAL_LANES, type RitualLane } from "./rituals.ts";
 import { SHELF, shelfWork } from "./shelf.ts";
 import { isBoundLocal } from "./en-rights.ts";
 import { placeFor } from "./places.ts";
@@ -141,8 +141,8 @@ test("Adapted remakes are local sits with source credit, not Featured", () => {
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
     const lane = LANE[id];
     assert.ok(lane, `${id} lane`);
-    const home = lane === "unwind" ? unwind : beforeSleep;
-    const other = lane === "unwind" ? beforeSleep : unwind;
+    const home: RitualLane = lane === "unwind" ? unwind : beforeSleep;
+    const other: RitualLane = lane === "unwind" ? beforeSleep : unwind;
     assert.ok(home.workIds.includes(id), `${id} ${lane}`);
     assert.equal(other.workIds.includes(id), false, `${id} not other lane`);
     assert.deepEqual(placeFor(work), want.place, id);
