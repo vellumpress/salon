@@ -93,6 +93,12 @@ test("Noli Me Tangere uses the unwind dinner-announcement sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host note/i);
 });
 
+test("Botchan uses the first-session scar sit", () => {
+  const copy = readerIntro(shelfAsWork("botchan"));
+  assert.match(copy, /scar that will be there until his death/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Kiyo/i);
+});
+
 test("Vera uses the before-sleep cliff-gate sit", () => {
   const copy = readerIntro(shelfAsWork("vera"));
   assert.match(copy, /Cornwall/);

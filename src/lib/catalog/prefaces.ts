@@ -72,6 +72,7 @@ export const PREFACES: Record<string, string> = {
 };
 
 const LANE_SIT: Record<string, string> = {
+  "for-you": "A first sitting. Start here.",
   "before-sleep": "A night sitting — let the dark arrive first.",
   "waking-up": "A morning sitting — start before the day has an opinion.",
   unwind: "A quiet sitting — no hurry toward the first line.",
