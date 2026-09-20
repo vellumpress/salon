@@ -1,0 +1,66 @@
+{
+  "id": "the-story-of-gosta-berling",
+  "title": "The Story of Gösta Berling",
+  "author": "Selma Lagerlöf (tr. Pauline Bancroft Flach)",
+  "year": "1898",
+  "note": "Before-sleep ritual sit — the pulpit.\n\nAt last the priest is in the pulpit — marble-handsome — and the parish remembers him reeling out of the inn.\n\nThe Story of Gösta Berling (Lagerlöf; tr. Pauline Bancroft Flach; SE 1891; EN 1898; PG 56158). Skip the translator preface. Sit through the inn memory. Stop before the rest of the novel.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "The pulpit",
+      "place": "one sitting",
+      "reentry": "At last the minister stood in the pulpit.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "At last the minister stood in the pulpit."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The heads of the congregation were lifted."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Well, there he finally was."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "There would be no default this Sunday, as on the last and on many other Sundays before."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "The minister was young, tall, slender, and strikingly handsome."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "With a helmet on his head, and girt with sword and shirt of mail, he could have been cut in marble and taken for an ideal of Grecian beauty."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "He had a poet’s deep eyes, and a general’s firm, rounded chin; everything about him was beautiful, noble, full of feeling, glowing with genius and spiritual life."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "The people in the church felt themselves strangely subdued to see him so."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "They were more used to see him come reeling out of the public house with his good friends, Beerencreutz, the Colonel with the thick, white moustaches, and the stalwart Captain Christian Bergh."
+    }
+  ]
+}

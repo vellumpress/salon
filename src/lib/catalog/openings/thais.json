@@ -1,0 +1,51 @@
+{
+  "id": "thais",
+  "title": "Thaïs",
+  "author": "Anatole France (tr. Robert B. Douglas)",
+  "year": "1909",
+  "note": "Before-sleep ritual sit — Nile huts.\n\nNile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond.\n\nDesire, conversion, and desert zeal intensify after this atlas-like open. Warn the room if you Host into Paphnutius / Thaïs.\n\nThaïs (Anatole France; tr. Robert B. Douglas; FR 1890; EN 1909; PG 2078). Sit through the caves and tombs. Stop before the rest of the novel.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Nile huts",
+      "place": "one sitting",
+      "reentry": "In those days there were many hermits living in the desert.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "In those days there were many hermits living in the desert."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "On both banks of the Nile numerous huts, built by these solitary dwellers, of branches held together by clay, were scattered at a little distance from each other, so that the inhabitants could live alone, and yet help one another in case of need."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Churches, each surmounted by a cross, stood here and there amongst the huts, and the monks flocked to them at each festival to celebrate the services or to partake of the Communion."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "There were also, here and there on the banks of the river, monasteries, where the cenobites lived in separate cells, and only met together that they might the better enjoy their solitude."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Both hermits and cenobites led abstemious lives, taking no food till after sunset, and eating nothing but bread with a little salt and hyssop."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Some retired into the desert, and led a still more strange life in some cave or tomb."
+    }
+  ]
+}

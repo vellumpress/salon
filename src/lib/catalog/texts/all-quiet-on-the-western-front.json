@@ -1,0 +1,86 @@
+{
+  "id": "all-quiet-on-the-western-front",
+  "title": "All Quiet on the Western Front",
+  "author": "Erich Maria Remarque (tr. A. W. Wheen)",
+  "year": "1929",
+  "note": "Five miles behind the front — bellies full, double sausage, and a cook who won’t stop ladling.\n\nAll Quiet on the Western Front (Remarque; tr. A. W. Wheen; 1929; PG 75011). This local bind is the before-sleep cut — rest and double rations — not the whole novel.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Double rations",
+      "place": "one sitting",
+      "reentry": "We are at rest five miles behind the front.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "We are at rest five miles behind the front."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Yesterday we were relieved, and now our bellies are full of beef and haricot beans."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "We are satisfied and at peace."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Each man has another mess-tin full for the evening; and, what is more, there is a double ration of sausage and bread."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "That puts a man in fine trim."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "We have not had such luck as this for a long time."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "The cook with his carroty head is begging us to eat; he beckons with his ladle to every one that passes, and spoons him out a great dollop."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "He does not see how he can empty his stew-pot in time for coffee."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Tjaden and Müller have produced two wash-basins and had them filled up to the brim as a reserve."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "In Tjaden this is voracity, in Müller it is foresight."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Where Tjaden puts it all is a mystery, for he is and always will be as thin as a rake."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "What's more important still is the issue of a double ration of smokes."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "Ten cigars, twenty cigarettes, and two quids of chew per man; now that is decent."
+    }
+  ]
+}

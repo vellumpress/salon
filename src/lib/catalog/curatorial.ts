@@ -29,6 +29,8 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Chambermaid are ritual Next sits only — not the locked recommend list.
  * The Painted Veil, The Good Soldier, Growth of the Soil, and Nada the Lily
  * are ritual Next sits only — not the locked recommend list, not For you.
+ * All Quiet on the Western Front, We, The Story of Gösta Berling, and Thaïs
+ * are ritual Next sits only — not the locked recommend list, not For you.
  * The Poison Tree is Later (Bengal / unwind) — not Next, not locked recommend.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
