@@ -69,6 +69,9 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "all-quiet-on-the-western-front": { label: "Western Front", region: "fr" },
   "the-story-of-gosta-berling": { label: "Sweden — Värmland", region: "se" },
   thais: { label: "Egypt — Thebaid / Nile", region: "eg" },
+  demian: { label: "Germany — little-town Latin school", region: "de" },
+  "death-comes-for-the-archbishop": { label: "New Mexico — arid red hills", region: "us" },
+  "the-getting-of-wisdom": { label: "Australia — Melbourne orbit", region: "au" },
 
   // Named examples
   botchan: { label: "Tokyo", region: "jp" },
@@ -113,7 +116,6 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "flame-and-shadow": { label: "United States", region: "us" },
   "helen-of-troy-and-other-poems": { label: "United States", region: "us" },
   "spoon-river-anthology": { label: "Illinois", region: "us" },
-  "death-comes-for-the-archbishop": { label: "New Mexico", region: "us" },
   "copper-sun": { label: "United States", region: "us" },
   "the-black-christ-and-other-poems": { label: "United States", region: "us" },
 

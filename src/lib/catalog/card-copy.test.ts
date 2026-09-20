@@ -78,6 +78,9 @@ test("known origin overrides", () => {
     we: "Russia",
     "the-story-of-gosta-berling": "Sweden",
     thais: "France",
+    demian: "Germany",
+    "death-comes-for-the-archbishop": "United States",
+    "the-getting-of-wisdom": "Australia",
     "on-a-chinese-screen": "United Kingdom",
     futility: "United Kingdom",
     "poison-tree": "India",
@@ -244,6 +247,18 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     thais: {
       scene: /Nile huts/i,
       opening: /^In those days there were many hermits/,
+    },
+    demian: {
+      scene: /Two worlds/i,
+      opening: /^I will begin my story with an event of the time when I was ten or eleven/,
+    },
+    "death-comes-for-the-archbishop": {
+      scene: /Red hills/i,
+      opening: /^One afternoon in the autumn of 1851 a solitary horseman/,
+    },
+    "the-getting-of-wisdom": {
+      scene: /Dirty sheet/i,
+      opening: /^The four children were lying on the grass/,
     },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
@@ -421,6 +436,23 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     }
     if (id === "thais") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /cave or tomb\.?$/);
+    }
+    if (id === "demian") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /Christmas was kept\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /Abraxas|Max Demian/i,
+      );
+    }
+    if (id === "death-comes-for-the-archbishop") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /than if he had stood still\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /Sabine|Cardinals|Rome/i,
+      );
+    }
+    if (id === "the-getting-of-wisdom") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /said Pin, who was practical\.?$/);
     }
   }
 });
@@ -1353,6 +1385,96 @@ test("The Story of Gösta Berling opens on the pulpit and skips the translator p
   assert.match(packed.breaths.at(-1)?.text ?? "", /Captain Christian Bergh\.?$/);
   assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
   assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("Demian opens on two worlds and binds only that sit", () => {
+  const work = SHELF.find((item) => item.id === "demian");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 74222);
+  assert.equal(work!.title, "Demian");
+  assert.equal(work!.author, "Hermann Hesse (tr. N. H. Priday)");
+  assert.equal(work!.year, 1923);
+  assert.match(work!.opening ?? "", /^I will begin my story with an event of the time when I was ten or eleven/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/demian.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/demian.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.note, /two worlds/i);
+  assert.match(packed.note, /Childhood two-worlds map/);
+  assert.match(packed.note, /Priday 1923 EN only/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(packed.scenes[0]?.title ?? "", /Two worlds/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^I will begin my story with an event of the time when I was ten or eleven/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /Christmas was kept\.?$/);
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("Death Comes for the Archbishop opens on red hills, not the Rome prologue", () => {
+  const work = SHELF.find((item) => item.id === "death-comes-for-the-archbishop");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 69730);
+  assert.equal(work!.title, "Death Comes for the Archbishop");
+  assert.equal(work!.author, "Willa Cather");
+  assert.equal(work!.year, 1927);
+  assert.match(work!.opening ?? "", /^One afternoon in the autumn of 1851 a solitary horseman/);
+  assert.doesNotMatch(work!.opening ?? "", /Sabine|Rome/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/death-comes-for-the-archbishop.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/death-comes-for-the-archbishop.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  assert.match(packed.note, /red hills/i);
+  assert.match(packed.note, /Open on Book One New Mexico only/);
+  assert.match(packed.note, /never the Sabine-hills Rome prologue/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(full.note, /Open on Book One New Mexico only/);
+  assert.match(packed.scenes[0]?.title ?? "", /Red hills/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^One afternoon in the autumn of 1851 a solitary horseman/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /than if he had stood still\.?$/);
+  assert.match(full.breaths[0]?.text ?? "", /^One afternoon in the autumn of 1851 a solitary horseman/);
+  assert.doesNotMatch(full.scenes[0]?.title ?? "", /ROME/i);
+  assert.doesNotMatch(
+    full.breaths.slice(0, 12).map((breath) => breath.text).join(" "),
+    /Sabine hills|three Cardinals/i,
+  );
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
+});
+
+test("The Getting of Wisdom opens on the dirty-sheet sit and keeps the novel", () => {
+  const work = SHELF.find((item) => item.id === "the-getting-of-wisdom");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 3728);
+  assert.equal(work!.title, "The Getting of Wisdom");
+  assert.equal(work!.author, "Henry Handel Richardson");
+  assert.equal(work!.year, 1910);
+  assert.match(work!.opening ?? "", /^The four children were lying on the grass/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/the-getting-of-wisdom.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/the-getting-of-wisdom.json", import.meta.url), "utf8"),
+  ) as { note: string; breaths: { text: string }[] };
+  assert.match(packed.note, /dirty sheet/i);
+  assert.match(packed.note, /School-status novel, not a children's book/);
+  assert.match(packed.note, /Melbourne Ladies' College/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(full.note, /School-status novel, not a children's book/);
+  assert.match(packed.scenes[0]?.title ?? "", /Dirty sheet/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^The four children were lying on the grass/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /said Pin, who was practical\.?$/);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("Thaïs opens on Nile hermit huts and binds only that sit", () => {

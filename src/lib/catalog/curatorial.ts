@@ -31,6 +31,9 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * are ritual Next sits only — not the locked recommend list, not For you.
  * All Quiet on the Western Front, We, The Story of Gösta Berling, and Thaïs
  * are ritual Next sits only — not the locked recommend list, not For you.
+ * Demian and Death Comes for the Archbishop are ritual Next sits only —
+ * not the locked recommend list, not For you. The Getting of Wisdom is a
+ * Rituals waking sit only — not locked recommend, not For you.
  * The Poison Tree is Later (Bengal / unwind) — not Next, not locked recommend.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own

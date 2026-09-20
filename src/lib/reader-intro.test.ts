@@ -248,6 +248,31 @@ test("The Story of Gösta Berling uses the before-sleep pulpit sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
+test("Demian uses the before-sleep two-worlds sit and names the Host frame", () => {
+  const copy = readerIntro(shelfAsWork("demian"));
+  assert.match(copy, /two worlds/i);
+  assert.match(copy, /Latin school/);
+  assert.match(copy, /Childhood two-worlds map/);
+  assert.match(copy, /Priday 1923 EN only/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
+test("Death Comes for the Archbishop uses the waking red-hills sit and names the Host frame", () => {
+  const copy = readerIntro(shelfAsWork("death-comes-for-the-archbishop"));
+  assert.match(copy, /solitary horseman/);
+  assert.match(copy, /New Mexico/);
+  assert.match(copy, /never the Sabine-hills Rome prologue/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
+test("The Getting of Wisdom uses the waking dirty-sheet sit and names the Host frame", () => {
+  const copy = readerIntro(shelfAsWork("the-getting-of-wisdom"));
+  assert.match(copy, /dirty/i);
+  assert.match(copy, /School-status novel/);
+  assert.match(copy, /Melbourne Ladies' College/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
 test("Thaïs uses the before-sleep Nile-huts sit and names the Host frame", () => {
   const copy = readerIntro(shelfAsWork("thais"));
   assert.match(copy, /Nile/);

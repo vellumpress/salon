@@ -46,6 +46,10 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
     "we",
     "the-story-of-gosta-berling",
     "thais",
+    "demian",
+    "death-comes-for-the-archbishop",
+    "the-getting-of-wisdom",
+    "steppenwolf",
   ]) {
     assert.equal(forYou.workIds.includes(id), false, id);
   }

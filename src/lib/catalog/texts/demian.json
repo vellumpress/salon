@@ -1,0 +1,66 @@
+{
+  "id": "demian",
+  "title": "Demian",
+  "author": "Hermann Hesse (tr. N. H. Priday)",
+  "year": "1923",
+  "note": "Two worlds pass through a little-town Latin school — home of clean clothes and Christmas, and rooms of secrecy.\n\nChildhood two-worlds map — not the later Abraxas sermon. Priday 1923 EN only.\n\nDemian (Hesse; tr. N. H. Priday; 1923; PG 74222). This local bind is the before-sleep cut — two worlds, then Christmas kept — not the whole novel.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Two worlds",
+      "place": "one sitting",
+      "reentry": "I will begin my story with an event of the time when I was ten or eleven years old and went to the Latin school of our little town.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "I will begin my story with an event of the time when I was ten or eleven years old and went to the Latin school of our little town."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Much of the old-time fragrance is wafted back to me, but my sensations are not unmixed, as I pass in review my memories--dark streets and bright houses and towers, the striking of clocks and the features of men, comfortable and homely rooms, rooms full of secrecy and dread of ghosts."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "I sense again the atmosphere of cosy warmth, of rabbits and servant-girls, of household remedies and dried fruit."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Two worlds passed there one through the other."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "From two poles came forth day and night."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "The one world was my home, but it was even narrower than that, for it really comprised only my parents."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "This world was for the most part very well known to me; it meant mother and father, love and severity, good example and school."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "It was a world of subdued lustre, of clarity and cleanliness; here were tender friendly words, washed hands, clean clothes and good manners."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Here the morning hymn was sung, and Christmas was kept."
+    }
+  ]
+}

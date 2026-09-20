@@ -350,6 +350,42 @@ test("The Story of Gösta Berling before-sleep sit is the pulpit cut", () => {
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
+test("Demian before-sleep sit is the two-worlds cut", () => {
+  const item = work({
+    id: "demian",
+    form: "novel",
+    breaths: 9,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Death Comes for the Archbishop waking sit is the red-hills cut", () => {
+  const item = work({
+    id: "death-comes-for-the-archbishop",
+    form: "novel",
+    breaths: 3474,
+    minutes: 457,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("The Getting of Wisdom waking sit is the dirty-sheet cut", () => {
+  const item = work({
+    id: "the-getting-of-wisdom",
+    form: "novel",
+    breaths: 3689,
+    minutes: 461,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
 test("Thaïs before-sleep sit is the Nile-huts cut", () => {
   const item = work({
     id: "thais",
