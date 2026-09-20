@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 /**
  * Assemble a GitHub Pages `dist/` from the TanStack Start client output.
- * Drops the SSR `server/` tree (not served on Pages) and copies the SPA
- * shell to `404.html` so deep links under /salon/ work.
+ * Drops the SSR `server/` tree (not served on Pages) and writes the
+ * spa-github-pages 404.html + index.html restore script so cold deep
+ * links under /salon/ land on the matching client route.
  */
 import {
   copyFileSync,
@@ -15,6 +16,7 @@ import {
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { applySpaPagesFallback } from "./spa-pages-fallback.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dest = join(root, "dist");
@@ -62,6 +64,6 @@ if (!shell) {
 if (!existsSync(join(dest, "index.html"))) {
   copyFileSync(shell, join(dest, "index.html"));
 }
-copyFileSync(join(dest, "index.html"), join(dest, "404.html"));
+applySpaPagesFallback(dest);
 writeFileSync(join(dest, ".nojekyll"), "");
 console.log("[prepare-pages] ready");

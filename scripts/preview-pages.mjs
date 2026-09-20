@@ -2,6 +2,7 @@
 /**
  * Static preview of the Pages artifact: serve dist/ at /salon/
  * and fall unknown paths through 404.html (same as GitHub Pages).
+ * That file is the spa-github-pages redirect shim, not a copy of index.html.
  */
 import { createReadStream, existsSync, statSync } from "node:fs";
 import { createServer } from "node:http";
@@ -67,7 +68,7 @@ const server = createServer((req, res) => {
     send(res, 200, file, TYPES[extname(file)] ?? "application/octet-stream");
     return;
   }
-  send(res, 200, join(dist, "404.html"), TYPES[".html"]);
+  send(res, 404, join(dist, "404.html"), TYPES[".html"]);
 });
 
 server.listen(port, host, () => {

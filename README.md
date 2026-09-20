@@ -12,7 +12,7 @@ On GitHub Pages the app is a **static SPA**. Reading, shuffle, rituals, local pr
 
 Live on GitHub Pages: **https://vellumpress.github.io/salon/**
 
-Pushes to `main` run `.github/workflows/deploy-pages.yml`. Vite/`tanstackStart` use `base` `/salon/`. Deep links fall back through `dist/404.html` (a copy of the SPA shell).
+Pushes to `main` run `.github/workflows/deploy-pages.yml`. Vite/`tanstackStart` use `base` `/salon/`. Cold deep links (`/salon/read/…`, `/salon/rituals`, …) hit `404.html`, which redirects into `/salon/?/<route>`; `index.html` restores the path before the router boots ([spa-github-pages](https://github.com/rafgraph/spa-github-pages)).
 
 Add to Home Screen on iPhone uses the name **Salon** (`apple-mobile-web-app-title` + web app manifest) and a Mondrian red / blue / green icon.
 
