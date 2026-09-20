@@ -5,6 +5,12 @@ import test from "node:test";
 const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
 const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
 
+test("reader turns underscore emphasis into italic markup", () => {
+  assert.match(reader, /splitEmphasis/);
+  assert.match(reader, /function EmphasizedText/);
+  assert.match(reader, /<em key=\{i\}>/);
+});
+
 test("reader mark always keeps You linked to /profile", () => {
   const header = reader.slice(
     reader.indexOf("reader-mark relative"),

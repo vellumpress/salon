@@ -11,6 +11,7 @@ import {
 import { useVellum } from "@/lib/store";
 import { fillClass, planeOf, type Fill } from "@/lib/mondrian";
 import { readerIntro } from "@/lib/reader-intro";
+import { splitEmphasis } from "@/lib/emphasized-text";
 import { shouldShowPreface } from "@/lib/reader-threshold";
 import { FavoriteMark } from "@/components/favorite-mark";
 import { PlaceChip } from "@/components/place-chip";
@@ -57,6 +58,12 @@ type Overlay =
   | "send";
 
 const LOOKBACK = 12;
+
+function EmphasizedText({ text }: { text: string }) {
+  return splitEmphasis(text).map((part, i) =>
+    part.type === "em" ? <em key={i}>{part.value}</em> : part.value,
+  );
+}
 
 export function VellumReader({
   work,
@@ -694,7 +701,7 @@ export function VellumReader({
             const opacity = last <= 0 ? 0.38 : 0.1 + (i / last) * 0.4;
             return (
               <p key={item.id} className="look-line text-ink" style={{ opacity }}>
-                {item.text}
+                <EmphasizedText text={item.text} />
               </p>
             );
           })}
@@ -710,7 +717,7 @@ export function VellumReader({
               isKept && "border-l-2 border-red pl-4",
             )}
           >
-            {breath.text}
+            <EmphasizedText text={breath.text} />
           </p>
         </div>
       </div>
@@ -1291,7 +1298,9 @@ export function VellumReader({
             <span className="font-sans text-sm">Close</span>
           </button>
           <div className="veil-body text-left">
-            <p className="font-serif text-lg leading-relaxed sm:text-xl">{breath.text}</p>
+            <p className="font-serif text-lg leading-relaxed sm:text-xl">
+              <EmphasizedText text={breath.text} />
+            </p>
             <label className="mt-8 block">
               <span className="sr-only">Friend&apos;s phone</span>
               <input
