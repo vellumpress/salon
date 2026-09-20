@@ -10,6 +10,8 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Quicksand is Next Featured-track: worldly non-NY backup after Mirth.
  * The Attendant’s Confession sits beside it (A24 South America lane).
  * Rashōmon sits beside them (Asia lane) — not Featured until a dedicated trio.
+ * Unhuman Tour (*Kusamakura*) stays Later / unranked: the 1927 Takahashi
+ * English is a held near-miss, not Featured-track Next.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never Featured, Next, or Later classics.

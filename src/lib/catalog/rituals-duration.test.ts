@@ -110,6 +110,18 @@ test("The Attendant’s Confession before-sleep sit is the human document, not t
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
+test("Unhuman Tour before-sleep sit is the mountain thought, not Chapter I", () => {
+  const item = work({
+    id: "unhuman-tour",
+    form: "novel",
+    breaths: 167,
+    minutes: 19,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
 test("Rashōmon before-sleep sit is the empty gate, not the whole story", () => {
   const item = work({
     id: "rashomon",

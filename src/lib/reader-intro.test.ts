@@ -57,6 +57,13 @@ test("The Attendant’s Confession uses the before-sleep human-document sit", ()
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Mogul/i);
 });
 
+test("Unhuman Tour uses the before-sleep mountain sit, not Featured-track copy", () => {
+  const copy = readerIntro(shelfAsWork("unhuman-tour"));
+  assert.match(copy, /Climbing toward the spa/);
+  assert.match(copy, /Poetry, he says, begins exactly there/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Botchan/i);
+});
+
 test("Rashōmon uses the before-sleep empty-gate sit", () => {
   const copy = readerIntro(shelfAsWork("rashomon"));
   assert.match(copy, /Evening under Rashōmon/);

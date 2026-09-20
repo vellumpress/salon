@@ -29,6 +29,8 @@ const BLURBS: Record<string, string> = {
     "A marked man offers a human document—and asks you not to publish it until he’s dead.",
   rashomon:
     "Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate.",
+  "unhuman-tour":
+    "Climbing toward the spa, a painter decides this human world is unbearable—and that an “unhuman” one would be worse.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:

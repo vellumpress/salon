@@ -44,3 +44,9 @@ test("Rashōmon is a readable local EN bind", () => {
   assert.equal(isBoundLocal({ id: "rashomon", local: true }), true);
   assert.equal(isBoundReadable({ id: "rashomon", local: true, gutenberg: 78105 }), true);
 });
+
+test("Unhuman Tour is a readable local EN bind", () => {
+  assert.equal(isEnReadableOff("unhuman-tour"), false);
+  assert.equal(isBoundLocal({ id: "unhuman-tour", local: true }), true);
+  assert.equal(isBoundReadable({ id: "unhuman-tour", local: true, gutenberg: 73131 }), true);
+});

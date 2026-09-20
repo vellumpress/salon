@@ -1,0 +1,919 @@
+{
+  "id": "unhuman-tour",
+  "title": "Unhuman Tour (*Kusamakura*)",
+  "author": "Natsume Sōseki (tr. Kazutomo Takahashi)",
+  "year": "1906",
+  "note": "Climbing toward the spa, a painter decides this human world is unbearable—and that an “unhuman” one would be worse. Poetry, he says, begins exactly there.\n\n“Unhuman Tour” (*Kusamakura*) (Sōseki; EN Kazutomo Takahashi, 1927; PG 73131). Sentence-case 1927 English. The before-sleep sit ends at “worse place to live in than this of humanity.” — continue for Chapter I.",
+  "minutes": 19,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Climbing the mountain",
+      "place": "one sitting",
+      "reentry": "Climbing the mountain, I was caught up into a train of thought.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "The poet and the painter",
+      "place": "The poet and the painter",
+      "reentry": "Things being disagreeable in the world you cannot depart from it, but you must resign yourself to making the best of disagreeableness, by rubbing off its sharp corners and relaxing its pinches, to what degree you may, to pass pleasantly, even for a brief while, this life of so short a span.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Twenty years",
+      "place": "Twenty years",
+      "reentry": "Twenty years of life taught me that this is a world worth living in; at twenty-five I saw that light and darkness are but the face and back of a thing, there being a shadow where the sun shines.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "The boulder",
+      "place": "The boulder",
+      "reentry": "Here my train of thought broke, as I found myself sitting involuntarily on a good-sized boulder, my left foot having, in its effort to avert a peril, caused by a slip of my right foot, landed me in that posture.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "The lark",
+      "place": "The lark",
+      "reentry": "As I trudged upward, my ears suddenly caught a lark, his song coming up, as it were, from just below my feet.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "Shelley and the Chinese poets",
+      "place": "Shelley and the Chinese poets",
+      "reentry": "Yes, poetry!",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "Nature as poetry",
+      "place": "Nature as poetry",
+      "reentry": "But how can this be?",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "A Noh atmosphere",
+      "place": "A Noh atmosphere",
+      "reentry": "I am at any rate, a living block of humanity, and however fond I may be of unhumanity, my love of it cannot go so very far.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Spring rain",
+      "place": "Spring rain",
+      "reentry": "By the time I had come to this decision, the sky began to assume a doubtful aspect.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "A dose of unhumanity",
+      "place": "A dose of unhumanity",
+      "reentry": "About the time the rain-water began to fall in drops from my hat, I heard a jingle, jingle of a bell some yards away, and there appeared a pack-horse driver leading an animal behind him.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Climbing the mountain, I was caught up into a train of thought."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Work with your brains, and you are liable to be harsh."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Punt in the stream of sentiment, and you may be carried away."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Pride stiffens you to discomfort."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Heigh-ho, this is a disagreeable world to live in."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "When the disagreeableness deepens, you wish to move to a world where life is less uneasy."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "It is precisely when you awake to the truth, that move where you will, it will be hard to live, that poetry is born and art creates."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "This human world of ours is the making neither of God nor of the Devil; but of common mortals; your neighbors on your right; your neighbors on your left, and your neighbors across the street."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Hate you may this world of common mortals, but where else can you go?"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "If anywhere else, it must be an unhuman world, but you will find an unhuman world a worse place to live in than this of humanity."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Things being disagreeable in the world you cannot depart from it, but you must resign yourself to making the best of disagreeableness, by rubbing off its sharp corners and relaxing its pinches, to what degree you may, to pass pleasantly, even for a brief while, this life of so short a span."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Here arises the heaven-ordained mission of the poet and the painter, and blessed are they, who with their art, make life in this world more rich and more cheerful."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Picture your hard-to-live-in-world, turned into one of bliss and thankfulness, with all its disagreeableness taken away, and you have poetry, a painting, or music, or sculpture."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Nor need you produce it actually; when you fancy you see it before your eyes, poetry springs into life and songs arise."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "You hear the ringing of a silver bell within you, even though you have not written a line of your verse on paper, and your mind’s eye drinks of the beauties of the rainbow without paint on the canvas."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "You attain your end as soon as you soar to the height of taking this view of the human life you live in and see the soiled and turbid latter-day world purified and beautified in your soul’s camera obscura."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Thus a poet may not have a single uttered verse and a painter not a solitary sweep of the brush; but they are happier than a social lion; than the most fondled child; nay, than a great prince, in that they can have their own cleansed view of life; in that they can rise above lust and passions, and live in a world of etherial purity; in that they can build up a universe where differences all disappear, and can break away free from the bondage of greed and selfishness."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Twenty years of life taught me that this is a world worth living in; at twenty-five I saw that light and darkness are but the face and back of a thing, there being a shadow where the sun shines."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "My thoughts, today, at thirty, are these: When full of joys sorrows are as deep, and the more pain the greater pleasure."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Cut sorrows asunder from joys and I won’t be able to get along."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Shall I fling them away? that will make an end of the world."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Money is precious; but anxiety will eat you up, even in sleep, when it accumulates."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Love is sweet; but you will yearn after the days when you knew it not, so soon as its very sweetness begins to weigh heavy on you."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "The shoulders of His Majesty’s Ministers are supporting the feet of millions and the whole country is weighing heavily on their backs."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "You miss nice things when you part with them without tasting; but you want more of them when you take only a little of them, while you get sick if you overload yourself...."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Here my train of thought broke, as I found myself sitting involuntarily on a good-sized boulder, my left foot having, in its effort to avert a peril, caused by a slip of my right foot, landed me in that posture."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Fortunately I was none the worse for the accident, except that my color-box jerked itself forward from under my arm, which was not much."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "As I rose from my forced rest, I saw at a distance, to my right, a peak of mountain, the very shape of a bucket with its bottom up, covered from foot to summit by thick dark greens, studded with blossoming cherries in a dreamy relief, behind a screen of haze."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "A little nearer there rose a bare mountain, rising shoulders above the others, with its flank cut straight down as by a giant’s axe."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "The foot of its craggy side sank into a dark abyss."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "A figure of man wrapped in a red blanket was coming down from the height and I thought my climb would have to take me up there."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "The road was very exasperating."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "If clay only, it would not have required such very great labor to negotiate, but there were boulders, which refused to be smoothed."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "Clay may be broken, but not rocks and there they lay determined not to give way."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "If unyielding on their part, then they must be passed by going round or else by surmounting them."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "The place was not easy to go up even without rocks; but to make it worse, it made a sharp angle in the centre, the sides of which rose sharply, so that it was more like walking the bed of a river than going up a road."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "However, not being in a particular hurry, I took time and slowly came up to the “Seven Bends”."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "As I trudged upward, my ears suddenly caught a lark, his song coming up, as it were, from just below my feet."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "The carol was giddily busy and incessant, but my eyes saw nothing."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "That bird never stops and must, it appears, sing out the whole Spring day and every second of it till night."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "I looked down the valley left and right into the air, and up into the sky, but all in vain, as the unseen singer was heard to rise higher and higher."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "I thought the lark must have died in the clouds and his song only was floating in space."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "The road made a sharp turn here by an angular rock."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "A blind man might have plunged head first down the crag."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "But I managed to turn safely."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "Down in the valley the golden blossoms of the rape were in full bloom."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "But the lark!"
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "It was Spring—Spring, when the whole creation feels blasé to drowsiness; cheerful to ecstacy."
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "The cat forgets to pounce on the mice."
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "Men become oblivious of being in debt; so oblivious, indeed, that they even fail to locate their own souls."
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "But they come back to themselves, when they see a distant field waving with a golden sea of flowers, such as I was looking down upon in the valley."
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "And they may locate their souls when they hear the lark."
+    },
+    {
+      "id": "s4-15",
+      "sceneId": "s4",
+      "text": "The lark does not sing with his throat; but it is his whole soul that sings."
+    },
+    {
+      "id": "s4-16",
+      "sceneId": "s4",
+      "text": "Of all creatures, of which you hear their soul’s activity in their songs, none is as lively as the lark."
+    },
+    {
+      "id": "s4-17",
+      "sceneId": "s4",
+      "text": "It was, indeed, joy itself, and as I thus thought, I became joyful, and thus, was Poetry."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Yes, poetry!"
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "Soon I was trying to repeat Shelley’s song of the lark; but I could recite only these lines: “We look before and after And pine for what is not Our sincerest laughter With pain is fraught; Our sweetest songs are those that tell of saddest thought.”"
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "I once more lost myself in a reverie of thought."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "Happy as the poet may be, he may not go heart and soul into singing of his joys, forgetting everything, like the lark."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "The Chinese poets, to say nothing of their brothers of the West, sing of “immeasurable bushels of sorrow”."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "It may be, with common mortals, that their sorrows are measured only by the pint not by the bushel."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "Who can say nay, then, if the poet soars to the height of joys unreachable by his vulgar brothers, he has also unfathomable griefs?"
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "It is perhaps, well, that one thinks twice before one decides to become a poet."
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "My eyes captivated by the golden rape on the left, a coppice hill on the right and the road under foot running on a smooth level, I stepped now and again on humble dandelions, crushing them, as I thought, under my heels; but on looking back regretfully, I found the lowly beauty nestling, none the worse, in their double-toothed leaves."
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "Easy is the life of some of God’s creations."
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "I continued my climb, returning again to my thoughts of reverie."
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "Sorrow may be inseparable from the poet."
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "But once in an humour, in which you forget yourself, listening to a lark or gazing at a bed of golden rape, all gloom and pain disappear."
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "Going along a mountain path so entranced, dandelions make your heart leap with joy."
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "So do the blossoming cherries—the cherries had now gone out of sight, by the way."
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "Up in the mountain, in the bosom of nature, everything that greets you fills your heart with joy, with not a shadow of misery."
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "If any misery, it would be no more than that of feeling tired in your feet and of not having good things to eat."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "But how can this be?"
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "Nature unrolls herself before you as a piece of poetry, as a scroll of a picture."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Since poetry and a picture, no thought occurs to you of getting possession of this home of nature, nor a desire to make a scoup of money by making it accessible by building a railway."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "Nothing darkens this scenery, to rob it of its charms, which help neither to fill your belly, nor add something to your salary, as long as it gladdens your heart merely as scenery, so long shall you feel no pain, no weight on you."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "So great is the power of nature that it intoxicates you, transports you, in an instant, to the world of poetry."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "Love may be beautiful, and so also filial devotion, and noble and edifying may be loyalty and patriotism."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "But it will be different when you are yourself a figure on the stage, a cyclone of conflicting interests making you too dizzy to appreciate the beautiful or the noble, but to become entirely lost to the poetry of the thing."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "You have to make an onlooker of yourself with room for a sense to understand, in order that you may see the poetry."
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "Placed in that position, you will enjoy dramas, and novels will interest you; because you have got your personal interests packed and put away on the rack."
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "You are a poet the while you enjoy reading or seeing."
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "Even at that, common dramas and novels are not free from humanities of afflictions, anger, quarrels, and weeping, that carry you into corresponding moods."
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "The only saving feature may be that no sense of gain and selfishness is acting on your part; but this absence of personal interest will make your heart-strings the more tense and active in other respects, and that is what I hate to bear."
+    },
+    {
+      "id": "s6-12",
+      "sceneId": "s6",
+      "text": "I have come through my thirty years enough, indeed more than enough, of wallowing in the mud of troubles, of fuming in anger; of being in rows; or of sinking in sorrows; all which are indivorcible from human life."
+    },
+    {
+      "id": "s6-13",
+      "sceneId": "s6",
+      "text": "I want poetry that lifts me above the dust and noise of the world."
+    },
+    {
+      "id": "s6-14",
+      "sceneId": "s6",
+      "text": "I know, of course, there can be no drama, however great a masterpiece, that is absolutely transcendental of human sentiment, or scarcely a novel that can rise completely above all sense of right and wrong, this being especially the case with Western poetry of which the stock paraphernalia are Sympathy, Love, Justice, Freedom, and so forth, the staple goods in the bazaar of human life."
+    },
+    {
+      "id": "s6-15",
+      "sceneId": "s6",
+      "text": "It is no wonder that the lark made Shelly heave a deep sigh."
+    },
+    {
+      "id": "s6-16",
+      "sceneId": "s6",
+      "text": "To my joy, poets of the Orient can, some of them, soar above this earthly atmosphere."
+    },
+    {
+      "id": "s6-17",
+      "sceneId": "s6",
+      "text": "Let Tao Yuan-ming of ancient China recite his lines:"
+    },
+    {
+      "id": "s6-18",
+      "sceneId": "s6",
+      "text": "“Chrysanthemum I pick from the Eastern hedge, On the Southern hill leisurely I cast my eyes.”"
+    },
+    {
+      "id": "s6-19",
+      "sceneId": "s6",
+      "text": "Not that there is a charming one on the other side of the hedge, nor a dear friend on the hill; but the two lines take you with Tao into a sphere beyond the reach of the worries and cares of the world."
+    },
+    {
+      "id": "s6-20",
+      "sceneId": "s6",
+      "text": "Or listen to Wang Wei of the same land:"
+    },
+    {
+      "id": "s6-21",
+      "sceneId": "s6",
+      "text": "“Softly I harp and sing alone, In the quietude of wooded bamboo; Not a soul into deep solitude, but the Tell-tale moon comes, and speaks its heart.”"
+    },
+    {
+      "id": "s6-22",
+      "sceneId": "s6",
+      "text": "A world looms up from the four verses, the charm of which is not that of popular novels, but a good you feel from a sound and all-forgetting sleep you have had, after being thoroughly tired of steamers, railways, rights and duties, morals and formalities."
+    },
+    {
+      "id": "s6-23",
+      "sceneId": "s6",
+      "text": "Sleep? Yes, and if sleep be necessary even in the Twentieth century, equally indispensable to the Twentieth century is this super-earthly poetical sentiment."
+    },
+    {
+      "id": "s6-24",
+      "sceneId": "s6",
+      "text": "Unfortunately poetry makers and poetry readers are nowadays all enamoured of the Westerners, and none seem to care to take a boat and float to the land of the immortals."
+    },
+    {
+      "id": "s6-25",
+      "sceneId": "s6",
+      "text": "I am not a poet by profession, and am interested in no way whatever in spreading propaganda for the kind of life led by Wang Wei and Tao Yuan-ming, in the present world."
+    },
+    {
+      "id": "s6-26",
+      "sceneId": "s6",
+      "text": "Only to me it appears that such inspired feelings as are sung by the Chinese poets are more powerful in remedying the ills and evils of the day than theatricals and dancing parties."
+    },
+    {
+      "id": "s6-27",
+      "sceneId": "s6",
+      "text": "They are, at all events far more agreeable to me than Faust or Hamlet."
+    },
+    {
+      "id": "s6-28",
+      "sceneId": "s6",
+      "text": "I come into the mountain with a colour-box and a tripod for my sole companions, all because I yearn to drink direct from nature of the poetical wine of Tao Yuan-ming and Wang Wei; to be away from the world-smelling and world-sounding world, nay, to breathe and live in an unhuman atmosphere, even for a brief while."
+    },
+    {
+      "id": "s6-29",
+      "sceneId": "s6",
+      "text": "It is a weakness of mine if you like to call it so."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "I am at any rate, a living block of humanity, and however fond I may be of unhumanity, my love of it cannot go so very far."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "I do not suppose that even Tao Yuan-ming had his eye on the Southern hill, year in and year out; nor is it imaginable that Wang Wei slept in his bamboo jungle without a mosquito net."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "In all likelihood Tao sold his chrysanthemums to a florist after keeping what he wanted, and Wang his bamboo sprouts to a green grocer."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "I myself am not unhuman enough to live under the blue sky in the mountain, just because the lark and golden rape captivate my fancy."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Such as the place is, human beings are not a rarity,—men with their heads wrapped in a towel and their kimono tucked up at the back; country lasses in red skirts and so on, and sometimes also even long faced horses."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Breathing the mountain air, hundreds of feet above the sea level, surrounded by a million cypresses, I could not still be rid of human smell."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Nay, I was crossing the mountain to reach the hot spring hotel of Nakoi as my destination for the night."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "However, things assume shapes or colour as you will, according to the way you look at them."
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "In the words of Leonardo Da Vinci to a pupil of his “the bell is one; but listen, and its sound may be heard in all sorts of ways.”"
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "Opinions may differ in a man or a woman, all depending upon how you look at him or her."
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "I had come out in my present tour to indulge in unhumanity and people would appear different from what they did when I was living round the corner in the crowded Mud-and-Dust Lane, if I looked at them now, I thought, bearing in mind my unhumanity idea."
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "Impossible as entirely getting away from humanity may be, I should be able to bring myself up or down to suit the frame of mind, in which one finds oneself at a “Noh”(1) play."
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "The “Noh” has its humanity or sentimental side."
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "Who can be sure not to be moved to tears by the Shichikiochi or by the Sumidagawa?"
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "But the “Noh” performance is seven-tenth art and three-tenth sentiment."
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "The attractions of “Noh” do not come from the life-like presentation of things human in this mundane world; because the life-like in it appears only from under many, many layers of art, which give it an air of extreme tranquility and halcyon serenity, never to be met in the world of reality."
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "How would it do to interpret all the events and people I came across in the present tour as part of performances on the “Noh” stage?"
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "I could not cast aside humanity altogether."
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "To be poetical at the bottom of my whole venture, I should like to let unhumanity carry me into a “Noh” atmosphere, by doing away with humanity as much as possible."
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "Different in nature from the “Southern hill” or the “bamboo grove,” nor identifiable with the lark or blossoming rapes, I still would see people from a point of view as near those objects as possible."
+    },
+    {
+      "id": "s7-20",
+      "sceneId": "s7",
+      "text": "The man Basho(2) saw something poetical and made a “hokku”(3) even of a horse stalling near his head!"
+    },
+    {
+      "id": "s7-21",
+      "sceneId": "s7",
+      "text": "I would deal with everybody I was going to meet—farmers, tradesmen, the village office clerk, old men, old women—seeing in them only objects, complementing a picture."
+    },
+    {
+      "id": "s7-22",
+      "sceneId": "s7",
+      "text": "However unlike figures on the canvas, they would move as they please."
+    },
+    {
+      "id": "s7-23",
+      "sceneId": "s7",
+      "text": "It would be grossly common, however, to enquire, as does an ordinary novelist, into the cause of each of them going his own way, to dig into their mental state, or to try to solve the tangle of their human affairs."
+    },
+    {
+      "id": "s7-24",
+      "sceneId": "s7",
+      "text": "I shall not care, move as they will."
+    },
+    {
+      "id": "s7-25",
+      "sceneId": "s7",
+      "text": "They won’t trouble me, as I shall regard them as characters in a picture in motion."
+    },
+    {
+      "id": "s7-26",
+      "sceneId": "s7",
+      "text": "Painted figures cannot get out of the plane of the picture, no matter how they may move."
+    },
+    {
+      "id": "s7-27",
+      "sceneId": "s7",
+      "text": "Troubles would arise of conflicting views and clash of interests, the moment you think, the characters might jump out of the plane and act cubically."
+    },
+    {
+      "id": "s7-28",
+      "sceneId": "s7",
+      "text": "The more troublesome the matter grew, the more impossible it would become to look at it æsthetically."
+    },
+    {
+      "id": "s7-29",
+      "sceneId": "s7",
+      "text": "Wherever I might go and whomever I might meet, I should look at them as from a transcendental height, so that human-magnetism might not easily pass between us, and I shall, then, be not easily affected, however animatedly they might act."
+    },
+    {
+      "id": "s7-30",
+      "sceneId": "s7",
+      "text": "In short I am to assume the position of one standing before a picture, and looking at the figures in it, running hither and thither on its plane."
+    },
+    {
+      "id": "s7-31",
+      "sceneId": "s7",
+      "text": "With three feet between, you can calmly look on, without any sense of danger."
+    },
+    {
+      "id": "s7-32",
+      "sceneId": "s7",
+      "text": "In other words, you run no risk of anybody snatching away your weapon and you may give yourself up altogether to studying their doings from an artistic point of view."
+    },
+    {
+      "id": "s7-33",
+      "sceneId": "s7",
+      "text": "With undivided attention you may see and judge the objects before you as beautiful or as not beautiful."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "By the time I had come to this decision, the sky began to assume a doubtful aspect."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "A bank of clouds of indistinct foreboding had no sooner mounted overhead than it went tumbling and overspreading until the whole space seemed to turn into a hanging expanse of dark sea."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "From the sea soft Spring rain began to fall."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "I had long since gone past the golden rape blossoms and was now toiling along between two mountains; but the threads of rain being so fine as to appear as mist, I could not tell how distant they were."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "Now and again, as the gusts of wind blew asunder the high drapery of cloud, a grey ridge of mountain showed itself to the right as clearly as within reach of a hand: probably the range ran on the other side of the valley."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "The left side seemed to be the foot of another mountain."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "Back of the semi-transparent screen of rain, trees—they might be pines—appeared and then disappeared, with an endless frequency."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "Was it the rain that was moving?"
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "Or was it the trees in motion?"
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "Could it be that I was dreaming a floating dream?"
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "I trudged on, feeling strange."
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "The road became wider than I had imagined, and quite level also."
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "Walking was no longer a task; but being not prepared for rain, I had to hurry."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "About the time the rain-water began to fall in drops from my hat, I heard a jingle, jingle of a bell some yards away, and there appeared a pack-horse driver leading an animal behind him."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "“Hello, any place to stop around here, man?”"
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "“A mile more or so, you will come upon a tea stall."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "Getting pretty wet, eh?”"
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "A mile more!"
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "The figure of the rustic dissolved into rain like a magic lantern view, as I looked back."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "The misty rain had now become thick and long until each drop could be seen distinctly like a pencil flying in the wind."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "It had long since soaked through my outer garment, and then penetrated to the skin."
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "The heat of my body made lukewarm the water in my under-wear and the feeling produced was by no means the most pleasant."
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "I pulled my hat to one side and quickened my pace."
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "The drenching figure of myself, running through a grey expanse of space, with innumerable silver shafts beating at it slantingly will make poetry, an ode, when I look at it as not my own."
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "I make a beautiful harmony with a natural scenery, as a figure in a picture, when I forget my material self completely and take a purely objective view of myself."
+    },
+    {
+      "id": "s9-12",
+      "sceneId": "s9",
+      "text": "Only, I cease to be a figure in poetry, or in a picture, the moment I feel vexed with the falling rain and take to heart the tiredness of the stamp, stamp of my feet."
+    },
+    {
+      "id": "s9-13",
+      "sceneId": "s9",
+      "text": "I then find myself only an indifferent individual of the street, blind to the changing humour of the flying clouds; untouched by the falling flowers, and the carols of birds; nay, a perfect stranger to the beauty of my own self going alone and quietly through a mountain in Spring."
+    },
+    {
+      "id": "s9-14",
+      "sceneId": "s9",
+      "text": "I walked first with my hat pulled to one side; but later I kept my eyes pivoted on the back of my feet."
+    },
+    {
+      "id": "s9-15",
+      "sceneId": "s9",
+      "text": "Finally I went gingerly, shrugging my shoulders."
+    },
+    {
+      "id": "s9-16",
+      "sceneId": "s9",
+      "text": "The rain shook the tree tops all round, and closed in from all sides upon a lonely traveller."
+    },
+    {
+      "id": "s9-17",
+      "sceneId": "s9",
+      "text": "I felt I was having rather too strong a dose of unhumanity."
+    }
+  ]
+}

@@ -47,6 +47,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "a-room-with-a-view": { label: "Florence", region: "it" },
 
   // Ritual lanes (beyond Featured / Next)
+  "unhuman-tour": { label: "Japan", region: "jp" },
   "bunner-sisters": { label: "New York", region: "us" },
   "the-weary-blues": { label: "Harlem", region: "us" },
   "kwaidan-stories-and-studies-of-strange-things": { label: "Japan", region: "jp" },

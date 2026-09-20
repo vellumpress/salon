@@ -610,6 +610,7 @@ const WORK_COUNTRY: Record<string, string> = {
   kokoro: "Japan",
   "wild-geese": "Japan",
   rashomon: "Japan",
+  "unhuman-tour": "Japan",
   "vita-sexualis": "Japan",
   "growing-up": "Japan",
   "call-to-arms": "China",
