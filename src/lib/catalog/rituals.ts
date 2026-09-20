@@ -123,7 +123,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   rashomon:
     `Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate. Akutagawa’s Kyoto opens on desolation before the crime story blooms.`,
   "high-wind-jamaica":
-    `Jamaica after Emancipation: ruins within a stone’s throw of what still stands, and Derby Hill swallowed by bush until the front door is held open by a rank plant. Richard Hughes’s 1929 novel opens on that swallowed house.`,
+    `This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant. Hughes’s 1929 voice already uses period racial language in this stretch, and a sharper racial gaze continues immediately after Salon’s stop. We end at the plant on purpose so the timed sit stays bounded; if you Host further into the chapter, warn the room first.`,
   "noli-me-tangere":
     `Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.`,
   vera:
@@ -135,7 +135,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "poison-tree":
     `His wife makes him promise: if a storm rises, leave the boat. On the Ganges in Joisto, the weather keeps that promise.`,
   "trooper-peter-halket":
-    `Alone on a kopje with a fire that only quivers—Trooper Peter Halket has lost his column, and the dark starts inventing fortunes for him.`,
+    `A lone Chartered Company trooper on a Mashonaland kopje, fire quivering, inventing gold companies in the dark after losing his column. Written in 1897, the open already frames colonial scouting; missionary and racial language harden after Salon stops—before the stranger arrives. We cut there so the sit stays a night watch, not a sermon. If you Host further, name that colonial frame up front.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":

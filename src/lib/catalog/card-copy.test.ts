@@ -353,10 +353,15 @@ test("A High Wind in Jamaica opens on Emancipation ruins and binds only the rank
   assert.match(work!.opening ?? "", /^One of the fruits of Emancipation/);
   const packed = JSON.parse(
     readFileSync(new URL("./openings/high-wind-jamaica.json", import.meta.url), "utf8"),
-  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
   const full = JSON.parse(
     readFileSync(new URL("./texts/high-wind-jamaica.json", import.meta.url), "utf8"),
-  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
+  ) as { note: string; breaths: { text: string }[]; scenes: { title: string }[] };
+  assert.match(packed.note, /warn the room first/);
+  assert.match(full.note, /warn the room first/);
+  assert.match(work!.intro ?? "", /warn the room first/);
+  assert.doesNotMatch(packed.note, /do not extend|locked/i);
+  assert.doesNotMatch(full.note, /do not extend|locked/i);
   assert.match(packed.scenes[0]?.title ?? "", /Derby Hill/i);
   assert.match(packed.scenes[0]?.reentry ?? "", /^One of the fruits of Emancipation/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /lashed permanently open by a rank plant\.?$/);
@@ -552,10 +557,15 @@ test("Trooper Peter Halket opens on the kopje fire and stops before the stranger
   assert.match(work!.opening ?? "", /^It was a dark night/);
   const packed = JSON.parse(
     readFileSync(new URL("./openings/trooper-peter-halket.json", import.meta.url), "utf8"),
-  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
   const full = JSON.parse(
     readFileSync(new URL("./texts/trooper-peter-halket.json", import.meta.url), "utf8"),
-  ) as { breaths: { text: string }[] };
+  ) as { note: string; breaths: { text: string }[] };
+  assert.match(packed.note, /name that colonial frame up front/);
+  assert.match(full.note, /name that colonial frame up front/);
+  assert.match(work!.intro ?? "", /name that colonial frame up front/);
+  assert.doesNotMatch(packed.note, /do not extend|locked/i);
+  assert.doesNotMatch(full.note, /do not extend|locked/i);
   assert.match(packed.scenes[0]?.title ?? "", /Kopje fire/i);
   assert.match(packed.scenes[0]?.reentry ?? "", /^It was a dark night/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /keep awake the whole night beside it\.?$/);

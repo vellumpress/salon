@@ -68,7 +68,8 @@ test("A High Wind in Jamaica uses the before-sleep rank-plant sit", () => {
   const copy = readerIntro(shelfAsWork("high-wind-jamaica"));
   assert.match(copy, /Jamaica after Emancipation/);
   assert.match(copy, /rank plant/);
-  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host note/i);
+  assert.match(copy, /warn the room first/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|do not extend|locked/i);
 });
 
 test("Noli Me Tangere uses the unwind dinner-announcement sit", () => {
@@ -110,8 +111,9 @@ test("The Poison Tree uses the unwind Ganges-storm sit", () => {
 test("Trooper Peter Halket uses the before-sleep kopje-fire sit", () => {
   const copy = readerIntro(shelfAsWork("trooper-peter-halket"));
   assert.match(copy, /kopje/);
-  assert.match(copy, /Halket/);
-  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
+  assert.match(copy, /Chartered Company/);
+  assert.match(copy, /colonial/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|do not extend|locked/i);
 });
 
 test("uses Featured before Ritual copy", () => {
