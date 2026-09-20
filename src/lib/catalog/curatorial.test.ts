@@ -17,6 +17,7 @@ test("Featured carousel is unchanged and does not include Quicksand", () => {
   assert.equal(FEATURED_CAROUSEL_IDS.includes("attendants-confession"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("rashomon"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("high-wind-jamaica"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("noli-me-tangere"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("miss-brill-adapted"), false);
@@ -33,11 +34,13 @@ test("Quicksand is Next Featured-track", () => {
     "attendants-confession",
     "rashomon",
     "high-wind-jamaica",
+    "noli-me-tangere",
   ]);
   assert.equal(curatorialTrack("quicksand"), "next");
   assert.equal(curatorialTrack("attendants-confession"), "next");
   assert.equal(curatorialTrack("rashomon"), "next");
   assert.equal(curatorialTrack("high-wind-jamaica"), "next");
+  assert.equal(curatorialTrack("noli-me-tangere"), "next");
   assert.equal(curatorialTrack("the-house-of-mirth"), "later");
 });
 
@@ -137,4 +140,31 @@ test("A High Wind in Jamaica is a local before-sleep bind on Next Featured-track
     RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("high-wind-jamaica"),
     false,
   );
+});
+
+test("Noli Me Tangere is a local unwind bind on Next Featured-track", () => {
+  const work = SHELF.find((item) => item.id === "noli-me-tangere");
+  assert.ok(work);
+  assert.equal(work.year, 1887);
+  assert.equal(work.title, "Noli Me Tangere (The Social Cancer)");
+  assert.equal(work.author, "José Rizal (tr. Charles Derbyshire)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 6737);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^On the last of October Don Santiago de los Santos/);
+  const lane = RITUAL_LANES.find((item) => item.id === "unwind");
+  assert.ok(lane?.workIds.includes("noli-me-tangere"));
+  assert.equal(
+    RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("noli-me-tangere"),
+    false,
+  );
+  assert.equal(
+    RITUAL_LANES.find((item) => item.id === "before-sleep")?.workIds.includes("noli-me-tangere"),
+    false,
+  );
+  const stub = SHELF.find((item) => item.id === "the-social-cancer-noli-me-tangere");
+  assert.ok(stub);
+  assert.equal(stub.local, undefined);
+  assert.equal(stub.gutenberg, 20228);
+  assert.notEqual(stub.id, work.id);
 });

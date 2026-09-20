@@ -1,0 +1,56 @@
+{
+  "id": "noli-me-tangere",
+  "title": "Noli Me Tangere (The Social Cancer)",
+  "author": "José Rizal (tr. Charles Derbyshire)",
+  "year": "1887",
+  "note": "Unwind ritual sit — Capitan Tiago’s dinner.\n\nCapitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.\n\nNoli Me Tangere (The Social Cancer) (Rizal; ES 1887 / EN Charles Derbyshire 1912; PG 6737). Host-a-sit Ch1 dinner announcement through Pasig house/roles. Sit through the river’s rôles. Stop before the rest of the novel.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Capitan Tiago’s dinner",
+      "place": "one sitting",
+      "reentry": "On the last of October Don Santiago de los Santos, popularly known as Capitan Tiago, gave a dinner.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "On the last of October Don Santiago de los Santos, popularly known as Capitan Tiago, gave a dinner."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "In spite of the fact that, contrary to his usual custom, he had made the announcement only that afternoon, it was already the sole topic of conversation in Binondo and adjacent districts, and even in the Walled City, for at that time Capitan Tiago was considered one of the most hospitable of men, and it was well known that his house, like his country, shut its doors against nothing except commerce and all new or bold ideas."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Like an electric shock the announcement ran through the world of parasites, bores, and hangers-on, whom God in His infinite bounty creates and so kindly multiplies in Manila."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Some looked at once for shoe-polish, others for buttons and cravats, but all were especially concerned about how to greet the master of the house in the most familiar tone, in order to create an atmosphere of ancient friendship or, if occasion should arise, to excuse a late arrival."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "This dinner was given in a house on Calle Anloague, and although we do not remember the number we will describe it in such a way that it may still be recognized, provided the earthquakes have not destroyed it."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "We do not believe that its owner has had it torn down, for such labors are generally entrusted to God or nature--which Powers hold the contracts also for many of the projects of our government."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "It is a rather large building, in the style of many in the country, and fronts upon the arm of the Pasig which is known to some as the Binondo River, and which, like all the streams in Manila, plays the varied rôles of bath, sewer, laundry, fishery, means of transportation and communication, and even drinking water if the Chinese water-carrier finds it convenient."
+    }
+  ]
+}

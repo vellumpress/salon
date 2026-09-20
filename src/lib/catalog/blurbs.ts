@@ -31,6 +31,8 @@ const BLURBS: Record<string, string> = {
     "Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate.",
   "high-wind-jamaica":
     "After Emancipation, Derby Hill is swallowed by bush until a rank plant holds the front door open.",
+  "noli-me-tangere":
+    "Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:

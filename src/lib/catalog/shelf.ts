@@ -420,6 +420,22 @@ export const SHELF: ShelfWork[] = [
   { id: "she", title: "She", author: "H. Rider Haggard", year: 1887, form: "novel", language: "English", local: true, opening: "INTRODUCTION", breaths: 4448, minutes: 556, gutenberg: 3155 },
   { id: "some-chinese-ghosts", title: "Some Chinese Ghosts", author: "Lafcadio Hearn", year: 1887, form: "stories", language: "Chinese", minutes: 80, gutenberg: 16261 },
   { id: "the-people-of-hemso", title: "The People of Hemsö", author: "August Strindberg", year: 1887, form: "novel", language: "Swedish", minutes: 160 },
+  {
+    id: "noli-me-tangere",
+    title: "Noli Me Tangere (The Social Cancer)",
+    author: "José Rizal (tr. Charles Derbyshire)",
+    year: 1887,
+    form: "novel",
+    language: "English",
+    minutes: 2,
+    local: true,
+    gutenberg: 6737,
+    opening:
+      "On the last of October Don Santiago de los Santos, popularly known as Capitan Tiago, gave a dinner.",
+    breaths: 7,
+    intro:
+      "Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.",
+  },
   { id: "the-social-cancer-noli-me-tangere", title: "The Social Cancer (Noli Me Tangere)", author: "José Rizal", year: 1887, form: "novel", language: "Spanish", minutes: 160, gutenberg: 20228 },
   { id: "the-woodlanders", title: "The Woodlanders", author: "Thomas Hardy", year: 1887, form: "novel", language: "English", local: true, opening: "The rambler who, for old association or other reasons, should trace the forsaken coach-road running almost in a meridional line from Bristol to the south shore ", breaths: 6859, minutes: 857, gutenberg: 482 },
   { id: "azul", title: "Azul...", author: "Rubén Darío", year: 1888, form: "poem", language: "Spanish", minutes: 90, gutenberg: 52894 },

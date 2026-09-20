@@ -4,7 +4,7 @@ A calm, phone-first reading app for public-domain classics. This repository is t
 
 The product name is Salon. The GitHub repo and Pages path are `salon`.
 
-This tree is a full mirror of Vellum V4 (`c9c405`), including every local catalog text and opening (393 each). Do not thin the catalog to save size.
+This tree is a full mirror of Vellum V4 (`c9c405`), including every local catalog text and opening (405 each). Do not thin the catalog to save size.
 
 On GitHub Pages the app is a **static SPA**. Reading, shuffle, rituals, local progress, and **reader sign-up / sign-in** work in the browser. Synced accounts, clubs, and RTC sitting need a hosted backend (see below).
 
@@ -41,7 +41,7 @@ npm run build:vercel
 ## What works on Pages (no secrets)
 
 - Discover, search, form rails, rituals, shuffle, curator UI (picks fail closed without an LLM backend)
-- Chamber reader for all **393 local binds** (texts + openings stay in `src/lib/catalog/texts` and `src/lib/catalog/openings`)
+- Chamber reader for all **405 local binds** (texts + openings stay in `src/lib/catalog/texts` and `src/lib/catalog/openings`)
 - Progress, favorites, kept breaths — `localStorage` (`vellum-v1`)
 - Continue-reading on Home (header + primary resume cell) from that same local progress
 - Friends: claim an `@username`, follow Salon readers, see what they are sitting — local-first
@@ -76,7 +76,7 @@ VITE_LIVE_BACKEND=false
 
 ## Catalog
 
-393 locally bound works with full text and openings. Years and rights notes come from the V4 shelf. English-off ids stay unlistable as full-text reads.
+405 locally bound works with full text and openings. Years and rights notes come from the V4 shelf. English-off ids stay unlistable as full-text reads.
 
 ## Tech
 

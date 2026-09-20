@@ -71,6 +71,13 @@ test("A High Wind in Jamaica uses the before-sleep rank-plant sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host note/i);
 });
 
+test("Noli Me Tangere uses the unwind dinner-announcement sit", () => {
+  const copy = readerIntro(shelfAsWork("noli-me-tangere"));
+  assert.match(copy, /Capitan Tiago announces a dinner/);
+  assert.match(copy, /Binondo/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host note/i);
+});
+
 test("uses Featured before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),

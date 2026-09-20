@@ -133,3 +133,15 @@ test("A High Wind in Jamaica before-sleep sit is the rank-plant cut, not the nov
   assert.equal(estimateRitualMinutes(item), 3);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
+
+test("Noli Me Tangere unwind sit is the dinner announcement, not the novel", () => {
+  const item = work({
+    id: "noli-me-tangere",
+    form: "novel",
+    breaths: 7,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});

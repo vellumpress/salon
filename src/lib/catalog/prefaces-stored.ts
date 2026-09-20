@@ -344,6 +344,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "night-and-day": `London talk, two couples, and the long negotiation of who gets to want what. Sit with the world a moment before the first breath.`,
   "nights": `Anonymous’s 1835 stories, gathered as One Thousand and One Nights. Enter one room at a time.`,
   "nirmala": `Premchand’s 1927 novel Nirmala. Sit with the world a moment before the first breath.`,
+  "noli-me-tangere": `Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.`,
   "njala": `Anonymous’s 1280 work Njál's Saga. Sit with the world a moment before the first breath.`,
   "northanger-abbey": `A girl trained on gothic novels visits a house that is only a house — maybe. Sit with the world a moment before the first breath.`,
   "nostromo": `A silver mine, a republic, and the men who cannot put the metal down. Sit with the world a moment before the first breath.`,
