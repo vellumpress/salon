@@ -1,0 +1,216 @@
+{
+  "id": "what-we-sold",
+  "title": "What We Sold",
+  "author": "Salon",
+  "year": "2026",
+  "note": "Two broke lovers ruin their treasures for each other and invent a quieter wealth in the wreckage. After O. Henry, The Gift of the Magi, 1905.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Christmas Eve",
+      "place": "Chicago",
+      "reentry": "Della counted the jar twice on Christmas Eve morning—coins saved one by one in what used to hold pasta sauce, the label still ghosting the glass—and still came up short of two dollars.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Della counted the jar twice on Christmas Eve morning—coins saved one by one in what used to hold pasta sauce, the label still ghosting the glass—and still came up short of two dollars."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "She stood at the studio window that faced a brick wall, as if the wall might offer a loan or at least a kinder arithmetic."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "There was Jim, who came home smelling of warehouse cardboard and winter."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "There was rent due after the holiday."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "There was the watch Jim's father had left him, scratched on the face but still proud on its thin chain."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "There was Della's hair, which fell past her shoulders in a dark weight she sometimes pinned up for interviews that led nowhere and let down for Jim when the room felt less small."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Those were their fortunes."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Everything else was oatmeal, bus cards with fading magnetic strips, and a fake tree the size of a houseplant, leaning in a corner like an apology."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "She needed a gift worthy of him."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Not another joke mug from the pharmacy aisle."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Not a subscription neither of them would remember to cancel."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Something that said she had watched him wind the old watch each night with a care that embarrassed him if she named it."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "Madame Sofronie's on the corner bought hair."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "The shop smelled of disinfectant and rain-damp coats."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Della sat under fluorescent tubes while scissors spoke in small decisive sounds."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "When she left, the back of her neck felt cold and new, exposed to the wind as if she had stepped outside without a secret."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "In her pocket: money enough."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "Two blocks down, in a narrow phone-case and leather-goods shop, she found a simple band meant for a smartwatch Jim refused to buy—sized instead, with a quiet alteration, for the old watch he loved—so he could wear the heirloom without the fraying chain that caught on his cuff."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "At home she curled the short ends with a cheap iron and tried to look like a woman who had meant this, who had chosen lightness on purpose."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "She practiced smiling in the microwave door's dull reflection."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Jim froze in the doorway when he saw her."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "His eyes went to her hair the way hands go to a missing wallet, searching the place where value used to be."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Della talked fast—love, Christmas, wait until you see—while he set a small package on the table as if it might break if either of them breathed wrong."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Inside her package: a set of tortoise combs she had eyed for months in a consignment window on Milwaukee, the kind that would have held her long hair with quiet ceremony, amber against dark."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Inside his: the watch band, soft leather, carefully cut."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Jim sat down on the edge of the bed that was also their sofa and laughed, not unkindly, and drew the old watch from his pocket without its chain."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "He had sold the chain at a pawn window with a barred grate to buy the combs."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "The watch looked suddenly naked in his palm, like a face without its usual expression."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "They held the useless beautiful things between them."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "Outside, someone dragged a recycling bin along the alley, glass complaining."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "The fake tree blinked its one working string of lights—three bulbs dead, the rest stubborn."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "Della touched the combs with a fingertip."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "Jim touched the band."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "For a moment the studio held more wealth than any correct gift could measure—two people who had gotten the math wrong and the meaning right."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "\"We'll use them later,\" Della said, and her voice almost believed it."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "\"Later,\" Jim agreed, and kissed the short hair at her temple as if it were still long, and as if later were a country they could still enter together, passports stamped with nothing but the evening and the small brave wreck of their treasures."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "In the morning they would invent practicalities—tape for the tree, oatmeal again, a joke about rich fools."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "Tonight they sat with the ruined gifts on their knees and let the bruise of loving well settle into something almost like warmth."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "The coins in the pasta jar, counted twice that morning, had become this: a short haircut, a naked watch, and a love that did not need to be correct to be true."
+    }
+  ]
+}

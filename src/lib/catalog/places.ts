@@ -129,6 +129,17 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "miss-brill-adapted": { label: "New York", region: "us" },
   "prefer-not": { label: "New York", region: "us" },
   "late-season": { label: "Cape May / New York", region: "us" },
+  "between-the-drop-and-the-water": {
+    label: "Hudson River, upstate New York",
+    region: "us",
+  },
+  "he-woke-changed": { label: "Newark, New Jersey", region: "us" },
+  "the-pattern": { label: "Hudson, New York", region: "us" },
+  "a-coat-worthy-of-respect": { label: "Brooklyn, New York", region: "us" },
+  "what-she-borrowed": { label: "Astoria / Midtown, New York", region: "us" },
+  "it-was-not-nervousness": { label: "Queens, New York", region: "us" },
+  "during-carnival": { label: "New Orleans", region: "us-south" },
+  "what-we-sold": { label: "Chicago, Illinois", region: "us" },
 };
 
 /** Country-of-origin → reader label + silhouette when no setting override. */

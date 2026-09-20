@@ -1,0 +1,351 @@
+{
+  "id": "he-woke-changed",
+  "title": "He Woke Changed",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A breadwinner wakes wrong; the family ledger of duty and relief does the rest. After Kafka, The Metamorphosis, 1915.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The apartment",
+      "place": "Newark",
+      "reentry": "Gregor Samsa woke from uneasy dreams and found himself changed into something that would not fit under the covers.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Gregor Samsa woke from uneasy dreams and found himself changed into something that would not fit under the covers."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "He did not have a name for it."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "His back was hard."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "His legs—too many—moved when he did not ask them to."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "The ceiling looked the same."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "The alarm on the nightstand kept its red digits."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Outside, a bus sighed at the corner stop."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "He tried to turn onto his side and heard a dry scrape against the sheet."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Panic rose, then a practical thought, almost automatic: he would be late for the warehouse route."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "His phone buzzed once against the wood—dispatch—and fell still."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "He reached with what had been an arm and knocked the phone to the floor, where it lit the dust underneath the bed like a small, trapped moon."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "His mother knocked."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"Gregor?"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "You're not up.\""
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "His father's heavier tread followed in the hall."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Grete, his sister, called that coffee was ready."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Their voices were ordinary."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "The ordinary made the room tilt."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "He answered, or tried to."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "What came out was a rasp that startled even him."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Silence on the other side of the door."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Then his father: \"Open up."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "The supervisor already texted.\""
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Keys scratched."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "The lock turned."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "The door opened a hand's width and stopped."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Grete saw him first."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "She did not scream."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "She made a small sound, as if she had bitten her tongue, and shoved the door shut."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "From the hall came whispering, rapid and ugly."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "Gregor lay very still, listening to his family rearrange themselves around the fact of him."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "In the days that followed, the apartment learned a new choreography."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "Food was left just inside the door—milk going warm, then scraps, then nothing anyone would admit to preparing."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Grete was the bravest."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "She entered with a broom held like a weapon and her face turned sideways, and she cleaned around him with a fierce, tearful competence."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "His mother prayed in the kitchen."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "His father stopped looking at the closed door and started looking at bills on the table, as if numbers could replace a son."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "Gregor understood, in the slow way of someone who has always paid for everyone, that he was no longer useful."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "The route went to someone else."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "The insurance calls began."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "His father's voice through the wall grew louder at strangers and quieter at home."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "Once, when Gregor dragged himself toward the living room at night, desperate for the window's cool air, his father drove him back with a rolled magazine and a shoe, breathing hard, eyes wet with something that was not only rage."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "Grete brought a violin case home from her lessons and practiced with the door open, as if music might make the apartment a place again."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "Gregor crept closer, drawn by the thin line of melody."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "She saw him and stopped mid-phrase."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "The bow hung in the air."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "Her face closed."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "\"It has to go,\" she said to their parents, not looking at Gregor."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "\"If it were Gregor, it would have left us already."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "This thing only makes us sick.\""
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "His mother wept."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "His father nodded once, relieved to be given permission."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "Gregor retreated to the room that had been his and felt, with a clarity that hurt less than expecting love, that he was already practicing absence."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "He stopped eating."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "The apple his father had thrown days earlier still sat, browned and soft, against his side where the skin had broken."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "Dust settled on his back."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "Through the thin wall he heard Grete laugh at a video on her phone—brief, young, alive—and the sound did not include him."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "One morning the cleaner found him dry and still near the baseboard."
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "Grete covered him with a sheet without touching what was under it."
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "His father put a hand on her shoulder."
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "His mother opened a window."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "The apartment smelled, briefly, of cold air and relief."
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "That evening they took the bus to the edge of the city and walked where the light was longer."
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "Grete stretched her arms and the wind moved her hair."
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "Her parents watched her as if she were a future they could afford again."
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "Behind them, in a room that would be cleared by the weekend, the last of Gregor's usefulness finished becoming someone else's problem."
+    }
+  ]
+}

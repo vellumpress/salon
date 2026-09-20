@@ -1,0 +1,306 @@
+{
+  "id": "a-coat-worthy-of-respect",
+  "title": "A Coat Worthy of Respect",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A meek clerk earns a coat meal by meal; winter takes it, and the city notices too late. After Gogol, The Overcoat, 1842.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The coat",
+      "place": "Brooklyn",
+      "reentry": "Akaky Akakievich Petrovich—called Akaky at the office because longer names took time—copied documents for the city with a devotion that looked, to happier people, like emptiness.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Akaky Akakievich Petrovich—called Akaky at the office because longer names took time—copied documents for the city with a devotion that looked, to happier people, like emptiness."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "He lived in a room above a laundromat that breathed warm soap through the floorboards at night."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "He ate the same soft foods from the same dented pot."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "His coat, once black, had gone the color of dirty water and let the wind in through seams he patched until the patches needed patches."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Colleagues joked that he was born in the copy queue."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "He smiled without hearing them, already returning in his mind to a line of text that needed duplicating exactly."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Winter arrived early that year."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Wind came off the harbor and found every hole in him."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "On the walk to work his teeth ached."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "A tailor on Fifth Avenue in Brooklyn—Petrovich, no relation, a man with yellow nails and exact opinions—held Akaky's coat up to the shop's hard light and shook his head as if offended by cloth."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"It cannot be repaired."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "It is done."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "You need a new one.\""
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "He named a price that made Akaky sit down on the tailor's stool without being asked."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Outside, a bus sighed and pulled away without him."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "For months Akaky saved with a monkish terror."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "He skipped the tea he liked at the corner cart."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "He walked instead of taking the bus, even when rain needled his collar."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "He ate thinner soups."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "At night he imagined the new coat the way other men imagined lotteries or lovers: weight on the shoulders, warmth at the wrists, the clean sound of a zipper closing out the world."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "He whispered measurements to himself while copying."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "When at last he returned to Petrovich with the money in an envelope soft from handling, his hands shook so badly the tailor had to take the bills out for him."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "The finished coat was plain and dark and, to Akaky, holy."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "No logo."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "No drama."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Only wool that meant business against January."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "He wore it out of the shop like a man leaving a church."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "At the office, colleagues noticed—looked twice, offered a clumsy toast with paper cups."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "Someone suggested a bar after work."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "For the first time in years Akaky went out after dark wearing dignity he could button to the throat."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "The fluorescent lobby of his building, when he came home, seemed briefly less cruel."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "On the way back through a poorly lit stretch near the park, where the cameras had been broken for months, two men stepped from the shadow of a van."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "Akaky thought they wanted directions; he was always ready to be useful."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "They took the coat."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "One hit him when he clung to a sleeve with a small animal cry."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "He fell onto cold pavement and heard their steps recede, laughing."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "Snow began, thin as dust on his cheek."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "He lay there a while tasting blood, the old wind finding him again with intimate familiarity."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "He reported it at the precinct and at the office."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "A clerk listened without writing much."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "A supervisor told him to be practical, to buy another, as if another were a plant one could grow overnight."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "Akaky's face, always pale, took on a gray that worried even those who mocked him."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "He returned to the ruined coat and to copying, but the letters swam."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "He stopped sleeping."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "One evening he wandered into the snow talking to officials who were not there, demanding his coat from the wind and from a certain Important Person who had waved him away."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "He was brought home feverish by a neighbor from the laundromat."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "He died without spectacle, as he had lived, the radiator ticking like a clock with no appointment."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "Afterward, rumors moved through the precinct like drafts under doors: a figure in a stolen coat, or seeking one, stopping clerks on late streets."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "Names differed."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "The need did not."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "Someone said a certain important person who had refused Akaky help walked home coatless one night near Borough Hall, swearing he'd felt a tug at his collar—though all anyone could prove was fright, and a generosity that lasted almost a week."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "Whether ghost or story told to make the living kinder, the effect was the same."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "In the office they spoke more softly for a few days."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "Someone taped a notice about respectful conduct near the copy machine."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "Then the printers hummed again."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "Winter continued its work."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "Somewhere a plain dark coat—real or remembered—kept searching the cold for the man who had earned it one skipped meal at a time, and for a city that had noticed him only after he became impossible to ignore."
+    }
+  ]
+}

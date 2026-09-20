@@ -559,6 +559,8 @@ html.together-compose.together-kb .chat-slot {
   max-width: 11.5rem;
 }
 
+.cell-adapted::before,
+.cell-adapted::after,
 .cell-works::before,
 .cell-works::after {
   content: "";
@@ -570,11 +572,13 @@ html.together-compose.together-kb .chat-slot {
   pointer-events: none;
 }
 
+.cell-adapted::before,
 .cell-works::before {
   left: 0;
   background: linear-gradient(to right, var(--color-paper), transparent);
 }
 
+.cell-adapted::after,
 .cell-works::after {
   right: 0;
   background: linear-gradient(to left, var(--color-paper), transparent);
