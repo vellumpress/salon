@@ -1,0 +1,2372 @@
+{
+  "id": "wuthering-heights-rio",
+  "title": "Emily Brontë, Wuthering Heights recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "This whole-book remake includes obsession, cruelty, confinement, and death across generations. Warn the room before you Host it; offer a midpoint pause if needed.",
+  "minutes": 37,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Hill Estate above Rio",
+      "place": "Rio de Janeiro",
+      "reentry": "Mr. Lockwood, a soft coastal tenant seeking quiet above Rio's postcard bay, rented the lower house—Thrushcross stand-in among Atlantic scrub and condo glitter far below—and walked uphill to pay respects at Wuthering Heights, a hill estate of old money and worse manners.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Hill Estate above Rio · 2",
+      "place": "Rio de Janeiro",
+      "reentry": "Edgar died.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "She delivered Cathy II and died accusing the",
+      "place": "Rio de Janeiro",
+      "reentry": "She delivered Cathy II and died accusing the living of not understanding the dead's scale of love.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Cathy II and Hareton closed the book by",
+      "place": "Rio de Janeiro",
+      "reentry": "Cathy II and Hareton closed the book by opening a primer on the Heights' porch, reading aloud while dogs slept and Joseph grumbled into a future that finally included soft fruit trees.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Catherine still chose Heathcliff at every",
+      "place": "Rio de Janeiro",
+      "reentry": "Catherine still chose Heathcliff at every stolen hour.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "Hareton Earnshaw—Hindley's small son—learned",
+      "place": "Rio de Janeiro",
+      "reentry": "Hareton Earnshaw—Hindley's small son—learned early the sound of bottles and the absence of lessons.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "She met Linton Heathcliff—pale, peevish,",
+      "place": "Rio de Janeiro",
+      "reentry": "She met Linton Heathcliff—pale, peevish, raised by Isabella away from Rio then returned as Heathcliff's tool—and found him needing.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Afterward the Heights began to change by",
+      "place": "Rio de Janeiro",
+      "reentry": "Afterward the Heights began to change by inches: primers on tables, fruit trees coaxed, dogs less hungry for strangers.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Catherine said the hill had her childhood",
+      "place": "Rio de Janeiro",
+      "reentry": "Catherine said the hill had her childhood bones.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "He shoved the paper away, then pulled it back",
+      "place": "Rio de Janeiro",
+      "reentry": "He shoved the paper away, then pulled it back when she slept.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "She said Catherine Earnshaw had been the same",
+      "place": "Rio de Janeiro",
+      "reentry": "She said Catherine Earnshaw had been the same species—absolute, impatient with half-measures, capable of loving Edgar's gentleness and Heathcliff's storm without translating either into the other's language.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s11",
+      "title": "That half-rise was the future",
+      "place": "Rio de Janeiro",
+      "reentry": "That half-rise was the future beginning.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s12",
+      "title": "Hill Estate above Rio · 13",
+      "place": "Rio de Janeiro",
+      "reentry": "Host note for cruelty and obsession.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s13",
+      "title": "Light entered the Heights without asking",
+      "place": "Rio de Janeiro",
+      "reentry": "Light entered the Heights without asking Heathcliff's permission.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s14",
+      "title": "He died reaching for a window and a",
+      "place": "Rio de Janeiro",
+      "reentry": "He died reaching for a window and a name.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s15",
+      "title": "The living pair occupied the porch with a",
+      "place": "Rio de Janeiro",
+      "reentry": "The living pair occupied the porch with a primer.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s16",
+      "title": "Cathy II kept one of Catherine Earnshaw's old",
+      "place": "Rio de Janeiro",
+      "reentry": "Cathy II kept one of Catherine Earnshaw's old books—margins full of restless pencil—and used it as Hareton's advanced reader.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s17",
+      "title": "Continuous remake ends there—Heathcliff,",
+      "place": "Rio de Janeiro",
+      "reentry": "Continuous remake ends there—Heathcliff, Catherine Earnshaw, Edgar, Nelly, Hindley, Cathy II, Hareton—Rio glamorous below, story harsh above, spirit exact, no pad refrain, whole book closed on earned quiet rather than easy peace.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s18",
+      "title": "That walk closes the revenge curriculum and",
+      "place": "Rio de Janeiro",
+      "reentry": "That walk closes the revenge curriculum and opens the marriage to come.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Mr. Lockwood, a soft coastal tenant seeking quiet above Rio's postcard bay, rented the lower house—Thrushcross stand-in among Atlantic scrub and condo glitter far below—and walked uphill to pay respects at Wuthering Heights, a hill estate of old money and worse manners."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Rain made the path a argument."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Dogs lunged."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Heathcliff received him with a voice like gravel under yacht polish: host as hostility."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Inside, Cathy Linton (Cathy II) sat fierce and trapped; Hareton Earnshaw scowled over books he half hated; Joseph muttered judgment in a kitchen that smelled of coffee and old smoke."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Lockwood stayed the night against his will, dreamed of a waif at the window crying *Catherine*, and woke to Heathcliff's raw grief calling that name into storm."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Curiosity sent Lockwood to Nelly Dean—housekeeper, witness, narrator of the hill's long revenge."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Nelly told him: years earlier Mr. Earnshaw brought home a dark foundling from the city docks—Heathcliff—and set him among Hindley and Catherine Earnshaw as if love could be forced by decree."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Hindley hated the boy."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Catherine paired with him like weather systems colliding."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "They ran the hill scrub above the bay, wild, inseparable."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "After Earnshaw's death Hindley degraded Heathcliff into labor, drunk on inheritance and spite."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "Catherine, half ruined by a stay among the Lintons at the lower house, returned wearing softer manners and Edgar Linton's admiration."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "She still loved Heathcliff as herself."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "She married Edgar anyway—for position, for the bay's civilized rooms, for a story she thought she could braid."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Heathcliff heard her say he was low as dirt compared to Edgar's world and fled into the glamorous city's underside before she finished explaining that she *was* Heathcliff even as she left him."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Years later Heathcliff returned rich—money from unnamed ports and Rio's harder markets—and installed revenge as long climate."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "He gambled Hindley into ruin and addiction, gained leverage on the Heights, married Isabella Linton out of spite, and haunted Catherine's marriage to Edgar until passion and illness cracked her."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Catherine died after childbirth—Cathy II left behind—calling for Heathcliff."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Heathcliff's grief was public and animal; he begged her ghost to haunt him."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "She did, in his mind and in the house's noises, for decades."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Revenge continued into the second generation: Heathcliff seized care of Hindley's son Hareton and raised him rough, denying education as Hindley had denied him."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "He took custody pressures around Cathy II through Linton Heathcliff—his weak son by Isabella—arranging a marriage that funneled Edgar's remaining claim toward Heathcliff's control."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Cathy II suffered the Heights as prison."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Edgar died."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Linton died."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Heathcliff owned nearly everything and enjoyed almost nothing except the torment of memory."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Then the turn Brontë requires: Cathy II and Hareton, both injured by Heathcliff's project, began teaching each other—books, gardens, kindness as rebellion."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Heathcliff, seeing Catherine's eyes in both, lost appetite for revenge."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "He stopped eating, wandered the hill seeking Catherine, spoke of openings in the veil, and died in weather with a look like unwanted peace."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Nelly found him."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Lockwood later heard that Cathy II and Hareton would marry, reclaiming the Heights with gardens and reading."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "Wind moved over the bay's postcard beauty without softening the graves."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "Spirit held: absolute passion; revenge across generations; repair through books and care; glamorous Rio reseat without new-cast drift."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Nelly's voice, in the lower house evenings, filled Lockwood's rented calm with mud and gold."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "She described young Catherine Earnshaw's laugh on the hill path, Heathcliff's silence as devotion, Hindley's fists after the father died."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "She described the Lintons' polished rooms where Edgar offered Catherine a future that photographed well against Sugarloaf light."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "Catherine told Nelly she would marry Edgar because Heathcliff was degraded—then wept that she and Heathcliff were the same soul."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "Nelly, practical, heard disaster."
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "Heathcliff, overhearing only the degradation half, vanished into Rio's rain."
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "Catherine's marriage to Edgar was tender and mismatched."
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "She ruled the lower house like weather."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "Edgar loved her with civilized fear."
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "When Heathcliff returned in dark wealth, Catherine lit up as if the hill had walked in."
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "Edgar stiffened."
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "Isabella Linton mistook Heathcliff's attention for romance; he married her as a blade against the Lintons and against Catherine's peace."
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "Isabella learned cruelty from the inside and fled pregnant."
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "Catherine, torn between men and her own absolute want, fell into fever."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "She delivered Cathy II and died accusing the living of not understanding the dead's scale of love."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Heathcliff, sneaking to her bedside, marked the farewell with a violence of grief that bruised Edgar's household forever."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Hindley's ruin at the Heights became alcoholic theater."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Heathcliff collected debts like teeth."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Hareton grew strong and starved of letters, echoing Heathcliff's old degradation—revenge as curriculum."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Nelly tried to smuggle kindness; Heathcliff allowed only enough to keep the boy useful."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Meanwhile Cathy II grew at the lower house under Edgar's softer rule, curious about the hill she was warned against."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "Curiosity, in this family, is destiny."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "Cathy II met Linton Heathcliff—pale, peevish, trained by his father as bait—and mistook frailty for need she could nurse."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "Heathcliff arranged their proximity with legal and illegal pressures until marriage tied Edgar's line."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "Edgar, dying, begged Nelly to protect Cathy; protection failed against Heathcliff's locks and land hunger."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "Cathy II at the Heights became sharp-tongued survivor, trading insults with Hareton while secretly pitying his forced ignorance."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "She began teaching him letters in defiance."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "Hareton blushed, growled, learned."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "Gardens they repaired became the second generation's counter-plot."
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "Heathcliff watched them one evening against Rio sunset—bay glamorous, hill harsh—and saw Catherine Earnshaw doubled: her fire in Cathy II, her childhood wildness transmuted in Hareton's stubborn jaw."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "Revenge tasted ash."
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "He said little."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "He walked the scrub at night calling Catherine."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "Lockwood's earlier dream-window waif was not only dream in Heathcliff's theology."
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "He stopped his medications of spite—stopped food, stopped schemes mid-sentence."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "Nelly found him wet with morning, smiling at something she could not see."
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "The burial put him near Catherine, against church niceties."
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "Wind over the bay refused postcard softness."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Cathy II and Hareton closed the book by opening a primer on the Heights' porch, reading aloud while dogs slept and Joseph grumbled into a future that finally included soft fruit trees."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Lockwood, hearing the end, walked the hill once more and found the graves: Edgar, Catherine, Heathcliff."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "He imagined quiet."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Nelly said quiet was earned by the young pair's labor, not by romantic death."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Lockwood returned to the lower house and then to softer cities, carrying the story like sand in shoes."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "Rio continued—favela bass far off, yacht lights, hill estates pretending isolation."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "Wuthering Heights remained a hard beautiful machine that love had broken and remade through Cathy II and Hareton."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "Beat inventory lived as hours: foundling arrival; Catherine-Heathcliff wild pairing; Hindley's oppression; Catherine's betrayal-marriage to Edgar; Heathcliff's flight and return; Isabella's misery; Catherine's death; Hindley's ruin; Hareton's degradation; Cathy II's growth; Linton bait marriage; Edgar's death; Heathcliff's ownership; Cathy II-Hareton repair; Heathcliff's death; promised marriage of the second generation."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "Names kept: Heathcliff, Catherine Earnshaw, Edgar Linton, Nelly Dean, Hindley, Cathy II, Hareton, Lockwood, Isabella, Linton Heathcliff, Joseph."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "No pad refrain."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "Glamour only in bay light's pressure against hill cruelty."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "Nelly Dean told the story in evenings when Lockwood's rented rooms smelled of damp plaster and bay salt."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "She had served the Earnshaws since girlhood and the Lintons after, carrying trays and secrets up and down the hill path where Atlantic scrub scratched ankles and Rio's glitter lay below like a different species of life."
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "She did not romanticize."
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "She inventoried."
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "Mr. Earnshaw came home from the city docks one hard year with a dirty, silent child under his coat—Heathcliff—and set him by the fire as if love could be decreed."
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "Mrs. Earnshaw protested."
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "Hindley Earnshaw, the son, hated the intrusion on sight."
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "Catherine Earnshaw, the daughter, stared, then laughed, then took the foundling's hand as if recognizing weather."
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "They grew in the same dirt: racing the ridge above the bay, sleeping in the same scrap of attic when punished, inventing a language of looks."
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "Nelly scrubbed and watched."
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "Joseph preached damnation from the kitchen and called Heathcliff a gift from the wrong God."
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "When Mr. Earnshaw died, Hindley returned from school with a wife and a throne of spite."
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "He drove Heathcliff from lessons to labor—fields, stables, the degraded work Hindley named justice."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Catherine still chose Heathcliff at every stolen hour."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Then she was bitten by a dog on an excursion toward the lower house and stayed among the Lintons—Edgar and Isabella—while her ankle healed and her manners softened against polished floors and kind speech."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "She came back to the Heights wearing cleaner clothes and a new hunger for Edgar Linton's admiration."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Heathcliff, filthy from Hindley's curriculum, felt the gap like a cut."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "Catherine told Nelly she would marry Edgar."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "She also told Nelly that she loved Heathcliff as she loved her own soul—*I am Heathcliff*—and that marrying Edgar would be a way to help Heathcliff somehow, a braid of ambition and passion that made Nelly's hands go cold on the dough."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "Heathcliff, outside the door, heard the words about his degradation and not the soul-claim."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "He left that night into Rio's rain, toward ports and money and the long math of revenge."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "Catherine searched the hill screaming his name."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "The bay lights did not answer."
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "Catherine married Edgar Linton in a ceremony that photographed well against the lower house's gardens, with Sugarloaf a distant postcard and guests who did not know she had already buried half her name in the scrub."
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "Edgar loved her with a civilized devotion that flinched from storms."
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "Catherine ruled the softer estate like weather—tender to Edgar until boredom bit, then sharp, then tender again."
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "Nelly moved with her to the lower house and learned to translate Catherine's moods into household logistics."
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "Isabella Linton watched Catherine with envy and watched the hill path with a romantic imagination that would cost her."
+    },
+    {
+      "id": "s4-15",
+      "sceneId": "s4",
+      "text": "Years passed without Heathcliff, and then he returned."
+    },
+    {
+      "id": "s4-16",
+      "sceneId": "s4",
+      "text": "He arrived at the lower house in dark clothes that fit like money, voice still gravel, eyes still Catherine's unfinished sentence."
+    },
+    {
+      "id": "s4-17",
+      "sceneId": "s4",
+      "text": "Edgar stiffened."
+    },
+    {
+      "id": "s4-18",
+      "sceneId": "s4",
+      "text": "Catherine lit from within."
+    },
+    {
+      "id": "s4-19",
+      "sceneId": "s4",
+      "text": "Nelly felt the old disaster walk in on polished shoes."
+    },
+    {
+      "id": "s4-20",
+      "sceneId": "s4",
+      "text": "Heathcliff said he had been to ports and markets; he did not show receipts."
+    },
+    {
+      "id": "s4-21",
+      "sceneId": "s4",
+      "text": "He had enough capital to buy Hindley's debts and Hindley's future."
+    },
+    {
+      "id": "s4-22",
+      "sceneId": "s4",
+      "text": "At the Heights Hindley, widowed, drunk, gambling through grief, welcomed Heathcliff's company as a man welcomes a knife because it shines."
+    },
+    {
+      "id": "s4-23",
+      "sceneId": "s4",
+      "text": "Night after night Heathcliff won land, leverage, and the pleasure of watching Hindley kneel."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Hareton Earnshaw—Hindley's small son—learned early the sound of bottles and the absence of lessons."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "Catherine could not stay away from Heathcliff."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "They walked the ridge above the bay where childhood had been absolute."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "Edgar forbade the friendship; Catherine raged; Heathcliff smiled like a man who had already priced the household."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "Isabella mistook Heathcliff's glance for love."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "He encouraged the mistake with cold courtship, then married her in a spite-ceremony that bruised both Lintons."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "Isabella wrote Nelly letters from the Heights describing cruelty without metaphor—locks, insults, the discovery that Heathcliff's passion was aimed through her at Catherine and Edgar, not toward her heart."
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "She fled pregnant when flight became possible, carrying Linton Heathcliff in her womb like a debt to the future."
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "Catherine's health cracked under the triangle's pressure."
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "She refused food, spoke of graves, accused Edgar of not understanding the scale of her bond with Heathcliff."
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "In fever she delivered a daughter—Cathy II—and died naming the wild past."
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "Heathcliff forced his way to her bedside for a farewell that left bruises on time itself; he begged her ghost to haunt him rather than leave him in the soft world."
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "Edgar mourned with dignity."
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "Heathcliff mourned with howling on the hill."
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "Nelly closed Catherine's eyes and kept Cathy II alive through nights when the bay glittered as if nothing on the ridge had ended."
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "Hindley's ruin completed itself in drink and debt."
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "Heathcliff became master of the Heights in practice, then in paper."
+    },
+    {
+      "id": "s5-17",
+      "sceneId": "s5",
+      "text": "He took Hareton into a curriculum of ignorance—denied books, denied manners, encouraged roughness—repaying Hindley's old degradation with interest."
+    },
+    {
+      "id": "s5-18",
+      "sceneId": "s5",
+      "text": "Hareton grew strong, handsome under dirt, hungry for approval he would not beg."
+    },
+    {
+      "id": "s5-19",
+      "sceneId": "s5",
+      "text": "Heathcliff called him dog and favorite insult interchangeably."
+    },
+    {
+      "id": "s5-20",
+      "sceneId": "s5",
+      "text": "Nelly, visiting when allowed, smuggled kindness; Heathcliff permitted only what kept the boy functional."
+    },
+    {
+      "id": "s5-21",
+      "sceneId": "s5",
+      "text": "Cathy II grew at the lower house under Edgar's softer grief—curious, lively, warned against the hill."
+    },
+    {
+      "id": "s5-22",
+      "sceneId": "s5",
+      "text": "Warnings are maps for certain children."
+    },
+    {
+      "id": "s5-23",
+      "sceneId": "s5",
+      "text": "She met Hareton once on a boundary ride and found him rude and interesting."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "She met Linton Heathcliff—pale, peevish, raised by Isabella away from Rio then returned as Heathcliff's tool—and found him needing."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "Need can look like love when you are young and kind."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Heathcliff arranged meetings, letters, pressures."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "Edgar, weakening, tried to keep Cathy II from the Heights."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "Heathcliff used Linton's frailty as bait and the law as net."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "Cathy II married Linton under coercion's soft face—care for an invalid, hope for peace—and found herself locked into the Heights as prize and prisoner while Edgar died calling for her too late."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "Linton Heathcliff died not long after, having signed what his father required."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "Cathy II remained under Heathcliff's roof, sharp-tongued, grieving, forced into labor and insults beside Hareton."
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "At first she mocked Hareton's ignorance; he flared; books became weapons and then bridges."
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "She began teaching him letters in stolen evening light."
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "He scowled, learned, brought her stolen flowers from scrub gardens they repaired together."
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "Heathcliff watched from doorways and felt revenge's taste go wrong."
+    },
+    {
+      "id": "s6-12",
+      "sceneId": "s6",
+      "text": "In their faces—Cathy II's fire, Hareton's stubborn jaw—Catherine Earnshaw returned without asking permission."
+    },
+    {
+      "id": "s6-13",
+      "sceneId": "s6",
+      "text": "Lockwood, hearing Nelly reach this turn, set down his cup."
+    },
+    {
+      "id": "s6-14",
+      "sceneId": "s6",
+      "text": "Outside, Rio's night traffic hummed far below the scrub."
+    },
+    {
+      "id": "s6-15",
+      "sceneId": "s6",
+      "text": "Nelly continued: Heathcliff stopped caring about rents and lawsuits mid-sentence."
+    },
+    {
+      "id": "s6-16",
+      "sceneId": "s6",
+      "text": "He wandered the hill calling Catherine."
+    },
+    {
+      "id": "s6-17",
+      "sceneId": "s6",
+      "text": "He spoke of looking through openings into her presence."
+    },
+    {
+      "id": "s6-18",
+      "sceneId": "s6",
+      "text": "He refused food."
+    },
+    {
+      "id": "s6-19",
+      "sceneId": "s6",
+      "text": "Nelly found him one morning by an open window, wet with weather, smiling at what she could not see—dead, or freed, or both."
+    },
+    {
+      "id": "s6-20",
+      "sceneId": "s6",
+      "text": "They buried him near Catherine against pious objection."
+    },
+    {
+      "id": "s6-21",
+      "sceneId": "s6",
+      "text": "Joseph muttered."
+    },
+    {
+      "id": "s6-22",
+      "sceneId": "s6",
+      "text": "Hareton wept without shame."
+    },
+    {
+      "id": "s6-23",
+      "sceneId": "s6",
+      "text": "Cathy II held Hareton's hand openly."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Afterward the Heights began to change by inches: primers on tables, fruit trees coaxed, dogs less hungry for strangers."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Cathy II and Hareton planned marriage as repair, not as property scheme."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "Nelly smiled despite herself."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Lockwood visited the graves—Edgar, Catherine, Heathcliff—and imagined quiet that Nelly insisted was earned by living labor, not by romantic death."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Wind moved over the postcard bay without softening the stones."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Absolute passion had burned a generation; the second generation answered with books and gardens."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Brontë's spirit held in glamorous Rio light: foundling, betrayal, revenge, second generation, end."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "Before Lockwood ever knocked, there were smaller hours that also belonged to the spine."
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "Young Heathcliff in the Earnshaw kitchen, silent while Hindley ate meat and threw him the rind; Catherine sliding her plate toward him under Joseph's nose."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "Young Catherine and Heathcliff spying through the lower house windows at Edgar and Isabella fighting over a dog, laughing at soft children, then Catherine snared by the Lintons' world when the dog bit and the doors opened."
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "Heathcliff sent away in the rain while Catherine stayed in borrowed nightgowns."
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "That separation was the first rehearsal of the marriage."
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "Catherine's return to the Heights after the Linton weeks: cleaner speech, embarrassment at Heathcliff's labor-smell, then private tears into Nelly's apron."
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "Heathcliff listening at doors became habit."
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "Habit became exile the night of her Edgar speech."
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "Nelly always wondered whether one fuller sentence—*I am Heathcliff*—spoken into his hearing would have altered Rio's weather."
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "She did not indulge the wonder long."
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "Wonder does not rewind docks and debts."
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "Edgar's courtship smelled of books and river drives down toward the city's glamorous edge—restaurants, music, the performance of safe future."
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "Catherine loved the safety and hated it."
+    },
+    {
+      "id": "s7-20",
+      "sceneId": "s7",
+      "text": "She told Edgar she was not a Linton soul; he kissed her as if kisses corrected metaphysics."
+    },
+    {
+      "id": "s7-21",
+      "sceneId": "s7",
+      "text": "After marriage she filled the lower house with flowers and storms."
+    },
+    {
+      "id": "s7-22",
+      "sceneId": "s7",
+      "text": "Nelly mediated."
+    },
+    {
+      "id": "s7-23",
+      "sceneId": "s7",
+      "text": "Isabella asked why Catherine still stared at the hill."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Catherine said the hill had her childhood bones."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "Heathcliff's return dinner: Edgar's attempt at civility, Catherine's trembling joy, Nelly's dropped plate."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "Heathcliff's remark that the house still smelled of weakness."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "Later, on the ridge, Catherine struck him for marrying Isabella in rumor-before-fact; he caught her wrist and said she had married first."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "Their love speech was accusation."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "Accusation was their dialect."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "Isabella's elopement with Heathcliff drained Edgar's face white."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "Catherine, pregnant and furious, quarreled with Edgar until her body chose fever."
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "In the fever she spoke to the girl she had been on the scrub path—calling Heathcliff, cursing soft rooms."
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "Nelly and Edgar kept vigil."
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "Heathcliff lurked in garden shadow."
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "When Catherine briefly rallied, she held Edgar's hand and looked through him toward the window."
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "Cathy II's birth was bloody and successful; Catherine's life was not."
+    },
+    {
+      "id": "s8-13",
+      "sceneId": "s8",
+      "text": "The cry of the newborn and Heathcliff's cry on the hill arrived in Nelly's memory as one braided sound."
+    },
+    {
+      "id": "s8-14",
+      "sceneId": "s8",
+      "text": "Isabella's letter from the Heights—Nelly kept it years—described Heathcliff hanging a spaniel, describing Hareton as a colt to break, describing her own marriage bed as cold war."
+    },
+    {
+      "id": "s8-15",
+      "sceneId": "s8",
+      "text": "She escaped to the coast north of the city and died after raising Linton in peevish comfort."
+    },
+    {
+      "id": "s8-16",
+      "sceneId": "s8",
+      "text": "Heathcliff claimed the boy when useful."
+    },
+    {
+      "id": "s8-17",
+      "sceneId": "s8",
+      "text": "Linton's cough and cruelty were both cultivated: Heathcliff taught him to sneer at Cathy II while depending on her pity."
+    },
+    {
+      "id": "s8-18",
+      "sceneId": "s8",
+      "text": "Cathy II's forbidden rides toward the Heights, Edgar's weakening lungs, Nelly's impossible job as fence and door—these filled years of continuous pressure."
+    },
+    {
+      "id": "s8-19",
+      "sceneId": "s8",
+      "text": "When Heathcliff imprisoned Nelly and Cathy II to force the marriage, the lower house's glamour felt oceans away though the bay still shone from certain windows."
+    },
+    {
+      "id": "s8-20",
+      "sceneId": "s8",
+      "text": "Edgar died without his daughter's hand."
+    },
+    {
+      "id": "s8-21",
+      "sceneId": "s8",
+      "text": "Cathy II spat at Heathcliff and then survived him by learning Hareton's pride as something to mend rather than mock."
+    },
+    {
+      "id": "s8-22",
+      "sceneId": "s8",
+      "text": "Hareton's literacy began with his name."
+    },
+    {
+      "id": "s8-23",
+      "sceneId": "s8",
+      "text": "Cathy II traced letters on a table sticky with old wine."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "He shoved the paper away, then pulled it back when she slept."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "Gardens: they cleared thorn, planted, argued about flowers Catherine Earnshaw might have liked."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "Heathcliff, overhearing a laugh between them, walked into rain and stayed until fever should have taken him and did not yet."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "His dying days he spoke to Catherine as if she sat in the chair."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "Nelly heard both sides of a conversation with absence."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "He said revenge had become a stale loaf."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "He said the young pair's eyes undid his work."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "He said he would have Hareton stand to inherit despite himself."
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "Then he stopped speaking to the living."
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "Morning window."
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "Open sash."
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "Smile. End of the hunter."
+    },
+    {
+      "id": "s9-12",
+      "sceneId": "s9",
+      "text": "Lockwood left Rio when the season turned."
+    },
+    {
+      "id": "s9-13",
+      "sceneId": "s9",
+      "text": "He carried Nelly's narrative like contraband tenderness."
+    },
+    {
+      "id": "s9-14",
+      "sceneId": "s9",
+      "text": "Behind him Cathy II and Hareton read aloud on the porch while Joseph complained and the dogs slept and the postcard bay glittered under a wind that refused to become soft simply because a story had found repair."
+    },
+    {
+      "id": "s9-15",
+      "sceneId": "s9",
+      "text": "Heathcliff and Catherine Earnshaw remained the hill's true climate—dead, absolute, haunting."
+    },
+    {
+      "id": "s9-16",
+      "sceneId": "s9",
+      "text": "Edgar remained the civilized cost."
+    },
+    {
+      "id": "s9-17",
+      "sceneId": "s9",
+      "text": "Nelly remained the witness."
+    },
+    {
+      "id": "s9-18",
+      "sceneId": "s9",
+      "text": "Hindley's ruin remained the first scaffold of revenge."
+    },
+    {
+      "id": "s9-19",
+      "sceneId": "s9",
+      "text": "The second generation remained the counter-plot Brontë allows after cruelty has spent itself."
+    },
+    {
+      "id": "s9-20",
+      "sceneId": "s9",
+      "text": "Names intact."
+    },
+    {
+      "id": "s9-21",
+      "sceneId": "s9",
+      "text": "Glamour reseated."
+    },
+    {
+      "id": "s9-22",
+      "sceneId": "s9",
+      "text": "Lockwood asked Nelly once whether Heathcliff had been mad."
+    },
+    {
+      "id": "s9-23",
+      "sceneId": "s9",
+      "text": "Nelly said madness was too small a word for a man who made property into prayer against a ghost."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "She said Catherine Earnshaw had been the same species—absolute, impatient with half-measures, capable of loving Edgar's gentleness and Heathcliff's storm without translating either into the other's language."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "Rio's hill estates are full of people who marry for bay views; Catherine married for a view and then died of the hill she betrayed."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "Heathcliff bought the hill and then died of the woman who left it."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "Nelly remembered Hindley's wife Frances—brief, coughing, tender to Hareton, dead soon enough to leave Hindley alone with bottles and Heathcliff's returning shadow."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "Frances had tried to soften Hindley; soft did not stick."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "After her death Hindley's cruelty to Heathcliff intensified until Heathcliff's absence made cruelty hunger for a new object—Hareton, then himself."
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "When Heathcliff returned rich, Hindley welcomed him with a gambler's hope of winning the foundling down again."
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "He lost the house instead, night by night, while Joseph muttered scripture and Hareton slept through shouts."
+    },
+    {
+      "id": "s10-8",
+      "sceneId": "s10",
+      "text": "Catherine's pregnancy quarrel with Edgar remained etched: she struck her head against a sofa arm, refused meals, spoke of wanting the grave's open air."
+    },
+    {
+      "id": "s10-9",
+      "sceneId": "s10",
+      "text": "Edgar, terrified, called doctors from the glamorous clinics near the coast; doctors spoke of nerves."
+    },
+    {
+      "id": "s10-10",
+      "sceneId": "s10",
+      "text": "Nerves was what soft men called Catherine's climate."
+    },
+    {
+      "id": "s10-11",
+      "sceneId": "s10",
+      "text": "Heathcliff, banned from the house, sent messages through Nelly that Nelly sometimes withheld and sometimes delivered like controlled explosives."
+    },
+    {
+      "id": "s10-12",
+      "sceneId": "s10",
+      "text": "Catherine, hearing his name, brightened into ruin faster."
+    },
+    {
+      "id": "s10-13",
+      "sceneId": "s10",
+      "text": "After Catherine's death Edgar closed the lower house against Heathcliff with legal and emotional bolts."
+    },
+    {
+      "id": "s10-14",
+      "sceneId": "s10",
+      "text": "Heathcliff answered by owning the Heights more thoroughly and by marrying Isabella into misery as ongoing correspondence with Edgar's pain."
+    },
+    {
+      "id": "s10-15",
+      "sceneId": "s10",
+      "text": "Isabella's escape was the only clean win the Lintons managed in those years, and even that left Linton Heathcliff as unpaid bill."
+    },
+    {
+      "id": "s10-16",
+      "sceneId": "s10",
+      "text": "Cathy II as a child asked Nelly why she had no mother."
+    },
+    {
+      "id": "s10-17",
+      "sceneId": "s10",
+      "text": "Nelly spoke carefully of angels and illness."
+    },
+    {
+      "id": "s10-18",
+      "sceneId": "s10",
+      "text": "Cathy II pointed at the hill and said the wind sounded like a woman."
+    },
+    {
+      "id": "s10-19",
+      "sceneId": "s10",
+      "text": "Nelly crossed herself without theology's confidence."
+    },
+    {
+      "id": "s10-20",
+      "sceneId": "s10",
+      "text": "Years later Cathy II would stand in Catherine Earnshaw's old room at the Heights and feel the past like humidity."
+    },
+    {
+      "id": "s10-21",
+      "sceneId": "s10",
+      "text": "The forced marriage days deserve slow fidelity: Heathcliff's locked rooms, Linton's whimpering demands for Cathy II's care, Nelly imprisoned with her, Edgar dying downslope without goodbye."
+    },
+    {
+      "id": "s10-22",
+      "sceneId": "s10",
+      "text": "Cathy II signed papers to ease Linton's cough and learned signatures can be cages."
+    },
+    {
+      "id": "s10-23",
+      "sceneId": "s10",
+      "text": "When Linton died she spat on Heathcliff's floor and received a slap that Hareton half rose against—then sank, still half-trained to Heathcliff's rule."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "That half-rise was the future beginning."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Teaching Hareton to read was Cathy II's revenge against revenge."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "She mocked him less as his fingers stopped breaking pencil points."
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "He carved her name badly into a porch rail; she did not sand it away."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "They walked the boundary where Lockwood would later struggle in rain and spoke of planting."
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "Heathcliff, hearing *we*, felt Catherine's old plural—*I am Heathcliff*—twist into a plural he did not own."
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "He stopped eating within a week."
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "On his last afternoon he told Nelly to keep the young ones clear of him."
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "He wanted the house open to weather."
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "She left a door unlatched."
+    },
+    {
+      "id": "s11-10",
+      "sceneId": "s11",
+      "text": "Morning found him."
+    },
+    {
+      "id": "s11-11",
+      "sceneId": "s11",
+      "text": "Cathy II cried with anger and relief."
+    },
+    {
+      "id": "s11-12",
+      "sceneId": "s11",
+      "text": "Hareton cried like a son of sorts."
+    },
+    {
+      "id": "s11-13",
+      "sceneId": "s11",
+      "text": "Burial near Catherine was Heathcliff's last successful willfulness."
+    },
+    {
+      "id": "s11-14",
+      "sceneId": "s11",
+      "text": "Edgar already lay on the other side of her—civilized, permanent, outvoted in dirt by Heathcliff's claim to adjacency."
+    },
+    {
+      "id": "s11-15",
+      "sceneId": "s11",
+      "text": "Lockwood's coda: spring light on the graves, bees, the sense that the dead slept quietly if the living tended gardens."
+    },
+    {
+      "id": "s11-16",
+      "sceneId": "s11",
+      "text": "Nelly said quiet was a practice."
+    },
+    {
+      "id": "s11-17",
+      "sceneId": "s11",
+      "text": "Cathy II and Hareton practiced."
+    },
+    {
+      "id": "s11-18",
+      "sceneId": "s11",
+      "text": "Joseph grumbled into longer evenings."
+    },
+    {
+      "id": "s11-19",
+      "sceneId": "s11",
+      "text": "Rio's postcard bay glittered."
+    },
+    {
+      "id": "s11-20",
+      "sceneId": "s11",
+      "text": "The Heights remained named for weather."
+    },
+    {
+      "id": "s11-21",
+      "sceneId": "s11",
+      "text": "Continuous remake: foundling Heathcliff, Catherine Earnshaw's betrayal-marriage to Edgar, Heathcliff's return and revenge, Isabella, Catherine's death, Hindley's ruin, Hareton degraded, Cathy II trapped then teaching, Heathcliff's end, second-generation repair."
+    },
+    {
+      "id": "s11-22",
+      "sceneId": "s11",
+      "text": "No new cast."
+    },
+    {
+      "id": "s11-23",
+      "sceneId": "s11",
+      "text": "No filler refrain."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "Host note for cruelty and obsession."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "Whole book."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "Host listeners should be warned: this continuous remake holds cruelty, domestic torment, obsessive grief, and the degradation of children as revenge curriculum."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "Exact harm, not spectacle."
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "Offer a midpoint pause if the room needs air."
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "Brontë's spirit does not apologize for harshness; neither does this Rio reseat."
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "Return to Nelly's kitchen voice for the hours Lockwood did not see."
+    },
+    {
+      "id": "s12-7",
+      "sceneId": "s12",
+      "text": "She remembered Heathcliff as a boy refusing to cry when Hindley struck him, storing tears as future capital."
+    },
+    {
+      "id": "s12-8",
+      "sceneId": "s12",
+      "text": "She remembered Catherine Earnshaw cutting a lock of Heathcliff's hair and sewing it into a pillow she later shared with Edgar—secret textile treason."
+    },
+    {
+      "id": "s12-9",
+      "sceneId": "s12",
+      "text": "She remembered Edgar finding that lock after Catherine's death and nearly burning it; Nelly saved it and, years after, wondered whether she should have."
+    },
+    {
+      "id": "s12-10",
+      "sceneId": "s12",
+      "text": "Saving is also interference."
+    },
+    {
+      "id": "s12-11",
+      "sceneId": "s12",
+      "text": "She remembered Isabella arriving at the lower house after escape, neck bruised, laughing a high broken laugh, swearing Cathy II would never go near Heathcliff if Isabella's ghost had to stand on the path."
+    },
+    {
+      "id": "s12-12",
+      "sceneId": "s12",
+      "text": "Isabella's ghost did not have that power."
+    },
+    {
+      "id": "s12-13",
+      "sceneId": "s12",
+      "text": "Heathcliff's living will did."
+    },
+    {
+      "id": "s12-14",
+      "sceneId": "s12",
+      "text": "Cathy II's captivity evenings: copying Linton's peevish letters, emptying chamber pots, trading insults with Hareton that slowly became jokes, then lessons."
+    },
+    {
+      "id": "s12-15",
+      "sceneId": "s12",
+      "text": "One night she threw a book at Hareton; he threw it back open to a page; she made him sound the words."
+    },
+    {
+      "id": "s12-16",
+      "sceneId": "s12",
+      "text": "Heathcliff passed, paused, almost smiled, then hardened his face as if smiling were betrayal of Catherine's unfinished war."
+    },
+    {
+      "id": "s12-17",
+      "sceneId": "s12",
+      "text": "Later he told Nelly the boy and girl undid him by resembling peace."
+    },
+    {
+      "id": "s12-18",
+      "sceneId": "s12",
+      "text": "Peace was the one revenge he had not planned."
+    },
+    {
+      "id": "s12-19",
+      "sceneId": "s12",
+      "text": "When Heathcliff died, Joseph wanted exorcism talk."
+    },
+    {
+      "id": "s12-20",
+      "sceneId": "s12",
+      "text": "Hareton wanted quiet."
+    },
+    {
+      "id": "s12-21",
+      "sceneId": "s12",
+      "text": "Cathy II wanted the windows washed."
+    },
+    {
+      "id": "s12-22",
+      "sceneId": "s12",
+      "text": "Practical holiness again—same family as Sonia's scarf elsewhere, different hill."
+    },
+    {
+      "id": "s12-23",
+      "sceneId": "s12",
+      "text": "They washed windows."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Light entered the Heights without asking Heathcliff's permission."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "Below, Rio went on hiring views."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "Above, scrub took the bodies into ordinary grass."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "Lockwood published nothing."
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "He was not that kind of tenant."
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "He told the story once to a dinner companion in a softer city and watched the companion flinch from absolute passion as from bad manners."
+    },
+    {
+      "id": "s13-6",
+      "sceneId": "s13",
+      "text": "Lockwood thought of Heathcliff calling *Catherine* into storm and did not flinch."
+    },
+    {
+      "id": "s13-7",
+      "sceneId": "s13",
+      "text": "Some stories train the nerves."
+    },
+    {
+      "id": "s13-8",
+      "sceneId": "s13",
+      "text": "This one did."
+    },
+    {
+      "id": "s13-9",
+      "sceneId": "s13",
+      "text": "So the hill estate above the bay completes its arc: Heathcliff foundling; Catherine Earnshaw loving and leaving; Edgar marrying gentleness into storm; Nelly witnessing; Hindley ruining and ruined; Cathy II and Hareton repairing through books and garden; Heathcliff ending when revenge loses appetite."
+    },
+    {
+      "id": "s13-10",
+      "sceneId": "s13",
+      "text": "Nelly Dean told Lockwood the middle years without softening them."
+    },
+    {
+      "id": "s13-11",
+      "sceneId": "s13",
+      "text": "Hindley Earnshaw, after Frances died, drank the estate into a weapon and used Heathcliff as its edge until Heathcliff left—three years, or a rumor of years—and returned with money that smelled of ports and unpaid debts."
+    },
+    {
+      "id": "s13-12",
+      "sceneId": "s13",
+      "text": "Catherine, already Mrs. Edgar Linton of the lower house, welcomed him like weather she had ordered and could not dismiss."
+    },
+    {
+      "id": "s13-13",
+      "sceneId": "s13",
+      "text": "Edgar's gentleness became a kind of siege."
+    },
+    {
+      "id": "s13-14",
+      "sceneId": "s13",
+      "text": "Isabella Linton mistook Heathcliff's intensity for a future and married into the hill house; the marriage taught her that some storms are only interested in damaging the landscape that resembles Catherine."
+    },
+    {
+      "id": "s13-15",
+      "sceneId": "s13",
+      "text": "She fled pregnant; Linton Heathcliff grew into a peevish instrument."
+    },
+    {
+      "id": "s13-16",
+      "sceneId": "s13",
+      "text": "When Catherine died after childbirth—Cathy's cry in the room, Heathcliff's howl on the path—the first generation's plot locked."
+    },
+    {
+      "id": "s13-17",
+      "sceneId": "s13",
+      "text": "Revenge then became paperwork and guardianship."
+    },
+    {
+      "id": "s13-18",
+      "sceneId": "s13",
+      "text": "Heathcliff claimed Hareton's education and Cathy's options, paired cousin to cousin, and watched the second Catherine learn the hill's grammar the hard way."
+    },
+    {
+      "id": "s13-19",
+      "sceneId": "s13",
+      "text": "Nelly carried soup and warnings."
+    },
+    {
+      "id": "s13-20",
+      "sceneId": "s13",
+      "text": "Lockwood, later, mistook the living for ghosts and the ghosts for décor."
+    },
+    {
+      "id": "s13-21",
+      "sceneId": "s13",
+      "text": "What broke the pattern was not a sermon."
+    },
+    {
+      "id": "s13-22",
+      "sceneId": "s13",
+      "text": "Cathy taught Hareton to read in the garden above the bay; books became a truce; Heathcliff, walking the rooms where Catherine's name still clung to wood, found revenge had lost its appetite."
+    },
+    {
+      "id": "s13-23",
+      "sceneId": "s13",
+      "text": "He stopped eating the future."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "He died reaching for a window and a name."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "The second generation inherited air that could, finally, be shared."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "Rio's postcard glitter stayed below the ridge, irrelevant as lace on a wound."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "The Heights kept the wind."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "Brontë's names stayed in the mouth: Heathcliff, Catherine Earnshaw, Edgar Linton, Nelly Dean, Hindley, Isabella, Linton Heathcliff, Cathy, Hareton—no renamed cast, no soft ending pretending the first Catherine lived."
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Emily Brontë's names and beats, glamorous 2026 Rio pressure, continuous whole book, never Featured, fidelity locked."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "On a clear morning after Heathcliff's burial, Cathy II walked Hareton to the boundary scrub and made him read the road sign toward the coastal road—letters he had once smashed with a stone in shame."
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "He read them."
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "She kissed his cheek without theater."
+    },
+    {
+      "id": "s14-9",
+      "sceneId": "s14",
+      "text": "Joseph, spying, predicted damnation; the prediction had lost staff."
+    },
+    {
+      "id": "s14-10",
+      "sceneId": "s14",
+      "text": "Nelly baked bread and thought of Catherine Earnshaw's hands at the same dough years before—impatient, flour to the elbows, already halfway to Edgar's parlor and Heathcliff's storm at once."
+    },
+    {
+      "id": "s14-11",
+      "sceneId": "s14",
+      "text": "Bread does not choose."
+    },
+    {
+      "id": "s14-12",
+      "sceneId": "s14",
+      "text": "People do, badly, absolutely."
+    },
+    {
+      "id": "s14-13",
+      "sceneId": "s14",
+      "text": "Edgar Linton, in Nelly's private ranking, had been a good man unmatched to a weather system."
+    },
+    {
+      "id": "s14-14",
+      "sceneId": "s14",
+      "text": "He loved Cathy II with a softness Heathcliff mocked and Cathy II required."
+    },
+    {
+      "id": "s14-15",
+      "sceneId": "s14",
+      "text": "His death during her imprisonment remained the wound she would not forgive even when she stopped spitting on floors."
+    },
+    {
+      "id": "s14-16",
+      "sceneId": "s14",
+      "text": "Forgiveness, on this hill, was never the point."
+    },
+    {
+      "id": "s14-17",
+      "sceneId": "s14",
+      "text": "Continuance was."
+    },
+    {
+      "id": "s14-18",
+      "sceneId": "s14",
+      "text": "She continued."
+    },
+    {
+      "id": "s14-19",
+      "sceneId": "s14",
+      "text": "Hareton continued beside her."
+    },
+    {
+      "id": "s14-20",
+      "sceneId": "s14",
+      "text": "That was Brontë's allowed mercy after the absolute burned out."
+    },
+    {
+      "id": "s14-21",
+      "sceneId": "s14",
+      "text": "Heathcliff's ghost—if Lockwood's dream counted—cried at windows for Catherine."
+    },
+    {
+      "id": "s14-22",
+      "sceneId": "s14",
+      "text": "Catherine's ghost—if Heathcliff's hunger counted—answered by not letting him rest in revenge's chair."
+    },
+    {
+      "id": "s14-23",
+      "sceneId": "s14",
+      "text": "Together they occupied the ridge more lastingly than condo glitter occupied the shore."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "The living pair occupied the porch with a primer."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Both occupations true."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "The continuous novel holds both without pad, without inventing a kinder Heathcliff or a shallower Catherine."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "Hindley's last months had been delirium and debt documents."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "Heathcliff sat through them like a collector at a bedside."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "Hareton, small, watched the collector and the father blur."
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "That blur became Hareton's education until Cathy II rewrote it."
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "Rewriting took months of scratched letters and shared water and one fistfight that ended in laughter."
+    },
+    {
+      "id": "s15-8",
+      "sceneId": "s15",
+      "text": "Laughter on the Heights had been rare currency."
+    },
+    {
+      "id": "s15-9",
+      "sceneId": "s15",
+      "text": "They spent it carefully."
+    },
+    {
+      "id": "s15-10",
+      "sceneId": "s15",
+      "text": "Isabella's absence from Rio after escape left a rumor trail up the coast—boarding houses, a sickly boy, a refusal to return even when money thinned."
+    },
+    {
+      "id": "s15-11",
+      "sceneId": "s15",
+      "text": "Heathcliff did not chase her; he waited for Linton as one waits for a tool to mature."
+    },
+    {
+      "id": "s15-12",
+      "sceneId": "s15",
+      "text": "When the tool arrived coughing, Heathcliff used him without fatherly illusion."
+    },
+    {
+      "id": "s15-13",
+      "sceneId": "s15",
+      "text": "Cathy II's pity was the lubricant."
+    },
+    {
+      "id": "s15-14",
+      "sceneId": "s15",
+      "text": "The marriage sealed."
+    },
+    {
+      "id": "s15-15",
+      "sceneId": "s15",
+      "text": "The tool broke."
+    },
+    {
+      "id": "s15-16",
+      "sceneId": "s15",
+      "text": "Heathcliff kept the seal's advantages until watching Cathy II teach Hareton made advantages taste like ash."
+    },
+    {
+      "id": "s15-17",
+      "sceneId": "s15",
+      "text": "Lockwood's final walk among the graves happened in mild weather that felt like insult to the story's temperature."
+    },
+    {
+      "id": "s15-18",
+      "sceneId": "s15",
+      "text": "He read names: Edgar Linton, Catherine Earnshaw Linton, Heathcliff."
+    },
+    {
+      "id": "s15-19",
+      "sceneId": "s15",
+      "text": "He imagined worms and quiet."
+    },
+    {
+      "id": "s15-20",
+      "sceneId": "s15",
+      "text": "Nelly, later, told him not to invent more peace than the living had earned."
+    },
+    {
+      "id": "s15-21",
+      "sceneId": "s15",
+      "text": "He accepted the correction."
+    },
+    {
+      "id": "s15-22",
+      "sceneId": "s15",
+      "text": "Soft tenants need correcting."
+    },
+    {
+      "id": "s15-23",
+      "sceneId": "s15",
+      "text": "Thus Wuthering Heights in Rio stands complete enough for Mike's lock: characters original; plot beats in order; story and spirit matched; glamorous city reseat; no new-book drift; whole continuous book; Host note for cruelty/obsession; Author and title display kept; never Featured."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Cathy II kept one of Catherine Earnshaw's old books—margins full of restless pencil—and used it as Hareton's advanced reader."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "When he stumbled on a word Catherine had underlined decades before, Cathy II felt the generations stack without collapsing."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "Hareton asked who marked the page."
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "Cathy II said, \"My mother."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "Your father's old enemy's love.\""
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "Hareton frowned through the grammar of that sentence, then nodded."
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "On this hill, love and enemy shared beds and graves."
+    },
+    {
+      "id": "s16-7",
+      "sceneId": "s16",
+      "text": "He read the next line aloud carefully."
+    },
+    {
+      "id": "s16-8",
+      "sceneId": "s16",
+      "text": "Care was the new dialect."
+    },
+    {
+      "id": "s16-9",
+      "sceneId": "s16",
+      "text": "Heathcliff, in Nelly's last inventory, had not been merely cruel; he had been faithful to a single temperature until fidelity destroyed appetite."
+    },
+    {
+      "id": "s16-10",
+      "sceneId": "s16",
+      "text": "Catherine Earnshaw had been faithful to doubleness until doubleness killed her."
+    },
+    {
+      "id": "s16-11",
+      "sceneId": "s16",
+      "text": "Edgar had been faithful to gentleness until gentleness became helplessness."
+    },
+    {
+      "id": "s16-12",
+      "sceneId": "s16",
+      "text": "Nelly had been faithful to witnessing."
+    },
+    {
+      "id": "s16-13",
+      "sceneId": "s16",
+      "text": "Hindley to spite."
+    },
+    {
+      "id": "s16-14",
+      "sceneId": "s16",
+      "text": "Isabella to escape."
+    },
+    {
+      "id": "s16-15",
+      "sceneId": "s16",
+      "text": "Linton to weakness as strategy."
+    },
+    {
+      "id": "s16-16",
+      "sceneId": "s16",
+      "text": "Joseph to judgment."
+    },
+    {
+      "id": "s16-17",
+      "sceneId": "s16",
+      "text": "Lockwood to curiosity."
+    },
+    {
+      "id": "s16-18",
+      "sceneId": "s16",
+      "text": "Cathy II and Hareton to repair."
+    },
+    {
+      "id": "s16-19",
+      "sceneId": "s16",
+      "text": "The cast, original and complete, stands."
+    },
+    {
+      "id": "s16-20",
+      "sceneId": "s16",
+      "text": "Wind over the bay still refuses postcard softness when it hits the Heights."
+    },
+    {
+      "id": "s16-21",
+      "sceneId": "s16",
+      "text": "Dogs still bark."
+    },
+    {
+      "id": "s16-22",
+      "sceneId": "s16",
+      "text": "The porch still holds primers."
+    },
+    {
+      "id": "s16-23",
+      "sceneId": "s16",
+      "text": "Somewhere in scrub the foundling's first path remains a scar of dirt."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "Continuous remake ends there—Heathcliff, Catherine Earnshaw, Edgar, Nelly, Hindley, Cathy II, Hareton—Rio glamorous below, story harsh above, spirit exact, no pad refrain, whole book closed on earned quiet rather than easy peace."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "Mike asked for characters, plot, story, spirit matching the originals—glamorous 2026 city reseat OK, new-book drift not OK."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "This shelf obeys."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "Heathcliff remains Heathcliff, not a renamed stand-in."
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "Catherine Earnshaw remains the woman who says she is Heathcliff and marries Edgar anyway."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "Nelly remains the telling throat."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "The second generation remains the counter-weather."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "Install path: `/workspace/vellum/adapted-by-salon/wuthering-heights-rio/`."
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "Section: Adapted by Salon only—never Featured."
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "Form: one continuous full-text, no timed sits."
+    },
+    {
+      "id": "s17-10",
+      "sceneId": "s17",
+      "text": "Final image: evening on the porch, Cathy II correcting Hareton's thumb on a page, Hareton grinning despite himself, Nelly in the doorway with tea, Joseph muttering, dogs at rest, bay lights igniting far below like a world that never learned these names."
+    },
+    {
+      "id": "s17-11",
+      "sceneId": "s17",
+      "text": "Above that world the Heights keep them—Heathcliff and Catherine especially—in wind and scrub and grave adjacency."
+    },
+    {
+      "id": "s17-12",
+      "sceneId": "s17",
+      "text": "The continuous book rests."
+    },
+    {
+      "id": "s17-13",
+      "sceneId": "s17",
+      "text": "Fidelity holds."
+    },
+    {
+      "id": "s17-14",
+      "sceneId": "s17",
+      "text": "One more strand Nelly insisted Lockwood hear: after Heathcliff's death, Hareton spent nights at the graves like a sentinel learning gentleness."
+    },
+    {
+      "id": "s17-15",
+      "sceneId": "s17",
+      "text": "Cathy II joined him once with a lantern and no speech."
+    },
+    {
+      "id": "s17-16",
+      "sceneId": "s17",
+      "text": "They sat between Catherine and Heathcliff's stones while Edgar's marker kept civilized distance."
+    },
+    {
+      "id": "s17-17",
+      "sceneId": "s17",
+      "text": "Cathy II said, \"They made us as war."
+    },
+    {
+      "id": "s17-18",
+      "sceneId": "s17",
+      "text": "We can make us as garden.\""
+    },
+    {
+      "id": "s17-19",
+      "sceneId": "s17",
+      "text": "Hareton said her name—*Cathy*—as if practicing a softer word than any Heathcliff taught."
+    },
+    {
+      "id": "s17-20",
+      "sceneId": "s17",
+      "text": "Lantern light shook."
+    },
+    {
+      "id": "s17-21",
+      "sceneId": "s17",
+      "text": "Below them Rio performed nightlife."
+    },
+    {
+      "id": "s17-22",
+      "sceneId": "s17",
+      "text": "Above them wind performed the only music the Heights trusted."
+    },
+    {
+      "id": "s17-23",
+      "sceneId": "s17",
+      "text": "They walked home and left the dead to their adjacency."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "That walk closes the revenge curriculum and opens the marriage to come."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "Brontë allows as much."
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "This remake allows as much—no more soft inventing, no less harsh truth."
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "Heathcliff."
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "Catherine Earnshaw."
+    },
+    {
+      "id": "s18-5",
+      "sceneId": "s18",
+      "text": "Edgar. Nelly."
+    },
+    {
+      "id": "s18-6",
+      "sceneId": "s18",
+      "text": "Hindley."
+    },
+    {
+      "id": "s18-7",
+      "sceneId": "s18",
+      "text": "Cathy II."
+    },
+    {
+      "id": "s18-8",
+      "sceneId": "s18",
+      "text": "Hareton."
+    },
+    {
+      "id": "s18-9",
+      "sceneId": "s18",
+      "text": "Host note stands beside the text: cruelty, obsession, child degradation as revenge, grief that howls."
+    },
+    {
+      "id": "s18-10",
+      "sceneId": "s18",
+      "text": "Warn the room."
+    },
+    {
+      "id": "s18-11",
+      "sceneId": "s18",
+      "text": "The glamorous bay does not cancel the hill."
+    },
+    {
+      "id": "s18-12",
+      "sceneId": "s18",
+      "text": "Readers finish with original names in mouth and beats intact—foundling to repair—under 2026 Rio light, continuous, unpadded, fidelity-stamped for Mira's shelf and Mike's lock."
+    }
+  ]
+}

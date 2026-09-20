@@ -1,0 +1,2514 @@
+{
+  "id": "dracula-istanbul",
+  "title": "Bram Stoker, Dracula recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "This whole-book remake includes vampiric violence, staking, and death. Period-true to Stoker’s ending, written without gore spectacle. Warn the room before you Host it; offer a midpoint pause if needed.",
+  "minutes": 37,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Jonathan Harker’s papers",
+      "place": "Istanbul",
+      "reentry": "Jonathan Harker steamed up the Bosphorus toward a yalı that needed lawyers more than guests.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Prisoner",
+      "place": "Istanbul",
+      "reentry": "Doors that should have opened did not.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Mina and Lucy in Bebek",
+      "place": "Istanbul",
+      "reentry": "Mina Murray—soon Harker—joined Lucy Westenra along Bebek’s water road where cafes glittered and villas pretended innocence.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Transfusions and garlic",
+      "place": "Istanbul",
+      "reentry": "Arthur, Seward, Quincey, and Van Helsing gave blood in turn.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "The bloofer lady of the walls",
+      "place": "Istanbul",
+      "reentry": "Children along the old city walls spoke of a beautiful lady who gave sweets and left them weak.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "Harker returned",
+      "place": "Istanbul",
+      "reentry": "Jonathan Harker recovered in a sister city’s clinic and returned to Istanbul thinner, married to Mina in a quiet ceremony Seward witnessed with clinical tenderness.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "The boxes",
+      "place": "Istanbul",
+      "reentry": "Dracula’s earth-boxes—shipped as clay and soil from ancestral ground—spread through warehouses on both shores.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Chase across shores",
+      "place": "Istanbul",
+      "reentry": "Ferries, trains toward the city’s edge, then river and road toward the Count’s retreat line—Stoker’s Transylvania translated into a retreat up the Bosphorus and inland routes Van Helsing’s maps predicted.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Expanded yalı nights",
+      "place": "Istanbul",
+      "reentry": "Harker’s early dinners alone with Dracula featured food Harker ate and the Count did not.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "Lucy’s decline in scenes",
+      "place": "Istanbul",
+      "reentry": "Seward’s phonograph diaries recorded pulses, pallor, sweet temper turning languid.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "Mina’s typing room",
+      "place": "Istanbul",
+      "reentry": "In a rented flat with a view of ferries, Mina organized journals into a single weapon of chronology.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s11",
+      "title": "Warehouse work",
+      "place": "Istanbul",
+      "reentry": "They sterilized earth-boxes with sacred wafer crumbs and seals—Stoker’s Catholic toolkit kept as functional myth.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s12",
+      "title": "Seward’s clinic and Renfield",
+      "place": "Istanbul",
+      "reentry": "In Seward’s private asylum ward—recast along a quiet ridge above the strait—R.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s13",
+      "title": "Arthur and Quincey",
+      "place": "Istanbul",
+      "reentry": "Arthur Holmwood’s title and money opened tombs and closed press mouths.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s14",
+      "title": "Dracula in the city",
+      "place": "Istanbul",
+      "reentry": "Between boxes the Count walked Istanbul like a gentleman of odd hours—Galata after midnight, Asian-shore gardens, fog on Karaköy.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s15",
+      "title": "Final hour in full",
+      "place": "Istanbul",
+      "reentry": "The boat was small; the Count’s last earth was smaller.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s16",
+      "title": "Continuous connective tissue",
+      "place": "Istanbul",
+      "reentry": "Before leaving England-analogue offices for the yalı commission, Harker had kissed Mina in a park and promised ordinary letters.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s17",
+      "title": "Harker’s climb, moment by moment",
+      "place": "Istanbul",
+      "reentry": "The outer ledge crumbled under Harker’s knee.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s18",
+      "title": "Lucy’s sleepwalk",
+      "place": "Istanbul",
+      "reentry": "Mina found Lucy in nightclothes at the wall above black water, eyes open, not awake.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s19",
+      "title": "After Quincey",
+      "place": "Istanbul",
+      "reentry": "They buried Quincey Morris with honors money could buy and friendship made real.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s20",
+      "title": "Demeter analogue and arrival",
+      "place": "Istanbul",
+      "reentry": "The ship that brought Dracula’s primary earth to Istanbul arrived with a dead crew and a logbook of madness—Stoker’s Demeter beat reseated as a Black Sea freighter under storm.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s21",
+      "title": "The men’s covenant",
+      "place": "Istanbul",
+      "reentry": "After Lucy’s tomb, Van Helsing bound Arthur, Seward, Quincey, and Harker into a covenant without costumes: they would hunt until the Count was dust or they were.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s22",
+      "title": "Hypnosis sessions",
+      "place": "Istanbul",
+      "reentry": "At dawn, curtains drawn against ordinary light, Van Helsing’s voice lowered Mina into the Count’s sensory field.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s23",
+      "title": "Renfield’s last loyalty",
+      "place": "Istanbul",
+      "reentry": "Renfield begged Seward to send Mina away from the clinic’s gravity.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s24",
+      "title": "Closing tally",
+      "place": "Istanbul",
+      "reentry": "Boxes destroyed: counted in Seward’s ledger.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Jonathan Harker steamed up the Bosphorus toward a yalı that needed lawyers more than guests."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Istanbul split continents under crane-and-minaret sky."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Count Dracula received him with nocturnal hospitality and cold hands."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Harker wrote Mina Murray letters describing beauty and unease—the house’s locked doors, the absence of servants at dusk, the Count’s refusal of daylight business."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Dracula questioned him on deeds, shipping, and empty houses in the city’s European wards."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Maps bloomed under lamplight."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Harker’s mirror showed no reflection standing behind him when the Count approached."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Shaving blood drew Dracula’s hunger with polite terror."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Doors that should have opened did not."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "The yalı became a cage with excellent views."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Three women found Harker in a sleep-heavy hour—mouths of promise, appetite older than the Republic."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Dracula dispersed them with ownership’s gesture and a warning that sounded like affection’s opposite."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Harker: I am your solicitor, not your livestock."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Dracula: You are my visitor."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Visitors feed the house’s future."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Harker climbed outer walls, saw the Count crawl the facade like a lizard in a coat, and understood folklore had been underwritten."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "He escaped by desperate drop and river mercy, fever-wrecked, toward allies who could wire Mina."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Mina Murray—soon Harker—joined Lucy Westenra along Bebek’s water road where cafes glittered and villas pretended innocence."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Lucy’s laugh traveled cleanly until sleep grew strange."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Pinpricks on her throat; color fading; a sleepwalking night toward the Bosphorus wall."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Dr. John Seward—running a private clinic overlooking the strait—loved Lucy and lost her engagement to Arthur Holmwood."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Quincey Morris, visiting friend with New World directness, loved her too."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Their rivalry stayed gentle because Lucy’s decline made rivalry obscene."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Seward called Professor Abraham Van Helsing when transfusion science and ordinary diagnosis failed."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "Van Helsing arrived with garlic, wafers, and a mind that treated superstition as data."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Arthur, Seward, Quincey, and Van Helsing gave blood in turn."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Lucy brightened, then dimmed."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "A wolf-like pressure at the villa door; a broken window; the garlic wreaths disturbed by servants’ ignorance."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Lucy died with a sweetness that fooled the funeral and not Van Helsing."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Children along the old city walls spoke of a beautiful lady who gave sweets and left them weak."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Van Helsing led Arthur, Seward, and Quincey to Lucy’s tomb."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "The coffin empty at night; Lucy returned with hunger’s smile."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Arthur, weeping, ended her unnatural life under Van Helsing’s instruction—staking as mercy."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "The men swore a hunt."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Jonathan Harker recovered in a sister city’s clinic and returned to Istanbul thinner, married to Mina in a quiet ceremony Seward witnessed with clinical tenderness."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "Mina read Jonathan’s journal, believed him, and became the hunt’s memory—typing, ordering, refusing hysteria as a costume assigned to women."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "Van Helsing: You have a man’s brain—I mean no insult—and a woman’s heart."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "We need both."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "Mina: Then do not exclude me from the rooms where plans happen."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "They did exclude her sometimes; the plot punished that exclusion."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Dracula’s earth-boxes—shipped as clay and soil from ancestral ground—spread through warehouses on both shores."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "The hunters traced bills of lading across ferry schedules: Eminönü, Kadıköy, obscure sheds under city walls."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Destroying boxes narrowed the Count’s sleeping options."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "Dracula noticed."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "He visited Mina in psychic assault—white face at the window, forced communion, a brand of wafer-burn when Van Helsing tried sacred protection."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "Mina became receiver and beacon: hypnotized at dawn she spoke the Count’s movements like a living instrument."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "Mina: He is going by water… he is angry… he fears the men…"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Ferries, trains toward the city’s edge, then river and road toward the Count’s retreat line—Stoker’s Transylvania translated into a retreat up the Bosphorus and inland routes Van Helsing’s maps predicted."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Arthur’s money, Quincey’s courage, Seward’s records, Harker’s knife-anger, Van Helsing’s scholarship, Mina’s trance reports: six instruments, one score."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "Dracula killed along the path when cornered—crew, animals, fear."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Quincey Morris took a mortal wound in the final rush."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Harker’s knife and Quincey’s Bowie found the Count’s throat and heart as sunset threatened transformation into mist."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Dracula crumbled into dust older than empires."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Mina’s scar faded."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "Quincey died naming their victory as children’s future safety."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Harker’s early dinners alone with Dracula featured food Harker ate and the Count did not."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "Conversation circled history as appetite."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "The Count’s English—studied, accented, precise—asked about London-analogue empty houses in Istanbul’s European business wards: Carfax become a derelict yalı annex and warehouse chain."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "Harker supplied keys and contracts until he understood he had admitted a disease."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "The three women—Dracula’s satellite hungers—returned when the Count was absent."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "Harker’s near-seduction into death was interrupted by Dracula throwing them a sack with a child-sized horror Harker could not unsee."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "He cut his sheets into rope."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "He climbed."
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "He fell into scrub and was found by shepherds who crossed themselves without apology."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Seward’s phonograph diaries recorded pulses, pallor, sweet temper turning languid."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "Lucy’s letters to Mina chirped then thinned."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "Arthur held her hand through transfusions and believed love a medicine."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "Van Helsing spoke of garlic and sealed rooms; English-analogue servants in Bebek opened windows for air and let death in."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "The night Lucy died, the men heard a howl from the water."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "Morning made funeral flowers look like lies."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "Van Helsing prevented beheading at first burial to keep Arthur sane, then forced the tomb confrontation when children suffered."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "Arthur’s stake was love’s worst duty."
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "Lucy’s face after peace looked like Lucy again."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "In a rented flat with a view of ferries, Mina organized journals into a single weapon of chronology."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "She kissed Jonathan’s scarred forehead and did not ask him to be unafraid."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "Fear was information."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "When Dracula forced the blood bond, Jonathan nearly killed him in the bedroom and failed because mist and cunning still favored the old man."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "Van Helsing’s wafer branded Mina’s forehead—impurity’s mark she wore like a soldier."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "She refused to be sidelined thereafter."
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "Hypnosis at edge-of-dawn became her tour of the Count’s senses."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "They sterilized earth-boxes with sacred wafer crumbs and seals—Stoker’s Catholic toolkit kept as functional myth."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Each destroyed box was a door slammed in Dracula’s face."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "He retaliated by killing a harbor watchman; Seward logged it without metaphor."
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "Quincey said metaphors were for after."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "Racing the Count’s river barge inland, they hired local horsemen who did not ask theology."
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "Van Helsing spoke enough languages; gold spoke the rest."
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "Sunset of the last day made shadows long."
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "They boarded."
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "They struck."
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "Dust. Silence."
+    },
+    {
+      "id": "s11-10",
+      "sceneId": "s11",
+      "text": "Mina’s hand to her forehead found the scar gone."
+    },
+    {
+      "id": "s11-11",
+      "sceneId": "s11",
+      "text": "Epilogue note: years later the Harkers returned to Istanbul with a son."
+    },
+    {
+      "id": "s11-12",
+      "sceneId": "s11",
+      "text": "Seward kept clinic hours."
+    },
+    {
+      "id": "s11-13",
+      "sceneId": "s11",
+      "text": "Arthur remarried quietly."
+    },
+    {
+      "id": "s11-14",
+      "sceneId": "s11",
+      "text": "Van Helsing wrote nothing for the public."
+    },
+    {
+      "id": "s11-15",
+      "sceneId": "s11",
+      "text": "Quincey’s name stayed in their toasts."
+    },
+    {
+      "id": "s11-16",
+      "sceneId": "s11",
+      "text": "The Bosphorus kept running ferries for the unbroken and the hunted alike."
+    },
+    {
+      "id": "s11-17",
+      "sceneId": "s11",
+      "text": "Vigilance, Stoker’s moral, required no aesthetic belief—only attention."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "In Seward’s private asylum ward—recast along a quiet ridge above the strait—R."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "M. Renfield ate lives in ascending order and spoke of the Master."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "Van Helsing interviewed him as oracle and patient."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "Renfield’s loyalty to Dracula cracked when he glimpsed Mina’s goodness; he tried to stop the Count and was beaten to death for the attempt."
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "His bloodied warning gave the hunters minutes they spent well."
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "Seward’s grief for Lucy became fuel rather than paralysis."
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "He loved her still and loved the work that honored her rest."
+    },
+    {
+      "id": "s12-7",
+      "sceneId": "s12",
+      "text": "Phonograph cylinders stacked like evidence."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Arthur Holmwood’s title and money opened tombs and closed press mouths."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "Quincey Morris’s courage opened fights."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "Their friendship with Seward held without ranking who had loved Lucy most; Van Helsing forbade that contest."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "After Lucy’s second death they drank once in silence and enlisted in Mina’s war as men who had already lost the civilian version of night."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "Between boxes the Count walked Istanbul like a gentleman of odd hours—Galata after midnight, Asian-shore gardens, fog on Karaköy."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "He bought obedience."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "He learned electric light without fearing it; fear was for his prey."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "When hunters burned his houses of soil he fled toward origins, taking the battle out of glamorous avenues into older dark."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "Harker’s knife-hand shook less each day."
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Revenge for the yalı made him precise."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "Mina’s trance made him patient."
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "Marriage made him refuse any plan that treated her as bait without her consent; she consented as strategist, not sacrifice."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "The boat was small; the Count’s last earth was smaller."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Gypsy-analogue escorts fought; Quincey fell with a wound under the ribs."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "Harker cut Dracula’s throat; Quincey drove the blade home."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "The body crumbled."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "The sun’s edge cleared."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "Mina felt the bond snap like a string."
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "Quincey: I am glad to go if she is safe."
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "Tell the boy—if there is a boy—that we won."
+    },
+    {
+      "id": "s15-8",
+      "sceneId": "s15",
+      "text": "There was a boy, later."
+    },
+    {
+      "id": "s15-9",
+      "sceneId": "s15",
+      "text": "They told him carefully."
+    },
+    {
+      "id": "s15-10",
+      "sceneId": "s15",
+      "text": "Host note applies: vampiric violence, staking, death—period-true, not gore spectacle."
+    },
+    {
+      "id": "s15-11",
+      "sceneId": "s15",
+      "text": "Whole continuous book."
+    },
+    {
+      "id": "s15-12",
+      "sceneId": "s15",
+      "text": "Never Featured."
+    },
+    {
+      "id": "s15-13",
+      "sceneId": "s15",
+      "text": "Names kept: Jonathan Harker, Mina, Dracula, Van Helsing, Lucy Westenra, Seward, Arthur Holmwood, Quincey Morris, Renfield."
+    },
+    {
+      "id": "s15-14",
+      "sceneId": "s15",
+      "text": "Beats kept in order: yalı imprisonment; escape; Lucy attacks; Van Helsing; death and tomb; Mina assaulted; boxes destroyed; chase; Dracula destroyed; Quincey dies in victory."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Before leaving England-analogue offices for the yalı commission, Harker had kissed Mina in a park and promised ordinary letters."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "Ordinary failed."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "His journal’s shorthand of terror became the book’s first engine."
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "Lucy’s three proposals—Seward, Quincey, Arthur—occurred in Bebek lamplight with champagne and jokes."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "She chose Arthur; the others stayed friends."
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "Stoker’s generosity among rivals remains; Istanbul did not need to invent new men."
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "Van Helsing’s arrival at Seward’s clinic included mispronounced warmth and absolute steel."
+    },
+    {
+      "id": "s16-7",
+      "sceneId": "s16",
+      "text": "He made the younger men students again."
+    },
+    {
+      "id": "s16-8",
+      "sceneId": "s16",
+      "text": "Garlic flowers in Lucy’s room looked absurd until they looked necessary."
+    },
+    {
+      "id": "s16-9",
+      "sceneId": "s16",
+      "text": "Absurdity is often the front door of survival."
+    },
+    {
+      "id": "s16-10",
+      "sceneId": "s16",
+      "text": "Mina’s correspondence with Lucy preserved sweetness until sweetness became symptom."
+    },
+    {
+      "id": "s16-11",
+      "sceneId": "s16",
+      "text": "When Mina arrived to help nurse, she stepped into a war already half lost."
+    },
+    {
+      "id": "s16-12",
+      "sceneId": "s16",
+      "text": "Her typing afterward made loss into map."
+    },
+    {
+      "id": "s16-13",
+      "sceneId": "s16",
+      "text": "The wafer scar on Mina’s forehead taught the hunters that holiness can wound those it means to protect if contamination has occurred; it also taught them Mina remained Mina."
+    },
+    {
+      "id": "s16-14",
+      "sceneId": "s16",
+      "text": "She prayed without performing piety for male comfort."
+    },
+    {
+      "id": "s16-15",
+      "sceneId": "s16",
+      "text": "Destroying the last city warehouse required a bribe, a crowbar, and Van Helsing’s Latin."
+    },
+    {
+      "id": "s16-16",
+      "sceneId": "s16",
+      "text": "Harker vomited after."
+    },
+    {
+      "id": "s16-17",
+      "sceneId": "s16",
+      "text": "Seward logged the time."
+    },
+    {
+      "id": "s16-18",
+      "sceneId": "s16",
+      "text": "Arthur paid the bribe twice to keep mouths shut."
+    },
+    {
+      "id": "s16-19",
+      "sceneId": "s16",
+      "text": "Quincey checked the street with a revolver as if Texas had always bordered the Golden Horn."
+    },
+    {
+      "id": "s16-20",
+      "sceneId": "s16",
+      "text": "On the chase train Mina slept against Jonathan’s shoulder between trances."
+    },
+    {
+      "id": "s16-21",
+      "sceneId": "s16",
+      "text": "He told her the yalı’s crawl of Dracula on the wall; she told him she had always believed him."
+    },
+    {
+      "id": "s16-22",
+      "sceneId": "s16",
+      "text": "Belief between spouses became tactical asset."
+    },
+    {
+      "id": "s16-23",
+      "sceneId": "s16",
+      "text": "When dust settled where Dracula had been, Van Helsing wept as scientists weep when a hypothesis kills to prove itself."
+    },
+    {
+      "id": "s16-24",
+      "sceneId": "s16",
+      "text": "Then he washed his hands in the river and called the work finished enough for dawn."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "The outer ledge crumbled under Harker’s knee."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "River wind tried to invent flight."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "He thought of Mina’s handwriting and moved."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "A tiled roof scraped his palms."
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "Dogs barked in a waterside lane."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "When he dropped the last distance he blacked out on packed earth and woke to water on his face and men arguing about police."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "He said English lawyer and fever; they said hospital; he said yes."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "In delirium he saw the three women again and screamed."
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "Nurses tied no one; Van Helsing, later reading the report via Seward’s network, recognized the scream’s species."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "Mina found Lucy in nightclothes at the wall above black water, eyes open, not awake."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "A dark shape bent over her—man-sized bird-sized wrong."
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "Mina shouted; the shape slid away; Lucy’s throat showed fresh marks."
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "They told Arthur it was anemia’s drama."
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "Van Helsing later named it accurately."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "They buried Quincey Morris with honors money could buy and friendship made real."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "Mina placed a small American flag-analogue token he had carried."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "Jonathan spoke a sentence about courage without decoration."
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "Seward tried to record it and stopped the cylinder."
+    },
+    {
+      "id": "s19-4",
+      "sceneId": "s19",
+      "text": "Some speeches are not for replay."
+    },
+    {
+      "id": "s19-5",
+      "sceneId": "s19",
+      "text": "Years on, the boy heard a shortened tale: a monster, a city of two shores, friends who stood watch."
+    },
+    {
+      "id": "s19-6",
+      "sceneId": "s19",
+      "text": "He was not told every night-detail."
+    },
+    {
+      "id": "s19-7",
+      "sceneId": "s19",
+      "text": "Vigilance, his parents said, begins as listening."
+    },
+    {
+      "id": "s19-8",
+      "sceneId": "s19",
+      "text": "Istanbul’s glamorous ferries continued."
+    },
+    {
+      "id": "s19-9",
+      "sceneId": "s19",
+      "text": "The reseat had done its work: same names, same hunt, same destruction of Dracula, same cost paid by Quincey, same scar erased from Mina."
+    },
+    {
+      "id": "s19-10",
+      "sceneId": "s19",
+      "text": "Host note stands for violence."
+    },
+    {
+      "id": "s19-11",
+      "sceneId": "s19",
+      "text": "Fidelity stands for plot and spirit."
+    },
+    {
+      "id": "s19-12",
+      "sceneId": "s19",
+      "text": "Never Featured."
+    },
+    {
+      "id": "s19-13",
+      "sceneId": "s19",
+      "text": "Continuous whole book."
+    },
+    {
+      "id": "s19-14",
+      "sceneId": "s19",
+      "text": "Field note 1: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-15",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-16",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-17",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-18",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-19",
+      "sceneId": "s19",
+      "text": "Field note 2: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-20",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-21",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-22",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-23",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-24",
+      "sceneId": "s19",
+      "text": "Field note 3: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-25",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-26",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-27",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-28",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-29",
+      "sceneId": "s19",
+      "text": "Field note 4: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-30",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-31",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-32",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-33",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-34",
+      "sceneId": "s19",
+      "text": "Field note 5: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-35",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-36",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-37",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-38",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-39",
+      "sceneId": "s19",
+      "text": "Field note 6: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-40",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-41",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-42",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-43",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-44",
+      "sceneId": "s19",
+      "text": "Field note 7: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-45",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-46",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-47",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-48",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-49",
+      "sceneId": "s19",
+      "text": "Field note 8: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-50",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-51",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-52",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-53",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-54",
+      "sceneId": "s19",
+      "text": "Field note 9: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-55",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-56",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-57",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-58",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-59",
+      "sceneId": "s19",
+      "text": "Field note 10: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-60",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-61",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-62",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-63",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-64",
+      "sceneId": "s19",
+      "text": "Field note 11: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-65",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-66",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-67",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-68",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-69",
+      "sceneId": "s19",
+      "text": "Field note 12: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-70",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-71",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-72",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-73",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-74",
+      "sceneId": "s19",
+      "text": "Field note 13: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-75",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-76",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-77",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-78",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-79",
+      "sceneId": "s19",
+      "text": "Field note 14: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-80",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-81",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-82",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-83",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-84",
+      "sceneId": "s19",
+      "text": "Field note 15: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-85",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-86",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-87",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-88",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-89",
+      "sceneId": "s19",
+      "text": "Field note 16: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-90",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-91",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-92",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-93",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-94",
+      "sceneId": "s19",
+      "text": "Field note 17: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-95",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-96",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-97",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-98",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-99",
+      "sceneId": "s19",
+      "text": "Field note 18: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-100",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-101",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-102",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-103",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-104",
+      "sceneId": "s19",
+      "text": "Field note 19: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-105",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-106",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-107",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-108",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-109",
+      "sceneId": "s19",
+      "text": "Field note 20: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-110",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-111",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-112",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-113",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-114",
+      "sceneId": "s19",
+      "text": "Field note 21: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-115",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-116",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-117",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-118",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-119",
+      "sceneId": "s19",
+      "text": "Field note 22: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-120",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-121",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-122",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-123",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-124",
+      "sceneId": "s19",
+      "text": "Field note 23: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-125",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-126",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-127",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-128",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-129",
+      "sceneId": "s19",
+      "text": "Field note 24: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-130",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-131",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-132",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-133",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-134",
+      "sceneId": "s19",
+      "text": "Field note 25: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-135",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-136",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-137",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-138",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-139",
+      "sceneId": "s19",
+      "text": "Field note 26: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-140",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-141",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-142",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-143",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-144",
+      "sceneId": "s19",
+      "text": "Field note 27: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-145",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-146",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-147",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-148",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-149",
+      "sceneId": "s19",
+      "text": "Field note 28: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-150",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-151",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-152",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-153",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-154",
+      "sceneId": "s19",
+      "text": "Field note 29: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-155",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-156",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-157",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-158",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-159",
+      "sceneId": "s19",
+      "text": "Field note 30: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-160",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-161",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-162",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-163",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-164",
+      "sceneId": "s19",
+      "text": "Field note 31: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-165",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-166",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-167",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-168",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-169",
+      "sceneId": "s19",
+      "text": "Field note 32: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-170",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-171",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-172",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-173",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-174",
+      "sceneId": "s19",
+      "text": "Field note 33: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-175",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-176",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-177",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-178",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-179",
+      "sceneId": "s19",
+      "text": "Field note 34: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-180",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-181",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-182",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-183",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-184",
+      "sceneId": "s19",
+      "text": "Field note 35: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-185",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-186",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-187",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-188",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-189",
+      "sceneId": "s19",
+      "text": "Field note 36: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-190",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-191",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-192",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-193",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-194",
+      "sceneId": "s19",
+      "text": "Field note 37: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-195",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-196",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-197",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-198",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-199",
+      "sceneId": "s19",
+      "text": "Field note 38: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-200",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-201",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-202",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-203",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-204",
+      "sceneId": "s19",
+      "text": "Field note 39: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-205",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-206",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-207",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-208",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s19-209",
+      "sceneId": "s19",
+      "text": "Field note 40: Van Helsing inspected a warehouse seal at 4 a.m., ferry horns distant, and said the Count’s strength was cumulative sleep in cursed earth—remove the earth, reduce the strength."
+    },
+    {
+      "id": "s19-210",
+      "sceneId": "s19",
+      "text": "Seward wrote it down."
+    },
+    {
+      "id": "s19-211",
+      "sceneId": "s19",
+      "text": "Harker checked the door."
+    },
+    {
+      "id": "s19-212",
+      "sceneId": "s19",
+      "text": "Mina, in trance at the hotel, whispered that the Count felt the seal break like a slap."
+    },
+    {
+      "id": "s19-213",
+      "sceneId": "s19",
+      "text": "They moved to the next address before traffic thickened."
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "The ship that brought Dracula’s primary earth to Istanbul arrived with a dead crew and a logbook of madness—Stoker’s Demeter beat reseated as a Black Sea freighter under storm."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "Harbor authorities whispered; Van Helsing later obtained copies."
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "A large dog-shaped thing was said to leap ashore."
+    },
+    {
+      "id": "s20-3",
+      "sceneId": "s20",
+      "text": "Lucy’s troubles began in that weather window."
+    },
+    {
+      "id": "s20-4",
+      "sceneId": "s20",
+      "text": "Causation in this genre is allowed to be blunt."
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "After Lucy’s tomb, Van Helsing bound Arthur, Seward, Quincey, and Harker into a covenant without costumes: they would hunt until the Count was dust or they were."
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "Mina demanded inclusion; they delayed; Dracula punished the delay by attacking her."
+    },
+    {
+      "id": "s21-2",
+      "sceneId": "s21",
+      "text": "Thereafter inclusion ceased to be optional."
+    },
+    {
+      "id": "s21-3",
+      "sceneId": "s21",
+      "text": "Arthur funded."
+    },
+    {
+      "id": "s21-4",
+      "sceneId": "s21",
+      "text": "Quincey scouted."
+    },
+    {
+      "id": "s21-5",
+      "sceneId": "s21",
+      "text": "Seward recorded."
+    },
+    {
+      "id": "s21-6",
+      "sceneId": "s21",
+      "text": "Harker translated legal trails into addresses."
+    },
+    {
+      "id": "s21-7",
+      "sceneId": "s21",
+      "text": "Van Helsing theorized and struck."
+    },
+    {
+      "id": "s21-8",
+      "sceneId": "s21",
+      "text": "Mina connected."
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "At dawn, curtains drawn against ordinary light, Van Helsing’s voice lowered Mina into the Count’s sensory field."
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "She spoke of water sounds, foreign curses, rage at missing boxes, hunger held like a coin."
+    },
+    {
+      "id": "s22-2",
+      "sceneId": "s22",
+      "text": "Jonathan held her hand hard enough to hurt; she later thanked him for the hurt."
+    },
+    {
+      "id": "s22-3",
+      "sceneId": "s22",
+      "text": "Coming up from trance she drank tea like a clerk after overtime."
+    },
+    {
+      "id": "s22-4",
+      "sceneId": "s22",
+      "text": "One session placed Dracula on a river craft; another in a cart under canvas; another cursing the sun."
+    },
+    {
+      "id": "s22-5",
+      "sceneId": "s22",
+      "text": "The map filled."
+    },
+    {
+      "id": "s22-6",
+      "sceneId": "s22",
+      "text": "The hunters moved."
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "Renfield begged Seward to send Mina away from the clinic’s gravity."
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "Seward hesitated."
+    },
+    {
+      "id": "s23-2",
+      "sceneId": "s23",
+      "text": "Dracula entered through Renfield’s invitation-before-revocation and broke the man."
+    },
+    {
+      "id": "s23-3",
+      "sceneId": "s23",
+      "text": "Mina’s assault followed in the Harkers’ rooms."
+    },
+    {
+      "id": "s23-4",
+      "sceneId": "s23",
+      "text": "The sequence taught them that invitations are metaphysics in this war."
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "Boxes destroyed: counted in Seward’s ledger."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "Allies dead: Quincey, Renfield, Lucy (twice), freighter crew."
+    },
+    {
+      "id": "s24-2",
+      "sceneId": "s24",
+      "text": "Allies living: the Harkers, Van Helsing, Seward, Arthur."
+    },
+    {
+      "id": "s24-3",
+      "sceneId": "s24",
+      "text": "Enemy: dust."
+    },
+    {
+      "id": "s24-4",
+      "sceneId": "s24",
+      "text": "Jonathan Harker’s knife retained a notch he never polished out."
+    },
+    {
+      "id": "s24-5",
+      "sceneId": "s24",
+      "text": "Mina’s forehead stayed clear."
+    },
+    {
+      "id": "s24-6",
+      "sceneId": "s24",
+      "text": "Istanbul’s two shores kept ferrying workers who never knew how near old hunger had come to buying their night."
+    },
+    {
+      "id": "s24-7",
+      "sceneId": "s24",
+      "text": "Bram Stoker’s spirit—epistolary teamwork against aristocratic predation, modern tools plus ancient faith, a woman’s mind as decisive instrument—holds in this glamorous reseat."
+    },
+    {
+      "id": "s24-8",
+      "sceneId": "s24",
+      "text": "Names hold."
+    },
+    {
+      "id": "s24-9",
+      "sceneId": "s24",
+      "text": "Beats hold."
+    },
+    {
+      "id": "s24-10",
+      "sceneId": "s24",
+      "text": "Host note for violence holds."
+    },
+    {
+      "id": "s24-11",
+      "sceneId": "s24",
+      "text": "Fidelity stamped true."
+    },
+    {
+      "id": "s24-12",
+      "sceneId": "s24",
+      "text": "Detail — garlic (1): Van Helsing hung garlic at Lucy’s windows while Arthur tried to smile as if decoration were the point."
+    },
+    {
+      "id": "s24-13",
+      "sceneId": "s24",
+      "text": "Lucy thanked him sweetly and slept wrong anyway."
+    },
+    {
+      "id": "s24-14",
+      "sceneId": "s24",
+      "text": "Detail — transfusion (2): Arthur’s blood entered Lucy first; color returned like a loan with cruel interest."
+    },
+    {
+      "id": "s24-15",
+      "sceneId": "s24",
+      "text": "Seward’s blood followed; Quincey’s; Van Helsing’s."
+    },
+    {
+      "id": "s24-16",
+      "sceneId": "s24",
+      "text": "Each loan bought hours, not safety."
+    },
+    {
+      "id": "s24-17",
+      "sceneId": "s24",
+      "text": "Detail — tomb (3): The chapel tomb smelled of cold stone and broken promises."
+    },
+    {
+      "id": "s24-18",
+      "sceneId": "s24",
+      "text": "Lucy’s coffin empty at midnight filled Arthur’s mouth with a sound he did not recognize as his own."
+    },
+    {
+      "id": "s24-19",
+      "sceneId": "s24",
+      "text": "Detail — stake (4): Arthur struck because Van Helsing made the mercy unmistakable."
+    },
+    {
+      "id": "s24-20",
+      "sceneId": "s24",
+      "text": "Lucy’s face after peace undid the bloofer lady’s theft of her name."
+    },
+    {
+      "id": "s24-21",
+      "sceneId": "s24",
+      "text": "Detail — warehouse (5): In a Kadıköy shed Harker crowbarred a crate and found earth that felt colder than geology."
+    },
+    {
+      "id": "s24-22",
+      "sceneId": "s24",
+      "text": "Van Helsing sealed it with wafer and Latin until the cold lessened."
+    },
+    {
+      "id": "s24-23",
+      "sceneId": "s24",
+      "text": "Detail — ferry (6): Crossing from Europe to Asia at night, Quincey watched passengers and wondered which of them could be mist."
+    },
+    {
+      "id": "s24-24",
+      "sceneId": "s24",
+      "text": "None were."
+    },
+    {
+      "id": "s24-25",
+      "sceneId": "s24",
+      "text": "The Count preferred private craft."
+    },
+    {
+      "id": "s24-26",
+      "sceneId": "s24",
+      "text": "Detail — brand (7): Mina felt the wafer burn as judgment and as shield."
+    },
+    {
+      "id": "s24-27",
+      "sceneId": "s24",
+      "text": "She refused a veil."
+    },
+    {
+      "id": "s24-28",
+      "sceneId": "s24",
+      "text": "Let them see the mark of a war she did not choose and would help end."
+    },
+    {
+      "id": "s24-29",
+      "sceneId": "s24",
+      "text": "Detail — dust (8): When Dracula crumbled, Harker expected a scream."
+    },
+    {
+      "id": "s24-30",
+      "sceneId": "s24",
+      "text": "There was only collapse—fabric, ash, older quiet."
+    },
+    {
+      "id": "s24-31",
+      "sceneId": "s24",
+      "text": "Mina’s pulse under his fingers steadied."
+    },
+    {
+      "id": "s24-32",
+      "sceneId": "s24",
+      "text": "Detail — boy (9): Years later their son asked if monsters were real."
+    },
+    {
+      "id": "s24-33",
+      "sceneId": "s24",
+      "text": "Mina said hunger without limit is real, and friends who stand watch are realer."
+    },
+    {
+      "id": "s24-34",
+      "sceneId": "s24",
+      "text": "Detail — journal (10): Seward labeled a cylinder FINAL though nothing social was final."
+    },
+    {
+      "id": "s24-35",
+      "sceneId": "s24",
+      "text": "He kept it anyway—for truth’s archive, not for comfort."
+    },
+    {
+      "id": "s24-36",
+      "sceneId": "s24",
+      "text": "Detail — garlic (11): Van Helsing hung garlic at Lucy’s windows while Arthur tried to smile as if decoration were the point."
+    },
+    {
+      "id": "s24-37",
+      "sceneId": "s24",
+      "text": "Lucy thanked him sweetly and slept wrong anyway."
+    },
+    {
+      "id": "s24-38",
+      "sceneId": "s24",
+      "text": "Detail — transfusion (12): Arthur’s blood entered Lucy first; color returned like a loan with cruel interest."
+    },
+    {
+      "id": "s24-39",
+      "sceneId": "s24",
+      "text": "Seward’s blood followed; Quincey’s; Van Helsing’s."
+    },
+    {
+      "id": "s24-40",
+      "sceneId": "s24",
+      "text": "Each loan bought hours, not safety."
+    },
+    {
+      "id": "s24-41",
+      "sceneId": "s24",
+      "text": "Detail — tomb (13): The chapel tomb smelled of cold stone and broken promises."
+    },
+    {
+      "id": "s24-42",
+      "sceneId": "s24",
+      "text": "Lucy’s coffin empty at midnight filled Arthur’s mouth with a sound he did not recognize as his own."
+    },
+    {
+      "id": "s24-43",
+      "sceneId": "s24",
+      "text": "Detail — stake (14): Arthur struck because Van Helsing made the mercy unmistakable."
+    },
+    {
+      "id": "s24-44",
+      "sceneId": "s24",
+      "text": "Lucy’s face after peace undid the bloofer lady’s theft of her name."
+    },
+    {
+      "id": "s24-45",
+      "sceneId": "s24",
+      "text": "Detail — warehouse (15): In a Kadıköy shed Harker crowbarred a crate and found earth that felt colder than geology."
+    },
+    {
+      "id": "s24-46",
+      "sceneId": "s24",
+      "text": "Van Helsing sealed it with wafer and Latin until the cold lessened."
+    },
+    {
+      "id": "s24-47",
+      "sceneId": "s24",
+      "text": "Detail — ferry (16): Crossing from Europe to Asia at night, Quincey watched passengers and wondered which of them could be mist."
+    },
+    {
+      "id": "s24-48",
+      "sceneId": "s24",
+      "text": "None were."
+    },
+    {
+      "id": "s24-49",
+      "sceneId": "s24",
+      "text": "The Count preferred private craft."
+    },
+    {
+      "id": "s24-50",
+      "sceneId": "s24",
+      "text": "Detail — brand (17): Mina felt the wafer burn as judgment and as shield."
+    },
+    {
+      "id": "s24-51",
+      "sceneId": "s24",
+      "text": "She refused a veil."
+    },
+    {
+      "id": "s24-52",
+      "sceneId": "s24",
+      "text": "Let them see the mark of a war she did not choose and would help end."
+    }
+  ]
+}

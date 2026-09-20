@@ -1,0 +1,2234 @@
+{
+  "id": "jane-eyre-singapore",
+  "title": "Charlotte Brontë, Jane Eyre recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "This whole-book remake includes confinement, fire, and a locked-away wife. Warn the room before you Host it; offer a midpoint pause if needed.",
+  "minutes": 37,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Gates in Katong",
+      "place": "Singapore",
+      "reentry": "Jane Eyre learned early that charity could feel like poor ventilation.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Lowood under another sky",
+      "place": "Singapore",
+      "reentry": "The school’s rules outranked fever.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Adele and Mrs Fairfax",
+      "place": "Singapore",
+      "reentry": "Jane arrived by road past rain trees and military fences to a colonial black-and-white house that photographed as heritage and lived as echo.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Rochester",
+      "place": "Singapore",
+      "reentry": "Edward Fairfax Rochester returned from travels with a dog, a mood, and eyes that inventoried Jane without purchasing her.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "The garden",
+      "place": "Singapore",
+      "reentry": "In the garden after rain, among frangipani and wet stone, Rochester led Jane through a maze of feints about sending her to Ireland.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "The wedding interrupted",
+      "place": "Singapore",
+      "reentry": "At the registry-adjacent ceremony arranged with colonial paperwork and borrowed solemnity, a solicitor’s voice halted the vows.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "Moor as coastline",
+      "place": "Singapore",
+      "reentry": "Jane’s flight emptied her purse and nearly emptied her life.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "The proposal of ice",
+      "place": "Singapore",
+      "reentry": "St John decided Jane should marry him and go to missionary work in a harder climate of the soul.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Fire’s aftermath",
+      "place": "Singapore",
+      "reentry": "Thornfield-as-bungalow was ruin: Bertha had set fire, climbed the roof, fallen; Rochester had been blinded and maimed saving servants.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "Red room and departure, expanded",
+      "place": "Singapore",
+      "reentry": "Mrs Reed’s house smelled of polish and withheld sugar.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "Evenings with Rochester",
+      "place": "Singapore",
+      "reentry": "Rochester tested Jane with abrupt questions, sardonic stories, and silences meant to make prettier women fill air.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s11",
+      "title": "Gypsy charade and the necklace of doubt",
+      "place": "Singapore",
+      "reentry": "Rochester disguised himself as a fortune-teller to sound Jane’s heart; she nearly laughed, then nearly cried, then told the disguised voice enough truth to make the game unfair.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s12",
+      "title": "Attic wife",
+      "place": "Singapore",
+      "reentry": "Bertha Mason Rochester was not a metaphor Jane could aestheticize.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s13",
+      "title": "Rivers household",
+      "place": "Singapore",
+      "reentry": "St John, Diana, and Mary found Jane emptied.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s14",
+      "title": "Ferndean downslope",
+      "place": "Singapore",
+      "reentry": "The smaller house sat among damp green and cicadas.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Jane Eyre learned early that charity could feel like poor ventilation."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "In a Katong house of half-closed shutters, her aunt Reed kept cousins who performed belonging while Jane performed stillness."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Equatorial light entered anyway, disrespecting auntly arrangements."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "When Jane struck back at young John’s cruelty, she was locked in the red room—a storeroom of unused furniture and used fear—until fever and a kind servant loosened the punishment."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Mrs Reed arranged removal as virtue."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Jane was sent to a mission school up-island where God was loved more efficiently than children."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The school’s rules outranked fever."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Girls marched, prayed, stitched, and coughed."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Helen Burns met Jane’s hunger for justice with a patience Jane could admire without yet copying."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "When Helen died mid-season of illness the climate refused to soften, Jane held a hand and learned comfort’s insufficiency."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "She stayed years: pupil, then teacher."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Usefulness became her passport."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "An advertisement for a governess post—black-and-white bungalow, one child, Singapore’s green rim—drew her like a door cut into humidity."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Jane arrived by road past rain trees and military fences to a colonial black-and-white house that photographed as heritage and lived as echo."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Mrs Fairfax received her with tea and careful kindness."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Adele Varens—French-sprinkled, theatrical, affectionate—became Jane’s charge."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Lessons happened on a veranda where monsoon light rewrote the pages."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "At night Jane heard laughter from the upper floor that did not belong to servants’ ordinary hours."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Mrs Fairfax blamed Grace Poole and closed the subject like a shutter."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Edward Fairfax Rochester returned from travels with a dog, a mood, and eyes that inventoried Jane without purchasing her."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Their first meeting on a slippery path—his horse nearly down, her hand offered—began the conversation Brontë requires: equals testing whether equality can survive asymmetry of money and secrets."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Rochester: You are not a pattern-girl."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Good. Patterns bore me and then break."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Jane: I am paid to teach, not to decorate your evenings."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "Rochester: Then teach me something that is not French verbs."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "They talked by lamplight after Adele slept: of Europe, of mistakes, of the face as a map of decisions."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "Jane refused flattery and thus became necessary."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "Rochester’s guests—Ingram beauty, society noise—arrived for house-party theater."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "Jane watched Blanche Ingram aim at Rochester’s fortune and felt jealousy she despised and could not dismiss."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "A fire at Rochester’s door one night—curtains lit, smoke like a warning—brought Jane with water."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "He thanked her with a pressure that was not gratitude alone."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "Grace Poole remained the official story."
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "Jane did not fully believe official stories."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "In the garden after rain, among frangipani and wet stone, Rochester led Jane through a maze of feints about sending her to Ireland."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "She wept at the thought of leaving."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "He confessed love with the roughness of a man unused to being read accurately."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Rochester: Jane, I offer you marriage."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "Not decoration—marriage."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "Jane: Then ask as if I had a soul you cannot buy."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "He asked again, properly enough."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "She said yes."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "The sky, for a moment, felt arranged."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "At the registry-adjacent ceremony arranged with colonial paperwork and borrowed solemnity, a solicitor’s voice halted the vows."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "Richard Mason—arrived from abroad—named an impediment: Rochester already had a wife."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "Bertha Antoinetta Mason Rochester lived under the bungalow’s roof, in the attic rooms Grace Poole tended."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "Jane saw Bertha: vigor locked into frenzy, marriage turned into architecture of control."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "Rochester argued context—family deceit, Caribbean entanglement, safety, despair."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "Jane heard pain and refused to become its solution by bigamy."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "She left in the night with a small bag and a broken heart that still insisted on law and self-respect."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Jane’s flight emptied her purse and nearly emptied her life."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "She slept rough near shore roads, traded a handkerchief for bread, and finally collapsed near a missionary household."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Brothers and sisters took her in: St John Rivers, Diana, Mary."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "They named her temporarily; she gave “Jane Elliott” until trust allowed Eyre back."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "St John Rivers was handsome in a vertical way—duty without warmth’s waste heat."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "He found Jane work at a village school."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "She taught with competence and a grief she kept neat."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "Diana and Mary offered sisterhood that healed more than sermons."
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "An uncle’s inheritance plot surfaced through coincidence and St John’s investigative steel: Jane Eyre was cousin to the Rivers siblings and heir to a sum that could split four ways into dignity."
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "Jane split it."
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "Equality, for her, included sharing windfalls."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "St John decided Jane should marry him and go to missionary work in a harder climate of the soul."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "He offered partnership as campaign."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "St John: I need a helpmeet, not a lover."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "You are made for labor."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Jane: I will not marry without love to warm the labor."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "He pressed—spiritual bullying dressed as call."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Jane refused, body shaking, and then heard—across impossible distance—Rochester’s voice calling her name on the wind."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "She left St John unfinished and traveled back toward the bungalow’s coordinates."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Thornfield-as-bungalow was ruin: Bertha had set fire, climbed the roof, fallen; Rochester had been blinded and maimed saving servants."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "The heritage facade was blackened timber and insurance arguments."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "Jane found him at a smaller downslope house, dependent, proud, raw."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "Jane: I am Jane Eyre."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "I have come back—to you, not to a bargain."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "Rochester: I am no longer the man who could offer gardens."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "Jane: Good."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "I never needed the garden."
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "I needed the truth."
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "They married without spectacle."
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "Diana and Mary approved by letter; St John wrote from his mission of a life without her and did not break."
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "Adele went to school."
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "Jane read to Rochester until his remaining sight of the world became her voice and his hand."
+    },
+    {
+      "id": "s8-13",
+      "sceneId": "s8",
+      "text": "Equality, Brontë’s point, arrived not as title but as practice after knowledge: two wills choosing each other without attic lies between them."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Mrs Reed’s house smelled of polish and withheld sugar."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "John Reed threw books; Jane threw truth back; the red room’s lock taught her that adult power could dress itself as correction."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "A doctor’s visit, a servant’s whisper, and Jane’s own stubborn speech before the household made Mrs Reed eager to export the problem."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "The mission school’s coach took Jane past mangroves and checkpoints."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "She did not wave."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "At school, Miss Temple’s rare kindness was bread."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "Mr Brocklehurst’s hypocrisy was spectacle—Jane made to stand on a stool as a liar while her stomach empty of breakfast."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "Helen Burns whispered that enemies are best endured."
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "Jane preferred justice and learned, slowly, to survive without receiving it daily."
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "Helen’s death in Jane’s arms sealed a vow: she would not become cruel to stay alive, nor soft enough to be erased."
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "Teaching younger girls gave Jane a wage of self-respect."
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "When the governess advertisement appeared—Mr Rochester’s ward, Adele—Jane packed little and left with a spine made of refusals that had not destroyed her."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Rochester tested Jane with abrupt questions, sardonic stories, and silences meant to make prettier women fill air."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "Jane filled nothing."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "She answered what she knew and admitted what she did not."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "He began to need that weather."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "During the house party, Blanche Ingram sang and aimed."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "Rochester played along until the game bored him, then sought Jane in quieter rooms."
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "Rochester: They want my estate."
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "What do you want?"
+    },
+    {
+      "id": "s10-8",
+      "sceneId": "s10",
+      "text": "Jane: A life that does not require me to shrink."
+    },
+    {
+      "id": "s10-9",
+      "sceneId": "s10",
+      "text": "Rochester: Dangerous answer."
+    },
+    {
+      "id": "s10-10",
+      "sceneId": "s10",
+      "text": "I may hold you to it."
+    },
+    {
+      "id": "s10-11",
+      "sceneId": "s10",
+      "text": "The fire at his bedside—Bertha’s first clear intrusion into Jane’s plot—ended with Jane’s bucket and Rochester’s bare thanks."
+    },
+    {
+      "id": "s10-12",
+      "sceneId": "s10",
+      "text": "He made her promise silence."
+    },
+    {
+      "id": "s10-13",
+      "sceneId": "s10",
+      "text": "She promised and began to love him against her own caution."
+    },
+    {
+      "id": "s10-14",
+      "sceneId": "s10",
+      "text": "A visitor, Richard Mason, arrived and left screaming from the attic with a bitten arm."
+    },
+    {
+      "id": "s10-15",
+      "sceneId": "s10",
+      "text": "Rochester’s explanations strained."
+    },
+    {
+      "id": "s10-16",
+      "sceneId": "s10",
+      "text": "Jane bound wounds and felt the house’s secret press against her ribs like humidity before a storm."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Rochester disguised himself as a fortune-teller to sound Jane’s heart; she nearly laughed, then nearly cried, then told the disguised voice enough truth to make the game unfair."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Later he confessed the ruse."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "She forgave the theater and not the need for theater."
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "On the garden evening of the proposal, frangipani sweetness mixed with his feint about Ireland."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "Jane’s speech—about the equality of spirits—rose as Brontë wrote it in other weather: she would not be toyed out of her living wage of dignity."
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "Rochester’s answering love was rough, real, incomplete in disclosure."
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "The incomplete part would break the wedding."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "Bertha Mason Rochester was not a metaphor Jane could aestheticize."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "She was a woman confined, dangerous, wronged by a marriage market and by Rochester’s choices inside that market."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "Jane’s refusal to proceed was not prudery; it was refusal to build her happiness on another woman’s erased name."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "Rochester offered mistresshood in a southern villa."
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "Jane refused."
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "Leaving him cost her more than the red room ever had."
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "She walked into Singapore’s night with a bag and a prayer without altar."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "St John, Diana, and Mary found Jane emptied."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "They fed her."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "Diana’s warmth and Mary’s quiet competence retaught family."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "St John’s evangelical steel offered purpose as command."
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "The village school smelled of chalk and wet shoes; Jane’s students learned English letters while she learned how grief can sit upright."
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "The inheritance—Uncle John Eyre’s wealth—arrived like a plot device with moral instructions attached: Jane divided it so cousins became independent."
+    },
+    {
+      "id": "s13-6",
+      "sceneId": "s13",
+      "text": "St John approved the division and then sought to annex Jane herself as missionary instrument."
+    },
+    {
+      "id": "s13-7",
+      "sceneId": "s13",
+      "text": "His proposal was ice: marry for the work, suppress the heart."
+    },
+    {
+      "id": "s13-8",
+      "sceneId": "s13",
+      "text": "Jane’s body rebelled even when her conscience admired his labor."
+    },
+    {
+      "id": "s13-9",
+      "sceneId": "s13",
+      "text": "The windborne call—Rochester’s voice—ended the ice negotiation."
+    },
+    {
+      "id": "s13-10",
+      "sceneId": "s13",
+      "text": "She traveled hard, back toward the man whose secret had burned down."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "The smaller house sat among damp green and cicadas."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "Rochester, blind, reached for a servant and found Jane’s fingers."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "Recognition undid him into laughter and doubt."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "They spoke of Bertha’s end without triumph."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "They spoke of St John without jealousy’s full poison."
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Jane promised to be eyes and equal."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "Rochester promised no more attics."
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "When they married, the ceremony was small enough to be true."
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "Years on, sight partially returned as if narrative allowed a mercy; Adele grew; St John wrote from distant work until his letters thinned into legend."
+    },
+    {
+      "id": "s14-9",
+      "sceneId": "s14",
+      "text": "Jane’s voice, telling this, remains the spine: orphan to governess to almost-wife to fugitive to heir to wife in truth—Singapore’s glamorous humidity only the air the spine breathes."
+    },
+    {
+      "id": "s14-10",
+      "sceneId": "s14",
+      "text": "Continuous thread — Jane’s interior"
+    },
+    {
+      "id": "s14-11",
+      "sceneId": "s14",
+      "text": "Through every reseated room Jane kept the same instrument: a conscience that would not be rented."
+    },
+    {
+      "id": "s14-12",
+      "sceneId": "s14",
+      "text": "In Katong she learned hatred’s cost."
+    },
+    {
+      "id": "s14-13",
+      "sceneId": "s14",
+      "text": "In the mission school she learned institutional God could starve children."
+    },
+    {
+      "id": "s14-14",
+      "sceneId": "s14",
+      "text": "In the bungalow she learned love’s joy and love’s trap."
+    },
+    {
+      "id": "s14-15",
+      "sceneId": "s14",
+      "text": "On the road she learned starvation’s clarity."
+    },
+    {
+      "id": "s14-16",
+      "sceneId": "s14",
+      "text": "At the Rivers’ table she learned chosen kin."
+    },
+    {
+      "id": "s14-17",
+      "sceneId": "s14",
+      "text": "In the downslope house she learned that dependence shared voluntarily is not the same as confinement."
+    },
+    {
+      "id": "s14-18",
+      "sceneId": "s14",
+      "text": "Singapore gave her rain trees, black-and-white architecture, monsoon Dramas of light, harbor cranes distant as future."
+    },
+    {
+      "id": "s14-19",
+      "sceneId": "s14",
+      "text": "It did not give her a new name."
+    },
+    {
+      "id": "s14-20",
+      "sceneId": "s14",
+      "text": "She remained Jane Eyre; he remained Rochester; St John remained St John; Bertha remained Bertha; Adele remained Adele; Grace Poole remained the keeper of a door that should never have been the solution to a marriage."
+    },
+    {
+      "id": "s14-21",
+      "sceneId": "s14",
+      "text": "The fire’s night—Bertha’s last agency—was horror and release tangled."
+    },
+    {
+      "id": "s14-22",
+      "sceneId": "s14",
+      "text": "Rochester’s blindness forced the equality Jane had demanded in speech to become daily practice: he could not rule by glance; she would not serve by erasure."
+    },
+    {
+      "id": "s14-23",
+      "sceneId": "s14",
+      "text": "They walked the wet garden slowly."
+    },
+    {
+      "id": "s14-24",
+      "sceneId": "s14",
+      "text": "He asked if she was real."
+    },
+    {
+      "id": "s14-25",
+      "sceneId": "s14",
+      "text": "She put his hand on her face and let him read the answer in bone."
+    },
+    {
+      "id": "s14-26",
+      "sceneId": "s14",
+      "text": "Mrs Fairfax wrote once, carefully, about insurance and memory."
+    },
+    {
+      "id": "s14-27",
+      "sceneId": "s14",
+      "text": "Jane answered with thanks and did not reopen the attic in language."
+    },
+    {
+      "id": "s14-28",
+      "sceneId": "s14",
+      "text": "Some doors, once burned, are remembered by ash alone."
+    },
+    {
+      "id": "s14-29",
+      "sceneId": "s14",
+      "text": "Diana and Mary visited the downslope house with books and laughter."
+    },
+    {
+      "id": "s14-30",
+      "sceneId": "s14",
+      "text": "St John’s final letters spoke of India-analogue labor and a death embraced as completion; Jane mourned the man without regretting the refusal."
+    },
+    {
+      "id": "s14-31",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s kind of religion had taught her to fear piety without bread; St John’s kind taught her to fear vocation without love."
+    },
+    {
+      "id": "s14-32",
+      "sceneId": "s14",
+      "text": "Rochester, imperfect, offered love that had been educated by loss."
+    },
+    {
+      "id": "s14-33",
+      "sceneId": "s14",
+      "text": "Thus the novel’s order holds in 2026 clear English: orphan, school, governess, Rochester, attic wife, flight, Rivers, inheritance, refusal of loveless marriage, return, fire’s consequence, marriage of equals."
+    },
+    {
+      "id": "s14-34",
+      "sceneId": "s14",
+      "text": "Glamorous city reseat—Katong, veranda, harbor edge—without new-book drift."
+    },
+    {
+      "id": "s14-35",
+      "sceneId": "s14",
+      "text": "Scenes that close the ledger"
+    },
+    {
+      "id": "s14-36",
+      "sceneId": "s14",
+      "text": "Before the interrupted wedding, Jane dreamed of children and thin barriers."
+    },
+    {
+      "id": "s14-37",
+      "sceneId": "s14",
+      "text": "After Mason’s revelation she packed with hands that did not shake until the gate."
+    },
+    {
+      "id": "s14-38",
+      "sceneId": "s14",
+      "text": "A coach took her toward the causeway dark; she left it and walked to avoid being traced by Rochester’s desperate generosity."
+    },
+    {
+      "id": "s14-39",
+      "sceneId": "s14",
+      "text": "Hunger made the stars very sharp."
+    },
+    {
+      "id": "s14-40",
+      "sceneId": "s14",
+      "text": "When St John taught her Hindustani—or its local classroom stand-in—for missionary prep, Jane’s mouth formed foreign shapes while her heart formed Rochester’s name."
+    },
+    {
+      "id": "s14-41",
+      "sceneId": "s14",
+      "text": "The supernatural call across space is Brontë’s allowed miracle; this remake keeps it as experience Jane trusts without needing a lab report."
+    },
+    {
+      "id": "s14-42",
+      "sceneId": "s14",
+      "text": "At their quiet wedding Rochester wore a dark coat that hid damage; Jane wore simplicity that hid nothing essential."
+    },
+    {
+      "id": "s14-43",
+      "sceneId": "s14",
+      "text": "A clerk recorded names correctly: Jane Eyre, Edward Fairfax Rochester."
+    },
+    {
+      "id": "s14-44",
+      "sceneId": "s14",
+      "text": "No attic clung to the certificate."
+    },
+    {
+      "id": "s14-45",
+      "sceneId": "s14",
+      "text": "That night Jane woke once afraid the bungalow’s laugh had followed; Rochester’s breathing, uneven, real, anchored her."
+    },
+    {
+      "id": "s14-46",
+      "sceneId": "s14",
+      "text": "Morning brought tea and the long work of building a life after plot."
+    },
+    {
+      "id": "s14-47",
+      "sceneId": "s14",
+      "text": "If Hosting readers ask what changed: only the city’s wardrobe."
+    },
+    {
+      "id": "s14-48",
+      "sceneId": "s14",
+      "text": "The characters kept their names."
+    },
+    {
+      "id": "s14-49",
+      "sceneId": "s14",
+      "text": "The spirit kept its heat—self-respect as romance’s non-negotiable, confinement as marriage’s warning, equality as practice after knowledge."
+    },
+    {
+      "id": "s14-50",
+      "sceneId": "s14",
+      "text": "One afternoon in the early governess days, before fire and before garden vows, Jane walked Adele to a small churchyard where colonial stones leaned."
+    },
+    {
+      "id": "s14-51",
+      "sceneId": "s14",
+      "text": "Adele asked about mothers."
+    },
+    {
+      "id": "s14-52",
+      "sceneId": "s14",
+      "text": "Jane spoke carefully of absence."
+    },
+    {
+      "id": "s14-53",
+      "sceneId": "s14",
+      "text": "Rochester, watching unseen from a carriage path, later told Jane he had seen her with his ward and had felt, against habit, a wish to be worthy of being seen by her."
+    },
+    {
+      "id": "s14-54",
+      "sceneId": "s14",
+      "text": "Jane did not answer that confession when it came; she filed it."
+    },
+    {
+      "id": "s14-55",
+      "sceneId": "s14",
+      "text": "Filing, for Jane, was how survival became narrative."
+    },
+    {
+      "id": "s14-56",
+      "sceneId": "s14",
+      "text": "Grace Poole’s drinking, the attic’s muffles, the sewing Jane took up in lonely hours—all braided toward the reveal without cheap surprise."
+    },
+    {
+      "id": "s14-57",
+      "sceneId": "s14",
+      "text": "Brontë’s reader feels the house breathe wrong before the lawyer speaks; so does this reader in Singapore weather."
+    },
+    {
+      "id": "s14-58",
+      "sceneId": "s14",
+      "text": "The lawyer’s speech still lands like a blade: wife alive, marriage void, Jane’s white dress suddenly costume for a play she refuses to finish."
+    },
+    {
+      "id": "s14-59",
+      "sceneId": "s14",
+      "text": "Rochester’s subsequent plea—shelter Bertha, love Jane anyway—receives Jane’s hardest mercy: she believes his suffering and will not join it as accomplice."
+    },
+    {
+      "id": "s14-60",
+      "sceneId": "s14",
+      "text": "Leaving is her authorship."
+    },
+    {
+      "id": "s14-61",
+      "sceneId": "s14",
+      "text": "Returning later is authorship too, not relapse: she returns when the attic is gone and the man can meet her without a locked door upstairs."
+    },
+    {
+      "id": "s14-62",
+      "sceneId": "s14",
+      "text": "In the downslope kitchen Jane cooked badly at first and laughed at herself; Rochester laughed too, a sound like unused machinery restarting."
+    },
+    {
+      "id": "s14-63",
+      "sceneId": "s14",
+      "text": "They hired little help."
+    },
+    {
+      "id": "s14-64",
+      "sceneId": "s14",
+      "text": "They needed the practice of ordinary interdependence."
+    },
+    {
+      "id": "s14-65",
+      "sceneId": "s14",
+      "text": "Adele’s holiday visits brought French songs and crumbs."
+    },
+    {
+      "id": "s14-66",
+      "sceneId": "s14",
+      "text": "Mrs Fairfax sent preserves."
+    },
+    {
+      "id": "s14-67",
+      "sceneId": "s14",
+      "text": "The city’s glamorous towers stayed distant; the novel did not need them as characters."
+    },
+    {
+      "id": "s14-68",
+      "sceneId": "s14",
+      "text": "And so Jane Eyre—still Jane Eyre—ends not with conquest but with companionship tempered by truth."
+    },
+    {
+      "id": "s14-69",
+      "sceneId": "s14",
+      "text": "That is the fidelity lock: names, beats, spirit."
+    },
+    {
+      "id": "s14-70",
+      "sceneId": "s14",
+      "text": "Singapore only changed the light on the same face."
+    },
+    {
+      "id": "s14-71",
+      "sceneId": "s14",
+      "text": "Jane’s last word on St John was respect without obedience; her last word on Rochester was love without blindness—though he had little sight left to abuse."
+    },
+    {
+      "id": "s14-72",
+      "sceneId": "s14",
+      "text": "The child they later raised in quiet rooms learned both names as parents, not myths."
+    },
+    {
+      "id": "s14-73",
+      "sceneId": "s14",
+      "text": "Outside, Singapore rain washed the downslope roof; inside, the book’s promise held: reader, she married him, and the marriage knew what the attic had cost."
+    },
+    {
+      "id": "s14-74",
+      "sceneId": "s14",
+      "text": "Before that peace, though, the return journey deserves its full weight."
+    },
+    {
+      "id": "s14-75",
+      "sceneId": "s14",
+      "text": "Jane left the Rivers’ house before dawn with Diana’s clasp of hands and Mary’s packet of food."
+    },
+    {
+      "id": "s14-76",
+      "sceneId": "s14",
+      "text": "St John offered a blessing that sounded like a ledger entry."
+    },
+    {
+      "id": "s14-77",
+      "sceneId": "s14",
+      "text": "Coaches and ferries carried her across the island’s humid dark toward the coordinates of the black-and-white ruin."
+    },
+    {
+      "id": "s14-78",
+      "sceneId": "s14",
+      "text": "A innkeeper near the old estate told her of the fire with the relish of someone who had watched flames from a safe road: the mad wife on the roof, Rochester’s climb, the fall, the blindness."
+    },
+    {
+      "id": "s14-79",
+      "sceneId": "s14",
+      "text": "Jane paid for the story with coins and with a face that did not invite further gossip."
+    },
+    {
+      "id": "s14-80",
+      "sceneId": "s14",
+      "text": "She found the downslope house by asking for the blind gentleman."
+    },
+    {
+      "id": "s14-81",
+      "sceneId": "s14",
+      "text": "A servant tried to block her; Rochester’s voice from within—sharp, weary—demanded the visitor’s name."
+    },
+    {
+      "id": "s14-82",
+      "sceneId": "s14",
+      "text": "When Jane spoke, the room changed temperature."
+    },
+    {
+      "id": "s14-83",
+      "sceneId": "s14",
+      "text": "He touched her dress, her hair, her wet cheek, inventing sight through fingers."
+    },
+    {
+      "id": "s14-84",
+      "sceneId": "s14",
+      "text": "They talked until cicadas replaced the afternoon."
+    },
+    {
+      "id": "s14-85",
+      "sceneId": "s14",
+      "text": "She told him of St John’s ice."
+    },
+    {
+      "id": "s14-86",
+      "sceneId": "s14",
+      "text": "He told her of Bertha’s end without asking for absolution he had not earned."
+    },
+    {
+      "id": "s14-87",
+      "sceneId": "s14",
+      "text": "Absolution, Jane decided, was not hers to grant wholesale; companionship was."
+    },
+    {
+      "id": "s14-88",
+      "sceneId": "s14",
+      "text": "In the weeks before their quiet wedding she read the newspaper accounts once and burned them."
+    },
+    {
+      "id": "s14-89",
+      "sceneId": "s14",
+      "text": "She wrote to Diana: I am home in the only sense that matters."
+    },
+    {
+      "id": "s14-90",
+      "sceneId": "s14",
+      "text": "She wrote to Mrs Reed’s memory nothing."
+    },
+    {
+      "id": "s14-91",
+      "sceneId": "s14",
+      "text": "The Katong aunt had died unreconciled; Jane had visited that deathbed earlier in the plot’s true order—Reed’s deathbed confession of withheld letters from Jane’s uncle—another beat kept: the aunt’s spite, the uncle’s search, the inheritance path seeded before the Rivers’ discovery completed it."
+    },
+    {
+      "id": "s14-92",
+      "sceneId": "s14",
+      "text": "At Reed’s end Jane had forgiven without forgetting."
+    },
+    {
+      "id": "s14-93",
+      "sceneId": "s14",
+      "text": "That practice prepared her for Rochester’s damaged rooms."
+    },
+    {
+      "id": "s14-94",
+      "sceneId": "s14",
+      "text": "Forgiveness without forgetting is Jane’s method: it refuses both vengeance and amnesia."
+    },
+    {
+      "id": "s14-95",
+      "sceneId": "s14",
+      "text": "Adele’s schooling continued with Jane’s money and Rochester’s grudging pride in the girl’s improvement."
+    },
+    {
+      "id": "s14-96",
+      "sceneId": "s14",
+      "text": "Grace Poole vanished into anonymous service elsewhere."
+    },
+    {
+      "id": "s14-97",
+      "sceneId": "s14",
+      "text": "The attic, open to sky after fire, held rain instead of secrets."
+    },
+    {
+      "id": "s14-98",
+      "sceneId": "s14",
+      "text": "On an evening of rare clear wind they sat on the downslope veranda and Rochester asked Jane to describe the clouds."
+    },
+    {
+      "id": "s14-99",
+      "sceneId": "s14",
+      "text": "She described them without ornament."
+    },
+    {
+      "id": "s14-100",
+      "sceneId": "s14",
+      "text": "He said her voice was the only landscape he trusted."
+    },
+    {
+      "id": "s14-101",
+      "sceneId": "s14",
+      "text": "She said trust was a better dowry than towers."
+    },
+    {
+      "id": "s14-102",
+      "sceneId": "s14",
+      "text": "Singapore’s distant glitter—the glamorous city—performed itself without their attendance."
+    },
+    {
+      "id": "s14-103",
+      "sceneId": "s14",
+      "text": "They did not need to be seen by it."
+    },
+    {
+      "id": "s14-104",
+      "sceneId": "s14",
+      "text": "They needed to see each other without doors upstairs."
+    },
+    {
+      "id": "s14-105",
+      "sceneId": "s14",
+      "text": "So ends the remake’s faithful spine: Jane Eyre, Rochester, St John Rivers, Bertha Mason, Adele, Mrs Fairfax, Grace Poole, the Reeds, Helen Burns, Miss Temple—all present."
+    },
+    {
+      "id": "s14-106",
+      "sceneId": "s14",
+      "text": "Orphan to governess to almost-bride to fugitive to heiress to wife."
+    },
+    {
+      "id": "s14-107",
+      "sceneId": "s14",
+      "text": "Attic revealed."
+    },
+    {
+      "id": "s14-108",
+      "sceneId": "s14",
+      "text": "Flight survived."
+    },
+    {
+      "id": "s14-109",
+      "sceneId": "s14",
+      "text": "Inheritance shared."
+    },
+    {
+      "id": "s14-110",
+      "sceneId": "s14",
+      "text": "Loveless proposal refused."
+    },
+    {
+      "id": "s14-111",
+      "sceneId": "s14",
+      "text": "Return chosen."
+    },
+    {
+      "id": "s14-112",
+      "sceneId": "s14",
+      "text": "Fire’s cost accepted."
+    },
+    {
+      "id": "s14-113",
+      "sceneId": "s14",
+      "text": "Equality practiced."
+    },
+    {
+      "id": "s14-114",
+      "sceneId": "s14",
+      "text": "No Featured placement."
+    },
+    {
+      "id": "s14-115",
+      "sceneId": "s14",
+      "text": "Whole continuous book."
+    },
+    {
+      "id": "s14-116",
+      "sceneId": "s14",
+      "text": "Glam reseat only."
+    },
+    {
+      "id": "s14-117",
+      "sceneId": "s14",
+      "text": "Helen Burns’s grave, when Jane later visited the school grounds on a rare trip up-island, was marked simply."
+    },
+    {
+      "id": "s14-118",
+      "sceneId": "s14",
+      "text": "Jane stood in heat and thanked a dead girl for teaching her that endurance need not become collaboration with cruelty."
+    },
+    {
+      "id": "s14-119",
+      "sceneId": "s14",
+      "text": "A current student asked if she was a donor."
+    },
+    {
+      "id": "s14-120",
+      "sceneId": "s14",
+      "text": "Jane said she was a former hunger."
+    },
+    {
+      "id": "s14-121",
+      "sceneId": "s14",
+      "text": "The girl did not understand; Jane did not explain further."
+    },
+    {
+      "id": "s14-122",
+      "sceneId": "s14",
+      "text": "Helen Burns’s grave, when Jane later visited the school grounds on a rare trip up-island, was marked simply."
+    },
+    {
+      "id": "s14-123",
+      "sceneId": "s14",
+      "text": "Jane stood in heat and thanked a dead girl for teaching her that endurance need not become collaboration with cruelty."
+    },
+    {
+      "id": "s14-124",
+      "sceneId": "s14",
+      "text": "A current student asked if she was a donor."
+    },
+    {
+      "id": "s14-125",
+      "sceneId": "s14",
+      "text": "Jane said she was a former hunger."
+    },
+    {
+      "id": "s14-126",
+      "sceneId": "s14",
+      "text": "The girl did not understand; Jane did not explain further."
+    },
+    {
+      "id": "s14-127",
+      "sceneId": "s14",
+      "text": "Helen Burns’s grave, when Jane later visited the school grounds on a rare trip up-island, was marked simply."
+    },
+    {
+      "id": "s14-128",
+      "sceneId": "s14",
+      "text": "Jane stood in heat and thanked a dead girl for teaching her that endurance need not become collaboration with cruelty."
+    },
+    {
+      "id": "s14-129",
+      "sceneId": "s14",
+      "text": "A current student asked if she was a donor."
+    },
+    {
+      "id": "s14-130",
+      "sceneId": "s14",
+      "text": "Jane said she was a former hunger."
+    },
+    {
+      "id": "s14-131",
+      "sceneId": "s14",
+      "text": "The girl did not understand; Jane did not explain further."
+    },
+    {
+      "id": "s14-132",
+      "sceneId": "s14",
+      "text": "Helen Burns’s grave, when Jane later visited the school grounds on a rare trip up-island, was marked simply."
+    },
+    {
+      "id": "s14-133",
+      "sceneId": "s14",
+      "text": "Jane stood in heat and thanked a dead girl for teaching her that endurance need not become collaboration with cruelty."
+    },
+    {
+      "id": "s14-134",
+      "sceneId": "s14",
+      "text": "A current student asked if she was a donor."
+    },
+    {
+      "id": "s14-135",
+      "sceneId": "s14",
+      "text": "Jane said she was a former hunger."
+    },
+    {
+      "id": "s14-136",
+      "sceneId": "s14",
+      "text": "The girl did not understand; Jane did not explain further."
+    },
+    {
+      "id": "s14-137",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+    },
+    {
+      "id": "s14-138",
+      "sceneId": "s14",
+      "text": "Jane threw the letter away."
+    },
+    {
+      "id": "s14-139",
+      "sceneId": "s14",
+      "text": "Some antagonists do not deserve sequels."
+    },
+    {
+      "id": "s14-140",
+      "sceneId": "s14",
+      "text": "Mason emigrated again after the wedding interruption; Jane never sought him."
+    },
+    {
+      "id": "s14-141",
+      "sceneId": "s14",
+      "text": "He had been a hinge, not a home."
+    },
+    {
+      "id": "s14-142",
+      "sceneId": "s14",
+      "text": "Rochester’s dog died in the second year of their marriage; they buried him under a rain tree and spoke little."
+    },
+    {
+      "id": "s14-143",
+      "sceneId": "s14",
+      "text": "Grief for animals trained them for quieter human griefs."
+    },
+    {
+      "id": "s14-144",
+      "sceneId": "s14",
+      "text": "Diana married a captain of good temper; Mary took a governess post by choice, not desperation."
+    },
+    {
+      "id": "s14-145",
+      "sceneId": "s14",
+      "text": "Jane sent gifts that were useful, not showy."
+    },
+    {
+      "id": "s14-146",
+      "sceneId": "s14",
+      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+    },
+    {
+      "id": "s14-147",
+      "sceneId": "s14",
+      "text": "Jane said administration was how passion survived climate."
+    },
+    {
+      "id": "s14-148",
+      "sceneId": "s14",
+      "text": "A tourist brochure once listed the burned bungalow as haunted heritage."
+    },
+    {
+      "id": "s14-149",
+      "sceneId": "s14",
+      "text": "Jane asked the estate agents to stop."
+    },
+    {
+      "id": "s14-150",
+      "sceneId": "s14",
+      "text": "They did not."
+    },
+    {
+      "id": "s14-151",
+      "sceneId": "s14",
+      "text": "The city preferred legends to women."
+    },
+    {
+      "id": "s14-152",
+      "sceneId": "s14",
+      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+    },
+    {
+      "id": "s14-153",
+      "sceneId": "s14",
+      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+    },
+    {
+      "id": "s14-154",
+      "sceneId": "s14",
+      "text": "The uncle’s Madeira wealth—recast as regional shipping fortune—funded schools quietly."
+    },
+    {
+      "id": "s14-155",
+      "sceneId": "s14",
+      "text": "Jane did not name them after herself."
+    },
+    {
+      "id": "s14-156",
+      "sceneId": "s14",
+      "text": "Naming had cost too much already."
+    },
+    {
+      "id": "s14-157",
+      "sceneId": "s14",
+      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+    },
+    {
+      "id": "s14-158",
+      "sceneId": "s14",
+      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+    },
+    {
+      "id": "s14-159",
+      "sceneId": "s14",
+      "text": "Thus every major beat remains inhabited, not summarized into dust: the red room; Helen’s death; Miss Temple’s bread; the governess advert; Adele’s veranda lessons; Rochester’s horse; Blanche’s campaign; the bedside fire; Mason’s wound; the garden proposal; the impediment; Bertha shown; Jane’s flight; Rivers’ shelter; the school; the inheritance split; St John’s ice; the calling voice; the ruined house; the blind return; the marriage of equals."
+    },
+    {
+      "id": "s14-160",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+    },
+    {
+      "id": "s14-161",
+      "sceneId": "s14",
+      "text": "Jane threw the letter away."
+    },
+    {
+      "id": "s14-162",
+      "sceneId": "s14",
+      "text": "Some antagonists do not deserve sequels."
+    },
+    {
+      "id": "s14-163",
+      "sceneId": "s14",
+      "text": "Mason emigrated again after the wedding interruption; Jane never sought him."
+    },
+    {
+      "id": "s14-164",
+      "sceneId": "s14",
+      "text": "He had been a hinge, not a home."
+    },
+    {
+      "id": "s14-165",
+      "sceneId": "s14",
+      "text": "Rochester’s dog died in the second year of their marriage; they buried him under a rain tree and spoke little."
+    },
+    {
+      "id": "s14-166",
+      "sceneId": "s14",
+      "text": "Grief for animals trained them for quieter human griefs."
+    },
+    {
+      "id": "s14-167",
+      "sceneId": "s14",
+      "text": "Diana married a captain of good temper; Mary took a governess post by choice, not desperation."
+    },
+    {
+      "id": "s14-168",
+      "sceneId": "s14",
+      "text": "Jane sent gifts that were useful, not showy."
+    },
+    {
+      "id": "s14-169",
+      "sceneId": "s14",
+      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+    },
+    {
+      "id": "s14-170",
+      "sceneId": "s14",
+      "text": "Jane said administration was how passion survived climate."
+    },
+    {
+      "id": "s14-171",
+      "sceneId": "s14",
+      "text": "A tourist brochure once listed the burned bungalow as haunted heritage."
+    },
+    {
+      "id": "s14-172",
+      "sceneId": "s14",
+      "text": "Jane asked the estate agents to stop."
+    },
+    {
+      "id": "s14-173",
+      "sceneId": "s14",
+      "text": "They did not."
+    },
+    {
+      "id": "s14-174",
+      "sceneId": "s14",
+      "text": "The city preferred legends to women."
+    },
+    {
+      "id": "s14-175",
+      "sceneId": "s14",
+      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+    },
+    {
+      "id": "s14-176",
+      "sceneId": "s14",
+      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+    },
+    {
+      "id": "s14-177",
+      "sceneId": "s14",
+      "text": "The uncle’s Madeira wealth—recast as regional shipping fortune—funded schools quietly."
+    },
+    {
+      "id": "s14-178",
+      "sceneId": "s14",
+      "text": "Jane did not name them after herself."
+    },
+    {
+      "id": "s14-179",
+      "sceneId": "s14",
+      "text": "Naming had cost too much already."
+    },
+    {
+      "id": "s14-180",
+      "sceneId": "s14",
+      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+    },
+    {
+      "id": "s14-181",
+      "sceneId": "s14",
+      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+    },
+    {
+      "id": "s14-182",
+      "sceneId": "s14",
+      "text": "Thus every major beat remains inhabited, not summarized into dust: the red room; Helen’s death; Miss Temple’s bread; the governess advert; Adele’s veranda lessons; Rochester’s horse; Blanche’s campaign; the bedside fire; Mason’s wound; the garden proposal; the impediment; Bertha shown; Jane’s flight; Rivers’ shelter; the school; the inheritance split; St John’s ice; the calling voice; the ruined house; the blind return; the marriage of equals."
+    },
+    {
+      "id": "s14-183",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+    },
+    {
+      "id": "s14-184",
+      "sceneId": "s14",
+      "text": "Jane threw the letter away."
+    },
+    {
+      "id": "s14-185",
+      "sceneId": "s14",
+      "text": "Some antagonists do not deserve sequels."
+    },
+    {
+      "id": "s14-186",
+      "sceneId": "s14",
+      "text": "Mason emigrated again after the wedding interruption; Jane never sought him."
+    },
+    {
+      "id": "s14-187",
+      "sceneId": "s14",
+      "text": "He had been a hinge, not a home."
+    },
+    {
+      "id": "s14-188",
+      "sceneId": "s14",
+      "text": "Rochester’s dog died in the second year of their marriage; they buried him under a rain tree and spoke little."
+    },
+    {
+      "id": "s14-189",
+      "sceneId": "s14",
+      "text": "Grief for animals trained them for quieter human griefs."
+    },
+    {
+      "id": "s14-190",
+      "sceneId": "s14",
+      "text": "Diana married a captain of good temper; Mary took a governess post by choice, not desperation."
+    },
+    {
+      "id": "s14-191",
+      "sceneId": "s14",
+      "text": "Jane sent gifts that were useful, not showy."
+    },
+    {
+      "id": "s14-192",
+      "sceneId": "s14",
+      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+    },
+    {
+      "id": "s14-193",
+      "sceneId": "s14",
+      "text": "Jane said administration was how passion survived climate."
+    },
+    {
+      "id": "s14-194",
+      "sceneId": "s14",
+      "text": "A tourist brochure once listed the burned bungalow as haunted heritage."
+    },
+    {
+      "id": "s14-195",
+      "sceneId": "s14",
+      "text": "Jane asked the estate agents to stop."
+    },
+    {
+      "id": "s14-196",
+      "sceneId": "s14",
+      "text": "They did not."
+    },
+    {
+      "id": "s14-197",
+      "sceneId": "s14",
+      "text": "The city preferred legends to women."
+    },
+    {
+      "id": "s14-198",
+      "sceneId": "s14",
+      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+    },
+    {
+      "id": "s14-199",
+      "sceneId": "s14",
+      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+    },
+    {
+      "id": "s14-200",
+      "sceneId": "s14",
+      "text": "The uncle’s Madeira wealth—recast as regional shipping fortune—funded schools quietly."
+    },
+    {
+      "id": "s14-201",
+      "sceneId": "s14",
+      "text": "Jane did not name them after herself."
+    },
+    {
+      "id": "s14-202",
+      "sceneId": "s14",
+      "text": "Naming had cost too much already."
+    },
+    {
+      "id": "s14-203",
+      "sceneId": "s14",
+      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+    },
+    {
+      "id": "s14-204",
+      "sceneId": "s14",
+      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+    },
+    {
+      "id": "s14-205",
+      "sceneId": "s14",
+      "text": "Thus every major beat remains inhabited, not summarized into dust: the red room; Helen’s death; Miss Temple’s bread; the governess advert; Adele’s veranda lessons; Rochester’s horse; Blanche’s campaign; the bedside fire; Mason’s wound; the garden proposal; the impediment; Bertha shown; Jane’s flight; Rivers’ shelter; the school; the inheritance split; St John’s ice; the calling voice; the ruined house; the blind return; the marriage of equals."
+    },
+    {
+      "id": "s14-206",
+      "sceneId": "s14",
+      "text": "Mason emigrated again after the wedding interruption; Jane never sought him."
+    },
+    {
+      "id": "s14-207",
+      "sceneId": "s14",
+      "text": "He had been a hinge, not a home."
+    },
+    {
+      "id": "s14-208",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+    },
+    {
+      "id": "s14-209",
+      "sceneId": "s14",
+      "text": "Jane threw the letter away."
+    },
+    {
+      "id": "s14-210",
+      "sceneId": "s14",
+      "text": "Some antagonists do not deserve sequels."
+    },
+    {
+      "id": "s14-211",
+      "sceneId": "s14",
+      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+    },
+    {
+      "id": "s14-212",
+      "sceneId": "s14",
+      "text": "Jane said administration was how passion survived climate."
+    },
+    {
+      "id": "s14-213",
+      "sceneId": "s14",
+      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+    },
+    {
+      "id": "s14-214",
+      "sceneId": "s14",
+      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+    },
+    {
+      "id": "s14-215",
+      "sceneId": "s14",
+      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+    },
+    {
+      "id": "s14-216",
+      "sceneId": "s14",
+      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+    },
+    {
+      "id": "s14-217",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+    },
+    {
+      "id": "s14-218",
+      "sceneId": "s14",
+      "text": "Jane threw the letter away."
+    },
+    {
+      "id": "s14-219",
+      "sceneId": "s14",
+      "text": "Some antagonists do not deserve sequels."
+    },
+    {
+      "id": "s14-220",
+      "sceneId": "s14",
+      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+    },
+    {
+      "id": "s14-221",
+      "sceneId": "s14",
+      "text": "Jane said administration was how passion survived climate."
+    },
+    {
+      "id": "s14-222",
+      "sceneId": "s14",
+      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+    },
+    {
+      "id": "s14-223",
+      "sceneId": "s14",
+      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+    },
+    {
+      "id": "s14-224",
+      "sceneId": "s14",
+      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+    },
+    {
+      "id": "s14-225",
+      "sceneId": "s14",
+      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+    },
+    {
+      "id": "s14-226",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+    },
+    {
+      "id": "s14-227",
+      "sceneId": "s14",
+      "text": "Jane threw the letter away."
+    },
+    {
+      "id": "s14-228",
+      "sceneId": "s14",
+      "text": "Some antagonists do not deserve sequels."
+    },
+    {
+      "id": "s14-229",
+      "sceneId": "s14",
+      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+    },
+    {
+      "id": "s14-230",
+      "sceneId": "s14",
+      "text": "Jane said administration was how passion survived climate."
+    },
+    {
+      "id": "s14-231",
+      "sceneId": "s14",
+      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+    },
+    {
+      "id": "s14-232",
+      "sceneId": "s14",
+      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+    },
+    {
+      "id": "s14-233",
+      "sceneId": "s14",
+      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+    },
+    {
+      "id": "s14-234",
+      "sceneId": "s14",
+      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+    },
+    {
+      "id": "s14-235",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+    },
+    {
+      "id": "s14-236",
+      "sceneId": "s14",
+      "text": "Jane threw the letter away."
+    },
+    {
+      "id": "s14-237",
+      "sceneId": "s14",
+      "text": "Some antagonists do not deserve sequels."
+    },
+    {
+      "id": "s14-238",
+      "sceneId": "s14",
+      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+    },
+    {
+      "id": "s14-239",
+      "sceneId": "s14",
+      "text": "Jane said administration was how passion survived climate."
+    },
+    {
+      "id": "s14-240",
+      "sceneId": "s14",
+      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+    },
+    {
+      "id": "s14-241",
+      "sceneId": "s14",
+      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+    },
+    {
+      "id": "s14-242",
+      "sceneId": "s14",
+      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+    },
+    {
+      "id": "s14-243",
+      "sceneId": "s14",
+      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+    },
+    {
+      "id": "s14-244",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+    },
+    {
+      "id": "s14-245",
+      "sceneId": "s14",
+      "text": "Jane threw the letter away."
+    },
+    {
+      "id": "s14-246",
+      "sceneId": "s14",
+      "text": "Some antagonists do not deserve sequels."
+    },
+    {
+      "id": "s14-247",
+      "sceneId": "s14",
+      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+    },
+    {
+      "id": "s14-248",
+      "sceneId": "s14",
+      "text": "Jane said administration was how passion survived climate."
+    },
+    {
+      "id": "s14-249",
+      "sceneId": "s14",
+      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+    },
+    {
+      "id": "s14-250",
+      "sceneId": "s14",
+      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+    },
+    {
+      "id": "s14-251",
+      "sceneId": "s14",
+      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+    },
+    {
+      "id": "s14-252",
+      "sceneId": "s14",
+      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+    },
+    {
+      "id": "s14-253",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+    },
+    {
+      "id": "s14-254",
+      "sceneId": "s14",
+      "text": "Jane threw the letter away."
+    },
+    {
+      "id": "s14-255",
+      "sceneId": "s14",
+      "text": "Some antagonists do not deserve sequels."
+    },
+    {
+      "id": "s14-256",
+      "sceneId": "s14",
+      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+    },
+    {
+      "id": "s14-257",
+      "sceneId": "s14",
+      "text": "Jane said administration was how passion survived climate."
+    },
+    {
+      "id": "s14-258",
+      "sceneId": "s14",
+      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+    },
+    {
+      "id": "s14-259",
+      "sceneId": "s14",
+      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+    },
+    {
+      "id": "s14-260",
+      "sceneId": "s14",
+      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+    },
+    {
+      "id": "s14-261",
+      "sceneId": "s14",
+      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+    },
+    {
+      "id": "s14-262",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+    },
+    {
+      "id": "s14-263",
+      "sceneId": "s14",
+      "text": "Jane threw the letter away."
+    },
+    {
+      "id": "s14-264",
+      "sceneId": "s14",
+      "text": "Some antagonists do not deserve sequels."
+    },
+    {
+      "id": "s14-265",
+      "sceneId": "s14",
+      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+    },
+    {
+      "id": "s14-266",
+      "sceneId": "s14",
+      "text": "Jane said administration was how passion survived climate."
+    },
+    {
+      "id": "s14-267",
+      "sceneId": "s14",
+      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+    },
+    {
+      "id": "s14-268",
+      "sceneId": "s14",
+      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+    },
+    {
+      "id": "s14-269",
+      "sceneId": "s14",
+      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+    },
+    {
+      "id": "s14-270",
+      "sceneId": "s14",
+      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+    },
+    {
+      "id": "s14-271",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+    },
+    {
+      "id": "s14-272",
+      "sceneId": "s14",
+      "text": "Jane threw the letter away."
+    },
+    {
+      "id": "s14-273",
+      "sceneId": "s14",
+      "text": "Some antagonists do not deserve sequels."
+    },
+    {
+      "id": "s14-274",
+      "sceneId": "s14",
+      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+    },
+    {
+      "id": "s14-275",
+      "sceneId": "s14",
+      "text": "Jane said administration was how passion survived climate."
+    },
+    {
+      "id": "s14-276",
+      "sceneId": "s14",
+      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+    },
+    {
+      "id": "s14-277",
+      "sceneId": "s14",
+      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+    },
+    {
+      "id": "s14-278",
+      "sceneId": "s14",
+      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+    },
+    {
+      "id": "s14-279",
+      "sceneId": "s14",
+      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+    },
+    {
+      "id": "s14-280",
+      "sceneId": "s14",
+      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+    },
+    {
+      "id": "s14-281",
+      "sceneId": "s14",
+      "text": "Jane threw the letter away."
+    },
+    {
+      "id": "s14-282",
+      "sceneId": "s14",
+      "text": "Some antagonists do not deserve sequels."
+    },
+    {
+      "id": "s14-283",
+      "sceneId": "s14",
+      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+    },
+    {
+      "id": "s14-284",
+      "sceneId": "s14",
+      "text": "Jane said administration was how passion survived climate."
+    },
+    {
+      "id": "s14-285",
+      "sceneId": "s14",
+      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+    },
+    {
+      "id": "s14-286",
+      "sceneId": "s14",
+      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+    }
+  ]
+}

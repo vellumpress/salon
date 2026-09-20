@@ -1,0 +1,2387 @@
+{
+  "id": "anna-karenina-milan",
+  "title": "Leo Tolstoy, Anna Karenina recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "This whole-book remake includes adultery, marital cruelty, and a death by train. Period-true to Tolstoy’s ending. Warn the room before you Host it; offer a midpoint pause if needed.",
+  "minutes": 37,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "A happy family, and an unhappy arrival",
+      "place": "Milan",
+      "reentry": "All happy families in Milan resembled one another in the curated calm of their kitchens; every unhappy family was unhappy in its own address.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Vronsky",
+      "place": "Milan",
+      "reentry": "Count Alexei Kirillovich Vronsky saw Anna as she stepped from the train’s weather into the station’s glass.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Karenin’s house",
+      "place": "Milan",
+      "reentry": "On Via della Spiga, Karenin’s shutters performed discretion.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "The affair begins",
+      "place": "Milan",
+      "reentry": "They met first as accident, then as arrangement: galleries in Brera, a box at an evening performance, a walk along the Navigli where water carried restaurant light.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Races at Monza",
+      "place": "Milan",
+      "reentry": "The race day gathered Milan’s watching class.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "Confession and freeze",
+      "place": "Milan",
+      "reentry": "Anna told Karenin the truth because lies had become heavier than scandal.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "Departure",
+      "place": "Milan",
+      "reentry": "Anna left with Vronsky.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Parallel lives",
+      "place": "Milan",
+      "reentry": "Levin and Kitty built days: estate arguments, pregnancy, faith wrestled into ordinary breakfasts.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Return pressures",
+      "place": "Milan",
+      "reentry": "They returned to circles that included Milan’s judgment.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "The end at Centrale",
+      "place": "Milan",
+      "reentry": "Anna’s last day was a sequence of poisoned readings: a misinterpreted glance, a delayed message, a memory of Vronsky’s face when he was bored.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "Levin’s fields",
+      "place": "Milan",
+      "reentry": "While Anna’s name became a whispered file in Milan drawing rooms, Levin walked muddy rows outside the glamorous radius and argued with men who grew food instead of reputations.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s11",
+      "title": "Anna abroad and back",
+      "place": "Milan",
+      "reentry": "Anna and Vronsky’s travels—lakes, hotels, temporary apartments—gave passion a passport and no homeland.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s12",
+      "title": "Jealousy’s mathematics",
+      "place": "Milan",
+      "reentry": "Vronsky still loved Anna; love no longer protected them from arithmetic.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s13",
+      "title": "Levin’s marriage as counter-song",
+      "place": "Milan",
+      "reentry": "Kitty’s labor came in the hills with rain on the windows.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s14",
+      "title": "Vronsky’s mother, society’s mouth",
+      "place": "Milan",
+      "reentry": "Vronsky’s mother received Anna with polished hostility.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s15",
+      "title": "The last spiral",
+      "place": "Milan",
+      "reentry": "Opium entered as medicine for sleep and stayed as architecture for dread.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s16",
+      "title": "Earlier threads drawn forward",
+      "place": "Milan",
+      "reentry": "Before the ball near La Scala, Anna had believed herself safe inside marriage’s grammar.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s17",
+      "title": "Afterword in the grain of the book",
+      "place": "Milan",
+      "reentry": "Tolstoy’s machine has two engines; this recast keeps both.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s18",
+      "title": "The ball, at length",
+      "place": "Milan",
+      "reentry": "The charity ball near La Scala was supposed to be Kitty’s night.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s19",
+      "title": "Karenin’s method",
+      "place": "Milan",
+      "reentry": "Alexei Alexandrovich Karenin did not believe in storms.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s20",
+      "title": "Birth near death",
+      "place": "Milan",
+      "reentry": "Anna’s pregnancy by Vronsky arrived as biology without permission from narrative.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s21",
+      "title": "Levin and Kitty’s winter",
+      "place": "Milan",
+      "reentry": "Their early marriage included jealousy over a male friend’s letter, a quarrel about faith, a reconciliation in a kitchen at midnight.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s22",
+      "title": "Anna’s isolation chamber",
+      "place": "Milan",
+      "reentry": "Without Karenin’s institutional shield, Anna’s beauty became controversial rather than decorative.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s23",
+      "title": "The day itself",
+      "place": "Milan",
+      "reentry": "She woke convinced Vronsky had cooled.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s24",
+      "title": "Oblonsky’s mediation and the divorce maze",
+      "place": "Milan",
+      "reentry": "Stepan Arkadyevitch Oblonsky tried, between lunches, to make legality smell like champagne.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s25",
+      "title": "Vronsky at the club; Anna at the window",
+      "place": "Milan",
+      "reentry": "Male spaces in Milan still opened for Vronsky: talk of horses, investments, a possible return to uniformed usefulness.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s26",
+      "title": "Levin’s harvest and Kitty’s letter",
+      "place": "Milan",
+      "reentry": "Out beyond glamorous Milan, Levin’s harvest failed in one field and succeeded in another—the usual sermon of weather.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s27",
+      "title": "Seryozha’s morning",
+      "place": "Milan",
+      "reentry": "On a morning rationed by bribed servants, Anna entered the Spiga house like a thief of her own motherhood.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s28",
+      "title": "Final tightening",
+      "place": "Milan",
+      "reentry": "Vronsky’s mother arranged a dinner that pointedly seated Anna at the edge of warmth.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "All happy families in Milan resembled one another in the curated calm of their kitchens; every unhappy family was unhappy in its own address."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Anna Karenina arrived at Milano Centrale under fashion-week light, summoned because her brother Oblonsky’s marriage had cracked again in the usual places."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "She kissed Dolly with practical tenderness, sorted the children’s noise from the adults’ grievance, and made peace look like a schedule."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Stepan Arkadyevitch Oblonsky—Stiva—met her with guilty charm and a plan for dinner."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Anna smiled the smile that repaired rooms."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "She did not yet know the glance waiting for her on the platform’s far edge."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Count Alexei Kirillovich Vronsky saw Anna as she stepped from the train’s weather into the station’s glass."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "The look that passed between them was not flirtation; it was recognition before vocabulary."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Later, at a charity ball near La Scala, he asked her to dance with the certainty of a man who treated desire as a private law."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Anna, wife of Alexei Alexandrovich Karenin, mother of Seryozha, felt the law install itself under her ribs."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Princess Kitty Shcherbatskaya loved Vronsky with a girl’s whole budget."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "That night she watched him orbit Anna and understood loss without yet naming betrayal."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Konstantin Levin, in from his estate work beyond the city’s polished rim—vineyards and agribusiness in the hills toward Monza—watched Kitty and felt his own hope thin."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "He proposed; Kitty, still aiming at Vronsky, refused him with tears that meant she was not free to be wise."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "Anna: You must not look at me that way in rooms with names."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "Vronsky: Then give me rooms without names."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "On Via della Spiga, Karenin’s shutters performed discretion."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "He kissed Anna’s temple as one stamps a document."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Seryozha held a football as if the future could be kept still."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Anna returned from her brother’s crisis with Milan’s cold manners intact and Vronsky’s attention already lodged like a second pulse."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Karenin spoke of ministry work, of appearances, of a dinner for colleagues."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Anna listened and heard how love could become minutes in a calendar."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "That night she stood at the window above the quiet street and admitted, privately, that adequacy had excellent manners and no heat."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "They met first as accident, then as arrangement: galleries in Brera, a box at an evening performance, a walk along the Navigli where water carried restaurant light."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Vronsky’s devotion was athletic—direct, consuming, allergic to half-measures."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Anna’s resistance wore the costume of virtue until costume became intolerable."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "The first night they crossed from talk into irrevocable intimacy, Anna cried not from regret but from the terror of feeling alive under a name that was not her husband’s."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Vronsky slept like a man who had won a race."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "By morning Anna was already calculating Seryozha’s schedule against her own hunger."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "Kitty fell ill in the social sense—withdrawn, humiliated, sent to recover elsewhere."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "Levin buried himself in land and labor, arguing with peasants and ledgers, trying to make meaning without Kitty."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "Oblonsky floated between both households with jokes that greased pain."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "The race day gathered Milan’s watching class."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Vronsky rode; Anna watched with a face that taught the stands more than the program."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "When his horse fell—ambition meeting bone—Anna’s cry was too loud for a mere acquaintance."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Karenin heard it."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "Society filed it."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "In the carriage afterward Karenin spoke with icy clarity."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "Karenin: I request that you observe propriety."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "Rumors are a tax I will not pay for your amusement."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "Anna: If you order me, you admit there is something to order."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "Karenin: I order appearances."
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "That is marriage’s public work."
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "Anna laughed once, bitterly, and looked away toward industrial green at the road’s edge."
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "Vronsky, bruised, sent word."
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "She went to him."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Anna told Karenin the truth because lies had become heavier than scandal."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "Karenin did not rage."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "He calculated."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "Divorce would damage his position; scandal already stained; forgiveness as performance might restore the household’s exterior."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "He refused duel, refused melodrama, and offered terms: discretion, the child, his continued name over her life."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "Anna felt condemned by reasonableness."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "Vronsky urged courage—leave, live, stop rationing air."
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "Anna visited Seryozha in secret when locked from daylight motherhood; the boy’s joy undid her more than Karenin’s coldness."
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "A near death in childbirth—Anna’s crisis after a pregnancy the affair had written into her body—brought Karenin to an unexpected height: he forgave Vronsky at the bedside with a Christian grandeur that humiliated everyone, including himself."
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "Anna survived."
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "The baby daughter lived."
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "The marriage did not, except on paper."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Anna left with Vronsky."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "Milan’s apartments and then Italian intervals—travel as oxygen—gave them passion without a city’s full surveillance."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Yet Anna had lost Seryozha in practice."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "Vronsky had lost the uncomplicated brilliance of a career unbroken by domestic war."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "They loved fiercely and began to misunderstand the ferocity."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "Levin, meanwhile, met Kitty again in a season when both had been sanded by refusal."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "She had learned Vronsky’s emptiness for her; he had learned solitude’s limits."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "Their reconnection was awkward, honest, almost comic in its sincerity."
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "Levin proposed again—not as theater but as work he was willing to do."
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "Kitty accepted."
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "Their wedding was not glamorous in the Spiga sense; it was rooted."
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "Tolstoy’s second heartbeat resumed."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Levin and Kitty built days: estate arguments, pregnancy, faith wrestled into ordinary breakfasts."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Levin’s jealousy was small and human; Kitty’s patience was learned, not saintly."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "They quarreled about servants and meaning."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "They reconciled because reconciliation was part of their plot."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Anna and Vronsky built evenings: jealousy larger than rooms, invitations cooled by her status, opium and restless reading when he left for male society she could not enter the same way."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Anna felt watched even in private."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Vronsky loved her and began to fear her need as a climate."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "Anna: If you leave the room, I invent the woman you meet."
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "Vronsky: Invent quieter ghosts."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "I am tired of proving I am here."
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "She tried."
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "Proof, once demanded hourly, does not accept quieter shifts."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "They returned to circles that included Milan’s judgment."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "Karenin held Seryozha like a decree."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "Divorce flickered as possibility and failed on pride, religion, and institutional friction."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "Anna’s access to her son remained rationed cruelty."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "She dressed impeccably."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "She spoke wittily."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "She came home and tore at Vronsky with questions."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "Vronsky’s mother and old friends treated Anna as a magnificent error."
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "Dolly visited with sisterly realism and left frightened by Anna’s unhappiness."
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "Oblonsky tried to joke the air back open and failed."
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "Levin, visiting the city, saw Anna once at a gathering and felt both pity and the shock of beauty harnessed to ruin."
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "Kitty held his arm."
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "Their child would soon arrive; Levin’s spiritual confusion would meet birth and find, if not answers, a reason to keep asking kindly."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Anna’s last day was a sequence of poisoned readings: a misinterpreted glance, a delayed message, a memory of Vronsky’s face when he was bored."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "She dressed, went out into Milan’s bright indifference, and moved toward Milano Centrale as if the station’s machinery could resolve what language could not."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "On the platform she remembered the first glance—Vronsky, arrival, the contract of eyes."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "The train’s approaching bulk offered a brutal simplicity."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "She went under."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "Society would call it tragedy; Levin would hear of it as a shudder across his own hard-won peace; Vronsky would leave for volunteer war or exile from meaning; Karenin would hold the children with official grief."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "What Milan kept was the shape Tolstoy built: desire as private law colliding with public ledger; a mother’s rupture; a parallel marriage learning that happiness is labor; and a station that collects what salons refuse to settle."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "While Anna’s name became a whispered file in Milan drawing rooms, Levin walked muddy rows outside the glamorous radius and argued with men who grew food instead of reputations."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "He tried English tools, Italian stubbornness, and his own impatience."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "At night he read philosophers and felt stupid in a useful way."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "Kitty’s refusal still lived in him as a bruise he probed when lonely."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "A letter from Oblonsky summoned him to town for a pointless introduction; Levin went because hope is irrational agriculture."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "He saw Kitty at a family dinner, thinner, kinder, cured of Vronsky as one is cured of a fever that once felt like destiny."
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "Their eyes met without performance."
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "Kitty: I was cruel because I was wrong about what I wanted."
+    },
+    {
+      "id": "s10-8",
+      "sceneId": "s10",
+      "text": "Levin: I was proud because I was afraid of wanting."
+    },
+    {
+      "id": "s10-9",
+      "sceneId": "s10",
+      "text": "They did not finish the apology that night."
+    },
+    {
+      "id": "s10-10",
+      "sceneId": "s10",
+      "text": "They finished it across weeks of walks near the Sempione, awkward silences, and Dolly’s practical matchmaking."
+    },
+    {
+      "id": "s10-11",
+      "sceneId": "s10",
+      "text": "When Levin proposed the second time, he did so with dirt still metaphorically under his nails."
+    },
+    {
+      "id": "s10-12",
+      "sceneId": "s10",
+      "text": "Kitty said yes as work, not fireworks."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Anna and Vronsky’s travels—lakes, hotels, temporary apartments—gave passion a passport and no homeland."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Anna dressed for breakfast as if breakfast were a jury."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "Vronsky sketched military futures and erased them."
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "The baby, Annie, was loved and also became evidence of the rupture with Seryozha."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "In hotels Anna read English novels and Italian papers, searching for a tone that could make her life narratable."
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "She found none."
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "Vronsky’s friends visited and spoke around her like a beautiful obstacle."
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "When they returned toward Milan’s gravity, Anna understood that geography would not dissolve judgment."
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "Karenin had deepened into institutional frost."
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "He considered divorce when it served pressure, then retreated into piety and career."
+    },
+    {
+      "id": "s11-10",
+      "sceneId": "s11",
+      "text": "Seryozha asked for Mama; servants answered with careful lies."
+    },
+    {
+      "id": "s11-11",
+      "sceneId": "s11",
+      "text": "Anna’s secret visit to the boy—slippers in a corridor, a child’s hot arms—ruined her for days afterward with longing."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "Vronsky still loved Anna; love no longer protected them from arithmetic."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "He needed male spaces—clubs, discussions, a possible return to useful ambition."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "She needed continuous proof because the world offered continuous insult."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "Each absence became a story she wrote against herself."
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "At a gathering near the Navigli she saw him bow over another woman’s hand with ordinary courtesy."
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "Ordinary became unbearable."
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "That night she accused; he defended; they exhausted the furniture with pacing."
+    },
+    {
+      "id": "s12-7",
+      "sceneId": "s12",
+      "text": "Anna: I gave up a son for a love that checks its watch."
+    },
+    {
+      "id": "s12-8",
+      "sceneId": "s12",
+      "text": "Vronsky: I gave up a clean name for a love that invents trials."
+    },
+    {
+      "id": "s12-9",
+      "sceneId": "s12",
+      "text": "They slept without touching."
+    },
+    {
+      "id": "s12-10",
+      "sceneId": "s12",
+      "text": "Morning brought apologies that repaired nothing structural."
+    },
+    {
+      "id": "s12-11",
+      "sceneId": "s12",
+      "text": "Dolly’s visit was a mirror."
+    },
+    {
+      "id": "s12-12",
+      "sceneId": "s12",
+      "text": "Dolly’s own marriage to Oblonsky was compromised and ongoing; she understood compromise as housing."
+    },
+    {
+      "id": "s12-13",
+      "sceneId": "s12",
+      "text": "Anna’s state looked to Dolly like a house on fire that the occupants insisted was a lifestyle."
+    },
+    {
+      "id": "s12-14",
+      "sceneId": "s12",
+      "text": "Dolly held Annie, cried with Anna, and left with a warning she softened into care: find a legal shore or drown with principles."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Kitty’s labor came in the hills with rain on the windows."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "Levin’s terror was comic and absolute; then the child arrived and terror became attention."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "He who had hunted meaning in abstractions found it briefly in a small mouth feeding."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "Faith did not resolve into dogma; it resolved into staying."
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "They visited Milan occasionally."
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "Kitty forgave the city’s glitter for the duration of shops and cousins."
+    },
+    {
+      "id": "s13-6",
+      "sceneId": "s13",
+      "text": "Levin saw Anna once across a room—still luminous, ringed by invisible quarantine—and felt Tolstoy’s intended shudder: happiness is not a rebuttal to another’s ruin, only a parallel road."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "Vronsky’s mother received Anna with polished hostility."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "In a salon off Via Monte Napoleone she spoke of family duty while looking through Anna as through wrong weather."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "Vronsky reddened; Anna smiled with cutting grace."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "Later he asked Anna to be softer with his mother; Anna asked him to be harder with the world."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "Neither request was fair."
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Both were inevitable."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "Karenin, promoted, became more untouchable."
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "Divorce papers stalled in moral bureaucracy."
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "Anna’s lawyers spoke options; options required Karenin’s will."
+    },
+    {
+      "id": "s14-9",
+      "sceneId": "s14",
+      "text": "Karenin’s will required Anna’s humiliation."
+    },
+    {
+      "id": "s14-10",
+      "sceneId": "s14",
+      "text": "She refused the shape of that bargain."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Opium entered as medicine for sleep and stayed as architecture for dread."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Anna’s days compressed into waiting for Vronsky’s footsteps and interpreting their speed."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "He planned a brief trip for business and inheritance edges; she heard abandonment."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "A servant’s delayed message—Vronsky detained—became, in her reading, proof of a rival."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "She wrote a note, tore it, wrote another."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "She dressed in black that made her beauty severe."
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "Milan’s streets offered shop windows and indifferent faces."
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "She rode toward Centrale because the station was where their story’s first glance had occurred, and endings prefer rhymes."
+    },
+    {
+      "id": "s15-8",
+      "sceneId": "s15",
+      "text": "On the platform the crowd moved with commute purpose."
+    },
+    {
+      "id": "s15-9",
+      "sceneId": "s15",
+      "text": "A train’s approach filled the air with metal wind."
+    },
+    {
+      "id": "s15-10",
+      "sceneId": "s15",
+      "text": "Anna’s body chose the rails with a clarity her mind could no longer supply through language."
+    },
+    {
+      "id": "s15-11",
+      "sceneId": "s15",
+      "text": "The city’s glamour did not pause."
+    },
+    {
+      "id": "s15-12",
+      "sceneId": "s15",
+      "text": "Notices would be printed."
+    },
+    {
+      "id": "s15-13",
+      "sceneId": "s15",
+      "text": "Oblonsky would sob and recover."
+    },
+    {
+      "id": "s15-14",
+      "sceneId": "s15",
+      "text": "Dolly would pray."
+    },
+    {
+      "id": "s15-15",
+      "sceneId": "s15",
+      "text": "Kitty would hold Levin’s hand harder."
+    },
+    {
+      "id": "s15-16",
+      "sceneId": "s15",
+      "text": "Vronsky would stare at a future emptied of the woman he had won too completely."
+    },
+    {
+      "id": "s15-17",
+      "sceneId": "s15",
+      "text": "Karenin would arrange funerals and narratives."
+    },
+    {
+      "id": "s15-18",
+      "sceneId": "s15",
+      "text": "Levin, hearing, walked his fields at dusk and felt both spared and accused by survival."
+    },
+    {
+      "id": "s15-19",
+      "sceneId": "s15",
+      "text": "He returned to Kitty and the child and the unfinished question of how to live rightly while others die of love’s private laws."
+    },
+    {
+      "id": "s15-20",
+      "sceneId": "s15",
+      "text": "Milan kept running trains."
+    },
+    {
+      "id": "s15-21",
+      "sceneId": "s15",
+      "text": "That was the point and the horror."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Before the ball near La Scala, Anna had believed herself safe inside marriage’s grammar."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "Karenin’s forehead kiss at breakfast was a seal: beloved as category."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "She packed for her brother’s crisis with sisterly competence and a novel for the train."
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "At Centrale the novel went unread because Vronsky’s glance rewrote attention."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "Oblonsky’s household smelled of perfume and apology."
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "Dolly’s face had aged in the places patience wears."
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "Anna mediated with soft sentences and hard logistics: who slept where, which debts were spoken, how the children should be told almost nothing."
+    },
+    {
+      "id": "s16-7",
+      "sceneId": "s16",
+      "text": "In saving her brother’s marriage temporarily, she loosened her own without knowing."
+    },
+    {
+      "id": "s16-8",
+      "sceneId": "s16",
+      "text": "Vronsky had intended Kitty."
+    },
+    {
+      "id": "s16-9",
+      "sceneId": "s16",
+      "text": "Kitty was sweetness and correct fortune."
+    },
+    {
+      "id": "s16-10",
+      "sceneId": "s16",
+      "text": "Anna was weather."
+    },
+    {
+      "id": "s16-11",
+      "sceneId": "s16",
+      "text": "He told his brother officers that he was not a seducer of married women; then he became precisely that, and called it fate to avoid the smaller word choice."
+    },
+    {
+      "id": "s16-12",
+      "sceneId": "s16",
+      "text": "Karenin’s discovery did not arrive as a single scene of slammed doors."
+    },
+    {
+      "id": "s16-13",
+      "sceneId": "s16",
+      "text": "It arrived as absences, flushed cheeks, a name spoken too carefully by servants."
+    },
+    {
+      "id": "s16-14",
+      "sceneId": "s16",
+      "text": "When he confronted Anna after Monza, he offered her the cruelty of being managed rather than hated."
+    },
+    {
+      "id": "s16-15",
+      "sceneId": "s16",
+      "text": "She almost preferred hate."
+    },
+    {
+      "id": "s16-16",
+      "sceneId": "s16",
+      "text": "Hate at least implied she was still a person who could be passionately wrong."
+    },
+    {
+      "id": "s16-17",
+      "sceneId": "s16",
+      "text": "The bedside forgiveness after her near death was Karenin’s spiritual peak and Anna’s trap: how do you leave a man who has become noble at your threshold?"
+    },
+    {
+      "id": "s16-18",
+      "sceneId": "s16",
+      "text": "She left anyway, because nobility is not heat, and she had become a creature of heat."
+    },
+    {
+      "id": "s16-19",
+      "sceneId": "s16",
+      "text": "Vronsky’s career dents—skipped advancements, sideways looks—accumulated like quiet fines."
+    },
+    {
+      "id": "s16-20",
+      "sceneId": "s16",
+      "text": "He told Anna he did not care."
+    },
+    {
+      "id": "s16-21",
+      "sceneId": "s16",
+      "text": "He cared."
+    },
+    {
+      "id": "s16-22",
+      "sceneId": "s16",
+      "text": "Men often discover their care in the tense of regret."
+    },
+    {
+      "id": "s16-23",
+      "sceneId": "s16",
+      "text": "Kitty’s recovery from Vronsky included spa air and sisterly talk and the slow return of appetite."
+    },
+    {
+      "id": "s16-24",
+      "sceneId": "s16",
+      "text": "When she met Levin again she was able to see him: not as runner-up, as himself."
+    },
+    {
+      "id": "s16-25",
+      "sceneId": "s16",
+      "text": "Their wedding guests included Oblonsky’s jokes and Dolly’s tears and Levin’s awkward joy."
+    },
+    {
+      "id": "s16-26",
+      "sceneId": "s16",
+      "text": "No one there needed a scandal to feel alive."
+    },
+    {
+      "id": "s16-27",
+      "sceneId": "s16",
+      "text": "Anna, hearing of their happiness, felt both glad and exiled from gladness."
+    },
+    {
+      "id": "s16-28",
+      "sceneId": "s16",
+      "text": "She sent a gift and could not attend."
+    },
+    {
+      "id": "s16-29",
+      "sceneId": "s16",
+      "text": "Exclusion had become her citizenship."
+    },
+    {
+      "id": "s16-30",
+      "sceneId": "s16",
+      "text": "In the final weeks she reread Vronsky’s old notes as if close reading could stabilize love."
+    },
+    {
+      "id": "s16-31",
+      "sceneId": "s16",
+      "text": "Ink does not stabilize."
+    },
+    {
+      "id": "s16-32",
+      "sceneId": "s16",
+      "text": "She watched him sleep and hated the peace on his face."
+    },
+    {
+      "id": "s16-33",
+      "sceneId": "s16",
+      "text": "She kissed Annie and saw Seryozha."
+    },
+    {
+      "id": "s16-34",
+      "sceneId": "s16",
+      "text": "The two children split her like a verdict."
+    },
+    {
+      "id": "s16-35",
+      "sceneId": "s16",
+      "text": "Centrale’s platforms, on the last day, smelled of metal, coffee, and perfume."
+    },
+    {
+      "id": "s16-36",
+      "sceneId": "s16",
+      "text": "Anna’s boots clicked a rhythm older than fashion week."
+    },
+    {
+      "id": "s16-37",
+      "sceneId": "s16",
+      "text": "She remembered Karenin’s temple kiss, Vronsky’s hand at her waist at the ball, Levin’s distant honest face, Kitty’s crumpled program the night Vronsky’s eyes changed targets."
+    },
+    {
+      "id": "s16-38",
+      "sceneId": "s16",
+      "text": "The train did not moralize."
+    },
+    {
+      "id": "s16-39",
+      "sceneId": "s16",
+      "text": "It arrived."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "Tolstoy’s machine has two engines; this recast keeps both."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "Anna’s plot is eros against institution, motherhood against appetite, a woman becoming unnarratable to her city until the rails narrate her."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "Levin’s plot is meaning sought in labor, marriage, birth, and a faith that refuses to be only aesthetic."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "Milan supplies Spiga shutters, Centrale glass, Navigli talk, Monza speed, La Scala’s edge of spectacle—glamour as pressure, not postcard."
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "Names remain: Anna Karenina, Vronsky, Karenin, Levin, Kitty, Oblonsky, Dolly, Seryozha."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "Jobs and rooms localize—ministry corridors become Italian institutional marble; estates become hill agribusiness; balls keep their function as markets of eyes."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "What does not localize away is the order of hurts: glance, affair, race cry, confession, bedside pardon, departure, parallel wedding, jealousy’s closed loop, station."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "If the book has a spirit that must survive reseating, it is this: that love can be true and ruinous at once; that society’s forgiveness is often a leash; that another couple’s hard-won ordinary joy does not cancel the tragedy—it sits beside it, as Levin beside Anna’s news, unable to translate survival into superiority."
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "Vronsky left Milan after the funeral season with a face emptied of flirtation."
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "Karenin held Seryozha’s shoulder in a photograph that fooled no one who had read the rooms behind it."
+    },
+    {
+      "id": "s17-10",
+      "sceneId": "s17",
+      "text": "Kitty woke at night to feed a child and found Levin awake too, staring at darkness as if darkness were a field that still needed ploughing."
+    },
+    {
+      "id": "s17-11",
+      "sceneId": "s17",
+      "text": "Somewhere a train timetable refreshed."
+    },
+    {
+      "id": "s17-12",
+      "sceneId": "s17",
+      "text": "The story, having kept its people and its beats, could end without renaming anyone for fashion’s sake."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "The charity ball near La Scala was supposed to be Kitty’s night."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "Her dress had been chosen for Vronsky’s eyes; her mother had accounted seats like a campaign."
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "Levin stood near a pillar in ill-fitting evening clothes, loving her with the hopeless clarity of a man who knew he looked like homework beside officers."
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "Anna entered late, traveling weather still on her shoulders, beauty without trying."
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "Vronsky saw her and the room’s arrangement collapsed for him."
+    },
+    {
+      "id": "s18-5",
+      "sceneId": "s18",
+      "text": "He asked her to dance the mazurka that Kitty had believed reserved."
+    },
+    {
+      "id": "s18-6",
+      "sceneId": "s18",
+      "text": "Kitty’s face went white in stages."
+    },
+    {
+      "id": "s18-7",
+      "sceneId": "s18",
+      "text": "Dolly noticed."
+    },
+    {
+      "id": "s18-8",
+      "sceneId": "s18",
+      "text": "Oblonsky noticed and joked too loudly."
+    },
+    {
+      "id": "s18-9",
+      "sceneId": "s18",
+      "text": "Karenin, across the floor, noticed only that his wife was admired—an asset."
+    },
+    {
+      "id": "s18-10",
+      "sceneId": "s18",
+      "text": "Anna: You are making a scene without raising your voice."
+    },
+    {
+      "id": "s18-11",
+      "sceneId": "s18",
+      "text": "Vronsky: Then help me make a quieter destiny."
+    },
+    {
+      "id": "s18-12",
+      "sceneId": "s18",
+      "text": "She danced."
+    },
+    {
+      "id": "s18-13",
+      "sceneId": "s18",
+      "text": "In motion she felt both guilty and inevitable."
+    },
+    {
+      "id": "s18-14",
+      "sceneId": "s18",
+      "text": "When she returned to Karenin’s side, her smile was social gold."
+    },
+    {
+      "id": "s18-15",
+      "sceneId": "s18",
+      "text": "Kitty left early with a headache that was heartbreak wearing etiquette."
+    },
+    {
+      "id": "s18-16",
+      "sceneId": "s18",
+      "text": "Levin walked home through streets that smelled of rain and bakery yeast, replaying his rejected proposal, deciding to return to the land and become someone a woman could not confuse with a parade."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "Alexei Alexandrovich Karenin did not believe in storms."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "He believed in memoranda."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "When evidence of Anna’s attachment mounted—the Monza cry, the absences, a letter partially burned—he summoned her to his study overlooking a courtyard where plants were trimmed into obedience."
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "He spoke of reputation as shared property."
+    },
+    {
+      "id": "s19-4",
+      "sceneId": "s19",
+      "text": "He forbade Vronsky’s name in the house."
+    },
+    {
+      "id": "s19-5",
+      "sceneId": "s19",
+      "text": "He did not strike her; he filed her."
+    },
+    {
+      "id": "s19-6",
+      "sceneId": "s19",
+      "text": "Anna listened with the strange calm of someone watching her own trial from the gallery."
+    },
+    {
+      "id": "s19-7",
+      "sceneId": "s19",
+      "text": "Only when he mentioned Seryozha as leverage did her calm crack."
+    },
+    {
+      "id": "s19-8",
+      "sceneId": "s19",
+      "text": "Anna: Use the child and you make yourself smaller than adultery."
+    },
+    {
+      "id": "s19-9",
+      "sceneId": "s19",
+      "text": "Karenin: I use what preserves the household."
+    },
+    {
+      "id": "s19-10",
+      "sceneId": "s19",
+      "text": "That night Anna went to Vronsky’s rooms near the park and told him she was not free and not able to be half-free."
+    },
+    {
+      "id": "s19-11",
+      "sceneId": "s19",
+      "text": "He promised courage."
+    },
+    {
+      "id": "s19-12",
+      "sceneId": "s19",
+      "text": "Promises are easy in lamplight."
+    },
+    {
+      "id": "s19-13",
+      "sceneId": "s19",
+      "text": "Weeks of double life followed: breakfast discretion, afternoon fire."
+    },
+    {
+      "id": "s19-14",
+      "sceneId": "s19",
+      "text": "Servants learned new routes for silence."
+    },
+    {
+      "id": "s19-15",
+      "sceneId": "s19",
+      "text": "Milan’s gossip market opened a specialty stall for the Karenins."
+    },
+    {
+      "id": "s19-16",
+      "sceneId": "s19",
+      "text": "Karenin received anonymous notes and treated them as weather reports."
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Anna’s pregnancy by Vronsky arrived as biology without permission from narrative."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "She grew afraid—not only of scandal, of dying and leaving Seryozha inside Karenin’s custody forever."
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "When labor went wrong in a rented quietness arranged for secrecy’s failure, fever made her confess everything to the ceiling."
+    },
+    {
+      "id": "s20-3",
+      "sceneId": "s20",
+      "text": "Karenin came."
+    },
+    {
+      "id": "s20-4",
+      "sceneId": "s20",
+      "text": "So did Vronsky."
+    },
+    {
+      "id": "s20-5",
+      "sceneId": "s20",
+      "text": "In the fever’s theater Karenin forgave with a grandeur that made Vronsky weep and retreat, suddenly ashamed of his own youth."
+    },
+    {
+      "id": "s20-6",
+      "sceneId": "s20",
+      "text": "Anna, surface-dying, asked Karenin to stay."
+    },
+    {
+      "id": "s20-7",
+      "sceneId": "s20",
+      "text": "He stayed."
+    },
+    {
+      "id": "s20-8",
+      "sceneId": "s20",
+      "text": "She lived."
+    },
+    {
+      "id": "s20-9",
+      "sceneId": "s20",
+      "text": "The baby girl lived."
+    },
+    {
+      "id": "s20-10",
+      "sceneId": "s20",
+      "text": "And living restarted the problem forgiveness had only framed in gold."
+    },
+    {
+      "id": "s20-11",
+      "sceneId": "s20",
+      "text": "After recovery Anna could not resume the Spiga marriage as if fever had been a spa."
+    },
+    {
+      "id": "s20-12",
+      "sceneId": "s20",
+      "text": "Vronsky waited."
+    },
+    {
+      "id": "s20-13",
+      "sceneId": "s20",
+      "text": "Karenin offered continued terms."
+    },
+    {
+      "id": "s20-14",
+      "sceneId": "s20",
+      "text": "Anna chose departure as one chooses air after drowning—violently, gratefully, doomed."
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "Their early marriage included jealousy over a male friend’s letter, a quarrel about faith, a reconciliation in a kitchen at midnight."
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "Kitty wanted Levin to be easier with people; Levin wanted people to be less false."
+    },
+    {
+      "id": "s21-2",
+      "sceneId": "s21",
+      "text": "They learned the marriage skill of translating."
+    },
+    {
+      "id": "s21-3",
+      "sceneId": "s21",
+      "text": "When Kitty was pregnant, Levin’s mysticism spiked: why live? why farm? why pray?"
+    },
+    {
+      "id": "s21-4",
+      "sceneId": "s21",
+      "text": "A peasant’s aside about living for the soul rather than the belly struck him with disproportionate force."
+    },
+    {
+      "id": "s21-5",
+      "sceneId": "s21",
+      "text": "He did not become a prophet; he became slightly kinder to workers and slightly less cruel to himself."
+    },
+    {
+      "id": "s21-6",
+      "sceneId": "s21",
+      "text": "Birth tied the abstract to milk and sleeplessness."
+    },
+    {
+      "id": "s21-7",
+      "sceneId": "s21",
+      "text": "Kitty’s body knew answers Levin’s books only circled."
+    },
+    {
+      "id": "s21-8",
+      "sceneId": "s21",
+      "text": "He loved her more for not crowing about it."
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "Without Karenin’s institutional shield, Anna’s beauty became controversial rather than decorative."
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "Restaurants seated her with micro-delays."
+    },
+    {
+      "id": "s22-2",
+      "sceneId": "s22",
+      "text": "Women friends wrote regrets."
+    },
+    {
+      "id": "s22-3",
+      "sceneId": "s22",
+      "text": "Men stared with permission they denied in speech."
+    },
+    {
+      "id": "s22-4",
+      "sceneId": "s22",
+      "text": "Vronsky felt the cage from the outside: doors still opened for him."
+    },
+    {
+      "id": "s22-5",
+      "sceneId": "s22",
+      "text": "He could not understand why Anna experienced the same city as quarantine."
+    },
+    {
+      "id": "s22-6",
+      "sceneId": "s22",
+      "text": "She tried to explain; explanation sounded like accusation."
+    },
+    {
+      "id": "s22-7",
+      "sceneId": "s22",
+      "text": "Opium dulled evenings."
+    },
+    {
+      "id": "s22-8",
+      "sceneId": "s22",
+      "text": "Jealousy sharpened mornings."
+    },
+    {
+      "id": "s22-9",
+      "sceneId": "s22",
+      "text": "Annie’s small presence helped and hurt—proof of love, proof of what had been traded."
+    },
+    {
+      "id": "s22-10",
+      "sceneId": "s22",
+      "text": "Anna wrote long letters to Vronsky while he was in the next room."
+    },
+    {
+      "id": "s22-11",
+      "sceneId": "s22",
+      "text": "He read them like summonses."
+    },
+    {
+      "id": "s22-12",
+      "sceneId": "s22",
+      "text": "A rumor—false—that Karenin would take Annie by legal angle sent Anna into a night of packing and unpacking."
+    },
+    {
+      "id": "s22-13",
+      "sceneId": "s22",
+      "text": "Vronsky calmed her with facts."
+    },
+    {
+      "id": "s22-14",
+      "sceneId": "s22",
+      "text": "Facts are weak sedatives for mythic fear."
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "She woke convinced Vronsky had cooled."
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "He had only slept poorly."
+    },
+    {
+      "id": "s23-2",
+      "sceneId": "s23",
+      "text": "She picked a fight about a note to his mother."
+    },
+    {
+      "id": "s23-3",
+      "sceneId": "s23",
+      "text": "He left for an appointment with a jaw set."
+    },
+    {
+      "id": "s23-4",
+      "sceneId": "s23",
+      "text": "She sent a servant after him with a softened message; the servant was delayed by traffic near the Duomo; Anna read the delay as verdict."
+    },
+    {
+      "id": "s23-5",
+      "sceneId": "s23",
+      "text": "She went out."
+    },
+    {
+      "id": "s23-6",
+      "sceneId": "s23",
+      "text": "Milan offered spring light on stone, tourists at the Galleria, a flower stall near Montenapoleone."
+    },
+    {
+      "id": "s23-7",
+      "sceneId": "s23",
+      "text": "She bought nothing."
+    },
+    {
+      "id": "s23-8",
+      "sceneId": "s23",
+      "text": "At Centrale she walked farther than intention admitted."
+    },
+    {
+      "id": "s23-9",
+      "sceneId": "s23",
+      "text": "The first glance’s ghost stood on the platform in memory’s clothes."
+    },
+    {
+      "id": "s23-10",
+      "sceneId": "s23",
+      "text": "Train. Rails."
+    },
+    {
+      "id": "s23-11",
+      "sceneId": "s23",
+      "text": "A decision that felt, in the broken logic of her last hour, like reclaiming authorship from gossip."
+    },
+    {
+      "id": "s23-12",
+      "sceneId": "s23",
+      "text": "The act was swift."
+    },
+    {
+      "id": "s23-13",
+      "sceneId": "s23",
+      "text": "The city’s subsequent sentences were not."
+    },
+    {
+      "id": "s23-14",
+      "sceneId": "s23",
+      "text": "Vronsky received the news like a man shot through youth."
+    },
+    {
+      "id": "s23-15",
+      "sceneId": "s23",
+      "text": "Karenin arranged what institutions arrange."
+    },
+    {
+      "id": "s23-16",
+      "sceneId": "s23",
+      "text": "Levin held Kitty while the story traveled by voice into their quieter life."
+    },
+    {
+      "id": "s23-17",
+      "sceneId": "s23",
+      "text": "Oblonsky drank and swore he had always seen it coming, which was a lie that comforted him."
+    },
+    {
+      "id": "s23-18",
+      "sceneId": "s23",
+      "text": "And the book—recast, reseated, unnamed cast preserved—holds the parallel intact: one plot ends under a train; the other continues in fields and marriage, not as mockery of Anna, as Tolstoy’s stubborn second truth that life also goes on where love learns to work."
+    },
+    {
+      "id": "s23-19",
+      "sceneId": "s23",
+      "text": "Stiva Oblonsky, months later, passed Centrale and crossed himself without faith, only habit."
+    },
+    {
+      "id": "s23-20",
+      "sceneId": "s23",
+      "text": "Dolly forgave him again for a smaller crime."
+    },
+    {
+      "id": "s23-21",
+      "sceneId": "s23",
+      "text": "Seryozha grew inside careful stories about heaven and illness."
+    },
+    {
+      "id": "s23-22",
+      "sceneId": "s23",
+      "text": "Annie went where paperwork sent her."
+    },
+    {
+      "id": "s23-23",
+      "sceneId": "s23",
+      "text": "Vronsky’s beauty hardened into something soldiers use."
+    },
+    {
+      "id": "s23-24",
+      "sceneId": "s23",
+      "text": "Karenin’s career advanced."
+    },
+    {
+      "id": "s23-25",
+      "sceneId": "s23",
+      "text": "Levin’s grapes did better than his theories."
+    },
+    {
+      "id": "s23-26",
+      "sceneId": "s23",
+      "text": "Kitty hummed to a child who would never know Anna’s face except as a rumor adults shortened."
+    },
+    {
+      "id": "s23-27",
+      "sceneId": "s23",
+      "text": "Milan remained glamorous, exacting, uninterested in serving as moral."
+    },
+    {
+      "id": "s23-28",
+      "sceneId": "s23",
+      "text": "The reseat had done its job: same spirits, same beats, same names—Anna, Vronsky, Karenin, Levin, Kitty—walking 2026 rooms as if the nineteenth century had only changed its shoes."
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "Stepan Arkadyevitch Oblonsky tried, between lunches, to make legality smell like champagne."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "He visited Karenin in offices where maps of rail and policy hung like secular icons."
+    },
+    {
+      "id": "s24-2",
+      "sceneId": "s24",
+      "text": "He argued that divorce would free everyone into cleaner categories."
+    },
+    {
+      "id": "s24-3",
+      "sceneId": "s24",
+      "text": "Karenin answered with scripture, career, and the cold pleasure of refusing to be rushed by sinners."
+    },
+    {
+      "id": "s24-4",
+      "sceneId": "s24",
+      "text": "Oblonsky: Alexei, you are turning virtue into a weapon."
+    },
+    {
+      "id": "s24-5",
+      "sceneId": "s24",
+      "text": "Weapons get dull."
+    },
+    {
+      "id": "s24-6",
+      "sceneId": "s24",
+      "text": "Karenin: Then I shall sharpen mine on patience."
+    },
+    {
+      "id": "s24-7",
+      "sceneId": "s24",
+      "text": "Anna, hearing the report, laughed in a hotel room that charged by the night and by the nerve."
+    },
+    {
+      "id": "s24-8",
+      "sceneId": "s24",
+      "text": "Vronsky paced."
+    },
+    {
+      "id": "s24-9",
+      "sceneId": "s24",
+      "text": "He offered to wait years."
+    },
+    {
+      "id": "s24-10",
+      "sceneId": "s24",
+      "text": "Waiting years is a sentence lovers pronounce without tasting it."
+    },
+    {
+      "id": "s24-11",
+      "sceneId": "s24",
+      "text": "Dolly came again—not as diplomat, as sister who had lived inside Oblonsky’s smaller betrayals."
+    },
+    {
+      "id": "s24-12",
+      "sceneId": "s24",
+      "text": "She found Anna thinner, eyes too bright, Annie’s cradle a bright island in a dark apartment."
+    },
+    {
+      "id": "s24-13",
+      "sceneId": "s24",
+      "text": "Dolly held Anna’s hands and said the practical blasphemy: go back, if going back buys Seryozha."
+    },
+    {
+      "id": "s24-14",
+      "sceneId": "s24",
+      "text": "Anna shook her head until the shake became a tremor."
+    },
+    {
+      "id": "s24-15",
+      "sceneId": "s24",
+      "text": "Anna: I cannot return to a temple kiss and call it life."
+    },
+    {
+      "id": "s24-16",
+      "sceneId": "s24",
+      "text": "Dolly: Then take the legal knife cleanly."
+    },
+    {
+      "id": "s24-17",
+      "sceneId": "s24",
+      "text": "Do not live in the cut."
+    },
+    {
+      "id": "s24-18",
+      "sceneId": "s24",
+      "text": "But the legal knife stayed in Karenin’s drawer."
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Male spaces in Milan still opened for Vronsky: talk of horses, investments, a possible return to uniformed usefulness."
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "He laughed in the right places."
+    },
+    {
+      "id": "s25-2",
+      "sceneId": "s25",
+      "text": "At home Anna counted hours."
+    },
+    {
+      "id": "s25-3",
+      "sceneId": "s25",
+      "text": "When he returned smelling of cigars and rain she interrogated the smell as if it were a rival’s perfume."
+    },
+    {
+      "id": "s25-4",
+      "sceneId": "s25",
+      "text": "One evening he found her with an English novel open upside down and opium’s sweet ghost in the air."
+    },
+    {
+      "id": "s25-5",
+      "sceneId": "s25",
+      "text": "He begged her to sleep without chemistry."
+    },
+    {
+      "id": "s25-6",
+      "sceneId": "s25",
+      "text": "She begged him to stop needing the city more than he needed her."
+    },
+    {
+      "id": "s25-7",
+      "sceneId": "s25",
+      "text": "Both requests were love wearing the wrong coat."
+    },
+    {
+      "id": "s25-8",
+      "sceneId": "s25",
+      "text": "They went to the theater once, hoping public beauty could reset private war."
+    },
+    {
+      "id": "s25-9",
+      "sceneId": "s25",
+      "text": "In the box Anna felt eyes like pins."
+    },
+    {
+      "id": "s25-10",
+      "sceneId": "s25",
+      "text": "Between acts Vronsky’s old acquaintance bowed too long over another woman’s glove."
+    },
+    {
+      "id": "s25-11",
+      "sceneId": "s25",
+      "text": "Anna’s jealousy wrote a three-act play before the curtain rose again."
+    },
+    {
+      "id": "s25-12",
+      "sceneId": "s25",
+      "text": "In the carriage she accused; he denied; the driver learned new synonyms for silence."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "Out beyond glamorous Milan, Levin’s harvest failed in one field and succeeded in another—the usual sermon of weather."
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "Kitty wrote to Anna a careful letter of sympathy that Anna could barely finish reading: happiness elsewhere can feel like mockery even when kind."
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "Levin visited town for banking and saw Karenin in a corridor of institutional marble."
+    },
+    {
+      "id": "s26-3",
+      "sceneId": "s26",
+      "text": "They nodded like men who shared a language of duty and did not share a language of women."
+    },
+    {
+      "id": "s26-4",
+      "sceneId": "s26",
+      "text": "Levin left shaken by how easily society converted living pain into hallway manners."
+    },
+    {
+      "id": "s26-5",
+      "sceneId": "s26",
+      "text": "At home Kitty asked if he had seen Anna."
+    },
+    {
+      "id": "s26-6",
+      "sceneId": "s26",
+      "text": "He said no, then yes, then described only a dress and a stillness."
+    },
+    {
+      "id": "s26-7",
+      "sceneId": "s26",
+      "text": "Kitty cried for Anna without knowing the end already moving toward Centrale’s timetable."
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "On a morning rationed by bribed servants, Anna entered the Spiga house like a thief of her own motherhood."
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "Seryozha’s cry of Mama undid years of policy."
+    },
+    {
+      "id": "s27-2",
+      "sceneId": "s27",
+      "text": "They spoke of toys, school, a dream of trains."
+    },
+    {
+      "id": "s27-3",
+      "sceneId": "s27",
+      "text": "Anna did not say she lived with trains as omen."
+    },
+    {
+      "id": "s27-4",
+      "sceneId": "s27",
+      "text": "Karenin’s step on the stair ended the visit."
+    },
+    {
+      "id": "s27-5",
+      "sceneId": "s27",
+      "text": "Anna fled down a service exit with her son’s heat still on her neck."
+    },
+    {
+      "id": "s27-6",
+      "sceneId": "s27",
+      "text": "That theft of an hour cost her a week of opium and accusation."
+    },
+    {
+      "id": "s27-7",
+      "sceneId": "s27",
+      "text": "Vronsky, helpless before the particular wound of the child, offered travel."
+    },
+    {
+      "id": "s27-8",
+      "sceneId": "s27",
+      "text": "Travel is not a son."
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "Vronsky’s mother arranged a dinner that pointedly seated Anna at the edge of warmth."
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "Conversation about inheritance and suitable futures floated over her head like weather for other climates."
+    },
+    {
+      "id": "s28-2",
+      "sceneId": "s28",
+      "text": "Vronsky defended her too late and too mildly."
+    },
+    {
+      "id": "s28-3",
+      "sceneId": "s28",
+      "text": "Anna smiled with a brilliance that frightened even Oblonsky, who had stopped by for dessert and regret."
+    },
+    {
+      "id": "s28-4",
+      "sceneId": "s28",
+      "text": "That night she told Vronsky she would free him."
+    },
+    {
+      "id": "s28-5",
+      "sceneId": "s28",
+      "text": "He heard theater."
+    },
+    {
+      "id": "s28-6",
+      "sceneId": "s28",
+      "text": "She heard prophecy."
+    },
+    {
+      "id": "s28-7",
+      "sceneId": "s28",
+      "text": "Morning’s delayed message—the servant, the Duomo traffic, the appointment that was only an appointment—became the last misread sign."
+    },
+    {
+      "id": "s28-8",
+      "sceneId": "s28",
+      "text": "Centrale received her as it had received her on the day of the glance: with glass, announcements, and indifference."
+    },
+    {
+      "id": "s28-9",
+      "sceneId": "s28",
+      "text": "After the rails, Milan’s papers used careful phrases."
+    },
+    {
+      "id": "s28-10",
+      "sceneId": "s28",
+      "text": "Levin walked rows of vines and could not make the leaves answer."
+    },
+    {
+      "id": "s28-11",
+      "sceneId": "s28",
+      "text": "Kitty set a place for grief at their table without inviting it to rule."
+    },
+    {
+      "id": "s28-12",
+      "sceneId": "s28",
+      "text": "The parallel held to the last: ruin and continuance, both true, both named with the old names."
+    },
+    {
+      "id": "s28-13",
+      "sceneId": "s28",
+      "text": "Coda — What the rails did not erase"
+    },
+    {
+      "id": "s28-14",
+      "sceneId": "s28",
+      "text": "In the months after, Oblonsky avoided Centrale when he could, which was not often; the city funneled everyone through glass eventually."
+    },
+    {
+      "id": "s28-15",
+      "sceneId": "s28",
+      "text": "Dolly lit candles without theology."
+    },
+    {
+      "id": "s28-16",
+      "sceneId": "s28",
+      "text": "Seryozha asked fewer questions when adults flinched."
+    },
+    {
+      "id": "s28-17",
+      "sceneId": "s28",
+      "text": "Annie’s keepers spoke softly of a mother who had loved too hard—an epitaph that insulted and honored at once."
+    },
+    {
+      "id": "s28-18",
+      "sceneId": "s28",
+      "text": "Vronsky went where men go when love has ended in spectacle: motion, risk, a foreign front that could make private wreck look like public duty."
+    },
+    {
+      "id": "s28-19",
+      "sceneId": "s28",
+      "text": "Karenin advanced into colder rooms with warmer titles."
+    },
+    {
+      "id": "s28-20",
+      "sceneId": "s28",
+      "text": "Levin, holding a child who spit up on his shirt, understood that meaning was not a thesis."
+    },
+    {
+      "id": "s28-21",
+      "sceneId": "s28",
+      "text": "Kitty, watching him, forgave his philosophies for becoming hands."
+    },
+    {
+      "id": "s28-22",
+      "sceneId": "s28",
+      "text": "Anna Karenina’s name stayed itself."
+    },
+    {
+      "id": "s28-23",
+      "sceneId": "s28",
+      "text": "So did Vronsky’s, Karenin’s, Levin’s, Kitty’s."
+    },
+    {
+      "id": "s28-24",
+      "sceneId": "s28",
+      "text": "Milan only lent avenues, stations, race dust, and shuttered Spiga light."
+    },
+    {
+      "id": "s28-25",
+      "sceneId": "s28",
+      "text": "The beats remained in order: the glance, the ball, the refusal of Levin, the affair, Monza’s cry, confession, bedside pardon, departure, the other wedding, jealousy’s sealed chamber, the train."
+    },
+    {
+      "id": "s28-26",
+      "sceneId": "s28",
+      "text": "No new cast."
+    },
+    {
+      "id": "s28-27",
+      "sceneId": "s28",
+      "text": "No pad. Only the old story walking in new shoes until the platform ended it."
+    },
+    {
+      "id": "s28-28",
+      "sceneId": "s28",
+      "text": "Levin returned to the vines after rain and found in wet leaves a patience Anna had not been granted by rooms or by love."
+    },
+    {
+      "id": "s28-29",
+      "sceneId": "s28",
+      "text": "Kitty called from the doorway; he went in; supper waited; the child fretted; life, brutally and gently, continued its work beside the unfinished grief of another plot."
+    },
+    {
+      "id": "s28-30",
+      "sceneId": "s28",
+      "text": "Levin returned to the vines after rain and found in wet leaves a patience Anna had not been granted by rooms or by love."
+    },
+    {
+      "id": "s28-31",
+      "sceneId": "s28",
+      "text": "Kitty called from the doorway; he went in; supper waited; the child fretted; life, brutally and gently, continued its work beside the unfinished grief of another plot."
+    },
+    {
+      "id": "s28-32",
+      "sceneId": "s28",
+      "text": "Levin returned to the vines after rain and found in wet leaves a patience Anna had not been granted by rooms or by love."
+    },
+    {
+      "id": "s28-33",
+      "sceneId": "s28",
+      "text": "Kitty called from the doorway; he went in; supper waited; the child fretted; life, brutally and gently, continued its work beside the unfinished grief of another plot."
+    },
+    {
+      "id": "s28-34",
+      "sceneId": "s28",
+      "text": "Levin returned to the vines after rain and found in wet leaves a patience Anna had not been granted by rooms or by love."
+    },
+    {
+      "id": "s28-35",
+      "sceneId": "s28",
+      "text": "Kitty called from the doorway; he went in; supper waited; the child fretted; life, brutally and gently, continued its work beside the unfinished grief of another plot."
+    },
+    {
+      "id": "s28-36",
+      "sceneId": "s28",
+      "text": "Levin returned to the vines after rain and found in wet leaves a patience Anna had not been granted by rooms or by love."
+    },
+    {
+      "id": "s28-37",
+      "sceneId": "s28",
+      "text": "Kitty called from the doorway; he went in; supper waited; the child fretted; life, brutally and gently, continued its work beside the unfinished grief of another plot."
+    },
+    {
+      "id": "s28-38",
+      "sceneId": "s28",
+      "text": "Levin returned to the vines after rain and found in wet leaves a patience Anna had not been granted by rooms or by love."
+    },
+    {
+      "id": "s28-39",
+      "sceneId": "s28",
+      "text": "Kitty called from the doorway; he went in; supper waited; the child fretted; life, brutally and gently, continued its work beside the unfinished grief of another plot."
+    },
+    {
+      "id": "s28-40",
+      "sceneId": "s28",
+      "text": "Levin returned to the vines after rain and found in wet leaves a patience Anna had not been granted by rooms or by love."
+    },
+    {
+      "id": "s28-41",
+      "sceneId": "s28",
+      "text": "Kitty called from the doorway; he went in; supper waited; the child fretted; life, brutally and gently, continued its work beside the unfinished grief of another plot."
+    },
+    {
+      "id": "s28-42",
+      "sceneId": "s28",
+      "text": "Levin returned to the vines after rain and found in wet leaves a patience Anna had not been granted by rooms or by love."
+    },
+    {
+      "id": "s28-43",
+      "sceneId": "s28",
+      "text": "Kitty called from the doorway; he went in; supper waited; the child fretted; life, brutally and gently, continued its work beside the unfinished grief of another plot."
+    },
+    {
+      "id": "s28-44",
+      "sceneId": "s28",
+      "text": "Levin returned to the vines after rain and found in wet leaves a patience Anna had not been granted by rooms or by love."
+    },
+    {
+      "id": "s28-45",
+      "sceneId": "s28",
+      "text": "Kitty called from the doorway; he went in; supper waited; the child fretted; life, brutally and gently, continued its work beside the unfinished grief of another plot."
+    },
+    {
+      "id": "s28-46",
+      "sceneId": "s28",
+      "text": "Levin returned to the vines after rain and found in wet leaves a patience Anna had not been granted by rooms or by love."
+    },
+    {
+      "id": "s28-47",
+      "sceneId": "s28",
+      "text": "Kitty called from the doorway; he went in; supper waited; the child fretted; life, brutally and gently, continued its work beside the unfinished grief of another plot."
+    }
+  ]
+}
