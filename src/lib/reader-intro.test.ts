@@ -174,6 +174,35 @@ test("Letters of a Javanese Princess shows the hardened Host note before the sit
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
 });
 
+test("Ecstasy uses the before-sleep Scheveningen boudoir sit", () => {
+  const copy = readerIntro(shelfAsWork("ecstasy"));
+  assert.match(copy, /Scheveningen/);
+  assert.match(copy, /promise not to wake the boy/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
+});
+
+test("An Outcast of the Islands shows the required Host frame before the sit", () => {
+  const copy = readerIntro(shelfAsWork("an-outcast-of-the-islands"));
+  assert.match(copy, /straight path/);
+  assert.match(copy, /racialized language/);
+  assert.match(copy, /Host further/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|SOFT-full/i);
+});
+
+test("The Underdogs uses the waking sierra-hut sit", () => {
+  const copy = readerIntro(shelfAsWork("the-underdogs"));
+  assert.match(copy, /sierra/);
+  assert.match(copy, /rifle under the mat/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
+});
+
+test("The Diary of a Chambermaid uses the waking hiring-day sit", () => {
+  const copy = readerIntro(shelfAsWork("diary-of-a-chambermaid"));
+  assert.match(copy, /Twelfth place/);
+  assert.match(copy, /Figaro/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
+});
+
 test("Blood and Sand uses the waking fight-day breakfast sit", () => {
   const copy = readerIntro(shelfAsWork("blood-and-sand"));
   assert.match(copy, /breakfast/);

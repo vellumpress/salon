@@ -58,6 +58,10 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-gadfly": { label: "Pisa", region: "it" },
   "letters-of-a-javanese-princess": { label: "Java — Japara", region: "id" },
   "blood-and-sand": { label: "Madrid", region: "es" },
+  ecstasy: { label: "The Hague / Scheveningen", region: "nl" },
+  "an-outcast-of-the-islands": { label: "Malay Archipelago", region: "id" },
+  "the-underdogs": { label: "Mexico — sierra", region: "mx" },
+  "diary-of-a-chambermaid": { label: "Paris", region: "fr" },
 
   // Named examples
   botchan: { label: "Tokyo", region: "jp" },

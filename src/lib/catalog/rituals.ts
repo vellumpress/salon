@@ -155,6 +155,14 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Kartini writes from colonial Java in 1899, hungry for the “modern girl” of Europe while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. Salon stops at the cloistered-arms beat; if you Host further letters, name that colonial frame for the room first.`,
   "blood-and-sand":
     `Fight-day breakfast: meat, black coffee, a huge cigar — and a dining room that treats the matador like family glory.`,
+  ecstasy:
+    `After dinner on the Scheveningen Road — rosewood, vieux-rose silk, an onyx lamp like a six-petalled flower — and a promise not to wake the boy.`,
+  "an-outcast-of-the-islands":
+    `A little excursion off the straight path — neatly done, quickly forgotten. Conrad’s Malay Archipelago world — colonial hierarchy and racialized language intensify after this cut. Salon stops at the sentence-in-brackets resolve; if you Host further, name that frame for the room first.`,
+  "the-underdogs":
+    `Dog barking in the sierra — tortillas, a *cántaro*, a rifle under the mat — and hoofbeats in the quarry.`,
+  "diary-of-a-chambermaid":
+    `Twelfth place in two years — rainy September, *Figaro* ad, dirty souls, and no interview with Madame.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":
@@ -226,6 +234,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-home-and-the-world",
       "the-immoralist",
       "the-gadfly",
+      "ecstasy",
       "the-pattern",
       "it-was-not-nervousness",
       "between-the-drop-and-the-water",
@@ -251,6 +260,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "where-angels-fear-to-tread",
       "letters-of-a-javanese-princess",
       "blood-and-sand",
+      "an-outcast-of-the-islands",
+      "the-underdogs",
+      "diary-of-a-chambermaid",
       "the-rubaiyat-of-omar-khayyam",
       "spring-and-all",
       "a-few-figs-from-thistles",
@@ -364,6 +376,10 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-immoralist": 2,
   "letters-of-a-javanese-princess": 2,
   "blood-and-sand": 2,
+  ecstasy: 2,
+  "an-outcast-of-the-islands": 2,
+  "the-underdogs": 2,
+  "diary-of-a-chambermaid": 2,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

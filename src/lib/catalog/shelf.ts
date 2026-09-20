@@ -177,6 +177,21 @@ export const SHELF: ShelfWork[] = [
   { id: "golem", title: "The Golem", author: "Gustav Meyrink", year: 1915, form: "novel", language: "German", minutes: 160 },
   { id: "metamorphosis", title: "The Metamorphosis", author: "Franz Kafka", year: 1915, form: "other", language: "German", minutes: 40 }, // Thea PULL EN 2026-09-15: PG 5200 Wyllie copyrighted — catalog-only
   { id: "underdogs", title: "The Underdogs", author: "Mariano Azuela", year: 1915, form: "novel", language: "Spanish", local: true, opening: "\"How beautiful the revolution!", breaths: 2901, minutes: 363, gutenberg: 549 },
+  {
+    id: "the-underdogs",
+    title: "The Underdogs",
+    author: "Mariano Azuela (tr. E. Munguía, Jr.)",
+    year: 1929,
+    form: "novel",
+    language: "English",
+    minutes: 2,
+    local: true,
+    gutenberg: 549,
+    opening: "\"That's no animal, I tell you! Listen to the dog barking! It must be a human being.\"",
+    breaths: 12,
+    intro:
+      "Dog barking in the sierra — tortillas, a *cántaro*, a rifle under the mat — and hoofbeats in the quarry.",
+  },
   { id: "home-world", title: "The Home and the World", author: "Rabindranath Tagore", year: 1916, form: "novel", language: "Bengali", minutes: 160, gutenberg: 7166 },
   {
     id: "the-home-and-the-world",
@@ -507,6 +522,22 @@ export const SHELF: ShelfWork[] = [
   { id: "bruges-la-morte", title: "Bruges-la-Morte", author: "Georges Rodenbach", year: 1892, form: "novel", language: "French", minutes: 160, gutenberg: 14911 },
   { id: "ecstasy-a-study-of-happiness", title: "Ecstasy, A Study of Happiness", author: "Louis Couperus", year: 1892, form: "novel", language: "Dutch", minutes: 160, gutenberg: 37770 },
   {
+    id: "ecstasy",
+    title: "Ecstasy",
+    author: "Louis Couperus (tr. Alexander Teixeira de Mattos)",
+    year: 1919,
+    form: "novel",
+    language: "English",
+    minutes: 2,
+    local: true,
+    gutenberg: 37770,
+    opening:
+      "Dolf Van Attema, in the course of an after-dinner stroll, had called on his wife's sister, Cecile van Even, on the Scheveningen Road.",
+    breaths: 6,
+    intro:
+      "After dinner on the Scheveningen Road — rosewood, vieux-rose silk, an onyx lamp like a six-petalled flower — and a promise not to wake the boy.",
+  },
+  {
     id: "silhouettes",
     title: "Silhouettes",
     author: "Arthur Symons",
@@ -558,7 +589,22 @@ export const SHELF: ShelfWork[] = [
   { id: "the-patriot-piccolo-mondo-antico", title: "The Patriot (Piccolo Mondo Antico)", author: "Antonio Fogazzaro", year: 1895, form: "novel", language: "Italian", minutes: 160, gutenberg: 33778 },
   { id: "the-pharaoh-and-the-priest", title: "The Pharaoh and the Priest", author: "Bolesław Prus", year: 1895, form: "novel", language: "Polish", minutes: 160, gutenberg: 23646 },
   { id: "a-shropshire-lad", title: "A Shropshire Lad", author: "A. E. Housman", year: 1896, form: "poem", language: "English", minutes: 90, gutenberg: 5720 },
-  { id: "an-outcast-of-the-islands", title: "An Outcast of the Islands", author: "Joseph Conrad", year: 1896, form: "novel", language: "English", local: true, opening: "When he stepped off the straight and narrow path of his peculiar honesty, it was with an inward assertion of unflinching resolve to fall back again into the mon", breaths: 7110, minutes: 889, gutenberg: 638 },
+  {
+    id: "an-outcast-of-the-islands",
+    title: "An Outcast of the Islands",
+    author: "Joseph Conrad",
+    year: 1896,
+    form: "novel",
+    language: "English",
+    minutes: 2,
+    local: true,
+    gutenberg: 638,
+    opening:
+      "When he stepped off the straight and narrow path of his peculiar honesty, it was with an inward assertion of unflinching resolve to fall back again into the monotonous but safe stride of virtue as soon as his little excursion into the wayside quagmires had produced the desired effect.",
+    breaths: 2,
+    intro:
+      "A little excursion off the straight path — neatly done, quickly forgotten. Conrad’s Malay Archipelago world — colonial hierarchy and racialized language intensify after this cut. Salon stops at the sentence-in-brackets resolve; if you Host further, name that frame for the room first.",
+  },
   { id: "embarrassments", title: "Embarrassments", author: "Henry James", year: 1896, form: "stories", language: "English", minutes: 365, local: true, opening: "I had done a few things and earned a few pence--I had perhaps even had time to begin to think I was finer than was perceived by the patronising; but when I take the little measure of my course (a fidgety habit, for it’s none of the longest yet) I count my real start from the evening George Corvick, breathless and worried, came in to ask me a service.", breaths: 2922, gutenberg: 21932 },
   { id: "quo-vadis", title: "Quo Vadis", author: "Henryk Sienkiewicz", year: 1896, form: "novel", language: "Polish", minutes: 160, gutenberg: 35560 },
   { id: "the-country-of-the-pointed-firs", title: "The Country of the Pointed Firs", author: "Sarah Orne Jewett", year: 1896, form: "stories", language: "English", minutes: 80, gutenberg: 367 },
@@ -628,6 +674,22 @@ export const SHELF: ShelfWork[] = [
   { id: "the-wind-among-the-reeds", title: "The Wind Among the Reeds", author: "W. B. Yeats", year: 1899, form: "poem", language: "English", local: true, opening: "The host is riding from Knocknarea And over the grave of Clooth-na-bare; Caolte tossing his burning hair And Niamh calling _Away, come away: Empty your heart of", breaths: 280, minutes: 35, gutenberg: 32233 },
   { id: "when-the-sleeper-wakes", title: "When the Sleeper Wakes", author: "H. G. Wells", year: 1899, form: "novel", language: "English", minutes: 780, local: true, opening: "One afternoon, at low water, Mr. Isbister, a young artist lodging at Boscastle, walked from that place to the picturesque cove of Pentargen, desiring to examine the caves there.", breaths: 6242, gutenberg: 775 },
   { id: "a-chambermaid-s-diary", title: "A Chambermaid's Diary", author: "Octave Mirbeau", year: 1900, form: "novel", language: "French", minutes: 160, gutenberg: 44303 },
+  {
+    id: "diary-of-a-chambermaid",
+    title: "The Diary of a Chambermaid",
+    author: "Octave Mirbeau",
+    year: 1900,
+    form: "novel",
+    language: "English",
+    minutes: 2,
+    local: true,
+    gutenberg: 44303,
+    opening:
+      "To-day, September 14, at three o'clock in the afternoon, in mild, gray, and rainy weather, I have entered upon my new place.",
+    breaths: 9,
+    intro:
+      "Twelfth place in two years — rainy September, *Figaro* ad, dirty souls, and no interview with Madame.",
+  },
   { id: "on-the-track", title: "On the Track", author: "Henry Lawson", year: 1900, form: "stories", language: "English", local: true, opening: "The Songs They used to Sing", breaths: 2203, minutes: 275, gutenberg: 1231 },
   { id: "shadowings", title: "Shadowings", author: "Lafcadio Hearn", year: 1900, form: "stories", language: "English", minutes: 80, gutenberg: 34215 },
   { id: "sister-carrie", title: "Sister Carrie", author: "Theodore Dreiser", year: 1900, form: "novel", language: "English", minutes: 1527, local: true, opening: "When Caroline Meeber boarded the afternoon train for Chicago, her total outfit consisted of a small trunk, a cheap imitation alligator-skin satchel, a small lunch in a paper box, and a yellow leather snap purse, containing her ticket, a scrap of paper with her sister's address in Van Buren Street, and four dollars in money.", breaths: 12218, gutenberg: 5267 },

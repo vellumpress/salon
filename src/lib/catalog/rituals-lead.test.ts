@@ -33,6 +33,14 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
   ]);
   const forYou = lane(FOR_YOU_LANE_ID);
   assert.deepEqual(forYou.workIds, [...FIRST_SESSION_RITUAL_IDS]);
+  for (const id of [
+    "ecstasy",
+    "an-outcast-of-the-islands",
+    "the-underdogs",
+    "diary-of-a-chambermaid",
+  ]) {
+    assert.equal(forYou.workIds.includes(id), false, id);
+  }
   for (const id of FIRST_SESSION_RITUAL_IDS) {
     const work = SHELF.find((item) => item.id === id);
     assert.ok(work, id);

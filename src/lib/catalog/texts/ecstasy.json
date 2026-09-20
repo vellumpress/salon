@@ -1,0 +1,51 @@
+{
+  "id": "ecstasy",
+  "title": "Ecstasy",
+  "author": "Louis Couperus (tr. Alexander Teixeira de Mattos)",
+  "year": "1919",
+  "note": "Before-sleep ritual sit — Scheveningen Road boudoir.\n\nAfter dinner on the Scheveningen Road — rosewood, vieux-rose silk, an onyx lamp like a six-petalled flower — and a promise not to wake the boy.\n\nClosed boudoir wait. Salon stops at the promise not to wake little Dolf.\n\nEcstasy (Couperus; NL 1892; EN 1919, tr. Alexander Teixeira de Mattos; PG 37770). Sit through the promise. Stop before the rest of the novel.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Scheveningen Road",
+      "place": "one sitting",
+      "reentry": "Dolf Van Attema, in the course of an after-dinner stroll, had called on his wife's sister, Cecile van Even, on the Scheveningen Road.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Dolf Van Attema, in the course of an after-dinner stroll, had called on his wife's sister, Cecile van Even, on the Scheveningen Road."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "He was waiting in her little boudoir, pacing up and down, among the rosewood chairs and the vieux rose moire ottomans, over and over again, with three or four long steps, measuring the width of the tiny room."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "On an onyx pedestal, at the head of a sofa, burned an onyx lamp, glowing sweetly within its lace shade, a great six-petalled flower of light."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Mevrouw was still with the children, putting them to bed, the maid had told him; so he would not be able to see his godson, little Dolf, that evening."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "He was sorry."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "He would have liked to go upstairs and romp with Dolf where he lay in his little bed; but he remembered Cecile's request and his promise on an earlier occasion, when a romp of this sort with his uncle had kept the boy awake for hours."
+    }
+  ]
+}
