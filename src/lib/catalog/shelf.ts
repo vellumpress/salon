@@ -1180,7 +1180,7 @@ export const SHELF: ShelfWork[] = [
   { id: "twilight-sleep", title: "Twilight Sleep", author: "Edith Wharton", year: 1927, form: "novel", language: "English", minutes: 160, gutenberg: 70844 },
   {
     id: "miss-brill-adapted",
-    title: "The Bench at Four",
+    title: "Miss Brill after",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1194,7 +1194,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "prefer-not",
-    title: "Prefer Not",
+    title: "Bartleby after",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1208,7 +1208,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "late-season",
-    title: "Late Season",
+    title: "The Lady with the Dog after",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1223,7 +1223,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "between-the-drop-and-the-water",
-    title: "Between the Drop and the Water",
+    title: "An Occurrence at Owl Creek Bridge after",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1238,7 +1238,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "he-woke-changed",
-    title: "He Woke Changed",
+    title: "The Metamorphosis after",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1253,7 +1253,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "the-pattern",
-    title: "The Pattern",
+    title: "The Yellow Wallpaper after",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1267,7 +1267,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "a-coat-worthy-of-respect",
-    title: "A Coat Worthy of Respect",
+    title: "The Overcoat after",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1282,7 +1282,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "what-she-borrowed",
-    title: "What She Borrowed",
+    title: "The Necklace after",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1296,7 +1296,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "it-was-not-nervousness",
-    title: "It Was Not Nervousness",
+    title: "The Tell-Tale Heart after",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1310,7 +1310,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "during-carnival",
-    title: "During Carnival",
+    title: "The Cask of Amontillado after",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1324,7 +1324,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "what-we-sold",
-    title: "What We Sold",
+    title: "The Gift of the Magi after",
     author: "Salon",
     year: 2026,
     form: "other",

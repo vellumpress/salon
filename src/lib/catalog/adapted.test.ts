@@ -31,7 +31,7 @@ const LANE: Record<string, "unwind" | "before-sleep"> = {
 
 const EXPECT = {
   "miss-brill-adapted": {
-    title: "The Bench at Four",
+    title: "Miss Brill after",
     opening: /^Miss Brill put on her coat the way other people put on a face/,
     last: /the city kept casting itself without her/,
     place: { label: "Menton / French Riviera", region: "fr" },
@@ -39,7 +39,7 @@ const EXPECT = {
     scene: /river park/i,
   },
   "prefer-not": {
-    title: "Prefer Not",
+    title: "Bartleby after",
     opening: /^I am a man who believes in soft walls and quieter victories/,
     last: /a gentle workplace could always find a door/,
     place: { label: "New York", region: "us" },
@@ -47,7 +47,7 @@ const EXPECT = {
     scene: /screen/i,
   },
   "late-season": {
-    title: "Late Season",
+    title: "The Lady with the Dog after",
     opening: /^Dmitri Gurov came to Cape May in September/,
     last: /harder to put down/,
     place: { label: "Yalta / Moscow", region: "ru" },
@@ -55,7 +55,7 @@ const EXPECT = {
     scene: /off season/i,
   },
   "between-the-drop-and-the-water": {
-    title: "Between the Drop and the Water",
+    title: "An Occurrence at Owl Creek Bridge after",
     opening: /^Peyton Farquhar stood on the edge of the condemned pier/,
     last: /let him go home/,
     place: { label: "Hudson River, New York", region: "us" },
@@ -63,7 +63,7 @@ const EXPECT = {
     scene: /pier/i,
   },
   "he-woke-changed": {
-    title: "He Woke Changed",
+    title: "The Metamorphosis after",
     opening: /^Gregor Samsa woke from uneasy dreams and found himself changed/,
     last: /someone else's problem/,
     place: { label: "Prague", region: "cz" },
@@ -71,7 +71,7 @@ const EXPECT = {
     scene: /apartment/i,
   },
   "the-pattern": {
-    title: "The Pattern",
+    title: "The Yellow Wallpaper after",
     opening: /^John said the country would fix me/,
     last: /did not try to hold anyone in/,
     place: { label: "Hudson, New York", region: "us" },
@@ -79,7 +79,7 @@ const EXPECT = {
     scene: /wallpaper/i,
   },
   "a-coat-worthy-of-respect": {
-    title: "A Coat Worthy of Respect",
+    title: "The Overcoat after",
     opening: /^Akaky Akakievich Petrovich/,
     last: /impossible to ignore/,
     place: { label: "St. Petersburg", region: "ru" },
@@ -87,7 +87,7 @@ const EXPECT = {
     scene: /coat/i,
   },
   "what-she-borrowed": {
-    title: "What She Borrowed",
+    title: "The Necklace after",
     opening: /^Mathilde Loisel believed she had been born for better rooms/,
     last: /impossible even to hate cleanly/,
     place: { label: "Paris", region: "fr" },
@@ -95,7 +95,7 @@ const EXPECT = {
     scene: /gala/i,
   },
   "it-was-not-nervousness": {
-    title: "It Was Not Nervousness",
+    title: "The Tell-Tale Heart after",
     opening: /^Listen\. I can tell this calmly/,
     last: /it is his heart/,
     place: { label: "East London", region: "gb" },
@@ -103,7 +103,7 @@ const EXPECT = {
     scene: /walk-up/i,
   },
   "during-carnival": {
-    title: "During Carnival",
+    title: "The Cask of Amontillado after",
     opening: /^I did not announce what Fortunato had done to me/,
     last: /bells went quiet/,
     place: { label: "Venice", region: "it" },
@@ -111,7 +111,7 @@ const EXPECT = {
     scene: /cellar/i,
   },
   "what-we-sold": {
-    title: "What We Sold",
+    title: "The Gift of the Magi after",
     opening: /^Della counted the jar twice on Christmas Eve morning/,
     last: /did not need to be correct to be true/,
     place: { label: "London", region: "gb" },
@@ -164,10 +164,12 @@ test("Adapted remakes are local sits with source credit, not Featured", () => {
 
     const packed = JSON.parse(
       readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8"),
-    ) as { scenes: { title: string }[]; breaths: { text: string }[] };
+    ) as { title: string; scenes: { title: string }[]; breaths: { text: string }[] };
     const full = JSON.parse(
       readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8"),
-    ) as { breaths: { text: string }[] };
+    ) as { title: string; breaths: { text: string }[] };
+    assert.equal(packed.title, want.title, `${id} opening title`);
+    assert.equal(full.title, want.title, `${id} text title`);
     assert.match(packed.scenes[0]?.title ?? "", want.scene, id);
     assert.match(packed.breaths[0]?.text ?? "", want.opening, id);
     assert.match(packed.breaths.at(-1)?.text ?? "", want.last, id);
@@ -178,13 +180,35 @@ test("Adapted remakes are local sits with source credit, not Featured", () => {
   }
 });
 
+test("Adapted remakes do not keep remake nicknames as the display title", () => {
+  const banned = [
+    "The Bench at Four",
+    "Prefer Not",
+    "Late Season",
+    "Between the Drop and the Water",
+    "He Woke Changed",
+    "The Pattern",
+    "A Coat Worthy of Respect",
+    "What She Borrowed",
+    "It Was Not Nervousness",
+    "During Carnival",
+    "What We Sold",
+    "Bartleby, the Scrivener after",
+  ];
+  for (const id of ADAPTED_BY_SALON_IDS) {
+    const title = shelfWork(id)?.title ?? "";
+    assert.ok(title.endsWith(" after"), `${id} ends with after`);
+    assert.equal(banned.includes(title), false, `${id} ${title}`);
+  }
+});
+
 test("classic Miss Brill collection stays on the shelf beside the remake", () => {
   const classic = SHELF.find((item) => item.id === "the-garden-party-and-other-stories");
   const remake = SHELF.find((item) => item.id === "miss-brill-adapted");
   assert.ok(classic);
   assert.ok(remake);
   assert.notEqual(classic!.id, remake!.id);
-  assert.equal(remake!.title, "The Bench at Four");
+  assert.equal(remake!.title, "Miss Brill after");
 });
 
 test("homepage classics strip does not mix in Adapted remakes", () => {
