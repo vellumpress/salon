@@ -337,9 +337,9 @@ export const RITUAL_LANES: RitualLane[] = [
       // Naomi is a local bind but not a short first-session sit (full novel,
       // no ritual-ready open-at). Skip until a clean short sit exists —
       // do not invent one.
-      // Enchanted April is a waking-up local sit on this shelf. Mira’s
-      // tighter first-session cut (~158w, *The Times* italics, dripping
-      // street) is a later polish — do not invent a second work id.
+      // Enchanted April is a waking-up local sit on this shelf. Live bind
+      // is Mira’s first-session dripping-street cut (~158w). The longer
+      // agony-column Host sit is backup only — do not invent a second work id.
       "poison-tree",
       "noli-me-tangere",
       "gitanjali",
@@ -407,7 +407,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-weary-blues": 5,
   "kwaidan-stories-and-studies-of-strange-things": 5,
   "the-house-of-mirth": 5,
-  "enchanted-april": 5,
+  "enchanted-april": 2,
   "mr-fortunes-maggot": 5,
   "the-bridge-of-san-luis-rey": 8,
   "carmilla": 5,

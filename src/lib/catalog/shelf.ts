@@ -1144,11 +1144,11 @@ export const SHELF: ShelfWork[] = [
     local: true,
     gutenberg: 16389,
     opening:
-      "It began in a Woman’s Club in London on a February afternoon—an uncomfortable club, and a miserable afternoon—when Mrs. Wilkins, who had come down from Hampstead to shop and had lunched at her club, took up The Times from the table in the smoking-room, and running her listless eye down the Agony Column saw this:",
-    breaths: 4375,
-    minutes: 547,
+      "It began in a Woman’s Club in London on a February afternoon—an uncomfortable club, and a miserable afternoon—when Mrs. Wilkins, who had come down from Hampstead to shop and had lunched at her club, took up *The Times* from the table in the smoking-room, and running her listless eye down the Agony Column saw this:",
+    breaths: 7,
+    minutes: 2,
     intro:
-      "February rain on Shaftesbury Avenue. An uncomfortable club. Mrs. Wilkins, down from Hampstead to shop, picks up The Times and lets her eye drift the Agony Column—until one notice catches: wistaria and sunshine, a small mediaeval Italian castle to let for April, servants included. Not for her, she thinks at once. She is poor, thrifty, married to a solicitor who praises nest-eggs for rainy days. And yet the wish doesn’t leave the room with her.\n\nElizabeth von Arnim’s The Enchanted April, first published in 1922, opens in that London gray and lets one quiet advertisement rearrange a morning. This waking sit takes the Agony Column beat through Mrs. Wilkins’s first reaction at the window—before the club widens, before anyone else steps in.",
+      "February rain on Shaftesbury Avenue. An uncomfortable club. Mrs. Wilkins, down from Hampstead to shop, picks up The Times and lets her eye drift the Agony Column—until one notice catches: wistaria and sunshine, a small mediaeval Italian castle to let for April, servants included.\n\nElizabeth von Arnim’s The Enchanted April, first published in 1922, opens in that London gray. This first-session sit stops at the dripping street—before the wish argues back.",
   },
   { id: "the-garden-party-and-other-stories", title: "The Garden Party, and Other Stories", author: "Katherine Mansfield", year: 1922, form: "stories", language: "English", minutes: 640, local: true, opening: "Very early morning.", breaths: 5117 },
   { id: "the-waste-land", title: "The Waste Land", author: "T. S. Eliot", year: 1922, form: "poem", language: "English", minutes: 90, gutenberg: 1321 },

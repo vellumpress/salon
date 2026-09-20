@@ -322,7 +322,11 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       );
     }
     if (id === "enchanted-april") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /But what nonsense to think of it/);
+      assert.match(packed.breaths.at(-1)?.text ?? "", /dripping street\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /what nonsense|Mrs\. Arbuthnot|nest-egg/i,
+      );
     }
     if (id === "mr-fortunes-maggot") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /call to go to the island of Fanua/);
@@ -809,6 +813,59 @@ test("The Home and the World opens on Mother’s vermilion and binds only the mi
       return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
     });
     assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
+  }
+});
+
+test("Enchanted April opens on the first-session dripping-street cut, not the long Host sit", () => {
+  const work = SHELF.find((item) => item.id === "enchanted-april");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 16389);
+  assert.equal(work!.title, "The Enchanted April");
+  assert.equal(work!.author, "Elizabeth von Arnim");
+  assert.equal(work!.year, 1922);
+  assert.match(work!.opening ?? "", /^It began in a Woman/);
+  assert.match(work!.opening ?? "", /\*The Times\*/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/enchanted-april.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/enchanted-april.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.note, /first-session|dripping street|wet-street/i);
+  assert.match(packed.note, /soft-launch/i);
+  assert.doesNotMatch(packed.note, /Five to ten minutes|nest-egg|what nonsense|Featured|cold-open/i);
+  assert.match(packed.scenes[0]?.title ?? "", /Agony Column/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^It began in a Woman/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /dripping street\.?$/);
+  assert.equal(
+    packed.breaths.some((breath) => /what nonsense|Mrs\. Arbuthnot|nest-egg/i.test(breath.text)),
+    false,
+    "open-at should stop on the dripping street, before the long agony-column sit",
+  );
+  assert.ok(packed.breaths.some((breath) => /\*The Times\*/.test(breath.text)));
+  assert.equal(
+    packed.breaths.some((breath) => /_The Times_/.test(breath.text)),
+    false,
+    "live bind uses *The Times*, not Gutenberg _italics_",
+  );
+  const words = packed.breaths
+    .map((breath) => breath.text)
+    .join(" ")
+    .replace(/[*_]/g, "")
+    .split(/\s+/)
+    .filter(Boolean);
+  assert.ok(
+    words.length >= 145 && words.length <= 170,
+    `expected ~158 words, got ${words.length}`,
+  );
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the first-session sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+  for (const pack of [packed, full]) {
+    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+    assert.doesNotMatch(joined, /project gutenberg/i);
+    assert.doesNotMatch(joined, /what nonsense|Mrs\. Arbuthnot/i);
   }
 });
 
