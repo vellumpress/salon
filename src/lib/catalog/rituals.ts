@@ -128,6 +128,14 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.`,
   vera:
     `Cornwall, noon heat, a garden gate, and a daughter who has lost everything—and feels nothing yet. Same author as Enchanted April, colder register. Wemyss intensifies later; this open stays clean emptiness.`,
+  "on-a-chinese-screen":
+    `She takes a holy temple and papers it into Cheltenham—blue curtains for her eyes, pink stripes, an American stove where the Buddha sat.`,
+  futility:
+    `Three sisters spring out of a wooden dacha above the sea and introduce themselves in order of age—then the samovar household rearranges what “mother” means.`,
+  "poison-tree":
+    `His wife makes him promise: if a storm rises, leave the boat. On the Ganges in Joisto, the weather keeps that promise.`,
+  "trooper-peter-halket":
+    `Alone on a kopje with a fire that only quivers—Trooper Peter Halket has lost his column, and the dark starts inventing fortunes for him.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":
@@ -173,6 +181,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "rashomon",
       "high-wind-jamaica",
       "vera",
+      "trooper-peter-halket",
       "the-pattern",
       "it-was-not-nervousness",
       "between-the-drop-and-the-water",
@@ -192,6 +201,8 @@ export const RITUAL_LANES: RitualLane[] = [
     id: "waking-up",
     label: "Waking up",
     workIds: [
+      "on-a-chinese-screen",
+      "futility",
       "the-rubaiyat-of-omar-khayyam",
       "spring-and-all",
       "a-few-figs-from-thistles",
@@ -206,6 +217,7 @@ export const RITUAL_LANES: RitualLane[] = [
     label: "Unwind",
     hint: "De-stress",
     workIds: [
+      "poison-tree",
       "noli-me-tangere",
       "gitanjali",
       "songs-of-kabir",
@@ -278,6 +290,10 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "high-wind-jamaica": 3,
   "noli-me-tangere": 2,
   vera: 4,
+  "on-a-chinese-screen": 5,
+  futility: 4,
+  "poison-tree": 5,
+  "trooper-peter-halket": 4,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

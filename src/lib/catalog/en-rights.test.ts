@@ -62,3 +62,27 @@ test("Vera is a readable local EN bind", () => {
   assert.equal(isBoundLocal({ id: "vera", local: true }), true);
   assert.equal(isBoundReadable({ id: "vera", local: true, gutenberg: 34366 }), true);
 });
+
+test("On a Chinese Screen is a readable local EN bind", () => {
+  assert.equal(isEnReadableOff("on-a-chinese-screen"), false);
+  assert.equal(isBoundLocal({ id: "on-a-chinese-screen", local: true }), true);
+  assert.equal(isBoundReadable({ id: "on-a-chinese-screen", local: true, gutenberg: 48788 }), true);
+});
+
+test("Futility is a readable local EN bind", () => {
+  assert.equal(isEnReadableOff("futility"), false);
+  assert.equal(isBoundLocal({ id: "futility", local: true }), true);
+  assert.equal(isBoundReadable({ id: "futility", local: true, gutenberg: 77253 }), true);
+});
+
+test("The Poison Tree is a readable local EN bind", () => {
+  assert.equal(isEnReadableOff("poison-tree"), false);
+  assert.equal(isBoundLocal({ id: "poison-tree", local: true }), true);
+  assert.equal(isBoundReadable({ id: "poison-tree", local: true, gutenberg: 17455 }), true);
+});
+
+test("Trooper Peter Halket is a readable local EN bind", () => {
+  assert.equal(isEnReadableOff("trooper-peter-halket"), false);
+  assert.equal(isBoundLocal({ id: "trooper-peter-halket", local: true }), true);
+  assert.equal(isBoundReadable({ id: "trooper-peter-halket", local: true, gutenberg: 1431 }), true);
+});

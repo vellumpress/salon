@@ -13,6 +13,10 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * A High Wind in Jamaica sits beside them (Jamaica / before-sleep Host-a-sit Ch1).
  * Noli Me Tangere sits beside them (Manila / unwind Host-a-sit Ch1).
  * Vera sits beside them (Cornwall / before-sleep Host-a-sit Ch I).
+ * On a Chinese Screen sits beside them (China / waking Host-a-sit Parlour).
+ * Futility sits beside them (Petersburg coast / waking Host-a-sit sisters).
+ * Trooper Peter Halket sits beside them (Mashonaland / before-sleep Host-a-sit kopje).
+ * The Poison Tree is Later (Bengal / unwind) — not Next, not Featured.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never Featured, Next, or Later classics.
@@ -26,6 +30,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "high-wind-jamaica",
   "noli-me-tangere",
   "vera",
+  "on-a-chinese-screen",
+  "futility",
+  "trooper-peter-halket",
 ] as const;
 
 /** Mira pack — Adapted by Salon lane only. Do not add to Featured / Next. */

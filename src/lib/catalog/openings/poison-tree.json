@@ -1,0 +1,231 @@
+{
+  "id": "poison-tree",
+  "title": "The Poison Tree",
+  "author": "Bankim Chandra Chatterjee (tr. Miriam S. Knight)",
+  "year": "1884",
+  "note": "Unwind ritual sit — the Ganges storm.\n\nHis wife makes him promise: if a storm rises, leave the boat. On the Ganges in Joisto, the weather keeps that promise.\n\nThe Poison Tree (Chatterjee; EN Miriam S. Knight 1884; PG 17455). Host-a-sit. Sit through leaving the boat. Stop before the rest of the novel.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "The storm",
+      "place": "one sitting",
+      "reentry": "Nagendra Natha Datta is about to travel by boat.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Nagendra Natha Datta is about to travel by boat."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "It is the month _Joisto_ (May--June), the time of storms."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "His wife, Surja Mukhi, had adjured him, saying, \"Be careful; if a storm arises be sure you fasten the boat to the shore."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Do not remain in the boat.\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Nagendra had consented to this, otherwise Surja Mukhi would not have permitted him to leave home; and unless he went to Calcutta his suits in the Courts would not prosper."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Nagendra Natha was a young man, about thirty years of age, a wealthy _zemindar_ (landholder) in Zillah Govindpur."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "He dwelt in a small village which we shall call Haripur."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "He was travelling in his own boat."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "The first day or two passed without obstacle."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "The river flowed smoothly on--leaped, danced, cried out, restless, unending, playful."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "On shore, herdsmen were grazing their oxen--one sitting under a tree singing, another smoking, some fighting, others eating."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Inland, husbandmen were driving the plough, beating the oxen, lavishing abuse upon them, in which the owner shared."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "The wives of the husbandmen, bearing vessels of water, some carrying a torn quilt, or a dirty mat, wearing a silver amulet round the neck, a ring in the nose, bracelets of brass on the arm, with unwashed garments, their skins blacker than ink, their hair unkempt, formed a chattering crowd."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "Among them one beauty was rubbing her head with mud, another beating a child, a third speaking with a neighbour in abuse of some nameless person, a fourth beating clothes on a plank."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "Further on, ladies from respectable villages adorned the _ghats_ (landing-steps) with their appearance--the elders conversing, the middle-aged worshipping _Siva_, the younger covering their faces and plunging into the water; the boys and girls screaming, playing with mud, stealing the flowers offered in worship, swimming, throwing water over every one, sometimes stepping up to a lady, snatching away the image of _Siva_ from her, and running off with it."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "The Brahmans, good tranquil men, recited the praises of _Ganga_ (the sacred river Ganges) and performed their worship, sometimes, as they wiped their streaming hair, casting glances at the younger women."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "In the sky, the white clouds float in the heated air."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Below them fly the birds, like black dots."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "In the cocoanut trees, kites, like ministers of state, look around to see on what they can pounce; the cranes, being only small fry, stand raking in the mud; the _dahuk_ (coloured herons), merry creatures, dive in the water; other birds of a lighter kind merely fly about."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Market-boats sail along at good speed on their own behalf; ferry-boats creep along at elephantine pace to serve the needs of others only: cargo boats make no progress at all--that is the owners' concern."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "On the third day of Nagendra's journey clouds arose and gradually covered the sky."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "The river became black, the tree-tops drooped, the paddy birds flew aloft, the water became motionless."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "Nagendra ordered the _manji_ (boatman) to run the boat in shore and make it fast."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "At that moment the steersman, Rahamat Mullah, was saying his prayers, so he made no answer."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "Rahamat knew nothing of his business."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "His mother's father's sister was the daughter of a boatman; on that plea he had become a hanger-on of boatmen, and accident favoured his wishes; but he learned nothing, his work was done as fate willed."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "Rahamat was not backward in speech, and when his prayers were ended he turned to the Babu and said, \"Do not be alarmed, sir, there is no cause for fear.\""
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "Rahamat was thus brave because the shore was close at hand, and could be reached without delay, and in a few minutes the boat was secured."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "Surely the gods must have had a quarrel with Rahamat Mullah, for a great storm came up quickly."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "First came the wind; then the wind, having wrestled for some moments with the boughs of the trees, called to its brother the rain, and the two began a fine game."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "Brother Rain, mounting on brother Wind's shoulders, flew along."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "The two together, seizing the tree-tops, bent them down, broke the boughs, tore off the creepers, washed away the flowers, cast up the river in great waves, and made a general tumult."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "One brother flew off with Rahamat Mullah's head-gear; the other made a fountain of his beard."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "The boatmen lowered the sail, the Babu closed the windows, and the servants put the furniture under shelter."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "Nagendra was in a great strait."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "If, in fear of the storm, he should leave the boat, the men would think him a coward; if he remained he would break his word to Surja Mukhi."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "Some may ask, What harm if he did?"
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "We know not, but Nagendra thought it harm."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "At this moment Rahamat Mullah said, \"Sir, the rope is old; I do not know what may happen."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "The storm has much increased; it will be well to leave the boat.\""
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "Accordingly Nagendra got out."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "No one can stand on the river bank without shelter in a heavy storm of rain."
+    }
+  ]
+}

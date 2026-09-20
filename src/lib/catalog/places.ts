@@ -42,6 +42,10 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "high-wind-jamaica": { label: "Jamaica", region: "jm" },
   "noli-me-tangere": { label: "Manila", region: "ph" },
   vera: { label: "Cornwall", region: "gb" },
+  "on-a-chinese-screen": { label: "China", region: "cn" },
+  futility: { label: "Petersburg coast", region: "ru" },
+  "poison-tree": { label: "Bengal", region: "in" },
+  "trooper-peter-halket": { label: "Mashonaland", region: "za" },
 
   // Named examples + Italy stand-in (Enchanted April is not on this shelf)
   botchan: { label: "Tokyo", region: "jp" },
