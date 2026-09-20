@@ -751,6 +751,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "vandover-and-the-brute": `Norris’s San Francisco: a young man sliding toward the animal he fears. Sit with the world a moment before the first breath.`,
   "venice": `Thomas Mann’s 1912 work Death in Venice. Sit with the world a moment before the first breath.`,
   "venus-in-furs": `Leopold von Sacher-Masoch’s 1870 novel Venus in Furs. Sit with the world a moment before the first breath.`,
+  "vera": `Cornwall, noon heat, a garden gate, and a daughter who has lost everything—and feels nothing yet. Same author as Enchanted April, colder register. Wemyss intensifies later; this open stays clean emptiness.`,
   "victoria": `Knut Hamsun’s 1898 novel Victoria. Sit with the world a moment before the first breath.`,
   "victory": `Victory (1915): exile, ships, and men tested past the language they brought aboard. Sit with the world a moment before the first breath.`,
   "villette": `Villette (1853): a governess in a room that answers back. Sit with the world a moment before the first breath.`,

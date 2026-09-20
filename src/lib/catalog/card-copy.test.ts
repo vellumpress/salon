@@ -59,6 +59,7 @@ test("known origin overrides", () => {
     rashomon: "Japan",
     "high-wind-jamaica": "Jamaica",
     "noli-me-tangere": "Philippines",
+    vera: "United Kingdom",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);
@@ -121,6 +122,10 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /Capitan Tiago/i,
       opening: /^On the last of October Don Santiago de los Santos/,
     },
+    vera: {
+      scene: /Cliff gate/i,
+      opening: /^When the doctor had gone/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -168,6 +173,13 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /project gutenberg|Ibarra|Crisostomo|Crisóstomo/i,
+      );
+    }
+    if (id === "vera") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /and she felt nothing\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /Wemyss|Everard/i,
       );
     }
   }
@@ -359,6 +371,47 @@ test("Noli Me Tangere opens on Capitan Tiago’s dinner and binds only the Pasig
   assert.equal(work!.breaths, packed.breaths.length);
   assert.match(full.breaths[0]?.text ?? "", /^On the last of October Don Santiago de los Santos/);
   assert.match(full.breaths.at(-1)?.text ?? "", /convenient\.?$/);
+  for (const pack of [packed, full]) {
+    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+    assert.doesNotMatch(joined, /project gutenberg/i);
+    const decorative = pack.breaths.filter((breath) => {
+      const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
+      return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
+    });
+    assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
+  }
+});
+
+test("Vera opens on the cliff gate and binds only the second felt-nothing sit", () => {
+  const work = SHELF.find((item) => item.id === "vera");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 34366);
+  assert.equal(work!.title, "Vera");
+  assert.equal(work!.author, "Elizabeth von Arnim");
+  assert.equal(work!.year, 1921);
+  assert.match(work!.opening ?? "", /^When the doctor had gone/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/vera.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/vera.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Cliff gate/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^When the doctor had gone/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /and she felt nothing\.?$/);
+  const feltNothing = packed.breaths.filter((breath) => /she felt nothing/.test(breath.text));
+  assert.equal(feltNothing.length, 2, "SOFT-alt sit runs through the second felt nothing");
+  assert.equal(
+    packed.breaths.some((breath) => /Wemyss|Everard/i.test(breath.text)),
+    false,
+    "open-at should stop before Wemyss / the rest of the novel",
+  );
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+  assert.match(full.breaths[0]?.text ?? "", /^When the doctor had gone/);
+  assert.match(full.breaths.at(-1)?.text ?? "", /felt nothing\.?$/);
   for (const pack of [packed, full]) {
     const joined = pack.breaths.map((breath) => breath.text).join("\n");
     assert.doesNotMatch(joined, /project gutenberg/i);

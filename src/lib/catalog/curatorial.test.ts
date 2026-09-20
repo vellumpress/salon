@@ -18,6 +18,7 @@ test("Featured carousel is unchanged and does not include Quicksand", () => {
   assert.equal(FEATURED_CAROUSEL_IDS.includes("rashomon"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("high-wind-jamaica"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("noli-me-tangere"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("vera"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("miss-brill-adapted"), false);
@@ -35,12 +36,14 @@ test("Quicksand is Next Featured-track", () => {
     "rashomon",
     "high-wind-jamaica",
     "noli-me-tangere",
+    "vera",
   ]);
   assert.equal(curatorialTrack("quicksand"), "next");
   assert.equal(curatorialTrack("attendants-confession"), "next");
   assert.equal(curatorialTrack("rashomon"), "next");
   assert.equal(curatorialTrack("high-wind-jamaica"), "next");
   assert.equal(curatorialTrack("noli-me-tangere"), "next");
+  assert.equal(curatorialTrack("vera"), "next");
   assert.equal(curatorialTrack("the-house-of-mirth"), "later");
 });
 
@@ -167,4 +170,24 @@ test("Noli Me Tangere is a local unwind bind on Next Featured-track", () => {
   assert.equal(stub.local, undefined);
   assert.equal(stub.gutenberg, 20228);
   assert.notEqual(stub.id, work.id);
+});
+
+test("Vera is a local before-sleep bind on Next Featured-track", () => {
+  const work = SHELF.find((item) => item.id === "vera");
+  assert.ok(work);
+  assert.equal(work.year, 1921);
+  assert.equal(work.title, "Vera");
+  assert.equal(work.author, "Elizabeth von Arnim");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 34366);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^When the doctor had gone/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("vera"));
+  assert.equal(
+    RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("vera"),
+    false,
+  );
+  assert.equal(isAdaptedBySalon("vera"), false);
+  assert.equal(curatorialTrack("vera"), "next");
 });

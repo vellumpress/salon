@@ -41,6 +41,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   rashomon: { label: "Kyoto / Japan", region: "jp" },
   "high-wind-jamaica": { label: "Jamaica", region: "jm" },
   "noli-me-tangere": { label: "Manila", region: "ph" },
+  vera: { label: "Cornwall", region: "gb" },
 
   // Named examples + Italy stand-in (Enchanted April is not on this shelf)
   botchan: { label: "Tokyo", region: "jp" },

@@ -1,0 +1,46 @@
+{
+  "id": "vera",
+  "title": "Vera",
+  "author": "Elizabeth von Arnim",
+  "year": "1921",
+  "note": "Cornwall, noon heat, a garden gate, and a daughter who has lost everything—and feels nothing yet. Same author as Enchanted April, colder register. Wemyss intensifies later; this open stays clean emptiness.\n\nVera (von Arnim; 1921; PG 34366). This local bind is the Host-a-sit Ch I cut — cliff gate through the second “felt nothing” — not the whole novel.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Cliff gate",
+      "place": "one sitting",
+      "reentry": "When the doctor had gone, and the two women from the village he had been waiting for were upstairs shut in with her dead father, Lucy went out into the garden and stood leaning on the gate staring at the sea.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "When the doctor had gone, and the two women from the village he had been waiting for were upstairs shut in with her dead father, Lucy went out into the garden and stood leaning on the gate staring at the sea."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Her father had died at nine o’clock that morning, and it was now twelve. The sun beat on her bare head; and the burnt-up grass along the top of the cliff, and the dusty road that passed the gate, and the glittering sea, and the few white clouds hanging in the sky, all blazed and glared in an extremity of silent, motionless heat and light."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Into this emptiness Lucy stared, motionless herself, as if she had been carved in stone. There was not a sail on the sea, nor a line of distant smoke from any steamer, neither was there once the flash of a bird’s wing brushing across the sky. Movement seemed smitten rigid. Sound seemed to have gone to sleep."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Lucy stood staring at the sea, her face as empty of expression as the bright blank world before her. Her father had been dead three hours, and she felt nothing."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "It was just a week since they had arrived in Cornwall, she and he, full of hope, full of pleasure in the pretty little furnished house they had taken for August and September, full of confidence in the good the pure air was going to do him. But there had always been confidence; there had never been a moment during the long years of his fragility when confidence had even been questioned. He was delicate, and she had taken care of him. She had taken care of him and he had been delicate ever since she could remember. And ever since she could remember he had been everything in life to her. She had had no thought since she grew up for anybody but her father. There was no room for any other thought, so completely did he fill her heart. They had done everything together, shared everything together, dodged the winters together, settled in charming places, seen the same beautiful things, read the same books, talked, laughed, had friends,--heaps of friends; wherever they were her father seemed at once to have friends, adding them to the mass he had already. She had not been away from him a day for years; she had had no wish to go away. Where and with whom could she be so happy as with him? All the years were years of sunshine. There had been no winters; nothing but summer, summer, and sweet scents and soft skies, and patient understanding with her slowness--for he had the nimblest mind--and love. He was the most amusing companion to her, the most generous friend, the most illuminating guide, the most adoring father; and now he was dead, and she felt nothing."
+    }
+  ]
+}

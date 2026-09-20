@@ -813,6 +813,22 @@ export const SHELF: ShelfWork[] = [
   { id: "selected-polish-tales", title: "Selected Polish Tales", author: "Various (tr. Else C. M. Benecke et al.)", year: 1921, form: "stories", language: "Polish", minutes: 80, gutenberg: 8378 },
   { id: "the-farmer-s-bride", title: "The Farmer's Bride", author: "Charlotte Mew", year: 1921, form: "poem", language: "English", minutes: 164, local: true, opening: "Three Summers since I chose a maid,", breaths: 1312 },
   { id: "the-triumph-of-the-egg", title: "The Triumph of the Egg", author: "Sherwood Anderson", year: 1921, form: "stories", language: "English", minutes: 80, gutenberg: 7048 },
+  {
+    id: "vera",
+    title: "Vera",
+    author: "Elizabeth von Arnim",
+    year: 1921,
+    form: "novel",
+    language: "English",
+    minutes: 4,
+    local: true,
+    gutenberg: 34366,
+    opening:
+      "When the doctor had gone, and the two women from the village he had been waiting for were upstairs shut in with her dead father, Lucy went out into the garden and stood leaning on the gate staring at the sea.",
+    breaths: 5,
+    intro:
+      "Cornwall, noon heat, a garden gate, and a daughter who has lost everything—and feels nothing yet. Same author as Enchanted April, colder register. Wemyss intensifies later; this open stays clean emptiness.",
+  },
   { id: "harlem-shadows", title: "Harlem Shadows", author: "Claude McKay", year: 1922, form: "poem", language: "English", minutes: 159, local: true, opening: "Far from this foreign Easter damp and chilly", breaths: 1269 },
   { id: "jacob-s-room", title: "Jacob's Room", author: "Virginia Woolf", year: 1922, form: "novel", language: "English", local: true, opening: "\"So of course,\" wrote Betty Flanders, pressing her heels rather deeper in the sand, \"there was nothing for it but to leave.\"", breaths: 3268, minutes: 409, gutenberg: 5670 },
   { id: "mortal-coils", title: "Mortal Coils", author: "Aldous Huxley", year: 1922, form: "stories", language: "English", minutes: 472, local: true, opening: "\"Miss Spence will be down directly, sir.\"", breaths: 3543, gutenberg: 39378 },
