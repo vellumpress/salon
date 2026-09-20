@@ -7,6 +7,7 @@ function read(rel: string) {
 }
 
 test("place chip is wired on home, shelf, rituals, Adapted, You, and reader preface", () => {
+  const featured = read("../../components/featured-strip.tsx");
   const strip = read("../../components/works-strip.tsx");
   const search = read("../../components/shelf-search.tsx");
   const rituals = read("../../routes/rituals.tsx");
@@ -15,6 +16,7 @@ test("place chip is wired on home, shelf, rituals, Adapted, You, and reader pref
   const reader = read("../../components/chamber-reader.tsx");
   const css = read("../../styles.css");
 
+  assert.match(featured, /<PlaceChip /);
   assert.match(strip, /<PlaceChip /);
   assert.match(search, /<PlaceChip /);
   assert.match(rituals, /<PlaceChip /);
