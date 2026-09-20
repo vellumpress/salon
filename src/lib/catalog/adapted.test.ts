@@ -31,7 +31,7 @@ const LANE: Record<string, "unwind" | "before-sleep"> = {
 
 const EXPECT = {
   "miss-brill-adapted": {
-    title: "Miss Brill after",
+    title: "Katherine Mansfield, Miss Brill recast",
     opening: /^Miss Brill put on her coat the way other people put on a face/,
     last: /the city kept casting itself without her/,
     place: { label: "Menton / French Riviera", region: "fr" },
@@ -39,7 +39,7 @@ const EXPECT = {
     scene: /river park/i,
   },
   "prefer-not": {
-    title: "Bartleby after",
+    title: "Herman Melville, Bartleby recast",
     opening: /^I am a man who believes in soft walls and quieter victories/,
     last: /a gentle workplace could always find a door/,
     place: { label: "New York", region: "us" },
@@ -47,7 +47,7 @@ const EXPECT = {
     scene: /screen/i,
   },
   "late-season": {
-    title: "The Lady with the Dog after",
+    title: "Anton Chekhov, The Lady with the Dog recast",
     opening: /^Dmitri Gurov came to Cape May in September/,
     last: /harder to put down/,
     place: { label: "Yalta / Moscow", region: "ru" },
@@ -55,7 +55,7 @@ const EXPECT = {
     scene: /off season/i,
   },
   "between-the-drop-and-the-water": {
-    title: "An Occurrence at Owl Creek Bridge after",
+    title: "Ambrose Bierce, An Occurrence at Owl Creek Bridge recast",
     opening: /^Peyton Farquhar stood on the edge of the condemned pier/,
     last: /let him go home/,
     place: { label: "Hudson River, New York", region: "us" },
@@ -63,7 +63,7 @@ const EXPECT = {
     scene: /pier/i,
   },
   "he-woke-changed": {
-    title: "The Metamorphosis after",
+    title: "Franz Kafka, The Metamorphosis recast",
     opening: /^Gregor Samsa woke from uneasy dreams and found himself changed/,
     last: /someone else's problem/,
     place: { label: "Prague", region: "cz" },
@@ -71,7 +71,7 @@ const EXPECT = {
     scene: /apartment/i,
   },
   "the-pattern": {
-    title: "The Yellow Wallpaper after",
+    title: "Charlotte Perkins Gilman, The Yellow Wallpaper recast",
     opening: /^John said the country would fix me/,
     last: /did not try to hold anyone in/,
     place: { label: "Hudson, New York", region: "us" },
@@ -79,7 +79,7 @@ const EXPECT = {
     scene: /wallpaper/i,
   },
   "a-coat-worthy-of-respect": {
-    title: "The Overcoat after",
+    title: "Nikolai Gogol, The Overcoat recast",
     opening: /^Akaky Akakievich Petrovich/,
     last: /impossible to ignore/,
     place: { label: "St. Petersburg", region: "ru" },
@@ -87,7 +87,7 @@ const EXPECT = {
     scene: /coat/i,
   },
   "what-she-borrowed": {
-    title: "The Necklace after",
+    title: "Guy de Maupassant, The Necklace recast",
     opening: /^Mathilde Loisel believed she had been born for better rooms/,
     last: /impossible even to hate cleanly/,
     place: { label: "Paris", region: "fr" },
@@ -95,7 +95,7 @@ const EXPECT = {
     scene: /gala/i,
   },
   "it-was-not-nervousness": {
-    title: "The Tell-Tale Heart after",
+    title: "Edgar Allan Poe, The Tell-Tale Heart recast",
     opening: /^Listen\. I can tell this calmly/,
     last: /it is his heart/,
     place: { label: "East London", region: "gb" },
@@ -103,7 +103,7 @@ const EXPECT = {
     scene: /walk-up/i,
   },
   "during-carnival": {
-    title: "The Cask of Amontillado after",
+    title: "Edgar Allan Poe, The Cask of Amontillado recast",
     opening: /^I did not announce what Fortunato had done to me/,
     last: /bells went quiet/,
     place: { label: "Venice", region: "it" },
@@ -111,7 +111,7 @@ const EXPECT = {
     scene: /cellar/i,
   },
   "what-we-sold": {
-    title: "The Gift of the Magi after",
+    title: "O. Henry, The Gift of the Magi recast",
     opening: /^Della counted the jar twice on Christmas Eve morning/,
     last: /did not need to be correct to be true/,
     place: { label: "London", region: "gb" },
@@ -194,10 +194,22 @@ test("Adapted remakes do not keep remake nicknames as the display title", () => 
     "During Carnival",
     "What We Sold",
     "Bartleby, the Scrivener after",
+    "Miss Brill after",
+    "Bartleby after",
+    "The Lady with the Dog after",
+    "An Occurrence at Owl Creek Bridge after",
+    "The Metamorphosis after",
+    "The Yellow Wallpaper after",
+    "The Overcoat after",
+    "The Necklace after",
+    "The Tell-Tale Heart after",
+    "The Cask of Amontillado after",
+    "The Gift of the Magi after",
   ];
   for (const id of ADAPTED_BY_SALON_IDS) {
     const title = shelfWork(id)?.title ?? "";
-    assert.ok(title.endsWith(" after"), `${id} ends with after`);
+    assert.ok(title.endsWith(" recast"), `${id} ends with recast`);
+    assert.doesNotMatch(title, / after$/, `${id} not after`);
     assert.equal(banned.includes(title), false, `${id} ${title}`);
   }
 });
@@ -208,7 +220,7 @@ test("classic Miss Brill collection stays on the shelf beside the remake", () =>
   assert.ok(classic);
   assert.ok(remake);
   assert.notEqual(classic!.id, remake!.id);
-  assert.equal(remake!.title, "Miss Brill after");
+  assert.equal(remake!.title, "Katherine Mansfield, Miss Brill recast");
 });
 
 test("homepage classics strip does not mix in Adapted remakes", () => {

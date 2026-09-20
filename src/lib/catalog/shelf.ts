@@ -1196,7 +1196,7 @@ export const SHELF: ShelfWork[] = [
   { id: "twilight-sleep", title: "Twilight Sleep", author: "Edith Wharton", year: 1927, form: "novel", language: "English", minutes: 160, gutenberg: 70844 },
   {
     id: "miss-brill-adapted",
-    title: "Miss Brill after",
+    title: "Katherine Mansfield, Miss Brill recast",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1210,7 +1210,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "prefer-not",
-    title: "Bartleby after",
+    title: "Herman Melville, Bartleby recast",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1224,7 +1224,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "late-season",
-    title: "The Lady with the Dog after",
+    title: "Anton Chekhov, The Lady with the Dog recast",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1239,7 +1239,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "between-the-drop-and-the-water",
-    title: "An Occurrence at Owl Creek Bridge after",
+    title: "Ambrose Bierce, An Occurrence at Owl Creek Bridge recast",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1254,7 +1254,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "he-woke-changed",
-    title: "The Metamorphosis after",
+    title: "Franz Kafka, The Metamorphosis recast",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1269,7 +1269,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "the-pattern",
-    title: "The Yellow Wallpaper after",
+    title: "Charlotte Perkins Gilman, The Yellow Wallpaper recast",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1283,7 +1283,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "a-coat-worthy-of-respect",
-    title: "The Overcoat after",
+    title: "Nikolai Gogol, The Overcoat recast",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1298,7 +1298,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "what-she-borrowed",
-    title: "The Necklace after",
+    title: "Guy de Maupassant, The Necklace recast",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1312,7 +1312,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "it-was-not-nervousness",
-    title: "The Tell-Tale Heart after",
+    title: "Edgar Allan Poe, The Tell-Tale Heart recast",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1326,7 +1326,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "during-carnival",
-    title: "The Cask of Amontillado after",
+    title: "Edgar Allan Poe, The Cask of Amontillado recast",
     author: "Salon",
     year: 2026,
     form: "other",
@@ -1340,7 +1340,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "what-we-sold",
-    title: "The Gift of the Magi after",
+    title: "O. Henry, The Gift of the Magi recast",
     author: "Salon",
     year: 2026,
     form: "other",
