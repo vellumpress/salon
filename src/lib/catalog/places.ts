@@ -179,9 +179,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-nose-cape-town": { label: "Cape Town", region: "za" },
   "queen-of-spades-paris": { label: "Paris", region: "fr" },
   "decapitated-chicken-lisbon": { label: "Lisbon", region: "pt" },
-  "madame-bovary-tokyo-waking": { label: "Tokyo", region: "jp" },
-  "madame-bovary-tokyo-unwind": { label: "Tokyo", region: "jp" },
-  "madame-bovary-tokyo-before-sleep": { label: "Tokyo", region: "jp" },
+  "madame-bovary-tokyo": { label: "Tokyo", region: "jp" },
 };
 
 /** Country-of-origin → reader label + silhouette when no setting override. */

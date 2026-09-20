@@ -47,9 +47,6 @@ const LANE: Record<string, "unwind" | "before-sleep" | "waking-up"> = {
   "the-nose-cape-town": "waking-up",
   "queen-of-spades-paris": "before-sleep",
   "decapitated-chicken-lisbon": "before-sleep",
-  "madame-bovary-tokyo-waking": "waking-up",
-  "madame-bovary-tokyo-unwind": "unwind",
-  "madame-bovary-tokyo-before-sleep": "before-sleep",
 };
 
 const EXPECT = {
@@ -221,29 +218,13 @@ const EXPECT = {
     credit: /After Quiroga, The Decapitated Chicken, 1909/,
     scene: /villa|tagus/i,
   },
-  "madame-bovary-tokyo-waking": {
+  "madame-bovary-tokyo": {
     title: "Gustave Flaubert, Madame Bovary recast",
     opening: /^Emma woke before the light finished deciding what color to be/,
-    last: /spend everything to close/,
-    place: { label: "Tokyo", region: "jp" },
-    credit: /After Flaubert, Madame Bovary, 1857/,
-    scene: /new rooms/i,
-  },
-  "madame-bovary-tokyo-unwind": {
-    title: "Gustave Flaubert, Madame Bovary recast",
-    opening: /^The taxi entered Ginza as if the district had been polished/,
-    last: /a lie stylish enough to wear/,
-    place: { label: "Tokyo", region: "jp" },
-    credit: /After Flaubert, Madame Bovary, 1857/,
-    scene: /ginza/i,
-  },
-  "madame-bovary-tokyo-before-sleep": {
-    title: "Gustave Flaubert, Madame Bovary recast",
-    opening: /^By the time the condo went quiet enough to hear the refrigerator/,
     last: /a currency that collected itself/,
     place: { label: "Tokyo", region: "jp" },
     credit: /After Flaubert, Madame Bovary, 1857/,
-    scene: /debt/i,
+    scene: /new rooms/i,
   },
 } as const;
 
@@ -274,15 +255,23 @@ test("Adapted remakes are local sits with source credit, not locked recommend", 
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
     const lane = LANE[id];
-    assert.ok(lane, `${id} lane`);
-    const home = lanes[lane];
-    assert.ok(home.workIds.includes(id), `${id} ${lane}`);
-    for (const [name, other] of Object.entries(lanes) as [
-      "unwind" | "before-sleep" | "waking-up",
-      RitualLane,
-    ][]) {
-      if (name === lane) continue;
-      assert.equal(other.workIds.includes(id), false, `${id} not ${name}`);
+    if (lane) {
+      const home = lanes[lane];
+      assert.ok(home.workIds.includes(id), `${id} ${lane}`);
+      for (const [name, other] of Object.entries(lanes) as [
+        "unwind" | "before-sleep" | "waking-up",
+        RitualLane,
+      ][]) {
+        if (name === lane) continue;
+        assert.equal(other.workIds.includes(id), false, `${id} not ${name}`);
+      }
+    } else {
+      for (const [name, other] of Object.entries(lanes) as [
+        "unwind" | "before-sleep" | "waking-up",
+        RitualLane,
+      ][]) {
+        assert.equal(other.workIds.includes(id), false, `${id} not a timed sit in ${name}`);
+      }
     }
     assert.deepEqual(placeFor(work), want.place, id);
 
@@ -415,7 +404,7 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   assert.match(home, /useShelfSearch\("local"\)/);
   assert.doesNotMatch(home, /useShelfSearch\("fullPdf"\)/);
 
-  assert.equal(LOCAL_WORKS.length, 439);
+  assert.equal(LOCAL_WORKS.length, 437);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 
@@ -488,40 +477,49 @@ test("routes and components have no reader-facing Featured label", () => {
   assert.deepEqual(hits, []);
 });
 
-test("Madame Bovary Tokyo ships three sibling sits, Host only on the late sit", () => {
-  const ids = [
+test("Madame Bovary Tokyo is one Adapted book, not three timed sits", () => {
+  const id = "madame-bovary-tokyo";
+  const gone = [
     "madame-bovary-tokyo-waking",
     "madame-bovary-tokyo-unwind",
     "madame-bovary-tokyo-before-sleep",
   ] as const;
-  for (const id of ids) {
-    assert.equal(isAdaptedBySalon(id), true, id);
-    assert.equal(curatorialTrack(id), "adapted", id);
-    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
-    assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
+  assert.equal(isAdaptedBySalon(id), true);
+  assert.equal(curatorialTrack(id), "adapted");
+  assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false);
+  assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false);
+  for (const sibling of gone) {
+    assert.equal(isAdaptedBySalon(sibling), false, sibling);
+    assert.equal(shelfWork(sibling), undefined, sibling);
+  }
+  for (const lane of RITUAL_LANES) {
+    assert.equal(lane.workIds.includes(id), false, lane.id);
+    for (const sibling of gone) {
+      assert.equal(lane.workIds.includes(sibling), false, `${sibling} ${lane.id}`);
+    }
   }
   const classic = SHELF.find((item) => item.id === "bovary");
   assert.ok(classic);
   assert.equal(classic!.title, "Madame Bovary");
-  assert.notEqual(classic!.id, ids[0]);
+  assert.notEqual(classic!.id, id);
 
-  const late = JSON.parse(
-    readFileSync(new URL("./openings/madame-bovary-tokyo-before-sleep.json", import.meta.url), "utf8"),
-  ) as { note: string };
-  assert.match(late.note, /self-poisoning/);
-  assert.match(late.note, /Warn the room before you Host it/);
-  assert.match(late.note, /Ginza/);
-  assert.doesNotMatch(late.note, /Host note \(required|Featured/i);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/madame-bovary-tokyo.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string }[] };
+  assert.match(packed.note, /self-poisoning/);
+  assert.match(packed.note, /Warn the room before you Host it/);
+  assert.match(packed.note, /Ginza/);
+  assert.doesNotMatch(packed.note, /Host note \(required|Featured/i);
+  assert.equal(packed.scenes.length, 3);
+  assert.match(packed.scenes[0]?.title ?? "", /New rooms/i);
+  assert.match(packed.scenes[1]?.title ?? "", /Ginza/i);
+  assert.match(packed.scenes[2]?.title ?? "", /Debt/i);
 
-  const waking = JSON.parse(
-    readFileSync(new URL("./openings/madame-bovary-tokyo-waking.json", import.meta.url), "utf8"),
-  ) as { note: string };
-  const unwind = JSON.parse(
-    readFileSync(new URL("./openings/madame-bovary-tokyo-unwind.json", import.meta.url), "utf8"),
-  ) as { note: string };
-  assert.doesNotMatch(waking.note, /self-poisoning|Host it/i);
-  assert.doesNotMatch(unwind.note, /self-poisoning|Host it/i);
+  const work = shelfWork(id);
+  assert.ok(work);
+  assert.match(work!.intro ?? "", /self-poisoning/);
+  assert.match(work!.intro ?? "", /Warn the room before you Host it/i);
 });
 
 test("glam-10 remakes use Mira city reseats, not raw Gutenberg extracts", () => {
