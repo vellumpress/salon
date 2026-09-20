@@ -140,7 +140,7 @@ const EXPECT = {
   },
   "bliss-tokyo": {
     title: "Katherine Mansfield, Bliss recast",
-    opening: /^Bertha felt it in the elevator/,
+    opening: /^Haruka felt it in the elevator/,
     last: /pear tree look suddenly like stage dressing/,
     place: { label: "Tokyo", region: "jp" },
     credit: /After Mansfield, Bliss, 1918/,
@@ -148,7 +148,7 @@ const EXPECT = {
   },
   "open-window-singapore": {
     title: "Saki, The Open Window recast",
-    opening: /^Framton Nuttel arrived with letters of introduction/,
+    opening: /^Adrian Tan arrived with letters of introduction/,
     last: /afternoon were still a simple thing/,
     place: { label: "Singapore", region: "sg" },
     credit: /After Saki, The Open Window, 1914/,
@@ -164,7 +164,7 @@ const EXPECT = {
   },
   "masque-rio": {
     title: "Edgar Allan Poe, The Masque of the Red Death recast",
-    opening: /^While the fever moved through the favelas/,
+    opening: /^While the fever moved through the favelas and the hospital corridors like a red rumor with teeth, Príncipe Otávio/,
     last: /changed genres without telling the cast/,
     place: { label: "Rio de Janeiro", region: "br" },
     credit: /After Poe, The Masque of the Red Death, 1842/,
@@ -196,7 +196,7 @@ const EXPECT = {
   },
   "the-nose-cape-town": {
     title: "Nikolai Gogol, The Nose recast",
-    opening: /^Collegiate Assessor Kovalev/,
+    opening: /^Senior Assessor van Wyk/,
     last: /exact as a held breath/,
     place: { label: "Cape Town", region: "za" },
     credit: /After Gogol, The Nose, 1836/,
@@ -204,7 +204,7 @@ const EXPECT = {
   },
   "queen-of-spades-paris": {
     title: "Alexander Pushkin, The Queen of Spades recast",
-    opening: /^Hermann was not rich enough for the 8th arrondissement/,
+    opening: /^Armand was not rich enough for the 8th arrondissement/,
     last: /exact as a held breath/,
     place: { label: "Paris", region: "fr" },
     credit: /After Pushkin, The Queen of Spades, 1834/,
@@ -300,11 +300,11 @@ const EXPECT = {
   },
   "wuthering-heights-rio": {
     title: "Emily Brontë, Wuthering Heights recast",
-    opening: /^Mr\. Lockwood, a soft coastal tenant seeking quiet above Rio/,
-    last: /foundling to repair/,
+    opening: /^Sr\. Vargas brought Heitor to the hill estate above Rio/,
+    last: /softening without erase/,
     place: { label: "Rio de Janeiro", region: "br" },
     credit: /After Emily Brontë, Wuthering Heights, 1847/,
-    scene: /hill estate|rio/i,
+    scene: /foundling/i,
   },
 } as const;
 
@@ -790,6 +790,8 @@ test("novels-glam-10 remakes use Mira city reseats, not raw Gutenberg extracts",
   assert.match(scarlet, /Kyoto/);
   assert.match(scarlet, /Hisako/);
   assert.match(wuthering, /Rio/);
+  assert.match(wuthering, /Heitor|Catarina/);
+  assert.doesNotMatch(wuthering, /Mr\. Lockwood, a soft coastal tenant/);
   assert.doesNotMatch(dorian, /Basil Hallward/);
   assert.doesNotMatch(jane, /Jane Eyre learned early/);
   assert.doesNotMatch(dracula, /Jonathan Harker steamed/);
@@ -815,10 +817,15 @@ test("glam-10 remakes use Mira city reseats, not raw Gutenberg extracts", () => 
     "utf8",
   );
   assert.match(bliss, /Omotesando/);
+  assert.match(bliss, /Haruka/);
   assert.match(framton, /Bukit Timah/);
+  assert.match(framton, /Adrian Tan/);
   assert.match(louise, /Recoleta/);
+  assert.match(louise, /Luisa|Bernardo/);
   assert.doesNotMatch(bliss, /Although Bertha Young was thirty/);
+  assert.doesNotMatch(bliss, /Bertha felt it in the elevator/);
   assert.doesNotMatch(framton, /My aunt will be down presently, Mr. Nuttel/);
+  assert.doesNotMatch(framton, /Framton Nuttel arrived/);
   assert.doesNotMatch(louise, /Knowing that Mrs. Mallard was afflicted/);
 });
 

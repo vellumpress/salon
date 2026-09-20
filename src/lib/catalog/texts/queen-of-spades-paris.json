@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Three cards",
       "place": "Paris",
-      "reentry": "Hermann was not rich enough for the 8th arrondissement and too proud to admit the math.",
+      "reentry": "Armand was not rich enough for the 8th arrondissement and too proud to admit the math.",
       "prompt": "A word from this stretch."
     }
   ],
@@ -20,7 +20,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Hermann was not rich enough for the 8th arrondissement and too proud to admit the math."
+      "text": "Armand was not rich enough for the 8th arrondissement and too proud to admit the math."
     },
     {
       "id": "s0-1",
@@ -35,17 +35,17 @@
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "He courted her companion, Lizaveta, with messages that mimicked tenderness."
+      "text": "He courted her companion, Lisette, with messages that mimicked tenderness."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "Lizaveta, lonely in the countess’s perfume and rules, believed him enough to leave a door unlatched."
+      "text": "Lisette, lonely in the countess’s perfume and rules, believed him enough to leave a door unlatched."
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "At night Hermann stood in the countess’s bedroom among portraits and pill bottles, demanding the secret."
+      "text": "At night Armand stood in the countess’s bedroom among portraits and pill bottles, demanding the secret."
     },
     {
       "id": "s0-6",
@@ -70,7 +70,7 @@
     {
       "id": "s0-10",
       "sceneId": "s0",
-      "text": "Lizaveta’s face, when she understood, was a door closing."
+      "text": "Lisette’s face, when she understood, was a door closing."
     },
     {
       "id": "s0-11",
@@ -85,7 +85,7 @@
     {
       "id": "s0-13",
       "sceneId": "s0",
-      "text": "Hermann played."
+      "text": "Armand played."
     },
     {
       "id": "s0-14",
@@ -105,55 +105,50 @@
     {
       "id": "s0-17",
       "sceneId": "s0",
-      "text": "On the third night he turned the ace with a hand that already spent the winnings in his mind—"
+      "text": "On the third night he turned the ace with a hand that already spent the winnings in his mind— —and the dealer’s quiet showed him the queen of spades."
     },
     {
       "id": "s0-18",
       "sceneId": "s0",
-      "text": "—and the dealer’s quiet showed him the queen of spades."
+      "text": "Her face, in the pasteboard, wore the countess’s eyes."
     },
     {
       "id": "s0-19",
       "sceneId": "s0",
-      "text": "Her face, in the pasteboard, wore the countess’s eyes."
+      "text": "He laughed once, wrong."
     },
     {
       "id": "s0-20",
       "sceneId": "s0",
-      "text": "He laughed once, wrong."
+      "text": "Then the room narrowed to a single suit."
     },
     {
       "id": "s0-21",
       "sceneId": "s0",
-      "text": "Then the room narrowed to a single suit."
+      "text": "They removed him politely, as Paris removes what it has finished using."
     },
     {
       "id": "s0-22",
       "sceneId": "s0",
-      "text": "They removed him politely, as Paris removes what it has finished using."
+      "text": "In the hospital he muttered the sequence to the wall: three, seven, ace—three, seven, queen—while outside, in the Huitième, someone else’s champagne found the correct hour, and the city, glamorous and exact, declined to refund obsession."
     },
     {
       "id": "s0-23",
       "sceneId": "s0",
-      "text": "In the hospital he muttered the sequence to the wall: three, seven, ace—three, seven, queen—while outside, in the Huitième, someone else’s champagne found the correct hour, and the city, glamorous and exact, declined to refund obsession."
+      "text": "Lisette left the latch for love and found only a draft."
     },
     {
       "id": "s0-24",
       "sceneId": "s0",
-      "text": "Lizaveta left the latch for love and found only a draft."
+      "text": "Armand's messages had mimicked tenderness the way pasteboard mimics fortune."
     },
     {
       "id": "s0-25",
       "sceneId": "s0",
-      "text": "Hermann's messages had mimicked tenderness the way pasteboard mimics fortune."
-    },
-    {
-      "id": "s0-26",
-      "sceneId": "s0",
       "text": "After the countess's death he walked wet streets past Haussmann façades that looked, in rain, like stacked debts."
     },
     {
-      "id": "s0-27",
+      "id": "s0-26",
       "sceneId": "s0",
       "text": "The city kept its evening face—Paris, 2026, glamorous enough to make cruelty look like weather—and the story settled where phone light finds it: not far from sleep, not far from waking, exact as a held breath."
     }

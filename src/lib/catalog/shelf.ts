@@ -1841,8 +1841,7 @@ export const SHELF: ShelfWork[] = [
     language: "English",
     minutes: 7,
     local: true,
-    opening:
-      "Bertha felt it in the elevator—bliss, absurd and physical, like champagne already in the blood.",
+    opening: "Haruka felt it in the elevator—bliss, absurd and physical, like champagne already in the blood.",
     breaths: 40,
     intro:
       "Omotesando gold, a flowering pear on a terrace, and a young wife's perfect evening that turns on a single glance. After Mansfield, Bliss, 1918.",
@@ -1856,8 +1855,7 @@ export const SHELF: ShelfWork[] = [
     language: "English",
     minutes: 7,
     local: true,
-    opening:
-      "Framton Nuttel arrived with letters of introduction and a diagnosis that preferred quiet.",
+    opening: "Adrian Tan arrived with letters of introduction and a diagnosis that preferred quiet.",
     breaths: 52,
     intro:
       "A nervous rest-cure visitor, a black-and-white bungalow off Bukit Timah, and a girl's exquisite lie about men who never came back from the green. After Saki, The Open Window, 1914.",
@@ -1872,7 +1870,7 @@ export const SHELF: ShelfWork[] = [
     minutes: 7,
     local: true,
     opening: "They told her carefully, as one tells a person with a weak heart.",
-    breaths: 36,
+    breaths: 35,
     intro:
       "A Recoleta apartment, a careful message about a crash, and one quiet hour in which a woman tastes a future that is not a room with one window. After Chopin, The Story of an Hour, 1894.",
   },
@@ -1885,9 +1883,8 @@ export const SHELF: ShelfWork[] = [
     language: "English",
     minutes: 8,
     local: true,
-    opening:
-      "While the fever moved through the favelas and the hospital corridors like a red rumor with teeth, Prince Prospero sealed his compound above Guanabara Bay.",
-    breaths: 43,
+    opening: "While the fever moved through the favelas and the hospital corridors like a red rumor with teeth, Príncipe Otávio sealed his compound above Guanabara Bay.",
+    breaths: 42,
     intro:
       "A sealed hillside compound above Rio, seven rooms of curated light, and a guest who does not RSVP to plague. After Poe, The Masque of the Red Death, 1842.",
   },
@@ -1900,8 +1897,7 @@ export const SHELF: ShelfWork[] = [
     language: "English",
     minutes: 8,
     local: true,
-    opening:
-      "The private van left Kadıköy at dusk with ten seats and nine consciences already rehearsing their innocence.",
+    opening: "The private van left Kadıköy at dusk with ten seats and nine consciences already rehearsing their innocence.",
     breaths: 47,
     intro:
       "A delayed van out of Kadıköy, a cabin of respectable passengers, and one woman whose generosity is spent and then despised. After Maupassant, Boule de Suif, 1880.",
@@ -1945,9 +1941,8 @@ export const SHELF: ShelfWork[] = [
     language: "English",
     minutes: 7,
     local: true,
-    opening:
-      "Collegiate Assessor Kovalev—title polished harder than his shoes—woke in his Sea Point flat to a flatness where his nose should have been.",
-    breaths: 36,
+    opening: "Senior Assessor van Wyk—title polished harder than his shoes—woke in his Sea Point flat to a flatness where his nose should have been.",
+    breaths: 30,
     intro:
       "A Sea Point assessor wakes without his nose; on Long Street the missing feature has better meetings than he does. After Gogol, The Nose, 1836.",
   },
@@ -1960,9 +1955,8 @@ export const SHELF: ShelfWork[] = [
     language: "English",
     minutes: 7,
     local: true,
-    opening:
-      "Hermann was not rich enough for the 8th arrondissement and too proud to admit the math.",
-    breaths: 28,
+    opening: "Armand was not rich enough for the 8th arrondissement and too proud to admit the math.",
+    breaths: 27,
     intro:
       "An 8th-arrondissement obsession: three cards, a countess's secret, and a queen who will not stay buried in the deck. After Pushkin, The Queen of Spades, 1834.",
   },
@@ -2127,11 +2121,10 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 37,
+    minutes: 19,
     local: true,
-    opening:
-      "Mr. Lockwood, a soft coastal tenant seeking quiet above Rio's postcard bay, rented the lower house—Thrushcross stand-in among Atlantic scrub and condo glitter far below—and walked uphill to pay respects at Wuthering Heights, a hill estate of old money and worse manners.",
-    breaths: 445,
+    opening: "Sr. Vargas brought Heitor to the hill estate above Rio’s bay—dirty, staring, already weather.",
+    breaths: 232,
     intro:
       "A hillside estate above Rio’s bay: glamour facing water, wind facing rock. After Emily Brontë, Wuthering Heights, 1847. Later chapters include cruelty, death, and haunting — warn the room before you Host it.",
   },

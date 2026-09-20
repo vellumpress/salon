@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "The open veranda",
       "place": "Singapore",
-      "reentry": "Framton Nuttel arrived with letters of introduction and a diagnosis that preferred quiet.",
+      "reentry": "Adrian Tan arrived with letters of introduction and a diagnosis that preferred quiet.",
       "prompt": "A word from this stretch."
     }
   ],
@@ -20,7 +20,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Framton Nuttel arrived with letters of introduction and a diagnosis that preferred quiet."
+      "text": "Adrian Tan arrived with letters of introduction and a diagnosis that preferred quiet."
     },
     {
       "id": "s0-1",
@@ -55,7 +55,7 @@
     {
       "id": "s0-7",
       "sceneId": "s0",
-      "text": "Vera: My aunt will be down presently."
+      "text": "Priya: My aunt will be down presently."
     },
     {
       "id": "s0-8",
@@ -75,7 +75,7 @@
     {
       "id": "s0-11",
       "sceneId": "s0",
-      "text": "Framton admitted that London doctors had prescribed rest, tropical air, and an absence of excitement—prescriptions that sounded, in this heat, like jokes told by men in dry rooms."
+      "text": "Adrian admitted that London doctors had prescribed rest, tropical air, and an absence of excitement—prescriptions that sounded, in this heat, like jokes told by men in dry rooms."
     },
     {
       "id": "s0-12",
@@ -85,7 +85,7 @@
     {
       "id": "s0-13",
       "sceneId": "s0",
-      "text": "Vera: You will notice the veranda doors are open."
+      "text": "Priya: You will notice the veranda doors are open."
     },
     {
       "id": "s0-14",
@@ -105,7 +105,7 @@
     {
       "id": "s0-17",
       "sceneId": "s0",
-      "text": "Vera: Three years ago to the day, her husband and her two younger brothers went out toward the reservoir trails with the spaniel."
+      "text": "Priya: Three years ago to the day, her husband and her two younger brothers went out toward the reservoir trails with the spaniel."
     },
     {
       "id": "s0-18",
@@ -135,7 +135,7 @@
     {
       "id": "s0-23",
       "sceneId": "s0",
-      "text": "Framton’s tea cooled in his hands."
+      "text": "Adrian’s tea cooled in his hands."
     },
     {
       "id": "s0-24",
@@ -155,7 +155,7 @@
     {
       "id": "s0-27",
       "sceneId": "s0",
-      "text": "Vera: My aunt believes they will walk back through that green exactly as they left."
+      "text": "Priya: My aunt believes they will walk back through that green exactly as they left."
     },
     {
       "id": "s0-28",
@@ -185,7 +185,7 @@
     {
       "id": "s0-33",
       "sceneId": "s0",
-      "text": "Vera: Do you know what it is like to live inside someone else's waiting?"
+      "text": "Priya: Do you know what it is like to live inside someone else's waiting?"
     },
     {
       "id": "s0-34",
@@ -195,7 +195,7 @@
     {
       "id": "s0-35",
       "sceneId": "s0",
-      "text": "Mrs. Sappleton entered bright and practical, apologizing for lateness, speaking of golf at the island club and humidity as if the dead were not a household policy."
+      "text": "Mrs. Ong entered bright and practical, apologizing for lateness, speaking of golf at the island club and humidity as if the dead were not a household policy."
     },
     {
       "id": "s0-36",
@@ -210,7 +210,7 @@
     {
       "id": "s0-38",
       "sceneId": "s0",
-      "text": "Mrs. Sappleton: They will be back soon for drinks."
+      "text": "Mrs. Ong: They will be back soon for drinks."
     },
     {
       "id": "s0-39",
@@ -235,7 +235,7 @@
     {
       "id": "s0-43",
       "sceneId": "s0",
-      "text": "Framton stared."
+      "text": "Adrian stared."
     },
     {
       "id": "s0-44",
@@ -245,7 +245,7 @@
     {
       "id": "s0-45",
       "sceneId": "s0",
-      "text": "Mrs. Sappleton chattered about a new café too proud of its toast, about a neighbor’s renovation that had angered the trees."
+      "text": "Mrs. Ong chattered about a new café too proud of its toast, about a neighbor’s renovation that had angered the trees."
     },
     {
       "id": "s0-46",
