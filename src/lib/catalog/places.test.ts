@@ -15,6 +15,10 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "high-wind-jamaica": { label: "Jamaica", region: "jm" },
     "noli-me-tangere": { label: "Manila", region: "ph" },
     vera: { label: "Cornwall", region: "gb" },
+    "on-a-chinese-screen": { label: "China", region: "cn" },
+    futility: { label: "Petersburg coast", region: "ru" },
+    "poison-tree": { label: "Bengal", region: "in" },
+    "trooper-peter-halket": { label: "Mashonaland", region: "za" },
     botchan: { label: "Tokyo", region: "jp" },
     "the-house-of-mirth": { label: "New York", region: "us" },
     silhouettes: { label: "Dieppe", region: "fr" },
@@ -66,6 +70,10 @@ test("Featured, Next, and ritual-lane works all resolve a place with a silhouett
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("high-wind-jamaica"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("noli-me-tangere"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("vera"));
+  assert.ok(NEXT_FEATURED_TRACK_IDS.includes("on-a-chinese-screen"));
+  assert.ok(NEXT_FEATURED_TRACK_IDS.includes("futility"));
+  assert.ok(NEXT_FEATURED_TRACK_IDS.includes("trooper-peter-halket"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("poison-tree"), false);
   assert.ok(RITUAL_LANES.some((lane) => lane.workIds.includes("silhouettes")));
 });
 

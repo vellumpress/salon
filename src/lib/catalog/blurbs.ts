@@ -35,6 +35,14 @@ const BLURBS: Record<string, string> = {
     "Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.",
   vera:
     "Cornwall noon heat at a garden gate: a daughter who has lost everything—and feels nothing yet.",
+  "on-a-chinese-screen":
+    "She takes a holy temple and papers it into Cheltenham—blue curtains for her eyes, pink stripes, an American stove where the Buddha sat.",
+  futility:
+    "Three sisters spring out of a wooden dacha above the sea and introduce themselves in order of age—then the samovar household rearranges what “mother” means.",
+  "poison-tree":
+    "His wife makes him promise: if a storm rises, leave the boat—and on the Ganges in Joisto the weather keeps that promise.",
+  "trooper-peter-halket":
+    "Alone on a kopje with a fire that only quivers—Trooper Peter Halket has lost his column, and the dark starts inventing fortunes for him.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:

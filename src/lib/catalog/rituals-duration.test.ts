@@ -157,3 +157,51 @@ test("Vera before-sleep sit is the cliff-gate cut, not the novel", () => {
   assert.equal(estimateRitualMinutes(item), 4);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
+
+test("On a Chinese Screen waking sit is the Parlour cut, not the book", () => {
+  const item = work({
+    id: "on-a-chinese-screen",
+    form: "stories",
+    breaths: 23,
+    minutes: 5,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 5);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Futility waking sit is the sisters-bouquet cut, not the novel", () => {
+  const item = work({
+    id: "futility",
+    form: "novel",
+    breaths: 17,
+    minutes: 4,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 4);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("The Poison Tree unwind sit is the storm cut, not the novel", () => {
+  const item = work({
+    id: "poison-tree",
+    form: "novel",
+    breaths: 42,
+    minutes: 5,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 5);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Trooper Peter Halket before-sleep sit is the kopje-fire cut, not the novel", () => {
+  const item = work({
+    id: "trooper-peter-halket",
+    form: "novel",
+    breaths: 16,
+    minutes: 4,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 4);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});

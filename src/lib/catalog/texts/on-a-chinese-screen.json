@@ -1,0 +1,136 @@
+{
+  "id": "on-a-chinese-screen",
+  "title": "On a Chinese Screen",
+  "author": "W. Somerset Maugham",
+  "year": "1922",
+  "note": "She takes a holy temple and papers it into Cheltenham—blue curtains for her eyes, pink stripes, an American stove where the Buddha sat.\n\nOn a Chinese Screen (Maugham; 1922; PG 48788). This local bind is the Host-a-sit cut — My Lady’s Parlour — not the whole book.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "My Lady’s Parlour",
+      "place": "one sitting",
+      "reentry": "\"I really think I can make something of it,\" she said.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "\"I really think I can make something of it,\" she said."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "She looked about her briskly, and the light of the creative imagination filled her eyes with brightness."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "It was an old temple, a small one, in the city, which she had taken and was turning into a dwelling house."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "It had been built for a very holy monk by his admirers three hundred years before, and here in great piety, practising innumerable austerities, he had passed his declining days."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "For long after in memory of his virtue the faithful had come to worship, but in course of time funds had fallen very low and at last the two or three monks that remained were forced to leave."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "It was weather-beaten and the green tiles of the roof were overgrown with weeds."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "The raftered ceiling was still beautiful with its faded gold dragons on a faded red; but she did not like a dark ceiling, so she stretched a canvas across and papered it."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Needing air and sunlight, she cut two large windows on one side."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "She very luckily had some blue curtains which were just the right size."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Blue was her favourite colour: it brought out the colour of her eyes."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Since the columns, great red sturdy columns, oppressed her a little she papered them with a very nice paper which did not look Chinese at all."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "She was lucky also with the paper with which she covered the walls."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "It was bought in a native shop, but really it might have come from Sandersons'; it was a very nice pink stripe and it made the place look cheerful at once."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "At the back was a recess in which had stood a great lacquer table and behind it an image of the Buddha in his eternal meditation."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Here generations of believers had burned their tapers and prayed, some for this temporal benefit or that, some for release from the returning burden of earthly existence; and this seemed to her the very place for an American stove."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "She was obliged to buy her carpet in China, but she managed to get one that looked so like an Axminster that you would hardly know the difference."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Of course, being hand-made, it had not quite the smoothness of the English article, but it was a very decent substitute."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "She was able to buy a very nice lot of furniture from a member of the Legation who was leaving the country for a post in Rome, and she got a nice bright chintz from Shanghai to make loose covers with."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Fortunately she had quite a number of pictures, wedding presents and some even that she had bought herself, for she was very artistic, and these gave the room a cosy look."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "She needed a screen and here there was no help for it, she had to buy a Chinese one, but as she very cleverly said, you might perfectly well have a Chinese screen in England."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "She had a great many photographs, in silver frames, one of them of a Princess of Schleswig-Holstein, and one of the Queen of Sweden, both signed, and these she put on the grand piano, for they give a room an air of being lived in."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Then, having finished, she surveyed her work with satisfaction."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "\"Of course it doesn't look like a room in London,\" she said, \"but it might quite well be a room in some nice place in England, Cheltenham, say, or Tunbridge Wells.\""
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "trooper-peter-halket",
+  "title": "Trooper Peter Halket of Mashonaland",
+  "author": "Olive Schreiner",
+  "year": "1897",
+  "note": "Before-sleep ritual sit — kopje fire.\n\nAlone on a kopje with a fire that only quivers—Trooper Peter Halket has lost his column, and the dark starts inventing fortunes for him.\n\nTrooper Peter Halket of Mashonaland (Schreiner; 1897; PG 1431). Host-a-sit. Sit through the fire he means to keep. Stop before the stranger.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Kopje fire",
+      "place": "one sitting",
+      "reentry": "It was a dark night; a chill breath was coming from the east; not enough to disturb the blaze of Trooper Peter Halket’s fire, yet enough to make it quiver.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was a dark night; a chill breath was coming from the east; not enough to disturb the blaze of Trooper Peter Halket’s fire, yet enough to make it quiver."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "He sat alone beside it on the top of a kopje."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "All about was an impenetrable darkness; not a star was visible in the black curve over his head."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "He had been travelling with a dozen men who were taking provisions of mealies and rice to the next camp."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "He had been sent out to act as scout along a low range of hills, and had lost his way."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Since eight in the morning he had wandered among long grasses, and ironstone kopjes, and stunted bush, and had come upon no sign of human habitation, but the remains of a burnt kraal, and a down-trampled and now uncultivated mealie field, where a month before the Chartered Company’s forces had destroyed a native settlement."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Three times in the day it had appeared to him that he had returned to the very spot from which he had started; nor was it his wish to travel very far, for he knew his comrades would come back to look for him, to the neighbourhood where he had last been seen, when it was found at the evening camping ground that he did not appear."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Trooper Peter Halket was very weary."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "He had eaten nothing all day; and had touched little of the contents of a small flask of Cape brandy he carried in his breast pocket, not knowing when it would again be replenished."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "As night drew near he determined to make his resting place on the top of one of the kopjes, which stood somewhat alone and apart from the others."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "He could not easily be approached there, without his knowing it."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "He had not much fear of the natives; their kraals had been destroyed and their granaries burnt for thirty miles round, and they themselves had fled: but he feared, somewhat, the lions, which he had never seen, but of which he had heard, and which might be cowering in the long grasses and brushwood at the kopje’s foot:--and he feared, vaguely, he hardly knew what, when he looked forward to his first long night alone in the veld."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "By the time the sun had set he had gathered a little pile of stumps and branches on the top of the kopje."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "He intended to keep a fire burning all night; and as the darkness began to settle down he lit it."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "It might be his friends would see it from far, and come for him early in the morning; and wild beasts would hardly approach him while he knelt beside it; and of the natives he felt there was little fear."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "He built up the fire; and determined if it were possible to keep awake the whole night beside it."
+    }
+  ]
+}

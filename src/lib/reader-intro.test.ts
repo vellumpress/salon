@@ -86,6 +86,34 @@ test("Vera uses the before-sleep cliff-gate sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
 });
 
+test("On a Chinese Screen uses the waking Parlour sit", () => {
+  const copy = readerIntro(shelfAsWork("on-a-chinese-screen"));
+  assert.match(copy, /Cheltenham/);
+  assert.match(copy, /American stove/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|Orientalist/i);
+});
+
+test("Futility uses the waking sisters-bouquet sit", () => {
+  const copy = readerIntro(shelfAsWork("futility"));
+  assert.match(copy, /three sisters/i);
+  assert.match(copy, /dacha/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|Wharton/i);
+});
+
+test("The Poison Tree uses the unwind Ganges-storm sit", () => {
+  const copy = readerIntro(shelfAsWork("poison-tree"));
+  assert.match(copy, /leave the boat/);
+  assert.match(copy, /Joisto/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host note|Recommend/i);
+});
+
+test("Trooper Peter Halket uses the before-sleep kopje-fire sit", () => {
+  const copy = readerIntro(shelfAsWork("trooper-peter-halket"));
+  assert.match(copy, /kopje/);
+  assert.match(copy, /Halket/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
+});
+
 test("uses Featured before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),

@@ -60,6 +60,10 @@ test("known origin overrides", () => {
     "high-wind-jamaica": "Jamaica",
     "noli-me-tangere": "Philippines",
     vera: "United Kingdom",
+    "on-a-chinese-screen": "United Kingdom",
+    futility: "United Kingdom",
+    "poison-tree": "India",
+    "trooper-peter-halket": "South Africa",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);
@@ -126,6 +130,22 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /Cliff gate/i,
       opening: /^When the doctor had gone/,
     },
+    "on-a-chinese-screen": {
+      scene: /My Lady/i,
+      opening: /^"I really think I can make something of it," she said/,
+    },
+    futility: {
+      scene: /Sisters/i,
+      opening: /^It was somewhat in the manner of an Ibsen drama/,
+    },
+    "poison-tree": {
+      scene: /storm/i,
+      opening: /^Nagendra Natha Datta is about to travel by boat/,
+    },
+    "trooper-peter-halket": {
+      scene: /Kopje fire/i,
+      opening: /^It was a dark night/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -180,6 +200,26 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /Wemyss|Everard/i,
+      );
+    }
+    if (id === "on-a-chinese-screen") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /Tunbridge Wells\."?$/);
+    }
+    if (id === "futility") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /the only man who really mattered in the world/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /Wharton|preface/i,
+      );
+    }
+    if (id === "poison-tree") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /heavy storm of rain\.?$/);
+    }
+    if (id === "trooper-peter-halket") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /keep awake the whole night beside it\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /\bstranger\b/i,
       );
     }
   }
@@ -421,6 +461,111 @@ test("Vera opens on the cliff gate and binds only the second felt-nothing sit", 
     });
     assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
   }
+});
+
+test("On a Chinese Screen opens on My Lady’s Parlour and binds only that sketch", () => {
+  const work = SHELF.find((item) => item.id === "on-a-chinese-screen");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 48788);
+  assert.equal(work!.title, "On a Chinese Screen");
+  assert.equal(work!.author, "W. Somerset Maugham");
+  assert.match(work!.opening ?? "", /^"I really think I can make something of it," she said/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/on-a-chinese-screen.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/on-a-chinese-screen.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /My Lady/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^"I really think I can make something of it," she said/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /Tunbridge Wells\."?$/);
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the book");
+  assert.equal(work!.breaths, packed.breaths.length);
+  for (const pack of [packed, full]) {
+    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+    assert.doesNotMatch(joined, /project gutenberg/i);
+  }
+});
+
+test("Futility opens on the sisters’ bouquet and skips the Wharton preface", () => {
+  const work = SHELF.find((item) => item.id === "futility");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 77253);
+  assert.equal(work!.title, "Futility");
+  assert.equal(work!.author, "William Gerhardie");
+  assert.match(work!.opening ?? "", /^It was somewhat in the manner of an Ibsen drama/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/futility.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/futility.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Sisters/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^It was somewhat in the manner of an Ibsen drama/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /the only man who really mattered in the world/);
+  assert.equal(
+    packed.breaths.some((breath) => /Wharton|preface/i.test(breath.text)),
+    false,
+    "open-at should skip the Wharton preface",
+  );
+  assert.ok(packed.breaths.some((breath) => /_datcha_/.test(breath.text)));
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("The Poison Tree opens on the Ganges storm and binds only that sit", () => {
+  const work = SHELF.find((item) => item.id === "poison-tree");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 17455);
+  assert.equal(work!.title, "The Poison Tree");
+  assert.equal(work!.author, "Bankim Chandra Chatterjee (tr. Miriam S. Knight)");
+  assert.match(work!.opening ?? "", /^Nagendra Natha Datta is about to travel by boat/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/poison-tree.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/poison-tree.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /storm/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^Nagendra Natha Datta is about to travel by boat/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /heavy storm of rain\.?$/);
+  assert.ok(packed.breaths.some((breath) => /_zemindar_/.test(breath.text)));
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("Trooper Peter Halket opens on the kopje fire and stops before the stranger", () => {
+  const work = SHELF.find((item) => item.id === "trooper-peter-halket");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 1431);
+  assert.equal(work!.title, "Trooper Peter Halket of Mashonaland");
+  assert.equal(work!.author, "Olive Schreiner");
+  assert.equal(work!.year, 1897);
+  assert.match(work!.opening ?? "", /^It was a dark night/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/trooper-peter-halket.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/trooper-peter-halket.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Kopje fire/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^It was a dark night/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /keep awake the whole night beside it\.?$/);
+  assert.equal(
+    packed.breaths.some((breath) => /\bstranger\b/i.test(breath.text)),
+    false,
+    "open-at should stop before the stranger",
+  );
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
 });
 
 test("The Cherry Orchard is a readable four-act play, not one breath per page", () => {
