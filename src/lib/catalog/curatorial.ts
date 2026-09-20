@@ -79,16 +79,6 @@ export const ADAPTED_BY_SALON_IDS = [
   "queen-of-spades-paris",
   "decapitated-chicken-lisbon",
   "madame-bovary-tokyo",
-  "dorian-gray-shanghai",
-  "anna-karenina-milan",
-  "jane-eyre-singapore",
-  "pride-prejudice-buenos-aires",
-  "dracula-istanbul",
-  "crime-punishment-cape-town",
-  "age-of-innocence-venice",
-  "tess-lisbon",
-  "scarlet-letter-kyoto",
-  "wuthering-heights-rio",
 ] as const;
 
 const FEATURED = new Set(FEATURED_CAROUSEL_IDS);

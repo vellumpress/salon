@@ -226,86 +226,6 @@ const EXPECT = {
     credit: /After Flaubert, Madame Bovary, 1857/,
     scene: /clinic coat/i,
   },
-  "dorian-gray-shanghai": {
-    title: "Oscar Wilde, The Picture of Dorian Gray recast",
-    opening: /^Mei Xiang painted Liang Duo in Bund industrial light/,
-    last: /true inventory of hungers/,
-    place: { label: "Shanghai", region: "cn" },
-    credit: /After Wilde, The Picture of Dorian Gray, 1890/,
-    scene: /studio bund/i,
-  },
-  "anna-karenina-milan": {
-    title: "Leo Tolstoy, Anna Karenina recast",
-    opening: /^Anna Bellini’s Via della Spiga shutters performed discretion/,
-    last: /true inventory of hungers/,
-    place: { label: "Milan", region: "it" },
-    credit: /After Tolstoy, Anna Karenina, 1878/,
-    scene: /spiga/i,
-  },
-  "jane-eyre-singapore": {
-    title: "Charlotte Brontë, Jane Eyre recast",
-    opening: /^Jane Reid learned charity as poor ventilation in a Katong house/,
-    last: /photographed well/,
-    place: { label: "Singapore", region: "sg" },
-    credit: /After Charlotte Brontë, Jane Eyre, 1847/,
-    scene: /katong/i,
-  },
-  "pride-prejudice-buenos-aires": {
-    title: "Jane Austen, Pride and Prejudice recast",
-    opening: /^Elena Benítez watched Buenos Aires perform manners along Alvear/,
-    last: /true inventory of hungers/,
-    place: { label: "Buenos Aires", region: "ar" },
-    credit: /After Austen, Pride and Prejudice, 1813/,
-    scene: /recoleta/i,
-  },
-  "dracula-istanbul": {
-    title: "Bram Stoker, Dracula recast",
-    opening: /^Can Hakan steamed up the Bosphorus toward a yalı/,
-    last: /kept schedule for the unbroken/,
-    place: { label: "Istanbul", region: "tr" },
-    credit: /After Stoker, Dracula, 1897/,
-    scene: /yal[ıi] papers/i,
-  },
-  "crime-punishment-cape-town": {
-    title: "Fyodor Dostoevsky, Crime and Punishment recast",
-    opening: /^Rodion Rask’s garret above Long Street framed Table Mountain/,
-    last: /true inventory of hungers/,
-    place: { label: "Cape Town", region: "za" },
-    credit: /After Dostoevsky, Crime and Punishment, 1866/,
-    scene: /long street/i,
-  },
-  "age-of-innocence-venice": {
-    title: "Edith Wharton, The Age of Innocence recast",
-    opening: /^Nicolò Arcani sat in a Fenice box while Venetian lace arranged itself to cut/,
-    last: /photographed well/,
-    place: { label: "Venice", region: "it" },
-    credit: /After Wharton, The Age of Innocence, 1920/,
-    scene: /fenice/i,
-  },
-  "tess-lisbon": {
-    title: "Thomas Hardy, Tess of the d'Urbervilles recast",
-    opening: /^Teresa “Tess” Duras inherited a spent noble name/,
-    last: /true inventory of hungers/,
-    place: { label: "Lisbon", region: "pt" },
-    credit: /After Hardy, Tess of the d'Urbervilles, 1891/,
-    scene: /alentejo/i,
-  },
-  "scarlet-letter-kyoto": {
-    title: "Nathaniel Hawthorne, The Scarlet Letter recast",
-    opening: /^Hester Prynne reseated as Etsuko Hayashi stood on a public platform/,
-    last: /true inventory of hungers/,
-    place: { label: "Kyoto", region: "jp" },
-    credit: /After Hawthorne, The Scarlet Letter, 1850/,
-    scene: /scaffold/i,
-  },
-  "wuthering-heights-rio": {
-    title: "Emily Brontë, Wuthering Heights recast",
-    opening: /^On a hillside estate above Rio’s bay/,
-    last: /true inventory of hungers/,
-    place: { label: "Rio de Janeiro", region: "br" },
-    credit: /After Emily Brontë, Wuthering Heights, 1847/,
-    scene: /foundling/i,
-  },
 } as const;
 
 test("Adapted remakes are local sits with source credit, not locked recommend", () => {
@@ -437,26 +357,6 @@ test("Adapted remakes do not keep remake nicknames as the display title", () => 
     "Ginza After Rain",
     "Fluorescent Honesty",
     "Madame Bovary after",
-    "Studio Bund",
-    "Spiga Shutters",
-    "Katong Charity Climate",
-    "Recoleta Daughters",
-    "Yalı Papers",
-    "Long Street Garret",
-    "Fenice Box",
-    "Alentejo Name",
-    "Scaffold Glance",
-    "Foundling on the Hill",
-    "The Picture of Dorian Gray after",
-    "Anna Karenina after",
-    "Jane Eyre after",
-    "Pride and Prejudice after",
-    "Dracula after",
-    "Crime and Punishment after",
-    "The Age of Innocence after",
-    "Tess of the d'Urbervilles after",
-    "The Scarlet Letter after",
-    "Wuthering Heights after",
   ];
   for (const id of ADAPTED_BY_SALON_IDS) {
     const title = shelfWork(id)?.title ?? "";
@@ -504,7 +404,7 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   assert.match(home, /useShelfSearch\("local"\)/);
   assert.doesNotMatch(home, /useShelfSearch\("fullPdf"\)/);
 
-  assert.equal(LOCAL_WORKS.length, 447);
+  assert.equal(LOCAL_WORKS.length, 437);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 
@@ -629,7 +529,7 @@ test("Adapted remakes are whole stories — never waking/unwind/before-sleep sib
     ADAPTED_BY_SALON_IDS.filter((id) => sitSuffix.test(id)),
     [],
   );
-  assert.equal(ADAPTED_BY_SALON_IDS.length, 32);
+  assert.equal(ADAPTED_BY_SALON_IDS.length, 22);
   const titles = ADAPTED_BY_SALON_IDS.map((id) => {
     const work = shelfWork(id);
     assert.ok(work, id);
@@ -679,130 +579,10 @@ test("Adapted remakes are whole stories — never waking/unwind/before-sleep sib
   ] as const;
   assert.deepEqual([...ADAPTED_BY_SALON_IDS.slice(0, 21)], [...priorAndGlam]);
   assert.equal(ADAPTED_BY_SALON_IDS[21], "madame-bovary-tokyo");
-  const novelsGlam = [
-    "dorian-gray-shanghai",
-    "anna-karenina-milan",
-    "jane-eyre-singapore",
-    "pride-prejudice-buenos-aires",
-    "dracula-istanbul",
-    "crime-punishment-cape-town",
-    "age-of-innocence-venice",
-    "tess-lisbon",
-    "scarlet-letter-kyoto",
-    "wuthering-heights-rio",
-  ] as const;
-  assert.deepEqual([...ADAPTED_BY_SALON_IDS.slice(22)], [...novelsGlam]);
   for (const id of priorAndGlam) {
     assert.ok(LANE[id], `${id} stays one whole remake on a ritual lane`);
     assert.equal(sitSuffix.test(id), false, id);
   }
-  for (const id of novelsGlam) {
-    assert.equal(LANE[id], undefined, `${id} is not a timed sit`);
-    assert.equal(sitSuffix.test(id), false, id);
-  }
-});
-
-test("novels-glam-10 remakes are whole Adapted books, not timed sits", () => {
-  const novelsGlam = [
-    "dorian-gray-shanghai",
-    "anna-karenina-milan",
-    "jane-eyre-singapore",
-    "pride-prejudice-buenos-aires",
-    "dracula-istanbul",
-    "crime-punishment-cape-town",
-    "age-of-innocence-venice",
-    "tess-lisbon",
-    "scarlet-letter-kyoto",
-    "wuthering-heights-rio",
-  ] as const;
-  const hostRequired = new Set([
-    "dorian-gray-shanghai",
-    "anna-karenina-milan",
-    "jane-eyre-singapore",
-    "dracula-istanbul",
-    "crime-punishment-cape-town",
-    "tess-lisbon",
-    "scarlet-letter-kyoto",
-    "wuthering-heights-rio",
-  ]);
-  const classics: Record<string, { id: string; title: string }> = {
-    "dorian-gray-shanghai": { id: "dorian", title: "The Picture of Dorian Gray" },
-    "anna-karenina-milan": { id: "anna", title: "Anna Karenina" },
-    "dracula-istanbul": { id: "dracula", title: "Dracula" },
-    "crime-punishment-cape-town": { id: "crime", title: "Crime and Punishment" },
-    "age-of-innocence-venice": { id: "the-age-of-innocence", title: "The Age of Innocence" },
-  };
-  for (const id of novelsGlam) {
-    assert.equal(isAdaptedBySalon(id), true, id);
-    assert.equal(curatorialTrack(id), "adapted", id);
-    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
-    assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
-    for (const suffix of ["waking", "unwind", "before-sleep"] as const) {
-      const sibling = `${id}-${suffix}`;
-      assert.equal(isAdaptedBySalon(sibling), false, sibling);
-      assert.equal(shelfWork(sibling), undefined, sibling);
-    }
-    for (const lane of RITUAL_LANES) {
-      assert.equal(lane.workIds.includes(id), false, `${id} ${lane.id}`);
-    }
-    const packed = JSON.parse(
-      readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8"),
-    ) as { note: string; scenes: { title: string }[] };
-    assert.equal(packed.scenes.length, 30, id);
-    assert.doesNotMatch(packed.note, /Host note \(required|Featured/i, id);
-    if (hostRequired.has(id)) {
-      assert.match(packed.note, /Warn the room before you Host it/, id);
-      assert.match(shelfWork(id)?.intro ?? "", /warn the room before you Host it/i, id);
-    } else {
-      assert.doesNotMatch(packed.note, /Host it|Hosting/i, id);
-      assert.doesNotMatch(shelfWork(id)?.intro ?? "", /Host it|Hosting/i, id);
-    }
-    const classic = classics[id];
-    if (classic) {
-      const source = SHELF.find((item) => item.id === classic.id);
-      assert.ok(source, classic.id);
-      assert.equal(source!.title, classic.title);
-      assert.notEqual(source!.id, id);
-    }
-  }
-});
-
-test("novels-glam-10 remakes use Mira city reseats, not raw Gutenberg extracts", () => {
-  const dorian = readFileSync(new URL("./texts/dorian-gray-shanghai.json", import.meta.url), "utf8");
-  const anna = readFileSync(new URL("./texts/anna-karenina-milan.json", import.meta.url), "utf8");
-  const jane = readFileSync(new URL("./texts/jane-eyre-singapore.json", import.meta.url), "utf8");
-  const pride = readFileSync(
-    new URL("./texts/pride-prejudice-buenos-aires.json", import.meta.url),
-    "utf8",
-  );
-  const dracula = readFileSync(new URL("./texts/dracula-istanbul.json", import.meta.url), "utf8");
-  const crime = readFileSync(
-    new URL("./texts/crime-punishment-cape-town.json", import.meta.url),
-    "utf8",
-  );
-  const age = readFileSync(new URL("./texts/age-of-innocence-venice.json", import.meta.url), "utf8");
-  const tess = readFileSync(new URL("./texts/tess-lisbon.json", import.meta.url), "utf8");
-  const scarlet = readFileSync(new URL("./texts/scarlet-letter-kyoto.json", import.meta.url), "utf8");
-  const wuthering = readFileSync(
-    new URL("./texts/wuthering-heights-rio.json", import.meta.url),
-    "utf8",
-  );
-  assert.match(dorian, /Huangpu/);
-  assert.match(anna, /Via della Spiga/);
-  assert.match(jane, /Katong/);
-  assert.match(pride, /Recoleta|Alvear/);
-  assert.match(dracula, /Bosphorus|yalı/);
-  assert.match(crime, /Long Street|Table Mountain/);
-  assert.match(age, /Fenice/);
-  assert.match(tess, /Alentejo|Tagus/);
-  assert.match(scarlet, /Kyoto/);
-  assert.match(wuthering, /Rio/);
-  assert.doesNotMatch(dorian, /The artist is the creator of beautiful things/);
-  assert.doesNotMatch(pride, /It is a truth universally acknowledged/);
-  assert.doesNotMatch(dracula, /Left Munich at 8:35/);
-  assert.doesNotMatch(crime, /On an exceptionally hot evening early in July/);
-  assert.doesNotMatch(age, /Christine Nilsson was singing in Faust/);
 });
 
 test("glam-10 remakes use Mira city reseats, not raw Gutenberg extracts", () => {
