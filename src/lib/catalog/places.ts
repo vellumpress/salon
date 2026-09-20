@@ -191,6 +191,21 @@ const COUNTRY_PLACE: Record<string, WorkPlace> = {
   Colombia: { label: "Colombia", region: "co" },
   Cuba: { label: "Cuba", region: "cu" },
   Iceland: { label: "Iceland", region: "is" },
+  Uruguay: { label: "Uruguay", region: "uy" },
+  Venezuela: { label: "Venezuela", region: "ve" },
+  Guyana: { label: "Guyana", region: "gy" },
+  Guatemala: { label: "Guatemala", region: "gt" },
+  Nicaragua: { label: "Nicaragua", region: "ni" },
+  Malaysia: { label: "Malaysia", region: "my" },
+  Vietnam: { label: "Vietnam", region: "vn" },
+  Laos: { label: "Laos", region: "la" },
+  Thailand: { label: "Thailand", region: "th" },
+  Indonesia: { label: "Indonesia", region: "id" },
+  Iraq: { label: "Iraq", region: "iq" },
+  Belarus: { label: "Belarus", region: "by" },
+  Palestine: { label: "Palestine", region: "ps" },
+  Israel: { label: "Israel", region: "il" },
+  Ghana: { label: "Ghana", region: "gh" },
 };
 
 function withShape(place: WorkPlace | undefined): WorkPlace | null {
