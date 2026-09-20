@@ -1,0 +1,151 @@
+{
+  "id": "enchanted-april",
+  "title": "The Enchanted April",
+  "author": "Elizabeth von Arnim",
+  "year": "1922",
+  "note": "Waking-up ritual sit — Agony Column.\n\nFebruary rain on Shaftesbury Avenue. An uncomfortable club. Mrs. Wilkins, down from Hampstead to shop, picks up The Times and lets her eye drift the Agony Column—until one notice catches: wistaria and sunshine, a small mediaeval Italian castle to let for April, servants included. Not for her, she thinks at once. She is poor, thrifty, married to a solicitor who praises nest-eggs for rainy days. And yet the wish doesn’t leave the room with her.\n\nElizabeth von Arnim’s The Enchanted April, first published in 1922, opens in that London gray and lets one quiet advertisement rearrange a morning. This waking sit takes the Agony Column beat through Mrs. Wilkins’s first reaction at the window—before the club widens, before anyone else steps in. Five to ten minutes. Phone-friendly. Read it like a window you almost walk away from.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Agony Column",
+      "place": "one sitting",
+      "reentry": "It began in a Woman’s Club in London on a February afternoon—an uncomfortable club, and a miserable afternoon—when Mrs. Wilkins, who had come down from Hampstead to shop and had lunched at her club, took up _The Times_ from the table in the smoking-room, and running her listless eye down the Agony Column saw this:",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It began in a Woman’s Club in London on a February afternoon—an uncomfortable club, and a miserable afternoon—when Mrs. Wilkins, who had come down from Hampstead to shop and had lunched at her club, took up _The Times_ from the table in the smoking-room, and running her listless eye down the Agony Column saw this:"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "To Those who Appreciate Wistaria and Sunshine."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Small mediaeval Italian Castle on the shores of the Mediterranean to be Let Furnished for the month of April."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Necessary servants remain."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Z, Box 1000, _The Times_."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "That was its conception; yet, as in the case of many another, the conceiver was unaware of it at the moment."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "So entirely unaware was Mrs. Wilkins that her April for that year had then and there been settled for her that she dropped the newspaper with a gesture that was both irritated and resigned, and went over to the window and stared drearily out at the dripping street."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Not for her were mediaeval castles, even those that are specially described as small."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Not for her the shores in April of the Mediterranean, and the wistaria and sunshine."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Such delights were only for the rich."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Yet the advertisement had been addressed to persons who appreciate these things, so that it had been, anyhow, addressed too to her, for she certainly appreciated them; more than anybody knew; more than she had ever told."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "But she was poor."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "In the whole world she possessed of her very own only ninety pounds, saved from year to year, put by carefully pound by pound, out of her dress allowance."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "She had scraped this sum together at the suggestion of her husband as a shield and refuge against a rainy day."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "Her dress allowance, given her by her father, was £100 a year, so that Mrs. Wilkins’s clothes were what her husband, urging her to save, called modest and becoming, and her acquaintance to each other, when they spoke of her at all, which was seldom for she was very negligible, called a perfect sight."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Mr. Wilkins, a solicitor, encouraged thrift, except that branch of it which got into his food."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "He did not call that thrift, he called it bad housekeeping."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "But for the thrift which, like moth, penetrated into Mrs. Wilkins’s clothes and spoilt them, he had much praise."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "“You never know,” he said, “when there will be a rainy day, and you may be very glad to find you have a nest-egg."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Indeed we both may.”"
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Looking out of the club window into Shaftesbury Avenue—hers was an economical club, but convenient for Hampstead, where she lived, and for Shoolbred’s, where she shopped—Mrs."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "Wilkins, having stood there some time very drearily, her mind’s eye on the Mediterranean in April, and the wistaria, and the enviable opportunities of the rich, while her bodily eye watched the really extremely horrible sooty rain falling steadily on the hurrying umbrellas and splashing omnibuses, suddenly wondered whether perhaps this was not the rainy day Mellersh—Mellersh was Mr. Wilkins—had so often encouraged her to prepare for, and whether to get out of such a climate and into the small mediaeval castle wasn’t perhaps what Providence had all along intended her to do with her savings."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "Part of her savings, of course; perhaps quite a small part."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "The castle, being mediaeval, might also be dilapidated, and dilapidations were surely cheap."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "She wouldn’t in the least mind a few of them, because you didn’t pay for dilapidations which were already there; on the contrary—by reducing the price you had to pay they really paid you."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "But what nonsense to think of it . . ."
+    }
+  ]
+}

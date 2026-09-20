@@ -35,8 +35,14 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   dracula: { label: "England", region: "gb" },
   gold: { label: "New York", region: "us" },
 
-  // Next featured-track
+  // Featured carousel (live recommend front door)
+  "enchanted-april": { label: "Italy", region: "it" },
+  "the-bridge-of-san-luis-rey": { label: "Peru", region: "pe" },
+  "mr-fortunes-maggot": { label: "Fanua", region: "ws" },
+  "the-house-of-mirth": { label: "New York", region: "us" },
   quicksand: { label: "Naxos / South", region: "us-south" },
+
+  // Next featured-track
   "attendants-confession": { label: "Brazil", region: "br" },
   rashomon: { label: "Kyoto / Japan", region: "jp" },
   "high-wind-jamaica": { label: "Jamaica", region: "jm" },
@@ -47,9 +53,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "poison-tree": { label: "Bengal", region: "in" },
   "trooper-peter-halket": { label: "Mashonaland", region: "za" },
 
-  // Named examples + Italy stand-in (Enchanted April is not on this shelf)
+  // Named examples
   botchan: { label: "Tokyo", region: "jp" },
-  "the-house-of-mirth": { label: "New York", region: "us" },
   silhouettes: { label: "Dieppe", region: "fr" },
   "a-room-with-a-view": { label: "Florence", region: "it" },
 

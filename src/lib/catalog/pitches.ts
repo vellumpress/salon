@@ -56,22 +56,25 @@ export const PITCHES: Record<string, string> = {
     "Carousel barker, cheap room, day-pass from the dead — Glazer’s Theatre Guild Liliom. Molnár’s rough tenderness between the carnival and the afterlife.",
   "the-cherry-orchard":
     "May frost on a blossoming orchard, and a merchant who already knows the land will be cut into dachas. Julius West’s English of Chekhov’s 1904 play opens in the nursery at dawn — the train is late, the trees are in flower, and the house is already sold in everything but name.",
+  "enchanted-april":
+    "February rain on Shaftesbury Avenue. An uncomfortable club. Mrs. Wilkins, down from Hampstead to shop, picks up The Times and lets her eye drift the Agony Column—until one notice catches: wistaria and sunshine, a small mediaeval Italian castle to let for April, servants included.",
+  "the-bridge-of-san-luis-rey":
+    "Five travellers fall from a Peruvian bridge — Wilder asks whether those lives were accident or intention.",
+  "mr-fortunes-maggot":
+    "One convert in three years on Fanua—and the Reverend Timothy Fortune is not flustered. Humility has made him easy-going.",
+  "the-house-of-mirth":
+    "Grand Central, a Monday in early September—the afternoon rush, the heat, the crowd. Lawrence Selden notices Lily Bart standing apart from it all, vivid against the dull tints of the station.",
+  quicksand:
+    "Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door.",
 };
 
 /** Preferred Featured carousel order (must have full text + pitch). */
 export const FEATURED_CAROUSEL_IDS: string[] = [
-  "vengeance",
-  "passing",
-  "we",
-  "berlin",
-  "manhattan",
-  "crime",
-  "dorian",
-  "bovary",
-  "odessa",
-  "naomi",
-  "dracula",
-  "gold",
+  "enchanted-april",
+  "the-bridge-of-san-luis-rey",
+  "mr-fortunes-maggot",
+  "the-house-of-mirth",
+  "quicksand",
 ];
 
 export function pitchFor(id: string): string | undefined {

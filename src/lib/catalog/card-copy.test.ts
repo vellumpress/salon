@@ -146,6 +146,18 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /Kopje fire/i,
       opening: /^It was a dark night/,
     },
+    "enchanted-april": {
+      scene: /Agony Column/i,
+      opening: /^It began in a Woman/,
+    },
+    "mr-fortunes-maggot": {
+      scene: /Fanua call/i,
+      opening: /^Though the Reverend Timothy Fortune had spent three years/,
+    },
+    "the-house-of-mirth": {
+      scene: /Book I/i,
+      opening: /^Selden paused in surprise/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -220,6 +232,19 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /\bstranger\b/i,
+      );
+    }
+    if (id === "enchanted-april") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /But what nonsense to think of it/);
+    }
+    if (id === "mr-fortunes-maggot") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /call to go to the island of Fanua/);
+    }
+    if (id === "the-house-of-mirth") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /How nice of you to come to my rescue/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /Tuxedo|Bellomont|three-fifteen/i,
       );
     }
   }

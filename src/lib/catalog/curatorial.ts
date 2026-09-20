@@ -3,19 +3,19 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 /**
  * Featured → Next → Later ranking for local binds, plus Adapted by Salon.
  *
- * Salon Pages has no dedicated Featured trio of April + Bridge + Maggot
- * (those ids are not a carousel here). Featured stays the existing
- * FEATURED_CAROUSEL_IDS list — do not insert Quicksand.
+ * Live Featured front door (Mike A24≥9, Mira elevate Sun Sep 20):
+ * Enchanted April, The Bridge of San Luis Rey, Mr. Fortune’s Maggot,
+ * then The House of Mirth, then Quicksand. See FEATURED_CAROUSEL_IDS.
  *
- * Quicksand is Next Featured-track: worldly non-NY backup after Mirth.
- * The Attendant’s Confession sits beside it (A24 South America lane).
- * Rashōmon sits beside them (Asia lane) — not Featured until a dedicated trio.
- * A High Wind in Jamaica sits beside them (Jamaica / before-sleep Host-a-sit Ch1).
- * Noli Me Tangere sits beside them (Manila / unwind Host-a-sit Ch1).
- * Vera sits beside them (Cornwall / before-sleep Host-a-sit Ch I).
- * On a Chinese Screen sits beside them (China / waking Host-a-sit Parlour).
- * Futility sits beside them (Petersburg coast / waking Host-a-sit sisters).
- * Trooper Peter Halket sits beside them (Mashonaland / before-sleep Host-a-sit kopje).
+ * Next Featured-track keeps the remaining Host-a-sit queue:
+ * The Attendant’s Confession (A24 South America lane).
+ * Rashōmon (Asia lane).
+ * A High Wind in Jamaica (Jamaica / before-sleep Host-a-sit Ch1).
+ * Noli Me Tangere (Manila / unwind Host-a-sit Ch1).
+ * Vera (Cornwall / before-sleep Host-a-sit Ch I).
+ * On a Chinese Screen (China / waking Host-a-sit Parlour).
+ * Futility (Petersburg coast / waking Host-a-sit sisters).
+ * Trooper Peter Halket (Mashonaland / before-sleep Host-a-sit kopje).
  * The Poison Tree is Later (Bengal / unwind) — not Next, not Featured.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
@@ -24,7 +24,6 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 export type CuratorialTrack = "featured" | "next" | "later" | "adapted";
 
 export const NEXT_FEATURED_TRACK_IDS = [
-  "quicksand",
   "attendants-confession",
   "rashomon",
   "high-wind-jamaica",
