@@ -144,7 +144,21 @@ export const SHELF: ShelfWork[] = [
   { id: "zaynab", title: "Zaynab", author: "Muhammad Husayn Haykal", year: 1913, form: "novel", language: "Arabic", minutes: 160 }, // Thea PULL EN 2026-09-16: no ≤1930 EN — catalog-only / AR
   { id: "kokoro", title: "Kokoro", author: "Natsume Sōseki", year: 1914, form: "novel", language: "Japanese", minutes: 160 },
   { id: "mist", title: "Mist", author: "Miguel de Unamuno", year: 1914, form: "novel", language: "Spanish", minutes: 160 },
-  { id: "rashomon", title: "Rashomon and Other Stories", author: "Ryūnosuke Akutagawa", year: 1915, form: "stories", language: "Japanese", minutes: 80 }, // Thea HOLD EN 2026-09-16: JP OK; do not wire modern EN
+  {
+    id: "rashomon",
+    title: "Rashōmon",
+    author: "Ryūnosuke Akutagawa",
+    year: 1915,
+    form: "other",
+    language: "English",
+    minutes: 14,
+    local: true,
+    gutenberg: 78105,
+    opening: "It was evening.",
+    breaths: 151,
+    intro:
+      "Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate. Akutagawa’s Kyoto opens on desolation before the crime story blooms.",
+  },
   { id: "golem", title: "The Golem", author: "Gustav Meyrink", year: 1915, form: "novel", language: "German", minutes: 160 },
   { id: "metamorphosis", title: "The Metamorphosis", author: "Franz Kafka", year: 1915, form: "other", language: "German", minutes: 40 }, // Thea PULL EN 2026-09-15: PG 5200 Wyllie copyrighted — catalog-only
   { id: "underdogs", title: "The Underdogs", author: "Mariano Azuela", year: 1915, form: "novel", language: "Spanish", local: true, opening: "\"How beautiful the revolution!", breaths: 2901, minutes: 363, gutenberg: 549 },

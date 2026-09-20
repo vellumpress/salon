@@ -402,7 +402,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "rakes": `Mateiu Caragiale’s 1929 novel The Rakes of the Old Court. Sit with the world a moment before the first breath.`,
   "ramona": `Helen Hunt Jackson’s 1884 novel Ramona. Sit with the world a moment before the first breath.`,
   "rangbhoomi": `Premchand’s 1925 novel Rangbhoomi. Sit with the world a moment before the first breath.`,
-  "rashomon": `Ryūnosuke Akutagawa’s 1915 stories, gathered as Rashomon and Other Stories. Enter one room at a time.`,
+  "rashomon": `Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate. Akutagawa’s Kyoto opens on desolation before the crime story blooms.`,
   "rebours": `Joris-Karl Huysmans’s 1884 novel À rebours. Sit with the world a moment before the first breath.`,
   "red-cavalry": `Red Cavalry (1926): Odessa rumor — bright, then sharp. Enter one room at a time.`,
   "red-chamber": `Cao Xueqin’s 1791 novel Dream of the Red Chamber. Sit with the world a moment before the first breath.`,

@@ -56,6 +56,7 @@ test("known origin overrides", () => {
     rur: "Czechia",
     odessa: "Ukraine",
     "attendants-confession": "Brazil",
+    rashomon: "Japan",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);
@@ -106,6 +107,10 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /A human document/i,
       opening: /^So it really seems to you that what happened to me in 1860 is worth while writing down/,
     },
+    rashomon: {
+      scene: /Evening under Rashōmon/i,
+      opening: /^It was evening\./,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -132,6 +137,13 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /Great Mogul|dead man's shoes|dead man’s shoes/i,
+      );
+    }
+    if (id === "rashomon") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /besides this single man, there was no one\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /earthquakes, cyclones, fires and famines|desolation was extraordinary/i,
       );
     }
   }
@@ -203,6 +215,46 @@ test("The Attendant’s Confession opens in sentence case and stops before the M
     full.breaths.some((breath) => /fortune-teller/i.test(breath.text)),
     false,
     "full text should end before The Fortune-Teller",
+  );
+  for (const pack of [packed, full]) {
+    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+    assert.doesNotMatch(joined, /project gutenberg/i);
+    const decorative = pack.breaths.filter((breath) => {
+      const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
+      return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
+    });
+    assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
+  }
+});
+
+test("Rashōmon opens in sentence case and binds only the title story", () => {
+  const work = SHELF.find((item) => item.id === "rashomon");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 78105);
+  assert.equal(work!.title, "Rashōmon");
+  assert.match(work!.opening ?? "", /^It was evening\./);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/rashomon.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/rashomon.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Evening under Rashōmon/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^It was evening\./);
+  assert.equal(packed.breaths.at(-1)?.text, "All the same, besides this single man, there was no one.");
+  assert.equal(
+    packed.breaths.some((breath) => /earthquakes, cyclones, fires and famines/.test(breath.text)),
+    false,
+    "open-at should stop before the calamity catalogue",
+  );
+  assert.match(full.breaths[0]?.text ?? "", /^It was evening\./);
+  assert.match(full.breaths.at(-1)?.text ?? "", /streets of Kyōto to rob/);
+  assert.equal(
+    full.breaths.some((breath) => /\bLICE\b|Mori Gonnoshin|twenty-sixth day of the eleventh/.test(breath.text)),
+    false,
+    "full text should bind only Rashōmon, not later stories in PG 78105",
   );
   for (const pack of [packed, full]) {
     const joined = pack.breaths.map((breath) => breath.text).join("\n");
