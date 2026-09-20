@@ -51,7 +51,11 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-immoralist",
 ] as const;
 
-/** Mira pack — Adapted by Salon lane only. Do not add to locked recommend / Next. */
+/**
+ * Mira pack — Adapted by Salon lane only. Do not add to locked recommend / Next.
+ * Whole-story remakes only: one shelf id / one read path each. Never splice a
+ * remake into waking / unwind / before-sleep sibling sits (Mike lock Sep 20).
+ */
 export const ADAPTED_BY_SALON_IDS = [
   "miss-brill-adapted",
   "prefer-not",
@@ -74,9 +78,7 @@ export const ADAPTED_BY_SALON_IDS = [
   "the-nose-cape-town",
   "queen-of-spades-paris",
   "decapitated-chicken-lisbon",
-  "madame-bovary-tokyo-waking",
-  "madame-bovary-tokyo-unwind",
-  "madame-bovary-tokyo-before-sleep",
+  "madame-bovary-tokyo",
 ] as const;
 
 const FEATURED = new Set(FEATURED_CAROUSEL_IDS);

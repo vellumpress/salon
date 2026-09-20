@@ -476,9 +476,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "the-nose-cape-town": "United States",
   "queen-of-spades-paris": "United States",
   "decapitated-chicken-lisbon": "United States",
-  "madame-bovary-tokyo-waking": "United States",
-  "madame-bovary-tokyo-unwind": "United States",
-  "madame-bovary-tokyo-before-sleep": "United States",
+  "madame-bovary-tokyo": "United States",
   // English-language translations / binds of foreign originals
   basilio: "Portugal",
   "bel-ami": "France",

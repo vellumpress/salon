@@ -160,11 +160,7 @@ const BLURBS: Record<string, string> = {
     "Three cards in the Huitième, a countess's secret, and a queen who will not stay buried.",
   "decapitated-chicken-lisbon":
     "A white villa above the Tagus, and a kitchen lesson that does not stay in the kitchen.",
-  "madame-bovary-tokyo-waking":
-    "A New Town wife tries to live glamorous Tokyo as if desire were a credit line.",
-  "madame-bovary-tokyo-unwind":
-    "A New Town wife tries to live glamorous Tokyo as if desire were a credit line.",
-  "madame-bovary-tokyo-before-sleep":
+  "madame-bovary-tokyo":
     "A New Town wife tries to live glamorous Tokyo as if desire were a credit line.",
   botchan:
     "A hot-headed Tokyo teacher is posted to the provinces and refuses to learn the local game.",
