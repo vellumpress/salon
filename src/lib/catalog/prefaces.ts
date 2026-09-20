@@ -48,7 +48,7 @@ export const PREFACES: Record<string, string> = {
   "jacob-s-room":
     "Woolf builds a man from the rooms and people he has already left. The 1922 novel is assembled, not explained. Sit with the empty chair a moment.",
   "the-good-soldier":
-    "Ford’s narrator tells a story of passion and keeps discovering he had it wrong. The 1915 novel is a confession that will not stay still. Sit with the voice before you trust it.",
+    "Nine seasons at Bad Nauheim — intimacy like a good glove, and still they knew nothing. Ford’s 1915 confession starts in the shallows. Sit with that voice before you trust it.",
   "pointed-roofs":
     "Miriam Henderson goes to Germany as a pupil-teacher and starts a life in sentences. Richardson’s 1915 novel is attention itself. Sit with the first room, then enter.",
   "the-autobiography-of-an-ex-colored-man":
@@ -62,7 +62,7 @@ export const PREFACES: Record<string, string> = {
   "elmer-gantry":
     "American professions as a hustle you can still try to stay honest inside. Lewis’s 1927 preacher novel is heat, tents, and appetite. Sit with the noise before the first breath.",
   "the-painted-veil":
-    "A marriage made in spite, then a cholera station that will not flatter either of them. Maugham’s 1925 novel is Hong Kong light and a long interior. Sit with the silence a moment.",
+    "Someone tries the door — shuttered room, tight shoes, a kimono, and Walter’s name whispered. Maugham’s 1925 Hong Kong orbit sit stops on “How shall I get out?”",
   "the-moon-and-sixpence":
     "A stockbroker walks out of a life to paint — Maugham’s Gauguin rumor. The 1919 novel is told by someone still trying to explain it. Sit with the gossip before the first breath.",
   "o-pioneers":

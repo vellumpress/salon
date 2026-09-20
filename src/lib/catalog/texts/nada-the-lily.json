@@ -1,0 +1,61 @@
+{
+  "id": "nada-the-lily",
+  "title": "Nada the Lily",
+  "author": "H. Rider Haggard",
+  "year": "1892",
+  "note": "Before-sleep ritual sit — Zululand.\n\nYou ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think.\n\nHaggard’s Zululand frame — an old narrator under “the White Man” / Great Queen law — is colonial adventure voice, with period names and violence ahead. Name that frame for the room before you Host further; Salon stops at the hidden-name beat.\n\nNada the Lily (Haggard; 1892; PG 1207). Sit through the hidden name. Stop before the rest of the novel.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Hidden name",
+      "place": "one sitting",
+      "reentry": "You ask me, my father, to tell you the tale of the youth of Umslopogaas, holder of the iron Chieftainess, the axe Groan-maker, who was named Bulalio the Slaughterer, and of his love for Nada, the most beautiful of Zulu women.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "You ask me, my father, to tell you the tale of the youth of Umslopogaas, holder of the iron Chieftainess, the axe Groan-maker, who was named Bulalio the Slaughterer, and of his love for Nada, the most beautiful of Zulu women."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "It is long; but you are here for many nights, and, if I live to tell it, it shall be told."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Strengthen your heart, my father, for I have much to say that is sorrowful, and even now, when I think of Nada the tears creep through the horn that shuts out my old eyes from light."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Do you know who I am, my father?"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "You do not know."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "You think that I am an old, old witch-doctor named Zweete."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "So men have thought for many years, but that is not my name."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Few have known it, for I have kept it locked in my breast, lest, though I live now under the law of the White Man, and the Great Queen is my chieftainess, an assegai still might find this heart did any know my name."
+    }
+  ]
+}

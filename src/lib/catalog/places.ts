@@ -62,6 +62,10 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "an-outcast-of-the-islands": { label: "Malay Archipelago", region: "id" },
   "the-underdogs": { label: "Mexico — sierra", region: "mx" },
   "diary-of-a-chambermaid": { label: "Paris", region: "fr" },
+  "the-painted-veil": { label: "Hong Kong orbit", region: "cn" },
+  "the-good-soldier": { label: "Bad Nauheim", region: "de" },
+  "growth-of-the-soil": { label: "Norway", region: "no" },
+  "nada-the-lily": { label: "Zululand", region: "za" },
 
   // Named examples
   botchan: { label: "Tokyo", region: "jp" },

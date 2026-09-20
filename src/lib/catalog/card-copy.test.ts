@@ -70,6 +70,10 @@ test("known origin overrides", () => {
     "an-outcast-of-the-islands": "United Kingdom",
     "the-underdogs": "Mexico",
     "diary-of-a-chambermaid": "France",
+    "the-painted-veil": "United Kingdom",
+    "the-good-soldier": "United Kingdom",
+    "growth-of-the-soil": "Norway",
+    "nada-the-lily": "South Africa",
     "on-a-chinese-screen": "United Kingdom",
     futility: "United Kingdom",
     "poison-tree": "India",
@@ -205,6 +209,22 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /Fight-day breakfast/i,
       opening: /^Juan Gallardo breakfasted early/,
     },
+    "the-painted-veil": {
+      scene: /The door/i,
+      opening: /^She gave a startled cry/,
+    },
+    "the-good-soldier": {
+      scene: /A good glove/i,
+      opening: /^This is the saddest story I have ever heard/,
+    },
+    "growth-of-the-soil": {
+      scene: /The first sack/i,
+      opening: /^The long, long road over the moors/,
+    },
+    "nada-the-lily": {
+      scene: /Hidden name/i,
+      opening: /^You ask me, my father/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -336,6 +356,22 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     if (id === "blood-and-sand") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /not made much impression\.?$/);
       assert.ok(packed.breaths.some((breath) => /\*la alternativa\*/.test(breath.text)));
+    }
+    if (id === "the-painted-veil") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /How shall I get out\?/);
+      assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /PREFACE|preface/i);
+    }
+    if (id === "the-good-soldier") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /I had known the shallows\.?$/);
+      assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /PART I/);
+    }
+    if (id === "growth-of-the-soil") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /in search of peace\.?$/);
+      assert.ok(packed.breaths.some((breath) => /\bLapp\b/.test(breath.text)));
+    }
+    if (id === "nada-the-lily") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /did any know my name\.?$/);
+      assert.ok(packed.breaths.some((breath) => /White Man/.test(breath.text)));
     }
   }
 });
@@ -982,6 +1018,129 @@ test("The Underdogs opens in the sierra hut and binds only that sit", () => {
     "open-at should stop before Demetrio leaves the hut",
   );
   assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("The Painted Veil opens on the shuttered door and skips the PREFACE", () => {
+  const work = SHELF.find((item) => item.id === "the-painted-veil");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 64682);
+  assert.equal(work!.title, "The Painted Veil");
+  assert.equal(work!.author, "W. Somerset Maugham");
+  assert.equal(work!.year, 1925);
+  assert.match(work!.opening ?? "", /^She gave a startled cry/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/the-painted-veil.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/the-painted-veil.json", import.meta.url), "utf8"),
+  ) as { note: string; breaths: { text: string }[] };
+  assert.match(packed.note, /How shall I get out/);
+  assert.match(packed.note, /Name the frame if you Host further/);
+  assert.match(work!.intro ?? "", /amah/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(packed.scenes[0]?.title ?? "", /The door/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^She gave a startled cry/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /How shall I get out\?/);
+  assert.equal(
+    packed.breaths.some((breath) => /PREFACE|preface/i.test(breath.text)),
+    false,
+    "open-at should skip PREFACE",
+  );
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("The Good Soldier opens on the glove and binds only that sit", () => {
+  const work = SHELF.find((item) => item.id === "the-good-soldier");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 2775);
+  assert.equal(work!.title, "The Good Soldier");
+  assert.equal(work!.author, "Ford Madox Ford");
+  assert.equal(work!.year, 1915);
+  assert.match(work!.opening ?? "", /^This is the saddest story I have ever heard/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/the-good-soldier.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/the-good-soldier.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /A good glove/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^This is the saddest story I have ever heard/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /I had known the shallows\.?$/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.equal(
+    packed.breaths.some((breath) => /PART I/.test(breath.text)),
+    false,
+    "open-at should skip PART I chrome",
+  );
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("Growth of the Soil ships the soft Host note for period Lapp / Sámi", () => {
+  const work = SHELF.find((item) => item.id === "growth-of-the-soil");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 10984);
+  assert.equal(work!.title, "Growth of the Soil");
+  assert.equal(work!.author, "Knut Hamsun (tr. W. W. Worster)");
+  assert.equal(work!.year, 1920);
+  assert.match(work!.opening ?? "", /^The long, long road over the moors/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/growth-of-the-soil.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/growth-of-the-soil.json", import.meta.url), "utf8"),
+  ) as { note: string; breaths: { text: string }[] };
+  assert.match(packed.note, /\bLapp\b/);
+  assert.match(packed.note, /Sámi/);
+  assert.match(packed.note, /If you Host further, keep that named for the room/);
+  assert.match(full.note, /Sámi/);
+  assert.match(work!.intro ?? "", /Sámi/);
+  assert.match(work!.intro ?? "", /\bLapp\b/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(packed.scenes[0]?.title ?? "", /The first sack/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^The long, long road over the moors/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /in search of peace\.?$/);
+  assert.ok(packed.breaths.some((breath) => /\bLapp\b/.test(breath.text)));
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("Nada the Lily ships the required colonial Host note and hidden-name sit", () => {
+  const work = SHELF.find((item) => item.id === "nada-the-lily");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 1207);
+  assert.equal(work!.title, "Nada the Lily");
+  assert.equal(work!.author, "H. Rider Haggard");
+  assert.equal(work!.year, 1892);
+  assert.match(work!.opening ?? "", /^You ask me, my father/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/nada-the-lily.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/nada-the-lily.json", import.meta.url), "utf8"),
+  ) as { note: string; breaths: { text: string }[] };
+  assert.match(packed.note, /White Man/);
+  assert.match(packed.note, /Great Queen/);
+  assert.match(packed.note, /Name that frame for the room before you Host further/);
+  assert.match(full.note, /colonial adventure voice/);
+  assert.match(work!.intro ?? "", /White Man/);
+  assert.match(work!.intro ?? "", /Name that frame for the room before you Host further/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open|silent-ship/i);
+  assert.match(packed.scenes[0]?.title ?? "", /Hidden name/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^You ask me, my father/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /did any know my name\.?$/);
+  assert.ok(packed.breaths.some((breath) => /Zweete/.test(breath.text)));
   assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
   assert.equal(work!.breaths, packed.breaths.length);
 });
