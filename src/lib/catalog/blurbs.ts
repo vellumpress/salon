@@ -27,6 +27,8 @@ const BLURBS: Record<string, string> = {
     "Eight in the evening in Naxos: Helga Crane sits alone and will not open the door.",
   "attendants-confession":
     "A marked man offers a human document—and asks you not to publish it until he’s dead.",
+  rashomon:
+    "Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:

@@ -20,7 +20,6 @@ export const EN_OFF_READABLE_IDS = new Set<string>([
   "cat",
   // HOLD_EN
   "wild-geese",
-  "rashomon",
   "quiroga",
   // HOLD_EN_VERIFY — Creighton US imprint uncleared (1931 risk)
   "grand-hotel",

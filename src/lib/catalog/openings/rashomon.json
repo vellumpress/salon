@@ -1,0 +1,51 @@
+{
+  "id": "rashomon",
+  "title": "Rashōmon",
+  "author": "Ryūnosuke Akutagawa",
+  "year": "1915",
+  "note": "Before-sleep ritual sit — first breath.\n\nEvening under Rashōmon—one lackey waiting out the rain, and no one else in the gate. Akutagawa’s Kyoto opens on desolation before the crime story blooms.\n\n“Rashōmon” (Akutagawa; EN PG 78105). Sit through the empty gate. Stop before the calamity catalogue.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Evening under Rashōmon",
+      "place": "one sitting",
+      "reentry": "It was evening.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was evening."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "A solitary lackey sat under Rashōmon waiting for the rain to clear."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Beneath the broad gate, there was not another soul."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Only, on a big round pillar, from which the vermilion lacquer had peeled off here and there, sat one lone cricket."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Since Rashōmon was in the great thoroughfare Sujaku Ōji, it would seem that there should also have been two or three tradeswomen in wide straw hats and men in citizen’s caps sheltering there from the rain."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "All the same, besides this single man, there was no one."
+    }
+  ]
+}

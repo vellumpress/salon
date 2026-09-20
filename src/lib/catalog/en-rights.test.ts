@@ -17,7 +17,6 @@ test("hold/pull ids are marked off English readable", () => {
     "zaynab",
     "cat",
     "wild-geese",
-    "rashomon",
     "quiroga",
     "grand-hotel",
     "ramires",
@@ -38,4 +37,10 @@ test("Dragon's Teeth (basilio) is not on the EN-off list", () => {
   assert.equal(isEnReadableOff("basilio"), false);
   assert.equal(isBoundLocal({ id: "basilio", local: true }), true);
   assert.equal(isBoundReadable({ id: "basilio", local: true }), true);
+});
+
+test("Rashōmon is a readable local EN bind", () => {
+  assert.equal(isEnReadableOff("rashomon"), false);
+  assert.equal(isBoundLocal({ id: "rashomon", local: true }), true);
+  assert.equal(isBoundReadable({ id: "rashomon", local: true, gutenberg: 78105 }), true);
 });

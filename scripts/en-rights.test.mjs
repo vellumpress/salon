@@ -26,7 +26,6 @@ const PULL_HOLD = [
   "zaynab",
   "cat",
   "wild-geese",
-  "rashomon",
   "quiroga",
   "grand-hotel",
 ];
@@ -61,6 +60,15 @@ test("KEEP_OFF_EN FR/PT originals are not shelf binds", () => {
     assert.equal(shelfBlock(id), null, id);
     assert.match(rights, new RegExp(`"${id}"`));
   }
+});
+
+test("Rashōmon is the Mira-cleared PG 78105 local bind", () => {
+  const block = shelfBlock("rashomon");
+  assert.ok(block);
+  assert.match(block, /title:\s*"Rashōmon"/);
+  assert.match(block, /local:\s*true/);
+  assert.match(block, /gutenberg:\s*78105/);
+  assert.doesNotMatch(rights, /"rashomon"/);
 });
 
 test("Dragon's Teeth stays the Serrano 1889 stand-in, not Cousin Basilio", () => {

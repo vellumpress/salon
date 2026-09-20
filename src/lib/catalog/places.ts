@@ -38,6 +38,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   // Next featured-track
   quicksand: { label: "Naxos / South", region: "us-south" },
   "attendants-confession": { label: "Brazil", region: "br" },
+  rashomon: { label: "Kyoto / Japan", region: "jp" },
 
   // Named examples + Italy stand-in (Enchanted April is not on this shelf)
   botchan: { label: "Tokyo", region: "jp" },

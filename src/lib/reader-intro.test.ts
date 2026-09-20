@@ -57,6 +57,13 @@ test("The Attendant’s Confession uses the before-sleep human-document sit", ()
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Mogul/i);
 });
 
+test("Rashōmon uses the before-sleep empty-gate sit", () => {
+  const copy = readerIntro(shelfAsWork("rashomon"));
+  assert.match(copy, /Evening under Rashōmon/);
+  assert.match(copy, /desolation before the crime story blooms/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Hearn/i);
+});
+
 test("uses Featured before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),
