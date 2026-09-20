@@ -245,7 +245,14 @@ const BLURBS: Record<string, string> = {
     "Who will inherit the house — and the England attached to it.",
   "a-portrait-of-the-artist-as-a-young-man":
     "Stephen Dedalus talks his way out of church, family, and Ireland.",
-  dubliners: "Joyce’s city in fifteen stories that end just after the truth arrives.",
+  dubliners:
+    "A lighted window and the word paralysis — Joyce’s first sit is The Sisters only.",
+  bliss:
+    "Bertha Young swallows the late-afternoon sun, then the dinner-party turn waits in the full story.",
+  "a-hundred-and-seventy-chinese-poems":
+    "Winter Night: an empty bed, a sea-sound in the curtains, and lyrics that never open on Battle.",
+  "martin-bircks-youth":
+    "A childhood garden of blue flowers — then the blossom turns red, and the mother is gone.",
   ulysses: "One Dublin day, walked until language itself starts to sweat.",
   "the-voyage-out": "A young woman sails toward a first love and does not sail home unchanged.",
   "jacob-s-room": "Woolf builds a man from the rooms and people he has already left.",
@@ -327,7 +334,7 @@ const BLURBS: Record<string, string> = {
     "A young Millay climbs a mountain of sky and comes back changed.",
   "mountain-interval":
     "Frost’s yellow wood, two roads, and the talk that gets you going.",
-  gitanjali: "Tagore’s song offerings settle the breath without a sermon.",
+  gitanjali: "Tagore’s first song offering — skip Yeats and open on the little flute.",
   "songs-of-kabir":
     "Kabir, through Tagore’s English: mystic poems that don’t need a church.",
   "pictures-of-the-floating-world":

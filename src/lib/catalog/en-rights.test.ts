@@ -120,6 +120,20 @@ test("Blood and Sand is a readable local EN bind", () => {
   assert.equal(isBoundReadable({ id: "blood-and-sand", local: true, gutenberg: 54222 }), true);
 });
 
+test("Mira evening A24 Next / Rituals sits are readable local EN binds", () => {
+  for (const [id, gutenberg] of [
+    ["bliss", 44385],
+    ["a-hundred-and-seventy-chinese-poems", 42290],
+    ["dubliners", 2814],
+    ["gitanjali", 7164],
+    ["martin-bircks-youth", 78363],
+  ] as const) {
+    assert.equal(isEnReadableOff(id), false, id);
+    assert.equal(isBoundLocal({ id, local: true }), true, id);
+    assert.equal(isBoundReadable({ id, local: true, gutenberg }), true, id);
+  }
+});
+
 test("Mira 6pm Next / Rituals sits are readable local EN binds", () => {
   for (const [id, gutenberg] of [
     ["demian", 74222],

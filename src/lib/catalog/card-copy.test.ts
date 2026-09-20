@@ -81,6 +81,9 @@ test("known origin overrides", () => {
     demian: "Germany",
     "death-comes-for-the-archbishop": "United States",
     "the-getting-of-wisdom": "Australia",
+    bliss: "New Zealand",
+    "a-hundred-and-seventy-chinese-poems": "China",
+    "martin-bircks-youth": "Sweden",
     "on-a-chinese-screen": "United Kingdom",
     futility: "United Kingdom",
     "poison-tree": "India",
@@ -259,6 +262,26 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     "the-getting-of-wisdom": {
       scene: /Dirty sheet/i,
       opening: /^The four children were lying on the grass/,
+    },
+    bliss: {
+      scene: /Radiant mirror/i,
+      opening: /^Although Bertha Young was thirty/,
+    },
+    "a-hundred-and-seventy-chinese-poems": {
+      scene: /Winter Night/i,
+      opening: /^My bed is so empty/,
+    },
+    dubliners: {
+      scene: /The Sisters/i,
+      opening: /^There was no hope for him this time/,
+    },
+    gitanjali: {
+      scene: /little flute/i,
+      opening: /^Thou hast made me endless/,
+    },
+    "martin-bircks-youth": {
+      scene: /Childhood garden/i,
+      opening: /^Martin Birck was a little child/,
     },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
@@ -453,6 +476,32 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     }
     if (id === "the-getting-of-wisdom") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /said Pin, who was practical\.?$/);
+    }
+    if (id === "bliss") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /infallibly\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /Lottie and Kezia|Prelude/i,
+      );
+    }
+    if (id === "a-hundred-and-seventy-chinese-poems") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /shut it up inside\.?$/);
+      assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /\bBattle\b/);
+    }
+    if (id === "dubliners") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /arranging his opinion in his mind\.?$/);
+      assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /The Dead|Gabriel Conroy/i);
+    }
+    if (id === "gitanjali") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /friend who art my lord\.?$/);
+      assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /Yeats|Introduction/i);
+    }
+    if (id === "martin-bircks-youth") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /near to weeping\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /translator|preface|C\. W\. S/i,
+      );
     }
   }
 });
@@ -1473,6 +1522,162 @@ test("The Getting of Wisdom opens on the dirty-sheet sit and keeps the novel", (
   assert.match(packed.scenes[0]?.title ?? "", /Dirty sheet/i);
   assert.match(packed.scenes[0]?.reentry ?? "", /^The four children were lying on the grass/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /said Pin, who was practical\.?$/);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
+});
+
+test("Bliss opens on the title story and keeps the dinner-party turn", () => {
+  const work = SHELF.find((item) => item.id === "bliss");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 44385);
+  assert.equal(work!.title, "Bliss");
+  assert.equal(work!.author, "Katherine Mansfield");
+  assert.equal(work!.year, 1920);
+  assert.match(work!.opening ?? "", /^Although Bertha Young was thirty/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/bliss.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/bliss.json", import.meta.url), "utf8"),
+  ) as { note: string; breaths: { text: string }[] };
+  assert.match(packed.note, /radiant mirror/i);
+  assert.match(packed.note, /never Prelude/i);
+  assert.match(packed.note, /dinner-party turn/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(full.note, /never Prelude/i);
+  assert.match(packed.scenes[0]?.title ?? "", /Radiant mirror/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^Although Bertha Young was thirty/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /infallibly\.?$/);
+  assert.match(full.breaths[0]?.text ?? "", /^Although Bertha Young was thirty/);
+  assert.match(full.breaths.at(-1)?.text ?? "", /pear tree was as lovely as ever/);
+  assert.doesNotMatch(
+    full.breaths.slice(0, 8).map((breath) => breath.text).join(" "),
+    /Lottie and Kezia/i,
+  );
+  assert.ok(full.breaths.length > packed.breaths.length, "full title story stays after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
+});
+
+test("A Hundred and Seventy Chinese Poems opens on Winter Night, not Battle", () => {
+  const work = SHELF.find((item) => item.id === "a-hundred-and-seventy-chinese-poems");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 42290);
+  assert.equal(work!.title, "A Hundred and Seventy Chinese Poems");
+  assert.equal(work!.author, "Various (tr. Arthur Waley)");
+  assert.equal(work!.year, 1918);
+  assert.match(work!.opening ?? "", /^My bed is so empty/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/a-hundred-and-seventy-chinese-poems.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/a-hundred-and-seventy-chinese-poems.json", import.meta.url), "utf8"),
+  ) as { note: string; breaths: { text: string }[] };
+  assert.match(packed.note, /Winter Night/);
+  assert.match(packed.note, /not Battle|Never Battle/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(full.note, /Never Battle/);
+  assert.match(packed.scenes[0]?.title ?? "", /Winter Night/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^My bed is so empty/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /shut it up inside\.?$/);
+  assert.doesNotMatch(packed.breaths.map((breath) => breath.text).join(" "), /\bBattle\b/);
+  assert.doesNotMatch(full.breaths[0]?.text ?? "", /^Battle/i);
+  assert.ok(full.breaths.length > packed.breaths.length, "later lyrics stay after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
+});
+
+test("Dubliners opens on The Sisters only, not The Dead", () => {
+  const work = SHELF.find((item) => item.id === "dubliners");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 2814);
+  assert.equal(work!.title, "Dubliners");
+  assert.equal(work!.author, "James Joyce");
+  assert.equal(work!.year, 1914);
+  assert.match(work!.opening ?? "", /^There was no hope for him this time/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/dubliners.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/dubliners.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string }[]; breaths: { text: string }[] };
+  assert.match(packed.note, /The Sisters only/);
+  assert.match(packed.note, /not The Dead/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(full.note, /The Sisters/);
+  assert.match(packed.scenes[0]?.title ?? "", /The Sisters/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^There was no hope for him this time/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /arranging his opinion in his mind\.?$/);
+  assert.doesNotMatch(full.breaths.map((breath) => breath.text).join(" "), /Gabriel Conroy/i);
+  assert.doesNotMatch(full.scenes.map((scene) => scene.title).join(" "), /The Dead/i);
+  assert.ok(full.breaths.length > packed.breaths.length, "full Sisters story stays after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
+});
+
+test("Gitanjali opens on poem 1 and skips the Yeats introduction", () => {
+  const work = SHELF.find((item) => item.id === "gitanjali");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 7164);
+  assert.equal(work!.title, "Gitanjali");
+  assert.equal(work!.author, "Rabindranath Tagore");
+  assert.equal(work!.year, 1912);
+  assert.match(work!.opening ?? "", /^Thou hast made me endless/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/gitanjali.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/gitanjali.json", import.meta.url), "utf8"),
+  ) as { note: string; breaths: { text: string }[] };
+  assert.match(packed.note, /Skip the Yeats introduction/);
+  assert.match(packed.note, /poem 1/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(full.note, /Never the Yeats introduction/);
+  assert.match(packed.scenes[0]?.title ?? "", /little flute/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^Thou hast made me endless/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /friend who art my lord\.?$/);
+  assert.match(full.breaths[0]?.text ?? "", /^Thou hast made me endless/);
+  assert.doesNotMatch(
+    full.breaths.slice(0, 20).map((breath) => breath.text).join(" "),
+    /Yeats|INTRODUCTION/i,
+  );
+  assert.ok(full.breaths.length > packed.breaths.length, "later offerings stay after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
+});
+
+test("Martin Birck's Youth opens on the childhood dream and skips the Stork preface", () => {
+  const work = SHELF.find((item) => item.id === "martin-bircks-youth");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 78363);
+  assert.equal(work!.title, "Martin Birck's Youth");
+  assert.equal(work!.author, "Hjalmar Söderberg (tr. Charles Wharton Stork)");
+  assert.equal(work!.year, 1930);
+  assert.match(work!.opening ?? "", /^Martin Birck was a little child/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/martin-bircks-youth.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/martin-bircks-youth.json", import.meta.url), "utf8"),
+  ) as { note: string; breaths: { text: string }[] };
+  assert.match(packed.note, /Skip the Stork preface/);
+  assert.match(packed.note, /1930 English only/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(full.note, /never the translator preface/i);
+  assert.match(packed.scenes[0]?.title ?? "", /Childhood garden/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^Martin Birck was a little child/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /near to weeping\.?$/);
+  assert.match(full.breaths[0]?.text ?? "", /^Martin Birck was a little child/);
+  assert.doesNotMatch(
+    full.breaths.slice(0, 12).map((breath) => breath.text).join(" "),
+    /C\. W\. S|enfant terrible|PREFACE/i,
+  );
   assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
   assert.equal(work!.breaths, full.breaths.length);
 });

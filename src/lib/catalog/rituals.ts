@@ -49,7 +49,15 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "mountain-interval":
     "Frost’s yellow wood, two roads, and the talk that gets you going. New England intervals — work, weather, and choices that look simple from here.",
   gitanjali:
-    "Tagore’s song offerings settle the breath without a sermon. Devotion as quiet attention — morning light on the threshold.",
+    "Phone-clear devotion lyric. Skip the Yeats introduction — open on poem 1.",
+  "a-hundred-and-seventy-chinese-poems":
+    "Gentler China lyrics for a night sit. Open the Winter Night pack — not Battle.",
+  bliss:
+    "Desire floor lands hard; the open ends on the radiant mirror. Keep the dinner-party turn in the full story — that is the knife, not homework to soft-cut. Open on title story Bliss only — never Prelude.",
+  dubliners:
+    "Paralysis at a lighted window — a phone-clear city X-ray. First sit: The Sisters only — not The Dead.",
+  "martin-bircks-youth":
+    "Childhood dream: a green twilight garden, then the flower that turns red. Skip the Stork preface. Ship the 1930 English only.",
   "songs-of-kabir":
     "Kabir, through Tagore’s English: mystic poems that don’t need a church. Straight talk about God, dust, and the body walking between them.",
   "pictures-of-the-floating-world":
@@ -282,6 +290,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-story-of-gosta-berling",
       "thais",
       "demian",
+      "bliss",
+      "a-hundred-and-seventy-chinese-poems",
+      "dubliners",
+      "gitanjali",
+      "martin-bircks-youth",
       "the-pattern",
       "it-was-not-nervousness",
       "between-the-drop-and-the-water",
@@ -349,7 +362,6 @@ export const RITUAL_LANES: RitualLane[] = [
       // agony-column Host sit is backup only — do not invent a second work id.
       "poison-tree",
       "noli-me-tangere",
-      "gitanjali",
       "songs-of-kabir",
       "pictures-of-the-floating-world",
       "silhouettes",
@@ -451,6 +463,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   demian: 2,
   "death-comes-for-the-archbishop": 2,
   "the-getting-of-wisdom": 2,
+  bliss: 2,
+  "a-hundred-and-seventy-chinese-poems": 2,
+  dubliners: 2,
+  gitanjali: 2,
+  "martin-bircks-youth": 2,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

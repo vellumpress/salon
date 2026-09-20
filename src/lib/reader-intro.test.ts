@@ -273,6 +273,44 @@ test("The Getting of Wisdom uses the waking dirty-sheet sit and names the Host f
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
+test("Bliss uses the before-sleep radiant-mirror sit and names the Host frame", () => {
+  const copy = readerIntro(shelfAsWork("bliss"));
+  assert.match(copy, /radiant mirror/);
+  assert.match(copy, /dinner-party turn/);
+  assert.match(copy, /never Prelude/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
+test("A Hundred and Seventy Chinese Poems uses the Winter Night sit and names the Host frame", () => {
+  const copy = readerIntro(shelfAsWork("a-hundred-and-seventy-chinese-poems"));
+  assert.match(copy, /Winter Night/);
+  assert.match(copy, /Battle/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
+test("Dubliners uses the before-sleep Sisters sit and names the Host frame", () => {
+  const copy = readerIntro(shelfAsWork("dubliners"));
+  assert.match(copy, /paralysis/i);
+  assert.match(copy, /The Sisters only/);
+  assert.match(copy, /not The Dead/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
+test("Gitanjali uses the before-sleep poem-1 sit and names the Host frame", () => {
+  const copy = readerIntro(shelfAsWork("gitanjali"));
+  assert.match(copy, /Yeats/);
+  assert.match(copy, /poem 1/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
+test("Martin Birck's Youth uses the before-sleep garden sit and names the Host frame", () => {
+  const copy = readerIntro(shelfAsWork("martin-bircks-youth"));
+  assert.match(copy, /childhood dream/i);
+  assert.match(copy, /Stork preface/);
+  assert.match(copy, /1930 English only/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
 test("Thaïs uses the before-sleep Nile-huts sit and names the Host frame", () => {
   const copy = readerIntro(shelfAsWork("thais"));
   assert.match(copy, /Nile/);

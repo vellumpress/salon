@@ -72,6 +72,9 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   demian: { label: "Germany — little-town Latin school", region: "de" },
   "death-comes-for-the-archbishop": { label: "New Mexico — arid red hills", region: "us" },
   "the-getting-of-wisdom": { label: "Australia — Melbourne orbit", region: "au" },
+  bliss: { label: "London", region: "gb" },
+  "a-hundred-and-seventy-chinese-poems": { label: "China", region: "cn" },
+  "martin-bircks-youth": { label: "Stockholm", region: "se" },
 
   // Named examples
   botchan: { label: "Tokyo", region: "jp" },
@@ -99,7 +102,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "second-april": { label: "United States", region: "us" },
   "renascence-and-other-poems": { label: "United States", region: "us" },
   "mountain-interval": { label: "New England", region: "us" },
-  gitanjali: { label: "India", region: "in" },
+  gitanjali: { label: "Bengal", region: "in" },
   "songs-of-kabir": { label: "India", region: "in" },
   "pictures-of-the-floating-world": { label: "Japan", region: "jp" },
   "the-garden-party-and-other-stories": { label: "New Zealand", region: "nz" },

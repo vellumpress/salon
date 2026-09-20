@@ -4,7 +4,7 @@ import {
   asSittingMinutes,
   nearestSitPreset,
   sitLabel,
-} from "./sitting";
+} from "./sitting.ts";
 
 test("clamps and accepts presets", () => {
   assert.equal(asSittingMinutes(12), 12);
