@@ -140,7 +140,7 @@ const EXPECT = {
   },
   "bliss-tokyo": {
     title: "Katherine Mansfield, Bliss recast",
-    opening: /^Bertha felt it in the elevator/,
+    opening: /^Haruka felt it in the elevator/,
     last: /pear tree look suddenly like stage dressing/,
     place: { label: "Tokyo", region: "jp" },
     credit: /After Mansfield, Bliss, 1918/,
@@ -148,7 +148,7 @@ const EXPECT = {
   },
   "open-window-singapore": {
     title: "Saki, The Open Window recast",
-    opening: /^Framton Nuttel arrived with letters of introduction/,
+    opening: /^Adrian Tan arrived with letters of introduction/,
     last: /afternoon were still a simple thing/,
     place: { label: "Singapore", region: "sg" },
     credit: /After Saki, The Open Window, 1914/,
@@ -164,7 +164,7 @@ const EXPECT = {
   },
   "masque-rio": {
     title: "Edgar Allan Poe, The Masque of the Red Death recast",
-    opening: /^While the fever moved through the favelas/,
+    opening: /^While the fever moved through the favelas and the hospital corridors like a red rumor with teeth, Príncipe Otávio/,
     last: /changed genres without telling the cast/,
     place: { label: "Rio de Janeiro", region: "br" },
     credit: /After Poe, The Masque of the Red Death, 1842/,
@@ -196,7 +196,7 @@ const EXPECT = {
   },
   "the-nose-cape-town": {
     title: "Nikolai Gogol, The Nose recast",
-    opening: /^Collegiate Assessor Kovalev/,
+    opening: /^Senior Assessor van Wyk/,
     last: /exact as a held breath/,
     place: { label: "Cape Town", region: "za" },
     credit: /After Gogol, The Nose, 1836/,
@@ -204,7 +204,7 @@ const EXPECT = {
   },
   "queen-of-spades-paris": {
     title: "Alexander Pushkin, The Queen of Spades recast",
-    opening: /^Hermann was not rich enough for the 8th arrondissement/,
+    opening: /^Armand was not rich enough for the 8th arrondissement/,
     last: /exact as a held breath/,
     place: { label: "Paris", region: "fr" },
     credit: /After Pushkin, The Queen of Spades, 1834/,
@@ -220,15 +220,15 @@ const EXPECT = {
   },
   "madame-bovary-tokyo": {
     title: "Gustave Flaubert, Madame Bovary recast",
-    opening: /^Haruto Mori’s white coat hung by the door of the Asaka condo/,
-    last: /ledgered, unmoved/,
+    opening: /^Emi woke before the light finished deciding what color to be/,
+    last: /collected itself/,
     place: { label: "Tokyo", region: "jp" },
     credit: /After Flaubert, Madame Bovary, 1857/,
-    scene: /clinic coat/i,
+    scene: /asaka/i,
   },
   "dorian-gray-shanghai": {
     title: "Oscar Wilde, The Picture of Dorian Gray recast",
-    opening: /^Basil Hallward painted in a top-floor studio above the Bund/,
+    opening: /^Bai Sheng painted in a top-floor studio above the Bund/,
     last: /keep their own names in the city’s mouth/,
     place: { label: "Shanghai", region: "cn" },
     credit: /After Wilde, The Picture of Dorian Gray, 1890/,
@@ -244,8 +244,8 @@ const EXPECT = {
   },
   "jane-eyre-singapore": {
     title: "Charlotte Brontë, Jane Eyre recast",
-    opening: /^Jane Eyre learned early that charity could feel like poor ventilation/,
-    last: /conscience clear enough to sleep again/,
+    opening: /^Mei-Lin Teo learned early that charity could feel like poor ventilation/,
+    last: /answered to Singapore/,
     place: { label: "Singapore", region: "sg" },
     credit: /After Charlotte Brontë, Jane Eyre, 1847/,
     scene: /katong/i,
@@ -253,58 +253,58 @@ const EXPECT = {
   "pride-prejudice-buenos-aires": {
     title: "Jane Austen, Pride and Prejudice recast",
     opening: /^It is a truth universally acknowledged in Buenos Aires/,
-    last: /errors rather than identities/,
+    last: /bless the dark/,
     place: { label: "Buenos Aires", region: "ar" },
     credit: /After Austen, Pride and Prejudice, 1813/,
     scene: /recoleta/i,
   },
   "dracula-istanbul": {
     title: "Bram Stoker, Dracula recast",
-    opening: /^Jonathan Harker steamed up the Bosphorus toward a yalı/,
+    opening: /^Yunus Akman steamed up the Bosphorus toward a yalı/,
     last: /war she did not choose and would help end/,
     place: { label: "Istanbul", region: "tr" },
     credit: /After Stoker, Dracula, 1897/,
-    scene: /harker|yal[ıi]/i,
+    scene: /yunus|yal[ıi]/i,
   },
   "crime-punishment-cape-town": {
     title: "Fyodor Dostoevsky, Crime and Punishment recast",
-    opening: /^Rodion Romanovich Raskolnikov lived in a garret above Long Street/,
-    last: /That was the whole of it/,
+    opening: /^Ruan Steyn woke in a Long Street garret/,
+    last: /A24 cool/,
     place: { label: "Cape Town", region: "za" },
     credit: /After Dostoevsky, Crime and Punishment, 1866/,
-    scene: /long street/i,
+    scene: /garret/i,
   },
   "age-of-innocence-venice": {
     title: "Edith Wharton, The Age of Innocence recast",
-    opening: /^Newland Archer arrived at La Fenice/,
-    last: /walked home alone through beautiful stone/,
+    opening: /^Niccolò Archi arrived at La Fenice/,
+    last: /Not a different book/,
     place: { label: "Venice", region: "it" },
     credit: /After Wharton, The Age of Innocence, 1920/,
     scene: /fenice/i,
   },
   "tess-lisbon": {
     title: "Thomas Hardy, Tess of the d'Urbervilles recast",
-    opening: /^Tess Durbeyfield walked the Alentejo track before dawn/,
-    last: /last fidelity under Lisbon light/,
+    opening: /^João Duarte heard his spent nobility in a village bar/,
+    last: /Hardy advances/,
     place: { label: "Lisbon", region: "pt" },
     credit: /After Hardy, Tess of the d'Urbervilles, 1891/,
-    scene: /alentejo/i,
+    scene: /name in a bar/i,
   },
   "scarlet-letter-kyoto": {
     title: "Nathaniel Hawthorne, The Scarlet Letter recast",
-    opening: /^Hester Prynne stood on a merchant-quarter scaffold in Kyoto/,
-    last: /continuous scarlet book/,
+    opening: /^Hisako stood in public shame at a Kyoto plaza/,
+    last: /Fidelity held/,
     place: { label: "Kyoto", region: "jp" },
     credit: /After Hawthorne, The Scarlet Letter, 1850/,
     scene: /scaffold/i,
   },
   "wuthering-heights-rio": {
     title: "Emily Brontë, Wuthering Heights recast",
-    opening: /^Mr\. Lockwood, a soft coastal tenant seeking quiet above Rio/,
-    last: /foundling to repair/,
+    opening: /^Sr\. Vargas brought Heitor to the hill estate above Rio/,
+    last: /softening without erase/,
     place: { label: "Rio de Janeiro", region: "br" },
     credit: /After Emily Brontë, Wuthering Heights, 1847/,
-    scene: /hill estate|rio/i,
+    scene: /foundling/i,
   },
 } as const;
 
@@ -591,10 +591,9 @@ test("Madame Bovary Tokyo is one Adapted book, not three timed sits", () => {
   assert.match(packed.note, /Warn the room before you Host it/);
   assert.match(packed.note, /Ginza/);
   assert.doesNotMatch(packed.note, /Host note \(required|Featured/i);
-  assert.equal(packed.scenes.length, 24);
-  assert.match(packed.scenes[0]?.title ?? "", /Clinic Coat/i);
+  assert.equal(packed.scenes.length, 3);
+  assert.match(packed.scenes[0]?.title ?? "", /Asaka/i);
   assert.ok(packed.scenes.some((scene) => /Hotel Glass/i.test(scene.title)));
-  assert.ok(packed.scenes.some((scene) => /Channel Under the Shelf/i.test(scene.title)));
   assert.ok(packed.scenes.some((scene) => /Tokyo Continues/i.test(scene.title)));
 
   const work = shelfWork(id);
@@ -773,15 +772,33 @@ test("novels-glam-10 remakes use Mira city reseats, not raw Gutenberg extracts",
     "utf8",
   );
   assert.match(dorian, /Huangpu/);
+  assert.match(dorian, /Bai Sheng|Du Yan/);
   assert.match(anna, /Via della Spiga/);
+  assert.match(anna, /Anna Valenti/);
   assert.match(jane, /Katong/);
+  assert.match(jane, /Mei-Lin Teo/);
   assert.match(pride, /Recoleta|Alvear/);
+  assert.match(pride, /Elena Benítez|Sra\. Benítez/);
   assert.match(dracula, /Bosphorus|yalı/);
+  assert.match(dracula, /Yunus Akman/);
   assert.match(crime, /Long Street|Table Mountain/);
+  assert.match(crime, /Ruan Steyn/);
   assert.match(age, /Fenice/);
+  assert.match(age, /Niccolò Archi/);
   assert.match(tess, /Alentejo|Tagus/);
+  assert.match(tess, /Teresa Duarte|João Duarte/);
   assert.match(scarlet, /Kyoto/);
+  assert.match(scarlet, /Hisako/);
   assert.match(wuthering, /Rio/);
+  assert.match(wuthering, /Heitor|Catarina/);
+  assert.doesNotMatch(wuthering, /Mr\. Lockwood, a soft coastal tenant/);
+  assert.doesNotMatch(dorian, /Basil Hallward/);
+  assert.doesNotMatch(jane, /Jane Eyre learned early/);
+  assert.doesNotMatch(dracula, /Jonathan Harker steamed/);
+  assert.doesNotMatch(crime, /Rodion Romanovich Raskolnikov/);
+  assert.doesNotMatch(age, /Newland Archer arrived/);
+  assert.doesNotMatch(tess, /Tess Durbeyfield walked/);
+  assert.doesNotMatch(scarlet, /Hester Prynne stood/);
   assert.doesNotMatch(dorian, /The artist is the creator of beautiful things/);
   assert.doesNotMatch(
     pride,
@@ -800,10 +817,15 @@ test("glam-10 remakes use Mira city reseats, not raw Gutenberg extracts", () => 
     "utf8",
   );
   assert.match(bliss, /Omotesando/);
+  assert.match(bliss, /Haruka/);
   assert.match(framton, /Bukit Timah/);
+  assert.match(framton, /Adrian Tan/);
   assert.match(louise, /Recoleta/);
+  assert.match(louise, /Luisa|Bernardo/);
   assert.doesNotMatch(bliss, /Although Bertha Young was thirty/);
+  assert.doesNotMatch(bliss, /Bertha felt it in the elevator/);
   assert.doesNotMatch(framton, /My aunt will be down presently, Mr. Nuttel/);
+  assert.doesNotMatch(framton, /Framton Nuttel arrived/);
   assert.doesNotMatch(louise, /Knowing that Mrs. Mallard was afflicted/);
 });
 

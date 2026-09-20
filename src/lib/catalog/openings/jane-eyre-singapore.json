@@ -3,8 +3,8 @@
   "title": "Charlotte Brontë, Jane Eyre recast",
   "author": "Salon",
   "year": "2026",
-  "note": "This whole-book remake includes confinement, fire, and a locked-away wife. Warn the room before you Host it; offer a midpoint pause if needed.",
-  "minutes": 37,
+  "note": "Confinement, fire, and a locked-away wife. Warn the room before you Host it.",
+  "minutes": 30,
   "cover": "",
   "coverAlt": "",
   "scenes": [
@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Gates in Katong",
       "place": "Singapore",
-      "reentry": "Jane Eyre learned early that charity could feel like poor ventilation.",
+      "reentry": "Mei-Lin Teo learned early that charity could feel like poor ventilation.",
       "prompt": "A word from this stretch."
     },
     {
@@ -24,23 +24,23 @@
     },
     {
       "id": "s2",
-      "title": "Adele and Mrs Fairfax",
+      "title": "Adeline and Mrs Koh",
       "place": "Singapore",
-      "reentry": "Jane arrived by road past rain trees and military fences to a colonial black-and-white house that photographed as heritage and lived as echo.",
+      "reentry": "Mei-Lin arrived by road past rain trees and military fences to a colonial black-and-white house that photographed as heritage and lived as echo.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
-      "title": "Rochester",
+      "title": "Koh",
       "place": "Singapore",
-      "reentry": "Edward Fairfax Rochester returned from travels with a dog, a mood, and eyes that inventoried Jane without purchasing her.",
+      "reentry": "Edward Koh returned from travels with a dog, a mood, and eyes that inventoried Mei-Lin without purchasing her.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
       "title": "The garden",
       "place": "Singapore",
-      "reentry": "In the garden after rain, among frangipani and wet stone, Rochester led Jane through a maze of feints about sending her to Ireland.",
+      "reentry": "In the garden after rain, among frangipani and wet stone, Koh led Mei-Lin through a maze of feints about sending her to Ireland.",
       "prompt": "A word from this stretch."
     },
     {
@@ -54,56 +54,56 @@
       "id": "s6",
       "title": "Moor as coastline",
       "place": "Singapore",
-      "reentry": "Jane’s flight emptied her purse and nearly emptied her life.",
+      "reentry": "Mei-Lin’s flight emptied her purse and nearly emptied her life.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s7",
       "title": "The proposal of ice",
       "place": "Singapore",
-      "reentry": "St John decided Jane should marry him and go to missionary work in a harder climate of the soul.",
+      "reentry": "Sheng decided Mei-Lin should marry him and go to missionary work in a harder climate of the soul.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s8",
       "title": "Fire’s aftermath",
       "place": "Singapore",
-      "reentry": "Thornfield-as-bungalow was ruin: Bertha had set fire, climbed the roof, fallen; Rochester had been blinded and maimed saving servants.",
+      "reentry": "The Ridge-as-bungalow was ruin: Aminah had set fire, climbed the roof, fallen; Koh had been blinded and maimed saving servants.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s9",
       "title": "Red room and departure, expanded",
       "place": "Singapore",
-      "reentry": "Mrs Reed’s house smelled of polish and withheld sugar.",
+      "reentry": "Mrs Cheng’s house smelled of polish and withheld sugar.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s10",
-      "title": "Evenings with Rochester",
+      "title": "Evenings with Koh",
       "place": "Singapore",
-      "reentry": "Rochester tested Jane with abrupt questions, sardonic stories, and silences meant to make prettier women fill air.",
+      "reentry": "Koh tested Mei-Lin with abrupt questions, sardonic stories, and silences meant to make prettier women fill air.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s11",
       "title": "Gypsy charade and the necklace of doubt",
       "place": "Singapore",
-      "reentry": "Rochester disguised himself as a fortune-teller to sound Jane’s heart; she nearly laughed, then nearly cried, then told the disguised voice enough truth to make the game unfair.",
+      "reentry": "Koh disguised himself as a fortune-teller to sound Mei-Lin’s heart; she nearly laughed, then nearly cried, then told the disguised voice enough truth to make the game unfair.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s12",
       "title": "Attic wife",
       "place": "Singapore",
-      "reentry": "Bertha Mason Rochester was not a metaphor Jane could aestheticize.",
+      "reentry": "Maria Koh was not a metaphor Mei-Lin could aestheticize.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s13",
-      "title": "Rivers household",
+      "title": "Yeo household",
       "place": "Singapore",
-      "reentry": "St John, Diana, and Mary found Jane emptied.",
+      "reentry": "Sheng, Diyan, and Mariam found Mei-Lin emptied.",
       "prompt": "A word from this stretch."
     },
     {
@@ -112,18 +112,25 @@
       "place": "Singapore",
       "reentry": "The smaller house sat among damp green and cicadas.",
       "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s15",
+      "title": "Continuous return (localized)",
+      "place": "Singapore",
+      "reentry": "Jia woke before dawn in the Nathan house near the East Coast and counted what she still owned: a plain dress, a mind that would not bend into bigamy, and a pulse that answered when she thought of Edward Koh’s ruined hand.",
+      "prompt": "A word from this stretch."
     }
   ],
   "breaths": [
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Jane Eyre learned early that charity could feel like poor ventilation."
+      "text": "Mei-Lin Teo learned early that charity could feel like poor ventilation."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "In a Katong house of half-closed shutters, her aunt Reed kept cousins who performed belonging while Jane performed stillness."
+      "text": "In a Katong house of half-closed shutters, her aunt Cheng kept cousins who performed belonging while Mei-Lin performed stillness."
     },
     {
       "id": "s0-2",
@@ -133,17 +140,17 @@
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "When Jane struck back at young John’s cruelty, she was locked in the red room—a storeroom of unused furniture and used fear—until fever and a kind servant loosened the punishment."
+      "text": "When Mei-Lin struck back at young Jun’s cruelty, she was locked in the red room—a storeroom of unused furniture and used fear—until fever and a kind servant loosened the punishment."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "Mrs Reed arranged removal as virtue."
+      "text": "Mrs Cheng arranged removal as virtue."
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "Jane was sent to a mission school up-island where God was loved more efficiently than children."
+      "text": "Mei-Lin was sent to a mission school up-island where God was loved more efficiently than children."
     },
     {
       "id": "s1-0",
@@ -158,12 +165,12 @@
     {
       "id": "s1-2",
       "sceneId": "s1",
-      "text": "Helen Burns met Jane’s hunger for justice with a patience Jane could admire without yet copying."
+      "text": "Hui En met Mei-Lin’s hunger for justice with a patience Mei-Lin could admire without yet copying."
     },
     {
       "id": "s1-3",
       "sceneId": "s1",
-      "text": "When Helen died mid-season of illness the climate refused to soften, Jane held a hand and learned comfort’s insufficiency."
+      "text": "When Hui En died mid-season of illness the climate refused to soften, Mei-Lin held a hand and learned comfort’s insufficiency."
     },
     {
       "id": "s1-4",
@@ -183,17 +190,17 @@
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "Jane arrived by road past rain trees and military fences to a colonial black-and-white house that photographed as heritage and lived as echo."
+      "text": "Mei-Lin arrived by road past rain trees and military fences to a colonial black-and-white house that photographed as heritage and lived as echo."
     },
     {
       "id": "s2-1",
       "sceneId": "s2",
-      "text": "Mrs Fairfax received her with tea and careful kindness."
+      "text": "Mrs Koh received her with tea and careful kindness."
     },
     {
       "id": "s2-2",
       "sceneId": "s2",
-      "text": "Adele Varens—French-sprinkled, theatrical, affectionate—became Jane’s charge."
+      "text": "Adeline—French-sprinkled, theatrical, affectionate—became Mei-Lin’s charge."
     },
     {
       "id": "s2-3",
@@ -203,17 +210,17 @@
     {
       "id": "s2-4",
       "sceneId": "s2",
-      "text": "At night Jane heard laughter from the upper floor that did not belong to servants’ ordinary hours."
+      "text": "At night Mei-Lin heard laughter from the upper floor that did not belong to servants’ ordinary hours."
     },
     {
       "id": "s2-5",
       "sceneId": "s2",
-      "text": "Mrs Fairfax blamed Grace Poole and closed the subject like a shutter."
+      "text": "Mrs Koh blamed Poh Lian and closed the subject like a shutter."
     },
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "Edward Fairfax Rochester returned from travels with a dog, a mood, and eyes that inventoried Jane without purchasing her."
+      "text": "Edward Koh returned from travels with a dog, a mood, and eyes that inventoried Mei-Lin without purchasing her."
     },
     {
       "id": "s3-1",
@@ -223,7 +230,7 @@
     {
       "id": "s3-2",
       "sceneId": "s3",
-      "text": "Rochester: You are not a pattern-girl."
+      "text": "Koh: You are not a pattern-girl."
     },
     {
       "id": "s3-3",
@@ -233,37 +240,37 @@
     {
       "id": "s3-4",
       "sceneId": "s3",
-      "text": "Jane: I am paid to teach, not to decorate your evenings."
+      "text": "Mei-Lin: I am paid to teach, not to decorate your evenings."
     },
     {
       "id": "s3-5",
       "sceneId": "s3",
-      "text": "Rochester: Then teach me something that is not French verbs."
+      "text": "Koh: Then teach me something that is not French verbs."
     },
     {
       "id": "s3-6",
       "sceneId": "s3",
-      "text": "They talked by lamplight after Adele slept: of Europe, of mistakes, of the face as a map of decisions."
+      "text": "They talked by lamplight after Adeline slept: of Europe, of mistakes, of the face as a map of decisions."
     },
     {
       "id": "s3-7",
       "sceneId": "s3",
-      "text": "Jane refused flattery and thus became necessary."
+      "text": "Mei-Lin refused flattery and thus became necessary."
     },
     {
       "id": "s3-8",
       "sceneId": "s3",
-      "text": "Rochester’s guests—Ingram beauty, society noise—arrived for house-party theater."
+      "text": "Koh’s guests—society beauty, society noise—arrived for house-party theater."
     },
     {
       "id": "s3-9",
       "sceneId": "s3",
-      "text": "Jane watched Blanche Ingram aim at Rochester’s fortune and felt jealousy she despised and could not dismiss."
+      "text": "Mei-Lin watched Lianne Goh aim at Koh’s fortune and felt jealousy she despised and could not dismiss."
     },
     {
       "id": "s3-10",
       "sceneId": "s3",
-      "text": "A fire at Rochester’s door one night—curtains lit, smoke like a warning—brought Jane with water."
+      "text": "A fire at Koh’s door one night—curtains lit, smoke like a warning—brought Mei-Lin with water."
     },
     {
       "id": "s3-11",
@@ -273,17 +280,17 @@
     {
       "id": "s3-12",
       "sceneId": "s3",
-      "text": "Grace Poole remained the official story."
+      "text": "Poh Lian remained the official story."
     },
     {
       "id": "s3-13",
       "sceneId": "s3",
-      "text": "Jane did not fully believe official stories."
+      "text": "Mei-Lin did not fully believe official stories."
     },
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "In the garden after rain, among frangipani and wet stone, Rochester led Jane through a maze of feints about sending her to Ireland."
+      "text": "In the garden after rain, among frangipani and wet stone, Koh led Mei-Lin through a maze of feints about sending her to Ireland."
     },
     {
       "id": "s4-1",
@@ -298,7 +305,7 @@
     {
       "id": "s4-3",
       "sceneId": "s4",
-      "text": "Rochester: Jane, I offer you marriage."
+      "text": "Koh: Mei-Lin, I offer you marriage."
     },
     {
       "id": "s4-4",
@@ -308,7 +315,7 @@
     {
       "id": "s4-5",
       "sceneId": "s4",
-      "text": "Jane: Then ask as if I had a soul you cannot buy."
+      "text": "Mei-Lin: Then ask as if I had a soul you cannot buy."
     },
     {
       "id": "s4-6",
@@ -333,27 +340,27 @@
     {
       "id": "s5-1",
       "sceneId": "s5",
-      "text": "Richard Mason—arrived from abroad—named an impediment: Rochester already had a wife."
+      "text": "Rizal Manan—arrived from abroad—named an impediment: Koh already had a wife."
     },
     {
       "id": "s5-2",
       "sceneId": "s5",
-      "text": "Bertha Antoinetta Mason Rochester lived under the bungalow’s roof, in the attic rooms Grace Poole tended."
+      "text": "Maria Koh lived under the bungalow’s roof, in the attic rooms Poh Lian tended."
     },
     {
       "id": "s5-3",
       "sceneId": "s5",
-      "text": "Jane saw Bertha: vigor locked into frenzy, marriage turned into architecture of control."
+      "text": "Mei-Lin saw Aminah: vigor locked into frenzy, marriage turned into architecture of control."
     },
     {
       "id": "s5-4",
       "sceneId": "s5",
-      "text": "Rochester argued context—family deceit, Caribbean entanglement, safety, despair."
+      "text": "Koh argued context—family deceit, Caribbean entanglement, safety, despair."
     },
     {
       "id": "s5-5",
       "sceneId": "s5",
-      "text": "Jane heard pain and refused to become its solution by bigamy."
+      "text": "Mei-Lin heard pain and refused to become its solution by bigamy."
     },
     {
       "id": "s5-6",
@@ -363,7 +370,7 @@
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "Jane’s flight emptied her purse and nearly emptied her life."
+      "text": "Mei-Lin’s flight emptied her purse and nearly emptied her life."
     },
     {
       "id": "s6-1",
@@ -373,22 +380,22 @@
     {
       "id": "s6-2",
       "sceneId": "s6",
-      "text": "Brothers and sisters took her in: St John Rivers, Diana, Mary."
+      "text": "Brothers and sisters took her in: Sheng Yeo, Diyan, Mariam."
     },
     {
       "id": "s6-3",
       "sceneId": "s6",
-      "text": "They named her temporarily; she gave “Jane Elliott” until trust allowed Eyre back."
+      "text": "They named her temporarily; she gave “Mei-Lin Teo” until trust allowed her true name back."
     },
     {
       "id": "s6-4",
       "sceneId": "s6",
-      "text": "St John Rivers was handsome in a vertical way—duty without warmth’s waste heat."
+      "text": "Sheng Yeo was handsome in a vertical way—duty without warmth’s waste heat."
     },
     {
       "id": "s6-5",
       "sceneId": "s6",
-      "text": "He found Jane work at a village school."
+      "text": "He found Mei-Lin work at a village school."
     },
     {
       "id": "s6-6",
@@ -398,17 +405,17 @@
     {
       "id": "s6-7",
       "sceneId": "s6",
-      "text": "Diana and Mary offered sisterhood that healed more than sermons."
+      "text": "Diyan and Mariam offered sisterhood that healed more than sermons."
     },
     {
       "id": "s6-8",
       "sceneId": "s6",
-      "text": "An uncle’s inheritance plot surfaced through coincidence and St John’s investigative steel: Jane Eyre was cousin to the Rivers siblings and heir to a sum that could split four ways into dignity."
+      "text": "An uncle’s inheritance plot surfaced through coincidence and Sheng’s investigative steel: Mei-Lin Teo was cousin to the Yeo siblings and heir to a sum that could split four ways into dignity."
     },
     {
       "id": "s6-9",
       "sceneId": "s6",
-      "text": "Jane split it."
+      "text": "Mei-Lin split it."
     },
     {
       "id": "s6-10",
@@ -418,7 +425,7 @@
     {
       "id": "s7-0",
       "sceneId": "s7",
-      "text": "St John decided Jane should marry him and go to missionary work in a harder climate of the soul."
+      "text": "Sheng decided Mei-Lin should marry him and go to missionary work in a harder climate of the soul."
     },
     {
       "id": "s7-1",
@@ -428,7 +435,7 @@
     {
       "id": "s7-2",
       "sceneId": "s7",
-      "text": "St John: I need a helpmeet, not a lover."
+      "text": "Sheng: I need a helpmeet, not a lover."
     },
     {
       "id": "s7-3",
@@ -438,7 +445,7 @@
     {
       "id": "s7-4",
       "sceneId": "s7",
-      "text": "Jane: I will not marry without love to warm the labor."
+      "text": "Mei-Lin: I will not marry without love to warm the labor."
     },
     {
       "id": "s7-5",
@@ -448,17 +455,17 @@
     {
       "id": "s7-6",
       "sceneId": "s7",
-      "text": "Jane refused, body shaking, and then heard—across impossible distance—Rochester’s voice calling her name on the wind."
+      "text": "Mei-Lin refused, body shaking, and then heard—across impossible distance—Koh’s voice calling her name on the wind."
     },
     {
       "id": "s7-7",
       "sceneId": "s7",
-      "text": "She left St John unfinished and traveled back toward the bungalow’s coordinates."
+      "text": "She left Sheng unfinished and traveled back toward the bungalow’s coordinates."
     },
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "Thornfield-as-bungalow was ruin: Bertha had set fire, climbed the roof, fallen; Rochester had been blinded and maimed saving servants."
+      "text": "The Ridge-as-bungalow was ruin: Aminah had set fire, climbed the roof, fallen; Koh had been blinded and maimed saving servants."
     },
     {
       "id": "s8-1",
@@ -468,12 +475,12 @@
     {
       "id": "s8-2",
       "sceneId": "s8",
-      "text": "Jane found him at a smaller downslope house, dependent, proud, raw."
+      "text": "Mei-Lin found him at a smaller downslope house, dependent, proud, raw."
     },
     {
       "id": "s8-3",
       "sceneId": "s8",
-      "text": "Jane: I am Jane Eyre."
+      "text": "Mei-Lin: I am Mei-Lin Teo."
     },
     {
       "id": "s8-4",
@@ -483,12 +490,12 @@
     {
       "id": "s8-5",
       "sceneId": "s8",
-      "text": "Rochester: I am no longer the man who could offer gardens."
+      "text": "Koh: I am no longer the man who could offer gardens."
     },
     {
       "id": "s8-6",
       "sceneId": "s8",
-      "text": "Jane: Good."
+      "text": "Mei-Lin: Good."
     },
     {
       "id": "s8-7",
@@ -508,17 +515,17 @@
     {
       "id": "s8-10",
       "sceneId": "s8",
-      "text": "Diana and Mary approved by letter; St John wrote from his mission of a life without her and did not break."
+      "text": "Diyan and Mariam approved by letter; Sheng wrote from his mission of a life without her and did not break."
     },
     {
       "id": "s8-11",
       "sceneId": "s8",
-      "text": "Adele went to school."
+      "text": "Adeline went to school."
     },
     {
       "id": "s8-12",
       "sceneId": "s8",
-      "text": "Jane read to Rochester until his remaining sight of the world became her voice and his hand."
+      "text": "Mei-Lin read to Koh until his remaining sight of the world became her voice and his hand."
     },
     {
       "id": "s8-13",
@@ -528,22 +535,22 @@
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "Mrs Reed’s house smelled of polish and withheld sugar."
+      "text": "Mrs Cheng’s house smelled of polish and withheld sugar."
     },
     {
       "id": "s9-1",
       "sceneId": "s9",
-      "text": "John Reed threw books; Jane threw truth back; the red room’s lock taught her that adult power could dress itself as correction."
+      "text": "Jun Ong threw books; Mei-Lin threw truth back; the red room’s lock taught her that adult power could dress itself as correction."
     },
     {
       "id": "s9-2",
       "sceneId": "s9",
-      "text": "A doctor’s visit, a servant’s whisper, and Jane’s own stubborn speech before the household made Mrs Reed eager to export the problem."
+      "text": "A doctor’s visit, a servant’s whisper, and Mei-Lin’s own stubborn speech before the household made Mrs Cheng eager to export the problem."
     },
     {
       "id": "s9-3",
       "sceneId": "s9",
-      "text": "The mission school’s coach took Jane past mangroves and checkpoints."
+      "text": "The mission school’s coach took Mei-Lin past mangroves and checkpoints."
     },
     {
       "id": "s9-4",
@@ -553,47 +560,47 @@
     {
       "id": "s9-5",
       "sceneId": "s9",
-      "text": "At school, Miss Temple’s rare kindness was bread."
+      "text": "At school, Miss Tan’s rare kindness was bread."
     },
     {
       "id": "s9-6",
       "sceneId": "s9",
-      "text": "Mr Brocklehurst’s hypocrisy was spectacle—Jane made to stand on a stool as a liar while her stomach empty of breakfast."
+      "text": "Mr Buckley’s hypocrisy was spectacle—Mei-Lin made to stand on a stool as a liar while her stomach empty of breakfast."
     },
     {
       "id": "s9-7",
       "sceneId": "s9",
-      "text": "Helen Burns whispered that enemies are best endured."
+      "text": "Hui En whispered that enemies are best endured."
     },
     {
       "id": "s9-8",
       "sceneId": "s9",
-      "text": "Jane preferred justice and learned, slowly, to survive without receiving it daily."
+      "text": "Mei-Lin preferred justice and learned, slowly, to survive without receiving it daily."
     },
     {
       "id": "s9-9",
       "sceneId": "s9",
-      "text": "Helen’s death in Jane’s arms sealed a vow: she would not become cruel to stay alive, nor soft enough to be erased."
+      "text": "Hui En’s death in Mei-Lin’s arms sealed a vow: she would not become cruel to stay alive, nor soft enough to be erased."
     },
     {
       "id": "s9-10",
       "sceneId": "s9",
-      "text": "Teaching younger girls gave Jane a wage of self-respect."
+      "text": "Teaching younger girls gave Mei-Lin a wage of self-respect."
     },
     {
       "id": "s9-11",
       "sceneId": "s9",
-      "text": "When the governess advertisement appeared—Mr Rochester’s ward, Adele—Jane packed little and left with a spine made of refusals that had not destroyed her."
+      "text": "When the governess advertisement appeared—Mr Koh’s ward, Adeline—Mei-Lin packed little and left with a spine made of refusals that had not destroyed her."
     },
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "Rochester tested Jane with abrupt questions, sardonic stories, and silences meant to make prettier women fill air."
+      "text": "Koh tested Mei-Lin with abrupt questions, sardonic stories, and silences meant to make prettier women fill air."
     },
     {
       "id": "s10-1",
       "sceneId": "s10",
-      "text": "Jane filled nothing."
+      "text": "Mei-Lin filled nothing."
     },
     {
       "id": "s10-2",
@@ -608,17 +615,17 @@
     {
       "id": "s10-4",
       "sceneId": "s10",
-      "text": "During the house party, Blanche Ingram sang and aimed."
+      "text": "During the house party, Lianne Goh sang and aimed."
     },
     {
       "id": "s10-5",
       "sceneId": "s10",
-      "text": "Rochester played along until the game bored him, then sought Jane in quieter rooms."
+      "text": "Koh played along until the game bored him, then sought Mei-Lin in quieter rooms."
     },
     {
       "id": "s10-6",
       "sceneId": "s10",
-      "text": "Rochester: They want my estate."
+      "text": "Koh: They want my estate."
     },
     {
       "id": "s10-7",
@@ -628,12 +635,12 @@
     {
       "id": "s10-8",
       "sceneId": "s10",
-      "text": "Jane: A life that does not require me to shrink."
+      "text": "Mei-Lin: A life that does not require me to shrink."
     },
     {
       "id": "s10-9",
       "sceneId": "s10",
-      "text": "Rochester: Dangerous answer."
+      "text": "Koh: Dangerous answer."
     },
     {
       "id": "s10-10",
@@ -643,7 +650,7 @@
     {
       "id": "s10-11",
       "sceneId": "s10",
-      "text": "The fire at his bedside—Bertha’s first clear intrusion into Jane’s plot—ended with Jane’s bucket and Rochester’s bare thanks."
+      "text": "The fire at his bedside—Aminah’s first clear intrusion into Mei-Lin’s plot—ended with Mei-Lin’s bucket and Koh’s bare thanks."
     },
     {
       "id": "s10-12",
@@ -658,22 +665,22 @@
     {
       "id": "s10-14",
       "sceneId": "s10",
-      "text": "A visitor, Richard Mason, arrived and left screaming from the attic with a bitten arm."
+      "text": "A visitor, Rizal Manan, arrived and left screaming from the attic with a bitten arm."
     },
     {
       "id": "s10-15",
       "sceneId": "s10",
-      "text": "Rochester’s explanations strained."
+      "text": "Koh’s explanations strained."
     },
     {
       "id": "s10-16",
       "sceneId": "s10",
-      "text": "Jane bound wounds and felt the house’s secret press against her ribs like humidity before a storm."
+      "text": "Mei-Lin bound wounds and felt the house’s secret press against her ribs like humidity before a storm."
     },
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "Rochester disguised himself as a fortune-teller to sound Jane’s heart; she nearly laughed, then nearly cried, then told the disguised voice enough truth to make the game unfair."
+      "text": "Koh disguised himself as a fortune-teller to sound Mei-Lin’s heart; she nearly laughed, then nearly cried, then told the disguised voice enough truth to make the game unfair."
     },
     {
       "id": "s11-1",
@@ -693,12 +700,12 @@
     {
       "id": "s11-4",
       "sceneId": "s11",
-      "text": "Jane’s speech—about the equality of spirits—rose as Brontë wrote it in other weather: she would not be toyed out of her living wage of dignity."
+      "text": "Mei-Lin’s speech—about the equality of spirits—rose as Brontë wrote it in other weather: she would not be toyed out of her living wage of dignity."
     },
     {
       "id": "s11-5",
       "sceneId": "s11",
-      "text": "Rochester’s answering love was rough, real, incomplete in disclosure."
+      "text": "Koh’s answering love was rough, real, incomplete in disclosure."
     },
     {
       "id": "s11-6",
@@ -708,27 +715,27 @@
     {
       "id": "s12-0",
       "sceneId": "s12",
-      "text": "Bertha Mason Rochester was not a metaphor Jane could aestheticize."
+      "text": "Maria Koh was not a metaphor Mei-Lin could aestheticize."
     },
     {
       "id": "s12-1",
       "sceneId": "s12",
-      "text": "She was a woman confined, dangerous, wronged by a marriage market and by Rochester’s choices inside that market."
+      "text": "She was a woman confined, dangerous, wronged by a marriage market and by Koh’s choices inside that market."
     },
     {
       "id": "s12-2",
       "sceneId": "s12",
-      "text": "Jane’s refusal to proceed was not prudery; it was refusal to build her happiness on another woman’s erased name."
+      "text": "Mei-Lin’s refusal to proceed was not prudery; it was refusal to build her happiness on another woman’s erased name."
     },
     {
       "id": "s12-3",
       "sceneId": "s12",
-      "text": "Rochester offered mistresshood in a southern villa."
+      "text": "Koh offered mistresshood in a southern villa."
     },
     {
       "id": "s12-4",
       "sceneId": "s12",
-      "text": "Jane refused."
+      "text": "Mei-Lin refused."
     },
     {
       "id": "s12-5",
@@ -743,7 +750,7 @@
     {
       "id": "s13-0",
       "sceneId": "s13",
-      "text": "St John, Diana, and Mary found Jane emptied."
+      "text": "Sheng, Diyan, and Mariam found Mei-Lin emptied."
     },
     {
       "id": "s13-1",
@@ -753,27 +760,27 @@
     {
       "id": "s13-2",
       "sceneId": "s13",
-      "text": "Diana’s warmth and Mary’s quiet competence retaught family."
+      "text": "Diyan’s warmth and Mariam’s quiet competence retaught family."
     },
     {
       "id": "s13-3",
       "sceneId": "s13",
-      "text": "St John’s evangelical steel offered purpose as command."
+      "text": "Sheng’s evangelical steel offered purpose as command."
     },
     {
       "id": "s13-4",
       "sceneId": "s13",
-      "text": "The village school smelled of chalk and wet shoes; Jane’s students learned English letters while she learned how grief can sit upright."
+      "text": "The village school smelled of chalk and wet shoes; Mei-Lin’s students learned English letters while she learned how grief can sit upright."
     },
     {
       "id": "s13-5",
       "sceneId": "s13",
-      "text": "The inheritance—Uncle John Eyre’s wealth—arrived like a plot device with moral instructions attached: Jane divided it so cousins became independent."
+      "text": "The inheritance—Uncle Jun Teo’s wealth—arrived like a plot device with moral instructions attached: Mei-Lin divided it so cousins became independent."
     },
     {
       "id": "s13-6",
       "sceneId": "s13",
-      "text": "St John approved the division and then sought to annex Jane herself as missionary instrument."
+      "text": "Sheng approved the division and then sought to annex Mei-Lin herself as missionary instrument."
     },
     {
       "id": "s13-7",
@@ -783,12 +790,12 @@
     {
       "id": "s13-8",
       "sceneId": "s13",
-      "text": "Jane’s body rebelled even when her conscience admired his labor."
+      "text": "Mei-Lin’s body rebelled even when her conscience admired his labor."
     },
     {
       "id": "s13-9",
       "sceneId": "s13",
-      "text": "The windborne call—Rochester’s voice—ended the ice negotiation."
+      "text": "The windborne call—Koh’s voice—ended the ice negotiation."
     },
     {
       "id": "s13-10",
@@ -803,7 +810,7 @@
     {
       "id": "s14-1",
       "sceneId": "s14",
-      "text": "Rochester, blind, reached for a servant and found Jane’s fingers."
+      "text": "Koh, blind, reached for a servant and found Mei-Lin’s fingers."
     },
     {
       "id": "s14-2",
@@ -813,22 +820,22 @@
     {
       "id": "s14-3",
       "sceneId": "s14",
-      "text": "They spoke of Bertha’s end without triumph."
+      "text": "They spoke of Aminah’s end without triumph."
     },
     {
       "id": "s14-4",
       "sceneId": "s14",
-      "text": "They spoke of St John without jealousy’s full poison."
+      "text": "They spoke of Sheng without jealousy’s full poison."
     },
     {
       "id": "s14-5",
       "sceneId": "s14",
-      "text": "Jane promised to be eyes and equal."
+      "text": "Mei-Lin promised to be eyes and equal."
     },
     {
       "id": "s14-6",
       "sceneId": "s14",
-      "text": "Rochester promised no more attics."
+      "text": "Koh promised no more attics."
     },
     {
       "id": "s14-7",
@@ -838,22 +845,22 @@
     {
       "id": "s14-8",
       "sceneId": "s14",
-      "text": "Years on, sight partially returned as if narrative allowed a mercy; Adele grew; St John wrote from distant work until his letters thinned into legend."
+      "text": "Years on, sight partially returned as if narrative allowed a mercy; Adeline grew; Sheng wrote from distant work until his letters thinned into legend."
     },
     {
       "id": "s14-9",
       "sceneId": "s14",
-      "text": "Jane’s voice, telling this, remains the spine: orphan to governess to almost-wife to fugitive to heir to wife in truth—Singapore’s glamorous humidity only the air the spine breathes."
+      "text": "Mei-Lin’s voice, telling this, remains the spine: orphan to governess to almost-wife to fugitive to heir to wife in truth—Singapore’s glamorous humidity only the air the spine breathes."
     },
     {
       "id": "s14-10",
       "sceneId": "s14",
-      "text": "Continuous thread — Jane’s interior"
+      "text": "Continuous thread — Mei-Lin’s interior"
     },
     {
       "id": "s14-11",
       "sceneId": "s14",
-      "text": "Through every reseated room Jane kept the same instrument: a conscience that would not be rented."
+      "text": "Through every reseated room Mei-Lin kept the same instrument: a conscience that would not be rented."
     },
     {
       "id": "s14-12",
@@ -878,7 +885,7 @@
     {
       "id": "s14-16",
       "sceneId": "s14",
-      "text": "At the Rivers’ table she learned chosen kin."
+      "text": "At the Yeos’ table she learned chosen kin."
     },
     {
       "id": "s14-17",
@@ -898,17 +905,17 @@
     {
       "id": "s14-20",
       "sceneId": "s14",
-      "text": "She remained Jane Eyre; he remained Rochester; St John remained St John; Bertha remained Bertha; Adele remained Adele; Grace Poole remained the keeper of a door that should never have been the solution to a marriage."
+      "text": "She remained Mei-Lin Teo; he remained Koh; Sheng remained Sheng; Aminah remained Aminah; Adeline remained Adeline; Poh Lian remained the keeper of a door that should never have been the solution to a marriage."
     },
     {
       "id": "s14-21",
       "sceneId": "s14",
-      "text": "The fire’s night—Bertha’s last agency—was horror and release tangled."
+      "text": "The fire’s night—Aminah’s last agency—was horror and release tangled."
     },
     {
       "id": "s14-22",
       "sceneId": "s14",
-      "text": "Rochester’s blindness forced the equality Jane had demanded in speech to become daily practice: he could not rule by glance; she would not serve by erasure."
+      "text": "Koh’s blindness forced the equality Mei-Lin had demanded in speech to become daily practice: he could not rule by glance; she would not serve by erasure."
     },
     {
       "id": "s14-23",
@@ -928,12 +935,12 @@
     {
       "id": "s14-26",
       "sceneId": "s14",
-      "text": "Mrs Fairfax wrote once, carefully, about insurance and memory."
+      "text": "Mrs Koh wrote once, carefully, about insurance and memory."
     },
     {
       "id": "s14-27",
       "sceneId": "s14",
-      "text": "Jane answered with thanks and did not reopen the attic in language."
+      "text": "Mei-Lin answered with thanks and did not reopen the attic in language."
     },
     {
       "id": "s14-28",
@@ -943,27 +950,27 @@
     {
       "id": "s14-29",
       "sceneId": "s14",
-      "text": "Diana and Mary visited the downslope house with books and laughter."
+      "text": "Diyan and Mariam visited the downslope house with books and laughter."
     },
     {
       "id": "s14-30",
       "sceneId": "s14",
-      "text": "St John’s final letters spoke of India-analogue labor and a death embraced as completion; Jane mourned the man without regretting the refusal."
+      "text": "Sheng’s final letters spoke of India-analogue labor and a death embraced as completion; Mei-Lin mourned the man without regretting the refusal."
     },
     {
       "id": "s14-31",
       "sceneId": "s14",
-      "text": "Brocklehurst’s kind of religion had taught her to fear piety without bread; St John’s kind taught her to fear vocation without love."
+      "text": "Buckley’s kind of religion had taught her to fear piety without bread; Sheng’s kind taught her to fear vocation without love."
     },
     {
       "id": "s14-32",
       "sceneId": "s14",
-      "text": "Rochester, imperfect, offered love that had been educated by loss."
+      "text": "Koh, imperfect, offered love that had been educated by loss."
     },
     {
       "id": "s14-33",
       "sceneId": "s14",
-      "text": "Thus the novel’s order holds in 2026 clear English: orphan, school, governess, Rochester, attic wife, flight, Rivers, inheritance, refusal of loveless marriage, return, fire’s consequence, marriage of equals."
+      "text": "Thus the novel’s order holds in 2026 clear English: orphan, school, governess, Koh, attic wife, flight, Yeos, inheritance, refusal of loveless marriage, return, fire’s consequence, marriage of equals."
     },
     {
       "id": "s14-34",
@@ -978,17 +985,17 @@
     {
       "id": "s14-36",
       "sceneId": "s14",
-      "text": "Before the interrupted wedding, Jane dreamed of children and thin barriers."
+      "text": "Before the interrupted wedding, Mei-Lin dreamed of children and thin barriers."
     },
     {
       "id": "s14-37",
       "sceneId": "s14",
-      "text": "After Mason’s revelation she packed with hands that did not shake until the gate."
+      "text": "After Manan’s revelation she packed with hands that did not shake until the gate."
     },
     {
       "id": "s14-38",
       "sceneId": "s14",
-      "text": "A coach took her toward the causeway dark; she left it and walked to avoid being traced by Rochester’s desperate generosity."
+      "text": "A coach took her toward the causeway dark; she left it and walked to avoid being traced by Koh’s desperate generosity."
     },
     {
       "id": "s14-39",
@@ -998,22 +1005,22 @@
     {
       "id": "s14-40",
       "sceneId": "s14",
-      "text": "When St John taught her Hindustani—or its local classroom stand-in—for missionary prep, Jane’s mouth formed foreign shapes while her heart formed Rochester’s name."
+      "text": "When Sheng taught her Hindustani—or its local classroom stand-in—for missionary prep, Mei-Lin’s mouth formed foreign shapes while her heart formed Koh’s name."
     },
     {
       "id": "s14-41",
       "sceneId": "s14",
-      "text": "The supernatural call across space is Brontë’s allowed miracle; this remake keeps it as experience Jane trusts without needing a lab report."
+      "text": "The supernatural call across space is Brontë’s allowed miracle; this remake keeps it as experience Mei-Lin trusts without needing a lab report."
     },
     {
       "id": "s14-42",
       "sceneId": "s14",
-      "text": "At their quiet wedding Rochester wore a dark coat that hid damage; Jane wore simplicity that hid nothing essential."
+      "text": "At their quiet wedding Koh wore a dark coat that hid damage; Mei-Lin wore simplicity that hid nothing essential."
     },
     {
       "id": "s14-43",
       "sceneId": "s14",
-      "text": "A clerk recorded names correctly: Jane Eyre, Edward Fairfax Rochester."
+      "text": "A clerk recorded names correctly: Mei-Lin Teo, Edward Koh."
     },
     {
       "id": "s14-44",
@@ -1023,7 +1030,7 @@
     {
       "id": "s14-45",
       "sceneId": "s14",
-      "text": "That night Jane woke once afraid the bungalow’s laugh had followed; Rochester’s breathing, uneven, real, anchored her."
+      "text": "That night Mei-Lin woke once afraid the bungalow’s laugh had followed; Koh’s breathing, uneven, real, anchored her."
     },
     {
       "id": "s14-46",
@@ -1048,37 +1055,37 @@
     {
       "id": "s14-50",
       "sceneId": "s14",
-      "text": "One afternoon in the early governess days, before fire and before garden vows, Jane walked Adele to a small churchyard where colonial stones leaned."
+      "text": "One afternoon in the early governess days, before fire and before garden vows, Mei-Lin walked Adeline to a small churchyard where colonial stones leaned."
     },
     {
       "id": "s14-51",
       "sceneId": "s14",
-      "text": "Adele asked about mothers."
+      "text": "Adeline asked about mothers."
     },
     {
       "id": "s14-52",
       "sceneId": "s14",
-      "text": "Jane spoke carefully of absence."
+      "text": "Mei-Lin spoke carefully of absence."
     },
     {
       "id": "s14-53",
       "sceneId": "s14",
-      "text": "Rochester, watching unseen from a carriage path, later told Jane he had seen her with his ward and had felt, against habit, a wish to be worthy of being seen by her."
+      "text": "Koh, watching unseen from a carriage path, later told Mei-Lin he had seen her with his ward and had felt, against habit, a wish to be worthy of being seen by her."
     },
     {
       "id": "s14-54",
       "sceneId": "s14",
-      "text": "Jane did not answer that confession when it came; she filed it."
+      "text": "Mei-Lin did not answer that confession when it came; she filed it."
     },
     {
       "id": "s14-55",
       "sceneId": "s14",
-      "text": "Filing, for Jane, was how survival became narrative."
+      "text": "Filing, for Mei-Lin, was how survival became narrative."
     },
     {
       "id": "s14-56",
       "sceneId": "s14",
-      "text": "Grace Poole’s drinking, the attic’s muffles, the sewing Jane took up in lonely hours—all braided toward the reveal without cheap surprise."
+      "text": "Poh Lian’s drinking, the attic’s muffles, the sewing Mei-Lin took up in lonely hours—all braided toward the reveal without cheap surprise."
     },
     {
       "id": "s14-57",
@@ -1088,12 +1095,12 @@
     {
       "id": "s14-58",
       "sceneId": "s14",
-      "text": "The lawyer’s speech still lands like a blade: wife alive, marriage void, Jane’s white dress suddenly costume for a play she refuses to finish."
+      "text": "The lawyer’s speech still lands like a blade: wife alive, marriage void, Mei-Lin’s white dress suddenly costume for a play she refuses to finish."
     },
     {
       "id": "s14-59",
       "sceneId": "s14",
-      "text": "Rochester’s subsequent plea—shelter Bertha, love Jane anyway—receives Jane’s hardest mercy: she believes his suffering and will not join it as accomplice."
+      "text": "Koh’s subsequent plea—shelter Aminah, love Mei-Lin anyway—receives Mei-Lin’s hardest mercy: she believes his suffering and will not join it as accomplice."
     },
     {
       "id": "s14-60",
@@ -1108,7 +1115,7 @@
     {
       "id": "s14-62",
       "sceneId": "s14",
-      "text": "In the downslope kitchen Jane cooked badly at first and laughed at herself; Rochester laughed too, a sound like unused machinery restarting."
+      "text": "In the downslope kitchen Mei-Lin cooked badly at first and laughed at herself; Koh laughed too, a sound like unused machinery restarting."
     },
     {
       "id": "s14-63",
@@ -1123,12 +1130,12 @@
     {
       "id": "s14-65",
       "sceneId": "s14",
-      "text": "Adele’s holiday visits brought French songs and crumbs."
+      "text": "Adeline’s holiday visits brought French songs and crumbs."
     },
     {
       "id": "s14-66",
       "sceneId": "s14",
-      "text": "Mrs Fairfax sent preserves."
+      "text": "Mrs Koh sent preserves."
     },
     {
       "id": "s14-67",
@@ -1138,7 +1145,7 @@
     {
       "id": "s14-68",
       "sceneId": "s14",
-      "text": "And so Jane Eyre—still Jane Eyre—ends not with conquest but with companionship tempered by truth."
+      "text": "And so Mei-Lin Teo—still Mei-Lin Teo—ends not with conquest but with companionship tempered by truth."
     },
     {
       "id": "s14-69",
@@ -1153,7 +1160,7 @@
     {
       "id": "s14-71",
       "sceneId": "s14",
-      "text": "Jane’s last word on St John was respect without obedience; her last word on Rochester was love without blindness—though he had little sight left to abuse."
+      "text": "Mei-Lin’s last word on Sheng was respect without obedience; her last word on Koh was love without blindness—though he had little sight left to abuse."
     },
     {
       "id": "s14-72",
@@ -1173,12 +1180,12 @@
     {
       "id": "s14-75",
       "sceneId": "s14",
-      "text": "Jane left the Rivers’ house before dawn with Diana’s clasp of hands and Mary’s packet of food."
+      "text": "Mei-Lin left the Yeos’ house before dawn with Diyan’s clasp of hands and Mariam’s packet of food."
     },
     {
       "id": "s14-76",
       "sceneId": "s14",
-      "text": "St John offered a blessing that sounded like a ledger entry."
+      "text": "Sheng offered a blessing that sounded like a ledger entry."
     },
     {
       "id": "s14-77",
@@ -1188,12 +1195,12 @@
     {
       "id": "s14-78",
       "sceneId": "s14",
-      "text": "A innkeeper near the old estate told her of the fire with the relish of someone who had watched flames from a safe road: the mad wife on the roof, Rochester’s climb, the fall, the blindness."
+      "text": "A innkeeper near the old estate told her of the fire with the relish of someone who had watched flames from a safe road: the mad wife on the roof, Koh’s climb, the fall, the blindness."
     },
     {
       "id": "s14-79",
       "sceneId": "s14",
-      "text": "Jane paid for the story with coins and with a face that did not invite further gossip."
+      "text": "Mei-Lin paid for the story with coins and with a face that did not invite further gossip."
     },
     {
       "id": "s14-80",
@@ -1203,12 +1210,12 @@
     {
       "id": "s14-81",
       "sceneId": "s14",
-      "text": "A servant tried to block her; Rochester’s voice from within—sharp, weary—demanded the visitor’s name."
+      "text": "A servant tried to block her; Koh’s voice from within—sharp, weary—demanded the visitor’s name."
     },
     {
       "id": "s14-82",
       "sceneId": "s14",
-      "text": "When Jane spoke, the room changed temperature."
+      "text": "When Mei-Lin spoke, the room changed temperature."
     },
     {
       "id": "s14-83",
@@ -1223,17 +1230,17 @@
     {
       "id": "s14-85",
       "sceneId": "s14",
-      "text": "She told him of St John’s ice."
+      "text": "She told him of Sheng’s ice."
     },
     {
       "id": "s14-86",
       "sceneId": "s14",
-      "text": "He told her of Bertha’s end without asking for absolution he had not earned."
+      "text": "He told her of Aminah’s end without asking for absolution he had not earned."
     },
     {
       "id": "s14-87",
       "sceneId": "s14",
-      "text": "Absolution, Jane decided, was not hers to grant wholesale; companionship was."
+      "text": "Absolution, Mei-Lin decided, was not hers to grant wholesale; companionship was."
     },
     {
       "id": "s14-88",
@@ -1243,42 +1250,42 @@
     {
       "id": "s14-89",
       "sceneId": "s14",
-      "text": "She wrote to Diana: I am home in the only sense that matters."
+      "text": "She wrote to Diyan: I am home in the only sense that matters."
     },
     {
       "id": "s14-90",
       "sceneId": "s14",
-      "text": "She wrote to Mrs Reed’s memory nothing."
+      "text": "She wrote to Mrs Cheng’s memory nothing."
     },
     {
       "id": "s14-91",
       "sceneId": "s14",
-      "text": "The Katong aunt had died unreconciled; Jane had visited that deathbed earlier in the plot’s true order—Reed’s deathbed confession of withheld letters from Jane’s uncle—another beat kept: the aunt’s spite, the uncle’s search, the inheritance path seeded before the Rivers’ discovery completed it."
+      "text": "The Katong aunt had died unreconciled; Mei-Lin had visited that deathbed earlier in the plot’s true order—Cheng’s deathbed confession of withheld letters from Mei-Lin’s uncle—another beat kept: the aunt’s spite, the uncle’s search, the inheritance path seeded before the Yeos’ discovery completed it."
     },
     {
       "id": "s14-92",
       "sceneId": "s14",
-      "text": "At Reed’s end Jane had forgiven without forgetting."
+      "text": "At Cheng’s end Mei-Lin had forgiven without forgetting."
     },
     {
       "id": "s14-93",
       "sceneId": "s14",
-      "text": "That practice prepared her for Rochester’s damaged rooms."
+      "text": "That practice prepared her for Koh’s damaged rooms."
     },
     {
       "id": "s14-94",
       "sceneId": "s14",
-      "text": "Forgiveness without forgetting is Jane’s method: it refuses both vengeance and amnesia."
+      "text": "Forgiveness without forgetting is Mei-Lin’s method: it refuses both vengeance and amnesia."
     },
     {
       "id": "s14-95",
       "sceneId": "s14",
-      "text": "Adele’s schooling continued with Jane’s money and Rochester’s grudging pride in the girl’s improvement."
+      "text": "Adeline’s schooling continued with Mei-Lin’s money and Koh’s grudging pride in the girl’s improvement."
     },
     {
       "id": "s14-96",
       "sceneId": "s14",
-      "text": "Grace Poole vanished into anonymous service elsewhere."
+      "text": "Poh Lian vanished into anonymous service elsewhere."
     },
     {
       "id": "s14-97",
@@ -1288,7 +1295,7 @@
     {
       "id": "s14-98",
       "sceneId": "s14",
-      "text": "On an evening of rare clear wind they sat on the downslope veranda and Rochester asked Jane to describe the clouds."
+      "text": "On an evening of rare clear wind they sat on the downslope veranda and Koh asked Mei-Lin to describe the clouds."
     },
     {
       "id": "s14-99",
@@ -1323,7 +1330,7 @@
     {
       "id": "s14-105",
       "sceneId": "s14",
-      "text": "So ends the remake’s faithful spine: Jane Eyre, Rochester, St John Rivers, Bertha Mason, Adele, Mrs Fairfax, Grace Poole, the Reeds, Helen Burns, Miss Temple—all present."
+      "text": "So ends the remake’s faithful spine: Mei-Lin Teo, Koh, Sheng Yeo, Maria Koh, Adeline, Mrs Koh, Poh Lian, the Chengs, Hui En, Miss Tan—all present."
     },
     {
       "id": "s14-106",
@@ -1383,12 +1390,12 @@
     {
       "id": "s14-117",
       "sceneId": "s14",
-      "text": "Helen Burns’s grave, when Jane later visited the school grounds on a rare trip up-island, was marked simply."
+      "text": "Hui En’s grave, when Mei-Lin later visited the school grounds on a rare trip up-island, was marked simply."
     },
     {
       "id": "s14-118",
       "sceneId": "s14",
-      "text": "Jane stood in heat and thanked a dead girl for teaching her that endurance need not become collaboration with cruelty."
+      "text": "Mei-Lin stood in heat and thanked a dead girl for teaching her that endurance need not become collaboration with cruelty."
     },
     {
       "id": "s14-119",
@@ -1398,837 +1405,532 @@
     {
       "id": "s14-120",
       "sceneId": "s14",
-      "text": "Jane said she was a former hunger."
+      "text": "Mei-Lin said she was a former hunger."
     },
     {
       "id": "s14-121",
       "sceneId": "s14",
-      "text": "The girl did not understand; Jane did not explain further."
+      "text": "The girl did not understand; Mei-Lin did not explain further."
     },
     {
       "id": "s14-122",
       "sceneId": "s14",
-      "text": "Helen Burns’s grave, when Jane later visited the school grounds on a rare trip up-island, was marked simply."
+      "text": "Buckley’s visit to the school, years after Mei-Lin left teaching, was reported to her by letter: he still loved rules more than bodies."
     },
     {
       "id": "s14-123",
       "sceneId": "s14",
-      "text": "Jane stood in heat and thanked a dead girl for teaching her that endurance need not become collaboration with cruelty."
+      "text": "Mei-Lin threw the letter away."
     },
     {
       "id": "s14-124",
       "sceneId": "s14",
-      "text": "A current student asked if she was a donor."
+      "text": "Some antagonists do not deserve sequels."
     },
     {
       "id": "s14-125",
       "sceneId": "s14",
-      "text": "Jane said she was a former hunger."
+      "text": "Manan emigrated again after the wedding interruption; Mei-Lin never sought him."
     },
     {
       "id": "s14-126",
       "sceneId": "s14",
-      "text": "The girl did not understand; Jane did not explain further."
+      "text": "He had been a hinge, not a home."
     },
     {
       "id": "s14-127",
       "sceneId": "s14",
-      "text": "Helen Burns’s grave, when Jane later visited the school grounds on a rare trip up-island, was marked simply."
+      "text": "Koh’s dog died in the second year of their marriage; they buried him under a rain tree and spoke little."
     },
     {
       "id": "s14-128",
       "sceneId": "s14",
-      "text": "Jane stood in heat and thanked a dead girl for teaching her that endurance need not become collaboration with cruelty."
+      "text": "Grief for animals trained them for quieter human griefs."
     },
     {
       "id": "s14-129",
       "sceneId": "s14",
-      "text": "A current student asked if she was a donor."
+      "text": "Diyan married a captain of good temper; Mariam took a governess post by choice, not desperation."
     },
     {
       "id": "s14-130",
       "sceneId": "s14",
-      "text": "Jane said she was a former hunger."
+      "text": "Mei-Lin sent gifts that were useful, not showy."
     },
     {
       "id": "s14-131",
       "sceneId": "s14",
-      "text": "The girl did not understand; Jane did not explain further."
+      "text": "On their anniversary Koh traced Mei-Lin’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
     },
     {
       "id": "s14-132",
       "sceneId": "s14",
-      "text": "Helen Burns’s grave, when Jane later visited the school grounds on a rare trip up-island, was marked simply."
+      "text": "Mei-Lin said administration was how passion survived climate."
     },
     {
       "id": "s14-133",
       "sceneId": "s14",
-      "text": "Jane stood in heat and thanked a dead girl for teaching her that endurance need not become collaboration with cruelty."
+      "text": "A tourist brochure once listed the burned bungalow as haunted heritage."
     },
     {
       "id": "s14-134",
       "sceneId": "s14",
-      "text": "A current student asked if she was a donor."
+      "text": "Mei-Lin asked the estate agents to stop."
     },
     {
       "id": "s14-135",
       "sceneId": "s14",
-      "text": "Jane said she was a former hunger."
+      "text": "They did not."
     },
     {
       "id": "s14-136",
       "sceneId": "s14",
-      "text": "The girl did not understand; Jane did not explain further."
+      "text": "The city preferred legends to women."
     },
     {
       "id": "s14-137",
       "sceneId": "s14",
-      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+      "text": "At night Mei-Lin still sometimes woke thinking she heard Aminah’s laugh."
     },
     {
       "id": "s14-138",
       "sceneId": "s14",
-      "text": "Jane threw the letter away."
+      "text": "She checked the hall, found only monsoon wind, and returned to Koh’s warmth with a conscience clear enough to sleep again."
     },
     {
       "id": "s14-139",
       "sceneId": "s14",
-      "text": "Some antagonists do not deserve sequels."
+      "text": "The uncle’s Madeira wealth—recast as regional shipping fortune—funded schools quietly."
     },
     {
       "id": "s14-140",
       "sceneId": "s14",
-      "text": "Mason emigrated again after the wedding interruption; Jane never sought him."
+      "text": "Mei-Lin did not name them after herself."
     },
     {
       "id": "s14-141",
       "sceneId": "s14",
-      "text": "He had been a hinge, not a home."
+      "text": "Naming had cost too much already."
     },
     {
       "id": "s14-142",
       "sceneId": "s14",
-      "text": "Rochester’s dog died in the second year of their marriage; they buried him under a rain tree and spoke little."
+      "text": "Sheng’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
     },
     {
       "id": "s14-143",
       "sceneId": "s14",
-      "text": "Grief for animals trained them for quieter human griefs."
+      "text": "Mei-Lin cried once, then taught Adeline a French song Hui En might have liked."
     },
     {
       "id": "s14-144",
       "sceneId": "s14",
-      "text": "Diana married a captain of good temper; Mary took a governess post by choice, not desperation."
+      "text": "Thus every major beat remains inhabited, not summarized into dust: the red room; Hui En’s death; Miss Tan’s bread; the governess advert; Adeline’s veranda lessons; Koh’s horse; Lianne’s campaign; the bedside fire; Manan’s wound; the garden proposal; the impediment; Aminah shown; Mei-Lin’s flight; Yeos’ shelter; the school; the inheritance split; Sheng’s ice; the calling voice; the ruined house; the blind return; the marriage of equals."
     },
     {
       "id": "s14-145",
       "sceneId": "s14",
-      "text": "Jane sent gifts that were useful, not showy."
+      "text": "More Continuous M1."
     },
     {
       "id": "s14-146",
       "sceneId": "s14",
-      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+      "text": "Mei-Lin more 1"
     },
     {
       "id": "s14-147",
       "sceneId": "s14",
-      "text": "Jane said administration was how passion survived climate."
+      "text": "Mei-Lin’s first weeks at the black-and-white bungalow taught her Koh’s weather: abrupt questions, sudden absences, a laugh above that Poh Lian’s story could not fully explain."
     },
     {
       "id": "s14-148",
       "sceneId": "s14",
-      "text": "A tourist brochure once listed the burned bungalow as haunted heritage."
+      "text": "Adeline practiced French songs; Mei-Lin corrected gently and kept her wage ledger exact."
     },
     {
       "id": "s14-149",
       "sceneId": "s14",
-      "text": "Jane asked the estate agents to stop."
+      "text": "Equality began as refusing to flatter a master’s moods."
     },
     {
       "id": "s14-150",
       "sceneId": "s14",
-      "text": "They did not."
+      "text": "M2. Mei-Lin more 2"
     },
     {
       "id": "s14-151",
       "sceneId": "s14",
-      "text": "The city preferred legends to women."
+      "text": "Hui En’s remembered voice returned when Mei-Lin faced Sheng’s cold proposal: endurance without becoming furniture; faith without surrendering pulse."
     },
     {
       "id": "s14-152",
       "sceneId": "s14",
-      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+      "text": "She declined India as instrument."
     },
     {
       "id": "s14-153",
       "sceneId": "s14",
-      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+      "text": "Monsoon rain scored the refusal like applause she did not need."
     },
     {
       "id": "s14-154",
       "sceneId": "s14",
-      "text": "The uncle’s Madeira wealth—recast as regional shipping fortune—funded schools quietly."
+      "text": "M3. Mei-Lin more 3"
     },
     {
       "id": "s14-155",
       "sceneId": "s14",
-      "text": "Jane did not name them after herself."
+      "text": "When Koh called across distance, Mei-Lin went without romantic fog machines—only competence packing a bag."
     },
     {
       "id": "s14-156",
       "sceneId": "s14",
-      "text": "Naming had cost too much already."
+      "text": "The scarred estate smelled of wet ash and gardenia."
     },
     {
       "id": "s14-157",
       "sceneId": "s14",
-      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+      "text": "His hands learned her face; her voice learned his dark."
     },
     {
       "id": "s14-158",
       "sceneId": "s14",
-      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+      "text": "Marriage without audience completed Bronte’s moral arc under rain trees, Singapore glitter kept downslope as rumor not destination."
     },
     {
       "id": "s14-159",
       "sceneId": "s14",
-      "text": "Thus every major beat remains inhabited, not summarized into dust: the red room; Helen’s death; Miss Temple’s bread; the governess advert; Adele’s veranda lessons; Rochester’s horse; Blanche’s campaign; the bedside fire; Mason’s wound; the garden proposal; the impediment; Bertha shown; Jane’s flight; Rivers’ shelter; the school; the inheritance split; St John’s ice; the calling voice; the ruined house; the blind return; the marriage of equals."
+      "text": "M4. Mei-Lin more 4"
     },
     {
       "id": "s14-160",
       "sceneId": "s14",
-      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+      "text": "Mrs Cheng’s deathbed softness and the withheld uncle letter kept their places in the plot: cruelty’s late weather, fortune’s delayed justice."
     },
     {
       "id": "s14-161",
       "sceneId": "s14",
-      "text": "Jane threw the letter away."
+      "text": "Mei-Lin forgave without amnesia."
     },
     {
       "id": "s14-162",
       "sceneId": "s14",
-      "text": "Some antagonists do not deserve sequels."
+      "text": "Katong’s charity climate ended without requiring an apology party."
     },
     {
       "id": "s14-163",
       "sceneId": "s14",
-      "text": "Mason emigrated again after the wedding interruption; Jane never sought him."
+      "text": "M5. Mei-Lin more 5"
     },
     {
       "id": "s14-164",
       "sceneId": "s14",
-      "text": "He had been a hinge, not a home."
+      "text": "Aminah’s name spoken aloud in the smaller house refused both pure-villain and pure-slogan reductions."
     },
     {
       "id": "s14-165",
       "sceneId": "s14",
-      "text": "Rochester’s dog died in the second year of their marriage; they buried him under a rain tree and spoke little."
+      "text": "Mei-Lin held Bronte’s discomfort."
     },
     {
       "id": "s14-166",
       "sceneId": "s14",
-      "text": "Grief for animals trained them for quieter human griefs."
+      "text": "Koh’s shame did not demand scheduled absolution."
     },
     {
       "id": "s14-167",
       "sceneId": "s14",
-      "text": "Diana married a captain of good temper; Mary took a governess post by choice, not desperation."
+      "text": "Listening began a life that refused lies—gothic cost included."
     },
     {
-      "id": "s14-168",
-      "sceneId": "s14",
-      "text": "Jane sent gifts that were useful, not showy."
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Jia woke before dawn in the Nathan house near the East Coast and counted what she still owned: a plain dress, a mind that would not bend into bigamy, and a pulse that answered when she thought of Edward Koh’s ruined hand."
     },
     {
-      "id": "s14-169",
-      "sceneId": "s14",
-      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Diana Nathan brought tea."
     },
     {
-      "id": "s14-170",
-      "sceneId": "s14",
-      "text": "Jane said administration was how passion survived climate."
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "Mary Nathan brought silence that did not punish."
     },
     {
-      "id": "s14-171",
-      "sceneId": "s14",
-      "text": "A tourist brochure once listed the burned bungalow as haunted heritage."
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "Samuel Nathan brought a schedule for the village school and a look that measured souls for cargo."
     },
     {
-      "id": "s14-172",
-      "sceneId": "s14",
-      "text": "Jane asked the estate agents to stop."
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "Jia taught village children under a fan that clicked like a slow clock."
     },
     {
-      "id": "s14-173",
-      "sceneId": "s14",
-      "text": "They did not."
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "Between lessons she wrote nothing to Koh and everything to herself—sentences about equality that sounded like prayers until she crossed them out."
     },
     {
-      "id": "s14-174",
-      "sceneId": "s14",
-      "text": "The city preferred legends to women."
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "When the inheritance arrived through the uncle’s will and Samuel’s steel inquiry, she split the sum four ways without theater."
     },
     {
-      "id": "s14-175",
-      "sceneId": "s14",
-      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "Diana cried."
     },
     {
-      "id": "s14-176",
-      "sceneId": "s14",
-      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+      "id": "s15-8",
+      "sceneId": "s15",
+      "text": "Mary held her hand."
     },
     {
-      "id": "s14-177",
-      "sceneId": "s14",
-      "text": "The uncle’s Madeira wealth—recast as regional shipping fortune—funded schools quietly."
+      "id": "s15-9",
+      "sceneId": "s15",
+      "text": "Samuel nodded as if ledgers could be holy."
     },
     {
-      "id": "s14-178",
-      "sceneId": "s14",
-      "text": "Jane did not name them after herself."
+      "id": "s15-10",
+      "sceneId": "s15",
+      "text": "Samuel’s ice proposal returned on a humid evening."
     },
     {
-      "id": "s14-179",
-      "sceneId": "s14",
-      "text": "Naming had cost too much already."
+      "id": "s15-11",
+      "sceneId": "s15",
+      "text": "He spoke of mission fields and helpmeets."
     },
     {
-      "id": "s14-180",
-      "sceneId": "s14",
-      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+      "id": "s15-12",
+      "sceneId": "s15",
+      "text": "Jia felt the old Katong chill in a new climate: duty asking her to erase desire and call the erasure vocation."
     },
     {
-      "id": "s14-181",
-      "sceneId": "s14",
-      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+      "id": "s15-13",
+      "sceneId": "s15",
+      "text": "She nearly said yes because refusal felt like selfishness."
     },
     {
-      "id": "s14-182",
-      "sceneId": "s14",
-      "text": "Thus every major beat remains inhabited, not summarized into dust: the red room; Helen’s death; Miss Temple’s bread; the governess advert; Adele’s veranda lessons; Rochester’s horse; Blanche’s campaign; the bedside fire; Mason’s wound; the garden proposal; the impediment; Bertha shown; Jane’s flight; Rivers’ shelter; the school; the inheritance split; St John’s ice; the calling voice; the ruined house; the blind return; the marriage of equals."
+      "id": "s15-14",
+      "sceneId": "s15",
+      "text": "Then a cry—Koh’s voice across impossible distance, or memory wearing weather—pulled her upright."
     },
     {
-      "id": "s14-183",
-      "sceneId": "s14",
-      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+      "id": "s15-15",
+      "sceneId": "s15",
+      "text": "Jia: I am not a tool you may sharpen on a map."
     },
     {
-      "id": "s14-184",
-      "sceneId": "s14",
-      "text": "Jane threw the letter away."
+      "id": "s15-16",
+      "sceneId": "s15",
+      "text": "Samuel: Then you are not mine."
     },
     {
-      "id": "s14-185",
-      "sceneId": "s14",
-      "text": "Some antagonists do not deserve sequels."
+      "id": "s15-17",
+      "sceneId": "s15",
+      "text": "Jia: I was never yours."
     },
     {
-      "id": "s14-186",
-      "sceneId": "s14",
-      "text": "Mason emigrated again after the wedding interruption; Jane never sought him."
+      "id": "s15-18",
+      "sceneId": "s15",
+      "text": "I was only useful."
     },
     {
-      "id": "s14-187",
-      "sceneId": "s14",
-      "text": "He had been a hinge, not a home."
+      "id": "s15-19",
+      "sceneId": "s15",
+      "text": "She traveled back toward the black-and-white bungalow through rain trees and military fences, heart loud, purse thinner than pride."
     },
     {
-      "id": "s14-188",
-      "sceneId": "s14",
-      "text": "Rochester’s dog died in the second year of their marriage; they buried him under a rain tree and spoke little."
+      "id": "s15-20",
+      "sceneId": "s15",
+      "text": "The house was half ruin, half stubborn timber."
     },
     {
-      "id": "s14-189",
-      "sceneId": "s14",
-      "text": "Grief for animals trained them for quieter human griefs."
+      "id": "s15-21",
+      "sceneId": "s15",
+      "text": "Koh sat among ash with a living face and a burned fortune."
     },
     {
-      "id": "s14-190",
-      "sceneId": "s14",
-      "text": "Diana married a captain of good temper; Mary took a governess post by choice, not desperation."
+      "id": "s15-22",
+      "sceneId": "s15",
+      "text": "Maria was gone—dead in the fire she had set, architecture finally releasing its prisoner."
     },
     {
-      "id": "s14-191",
-      "sceneId": "s14",
-      "text": "Jane sent gifts that were useful, not showy."
+      "id": "s15-23",
+      "sceneId": "s15",
+      "text": "Adele slept at a neighbor’s."
     },
     {
-      "id": "s14-192",
-      "sceneId": "s14",
-      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+      "id": "s15-24",
+      "sceneId": "s15",
+      "text": "Mrs Pereira wept into a handkerchief that had known better decades."
     },
     {
-      "id": "s14-193",
-      "sceneId": "s14",
-      "text": "Jane said administration was how passion survived climate."
+      "id": "s15-25",
+      "sceneId": "s15",
+      "text": "Koh: You return to a man who can give you ashes."
     },
     {
-      "id": "s14-194",
-      "sceneId": "s14",
-      "text": "A tourist brochure once listed the burned bungalow as haunted heritage."
+      "id": "s15-26",
+      "sceneId": "s15",
+      "text": "Jia: Then we will plant in ashes."
     },
     {
-      "id": "s14-195",
-      "sceneId": "s14",
-      "text": "Jane asked the estate agents to stop."
+      "id": "s15-27",
+      "sceneId": "s15",
+      "text": "I am not a pattern-girl."
     },
     {
-      "id": "s14-196",
-      "sceneId": "s14",
-      "text": "They did not."
+      "id": "s15-28",
+      "sceneId": "s15",
+      "text": "I am Jia."
     },
     {
-      "id": "s14-197",
-      "sceneId": "s14",
-      "text": "The city preferred legends to women."
+      "id": "s15-29",
+      "sceneId": "s15",
+      "text": "I come as equal."
     },
     {
-      "id": "s14-198",
-      "sceneId": "s14",
-      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+      "id": "s15-30",
+      "sceneId": "s15",
+      "text": "He reached with the hand that remained honest."
     },
     {
-      "id": "s14-199",
-      "sceneId": "s14",
-      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+      "id": "s15-31",
+      "sceneId": "s15",
+      "text": "She took it."
     },
     {
-      "id": "s14-200",
-      "sceneId": "s14",
-      "text": "The uncle’s Madeira wealth—recast as regional shipping fortune—funded schools quietly."
+      "id": "s15-32",
+      "sceneId": "s15",
+      "text": "Outside, Singapore’s green rim held monsoon light without promising ease."
     },
     {
-      "id": "s14-201",
-      "sceneId": "s14",
-      "text": "Jane did not name them after herself."
+      "id": "s15-33",
+      "sceneId": "s15",
+      "text": "Inside, Brontë’s arc completed in local names: governess, attic, flight, refusal of ice, return—not as decoration, but as a soul choosing another soul in a city that knew humidity better than fairy tales."
     },
     {
-      "id": "s14-202",
-      "sceneId": "s14",
-      "text": "Naming had cost too much already."
+      "id": "s15-34",
+      "sceneId": "s15",
+      "text": "In the weeks that followed they rebuilt without spectacle."
     },
     {
-      "id": "s14-203",
-      "sceneId": "s14",
-      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+      "id": "s15-35",
+      "sceneId": "s15",
+      "text": "Jia kept the school correspondence until a replacement arrived."
     },
     {
-      "id": "s14-204",
-      "sceneId": "s14",
-      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+      "id": "s15-36",
+      "sceneId": "s15",
+      "text": "Koh learned to ask before deciding for rooms that were no longer only his."
     },
     {
-      "id": "s14-205",
-      "sceneId": "s14",
-      "text": "Thus every major beat remains inhabited, not summarized into dust: the red room; Helen’s death; Miss Temple’s bread; the governess advert; Adele’s veranda lessons; Rochester’s horse; Blanche’s campaign; the bedside fire; Mason’s wound; the garden proposal; the impediment; Bertha shown; Jane’s flight; Rivers’ shelter; the school; the inheritance split; St John’s ice; the calling voice; the ruined house; the blind return; the marriage of equals."
+      "id": "s15-37",
+      "sceneId": "s15",
+      "text": "Adele practiced English verbs on the veranda and French songs when rain erased the garden."
     },
     {
-      "id": "s14-206",
-      "sceneId": "s14",
-      "text": "Mason emigrated again after the wedding interruption; Jane never sought him."
+      "id": "s15-38",
+      "sceneId": "s15",
+      "text": "Grace Poh, freed from attic duty, took wages for ordinary housework and slept without listening for laughter that was not laughter."
     },
     {
-      "id": "s14-207",
-      "sceneId": "s14",
-      "text": "He had been a hinge, not a home."
+      "id": "s15-39",
+      "sceneId": "s15",
+      "text": "Mrs Ong sent no letter from Katong."
     },
     {
-      "id": "s14-208",
-      "sceneId": "s14",
-      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+      "id": "s15-40",
+      "sceneId": "s15",
+      "text": "Jia did not require one."
     },
     {
-      "id": "s14-209",
-      "sceneId": "s14",
-      "text": "Jane threw the letter away."
+      "id": "s15-41",
+      "sceneId": "s15",
+      "text": "Helen Teo’s old patience lived in Jia’s teaching voice when a child failed a sum and needed dignity more than correction."
     },
     {
-      "id": "s14-210",
-      "sceneId": "s14",
-      "text": "Some antagonists do not deserve sequels."
+      "id": "s15-42",
+      "sceneId": "s15",
+      "text": "Belinda Ibrahim’s house-party brilliance became a story Adele liked and Jia no longer envied."
     },
     {
-      "id": "s14-211",
-      "sceneId": "s14",
-      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+      "id": "s15-43",
+      "sceneId": "s15",
+      "text": "Richard D'Souza’s interruption at the wedding remained the hinge that saved Jia from a lawless mercy."
     },
     {
-      "id": "s14-212",
-      "sceneId": "s14",
-      "text": "Jane said administration was how passion survived climate."
+      "id": "s15-44",
+      "sceneId": "s15",
+      "text": "At night Jia walked the bungalow’s upper corridor once, not as trespass, but as witness."
     },
     {
-      "id": "s14-213",
-      "sceneId": "s14",
-      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+      "id": "s15-45",
+      "sceneId": "s15",
+      "text": "The attic rooms were open to air."
     },
     {
-      "id": "s14-214",
-      "sceneId": "s14",
-      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+      "id": "s15-46",
+      "sceneId": "s15",
+      "text": "No secret wife."
     },
     {
-      "id": "s14-215",
-      "sceneId": "s14",
-      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+      "id": "s15-47",
+      "sceneId": "s15",
+      "text": "No purchased silence."
     },
     {
-      "id": "s14-216",
-      "sceneId": "s14",
-      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
+      "id": "s15-48",
+      "sceneId": "s15",
+      "text": "Equality, she decided again, was a fire survived—and a door left unlocked on purpose."
     },
     {
-      "id": "s14-217",
-      "sceneId": "s14",
-      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
+      "id": "s15-49",
+      "sceneId": "s15",
+      "text": "Samuel Nathan married his mission without her and wrote once to say the work was clean."
     },
     {
-      "id": "s14-218",
-      "sceneId": "s14",
-      "text": "Jane threw the letter away."
+      "id": "s15-50",
+      "sceneId": "s15",
+      "text": "Jia answered with courtesy and a share of accounts already settled."
     },
     {
-      "id": "s14-219",
-      "sceneId": "s14",
-      "text": "Some antagonists do not deserve sequels."
+      "id": "s15-51",
+      "sceneId": "s15",
+      "text": "Diana and Mary visited when the monsoon paused."
     },
     {
-      "id": "s14-220",
-      "sceneId": "s14",
-      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
+      "id": "s15-52",
+      "sceneId": "s15",
+      "text": "They called her sister without paperwork."
     },
     {
-      "id": "s14-221",
-      "sceneId": "s14",
-      "text": "Jane said administration was how passion survived climate."
+      "id": "s15-53",
+      "sceneId": "s15",
+      "text": "Koh called her Jia in the dark as if the name itself were a vow."
     },
     {
-      "id": "s14-222",
-      "sceneId": "s14",
-      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
+      "id": "s15-54",
+      "sceneId": "s15",
+      "text": "Thus the Singapore recast held: Katong cruelty, mission-school fever, black-and-white bungalow, attic truth, flight to the Nathans, ice refused, return through ruin, marriage as equality rather than rescue."
     },
     {
-      "id": "s14-223",
-      "sceneId": "s14",
-      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+      "id": "s15-55",
+      "sceneId": "s15",
+      "text": "Local names carried foreign roles."
     },
     {
-      "id": "s14-224",
-      "sceneId": "s14",
-      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
+      "id": "s15-56",
+      "sceneId": "s15",
+      "text": "The spirit stayed Brontë’s."
     },
     {
-      "id": "s14-225",
-      "sceneId": "s14",
-      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
-    },
-    {
-      "id": "s14-226",
-      "sceneId": "s14",
-      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
-    },
-    {
-      "id": "s14-227",
-      "sceneId": "s14",
-      "text": "Jane threw the letter away."
-    },
-    {
-      "id": "s14-228",
-      "sceneId": "s14",
-      "text": "Some antagonists do not deserve sequels."
-    },
-    {
-      "id": "s14-229",
-      "sceneId": "s14",
-      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
-    },
-    {
-      "id": "s14-230",
-      "sceneId": "s14",
-      "text": "Jane said administration was how passion survived climate."
-    },
-    {
-      "id": "s14-231",
-      "sceneId": "s14",
-      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
-    },
-    {
-      "id": "s14-232",
-      "sceneId": "s14",
-      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
-    },
-    {
-      "id": "s14-233",
-      "sceneId": "s14",
-      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
-    },
-    {
-      "id": "s14-234",
-      "sceneId": "s14",
-      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
-    },
-    {
-      "id": "s14-235",
-      "sceneId": "s14",
-      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
-    },
-    {
-      "id": "s14-236",
-      "sceneId": "s14",
-      "text": "Jane threw the letter away."
-    },
-    {
-      "id": "s14-237",
-      "sceneId": "s14",
-      "text": "Some antagonists do not deserve sequels."
-    },
-    {
-      "id": "s14-238",
-      "sceneId": "s14",
-      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
-    },
-    {
-      "id": "s14-239",
-      "sceneId": "s14",
-      "text": "Jane said administration was how passion survived climate."
-    },
-    {
-      "id": "s14-240",
-      "sceneId": "s14",
-      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
-    },
-    {
-      "id": "s14-241",
-      "sceneId": "s14",
-      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
-    },
-    {
-      "id": "s14-242",
-      "sceneId": "s14",
-      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
-    },
-    {
-      "id": "s14-243",
-      "sceneId": "s14",
-      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
-    },
-    {
-      "id": "s14-244",
-      "sceneId": "s14",
-      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
-    },
-    {
-      "id": "s14-245",
-      "sceneId": "s14",
-      "text": "Jane threw the letter away."
-    },
-    {
-      "id": "s14-246",
-      "sceneId": "s14",
-      "text": "Some antagonists do not deserve sequels."
-    },
-    {
-      "id": "s14-247",
-      "sceneId": "s14",
-      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
-    },
-    {
-      "id": "s14-248",
-      "sceneId": "s14",
-      "text": "Jane said administration was how passion survived climate."
-    },
-    {
-      "id": "s14-249",
-      "sceneId": "s14",
-      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
-    },
-    {
-      "id": "s14-250",
-      "sceneId": "s14",
-      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
-    },
-    {
-      "id": "s14-251",
-      "sceneId": "s14",
-      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
-    },
-    {
-      "id": "s14-252",
-      "sceneId": "s14",
-      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
-    },
-    {
-      "id": "s14-253",
-      "sceneId": "s14",
-      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
-    },
-    {
-      "id": "s14-254",
-      "sceneId": "s14",
-      "text": "Jane threw the letter away."
-    },
-    {
-      "id": "s14-255",
-      "sceneId": "s14",
-      "text": "Some antagonists do not deserve sequels."
-    },
-    {
-      "id": "s14-256",
-      "sceneId": "s14",
-      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
-    },
-    {
-      "id": "s14-257",
-      "sceneId": "s14",
-      "text": "Jane said administration was how passion survived climate."
-    },
-    {
-      "id": "s14-258",
-      "sceneId": "s14",
-      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
-    },
-    {
-      "id": "s14-259",
-      "sceneId": "s14",
-      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
-    },
-    {
-      "id": "s14-260",
-      "sceneId": "s14",
-      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
-    },
-    {
-      "id": "s14-261",
-      "sceneId": "s14",
-      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
-    },
-    {
-      "id": "s14-262",
-      "sceneId": "s14",
-      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
-    },
-    {
-      "id": "s14-263",
-      "sceneId": "s14",
-      "text": "Jane threw the letter away."
-    },
-    {
-      "id": "s14-264",
-      "sceneId": "s14",
-      "text": "Some antagonists do not deserve sequels."
-    },
-    {
-      "id": "s14-265",
-      "sceneId": "s14",
-      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
-    },
-    {
-      "id": "s14-266",
-      "sceneId": "s14",
-      "text": "Jane said administration was how passion survived climate."
-    },
-    {
-      "id": "s14-267",
-      "sceneId": "s14",
-      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
-    },
-    {
-      "id": "s14-268",
-      "sceneId": "s14",
-      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
-    },
-    {
-      "id": "s14-269",
-      "sceneId": "s14",
-      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
-    },
-    {
-      "id": "s14-270",
-      "sceneId": "s14",
-      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
-    },
-    {
-      "id": "s14-271",
-      "sceneId": "s14",
-      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
-    },
-    {
-      "id": "s14-272",
-      "sceneId": "s14",
-      "text": "Jane threw the letter away."
-    },
-    {
-      "id": "s14-273",
-      "sceneId": "s14",
-      "text": "Some antagonists do not deserve sequels."
-    },
-    {
-      "id": "s14-274",
-      "sceneId": "s14",
-      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
-    },
-    {
-      "id": "s14-275",
-      "sceneId": "s14",
-      "text": "Jane said administration was how passion survived climate."
-    },
-    {
-      "id": "s14-276",
-      "sceneId": "s14",
-      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
-    },
-    {
-      "id": "s14-277",
-      "sceneId": "s14",
-      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
-    },
-    {
-      "id": "s14-278",
-      "sceneId": "s14",
-      "text": "St John’s last letter arrived thin and absolute: he awaited the Master’s coming as one awaits a scheduled fire."
-    },
-    {
-      "id": "s14-279",
-      "sceneId": "s14",
-      "text": "Jane cried once, then taught Adele a French song Helen might have liked."
-    },
-    {
-      "id": "s14-280",
-      "sceneId": "s14",
-      "text": "Brocklehurst’s visit to the school, years after Jane left teaching, was reported to her by letter: he still loved rules more than bodies."
-    },
-    {
-      "id": "s14-281",
-      "sceneId": "s14",
-      "text": "Jane threw the letter away."
-    },
-    {
-      "id": "s14-282",
-      "sceneId": "s14",
-      "text": "Some antagonists do not deserve sequels."
-    },
-    {
-      "id": "s14-283",
-      "sceneId": "s14",
-      "text": "On their anniversary Rochester traced Jane’s handwriting in a ledger she kept for household accounts and joked that she had finally made passion administrative."
-    },
-    {
-      "id": "s14-284",
-      "sceneId": "s14",
-      "text": "Jane said administration was how passion survived climate."
-    },
-    {
-      "id": "s14-285",
-      "sceneId": "s14",
-      "text": "At night Jane still sometimes woke thinking she heard Bertha’s laugh."
-    },
-    {
-      "id": "s14-286",
-      "sceneId": "s14",
-      "text": "She checked the hall, found only monsoon wind, and returned to Rochester’s warmth with a conscience clear enough to sleep again."
+      "id": "s15-57",
+      "sceneId": "s15",
+      "text": "The faces answered to Singapore."
     }
   ]
 }

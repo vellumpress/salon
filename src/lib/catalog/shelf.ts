@@ -1841,8 +1841,7 @@ export const SHELF: ShelfWork[] = [
     language: "English",
     minutes: 7,
     local: true,
-    opening:
-      "Bertha felt it in the elevator—bliss, absurd and physical, like champagne already in the blood.",
+    opening: "Haruka felt it in the elevator—bliss, absurd and physical, like champagne already in the blood.",
     breaths: 40,
     intro:
       "Omotesando gold, a flowering pear on a terrace, and a young wife's perfect evening that turns on a single glance. After Mansfield, Bliss, 1918.",
@@ -1856,8 +1855,7 @@ export const SHELF: ShelfWork[] = [
     language: "English",
     minutes: 7,
     local: true,
-    opening:
-      "Framton Nuttel arrived with letters of introduction and a diagnosis that preferred quiet.",
+    opening: "Adrian Tan arrived with letters of introduction and a diagnosis that preferred quiet.",
     breaths: 52,
     intro:
       "A nervous rest-cure visitor, a black-and-white bungalow off Bukit Timah, and a girl's exquisite lie about men who never came back from the green. After Saki, The Open Window, 1914.",
@@ -1872,7 +1870,7 @@ export const SHELF: ShelfWork[] = [
     minutes: 7,
     local: true,
     opening: "They told her carefully, as one tells a person with a weak heart.",
-    breaths: 36,
+    breaths: 35,
     intro:
       "A Recoleta apartment, a careful message about a crash, and one quiet hour in which a woman tastes a future that is not a room with one window. After Chopin, The Story of an Hour, 1894.",
   },
@@ -1885,9 +1883,8 @@ export const SHELF: ShelfWork[] = [
     language: "English",
     minutes: 8,
     local: true,
-    opening:
-      "While the fever moved through the favelas and the hospital corridors like a red rumor with teeth, Prince Prospero sealed his compound above Guanabara Bay.",
-    breaths: 43,
+    opening: "While the fever moved through the favelas and the hospital corridors like a red rumor with teeth, Príncipe Otávio sealed his compound above Guanabara Bay.",
+    breaths: 42,
     intro:
       "A sealed hillside compound above Rio, seven rooms of curated light, and a guest who does not RSVP to plague. After Poe, The Masque of the Red Death, 1842.",
   },
@@ -1900,8 +1897,7 @@ export const SHELF: ShelfWork[] = [
     language: "English",
     minutes: 8,
     local: true,
-    opening:
-      "The private van left Kadıköy at dusk with ten seats and nine consciences already rehearsing their innocence.",
+    opening: "The private van left Kadıköy at dusk with ten seats and nine consciences already rehearsing their innocence.",
     breaths: 47,
     intro:
       "A delayed van out of Kadıköy, a cabin of respectable passengers, and one woman whose generosity is spent and then despised. After Maupassant, Boule de Suif, 1880.",
@@ -1945,9 +1941,8 @@ export const SHELF: ShelfWork[] = [
     language: "English",
     minutes: 7,
     local: true,
-    opening:
-      "Collegiate Assessor Kovalev—title polished harder than his shoes—woke in his Sea Point flat to a flatness where his nose should have been.",
-    breaths: 36,
+    opening: "Senior Assessor van Wyk—title polished harder than his shoes—woke in his Sea Point flat to a flatness where his nose should have been.",
+    breaths: 30,
     intro:
       "A Sea Point assessor wakes without his nose; on Long Street the missing feature has better meetings than he does. After Gogol, The Nose, 1836.",
   },
@@ -1960,9 +1955,8 @@ export const SHELF: ShelfWork[] = [
     language: "English",
     minutes: 7,
     local: true,
-    opening:
-      "Hermann was not rich enough for the 8th arrondissement and too proud to admit the math.",
-    breaths: 28,
+    opening: "Armand was not rich enough for the 8th arrondissement and too proud to admit the math.",
+    breaths: 27,
     intro:
       "An 8th-arrondissement obsession: three cards, a countess's secret, and a queen who will not stay buried in the deck. After Pushkin, The Queen of Spades, 1834.",
   },
@@ -1987,12 +1981,12 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 37,
+    minutes: 17,
     local: true,
-    opening: "Haruto Mori’s white coat hung by the door of the Asaka condo like a flag of adequacy.",
-    breaths: 428,
+    opening: "Emi woke before the light finished deciding what color to be.",
+    breaths: 204,
     intro:
-      "A New Town wife tries to live glamorous Tokyo as if desire were a credit line—kind clinic husband, Ginza nights, installments that collect themselves. After Flaubert, Madame Bovary, 1857. Later chapters include Emma’s collapse and deliberate self-poisoning — warn the room before you Host it.",
+      "A New Town wife tries to live glamorous Tokyo as if desire were a credit line—kind clinic husband, Ginza nights, installments that collect themselves. After Flaubert, Madame Bovary, 1857. Later chapters include Emi’s collapse and deliberate self-poisoning — warn the room before you Host it.",
   },
   {
     id: "dorian-gray-shanghai",
@@ -2001,13 +1995,12 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 37,
+    minutes: 38,
     local: true,
-    opening:
-      "Basil Hallward painted in a top-floor studio above the Bund where Huangpu freight and ferry lights scored the glass.",
-    breaths: 460,
+    opening: "Bai Sheng painted in a top-floor studio above the Bund where Huangpu freight and ferry lights scored the glass.",
+    breaths: 459,
     intro:
-      "A Bund portrait that ages while Dorian Gray does not—Shanghai clubs, a fruit-knife, the river unarchiving. After Wilde, The Picture of Dorian Gray, 1890. Later chapters include murder and the portrait’s self-destruction — warn the room before you Host it.",
+      "A Bund portrait that ages while Du Yan does not—Shanghai clubs, a fruit-knife, the river unarchiving. After Wilde, The Picture of Dorian Gray, 1890. Later chapters include murder and the portrait’s self-destruction — warn the room before you Host it.",
   },
   {
     id: "anna-karenina-milan",
@@ -2016,13 +2009,12 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 37,
+    minutes: 35,
     local: true,
-    opening:
-      "All happy families in Milan resembled one another in the curated calm of their kitchens; every unhappy family was unhappy in its own address.",
-    breaths: 434,
+    opening: "All happy families in Milan resembled one another in the curated calm of their kitchens; every unhappy family was unhappy in its own address.",
+    breaths: 417,
     intro:
-      "Fashion-week light at Milano Centrale: Anna Karenina in Milan’s arranged rooms. After Tolstoy, Anna Karenina, 1878. Later chapters include suicide at the station — warn the room before you Host it.",
+      "Fashion-week light at Milano Centrale: Anna Valenti in Milan’s arranged rooms. After Tolstoy, Anna Karenina, 1878. Later chapters include suicide at the station — warn the room before you Host it.",
   },
   {
     id: "jane-eyre-singapore",
@@ -2031,10 +2023,10 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 37,
+    minutes: 30,
     local: true,
-    opening: "Jane Eyre learned early that charity could feel like poor ventilation.",
-    breaths: 423,
+    opening: "Mei-Lin Teo learned early that charity could feel like poor ventilation.",
+    breaths: 362,
     intro:
       "Charity as poor ventilation in Katong, then a house that answers back. After Charlotte Brontë, Jane Eyre, 1847. Later chapters include attic imprisonment and fire — warn the room before you Host it.",
   },
@@ -2045,13 +2037,12 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 37,
+    minutes: 30,
     local: true,
-    opening:
-      "It is a truth universally acknowledged in Buenos Aires that a single man in possession of a good fortune must be in want of a neighborhood.",
-    breaths: 402,
+    opening: "It is a truth universally acknowledged in Buenos Aires that a single man in possession of a good fortune must be in want of a neighborhood.",
+    breaths: 361,
     intro:
-      "Recoleta manners as municipal law: Elizabeth Bennet watches Buenos Aires arrange marriages along Alvear. After Austen, Pride and Prejudice, 1813.",
+      "Recoleta manners as municipal law: Elena Benítez watches Buenos Aires arrange marriages along Alvear. After Austen, Pride and Prejudice, 1813.",
   },
   {
     id: "dracula-istanbul",
@@ -2060,11 +2051,10 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 37,
+    minutes: 38,
     local: true,
-    opening:
-      "Jonathan Harker steamed up the Bosphorus toward a yalı that needed lawyers more than guests.",
-    breaths: 465,
+    opening: "Yunus Akman steamed up the Bosphorus toward a yalı that needed lawyers more than guests.",
+    breaths: 458,
     intro:
       "A yalı that needs lawyers more than guests: Istanbul split across the Bosphorus. After Stoker, Dracula, 1897. Later chapters include staking and death — warn the room before you Host it.",
   },
@@ -2075,11 +2065,10 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 37,
+    minutes: 32,
     local: true,
-    opening:
-      "Rodion Romanovich Raskolnikov lived in a garret above Long Street where bass from the clubs shook the floorboards and Table Mountain sat in the window like a mute jury.",
-    breaths: 454,
+    opening: "Ruan Steyn woke in a Long Street garret that charged rent like a personal insult and watched Table Mountain through warped glass as if the mountain were a jury that declined to speak.",
+    breaths: 386,
     intro:
       "A Long Street garret, Table Mountain as mute jury, and an article that becomes a crime. After Dostoevsky, Crime and Punishment, 1866. Later chapters include axe murder and exile — warn the room before you Host it.",
   },
@@ -2090,13 +2079,12 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 37,
+    minutes: 33,
     local: true,
-    opening:
-      "Newland Archer arrived at La Fenice on a damp Venetian evening when the lagoon held the theater's lights like a second, colder audience.",
-    breaths: 453,
+    opening: "Niccolò Archi arrived at La Fenice already engaged in the eyes of Venice’s invisible police—engaged to Maddalena Vianello, whose perfection photographed as innocence and functioned as law.",
+    breaths: 393,
     intro:
-      "A Fenice box where Venetian lace cuts: Newland Archer watches Ellen Olenska refuse the costume of innocence. After Wharton, The Age of Innocence, 1920.",
+      "A Fenice box where Venetian lace cuts: Niccolò Archi watches Elena Orsini refuse the costume of innocence. After Wharton, The Age of Innocence, 1920.",
   },
   {
     id: "tess-lisbon",
@@ -2105,13 +2093,12 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 37,
+    minutes: 32,
     local: true,
-    opening:
-      "Tess Durbeyfield walked the Alentejo track before dawn while cork oaks held the last dark and Lisbon's glow waited beyond the hills like a rumor of money.",
-    breaths: 497,
+    opening: "João Duarte heard his spent nobility in a village bar that smelled of beer and old radio.",
+    breaths: 389,
     intro:
-      "An Alentejo track and a Tagus-side villa: Tess Durbeyfield above Lisbon’s rumor of money. After Hardy, Tess of the d'Urbervilles, 1891. Later chapters include murder and execution — warn the room before you Host it.",
+      "A spent name and a Tagus-side villa: Teresa Duarte above Lisbon’s rumor of money. After Hardy, Tess of the d'Urbervilles, 1891. Later chapters include murder and execution — warn the room before you Host it.",
   },
   {
     id: "scarlet-letter-kyoto",
@@ -2120,11 +2107,10 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 37,
+    minutes: 24,
     local: true,
-    opening:
-      "Hester Prynne stood on a merchant-quarter scaffold in Kyoto while phones rose like a second congregation and the embroidered A on her chest caught morning light with defiant craft.",
-    breaths: 490,
+    opening: "Hisako stood in public shame at a Kyoto plaza near temple tourism’s edge—scaffold analogue—with Shinju in her arms and a scarlet A embroidered with unsettling artistry.",
+    breaths: 286,
     intro:
       "A Kyoto scaffold, a letter that will not come off, and merchant-quarter shame. After Hawthorne, The Scarlet Letter, 1850. Later chapters include public shaming and a deathbed — warn the room before you Host it.",
   },
@@ -2135,11 +2121,10 @@ export const SHELF: ShelfWork[] = [
     year: 2026,
     form: "other",
     language: "English",
-    minutes: 37,
+    minutes: 19,
     local: true,
-    opening:
-      "Mr. Lockwood, a soft coastal tenant seeking quiet above Rio's postcard bay, rented the lower house—Thrushcross stand-in among Atlantic scrub and condo glitter far below—and walked uphill to pay respects at Wuthering Heights, a hill estate of old money and worse manners.",
-    breaths: 445,
+    opening: "Sr. Vargas brought Heitor to the hill estate above Rio’s bay—dirty, staring, already weather.",
+    breaths: 232,
     intro:
       "A hillside estate above Rio’s bay: glamour facing water, wind facing rock. After Emily Brontë, Wuthering Heights, 1847. Later chapters include cruelty, death, and haunting — warn the room before you Host it.",
   },

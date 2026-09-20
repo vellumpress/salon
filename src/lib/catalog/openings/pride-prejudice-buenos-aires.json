@@ -4,7 +4,7 @@
   "author": "Salon",
   "year": "2026",
   "note": "A Recoleta remake of Pride and Prejudice: manners as municipal law along Alvear. After Austen, Pride and Prejudice, 1813.",
-  "minutes": 37,
+  "minutes": 30,
   "cover": "",
   "coverAlt": "",
   "scenes": [
@@ -17,128 +17,128 @@
     },
     {
       "id": "s1",
-      "title": "Bingley arrives",
+      "title": "Beltrán arrives",
       "place": "Buenos Aires",
-      "reentry": "Charles Bingley rented light: a Palermo house with rooms that seemed designed for dancing.",
+      "reentry": "Carlos Beltrán rented light: a Palermo house with rooms that seemed designed for dancing.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s2",
-      "title": "Netherfield as Palermo fever",
+      "title": "Casa Palermo as Palermo fever",
       "place": "Buenos Aires",
-      "reentry": "Jane caught cold after a rain-soaked invitation engineered by Mrs Bennet; she stayed at Bingley’s house under sisterly care.",
+      "reentry": "Julieta caught cold after a rain-soaked invitation engineered by Sra. Benítez; she stayed at Beltrán’s house under sisterly care.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
-      "title": "Wickham in uniform charm",
+      "title": "Vázquez in uniform charm",
       "place": "Buenos Aires",
-      "reentry": "George Wickham arrived with militia glamour and a story about Darcy’s cruelty regarding an inheritance.",
+      "reentry": "Jorge Vázquez arrived with militia glamour and a story about Duarte’s cruelty regarding an inheritance.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
       "title": "Proposal at the wrong temperature",
       "place": "Buenos Aires",
-      "reentry": "When Bingley left town abruptly—Darcy and the sisters steering him from Jane—Elizabeth’s anger found a target.",
+      "reentry": "When Beltrán left town abruptly—Duarte and the sisters steering him from Julieta—Elena’s anger found a target.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s5",
-      "title": "What Darcy wrote",
+      "title": "What Duarte wrote",
       "place": "Buenos Aires",
-      "reentry": "The morning after the failed proposal Darcy handed Elizabeth a letter on a walk near the Recoleta cemetery wall—stone angels, cypress, the city’s talent for making death look curated.",
+      "reentry": "The morning after the failed proposal Duarte handed Elena a letter on a walk near the Recoleta cemetery wall—stone angels, cypress, the city’s talent for making death look curated.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s6",
-      "title": "Lydia’s noise and Brighton",
+      "title": "Lidia’s noise and Brighton",
       "place": "Buenos Aires",
-      "reentry": "Lydia Bennet chased officers as if flirtation were a job with overtime.",
+      "reentry": "Lidia Benítez chased officers as if flirtation were a job with overtime.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s7",
       "title": "Elopement",
       "place": "Buenos Aires",
-      "reentry": "News found them like a thrown stone: Lydia had run off with Wickham.",
+      "reentry": "News found them like a thrown stone: Lidia had run off with Vázquez.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s8",
-      "title": "Lady Catherine",
+      "title": "Doña Catalina",
       "place": "Buenos Aires",
-      "reentry": "Lady Catherine de Bourgh descended on the Recoleta apartment like an audit.",
+      "reentry": "Doña Catalina de Borja descended on the Recoleta apartment like an audit.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s9",
       "title": "Second proposal",
       "place": "Buenos Aires",
-      "reentry": "Bingley returned and proposed to Jane with unguarded joy.",
+      "reentry": "Beltrán returned and proposed to Julieta with unguarded joy.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s10",
       "title": "Assemblies, visits, and the slow correction",
       "place": "Buenos Aires",
-      "reentry": "Before the letter, Elizabeth’s days filled with Mrs Bennet’s nerves, Mary’s extracts, Kitty and Lydia’s officer gossip, and Jane’s gentle reports of Bingley’s smiles.",
+      "reentry": "Before the letter, Elena’s days filled with Sra. Benítez’s nerves, María’s extracts, Inés and Lidia’s officer gossip, and Julieta’s gentle reports of Beltrán’s smiles.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s11",
       "title": "Scenes that earn their place",
       "place": "Buenos Aires",
-      "reentry": "Mrs Bennet’s matchmaking filled the apartment like perfume that would not open a window—yet Elizabeth loved her mother with irritated fidelity.",
+      "reentry": "Sra. Benítez’s matchmaking filled the apartment like perfume that would not open a window—yet Elena loved her mother with irritated fidelity.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s12",
       "title": "Continuous middle",
       "place": "Buenos Aires",
-      "reentry": "Between assembly and altar the city performed seasons: humid assemblies, sharp winter light on Alvear, spring in the Japanese Garden where Elizabeth told Jane, carefully, that she had been wrong about Darcy without yet confessing love.",
+      "reentry": "Between assembly and altar the city performed seasons: humid assemblies, sharp winter light on Alvear, spring in the Japanese Garden where Elena told Julieta, carefully, that she had been wrong about Duarte without yet confessing love.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s13",
       "title": "More flesh on kept beats",
       "place": "Buenos Aires",
-      "reentry": "Elizabeth’s early walk with Darcy after Jane’s recovery at Bingley’s house included a silence in which both misread the other’s quiet.",
+      "reentry": "Elena’s early walk with Duarte after Julieta’s recovery at Beltrán’s house included a silence in which both misread the other’s quiet.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s14",
       "title": "Extended continuous narrative",
       "place": "Buenos Aires",
-      "reentry": "Elizabeth woke early on the day she would first see Darcy’s estancia and dressed without telling herself stories about chance.",
+      "reentry": "Elena woke early on the day she would first see Duarte’s estancia and dressed without telling herself stories about chance.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s15",
-      "title": "Collins, Charlotte, and Hunsford weeks",
+      "title": "Colinas, Carlota, and Hunsford weeks",
       "place": "Buenos Aires",
-      "reentry": "Mr Collins arrived with compliments prepared like sandwiches for a picnic he alone enjoyed.",
+      "reentry": "Sr. Colinas arrived with compliments prepared like sandwiches for a picnic he alone enjoyed.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s16",
       "title": "Brighton road and the estancia hour by hour",
       "place": "Buenos Aires",
-      "reentry": "Lydia’s departure toward the militia’s seaside amusement was flagged with ribbons and parental failure.",
+      "reentry": "Lidia’s departure toward the militia’s seaside amusement was flagged with ribbons and parental failure.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s17",
       "title": "Settlements and second chances",
       "place": "Buenos Aires",
-      "reentry": "Uncle Gardiner’s letters described negotiations; Aunt Gardiner’s later honesty named Darcy as the purse and the will.",
+      "reentry": "Uncle Garcés’s letters described negotiations; Aunt Garcés’s later honesty named Duarte as the purse and the will.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s18",
       "title": "Daily life of an education",
       "place": "Buenos Aires",
-      "reentry": "Elizabeth’s marriage to Darcy did not end her walking.",
+      "reentry": "Elena’s marriage to Duarte did not end her walking.",
       "prompt": "A word from this stretch."
     },
     {
@@ -152,14 +152,14 @@
       "id": "s20",
       "title": "Further kept texture",
       "place": "Buenos Aires",
-      "reentry": "Before any assembly, Mrs Bennet’s campaign for advantageous marriage saturated breakfasts.",
+      "reentry": "Before any assembly, Sra. Benítez’s campaign for advantageous marriage saturated breakfasts.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s21",
       "title": "Closing movement at novel length",
       "place": "Buenos Aires",
-      "reentry": "In the weeks after her engagement Elizabeth found old insults returning as comedy.",
+      "reentry": "In the weeks after her engagement Elena found old insults returning as comedy.",
       "prompt": "A word from this stretch."
     }
   ],
@@ -172,22 +172,22 @@
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "Mrs Bennet of a Recoleta apartment along Alvear treated this truth as municipal law."
+      "text": "Sra. Benítez of a Recoleta apartment along Alvear treated this truth as municipal law."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "Mr Bennet treated it as entertainment."
+      "text": "Sr. Benítez treated it as entertainment."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "Their five daughters—Jane, Elizabeth, Mary, Kitty, Lydia—arranged themselves along a spectrum from sweetness to noise."
+      "text": "Their five daughters—Julieta, Elena, María, Inés, Lidia—arranged themselves along a spectrum from sweetness to noise."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "Elizabeth Bennet kept wit as both shield and instrument."
+      "text": "Elena Benítez kept wit as both shield and instrument."
     },
     {
       "id": "s0-5",
@@ -197,7 +197,7 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "Charles Bingley rented light: a Palermo house with rooms that seemed designed for dancing."
+      "text": "Carlos Beltrán rented light: a Palermo house with rooms that seemed designed for dancing."
     },
     {
       "id": "s1-1",
@@ -207,17 +207,17 @@
     {
       "id": "s1-2",
       "sceneId": "s1",
-      "text": "With him came his sisters and his friend Fitzwilliam Darcy, whose fortune was larger and whose manners were not."
+      "text": "With him came his sisters and his friend Facundo Duarte, whose fortune was larger and whose manners were not."
     },
     {
       "id": "s1-3",
       "sceneId": "s1",
-      "text": "At the first assembly Bingley danced with Jane Bennet twice."
+      "text": "At the first assembly Beltrán danced with Julieta Benítez twice."
     },
     {
       "id": "s1-4",
       "sceneId": "s1",
-      "text": "Darcy declined Elizabeth’s acquaintance with a sentence about crowded rooms and tolerable looks."
+      "text": "Duarte declined Elena’s acquaintance with a sentence about crowded rooms and tolerable looks."
     },
     {
       "id": "s1-5",
@@ -227,32 +227,32 @@
     {
       "id": "s1-6",
       "sceneId": "s1",
-      "text": "Elizabeth: He is the proudest man I have ever met who still expects applause for breathing."
+      "text": "Elena: He is the proudest man I have ever met who still expects applause for breathing."
     },
     {
       "id": "s1-7",
       "sceneId": "s1",
-      "text": "Jane: He is simply shy."
+      "text": "Julieta: He is simply shy."
     },
     {
       "id": "s1-8",
       "sceneId": "s1",
-      "text": "Elizabeth: Shyness does not insult strangers for sport."
+      "text": "Elena: Shyness does not insult strangers for sport."
     },
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "Jane caught cold after a rain-soaked invitation engineered by Mrs Bennet; she stayed at Bingley’s house under sisterly care."
+      "text": "Julieta caught cold after a rain-soaked invitation engineered by Sra. Benítez; she stayed at Beltrán’s house under sisterly care."
     },
     {
       "id": "s2-1",
       "sceneId": "s2",
-      "text": "Elizabeth walked in to nurse her, muddy hems offending Caroline Bingley’s taste."
+      "text": "Elena walked in to nurse her, muddy hems offending Carolina Beltrán’s taste."
     },
     {
       "id": "s2-2",
       "sceneId": "s2",
-      "text": "Darcy watched Elizabeth and began, against intention, to revise his first assessment."
+      "text": "Duarte watched Elena and began, against intention, to revise his first assessment."
     },
     {
       "id": "s2-3",
@@ -262,62 +262,62 @@
     {
       "id": "s2-4",
       "sceneId": "s2",
-      "text": "Caroline aimed barbs; Elizabeth returned them cleaned."
+      "text": "Caroline aimed barbs; Elena returned them cleaned."
     },
     {
       "id": "s2-5",
       "sceneId": "s2",
-      "text": "Bingley’s regard for Jane grew obvious."
+      "text": "Beltrán’s regard for Julieta grew obvious."
     },
     {
       "id": "s2-6",
       "sceneId": "s2",
-      "text": "Darcy’s regard for Elizabeth grew inconvenient."
+      "text": "Duarte’s regard for Elena grew inconvenient."
     },
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "George Wickham arrived with militia glamour and a story about Darcy’s cruelty regarding an inheritance."
+      "text": "Jorge Vázquez arrived with militia glamour and a story about Duarte’s cruelty regarding an inheritance."
     },
     {
       "id": "s3-1",
       "sceneId": "s3",
-      "text": "Elizabeth, predisposed by the assembly insult, believed him."
+      "text": "Elena, predisposed by the assembly insult, believed him."
     },
     {
       "id": "s3-2",
       "sceneId": "s3",
-      "text": "Wickham’s ease felt like truth because it flattered her judgment."
+      "text": "Vázquez’s ease felt like truth because it flattered her judgment."
     },
     {
       "id": "s3-3",
       "sceneId": "s3",
-      "text": "Lady Catherine de Bourgh’s nephew Colonel Fitzwilliam later complicated the portrait; for now Elizabeth’s prejudice wore Wickham’s smile as evidence."
+      "text": "Doña Catalina de Borja’s nephew Coronel Ignacio later complicated the portrait; for now Elena’s prejudice wore Vázquez’s smile as evidence."
     },
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "When Bingley left town abruptly—Darcy and the sisters steering him from Jane—Elizabeth’s anger found a target."
+      "text": "When Beltrán left town abruptly—Duarte and the sisters steering him from Julieta—Elena’s anger found a target."
     },
     {
       "id": "s4-1",
       "sceneId": "s4",
-      "text": "Jane suffered quietly."
+      "text": "Julieta suffered quietly."
     },
     {
       "id": "s4-2",
       "sceneId": "s4",
-      "text": "Then Darcy found Elizabeth alone and proposed marriage in terms that insulted her family while confessing his love as a lapse he had conquered insufficiently."
+      "text": "Then Duarte found Elena alone and proposed marriage in terms that insulted her family while confessing his love as a lapse he had conquered insufficiently."
     },
     {
       "id": "s4-3",
       "sceneId": "s4",
-      "text": "Darcy: You must allow me to tell you how ardently I admire and love you—against my reason, my family’s expectations, and your connections."
+      "text": "Duarte: You must allow me to tell you how ardently I admire and love you—against my reason, my family’s expectations, and your connections."
     },
     {
       "id": "s4-4",
       "sceneId": "s4",
-      "text": "Elizabeth: Against your reason?"
+      "text": "Elena: Against your reason?"
     },
     {
       "id": "s4-5",
@@ -327,17 +327,17 @@
     {
       "id": "s4-6",
       "sceneId": "s4",
-      "text": "I would not marry a man who ruined my sister’s happiness and bragged of the ruin—and who, if Wickham tells true, ruined him too."
+      "text": "I would not marry a man who ruined my sister’s happiness and bragged of the ruin—and who, if Vázquez tells true, ruined him too."
     },
     {
       "id": "s4-7",
       "sceneId": "s4",
-      "text": "Darcy left white with fury and something like respect."
+      "text": "Duarte left white with fury and something like respect."
     },
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "The morning after the failed proposal Darcy handed Elizabeth a letter on a walk near the Recoleta cemetery wall—stone angels, cypress, the city’s talent for making death look curated."
+      "text": "The morning after the failed proposal Duarte handed Elena a letter on a walk near the Recoleta cemetery wall—stone angels, cypress, the city’s talent for making death look curated."
     },
     {
       "id": "s5-1",
@@ -347,17 +347,17 @@
     {
       "id": "s5-2",
       "sceneId": "s5",
-      "text": "He explained Bingley: he had believed Jane indifferent, had separated them to protect his friend from a family he judged grasping."
+      "text": "He explained Beltrán: he had believed Julieta indifferent, had separated them to protect his friend from a family he judged grasping."
     },
     {
       "id": "s5-3",
       "sceneId": "s5",
-      "text": "He explained Wickham: the steward’s son, the attempted elopement with Georgiana Darcy at fifteen, the debts, the lies."
+      "text": "He explained Vázquez: the steward’s son, the attempted elopement with Josefina Duarte at fifteen, the debts, the lies."
     },
     {
       "id": "s5-4",
       "sceneId": "s5",
-      "text": "Facts rearranged Elizabeth’s furniture."
+      "text": "Facts rearranged Elena’s furniture."
     },
     {
       "id": "s5-5",
@@ -377,12 +377,12 @@
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "Lydia Bennet chased officers as if flirtation were a job with overtime."
+      "text": "Lidia Benítez chased officers as if flirtation were a job with overtime."
     },
     {
       "id": "s6-1",
       "sceneId": "s6",
-      "text": "When the regiment moved and Lydia secured an invitation toward a coastal posting—recast as a seaside resort circuit from Buenos Aires society—Elizabeth warned; Mr Bennet shrugged; Mrs Bennet rejoiced."
+      "text": "When the regiment moved and Lidia secured an invitation toward a coastal posting—recast as a seaside resort circuit from Buenos Aires society—Elena warned; Sr. Benítez shrugged; Sra. Benítez rejoiced."
     },
     {
       "id": "s6-2",
@@ -392,7 +392,7 @@
     {
       "id": "s6-3",
       "sceneId": "s6",
-      "text": "Elizabeth toured north with uncle and aunt Gardiner—estancia country as Pemberley’s analogue: Darcy’s family estate among humid green and careful horses."
+      "text": "Elena toured north with uncle and aunt Garcés—estancia country as Estancia Los Álamos’s analogue: Duarte’s family estate among humid green and careful horses."
     },
     {
       "id": "s6-4",
@@ -407,12 +407,12 @@
     {
       "id": "s6-6",
       "sceneId": "s6",
-      "text": "Georgiana’s sweetness undid remaining caricature."
+      "text": "Josefina’s sweetness undid remaining caricature."
     },
     {
       "id": "s7-0",
       "sceneId": "s7",
-      "text": "News found them like a thrown stone: Lydia had run off with Wickham."
+      "text": "News found them like a thrown stone: Lidia had run off with Vázquez."
     },
     {
       "id": "s7-1",
@@ -422,17 +422,17 @@
     {
       "id": "s7-2",
       "sceneId": "s7",
-      "text": "The Gardiners and Elizabeth returned; Mr Bennet searched; letters negotiated."
+      "text": "The Garcés and Elena returned; Sr. Benítez searched; letters negotiated."
     },
     {
       "id": "s7-3",
       "sceneId": "s7",
-      "text": "Secretly Darcy found Wickham, paid debts, bought the marriage that converted scandal into a merely embarrassing match."
+      "text": "Secretly Duarte found Vázquez, paid debts, bought the marriage that converted scandal into a merely embarrassing match."
     },
     {
       "id": "s7-4",
       "sceneId": "s7",
-      "text": "Elizabeth learned of Darcy’s hand through aunt Gardiner’s careful honesty."
+      "text": "Elena learned of Duarte’s hand through aunt Garcés’s careful honesty."
     },
     {
       "id": "s7-5",
@@ -447,22 +447,22 @@
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "Lady Catherine de Bourgh descended on the Recoleta apartment like an audit."
+      "text": "Doña Catalina de Borja descended on the Recoleta apartment like an audit."
     },
     {
       "id": "s8-1",
       "sceneId": "s8",
-      "text": "She demanded Elizabeth renounce Darcy—for a planned match with Miss de Bourgh, for hierarchy, for the pleasure of command."
+      "text": "She demanded Elena renounce Duarte—for a planned match with Miss de Borja, for hierarchy, for the pleasure of command."
     },
     {
       "id": "s8-2",
       "sceneId": "s8",
-      "text": "Lady Catherine: You will promise never to marry him."
+      "text": "Doña Catalina: You will promise never to marry him."
     },
     {
       "id": "s8-3",
       "sceneId": "s8",
-      "text": "Elizabeth: I will promise nothing of the kind."
+      "text": "Elena: I will promise nothing of the kind."
     },
     {
       "id": "s8-4",
@@ -472,32 +472,32 @@
     {
       "id": "s8-5",
       "sceneId": "s8",
-      "text": "Lady Catherine left offended."
+      "text": "Doña Catalina left offended."
     },
     {
       "id": "s8-6",
       "sceneId": "s8",
-      "text": "Her report to Darcy—that Elizabeth had not refused him—became, ironically, encouragement."
+      "text": "Her report to Duarte—that Elena had not refused him—became, ironically, encouragement."
     },
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "Bingley returned and proposed to Jane with unguarded joy."
+      "text": "Beltrán returned and proposed to Julieta with unguarded joy."
     },
     {
       "id": "s9-1",
       "sceneId": "s9",
-      "text": "Jane’s happiness repaired a wing of the house."
+      "text": "Julieta’s happiness repaired a wing of the house."
     },
     {
       "id": "s9-2",
       "sceneId": "s9",
-      "text": "Darcy found Elizabeth in the thin privacy a city apartment allows."
+      "text": "Duarte found Elena in the thin privacy a city apartment allows."
     },
     {
       "id": "s9-3",
       "sceneId": "s9",
-      "text": "Darcy: My affections and wishes are unchanged."
+      "text": "Duarte: My affections and wishes are unchanged."
     },
     {
       "id": "s9-4",
@@ -507,7 +507,7 @@
     {
       "id": "s9-5",
       "sceneId": "s9",
-      "text": "Elizabeth: They have."
+      "text": "Elena: They have."
     },
     {
       "id": "s9-6",
@@ -527,32 +527,32 @@
     {
       "id": "s9-9",
       "sceneId": "s9",
-      "text": "Jane and Bingley married."
+      "text": "Julieta and Beltrán married."
     },
     {
       "id": "s9-10",
       "sceneId": "s9",
-      "text": "Lydia and Wickham remained a tax on nerves."
+      "text": "Lidia and Vázquez remained a tax on nerves."
     },
     {
       "id": "s9-11",
       "sceneId": "s9",
-      "text": "Kitty improved by proximity to sense."
+      "text": "Inés improved by proximity to sense."
     },
     {
       "id": "s9-12",
       "sceneId": "s9",
-      "text": "Mary found lectures."
+      "text": "María found lectures."
     },
     {
       "id": "s9-13",
       "sceneId": "s9",
-      "text": "Mrs Bennet crowed."
+      "text": "Sra. Benítez crowed."
     },
     {
       "id": "s9-14",
       "sceneId": "s9",
-      "text": "Mr Bennet joked with relief that tasted like love."
+      "text": "Sr. Benítez joked with relief that tasted like love."
     },
     {
       "id": "s9-15",
@@ -562,7 +562,7 @@
     {
       "id": "s9-16",
       "sceneId": "s9",
-      "text": "Names stayed: Elizabeth Bennet, Darcy, Jane, Bingley, Wickham, Mrs Bennet, Mr Bennet, Lydia, Kitty, Mary, Georgiana, Lady Catherine, the Gardiners."
+      "text": "Names stayed: Elena Benítez, Duarte, Julieta, Beltrán, Vázquez, Sra. Benítez, Sr. Benítez, Lidia, Inés, María, Josefina, Doña Catalina, los Garcés."
     },
     {
       "id": "s9-17",
@@ -572,37 +572,37 @@
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "Before the letter, Elizabeth’s days filled with Mrs Bennet’s nerves, Mary’s extracts, Kitty and Lydia’s officer gossip, and Jane’s gentle reports of Bingley’s smiles."
+      "text": "Before the letter, Elena’s days filled with Sra. Benítez’s nerves, María’s extracts, Inés and Lidia’s officer gossip, and Julieta’s gentle reports of Beltrán’s smiles."
     },
     {
       "id": "s10-1",
       "sceneId": "s10",
-      "text": "Charlotte Lucas—practical, clear-eyed—accepted Mr Collins’s proposal when Collins, Lady Catherine’s clerical satellite, rebound from Elizabeth’s refusal to Charlotte’s availability."
+      "text": "Carlota Luque—practical, clear-eyed—accepted Sr. Colinas’s proposal when Colinas, Doña Catalina’s clerical satellite, rebound from Elena’s refusal to Carlota’s availability."
     },
     {
       "id": "s10-2",
       "sceneId": "s10",
-      "text": "Elizabeth mourned the match as a verdict on women’s economies; Charlotte called it a house and a future."
+      "text": "Elena mourned the match as a verdict on women’s economies; Carlota called it a house and a future."
     },
     {
       "id": "s10-3",
       "sceneId": "s10",
-      "text": "At Rosings—recast as Lady Catherine’s imposing residence in a northern suburb of imported solemnity—Collins toadying and Lady Catherine’s interrogations gave Elizabeth sport."
+      "text": "At Rosings—recast as Doña Catalina’s imposing residence in a northern suburb of imported solemnity—Colinas toadying and Doña Catalina’s interrogations gave Elena sport."
     },
     {
       "id": "s10-4",
       "sceneId": "s10",
-      "text": "Colonel Fitzwilliam’s conversation revealed Darcy’s role in steering Bingley away—fuel for the rejected proposal’s anger—before the letter reframed motive."
+      "text": "Coronel Ignacio’s conversation revealed Duarte’s role in steering Beltrán away—fuel for the rejected proposal’s anger—before the letter reframed motive."
     },
     {
       "id": "s10-5",
       "sceneId": "s10",
-      "text": "Elizabeth: So he boasts of separating them."
+      "text": "Elena: So he boasts of separating them."
     },
     {
       "id": "s10-6",
       "sceneId": "s10",
-      "text": "Fitzwilliam: He calls it care."
+      "text": "Facundo: He calls it care."
     },
     {
       "id": "s10-7",
@@ -612,7 +612,7 @@
     {
       "id": "s10-8",
       "sceneId": "s10",
-      "text": "After the letter Elizabeth replayed Wickham’s every glance and found performance where she had stored sincerity."
+      "text": "After the letter Elena replayed Vázquez’s every glance and found performance where she had stored sincerity."
     },
     {
       "id": "s10-9",
@@ -627,42 +627,42 @@
     {
       "id": "s10-11",
       "sceneId": "s10",
-      "text": "At the estancia—Pemberley analogue—housekeeper praise of Darcy as landlord and brother contradicted Elizabeth’s early cartoon."
+      "text": "At the estancia—Estancia Los Álamos analogue—housekeeper praise of Duarte as landlord and brother contradicted Elena’s early cartoon."
     },
     {
       "id": "s10-12",
       "sceneId": "s10",
-      "text": "When Darcy joined them unexpectedly, his courtesy to the Gardiners was a second proposal without words."
+      "text": "When Duarte joined them unexpectedly, his courtesy to los Garcés was a second proposal without words."
     },
     {
       "id": "s10-13",
       "sceneId": "s10",
-      "text": "Elizabeth felt desire and fear braided: desire for the man emerging, fear of how much she had misread."
+      "text": "Elena felt desire and fear braided: desire for the man emerging, fear of how much she had misread."
     },
     {
       "id": "s10-14",
       "sceneId": "s10",
-      "text": "Lydia’s elopement letter arrived on ordinary paper."
+      "text": "Lidia’s elopement letter arrived on ordinary paper."
     },
     {
       "id": "s10-15",
       "sceneId": "s10",
-      "text": "Mrs Bennet took to her room; Mr Bennet took to roads and regret; Mary moralized; Kitty cried from thwarted envy."
+      "text": "Sra. Benítez took to her room; Sr. Benítez took to roads and regret; María moralized; Inés cried from thwarted envy."
     },
     {
       "id": "s10-16",
       "sceneId": "s10",
-      "text": "Elizabeth’s private knowledge of Darcy’s intervention came slowly, then all at once, and remade gratitude into love conscious of debt without being purchased."
+      "text": "Elena’s private knowledge of Duarte’s intervention came slowly, then all at once, and remade gratitude into love conscious of debt without being purchased."
     },
     {
       "id": "s10-17",
       "sceneId": "s10",
-      "text": "Bingley’s return was Darcy’s unspoken restitution for Jane."
+      "text": "Beltrán’s return was Duarte’s unspoken restitution for Julieta."
     },
     {
       "id": "s10-18",
       "sceneId": "s10",
-      "text": "Watching her sister’s face, Elizabeth understood happiness as contagious without being simple."
+      "text": "Watching her sister’s face, Elena understood happiness as contagious without being simple."
     },
     {
       "id": "s10-19",
@@ -687,32 +687,32 @@
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "Mrs Bennet’s matchmaking filled the apartment like perfume that would not open a window—yet Elizabeth loved her mother with irritated fidelity."
+      "text": "Sra. Benítez’s matchmaking filled the apartment like perfume that would not open a window—yet Elena loved her mother with irritated fidelity."
     },
     {
       "id": "s11-1",
       "sceneId": "s11",
-      "text": "Mr Bennet’s library was refuge and abdication; Elizabeth forgave the abdication because wit had been their shared language since childhood."
+      "text": "Sr. Benítez’s library was refuge and abdication; Elena forgave the abdication because wit had been their shared language since childhood."
     },
     {
       "id": "s11-2",
       "sceneId": "s11",
-      "text": "Caroline Bingley’s letters to Jane mixed sugar and knife."
+      "text": "Carolina Beltrán’s letters to Julieta mixed sugar and knife."
     },
     {
       "id": "s11-3",
       "sceneId": "s11",
-      "text": "Elizabeth read them aloud in parody until Jane pleaded for charity."
+      "text": "Elena read them aloud in parody until Julieta pleaded for charity."
     },
     {
       "id": "s11-4",
       "sceneId": "s11",
-      "text": "Charity, Elizabeth decided, should not require stupidity; she softened her parody and not her assessment."
+      "text": "Charity, Elena decided, should not require stupidity; she softened her parody and not her assessment."
     },
     {
       "id": "s11-5",
       "sceneId": "s11",
-      "text": "Darcy’s first admiration showed in a request to dance that Elizabeth refused; later in a defense of her against Caroline’s sneers about relatives in trade—the Gardiners being precisely the relatives who would later commend him."
+      "text": "Duarte’s first admiration showed in a request to dance that Elena refused; later in a defense of her against Caroline’s sneers about relatives in trade—los Garcés being precisely the relatives who would later commend him."
     },
     {
       "id": "s11-6",
@@ -722,7 +722,7 @@
     {
       "id": "s11-7",
       "sceneId": "s11",
-      "text": "Wickham’s debts in local shops surfaced after the marriage settlement; Elizabeth received the accounting as confirmation."
+      "text": "Vázquez’s debts in local shops surfaced after the marriage settlement; Elena received the accounting as confirmation."
     },
     {
       "id": "s11-8",
@@ -737,27 +737,27 @@
     {
       "id": "s11-10",
       "sceneId": "s11",
-      "text": "Georgiana Darcy’s piano and shyness gave Elizabeth a sister-in-law who needed protection from the world’s Wickhams."
+      "text": "Josefina Duarte’s piano and shyness gave Elena a sister-in-law who needed protection from the world’s Vicuñas."
     },
     {
       "id": "s11-11",
       "sceneId": "s11",
-      "text": "Elizabeth offered friendship without condescension."
+      "text": "Elena offered friendship without condescension."
     },
     {
       "id": "s11-12",
       "sceneId": "s11",
-      "text": "Darcy watched and loved her more for that economy of kindness."
+      "text": "Duarte watched and loved her more for that economy of kindness."
     },
     {
       "id": "s11-13",
       "sceneId": "s11",
-      "text": "Lady Catherine’s final visit after the engagement demanded denial; Elizabeth’s refusal stood."
+      "text": "Doña Catalina’s final visit after the engagement demanded denial; Elena’s refusal stood."
     },
     {
       "id": "s11-14",
       "sceneId": "s11",
-      "text": "The old woman’s letter of denunciation became a family joke Mr Bennet treasured."
+      "text": "The old woman’s letter of denunciation became a family joke Sr. Benítez treasured."
     },
     {
       "id": "s11-15",
@@ -767,22 +767,22 @@
     {
       "id": "s11-16",
       "sceneId": "s11",
-      "text": "The wedding morning smelled of flowers and Mrs Bennet’s triumph."
+      "text": "The wedding morning smelled of flowers and Sra. Benítez’s triumph."
     },
     {
       "id": "s11-17",
       "sceneId": "s11",
-      "text": "Elizabeth, in a dress chosen for walking as much as display, met Darcy’s eyes and found neither pride nor prejudice—only the long work ahead of two people who had learned to read."
+      "text": "Elena, in a dress chosen for walking as much as display, met Duarte’s eyes and found neither pride nor prejudice—only the long work ahead of two people who had learned to read."
     },
     {
       "id": "s12-0",
       "sceneId": "s12",
-      "text": "Between assembly and altar the city performed seasons: humid assemblies, sharp winter light on Alvear, spring in the Japanese Garden where Elizabeth told Jane, carefully, that she had been wrong about Darcy without yet confessing love."
+      "text": "Between assembly and altar the city performed seasons: humid assemblies, sharp winter light on Alvear, spring in the Japanese Garden where Elena told Julieta, carefully, that she had been wrong about Duarte without yet confessing love."
     },
     {
       "id": "s12-1",
       "sceneId": "s12",
-      "text": "Jane rejoiced without interrogation."
+      "text": "Julieta rejoiced without interrogation."
     },
     {
       "id": "s12-2",
@@ -792,22 +792,22 @@
     {
       "id": "s12-3",
       "sceneId": "s12",
-      "text": "Mr Collins’s letters congratulated with insults."
+      "text": "Sr. Colinas’s letters congratulated with insults."
     },
     {
       "id": "s12-4",
       "sceneId": "s12",
-      "text": "Charlotte’s postscripts asked Elizabeth to visit; Elizabeth did, and saw a marriage of management that worked on its own terms."
+      "text": "Carlota’s postscripts asked Elena to visit; Elena did, and saw a marriage of management that worked on its own terms."
     },
     {
       "id": "s12-5",
       "sceneId": "s12",
-      "text": "She would not have chosen it; she respected Charlotte’s authorship of her own compromise."
+      "text": "She would not have chosen it; she respected Carlota’s authorship of her own compromise."
     },
     {
       "id": "s12-6",
       "sceneId": "s12",
-      "text": "When Darcy’s name first softened in Elizabeth’s mouth, she was alone on a balcony above Recoleta traffic."
+      "text": "When Duarte’s name first softened in Elena’s mouth, she was alone on a balcony above Recoleta traffic."
     },
     {
       "id": "s12-7",
@@ -822,17 +822,17 @@
     {
       "id": "s12-9",
       "sceneId": "s12",
-      "text": "She laughed at herself and went in to help Mary find a misplaced sermon book."
+      "text": "She laughed at herself and went in to help María find a misplaced sermon book."
     },
     {
       "id": "s12-10",
       "sceneId": "s12",
-      "text": "Lydia’s wedding to Wickham was endured."
+      "text": "Lidia’s wedding to Vázquez was endured."
     },
     {
       "id": "s12-11",
       "sceneId": "s12",
-      "text": "Darcy stood backstage of the arrangement; Elizabeth’s eyes thanked him across a room before speech was possible."
+      "text": "Duarte stood backstage of the arrangement; Elena’s eyes thanked him across a room before speech was possible."
     },
     {
       "id": "s12-12",
@@ -847,27 +847,27 @@
     {
       "id": "s12-14",
       "sceneId": "s12",
-      "text": "Bingley and Jane settled in a house with enough bedrooms for sisters and enough distance from Mrs Bennet for peace."
+      "text": "Beltrán and Julieta settled in a house with enough bedrooms for sisters and enough distance from Sra. Benítez for peace."
     },
     {
       "id": "s12-15",
       "sceneId": "s12",
-      "text": "Elizabeth and Darcy divided time between city and estancia."
+      "text": "Elena and Duarte divided time between city and estancia."
     },
     {
       "id": "s12-16",
       "sceneId": "s12",
-      "text": "Kitty visited and improved."
+      "text": "Inés visited and improved."
     },
     {
       "id": "s12-17",
       "sceneId": "s12",
-      "text": "Lydia visited and did not."
+      "text": "Lidia visited and did not."
     },
     {
       "id": "s12-18",
       "sceneId": "s12",
-      "text": "Mary married a clerk of minor opinions."
+      "text": "María married a clerk of minor opinions."
     },
     {
       "id": "s12-19",
@@ -887,7 +887,7 @@
     {
       "id": "s13-0",
       "sceneId": "s13",
-      "text": "Elizabeth’s early walk with Darcy after Jane’s recovery at Bingley’s house included a silence in which both misread the other’s quiet."
+      "text": "Elena’s early walk with Duarte after Julieta’s recovery at Beltrán’s house included a silence in which both misread the other’s quiet."
     },
     {
       "id": "s13-1",
@@ -917,12 +917,12 @@
     {
       "id": "s13-6",
       "sceneId": "s13",
-      "text": "At a second assembly Wickham’s absence—once Darcy entered—taught Elizabeth nothing because she was not yet ready to learn."
+      "text": "At a second assembly Vázquez’s absence—once Duarte entered—taught Elena nothing because she was not yet ready to learn."
     },
     {
       "id": "s13-7",
       "sceneId": "s13",
-      "text": "She danced with others and stored Darcy’s glance as arrogance."
+      "text": "She danced with others and stored Duarte’s glance as arrogance."
     },
     {
       "id": "s13-8",
@@ -932,7 +932,7 @@
     {
       "id": "s13-9",
       "sceneId": "s13",
-      "text": "Mrs Gardiner’s counsel about Wickham’s sudden interest cooling when he learned Elizabeth had little fortune planted a seed."
+      "text": "Mrs Garcés’s counsel about Vázquez’s sudden interest cooling when he learned Elena had little fortune planted a seed."
     },
     {
       "id": "s13-10",
@@ -942,32 +942,32 @@
     {
       "id": "s13-11",
       "sceneId": "s13",
-      "text": "On the estancia tour the housekeeper showed miniatures: Wickham as a boy handsome and already watchful; Darcy as a young man grave."
+      "text": "On the estancia tour the housekeeper showed miniatures: Vázquez as a boy handsome and already watchful; Duarte as a young man grave."
     },
     {
       "id": "s13-12",
       "sceneId": "s13",
-      "text": "Elizabeth’s stomach turned with retrospective clarity."
+      "text": "Elena’s stomach turned with retrospective clarity."
     },
     {
       "id": "s13-13",
       "sceneId": "s13",
-      "text": "When Darcy himself arrived on horseback, mud on boots, manners newly humble, the plot’s engine shifted from satire toward repair."
+      "text": "When Duarte himself arrived on horseback, mud on boots, manners newly humble, the plot’s engine shifted from satire toward repair."
     },
     {
       "id": "s13-14",
       "sceneId": "s13",
-      "text": "The search for Lydia included Mr Bennet’s tired authority and Uncle Gardiner’s practical competence."
+      "text": "The search for Lidia included Sr. Benítez’s tired authority and Uncle Garcés’s practical competence."
     },
     {
       "id": "s13-15",
       "sceneId": "s13",
-      "text": "Elizabeth’s terror was for Jane’s prospects as much as Lydia’s fate—the family’s market value collapsing."
+      "text": "Elena’s terror was for Julieta’s prospects as much as Lidia’s fate—the family’s market value collapsing."
     },
     {
       "id": "s13-16",
       "sceneId": "s13",
-      "text": "Darcy’s secret labor restored value without restoring Elizabeth’s ignorance; aunt Gardiner made sure credit landed where it belonged."
+      "text": "Duarte’s secret labor restored value without restoring Elena’s ignorance; aunt Garcés made sure credit landed where it belonged."
     },
     {
       "id": "s13-17",
@@ -982,7 +982,7 @@
     {
       "id": "s13-19",
       "sceneId": "s13",
-      "text": "Elizabeth spoke accountability; Darcy spoke constancy."
+      "text": "Elena spoke accountability; Duarte spoke constancy."
     },
     {
       "id": "s13-20",
@@ -997,327 +997,322 @@
     {
       "id": "s13-22",
       "sceneId": "s13",
-      "text": "Never Featured."
+      "text": "Whole continuous book."
     },
     {
       "id": "s13-23",
       "sceneId": "s13",
-      "text": "Whole continuous book."
+      "text": "Sr. Benítez’s private conversation with Elena after Duarte’s first proposal—she did not detail it, only her refusal—earned his rare serious approval."
     },
     {
       "id": "s13-24",
       "sceneId": "s13",
-      "text": "Mr Bennet’s private conversation with Elizabeth after Darcy’s first proposal—she did not detail it, only her refusal—earned his rare serious approval."
+      "text": "He feared she might sell herself to wealth; he did not fear she would sell herself to swagger."
     },
     {
       "id": "s13-25",
       "sceneId": "s13",
-      "text": "He feared she might sell herself to wealth; he did not fear she would sell herself to swagger."
+      "text": "When she later accepted Duarte, Sr. Benítez required explanation; Elena gave it without hiding the letter’s lessons."
     },
     {
       "id": "s13-26",
       "sceneId": "s13",
-      "text": "When she later accepted Darcy, Mr Bennet required explanation; Elizabeth gave it without hiding the letter’s lessons."
+      "text": "He released her with a joke that cracked to show love."
     },
     {
       "id": "s13-27",
       "sceneId": "s13",
-      "text": "He released her with a joke that cracked to show love."
+      "text": "Carolina Beltrán’s final campaign against Elena included a visit full of false sweetness."
     },
     {
       "id": "s13-28",
       "sceneId": "s13",
-      "text": "Caroline Bingley’s final campaign against Elizabeth included a visit full of false sweetness."
+      "text": "Elena endured."
     },
     {
       "id": "s13-29",
       "sceneId": "s13",
-      "text": "Elizabeth endured."
+      "text": "Duarte’s boredom with Caroline became visible even to Caroline."
     },
     {
       "id": "s13-30",
       "sceneId": "s13",
-      "text": "Darcy’s boredom with Caroline became visible even to Caroline."
+      "text": "Some defeats educate the defeated; Caroline preferred not to enroll."
     },
     {
       "id": "s13-31",
       "sceneId": "s13",
-      "text": "Some defeats educate the defeated; Caroline preferred not to enroll."
+      "text": "María’s wedding was small and slightly absurd; Elena attended with genuine warmth."
     },
     {
       "id": "s13-32",
       "sceneId": "s13",
-      "text": "Mary’s wedding was small and slightly absurd; Elizabeth attended with genuine warmth."
+      "text": "Absurdity, in Austen, is allowed to live next to happiness without poisoning it."
     },
     {
       "id": "s13-33",
       "sceneId": "s13",
-      "text": "Absurdity, in Austen, is allowed to live next to happiness without poisoning it."
+      "text": "Josefina’s near-ruin with Vázquez remained a guarded story."
     },
     {
       "id": "s13-34",
       "sceneId": "s13",
-      "text": "Georgiana’s near-ruin with Wickham remained a guarded story."
+      "text": "Elena became its co-keeper, not its gossip."
     },
     {
       "id": "s13-35",
       "sceneId": "s13",
-      "text": "Elizabeth became its co-keeper, not its gossip."
+      "text": "Trust between the women sealed Duarte’s household more than any fortune."
     },
     {
       "id": "s13-36",
       "sceneId": "s13",
-      "text": "Trust between the women sealed Darcy’s household more than any fortune."
+      "text": "On a return to the Japanese Garden after engagement, Elena stood where she had once ranted against Duarte and thanked the path for hearing her foolishness without recording it in stone."
     },
     {
       "id": "s13-37",
       "sceneId": "s13",
-      "text": "On a return to the Japanese Garden after engagement, Elizabeth stood where she had once ranted against Darcy and thanked the path for hearing her foolishness without recording it in stone."
+      "text": "The militia’s departure removed Lidia’s favorite entertainment until Vázquez removed Lidia."
     },
     {
       "id": "s13-38",
       "sceneId": "s13",
-      "text": "The militia’s departure removed Lydia’s favorite entertainment until Wickham removed Lydia."
+      "text": "The causal chain remained Austen’s: neglected education, parental levity, predatory charm, economic patching by a better man’s responsibility."
     },
     {
       "id": "s13-39",
       "sceneId": "s13",
-      "text": "The causal chain remained Austen’s: neglected education, parental levity, predatory charm, economic patching by a better man’s responsibility."
+      "text": "Elena’s prejudice had felt like intelligence because it was partly intelligent—Duarte was proud."
     },
     {
       "id": "s13-40",
       "sceneId": "s13",
-      "text": "Elizabeth’s prejudice had felt like intelligence because it was partly intelligent—Darcy was proud."
+      "text": "The error was totalizing."
     },
     {
       "id": "s13-41",
       "sceneId": "s13",
-      "text": "The error was totalizing."
+      "text": "Duarte’s pride had felt like principle because it was partly principled—he did protect Josefina."
     },
     {
       "id": "s13-42",
       "sceneId": "s13",
-      "text": "Darcy’s pride had felt like principle because it was partly principled—he did protect Georgiana."
+      "text": "The error was contempt for those outside his circle."
     },
     {
       "id": "s13-43",
       "sceneId": "s13",
-      "text": "The error was contempt for those outside his circle."
+      "text": "Both errors yielded to evidence and to love that refused to flatter them."
     },
     {
       "id": "s13-44",
       "sceneId": "s13",
-      "text": "Both errors yielded to evidence and to love that refused to flatter them."
+      "text": "Buenos Aires in 2026 clear English held the comedy without converting it into farce: sentence case, dialogue tagged when dramatic, italics for emphasis where needed."
     },
     {
       "id": "s13-45",
       "sceneId": "s13",
-      "text": "Buenos Aires in 2026 clear English held the comedy without converting it into farce: sentence case, dialogue tagged when dramatic, italics for emphasis where needed."
+      "text": "No filler refrains."
     },
     {
       "id": "s13-46",
       "sceneId": "s13",
-      "text": "No filler refrains."
+      "text": "Every dance, letter, insult, and repair earned its place."
     },
     {
       "id": "s13-47",
       "sceneId": "s13",
-      "text": "Every dance, letter, insult, and repair earned its place."
+      "text": "When Elena signed the marriage register, she wrote Elena Benítez for the last time as her sole surname and felt no grief—only the oddness of change chosen rather than imposed."
     },
     {
       "id": "s13-48",
       "sceneId": "s13",
-      "text": "When Elizabeth signed the marriage register, she wrote Elizabeth Bennet for the last time as her sole surname and felt no grief—only the oddness of change chosen rather than imposed."
+      "text": "Duarte watched her write and did not correct the pen."
     },
     {
       "id": "s13-49",
       "sceneId": "s13",
-      "text": "Darcy watched her write and did not correct the pen."
+      "text": "He had learned not to govern her hand."
     },
     {
       "id": "s13-50",
       "sceneId": "s13",
-      "text": "He had learned not to govern her hand."
+      "text": "And so Pride and Prejudice, reseated, ends in double marriage with Julieta and Beltrán beside Elena and Duarte—Vázquez contained, Doña Catalina refused, Sra. Benítez delighted, Sr. Benítez relieved, the city’s glamorous avenues unchanged by the moral education they hosted."
     },
     {
       "id": "s13-51",
       "sceneId": "s13",
-      "text": "And so Pride and Prejudice, reseated, ends in double marriage with Jane and Bingley beside Elizabeth and Darcy—Wickham contained, Lady Catherine refused, Mrs Bennet delighted, Mr Bennet relieved, the city’s glamorous avenues unchanged by the moral education they hosted."
+      "text": "Additional scene 1 — Elena and Julieta by night"
     },
     {
       "id": "s13-52",
       "sceneId": "s13",
-      "text": "Additional scene 1 — Elizabeth and Jane by night"
+      "text": "They spoke in the bedroom they had shared since girlhood, voices low above Alvear’s late traffic."
     },
     {
       "id": "s13-53",
       "sceneId": "s13",
-      "text": "They spoke in the bedroom they had shared since girlhood, voices low above Alvear’s late traffic."
+      "text": "Julieta confessed she still loved Beltrán and would not pretend otherwise."
     },
     {
       "id": "s13-54",
       "sceneId": "s13",
-      "text": "Jane confessed she still loved Bingley and would not pretend otherwise."
+      "text": "Elena confessed her opinion of Duarte was under reconstruction."
     },
     {
       "id": "s13-55",
       "sceneId": "s13",
-      "text": "Elizabeth confessed her opinion of Darcy was under reconstruction."
+      "text": "Julieta, generous, hoped reconstruction meant happiness."
     },
     {
       "id": "s13-56",
       "sceneId": "s13",
-      "text": "Jane, generous, hoped reconstruction meant happiness."
+      "text": "Elena said happiness required accuracy first."
     },
     {
       "id": "s13-57",
       "sceneId": "s13",
-      "text": "Elizabeth said happiness required accuracy first."
+      "text": "They slept."
     },
     {
       "id": "s13-58",
       "sceneId": "s13",
-      "text": "They slept."
+      "text": "Morning brought Sra. Benítez’s nerves and María’s piano."
     },
     {
       "id": "s13-59",
       "sceneId": "s13",
-      "text": "Morning brought Mrs Bennet’s nerves and Mary’s piano."
+      "text": "The plot continued its work on both sisters at different tempos."
     },
     {
       "id": "s13-60",
       "sceneId": "s13",
-      "text": "The plot continued its work on both sisters at different tempos."
+      "text": "Additional scene 2 — Elena and Julieta by night"
     },
     {
       "id": "s13-61",
       "sceneId": "s13",
-      "text": "Additional scene 2 — Elizabeth and Jane by night"
+      "text": "Additional scene 3 — Elena and Julieta by night"
     },
     {
       "id": "s13-62",
       "sceneId": "s13",
-      "text": "Additional scene 3 — Elizabeth and Jane by night"
+      "text": "Additional scene 4 — Elena and Julieta by night"
     },
     {
       "id": "s13-63",
       "sceneId": "s13",
-      "text": "Additional scene 4 — Elizabeth and Jane by night"
+      "text": "Additional scene 5 — Elena and Julieta by night"
     },
     {
       "id": "s13-64",
       "sceneId": "s13",
-      "text": "Additional scene 5 — Elizabeth and Jane by night"
+      "text": "Additional scene 6 — Elena and Julieta by night"
     },
     {
       "id": "s13-65",
       "sceneId": "s13",
-      "text": "Additional scene 6 — Elizabeth and Jane by night"
+      "text": "Additional scene 7 — Elena and Julieta by night"
     },
     {
       "id": "s13-66",
       "sceneId": "s13",
-      "text": "Additional scene 7 — Elizabeth and Jane by night"
+      "text": "Additional scene 8 — Elena and Julieta by night"
     },
     {
       "id": "s13-67",
       "sceneId": "s13",
-      "text": "Additional scene 8 — Elizabeth and Jane by night"
+      "text": "Additional scene 9 — Elena and Julieta by night"
     },
     {
       "id": "s13-68",
       "sceneId": "s13",
-      "text": "Additional scene 9 — Elizabeth and Jane by night"
+      "text": "Additional scene 10 — Elena and Julieta by night"
     },
     {
       "id": "s13-69",
       "sceneId": "s13",
-      "text": "Additional scene 10 — Elizabeth and Jane by night"
+      "text": "Additional scene 11 — Elena and Julieta by night"
     },
     {
       "id": "s13-70",
       "sceneId": "s13",
-      "text": "Additional scene 11 — Elizabeth and Jane by night"
+      "text": "Additional scene 12 — Elena and Julieta by night"
     },
     {
       "id": "s13-71",
       "sceneId": "s13",
-      "text": "Additional scene 12 — Elizabeth and Jane by night"
+      "text": "Additional scene 13 — Elena and Julieta by night"
     },
     {
       "id": "s13-72",
       "sceneId": "s13",
-      "text": "Additional scene 13 — Elizabeth and Jane by night"
+      "text": "Additional scene 14 — Elena and Julieta by night"
     },
     {
       "id": "s13-73",
       "sceneId": "s13",
-      "text": "Additional scene 14 — Elizabeth and Jane by night"
+      "text": "Additional scene 15 — Elena and Julieta by night"
     },
     {
       "id": "s13-74",
       "sceneId": "s13",
-      "text": "Additional scene 15 — Elizabeth and Jane by night"
+      "text": "Additional scene 16 — Elena and Julieta by night"
     },
     {
       "id": "s13-75",
       "sceneId": "s13",
-      "text": "Additional scene 16 — Elizabeth and Jane by night"
+      "text": "Additional scene 17 — Elena and Julieta by night"
     },
     {
       "id": "s13-76",
       "sceneId": "s13",
-      "text": "Additional scene 17 — Elizabeth and Jane by night"
+      "text": "Additional scene 18 — Elena and Julieta by night"
     },
     {
       "id": "s13-77",
       "sceneId": "s13",
-      "text": "Additional scene 18 — Elizabeth and Jane by night"
+      "text": "Additional scene 19 — Elena and Julieta by night"
     },
     {
       "id": "s13-78",
       "sceneId": "s13",
-      "text": "Additional scene 19 — Elizabeth and Jane by night"
+      "text": "Additional scene 20 — Elena and Julieta by night"
     },
     {
       "id": "s13-79",
       "sceneId": "s13",
-      "text": "Additional scene 20 — Elizabeth and Jane by night"
+      "text": "Additional scene 21 — Elena and Julieta by night"
     },
     {
       "id": "s13-80",
       "sceneId": "s13",
-      "text": "Additional scene 21 — Elizabeth and Jane by night"
+      "text": "Additional scene 22 — Elena and Julieta by night"
     },
     {
       "id": "s13-81",
       "sceneId": "s13",
-      "text": "Additional scene 22 — Elizabeth and Jane by night"
+      "text": "Additional scene 23 — Elena and Julieta by night"
     },
     {
       "id": "s13-82",
       "sceneId": "s13",
-      "text": "Additional scene 23 — Elizabeth and Jane by night"
+      "text": "Additional scene 24 — Elena and Julieta by night"
     },
     {
       "id": "s13-83",
       "sceneId": "s13",
-      "text": "Additional scene 24 — Elizabeth and Jane by night"
+      "text": "Additional scene 25 — Elena and Julieta by night"
     },
     {
       "id": "s13-84",
       "sceneId": "s13",
-      "text": "Additional scene 25 — Elizabeth and Jane by night"
-    },
-    {
-      "id": "s13-85",
-      "sceneId": "s13",
-      "text": "Additional scene 26 — Elizabeth and Jane by night"
+      "text": "Additional scene 26 — Elena and Julieta by night"
     },
     {
       "id": "s14-0",
       "sceneId": "s14",
-      "text": "Elizabeth woke early on the day she would first see Darcy’s estancia and dressed without telling herself stories about chance."
+      "text": "Elena woke early on the day she would first see Duarte’s estancia and dressed without telling herself stories about chance."
     },
     {
       "id": "s14-1",
@@ -1327,7 +1322,7 @@
     {
       "id": "s14-2",
       "sceneId": "s14",
-      "text": "The Gardiners spoke of gardens and good management; Elizabeth listened for the landlord’s character in the housekeeping."
+      "text": "The Garcés spoke of gardens and good management; Elena listened for the landlord’s character in the housekeeping."
     },
     {
       "id": "s14-3",
@@ -1337,22 +1332,22 @@
     {
       "id": "s14-4",
       "sceneId": "s14",
-      "text": "Darcy’s unexpected arrival could have been comedy; he blushed like a boy."
+      "text": "Duarte’s unexpected arrival could have been comedy; he blushed like a boy."
     },
     {
       "id": "s14-5",
       "sceneId": "s14",
-      "text": "Elizabeth blushed like an adversary caught without armor."
+      "text": "Elena blushed like an adversary caught without armor."
     },
     {
       "id": "s14-6",
       "sceneId": "s14",
-      "text": "Their conversation stumbled, then found footing in Georgiana’s musical hopes and in questions about Jane that Darcy asked without fishing for gratitude."
+      "text": "Their conversation stumbled, then found footing in Josefina’s musical hopes and in questions about Julieta that Duarte asked without fishing for gratitude."
     },
     {
       "id": "s14-7",
       "sceneId": "s14",
-      "text": "Elizabeth’s answers were careful."
+      "text": "Elena’s answers were careful."
     },
     {
       "id": "s14-8",
@@ -1362,12 +1357,12 @@
     {
       "id": "s14-9",
       "sceneId": "s14",
-      "text": "After Lydia’s marriage, Wickham attempted a farewell charm."
+      "text": "After Lidia’s marriage, Vázquez attempted a farewell charm."
     },
     {
       "id": "s14-10",
       "sceneId": "s14",
-      "text": "Elizabeth’s civility was winter."
+      "text": "Elena’s civility was winter."
     },
     {
       "id": "s14-11",
@@ -1377,7 +1372,7 @@
     {
       "id": "s14-12",
       "sceneId": "s14",
-      "text": "Darcy, informed later, did not gloat."
+      "text": "Duarte, informed later, did not gloat."
     },
     {
       "id": "s14-13",
@@ -1387,22 +1382,22 @@
     {
       "id": "s14-14",
       "sceneId": "s14",
-      "text": "Bingley’s proposal to Jane occurred in a parlor full of flowers Mrs Bennet had overbought."
+      "text": "Beltrán’s proposal to Julieta occurred in a parlor full of flowers Sra. Benítez had overbought."
     },
     {
       "id": "s14-15",
       "sceneId": "s14",
-      "text": "Jane said yes through tears."
+      "text": "Julieta said yes through tears."
     },
     {
       "id": "s14-16",
       "sceneId": "s14",
-      "text": "Elizabeth left the room to cry elsewhere from relief."
+      "text": "Elena left the room to cry elsewhere from relief."
     },
     {
       "id": "s14-17",
       "sceneId": "s14",
-      "text": "Darcy met her in the corridor and mistook her tears; she clarified; his face opened."
+      "text": "Duarte met her in the corridor and mistook her tears; she clarified; his face opened."
     },
     {
       "id": "s14-18",
@@ -1442,17 +1437,17 @@
     {
       "id": "s14-25",
       "sceneId": "s14",
-      "text": "They turned back toward the apartment to face Mrs Bennet’s joy together."
+      "text": "They turned back toward the apartment to face Sra. Benítez’s joy together."
     },
     {
       "id": "s14-26",
       "sceneId": "s14",
-      "text": "Years on—Austen allows a peek—Elizabeth Darcy still walked when thought thickened."
+      "text": "Years on—Austen allows a peek—Elena Duarte still walked when thought thickened."
     },
     {
       "id": "s14-27",
       "sceneId": "s14",
-      "text": "Sometimes Darcy joined; sometimes he trusted her to return."
+      "text": "Sometimes Duarte joined; sometimes he trusted her to return."
     },
     {
       "id": "s14-28",
@@ -1472,72 +1467,77 @@
     {
       "id": "s14-31",
       "sceneId": "s14",
-      "text": "Elizabeth Bennet."
+      "text": "Elena Benítez."
     },
     {
       "id": "s14-32",
       "sceneId": "s14",
-      "text": "Fitzwilliam Darcy."
+      "text": "Facundo Duarte."
     },
     {
       "id": "s14-33",
       "sceneId": "s14",
-      "text": "Jane. Bingley."
+      "text": "Julieta."
     },
     {
       "id": "s14-34",
       "sceneId": "s14",
-      "text": "Wickham."
+      "text": "Beltrán."
     },
     {
       "id": "s14-35",
       "sceneId": "s14",
-      "text": "Mrs Bennet."
+      "text": "Vázquez."
     },
     {
       "id": "s14-36",
       "sceneId": "s14",
-      "text": "The names hold."
+      "text": "Sra. Benítez."
     },
     {
       "id": "s14-37",
       "sceneId": "s14",
-      "text": "The beats hold."
+      "text": "The names hold."
     },
     {
       "id": "s14-38",
       "sceneId": "s14",
-      "text": "The reseat is glamorous and secondary."
+      "text": "The beats hold."
     },
     {
       "id": "s14-39",
+      "sceneId": "s14",
+      "text": "The reseat is glamorous and secondary."
+    },
+    {
+      "id": "s14-40",
       "sceneId": "s14",
       "text": "That is the fidelity lock Mike required, and Mira stamps it true."
     },
     {
       "id": "s15-0",
       "sceneId": "s15",
-      "text": "Mr Collins arrived with compliments prepared like sandwiches for a picnic he alone enjoyed."
+      "text": "Sr. Colinas arrived with compliments prepared like sandwiches for a picnic he alone enjoyed."
     },
     {
       "id": "s15-1",
       "sceneId": "s15",
-      "text": "He admired the Recoleta apartment’s ceiling moldings, Mrs Bennet’s hospitality, and his own connection to Lady Catherine de Bourgh in rotating measure."
+      "text": "He admired the Recoleta apartment’s ceiling moldings, Sra. Benítez’s hospitality, and his own connection to Doña Catalina de Borja in rotating measure."
     },
     {
       "id": "s15-2",
       "sceneId": "s15",
-      "text": "His proposal to Elizabeth—delivered as a favor she could not rationally refuse—met a refusal he treated as coyness until it became unmistakable."
+      "text": "His proposal to Elena—delivered as a favor she could not rationally refuse—met a refusal he treated as coyness until it became unmistakable."
     },
     {
       "id": "s15-3",
       "sceneId": "s15",
-      "text": "Collins: You are a woman of many attractions, and I am prepared to overlook the smallness of your portion."
+      "text": "Colinas: You are a woman of many attractions, and I am prepared to overlook the smallness of your portion."
     },
     {
       "id": "s15-4",
       "sceneId": "s15",
-      "text": "Elizabeth: Please overlook me entirely as a wife."
+      "text": "Elena: Please overlook me entirely as a wife."
     },
     {
       "id": "s15-5",
@@ -1547,32 +1547,32 @@
     {
       "id": "s15-6",
       "sceneId": "s15",
-      "text": "He rebound to Charlotte Lucas within days."
+      "text": "He rebound to Carlota Luque within days."
     },
     {
       "id": "s15-7",
       "sceneId": "s15",
-      "text": "Charlotte’s acceptance was a calculation Elizabeth felt as a bruise."
+      "text": "Carlota’s acceptance was a calculation Elena felt as a bruise."
     },
     {
       "id": "s15-8",
       "sceneId": "s15",
-      "text": "Visiting the married pair later—Collins’s parsonage under Lady Catherine’s suburban dominion—Elizabeth watched Charlotte manage rooms, interruptions, and her husband’s vanity with a competence that redefined romance as optional."
+      "text": "Visiting the married pair later—Colinas’s parsonage under Doña Catalina’s suburban dominion—Elena watched Carlota manage rooms, interruptions, and her husband’s vanity with a competence that redefined romance as optional."
     },
     {
       "id": "s15-9",
       "sceneId": "s15",
-      "text": "Elizabeth walked the shrubbery often."
+      "text": "Elena walked the shrubbery often."
     },
     {
       "id": "s15-10",
       "sceneId": "s15",
-      "text": "There Darcy found her after the angry proposal and thrust the letter into her hand."
+      "text": "There Duarte found her after the angry proposal and thrust the letter into her hand."
     },
     {
       "id": "s15-11",
       "sceneId": "s15",
-      "text": "Reading beneath imported oaks, Elizabeth felt each paragraph rearrange Wickham’s smile and Darcy’s silence."
+      "text": "Reading beneath imported oaks, Elena felt each paragraph rearrange Vázquez’s smile and Duarte’s silence."
     },
     {
       "id": "s15-12",
@@ -1587,12 +1587,12 @@
     {
       "id": "s16-0",
       "sceneId": "s16",
-      "text": "Lydia’s departure toward the militia’s seaside amusement was flagged with ribbons and parental failure."
+      "text": "Lidia’s departure toward the militia’s seaside amusement was flagged with ribbons and parental failure."
     },
     {
       "id": "s16-1",
       "sceneId": "s16",
-      "text": "Elizabeth’s warning to her father named Wickham’s character without proofs he would credit; Mr Bennet preferred hoping to governing."
+      "text": "Elena’s warning to her father named Vázquez’s character without proofs he would credit; Sr. Benítez preferred hoping to governing."
     },
     {
       "id": "s16-2",
@@ -1602,22 +1602,22 @@
     {
       "id": "s16-3",
       "sceneId": "s16",
-      "text": "With the Gardiners, Elizabeth traveled into green wealth."
+      "text": "With los Garcés, Elena traveled into green wealth."
     },
     {
       "id": "s16-4",
       "sceneId": "s16",
-      "text": "The estancia’s approach—long drive, water, cattle egret white against grass—did not feel like a novel’s reward until the housekeeper’s stories made Darcy human at scale: grief for parents, fierce care for Georgiana, fairness to tenants."
+      "text": "The estancia’s approach—long drive, water, cattle egret white against grass—did not feel like a novel’s reward until the housekeeper’s stories made Duarte human at scale: grief for parents, fierce care for Josefina, fairness to tenants."
     },
     {
       "id": "s16-5",
       "sceneId": "s16",
-      "text": "Elizabeth stood before a portrait and practiced saying she had been wrong without yet saying she loved him."
+      "text": "Elena stood before a portrait and practiced saying she had been wrong without yet saying she loved him."
     },
     {
       "id": "s16-6",
       "sceneId": "s16",
-      "text": "Darcy’s coming upon them was a collision of shame and hope."
+      "text": "Duarte’s coming upon them was a collision of shame and hope."
     },
     {
       "id": "s16-7",
@@ -1632,7 +1632,7 @@
     {
       "id": "s16-9",
       "sceneId": "s16",
-      "text": "When news of Lydia broke into that repair like a thrown brick, Elizabeth cried openly; Darcy left with a face like decision."
+      "text": "When news of Lidia broke into that repair like a thrown brick, Elena cried openly; Duarte left with a face like decision."
     },
     {
       "id": "s16-10",
@@ -1647,12 +1647,12 @@
     {
       "id": "s17-0",
       "sceneId": "s17",
-      "text": "Uncle Gardiner’s letters described negotiations; Aunt Gardiner’s later honesty named Darcy as the purse and the will."
+      "text": "Uncle Garcés’s letters described negotiations; Aunt Garcés’s later honesty named Duarte as the purse and the will."
     },
     {
       "id": "s17-1",
       "sceneId": "s17",
-      "text": "Elizabeth’s love, already growing, took on the gravity of obligation without becoming submission."
+      "text": "Elena’s love, already growing, took on the gravity of obligation without becoming submission."
     },
     {
       "id": "s17-2",
@@ -1662,7 +1662,7 @@
     {
       "id": "s17-3",
       "sceneId": "s17",
-      "text": "Lady Catherine’s invasion of the Bennet apartment—servants listening, Mrs Bennet fluttering, Elizabeth standing firm—gave Darcy proof that Elizabeth would not be terrified out of him."
+      "text": "Doña Catalina’s invasion of the Benítez apartment—servants listening, Sra. Benítez fluttering, Elena standing firm—gave Duarte proof that Elena would not be terrified out of him."
     },
     {
       "id": "s17-4",
@@ -1682,12 +1682,12 @@
     {
       "id": "s17-7",
       "sceneId": "s17",
-      "text": "Bingley’s parallel joy with Jane doubled the household’s repair."
+      "text": "Beltrán’s parallel joy with Julieta doubled the household’s repair."
     },
     {
       "id": "s17-8",
       "sceneId": "s17",
-      "text": "Double marriage did not erase Wickham; it contained him."
+      "text": "Double marriage did not erase Vázquez; it contained him."
     },
     {
       "id": "s17-9",
@@ -1697,7 +1697,7 @@
     {
       "id": "s18-0",
       "sceneId": "s18",
-      "text": "Elizabeth’s marriage to Darcy did not end her walking."
+      "text": "Elena’s marriage to Duarte did not end her walking."
     },
     {
       "id": "s18-1",
@@ -1707,7 +1707,7 @@
     {
       "id": "s18-2",
       "sceneId": "s18",
-      "text": "She teased Darcy still—teasing was their oxygen—but never about Georgiana’s near disaster."
+      "text": "She teased Duarte still—teasing was their oxygen—but never about Josefina’s near disaster."
     },
     {
       "id": "s18-3",
@@ -1717,32 +1717,32 @@
     {
       "id": "s18-4",
       "sceneId": "s18",
-      "text": "Jane’s letters from the Bingley household were full of small goodnesses."
+      "text": "Julieta’s letters from the Beltrán household were full of small goodnesses."
     },
     {
       "id": "s18-5",
       "sceneId": "s18",
-      "text": "Elizabeth answered with wit tempered by care."
+      "text": "Elena answered with wit tempered by care."
     },
     {
       "id": "s18-6",
       "sceneId": "s18",
-      "text": "Mrs Bennet visited too often; Darcy endured; Elizabeth mediated; Mr Bennet visited too rarely and was forgiven because daughters invent discounts for clever fathers."
+      "text": "Sra. Benítez visited too often; Duarte endured; Elena mediated; Sr. Benítez visited too rarely and was forgiven because daughters invent discounts for clever fathers."
     },
     {
       "id": "s18-7",
       "sceneId": "s18",
-      "text": "Kitty’s improvement under Elizabeth’s occasional custody proved environment matters."
+      "text": "Inés’s improvement under Elena’s occasional custody proved environment matters."
     },
     {
       "id": "s18-8",
       "sceneId": "s18",
-      "text": "Lydia’s requests for money proved some environments cannot be retrofitted."
+      "text": "Lidia’s requests for money proved some environments cannot be retrofitted."
     },
     {
       "id": "s18-9",
       "sceneId": "s18",
-      "text": "Mary’s solemnities found a husband who liked being lectured."
+      "text": "María’s solemnities found a husband who liked being lectured."
     },
     {
       "id": "s18-10",
@@ -1752,17 +1752,17 @@
     {
       "id": "s18-11",
       "sceneId": "s18",
-      "text": "At a Palermo dinner a year later Caroline Bingley praised Elizabeth’s “altered” manners."
+      "text": "At a Palermo dinner a year later Carolina Beltrán praised Elena’s “altered” manners."
     },
     {
       "id": "s18-12",
       "sceneId": "s18",
-      "text": "Elizabeth smiled and did not alter back into the quarrel Caroline wanted."
+      "text": "Elena smiled and did not alter back into the quarrel Caroline wanted."
     },
     {
       "id": "s18-13",
       "sceneId": "s18",
-      "text": "Darcy’s foot touched hers under the table—private applause."
+      "text": "Duarte’s foot touched hers under the table—private applause."
     },
     {
       "id": "s19-0",
@@ -1772,12 +1772,12 @@
     {
       "id": "s19-1",
       "sceneId": "s19",
-      "text": "They did not rename Elizabeth Bennet, nor Darcy, nor Jane, nor Bingley, nor Wickham, nor Mrs Bennet."
+      "text": "They did not rename Elena Benítez, nor Duarte, nor Julieta, nor Beltrán, nor Vázquez, nor Sra. Benítez."
     },
     {
       "id": "s19-2",
       "sceneId": "s19",
-      "text": "The assembly insult still launches prejudice; the letter still corrects it; Pemberley’s analogue still softens pride with evidence; Lydia’s elopement still forces covert heroism; Lady Catherine still fails; double marriage still closes the dance."
+      "text": "The assembly insult still launches prejudice; the letter still corrects it; Estancia Los Álamos’s analogue still softens pride with evidence; Lidia’s elopement still forces covert heroism; Doña Catalina still fails; double marriage still closes the dance."
     },
     {
       "id": "s19-3",
@@ -1802,127 +1802,112 @@
     {
       "id": "s19-7",
       "sceneId": "s19",
-      "text": "Never Featured."
+      "text": "Elena, walking the cemetery wall path where she once read Duarte’s letter, sometimes nodded to the stone angels as colleagues in witnessing human vanity."
     },
     {
       "id": "s19-8",
-      "sceneId": "s19",
-      "text": "Elizabeth, walking the cemetery wall path where she once read Darcy’s letter, sometimes nodded to the stone angels as colleagues in witnessing human vanity."
-    },
-    {
-      "id": "s19-9",
       "sceneId": "s19",
       "text": "Then she went home to an argument about dinner guests and a reconciliation about nothing important, which is how happy marriages spend their truth."
     },
     {
       "id": "s20-0",
       "sceneId": "s20",
-      "text": "Before any assembly, Mrs Bennet’s campaign for advantageous marriage saturated breakfasts."
+      "text": "Before any assembly, Sra. Benítez’s campaign for advantageous marriage saturated breakfasts."
     },
     {
       "id": "s20-1",
       "sceneId": "s20",
-      "text": "Mr Bennet’s irony protected him from effort."
+      "text": "Sr. Benítez’s irony protected him from effort."
     },
     {
       "id": "s20-2",
       "sceneId": "s20",
-      "text": "Elizabeth’s share of irony protected her from despair without protecting her from mistakes—Austen’s precise dosage."
+      "text": "Elena’s share of irony protected her from despair without protecting her from mistakes—Austen’s precise dosage."
     },
     {
       "id": "s20-3",
       "sceneId": "s20",
-      "text": "Charlotte’s warning that Jane should show more than she felt with Bingley was worldly wisdom Elizabeth rejected on principle and later half-credited when silence helped Darcy misread Jane."
+      "text": "The militia’s presence in local society was entertainment as hazard."
     },
     {
       "id": "s20-4",
       "sceneId": "s20",
-      "text": "Principles need data."
+      "text": "Vázquez’s attentions to Elena cooled when fortune gossip shifted—Mrs Garcés noticed; Elena’s vanity delayed noticing."
     },
     {
       "id": "s20-5",
       "sceneId": "s20",
-      "text": "The militia’s presence in local society was entertainment as hazard."
+      "text": "Delay is prejudice’s ally."
     },
     {
       "id": "s20-6",
       "sceneId": "s20",
-      "text": "Wickham’s attentions to Elizabeth cooled when fortune gossip shifted—Mrs Gardiner noticed; Elizabeth’s vanity delayed noticing."
+      "text": "Duarte’s intervention for Lidia included confronting Vázquez in a rented room that smelled of cheap cologne and fear."
     },
     {
       "id": "s20-7",
       "sceneId": "s20",
-      "text": "Delay is prejudice’s ally."
+      "text": "Money changed hands; a wedding was scheduled; Duarte’s name was kept out until Aunt Garcés decided Elena deserved truth."
     },
     {
       "id": "s20-8",
       "sceneId": "s20",
-      "text": "Darcy’s intervention for Lydia included confronting Wickham in a rented room that smelled of cheap cologne and fear."
+      "text": "Truth arrived like delayed rain on droughted ground."
     },
     {
       "id": "s20-9",
       "sceneId": "s20",
-      "text": "Money changed hands; a wedding was scheduled; Darcy’s name was kept out until Aunt Gardiner decided Elizabeth deserved truth."
+      "text": "Elena’s thank-you speech stumbled; Duarte asked for her love instead of her gratitude."
     },
     {
       "id": "s20-10",
       "sceneId": "s20",
-      "text": "Truth arrived like delayed rain on droughted ground."
+      "text": "She gave both, ordered properly: love first, thanks as footnote."
     },
     {
       "id": "s20-11",
       "sceneId": "s20",
-      "text": "Elizabeth’s thank-you speech stumbled; Darcy asked for her love instead of her gratitude."
+      "text": "Finale inventory: pride at the assembly; prejudice fed by Vázquez; Julieta’s suffering; Colinas refused; Carlota settled; Hunsford proposal; letter at the wall; estancia revision; Lidia’s ruin; Duarte’s repair; Doña Catalina refused; Beltrán’s return; Julieta engaged; Elena engaged; marriages."
     },
     {
       "id": "s20-12",
       "sceneId": "s20",
-      "text": "She gave both, ordered properly: love first, thanks as footnote."
+      "text": "Order kept."
     },
     {
       "id": "s20-13",
       "sceneId": "s20",
-      "text": "Finale inventory: pride at the assembly; prejudice fed by Wickham; Jane’s suffering; Collins refused; Charlotte settled; Hunsford proposal; letter at the wall; estancia revision; Lydia’s ruin; Darcy’s repair; Lady Catherine refused; Bingley’s return; Jane engaged; Elizabeth engaged; marriages."
-    },
-    {
-      "id": "s20-14",
-      "sceneId": "s20",
-      "text": "Order kept."
-    },
-    {
-      "id": "s20-15",
-      "sceneId": "s20",
       "text": "Names kept."
     },
     {
-      "id": "s20-16",
+      "id": "s20-14",
       "sceneId": "s20",
       "text": "Spirit kept."
     },
     {
       "id": "s21-0",
       "sceneId": "s21",
-      "text": "In the weeks after her engagement Elizabeth found old insults returning as comedy."
+      "text": "In the weeks after her engagement Elena found old insults returning as comedy."
     },
     {
       "id": "s21-1",
       "sceneId": "s21",
-      "text": "She told Darcy about the “tolerable” remark; he groaned and kissed her hand in apology older than their truce."
+      "text": "She told Duarte about the “tolerable” remark; he groaned and kissed her hand in apology older than their truce."
     },
     {
       "id": "s21-2",
       "sceneId": "s21",
-      "text": "She told Jane everything except the parts that would needlessly bruise—Wickham’s predatory history abbreviated."
+      "text": "She told Julieta everything except the parts that would needlessly bruise—Vázquez’s predatory history abbreviated."
     },
     {
       "id": "s21-3",
       "sceneId": "s21",
-      "text": "Jane wept for Georgiana and held Elizabeth’s hand."
+      "text": "Julieta wept for Josefina and held Elena’s hand."
     },
     {
       "id": "s21-4",
       "sceneId": "s21",
-      "text": "The wedding of Jane and Bingley preceded Elizabeth’s by enough days to let Mrs Bennet exhaust one triumph before the next."
+      "text": "The wedding of Julieta and Beltrán preceded Elena’s by enough days to let Sra. Benítez exhaust one triumph before the next."
     },
     {
       "id": "s21-5",
@@ -1932,12 +1917,12 @@
     {
       "id": "s21-6",
       "sceneId": "s21",
-      "text": "Wickham attended Lydia’s earlier ceremony with a smile for sale; Darcy did not attend that one in person, having already paid for its existence."
+      "text": "Vázquez attended Lidia’s earlier ceremony with a smile for sale; Duarte did not attend that one in person, having already paid for its existence."
     },
     {
       "id": "s21-7",
       "sceneId": "s21",
-      "text": "On Elizabeth and Darcy’s wedding evening the city glittered as if paid to."
+      "text": "On Elena and Duarte’s wedding evening the city glittered as if paid to."
     },
     {
       "id": "s21-8",
@@ -1952,12 +1937,12 @@
     {
       "id": "s21-10",
       "sceneId": "s21",
-      "text": "Years later a niece asked Elizabeth how she had known Darcy was the one."
+      "text": "Years later a niece asked Elena how she had known Duarte was the one."
     },
     {
       "id": "s21-11",
       "sceneId": "s21",
-      "text": "Elizabeth said she had not known; she had learned."
+      "text": "Elena said she had not known; she had learned."
     },
     {
       "id": "s21-12",
@@ -1972,207 +1957,17 @@
     {
       "id": "s21-14",
       "sceneId": "s21",
-      "text": "Elizabeth’s last private joke before sleep on the estancia was that Darcy had fallen for the woman who insulted him best."
+      "text": "Elena’s last private joke before sleep on the estancia was that Duarte had fallen for the woman who insulted him best."
     },
     {
       "id": "s21-15",
       "sceneId": "s21",
-      "text": "Darcy, eyes closed, said he had fallen for the woman who improved him hardest."
+      "text": "Duarte, eyes closed, said he had fallen for the woman who improved him hardest."
     },
     {
       "id": "s21-16",
       "sceneId": "s21",
       "text": "Both jokes were true enough to bless the dark."
-    },
-    {
-      "id": "s21-17",
-      "sceneId": "s21",
-      "text": "Memory fragment 1: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-18",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-19",
-      "sceneId": "s21",
-      "text": "Memory fragment 2: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-20",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-21",
-      "sceneId": "s21",
-      "text": "Memory fragment 3: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-22",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-23",
-      "sceneId": "s21",
-      "text": "Memory fragment 4: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-24",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-25",
-      "sceneId": "s21",
-      "text": "Memory fragment 5: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-26",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-27",
-      "sceneId": "s21",
-      "text": "Memory fragment 6: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-28",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-29",
-      "sceneId": "s21",
-      "text": "Memory fragment 7: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-30",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-31",
-      "sceneId": "s21",
-      "text": "Memory fragment 8: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-32",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-33",
-      "sceneId": "s21",
-      "text": "Memory fragment 9: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-34",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-35",
-      "sceneId": "s21",
-      "text": "Memory fragment 10: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-36",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-37",
-      "sceneId": "s21",
-      "text": "Memory fragment 11: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-38",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-39",
-      "sceneId": "s21",
-      "text": "Memory fragment 12: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-40",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-41",
-      "sceneId": "s21",
-      "text": "Memory fragment 13: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-42",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-43",
-      "sceneId": "s21",
-      "text": "Memory fragment 14: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-44",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-45",
-      "sceneId": "s21",
-      "text": "Memory fragment 15: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-46",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-47",
-      "sceneId": "s21",
-      "text": "Memory fragment 16: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-48",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-49",
-      "sceneId": "s21",
-      "text": "Memory fragment 17: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-50",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-51",
-      "sceneId": "s21",
-      "text": "Memory fragment 18: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-52",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
-    },
-    {
-      "id": "s21-53",
-      "sceneId": "s21",
-      "text": "Memory fragment 19: Elizabeth recalled a specific exchange at the assembly—Bingley’s warmth, Darcy’s chill, Charlotte’s raised eyebrow, Jane’s hopeful color—and used it later as a measure of how far speech could wound."
-    },
-    {
-      "id": "s21-54",
-      "sceneId": "s21",
-      "text": "Fragment by fragment she rebuilt her map of the season until pride and prejudice were labeled as errors rather than identities."
     }
   ]
 }

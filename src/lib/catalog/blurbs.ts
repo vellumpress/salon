@@ -165,13 +165,13 @@ const BLURBS: Record<string, string> = {
   "madame-bovary-tokyo":
     "A New Town wife tries to live glamorous Tokyo as if desire were a credit line.",
   "dorian-gray-shanghai":
-    "A Bund portrait that ages while Dorian Gray does not—Shanghai clubs, a fruit-knife, the river unarchiving.",
+    "A Bund portrait that ages while Du Yan does not—Shanghai clubs, a fruit-knife, the river unarchiving.",
   "anna-karenina-milan":
     "Fashion-week light at Milano Centrale, and a glance that will not stay a schedule.",
   "jane-eyre-singapore":
     "Charity as poor ventilation in Katong, then a house that answers back.",
   "pride-prejudice-buenos-aires":
-    "Recoleta manners as municipal law: Elizabeth Bennet watches Buenos Aires arrange marriages along Alvear.",
+    "Recoleta manners as municipal law: Elena Benítez watches Buenos Aires arrange marriages along Alvear.",
   "dracula-istanbul":
     "A yalı that needs lawyers more than guests, and Istanbul split across the Bosphorus.",
   "crime-punishment-cape-town":
@@ -179,7 +179,7 @@ const BLURBS: Record<string, string> = {
   "age-of-innocence-venice":
     "A Fenice box where Venetian lace cuts, and a life already arranged by other people.",
   "tess-lisbon":
-    "An Alentejo track, a Tagus-side villa, and a name Lisbon salons can perfume into prey.",
+    "A spent name, a Tagus-side villa, and purity police that finish what desire began.",
   "scarlet-letter-kyoto":
     "A Kyoto scaffold, a letter that will not come off, and merchant-quarter shame.",
   "wuthering-heights-rio":
