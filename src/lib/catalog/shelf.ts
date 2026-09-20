@@ -1435,7 +1435,7 @@ export const SHELF: ShelfWork[] = [
       "You ask me, my father, to tell you the tale of the youth of Umslopogaas, holder of the iron Chieftainess, the axe Groan-maker, who was named Bulalio the Slaughterer, and of his love for Nada, the most beautiful of Zulu women.",
     breaths: 8,
     intro:
-      "You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zululand frame — an old narrator under “the White Man” / Great Queen law, telling Umslopogaas and Nada. Colonial adventure voice; period names and violence ahead. Salon stops at the hidden-name beat. Name that frame for the room before you Host further.",
+      "You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zululand frame — an old narrator under “the White Man” / Great Queen law — is colonial adventure voice, with period names and violence ahead. Name that frame for the room before you Host further; Salon stops at the hidden-name beat.",
   },
   { id: "tales-of-mean-streets", title: "Tales of Mean Streets", author: "Arthur Morrison", year: 1894, form: "stories", language: "English", minutes: 80, gutenberg: 40569 },
   { id: "children-of-the-night", title: "Children of the Night", author: "Edwin Arlington Robinson", year: 1897, form: "poem", language: "English", minutes: 90, gutenberg: 313 },

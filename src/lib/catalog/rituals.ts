@@ -170,7 +170,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "growth-of-the-soil":
     `Who made the road over the moors? A man with a sack, a red beard, and scars — looking for land, or peace. Hamsun’s settler open uses the period word “Lapp” for Sámi herders on the common. Historical voice; Salon stays on the man with the sack. If you Host further, keep that named for the room.`,
   "nada-the-lily":
-    `You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zululand frame — an old narrator under “the White Man” / Great Queen law, telling Umslopogaas and Nada. Colonial adventure voice; period names and violence ahead. Salon stops at the hidden-name beat. Name that frame for the room before you Host further.`,
+    `You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zululand frame — an old narrator under “the White Man” / Great Queen law — is colonial adventure voice, with period names and violence ahead. Name that frame for the room before you Host further; Salon stops at the hidden-name beat.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":

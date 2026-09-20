@@ -1133,7 +1133,7 @@ test("Nada the Lily ships the required colonial Host note and hidden-name sit", 
   assert.match(packed.note, /White Man/);
   assert.match(packed.note, /Great Queen/);
   assert.match(packed.note, /Name that frame for the room before you Host further/);
-  assert.match(full.note, /Colonial adventure voice/);
+  assert.match(full.note, /colonial adventure voice/);
   assert.match(work!.intro ?? "", /White Man/);
   assert.match(work!.intro ?? "", /Name that frame for the room before you Host further/);
   assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open|silent-ship/i);
