@@ -119,3 +119,16 @@ test("Blood and Sand is a readable local EN bind", () => {
   assert.equal(isBoundLocal({ id: "blood-and-sand", local: true }), true);
   assert.equal(isBoundReadable({ id: "blood-and-sand", local: true, gutenberg: 54222 }), true);
 });
+
+test("Mira PM4 Next sits are readable local EN binds", () => {
+  for (const [id, gutenberg] of [
+    ["the-painted-veil", 64682],
+    ["the-good-soldier", 2775],
+    ["growth-of-the-soil", 10984],
+    ["nada-the-lily", 1207],
+  ] as const) {
+    assert.equal(isEnReadableOff(id), false, id);
+    assert.equal(isBoundLocal({ id, local: true }), true, id);
+    assert.equal(isBoundReadable({ id, local: true, gutenberg }), true, id);
+  }
+});

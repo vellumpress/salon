@@ -278,6 +278,54 @@ test("Letters of a Javanese Princess waking sit is the cloistered-arms cut", () 
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
+test("The Painted Veil before-sleep sit is the door cut", () => {
+  const item = work({
+    id: "the-painted-veil",
+    form: "novel",
+    breaths: 16,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("The Good Soldier before-sleep sit is the glove cut", () => {
+  const item = work({
+    id: "the-good-soldier",
+    form: "novel",
+    breaths: 6,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Growth of the Soil waking sit is the first-sack cut", () => {
+  const item = work({
+    id: "growth-of-the-soil",
+    form: "novel",
+    breaths: 9,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Nada the Lily before-sleep sit is the hidden-name cut", () => {
+  const item = work({
+    id: "nada-the-lily",
+    form: "novel",
+    breaths: 8,
+    minutes: 2,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
 test("Blood and Sand waking sit is the fight-day breakfast cut", () => {
   const item = work({
     id: "blood-and-sand",

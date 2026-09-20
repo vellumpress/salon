@@ -411,7 +411,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Émile Verhaeren (tr. Alma Strettell)",
   ],
   Sweden: ["August Strindberg", "Selma Lagerlöf"],
-  Norway: ["Alexander Kielland", "Bjørnstjerne Bjørnson", "Henrik Ibsen", "Jonas Lie", "Knut Hamsun", "Sigrid Undset"],
+  Norway: ["Alexander Kielland", "Bjørnstjerne Bjørnson", "Henrik Ibsen", "Jonas Lie", "Knut Hamsun", "Knut Hamsun (tr. W. W. Worster)", "Sigrid Undset"],
   Denmark: ["Henrik Pontoppidan", "J. P. Jacobsen", "Jens Peter Jacobsen", "Martin Andersen Nexø"],
   Finland: ["Aleksis Kivi", "Elias Lönnrot", "Johannes Linnankoski"],
   Greece: [
@@ -515,6 +515,9 @@ const WORK_COUNTRY: Record<string, string> = {
   "actions-and-reactions": "India",
   "soldiers-three": "India",
   "nada-the-lily": "South Africa",
+  "the-painted-veil": "United Kingdom",
+  "the-good-soldier": "United Kingdom",
+  "growth-of-the-soil": "Norway",
   // Folklore / anonymous / compiled
   njala: "Iceland",
   nights: "Egypt",

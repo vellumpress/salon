@@ -27,6 +27,8 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * not the locked recommend list.
  * Ecstasy, An Outcast of the Islands, The Underdogs, and The Diary of a
  * Chambermaid are ritual Next sits only — not the locked recommend list.
+ * The Painted Veil, The Good Soldier, Growth of the Soil, and Nada the Lily
+ * are ritual Next sits only — not the locked recommend list, not For you.
  * The Poison Tree is Later (Bengal / unwind) — not Next, not locked recommend.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own

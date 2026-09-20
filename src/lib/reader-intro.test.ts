@@ -203,6 +203,38 @@ test("The Diary of a Chambermaid uses the waking hiring-day sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
 });
 
+test("The Painted Veil uses the before-sleep door sit and names the frame", () => {
+  const copy = readerIntro(shelfAsWork("the-painted-veil"));
+  assert.match(copy, /Walter/);
+  assert.match(copy, /amah/);
+  assert.match(copy, /How shall I get out/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
+test("The Good Soldier uses the before-sleep glove sit", () => {
+  const copy = readerIntro(shelfAsWork("the-good-soldier"));
+  assert.match(copy, /Bad Nauheim/);
+  assert.match(copy, /glove/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
+test("Growth of the Soil shows the soft Host note for period Lapp / Sámi", () => {
+  const copy = readerIntro(shelfAsWork("growth-of-the-soil"));
+  assert.match(copy, /sack/);
+  assert.match(copy, /\bLapp\b/);
+  assert.match(copy, /Sámi/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
+test("Nada the Lily shows the required colonial Host note before the sit", () => {
+  const copy = readerIntro(shelfAsWork("nada-the-lily"));
+  assert.match(copy, /Umslopogaas/);
+  assert.match(copy, /White Man/);
+  assert.match(copy, /Great Queen/);
+  assert.match(copy, /Name that frame for the room before you Host further/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
 test("Blood and Sand uses the waking fight-day breakfast sit", () => {
   const copy = readerIntro(shelfAsWork("blood-and-sand"));
   assert.match(copy, /breakfast/);

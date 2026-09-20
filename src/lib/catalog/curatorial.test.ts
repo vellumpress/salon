@@ -38,6 +38,10 @@ test("Locked recommend order is April, Bridge, Maggot, then Mirth, then Quicksan
   assert.equal(FEATURED_CAROUSEL_IDS.includes("an-outcast-of-the-islands"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-underdogs"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("diary-of-a-chambermaid"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-painted-veil"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-good-soldier"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("growth-of-the-soil"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("nada-the-lily"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("miss-brill-adapted"), false);
@@ -88,6 +92,10 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("an-outcast-of-the-islands"), "later");
   assert.equal(curatorialTrack("the-underdogs"), "later");
   assert.equal(curatorialTrack("diary-of-a-chambermaid"), "later");
+  assert.equal(curatorialTrack("the-painted-veil"), "later");
+  assert.equal(curatorialTrack("the-good-soldier"), "later");
+  assert.equal(curatorialTrack("growth-of-the-soil"), "later");
+  assert.equal(curatorialTrack("nada-the-lily"), "later");
 });
 
 test("Quicksand is a local before-sleep bind with no Gutenberg id", () => {
@@ -576,6 +584,81 @@ test("The Diary of a Chambermaid is a local waking bind on Next, not locked reco
   assert.ok(stub);
   assert.equal(stub.local, undefined);
   assert.notEqual(stub.id, work.id);
+});
+
+test("The Painted Veil is a local before-sleep bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "the-painted-veil");
+  assert.ok(work);
+  assert.equal(work.year, 1925);
+  assert.equal(work.title, "The Painted Veil");
+  assert.equal(work.author, "W. Somerset Maugham");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 64682);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^She gave a startled cry/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("the-painted-veil"));
+  assert.ok(lane!.workIds.indexOf("the-painted-veil") > lane!.workIds.indexOf("ecstasy"));
+  assert.ok(lane!.workIds.indexOf("the-painted-veil") > lane!.workIds.indexOf("quicksand"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-painted-veil"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-painted-veil"), false);
+  assert.equal(curatorialTrack("the-painted-veil"), "later");
+});
+
+test("The Good Soldier is a local before-sleep bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "the-good-soldier");
+  assert.ok(work);
+  assert.equal(work.year, 1915);
+  assert.equal(work.title, "The Good Soldier");
+  assert.equal(work.author, "Ford Madox Ford");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 2775);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^This is the saddest story I have ever heard/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("the-good-soldier"));
+  assert.ok(lane!.workIds.indexOf("the-good-soldier") > lane!.workIds.indexOf("the-painted-veil"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-good-soldier"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-good-soldier"), false);
+  assert.equal(curatorialTrack("the-good-soldier"), "later");
+});
+
+test("Growth of the Soil is a local waking bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "growth-of-the-soil");
+  assert.ok(work);
+  assert.equal(work.year, 1920);
+  assert.equal(work.title, "Growth of the Soil");
+  assert.equal(work.author, "Knut Hamsun (tr. W. W. Worster)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 10984);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^The long, long road over the moors/);
+  const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
+  assert.ok(lane?.workIds.includes("growth-of-the-soil"));
+  assert.ok(
+    lane!.workIds.indexOf("growth-of-the-soil") > lane!.workIds.indexOf("diary-of-a-chambermaid"),
+  );
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("growth-of-the-soil"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("growth-of-the-soil"), false);
+  assert.equal(curatorialTrack("growth-of-the-soil"), "later");
+});
+
+test("Nada the Lily is a local before-sleep bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "nada-the-lily");
+  assert.ok(work);
+  assert.equal(work.year, 1892);
+  assert.equal(work.title, "Nada the Lily");
+  assert.equal(work.author, "H. Rider Haggard");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 1207);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^You ask me, my father/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("nada-the-lily"));
+  assert.ok(lane!.workIds.indexOf("nada-the-lily") > lane!.workIds.indexOf("the-good-soldier"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("nada-the-lily"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("nada-the-lily"), false);
+  assert.equal(curatorialTrack("nada-the-lily"), "later");
 });
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {

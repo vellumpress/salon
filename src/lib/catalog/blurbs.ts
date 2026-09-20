@@ -67,6 +67,14 @@ const BLURBS: Record<string, string> = {
     "A dog barking in the sierra, tortillas, a rifle under the mat, and hoofbeats in the quarry.",
   "diary-of-a-chambermaid":
     "Twelfth place in two years: a rainy September, a Figaro ad, and no interview with Madame.",
+  "the-painted-veil":
+    "Someone tries the door — shuttered room, tight shoes, a kimono, and Walter’s name whispered.",
+  "the-good-soldier":
+    "Nine seasons at Bad Nauheim — intimacy like a good glove, and still they knew nothing.",
+  "growth-of-the-soil":
+    "A man with a sack, a red beard, and scars walks the ownerless moors looking for land or peace.",
+  "nada-the-lily":
+    "You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:
@@ -199,7 +207,6 @@ const BLURBS: Record<string, string> = {
   "the-old-wives-tale": "Two sisters from the Five Towns, told across a whole ordinary century.",
   "the-man-who-was-thursday": "A poet-detective joins a council of anarchists who keep turning into jokes.",
   "the-innocence-of-father-brown": "A small priest sees the crime because he knows the sinner from the inside.",
-  "the-good-soldier": "Ford’s narrator tells a story of passion and keeps discovering he had it wrong.",
   "pointed-roofs": "Miriam Henderson goes to Germany as a pupil-teacher and starts a life in sentences.",
   "the-autobiography-of-an-ex-colored-man":
     "A musician chooses passing, then has to live inside the choice.",
