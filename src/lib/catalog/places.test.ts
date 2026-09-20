@@ -19,6 +19,9 @@ test("named settings keep reader-friendly labels and real regions", () => {
     passing: { label: "Harlem", region: "us" },
     naomi: { label: "Tokyo", region: "jp" },
     dalloway: { label: "London", region: "gb" },
+    "miss-brill-adapted": { label: "New York", region: "us" },
+    "prefer-not": { label: "New York", region: "us" },
+    "late-season": { label: "Cape May / New York", region: "us" },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = shelfWork(id);

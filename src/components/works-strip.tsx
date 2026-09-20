@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { LOCAL_WORKS } from "@/lib/catalog/full-pdf";
+import { CLASSIC_LOCAL_WORKS } from "@/lib/catalog/full-pdf";
 import { useVisitSeed } from "@/lib/use-visit-seed";
 import {
   nextStripCount,
@@ -21,12 +21,12 @@ export function WorksStrip() {
   const [count, setCount] = useState(STRIP_BATCH);
 
   const items = useMemo(
-    () => stripItems(LOCAL_WORKS, visit, count),
+    () => stripItems(CLASSIC_LOCAL_WORKS, visit, count),
     [visit, count],
   );
 
   const grow = useCallback(() => {
-    setCount((current) => nextStripCount(current, LOCAL_WORKS.length));
+    setCount((current) => nextStripCount(current, CLASSIC_LOCAL_WORKS.length));
   }, []);
 
   useEffect(() => {
@@ -110,7 +110,7 @@ export function WorksStrip() {
     };
   }, []);
 
-  if (LOCAL_WORKS.length === 0) return null;
+  if (CLASSIC_LOCAL_WORKS.length === 0) return null;
 
   return (
     <nav ref={root} className="cell-works" aria-label="Works">

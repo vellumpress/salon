@@ -1,3 +1,4 @@
+import { ADAPTED_BY_SALON_IDS, isAdaptedBySalon } from "./curatorial.ts";
 import { isBoundLocal, isBoundReadable, isEnReadableOff } from "./en-rights.ts";
 import { SHELF, shelfWork, type ShelfWork } from "./shelf.ts";
 
@@ -29,3 +30,13 @@ export function withLocalBound<T extends { id: string }>(items: T[]) {
 export const FULL_TEXT_WORKS: ShelfWork[] = SHELF.filter((item) => isBoundReadable(item));
 
 export const LOCAL_WORKS: ShelfWork[] = SHELF.filter((item) => isBoundLocal(item));
+
+/** Homepage classics strip — remakes live on the Adapted by Salon shelf. */
+export const CLASSIC_LOCAL_WORKS: ShelfWork[] = LOCAL_WORKS.filter(
+  (item) => !isAdaptedBySalon(item.id),
+);
+
+export const ADAPTED_WORKS: ShelfWork[] = ADAPTED_BY_SALON_IDS.flatMap((id) => {
+  const work = shelfWork(id);
+  return work && isBoundLocal(work) ? [work] : [];
+});

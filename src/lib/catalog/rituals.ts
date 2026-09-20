@@ -59,6 +59,12 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Mansfield mornings: party light, then a turn toward the lane you weren’t meant to notice. Domestic brilliance with a chill underneath.",
   "bliss-and-other-stories":
     "More Mansfield rooms where the furniture shimmers and then stings. Marriage, desire, and the sentence that rearranges the afternoon.",
+  "miss-brill-adapted":
+    "She dresses for the audience she thinks she’s in — camel coat, fake-fur scarf, earbuds with nothing playing — until a couple on her bench tells the afternoon what she is. After Mansfield, Miss Brill, 1920.",
+  "prefer-not":
+    "A mild refusal becomes the office’s true architecture—and pity learns the shape of its limits. After Melville, Bartleby, 1853.",
+  "late-season":
+    "Off-season Cape May, a small white dog, and an affair that refuses to stay temporary once the city proves too small for what began. After Chekhov, The Lady with the Dog, 1899.",
   "body-of-this-death":
     "Bogan on flesh, desire, and what it costs to keep living in a body. Spare, exact poems — no soft focus on the wound.",
   orlando:
@@ -178,6 +184,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "silhouettes",
       "the-garden-party-and-other-stories",
       "bliss-and-other-stories",
+      "miss-brill-adapted",
+      "prefer-not",
+      "late-season",
     ],
   },
   {
