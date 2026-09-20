@@ -10,6 +10,7 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Quicksand is Next Featured-track: worldly non-NY backup after Mirth.
  * The Attendant’s Confession sits beside it (A24 South America lane).
  * Rashōmon sits beside them (Asia lane) — not Featured until a dedicated trio.
+ * A High Wind in Jamaica sits beside them (Jamaica / before-sleep Host-a-sit Ch1).
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never Featured, Next, or Later classics.
@@ -20,6 +21,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "quicksand",
   "attendants-confession",
   "rashomon",
+  "high-wind-jamaica",
 ] as const;
 
 /** Mira pack — homepage Adapted by Salon only. Do not add to Featured / Next. */

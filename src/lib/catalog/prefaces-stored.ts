@@ -192,6 +192,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "here-and-beyond": `Wharton ghost stories: the social world with the lights turned down. Enter one room at a time.`,
   "herland": `Three men find a country of women and discover they are the joke. Sit with the world a moment before the first breath.`,
   "hidden-force": `Louis Couperus’s 1900 novel The Hidden Force. Sit with the world a moment before the first breath.`,
+  "high-wind-jamaica": `Jamaica after Emancipation: ruins within a stone’s throw of what still stands, and Derby Hill swallowed by bush until the front door is held open by a rank plant. Richard Hughes’s 1929 novel opens on that swallowed house.`,
   "hien-le-maboul": `Émile Nolly’s 1908 novel Hiên le Maboul. Sit with the world a moment before the first breath.`,
   "home-harlem": `A veteran comes back to Harlem looking for a night that still belongs to him. Sit with the world a moment before the first breath.`,
   "home-world": `The Home and the World (1916): devotion as quiet attention, without a sermon. Sit with the world a moment before the first breath.`,

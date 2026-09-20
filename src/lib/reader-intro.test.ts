@@ -64,6 +64,13 @@ test("Rashōmon uses the before-sleep empty-gate sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Hearn/i);
 });
 
+test("A High Wind in Jamaica uses the before-sleep rank-plant sit", () => {
+  const copy = readerIntro(shelfAsWork("high-wind-jamaica"));
+  assert.match(copy, /Jamaica after Emancipation/);
+  assert.match(copy, /rank plant/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host note/i);
+});
+
 test("uses Featured before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),

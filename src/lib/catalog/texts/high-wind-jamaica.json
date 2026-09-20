@@ -1,0 +1,81 @@
+{
+  "id": "high-wind-jamaica",
+  "title": "A High Wind in Jamaica",
+  "author": "Richard Hughes",
+  "year": "1929",
+  "note": "Jamaica after Emancipation: ruins within a stone’s throw of what still stands, and Derby Hill swallowed by bush until the front door is held open by a rank plant.\n\nA High Wind in Jamaica (Hughes; US 1929 as The Innocent Voyage; PG 75530). This local bind is the Host-a-sit Ch1 cut — Emancipation ruins through Derby Hill “rank plant” — not the whole novel. Period racial language in this cut is locked; do not extend past the rank plant.",
+  "minutes": 3,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Derby Hill",
+      "place": "one sitting",
+      "reentry": "One of the fruits of Emancipation in the West Indian islands is the number of the ruins, either attached to the houses that remain or within a stone’s throw of them: ruined slaves’ quarters, ruined sugar-grinding houses, ruined boiling houses; often ruined mansions that were too expensive to maintain.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "One of the fruits of Emancipation in the West Indian islands is the number of the ruins, either attached to the houses that remain or within a stone’s throw of them: ruined slaves’ quarters, ruined sugar-grinding houses, ruined boiling houses; often ruined mansions that were too expensive to maintain."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Earthquake, fire, rain, and deadlier vegetation, did their work quickly."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "One scene is very clear in my mind, in Jamaica."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "There was a vast stone-built house called Derby Hill (where the Parkers lived)."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "It had been the centre of a very prosperous plantation."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "With Emancipation, like many others, that went _bung_."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "The sugar buildings fell down."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Bush smothered the cane and guinea-grass."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "The field negroes left their cottages in a body, to be somewhere less disturbed by even the possibility of work."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Then the house negroes’ quarters burned down, and the three remaining faithful servants occupied the mansion."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "The two heiresses of all this, the Miss Parkers, grew old; and were by education incapable."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "And the scene is this: coming to Derby Hill on some business or other, and wading waist-deep in bushes up to the front door, now lashed permanently open by a rank plant."
+    }
+  ]
+}

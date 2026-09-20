@@ -57,6 +57,7 @@ test("known origin overrides", () => {
     odessa: "Ukraine",
     "attendants-confession": "Brazil",
     rashomon: "Japan",
+    "high-wind-jamaica": "Jamaica",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);
@@ -111,6 +112,10 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /Evening under Rashōmon/i,
       opening: /^It was evening\./,
     },
+    "high-wind-jamaica": {
+      scene: /Derby Hill/i,
+      opening: /^One of the fruits of Emancipation/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -144,6 +149,13 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /earthquakes, cyclones, fires and famines|desolation was extraordinary/i,
+      );
+    }
+    if (id === "high-wind-jamaica") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /lashed permanently open by a rank plant\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /peering|negress/i,
       );
     }
   }
@@ -256,6 +268,47 @@ test("Rashōmon opens in sentence case and binds only the title story", () => {
     false,
     "full text should bind only Rashōmon, not later stories in PG 78105",
   );
+  for (const pack of [packed, full]) {
+    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+    assert.doesNotMatch(joined, /project gutenberg/i);
+    const decorative = pack.breaths.filter((breath) => {
+      const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
+      return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
+    });
+    assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
+  }
+});
+
+test("A High Wind in Jamaica opens on Emancipation ruins and binds only the rank-plant sit", () => {
+  const work = SHELF.find((item) => item.id === "high-wind-jamaica");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 75530);
+  assert.equal(work!.title, "A High Wind in Jamaica");
+  assert.match(work!.opening ?? "", /^One of the fruits of Emancipation/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/high-wind-jamaica.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/high-wind-jamaica.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Derby Hill/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^One of the fruits of Emancipation/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /lashed permanently open by a rank plant\.?$/);
+  assert.equal(
+    packed.breaths.some((breath) => /peer|negress/i.test(breath.text)),
+    false,
+    "open-at should stop before peering / negress beat",
+  );
+  assert.ok(
+    packed.breaths.some((breath) => /went _bung_\./.test(breath.text)),
+    "PG emphasis becomes italic markup",
+  );
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+  assert.match(full.breaths[0]?.text ?? "", /^One of the fruits of Emancipation/);
+  assert.match(full.breaths.at(-1)?.text ?? "", /rank plant\.?$/);
   for (const pack of [packed, full]) {
     const joined = pack.breaths.map((breath) => breath.text).join("\n");
     assert.doesNotMatch(joined, /project gutenberg/i);
