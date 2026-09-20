@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import {
   ADAPTED_BY_SALON_IDS,
@@ -121,7 +123,7 @@ const EXPECT = {
   },
 } as const;
 
-test("Adapted remakes are local sits with source credit, not Featured", () => {
+test("Adapted remakes are local sits with source credit, not locked recommend", () => {
   const unwind = RITUAL_LANES.find((lane) => lane.id === "unwind");
   const beforeSleep = RITUAL_LANES.find((lane) => lane.id === "before-sleep");
   assert.ok(unwind);
@@ -224,7 +226,7 @@ test("classic Miss Brill collection stays on the shelf beside the remake", () =>
   assert.equal(remake!.title, "Katherine Mansfield, Miss Brill recast");
 });
 
-test("Featured recommend order stays the locked five titles", () => {
+test("Locked recommend order stays the locked five titles", () => {
   assert.deepEqual(
     featuredWorks().map((item) => item.id),
     [...FEATURED_CAROUSEL_IDS],
@@ -266,8 +268,41 @@ test("homepage Adapted surface is a gateway, not a drifting remake strip", () =>
   assert.doesNotMatch(css, /\.cell-featured|\.featured-kicker/);
   assert.match(lane, /ADAPTED_WORKS/);
   assert.match(lane, /to=["']\/read\/\$workId["']/);
-  assert.doesNotMatch(lane, /FEATURED_CAROUSEL|stripDriftDelta|adapted-scroller/);
+  assert.doesNotMatch(lane, /FEATURED_CAROUSEL|stripDriftDelta|adapted-scroller|\bFeatured\b/);
+  assert.doesNotMatch(src, /\bFeatured\b/);
   assert.doesNotMatch(css, /\.adapted-scroller/);
+});
+
+function listSource(dir: string): string[] {
+  const out: string[] = [];
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const path = join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...listSource(path));
+    else if (/\.(tsx|ts)$/.test(entry.name)) out.push(path);
+  }
+  return out;
+}
+
+function withoutComments(src: string) {
+  return src.replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
+}
+
+test("routes and components have no reader-facing Featured label", () => {
+  const here = fileURLToPath(new URL("../..", import.meta.url));
+  const hits: string[] = [];
+  for (const folder of ["routes", "components"]) {
+    for (const file of listSource(join(here, folder))) {
+      const code = withoutComments(readFileSync(file, "utf8"));
+      const quoted = [...code.matchAll(/(["'`])(?:\\.|(?!\1)[\s\S])*?\1/g)].map((m) => m[0]);
+      const jsx = [...code.matchAll(/>([^<{]{1,200})</g)].map((m) => m[1] ?? "");
+      for (const chunk of [...quoted, ...jsx]) {
+        if (/\bFeatured(?:-track)?\b|\bFEATURED\b/.test(chunk)) {
+          hits.push(`${file.slice(here.length + 1)}: ${chunk.trim().slice(0, 100)}`);
+        }
+      }
+    }
+  }
+  assert.deepEqual(hits, []);
 });
 
 test("batch-2 remakes use Mira open-ats, not raw keep-as-is extracts", () => {

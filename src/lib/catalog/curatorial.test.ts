@@ -11,7 +11,7 @@ import { RITUAL_LANES } from "./rituals.ts";
 import { SHELF } from "./shelf.ts";
 import { isBoundLocal } from "./en-rights.ts";
 
-test("Featured carousel is April, Bridge, Maggot, then Mirth, then Quicksand", () => {
+test("Locked recommend order is April, Bridge, Maggot, then Mirth, then Quicksand", () => {
   assert.deepEqual(FEATURED_CAROUSEL_IDS, [
     "enchanted-april",
     "the-bridge-of-san-luis-rey",
@@ -48,7 +48,7 @@ test("Featured carousel is April, Bridge, Maggot, then Mirth, then Quicksand", (
   }
 });
 
-test("Next Featured-track no longer lists Mirth or Quicksand", () => {
+test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.deepEqual([...NEXT_FEATURED_TRACK_IDS], [
     "attendants-confession",
     "rashomon",
@@ -98,7 +98,7 @@ test("Quicksand is a local before-sleep bind with no Gutenberg id", () => {
   );
 });
 
-test("Adapted by Salon remakes are their own track — never Featured or Next", () => {
+test("Adapted by Salon remakes are their own track — never locked recommend or Next", () => {
   assert.deepEqual(
     [...ADAPTED_BY_SALON_IDS],
     [
@@ -129,7 +129,7 @@ test("Adapted by Salon remakes are their own track — never Featured or Next", 
   assert.equal(curatorialTrack("the-garden-party-and-other-stories"), "later");
 });
 
-test("The Attendant’s Confession is a local before-sleep bind on Next Featured-track", () => {
+test("The Attendant’s Confession is a local before-sleep bind on Next", () => {
   const work = SHELF.find((item) => item.id === "attendants-confession");
   assert.ok(work);
   assert.equal(work.year, 1881);
@@ -145,7 +145,7 @@ test("The Attendant’s Confession is a local before-sleep bind on Next Featured
   );
 });
 
-test("Rashōmon is a local before-sleep bind on Next Featured-track", () => {
+test("Rashōmon is a local before-sleep bind on Next", () => {
   const work = SHELF.find((item) => item.id === "rashomon");
   assert.ok(work);
   assert.equal(work.year, 1915);
@@ -162,7 +162,7 @@ test("Rashōmon is a local before-sleep bind on Next Featured-track", () => {
   );
 });
 
-test("A High Wind in Jamaica is a local before-sleep bind on Next Featured-track", () => {
+test("A High Wind in Jamaica is a local before-sleep bind on Next", () => {
   const work = SHELF.find((item) => item.id === "high-wind-jamaica");
   assert.ok(work);
   assert.equal(work.year, 1929);
@@ -180,7 +180,7 @@ test("A High Wind in Jamaica is a local before-sleep bind on Next Featured-track
   );
 });
 
-test("Noli Me Tangere is a local unwind bind on Next Featured-track", () => {
+test("Noli Me Tangere is a local unwind bind on Next", () => {
   const work = SHELF.find((item) => item.id === "noli-me-tangere");
   assert.ok(work);
   assert.equal(work.year, 1887);
@@ -207,7 +207,7 @@ test("Noli Me Tangere is a local unwind bind on Next Featured-track", () => {
   assert.notEqual(stub.id, work.id);
 });
 
-test("Vera is a local before-sleep bind on Next Featured-track", () => {
+test("Vera is a local before-sleep bind on Next", () => {
   const work = SHELF.find((item) => item.id === "vera");
   assert.ok(work);
   assert.equal(work.year, 1921);
@@ -227,7 +227,7 @@ test("Vera is a local before-sleep bind on Next Featured-track", () => {
   assert.equal(curatorialTrack("vera"), "next");
 });
 
-test("On a Chinese Screen is a local waking bind on Next Featured-track", () => {
+test("On a Chinese Screen is a local waking bind on Next", () => {
   const work = SHELF.find((item) => item.id === "on-a-chinese-screen");
   assert.ok(work);
   assert.equal(work.year, 1922);
@@ -247,7 +247,7 @@ test("On a Chinese Screen is a local waking bind on Next Featured-track", () => 
   assert.equal(isAdaptedBySalon("on-a-chinese-screen"), false);
 });
 
-test("Futility is a local waking bind on Next Featured-track", () => {
+test("Futility is a local waking bind on Next", () => {
   const work = SHELF.find((item) => item.id === "futility");
   assert.ok(work);
   assert.equal(work.year, 1922);
@@ -283,7 +283,7 @@ test("The Poison Tree is a local unwind bind on Later, not Next", () => {
   assert.equal(curatorialTrack("poison-tree"), "later");
 });
 
-test("Trooper Peter Halket is a local before-sleep bind on Next Featured-track", () => {
+test("Trooper Peter Halket is a local before-sleep bind on Next", () => {
   const work = SHELF.find((item) => item.id === "trooper-peter-halket");
   assert.ok(work);
   assert.equal(work.year, 1897);
@@ -306,7 +306,7 @@ test("Trooper Peter Halket is a local before-sleep bind on Next Featured-track",
   assert.notEqual(stub.id, work.id);
 });
 
-test("Enchanted April is a local waking bind on Featured", () => {
+test("Enchanted April is a local waking bind on locked recommend", () => {
   const work = SHELF.find((item) => item.id === "enchanted-april");
   assert.ok(work);
   assert.equal(work.year, 1922);
@@ -321,7 +321,7 @@ test("Enchanted April is a local waking bind on Featured", () => {
   assert.equal(curatorialTrack("enchanted-april"), "featured");
 });
 
-test("Mr. Fortune’s Maggot is a local unwind bind on Featured", () => {
+test("Mr. Fortune’s Maggot is a local unwind bind on locked recommend", () => {
   const work = SHELF.find((item) => item.id === "mr-fortunes-maggot");
   assert.ok(work);
   assert.equal(work.year, 1927);
@@ -336,7 +336,7 @@ test("Mr. Fortune’s Maggot is a local unwind bind on Featured", () => {
   assert.equal(curatorialTrack("mr-fortunes-maggot"), "featured");
 });
 
-test("House of Mirth stays on unwind and is Featured, not Next", () => {
+test("House of Mirth stays on unwind and is locked recommend, not Next", () => {
   const work = SHELF.find((item) => item.id === "the-house-of-mirth");
   assert.ok(work);
   assert.equal(work.local, true);
@@ -345,7 +345,7 @@ test("House of Mirth stays on unwind and is Featured, not Next", () => {
   assert.ok(unwind?.workIds.includes("the-house-of-mirth"));
 });
 
-test("The Home and the World is a local before-sleep bind on Next Featured-track", () => {
+test("The Home and the World is a local before-sleep bind on Next", () => {
   const work = SHELF.find((item) => item.id === "the-home-and-the-world");
   assert.ok(work);
   assert.equal(work.year, 1916);
@@ -370,7 +370,7 @@ test("The Home and the World is a local before-sleep bind on Next Featured-track
   assert.notEqual(stub.id, work.id);
 });
 
-test("The Immoralist is a local before-sleep bind on Next Featured-track", () => {
+test("The Immoralist is a local before-sleep bind on Next", () => {
   const work = SHELF.find((item) => item.id === "the-immoralist");
   assert.ok(work);
   assert.equal(work.year, 1930);
@@ -396,7 +396,7 @@ test("The Immoralist is a local before-sleep bind on Next Featured-track", () =>
   assert.notEqual(stub.id, work.id);
 });
 
-test("Letters of a Javanese Princess is a local waking bind on Next, not Featured-track", () => {
+test("Letters of a Javanese Princess is a local waking bind on Next, not locked recommend", () => {
   const work = SHELF.find((item) => item.id === "letters-of-a-javanese-princess");
   assert.ok(work);
   assert.equal(work.year, 1920);
@@ -420,7 +420,7 @@ test("Letters of a Javanese Princess is a local waking bind on Next, not Feature
   assert.equal(curatorialTrack("letters-of-a-javanese-princess"), "later");
 });
 
-test("Blood and Sand is a local waking bind on Next, not Featured-track", () => {
+test("Blood and Sand is a local waking bind on Next, not locked recommend", () => {
   const work = SHELF.find((item) => item.id === "blood-and-sand");
   assert.ok(work);
   assert.equal(work.year, 1908);
@@ -438,7 +438,7 @@ test("Blood and Sand is a local waking bind on Next, not Featured-track", () => 
   assert.equal(curatorialTrack("blood-and-sand"), "later");
 });
 
-test("Where Angels Fear to Tread is a local waking bind on Next, not Featured-track", () => {
+test("Where Angels Fear to Tread is a local waking bind on Next, not locked recommend", () => {
   const work = SHELF.find((item) => item.id === "where-angels-fear-to-tread");
   assert.ok(work);
   assert.equal(work.year, 1905);
@@ -478,7 +478,7 @@ test("The Gadfly is a local before-sleep bind on Next, behind Home and the World
   assert.equal(curatorialTrack("the-gadfly"), "later");
 });
 
-test("Featured five stay findable on ritual lanes, not a homepage rail", () => {
+test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {
   const waking = RITUAL_LANES.find((item) => item.id === "waking-up");
   const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");

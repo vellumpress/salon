@@ -1,15 +1,15 @@
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 
 /**
- * Featured → Next → Later ranking for local binds, plus Adapted by Salon.
+ * Locked recommend → Next → Later ranking for local binds, plus Adapted by Salon.
  *
- * Live Featured recommend rank (Mike A24≥9, Mira elevate Sun Sep 20):
+ * Live locked recommend rank (Mike A24≥9, Mira elevate Sun Sep 20):
  * Enchanted April, The Bridge of San Luis Rey, Mr. Fortune’s Maggot,
  * then The House of Mirth, then Quicksand. See FEATURED_CAROUSEL_IDS.
- * Home does not render a Featured strip — those five live on Rituals
+ * Home does not render a recommend strip — those five live on Rituals
  * (and remain the sit-together shuffle preference).
  *
- * Next Featured-track keeps the remaining Host-a-sit queue:
+ * Next keeps the remaining Host-a-sit queue:
  * The Attendant’s Confession (A24 South America lane).
  * Rashōmon (Asia lane).
  * A High Wind in Jamaica (Jamaica / before-sleep Host-a-sit Ch1).
@@ -19,16 +19,16 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Futility (Petersburg coast / waking Host-a-sit sisters).
  * Trooper Peter Halket (Mashonaland / before-sleep Host-a-sit kopje).
  * The Home and the World (Bengal / before-sleep) — worldly Asia, behind the
- * Featured lead (April → Bridge → Maggot → Mirth → Quicksand).
- * The Immoralist (France / before-sleep) — Next Featured-track; not cold-open.
+ * locked recommend lead (April → Bridge → Maggot → Mirth → Quicksand).
+ * The Immoralist (France / before-sleep) — strong Next only; not cold-open.
  * Letters of a Javanese Princess and Blood and Sand are ritual Next sits only —
- * not Featured-track, not Featured carousel.
+ * not the locked recommend list.
  * Where Angels Fear to Tread and The Gadfly are ritual Next sits only —
- * not Featured-track, not Featured carousel.
- * The Poison Tree is Later (Bengal / unwind) — not Next, not Featured.
+ * not the locked recommend list.
+ * The Poison Tree is Later (Bengal / unwind) — not Next, not locked recommend.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
- * catalog track — never Featured, Next, or Later classics.
+ * catalog track — never locked recommend, Next, or Later classics.
  */
 export type CuratorialTrack = "featured" | "next" | "later" | "adapted";
 
@@ -45,7 +45,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-immoralist",
 ] as const;
 
-/** Mira pack — Adapted by Salon lane only. Do not add to Featured / Next. */
+/** Mira pack — Adapted by Salon lane only. Do not add to locked recommend / Next. */
 export const ADAPTED_BY_SALON_IDS = [
   "miss-brill-adapted",
   "prefer-not",

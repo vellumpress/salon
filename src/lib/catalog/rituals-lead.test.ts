@@ -69,7 +69,7 @@ test("pin keeps first-session ids at the front of any lane that has them", () =>
   );
 });
 
-test("Unwind lists Botchan after the Featured three; Naomi stays off Rituals", () => {
+test("Unwind lists Botchan after Mirth, Maggot, and Bridge; Naomi stays off Rituals", () => {
   const unwind = lane("unwind");
   assert.deepEqual(unwind.workIds.slice(0, 4), [
     "the-house-of-mirth",

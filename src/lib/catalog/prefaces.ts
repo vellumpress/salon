@@ -6,7 +6,7 @@ import { STORED_PREFACES } from "./prefaces-stored.ts";
 
 /**
  * Hand-tuned settle-in copy for first-open. Wins over the stored catalog
- * fill, loses to Featured / Ritual pitches and shelf.intro.
+ * fill, loses to locked recommend / Ritual pitches and shelf.intro.
  */
 export const PREFACES: Record<string, string> = {
   "of-human-bondage":

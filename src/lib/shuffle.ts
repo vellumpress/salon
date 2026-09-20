@@ -30,11 +30,11 @@ export function pickShuffle(except?: string | null, _sitting: SittingLength = 20
           return words.some((word) => blob.includes(word));
         })
       : [];
-  const featured = FEATURED_CAROUSEL_IDS.filter((id) => source.includes(id));
+  const priority = FEATURED_CAROUSEL_IDS.filter((id) => source.includes(id));
   const pickFrom =
-    liked.length > 0 ? liked : featured.length > 0 ? featured : source;
+    liked.length > 0 ? liked : priority.length > 0 ? priority : source;
   const next = pickFrom[Math.floor(Math.random() * pickFrom.length)];
-  return next ?? featured[0] ?? "passing";
+  return next ?? priority[0] ?? "passing";
 }
 
 export function makePair() {
