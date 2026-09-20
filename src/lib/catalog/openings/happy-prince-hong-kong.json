@@ -1,0 +1,206 @@
+{
+  "id": "happy-prince-hong-kong",
+  "title": "Oscar Wilde, The Happy Prince recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A gold-leaf statue above the harbour gives itself away; a late swallow stays; the city calls the bare pedestal an improvement. After Wilde, The Happy Prince, 1888.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Above the harbour",
+      "place": "Hong Kong",
+      "reentry": "High above Victoria Harbour the Happy Prince stood in gold leaf, sapphire eyes, a ruby at his sword hilt—commissioned by a committee that loved skyline photographs and disliked complaints from the street.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "High above Victoria Harbour the Happy Prince stood in gold leaf, sapphire eyes, a ruby at his sword hilt—commissioned by a committee that loved skyline photographs and disliked complaints from the street."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Tour buses paused."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Couples posed."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "A drone hummed like a bored insect."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "By day he shone for tourists who framed him between ferry wakes and tower glass."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "By night he saw what the photographs cropped: a child sewing until her fingers bled in a subdivided flat in Sham Shui Po; an old man in a cardboard lee near the Star Ferry, counting coins that would not become a room; a boy too feverish for school and too poor for the clinic’s patience; a young man staring at black water as if water were an exit with better manners than the city."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "A swallow, late for migration south, rested between the prince’s feet out of exhaustion and bad timing."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Wind off the harbour smelled of salt, diesel, and someone’s late dinner."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Neon stuttered across the prince’s gold."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "“Stay one night,” the prince said, though statues are not supposed to speak and cities punish sincerity."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "“Take the ruby to the sewing girl."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "I can see her lamp from here—one square of yellow in a building that should not still be standing."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "I cannot move."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "You can.”"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "The swallow, who had planned on warmer air and easier gossip among birds along some kinder coast, obeyed because the prince’s voice held a sadness that was not decorative."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "She flew through canyons of glass, past laundry poles and air-conditioners dripping onto alleys, and laid the ruby beside a needle that never rested."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Night after night the command continued—sapphire for the feverish child, sapphire for the man who sold matches with shaking hands outside a 7-Eleven that never closed—then the gold leaf stripped in soft sheets until the prince stood dull and sincere in the typhoon wind, lead showing through like honesty."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "Rain slicked him."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "The swallow grew cold and did not leave."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Love, in this city as in others, is often a refusal to catch the last flight."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Below them Hong Kong went on making money and light."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "The Mid-Levels escalator climbed its patient machine prayer."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Boardrooms practiced the grammar of growth."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "A charity gala raised funds under chandeliers while a singer covered a ballad about resilience; the prince, now bare, watched the same hungers the gala would later call “issues” on a slide deck."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "When morning officials found the statue stripped, they called it an eyesore and a liability, possibly vandalism, possibly a bad metaphor."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "A councillor with a fondness for metrics and ribbon-cuttings ordered it pulled down before the press could invent a narrative about civic shame."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Cranes arrived with the cheerfulness of progress."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "Tourists photographed the demolition as content for strangers."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "In the foundry the broken prince melted beside common scrap; his leaden heart lagged in the heat, stubborn as a conscience."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "“How ugly he became without the gold,” someone said, meaning: how useless without shine, how inconvenient without spectacle."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "They found the swallow dead at the base, feathers pasted with harbour grit, and swept it into a bag with ticket stubs, a crushed can, and a flyer for a property launch promising harbour views to people who already owned the horizon."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "Far above administrative weather—above the Peak, above the apps that rate restaurants and ignore hunger—something older than committees received the bird and the heart that would not melt cleanly."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "On the emptied pedestal a newer sculpture arrived within a month: abstract, sponsored by a bank, impossible to pity, excellent for drone footage and year-end reports."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "The city, which understands spectacle the way a mirror understands faces, called it an improvement."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "The harbour kept its glamour."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "The poor kept their nights."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "And somewhere a child slept warmer for one week because a swallow had once believed a prince who had finally learned what his gold was for."
+    }
+  ]
+}

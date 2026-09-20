@@ -1,0 +1,201 @@
+{
+  "id": "story-of-an-hour-buenos-aires",
+  "title": "Kate Chopin, The Story of an Hour recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A Recoleta apartment, a careful message about a crash, and one quiet hour in which a woman tastes a future that is not a room with one window. After Chopin, The Story of an Hour, 1894.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Recoleta hour",
+      "place": "Buenos Aires",
+      "reentry": "They told her carefully, as one tells a person with a weak heart.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "They told her carefully, as one tells a person with a weak heart."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "There had been a crash on the line out of Constitución—names still being confirmed on a screen that refreshed like a pulse—but Brently’s colleague had seen the list, had called, had used the soft voice reserved for endings."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Louise sat in the Recoleta apartment while her sister’s hands fluttered and the messenger stood like a piece of furniture that wished to leave."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Outside, the cemetery’s angels kept their white appointments."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "A bus sighed at the corner."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "The building’s elevator cables whispered through the shaft like someone clearing a throat."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "She did not collapse in the theatrical way people expect of widows in good neighborhoods."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "She wept at once, briefly, with the clean force of a door slammed by wind from the river."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Then she asked to be alone, and her sister’s protest died against the closed bedroom door."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "In her room the shutters were half closed against the afternoon."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Bars of light fell across the rug in a pattern that looked, unkindly, like a calendar."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Below, a dog complained; somewhere a couple argued in the musical register of people who would reconcile by dinner; a vendor’s cry rose and fell."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "Louise sank into the chair by the window and felt her chest hitch—not only with grief."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Something else pressed up beneath it, insistent as a second pulse, warmer than tears."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Free."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The word arrived without permission."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "She whispered it once, testing the air of Recoleta, and the air did not punish her."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "She saw years ahead that were not arranged around Brently’s preferences, his kind authority, the way love had also been a schedule of dinners and opinions."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "She saw mornings that belonged to her nerves alone—coffee without negotiation, a walk through Plaza Francia without explaining why she needed the air."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "She saw travel: a ticket bought on impulse, a hotel room in a city where no one knew her married name."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "She saw her own name written on decisions that had always required a second signature."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Tears came again, different tears—hot with a joy she refused to call wicked."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Brently had never been cruel."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "That was the complication that made the joy sharper."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Kindness could still be a room with one window."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "She loved him; she would miss his voice in the hall, the way he left his keys in the blue dish; and still her body leaned toward the open hour as toward light after a long corridor."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "She pressed her palms to the windowsill and felt the building’s old heat."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "Across the way a woman watered plants on a balcony with the seriousness of ritual."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "Louise thought of all the hours she had spent being careful—of her heart, of appearances, of Brently’s need to be needed."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "The carefulness fell away like a coat in summer."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "She whispered free again, and the word fitted her mouth as if it had been waiting since girlhood."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "She stood when her sister knocked, cheeks damp, mouth composed into what the house would read as acceptance."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "She walked into the parlor carrying the secret like a warm stone against her ribs."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Her sister took her hands, relieved by the appearance of composure."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "The messenger hovered near the door, already tasting the story he would tell."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "The key turned in the latch."
+    }
+  ]
+}

@@ -454,7 +454,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
 
 /** Per-work when author/language would name the wrong country. */
 const WORK_COUNTRY: Record<string, string> = {
-  // Adapted by Salon remakes (Salon original text; US settings)
+  // Adapted by Salon remakes (Salon original text; place-of-setting is WORK_PLACE)
   "miss-brill-adapted": "United States",
   "prefer-not": "United States",
   "late-season": "United States",
@@ -466,6 +466,16 @@ const WORK_COUNTRY: Record<string, string> = {
   "it-was-not-nervousness": "United States",
   "during-carnival": "United States",
   "what-we-sold": "United States",
+  "bliss-tokyo": "United States",
+  "open-window-singapore": "United States",
+  "story-of-an-hour-buenos-aires": "United States",
+  "masque-rio": "United States",
+  "boule-de-suif-istanbul": "United States",
+  "happy-prince-hong-kong": "United States",
+  "hunger-artist-milan": "United States",
+  "the-nose-cape-town": "United States",
+  "queen-of-spades-paris": "United States",
+  "decapitated-chicken-lisbon": "United States",
   // English-language translations / binds of foreign originals
   basilio: "Portugal",
   "bel-ami": "France",

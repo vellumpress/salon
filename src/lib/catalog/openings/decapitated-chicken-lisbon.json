@@ -1,0 +1,186 @@
+{
+  "id": "decapitated-chicken-lisbon",
+  "title": "Horacio Quiroga, The Decapitated Chicken recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A white villa above the Tagus, four brothers who learn by watching, and a kitchen lesson that does not stay in the kitchen. After Quiroga, The Decapitated Chicken, 1909.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The villa above the Tagus",
+      "place": "Lisbon",
+      "reentry": "The villa stood white above the Tagus, all terrace and hired quiet.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "The villa stood white above the Tagus, all terrace and hired quiet."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Mazzini and his wife had money enough for linen, for a nurse, for the fiction that beauty could correct blood."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Their first four sons had been born wrong—bodies grown, minds stuck in a red fog."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "They moved through the house like furniture that breathed."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Doctors used careful words."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Neighbors used none."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Then a daughter: bright, watched, adored."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "The parents arranged the villa around her future as around a lamp."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "The brothers were fed, washed, kept to the back rooms when guests came for wine and the view."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "In the kitchen the servant killed a chicken the old way—quick blade, a body that ran without its head, a lesson the boys should not have seen."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "They watched from the doorway with the flat attention of creatures who copy what the world demonstrates."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Blood on stone."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "A joke that was not a joke."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "The servant cursed and finished the work."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Afternoon heat."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Parents briefly gone to the city."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "The nurse distracted."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "The daughter played in the courtyard with a red ball that matched nothing good."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "The brothers came down together."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "What followed was not rage."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "It was imitation—exact, horrible, the kitchen translated onto the child who had been the house’s proof of hope."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "By the time the nurse’s scream found the terrace, the Tagus still glittered like a brochure, and the villa’s glamour had become only architecture around a fact that would not reverse."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Mazzini found them afterward seated in a row, calm, as if waiting for the next instruction the world might offer."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "His wife’s voice broke against the white walls."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Lisbon’s light, indifferent and expensive, continued to flatter the river."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "There are houses that look like safety from the water."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "This was one."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "The city kept its evening appointments."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "Inside, the lesson completed itself: that horror, in a glamorous place, does not need darkness—only an audience that learns by watching, and a door left open too long."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "The nurse had stepped inside for a call."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "The parents' car was still descending toward the city traffic."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "In the courtyard the red ball rolled once and stopped against a pot of geraniums that looked, from the water, like a postcard detail."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "The city kept its evening face—Lisbon, 2026, glamorous enough to make cruelty look like weather—and the story settled where phone light finds it: not far from sleep, not far from waking, exact as a held breath."
+    }
+  ]
+}

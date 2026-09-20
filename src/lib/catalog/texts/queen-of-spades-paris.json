@@ -1,0 +1,161 @@
+{
+  "id": "queen-of-spades-paris",
+  "title": "Alexander Pushkin, The Queen of Spades recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "An 8th-arrondissement obsession: three cards, a countess's secret, and a queen who will not stay buried in the deck. After Pushkin, The Queen of Spades, 1834.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Three cards",
+      "place": "Paris",
+      "reentry": "Hermann was not rich enough for the 8th arrondissement and too proud to admit the math.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Hermann was not rich enough for the 8th arrondissement and too proud to admit the math."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "He watched other men lose fortunes at a private club near the Parc Monceau with the hunger of someone taking notes for a future crime."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Rumors named an elderly countess who had once, in a season now myth, learned three cards that never failed—then never played again, as if luck were a lover she had retired."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "He courted her companion, Lizaveta, with messages that mimicked tenderness."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Lizaveta, lonely in the countess’s perfume and rules, believed him enough to leave a door unlatched."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "At night Hermann stood in the countess’s bedroom among portraits and pill bottles, demanding the secret."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "She stared, ancient, painted, silent."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "He produced a pistol that was more argument than murder."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "She died of the fright—or of refusing him—without speaking the cards."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "He fled through salons that smelled of powder and money."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Lizaveta’s face, when she understood, was a door closing."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Later the countess came to him anyway: not living, not kind."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "In the hush of his rented room she named three cards—three, seven, ace—and vanished with the dignity of someone who had finished a transaction."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Hermann played."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "The club’s green cloth became the only landscape."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Three won."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Seven won."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "On the third night he turned the ace with a hand that already spent the winnings in his mind—"
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "—and the dealer’s quiet showed him the queen of spades."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Her face, in the pasteboard, wore the countess’s eyes."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "He laughed once, wrong."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Then the room narrowed to a single suit."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "They removed him politely, as Paris removes what it has finished using."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "In the hospital he muttered the sequence to the wall: three, seven, ace—three, seven, queen—while outside, in the Huitième, someone else’s champagne found the correct hour, and the city, glamorous and exact, declined to refund obsession."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Lizaveta left the latch for love and found only a draft."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Hermann's messages had mimicked tenderness the way pasteboard mimics fortune."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "After the countess's death he walked wet streets past Haussmann façades that looked, in rain, like stacked debts."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "The city kept its evening face—Paris, 2026, glamorous enough to make cruelty look like weather—and the story settled where phone light finds it: not far from sleep, not far from waking, exact as a held breath."
+    }
+  ]
+}

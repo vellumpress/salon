@@ -140,6 +140,26 @@ const BLURBS: Record<string, string> = {
     "Carnival noise above, and the last brick set with intimate care below.",
   "what-we-sold":
     "Two broke lovers ruin their treasures and invent a quieter wealth in the wreckage.",
+  "bliss-tokyo":
+    "Omotesando gold, a flowering pear, and a perfect evening that turns on a single glance.",
+  "open-window-singapore":
+    "A rest-cure visit to Bukit Timah, an open veranda, and a girl's exquisite lie.",
+  "story-of-an-hour-buenos-aires":
+    "A Recoleta apartment, a careful message, and one hour that tastes like a future.",
+  "masque-rio":
+    "A sealed hillside compound above Rio, and a guest who does not RSVP to plague.",
+  "boule-de-suif-istanbul":
+    "A delayed van out of Kadıköy, and one woman whose generosity is spent then despised.",
+  "happy-prince-hong-kong":
+    "A gold-leaf statue above the harbour gives itself away; the city calls the bare pedestal an improvement.",
+  "hunger-artist-milan":
+    "A glass box in Brera, and a city that prefers a panther's appetite to refusal as art.",
+  "the-nose-cape-town":
+    "A Sea Point assessor wakes without his nose; on Long Street it has better meetings.",
+  "queen-of-spades-paris":
+    "Three cards in the Huitième, a countess's secret, and a queen who will not stay buried.",
+  "decapitated-chicken-lisbon":
+    "A white villa above the Tagus, and a kitchen lesson that does not stay in the kitchen.",
   botchan:
     "A hot-headed Tokyo teacher is posted to the provinces and refuses to learn the local game.",
   "post-office":

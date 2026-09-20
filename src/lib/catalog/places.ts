@@ -154,7 +154,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "after-the-divorce": { label: "Sardinia", region: "it" },
 
   // Adapted by Salon — remakes, not locked-recommend / Next classics
-  // Mike hard rule: ≤1/3 America-set (exactly 3/11 US keepers).
+  // Mike hard rule: ≤1/3 America-set (exactly 3/21 US keepers).
   "miss-brill-adapted": { label: "Menton / French Riviera", region: "fr" },
   "prefer-not": { label: "New York", region: "us" },
   "late-season": { label: "Yalta / Moscow", region: "ru" },
@@ -169,6 +169,16 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "it-was-not-nervousness": { label: "East London", region: "gb" },
   "during-carnival": { label: "Venice", region: "it" },
   "what-we-sold": { label: "London", region: "gb" },
+  "bliss-tokyo": { label: "Tokyo", region: "jp" },
+  "open-window-singapore": { label: "Singapore", region: "sg" },
+  "story-of-an-hour-buenos-aires": { label: "Buenos Aires", region: "ar" },
+  "masque-rio": { label: "Rio de Janeiro", region: "br" },
+  "boule-de-suif-istanbul": { label: "Istanbul", region: "tr" },
+  "happy-prince-hong-kong": { label: "Hong Kong", region: "hk" },
+  "hunger-artist-milan": { label: "Milan", region: "it" },
+  "the-nose-cape-town": { label: "Cape Town", region: "za" },
+  "queen-of-spades-paris": { label: "Paris", region: "fr" },
+  "decapitated-chicken-lisbon": { label: "Lisbon", region: "pt" },
 };
 
 /** Country-of-origin → reader label + silhouette when no setting override. */
