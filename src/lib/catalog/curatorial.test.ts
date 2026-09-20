@@ -46,6 +46,10 @@ test("Locked recommend order is April, Bridge, Maggot, then Mirth, then Quicksan
   assert.equal(FEATURED_CAROUSEL_IDS.includes("we"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-story-of-gosta-berling"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("thais"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("demian"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("death-comes-for-the-archbishop"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-getting-of-wisdom"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("steppenwolf"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("miss-brill-adapted"), false);
@@ -104,6 +108,10 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("we"), "later");
   assert.equal(curatorialTrack("the-story-of-gosta-berling"), "later");
   assert.equal(curatorialTrack("thais"), "later");
+  assert.equal(curatorialTrack("demian"), "later");
+  assert.equal(curatorialTrack("death-comes-for-the-archbishop"), "later");
+  assert.equal(curatorialTrack("the-getting-of-wisdom"), "later");
+  assert.equal(curatorialTrack("steppenwolf"), "later");
 });
 
 test("Quicksand is a local before-sleep bind with no Gutenberg id", () => {
@@ -764,6 +772,81 @@ test("Thaïs is a local before-sleep bind on Next, not locked recommend", () => 
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("thais"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("thais"), false);
   assert.equal(curatorialTrack("thais"), "later");
+});
+
+test("Demian is a local before-sleep bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "demian");
+  assert.ok(work);
+  assert.equal(work.year, 1923);
+  assert.equal(work.title, "Demian");
+  assert.equal(work.author, "Hermann Hesse (tr. N. H. Priday)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 74222);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^I will begin my story with an event of the time when I was ten or eleven/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("demian"));
+  assert.ok(lane!.workIds.indexOf("demian") > lane!.workIds.indexOf("thais"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("demian"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("demian"), false);
+  assert.equal(curatorialTrack("demian"), "later");
+});
+
+test("Death Comes for the Archbishop is a local waking bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "death-comes-for-the-archbishop");
+  assert.ok(work);
+  assert.equal(work.year, 1927);
+  assert.equal(work.title, "Death Comes for the Archbishop");
+  assert.equal(work.author, "Willa Cather");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 69730);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^One afternoon in the autumn of 1851 a solitary horseman/);
+  const waking = RITUAL_LANES.find((item) => item.id === "waking-up");
+  const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
+  const mourning = RITUAL_LANES.find((item) => item.id === "soft-mourning");
+  assert.ok(waking?.workIds.includes("death-comes-for-the-archbishop"));
+  assert.ok(waking!.workIds.indexOf("death-comes-for-the-archbishop") > waking!.workIds.indexOf("we"));
+  assert.equal(unwind?.workIds.includes("death-comes-for-the-archbishop"), false);
+  assert.equal(mourning?.workIds.includes("death-comes-for-the-archbishop"), false);
+  assert.equal(
+    (NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("death-comes-for-the-archbishop"),
+    false,
+  );
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("death-comes-for-the-archbishop"), false);
+  assert.equal(curatorialTrack("death-comes-for-the-archbishop"), "later");
+});
+
+test("The Getting of Wisdom is a local waking Rituals bind, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "the-getting-of-wisdom");
+  assert.ok(work);
+  assert.equal(work.year, 1910);
+  assert.equal(work.title, "The Getting of Wisdom");
+  assert.equal(work.author, "Henry Handel Richardson");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 3728);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^The four children were lying on the grass/);
+  const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
+  assert.ok(lane?.workIds.includes("the-getting-of-wisdom"));
+  assert.ok(
+    lane!.workIds.indexOf("the-getting-of-wisdom") >
+      lane!.workIds.indexOf("death-comes-for-the-archbishop"),
+  );
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-getting-of-wisdom"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-getting-of-wisdom"), false);
+  assert.equal(curatorialTrack("the-getting-of-wisdom"), "later");
+});
+
+test("Steppenwolf stays off this Next / Rituals pack", () => {
+  const work = SHELF.find((item) => item.id === "steppenwolf");
+  assert.ok(work);
+  assert.equal(work.local, undefined);
+  for (const lane of RITUAL_LANES) {
+    assert.equal(lane.workIds.includes("steppenwolf"), false, lane.id);
+  }
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("steppenwolf"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("steppenwolf"), false);
 });
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {

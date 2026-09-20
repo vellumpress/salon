@@ -126,7 +126,11 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "spoon-river-anthology":
     "Masters’ village speaks from under the hill — epitaphs that refuse to flatter the living. Small-town America, voice by voice, after the fact.",
   "death-comes-for-the-archbishop":
-    "Cather’s quiet life ending in New Mexico light. A bishop’s long work in desert air — faith, friendship, and the mesa’s patient weather.",
+    "A solitary horseman among uniform red sand-hills in central New Mexico, 1851 — until the country has no more changed than if he had stood still. Open on Book One New Mexico only — never the Sabine-hills Rome prologue.",
+  demian:
+    "Two worlds pass through a little-town Latin school — home of clean clothes and Christmas, and rooms of secrecy. Childhood two-worlds map — not the later Abraxas sermon. Priday 1923 EN only.",
+  "the-getting-of-wisdom":
+    "Four children on the grass: a prince, a golden crown, and a silk dress already dirty at the hem. School-status novel, not a children's book — Melbourne Ladies' College is the sit.",
   "copper-sun":
     "Cullen on beauty, grief, and the dark tower. Harlem Renaissance verse that holds shine and mourning in the same hand.",
   "the-black-christ-and-other-poems":
@@ -277,6 +281,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "all-quiet-on-the-western-front",
       "the-story-of-gosta-berling",
       "thais",
+      "demian",
       "the-pattern",
       "it-was-not-nervousness",
       "between-the-drop-and-the-water",
@@ -312,6 +317,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "diary-of-a-chambermaid",
       "growth-of-the-soil",
       "we",
+      "death-comes-for-the-archbishop",
+      "the-getting-of-wisdom",
       "the-rubaiyat-of-omar-khayyam",
       "spring-and-all",
       "a-few-figs-from-thistles",
@@ -392,7 +399,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "helen-of-troy-and-other-poems",
       "the-wild-swans-at-coole",
       "spoon-river-anthology",
-      "death-comes-for-the-archbishop",
       "copper-sun",
       "the-black-christ-and-other-poems",
     ],
@@ -442,6 +448,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   we: 2,
   "the-story-of-gosta-berling": 2,
   thais: 2,
+  demian: 2,
+  "death-comes-for-the-archbishop": 2,
+  "the-getting-of-wisdom": 2,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

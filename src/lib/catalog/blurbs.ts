@@ -18,6 +18,8 @@ const BLURBS: Record<string, string> = {
   we: "D-503 will straighten the wild curve into the wisest of lines, and call the record We.",
   "all-quiet-on-the-western-front":
     "Five miles behind the front: bellies full, double sausage, and a cook who will not stop ladling.",
+  demian:
+    "Two worlds pass through a little-town Latin school — clean clothes and Christmas on one pole, secrecy on the other.",
   "the-story-of-gosta-berling":
     "At last the priest is in the pulpit — marble-handsome — and the parish remembers him reeling out of the inn.",
   thais:
@@ -194,7 +196,7 @@ const BLURBS: Record<string, string> = {
   "o-pioneers":
     "Alexandra Bergson stays with the land when everyone else wants to leave it.",
   "death-comes-for-the-archbishop":
-    "A bishop’s long work in New Mexico light — faith, friendship, and the mesa’s weather.",
+    "A solitary horseman among uniform red sand-hills in central New Mexico, 1851.",
   "the-bridge-of-san-luis-rey":
     "Five travellers fall from a Peruvian bridge — Wilder asks whether those lives were accident or intention.",
   "the-sun-also-rises":
@@ -633,7 +635,8 @@ const BLURBS: Record<string, string> = {
   "while-the-billy-boils": "Lawson’s bush stories: tea, tracks, and the joke that keeps a man going.",
   "on-the-track": "More Lawson: men walking Australia because staying still is worse.",
   "joe-wilson-and-his-mates": "Lawson’s Joe Wilson — marriage, drink, and the bush as a long afternoon.",
-  "the-getting-of-wisdom": "A Melbourne schoolgirl learns the lessons that are not on the timetable.",
+  "the-getting-of-wisdom":
+    "Four children on the grass: a fairy-tale princess, and a silk dress already dirty at the hem.",
   "for-the-term-of-his-natural-life":
     "A transported man in Van Diemen’s Land, and a sentence that is the country.",
   "the-man-from-snowy-river": "Paterson’s bush ballads: a ride, a horse, a legend already moving.",

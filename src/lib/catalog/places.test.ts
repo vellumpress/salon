@@ -37,6 +37,9 @@ test("named settings keep reader-friendly labels and real regions", () => {
     we: { label: "One State / glass city", region: "ru" },
     "the-story-of-gosta-berling": { label: "Sweden — Värmland", region: "se" },
     thais: { label: "Egypt — Thebaid / Nile", region: "eg" },
+    demian: { label: "Germany — little-town Latin school", region: "de" },
+    "death-comes-for-the-archbishop": { label: "New Mexico — arid red hills", region: "us" },
+    "the-getting-of-wisdom": { label: "Australia — Melbourne orbit", region: "au" },
     botchan: { label: "Tokyo", region: "jp" },
     "enchanted-april": { label: "Italy", region: "it" },
     "the-bridge-of-san-luis-rey": { label: "Peru", region: "pe" },
@@ -129,6 +132,9 @@ test("Locked recommend, Next, and ritual-lane works all resolve a place with a s
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("we"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-story-of-gosta-berling"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("thais"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("demian"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("death-comes-for-the-archbishop"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-getting-of-wisdom"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("poison-tree"), false);
   assert.ok(RITUAL_LANES.some((lane) => lane.workIds.includes("silhouettes")));
 });
