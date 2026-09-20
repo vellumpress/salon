@@ -912,7 +912,7 @@ export const SHELF: ShelfWork[] = [
       `I have longed to make the acquaintance of a "modern girl," that proud, independent girl who has all my sympathy!`,
     breaths: 5,
     intro:
-      "Kartini writing from colonial Java in 1899 — she uses period phrases like “Indian world” and “pale sisters” for the Indies / Europe. Historical voice; Salon stops at the cloistered-arms beat. If you Host further letters, keep that frame named for the room.",
+      "Kartini writes from colonial Java in 1899, hungry for the “modern girl” of Europe while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. Salon stops at the cloistered-arms beat; if you Host further letters, name that colonial frame for the room first.",
   },
   { id: "potterism", title: "Potterism", author: "Rose Macaulay", year: 1920, form: "novel", language: "English", minutes: 592, local: true, opening: "Johnny and Jane Potter, being twins, went through Oxford together.", breaths: 4733, gutenberg: 11163 },
   { id: "smoke-and-steel", title: "Smoke and Steel", author: "Carl Sandburg", year: 1920, form: "poem", language: "English", minutes: 90 },

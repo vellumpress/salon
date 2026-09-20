@@ -152,7 +152,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-immoralist":
     `Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for. This Salon cut stops on the freedom line.`,
   "letters-of-a-javanese-princess":
-    `Kartini writing from colonial Java in 1899 — she uses period phrases like “Indian world” and “pale sisters” for the Indies / Europe. Historical voice; Salon stops at the cloistered-arms beat. If you Host further letters, keep that frame named for the room.`,
+    `Kartini writes from colonial Java in 1899, hungry for the “modern girl” of Europe while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. Salon stops at the cloistered-arms beat; if you Host further letters, name that colonial frame for the room first.`,
   "blood-and-sand":
     `Fight-day breakfast: meat, black coffee, a huge cigar — and a dining room that treats the matador like family glory.`,
   "bunner-sisters":

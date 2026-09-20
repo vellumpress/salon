@@ -845,7 +845,8 @@ test("Letters of a Javanese Princess ships the hardened Host note and skips Coup
   ) as { note: string; breaths: { text: string }[] };
   assert.match(packed.note, /Indian world/);
   assert.match(packed.note, /pale sisters/);
-  assert.match(packed.note, /If you Host further letters, keep that frame named for the room/);
+  assert.match(packed.note, /name that colonial frame for the room first/);
+  assert.match(packed.note, /not today’s usage/);
   assert.match(full.note, /Indian world/);
   assert.match(work!.intro ?? "", /Indian world/);
   assert.match(work!.intro ?? "", /pale sisters/);

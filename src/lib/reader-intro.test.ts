@@ -169,6 +169,8 @@ test("Letters of a Javanese Princess shows the hardened Host note before the sit
   assert.match(copy, /Indian world/);
   assert.match(copy, /pale sisters/);
   assert.match(copy, /cloistered-arms/);
+  assert.match(copy, /not today’s usage/);
+  assert.match(copy, /colonial frame/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
 });
 
