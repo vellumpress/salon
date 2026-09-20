@@ -147,6 +147,9 @@ test("Adapted by Salon remakes are their own track — never locked recommend or
       "the-nose-cape-town",
       "queen-of-spades-paris",
       "decapitated-chicken-lisbon",
+      "madame-bovary-tokyo-waking",
+      "madame-bovary-tokyo-unwind",
+      "madame-bovary-tokyo-before-sleep",
     ],
   );
   for (const id of ADAPTED_BY_SALON_IDS) {

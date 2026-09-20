@@ -154,7 +154,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "after-the-divorce": { label: "Sardinia", region: "it" },
 
   // Adapted by Salon — remakes, not locked-recommend / Next classics
-  // Mike hard rule: ≤1/3 America-set (exactly 3/21 US keepers).
+  // Mike hard rule: ≤1/3 America-set (exactly 3/24 US keepers).
   "miss-brill-adapted": { label: "Menton / French Riviera", region: "fr" },
   "prefer-not": { label: "New York", region: "us" },
   "late-season": { label: "Yalta / Moscow", region: "ru" },
@@ -179,6 +179,9 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-nose-cape-town": { label: "Cape Town", region: "za" },
   "queen-of-spades-paris": { label: "Paris", region: "fr" },
   "decapitated-chicken-lisbon": { label: "Lisbon", region: "pt" },
+  "madame-bovary-tokyo-waking": { label: "Tokyo", region: "jp" },
+  "madame-bovary-tokyo-unwind": { label: "Tokyo", region: "jp" },
+  "madame-bovary-tokyo-before-sleep": { label: "Tokyo", region: "jp" },
 };
 
 /** Country-of-origin → reader label + silhouette when no setting override. */

@@ -1,0 +1,331 @@
+{
+  "id": "madame-bovary-tokyo-unwind",
+  "title": "Gustave Flaubert, Madame Bovary recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A New Town wife tries to live glamorous Tokyo as if desire were a credit line—kind clinic husband, Ginza nights, installments that collect themselves. After Flaubert, Madame Bovary, 1857.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Ginza",
+      "place": "Tokyo",
+      "reentry": "The taxi entered Ginza as if the district had been polished for their arrival.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "The taxi entered Ginza as if the district had been polished for their arrival."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Rain had rinsed the avenues; every surface held a second, colder light."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Emma sat with her knees angled toward Ren Kisaragi and felt the old suburban self peel away like a label steamed off glass."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "She wore the black dress Kuroda’s shop had wrapped in tissue that crackled like applause."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Ren’s hand rested on her wrist—not possessive, not quite."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Proprietary the way a reservation is proprietary: held, timed, already paid for in some currency she preferred not to name."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "He spoke little."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "That was his style of generosity."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Silence, from him, felt like a private room."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Outside, department-store windows staged coats and empty chairs; mannequins held poses of women who never waited for trains."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Emma watched her reflection slide across those windows—elegant, almost believable—and thought of Haruto at the clinic’s evening hours, explaining dosages with the patience of a man who trusted explanations."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Maya would be with the sitter by now."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "The thought arrived, clean and terrible, then went under like a coin in water."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "The theater was not Kabuki that night—Ren disliked being where tourists pointed phones—but a converted hall near the old brick facades, a program of chamber pieces and a singer whose voice made loneliness sound curated."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "In the lobby, marble took footprints and returned them as shine."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Emma drank champagne that tasted like agreement."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "A woman in pearls glanced at Ren, then at Emma, and performed the smallest nod: recognition without welcome."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "Emma felt, with a thrill that bordered on nausea, that she had been filed under a category that included other evenings, other dresses, other women who had also believed they were the exception."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "During the music she did not listen so much as inhabit the listening."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Ren’s shoulder touched hers at intervals calculated to seem accidental."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Between movements he murmured a hotel name as if naming a star."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Emma’s pulse answered before her mind did."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "This was the peak—she knew it while it was happening, which made it sharper."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Affair-as-architecture: the climb, the view, the knowledge that views do not last."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Afterward the street smelled of rain and grilled something distant."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Ren’s driver appeared without being summoned."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "The car moved through neon with the calm of money that never hurries."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "Emma watched Ginza thin into darker blocks, then brighten again at the hotel canopy—doormen like punctuation, umbrellas opening in unison."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "In the elevator Ren finally kissed her, and the kiss was practiced without being cold: he knew how to make practice feel like discovery."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "Emma closed her eyes and let the city rise around them in numbered floors."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "The room was high enough that Tokyo looked arranged."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "Towers stacked like arguments won."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "The gardens were a dark rectangle far below; beyond them, traffic braided itself into patience."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Ren poured whiskey she did not want and she drank it anyway because refusal would have been a sentence, and sentences required courage she was spending elsewhere."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "He unfastened her dress with the attention of a man opening a gift he had chosen himself."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "Emma watched him in the window’s doubling: two Rens, two Emmas, a city that consented to be backdrop."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "Later, sheets cool, city still burning, she lay with her cheek against his shoulder and told herself this was the life novels had promised—intensity as climate."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "Ren checked his phone once, face lit pale, then set it face down with a smile that apologized for nothing."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "“You look expensive tonight,” he said, and meant it as praise."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "Emma laughed the laugh she had practiced in Asaka bathrooms."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "Expensive."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "Yes. She was becoming a cost."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "She could feel the installments gathering somewhere out of frame—Kuroda’s polite ledger, the cards, the coats, the dinners that tasted like proof."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "Ren slept the way men sleep when the night has confirmed them."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "Emma did not."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "She stood at the glass in the hotel robe and watched a late train’s lights stitch the distance."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "Somewhere north, Asaka’s midrises held her other name: wife, mother, patient of a milder fate."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "The two cities did not cancel."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "They layered."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "She pressed her palm to the cold and felt, under triumph, the first thin edge of reckoning—not moral, not yet."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "Practical."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "Desire had a receipt."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "Glamour had a due date."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "For now the night held."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "Ginza’s afterglow still clung to her skin like perfume that refuses to admit it will fade."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "She thought of Aoi—younger, softer, the agency boy who quoted films and blushed when the bill arrived—and felt a flicker of comparison that shamed her by existing."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "Ren was not soft."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "Ren was the version of the city that did not ask permission."
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "When she returned to bed he stirred, murmured something half in English, and pulled her close with the temporary faithfulness of men who are excellent at nights."
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "Emma closed her eyes."
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "For a few hours more she would be the woman in the black dress, not the woman who calculated train times home."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "The peak does not know it is a peak, she told herself—and knew, even as she told it, that this was a lie stylish enough to wear."
+    }
+  ]
+}

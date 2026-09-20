@@ -18,7 +18,7 @@ import {
   LOCAL_WORKS,
   withLocalBound,
 } from "./full-pdf.ts";
-import { RITUAL_LANES, type RitualLane } from "./rituals.ts";
+import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES, type RitualLane } from "./rituals.ts";
 import { SHELF, searchShelf, shelfWork } from "./shelf.ts";
 import { isBoundLocal } from "./en-rights.ts";
 import { placeFor } from "./places.ts";
@@ -47,6 +47,9 @@ const LANE: Record<string, "unwind" | "before-sleep" | "waking-up"> = {
   "the-nose-cape-town": "waking-up",
   "queen-of-spades-paris": "before-sleep",
   "decapitated-chicken-lisbon": "before-sleep",
+  "madame-bovary-tokyo-waking": "waking-up",
+  "madame-bovary-tokyo-unwind": "unwind",
+  "madame-bovary-tokyo-before-sleep": "before-sleep",
 };
 
 const EXPECT = {
@@ -218,6 +221,30 @@ const EXPECT = {
     credit: /After Quiroga, The Decapitated Chicken, 1909/,
     scene: /villa|tagus/i,
   },
+  "madame-bovary-tokyo-waking": {
+    title: "Gustave Flaubert, Madame Bovary recast",
+    opening: /^Emma woke before the light finished deciding what color to be/,
+    last: /spend everything to close/,
+    place: { label: "Tokyo", region: "jp" },
+    credit: /After Flaubert, Madame Bovary, 1857/,
+    scene: /new rooms/i,
+  },
+  "madame-bovary-tokyo-unwind": {
+    title: "Gustave Flaubert, Madame Bovary recast",
+    opening: /^The taxi entered Ginza as if the district had been polished/,
+    last: /a lie stylish enough to wear/,
+    place: { label: "Tokyo", region: "jp" },
+    credit: /After Flaubert, Madame Bovary, 1857/,
+    scene: /ginza/i,
+  },
+  "madame-bovary-tokyo-before-sleep": {
+    title: "Gustave Flaubert, Madame Bovary recast",
+    opening: /^By the time the condo went quiet enough to hear the refrigerator/,
+    last: /a currency that collected itself/,
+    place: { label: "Tokyo", region: "jp" },
+    credit: /After Flaubert, Madame Bovary, 1857/,
+    scene: /debt/i,
+  },
 } as const;
 
 test("Adapted remakes are local sits with source credit, not locked recommend", () => {
@@ -337,6 +364,10 @@ test("Adapted remakes do not keep remake nicknames as the display title", () => 
     "The Nose after",
     "The Queen of Spades after",
     "The Decapitated Chicken after",
+    "The Ceiling Rectangle",
+    "Ginza After Rain",
+    "Fluorescent Honesty",
+    "Madame Bovary after",
   ];
   for (const id of ADAPTED_BY_SALON_IDS) {
     const title = shelfWork(id)?.title ?? "";
@@ -384,7 +415,7 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   assert.match(home, /useShelfSearch\("local"\)/);
   assert.doesNotMatch(home, /useShelfSearch\("fullPdf"\)/);
 
-  assert.equal(LOCAL_WORKS.length, 436);
+  assert.equal(LOCAL_WORKS.length, 439);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 
@@ -455,6 +486,42 @@ test("routes and components have no reader-facing Featured label", () => {
     }
   }
   assert.deepEqual(hits, []);
+});
+
+test("Madame Bovary Tokyo ships three sibling sits, Host only on the late sit", () => {
+  const ids = [
+    "madame-bovary-tokyo-waking",
+    "madame-bovary-tokyo-unwind",
+    "madame-bovary-tokyo-before-sleep",
+  ] as const;
+  for (const id of ids) {
+    assert.equal(isAdaptedBySalon(id), true, id);
+    assert.equal(curatorialTrack(id), "adapted", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
+  }
+  const classic = SHELF.find((item) => item.id === "bovary");
+  assert.ok(classic);
+  assert.equal(classic!.title, "Madame Bovary");
+  assert.notEqual(classic!.id, ids[0]);
+
+  const late = JSON.parse(
+    readFileSync(new URL("./openings/madame-bovary-tokyo-before-sleep.json", import.meta.url), "utf8"),
+  ) as { note: string };
+  assert.match(late.note, /self-poisoning/);
+  assert.match(late.note, /Warn the room before you Host it/);
+  assert.match(late.note, /Ginza/);
+  assert.doesNotMatch(late.note, /Host note \(required|Featured/i);
+
+  const waking = JSON.parse(
+    readFileSync(new URL("./openings/madame-bovary-tokyo-waking.json", import.meta.url), "utf8"),
+  ) as { note: string };
+  const unwind = JSON.parse(
+    readFileSync(new URL("./openings/madame-bovary-tokyo-unwind.json", import.meta.url), "utf8"),
+  ) as { note: string };
+  assert.doesNotMatch(waking.note, /self-poisoning|Host it/i);
+  assert.doesNotMatch(unwind.note, /self-poisoning|Host it/i);
 });
 
 test("glam-10 remakes use Mira city reseats, not raw Gutenberg extracts", () => {
