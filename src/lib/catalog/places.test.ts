@@ -57,7 +57,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
   }
 });
 
-test("Featured, Next, and ritual-lane works all resolve a place with a silhouette", () => {
+test("Locked recommend, Next, and ritual-lane works all resolve a place with a silhouette", () => {
   const missing: string[] = [];
   const shapeless: string[] = [];
   for (const id of surfacedPlaceWorkIds()) {

@@ -41,7 +41,7 @@ function AdaptedPage() {
       <div className="cell-adapted-intro">
         <span className="type-kicker opacity-70">Adapted by Salon</span>
         <span className="type-lede mt-1">
-          Remakes of older pages — Salon originals, not Featured classics.
+          Remakes of older pages — Salon originals.
         </span>
         <span className="type-pitch mt-2 max-w-xl opacity-80">
           After public-domain sources. Open a sit here, or find the same works

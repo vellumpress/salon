@@ -36,28 +36,28 @@ function shelfAsWork(id: string): Work {
   };
 }
 
-test("uses a Featured shelf pitch before other copy", () => {
+test("uses a locked recommend shelf pitch before other copy", () => {
   assert.equal(
     readerIntro(work("passing", "This LE About copy should not win.")),
     "Irene Redfield sorts her morning mail in Harlem and finds a thin envelope in purple ink—no return address, a hand she knows at once. Clare Kendry, the childhood friend who slipped into another world, is writing again. Nella Larsen’s 1929 New York novel opens on that letter, still unopened, and the careful life it threatens to unsettle.",
   );
 });
 
-test("Quicksand Featured open uses the before-sleep closed-door sit", () => {
+test("Quicksand open uses the before-sleep closed-door sit", () => {
   const copy = readerIntro(shelfAsWork("quicksand"));
   assert.match(copy, /Helga Crane sits alone/);
   assert.match(copy, /will not open the door/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright/i);
 });
 
-test("Enchanted April Featured open uses the Agony Column sit", () => {
+test("Enchanted April open uses the Agony Column sit", () => {
   const copy = readerIntro(shelfAsWork("enchanted-april"));
   assert.match(copy, /Shaftesbury Avenue/);
   assert.match(copy, /Agony Column/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright/i);
 });
 
-test("Mr. Fortune’s Maggot Featured open uses the one-convert sit", () => {
+test("Mr. Fortune’s Maggot open uses the one-convert sit", () => {
   const copy = readerIntro(shelfAsWork("mr-fortunes-maggot"));
   assert.match(copy, /Fanua/);
   assert.match(copy, /Timothy Fortune/);
@@ -181,7 +181,7 @@ test("Blood and Sand uses the waking fight-day breakfast sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
 });
 
-test("uses Featured before Ritual copy", () => {
+test("uses a locked recommend pitch before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),
     "Paris pearls and a kept boy — Flanner’s Colette, appetite turning into recognition. Aging beauty meets the younger lover who was never going to stay.",

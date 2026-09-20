@@ -42,7 +42,7 @@ export const ADAPTED_WORKS: ShelfWork[] = ADAPTED_BY_SALON_IDS.flatMap((id) => {
   return work && isBoundLocal(work) ? [work] : [];
 });
 
-/** Locked Featured recommend order — only locally bound sits. */
+/** Locked recommend order — only locally bound sits. */
 export function featuredWorks(): ShelfWork[] {
   return FEATURED_CAROUSEL_IDS.flatMap((id) => {
     const work = shelfWork(id);

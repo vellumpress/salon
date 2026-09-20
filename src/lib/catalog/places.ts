@@ -19,9 +19,9 @@ export type WorkPlace = {
 
 export type PlaceRef = Pick<ShelfWork, "id" | "author" | "language">;
 
-/** Curated setting labels for Featured, Next, ritual lanes, and named examples. */
+/** Curated setting labels for locked recommend, Next, ritual lanes, and named examples. */
 const WORK_PLACE: Record<string, WorkPlace> = {
-  // Featured carousel
+  // Named examples / other local binds
   vengeance: { label: "Poland", region: "pl" },
   passing: { label: "Harlem", region: "us" },
   we: { label: "Russia", region: "ru" },
@@ -35,14 +35,14 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   dracula: { label: "England", region: "gb" },
   gold: { label: "New York", region: "us" },
 
-  // Featured carousel (live recommend front door)
+  // Locked recommend order (live front door)
   "enchanted-april": { label: "Italy", region: "it" },
   "the-bridge-of-san-luis-rey": { label: "Peru", region: "pe" },
   "mr-fortunes-maggot": { label: "Fanua", region: "ws" },
   "the-house-of-mirth": { label: "New York", region: "us" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
-  // Next featured-track
+  // Next / priority Host-a-sit queue
   "attendants-confession": { label: "Brazil", region: "br" },
   rashomon: { label: "Kyoto / Japan", region: "jp" },
   "high-wind-jamaica": { label: "Jamaica", region: "jm" },
@@ -64,7 +64,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   silhouettes: { label: "Dieppe", region: "fr" },
   "a-room-with-a-view": { label: "Florence", region: "it" },
 
-  // Ritual lanes (beyond Featured / Next)
+  // Ritual lanes (beyond locked recommend / Next)
   "bunner-sisters": { label: "New York", region: "us" },
   "the-weary-blues": { label: "Harlem", region: "us" },
   "kwaidan-stories-and-studies-of-strange-things": { label: "Japan", region: "jp" },
@@ -142,7 +142,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   nana: { label: "Paris", region: "fr" },
   "after-the-divorce": { label: "Sardinia", region: "it" },
 
-  // Adapted by Salon — remakes, not Featured / Next classics
+  // Adapted by Salon — remakes, not locked-recommend / Next classics
   // Mike hard rule: ≤1/3 America-set (exactly 3/11 US keepers).
   "miss-brill-adapted": { label: "Menton / French Riviera", region: "fr" },
   "prefer-not": { label: "New York", region: "us" },
@@ -248,7 +248,7 @@ export function hasPlaceShape(region: string): region is PlaceRegion {
   return region in REGION_SHAPES;
 }
 
-/** Featured carousel + Next track + Adapted + ritual-lane ids (unique, catalog order). */
+/** Locked recommend + Next track + Adapted + ritual-lane ids (unique, catalog order). */
 export function surfacedPlaceWorkIds(): string[] {
   const seen = new Set<string>();
   const out: string[] = [];

@@ -78,6 +78,15 @@ test("known origin overrides", () => {
   }
 });
 
+test("local shelf copy never uses Featured product language", () => {
+  const hits: string[] = [];
+  for (const work of LOCAL_WORKS) {
+    const blob = [work.intro, work.opening, blurbFor(work)].filter(Boolean).join("\n");
+    if (/\bFeatured(?:-track)?\b|\bFEATURED\b/.test(blob)) hits.push(work.id);
+  }
+  assert.deepEqual(hits, []);
+});
+
 test("every local homepage work has a one-sentence blurb", () => {
   const missing: string[] = [];
   const multi: string[] = [];

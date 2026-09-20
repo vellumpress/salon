@@ -268,8 +268,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-house-of-mirth",
       "mr-fortunes-maggot",
       "the-bridge-of-san-luis-rey",
-      // Botchan is a local bind with a short scar sit — after the Featured
-      // three on Unwind, near the front of the non-featured pack.
+      // Botchan is a local bind with a short scar sit — after Mirth, Maggot,
+      // and Bridge on Unwind, near the front of the rest of the lane.
       "botchan",
       // Naomi is a local bind but not a short first-session sit (full novel,
       // no ritual-ready open-at). Skip until a clean short sit exists —

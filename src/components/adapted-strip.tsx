@@ -3,7 +3,7 @@ import { ADAPTED_WORKS } from "@/lib/catalog/full-pdf";
 
 /**
  * Homepage Adapted by Salon entry — a compact gateway, not a remake carousel.
- * Remakes stay off Featured / Next / the classics Works strip.
+ * Remakes stay off the locked recommend / Next / classics Works strip.
  * The full list lives at /adapted. Rituals still lists remakes in their lanes.
  */
 export function AdaptedStrip() {

@@ -1,4 +1,4 @@
-/** Synopsis-style pitches for Featured / reader threshold (hand-curated). */
+/** Synopsis-style pitches for the reader threshold (hand-curated). */
 export const PITCHES: Record<string, string> = {
   basilio:
     "Mary Jane Serrano’s Dragon’s Teeth (Ticknor, Boston, 1889) — the only ≤1930 English of O Primo Basílio. A bowdlerized Victorian cut, not Campbell 1953 or Jull Costa. Sit with it as Dragon’s Teeth, not as modern Cousin Basilio.",
@@ -68,7 +68,7 @@ export const PITCHES: Record<string, string> = {
     "Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door.",
 };
 
-/** Preferred Featured recommend order (must have full text + pitch). Ranking only — not a homepage rail. */
+/** Preferred locked recommend order (must have full text + pitch). Ranking only — not a homepage rail. */
 export const FEATURED_CAROUSEL_IDS: string[] = [
   "enchanted-april",
   "the-bridge-of-san-luis-rey",
