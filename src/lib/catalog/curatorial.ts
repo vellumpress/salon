@@ -12,6 +12,7 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Rashōmon sits beside them (Asia lane) — not Featured until a dedicated trio.
  * A High Wind in Jamaica sits beside them (Jamaica / before-sleep Host-a-sit Ch1).
  * Noli Me Tangere sits beside them (Manila / unwind Host-a-sit Ch1).
+ * Vera sits beside them (Cornwall / before-sleep Host-a-sit Ch I).
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never Featured, Next, or Later classics.
@@ -24,6 +25,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "rashomon",
   "high-wind-jamaica",
   "noli-me-tangere",
+  "vera",
 ] as const;
 
 /** Mira pack — Adapted by Salon lane only. Do not add to Featured / Next. */

@@ -145,3 +145,15 @@ test("Noli Me Tangere unwind sit is the dinner announcement, not the novel", () 
   assert.equal(estimateRitualMinutes(item), 2);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
+
+test("Vera before-sleep sit is the cliff-gate cut, not the novel", () => {
+  const item = work({
+    id: "vera",
+    form: "novel",
+    breaths: 5,
+    minutes: 4,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 4);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});

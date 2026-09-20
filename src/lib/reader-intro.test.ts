@@ -78,6 +78,14 @@ test("Noli Me Tangere uses the unwind dinner-announcement sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host note/i);
 });
 
+test("Vera uses the before-sleep cliff-gate sit", () => {
+  const copy = readerIntro(shelfAsWork("vera"));
+  assert.match(copy, /Cornwall/);
+  assert.match(copy, /garden gate/);
+  assert.match(copy, /Wemyss intensifies later/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
+});
+
 test("uses Featured before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),

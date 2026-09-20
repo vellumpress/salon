@@ -56,3 +56,9 @@ test("Noli Me Tangere is a readable local EN bind", () => {
   assert.equal(isBoundLocal({ id: "noli-me-tangere", local: true }), true);
   assert.equal(isBoundReadable({ id: "noli-me-tangere", local: true, gutenberg: 6737 }), true);
 });
+
+test("Vera is a readable local EN bind", () => {
+  assert.equal(isEnReadableOff("vera"), false);
+  assert.equal(isBoundLocal({ id: "vera", local: true }), true);
+  assert.equal(isBoundReadable({ id: "vera", local: true, gutenberg: 34366 }), true);
+});

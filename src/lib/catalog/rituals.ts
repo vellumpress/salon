@@ -126,6 +126,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Jamaica after Emancipation: ruins within a stone’s throw of what still stands, and Derby Hill swallowed by bush until the front door is held open by a rank plant. Richard Hughes’s 1929 novel opens on that swallowed house.`,
   "noli-me-tangere":
     `Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.`,
+  vera:
+    `Cornwall, noon heat, a garden gate, and a daughter who has lost everything—and feels nothing yet. Same author as Enchanted April, colder register. Wemyss intensifies later; this open stays clean emptiness.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":
@@ -170,6 +172,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "attendants-confession",
       "rashomon",
       "high-wind-jamaica",
+      "vera",
       "the-pattern",
       "it-was-not-nervousness",
       "between-the-drop-and-the-water",
@@ -274,6 +277,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   rashomon: 2,
   "high-wind-jamaica": 3,
   "noli-me-tangere": 2,
+  vera: 4,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

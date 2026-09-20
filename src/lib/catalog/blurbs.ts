@@ -33,6 +33,8 @@ const BLURBS: Record<string, string> = {
     "After Emancipation, Derby Hill is swallowed by bush until a rank plant holds the front door open.",
   "noli-me-tangere":
     "Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.",
+  vera:
+    "Cornwall noon heat at a garden gate: a daughter who has lost everything—and feels nothing yet.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:

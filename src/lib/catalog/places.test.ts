@@ -14,6 +14,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     rashomon: { label: "Kyoto / Japan", region: "jp" },
     "high-wind-jamaica": { label: "Jamaica", region: "jm" },
     "noli-me-tangere": { label: "Manila", region: "ph" },
+    vera: { label: "Cornwall", region: "gb" },
     botchan: { label: "Tokyo", region: "jp" },
     "the-house-of-mirth": { label: "New York", region: "us" },
     silhouettes: { label: "Dieppe", region: "fr" },
@@ -64,6 +65,7 @@ test("Featured, Next, and ritual-lane works all resolve a place with a silhouett
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("rashomon"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("high-wind-jamaica"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("noli-me-tangere"));
+  assert.ok(NEXT_FEATURED_TRACK_IDS.includes("vera"));
   assert.ok(RITUAL_LANES.some((lane) => lane.workIds.includes("silhouettes")));
 });
 
