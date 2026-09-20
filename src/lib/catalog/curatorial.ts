@@ -8,10 +8,12 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * FEATURED_CAROUSEL_IDS list — do not insert Quicksand.
  *
  * Quicksand is Next Featured-track: worldly non-NY backup after Mirth.
+ * The Attendant’s Confession sits beside it (A24 South America lane) —
+ * not Featured until a dedicated trio.
  */
 export type CuratorialTrack = "featured" | "next" | "later";
 
-export const NEXT_FEATURED_TRACK_IDS = ["quicksand"] as const;
+export const NEXT_FEATURED_TRACK_IDS = ["quicksand", "attendants-confession"] as const;
 
 const FEATURED = new Set(FEATURED_CAROUSEL_IDS);
 const NEXT = new Set<string>(NEXT_FEATURED_TRACK_IDS);

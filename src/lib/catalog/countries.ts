@@ -564,6 +564,7 @@ const WORK_COUNTRY: Record<string, string> = {
   santa: "Mexico",
   solitude: "Spain",
   cubas: "Brazil",
+  "attendants-confession": "Brazil",
   casmurro: "Brazil",
   quincas: "Brazil",
   slum: "Brazil",

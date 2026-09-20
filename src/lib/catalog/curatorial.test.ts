@@ -9,6 +9,7 @@ import { isBoundLocal } from "./en-rights.ts";
 test("Featured carousel is unchanged and does not include Quicksand", () => {
   assert.ok(FEATURED_CAROUSEL_IDS.includes("passing"));
   assert.equal(FEATURED_CAROUSEL_IDS.includes("quicksand"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("attendants-confession"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
   for (const id of FEATURED_CAROUSEL_IDS) {
@@ -17,8 +18,9 @@ test("Featured carousel is unchanged and does not include Quicksand", () => {
 });
 
 test("Quicksand is Next Featured-track", () => {
-  assert.deepEqual([...NEXT_FEATURED_TRACK_IDS], ["quicksand"]);
+  assert.deepEqual([...NEXT_FEATURED_TRACK_IDS], ["quicksand", "attendants-confession"]);
   assert.equal(curatorialTrack("quicksand"), "next");
+  assert.equal(curatorialTrack("attendants-confession"), "next");
   assert.equal(curatorialTrack("the-house-of-mirth"), "later");
 });
 
@@ -34,6 +36,22 @@ test("Quicksand is a local before-sleep bind with no Gutenberg id", () => {
   assert.ok(lane?.workIds.includes("quicksand"));
   assert.equal(
     RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("quicksand"),
+    false,
+  );
+});
+
+test("The Attendant’s Confession is a local before-sleep bind on Next Featured-track", () => {
+  const work = SHELF.find((item) => item.id === "attendants-confession");
+  assert.ok(work);
+  assert.equal(work.year, 1881);
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 21040);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^So it really seems to you/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("attendants-confession"));
+  assert.equal(
+    RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("attendants-confession"),
     false,
   );
 });

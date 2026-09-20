@@ -55,6 +55,7 @@ test("known origin overrides", () => {
     basilio: "Portugal",
     rur: "Czechia",
     odessa: "Ukraine",
+    "attendants-confession": "Brazil",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);
@@ -101,6 +102,10 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /Chapter I.*Closed door/i,
       opening: /^Helga Crane sat alone in her room, which at that hour, eight in the evening, was in soft gloom/,
     },
+    "attendants-confession": {
+      scene: /A human document/i,
+      opening: /^So it really seems to you that what happened to me in 1860 is worth while writing down/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -120,6 +125,13 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /an observer would have thought/i,
+      );
+    }
+    if (id === "attendants-confession") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /Here it is\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /Great Mogul|dead man's shoes|dead man’s shoes/i,
       );
     }
   }
@@ -155,6 +167,45 @@ test("Silhouettes opens in sentence case, not PG first-word ALL-CAPS", () => {
     assert.doesNotMatch(joined, /\bTHE sea\b/);
     assert.doesNotMatch(joined, /\bNIGHT, a grey\b/);
     assert.doesNotMatch(joined, /\bAFTER SUNSET\b/);
+    assert.doesNotMatch(joined, /project gutenberg/i);
+    const decorative = pack.breaths.filter((breath) => {
+      const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
+      return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
+    });
+    assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
+  }
+});
+
+test("The Attendant’s Confession opens in sentence case and stops before the Mogul flourish", () => {
+  const work = SHELF.find((item) => item.id === "attendants-confession");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 21040);
+  assert.match(work!.opening ?? "", /^So it really seems to you/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/attendants-confession.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/attendants-confession.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /A human document/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^So it really seems to you/);
+  assert.equal(packed.breaths.at(-1)?.text, "Here it is.");
+  assert.equal(
+    packed.breaths.some((breath) => /Great Mogul/.test(breath.text)),
+    false,
+    "open-at should stop before the Mogul/shoes flourish",
+  );
+  assert.match(full.breaths[0]?.text ?? "", /^So it really seems to you/);
+  assert.match(full.breaths.at(-1)?.text ?? "", /Blessed are they who possess/);
+  assert.equal(
+    full.breaths.some((breath) => /fortune-teller/i.test(breath.text)),
+    false,
+    "full text should end before The Fortune-Teller",
+  );
+  for (const pack of [packed, full]) {
+    const joined = pack.breaths.map((breath) => breath.text).join("\n");
     assert.doesNotMatch(joined, /project gutenberg/i);
     const decorative = pack.breaths.filter((breath) => {
       const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");

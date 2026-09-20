@@ -48,6 +48,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "ara-vus-prec": `Eliot’s 1920 London poems — quatrains, Sweeney, and the nerves of a city. Let the first line arrive when you are ready.`,
   "arrowsmith": `A doctor tries to stay honest inside American medicine’s hustle. Sit with the world a moment before the first breath.`,
   "atalanta-in-calydon": `Atalanta in Calydon (1865): pagan heat in Victorian type. Let the first line arrive when you are ready.`,
+  "attendants-confession": `A marked man offers a human document—and asks you not to publish it until he’s dead. Machado’s attendant begins in confidence and already smells of the grave.`,
   "aurora-leigh": `Aurora Leigh (1856): love numbered like a private ledger. Let the first line arrive when you are ready.`,
   "azul": `Rubén Darío’s 1888 poems: Azul.... Let the first line arrive when you are ready.`,
   "babbitt": `Babbitt (1922): American professions as a hustle you can still try to stay honest inside. Sit with the world a moment before the first breath.`,
