@@ -1,4 +1,4 @@
-import { copyFileSync, existsSync, readdirSync } from "node:fs";
+import { existsSync, readdirSync } from "node:fs";
 import { join, resolve } from "node:path";
 import type { Plugin } from "vite";
 import { defineConfig } from "vite";
@@ -11,6 +11,8 @@ import { grokPwaPlugin } from "./scripts/grok-pwa-plugin.mjs";
 // @ts-expect-error JS plugin alongside the TS vite config
 import { appEnvPlugin } from "./scripts/app-env-plugin.mjs";
 import { isMigrationFile } from "./scripts/migration-plan.mjs";
+// @ts-expect-error JS helper alongside the TS vite config
+import { writeSpa404Html } from "./scripts/spa-pages-fallback.mjs";
 
 /** The files `src/lib/db.ts` globs — same directory, same non-recursive scope. */
 function hasGlobbedMigrations(root: string): boolean {
@@ -142,16 +144,13 @@ function authPopupPlugin(): Plugin {
   };
 }
 
-/** GitHub Pages serves 404.html for unknown paths — copy the SPA shell so deep links work. */
+/** GitHub Pages serves 404.html for unknown paths — write the SPA redirect shim. */
 function spaFallback404(): Plugin {
   return {
     name: "spa-fallback-404",
     closeBundle() {
-      const index = resolve("dist/index.html");
-      const shell = resolve("dist/_shell.html");
-      const dest = resolve("dist/404.html");
-      if (existsSync(index)) copyFileSync(index, dest);
-      else if (existsSync(shell)) copyFileSync(shell, dest);
+      if (!existsSync(resolve("dist"))) return;
+      writeSpa404Html(resolve("dist/404.html"));
     },
   };
 }
