@@ -59,6 +59,14 @@ const BLURBS: Record<string, string> = {
     "She wants the modern girl — free, warm, working for more than herself — and names the arms that still hold her.",
   "blood-and-sand":
     "Fight-day breakfast: meat, black coffee, a huge cigar — and a dining room that treats the matador like family glory.",
+  ecstasy:
+    "After dinner on the Scheveningen Road: rosewood, an onyx lamp, and a promise not to wake the boy.",
+  "an-outcast-of-the-islands":
+    "A short excursion off the straight path — neatly done, quickly forgotten — before the islands close in.",
+  "the-underdogs":
+    "A dog barking in the sierra, tortillas, a rifle under the mat, and hoofbeats in the quarry.",
+  "diary-of-a-chambermaid":
+    "Twelfth place in two years: a rainy September, a Figaro ad, and no interview with Madame.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:
@@ -359,7 +367,8 @@ const BLURBS: Record<string, string> = {
   nostromo: "A silver mine, a republic, and the men who cannot put the metal down.",
   typhoon: "A steamer into a storm, and a captain too stubborn to have an imagination.",
   "almayer-s-folly": "A European on a Borneo river, waiting for a fortune that will not come.",
-  "an-outcast-of-the-islands": "Conrad’s archipelago of men who have already been thrown out once.",
+  "an-outcast-of-the-islands":
+    "A short excursion off the straight path — neatly done, quickly forgotten — before the islands close in.",
   "under-western-eyes": "A student in Geneva, a betrayal in Russia, and the west watching.",
   "the-shadow-line": "A first command, a becalmed ship, and the line between youth and the job.",
   "the-arrow-of-gold": "Conrad’s Carlist Marseille: a woman, a cause, and streets with a reputation.",

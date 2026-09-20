@@ -1,0 +1,66 @@
+{
+  "id": "diary-of-a-chambermaid",
+  "title": "The Diary of a Chambermaid",
+  "author": "Octave Mirbeau",
+  "year": "1900",
+  "note": "Waking ritual sit — hiring day.\n\nTwelfth place in two years — rainy September, *Figaro* ad, dirty souls, and no interview with Madame.\n\nClosed hiring-day voice. Desire and class intensify later; this open stays the new place.\n\nThe Diary of a Chambermaid (Mirbeau; 1900; PG 44303). Sit through the Figaro advertisement. Stop before the rest of the novel.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Hiring day",
+      "place": "one sitting",
+      "reentry": "To-day, September 14, at three o'clock in the afternoon, in mild, gray, and rainy weather, I have entered upon my new place.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "To-day, September 14, at three o'clock in the afternoon, in mild, gray, and rainy weather, I have entered upon my new place."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "It is the twelfth in two years."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Of course I say nothing of the places which I held in previous years."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "It would be impossible for me to count them."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Ah! I can boast of having seen interiors and faces, and dirty souls."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "And the end is not yet."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Judging from the really extraordinary and dizzy way in which I have rolled, here and there, successively, from houses to employment-bureaus, and from employment-bureaus to houses, from the Bois de Boulogne to the Bastille, from the Observatory to Montmartre, from the Ternes to the Gobelins, everywhere, without ever succeeding in establishing myself anywhere, the masters in these days must be hard to please."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "It is incredible."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "The affair was arranged through an advertisement in the \"Figaro,\" and without any interview with Madame."
+    }
+  ]
+}

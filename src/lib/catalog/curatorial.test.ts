@@ -34,6 +34,10 @@ test("Locked recommend order is April, Bridge, Maggot, then Mirth, then Quicksan
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-immoralist"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("letters-of-a-javanese-princess"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("blood-and-sand"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("ecstasy"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("an-outcast-of-the-islands"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-underdogs"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("diary-of-a-chambermaid"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("miss-brill-adapted"), false);
@@ -80,6 +84,10 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("letters-of-a-javanese-princess"), "later");
   assert.equal(curatorialTrack("blood-and-sand"), "later");
   assert.equal(curatorialTrack("poison-tree"), "later");
+  assert.equal(curatorialTrack("ecstasy"), "later");
+  assert.equal(curatorialTrack("an-outcast-of-the-islands"), "later");
+  assert.equal(curatorialTrack("the-underdogs"), "later");
+  assert.equal(curatorialTrack("diary-of-a-chambermaid"), "later");
 });
 
 test("Quicksand is a local before-sleep bind with no Gutenberg id", () => {
@@ -476,6 +484,98 @@ test("The Gadfly is a local before-sleep bind on Next, behind Home and the World
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-gadfly"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-gadfly"), false);
   assert.equal(curatorialTrack("the-gadfly"), "later");
+});
+
+test("Ecstasy is a local before-sleep bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "ecstasy");
+  assert.ok(work);
+  assert.equal(work.year, 1919);
+  assert.equal(work.title, "Ecstasy");
+  assert.equal(work.author, "Louis Couperus (tr. Alexander Teixeira de Mattos)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 37770);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^Dolf Van Attema/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(lane?.workIds.includes("ecstasy"));
+  assert.ok(lane!.workIds.indexOf("ecstasy") > lane!.workIds.indexOf("the-gadfly"));
+  assert.ok(lane!.workIds.indexOf("ecstasy") > lane!.workIds.indexOf("quicksand"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("ecstasy"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("ecstasy"), false);
+  assert.equal(curatorialTrack("ecstasy"), "later");
+  const stub = SHELF.find((item) => item.id === "ecstasy-a-study-of-happiness");
+  assert.ok(stub);
+  assert.equal(stub.local, undefined);
+  assert.notEqual(stub.id, work.id);
+});
+
+test("An Outcast of the Islands is a local waking bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "an-outcast-of-the-islands");
+  assert.ok(work);
+  assert.equal(work.year, 1896);
+  assert.equal(work.title, "An Outcast of the Islands");
+  assert.equal(work.author, "Joseph Conrad");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 638);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^When he stepped off the straight and narrow path/);
+  const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
+  assert.ok(lane?.workIds.includes("an-outcast-of-the-islands"));
+  assert.ok(
+    lane!.workIds.indexOf("an-outcast-of-the-islands") > lane!.workIds.indexOf("blood-and-sand"),
+  );
+  assert.equal(
+    (NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("an-outcast-of-the-islands"),
+    false,
+  );
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("an-outcast-of-the-islands"), false);
+  assert.equal(curatorialTrack("an-outcast-of-the-islands"), "later");
+});
+
+test("The Underdogs is a local waking bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "the-underdogs");
+  assert.ok(work);
+  assert.equal(work.year, 1929);
+  assert.equal(work.title, "The Underdogs");
+  assert.equal(work.author, "Mariano Azuela (tr. E. Munguía, Jr.)");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 549);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^"That's no animal/);
+  const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
+  assert.ok(lane?.workIds.includes("the-underdogs"));
+  assert.ok(lane!.workIds.indexOf("the-underdogs") > lane!.workIds.indexOf("an-outcast-of-the-islands"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-underdogs"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("the-underdogs"), false);
+  assert.equal(curatorialTrack("the-underdogs"), "later");
+  const stub = SHELF.find((item) => item.id === "underdogs");
+  assert.ok(stub);
+  assert.notEqual(stub.id, work.id);
+});
+
+test("The Diary of a Chambermaid is a local waking bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "diary-of-a-chambermaid");
+  assert.ok(work);
+  assert.equal(work.year, 1900);
+  assert.equal(work.title, "The Diary of a Chambermaid");
+  assert.equal(work.author, "Octave Mirbeau");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 44303);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^To-day, September 14/);
+  const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
+  assert.ok(lane?.workIds.includes("diary-of-a-chambermaid"));
+  assert.ok(lane!.workIds.indexOf("diary-of-a-chambermaid") > lane!.workIds.indexOf("the-underdogs"));
+  assert.equal(
+    (NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("diary-of-a-chambermaid"),
+    false,
+  );
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("diary-of-a-chambermaid"), false);
+  assert.equal(curatorialTrack("diary-of-a-chambermaid"), "later");
+  const stub = SHELF.find((item) => item.id === "a-chambermaid-s-diary");
+  assert.ok(stub);
+  assert.equal(stub.local, undefined);
+  assert.notEqual(stub.id, work.id);
 });
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {

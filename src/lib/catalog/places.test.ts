@@ -25,6 +25,10 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "the-gadfly": { label: "Pisa", region: "it" },
     "letters-of-a-javanese-princess": { label: "Java — Japara", region: "id" },
     "blood-and-sand": { label: "Madrid", region: "es" },
+    ecstasy: { label: "The Hague / Scheveningen", region: "nl" },
+    "an-outcast-of-the-islands": { label: "Malay Archipelago", region: "id" },
+    "the-underdogs": { label: "Mexico — sierra", region: "mx" },
+    "diary-of-a-chambermaid": { label: "Paris", region: "fr" },
     botchan: { label: "Tokyo", region: "jp" },
     "enchanted-april": { label: "Italy", region: "it" },
     "the-bridge-of-san-luis-rey": { label: "Peru", region: "pe" },
@@ -94,6 +98,10 @@ test("Locked recommend, Next, and ritual-lane works all resolve a place with a s
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-gadfly"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("letters-of-a-javanese-princess"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("blood-and-sand"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("ecstasy"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("an-outcast-of-the-islands"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-underdogs"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("diary-of-a-chambermaid"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("poison-tree"), false);
   assert.ok(RITUAL_LANES.some((lane) => lane.workIds.includes("silhouettes")));
 });

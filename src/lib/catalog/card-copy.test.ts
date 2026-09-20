@@ -66,6 +66,10 @@ test("known origin overrides", () => {
     "the-gadfly": "Ireland",
     "letters-of-a-javanese-princess": "Indonesia",
     "blood-and-sand": "Spain",
+    ecstasy: "Netherlands",
+    "an-outcast-of-the-islands": "United Kingdom",
+    "the-underdogs": "Mexico",
+    "diary-of-a-chambermaid": "France",
     "on-a-chinese-screen": "United Kingdom",
     futility: "United Kingdom",
     "poison-tree": "India",
@@ -892,6 +896,116 @@ test("Blood and Sand opens on fight-day breakfast and binds only that sit", () =
   assert.match(packed.scenes[0]?.reentry ?? "", /^Juan Gallardo breakfasted early/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /not made much impression\.?$/);
   assert.ok(packed.breaths.some((breath) => /\*la alternativa\*/.test(breath.text)));
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("Ecstasy opens on the Scheveningen boudoir and binds only that sit", () => {
+  const work = SHELF.find((item) => item.id === "ecstasy");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 37770);
+  assert.equal(work!.title, "Ecstasy");
+  assert.equal(work!.author, "Louis Couperus (tr. Alexander Teixeira de Mattos)");
+  assert.equal(work!.year, 1919);
+  assert.match(work!.opening ?? "", /^Dolf Van Attema/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/ecstasy.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/ecstasy.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Scheveningen Road/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^Dolf Van Attema/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /kept the boy awake for hours\.?$/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("An Outcast of the Islands uses the trimmed brackets sit and a required Host note", () => {
+  const work = SHELF.find((item) => item.id === "an-outcast-of-the-islands");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 638);
+  assert.equal(work!.title, "An Outcast of the Islands");
+  assert.equal(work!.author, "Joseph Conrad");
+  assert.equal(work!.year, 1896);
+  assert.match(work!.opening ?? "", /^When he stepped off the straight and narrow path/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/an-outcast-of-the-islands.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/an-outcast-of-the-islands.json", import.meta.url), "utf8"),
+  ) as { note: string; breaths: { text: string }[] };
+  assert.match(packed.note, /sentence in brackets/);
+  assert.match(packed.note, /household contempt/);
+  assert.match(packed.note, /If you Host further, name that frame for the room first/);
+  assert.match(full.note, /If you Host further, name that frame for the room first/);
+  assert.match(work!.intro ?? "", /if you Host further, name that frame for the room first/i);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|SOFT-full/i);
+  assert.match(packed.scenes[0]?.title ?? "", /brackets/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^When he stepped off the straight and narrow path/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /quickly forgotten\.?$/);
+  assert.equal(packed.breaths.length, 2);
+  const joined = packed.breaths.map((breath) => breath.text).join("\n");
+  assert.doesNotMatch(joined, /half-caste|pale yellow|dark-skinned|tyrannize/i);
+  assert.doesNotMatch(joined, /sunshine|garden before his house/i);
+  assert.ok(full.breaths.length > packed.breaths.length, "full PG text remains for Host further");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("The Underdogs opens in the sierra hut and binds only that sit", () => {
+  const work = SHELF.find((item) => item.id === "the-underdogs");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 549);
+  assert.equal(work!.title, "The Underdogs");
+  assert.equal(work!.author, "Mariano Azuela (tr. E. Munguía, Jr.)");
+  assert.equal(work!.year, 1929);
+  assert.match(work!.opening ?? "", /^"That's no animal/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/the-underdogs.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/the-underdogs.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Sierra hut/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^"That's no animal/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /covered with gray rags\.?$/);
+  assert.equal(
+    packed.breaths.some((breath) => /buckled his cartridge belt|shot rang out/i.test(breath.text)),
+    false,
+    "open-at should stop before Demetrio leaves the hut",
+  );
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
+  assert.equal(work!.breaths, packed.breaths.length);
+});
+
+test("The Diary of a Chambermaid opens on hiring day and binds only that sit", () => {
+  const work = SHELF.find((item) => item.id === "diary-of-a-chambermaid");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.gutenberg, 44303);
+  assert.equal(work!.title, "The Diary of a Chambermaid");
+  assert.equal(work!.author, "Octave Mirbeau");
+  assert.equal(work!.year, 1900);
+  assert.match(work!.opening ?? "", /^To-day, September 14/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/diary-of-a-chambermaid.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/diary-of-a-chambermaid.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.match(packed.scenes[0]?.title ?? "", /Hiring day/i);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^To-day, September 14/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /without any interview with Madame\.?$/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
   assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
   assert.equal(work!.breaths, packed.breaths.length);
 });

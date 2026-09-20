@@ -25,6 +25,8 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * not the locked recommend list.
  * Where Angels Fear to Tread and The Gadfly are ritual Next sits only —
  * not the locked recommend list.
+ * Ecstasy, An Outcast of the Islands, The Underdogs, and The Diary of a
+ * Chambermaid are ritual Next sits only — not the locked recommend list.
  * The Poison Tree is Later (Bengal / unwind) — not Next, not locked recommend.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
