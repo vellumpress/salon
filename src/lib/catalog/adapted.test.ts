@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { readdirSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
@@ -520,6 +520,67 @@ test("Madame Bovary Tokyo is one Adapted book, not three timed sits", () => {
   assert.ok(work);
   assert.match(work!.intro ?? "", /self-poisoning/);
   assert.match(work!.intro ?? "", /Warn the room before you Host it/i);
+});
+
+test("Adapted remakes are whole stories — never waking/unwind/before-sleep siblings", () => {
+  const sitSuffix = /-(waking|unwind|before-sleep)$/;
+  assert.deepEqual(
+    ADAPTED_BY_SALON_IDS.filter((id) => sitSuffix.test(id)),
+    [],
+  );
+  assert.equal(ADAPTED_BY_SALON_IDS.length, 22);
+  const titles = ADAPTED_BY_SALON_IDS.map((id) => {
+    const work = shelfWork(id);
+    assert.ok(work, id);
+    return work!.title;
+  });
+  assert.equal(new Set(titles).size, titles.length, "one remake title = one id");
+
+  const here = fileURLToPath(new URL(".", import.meta.url));
+  for (const id of ADAPTED_BY_SALON_IDS) {
+    for (const suffix of ["waking", "unwind", "before-sleep"] as const) {
+      const sibling = `${id}-${suffix}`;
+      assert.equal(isAdaptedBySalon(sibling), false, sibling);
+      assert.equal(shelfWork(sibling), undefined, sibling);
+      assert.equal(existsSync(join(here, "openings", `${sibling}.json`)), false, sibling);
+      assert.equal(existsSync(join(here, "texts", `${sibling}.json`)), false, sibling);
+    }
+  }
+  for (const lane of RITUAL_LANES) {
+    const spliced = lane.workIds.filter(
+      (id) => isAdaptedBySalon(id) && sitSuffix.test(id),
+    );
+    assert.deepEqual(spliced, [], lane.id);
+  }
+
+  const priorAndGlam = [
+    "miss-brill-adapted",
+    "prefer-not",
+    "late-season",
+    "between-the-drop-and-the-water",
+    "he-woke-changed",
+    "the-pattern",
+    "a-coat-worthy-of-respect",
+    "what-she-borrowed",
+    "it-was-not-nervousness",
+    "during-carnival",
+    "what-we-sold",
+    "bliss-tokyo",
+    "open-window-singapore",
+    "story-of-an-hour-buenos-aires",
+    "masque-rio",
+    "boule-de-suif-istanbul",
+    "happy-prince-hong-kong",
+    "hunger-artist-milan",
+    "the-nose-cape-town",
+    "queen-of-spades-paris",
+    "decapitated-chicken-lisbon",
+  ] as const;
+  assert.deepEqual([...ADAPTED_BY_SALON_IDS.slice(0, 21)], [...priorAndGlam]);
+  for (const id of priorAndGlam) {
+    assert.ok(LANE[id], `${id} stays one whole remake on a ritual lane`);
+    assert.equal(sitSuffix.test(id), false, id);
+  }
 });
 
 test("glam-10 remakes use Mira city reseats, not raw Gutenberg extracts", () => {
