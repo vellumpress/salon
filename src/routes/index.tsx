@@ -41,7 +41,7 @@ function Home() {
   const router = useRouter();
   const last = useLastRead();
   const visit = useVisitSeed();
-  const { query, setQuery, searching, matches, poolSize } = useShelfSearch("fullPdf");
+  const { query, setQuery, searching, matches, poolSize } = useShelfSearch("local");
 
   // Fresh Mondrian palette every full open/reload (visit seed).
   // Order: [resume?, door0, door1] — neighbors avoid the same fill.
