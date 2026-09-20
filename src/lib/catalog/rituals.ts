@@ -1,5 +1,6 @@
 import { SHELF, type ShelfWork } from "./shelf.ts";
 import { isLocalBound } from "./full-pdf.ts";
+import { mixSeed, pinThenShuffle } from "../recommend.ts";
 import { SERIALIZE_LANE_ID } from "./serialize.ts";
 
 /** Ritual lanes — LE-polished local binds only (Gutenberg-only stay searchable elsewhere). */
@@ -158,10 +159,32 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Basement light on a Lower East Side Sunday—and Shenah Pessah opens the window for the first spring sun. Anzia Yezierska’s 1920 story “Wings” starts with a hunger that isn’t only for bread: love, dignity, a little beauty, a life that feels like America and not just work.`,
   "in-our-time":
     `A drunk battery on a dark road—then a Michigan lake at dawn, and Nick Adams in a rowboat with his father. Ernest Hemingway’s 1925 American collection opens with a war vignette snapped against “Indian Camp”: spare sentences, long silences, the method already underway.`,
+  botchan:
+    `A Tokyo kid who cannot fake manners jumps from a school window on a dare, then takes a knife to his own thumb to prove the blade is sharp. Natsume Sōseki’s 1906 novel opens on that hereditary recklessness — and the scar that will be there until his death.`,
 
 };
 
+/** Default Rituals chip — first-session / stranger lead, never Serialize. */
+export const FOR_YOU_LANE_ID = "for-you";
+
+/**
+ * Mira A24 first-session lead (Sun Sep 20, 2026 ET).
+ * Cold open first three: Mirth → Quicksand → Botchan.
+ * Maggot / Bridge stay strong but are not this trio.
+ */
+export const FIRST_SESSION_RITUAL_IDS = [
+  "the-house-of-mirth",
+  "quicksand",
+  "botchan",
+] as const;
+
 export const RITUAL_LANES: RitualLane[] = [
+  {
+    id: FOR_YOU_LANE_ID,
+    label: "For you",
+    hint: "First sitting",
+    workIds: [...FIRST_SESSION_RITUAL_IDS],
+  },
   {
     id: SERIALIZE_LANE_ID,
     label: "Serialize",
@@ -236,6 +259,15 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-house-of-mirth",
       "mr-fortunes-maggot",
       "the-bridge-of-san-luis-rey",
+      // Botchan is a local bind with a short scar sit — after the Featured
+      // three on Unwind, near the front of the non-featured pack.
+      "botchan",
+      // Naomi is a local bind but not a short first-session sit (full novel,
+      // no ritual-ready open-at). Skip until a clean short sit exists —
+      // do not invent one.
+      // Enchanted April is a waking-up local sit on this shelf. Mira’s
+      // tighter first-session cut (~158w, *The Times* italics, dripping
+      // street) is a later polish — do not invent a second work id.
       "poison-tree",
       "noli-me-tangere",
       "gitanjali",
@@ -319,6 +351,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-home-and-the-world": 2,
   "where-angels-fear-to-tread": 2,
   "the-gadfly": 2,
+  botchan: 5,
 };
 
 export function ritualPitchFor(id: string): string | undefined {
@@ -337,6 +370,29 @@ export function worksForRitualLane(lane: RitualLane): ShelfWork[] {
     out.push(work);
   }
   return out;
+}
+
+/** Cold-open Rituals chip: For you, else Unwind — never Serialize. */
+export function defaultRitualLaneId(
+  lanes: readonly { id: string }[] = RITUAL_LANES,
+): string {
+  const ids = new Set(lanes.map((lane) => lane.id));
+  if (ids.has(FOR_YOU_LANE_ID)) return FOR_YOU_LANE_ID;
+  if (ids.has("unwind")) return "unwind";
+  for (const lane of lanes) {
+    if (lane.id !== SERIALIZE_LANE_ID) return lane.id;
+  }
+  return lanes[0]?.id ?? "";
+}
+
+/** Pin first-session ids in Mira order, then shuffle the remainder. */
+export function ritualLaneStack(lane: RitualLane, visit: number): ShelfWork[] {
+  return pinThenShuffle(
+    worksForRitualLane(lane),
+    mixSeed(visit, `ritual-${lane.id}`),
+    FIRST_SESSION_RITUAL_IDS,
+    (work) => work.id,
+  );
 }
 
 /** Coarse sitting-length label for Ritual cards (honest, not precise). */

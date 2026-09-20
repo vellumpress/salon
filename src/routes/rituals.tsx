@@ -5,10 +5,11 @@ import { fillClass, fillInk, mosaicFills, type Fill } from "@/lib/mondrian";
 import type { ShelfWork } from "@/lib/catalog/shelf";
 import {
   RITUAL_LANES,
+  defaultRitualLaneId,
   estimateRitualMinutes,
   ritualDurationLabel,
+  ritualLaneStack,
   ritualPitchFor,
-  worksForRitualLane,
 } from "@/lib/catalog/rituals";
 import {
   SERIALIZE_LANE_ID,
@@ -123,17 +124,17 @@ function RitualsSection({
     () =>
       RITUAL_LANES.map((lane) => ({
         ...lane,
-        items: takeShuffled(
-          worksForRitualLane(lane),
-          mixSeed(visit, `ritual-${lane.id}`),
-        ),
+        items: ritualLaneStack(lane, visit),
       })).filter((lane) => lane.id === SERIALIZE_LANE_ID || lane.items.length > 0),
     [visit],
   );
-  const [laneId, setLaneId] = useState(lanes[0]?.id ?? "");
+  const [laneId, setLaneId] = useState(() => defaultRitualLaneId());
   const [openPlanId, setOpenPlanId] = useState<string | null>(null);
   const [comingId, setComingId] = useState<string | null>(null);
-  const active = lanes.find((lane) => lane.id === laneId) ?? lanes[0];
+  const active =
+    lanes.find((lane) => lane.id === laneId) ??
+    lanes.find((lane) => lane.id === defaultRitualLaneId(lanes)) ??
+    lanes[0];
   const serializeOpen = active?.id === SERIALIZE_LANE_ID;
   const openPlan = serializeOpen
     ? (series.find((plan) => plan.id === openPlanId) ?? SERIALIZE_PLANS.find((plan) => plan.id === openPlanId))

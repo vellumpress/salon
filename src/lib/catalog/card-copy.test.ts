@@ -173,6 +173,10 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       scene: /Fragola/i,
       opening: /^Arthur sat in the library/,
     },
+    botchan: {
+      scene: /Chapter I.*Scar/i,
+      opening: /^Because of an hereditary recklessness, I have been playing always a losing game since my childhood/,
+    },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -277,6 +281,15 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     if (id === "the-gadfly") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /Fragola/);
       assert.ok(packed.breaths.some((breath) => /\*Fragola!\*/.test(breath.text)));
+    }
+    if (id === "botchan") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /scar will be there until my death\.?$/);
+      const words = packed.breaths.map((b) => b.text).join(" ").trim().split(/\s+/).length;
+      assert.equal(words, 260);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /chestnut tree|Yamashiro-ya|Kantaro/i,
+      );
     }
   }
 });

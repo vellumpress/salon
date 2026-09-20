@@ -42,3 +42,27 @@ export function takeShuffled<T>(
   const mixed = seed === 0 ? items.slice() : shuffleWithSeed(items, seed);
   return count == null ? mixed : mixed.slice(0, count);
 }
+
+/**
+ * Keep `pinIds` that appear in `items` at the front (in pin order), then
+ * shuffle the remainder. Missing pins are skipped. Does not mutate `items`.
+ */
+export function pinThenShuffle<T>(
+  items: readonly T[],
+  seed: number,
+  pinIds: readonly string[],
+  idOf: (item: T) => string,
+): T[] {
+  if (pinIds.length === 0) return takeShuffled(items, seed);
+  const pinned: T[] = [];
+  const pinnedIds = new Set<string>();
+  for (const id of pinIds) {
+    if (pinnedIds.has(id)) continue;
+    const hit = items.find((item) => idOf(item) === id);
+    if (!hit) continue;
+    pinned.push(hit);
+    pinnedIds.add(id);
+  }
+  const rest = items.filter((item) => !pinnedIds.has(idOf(item)));
+  return pinned.concat(takeShuffled(rest, seed));
+}
