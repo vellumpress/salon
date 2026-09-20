@@ -414,6 +414,19 @@ export function VellumReader({
     }
   }
 
+  /** Restart the same timed sit without leaving the work. */
+  function sitAgain() {
+    startSitting(work.id, { restart: true });
+    setTick(Date.now());
+    setSandCue(false);
+  }
+
+  /** Dismiss the sand-run sheet and keep reading without a timer. */
+  function sitContinue() {
+    setSandCue(false);
+    closeSit();
+  }
+
   function leaveTogether() {
     closeSit();
     void navigate({ to: "/" });
@@ -499,10 +512,12 @@ export function VellumReader({
 
   useEffect(() => {
     if (overlay !== "none") return;
+    if (sandCue) return;
     if (!sittingMinutes || !progress?.sittingStartedAt) return;
     const endsAt = progress.sittingStartedAt + sittingMinutes * 60 * 1000;
     const remaining = endsAt - Date.now();
     const finish = () => {
+      endSitting(work.id);
       if (together) setOverlay("sitting-end");
       else setSandCue(true);
     };
@@ -512,7 +527,15 @@ export function VellumReader({
     }
     const t = window.setTimeout(finish, remaining);
     return () => window.clearTimeout(t);
-  }, [overlay, sittingMinutes, progress?.sittingStartedAt, together]);
+  }, [
+    overlay,
+    sittingMinutes,
+    progress?.sittingStartedAt,
+    together,
+    sandCue,
+    endSitting,
+    work.id,
+  ]);
 
   useEffect(() => {
     if (overlay !== "none") return;
@@ -1232,26 +1255,24 @@ export function VellumReader({
       ) : null}
 
       {sandCue && !together && overlay === "none" ? (
-        <div className="sand-cue" role="status">
+        <div
+          className="sand-cue"
+          role="status"
+          onPointerDown={(e) => e.stopPropagation()}
+        >
           <p className="font-serif text-sm text-ink/80">The sand has run. Stay as long as you like.</p>
-          <div className="flex shrink-0 items-stretch gap-px bg-ink">
+          <div className="sand-cue-actions">
             <button
               type="button"
-              className="bg-paper px-3 py-2 type-kicker text-ink"
-              onClick={() => {
-                setSandCue(false);
-                closeSit();
-              }}
+              className="sand-cue-btn"
+              onClick={sitContinue}
             >
               Continue
             </button>
             <button
               type="button"
-              className="bg-ink px-3 py-2 type-kicker text-paper"
-              onClick={() => {
-                setSandCue(false);
-                startSitting(work.id, { restart: true });
-              }}
+              className="sand-cue-btn sand-cue-btn-again"
+              onClick={sitAgain}
             >
               Again
             </button>
