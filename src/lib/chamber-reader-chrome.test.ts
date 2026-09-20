@@ -35,3 +35,39 @@ test("sit timer sheet stacks in flow above Keep, not over it", () => {
   assert.ok(reveal < footer, "timer sheet must render above the action bar");
   assert.ok(footer < keep, "Keep must stay in the footer below the sheet");
 });
+
+test("sand-run sheet Again restarts the sit as an equal pair with Continue", () => {
+  const againAt = reader.indexOf("function sitAgain(");
+  assert.ok(againAt > -1, "sitAgain helper missing");
+  const againFn = reader.slice(againAt, reader.indexOf("function sitContinue("));
+  const restartAt = againFn.indexOf("startSitting(work.id, { restart: true })");
+  const hideAt = againFn.indexOf("setSandCue(false)");
+  assert.ok(restartAt > -1, "Again must restart the timed sit");
+  assert.ok(hideAt > -1, "Again must dismiss the sand-run sheet");
+  assert.ok(restartAt < hideAt, "restart the clock before hiding the sheet");
+
+  const sheet = reader.slice(
+    reader.indexOf('className="sand-cue"'),
+    reader.indexOf('overlay === "send"'),
+  );
+  assert.match(sheet, /className="sand-cue-actions"/);
+  assert.match(sheet, /onClick=\{sitContinue\}/);
+  assert.match(sheet, /onClick=\{sitAgain\}/);
+  assert.doesNotMatch(sheet, /flex shrink-0 items-stretch gap-px bg-ink/);
+
+  const actions = css.match(/\.sand-cue-actions\s*\{[^}]+\}/);
+  assert.ok(actions, "missing .sand-cue-actions");
+  assert.match(actions[0], /grid-template-columns:\s*1fr 1fr/);
+
+  const cue = css.match(/\.sand-cue\s*\{[^}]+\}/);
+  assert.ok(cue, "missing .sand-cue");
+  const cueZ = cue[0].match(/z-index:\s*(\d+)/);
+  const glass = css.match(/\.reader-glass\s*\{[^}]+\}/);
+  assert.ok(glass, "missing .reader-glass");
+  const glassZ = glass[0].match(/z-index:\s*(\d+)/);
+  assert.ok(cueZ && glassZ, "sand-cue and hourglass need z-index");
+  assert.ok(
+    Number(cueZ[1]) > Number(glassZ[1]),
+    "sand-run actions must sit above the hourglass hit target",
+  );
+});
