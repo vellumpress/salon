@@ -1,0 +1,351 @@
+{
+  "id": "madame-bovary-tokyo-waking",
+  "title": "Gustave Flaubert, Madame Bovary recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A New Town wife tries to live glamorous Tokyo as if desire were a credit line—kind clinic husband, Ginza nights, installments that collect themselves. After Flaubert, Madame Bovary, 1857.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "New rooms",
+      "place": "Tokyo",
+      "reentry": "Emma woke before the light finished deciding what color to be.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Emma woke before the light finished deciding what color to be."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "The condo’s white ceiling held a faint rectangle from the neighbor’s laundry balcony—someone else’s life already upright."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Beside her, Haruto breathed the soft, untroubled rhythm of a man who believed mornings were for brushing teeth and checking the clinic schedule."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "His phone glowed once on the nightstand: a patient reminder, a polite apology already drafted in his head."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "He did not wake."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Goodness, in him, was a kind of sleep."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "She slid out without touching the sheet where his warmth ended."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "In the kitchen the coffee machine performed its small obedient miracle."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Through the glass, Asaka’s midrise roofs stacked toward a sky the color of diluted milk."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "The train line cut a silver scar."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Beyond it—far enough to feel invented—Tokyo lifted its towers like a rumor that had somehow become architecture."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Emma drank standing up."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "She liked the bitterness more than the comfort."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Comfort was what other women called a successful marriage: a doctor husband, a two-bedroom that photographed well if you cropped the parking lot, a child who said mama with the correct soft consonants."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Maya was still asleep in the smaller room, fist curled against a stuffed fox that had cost too much and meant too little."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Emma had chosen it in a department-store aisle because the packaging promised “European softness,” and she had believed packaging before."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Haruto’s white coat hung by the door like a flag of adequacy."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "He would leave at seven-forty, kiss her temple with the accuracy of habit, and take the local toward the clinic where he treated coughs and school forms and the mild despair of other people’s bodies."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "He was kind."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Kindness was the trap with the cleanest hinges."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "She had married him because he looked at her, once, in her father’s house in Chiba, as if she were a shore he could finally reach."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "She had wanted to be reached."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "She had not understood that being reached could also mean being settled—placed, like a vase, in a room that never changed its view."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "On the counter: yesterday’s receipt from a chain bakery, a flyer for a neighborhood festival starring a local pharmacist’s smile, a note in Haruto’s square handwriting about dinner."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Salmon. Vegetables."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Something sensible."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Emma turned the note face down."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "She opened her tablet and let the city enter."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "A Ginza window display—glass, gold, a coat that looked like decision."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "A restaurant reservation she could not afford, screenshotted by a woman she barely knew."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "A theater lobby photographed so the marble seemed to forgive everyone who stood on it."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "Emma’s thumb moved with the hunger of someone reading a map to a country that refused visas."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "She knew the names."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "She did not yet know the prices in their true form—the ones that arrived later, as installment plans and private humiliations."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "In the bathroom mirror she practiced a face."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "Not for Haruto."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "For the idea of being seen by someone who collected evenings the way other men collected watches."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "She put on lipstick the color of a closed door and wiped it off."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "Too early."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "Or too late."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "Time, in the New Town, was a corridor with identical doors."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "Maya called once, a small sound, and Emma went."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "She lifted the child with a tenderness that shamed her because it was real and still not enough."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "Maya’s hair smelled like sleep and the mild soap Haruto bought in bulk."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "Emma pressed her mouth to the crown and felt, under love, the old vacancy opening—the one novels had once filled when she was younger and believed language could rearrange a life."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "She had read translations on night trains."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "She had believed Paris was a temperature."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "Now Paris was a perfume counter, and Tokyo was the only Paris that mattered, and Asaka was the province that had learned to call itself convenient."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "Haruto appeared in the doorway, already half-dressed, smiling the smile that meant he had slept well and expected the world to reciprocate."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "“You were up early,” he said."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "“I couldn’t sleep,” Emma said, which was true in the way weather is true—accurate, incomplete."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "He kissed her temple."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "Exact. Warm."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "She watched him leave as if watching a ferry depart a shore she had already decided to abandon."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "The door clicked."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "The condo resumed its quiet."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "Outside, a delivery bike threaded the morning."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "Somewhere a neighbor practiced piano with the sincerity of people who would never perform."
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "Emma stood at the glass again."
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "The towers in the distance did not move, but they seemed to."
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "Desire, she thought, was not a feeling."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "It was a direction—always away from the room you were in, always toward the room that looked, from this distance, as if it knew your name."
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "She rinsed the mug, dried it, set it where it belonged."
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "Order could be mistaken for peace."
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "She knew the difference."
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "The difference was what she would spend everything to close."
+    }
+  ]
+}

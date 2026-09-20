@@ -1862,6 +1862,49 @@ export const SHELF: ShelfWork[] = [
     intro:
       "A white villa above the Tagus, four brothers who learn by watching, and a kitchen lesson that does not stay in the kitchen. After Quiroga, The Decapitated Chicken, 1909.",
   },
+  {
+    id: "madame-bovary-tokyo-waking",
+    title: "Gustave Flaubert, Madame Bovary recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 7,
+    local: true,
+    opening: "Emma woke before the light finished deciding what color to be.",
+    breaths: 66,
+    intro:
+      "A New Town wife tries to live glamorous Tokyo as if desire were a credit line—kind clinic husband, Ginza nights, installments that collect themselves. After Flaubert, Madame Bovary, 1857.",
+  },
+  {
+    id: "madame-bovary-tokyo-unwind",
+    title: "Gustave Flaubert, Madame Bovary recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 7,
+    local: true,
+    opening: "The taxi entered Ginza as if the district had been polished for their arrival.",
+    breaths: 62,
+    intro:
+      "A New Town wife tries to live glamorous Tokyo as if desire were a credit line—kind clinic husband, Ginza nights, installments that collect themselves. After Flaubert, Madame Bovary, 1857.",
+  },
+  {
+    id: "madame-bovary-tokyo-before-sleep",
+    title: "Gustave Flaubert, Madame Bovary recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 7,
+    local: true,
+    opening:
+      "By the time the condo went quiet enough to hear the refrigerator’s small machinery, Emma understood that the city had finished with her without announcing it.",
+    breaths: 76,
+    intro:
+      "A New Town wife tries to live glamorous Tokyo as if desire were a credit line—kind clinic husband, Ginza nights, installments that collect themselves. After Flaubert, Madame Bovary, 1857.",
+  },
 ];
 
 const BY_ID = new Map(SHELF.map((item) => [item.id, item]));

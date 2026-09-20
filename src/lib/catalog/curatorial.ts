@@ -74,6 +74,9 @@ export const ADAPTED_BY_SALON_IDS = [
   "the-nose-cape-town",
   "queen-of-spades-paris",
   "decapitated-chicken-lisbon",
+  "madame-bovary-tokyo-waking",
+  "madame-bovary-tokyo-unwind",
+  "madame-bovary-tokyo-before-sleep",
 ] as const;
 
 const FEATURED = new Set(FEATURED_CAROUSEL_IDS);

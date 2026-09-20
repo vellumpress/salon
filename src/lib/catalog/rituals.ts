@@ -102,6 +102,12 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "An 8th-arrondissement obsession: three cards, a countess's secret, and a queen who will not stay buried in the deck. After Pushkin, The Queen of Spades, 1834.",
   "decapitated-chicken-lisbon":
     "A white villa above the Tagus, four brothers who learn by watching, and a kitchen lesson that does not stay in the kitchen. After Quiroga, The Decapitated Chicken, 1909.",
+  "madame-bovary-tokyo-waking":
+    "A New Town wife tries to live glamorous Tokyo as if desire were a credit line—kind clinic husband, Ginza nights, installments that collect themselves. After Flaubert, Madame Bovary, 1857.",
+  "madame-bovary-tokyo-unwind":
+    "A New Town wife tries to live glamorous Tokyo as if desire were a credit line—kind clinic husband, Ginza nights, installments that collect themselves. After Flaubert, Madame Bovary, 1857.",
+  "madame-bovary-tokyo-before-sleep":
+    "A New Town wife tries to live glamorous Tokyo as if desire were a credit line—kind clinic husband, Ginza nights, installments that collect themselves. After Flaubert, Madame Bovary, 1857.",
   "body-of-this-death":
     "Bogan on flesh, desire, and what it costs to keep living in a body. Spare, exact poems — no soft focus on the wound.",
   orlando:
@@ -286,6 +292,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "happy-prince-hong-kong",
       "queen-of-spades-paris",
       "decapitated-chicken-lisbon",
+      "madame-bovary-tokyo-before-sleep",
       "the-wild-swans-at-coole",
       "kwaidan-stories-and-studies-of-strange-things",
       "the-listeners-and-other-poems",
@@ -321,6 +328,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "mountain-interval",
       "open-window-singapore",
       "the-nose-cape-town",
+      "madame-bovary-tokyo-waking",
     ],
   },
   {
@@ -358,6 +366,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "bliss-tokyo",
       "boule-de-suif-istanbul",
       "hunger-artist-milan",
+      "madame-bovary-tokyo-unwind",
     ],
   },
   {

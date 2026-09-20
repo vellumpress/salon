@@ -71,6 +71,9 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "the-nose-cape-town": { label: "Cape Town", region: "za" },
     "queen-of-spades-paris": { label: "Paris", region: "fr" },
     "decapitated-chicken-lisbon": { label: "Lisbon", region: "pt" },
+    "madame-bovary-tokyo-waking": { label: "Tokyo", region: "jp" },
+    "madame-bovary-tokyo-unwind": { label: "Tokyo", region: "jp" },
+    "madame-bovary-tokyo-before-sleep": { label: "Tokyo", region: "jp" },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = shelfWork(id);
@@ -144,7 +147,7 @@ test("Adapted by Salon keeps exactly three America-set remakes", () => {
     america,
     ["prefer-not", "between-the-drop-and-the-water", "the-pattern"],
   );
-  assert.equal(ADAPTED_BY_SALON_IDS.length, 21);
+  assert.equal(ADAPTED_BY_SALON_IDS.length, 24);
   assert.equal(america.length, 3);
 });
 
