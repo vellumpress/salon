@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AdaptedRouteImport } from './routes/adapted'
 import { Route as ClubsRouteImport } from './routes/clubs'
 import { Route as CuratorRouteImport } from './routes/curator'
 import { Route as DeskRouteImport } from './routes/desk'
@@ -26,19 +27,24 @@ import { Route as StoresRouteImport } from './routes/stores'
 import { Route as TogetherRouteImport } from './routes/together'
 import { Route as ApiRtcRouteImport } from './routes/api/rtc'
 import { Route as ClubClubIdRouteImport } from './routes/club.$clubId'
+import { Route as PledgeTokenRouteImport } from './routes/pledge.$token'
 import { Route as ProfileIndexRouteImport } from './routes/profile.index'
 import { Route as ProfileCollectionRouteImport } from './routes/profile.collection'
 import { Route as ReadWorkIdRouteImport } from './routes/read.$workId'
 import { Route as ReaderReaderIdRouteImport } from './routes/reader.$readerId'
 import { Route as STokenRouteImport } from './routes/s.$token'
 import { Route as SitTokenRouteImport } from './routes/sit.$token'
-import { Route as PledgeTokenRouteImport } from './routes/pledge.$token'
 import { Route as ApiAuthSplatRouteImport } from './routes/api/auth/$'
 import { Route as ClubInviteTokenRouteImport } from './routes/club.invite.$token'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdaptedRoute = AdaptedRouteImport.update({
+  id: '/adapted',
+  path: '/adapted',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ClubsRoute = ClubsRouteImport.update({
@@ -121,6 +127,11 @@ const ClubClubIdRoute = ClubClubIdRouteImport.update({
   path: '/club/$clubId',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PledgeTokenRoute = PledgeTokenRouteImport.update({
+  id: '/pledge/$token',
+  path: '/pledge/$token',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProfileIndexRoute = ProfileIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -151,11 +162,6 @@ const SitTokenRoute = SitTokenRouteImport.update({
   path: '/sit/$token',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PledgeTokenRoute = PledgeTokenRouteImport.update({
-  id: '/pledge/$token',
-  path: '/pledge/$token',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ApiAuthSplatRoute = ApiAuthSplatRouteImport.update({
   id: '/api/auth/$',
   path: '/api/auth/$',
@@ -169,6 +175,7 @@ const ClubInviteTokenRoute = ClubInviteTokenRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/adapted': typeof AdaptedRoute
   '/clubs': typeof ClubsRoute
   '/curator': typeof CuratorRoute
   '/desk': typeof DeskRoute
@@ -185,18 +192,19 @@ export interface FileRoutesByFullPath {
   '/together': typeof TogetherRoute
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
+  '/pledge/$token': typeof PledgeTokenRoute
   '/profile/collection': typeof ProfileCollectionRoute
   '/read/$workId': typeof ReadWorkIdRoute
   '/reader/$readerId': typeof ReaderReaderIdRoute
   '/s/$token': typeof STokenRoute
   '/sit/$token': typeof SitTokenRoute
-  '/pledge/$token': typeof PledgeTokenRoute
   '/profile/': typeof ProfileIndexRoute
   '/api/auth/$': typeof ApiAuthSplatRoute
   '/club/invite/$token': typeof ClubInviteTokenRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/adapted': typeof AdaptedRoute
   '/clubs': typeof ClubsRoute
   '/curator': typeof CuratorRoute
   '/desk': typeof DeskRoute
@@ -212,12 +220,12 @@ export interface FileRoutesByTo {
   '/together': typeof TogetherRoute
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
+  '/pledge/$token': typeof PledgeTokenRoute
   '/profile/collection': typeof ProfileCollectionRoute
   '/read/$workId': typeof ReadWorkIdRoute
   '/reader/$readerId': typeof ReaderReaderIdRoute
   '/s/$token': typeof STokenRoute
   '/sit/$token': typeof SitTokenRoute
-  '/pledge/$token': typeof PledgeTokenRoute
   '/profile': typeof ProfileIndexRoute
   '/api/auth/$': typeof ApiAuthSplatRoute
   '/club/invite/$token': typeof ClubInviteTokenRoute
@@ -225,6 +233,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/adapted': typeof AdaptedRoute
   '/clubs': typeof ClubsRoute
   '/curator': typeof CuratorRoute
   '/desk': typeof DeskRoute
@@ -241,12 +250,12 @@ export interface FileRoutesById {
   '/together': typeof TogetherRoute
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
+  '/pledge/$token': typeof PledgeTokenRoute
   '/profile/collection': typeof ProfileCollectionRoute
   '/read/$workId': typeof ReadWorkIdRoute
   '/reader/$readerId': typeof ReaderReaderIdRoute
   '/s/$token': typeof STokenRoute
   '/sit/$token': typeof SitTokenRoute
-  '/pledge/$token': typeof PledgeTokenRoute
   '/profile/': typeof ProfileIndexRoute
   '/api/auth/$': typeof ApiAuthSplatRoute
   '/club/invite/$token': typeof ClubInviteTokenRoute
@@ -255,6 +264,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/adapted'
     | '/clubs'
     | '/curator'
     | '/desk'
@@ -271,18 +281,19 @@ export interface FileRouteTypes {
     | '/together'
     | '/api/rtc'
     | '/club/$clubId'
+    | '/pledge/$token'
     | '/profile/collection'
     | '/read/$workId'
     | '/reader/$readerId'
     | '/s/$token'
     | '/sit/$token'
-    | '/pledge/$token'
     | '/profile/'
     | '/api/auth/$'
     | '/club/invite/$token'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/adapted'
     | '/clubs'
     | '/curator'
     | '/desk'
@@ -298,18 +309,19 @@ export interface FileRouteTypes {
     | '/together'
     | '/api/rtc'
     | '/club/$clubId'
+    | '/pledge/$token'
     | '/profile/collection'
     | '/read/$workId'
     | '/reader/$readerId'
     | '/s/$token'
     | '/sit/$token'
-    | '/pledge/$token'
     | '/profile'
     | '/api/auth/$'
     | '/club/invite/$token'
   id:
     | '__root__'
     | '/'
+    | '/adapted'
     | '/clubs'
     | '/curator'
     | '/desk'
@@ -326,12 +338,12 @@ export interface FileRouteTypes {
     | '/together'
     | '/api/rtc'
     | '/club/$clubId'
+    | '/pledge/$token'
     | '/profile/collection'
     | '/read/$workId'
     | '/reader/$readerId'
     | '/s/$token'
     | '/sit/$token'
-    | '/pledge/$token'
     | '/profile/'
     | '/api/auth/$'
     | '/club/invite/$token'
@@ -339,6 +351,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdaptedRoute: typeof AdaptedRoute
   ClubsRoute: typeof ClubsRoute
   CuratorRoute: typeof CuratorRoute
   DeskRoute: typeof DeskRoute
@@ -355,11 +368,11 @@ export interface RootRouteChildren {
   TogetherRoute: typeof TogetherRoute
   ApiRtcRoute: typeof ApiRtcRoute
   ClubClubIdRoute: typeof ClubClubIdRoute
+  PledgeTokenRoute: typeof PledgeTokenRoute
   ReadWorkIdRoute: typeof ReadWorkIdRoute
   ReaderReaderIdRoute: typeof ReaderReaderIdRoute
   STokenRoute: typeof STokenRoute
   SitTokenRoute: typeof SitTokenRoute
-  PledgeTokenRoute: typeof PledgeTokenRoute
   ApiAuthSplatRoute: typeof ApiAuthSplatRoute
   ClubInviteTokenRoute: typeof ClubInviteTokenRoute
 }
@@ -371,6 +384,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/adapted': {
+      id: '/adapted'
+      path: '/adapted'
+      fullPath: '/adapted'
+      preLoaderRoute: typeof AdaptedRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/clubs': {
@@ -485,6 +505,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ClubClubIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pledge/$token': {
+      id: '/pledge/$token'
+      path: '/pledge/$token'
+      fullPath: '/pledge/$token'
+      preLoaderRoute: typeof PledgeTokenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/profile/': {
       id: '/profile/'
       path: '/'
@@ -527,13 +554,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitTokenRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/pledge/$token': {
-      id: '/pledge/$token'
-      path: '/pledge/$token'
-      fullPath: '/pledge/$token'
-      preLoaderRoute: typeof PledgeTokenRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/api/auth/$': {
       id: '/api/auth/$'
       path: '/api/auth/$'
@@ -566,6 +586,7 @@ const ProfileRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdaptedRoute: AdaptedRoute,
   ClubsRoute: ClubsRoute,
   CuratorRoute: CuratorRoute,
   DeskRoute: DeskRoute,
@@ -582,11 +603,11 @@ const rootRouteChildren: RootRouteChildren = {
   TogetherRoute: TogetherRoute,
   ApiRtcRoute: ApiRtcRoute,
   ClubClubIdRoute: ClubClubIdRoute,
+  PledgeTokenRoute: PledgeTokenRoute,
   ReadWorkIdRoute: ReadWorkIdRoute,
   ReaderReaderIdRoute: ReaderReaderIdRoute,
   STokenRoute: STokenRoute,
   SitTokenRoute: SitTokenRoute,
-  PledgeTokenRoute: PledgeTokenRoute,
   ApiAuthSplatRoute: ApiAuthSplatRoute,
   ClubInviteTokenRoute: ClubInviteTokenRoute,
 }

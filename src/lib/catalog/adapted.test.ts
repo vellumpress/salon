@@ -8,7 +8,7 @@ import {
   NEXT_FEATURED_TRACK_IDS,
 } from "./curatorial.ts";
 import { ADAPTED_WORKS, CLASSIC_LOCAL_WORKS, LOCAL_WORKS } from "./full-pdf.ts";
-import { RITUAL_LANES } from "./rituals.ts";
+import { RITUAL_LANES, type RitualLane } from "./rituals.ts";
 import { SHELF, shelfWork } from "./shelf.ts";
 import { isBoundLocal } from "./en-rights.ts";
 import { placeFor } from "./places.ts";
@@ -141,8 +141,8 @@ test("Adapted remakes are local sits with source credit, not Featured", () => {
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
     const lane = LANE[id];
     assert.ok(lane, `${id} lane`);
-    const home = lane === "unwind" ? unwind : beforeSleep;
-    const other = lane === "unwind" ? beforeSleep : unwind;
+    const home: RitualLane = lane === "unwind" ? unwind : beforeSleep;
+    const other: RitualLane = lane === "unwind" ? beforeSleep : unwind;
     assert.ok(home.workIds.includes(id), `${id} ${lane}`);
     assert.equal(other.workIds.includes(id), false, `${id} not other lane`);
     assert.deepEqual(placeFor(work), want.place, id);
@@ -203,13 +203,22 @@ test("homepage classics strip does not mix in Adapted remakes", () => {
   assert.ok(LOCAL_WORKS.some((item) => item.id === "he-woke-changed"));
 });
 
-test("Adapted homepage strip drifts like the classics works strip", () => {
+test("homepage Adapted surface is a gateway, not a drifting remake strip", () => {
   const src = readFileSync(new URL("../../components/adapted-strip.tsx", import.meta.url), "utf8");
-  assert.match(src, /STRIP_DRIFT_START_MS/);
-  assert.match(src, /stripDriftDelta/);
-  assert.match(src, /pointerdown/);
+  const home = readFileSync(new URL("../../routes/index.tsx", import.meta.url), "utf8");
+  const lane = readFileSync(new URL("../../routes/adapted.tsx", import.meta.url), "utf8");
+  const css = readFileSync(new URL("../../styles.css", import.meta.url), "utf8");
+
+  assert.match(src, /to=["']\/adapted["']/);
   assert.match(src, /ADAPTED_WORKS/);
+  assert.doesNotMatch(src, /STRIP_DRIFT|stripDriftDelta|stripItems|adapted-scroller/);
+  assert.doesNotMatch(src, /to=["']\/read\/\$workId["']/);
   assert.doesNotMatch(src, /FEATURED_CAROUSEL|NEXT_FEATURED|CLASSIC_LOCAL_WORKS/);
+  assert.match(home, /<AdaptedStrip \/>/);
+  assert.match(lane, /ADAPTED_WORKS/);
+  assert.match(lane, /to=["']\/read\/\$workId["']/);
+  assert.doesNotMatch(lane, /FEATURED_CAROUSEL|stripDriftDelta|adapted-scroller/);
+  assert.doesNotMatch(css, /\.adapted-scroller/);
 });
 
 test("batch-2 remakes use Mira open-ats, not raw keep-as-is extracts", () => {

@@ -56,6 +56,7 @@ function Home() {
   useEffect(() => {
     void router.preloadRoute({ to: "/login" });
     void router.preloadRoute({ to: "/rituals" });
+    void router.preloadRoute({ to: "/adapted" });
     void router.preloadRoute({ to: "/together" });
     void router.preloadRoute({ to: "/friends" });
     void router.preloadRoute({ to: "/shuffle", search: { together: true } });
