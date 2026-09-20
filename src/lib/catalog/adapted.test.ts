@@ -5,9 +5,10 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import {
   ADAPTED_BY_SALON_IDS,
   curatorialTrack,
+  isAdaptedBySalon,
   NEXT_FEATURED_TRACK_IDS,
 } from "./curatorial.ts";
-import { ADAPTED_WORKS, CLASSIC_LOCAL_WORKS, LOCAL_WORKS } from "./full-pdf.ts";
+import { ADAPTED_WORKS, CLASSIC_LOCAL_WORKS, featuredWorks, LOCAL_WORKS } from "./full-pdf.ts";
 import { RITUAL_LANES, type RitualLane } from "./rituals.ts";
 import { SHELF, shelfWork } from "./shelf.ts";
 import { isBoundLocal } from "./en-rights.ts";
@@ -223,6 +224,14 @@ test("classic Miss Brill collection stays on the shelf beside the remake", () =>
   assert.equal(remake!.title, "Katherine Mansfield, Miss Brill recast");
 });
 
+test("homepage Featured rail is the locked five-title recommend order", () => {
+  assert.deepEqual(
+    featuredWorks().map((item) => item.id),
+    [...FEATURED_CAROUSEL_IDS],
+  );
+  assert.equal(featuredWorks().every((item) => !isAdaptedBySalon(item.id)), true);
+});
+
 test("homepage classics strip does not mix in Adapted remakes", () => {
   const adapted = new Set<string>(ADAPTED_BY_SALON_IDS);
   assert.deepEqual(
@@ -250,6 +259,7 @@ test("homepage Adapted surface is a gateway, not a drifting remake strip", () =>
   assert.doesNotMatch(src, /STRIP_DRIFT|stripDriftDelta|stripItems|adapted-scroller/);
   assert.doesNotMatch(src, /to=["']\/read\/\$workId["']/);
   assert.doesNotMatch(src, /FEATURED_CAROUSEL|NEXT_FEATURED|CLASSIC_LOCAL_WORKS/);
+  assert.match(home, /<FeaturedStrip \/>/);
   assert.match(home, /<AdaptedStrip \/>/);
   assert.match(lane, /ADAPTED_WORKS/);
   assert.match(lane, /to=["']\/read\/\$workId["']/);

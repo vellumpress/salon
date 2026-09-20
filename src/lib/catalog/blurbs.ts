@@ -25,6 +25,10 @@ const BLURBS: Record<string, string> = {
     "Larsen’s two women, one secret, and the color line drawn through friendship.",
   quicksand:
     "Eight in the evening in Naxos: Helga Crane sits alone and will not open the door.",
+  "enchanted-april":
+    "February rain on Shaftesbury Avenue: Mrs. Wilkins finds a Times notice for an Italian castle to let for April.",
+  "mr-fortunes-maggot":
+    "One convert in three years on Fanua—and the Reverend Timothy Fortune is not flustered.",
   "attendants-confession":
     "A marked man offers a human document—and asks you not to publish it until he’s dead.",
   rashomon:

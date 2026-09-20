@@ -1,5 +1,6 @@
 import { ADAPTED_BY_SALON_IDS, isAdaptedBySalon } from "./curatorial.ts";
 import { isBoundLocal, isBoundReadable, isEnReadableOff } from "./en-rights.ts";
+import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import { SHELF, shelfWork, type ShelfWork } from "./shelf.ts";
 
 /** True when the app can open the complete work (local bound text or Gutenberg full text). */
@@ -40,3 +41,11 @@ export const ADAPTED_WORKS: ShelfWork[] = ADAPTED_BY_SALON_IDS.flatMap((id) => {
   const work = shelfWork(id);
   return work && isBoundLocal(work) ? [work] : [];
 });
+
+/** Locked Featured recommend order — only locally bound sits. */
+export function featuredWorks(): ShelfWork[] {
+  return FEATURED_CAROUSEL_IDS.flatMap((id) => {
+    const work = shelfWork(id);
+    return work && isBoundLocal(work) ? [work] : [];
+  });
+}

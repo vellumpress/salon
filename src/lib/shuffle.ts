@@ -1,5 +1,6 @@
 import { SHELF, shelfWork } from "./catalog/shelf";
 import { LOCAL_WORKS } from "./catalog/full-pdf";
+import { FEATURED_CAROUSEL_IDS } from "./catalog/pitches";
 
 export function searchFlag(value: unknown): boolean {
   return value === true || value === 1 || value === "1" || value === "true";
@@ -29,9 +30,11 @@ export function pickShuffle(except?: string | null, _sitting: SittingLength = 20
           return words.some((word) => blob.includes(word));
         })
       : [];
-  const pickFrom = liked.length > 0 ? liked : source;
+  const featured = FEATURED_CAROUSEL_IDS.filter((id) => source.includes(id));
+  const pickFrom =
+    liked.length > 0 ? liked : featured.length > 0 ? featured : source;
   const next = pickFrom[Math.floor(Math.random() * pickFrom.length)];
-  return next ?? "passing";
+  return next ?? featured[0] ?? "passing";
 }
 
 export function makePair() {

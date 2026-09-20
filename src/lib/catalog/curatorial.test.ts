@@ -11,9 +11,14 @@ import { RITUAL_LANES } from "./rituals.ts";
 import { SHELF } from "./shelf.ts";
 import { isBoundLocal } from "./en-rights.ts";
 
-test("Featured carousel is unchanged and does not include Quicksand", () => {
-  assert.ok(FEATURED_CAROUSEL_IDS.includes("passing"));
-  assert.equal(FEATURED_CAROUSEL_IDS.includes("quicksand"), false);
+test("Featured carousel is April, Bridge, Maggot, then Mirth, then Quicksand", () => {
+  assert.deepEqual(FEATURED_CAROUSEL_IDS, [
+    "enchanted-april",
+    "the-bridge-of-san-luis-rey",
+    "mr-fortunes-maggot",
+    "the-house-of-mirth",
+    "quicksand",
+  ]);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("attendants-confession"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("rashomon"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("high-wind-jamaica"), false);
@@ -30,12 +35,15 @@ test("Featured carousel is unchanged and does not include Quicksand", () => {
   assert.equal(FEATURED_CAROUSEL_IDS.includes("late-season"), false);
   for (const id of FEATURED_CAROUSEL_IDS) {
     assert.equal(curatorialTrack(id), "featured", id);
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
   }
 });
 
-test("Quicksand is Next Featured-track", () => {
+test("Next Featured-track no longer lists Mirth or Quicksand", () => {
   assert.deepEqual([...NEXT_FEATURED_TRACK_IDS], [
-    "quicksand",
     "attendants-confession",
     "rashomon",
     "high-wind-jamaica",
@@ -45,7 +53,10 @@ test("Quicksand is Next Featured-track", () => {
     "futility",
     "trooper-peter-halket",
   ]);
-  assert.equal(curatorialTrack("quicksand"), "next");
+  assert.equal(curatorialTrack("quicksand"), "featured");
+  assert.equal(curatorialTrack("the-house-of-mirth"), "featured");
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("quicksand"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-house-of-mirth"), false);
   assert.equal(curatorialTrack("attendants-confession"), "next");
   assert.equal(curatorialTrack("rashomon"), "next");
   assert.equal(curatorialTrack("high-wind-jamaica"), "next");
@@ -55,7 +66,6 @@ test("Quicksand is Next Featured-track", () => {
   assert.equal(curatorialTrack("futility"), "next");
   assert.equal(curatorialTrack("trooper-peter-halket"), "next");
   assert.equal(curatorialTrack("poison-tree"), "later");
-  assert.equal(curatorialTrack("the-house-of-mirth"), "later");
 });
 
 test("Quicksand is a local before-sleep bind with no Gutenberg id", () => {
@@ -97,8 +107,8 @@ test("Adapted by Salon remakes are their own track — never Featured or Next", 
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
   }
-  assert.equal(curatorialTrack("passing"), "featured");
-  assert.equal(curatorialTrack("quicksand"), "next");
+  assert.equal(curatorialTrack("enchanted-april"), "featured");
+  assert.equal(curatorialTrack("quicksand"), "featured");
   const garden = SHELF.find((item) => item.id === "the-garden-party-and-other-stories");
   assert.ok(garden);
   assert.equal(garden!.title.startsWith("The Garden Party"), true);
@@ -280,4 +290,43 @@ test("Trooper Peter Halket is a local before-sleep bind on Next Featured-track",
   assert.ok(stub);
   assert.equal(stub.local, undefined);
   assert.notEqual(stub.id, work.id);
+});
+
+test("Enchanted April is a local waking bind on Featured", () => {
+  const work = SHELF.find((item) => item.id === "enchanted-april");
+  assert.ok(work);
+  assert.equal(work.year, 1922);
+  assert.equal(work.title, "The Enchanted April");
+  assert.equal(work.author, "Elizabeth von Arnim");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 16389);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^It began in a Woman/);
+  const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
+  assert.ok(lane?.workIds.includes("enchanted-april"));
+  assert.equal(curatorialTrack("enchanted-april"), "featured");
+});
+
+test("Mr. Fortune’s Maggot is a local unwind bind on Featured", () => {
+  const work = SHELF.find((item) => item.id === "mr-fortunes-maggot");
+  assert.ok(work);
+  assert.equal(work.year, 1927);
+  assert.equal(work.title, "Mr. Fortune’s Maggot");
+  assert.equal(work.author, "Sylvia Townsend Warner");
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 79534);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^Though the Reverend Timothy Fortune/);
+  const lane = RITUAL_LANES.find((item) => item.id === "unwind");
+  assert.ok(lane?.workIds.includes("mr-fortunes-maggot"));
+  assert.equal(curatorialTrack("mr-fortunes-maggot"), "featured");
+});
+
+test("House of Mirth stays on unwind and is Featured, not Next", () => {
+  const work = SHELF.find((item) => item.id === "the-house-of-mirth");
+  assert.ok(work);
+  assert.equal(work.local, true);
+  assert.equal(curatorialTrack("the-house-of-mirth"), "featured");
+  const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
+  assert.ok(unwind?.workIds.includes("the-house-of-mirth"));
 });

@@ -116,6 +116,12 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Teasdale’s grief poems that still catch the light. Flame, shadow, and the after-image of someone who won’t walk back through the door.",
   passing:
     `Irene Redfield sorts her morning mail in Harlem and finds a thin envelope in purple ink—no return address, a hand she knows at once. Clare Kendry, the childhood friend who slipped into another world, is writing again. Nella Larsen’s 1929 New York novel opens on that letter, still unopened, and the careful life it threatens to unsettle.`,
+  "enchanted-april":
+    `February rain on Shaftesbury Avenue. An uncomfortable club. Mrs. Wilkins, down from Hampstead to shop, picks up The Times and lets her eye drift the Agony Column—until one notice catches: wistaria and sunshine, a small mediaeval Italian castle to let for April, servants included.`,
+  "mr-fortunes-maggot":
+    `One convert in three years on Fanua—and the Reverend Timothy Fortune is not flustered. Humility has made him easy-going.`,
+  "the-bridge-of-san-luis-rey":
+    `Five travellers fall from a Peruvian bridge — Wilder asks whether those lives were accident or intention.`,
   quicksand:
     `Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door. Quicksand begins in intentional isolation after a taxing day among an unkind faculty. Nella Larsen’s 1928 novel is a character study with Copenhagen ahead — stop before the observer portrait.`,
   "attendants-confession":
@@ -139,7 +145,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":
-    `Grand Central, a Monday in early September—the afternoon rush, the heat, the crowd. Lawrence Selden notices Lily Bart standing apart from it all, vivid against the dull tints of the station. Edith Wharton’s 1905 New York novel begins with a missed train, a cup of tea, and a chance meeting that doesn’t feel accidental.`,
+    `Grand Central, a Monday in early September—the afternoon rush, the heat, the crowd. Lawrence Selden notices Lily Bart standing apart from it all, vivid against the dull tints of the station. Edith Wharton’s 1905 New York novel begins with a chance meeting that doesn’t feel accidental.`,
   carmilla:
     `A lonely schloss in Styria. A teenage narrator with too few neighbors. And a childhood night she still can’t forget—a pretty face at the bedside, then a pain like needles. Sheridan Le Fanu’s gothic novella (serialized 1871–72; collected 1872) opens on solitude and that first fright, before any carriage has rolled in.`,
   "hungry-hearts":
@@ -201,6 +207,7 @@ export const RITUAL_LANES: RitualLane[] = [
     id: "waking-up",
     label: "Waking up",
     workIds: [
+      "enchanted-april",
       "on-a-chinese-screen",
       "futility",
       "the-rubaiyat-of-omar-khayyam",
@@ -217,6 +224,9 @@ export const RITUAL_LANES: RitualLane[] = [
     label: "Unwind",
     hint: "De-stress",
     workIds: [
+      "the-house-of-mirth",
+      "mr-fortunes-maggot",
+      "the-bridge-of-san-luis-rey",
       "poison-tree",
       "noli-me-tangere",
       "gitanjali",
@@ -281,6 +291,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-weary-blues": 5,
   "kwaidan-stories-and-studies-of-strange-things": 5,
   "the-house-of-mirth": 5,
+  "enchanted-april": 5,
+  "mr-fortunes-maggot": 5,
+  "the-bridge-of-san-luis-rey": 8,
   "carmilla": 5,
   "hungry-hearts": 6,
   "in-our-time": 9,

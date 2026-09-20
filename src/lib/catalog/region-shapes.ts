@@ -62,7 +62,8 @@ export type PlaceRegion =
   | "by"
   | "ps"
   | "il"
-  | "gh";
+  | "gh"
+  | "ws";
 
 export type RegionShape = {
   viewBox: string;
@@ -306,6 +307,10 @@ export const REGION_SHAPES: Record<PlaceRegion, RegionShape> = {
     viewBox: "0 0 24 22",
     d: "M4.6 4.8 13.2 3.6 19.4 6.2 20.2 12.4 17.6 17.8 10.4 18.6 5.2 15.2 4.2 9.4Z",
   },
+  ws: {
+    viewBox: "0 0 28 20",
+    d: "M3.8 7.6 8.6 5.8 11.2 8.8 7.4 11.2 4.2 10.2ZM13.6 6.4 19.4 4.8 22.6 8.2 18.2 11.4 14.2 9.6ZM10.4 13.2 15.6 12.2 17.4 16.2 12.8 17.8 9.6 15.8Z",
+  },
 };
 
 /** Quiet Mondrian accent when the chip sits on paper / yellow. */
@@ -369,4 +374,5 @@ export const REGION_TONE: Record<PlaceRegion, "ink" | "red" | "blue" | "forest">
   ps: "forest",
   il: "blue",
   gh: "forest",
+  ws: "blue",
 };

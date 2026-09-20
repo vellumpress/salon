@@ -20,6 +20,9 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "poison-tree": { label: "Bengal", region: "in" },
     "trooper-peter-halket": { label: "Mashonaland", region: "za" },
     botchan: { label: "Tokyo", region: "jp" },
+    "enchanted-april": { label: "Italy", region: "it" },
+    "the-bridge-of-san-luis-rey": { label: "Peru", region: "pe" },
+    "mr-fortunes-maggot": { label: "Fanua", region: "ws" },
     "the-house-of-mirth": { label: "New York", region: "us" },
     silhouettes: { label: "Dieppe", region: "fr" },
     "a-room-with-a-view": { label: "Florence", region: "it" },
@@ -63,8 +66,14 @@ test("Featured, Next, and ritual-lane works all resolve a place with a silhouett
   }
   assert.deepEqual(missing, [], `missing place: ${missing.join("; ")}`);
   assert.deepEqual(shapeless, [], `no silhouette: ${shapeless.join("; ")}`);
-  assert.ok(FEATURED_CAROUSEL_IDS.length > 0);
-  assert.ok(NEXT_FEATURED_TRACK_IDS.includes("quicksand"));
+  assert.deepEqual(FEATURED_CAROUSEL_IDS, [
+    "enchanted-april",
+    "the-bridge-of-san-luis-rey",
+    "mr-fortunes-maggot",
+    "the-house-of-mirth",
+    "quicksand",
+  ]);
+  assert.equal(NEXT_FEATURED_TRACK_IDS.includes("quicksand"), false);
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("attendants-confession"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("rashomon"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("high-wind-jamaica"));

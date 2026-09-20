@@ -3,6 +3,7 @@ import { useEffect, useMemo } from "react";
 import { ResumeLink, useLastRead } from "@/components/resume-link";
 import { YouFriendsMark } from "@/components/you-friends-mark";
 import { AdaptedStrip } from "@/components/adapted-strip";
+import { FeaturedStrip } from "@/components/featured-strip";
 import { WorksStrip } from "@/components/works-strip";
 import {
   ShelfSearchBar,
@@ -138,6 +139,7 @@ function Home() {
             );
           })}
 
+          <FeaturedStrip />
           <AdaptedStrip />
           <WorksStrip />
         </>
