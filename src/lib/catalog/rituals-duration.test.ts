@@ -97,3 +97,15 @@ test("Quicksand before-sleep sit is a short evening room, not the whole novel", 
   assert.equal(estimateRitualMinutes(item), 5);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
+
+test("The Attendant’s Confession before-sleep sit is the human document, not the whole story", () => {
+  const item = work({
+    id: "attendants-confession",
+    form: "other",
+    breaths: 248,
+    minutes: 31,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});

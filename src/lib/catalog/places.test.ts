@@ -10,6 +10,7 @@ import { placeFor, placeForId, surfacedPlaceWorkIds } from "./places.ts";
 test("named settings keep reader-friendly labels and real regions", () => {
   const expect = {
     quicksand: { label: "Naxos / South", region: "us-south" },
+    "attendants-confession": { label: "Brazil", region: "br" },
     botchan: { label: "Tokyo", region: "jp" },
     "the-house-of-mirth": { label: "New York", region: "us" },
     silhouettes: { label: "Dieppe", region: "fr" },
@@ -42,6 +43,7 @@ test("Featured, Next, and ritual-lane works all resolve a place with a silhouett
   assert.deepEqual(shapeless, [], `no silhouette: ${shapeless.join("; ")}`);
   assert.ok(FEATURED_CAROUSEL_IDS.length > 0);
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("quicksand"));
+  assert.ok(NEXT_FEATURED_TRACK_IDS.includes("attendants-confession"));
   assert.ok(RITUAL_LANES.some((lane) => lane.workIds.includes("silhouettes")));
 });
 

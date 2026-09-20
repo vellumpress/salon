@@ -50,6 +50,13 @@ test("Quicksand uses the before-sleep closed-door sit, not Featured carousel cop
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright/i);
 });
 
+test("The Attendant’s Confession uses the before-sleep human-document sit", () => {
+  const copy = readerIntro(shelfAsWork("attendants-confession"));
+  assert.match(copy, /human document/);
+  assert.match(copy, /smells of the grave/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Mogul/i);
+});
+
 test("uses Featured before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),

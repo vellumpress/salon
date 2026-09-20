@@ -25,6 +25,8 @@ const BLURBS: Record<string, string> = {
     "Larsen’s two women, one secret, and the color line drawn through friendship.",
   quicksand:
     "Eight in the evening in Naxos: Helga Crane sits alone and will not open the door.",
+  "attendants-confession":
+    "A marked man offers a human document—and asks you not to publish it until he’s dead.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:

@@ -64,6 +64,22 @@ export const SHELF: ShelfWork[] = [
   { id: "niels", title: "Niels Lyhne", author: "Jens Peter Jacobsen", year: 1880, form: "novel", language: "Danish", minutes: 160, gutenberg: 55389 },
   { id: "malavoglia", title: "I Malavoglia", author: "Giovanni Verga", year: 1881, form: "novel", language: "Italian", minutes: 160, gutenberg: 54684 },
   { id: "cubas", title: "The Posthumous Memoirs of Brás Cubas", author: "Machado de Assis", year: 1881, form: "novel", language: "Portuguese", minutes: 160 },
+  {
+    id: "attendants-confession",
+    title: "The Attendant’s Confession (from Brazilian Tales)",
+    author: "Machado de Assis",
+    year: 1881,
+    form: "other",
+    language: "English",
+    minutes: 31,
+    local: true,
+    gutenberg: 21040,
+    opening:
+      "So it really seems to you that what happened to me in 1860 is worth while writing down?",
+    breaths: 248,
+    intro:
+      "A marked man offers a human document—and asks you not to publish it until he’s dead. Machado’s attendant begins in confidence and already smells of the grave.",
+  },
   { id: "anandamath", title: "Anandamath", author: "Bankim Chandra Chatterjee", year: 1882, form: "novel", language: "Bengali", minutes: 160 },
   { id: "cecilia", title: "Cecilia Valdés", author: "Cirilo Villaverde", year: 1882, form: "novel", language: "Spanish", minutes: 160, gutenberg: 28281 },
   { id: "african-farm", title: "The Story of an African Farm", author: "Olive Schreiner", year: 1883, form: "novel", language: "English", local: true, opening: "THE STORY OF AN AFRICAN FARM", breaths: 6193, minutes: 774, gutenberg: 1441 },
