@@ -43,6 +43,10 @@ const FULL_NOVEL_NO_STUB = [
   "steppenwolf",
   "shadowings",
   "brazilian-tales",
+  "nacha-regules",
+  "krakatit",
+  "the-peasants",
+  "cane",
 ] as const;
 
 const FULL_NOVEL_NO_STUB_SET = new Set<string>(FULL_NOVEL_NO_STUB);
@@ -151,6 +155,10 @@ test("known origin overrides", () => {
     futility: "United Kingdom",
     "poison-tree": "India",
     "trooper-peter-halket": "South Africa",
+    "nacha-regules": "Argentina",
+    krakatit: "Czechia",
+    "the-peasants": "Poland",
+    cane: "United States",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);
@@ -349,6 +357,22 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     harmonium: {
       scene: /The Snow Man/i,
       opening: /^One must have a mind of winter/,
+    },
+    "nacha-regules": {
+      scene: /Chapter I/i,
+      opening: /^An August night! Hot with the fever of her adolescence as a national capital, Buenos Aires was ablaze/,
+    },
+    krakatit: {
+      scene: /Chapter I/i,
+      opening: /^With the evening the fog of the cold, damp day grew thicker/,
+    },
+    "the-peasants": {
+      scene: /Chapter I/i,
+      opening: /Praised be Jesus Christ!/,
+    },
+    cane: {
+      scene: /Karintha/i,
+      opening: /^Her skin is like dusk on the eastern horizon/,
     },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
@@ -1270,6 +1294,50 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       scenes: 6,
       last: /poor verses/,
     },
+    "nacha-regules": {
+      gutenberg: 59441,
+      title: "Nacha Regules",
+      author: "Manuel Gálvez",
+      year: 1922,
+      opening: /^An August night! Hot with the fever of her adolescence as a national capital, Buenos Aires was ablaze/,
+      breaths: 1252,
+      scenes: 25,
+      last: /^THE END$/,
+      intro: /mandola/,
+    },
+    krakatit: {
+      gutenberg: 79127,
+      title: "Krakatit",
+      author: "Karel Čapek",
+      year: 1924,
+      opening: /^With the evening the fog of the cold, damp day grew thicker/,
+      breaths: 1887,
+      scenes: 54,
+      last: /sweet and healing sleep/,
+      intro: /penetrating eyes/,
+    },
+    "the-peasants": {
+      gutenberg: 75846,
+      title: "The Peasants",
+      author: "Władysław Reymont",
+      year: 1904,
+      opening: /Praised be Jesus Christ!/,
+      breaths: 2772,
+      scenes: 12,
+      last: /END OF PART I/,
+      intro: /Agatha/,
+    },
+    cane: {
+      gutenberg: 60093,
+      title: "Cane",
+      author: "Jean Toomer",
+      year: 1923,
+      opening: /^Her skin is like dusk on the eastern horizon/,
+      breaths: 909,
+      scenes: 29,
+      last: /^THE END$/,
+      intro: /Karintha/,
+    },
   } as const;
 
   assert.deepEqual([...FULL_NOVEL_NO_STUB].sort(), Object.keys(expect).sort());
@@ -1353,6 +1421,69 @@ test("The Cherry Orchard is a readable four-act play, not one breath per page", 
   const joined = packed.breaths.map((breath) => breath.text).join(" ");
   assert.doesNotMatch(joined, /project gutenberg|transcriber|table of contents/i);
   assert.equal(packed.breaths.at(-1)?.text, "Curtain.");
+});
+
+test("Mira FULL-TEXT CLEAR ×4 are stamped local binds with no opening stubs", () => {
+  const expect = {
+    "nacha-regules": {
+      gutenberg: 59441,
+      scenes: 25,
+      breaths: 1252,
+      last: /^THE END$/,
+      opening: /^An August night! Hot with the fever of her adolescence as a national capital, Buenos Aires was ablaze/,
+    },
+    krakatit: {
+      gutenberg: 79127,
+      scenes: 54,
+      breaths: 1887,
+      last: /sweet and healing sleep/,
+      opening: /^With the evening the fog of the cold, damp day grew thicker/,
+    },
+    "the-peasants": {
+      gutenberg: 75846,
+      scenes: 12,
+      breaths: 2772,
+      last: /END OF PART I/,
+      opening: /Praised be Jesus Christ!/
+    },
+    cane: {
+      gutenberg: 60093,
+      scenes: 29,
+      breaths: 909,
+      last: /^THE END$/,
+      opening: /^Her skin is like dusk on the eastern horizon/,
+    },
+  } as const;
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.match(work!.opening ?? "", want.opening, id);
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: { title: string }[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.equal(work!.breaths, full.breaths.length, id);
+    assert.ok(full.breaths.length > 20, `${id} reads past a short open`);
+    assert.match(full.breaths[0]?.text ?? "", want.opening, id);
+    assert.match(full.breaths.at(-1)?.text ?? "", want.last, id);
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /Featured/i, id);
+    if (id === "cane") {
+      assert.doesNotMatch(
+        full.breaths.slice(0, 20).map((breath) => breath.text).join(" "),
+        /Waldo Frank|FOREWORD/i,
+      );
+      assert.match(full.scenes[0]?.title ?? "", /Karintha/i);
+    }
+    if (id === "nacha-regules") {
+      assert.doesNotMatch(full.breaths[0]?.text ?? "", /^Nacha!/);
+    }
+  }
 });
 
 test("Mira FULL-TEXT CLEAR ×7 are stamped local binds with no opening stubs", () => {

@@ -211,6 +211,14 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `A drunk battery on a dark road—then a Michigan lake at dawn, and Nick Adams in a rowboat with his father. Ernest Hemingway’s 1925 American collection opens with a war vignette snapped against “Indian Camp”: spare sentences, long silences, the method already underway.`,
   botchan:
     `A Tokyo kid who cannot fake manners jumps from a school window on a dare, then takes a knife to his own thumb to prove the blade is sharp. Natsume Sōseki’s 1906 novel opens on that hereditary recklessness — and the scar that will be there until his death.`,
+  "nacha-regules":
+    "An August night — Buenos Aires ablaze for her adolescence as a capital — and the mandola underlines the tangos with long shadows of pain. First sit stops there; do not jump to the first Nacha. The novel continues.",
+  krakatit:
+    "With the evening the fog of the cold, damp day grew thicker on the Old Town embankment — then suddenly a pair of penetrating eyes fixed on him. Stop before the Krakatit-box densifies. The novel continues.",
+  "the-peasants":
+    "Praised be Jesus Christ! — Agatha and the priest on the roadside, then out into the wide world across bare autumnal fields. Winter is coming. First sit is that Chapter I greeting; the Autumn volume continues.",
+  cane:
+    "Karintha: her skin is like dusk on the eastern horizon. Skip Waldo Frank’s foreword. First sit ends on the dusk-song refrain; the Georgia cycle continues.",
 
 };
 
@@ -233,7 +241,7 @@ export const RITUAL_LANES: RitualLane[] = [
     id: FOR_YOU_LANE_ID,
     label: "For you",
     hint: "First sitting",
-    workIds: [...FIRST_SESSION_RITUAL_IDS],
+    workIds: [...FIRST_SESSION_RITUAL_IDS, "cane"],
   },
   {
     id: SERIALIZE_LANE_ID,
@@ -284,6 +292,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "gitanjali",
       "martin-bircks-youth",
       "harmonium",
+      "krakatit",
+      "cane",
       "the-pattern",
       "between-the-drop-and-the-water",
       "story-of-an-hour-buenos-aires",
@@ -318,6 +328,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "we",
       "death-comes-for-the-archbishop",
       "the-getting-of-wisdom",
+      "the-peasants",
       "the-rubaiyat-of-omar-khayyam",
       "spring-and-all",
       "a-few-figs-from-thistles",
@@ -348,6 +359,7 @@ export const RITUAL_LANES: RitualLane[] = [
       // agony-column Host sit is backup only — do not invent a second work id.
       "poison-tree",
       "noli-me-tangere",
+      "nacha-regules",
       "songs-of-kabir",
       "pictures-of-the-floating-world",
       "silhouettes",
@@ -451,6 +463,10 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   gitanjali: 2,
   "martin-bircks-youth": 2,
   harmonium: 2,
+  "nacha-regules": 2,
+  krakatit: 2,
+  "the-peasants": 2,
+  cane: 2,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

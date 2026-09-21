@@ -365,7 +365,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Machado de Assis, Coelho Netto, Medeiros e Albuquerque, Carmen Dolores (tr. Isaac Goldberg)",
   ],
   Mexico: ["Federico Gamboa", "Mariano Azuela"],
-  Argentina: ["José Hernández", "Roberto Arlt", "Ricardo Güiraldes"],
+  Argentina: ["José Hernández", "Roberto Arlt", "Ricardo Güiraldes", "Manuel Gálvez"],
   Philippines: ["José Rizal", "José Rizal (tr. Charles Derbyshire)"],
   India: [
     "Bankim Chandra Chatterjee",
@@ -517,6 +517,9 @@ const WORK_COUNTRY: Record<string, string> = {
   rur: "Czechia",
   underdogs: "Mexico",
   madmen: "Argentina",
+  "nacha-regules": "Argentina",
+  krakatit: "Czechia",
+  cane: "United States",
   naomi: "Japan",
   odessa: "Ukraine",
   we: "Russia",
