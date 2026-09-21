@@ -44,9 +44,9 @@ const FULL_NOVEL_NO_STUB = [
   "shadowings",
   "brazilian-tales",
   "nacha-regules",
-  krakatit,
+  "krakatit",
   "the-peasants",
-  cane,
+  "cane",
 ] as const;
 
 const FULL_NOVEL_NO_STUB_SET = new Set<string>(FULL_NOVEL_NO_STUB);
