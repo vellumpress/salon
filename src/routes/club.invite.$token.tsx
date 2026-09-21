@@ -12,6 +12,7 @@ import {
 } from "@/lib/clubs";
 import { asInviteToken, formatClubWhenLong } from "@/lib/club-time";
 import { serializeClubReadSearch } from "@/lib/catalog/serialize";
+import { salonShareText, salonShareTitle } from "@/lib/site";
 
 export const Route = createFileRoute("/club/invite/$token")({
   component: InviteLanding,
@@ -107,8 +108,8 @@ function InviteLanding() {
 
   async function share() {
     const result = await shareOrCopy({
-      title: club.name,
-      text: when ? `${club.name} — ${when}` : club.name,
+      title: salonShareTitle(club.name),
+      text: salonShareText(when ? `${club.name} — ${when}` : club.name),
       url: clubInviteUrl(club.inviteToken),
     });
     if (result === "copied") {

@@ -1,6 +1,7 @@
 import type { Fill } from "./mondrian.ts";
 import { fillOf } from "./mondrian.ts";
 import { clipLine } from "./share-codec.ts";
+import { publicUrl } from "./site.ts";
 
 export const CARD_WIDTH = 1080;
 export const CARD_HEIGHT = 1350;
@@ -40,7 +41,7 @@ export function cardReadPath(input: { workId: string; at?: number }): string {
 }
 
 export function cardReadUrl(input: { workId: string; at?: number }): string {
-  return cardReadPath(input);
+  return publicUrl(cardReadPath(input));
 }
 
 function wrapLines(

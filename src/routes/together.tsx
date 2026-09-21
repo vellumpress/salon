@@ -30,7 +30,7 @@ import {
 } from "@/lib/clubs";
 import { defaultSitClock, etWallToIso, formatClubWhen, formatClubWhenLong } from "@/lib/club-time";
 import { enterClubCompose, exitClubCompose, syncVisualViewport } from "@/lib/vvh";
-import { liveBackendEnabled } from "@/lib/site";
+import { liveBackendEnabled, salonShareText, salonShareTitle } from "@/lib/site";
 import { useShelfSearch } from "@/components/shelf-search";
 import { HostSitForm } from "@/components/host-sit-form";
 import { encodeHostedSit, sitDurationLabel, sitInvolves, sitPhase } from "@/lib/hosted-sit";
@@ -443,8 +443,8 @@ function InviteCard({ club, kicker }: { club: BookClubView; kicker: string }) {
 
   async function share() {
     const result = await shareOrCopy({
-      title: club.name,
-      text: when ? `${club.name} — ${when}` : club.name,
+      title: salonShareTitle(club.name),
+      text: salonShareText(when ? `${club.name} — ${when}` : club.name),
       url: clubInviteUrl(club.inviteToken),
     });
     if (result === "copied") {

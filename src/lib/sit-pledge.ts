@@ -1,4 +1,5 @@
 import { clipLine, decodeShare, encodeShare, makeShortId } from "./share-codec.ts";
+import { publicUrl } from "./site.ts";
 import { formatHandle, normalizeHandle } from "./social.ts";
 
 export type EveningWindow = "tonight" | "early" | "late";
@@ -150,7 +151,7 @@ export function sitPledgePath(pledge: SitPledge): string {
 }
 
 export function sitPledgeUrl(pledge: SitPledge): string {
-  return sitPledgePath(pledge);
+  return publicUrl(sitPledgePath(pledge));
 }
 
 export function setPledgeStatus(pledge: SitPledge, status: SitPledgeStatus): SitPledge {

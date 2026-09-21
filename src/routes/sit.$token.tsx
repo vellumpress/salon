@@ -11,7 +11,7 @@ import {
   sitPhase,
 } from "@/lib/hosted-sit";
 import { asShareToken } from "@/lib/share-codec";
-import { publicUrl } from "@/lib/site";
+import { salonShareText, salonShareTitle } from "@/lib/site";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { shareOrCopy } from "@/lib/shuffle";
 import { fillClass, fillInk, planeOf } from "@/lib/mondrian";
@@ -89,9 +89,11 @@ function HostedSitPage() {
 
   async function share() {
     const result = await shareOrCopy({
-      title: room.workTitle,
-      text: `${room.hostName} is hosting ${sitDurationLabel(room.minutes)} with ${room.workTitle}.`,
-      url: publicUrl(hostedSitUrl(room)),
+      title: salonShareTitle(room.workTitle),
+      text: salonShareText(
+        `${room.hostName} is hosting ${sitDurationLabel(room.minutes)} with ${room.workTitle}.`,
+      ),
+      url: hostedSitUrl(room),
     });
     if (result === "copied" || result === "shared") {
       setCopied(true);

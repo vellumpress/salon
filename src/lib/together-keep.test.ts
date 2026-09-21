@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   decodeEchoInvite,
+  echoInviteUrl,
   encodeEchoInvite,
   findEchoBreath,
   pairTogetherKeep,
@@ -30,6 +31,18 @@ test("echo invite encodes a friend's kept line", () => {
   assert.equal(invite.workId, "passing");
   assert.equal(invite.at, 1);
   assert.equal(invite.breathId, "s0-1");
+  const prev = (globalThis as { window?: unknown }).window;
+  (globalThis as { window: { location: { origin: string } } }).window = {
+    location: { origin: "https://vellumpress.github.io" },
+  };
+  try {
+    const url = echoInviteUrl(invite);
+    assert.match(url, /^https:\/\/vellumpress\.github\.io\/salon\/read\/passing\?/);
+    assert.match(url, /echo=/);
+  } finally {
+    if (prev === undefined) delete (globalThis as { window?: unknown }).window;
+    else (globalThis as { window: unknown }).window = prev;
+  }
 });
 
 test("findEchoBreath prefers the friend's breath, then the line", () => {

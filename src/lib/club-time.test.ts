@@ -6,6 +6,7 @@ import {
   asClubId,
   asInviteToken,
   clubInvitePath,
+  clubInviteUrl,
   clubJoinPath,
   defaultSitClock,
   etWallToIso,
@@ -45,4 +46,20 @@ test("invite tokens and club ids stay strict", () => {
   assert.equal(asClubFill("nope"), "paper");
   assert.equal(clubInvitePath("tok_en-123456"), "/club/invite/tok_en-123456");
   assert.equal(clubJoinPath("tok_en-123456"), "/together?join=tok_en-123456");
+});
+
+test("clubInviteUrl is an absolute Pages link", () => {
+  const prev = (globalThis as { window?: unknown }).window;
+  (globalThis as { window: { location: { origin: string } } }).window = {
+    location: { origin: "https://vellumpress.github.io" },
+  };
+  try {
+    assert.equal(
+      clubInviteUrl("tok_en-123456"),
+      "https://vellumpress.github.io/salon/club/invite/tok_en-123456",
+    );
+  } finally {
+    if (prev === undefined) delete (globalThis as { window?: unknown }).window;
+    else (globalThis as { window: unknown }).window = prev;
+  }
 });

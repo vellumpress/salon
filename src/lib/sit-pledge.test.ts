@@ -8,6 +8,7 @@ import {
   isPledgePending,
   mergePledge,
   setPledgeStatus,
+  sitPledgeUrl,
   windowHours,
 } from "./sit-pledge.ts";
 
@@ -44,4 +45,25 @@ test("pledge tokens carry done and cancel without guilt fields", () => {
   assert.equal(round?.status, "done");
   const cancelled = mergePledge(done, setPledgeStatus(pledge, "cancelled"));
   assert.equal(cancelled.status, "cancelled");
+});
+
+test("sitPledgeUrl is an absolute Pages invite", () => {
+  const pledge = createSitPledge({
+    fromHandle: "mina",
+    toHandle: "ada",
+    window: "tonight",
+    createdAt: 1_000,
+  });
+  assert.ok(pledge);
+  const prev = (globalThis as { window?: unknown }).window;
+  (globalThis as { window: { location: { origin: string } } }).window = {
+    location: { origin: "https://vellumpress.github.io" },
+  };
+  try {
+    const url = sitPledgeUrl(pledge);
+    assert.match(url, /^https:\/\/vellumpress\.github\.io\/salon\/pledge\//);
+  } finally {
+    if (prev === undefined) delete (globalThis as { window?: unknown }).window;
+    else (globalThis as { window: unknown }).window = prev;
+  }
 });

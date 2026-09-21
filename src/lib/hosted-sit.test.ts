@@ -5,6 +5,7 @@ import {
   createHostedSit,
   decodeHostedSit,
   encodeHostedSit,
+  hostedSitUrl,
   ghostKeeps,
   isSitGhost,
   mergeHostedSit,
@@ -73,4 +74,25 @@ test("mergeHostedSit unions RSVPs and keeps from another phone", () => {
   const merged = mergeHostedSit(rsvpHostedSit(host, { handle: "jules", status: "later" }), guest);
   assert.equal(merged.rsvps[0]?.status, "later");
   assert.equal(merged.keeps.length, 1);
+});
+
+test("hostedSitUrl is an absolute Pages invite", () => {
+  const sit = createHostedSit({
+    hostHandle: "mina",
+    workId: "passing",
+    minutes: 20,
+    createdAt: 1_000,
+  });
+  assert.ok(sit);
+  const prev = (globalThis as { window?: unknown }).window;
+  (globalThis as { window: { location: { origin: string } } }).window = {
+    location: { origin: "https://vellumpress.github.io" },
+  };
+  try {
+    const url = hostedSitUrl(sit);
+    assert.match(url, /^https:\/\/vellumpress\.github\.io\/salon\/sit\//);
+  } finally {
+    if (prev === undefined) delete (globalThis as { window?: unknown }).window;
+    else (globalThis as { window: unknown }).window = prev;
+  }
 });

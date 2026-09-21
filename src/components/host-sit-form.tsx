@@ -4,7 +4,7 @@ import { useShelfSearch } from "@/components/shelf-search";
 import { isLocalBound } from "@/lib/catalog/full-pdf";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { createHostedSit, encodeHostedSit, hostedSitUrl, sitDurationLabel } from "@/lib/hosted-sit";
-import { publicUrl } from "@/lib/site";
+import { salonShareText, salonShareTitle } from "@/lib/site";
 import { fillClass, fillInk, type Fill } from "@/lib/mondrian";
 import { searchPeople } from "@/lib/friends";
 import { formatHandle, normalizeHandle } from "@/lib/social";
@@ -78,9 +78,11 @@ export function HostSitForm({ onClose }: { onClose: () => void }) {
     rememberHostedSit(next);
     setFreshId(next.id);
     const result = await shareOrCopy({
-      title: next.workTitle,
-      text: `${formatHandle(host)} is hosting ${sitDurationLabel(next.minutes)} with ${next.workTitle}.`,
-      url: publicUrl(hostedSitUrl(next)),
+      title: salonShareTitle(next.workTitle),
+      text: salonShareText(
+        `${formatHandle(host)} is hosting ${sitDurationLabel(next.minutes)} with ${next.workTitle}.`,
+      ),
+      url: hostedSitUrl(next),
     });
     if (result === "copied" || result === "shared") {
       setCopied(true);
