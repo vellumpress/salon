@@ -1,1 +1,718 @@
-{"id":"the-wild-swans-at-coole","title":"The Wild Swans at Coole","author":"W. B. Yeats","year":"1919","note":"Yeats at Coole Park: aging, Irish politics, and beauty that will not stay.","minutes":179,"cover":"","coverAlt":"","scenes":[{"id":"s0","title":"The Wild Swans at Coole","place":"The Wild Swans at Coole","reentry":"The trees are in their autumn beauty,","prompt":"What does the poem hold?"},{"id":"s1","title":"In Memory of Major Robert Gregory","place":"In Memory of Major Robert Gregory","reentry":"1","prompt":"What does the poem hold?"}],"breaths":[{"id":"s0-0","sceneId":"s0","text":"The trees are in their autumn beauty,"},{"id":"s0-1","sceneId":"s0","text":"The woodland paths are dry,"},{"id":"s0-2","sceneId":"s0","text":"Under the October twilight the water"},{"id":"s0-3","sceneId":"s0","text":"Mirrors a still sky;"},{"id":"s0-4","sceneId":"s0","text":"Upon the brimming water among the stones"},{"id":"s0-5","sceneId":"s0","text":"Are nine and fifty swans."},{"id":"s0-6","sceneId":"s0","text":"The nineteenth Autumn has come upon me"},{"id":"s0-7","sceneId":"s0","text":"Since I first made my count;"},{"id":"s0-8","sceneId":"s0","text":"I saw, before I had well finished,"},{"id":"s0-9","sceneId":"s0","text":"All suddenly mount"},{"id":"s0-10","sceneId":"s0","text":"And scatter wheeling in great broken rings"},{"id":"s0-11","sceneId":"s0","text":"Upon their clamorous wings."},{"id":"s0-12","sceneId":"s0","text":"I have looked upon those brilliant creatures,"},{"id":"s0-13","sceneId":"s0","text":"And now my heart is sore."},{"id":"s0-14","sceneId":"s0","text":"All's changed since I, hearing at twilight,"},{"id":"s0-15","sceneId":"s0","text":"The first time on this shore,"},{"id":"s0-16","sceneId":"s0","text":"The bell-beat of their wings above my head,"},{"id":"s0-17","sceneId":"s0","text":"Trod with a lighter tread."},{"id":"s0-18","sceneId":"s0","text":"Unwearied still, lover by lover,"},{"id":"s0-19","sceneId":"s0","text":"They paddle in the cold,"},{"id":"s0-20","sceneId":"s0","text":"Companionable streams or climb the air;"},{"id":"s0-21","sceneId":"s0","text":"Their hearts have not grown old;"},{"id":"s0-22","sceneId":"s0","text":"Passion or conquest, wander where they will,"},{"id":"s0-23","sceneId":"s0","text":"Attend upon them still."},{"id":"s0-24","sceneId":"s0","text":"But now they drift on the still water"},{"id":"s0-25","sceneId":"s0","text":"Mysterious, beautiful;"},{"id":"s0-26","sceneId":"s0","text":"Among what rushes will they build,"},{"id":"s0-27","sceneId":"s0","text":"By what lake's edge or pool"},{"id":"s0-28","sceneId":"s0","text":"Delight men's eyes, when I awake some day"},{"id":"s0-29","sceneId":"s0","text":"To find they have flown away?"},{"id":"s1-0","sceneId":"s1","text":"1"},{"id":"s1-1","sceneId":"s1","text":"Now that we're almost settled in our house"},{"id":"s1-2","sceneId":"s1","text":"I'll name the friends that cannot sup with us"},{"id":"s1-3","sceneId":"s1","text":"Beside a fire of turf in the ancient tower,"},{"id":"s1-4","sceneId":"s1","text":"And having talked to some late hour"},{"id":"s1-5","sceneId":"s1","text":"Climb up the narrow winding stair to bed:"},{"id":"s1-6","sceneId":"s1","text":"Discoverers of forgotten truth"},{"id":"s1-7","sceneId":"s1","text":"Or mere companions of my youth,"},{"id":"s1-8","sceneId":"s1","text":"All, all are in my thoughts to-night, being dead."},{"id":"s1-9","sceneId":"s1","text":"2"},{"id":"s1-10","sceneId":"s1","text":"Always we'd have the new friend meet the old,"},{"id":"s1-11","sceneId":"s1","text":"And we are hurt if either friend seem cold,"},{"id":"s1-12","sceneId":"s1","text":"And there is salt to lengthen out the smart"},{"id":"s1-13","sceneId":"s1","text":"In the affections of our heart,"},{"id":"s1-14","sceneId":"s1","text":"And quarrels are blown up upon that head;"},{"id":"s1-15","sceneId":"s1","text":"But not a friend that I would bring"},{"id":"s1-16","sceneId":"s1","text":"This night can set us quarrelling,"},{"id":"s1-17","sceneId":"s1","text":"For all that come into my mind are dead."},{"id":"s1-18","sceneId":"s1","text":"3"},{"id":"s1-19","sceneId":"s1","text":"Lionel Johnson comes the first to mind,"},{"id":"s1-20","sceneId":"s1","text":"That loved his learning better than mankind,"},{"id":"s1-21","sceneId":"s1","text":"Though courteous to the worst; much falling he"},{"id":"s1-22","sceneId":"s1","text":"Brooded upon sanctity"},{"id":"s1-23","sceneId":"s1","text":"Till all his Greek and Latin learning seemed"},{"id":"s1-24","sceneId":"s1","text":"A long blast upon the horn that brought"},{"id":"s1-25","sceneId":"s1","text":"A little nearer to his thought"},{"id":"s1-26","sceneId":"s1","text":"A measureless consummation that he dreamed."},{"id":"s1-27","sceneId":"s1","text":"4"},{"id":"s1-28","sceneId":"s1","text":"And that enquiring man John Synge comes next,"},{"id":"s1-29","sceneId":"s1","text":"That dying chose the living world for text"},{"id":"s1-30","sceneId":"s1","text":"And never could have rested in the tomb"},{"id":"s1-31","sceneId":"s1","text":"But that, long travelling, he had come"},{"id":"s1-32","sceneId":"s1","text":"Towards nightfall upon certain set apart"},{"id":"s1-33","sceneId":"s1","text":"In a most desolate stony place,"},{"id":"s1-34","sceneId":"s1","text":"Towards nightfall upon a race"},{"id":"s1-35","sceneId":"s1","text":"Passionate and simple like his heart."},{"id":"s1-36","sceneId":"s1","text":"5"},{"id":"s1-37","sceneId":"s1","text":"And then I think of old George Pollexfen,"},{"id":"s1-38","sceneId":"s1","text":"In muscular youth well known to Mayo men"},{"id":"s1-39","sceneId":"s1","text":"For horsemanship at meets or at race-courses,"},{"id":"s1-40","sceneId":"s1","text":"That could have shown how purebred horses"},{"id":"s1-41","sceneId":"s1","text":"And solid men, for all their passion, live"},{"id":"s1-42","sceneId":"s1","text":"But as the outrageous stars incline"},{"id":"s1-43","sceneId":"s1","text":"By opposition, square and trine;"},{"id":"s1-44","sceneId":"s1","text":"Having grown sluggish and contemplative."},{"id":"s1-45","sceneId":"s1","text":"6"},{"id":"s1-46","sceneId":"s1","text":"They were my close companions many a year,"},{"id":"s1-47","sceneId":"s1","text":"A portion of my mind and life, as it were,"},{"id":"s1-48","sceneId":"s1","text":"And now their breathless faces seem to look"},{"id":"s1-49","sceneId":"s1","text":"Out of some old picture-book;"},{"id":"s1-50","sceneId":"s1","text":"I am accustomed to their lack of breath,"},{"id":"s1-51","sceneId":"s1","text":"But not that my dear friend's dear son,"},{"id":"s1-52","sceneId":"s1","text":"Our Sidney and our perfect man,"},{"id":"s1-53","sceneId":"s1","text":"Could share in that discourtesy of death."},{"id":"s1-54","sceneId":"s1","text":"7"},{"id":"s1-55","sceneId":"s1","text":"For all things the delighted eye now sees"},{"id":"s1-56","sceneId":"s1","text":"Were loved by him; the old storm-broken trees"},{"id":"s1-57","sceneId":"s1","text":"That cast their shadows upon road and bridge;"},{"id":"s1-58","sceneId":"s1","text":"The tower set on the stream's edge;"},{"id":"s1-59","sceneId":"s1","text":"The ford where drinking cattle make a stir"},{"id":"s1-60","sceneId":"s1","text":"Nightly, and startled by that sound"},{"id":"s1-61","sceneId":"s1","text":"The water-hen must change her ground;"},{"id":"s1-62","sceneId":"s1","text":"He might have been your heartiest welcomer."},{"id":"s1-63","sceneId":"s1","text":"8"}]}
+{
+  "id": "the-wild-swans-at-coole",
+  "title": "The Wild Swans at Coole",
+  "author": "W. B. Yeats",
+  "year": "1919",
+  "note": "Yeats at Coole Park: aging, Irish politics, and beauty that will not stay.",
+  "minutes": 179,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Wild Swans at Coole",
+      "place": "The Wild Swans at Coole",
+      "reentry": "The trees are in their autumn beauty,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "In Memory of Major Robert Gregory",
+      "place": "In Memory of Major Robert Gregory",
+      "reentry": "1",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "The trees are in their autumn beauty,"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "The woodland paths are dry,"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Under the October twilight the water"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Mirrors a still sky;"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Upon the brimming water among the stones"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Are nine and fifty swans."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "The nineteenth Autumn has come upon me"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Since I first made my count;"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "I saw, before I had well finished,"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "All suddenly mount"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "And scatter wheeling in great broken rings"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Upon their clamorous wings."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "I have looked upon those brilliant creatures,"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "And now my heart is sore."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "All's changed since I, hearing at twilight,"
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The first time on this shore,"
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "The bell-beat of their wings above my head,"
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "Trod with a lighter tread."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Unwearied still, lover by lover,"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "They paddle in the cold,"
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Companionable streams or climb the air;"
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Their hearts have not grown old;"
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Passion or conquest, wander where they will,"
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Attend upon them still."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "But now they drift on the still water"
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Mysterious, beautiful;"
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Among what rushes will they build,"
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "By what lake's edge or pool"
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "Delight men's eyes, when I awake some day"
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "To find they have flown away?"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "1"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Now that we're almost settled in our house"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "I'll name the friends that cannot sup with us"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Beside a fire of turf in the ancient tower,"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "And having talked to some late hour"
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Climb up the narrow winding stair to bed:"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Discoverers of forgotten truth"
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Or mere companions of my youth,"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "All, all are in my thoughts to-night, being dead."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "2"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Always we'd have the new friend meet the old,"
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "And we are hurt if either friend seem cold,"
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "And there is salt to lengthen out the smart"
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "In the affections of our heart,"
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "And quarrels are blown up upon that head;"
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "But not a friend that I would bring"
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "This night can set us quarrelling,"
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "For all that come into my mind are dead."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "3"
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "Lionel Johnson comes the first to mind,"
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "That loved his learning better than mankind,"
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "Though courteous to the worst; much falling he"
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "Brooded upon sanctity"
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "Till all his Greek and Latin learning seemed"
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "A long blast upon the horn that brought"
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "A little nearer to his thought"
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "A measureless consummation that he dreamed."
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "4"
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "And that enquiring man John Synge comes next,"
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "That dying chose the living world for text"
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "And never could have rested in the tomb"
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "But that, long travelling, he had come"
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "Towards nightfall upon certain set apart"
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "In a most desolate stony place,"
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "Towards nightfall upon a race"
+    },
+    {
+      "id": "s1-35",
+      "sceneId": "s1",
+      "text": "Passionate and simple like his heart."
+    },
+    {
+      "id": "s1-36",
+      "sceneId": "s1",
+      "text": "5"
+    },
+    {
+      "id": "s1-37",
+      "sceneId": "s1",
+      "text": "And then I think of old George Pollexfen,"
+    },
+    {
+      "id": "s1-38",
+      "sceneId": "s1",
+      "text": "In muscular youth well known to Mayo men"
+    },
+    {
+      "id": "s1-39",
+      "sceneId": "s1",
+      "text": "For horsemanship at meets or at race-courses,"
+    },
+    {
+      "id": "s1-40",
+      "sceneId": "s1",
+      "text": "That could have shown how purebred horses"
+    },
+    {
+      "id": "s1-41",
+      "sceneId": "s1",
+      "text": "And solid men, for all their passion, live"
+    },
+    {
+      "id": "s1-42",
+      "sceneId": "s1",
+      "text": "But as the outrageous stars incline"
+    },
+    {
+      "id": "s1-43",
+      "sceneId": "s1",
+      "text": "By opposition, square and trine;"
+    },
+    {
+      "id": "s1-44",
+      "sceneId": "s1",
+      "text": "Having grown sluggish and contemplative."
+    },
+    {
+      "id": "s1-45",
+      "sceneId": "s1",
+      "text": "6"
+    },
+    {
+      "id": "s1-46",
+      "sceneId": "s1",
+      "text": "They were my close companions many a year,"
+    },
+    {
+      "id": "s1-47",
+      "sceneId": "s1",
+      "text": "A portion of my mind and life, as it were,"
+    },
+    {
+      "id": "s1-48",
+      "sceneId": "s1",
+      "text": "And now their breathless faces seem to look"
+    },
+    {
+      "id": "s1-49",
+      "sceneId": "s1",
+      "text": "Out of some old picture-book;"
+    },
+    {
+      "id": "s1-50",
+      "sceneId": "s1",
+      "text": "I am accustomed to their lack of breath,"
+    },
+    {
+      "id": "s1-51",
+      "sceneId": "s1",
+      "text": "But not that my dear friend's dear son,"
+    },
+    {
+      "id": "s1-52",
+      "sceneId": "s1",
+      "text": "Our Sidney and our perfect man,"
+    },
+    {
+      "id": "s1-53",
+      "sceneId": "s1",
+      "text": "Could share in that discourtesy of death."
+    },
+    {
+      "id": "s1-54",
+      "sceneId": "s1",
+      "text": "7"
+    },
+    {
+      "id": "s1-55",
+      "sceneId": "s1",
+      "text": "For all things the delighted eye now sees"
+    },
+    {
+      "id": "s1-56",
+      "sceneId": "s1",
+      "text": "Were loved by him; the old storm-broken trees"
+    },
+    {
+      "id": "s1-57",
+      "sceneId": "s1",
+      "text": "That cast their shadows upon road and bridge;"
+    },
+    {
+      "id": "s1-58",
+      "sceneId": "s1",
+      "text": "The tower set on the stream's edge;"
+    },
+    {
+      "id": "s1-59",
+      "sceneId": "s1",
+      "text": "The ford where drinking cattle make a stir"
+    },
+    {
+      "id": "s1-60",
+      "sceneId": "s1",
+      "text": "Nightly, and startled by that sound"
+    },
+    {
+      "id": "s1-61",
+      "sceneId": "s1",
+      "text": "The water-hen must change her ground;"
+    },
+    {
+      "id": "s1-62",
+      "sceneId": "s1",
+      "text": "He might have been your heartiest welcomer."
+    },
+    {
+      "id": "s1-63",
+      "sceneId": "s1",
+      "text": "8"
+    },
+    {
+      "id": "s1-64",
+      "sceneId": "s1",
+      "text": "When with the Galway foxhounds he would ride"
+    },
+    {
+      "id": "s1-65",
+      "sceneId": "s1",
+      "text": "From Castle Taylor to the Roxborough side"
+    },
+    {
+      "id": "s1-66",
+      "sceneId": "s1",
+      "text": "Or Esserkelly plain, few kept his pace;"
+    },
+    {
+      "id": "s1-67",
+      "sceneId": "s1",
+      "text": "At Mooneen he had leaped a place"
+    },
+    {
+      "id": "s1-68",
+      "sceneId": "s1",
+      "text": "So perilous that half the astonished meet"
+    },
+    {
+      "id": "s1-69",
+      "sceneId": "s1",
+      "text": "Had shut their eyes, and where was it"
+    },
+    {
+      "id": "s1-70",
+      "sceneId": "s1",
+      "text": "He rode a race without a bit?"
+    },
+    {
+      "id": "s1-71",
+      "sceneId": "s1",
+      "text": "And yet his mind outran the horses' feet."
+    },
+    {
+      "id": "s1-72",
+      "sceneId": "s1",
+      "text": "9"
+    },
+    {
+      "id": "s1-73",
+      "sceneId": "s1",
+      "text": "We dreamed that a great painter had been born"
+    },
+    {
+      "id": "s1-74",
+      "sceneId": "s1",
+      "text": "To cold Clare rock and Galway rock and thorn,"
+    },
+    {
+      "id": "s1-75",
+      "sceneId": "s1",
+      "text": "To that stern colour and that delicate line"
+    },
+    {
+      "id": "s1-76",
+      "sceneId": "s1",
+      "text": "That are our secret discipline"
+    },
+    {
+      "id": "s1-77",
+      "sceneId": "s1",
+      "text": "Wherein the gazing heart doubles her might."
+    },
+    {
+      "id": "s1-78",
+      "sceneId": "s1",
+      "text": "Soldier, scholar, horseman, he,"
+    },
+    {
+      "id": "s1-79",
+      "sceneId": "s1",
+      "text": "And yet he had the intensity"
+    },
+    {
+      "id": "s1-80",
+      "sceneId": "s1",
+      "text": "To have published all to be a world's delight."
+    },
+    {
+      "id": "s1-81",
+      "sceneId": "s1",
+      "text": "10"
+    },
+    {
+      "id": "s1-82",
+      "sceneId": "s1",
+      "text": "What other could so well have counselled us"
+    },
+    {
+      "id": "s1-83",
+      "sceneId": "s1",
+      "text": "In all lovely intricacies of a house"
+    },
+    {
+      "id": "s1-84",
+      "sceneId": "s1",
+      "text": "As he that practised or that understood"
+    },
+    {
+      "id": "s1-85",
+      "sceneId": "s1",
+      "text": "All work in metal or in wood,"
+    },
+    {
+      "id": "s1-86",
+      "sceneId": "s1",
+      "text": "In moulded plaster or in carven stone?"
+    },
+    {
+      "id": "s1-87",
+      "sceneId": "s1",
+      "text": "Soldier, scholar, horseman, he,"
+    },
+    {
+      "id": "s1-88",
+      "sceneId": "s1",
+      "text": "And all he did done perfectly"
+    },
+    {
+      "id": "s1-89",
+      "sceneId": "s1",
+      "text": "As though he had but that one trade alone."
+    },
+    {
+      "id": "s1-90",
+      "sceneId": "s1",
+      "text": "11"
+    },
+    {
+      "id": "s1-91",
+      "sceneId": "s1",
+      "text": "Some burn damp fagots, others may consume"
+    },
+    {
+      "id": "s1-92",
+      "sceneId": "s1",
+      "text": "The entire combustible world in one small room"
+    },
+    {
+      "id": "s1-93",
+      "sceneId": "s1",
+      "text": "As though dried straw, and if we turn about"
+    },
+    {
+      "id": "s1-94",
+      "sceneId": "s1",
+      "text": "The bare chimney is gone black out"
+    },
+    {
+      "id": "s1-95",
+      "sceneId": "s1",
+      "text": "Because the work had finished in that flare."
+    },
+    {
+      "id": "s1-96",
+      "sceneId": "s1",
+      "text": "Soldier, scholar, horseman, he,"
+    },
+    {
+      "id": "s1-97",
+      "sceneId": "s1",
+      "text": "As 'twere all life's epitome."
+    },
+    {
+      "id": "s1-98",
+      "sceneId": "s1",
+      "text": "What made us dream that he could comb grey hair?"
+    },
+    {
+      "id": "s1-99",
+      "sceneId": "s1",
+      "text": "12"
+    },
+    {
+      "id": "s1-100",
+      "sceneId": "s1",
+      "text": "I had thought, seeing how bitter is that wind"
+    },
+    {
+      "id": "s1-101",
+      "sceneId": "s1",
+      "text": "That shakes the shutter, to have brought to mind"
+    },
+    {
+      "id": "s1-102",
+      "sceneId": "s1",
+      "text": "All those that manhood tried, or childhood loved,"
+    },
+    {
+      "id": "s1-103",
+      "sceneId": "s1",
+      "text": "Or boyish intellect approved,"
+    },
+    {
+      "id": "s1-104",
+      "sceneId": "s1",
+      "text": "With some appropriate commentary on each;"
+    },
+    {
+      "id": "s1-105",
+      "sceneId": "s1",
+      "text": "Until imagination brought"
+    },
+    {
+      "id": "s1-106",
+      "sceneId": "s1",
+      "text": "A fitter welcome; but a thought"
+    },
+    {
+      "id": "s1-107",
+      "sceneId": "s1",
+      "text": "Of that late death took all my heart for speech."
+    }
+  ]
+}

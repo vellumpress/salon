@@ -299,7 +299,7 @@
       "id": "s41",
       "title": "Sea Charm",
       "place": "Sea Charm",
-      "reentry": "Sea charm",
+      "reentry": "The sea’s own children",
       "prompt": "What does the blues hold?"
     },
     {
@@ -376,7 +376,7 @@
       "id": "s52",
       "title": "Poem",
       "place": "Poem",
-      "reentry": "(To F. S.)",
+      "reentry": "I loved my friend.",
       "prompt": "What does the blues hold?"
     },
     {
@@ -556,32 +556,32 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "THE WEARY BLUES"
+      "text": "Droning a drowsy syncopated tune,"
     },
     {
       "id": "s1-1",
       "sceneId": "s1",
-      "text": "Droning a drowsy syncopated tune,"
+      "text": "Rocking back and forth to a mellow croon,"
     },
     {
       "id": "s1-2",
       "sceneId": "s1",
-      "text": "Rocking back and forth to a mellow croon,"
+      "text": "I heard a Negro play."
     },
     {
       "id": "s1-3",
       "sceneId": "s1",
-      "text": "I heard a Negro play."
+      "text": "Down on Lenox Avenue the other night"
     },
     {
       "id": "s1-4",
       "sceneId": "s1",
-      "text": "Down on Lenox Avenue the other night"
+      "text": "By the pale dull pallor of an old gas light"
     },
     {
       "id": "s1-5",
       "sceneId": "s1",
-      "text": "By the pale dull pallor of an old gas light"
+      "text": "He did a lazy sway...."
     },
     {
       "id": "s1-6",
@@ -591,145 +591,140 @@
     {
       "id": "s1-7",
       "sceneId": "s1",
-      "text": "He did a lazy sway...."
+      "text": "To the tune o’ those Weary Blues."
     },
     {
       "id": "s1-8",
       "sceneId": "s1",
-      "text": "To the tune o’ those Weary Blues."
+      "text": "With his ebony hands on each ivory key"
     },
     {
       "id": "s1-9",
       "sceneId": "s1",
-      "text": "With his ebony hands on each ivory key"
+      "text": "He made that poor piano moan with melody."
     },
     {
       "id": "s1-10",
       "sceneId": "s1",
-      "text": "He made that poor piano moan with melody."
+      "text": "O Blues!"
     },
     {
       "id": "s1-11",
       "sceneId": "s1",
-      "text": "O Blues!"
+      "text": "Swaying to and fro on his rickety stool"
     },
     {
       "id": "s1-12",
       "sceneId": "s1",
-      "text": "Swaying to and fro on his rickety stool"
+      "text": "He played that sad raggy tune like a musical fool."
     },
     {
       "id": "s1-13",
       "sceneId": "s1",
-      "text": "He played that sad raggy tune like a musical fool."
+      "text": "Sweet Blues!"
     },
     {
       "id": "s1-14",
       "sceneId": "s1",
-      "text": "Sweet Blues!"
+      "text": "Coming from a black man’s soul."
     },
     {
       "id": "s1-15",
       "sceneId": "s1",
-      "text": "Coming from a black man’s soul."
+      "text": "O Blues!"
     },
     {
       "id": "s1-16",
       "sceneId": "s1",
-      "text": "O Blues!"
+      "text": "In a deep song voice with a melancholy tone"
     },
     {
       "id": "s1-17",
       "sceneId": "s1",
-      "text": "In a deep song voice with a melancholy tone"
+      "text": "I heard that Negro sing, that old piano moan—"
     },
     {
       "id": "s1-18",
       "sceneId": "s1",
-      "text": "I heard that Negro sing, that old piano moan—"
+      "text": "“Ain’t got nobody in all this world,"
     },
     {
       "id": "s1-19",
       "sceneId": "s1",
-      "text": "“Ain’t got nobody in all this world,"
+      "text": "Ain’t got nobody but ma self."
     },
     {
       "id": "s1-20",
       "sceneId": "s1",
-      "text": "Ain’t got nobody but ma self."
+      "text": "I’s gwine to quit ma frownin’"
     },
     {
       "id": "s1-21",
       "sceneId": "s1",
-      "text": "I’s gwine to quit ma frownin’"
+      "text": "And put ma troubles on the shelf.”"
     },
     {
       "id": "s1-22",
       "sceneId": "s1",
-      "text": "And put ma troubles on the shelf.”"
+      "text": "Thump, thump, thump, went his foot on the floor."
     },
     {
       "id": "s1-23",
       "sceneId": "s1",
-      "text": "Thump, thump, thump, went his foot on the floor."
+      "text": "He played a few chords then he sang some more—"
     },
     {
       "id": "s1-24",
       "sceneId": "s1",
-      "text": "He played a few chords then he sang some more—"
+      "text": "“I got the Weary Blues"
     },
     {
       "id": "s1-25",
       "sceneId": "s1",
-      "text": "“I got the Weary Blues"
+      "text": "And I can’t be satisfied."
     },
     {
       "id": "s1-26",
       "sceneId": "s1",
-      "text": "And I can’t be satisfied."
+      "text": "Got the Weary Blues"
     },
     {
       "id": "s1-27",
       "sceneId": "s1",
-      "text": "Got the Weary Blues"
+      "text": "And can’t be satisfied—"
     },
     {
       "id": "s1-28",
       "sceneId": "s1",
-      "text": "And can’t be satisfied—"
+      "text": "I ain’t happy no mo’"
     },
     {
       "id": "s1-29",
       "sceneId": "s1",
-      "text": "I ain’t happy no mo’"
+      "text": "And I wish that I had died.”"
     },
     {
       "id": "s1-30",
       "sceneId": "s1",
-      "text": "And I wish that I had died.”"
+      "text": "And far into the night he crooned that tune."
     },
     {
       "id": "s1-31",
       "sceneId": "s1",
-      "text": "And far into the night he crooned that tune."
+      "text": "The stars went out and so did the moon."
     },
     {
       "id": "s1-32",
       "sceneId": "s1",
-      "text": "The stars went out and so did the moon."
+      "text": "The singer stopped playing and went to bed"
     },
     {
       "id": "s1-33",
       "sceneId": "s1",
-      "text": "The singer stopped playing and went to bed"
-    },
-    {
-      "id": "s1-34",
-      "sceneId": "s1",
       "text": "While the Weary Blues echoed through his head."
     },
     {
-      "id": "s1-35",
+      "id": "s1-34",
       "sceneId": "s1",
       "text": "He slept like a rock or a man that’s dead."
     },
@@ -1861,95 +1856,90 @@
     {
       "id": "s14-0",
       "sceneId": "s14",
-      "text": "♦DREAM VARIATIONS"
+      "text": "To fling my arms wide"
     },
     {
       "id": "s14-1",
       "sceneId": "s14",
-      "text": "To fling my arms wide"
+      "text": "In some place of the sun,"
     },
     {
       "id": "s14-2",
       "sceneId": "s14",
-      "text": "In some place of the sun,"
+      "text": "To whirl and to dance"
     },
     {
       "id": "s14-3",
       "sceneId": "s14",
-      "text": "To whirl and to dance"
+      "text": "Till the white day is done."
     },
     {
       "id": "s14-4",
       "sceneId": "s14",
-      "text": "Till the white day is done."
+      "text": "Then rest at cool evening"
     },
     {
       "id": "s14-5",
       "sceneId": "s14",
-      "text": "Then rest at cool evening"
+      "text": "Beneath a tall tree"
     },
     {
       "id": "s14-6",
       "sceneId": "s14",
-      "text": "Beneath a tall tree"
+      "text": "While night comes on gently,"
     },
     {
       "id": "s14-7",
       "sceneId": "s14",
-      "text": "While night comes on gently,"
+      "text": "Dark like me,—"
     },
     {
       "id": "s14-8",
       "sceneId": "s14",
-      "text": "Dark like me,—"
+      "text": "That is my dream!"
     },
     {
       "id": "s14-9",
       "sceneId": "s14",
-      "text": "That is my dream!"
+      "text": "To fling my arms wide"
     },
     {
       "id": "s14-10",
       "sceneId": "s14",
-      "text": "To fling my arms wide"
+      "text": "In the face of the sun,"
     },
     {
       "id": "s14-11",
       "sceneId": "s14",
-      "text": "In the face of the sun,"
+      "text": "Dance! whirl! whirl!"
     },
     {
       "id": "s14-12",
       "sceneId": "s14",
-      "text": "Dance! whirl! whirl!"
+      "text": "Till the quick day is done."
     },
     {
       "id": "s14-13",
       "sceneId": "s14",
-      "text": "Till the quick day is done."
+      "text": "Rest at pale evening...."
     },
     {
       "id": "s14-14",
       "sceneId": "s14",
-      "text": "Rest at pale evening...."
+      "text": "A tall, slim tree...."
     },
     {
       "id": "s14-15",
       "sceneId": "s14",
-      "text": "A tall, slim tree...."
+      "text": "Night coming tenderly"
     },
     {
       "id": "s14-16",
       "sceneId": "s14",
-      "text": "Night coming tenderly"
-    },
-    {
-      "id": "s14-17",
-      "sceneId": "s14",
       "text": "Black like me."
     },
     {
-      "id": "s14-18",
+      "id": "s14-17",
       "sceneId": "s14",
       "text": "♦ “DREAM VARIATION” replaced with “DREAM VARIATIONS”"
     },
@@ -3966,55 +3956,50 @@
     {
       "id": "s41-0",
       "sceneId": "s41",
-      "text": "Sea charm"
+      "text": "The sea’s own children"
     },
     {
       "id": "s41-1",
       "sceneId": "s41",
-      "text": "The sea’s own children"
+      "text": "Do not understand."
     },
     {
       "id": "s41-2",
       "sceneId": "s41",
-      "text": "Do not understand."
+      "text": "They know"
     },
     {
       "id": "s41-3",
       "sceneId": "s41",
-      "text": "They know"
+      "text": "But that the sea is strong"
     },
     {
       "id": "s41-4",
       "sceneId": "s41",
-      "text": "But that the sea is strong"
+      "text": "Like God’s hand."
     },
     {
       "id": "s41-5",
       "sceneId": "s41",
-      "text": "Like God’s hand."
+      "text": "They know"
     },
     {
       "id": "s41-6",
       "sceneId": "s41",
-      "text": "They know"
+      "text": "But that sea wind is sweet"
     },
     {
       "id": "s41-7",
       "sceneId": "s41",
-      "text": "But that sea wind is sweet"
+      "text": "Like God’s breath,"
     },
     {
       "id": "s41-8",
       "sceneId": "s41",
-      "text": "Like God’s breath,"
-    },
-    {
-      "id": "s41-9",
-      "sceneId": "s41",
       "text": "And that the sea holds"
     },
     {
-      "id": "s41-10",
+      "id": "s41-9",
       "sceneId": "s41",
       "text": "A wide, deep death."
     },
@@ -4501,95 +4486,90 @@
     {
       "id": "s53-0",
       "sceneId": "s53",
-      "text": "OUR LAND"
+      "text": "Poem for a Decorative Panel"
     },
     {
       "id": "s53-1",
       "sceneId": "s53",
-      "text": "Poem for a Decorative Panel"
+      "text": "We should have a land of sun,"
     },
     {
       "id": "s53-2",
       "sceneId": "s53",
-      "text": "We should have a land of sun,"
+      "text": "Of gorgeous sun,"
     },
     {
       "id": "s53-3",
       "sceneId": "s53",
-      "text": "Of gorgeous sun,"
+      "text": "And a land of fragrant water"
     },
     {
       "id": "s53-4",
       "sceneId": "s53",
-      "text": "And a land of fragrant water"
+      "text": "Where the twilight"
     },
     {
       "id": "s53-5",
       "sceneId": "s53",
-      "text": "Where the twilight"
+      "text": "Is a soft bandanna handkerchief"
     },
     {
       "id": "s53-6",
       "sceneId": "s53",
-      "text": "Is a soft bandanna handkerchief"
+      "text": "Of rose and gold,"
     },
     {
       "id": "s53-7",
       "sceneId": "s53",
-      "text": "Of rose and gold,"
+      "text": "And not this land where life is cold."
     },
     {
       "id": "s53-8",
       "sceneId": "s53",
-      "text": "And not this land where life is cold."
+      "text": "We should have a land of trees,"
     },
     {
       "id": "s53-9",
       "sceneId": "s53",
-      "text": "We should have a land of trees,"
+      "text": "Of tall thick trees"
     },
     {
       "id": "s53-10",
       "sceneId": "s53",
-      "text": "Of tall thick trees"
+      "text": "Bowed down with chattering parrots"
     },
     {
       "id": "s53-11",
       "sceneId": "s53",
-      "text": "Bowed down with chattering parrots"
+      "text": "Brilliant as the day,"
     },
     {
       "id": "s53-12",
       "sceneId": "s53",
-      "text": "Brilliant as the day,"
+      "text": "And not this land where birds are grey."
     },
     {
       "id": "s53-13",
       "sceneId": "s53",
-      "text": "And not this land where birds are grey."
+      "text": "Ah, we should have a land of joy,"
     },
     {
       "id": "s53-14",
       "sceneId": "s53",
-      "text": "Ah, we should have a land of joy,"
+      "text": "Of love and joy and wine and song,"
     },
     {
       "id": "s53-15",
       "sceneId": "s53",
-      "text": "Of love and joy and wine and song,"
+      "text": "And not this land where joy is wrong."
     },
     {
       "id": "s53-16",
       "sceneId": "s53",
-      "text": "And not this land where joy is wrong."
-    },
-    {
-      "id": "s53-17",
-      "sceneId": "s53",
       "text": "Oh, sweet, away!"
     },
     {
-      "id": "s53-18",
+      "id": "s53-17",
       "sceneId": "s53",
       "text": "Ah, my beloved one, away!"
     },

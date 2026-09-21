@@ -25,7 +25,7 @@ const SECTION_HEADER =
   /^(?:chapter|part)\s+[ivxlcdm\d]+\.?$|^introduction$|^two poems$|^contents$|^preface$/i;
 const NUMBER_ONLY = /^\d{1,3}\.$/;
 const PG_FOOTER =
-  /\*\*\*\s*END OF (THE )?PROJECT GUTENBERG|Updated editions will replace the previous/i;
+  /\*\*\*\s*END OF (THE )?PROJECT GUTENBERG|Updated editions will replace the previous|Italicized text is surrounded|An incorrect page number in the Table of Contents|Transcriber['’]s note/i;
 const SMALL_DOUBLE = /\b(in|the|of|a|and|by|to|on|from|with|an|at)\s+\1\b/gi;
 
 const NOTES: Record<string, string> = {
@@ -50,7 +50,37 @@ const OPENING_TITLES: Record<string, string[]> = {
   gitanjali: ["Poem 1", "Poem 2"],
   "a-hundred-and-seventy-chinese-poems": ["Winter Night"],
   "the-weary-blues": ["Proem", "The Weary Blues", "Jazzonia"],
+  "pictures-of-the-floating-world": ["Streets", "Circumstance", "Angles"],
+  "the-wild-swans-at-coole": ["The Wild Swans at Coole", "In Memory of Major Robert Gregory"],
+  "copper-sun": ["Colors"],
+  color: [
+    "Yet Do I Marvel",
+    "A Song of Praise",
+    "Brown Boy to Brown Girl",
+    "A Brown Girl Dead",
+    "To a Brown Girl",
+    "To a Brown Boy",
+    "Black Magdalens",
+  ],
+  "chicago-poems": ["Chicago", "Sketch", "Masses", "Lost", "The Harbor"],
+  "the-black-christ-and-other-poems": ["That Bright Chimeric Beast"],
+  "sword-blades-and-poppy-seed": ["The Captured Goddess"],
 };
+
+const KEEP_EXISTING_OPENING = new Set(["silhouettes"]);
+
+const PREFIX_OPENINGS: Record<string, { title: string; breaths: number }> = {
+  "renascence-and-other-poems": { title: "Renascence", breaths: 95 },
+  "goblin-market-and-other-poems": { title: "Goblin Market", breaths: 90 },
+};
+
+const SHELF_OPENING_FROM_PACKED = new Set([
+  "the-weary-blues",
+  "copper-sun",
+  "sword-blades-and-poppy-seed",
+  "pictures-of-the-floating-world",
+  "goblin-market-and-other-poems",
+]);
 
 const PRIORITY = [
   {
@@ -106,8 +136,9 @@ function isTitleEcho(text: string, title: string) {
   const t = text.trim().replace(/\s+/g, " ");
   const letters = lettersOf(t);
   if (letters.length < 3) return false;
-  const upper = letters.replace(/[^A-Z]/g, "").length / letters.length >= 0.86;
   const norm = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  if (norm(t) === norm(title)) return true;
+  const upper = letters.replace(/[^A-Z]/g, "").length / letters.length >= 0.86;
   return upper && norm(t) === norm(title);
 }
 
@@ -123,6 +154,9 @@ export function reentryOf(title: string, lines: string[]) {
       if (isNumberBreath(t)) return false;
       if (isTitleEcho(t, title)) return false;
       if (isByLine(t)) return false;
+      if (/^\(Adapted from/i.test(t)) return false;
+      if (/^\(To\s+/i.test(t) && t.length < 80) return false;
+      if (/^\([^)]{0,40}\)$/.test(t)) return false;
       return true;
     }) ??
     lines[0] ??
@@ -136,6 +170,48 @@ function isAllCapsHeadingLine(text: string) {
   if (letters.length < 3 || letters.length > 64) return false;
   if (t.length > 90) return false;
   return letters.replace(/[^A-Z]/g, "").length / letters.length >= 0.86;
+}
+
+function unshoutCapsWords(text: string) {
+  return text.replace(/\b([A-Z]{2,}[A-Z'’]*)\b/g, (word) => {
+    if (/^(?:I{1,3}|IV|VI{0,3}|IX|X)$/.test(word)) return word;
+    return word[0] + word.slice(1).toLowerCase();
+  });
+}
+
+function isSludgeLine(text: string) {
+  if (/^PICTURES\s+OF THE\s+FLOATING/i.test(text)) return true;
+  if (/^\d+\s+PICTURES\s+OF THE/i.test(text)) return true;
+  if (/Printed in the United States of America/i.test(text)) return true;
+  const letters = text.replace(/[^A-Za-z]/g, "");
+  if (!letters.length) return true;
+  if (letters.length < 3 && text.length > 6) return true;
+  const ratio = letters.length / Math.max(text.length, 1);
+  return ratio < 0.28 && text.length > 10;
+}
+
+function stripTrailingSludge(lines: string[]) {
+  const next = [...lines];
+  while (next.length && isSludgeLine(next[next.length - 1]!)) next.pop();
+  return next;
+}
+
+function isJunkScene(title: string, lines: string[]) {
+  const joined = lines.join(" ");
+  if (/^(Salgsoereee|Mit)$/i.test(title)) return true;
+  if (/^Bee$/i.test(title) && /bashthee|1c\s+i\s+at/i.test(joined)) return true;
+  if (/^By Amy Lowell$/i.test(title) && /VOLUME of lyrical|Sword Blades/i.test(joined)) return true;
+  if (/As Toward Immortality/i.test(title) && lines.filter((line) => /[A-Za-z]{4,}/.test(line)).length <= 1) {
+    return true;
+  }
+  if (/Henry Holt and Company|Burton E\. Stevenson|" and Other POETS"/i.test(title)) return true;
+  if (
+    /^(The New Poetry|North of Boston|A Boy's Will|The Listeners)$/i.test(title) &&
+    /\$\s*\d|net\.|printing/i.test(joined)
+  ) {
+    return true;
+  }
+  return false;
 }
 
 function stripGlue(lines: string[], title: string, otherTitles: Set<string>) {
@@ -157,7 +233,12 @@ function stripGlue(lines: string[], title: string, otherTitles: Set<string>) {
   return cleaned;
 }
 
-export function adaptMiraWork(mira: MiraWork, salon: Work, note = NOTES[salon.id] ?? salon.note): Work {
+export function adaptMiraWork(
+  mira: MiraWork,
+  salon: Work,
+  note = NOTES[salon.id] ?? salon.note,
+  opts: { stripSludge?: boolean } = {},
+): Work {
   const scenes: Scene[] = [];
   const breaths: Breath[] = [];
   const prompt = salon.scenes[0]?.prompt || "A word from this stretch.";
@@ -174,6 +255,10 @@ export function adaptMiraWork(mira: MiraWork, salon: Work, note = NOTES[salon.id
     if (footerAt >= 0) lines = lines.slice(0, footerAt);
     lines = lines.filter((line) => line && !isNumberBreath(line) && !/^(THE END|FINIS)$/i.test(line));
     lines = stripGlue(lines, title, otherTitles);
+    if (opts.stripSludge) lines = stripTrailingSludge(lines);
+    if (salon.id === "silhouettes") lines = lines.map(unshoutCapsWords);
+    if (lines.length > 1 && lines[0] && isTitleEcho(lines[0], title)) lines = lines.slice(1);
+    if (isJunkScene(title, lines)) continue;
     if (!lines.length) continue;
     const id = `s${scenes.length}`;
     scenes.push({
@@ -209,8 +294,22 @@ function openingFromTitles(full: Work, salonOpening: Work, titles: string[]): Wo
   return {
     ...salonOpening,
     note: OPENING_NOTES[full.id] ?? salonOpening.note,
-    scenes,
-    breaths,
+    scenes: scenes.length ? scenes : salonOpening.scenes,
+    breaths: breaths.length ? breaths : salonOpening.breaths,
+  };
+}
+
+function openingFromPrefix(full: Work, salonOpening: Work, spec: { title: string; breaths: number }): Work {
+  const scene = full.scenes.find((item) => item.title === spec.title) ?? full.scenes[0];
+  if (!scene) return salonOpening;
+  const lines = full.breaths
+    .filter((breath) => breath.sceneId === scene.id)
+    .map((breath) => breath.text)
+    .slice(0, spec.breaths);
+  return {
+    ...salonOpening,
+    scenes: [{ ...scene, id: "s0", place: scene.title }],
+    breaths: breathsFor("s0", lines),
   };
 }
 
@@ -278,13 +377,18 @@ for (const job of jobs) {
   const mira = JSON.parse(readFileSync(miraPath, "utf8")) as MiraWork;
   const salon = loadWork(salonPath);
   const opening = loadWork(openPath);
-  const full = adaptMiraWork(mira, salon);
-  const titles = OPENING_TITLES[job.id] ?? [full.scenes[0]?.title ?? ""];
-  const packed = openingFromTitles(full, opening, titles);
+  const full = adaptMiraWork(mira, salon, NOTES[job.id] ?? salon.note, {
+    stripSludge: BATCH2.includes(job.id),
+  });
+  const prefix = PREFIX_OPENINGS[job.id];
+  const packed = KEEP_EXISTING_OPENING.has(job.id)
+    ? opening
+    : prefix
+      ? openingFromPrefix(full, opening, prefix)
+      : openingFromTitles(full, opening, OPENING_TITLES[job.id] ?? [full.scenes[0]?.title ?? ""]);
   writeJson(salonPath, full);
-  writeJson(openPath, packed);
-  const shelfOpening =
-    job.id === "the-weary-blues" ? packed.scenes[0]?.reentry : undefined;
+  if (!KEEP_EXISTING_OPENING.has(job.id)) writeJson(openPath, packed);
+  const shelfOpening = SHELF_OPENING_FROM_PACKED.has(job.id) ? packed.scenes[0]?.reentry : undefined;
   updateShelf(job.id, full.breaths.length, shelfOpening);
   shipped.push(
     `${job.id} scenes=${full.scenes.length} breaths=${full.breaths.length} first="${full.scenes[0]?.title}" opening=${packed.scenes.map((s) => s.title).join(" · ")}`,

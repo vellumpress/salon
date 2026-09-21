@@ -182,3 +182,46 @@ test("inscribed OCR is fixed in Pictures of the Floating World", () => {
   assert.match(joined, /I have inscribed your name/);
   assert.doesNotMatch(joined, /T have inscribed/);
 });
+
+test("Mira batch-2 poem-chapter binds stay one poem per scene", () => {
+  const expect: Record<string, { minScenes: number; first: string; long?: string }> = {
+    "pictures-of-the-floating-world": { minScenes: 140, first: "Streets" },
+    silhouettes: { minScenes: 70, first: "After Sunset" },
+    "the-wild-swans-at-coole": { minScenes: 30, first: "The Wild Swans at Coole", long: "Ego Dominus Tuus" },
+    "copper-sun": { minScenes: 20, first: "Colors" },
+    color: { minScenes: 70, first: "Yet Do I Marvel" },
+    "renascence-and-other-poems": { minScenes: 20, first: "Renascence", long: "Renascence" },
+    "chicago-poems": { minScenes: 140, first: "Chicago" },
+    "goblin-market-and-other-poems": { minScenes: 120, first: "Goblin Market", long: "Goblin Market" },
+    "the-black-christ-and-other-poems": { minScenes: 40, first: "To the Three for Whom the Book", long: "The Black Christ" },
+    "sword-blades-and-poppy-seed": { minScenes: 50, first: "The Captured Goddess", long: "The Great Adventure of Max Breuck" },
+  };
+  for (const [id, want] of Object.entries(expect)) {
+    const full = load("texts", id);
+    assert.ok(full, id);
+    assert.ok(full!.scenes.length >= want.minScenes, `${id} scenes ${full!.scenes.length}`);
+    assert.equal(full!.scenes[0]?.title, want.first, id);
+    assert.equal(
+      full!.scenes.some((scene) => /^(Chapter|Part|Introduction|Two Poems|Title)\b/i.test(scene.title)),
+      false,
+      id,
+    );
+    if (want.long) {
+      const long = full!.scenes.filter((scene) => scene.title === want.long);
+      assert.equal(long.length, 1, `${id} ${want.long} must stay one chapter`);
+    }
+    assert.doesNotMatch(
+      full!.scenes.map((scene) => scene.title).join("\n"),
+      /Henry Holt|Salgsoereee|^Mit$|^Bee$/m,
+      id,
+    );
+  }
+  const floating = load("openings", "pictures-of-the-floating-world");
+  assert.deepEqual(floating?.scenes.map((s) => s.title), ["Streets", "Circumstance", "Angles"]);
+  const wearyOpen = load("openings", "the-black-christ-and-other-poems");
+  assert.equal(wearyOpen?.scenes[0]?.title, "That Bright Chimeric Beast");
+  const sil = load("texts", "silhouettes");
+  const joined = sil!.breaths.map((b) => b.text).join("\n");
+  assert.doesNotMatch(joined, /\bTHE sea\b/);
+  assert.doesNotMatch(joined, /\bAFTER SUNSET\b/);
+});

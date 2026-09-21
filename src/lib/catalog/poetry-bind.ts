@@ -21,6 +21,16 @@ export const MIRA_STAMPED_POEM_IDS = [
   "gitanjali",
   "a-hundred-and-seventy-chinese-poems",
   "the-weary-blues",
+  "pictures-of-the-floating-world",
+  "silhouettes",
+  "the-wild-swans-at-coole",
+  "copper-sun",
+  "color",
+  "renascence-and-other-poems",
+  "chicago-poems",
+  "goblin-market-and-other-poems",
+  "the-black-christ-and-other-poems",
+  "sword-blades-and-poppy-seed",
 ] as const;
 
 /** Waley 1918 headings from Winter Night through Last Poem (PG 42290). */
