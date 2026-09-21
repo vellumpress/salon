@@ -1612,9 +1612,10 @@ test("Dubliners opens on The Sisters only, not The Dead", () => {
   assert.match(packed.scenes[0]?.title ?? "", /The Sisters/i);
   assert.match(packed.scenes[0]?.reentry ?? "", /^There was no hope for him this time/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /arranging his opinion in his mind\.?$/);
-  assert.doesNotMatch(full.breaths.map((breath) => breath.text).join(" "), /Gabriel Conroy/i);
-  assert.doesNotMatch(full.scenes.map((scene) => scene.title).join(" "), /The Dead/i);
-  assert.ok(full.breaths.length > packed.breaths.length, "full Sisters story stays after the sit");
+  assert.doesNotMatch(packed.breaths.map((breath) => breath.text).join(" "), /The Dead|Gabriel Conroy/i);
+  assert.match(full.breaths[0]?.text ?? "", /^There was no hope for him this time/);
+  assert.match(full.breaths.at(-1)?.text ?? "", /all the living and the dead/);
+  assert.ok(full.breaths.length > packed.breaths.length, "full collection stays available after the sit");
   assert.equal(work!.breaths, full.breaths.length);
 });
 
