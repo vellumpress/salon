@@ -93,6 +93,10 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "garden-party-barcelona": { label: "Barcelona", region: "es" },
     "usher-prague": { label: "Prague", region: "cz" },
     "araby-seville": { label: "Seville", region: "es" },
+    "nacha-regules": { label: "Buenos Aires", region: "ar" },
+    krakatit: { label: "Prague", region: "cz" },
+    "the-peasants": { label: "Poland village", region: "pl" },
+    cane: { label: "Georgia", region: "us-south" },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = shelfWork(id);

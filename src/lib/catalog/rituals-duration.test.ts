@@ -506,6 +506,54 @@ test("The Gadfly before-sleep sit is the Fragola cut, not the novel", () => {
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
+test("Nacha Regules unwind sit is the mandola cut", () => {
+  const item = work({
+    id: "nacha-regules",
+    form: "novel",
+    breaths: 1252,
+    minutes: 160,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Krakatit before-sleep sit is the fog-and-eyes cut", () => {
+  const item = work({
+    id: "krakatit",
+    form: "novel",
+    breaths: 1887,
+    minutes: 160,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("The Peasants waking sit is the roadside greeting cut", () => {
+  const item = work({
+    id: "the-peasants",
+    form: "novel",
+    breaths: 2772,
+    minutes: 160,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Cane For you sit is the Karintha dusk-song cut", () => {
+  const item = work({
+    id: "cane",
+    form: "stories",
+    breaths: 909,
+    minutes: 80,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
 test("Trooper Peter Halket before-sleep sit is the kopje-fire cut, not the novel", () => {
   const item = work({
     id: "trooper-peter-halket",

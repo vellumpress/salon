@@ -159,6 +159,19 @@ test("Mira 4pm Next sits are readable local EN binds", () => {
   }
 });
 
+test("Mira FULL-TEXT CLEAR ×4 are readable local EN binds", () => {
+  for (const [id, gutenberg] of [
+    ["nacha-regules", 59441],
+    ["krakatit", 79127],
+    ["the-peasants", 75846],
+    ["cane", 60093],
+  ] as const) {
+    assert.equal(isEnReadableOff(id), false, id);
+    assert.equal(isBoundLocal({ id, local: true }), true, id);
+    assert.equal(isBoundReadable({ id, local: true, gutenberg }), true, id);
+  }
+});
+
 test("Mira FULL-TEXT CLEAR ×7 are readable local EN binds", () => {
   for (const [id, gutenberg] of [
     ["steppenwolf", 75756],

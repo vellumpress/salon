@@ -78,6 +78,10 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   steppenwolf: { label: "Basel / Germany", region: "de" },
   shadowings: { label: "Japan", region: "jp" },
   "brazilian-tales": { label: "Brazil", region: "br" },
+  "nacha-regules": { label: "Buenos Aires", region: "ar" },
+  krakatit: { label: "Prague", region: "cz" },
+  "the-peasants": { label: "Poland village", region: "pl" },
+  cane: { label: "Georgia", region: "us-south" },
 
   // Named examples
   botchan: { label: "Tokyo", region: "jp" },

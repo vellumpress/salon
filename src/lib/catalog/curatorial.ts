@@ -40,6 +40,10 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * not For you. Harmonium is a Rituals before-sleep sit only — The Snow Man
  * open, never Featured, not For you.
  * The Poison Tree is Later (Bengal / unwind) — not Next, not locked recommend.
+ * Nacha Regules (unwind), Krakatit (before-sleep), The Peasants (waking),
+ * and Cane (For you + before-sleep) are ritual Next sits only — not locked
+ * recommend, not Featured. Cane may surface on For you after the cold-open
+ * trio; Mirth → Quicksand → Botchan stay first.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.

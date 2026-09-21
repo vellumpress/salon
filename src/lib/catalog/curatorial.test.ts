@@ -1002,6 +1002,37 @@ test("Unhuman Tour soft-holds stay off this Next / Rituals pack", () => {
   }
 });
 
+test("Salon 8am CLEAR ×4 are local Next / Rituals binds, never Featured", () => {
+  const expect = {
+    "nacha-regules": { lane: "unwind", opening: /^An August night!/ },
+    krakatit: { lane: "before-sleep", opening: /^With the evening the fog/ },
+    "the-peasants": { lane: "waking-up", opening: /Praised be Jesus Christ!/ },
+    cane: { lane: "before-sleep", opening: /^Her skin is like dusk/ },
+  } as const;
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.match(work!.opening ?? "", want.opening, id);
+    const lane = RITUAL_LANES.find((item) => item.id === want.lane);
+    assert.ok(lane?.workIds.includes(id), `${id} ${want.lane}`);
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "later", id);
+  }
+  assert.ok(forYou?.workIds.includes("cane"));
+  assert.deepEqual(forYou!.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  assert.equal(forYou!.workIds.includes("nacha-regules"), false);
+  assert.equal(forYou!.workIds.includes("krakatit"), false);
+  assert.equal(forYou!.workIds.includes("the-peasants"), false);
+});
+
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {
   const waking = RITUAL_LANES.find((item) => item.id === "waking-up");
   const unwind = RITUAL_LANES.find((item) => item.id === "unwind");

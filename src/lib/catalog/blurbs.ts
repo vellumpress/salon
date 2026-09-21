@@ -604,7 +604,13 @@ const BLURBS: Record<string, string> = {
   "iola-leroy": "A woman of mixed race after the war, choosing a people instead of a pass.",
   "of-one-blood": "Hopkins’ Boston and Meroe: a mystery of race that goes underground.",
   "imperium-in-imperio": "Griggs’ secret Black nation inside the United States — a political thought-experiment.",
-  cane: "Toomer’s Georgia and Washington in poems, stories, and the space between.",
+  cane: "Karintha at Georgia dusk: her skin is like dusk on the eastern horizon.",
+  "nacha-regules":
+    "Buenos Aires is ablaze on a Centennial August night, and a mandola underlines the tangos with long shadows of pain.",
+  krakatit:
+    "Evening fog thickens on the Old Town embankment until a pair of penetrating eyes fix on him.",
+  "the-peasants":
+    "Agatha and the priest meet on a Polish roadside — Praised be Jesus Christ — then she walks out into the wide world.",
   "the-quest-of-the-silver-fleece": "Du Bois’ cotton novel: a crop, a school, and the northern money in it.",
   "main-travelled-roads": "Garland’s Midwest farms, without the calendar art.",
   "the-country-of-the-pointed-firs": "Jewett’s Maine harbor, visited slowly, left with the tide.",
