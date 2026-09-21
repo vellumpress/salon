@@ -10,6 +10,7 @@ export {
   chapterStartIndex,
   doorWork,
   isLastBreathOfScene,
+  lookbackBreaths,
   progressInScene,
   sceneOf,
   sceneStartIndex,

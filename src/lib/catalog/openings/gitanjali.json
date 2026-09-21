@@ -9,72 +9,79 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "sit-0",
+      "id": "s0",
       "title": "The little flute",
-      "place": "one sitting",
+      "place": "The little flute",
       "reentry": "Thou hast made me endless, such is thy pleasure.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "2",
+      "place": "2",
+      "reentry": "When thou commandest me to sing it seems that my heart would break with pride; and I look to thy face, and tears come to my eyes.",
       "prompt": "A word from this stretch."
     }
   ],
   "breaths": [
     {
-      "id": "sit-0-0",
-      "sceneId": "sit-0",
+      "id": "s0-0",
+      "sceneId": "s0",
       "text": "Thou hast made me endless, such is thy pleasure."
     },
     {
-      "id": "sit-0-1",
-      "sceneId": "sit-0",
+      "id": "s0-1",
+      "sceneId": "s0",
       "text": "This frail vessel thou emptiest again and again, and fillest it ever with fresh life."
     },
     {
-      "id": "sit-0-2",
-      "sceneId": "sit-0",
+      "id": "s0-2",
+      "sceneId": "s0",
       "text": "This little flute of a reed thou hast carried over hills and dales, and hast breathed through it melodies eternally new."
     },
     {
-      "id": "sit-0-3",
-      "sceneId": "sit-0",
+      "id": "s0-3",
+      "sceneId": "s0",
       "text": "At the immortal touch of thy hands my little heart loses its limits in joy and gives birth to utterance ineffable."
     },
     {
-      "id": "sit-0-4",
-      "sceneId": "sit-0",
+      "id": "s0-4",
+      "sceneId": "s0",
       "text": "Thy infinite gifts come to me only on these very small hands of mine."
     },
     {
-      "id": "sit-0-5",
-      "sceneId": "sit-0",
+      "id": "s0-5",
+      "sceneId": "s0",
       "text": "Ages pass, and still thou pourest, and still there is room to fill."
     },
     {
-      "id": "sit-0-6",
-      "sceneId": "sit-0",
+      "id": "s1-0",
+      "sceneId": "s1",
       "text": "When thou commandest me to sing it seems that my heart would break with pride; and I look to thy face, and tears come to my eyes."
     },
     {
-      "id": "sit-0-7",
-      "sceneId": "sit-0",
+      "id": "s1-1",
+      "sceneId": "s1",
       "text": "All that is harsh and dissonant in my life melts into one sweet harmony—and my adoration spreads wings like a glad bird on its flight across the sea."
     },
     {
-      "id": "sit-0-8",
-      "sceneId": "sit-0",
+      "id": "s1-2",
+      "sceneId": "s1",
       "text": "I know thou takest pleasure in my singing."
     },
     {
-      "id": "sit-0-9",
-      "sceneId": "sit-0",
+      "id": "s1-3",
+      "sceneId": "s1",
       "text": "I know that only as a singer I come before thy presence."
     },
     {
-      "id": "sit-0-10",
-      "sceneId": "sit-0",
+      "id": "s1-4",
+      "sceneId": "s1",
       "text": "I touch by the edge of the far-spreading wing of my song thy feet which I could never aspire to reach."
     },
     {
-      "id": "sit-0-11",
-      "sceneId": "sit-0",
+      "id": "s1-5",
+      "sceneId": "s1",
       "text": "Drunk with the joy of singing I forget myself and call thee friend who art my lord."
     }
   ]

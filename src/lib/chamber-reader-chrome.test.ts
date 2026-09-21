@@ -5,6 +5,10 @@ import test from "node:test";
 const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
 const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
 
+test("reader lookback sits on scene boundaries", () => {
+  assert.match(reader, /lookbackBreaths/);
+});
+
 test("reader turns underscore emphasis into italic markup", () => {
   assert.match(reader, /splitEmphasis/);
   assert.match(reader, /function EmphasizedText/);

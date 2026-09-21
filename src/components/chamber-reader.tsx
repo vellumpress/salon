@@ -3,6 +3,7 @@ import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import {
   chapterStartIndex,
+  lookbackBreaths,
   sceneOf,
   sceneStartIndex,
   workIsComplete,
@@ -224,10 +225,10 @@ export function VellumReader({
   const index = Math.min(lastBreath, Math.max(0, progress?.breathIndex ?? 0));
   const breath = work.breaths[index];
   const scene = breath ? sceneOf(work, breath.sceneId) : work.scenes[0];
-  const lookback = useMemo(() => {
-    const start = Math.max(0, index - LOOKBACK);
-    return work.breaths.slice(start, index);
-  }, [index, work.breaths]);
+  const lookback = useMemo(
+    () => lookbackBreaths(work, index, LOOKBACK),
+    [index, work],
+  );
   const kept = progress?.kept ?? [];
   const isKept = breath ? kept.includes(breath.id) : false;
   const plane: Fill = planeOf(breath?.sceneId ?? work.id);

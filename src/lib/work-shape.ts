@@ -63,6 +63,14 @@ export function isLastBreathOfScene(work: Work, index: number) {
   return !next || next.sceneId !== current.sceneId;
 }
 
+/** Prior breaths still in this scene — chapter/poem breaks clear the lookback. */
+export function lookbackBreaths(work: Work, index: number, limit = 12) {
+  const current = work.breaths[index];
+  if (!current) return [];
+  const start = Math.max(0, index - limit);
+  return work.breaths.slice(start, index).filter((breath) => breath.sceneId === current.sceneId);
+}
+
 export function progressInScene(work: Work, index: number) {
   const current = work.breaths[index];
   if (!current) return 0;
