@@ -76,20 +76,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Off-season Yalta, a small white dog, and an affair that refuses to stay temporary once Moscow proves too small for what began. After Chekhov, The Lady with the Dog, 1899.",
   "between-the-drop-and-the-water":
     "The rope fails—or seems to—until the Hudson remembers what it meant. After Bierce, An Occurrence at Owl Creek Bridge, 1890.",
-  "he-woke-changed":
-    "A breadwinner wakes wrong; the family ledger of duty and relief does the rest. After Kafka, The Metamorphosis, 1915.",
   "the-pattern":
     "Confined for her own good, she learns the wallpaper until the crawl is the only way out—calm, not thriller. After Gilman, The Yellow Wallpaper, 1892.",
-  "a-coat-worthy-of-respect":
-    "A meek clerk earns a coat meal by meal; winter takes it, and the city notices too late. After Gogol, The Overcoat, 1842.",
-  "what-she-borrowed":
-    "One borrowed night of glitter; a decade to learn it was paste. After Maupassant, The Necklace, 1884.",
-  "it-was-not-nervousness":
-    "He can tell it calmly. The pulse under the Queens floorboards will not stay calm. After Poe, The Tell-Tale Heart, 1843.",
-  "during-carnival":
-    "Carnival noise above; the last brick set with intimate care below. After Poe, The Cask of Amontillado, 1846.",
-  "what-we-sold":
-    "Two broke lovers ruin their treasures for each other and invent a quieter wealth in the wreckage. After O. Henry, The Gift of the Magi, 1905.",
   "bliss-tokyo":
     "Omotesando gold, a flowering pear on a terrace, and a young wife's perfect evening that turns on a single glance. After Mansfield, Bliss, 1918.",
   "open-window-singapore":
@@ -100,16 +88,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "A sealed hillside compound above Rio, seven rooms of curated light, and a guest who does not RSVP to plague. After Poe, The Masque of the Red Death, 1842.",
   "boule-de-suif-istanbul":
     "A delayed van out of Kadıköy, a cabin of respectable passengers, and one woman whose generosity is spent and then despised. After Maupassant, Boule de Suif, 1880.",
-  "happy-prince-hong-kong":
-    "A gold-leaf statue above the harbour gives itself away; a late swallow stays; the city calls the bare pedestal an improvement. After Wilde, The Happy Prince, 1888.",
-  "hunger-artist-milan":
-    "A glass box in Brera, a forty-day contract, and a city that prefers a panther's honest appetite to refusal as art. After Kafka, A Hunger Artist, 1922.",
   "the-nose-cape-town":
     "A Sea Point assessor wakes without his nose; on Long Street the missing feature has better meetings than he does. After Gogol, The Nose, 1836.",
-  "queen-of-spades-paris":
-    "An 8th-arrondissement obsession: three cards, a countess's secret, and a queen who will not stay buried in the deck. After Pushkin, The Queen of Spades, 1834.",
-  "decapitated-chicken-lisbon":
-    "A white villa above the Tagus, four brothers who learn by watching, and a kitchen lesson that does not stay in the kitchen. After Quiroga, The Decapitated Chicken, 1909.",
   "garden-party-barcelona":
     "A Sarrià lawn, a marquee, and leftovers carried down to a death the party refused to see. After Mansfield, The Garden Party, 1922.",
   "usher-prague":
