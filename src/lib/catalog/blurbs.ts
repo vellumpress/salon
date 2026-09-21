@@ -255,6 +255,12 @@ const BLURBS: Record<string, string> = {
     "A lighted window and the word paralysis — Joyce’s first sit is The Sisters only.",
   bliss:
     "Bertha Young swallows the late-afternoon sun, then the dinner-party turn waits in the full story.",
+  steppenwolf:
+    "A wolf of the Steppes in a bourgeois attic — then the Magic Theater for madmen only.",
+  shadowings:
+    "Hearn’s Kyoto ghosts, screen-maidens, and a dream-book told softly.",
+  "brazilian-tales":
+    "Machado and company: a marked attendant, a fortune-teller, and Aunt Zezé’s tears.",
   "a-hundred-and-seventy-chinese-poems":
     "Winter Night: an empty bed, a sea-sound in the curtains, and lyrics that never open on Battle.",
   "martin-bircks-youth":
