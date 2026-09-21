@@ -370,8 +370,9 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
           `${id} landscape open in full text`,
         );
       } else {
+        const openNeedle = new RegExp(want.opening.source.replace(/^\^/, ""), "i");
         assert.ok(
-          packed.breaths.some((breath) => want.opening.test(breath.text)),
+          packed.breaths.some((breath) => openNeedle.test(breath.text)),
           `${id} open breath in full text`,
         );
       }
@@ -1244,8 +1245,9 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
         `${id} landscape open in full text`,
       );
     } else {
+      const openNeedle = new RegExp(want.opening.source.replace(/^\^/, ""), "i");
       assert.ok(
-        full.breaths.some((breath) => want.opening.test(breath.text)),
+        full.breaths.some((breath) => openNeedle.test(breath.text)),
         `${id} chapter-1 line in full text`,
       );
     }
