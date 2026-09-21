@@ -553,7 +553,7 @@ test("Adapted remakes are whole stories — never waking/unwind/before-sleep sib
   }
 });
 
-test("Thea KEEP 14 is live Adapted; CUT shorts and uninvented remakes stay off", () => {
+test("FINAL LOCK KEEP 14 is live Adapted; CUT shorts and uninvented remakes stay off", () => {
   const uninvented = [
     "the-kiss-nice",
     "jewels-monaco",

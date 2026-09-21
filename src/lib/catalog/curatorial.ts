@@ -64,8 +64,11 @@ export const NEXT_FEATURED_TRACK_IDS = [
  * one shelf id / one read path each. Never splice a remake into waking /
  * unwind / before-sleep sibling sits (Mike lock Sep 20).
  *
- * CoS / Thea amended KEEP 14 (Sep 21). miss-brill-remake → miss-brill-adapted.
- * Novels-glam×10, Madame Bovary Tokyo, and every other remake stay off this
+ * FINAL LOCK — Mira + Thea + CoS (Sep 21): KEEP 14 only. Ignore any 15/20
+ * variant. miss-brill-remake → miss-brill-adapted. Novels-glam×10, Madame
+ * Bovary Tokyo, during-carnival, decapitated-chicken-lisbon, he-woke-changed,
+ * a-coat-worthy-of-respect, hunger-artist-milan, queen-of-spades-paris, the
+ * soft nine, and uninvented ids (the-kiss-nice, jewels-monaco) stay off this
  * list — not Featured, not Adapted. CUT shorts leave ritual lanes too.
  */
 export const ADAPTED_BY_SALON_IDS = [
