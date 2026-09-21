@@ -31,6 +31,8 @@ export const MIRA_STAMPED_POEM_IDS = [
   "goblin-market-and-other-poems",
   "the-black-christ-and-other-poems",
   "sword-blades-and-poppy-seed",
+  "precipitations",
+  "sour-grapes",
 ] as const;
 
 /** Waley 1918 headings from Winter Night through Last Poem (PG 42290). */

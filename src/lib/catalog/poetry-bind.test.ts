@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync, existsSync } from "node:fs";
 import test from "node:test";
 import { SHELF } from "./shelf.ts";
+import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import {
   FIRST_SCENE_TITLE,
   TIMED_SIT_TITLE,
@@ -224,4 +225,46 @@ test("Mira batch-2 poem-chapter binds stay one poem per scene", () => {
   const joined = sil!.breaths.map((b) => b.text).join("\n");
   assert.doesNotMatch(joined, /\bTHE sea\b/);
   assert.doesNotMatch(joined, /\bAFTER SUNSET\b/);
+});
+
+test("Mira CLEAR precipitations and sour-grapes stay poem-per-scene", () => {
+  const expect = {
+    precipitations: {
+      scenes: 116,
+      breaths: 1357,
+      first: "Midnight Worship:  Brooklyn Bridge",
+      reentry: /^In the rain$/,
+    },
+    "sour-grapes": {
+      scenes: 53,
+      breaths: 1201,
+      first: "The Late Singer",
+      reentry: /^Here it is spring again$/,
+    },
+  } as const;
+  for (const [id, want] of Object.entries(expect)) {
+    const full = load("texts", id);
+    assert.ok(full, id);
+    assert.equal(full!.scenes.length, want.scenes, `${id} scenes`);
+    assert.equal(full!.breaths.length, want.breaths, `${id} breaths`);
+    assert.equal(full!.scenes[0]?.title, want.first, id);
+    assert.match(full!.scenes[0]?.reentry ?? "", want.reentry, id);
+    assert.equal(
+      full!.scenes.some((scene) => /^(Chapter|Part|Introduction|Two Poems|Title)\b/i.test(scene.title)),
+      false,
+      id,
+    );
+    assert.equal(load("openings", id), null, `${id} stub opening must be gone`);
+    const work = SHELF.find((item) => item.id === id);
+    assert.equal(work?.form, "poem", id);
+    assert.equal(work?.opening, full!.scenes[0]?.reentry, `${id} shelf opening`);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, `${id} must stay off Featured`);
+  }
+  const midnight = load("texts", "precipitations")!;
+  const first = midnight.breaths.filter((b) => b.sceneId === midnight.scenes[0]!.id);
+  assert.equal(
+    first.some((b) => /ASCENSION|AUTUMN DUSK IN CENTRAL PARK/i.test(b.text)),
+    false,
+    "next poem leaked into Midnight Worship",
+  );
 });
