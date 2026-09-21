@@ -75,6 +75,9 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   bliss: { label: "London", region: "gb" },
   "a-hundred-and-seventy-chinese-poems": { label: "China", region: "cn" },
   "martin-bircks-youth": { label: "Stockholm", region: "se" },
+  steppenwolf: { label: "Basel / Germany", region: "de" },
+  shadowings: { label: "Japan", region: "jp" },
+  "brazilian-tales": { label: "Brazil", region: "br" },
 
   // Named examples
   botchan: { label: "Tokyo", region: "jp" },

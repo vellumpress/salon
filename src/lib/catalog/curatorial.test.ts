@@ -958,7 +958,9 @@ test("Martin Birck's Youth is a local before-sleep bind on Next, not locked reco
 test("Steppenwolf stays off this Next / Rituals pack", () => {
   const work = SHELF.find((item) => item.id === "steppenwolf");
   assert.ok(work);
-  assert.equal(work.local, undefined);
+  assert.equal(work.local, true);
+  assert.equal(work.gutenberg, 75756);
+  assert.equal(work.breaths, 770);
   for (const lane of RITUAL_LANES) {
     assert.equal(lane.workIds.includes("steppenwolf"), false, lane.id);
   }
