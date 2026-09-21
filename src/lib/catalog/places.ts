@@ -86,6 +86,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "strange-tales": { label: "China", region: "cn" },
   "short-stories-from-the-balkans": { label: "Romania", region: "ro" },
   "the-awakening": { label: "Louisiana", region: "us-south" },
+  tropic: { label: "Barbados", region: "bb" },
+  "there-is-confusion": { label: "New York / Richmond", region: "us" },
+  buddenbrooks: { label: "Lübeck", region: "de" },
+  "miss-lulu-bett": { label: "Midwest", region: "us" },
+  color: { label: "US lyric", region: "us" },
 
   // Named examples
   botchan: { label: "Tokyo", region: "jp" },

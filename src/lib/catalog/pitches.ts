@@ -13,7 +13,7 @@ export const PITCHES: Record<string, string> = {
   manhattan:
     "Dos Passos cuts New York as montage: arrivals, ads, and lives slicing across each other. The city as newsreel you can walk through.",
   tropic:
-    "Eric Walrond’s Caribbean stories of color, labor, and heat that refuse soft focus. Docks, rooms, and the weather that won’t apologize.",
+    "The whistle blew for eleven o'clock. Open Drought — a Barbados quarry at eleven, then the walk home through the marl. Period words for Black workers are already in this stretch; name them if you Host further. The stories continue.",
   berlin:
     "Berlin talks through Franz Biberkopf after prison — noise, politics, and fate in Döblin’s street choir. A city that will not let a man start clean.",
   passing:

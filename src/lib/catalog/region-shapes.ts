@@ -34,6 +34,7 @@ export type PlaceRegion =
   | "ir"
   | "kr"
   | "jm"
+  | "bb"
   | "lb"
   | "br"
   | "mx"
@@ -193,6 +194,10 @@ export const REGION_SHAPES: Record<PlaceRegion, RegionShape> = {
   jm: {
     viewBox: "0 0 28 16",
     d: "M3.6 7.2 10.4 4.4 18.2 4.2 24.4 7.4 23.2 11.6 16.6 13.4 8.8 12.8 4.2 10.2Z",
+  },
+  bb: {
+    viewBox: "0 0 16 28",
+    d: "M6.2 2.8 10.4 3.6 11.8 8.4 10.6 14.2 11.4 20.6 9.2 25.4 6.4 24.2 5.2 18.6 5.8 12.4 4.8 6.8Z",
   },
   lb: {
     viewBox: "0 0 14 20",
@@ -360,6 +365,7 @@ export const REGION_TONE: Record<PlaceRegion, "ink" | "red" | "blue" | "forest">
   ir: "forest",
   kr: "blue",
   jm: "forest",
+  bb: "forest",
   lb: "red",
   br: "forest",
   mx: "red",

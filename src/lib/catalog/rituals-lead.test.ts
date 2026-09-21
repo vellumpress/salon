@@ -36,6 +36,8 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
     ...FIRST_SESSION_RITUAL_IDS,
     "cane",
     "the-awakening",
+    "there-is-confusion",
+    "miss-lulu-bett",
   ]);
   assert.equal(forYou.workIds[0], "the-house-of-mirth");
   assert.equal(forYou.workIds[1], "quicksand");
@@ -67,6 +69,9 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
     "strange-tales",
     "short-stories-from-the-balkans",
     "a-few-figs-from-thistles",
+    "tropic",
+    "buddenbrooks",
+    "color",
   ]) {
     assert.equal(forYou.workIds.includes(id), false, id);
   }

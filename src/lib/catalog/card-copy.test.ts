@@ -1632,6 +1632,76 @@ test("Salon noon CLEAR ×5 load as local full binds on the Host open", () => {
   assert.equal(figs.scenes.length, 19);
 });
 
+test("Salon PM CLEAR ×5 load as local full binds on the Host open", () => {
+  const expect = {
+    tropic: {
+      scenes: 10,
+      breaths: 3260,
+      opening: /^The whistle blew for eleven o'clock\.$/,
+      scene: /^Drought$/,
+      absent: /Updated editions will replace/,
+    },
+    "there-is-confusion": {
+      scenes: 36,
+      breaths: 2014,
+      opening: /^JOANNA’S first consciousness/,
+      scene: /^Chapter I$/,
+      absent: /^But alas for poor Joel!/,
+    },
+    buddenbrooks: {
+      scenes: 63,
+      breaths: 1845,
+      opening: /^“And--and--what comes next\?”$/,
+      scene: /^Part One · Chapter I$/,
+      absent: /^TRANSLATOR/,
+    },
+    "miss-lulu-bett": {
+      scenes: 6,
+      breaths: 1712,
+      opening: /^The Deacons were at supper\./,
+      scene: /^April$/,
+      absent: /Project Gutenberg/,
+    },
+    color: {
+      scenes: 76,
+      breaths: 1192,
+      opening: /^I doubt not God is good, well-meaning, kind,$/,
+      scene: /^Yet Do I Marvel$/,
+      absent: /Updated editions will replace|be renamed\./,
+    },
+  } as const;
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.match(work!.opening ?? "", want.opening, id);
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /Featured/i, id);
+    assertNoStubOpening(id);
+    const full = textWork(id);
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.equal(work!.breaths, full.breaths.length, id);
+    assert.match(full.scenes[0]?.title ?? "", want.scene, id);
+    assert.match(full.breaths[0]?.text ?? "", want.opening, id);
+    assert.doesNotMatch(full.breaths.map((breath) => breath.text).join("\n"), want.absent, id);
+  }
+  const confusion = textWork("there-is-confusion");
+  const knee = confusion.breaths.findIndex((breath) => /father’s knee/.test(breath.text));
+  const mammy = confusion.breaths.findIndex((breath) => /Mammy, I’ll be a great man/.test(breath.text));
+  const alas = confusion.breaths.findIndex((breath) => /But alas for poor Joel!/.test(breath.text));
+  assert.ok(knee >= 0 && mammy > knee && alas > mammy);
+  assert.equal(confusion.scenes[0]?.title, "Chapter I");
+  const color = textWork("color");
+  assert.ok(color.scenes.some((scene) => scene.title === "Incident"));
+  assert.ok(color.scenes.some((scene) => scene.title === "Tableau"));
+  assert.equal(color.scenes.length, 76);
+  const budden = textWork("buddenbrooks");
+  assert.ok(budden.breaths.some((breath) => breath.text === "END OF VOLUME I"));
+  const lulu = textWork("miss-lulu-bett");
+  assert.equal(lulu.scenes[0]?.title, "April");
+  assert.equal(lulu.scenes.at(-1)?.title, "September");
+});
+
 test("homepage examples keep country + concrete sentence", () => {
   assert.equal(countryFor(SHELF.find((w) => w.id === "passing")!), "United States");
   assert.match(blurbFor("passing"), /color line/i);
