@@ -48,6 +48,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Leiba Zibal waits under the roof at Podeni for a stage that is already an hour late. Easter Candles only — never Brother Cœlestin. A later pogrom densifies; do not open there.",
   "the-awakening":
     "A green and yellow parrot at Grand Isle keeps repeating Allez vous-en. First sit is Chapter I. The whole novel continues; adultery Host-gates later.",
+  tropic:
+    "The whistle blew for eleven o'clock. Open Drought — a Barbados quarry at eleven, then the walk home through the marl. Period words for Black workers are already in this stretch; name them if you Host further. The stories continue.",
+  "there-is-confusion":
+    "Joanna climbs onto her father’s knee and asks for a story about somebody great. The sit runs through Mammy’s chair and stops before “But alas for poor Joel!” Chapter I continues.",
+  buddenbrooks:
+    "“And--and--what comes next?” Lübeck, the Mengstrasse house, Part One, Chapter I. This bind is the whole Lowe-Porter text of PG 72961. The novel continues.",
+  "miss-lulu-bett":
+    "The Deacons were at supper. A tulip plant under a gas jet — April, a Midwest household. Open there; the year continues through September.",
+  color:
+    "I doubt not God is good, well-meaning, kind. Open Yet Do I Marvel, then Incident — a Baltimore memory that speaks a slur; warn the room before that poem. Each poem is its own chapter; the book continues.",
   "songs-of-innocence-and-of-experience":
     "Blake’s paired songs: nursery light on one side, harder truths on the other. Read them as morning weather — clear, then clouded.",
   "second-april":
@@ -249,7 +259,13 @@ export const RITUAL_LANES: RitualLane[] = [
     id: FOR_YOU_LANE_ID,
     label: "For you",
     hint: "First sitting",
-    workIds: [...FIRST_SESSION_RITUAL_IDS, "cane", "the-awakening"],
+    workIds: [
+      ...FIRST_SESSION_RITUAL_IDS,
+      "cane",
+      "the-awakening",
+      "there-is-confusion",
+      "miss-lulu-bett",
+    ],
   },
   {
     id: SERIALIZE_LANE_ID,
@@ -290,6 +306,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "short-stories-from-the-balkans",
       "the-awakening",
       "a-few-figs-from-thistles",
+      "tropic",
+      "there-is-confusion",
+      "buddenbrooks",
+      "miss-lulu-bett",
+      "color",
       "the-gadfly",
       "ecstasy",
       "the-painted-veil",
@@ -484,6 +505,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "short-stories-from-the-balkans": 5,
   "the-awakening": 5,
   "a-few-figs-from-thistles": 5,
+  tropic: 5,
+  "there-is-confusion": 5,
+  buddenbrooks: 5,
+  "miss-lulu-bett": 5,
+  color: 5,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

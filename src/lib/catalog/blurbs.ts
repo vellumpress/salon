@@ -26,7 +26,7 @@ const BLURBS: Record<string, string> = {
     "Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset.",
   manhattan: "Dos Passos cuts New York as montage: arrivals, ads, and lives slicing across each other.",
   tropic:
-    "Walrond’s Caribbean stories of color, labor, and heat that refuse soft focus.",
+    "The whistle blew for eleven o'clock — Drought opens in Barbados.",
   berlin:
     "Berlin talks through Franz Biberkopf after prison — noise, politics, and fate in Döblin’s street choir.",
   passing:
@@ -538,7 +538,7 @@ const BLURBS: Record<string, string> = {
   hymen: "H.D. on marriage, myth, and the body’s public ceremony.",
   harmonium:
     "Stevens’ first book opens on The Snow Man — a mind of winter, never Earthy Anecdote.",
-  color: "Cullen’s first poems of race, beauty, and the God who may not be looking.",
+  color: "Open Yet Do I Marvel, then Incident; each poem is its own chapter.",
   "the-harp-weaver-and-other-poems": "Millay’s later lyrics, still spending the candle.",
   "sword-blades-and-poppy-seed": "Lowell’s imagist cut and the smoke afterward.",
   "can-grande-s-castle": "Lowell’s polyphonic prose — history as a set of rooms.",
@@ -619,6 +619,10 @@ const BLURBS: Record<string, string> = {
   "a-night-in-acadie": "Chopin’s Louisiana: heat, Catholic rooms, and women who already know the cost.",
   "the-awakening":
     "A green and yellow parrot at Grand Isle keeps repeating Allez vous-en.",
+  "there-is-confusion":
+    "Joanna on her father’s knee, through Mammy, and stop before poor Joel’s turn.",
+  buddenbrooks: "And what comes next — Lübeck, Part One, Chapter I.",
+  "miss-lulu-bett": "The Deacons were at supper, April in a Midwest household.",
   "a-hero-of-our-time":
     "Post from Tiflis: a dukhan crowd and camels at the foot of Mount Koishaur.",
   "strange-tales":

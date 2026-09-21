@@ -86,6 +86,10 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "strange-tales",
     "short-stories-from-the-balkans",
     "the-awakening",
+    "tropic",
+    "there-is-confusion",
+    "buddenbrooks",
+    "miss-lulu-bett",
   ]);
   assert.equal(curatorialTrack("quicksand"), "featured");
   assert.equal(curatorialTrack("the-house-of-mirth"), "featured");
@@ -1101,7 +1105,10 @@ test("Salon noon CLEAR ×5 are local Next / Rituals binds, never Featured", () =
     "quicksand",
     "botchan",
   ]);
-  assert.equal(forYou!.workIds.at(-1), "the-awakening");
+  const caneAt = forYou!.workIds.indexOf("cane");
+  const awakeningAt = forYou!.workIds.indexOf("the-awakening");
+  assert.ok(caneAt > 2);
+  assert.equal(awakeningAt, caneAt + 1);
   assert.equal(forYou!.workIds.includes("cane"), true);
   assert.equal(forYou!.workIds.includes("a-hero-of-our-time"), false);
   assert.equal(
@@ -1109,6 +1116,87 @@ test("Salon noon CLEAR ×5 are local Next / Rituals binds, never Featured", () =
     false,
   );
   assert.equal(curatorialTrack("a-few-figs-from-thistles"), "later");
+});
+
+test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => {
+  const expect = {
+    tropic: {
+      track: "next",
+      opening: /^The whistle blew for eleven o'clock\.$/,
+      breaths: 3260,
+      forYou: false,
+    },
+    "there-is-confusion": {
+      track: "next",
+      opening: /^JOANNA’S first consciousness/,
+      breaths: 2014,
+      forYou: true,
+    },
+    buddenbrooks: {
+      track: "next",
+      opening: /^“And--and--what comes next\?”$/,
+      breaths: 1845,
+      forYou: false,
+    },
+    "miss-lulu-bett": {
+      track: "next",
+      opening: /^The Deacons were at supper\.$/,
+      breaths: 1712,
+      forYou: true,
+    },
+    color: {
+      track: "later",
+      opening: /^I doubt not God is good, well-meaning, kind,$/,
+      breaths: 1192,
+      forYou: false,
+    },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  assert.ok(sleep);
+  assert.ok(forYou);
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.match(work!.opening ?? "", want.opening, id);
+    assert.ok(sleep!.workIds.includes(id), id);
+    assert.equal(forYou!.workIds.includes(id), want.forYou, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), want.track, id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(
+      (NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id),
+      want.track === "next",
+      id,
+    );
+  }
+  const cycle = ["tropic", "there-is-confusion", "buddenbrooks", "miss-lulu-bett", "color"];
+  const figs = sleep!.workIds.indexOf("a-few-figs-from-thistles");
+  const gadfly = sleep!.workIds.indexOf("the-gadfly");
+  let prev = figs;
+  for (const id of cycle) {
+    const at = sleep!.workIds.indexOf(id);
+    assert.ok(at > prev, `${id} follows the PM cycle order`);
+    assert.ok(at < gadfly, `${id} ahead of the Later pile`);
+    prev = at;
+  }
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(next.indexOf("tropic") > next.indexOf("the-awakening"));
+  assert.ok(next.indexOf("there-is-confusion") > next.indexOf("tropic"));
+  assert.ok(next.indexOf("buddenbrooks") > next.indexOf("there-is-confusion"));
+  assert.ok(next.indexOf("miss-lulu-bett") > next.indexOf("buddenbrooks"));
+  assert.equal(next.includes("color"), false);
+  assert.deepEqual(forYou!.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  assert.equal(forYou!.workIds.at(-2), "there-is-confusion");
+  assert.equal(forYou!.workIds.at(-1), "miss-lulu-bett");
+  assert.equal(sleep!.workIds[0], "quicksand");
 });
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {

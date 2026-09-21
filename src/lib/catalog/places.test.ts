@@ -102,6 +102,11 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "short-stories-from-the-balkans": { label: "Romania", region: "ro" },
     "the-awakening": { label: "Louisiana", region: "us-south" },
     "a-few-figs-from-thistles": { label: "United States", region: "us" },
+    tropic: { label: "Barbados", region: "bb" },
+    "there-is-confusion": { label: "New York / Richmond", region: "us" },
+    buddenbrooks: { label: "Lübeck", region: "de" },
+    "miss-lulu-bett": { label: "Midwest", region: "us" },
+    color: { label: "US lyric", region: "us" },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = shelfWork(id);
@@ -230,7 +235,7 @@ test("former no-place shelf rows now resolve a country chip", () => {
     breakdown: { label: "Palestine", region: "ps" },
     dybbuk: { label: "Ukraine", region: "ua" },
     iphigenia: { label: "Venezuela", region: "ve" },
-    tropic: { label: "Guyana", region: "gy" },
+    tropic: { label: "Barbados", region: "bb" },
     barbara: { label: "Venezuela", region: "ve" },
     "mama-blanca": { label: "Venezuela", region: "ve" },
     guatemala: { label: "Guatemala", region: "gt" },
