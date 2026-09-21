@@ -604,6 +604,41 @@ test("Adapted remakes are whole stories — never waking/unwind/before-sleep sib
   }
 });
 
+test("Thea provisional CUT shorts stay on Adapted until Mira confirms", () => {
+  const liveCut = [
+    "what-we-sold",
+    "decapitated-chicken-lisbon",
+    "what-she-borrowed",
+    "it-was-not-nervousness",
+    "during-carnival",
+    "happy-prince-hong-kong",
+  ] as const;
+  const uninvented = [
+    "garden-party-barcelona",
+    "the-kiss-nice",
+    "jewels-monaco",
+    "araby-seville",
+    "usher-prague",
+    "nightingale-vienna",
+    "rappaccini-florence",
+    "tobermory-rome",
+    "miss-brill-remake",
+  ] as const;
+  for (const id of liveCut) {
+    assert.equal(isAdaptedBySalon(id), true, id);
+    assert.equal(curatorialTrack(id), "adapted", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.ok(ADAPTED_WORKS.some((item) => item.id === id), id);
+  }
+  for (const id of uninvented) {
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(shelfWork(id), undefined, id);
+    assert.equal(ADAPTED_WORKS.some((item) => item.id === id), false, id);
+  }
+  assert.equal(isAdaptedBySalon("miss-brill-adapted"), true);
+  assert.equal(shelfWork("miss-brill-adapted")?.title, "Katherine Mansfield, Miss Brill recast");
+});
+
 test("novel remakes stay off Adapted, Featured, and ritual lanes", () => {
   const hostRequired = new Set([
     "madame-bovary-tokyo",

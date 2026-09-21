@@ -65,6 +65,13 @@ export const NEXT_FEATURED_TRACK_IDS = [
  * unwind / before-sleep sibling sits (Mike lock Sep 20). Novel remakes
  * (novels-glam×10 + Madame Bovary Tokyo) are soft-held off this list —
  * not Featured, not Adapted, not ritual-lane sits.
+ *
+ * Thea provisional A24 KEEP/CUT (Sep 21): do not cut any live shorts in this
+ * pass. Wait for Mira joint CUT before removing Thea's CUT nine. Leave KEEP
+ * ids on Adapted if already live; do not invent missing remakes
+ * (garden-party-barcelona, the-kiss-nice, jewels-monaco, araby-seville,
+ * usher-prague, nightingale-vienna, rappaccini-florence, tobermory-rome).
+ * Thea’s miss-brill-remake maps to live `miss-brill-adapted`.
  */
 export const ADAPTED_BY_SALON_IDS = [
   "miss-brill-adapted",
