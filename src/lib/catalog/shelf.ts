@@ -1663,11 +1663,11 @@ export const SHELF: ShelfWork[] = [
     year: 1925,
     form: "novel",
     language: "English",
-    minutes: 641,
+    minutes: 238,
     local: true,
     gutenberg: 64682,
     opening: "She gave a startled cry.",
-    breaths: 5127,
+    breaths: 1903,
     intro:
       "Someone tries the door — shuttered room, tight shoes, a kimono, and Walter’s name whispered. Hong Kong / treaty-port China, colonial household language (*amah*, “boys”), then cholera inland. The sit opens on “How shall I get out?” Name the frame if you Host further.",
   },

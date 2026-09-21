@@ -1230,8 +1230,10 @@ test("The Painted Veil opens on the shuttered door and skips the PREFACE", () =>
   );
   assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
   assert.equal(work!.breaths, full.breaths.length);
+  assert.equal(full.breaths.length, 1903);
   assert.match(full.breaths[0]?.text ?? "", /^She gave a startled cry/);
-  assert.ok(full.scenes.length > 20, "real chapter scenes through the novel");
+  assert.equal(full.scenes.length, 80);
+  assert.match(full.breaths.at(-1)?.text ?? "", /^THE END$/);
   assert.notEqual(full.breaths.at(-1)?.text, packed.breaths.at(-1)?.text);
 });
 
