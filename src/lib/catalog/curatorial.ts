@@ -60,8 +60,11 @@ export const NEXT_FEATURED_TRACK_IDS = [
 
 /**
  * Mira pack — Adapted by Salon lane only. Do not add to locked recommend / Next.
- * Whole-story remakes only: one shelf id / one read path each. Never splice a
- * remake into waking / unwind / before-sleep sibling sits (Mike lock Sep 20).
+ * Recasts are short stories only (Mike lock Sep 21). Whole-story remakes:
+ * one shelf id / one read path each. Never splice a remake into waking /
+ * unwind / before-sleep sibling sits (Mike lock Sep 20). Novel remakes
+ * (novels-glam×10 + Madame Bovary Tokyo) are soft-held off this list —
+ * not Featured, not Adapted, not ritual-lane sits.
  */
 export const ADAPTED_BY_SALON_IDS = [
   "miss-brill-adapted",
@@ -85,17 +88,6 @@ export const ADAPTED_BY_SALON_IDS = [
   "the-nose-cape-town",
   "queen-of-spades-paris",
   "decapitated-chicken-lisbon",
-  "madame-bovary-tokyo",
-  "dorian-gray-shanghai",
-  "anna-karenina-milan",
-  "jane-eyre-singapore",
-  "pride-prejudice-buenos-aires",
-  "dracula-istanbul",
-  "crime-punishment-cape-town",
-  "age-of-innocence-venice",
-  "tess-lisbon",
-  "scarlet-letter-kyoto",
-  "wuthering-heights-rio",
 ] as const;
 
 const FEATURED = new Set(FEATURED_CAROUSEL_IDS);

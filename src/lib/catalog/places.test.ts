@@ -171,7 +171,7 @@ test("Adapted by Salon keeps exactly three America-set remakes", () => {
     america,
     ["prefer-not", "between-the-drop-and-the-water", "the-pattern"],
   );
-  assert.equal(ADAPTED_BY_SALON_IDS.length, 32);
+  assert.equal(ADAPTED_BY_SALON_IDS.length, 21);
   assert.equal(america.length, 3);
 });
 

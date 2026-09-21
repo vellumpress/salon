@@ -34,7 +34,7 @@ export const LOCAL_WORKS: ShelfWork[] = SHELF.filter((item) => isBoundLocal(item
 
 /** Homepage classics strip — remakes live on the Adapted by Salon lane. */
 export const CLASSIC_LOCAL_WORKS: ShelfWork[] = LOCAL_WORKS.filter(
-  (item) => !isAdaptedBySalon(item.id),
+  (item) => !isAdaptedBySalon(item.id) && item.author !== "Salon",
 );
 
 export const ADAPTED_WORKS: ShelfWork[] = ADAPTED_BY_SALON_IDS.flatMap((id) => {

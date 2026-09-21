@@ -218,95 +218,21 @@ const EXPECT = {
     credit: /After Quiroga, The Decapitated Chicken, 1909/,
     scene: /villa|tagus/i,
   },
-  "madame-bovary-tokyo": {
-    title: "Gustave Flaubert, Madame Bovary recast",
-    opening: /^Emi woke before the light finished deciding what color to be/,
-    last: /collected itself/,
-    place: { label: "Tokyo", region: "jp" },
-    credit: /After Flaubert, Madame Bovary, 1857/,
-    scene: /asaka/i,
-  },
-  "dorian-gray-shanghai": {
-    title: "Oscar Wilde, The Picture of Dorian Gray recast",
-    opening: /^Bai Sheng painted in a top-floor studio above the Bund/,
-    last: /keep their own names in the city’s mouth/,
-    place: { label: "Shanghai", region: "cn" },
-    credit: /After Wilde, The Picture of Dorian Gray, 1890/,
-    scene: /studio on the bund/i,
-  },
-  "anna-karenina-milan": {
-    title: "Leo Tolstoy, Anna Karenina recast",
-    opening: /^All happy families in Milan resembled one another/,
-    last: /unfinished grief of another plot/,
-    place: { label: "Milan", region: "it" },
-    credit: /After Tolstoy, Anna Karenina, 1878/,
-    scene: /happy family/i,
-  },
-  "jane-eyre-singapore": {
-    title: "Charlotte Brontë, Jane Eyre recast",
-    opening: /^Mei-Lin Teo learned early that charity could feel like poor ventilation/,
-    last: /answered to Singapore/,
-    place: { label: "Singapore", region: "sg" },
-    credit: /After Charlotte Brontë, Jane Eyre, 1847/,
-    scene: /katong/i,
-  },
-  "pride-prejudice-buenos-aires": {
-    title: "Jane Austen, Pride and Prejudice recast",
-    opening: /^It is a truth universally acknowledged in Buenos Aires/,
-    last: /bless the dark/,
-    place: { label: "Buenos Aires", region: "ar" },
-    credit: /After Austen, Pride and Prejudice, 1813/,
-    scene: /recoleta/i,
-  },
-  "dracula-istanbul": {
-    title: "Bram Stoker, Dracula recast",
-    opening: /^Yunus Akman steamed up the Bosphorus toward a yalı/,
-    last: /war she did not choose and would help end/,
-    place: { label: "Istanbul", region: "tr" },
-    credit: /After Stoker, Dracula, 1897/,
-    scene: /yunus|yal[ıi]/i,
-  },
-  "crime-punishment-cape-town": {
-    title: "Fyodor Dostoevsky, Crime and Punishment recast",
-    opening: /^Ruan Steyn woke in a Long Street garret/,
-    last: /A24 cool/,
-    place: { label: "Cape Town", region: "za" },
-    credit: /After Dostoevsky, Crime and Punishment, 1866/,
-    scene: /garret/i,
-  },
-  "age-of-innocence-venice": {
-    title: "Edith Wharton, The Age of Innocence recast",
-    opening: /^Niccolò Archi arrived at La Fenice/,
-    last: /Not a different book/,
-    place: { label: "Venice", region: "it" },
-    credit: /After Wharton, The Age of Innocence, 1920/,
-    scene: /fenice/i,
-  },
-  "tess-lisbon": {
-    title: "Thomas Hardy, Tess of the d'Urbervilles recast",
-    opening: /^João Duarte heard his spent nobility in a village bar/,
-    last: /Hardy advances/,
-    place: { label: "Lisbon", region: "pt" },
-    credit: /After Hardy, Tess of the d'Urbervilles, 1891/,
-    scene: /name in a bar/i,
-  },
-  "scarlet-letter-kyoto": {
-    title: "Nathaniel Hawthorne, The Scarlet Letter recast",
-    opening: /^Hisako stood in public shame at a Kyoto plaza/,
-    last: /Fidelity held/,
-    place: { label: "Kyoto", region: "jp" },
-    credit: /After Hawthorne, The Scarlet Letter, 1850/,
-    scene: /scaffold/i,
-  },
-  "wuthering-heights-rio": {
-    title: "Emily Brontë, Wuthering Heights recast",
-    opening: /^Sr\. Vargas brought Heitor to the hill estate above Rio/,
-    last: /softening without erase/,
-    place: { label: "Rio de Janeiro", region: "br" },
-    credit: /After Emily Brontë, Wuthering Heights, 1847/,
-    scene: /foundling/i,
-  },
 } as const;
+
+const NOVEL_REMAKE_IDS = [
+  "madame-bovary-tokyo",
+  "dorian-gray-shanghai",
+  "anna-karenina-milan",
+  "jane-eyre-singapore",
+  "pride-prejudice-buenos-aires",
+  "dracula-istanbul",
+  "crime-punishment-cape-town",
+  "age-of-innocence-venice",
+  "tess-lisbon",
+  "scarlet-letter-kyoto",
+  "wuthering-heights-rio",
+] as const;
 
 test("Adapted remakes are local sits with source credit, not locked recommend", () => {
   const unwind = RITUAL_LANES.find((lane) => lane.id === "unwind");
@@ -477,6 +403,14 @@ test("homepage classics strip does not mix in Adapted remakes", () => {
   assert.ok(CLASSIC_LOCAL_WORKS.some((item) => item.id === "passing"));
   assert.ok(LOCAL_WORKS.some((item) => item.id === "the-pattern"));
   assert.ok(LOCAL_WORKS.some((item) => item.id === "he-woke-changed"));
+  assert.equal(
+    CLASSIC_LOCAL_WORKS.some((item) => item.author === "Salon"),
+    false,
+  );
+  for (const id of NOVEL_REMAKE_IDS) {
+    assert.equal(ADAPTED_WORKS.some((item) => item.id === id), false, id);
+    assert.equal(CLASSIC_LOCAL_WORKS.some((item) => item.id === id), false, id);
+  }
 });
 
 test("homepage search is local binds only — no Gutenberg-only dead ends", () => {
@@ -557,18 +491,20 @@ test("routes and components have no reader-facing Featured label", () => {
   assert.deepEqual(hits, []);
 });
 
-test("Madame Bovary Tokyo is one Adapted book, not three timed sits", () => {
+test("Madame Bovary Tokyo is soft-held off Adapted — not Featured, not a timed sit", () => {
   const id = "madame-bovary-tokyo";
   const gone = [
     "madame-bovary-tokyo-waking",
     "madame-bovary-tokyo-unwind",
     "madame-bovary-tokyo-before-sleep",
   ] as const;
-  assert.equal(isAdaptedBySalon(id), true);
-  assert.equal(curatorialTrack(id), "adapted");
+  assert.equal(isAdaptedBySalon(id), false);
+  assert.notEqual(curatorialTrack(id), "adapted");
+  assert.notEqual(curatorialTrack(id), "featured");
   assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false);
   assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false);
+  assert.equal(ADAPTED_WORKS.some((item) => item.id === id), false);
   for (const sibling of gone) {
     assert.equal(isAdaptedBySalon(sibling), false, sibling);
     assert.equal(shelfWork(sibling), undefined, sibling);
@@ -608,7 +544,7 @@ test("Adapted remakes are whole stories — never waking/unwind/before-sleep sib
     ADAPTED_BY_SALON_IDS.filter((id) => sitSuffix.test(id)),
     [],
   );
-  assert.equal(ADAPTED_BY_SALON_IDS.length, 32);
+  assert.equal(ADAPTED_BY_SALON_IDS.length, 21);
   const titles = ADAPTED_BY_SALON_IDS.map((id) => {
     const work = shelfWork(id);
     assert.ok(work, id);
@@ -633,7 +569,7 @@ test("Adapted remakes are whole stories — never waking/unwind/before-sleep sib
     assert.deepEqual(spliced, [], lane.id);
   }
 
-  const priorAndGlam = [
+  const shortRemakes = [
     "miss-brill-adapted",
     "prefer-not",
     "late-season",
@@ -656,45 +592,21 @@ test("Adapted remakes are whole stories — never waking/unwind/before-sleep sib
     "queen-of-spades-paris",
     "decapitated-chicken-lisbon",
   ] as const;
-  const novelsGlam = [
-    "dorian-gray-shanghai",
-    "anna-karenina-milan",
-    "jane-eyre-singapore",
-    "pride-prejudice-buenos-aires",
-    "dracula-istanbul",
-    "crime-punishment-cape-town",
-    "age-of-innocence-venice",
-    "tess-lisbon",
-    "scarlet-letter-kyoto",
-    "wuthering-heights-rio",
-  ] as const;
-  assert.deepEqual([...ADAPTED_BY_SALON_IDS.slice(0, 21)], [...priorAndGlam]);
-  assert.equal(ADAPTED_BY_SALON_IDS[21], "madame-bovary-tokyo");
-  assert.deepEqual([...ADAPTED_BY_SALON_IDS.slice(22)], [...novelsGlam]);
-  for (const id of priorAndGlam) {
+  assert.deepEqual([...ADAPTED_BY_SALON_IDS], [...shortRemakes]);
+  for (const id of shortRemakes) {
     assert.ok(LANE[id], `${id} stays one whole remake on a ritual lane`);
     assert.equal(sitSuffix.test(id), false, id);
   }
-  for (const id of novelsGlam) {
+  for (const id of NOVEL_REMAKE_IDS) {
+    assert.equal(isAdaptedBySalon(id), false, id);
     assert.equal(LANE[id], undefined, `${id} is not a timed sit`);
     assert.equal(sitSuffix.test(id), false, id);
   }
 });
 
-test("novels-glam-10 remakes are whole Adapted books, not timed sits", () => {
-  const novelsGlam = [
-    "dorian-gray-shanghai",
-    "anna-karenina-milan",
-    "jane-eyre-singapore",
-    "pride-prejudice-buenos-aires",
-    "dracula-istanbul",
-    "crime-punishment-cape-town",
-    "age-of-innocence-venice",
-    "tess-lisbon",
-    "scarlet-letter-kyoto",
-    "wuthering-heights-rio",
-  ] as const;
+test("novel remakes stay off Adapted, Featured, and ritual lanes", () => {
   const hostRequired = new Set([
+    "madame-bovary-tokyo",
     "dorian-gray-shanghai",
     "anna-karenina-milan",
     "jane-eyre-singapore",
@@ -705,18 +617,22 @@ test("novels-glam-10 remakes are whole Adapted books, not timed sits", () => {
     "wuthering-heights-rio",
   ]);
   const classics: Record<string, { id: string; title: string }> = {
+    "madame-bovary-tokyo": { id: "bovary", title: "Madame Bovary" },
     "dorian-gray-shanghai": { id: "dorian", title: "The Picture of Dorian Gray" },
     "anna-karenina-milan": { id: "anna", title: "Anna Karenina" },
     "dracula-istanbul": { id: "dracula", title: "Dracula" },
     "crime-punishment-cape-town": { id: "crime", title: "Crime and Punishment" },
     "age-of-innocence-venice": { id: "the-age-of-innocence", title: "The Age of Innocence" },
   };
-  for (const id of novelsGlam) {
-    assert.equal(isAdaptedBySalon(id), true, id);
-    assert.equal(curatorialTrack(id), "adapted", id);
+  for (const id of NOVEL_REMAKE_IDS) {
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.notEqual(curatorialTrack(id), "adapted", id);
+    assert.notEqual(curatorialTrack(id), "featured", id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
     assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
+    assert.equal(ADAPTED_WORKS.some((item) => item.id === id), false, id);
+    assert.equal(CLASSIC_LOCAL_WORKS.some((item) => item.id === id), false, id);
     for (const suffix of ["waking", "unwind", "before-sleep"] as const) {
       const sibling = `${id}-${suffix}`;
       assert.equal(isAdaptedBySalon(sibling), false, sibling);

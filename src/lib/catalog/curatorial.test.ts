@@ -165,17 +165,6 @@ test("Adapted by Salon remakes are their own track — never locked recommend or
       "the-nose-cape-town",
       "queen-of-spades-paris",
       "decapitated-chicken-lisbon",
-      "madame-bovary-tokyo",
-      "dorian-gray-shanghai",
-      "anna-karenina-milan",
-      "jane-eyre-singapore",
-      "pride-prejudice-buenos-aires",
-      "dracula-istanbul",
-      "crime-punishment-cape-town",
-      "age-of-innocence-venice",
-      "tess-lisbon",
-      "scarlet-letter-kyoto",
-      "wuthering-heights-rio",
     ],
   );
   for (const id of ADAPTED_BY_SALON_IDS) {
@@ -190,6 +179,24 @@ test("Adapted by Salon remakes are their own track — never locked recommend or
   assert.ok(garden);
   assert.equal(garden!.title.startsWith("The Garden Party"), true);
   assert.equal(curatorialTrack("the-garden-party-and-other-stories"), "later");
+  for (const id of [
+    "madame-bovary-tokyo",
+    "dorian-gray-shanghai",
+    "anna-karenina-milan",
+    "jane-eyre-singapore",
+    "pride-prejudice-buenos-aires",
+    "dracula-istanbul",
+    "crime-punishment-cape-town",
+    "age-of-innocence-venice",
+    "tess-lisbon",
+    "scarlet-letter-kyoto",
+    "wuthering-heights-rio",
+  ]) {
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.notEqual(curatorialTrack(id), "adapted", id);
+    assert.notEqual(curatorialTrack(id), "featured", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+  }
 });
 
 test("The Attendant’s Confession is a local before-sleep bind on Next", () => {
