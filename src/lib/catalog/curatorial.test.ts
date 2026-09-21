@@ -144,6 +144,7 @@ test("Adapted by Salon remakes are their own track — never locked recommend or
   assert.deepEqual(
     [...ADAPTED_BY_SALON_IDS],
     [
+      "prefer-not",
       "bliss-tokyo",
       "masque-rio",
       "the-pattern",
@@ -157,7 +158,6 @@ test("Adapted by Salon remakes are their own track — never locked recommend or
       "usher-prague",
       "araby-seville",
       "between-the-drop-and-the-water",
-      "prefer-not",
     ],
   );
   for (const id of ADAPTED_BY_SALON_IDS) {

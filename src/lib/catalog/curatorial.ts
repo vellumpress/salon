@@ -72,6 +72,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
  * list — not Featured, not Adapted. CUT shorts leave ritual lanes too.
  */
 export const ADAPTED_BY_SALON_IDS = [
+  "prefer-not",
   "bliss-tokyo",
   "masque-rio",
   "the-pattern",
@@ -85,7 +86,6 @@ export const ADAPTED_BY_SALON_IDS = [
   "usher-prague",
   "araby-seville",
   "between-the-drop-and-the-water",
-  "prefer-not",
 ] as const;
 
 const FEATURED = new Set(FEATURED_CAROUSEL_IDS);

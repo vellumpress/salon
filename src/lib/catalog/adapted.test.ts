@@ -46,7 +46,7 @@ const EXPECT = {
   "miss-brill-adapted": {
     title: "Katherine Mansfield, Miss Brill recast",
     opening: /^Miss Brill put on her coat the way other people put on a face/,
-    last: /the city kept casting itself without her/,
+    last: /Menton kept casting itself without her/,
     place: { label: "Menton / French Riviera", region: "fr" },
     credit: /After Mansfield, Miss Brill, 1920/,
     scene: /river park/i,
@@ -61,7 +61,7 @@ const EXPECT = {
   },
   "late-season": {
     title: "Anton Chekhov, The Lady with the Dog recast",
-    opening: /^Dmitri Gurov came to Cape May in September/,
+    opening: /^Dmitri Gurov came to Yalta in September/,
     last: /harder to put down/,
     place: { label: "Yalta / Moscow", region: "ru" },
     credit: /After Chekhov, The Lady with the Dog, 1899/,
@@ -526,6 +526,7 @@ test("Adapted remakes are whole stories — never waking/unwind/before-sleep sib
   }
 
   const shortRemakes = [
+    "prefer-not",
     "bliss-tokyo",
     "masque-rio",
     "the-pattern",
@@ -539,7 +540,6 @@ test("Adapted remakes are whole stories — never waking/unwind/before-sleep sib
     "usher-prague",
     "araby-seville",
     "between-the-drop-and-the-water",
-    "prefer-not",
   ] as const;
   assert.deepEqual([...ADAPTED_BY_SALON_IDS], [...shortRemakes]);
   for (const id of shortRemakes) {

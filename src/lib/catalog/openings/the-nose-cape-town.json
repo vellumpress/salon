@@ -4,7 +4,7 @@
   "author": "Salon",
   "year": "2026",
   "note": "A Sea Point assessor wakes without his nose; on Long Street the missing feature has better meetings than he does. After Gogol, The Nose, 1836.",
-  "minutes": 7,
+  "minutes": 2,
   "cover": "",
   "coverAlt": "",
   "scenes": [
@@ -20,150 +20,65 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Senior Assessor van Wyk—title polished harder than his shoes—woke in his Sea Point flat to a flatness where his nose should have been."
+      "text": "Senior Assessor van Wyk—title polished harder than his shoes—woke in his Sea Point flat to a flatness where his nose should have been. Mirror. Fingers. Smooth skin, absurd as a censored photograph. He screamed into a towel so the neighbors would not become witnesses."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "Mirror. Fingers."
+      "text": "Without a nose he could not be seen correctly in Cape Town’s small republic of rank: not at the Waterfront restaurants where deals wore linen, not in the offices where a face was a signature. He wrapped a scarf high and took a ride into the city, rage making him precise."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "Smooth skin, absurd as a censored photograph."
+      "text": "Near Long Street he saw it."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "He screamed into a towel so the neighbors would not become witnesses."
+      "text": "His nose—his own nose—in a tailored jacket, stepping from a car with the calm of someone late for a better meeting. It (he? Rank clung to it like cologne) entered a building as if it held a higher post than van Wyk had ever been granted. van Wyk followed, stammering protocol at a security desk that did not recognize a man arguing with his own feature."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "Without a nose he could not be seen correctly in Cape Town’s small republic of rank: not at the Waterfront restaurants where deals wore linen, not in the offices where a face was a signature."
+      "text": "van Wyk: You belong on my face."
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "He wrapped a scarf high and took a ride into the city, rage making him precise."
+      "text": "He hissed it in a corridor smelling of coffee and ambition."
     },
     {
       "id": "s0-6",
       "sceneId": "s0",
-      "text": "Near Long Street he saw it."
+      "text": "The nose looked at him the way successful people look at requests. The Nose: I am my own person now."
     },
     {
       "id": "s0-7",
       "sceneId": "s0",
-      "text": "His nose—his own nose—in a tailored jacket, stepping from a car with the calm of someone late for a better meeting."
+      "text": "It said—or seemed to say—and vanished into an elevator whose numbers did not include van Wyk's floor."
     },
     {
       "id": "s0-8",
       "sceneId": "s0",
-      "text": "It (he? Rank clung to it like cologne) entered a building as if it held a higher post than van Wyk had ever been granted. van Wyk followed, stammering protocol at a security desk that did not recognize a man arguing with his own feature. van Wyk: You belong on my face."
+      "text": "Days of humiliation: barbers who refused the joke, police who suggested therapy, a newspaper that would not print the advertisement for fear of looking provincial. Table Mountain watched, indifferent, glamorous as always. van Wyk drafted letters to officials who loved order and received silence that was also order."
     },
     {
       "id": "s0-9",
       "sceneId": "s0",
-      "text": "He hissed it in a corridor smelling of coffee and ambition."
+      "text": "Then—morning. The nose was back on his face, as if it had never taken a meeting. No apology. No story. He touched it in the Sea Point light and laughed a short, bureaucratic laugh. He dressed carefully. He went out to be seen."
     },
     {
       "id": "s0-10",
       "sceneId": "s0",
-      "text": "The nose looked at him the way successful people look at requests."
+      "text": "In the café someone mentioned a strange rumor about a nose walking alone near the Waterfront. van Wyk stirred his coffee and said nothing. Cape Town continued its bright commerce of surfaces. He tipped well. He kept his profile turned to the good side of the glass, where rank, once restored, prefers to live."
     },
     {
       "id": "s0-11",
       "sceneId": "s0",
-      "text": "The Nose: I am my own person now."
+      "text": "He drafted a complaint to a ministry that loved order and received a form letter about mental wellness initiatives. A barber on Long Street refused the chair with a courtesy that cut deeper than mockery. At the Waterfront he watched his nose—or a nose wearing his profile—take a meeting on a terrace and tip the waiter like a man who had always belonged."
     },
     {
       "id": "s0-12",
-      "sceneId": "s0",
-      "text": "It said—or seemed to say—and vanished into an elevator whose numbers did not include van Wyk's floor."
-    },
-    {
-      "id": "s0-13",
-      "sceneId": "s0",
-      "text": "Days of humiliation: barbers who refused the joke, police who suggested therapy, a newspaper that would not print the advertisement for fear of looking provincial."
-    },
-    {
-      "id": "s0-14",
-      "sceneId": "s0",
-      "text": "Table Mountain watched, indifferent, glamorous as always. van Wyk drafted letters to officials who loved order and received silence that was also order."
-    },
-    {
-      "id": "s0-15",
-      "sceneId": "s0",
-      "text": "Then—morning."
-    },
-    {
-      "id": "s0-16",
-      "sceneId": "s0",
-      "text": "The nose was back on his face, as if it had never taken a meeting."
-    },
-    {
-      "id": "s0-17",
-      "sceneId": "s0",
-      "text": "No apology."
-    },
-    {
-      "id": "s0-18",
-      "sceneId": "s0",
-      "text": "No story."
-    },
-    {
-      "id": "s0-19",
-      "sceneId": "s0",
-      "text": "He touched it in the Sea Point light and laughed a short, bureaucratic laugh."
-    },
-    {
-      "id": "s0-20",
-      "sceneId": "s0",
-      "text": "He dressed carefully."
-    },
-    {
-      "id": "s0-21",
-      "sceneId": "s0",
-      "text": "He went out to be seen."
-    },
-    {
-      "id": "s0-22",
-      "sceneId": "s0",
-      "text": "In the café someone mentioned a strange rumor about a nose walking alone near the Waterfront. van Wyk stirred his coffee and said nothing."
-    },
-    {
-      "id": "s0-23",
-      "sceneId": "s0",
-      "text": "Cape Town continued its bright commerce of surfaces."
-    },
-    {
-      "id": "s0-24",
-      "sceneId": "s0",
-      "text": "He tipped well."
-    },
-    {
-      "id": "s0-25",
-      "sceneId": "s0",
-      "text": "He kept his profile turned to the good side of the glass, where rank, once restored, prefers to live."
-    },
-    {
-      "id": "s0-26",
-      "sceneId": "s0",
-      "text": "He drafted a complaint to a ministry that loved order and received a form letter about mental wellness initiatives."
-    },
-    {
-      "id": "s0-27",
-      "sceneId": "s0",
-      "text": "A barber on Long Street refused the chair with a courtesy that cut deeper than mockery."
-    },
-    {
-      "id": "s0-28",
-      "sceneId": "s0",
-      "text": "At the Waterfront he watched his nose—or a nose wearing his profile—take a meeting on a terrace and tip the waiter like a man who had always belonged."
-    },
-    {
-      "id": "s0-29",
       "sceneId": "s0",
       "text": "The city kept its evening face—Cape Town, 2026, glamorous enough to make cruelty look like weather—and the story settled where phone light finds it: not far from sleep, not far from waking, exact as a held breath."
     }

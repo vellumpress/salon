@@ -125,7 +125,7 @@ const BLURBS: Record<string, string> = {
   "prefer-not":
     "A midtown clerk prefers not to — and a gentle office learns the shape of its limits.",
   "late-season":
-    "Off-season Cape May, a small white dog, and an affair that will not stay temporary.",
+    "Off-season Yalta, a small white dog, and an affair that will not stay temporary.",
   "between-the-drop-and-the-water":
     "A rope fails—or seems to—until the Hudson remembers what it meant.",
   "he-woke-changed":

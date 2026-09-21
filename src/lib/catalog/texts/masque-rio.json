@@ -4,7 +4,7 @@
   "author": "Salon",
   "year": "2026",
   "note": "A sealed hillside compound above Rio, seven rooms of curated light, and a guest who does not RSVP to plague. After Poe, The Masque of the Red Death, 1842.",
-  "minutes": 8,
+  "minutes": 3,
   "cover": "",
   "coverAlt": "",
   "scenes": [
@@ -20,212 +20,52 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "While the fever moved through the favelas and the hospital corridors like a red rumor with teeth, Príncipe Otávio sealed his compound above Guanabara Bay."
+      "text": "While the fever moved through the favelas and the hospital corridors like a red rumor with teeth, Príncipe Otávio sealed his compound above Guanabara Bay. Gates welded to certainty. Generators humming like well-fed animals. Private security with polite weapons and earpieces that whispered only good news. He invited a hundred friends who still smelled of perfume rather than antiseptic, who arrived in cars with tinted glass and left the city’s sirens below them like a problem for other people."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "Gates welded to certainty."
+      "text": "“We will outlast it,” Otávio said, pouring wine the color of good bruises, his cufflinks catching the chandelier. “Taste is a form of quarantine. The street can keep its tragedies; we will keep our nights.”"
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "Generators humming like well-fed animals."
+      "text": "He designed the evening as a sequence of rooms cut into the hillside mansion—blue, purple, green, orange, white, violet—each lit to make faces into theater, each doorway a change of climate. Musicians rotated through corners. Masks arrived from a designer who charged for secrecy. The seventh room was black, lit only by a scarlet spill across the carpet from a stained-glass slit, and in it stood a clock of dark jacaranda that struck the hour with a sound so final that dancers froze mid-gesture, smiling as if caught stealing. When the echo died they laughed too loudly and resumed, wine trembling in their glasses."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "Private security with polite weapons and earpieces that whispered only good news."
+      "text": "Outside the walls, Rio continued its argument with mortality: ambulances braiding the avenues, church doors open to heat, a carnival rehearsal cancelled without announcement. Inside, Otávio moved like a host who had conquered weather. He kissed cheeks. He corrected a lighting cue. He told a senator’s wife that fear was a failure of imagination."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "He invited a hundred friends who still smelled of perfume rather than antiseptic, who arrived in cars with tinted glass and left the city’s sirens below them like a problem for other people."
+      "text": "Near midnight the clock struck again, and the black room acquired a guest no one remembered admitting: tall, wrapped as if in a burial sheet stained at the face and breast with a red too exact to be costume-shop irony. The revelers parted. Someone swore softly in Portuguese. Someone else called it brilliant—commitment to theme, the kind of joke that proves you are not afraid."
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "“We will outlast it,” Otávio said, pouring wine the color of good bruises, his cufflinks catching the chandelier."
+      "text": "Otávio’s anger arrived before his fear, vanity’s preferred order. “Who dares this?” He strode through the colored rooms with a dagger borrowed from spectacle—through blue and purple and green—the crowd falling away from him like tide from a rock. In orange a woman laughed and then stopped laughing. In white a man crossed himself without noticing. The violet room smelled suddenly of metal."
     },
     {
       "id": "s0-6",
       "sceneId": "s0",
-      "text": "“Taste is a form of quarantine."
+      "text": "In the black chamber Otávio reached for the shrouded face—"
     },
     {
       "id": "s0-7",
       "sceneId": "s0",
-      "text": "The street can keep its tragedies; we will keep our nights.”"
+      "text": "—and found no body firm enough to punish. The figure was the fever’s manners: presence without negotiation, intimacy without name. Otávio’s own chest bloomed a sudden wet heat beneath his silk. He fell among the scarlet light as if the carpet had been waiting for him since the architect’s first sketch."
     },
     {
       "id": "s0-8",
       "sceneId": "s0",
-      "text": "He designed the evening as a sequence of rooms cut into the hillside mansion—blue, purple, green, orange, white, violet—each lit to make faces into theater, each doorway a change of climate."
+      "text": "Then the rooms understood, one after another, the way a rumor understands a city. Dancers found the red mark on wrist, throat, mouth. Security radios hissed and went useless. Someone tried the gate app and watched the signal die. The clock struck once more, and the compound—glamorous, sealed, certain—became only another address the plague had learned by walking uphill."
     },
     {
       "id": "s0-9",
       "sceneId": "s0",
-      "text": "Musicians rotated through corners."
-    },
-    {
-      "id": "s0-10",
-      "sceneId": "s0",
-      "text": "Masks arrived from a designer who charged for secrecy."
-    },
-    {
-      "id": "s0-11",
-      "sceneId": "s0",
-      "text": "The seventh room was black, lit only by a scarlet spill across the carpet from a stained-glass slit, and in it stood a clock of dark jacaranda that struck the hour with a sound so final that dancers froze mid-gesture, smiling as if caught stealing."
-    },
-    {
-      "id": "s0-12",
-      "sceneId": "s0",
-      "text": "When the echo died they laughed too loudly and resumed, wine trembling in their glasses."
-    },
-    {
-      "id": "s0-13",
-      "sceneId": "s0",
-      "text": "Outside the walls, Rio continued its argument with mortality: ambulances braiding the avenues, church doors open to heat, a carnival rehearsal cancelled without announcement."
-    },
-    {
-      "id": "s0-14",
-      "sceneId": "s0",
-      "text": "Inside, Otávio moved like a host who had conquered weather."
-    },
-    {
-      "id": "s0-15",
-      "sceneId": "s0",
-      "text": "He kissed cheeks."
-    },
-    {
-      "id": "s0-16",
-      "sceneId": "s0",
-      "text": "He corrected a lighting cue."
-    },
-    {
-      "id": "s0-17",
-      "sceneId": "s0",
-      "text": "He told a senator’s wife that fear was a failure of imagination."
-    },
-    {
-      "id": "s0-18",
-      "sceneId": "s0",
-      "text": "Near midnight the clock struck again, and the black room acquired a guest no one remembered admitting: tall, wrapped as if in a burial sheet stained at the face and breast with a red too exact to be costume-shop irony."
-    },
-    {
-      "id": "s0-19",
-      "sceneId": "s0",
-      "text": "The revelers parted."
-    },
-    {
-      "id": "s0-20",
-      "sceneId": "s0",
-      "text": "Someone swore softly in Portuguese."
-    },
-    {
-      "id": "s0-21",
-      "sceneId": "s0",
-      "text": "Someone else called it brilliant—commitment to theme, the kind of joke that proves you are not afraid."
-    },
-    {
-      "id": "s0-22",
-      "sceneId": "s0",
-      "text": "Otávio’s anger arrived before his fear, vanity’s preferred order."
-    },
-    {
-      "id": "s0-23",
-      "sceneId": "s0",
-      "text": "“Who dares this?”"
-    },
-    {
-      "id": "s0-24",
-      "sceneId": "s0",
-      "text": "He strode through the colored rooms with a dagger borrowed from spectacle—through blue and purple and green—the crowd falling away from him like tide from a rock."
-    },
-    {
-      "id": "s0-25",
-      "sceneId": "s0",
-      "text": "In orange a woman laughed and then stopped laughing."
-    },
-    {
-      "id": "s0-26",
-      "sceneId": "s0",
-      "text": "In white a man crossed himself without noticing."
-    },
-    {
-      "id": "s0-27",
-      "sceneId": "s0",
-      "text": "The violet room smelled suddenly of metal."
-    },
-    {
-      "id": "s0-28",
-      "sceneId": "s0",
-      "text": "In the black chamber Otávio reached for the shrouded face— —and found no body firm enough to punish."
-    },
-    {
-      "id": "s0-29",
-      "sceneId": "s0",
-      "text": "The figure was the fever’s manners: presence without negotiation, intimacy without name."
-    },
-    {
-      "id": "s0-30",
-      "sceneId": "s0",
-      "text": "Otávio’s own chest bloomed a sudden wet heat beneath his silk."
-    },
-    {
-      "id": "s0-31",
-      "sceneId": "s0",
-      "text": "He fell among the scarlet light as if the carpet had been waiting for him since the architect’s first sketch."
-    },
-    {
-      "id": "s0-32",
-      "sceneId": "s0",
-      "text": "Then the rooms understood, one after another, the way a rumor understands a city."
-    },
-    {
-      "id": "s0-33",
-      "sceneId": "s0",
-      "text": "Dancers found the red mark on wrist, throat, mouth."
-    },
-    {
-      "id": "s0-34",
-      "sceneId": "s0",
-      "text": "Security radios hissed and went useless."
-    },
-    {
-      "id": "s0-35",
-      "sceneId": "s0",
-      "text": "Someone tried the gate app and watched the signal die."
-    },
-    {
-      "id": "s0-36",
-      "sceneId": "s0",
-      "text": "The clock struck once more, and the compound—glamorous, sealed, certain—became only another address the plague had learned by walking uphill."
-    },
-    {
-      "id": "s0-37",
-      "sceneId": "s0",
-      "text": "A woman in a violet dress tried to open a window onto the bay and found the latch welded from an earlier panic."
-    },
-    {
-      "id": "s0-38",
-      "sceneId": "s0",
-      "text": "She laughed once—the laugh of someone who still believed design could be undone by hands—and then the red mark found her jaw."
-    },
-    {
-      "id": "s0-39",
-      "sceneId": "s0",
-      "text": "Beside her a man recited the names of his children as if names were passwords."
-    },
-    {
-      "id": "s0-40",
-      "sceneId": "s0",
-      "text": "The scarlet light in the seventh room did not flicker."
-    },
-    {
-      "id": "s0-41",
-      "sceneId": "s0",
-      "text": "It only waited, patient as mold, while Otávio’s dagger lay useless on the carpet like a prop from a play that had changed genres without telling the cast."
+      "text": "A woman in a violet dress tried to open a window onto the bay and found the latch welded from an earlier panic. She laughed once—the laugh of someone who still believed design could be undone by hands—and then the red mark found her jaw. Beside her a man recited the names of his children as if names were passwords. The scarlet light in the seventh room did not flicker. It only waited, patient as mold, while Otávio’s dagger lay useless on the carpet like a prop from a play that had changed genres without telling the cast."
     }
   ]
 }

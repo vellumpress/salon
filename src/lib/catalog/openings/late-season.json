@@ -3,8 +3,8 @@
   "title": "Anton Chekhov, The Lady with the Dog recast",
   "author": "Salon",
   "year": "2026",
-  "note": "Off-season Cape May, a small white dog, and an affair that refuses to stay temporary once the city proves too small for what began. After Chekhov, The Lady with the Dog, 1899.",
-  "minutes": 8,
+  "note": "Off-season Yalta, a small white dog, and an affair that refuses to stay temporary once Moscow proves too small for what began. After Chekhov, The Lady with the Dog, 1899.",
+  "minutes": 3,
   "cover": "",
   "coverAlt": "",
   "scenes": [
@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Off season",
       "place": "Yalta",
-      "reentry": "Dmitri Gurov came to Cape May in September because the season had thinned and the hotels looked honest in their emptiness.",
+      "reentry": "Dmitri Gurov came to Yalta in September because the season had thinned and the hotels looked honest in their emptiness.",
       "prompt": "A word from this stretch."
     }
   ],
@@ -20,232 +20,52 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Dmitri Gurov came to Cape May in September because the season had thinned and the hotels looked honest in their emptiness."
+      "text": "Dmitri Gurov came to Yalta in September because the season had thinned and the hotels looked honest in their emptiness. Season tickets were gone from the kiosk glass. The Black Sea had the flat color of a held breath. He was married, almost fifty, used to affairs that ended when the train doors closed and the city resumed its noise. On the quay he noticed a young woman walking a small white dog, pausing when the dog paused. Her face was attentive and a little sad. He watched her for three days before he spoke."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "Beach badges were gone from the rails."
+      "text": "\"Does the dog bite?\" he asked, which was a joke so old it barely counted as one."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "The ocean had the flat color of a held breath."
+      "text": "She smiled with effort. Her name was Anna. She was also married. She had come alone \"to breathe,\" she said, and looked embarrassed by the phrase. They walked past shuttered souvenir kiosks and a cable car paused mid-hill for the off-season. They sat on a damp bench facing a sea the color of concrete. When they slept together in his room overlooking a closed embankment arcade, hotel signs dark as sleepers, she cried afterward and asked him not to despise her. He held her and felt, against his habits, something careful forming—less conquest than recognition."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "He was married, almost fifty, used to affairs that ended when the train doors closed and the city resumed its noise."
+      "text": "The days acquired a private weather. Coffee in paper cups that softened at the rim. The dog's nails clicking on boardwalk planks. Evening light on her throat when she turned to look at a freighter. He told himself it was the usual plot: loneliness, proximity, September light that flatters temporary people. She told herself the same. When her train inland was booked, they parted on the platform with the practiced tenderness of people who expect forgetting to do its work. He watched the train until it was only a shine on the rails."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "On the promenade he noticed a young woman walking a small white dog, pausing when the dog paused."
+      "text": "In the city, forgetting failed."
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "Her face was attentive and a little sad."
+      "text": "Gurov returned to Moscow dinners and his colleagues' jokes about weekends and found them thin. Anna's face arrived uninvited—in tram glass, in the white of a stranger's scarf, in the pause before sleep. One gray afternoon he went inland on a work pretext and waited outside a theater until she appeared with her husband. In the lobby's bad fluorescent light he spoke her name. She went pale. Later, in a cheap hotel nearby that smelled of carpet cleaner and an ice machine that never stopped, she said she had been thinking of him constantly. They did not sleep. They sat on the bed and listened to the ice machine in the hall."
     },
     {
       "id": "s0-6",
       "sceneId": "s0",
-      "text": "He watched her for three days before he spoke."
+      "text": "They began to meet in Moscow—afternoon rooms with thin walls, winter streets where their breath showed. Their talk grew less ornamental. They discussed the impossibility without solving it: spouses, money, the fear of becoming ridiculous. Desire, which had started as holiday theft, became a second life running under the first."
     },
     {
       "id": "s0-7",
       "sceneId": "s0",
-      "text": "“Does the dog bite?” he asked, which was a joke so old it barely counted as one."
+      "text": "One evening in his hotel room, snow tapping the glass, Anna sat with her coat still on and said she could not go on living in halves. Her voice was quiet and absolute. Gurov took her hands; they were cold. Outside, traffic sighed in wet lanes. He saw their future not as escape—no clean train to a clean resort—but as a long corridor of difficult doors, and for the first time he did not look away from the length of it."
     },
     {
       "id": "s0-8",
       "sceneId": "s0",
-      "text": "She smiled with effort."
+      "text": "\"We will think of something,\" he said, which was not a plan so much as a vow to remain inside the problem together."
     },
     {
       "id": "s0-9",
       "sceneId": "s0",
-      "text": "Her name was Anna."
-    },
-    {
-      "id": "s0-10",
-      "sceneId": "s0",
-      "text": "She was also married."
-    },
-    {
-      "id": "s0-11",
-      "sceneId": "s0",
-      "text": "She had come alone “to breathe,” she said, and looked embarrassed by the phrase."
-    },
-    {
-      "id": "s0-12",
-      "sceneId": "s0",
-      "text": "They walked past shuttered fudge shops and a Ferris wheel paused mid-turn for the off-season."
-    },
-    {
-      "id": "s0-13",
-      "sceneId": "s0",
-      "text": "They sat on a damp bench facing a sea the color of concrete."
-    },
-    {
-      "id": "s0-14",
-      "sceneId": "s0",
-      "text": "When they slept together in his room overlooking a closed arcade, neon signs dark as sleepers, she cried afterward and asked him not to despise her."
-    },
-    {
-      "id": "s0-15",
-      "sceneId": "s0",
-      "text": "He held her and felt, against his habits, something careful forming—less conquest than recognition."
-    },
-    {
-      "id": "s0-16",
-      "sceneId": "s0",
-      "text": "The days acquired a private weather."
-    },
-    {
-      "id": "s0-17",
-      "sceneId": "s0",
-      "text": "Coffee in paper cups that softened at the rim."
-    },
-    {
-      "id": "s0-18",
-      "sceneId": "s0",
-      "text": "The dog’s nails clicking on boardwalk planks."
-    },
-    {
-      "id": "s0-19",
-      "sceneId": "s0",
-      "text": "Evening light on her throat when she turned to look at a freighter."
-    },
-    {
-      "id": "s0-20",
-      "sceneId": "s0",
-      "text": "He told himself it was the usual plot: loneliness, proximity, September light that flatters temporary people."
-    },
-    {
-      "id": "s0-21",
-      "sceneId": "s0",
-      "text": "She told herself the same."
-    },
-    {
-      "id": "s0-22",
-      "sceneId": "s0",
-      "text": "When her train north was booked, they parted on the platform with the practiced tenderness of people who expect forgetting to do its work."
-    },
-    {
-      "id": "s0-23",
-      "sceneId": "s0",
-      "text": "He watched the train until it was only a shine on the rails."
-    },
-    {
-      "id": "s0-24",
-      "sceneId": "s0",
-      "text": "In the city, forgetting failed."
-    },
-    {
-      "id": "s0-25",
-      "sceneId": "s0",
-      "text": "Gurov returned to his wife’s dinner parties and his colleagues’ jokes about weekends and found them thin."
-    },
-    {
-      "id": "s0-26",
-      "sceneId": "s0",
-      "text": "Anna’s face arrived uninvited—in elevator mirrors, in the white of a stranger’s scarf, in the pause before sleep."
-    },
-    {
-      "id": "s0-27",
-      "sceneId": "s0",
-      "text": "One gray afternoon he went to her town on a work pretext and waited outside a theater until she appeared with her husband."
-    },
-    {
-      "id": "s0-28",
-      "sceneId": "s0",
-      "text": "In the lobby’s bad fluorescent light he spoke her name."
-    },
-    {
-      "id": "s0-29",
-      "sceneId": "s0",
-      "text": "She went pale."
-    },
-    {
-      "id": "s0-30",
-      "sceneId": "s0",
-      "text": "Later, in a cheap hotel nearby that smelled of carpet cleaner and an ice machine that never stopped, she said she had been thinking of him constantly."
-    },
-    {
-      "id": "s0-31",
-      "sceneId": "s0",
-      "text": "They did not sleep."
-    },
-    {
-      "id": "s0-32",
-      "sceneId": "s0",
-      "text": "They sat on the bed and listened to the ice machine in the hall."
-    },
-    {
-      "id": "s0-33",
-      "sceneId": "s0",
-      "text": "They began to meet in the city—afternoon rooms with thin walls, winter streets where their breath showed."
-    },
-    {
-      "id": "s0-34",
-      "sceneId": "s0",
-      "text": "Their talk grew less ornamental."
-    },
-    {
-      "id": "s0-35",
-      "sceneId": "s0",
-      "text": "They discussed the impossibility without solving it: spouses, money, the fear of becoming ridiculous."
-    },
-    {
-      "id": "s0-36",
-      "sceneId": "s0",
-      "text": "Desire, which had started as holiday theft, became a second life running under the first."
-    },
-    {
-      "id": "s0-37",
-      "sceneId": "s0",
-      "text": "One evening in his hotel room, snow tapping the glass, Anna sat with her coat still on and said she could not go on living in halves."
-    },
-    {
-      "id": "s0-38",
-      "sceneId": "s0",
-      "text": "Her voice was quiet and absolute."
-    },
-    {
-      "id": "s0-39",
-      "sceneId": "s0",
-      "text": "Gurov took her hands; they were cold."
-    },
-    {
-      "id": "s0-40",
-      "sceneId": "s0",
-      "text": "Outside, traffic sighed in wet lanes."
-    },
-    {
-      "id": "s0-41",
-      "sceneId": "s0",
-      "text": "He saw their future not as escape—no clean train to a clean town—but as a long corridor of difficult doors, and for the first time he did not look away from the length of it."
-    },
-    {
-      "id": "s0-42",
-      "sceneId": "s0",
-      "text": "“We will think of something,” he said, which was not a plan so much as a vow to remain inside the problem together."
-    },
-    {
-      "id": "s0-43",
-      "sceneId": "s0",
-      "text": "She nodded, eyes wet, not comforted exactly—recognized."
-    },
-    {
-      "id": "s0-44",
-      "sceneId": "s0",
-      "text": "Beyond the window the city kept its indifferent glitter."
-    },
-    {
-      "id": "s0-45",
-      "sceneId": "s0",
-      "text": "Inside, two people who had meant to be temporary sat with the weight of beginning, which is heavier than ending, and quieter, and harder to put down."
+      "text": "She nodded, eyes wet, not comforted exactly—recognized. Beyond the window Moscow kept its indifferent glitter. Inside, two people who had meant to be temporary sat with the weight of beginning, which is heavier than ending, and quieter, and harder to put down."
     }
   ]
 }

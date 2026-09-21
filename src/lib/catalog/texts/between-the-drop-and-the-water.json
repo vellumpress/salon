@@ -4,14 +4,14 @@
   "author": "Salon",
   "year": "2026",
   "note": "The rope fails—or seems to—until the Hudson remembers what it meant. After Bierce, An Occurrence at Owl Creek Bridge, 1890.",
-  "minutes": 8,
+  "minutes": 4,
   "cover": "",
   "coverAlt": "",
   "scenes": [
     {
       "id": "s0",
       "title": "The condemned pier",
-      "place": "Hudson River",
+      "place": "Hudson River, New York",
       "reentry": "Peyton Farquhar stood on the edge of the condemned pier with his hands bound and a rope around his throat.",
       "prompt": "A word from this stretch."
     }
@@ -20,277 +20,57 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Peyton Farquhar stood on the edge of the condemned pier with his hands bound and a rope around his throat."
+      "text": "Peyton Farquhar stood on the edge of the condemned pier with his hands bound and a rope around his throat. Below him the Hudson moved the color of wet iron. Behind him, two state officers waited without speaking, their boots careful on the damp boards. The morning was cold enough to show breath. Somewhere on the opposite bank a freight horn sounded and died. A gull crossed the gap of sky and did not look down. Peyton's tongue found a crack in his lip where the night in holding had split it."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "Below him the Hudson moved the color of wet iron."
+      "text": "He had not meant to become this kind of story. Weeks earlier, a man at a gas station outside Beacon had spoken of the pier's demolition delay, of cameras that did not work, of a protest that could be turned into something sharper if the right person cut the right cable. The man had smelled of fuel and wintergreen gum. Peyton, who loved his wife and the quiet orchard of their rented house and the idea of himself as decisive, had listened while coffee burned his tongue. He had driven home imagining headlines that made him noble. He had touched the porch rail in the dark and felt, briefly, like a person history might need. Now the river waited, and the rope was real, and nobility had become a procedural matter of knots and witnesses who would not speak his first name."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "Behind him, two state officers waited without speaking, their boots careful on the damp boards."
+      "text": "One officer checked the fit at Peyton's throat with impersonal fingers. The other read from a phone in a flat voice—charges, time, the bureaucratic poetry of ending. Peyton closed his eyes and saw, unbidden, the porch light his wife left on when someone was late, moths tapping the glass. He opened them. The board under his feet was dark with old spills. Far out, a tug pushed a barge and made no sound that reached him."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "The morning was cold enough to show breath."
+      "text": "The officer behind him stepped back. The board tilted."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "Somewhere on the opposite bank a freight horn sounded and died."
+      "text": "Then—"
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "A gull crossed the gap of sky and did not look down."
+      "text": "He hit the water like a fist into glass. Cold climbed his spine and filled his mouth with the taste of rust and leaves. Pressure roared in his ears. He fought the bindings with a strength that felt borrowed from terror and, somehow, freed his wrists; the cord around his neck loosened in the thrash. He kicked upward through dark green and broke the surface gasping, the pier already shrinking behind him as shots cracked and water leapt in small white flowers near his head. He dove, swam, surfaced again farther downcurrent, lungs burning with a bright animal joy that made him want to shout a name into the fog."
     },
     {
       "id": "s0-6",
       "sceneId": "s0",
-      "text": "Peyton's tongue found a crack in his lip where the night in holding had split it."
+      "text": "He swam until the current took him under the shadow of the highway bridge and spit him toward a bend where willows trailed their fingers in the water. Bullets stitched the river and then grew distant, almost polite. A siren somewhere failed to find him. He crawled onto a bank of stones and lay there tasting blood and silt, laughing once because he was alive and the laugh hurt his throat where the rope had kissed him. Gravel stuck to his cheek. He stood on legs that trembled like a foal's."
     },
     {
       "id": "s0-7",
       "sceneId": "s0",
-      "text": "He had not meant to become this kind of story."
+      "text": "Through the woods he ran toward the road that led home. The forest opened for him: a path where there should have been bramble, sunlight in coins on the leaves, the smell of damp bark and distant cooking smoke. His neck ached in a hot ring. A minute became a mile; a mile became the thought of his wife's hands in dishwater, the radio low. He passed a locked phone face-down in the leaves, screen black, and did not stop. He thought of the orchard in late light. He thought of saying he was sorry without specifying for what. Birds startled and resettled behind him."
     },
     {
       "id": "s0-8",
       "sceneId": "s0",
-      "text": "Weeks earlier, a man at a gas station outside Beacon had spoken of the pier's demolition delay, of cameras that did not work, of a protest that could be turned into something sharper if the right person cut the right cable."
+      "text": "At last the house appeared, white and ordinary between the trees. Smoke rose straight from the chimney. His wife stepped onto the porch as if she had been waiting inside the second itself. She did not cry out. She opened her arms. He reached for her, already inventing the story of the rope's failure, the swim, the woods, the miracle—"
     },
     {
       "id": "s0-9",
       "sceneId": "s0",
-      "text": "The man had smelled of fuel and wintergreen gum."
+      "text": "—and the rope held."
     },
     {
       "id": "s0-10",
       "sceneId": "s0",
-      "text": "Peyton, who loved his wife and the quiet orchard of their rented house and the idea of himself as decisive, had listened while coffee burned his tongue."
-    },
-    {
-      "id": "s0-11",
-      "sceneId": "s0",
-      "text": "He had driven home imagining headlines that made him noble."
-    },
-    {
-      "id": "s0-12",
-      "sceneId": "s0",
-      "text": "He had touched the porch rail in the dark and felt, briefly, like a person history might need."
-    },
-    {
-      "id": "s0-13",
-      "sceneId": "s0",
-      "text": "Now the river waited, and the rope was real, and nobility had become a procedural matter of knots and witnesses who would not speak his first name."
-    },
-    {
-      "id": "s0-14",
-      "sceneId": "s0",
-      "text": "One officer checked the fit at Peyton's throat with impersonal fingers."
-    },
-    {
-      "id": "s0-15",
-      "sceneId": "s0",
-      "text": "The other read from a phone in a flat voice—charges, time, the bureaucratic poetry of ending."
-    },
-    {
-      "id": "s0-16",
-      "sceneId": "s0",
-      "text": "Peyton closed his eyes and saw, unbidden, the porch light his wife left on when someone was late, moths tapping the glass."
-    },
-    {
-      "id": "s0-17",
-      "sceneId": "s0",
-      "text": "He opened them."
-    },
-    {
-      "id": "s0-18",
-      "sceneId": "s0",
-      "text": "The board under his feet was dark with old spills."
-    },
-    {
-      "id": "s0-19",
-      "sceneId": "s0",
-      "text": "Far out, a tug pushed a barge and made no sound that reached him."
-    },
-    {
-      "id": "s0-20",
-      "sceneId": "s0",
-      "text": "The officer behind him stepped back."
-    },
-    {
-      "id": "s0-21",
-      "sceneId": "s0",
-      "text": "The board tilted."
-    },
-    {
-      "id": "s0-22",
-      "sceneId": "s0",
-      "text": "Then—"
-    },
-    {
-      "id": "s0-23",
-      "sceneId": "s0",
-      "text": "He hit the water like a fist into glass."
-    },
-    {
-      "id": "s0-24",
-      "sceneId": "s0",
-      "text": "Cold climbed his spine and filled his mouth with the taste of rust and leaves."
-    },
-    {
-      "id": "s0-25",
-      "sceneId": "s0",
-      "text": "Pressure roared in his ears."
-    },
-    {
-      "id": "s0-26",
-      "sceneId": "s0",
-      "text": "He fought the bindings with a strength that felt borrowed from terror and, somehow, freed his wrists; the cord around his neck loosened in the thrash."
-    },
-    {
-      "id": "s0-27",
-      "sceneId": "s0",
-      "text": "He kicked upward through dark green and broke the surface gasping, the pier already shrinking behind him as shots cracked and water leapt in small white flowers near his head."
-    },
-    {
-      "id": "s0-28",
-      "sceneId": "s0",
-      "text": "He dove, swam, surfaced again farther downcurrent, lungs burning with a bright animal joy that made him want to shout a name into the fog."
-    },
-    {
-      "id": "s0-29",
-      "sceneId": "s0",
-      "text": "He swam until the current took him under the shadow of the highway bridge and spit him toward a bend where willows trailed their fingers in the water."
-    },
-    {
-      "id": "s0-30",
-      "sceneId": "s0",
-      "text": "Bullets stitched the river and then grew distant, almost polite."
-    },
-    {
-      "id": "s0-31",
-      "sceneId": "s0",
-      "text": "A siren somewhere failed to find him."
-    },
-    {
-      "id": "s0-32",
-      "sceneId": "s0",
-      "text": "He crawled onto a bank of stones and lay there tasting blood and silt, laughing once because he was alive and the laugh hurt his throat where the rope had kissed him."
-    },
-    {
-      "id": "s0-33",
-      "sceneId": "s0",
-      "text": "Gravel stuck to his cheek."
-    },
-    {
-      "id": "s0-34",
-      "sceneId": "s0",
-      "text": "He stood on legs that trembled like a foal's."
-    },
-    {
-      "id": "s0-35",
-      "sceneId": "s0",
-      "text": "Through the woods he ran toward the road that led home."
-    },
-    {
-      "id": "s0-36",
-      "sceneId": "s0",
-      "text": "The forest opened for him: a path where there should have been bramble, sunlight in coins on the leaves, the smell of damp bark and distant cooking smoke."
-    },
-    {
-      "id": "s0-37",
-      "sceneId": "s0",
-      "text": "His neck ached in a hot ring."
-    },
-    {
-      "id": "s0-38",
-      "sceneId": "s0",
-      "text": "A minute became a mile; a mile became the thought of his wife's hands in dishwater, the radio low."
-    },
-    {
-      "id": "s0-39",
-      "sceneId": "s0",
-      "text": "He passed a locked phone face-down in the leaves, screen black, and did not stop."
-    },
-    {
-      "id": "s0-40",
-      "sceneId": "s0",
-      "text": "He thought of the orchard in late light."
-    },
-    {
-      "id": "s0-41",
-      "sceneId": "s0",
-      "text": "He thought of saying he was sorry without specifying for what."
-    },
-    {
-      "id": "s0-42",
-      "sceneId": "s0",
-      "text": "Birds startled and resettled behind him."
-    },
-    {
-      "id": "s0-43",
-      "sceneId": "s0",
-      "text": "At last the house appeared, white and ordinary between the trees."
-    },
-    {
-      "id": "s0-44",
-      "sceneId": "s0",
-      "text": "Smoke rose straight from the chimney."
-    },
-    {
-      "id": "s0-45",
-      "sceneId": "s0",
-      "text": "His wife stepped onto the porch as if she had been waiting inside the second itself."
-    },
-    {
-      "id": "s0-46",
-      "sceneId": "s0",
-      "text": "She did not cry out."
-    },
-    {
-      "id": "s0-47",
-      "sceneId": "s0",
-      "text": "She opened her arms."
-    },
-    {
-      "id": "s0-48",
-      "sceneId": "s0",
-      "text": "He reached for her, already inventing the story of the rope's failure, the swim, the woods, the miracle— —and the rope held."
-    },
-    {
-      "id": "s0-49",
-      "sceneId": "s0",
-      "text": "His neck broke above the Hudson."
-    },
-    {
-      "id": "s0-50",
-      "sceneId": "s0",
-      "text": "The body swung once and settled, turning slowly as the officers watched."
-    },
-    {
-      "id": "s0-51",
-      "sceneId": "s0",
-      "text": "On the opposite bank the freight horn sounded again, indifferent."
-    },
-    {
-      "id": "s0-52",
-      "sceneId": "s0",
-      "text": "One officer checked his watch."
-    },
-    {
-      "id": "s0-53",
-      "sceneId": "s0",
-      "text": "The other spat into the water."
-    },
-    {
-      "id": "s0-54",
-      "sceneId": "s0",
-      "text": "Below, the river continued, carrying nothing that looked like escape, only the brief disturbance of a man who had, for an interval longer than life and shorter than a breath, believed the world would let him go home."
+      "text": "His neck broke above the Hudson. The body swung once and settled, turning slowly as the officers watched. On the opposite bank the freight horn sounded again, indifferent. One officer checked his watch. The other spat into the water. Below, the river continued, carrying nothing that looked like escape, only the brief disturbance of a man who had, for an interval longer than life and shorter than a breath, believed the world would let him go home."
     }
   ]
 }
