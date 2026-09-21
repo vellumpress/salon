@@ -51,7 +51,6 @@ const FULL_NOVEL_NO_STUB = [
   "strange-tales",
   "short-stories-from-the-balkans",
   "the-awakening",
-  "a-few-figs-from-thistles",
 ] as const;
 
 const FULL_NOVEL_NO_STUB_SET = new Set<string>(FULL_NOVEL_NO_STUB);
@@ -1342,6 +1341,50 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       scenes: 29,
       last: /^THE END$/,
       intro: /Karintha/,
+    },
+    "a-hero-of-our-time": {
+      gutenberg: 913,
+      title: "A Hero of Our Time",
+      author: "Mikhail Lermontov",
+      year: 1840,
+      opening: /^I was travelling post from Tiflis\./,
+      breaths: 1526,
+      scenes: 37,
+      last: /desert harbour\?$/,
+      intro: /Tiflis/,
+    },
+    "strange-tales": {
+      gutenberg: 43629,
+      title: "Strange Tales from a Chinese Studio",
+      author: "Pu Songling",
+      year: 1766,
+      opening: /^A Kiang-si gentleman, named Mêng Lung-t‘an/,
+      breaths: 470,
+      scenes: 152,
+      last: /horrid plight\.$/,
+      intro: /painted wall/i,
+    },
+    "short-stories-from-the-balkans": {
+      gutenberg: 73663,
+      title: "Short Stories from the Balkans",
+      author: "Various (ed. Edna Worthley Underwood)",
+      year: 1919,
+      opening: /^Leiba Zibal, proprietor of the little rest-house by Podeni/,
+      breaths: 986,
+      scenes: 13,
+      last: /^THE END$/,
+      intro: /Easter Candles/,
+    },
+    "the-awakening": {
+      gutenberg: 160,
+      title: "The Awakening",
+      author: "Kate Chopin",
+      year: 1899,
+      opening: /^A green and yellow parrot, which hung in a cage outside the door/,
+      breaths: 1066,
+      scenes: 39,
+      last: /musky odor of pinks filled the air\.$/,
+      intro: /Chapter I/,
     },
   } as const;
 
