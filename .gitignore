@@ -4,6 +4,7 @@ node_modules/
 .env
 .env.*
 dist/
+.cache/
 
 # Never commit Vercel build output (forces stale PWA)
 .vercel/output/
