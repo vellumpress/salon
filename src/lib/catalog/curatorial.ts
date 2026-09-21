@@ -37,7 +37,8 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Bliss, Dubliners, Gitanjali, and Martin Birck’s Youth are ritual Next
  * sits only — not locked recommend, not For you. A Hundred and Seventy
  * Chinese Poems is a Rituals before-sleep sit only — not locked recommend,
- * not For you.
+ * not For you. Harmonium is a Rituals before-sleep sit only — The Snow Man
+ * open, never Featured, not For you.
  * The Poison Tree is Later (Bengal / unwind) — not Next, not locked recommend.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own

@@ -303,6 +303,14 @@ test("Gitanjali uses the before-sleep poem-1 sit and names the Host frame", () =
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
+test("Harmonium uses the before-sleep Snow Man sit and names the Host frame", () => {
+  const copy = readerIntro(shelfAsWork("harmonium"));
+  assert.match(copy, /mind of winter/i);
+  assert.match(copy, /The Snow Man only/);
+  assert.match(copy, /never Earthy Anecdote/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+});
+
 test("Martin Birck's Youth uses the before-sleep garden sit and names the Host frame", () => {
   const copy = readerIntro(shelfAsWork("martin-bircks-youth"));
   assert.match(copy, /childhood dream/i);

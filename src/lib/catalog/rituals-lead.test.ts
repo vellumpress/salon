@@ -54,6 +54,7 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
     "dubliners",
     "gitanjali",
     "martin-bircks-youth",
+    "harmonium",
     "steppenwolf",
   ]) {
     assert.equal(forYou.workIds.includes(id), false, id);

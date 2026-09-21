@@ -536,7 +536,8 @@ const BLURBS: Record<string, string> = {
   "canzoni-ripostes": "Pound still in love with the old songs, already impatient with them.",
   "sea-garden": "H.D.’s sea-flowers, sharp as shells.",
   hymen: "H.D. on marriage, myth, and the body’s public ceremony.",
-  harmonium: "Stevens’ first book: Florida light, Hartford mind, the jar on the hill.",
+  harmonium:
+    "Stevens’ first book opens on The Snow Man — a mind of winter, never Earthy Anecdote.",
   color: "Cullen’s first poems of race, beauty, and the God who may not be looking.",
   "the-harp-weaver-and-other-poems": "Millay’s later lyrics, still spending the candle.",
   "sword-blades-and-poppy-seed": "Lowell’s imagist cut and the smoke afterward.",

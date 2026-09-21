@@ -146,6 +146,7 @@ test("known origin overrides", () => {
     bliss: "New Zealand",
     "a-hundred-and-seventy-chinese-poems": "China",
     "martin-bircks-youth": "Sweden",
+    harmonium: "United States",
     "on-a-chinese-screen": "United Kingdom",
     futility: "United Kingdom",
     "poison-tree": "India",
@@ -344,6 +345,10 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     "martin-bircks-youth": {
       scene: /Childhood garden/i,
       opening: /^Martin Birck was a little child/,
+    },
+    harmonium: {
+      scene: /The Snow Man/i,
+      opening: /^One must have a mind of winter/,
     },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
@@ -580,6 +585,13 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     if (id === "gitanjali") {
       assert.match(packed.breaths.slice(-3).map((b) => b.text).join(" "), /friend who art my lord/);
       assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /Yeats|Introduction/i);
+    }
+    if (id === "harmonium") {
+      assert.match(packed.breaths.at(-1)?.text ?? "", /the nothing that is\.?$/);
+      assert.doesNotMatch(
+        packed.breaths.map((b) => b.text).join(" "),
+        /Earthy Anecdote|bucks went clattering/i,
+      );
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "martin-bircks-youth") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /near to weeping\.?$/);
@@ -903,6 +915,47 @@ test("Gitanjali opens on poem 1 and skips the Yeats introduction", () => {
   );
   assert.ok(full.breaths.length > packed.breaths.length, "later offerings stay after the sit");
   assert.equal(work!.breaths, full.breaths.length);
+});
+
+test("Harmonium opens on The Snow Man only, not Earthy Anecdote", () => {
+  const work = SHELF.find((item) => item.id === "harmonium");
+  assert.ok(work);
+  assert.equal(work!.local, true);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(work!.title, "Harmonium");
+  assert.equal(work!.author, "Wallace Stevens");
+  assert.equal(work!.year, 1923);
+  assert.match(work!.opening ?? "", /^One must have a mind of winter/);
+  const packed = JSON.parse(
+    readFileSync(new URL("./openings/harmonium.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./texts/harmonium.json", import.meta.url), "utf8"),
+  ) as { note: string; scenes: { title: string }[]; breaths: { text: string }[] };
+  assert.match(packed.note, /The Snow Man/);
+  assert.match(packed.note, /never Earthy Anecdote|Never Earthy Anecdote/);
+  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
+  assert.match(full.note, /The Snow Man/);
+  assert.match(full.note, /never Earthy Anecdote/);
+  assert.equal(full.scenes.length, 121);
+  assert.match(full.scenes[0]?.title ?? "", /^The Snow Man$/);
+  assert.match(packed.scenes[0]?.title ?? "", /The Snow Man/i);
+  assert.equal(packed.scenes.length, 1);
+  assert.match(packed.scenes[0]?.reentry ?? "", /^One must have a mind of winter/);
+  assert.match(packed.breaths[0]?.text ?? "", /^One must have a mind of winter/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /the nothing that is\.?$/);
+  assert.doesNotMatch(
+    packed.breaths.map((breath) => breath.text).join(" "),
+    /Earthy Anecdote|bucks went clattering/i,
+  );
+  assert.match(full.breaths[0]?.text ?? "", /^One must have a mind of winter/);
+  assert.ok(
+    full.scenes.some((scene) => scene.title === "Earthy Anecdote"),
+    "full collection keeps Earthy Anecdote",
+  );
+  assert.ok(full.breaths.length > packed.breaths.length, "full collection stays after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
+  assert.doesNotMatch(work!.intro ?? "", /Featured-track|Recommend|cold-open/i);
 });
 
 test("Martin Birck's Youth is a full local novel bind and skips the Stork preface", () => {
