@@ -3,79 +3,121 @@
   "title": "Gitanjali",
   "author": "Rabindranath Tagore",
   "year": "1912",
-  "note": "Before-sleep ritual sit — the little flute.\n\nPhone-clear devotion lyric. Skip the Yeats introduction — open on poem 1.\n\nGitanjali (Tagore; 1912 EN; PG 7164). Sit through the first two song offerings. Stop before the rest of the book.",
+  "note": "Before-sleep ritual sit — Poem 1.\n\nPhone-clear devotion lyric. Skip the Yeats introduction — open on poem 1.\n\nGitanjali (Tagore; 1912 EN; PG 7164). Sit through the first two song offerings. Stop before the rest of the book.",
   "minutes": 2,
   "cover": "",
   "coverAlt": "",
   "scenes": [
     {
-      "id": "sit-0",
-      "title": "The little flute",
-      "place": "one sitting",
-      "reentry": "Thou hast made me endless, such is thy pleasure.",
+      "id": "s0",
+      "title": "Poem 1",
+      "place": "Poem 1",
+      "reentry": "Thou hast made me endless, such is thy pleasure. This frail vessel thou",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Poem 2",
+      "place": "Poem 2",
+      "reentry": "When thou commandest me to sing it seems that my heart would break with",
       "prompt": "A word from this stretch."
     }
   ],
   "breaths": [
     {
-      "id": "sit-0-0",
-      "sceneId": "sit-0",
-      "text": "Thou hast made me endless, such is thy pleasure."
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Thou hast made me endless, such is thy pleasure. This frail vessel thou"
     },
     {
-      "id": "sit-0-1",
-      "sceneId": "sit-0",
-      "text": "This frail vessel thou emptiest again and again, and fillest it ever with fresh life."
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "emptiest again and again, and fillest it ever with fresh life."
     },
     {
-      "id": "sit-0-2",
-      "sceneId": "sit-0",
-      "text": "This little flute of a reed thou hast carried over hills and dales, and hast breathed through it melodies eternally new."
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "This little flute of a reed thou hast carried over hills and dales, and"
     },
     {
-      "id": "sit-0-3",
-      "sceneId": "sit-0",
-      "text": "At the immortal touch of thy hands my little heart loses its limits in joy and gives birth to utterance ineffable."
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "hast breathed through it melodies eternally new."
     },
     {
-      "id": "sit-0-4",
-      "sceneId": "sit-0",
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "At the immortal touch of thy hands my little heart loses its limits in"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "joy and gives birth to utterance ineffable."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
       "text": "Thy infinite gifts come to me only on these very small hands of mine."
     },
     {
-      "id": "sit-0-5",
-      "sceneId": "sit-0",
+      "id": "s0-7",
+      "sceneId": "s0",
       "text": "Ages pass, and still thou pourest, and still there is room to fill."
     },
     {
-      "id": "sit-0-6",
-      "sceneId": "sit-0",
-      "text": "When thou commandest me to sing it seems that my heart would break with pride; and I look to thy face, and tears come to my eyes."
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "When thou commandest me to sing it seems that my heart would break with"
     },
     {
-      "id": "sit-0-7",
-      "sceneId": "sit-0",
-      "text": "All that is harsh and dissonant in my life melts into one sweet harmony—and my adoration spreads wings like a glad bird on its flight across the sea."
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "pride; and I look to thy face, and tears come to my eyes."
     },
     {
-      "id": "sit-0-8",
-      "sceneId": "sit-0",
-      "text": "I know thou takest pleasure in my singing."
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "All that is harsh and dissonant in my life melts into one sweet"
     },
     {
-      "id": "sit-0-9",
-      "sceneId": "sit-0",
-      "text": "I know that only as a singer I come before thy presence."
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "harmony—and my adoration spreads wings like a glad bird on its flight"
     },
     {
-      "id": "sit-0-10",
-      "sceneId": "sit-0",
-      "text": "I touch by the edge of the far-spreading wing of my song thy feet which I could never aspire to reach."
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "across the sea."
     },
     {
-      "id": "sit-0-11",
-      "sceneId": "sit-0",
-      "text": "Drunk with the joy of singing I forget myself and call thee friend who art my lord."
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "I know thou takest pleasure in my singing. I know that only as a singer"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "I come before thy presence."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "I touch by the edge of the far-spreading wing of my song thy feet which"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "I could never aspire to reach."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "Drunk with the joy of singing I forget myself and call thee friend who"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "art my lord."
     }
   ]
 }

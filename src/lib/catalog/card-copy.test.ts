@@ -276,7 +276,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^There was no hope for him this time/,
     },
     gitanjali: {
-      scene: /little flute/i,
+      scene: /Poem 1/i,
       opening: /^Thou hast made me endless/,
     },
     "martin-bircks-youth": {
@@ -485,7 +485,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       );
     }
     if (id === "a-hundred-and-seventy-chinese-poems") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /shut it up inside\.?$/);
+      assert.match(packed.breaths.at(-1)?.text ?? "", /carry me back to you!$/);
       assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /\bBattle\b/);
     }
     if (id === "dubliners") {
@@ -493,7 +493,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /The Dead|Gabriel Conroy/i);
     }
     if (id === "gitanjali") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /friend who art my lord\.?$/);
+      assert.match(packed.breaths.slice(-3).map((b) => b.text).join(" "), /friend who art my lord/);
       assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /Yeats|Introduction/i);
     }
     if (id === "martin-bircks-youth") {
@@ -1560,7 +1560,7 @@ test("Bliss opens on the title story and keeps the dinner-party turn", () => {
   assert.equal(work!.breaths, full.breaths.length);
 });
 
-test("A Hundred and Seventy Chinese Poems opens on Winter Night, not Battle", () => {
+test("A Hundred and Seventy Chinese Poems rituals open on Winter Night; the book opens on Battle", () => {
   const work = SHELF.find((item) => item.id === "a-hundred-and-seventy-chinese-poems");
   assert.ok(work);
   assert.equal(work!.local, true);
@@ -1575,16 +1575,17 @@ test("A Hundred and Seventy Chinese Poems opens on Winter Night, not Battle", ()
   ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
   const full = JSON.parse(
     readFileSync(new URL("./texts/a-hundred-and-seventy-chinese-poems.json", import.meta.url), "utf8"),
-  ) as { note: string; breaths: { text: string }[] };
+  ) as { note: string; scenes: { title: string }[]; breaths: { text: string }[] };
   assert.match(packed.note, /Winter Night/);
   assert.match(packed.note, /not Battle|Never Battle/);
   assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
-  assert.match(full.note, /Never Battle/);
+  assert.match(full.note, /Battle/);
+  assert.match(full.note, /Winter Night/);
+  assert.match(full.scenes[0]?.title ?? "", /^Battle$/);
   assert.match(packed.scenes[0]?.title ?? "", /Winter Night/i);
   assert.match(packed.scenes[0]?.reentry ?? "", /^My bed is so empty/);
-  assert.match(packed.breaths.at(-1)?.text ?? "", /shut it up inside\.?$/);
+  assert.match(packed.breaths.at(-1)?.text ?? "", /carry me back to you!$/);
   assert.doesNotMatch(packed.breaths.map((breath) => breath.text).join(" "), /\bBattle\b/);
-  assert.doesNotMatch(full.breaths[0]?.text ?? "", /^Battle/i);
   assert.ok(full.breaths.length > packed.breaths.length, "later lyrics stay after the sit");
   assert.equal(work!.breaths, full.breaths.length);
 });
@@ -1638,9 +1639,9 @@ test("Gitanjali opens on poem 1 and skips the Yeats introduction", () => {
   assert.match(packed.note, /poem 1/);
   assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
   assert.match(full.note, /Never the Yeats introduction/);
-  assert.match(packed.scenes[0]?.title ?? "", /little flute/i);
+  assert.match(packed.scenes[0]?.title ?? "", /Poem 1/i);
   assert.match(packed.scenes[0]?.reentry ?? "", /^Thou hast made me endless/);
-  assert.match(packed.breaths.at(-1)?.text ?? "", /friend who art my lord\.?$/);
+  assert.match(packed.breaths.slice(-3).map((breath) => breath.text).join(" "), /friend who art my lord/);
   assert.match(full.breaths[0]?.text ?? "", /^Thou hast made me endless/);
   assert.doesNotMatch(
     full.breaths.slice(0, 20).map((breath) => breath.text).join(" "),

@@ -334,7 +334,7 @@ const BLURBS: Record<string, string> = {
     "A young Millay climbs a mountain of sky and comes back changed.",
   "mountain-interval":
     "Frost’s yellow wood, two roads, and the talk that gets you going.",
-  gitanjali: "Tagore’s first song offering — skip Yeats and open on the little flute.",
+  gitanjali: "Tagore’s first song offering — skip Yeats and open on Poem 1.",
   "songs-of-kabir":
     "Kabir, through Tagore’s English: mystic poems that don’t need a church.",
   "pictures-of-the-floating-world":
