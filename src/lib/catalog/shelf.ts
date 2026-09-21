@@ -914,7 +914,7 @@ export const SHELF: ShelfWork[] = [
     local: true,
     gutenberg: 7164,
     opening: "Thou hast made me endless, such is thy pleasure.",
-    breaths: 672,
+    breaths: 1069,
     intro:
       "Phone-clear devotion lyric. Skip the Yeats introduction — open on poem 1.",
   },
@@ -1072,7 +1072,7 @@ export const SHELF: ShelfWork[] = [
     gutenberg: 42290,
     opening:
       "My bed is so empty that I keep on waking up: As the cold increases, the night-wind begins to blow.",
-    breaths: 828,
+    breaths: 3187,
     intro:
       "Gentler China lyrics for a night sit. Open the Winter Night pack — not Battle.",
   },
@@ -1308,7 +1308,7 @@ export const SHELF: ShelfWork[] = [
   { id: "all-the-sad-young-men", title: "All the Sad Young Men", author: "F. Scott Fitzgerald", year: 1926, form: "stories", language: "English", minutes: 548, local: true, opening: "THE RICH BOY", breaths: 4384, gutenberg: 68229 },
   { id: "dark-of-the-moon", title: "Dark of the Moon", author: "Sara Teasdale", year: 1926, form: "poem", language: "English", minutes: 95, local: true, opening: "Over the downs there were birds flying,", breaths: 685 },
   { id: "here-and-beyond", title: "Here and Beyond", author: "Edith Wharton", year: 1926, form: "stories", language: "English", minutes: 450, local: true, opening: "It was not till the following spring that I plucked up courage to tell Mrs. Bridgeworth what had happened to me that night at Morgat.", breaths: 3600, gutenberg: 74742 },
-  { id: "the-weary-blues", title: "The Weary Blues", author: "Langston Hughes", year: 1926, form: "poem", language: "English", minutes: 54, local: true, opening: "Droning a drowsy syncopated tune, Rocking back and forth to a mellow croon, I heard a Negro play.", breaths: 370, intro: `Harlem, late night—a piano that won’t quit, and a young poet listening hard. Langston Hughes’s 1926 first book opens with Proem (“I am a Negro”), then the title poem and a short run of cabaret pieces. Blues and jazz aren’t decoration here; they’re the beat the lines move to.`},
+  { id: "the-weary-blues", title: "The Weary Blues", author: "Langston Hughes", year: 1926, form: "poem", language: "English", minutes: 54, local: true, opening: "I am a Negro:", breaths: 960, intro: `Harlem, late night—a piano that won’t quit, and a young poet listening hard. Langston Hughes’s 1926 first book opens with Proem (“I am a Negro”), then the title poem and a short run of cabaret pieces. Blues and jazz aren’t decoration here; they’re the beat the lines move to.`},
   {
     id: "the-sun-also-rises",
     title: "The Sun Also Rises",

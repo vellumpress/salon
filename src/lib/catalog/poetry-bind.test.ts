@@ -55,21 +55,41 @@ test("A Hundred and Seventy Chinese Poems is one poem per scene", () => {
   const full = load("texts", "a-hundred-and-seventy-chinese-poems");
   const packed = load("openings", "a-hundred-and-seventy-chinese-poems");
   assert.ok(full && packed);
-  assert.equal(full!.scenes[0]?.title, "Winter Night");
-  assert.match(full!.scenes[0]?.reentry ?? "", /^My bed is so empty/);
-  assert.ok(full!.scenes.length >= 70, `too few poems: ${full!.scenes.length}`);
-  const winter = full!.breaths.filter((b) => b.sceneId === full!.scenes[0]!.id);
+  assert.equal(full!.scenes[0]?.title, FIRST_SCENE_TITLE["a-hundred-and-seventy-chinese-poems"]);
+  assert.equal(full!.scenes[0]?.title, "Battle");
+  assert.match(full!.scenes[0]?.reentry ?? "", /Falling into Trouble|We grasp our battle-spears/);
+  assert.equal(full!.scenes.length, 139);
   assert.equal(
-    winter.some((b) => /Rejected Wife|People Hide Their Love|The Ferry/i.test(b.text)),
+    full!.scenes.some((scene) => /^(Chapter|Part|Introduction|Two Poems|Title)\b/i.test(scene.title)),
+    false,
+  );
+  const winter = full!.scenes.find((scene) => scene.title === "Winter Night");
+  assert.ok(winter);
+  const winterBreaths = full!.breaths.filter((b) => b.sceneId === winter!.id);
+  assert.equal(winterBreaths.length, 4);
+  assert.equal(
+    winterBreaths.some((b) => /Rejected Wife|People Hide Their Love|The Ferry/i.test(b.text)),
     false,
     "next poem leaked into Winter Night",
   );
-  assert.deepEqual(
-    packed!.scenes.map((s) => s.title),
-    ["Winter Night", "On the Birth of His Son", "The Red Cockatoo"],
-  );
-  assert.match(packed!.breaths.at(-1)?.text ?? "", /shut it up inside\.?$/);
-  assert.equal(poemTitleBleed(full!).length, 0);
+  assert.deepEqual(packed!.scenes.map((s) => s.title), ["Winter Night"]);
+  assert.match(packed!.scenes[0]?.reentry ?? "", /^My bed is so empty/);
+  assert.match(packed!.breaths.at(-1)?.text ?? "", /carry me back to you!$/);
+  assert.doesNotMatch(packed!.breaths.map((b) => b.text).join(" "), /\bBattle\b/);
+  for (const scene of full!.scenes) {
+    const lines = full!.breaths.filter((b) => b.sceneId === scene.id).map((b) => b.text);
+    const last = lines.at(-1) ?? "";
+    assert.equal(
+      /^(Chapter|Part)\s+[IVXLCDM\d]+$|^Introduction$|^Two Poems$/i.test(last.trim()),
+      false,
+      `${scene.title} ends on a section header: ${last}`,
+    );
+  }
+  const winterBleed = poemTitleBleed({
+    scenes: [winter!],
+    breaths: winterBreaths,
+  });
+  assert.equal(winterBleed.length, 0, "Winter Night should not swallow the next title");
 });
 
 test("Gitanjali is numbered poem-per-scene and skips Yeats", () => {
@@ -77,8 +97,17 @@ test("Gitanjali is numbered poem-per-scene and skips Yeats", () => {
   const packed = load("openings", "gitanjali");
   assert.ok(full && packed);
   assert.equal(full!.scenes[0]?.title, FIRST_SCENE_TITLE.gitanjali);
+  assert.equal(full!.scenes[0]?.title, "Poem 1");
   assert.match(full!.scenes[0]?.reentry ?? "", /^Thou hast made me endless/);
-  assert.equal(full!.scenes[1]?.title, "2");
+  assert.equal(full!.scenes[1]?.title, "Poem 2");
+  assert.equal(full!.scenes.length, 103);
+  assert.equal(full!.scenes[102]?.title, "Poem 103");
+  for (let n = 79; n <= 103; n++) {
+    assert.ok(
+      full!.scenes.some((scene) => scene.title === `Poem ${n}`),
+      `poems 79–103 must stay split: missing Poem ${n}`,
+    );
+  }
   const first = full!.breaths.filter((b) => b.sceneId === full!.scenes[0]!.id);
   assert.equal(
     first.some((b) => /^2\.$/.test(b.text) || /When thou commandest me to sing/.test(b.text)),
@@ -86,11 +115,30 @@ test("Gitanjali is numbered poem-per-scene and skips Yeats", () => {
     "poem 2 leaked into poem 1",
   );
   assert.match(full!.scenes[1]?.reentry ?? "", /^When thou commandest me to sing/);
-  assert.ok(full!.scenes.length >= 70, `too few offerings: ${full!.scenes.length}`);
-  assert.equal(packed!.scenes[0]?.title, "The little flute");
-  assert.equal(packed!.scenes[1]?.title, "2");
-  assert.match(packed!.breaths.at(-1)?.text ?? "", /friend who art my lord\.?$/);
-  assert.doesNotMatch(full!.breaths.slice(0, 20).map((b) => b.text).join(" "), /Yeats|INTRODUCTION/i);
+  assert.equal(packed!.scenes[0]?.title, "Poem 1");
+  assert.equal(packed!.scenes[1]?.title, "Poem 2");
+  assert.match(packed!.breaths.slice(-3).map((b) => b.text).join(" "), /friend who art my lord/);
+  assert.doesNotMatch(full!.breaths.map((b) => b.text).join(" "), /Yeats|INTRODUCTION|PROJECT GUTENBERG/i);
+});
+
+test("The Weary Blues opens on Proem, not Van Vechten", () => {
+  const full = load("texts", "the-weary-blues");
+  const packed = load("openings", "the-weary-blues");
+  assert.ok(full && packed);
+  assert.equal(full!.scenes[0]?.title, FIRST_SCENE_TITLE["the-weary-blues"]);
+  assert.equal(full!.scenes[0]?.title, "Proem");
+  assert.match(full!.scenes[0]?.reentry ?? "", /^I am a Negro:/);
+  assert.equal(full!.scenes[1]?.title, "The Weary Blues");
+  assert.equal(full!.scenes.length, 64);
+  assert.deepEqual(
+    packed!.scenes.map((s) => s.title),
+    ["Proem", "The Weary Blues", "Jazzonia"],
+  );
+  assert.doesNotMatch(full!.breaths.map((b) => b.text).join(" "), /Van Vechten/i);
+  assert.equal(
+    full!.scenes.some((scene) => /^(Chapter|Part|Introduction|Two Poems|Title)\b/i.test(scene.title)),
+    false,
+  );
 });
 
 test("called-out local poem collections are poem-per-scene", () => {

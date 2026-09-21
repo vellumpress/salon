@@ -10,66 +10,24 @@
   "scenes": [
     {
       "id": "s0",
-      "title": "Poem",
-      "place": "Poem",
+      "title": "Proem",
+      "place": "Proem",
       "reentry": "I am a Negro:",
-      "prompt": "A word from this stretch."
+      "prompt": "What does the blues hold?"
     },
     {
       "id": "s1",
       "title": "The Weary Blues",
       "place": "The Weary Blues",
       "reentry": "Droning a drowsy syncopated tune,",
-      "prompt": "A word from this stretch."
+      "prompt": "What does the blues hold?"
     },
     {
       "id": "s2",
-      "title": "Got the Weary Blues",
-      "place": "Got the Weary Blues",
-      "reentry": "And can’t be satisfied—",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s3",
       "title": "Jazzonia",
       "place": "Jazzonia",
       "reentry": "Oh, silver tree!",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s4",
-      "title": "Negro Dancers",
-      "place": "Negro Dancers",
-      "reentry": "“Me an’ ma baby’s",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s5",
-      "title": "Young Singer",
-      "place": "Young Singer",
-      "reentry": "One who sings “chansons vulgaires”",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s6",
-      "title": "Cabaret",
-      "place": "Cabaret",
-      "reentry": "Does a jazz-band ever sob?",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s7",
-      "title": "To Midnight Nan at Leroy’s",
-      "place": "To Midnight Nan at Leroy’s",
-      "reentry": "Strut and wiggle,",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s8",
-      "title": "Harlem Night Club",
-      "place": "Harlem Night Club",
-      "reentry": "Sleek black boys in a cabaret.",
-      "prompt": "A word from this stretch."
+      "prompt": "What does the blues hold?"
     }
   ],
   "breaths": [
@@ -171,32 +129,32 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "Droning a drowsy syncopated tune,"
+      "text": "THE WEARY BLUES"
     },
     {
       "id": "s1-1",
       "sceneId": "s1",
-      "text": "Rocking back and forth to a mellow croon,"
+      "text": "Droning a drowsy syncopated tune,"
     },
     {
       "id": "s1-2",
       "sceneId": "s1",
-      "text": "I heard a Negro play."
+      "text": "Rocking back and forth to a mellow croon,"
     },
     {
       "id": "s1-3",
       "sceneId": "s1",
-      "text": "Down on Lenox Avenue the other night"
+      "text": "I heard a Negro play."
     },
     {
       "id": "s1-4",
       "sceneId": "s1",
-      "text": "By the pale dull pallor of an old gas light"
+      "text": "Down on Lenox Avenue the other night"
     },
     {
       "id": "s1-5",
       "sceneId": "s1",
-      "text": "He did a lazy sway...."
+      "text": "By the pale dull pallor of an old gas light"
     },
     {
       "id": "s1-6",
@@ -206,572 +164,232 @@
     {
       "id": "s1-7",
       "sceneId": "s1",
-      "text": "To the tune o’ those Weary Blues."
+      "text": "He did a lazy sway...."
     },
     {
       "id": "s1-8",
       "sceneId": "s1",
-      "text": "With his ebony hands on each ivory key"
+      "text": "To the tune o’ those Weary Blues."
     },
     {
       "id": "s1-9",
       "sceneId": "s1",
-      "text": "He made that poor piano moan with melody."
+      "text": "With his ebony hands on each ivory key"
     },
     {
       "id": "s1-10",
       "sceneId": "s1",
-      "text": "O Blues!"
+      "text": "He made that poor piano moan with melody."
     },
     {
       "id": "s1-11",
       "sceneId": "s1",
-      "text": "Swaying to and fro on his rickety stool"
+      "text": "O Blues!"
     },
     {
       "id": "s1-12",
       "sceneId": "s1",
-      "text": "He played that sad raggy tune like a musical fool."
+      "text": "Swaying to and fro on his rickety stool"
     },
     {
       "id": "s1-13",
       "sceneId": "s1",
-      "text": "Sweet Blues!"
+      "text": "He played that sad raggy tune like a musical fool."
     },
     {
       "id": "s1-14",
       "sceneId": "s1",
-      "text": "Coming from a black man’s soul."
+      "text": "Sweet Blues!"
     },
     {
       "id": "s1-15",
       "sceneId": "s1",
-      "text": "O Blues!"
+      "text": "Coming from a black man’s soul."
     },
     {
       "id": "s1-16",
       "sceneId": "s1",
-      "text": "In a deep song voice with a melancholy tone"
+      "text": "O Blues!"
     },
     {
       "id": "s1-17",
       "sceneId": "s1",
-      "text": "I heard that Negro sing, that old piano moan—"
+      "text": "In a deep song voice with a melancholy tone"
     },
     {
       "id": "s1-18",
       "sceneId": "s1",
-      "text": "“Ain’t got nobody in all this world,"
+      "text": "I heard that Negro sing, that old piano moan—"
     },
     {
       "id": "s1-19",
       "sceneId": "s1",
-      "text": "Ain’t got nobody but ma self."
+      "text": "“Ain’t got nobody in all this world,"
     },
     {
       "id": "s1-20",
       "sceneId": "s1",
-      "text": "I’s gwine to quit ma frownin’"
+      "text": "Ain’t got nobody but ma self."
     },
     {
       "id": "s1-21",
       "sceneId": "s1",
-      "text": "And put ma troubles on the shelf.”"
+      "text": "I’s gwine to quit ma frownin’"
     },
     {
       "id": "s1-22",
       "sceneId": "s1",
-      "text": "Thump, thump, thump, went his foot on the floor."
+      "text": "And put ma troubles on the shelf.”"
     },
     {
       "id": "s1-23",
       "sceneId": "s1",
-      "text": "He played a few chords then he sang some more—"
+      "text": "Thump, thump, thump, went his foot on the floor."
     },
     {
       "id": "s1-24",
       "sceneId": "s1",
-      "text": "“I got the Weary Blues"
+      "text": "He played a few chords then he sang some more—"
     },
     {
       "id": "s1-25",
       "sceneId": "s1",
+      "text": "“I got the Weary Blues"
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
       "text": "And I can’t be satisfied."
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "Got the Weary Blues"
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "And can’t be satisfied—"
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "I ain’t happy no mo’"
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "And I wish that I had died.”"
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "And far into the night he crooned that tune."
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "The stars went out and so did the moon."
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "The singer stopped playing and went to bed"
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "While the Weary Blues echoed through his head."
+    },
+    {
+      "id": "s1-35",
+      "sceneId": "s1",
+      "text": "He slept like a rock or a man that’s dead."
     },
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "And can’t be satisfied—"
+      "text": "Oh, silver tree!"
     },
     {
       "id": "s2-1",
       "sceneId": "s2",
-      "text": "I ain’t happy no mo’"
+      "text": "Oh, shining rivers of the soul!"
     },
     {
       "id": "s2-2",
       "sceneId": "s2",
-      "text": "And I wish that I had died.”"
+      "text": "In a Harlem cabaret"
     },
     {
       "id": "s2-3",
       "sceneId": "s2",
-      "text": "And far into the night he crooned that tune."
+      "text": "Six long-headed jazzers play."
     },
     {
       "id": "s2-4",
       "sceneId": "s2",
-      "text": "The stars went out and so did the moon."
+      "text": "A dancing girl whose eyes are bold"
     },
     {
       "id": "s2-5",
       "sceneId": "s2",
-      "text": "The singer stopped playing and went to bed"
+      "text": "Lifts high a dress of silken gold."
     },
     {
       "id": "s2-6",
       "sceneId": "s2",
-      "text": "While the Weary Blues echoed through his head."
+      "text": "Oh, singing tree!"
     },
     {
       "id": "s2-7",
       "sceneId": "s2",
-      "text": "He slept like a rock or a man that’s dead."
-    },
-    {
-      "id": "s3-0",
-      "sceneId": "s3",
-      "text": "Oh, silver tree!"
-    },
-    {
-      "id": "s3-1",
-      "sceneId": "s3",
       "text": "Oh, shining rivers of the soul!"
     },
     {
-      "id": "s3-2",
-      "sceneId": "s3",
-      "text": "In a Harlem cabaret"
-    },
-    {
-      "id": "s3-3",
-      "sceneId": "s3",
-      "text": "Six long-headed jazzers play."
-    },
-    {
-      "id": "s3-4",
-      "sceneId": "s3",
-      "text": "A dancing girl whose eyes are bold"
-    },
-    {
-      "id": "s3-5",
-      "sceneId": "s3",
-      "text": "Lifts high a dress of silken gold."
-    },
-    {
-      "id": "s3-6",
-      "sceneId": "s3",
-      "text": "Oh, singing tree!"
-    },
-    {
-      "id": "s3-7",
-      "sceneId": "s3",
-      "text": "Oh, shining rivers of the soul!"
-    },
-    {
-      "id": "s3-8",
-      "sceneId": "s3",
+      "id": "s2-8",
+      "sceneId": "s2",
       "text": "Were Eve’s eyes"
     },
     {
-      "id": "s3-9",
-      "sceneId": "s3",
+      "id": "s2-9",
+      "sceneId": "s2",
       "text": "In the first garden"
     },
     {
-      "id": "s3-10",
-      "sceneId": "s3",
+      "id": "s2-10",
+      "sceneId": "s2",
       "text": "Just a bit too bold?"
     },
     {
-      "id": "s3-11",
-      "sceneId": "s3",
+      "id": "s2-11",
+      "sceneId": "s2",
       "text": "Was Cleopatra gorgeous"
     },
     {
-      "id": "s3-12",
-      "sceneId": "s3",
+      "id": "s2-12",
+      "sceneId": "s2",
       "text": "In a gown of gold?"
     },
     {
-      "id": "s3-13",
-      "sceneId": "s3",
+      "id": "s2-13",
+      "sceneId": "s2",
       "text": "Oh, shining tree!"
     },
     {
-      "id": "s3-14",
-      "sceneId": "s3",
+      "id": "s2-14",
+      "sceneId": "s2",
       "text": "Oh, silver rivers of the soul!"
     },
     {
-      "id": "s3-15",
-      "sceneId": "s3",
+      "id": "s2-15",
+      "sceneId": "s2",
       "text": "In a whirling cabaret"
     },
     {
-      "id": "s3-16",
-      "sceneId": "s3",
+      "id": "s2-16",
+      "sceneId": "s2",
       "text": "Six long-headed jazzers play."
-    },
-    {
-      "id": "s4-0",
-      "sceneId": "s4",
-      "text": "“Me an’ ma baby’s"
-    },
-    {
-      "id": "s4-1",
-      "sceneId": "s4",
-      "text": "Got two mo’ ways,"
-    },
-    {
-      "id": "s4-2",
-      "sceneId": "s4",
-      "text": "Two mo’ ways to do de buck!"
-    },
-    {
-      "id": "s4-3",
-      "sceneId": "s4",
-      "text": "Da, da,"
-    },
-    {
-      "id": "s4-4",
-      "sceneId": "s4",
-      "text": "Da, da, da!"
-    },
-    {
-      "id": "s4-5",
-      "sceneId": "s4",
-      "text": "Two mo’ ways to do de buck!”"
-    },
-    {
-      "id": "s4-6",
-      "sceneId": "s4",
-      "text": "Soft light on the tables,"
-    },
-    {
-      "id": "s4-7",
-      "sceneId": "s4",
-      "text": "Music gay,"
-    },
-    {
-      "id": "s4-8",
-      "sceneId": "s4",
-      "text": "Brown-skin steppers"
-    },
-    {
-      "id": "s4-9",
-      "sceneId": "s4",
-      "text": "In a cabaret."
-    },
-    {
-      "id": "s4-10",
-      "sceneId": "s4",
-      "text": "White folks, laugh!"
-    },
-    {
-      "id": "s4-11",
-      "sceneId": "s4",
-      "text": "White folks, pray!"
-    },
-    {
-      "id": "s4-12",
-      "sceneId": "s4",
-      "text": "“Me an’ ma baby’s"
-    },
-    {
-      "id": "s4-13",
-      "sceneId": "s4",
-      "text": "Got two mo’ ways,"
-    },
-    {
-      "id": "s4-14",
-      "sceneId": "s4",
-      "text": "Two mo’ ways to do de buck!”"
-    },
-    {
-      "id": "s5-0",
-      "sceneId": "s5",
-      "text": "One who sings “chansons vulgaires”"
-    },
-    {
-      "id": "s5-1",
-      "sceneId": "s5",
-      "text": "In a Harlem cellar"
-    },
-    {
-      "id": "s5-2",
-      "sceneId": "s5",
-      "text": "Where the jazz-band plays"
-    },
-    {
-      "id": "s5-3",
-      "sceneId": "s5",
-      "text": "From dark to dawn"
-    },
-    {
-      "id": "s5-4",
-      "sceneId": "s5",
-      "text": "Would not understand"
-    },
-    {
-      "id": "s5-5",
-      "sceneId": "s5",
-      "text": "Should you tell her"
-    },
-    {
-      "id": "s5-6",
-      "sceneId": "s5",
-      "text": "That she is like a nymph"
-    },
-    {
-      "id": "s5-7",
-      "sceneId": "s5",
-      "text": "For some wild faun."
-    },
-    {
-      "id": "s6-0",
-      "sceneId": "s6",
-      "text": "Does a jazz-band ever sob?"
-    },
-    {
-      "id": "s6-1",
-      "sceneId": "s6",
-      "text": "They say a jazz-band’s gay."
-    },
-    {
-      "id": "s6-2",
-      "sceneId": "s6",
-      "text": "Yet as the vulgar dancers whirled"
-    },
-    {
-      "id": "s6-3",
-      "sceneId": "s6",
-      "text": "And the wan night wore away,"
-    },
-    {
-      "id": "s6-4",
-      "sceneId": "s6",
-      "text": "One said she heard the jazz-band sob"
-    },
-    {
-      "id": "s6-5",
-      "sceneId": "s6",
-      "text": "When the little dawn was grey."
-    },
-    {
-      "id": "s7-0",
-      "sceneId": "s7",
-      "text": "Strut and wiggle,"
-    },
-    {
-      "id": "s7-1",
-      "sceneId": "s7",
-      "text": "Shameless gal."
-    },
-    {
-      "id": "s7-2",
-      "sceneId": "s7",
-      "text": "Wouldn’t no good fellow"
-    },
-    {
-      "id": "s7-3",
-      "sceneId": "s7",
-      "text": "Be your pal."
-    },
-    {
-      "id": "s7-4",
-      "sceneId": "s7",
-      "text": "_Hear dat music...."
-    },
-    {
-      "id": "s7-5",
-      "sceneId": "s7",
-      "text": "Jungle night."
-    },
-    {
-      "id": "s7-6",
-      "sceneId": "s7",
-      "text": "Hear dat music...."
-    },
-    {
-      "id": "s7-7",
-      "sceneId": "s7",
-      "text": "And the moon was white._"
-    },
-    {
-      "id": "s7-8",
-      "sceneId": "s7",
-      "text": "Sing your Blues song,"
-    },
-    {
-      "id": "s7-9",
-      "sceneId": "s7",
-      "text": "Pretty baby."
-    },
-    {
-      "id": "s7-10",
-      "sceneId": "s7",
-      "text": "You want lovin’"
-    },
-    {
-      "id": "s7-11",
-      "sceneId": "s7",
-      "text": "And you don’t mean maybe."
-    },
-    {
-      "id": "s7-12",
-      "sceneId": "s7",
-      "text": "_Jungle lover...."
-    },
-    {
-      "id": "s7-13",
-      "sceneId": "s7",
-      "text": "Night black boy...."
-    },
-    {
-      "id": "s7-14",
-      "sceneId": "s7",
-      "text": "Two against the moon"
-    },
-    {
-      "id": "s7-15",
-      "sceneId": "s7",
-      "text": "And the moon was joy._"
-    },
-    {
-      "id": "s7-16",
-      "sceneId": "s7",
-      "text": "Strut and wiggle,"
-    },
-    {
-      "id": "s7-17",
-      "sceneId": "s7",
-      "text": "Shameless Nan."
-    },
-    {
-      "id": "s7-18",
-      "sceneId": "s7",
-      "text": "Wouldn’t no good fellow"
-    },
-    {
-      "id": "s7-19",
-      "sceneId": "s7",
-      "text": "Be your man."
-    },
-    {
-      "id": "s8-0",
-      "sceneId": "s8",
-      "text": "Sleek black boys in a cabaret."
-    },
-    {
-      "id": "s8-1",
-      "sceneId": "s8",
-      "text": "Jazz-band, jazz-band,—"
-    },
-    {
-      "id": "s8-2",
-      "sceneId": "s8",
-      "text": "Play, plAY, PLAY!"
-    },
-    {
-      "id": "s8-3",
-      "sceneId": "s8",
-      "text": "Tomorrow....who knows?"
-    },
-    {
-      "id": "s8-4",
-      "sceneId": "s8",
-      "text": "Dance today!"
-    },
-    {
-      "id": "s8-5",
-      "sceneId": "s8",
-      "text": "White girls’ eyes"
-    },
-    {
-      "id": "s8-6",
-      "sceneId": "s8",
-      "text": "Call gay black boys."
-    },
-    {
-      "id": "s8-7",
-      "sceneId": "s8",
-      "text": "Black boys’ lips"
-    },
-    {
-      "id": "s8-8",
-      "sceneId": "s8",
-      "text": "Grin jungle joys."
-    },
-    {
-      "id": "s8-9",
-      "sceneId": "s8",
-      "text": "Dark brown girls"
-    },
-    {
-      "id": "s8-10",
-      "sceneId": "s8",
-      "text": "In blond men’s arms."
-    },
-    {
-      "id": "s8-11",
-      "sceneId": "s8",
-      "text": "Jazz-band, jazz-band,—"
-    },
-    {
-      "id": "s8-12",
-      "sceneId": "s8",
-      "text": "Sing Eve’s charms!"
-    },
-    {
-      "id": "s8-13",
-      "sceneId": "s8",
-      "text": "White ones, brown ones,"
-    },
-    {
-      "id": "s8-14",
-      "sceneId": "s8",
-      "text": "What do you know"
-    },
-    {
-      "id": "s8-15",
-      "sceneId": "s8",
-      "text": "About tomorrow"
-    },
-    {
-      "id": "s8-16",
-      "sceneId": "s8",
-      "text": "Where all paths go?"
-    },
-    {
-      "id": "s8-17",
-      "sceneId": "s8",
-      "text": "Jazz-boys, jazz-boys,—"
-    },
-    {
-      "id": "s8-18",
-      "sceneId": "s8",
-      "text": "Play, plAY, PLAY!"
-    },
-    {
-      "id": "s8-19",
-      "sceneId": "s8",
-      "text": "Tomorrow....is darkness."
-    },
-    {
-      "id": "s8-20",
-      "sceneId": "s8",
-      "text": "Joy today!"
     }
   ]
 }

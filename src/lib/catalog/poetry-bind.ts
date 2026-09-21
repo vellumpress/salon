@@ -9,11 +9,19 @@ const SECTION_MARK =
 const SKIP_LINE =
   /^(?:see page \d+\.?|the end|finis|word count:\s*\d+|\*\*\*.*end of.*\*\*\*)$/i;
 
-/** First-scene titles that ritual / card tests (and the edition's nickname) expect. */
+/** First-scene titles for the full local bind (ritual openings may differ). */
 export const FIRST_SCENE_TITLE: Record<string, string> = {
-  gitanjali: "The little flute",
-  "a-hundred-and-seventy-chinese-poems": "Winter Night",
+  gitanjali: "Poem 1",
+  "a-hundred-and-seventy-chinese-poems": "Battle",
+  "the-weary-blues": "Proem",
 };
+
+/** Mira poem-chapter stamps — do not flatten these with the generic rebind. */
+export const MIRA_STAMPED_POEM_IDS = [
+  "gitanjali",
+  "a-hundred-and-seventy-chinese-poems",
+  "the-weary-blues",
+] as const;
 
 /** Waley 1918 headings from Winter Night through Last Poem (PG 42290). */
 const WALEY_TITLES = [

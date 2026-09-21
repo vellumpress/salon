@@ -9,6 +9,7 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
+  MIRA_STAMPED_POEM_IDS,
   openingFromScenes,
   poemTitleBleed,
   rebindPoetryWork,
@@ -65,9 +66,13 @@ function load(path: string): Work {
   return JSON.parse(readFileSync(path, "utf8")) as Work;
 }
 
-const ids = (only ? [only] : localPoemIds()).filter((id) =>
-  existsSync(join(root, "src/lib/catalog/texts", `${id}.json`)),
-);
+const force = process.argv.includes("--force");
+const miraSkip = new Set<string>(MIRA_STAMPED_POEM_IDS);
+const ids = (only ? [only] : localPoemIds()).filter((id) => {
+  if (!existsSync(join(root, "src/lib/catalog/texts", `${id}.json`))) return false;
+  if (!force && miraSkip.has(id)) return false;
+  return true;
+});
 
 const report: string[] = [];
 for (const id of ids) {
