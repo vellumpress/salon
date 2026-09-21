@@ -327,7 +327,7 @@ export const SHELF: ShelfWork[] = [
     gutenberg: 75530,
     opening:
       "One of the fruits of Emancipation in the West Indian islands is the number of the ruins, either attached to the houses that remain or within a stone’s throw of them: ruined slaves’ quarters, ruined sugar-grinding houses, ruined boiling houses; often ruined mansions that were too expensive to maintain.",
-    breaths: 3166,
+    breaths: 3167,
     intro:
       "This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant. Hughes’s 1929 voice already uses period racial language in this stretch, and a sharper racial gaze continues immediately after the open-at. If you Host further into the chapter, warn the room first.",
   },
@@ -567,7 +567,7 @@ export const SHELF: ShelfWork[] = [
     local: true,
     gutenberg: 2078,
     opening: "In those days there were many hermits living in the desert.",
-    breaths: 2927,
+    breaths: 2926,
     intro:
       "Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond. Desire, conversion, and desert zeal intensify after this atlas-like open. Warn the room if you Host into Paphnutius / Thaïs.",
   },
