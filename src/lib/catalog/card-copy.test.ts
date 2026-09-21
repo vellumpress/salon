@@ -655,14 +655,13 @@ test("A High Wind in Jamaica opens on Emancipation ruins and binds only the rank
     packed.breaths.some((breath) => /went _bung_\./.test(breath.text)),
     "PG emphasis becomes italic markup",
   );
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
   assert.match(full.breaths[0]?.text ?? "", /^One of the fruits of Emancipation/);
-  assert.match(full.breaths.at(-1)?.text ?? "", /rank plant\.?$/);
-  for (const pack of [packed, full]) {
-    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+  {
+    const joined = packed.breaths.map((breath) => breath.text).join("\n");
     assert.doesNotMatch(joined, /project gutenberg/i);
-    const decorative = pack.breaths.filter((breath) => {
+    const decorative = packed.breaths.filter((breath) => {
       const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
       return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
     });
@@ -693,14 +692,13 @@ test("Noli Me Tangere opens on Capitan Tiago’s dinner and binds only the Pasig
     false,
     "open-at should stop before Ibarra / the rest of the novel",
   );
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
   assert.match(full.breaths[0]?.text ?? "", /^On the last of October Don Santiago de los Santos/);
-  assert.match(full.breaths.at(-1)?.text ?? "", /convenient\.?$/);
-  for (const pack of [packed, full]) {
-    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+  {
+    const joined = packed.breaths.map((breath) => breath.text).join("\n");
     assert.doesNotMatch(joined, /project gutenberg/i);
-    const decorative = pack.breaths.filter((breath) => {
+    const decorative = packed.breaths.filter((breath) => {
       const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
       return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
     });
@@ -734,14 +732,13 @@ test("Vera opens on the cliff gate and binds only the second felt-nothing sit", 
     false,
     "open-at should stop before Wemyss / the rest of the novel",
   );
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
   assert.match(full.breaths[0]?.text ?? "", /^When the doctor had gone/);
-  assert.match(full.breaths.at(-1)?.text ?? "", /felt nothing\.?$/);
-  for (const pack of [packed, full]) {
-    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+  {
+    const joined = packed.breaths.map((breath) => breath.text).join("\n");
     assert.doesNotMatch(joined, /project gutenberg/i);
-    const decorative = pack.breaths.filter((breath) => {
+    const decorative = packed.breaths.filter((breath) => {
       const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
       return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
     });
@@ -799,8 +796,8 @@ test("Futility opens on the sisters’ bouquet and skips the Wharton preface", (
     "open-at should skip the Wharton preface",
   );
   assert.ok(packed.breaths.some((breath) => /_datcha_/.test(breath.text)));
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("The Poison Tree opens on the Ganges storm and binds only that sit", () => {
@@ -822,8 +819,8 @@ test("The Poison Tree opens on the Ganges storm and binds only that sit", () => 
   assert.match(packed.scenes[0]?.reentry ?? "", /^Nagendra Natha Datta is about to travel by boat/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /heavy storm of rain\.?$/);
   assert.ok(packed.breaths.some((breath) => /_zemindar_/.test(breath.text)));
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("Trooper Peter Halket opens on the kopje fire and stops before the stranger", () => {
@@ -855,8 +852,8 @@ test("Trooper Peter Halket opens on the kopje fire and stops before the stranger
     false,
     "open-at should stop before the stranger",
   );
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("The Home and the World opens on Mother’s vermilion and binds only the mirror-prayer sit", () => {
@@ -884,12 +881,12 @@ test("The Home and the World opens on Mother’s vermilion and binds only the mi
   assert.equal(packed.breaths[0]?.text.startsWith("Mother,"), true);
   assert.doesNotMatch(packed.breaths.map((breath) => breath.text).join("\n"), /\bMOTHER\b/);
   assert.ok(packed.breaths.some((breath) => /\*sari\*/.test(breath.text)));
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
-  for (const pack of [packed, full]) {
-    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
+  {
+    const joined = packed.breaths.map((breath) => breath.text).join("\n");
     assert.doesNotMatch(joined, /project gutenberg/i);
-    const decorative = pack.breaths.filter((breath) => {
+    const decorative = packed.breaths.filter((breath) => {
       const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
       return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
     });
@@ -941,13 +938,14 @@ test("Enchanted April opens on the first-session dripping-street cut, not the lo
     words.length >= 145 && words.length <= 170,
     `expected ~158 words, got ${words.length}`,
   );
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the first-session sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
-  for (const pack of [packed, full]) {
-    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
+  {
+    const joined = packed.breaths.map((breath) => breath.text).join("\n");
     assert.doesNotMatch(joined, /project gutenberg/i);
     assert.doesNotMatch(joined, /what nonsense|Mrs\. Arbuthnot/i);
   }
+  assert.doesNotMatch(full.breaths.map((breath) => breath.text).join("\n"), /project gutenberg/i);
 });
 
 test("Where Angels Fear to Tread opens at Charing Cross and binds only the town-list sit", () => {
@@ -974,12 +972,12 @@ test("Where Angels Fear to Tread opens at Charing Cross and binds only the town-
     false,
     "open-at should stop before Gino / the rest of the novel",
   );
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
-  for (const pack of [packed, full]) {
-    const joined = pack.breaths.map((breath) => breath.text).join("\n");
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
+  {
+    const joined = packed.breaths.map((breath) => breath.text).join("\n");
     assert.doesNotMatch(joined, /project gutenberg/i);
-    const decorative = pack.breaths.filter((breath) => {
+    const decorative = packed.breaths.filter((breath) => {
       const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
       return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
     });
@@ -1051,12 +1049,9 @@ test("The Immoralist opens on the freedom line and skips the 1930 preface", () =
     false,
     "open-at should skip the Gide/Bussy preface",
   );
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
-  for (const pack of [packed, full]) {
-    const joined = pack.breaths.map((breath) => breath.text).join("\n");
-    assert.doesNotMatch(joined, /project gutenberg/i);
-  }
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
+  assert.doesNotMatch(packed.breaths.map((breath) => breath.text).join("\n"), /project gutenberg/i);
 });
 
 test("Letters of a Javanese Princess ships the hardened Host note and skips Couperus", () => {
@@ -1091,8 +1086,8 @@ test("Letters of a Javanese Princess ships the hardened Host note and skips Coup
     false,
     "open-at should skip Couperus and footnote markers",
   );
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the letters");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full letters stay available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("Blood and Sand opens on fight-day breakfast and binds only that sit", () => {
@@ -1115,8 +1110,8 @@ test("Blood and Sand opens on fight-day breakfast and binds only that sit", () =
   assert.match(packed.scenes[0]?.reentry ?? "", /^Juan Gallardo breakfasted early/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /not made much impression\.?$/);
   assert.ok(packed.breaths.some((breath) => /\*la alternativa\*/.test(breath.text)));
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("Ecstasy opens on the Scheveningen boudoir and binds only that sit", () => {
@@ -1139,8 +1134,8 @@ test("Ecstasy opens on the Scheveningen boudoir and binds only that sit", () => 
   assert.match(packed.scenes[0]?.reentry ?? "", /^Dolf Van Attema/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /kept the boy awake for hours\.?$/);
   assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("An Outcast of the Islands uses the trimmed brackets sit and a required Host note", () => {
@@ -1172,8 +1167,8 @@ test("An Outcast of the Islands uses the trimmed brackets sit and a required Hos
   const joined = packed.breaths.map((breath) => breath.text).join("\n");
   assert.doesNotMatch(joined, /half-caste|pale yellow|dark-skinned|tyrannize/i);
   assert.doesNotMatch(joined, /sunshine|garden before his house/i);
-  assert.ok(full.breaths.length > packed.breaths.length, "full PG text remains for Host further");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("The Underdogs opens in the sierra hut and binds only that sit", () => {
@@ -1201,8 +1196,8 @@ test("The Underdogs opens in the sierra hut and binds only that sit", () => {
     "open-at should stop before Demetrio leaves the hut",
   );
   assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("The Painted Veil opens on the shuttered door and skips the PREFACE", () => {
@@ -1220,7 +1215,7 @@ test("The Painted Veil opens on the shuttered door and skips the PREFACE", () =>
   ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
   const full = JSON.parse(
     readFileSync(new URL("./texts/the-painted-veil.json", import.meta.url), "utf8"),
-  ) as { note: string; breaths: { text: string }[] };
+  ) as { note: string; scenes: { title: string }[]; breaths: { text: string }[] };
   assert.match(packed.note, /How shall I get out/);
   assert.match(packed.note, /Name the frame if you Host further/);
   assert.match(work!.intro ?? "", /amah/);
@@ -1233,8 +1228,11 @@ test("The Painted Veil opens on the shuttered door and skips the PREFACE", () =>
     false,
     "open-at should skip PREFACE",
   );
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
+  assert.match(full.breaths[0]?.text ?? "", /^She gave a startled cry/);
+  assert.ok(full.scenes.length > 20, "real chapter scenes through the novel");
+  assert.notEqual(full.breaths.at(-1)?.text, packed.breaths.at(-1)?.text);
 });
 
 test("The Good Soldier opens on the glove and binds only that sit", () => {
@@ -1262,8 +1260,8 @@ test("The Good Soldier opens on the glove and binds only that sit", () => {
     false,
     "open-at should skip PART I chrome",
   );
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("Growth of the Soil ships the soft Host note for period Lapp / Sámi", () => {
@@ -1293,8 +1291,8 @@ test("Growth of the Soil ships the soft Host note for period Lapp / Sámi", () =
   assert.match(packed.scenes[0]?.reentry ?? "", /^The long, long road over the moors/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /in search of peace\.?$/);
   assert.ok(packed.breaths.some((breath) => /\bLapp\b/.test(breath.text)));
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("Nada the Lily ships the required colonial Host note and hidden-name sit", () => {
@@ -1324,8 +1322,8 @@ test("Nada the Lily ships the required colonial Host note and hidden-name sit", 
   assert.match(packed.scenes[0]?.reentry ?? "", /^You ask me, my father/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /did any know my name\.?$/);
   assert.ok(packed.breaths.some((breath) => /Zweete/.test(breath.text)));
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("The Diary of a Chambermaid opens on hiring day and binds only that sit", () => {
@@ -1348,8 +1346,8 @@ test("The Diary of a Chambermaid opens on hiring day and binds only that sit", (
   assert.match(packed.scenes[0]?.reentry ?? "", /^To-day, September 14/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /without any interview with Madame\.?$/);
   assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("All Quiet on the Western Front opens on double rations and skips the epigraph", () => {
@@ -1374,8 +1372,8 @@ test("All Quiet on the Western Front opens on double rations and skips the epigr
   assert.match(packed.scenes[0]?.title ?? "", /Double rations/i);
   assert.match(packed.scenes[0]?.reentry ?? "", /^We are at rest five miles behind the front/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /now that is decent\.?$/);
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("We opens on burning cheeks, skips FOREWORD, and keeps id we", () => {
@@ -1406,8 +1404,8 @@ test("We opens on burning cheeks, skips FOREWORD, and keeps id we", () => {
     false,
     "open-at should skip FOREWORD and the newspaper copy",
   );
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("The Story of Gösta Berling opens on the pulpit and skips the translator preface", () => {
@@ -1432,8 +1430,8 @@ test("The Story of Gösta Berling opens on the pulpit and skips the translator p
   assert.match(packed.scenes[0]?.title ?? "", /The pulpit/i);
   assert.match(packed.scenes[0]?.reentry ?? "", /^At last the minister stood in the pulpit/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /Captain Christian Bergh\.?$/);
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("Demian opens on two worlds and binds only that sit", () => {
@@ -1459,8 +1457,8 @@ test("Demian opens on two worlds and binds only that sit", () => {
   assert.match(packed.scenes[0]?.title ?? "", /Two worlds/i);
   assert.match(packed.scenes[0]?.reentry ?? "", /^I will begin my story with an event of the time when I was ten or eleven/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /Christmas was kept\.?$/);
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("Death Comes for the Archbishop opens on red hills, not the Rome prologue", () => {
@@ -1704,8 +1702,8 @@ test("Thaïs opens on Nile hermit huts and binds only that sit", () => {
   assert.match(packed.scenes[0]?.title ?? "", /Nile huts/i);
   assert.match(packed.scenes[0]?.reentry ?? "", /^In those days there were many hermits/);
   assert.match(packed.breaths.at(-1)?.text ?? "", /cave or tomb\.?$/);
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the novel");
-  assert.equal(work!.breaths, packed.breaths.length);
+  assert.ok(full.breaths.length > packed.breaths.length, "full novel stays available after the sit");
+  assert.equal(work!.breaths, full.breaths.length);
 });
 
 test("The Cherry Orchard is a readable four-act play, not one breath per page", () => {

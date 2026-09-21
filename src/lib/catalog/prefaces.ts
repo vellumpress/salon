@@ -62,7 +62,7 @@ export const PREFACES: Record<string, string> = {
   "elmer-gantry":
     "American professions as a hustle you can still try to stay honest inside. Lewis’s 1927 preacher novel is heat, tents, and appetite. Sit with the noise before the first breath.",
   "the-painted-veil":
-    "Someone tries the door — shuttered room, tight shoes, a kimono, and Walter’s name whispered. Maugham’s 1925 Hong Kong orbit sit stops on “How shall I get out?”",
+    "Someone tries the door — shuttered room, tight shoes, a kimono, and Walter’s name whispered. Maugham’s 1925 Hong Kong orbit sit opens on “How shall I get out?”",
   "the-moon-and-sixpence":
     "A stockbroker walks out of a life to paint — Maugham’s Gauguin rumor. The 1919 novel is told by someone still trying to explain it. Sit with the gossip before the first breath.",
   "o-pioneers":

@@ -162,7 +162,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   rashomon:
     `Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate. Akutagawa’s Kyoto opens on desolation before the crime story blooms.`,
   "high-wind-jamaica":
-    `This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant. Hughes’s 1929 voice already uses period racial language in this stretch, and a sharper racial gaze continues immediately after Salon’s stop. We end at the plant on purpose so the timed sit stays bounded; if you Host further into the chapter, warn the room first.`,
+    `This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant. Hughes’s 1929 voice already uses period racial language in this stretch, and a sharper racial gaze continues immediately after the open-at. If you Host further into the chapter, warn the room first.`,
   "noli-me-tangere":
     `Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.`,
   vera:
@@ -174,35 +174,35 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "poison-tree":
     `His wife makes him promise: if a storm rises, leave the boat. On the Ganges in Joisto, the weather keeps that promise.`,
   "trooper-peter-halket":
-    `A lone Chartered Company trooper on a Mashonaland kopje, fire quivering, inventing gold companies in the dark after losing his column. Written in 1897, the open already frames colonial scouting; missionary and racial language harden after Salon stops—before the stranger arrives. We cut there so the sit stays a night watch, not a sermon. If you Host further, name that colonial frame up front.`,
+    `A lone Chartered Company trooper on a Mashonaland kopje, fire quivering, inventing gold companies in the dark after losing his column. Written in 1897, the open already frames colonial scouting; missionary and racial language harden after the night-watch open-at—before the stranger arrives. If you Host further, name that colonial frame up front.`,
   "the-home-and-the-world":
-    `Mother’s vermilion mark, a red-bordered *sari*, a dark face that shamed vanity — and a daughter furious with her mirror. Bimala remembers beauty, colour, and duty in a Bengal house. Salon stops at the mirror prayer.`,
+    `Mother’s vermilion mark, a red-bordered *sari*, a dark face that shamed vanity — and a daughter furious with her mirror. Bimala remembers beauty, colour, and duty in a Bengal house.`,
   "where-angels-fear-to-tread":
     `Charing Cross chaos — Lilia laughing like royalty while Philip floods her with little towns to see: Gubbio, Pienza, Monteriano. Later the plot darkens; this open stays comic.`,
   "the-gadfly":
     `Pisa seminary heat — a lost sermon page, a caressing *Padre*, and a fruitseller calling *Fragola!* down the street. Later violence comes after this sit.`,
   "the-immoralist":
-    `Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for. This Salon cut stops on the freedom line.`,
+    `Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for.`,
   "letters-of-a-javanese-princess":
-    `Kartini writes from colonial Java in 1899, hungry for the “modern girl” of Europe while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. Salon stops at the cloistered-arms beat; if you Host further letters, name that colonial frame for the room first.`,
+    `Kartini writes from colonial Java in 1899, hungry for the “modern girl” of Europe while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. The Rituals sit is the cloistered-arms beat; if you Host further letters, name that colonial frame for the room first.`,
   "blood-and-sand":
     `Fight-day breakfast: meat, black coffee, a huge cigar — and a dining room that treats the matador like family glory.`,
   ecstasy:
     `After dinner on the Scheveningen Road — rosewood, vieux-rose silk, an onyx lamp like a six-petalled flower — and a promise not to wake the boy.`,
   "an-outcast-of-the-islands":
-    `A little excursion off the straight path — neatly done, quickly forgotten. Conrad’s Malay Archipelago world — colonial hierarchy and racialized language intensify after this cut. Salon stops at the sentence-in-brackets resolve; if you Host further, name that frame for the room first.`,
+    `A little excursion off the straight path — neatly done, quickly forgotten. Conrad’s Malay Archipelago world — colonial hierarchy and racialized language intensify after the open-at. If you Host further, name that frame for the room first.`,
   "the-underdogs":
     `Dog barking in the sierra — tortillas, a *cántaro*, a rifle under the mat — and hoofbeats in the quarry.`,
   "diary-of-a-chambermaid":
     `Twelfth place in two years — rainy September, *Figaro* ad, dirty souls, and no interview with Madame.`,
   "the-painted-veil":
-    `Someone tries the door — shuttered room, tight shoes, a kimono, and Walter’s name whispered. Hong Kong / treaty-port China, colonial household language (*amah*, “boys”), then cholera inland. This Salon cut stops on “How shall I get out?” Name the frame if you Host further.`,
+    `Someone tries the door — shuttered room, tight shoes, a kimono, and Walter’s name whispered. Hong Kong / treaty-port China, colonial household language (*amah*, “boys”), then cholera inland. The sit opens on “How shall I get out?” Name the frame if you Host further.`,
   "the-good-soldier":
     `Nine seasons at Bad Nauheim — intimacy like a good glove, and still they knew nothing.`,
   "growth-of-the-soil":
     `Who made the road over the moors? A man with a sack, a red beard, and scars — looking for land, or peace. Hamsun’s settler open uses the period word “Lapp” for Sámi herders on the common. Historical voice; Salon stays on the man with the sack. If you Host further, keep that named for the room.`,
   "nada-the-lily":
-    `You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zululand frame — an old narrator under “the White Man” / Great Queen law — is colonial adventure voice, with period names and violence ahead. Name that frame for the room before you Host further; Salon stops at the hidden-name beat.`,
+    `You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zululand frame — an old narrator under “the White Man” / Great Queen law — is colonial adventure voice, with period names and violence ahead. Name that frame for the room before you Host further.`,
   "all-quiet-on-the-western-front":
     `Five miles behind the front — bellies full, double sausage, and a cook who won’t stop ladling. This sit is rest and double rations five miles behind the line; later chapters bring trench violence and period enemy language. Warn the room if you Host further.`,
   we:

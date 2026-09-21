@@ -266,7 +266,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "les-civilises": `Claude Farrère’s 1905 novel Les civilisés. Sit with the world a moment before the first breath.`,
   "les-fleurs-du-mal": `Charles Baudelaire’s 1857 poems: Les Fleurs du mal. Let the first line arrive when you are ready.`,
   "les-illuminations": `Arthur Rimbaud’s 1886 poems: Les Illuminations. Let the first line arrive when you are ready.`,
-  "letters-of-a-javanese-princess": `Kartini writes from colonial Java in 1899, hungry for the “modern girl” of Europe while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. Salon stops at the cloistered-arms beat; if you Host further letters, name that colonial frame for the room first.`,
+  "letters-of-a-javanese-princess": `Kartini writes from colonial Java in 1899, hungry for the “modern girl” of Europe while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. The Rituals sit is the cloistered-arms beat; if you Host further letters, name that colonial frame for the room first.`,
   "liaisons": `Pierre Choderlos de Laclos’s 1782 novel Les Liaisons dangereuses. Sit with the world a moment before the first breath.`,
   "libro-de-poemas": `Federico García Lorca’s 1921 poems: Libro de poemas. Let the first line arrive when you are ready.`,
   "life-s-handicap-being-stories-of-mine-own-people": `Life's Handicap: Being Stories of Mine Own People (1891): the empire still in the room while the story jokes. Enter one room at a time.`,
