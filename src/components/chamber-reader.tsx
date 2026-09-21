@@ -30,8 +30,10 @@ import {
   shareOrCopy,
   sittingSharePath,
 } from "@/lib/shuffle";
-import { publicUrl } from "@/lib/site";
+import { clipLine } from "@/lib/share-codec";
+import { liveBackendEnabled, publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
 import { createSentenceShare } from "@/lib/sentence-share";
+import { cardReadUrl } from "@/lib/salon-card";
 import {
   SIT_PRESETS,
   asSittingMinutes,
@@ -311,14 +313,40 @@ export function VellumReader({
   async function sendInviteLink() {
     if (!inviteHref) return;
     const result = await shareOrCopy({
-      title: work.title,
-      text: work.title,
+      title: salonShareTitle(work.title),
+      text: salonShareText(`Sit together with ${work.title}.`),
       url: inviteHref,
     });
     if (result === "copied") {
       setInviteCopied(true);
       window.setTimeout(() => setInviteCopied(false), 1400);
     }
+  }
+
+  async function sendKeptLine() {
+    if (sendBusy || !breath) return;
+    setSendBusy(true);
+    setSendResult(null);
+    const url = cardReadUrl({ workId: work.id, at: index });
+    const result = await shareOrCopy({
+      title: salonShareTitle(work.title),
+      text: salonShareText(clipLine(breath.text, 160)),
+      url,
+    });
+    if (liveBackendEnabled) {
+      void createSentenceShare({
+        data: {
+          workId: work.id,
+          breathIndex: index,
+          sentenceText: breath.text,
+          toPhone: sendPhone.trim() || undefined,
+        },
+      }).catch(() => undefined);
+    }
+    if (result === "shared" || result === "copied") {
+      setSendResult(result);
+    }
+    setSendBusy(false);
   }
 
   function beginFromGate() {
@@ -1318,38 +1346,7 @@ export function VellumReader({
               disabled={sendBusy}
               className="veil-action bg-ink text-paper disabled:opacity-60"
               onClick={() => {
-                if (sendBusy || !breath) return;
-                setSendBusy(true);
-                setSendResult(null);
-                void createSentenceShare({
-                  data: {
-                    workId: work.id,
-                    breathIndex: index,
-                    sentenceText: breath.text,
-                    toPhone: sendPhone.trim() || undefined,
-                  },
-                })
-                  .then(async (row) => {
-                    const url = publicUrl(`/s/${row.token}`);
-                    const snippet =
-                      breath.text.length > 160
-                        ? `${breath.text.slice(0, 157)}…`
-                        : breath.text;
-                    const result = await shareOrCopy({
-                      title: work.title,
-                      text: `${snippet}\n\nA private sitting link from Salon.`,
-                      url,
-                    });
-                    if (result === "shared" || result === "copied") {
-                      setSendResult(result);
-                    }
-                  })
-                  .catch(() => {
-                    setSendResult(null);
-                  })
-                  .finally(() => {
-                    setSendBusy(false);
-                  });
+                void sendKeptLine();
               }}
             >
               {sendBusy

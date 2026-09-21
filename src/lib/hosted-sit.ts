@@ -1,6 +1,7 @@
 import { shelfWork } from "./catalog/shelf.ts";
 import { asSittingMinutes, sitLabel, type SittingMinutes } from "./sitting.ts";
 import { clipLine, decodeShare, encodeShare, makeShortId } from "./share-codec.ts";
+import { publicUrl } from "./site.ts";
 import { formatHandle, normalizeHandle } from "./social.ts";
 
 export type SitRsvp = "yes" | "later";
@@ -56,7 +57,7 @@ export function hostedSitPath(sit: HostedSit): string {
 }
 
 export function hostedSitUrl(sit: HostedSit): string {
-  return hostedSitPath(sit);
+  return publicUrl(hostedSitPath(sit));
 }
 
 export function encodeHostedSit(sit: HostedSit): string {

@@ -77,3 +77,28 @@ test("sand-run sheet Again restarts the sit as an equal pair with Continue", () 
     "sand-run actions must sit above the hourglass hit target",
   );
 });
+
+test("Send Share uses a local deep link and native share, not a blocking phone persist", () => {
+  const sendAt = reader.indexOf("async function sendKeptLine(");
+  assert.ok(sendAt > -1, "sendKeptLine helper missing");
+  const sendFn = reader.slice(sendAt, reader.indexOf("function beginFromGate("));
+  const shareAt = sendFn.indexOf("shareOrCopy(");
+  const persistAt = sendFn.indexOf("createSentenceShare(");
+  assert.ok(shareAt > -1, "Share must call shareOrCopy");
+  assert.match(sendFn, /cardReadUrl/);
+  assert.match(sendFn, /salonShareTitle/);
+  if (persistAt > -1) {
+    assert.ok(shareAt < persistAt, "native share must run before optional persist");
+    assert.match(sendFn, /liveBackendEnabled/);
+  }
+  const sheet = reader.slice(
+    reader.indexOf('overlay === "send"'),
+    reader.indexOf("export const ChamberReader"),
+  );
+  assert.match(sheet, /Friend's phone — for later/);
+  assert.match(sheet, /sendKeptLine/);
+  assert.doesNotMatch(
+    sheet.slice(sheet.indexOf("veil-action"), sheet.indexOf("Dismiss")),
+    /createSentenceShare/,
+  );
+});

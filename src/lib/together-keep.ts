@@ -1,5 +1,6 @@
 import { shelfWork } from "./catalog/shelf.ts";
 import { clipLine, decodeShare, encodeShare, makeShortId } from "./share-codec.ts";
+import { publicUrl } from "./site.ts";
 import { formatHandle, normalizeHandle, readerByHandle } from "./social.ts";
 
 export type TogetherKeepSide = {
@@ -44,6 +45,10 @@ type EchoWire = {
 
 export function echoInvitePath(invite: EchoInvite): string {
   return `/read/${encodeURIComponent(invite.workId)}?at=${Math.max(0, invite.at ?? 0)}&echo=${encodeURIComponent(encodeEchoInvite(invite))}`;
+}
+
+export function echoInviteUrl(invite: EchoInvite): string {
+  return publicUrl(echoInvitePath(invite));
 }
 
 export function encodeEchoInvite(invite: EchoInvite): string {

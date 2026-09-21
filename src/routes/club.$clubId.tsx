@@ -14,6 +14,7 @@ import {
 } from "@/lib/clubs";
 import { defaultSitClock, etWallToIso, formatClubWhenLong } from "@/lib/club-time";
 import { serializeClubReadSearch } from "@/lib/catalog/serialize";
+import { salonShareText, salonShareTitle } from "@/lib/site";
 
 export const Route = createFileRoute("/club/$clubId")({
   component: ClubPage,
@@ -247,8 +248,8 @@ function LiveClub({
 
   async function share() {
     const result = await shareOrCopy({
-      title: club.name,
-      text: when ? `${club.name} — ${when}` : club.name,
+      title: salonShareTitle(club.name),
+      text: salonShareText(when ? `${club.name} — ${when}` : club.name),
       url: clubInviteUrl(club.inviteToken),
     });
     if (result === "copied") {

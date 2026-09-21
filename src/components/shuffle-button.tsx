@@ -45,8 +45,8 @@ export function ShareLinkButton({ className }: { className?: string }) {
       )}
       onClick={() => {
         void shareOrCopy({
-          title: document.title || "Vellum",
-          text: "A sitting on Vellum",
+          title: document.title || "Salon",
+          text: "A sitting from Salon.",
           url: window.location.href,
         }).then((result) => {
           if (result !== "shared" && result !== "copied") return;

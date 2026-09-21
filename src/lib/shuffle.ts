@@ -58,50 +58,10 @@ export function sittingSharePath(workId: string, sit: number, pair?: string, epi
   return `/read/${workId}?${query.toString()}`;
 }
 
-export async function copyText(text: string) {
-  try {
-    await navigator.clipboard.writeText(text);
-    return true;
-  } catch {
-    const field = document.createElement("textarea");
-    field.value = text;
-    field.setAttribute("readonly", "");
-    field.style.position = "fixed";
-    field.style.left = "-9999px";
-    document.body.appendChild(field);
-    field.select();
-    const ok = document.execCommand("copy");
-    field.remove();
-    return ok;
-  }
-}
-
-
-/** True when Web Share is likely usable (touch devices with navigator.share). */
-export function canNativeShare() {
-  return (
-    typeof navigator !== "undefined" &&
-    typeof navigator.share === "function" &&
-    navigator.maxTouchPoints > 0
-  );
-}
-
-export type ShareOrCopyResult = "shared" | "copied" | "aborted" | "failed";
-
-/** Prefer OS share sheet on phones; otherwise copy the URL. AbortError → aborted (no copy). */
-export async function shareOrCopy(payload: {
-  title: string;
-  text: string;
-  url: string;
-}): Promise<ShareOrCopyResult> {
-  if (canNativeShare()) {
-    try {
-      await navigator.share(payload);
-      return "shared";
-    } catch (err) {
-      if (err instanceof Error && err.name === "AbortError") return "aborted";
-    }
-  }
-  const ok = await copyText(payload.url);
-  return ok ? "copied" : "failed";
-}
+export {
+  canNativeShare,
+  copyText,
+  mailtoShareHref,
+  shareOrCopy,
+  type ShareOrCopyResult,
+} from "./invite-share.ts";

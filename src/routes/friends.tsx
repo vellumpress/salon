@@ -5,7 +5,7 @@ import { fillClass, fillInk, planeOf } from "@/lib/mondrian";
 import { friendKeptLine, friendsFeed, searchPeople, youCard } from "@/lib/friends";
 import { renameActiveHandle } from "@/lib/reader-account";
 import { formatHandle, handleError, normalizeHandle, readerByHandle } from "@/lib/social";
-import { liveBackendEnabled, publicUrl } from "@/lib/site";
+import { liveBackendEnabled, salonShareText, salonShareTitle } from "@/lib/site";
 import { useVellum } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import { encodeEchoInvite } from "@/lib/together-keep";
@@ -98,9 +98,9 @@ function FriendsPage() {
     addContact({ handle: pledge.toHandle });
     setPledgeTo("");
     const result = await shareOrCopy({
-      title: "A sitting tonight",
-      text: pledgeLine(pledge),
-      url: publicUrl(sitPledgeUrl(pledge)),
+      title: salonShareTitle("A sitting tonight"),
+      text: salonShareText(pledgeLine(pledge)),
+      url: sitPledgeUrl(pledge),
     });
     setMessage(result === "failed" ? "The note would not copy." : "The note is ready.");
   }
