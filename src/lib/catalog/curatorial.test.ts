@@ -82,6 +82,10 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "trooper-peter-halket",
     "the-home-and-the-world",
     "the-immoralist",
+    "a-hero-of-our-time",
+    "strange-tales",
+    "short-stories-from-the-balkans",
+    "the-awakening",
   ]);
   assert.equal(curatorialTrack("quicksand"), "featured");
   assert.equal(curatorialTrack("the-house-of-mirth"), "featured");
@@ -1031,6 +1035,80 @@ test("Salon 8am CLEAR ×4 are local Next / Rituals binds, never Featured", () =>
   assert.equal(forYou!.workIds.includes("nacha-regules"), false);
   assert.equal(forYou!.workIds.includes("krakatit"), false);
   assert.equal(forYou!.workIds.includes("the-peasants"), false);
+});
+
+test("Salon noon CLEAR ×5 are local Next / Rituals binds, never Featured", () => {
+  const expect = {
+    "a-hero-of-our-time": {
+      track: "next",
+      opening: /^I was travelling post from Tiflis\./,
+      breaths: 1526,
+    },
+    "strange-tales": {
+      track: "next",
+      opening: /^A Kiang-si gentleman, named Mêng Lung-t‘an/,
+      breaths: 470,
+    },
+    "short-stories-from-the-balkans": {
+      track: "next",
+      opening: /^Leiba Zibal, proprietor of the little rest-house by Podeni/,
+      breaths: 986,
+    },
+    "the-awakening": {
+      track: "next",
+      opening: /^A green and yellow parrot, which hung in a cage outside the door/,
+      breaths: 1066,
+    },
+    "a-few-figs-from-thistles": {
+      track: "later",
+      opening: /^My candle burns at both ends;/,
+      breaths: 66,
+    },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const waking = RITUAL_LANES.find((item) => item.id === "waking-up");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  assert.ok(sleep);
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.match(work!.opening ?? "", want.opening, id);
+    assert.ok(sleep!.workIds.includes(id), id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), want.track, id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+  }
+  const cycle = [
+    "a-hero-of-our-time",
+    "strange-tales",
+    "short-stories-from-the-balkans",
+    "the-awakening",
+    "a-few-figs-from-thistles",
+  ];
+  const immoralist = sleep!.workIds.indexOf("the-immoralist");
+  const gadfly = sleep!.workIds.indexOf("the-gadfly");
+  for (const id of cycle) {
+    const at = sleep!.workIds.indexOf(id);
+    assert.ok(at > immoralist, `${id} ahead of Later pile`);
+    assert.ok(at < gadfly, `${id} ahead of Later pile`);
+  }
+  assert.equal(waking?.workIds.includes("a-few-figs-from-thistles"), false);
+  assert.deepEqual(forYou!.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  assert.equal(forYou!.workIds.at(-1), "the-awakening");
+  assert.equal(forYou!.workIds.includes("cane"), true);
+  assert.equal(forYou!.workIds.includes("a-hero-of-our-time"), false);
+  assert.equal(
+    (NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("a-few-figs-from-thistles"),
+    false,
+  );
+  assert.equal(curatorialTrack("a-few-figs-from-thistles"), "later");
 });
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {

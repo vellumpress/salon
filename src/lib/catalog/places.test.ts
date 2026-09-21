@@ -97,6 +97,11 @@ test("named settings keep reader-friendly labels and real regions", () => {
     krakatit: { label: "Prague", region: "cz" },
     "the-peasants": { label: "Poland village", region: "pl" },
     cane: { label: "Georgia", region: "us-south" },
+    "a-hero-of-our-time": { label: "Caucasus—Georgia", region: "ge" },
+    "strange-tales": { label: "China", region: "cn" },
+    "short-stories-from-the-balkans": { label: "Romania", region: "ro" },
+    "the-awakening": { label: "Louisiana", region: "us-south" },
+    "a-few-figs-from-thistles": { label: "United States", region: "us" },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = shelfWork(id);

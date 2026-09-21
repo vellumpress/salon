@@ -15,6 +15,7 @@ export const FIRST_SCENE_TITLE: Record<string, string> = {
   "a-hundred-and-seventy-chinese-poems": "Battle",
   "the-weary-blues": "Proem",
   harmonium: "The Snow Man",
+  "a-few-figs-from-thistles": "First Fig",
 };
 
 /** Mira poem-chapter stamps — do not flatten these with the generic rebind. */
@@ -35,6 +36,7 @@ export const MIRA_STAMPED_POEM_IDS = [
   "precipitations",
   "sour-grapes",
   "harmonium",
+  "a-few-figs-from-thistles",
 ] as const;
 
 /** Waley 1918 headings from Winter Night through Last Poem (PG 42290). */

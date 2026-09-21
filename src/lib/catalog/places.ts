@@ -82,6 +82,10 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   krakatit: { label: "Prague", region: "cz" },
   "the-peasants": { label: "Poland village", region: "pl" },
   cane: { label: "Georgia", region: "us-south" },
+  "a-hero-of-our-time": { label: "Caucasus—Georgia", region: "ge" },
+  "strange-tales": { label: "China", region: "cn" },
+  "short-stories-from-the-balkans": { label: "Romania", region: "ro" },
+  "the-awakening": { label: "Louisiana", region: "us-south" },
 
   // Named examples
   botchan: { label: "Tokyo", region: "jp" },

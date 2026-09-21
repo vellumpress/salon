@@ -39,7 +39,15 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "spring-and-all":
     "Williams on the road to the contagious hospital, watching the first green push through. Spring as fact, not metaphor — cold air, then life.",
   "a-few-figs-from-thistles":
-    "Millay burns her candle at both ends and means it. Short, bright lyrics of appetite, wit, and the morning after.",
+    "My candle burns at both ends. This sit is First Fig and Recuerdo — the ferry, the apples, the subway fare — about five minutes. Each poem is its own chapter; the book continues.",
+  "a-hero-of-our-time":
+    "Post from Tiflis: a dukhan crowd and a caravan of camels at the foot of Mount Koishaur. Skip the translators’ foreword. Bela densifies later — Host-gate that stretch; the novel continues.",
+  "strange-tales":
+    "A Kiang-si gentleman and Mr. Chu step into a monastery and find a painted wall. Skip the Giles introduction. Close when Chu enters the painted apartment; the studio continues.",
+  "short-stories-from-the-balkans":
+    "Leiba Zibal waits under the roof at Podeni for a stage that is already an hour late. Easter Candles only — never Brother Cœlestin. A later pogrom densifies; do not open there.",
+  "the-awakening":
+    "A green and yellow parrot at Grand Isle keeps repeating Allez vous-en. First sit is Chapter I. The whole novel continues; adultery Host-gates later.",
   "songs-of-innocence-and-of-experience":
     "Blake’s paired songs: nursery light on one side, harder truths on the other. Read them as morning weather — clear, then clouded.",
   "second-april":
@@ -241,7 +249,7 @@ export const RITUAL_LANES: RitualLane[] = [
     id: FOR_YOU_LANE_ID,
     label: "For you",
     hint: "First sitting",
-    workIds: [...FIRST_SESSION_RITUAL_IDS, "cane"],
+    workIds: [...FIRST_SESSION_RITUAL_IDS, "cane", "the-awakening"],
   },
   {
     id: SERIALIZE_LANE_ID,
@@ -277,6 +285,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "trooper-peter-halket",
       "the-home-and-the-world",
       "the-immoralist",
+      "a-hero-of-our-time",
+      "strange-tales",
+      "short-stories-from-the-balkans",
+      "the-awakening",
+      "a-few-figs-from-thistles",
       "the-gadfly",
       "ecstasy",
       "the-painted-veil",
@@ -331,7 +344,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-peasants",
       "the-rubaiyat-of-omar-khayyam",
       "spring-and-all",
-      "a-few-figs-from-thistles",
       "songs-of-innocence-and-of-experience",
       "second-april",
       "renascence-and-other-poems",
@@ -467,6 +479,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   krakatit: 2,
   "the-peasants": 2,
   cane: 2,
+  "a-hero-of-our-time": 5,
+  "strange-tales": 5,
+  "short-stories-from-the-balkans": 5,
+  "the-awakening": 5,
+  "a-few-figs-from-thistles": 5,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

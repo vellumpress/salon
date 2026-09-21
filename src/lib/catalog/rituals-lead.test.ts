@@ -32,7 +32,11 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
     "botchan",
   ]);
   const forYou = lane(FOR_YOU_LANE_ID);
-  assert.deepEqual(forYou.workIds, [...FIRST_SESSION_RITUAL_IDS, "cane"]);
+  assert.deepEqual(forYou.workIds, [
+    ...FIRST_SESSION_RITUAL_IDS,
+    "cane",
+    "the-awakening",
+  ]);
   assert.equal(forYou.workIds[0], "the-house-of-mirth");
   assert.equal(forYou.workIds[1], "quicksand");
   assert.equal(forYou.workIds[2], "botchan");
@@ -59,6 +63,10 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
     "martin-bircks-youth",
     "harmonium",
     "steppenwolf",
+    "a-hero-of-our-time",
+    "strange-tales",
+    "short-stories-from-the-balkans",
+    "a-few-figs-from-thistles",
   ]) {
     assert.equal(forYou.workIds.includes(id), false, id);
   }
