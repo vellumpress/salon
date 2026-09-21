@@ -47,6 +47,11 @@ const FULL_NOVEL_NO_STUB = [
   "krakatit",
   "the-peasants",
   "cane",
+  "a-hero-of-our-time",
+  "strange-tales",
+  "short-stories-from-the-balkans",
+  "the-awakening",
+  "a-few-figs-from-thistles",
 ] as const;
 
 const FULL_NOVEL_NO_STUB_SET = new Set<string>(FULL_NOVEL_NO_STUB);
@@ -1514,6 +1519,74 @@ test("Mira FULL-TEXT CLEAR ×7 are stamped local binds with no opening stubs", (
     assert.match(full.breaths.at(-1)?.text ?? "", want.last, id);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /Featured/i, id);
   }
+});
+
+test("Salon noon CLEAR ×5 load as local full binds on the Host open", () => {
+  const expect = {
+    "a-hero-of-our-time": {
+      scenes: 37,
+      breaths: 1526,
+      opening: /^I was travelling post from Tiflis\.$/,
+      scene: /Bela/,
+      absent: /TRANSLATOR|translator’s foreword/i,
+    },
+    "strange-tales": {
+      scenes: 152,
+      breaths: 470,
+      opening: /^A Kiang-si gentleman, named Mêng Lung-t‘an/,
+      scene: /^The Painted Wall$/,
+      absent: /Giles’ Introduction|INTRODUCTION/i,
+    },
+    "short-stories-from-the-balkans": {
+      scenes: 13,
+      breaths: 986,
+      opening: /^Leiba Zibal, proprietor of the little rest-house by Podeni/,
+      scene: /^Easter Candles$/,
+      absent: /^High in the Apennines/,
+    },
+    "the-awakening": {
+      scenes: 39,
+      breaths: 1066,
+      opening: /^A green and yellow parrot, which hung in a cage outside the door/,
+      scene: /^Chapter I$/,
+      absent: /^THE END$/,
+    },
+    "a-few-figs-from-thistles": {
+      scenes: 19,
+      breaths: 66,
+      opening: /^My candle burns at both ends;/,
+      scene: /^First Fig$/,
+      absent: /Updated editions will replace/,
+    },
+  } as const;
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(work!.form === "poem" || work!.form === "novel" || work!.form === "stories", true, id);
+    if (id === "a-few-figs-from-thistles") assert.equal(work!.form, "poem");
+    assert.match(work!.opening ?? "", want.opening, id);
+    assertNoStubOpening(id);
+    const full = textWork(id);
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.equal(work!.breaths, full.breaths.length, id);
+    assert.equal(full.scenes[0]?.title, full.scenes[0]?.title);
+    assert.match(full.scenes[0]?.title ?? "", want.scene, id);
+    assert.match(full.breaths[0]?.text ?? "", want.opening, id);
+    assert.doesNotMatch(full.breaths[0]?.text ?? "", want.absent, id);
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /Featured/i, id);
+  }
+  const strange = textWork("strange-tales");
+  assert.equal(strange.scenes[0]?.title, "The Painted Wall");
+  assert.ok(strange.scenes.some((scene) => scene.title === "Examination for the Post of Guardian Angel"));
+  const balkans = textWork("short-stories-from-the-balkans");
+  assert.equal(balkans.scenes[0]?.title, "Easter Candles");
+  assert.ok(balkans.scenes.some((scene) => /Cœlestin/.test(scene.title)));
+  assert.notEqual(balkans.scenes[0]?.title, balkans.scenes.find((scene) => /Cœlestin/.test(scene.title))?.title);
+  const figs = textWork("a-few-figs-from-thistles");
+  assert.ok(figs.scenes.some((scene) => scene.title === "Recuerdo"));
+  assert.equal(figs.scenes.length, 19);
 });
 
 test("homepage examples keep country + concrete sentence", () => {

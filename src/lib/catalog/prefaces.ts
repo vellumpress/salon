@@ -54,7 +54,7 @@ export const PREFACES: Record<string, string> = {
   "the-autobiography-of-an-ex-colored-man":
     "A musician chooses passing, then has to live inside the choice. Johnson’s 1912 novel is told as if to one listener. Sit with that confidence before the first breath.",
   "the-awakening":
-    "A summer at the Gulf, a marriage, and a self that will not stay in the house. Chopin’s 1899 novel is heat and water. Sit with the shore a moment, then enter.",
+    "A green and yellow parrot at Grand Isle keeps repeating Allez vous-en. First sit is Chapter I. The whole novel continues.",
   "lord-jim":
     "A jump from a ship, and a life spent trying to outrun it. Conrad’s 1900 novel begins in rumor. Sit with the story before you meet the man.",
   "billy-budd":

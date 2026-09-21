@@ -18,7 +18,7 @@ function work(
 
 test("short poem pamphlet lands near ~12 min", () => {
   const item = work({
-    id: "a-few-figs-from-thistles",
+    id: "second-april",
     form: "poem",
     breaths: 343,
     minutes: 43,
@@ -26,6 +26,18 @@ test("short poem pamphlet lands near ~12 min", () => {
   });
   assert.equal(estimateRitualMinutes(item), 12);
   assert.equal(ritualDurationLabel(item), "~12 min");
+});
+
+test("Figs before-sleep sit is First Fig and Recuerdo", () => {
+  const item = work({
+    id: "a-few-figs-from-thistles",
+    form: "poem",
+    breaths: 66,
+    minutes: 20,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 5);
+  assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
 test("Yellow Wallpaper is about a half hour", () => {

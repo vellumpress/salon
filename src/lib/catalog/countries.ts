@@ -686,6 +686,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "journey-west": "China",
   "jin-ping-mei": "China",
   "strange-tales": "China",
+  "short-stories-from-the-balkans": "Romania",
   scholars: "China",
   "lao-can": "China",
   "flower-sin": "China",

@@ -44,6 +44,11 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * and Cane (For you + before-sleep) are ritual Next sits only — not locked
  * recommend, not Featured. Cane may surface on For you after the cold-open
  * trio; Mirth → Quicksand → Botchan stay first.
+ * Noon cycle (Sep 21) sits on the Next track, ahead of Later: A Hero of Our
+ * Time (Caucasus—Georgia), Strange Tales (Painted Wall), Short Stories from
+ * the Balkans (Easter Candles), and The Awakening (For you after the
+ * cold-open trio, then Cane). A Few Figs from Thistles is Rituals
+ * before-sleep only — poem chapters, First Fig — not Next, not Featured.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -61,6 +66,10 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "trooper-peter-halket",
   "the-home-and-the-world",
   "the-immoralist",
+  "a-hero-of-our-time",
+  "strange-tales",
+  "short-stories-from-the-balkans",
+  "the-awakening",
 ] as const;
 
 /**

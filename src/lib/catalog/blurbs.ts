@@ -327,7 +327,7 @@ const BLURBS: Record<string, string> = {
   "spring-and-all":
     "Williams on the road to the contagious hospital, watching the first green push through.",
   "a-few-figs-from-thistles":
-    "Millay burns her candle at both ends and means it.",
+    "Millay’s candle burns at both ends — First Fig, then the ferry in Recuerdo.",
   "the-wild-swans-at-coole":
     "Yeats returns to Coole’s autumn lake and counts the swans that will not stay.",
   "the-listeners-and-other-poems":
@@ -617,7 +617,14 @@ const BLURBS: Record<string, string> = {
   "a-hazard-of-new-fortunes": "Howells’ New York magazine, a strike, and the comfortable people watching.",
   "old-creole-days": "Cable’s New Orleans stories: French, Spanish, and the color line in the same street.",
   "a-night-in-acadie": "Chopin’s Louisiana: heat, Catholic rooms, and women who already know the cost.",
-  "the-awakening": "Edna Pontellier swims out from a marriage and does not swim back.",
+  "the-awakening":
+    "A green and yellow parrot at Grand Isle keeps repeating Allez vous-en.",
+  "a-hero-of-our-time":
+    "Post from Tiflis: a dukhan crowd and camels at the foot of Mount Koishaur.",
+  "strange-tales":
+    "Mr. Chu steps through a monastery wall and does not come back the same.",
+  "short-stories-from-the-balkans":
+    "Leiba Zibal waits under the roof at Podeni for a stage that is already late.",
   "the-damnation-of-theron-ware":
     "A Methodist minister in a New York town meets ideas he cannot put back.",
   "the-king-of-schnorrers-grotesques-and-fantasies":
