@@ -4,7 +4,7 @@
   "author": "Salon",
   "year": "2026",
   "note": "She dresses for the audience she thinks she’s in — camel coat, fake-fur scarf, earbuds with nothing playing — until a couple on her bench tells the afternoon what she is. After Mansfield, Miss Brill, 1920.",
-  "minutes": 7,
+  "minutes": 3,
   "cover": "",
   "coverAlt": "",
   "scenes": [
@@ -20,247 +20,87 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Miss Brill put on her coat the way other people put on a face."
+      "text": "Miss Brill put on her coat the way other people put on a face. It was a soft camel thing from a secondhand shop near the station, and she had brushed the nap with her palm until it looked intentional. At the collar: a small fake-fur scarf she had bought because it made her feel like a person who chose her life. She held it up to the mirror, whispered *there you are*, and laughed once, quietly, the way you do when you live alone and the room needs a sound."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "It was a soft camel thing from a thrift rack two winters ago, and she’d brushed the nap with her palm until it looked intentional."
+      "text": "Sunday. The public gardens by the Menton seafront. Late September light that made even the gravel path look curated. She walked with her earbuds in but nothing playing — she liked the shape of listening without the commitment of a voice in her head."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "At the collar: a small fake-fur scarf she’d bought because it made her feel like a person who chose her life."
+      "text": "The bandstand chairs were filling. A laptop bag. A stroller. Two men arguing softly about a company that had already failed. Somewhere a speaker played music so carefully tasteful it might as well have been strings. Miss Brill took her usual bench, the one with a view of the path and the sea and the people who thought they were only passing through."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "She held it up to the mirror, whispered there you are, and laughed once, quietly, the way you do when you live alone and the room needs a sound."
+      "text": "She did not think of herself as lonely. She thought of herself as *in the audience*."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "Sunday. The park by the river."
+      "text": "Everyone here was in a play. The girl photographing her drink. The runner checking his ring. The older couple sharing one pastry like a treaty. Miss Brill watched them the way you watch a show you have already decided is good — leaning in."
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "Late September light that made even the concrete path look curated."
+      "text": "A woman in a blazer sat down near her and took a call. *I told him the offer was the offer.* Miss Brill almost mouthed the next line for her. A teenager on a scooter went past too fast and someone clapped without irony. Perfect. She was part of it. She belonged to the afternoon."
     },
     {
       "id": "s0-6",
       "sceneId": "s0",
-      "text": "She walked with her earbuds in but nothing playing — she liked the shape of listening without the commitment of a voice in her head."
+      "text": "Then the couple arrived."
     },
     {
       "id": "s0-7",
       "sceneId": "s0",
-      "text": "The outdoor tables were full."
+      "text": "Young. Beautiful in that careless way that always looked a little rehearsed. They sat on the far end of her bench, close enough that she could smell perfume and laundry detergent."
     },
     {
       "id": "s0-8",
       "sceneId": "s0",
-      "text": "A laptop."
+      "text": "The girl said, \"God, this place.\""
     },
     {
       "id": "s0-9",
       "sceneId": "s0",
-      "text": "A stroller."
+      "text": "The boy didn't answer."
     },
     {
       "id": "s0-10",
       "sceneId": "s0",
-      "text": "Two men arguing softly about a company that had already failed."
+      "text": "\"Look at her,\" she said, not bothering to lower her voice. \"That coat. That little animal thing.\""
     },
     {
       "id": "s0-11",
       "sceneId": "s0",
-      "text": "Somewhere a speaker played music so carefully tasteful it might as well have been a string band."
+      "text": "He laughed — not unkindly, which somehow made it worse."
     },
     {
       "id": "s0-12",
       "sceneId": "s0",
-      "text": "Miss Brill took her usual bench, the one with a view of the path and the water and the people who thought they were only passing through."
+      "text": "\"She's collecting us,\" the girl said. Then, softer, almost bored: \"If I ever get like that, just leave me.\""
     },
     {
       "id": "s0-13",
       "sceneId": "s0",
-      "text": "She did not think of herself as lonely."
+      "text": "Miss Brill stood up carefully, as if the bench might break. She walked. The music kept playing. The light stayed beautiful. She took the long way back to her room so she wouldn't have to decide what her face was doing."
     },
     {
       "id": "s0-14",
       "sceneId": "s0",
-      "text": "She thought of herself as in the audience."
+      "text": "In the flat she hung the coat on the chair and sat on the bed with the fake-fur scarf in her lap. For a long time she didn't put it away. When she finally opened the drawer, she thought she heard something — not a cry exactly. More like a sound that wanted to be answered and then, finding no one, went quiet."
     },
     {
       "id": "s0-15",
       "sceneId": "s0",
-      "text": "Everyone here was in a play."
+      "text": "She closed the drawer."
     },
     {
       "id": "s0-16",
       "sceneId": "s0",
-      "text": "The girl photographing her drink."
-    },
-    {
-      "id": "s0-17",
-      "sceneId": "s0",
-      "text": "The runner checking his ring."
-    },
-    {
-      "id": "s0-18",
-      "sceneId": "s0",
-      "text": "The older couple sharing one pastry like a treaty."
-    },
-    {
-      "id": "s0-19",
-      "sceneId": "s0",
-      "text": "Miss Brill watched them the way you watch a show you’ve already decided is good — leaning in."
-    },
-    {
-      "id": "s0-20",
-      "sceneId": "s0",
-      "text": "A woman in a blazer sat down near her and took a call."
-    },
-    {
-      "id": "s0-21",
-      "sceneId": "s0",
-      "text": "I told him the offer was the offer."
-    },
-    {
-      "id": "s0-22",
-      "sceneId": "s0",
-      "text": "Miss Brill almost mouthed the next line for her."
-    },
-    {
-      "id": "s0-23",
-      "sceneId": "s0",
-      "text": "A teenager skateboarded past too fast and someone clapped without irony."
-    },
-    {
-      "id": "s0-24",
-      "sceneId": "s0",
-      "text": "Perfect."
-    },
-    {
-      "id": "s0-25",
-      "sceneId": "s0",
-      "text": "She was part of it."
-    },
-    {
-      "id": "s0-26",
-      "sceneId": "s0",
-      "text": "She belonged to the afternoon."
-    },
-    {
-      "id": "s0-27",
-      "sceneId": "s0",
-      "text": "Then the couple arrived."
-    },
-    {
-      "id": "s0-28",
-      "sceneId": "s0",
-      "text": "Young. Beautiful in that careless way that always looked a little rehearsed."
-    },
-    {
-      "id": "s0-29",
-      "sceneId": "s0",
-      "text": "They sat on the far end of her bench, close enough that she could smell perfume and laundry detergent."
-    },
-    {
-      "id": "s0-30",
-      "sceneId": "s0",
-      "text": "The girl said, “God, this city.”"
-    },
-    {
-      "id": "s0-31",
-      "sceneId": "s0",
-      "text": "The boy didn’t answer."
-    },
-    {
-      "id": "s0-32",
-      "sceneId": "s0",
-      "text": "“Look at her,” she said, not bothering to lower her voice."
-    },
-    {
-      "id": "s0-33",
-      "sceneId": "s0",
-      "text": "“That coat."
-    },
-    {
-      "id": "s0-34",
-      "sceneId": "s0",
-      "text": "That little animal thing.”"
-    },
-    {
-      "id": "s0-35",
-      "sceneId": "s0",
-      "text": "He laughed — not unkindly, which somehow made it worse."
-    },
-    {
-      "id": "s0-36",
-      "sceneId": "s0",
-      "text": "“She’s collecting us,” the girl said."
-    },
-    {
-      "id": "s0-37",
-      "sceneId": "s0",
-      "text": "Then, softer, almost bored: “If I ever get like that, just leave me.”"
-    },
-    {
-      "id": "s0-38",
-      "sceneId": "s0",
-      "text": "Miss Brill stood up carefully, as if the bench might break."
-    },
-    {
-      "id": "s0-39",
-      "sceneId": "s0",
-      "text": "She walked."
-    },
-    {
-      "id": "s0-40",
-      "sceneId": "s0",
-      "text": "The music kept playing."
-    },
-    {
-      "id": "s0-41",
-      "sceneId": "s0",
-      "text": "The light stayed beautiful."
-    },
-    {
-      "id": "s0-42",
-      "sceneId": "s0",
-      "text": "She took the long way home so she wouldn’t have to decide what her face was doing."
-    },
-    {
-      "id": "s0-43",
-      "sceneId": "s0",
-      "text": "In her apartment she hung the coat on the chair and sat on the bed with the fake-fur scarf in her lap."
-    },
-    {
-      "id": "s0-44",
-      "sceneId": "s0",
-      "text": "For a long time she didn’t put it away."
-    },
-    {
-      "id": "s0-45",
-      "sceneId": "s0",
-      "text": "When she finally opened the drawer, she thought she heard something — not a cry exactly."
-    },
-    {
-      "id": "s0-46",
-      "sceneId": "s0",
-      "text": "More like a sound that wanted to be answered and then, finding no one, went quiet."
-    },
-    {
-      "id": "s0-47",
-      "sceneId": "s0",
-      "text": "She closed the drawer."
-    },
-    {
-      "id": "s0-48",
-      "sceneId": "s0",
-      "text": "Outside, the city kept casting itself without her."
+      "text": "Outside, Menton kept casting itself without her."
     }
   ]
 }

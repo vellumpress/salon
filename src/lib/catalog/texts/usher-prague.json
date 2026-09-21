@@ -1,0 +1,61 @@
+{
+  "id": "usher-prague",
+  "title": "Edgar Allan Poe, The Fall of the House of Usher recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A villa above the Vltava, a twin sealed too soon, and a house that shares one death. After Poe, The Fall of the House of Usher, 1839.",
+  "minutes": 3,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The villa above the Vltava",
+      "place": "Prague",
+      "reentry": "I received Radek Uher’s letter in late autumn—an elegance of panic, asking me to come for the sake of old school friendship and a malady he would not name online.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "I received Radek Uher’s letter in late autumn—an elegance of panic, asking me to come for the sake of old school friendship and a malady he would not name online. I took the train to Prague under a sky the color of wet limestone. From the far bank the Uher villa showed itself above the Vltava like a face that had forgotten how to arrange its features: tall windows, a fissure from roof to foundation thin as a hair and black as intention, gardens gone to seed among statues whose mouths held rain."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Radek met me in a hall that smelled of dust and expensive decay. He was taller than memory, wasted, hair like uncombed silk, eyes too bright for the room’s dimness. His voice arrived from somewhere deeper than the throat. The house, he said, oppressed him. The stones themselves seemed to think. His twin, Magdalena, was failing of a catalepsy that mimicked death; physicians had become a rotating apologetics. He led me through rooms hung with abstract paintings that looked like weather systems mid-collapse. He played a modular synth until the notes became a kind of weeping architecture. I tried ordinary comfort. Ordinary comfort slid off him like water off sealed wood."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "For days Magdalena passed us in corridors without seeming to see—white linen, bare feet, a beauty already half-archived. Then she took to her bed and did not rise. Radek told me she was gone. We carried her coffin ourselves into a vault beneath the villa, once a wine cellar, now a chamber of brick and iron. I remarked the flush still on her cheek, the faint smile. Radek’s hand trembled on the lid. We screwed it down because the alternative was to admit what the flush suggested. Above us the house settled with a sound like a held breath released wrong."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Afterward Radek’s agitation worsened. He listened to walls. On the seventh night a storm pressed the Vltava into a louder animal. We sat in the study while rain found every old leak. To calm him I read aloud from a romance of knight and dragon—pages that made armor ring, doors crash, shields scream. And under my reading, the house answered: a distant grating, a muffled struggle, a second crash that was not literature."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Radek stood. His lips drew back. “We have put her living in the tomb,” he said, almost gently. “I have heard her for days. I dared not speak.”"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "The study doors blew inward. Magdalena Uher stood in the frame in her burial dress, blood at the nails, face a map of effort and accusation. She fell upon her brother with a cry that emptied the room of all other sound. They struck the floor together. When I could move, both were still—twins returned to a single silence."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "For a long minute I could not make my legs obey. The synth still hummed faintly from an open laptop, a loop Radek had forgotten to kill, cycling a minor interval like a pulse. Outside, Prague’s far lights along the embankment looked absurdly ordinary—trams, a late tourist boat, someone filming the Charles Bridge as if beauty were a problem with a solution. Inside, the twins’ silence was the only finished sentence."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "I fled into the storm. At the bend of the road I turned. The hairline fissure in the façade widened under lightning as if the house had been waiting for permission. Walls leaned. The villa exhaled a roar of timber and plaster and plunged, piece by piece, into the black Vltava. The waters closed over the last stone. Where the House of Uher had hung above Prague, there remained only rain, the river’s indifferent traffic, and the knowledge that some bloodlines and their buildings share one death, and keep it."
+    }
+  ]
+}

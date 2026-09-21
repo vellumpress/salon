@@ -60,42 +60,32 @@ export const NEXT_FEATURED_TRACK_IDS = [
 
 /**
  * Mira pack — Adapted by Salon lane only. Do not add to locked recommend / Next.
- * Whole-story remakes only: one shelf id / one read path each. Never splice a
- * remake into waking / unwind / before-sleep sibling sits (Mike lock Sep 20).
+ * Recasts are short stories only (Mike lock Sep 21). Whole-story remakes:
+ * one shelf id / one read path each. Never splice a remake into waking /
+ * unwind / before-sleep sibling sits (Mike lock Sep 20).
+ *
+ * FINAL LOCK — Mira + Thea + CoS (Sep 21): KEEP 14 only. Ignore any 15/20
+ * variant. miss-brill-remake → miss-brill-adapted. Novels-glam×10, Madame
+ * Bovary Tokyo, during-carnival, decapitated-chicken-lisbon, he-woke-changed,
+ * a-coat-worthy-of-respect, hunger-artist-milan, queen-of-spades-paris, the
+ * soft nine, and uninvented ids (the-kiss-nice, jewels-monaco) stay off this
+ * list — not Featured, not Adapted. CUT shorts leave ritual lanes too.
  */
 export const ADAPTED_BY_SALON_IDS = [
-  "miss-brill-adapted",
   "prefer-not",
-  "late-season",
-  "between-the-drop-and-the-water",
-  "he-woke-changed",
-  "the-pattern",
-  "a-coat-worthy-of-respect",
-  "what-she-borrowed",
-  "it-was-not-nervousness",
-  "during-carnival",
-  "what-we-sold",
   "bliss-tokyo",
-  "open-window-singapore",
-  "story-of-an-hour-buenos-aires",
   "masque-rio",
+  "the-pattern",
+  "garden-party-barcelona",
   "boule-de-suif-istanbul",
-  "happy-prince-hong-kong",
-  "hunger-artist-milan",
+  "story-of-an-hour-buenos-aires",
+  "late-season",
+  "open-window-singapore",
+  "miss-brill-adapted",
   "the-nose-cape-town",
-  "queen-of-spades-paris",
-  "decapitated-chicken-lisbon",
-  "madame-bovary-tokyo",
-  "dorian-gray-shanghai",
-  "anna-karenina-milan",
-  "jane-eyre-singapore",
-  "pride-prejudice-buenos-aires",
-  "dracula-istanbul",
-  "crime-punishment-cape-town",
-  "age-of-innocence-venice",
-  "tess-lisbon",
-  "scarlet-letter-kyoto",
-  "wuthering-heights-rio",
+  "usher-prague",
+  "araby-seville",
+  "between-the-drop-and-the-water",
 ] as const;
 
 const FEATURED = new Set(FEATURED_CAROUSEL_IDS);

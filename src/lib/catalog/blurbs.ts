@@ -125,7 +125,7 @@ const BLURBS: Record<string, string> = {
   "prefer-not":
     "A midtown clerk prefers not to — and a gentle office learns the shape of its limits.",
   "late-season":
-    "Off-season Cape May, a small white dog, and an affair that will not stay temporary.",
+    "Off-season Yalta, a small white dog, and an affair that will not stay temporary.",
   "between-the-drop-and-the-water":
     "A rope fails—or seems to—until the Hudson remembers what it meant.",
   "he-woke-changed":
@@ -184,6 +184,12 @@ const BLURBS: Record<string, string> = {
     "A Kyoto scaffold, a letter that will not come off, and merchant-quarter shame.",
   "wuthering-heights-rio":
     "A hillside estate above Rio’s bay: glamour facing water, wind facing rock.",
+  "garden-party-barcelona":
+    "A Sarrià lawn, a marquee, and leftovers carried down to a death the party refused to see.",
+  "usher-prague":
+    "A villa above the Vltava, a twin sealed too soon, and a house that shares one death.",
+  "araby-seville":
+    "A Triana crush, a promise at the night bazaar, and the ordinary failure of wanting.",
   botchan:
     "A hot-headed Tokyo teacher is posted to the provinces and refuses to learn the local game.",
   "post-office":

@@ -4,7 +4,7 @@
   "author": "Salon",
   "year": "2026",
   "note": "A delayed van out of Kadıköy, a cabin of respectable passengers, and one woman whose generosity is spent and then despised. After Maupassant, Boule de Suif, 1880.",
-  "minutes": 8,
+  "minutes": 3,
   "cover": "",
   "coverAlt": "",
   "scenes": [
@@ -20,237 +20,52 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "The private van left Kadıköy at dusk with ten seats and nine consciences already rehearsing their innocence."
+      "text": "The private van left Kadıköy at dusk with ten seats and nine consciences already rehearsing their innocence. Hotel linen waited on the European side; a conference badge, a wedding toast, a return flight that would not wait for politics. Between them and the bridge: a checkpoint that had become, overnight, a man’s mood wearing a uniform."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "Hotel linen waited on the European side; a conference badge, a wedding toast, a return flight that would not wait for politics."
+      "text": "Among the passengers was Elif Karaca—plump, powdered, known in certain hotels along the Bosphorus by a nickname that meant soft abundance. She wore a coat too warm for the evening and a calm that irritated people who preferred their morals loud. The others knew what she was. They sat carefully apart at first—merchant, deputy’s wife, two nuns whose piety had edges, a pair of factory owners speaking of margins—until hunger and delay made proximity democratic."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "Between them and the bridge: a checkpoint that had become, overnight, a man’s mood wearing a uniform."
+      "text": "She opened a hamper of good food wrapped in cloth that still smelled of a kitchen: bread, cheese, olives, meat sliced with care. Because refusal would have been another kind of cruelty, and because hunger is a democrat, they ate what she offered. Grease shone on respectable fingers. Someone thanked her without meeting her eyes. Outside, the Asian shore lights trembled on black water; a ferry horn sounded like a warning meant for someone else."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "Among the passengers was Elif Karaca—plump, powdered, known in certain hotels along the Bosphorus by a nickname that meant soft abundance."
+      "text": "At the barrier a colonel with clean boots and a dirty smile held their papers longer than paper requires. He asked questions that were not questions. He looked at Elif as one looks at a key left on a table. Rumors moved through the van in whispers that tried to sound like concern: he would not lift the gate. He wanted her. Only her. The rest could freeze in leather seats until she understood her function in the night’s paperwork."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "She wore a coat too warm for the evening and a calm that irritated people who preferred their morals loud."
+      "text": "Day bled into another day. The air in the van thickened with perfume and resentment. Phones died. The merchant cursed governments in three languages. The deputy’s wife spoke of her child’s fever as if the child’s body could shame the colonel into mercy. The nuns prayed in a register that somehow made Elif’s silence look like stubbornness."
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "The others knew what she was."
+      "text": "Then the respectable ones discovered pragmatism, which is respectability’s emergency exit. They spoke of duty, of children waiting, of the greater good, of how the world required sacrifices from those “accustomed” to certain transactions. They did not say: use your body so ours remain theoretical. They said: be reasonable. Be kind. Be brave. One of the factory owners placed a hand on Elif’s wrist as if offering comfort and not a contract."
     },
     {
       "id": "s0-6",
       "sceneId": "s0",
-      "text": "They sat carefully apart at first—merchant, deputy’s wife, two nuns whose piety had edges, a pair of factory owners speaking of margins—until hunger and delay made proximity democratic."
+      "text": "Elif refused until refusal became the vanity of a person who still believed dignity was shared currency. She watched their faces harden from plea to verdict. Then she went, chin high, into the building beside the checkpoint, heels precise on wet concrete, while the van’s silence afterward became the silence of people counting their virtue in advance of receiving it."
     },
     {
       "id": "s0-7",
       "sceneId": "s0",
-      "text": "She opened a hamper of good food wrapped in cloth that still smelled of a kitchen: bread, cheese, olives, meat sliced with care."
+      "text": "Morning. The gate rose with bureaucratic indifference. Engines coughed. Relief arrived like cheap perfume—everywhere, unearned."
     },
     {
       "id": "s0-8",
       "sceneId": "s0",
-      "text": "Because refusal would have been another kind of cruelty, and because hunger is a democrat, they ate what she offered."
+      "text": "On the road again they did not meet her eyes. The merchant discussed exchange rates with sudden expertise. The deputy’s wife found a stain on her sleeve and frowned as if morality lived in fabric. When Elif, hollowed and exact, offered the last of her food because habit is sometimes the only remaining grace, no one took it. A nun murmured a prayer that somehow excluded the woman who had bought their passage with the only coin the colonel accepted."
     },
     {
       "id": "s0-9",
       "sceneId": "s0",
-      "text": "Grease shone on respectable fingers."
-    },
-    {
-      "id": "s0-10",
-      "sceneId": "s0",
-      "text": "Someone thanked her without meeting her eyes."
-    },
-    {
-      "id": "s0-11",
-      "sceneId": "s0",
-      "text": "Outside, the Asian shore lights trembled on black water; a ferry horn sounded like a warning meant for someone else."
-    },
-    {
-      "id": "s0-12",
-      "sceneId": "s0",
-      "text": "At the barrier a colonel with clean boots and a dirty smile held their papers longer than paper requires."
-    },
-    {
-      "id": "s0-13",
-      "sceneId": "s0",
-      "text": "He asked questions that were not questions."
-    },
-    {
-      "id": "s0-14",
-      "sceneId": "s0",
-      "text": "He looked at Elif as one looks at a key left on a table."
-    },
-    {
-      "id": "s0-15",
-      "sceneId": "s0",
-      "text": "Rumors moved through the van in whispers that tried to sound like concern: he would not lift the gate."
-    },
-    {
-      "id": "s0-16",
-      "sceneId": "s0",
-      "text": "He wanted her."
-    },
-    {
-      "id": "s0-17",
-      "sceneId": "s0",
-      "text": "Only her."
-    },
-    {
-      "id": "s0-18",
-      "sceneId": "s0",
-      "text": "The rest could freeze in leather seats until she understood her function in the night’s paperwork."
-    },
-    {
-      "id": "s0-19",
-      "sceneId": "s0",
-      "text": "Day bled into another day."
-    },
-    {
-      "id": "s0-20",
-      "sceneId": "s0",
-      "text": "The air in the van thickened with perfume and resentment."
-    },
-    {
-      "id": "s0-21",
-      "sceneId": "s0",
-      "text": "Phones died."
-    },
-    {
-      "id": "s0-22",
-      "sceneId": "s0",
-      "text": "The merchant cursed governments in three languages."
-    },
-    {
-      "id": "s0-23",
-      "sceneId": "s0",
-      "text": "The deputy’s wife spoke of her child’s fever as if the child’s body could shame the colonel into mercy."
-    },
-    {
-      "id": "s0-24",
-      "sceneId": "s0",
-      "text": "The nuns prayed in a register that somehow made Elif’s silence look like stubbornness."
-    },
-    {
-      "id": "s0-25",
-      "sceneId": "s0",
-      "text": "Then the respectable ones discovered pragmatism, which is respectability’s emergency exit."
-    },
-    {
-      "id": "s0-26",
-      "sceneId": "s0",
-      "text": "They spoke of duty, of children waiting, of the greater good, of how the world required sacrifices from those “accustomed” to certain transactions."
-    },
-    {
-      "id": "s0-27",
-      "sceneId": "s0",
-      "text": "They did not say: use your body so ours remain theoretical."
-    },
-    {
-      "id": "s0-28",
-      "sceneId": "s0",
-      "text": "They said: be reasonable."
-    },
-    {
-      "id": "s0-29",
-      "sceneId": "s0",
-      "text": "Be kind."
-    },
-    {
-      "id": "s0-30",
-      "sceneId": "s0",
-      "text": "Be brave."
-    },
-    {
-      "id": "s0-31",
-      "sceneId": "s0",
-      "text": "One of the factory owners placed a hand on Elif’s wrist as if offering comfort and not a contract."
-    },
-    {
-      "id": "s0-32",
-      "sceneId": "s0",
-      "text": "Elif refused until refusal became the vanity of a person who still believed dignity was shared currency."
-    },
-    {
-      "id": "s0-33",
-      "sceneId": "s0",
-      "text": "She watched their faces harden from plea to verdict."
-    },
-    {
-      "id": "s0-34",
-      "sceneId": "s0",
-      "text": "Then she went, chin high, into the building beside the checkpoint, heels precise on wet concrete, while the van’s silence afterward became the silence of people counting their virtue in advance of receiving it."
-    },
-    {
-      "id": "s0-35",
-      "sceneId": "s0",
-      "text": "Morning."
-    },
-    {
-      "id": "s0-36",
-      "sceneId": "s0",
-      "text": "The gate rose with bureaucratic indifference."
-    },
-    {
-      "id": "s0-37",
-      "sceneId": "s0",
-      "text": "Engines coughed."
-    },
-    {
-      "id": "s0-38",
-      "sceneId": "s0",
-      "text": "Relief arrived like cheap perfume—everywhere, unearned."
-    },
-    {
-      "id": "s0-39",
-      "sceneId": "s0",
-      "text": "On the road again they did not meet her eyes."
-    },
-    {
-      "id": "s0-40",
-      "sceneId": "s0",
-      "text": "The merchant discussed exchange rates with sudden expertise."
-    },
-    {
-      "id": "s0-41",
-      "sceneId": "s0",
-      "text": "The deputy’s wife found a stain on her sleeve and frowned as if morality lived in fabric."
-    },
-    {
-      "id": "s0-42",
-      "sceneId": "s0",
-      "text": "When Elif, hollowed and exact, offered the last of her food because habit is sometimes the only remaining grace, no one took it."
-    },
-    {
-      "id": "s0-43",
-      "sceneId": "s0",
-      "text": "A nun murmured a prayer that somehow excluded the woman who had bought their passage with the only coin the colonel accepted."
-    },
-    {
-      "id": "s0-44",
-      "sceneId": "s0",
-      "text": "Elif turned her face to the Bosphorus flashing between buildings—minarets, glass hotels, water like poured metal—and ate alone."
-    },
-    {
-      "id": "s0-45",
-      "sceneId": "s0",
-      "text": "Istanbul remained glamorous enough to photograph."
-    },
-    {
-      "id": "s0-46",
-      "sceneId": "s0",
-      "text": "Inside the van, respectability resumed its seats, lighter by one debt it would never acknowledge, heavier by the story it would tell later in which it had merely endured, and she—soft, abundant, necessary—had been the inconvenience that made endurance possible."
+      "text": "Elif turned her face to the Bosphorus flashing between buildings—minarets, glass hotels, water like poured metal—and ate alone. Istanbul remained glamorous enough to photograph. Inside the van, respectability resumed its seats, lighter by one debt it would never acknowledge, heavier by the story it would tell later in which it had merely endured, and she—soft, abundant, necessary—had been the inconvenience that made endurance possible."
     }
   ]
 }

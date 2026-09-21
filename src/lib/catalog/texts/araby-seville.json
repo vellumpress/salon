@@ -1,0 +1,56 @@
+{
+  "id": "araby-seville",
+  "title": "James Joyce, Araby recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A Triana crush, a promise at the night bazaar, and the ordinary failure of wanting. After Joyce, Araby, 1914.",
+  "minutes": 3,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Calle Pureza after ten",
+      "place": "Seville",
+      "reentry": "North Richmond Street had been a blind street in Joyce; in Seville the blind street was ours—Calle Pureza after ten, when the last tapas noise thinned and the river held the city’s leftover gold.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "North Richmond Street had been a blind street in Joyce; in Seville the blind street was ours—Calle Pureza after ten, when the last tapas noise thinned and the river held the city’s leftover gold. I lived with my aunt and uncle in a narrow flat above a bicycle repair shop in Triana. From the balcony I could see Moreno’s sister when she came out to call her brother to supper. She was older than we were by a year that mattered. Her hair caught the streetlamp as if the lamp existed for that purpose. I trained myself to be at the window without seeming to wait. When she spoke, even to scold Moreno for football against a garage door, her voice entered me like a liturgy I did not yet have words to betray."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Every morning I followed her toward the bridge, keeping far enough back that my devotion would not become a fact she had to manage. The Guadalquivir slid under us the color of cold tea. Tourists photographed the Torre del Oro; I photographed nothing. I carried her name the way other boys carried phones—touched it, put it away, touched it again. At school my attention frayed. At night I lay listening to the building settle and felt my crush as something almost religious, a secret chapel built of glimpses and the smell of her shampoo when she passed."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "One evening she spoke to me. The conversation was ordinary and therefore miraculous. She asked if I was going to the night bazaar by the river—the pop-up market that arrived each winter with paper lanterns, imported sweets, stalls of jewelry that pretended to be older than it was. She could not go; there was a retreat for her choir. She sounded regretful in a way that made regret itself feel like a gift. I said I would go and bring her something. The promise left my mouth already sacred."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Saturday I waited for my uncle’s return so I could ask for money. He was late, as men who enjoy being late are late. My aunt fretted with the soft cruelty of people who love you and do not understand what you are waiting for. When my uncle finally came, smelling of vermouth and other people’s jokes, he had forgotten. He apologized with a coin and a laugh that made my errand small. I left the flat with my heart still ridiculous and my wallet thin."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "The tram along the river was slow. Couples leaned into each other with the ease of people who did not need bazaars to justify desire. By the time I reached the market the lanterns were being taken down. Half the stalls were dark. A man counted receipts under a strip of white light. Two women argued quietly about a bracelet’s clasp. Somewhere a generator coughed and died. The romance I had carried from Triana met the fluorescent fact of commerce and did not survive the meeting intact."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "I stopped at a stall still open, porcelain and cheap silver laid out like arguments. The woman asked if I wished to buy. Her English was careful; my Spanish failed me into silence. I said I was only looking. She turned back to a man who might have been her husband or only her evening, and their talk resumed without me—prices, closing, a joke that did not include my pilgrimage."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "I stood in the thinning aisle and felt myself become what I was: a boy with a few euros, a promise too large for the hour, a crush that had dressed itself as destiny. The river beyond the stalls kept moving as if nothing had been promised over it. Moreno’s sister’s face rose in my mind and for the first time looked like a person who would wake tomorrow without needing my gift. Anger and shame arrived together, adult and precise. I saw my own vanity clearly, the way one sees a stain under good light—not tragic, only true—and I turned from the stall toward the dark walk home, empty-handed, initiated at last into the ordinary failure of wanting."
+    }
+  ]
+}

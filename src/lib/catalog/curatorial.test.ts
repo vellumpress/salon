@@ -144,38 +144,20 @@ test("Adapted by Salon remakes are their own track — never locked recommend or
   assert.deepEqual(
     [...ADAPTED_BY_SALON_IDS],
     [
-      "miss-brill-adapted",
       "prefer-not",
-      "late-season",
-      "between-the-drop-and-the-water",
-      "he-woke-changed",
-      "the-pattern",
-      "a-coat-worthy-of-respect",
-      "what-she-borrowed",
-      "it-was-not-nervousness",
-      "during-carnival",
-      "what-we-sold",
       "bliss-tokyo",
-      "open-window-singapore",
-      "story-of-an-hour-buenos-aires",
       "masque-rio",
+      "the-pattern",
+      "garden-party-barcelona",
       "boule-de-suif-istanbul",
-      "happy-prince-hong-kong",
-      "hunger-artist-milan",
+      "story-of-an-hour-buenos-aires",
+      "late-season",
+      "open-window-singapore",
+      "miss-brill-adapted",
       "the-nose-cape-town",
-      "queen-of-spades-paris",
-      "decapitated-chicken-lisbon",
-      "madame-bovary-tokyo",
-      "dorian-gray-shanghai",
-      "anna-karenina-milan",
-      "jane-eyre-singapore",
-      "pride-prejudice-buenos-aires",
-      "dracula-istanbul",
-      "crime-punishment-cape-town",
-      "age-of-innocence-venice",
-      "tess-lisbon",
-      "scarlet-letter-kyoto",
-      "wuthering-heights-rio",
+      "usher-prague",
+      "araby-seville",
+      "between-the-drop-and-the-water",
     ],
   );
   for (const id of ADAPTED_BY_SALON_IDS) {
@@ -190,6 +172,24 @@ test("Adapted by Salon remakes are their own track — never locked recommend or
   assert.ok(garden);
   assert.equal(garden!.title.startsWith("The Garden Party"), true);
   assert.equal(curatorialTrack("the-garden-party-and-other-stories"), "later");
+  for (const id of [
+    "madame-bovary-tokyo",
+    "dorian-gray-shanghai",
+    "anna-karenina-milan",
+    "jane-eyre-singapore",
+    "pride-prejudice-buenos-aires",
+    "dracula-istanbul",
+    "crime-punishment-cape-town",
+    "age-of-innocence-venice",
+    "tess-lisbon",
+    "scarlet-letter-kyoto",
+    "wuthering-heights-rio",
+  ]) {
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.notEqual(curatorialTrack(id), "adapted", id);
+    assert.notEqual(curatorialTrack(id), "featured", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+  }
 });
 
 test("The Attendant’s Confession is a local before-sleep bind on Next", () => {

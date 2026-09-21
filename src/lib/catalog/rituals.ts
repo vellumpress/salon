@@ -73,7 +73,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "prefer-not":
     "A mild refusal becomes the office’s true architecture—and pity learns the shape of its limits. After Melville, Bartleby, 1853.",
   "late-season":
-    "Off-season Cape May, a small white dog, and an affair that refuses to stay temporary once the city proves too small for what began. After Chekhov, The Lady with the Dog, 1899.",
+    "Off-season Yalta, a small white dog, and an affair that refuses to stay temporary once Moscow proves too small for what began. After Chekhov, The Lady with the Dog, 1899.",
   "between-the-drop-and-the-water":
     "The rope fails—or seems to—until the Hudson remembers what it meant. After Bierce, An Occurrence at Owl Creek Bridge, 1890.",
   "he-woke-changed":
@@ -110,6 +110,12 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "An 8th-arrondissement obsession: three cards, a countess's secret, and a queen who will not stay buried in the deck. After Pushkin, The Queen of Spades, 1834.",
   "decapitated-chicken-lisbon":
     "A white villa above the Tagus, four brothers who learn by watching, and a kitchen lesson that does not stay in the kitchen. After Quiroga, The Decapitated Chicken, 1909.",
+  "garden-party-barcelona":
+    "A Sarrià lawn, a marquee, and leftovers carried down to a death the party refused to see. After Mansfield, The Garden Party, 1922.",
+  "usher-prague":
+    "A villa above the Vltava, a twin sealed too soon, and a house that shares one death. After Poe, The Fall of the House of Usher, 1839.",
+  "araby-seville":
+    "A Triana crush, a promise at the night bazaar, and the ordinary failure of wanting. After Joyce, Araby, 1914.",
   "body-of-this-death":
     "Bogan on flesh, desire, and what it costs to keep living in a body. Spare, exact poems — no soft focus on the wound.",
   orlando:
@@ -296,14 +302,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "gitanjali",
       "martin-bircks-youth",
       "the-pattern",
-      "it-was-not-nervousness",
       "between-the-drop-and-the-water",
-      "during-carnival",
       "story-of-an-hour-buenos-aires",
       "masque-rio",
-      "happy-prince-hong-kong",
-      "queen-of-spades-paris",
-      "decapitated-chicken-lisbon",
+      "usher-prague",
+      "araby-seville",
       "the-wild-swans-at-coole",
       "kwaidan-stories-and-studies-of-strange-things",
       "the-listeners-and-other-poems",
@@ -370,13 +373,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "miss-brill-adapted",
       "prefer-not",
       "late-season",
-      "he-woke-changed",
-      "what-she-borrowed",
-      "what-we-sold",
-      "a-coat-worthy-of-respect",
       "bliss-tokyo",
       "boule-de-suif-istanbul",
-      "hunger-artist-milan",
+      "garden-party-barcelona",
     ],
   },
   {

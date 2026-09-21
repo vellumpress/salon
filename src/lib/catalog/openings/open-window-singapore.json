@@ -4,7 +4,7 @@
   "author": "Salon",
   "year": "2026",
   "note": "A nervous rest-cure visitor, a black-and-white bungalow off Bukit Timah, and a girl's exquisite lie about men who never came back from the green. After Saki, The Open Window, 1914.",
-  "minutes": 7,
+  "minutes": 3,
   "cover": "",
   "coverAlt": "",
   "scenes": [
@@ -20,262 +20,67 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Adrian Tan arrived with letters of introduction and a diagnosis that preferred quiet."
+      "text": "Adrian Tan arrived with letters of introduction and a diagnosis that preferred quiet. Singapore’s heat made his collar a small tyranny; the Grab driver’s AC had failed three blocks early. The bungalow sat in a pocket of old trees off Bukit Timah—black timber, white walls, a deep veranda open to the garden as if the house had forgotten how to close itself. Cicadas held a continuous note. The gravel under his shoes looked raked for photographs."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "Singapore’s heat made his collar a small tyranny; the Grab driver’s AC had failed three blocks early."
+      "text": "A girl of fifteen received him with the composure of someone who had practiced adults. Her school badge was still pinned, slightly crooked, as if rebellion were a millimeter. Priya: My aunt will be down presently. You are the one with nerves. She did not make it a question. She offered him a seat facing the garden and poured tea with a steadiness that made his hands feel theatrical."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "The bungalow sat in a pocket of old trees off Bukit Timah—black timber, white walls, a deep veranda open to the garden as if the house had forgotten how to close itself."
+      "text": "Adrian admitted that London doctors had prescribed rest, tropical air, and an absence of excitement—prescriptions that sounded, in this heat, like jokes told by men in dry rooms. The girl nodded, sympathetic as a blade."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "Cicadas held a continuous note."
+      "text": "Priya: You will notice the veranda doors are open. They are always open until evening. My aunt keeps them that way."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "The gravel under his shoes looked raked for photographs."
+      "text": "She glanced toward the rectangle of green as toward a shrine that embarrassed her."
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "A girl of fifteen received him with the composure of someone who had practiced adults."
+      "text": "Priya: Three years ago to the day, her husband and her two younger brothers went out toward the reservoir trails with the spaniel. They never returned. The jungle took them, or the water, or something that does not file reports. Bodies were not found. Only a hat. Only rumors that make dinner parties lean forward."
     },
     {
       "id": "s0-6",
       "sceneId": "s0",
-      "text": "Her school badge was still pinned, slightly crooked, as if rebellion were a millimeter."
+      "text": "Adrian’s tea cooled in his hands. Through the open doors the garden shone a wet, impossible green; a monitor lizard’s absence felt like a presence. A bird screamed once and went quiet. He thought of his letters of introduction—thin paper against the tropical gothic of other people’s grief."
     },
     {
       "id": "s0-7",
       "sceneId": "s0",
-      "text": "Priya: My aunt will be down presently."
+      "text": "Priya: My aunt believes they will walk back through that green exactly as they left. Boots muddy. Laughing. The dog first. She leaves the veranda open so they will not find the house shut against them."
     },
     {
       "id": "s0-8",
       "sceneId": "s0",
-      "text": "You are the one with nerves."
+      "text": "She continued, almost bored by her own precision."
     },
     {
       "id": "s0-9",
       "sceneId": "s0",
-      "text": "She did not make it a question."
+      "text": "Priya: Do you know what it is like to live inside someone else's waiting? It makes ordinary afternoons look like seances."
     },
     {
       "id": "s0-10",
       "sceneId": "s0",
-      "text": "She offered him a seat facing the garden and poured tea with a steadiness that made his hands feel theatrical."
+      "text": "Mrs. Ong entered bright and practical, apologizing for lateness, speaking of golf at the island club and humidity as if the dead were not a household policy. She wore linen that had lost a battle with the air. She glanced toward the veranda with cheerful expectation. Mrs. Ong: They will be back soon for drinks. My husband and the boys. Always muddy. Always late. I tell them the open doors are a habit, not a superstition—but habits are how houses breathe."
     },
     {
       "id": "s0-11",
       "sceneId": "s0",
-      "text": "Adrian admitted that London doctors had prescribed rest, tropical air, and an absence of excitement—prescriptions that sounded, in this heat, like jokes told by men in dry rooms."
+      "text": "Adrian stared. The girl’s story sat in his throat like a swallowed coin. Mrs. Ong chattered about a new café too proud of its toast, about a neighbor’s renovation that had angered the trees. He answered in fragments, eyes fixed on the rectangle of garden where grief, apparently, had a schedule. Sweat found the small of his back. He imagined explaining this to his doctor and being prescribed something stronger than quiet."
     },
     {
       "id": "s0-12",
       "sceneId": "s0",
-      "text": "The girl nodded, sympathetic as a blade."
-    },
-    {
-      "id": "s0-13",
-      "sceneId": "s0",
-      "text": "Priya: You will notice the veranda doors are open."
-    },
-    {
-      "id": "s0-14",
-      "sceneId": "s0",
-      "text": "They are always open until evening."
-    },
-    {
-      "id": "s0-15",
-      "sceneId": "s0",
-      "text": "My aunt keeps them that way."
-    },
-    {
-      "id": "s0-16",
-      "sceneId": "s0",
-      "text": "She glanced toward the rectangle of green as toward a shrine that embarrassed her."
-    },
-    {
-      "id": "s0-17",
-      "sceneId": "s0",
-      "text": "Priya: Three years ago to the day, her husband and her two younger brothers went out toward the reservoir trails with the spaniel."
-    },
-    {
-      "id": "s0-18",
-      "sceneId": "s0",
-      "text": "They never returned."
-    },
-    {
-      "id": "s0-19",
-      "sceneId": "s0",
-      "text": "The jungle took them, or the water, or something that does not file reports."
-    },
-    {
-      "id": "s0-20",
-      "sceneId": "s0",
-      "text": "Bodies were not found."
-    },
-    {
-      "id": "s0-21",
-      "sceneId": "s0",
-      "text": "Only a hat."
-    },
-    {
-      "id": "s0-22",
-      "sceneId": "s0",
-      "text": "Only rumors that make dinner parties lean forward."
-    },
-    {
-      "id": "s0-23",
-      "sceneId": "s0",
-      "text": "Adrian’s tea cooled in his hands."
-    },
-    {
-      "id": "s0-24",
-      "sceneId": "s0",
-      "text": "Through the open doors the garden shone a wet, impossible green; a monitor lizard’s absence felt like a presence."
-    },
-    {
-      "id": "s0-25",
-      "sceneId": "s0",
-      "text": "A bird screamed once and went quiet."
-    },
-    {
-      "id": "s0-26",
-      "sceneId": "s0",
-      "text": "He thought of his letters of introduction—thin paper against the tropical gothic of other people’s grief."
-    },
-    {
-      "id": "s0-27",
-      "sceneId": "s0",
-      "text": "Priya: My aunt believes they will walk back through that green exactly as they left."
-    },
-    {
-      "id": "s0-28",
-      "sceneId": "s0",
-      "text": "Boots muddy."
-    },
-    {
-      "id": "s0-29",
-      "sceneId": "s0",
-      "text": "Laughing."
-    },
-    {
-      "id": "s0-30",
-      "sceneId": "s0",
-      "text": "The dog first."
-    },
-    {
-      "id": "s0-31",
-      "sceneId": "s0",
-      "text": "She leaves the veranda open so they will not find the house shut against them."
-    },
-    {
-      "id": "s0-32",
-      "sceneId": "s0",
-      "text": "She continued, almost bored by her own precision."
-    },
-    {
-      "id": "s0-33",
-      "sceneId": "s0",
-      "text": "Priya: Do you know what it is like to live inside someone else's waiting?"
-    },
-    {
-      "id": "s0-34",
-      "sceneId": "s0",
-      "text": "It makes ordinary afternoons look like seances."
-    },
-    {
-      "id": "s0-35",
-      "sceneId": "s0",
-      "text": "Mrs. Ong entered bright and practical, apologizing for lateness, speaking of golf at the island club and humidity as if the dead were not a household policy."
-    },
-    {
-      "id": "s0-36",
-      "sceneId": "s0",
-      "text": "She wore linen that had lost a battle with the air."
-    },
-    {
-      "id": "s0-37",
-      "sceneId": "s0",
-      "text": "She glanced toward the veranda with cheerful expectation."
-    },
-    {
-      "id": "s0-38",
-      "sceneId": "s0",
-      "text": "Mrs. Ong: They will be back soon for drinks."
-    },
-    {
-      "id": "s0-39",
-      "sceneId": "s0",
-      "text": "My husband and the boys."
-    },
-    {
-      "id": "s0-40",
-      "sceneId": "s0",
-      "text": "Always muddy."
-    },
-    {
-      "id": "s0-41",
-      "sceneId": "s0",
-      "text": "Always late."
-    },
-    {
-      "id": "s0-42",
-      "sceneId": "s0",
-      "text": "I tell them the open doors are a habit, not a superstition—but habits are how houses breathe."
-    },
-    {
-      "id": "s0-43",
-      "sceneId": "s0",
-      "text": "Adrian stared."
-    },
-    {
-      "id": "s0-44",
-      "sceneId": "s0",
-      "text": "The girl’s story sat in his throat like a swallowed coin."
-    },
-    {
-      "id": "s0-45",
-      "sceneId": "s0",
-      "text": "Mrs. Ong chattered about a new café too proud of its toast, about a neighbor’s renovation that had angered the trees."
-    },
-    {
-      "id": "s0-46",
-      "sceneId": "s0",
-      "text": "He answered in fragments, eyes fixed on the rectangle of garden where grief, apparently, had a schedule."
-    },
-    {
-      "id": "s0-47",
-      "sceneId": "s0",
-      "text": "Sweat found the small of his back."
-    },
-    {
-      "id": "s0-48",
-      "sceneId": "s0",
-      "text": "He imagined explaining this to his doctor and being prescribed something stronger than quiet."
-    },
-    {
-      "id": "s0-49",
-      "sceneId": "s0",
-      "text": "Then—figures at the far hedge."
-    },
-    {
-      "id": "s0-50",
-      "sceneId": "s0",
-      "text": "Three men in damp shirts, a spaniel nosing ahead, laughter carried on the heat like a radio left on."
-    },
-    {
-      "id": "s0-51",
-      "sceneId": "s0",
-      "text": "They came up the lawn toward the open veranda with the ordinary triumph of people who had found the path again, boots dark, one of them raising a hand as if the afternoon were still a simple thing."
+      "text": "Then—figures at the far hedge. Three men in damp shirts, a spaniel nosing ahead, laughter carried on the heat like a radio left on. They came up the lawn toward the open veranda with the ordinary triumph of people who had found the path again, boots dark, one of them raising a hand as if the afternoon were still a simple thing."
     }
   ]
 }
