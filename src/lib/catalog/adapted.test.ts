@@ -18,7 +18,12 @@ import {
   LOCAL_WORKS,
   withLocalBound,
 } from "./full-pdf.ts";
-import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES, type RitualLane } from "./rituals.ts";
+import {
+  FIRST_SESSION_RITUAL_IDS,
+  RITUAL_LANES,
+  RITUAL_PITCHES,
+  type RitualLane,
+} from "./rituals.ts";
 import { SHELF, searchShelf, shelfWork } from "./shelf.ts";
 import { isBoundLocal } from "./en-rights.ts";
 import { placeFor } from "./places.ts";
@@ -574,6 +579,7 @@ test("FINAL LOCK KEEP 14 is live Adapted; CUT shorts and uninvented remakes stay
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal(ADAPTED_WORKS.some((item) => item.id === id), false, id);
     assert.equal(CLASSIC_LOCAL_WORKS.some((item) => item.id === id), false, id);
+    assert.equal(id in RITUAL_PITCHES, false, `${id} leftover ritual pitch`);
     for (const lane of RITUAL_LANES) {
       assert.equal(lane.workIds.includes(id), false, `${id} ${lane.id}`);
     }
@@ -616,6 +622,7 @@ test("novel remakes stay off Adapted, Featured, and ritual lanes", () => {
     assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
     assert.equal(ADAPTED_WORKS.some((item) => item.id === id), false, id);
     assert.equal(CLASSIC_LOCAL_WORKS.some((item) => item.id === id), false, id);
+    assert.equal(id in RITUAL_PITCHES, false, `${id} leftover ritual pitch`);
     for (const suffix of ["waking", "unwind", "before-sleep"] as const) {
       const sibling = `${id}-${suffix}`;
       assert.equal(isAdaptedBySalon(sibling), false, sibling);
