@@ -488,6 +488,9 @@ const WORK_COUNTRY: Record<string, string> = {
   "tess-lisbon": "United States",
   "scarlet-letter-kyoto": "United States",
   "wuthering-heights-rio": "United States",
+  "garden-party-barcelona": "United States",
+  "usher-prague": "United States",
+  "araby-seville": "United States",
   // English-language translations / binds of foreign originals
   basilio: "Portugal",
   "bel-ami": "France",

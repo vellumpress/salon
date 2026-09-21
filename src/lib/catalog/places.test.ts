@@ -90,6 +90,9 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "tess-lisbon": { label: "Lisbon", region: "pt" },
     "scarlet-letter-kyoto": { label: "Kyoto", region: "jp" },
     "wuthering-heights-rio": { label: "Rio de Janeiro", region: "br" },
+    "garden-party-barcelona": { label: "Barcelona", region: "es" },
+    "usher-prague": { label: "Prague", region: "cz" },
+    "araby-seville": { label: "Seville", region: "es" },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = shelfWork(id);
@@ -169,9 +172,9 @@ test("Adapted by Salon keeps exactly three America-set remakes", () => {
   });
   assert.deepEqual(
     america,
-    ["prefer-not", "between-the-drop-and-the-water", "the-pattern"],
+    ["the-pattern", "between-the-drop-and-the-water", "prefer-not"],
   );
-  assert.equal(ADAPTED_BY_SALON_IDS.length, 21);
+  assert.equal(ADAPTED_BY_SALON_IDS.length, 14);
   assert.equal(america.length, 3);
 });
 

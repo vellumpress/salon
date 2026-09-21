@@ -1,0 +1,261 @@
+{
+  "id": "usher-prague",
+  "title": "Edgar Allan Poe, The Fall of the House of Usher recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A villa above the Vltava, a twin sealed too soon, and a house that shares one death. After Poe, The Fall of the House of Usher, 1839.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The villa above the Vltava",
+      "place": "Prague",
+      "reentry": "I received Radek Uher’s letter in late autumn—an elegance of panic, asking me to come for the sake of old school friendship and a malady he would not name online.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "I received Radek Uher’s letter in late autumn—an elegance of panic, asking me to come for the sake of old school friendship and a malady he would not name online."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "I took the train to Prague under a sky the color of wet limestone."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "From the far bank the Uher villa showed itself above the Vltava like a face that had forgotten how to arrange its features: tall windows, a fissure from roof to foundation thin as a hair and black as intention, gardens gone to seed among statues whose mouths held rain."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Radek met me in a hall that smelled of dust and expensive decay."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "He was taller than memory, wasted, hair like uncombed silk, eyes too bright for the room’s dimness."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "His voice arrived from somewhere deeper than the throat."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "The house, he said, oppressed him."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "The stones themselves seemed to think."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "His twin, Magdalena, was failing of a catalepsy that mimicked death; physicians had become a rotating apologetics."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "He led me through rooms hung with abstract paintings that looked like weather systems mid-collapse."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "He played a modular synth until the notes became a kind of weeping architecture."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "I tried ordinary comfort."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "Ordinary comfort slid off him like water off sealed wood."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "For days Magdalena passed us in corridors without seeming to see—white linen, bare feet, a beauty already half-archived."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Then she took to her bed and did not rise."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Radek told me she was gone."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "We carried her coffin ourselves into a vault beneath the villa, once a wine cellar, now a chamber of brick and iron."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "I remarked the flush still on her cheek, the faint smile."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Radek’s hand trembled on the lid."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "We screwed it down because the alternative was to admit what the flush suggested."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Above us the house settled with a sound like a held breath released wrong."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Afterward Radek’s agitation worsened."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "He listened to walls."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "On the seventh night a storm pressed the Vltava into a louder animal."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "We sat in the study while rain found every old leak."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "To calm him I read aloud from a romance of knight and dragon—pages that made armor ring, doors crash, shields scream."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "And under my reading, the house answered: a distant grating, a muffled struggle, a second crash that was not literature."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "Radek stood."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "His lips drew back."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "“We have put her living in the tomb,” he said, almost gently."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "“I have heard her for days."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "I dared not speak.”"
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "The study doors blew inward."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Magdalena Uher stood in the frame in her burial dress, blood at the nails, face a map of effort and accusation."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "She fell upon her brother with a cry that emptied the room of all other sound."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "They struck the floor together."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "When I could move, both were still—twins returned to a single silence."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "For a long minute I could not make my legs obey."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "The synth still hummed faintly from an open laptop, a loop Radek had forgotten to kill, cycling a minor interval like a pulse."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "Outside, Prague’s far lights along the embankment looked absurdly ordinary—trams, a late tourist boat, someone filming the Charles Bridge as if beauty were a problem with a solution."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "Inside, the twins’ silence was the only finished sentence."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "I fled into the storm."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "At the bend of the road I turned."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "The hairline fissure in the façade widened under lightning as if the house had been waiting for permission."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "Walls leaned."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "The villa exhaled a roar of timber and plaster and plunged, piece by piece, into the black Vltava."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "The waters closed over the last stone."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "Where the House of Uher had hung above Prague, there remained only rain, the river’s indifferent traffic, and the knowledge that some bloodlines and their buildings share one death, and keep it."
+    }
+  ]
+}

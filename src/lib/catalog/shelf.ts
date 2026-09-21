@@ -1975,6 +1975,51 @@ export const SHELF: ShelfWork[] = [
       "A white villa above the Tagus, four brothers who learn by watching, and a kitchen lesson that does not stay in the kitchen. After Quiroga, The Decapitated Chicken, 1909.",
   },
   {
+    id: "garden-party-barcelona",
+    title: "Katherine Mansfield, The Garden Party recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 6,
+    local: true,
+    opening:
+      "They were still deciding where the marquee should go when the morning already smelled of cut grass and coffee from the kitchen terrace.",
+    breaths: 70,
+    intro:
+      "A Sarrià lawn, a marquee, and leftovers carried down to a death the party refused to see. After Mansfield, The Garden Party, 1922.",
+  },
+  {
+    id: "usher-prague",
+    title: "Edgar Allan Poe, The Fall of the House of Usher recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 4,
+    local: true,
+    opening:
+      "I received Radek Uher’s letter in late autumn—an elegance of panic, asking me to come for the sake of old school friendship and a malady he would not name online.",
+    breaths: 48,
+    intro:
+      "A villa above the Vltava, a twin sealed too soon, and a house that shares one death. After Poe, The Fall of the House of Usher, 1839.",
+  },
+  {
+    id: "araby-seville",
+    title: "James Joyce, Araby recast",
+    author: "Salon",
+    year: 2026,
+    form: "other",
+    language: "English",
+    minutes: 5,
+    local: true,
+    opening:
+      "North Richmond Street had been a blind street in Joyce; in Seville the blind street was ours—Calle Pureza after ten, when the last tapas noise thinned and the river held the city’s leftover gold.",
+    breaths: 44,
+    intro:
+      "A Triana crush, a promise at the night bazaar, and the ordinary failure of wanting. After Joyce, Araby, 1914.",
+  },
+  {
     id: "madame-bovary-tokyo",
     title: "Gustave Flaubert, Madame Bovary recast",
     author: "Salon",

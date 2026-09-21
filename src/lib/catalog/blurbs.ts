@@ -184,6 +184,12 @@ const BLURBS: Record<string, string> = {
     "A Kyoto scaffold, a letter that will not come off, and merchant-quarter shame.",
   "wuthering-heights-rio":
     "A hillside estate above Rio’s bay: glamour facing water, wind facing rock.",
+  "garden-party-barcelona":
+    "A Sarrià lawn, a marquee, and leftovers carried down to a death the party refused to see.",
+  "usher-prague":
+    "A villa above the Vltava, a twin sealed too soon, and a house that shares one death.",
+  "araby-seville":
+    "A Triana crush, a promise at the night bazaar, and the ordinary failure of wanting.",
   botchan:
     "A hot-headed Tokyo teacher is posted to the provinces and refuses to learn the local game.",
   "post-office":

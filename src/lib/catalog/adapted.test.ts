@@ -26,27 +26,20 @@ import { readerIntro } from "../reader-intro.ts";
 import type { Work } from "../literature.ts";
 
 const LANE: Record<string, "unwind" | "before-sleep" | "waking-up"> = {
-  "miss-brill-adapted": "unwind",
-  "prefer-not": "unwind",
-  "late-season": "unwind",
-  "between-the-drop-and-the-water": "before-sleep",
-  "he-woke-changed": "unwind",
-  "the-pattern": "before-sleep",
-  "a-coat-worthy-of-respect": "unwind",
-  "what-she-borrowed": "unwind",
-  "it-was-not-nervousness": "before-sleep",
-  "during-carnival": "before-sleep",
-  "what-we-sold": "unwind",
   "bliss-tokyo": "unwind",
-  "open-window-singapore": "waking-up",
-  "story-of-an-hour-buenos-aires": "before-sleep",
   "masque-rio": "before-sleep",
+  "the-pattern": "before-sleep",
+  "garden-party-barcelona": "unwind",
   "boule-de-suif-istanbul": "unwind",
-  "happy-prince-hong-kong": "before-sleep",
-  "hunger-artist-milan": "unwind",
+  "story-of-an-hour-buenos-aires": "before-sleep",
+  "late-season": "unwind",
+  "open-window-singapore": "waking-up",
+  "miss-brill-adapted": "unwind",
   "the-nose-cape-town": "waking-up",
-  "queen-of-spades-paris": "before-sleep",
-  "decapitated-chicken-lisbon": "before-sleep",
+  "usher-prague": "before-sleep",
+  "araby-seville": "before-sleep",
+  "between-the-drop-and-the-water": "before-sleep",
+  "prefer-not": "unwind",
 };
 
 const EXPECT = {
@@ -82,14 +75,6 @@ const EXPECT = {
     credit: /After Bierce, An Occurrence at Owl Creek Bridge, 1890/,
     scene: /pier/i,
   },
-  "he-woke-changed": {
-    title: "Franz Kafka, The Metamorphosis recast",
-    opening: /^Gregor Samsa woke from uneasy dreams and found himself changed/,
-    last: /someone else's problem/,
-    place: { label: "Prague", region: "cz" },
-    credit: /After Kafka, The Metamorphosis, 1915/,
-    scene: /apartment/i,
-  },
   "the-pattern": {
     title: "Charlotte Perkins Gilman, The Yellow Wallpaper recast",
     opening: /^John said the country would fix me/,
@@ -97,46 +82,6 @@ const EXPECT = {
     place: { label: "Hudson, New York", region: "us" },
     credit: /After Gilman, The Yellow Wallpaper, 1892/,
     scene: /wallpaper/i,
-  },
-  "a-coat-worthy-of-respect": {
-    title: "Nikolai Gogol, The Overcoat recast",
-    opening: /^Akaky Akakievich Petrovich/,
-    last: /impossible to ignore/,
-    place: { label: "St. Petersburg", region: "ru" },
-    credit: /After Gogol, The Overcoat, 1842/,
-    scene: /coat/i,
-  },
-  "what-she-borrowed": {
-    title: "Guy de Maupassant, The Necklace recast",
-    opening: /^Mathilde Loisel believed she had been born for better rooms/,
-    last: /impossible even to hate cleanly/,
-    place: { label: "Paris", region: "fr" },
-    credit: /After Maupassant, The Necklace, 1884/,
-    scene: /gala/i,
-  },
-  "it-was-not-nervousness": {
-    title: "Edgar Allan Poe, The Tell-Tale Heart recast",
-    opening: /^Listen\. I can tell this calmly/,
-    last: /it is his heart/,
-    place: { label: "East London", region: "gb" },
-    credit: /After Poe, The Tell-Tale Heart, 1843/,
-    scene: /walk-up/i,
-  },
-  "during-carnival": {
-    title: "Edgar Allan Poe, The Cask of Amontillado recast",
-    opening: /^I did not announce what Fortunato had done to me/,
-    last: /bells went quiet/,
-    place: { label: "Venice", region: "it" },
-    credit: /After Poe, The Cask of Amontillado, 1846/,
-    scene: /cellar/i,
-  },
-  "what-we-sold": {
-    title: "O. Henry, The Gift of the Magi recast",
-    opening: /^Della counted the jar twice on Christmas Eve morning/,
-    last: /did not need to be correct to be true/,
-    place: { label: "London", region: "gb" },
-    credit: /After O\. Henry, The Gift of the Magi, 1905/,
-    scene: /christmas/i,
   },
   "bliss-tokyo": {
     title: "Katherine Mansfield, Bliss recast",
@@ -178,22 +123,6 @@ const EXPECT = {
     credit: /After Maupassant, Boule de Suif, 1880/,
     scene: /van/i,
   },
-  "happy-prince-hong-kong": {
-    title: "Oscar Wilde, The Happy Prince recast",
-    opening: /^High above Victoria Harbour the Happy Prince/,
-    last: /what his gold was for/,
-    place: { label: "Hong Kong", region: "hk" },
-    credit: /After Wilde, The Happy Prince, 1888/,
-    scene: /harbour/i,
-  },
-  "hunger-artist-milan": {
-    title: "Franz Kafka, A Hunger Artist recast",
-    opening: /^In Brera they gave him a glass box/,
-    last: /refusal was an art/,
-    place: { label: "Milan", region: "it" },
-    credit: /After Kafka, A Hunger Artist, 1922/,
-    scene: /brera/i,
-  },
   "the-nose-cape-town": {
     title: "Nikolai Gogol, The Nose recast",
     opening: /^Senior Assessor van Wyk/,
@@ -202,23 +131,44 @@ const EXPECT = {
     credit: /After Gogol, The Nose, 1836/,
     scene: /long street/i,
   },
-  "queen-of-spades-paris": {
-    title: "Alexander Pushkin, The Queen of Spades recast",
-    opening: /^Armand was not rich enough for the 8th arrondissement/,
-    last: /exact as a held breath/,
-    place: { label: "Paris", region: "fr" },
-    credit: /After Pushkin, The Queen of Spades, 1834/,
-    scene: /cards/i,
+  "garden-party-barcelona": {
+    title: "Katherine Mansfield, The Garden Party recast",
+    opening: /^They were still deciding where the marquee should go/,
+    last: /could not yet carry home/,
+    place: { label: "Barcelona", region: "es" },
+    credit: /After Mansfield, The Garden Party, 1922/,
+    scene: /sarri[aà]|lawn/i,
   },
-  "decapitated-chicken-lisbon": {
-    title: "Horacio Quiroga, The Decapitated Chicken recast",
-    opening: /^The villa stood white above the Tagus/,
-    last: /exact as a held breath/,
-    place: { label: "Lisbon", region: "pt" },
-    credit: /After Quiroga, The Decapitated Chicken, 1909/,
-    scene: /villa|tagus/i,
+  "usher-prague": {
+    title: "Edgar Allan Poe, The Fall of the House of Usher recast",
+    opening: /^I received Radek Uher/,
+    last: /share one death, and keep it/,
+    place: { label: "Prague", region: "cz" },
+    credit: /After Poe, The Fall of the House of Usher, 1839/,
+    scene: /vltava/i,
+  },
+  "araby-seville": {
+    title: "James Joyce, Araby recast",
+    opening: /^North Richmond Street had been a blind street in Joyce/,
+    last: /ordinary failure of wanting/,
+    place: { label: "Seville", region: "es" },
+    credit: /After Joyce, Araby, 1914/,
+    scene: /pureza/i,
   },
 } as const;
+
+const CUT_SHORT_IDS = [
+  "he-woke-changed",
+  "a-coat-worthy-of-respect",
+  "what-she-borrowed",
+  "it-was-not-nervousness",
+  "during-carnival",
+  "what-we-sold",
+  "happy-prince-hong-kong",
+  "hunger-artist-milan",
+  "queen-of-spades-paris",
+  "decapitated-chicken-lisbon",
+] as const;
 
 const NOVEL_REMAKE_IDS = [
   "madame-bovary-tokyo",
@@ -359,6 +309,12 @@ test("Adapted remakes do not keep remake nicknames as the display title", () => 
     "The Nose after",
     "The Queen of Spades after",
     "The Decapitated Chicken after",
+    "The Party in Sarrià",
+    "The House Above the Vltava",
+    "The Stall After Closing",
+    "The Garden Party after",
+    "The Fall of the House of Usher after",
+    "Araby after",
     "The Ceiling Rectangle",
     "Ginza After Rain",
     "Fluorescent Honesty",
@@ -418,7 +374,7 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   assert.match(home, /useShelfSearch\("local"\)/);
   assert.doesNotMatch(home, /useShelfSearch\("fullPdf"\)/);
 
-  assert.equal(LOCAL_WORKS.length, 451);
+  assert.equal(LOCAL_WORKS.length, 454);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 
@@ -544,7 +500,7 @@ test("Adapted remakes are whole stories — never waking/unwind/before-sleep sib
     ADAPTED_BY_SALON_IDS.filter((id) => sitSuffix.test(id)),
     [],
   );
-  assert.equal(ADAPTED_BY_SALON_IDS.length, 21);
+  assert.equal(ADAPTED_BY_SALON_IDS.length, 14);
   const titles = ADAPTED_BY_SALON_IDS.map((id) => {
     const work = shelfWork(id);
     assert.ok(work, id);
@@ -570,27 +526,20 @@ test("Adapted remakes are whole stories — never waking/unwind/before-sleep sib
   }
 
   const shortRemakes = [
-    "miss-brill-adapted",
-    "prefer-not",
-    "late-season",
-    "between-the-drop-and-the-water",
-    "he-woke-changed",
-    "the-pattern",
-    "a-coat-worthy-of-respect",
-    "what-she-borrowed",
-    "it-was-not-nervousness",
-    "during-carnival",
-    "what-we-sold",
     "bliss-tokyo",
-    "open-window-singapore",
-    "story-of-an-hour-buenos-aires",
     "masque-rio",
+    "the-pattern",
+    "garden-party-barcelona",
     "boule-de-suif-istanbul",
-    "happy-prince-hong-kong",
-    "hunger-artist-milan",
+    "story-of-an-hour-buenos-aires",
+    "late-season",
+    "open-window-singapore",
+    "miss-brill-adapted",
     "the-nose-cape-town",
-    "queen-of-spades-paris",
-    "decapitated-chicken-lisbon",
+    "usher-prague",
+    "araby-seville",
+    "between-the-drop-and-the-water",
+    "prefer-not",
   ] as const;
   assert.deepEqual([...ADAPTED_BY_SALON_IDS], [...shortRemakes]);
   for (const id of shortRemakes) {
@@ -604,31 +553,30 @@ test("Adapted remakes are whole stories — never waking/unwind/before-sleep sib
   }
 });
 
-test("Thea provisional CUT shorts stay on Adapted until Mira confirms", () => {
-  const liveCut = [
-    "what-we-sold",
-    "decapitated-chicken-lisbon",
-    "what-she-borrowed",
-    "it-was-not-nervousness",
-    "during-carnival",
-    "happy-prince-hong-kong",
-  ] as const;
+test("Thea KEEP 14 is live Adapted; CUT shorts and uninvented remakes stay off", () => {
   const uninvented = [
-    "garden-party-barcelona",
     "the-kiss-nice",
     "jewels-monaco",
-    "araby-seville",
-    "usher-prague",
     "nightingale-vienna",
     "rappaccini-florence",
     "tobermory-rome",
     "miss-brill-remake",
   ] as const;
-  for (const id of liveCut) {
-    assert.equal(isAdaptedBySalon(id), true, id);
-    assert.equal(curatorialTrack(id), "adapted", id);
+  assert.equal(ADAPTED_WORKS.length, 14);
+  assert.deepEqual(
+    ADAPTED_WORKS.map((item) => item.id),
+    [...ADAPTED_BY_SALON_IDS],
+  );
+  for (const id of CUT_SHORT_IDS) {
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.notEqual(curatorialTrack(id), "adapted", id);
+    assert.notEqual(curatorialTrack(id), "featured", id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    assert.ok(ADAPTED_WORKS.some((item) => item.id === id), id);
+    assert.equal(ADAPTED_WORKS.some((item) => item.id === id), false, id);
+    assert.equal(CLASSIC_LOCAL_WORKS.some((item) => item.id === id), false, id);
+    for (const lane of RITUAL_LANES) {
+      assert.equal(lane.workIds.includes(id), false, `${id} ${lane.id}`);
+    }
   }
   for (const id of uninvented) {
     assert.equal(isAdaptedBySalon(id), false, id);
@@ -778,6 +726,21 @@ test("glam-10 remakes use Mira city reseats, not raw Gutenberg extracts", () => 
   assert.doesNotMatch(framton, /My aunt will be down presently, Mr. Nuttel/);
   assert.doesNotMatch(framton, /Framton Nuttel arrived/);
   assert.doesNotMatch(louise, /Knowing that Mrs. Mallard was afflicted/);
+});
+
+test("KEEP-14 new remakes use Mira city reseats, not raw source extracts", () => {
+  const garden = readFileSync(new URL("./texts/garden-party-barcelona.json", import.meta.url), "utf8");
+  const usher = readFileSync(new URL("./texts/usher-prague.json", import.meta.url), "utf8");
+  const araby = readFileSync(new URL("./texts/araby-seville.json", import.meta.url), "utf8");
+  assert.match(garden, /Sarrià|Sarria/);
+  assert.match(garden, /Laura|Sra\. Serra/);
+  assert.match(usher, /Vltava/);
+  assert.match(usher, /Radek Uher|Magdalena/);
+  assert.match(araby, /Triana|Calle Pureza/);
+  assert.match(araby, /Moreno/);
+  assert.doesNotMatch(garden, /And after all the weather was ideal/);
+  assert.doesNotMatch(usher, /During the whole of a dull, dark, and soundless day/);
+  assert.doesNotMatch(araby, /North Richmond Street, being blind, was a quiet street/);
 });
 
 test("batch-2 remakes use Mira open-ats, not raw keep-as-is extracts", () => {

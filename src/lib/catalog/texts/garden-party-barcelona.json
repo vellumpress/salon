@@ -1,0 +1,371 @@
+{
+  "id": "garden-party-barcelona",
+  "title": "Katherine Mansfield, The Garden Party recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A Sarrià lawn, a marquee, and leftovers carried down to a death the party refused to see. After Mansfield, The Garden Party, 1922.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The lawn above Sarrià",
+      "place": "Barcelona",
+      "reentry": "They were still deciding where the marquee should go when the morning already smelled of cut grass and coffee from the kitchen terrace.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "They were still deciding where the marquee should go when the morning already smelled of cut grass and coffee from the kitchen terrace."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "The Serra house sat above Sarrià like a pale ship: white shutters, a lemon tree that had survived three renovations, a view that slid down through pines toward the city haze and, beyond it, a strip of Mediterranean that looked invented."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Laura loved mornings like this—the workmen’s Spanish and Catalan mixed, the thump of tent poles, her mother’s voice floating from an upstairs window as if the day were a score she alone could conduct."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "“Not against the karaka,” José called, meaning the old citrus."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "“Against the corner, where the light is flatter.”"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "José was practical in linen."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Núria was still in her silk kimono, eating a peach over the sink so the juice would not ruin anything important."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Jordi, home from a week of remote work that was not quite work, took the front steps two at a time and kissed Laura’s cheek with the affectionate violence of brothers who still believed the house belonged to all of them equally."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Laura went down to the lawn because someone had to speak to the men as if they were guests."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "She was twenty and soft-spoken and certain, in the way of people who have never yet been contradicted by grief, that kindness was a language everyone shared."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "The tallest workman had a cigarette behind his ear and eyes that did not flatter her."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "She felt, briefly, ridiculous in her hat."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "Then he smiled—only a little—and the ridiculousness became something warmer."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "They placed the marquee where the light would fall across the tables like a held breath."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "The cream canvas went up and made a new room out of air."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Indoors: sandwiches cut into architecture, lilies arriving in black buckets, a playlist her mother insisted was “background, not a statement.”"
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Sra. Serra appeared in the hall with earrings already on and the particular calm of a woman who had hosted well for twenty years."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "“Laura, darling, the flags for the sandwiches—no, the other ones."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "And do not let cook put the cream puffs near the window; the sun in Sarrià is a thief.”"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "It was then that Bosch’s man arrived with the pastry boxes and the news, spoken too casually for its weight: a man had been killed in the lane below—Soler, who lived in the narrow row of workers’ houses that the Serras’ guests never quite saw."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Horses, or a delivery van—accounts differed."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Dead. A widow."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Children."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "The lane still smelling of the same morning."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Laura’s throat closed."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "“We can’t possibly give a party,” she said."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "“Not with a death—there—under us.”"
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "José laughed, then stopped."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "“Don’t be so extravagant."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "People die every day.”"
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "“I’m not extravagant.”"
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "Laura’s voice shook."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "“It’s—hideous.”"
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Sra. Serra, when told, did not pale."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "She sat Laura on the bedroom chaise and held out a new hat—black ribbon, a soft brim that made Laura’s face look older and more decided."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "“You are being absurd."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "The party is arranged."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "Those people would not expect us to stop living."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "And look at yourself in the glass—my darling, you are too beautiful to ruin a morning for a man you never spoke to.”"
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "The hat did something cruel and useful: it returned Laura to the surface of the day."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "Guests arrived in quiet cars."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "Champagne took the edge off the heat."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "Someone praised the marquee."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "Someone else filmed the lemon tree for a story that would vanish by evening."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "Laura moved among them feeling strangely double—hostess and traitor—until Jordi found her by the roses and said she looked stunning, which was not the word she needed and was, for a moment, enough."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "The party succeeded."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "That was the horror of it."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "It succeeded the way expensive things often succeed: without asking permission of the lane below."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "When the last taxi door shut, Sra. Serra, flushed with triumph and fatigue, waved at the leftover cream puffs and sandwiches."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "“Take them down to the Solers’, Laura."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "It will be a kindness."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "People like that appreciate a little attention.”"
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "Laura walked down the path with the basket."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "The air cooled between the pines."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "The workers’ houses were closer than the villa’s windows admitted: laundry, a plastic chair, a door open on darkness."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "A woman with swollen eyes took the basket without smiling."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "Someone led Laura inside."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "In the small front room a man lay on a bed as if listening."
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "The sheet was clean."
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "His face was young and remote, almost content, as if the accident had been a rumor about someone else."
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "Laura had expected horror."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "Instead she found a quiet so complete that the party above seemed, suddenly, a noise made by children who did not know they were loud."
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "“Forgive my hat,” she whispered, absurdly, and did not know to whom."
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "Outside, Jordi was waiting at the turn of the path, hands in pockets, the city glittering behind him like a second party."
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "“Was it awful?” he asked."
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "Laura shook her head and then nodded."
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "Tears arrived without drama."
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "“It was—simply—so wonderfully—beautiful,” she tried, and could not finish the sentence into sense."
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "Jordi put his arm around her."
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "Above them, the marquee still glowed faintly among the trees, a pale room emptied of its occasion, holding nothing now but the evening and the knowledge she could not yet carry home."
+    }
+  ]
+}

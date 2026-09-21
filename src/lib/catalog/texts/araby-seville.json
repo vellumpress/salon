@@ -1,0 +1,241 @@
+{
+  "id": "araby-seville",
+  "title": "James Joyce, Araby recast",
+  "author": "Salon",
+  "year": "2026",
+  "note": "A Triana crush, a promise at the night bazaar, and the ordinary failure of wanting. After Joyce, Araby, 1914.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Calle Pureza after ten",
+      "place": "Seville",
+      "reentry": "North Richmond Street had been a blind street in Joyce; in Seville the blind street was ours—Calle Pureza after ten, when the last tapas noise thinned and the river held the city’s leftover gold.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "North Richmond Street had been a blind street in Joyce; in Seville the blind street was ours—Calle Pureza after ten, when the last tapas noise thinned and the river held the city’s leftover gold."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "I lived with my aunt and uncle in a narrow flat above a bicycle repair shop in Triana."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "From the balcony I could see Moreno’s sister when she came out to call her brother to supper."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "She was older than we were by a year that mattered."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Her hair caught the streetlamp as if the lamp existed for that purpose."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "I trained myself to be at the window without seeming to wait."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "When she spoke, even to scold Moreno for football against a garage door, her voice entered me like a liturgy I did not yet have words to betray."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Every morning I followed her toward the bridge, keeping far enough back that my devotion would not become a fact she had to manage."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "The Guadalquivir slid under us the color of cold tea."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Tourists photographed the Torre del Oro; I photographed nothing."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "I carried her name the way other boys carried phones—touched it, put it away, touched it again."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "At school my attention frayed."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "At night I lay listening to the building settle and felt my crush as something almost religious, a secret chapel built of glimpses and the smell of her shampoo when she passed."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "One evening she spoke to me."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "The conversation was ordinary and therefore miraculous."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "She asked if I was going to the night bazaar by the river—the pop-up market that arrived each winter with paper lanterns, imported sweets, stalls of jewelry that pretended to be older than it was."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "She could not go; there was a retreat for her choir."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "She sounded regretful in a way that made regret itself feel like a gift."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "I said I would go and bring her something."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "The promise left my mouth already sacred."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Saturday I waited for my uncle’s return so I could ask for money."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "He was late, as men who enjoy being late are late."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "My aunt fretted with the soft cruelty of people who love you and do not understand what you are waiting for."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "When my uncle finally came, smelling of vermouth and other people’s jokes, he had forgotten."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "He apologized with a coin and a laugh that made my errand small."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "I left the flat with my heart still ridiculous and my wallet thin."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "The tram along the river was slow."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "Couples leaned into each other with the ease of people who did not need bazaars to justify desire."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "By the time I reached the market the lanterns were being taken down."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "Half the stalls were dark."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "A man counted receipts under a strip of white light."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "Two women argued quietly about a bracelet’s clasp."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "Somewhere a generator coughed and died."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "The romance I had carried from Triana met the fluorescent fact of commerce and did not survive the meeting intact."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "I stopped at a stall still open, porcelain and cheap silver laid out like arguments."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "The woman asked if I wished to buy."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "Her English was careful; my Spanish failed me into silence."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "I said I was only looking."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "She turned back to a man who might have been her husband or only her evening, and their talk resumed without me—prices, closing, a joke that did not include my pilgrimage."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "I stood in the thinning aisle and felt myself become what I was: a boy with a few euros, a promise too large for the hour, a crush that had dressed itself as destiny."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "The river beyond the stalls kept moving as if nothing had been promised over it."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "Moreno’s sister’s face rose in my mind and for the first time looked like a person who would wake tomorrow without needing my gift."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "Anger and shame arrived together, adult and precise."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "I saw my own vanity clearly, the way one sees a stain under good light—not tragic, only true—and I turned from the stall toward the dark walk home, empty-handed, initiated at last into the ordinary failure of wanting."
+    }
+  ]
+}

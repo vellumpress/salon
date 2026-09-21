@@ -62,39 +62,27 @@ export const NEXT_FEATURED_TRACK_IDS = [
  * Mira pack — Adapted by Salon lane only. Do not add to locked recommend / Next.
  * Recasts are short stories only (Mike lock Sep 21). Whole-story remakes:
  * one shelf id / one read path each. Never splice a remake into waking /
- * unwind / before-sleep sibling sits (Mike lock Sep 20). Novel remakes
- * (novels-glam×10 + Madame Bovary Tokyo) are soft-held off this list —
- * not Featured, not Adapted, not ritual-lane sits.
+ * unwind / before-sleep sibling sits (Mike lock Sep 20).
  *
- * Thea provisional A24 KEEP/CUT (Sep 21): do not cut any live shorts in this
- * pass. Wait for Mira joint CUT before removing Thea's CUT nine. Leave KEEP
- * ids on Adapted if already live; do not invent missing remakes
- * (garden-party-barcelona, the-kiss-nice, jewels-monaco, araby-seville,
- * usher-prague, nightingale-vienna, rappaccini-florence, tobermory-rome).
- * Thea’s miss-brill-remake maps to live `miss-brill-adapted`.
+ * CoS / Thea amended KEEP 14 (Sep 21). miss-brill-remake → miss-brill-adapted.
+ * Novels-glam×10, Madame Bovary Tokyo, and every other remake stay off this
+ * list — not Featured, not Adapted. CUT shorts leave ritual lanes too.
  */
 export const ADAPTED_BY_SALON_IDS = [
-  "miss-brill-adapted",
-  "prefer-not",
-  "late-season",
-  "between-the-drop-and-the-water",
-  "he-woke-changed",
-  "the-pattern",
-  "a-coat-worthy-of-respect",
-  "what-she-borrowed",
-  "it-was-not-nervousness",
-  "during-carnival",
-  "what-we-sold",
   "bliss-tokyo",
-  "open-window-singapore",
-  "story-of-an-hour-buenos-aires",
   "masque-rio",
+  "the-pattern",
+  "garden-party-barcelona",
   "boule-de-suif-istanbul",
-  "happy-prince-hong-kong",
-  "hunger-artist-milan",
+  "story-of-an-hour-buenos-aires",
+  "late-season",
+  "open-window-singapore",
+  "miss-brill-adapted",
   "the-nose-cape-town",
-  "queen-of-spades-paris",
-  "decapitated-chicken-lisbon",
+  "usher-prague",
+  "araby-seville",
+  "between-the-drop-and-the-water",
+  "prefer-not",
 ] as const;
 
 const FEATURED = new Set(FEATURED_CAROUSEL_IDS);
