@@ -122,6 +122,33 @@ test("Gitanjali is numbered poem-per-scene and skips Yeats", () => {
   assert.doesNotMatch(full!.breaths.map((b) => b.text).join(" "), /Yeats|INTRODUCTION|PROJECT GUTENBERG/i);
 });
 
+test("Harmonium is poem-per-scene and opens on The Snow Man", () => {
+  const full = load("texts", "harmonium");
+  const packed = load("openings", "harmonium");
+  assert.ok(full && packed);
+  assert.equal(full!.scenes[0]?.title, FIRST_SCENE_TITLE.harmonium);
+  assert.equal(full!.scenes[0]?.title, "The Snow Man");
+  assert.match(full!.scenes[0]?.reentry ?? "", /^One must have a mind of winter/);
+  assert.equal(full!.scenes[1]?.title, "Earthy Anecdote");
+  assert.equal(full!.scenes.length, 121);
+  assert.ok(full!.scenes.some((scene) => scene.title === "Earthy Anecdote"));
+  const first = full!.breaths.filter((b) => b.sceneId === full!.scenes[0]!.id);
+  assert.equal(
+    first.some((b) => /bucks went clattering|In the Carolinas/i.test(b.text)),
+    false,
+    "next poem leaked into The Snow Man",
+  );
+  assert.equal(packed!.scenes.length, 1);
+  assert.equal(packed!.scenes[0]?.title, "The Snow Man");
+  assert.match(packed!.breaths[0]?.text ?? "", /^One must have a mind of winter/);
+  assert.match(packed!.breaths.at(-1)?.text ?? "", /the nothing that is\.?$/);
+  assert.doesNotMatch(packed!.breaths.map((b) => b.text).join(" "), /Earthy Anecdote|bucks went clattering/i);
+  assert.equal(
+    full!.scenes.some((scene) => /^(Chapter|Part|Introduction|Two Poems|Title|Contents)\b/i.test(scene.title)),
+    false,
+  );
+});
+
 test("The Weary Blues opens on Proem, not Van Vechten", () => {
   const full = load("texts", "the-weary-blues");
   const packed = load("openings", "the-weary-blues");

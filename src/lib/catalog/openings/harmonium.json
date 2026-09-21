@@ -1,1 +1,96 @@
-{"id":"harmonium","title":"Harmonium","author":"Wallace Stevens","year":"1923","note":"Stevens’s debut: Florida light, blackbirds, and the mind inventing order against chaos.","minutes":293,"cover":"","coverAlt":"","scenes":[{"id":"s0","title":"Earthy Anecdote","place":"Earthy Anecdote","reentry":"Every time the bucks went clattering","prompt":"What does the poem hold?"},{"id":"s1","title":"In the Carolinas","place":"In the Carolinas","reentry":"The lilacs wither in the Carolinas.","prompt":"What does the poem hold?"},{"id":"s2","title":"_Second Girl_","place":"_Second Girl_","reentry":"I shall run before him,","prompt":"What does the poem hold?"},{"id":"s3","title":"_Third Girl_","place":"_Third Girl_","reentry":"Oh, la ... le pauvre!","prompt":"What does the poem hold?"},{"id":"s4","title":"Infanta Marina","place":"Infanta Marina","reentry":"Her terrace was the sand","prompt":"What does the poem hold?"}],"breaths":[{"id":"s0-0","sceneId":"s0","text":"Every time the bucks went clattering"},{"id":"s0-1","sceneId":"s0","text":"Over Oklahoma"},{"id":"s0-2","sceneId":"s0","text":"A firecat bristled in the way."},{"id":"s0-3","sceneId":"s0","text":"Wherever they went,"},{"id":"s0-4","sceneId":"s0","text":"They went clattering,"},{"id":"s0-5","sceneId":"s0","text":"Until they swerved"},{"id":"s0-6","sceneId":"s0","text":"In a swift, circular line"},{"id":"s0-7","sceneId":"s0","text":"To the right,"},{"id":"s0-8","sceneId":"s0","text":"Because of the firecat."},{"id":"s0-9","sceneId":"s0","text":"Or until they swerved"},{"id":"s0-10","sceneId":"s0","text":"In a swift, circular line"},{"id":"s0-11","sceneId":"s0","text":"To the left,"},{"id":"s0-12","sceneId":"s0","text":"Because of the firecat."},{"id":"s0-13","sceneId":"s0","text":"The bucks clattered."},{"id":"s0-14","sceneId":"s0","text":"The firecat went leaping,"},{"id":"s0-15","sceneId":"s0","text":"To the right, to the left,"},{"id":"s0-16","sceneId":"s0","text":"And"},{"id":"s0-17","sceneId":"s0","text":"Bristled in the way."},{"id":"s0-18","sceneId":"s0","text":"Later, the firecat closed his bright eyes"},{"id":"s0-19","sceneId":"s0","text":"And slept."},{"id":"s0-20","sceneId":"s0","text":"Invective against Swans"},{"id":"s0-21","sceneId":"s0","text":"The soul, O ganders, flies beyond the parks"},{"id":"s0-22","sceneId":"s0","text":"And far beyond the discords of the wind."},{"id":"s0-23","sceneId":"s0","text":"A bronze rain from the sun descending marks"},{"id":"s0-24","sceneId":"s0","text":"The death of summer, which that time endures"},{"id":"s0-25","sceneId":"s0","text":"Like one who scrawls a listless testament"},{"id":"s0-26","sceneId":"s0","text":"Of golden quirks and Paphian caricatures,"},{"id":"s0-27","sceneId":"s0","text":"Bequeathing your white feathers to the moon"},{"id":"s0-28","sceneId":"s0","text":"And giving your bland motions to the air."},{"id":"s0-29","sceneId":"s0","text":"Behold, already on the long parades"},{"id":"s0-30","sceneId":"s0","text":"The crows anoint the statues with their dirt."},{"id":"s0-31","sceneId":"s0","text":"And the soul, O ganders, being lonely, flies"},{"id":"s0-32","sceneId":"s0","text":"Beyond your chilly chariots, to the skies."},{"id":"s1-0","sceneId":"s1","text":"The lilacs wither in the Carolinas."},{"id":"s1-1","sceneId":"s1","text":"Already the butterflies flutter above the cabins."},{"id":"s1-2","sceneId":"s1","text":"Already the new-born children interpret love"},{"id":"s1-3","sceneId":"s1","text":"In the voices of mothers."},{"id":"s1-4","sceneId":"s1","text":"Timeless mother,"},{"id":"s1-5","sceneId":"s1","text":"How is it that your aspic nipples"},{"id":"s1-6","sceneId":"s1","text":"For once vent honey?"},{"id":"s1-7","sceneId":"s1","text":"_The pine-tree sweetens my body."},{"id":"s1-8","sceneId":"s1","text":"The white iris beautifies me._"},{"id":"s1-9","sceneId":"s1","text":"The Paltry Nude Starts on a Spring Voyage"},{"id":"s1-10","sceneId":"s1","text":"But not on a shell, she starts,"},{"id":"s1-11","sceneId":"s1","text":"Archaic, for the sea."},{"id":"s1-12","sceneId":"s1","text":"But on the first-found weed"},{"id":"s1-13","sceneId":"s1","text":"She scuds the glitters,"},{"id":"s1-14","sceneId":"s1","text":"Noiselessly, like one more wave."},{"id":"s1-15","sceneId":"s1","text":"She too is discontent"},{"id":"s1-16","sceneId":"s1","text":"And would have purple stuff upon her arms,"},{"id":"s1-17","sceneId":"s1","text":"Tired of the salty harbors,"},{"id":"s1-18","sceneId":"s1","text":"Eager for the brine and bellowing"},{"id":"s1-19","sceneId":"s1","text":"Of the high interiors of the sea."},{"id":"s1-20","sceneId":"s1","text":"The wind speeds her,"},{"id":"s1-21","sceneId":"s1","text":"Blowing upon her hands"},{"id":"s1-22","sceneId":"s1","text":"And watery back."},{"id":"s1-23","sceneId":"s1","text":"She touches the clouds, where she goes"},{"id":"s1-24","sceneId":"s1","text":"In the circle of her traverse of the sea."},{"id":"s1-25","sceneId":"s1","text":"Yet this is meagre play"},{"id":"s1-26","sceneId":"s1","text":"In the scurry and water-shine,"},{"id":"s1-27","sceneId":"s1","text":"As her heels foam--"},{"id":"s1-28","sceneId":"s1","text":"Not as when the goldener nude"},{"id":"s1-29","sceneId":"s1","text":"Of a later day"},{"id":"s1-30","sceneId":"s1","text":"Will go, like the centre of sea-green pomp,"},{"id":"s1-31","sceneId":"s1","text":"In an intenser calm,"},{"id":"s1-32","sceneId":"s1","text":"Scullion of fate,"},{"id":"s1-33","sceneId":"s1","text":"Across the spick torrent, ceaselessly,"},{"id":"s1-34","sceneId":"s1","text":"Upon her irretrievable way."},{"id":"s1-35","sceneId":"s1","text":"The Plot against the Giant"},{"id":"s1-36","sceneId":"s1","text":"_First Girl_"},{"id":"s1-37","sceneId":"s1","text":"When this yokel comes maundering,"},{"id":"s1-38","sceneId":"s1","text":"Whetting his hacker,"},{"id":"s1-39","sceneId":"s1","text":"I shall run before him,"},{"id":"s1-40","sceneId":"s1","text":"Diffusing the civilest odors"},{"id":"s1-41","sceneId":"s1","text":"Out of geraniums and unsmelled flowers."},{"id":"s1-42","sceneId":"s1","text":"It will check him."},{"id":"s2-0","sceneId":"s2","text":"I shall run before him,"},{"id":"s2-1","sceneId":"s2","text":"Arching cloths besprinkled with colors"},{"id":"s2-2","sceneId":"s2","text":"As small as fish-eggs."},{"id":"s2-3","sceneId":"s2","text":"The threads"},{"id":"s2-4","sceneId":"s2","text":"Will abash him."},{"id":"s3-0","sceneId":"s3","text":"Oh, la ... le pauvre!"},{"id":"s3-1","sceneId":"s3","text":"I shall run before him,"},{"id":"s3-2","sceneId":"s3","text":"With a curious puffing."},{"id":"s3-3","sceneId":"s3","text":"He will bend his ear then."},{"id":"s3-4","sceneId":"s3","text":"I shall whisper"},{"id":"s3-5","sceneId":"s3","text":"Heavenly labials in a world of gutturals."},{"id":"s3-6","sceneId":"s3","text":"It will undo him."},{"id":"s4-0","sceneId":"s4","text":"Her terrace was the sand"},{"id":"s4-1","sceneId":"s4","text":"And the palms and the twilight."},{"id":"s4-2","sceneId":"s4","text":"She made of the motions of her wrist"}]}
+{
+  "id": "harmonium",
+  "title": "Harmonium",
+  "author": "Wallace Stevens",
+  "year": "1923",
+  "note": "Before-sleep ritual sit — The Snow Man.\n\nA mind of winter: frost, junipers, and the nothing that is. Open The Snow Man only — never Earthy Anecdote.\n\nHarmonium (Stevens; 1923). Sit through The Snow Man. Never Earthy Anecdote.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Snow Man",
+      "place": "The Snow Man",
+      "reentry": "One must have a mind of winter",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "One must have a mind of winter"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "To regard the frost and the boughs"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Of the pine-trees crusted with snow;"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "And have been cold a long time"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "To behold the junipers shagged with ice,"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "The spruces rough in the distant glitter"
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Of the January sun; and not to think"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Of any misery in the sound of the wind,"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "In the sound of a few leaves,"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Which is the sound of the land"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Full of the same wind"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "That is blowing in the same bare place"
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "For the listener, who listens in the snow,"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "And, nothing himself, beholds"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Nothing that is not there and the nothing that is."
+    }
+  ]
+}

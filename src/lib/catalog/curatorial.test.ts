@@ -54,6 +54,7 @@ test("Locked recommend order is April, Bridge, Maggot, then Mirth, then Quicksan
   assert.equal(FEATURED_CAROUSEL_IDS.includes("dubliners"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("gitanjali"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("martin-bircks-youth"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("harmonium"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("steppenwolf"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("second-april"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-bridge"), false);
@@ -121,6 +122,7 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("dubliners"), "later");
   assert.equal(curatorialTrack("gitanjali"), "later");
   assert.equal(curatorialTrack("martin-bircks-youth"), "later");
+  assert.equal(curatorialTrack("harmonium"), "later");
   assert.equal(curatorialTrack("steppenwolf"), "later");
 });
 
@@ -935,6 +937,25 @@ test("Gitanjali is a local before-sleep bind on Next, not locked recommend", () 
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("gitanjali"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("gitanjali"), false);
   assert.equal(curatorialTrack("gitanjali"), "later");
+});
+
+test("Harmonium is a local before-sleep bind on Next, not locked recommend", () => {
+  const work = SHELF.find((item) => item.id === "harmonium");
+  assert.ok(work);
+  assert.equal(work.year, 1923);
+  assert.equal(work.title, "Harmonium");
+  assert.equal(work.author, "Wallace Stevens");
+  assert.equal(work.local, true);
+  assert.equal(isBoundLocal(work), true);
+  assert.match(work.opening ?? "", /^One must have a mind of winter/);
+  const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
+  assert.ok(lane?.workIds.includes("harmonium"));
+  assert.ok(lane!.workIds.indexOf("harmonium") > lane!.workIds.indexOf("martin-bircks-youth"));
+  assert.equal(unwind?.workIds.includes("harmonium"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("harmonium"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("harmonium"), false);
+  assert.equal(curatorialTrack("harmonium"), "later");
 });
 
 test("Martin Birck's Youth is a local before-sleep bind on Next, not locked recommend", () => {

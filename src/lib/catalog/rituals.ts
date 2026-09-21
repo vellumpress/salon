@@ -50,6 +50,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Frost’s yellow wood, two roads, and the talk that gets you going. New England intervals — work, weather, and choices that look simple from here.",
   gitanjali:
     "Phone-clear devotion lyric. Skip the Yeats introduction — open on poem 1.",
+  harmonium:
+    "A mind of winter: frost, junipers, and the nothing that is. Open The Snow Man only — never Earthy Anecdote.",
   "a-hundred-and-seventy-chinese-poems":
     "Gentler China lyrics for a night sit. Open the Winter Night pack — not Battle.",
   bliss:
@@ -281,6 +283,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "dubliners",
       "gitanjali",
       "martin-bircks-youth",
+      "harmonium",
       "the-pattern",
       "between-the-drop-and-the-water",
       "story-of-an-hour-buenos-aires",
@@ -447,6 +450,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   dubliners: 2,
   gitanjali: 2,
   "martin-bircks-youth": 2,
+  harmonium: 2,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

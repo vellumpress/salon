@@ -422,6 +422,18 @@ test("Gitanjali before-sleep sit is the poem-1 cut", () => {
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
+test("Harmonium before-sleep sit is The Snow Man cut", () => {
+  const item = work({
+    id: "harmonium",
+    form: "poem",
+    breaths: 2221,
+    minutes: 293,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
 test("Martin Birck's Youth before-sleep sit is the childhood-garden cut", () => {
   const item = work({
     id: "martin-bircks-youth",
