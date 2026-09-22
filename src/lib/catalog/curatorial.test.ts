@@ -1563,7 +1563,8 @@ test("BATCH-8 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "quicksand",
     "botchan",
   ]);
-  assert.equal(SHELF.find((item) => item.id === "mother")?.local, undefined);
+  assert.equal(curatorialTrack("mother"), "later");
+  assert.equal(SHELF.find((item) => item.id === "mother")?.local, true);
   let prev = next.indexOf("toward-the-gulf");
   const quiet = next.indexOf("all-quiet-on-the-western-front");
   assert.ok(quiet >= 0 && prev > quiet);

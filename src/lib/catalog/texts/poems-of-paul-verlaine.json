@@ -1,0 +1,1049 @@
+{
+  "id": "poems-of-paul-verlaine",
+  "title": "Poems of Paul Verlaine",
+  "author": "Paul Verlaine (tr. Gertrude Hall)",
+  "year": "1895",
+  "note": "Project Gutenberg 8426",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "You were not over-patient with me, dear; This want of patience one must rightly rate: You are so young! Youth ever was severe And variable and inconsiderate!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "But you will own that I was in the right When in my downcast moods I used to say That your sweet eyes, my hope, once, and delight! Were come to look like eyes that will betray.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "And wherefore should I lay my heart-wounds bare? You love me not,--an end there, lady mine; And as I do not choose that one shall dare To pity,--I must suffer without sign.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Chapter IV",
+      "place": "Chapter IV",
+      "reentry": "Now I do not intend--what were the gain?-- To dwell with streaming eyes upon the past; But yet my love which you may think lies slain, Perhaps is only wide awake at last.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Chapter V",
+      "place": "Chapter V",
+      "reentry": "I see you still. I softly pushed the door-- As one o'erwhelmed with weariness you lay; But O light body love should soon restore, You bounded up, tearful at once and gay.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Chapter VI",
+      "place": "Chapter VI",
+      "reentry": "I see you still! Dressed in a summer dress, Yellow and white, bestrewn with curtain-flowers; But you had lost the glistening laughingness Of our delirious former loving hours.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Chapter VII",
+      "place": "Chapter VII",
+      "reentry": "Some moments, I'm the tempest-driven bark That runs dismasted mid the hissing spray, And seeing not Our Lady through the dark Makes ready to be drowned, and kneels to pray.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "The sun, less hot, looks from a sky more clear; The roses in their sleepy loveliness Nod to the cradling wind. The atmosphere Enfolds us with a sister's tenderness.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "So, then this book is closed. Dear Fancies mine, That streaked my grey sky with your wings of light, And passing fanned my burning brow, benign,-- Return, return to your blue Infinite!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "Ah, Inspiration, splendid, dominant, Egeria with the lightsome eyes profound, Sudden Erato, Genius quick to grant, Old picture Angel of the gilt background,",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "You were not over-patient with me, dear; This want of patience one must rightly rate: You are so young! Youth ever was severe And variable and inconsiderate!"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "You had not all the needful kindness, no; Nor should one be amazed, unhappily: You're very young, cold sister mine, and so 'Tis natural you should unfeeling be!"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Behold me therefore ready to forgive; Not gay, of course! but doing what I can To bear up bravely,--deeply though I grieve To be, through you, the most unhappy man."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "But you will own that I was in the right When in my downcast moods I used to say That your sweet eyes, my hope, once, and delight! Were come to look like eyes that will betray."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "It was an evil lie, you used to swear, And your glance, which was lying, dear, would flame,-- Poor fire, near out, one stirs to make it flare!-- And in your soft voice you would say, \"Je t'aime!\""
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Alas! that one should clutch at happiness In sense's, season's, everything's despite!-- But 'twas an hour of gleeful bitterness When I became convinced that I was right!"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "And wherefore should I lay my heart-wounds bare? You love me not,--an end there, lady mine; And as I do not choose that one shall dare To pity,--I must suffer without sign."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Yes, suffer! For I loved you well, did I,-- But like a loyal soldier will I stand Till, hurt to death, he staggers off to die, Still filled with love for an ungrateful land."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "O you that were my Beauty and my Own, Although from you derive all my mischance, Are not you still my Home, then, you alone, As young and mad and beautiful as France?"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Now I do not intend--what were the gain?-- To dwell with streaming eyes upon the past; But yet my love which you may think lies slain, Perhaps is only wide awake at last."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "My love, perhaps,--which now is memory!-- Although beneath your blows it cringe and cry And bleed to will, and must, as I foresee, Still suffer long and much before it die,--"
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Judges you justly when it seems aware Of some not all banal compunction, And of your memory in its despair Reproaching you, \"Ah, fi! it was ill done!\""
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "I see you still. I softly pushed the door-- As one o'erwhelmed with weariness you lay; But O light body love should soon restore, You bounded up, tearful at once and gay."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "O what embraces, kisses sweet and wild! Myself, from brimming eyes I laughed to you Those moments, among all, O lovely child, Shall be my saddest, but my sweetest, too."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "I will remember your smile, your caress, Your eyes, so kind that day,--exquisite snare!-- Yourself, in fine, whom else I might not bless, Only as they appeared, not as they were."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "I see you still! Dressed in a summer dress, Yellow and white, bestrewn with curtain-flowers; But you had lost the glistening laughingness Of our delirious former loving hours."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "The eldest daughter and the little wife Spoke plainly in your bearing's least detail,-- Already 'twas, alas! our altered life That stared me from behind your dotted veil."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "Forgiven be! And with no little pride I treasure up,--and you, no doubt, see why,-- Remembrance of the lightning to one side That used to flash from your indignant eye!"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Some moments, I'm the tempest-driven bark That runs dismasted mid the hissing spray, And seeing not Our Lady through the dark Makes ready to be drowned, and kneels to pray."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "Some moments, I'm the sinner at his end, That knows his doom if he unshriven go, And losing hope of any ghostly friend, Sees Hell already gape, and feels it glow."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Oh, but! Some moments, I've the spirit stout Of early Christians in the lion's care, That smile to Jesus witnessing, without A nerve's revolt, the turning of a hair!"
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "Aquarelles"
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "Green"
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "See, blossoms, branches, fruit, leaves I have brought, And then my heart that for you only sighs; With those white hands of yours, oh, tear it not, But let the poor gift prosper in your eyes."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "The dew upon my hair is still undried,-- The morning wind strikes chilly where it fell. Suffer my weariness here at your side To dream the hour that shall it quite dispel."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "Allow my head, that rings and echoes still With your last kiss, to lie upon your breast, Till it recover from the stormy thrill,-- And let me sleep a little, since you rest."
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "Spleen"
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "The roses were so red, so red, The ivies altogether black."
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "If you but merely turn your head, Beloved, all my despairs come back!"
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "The sky was over-sweet and blue, Too melting green the sea did show."
+    },
+    {
+      "id": "s6-12",
+      "sceneId": "s6",
+      "text": "I always fear,--if you but knew!-- From your dear hand some killing blow."
+    },
+    {
+      "id": "s6-13",
+      "sceneId": "s6",
+      "text": "Weary am I of holly-tree And shining box and waving grass"
+    },
+    {
+      "id": "s6-14",
+      "sceneId": "s6",
+      "text": "Upon the tame unending lea,-- And all and all but you, alas!"
+    },
+    {
+      "id": "s6-15",
+      "sceneId": "s6",
+      "text": "Streets"
+    },
+    {
+      "id": "s6-16",
+      "sceneId": "s6",
+      "text": "Let's dance the jig!"
+    },
+    {
+      "id": "s6-17",
+      "sceneId": "s6",
+      "text": "Above all else I loved her eyes, More clear than stars of cloudless skies, And arch and mischievous and wise."
+    },
+    {
+      "id": "s6-18",
+      "sceneId": "s6",
+      "text": "Let's dance the jig!"
+    },
+    {
+      "id": "s6-19",
+      "sceneId": "s6",
+      "text": "So skilfully would she proceed To make a lover's bare heart bleed, That it was beautiful indeed!"
+    },
+    {
+      "id": "s6-20",
+      "sceneId": "s6",
+      "text": "Let's dance the jig!"
+    },
+    {
+      "id": "s6-21",
+      "sceneId": "s6",
+      "text": "But keenlier have I relished The kisses of her mouth so red Since to my heart she has been dead."
+    },
+    {
+      "id": "s6-22",
+      "sceneId": "s6",
+      "text": "Let's dance the jig!"
+    },
+    {
+      "id": "s6-23",
+      "sceneId": "s6",
+      "text": "The circumstances great and small,-- Words, moments... I recall, recall It is my treasure among all."
+    },
+    {
+      "id": "s6-24",
+      "sceneId": "s6",
+      "text": "Let's dance the jig!"
+    },
+    {
+      "id": "s6-25",
+      "sceneId": "s6",
+      "text": "Sagesse"
+    },
+    {
+      "id": "s6-26",
+      "sceneId": "s6",
+      "text": "What Sayst Thou, Traveller, of All Thou Saw'st Afar?"
+    },
+    {
+      "id": "s6-27",
+      "sceneId": "s6",
+      "text": "What sayst thou, traveller, of all thou saw'st afar? On every tree hangs boredom, ripening to its fall, Didst gather it, thou smoking yon thy sad cigar, Black, casting an incongruous shadow on the wall?"
+    },
+    {
+      "id": "s6-28",
+      "sceneId": "s6",
+      "text": "Thine eyes are just as dead as ever they have been, Unchanged is thy grimace, thy dolefulness is one, Thou mind'st one of the wan moon through the rigging seen, The wrinkled sea beneath the golden morning sun,"
+    },
+    {
+      "id": "s6-29",
+      "sceneId": "s6",
+      "text": "The ancient graveyard with new gravestones every day,-- But, come, regale us with appropriate detail, Those disillusions weeping at the fountains, say, Those new disgusts, just like their brothers, littered stale,"
+    },
+    {
+      "id": "s6-30",
+      "sceneId": "s6",
+      "text": "Those women! Say the glare, the identical dismay Of ugliness and evil, always, in all lands, And say Love, too,--and Politics, moreover, say, With ink-dishonored blood upon their shameless hands."
+    },
+    {
+      "id": "s6-31",
+      "sceneId": "s6",
+      "text": "And then, above all else, neglect not to recite Thy proper feats, thou dragging thy simplicity Wherever people love, wherever people fight, In such a sad and foolish kind, in verity!"
+    },
+    {
+      "id": "s6-32",
+      "sceneId": "s6",
+      "text": "Has that dull innocence been punished as it should? What say'st thou? Man is hard,--but woman? And thy tears, Who has been drinking? And into what ear so good Dost pour thy woes for it to pour in other ears?"
+    },
+    {
+      "id": "s6-33",
+      "sceneId": "s6",
+      "text": "Ah, others! ah, thyself! Gulled with such curious ease, That used to dream (Doth not the soul with laughter fill?) One knows not what poetic, delicate decease,-- Thou sort of angel with the paralytic will!"
+    },
+    {
+      "id": "s6-34",
+      "sceneId": "s6",
+      "text": "But now what are thy plans, thine aims? Art thou of might? Or has long shedding tears disqualified thy heart? The tree is scarcely hardy, judging it at sight, And by thy looks no topping conqueror thou art."
+    },
+    {
+      "id": "s6-35",
+      "sceneId": "s6",
+      "text": "So awkward, too! With the additional offence Of being now a sort of dazed idyllic bard That poses in a window, contemplating thence The silly noon-day sky with an impressed regard."
+    },
+    {
+      "id": "s6-36",
+      "sceneId": "s6",
+      "text": "So totally the same in this extreme decay! But in thy place a being with some sense, pardy, Would wish at least to lead the dance, since he must pay The fiddlers,--at some risk of flutt'ring passers-by!"
+    },
+    {
+      "id": "s6-37",
+      "sceneId": "s6",
+      "text": "Canst not, by rummaging within thy consciousness, Find some bright vice to bare, as 't were a flashing sword? Some gay, audacious vice, which wield with dexterousness, And make to shine, and shoot red lightnings Heavenward!"
+    },
+    {
+      "id": "s6-38",
+      "sceneId": "s6",
+      "text": "Hast one, or more? If more, the better! And plunge in, And bravely lay about thee, indiscriminate, And wear that face of indolence that masks the grin Of hate at once full-feasted and insatiate."
+    },
+    {
+      "id": "s6-39",
+      "sceneId": "s6",
+      "text": "Not well to be a dupe in this good universe, Where there is nothing to allure in happiness Save in it wriggle aught of shameful and perverse,-- And not to be a dupe, one must be merciless!"
+    },
+    {
+      "id": "s6-40",
+      "sceneId": "s6",
+      "text": "--Ah, human wisdom, ah, new things have claimed mine eyes, And of that past--of weary recollection!-- Thy voice described, for still more sinister advice, All I remember is the evil I have done."
+    },
+    {
+      "id": "s6-41",
+      "sceneId": "s6",
+      "text": "In all the curious movements of my sad career, Of others and myself, the chequered road I trod, Of my accounted sorrows, good and evil cheer, I nothing have retained except the grace of God!"
+    },
+    {
+      "id": "s6-42",
+      "sceneId": "s6",
+      "text": "If I am punished, 'tis most fit I should be so; Played to its end is mortal man's and woman's role,-- But steadfastly I hope I too one day shall know The peace and pardon promised every Christian soul."
+    },
+    {
+      "id": "s6-43",
+      "sceneId": "s6",
+      "text": "Well not to be a dupe in this world of a day, But not to be one in the world that hath no end, That which it doth behoove the soul to be and stay Is merciful, not merciless,--deluded friend."
+    },
+    {
+      "id": "s6-44",
+      "sceneId": "s6",
+      "text": "THE False Fair Days"
+    },
+    {
+      "id": "s6-45",
+      "sceneId": "s6",
+      "text": "The false fair days have flamed the livelong day, And still they flicker in the brazen West. Cast down thine eyes, poor soul, shut out the unblest: A deadliest temptation. Come away."
+    },
+    {
+      "id": "s6-46",
+      "sceneId": "s6",
+      "text": "All day they flashed in flakes of fire, that lay The vintage low upon the hill's green breast, The harvest low,--and o'er that faithfullest, The blue sky ever beckoning, shed dismay."
+    },
+    {
+      "id": "s6-47",
+      "sceneId": "s6",
+      "text": "Oh, clasp thy hands, grow pale, and turn again! If all the future savoured of the past? If the old insanity were on its way?"
+    },
+    {
+      "id": "s6-48",
+      "sceneId": "s6",
+      "text": "Those memories, must each anew be slain? One fierce assault, the best, no doubt, the last! Go pray against the gathering storm, go pray!"
+    },
+    {
+      "id": "s6-49",
+      "sceneId": "s6",
+      "text": "Give Ear Unto the Gentle Lay"
+    },
+    {
+      "id": "s6-50",
+      "sceneId": "s6",
+      "text": "Give ear unto the gentle lay That's only sad that it may please; It is discreet, and light it is: A whiff of wind o'er buds in May."
+    },
+    {
+      "id": "s6-51",
+      "sceneId": "s6",
+      "text": "The voice was known to you (and dear?), But it is muffled latterly As is a widow,--still, as she It doth its sorrow proudly bear,"
+    },
+    {
+      "id": "s6-52",
+      "sceneId": "s6",
+      "text": "And through the sweeping mourning veil That in the gusts of Autumn blows, Unto the heart that wonders, shows Truth like a star now flash, now fail."
+    },
+    {
+      "id": "s6-53",
+      "sceneId": "s6",
+      "text": "It says,--the voice you knew again!-- That kindness, goodness is our life, And that of envy, hatred, strife, When death is come, shall naught remain."
+    },
+    {
+      "id": "s6-54",
+      "sceneId": "s6",
+      "text": "It says how glorious to be Like children, without more delay, The tender gladness it doth say Of peace not bought with victory."
+    },
+    {
+      "id": "s6-55",
+      "sceneId": "s6",
+      "text": "Accept the voice,--ah, hear the whole Of its persistent, artless strain: Naught so can soothe a soul's own pain, As making glad another soul!"
+    },
+    {
+      "id": "s6-56",
+      "sceneId": "s6",
+      "text": "It pines in bonds but for a day, The soul that without murmur bears.... How unperplexed, how free it fares! Oh, listen to the gentle lay!"
+    },
+    {
+      "id": "s6-57",
+      "sceneId": "s6",
+      "text": "I'Ve Seen Again the One Child: Verily"
+    },
+    {
+      "id": "s6-58",
+      "sceneId": "s6",
+      "text": "I've seen again the One child: verily, I felt the last wound open in my breast, The last, whose perfect torture doth attest That on some happy day I too shall die!"
+    },
+    {
+      "id": "s6-59",
+      "sceneId": "s6",
+      "text": "Good icy arrow, piercing thoroughly! Most timely came it from their dreams to wrest The sluggish scruples laid too long to rest,-- And all my Christian blood hymned fervently."
+    },
+    {
+      "id": "s6-60",
+      "sceneId": "s6",
+      "text": "I still hear, still I see! O worshipped rule Of God! I know at last how comfortful To hear and see! I see, I hear alway!"
+    },
+    {
+      "id": "s6-61",
+      "sceneId": "s6",
+      "text": "O innocence, O hope! Lowly and mild, How I shall love you, sweet hands of my child, Whose task shall be to close our eyes one day!"
+    },
+    {
+      "id": "s6-62",
+      "sceneId": "s6",
+      "text": "\"Son, Thou Must Love Me! See--\" My Saviour Said"
+    },
+    {
+      "id": "s6-63",
+      "sceneId": "s6",
+      "text": "\"Son, thou must love me! See--\" my Saviour said, \"My heart that glows and bleeds, my wounded side, My hurt feet that the Magdalene, wet-eyed, Clasps kneeling, and my tortured arms outspread"
+    },
+    {
+      "id": "s6-64",
+      "sceneId": "s6",
+      "text": "\"To bear thy sins. Look on the cross, stained red! The nails, the sponge, that, all, thy soul shall guide To love on earth where flesh thrones in its pride, My Body and Blood alone, thy Wine and Bread."
+    },
+    {
+      "id": "s6-65",
+      "sceneId": "s6",
+      "text": "\"Have I not loved thee even unto death, O brother mine, son in the Holy Ghost? Have I not suffered, as was writ I must,"
+    },
+    {
+      "id": "s6-66",
+      "sceneId": "s6",
+      "text": "\"And with thine agony sobbed out my breath? Hath not thy nightly sweat bedewed my brow, O lamentable friend that seek'st me now?\""
+    },
+    {
+      "id": "s6-67",
+      "sceneId": "s6",
+      "text": "Hope Shines--As in a Stable a Wisp of Straw"
+    },
+    {
+      "id": "s6-68",
+      "sceneId": "s6",
+      "text": "Hope shines--as in a stable a wisp of straw. Fear not the wasp drunk with his crazy flight! Through some chink always, see, the moted light! Propped on your hand, you dozed--But let me draw"
+    },
+    {
+      "id": "s6-69",
+      "sceneId": "s6",
+      "text": "Cool water from the well for you, at least, Poor soul! There, drink! Then sleep. See, I remain, And I will sing a slumberous refrain, And you shall murmur like a child appeased."
+    },
+    {
+      "id": "s6-70",
+      "sceneId": "s6",
+      "text": "Noon strikes. Approach not, Madam, pray, or call.... He sleeps. Strange how a woman's light footfall Re-echoes through the brains of grief-worn men!"
+    },
+    {
+      "id": "s6-71",
+      "sceneId": "s6",
+      "text": "Noon strikes. I bade them sprinkle in the room. Sleep on! Hope shines--a pebble in the gloom. --When shall the Autumn rose re-blossom,--when?"
+    },
+    {
+      "id": "s6-72",
+      "sceneId": "s6",
+      "text": "Sleep, Darksome, Deep"
+    },
+    {
+      "id": "s6-73",
+      "sceneId": "s6",
+      "text": "Sleep, darksome, deep, Doth on me fall: Vain hopes all, sleep, Sleep, yearnings all!"
+    },
+    {
+      "id": "s6-74",
+      "sceneId": "s6",
+      "text": "Lo, I grow blind! Lo, right and wrong Fade to my mind.... O sorry song!"
+    },
+    {
+      "id": "s6-75",
+      "sceneId": "s6",
+      "text": "A cradle, I, Rocked in a grave: Speak low, pass by, Silence I crave!"
+    },
+    {
+      "id": "s6-76",
+      "sceneId": "s6",
+      "text": "The Sky-Blue Smiles Above the Roof"
+    },
+    {
+      "id": "s6-77",
+      "sceneId": "s6",
+      "text": "The sky-blue smiles above the roof Its tenderest; A green tree rears above the roof Its waving crest."
+    },
+    {
+      "id": "s6-78",
+      "sceneId": "s6",
+      "text": "The church-bell in the windless sky Peaceably rings, A skylark soaring in the sky Endlessly sings."
+    },
+    {
+      "id": "s6-79",
+      "sceneId": "s6",
+      "text": "My God, my God, all life is there, Simple and sweet; The soothing bee-hive murmur there Comes from the street!"
+    },
+    {
+      "id": "s6-80",
+      "sceneId": "s6",
+      "text": "What have you done, O you that weep In the glad sun,-- Say, with your youth, you man that weep, What have you done?"
+    },
+    {
+      "id": "s6-81",
+      "sceneId": "s6",
+      "text": "IT IS YOU"
+    },
+    {
+      "id": "s6-82",
+      "sceneId": "s6",
+      "text": "It is you, it is you, poor better thoughts! The needful hope, shame for the ancient blots, Heart's gentleness with mind's severity, And vigilance, and calm, and constancy, And all!--But slow as yet, though well awake; Though sturdy, shy; scarce able yet to break The spell of stifling night and heavy dreams. One comes after the other, and each seems Uncouther, and all fear the moonlight cold. \"Thus, sheep when first they issue from the fold, Come,--one, then two, then three. The rest delay, With lowered heads, in stupid, wondering way, Waiting to do as does the one that leads. He stops, they stop in turn, and lay their heads Across his back, simply, not knowing why.\"* Your shepherd, O my fair flock, is not I,-- It is a better, better far, who knows The reasons, He that so long kept you close, But timely with His own hand set you free. Him follow,--light His staff. And I shall be, Beneath his voice still raised to comfort you, I shall be, I, His faithful dog, and true."
+    },
+    {
+      "id": "s6-83",
+      "sceneId": "s6",
+      "text": "* Dante, Purgatorio."
+    },
+    {
+      "id": "s6-84",
+      "sceneId": "s6",
+      "text": "'Tis the Feast of Corn"
+    },
+    {
+      "id": "s6-85",
+      "sceneId": "s6",
+      "text": "'Tis the feast of corn, 'tis the feast of bread, On the dear scene returned to, witnessed again! So white is the light o'er the reapers shed Their shadows fall pink on the level grain."
+    },
+    {
+      "id": "s6-86",
+      "sceneId": "s6",
+      "text": "The stalked gold drops to the whistling flight Of the scythes, whose lightning dives deep, leaps clear; The plain, labor-strewn to the confines of sight, Changes face at each instant, gay and severe."
+    },
+    {
+      "id": "s6-87",
+      "sceneId": "s6",
+      "text": "All pants, all is effort and toil 'neath the sun, The stolid old sun, tranquil ripener of wheat, Who works o'er our haste imperturbably on To swell the green grape yon, turning it sweet."
+    },
+    {
+      "id": "s6-88",
+      "sceneId": "s6",
+      "text": "Work on, faithful sun, for the bread and the wine, Feed man with the milk of the earth, and bestow The frank glass wherein unconcern laughs divine,-- Ye harvesters, vintagers, work on, aglow!"
+    },
+    {
+      "id": "s6-89",
+      "sceneId": "s6",
+      "text": "For from the flour's fairest, and from the vine's best, Fruit of man's strength spread to earth's uttermost, God gathers and reaps, to His purposes blest, The Flesh and the Blood for the chalice and host!"
+    },
+    {
+      "id": "s6-90",
+      "sceneId": "s6",
+      "text": "Jadis et Naguere"
+    },
+    {
+      "id": "s6-91",
+      "sceneId": "s6",
+      "text": "Jadis"
+    },
+    {
+      "id": "s6-92",
+      "sceneId": "s6",
+      "text": "Prologue"
+    },
+    {
+      "id": "s6-93",
+      "sceneId": "s6",
+      "text": "Off, be off, now, graceless pack: Get you gone, lost children mine: Your release is earned in fine: The Chimaera lends her back."
+    },
+    {
+      "id": "s6-94",
+      "sceneId": "s6",
+      "text": "Huddling on her, go, God-sped, As a dream-horde crowds and cowers Mid the shadowy curtain-flowers Round a sick man's haunted bed."
+    },
+    {
+      "id": "s6-95",
+      "sceneId": "s6",
+      "text": "Hold! My hand, unfit before, Feeble still, but feverless, And which palpitates no more Save with a desire to bless,"
+    },
+    {
+      "id": "s6-96",
+      "sceneId": "s6",
+      "text": "Blesses you, O little flies Of my black suns and white nights. Spread your rustling wings, arise, Little griefs, little delights,"
+    },
+    {
+      "id": "s6-97",
+      "sceneId": "s6",
+      "text": "Hopes, despairs, dreams foul and fair, All!--renounced since yesterday By my heart that quests elsewhere.... Ite, aegri somnia!"
+    },
+    {
+      "id": "s6-98",
+      "sceneId": "s6",
+      "text": "Langueur"
+    },
+    {
+      "id": "s6-99",
+      "sceneId": "s6",
+      "text": "I am the Empire in the last of its decline, That sees the tall, fair-haired Barbarians pass,--the while Composing indolent acrostics, in a style Of gold, with languid sunshine dancing in each line."
+    },
+    {
+      "id": "s6-100",
+      "sceneId": "s6",
+      "text": "The solitary soul is heart-sick with a vile Ennui. Down yon, they say, War's torches bloody shine. Alas, to be so faint of will, one must resign The chance of brave adventure in the splendid file,--"
+    },
+    {
+      "id": "s6-101",
+      "sceneId": "s6",
+      "text": "Of death, perchance! Alas, so lagging in desire! Ah, all is drunk! Bathyllus, hast done laughing, pray? Ah, all is drunk,--all eaten! Nothing more to say!"
+    },
+    {
+      "id": "s6-102",
+      "sceneId": "s6",
+      "text": "Alone, a vapid verse one tosses in the fire; Alone, a somewhat thievish slave neglecting one; Alone, a vague disgust of all beneath the sun!"
+    },
+    {
+      "id": "s6-103",
+      "sceneId": "s6",
+      "text": "Naguere"
+    },
+    {
+      "id": "s6-104",
+      "sceneId": "s6",
+      "text": "Prologue"
+    },
+    {
+      "id": "s6-105",
+      "sceneId": "s6",
+      "text": "Glimm'ring twilight things are these, Visions of the end of night. Truth, thou lightest them, I wis, Only with a distant light,"
+    },
+    {
+      "id": "s6-106",
+      "sceneId": "s6",
+      "text": "Whitening through the hated shade In such grudging dim degrees, One must doubt if they be made By the moon among the trees,"
+    },
+    {
+      "id": "s6-107",
+      "sceneId": "s6",
+      "text": "Or if these uncertain ghosts Shall take body bye and bye, And uniting with the hosts Tented by the azure sky,"
+    },
+    {
+      "id": "s6-108",
+      "sceneId": "s6",
+      "text": "Framed by Nature's setting meet,-- Offer up in one accord From the heart's ecstatic heat, Incense to the living Lord!"
+    },
+    {
+      "id": "s6-109",
+      "sceneId": "s6",
+      "text": "Parallelement"
+    },
+    {
+      "id": "s6-110",
+      "sceneId": "s6",
+      "text": "Impression Fausse"
+    },
+    {
+      "id": "s6-111",
+      "sceneId": "s6",
+      "text": "Dame mouse patters Black against the shadow grey; Dame mouse patters Grey against the black."
+    },
+    {
+      "id": "s6-112",
+      "sceneId": "s6",
+      "text": "Hear the bed-time bell! Sleep forthwith, good prisoners; Hear the bed-time bell! You must go to sleep."
+    },
+    {
+      "id": "s6-113",
+      "sceneId": "s6",
+      "text": "No disturbing dream! Think of nothing but your loves: No disturbing dream, Of the fair ones think!"
+    },
+    {
+      "id": "s6-114",
+      "sceneId": "s6",
+      "text": "Moonlight clear and bright! Some one of the neighbors snores; Moonlight clear and bright-- He is troublesome."
+    },
+    {
+      "id": "s6-115",
+      "sceneId": "s6",
+      "text": "Comes a pitchy cloud Creeping o'er the faded moon; Comes a pitchy cloud-- See the grey dawn creep!"
+    },
+    {
+      "id": "s6-116",
+      "sceneId": "s6",
+      "text": "Dame mouse patters Pink across an azure ray; Dame mouse patters.... Sluggards, up! 'tis day!"
+    },
+    {
+      "id": "s6-117",
+      "sceneId": "s6",
+      "text": "Poemes Saturniens"
+    },
+    {
+      "id": "s6-118",
+      "sceneId": "s6",
+      "text": "Prologue"
+    },
+    {
+      "id": "s6-119",
+      "sceneId": "s6",
+      "text": "The Sages of old time, well worth our own, Believed--and it has been disproved by none-- That destinies in Heaven written are, And every soul depends upon a star. (Many have mocked, without remembering That laughter oft is a misguiding thing, This explanation of night's mystery.) Now all that born beneath Saturnus be,-- Red planet, to the necromancer dear,-- Inherit, ancient magic-books make clear, Good share of spleen, good share of wretchedness. Imagination, wakeful, vigorless, In them makes the resolves of reason vain. The blood within them, subtle as a bane, Burning as lava, scarce, flows ever fraught With sad ideals that ever come to naught. Such must Saturnians suffer, such must die,-- If so that death destruction doth imply,-- Their lives being ordered in this dismal sense By logic of a malign Influence."
+    },
+    {
+      "id": "s6-120",
+      "sceneId": "s6",
+      "text": "Melancholia"
+    },
+    {
+      "id": "s6-121",
+      "sceneId": "s6",
+      "text": "Nevermore"
+    },
+    {
+      "id": "s6-122",
+      "sceneId": "s6",
+      "text": "Remembrance, what wilt thou with me? The year Declined; in the still air the thrush piped clear, The languid sunshine did incurious peer Among the thinned leaves of the forest sere."
+    },
+    {
+      "id": "s6-123",
+      "sceneId": "s6",
+      "text": "We were alone, and pensively we strolled, With straying locks and fancies, when, behold Her turn to let her thrilling gaze enfold, And ask me in her voice of living gold,"
+    },
+    {
+      "id": "s6-124",
+      "sceneId": "s6",
+      "text": "Her fresh young voice, \"What was thy happiest day?\" I smiled discreetly for all answer, and Devotedly I kissed her fair white hand."
+    },
+    {
+      "id": "s6-125",
+      "sceneId": "s6",
+      "text": "--Ah, me! The earliest flowers, how sweet are they! And in how exquisite a whisper slips The earliest \"Yes\" from well-beloved lips!"
+    },
+    {
+      "id": "s6-126",
+      "sceneId": "s6",
+      "text": "Apres Trois ANS"
+    },
+    {
+      "id": "s6-127",
+      "sceneId": "s6",
+      "text": "When I had pushed the narrow garden-door, Once more I stood within the green retreat; Softly the morning sunshine lighted it, And every flow'r a humid spangle wore."
+    },
+    {
+      "id": "s6-128",
+      "sceneId": "s6",
+      "text": "Nothing is changed. I see it all once more: The vine-clad arbor with its rustic seat.... The waterjet still plashes silver sweet, The ancient aspen rustles as of yore."
+    },
+    {
+      "id": "s6-129",
+      "sceneId": "s6",
+      "text": "The roses throb as in a bygone day, As they were wont, the tall proud lilies sway. Each bird that lights and twitters is a friend."
+    },
+    {
+      "id": "s6-130",
+      "sceneId": "s6",
+      "text": "I even found the Flora standing yet, Whose plaster crumbles at the alley's end, --Slim, 'mid the foolish scent of mignonette."
+    },
+    {
+      "id": "s6-131",
+      "sceneId": "s6",
+      "text": "MON Reve Familier"
+    },
+    {
+      "id": "s6-132",
+      "sceneId": "s6",
+      "text": "Oft do I dream this strange and penetrating dream: An unknown woman, whom I love, who loves me well, Who does not every time quite change, nor yet quite dwell The same,--and loves me well, and knows me as I am."
+    },
+    {
+      "id": "s6-133",
+      "sceneId": "s6",
+      "text": "For she knows me! My heart, clear as a crystal beam To her alone, ceases to be inscrutable To her alone, and she alone knows to dispel My grief, cooling my brow with her tears' gentle stream."
+    },
+    {
+      "id": "s6-134",
+      "sceneId": "s6",
+      "text": "Is she of favor dark or fair?--I do not know. Her name? All I remember is that it doth flow Softly, as do the names of them we loved and lost."
+    },
+    {
+      "id": "s6-135",
+      "sceneId": "s6",
+      "text": "Her eyes are like the statues',--mild and grave and wide; And for her voice she has as if it were the ghost Of other voices,--well-loved voices that have died."
+    },
+    {
+      "id": "s6-136",
+      "sceneId": "s6",
+      "text": "A UNE Femme"
+    },
+    {
+      "id": "s6-137",
+      "sceneId": "s6",
+      "text": "To you these lines for the consoling grace Of your great eyes wherein a soft dream shines, For your pure soul, all-kind!--to you these lines From the black deeps of mine unmatched distress."
+    },
+    {
+      "id": "s6-138",
+      "sceneId": "s6",
+      "text": "'Tis that the hideous dream that doth oppress My soul, alas! its sad prey ne'er resigns, But like a pack of wolves down mad inclines Goes gathering heat upon my reddened trace!"
+    },
+    {
+      "id": "s6-139",
+      "sceneId": "s6",
+      "text": "I suffer, oh, I suffer cruelly! So that the first man's cry at Eden lost Was but an eclogue surely to my cry!"
+    },
+    {
+      "id": "s6-140",
+      "sceneId": "s6",
+      "text": "And that the sorrows, Dear, that may have crossed Your life, are but as swallows light that fly --Dear!--in a golden warm September sky."
+    },
+    {
+      "id": "s6-141",
+      "sceneId": "s6",
+      "text": "Paysages Tristes"
+    },
+    {
+      "id": "s6-142",
+      "sceneId": "s6",
+      "text": "Chanson D'Automne"
+    },
+    {
+      "id": "s6-143",
+      "sceneId": "s6",
+      "text": "Leaf-strewing gales Utter low wails Like violins,-- Till on my soul Their creeping dole Stealthily wins...."
+    },
+    {
+      "id": "s6-144",
+      "sceneId": "s6",
+      "text": "Days long gone by! In such hour, I, Choking and pale, Call you to mind,-- Then like the wind Weep I and wail."
+    },
+    {
+      "id": "s6-145",
+      "sceneId": "s6",
+      "text": "And, as by wind Harsh and unkind, Driven by grief, Go I, here, there, Recking not where, Like the dead leaf."
+    },
+    {
+      "id": "s6-146",
+      "sceneId": "s6",
+      "text": "LE Rossignol"
+    },
+    {
+      "id": "s6-147",
+      "sceneId": "s6",
+      "text": "Like to a swarm of birds, with jarring cries Descend on me my swarming memories; Light mid the yellow leaves, that shake and sigh, Of the bowed alder--that is even I!-- Brooding its shadow in the violet Unprofitable river of Regret. They settle screaming--Then the evil sound, By the moist wind's impatient hushing drowned, Dies by degrees, till nothing more is heard Save the lone singing of a single bird, Save the clear voice--O singer, sweetly done!-- Warbling the praises of the Absent One.... And in the silence of a summer night Sultry and splendid, by a late moon's light That sad and sallow peers above the hill, The humid hushing wind that ranges still Rocks to a whispered sleepsong languidly The bird lamenting and the shivering tree."
+    },
+    {
+      "id": "s6-148",
+      "sceneId": "s6",
+      "text": "Caprices"
+    },
+    {
+      "id": "s6-149",
+      "sceneId": "s6",
+      "text": "IL Bacio"
+    },
+    {
+      "id": "s6-150",
+      "sceneId": "s6",
+      "text": "Kiss! Hollyhock in Love's luxuriant close! Brisk music played on pearly little keys, In tempo with the witching melodies Love in the ardent heart repeating goes."
+    },
+    {
+      "id": "s6-151",
+      "sceneId": "s6",
+      "text": "Sonorous, graceful Kiss, hail! Kiss divine! Unequalled boon, unutterable bliss! Man, bent o'er thine enthralling chalice, Kiss, Grows drunken with a rapture only thine!"
+    },
+    {
+      "id": "s6-152",
+      "sceneId": "s6",
+      "text": "Thou comfortest as music does, and wine, And grief dies smothered in thy purple fold. Let one greater than I, Kiss, and more bold, Rear thee a classic, monumental line."
+    },
+    {
+      "id": "s6-153",
+      "sceneId": "s6",
+      "text": "Humble Parisian bard, this infantile Bouquet of rhymes I tender half in fear.... Be gracious, and in guerdon, on the dear Red lips of One I know, alight and smile!"
+    },
+    {
+      "id": "s6-154",
+      "sceneId": "s6",
+      "text": "Epilogue"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "The sun, less hot, looks from a sky more clear; The roses in their sleepy loveliness Nod to the cradling wind. The atmosphere Enfolds us with a sister's tenderness."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "For once hath Nature left the splendid throne Of her indifference, and through the mild Sun-gilded air of Autumn, clement grown, Descends to man, her proud, revolted child."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "She takes, to wipe the tears upon our face, Her azure mantle sown with many a star; And her eternal soul, her deathless grace, Strengthen and calm the weak heart that we are."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "The waving of the boughs, the lengthened line Of the horizon, full of dreamy hues And scattered songs, all,--sing it, sail, or shine!-- To-day consoles, delivers!--Let us muse."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "So, then this book is closed. Dear Fancies mine, That streaked my grey sky with your wings of light, And passing fanned my burning brow, benign,-- Return, return to your blue Infinite!"
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "Thou, ringing Rhyme, thou, Verse that smooth didst glide, Ye, throbbing Rhythms, ye, musical Refrains, And Memories, and Dreams, and ye beside Fair Figures called to life with anxious pains,"
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "We needs must part. Until the happier day When Art, our Lord, his thralls shall re-unite, Companions sweet, Farewell and Wellaway, Fly home, ye may, to your blue Infinite!"
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "And true it is, we spared not breath or force, And our good pleasure, like foaming steed Blind with the madness of his earliest course, Of rest within the quiet shade hath need."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "--For always have we held thee, Poesy, To be our Goddess, mighty and august, Our only passion,--Mother calling thee, And holding Inspiration in mistrust."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Ah, Inspiration, splendid, dominant, Egeria with the lightsome eyes profound, Sudden Erato, Genius quick to grant, Old picture Angel of the gilt background,"
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "Muse,--ay, whose voice is powerful indeed, Since in the first come brain it makes to grow Thick as some dusty yellow roadside weed, A gardenful of poems none did sow,--"
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "Dove, Holy Ghost, Delirium, Sacred Fire, Transporting Passion,--seasonable queen!-- Gabriel and lute, Latona's son and lyre,-- Ah, Inspiration, summoned at sixteen!"
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "What we have need of, we, the Poets True, That not believe in Gods, and yet revere, That have no halo, hold no golden clue, For whom no Beatrix leaves her radiant sphere,"
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "We, that do chisel words like chalices, And moving verses shape with unmoved mind, Whom wandering in groups by evening seas, In musical converse ye scarce shall find,--"
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "What we need is, in midnight hours dim-lit, Sleep daunted, knowledge earned,--more knowledge still! Is Faust's brow, of the wood-cuts, sternly knit, Is stubborn Perseverance, and is Will!"
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "Is Will eternal, holy, absolute, That grasps--as doth a noble bird of prey The steaming flanks of the foredoomed brute,-- Its project, and with it,--skyward, away!"
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "What we need, we, is fixedness intense, Unequalled effort, strife that shall not cease, Is night, the bitter night of labor, whence Arises, sun-like, slow, the Master-piece!"
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "Let our Inspired, hearts by an eye-shot tined, Sway with the birch-tree to all winds that blow, Poor things! Art knows not the divided mind-- Speak, Milo's Venus, is she stone or no?"
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "We therefore, carve we with the chisel Thought The pure block of the Beautiful, and gain From out the marble cold where it was not, Some starry-chitoned statue without stain,"
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "That one far day, Posterity, new Morn, Enkindling with a golden-rosy flame Our Work, new Memnon, shall to ears unborn Make quiver in the singing air our name!"
+    }
+  ]
+}
