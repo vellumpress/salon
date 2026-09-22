@@ -479,6 +479,8 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
 
 /** Per-work when author/language would name the wrong country. */
 const WORK_COUNTRY: Record<string, string> = {
+  // Unnamed city in the story; American texture (stoop, Sunday School). Not a biography.
+  generosity: "United States",
   // Adapted by Salon remakes (Salon original text; place-of-setting is WORK_PLACE)
   "miss-brill-adapted": "United States",
   "prefer-not": "United States",
