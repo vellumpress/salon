@@ -1,0 +1,2156 @@
+{
+  "id": "tortoises",
+  "title": "Tortoises",
+  "author": "D. H. Lawrence",
+  "year": "1921",
+  "note": "Project Gutenberg 22475",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "You know what it is to be born alone,",
+      "place": "You know what it is to be born alone,",
+      "reentry": "Baby tortoise! The first day to heave your feet little by little from the shell,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Not yet awake,",
+      "place": "Not yet awake,",
+      "reentry": "And remain lapsed on earth, Not quite alive.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "A tiny, fragile, half-animate bean",
+      "place": "A tiny, fragile, half-animate bean",
+      "reentry": "To open your tiny beak-mouth, that looks as if it would never open,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Like some iron door;",
+      "place": "Like some iron door;",
+      "reentry": "To lift the upper hawk-beak from the lower base And reach your skinny little neck",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "And take your first bite at some dim bit of",
+      "place": "And take your first bite at some dim bit of",
+      "reentry": "herbage, Alone, small insect,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Tiny bright-eye,",
+      "place": "Tiny bright-eye,",
+      "reentry": "Slow one.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "To take your first solitary bite",
+      "place": "To take your first solitary bite",
+      "reentry": "And move on your slow, solitary hunt. Your bright, dark little eye,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Your eye of a dark disturbed night,",
+      "place": "Your eye of a dark disturbed night,",
+      "reentry": "Under its slow lid, tiny baby tortoise, So indomitable.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "No one ever heard you complain",
+      "place": "No one ever heard you complain",
+      "reentry": "You draw your head forward, slowly, from your little wimple",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "And set forward, slow-dragging, on your four-",
+      "place": "And set forward, slow-dragging, on your four-",
+      "reentry": "pinned toes, Rowing slowly forward.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Whither away, small bird?",
+      "place": "Whither away, small bird?",
+      "reentry": "Rather like a baby working its limbs,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Except that you make slow, ageless progress",
+      "place": "Except that you make slow, ageless progress",
+      "reentry": "And a baby makes none.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "The touch of sun excites you,",
+      "place": "The touch of sun excites you,",
+      "reentry": "And the long ages, and the lingering chill Make you pause to yawn,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Opening your impervious mouth,",
+      "place": "Opening your impervious mouth,",
+      "reentry": "Suddenly beak-shaped, and very wide, like some suddenly gaping pincers;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Soft red tongue, and hard thin gums,",
+      "place": "Soft red tongue, and hard thin gums,",
+      "reentry": "Then close the wedge of your little mountain front,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Your face, baby tortoise",
+      "place": "Your face, baby tortoise",
+      "reentry": "Do you wonder at the world, as slowly you turn your head in its wimple",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "And look with laconic, black eyes?",
+      "place": "And look with laconic, black eyes?",
+      "reentry": "Or is sleep coming over you again, The non-life?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "You are so hard to wake",
+      "place": "You are so hard to wake",
+      "reentry": "Are you able to wonder?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Or is it just your indomitable will and pride of",
+      "place": "Or is it just your indomitable will and pride of",
+      "reentry": "the first life Looking round",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "And slowly pitching itself against the inertia",
+      "place": "And slowly pitching itself against the inertia",
+      "reentry": "Which had seemed invincible?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "The vast inanimate,",
+      "place": "The vast inanimate,",
+      "reentry": "And the fine brilliance of your so tiny eye.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Nay, tiny shell-bird,",
+      "place": "Nay, tiny shell-bird,",
+      "reentry": "What a huge vast inanimate it is, that you must row against,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "What an incalculable inertia",
+      "place": "What an incalculable inertia",
+      "reentry": "Challenger.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "Little Ulysses, fore-runner,",
+      "place": "Little Ulysses, fore-runner,",
+      "reentry": "No bigger than my thumb-nail, Buon viaggio.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "All animate creation on your shoulder,",
+      "place": "All animate creation on your shoulder,",
+      "reentry": "Set forth, little Titan, under your battle-shield.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "The ponderous, preponderate,",
+      "place": "The ponderous, preponderate,",
+      "reentry": "Inanimate universe; And you are slowly moving, pioneer, you alone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "How vivid your travelling seems now, in the",
+      "place": "How vivid your travelling seems now, in the",
+      "reentry": "troubled sunshine, Stoic, Ulyssean atom;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Suddenly hasty, reckless, on high toes",
+      "place": "Suddenly hasty, reckless, on high toes",
+      "reentry": "Voiceless little bird,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Resting your head half out of your wimple",
+      "place": "Resting your head half out of your wimple",
+      "reentry": "In the slow dignity of your eternal pause. Alone, with no sense of being alone,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "And hence six times more solitary;",
+      "place": "And hence six times more solitary;",
+      "reentry": "Fulfilled of the slow passion of pitching through immemorial ages",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "Your little round house in the midst of chaos",
+      "place": "Your little round house in the midst of chaos",
+      "reentry": "Over the garden earth,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Small bird,",
+      "place": "Small bird,",
+      "reentry": "Over the edge of all things.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "With your tail tucked a little on one side",
+      "place": "With your tail tucked a little on one side",
+      "reentry": "Like a gentleman in a long-skirted coat.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "All life carried on your shoulder,",
+      "place": "All life carried on your shoulder,",
+      "reentry": "Invincible fore-runner.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "The Cross, the Cross",
+      "place": "The Cross, the Cross",
+      "reentry": "Goes deeper in than we know, Deeper into life;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "Right into the marrow",
+      "place": "Right into the marrow",
+      "reentry": "And through the bone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "Along the back of the baby tortoise",
+      "place": "Along the back of the baby tortoise",
+      "reentry": "The scales are locked in an arch like a bridge, Scale-lapping, like a lobster's sections",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "Or a bee's",
+      "place": "Or a bee's",
+      "reentry": "Then crossways down his sides",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "Tiger-stripes and wasp-bands",
+      "place": "Tiger-stripes and wasp-bands",
+      "reentry": "Five, and five again, and five again, And round the edges twenty-five little ones,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "The sections of the baby tortoise shell",
+      "place": "The sections of the baby tortoise shell",
+      "reentry": "Four, and a keystone;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "Four, and a keystone;",
+      "place": "Four, and a keystone;",
+      "reentry": "Four, and a keystone; Then twenty-four, and a tiny little keystone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "It needed Pythagoras  to see life placing her",
+      "place": "It needed Pythagoras  to see life placing her",
+      "reentry": "counters on the living back Of the baby tortoise;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "Life establishing the first eternal mathematical",
+      "place": "Life establishing the first eternal mathematical",
+      "reentry": "tablet, Not in stone, like the Judean Lord, or bronze, but in life-clouded, life-rosy tortoise-shell.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "The first little mathematical gentleman",
+      "place": "The first little mathematical gentleman",
+      "reentry": "Stepping, wee mite, in his loose trousers Under all the eternal dome of mathematical law.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "Fives, and tens,",
+      "place": "Fives, and tens,",
+      "reentry": "Threes and fours and twelves, All the volte face of decimals, The whirligig of dozens and the pinnacle of seven,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "Turn him on his back,",
+      "place": "Turn him on his back,",
+      "reentry": "The kicking little beetle, And there again, on his shell-tender, earth-touching belly,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "The long cleavage of division, upright of the",
+      "place": "The long cleavage of division, upright of the",
+      "reentry": "eternal cross.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "And on either side count five,",
+      "place": "And on either side count five,",
+      "reentry": "On each side, two above, on each side, two below The dark bar horizontal.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "It goes right through him, the sprottling insect,",
+      "place": "It goes right through him, the sprottling insect,",
+      "reentry": "Through his cross-wise cloven psyche, Through his five-fold complex-nature.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "So turn him over on his toes again;",
+      "place": "So turn him over on his toes again;",
+      "reentry": "Four pin-point toes, and a problematical thumb- piece,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "Four rowing limbs, and one wedge-balancing-",
+      "place": "Four rowing limbs, and one wedge-balancing-",
+      "reentry": "head,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "Four and one makes five, which is the clue to all",
+      "place": "Four and one makes five, which is the clue to all",
+      "reentry": "mathematics.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "The Lord wrote it all down on the little slate",
+      "place": "The Lord wrote it all down on the little slate",
+      "reentry": "Of the baby tortoise.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "The complex, manifold involvedness of an",
+      "place": "The complex, manifold involvedness of an",
+      "reentry": "individual creature Blotted out",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "On this small bird, this rudiment,",
+      "place": "On this small bird, this rudiment,",
+      "reentry": "This little dome, this pediment Of all creation,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "On he goes, the little one,",
+      "place": "On he goes, the little one,",
+      "reentry": "Bud of the universe, Pediment of life.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "Setting off somewhere, apparently",
+      "place": "Setting off somewhere, apparently",
+      "reentry": "Whither away, brisk egg?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "A mere obstacle,",
+      "place": "A mere obstacle,",
+      "reentry": "He veers round the slow great mound of her.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "Tortoises always foresee obstacles",
+      "place": "Tortoises always foresee obstacles",
+      "reentry": "It is no use my saying to him in an emotional voice: \"This is your Mother, she laid you when you were an egg.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "He does not even trouble to answer:   \"Woman,",
+      "place": "He does not even trouble to answer:   \"Woman,",
+      "reentry": "what have I to do with thee?\" He wearily looks the other way,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "And she even more wearily looks another way",
+      "place": "And she even more wearily looks another way",
+      "reentry": "still, Each with the utmost apathy, Incognizant, Unaware, Nothing.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "As for papa,",
+      "place": "As for papa,",
+      "reentry": "He snaps when I offer him his offspring, Just as he snaps when I poke a bit of stick at him, Because he is irascible this morning, an irascible tortoise",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "Being touched with love, and devoid of",
+      "place": "Being touched with love, and devoid of",
+      "reentry": "fatherliness.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "Father and mother,",
+      "place": "Father and mother,",
+      "reentry": "And three little brothers, And all rambling aimless, like little perambulating pebbles scattered in the garden,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "Not knowing each other from bits of earth or old",
+      "place": "Not knowing each other from bits of earth or old",
+      "reentry": "tins.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "Except that papa and mama are old acquaintances,",
+      "place": "Except that papa and mama are old acquaintances,",
+      "reentry": "of course, But family feeling there is none, not even the beginnings.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "Fatherless, motherless, brotherless, sisterless",
+      "place": "Fatherless, motherless, brotherless, sisterless",
+      "reentry": "Little tortoise.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "Row on then, small pebble,",
+      "place": "Row on then, small pebble,",
+      "reentry": "Over the clods of the autumn, wind-chilled sunshine,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "Young gayety",
+      "place": "Young gayety",
+      "reentry": "Does he look for a companion?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "No, no, don't think it",
+      "place": "No, no, don't think it",
+      "reentry": "He doesn't know he is alone; Isolation is his birthright,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "This atom",
+      "place": "This atom",
+      "reentry": "To row forward, and reach himself tall on spiny toes,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "To travel, to burrow into a little loose earth,",
+      "place": "To travel, to burrow into a little loose earth,",
+      "reentry": "afraid of the night, To crop a little substance,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "To move, and to be quite sure that he is moving:",
+      "place": "To move, and to be quite sure that he is moving:",
+      "reentry": "Basta!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "To be a tortoise!",
+      "place": "To be a tortoise!",
+      "reentry": "Think of it, in a garden of inert clods A brisk, brindled little tortoise, all to himself-- Croesus!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "In a garden of pebbles and insects",
+      "place": "In a garden of pebbles and insects",
+      "reentry": "To roam, and feel the slow heart beat Tortoise-wise, the first bell sounding From the warm blood, in the dark-creation morning.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "Moving, and being himself,",
+      "place": "Moving, and being himself,",
+      "reentry": "Slow, and unquestioned, And inordinately there, O stoic!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "Wandering in the slow triumph of his own",
+      "place": "Wandering in the slow triumph of his own",
+      "reentry": "existence, Ringing the soundless bell of his presence in chaos,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "And biting the frail grass arrogantly,",
+      "place": "And biting the frail grass arrogantly,",
+      "reentry": "Decidedly arrogantly.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "She is large and matronly",
+      "place": "She is large and matronly",
+      "reentry": "And rather dirty, A little sardonic-looking, as if domesticity had driven her to it.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "Though what she does, except lay four eggs at",
+      "place": "Though what she does, except lay four eggs at",
+      "reentry": "random in the garden once a year And put up with her husband,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "I don't know",
+      "place": "I don't know",
+      "reentry": "She likes to eat.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "She hurries up, striding reared on long uncanny",
+      "place": "She hurries up, striding reared on long uncanny",
+      "reentry": "legs, When food is going.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "Oh yes, she can make haste when she likes",
+      "place": "Oh yes, she can make haste when she likes",
+      "reentry": "She snaps the soft bread from my hand in great mouthfuls,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "Opening her rather pretty wedge of an iron,",
+      "place": "Opening her rather pretty wedge of an iron,",
+      "reentry": "pristine face Into an enormously wide-beaked mouth",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "Like sudden curved scissors,",
+      "place": "Like sudden curved scissors,",
+      "reentry": "And gulping at more than she can swallow, and working her thick, soft tongue,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "And having the bread hanging over her chin",
+      "place": "And having the bread hanging over her chin",
+      "reentry": "O Mistress, Mistress,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "Reptile mistress,",
+      "place": "Reptile mistress,",
+      "reentry": "Your eye is very dark, very bright, And it never softens",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "Although you watch",
+      "place": "Although you watch",
+      "reentry": "She knows,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "She knows well enough to come for food,",
+      "place": "She knows well enough to come for food,",
+      "reentry": "Yet she sees me not; Her bright eye sees, but not me, not anything,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "Sightful, sightless, seeing and visionless,",
+      "place": "Sightful, sightless, seeing and visionless,",
+      "reentry": "Reptile mistress.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "Taking bread in her curved, gaping, toothless",
+      "place": "Taking bread in her curved, gaping, toothless",
+      "reentry": "mouth, She has no qualm when she catches my finger in her steel overlapping gums,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "But she hangs on, and my shout and my shrinking",
+      "place": "But she hangs on, and my shout and my shrinking",
+      "reentry": "are nothing to her, She does not even know she is nipping me with her curved beak.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "Snake-like she draws at my finger, while I drag",
+      "place": "Snake-like she draws at my finger, while I drag",
+      "reentry": "it in horror away.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "Mistress, reptile mistress,",
+      "place": "Mistress, reptile mistress,",
+      "reentry": "You are almost too large, I am almost frightened. He is much smaller,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "Dapper beside her,",
+      "place": "Dapper beside her,",
+      "reentry": "And ridiculously small.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "His, poor darling, is almost fiery",
+      "place": "His, poor darling, is almost fiery",
+      "reentry": "His wimple, his blunt-prowed face,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "His low forehead, his skinny neck, his long,",
+      "place": "His low forehead, his skinny neck, his long,",
+      "reentry": "scaled, striving legs, So striving, striving,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "Are all more delicate than she,",
+      "place": "Are all more delicate than she,",
+      "reentry": "And he has a cruel scar on his shell.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "Poor darling, biting at her feet,",
+      "place": "Poor darling, biting at her feet,",
+      "reentry": "Running beside her like a dog, biting her earthy, splay feet,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "Nipping her ankles,",
+      "place": "Nipping her ankles,",
+      "reentry": "Which she drags apathetic away, though without retreating into her shell.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "Agelessly silent,",
+      "place": "Agelessly silent,",
+      "reentry": "And with a grim, reptile determination, Cold, voiceless age-after-age behind him, serpents' long obstinacy",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "Of horizontal persistence",
+      "place": "Of horizontal persistence",
+      "reentry": "Little old man",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "Scuffling beside her, bending down, catching his",
+      "place": "Scuffling beside her, bending down, catching his",
+      "reentry": "opportunity, Parting his steel-trap face, so suddenly, and seizing her scaly ankle,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "And hanging grimly on,",
+      "place": "And hanging grimly on,",
+      "reentry": "Letting go at last as she drags away, And closing his steel-trap face.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "His steel-trap, stoic, ageless, handsome face",
+      "place": "His steel-trap, stoic, ageless, handsome face",
+      "reentry": "Alas, what a fool he looks in this scuffle.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "And how he feels it!",
+      "place": "And how he feels it!",
+      "reentry": "The lonely rambler, the stoic, dignified stalker through chaos,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "The immune, the animate,",
+      "place": "The immune, the animate,",
+      "reentry": "Enveloped in isolation, Forerunner.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "Now look at him!",
+      "place": "Now look at him!",
+      "reentry": "Alas, the spear is through the side of his isolation.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "His adolescence saw him crucified into sex,",
+      "place": "His adolescence saw him crucified into sex,",
+      "reentry": "Doomed, in the long crucifixion of desire, to seek his consummation beyond himself.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "Divided into passionate duality,",
+      "place": "Divided into passionate duality,",
+      "reentry": "He, so finished and immune, now broken into desirous fragmentariness,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "Doomed to make an intolerable fool of himself",
+      "place": "Doomed to make an intolerable fool of himself",
+      "reentry": "In his effort toward completion again.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "Poor little earthy house-inhabiting Osiris,",
+      "place": "Poor little earthy house-inhabiting Osiris,",
+      "reentry": "The mysterious bull tore him at adolescence into pieces,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "And he must struggle after reconstruction,",
+      "place": "And he must struggle after reconstruction,",
+      "reentry": "ignominiously.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "And so behold him following the tail",
+      "place": "And so behold him following the tail",
+      "reentry": "Of that mud-hovel of his slowly-rambling spouse, Like some unhappy bull at the tail of a cow,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "But with more than bovine, grim,  earth-dank",
+      "place": "But with more than bovine, grim,  earth-dank",
+      "reentry": "persistence, Suddenly seizing the ugly ankle as she stretches out to walk,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s115",
+      "title": "Roaming over the sods,",
+      "place": "Roaming over the sods,",
+      "reentry": "Or, if it happen to show, at her pointed, heavy tail Beneath the low-dropping back-board of her shell.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s116",
+      "title": "Their two shells like doomed boats bumping,",
+      "place": "Their two shells like doomed boats bumping,",
+      "reentry": "Hers huge, his small; Their splay feet rambling and rowing like paddles,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s117",
+      "title": "And stumbling mixed up in one another,",
+      "place": "And stumbling mixed up in one another,",
+      "reentry": "In the race of love-- Two tortoises,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s118",
+      "title": "She huge, he small",
+      "place": "She huge, he small",
+      "reentry": "She seems earthily apathetic,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s119",
+      "title": "And he has a reptile's awful persistence",
+      "place": "And he has a reptile's awful persistence",
+      "reentry": "I heard a woman pitying her, pitying the Mere Tortue.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s120",
+      "title": "While I, I pity Monsieur",
+      "place": "While I, I pity Monsieur",
+      "reentry": "\"He pesters her and torments her,\" said the woman.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s121",
+      "title": "How much more is he pestered and tormented,",
+      "place": "How much more is he pestered and tormented,",
+      "reentry": "say I.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s122",
+      "title": "What can he do?",
+      "place": "What can he do?",
+      "reentry": "He is dumb, he is visionless, Conceptionless.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s123",
+      "title": "His black, sad-lidded eye sees but beholds not",
+      "place": "His black, sad-lidded eye sees but beholds not",
+      "reentry": "As her earthen mound moves on, But he catches the folds of vulnerable, leathery skin,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s124",
+      "title": "Nail-studded, that shake beneath her shell,",
+      "place": "Nail-studded, that shake beneath her shell,",
+      "reentry": "And drags at these with his beak, Drags and drags and bites,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s125",
+      "title": "While she pulls herself free, and rows her dull",
+      "place": "While she pulls herself free, and rows her dull",
+      "reentry": "mound along.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s126",
+      "title": "Making his advances",
+      "place": "Making his advances",
+      "reentry": "He does not look at her, nor sniff at her, No, not even sniff at her, his nose is blank.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s127",
+      "title": "Only he senses the vulnerable folds of skin",
+      "place": "Only he senses the vulnerable folds of skin",
+      "reentry": "That work beneath her while she sprawls along In her ungainly pace,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s128",
+      "title": "Her folds of skin that work and row",
+      "place": "Her folds of skin that work and row",
+      "reentry": "Beneath the earth-soiled hovel in which she moves.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s129",
+      "title": "And so he strains beneath her housey walls",
+      "place": "And so he strains beneath her housey walls",
+      "reentry": "And catches her trouser-legs in his beak Suddenly, or her skinny limb,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s130",
+      "title": "And strange and grimly drags at her",
+      "place": "And strange and grimly drags at her",
+      "reentry": "Like a dog, Only agelessly silent, with a reptile's awful persistency.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s131",
+      "title": "Grim, gruesome gallantry, to which he is doomed",
+      "place": "Grim, gruesome gallantry, to which he is doomed",
+      "reentry": "Dragged out of an eternity of silent isolation And doomed to partiality, partial being,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s132",
+      "title": "Ache, and want of being,",
+      "place": "Ache, and want of being,",
+      "reentry": "Want, Self-exposure, hard humiliation, need to add himself on to her.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s133",
+      "title": "Born to walk alone,",
+      "place": "Born to walk alone,",
+      "reentry": "Forerunner, Now suddenly distracted into this mazy sidetrack,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s134",
+      "title": "This awkward, harrowing pursuit,",
+      "place": "This awkward, harrowing pursuit,",
+      "reentry": "This grim necessity from within.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s135",
+      "title": "Does she know",
+      "place": "Does she know",
+      "reentry": "As she moves eternally slowly away? Or is he driven against her with a bang, like a bird flying in the dark against a window,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s136",
+      "title": "All knowledgeless?",
+      "place": "All knowledgeless?",
+      "reentry": "The awful concussion, And the still more awful need to persist, to follow, follow, continue, Driven, after aeons of pristine, fore-god-like singleness and oneness,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s137",
+      "title": "At the end of some mysterious, red-hot iron,",
+      "place": "At the end of some mysterious, red-hot iron,",
+      "reentry": "Driven away from himself into her tracks, Forced to crash against her.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s138",
+      "title": "Stiff, gallant, irascible, crook-legged reptile,",
+      "place": "Stiff, gallant, irascible, crook-legged reptile,",
+      "reentry": "Little gentleman, Sorry plight,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s139",
+      "title": "We ought to look the other way",
+      "place": "We ought to look the other way",
+      "reentry": "Save that, having come with you so far, We will go on to the end. J",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s140",
+      "title": "I thought he was dumb,",
+      "place": "I thought he was dumb,",
+      "reentry": "I said he was dumb, Yet I've heard him cry.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s141",
+      "title": "First faint scream,",
+      "place": "First faint scream,",
+      "reentry": "Out of life's unfathomable dawn, Far off, so far, like a madness, under the horizon's dawning rim,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s142",
+      "title": "Far, far off, far scream",
+      "place": "Far, far off, far scream",
+      "reentry": "Tortoise *in extremis*.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s143",
+      "title": "Why were we crucified into sex?",
+      "place": "Why were we crucified into sex?",
+      "reentry": "Why were we not left rounded off, and finished in ourselves,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s144",
+      "title": "As we began,",
+      "place": "As we began,",
+      "reentry": "As he certainly began, so perfectly alone?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s145",
+      "title": "A far, was-it-audible scream,",
+      "place": "A far, was-it-audible scream,",
+      "reentry": "Or did it sound on the plasm direct?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s146",
+      "title": "Worse than the cry of the new-born,",
+      "place": "Worse than the cry of the new-born,",
+      "reentry": "A scream, A yell,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s147",
+      "title": "A shout,",
+      "place": "A shout,",
+      "reentry": "A paean, A death-agony,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s148",
+      "title": "A birth-cry,",
+      "place": "A birth-cry,",
+      "reentry": "A submission, All tiny, tiny, far away, reptile under the first dawn.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s149",
+      "title": "War-cry,  triumph,  acute-delight,  death-scream",
+      "place": "War-cry,  triumph,  acute-delight,  death-scream",
+      "reentry": "reptilian, Why was the veil torn?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s150",
+      "title": "The silken shriek of the soul's torn membrane?",
+      "place": "The silken shriek of the soul's torn membrane?",
+      "reentry": "The male soul's membrane Torn with a shriek half music, half horror.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s151",
+      "title": "Male tortoise, cleaving behind the hovel-wall of",
+      "place": "Male tortoise, cleaving behind the hovel-wall of",
+      "reentry": "that dense female, Mounted and tense, spread-eagle, out-reaching out of the shell",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s152",
+      "title": "In tortoise-nakedness,",
+      "place": "In tortoise-nakedness,",
+      "reentry": "Long neck, and long vulnerable limbs extruded, spread-eagle over her house-roof,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s153",
+      "title": "And the deep, secret, all-penetrating tail curved",
+      "place": "And the deep, secret, all-penetrating tail curved",
+      "reentry": "beneath her walls, Reaching and gripping tense, more reaching anguish in uttermost tension",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s154",
+      "title": "Till suddenly, in the spasm of coition, tupping",
+      "place": "Till suddenly, in the spasm of coition, tupping",
+      "reentry": "like a jerking leap, and oh! Opening its clenched face from his outstretched neck",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s155",
+      "title": "And giving that fragile yell, that scream,",
+      "place": "And giving that fragile yell, that scream,",
+      "reentry": "Super-audible, From his pink, cleft, old-man's mouth,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s156",
+      "title": "Giving up the ghost,",
+      "place": "Giving up the ghost,",
+      "reentry": "Or screaming in Pentecost, receiving the ghost.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s157",
+      "title": "His scream, and his moment's subsidence,",
+      "place": "His scream, and his moment's subsidence,",
+      "reentry": "The moment of eternal silence, Yet unreleased, and after the moment, the sudden, startling jerk of coition, and at once",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s158",
+      "title": "The inexpressible faint yell--",
+      "place": "The inexpressible faint yell--",
+      "reentry": "And so on, till the last plasm of my body was melted back To the primeval rudiments of life, and the secret.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s159",
+      "title": "So he tups, and screams",
+      "place": "So he tups, and screams",
+      "reentry": "Time after time that frail, torn scream After each jerk, the longish interval,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s160",
+      "title": "The tortoise eternity,",
+      "place": "The tortoise eternity,",
+      "reentry": "Agelong, reptilian persistence, Heart-throb, slow heart-throb, persistent for the next spasm.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s161",
+      "title": "I remember, when I was a boy,",
+      "place": "I remember, when I was a boy,",
+      "reentry": "I heard the scream of a frog, which was caught with his foot in the mouth of an up-starting snake;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s162",
+      "title": "I remember when I first heard bull-frogs break",
+      "place": "I remember when I first heard bull-frogs break",
+      "reentry": "into sound in the spring; I remember hearing a wild goose out of the throat of night",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s163",
+      "title": "Cry loudly, beyond the lake of waters;",
+      "place": "Cry loudly, beyond the lake of waters;",
+      "reentry": "I remember the first time, out of a bush in the darkness, a nightingale's piercing cries and gurgles startled the depths of my soul;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s164",
+      "title": "I remember the scream of a rabbit as I went",
+      "place": "I remember the scream of a rabbit as I went",
+      "reentry": "through a wood at midnight; I remember the heifer in her heat, blorting and blorting through the hours, persistent and irrepressible;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s165",
+      "title": "I remember my first terror hearing the howl of",
+      "place": "I remember my first terror hearing the howl of",
+      "reentry": "weird, amorous cats; I remember the scream of a terrified, injured horse, the sheet-lightning",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s166",
+      "title": "And running away from the sound of a woman in",
+      "place": "And running away from the sound of a woman in",
+      "reentry": "labor, something like an owl whooing, And listening inwardly to the first bleat of a lamb,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s167",
+      "title": "The first wail of an infant,",
+      "place": "The first wail of an infant,",
+      "reentry": "And my mother singing to herself, And the first tenor singing of the passionate throat of a young collier, who has long since drunk himself to death,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s168",
+      "title": "The first elements of foreign speech",
+      "place": "The first elements of foreign speech",
+      "reentry": "On wild dark lips.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s169",
+      "title": "And more than all these,",
+      "place": "And more than all these,",
+      "reentry": "And less than all these, This last,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s170",
+      "title": "Strange, faint coition yell",
+      "place": "Strange, faint coition yell",
+      "reentry": "Of the male tortoise at extremity, Tiny from under the very edge of the farthest far-off horizon of life.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s171",
+      "title": "The cross,",
+      "place": "The cross,",
+      "reentry": "The wheel on which our silence first is broken, Sex, which breaks up our integrity, our single inviolability, our deep silence",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s172",
+      "title": "Tearing a cry from us",
+      "place": "Tearing a cry from us",
+      "reentry": "Sex, which breaks us into voice, sets us calling across the deeps, calling, calling for the complement,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s173",
+      "title": "Singing, and calling, and singing again, being",
+      "place": "Singing, and calling, and singing again, being",
+      "reentry": "answered, having found.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s174",
+      "title": "Torn, to become whole again, after long seeking",
+      "place": "Torn, to become whole again, after long seeking",
+      "reentry": "for what is lost, The same cry from the tortoise as from Christ, the Osiris-cry of abandonment,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s175",
+      "title": "That which is whole, torn asunder,",
+      "place": "That which is whole, torn asunder,",
+      "reentry": "That which is in part, finding its whole again throughout the universe.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Baby tortoise! The first day to heave your feet little by little from the shell,"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "And remain lapsed on earth, Not quite alive."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "To open your tiny beak-mouth, that looks as if it would never open,"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "To lift the upper hawk-beak from the lower base And reach your skinny little neck"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "herbage, Alone, small insect,"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Slow one."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "And move on your slow, solitary hunt. Your bright, dark little eye,"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Under its slow lid, tiny baby tortoise, So indomitable."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "You draw your head forward, slowly, from your little wimple"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "pinned toes, Rowing slowly forward."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Rather like a baby working its limbs,"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "And a baby makes none."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "And the long ages, and the lingering chill Make you pause to yawn,"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Suddenly beak-shaped, and very wide, like some suddenly gaping pincers;"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "Then close the wedge of your little mountain front,"
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Do you wonder at the world, as slowly you turn your head in its wimple"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Or is sleep coming over you again, The non-life?"
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "Are you able to wonder?"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "the first life Looking round"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "Which had seemed invincible?"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "And the fine brilliance of your so tiny eye."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "Challenger."
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "What a huge vast inanimate it is, that you must row against,"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "Challenger."
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "No bigger than my thumb-nail, Buon viaggio."
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "Set forth, little Titan, under your battle-shield."
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Inanimate universe; And you are slowly moving, pioneer, you alone."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "troubled sunshine, Stoic, Ulyssean atom;"
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Voiceless little bird,"
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "In the slow dignity of your eternal pause. Alone, with no sense of being alone,"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "Fulfilled of the slow passion of pitching through immemorial ages"
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "Over the garden earth,"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "Over the edge of all things."
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "Traveller,"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "Like a gentleman in a long-skirted coat."
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "Invincible fore-runner."
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "Goes deeper in than we know, Deeper into life;"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "And through the bone."
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "The scales are locked in an arch like a bridge, Scale-lapping, like a lobster's sections"
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "Then crossways down his sides"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "Five, and five again, and five again, And round the edges twenty-five little ones,"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "Four, and a keystone;"
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "Four, and a keystone; Then twenty-four, and a tiny little keystone."
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "counters on the living back Of the baby tortoise;"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "tablet, Not in stone, like the Judean Lord, or bronze, but in life-clouded, life-rosy tortoise-shell."
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "Stepping, wee mite, in his loose trousers Under all the eternal dome of mathematical law."
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "Threes and fours and twelves, All the volte face of decimals, The whirligig of dozens and the pinnacle of seven,"
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "The kicking little beetle, And there again, on his shell-tender, earth-touching belly,"
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "eternal cross."
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "On each side, two above, on each side, two below The dark bar horizontal."
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "Through his cross-wise cloven psyche, Through his five-fold complex-nature."
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "Four pin-point toes, and a problematical thumb- piece,"
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "head,"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "mathematics."
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "Of the baby tortoise."
+    },
+    {
+      "id": "s52-1",
+      "sceneId": "s52",
+      "text": "Outward and visible indication of the plan within,"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "individual creature Blotted out"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "This little dome, this pediment Of all creation,"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "Bud of the universe, Pediment of life."
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "Whither away, brisk egg?"
+    },
+    {
+      "id": "s56-1",
+      "sceneId": "s56",
+      "text": "His mother deposited him on the soil as if he were no more than droppings, And now he scuffles tinily past her as if she were an old rusty tin."
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "He veers round the slow great mound of her."
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "It is no use my saying to him in an emotional voice: \"This is your Mother, she laid you when you were an egg.\""
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "what have I to do with thee?\" He wearily looks the other way,"
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "still, Each with the utmost apathy, Incognizant, Unaware, Nothing."
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "He snaps when I offer him his offspring, Just as he snaps when I poke a bit of stick at him, Because he is irascible this morning, an irascible tortoise"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "fatherliness."
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "And three little brothers, And all rambling aimless, like little perambulating pebbles scattered in the garden,"
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "tins."
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "of course, But family feeling there is none, not even the beginnings."
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "Little tortoise."
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "Over the clods of the autumn, wind-chilled sunshine,"
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "Does he look for a companion?"
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "He doesn't know he is alone; Isolation is his birthright,"
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "To row forward, and reach himself tall on spiny toes,"
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "afraid of the night, To crop a little substance,"
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "Basta!"
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "Think of it, in a garden of inert clods A brisk, brindled little tortoise, all to himself-- Croesus!"
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "To roam, and feel the slow heart beat Tortoise-wise, the first bell sounding From the warm blood, in the dark-creation morning."
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "Slow, and unquestioned, And inordinately there, O stoic!"
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "existence, Ringing the soundless bell of his presence in chaos,"
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "Decidedly arrogantly."
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "And rather dirty, A little sardonic-looking, as if domesticity had driven her to it."
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "random in the garden once a year And put up with her husband,"
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "She likes to eat."
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "legs, When food is going."
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "She snaps the soft bread from my hand in great mouthfuls,"
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "pristine face Into an enormously wide-beaked mouth"
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "And gulping at more than she can swallow, and working her thick, soft tongue,"
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "O Mistress, Mistress,"
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "Your eye is very dark, very bright, And it never softens"
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "She knows,"
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "Yet she sees me not; Her bright eye sees, but not me, not anything,"
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "Reptile mistress."
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "mouth, She has no qualm when she catches my finger in her steel overlapping gums,"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "are nothing to her, She does not even know she is nipping me with her curved beak."
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "it in horror away."
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "You are almost too large, I am almost frightened. He is much smaller,"
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "And ridiculously small."
+    },
+    {
+      "id": "s94-1",
+      "sceneId": "s94",
+      "text": "Her laconic eye has an earthy, materialistic look,"
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "His wimple, his blunt-prowed face,"
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "scaled, striving legs, So striving, striving,"
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "And he has a cruel scar on his shell."
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "Running beside her like a dog, biting her earthy, splay feet,"
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "Which she drags apathetic away, though without retreating into her shell."
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "And with a grim, reptile determination, Cold, voiceless age-after-age behind him, serpents' long obstinacy"
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "Little old man"
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "opportunity, Parting his steel-trap face, so suddenly, and seizing her scaly ankle,"
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "Letting go at last as she drags away, And closing his steel-trap face."
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "Alas, what a fool he looks in this scuffle."
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "The lonely rambler, the stoic, dignified stalker through chaos,"
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "Enveloped in isolation, Forerunner."
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "Alas, the spear is through the side of his isolation."
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "Doomed, in the long crucifixion of desire, to seek his consummation beyond himself."
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "He, so finished and immune, now broken into desirous fragmentariness,"
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "In his effort toward completion again."
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "The mysterious bull tore him at adolescence into pieces,"
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "ignominiously."
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "Of that mud-hovel of his slowly-rambling spouse, Like some unhappy bull at the tail of a cow,"
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "persistence, Suddenly seizing the ugly ankle as she stretches out to walk,"
+    },
+    {
+      "id": "s115-0",
+      "sceneId": "s115",
+      "text": "Or, if it happen to show, at her pointed, heavy tail Beneath the low-dropping back-board of her shell."
+    },
+    {
+      "id": "s116-0",
+      "sceneId": "s116",
+      "text": "Hers huge, his small; Their splay feet rambling and rowing like paddles,"
+    },
+    {
+      "id": "s117-0",
+      "sceneId": "s117",
+      "text": "In the race of love-- Two tortoises,"
+    },
+    {
+      "id": "s118-0",
+      "sceneId": "s118",
+      "text": "She seems earthily apathetic,"
+    },
+    {
+      "id": "s119-0",
+      "sceneId": "s119",
+      "text": "I heard a woman pitying her, pitying the Mere Tortue."
+    },
+    {
+      "id": "s120-0",
+      "sceneId": "s120",
+      "text": "\"He pesters her and torments her,\" said the woman."
+    },
+    {
+      "id": "s121-0",
+      "sceneId": "s121",
+      "text": "say I."
+    },
+    {
+      "id": "s122-0",
+      "sceneId": "s122",
+      "text": "He is dumb, he is visionless, Conceptionless."
+    },
+    {
+      "id": "s123-0",
+      "sceneId": "s123",
+      "text": "As her earthen mound moves on, But he catches the folds of vulnerable, leathery skin,"
+    },
+    {
+      "id": "s124-0",
+      "sceneId": "s124",
+      "text": "And drags at these with his beak, Drags and drags and bites,"
+    },
+    {
+      "id": "s125-0",
+      "sceneId": "s125",
+      "text": "mound along."
+    },
+    {
+      "id": "s126-0",
+      "sceneId": "s126",
+      "text": "He does not look at her, nor sniff at her, No, not even sniff at her, his nose is blank."
+    },
+    {
+      "id": "s127-0",
+      "sceneId": "s127",
+      "text": "That work beneath her while she sprawls along In her ungainly pace,"
+    },
+    {
+      "id": "s128-0",
+      "sceneId": "s128",
+      "text": "Beneath the earth-soiled hovel in which she moves."
+    },
+    {
+      "id": "s129-0",
+      "sceneId": "s129",
+      "text": "And catches her trouser-legs in his beak Suddenly, or her skinny limb,"
+    },
+    {
+      "id": "s130-0",
+      "sceneId": "s130",
+      "text": "Like a dog, Only agelessly silent, with a reptile's awful persistency."
+    },
+    {
+      "id": "s131-0",
+      "sceneId": "s131",
+      "text": "Dragged out of an eternity of silent isolation And doomed to partiality, partial being,"
+    },
+    {
+      "id": "s132-0",
+      "sceneId": "s132",
+      "text": "Want, Self-exposure, hard humiliation, need to add himself on to her."
+    },
+    {
+      "id": "s133-0",
+      "sceneId": "s133",
+      "text": "Forerunner, Now suddenly distracted into this mazy sidetrack,"
+    },
+    {
+      "id": "s134-0",
+      "sceneId": "s134",
+      "text": "This grim necessity from within."
+    },
+    {
+      "id": "s135-0",
+      "sceneId": "s135",
+      "text": "As she moves eternally slowly away? Or is he driven against her with a bang, like a bird flying in the dark against a window,"
+    },
+    {
+      "id": "s136-0",
+      "sceneId": "s136",
+      "text": "The awful concussion, And the still more awful need to persist, to follow, follow, continue, Driven, after aeons of pristine, fore-god-like singleness and oneness,"
+    },
+    {
+      "id": "s137-0",
+      "sceneId": "s137",
+      "text": "Driven away from himself into her tracks, Forced to crash against her."
+    },
+    {
+      "id": "s138-0",
+      "sceneId": "s138",
+      "text": "Little gentleman, Sorry plight,"
+    },
+    {
+      "id": "s139-0",
+      "sceneId": "s139",
+      "text": "Save that, having come with you so far, We will go on to the end. J"
+    },
+    {
+      "id": "s140-0",
+      "sceneId": "s140",
+      "text": "I said he was dumb, Yet I've heard him cry."
+    },
+    {
+      "id": "s141-0",
+      "sceneId": "s141",
+      "text": "Out of life's unfathomable dawn, Far off, so far, like a madness, under the horizon's dawning rim,"
+    },
+    {
+      "id": "s142-0",
+      "sceneId": "s142",
+      "text": "Tortoise *in extremis*."
+    },
+    {
+      "id": "s143-0",
+      "sceneId": "s143",
+      "text": "Why were we not left rounded off, and finished in ourselves,"
+    },
+    {
+      "id": "s144-0",
+      "sceneId": "s144",
+      "text": "As he certainly began, so perfectly alone?"
+    },
+    {
+      "id": "s145-0",
+      "sceneId": "s145",
+      "text": "Or did it sound on the plasm direct?"
+    },
+    {
+      "id": "s146-0",
+      "sceneId": "s146",
+      "text": "A scream, A yell,"
+    },
+    {
+      "id": "s147-0",
+      "sceneId": "s147",
+      "text": "A paean, A death-agony,"
+    },
+    {
+      "id": "s148-0",
+      "sceneId": "s148",
+      "text": "A submission, All tiny, tiny, far away, reptile under the first dawn."
+    },
+    {
+      "id": "s149-0",
+      "sceneId": "s149",
+      "text": "reptilian, Why was the veil torn?"
+    },
+    {
+      "id": "s150-0",
+      "sceneId": "s150",
+      "text": "The male soul's membrane Torn with a shriek half music, half horror."
+    },
+    {
+      "id": "s150-1",
+      "sceneId": "s150",
+      "text": "Crucifixion."
+    },
+    {
+      "id": "s151-0",
+      "sceneId": "s151",
+      "text": "that dense female, Mounted and tense, spread-eagle, out-reaching out of the shell"
+    },
+    {
+      "id": "s152-0",
+      "sceneId": "s152",
+      "text": "Long neck, and long vulnerable limbs extruded, spread-eagle over her house-roof,"
+    },
+    {
+      "id": "s153-0",
+      "sceneId": "s153",
+      "text": "beneath her walls, Reaching and gripping tense, more reaching anguish in uttermost tension"
+    },
+    {
+      "id": "s154-0",
+      "sceneId": "s154",
+      "text": "like a jerking leap, and oh! Opening its clenched face from his outstretched neck"
+    },
+    {
+      "id": "s155-0",
+      "sceneId": "s155",
+      "text": "Super-audible, From his pink, cleft, old-man's mouth,"
+    },
+    {
+      "id": "s156-0",
+      "sceneId": "s156",
+      "text": "Or screaming in Pentecost, receiving the ghost."
+    },
+    {
+      "id": "s157-0",
+      "sceneId": "s157",
+      "text": "The moment of eternal silence, Yet unreleased, and after the moment, the sudden, startling jerk of coition, and at once"
+    },
+    {
+      "id": "s158-0",
+      "sceneId": "s158",
+      "text": "And so on, till the last plasm of my body was melted back To the primeval rudiments of life, and the secret."
+    },
+    {
+      "id": "s159-0",
+      "sceneId": "s159",
+      "text": "Time after time that frail, torn scream After each jerk, the longish interval,"
+    },
+    {
+      "id": "s160-0",
+      "sceneId": "s160",
+      "text": "Agelong, reptilian persistence, Heart-throb, slow heart-throb, persistent for the next spasm."
+    },
+    {
+      "id": "s161-0",
+      "sceneId": "s161",
+      "text": "I heard the scream of a frog, which was caught with his foot in the mouth of an up-starting snake;"
+    },
+    {
+      "id": "s162-0",
+      "sceneId": "s162",
+      "text": "into sound in the spring; I remember hearing a wild goose out of the throat of night"
+    },
+    {
+      "id": "s163-0",
+      "sceneId": "s163",
+      "text": "I remember the first time, out of a bush in the darkness, a nightingale's piercing cries and gurgles startled the depths of my soul;"
+    },
+    {
+      "id": "s164-0",
+      "sceneId": "s164",
+      "text": "through a wood at midnight; I remember the heifer in her heat, blorting and blorting through the hours, persistent and irrepressible;"
+    },
+    {
+      "id": "s165-0",
+      "sceneId": "s165",
+      "text": "weird, amorous cats; I remember the scream of a terrified, injured horse, the sheet-lightning"
+    },
+    {
+      "id": "s166-0",
+      "sceneId": "s166",
+      "text": "labor, something like an owl whooing, And listening inwardly to the first bleat of a lamb,"
+    },
+    {
+      "id": "s167-0",
+      "sceneId": "s167",
+      "text": "And my mother singing to herself, And the first tenor singing of the passionate throat of a young collier, who has long since drunk himself to death,"
+    },
+    {
+      "id": "s168-0",
+      "sceneId": "s168",
+      "text": "On wild dark lips."
+    },
+    {
+      "id": "s169-0",
+      "sceneId": "s169",
+      "text": "And less than all these, This last,"
+    },
+    {
+      "id": "s170-0",
+      "sceneId": "s170",
+      "text": "Of the male tortoise at extremity, Tiny from under the very edge of the farthest far-off horizon of life."
+    },
+    {
+      "id": "s171-0",
+      "sceneId": "s171",
+      "text": "The wheel on which our silence first is broken, Sex, which breaks up our integrity, our single inviolability, our deep silence"
+    },
+    {
+      "id": "s172-0",
+      "sceneId": "s172",
+      "text": "Sex, which breaks us into voice, sets us calling across the deeps, calling, calling for the complement,"
+    },
+    {
+      "id": "s173-0",
+      "sceneId": "s173",
+      "text": "answered, having found."
+    },
+    {
+      "id": "s174-0",
+      "sceneId": "s174",
+      "text": "for what is lost, The same cry from the tortoise as from Christ, the Osiris-cry of abandonment,"
+    },
+    {
+      "id": "s175-0",
+      "sceneId": "s175",
+      "text": "That which is in part, finding its whole again throughout the universe."
+    }
+  ]
+}

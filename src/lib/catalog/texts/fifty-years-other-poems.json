@@ -1,0 +1,1471 @@
+{
+  "id": "fifty-years-other-poems",
+  "title": "Fifty Years, & Other Poems",
+  "author": "James Weldon Johnson",
+  "year": "1917",
+  "note": "Project Gutenberg 17884",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "*Sunrise in the Tropics*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "*Los Cigarillos*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "*Teestay*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Chapter IV",
+      "place": "Chapter IV",
+      "reentry": "*The Lottery Girl*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Chapter V",
+      "place": "Chapter V",
+      "reentry": "*The Dancing Girl*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Chapter VI",
+      "place": "Chapter VI",
+      "reentry": "*Sunset in the Tropics*",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "*Sunrise in the Tropics*"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Sol, Sol, mighty lord of the tropic zone, Here I wait with the trembling stars To see thee once more take thy throne."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "There the patient palm tree watching Waits to say, \"Good morn\" to thee, And a throb of expectation Pulses through the earth and me."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Now, o'er nature falls a hush, Look! the East is all a-blush; And a growing crimson crest Dims the late stars in the west; Now, a flood of golden light Sweeps across the silver night, Swift the pale moon fades away Before the light-girt King of Day, See! the miracle is done! Once more behold! The Sun!"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "*Los Cigarillos*"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "This is the land of the dark-eyed *gente*, Of the *dolce far niente*, Where we dream away Both the night and day, At night-time in sleep our dreams we invoke, Our dreams come by day through the redolent smoke, As it lazily curls, And slowly unfurls From our lips, And the tips Of our fragrant *cigarillos*. For life in the tropics is only a joke, So we pass it in dreams, and we pass it in smoke, Smoke--smoke--smoke."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Tropical constitutions Call for occasional revolutions; But after that's through, Why there's nothing to do But smoke--smoke;"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "For life in the tropics is only a joke, So we pass it in dreams, and we pass it in smoke, Smoke--smoke--smoke."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "*Teestay*"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Of tropic sensations, the worst Is, *sin duda*, the tropical thirst."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "When it starts in your throat and constantly grows, Till you feel that it reaches down to your toes, When your mouth tastes like fur And your tongue turns to dust, There's but one thing to do, And do it you must, Drink *teestay*."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "*Teestay*, a drink with a history, A delicious, delectable mystery, \"*Cinco centavos el vaso, senor*,\" If you take one, you will surely want more."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "*Teestay, teestay*, The national drink on a feast day; How it coolingly tickles, As downward it trickles, *Teestay, teestay*."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "And you wish, as you take it down at a quaff, That your neck was constructed a la giraffe. *Teestay, teestay*."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "*The Lottery Girl*"
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "\"Lottery, lottery, Take a chance at the lottery? Take a ticket, Or, better, take two; Who knows what the future May hold for you? Lottery, lottery, Take a chance at the lottery?\""
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Oh, limpid-eyed girl, I would take every chance, If only the prize Were a love-flashing glance From your fathomless eyes."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "\"Lottery, lottery, Try your luck at the lottery? Consider the size Of the capital prize, And take tickets For the lottery. Tickets, *senor*? Tickets, *senor*? Take a chance at the lottery?\""
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Oh, crimson-lipped girl, With the magical smile, I would count that the gamble Were well worth the while, Not a chance would I miss, If only the prize Were a honey-bee kiss Gathered in sips From those full-ripened lips, And a love-flashing glance From your eyes."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "*The Dancing Girl*"
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Do you know what it is to dance? Perhaps, you do know, in a fashion; But by dancing I mean, Not what's generally seen, But dancing of fire and passion, Of fire and delirious passion."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "With a dusky-haired *senorita*, Her dark, misty eyes near your own, And her scarlet-red mouth, Like a rose of the south, The reddest that ever was grown, So close that you catch Her quick-panting breath As across your own face it is blown, With a sigh, and a moan."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Ah! that is dancing, As here by the Carib it's known."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "Now, whirling and twirling Like furies we go; Now, soft and caressing And sinuously slow; With an undulating motion, Like waves on a breeze-kissed ocean:-- And the scarlet-red mouth Is nearer your own, And the dark, misty eyes Still softer have grown."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "Ah! that is dancing, that is loving, As here by the Carib they're known."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "*Sunset in the Tropics*"
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "A silver flash from the sinking sun, Then a shot of crimson across the sky That, bursting, lets a thousand colors fly And riot among the clouds; they run, Deepening in purple, flaming in gold, Changing, and opening fold after fold, Then fading through all of the tints of the rose into gray, Till, taking quick fright at the coming night, They rush out down the west, In hurried quest Of the fleeing day."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "Now above where the tardiest color flares a moment yet, One point of light, now two, now three are set To form the starry stairs,-- And, in her fire-fly crown, Queen Night, on velvet slippered feet, comes softly down."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "And the Greatest of These Is War"
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "Around the council-board of Hell, with Satan at their head, The Three Great Scourges of humanity sat. Gaunt Famine, with hollow cheek and voice, arose and spoke,-- \"O, Prince, I have stalked the earth, And my victims by ten thousands I have slain, I have smitten old and young. Mouths of the helpless old moaning for bread, I have filled with dust; And I have laughed to see a crying babe tug at the shriveling breast Of its mother, dead and cold. I have heard the cries and prayers of men go up to a tearless sky, And fall back upon an earth of ashes; But, heedless, I have gone on with my work. 'Tis thus, O, Prince, that I have scourged mankind.\""
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "And Satan nodded his head."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "Pale Pestilence, with stenchful breath, then spoke and said,-- \"Great Prince, my brother, Famine, attacks the poor. He is most terrible against the helpless and the old. But I have made a charnel-house of the mightiest cities of men. When I strike, neither their stores of gold or of grain avail. With a breath I lay low their strongest, and wither up their fairest. I come upon them without warning, lancing invisible death. From me they flee with eyes and mouths distended; I poison the air for which they gasp, and I strike them down fleeing. 'Tis thus, great Prince, that I have scourged mankind.\""
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "And Satan nodded his head."
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "Then the red monster, War, rose up and spoke,-- His blood-shot eyes glared 'round him, and his thundering voice Echoed through the murky vaults of Hell.-- \"O, mighty Prince, my brothers, Famine and Pestilence, Have slain their thousands and ten thousands,--true; But the greater their victories have been, The more have they wakened in Man's breast The God-like attributes of sympathy, of brotherhood and love And made of him a searcher after wisdom. But I arouse in Man the demon and the brute, I plant black hatred in his heart and red revenge. From the summit of fifty thousand years of upward climb I haul him down to the level of the start, back to the wolf. I give him claws. I set his teeth into his brother's throat. I make him drunk with his brother's blood. And I laugh ho! ho! while he destroys himself. O, mighty Prince, not only do I slay, But I draw Man hellward.\""
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "And Satan smiled, stretched out his hand, and said,-- \"O War, of all the scourges of humanity, I crown you chief.\""
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "And Hell rang with the acclamation of the Fiends."
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "A MID-DAY Dreamer"
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "I love to sit alone, and dream, And dream, and dream; In fancy's boat to softly glide Along some stream Where fairy palaces of gold And crystal bright Stand all along the glistening shore: A wondrous sight."
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "My craft is built of ivory, With silver oars, The sails are spun of golden threads, And priceless stores Of precious gems adorn its prow, And 'round its mast An hundred silken cords are set To hold it fast."
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "My galley-slaves are sprightly elves Who, as they row, And as their shining oars they swing Them to and fro, Keep time to music wafted on The scented air, Made by the mermaids as they comb Their golden hair."
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "And I the while lie idly back, And dream, and dream, And let them row me where they will Adown the stream."
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "THE Temptress"
+    },
+    {
+      "id": "s5-17",
+      "sceneId": "s5",
+      "text": "Old Devil, when you come with horns and tail, With diabolic grin and crafty leer; I say, such bogey-man devices wholly fail To waken in my heart a single fear."
+    },
+    {
+      "id": "s5-18",
+      "sceneId": "s5",
+      "text": "But when you wear a form I know so well, A form so human, yet so near divine; 'Tis then I fall beneath the magic of your spell, 'Tis then I know the vantage is not mine."
+    },
+    {
+      "id": "s5-19",
+      "sceneId": "s5",
+      "text": "Ah! when you take your horns from off your head, And soft and fragrant hair is in their place; I must admit I fear the tangled path I tread When that dear head is laid against my face."
+    },
+    {
+      "id": "s5-20",
+      "sceneId": "s5",
+      "text": "And at what time you change your baleful eyes For stars that melt into the gloom of night, All of my courage, my dear fellow, quickly flies; I know my chance is slim to win the fight."
+    },
+    {
+      "id": "s5-21",
+      "sceneId": "s5",
+      "text": "And when, instead of charging down to wreck Me on a red-hot pitchfork in your hand, You throw a pair of slender arms about my neck, I dare not trust the ground on which I stand."
+    },
+    {
+      "id": "s5-22",
+      "sceneId": "s5",
+      "text": "Whene'er in place of using patent wile, Or trying to frighten me with horrid grin, You tempt me with two crimson lips curved in a smile; Old Devil, I must really own, you win."
+    },
+    {
+      "id": "s5-23",
+      "sceneId": "s5",
+      "text": "Ghosts of the Old Year"
+    },
+    {
+      "id": "s5-24",
+      "sceneId": "s5",
+      "text": "The snow has ceased its fluttering flight, The wind sunk to a whisper light, An ominous stillness fills the night, A pause--a hush. At last, a sound that breaks the spell, Loud, clanging mouthings of a bell, That through the silence peal and swell, And roll, and rush."
+    },
+    {
+      "id": "s5-25",
+      "sceneId": "s5",
+      "text": "What does this brazen tongue declare, That falling on the midnight air Brings to my heart a sense of care Akin to fright? 'Tis telling that the year is dead, The New Year come, the Old Year fled, Another leaf before me spread On which to write."
+    },
+    {
+      "id": "s5-26",
+      "sceneId": "s5",
+      "text": "It tells the deeds that were not done, It tells of races never run, Of victories that were not won, Barriers unleaped. It tells of many a squandered day, Of slighted gems and treasured clay, Of precious stores not laid away, Of fields unreaped."
+    },
+    {
+      "id": "s5-27",
+      "sceneId": "s5",
+      "text": "And so the years go swiftly by, Each, coming, brings ambitions high, And each, departing, leaves a sigh Linked to the past. Large resolutions, little deeds; Thus, filled with aims unreached, life speeds Until the blotted record reads, \"Failure!\" at last."
+    },
+    {
+      "id": "s5-28",
+      "sceneId": "s5",
+      "text": "The Ghost of Deacon Brown"
+    },
+    {
+      "id": "s5-29",
+      "sceneId": "s5",
+      "text": "In a backwoods town Lived Deacon Brown, And he was a miser old; He would trust no bank, So he dug, and sank In the ground a box of gold, Down deep in the ground a box of gold."
+    },
+    {
+      "id": "s5-30",
+      "sceneId": "s5",
+      "text": "He hid his gold, As has been told, He remembered that he did it; But sad to say, On the very next day, He forgot just where he hid it: To find his gold he tried and tried Till he grew faint and sick, and died."
+    },
+    {
+      "id": "s5-31",
+      "sceneId": "s5",
+      "text": "Then on each dark and gloomy night A form in phosphorescent white, A genuine hair-raising sight, Would wander through the town. And as it slowly roamed around, With a spade it dug each foot of ground; So the folks about Said there was no doubt 'Twas the ghost of Deacon Brown."
+    },
+    {
+      "id": "s5-32",
+      "sceneId": "s5",
+      "text": "Around the church This Ghost would search, And whenever it would see The passers-by Take wings and fly It would laugh in ghostly glee, Hee, hee!--it would laugh in ghostly glee."
+    },
+    {
+      "id": "s5-33",
+      "sceneId": "s5",
+      "text": "And so the town Went quickly down, For they said that it was haunted; And doors and gates, So the story states, Bore a notice, \"Tenants wanted.\""
+    },
+    {
+      "id": "s5-34",
+      "sceneId": "s5",
+      "text": "And the town is now for let, But the ghost is digging yet."
+    },
+    {
+      "id": "s5-35",
+      "sceneId": "s5",
+      "text": "\"Lazy\""
+    },
+    {
+      "id": "s5-36",
+      "sceneId": "s5",
+      "text": "Some men enjoy the constant strife Of days with work and worry rife, But that is not my dream of life: I think such men are crazy. For me, a life with worries few, A job of nothing much to do, Just pelf enough to see me through: I fear that I am lazy."
+    },
+    {
+      "id": "s5-37",
+      "sceneId": "s5",
+      "text": "On winter mornings cold and drear, When six o'clock alarms I hear, 'Tis then I love to shift my ear, And hug my downy pillows. When in the shade it's ninety-three, No job in town looks good to me, I'd rather loaf down by the sea, And watch the foaming billows."
+    },
+    {
+      "id": "s5-38",
+      "sceneId": "s5",
+      "text": "Some people think the world's a school, Where labor is the only rule; But I'll not make myself a mule, And don't you ever doubt it. I know that work may have its use, But still I feel that's no excuse For turning it into abuse; What do *you* think about it?"
+    },
+    {
+      "id": "s5-39",
+      "sceneId": "s5",
+      "text": "Let others fume and sweat and boil, And scratch and dig for golden spoil, And live the life of work and toil, Their lives to labor giving. But what is gold when life is sped, And life is short, as has been said, And we are such a long time dead, I'll spend my life in living."
+    },
+    {
+      "id": "s5-40",
+      "sceneId": "s5",
+      "text": "Omar"
+    },
+    {
+      "id": "s5-41",
+      "sceneId": "s5",
+      "text": "Old Omar, jolly sceptic, it may be That, after all, you found the magic key To life and all its mystery, and I Must own you have almost persuaded me."
+    },
+    {
+      "id": "s5-42",
+      "sceneId": "s5",
+      "text": "Deep in the Quiet Wood"
+    },
+    {
+      "id": "s5-43",
+      "sceneId": "s5",
+      "text": "Are you bowed down in heart? Do you but hear the clashing discords and the din of life? Then come away, come to the peaceful wood, Here bathe your soul in silence. Listen! Now, From out the palpitating solitude Do you not catch, yet faint, elusive strains? They are above, around, within you, everywhere. Silently listen! Clear, and still more clear, they come. They bubble up in rippling notes, and swell in singing tones. Now let your soul run the whole gamut of the wondrous scale Until, responsive to the tonic chord, It touches the diapason of God's grand cathedral organ, Filling earth for you with heavenly peace And holy harmonies."
+    },
+    {
+      "id": "s5-44",
+      "sceneId": "s5",
+      "text": "Voluptas"
+    },
+    {
+      "id": "s5-45",
+      "sceneId": "s5",
+      "text": "To chase a never-reached mirage Across the hot, white sand, And choke and die, while gazing on Its green and watered strand."
+    },
+    {
+      "id": "s5-46",
+      "sceneId": "s5",
+      "text": "The Word of an Engineer"
+    },
+    {
+      "id": "s5-47",
+      "sceneId": "s5",
+      "text": "\"She's built of steel From deck to keel, And bolted strong and tight; In scorn she'll sail The fiercest gale, And pierce the darkest night."
+    },
+    {
+      "id": "s5-48",
+      "sceneId": "s5",
+      "text": "\"The builder's art Has proved each part Throughout her breadth and length; Deep in the hulk, Of her mighty bulk, Ten thousand Titans' strength.\""
+    },
+    {
+      "id": "s5-49",
+      "sceneId": "s5",
+      "text": "The tempest howls, The Ice Wolf prowls, The winds they shift and veer, But calm I sleep, And faith I keep In the word of an engineer."
+    },
+    {
+      "id": "s5-50",
+      "sceneId": "s5",
+      "text": "Along the trail Of the slender rail The train, like a nightmare, flies And dashes on Through the black-mouthed yawn Where the cavernous tunnel lies."
+    },
+    {
+      "id": "s5-51",
+      "sceneId": "s5",
+      "text": "Over the ridge, Across the bridge, Swung twixt the sky and hell, On an iron thread Spun from the head Of the man in a draughtsman's cell."
+    },
+    {
+      "id": "s5-52",
+      "sceneId": "s5",
+      "text": "And so we ride Over land and tide, Without a thought of fear-- *Man never had The faith in God That he has in an engineer!*"
+    },
+    {
+      "id": "s5-53",
+      "sceneId": "s5",
+      "text": "Life"
+    },
+    {
+      "id": "s5-54",
+      "sceneId": "s5",
+      "text": "Out of the infinite sea of eternity To climb, and for an instant stand Upon an island speck of time."
+    },
+    {
+      "id": "s5-55",
+      "sceneId": "s5",
+      "text": "From the impassible peace of the darkness To wake, and blink at the garish light Through one short hour of fretfulness."
+    },
+    {
+      "id": "s5-56",
+      "sceneId": "s5",
+      "text": "Sleep"
+    },
+    {
+      "id": "s5-57",
+      "sceneId": "s5",
+      "text": "O Sleep, thou kindest minister to man, Silent distiller of the balm of rest, How wonderful thy power, when naught else can, To soothe the torn and sorrow-laden breast! When bleeding hearts no comforter can find, When burdened souls droop under weight of woe, When thought is torture to the troubled mind, When grief-relieving tears refuse to flow; 'Tis then thou comest on soft-beating wings, And sweet oblivion's peace from them is shed; But ah, the old pain that the waking brings! That lives again so soon as thou art fled!"
+    },
+    {
+      "id": "s5-58",
+      "sceneId": "s5",
+      "text": "Man, why should thought of death cause thee to weep; Since death be but an endless, dreamless sleep?"
+    },
+    {
+      "id": "s5-59",
+      "sceneId": "s5",
+      "text": "Prayer AT Sunrise"
+    },
+    {
+      "id": "s5-60",
+      "sceneId": "s5",
+      "text": "O mighty, powerful, dark-dispelling sun, Now thou art risen, and thy day begun. How shrink the shrouding mists before thy face, As up thou spring'st to thy diurnal race! How darkness chases darkness to the west, As shades of light on light rise radiant from thy crest! For thee, great source of strength, emblem of might, In hours of darkest gloom there is no night. Thou shinest on though clouds hide thee from sight, And through each break thou sendest down thy light."
+    },
+    {
+      "id": "s5-61",
+      "sceneId": "s5",
+      "text": "O greater Maker of this Thy great sun, Give me the strength this one day's race to run, Fill me with light, fill me with sun-like strength, Fill me with joy to rob the day its length. Light from within, light that will outward shine, Strength to make strong some weaker heart than mine, Joy to make glad each soul that feels its touch; Great Father of the sun, I ask this much."
+    },
+    {
+      "id": "s5-62",
+      "sceneId": "s5",
+      "text": "THE Gift TO Sing"
+    },
+    {
+      "id": "s5-63",
+      "sceneId": "s5",
+      "text": "Sometimes the mist overhangs my path, And blackening clouds about me cling; But, oh, I have a magic way To turn the gloom to cheerful day-- I softly sing."
+    },
+    {
+      "id": "s5-64",
+      "sceneId": "s5",
+      "text": "And if the way grows darker still, Shadowed by Sorrow's somber wing, With glad defiance in my throat, I pierce the darkness with a note, And sing, and sing."
+    },
+    {
+      "id": "s5-65",
+      "sceneId": "s5",
+      "text": "I brood not over the broken past, Nor dread whatever time may bring; No nights are dark, no days are long, While in my heart there swells a song, And I can sing."
+    },
+    {
+      "id": "s5-66",
+      "sceneId": "s5",
+      "text": "Morning, Noon and Night"
+    },
+    {
+      "id": "s5-67",
+      "sceneId": "s5",
+      "text": "When morning shows her first faint flush, I think of the tender blush That crept so gently to your cheek When first my love I dared to speak; How, in your glance, a dawning ray Gave promise of love's perfect day."
+    },
+    {
+      "id": "s5-68",
+      "sceneId": "s5",
+      "text": "When, in the ardent breath of noon, The roses with passion swoon; There steals upon me from the air The scent that lurked within your hair; I touch your hand, I clasp your form-- Again your lips are close and warm."
+    },
+    {
+      "id": "s5-69",
+      "sceneId": "s5",
+      "text": "When comes the night with beauteous skies, I think of your tear-dimmed eyes, Their mute entreaty that I stay, Although your lips sent me away; And then falls memory's bitter blight, And dark--so dark becomes the night."
+    },
+    {
+      "id": "s5-70",
+      "sceneId": "s5",
+      "text": "HER Eyes Twin Pools"
+    },
+    {
+      "id": "s5-71",
+      "sceneId": "s5",
+      "text": "Her eyes, twin pools of mystic light, The blend of star-sheen and black night; O'er which, to sound their glamouring haze, A man might bend, and vainly gaze."
+    },
+    {
+      "id": "s5-72",
+      "sceneId": "s5",
+      "text": "Her eyes, twin pools so dark and deep, In which life's ancient mysteries sleep; Wherein, to seek the quested goal, A man might plunge, and lose his soul."
+    },
+    {
+      "id": "s5-73",
+      "sceneId": "s5",
+      "text": "THE Awakening"
+    },
+    {
+      "id": "s5-74",
+      "sceneId": "s5",
+      "text": "I dreamed that I was a rose That grew beside a lonely way, Close by a path none ever chose, And there I lingered day by day. Beneath the sunshine and the show'r I grew and waited there apart, Gathering perfume hour by hour, And storing it within my heart, Yet, never knew, Just why I waited there and grew."
+    },
+    {
+      "id": "s5-75",
+      "sceneId": "s5",
+      "text": "I dreamed that you were a bee That one day gaily flew along, You came across the hedge to me, And sang a soft, love-burdened song. You brushed my petals with a kiss, I woke to gladness with a start, And yielded up to you in bliss The treasured fragrance of my heart; And then I knew That I had waited there for you."
+    },
+    {
+      "id": "s5-76",
+      "sceneId": "s5",
+      "text": "Beauty That Is Never Old"
+    },
+    {
+      "id": "s5-77",
+      "sceneId": "s5",
+      "text": "When buffeted and beaten by life's storms, When by the bitter cares of life oppressed, I want no surer haven than your arms, I want no sweeter heaven than your breast."
+    },
+    {
+      "id": "s5-78",
+      "sceneId": "s5",
+      "text": "When over my life's way there falls the blight Of sunless days, and nights of starless skies; Enough for me, the calm and steadfast light That softly shines within your loving eyes."
+    },
+    {
+      "id": "s5-79",
+      "sceneId": "s5",
+      "text": "The world, for me, and all the world can hold Is circled by your arms; for me there lies, Within the lights and shadows of your eyes, The only beauty that is never old."
+    },
+    {
+      "id": "s5-80",
+      "sceneId": "s5",
+      "text": "Venus IN A Garden"
+    },
+    {
+      "id": "s5-81",
+      "sceneId": "s5",
+      "text": "'Twas at early morning, The dawn was blushing in her purple bed, When in a sweet, embowered garden She, the fairest of the goddesses, The lovely Venus, Roamed amongst the roses white and red. She sought for flowers To make a garland For her golden head."
+    },
+    {
+      "id": "s5-82",
+      "sceneId": "s5",
+      "text": "Snow-white roses, blood-red roses, In that sweet garden close, Offered incense to the goddess: Both the white and the crimson rose."
+    },
+    {
+      "id": "s5-83",
+      "sceneId": "s5",
+      "text": "White roses, red roses, blossoming: But the fair Venus knew The crimson roses had gained their hue From the hearts that for love had bled; And the goddess made a garland Gathered from the roses red."
+    },
+    {
+      "id": "s5-84",
+      "sceneId": "s5",
+      "text": "Vashti"
+    },
+    {
+      "id": "s5-85",
+      "sceneId": "s5",
+      "text": "I sometimes take you in my dreams to a far-off land I used to know, Back in the ages long ago; a land of palms and languid streams."
+    },
+    {
+      "id": "s5-86",
+      "sceneId": "s5",
+      "text": "A land, by night, of jeweled skies, by day, of shores that glistened bright, Within whose arms, outstretched and white, a sapphire sea lay crescent-wise."
+    },
+    {
+      "id": "s5-87",
+      "sceneId": "s5",
+      "text": "Where twilight fell like silver floss, where rose the golden moon half-hid Behind a shadowy pyramid; a land beneath the Southern Cross."
+    },
+    {
+      "id": "s5-88",
+      "sceneId": "s5",
+      "text": "And there the days dreamed in their flight, each one a poem chanted through, Which at its close was merged into the muted music of the night."
+    },
+    {
+      "id": "s5-89",
+      "sceneId": "s5",
+      "text": "And you were a princess in those days. And I--I was your serving lad. But who ever served with heart so glad, or lived so for a word of praise?"
+    },
+    {
+      "id": "s5-90",
+      "sceneId": "s5",
+      "text": "And if that word you chanced to speak, how all my senses swayed and reeled, Till low beside your feet I kneeled, with happiness o'erwrought and weak."
+    },
+    {
+      "id": "s5-91",
+      "sceneId": "s5",
+      "text": "If, when your golden cup I bore, you deigned to lower your eyes to mine, Eyes cold, yet fervid, like the wine, I knew not how to wish for more."
+    },
+    {
+      "id": "s5-92",
+      "sceneId": "s5",
+      "text": "I trembled at the thought to dare to gaze upon, to scrutinize The deep-sea mystery of your eyes, the sun-lit splendor of your hair."
+    },
+    {
+      "id": "s5-93",
+      "sceneId": "s5",
+      "text": "To let my timid glances rest upon you long enough to note How fair and slender was your throat, how white the promise of your breast."
+    },
+    {
+      "id": "s5-94",
+      "sceneId": "s5",
+      "text": "But though I did not dare to chance a lingering look, an open gaze Upon your beauty's blinding rays, I ventured many a stolen glance."
+    },
+    {
+      "id": "s5-95",
+      "sceneId": "s5",
+      "text": "I fancy, too, (but could not state what trick of mind the fancy caused) At times your eyes upon me paused, and marked my figure lithe and straight."
+    },
+    {
+      "id": "s5-96",
+      "sceneId": "s5",
+      "text": "Once when my eyes met yours it seemed that in your cheek, despite your pride, A flush arose and swiftly died; or was it something that I dreamed?"
+    },
+    {
+      "id": "s5-97",
+      "sceneId": "s5",
+      "text": "Within your radiance like the star of morning, there I stood and served, Close by, unheeded, unobserved. You were so near, and, yet, so far."
+    },
+    {
+      "id": "s5-98",
+      "sceneId": "s5",
+      "text": "Ah! just to stretch my hand and touch the musky sandals on your feet!-- My breaking heart! of rapture sweet it never could have held so much."
+    },
+    {
+      "id": "s5-99",
+      "sceneId": "s5",
+      "text": "Oh, beauty-haunted memory! Your face so proud, your eyes so calm, Your body like a slim young palm, and sinuous as a willow tree."
+    },
+    {
+      "id": "s5-100",
+      "sceneId": "s5",
+      "text": "Caught up beneath your slender arms, and girdled 'round your supple waist, A robe of curious silk that graced, but only scarce concealed your charms."
+    },
+    {
+      "id": "s5-101",
+      "sceneId": "s5",
+      "text": "A golden band about your head, a crimson jewel at your throat Which, when the sunlight on it smote, turned to a living heart and bled."
+    },
+    {
+      "id": "s5-102",
+      "sceneId": "s5",
+      "text": "But, oh, that mystic bleeding stone, that work of Nature's magic art, Which mimicked so a wounded heart, could never bleed as did my own!"
+    },
+    {
+      "id": "s5-103",
+      "sceneId": "s5",
+      "text": "Now after ages long and sad, in this stern land we meet anew; No more a princess proud are you, and I--I am no serving lad."
+    },
+    {
+      "id": "s5-104",
+      "sceneId": "s5",
+      "text": "And yet, dividing us, I meet a wider gulf than that which stood Between a princess of the blood and him who served low at her feet."
+    },
+    {
+      "id": "s5-105",
+      "sceneId": "s5",
+      "text": "THE Reward"
+    },
+    {
+      "id": "s5-106",
+      "sceneId": "s5",
+      "text": "No greater earthly boon than this I crave, That those who some day gather 'round my grave, In place of tears, may whisper of me then, \"He sang a song that reached the hearts of men.\""
+    },
+    {
+      "id": "s5-107",
+      "sceneId": "s5",
+      "text": "Jingles & Croons"
+    },
+    {
+      "id": "s5-108",
+      "sceneId": "s5",
+      "text": "Sence YOU Went Away"
+    },
+    {
+      "id": "s5-109",
+      "sceneId": "s5",
+      "text": "Seems lak to me de stars don't shine so bright, Seems lak to me de sun done loss his light, Seems lak to me der's nothin' goin' right, Sence you went away."
+    },
+    {
+      "id": "s5-110",
+      "sceneId": "s5",
+      "text": "Seems lak to me de sky ain't half so blue, Seems lak to me dat ev'ything wants you, Seems lak to me I don't know what to do, Sence you went away."
+    },
+    {
+      "id": "s5-111",
+      "sceneId": "s5",
+      "text": "Seems lak to me dat ev'ything is wrong, Seems lak to me de day's jes twice as long, Seems lak to me de bird's forgot his song, Sence you went away."
+    },
+    {
+      "id": "s5-112",
+      "sceneId": "s5",
+      "text": "Seems lak to me I jes can't he'p but sigh, Seems lak to me ma th'oat keeps gittin' dry, Seems lak to me a tear stays in ma eye, Sence you went away."
+    },
+    {
+      "id": "s5-113",
+      "sceneId": "s5",
+      "text": "Ma Lady's Lips Am Like De Honey"
+    },
+    {
+      "id": "s5-114",
+      "sceneId": "s5",
+      "text": "(*Negro Love Song*)"
+    },
+    {
+      "id": "s5-115",
+      "sceneId": "s5",
+      "text": "Breeze a-sighin' and a-blowin', Southern summer night. Stars a-gleamin' and a-glowin', Moon jes shinin' right. Strollin', like all lovers do, Down de lane wid Lindy Lou; Honey on her lips to waste; 'Speck I'm gwine to steal a taste."
+    },
+    {
+      "id": "s5-116",
+      "sceneId": "s5",
+      "text": "Oh, ma lady's lips am like de honey, Ma lady's lips am like de rose; An' I'm jes like de little bee a-buzzin' 'Round de flower wha' de nectah grows. Ma lady's lips dey smile so temptin', Ma lady's teeth so white dey shine, Oh, ma lady's lips so tantalizin', Ma lady's lips so close to mine."
+    },
+    {
+      "id": "s5-117",
+      "sceneId": "s5",
+      "text": "Bird a-whistlin' and a-swayin' In de live-oak tree; Seems to me he keeps a-sayin', \"Kiss dat gal fo' me.\" Look heah, Mister Mockin' Bird, Gwine to take you at yo' word; If I meets ma Waterloo, Gwine to blame it all on you."
+    },
+    {
+      "id": "s5-118",
+      "sceneId": "s5",
+      "text": "Oh, ma lady's lips am like de honey, Ma lady's lips am like de rose; An' I'm jes like de little bee a-buzzin' 'Round de flower wha' de nectah grows. Ma lady's lips dey smile so temptin', Ma lady's teeth so white dey shine, Oh, ma lady's lips so tantalizin', Ma lady's lips so close to mine."
+    },
+    {
+      "id": "s5-119",
+      "sceneId": "s5",
+      "text": "Honey in de rose, I spose, is Put der fo' de bee; Honey on her lips, I knows, is Put der jes fo' me. Seen a sparkle in her eye, Heard her heave a little sigh; Felt her kinder squeeze ma han', 'Nuff to make me understan'."
+    },
+    {
+      "id": "s5-120",
+      "sceneId": "s5",
+      "text": "Tunk"
+    },
+    {
+      "id": "s5-121",
+      "sceneId": "s5",
+      "text": "(*A Lecture on Modern Education*)"
+    },
+    {
+      "id": "s5-122",
+      "sceneId": "s5",
+      "text": "Look heah, Tunk!--Now, ain't dis awful! T'ought I sont you off to school. Don't you know dat you is growin' up to be a reg'lah fool?"
+    },
+    {
+      "id": "s5-123",
+      "sceneId": "s5",
+      "text": "Whah's dem books dat I's done bought you? Look heah, boy, you tell me quick, Whah's dat Webster blue-back spellah an' dat bran' new 'rifmatic?"
+    },
+    {
+      "id": "s5-124",
+      "sceneId": "s5",
+      "text": "W'ile I'm t'inkin' you is lahnin' in de school, why bless ma soul! You off in de woods a-playin'. Can't you do like you is tole?"
+    },
+    {
+      "id": "s5-125",
+      "sceneId": "s5",
+      "text": "Boy, I tell you, it's jes scan'lous d'way dat you is goin' on. An' you sholy go'n be sorry, jes as true as you is bo'n."
+    },
+    {
+      "id": "s5-126",
+      "sceneId": "s5",
+      "text": "Heah I'm tryin' hard to raise you as a credit to dis race, An' you tryin' heap much harder fu' to come up in disgrace."
+    },
+    {
+      "id": "s5-127",
+      "sceneId": "s5",
+      "text": "Dese de days w'en men don't git up to de top by hooks an' crooks; Tell you now, dey's got to git der standin' on a pile o' books."
+    },
+    {
+      "id": "s5-128",
+      "sceneId": "s5",
+      "text": "W'en you sees a darkey goin' to de fiel' as soon as light, Followin' a mule across it f'om de mawnin' tel de night,"
+    },
+    {
+      "id": "s5-129",
+      "sceneId": "s5",
+      "text": "Wukin' all his life fu' vittles, hoein' 'tween de cott'n rows, W'en he knocks off ole an' tiah'd, ownin' nut'n but his clo'es,"
+    },
+    {
+      "id": "s5-130",
+      "sceneId": "s5",
+      "text": "You kin put it down to ignunce, aftah all what's done an' said, You kin bet dat dat same darkey ain't got nut'n in his head."
+    },
+    {
+      "id": "s5-131",
+      "sceneId": "s5",
+      "text": "Ain't you seed dem w'ite men set'n in der awfice? Don't you know Dey goes der 'bout nine each mawnin? Bless yo' soul, dey's out by fo'."
+    },
+    {
+      "id": "s5-132",
+      "sceneId": "s5",
+      "text": "Dey jes does a little writin'; does dat by some easy means; Gals jes set an' play piannah on dem printin' press muchines."
+    },
+    {
+      "id": "s5-133",
+      "sceneId": "s5",
+      "text": "Chile, dem men knows how to figgah, how to use dat little pen, An' dey knows dat blue-back spellah f'om beginnin' to de en'."
+    },
+    {
+      "id": "s5-134",
+      "sceneId": "s5",
+      "text": "Dat's de 'fect of education; dat's de t'ing what's gwine to rule; Git dem books, you lazy rascal! Git back to yo' place in school!"
+    },
+    {
+      "id": "s5-135",
+      "sceneId": "s5",
+      "text": "Nobody's Lookin' But De Owl and De Moon"
+    },
+    {
+      "id": "s5-136",
+      "sceneId": "s5",
+      "text": "(*A Negro Serenade*)"
+    },
+    {
+      "id": "s5-137",
+      "sceneId": "s5",
+      "text": "De river is a-glistenin' in de moonlight, De owl is set'n high up in de tree; De little stars am twinklin' wid a sof' light, De night seems only jes fu' you an' me. Thoo de trees de breezes am a-sighin', Breathin' out a sort o' lover's croon, Der's nobody lookin' or a-spyin', Nobody but de owl an' de moon."
+    },
+    {
+      "id": "s5-138",
+      "sceneId": "s5",
+      "text": "Nobody's lookin' but de owl an' de moon, An' de night is balmy; fu' de month is June; Come den, Honey, won't you? Come to meet me soon, Wile nobody's lookin' but de owl an' de moon."
+    },
+    {
+      "id": "s5-139",
+      "sceneId": "s5",
+      "text": "I feel so kinder lonely all de daytime, It seems I raly don't know what to do; I jes keep sort a-longin' fu' de night-time, 'Cause den I know dat I can be wid you. An' de thought jes sets my brain a-swayin', An' my heart a-beatin' to a tune; Come, de owl won't tell w'at we's a-sayin', An' cose you know we kin trus' de moon."
+    },
+    {
+      "id": "s5-140",
+      "sceneId": "s5",
+      "text": "You's Sweet to Yo' Mammy Jes De Same"
+    },
+    {
+      "id": "s5-141",
+      "sceneId": "s5",
+      "text": "(*Lullaby*)"
+    },
+    {
+      "id": "s5-142",
+      "sceneId": "s5",
+      "text": "Shet yo' eyes, ma little pickaninny, go to sleep Mammy's watchin' by you all de w'ile; Daddy is a-wukin' down in de cott'n fiel', Wukin' fu' his little honey child. An' yo' mammy's heart is jes a-brimmin' full o' lub Fu' you f'om yo' head down to yo' feet; Oh, no mattah w'at some othah folks may t'ink o' you, To yo' mammy's heart you's mighty sweet."
+    },
+    {
+      "id": "s5-143",
+      "sceneId": "s5",
+      "text": "You's sweet to yo' mammy jes de same; Dat's why she calls you Honey fu' yo' name. Yo' face is black, dat's true, An' yo' hair is woolly, too, But, you's sweet to yo' mammy jes de same."
+    },
+    {
+      "id": "s5-144",
+      "sceneId": "s5",
+      "text": "Up der in de big house w'ere dey lib so rich an' gran' Dey's got chillen dat dey lubs, I s'pose; Chillen dat is purty, oh, but dey can't lub dem mo' Dan yo' mammy lubs you, heaben knows!"
+    },
+    {
+      "id": "s5-145",
+      "sceneId": "s5",
+      "text": "Dey may t'ink you's homely, an' yo' clo'es dey may be po', But yo' shinin' eyes, dey hol's a light Dat, my Honey, w'en you opens dem so big an' roun', Makes you lubly in yo' mammy's sight."
+    },
+    {
+      "id": "s5-146",
+      "sceneId": "s5",
+      "text": "A Plantation Bacchanal"
+    },
+    {
+      "id": "s5-147",
+      "sceneId": "s5",
+      "text": "W'en ole Mister Sun gits tiah'd a-hangin' High up in de sky; W'en der ain't no thunder and light'nin' a-bangin', An' de crap's done all laid by; W'en yo' bones ain't achin' wid de rheumatics, Den yo' ride de mule to town, Git a great big jug o' de ole corn juice, An' w'en you drink her down--"
+    },
+    {
+      "id": "s5-148",
+      "sceneId": "s5",
+      "text": "Jes lay away ole Trouble, An' dry up all yo' tears; Yo' pleasure sho' to double An' you bound to lose yo' keers. Jes lay away ole Sorrer High upon de shelf; And never mind to-morrer, 'Twill take care of itself."
+    },
+    {
+      "id": "s5-149",
+      "sceneId": "s5",
+      "text": "W'en ole Mister Age begins a-stealin' Thoo yo' back an' knees, W'en yo' bones an' jints lose der limber feelin', An' am stiff'nin' by degrees; Now der's jes one way to feel young and spry, W'en you heah dem banjos soun' Git a great big swig o' de ole corn juice, An' w'en you drink her down--"
+    },
+    {
+      "id": "s5-150",
+      "sceneId": "s5",
+      "text": "Jes lay away ole Trouble, An' dry up all yo' tears; Yo' pleasure sho' to double An' you bound to lose yo' keers. Jes lay away ole Sorrer High upon de shelf; And never mind to-morrer, 'Twill take care of itself."
+    },
+    {
+      "id": "s5-151",
+      "sceneId": "s5",
+      "text": "July IN Georgy"
+    },
+    {
+      "id": "s5-152",
+      "sceneId": "s5",
+      "text": "I'm back down in ole Georgy w'ere de sun is shinin' hot, W'ere de cawn it is a-tasslin', gittin' ready fu' de pot;"
+    },
+    {
+      "id": "s5-153",
+      "sceneId": "s5",
+      "text": "W'ere de cott'n is a-openin' an' a-w'itenin' in de sun, An' de ripenin' o' de sugah-cane is mighty nigh begun."
+    },
+    {
+      "id": "s5-154",
+      "sceneId": "s5",
+      "text": "An' de locus' is a-singin' f'om eveh bush an' tree, An' you kin heah de hummin' o' de noisy bumblebee;"
+    },
+    {
+      "id": "s5-155",
+      "sceneId": "s5",
+      "text": "An' de mule he stan's a-dreamin' an' a-dreamin' in de lot, An' de sun it is a-shinin' mighty hot, hot, hot."
+    },
+    {
+      "id": "s5-156",
+      "sceneId": "s5",
+      "text": "But evehbody is a-restin', fu' de craps is all laid by, An' time fu' de camp-meetin' is a-drawin' purty nigh;"
+    },
+    {
+      "id": "s5-157",
+      "sceneId": "s5",
+      "text": "An' we's put away de ploughshare, an' we's done hung up de spade, An' we's eatin' watermelon, an' a-layin' in de shade."
+    },
+    {
+      "id": "s5-158",
+      "sceneId": "s5",
+      "text": "A Banjo Song"
+    },
+    {
+      "id": "s5-159",
+      "sceneId": "s5",
+      "text": "W'en de banjos wuz a-ringin', An' de darkies wuz a-singin', Oh, wuzen dem de good times sho! All de ole folks would be chattin', An' de pickaninnies pattin', As dey heah'd de feet a-shufflin' 'cross de flo'."
+    },
+    {
+      "id": "s5-160",
+      "sceneId": "s5",
+      "text": "An' how we'd dance, an' how we'd sing! Dance tel de day done break. An' how dem banjos dey would ring, An' de cabin flo' would shake!"
+    },
+    {
+      "id": "s5-161",
+      "sceneId": "s5",
+      "text": "Come along, come along, Come along, come along, Don't you heah dem banjos a-ringin'?"
+    },
+    {
+      "id": "s5-162",
+      "sceneId": "s5",
+      "text": "Gib a song, gib a song, Gib a song, gib a song, Git yo' feet fixed up fu' a-wingin'."
+    },
+    {
+      "id": "s5-163",
+      "sceneId": "s5",
+      "text": "W'ile de banjos dey go plunka, plunka, plunk, We'll dance tel de ole flo' shake; W'ile de feet keep a-goin' chooka, chooka, chook, We'll dance tel de day done break."
+    },
+    {
+      "id": "s5-164",
+      "sceneId": "s5",
+      "text": "Answer TO Prayer"
+    },
+    {
+      "id": "s5-165",
+      "sceneId": "s5",
+      "text": "Der ain't no use in sayin' de Lawd won't answer prah; If you knows how to ax Him, I knows He's bound to heah."
+    },
+    {
+      "id": "s5-166",
+      "sceneId": "s5",
+      "text": "De trouble is, some people don't ax de proper way, Den w'en dey git's no answer dey doubts de use to pray."
+    },
+    {
+      "id": "s5-167",
+      "sceneId": "s5",
+      "text": "You got to use egzac'ly de 'spressions an' de words To show dat 'tween yo' faith an' works, you 'pends on works two-thirds."
+    },
+    {
+      "id": "s5-168",
+      "sceneId": "s5",
+      "text": "Now, one time I remember--jes how long I won't say-- I thought I'd like a turkey to eat on Chris'mus day."
+    },
+    {
+      "id": "s5-169",
+      "sceneId": "s5",
+      "text": "Fu' weeks I dreamed 'bout turkeys, a-struttin' in der pride; But seed no way to get one--widout de Lawd pervide."
+    },
+    {
+      "id": "s5-170",
+      "sceneId": "s5",
+      "text": "An' so I went to prayin', I pray'd wid all my might; \"Lawd, sen' *to* me a turkey.\" I pray'd bofe day an' night."
+    },
+    {
+      "id": "s5-171",
+      "sceneId": "s5",
+      "text": "\"Lawd, sen' *to* me a turkey, a big one if you please.\" I 'clar to heaben I pray'd so much I mos' wore out ma knees."
+    },
+    {
+      "id": "s5-172",
+      "sceneId": "s5",
+      "text": "I pray'd dat prah so often, I pray'd dat prah so long, Yet didn't git no turkey, I know'd 'twas sump'n wrong."
+    },
+    {
+      "id": "s5-173",
+      "sceneId": "s5",
+      "text": "So on de night 'fore Chris'mus w'en I got down to pray, \"Lawd, sen' *me* to a turkey,\" I had de sense to say."
+    },
+    {
+      "id": "s5-174",
+      "sceneId": "s5",
+      "text": "\"Lawd, sen' *me* to a turkey.\" I know dat prah was right, An' it was sholy answer'd; I got de bird dat night."
+    },
+    {
+      "id": "s5-175",
+      "sceneId": "s5",
+      "text": "DAT GAL O' Mine"
+    },
+    {
+      "id": "s5-176",
+      "sceneId": "s5",
+      "text": "Skin as black an' jes as sof' as a velvet dress, Teeth as white as ivory--well dey is I guess."
+    },
+    {
+      "id": "s5-177",
+      "sceneId": "s5",
+      "text": "Eyes dat's jes as big an' bright as de evenin' star; An' dat hol' some sort o' light lublier by far."
+    },
+    {
+      "id": "s5-178",
+      "sceneId": "s5",
+      "text": "Hair don't hang 'way down her back; plaited up in rows; Wid de two en's dat's behin' tied wid ribben bows."
+    },
+    {
+      "id": "s5-179",
+      "sceneId": "s5",
+      "text": "Han's dat raly wuz'n made fu' hard work, I'm sho'; Got a little bit o' foot; weahs a numbah fo'."
+    },
+    {
+      "id": "s5-180",
+      "sceneId": "s5",
+      "text": "You jes oughtah see dat gal Sunday's w'en she goes To de Baptis' meetin' house, dressed in her bes' clo'es."
+    },
+    {
+      "id": "s5-181",
+      "sceneId": "s5",
+      "text": "W'en she puts her w'ite dress on an' othah things so fine; Now, Su', don't you know I'm proud o' dat gal o' mine."
+    },
+    {
+      "id": "s5-182",
+      "sceneId": "s5",
+      "text": "THE Seasons"
+    },
+    {
+      "id": "s5-183",
+      "sceneId": "s5",
+      "text": "W'en de leaves begin to fall, An' de fros' is on de ground, An' de 'simmons is a-ripenin' on de tree; W'en I heah de dinner call, An' de chillen gadder 'round, 'Tis den de 'possum is de meat fu' me."
+    },
+    {
+      "id": "s5-184",
+      "sceneId": "s5",
+      "text": "W'en de wintertime am pas' An' de spring is come at las', W'en de good ole summer sun begins to shine; Oh! my thoughts den tek a turn, An' my heart begins to yearn Fo' dat watermelon growin' on de vine."
+    },
+    {
+      "id": "s5-185",
+      "sceneId": "s5",
+      "text": "Now, de yeah will sholy bring 'Round a season fu' us all, Ev'y one kin pick his season f'om de res'; But de melon in de spring, An' de 'possum in de fall, Mek it hard to tell which time o' year am bes'."
+    },
+    {
+      "id": "s5-186",
+      "sceneId": "s5",
+      "text": "'Possum Song"
+    },
+    {
+      "id": "s5-187",
+      "sceneId": "s5",
+      "text": "(*A Warning*)"
+    },
+    {
+      "id": "s5-188",
+      "sceneId": "s5",
+      "text": "'Simmons ripenin' in de fall, You better run, Brudder 'Possum, run! Mockin' bird commence to call, You better run, Brudder 'Possum, git out de way! You better run, Brudder 'Possum, git out de way! Run some whar an' hide! Ole moon am sinkin' Down behin' de tree. Ole Eph am thinkin' An' chuckelin' wid glee. Ole Tige am blinkin' An' frisky as kin be, Yo' chances, Brudder 'Possum, Look mighty slim to me."
+    },
+    {
+      "id": "s5-189",
+      "sceneId": "s5",
+      "text": "Run, run, run, I tell you, Run, Brudder 'Possum, run! Run, run, run, I tell you, Ole Eph's got a gun. Pickaninnies grinnin' Waitin' fu' to see de fun. You better run, Brudder 'Possum, git out de way! Run, Brudder 'Possum, run!"
+    },
+    {
+      "id": "s5-190",
+      "sceneId": "s5",
+      "text": "Brudder 'Possum take a tip; You better run, Brudder 'Possum, run! 'Tain't no use in actin' flip, You better run, Brudder 'Possum, git out de way! You better run, Brudder 'Possum, git out de way! Run some whar an' hide. Dey's gwine to houn' you All along de line, W'en dey done foun' you, Den what's de use in sighin'? Wid taters roun' you. You sholy would tase fine-- So listen, Brudder 'Possum, You better be a-flyin'."
+    },
+    {
+      "id": "s5-191",
+      "sceneId": "s5",
+      "text": "Run, run, run, I tell you, Run, Brudder 'Possum, run! Run, run, run, I tell you, Ole Eph's got a gun. Pickaninnies grinnin' Waitin' fu' to see de fun. You better run, Brudder 'Possum, git out de way! Run, Brudder 'Possum, run!"
+    },
+    {
+      "id": "s5-192",
+      "sceneId": "s5",
+      "text": "Brer Rabbit, You's De Cutes' of 'Em All"
+    },
+    {
+      "id": "s5-193",
+      "sceneId": "s5",
+      "text": "Once der was a meetin' in de wilderness, All de critters of creation dey was dar; Brer Rabbit, Brer 'Possum, Brer Wolf, Brer Fox, King Lion, Mister Terrapin, Mister B'ar. De question fu' discussion was, \"Who is de bigges' man?\" Dey 'pinted ole Jedge Owl to decide; He polished up his spectacles an' put 'em on his nose, An' to the question slowly he replied:"
+    },
+    {
+      "id": "s5-194",
+      "sceneId": "s5",
+      "text": "\"Brer Wolf am mighty cunnin', Brer Fox am mighty sly, Brer Terrapin an' 'Possum--kinder small; Brer Lion's mighty vicious, Brer B'ar he's sorter 'spicious, Brer Rabbit, you's de cutes' of 'em all.\""
+    },
+    {
+      "id": "s5-195",
+      "sceneId": "s5",
+      "text": "Dis caused a great confusion 'mongst de animals, Ev'y critter claimed dat he had won de prize; Dey 'sputed an' dey arg'ed, dey growled an' dey roared, Den putty soon de dus' begin to rise."
+    },
+    {
+      "id": "s5-196",
+      "sceneId": "s5",
+      "text": "Brer Rabbit he jes' stood aside an' urged 'em on to fight. Brer Lion he mos' tore Brer B'ar in two; W'en dey was all so tiahd dat dey couldn't catch der bref Brer Rabbit he jes' grabbed de prize an' flew."
+    },
+    {
+      "id": "s5-197",
+      "sceneId": "s5",
+      "text": "Brer Wolf am mighty cunnin', Brer Fox am mighty sly, Brer Terrapin an' Possum--kinder small; Brer Lion's mighty vicious, Brer B'ar he's sorter 'spicious, Brer Rabbit, you's de cutes' of 'em all."
+    },
+    {
+      "id": "s5-198",
+      "sceneId": "s5",
+      "text": "AN Explanation"
+    },
+    {
+      "id": "s5-199",
+      "sceneId": "s5",
+      "text": "Look heah! 'Splain to me de reason Why you said to Squire Lee, Der wuz twelve ole chicken thieves In dis heah town, includin' me. Ef he tole you dat, my brudder, He said sump'n dat warn't true; W'at I said wuz dis, dat der wuz Twelve, *widout* includin' you."
+    },
+    {
+      "id": "s5-200",
+      "sceneId": "s5",
+      "text": "Oh!...!--"
+    },
+    {
+      "id": "s5-201",
+      "sceneId": "s5",
+      "text": "De Little Pickaninny's Gone to Sleep"
+    },
+    {
+      "id": "s5-202",
+      "sceneId": "s5",
+      "text": "Cuddle down, ma honey, in yo' bed, Go to sleep an' res' yo' little head, Been a-kind o' ailin' all de day? Didn't have no sperit fu' to play? Never min'; to-morrer, w'en you wek, Daddy's gwine to ride you on his bek, 'Roun' an' roun' de cabin flo' so fas'-- Der! He's closed his little eyes at las'."
+    },
+    {
+      "id": "s5-203",
+      "sceneId": "s5",
+      "text": "De little pickaninny's gone to sleep, Cuddled in his trundle bed so tiny, De little pickaninny's gone to sleep, Closed his little eyes so bright an' shiny. Hush! an' w'en you walk across de flo' Step across it very sof' an' slow. De shadders all aroun' begin to creep, De little pickaninny's gone to sleep."
+    },
+    {
+      "id": "s5-204",
+      "sceneId": "s5",
+      "text": "Mandy, w'at's de matter wid dat chile? Keeps a-sighin' ev'y little w'ile; Seems to me I heayhd him sorter groan, Lord! his little han's am col' as stone! W'at's dat far-off light dat's in his eyes? Dat's a light dey's borrow'd f'om de skies; Fol' his little han's across his breas', Let de little pickaninny res'."
+    },
+    {
+      "id": "s5-205",
+      "sceneId": "s5",
+      "text": "THE Rivals"
+    },
+    {
+      "id": "s5-206",
+      "sceneId": "s5",
+      "text": "Look heah! Is I evah tole you 'bout de curious way I won Anna Liza? Say, I nevah? Well heah's how de thing wuz done."
+    },
+    {
+      "id": "s5-207",
+      "sceneId": "s5",
+      "text": "Lize, you know, wuz mighty purty--dat's been forty yeahs ago-- 'N 'cos to look at her dis minit, you might'n spose dat it wuz so."
+    },
+    {
+      "id": "s5-208",
+      "sceneId": "s5",
+      "text": "She wuz jes de greates' 'traction in de county, 'n bless de lam'! Eveh darkey wuz a-co'tin, but it lay 'twix me an' Sam."
+    },
+    {
+      "id": "s5-209",
+      "sceneId": "s5",
+      "text": "You know Sam. We both wuz wukin' on de ole John Tompkin's place. 'N evehbody wuz a-watchin' t'see who's gwine to win de race."
+    },
+    {
+      "id": "s5-210",
+      "sceneId": "s5",
+      "text": "Hee! hee! hee! Now you mus' raley 'scuse me fu' dis snickering, But I jes can't he'p f'om laffin' eveh time I tells dis thing."
+    },
+    {
+      "id": "s5-211",
+      "sceneId": "s5",
+      "text": "Ez I wuz a-sayin', me an' Sam wuked daily side by side, He a-studyin', me a-studyin', how to win Lize fu' a bride."
+    },
+    {
+      "id": "s5-212",
+      "sceneId": "s5",
+      "text": "Well, de race was kinder equal, Lize wuz sorter on de fence; Sam he had de mostes dollars, an' I had de mostes sense."
+    },
+    {
+      "id": "s5-213",
+      "sceneId": "s5",
+      "text": "Things dey run along 'bout eben tel der come Big Meetin' day; Sam den thought, to win Miss Liza, he had foun' de shoest way."
+    },
+    {
+      "id": "s5-214",
+      "sceneId": "s5",
+      "text": "An' you talk about big meetin's! None been like it 'fore nor sence; Der wuz sich a crowd o' people dat we had to put up tents."
+    },
+    {
+      "id": "s5-215",
+      "sceneId": "s5",
+      "text": "Der wuz preachers f'om de Eas', an' 'der wuz preachers f'om de Wes'; Folks had kilt mos' eveh chicken, an' wuz fattenin' up de res'."
+    },
+    {
+      "id": "s5-216",
+      "sceneId": "s5",
+      "text": "Gals had all got new w'ite dresses, an' bought ribbens fu' der hair, Fixin' fu' de openin' Sunday, prayin' dat de day'd be fair."
+    },
+    {
+      "id": "s5-217",
+      "sceneId": "s5",
+      "text": "Dat de Reveren' Jasper Jones of Mount Moriah, it wuz 'low'd, Wuz to preach de openin' sermon; so you know der wuz a crowd."
+    },
+    {
+      "id": "s5-218",
+      "sceneId": "s5",
+      "text": "Fu' dat man wuz sho a preacher; had a voice jes like a bull; So der ain't no use in sayin' dat de meetin' house wuz full."
+    },
+    {
+      "id": "s5-219",
+      "sceneId": "s5",
+      "text": "Folks wuz der f'om Big Pine Hollow, some come 'way f'om Muddy Creek, Some come jes to stay fu' Sunday, but de crowd stay'd thoo de week."
+    },
+    {
+      "id": "s5-220",
+      "sceneId": "s5",
+      "text": "Some come ridin' in top-buggies wid de w'eels all painted red, Pulled by mules dat run like rabbits, each one tryin' to git ahead."
+    },
+    {
+      "id": "s5-221",
+      "sceneId": "s5",
+      "text": "Othah po'rer folks come drivin' mules dat leaned up 'ginst de shaf', Hitched to broke-down, creaky wagons dat looked like dey'd drap in half."
+    },
+    {
+      "id": "s5-222",
+      "sceneId": "s5",
+      "text": "But de bigges' crowd come walkin', wid der new shoes on der backs; 'Scuse wuz dat dey couldn't weah em 'cause de heels wuz full o' tacks."
+    },
+    {
+      "id": "s5-223",
+      "sceneId": "s5",
+      "text": "Fact is, it's a job for Job, a-trudgin' in de sun an' heat, Down a long an' dusty clay road wid yo' shoes packed full o' feet."
+    },
+    {
+      "id": "s5-224",
+      "sceneId": "s5",
+      "text": "'Cose dey stopt an' put dem shoes on w'en dey got mos' to de do'; Den dey had to grin an' bear it; dat tuk good religion sho."
+    },
+    {
+      "id": "s5-225",
+      "sceneId": "s5",
+      "text": "But I mos' forgot ma story,--well at las' dat Sunday came And it seemed dat evehbody, blin' an' deef, an' halt an' lame,"
+    },
+    {
+      "id": "s5-226",
+      "sceneId": "s5",
+      "text": "Wuz out in de grove a-waitin' fu' de meetin' to begin; Ef dat crowd had got converted 'twould a been de end o' sin."
+    },
+    {
+      "id": "s5-227",
+      "sceneId": "s5",
+      "text": "Lize wuz der in all her glory, purty ez a big sunflowah, I kin 'member how she looked jes same ez 'twuz dis ve'y houah."
+    },
+    {
+      "id": "s5-228",
+      "sceneId": "s5",
+      "text": "But to make ma story shorter, w'ile we wuz a-waitin' der, Down de road we spied a cloud o' dus' dat filled up all de air."
+    },
+    {
+      "id": "s5-229",
+      "sceneId": "s5",
+      "text": "An' ez we kep' on a-lookin', out f'om 'mongst dat ve'y cloud, Sam, on Marse John's big mule, Caesar, rode right slam up in de crowd."
+    },
+    {
+      "id": "s5-230",
+      "sceneId": "s5",
+      "text": "You jes oughtah seed dat darkey, 'clar I like tah loss ma bref; Fu' to use a common 'spression, he wuz 'bout nigh dressed to def."
+    },
+    {
+      "id": "s5-231",
+      "sceneId": "s5",
+      "text": "He had slipped to town dat Sat'day, didn't let nobody know, An' had car'yd all his cash an' lef it in de dry goods sto'."
+    },
+    {
+      "id": "s5-232",
+      "sceneId": "s5",
+      "text": "He had on a bran' new suit o' sto'-bought clo'es, a high plug hat; He looked 'zactly like a gen'man, tain't no use d'nyin' dat."
+    },
+    {
+      "id": "s5-233",
+      "sceneId": "s5",
+      "text": "W'en he got down off dat mule an' bowed to Liza I could see How she looked at him so 'dmirin', an' jes kinder glanced at me."
+    },
+    {
+      "id": "s5-234",
+      "sceneId": "s5",
+      "text": "Den I know'd to win dat gal, I sho would need some othah means 'Sides a-hangin' 'round big meetin' in a suit o' homespun jeans."
+    },
+    {
+      "id": "s5-235",
+      "sceneId": "s5",
+      "text": "W'en dey blow'd de ho'n fu' preachin', an' de crowd all went inside, I jes felt ez doh I'd like tah go off in de woods an' hide."
+    },
+    {
+      "id": "s5-236",
+      "sceneId": "s5",
+      "text": "So I stay'd outside de meetin', set'n underneat' de trees, Seemed to me I sot der ages, wid ma elbows on ma knees."
+    },
+    {
+      "id": "s5-237",
+      "sceneId": "s5",
+      "text": "W'en dey sung dat hymn, \"Nobody knows de trouble dat I see,\" Seem'd to me dat dey wuz singin' eveh word o' it fu' me."
+    },
+    {
+      "id": "s5-238",
+      "sceneId": "s5",
+      "text": "Jes how long I might ha' sot der, actin' like a cussed fool, I don't know, but it jes happen'd dat I look'd an' saw Sam's mule."
+    },
+    {
+      "id": "s5-239",
+      "sceneId": "s5",
+      "text": "An' de thought come slowly tricklin' thoo ma brain right der an' den, Dat, perhaps, wid some persuasion, I could make dat mule ma fren'."
+    },
+    {
+      "id": "s5-240",
+      "sceneId": "s5",
+      "text": "An' I jes kep' on a-thinkin', an' I kep' a-lookin' 'roun', Tel I spied two great big san' spurs right close by me on de groun'."
+    },
+    {
+      "id": "s5-241",
+      "sceneId": "s5",
+      "text": "Well, I took dem spurs an' put em underneat' o' Caesar's saddle, So dey'd press down in his backbone soon ez Sam had got a-straddle."
+    },
+    {
+      "id": "s5-242",
+      "sceneId": "s5",
+      "text": "'Twuz a pretty ticklish job, an' jes ez soon ez it wuz done, I went back w'ere I wuz set'n fu' to wait an' see de fun."
+    },
+    {
+      "id": "s5-243",
+      "sceneId": "s5",
+      "text": "Purty soon heah come de people, jes a-swa'min' out de do', Talkin' 'bout de \"pow'ful sermon\"--\"nevah heah'd de likes befo'.\""
+    },
+    {
+      "id": "s5-244",
+      "sceneId": "s5",
+      "text": "How de \"monahs fell convicted\" jes de same ez lumps o' lead, How dat some wuz still a-layin' same es if dey'd been struck dead."
+    },
+    {
+      "id": "s5-245",
+      "sceneId": "s5",
+      "text": "An' to rectly heah come Liza, Sam a-strollin' by her side, An' it seem'd to me dat darky's smile wuz 'bout twelve inches wide."
+    },
+    {
+      "id": "s5-246",
+      "sceneId": "s5",
+      "text": "Look to me like he had swelled up to 'bout twice his natchul size, An' I heah'd him say, \"I'd like to be yo' 'scort to-night, Miss Lize.\""
+    },
+    {
+      "id": "s5-247",
+      "sceneId": "s5",
+      "text": "Den he made a bow jes like he's gwine to make a speech in school, An' walk'd jes ez proud ez Marse John over to untie his mule,"
+    },
+    {
+      "id": "s5-248",
+      "sceneId": "s5",
+      "text": "W'en Sam's foot fust touched de stirrup he know'd der wuz sump'n wrong; 'Cuz de mule begin to tremble an' to sorter side along."
+    },
+    {
+      "id": "s5-249",
+      "sceneId": "s5",
+      "text": "Wen Sam raised his weight to mount him, Caesar bristled up his ear, W'en Sam sot down in de saddle, den dat mule cummenced to rear."
+    },
+    {
+      "id": "s5-250",
+      "sceneId": "s5",
+      "text": "An' he reared an' pitched an' caper'd, only ez a mule kin pitch, Tel he flung Sam clean f'om off him, landed him squar' in a ditch."
+    },
+    {
+      "id": "s5-251",
+      "sceneId": "s5",
+      "text": "Wen dat darky riz, well raly, I felt kinder bad fu' him; He had bust dem cheap sto' britches f'om de center to de rim."
+    },
+    {
+      "id": "s5-252",
+      "sceneId": "s5",
+      "text": "All de plug hat dat wuz lef' him wuz de brim aroun' his neck, Smear'd wid mud f'om top to bottom, well, he wuz a sight, I 'speck."
+    },
+    {
+      "id": "s5-253",
+      "sceneId": "s5",
+      "text": "Wuz de folks a-laffin'? Well, su', I jes sholy thought dey'd bus'; Wuz Sam laffin'? 'Twuz de fus' time dat I evah heah'd him cuss."
+    },
+    {
+      "id": "s5-254",
+      "sceneId": "s5",
+      "text": "W'ile Sam slink'd off thoo de backwoods I walk'd slowly home wid Lize, W'en I axed her jes one question der wuz sump'n in her eyes"
+    },
+    {
+      "id": "s5-255",
+      "sceneId": "s5",
+      "text": "Made me know der wuz no need o' any answer bein' said, An' I felt jes like de whole world wuz a-spinnin' 'roun' ma head."
+    },
+    {
+      "id": "s5-256",
+      "sceneId": "s5",
+      "text": "So I said, \"Lize, w'en we marry, mus' I weah some sto'-bought clo'es?\" She says, \"Jeans is good enough fu' any po' folks, heaben knows!\""
+    },
+    {
+      "id": "s5-257",
+      "sceneId": "s5",
+      "text": "*If homely virtues draw from me a tune In happy jingle or a half-sad croon; Or if the smoldering future should inspire My hand to strike the seer's prophetic lyre; Or if injustice, brutishness and wrong Should make a blasting trumpet of my song; O God, give beauty and strength--truth to my words, Oh, may they fall like sweetly cadenced chords, Or burn like beacon fires from out the dark, Or speed like arrows, swift and sure, to the mark.*"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "counter-attack-and-other-poems",
+  "title": "Counter-Attack and Other Poems",
+  "author": "Siegfried Sassoon",
+  "year": "1918",
+  "note": "Project Gutenberg 8930",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "From you, Beethoven, Bach, Mozart, The substance of my dreams took fire. You built cathedrals in my heart, And lit my pinnacled desire. You were the ardour and the bright Procession of my thoughts toward prayer. You were the wrath of storm,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "Great names, I cannot find you now In these loud years of youth that strives Through doom toward peace: upon my brow I wear a wreath of banished lives. You have no part with lads who fought And laughed and suffered at my side. Your fugues a",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "For when my brain is on their track, In slangy speech I call them back. With fox-trot tunes their ghosts I charm. *\"Another little drink won't do us any harm.\" I think of rag-time; a bit of rag-time; And see their faces crowding round To th",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "Moonlight and dew-drenched blossom, and the scent Of summer gardens; these can bring you all Those dreams that in the starlit silence fall: Sweet songs are full of odours. While I went Last night in drizzling dusk along a lane, I passed a s",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "Up a disconsolate straggling village street I saw the tired troops trudge: I heard their feet. The cheery Q.M.S. was there to meet And guide our Company in ... I watched them stumble Into some crazy hovel, too beat to grumble; Saw them file",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "I'm looking at their blistered feet; young Jones Stares up at me, mud-splashed and white and jaded; Out of his eyes the morning light has faded. Old soldiers with three winters in their bones Puff their damp Woodbines, whistle, stretch thei",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Chapter IV",
+      "place": "Chapter IV",
+      "reentry": "I cannot hear their voices, but I see Dim candles in the barn: they gulp their tea, And soon they'll sleep like logs. Ten miles away The battle winks and thuds in blundering strife. And I must lead them nearer, day by day, To the foul beast",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "From you, Beethoven, Bach, Mozart, The substance of my dreams took fire. You built cathedrals in my heart, And lit my pinnacled desire. You were the ardour and the bright Procession of my thoughts toward prayer. You were the wrath of storm, the light On distant citadels aflare."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Great names, I cannot find you now In these loud years of youth that strives Through doom toward peace: upon my brow I wear a wreath of banished lives. You have no part with lads who fought And laughed and suffered at my side. Your fugues and symphonies have brought No memory of my friends who died."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "For when my brain is on their track, In slangy speech I call them back. With fox-trot tunes their ghosts I charm. *\"Another little drink won't do us any harm.\" I think of rag-time; a bit of rag-time; And see their faces crowding round To the sound of the syncopated beat. They've got such jolly things to tell, Home from hell with a Blighty wound so neat...* * * * * * And so the song breaks off; and I'm alone. They're dead... For God's sake stop that gramophone."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "THE Dream"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Moonlight and dew-drenched blossom, and the scent Of summer gardens; these can bring you all Those dreams that in the starlit silence fall: Sweet songs are full of odours. While I went Last night in drizzling dusk along a lane, I passed a squalid farm; from byre and midden Came the rank smell that brought me once again A dream of war that in the past was hidden."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Up a disconsolate straggling village street I saw the tired troops trudge: I heard their feet. The cheery Q.M.S. was there to meet And guide our Company in ... I watched them stumble Into some crazy hovel, too beat to grumble; Saw them file inward, slipping from their backs Rifles, equipment, packs. On filthy straw they sit in the gloom, each face Bowed to patched, sodden boots they must unlace, While the wind chills their sweat through chinks and cracks."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "I'm looking at their blistered feet; young Jones Stares up at me, mud-splashed and white and jaded; Out of his eyes the morning light has faded. Old soldiers with three winters in their bones Puff their damp Woodbines, whistle, stretch their toes: *They* can still grin at me, for each of 'em knows That I'm as tired as they are ... Can they guess The secret burden that is always mine?-- Pride in their courage; pity for their distress; And burning bitterness That I must take them to the accursèd Line."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "I cannot hear their voices, but I see Dim candles in the barn: they gulp their tea, And soon they'll sleep like logs. Ten miles away The battle winks and thuds in blundering strife. And I must lead them nearer, day by day, To the foul beast of war that bludgeons life."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "IN Barracks"
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "The barrack-square, washed clean with rain, Shines wet and wintry-grey and cold. Young Fusiliers, strong-legged and bold, March and wheel and march again. The sun looks over the barrack gate, Warm and white with glaring shine, To watch the soldiers of the Line That life has hired to fight with fate."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "Fall out: the long parades are done. Up comes the dark; down goes the sun. The square is walled with windowed light. Sleep well, you lusty Fusiliers; Shut your brave eyes on sense and sight, And banish from your dreamless ears The bugle's lying notes that say, \"Another night; another day.\""
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "Together"
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "Splashing along the boggy woods all day, And over brambled hedge and holding clay, I shall not think of him: But when the watery fields grow brown and dim, And hounds have lost their fox, and horses tire, I know that he'll be with me on my way Home through the darkness to the evening fire."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "He's jumped each stile along the glistening lanes; His hand will be upon the mud-soaked reins; Hearing the saddle creak, He'll wonder if the frost will come next week. I shall forget him in the morning light; And while we gallop on he will not speak: But at the stable-door he'll say good-night."
+    }
+  ]
+}

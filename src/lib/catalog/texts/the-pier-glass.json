@@ -1,0 +1,852 @@
+{
+  "id": "the-pier-glass",
+  "title": "The Pier-Glass",
+  "author": "Robert Graves",
+  "year": "1921",
+  "note": "Project Gutenberg 47824",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "*Blessed above all women Shall Jael the wife of Heber the Kenite be.* Jael, a queen in Heaven Surely will speak out straight in defence of me.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "Old Becker crawling in the night From his grave at the stair-foot, Labours up the long flight, Feeble, dribbling, black as soot, Quakes at his own ghostly fright.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "What's that, who's that comes breaking on my sleep With groans? What, father, you? (The very look, The same smudged foolish face like an old sheep Even after twenty years scarcely mistook.)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Chapter IV",
+      "place": "Chapter IV",
+      "reentry": "Two full hours before the dawn, Dotard Parrot cocks an ear To the sleeper's moan, long-drawn, To her slurring tale of fear.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "*Blessed above all women Shall Jael the wife of Heber the Kenite be.* Jael, a queen in Heaven Surely will speak out straight in defence of me."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Shall I despair Salvation? Was Sisera then more ripe for the knife or nail Than rat-soul'd Becker? Do I misread the tale?"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "I was no stealthy serpent. (Jael flattered and killed her man as he slept.) I was a lion, I challenged before I leapt."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Three times I gave clear warning (Fair-play's good sport), then standing I struck him dead. Ram-faced lecher, the blood on his own beast head!"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "*Blessed above all women Shall Jael the wife of Heber the Kenite be.* Ah, she won fame for her triumph, My inward joy was payment enough for me."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Old Becker crawling in the night From his grave at the stair-foot, Labours up the long flight, Feeble, dribbling, black as soot, Quakes at his own ghostly fright."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "A cat goes past with lantern eyes Shooting splendour through the dark. Murder! Help! a voice cries In nightmare; the son dreams that stark In lead his vanished father lies."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "A stair-top glimmer points the goal. Becker goes wavering up, tongue-tied, Stoops, with eye to keyhole.... There, a tall candle by her side, Delilah sits, serene and whole."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Her fingers turn the prayer-book leaves, Her forehead hints no mental strife: Soft and calm her breast heaves: *So calmly, with his cobbling knife She stabbed him through* ... now never grieves."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Baffled, aghast with hate, mouse-poor, He glares and clatters the brass knob ... *Through his heart it slid sure: He bowed, he died with never a sob, Again she stabbed*, now sits secure."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Praying as she has always prayed For great Victoria's Majesty, Droning prayer for God's aid To succour long dead Royalty, The Consort Prince, Queen Adelaide...."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "She falls asleep, the clocks chime two; Old Becker sinks to unquiet rest. Loud and sad the cats mew: Lead weighs cruelly on his breast: His bones are tufted with mildew."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "What's that, who's that comes breaking on my sleep With groans? What, father, you? (The very look, The same smudged foolish face like an old sheep Even after twenty years scarcely mistook.)"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Speak, Father, speak; that night what came to you Vanished in wrath or terror? Tell the tale; Your beer left still in mug, your half-made shoe On last, your turnip ticking on its nail!"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "*\"Son, it was Death. I have not stirred a foot Out of this horrible dwelling all these years, But planted like a kail I have taken root* Under the stairs, my son, under the stairs._"
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "*\"Do not avenge me, Henry. Let all slide. I grudge your death. See, do not touch the snake. A cowardice taints you from your father's side And a coward's lusts, but curb them, for my sake!*"
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "\"Back to your grave, back Father, lest she wake!\""
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Two full hours before the dawn, Dotard Parrot cocks an ear To the sleeper's moan, long-drawn, To her slurring tale of fear."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Parrot hears Delilah tell Who lies dead below the stair; How he shuddered, stumbled, fell; In whose cause she laid him there."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "*The knife bit, thus: thus, the blood spread!* Connoisseur of fo'c'stle speeches Parrot tilts his bald, sly head, Learns the spicy yarn she teaches."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Soon, when sunlight warms his cage, He plots to cheer the passers-by With burlesque of murderous rage, Acting how his victims die: Thus, he stabs 'em; there, they lie."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Poetry by the Same Author"
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "1916 Over the Brazier Poetry Bookshop. (New edition with slight alterations, 1920.)"
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "1917 Fairies and Fusiliers William Heinemann. American edition, 1918. Alfred Knopf."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "1920 Country Sentiment Martin Secker. American edition, 1920. Alfred Knopf."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "Contributions to Georgian Poetry, 1915-1917 and 1918-19."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "Martin Secker'S"
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "Books"
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "*Mcmxxi*"
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "Note"
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "The prices indicated in this catalogue are in every case net"
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "*Number Five John Street*"
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "*Adelphi London*"
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "General Literature"
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "All Things are Possible. *By Leo Shestov.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "Dead Letters. *By Maurice Baring.* 6*s.*"
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "Diminutive Dramas. *By Maurice Baring.* 6*s.*"
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "English Sonnet, The. *By T. W. H. Crosland.* 10*s.* 6*d.*"
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "Fountains in the Sand. *By Norman Douglas.* 6*s.*"
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "Hieroglyphics. *By Arthur Machen.* 5*s.*"
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "History of the Harlequinade, The. *By M. Sand.* 24*s.*"
+    },
+    {
+      "id": "s3-24",
+      "sceneId": "s3",
+      "text": "My Diaries: 1888-1914. *By W. S. Blunt.* 2 vols. 21*s.* each."
+    },
+    {
+      "id": "s3-25",
+      "sceneId": "s3",
+      "text": "New Leaves. *By Filson Young.* 5*s.*"
+    },
+    {
+      "id": "s3-26",
+      "sceneId": "s3",
+      "text": "Old Calabria. *By Norman Douglas.* 10*s.* 6*d.*"
+    },
+    {
+      "id": "s3-27",
+      "sceneId": "s3",
+      "text": "Social History of Smoking, The. *By G. L. Apperson.* 6*s.*"
+    },
+    {
+      "id": "s3-28",
+      "sceneId": "s3",
+      "text": "Speculative Dialogues. *By Lascelles Abercrombie.* 5*s.*"
+    },
+    {
+      "id": "s3-29",
+      "sceneId": "s3",
+      "text": "Tenth Muse, The. *By Edward Thomas.* 3*s.* 6*d.*"
+    },
+    {
+      "id": "s3-30",
+      "sceneId": "s3",
+      "text": "Those United States. *By Arnold Bennett.* 5*s.*"
+    },
+    {
+      "id": "s3-31",
+      "sceneId": "s3",
+      "text": "Translations. *By Maurice Baring.* 2*s.*"
+    },
+    {
+      "id": "s3-32",
+      "sceneId": "s3",
+      "text": "Vie de Bohème. *By Orlo Williams.* 15*s.*"
+    },
+    {
+      "id": "s3-33",
+      "sceneId": "s3",
+      "text": "World in Chains, The. *By J. Mavrogordato.* 5*s.*"
+    },
+    {
+      "id": "s3-34",
+      "sceneId": "s3",
+      "text": "Verse"
+    },
+    {
+      "id": "s3-35",
+      "sceneId": "s3",
+      "text": "Collected Poems of T. W. H. Crosland. 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-36",
+      "sceneId": "s3",
+      "text": "Collected Poems of Lord Alfred Douglas. 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-37",
+      "sceneId": "s3",
+      "text": "Collected Poems of J. E. Flecker. 10*s.*"
+    },
+    {
+      "id": "s3-38",
+      "sceneId": "s3",
+      "text": "Collected Poems of F. M. Hueffer. 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-39",
+      "sceneId": "s3",
+      "text": "Coronal, A. A New Anthology. *By L. M. Lamont.* 2*s.* 6*d.*"
+    },
+    {
+      "id": "s3-40",
+      "sceneId": "s3",
+      "text": "Country Sentiment. *By Robert Graves.* 5*s.*"
+    },
+    {
+      "id": "s3-41",
+      "sceneId": "s3",
+      "text": "Kensington Rhymes. *By Compton Mackenzie.* 5*s.*"
+    },
+    {
+      "id": "s3-42",
+      "sceneId": "s3",
+      "text": "New Poems. *By D. H. Lawrence.* 5*s.*"
+    },
+    {
+      "id": "s3-43",
+      "sceneId": "s3",
+      "text": "Pierglass, The. *By Robert Graves.* 5*s.*"
+    },
+    {
+      "id": "s3-44",
+      "sceneId": "s3",
+      "text": "Poems: 1914-1919. *By Maurice Baring.* 6*s.*"
+    },
+    {
+      "id": "s3-45",
+      "sceneId": "s3",
+      "text": "Queen of China, The. *By Edward Shanks.* 6*s.*"
+    },
+    {
+      "id": "s3-46",
+      "sceneId": "s3",
+      "text": "Selected Poems of J. E. Flecker. 3*s.* 6*d.*"
+    },
+    {
+      "id": "s3-47",
+      "sceneId": "s3",
+      "text": "Verses. *By Viola Meynell.* 2*s.* 6*d.*"
+    },
+    {
+      "id": "s3-48",
+      "sceneId": "s3",
+      "text": "Village Wife's Lament, The. *By Maurice Hewlett.* 3*s.* 6*d.*"
+    },
+    {
+      "id": "s3-49",
+      "sceneId": "s3",
+      "text": "Drama"
+    },
+    {
+      "id": "s3-50",
+      "sceneId": "s3",
+      "text": "Beggar's Opera, The. *By John Gay.* 2*s.* 6*d.*"
+    },
+    {
+      "id": "s3-51",
+      "sceneId": "s3",
+      "text": "Cassandra in Troy. *By John Mavrogordato.* 5*s.*"
+    },
+    {
+      "id": "s3-52",
+      "sceneId": "s3",
+      "text": "Dramatic Works of St. John Hankin. 3 vols. 30*s.*"
+    },
+    {
+      "id": "s3-53",
+      "sceneId": "s3",
+      "text": "Dramatic Works of Gerhart Hauptmann. 7 vols. 7*s.* 6*d.* each."
+    },
+    {
+      "id": "s3-54",
+      "sceneId": "s3",
+      "text": "Magic. *By G. K. Chesterton.* 5*s.*"
+    },
+    {
+      "id": "s3-55",
+      "sceneId": "s3",
+      "text": "Peer Gynt. *Translated by R. Ellis Roberts.* 5*s.*"
+    },
+    {
+      "id": "s3-56",
+      "sceneId": "s3",
+      "text": "Repertory Theatre, The. *By P. P. Howe.* 5*s.*"
+    },
+    {
+      "id": "s3-57",
+      "sceneId": "s3",
+      "text": "Fiction"
+    },
+    {
+      "id": "s3-58",
+      "sceneId": "s3",
+      "text": "Autumn Crocuses. *By Anne Douglas Sedgwick.* 9*s.*"
+    },
+    {
+      "id": "s3-59",
+      "sceneId": "s3",
+      "text": "Breaking-Point. *By Michael Artzibashef.* 9*s.*"
+    },
+    {
+      "id": "s3-60",
+      "sceneId": "s3",
+      "text": "Captain Macedoine's Daughter. *By W. McFee.* 9*s.*"
+    },
+    {
+      "id": "s3-61",
+      "sceneId": "s3",
+      "text": "Carnival. *By Compton Mackenzie.* 8*s.*"
+    },
+    {
+      "id": "s3-62",
+      "sceneId": "s3",
+      "text": "Chaste Wife, The. *By Frank Swinnerton.* 9*s.*"
+    },
+    {
+      "id": "s3-63",
+      "sceneId": "s3",
+      "text": "Columbine. *By Viola Meynell.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-64",
+      "sceneId": "s3",
+      "text": "Created Legend, The. *By Feodor Sologub.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-65",
+      "sceneId": "s3",
+      "text": "Crescent Moon, The. *By F. Brett Young.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-66",
+      "sceneId": "s3",
+      "text": "Dandelions. *By Coulson T. Cade.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-67",
+      "sceneId": "s3",
+      "text": "Debit Account, The. *By Oliver Onions.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-68",
+      "sceneId": "s3",
+      "text": "Deep Sea. *By F. Brett Young.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-69",
+      "sceneId": "s3",
+      "text": "Guy and Pauline. *By Compton Mackenzie.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-70",
+      "sceneId": "s3",
+      "text": "In Accordance with the Evidence. *By Oliver Onions.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-71",
+      "sceneId": "s3",
+      "text": "Iron Age, The. *By F. Brett Young.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-72",
+      "sceneId": "s3",
+      "text": "Little Demon, The. *By Feodor Sologub.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-73",
+      "sceneId": "s3",
+      "text": "Lost Girl, The. *By D. H. Lawrence.* 9*s.*"
+    },
+    {
+      "id": "s3-74",
+      "sceneId": "s3",
+      "text": "Millionaire, The. *By Michael Artzibashef.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-75",
+      "sceneId": "s3",
+      "text": "Modern Lovers. *By Viola Meynell.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-76",
+      "sceneId": "s3",
+      "text": "Narcissus. *By Viola Meynell.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-77",
+      "sceneId": "s3",
+      "text": "Nocturne. *By Frank Swinnerton.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-78",
+      "sceneId": "s3",
+      "text": "Old House, The. *By Feodor Sologub.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-79",
+      "sceneId": "s3",
+      "text": "Old Indispensables, The. *By Edward Shanks.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-80",
+      "sceneId": "s3",
+      "text": "Poor Relations. *By Compton Mackenzie.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-81",
+      "sceneId": "s3",
+      "text": "Rich Relatives. *By Compton Mackenzie.* 9*s.*"
+    },
+    {
+      "id": "s3-82",
+      "sceneId": "s3",
+      "text": "Richard Kurt. *By Stephen Hudson.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-83",
+      "sceneId": "s3",
+      "text": "Romantic Man, A. *By Hervey Fisher.* 6*s.*"
+    },
+    {
+      "id": "s3-84",
+      "sceneId": "s3",
+      "text": "Sanine. *By Michael Artzibashef.* 9*s.*"
+    },
+    {
+      "id": "s3-85",
+      "sceneId": "s3",
+      "text": "Second Marriage. *By Viola Meynell.* 7*s.*"
+    },
+    {
+      "id": "s3-86",
+      "sceneId": "s3",
+      "text": "Sinister Street. I. *By Compton Mackenzie.* 9*s.*"
+    },
+    {
+      "id": "s3-87",
+      "sceneId": "s3",
+      "text": "Sinister Street. II. *By Compton Mackenzie.* 9*s.*"
+    },
+    {
+      "id": "s3-88",
+      "sceneId": "s3",
+      "text": "South Wind. *By Norman Douglas.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-89",
+      "sceneId": "s3",
+      "text": "Story of Louie, The. *By Oliver Onions.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-90",
+      "sceneId": "s3",
+      "text": "Sylvia Scarlett. *By Compton Mackenzie.* 8*s.*"
+    },
+    {
+      "id": "s3-91",
+      "sceneId": "s3",
+      "text": "Sylvia and Michael. *By Compton Mackenzie.* 8*s.*"
+    },
+    {
+      "id": "s3-92",
+      "sceneId": "s3",
+      "text": "Tales of the Revolution. *By M. Artzibashef.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-93",
+      "sceneId": "s3",
+      "text": "Tender Conscience, The. *By Bohun Lynch.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-94",
+      "sceneId": "s3",
+      "text": "Third Window, The. *By Anne Douglas Sedgwick.* 6*s.*"
+    },
+    {
+      "id": "s3-95",
+      "sceneId": "s3",
+      "text": "Tragic Bride, The. *By F. Brett Young.* 9*s.*"
+    },
+    {
+      "id": "s3-96",
+      "sceneId": "s3",
+      "text": "Undergrowth. *By F. & E. Brett Young.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-97",
+      "sceneId": "s3",
+      "text": "Women in Love. *By D. H. Lawrence.* 10*s.*"
+    },
+    {
+      "id": "s3-98",
+      "sceneId": "s3",
+      "text": "Widdershins. *By Oliver Onions.* 7*s.* 6*d.*"
+    },
+    {
+      "id": "s3-99",
+      "sceneId": "s3",
+      "text": "The Tales of Henry James"
+    },
+    {
+      "id": "s3-100",
+      "sceneId": "s3",
+      "text": "Altar of the Dead, The."
+    },
+    {
+      "id": "s3-101",
+      "sceneId": "s3",
+      "text": "Aspern Papers, The."
+    },
+    {
+      "id": "s3-102",
+      "sceneId": "s3",
+      "text": "Beast in the Jungle, The."
+    },
+    {
+      "id": "s3-103",
+      "sceneId": "s3",
+      "text": "Coxon Fund, The."
+    },
+    {
+      "id": "s3-104",
+      "sceneId": "s3",
+      "text": "Daisy Miller."
+    },
+    {
+      "id": "s3-105",
+      "sceneId": "s3",
+      "text": "Death of the Lion, The."
+    },
+    {
+      "id": "s3-106",
+      "sceneId": "s3",
+      "text": "Figure in the Carpet, The."
+    },
+    {
+      "id": "s3-107",
+      "sceneId": "s3",
+      "text": "Glasses."
+    },
+    {
+      "id": "s3-108",
+      "sceneId": "s3",
+      "text": "In the Cage."
+    },
+    {
+      "id": "s3-109",
+      "sceneId": "s3",
+      "text": "Jolly Corner, The."
+    },
+    {
+      "id": "s3-110",
+      "sceneId": "s3",
+      "text": "Lesson of the Master, The."
+    },
+    {
+      "id": "s3-111",
+      "sceneId": "s3",
+      "text": "Pupil, The."
+    },
+    {
+      "id": "s3-112",
+      "sceneId": "s3",
+      "text": "Turn of the Screw, The."
+    },
+    {
+      "id": "s3-113",
+      "sceneId": "s3",
+      "text": "Fcap 8vo, 3*s.* 6*d.* each"
+    },
+    {
+      "id": "s3-114",
+      "sceneId": "s3",
+      "text": "The Art and Craft of Letters"
+    },
+    {
+      "id": "s3-115",
+      "sceneId": "s3",
+      "text": "Ballad, The. *By Frank Sidgwick.*"
+    },
+    {
+      "id": "s3-116",
+      "sceneId": "s3",
+      "text": "Comedy. *By John Palmer.*"
+    },
+    {
+      "id": "s3-117",
+      "sceneId": "s3",
+      "text": "Criticism. *By P. P. Howe.*"
+    },
+    {
+      "id": "s3-118",
+      "sceneId": "s3",
+      "text": "Epic, The. *By Lascelles Abercrombie.*"
+    },
+    {
+      "id": "s3-119",
+      "sceneId": "s3",
+      "text": "Essay, The. *By Orlo Williams.*"
+    },
+    {
+      "id": "s3-120",
+      "sceneId": "s3",
+      "text": "History. *By R. H. Gretton.*"
+    },
+    {
+      "id": "s3-121",
+      "sceneId": "s3",
+      "text": "Lyric, The. *By John Drinkwater.*"
+    },
+    {
+      "id": "s3-122",
+      "sceneId": "s3",
+      "text": "Parody. *By Christopher Stone.*"
+    },
+    {
+      "id": "s3-123",
+      "sceneId": "s3",
+      "text": "Satire. *By Gilbert Cannan.*"
+    },
+    {
+      "id": "s3-124",
+      "sceneId": "s3",
+      "text": "Short Story, The. *By Barry Pain.*"
+    },
+    {
+      "id": "s3-125",
+      "sceneId": "s3",
+      "text": "Fcap 8vo, 1*s.* 6*d.* each"
+    },
+    {
+      "id": "s3-126",
+      "sceneId": "s3",
+      "text": "Martin Seeker's Series of Critical Studies"
+    },
+    {
+      "id": "s3-127",
+      "sceneId": "s3",
+      "text": "Robert Bridges. *By F. & E. Brett Young.*"
+    },
+    {
+      "id": "s3-128",
+      "sceneId": "s3",
+      "text": "Samuel Butler. *By Gilbert Cannan.*"
+    },
+    {
+      "id": "s3-129",
+      "sceneId": "s3",
+      "text": "G. K. Chesterton. *By Julius West.*"
+    },
+    {
+      "id": "s3-130",
+      "sceneId": "s3",
+      "text": "Fyodor Dostoevsky. *By J. Middleton Murry.*"
+    },
+    {
+      "id": "s3-131",
+      "sceneId": "s3",
+      "text": "George Gissing. *By Frank Swinnerton.*"
+    },
+    {
+      "id": "s3-132",
+      "sceneId": "s3",
+      "text": "Thomas Hardy. *By Lascelles Abercrombie.*"
+    },
+    {
+      "id": "s3-133",
+      "sceneId": "s3",
+      "text": "Henrik Ibsen. *By R. Ellis Roberts.*"
+    },
+    {
+      "id": "s3-134",
+      "sceneId": "s3",
+      "text": "Henry James. *By Ford Madox Hueffer.*"
+    },
+    {
+      "id": "s3-135",
+      "sceneId": "s3",
+      "text": "Rudyard Kipling. *By Cyril Falls.*"
+    },
+    {
+      "id": "s3-136",
+      "sceneId": "s3",
+      "text": "William Morris. *By John Drinkwater.*"
+    },
+    {
+      "id": "s3-137",
+      "sceneId": "s3",
+      "text": "Walter Pater. *By Edward Thomas.*"
+    },
+    {
+      "id": "s3-138",
+      "sceneId": "s3",
+      "text": "Bernard Shaw. *By P. P. Howe.*"
+    },
+    {
+      "id": "s3-139",
+      "sceneId": "s3",
+      "text": "R. L. Stevenson. *By Frank Swinnerton.*"
+    },
+    {
+      "id": "s3-140",
+      "sceneId": "s3",
+      "text": "A. C. Swinburne. *By Edward Thomas.*"
+    },
+    {
+      "id": "s3-141",
+      "sceneId": "s3",
+      "text": "J. M. Synge. *By P. P. Howe.*"
+    },
+    {
+      "id": "s3-142",
+      "sceneId": "s3",
+      "text": "Walt Whitman. *By Basil de Selincourt.*"
+    },
+    {
+      "id": "s3-143",
+      "sceneId": "s3",
+      "text": "W. B. Yeats. *By Forrest Reid.*"
+    },
+    {
+      "id": "s3-144",
+      "sceneId": "s3",
+      "text": "Demy 8vo, 10*s.* 6*d.*"
+    }
+  ]
+}

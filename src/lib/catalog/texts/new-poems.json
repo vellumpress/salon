@@ -1,0 +1,475 @@
+{
+  "id": "new-poems",
+  "title": "New Poems",
+  "author": "D. H. Lawrence",
+  "year": "1918",
+  "note": "Project Gutenberg 22726",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "AH, stern, cold man, How can you lie so relentless hard While I wash you with weeping water! Do you set your face against the daughter Of life? Can you never discard Your curt pride's ban?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "Once you could see, The white moon show like a breast revealed By the slipping shawl of stars. Could see the small stars tremble As the heart beneath did wield Systole, diastole.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "Oh, masquerader, With a hard face white-enamelled, What are you now? Do you care no longer how My heart is trammelled, Evader?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "Into the shadow-white chamber silts the white Flux of another dawn. The wind that all night Long has waited restless, suddenly wafts A whirl like snow from the plum-trees and the pear, Till petals heaped between the window-shafts In a drift",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "A tall woman, with her long white gown aflow As she strode her limbs amongst it, once more She hastened towards the room. Did she know As she listened in silence outside the silent door? Entering, she saw him in outline, raised on a pyre Aw",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "The stranger's hair was shorn like a lad's dark poll And pale her ivory face: her eyes would fail In silence when she looked: for all the whole Darkness of failure was in them, without avail. Dark in indomitable failure, she who had lost No",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Chapter IV",
+      "place": "Chapter IV",
+      "reentry": "\"'Twas I whose fingers did draw up the young Plant of your body: to me you looked e'er sprung The secret of the moon within your eyes! My mouth you met before your fine red mouth Was set to song--and never your song denies My love, till you",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Chapter V",
+      "place": "Chapter V",
+      "reentry": "\"But you are given back again to me Who have kept intact for you your virginity. Who for the rest of life walk out of care, Indifferent here of myself, since I am gone Where you are gone, and you and I out there Walk now as one.\"",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "AH, stern, cold man, How can you lie so relentless hard While I wash you with weeping water! Do you set your face against the daughter Of life? Can you never discard Your curt pride's ban?"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "You masquerader! How can you shame to act this part Of unswerving indifference to me? You want at last, ah me! To break my heart Evader!"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "You know your mouth Was always sooner to soften Even than your eyes. Now shut it lies Relentless, however often I kiss it in drouth."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "It has no breath Nor any relaxing. Where, Where are you, what have you done? What is this mouth of stone? How did you dare Take cover in death!"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Once you could see, The white moon show like a breast revealed By the slipping shawl of stars. Could see the small stars tremble As the heart beneath did wield Systole, diastole."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "All the lovely macrocosm Was woman once to you, Bride to your groom. No tree in bloom But it leaned you a new White bosom."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "And always and ever Soft as a summering tree Unfolds from the sky, for your good, Unfolded womanhood; Shedding you down as a tree Sheds its flowers on a river."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "I saw your brows Set like rocks beside a sea of gloom, And I shed my very soul down into your thought; Like flowers I fell, to be caught On the comforted pool, like bloom That leaves the boughs."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Oh, masquerader, With a hard face white-enamelled, What are you now? Do you care no longer how My heart is trammelled, Evader?"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Is this you, after all, Metallic, obdurate With bowels of steel? Did you *never* feel?-- Cold, insensate, Mechanical!"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Ah, no!--you multiform, You that I loved, you wonderful, You who darkened and shone, You were many men in one; But never this null This never-warm!"
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Is this the sum of you? Is it all nought? Cold, metal-cold? Are you all told Here, iron-wrought? Is *this* what's become of you?"
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Seven Seals"
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Since this is the last night I keep you home, Come, I will consecrate you for the journey."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Rather I had you would not go. Nay come, I will not again reproach you. Lie back And let me love you a long time ere you go. For you are sullen-hearted still, and lack The will to love me. But even so I will set a seal upon you from my lip, Will set a guard of honour at each door, Seal up each channel out of which might slip Your love for me."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "I kiss your mouth. Ah, love, Could I but seal its ruddy, shining spring Of passion, parch it up, destroy, remove Its softly-stirring crimson welling-up Of kisses! Oh, help me, God! Here at the source I'd lie for ever drinking and drawing in Your fountains, as heaven drinks from out their course The floods."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "I close your ears with kisses And seal your nostrils; and round your neck you'll wear-- Nay, let me work--a delicate chain of kisses. Like beads they go around, and not one misses To touch its fellow on either side."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "And there Full mid-between the champaign of your breast I place a great and burning seal of love Like a dark rose, a mystery of rest On the slow bubbling of your rhythmic heart."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "Nay, I persist, and very faith shall keep You integral to me. Each door, each mystic port Of egress from you I will seal and steep In perfect chrism. Now it is done. The mort Will sound in heaven before it is undone."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "But let me finish what I have begun And shirt you now invulnerable in the mail Of iron kisses, kisses linked like steel. Put greaves upon your thighs and knees, and frail Webbing of steel on your feet. So you shall feel Ensheathed invulnerable with me, with seven Great seals upon your outgoings, and woven Chain of my mystic will wrapped perfectly Upon you, wrapped in indomitable me."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "Reading A Letter"
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "SHE sits on the recreation ground Under an oak whose yellow buds dot the pale blue sky. The young grass twinkles in the wind, and the sound Of the wind in the knotted buds in a canopy."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "So sitting under the knotted canopy Of the wind, she is lifted and carried away as in a balloon Across the insensible void, till she stoops to see The sandy desert beneath her, the dreary platoon."
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "She knows the waste all dry beneath her, in one place Stirring with earth-coloured life, ever turning and stirring. But never the motion has a human face Nor sound, save intermittent machinery whirring."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "And so again, on the recreation ground She alights a stranger, wondering, unused to the scene; Suffering at sight of the children playing around, Hurt at the chalk-coloured tulips, and the even- ing-green."
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "Twenty Years AGO"
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "Round the house were lilacs and strawberries And foal-foots spangling the paths, And far away on the sand-hills, dewberries Caught dust from the sea's long swaths."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "Up the wolds the woods were walking, And nuts fell out of their hair. At the gate the nets hung, balking The star-lit rush of a hare."
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "In the autumn fields, the stubble Tinkled the music of gleaning. At a mother's knees, the trouble Lost all its meaning."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "Yea, what good beginnings To this sad end! Have we had our innings? God forfend!"
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "Intime"
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "Returning, I find her just the same, At just the same old delicate game."
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "Still she says: \"Nay, loose no flame To lick me up and do me harm! Be all yourself!--for oh, the charm Of your heart of fire in which I look! Oh, better there than in any book Glow and enact the dramas and dreams I love for ever!--there it seems You are lovelier than life itself, till desire Comes licking through the bars of your lips And over my face the stray fire slips, Leaving a burn and an ugly smart That will have the oil of illusion. Oh, heart Of fire and beauty, loose no more Your reptile flames of lust; ah, store Your passion in the basket of your soul, Be all yourself, one bonny, burning coal That stays with steady joy of its own fire. But do not seek to take me by desire. Oh, do not seek to thrust on me your fire! For in the firing all my porcelain Of flesh does crackle and shiver and break in pain, My ivory and marble black with stain, My veil of sensitive mystery rent in twain, My altars sullied, I, bereft, remain A priestess execrable, taken in vain--\""
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "So the refrain Sings itself over, and so the game Re-starts itself wherein I am kept Like a glowing brazier faintly blue of flame So that the delicate love-adept Can warm her hands and invite her soul, Sprinkling incense and salt of words And kisses pale, and sipping the toll Of incense-smoke that rises like birds."
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "Yet I've forgotten in playing this game, Things I have known that shall have no name; Forgetting the place from which I came I watch her ward away the flame, Yet warm herself at the fire--then blame Me that I flicker in the basket; Me that I glow not with content To have my substance so subtly spent; Me that I interrupt her game. I ought to be proud that she should ask it Of me to be her fire-opal--."
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "It is well Since I am here for so short a spell Not to interrupt her?--Why should I Break in by making any reply!"
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "TWO Wives"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Into the shadow-white chamber silts the white Flux of another dawn. The wind that all night Long has waited restless, suddenly wafts A whirl like snow from the plum-trees and the pear, Till petals heaped between the window-shafts In a drift die there."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "A nurse in white, at the dawning, flower-foamed pane Draws down the blinds, whose shadows scarcely stain The white rugs on the floor, nor the silent bed That rides the room like a frozen berg, its crest Finally ridged with the austere line of the dead Stretched out at rest."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Less than a year the fourfold feet had pressed The peaceful floor, when fell the sword on their rest. Yet soon, too soon, she had him home again With wounds between them, and suffering like a guest That will not go. Now suddenly going, the pain Leaves an empty breast."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "A tall woman, with her long white gown aflow As she strode her limbs amongst it, once more She hastened towards the room. Did she know As she listened in silence outside the silent door? Entering, she saw him in outline, raised on a pyre Awaiting the fire."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Upraised on the bed, with feet erect as a bow, Like the prow of a boat, his head laid back like the stern Of a ship that stands in a shadowy sea of snow With frozen rigging, she saw him; she drooped like a fern Refolding, she slipped to the floor as a ghost-white peony slips When the thread clips."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "Soft she lay as a shed flower fallen, nor heard The ominous entry, nor saw the other love, The dark, the grave-eyed mistress who thus dared At such an hour to lay her claim, above A stricken wife, so sunk in oblivion, bowed With misery, no more proud."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "The stranger's hair was shorn like a lad's dark poll And pale her ivory face: her eyes would fail In silence when she looked: for all the whole Darkness of failure was in them, without avail. Dark in indomitable failure, she who had lost Now claimed the host,"
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "She softly passed the sorrowful flower shed In blonde and white on the floor, nor even turned Her head aside, but straight towards the bed Moved with slow feet, and her eyes' flame steadily burned. She looked at him as he lay with banded cheek, And she started to speak"
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "Softly: \"I knew it would come to this,\" she said, \"I knew that some day, soon, I should find you thus. So I did not fight you. You went your way instead Of coming mine--and of the two of us I died the first, I, in the after-life Am now your wife.\""
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "\"'Twas I whose fingers did draw up the young Plant of your body: to me you looked e'er sprung The secret of the moon within your eyes! My mouth you met before your fine red mouth Was set to song--and never your song denies My love, till you went south.\""
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "\"'Twas I who placed the bloom of manhood on Your youthful smoothness: I fleeced where fleece was none Your fervent limbs with flickers and tendrils of new Knowledge; I set your heart to its stronger beat; I put my strength upon you, and I threw My life at your feet.\""
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "\"But I whom the years had reared to be your bride, Who for years was sun for your shivering, shade for your sweat, Who for one strange year was as a bride to you--you set me aside With all the old, sweet things of our youth;--and never yet Have I ceased to grieve that I was not great enough To defeat your baser stuff.\""
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "\"But you are given back again to me Who have kept intact for you your virginity. Who for the rest of life walk out of care, Indifferent here of myself, since I am gone Where you are gone, and you and I out there Walk now as one.\""
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "\"Your widow am I, and only I. I dream God bows his head and grants me this supreme Pure look of your last dead face, whence now is gone The mobility, the panther's gambolling, And all your being is given to me, so none Can mock my struggling.\""
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "\"And now at last I kiss your perfect face, Perfecting now our unfinished, first embrace. Your young hushed look that then saw God ablaze In every bush, is given you back, and we Are met at length to finish our rest of days In a unity.\""
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Heimweh"
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "FAR-OFF the lily-statues stand white-ranked in the garden at home. Would God they were shattered quickly, the cattle would tread them out in the loam. I wish the elder trees in flower could suddenly heave, and burst The walls of the house, and nettles puff out from the hearth at which I was nursed."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "It stands so still in the hush composed of trees and inviolate peace, The home of my fathers, the place that is mine, my fate and my old increase. And now that the skies are falling, the world is spouting in fountains of dirt, I would give my soul for the homestead to fall with me, go with me, both in one hurt."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Debacle"
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "THE trees in trouble because of autumn, And scarlet berries falling from the bush, And all the myriad houseless seeds Loosing hold in the wind's insistent push"
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "Moan softly with autumnal parturition, Poor, obscure fruits extruded out of light Into the world of shadow, carried down Between the bitter knees of the after-night."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "Bushed in an uncouth ardour, coiled at core With a knot of life that only bliss can unravel, Fall all the fruits most bitterly into earth Bitterly into corrosion bitterly travel."
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "What is it internecine that is locked, By very fierceness into a quiescence Within the rage? We shall not know till it burst Out of corrosion into new florescence."
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "Nay, but how tortured is the frightful seed The spark intense within it, all without Mordant corrosion gnashing and champing hard For ruin on the naked small redoubt."
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "Bitter, to fold the issue, and make no sally; To have the mystery, but not go forth; To bear, but retaliate nothing, given to save The spark in storms of corrosion, as seeds from the north."
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "The sharper, more horrid the pressure, the harder the heart That saves the blue grain of eternal fire Within its quick, committed to hold and wait And suffer unheeding, only forbidden to expire."
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "Narcissus"
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "Where the minnows trace A glinting web quick hid in the gloom of the brook, When I think of the place And remember the small lad lying intent to look Through the shadowy face At the little fish thread-threading the watery nook--"
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "It seems to me The woman you are should be nixie, there is a pool Where we ought to be. You undine-clear and pearly, soullessly cool And waterly The pool for my limbs to fathom, my soul's last school."
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "Narcissus Ventured so long ago in the deeps of reflection. Illyssus Broke the bounds and beyond!--Dim recollection Of fishes Soundlessly moving in heaven's other direction!"
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "Be Undine towards the waters, moving back; For me A pool! Put off the soul you've got, oh lack Your human self immortal; take the watery track."
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "Autumn Sunshine"
+    },
+    {
+      "id": "s7-20",
+      "sceneId": "s7",
+      "text": "THE sun sets out the autumn crocuses And fills them up a pouring measure Of death-producing wine, till treasure Runs waste down their chalices."
+    },
+    {
+      "id": "s7-21",
+      "sceneId": "s7",
+      "text": "All, all Persephone's pale cups of mould Are on the board, are over-filled; The portion to the gods is spilled; Now, mortals all, take hold!"
+    },
+    {
+      "id": "s7-22",
+      "sceneId": "s7",
+      "text": "The time is now, the wine-cup full and full Of lambent heaven, a pledging-cup; Let now all mortal men take up The drink, and a long, strong pull."
+    },
+    {
+      "id": "s7-23",
+      "sceneId": "s7",
+      "text": "Out of the hell-queen's cup, the heaven's pale wine-- Drink then, invisible heroes, drink. Lips to the vessels, never shrink, Throats to the heavens incline."
+    },
+    {
+      "id": "s7-24",
+      "sceneId": "s7",
+      "text": "And take within the wine the god's great oath By heaven and earth and hellish stream To break this sick and nauseous dream We writhe and lust in, both."
+    },
+    {
+      "id": "s7-25",
+      "sceneId": "s7",
+      "text": "Swear, in the pale wine poured from the cups of the queen Of hell, to wake and be free From this nightmare we writhe in, Break out of this foul has-been."
+    },
+    {
+      "id": "s7-26",
+      "sceneId": "s7",
+      "text": "ON That DAY"
+    },
+    {
+      "id": "s7-27",
+      "sceneId": "s7",
+      "text": "ON that day I shall put roses on roses, and cover your grave With multitude of white roses: and since you were brave One bright red ray."
+    },
+    {
+      "id": "s7-28",
+      "sceneId": "s7",
+      "text": "So people, passing under The ash-trees of the valley-road, will raise Their eyes and look at the grave on the hill, in wonder, Wondering mount, and put the flowers asunder"
+    },
+    {
+      "id": "s7-29",
+      "sceneId": "s7",
+      "text": "To see whose praise Is blazoned here so white and so bloodily red. Then they will say: \"'Tis long since she is dead, Who has remembered her after many days?\""
+    },
+    {
+      "id": "s7-30",
+      "sceneId": "s7",
+      "text": "And standing there They will consider how you went your ways Unnoticed among them, a still queen lost in the maze Of this earthly affair."
+    },
+    {
+      "id": "s7-31",
+      "sceneId": "s7",
+      "text": "A queen, they'll say, Has slept unnoticed on a forgotten hill. Sleeps on unknown, unnoticed there, until Dawns my insurgent day."
+    }
+  ]
+}

@@ -7,6 +7,9 @@ import { LOCAL_WORKS } from "./full-pdf.ts";
 import { countryFor, isCityHubLabel } from "./countries.ts";
 import { blurbFor, sentenceCount } from "./blurbs.ts";
 import { isBoundLocal } from "./en-rights.ts";
+import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
+import { curatorialTrack } from "./curatorial.ts";
+import { FIRST_SESSION_RITUAL_IDS } from "./rituals.ts";
 
 /** Full local novels whose stub openings were deleted so Pages cannot strand readers. */
 const FULL_NOVEL_NO_STUB = [
@@ -1757,6 +1760,79 @@ test("Salon PM CLEAR ×5 load as local full binds on the Host open", () => {
   const lulu = textWork("miss-lulu-bett");
   assert.equal(lulu.scenes[0]?.title, "April");
   assert.equal(lulu.scenes.at(-1)?.title, "September");
+});
+
+/** Tier B format-min CLEAR batches 1–2. Later only — never Featured, cold-open untouched. */
+const TIER_B_BATCH_1_2 = [
+  "a-warning-to-the-curious-and-other-ghost-stories",
+  "antic-hay",
+  "babbitt",
+  "billy-budd",
+  "birds-beasts-and-flowers",
+  "birthright",
+  "country-sentiment",
+  "crome-yellow",
+  "domesday-book",
+  "elmer-gantry",
+  "figures-of-earth",
+  "heliodora-and-other-poems",
+  "one-of-ours",
+  "roumanian-stories",
+  "the-doves-nest-and-other-stories",
+  "the-man-who-knew-too-much",
+  "the-mothers-recompense",
+  "the-pier-glass",
+  "the-poetic-edda",
+  "the-trembling-of-a-leaf-little-stories-of-the-south-sea-islands",
+  "the-triumph-of-the-egg",
+  "the-waste-land",
+  "tortoises",
+  "ulysses",
+  "white-buildings",
+  "amores",
+  "counter-attack-and-other-poems",
+  "fifty-years-other-poems",
+  "free-air",
+  "island-tales-on-the-makaloa-mat",
+  "jurgen",
+  "main-street",
+  "motley-and-other-poems",
+  "new-poems",
+  "picture-show",
+  "poems-wilfred-owen",
+  "poor-white",
+  "prufrock-and-other-observations",
+  "reincarnations",
+  "the-chinese-nightingale-and-other-poems",
+  "the-forerunner-his-parables-and-poems",
+  "the-garden-of-bright-waters",
+  "the-return-of-the-soldier",
+] as const;
+
+test("Tier B batches 1–2 are local format-min binds, never Featured", () => {
+  assert.equal(TIER_B_BATCH_1_2.length, 43);
+  assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  for (const id of TIER_B_BATCH_1_2) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(curatorialTrack(id), "later", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assertNoStubOpening(id);
+    const full = textWork(id);
+    assert.equal(work!.breaths, full.breaths.length, id);
+    assert.ok(full.breaths.length > 1, id);
+    assert.ok(
+      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
+      `${id} shelf opening`,
+    );
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
+  }
 });
 
 test("homepage examples keep country + concrete sentence", () => {

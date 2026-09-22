@@ -1,0 +1,2032 @@
+{
+  "id": "the-waste-land",
+  "title": "The Waste Land",
+  "author": "T. S. Eliot",
+  "year": "1922",
+  "note": "Project Gutenberg 1321",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Memory and desire, stirring",
+      "place": "Memory and desire, stirring",
+      "reentry": "Dull roots with spring rain. Winter kept us warm, covering",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Earth in forgetful snow, feeding",
+      "place": "Earth in forgetful snow, feeding",
+      "reentry": "A little life with dried tubers. Summer surprised us, coming over the Starnbergersee With a shower of rain; we stopped in the colonnade, And went on in sunlight, into the Hofgarten, 10",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "And drank coffee, and talked for an hour",
+      "place": "And drank coffee, and talked for an hour",
+      "reentry": "Bin gar keine Russin, stamm’ aus Litauen, echt deutsch. And when we were children, staying at the archduke’s,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "My cousin’s, he took me out on a sled,",
+      "place": "My cousin’s, he took me out on a sled,",
+      "reentry": "And I was frightened. He said, Marie, Marie, hold on tight. And down we went.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "In the mountains, there you feel free",
+      "place": "In the mountains, there you feel free",
+      "reentry": "I read, much of the night, and go south in the winter.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "You cannot say, or guess, for you know only",
+      "place": "You cannot say, or guess, for you know only",
+      "reentry": "A heap of broken images, where the sun beats, And the dead tree gives no shelter, the cricket no relief,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "And the dry stone no sound of water. Only",
+      "place": "And the dry stone no sound of water. Only",
+      "reentry": "There is shadow under this red rock, (Come in under the shadow of this red rock), And I will show you something different from either",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Your shadow at morning striding behind you",
+      "place": "Your shadow at morning striding behind you",
+      "reentry": "Or your shadow at evening rising to meet you; I will show you fear in a handful of dust. 30",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Frisch weht der Wind",
+      "place": "Frisch weht der Wind",
+      "reentry": "Der Heimat zu Mein Irisch Kind,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Wo weilest du?",
+      "place": "Wo weilest du?",
+      "reentry": "“You gave me hyacinths first a year ago; “They called me the hyacinth girl.” —Yet when we came back, late, from the Hyacinth garden,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Your arms full, and your hair wet, I could not",
+      "place": "Your arms full, and your hair wet, I could not",
+      "reentry": "Speak, and my eyes failed, I was neither Living nor dead, and I knew nothing, 40",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Looking into the heart of light, the silence",
+      "place": "Looking into the heart of light, the silence",
+      "reentry": "*Oed’ und leer das Meer*.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Madame Sosostris, famous clairvoyante,",
+      "place": "Madame Sosostris, famous clairvoyante,",
+      "reentry": "Had a bad cold, nevertheless Is known to be the wisest woman in Europe,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "With a wicked pack of cards. Here, said she,",
+      "place": "With a wicked pack of cards. Here, said she,",
+      "reentry": "Is your card, the drowned Phoenician Sailor, (Those are pearls that were his eyes. Look!)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Here is Belladonna, the Lady of the Rocks,",
+      "place": "Here is Belladonna, the Lady of the Rocks,",
+      "reentry": "The lady of situations. 50 Here is the man with three staves, and here the Wheel,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "And here is the one-eyed merchant, and this card,",
+      "place": "And here is the one-eyed merchant, and this card,",
+      "reentry": "Which is blank, is something he carries on his back, Which I am forbidden to see. I do not find",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "The Hanged Man. Fear death by water",
+      "place": "The Hanged Man. Fear death by water",
+      "reentry": "I see crowds of people, walking round in a ring. Thank you. If you see dear Mrs. Equitone,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Tell her I bring the horoscope myself:",
+      "place": "Tell her I bring the horoscope myself:",
+      "reentry": "One must be so careful these days.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Under the brown fog of a winter dawn,",
+      "place": "Under the brown fog of a winter dawn,",
+      "reentry": "A crowd flowed over London Bridge, so many, I had not thought death had undone so many.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Sighs, short and infrequent, were exhaled,",
+      "place": "Sighs, short and infrequent, were exhaled,",
+      "reentry": "And each man fixed his eyes before his feet. Flowed up the hill and down King William Street,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "To where Saint Mary Woolnoth kept the hours",
+      "place": "To where Saint Mary Woolnoth kept the hours",
+      "reentry": "With a dead sound on the final stroke of nine. There I saw one I knew, and stopped him, crying “Stetson! “You who were with me in the ships at Mylae! 70 “That corpse you planted last year in your garden, “Has it begun to sprout? Will it blo",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "The Chair she sat in, like a burnished throne,",
+      "place": "The Chair she sat in, like a burnished throne,",
+      "reentry": "Glowed on the marble, where the glass Held up by standards wrought with fruited vines From which a golden Cupidon peeped out 80 (Another hid his eyes behind his wing)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "Doubled the flames of sevenbranched candelabra",
+      "place": "Doubled the flames of sevenbranched candelabra",
+      "reentry": "Reflecting light upon the table as The glitter of her jewels rose to meet it,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "From satin cases poured in rich profusion",
+      "place": "From satin cases poured in rich profusion",
+      "reentry": "In vials of ivory and coloured glass Unstoppered, lurked her strange synthetic perfumes,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Unguent, powdered, or liquid—troubled, confused",
+      "place": "Unguent, powdered, or liquid—troubled, confused",
+      "reentry": "And drowned the sense in odours; stirred by the air That freshened from the window, these ascended 90",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "In fattening the prolonged candle-flames,",
+      "place": "In fattening the prolonged candle-flames,",
+      "reentry": "Flung their smoke into the laquearia, Stirring the pattern on the coffered ceiling.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Huge sea-wood fed with copper",
+      "place": "Huge sea-wood fed with copper",
+      "reentry": "Burned green and orange, framed by the coloured stone, In which sad light a carvèd dolphin swam.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Above the antique mantel was displayed",
+      "place": "Above the antique mantel was displayed",
+      "reentry": "As though a window gave upon the sylvan scene The change of Philomel, by the barbarous king So rudely forced; yet there the nightingale 100",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Filled all the desert with inviolable voice",
+      "place": "Filled all the desert with inviolable voice",
+      "reentry": "And still she cried, and still the world pursues, “Jug Jug” to dirty ears.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "And other withered stumps of time",
+      "place": "And other withered stumps of time",
+      "reentry": "Were told upon the walls; staring forms Leaned out, leaning, hushing the room enclosed.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "Footsteps shuffled on the stair",
+      "place": "Footsteps shuffled on the stair",
+      "reentry": "Under the firelight, under the brush, her hair Spread out in fiery points Glowed into words, then would be savagely still. 110",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "I think we are in rats’ alley",
+      "place": "I think we are in rats’ alley",
+      "reentry": "Where the dead men lost their bones.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "The wind under the door",
+      "place": "The wind under the door",
+      "reentry": "“What is that noise now? What is the wind doing?” Nothing again nothing. 120 “Do “You know nothing? Do you see nothing? Do you remember “Nothing?”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "I remember",
+      "place": "I remember",
+      "reentry": "Those are pearls that were his eyes. “Are you alive, or not? Is there nothing in your head?” But",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "O O O O that Shakespeherian Rag—",
+      "place": "O O O O that Shakespeherian Rag—",
+      "reentry": "It’s so elegant So intelligent 130 “What shall I do now? What shall I do?”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "I shall rush out as I am, and walk the street",
+      "place": "I shall rush out as I am, and walk the street",
+      "reentry": "“With my hair down, so. What shall we do tomorrow? “What shall we ever do?”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "The hot water at ten",
+      "place": "The hot water at ten",
+      "reentry": "And if it rains, a closed car at four. And we shall play a game of chess, Pressing lidless eyes and waiting for a knock upon the door.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "When Lil’s husband got demobbed, I said—",
+      "place": "When Lil’s husband got demobbed, I said—",
+      "reentry": "I didn’t mince my words, I said to her myself, 140 Hurry UP Please IT’S Time Now Albert’s coming back, make yourself a bit smart. He’ll want to know what you done with that money he gave you",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "To get yourself some teeth. He did, I was there",
+      "place": "To get yourself some teeth. He did, I was there",
+      "reentry": "You have them all out, Lil, and get a nice set, He said, I swear, I can’t bear to look at you. And no more can’t I, I said, and think of poor Albert, He’s been in the army four years, he wants a good time, And if you don’t give it him, ther",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "Hurry Up Please It’S Time",
+      "place": "Hurry Up Please It’S Time",
+      "reentry": "If you don’t like it you can get on with it, I said. Others can pick and choose if you can’t. But if Albert makes off, it won’t be for lack of telling. You ought to be ashamed, I said, to look so antique. (And her only thirty-one.)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "I can’t help it, she said, pulling a long face,",
+      "place": "I can’t help it, she said, pulling a long face,",
+      "reentry": "It’s them pills I took, to bring it off, she said. (She’s had five already, and nearly died of young George.) 160 The chemist said it would be all right, but I’ve never been the same.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "You are a proper fool, I said",
+      "place": "You are a proper fool, I said",
+      "reentry": "Well, if Albert won’t leave you alone, there it is, I said, What you get married for if you don’t want children?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "Hurry Up Please It’S Time",
+      "place": "Hurry Up Please It’S Time",
+      "reentry": "Well, that Sunday Albert was home, they had a hot gammon, And they asked me in to dinner, to get the beauty of it hot—",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "Hurry Up Please It’S Time",
+      "place": "Hurry Up Please It’S Time",
+      "reentry": "Hurry UP Please IT’S Time Goonight Bill. Goonight Lou. Goonight May. Goonight. 170",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "Ta ta. Goonight. Goonight",
+      "place": "Ta ta. Goonight. Goonight",
+      "reentry": "Good night, ladies, good night, sweet ladies, good night, good night.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "Iii. the Fire Sermon",
+      "place": "Iii. the Fire Sermon",
+      "reentry": "The river’s tent is broken: the last fingers of leaf",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "Clutch and sink into the wet bank. the wind",
+      "place": "Clutch and sink into the wet bank. the wind",
+      "reentry": "Crosses the brown land, unheard. The nymphs are departed. Sweet Thames, run softly, till I end my song. The river bears no empty bottles, sandwich papers, Silk handkerchiefs, cardboard boxes, cigarette ends Or other testimony of summer nigh",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "Departed, have left no addresses",
+      "place": "Departed, have left no addresses",
+      "reentry": "By the waters of Leman I sat down and wept . . . Sweet Thames, run softly till I end my song, Sweet Thames, run softly, for I speak not loud or long.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "But at my back in a cold blast I hear",
+      "place": "But at my back in a cold blast I hear",
+      "reentry": "The rattle of the bones, and chuckle spread from ear to ear. A rat crept softly through the vegetation",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "Dragging its slimy belly on the bank",
+      "place": "Dragging its slimy belly on the bank",
+      "reentry": "While I was fishing in the dull canal On a winter evening round behind the gashouse 190",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "Musing upon the king my brother’s wreck",
+      "place": "Musing upon the king my brother’s wreck",
+      "reentry": "And on the king my father’s death before him. White bodies naked on the low damp ground",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "And bones cast in a little low dry garret,",
+      "place": "And bones cast in a little low dry garret,",
+      "reentry": "Rattled by the rat’s foot only, year to year. But at my back from time to time I hear",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "The sound of horns and motors, which shall bring",
+      "place": "The sound of horns and motors, which shall bring",
+      "reentry": "Sweeney to Mrs. Porter in the spring. O the moon shone bright on Mrs. Porter And on her daughter 200",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "They wash their feet in soda water",
+      "place": "They wash their feet in soda water",
+      "reentry": "*Et O ces voix d’enfants, chantant dans la coupole!*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "Twit twit twit",
+      "place": "Twit twit twit",
+      "reentry": "Jug jug jug jug jug jug So rudely forc’d. Tereu",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "Unreal City",
+      "place": "Unreal City",
+      "reentry": "Under the brown fog of a winter noon Mr. Eugenides, the Smyrna merchant Unshaven, with a pocket full of currants 210",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "C.i.f. London: documents at sight,",
+      "place": "C.i.f. London: documents at sight,",
+      "reentry": "Asked me in demotic French To luncheon at the Cannon Street Hotel",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "Followed by a weekend at the Metropole",
+      "place": "Followed by a weekend at the Metropole",
+      "reentry": "At the violet hour, when the eyes and back Turn upward from the desk, when the human engine waits",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "Like a taxi throbbing waiting,",
+      "place": "Like a taxi throbbing waiting,",
+      "reentry": "I Tiresias, though blind, throbbing between two lives, Old man with wrinkled female breasts, can see At the violet hour, the evening hour that strives 220",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "Homeward, and brings the sailor home from sea,",
+      "place": "Homeward, and brings the sailor home from sea,",
+      "reentry": "The typist home at teatime, clears her breakfast, lights Her stove, and lays out food in tins.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "Out of the window perilously spread",
+      "place": "Out of the window perilously spread",
+      "reentry": "Her drying combinations touched by the sun’s last rays, On the divan are piled (at night her bed)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "Stockings, slippers, camisoles, and stays",
+      "place": "Stockings, slippers, camisoles, and stays",
+      "reentry": "I Tiresias, old man with wrinkled dugs Perceived the scene, and foretold the rest— I too awaited the expected guest. 230",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "He, the young man carbuncular, arrives,",
+      "place": "He, the young man carbuncular, arrives,",
+      "reentry": "A small house agent’s clerk, with one bold stare, One of the low on whom assurance sits",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "As a silk hat on a Bradford millionaire",
+      "place": "As a silk hat on a Bradford millionaire",
+      "reentry": "The time is now propitious, as he guesses, The meal is ended, she is bored and tired,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "Endeavours to engage her in caresses",
+      "place": "Endeavours to engage her in caresses",
+      "reentry": "Which still are unreproved, if undesired. Flushed and decided, he assaults at once; Exploring hands encounter no defence; 240",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "His vanity requires no response,",
+      "place": "His vanity requires no response,",
+      "reentry": "And makes a welcome of indifference. (And I Tiresias have foresuffered all",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "Enacted on this same divan or bed;",
+      "place": "Enacted on this same divan or bed;",
+      "reentry": "I who have sat by Thebes below the wall And walked among the lowest of the dead.)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "Bestows one final patronising kiss,",
+      "place": "Bestows one final patronising kiss,",
+      "reentry": "And gropes his way, finding the stairs unlit . . .",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "She turns and looks a moment in the glass,",
+      "place": "She turns and looks a moment in the glass,",
+      "reentry": "Hardly aware of her departed lover; 250 Her brain allows one half-formed thought to pass: “Well now that’s done: and I’m glad it’s over.”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "When lovely woman stoops to folly and",
+      "place": "When lovely woman stoops to folly and",
+      "reentry": "Paces about her room again, alone, She smooths her hair with automatic hand,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "And puts a record on the gramophone",
+      "place": "And puts a record on the gramophone",
+      "reentry": "“This music crept by me upon the waters”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "And along the Strand, up Queen Victoria Street",
+      "place": "And along the Strand, up Queen Victoria Street",
+      "reentry": "O City city, I can sometimes hear Beside a public bar in Lower Thames Street, 260",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "The pleasant whining of a mandoline",
+      "place": "The pleasant whining of a mandoline",
+      "reentry": "And a clatter and a chatter from within Where fishmen lounge at noon: where the walls",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "Of Magnus Martyr hold",
+      "place": "Of Magnus Martyr hold",
+      "reentry": "Inexplicable splendour of Ionian white and gold.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "The river sweats",
+      "place": "The river sweats",
+      "reentry": "Oil and tar The barges drift",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "With the turning tide",
+      "place": "With the turning tide",
+      "reentry": "Red sails 270 Wide",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "To leeward, swing on the heavy spar",
+      "place": "To leeward, swing on the heavy spar",
+      "reentry": "The barges wash Drifting logs",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "Down Greenwich reach",
+      "place": "Down Greenwich reach",
+      "reentry": "Past the Isle of Dogs. Weialala leia",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "Wallala leialala",
+      "place": "Wallala leialala",
+      "reentry": "Elizabeth and Leicester Beating oars 280",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "The stern was formed",
+      "place": "The stern was formed",
+      "reentry": "A gilded shell Red and gold",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "The brisk swell",
+      "place": "The brisk swell",
+      "reentry": "Rippled both shores Southwest wind",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "Carried down stream",
+      "place": "Carried down stream",
+      "reentry": "The peal of bells White towers Weialala leia 290",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "Wallala leialala",
+      "place": "Wallala leialala",
+      "reentry": "“Trams and dusty trees.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "Highbury bore me. Richmond and Kew",
+      "place": "Highbury bore me. Richmond and Kew",
+      "reentry": "Undid me. By Richmond I raised my knees Supine on the floor of a narrow canoe.”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "Under my feet. After the event",
+      "place": "Under my feet. After the event",
+      "reentry": "He wept. He promised ‘a new start’. I made no comment. What should I resent?” “On Margate Sands. 300",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "I can connect",
+      "place": "I can connect",
+      "reentry": "Nothing with nothing. The broken fingernails of dirty hands.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "My people humble people who expect",
+      "place": "My people humble people who expect",
+      "reentry": "Nothing.” la la",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "To Carthage then I came",
+      "place": "To Carthage then I came",
+      "reentry": "Burning burning burning burning",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "O Lord Thou pluckest me out",
+      "place": "O Lord Thou pluckest me out",
+      "reentry": "O Lord Thou pluckest 310",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "Phlebas the Phoenician, a fortnight dead,",
+      "place": "Phlebas the Phoenician, a fortnight dead,",
+      "reentry": "Forgot the cry of gulls, and the deep sea swell And the profit and loss.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "A current under sea",
+      "place": "A current under sea",
+      "reentry": "Picked his bones in whispers. As he rose and fell He passed the stages of his age and youth",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "Entering the whirlpool",
+      "place": "Entering the whirlpool",
+      "reentry": "Gentile or Jew O you who turn the wheel and look to windward, 320 Consider Phlebas, who was once handsome and tall as you.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "After the torchlight red on sweaty faces",
+      "place": "After the torchlight red on sweaty faces",
+      "reentry": "After the frosty silence in the gardens After the agony in stony places",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "The shouting and the crying",
+      "place": "The shouting and the crying",
+      "reentry": "Prison and palace and reverberation Of thunder of spring over distant mountains",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "He who was living is now dead",
+      "place": "He who was living is now dead",
+      "reentry": "We who were living are now dying With a little patience 330",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "Here is no water but only rock",
+      "place": "Here is no water but only rock",
+      "reentry": "Rock and no water and the sandy road The road winding above among the mountains",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "Which are mountains of rock without water",
+      "place": "Which are mountains of rock without water",
+      "reentry": "If there were water we should stop and drink Amongst the rock one cannot stop or think",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "Sweat is dry and feet are in the sand",
+      "place": "Sweat is dry and feet are in the sand",
+      "reentry": "If there were only water amongst the rock Dead mountain mouth of carious teeth that cannot spit Here one can neither stand nor lie nor sit 340",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "There is not even silence in the mountains",
+      "place": "There is not even silence in the mountains",
+      "reentry": "But dry sterile thunder without rain There is not even solitude in the mountains",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "But red sullen faces sneer and snarl",
+      "place": "But red sullen faces sneer and snarl",
+      "reentry": "From doors of mudcracked houses If there were water",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "And no rock",
+      "place": "And no rock",
+      "reentry": "If there were rock And also water And water 350",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "A spring",
+      "place": "A spring",
+      "reentry": "A pool among the rock If there were the sound of water only",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "Not the cicada",
+      "place": "Not the cicada",
+      "reentry": "And dry grass singing But sound of water over a rock",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "Where the hermit-thrush sings in the pine trees",
+      "place": "Where the hermit-thrush sings in the pine trees",
+      "reentry": "Drip drop drip drop drop drop drop But there is no water",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "Who is the third who walks always beside you?",
+      "place": "Who is the third who walks always beside you?",
+      "reentry": "When I count, there are only you and I together 360 But when I look ahead up the white road",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "There is always another one walking beside you",
+      "place": "There is always another one walking beside you",
+      "reentry": "Gliding wrapt in a brown mantle, hooded I do not know whether a man or a woman —But who is that on the other side of you?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "What is that sound high in the air",
+      "place": "What is that sound high in the air",
+      "reentry": "Murmur of maternal lamentation Who are those hooded hordes swarming",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "Over endless plains, stumbling in cracked earth",
+      "place": "Over endless plains, stumbling in cracked earth",
+      "reentry": "Ringed by the flat horizon only 370 What is the city over the mountains",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "Cracks and reforms and bursts in the violet air",
+      "place": "Cracks and reforms and bursts in the violet air",
+      "reentry": "Falling towers Jerusalem Athens Alexandria",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "Vienna London",
+      "place": "Vienna London",
+      "reentry": "Unreal",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "A woman drew her long black hair out tight",
+      "place": "A woman drew her long black hair out tight",
+      "reentry": "And fiddled whisper music on those strings And bats with baby faces in the violet light Whistled, and beat their wings 380",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "And crawled head downward down a blackened wall",
+      "place": "And crawled head downward down a blackened wall",
+      "reentry": "And upside down in air were towers Tolling reminiscent bells, that kept the hours And voices singing out of empty cisterns and exhausted wells.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "In this decayed hole among the mountains",
+      "place": "In this decayed hole among the mountains",
+      "reentry": "In the faint moonlight, the grass is singing Over the tumbled graves, about the chapel",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "There is the empty chapel, only the wind’s home",
+      "place": "There is the empty chapel, only the wind’s home",
+      "reentry": "It has no windows, and the door swings, Dry bones can harm no one. 390",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "Only a cock stood on the rooftree",
+      "place": "Only a cock stood on the rooftree",
+      "reentry": "Co co rico co co rico In a flash of lightning. Then a damp gust",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s115",
+      "title": "Bringing rain",
+      "place": "Bringing rain",
+      "reentry": "Ganga was sunken, and the limp leaves",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s116",
+      "title": "Waited for rain, while the black clouds",
+      "place": "Waited for rain, while the black clouds",
+      "reentry": "Gathered far distant, over Himavant. The jungle crouched, humped in silence.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s117",
+      "title": "Then spoke the thunder",
+      "place": "Then spoke the thunder",
+      "reentry": "DA 400 *Datta:* what have we given?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s118",
+      "title": "My friend, blood shaking my heart",
+      "place": "My friend, blood shaking my heart",
+      "reentry": "The awful daring of a moment’s surrender Which an age of prudence can never retract",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s119",
+      "title": "By this, and this only, we have existed",
+      "place": "By this, and this only, we have existed",
+      "reentry": "Which is not to be found in our obituaries Or in memories draped by the beneficent spider",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s120",
+      "title": "Or under seals broken by the lean solicitor",
+      "place": "Or under seals broken by the lean solicitor",
+      "reentry": "In our empty rooms DA 410",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s121",
+      "title": "Dayadhvam: I have heard the key",
+      "place": "Dayadhvam: I have heard the key",
+      "reentry": "Turn in the door once and turn once only We think of the key, each in his prison",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s122",
+      "title": "Thinking of the key, each confirms a prison",
+      "place": "Thinking of the key, each confirms a prison",
+      "reentry": "Only at nightfall, aetherial rumours Revive for a moment a broken Coriolanus DA",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s123",
+      "title": "Damyata: the boat responded",
+      "place": "Damyata: the boat responded",
+      "reentry": "Gaily, to the hand expert with sail and oar The sea was calm, your heart would have responded 420",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s124",
+      "title": "Gaily, when invited, beating obedient",
+      "place": "Gaily, when invited, beating obedient",
+      "reentry": "To controlling hands",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s125",
+      "title": "I sat upon the shore",
+      "place": "I sat upon the shore",
+      "reentry": "Fishing, with the arid plain behind me Shall I at least set my lands in order? London Bridge is falling down falling down falling down",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s126",
+      "title": "Poi s’ascose nel foco che gli affina",
+      "place": "Poi s’ascose nel foco che gli affina",
+      "reentry": "Quando fiam ceu chelidon* — O swallow swallow *Le Prince d’Aquitaine à la tour abolie_ These fragments I have shored against my ruins 430",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s127",
+      "title": "Why then Ile fit you. Hieronymo’s mad againe",
+      "place": "Why then Ile fit you. Hieronymo’s mad againe",
+      "reentry": "Datta. Dayadhvam. Damyata. Shantih shantih shantih",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s128",
+      "title": "Line 415 aetherial] aethereal",
+      "place": "Line 415 aetherial] aethereal",
+      "reentry": "Line 428 ceu] uti— Editor",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s129",
+      "title": "Notes on “The Waste Land”",
+      "place": "Notes on “The Waste Land”",
+      "reentry": "Not only the title, but the plan and a good deal of the incidental symbolism of the poem were suggested by Miss Jessie L. Weston’s book on the Grail legend: *From Ritual to Romance* (Macmillan, Cambridge) Indeed, so deeply am I indebted, Mi",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s130",
+      "title": "I. the Burial of the Dead",
+      "place": "I. the Burial of the Dead",
+      "reentry": "Line 20. Cf. *Ezekiel* 2:1.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s131",
+      "title": "Ii.  a Game of Chess",
+      "place": "Ii.  a Game of Chess",
+      "reentry": "77. Cf. *Antony and Cleopatra*, II. ii., l. 190.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s132",
+      "title": "Iii.  the Fire Sermon",
+      "place": "Iii.  the Fire Sermon",
+      "reentry": "176. V. Spenser, *Prothalamion*.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s133",
+      "title": "Illa negat; placuit quae sit sententia docti",
+      "place": "Illa negat; placuit quae sit sententia docti",
+      "reentry": "Quaerere Tiresiae: venus huic erat utraque nota. Nam duo magnorum viridi coeuntia silva",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s134",
+      "title": "Corpora serpentum baculi violaverat ictu",
+      "place": "Corpora serpentum baculi violaverat ictu",
+      "reentry": "Deque viro factus, mirabile, femina septem Egerat autumnos; octavo rursus eosdem",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s135",
+      "title": "Vidit et ‘est vestrae si tanta potentia plagae,’",
+      "place": "Vidit et ‘est vestrae si tanta potentia plagae,’",
+      "reentry": "Dixit ‘ut auctoris sortem in contraria mutet, Nunc quoque vos feriam!’ percussis anguibus isdem",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s136",
+      "title": "Forma prior rediit genetivaque venit imago",
+      "place": "Forma prior rediit genetivaque venit imago",
+      "reentry": "Arbiter hic igitur sumptus de lite iocosa Dicta Iovis firmat; gravius Saturnia iusto",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s137",
+      "title": "Nec pro materia fertur doluisse suique",
+      "place": "Nec pro materia fertur doluisse suique",
+      "reentry": "Iudicis aeterna damnavit lumina nocte, At pater omnipotens (neque enim licet inrita cuiquam",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s138",
+      "title": "Facta dei fecisse deo) pro lumine adempto",
+      "place": "Facta dei fecisse deo) pro lumine adempto",
+      "reentry": "Scire futura dedit poenamque levavit honore.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s139",
+      "title": "Quadra to Philip of Spain:",
+      "place": "Quadra to Philip of Spain:",
+      "reentry": "“In the afternoon we were in a barge, watching the games on the river. (The queen) was alone with Lord Robert and myself on the poop, when they began to talk nonsense, and went so far that Lord Robert at last said, as I was on the spot ther",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s140",
+      "title": "Siena mi fe’, disfecemi Maremma.”",
+      "place": "Siena mi fe’, disfecemi Maremma.”",
+      "reentry": "307. V. St. Augustine’s *Confessions*: “to Carthage then I came, where a cauldron of unholy loves sang all about mine ears.”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s141",
+      "title": "V. What the Thunder Said",
+      "place": "V. What the Thunder Said",
+      "reentry": "In the first part of Part V three themes are employed: the journey to Emmaus, the approach to the Chapel Perilous (see Miss Weston’s book) and the present decay of eastern Europe.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s142",
+      "title": "Make a thin curtain for your epitaphs.”",
+      "place": "Make a thin curtain for your epitaphs.”",
+      "reentry": "411. Cf. *Inferno*, xxxiii. 46:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s143",
+      "title": "Poi s’ascose nel foco che gli affina.”",
+      "place": "Poi s’ascose nel foco che gli affina.”",
+      "reentry": "428. V. *Pervigilium Veneris*. Cf. Philomela in Parts II and III.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Dull roots with spring rain. Winter kept us warm, covering"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "A little life with dried tubers. Summer surprised us, coming over the Starnbergersee With a shower of rain; we stopped in the colonnade, And went on in sunlight, into the Hofgarten, 10"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Bin gar keine Russin, stamm’ aus Litauen, echt deutsch. And when we were children, staying at the archduke’s,"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "And I was frightened. He said, Marie, Marie, hold on tight. And down we went."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "I read, much of the night, and go south in the winter."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "What are the roots that clutch, what branches grow Out of this stony rubbish? Son of man, 20"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "A heap of broken images, where the sun beats, And the dead tree gives no shelter, the cricket no relief,"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "There is shadow under this red rock, (Come in under the shadow of this red rock), And I will show you something different from either"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Or your shadow at evening rising to meet you; I will show you fear in a handful of dust. 30"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Der Heimat zu Mein Irisch Kind,"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "“You gave me hyacinths first a year ago; “They called me the hyacinth girl.” —Yet when we came back, late, from the Hyacinth garden,"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Speak, and my eyes failed, I was neither Living nor dead, and I knew nothing, 40"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "*Oed’ und leer das Meer*."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "Had a bad cold, nevertheless Is known to be the wisest woman in Europe,"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Is your card, the drowned Phoenician Sailor, (Those are pearls that were his eyes. Look!)"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "The lady of situations. 50 Here is the man with three staves, and here the Wheel,"
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Which is blank, is something he carries on his back, Which I am forbidden to see. I do not find"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "I see crowds of people, walking round in a ring. Thank you. If you see dear Mrs. Equitone,"
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "One must be so careful these days."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "Unreal City, 60"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "A crowd flowed over London Bridge, so many, I had not thought death had undone so many."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "And each man fixed his eyes before his feet. Flowed up the hill and down King William Street,"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "With a dead sound on the final stroke of nine. There I saw one I knew, and stopped him, crying “Stetson! “You who were with me in the ships at Mylae! 70 “That corpse you planted last year in your garden, “Has it begun to sprout? Will it bloom this year? “Or has the sudden frost disturbed its bed? “Oh keep the Dog far hence, that’s friend to men, “Or with his nails he’ll dig it up again! “You! hypocrite lecteur!—mon semblable,—mon frère!”"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "Glowed on the marble, where the glass Held up by standards wrought with fruited vines From which a golden Cupidon peeped out 80 (Another hid his eyes behind his wing)"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "Reflecting light upon the table as The glitter of her jewels rose to meet it,"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "In vials of ivory and coloured glass Unstoppered, lurked her strange synthetic perfumes,"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "And drowned the sense in odours; stirred by the air That freshened from the window, these ascended 90"
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Flung their smoke into the laquearia, Stirring the pattern on the coffered ceiling."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "Burned green and orange, framed by the coloured stone, In which sad light a carvèd dolphin swam."
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "As though a window gave upon the sylvan scene The change of Philomel, by the barbarous king So rudely forced; yet there the nightingale 100"
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "And still she cried, and still the world pursues, “Jug Jug” to dirty ears."
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "Were told upon the walls; staring forms Leaned out, leaning, hushing the room enclosed."
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "Under the firelight, under the brush, her hair Spread out in fiery points Glowed into words, then would be savagely still. 110"
+    },
+    {
+      "id": "s30-1",
+      "sceneId": "s30",
+      "text": "“My nerves are bad to-night. Yes, bad. Stay with me. “Speak to me. Why do you never speak. Speak. “What are you thinking of? What thinking? What? “I never know what you are thinking. Think.”"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "Where the dead men lost their bones."
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "“What is that noise?”"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "“What is that noise now? What is the wind doing?” Nothing again nothing. 120 “Do “You know nothing? Do you see nothing? Do you remember “Nothing?”"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "Those are pearls that were his eyes. “Are you alive, or not? Is there nothing in your head?” But"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "It’s so elegant So intelligent 130 “What shall I do now? What shall I do?”"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "“With my hair down, so. What shall we do tomorrow? “What shall we ever do?”"
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "And if it rains, a closed car at four. And we shall play a game of chess, Pressing lidless eyes and waiting for a knock upon the door."
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "I didn’t mince my words, I said to her myself, 140 Hurry UP Please IT’S Time Now Albert’s coming back, make yourself a bit smart. He’ll want to know what you done with that money he gave you"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "You have them all out, Lil, and get a nice set, He said, I swear, I can’t bear to look at you. And no more can’t I, I said, and think of poor Albert, He’s been in the army four years, he wants a good time, And if you don’t give it him, there’s others will, I said. Oh is there, she said. Something o’ that, I said. 150 Then I’ll know who to thank, she said, and give me a straight look."
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "If you don’t like it you can get on with it, I said. Others can pick and choose if you can’t. But if Albert makes off, it won’t be for lack of telling. You ought to be ashamed, I said, to look so antique. (And her only thirty-one.)"
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "It’s them pills I took, to bring it off, she said. (She’s had five already, and nearly died of young George.) 160 The chemist said it would be all right, but I’ve never been the same."
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "Well, if Albert won’t leave you alone, there it is, I said, What you get married for if you don’t want children?"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Well, that Sunday Albert was home, they had a hot gammon, And they asked me in to dinner, to get the beauty of it hot—"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "Hurry UP Please IT’S Time Goonight Bill. Goonight Lou. Goonight May. Goonight. 170"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "Good night, ladies, good night, sweet ladies, good night, good night."
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "The river’s tent is broken: the last fingers of leaf"
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "Crosses the brown land, unheard. The nymphs are departed. Sweet Thames, run softly, till I end my song. The river bears no empty bottles, sandwich papers, Silk handkerchiefs, cardboard boxes, cigarette ends Or other testimony of summer nights. The nymphs are departed. And their friends, the loitering heirs of city directors; 180"
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "By the waters of Leman I sat down and wept . . . Sweet Thames, run softly till I end my song, Sweet Thames, run softly, for I speak not loud or long."
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "The rattle of the bones, and chuckle spread from ear to ear. A rat crept softly through the vegetation"
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "While I was fishing in the dull canal On a winter evening round behind the gashouse 190"
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "And on the king my father’s death before him. White bodies naked on the low damp ground"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "Rattled by the rat’s foot only, year to year. But at my back from time to time I hear"
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "Sweeney to Mrs. Porter in the spring. O the moon shone bright on Mrs. Porter And on her daughter 200"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "*Et O ces voix d’enfants, chantant dans la coupole!*"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "Jug jug jug jug jug jug So rudely forc’d. Tereu"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "Under the brown fog of a winter noon Mr. Eugenides, the Smyrna merchant Unshaven, with a pocket full of currants 210"
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "Asked me in demotic French To luncheon at the Cannon Street Hotel"
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "At the violet hour, when the eyes and back Turn upward from the desk, when the human engine waits"
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "I Tiresias, though blind, throbbing between two lives, Old man with wrinkled female breasts, can see At the violet hour, the evening hour that strives 220"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "The typist home at teatime, clears her breakfast, lights Her stove, and lays out food in tins."
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "Her drying combinations touched by the sun’s last rays, On the divan are piled (at night her bed)"
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "I Tiresias, old man with wrinkled dugs Perceived the scene, and foretold the rest— I too awaited the expected guest. 230"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "A small house agent’s clerk, with one bold stare, One of the low on whom assurance sits"
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "The time is now propitious, as he guesses, The meal is ended, she is bored and tired,"
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "Which still are unreproved, if undesired. Flushed and decided, he assaults at once; Exploring hands encounter no defence; 240"
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "And makes a welcome of indifference. (And I Tiresias have foresuffered all"
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "I who have sat by Thebes below the wall And walked among the lowest of the dead.)"
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "And gropes his way, finding the stairs unlit . . ."
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "Hardly aware of her departed lover; 250 Her brain allows one half-formed thought to pass: “Well now that’s done: and I’m glad it’s over.”"
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "Paces about her room again, alone, She smooths her hair with automatic hand,"
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "“This music crept by me upon the waters”"
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "O City city, I can sometimes hear Beside a public bar in Lower Thames Street, 260"
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "And a clatter and a chatter from within Where fishmen lounge at noon: where the walls"
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "Inexplicable splendour of Ionian white and gold."
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "Oil and tar The barges drift"
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "Red sails 270 Wide"
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "The barges wash Drifting logs"
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "Past the Isle of Dogs. Weialala leia"
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "Elizabeth and Leicester Beating oars 280"
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "A gilded shell Red and gold"
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "Rippled both shores Southwest wind"
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "The peal of bells White towers Weialala leia 290"
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "“Trams and dusty trees."
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "Undid me. By Richmond I raised my knees Supine on the floor of a narrow canoe.”"
+    },
+    {
+      "id": "s83-1",
+      "sceneId": "s83",
+      "text": "“My feet are at Moorgate, and my heart"
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "He wept. He promised ‘a new start’. I made no comment. What should I resent?” “On Margate Sands. 300"
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "Nothing with nothing. The broken fingernails of dirty hands."
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "Nothing.” la la"
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "Burning burning burning burning"
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "O Lord Thou pluckest 310"
+    },
+    {
+      "id": "s88-1",
+      "sceneId": "s88",
+      "text": "burning"
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "Forgot the cry of gulls, and the deep sea swell And the profit and loss."
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "Picked his bones in whispers. As he rose and fell He passed the stages of his age and youth"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "Gentile or Jew O you who turn the wheel and look to windward, 320 Consider Phlebas, who was once handsome and tall as you."
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "After the frosty silence in the gardens After the agony in stony places"
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "Prison and palace and reverberation Of thunder of spring over distant mountains"
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "We who were living are now dying With a little patience 330"
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "Rock and no water and the sandy road The road winding above among the mountains"
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "If there were water we should stop and drink Amongst the rock one cannot stop or think"
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "If there were only water amongst the rock Dead mountain mouth of carious teeth that cannot spit Here one can neither stand nor lie nor sit 340"
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "But dry sterile thunder without rain There is not even solitude in the mountains"
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "From doors of mudcracked houses If there were water"
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "If there were rock And also water And water 350"
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "A pool among the rock If there were the sound of water only"
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "And dry grass singing But sound of water over a rock"
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "Drip drop drip drop drop drop drop But there is no water"
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "When I count, there are only you and I together 360 But when I look ahead up the white road"
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "Gliding wrapt in a brown mantle, hooded I do not know whether a man or a woman —But who is that on the other side of you?"
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "Murmur of maternal lamentation Who are those hooded hordes swarming"
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "Ringed by the flat horizon only 370 What is the city over the mountains"
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "Falling towers Jerusalem Athens Alexandria"
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "Unreal"
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "And fiddled whisper music on those strings And bats with baby faces in the violet light Whistled, and beat their wings 380"
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "And upside down in air were towers Tolling reminiscent bells, that kept the hours And voices singing out of empty cisterns and exhausted wells."
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "In the faint moonlight, the grass is singing Over the tumbled graves, about the chapel"
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "It has no windows, and the door swings, Dry bones can harm no one. 390"
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "Co co rico co co rico In a flash of lightning. Then a damp gust"
+    },
+    {
+      "id": "s115-0",
+      "sceneId": "s115",
+      "text": "Ganga was sunken, and the limp leaves"
+    },
+    {
+      "id": "s116-0",
+      "sceneId": "s116",
+      "text": "Gathered far distant, over Himavant. The jungle crouched, humped in silence."
+    },
+    {
+      "id": "s117-0",
+      "sceneId": "s117",
+      "text": "DA 400 *Datta:* what have we given?"
+    },
+    {
+      "id": "s118-0",
+      "sceneId": "s118",
+      "text": "The awful daring of a moment’s surrender Which an age of prudence can never retract"
+    },
+    {
+      "id": "s119-0",
+      "sceneId": "s119",
+      "text": "Which is not to be found in our obituaries Or in memories draped by the beneficent spider"
+    },
+    {
+      "id": "s120-0",
+      "sceneId": "s120",
+      "text": "In our empty rooms DA 410"
+    },
+    {
+      "id": "s121-0",
+      "sceneId": "s121",
+      "text": "Turn in the door once and turn once only We think of the key, each in his prison"
+    },
+    {
+      "id": "s122-0",
+      "sceneId": "s122",
+      "text": "Only at nightfall, aetherial rumours Revive for a moment a broken Coriolanus DA"
+    },
+    {
+      "id": "s123-0",
+      "sceneId": "s123",
+      "text": "Gaily, to the hand expert with sail and oar The sea was calm, your heart would have responded 420"
+    },
+    {
+      "id": "s124-0",
+      "sceneId": "s124",
+      "text": "To controlling hands"
+    },
+    {
+      "id": "s125-0",
+      "sceneId": "s125",
+      "text": "Fishing, with the arid plain behind me Shall I at least set my lands in order? London Bridge is falling down falling down falling down"
+    },
+    {
+      "id": "s126-0",
+      "sceneId": "s126",
+      "text": "Quando fiam ceu chelidon* — O swallow swallow *Le Prince d’Aquitaine à la tour abolie_ These fragments I have shored against my ruins 430"
+    },
+    {
+      "id": "s127-0",
+      "sceneId": "s127",
+      "text": "Datta. Dayadhvam. Damyata. Shantih shantih shantih"
+    },
+    {
+      "id": "s128-0",
+      "sceneId": "s128",
+      "text": "Line 428 ceu] uti— Editor"
+    },
+    {
+      "id": "s129-0",
+      "sceneId": "s129",
+      "text": "Not only the title, but the plan and a good deal of the incidental symbolism of the poem were suggested by Miss Jessie L. Weston’s book on the Grail legend: *From Ritual to Romance* (Macmillan, Cambridge) Indeed, so deeply am I indebted, Miss Weston’s book will elucidate the difficulties of the poem much better than my notes can do; and I recommend it (apart from the great interest of the book itself) to any who think such elucidation of the poem worth the trouble. To another work of anthropology I am indebted in general, one which has influenced our generation profoundly; I mean *The Golden Bough*; I have used especially the two volumes *Adonis, Attis, Osiris*. Anyone who is acquainted with these works will immediately recognise in the poem certain references to vegetation ceremonies."
+    },
+    {
+      "id": "s130-0",
+      "sceneId": "s130",
+      "text": "Line 20. Cf. *Ezekiel* 2:1."
+    },
+    {
+      "id": "s130-1",
+      "sceneId": "s130",
+      "text": "23. Cf. *Ecclesiastes* 12:5."
+    },
+    {
+      "id": "s130-2",
+      "sceneId": "s130",
+      "text": "31. V. *Tristan und Isolde*, i, verses 5-8."
+    },
+    {
+      "id": "s130-3",
+      "sceneId": "s130",
+      "text": "42. Id. iii, verse 24."
+    },
+    {
+      "id": "s130-4",
+      "sceneId": "s130",
+      "text": "46. I am not familiar with the exact constitution of the Tarot pack of cards, from which I have obviously departed to suit my own convenience. The Hanged Man, a member of the traditional pack, fits my purpose in two ways: because he is associated in my mind with the Hanged God of Frazer, and because I associate him with the hooded figure in the passage of the disciples to Emmaus in Part V. The Phoenician Sailor and the Merchant appear later; also the “crowds of people,” and Death by Water is executed in Part IV. The Man with Three Staves (an authentic member of the Tarot pack) I associate, quite arbitrarily, with the Fisher King himself."
+    },
+    {
+      "id": "s130-5",
+      "sceneId": "s130",
+      "text": "60. Cf. Baudelaire:"
+    },
+    {
+      "id": "s130-6",
+      "sceneId": "s130",
+      "text": "“Fourmillante cité, cité; pleine de rêves, Où le spectre en plein jour raccroche le passant.” 63. Cf. *Inferno*, iii. 55-7."
+    },
+    {
+      "id": "s130-7",
+      "sceneId": "s130",
+      "text": "“si lunga tratta di gente, ch’io non avrei mai creduto che morte tanta n’avesse disfatta.” 64. Cf. *Inferno*, iv. 25-7:"
+    },
+    {
+      "id": "s130-8",
+      "sceneId": "s130",
+      "text": "“Quivi, secondo che per ascoltare, “non avea pianto, ma’ che di sospiri, “che l’aura eterna facevan tremare.” 68. A phenomenon which I have often noticed."
+    },
+    {
+      "id": "s130-9",
+      "sceneId": "s130",
+      "text": "74. Cf. the Dirge in Webster’s *White Devil*."
+    },
+    {
+      "id": "s130-10",
+      "sceneId": "s130",
+      "text": "76. V. Baudelaire, Preface to *Fleurs du Mal*."
+    },
+    {
+      "id": "s131-0",
+      "sceneId": "s131",
+      "text": "77. Cf. *Antony and Cleopatra*, II. ii., l. 190."
+    },
+    {
+      "id": "s131-1",
+      "sceneId": "s131",
+      "text": "92. Laquearia. V. *Aeneid*, I. 726:"
+    },
+    {
+      "id": "s131-2",
+      "sceneId": "s131",
+      "text": "dependent lychni laquearibus aureis incensi, et noctem flammis funalia vincunt. 98. Sylvan scene. V. Milton, *Paradise Lost*, iv. 140."
+    },
+    {
+      "id": "s131-3",
+      "sceneId": "s131",
+      "text": "99. V. Ovid, *Metamorphoses*, vi, Philomela."
+    },
+    {
+      "id": "s131-4",
+      "sceneId": "s131",
+      "text": "100. Cf. Part III, l. 204."
+    },
+    {
+      "id": "s131-5",
+      "sceneId": "s131",
+      "text": "115. Cf. Part III, l. 195."
+    },
+    {
+      "id": "s131-6",
+      "sceneId": "s131",
+      "text": "118. Cf. Webster: “Is the wind in that door still?”"
+    },
+    {
+      "id": "s131-7",
+      "sceneId": "s131",
+      "text": "126. Cf. Part I, l. 37, 48."
+    },
+    {
+      "id": "s131-8",
+      "sceneId": "s131",
+      "text": "138. Cf. the game of chess in Middleton’s *Women beware Women*."
+    },
+    {
+      "id": "s132-0",
+      "sceneId": "s132",
+      "text": "176. V. Spenser, *Prothalamion*."
+    },
+    {
+      "id": "s132-1",
+      "sceneId": "s132",
+      "text": "192. Cf. *The Tempest*, I. ii."
+    },
+    {
+      "id": "s132-2",
+      "sceneId": "s132",
+      "text": "196. Cf. Marvell, *To His Coy Mistress*."
+    },
+    {
+      "id": "s132-3",
+      "sceneId": "s132",
+      "text": "197. Cf. Day, *Parliament of Bees*:"
+    },
+    {
+      "id": "s132-4",
+      "sceneId": "s132",
+      "text": "“When of the sudden, listening, you shall hear, “A noise of horns and hunting, which shall bring “Actaeon to Diana in the spring, “Where all shall see her naked skin . . .” 199. I do not know the origin of the ballad from which these lines are taken: it was reported to me from Sydney, Australia."
+    },
+    {
+      "id": "s132-5",
+      "sceneId": "s132",
+      "text": "202. V. Verlaine, *Parsifal*."
+    },
+    {
+      "id": "s132-6",
+      "sceneId": "s132",
+      "text": "210. The currants were quoted at a price “carriage and insurance free to London”; and the Bill of Lading etc. were to be handed to the buyer upon payment of the sight draft."
+    },
+    {
+      "id": "s132-7",
+      "sceneId": "s132",
+      "text": "210. “Carriage and insurance free”] “cost, insurance and freight”-Editor."
+    },
+    {
+      "id": "s132-8",
+      "sceneId": "s132",
+      "text": "218. Tiresias, although a mere spectator and not indeed a “character,” is yet the most important personage in the poem, uniting all the rest. Just as the one-eyed merchant, seller of currants, melts into the Phoenician Sailor, and the latter is not wholly distinct from Ferdinand Prince of Naples, so all the women are one woman, and the two sexes meet in Tiresias. What Tiresias *sees*, in fact, is the substance of the poem. The whole passage from Ovid is of great anthropological interest:"
+    },
+    {
+      "id": "s132-9",
+      "sceneId": "s132",
+      "text": "‘. . . Cum Iunone iocos et maior vestra profecto est Quam, quae contingit maribus,’ dixisse, ‘voluptas.’"
+    },
+    {
+      "id": "s133-0",
+      "sceneId": "s133",
+      "text": "Quaerere Tiresiae: venus huic erat utraque nota. Nam duo magnorum viridi coeuntia silva"
+    },
+    {
+      "id": "s134-0",
+      "sceneId": "s134",
+      "text": "Deque viro factus, mirabile, femina septem Egerat autumnos; octavo rursus eosdem"
+    },
+    {
+      "id": "s135-0",
+      "sceneId": "s135",
+      "text": "Dixit ‘ut auctoris sortem in contraria mutet, Nunc quoque vos feriam!’ percussis anguibus isdem"
+    },
+    {
+      "id": "s136-0",
+      "sceneId": "s136",
+      "text": "Arbiter hic igitur sumptus de lite iocosa Dicta Iovis firmat; gravius Saturnia iusto"
+    },
+    {
+      "id": "s137-0",
+      "sceneId": "s137",
+      "text": "Iudicis aeterna damnavit lumina nocte, At pater omnipotens (neque enim licet inrita cuiquam"
+    },
+    {
+      "id": "s138-0",
+      "sceneId": "s138",
+      "text": "Scire futura dedit poenamque levavit honore."
+    },
+    {
+      "id": "s138-1",
+      "sceneId": "s138",
+      "text": "221. This may not appear as exact as Sappho’s lines, but I had in mind the “longshore” or “dory” fisherman, who returns at nightfall."
+    },
+    {
+      "id": "s138-2",
+      "sceneId": "s138",
+      "text": "253. V. Goldsmith, the song in *The Vicar of Wakefield*."
+    },
+    {
+      "id": "s138-3",
+      "sceneId": "s138",
+      "text": "257. V. *The Tempest*, as above."
+    },
+    {
+      "id": "s138-4",
+      "sceneId": "s138",
+      "text": "264. The interior of St. Magnus Martyr is to my mind one of the finest among Wren’s interiors. See *The Proposed Demolition of Nineteen City Churches* (P. S. King & Son, Ltd.)."
+    },
+    {
+      "id": "s138-5",
+      "sceneId": "s138",
+      "text": "266. The Song of the (three) Thames-daughters begins here. From line 292 to 306 inclusive they speak in turn. V. *Götterdämmerung*, III. i: the Rhine-daughters."
+    },
+    {
+      "id": "s138-6",
+      "sceneId": "s138",
+      "text": "279. V. Froude, *Elizabeth*, Vol. I, ch. iv, letter of De"
+    },
+    {
+      "id": "s139-0",
+      "sceneId": "s139",
+      "text": "“In the afternoon we were in a barge, watching the games on the river. (The queen) was alone with Lord Robert and myself on the poop, when they began to talk nonsense, and went so far that Lord Robert at last said, as I was on the spot there was no reason why they should not be married if the queen pleased.”"
+    },
+    {
+      "id": "s139-1",
+      "sceneId": "s139",
+      "text": "293. Cf. *Purgatorio*, v. 133:"
+    },
+    {
+      "id": "s139-2",
+      "sceneId": "s139",
+      "text": "“Ricorditi di me, che son la Pia;"
+    },
+    {
+      "id": "s140-0",
+      "sceneId": "s140",
+      "text": "307. V. St. Augustine’s *Confessions*: “to Carthage then I came, where a cauldron of unholy loves sang all about mine ears.”"
+    },
+    {
+      "id": "s140-1",
+      "sceneId": "s140",
+      "text": "308. The complete text of the Buddha’s Fire Sermon (which corresponds in importance to the Sermon on the Mount) from which these words are taken, will be found translated in the late Henry Clarke Warren’s *Buddhism in Translation* (Harvard Oriental Series). Mr. Warren was one of the great pioneers of Buddhist studies in the Occident."
+    },
+    {
+      "id": "s140-2",
+      "sceneId": "s140",
+      "text": "309. From St. Augustine’s *Confessions* again. The collocation of these two representatives of eastern and western asceticism, as the culmination of this part of the poem, is not an accident."
+    },
+    {
+      "id": "s141-0",
+      "sceneId": "s141",
+      "text": "In the first part of Part V three themes are employed: the journey to Emmaus, the approach to the Chapel Perilous (see Miss Weston’s book) and the present decay of eastern Europe."
+    },
+    {
+      "id": "s141-1",
+      "sceneId": "s141",
+      "text": "357. This is *Turdus aonalaschkae pallasii*, the hermit-thrush which I have heard in Quebec County. Chapman says (*Handbook of Birds of Eastern North America*) “it is most at home in secluded woodland and thickety retreats. . . . Its notes are not remarkable for variety or volume, but in purity and sweetness of tone and exquisite modulation they are unequalled.” Its “water-dripping song” is justly celebrated."
+    },
+    {
+      "id": "s141-2",
+      "sceneId": "s141",
+      "text": "360. The following lines were stimulated by the account of one of the Antarctic expeditions (I forget which, but I think one of Shackleton’s): it was related that the party of explorers, at the extremity of their strength, had the constant delusion that there was *one more member* than could actually be counted."
+    },
+    {
+      "id": "s141-3",
+      "sceneId": "s141",
+      "text": "366-76. Cf. Hermann Hesse, *Blick ins Chaos*:"
+    },
+    {
+      "id": "s141-4",
+      "sceneId": "s141",
+      "text": "“Schon ist halb Europa, schon ist zumindest der halbe Osten Europas auf dem Wege zum Chaos, fährt betrunken im heiligem Wahn am Abgrund entlang und singt dazu, singt betrunken und hymnisch wie Dmitri Karamasoff sang. Ueber diese Lieder lacht der Bürger beleidigt, der Heilige und Seher hört sie mit Tränen.”"
+    },
+    {
+      "id": "s141-5",
+      "sceneId": "s141",
+      "text": "401. “Datta, dayadhvam, damyata” (Give, sympathize, control). The fable of the meaning of the Thunder is found in the *Brihadaranyaka—Upanishad*, 5, 1. A translation is found in Deussen’s *Sechzig Upanishads des Veda*, p. 489."
+    },
+    {
+      "id": "s141-6",
+      "sceneId": "s141",
+      "text": "407. Cf. Webster, *The White Devil*, v. vi:"
+    },
+    {
+      "id": "s141-7",
+      "sceneId": "s141",
+      "text": "“. . . they’ll remarry Ere the worm pierce your winding-sheet, ere the spider"
+    },
+    {
+      "id": "s142-0",
+      "sceneId": "s142",
+      "text": "411. Cf. *Inferno*, xxxiii. 46:"
+    },
+    {
+      "id": "s142-1",
+      "sceneId": "s142",
+      "text": "“ed io sentii chiavar l’uscio di sotto all’orribile torre.” Also F. H. Bradley, *Appearance and Reality*, p. 346:"
+    },
+    {
+      "id": "s142-2",
+      "sceneId": "s142",
+      "text": "“My external sensations are no less private to myself than are my thoughts or my feelings. In either case my experience falls within my own circle, a circle closed on the outside; and, with all its elements alike, every sphere is opaque to the others which surround it. . . . In brief, regarded as an existence which appears in a soul, the whole world for each is peculiar and private to that soul.”"
+    },
+    {
+      "id": "s142-3",
+      "sceneId": "s142",
+      "text": "424. V. Weston, From *Ritual to Romance*; chapter on the Fisher King."
+    },
+    {
+      "id": "s142-4",
+      "sceneId": "s142",
+      "text": "427. V. *Purgatorio*, xxvi. 148."
+    },
+    {
+      "id": "s142-5",
+      "sceneId": "s142",
+      "text": "“‘Ara vos prec per aquella valor ‘que vos guida al som de l’escalina, ‘sovegna vos a temps de ma dolor.’"
+    },
+    {
+      "id": "s143-0",
+      "sceneId": "s143",
+      "text": "428. V. *Pervigilium Veneris*. Cf. Philomela in Parts II and III."
+    },
+    {
+      "id": "s143-1",
+      "sceneId": "s143",
+      "text": "429. V. Gerard de Nerval, Sonnet *El Desdichado*."
+    },
+    {
+      "id": "s143-2",
+      "sceneId": "s143",
+      "text": "431. V. Kyd’s *Spanish Tragedy*."
+    },
+    {
+      "id": "s143-3",
+      "sceneId": "s143",
+      "text": "433. Shantih. Repeated as here, a formal ending to an Upanishad. ‘The Peace which passeth understanding’ is a feeble translation of the content of this word."
+    }
+  ]
+}
