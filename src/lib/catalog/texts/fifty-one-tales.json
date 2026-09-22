@@ -1,0 +1,2612 @@
+{
+  "id": "fifty-one-tales",
+  "title": "Fifty-One Tales",
+  "author": "Lord Dunsany",
+  "year": "1915",
+  "note": "Project Gutenberg 7838",
+  "minutes": 197,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Assignation",
+      "place": "The Assignation",
+      "reentry": "Fame singing in the highways, and trifling as she sang, with sordid adventurers, passed the poet by.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Charon",
+      "place": "Charon",
+      "reentry": "Charon leaned forward and rowed. All things were one with his weariness.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "The Death of Pan",
+      "place": "The Death of Pan",
+      "reentry": "When the travellers from London entered Arcady they lamented one to another the death of Pan.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "The Hen",
+      "place": "The Hen",
+      "reentry": "All along the farmyard gables the swallows sat a-row, twittering uneasily to one another, telling of many things, but thinking only of Summer and the South, for Autumn was afoot and the North wind waiting.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Wind and Fog",
+      "place": "Wind and Fog",
+      "reentry": "\"Way for us,\" said the North Wind as he came down the sea on an errand of old Winter.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "The Raft-Builders",
+      "place": "The Raft-Builders",
+      "reentry": "All we who write put me in mind of sailors hastily making rafts upon doomed ships.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "The Workman",
+      "place": "The Workman",
+      "reentry": "I saw a workman fall with his scaffolding right from the summit of some vast hotel. And as he came down I saw him holding a knife and trying to cut his name on the scaffolding. He had time to try and do this for he must have had nearly thre",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "The Guest",
+      "place": "The Guest",
+      "reentry": "A young man came into an ornate restaurant at eight o'clock in London.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Death and Odysseus",
+      "place": "Death and Odysseus",
+      "reentry": "In the Olympian courts Love laughed at Death, because he was unsightly, and because She couldn't help it, and because he never did anything worth doing, and because She would.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "Death and the Orange",
+      "place": "Death and the Orange",
+      "reentry": "Two dark young men in a foreign southern land sat at a restaurant table with one woman.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "Time and the Tradesman",
+      "place": "Time and the Tradesman",
+      "reentry": "Once Time as he prowled the world, his hair grey not with weakness but with dust of the ruin of cities, came to a furniture shop and entered the Antique department. And there he saw a man darkening the wood of a chair with dye and beating i",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s11",
+      "title": "The Little City",
+      "place": "The Little City",
+      "reentry": "I was in the pre-destined 11.8 from Goraghwood to Drogheda, when I suddenly saw the city. It was a little city in a valley, and only seemed to have a little smoke, and the sun caught the smoke and turned it golden, so that it looked like an",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s12",
+      "title": "The Unpasturable Fields",
+      "place": "The Unpasturable Fields",
+      "reentry": "Thus spake the mountains: \"Behold us, even us; the old ones, the grey ones, that wear the feet of Time. Time on our rocks shall break his staff and stumble: and still we shall sit majestic, even as now, hearing the sound of the sea, our old",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s13",
+      "title": "The Worm and the Angel",
+      "place": "The Worm and the Angel",
+      "reentry": "As he crawled from the tombs of the fallen a worm met with an angel.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s14",
+      "title": "The Songless Country",
+      "place": "The Songless Country",
+      "reentry": "The poet came unto a great country in which there were no songs. And he lamented gently for the nation that had not any little foolish songs to sing to itself at evening.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s15",
+      "title": "The Latest Thing",
+      "place": "The Latest Thing",
+      "reentry": "I saw an unclean-feeder by the banks of the river of Time. He crouched by orchards numerous with apples in a happy land of flowers; colossal barns stood near which the ancients had stored with grain, and the sun was golden on serene far hil",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s16",
+      "title": "The Demagogue and the Demi-monde",
+      "place": "The Demagogue and the Demi-monde",
+      "reentry": "A demagogue and a demi-mondaine chanced to arrive together at the gate of Paradise. And the Saint looked sorrowfully at them both.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s17",
+      "title": "The Giant Poppy",
+      "place": "The Giant Poppy",
+      "reentry": "I dreamt that I went back to the hills I knew, whence on a clear day you can see the walls of Ilion and the plains of Roncesvalles. There used to be woods along the tops of those hills with clearings in them where the moonlight fell, and th",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s18",
+      "title": "Roses",
+      "place": "Roses",
+      "reentry": "I know a roadside where the wild rose blooms with a strange abundance. There is a beauty in the blossoms too of an almost exotic kind, a taint of deeper pink that shocks the Puritan flowers. Two hundred generations ago (generations, I mean,",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s19",
+      "title": "The Man With the Golden Ear-rings",
+      "place": "The Man With the Golden Ear-rings",
+      "reentry": "It may be that I dreamed this. So much at least is certain--that I turned one day from the traffic of a city, and came to its docks and saw its slimy wharves going down green and steep into the water, and saw the huge grey river slipping by",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s20",
+      "title": "The Dream of King Karna-Vootra",
+      "place": "The Dream of King Karna-Vootra",
+      "reentry": "King Karna-Vootra sitting on his throne commanding all things said: \"I very clearly saw last night the queenly Vava-Nyria. Though partly she was hidden by great clouds that swept continually by her, rolling over and over, yet her face was u",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s21",
+      "title": "The Storm",
+      "place": "The Storm",
+      "reentry": "They saw a little ship that was far at sea and that went by the name of the *Petite Esperance*. And because of its uncouth rig and its lonely air and the look that it had of coming from strangers' lands they said: \"It is neither a ship to g",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s22",
+      "title": "A Mistaken Identity",
+      "place": "A Mistaken Identity",
+      "reentry": "Fame as she walked at evening in a city saw the painted face of Notoriety flaunting beneath a gas-lamp, and many kneeled unto her in the dirt of the road.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s23",
+      "title": "The True History of the Hare and the Tortoise",
+      "place": "The True History of the Hare and the Tortoise",
+      "reentry": "For a long time there was doubt with acrimony among the beasts as to whether the Hare or the Tortoise could run the swifter. Some said the Hare was the swifter of the two because he had such long ears, and others said the Tortoise was the s",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s24",
+      "title": "Alone the Immortals",
+      "place": "Alone the Immortals",
+      "reentry": "I heard it said that far away from here, on the wrong side of the deserts of Cathay and in a country dedicate to winter, are all the years that are dead. And there a certain valley shuts them in and hides them, as rumor has it, from the wor",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s25",
+      "title": "A Moral Little Tale",
+      "place": "A Moral Little Tale",
+      "reentry": "There was once an earnest Puritan who held it wrong to dance. And for his principles he labored hard, his was a zealous life. And there loved him all of those who hated the dance; and those that loved the dance respected him too; they said ",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s26",
+      "title": "The Return of Song",
+      "place": "The Return of Song",
+      "reentry": "\"The swans are singing again,\" said to one another the gods. And looking downwards, for my dreams had taken me to some fair and far Valhalla, I saw below me an iridescent bubble not greatly larger than a star shine beautifully but faintly, ",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s27",
+      "title": "Spring In Town",
+      "place": "Spring In Town",
+      "reentry": "At a street corner sat, and played with a wind, Winter disconsolate.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s28",
+      "title": "How the Enemy Came to Thlunrana",
+      "place": "How the Enemy Came to Thlunrana",
+      "reentry": "It had been prophesied of old and foreseen from the ancient days that its enemy would come upon Thlunrana. And the date of its doom was known and the gate by which it would enter, yet none had prophesied of the enemy who he was save that he",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s29",
+      "title": "A Losing Game",
+      "place": "A Losing Game",
+      "reentry": "Once in a tavern Man met face to skull with Death. Man entered gaily but Death gave no greeting, he sat with his jowl morosely over an ominous wine.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s30",
+      "title": "Taking Up Picadilly",
+      "place": "Taking Up Picadilly",
+      "reentry": "Going down Picadilly one day and nearing Grosvenor Place I saw, if my memory is not at fault, some workmen with their coats off--or so they seemed. They had pickaxes in their hands and wore corduroy trousers and that little leather band bel",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s31",
+      "title": "After the Fire",
+      "place": "After the Fire",
+      "reentry": "When that happened which had been so long in happening and the world hit a black, uncharted star, certain tremendous creatures out of some other world came peering among the cinders to see if there were anything there that it were worth whi",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s32",
+      "title": "The City",
+      "place": "The City",
+      "reentry": "In time as well as space my fancy roams far from here. It led me once to the edge of certain cliffs that were low and red and rose up out of a desert: a little way off in the desert there was a city. It was evening, and I sat and watched th",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s33",
+      "title": "The Food of Death",
+      "place": "The Food of Death",
+      "reentry": "Death was sick. But they brought him bread that the modern bakers make, whitened with alum, and the tinned meats of Chicago, with a pinch of our modern substitute for salt. They carried him into the dining-room of a great hotel (in that clo",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s34",
+      "title": "The Lonely Idol",
+      "place": "The Lonely Idol",
+      "reentry": "I had from a friend an old outlandish stone, a little swine-faced idol to whom no one prayed.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s35",
+      "title": "The Sphinx in Thebes (Massachusetts)",
+      "place": "The Sphinx in Thebes (Massachusetts)",
+      "reentry": "There was a woman in a steel-built city who had all that money could buy, she had gold and dividends and trains and houses, and she had pets to play with, but she had no sphinx.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s36",
+      "title": "The Reward",
+      "place": "The Reward",
+      "reentry": "One's spirit goes further in dreams than it does by day. Wandering once by night from a factory city I came to the edge of Hell.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s37",
+      "title": "The Trouble in Leafy Green Street",
+      "place": "The Trouble in Leafy Green Street",
+      "reentry": "She went to the idol-shop in Moleshill Street, where the old man mumbles, and said: \"I want a god to worship when it is wet.\"",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s38",
+      "title": "The Mist",
+      "place": "The Mist",
+      "reentry": "The mist said unto the mist: \"Let us go up into the Downs.\" And the mist came up weeping.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s39",
+      "title": "Furrow-Maker",
+      "place": "Furrow-Maker",
+      "reentry": "He was all in black, but his friend was dressed in brown, members of two old families.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s40",
+      "title": "Lobster Salad",
+      "place": "Lobster Salad",
+      "reentry": "I was climbing round the perilous outside of the Palace of Colquonhombros. So far below me that in the tranquil twilight and clear air of those lands I could only barely see them lay the craggy tops of the mountains.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s41",
+      "title": "The Return of the Exiles",
+      "place": "The Return of the Exiles",
+      "reentry": "The old man with a hammer and the one-eyed man with a spear were seated by the roadside talking as I came up the hill.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s42",
+      "title": "Nature and Time",
+      "place": "Nature and Time",
+      "reentry": "Through the streets of Coventry one winter's night strode a triumphant spirit. Behind him stooping, unkempt, utterly ragged, wearing the clothes and look that outcasts have, whining, weeping, reproaching, an ill-used spirit tried to keep pa",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s43",
+      "title": "The Song of the Blackbird",
+      "place": "The Song of the Blackbird",
+      "reentry": "As the poet passed the thorn-tree the blackbird sang.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s44",
+      "title": "The Messengers",
+      "place": "The Messengers",
+      "reentry": "One wandering nigh Parnassus chasing hares heard the high Muses.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s45",
+      "title": "The Three Tall Sons",
+      "place": "The Three Tall Sons",
+      "reentry": "And at last Man raised on high the final glory of his civilization, the towering edifice of the ultimate city.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s46",
+      "title": "Compromise",
+      "place": "Compromise",
+      "reentry": "They built their gorgeous home, their city of glory, above the lair of the earthquake. They built it of marble and gold in the shining youth of the world. There they feasted and fought and called their city immortal, and danced and sang son",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s47",
+      "title": "What We Have Come To",
+      "place": "What We Have Come To",
+      "reentry": "When the advertiser saw the cathedral spires over the downs in the distance, he looked at them and wept.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s48",
+      "title": "The Tomb of Pan",
+      "place": "The Tomb of Pan",
+      "reentry": "\"Seeing,\" they said, \"that old-time Pan is dead, let us now make a tomb for him and a monument, that the dreadful worship of long ago may be remembered and avoided by all.\"",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Fame singing in the highways, and trifling as she sang, with sordid adventurers, passed the poet by."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "And still the poet made for her little chaplets of song, to deck her forehead in the courts of Time: and still she wore instead the worthless garlands, that boisterous citizens flung to her in the ways, made out of perishable things."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "And after a while whenever these garlands died the poet came to her with his chaplets of song; and still she laughed at him and wore the worthless wreaths, though they always died at evening."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "And one day in his bitterness the poet rebuked her, and said to her: \"Lovely Fame, even in the highways and the byways you have not foreborne to laugh and shout and jest with worthless men, and I have toiled for you and dreamed of you and you mock me and pass me by.\""
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "And Fame turned her back on him and walked away, but in departing she looked over her shoulder and smiled at him as she had not smiled before, and, almost speaking in a whisper, said:"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "\"I will meet you in the graveyard at the back of the Workhouse in a hundred years.\""
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Charon leaned forward and rowed. All things were one with his weariness."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "It was not with him a matter of years or of centuries, but of wide floods of time, and an old heaviness and a pain in the arms that had become for him part of the scheme that the gods had made and was of a piece with Eternity."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "If the gods had even sent him a contrary wind it would have divided all time in his memory into two equal slabs."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "So grey were all things always where he was that if any radiance lingered a moment among the dead, on the face of such a queen perhaps as Cleopatra, his eyes could not have perceived it."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "It was strange that the dead nowadays were coming in such numbers. They were coming in thousands where they used to come in fifties. It was neither Charon's duty nor his wont to ponder in his grey soul why these things might be. Charon leaned forward and rowed."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Then no one came for a while. It was not usual for the gods to send no one down from Earth for such a space. But the gods knew best."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Then one man came alone. And the little shade sat shivering on a lonely bench and the great boat pushed off. Only one passenger: the gods knew best. And great and weary Charon rowed on and on beside the little, silent, shivering ghost."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "And the sound of the river was like a mighty sigh that Grief in the beginning had sighed among her sisters, and that could not die like the echoes of human sorrow failing on earthly hills, but was as old as time and the pain in Charon's arms."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "Then the boat from the slow, grey river loomed up to the coast of Dis and the little, silent shade still shivering stepped ashore, and Charon turned the boat to go wearily back to the world. Then the little shadow spoke, that had been a man."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "\"I am the last,\" he said."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "No one had ever made Charon smile before, no one before had ever made him weep."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "When the travellers from London entered Arcady they lamented one to another the death of Pan."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "And anon they saw him lying stiff and still."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Horned Pan was still and the dew was on his fur; he had not the look of a live animal. And then they said, \"It is true that Pan is dead.\""
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "And, standing melancholy by that huge prone body, they looked for long at memorable Pan."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "And evening came and a small star appeared."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "And presently from a hamlet of some Arcadian valley, with a sound of idle song, Arcadian maidens came."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "And, when they saw there, suddenly in the twilight, that old recumbent god, they stopped in their running and whispered among themselves. \"How silly he looks,\" they said, and thereat they laughed a little."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "And at the sound of their laughter Pan leaped up and the gravel flew from his hooves."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "And, for as long as the travellers stood and listened, the crags and the hill-tops of Arcady rang with the sounds of pursuit."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "THE SPHINX AT GIZEH"
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "I saw the other day the Sphinx's painted face."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "She had painted her face in order to ogle Time."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "And he has spared no other painted face in all the world but hers."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "Delilah was younger than she, and Delilah is dust. Time hath loved nothing but this worthless painted face."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "I do not care that she is ugly, nor that she has painted her face, so that she only lure his secret from Time."
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "Time dallies like a fool at her feet when he should be smiting cities."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "Time never wearies of her silly smile."
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "There are temples all about her that he has forgotten to spoil."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "I saw an old man go by, and Time never touched him."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "Time that has carried away the seven gates of Thebes!"
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "She has tried to bind him with ropes of eternal sand, she had hoped to oppress him with the Pyramids."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "He lies there in the sand with his foolish hair all spread about her paws."
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "If she ever finds his secret we will put out his eyes, so that he shall find no more our beautiful things--there are lovely gates in Florence that I fear he will carry away."
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "We have tried to bind him with song and with old customs, but they only held him for a little while, and he has always smitten us and mocked us."
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "When he is blind he shall dance to us and make sport."
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "Great clumsy time shall stumble and dance, who liked to kill little children, and can hurt even the daisies no longer."
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "Then shall our children laugh at him who slew Babylon's winged bulls, and smote great numbers of the gods and fairies--when he is shorn of his hours and his years."
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "We will shut him up in the Pyramid of Cheops, in the great chamber where the sarcophagus is. Thence we will lead him out when we give our feasts. He shall ripen our corn for us and do menial work."
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "We will kiss they painted face, O Sphinx, if thou wilt betray to us Time."
+    },
+    {
+      "id": "s2-29",
+      "sceneId": "s2",
+      "text": "And yet I fear that in his ultimate anguish he may take hold blindly of the world and the moon, and slowly pull down upon him the House of Man."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "All along the farmyard gables the swallows sat a-row, twittering uneasily to one another, telling of many things, but thinking only of Summer and the South, for Autumn was afoot and the North wind waiting."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "And suddenly one day they were all quite gone. And everyone spoke of the swallows and the South."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "\"I think I shall go South myself next year,\" said a hen."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "And the year wore on and the swallows came again, and the year wore on and they sat again on the gables, and all the poultry discussed the departure of the hen."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "And very early one morning, the wind being from the North, the swallows all soared suddenly and felt the wind in their wings; and a strength came upon them and a strange old knowledge and a more than human faith, and flying high they left the smoke of our cities and small remembered eaves, and saw at last the huge and homeless sea, and steering by grey sea-currents went southward with the wind. And going South they went by glittering fog-banks and saw old islands lifting their heads above them; they saw the slow quests of the wandering ships, and divers seeking pearls, and lands at war, till there came in view the mountains that they sought and the sight of the peaks they knew; and they descended into an austral valley, and saw Summer sometimes sleeping and sometimes singing song."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "\"I think the wind is about right,\" said the hen; and she spread her wings and ran out of the poultry-yard. And she ran fluttering out on to the road and some way down it until she came to a garden."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "At evening she came back panting."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "And in the poultry-yard she told the poultry how she had gone South as far as the high road, and saw the great world's traffic going by, and came to lands where the potato grew, and saw the stubble upon which men live, and at the end of the road had found a garden, and there were roses in it--beautiful roses!--and the gardener himself was there with his braces on."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "\"How extremely interesting,\" the poultry said, \"and what a really beautiful description!\""
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "And the Winter wore away, and the bitter months went by, and the Spring of the year appeared, and the swallows came again."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "\"We have been to the South,\" they said, \"and the valleys beyond the sea.\""
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "But the poultry would not agree that there was a sea in the South: \"You should hear our hen,\" they said."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "\"Way for us,\" said the North Wind as he came down the sea on an errand of old Winter."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "And he saw before him the grey silent fog that lay along the tides."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "\"Way for us,\" said the North Wind, \"O ineffectual fog, for I am Winter's leader in his age-old war with the ships. I overwhelm them suddenly in my strength, or drive upon them the huge seafaring bergs. I cross an ocean while you move a mile. There is mourning in inland places when I have met the ships. I drive them upon the rocks and feed the sea. Wherever I appear they bow to our lord the Winter.\""
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "And to his arrogant boasting nothing said the fog. Only he rose up slowly and trailed away from the sea and, crawling up long valleys, took refuge among the hills; and night came down and everything was still, and the fog began to mumble in the stillness. And I heard him telling infamously to himself the tale of his horrible spoils. \"A hundred and fifteen galleons of old Spain, a certain argosy that went from Tyre, eight fisher-fleets and ninety ships of the line, twelve warships under sail, with their carronades, three hundred and eighty-seven river-craft, forty-two merchantmen that carried spice, four quinquiremes, ten triremes, thirty yachts, twenty-one battleships of the modern time, nine thousand admirals....\" he mumbled and chuckled on, till I suddenly arose and fled from his fearful contamination."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "All we who write put me in mind of sailors hastily making rafts upon doomed ships."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "When we break up under the heavy years and go down into eternity with all that is ours our thoughts like small lost rafts float on awhile upon Oblivion's sea. They will not carry much over those tides, our names and a phrase or two and little else."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "They that write as a trade to please the whim of the day, they are like sailors that work at the rafts only to warm their hands and to distract their thoughts from their certain doom; their rafts go all to pieces before the ship breaks up."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "See now Oblivion shimmering all around us, its very tranquility deadlier than tempest. How little all our keels have troubled it. Time in its deeps swims like a monstrous whale; and, like a whale, feeds on the littlest things--small tunes and little unskilled songs of the olden, golden evenings--and anon turneth whale-like to overthrow whole ships."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "See now the wreckage of Babylon floating idly, and something there that once was Nineveh; already their kings and queens are in the deeps among the weedy masses of old centuries that hide the sodden bulk of sunken Tyre and make a darkness round Persepolis."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "For the rest I dimly see the forms of foundered ships on the sea-floor strewn with crowns."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "Our ships were all unseaworthy from the first."
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "There goes the raft that Homer made for Helen."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "I saw a workman fall with his scaffolding right from the summit of some vast hotel. And as he came down I saw him holding a knife and trying to cut his name on the scaffolding. He had time to try and do this for he must have had nearly three hundred feet to fall. And I could think of nothing but his folly in doing this futile thing, for not only would the man be unrecognizably dead in three seconds, but the very pole on which he tried to scratch whatever of his name he had time for was certain to be burnt in a few weeks for firewood."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "Then I went home for I had work to do. And all that evening I thought of the man's folly, till the thought hindered me from serious work."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "And late that night while I was still at work, the ghost of the workman floated through my wall and stood before me laughing."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "I heard no sound until after I spoke to it; but I could see the grey diaphanous form standing before me shuddering with laughter."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "I spoke at last and asked what it was laughing at, and then the ghost spoke. It said: \"I'm a laughin' at you sittin' and workin' there.\""
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "\"And why,\" I asked, \"do you laugh at serious work?\""
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "\"Why, yer bloomin' life 'ull go by like a wind,\" he said, \"and yer 'ole silly civilization 'ull be tidied up in a few centuries.\""
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "Then he fell to laughing again and this time audibly; and, laughing still, faded back through the wall again and into the eternity from which he had come."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "A young man came into an ornate restaurant at eight o'clock in London."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "He was alone, but two places had been laid at the table which was reserved for him. He had chosen the dinner very carefully, by letter a week before."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "A waiter asked him about the other guest."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "\"You probably won't see him till the coffee comes,\" the young man told him; so he was served alone."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Those at adjacent tables might have noticed the young man continually addressing the empty chair and carrying on a monologue with it throughout his elaborate dinner."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "\"I think you knew my father,\" he said to it over the soup."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "\"I sent for you this evening,\" he continued, \"because I want you to do me a good turn; in fact I must insist on it.\""
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "There was nothing eccentric about the man except for this habit of addressing an empty chair, certainly he was eating as good a dinner as any sane man could wish for."
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "After the Burgundy had been served he became more voluble in his monologue, not that he spoiled his wine by drinking excessively."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "\"We have several acquaintances in common,\" he said. \"I met King Seti a year ago in Thebes. I think he has altered very little since you knew him. I thought his forehead a little low for a king's. Cheops has left the house that he built for your reception, he must have prepared for you for years and years. I suppose you have seldom been entertained like that. I ordered this dinner over a week ago. I thought then that a lady might have come with me, but as she wouldn't I've asked you. She may not after all be as lovely as Helen of Troy. Was Helen very lovely? Not when you knew her, perhaps. You were lucky in Cleopatra, you must have known her when she was in her prime."
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "\"You never knew the mermaids nor the fairies nor the lovely goddesses of long ago, that's where we have the best of you.\""
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "He was silent when the waiters came to his table, but rambled merrily on as soon as they left, still turned to the empty chair."
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "\"You know I saw you here in London only the other day. You were on a motor bus going down Ludgate Hill. It was going much too fast. London is a good place. But I shall be glad enough to leave it. It was in London that I met the lady I that was speaking about. If it hadn't been for London I probably shouldn't have met her, and if it hadn't been for London she probably wouldn't have had so much besides me to amuse her. It cuts both ways.\""
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "He paused once to order coffee, gazing earnestly at the waiter and putting a sovereign in his hand. \"Don't let it be chicory,\" said he."
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "The waiter brought the coffee, and the young man dropped a tabloid of some sort into his cup."
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "\"I don't suppose you come here very often,\" he went on. \"Well, you probably want to be going. I haven't taken you much out of your way, there is plenty for you to do in London.\""
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "Then having drunk his coffee he fell on to the floor by a foot of the empty chair, and a doctor who was dining in the room bent over him and announced to the anxious manager the visible presence of the young man's guest."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "In the Olympian courts Love laughed at Death, because he was unsightly, and because She couldn't help it, and because he never did anything worth doing, and because She would."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "And Death hated being laughed at, and used to brood apart thinking only of his wrongs and of what he could do to end this intolerable treatment."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "But one day Death appeared in the courts with an air and They all noticed it. \"What are you up to now?\" said Love. And Death with some solemnity said to Her: \"I am going to frighten Odysseus\"; and drawing about him his grey traveller's cloak went out through the windy door with his jowl turned earthwards."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "And he came soon to Ithaca and the hall that Athene knew, and opened the door and saw there famous Odysseus, with his white locks bending close over the fire, trying to warm his hands."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "And the wind through the open door blew bitterly on Odysseus."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "And Death came up behind him, and suddenly shouted."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "And Odysseus went on warming his pale hands."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "Then Death came close and began to mouth at him. And after a while Odysseus turned and spoke. And \"Well, old servant,\" he said, \"have your masters been kind to you since I made you work for me round Ilion?\""
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "And Death for some while stood mute, for he thought of the laughter of Love."
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "Then \"Come now,\" said Odysseus, \"lend me your shoulder,\" and he leaning heavily on that bony joint, they went together through the open door."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Two dark young men in a foreign southern land sat at a restaurant table with one woman."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "And on the woman's plate was a small orange which had an evil laughter in its heart."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "And both of the men would be looking at the woman all the time, and they ate little and they drank much."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "And the woman was smiling equally at each."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "Then the small orange that had the laughter in its heart rolled slowly off the plate on to the floor. And the dark young men both sought for it at once, and they met suddenly beneath the table, and soon they were speaking swift words to one another, and a horror and an impotence came over the Reason of each as she sat helpless at the back of the mind, and the heart of the orange laughed and the woman went on smiling; and Death, who was sitting at another table, tete-a-tete with an old man, rose and came over to listen to the quarrel."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "THE PRAYER OF THE FLOWERS"
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "It was the voice of the flowers on the West wind, the lovable, the old, the lazy West wind, blowing ceaselessly, blowing sleepily, going Greecewards."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "\"The woods have gone away, they have fallen and left us; men love us no longer, we are lonely by moonlight. Great engines rush over the beautiful fields, their ways lie hard and terrible up and down the land."
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "\"The cancrous cities spread over the grass, they clatter in their lairs continually, they glitter about us blemishing the night."
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "\"The woods are gone, O Pan, the woods, the woods. And thou art far, O Pan, and far away.\""
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "I was standing by night between two railway embankments on the edge of a Midland city. On one of them I saw the trains go by, once in every two minutes, and on the other, the trains went by twice in every five."
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "Quite close were the glaring factories, and the sky above them wore the fearful look that it wears in dreams of fever."
+    },
+    {
+      "id": "s9-12",
+      "sceneId": "s9",
+      "text": "The flowers were right in the stride of that advancing city, and thence I heard them sending up their cry. And then I heard, beating musically up wind, the voice of Pan reproving them from Arcady--"
+    },
+    {
+      "id": "s9-13",
+      "sceneId": "s9",
+      "text": "\"Be patient a little, these things are not for long.\""
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Once Time as he prowled the world, his hair grey not with weakness but with dust of the ruin of cities, came to a furniture shop and entered the Antique department. And there he saw a man darkening the wood of a chair with dye and beating it with chains and making imitation wormholes in it."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "And when Time saw another doing his work he stood by him awhile and looked on critically."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "And at last he said: \"That is not how I work,\" and he turned the man's hair white and bent his back and put some furrows in his little cunning face; then turned and strode away, for a mighty city that was weary and sick and too long had troubled the fields was sore in need of him."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "I was in the pre-destined 11.8 from Goraghwood to Drogheda, when I suddenly saw the city. It was a little city in a valley, and only seemed to have a little smoke, and the sun caught the smoke and turned it golden, so that it looked like an old Italian picture where angels walk in the foreground and the rest is a blaze of gold. And beyond, as one could tell by the lie of land although one could not see through the golden smoke, I knew that there lay the paths of the roving ships."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "All round there lay a patchwork of small fields all over the slopes of the hills, and the snow had come upon them tentatively, but already the birds of the waste had moved to the sheltered places for every omen boded more to fall. Far away some little hills blazed like an aureate bulwark broken off by age and fallen from the earthward rampart of Paradise. And aloof and dark the mountains stared unconcernedly seawards."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "And when I saw those grey and watchful mountains sitting where they sat while the cities of the civilization of Araby and Asia arose like crocuses, and like crocuses fell, I wondered for how long there would be smoke in the valley and little fields on the hills."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "Thus spake the mountains: \"Behold us, even us; the old ones, the grey ones, that wear the feet of Time. Time on our rocks shall break his staff and stumble: and still we shall sit majestic, even as now, hearing the sound of the sea, our old coeval sister, who nurses the bones of her children and weeps for the things she has done."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "\"Far, far, we stand above all things; befriending the little cities until they grow old and leave us to go among the myths."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "\"We are the most imperishable mountains.\""
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "And softly the clouds foregathered from far places, and crag on crag and mountain upon mountain in the likeness of Caucasus upon Himalaya came riding past the sunlight upon the backs of storms and looked down idly from their golden heights upon the crests of the mountains."
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "\"Ye pass away,\" said the mountains."
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "And the clouds answered, as I dreamed or fancied,"
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "\"We pass away, indeed we pass away, but upon our unpasturable fields Pegasus prances. Here Pegasus gallops and browses upon song which the larks bring to him every morning from far terrestrial fields. His hoof-beats ring upon our slopes at sunrise as though our fields were of silver. And breathing the dawn-wind in dilated nostrils, with head tossed upwards and with quivering wings, he stands and stares from our tremendous heights, and snorts and sees far-future wonderful wars rage in the creases and the folds of the togas that cover the knees of the gods.\""
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "As he crawled from the tombs of the fallen a worm met with an angel."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "And together they looked upon the kings and kingdoms, and youths and maidens and the cities of men. They saw the old men heavy in their chairs and heard the children singing in the fields. They saw far wars and warriors and walled towns, wisdom and wickedness, and the pomp of kings, and the people of all the lands that the sunlight knew."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "And the worm spake to the angel saying: \"Behold my food.\""
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "\"Be dakeon para Thina poluphloisboio Thalassaes,\" murmured the angel, for they walked by the sea, \"and can you destroy that too?\""
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "And the worm paled in his anger to a greyness ill to behold, for for three thousand years he had tried to destroy that line and still its melody was ringing in his head."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "The poet came unto a great country in which there were no songs. And he lamented gently for the nation that had not any little foolish songs to sing to itself at evening."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "And at last he said: \"I will make for them myself some little foolish songs so that they may be merry in the lanes and happy by the fireside.\" And for some days he made for them aimless songs such as maidens sing on the hills in the older happier countries."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "Then he went to some of that nation as they sat weary with the work of the day and said to them: \"I have made you some aimless songs out of the small unreasonable legends, that are somewhat akin to the wind in the vales of my childhood; and you may care to sing them in your disconsolate evenings.\""
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "And they said to him:"
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "\"If you think we have time for that sort of nonsense nowadays you cannot know much of the progress of modern commerce.\""
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "And then the poet wept for he said: \"Alas! They are damned.\""
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "I saw an unclean-feeder by the banks of the river of Time. He crouched by orchards numerous with apples in a happy land of flowers; colossal barns stood near which the ancients had stored with grain, and the sun was golden on serene far hills behind the level lands. But his back was to all these things. He crouched and watched the river. And whatever the river chanced to send him down the unclean-feeder clutched at greedily with his arms, wading out into the water."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Now there were in those days, and indeed still are, certain uncleanly cities upon the river of Time; and from them fearfully nameless things came floating shapelessly by. And whenever the odor of these came down the river before them the unclean-feeder plunged into the dirty water and stood far out, expectant. And if he opened his mouth one saw these things on his lips."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "Indeed from the upper reaches there came down sometimes the fallen rhododendron's petal, sometimes a rose; but they were useless to the unclean-feeder, and when he saw them he growled."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "A poet walked beside the river's bank; his head was lifted and his look was afar; I think he saw the sea, and the hills of Fate from which the river ran. I saw the unclean-feeder standing voracious, up to his waist in that evil-smelling river."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "\"Look,\" I said to the poet."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "\"The current will sweep him away,\" the poet said."
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "\"But those cities that poison the river,\" I said to him."
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "He answered: \"Whenever the centuries melt on the hills of Fate the river terribly floods.\""
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "A demagogue and a demi-mondaine chanced to arrive together at the gate of Paradise. And the Saint looked sorrowfully at them both."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "\"Why were you a demagogue?\" he said to the first."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "\"Because,\" said the demagogue, \"I stood for those principles that have made us what we are and have endeared our Party to the great heart of the people. In a word I stood unflinchingly on the plank of popular representation.\""
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "\"And you?\" said the Saint to her of the demi-monde."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "\"I wanted money,\" said the demi-mondaine."
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "And after some moments' thought the Saint said: \"Well, come in; though you don't deserve to.\""
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "But to the demagogue he said: \"We genuinely regret that the limited space at our disposal and our unfortunate lack of interest in those Questions that you have gone so far to inculate and have so ably upheld in the past, prevent us from giving you the support for which you seek.\""
+    },
+    {
+      "id": "s16-7",
+      "sceneId": "s16",
+      "text": "And he shut the golden door."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "I dreamt that I went back to the hills I knew, whence on a clear day you can see the walls of Ilion and the plains of Roncesvalles. There used to be woods along the tops of those hills with clearings in them where the moonlight fell, and there when no one watched the fairies danced."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "But there were no woods when I went back, no fairies nor distant glimpse of Ilion or plains of Roncesvalles, only one giant poppy waved in the wind, and as it waved it hummed \"Remember not.\" And by its oak-like stem a poet sat, dressed like a shepherd and playing an ancient tune softly upon a pipe. I asked him if the fairies had passed that way or anything olden."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "He said: \"The poppy has grown apace and is killing gods and fairies. Its fumes are suffocating the world, and its roots drain it of its beautiful strength.\" And I asked him why he sat on the hills I knew, playing an olden tune."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "And he answered: \"Because the tune is bad for the poppy, which would otherwise grow more swiftly; and because if the brotherhood of which I am one were to cease to pipe on the hills men would stray over the world and be lost or come to terrible ends. We think we have saved Agamemnon.\""
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "Then he fell to piping again that olden tune, while the wind among the poppy's sleepy petals murmured \"Remember not. Remember not.\""
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "I know a roadside where the wild rose blooms with a strange abundance. There is a beauty in the blossoms too of an almost exotic kind, a taint of deeper pink that shocks the Puritan flowers. Two hundred generations ago (generations, I mean, of roses) this was a village street; there was a floral decadence when they left their simple life and the roses came from the wilderness to clamber round houses of men."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "Of all the memories of that little village, of all the cottages that stood there, of all the men and women whose homes they were, nothing remains but a more beautiful blush on the faces of the roses."
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "I hope that when London is clean passed away and the defeated fields come back again, like an exiled people returning after a war, they may find some beautiful thing to remind them of it all; because we have loved a little that swart old city."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "It may be that I dreamed this. So much at least is certain--that I turned one day from the traffic of a city, and came to its docks and saw its slimy wharves going down green and steep into the water, and saw the huge grey river slipping by and the lost things that went with it turning over and over, and I thought of the nations and unpitying Time, and saw and marvelled at the queenly ships come newly from the sea."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "It was then, if I mistake not, that I saw leaning against a wall, with his face to the ships, a man with golden ear-rings. His skin had the dark tint of the southern men: the deep black hairs of his moustache were whitened a little with salt; he wore a dark blue jacket such as sailors wear, and the long boots of seafarers, but the look in his eyes was further afield than the ships, he seemed to be beholding the farthest things."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "Even when I spoke to him he did not call home that look, but answered me dreamily with that same fixed stare as though his thoughts were heaving on far and lonely seas. I asked him what ship he had come by, for there were many there. The sailing ships were there with their sails all furled and their masts straight and still like a wintry forest; the steamers were there, and great liners, puffing up idle smoke into the twilight. He answered he had come by none of them. I asked him what line he worked on, for he was clearly a sailor; I mentioned well-known lines, but he did not know them. Then I asked him where he worked and what he was. And he said: \"I work in the Sargasso Sea, and I am the last of the pirates, the last left alive.\" And I shook him by the hand I do not know how many times. I said: \"We feared you were dead. We feared you were dead.\" And he answered sadly: \"No. No. I have sinned too deeply on the Spanish seas: I am not allowed to die.\""
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "King Karna-Vootra sitting on his throne commanding all things said: \"I very clearly saw last night the queenly Vava-Nyria. Though partly she was hidden by great clouds that swept continually by her, rolling over and over, yet her face was unhidden and shone, being full of moonlight."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "\"I said to her:"
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "\"'Walk with me by the great pools in many-gardened, beautiful Istrakhan where the lilies float that give delectable dreams; or, drawing aside the curtain of hanging orchids, pass with me thence from the pools by a secret path through the else impassable jungle that fills the only way between the mountains that shut in Istrakhan. They shut it in and look on it with joy at morning and at evening when the pools are strange with light, till in their gladness sometimes there melts the deadly snow that kills upon lonely heights the mountaineer. They have valleys among them older than the wrinkles in the moon."
+    },
+    {
+      "id": "s20-3",
+      "sceneId": "s20",
+      "text": "\"'Come with me thence or linger with me there and either we shall come to romantic lands which the men of the caravans only speak of in song; or else we shall listlessly walk in a land so lovely that even the butterflies that float about it when they see their images flash in the sacred pools are terrified by their beauty, and each night we shall hear the myriad nightingales all in one chorus sing the stars to death. Do this and I will send heralds far from here with tidings of thy beauty; and they shall run and come to Sendara and men shall know it there who herd brown sheep; and from Sendara the rumour shall spread on, down either bank of the holy river of Zoth, till the people that make wattles in the plains shall hear of it and sing; but the heralds shall go northward along the hills until they come to Sooma. And in that golden city they shall tell the kings, that sit in their lofty alabaster house, of thy strange and sudden smiles. And often in distant markets shall thy story be told by merchants out from Sooma as they sit telling careless tales to lure men to their wares."
+    },
+    {
+      "id": "s20-4",
+      "sceneId": "s20",
+      "text": "\"'And the heralds passing thence shall come even to Ingra, to Ingra where they dance. And there they shall tell of thee, so that thy name long hence shall be sung in that joyous city. And there they shall borrow camels and pass over the sands and go by desert ways to distant Nirid to tell of thee to the lonely men in the mountain monasteries."
+    },
+    {
+      "id": "s20-5",
+      "sceneId": "s20",
+      "text": "\"'Come with me even now for it is Spring.'\""
+    },
+    {
+      "id": "s20-6",
+      "sceneId": "s20",
+      "text": "\"And as I said this she faintly yet perceptibly shook her head. And it was only then I remembered my youth was gone, and she dead forty years.\""
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "They saw a little ship that was far at sea and that went by the name of the *Petite Esperance*. And because of its uncouth rig and its lonely air and the look that it had of coming from strangers' lands they said: \"It is neither a ship to greet nor desire, nor yet to succor when in the hands of the sea.\""
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "And the sea rose up as is the wont of the sea and the little ship from afar was in his hands, and frailer than ever seemed its feeble masts with their sails of fantastic cut and their alien flags. And the sea made a great and very triumphing voice, as the sea doth. And then there arose a wave that was very strong, even the ninth-born son of the hurricane and the tide, and hid the little ship and hid the whole of the far parts of the sea. Thereat said those who stood on the good dry land:"
+    },
+    {
+      "id": "s21-2",
+      "sceneId": "s21",
+      "text": "\"'Twas but a little, worthless alien ship and it is sunk at sea, and it is good and right that the storm have spoil.\" And they turned and watched the course of the merchant-men, laden with silver and appeasing spice; year after year they cheered them into port and praised their goods and their familiar sails. And many years went by."
+    },
+    {
+      "id": "s21-3",
+      "sceneId": "s21",
+      "text": "And at last with decks and bulwarks covered with cloth of gold; with age-old parrots that had known the troubadours, singing illustrious songs and preening their feathers of gold; with a hold full of emeralds and rubies; all silken with Indian loot; furling as it came in its way-worn alien sails, a galleon glided into port, shutting the sunlight from the merchantmen: and lo! it loomed the equal of the cliffs."
+    },
+    {
+      "id": "s21-4",
+      "sceneId": "s21",
+      "text": "\"Who are you?\" they asked, \"far-travelled wonderful ship?\""
+    },
+    {
+      "id": "s21-5",
+      "sceneId": "s21",
+      "text": "And they said: \"The *Petite Esperance*.\""
+    },
+    {
+      "id": "s21-6",
+      "sceneId": "s21",
+      "text": "\"O,\" said the people on shore. \"We thought you were sunk at sea.\""
+    },
+    {
+      "id": "s21-7",
+      "sceneId": "s21",
+      "text": "\"Sunk at sea?\" sang the sailors. \"We could not be sunk at sea--we had the gods on board.\""
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "Fame as she walked at evening in a city saw the painted face of Notoriety flaunting beneath a gas-lamp, and many kneeled unto her in the dirt of the road."
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "\"Who are you?\" Fame said to her."
+    },
+    {
+      "id": "s22-2",
+      "sceneId": "s22",
+      "text": "\"I am Fame,\" said Notoriety."
+    },
+    {
+      "id": "s22-3",
+      "sceneId": "s22",
+      "text": "Then Fame stole softly away so that no one knew she had gone."
+    },
+    {
+      "id": "s22-4",
+      "sceneId": "s22",
+      "text": "And Notoriety presently went forth and all her worshippers rose and followed after, and she led them, as was most meet, to her native Pit."
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "For a long time there was doubt with acrimony among the beasts as to whether the Hare or the Tortoise could run the swifter. Some said the Hare was the swifter of the two because he had such long ears, and others said the Tortoise was the swifter because anyone whose shell was so hard as that should be able to run hard too. And lo, the forces of estrangement and disorder perpetually postponed a decisive contest."
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "But when there was nearly war among the beasts, at last an arrangement was come to and it was decided that the Hare and the Tortoise should run a race of five hundred yards so that all should see who was right."
+    },
+    {
+      "id": "s23-2",
+      "sceneId": "s23",
+      "text": "\"Ridiculous nonsense!\" said the Hare, and it was all his backers could do to get him to run."
+    },
+    {
+      "id": "s23-3",
+      "sceneId": "s23",
+      "text": "\"The contest is most welcome to me,\" said the Tortoise, \"I shall not shirk it.\""
+    },
+    {
+      "id": "s23-4",
+      "sceneId": "s23",
+      "text": "O, how his backers cheered."
+    },
+    {
+      "id": "s23-5",
+      "sceneId": "s23",
+      "text": "Feeling ran high on the day of the race; the goose rushed at the fox and nearly pecked him. Both sides spoke loudly of the approaching victory up to the very moment of the race."
+    },
+    {
+      "id": "s23-6",
+      "sceneId": "s23",
+      "text": "\"I am absolutely confident of success,\" said the Tortoise. But the Hare said nothing, he looked bored and cross. Some of his supporters deserted him then and went to the other side, who were loudly cheering the Tortoise's inspiriting words. But many remained with the Hare. \"We shall not be disappointed in him,\" they said. \"A beast with such long ears is bound to win.\""
+    },
+    {
+      "id": "s23-7",
+      "sceneId": "s23",
+      "text": "\"Run hard,\" said the supporters of the Tortoise."
+    },
+    {
+      "id": "s23-8",
+      "sceneId": "s23",
+      "text": "And \"run hard\" became a kind of catch-phrase which everybody repeated to one another. \"Hard shell and hard living. That's what the country wants. Run hard,\" they said. And these words were never uttered but multitudes cheered from their hearts."
+    },
+    {
+      "id": "s23-9",
+      "sceneId": "s23",
+      "text": "Then they were off, and suddenly there was a hush."
+    },
+    {
+      "id": "s23-10",
+      "sceneId": "s23",
+      "text": "The Hare dashed off for about a hundred yards, then he looked round to see where his rival was."
+    },
+    {
+      "id": "s23-11",
+      "sceneId": "s23",
+      "text": "\"It is rather absurd,\" he said, \"to race with a Tortoise.\" And he sat down and scratched himself. \"Run hard! Run hard!\" shouted some."
+    },
+    {
+      "id": "s23-12",
+      "sceneId": "s23",
+      "text": "\"Let him rest,\" shouted others. And \"let him rest\" became a catch-phrase too."
+    },
+    {
+      "id": "s23-13",
+      "sceneId": "s23",
+      "text": "And after a while his rival drew near to him."
+    },
+    {
+      "id": "s23-14",
+      "sceneId": "s23",
+      "text": "\"There comes that damned Tortoise,\" said the Hare, and he got up and ran as hard as could be so that he should not let the Tortoise beat him."
+    },
+    {
+      "id": "s23-15",
+      "sceneId": "s23",
+      "text": "\"Those ears will win,\" said his friends. \"Those ears will win; and establish upon an incontestable footing the truth of what we have said.\" And some of them turned to the backers of the Tortoise and said: \"What about your beast now?\""
+    },
+    {
+      "id": "s23-16",
+      "sceneId": "s23",
+      "text": "\"Run hard,\" they replied. \"Run hard.\""
+    },
+    {
+      "id": "s23-17",
+      "sceneId": "s23",
+      "text": "The Hare ran on for nearly three hundred yards, nearly in fact as far as the winning-post, when it suddenly struck him what a fool he looked running races with a Tortoise who was nowhere in sight, and he sat down again and scratched."
+    },
+    {
+      "id": "s23-18",
+      "sceneId": "s23",
+      "text": "\"Run hard. Run hard,\" said the crowd, and \"Let him rest.\""
+    },
+    {
+      "id": "s23-19",
+      "sceneId": "s23",
+      "text": "\"Whatever is the use of it?\" said the Hare, and this time he stopped for good. Some say he slept."
+    },
+    {
+      "id": "s23-20",
+      "sceneId": "s23",
+      "text": "There was desperate excitement for an hour or two, and then the Tortoise won."
+    },
+    {
+      "id": "s23-21",
+      "sceneId": "s23",
+      "text": "\"Run hard. Run hard,\" shouted his backers. \"Hard shell and hard living: that's what has done it.\" And then they asked the Tortoise what his achievement signified, and he went and asked the Turtle. And the Turtle said, \"It is a glorious victory for the forces of swiftness.\" And then the Tortoise repeated it to his friends. And all the beasts said nothing else for years. And even to this day, \"a glorious victory for the forces of swiftness\" is a catch-phrase in the house of the snail."
+    },
+    {
+      "id": "s23-22",
+      "sceneId": "s23",
+      "text": "And the reason that this version of the race is not widely known is that very few of those that witnessed it survived the great forest-fire that happened shortly after. It came up over the weald by night with a great wind. The Hare and the Tortoise and a very few of the beasts saw it far off from a high bare hill that was at the edge of the trees, and they hurriedly called a meeting to decide what messenger they should send to warn the beasts in the forest."
+    },
+    {
+      "id": "s23-23",
+      "sceneId": "s23",
+      "text": "They sent the Tortoise."
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "I heard it said that far away from here, on the wrong side of the deserts of Cathay and in a country dedicate to winter, are all the years that are dead. And there a certain valley shuts them in and hides them, as rumor has it, from the world, but not from the sight of the moon nor from those that dream in his rays."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "And I said: I will go from here by ways of dream and I will come to that valley and enter in and mourn there for the good years that are dead. And I said: I will take a wreath, a wreath of mourning, and lay it at their feet in token of my sorrow for their dooms."
+    },
+    {
+      "id": "s24-2",
+      "sceneId": "s24",
+      "text": "And when I sought about among the flowers, among the flowers for my wreath of mourning, the lily looked too large and the laurel looked too solemn and I found nothing frail enough nor slender to serve as an offering to the years that were dead. And at last I made a slender wreath of daisies in the manner that I had seen them made in one of the years that is dead."
+    },
+    {
+      "id": "s24-3",
+      "sceneId": "s24",
+      "text": "\"This,\" said I, \"is scarce less fragile or less frail than one of those delicate forgotten years.\" Then I took my wreath in my hand and went from here. And when I had come by paths of mystery to that romantic land, where the valley that rumour told of lies close to the mountainous moon, I searched among the grass for those poor slight years for whom I bought my sorrow and my wreath. And when I found there nothing in the grass I said: \"Time has shattered them and swept them away and left not even any faint remains.\""
+    },
+    {
+      "id": "s24-4",
+      "sceneId": "s24",
+      "text": "But looking upwards in the blaze of the moon I suddenly saw colossi sitting near, and towering up and blotting out the stars and filling the night with blackness; and at those idols' feet I saw praying and making obeisance kings and the days that are and all times and all cities and all nations and all their gods. Neither the smoke of incense nor of the sacrifice burning reached those colossal heads, they sat there not to be measured, not to be over-thrown, not to be worn away."
+    },
+    {
+      "id": "s24-5",
+      "sceneId": "s24",
+      "text": "I said: \"Who are those?\""
+    },
+    {
+      "id": "s24-6",
+      "sceneId": "s24",
+      "text": "One answered: \"Alone the Immortals.\""
+    },
+    {
+      "id": "s24-7",
+      "sceneId": "s24",
+      "text": "And I said sadly: \"I came not to see dread gods, but I came to shed my tears and to offer flowers at the feet of certain little years that are dead and may not come again.\""
+    },
+    {
+      "id": "s24-8",
+      "sceneId": "s24",
+      "text": "He answered me: \"These *are* the years that are dead, alone the immortals; all years to be are Their children--They fashioned their smiles and their laughter; all earthly kings They have crowned, all gods They have created; all the events to be flow down from their feet like a river, the worlds are flying pebbles that They have already thrown, and Time and all his centuries behind him kneel there with bended crests in token of vassalage at Their potent feet.\""
+    },
+    {
+      "id": "s24-9",
+      "sceneId": "s24",
+      "text": "And when I heard this I turned away with my wreath, and went back to my own land comforted."
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "There was once an earnest Puritan who held it wrong to dance. And for his principles he labored hard, his was a zealous life. And there loved him all of those who hated the dance; and those that loved the dance respected him too; they said \"He is a pure, good man and acts according to his lights.\""
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "He did much to discourage dancing and helped to close several Sunday entertainments. Some kinds of poetry, he said, he liked, but not the fanciful kind as that might corrupt the thoughts of the very young. He always dressed in black."
+    },
+    {
+      "id": "s25-2",
+      "sceneId": "s25",
+      "text": "He was quite interested in morality and was quite sincere and there grew to be much respect on Earth for his honest face and his flowing pure-white beard."
+    },
+    {
+      "id": "s25-3",
+      "sceneId": "s25",
+      "text": "One night the Devil appeared unto him in a dream and said \"Well done.\""
+    },
+    {
+      "id": "s25-4",
+      "sceneId": "s25",
+      "text": "\"Avaunt,\" said that earnest man."
+    },
+    {
+      "id": "s25-5",
+      "sceneId": "s25",
+      "text": "\"No, no, friend,\" said the Devil."
+    },
+    {
+      "id": "s25-6",
+      "sceneId": "s25",
+      "text": "\"Dare not to call me 'friend,'\" he answered bravely."
+    },
+    {
+      "id": "s25-7",
+      "sceneId": "s25",
+      "text": "\"Come, come, friend,\" said the Devil. \"Have you not done my work? Have you not put apart the couples that would dance? Have you not checked their laughter and their accursed mirth? Have you not worn my livery of black? O friend, friend, you do not know what a detestable thing it is to sit in hell and hear people being happy, and singing in theatres and singing in the fields, and whispering after dances under the moon,\" and he fell to cursing fearfully."
+    },
+    {
+      "id": "s25-8",
+      "sceneId": "s25",
+      "text": "\"It is you,\" said the Puritan, \"that put into their hearts the evil desire to dance; and black is God's own livery, not yours.\""
+    },
+    {
+      "id": "s25-9",
+      "sceneId": "s25",
+      "text": "And the Devil laughed contemptuously and spoke."
+    },
+    {
+      "id": "s25-10",
+      "sceneId": "s25",
+      "text": "\"He only made the silly colors,\" he said, \"and useless dawns on hill-slopes facing South, and butterflies flapping along them as soon as the sun rose high, and foolish maidens coming out to dance, and the warm mad West wind, and worst of all that pernicious influence Love.\""
+    },
+    {
+      "id": "s25-11",
+      "sceneId": "s25",
+      "text": "And when the Devil said that God made Love that earnest man sat up in bed and shouted \"Blasphemy! Blasphemy!\""
+    },
+    {
+      "id": "s25-12",
+      "sceneId": "s25",
+      "text": "\"It's true,\" said the Devil. \"It isn't I that send the village fools muttering and whispering two by two in the woods when the harvest moon is high, it's as much as I can bear even to see them dancing.\""
+    },
+    {
+      "id": "s25-13",
+      "sceneId": "s25",
+      "text": "\"Then,\" said the man, \"I have mistaken right for wrong; but as soon as I wake I will fight you yet.\""
+    },
+    {
+      "id": "s25-14",
+      "sceneId": "s25",
+      "text": "\"O, no you don't,\" said the Devil. \"You don't wake up out of this sleep.\""
+    },
+    {
+      "id": "s25-15",
+      "sceneId": "s25",
+      "text": "And somewhere far away Hell's black steel doors were opened, and arm in arm those two were drawn within, and the doors shut behind them and still they went arm in arm, trudging further and further into the deeps of Hell, and it was that Puritan's punishment to know that those that he cared for on Earth would do evil as he had done."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "\"The swans are singing again,\" said to one another the gods. And looking downwards, for my dreams had taken me to some fair and far Valhalla, I saw below me an iridescent bubble not greatly larger than a star shine beautifully but faintly, and up and up from it looking larger and larger came a flock of white, innumerable swans, singing and singing and singing, till it seemed as though even the gods were wild ships swimming in music."
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "\"What is it?\" I said to one that was humble among the gods."
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "\"Only a world has ended,\" he said to me, \"and the swans are coming back to the gods returning the gift of song.\""
+    },
+    {
+      "id": "s26-3",
+      "sceneId": "s26",
+      "text": "\"A whole world dead!\" I said."
+    },
+    {
+      "id": "s26-4",
+      "sceneId": "s26",
+      "text": "\"Dead,\" said he that was humble among the gods. \"The worlds are not for ever; only song is immortal.\""
+    },
+    {
+      "id": "s26-5",
+      "sceneId": "s26",
+      "text": "\"Look! Look!\" he said. \"There will be a new one soon.\""
+    },
+    {
+      "id": "s26-6",
+      "sceneId": "s26",
+      "text": "And I looked and saw the larks, going down from the gods."
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "At a street corner sat, and played with a wind, Winter disconsolate."
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "Still tingled the fingers of the passers-by and still their breath was visible, and still they huddled their chins into their coats when turning a corner they met with a new wind, still windows lighted early sent out into the street the thought of romantic comfort by evening fires; these things still were, yet the throne of Winter tottered, and every breeze brought tidings of further fortresses lost on lakes or boreal hill-slopes. And not any longer as a king did Winter appear in those streets, as when the city was decked with gleaming white to greet him as a conqueror and he rode in with his glittering icicles and haughty retinue of prancing winds, but he sat there with a little wind at the corner of the street like some old blind beggar with his hungry dog. And as to some old blind beggar Death approaches, and the alert ears of the sightless man prophetically hear his far-off footfall, so there came suddenly to Winter's ears the sound, from some neighbouring garden, of Spring approaching as she walked on daisies. And Spring approaching looked at huddled inglorious Winter."
+    },
+    {
+      "id": "s27-2",
+      "sceneId": "s27",
+      "text": "\"Begone,\" said Spring."
+    },
+    {
+      "id": "s27-3",
+      "sceneId": "s27",
+      "text": "\"There is nothing for you to do here,\" said Winter to her. Nevertheless he drew about him his grey and battered cloak and rose and called to his little bitter wind and up a side street that led northward strode away."
+    },
+    {
+      "id": "s27-4",
+      "sceneId": "s27",
+      "text": "Pieces of paper and tall clouds of dust went with him as far as the city's outer gate. He turned then and called to Spring: \"You can do nothing in this city,\" he said; then he marched homeward over plains and sea and heard his old winds howling as he marched. The ice broke up behind him and foundered like navies. To left and to right of him flew the flocks of the sea-birds, and far before him the geese's triumphant cry went like a clarion. Greater and greater grew his stature as he went northwards and ever more kingly his mien. Now he took baronies at a stride and now counties and came again to the snow-white frozen lands where the wolves came out to meet him and, draping himself anew with old grey clouds, strode through the gates of his invincible home, two old ice barriers swinging on pillars of ice that had never known the sun."
+    },
+    {
+      "id": "s27-5",
+      "sceneId": "s27",
+      "text": "So the town was left to Spring. And she peered about to see what she could do with it. Presently she saw a dejected dog coming prowling down the road, so she sang to him and he gambolled. I saw him next day strutting by with something of an air. Where there were trees she went to them and whispered, and they sang the arboreal song that only trees can hear, and the green buds came peeping out as stars while yet it is twilight, secretly one by one. She went to gardens and awaked from dreaming the warm maternal earth. In little patches bare and desolate she called up like a flame the golden crocus, or its purple brother like an emperor's ghost. She gladdened the graceless backs of untidy houses, here with a weed, there with a little grass. She said to the air, \"Be joyous.\""
+    },
+    {
+      "id": "s27-6",
+      "sceneId": "s27",
+      "text": "Children began to know that daisies blew in unfrequented corners. Buttonholes began to appear in the coats of the young men. The work of Spring was accomplished."
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "It had been prophesied of old and foreseen from the ancient days that its enemy would come upon Thlunrana. And the date of its doom was known and the gate by which it would enter, yet none had prophesied of the enemy who he was save that he was of the gods though he dwelt with men. Meanwhile Thlunrana, that secret lamaserai, that chief cathedral of wizardry, was the terror of the valley in which it stood and of all lands round about it. So narrow and high were the windows and so strange when lighted at night that they seemed to regard men with the demoniac leer of something that had a secret in the dark. Who were the magicians and the deputy-magicians and the great arch-wizard of that furtive place nobody knew, for they went veiled and hooded and cloaked completely in black."
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "Though her doom was close upon her and the enemy of prophecy should come that very night through the open, southward door that was named the Gate of the Doom, yet that rocky edifice Thlunrana remained mysterious still, venerable, terrible, dark, and dreadfully crowned with her doom. It was not often that anyone dared wander near to Thlunrana by night when the moan of the magicians invoking we know not Whom rose faintly from inner chambers, scaring the drifting bats: but on the last night of all the man from the black-thatched cottage by the five pine-trees came, because he would see Thlunrana once again before the enemy that was divine, but that dwelt with men, should come against it and it should be no more. Up the dark valley he went like a bold man, but his fears were thick upon him; his bravery bore their weight but stooped a little beneath them. He went in at the southward gate that is named the Gate of the Doom. He came into a dark hall, and up a marble stairway passed to see the last of Thlunrana. At the top a curtain of black velvet hung and he passed into a chamber heavily hung with curtains, with a gloom in it that was blacker than anything they could account for. In a sombre chamber beyond, seen through a vacant archway, magicians with lighted tapers plied their wizardry and whispered incantations. All the rats in the place were passing away, going whimpering down the stairway. The man from the black-thatched cottage passed through that second chamber: the magicians did not look at him and did not cease to whisper. He passed from them through heavy curtains still of black velvet and came into a chamber of black marble where nothing stirred. Only one taper burned in the third chamber; there were no windows. On the smooth floor and under the smooth wall a silk pavilion stood with its curtains drawn close together: this was the holy of holies of that ominous place, its inner mystery. One on each side of it dark figures crouched, either of men or women or cloaked stone, or of beasts trained to be silent. When the awful stillness of the mystery was more than he could bear the man from the black-thatched cottage by the five pine-trees went up to the silk pavilion, and with a bold and nervous clutch of the hand drew one of the curtains aside, and saw the inner mystery, and laughed. And the prophecy was fulfilled, and Thlunrana was never more a terror to the valley, but the magicians passed away from their terrific halls and fled through the open fields wailing and beating their breasts, for laughter was the enemy that was doomed to come against Thlunrana through her southward gate (that was named the Gate of the Doom), and it is of the gods but dwells with man."
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "Once in a tavern Man met face to skull with Death. Man entered gaily but Death gave no greeting, he sat with his jowl morosely over an ominous wine."
+    },
+    {
+      "id": "s29-1",
+      "sceneId": "s29",
+      "text": "\"Come, come,\" said Man, \"we have been antagonists long, and if I were losing yet I should not be surly.\""
+    },
+    {
+      "id": "s29-2",
+      "sceneId": "s29",
+      "text": "But Death remained unfriendly watching his bowl of wine and gave no word in answer."
+    },
+    {
+      "id": "s29-3",
+      "sceneId": "s29",
+      "text": "Then Man solicitously moved nearer to him and, speaking cheerily still, \"Come, come,\" he said again, \"you must not resent defeat.\""
+    },
+    {
+      "id": "s29-4",
+      "sceneId": "s29",
+      "text": "And still Death was gloomy and cross and sipped at his infamous wine and would not look up at Man and would not be companionable."
+    },
+    {
+      "id": "s29-5",
+      "sceneId": "s29",
+      "text": "But Man hated gloom either in beast or god, and it made him unhappy to see his adversary's discomfort, all the more because he was the cause, and still he tried to cheer him."
+    },
+    {
+      "id": "s29-6",
+      "sceneId": "s29",
+      "text": "\"Have you not slain the Dinatherium?\" he said. \"Have you not put out the Moon? Why! you will beat me yet.\""
+    },
+    {
+      "id": "s29-7",
+      "sceneId": "s29",
+      "text": "And with a dry and barking sound Death wept and nothing said; and presently Man arose and went wondering away; for he knew not if Death wept out of pity for his opponent, or because he knew that he should not have such sport again when the old game was over and Man was gone, or whether because perhaps, for some hidden reason, he could never repeat on Earth his triumph over the Moon."
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "Going down Picadilly one day and nearing Grosvenor Place I saw, if my memory is not at fault, some workmen with their coats off--or so they seemed. They had pickaxes in their hands and wore corduroy trousers and that little leather band below the knee that goes by the astonishing name of \"York-to-London.\""
+    },
+    {
+      "id": "s30-1",
+      "sceneId": "s30",
+      "text": "They seemed to be working with peculiar vehemence, so that I stopped and asked one what they were doing."
+    },
+    {
+      "id": "s30-2",
+      "sceneId": "s30",
+      "text": "\"We are taking up Picadilly,\" he said to me."
+    },
+    {
+      "id": "s30-3",
+      "sceneId": "s30",
+      "text": "\"But at this time of year?\" I said. \"Is it usual in June?\""
+    },
+    {
+      "id": "s30-4",
+      "sceneId": "s30",
+      "text": "\"We are not what we seem,\" said he."
+    },
+    {
+      "id": "s30-5",
+      "sceneId": "s30",
+      "text": "\"Oh, I see,\" I said, \"you are doing it for a joke.\""
+    },
+    {
+      "id": "s30-6",
+      "sceneId": "s30",
+      "text": "\"Well, not exactly that,\" he answered me."
+    },
+    {
+      "id": "s30-7",
+      "sceneId": "s30",
+      "text": "\"For a bet?\" I said."
+    },
+    {
+      "id": "s30-8",
+      "sceneId": "s30",
+      "text": "\"Not precisely,\" said he."
+    },
+    {
+      "id": "s30-9",
+      "sceneId": "s30",
+      "text": "And then I looked at the bit that they had already picked, and though it was broad daylight over my head it was darkness down there, all full of the southern stars."
+    },
+    {
+      "id": "s30-10",
+      "sceneId": "s30",
+      "text": "\"It was noisy and bad and we grew aweary of it,\" said he that wore corduroy trousers. \"We are not what we appear.\""
+    },
+    {
+      "id": "s30-11",
+      "sceneId": "s30",
+      "text": "They were taking up Picadilly altogether."
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "When that happened which had been so long in happening and the world hit a black, uncharted star, certain tremendous creatures out of some other world came peering among the cinders to see if there were anything there that it were worth while to remember. They spoke of the great things that the world was known to have had; they mentioned the mammoth. And presently they saw man's temples, silent and windowless, staring like empty skulls."
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "\"Some great thing has been here,\" one said, \"in these huge places.\" \"It was the mammoth,\" said one. \"Something greater than he,\" said another."
+    },
+    {
+      "id": "s31-2",
+      "sceneId": "s31",
+      "text": "And then they found that the greatest thing in the world had been the dreams of man."
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "In time as well as space my fancy roams far from here. It led me once to the edge of certain cliffs that were low and red and rose up out of a desert: a little way off in the desert there was a city. It was evening, and I sat and watched the city."
+    },
+    {
+      "id": "s32-1",
+      "sceneId": "s32",
+      "text": "Presently I saw men by threes and fours come softly stealing out of that city's gate to the number of about twenty. I heard the hum of men's voices speaking at evening."
+    },
+    {
+      "id": "s32-2",
+      "sceneId": "s32",
+      "text": "\"It is well they are gone,\" they said. \"It is well they are gone. We can do business now. It is well they are gone.\" And the men that had left the city sped away over the sand and so passed into the twilight."
+    },
+    {
+      "id": "s32-3",
+      "sceneId": "s32",
+      "text": "\"Who are these men?\" I said to my glittering leader."
+    },
+    {
+      "id": "s32-4",
+      "sceneId": "s32",
+      "text": "\"The poets,\" my fancy answered. \"The poets and artists.\""
+    },
+    {
+      "id": "s32-5",
+      "sceneId": "s32",
+      "text": "\"Why do they steal away?\" I said to him. \"And why are the people glad that they have gone?\""
+    },
+    {
+      "id": "s32-6",
+      "sceneId": "s32",
+      "text": "He said: \"It must be some doom that is going to fall on the city, something has warned them and they have stolen away. Nothing may warn the people.\""
+    },
+    {
+      "id": "s32-7",
+      "sceneId": "s32",
+      "text": "I heard the wrangling voices, glad with commerce, rise up from the city. And then I also departed, for there was an ominous look on the face of the sky."
+    },
+    {
+      "id": "s32-8",
+      "sceneId": "s32",
+      "text": "And only a thousand years later I passed that way, and there was nothing, even among the weeds, of what had been that city."
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "Death was sick. But they brought him bread that the modern bakers make, whitened with alum, and the tinned meats of Chicago, with a pinch of our modern substitute for salt. They carried him into the dining-room of a great hotel (in that close atmosphere Death breathed more freely), and there they gave him their cheap Indian tea. They brought him a bottle of wine that they called champagne. Death drank it up. They brought a newspaper and looked up the patent medicines; they gave him the foods that it recommended for invalids, and a little medicine as prescribed in the paper. They gave him some milk and borax, such as children drink in England."
+    },
+    {
+      "id": "s33-1",
+      "sceneId": "s33",
+      "text": "Death arose ravening, strong, and strode again through the cities."
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "I had from a friend an old outlandish stone, a little swine-faced idol to whom no one prayed."
+    },
+    {
+      "id": "s34-1",
+      "sceneId": "s34",
+      "text": "And when I saw his melancholy case as he sat cross-legged at receipt of prayer, holding a little scourge that the years had broken (and no one heeded the scourge and no one prayed and no one came with squealing sacrifice; and he had been a god), then I took pity on the little forgotten thing and prayed to it as perhaps they prayed long since, before the coming of the strange dark ships, and humbled myself and said:"
+    },
+    {
+      "id": "s34-2",
+      "sceneId": "s34",
+      "text": "\"O idol, idol of the hard pale stone, invincible to the years, O scourge-holder, give ear for behold I pray."
+    },
+    {
+      "id": "s34-3",
+      "sceneId": "s34",
+      "text": "\"O little pale-green image whose wanderings are from far, know thou that here in Europe and in other lands near by, too soon there pass from us the sweets and song and the lion strength of youth: too soon do their cheeks fade, their hair grow grey and our beloved die; too brittle is beauty, too far off is fame and the years are gathered too soon; there are leaves, leaves falling, everywhere falling; there is autumn among men, autumn and reaping; failure there is, struggle, dying and weeping, and all that is beautiful hath not remained but is even as the glory of morning upon the water."
+    },
+    {
+      "id": "s34-4",
+      "sceneId": "s34",
+      "text": "\"Even our memories are gathered too with the sound of the ancient voices, the pleasant ancient voices that come to our ears no more; the very gardens of our childhood fade, and there dims with the speed of the years even the mind's own eye."
+    },
+    {
+      "id": "s34-5",
+      "sceneId": "s34",
+      "text": "\"O be not any more the friend of Time, for the silent hurry of his malevolent feet have trodden down what's fairest; I almost hear the whimper of the years running behind him hound-like, and it takes few to tear us."
+    },
+    {
+      "id": "s34-6",
+      "sceneId": "s34",
+      "text": "\"All that is beautiful he crushes down as a big man tramples daises, all that is fairest. How very fair are the little children of men. It is autumn with all the world, and the stars weep to see it."
+    },
+    {
+      "id": "s34-7",
+      "sceneId": "s34",
+      "text": "\"Therefore no longer be the friend of Time, who will not let us be, and be not good to him but pity us, and let lovely things live on for the sake of our tears.\""
+    },
+    {
+      "id": "s34-8",
+      "sceneId": "s34",
+      "text": "Thus prayed I out of compassion one windy day to the snout-faced idol to whom no one kneeled."
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "There was a woman in a steel-built city who had all that money could buy, she had gold and dividends and trains and houses, and she had pets to play with, but she had no sphinx."
+    },
+    {
+      "id": "s35-1",
+      "sceneId": "s35",
+      "text": "So she besought them to bring her a live sphinx; and therefore they went to the menageries, and then to the forests and the desert places, and yet could find no sphinx."
+    },
+    {
+      "id": "s35-2",
+      "sceneId": "s35",
+      "text": "And she would have been content with a little lion but that one was already owned by a woman she knew; so they had to search the world again for a sphinx."
+    },
+    {
+      "id": "s35-3",
+      "sceneId": "s35",
+      "text": "And still there was none."
+    },
+    {
+      "id": "s35-4",
+      "sceneId": "s35",
+      "text": "But they were not men that it is easy to baffle, and at last they found a sphinx in a desert at evening watching a ruined temple whose gods she had eaten hundreds of years ago when her hunger was on her. And they cast chains on her, who was still with an ominous stillness, and took her westwards with them and brought her home."
+    },
+    {
+      "id": "s35-5",
+      "sceneId": "s35",
+      "text": "And so the sphinx came to the steel-built city."
+    },
+    {
+      "id": "s35-6",
+      "sceneId": "s35",
+      "text": "And the woman was very glad that she owned a sphinx: but the sphinx stared long into her eyes one day, and softly asked a riddle of the woman."
+    },
+    {
+      "id": "s35-7",
+      "sceneId": "s35",
+      "text": "And the woman could not answer, and she died."
+    },
+    {
+      "id": "s35-8",
+      "sceneId": "s35",
+      "text": "And the sphinx is silent again and none knows what she will do."
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "One's spirit goes further in dreams than it does by day. Wandering once by night from a factory city I came to the edge of Hell."
+    },
+    {
+      "id": "s36-1",
+      "sceneId": "s36",
+      "text": "The place was foul with cinders and cast-off things, and jagged, half-buried things with shapeless edges, and there was a huge angel with a hammer building in plaster and steel. I wondered what he did in that dreadful place. I hesitated, then asked him what he was building. \"We are adding to Hell,\" he said, \"to keep pace with the times.\" \"Don't be too hard on them,\" I said, for I had just come out of a compromising age and a weakening country. The angel did not answer. \"It won't be as bad as the old hell, will it?\" I said. \"Worse,\" said the angel."
+    },
+    {
+      "id": "s36-2",
+      "sceneId": "s36",
+      "text": "\"How can you reconcile it with your conscience as a Minister of Grace,\" I said, \"to inflict such a punishment?\" (They talked like this in the city whence I had come and I could not avoid the habit of it.)"
+    },
+    {
+      "id": "s36-3",
+      "sceneId": "s36",
+      "text": "\"They have invented a new cheap yeast,\" said the angel."
+    },
+    {
+      "id": "s36-4",
+      "sceneId": "s36",
+      "text": "I looked at the legend on the walls of the hell that the angel was building, the words were written in flame, every fifteen seconds they changed their color, \"Yeasto, the great new yeast, it builds up body and brain, and something more.\""
+    },
+    {
+      "id": "s36-5",
+      "sceneId": "s36",
+      "text": "\"They shall look at it for ever,\" the angel said."
+    },
+    {
+      "id": "s36-6",
+      "sceneId": "s36",
+      "text": "\"But they drove a perfectly legitimate trade,\" I said, \"the law allowed it.\""
+    },
+    {
+      "id": "s36-7",
+      "sceneId": "s36",
+      "text": "The angel went on hammering into place the huge steel uprights."
+    },
+    {
+      "id": "s36-8",
+      "sceneId": "s36",
+      "text": "\"You are very revengeful,\" I said. \"Do you never rest from doing this terrible work?\""
+    },
+    {
+      "id": "s36-9",
+      "sceneId": "s36",
+      "text": "\"I rested one Christmas Day,\" the angel said, \"and looked and saw little children dying of cancer. I shall go on now until the fires are lit.\""
+    },
+    {
+      "id": "s36-10",
+      "sceneId": "s36",
+      "text": "\"It is very hard to prove,\" I said, \"that the yeast is as bad as you think.\""
+    },
+    {
+      "id": "s36-11",
+      "sceneId": "s36",
+      "text": "\"After all,\" I said, \"they must live.\""
+    },
+    {
+      "id": "s36-12",
+      "sceneId": "s36",
+      "text": "And the angel made no answer but went on building his hell."
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "She went to the idol-shop in Moleshill Street, where the old man mumbles, and said: \"I want a god to worship when it is wet.\""
+    },
+    {
+      "id": "s37-1",
+      "sceneId": "s37",
+      "text": "The old man reminded her of the heavy penalties that rightly attach to idolatry and, when he had enumerated all, she answered him as was meet: \"Give me a god to worship when it is wet.\""
+    },
+    {
+      "id": "s37-2",
+      "sceneId": "s37",
+      "text": "And he went to the back places of his shop and sought out and brought her a god. The same was carved of grey stone and wore a propitious look and was named, as the old man mumbled, The God of Rainy Cheerfulness."
+    },
+    {
+      "id": "s37-3",
+      "sceneId": "s37",
+      "text": "Now it may be that long confinement to the house affects adversely the liver, or these things may be of the soul, but certain it is that on a rainy day her spirits so far descended that those cheerful creatures came within sight of the Pit, and, having tried cigarettes to no good end, she bethought her of Moleshill Street and the mumbling man."
+    },
+    {
+      "id": "s37-4",
+      "sceneId": "s37",
+      "text": "He brought the grey idol forth and mumbled of guarantees, although he put nothing on paper, and she paid him there and then his preposterous price and took the idol away."
+    },
+    {
+      "id": "s37-5",
+      "sceneId": "s37",
+      "text": "And on the next wet day that there ever was she prayed to the grey-stone idol that she had bought, the God of Rainy Cheerfulness (who knows with what ceremony or what lack of it?), and so brought down on her in Leafy Green Street, in the preposterous house at the corner, that doom of which all men speak."
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "The mist said unto the mist: \"Let us go up into the Downs.\" And the mist came up weeping."
+    },
+    {
+      "id": "s38-1",
+      "sceneId": "s38",
+      "text": "And the mist went into the high places and the hollows."
+    },
+    {
+      "id": "s38-2",
+      "sceneId": "s38",
+      "text": "And clumps of trees in the distance stood ghostly in the haze."
+    },
+    {
+      "id": "s38-3",
+      "sceneId": "s38",
+      "text": "But I went to a prophet, one who loved the Downs, and I said to him: \"Why does the mist come up weeping into the Downs when it goes into the high places and the hollows?\""
+    },
+    {
+      "id": "s38-4",
+      "sceneId": "s38",
+      "text": "And he answered: \"The mist is the company of a multitude of souls who never saw the Downs, and now are dead. Therefore they come up weeping into the Downs, who are dead and never saw them.\""
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "He was all in black, but his friend was dressed in brown, members of two old families."
+    },
+    {
+      "id": "s39-1",
+      "sceneId": "s39",
+      "text": "\"Is there any change in the way you build your houses?\" said he in black."
+    },
+    {
+      "id": "s39-2",
+      "sceneId": "s39",
+      "text": "\"No change,\" said the other. \"And you?\""
+    },
+    {
+      "id": "s39-3",
+      "sceneId": "s39",
+      "text": "\"We change not,\" he said."
+    },
+    {
+      "id": "s39-4",
+      "sceneId": "s39",
+      "text": "A man went by in the distance riding a bicycle."
+    },
+    {
+      "id": "s39-5",
+      "sceneId": "s39",
+      "text": "\"He is always changing,\" said the one in black, \"of late almost every century. He is uneasy. Always changing.\""
+    },
+    {
+      "id": "s39-6",
+      "sceneId": "s39",
+      "text": "\"He changes the way he builds his house, does he not?\" said the brown one."
+    },
+    {
+      "id": "s39-7",
+      "sceneId": "s39",
+      "text": "\"So my family say,\" said the other. \"They say he has changed of late.\""
+    },
+    {
+      "id": "s39-8",
+      "sceneId": "s39",
+      "text": "\"They say he takes much to cities?\" the brown one said."
+    },
+    {
+      "id": "s39-9",
+      "sceneId": "s39",
+      "text": "\"My cousin who lives in belfries tells me so,\" said the black one. \"He says he is much in cities.\""
+    },
+    {
+      "id": "s39-10",
+      "sceneId": "s39",
+      "text": "\"And there he grows lean?\" said the brown one."
+    },
+    {
+      "id": "s39-11",
+      "sceneId": "s39",
+      "text": "\"Yes, he grows lean.\""
+    },
+    {
+      "id": "s39-12",
+      "sceneId": "s39",
+      "text": "\"Is it true what they say?\" said the brown one."
+    },
+    {
+      "id": "s39-13",
+      "sceneId": "s39",
+      "text": "\"Caw,\" said the black one."
+    },
+    {
+      "id": "s39-14",
+      "sceneId": "s39",
+      "text": "\"Is it true that he cannot live many centuries?\""
+    },
+    {
+      "id": "s39-15",
+      "sceneId": "s39",
+      "text": "\"No, no,\" said the black one. \"Furrow-maker will not die. We must not lose furrow-maker. He has been foolish of late, he has played with smoke and is sick. His engines have wearied him and his cities are evil. Yes, he is very sick. But in a few centuries he will forget his folly and we shall not lose furrow-maker. Time out of mind he has delved and my family have got their food from the raw earth behind him. He will not die.\""
+    },
+    {
+      "id": "s39-16",
+      "sceneId": "s39",
+      "text": "\"But they say, do they not?\" said the brown one, \"his cities are noisome, and that he grows sick in them and can run no longer, and that it is with him as it is with us when we grow too many, and the grass has the bitter taste in the rainy season, and our young grow bloated and die.\""
+    },
+    {
+      "id": "s39-17",
+      "sceneId": "s39",
+      "text": "\"Who says it?\" replied the black one."
+    },
+    {
+      "id": "s39-18",
+      "sceneId": "s39",
+      "text": "\"Pigeon,\" the brown one answered. \"He came back all dirty. And Hare went down to the edge of the cities once. He says it too. Man was too sick to chase him. He thinks that Man will die, and his wicked friend Dog with him. Dog, he will die. That nasty fellow Dog. He will die too, the dirty fellow!\""
+    },
+    {
+      "id": "s39-19",
+      "sceneId": "s39",
+      "text": "\"Pigeon and Hare!\" said the black one. \"We shall not lose furrow-maker.\""
+    },
+    {
+      "id": "s39-20",
+      "sceneId": "s39",
+      "text": "\"Who told you he will not die?\" his brown friend said."
+    },
+    {
+      "id": "s39-21",
+      "sceneId": "s39",
+      "text": "\"Who told me!\" the black one said. \"My family and his have understood each other times out of mind. We know what follies will kill each other and what each may survive, and I say that furrow-maker will not die.\""
+    },
+    {
+      "id": "s39-22",
+      "sceneId": "s39",
+      "text": "\"He will die,\" said the brown one."
+    },
+    {
+      "id": "s39-23",
+      "sceneId": "s39",
+      "text": "\"Caw,\" said the other."
+    },
+    {
+      "id": "s39-24",
+      "sceneId": "s39",
+      "text": "And Man said in his heart: \"Just one invention more. There is something I want to do with petrol yet, and then I will give it all up and go back to the woods.\""
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "I was climbing round the perilous outside of the Palace of Colquonhombros. So far below me that in the tranquil twilight and clear air of those lands I could only barely see them lay the craggy tops of the mountains."
+    },
+    {
+      "id": "s40-1",
+      "sceneId": "s40",
+      "text": "It was along no battlements or terrace edge I was climbing, but on the sheer face of the wall itself, getting what foothold I could where the boulders joined."
+    },
+    {
+      "id": "s40-2",
+      "sceneId": "s40",
+      "text": "Had my feet been bare I was done, but though I was in my night-shirt I had on stout leather boots, and their edges somehow held in those narrow cracks. My fingers and wrists were aching."
+    },
+    {
+      "id": "s40-3",
+      "sceneId": "s40",
+      "text": "Had it been possible to stop for a moment I might have been lured to give a second look at the fearful peaks of the mountains down there in the twilight, and this must have been fatal."
+    },
+    {
+      "id": "s40-4",
+      "sceneId": "s40",
+      "text": "That the thing was all a dream is beside the point. We have fallen in dreams before, but it is well known that if in one of those falls you ever hit the ground--you die: I had looked at those menacing mountaintops and knew well that such a fall as the one I feared must have such a termination. Then I went on."
+    },
+    {
+      "id": "s40-5",
+      "sceneId": "s40",
+      "text": "It is strange what different sensations there can be in different boulders--every one gleaming with the same white light and every one chosen to match the rest by minions of ancient kings--when your life depends on the edges of every one you come to. Those edges seemed strangely different. It was of no avail to overcome the terror of one, for the next would give you a hold in quite a different way or hand you over to death in a different manner. Some were too sharp to hold and some too flush with the wall, those whose hold was the best crumbled the soonest; each rock had its different terror: and then there were those things that followed behind me."
+    },
+    {
+      "id": "s40-6",
+      "sceneId": "s40",
+      "text": "And at last I came to a breach made long ago by earthquake, lightning or war: I should have had to go down a thousand feet to get round it and they would come up with me while I was doing that, for certain sable apes that I have not mentioned as yet, things that had tigerish teeth and were born and bred on that wall, had pursued me all the evening. In any case I could have gone no farther, nor did I know what the king would do along whose wall I was climbing. It was time to drop and be done with it or stop and await those apes."
+    },
+    {
+      "id": "s40-7",
+      "sceneId": "s40",
+      "text": "And then it was that I remembered a pin, thrown carelessly down out of an evening-tie in another world to the one where grew that glittering wall, and lying now if no evil chance had removed it on a chest of drawers by my bed. The apes were very close, and hurrying, for they knew my fingers were slipping, and the cruel peaks of those infernal mountains seemed surer of me than the apes. I reached out with a desperate effort of will towards where the pin lay on the chest of drawers. I groped about. I found it! I ran it into my arm. Saved!"
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "The old man with a hammer and the one-eyed man with a spear were seated by the roadside talking as I came up the hill."
+    },
+    {
+      "id": "s41-1",
+      "sceneId": "s41",
+      "text": "\"It isn't as though they hadn't asked us,\" the one with the hammer said."
+    },
+    {
+      "id": "s41-2",
+      "sceneId": "s41",
+      "text": "\"There ain't no more than twenty as knows about it,\" said the other."
+    },
+    {
+      "id": "s41-3",
+      "sceneId": "s41",
+      "text": "\"Twenty's twenty,\" said the first."
+    },
+    {
+      "id": "s41-4",
+      "sceneId": "s41",
+      "text": "\"After all these years,\" said the one-eyed man with the spear. \"After all these years. We might go back just once.\""
+    },
+    {
+      "id": "s41-5",
+      "sceneId": "s41",
+      "text": "\"O' course we might,\" said the other."
+    },
+    {
+      "id": "s41-6",
+      "sceneId": "s41",
+      "text": "Their clothes were old even for laborers, the one with the hammer had a leather apron full of holes and blackened, and their hands looked like leather. But whatever they were they were English, and this was pleasant to see after all the motors that had passed me that day with their burden of mixed and doubtful nationalities."
+    },
+    {
+      "id": "s41-7",
+      "sceneId": "s41",
+      "text": "When they saw me the one with the hammer touched his greasy cap."
+    },
+    {
+      "id": "s41-8",
+      "sceneId": "s41",
+      "text": "\"Might we make so bold, sir,\" he said, \"as the ask the way to Stonehenge?\""
+    },
+    {
+      "id": "s41-9",
+      "sceneId": "s41",
+      "text": "\"We never ought to go,\" mumbled the other plaintively. \"There's not more than twenty as knows, but....\""
+    },
+    {
+      "id": "s41-10",
+      "sceneId": "s41",
+      "text": "I was bicycling there myself to see the place so I pointed out the way and rode on at once, for there was something so utterly servile about them both that I did not care for their company. They seemed by their wretched mien to have been persecuted or utterly neglected for many years, I thought that very likely they had done long terms of penal servitude."
+    },
+    {
+      "id": "s41-11",
+      "sceneId": "s41",
+      "text": "When I came to Stonehenge I saw a group of about a score of men standing among the stones. They asked me with some solemnity if I was expecting anyone, and when I said No they spoke to me no more. It was three miles back where I left those strange old men, but I had not been in the stone circle long when they appeared, coming with great strides along the road. When they saw them all the people took off their hats and acted very strangely, and I saw that they had a goat which they led up then to the old altar stone. And the two old men came up with their hammer and spear and began apologizing plaintively for the liberty they had taken in coming back to that place, and all the people knelt on the grass before them. And then still kneeling they killed the goat by the altar, and when the two old men saw this they came up with many excuses and eagerly sniffed the blood. And at first this made them happy. But soon the one with the spear began to whimper. \"It used to be men,\" he lamented. \"It used to be men.\""
+    },
+    {
+      "id": "s41-12",
+      "sceneId": "s41",
+      "text": "And the twenty men began looking uneasily at each other, and the plaint of the one-eyed man went on in that tearful voice, and all of a sudden they all looked at me. I do not know who the two old men were or what any of them were doing, but there are moments when it is clearly time to go, and I left them there and then. And just as I got up on to my bicycle I heard the plaintive voice of the one with the hammer apologizing for the liberty he had taken in coming back to Stonehenge."
+    },
+    {
+      "id": "s41-13",
+      "sceneId": "s41",
+      "text": "\"But after all these years,\" I heard him crying, \"After all these years....\""
+    },
+    {
+      "id": "s41-14",
+      "sceneId": "s41",
+      "text": "And the one with the spear said: \"Yes, after three thousand years....\""
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Through the streets of Coventry one winter's night strode a triumphant spirit. Behind him stooping, unkempt, utterly ragged, wearing the clothes and look that outcasts have, whining, weeping, reproaching, an ill-used spirit tried to keep pace with him. Continually she plucked him by the sleeve and cried out to him as she panted after and he strode resolute on."
+    },
+    {
+      "id": "s42-1",
+      "sceneId": "s42",
+      "text": "It was a bitter night, yet it did not seem to be the cold that she feared, ill-clad though she was, but the trams and the ugly shops and the glare of the factories, from which she continually winced as she hobbled on, and the pavement hurt her feet."
+    },
+    {
+      "id": "s42-2",
+      "sceneId": "s42",
+      "text": "He that strode on in front seemed to care for nothing, it might be hot or cold, silent or noisy, pavement or open fields, he merely had the air of striding on."
+    },
+    {
+      "id": "s42-3",
+      "sceneId": "s42",
+      "text": "And she caught up and clutched him by the elbow. I heard her speak in her unhappy voice, you scarcely heard it for the noise of the traffic."
+    },
+    {
+      "id": "s42-4",
+      "sceneId": "s42",
+      "text": "\"You have forgotten me,\" she complained to him. \"You have forsaken me here.\""
+    },
+    {
+      "id": "s42-5",
+      "sceneId": "s42",
+      "text": "She pointed to Coventry with a wide wave of her arm and seemed to indicate other cities beyond. And he gruffly told her to keep pace with him and that he did not forsake her. And she went on with her pitiful lamentation."
+    },
+    {
+      "id": "s42-6",
+      "sceneId": "s42",
+      "text": "\"My anemones are dead for miles,\" she said, \"all my woods are fallen and still the cities grow. My child Man is unhappy and my other children are dying, and still the cities grow and you have forgotten me!\""
+    },
+    {
+      "id": "s42-7",
+      "sceneId": "s42",
+      "text": "And then he turned angrily on her, almost stopping in that stride of his that began when the stars were made."
+    },
+    {
+      "id": "s42-8",
+      "sceneId": "s42",
+      "text": "\"When have I ever forgotten you?\" he said, \"or when forsaken you ever? Did I not throw down Babylon for you? And is not Nineveh gone? Where is Persepolis that troubled you? Where Tarshish and Tyre? And you have said I forget you.\""
+    },
+    {
+      "id": "s42-9",
+      "sceneId": "s42",
+      "text": "And at this she seemed to take a little comfort. I heard her speak once more, looking wistfully at her companion. \"When will the fields come back and the grass for my children?\""
+    },
+    {
+      "id": "s42-10",
+      "sceneId": "s42",
+      "text": "\"Soon, soon,\" he said: then they were silent. And he strode away, she limping along behind him, and all the clocks in the towers chimed as he passed."
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "As the poet passed the thorn-tree the blackbird sang."
+    },
+    {
+      "id": "s43-1",
+      "sceneId": "s43",
+      "text": "\"How ever do you do it?\" the poet said, for he knew bird language."
+    },
+    {
+      "id": "s43-2",
+      "sceneId": "s43",
+      "text": "\"It was like this,\" said the blackbird. \"It really was the most extraordinary thing. I made that song last Spring, it came to me all of a sudden. There was the most beautiful she-blackbird that the world has ever seen. Her eyes were blacker than lakes are at night, her feathers were blacker than the night itself, and nothing was as yellow as her beak; she could fly much faster than the lightning. She was not an ordinary she-blackbird, there has never been any other like her at all. I did not dare go near her because she was so wonderful. One day last Spring when it got warm again--it had been cold, we ate berries, things were quite different then, but Spring came and it got warm--one day I was thinking how wonderful she was and it seemed so extraordinary to think that I should ever have seen her, the only really wonderful she-blackbird in the world, that I opened my beak to give a shout, and then this song came, and there had never been anything like it before, and luckily I remembered it, the very song that I sang just now. But what is so extraordinary, the most amazing occurence of that marvellous day, was that no sooner had I sung the song than that very bird, the most wonderful she-blackbird in the world, flew right up to me and sat quite close to me on the same tree. I never remember such wonderful times as those."
+    },
+    {
+      "id": "s43-3",
+      "sceneId": "s43",
+      "text": "\"Yes, the song came in a moment, and as I was saying....\""
+    },
+    {
+      "id": "s43-4",
+      "sceneId": "s43",
+      "text": "And an old wanderer walking with a stick came by and the blackbird flew away, and the poet told the old man the blackbird's wonderful story."
+    },
+    {
+      "id": "s43-5",
+      "sceneId": "s43",
+      "text": "\"That song new?\" said the wanderer. \"Not a bit of it. God made it years ago. All the blackbirds used to sing it when I was young. It was new then.\""
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "One wandering nigh Parnassus chasing hares heard the high Muses."
+    },
+    {
+      "id": "s44-1",
+      "sceneId": "s44",
+      "text": "\"Take us a message to the Golden Town.\""
+    },
+    {
+      "id": "s44-2",
+      "sceneId": "s44",
+      "text": "Thus sang the Muses."
+    },
+    {
+      "id": "s44-3",
+      "sceneId": "s44",
+      "text": "But the man said: \"They do not call to me. Not to such as me speak the Muses.\""
+    },
+    {
+      "id": "s44-4",
+      "sceneId": "s44",
+      "text": "And the Muses called him by name."
+    },
+    {
+      "id": "s44-5",
+      "sceneId": "s44",
+      "text": "\"Take us a message,\" they said, \"to the Golden Town.\""
+    },
+    {
+      "id": "s44-6",
+      "sceneId": "s44",
+      "text": "And the man was downcast for he would have chased hares."
+    },
+    {
+      "id": "s44-7",
+      "sceneId": "s44",
+      "text": "And the Muses called again."
+    },
+    {
+      "id": "s44-8",
+      "sceneId": "s44",
+      "text": "And when whether in valleys or on high crags of the hills he still heard the Muses he went at last to them and heard their message, though he would fain have left it to other men and chased the fleet hares still in happy valleys."
+    },
+    {
+      "id": "s44-9",
+      "sceneId": "s44",
+      "text": "And they gave him a wreath of laurels carved out of emeralds as only the Muses can carve. \"By this,\" they said, \"they shall know that you come from the Muses.\""
+    },
+    {
+      "id": "s44-10",
+      "sceneId": "s44",
+      "text": "And the man went from that place and dressed in scarlet silks as befitted one that came from the high Muses. And through the gateway of the Golden Town he ran and cried his message, and his cloak floated behind him. All silent sat the wise men and the aged, they of the Golden Town; cross-legged they sat before their houses reading from parchments a message of the Muses that they sent long before."
+    },
+    {
+      "id": "s44-11",
+      "sceneId": "s44",
+      "text": "And the young man cried his message from the Muses."
+    },
+    {
+      "id": "s44-12",
+      "sceneId": "s44",
+      "text": "And they rose up and said: \"Thou art not from the Muses. Otherwise spake they.\" And they stoned him and he died."
+    },
+    {
+      "id": "s44-13",
+      "sceneId": "s44",
+      "text": "And afterwards they carved his message upon gold; and read it in their temples on holy days."
+    },
+    {
+      "id": "s44-14",
+      "sceneId": "s44",
+      "text": "When will the Muses rest? When are they weary? They sent another messenger to the Golden Town. And they gave him a wand of ivory to carry in his hand with all the beautiful stories of the world wondrously carved thereon. And only the Muses could have carved it. \"By this,\" they said, \"they shall know that you come from the Muses.\""
+    },
+    {
+      "id": "s44-15",
+      "sceneId": "s44",
+      "text": "And he came through the gateway of the Golden Town with the message he had for its people. And they rose up at once in the Golden street, they rose from reading the message that they had carved upon gold. \"The last who came,\" they said, \"came with a wreath of laurels carved out of emeralds, as only the Muses can carve. You are not from the Muses.\" And even as they had stoned the last so also they stoned him. And afterwards they carved his message on gold and laid it up in their temples."
+    },
+    {
+      "id": "s44-16",
+      "sceneId": "s44",
+      "text": "When will the Muses rest? When are they weary? Even yet once again they sent a messenger under the gateway into the Golden Town. And for all that he wore a garland of gold that the high Muses gave him, a garland of kingcups soft and yellow on his head, yet fashioned of pure gold and by whom but the Muses, yet did they stone him in the Golden Town. But they had the message, and what care the Muses?"
+    },
+    {
+      "id": "s44-17",
+      "sceneId": "s44",
+      "text": "And yet they will not rest, for some while since I heard them call to me."
+    },
+    {
+      "id": "s44-18",
+      "sceneId": "s44",
+      "text": "\"Go take our message,\" they said, \"unto the Golden Town.\""
+    },
+    {
+      "id": "s44-19",
+      "sceneId": "s44",
+      "text": "But I would not go. And they spake a second time. \"Go take our message,\" they said."
+    },
+    {
+      "id": "s44-20",
+      "sceneId": "s44",
+      "text": "And still I would not go, and they cried out a third time: \"Go take our message.\""
+    },
+    {
+      "id": "s44-21",
+      "sceneId": "s44",
+      "text": "And though they cried a third time I would not go. But morning and night they cried and through long evenings."
+    },
+    {
+      "id": "s44-22",
+      "sceneId": "s44",
+      "text": "When will the Muses rest? When are they weary? And when they would not cease to call to me I went to them and I said: \"The Golden Town is the Golden Town no longer. They have sold their pillars for brass and their temples for money, they have made coins out of their golden doors. It is become a dark town full of trouble, there is no ease in its streets, beauty has left it and the old songs are gone.\""
+    },
+    {
+      "id": "s44-23",
+      "sceneId": "s44",
+      "text": "\"Go take our message,\" they cried."
+    },
+    {
+      "id": "s44-24",
+      "sceneId": "s44",
+      "text": "And I said to the high Muses: \"You do not understand. You have no message for the Golden Town, the holy city no longer.\""
+    },
+    {
+      "id": "s44-25",
+      "sceneId": "s44",
+      "text": "\"Go take our message,\" they cried."
+    },
+    {
+      "id": "s44-26",
+      "sceneId": "s44",
+      "text": "\"What is your message?\" I said to the high Muses."
+    },
+    {
+      "id": "s44-27",
+      "sceneId": "s44",
+      "text": "And when I heard their message I made excuses, dreading to speak such things in the Golden Town; and again they bade me go."
+    },
+    {
+      "id": "s44-28",
+      "sceneId": "s44",
+      "text": "And I said: \"I will not go. None will believe me.\""
+    },
+    {
+      "id": "s44-29",
+      "sceneId": "s44",
+      "text": "And still the Muses cry to me all night long."
+    },
+    {
+      "id": "s44-30",
+      "sceneId": "s44",
+      "text": "They do not understand. How should they know?"
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "And at last Man raised on high the final glory of his civilization, the towering edifice of the ultimate city."
+    },
+    {
+      "id": "s45-1",
+      "sceneId": "s45",
+      "text": "Softly beneath him in the deeps of the earth purred his machinery fulfilling all his needs, there was no more toil for man. There he sat at ease discussing the Sex Problem."
+    },
+    {
+      "id": "s45-2",
+      "sceneId": "s45",
+      "text": "And sometimes painfully out of forgotten fields, there came to his outer door, came to the furthest rampart of the final glory of Man, a poor old woman begging. And always they turned her away. This glory of Man's achievement, this city was not for her."
+    },
+    {
+      "id": "s45-3",
+      "sceneId": "s45",
+      "text": "It was Nature that came thus begging in from the fields, whom they always turned away."
+    },
+    {
+      "id": "s45-4",
+      "sceneId": "s45",
+      "text": "And away she went again alone to her fields."
+    },
+    {
+      "id": "s45-5",
+      "sceneId": "s45",
+      "text": "And one day she came again, and again they sent her hence. But her three tall sons came too."
+    },
+    {
+      "id": "s45-6",
+      "sceneId": "s45",
+      "text": "\"These shall go in,\" she said. \"Even these my sons to your city.\""
+    },
+    {
+      "id": "s45-7",
+      "sceneId": "s45",
+      "text": "And the three tall sons went in."
+    },
+    {
+      "id": "s45-8",
+      "sceneId": "s45",
+      "text": "And these are Nature's sons, the forlorn one's terrible children, War, Famine and Plague."
+    },
+    {
+      "id": "s45-9",
+      "sceneId": "s45",
+      "text": "Yea and they went in there and found Man unawares in his city still poring over his Problems, obsessed with his civilization, and never hearing their tread as those three came up behind."
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "They built their gorgeous home, their city of glory, above the lair of the earthquake. They built it of marble and gold in the shining youth of the world. There they feasted and fought and called their city immortal, and danced and sang songs to the gods. None heeded the earthquake in all those joyous streets. And down in the deeps of the earth, on the black feet of the abyss, they that would conquer Man mumbled long in the darkness, mumbled and goaded the earthquake to try his strength with that city, to go forth blithely at night and to gnaw its pillars like bones. And down in those grimy deeps the earthquake answered them, and would not do their pleasure and would not stir from thence, for who knew who they were who danced all day where he rumbled, and what if the lords of that city that had no fear of his anger were haply even the gods!"
+    },
+    {
+      "id": "s46-1",
+      "sceneId": "s46",
+      "text": "And the centuries plodded by, on and on round the world, and one day they that had danced, they that had sung in that city, remembered the lair of the earthquake in the deeps down under their feet, and made plans one with another and sought to avert the danger, sought to appease the earthquake and turn his anger away."
+    },
+    {
+      "id": "s46-2",
+      "sceneId": "s46",
+      "text": "They sent down singing girls, and priests with oats and wine, they sent down garlands and propitious berries, down by dark steps to the black depths of the earth, they sent peacocks newly slain, and boys with burning spices, and their thin white sacred cats with collars of pearls all newly drawn from sea, they sent huge diamonds down in coffers of teak, and ointment and strange oriental dyes, arrows and armor and the rings of their queen."
+    },
+    {
+      "id": "s46-3",
+      "sceneId": "s46",
+      "text": "\"Oho,\" said the earthquake in the coolth of the earth, \"so they are not the gods.\""
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "When the advertiser saw the cathedral spires over the downs in the distance, he looked at them and wept."
+    },
+    {
+      "id": "s47-1",
+      "sceneId": "s47",
+      "text": "\"If only,\" he said, \"this were an advertisement of Beefo, so nice, so nutritious, try it in your soup, ladies like it.\""
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "\"Seeing,\" they said, \"that old-time Pan is dead, let us now make a tomb for him and a monument, that the dreadful worship of long ago may be remembered and avoided by all.\""
+    },
+    {
+      "id": "s48-1",
+      "sceneId": "s48",
+      "text": "So said the people of the enlightened lands. And they built a white and mighty tomb of marble. Slowly it rose under the hands of the builders and longer every evening after sunset it gleamed with rays of the departed sun."
+    },
+    {
+      "id": "s48-2",
+      "sceneId": "s48",
+      "text": "And many mourned for Pan while the builders built; many reviled him. Some called the builders to cease and to weep for Pan and others called them to leave no memorial at all of so infamous a god. But the builders built on steadily."
+    },
+    {
+      "id": "s48-3",
+      "sceneId": "s48",
+      "text": "And one day all was finished, and the tomb stood there like a steep sea-cliff. And Pan was carved thereon with humbled head and the feet of angels pressed upon his neck. And when the tomb was finished the sun had already set, but the afterglow was rosy on the huge bulk of Pan."
+    },
+    {
+      "id": "s48-4",
+      "sceneId": "s48",
+      "text": "And presently all the enlightened people came, and saw the tomb and remembered Pan who was dead, and all deplored him and his wicked age. But a few wept apart because of the death of Pan."
+    },
+    {
+      "id": "s48-5",
+      "sceneId": "s48",
+      "text": "But at evening as he stole out of the forest, and slipped like a shadow softly along the hills, Pan saw the tomb and laughed."
+    }
+  ]
+}

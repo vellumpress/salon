@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { existsSync, readFileSync } from "node:fs";
 import test from "node:test";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import {
@@ -168,6 +169,26 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "yekl",
     "zuleika-dobson",
     "all-quiet-on-the-western-front",
+    "a-group-of-noble-dames",
+    "captain-craig",
+    "daniel-deronda",
+    "day-and-night-stories",
+    "fifty-one-tales",
+    "jude-the-obscure",
+    "les-villes-tentaculaires",
+    "neue-gedichte",
+    "over-the-brazier",
+    "rolling-stones",
+    "salammbo",
+    "smoke-bellew",
+    "songs-from-vagabondia",
+    "songs-of-childhood",
+    "ten-minute-stories",
+    "the-everlasting-mercy",
+    "the-golden-bowl",
+    "the-rainbow",
+    "the-sword-of-welleran",
+    "time-and-the-gods",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1279,6 +1300,68 @@ test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
   assert.equal(forYou!.workIds.at(-2), "there-is-confusion");
   assert.equal(forYou!.workIds.at(-1), "miss-lulu-bett");
   assert.equal(sleep!.workIds[0], "quicksand");
+});
+
+
+test("BATCH-4 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
+  const expect = {
+    "a-group-of-noble-dames": { opening: "King's-Hintock Court (said the narrator, turning over his memoranda for reference)--King's-Hintock C", breaths: 1152, scenes: 10, gutenberg: 3049 },
+    "captain-craig": { opening: "I doubt if ten men in all Tilbury Town Had ever shaken hands with Captain Craig, Or called him by hi", breaths: 258, scenes: 16, gutenberg: 77544 },
+    "daniel-deronda": { opening: "Men can do nothing without the make-believe of a beginning. Even science, the strict measurer, is ob", breaths: 4304, scenes: 70, gutenberg: 7469 },
+    "day-and-night-stories": { opening: "\"*Je suis la première au rendez-vous. Je vous attends.*\"", breaths: 995, scenes: 15, gutenberg: 45964 },
+    "fifty-one-tales": { opening: "Fame singing in the highways, and trifling as she sang, with sordid adventurers, passed the poet by.", breaths: 451, scenes: 49, gutenberg: 7838 },
+    "jude-the-obscure": { opening: "Part First AT MARYGREEN", breaths: 3627, scenes: 81, gutenberg: 153 },
+    "les-villes-tentaculaires": { opening: "*Tous les chemins vont vers la ville.*", breaths: 520, scenes: 32, gutenberg: 45590 },
+    "neue-gedichte": { opening: "Wie manches Mal durch das noch unbelaubte Gezweig ein Morgen durchsieht, der schon ganz im Frühling", breaths: 344, scenes: 64, gutenberg: 33863 },
+    "over-the-brazier": { opening: "The youngest poet down the shelves was fumbling In a dim library, just behind the chair From which t", breaths: 89, scenes: 20, gutenberg: 47144 },
+    "rolling-stones": { opening: "[This was the last work of O. Henry. The *Cosmopolitan Magazine* had ordered it from him and, after", breaths: 1496, scenes: 21, gutenberg: 3815 },
+    "salammbo": { opening: "It was at Megara, a suburb of Carthage, in the gardens of Hamilcar. The soldiers whom he had command", breaths: 1924, scenes: 15, gutenberg: 1290 },
+    "smoke-bellew": { opening: "I.", breaths: 1255, scenes: 6, gutenberg: 1596 },
+    "songs-from-vagabondia": { opening: "VAGABONDIA.", breaths: 306, scenes: 7, gutenberg: 18238 },
+    "songs-of-childhood": { opening: "As I lay awake in the white moonlight, I heard a sweet singing in the wood-- 'Out of bed, Sleepyhead", breaths: 332, scenes: 43, gutenberg: 23545 },
+    "ten-minute-stories": { opening: "At the moorland cross-roads Martin stood examining the sign-post for several minutes in some bewilde", breaths: 833, scenes: 28, gutenberg: 72928 },
+    "the-everlasting-mercy": { opening: "Produced by Al Haines.", breaths: 210, scenes: 1, gutenberg: 41467 },
+    "the-golden-bowl": { opening: "The Prince had always liked his London, when it had come to him; he was one of the modern Romans who", breaths: 2497, scenes: 42, gutenberg: 4264 },
+    "the-rainbow": { opening: "Chapter I. HOW TOM BRANGWEN MARRIED A POLISH LADY", breaths: 4518, scenes: 101, gutenberg: 28948 },
+    "the-sword-of-welleran": { opening: "Where the great plain of Tarphet runs up, as the sea in estuaries, among the Cyresian mountains, the", breaths: 434, scenes: 11, gutenberg: 10806 },
+    "time-and-the-gods": { opening: "Once when the gods were young and only Their swarthy servant Time was without age, the gods lay slee", breaths: 677, scenes: 20, gutenberg: 8183 },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(sleep);
+  assert.ok(forYou);
+  assert.deepEqual(forYou.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  let prev = next.indexOf("zuleika-dobson");
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.opening, want.opening, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "next", id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(forYou!.workIds.includes(id), false, id);
+    assert.ok(sleep!.workIds.includes(id), id);
+    const at = next.indexOf(id);
+    assert.ok(at > prev, `${id} follows Tier A on Next`);
+    prev = at;
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: unknown[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.ok(full.breaths[0]?.text.startsWith(want.opening.slice(0, 40)), id);
+  }
 });
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {
