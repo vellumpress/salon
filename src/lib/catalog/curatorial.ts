@@ -62,6 +62,9 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * never Featured, not For you. Cold-open stays Mirth → Quicksand → Botchan.
  * BATCH-5 CLEAR (Sep 22) sits on Next after BATCH-4, before-sleep only —
  * never Featured, not For you. Cold-open stays Mirth → Quicksand → Botchan.
+ * BATCH-8 CLEAR (Sep 22) sits on Next after All Quiet and BATCH-5, before-sleep only —
+ * never Featured, not For you. Cold-open stays Mirth → Quicksand → Botchan.
+ * Mother stays the existing non-local shelf row (HOLD).
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -206,6 +209,24 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-tragic-muse",
   "toilers-of-the-sea",
   "toward-the-gulf",
+  "a-house-of-gentlefolk",
+  "artists-wives",
+  "blix",
+  "emaux-et-camees",
+  "eves-ransom",
+  "fraternity",
+  "hania",
+  "indian-summer",
+  "les-heures-claires",
+  "les-trophees",
+  "numa-roumestan",
+  "royal-highness",
+  "the-emancipated",
+  "the-great-hunger",
+  "the-patrician",
+  "the-price-of-love",
+  "the-private-papers-of-henry-ryecroft",
+  "unhuman-tour-kusamakura",
 ] as const;
 
 /**

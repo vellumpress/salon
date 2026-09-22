@@ -209,6 +209,24 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "the-tragic-muse",
     "toilers-of-the-sea",
     "toward-the-gulf",
+    "a-house-of-gentlefolk",
+    "artists-wives",
+    "blix",
+    "emaux-et-camees",
+    "eves-ransom",
+    "fraternity",
+    "hania",
+    "indian-summer",
+    "les-heures-claires",
+    "les-trophees",
+    "numa-roumestan",
+    "royal-highness",
+    "the-emancipated",
+    "the-great-hunger",
+    "the-patrician",
+    "the-price-of-love",
+    "the-private-papers-of-henry-ryecroft",
+    "unhuman-tour-kusamakura",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1120,8 +1138,8 @@ test("Steppenwolf stays off this Next / Rituals pack", () => {
   assert.equal(FEATURED_CAROUSEL_IDS.includes("steppenwolf"), false);
 });
 
-test("Unhuman Tour soft-holds stay off this Next / Rituals pack", () => {
-  for (const id of ["unhuman-tour-kusamakura", "kusamakura-unhuman-tour"]) {
+test("Kusamakura alias stays off Next while the CLEAR Unhuman Tour bind is live", () => {
+  for (const id of ["kusamakura-unhuman-tour"]) {
     const work = SHELF.find((item) => item.id === id);
     assert.ok(work, id);
     assert.equal(work!.local, undefined, id);
@@ -1445,6 +1463,71 @@ test("BATCH-5 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     assert.ok(full.breaths[0]?.text.startsWith(want.opening.slice(0, 40)), id);
   }
 });
+
+
+test("BATCH-8 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
+  const expect = {
+    "a-house-of-gentlefolk": { opening: "A bright spring day was fading into evening. High overhead in the clear heavens small rosy clouds se", breaths: 1083, scenes: 45, gutenberg: 5721 },
+    "artists-wives": { opening: "*Stretched at full length, on the great divan of a studio, cigar in mouth, two friends--a poet and a", breaths: 338, scenes: 13, gutenberg: 22522 },
+    "blix": { opening: "It had just struck nine from the cuckoo clock that hung over the mantelpiece in the dining-room, whe", breaths: 1235, scenes: 14, gutenberg: 401 },
+    "emaux-et-camees": { opening: "(1794-1894)", breaths: 675, scenes: 62, gutenberg: 37733 },
+    "eves-ransom": { opening: "On the station platform at Dudley Port, in the dusk of a February afternoon, half-a-dozen people wai", breaths: 1862, scenes: 27, gutenberg: 4297 },
+    "fraternity": { opening: "In the afternoon of the last day of April, 190--, a billowy sea of little broken clouds crowned the ", breaths: 2813, scenes: 41, gutenberg: 2773 },
+    "hania": { opening: "When old Mikolai on his death-bed left Hania to my guardianship and conscience, I was sixteen years ", breaths: 3617, scenes: 9, gutenberg: 36583 },
+    "indian-summer": { opening: "Midway of the Ponte Vecchio at Florence, where three arches break the lines of the little jewellers'", breaths: 2499, scenes: 24, gutenberg: 7359 },
+    "les-heures-claires": { opening: "Tissée en or dans l'air de soie!", breaths: 122, scenes: 30, gutenberg: 10061 },
+    "les-trophees": { opening: "À Leconte de L'Isle", breaths: 664, scenes: 81, gutenberg: 14805 },
+    "numa-roumestan": { opening: "TO THE ARENA!", breaths: 1787, scenes: 20, gutenberg: 69808 },
+    "royal-highness": { opening: "Artillery salvos were fired when the various new-fangled means of communication in the capital sprea", breaths: 1411, scenes: 9, gutenberg: 36028 },
+    "the-emancipated": { opening: "By a window looking from Posillipo upon the Bay of Naples sat an English lady, engaged in letter-wri", breaths: 3897, scenes: 33, gutenberg: 4311 },
+    "the-great-hunger": { opening: "For sheer havoc, there is no gale like a good northwester, when it roars in, through the long winter", breaths: 1756, scenes: 27, gutenberg: 2943 },
+    "the-patrician": { opening: "Light, entering the vast room—a room so high that its carved ceiling refused itself to exact scrutin", breaths: 2176, scenes: 51, gutenberg: 2774 },
+    "the-price-of-love": { opening: "In the evening dimness of old Mrs. Maldon's sitting-room stood the youthful virgin, Rachel Louisa Fl", breaths: 2475, scenes: 19, gutenberg: 12912 },
+    "the-private-papers-of-henry-ryecroft": { opening: "I.", breaths: 534, scenes: 4, gutenberg: 1463 },
+    "unhuman-tour-kusamakura": { opening: "Climbing the mountain, I was caught up into a train of thought.", breaths: 1013, scenes: 13, gutenberg: 73131 },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(sleep);
+  assert.ok(forYou);
+  assert.deepEqual(forYou.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  assert.equal(SHELF.find((item) => item.id === "mother")?.local, undefined);
+  let prev = next.indexOf("toward-the-gulf");
+  const quiet = next.indexOf("all-quiet-on-the-western-front");
+  assert.ok(quiet >= 0 && prev > quiet);
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.opening, want.opening, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "next", id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(forYou!.workIds.includes(id), false, id);
+    assert.ok(sleep!.workIds.includes(id), id);
+    assert.ok(sleep!.workIds.indexOf(id) > sleep!.workIds.indexOf("all-quiet-on-the-western-front"), id);
+    const at = next.indexOf(id);
+    assert.ok(at > prev, `${id} follows BATCH-5 on Next`);
+    prev = at;
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: unknown[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.ok(full.breaths[0]?.text.startsWith(want.opening.slice(0, 40)), id);
+  }
+});
+
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {
   const waking = RITUAL_LANES.find((item) => item.id === "waking-up");

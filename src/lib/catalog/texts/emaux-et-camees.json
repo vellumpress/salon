@@ -1,0 +1,3823 @@
+{
+  "id": "emaux-et-camees",
+  "title": "Émaux et Camées",
+  "author": "Théophile Gautier",
+  "year": "1852",
+  "note": "Project Gutenberg 37733",
+  "minutes": 166,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Un Siècle De Modes Féminines",
+      "place": "Un Siècle De Modes Féminines",
+      "reentry": "(1794-1894)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Et Camées",
+      "place": "Et Camées",
+      "reentry": "CAMÉES",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Henri Caruchet",
+      "place": "Henri Caruchet",
+      "reentry": "*Reproduites en couleurs*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Madrigal Panthéiste",
+      "place": "Madrigal Panthéiste",
+      "reentry": "Dans le fronton d'un temple antique, Deux blocs de marbre ont, trois mille ans Sur le fond bleu du ciel attique, Juxtaposé leurs rêves blancs;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Le Poème De La Femme",
+      "place": "Le Poème De La Femme",
+      "reentry": "DE LA FEMME",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Marbre De Paros",
+      "place": "Marbre De Paros",
+      "reentry": "Un jour, au doux rêveur qui l'aime, En train de montrer ses trésors, Elle voulut lire un poème, Le poème de son beau corps.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Imperia",
+      "place": "Imperia",
+      "reentry": "Chez un sculpteur, moulée en plâtre, J'ai vu l'autre jour une main D'Aspasie ou de Cléopâtre, Pur fragment d'un chef-d'oeuvre humain;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Lacenaire",
+      "place": "Lacenaire",
+      "reentry": "Pour contraste, la main coupée De Lacenaire l'assassin, Dans des baumes puissants trempée Posait auprès, sur un coussin.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Variations Sur Le Carnaval De Venise",
+      "place": "Variations Sur Le Carnaval De Venise",
+      "reentry": "SUR LE CARNAVAL DE VENISE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Dans La Rue",
+      "place": "Dans La Rue",
+      "reentry": "Il est un vieil air populaire Par tous les violons raclé, Aux abois des chiens en colère Par tous les orgues nasillé.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Sur Les Lagunes",
+      "place": "Sur Les Lagunes",
+      "reentry": "Tra la, tra la, la, la, la laire! Qui ne connaît pas ce motif? A nos mamans il a su plaire, Tendre et gai, moqueur et plaintif:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Carnaval",
+      "place": "Carnaval",
+      "reentry": "Venise pour le bal s'habille. De paillettes tout étoilé, Scintille, fourmille et babille Le carnaval bariolé.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Clair De Lune Sentimental",
+      "place": "Clair De Lune Sentimental",
+      "reentry": "A travers la folle risée Que Saint-Marc renvoie au Lido, Une gamme monte en fusée, Comme au clair de lune un jet d'eau...",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Symphonie En Blanc Majeur",
+      "place": "Symphonie En Blanc Majeur",
+      "reentry": "EN BLANC MAJEUR",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Coquetterie Posthume",
+      "place": "Coquetterie Posthume",
+      "reentry": "POSTHUME",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Diamant Du Coeur",
+      "place": "Diamant Du Coeur",
+      "reentry": "DU COEUR",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "Premier Sourire Du Printemps",
+      "place": "Premier Sourire Du Printemps",
+      "reentry": "DU PRINTEMPS",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Contralto",
+      "place": "Contralto",
+      "reentry": "On voit dans le musée antique, Sur un lit de marbre sculpté, Une statue énigmatique D'une inquiétante beauté.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Cærulei Oculi",
+      "place": "Cærulei Oculi",
+      "reentry": "Une femme mystérieuse, Dont la beauté trouble mes sens Se tient debout, silencieuse, Au bord des flots retentissants.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Rondalla",
+      "place": "Rondalla",
+      "reentry": "Enfant aux airs d'impératrice, Colombe aux regards de faucon, Tu me hais, mais c'est mon caprice, De me planter sous ton balcon.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "Nostalgies D'obélisques",
+      "place": "Nostalgies D'obélisques",
+      "reentry": "D'OBÉLISQUES",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "L'obélisque De Paris",
+      "place": "L'obélisque De Paris",
+      "reentry": "Sur cette place je m'ennuie, Obélisque dépareillé; Neige, givre, bruine et pluie Glacent mon flanc déjà rouillé;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "L'obélisque De Luxor",
+      "place": "L'obélisque De Luxor",
+      "reentry": "Je veille, unique sentinelle De ce grand palais dévasté, Dans la solitude éternelle, En face de l'immensité.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "Vieux De La Vieille",
+      "place": "Vieux De La Vieille",
+      "reentry": "15 DÉCEMBRE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Tristesse En Mer",
+      "place": "Tristesse En Mer",
+      "reentry": "EN MER",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "Une Robe Rose",
+      "place": "Une Robe Rose",
+      "reentry": "Que tu me plais dans cette robe Qui te déshabille si bien, Faisant jaillir ta gorge en globe, Montrant tout nu ton bras païen!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Le Monde Est Méchant",
+      "place": "Le Monde Est Méchant",
+      "reentry": "EST MÉCHANT",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Inès De Las Sierras",
+      "place": "Inès De Las Sierras",
+      "reentry": "DE LAS SIERRAS",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "A La Petra Camara",
+      "place": "A La Petra Camara",
+      "reentry": "Nodier raconte qu'en Espagne Trois officiers cherchant un soir, Une venta dans la campagne, Ne trouvèrent qu'un vieux manoir;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "Odelette Anacréontique",
+      "place": "Odelette Anacréontique",
+      "reentry": "ANACRÉONTIQUE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "Fumée",
+      "place": "Fumée",
+      "reentry": "Là-bas, sous les arbres s'abrite Une chaumière au dos bossu; Le toit penche, le mur s'effrite, Le seuil de la porte est moussu.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Apollonie",
+      "place": "Apollonie",
+      "reentry": "J'aime ton nom d'Apollonie, Écho grec du sacré vallon, Qui, dans sa robuste harmonie, Te baptise soeur d'Apollon.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "L'aveugle",
+      "place": "L'aveugle",
+      "reentry": "Un aveugle au coin d'une borne, Hagard comme au jour un hibou, Sur son flageolet, d'un air morne, Tâtonne en se trompant de trou,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "Lied",
+      "place": "Lied",
+      "reentry": "Au mois d'avril, la terre est rose Comme la jeunesse et l'amour; Pucelle encore, à peine elle ose Payer le Printemps de retour.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "Fantaisies D'hiver",
+      "place": "Fantaisies D'hiver",
+      "reentry": "Le nez rouge, la face blême, Sur un pupitre de glaçons, L'hiver exécute son thème Dans le quatuor des saisons.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "La Source",
+      "place": "La Source",
+      "reentry": "Tout près du lac filtre une source, Entre deux pierres, dans un coin; Allégrement l'eau prend sa course Comme pour s'en aller bien loin.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "Buchers Et Tombeaux",
+      "place": "Buchers Et Tombeaux",
+      "reentry": "ET TOMBEAUX",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "Le Souper Des Armures",
+      "place": "Le Souper Des Armures",
+      "reentry": "DES ARMURES",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "La Montre",
+      "place": "La Montre",
+      "reentry": "Deux fois je regarde ma montre, Et deux fois à mes yeux distraits L'aiguille au même endroit se montre; Il est une heure..., une heure après.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "Les Néréides",
+      "place": "Les Néréides",
+      "reentry": "J'ai dans ma chambre une aquarelle Bizarre, et d'un peintre avec qui Mètre et rime sont en querelle, --Théophile Kniatowski.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "Les Accroche-coeurs",
+      "place": "Les Accroche-coeurs",
+      "reentry": "ACCROCHE-COEURS",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "La Rose-the",
+      "place": "La Rose-the",
+      "reentry": "La plus délicate des roses Est, à coup sûr, la rose-thé. Son bouton, aux feuilles mi-closes De carmin à peine est teinté.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "Carmen",
+      "place": "Carmen",
+      "reentry": "Carmen est maigre,--un trait de bistre Cerne son oeil de gitana. Ses cheveux sont d'un noir sinistre, Sa peau, le diable la tanna.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "Ce Que Disent Les Hirondelles",
+      "place": "Ce Que Disent Les Hirondelles",
+      "reentry": "LES HIRONDELLES",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "Chanson D'automne",
+      "place": "Chanson D'automne",
+      "reentry": "Déjà plus d'une feuille sèche Parsème les gazons jaunis; Soir et matin, la brise est fraîche, Hélas! les beaux jours sont finis!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "Noël",
+      "place": "Noël",
+      "reentry": "Le ciel est noir, la terre est blanche; --Cloches, carillonnez gaîment!-- Jésus est né.--La Vierge penche Sur lui son visage charmant.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "Les Joujoux De La Morte",
+      "place": "Les Joujoux De La Morte",
+      "reentry": "DE LA MORTE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "Après Le Feuilleton",
+      "place": "Après Le Feuilleton",
+      "reentry": "LE FEUILLETON",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "Le Chateau Du Souvenir",
+      "place": "Le Chateau Du Souvenir",
+      "reentry": "DU SOUVENIR",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "Camélia Et Paquerette",
+      "place": "Camélia Et Paquerette",
+      "reentry": "ET PAQUERETTE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "La Fellah",
+      "place": "La Fellah",
+      "reentry": "SUR UNE AQUARELLE DE LA PRINCESSE M...",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "La Mansarde",
+      "place": "La Mansarde",
+      "reentry": "Sur les tuiles où se hasarde Le chat guettant l'oiseau qui boit, De mon balcon une mansarde Entre deux tuyaux s'aperçoit.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "La Nue",
+      "place": "La Nue",
+      "reentry": "A l'horizon monte une nue, Sculptant sa forme dans l'azur: On dirait une vierge nue Émergeant d'un lac au flot pur.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "Le Merle",
+      "place": "Le Merle",
+      "reentry": "Un oiseau siffle dans les branches Et sautille gai, plein d'espoir, Sur les herbes, de givre blanches, En bottes jaunes, en frac noir.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "La Fleur Qui Fait Le Printemps",
+      "place": "La Fleur Qui Fait Le Printemps",
+      "reentry": "QUI FAIT LE PRINTEMPS",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "Dernier Voeu",
+      "place": "Dernier Voeu",
+      "reentry": "Voilà longtemps que je vous aime: --L'aveu remonte à dix-huit ans!-- Vous êtes rose, je suis blême, J'ai les hivers, vous les printemps.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "Plaintive Tourterelle",
+      "place": "Plaintive Tourterelle",
+      "reentry": "TOURTERELLE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "La Bonne Soirée",
+      "place": "La Bonne Soirée",
+      "reentry": "BONNE SOIRÉE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "L'art",
+      "place": "L'art",
+      "reentry": "Oui, l'oeuvre sort plus belle D'une forme au travail Rebelle, Vers, marbre, onyx, émail.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "Préface 1",
+      "place": "Préface 1",
+      "reentry": "AFFINITÉS SECRÈTES, madrigal panthéiste 3",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "Rondalla 59",
+      "place": "Rondalla 59",
+      "reentry": "NOSTALGIES D'OBÉLISQUES.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "L'art 187",
+      "place": "L'art 187",
+      "reentry": "Imp. de Malherbe, 12, passage des Favorites, Paris",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "(1794-1894)"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "UN VOLUME IN-18. PRIX: =3= FR. =50=."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "COLLECTION POLYCHRÔME THÉOPHILE GAUTIER"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "ÉMAUX"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "CAMÉES"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "ÉDITION ORNÉE DE CENT DIX AQUARELLES PAR"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "*Reproduites en couleurs*"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "PARIS G. CHARPENTIER et E. FASQUELLE ÉDITEURS 11, Rue de Grenelle, 11"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "1895"
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "PRÉFACE"
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Pendant les guerres de l'empire, Goethe, au bruit du canon brutal, Fit *le Divan occidental*, Fraîche oasis où l'art respire."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Pour Nisami quittant Shakspeare, Il se parfuma de çantal, Et sur un mètre oriental Nota le chant qu'Hudhud soupire."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Comme Goethe sur son divan A Weimar s'isolait des choses Et d'Hafiz effeuillait les roses,"
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "Sans prendre garde à l'ouragan Qui fouettait mes vitres fermées, Moi, j'ai fait *Émaux et Camées*."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Dans le fronton d'un temple antique, Deux blocs de marbre ont, trois mille ans Sur le fond bleu du ciel attique, Juxtaposé leurs rêves blancs;"
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Dans la même nacre figées, Larmes des flots pleurant Vénus, Deux perles au gouffre plongées Se sont dit des mots inconnus;"
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Au frais Généralife écloses, Sous le jet d'eau toujours en pleurs, Du temps de Boabdil, deux roses Ensemble ont fait jaser leurs fleurs;"
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Sur les coupoles de Venise Deux ramiers blancs aux pieds rosés, Au nid où l'amour s'éternise, Un soir de mai se sont posés."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Marbre, perle, rose, colombe, Tout se dissout, tout se détruit; La perle fond, le marbre tombe, La fleur se fane et l'oiseau fuit."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "En se quittant, chaque parcelle S'en va dans le creuset profond Grossir la pâte universelle Faite des formes que Dieu fond."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "Par de lentes métamorphoses, Les marbres blancs en blanches chairs, Les fleurs roses en lèvres roses Se refont dans des corps divers."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "Les ramiers de nouveau roucoulent Au coeur de deux jeunes amants, Et les perles en dents se moulent Pour l'écrin des rires charmants."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "De là naissent ces sympathies Aux impérieuses douceurs, Par qui les âmes averties Partout se reconnaissent soeurs."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "Docile à l'appel d'un arome, D'un rayon ou d'une couleur, L'atome vole vers l'atome Comme l'abeille vers la fleur."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "L'on se souvient des rêveries Sur le fronton ou dans la mer, Des conversations fleuries Près de la fontaine au flot clair,"
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "Des baisers et des frissons d'ailes Sur les dômes aux boules d'or, Et les molécules fidèles Se cherchent et s'aiment encor."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "L'amour oublié se réveille, Le passé vaguement renaît, La fleur sur la bouche vermeille Se respire et se reconnaît."
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "Dans la nacre où le rire brille La perle revoit sa blancheur; Sur une peau de jeune fille, Le marbre ému sent sa fraîcheur."
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "Le ramier trouve une voix douce, Écho de son gémissement, Toute résistance s'émousse, Et l'inconnu devient l'amant."
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "Vous devant qui je brûle et tremble Quel flot, quel fronton, quel rosier, Quel dôme nous connut ensemble, Perle ou marbre, fleur ou ramier?"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "DE LA FEMME"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Un jour, au doux rêveur qui l'aime, En train de montrer ses trésors, Elle voulut lire un poème, Le poème de son beau corps."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "D'abord, superbe et triomphante Elle vint en grand apparat, Traînant avec des airs d'infante Un flot de velours nacarat:"
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "Telle qu'au rebord de sa loge Elle brille aux Italiens, Écoutant passer son éloge Dans les chants des musiciens"
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "Ensuite, en sa verve d'artiste, Laissant tomber l'épais velours, Dans un nuage de batiste Elle ébaucha ses fiers contours."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "Glissant de l'épaule à la hanche, La chemise aux plis nonchalants, Comme une tourterelle blanche Vint s'abattre sur ses pieds blancs."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "Pour Apelle ou pour Cléomène, Elle semblait, marbre de chair, En Vénus Anadyomène Poser nue au bord de la mer."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "De grosses perles de Venise Roulaient au lieu de gouttes d'eau, Grains laiteux qu'un rayon irise, Sur le frais satin de sa peau."
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "Oh! quelles ravissantes choses Dans sa divine nudité, Avec les strophes de ses poses, Chantait cet hymne de beauté!"
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "Comme les flots baisant le sable Sous la lune aux tremblants rayons, Sa grâce était intarissable En molles ondulations."
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "Mais bientôt, lasse d'art antique, De Phidias et de Vénus, Dans une autre stance plastique Elle groupe ses charmes nus."
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "Sur un tapis de Cachemire, C'est la sultane du sérail, Riant au miroir qui l'admire Avec un rire de corail;"
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "La Géorgienne indolente, Avec son souple narguilhé, Étalant sa hanche opulente, Un pied sous l'autre replié,"
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "Et comme l'odalisque d'Ingres, De ses reins cambrant les rondeurs, En dépit des vertus malingres, En dépit des maigres pudeurs!"
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "Paresseuse odalisque, arrière! Voici le tableau dans son jour, Le diamant dans sa lumière; Voici la beauté dans l'amour!"
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "Sa tête penche et se renverse; Haletante, dressant les seins, Aux bras du rêve qui la berce, Elle tombe sur ses coussins."
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "Ses paupières battent des ailes Sur leurs globes d'argent bruni, Et l'on voit monter ses prunelles Dans la nacre de l'infini."
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "D'un linceul de point d'Angleterre Que l'on recouvre sa beauté: L'extase l'a prise à la terre; Elle est morte de volupté!"
+    },
+    {
+      "id": "s5-17",
+      "sceneId": "s5",
+      "text": "Que les violettes de Parme, Au lieu des tristes fleurs des morts Où chaque perle est une larme, Pleurent en bouquets sur son corps!"
+    },
+    {
+      "id": "s5-18",
+      "sceneId": "s5",
+      "text": "Et que mollement on la pose Sur son lit, tombeau blanc et doux, Où le poète, à la nuit close, Ira prier à deux genoux."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Chez un sculpteur, moulée en plâtre, J'ai vu l'autre jour une main D'Aspasie ou de Cléopâtre, Pur fragment d'un chef-d'oeuvre humain;"
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "Sous le baiser neigeux saisie Comme un lis par l'aube argenté, Comme une blanche poésie S'épanouissait sa beauté,"
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Dans l'éclat de sa pâleur mate Elle étalait sur le velours Son élégance délicate Et ses doigts fins aux anneaux lourds."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "Une cambrure florentine, Avec un bel air de fierté, Faisait, en ligne serpentine, Onduler son pouce écarté."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "A-t-elle joué dans les boucles Des cheveux lustrés de don Juan, Ou sur son caftan d'escarboucles Peigné la barbe du sultan,"
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "Et tenu, courtisane ou reine, Entre ses doigts si bien sculptés, Le sceptre de la souveraine Ou le sceptre des voluptés?"
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "Elle a dû, nerveuse et mignonne, Souvent s'appuyer sur le col Et sur la croupe de lionne De sa chimère prise au vol."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "Impériales fantaisies, Amour des somptuosités; Voluptueuses frénésies, Rêves d'impossibilités,"
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "Romans extravagants, poèmes De haschisch et de vin du Rhin, Courses folles dans les bohèmes Sur le dos des coursiers sans frein;"
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "On voit tout cela dans les lignes De cette paume, livre blanc Où Vénus a tracé des signes Que l'amour ne lit qu'en tremblant."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Pour contraste, la main coupée De Lacenaire l'assassin, Dans des baumes puissants trempée Posait auprès, sur un coussin."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Curiosité dépravée! J'ai touché, malgré mes dégoûts, Du supplice encore mal lavée, Cette chair froide au duvet roux."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "Momifiée et toute jaune Comme la main d'un pharaon, Elle allonge ses doigts de faune Crispés par la tentation."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Un prurit d'or et de chair vive Semble titiller de ses doigts L'immobilité convulsive, Et les tordre comme autrefois."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Tous les vices avec leurs griffes Ont, dans les plis de cette peau, Tracé d'affreux hiéroglyphes, Lus couramment par le bourreau."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "On y voit les oeuvres mauvaises Écrites en fauves sillons, Et les brûlures des fournaises Où bouillent les corruptions;"
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Les débauches dans les Caprées Des tripots et des lupanars, De vin et de sang diaprées, Comme l'ennui des vieux Césars!"
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "En même temps molle et féroce, Sa forme a pour l'observateur Je ne sais quelle grâce atroce, La grâce du gladiateur!"
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "Criminelle aristocratie, Par la varlope ou le marteau Sa pulpe n'est pas endurcie, Car son outil fut un couteau."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "Saints calus du travail honnête, On y cherche en vain votre sceau. Vrai meurtrier et faux poète, Il fut le Manfred du ruisseau!"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "SUR LE CARNAVAL DE VENISE"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Il est un vieil air populaire Par tous les violons raclé, Aux abois des chiens en colère Par tous les orgues nasillé."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "Les tabatières à musique L'ont sur leur répertoire inscrit; Pour les serins il est classique, Et ma grand'mère, enfant, l'apprit."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "Sur cet air, pistons, clarinettes, Dans les bals aux poudreux berceaux, Font sauter commis et grisettes, Et de leurs nids fuir les oiseaux."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "La guinguette, sous sa tonnelle De houblon et de chèvrefeuil, Fête, en braillant la ritournelle, Le gai dimanche et l'argenteuil."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "L'aveugle au basson qui pleurniche L'écorche en se trompant de doigts, La sébile aux dents, son caniche Près de lui le grogne à mi-voix."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "Et les petites guitaristes, Maigres sous leurs minces tartans, Le glapissent de leurs voix tristes Aux tables des cafés chantants."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "Paganini, le fantastique, Un soir, comme avec un crochet, A ramassé le thème antique Du bout de son divin archet,"
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "Et, brodant la gaze fanée Que l'oripeau rougit encor, Fait sur la phrase dédaignée Courir ses arabesques d'or."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Tra la, tra la, la, la, la laire! Qui ne connaît pas ce motif? A nos mamans il a su plaire, Tendre et gai, moqueur et plaintif:"
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "L'air du Carnaval de Venise, Sur les canaux jadis chanté Et qu'un soupir de folle brise Dans le ballet a transporté!"
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "Il me semble, quand on le joue, Voir glisser dans son bleu sillon Une gondole avec sa proue Faite en manche de violon."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "Sur une gamme chromatique, Le sein de perles ruisselant, La Vénus de l'Adriatique Sort de l'eau son corps rose et blanc."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "Les dômes, sur l'azur des ondes Suivant la phrase au pur contour, S'enflent comme des gorges rondes Que soulève un soupir d'amour."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "L'esquif aborde et me dépose, Jetant son amarre au pilier, Devant une façade rose, Sur le marbre d'un escalier."
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "Avec ses palais, ses gondoles, Ses mascarades sur la mer, Ses doux chagrins, ses gaîtés folles, Tout Venise vit dans cet air."
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "Une frêle corde qui vibre Refait sur un pizzicato, Comme autrefois joyeuse et libre, La ville de Canaletto!"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Venise pour le bal s'habille. De paillettes tout étoilé, Scintille, fourmille et babille Le carnaval bariolé."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Arlequin, nègre par son masque, Serpent par ses mille couleurs, Rosse d'une note fantasque Cassandre son souffre-douleurs."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "Battant de l'aile avec sa manche Comme un pingouin sur un écueil, Le blanc Pierrot, par une blanche, Passe la tête et cligne l'oeil."
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "Le Docteur bolonais rabâche Avec la basse aux sons traînés; Polichinelle, qui se fâche, Se trouve une croche pour nez."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "Heurtant Trivelin qui se mouche Avec un trille extravagant, A Colombine Scaramouche Rend son éventail ou son gant."
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "Sur une cadence se glisse Un domino ne laissant voir Qu'un malin regard en coulisse Aux paupières de satin noir."
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "Ah! fine barbe de dentelle, Que fait voler un souffle pur, Cet arpége m'a dit: C'est elle! Malgré tes réseaux, j'en suis sûr."
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "Et j'ai reconnu, rose et fraîche, Sous l'affreux profil de carton, Sa lèvre au fin duvet de pèche, Et la mouche de son menton."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "A travers la folle risée Que Saint-Marc renvoie au Lido, Une gamme monte en fusée, Comme au clair de lune un jet d'eau..."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "A l'air qui jase d'un ton bouffe Et secoue au vent ses grelots, Un regret, ramier qu'on étouffe, Par instant mêle ses sanglots."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "Au loin, dans la brume sonore, Comme un rêve presque effacé, J'ai revu, pâle et triste encore, Mon vieil amour de l'an passé."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "Mon âme en pleurs s'est souvenue De l'avril, où, guettant au bois La violette à sa venue, Sous l'herbe nous mêlions nos doigts..."
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "Cette note de chanterelle, Vibrant comme l'harmonica, C'est la voix enfantine et grêle, Flèche d'argent qui me piqua."
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "Le son en est si faux, si tendre, Si moqueur, si doux, si cruel, Si froid, si brûlant, qu'à l'entendre On ressent un plaisir mortel,"
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "Et que mon coeur, comme la voûte Dont l'eau pleure dans un bassin, Laisse tomber goutte par goutte Ses larmes rouges dans mon sein."
+    },
+    {
+      "id": "s12-7",
+      "sceneId": "s12",
+      "text": "Jovial et mélancolique, Ah! vieux thème du carnaval, Où le rire aux larmes réplique, Que ton charme m'a fait de mal!"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "EN BLANC MAJEUR"
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "De leur col blanc courbant les lignes On voit dans les contes du Nord, Sur le vieux Rhin, des femmes-cygnes Nager en chantant près du bord,"
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "Ou, suspendant à quelque branche Le plumage qui les revêt, Faire luire leur peau plus blanche Que la neige de leur duvet."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "De ces femmes il en est une, Qui chez nous descend quelquefois, Blanche comme le clair de lune Sur les glaciers dans les cieux froids;"
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "Conviant la vue enivrée De sa boréale fraîcheur A des régals de chair nacrée, A des débauches de blancheur"
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "Son sein, neige moulée en globe, Contre les camélias blancs Et le blanc satin de sa robe Soutient des combats insolents."
+    },
+    {
+      "id": "s13-6",
+      "sceneId": "s13",
+      "text": "Dans ces grandes batailles blanches, Satins et fleurs ont le dessous, Et, sans demander leurs revanches, Jaunissent comme des jaloux."
+    },
+    {
+      "id": "s13-7",
+      "sceneId": "s13",
+      "text": "Sur les blancheurs de son épaule, Paros au grain éblouissant, Comme dans une nuit du pôle, Un givre invisible descend."
+    },
+    {
+      "id": "s13-8",
+      "sceneId": "s13",
+      "text": "De quel mica de neige vierge, De quelle moelle de roseau, De quelle hostie et de quel cierge A-t-on fait le blanc de sa peau?"
+    },
+    {
+      "id": "s13-9",
+      "sceneId": "s13",
+      "text": "A-t-on pris la goutte lactée Tachant l'azur du ciel d'hiver, Le lis à la pulpe argentée, La blanche écume de la mer;"
+    },
+    {
+      "id": "s13-10",
+      "sceneId": "s13",
+      "text": "Le marbre blanc, chair froide et pâle, Où vivent les divinités; L'argent mat, la laiteuse opale Qu'irisent de vagues clartés;"
+    },
+    {
+      "id": "s13-11",
+      "sceneId": "s13",
+      "text": "L'ivoire, où ses mains ont des ailes, Et, comme des papillons blancs, Sur la pointe des notes frêles Suspendent leurs baisers tremblants;"
+    },
+    {
+      "id": "s13-12",
+      "sceneId": "s13",
+      "text": "L'hermine vierge de souillure, Qui, pour abriter leurs frissons, Ouate de sa blanche fourrure Les épaules et les blasons;"
+    },
+    {
+      "id": "s13-13",
+      "sceneId": "s13",
+      "text": "Le vif-argent aux fleurs fantasques Dont les vitraux sont ramagés; Les blanches dentelles des vasques, Pleurs de l'ondine en l'air figés;"
+    },
+    {
+      "id": "s13-14",
+      "sceneId": "s13",
+      "text": "L'aubépine de mai qui plie Sous les blancs frimas de ses fleurs; L'albâtre où la mélancolie Aime à retrouver ses pâleurs;"
+    },
+    {
+      "id": "s13-15",
+      "sceneId": "s13",
+      "text": "Le duvet blanc de la colombe, Neigeant sur les toits du manoir, Et la stalactite qui tombe, Larme blanche de l'antre noir?"
+    },
+    {
+      "id": "s13-16",
+      "sceneId": "s13",
+      "text": "Des Groenlands et des Norvèges Vient-elle avec Séraphita? Est-ce la Madone des neiges, Un sphinx blanc que l'hiver sculpta,"
+    },
+    {
+      "id": "s13-17",
+      "sceneId": "s13",
+      "text": "Sphinx enterré par l'avalanche, Gardien des glaciers étoilés, Et qui, sous sa poitrine blanche, Cache de blancs secrets gelés?"
+    },
+    {
+      "id": "s13-18",
+      "sceneId": "s13",
+      "text": "Sous la glace où calme il repose, Oh! qui pourra fondre ce coeur! Oh! qui pourra mettre un ton rose Dans cette implacable blancheur!"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "POSTHUME"
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "Quand je mourrai, que l'on me mette, Avant de clouer mon cercueil, Un peu de rouge à la pommette, Un peu de noir au bord de l'oeil."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "Car je veux, dans ma bière close, Comme le soir de son aveu, Rester éternellement rose Avec du kh'ol sous mon oeil bleu."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "Pas de suaire en toile fine, Mais drapez-moi dans les plis blancs De ma robe de mousseline, De ma robe à treize volants."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "C'est ma parure préférée; Je la portais quand je lui plus. Son premier regard l'a sacrée, Et depuis je ne la mis plus."
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Posez-moi, sans jaune immortelle, Sans coussin de larmes brodé, Sur mon oreiller de dentelle De ma chevelure inondé."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "Cet oreiller, dans les nuits folles, A vu dormir nos fronts unis, Et sous le drap noir des gondoles Compté nos baisers infinis."
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "Entre mes mains de cire pâle, Que la prière réunit, Tournez ce chapelet d'opale, Par le pape à Rome bénit:"
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "Je l'égrènerai dans la couche D'où nul encor ne s'est levé; Sa bouche en a dit sur ma bouche Chaque *Pater* et chaque *Ave*."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "DU COEUR"
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Tout amoureux, de sa maîtresse, Sur son coeur ou dans son tiroir, Possède un gage qu'il caresse Aux jours de regret ou d'espoir."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "L'un d'une chevelure noire, Par un sourire encouragé, A pris une boucle que moire Un reflet bleu d'aile de geai."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "L'autre a, sur un cou blanc qui ploie, Coupé par derrière un flocon Retors et fin comme la soie Que l'on dévide du cocon."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "Un troisième, au fond d'une boîte, Reliquaire du souvenir, Cache un gant blanc, de forme étroite, Où nulle main ne peut tenir."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "Cet autre, pour s'en faire un charme, Dans un sachet, d'un chiffre orné, Coud des violettes de Parme, Frais cadeau qu'on reprend fané."
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "Celui-ci baise la pantoufle Que Cendrillon perdit un soir; Et celui-ci conserve un souffle Dans la barbe d'un masque noir."
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "Moi, je n'ai ni boucle lustrée, Ni gant, ni bouquet, ni soulier, Mais je garde, empreinte adorée, Une larme sur un papier:"
+    },
+    {
+      "id": "s15-8",
+      "sceneId": "s15",
+      "text": "Pure rosée, unique goutte, D'un ciel d'azur tombée un jour, Joyau sans prix, perle dissoute Dans la coupe de mon amour!"
+    },
+    {
+      "id": "s15-9",
+      "sceneId": "s15",
+      "text": "Et, pour moi, cette obscure tache Reluit comme un écrin d'Ophyr, Et du vélin bleu se détache, Diamant éclos d'un saphir."
+    },
+    {
+      "id": "s15-10",
+      "sceneId": "s15",
+      "text": "Cette larme, qui fait ma joie, Roula, trésor inespéré, Sur un de mes vers qu'elle noie, D'un oeil qui n'a jamais pleuré!"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "DU PRINTEMPS"
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "Tandis qu'à leurs oeuvres perverses Les hommes courent haletants, Mars qui rit, malgré les averses, Prépare en secret le printemps."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "Pour les petites pâquerettes, Sournoisement lorsque tout dort, Il repasse des collerettes Et cisèle des boutons d'or."
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "Dans le verger et dans la vigne, Il s'en va, furtif perruquier, Avec une houppe de cygne, Poudrer à frimas l'amandier."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "La nature au lit se repose; Lui, descend au jardin désert Et lace les boutons de rose Dans leur corset de velours vert."
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "Tout en composant des solfèges, Qu'aux merles il siffle à mi-voix, Il sème aux prés les perce-neiges Et les violettes aux bois."
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "Sur le cresson, de la fontaine Où le cerf boit, l'oreille au guet, De sa main cachée il égrène Les grelots d'argent du muguet."
+    },
+    {
+      "id": "s16-7",
+      "sceneId": "s16",
+      "text": "Sous l'herbe, pour que tu la cueilles, Il met la fraise au teint vermeil, Et te tresse un chapeau de feuilles Pour te garantir du soleil."
+    },
+    {
+      "id": "s16-8",
+      "sceneId": "s16",
+      "text": "Puis, lorsque sa besogne est faite, Et que son règne va finir, Au seuil d'avril tournant la tête, Il dit: «Printemps, tu peux venir!»"
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "On voit dans le musée antique, Sur un lit de marbre sculpté, Une statue énigmatique D'une inquiétante beauté."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "Est-ce un jeune homme? est-ce une femme, Une déesse, ou bien un dieu? L'amour, ayant peur d'être infâme, Hésite et suspend son aveu."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "Dans sa pose malicieuse, Elle s'étend, le dos tourné Devant la foule curieuse, Sur son coussin capitonné."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "Pour faire sa beauté maudite, Chaque sexe apporta son don. Tout homme dit: C'est Aphrodite! Toute femme: C'est Cupidon!"
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "Sexe douteux, grâce certaine, On dirait ce corps indécis Fondu, dans l'eau de la fontaine, Sous les baisers de Salmacis."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "Chimère ardente, effort suprême De l'art et de la volupté, Monstre charmant, comme je t'aime Avec ta multiple beauté!"
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "Bien qu'on défende ton approche, Sous la draperie aux plis droits Dont le bout à ton pied s'accroche, Mes yeux ont plongé bien des fois."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "Rêve de poète et d'artiste, Tu m'as bien des nuits occupé, Et mon caprice qui persiste Ne convient pas qu'il s'est trompé."
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "Mais seulement il se transpose, Et, passant de la forme au son, Trouve dans sa métamorphose La jeune fille et le garçon."
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "Que tu me plais, ô timbre étrange! Son double, homme et femme à la fois, Contralto, bizarre mélange, Hermaphrodite de la voix!"
+    },
+    {
+      "id": "s17-10",
+      "sceneId": "s17",
+      "text": "C'est Roméo, c'est Juliette, Chantant avec un seul gosier; Le pigeon rauque et la fauvette Perchés sur le même rosier;"
+    },
+    {
+      "id": "s17-11",
+      "sceneId": "s17",
+      "text": "C'est la châtelaine qui raille Son beau page parlant d'amour, L'amant au pied de la muraille, La dame au balcon de sa tour,"
+    },
+    {
+      "id": "s17-12",
+      "sceneId": "s17",
+      "text": "Le papillon, blanche étincelle, Qu'en ses détours et ses ébats Poursuit un papillon fidèle, L'un volant haut et l'autre bas,"
+    },
+    {
+      "id": "s17-13",
+      "sceneId": "s17",
+      "text": "L'ange qui descend et qui monte Sur l'escalier d'or voltigeant La cloche mêlant dans sa fonte La voix d'airain, la voix d'argent,"
+    },
+    {
+      "id": "s17-14",
+      "sceneId": "s17",
+      "text": "La mélodie et l'harmonie, Le chant et l'accompagnement, A la grâce la force unie, La maîtresse embrassant l'amant!"
+    },
+    {
+      "id": "s17-15",
+      "sceneId": "s17",
+      "text": "Sur le pli de sa jupe assise, Ce soir, ce sera Cendrillon Causant près du feu qu'elle attise Avec son ami le grillon;"
+    },
+    {
+      "id": "s17-16",
+      "sceneId": "s17",
+      "text": "Demain le valeureux Arsace A son courroux donnant l'essor, Ou Tancrède avec sa cuirasse, Son épée et son casque d'or;"
+    },
+    {
+      "id": "s17-17",
+      "sceneId": "s17",
+      "text": "Desdemona chantant le Saule, Zerline bernant Mazetto, Ou Malcolm le plaid sur l'épaule; C'est toi que j'aime, ô contralto!"
+    },
+    {
+      "id": "s17-18",
+      "sceneId": "s17",
+      "text": "Nature charmante et bizarre Que Dieu d'un double attrait para, Toi qui pourrais, comme Gulnare, Être le Kaled d'un Lara,"
+    },
+    {
+      "id": "s17-19",
+      "sceneId": "s17",
+      "text": "Et dont la voix, dans sa caresse, Réveillant le coeur endormi, Mêle aux soupirs de la maîtresse L'accent plus mâle de l'ami!"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "Une femme mystérieuse, Dont la beauté trouble mes sens Se tient debout, silencieuse, Au bord des flots retentissants."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "Ses yeux, où le ciel se reflète, Mêlent à leur azur amer, Qu'étoile une humide paillette, Les teintes glauques de la mer."
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "Dans les langueurs de leurs prunelles, Une grâce triste sourit; Les pleurs mouillent les étincelles Et la lumière s'attendrit;"
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "Et leurs cils comme des mouettes Qui rasent le flot aplani, Palpitent, ailes inquiètes, Sur leur azur indéfini."
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "Comme dans l'eau bleue et profonde, Où dort plus d'un trésor coulé, On y découvre à travers l'onde La coupe du roi de Thulé."
+    },
+    {
+      "id": "s18-5",
+      "sceneId": "s18",
+      "text": "Sous leur transparence verdâtre, Brille, parmi le goémon, L'autre perle de Cléopâtre Près de l'anneau de Salomon."
+    },
+    {
+      "id": "s18-6",
+      "sceneId": "s18",
+      "text": "La couronne au gouffre lancée Dans la ballade de Schiller, Sans qu'un plongeur l'ait ramassée, Y jette encor son reflet clair."
+    },
+    {
+      "id": "s18-7",
+      "sceneId": "s18",
+      "text": "Un pouvoir magique m'entraîne Vers l'abîme de ce regard, Comme au sein des eaux la sirène Attirait Harald Harfagar."
+    },
+    {
+      "id": "s18-8",
+      "sceneId": "s18",
+      "text": "Mon âme, avec la violence D'un irrésistible désir, Au milieu du gouffre s'élance Vers l'ombre impossible à saisir."
+    },
+    {
+      "id": "s18-9",
+      "sceneId": "s18",
+      "text": "Montrant son sein, cachant sa queue, La sirène amoureusement Fait ondoyer sa blancheur bleue Sous l'émail vert du flot dormant."
+    },
+    {
+      "id": "s18-10",
+      "sceneId": "s18",
+      "text": "L'eau s'enfle comme une poitrine Aux soupirs de la passion; Le vent, dans sa conque marine, Murmure une incantation."
+    },
+    {
+      "id": "s18-11",
+      "sceneId": "s18",
+      "text": "«Oh! viens dans ma couche de nacre, Mes bras d'onde t'enlaceront; Les flots, perdant leur saveur âcre, Sur ta bouche, en miel couleront."
+    },
+    {
+      "id": "s18-12",
+      "sceneId": "s18",
+      "text": "«Laissant bruire sur nos têtes, La mer qui ne peut s'apaiser, Nous boirons l'oubli des tempêtes Dans la coupe de mon baiser.»"
+    },
+    {
+      "id": "s18-13",
+      "sceneId": "s18",
+      "text": "Ainsi parle la voix humide De ce regard céruléen, Et mon coeur, sous l'onde perfide, Se noie et consomme l'hymen."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "Enfant aux airs d'impératrice, Colombe aux regards de faucon, Tu me hais, mais c'est mon caprice, De me planter sous ton balcon."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "Là, je veux, le pied sur la borne, Pinçant les nerfs, tapant le bois, Faire luire à ton carreau morne Ta lampe et ton front à la fois."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "Je défends à toute guitare De bourdonner aux alentours. Ta rue est à moi:--je la barre Pour y chanter seul mes amours,"
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "Et je coupe les deux oreilles Au premier racleur de jambon Qui devant la chambre où tu veilles Braille un couplet mauvais ou bon."
+    },
+    {
+      "id": "s19-4",
+      "sceneId": "s19",
+      "text": "Dans sa gaîne mon couteau bouge; Allons, qui veut de l'incarnat? A son jabot qui veut du rouge Pour faire un bouton de grenat?"
+    },
+    {
+      "id": "s19-5",
+      "sceneId": "s19",
+      "text": "Le sang dans les veines s'ennuie, Car il est fait pour se montrer; Le temps est noir, gare la pluie! Poltrons, hâtez-vous de rentrer."
+    },
+    {
+      "id": "s19-6",
+      "sceneId": "s19",
+      "text": "Sortez, vaillants! sortez, bravaches! L'avant-bras couvert du manteau, Que sur vos faces de gavaches J'écrive des croix au couteau!"
+    },
+    {
+      "id": "s19-7",
+      "sceneId": "s19",
+      "text": "Qu'ils s'avancent! seuls ou par bande, De pied ferme je les attends. A ta gloire il faut que je fende Les naseaux de ces capitans."
+    },
+    {
+      "id": "s19-8",
+      "sceneId": "s19",
+      "text": "Au ruisseau qui gêne ta marche Et pourrait salir tes pieds blancs, Corps du Christ! je veux faire une arche Avec les côtes des galants."
+    },
+    {
+      "id": "s19-9",
+      "sceneId": "s19",
+      "text": "Pour te prouver combien je t'aime, Dis, je tuerai qui tu voudras: J'attaquerai Satan lui-même, Si pour linceul j'ai tes deux draps."
+    },
+    {
+      "id": "s19-10",
+      "sceneId": "s19",
+      "text": "Porte sourde!--Fenêtre aveugle! Tu dois pourtant ouïr ma voix; Comme un taureau blessé je beugle, Des chiens excitant les abois!"
+    },
+    {
+      "id": "s19-11",
+      "sceneId": "s19",
+      "text": "Au moins plante un clou dans ta porte: Un clou pour accrocher mon coeur. A quoi sert que je le remporte Fou de rage, mort de langueur?"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "D'OBÉLISQUES"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "Sur cette place je m'ennuie, Obélisque dépareillé; Neige, givre, bruine et pluie Glacent mon flanc déjà rouillé;"
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "Et ma vieille aiguille, rougie Aux fournaises d'un ciel de feu Prend des pâleurs de nostalgie Dans cet air qui n'est jamais bleu."
+    },
+    {
+      "id": "s21-2",
+      "sceneId": "s21",
+      "text": "Devant les colosses moroses Et les pylônes de Luxor, Près de mon frère aux teintes roses Que ne suis-je debout encor,"
+    },
+    {
+      "id": "s21-3",
+      "sceneId": "s21",
+      "text": "Plongeant dans l'azur immuable Mon pyramydion vermeil, Et de mon ombre, sur le sable, Écrivant les pas du soleil!"
+    },
+    {
+      "id": "s21-4",
+      "sceneId": "s21",
+      "text": "Rhamsès, un jour mon bloc superbe, Où l'éternité s'ébréchait, Roula fauché comme un brin d'herbe, Et Paris s'en fit un hochet."
+    },
+    {
+      "id": "s21-5",
+      "sceneId": "s21",
+      "text": "La sentinelle granitique, Gardienne des énormités, Se dresse entre un faux temple antique Et la chambre des députés."
+    },
+    {
+      "id": "s21-6",
+      "sceneId": "s21",
+      "text": "Sur l'échafaud de Louis Seize, Monolithe au sens aboli, On a mis mon secret, qui pèse Le poids de cinq mille ans d'oubli."
+    },
+    {
+      "id": "s21-7",
+      "sceneId": "s21",
+      "text": "Les moineaux francs souillent ma tête, Où s'abattaient dans leur essor L'ibis rose et le gypaète Au blanc plumage, aux serres d'or."
+    },
+    {
+      "id": "s21-8",
+      "sceneId": "s21",
+      "text": "La Seine, noir égout des rues, Fleuve immonde fait de ruisseaux, Salit mon pied, que dans ses crues Baisait le Nil, père des eaux,"
+    },
+    {
+      "id": "s21-9",
+      "sceneId": "s21",
+      "text": "Le Nil, géant à barbe blanche Coiffé de lotus et de joncs, Versant de son urne qui penche Des crocodiles pour goujons!"
+    },
+    {
+      "id": "s21-10",
+      "sceneId": "s21",
+      "text": "Les chars d'or étoilés de nacre Des grands pharaons d'autrefois Rasaient mon bloc heurté du fiacre Emportant le dernier des rois."
+    },
+    {
+      "id": "s21-11",
+      "sceneId": "s21",
+      "text": "Jadis, devant ma pierre antique, Le pschent au front, les prêtres saints Promenaient la bari mystique Aux emblèmes dorés et peints;"
+    },
+    {
+      "id": "s21-12",
+      "sceneId": "s21",
+      "text": "Mais aujourd'hui, pilier profane Entre deux fontaines campé, Je vois passer la courtisane Se renversant dans son coupé."
+    },
+    {
+      "id": "s21-13",
+      "sceneId": "s21",
+      "text": "Je vois, de janvier à décembre, La procession des bourgeois, Les Solons qui vont à la chambre, Et les Arthurs qui vont au bois."
+    },
+    {
+      "id": "s21-14",
+      "sceneId": "s21",
+      "text": "Oh! dans cent ans quels laids squelettes Fera ce peuple impie et fou, Qui se couche sans bandelettes Dans des cercueils que ferme un clou,"
+    },
+    {
+      "id": "s21-15",
+      "sceneId": "s21",
+      "text": "Et n'a pas même d'hypogées A l'abri des corruptions, Dortoirs où, par siècles rangées, Plongent les générations!"
+    },
+    {
+      "id": "s21-16",
+      "sceneId": "s21",
+      "text": "Sol sacré des hiéroglyphes Et des secrets sacerdotaux, Où les sphynx s'aiguisent les griffes Sur les angles des piédestaux,"
+    },
+    {
+      "id": "s21-17",
+      "sceneId": "s21",
+      "text": "Où sous le pied sonne la crypte, Où l'épervier couve son nid, Je te pleure, ô ma vieille Égypte, Avec des larmes de granit!"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "Je veille, unique sentinelle De ce grand palais dévasté, Dans la solitude éternelle, En face de l'immensité."
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "A l'horizon que rien ne borne, Stérile, muet, infini, Le désert sous le soleil morne, Déroule son linceul jauni."
+    },
+    {
+      "id": "s22-2",
+      "sceneId": "s22",
+      "text": "Au-dessus de la terre nue, Le ciel, autre désert d'azur, Où jamais ne flotte une nue, S'étale implacablement pur."
+    },
+    {
+      "id": "s22-3",
+      "sceneId": "s22",
+      "text": "Le Nil, dont l'eau morte s'étame D'une pellicule de plomb, Luit, ridé par l'hippopotame, Sous un jour mat tombant d'aplomb;"
+    },
+    {
+      "id": "s22-4",
+      "sceneId": "s22",
+      "text": "Et les crocodiles rapaces, Sur le sable en feu des îlots, Demi-cuits dans leurs carapaces, Se pâment avec des sanglots."
+    },
+    {
+      "id": "s22-5",
+      "sceneId": "s22",
+      "text": "Immobile sur son pied grêle, L'ibis, le bec dans son jabot, Déchiffre au bout de quelque stèle Le cartouche sacré de Thot."
+    },
+    {
+      "id": "s22-6",
+      "sceneId": "s22",
+      "text": "L'hyène rit, le chacal miaule, Et, traçant des cercles dans l'air, L'épervier affamé piaule, Noire virgule du ciel clair."
+    },
+    {
+      "id": "s22-7",
+      "sceneId": "s22",
+      "text": "Mais ces bruits de la solitude Sont couverts par le bâillement Des sphinx, lassés de l'attitude Qu'ils gardent immuablement."
+    },
+    {
+      "id": "s22-8",
+      "sceneId": "s22",
+      "text": "Produit des blancs reflets du sable Et du soleil toujours brillant, Nul ennui ne t'est comparable, Spleen lumineux de l'Orient!"
+    },
+    {
+      "id": "s22-9",
+      "sceneId": "s22",
+      "text": "C'est toi qui faisais crier: Grâce! A la satiété des rois Tombant vaincus sur leur terrasse, Et tu m'écrases de ton poids."
+    },
+    {
+      "id": "s22-10",
+      "sceneId": "s22",
+      "text": "Ici jamais le vent n'essuie Une larme à l'oeil sec des cieux, Et le temps fatigué s'appuie Sur les palais silencieux."
+    },
+    {
+      "id": "s22-11",
+      "sceneId": "s22",
+      "text": "Pas un accident ne dérange La face de l'éternité; L'Égypte, en ce monde où tout change, Trône sur l'immobilité."
+    },
+    {
+      "id": "s22-12",
+      "sceneId": "s22",
+      "text": "Pour compagnons et pour amies, Quand l'ennui me prend par accès, J'ai les fellahs et les momies Contemporaines de Rhamsès;"
+    },
+    {
+      "id": "s22-13",
+      "sceneId": "s22",
+      "text": "Je regarde un pilier qui penche, Un vieux colosse sans profil Et les canges à voile blanche Montant ou descendant le Nil."
+    },
+    {
+      "id": "s22-14",
+      "sceneId": "s22",
+      "text": "Que je voudrais comme mon frère, Dans ce grand Paris transporté, Auprès de lui, pour me distraire, Sur une place être planté!"
+    },
+    {
+      "id": "s22-15",
+      "sceneId": "s22",
+      "text": "Là-bas, il voit à ses sculptures S'arrêter un peuple vivant, Hiératiques écritures, Que l'idée épelle en rêvant."
+    },
+    {
+      "id": "s22-16",
+      "sceneId": "s22",
+      "text": "Les fontaines juxtaposées Sur la poudre de son granit Jettent leurs brumes irisées. Il est vermeil, il rajeunit!"
+    },
+    {
+      "id": "s22-17",
+      "sceneId": "s22",
+      "text": "Des veines roses de Syène Comme moi cependant il sort, Mais je reste à ma place ancienne, Il est vivant et je suis mort!"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "15 DÉCEMBRE"
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "Par l'ennui chassé de ma chambre, J'errais le long du boulevard: Il faisait un temps de décembre, Vent froid, fine pluie et brouillard;"
+    },
+    {
+      "id": "s23-2",
+      "sceneId": "s23",
+      "text": "Et là je vis, spectacle étrange, Échappés du sombre séjour, Sous la bruine et dans la fange, Passer des spectres en plein jour."
+    },
+    {
+      "id": "s23-3",
+      "sceneId": "s23",
+      "text": "Pourtant c'est la nuit que les ombres, Par un clair de lune allemand, Dans les vieilles tours en décombres, Reviennent ordinairement;"
+    },
+    {
+      "id": "s23-4",
+      "sceneId": "s23",
+      "text": "C'est la nuit que les Elfes sortent Avec leur robe humide au bord, Et sous les nénuphars emportent Leur valseur de fatigue mort;"
+    },
+    {
+      "id": "s23-5",
+      "sceneId": "s23",
+      "text": "C'est la nuit qu'a lieu la revue Dans la ballade de Zedlitz, Où l'Empereur, ombre entrevue, Compte les ombres d'Austerlitz."
+    },
+    {
+      "id": "s23-6",
+      "sceneId": "s23",
+      "text": "Mais des spectres près du Gymnase, A deux pas des Variétés, Sans brume ou linceul qui les gaze, Des spectres mouillés et crottés!"
+    },
+    {
+      "id": "s23-7",
+      "sceneId": "s23",
+      "text": "Avec ses dents jaunes de tartre, Son crâne de mousse verdi, A Paris, boulevard Montmartre, Mob se montrant en plein midi!"
+    },
+    {
+      "id": "s23-8",
+      "sceneId": "s23",
+      "text": "La chose vaut qu'on la regarde: Trois fantômes de vieux grognards! En uniformes de l'ex-garde, Avec deux ombres de hussards!"
+    },
+    {
+      "id": "s23-9",
+      "sceneId": "s23",
+      "text": "On eût dit la lithographie Où, dessinés par un rayon, Les morts, que Raffet déifie, Passent, criant: Napoléon!"
+    },
+    {
+      "id": "s23-10",
+      "sceneId": "s23",
+      "text": "Ce n'était pas les morts qu'éveille Le son du nocturne tambour, Mais bien quelques *vieux de la vieille* Qui célébraient le grand retour."
+    },
+    {
+      "id": "s23-11",
+      "sceneId": "s23",
+      "text": "Depuis la suprême bataille, L'un a maigri, l'autre a grossi; L'habit jadis fait à leur taille Est trop grand ou trop rétréci."
+    },
+    {
+      "id": "s23-12",
+      "sceneId": "s23",
+      "text": "Nobles lambeaux, défroque épique, Saints haillons, qu'étoile une croix, Dans leur ridicule héroïque Plus beaux que des manteaux de rois;"
+    },
+    {
+      "id": "s23-13",
+      "sceneId": "s23",
+      "text": "Un plumet énervé palpite Sur leur kolbach fauve et pelé; Près des trous de balle, la mite A rongé leur dolman criblé;"
+    },
+    {
+      "id": "s23-14",
+      "sceneId": "s23",
+      "text": "Leur culotte de peau trop large Fait mille plis sur leur fémur; Leur sabre rouillé, lourde charge, Creuse le sol et bat le mur;"
+    },
+    {
+      "id": "s23-15",
+      "sceneId": "s23",
+      "text": "Ou bien un embonpoint grotesque, Avec grand'peine boutonné, Fait un poussah, dont on rit presque, Du vieux héros tout chevronné."
+    },
+    {
+      "id": "s23-16",
+      "sceneId": "s23",
+      "text": "Ne les raillez pas, camarade; Saluez plutôt chapeau bas Ces Achilles d'une Iliade Qu'Homère n'inventerait pas."
+    },
+    {
+      "id": "s23-17",
+      "sceneId": "s23",
+      "text": "Respectez leur tête chenue! Sur leur front par vingt cieux bronzé, La cicatrice continue Le sillon que l'âge a creusé."
+    },
+    {
+      "id": "s23-18",
+      "sceneId": "s23",
+      "text": "Leur peau, bizarrement noircie, Dit l'Égypte aux soleils brûlants; Et les neiges de la Russie Poudrent encor leurs cheveux blancs."
+    },
+    {
+      "id": "s23-19",
+      "sceneId": "s23",
+      "text": "Si leurs mains tremblent, c'est sans doute Du froid de la Bérésina; Et s'ils boitent, c'est que la route Est longue du Caire à Wilna;"
+    },
+    {
+      "id": "s23-20",
+      "sceneId": "s23",
+      "text": "S'ils sont perclus, c'est qu'à la guerre Les drapeaux étaient leurs seuls draps; Et si leur manche ne va guère, C'est qu'un boulet a pris leur bras."
+    },
+    {
+      "id": "s23-21",
+      "sceneId": "s23",
+      "text": "Ne nous moquons pas de ces hommes Qu'en riant le gamin poursuit; Ils furent le jour dont nous sommes Le soir et peut-être la nuit."
+    },
+    {
+      "id": "s23-22",
+      "sceneId": "s23",
+      "text": "Quand on oublie, ils se souviennent! Lancier rouge et grenadier bleu, Au pied de la colonne, ils viennent Comme à l'autel de leur seul dieu."
+    },
+    {
+      "id": "s23-23",
+      "sceneId": "s23",
+      "text": "Là, fiers de leur longue souffrance, Reconnaissants des maux subis, Ils sentent le coeur de la France Battre sous leurs pauvres habits."
+    },
+    {
+      "id": "s23-24",
+      "sceneId": "s23",
+      "text": "Aussi les pleurs trempent le rire En voyant ce saint carnaval, Cette mascarade d'empire, Passer comme un matin de bal;"
+    },
+    {
+      "id": "s23-25",
+      "sceneId": "s23",
+      "text": "Et l'aigle de la grande armée Dans le ciel qu'emplit son essor, Du fond d'une gloire enflammée, Étend sur eux ses ailes d'or!"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "EN MER"
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "Les mouettes volent et jouent; Et les blancs coursiers de la mer, Cabrés sur les vagues secouent Leurs crins échevelés dans l'air."
+    },
+    {
+      "id": "s24-2",
+      "sceneId": "s24",
+      "text": "Le jour tombe; une fine pluie Éteint les fournaises du soir, Et le steam-boat crachant la suie Rabat son long panache noir."
+    },
+    {
+      "id": "s24-3",
+      "sceneId": "s24",
+      "text": "Plus pâle que le ciel livide Je vais au pays du charbon, Du brouillard et du suicide; --Pour se tuer le temps est bon."
+    },
+    {
+      "id": "s24-4",
+      "sceneId": "s24",
+      "text": "Mon désir avide se noie Dans le gouffre amer qui blanchit; Le vaisseau danse, l'eau tournoie, Le vent de plus en plus fraîchit."
+    },
+    {
+      "id": "s24-5",
+      "sceneId": "s24",
+      "text": "Oh! je me sens l'âme navrée; L'Océan gonfle, en soupirant, Sa poitrine désespérée, Comme un ami qui me comprend."
+    },
+    {
+      "id": "s24-6",
+      "sceneId": "s24",
+      "text": "Allons, peines d'amour perdues, Espoirs lassés, illusions Du socle idéal descendues, Un saut dans les moites sillons!"
+    },
+    {
+      "id": "s24-7",
+      "sceneId": "s24",
+      "text": "A la mer, souffrances passées, Qui revenez toujours, pressant Vos blessures cicatrisées Pour leur faire pleurer du sang!"
+    },
+    {
+      "id": "s24-8",
+      "sceneId": "s24",
+      "text": "A la mer, spectre de mes rêves, Regrets aux mortelles pâleurs Dans un coeur rouge ayant sept glaives, Comme la Mère des douleurs."
+    },
+    {
+      "id": "s24-9",
+      "sceneId": "s24",
+      "text": "Chaque fantôme plonge et lutte Quelques instants avec le flot Qui sur lui ferme sa volute Et l'engloutit dans un sanglot."
+    },
+    {
+      "id": "s24-10",
+      "sceneId": "s24",
+      "text": "Lest de l'âme, pesant bagage, Trésors misérables et chers, Sombrez, et dans votre naufrage Je vais vous suivre au fond des mers!"
+    },
+    {
+      "id": "s24-11",
+      "sceneId": "s24",
+      "text": "Bleuâtre, enflé, méconnaissable, Bercé par le flot qui bruit, Sur l'humide oreiller du sable Je dormirai bien cette nuit!"
+    },
+    {
+      "id": "s24-12",
+      "sceneId": "s24",
+      "text": "... Mais une femme dans sa mante Sur le pont assise à l'écart, Une femme jeune et charmante Lève vers moi son long regard."
+    },
+    {
+      "id": "s24-13",
+      "sceneId": "s24",
+      "text": "Dans ce regard, à ma détresse La Sympathie aux bras ouverts Parle et sourit, soeur ou maîtresse. Salut, yeux bleus! bonsoir, flots verts!"
+    },
+    {
+      "id": "s24-14",
+      "sceneId": "s24",
+      "text": "Les mouettes volent et jouent; Et les blancs coursiers de la mer, Cabrés sur les vagues, secouent Leurs crins échevelés dans l'air."
+    },
+    {
+      "id": "s24-15",
+      "sceneId": "s24",
+      "text": "A"
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Que tu me plais dans cette robe Qui te déshabille si bien, Faisant jaillir ta gorge en globe, Montrant tout nu ton bras païen!"
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "Frêle comme une aile d'abeille, Frais comme un coeur de rose-thé, Son tissu, caresse vermeille, Voltige autour de ta beauté."
+    },
+    {
+      "id": "s25-2",
+      "sceneId": "s25",
+      "text": "De l'épiderme sur la soie Glissent des frissons argentés, Et l'étoffe à la chair renvoie Ses éclairs roses reflétés."
+    },
+    {
+      "id": "s25-3",
+      "sceneId": "s25",
+      "text": "D'où te vient cette robe étrange Qui semble faite de ta chair, Trame vivante qui mélange Avec ta peau son rose clair?"
+    },
+    {
+      "id": "s25-4",
+      "sceneId": "s25",
+      "text": "Est-ce à la rougeur de l'aurore, A la coquille de Vénus, Au bouton de sein près d'éclore, Que sont pris ces tons inconnus?"
+    },
+    {
+      "id": "s25-5",
+      "sceneId": "s25",
+      "text": "Ou bien l'étoffe est-elle teinte Dans les roses de ta pudeur? Non; vingt fois modelée et peinte, Ta forme connaît sa splendeur."
+    },
+    {
+      "id": "s25-6",
+      "sceneId": "s25",
+      "text": "Jetant le voile qui te pèse, Réalité que l'art rêva, Comme la princesse Borghèse Tu poserais pour Canova."
+    },
+    {
+      "id": "s25-7",
+      "sceneId": "s25",
+      "text": "Et ces plis roses sont les lèvres De mes désirs inapaisés, Mettant au corps dont tu les sèvres Une tunique de baisers."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "EST MÉCHANT"
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "Le monde est méchant, ma petite: Avec son sourire moqueur Il dit qu'à ton côté palpite Une montre en place du coeur."
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "--Pourtant ton sein ému s'élève Et s'abaisse comme la mer, Aux bouillonnements de la sève, Circulant sous ta jeune chair."
+    },
+    {
+      "id": "s26-3",
+      "sceneId": "s26",
+      "text": "Le monde est méchant, ma petite: Il dit que tes yeux vifs sont morts Et se meuvent dans leur orbite A temps égaux et par ressorts."
+    },
+    {
+      "id": "s26-4",
+      "sceneId": "s26",
+      "text": "--Pourtant une larme irisée Tremble à tes cils, mouvant rideau, Comme une perle de rosée Qui n'est pas prise au verre d'eau."
+    },
+    {
+      "id": "s26-5",
+      "sceneId": "s26",
+      "text": "Le monde est méchant, ma petite: Il dit que tu n'as pas d'esprit, Et que les vers qu'on te récite Sont pour toi comme du sanscrit."
+    },
+    {
+      "id": "s26-6",
+      "sceneId": "s26",
+      "text": "--Pourtant, sur ta bouche vermeille, Fleur s'ouvrant et se refermant, Le rire, intelligente abeille, Se pose à chaque trait charmant."
+    },
+    {
+      "id": "s26-7",
+      "sceneId": "s26",
+      "text": "C'est que tu m'aimes, ma petite, Et que tu hais tous ces gens-là. Quitte-moi;--comme ils diront vite: Quel coeur et quel esprit elle a!"
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "DE LAS SIERRAS"
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "Nodier raconte qu'en Espagne Trois officiers cherchant un soir, Une venta dans la campagne, Ne trouvèrent qu'un vieux manoir;"
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "Un vrai château d'Anne Radcliffe, Aux plafonds que le temps ploya, Aux vitraux rayés par la griffe Des chauves-souris de Goya,"
+    },
+    {
+      "id": "s28-2",
+      "sceneId": "s28",
+      "text": "Aux vastes salles délabrées, Aux couloirs livrant leur secret, Architectures effondrées Où Piranèse se perdrait."
+    },
+    {
+      "id": "s28-3",
+      "sceneId": "s28",
+      "text": "Pendant le souper, que regarde Une collection d'aïeux Dans leurs cadres montant la garde, Un cri répond aux chants joyeux;"
+    },
+    {
+      "id": "s28-4",
+      "sceneId": "s28",
+      "text": "D'un long corridor en décombres, Par la lune bizarrement Entrecoupé de clairs et d'ombres, Débusque un fantôme charmant;"
+    },
+    {
+      "id": "s28-5",
+      "sceneId": "s28",
+      "text": "Peigne au chignon, basquine aux hanches, Une femme accourt en dansant, Dans les bandes noires et blanches Apparaissant, disparaissant."
+    },
+    {
+      "id": "s28-6",
+      "sceneId": "s28",
+      "text": "Avec une volupté morte, Cambrant les reins, penchant le cou, Elle s'arrête sur la porte, Sinistre et belle à rendre fou."
+    },
+    {
+      "id": "s28-7",
+      "sceneId": "s28",
+      "text": "Sa robe, passée et fripée Au froid humide des tombeaux, Fait luire, d'un rayon frappée, Quelques paillons sur ses lambeaux;"
+    },
+    {
+      "id": "s28-8",
+      "sceneId": "s28",
+      "text": "D'un pétale découronnée A chaque soubresaut nerveux, Sa rose, jaunie et fanée, S'effeuille dans ses noirs cheveux."
+    },
+    {
+      "id": "s28-9",
+      "sceneId": "s28",
+      "text": "Une cicatrice, pareille A celle d'un coup de poignard, Forme une couture vermeille Sur sa gorge d'un ton blafard;"
+    },
+    {
+      "id": "s28-10",
+      "sceneId": "s28",
+      "text": "Et ses mains pâles et fluettes, Au nez des soupeurs pleins d'effroi Entre-choquent les castagnettes, Comme des dents claquant de froid."
+    },
+    {
+      "id": "s28-11",
+      "sceneId": "s28",
+      "text": "Elle danse, morne bacchante, La cachucha sur un vieil air, D'une grâce si provocante, Qu'on la suivrait même en enfer."
+    },
+    {
+      "id": "s28-12",
+      "sceneId": "s28",
+      "text": "Ses cils palpitent sur ses joues Comme des ailes d'oiseau noir, Et sa bouche arquée a des moues A mettre un saint au désespoir."
+    },
+    {
+      "id": "s28-13",
+      "sceneId": "s28",
+      "text": "Quand de sa jupe qui tournoie Elle soulève le volant, Sa jambe, sous le bas de soie, Prend des lueurs de marbre blanc."
+    },
+    {
+      "id": "s28-14",
+      "sceneId": "s28",
+      "text": "Elle se penche jusqu'à terre, Et sa main, d'un geste coquet, Comme on fait des fleurs d'un parterre Groupe les désirs en bouquet."
+    },
+    {
+      "id": "s28-15",
+      "sceneId": "s28",
+      "text": "Est-ce un fantôme? est-ce une femme? Un rêve, une réalité, Qui scintille comme une flamme Dans un tourbillon de beauté?"
+    },
+    {
+      "id": "s28-16",
+      "sceneId": "s28",
+      "text": "Cette apparition fantasque, C'est l'Espagne du temps passé, Aux frissons du tambour de basque S'élançant de son lit glacé,"
+    },
+    {
+      "id": "s28-17",
+      "sceneId": "s28",
+      "text": "Et, brusquement ressuscitée Dans un suprême boléro, Montrant sous sa jupe argentée La *divisa* prise au taureau."
+    },
+    {
+      "id": "s28-18",
+      "sceneId": "s28",
+      "text": "La cicatrice qu'elle porte, C'est le coup de grâce donné A la génération morte, Par chaque siècle nouveau-né."
+    },
+    {
+      "id": "s28-19",
+      "sceneId": "s28",
+      "text": "J'ai vu ce fantôme au Gymnase, Où Paris entier l'admira, Lorsque dans son linceul de gaze Parut la Petra Camara,"
+    },
+    {
+      "id": "s28-20",
+      "sceneId": "s28",
+      "text": "Impassible et passionnée, Fermant ses yeux morts de langueur, Et comme Inès l'assassinée Dansant, un poignard dans le coeur!"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "ANACRÉONTIQUE"
+    },
+    {
+      "id": "s29-1",
+      "sceneId": "s29",
+      "text": "Pour que je t'aime, ô mon poète, Ne fais pas fuir par trop d'ardeur Mon amour, colombe inquiète, Au ciel rose de la pudeur."
+    },
+    {
+      "id": "s29-2",
+      "sceneId": "s29",
+      "text": "L'oiseau qui marche dans l'allée S'effraye et part au moindre bruit; Ma passion est chose ailée Et s'envole quand on la suit."
+    },
+    {
+      "id": "s29-3",
+      "sceneId": "s29",
+      "text": "Muet comme l'Hermès de marbre, Sous la charmille pose-toi; Tu verras bientôt de son arbre L'oiseau descendre sans effroi."
+    },
+    {
+      "id": "s29-4",
+      "sceneId": "s29",
+      "text": "Tes tempes sentiront près d'elles, Avec des souffles de fraîcheur, Une palpitation d'ailes Dans un tourbillon de blancheur,"
+    },
+    {
+      "id": "s29-5",
+      "sceneId": "s29",
+      "text": "Et la colombe apprivoisée Sur ton épaule s'abattra, Et son bec à pointe rosée De ton baiser s'enivrera."
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "Là-bas, sous les arbres s'abrite Une chaumière au dos bossu; Le toit penche, le mur s'effrite, Le seuil de la porte est moussu."
+    },
+    {
+      "id": "s30-1",
+      "sceneId": "s30",
+      "text": "La fenêtre, un volet la bouche; Mais du taudis, comme au temps froid La tiède haleine d'une bouche, La respiration se voit."
+    },
+    {
+      "id": "s30-2",
+      "sceneId": "s30",
+      "text": "Un tire-bouchon de fumée, Tournant son mince filet bleu, De l'âme en ce bouge enfermée Porte des nouvelles à Dieu."
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "J'aime ton nom d'Apollonie, Écho grec du sacré vallon, Qui, dans sa robuste harmonie, Te baptise soeur d'Apollon."
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "Sur la lyre au plectre d'ivoire, Ce nom splendide et souverain, Beau comme l'amour et la gloire Prend des résonnances d'airain."
+    },
+    {
+      "id": "s31-2",
+      "sceneId": "s31",
+      "text": "Classique, il fait plonger les Elfes Au fond de leur lac allemand, Et seule la Pythie à Delphes Pourrait le porter dignement,"
+    },
+    {
+      "id": "s31-3",
+      "sceneId": "s31",
+      "text": "Quand relevant sa robe antique Elle s'assoit au trépied d'or, Et dans sa pose fatidique Attend le dieu qui tarde encor."
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "Un aveugle au coin d'une borne, Hagard comme au jour un hibou, Sur son flageolet, d'un air morne, Tâtonne en se trompant de trou,"
+    },
+    {
+      "id": "s32-1",
+      "sceneId": "s32",
+      "text": "Et joue un ancien vaudeville Qu'il fausse imperturbablement; Son chien le conduit par la ville, Spectre diurne à l'oeil dormant."
+    },
+    {
+      "id": "s32-2",
+      "sceneId": "s32",
+      "text": "Les jours sur lui passent sans luire; Sombre, il entend le monde obscur Et la vie invisible bruire Comme un torrent derrière un mur!"
+    },
+    {
+      "id": "s32-3",
+      "sceneId": "s32",
+      "text": "Dieu sait quelles chimères noires Hantent cet opaque cerveau! Et quels illisibles grimoires L'idée écrit en ce caveau!"
+    },
+    {
+      "id": "s32-4",
+      "sceneId": "s32",
+      "text": "Ainsi dans les puits de Venise, Un prisonnier à demi fou, Pendant sa nuit qui s'éternise, Grave des mots avec un clou."
+    },
+    {
+      "id": "s32-5",
+      "sceneId": "s32",
+      "text": "Mais peut-être aux heures funèbres, Quand la mort souffle le flambeau, L'âme habituée aux ténèbres Y verra clair dans le tombeau!"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "Au mois d'avril, la terre est rose Comme la jeunesse et l'amour; Pucelle encore, à peine elle ose Payer le Printemps de retour."
+    },
+    {
+      "id": "s33-1",
+      "sceneId": "s33",
+      "text": "Au mois de juin, déjà plus pâle Et le coeur de désir troublé, Avec l'Été tout brun de hâle Elle se cache dans le blé."
+    },
+    {
+      "id": "s33-2",
+      "sceneId": "s33",
+      "text": "Au mois d'août, bacchante enivrée, Elle offre à l'Automne son sein, Et, roulant sur la peau tigrée, Fait jaillir le sang du raisin."
+    },
+    {
+      "id": "s33-3",
+      "sceneId": "s33",
+      "text": "En décembre, petite vieille, Par les frimas poudrée à blanc, Dans ses rêves elle réveille L'Hiver auprès d'elle ronflant."
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "Le nez rouge, la face blême, Sur un pupitre de glaçons, L'hiver exécute son thème Dans le quatuor des saisons."
+    },
+    {
+      "id": "s34-1",
+      "sceneId": "s34",
+      "text": "Il chante d'une voix peu sûre Des airs vieillots et chevrotants; Son pied glacé bat la mesure Et la semelle en même temps;"
+    },
+    {
+      "id": "s34-2",
+      "sceneId": "s34",
+      "text": "Et comme Hændel, dont la perruque Perdait sa farine en tremblant, Il fait envoler de sa nuque La neige qui la poudre à blanc."
+    },
+    {
+      "id": "s34-3",
+      "sceneId": "s34",
+      "text": "Dans le bassin des Tuileries, Le cygne s'est pris en nageant, Et les arbres, comme aux féeries, Sont en filigrane d'argent."
+    },
+    {
+      "id": "s34-4",
+      "sceneId": "s34",
+      "text": "Les vases ont des fleurs de givre, Sous la charmille aux blancs réseaux; Et sur la neige on voit se suivre Les pas étoilés des oiseaux."
+    },
+    {
+      "id": "s34-5",
+      "sceneId": "s34",
+      "text": "Au piédestal où, court-vêtue, Vénus coudoyait Phocion, L'Hiver a posé pour statue La frileuse de Clodion."
+    },
+    {
+      "id": "s34-6",
+      "sceneId": "s34",
+      "text": "Les femmes passent sous les arbres En martre, hermine et menu-vair, Et les déesses, frileux marbres, Ont pris aussi l'habit d'hiver."
+    },
+    {
+      "id": "s34-7",
+      "sceneId": "s34",
+      "text": "La Vénus Anadyomène Est en pelisse à capuchon, Flore, que la brise malmène, Plonge ses mains dans son manchon."
+    },
+    {
+      "id": "s34-8",
+      "sceneId": "s34",
+      "text": "Et pour la saison, les bergères De Coysevox et de Coustou, Trouvant leurs écharpes légères, Ont des boas autour du cou."
+    },
+    {
+      "id": "s34-9",
+      "sceneId": "s34",
+      "text": "Sur la mode parisienne Le Nord pose ses manteaux lourds, Comme sur une Athénienne Un Scythe étendrait sa peau d'ours."
+    },
+    {
+      "id": "s34-10",
+      "sceneId": "s34",
+      "text": "Partout se mélange aux parures Dont Palmyre habille l'Hiver, Le faste russe des fourrures Que parfume le vétyver."
+    },
+    {
+      "id": "s34-11",
+      "sceneId": "s34",
+      "text": "Et le Plaisir rit dans l'alcôve Quand, au milieu des Amours nus, Des poils roux d'une bête fauve Sort le torse blanc de Vénus."
+    },
+    {
+      "id": "s34-12",
+      "sceneId": "s34",
+      "text": "Sous le voile qui vous protège, Défiant les regards jaloux, Si vous sortez par cette neige, Redoutez vos pieds andalous;"
+    },
+    {
+      "id": "s34-13",
+      "sceneId": "s34",
+      "text": "La neige saisit comme un moule L'empreinte de ce pied mignon Qui, sur le tapis blanc qu'il foule, Signe, à chaque pas, votre nom."
+    },
+    {
+      "id": "s34-14",
+      "sceneId": "s34",
+      "text": "Ainsi guidé, l'époux morose Peut parvenir au nid caché Où, de froid la joue encor rose, A l'Amour s'enlace Psyché."
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "Tout près du lac filtre une source, Entre deux pierres, dans un coin; Allégrement l'eau prend sa course Comme pour s'en aller bien loin."
+    },
+    {
+      "id": "s35-1",
+      "sceneId": "s35",
+      "text": "Elle murmure: Oh! quelle joie! Sous la terre il faisait si noir! Maintenant ma rive verdoie, Le ciel se mire à mon miroir."
+    },
+    {
+      "id": "s35-2",
+      "sceneId": "s35",
+      "text": "Les myosotis aux fleurs bleues Me disent: Ne m'oubliez pas! Les libellules de leurs queues M'égratignent dans leurs ébats;"
+    },
+    {
+      "id": "s35-3",
+      "sceneId": "s35",
+      "text": "A ma coupe l'oiseau s'abreuve, Qui sait?--Après quelques détours Peut-être deviendrai-je un fleuve Baignant vallons, rochers et tours."
+    },
+    {
+      "id": "s35-4",
+      "sceneId": "s35",
+      "text": "Je broderai de mon écume Ponts de pierre, quais de granit, Emportant le steamer qui fume A l'Océan où tout finit."
+    },
+    {
+      "id": "s35-5",
+      "sceneId": "s35",
+      "text": "Ainsi la jeune source jase, Formant cent projets d'avenir; Comme l'eau qui bout dans un vase, Son flot ne peut se contenir;"
+    },
+    {
+      "id": "s35-6",
+      "sceneId": "s35",
+      "text": "Mais le berceau touche à la tombe; Le géant futur meurt petit; Née à peine, la source tombe Dans le grand lac qui l'engloutit!"
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "ET TOMBEAUX"
+    },
+    {
+      "id": "s36-1",
+      "sceneId": "s36",
+      "text": "Le squelette était invisible Au temps heureux de l'Art païen; L'homme, sous la forme sensible, Content du beau, ne cherchait rien."
+    },
+    {
+      "id": "s36-2",
+      "sceneId": "s36",
+      "text": "Pas de cadavre sous la tombe, Spectre hideux de l'être cher, Comme d'un vêtement qui tombe Se déshabillant de sa chair,"
+    },
+    {
+      "id": "s36-3",
+      "sceneId": "s36",
+      "text": "Et, quand la pierre se lézarde, Parmi les épouvantements, Montrant à l'oeil qui s'y hasarde Une armature d'ossements;"
+    },
+    {
+      "id": "s36-4",
+      "sceneId": "s36",
+      "text": "Mais au feu du bûcher ravie Une pincée entre les doigts, Résidu léger de la vie, Qu'enserrait l'urne aux flancs étroits;"
+    },
+    {
+      "id": "s36-5",
+      "sceneId": "s36",
+      "text": "Ce que le papillon de l'âme Laisse de poussière après lui, Et ce qui reste de la flamme Sur le trépied, quand elle a lui!"
+    },
+    {
+      "id": "s36-6",
+      "sceneId": "s36",
+      "text": "Entre les fleurs et les acanthes, Dans le marbre joyeusement, Amours, oegipans et bacchantes Dansaient autour du monument;"
+    },
+    {
+      "id": "s36-7",
+      "sceneId": "s36",
+      "text": "Tout au plus un petit génie Du pied éteignait un flambeau; Et l'art versait son harmonie Sur la tristesse du tombeau."
+    },
+    {
+      "id": "s36-8",
+      "sceneId": "s36",
+      "text": "Les tombes étaient attrayantes: Comme on fait d'un enfant qui dort, D'images douces et riantes La vie enveloppait la mort;"
+    },
+    {
+      "id": "s36-9",
+      "sceneId": "s36",
+      "text": "La mort dissimulait sa face Aux trous profonds, au nez camard, Dont la hideur railleuse efface Les chimères du cauchemar."
+    },
+    {
+      "id": "s36-10",
+      "sceneId": "s36",
+      "text": "Le monstre, sous la chair splendide Cachait son fantôme inconnu, Et l'oeil de la vierge candide Allait au bel éphèbe nu."
+    },
+    {
+      "id": "s36-11",
+      "sceneId": "s36",
+      "text": "Seulement pour pousser à boire, Au banquet de Trimalcion, Une larve, joujou d'ivoire, Faisait son apparition;"
+    },
+    {
+      "id": "s36-12",
+      "sceneId": "s36",
+      "text": "Des dieux que l'art toujours révère Trônaient au ciel marmoréen; Mais l'Olympe cède au Calvaire, Jupiter au Nazaréen;"
+    },
+    {
+      "id": "s36-13",
+      "sceneId": "s36",
+      "text": "Une voix dit: Pan est mort!--L'ombre S'étend.--Comme sur un drap noir, Sur la tristesse immense et sombre Le blanc squelette se fait voir;"
+    },
+    {
+      "id": "s36-14",
+      "sceneId": "s36",
+      "text": "Il signe les pierres funèbres De son paraphe de fémurs, Pend son chapelet de vertèbres Dans les charniers, le long des murs,"
+    },
+    {
+      "id": "s36-15",
+      "sceneId": "s36",
+      "text": "Des cercueils lève le couvercle Avec ses bras aux os pointus: Dessine ses côtes en cercle Et rit de son large rictus;"
+    },
+    {
+      "id": "s36-16",
+      "sceneId": "s36",
+      "text": "Il pousse à la danse macabre L'empereur, le pape et le roi, Et de son cheval qui se cabre Jette bas le preux plein d'effroi;"
+    },
+    {
+      "id": "s36-17",
+      "sceneId": "s36",
+      "text": "Il entre chez la courtisane Et fait des mines au miroir, Du malade il boit la tisane, De l'avare ouvre le tiroir;"
+    },
+    {
+      "id": "s36-18",
+      "sceneId": "s36",
+      "text": "Piquant l'attelage qui rue Avec un os pour aiguillon, Du laboureur à la charrue Termine en fosse le sillon;"
+    },
+    {
+      "id": "s36-19",
+      "sceneId": "s36",
+      "text": "Et, parmi la foule priée, Hôte inattendu, sous le banc, Vole à la pâle mariée Sa jarretière de ruban."
+    },
+    {
+      "id": "s36-20",
+      "sceneId": "s36",
+      "text": "A chaque pas grossit la bande; Le jeune au vieux donne la main; L'irrésistible sarabande Met en branle le genre humain."
+    },
+    {
+      "id": "s36-21",
+      "sceneId": "s36",
+      "text": "Le spectre en tête se déhanche, Dansant et jouant du rebec, Et sur fond noir, en couleur blanche, Holbein l'esquisse d'un trait sec."
+    },
+    {
+      "id": "s36-22",
+      "sceneId": "s36",
+      "text": "Quand le siècle devient frivole Il suit la mode; en tonnelet Retrousse son linceul et vole Comme un Cupidon de ballet"
+    },
+    {
+      "id": "s36-23",
+      "sceneId": "s36",
+      "text": "Au tombeau-sofa des marquises Qui reposent, lasses d'amour, En des attitudes exquises, Dans les chapelles Pompadour."
+    },
+    {
+      "id": "s36-24",
+      "sceneId": "s36",
+      "text": "Mais voile-toi, masque sans joues, Comédien que le ver mord, Depuis assez longtemps tu joues Le mélodrame de la Mort."
+    },
+    {
+      "id": "s36-25",
+      "sceneId": "s36",
+      "text": "Reviens, reviens, bel art antique, De ton paros étincelant Couvrir ce squelette gothique; Dévore-le, bûcher brûlant!"
+    },
+    {
+      "id": "s36-26",
+      "sceneId": "s36",
+      "text": "Si nous sommes une statue Sculptée à l'image de Dieu, Quand cette image est abattue, Jetons-en les débris au feu."
+    },
+    {
+      "id": "s36-27",
+      "sceneId": "s36",
+      "text": "Toi, forme immortelle, remonte Dans la flamme aux sources du beau, Sans que ton argile ait la honte Et les misères du tombeau!"
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "DES ARMURES"
+    },
+    {
+      "id": "s37-1",
+      "sceneId": "s37",
+      "text": "Biorn, étrange cénobite, Sur le plateau d'un roc pelé, Hors du temps et du monde, habite La tour d'un burg démantelé."
+    },
+    {
+      "id": "s37-2",
+      "sceneId": "s37",
+      "text": "De sa porte l'esprit moderne En vain soulève le marteau. Biorn verrouille sa poterne Et barricade son château."
+    },
+    {
+      "id": "s37-3",
+      "sceneId": "s37",
+      "text": "Quand tous ont les yeux vers l'aurore, Biorn, sur son donjon perché, A l'horizon contemple encore La place du soleil couché."
+    },
+    {
+      "id": "s37-4",
+      "sceneId": "s37",
+      "text": "Ame rétrospective, il loge Dans son burg et dans le passé; Le pendule de son horloge Depuis des siècles est cassé."
+    },
+    {
+      "id": "s37-5",
+      "sceneId": "s37",
+      "text": "Sous ses ogives féodales Il erre, éveillant les échos, Et ses pas, sonnant sur les dalles, Semblent suivis de pas égaux."
+    },
+    {
+      "id": "s37-6",
+      "sceneId": "s37",
+      "text": "Il ne voit ni laïcs, ni prêtres, Ni gentilshommes, ni bourgeois, Mais les portraits de ses ancêtres Causent avec lui quelquefois."
+    },
+    {
+      "id": "s37-7",
+      "sceneId": "s37",
+      "text": "Et certains soirs, pour se distraire, Trouvant manger seul ennuyeux, Biorn, caprice funéraire, Invite à souper ses aïeux."
+    },
+    {
+      "id": "s37-8",
+      "sceneId": "s37",
+      "text": "Les fantômes, quand minuit sonne, Viennent armés de pied en cap; Biorn, qui malgré lui frissonne, Salue en haussant son hanap."
+    },
+    {
+      "id": "s37-9",
+      "sceneId": "s37",
+      "text": "Pour s'asseoir, chaque panoplie Fait un angle avec son genou, Dont l'articulation plie En grinçant comme un vieux verrou;"
+    },
+    {
+      "id": "s37-10",
+      "sceneId": "s37",
+      "text": "Et tout d'une pièce, l'armure, D'un corps absent gauche cercueil, Rendant un creux et sourd murmure, Tombe entre les bras du fauteuil."
+    },
+    {
+      "id": "s37-11",
+      "sceneId": "s37",
+      "text": "Landgraves, rhingraves, burgraves, Venus du ciel ou de l'enfer, Ils sont tous là, muets et graves, Les roides convives de fer!"
+    },
+    {
+      "id": "s37-12",
+      "sceneId": "s37",
+      "text": "Dans l'ombre, un rayon fauve indique Un monstre, guivre, aigle à deux cous, Pris au bestiaire héraldique Sur les cimiers faussés de coups."
+    },
+    {
+      "id": "s37-13",
+      "sceneId": "s37",
+      "text": "Du mufle des bêtes difformes Dressant leurs ongles arrogants, Partent des panaches énormes, Des lambrequins extravagants;"
+    },
+    {
+      "id": "s37-14",
+      "sceneId": "s37",
+      "text": "Mais les casques ouverts sont vides Comme les timbres du blason; Seulement deux flammes livides Y luisent d'étrange façon."
+    },
+    {
+      "id": "s37-15",
+      "sceneId": "s37",
+      "text": "Toute la ferraille est assise Dans la salle du vieux manoir, Et, sur le mur, l'ombre indécise Donne à chaque hôte un page noir."
+    },
+    {
+      "id": "s37-16",
+      "sceneId": "s37",
+      "text": "Les liqueurs aux feux des bougies Ont des pourpres d'un ton suspect; Les mets dans leurs sauces rougies Prennent un singulier aspect."
+    },
+    {
+      "id": "s37-17",
+      "sceneId": "s37",
+      "text": "Parfois un corselet miroite, Un morion brille un moment Une pièce qui se déboîte Choit sur la nappe lourdement."
+    },
+    {
+      "id": "s37-18",
+      "sceneId": "s37",
+      "text": "L'on entend les battements d'ailes D'invisibles chauves-souris, Et les drapeaux des infidèles Palpitent le long du lambris."
+    },
+    {
+      "id": "s37-19",
+      "sceneId": "s37",
+      "text": "Avec des mouvements fantasques Courbant leurs phalanges d'airain, Les gantelets versent aux casques Des rasades de vin du Rhin,"
+    },
+    {
+      "id": "s37-20",
+      "sceneId": "s37",
+      "text": "Ou découpent au fil des dagues Des sangliers sur des plats d'or... Cependant passent des bruits vagues Par les orgues du corridor."
+    },
+    {
+      "id": "s37-21",
+      "sceneId": "s37",
+      "text": "La débauche devient farouche, On n'entendrait pas tonner Dieu; Car, lorsqu'un fantôme découche, C'est le moins qu'il s'amuse un peu."
+    },
+    {
+      "id": "s37-22",
+      "sceneId": "s37",
+      "text": "Et la fantastique assemblée Se tracassant dans son harnois, L'orgie a sa rumeur doublée Du tintamarre des tournois."
+    },
+    {
+      "id": "s37-23",
+      "sceneId": "s37",
+      "text": "Gobelets, hanaps, vidrecomes, Vidés toujours, remplis en vain, Entre les mâchoires des heaumes Forment des cascades de vin."
+    },
+    {
+      "id": "s37-24",
+      "sceneId": "s37",
+      "text": "Les hauberts en bombent leurs ventres, Et le flot monte aux gorgerins; --Ils sont tous gris comme des chantres, Les vaillants comtes suzerains!"
+    },
+    {
+      "id": "s37-25",
+      "sceneId": "s37",
+      "text": "L'un allonge dans la salade Nonchalamment ses pédieux. L'autre à son compagnon malade Fait un sermon fastidieux."
+    },
+    {
+      "id": "s37-26",
+      "sceneId": "s37",
+      "text": "Et des armures peu bégueules Rappellent, dardant leur boisson, Les lions lampassés de gueules Blasonnés sur leur écusson."
+    },
+    {
+      "id": "s37-27",
+      "sceneId": "s37",
+      "text": "D'une voix encore enrouée Par l'humidité du caveau, Max fredonne, ivresse enjouée, Un lied, en treize cents, nouveau,"
+    },
+    {
+      "id": "s37-28",
+      "sceneId": "s37",
+      "text": "Albrecht, ayant le vin féroce, Se querelle avec ses voisins, Qu'il martèle, bossue et rosse, Comme il faisait des Sarrasins."
+    },
+    {
+      "id": "s37-29",
+      "sceneId": "s37",
+      "text": "Échauffé, Fritz ôte son casque, Jadis par un crâne habité, Ne pensant pas que sans son masque Il semble un tronc décapité."
+    },
+    {
+      "id": "s37-30",
+      "sceneId": "s37",
+      "text": "Bientôt ils roulent pêle-mêle Sous la table, parmi les brocs, Tête en bas, montrant la semelle De leurs souliers courbés en crocs."
+    },
+    {
+      "id": "s37-31",
+      "sceneId": "s37",
+      "text": "C'est un hideux champ de bataille Où les pots heurtent les armets, Où chaque mort par quelque entaille Au lieu de sang vomit des mets."
+    },
+    {
+      "id": "s37-32",
+      "sceneId": "s37",
+      "text": "Et Biorn, le poing sur la cuisse, Les contemple, morne et hagard, Tandis que, par le vitrail suisse, L'aube jette son bleu regard."
+    },
+    {
+      "id": "s37-33",
+      "sceneId": "s37",
+      "text": "La troupe, qu'un rayon traverse, Pâlit comme au jour un flambeau, Et le plus ivrogne se verse Le coup d'étrier du tombeau."
+    },
+    {
+      "id": "s37-34",
+      "sceneId": "s37",
+      "text": "Le coq chante, les spectres fuient Et, reprenant un air hautain, Sur l'oreiller de marbre appuient Leurs têtes lourdes du festin!"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "Deux fois je regarde ma montre, Et deux fois à mes yeux distraits L'aiguille au même endroit se montre; Il est une heure..., une heure après."
+    },
+    {
+      "id": "s38-1",
+      "sceneId": "s38",
+      "text": "La figure de la pendule En rit dans le salon voisin, Et le timbre d'argent module Deux coups vibrant comme un tocsin."
+    },
+    {
+      "id": "s38-2",
+      "sceneId": "s38",
+      "text": "Le cadran solaire me raille En m'indiquant, de son long doigt, Le chemin que sur la muraille A fait son ombre qui s'accroît."
+    },
+    {
+      "id": "s38-3",
+      "sceneId": "s38",
+      "text": "Le clocher avec ironie Dit le vrai chiffre et le beffroi, Reprenant la note finie, A l'air de se moquer de moi."
+    },
+    {
+      "id": "s38-4",
+      "sceneId": "s38",
+      "text": "Tiens! la petite bête est morte. Je n'ai pas mis hier encor, Tant ma rêverie était forte, Au trou de rubis la clef d'or!"
+    },
+    {
+      "id": "s38-5",
+      "sceneId": "s38",
+      "text": "Et je ne vois plus, dans sa boîte, Le fin ressort du balancier Aller, venir, à gauche, à droite, Ainsi qu'un papillon d'acier."
+    },
+    {
+      "id": "s38-6",
+      "sceneId": "s38",
+      "text": "C'est bien de moi! Quand je chevauche L'Hippogriffe, au pays du Bleu, Mon corps sans âme se débauche, Et s'en va comme il plaît à Dieu!"
+    },
+    {
+      "id": "s38-7",
+      "sceneId": "s38",
+      "text": "L'éternité poursuit son cercle Autour de ce cadran muet, Et le temps, l'oreille au couvercle, Cherche ce coeur qui remuait;"
+    },
+    {
+      "id": "s38-8",
+      "sceneId": "s38",
+      "text": "Ce coeur que l'enfant croit en vie, Et dont chaque pulsation Dans notre poitrine est suivie D'une égale vibration,"
+    },
+    {
+      "id": "s38-9",
+      "sceneId": "s38",
+      "text": "Il ne bat plus, mais son grand frère Toujours palpite à mon côté. --Celui que rien ne peut distraire, Quand je dormais, l'a remonté!"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "J'ai dans ma chambre une aquarelle Bizarre, et d'un peintre avec qui Mètre et rime sont en querelle, --Théophile Kniatowski."
+    },
+    {
+      "id": "s39-1",
+      "sceneId": "s39",
+      "text": "Sur l'écume blanche qui frange Le manteau glauque de la mer Se groupent en bouquet étrange Trois nymphes, fleurs du gouffre amer."
+    },
+    {
+      "id": "s39-2",
+      "sceneId": "s39",
+      "text": "Comme des lys noyés, la houle Fait dans sa volute d'argent Danser leurs beaux corps qu'elle roule, Les élevant, les submergeant."
+    },
+    {
+      "id": "s39-3",
+      "sceneId": "s39",
+      "text": "Sur leurs têtes blondes, coiffées De pétoncles et de roseaux, Elles mêlent, coquettes fées, L'écrin et la flore des eaux."
+    },
+    {
+      "id": "s39-4",
+      "sceneId": "s39",
+      "text": "Vidant sa nacre, l'huître à perle Constelle de son blanc trésor Leur gorge, où le flot qui déferle Suspend d'autres perles encor."
+    },
+    {
+      "id": "s39-5",
+      "sceneId": "s39",
+      "text": "Et, jusqu'aux hanches soulevées Par le bras des Tritons nerveux, Elles luisent, d'azur lavées, Sous l'or vert de leurs longs cheveux."
+    },
+    {
+      "id": "s39-6",
+      "sceneId": "s39",
+      "text": "Plus bas, leur blancheur sous l'eau bleue Se glace d'un visqueux frisson, Et le torse finit en queue, Moitié femme, moitié poisson."
+    },
+    {
+      "id": "s39-7",
+      "sceneId": "s39",
+      "text": "Mais qui regarde la nageoire Et les reins aux squameux replis, En voyant les bustes d'ivoire Par le baiser des mers polis?"
+    },
+    {
+      "id": "s39-8",
+      "sceneId": "s39",
+      "text": "A l'horizon,--piquant mélange De fable et de réalité,-- Paraît un vaisseau qui dérange Le choeur marin épouvanté."
+    },
+    {
+      "id": "s39-9",
+      "sceneId": "s39",
+      "text": "Son pavillon est tricolore; Son tuyau vomit la vapeur; Ses haubes fouettent l'eau sonore, Et les nymphes plongent de peur."
+    },
+    {
+      "id": "s39-10",
+      "sceneId": "s39",
+      "text": "Sans crainte elles suivaient par troupes Les trirèmes de l'Archipel, Et les dauphins, arquant leurs croupes, D'Arion attendaient l'appel."
+    },
+    {
+      "id": "s39-11",
+      "sceneId": "s39",
+      "text": "Mais le steam-boat avec ses roues, Comme Vulcain battant Vénus, Souffletterait leurs belles joues Et meurtrirait leurs membres nus."
+    },
+    {
+      "id": "s39-12",
+      "sceneId": "s39",
+      "text": "Adieu, fraîche mythologie! Le paquebot passe et, de loin, Croit voir sur la vague élargie Une culbute de marsouin."
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "ACCROCHE-COEURS"
+    },
+    {
+      "id": "s40-1",
+      "sceneId": "s40",
+      "text": "Ravivant les langueurs nacrées De tes yeux battus et vainqueurs, En mèches de parfum lustrées Se courbent deux accroche-coeurs."
+    },
+    {
+      "id": "s40-2",
+      "sceneId": "s40",
+      "text": "A voir s'arrondir sur tes joues Leurs orbes tournés par tes doigts, On dirait les petites roues Du char de Mab fait d'une noix;"
+    },
+    {
+      "id": "s40-3",
+      "sceneId": "s40",
+      "text": "Ou l'arc de l'Amour dont les pointes Pour une flèche à décocher, En cercle d'or se sont rejointes A la tempe du jeune archer."
+    },
+    {
+      "id": "s40-4",
+      "sceneId": "s40",
+      "text": "Pourtant un scrupule me trouble, Je n'ai qu'un coeur, alors pourquoi, Coquette, un accroche-coeur double? Qui donc y pends-tu près de moi?"
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "La plus délicate des roses Est, à coup sûr, la rose-thé. Son bouton, aux feuilles mi-closes De carmin à peine est teinté."
+    },
+    {
+      "id": "s41-1",
+      "sceneId": "s41",
+      "text": "On dirait une rose blanche Qu'aurait fait rougir de pudeur, En la lutinant sur la branche, Un papillon trop plein d'ardeur."
+    },
+    {
+      "id": "s41-2",
+      "sceneId": "s41",
+      "text": "Son tissu rose et diaphane De la chair a le velouté; Auprès, tout incarnat se fane Ou prend de la vulgarité."
+    },
+    {
+      "id": "s41-3",
+      "sceneId": "s41",
+      "text": "Comme un teint aristocratique Noircit les fronts bruns de soleil, De ses soeurs elle rend rustique Le coloris chaud et vermeil."
+    },
+    {
+      "id": "s41-4",
+      "sceneId": "s41",
+      "text": "Mais, si votre main qui s'en joue, A quelque bal, pour son parfum, La rapproche de votre joue, Son frais éclat devient commun."
+    },
+    {
+      "id": "s41-5",
+      "sceneId": "s41",
+      "text": "Il n'est pas de rose assez tendre Sur la palette du printemps, Madame, pour oser prétendre Lutter contre vos dix-sept ans."
+    },
+    {
+      "id": "s41-6",
+      "sceneId": "s41",
+      "text": "La peau vaut mieux que le pétale, Et le sang pur d'un noble coeur Qui sur la jeunesse s'étale, De tous les roses est vainqueur!"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Carmen est maigre,--un trait de bistre Cerne son oeil de gitana. Ses cheveux sont d'un noir sinistre, Sa peau, le diable la tanna."
+    },
+    {
+      "id": "s42-1",
+      "sceneId": "s42",
+      "text": "Les femmes disent qu'elle est laide, Mais tous les hommes en sont fous: Et l'archevêque de Tolède Chante la messe à ses genoux;"
+    },
+    {
+      "id": "s42-2",
+      "sceneId": "s42",
+      "text": "Car sur sa nuque d'ambre fauve Se tord un énorme chignon Qui, dénoué, fait dans l'alcôve Une mante à son corps mignon."
+    },
+    {
+      "id": "s42-3",
+      "sceneId": "s42",
+      "text": "Et, parmi sa pâleur, éclate Une bouche aux rires vainqueurs; Piment rouge, fleur écarlate, Qui prend sa pourpre au sang des coeurs."
+    },
+    {
+      "id": "s42-4",
+      "sceneId": "s42",
+      "text": "Ainsi faite, la moricaude Bat les plus altières beautés, Et de ses yeux la lueur chaude Rend la flamme aux satiétés."
+    },
+    {
+      "id": "s42-5",
+      "sceneId": "s42",
+      "text": "Elle a, dans sa laideur piquante, Un grain de sel de cette mer D'où jaillit, nue et provocante, L'âcre Vénus du gouffre amer."
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "LES HIRONDELLES"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "Déjà plus d'une feuille sèche Parsème les gazons jaunis; Soir et matin, la brise est fraîche, Hélas! les beaux jours sont finis!"
+    },
+    {
+      "id": "s44-1",
+      "sceneId": "s44",
+      "text": "On voit s'ouvrir les fleurs que garde Le jardin, pour dernier trésor: Le dahlia met sa cocarde Et le souci sa toque d'or."
+    },
+    {
+      "id": "s44-2",
+      "sceneId": "s44",
+      "text": "La pluie au bassin fait des bulles, Les hirondelles sur le toit Tiennent des conciliabules: Voici l'hiver, voici le froid!"
+    },
+    {
+      "id": "s44-3",
+      "sceneId": "s44",
+      "text": "Elles s'assemblent par centaines, Se concertant pour le départ. L'une dit: «Oh! que dans Athènes Il fait bon sur le vieux rempart!"
+    },
+    {
+      "id": "s44-4",
+      "sceneId": "s44",
+      "text": "«Tous les ans j'y vais et je niche Aux métopes du Parthénon. Mon nid bouche dans la corniche Le trou d'un boulet de canon.»"
+    },
+    {
+      "id": "s44-5",
+      "sceneId": "s44",
+      "text": "L'autre: «J'ai ma petite chambre A Smyrne, au plafond d'un café. Les Hadjis comptent leurs grains d'ambre Sur le seuil, d'un rayon chauffé."
+    },
+    {
+      "id": "s44-6",
+      "sceneId": "s44",
+      "text": "«J'entre et je sors, accoutumée Aux blondes vapeurs des chibouchs, Et parmi des flots de fumée, Je rase turbans et tarbouchs.»"
+    },
+    {
+      "id": "s44-7",
+      "sceneId": "s44",
+      "text": "Celle-ci: «J'habite un triglyphe Au fronton d'un temple, à Balbeck. Je m'y suspends avec ma griffe Sur mes petits au large bec.»"
+    },
+    {
+      "id": "s44-8",
+      "sceneId": "s44",
+      "text": "Celle-là: «Voici mon adresse: Rhodes, palais des chevaliers; Chaque hiver, ma tente s'y dresse Au chapiteau des noirs piliers.»"
+    },
+    {
+      "id": "s44-9",
+      "sceneId": "s44",
+      "text": "La cinquième: «Je ferai halte, Car l'âge m'alourdit un peu, Aux blanches terrasses de Malte, Entre l'eau bleue et le ciel bleu.»"
+    },
+    {
+      "id": "s44-10",
+      "sceneId": "s44",
+      "text": "La sixième: «Qu'on est à l'aise Au Caire, en haut des minarets! J'empâte un ornement de glaise, Et mes quartiers d'hiver sont prêts.»"
+    },
+    {
+      "id": "s44-11",
+      "sceneId": "s44",
+      "text": "«A la seconde cataracte, Fait la dernière, j'ai mon nid; J'en ai noté la place exacte, Dans le pschent d'un roi de granit.»"
+    },
+    {
+      "id": "s44-12",
+      "sceneId": "s44",
+      "text": "Toutes: «Demain combien de lieues Auront filé sous notre essaim, Plaines brunes, pics blancs, mers bleues Brodant d'écume leur bassin!»"
+    },
+    {
+      "id": "s44-13",
+      "sceneId": "s44",
+      "text": "Avec cris et battements d'ailes, Sur la moulure aux bords étroits, Ainsi jasent les hirondelles, Voyant venir la rouille aux bois."
+    },
+    {
+      "id": "s44-14",
+      "sceneId": "s44",
+      "text": "Je comprends tout ce qu'elles disent, Car le poëte est un oiseau; Mais, captif, ses élans se brisent Contre un invisible réseau!"
+    },
+    {
+      "id": "s44-15",
+      "sceneId": "s44",
+      "text": "Des ailes! des ailes! des ailes! Comme dans le chant de Ruckert, Pour voler, là-bas avec elles Au soleil d'or, au printemps vert!"
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "Le ciel est noir, la terre est blanche; --Cloches, carillonnez gaîment!-- Jésus est né.--La Vierge penche Sur lui son visage charmant."
+    },
+    {
+      "id": "s45-1",
+      "sceneId": "s45",
+      "text": "Pas de courtines festonnées Pour préserver l'enfant du froid, Rien que les toiles d'araignées Qui pendent des poutres du toit."
+    },
+    {
+      "id": "s45-2",
+      "sceneId": "s45",
+      "text": "Il tremble sur la paille fraîche, Ce cher petit enfant Jésus, Et pour l'échauffer dans sa crèche L'âne et le boeuf soufflent dessus."
+    },
+    {
+      "id": "s45-3",
+      "sceneId": "s45",
+      "text": "La neige au chaume coud ses franges, Mais sur le toit s'ouvre le ciel Et, tout en blanc, le choeur des anges Chante aux bergers: «*Noël! Noël!*»"
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "DE LA MORTE"
+    },
+    {
+      "id": "s46-1",
+      "sceneId": "s46",
+      "text": "La petite Marie est morte, Et son cercueil est si peu long Qu'il tient sous le bras qui l'emporte Comme un étui de violon."
+    },
+    {
+      "id": "s46-2",
+      "sceneId": "s46",
+      "text": "Sur le tapis et sur la table Traîne l'héritage enfantin. Les bras ballants, l'air lamentable, Tout affaissé, gît le pantin."
+    },
+    {
+      "id": "s46-3",
+      "sceneId": "s46",
+      "text": "Et si la poupée est plus ferme, C'est la faute de son bâton; Dans son oeil une larme germe, Un soupir gonfle son carton."
+    },
+    {
+      "id": "s46-4",
+      "sceneId": "s46",
+      "text": "Une dînette abandonnée Mêle ses plats de bois verni A la troupe désarçonnée Des écuyers de Franconi."
+    },
+    {
+      "id": "s46-5",
+      "sceneId": "s46",
+      "text": "La boîte à musique est muette; Mais, quand on pousse le ressort Où se posait sa main fluette, Un murmure plaintif en sort."
+    },
+    {
+      "id": "s46-6",
+      "sceneId": "s46",
+      "text": "L'émotion chevrote et tremble Dans: *Ah! vous dirai-je, maman?* Le *Quadrille des Lanciers* semble Triste comme un enterrement."
+    },
+    {
+      "id": "s46-7",
+      "sceneId": "s46",
+      "text": "Et des pleurs vous mouillent la joue Quand *la Donna è mobile*, Sur le rouleau qui tourne et joue, Expire avec un son filé."
+    },
+    {
+      "id": "s46-8",
+      "sceneId": "s46",
+      "text": "Le coeur se navre à ce mélange Puérilement douloureux, Joujoux d'enfant laissés par l'ange, Berceau que la tombe a fait creux!"
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "LE FEUILLETON"
+    },
+    {
+      "id": "s47-1",
+      "sceneId": "s47",
+      "text": "Mes colonnes sont alignées, Au portique du feuilleton; Elles supportent, résignées, Du journal le pesant fronton."
+    },
+    {
+      "id": "s47-2",
+      "sceneId": "s47",
+      "text": "Jusqu'à lundi je suis mon maître. Au diable chefs-d'oeuvre mort-nés! Pour huit jours je puis me permettre De vous fermer ma porte au nez."
+    },
+    {
+      "id": "s47-3",
+      "sceneId": "s47",
+      "text": "Les ficelles des mélodrames N'ont plus le droit de se glisser Parmi les fils soyeux des trames Que mon caprice aime à tisser."
+    },
+    {
+      "id": "s47-4",
+      "sceneId": "s47",
+      "text": "Voix de l'âme et de la nature, J'écouterai vos purs sanglots, Sans que les couplets de facture M'étourdissent de leurs grelots,"
+    },
+    {
+      "id": "s47-5",
+      "sceneId": "s47",
+      "text": "Et portant, dans mon verre à côtes La santé du temps disparu, Avec mes vieux rêves pour hôtes Je boirai le vin de mon cru:"
+    },
+    {
+      "id": "s47-6",
+      "sceneId": "s47",
+      "text": "Le vin de ma propre pensée, Vierge de toute autre liqueur, Et que, par la vie écrasée, Répand la grappe de mon coeur!"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "DU SOUVENIR"
+    },
+    {
+      "id": "s48-1",
+      "sceneId": "s48",
+      "text": "La main au front, le pied dans l'âtre, Je songe et cherche à revenir, Par delà le passé grisâtre, Au vieux château du Souvenir."
+    },
+    {
+      "id": "s48-2",
+      "sceneId": "s48",
+      "text": "Une gaze de brume estompe Arbres, maisons, plaines, coteaux, Et l'oeil au carrefour qui trompe En vain consulte les poteaux."
+    },
+    {
+      "id": "s48-3",
+      "sceneId": "s48",
+      "text": "J'avance parmi les décombres De tout un monde enseveli, Dans le mystère des pénombres, A travers des limbes d'oubli."
+    },
+    {
+      "id": "s48-4",
+      "sceneId": "s48",
+      "text": "Mais voici, blanche et diaphane, La Mémoire, au bord du chemin, Qui me remet, comme Ariane, Son peloton de fil en main."
+    },
+    {
+      "id": "s48-5",
+      "sceneId": "s48",
+      "text": "Désormais la route est certaine; Le soleil voilé reparaît, Et du château la tour lointaine Pointe au-dessus de la forêt."
+    },
+    {
+      "id": "s48-6",
+      "sceneId": "s48",
+      "text": "Sous l'arcade où le jour s'émousse, De feuilles en feuilles tombant, Le sentier ancien dans la mousse Trace encor son étroit ruban."
+    },
+    {
+      "id": "s48-7",
+      "sceneId": "s48",
+      "text": "Mais la ronce en travers s'enlace: La liane tend son filet, Et la branche que je déplace Revient et me donne un soufflet."
+    },
+    {
+      "id": "s48-8",
+      "sceneId": "s48",
+      "text": "Enfin au bout de la clairière, Je découvre du vieux manoir Les tourelles en poivrière Et les hauts toits en éteignoir."
+    },
+    {
+      "id": "s48-9",
+      "sceneId": "s48",
+      "text": "Sur le comble aucune fumée Rayant le ciel d'un bleu sillon; Pas une fenêtre allumée D'une figure ou d'un rayon."
+    },
+    {
+      "id": "s48-10",
+      "sceneId": "s48",
+      "text": "Les chaînes du pont sont brisées; Aux fossés la lentille d'eau De ses taches vert-de-grisées Étale le glauque rideau."
+    },
+    {
+      "id": "s48-11",
+      "sceneId": "s48",
+      "text": "Des tortuosités de lierre Pénètrent dans chaque refend, Payant la tour hospitalière Qui les soutient... en l'étouffant."
+    },
+    {
+      "id": "s48-12",
+      "sceneId": "s48",
+      "text": "Le porche à la lune se ronge, Le temps le sculpte à sa façon, Et la pluie a passé l'éponge Sur les couleurs de mon blason."
+    },
+    {
+      "id": "s48-13",
+      "sceneId": "s48",
+      "text": "Tout ému, je pousse la porte Qui cède et geint sur ses pivots; Un air froid en sort et m'apporte Le fade parfum des caveaux."
+    },
+    {
+      "id": "s48-14",
+      "sceneId": "s48",
+      "text": "L'ortie aux morsures aiguës, La bardane aux larges contours, Sous les ombelles des ciguës, Prospèrent dans l'angle des cours."
+    },
+    {
+      "id": "s48-15",
+      "sceneId": "s48",
+      "text": "Sur les deux chimères de marbre, Gardiennes du perron verdi, Se découpe l'ombre d'un arbre Pendant mon absence grandi."
+    },
+    {
+      "id": "s48-16",
+      "sceneId": "s48",
+      "text": "Levant leurs pattes de lionne Elles se mettent en arrêt. Leur regard blanc me questionne Mais je leur dis le mot secret."
+    },
+    {
+      "id": "s48-17",
+      "sceneId": "s48",
+      "text": "Et je passe.--Dressant sa tête, Le vieux chien retombe assoupi, Et mon pas sonore inquiète L'écho dans son coin accroupi."
+    },
+    {
+      "id": "s48-18",
+      "sceneId": "s48",
+      "text": "Un jour louche et douteux se glisse Aux vitres jaunes du salon Où figurent, en haute lisse, Les aventures d'Apollon."
+    },
+    {
+      "id": "s48-19",
+      "sceneId": "s48",
+      "text": "Daphné, les hanches dans l'écorce, Étend toujours ses doigts touffus; Mais aux bras du dieu qui la force, Elle s'éteint, spectre confus."
+    },
+    {
+      "id": "s48-20",
+      "sceneId": "s48",
+      "text": "Apollon, chez Admète, garde Un troupeau, des mites atteint; Les neuf Muses, troupe hagarde, Pleurent sur un Pinde déteint;"
+    },
+    {
+      "id": "s48-21",
+      "sceneId": "s48",
+      "text": "Et la Solitude en chemise Trace au doigt le mot: «Abandon» Dans la poudre qu'elle tamise Sur le marbre du guéridon."
+    },
+    {
+      "id": "s48-22",
+      "sceneId": "s48",
+      "text": "Je retrouve au long des tentures, Comme des hôtes endormis, Pastels blafards, sombres peintures, Jeunes beautés et vieux amis."
+    },
+    {
+      "id": "s48-23",
+      "sceneId": "s48",
+      "text": "Ma main tremblante enlève un crêpe, Et je vois mon défunt amour, Jupons bouffants, taille de guêpe, La Cidalise en Pompadour!"
+    },
+    {
+      "id": "s48-24",
+      "sceneId": "s48",
+      "text": "Un bouton de rose s'entr'ouvre A son corset enrubanné, Dont la dentelle à demi couvre Un sein neigeux d'azur veiné;"
+    },
+    {
+      "id": "s48-25",
+      "sceneId": "s48",
+      "text": "Ses yeux ont de moites paillettes, Comme aux feuilles que le froid mord, Sa pourpre monte à ses pommettes, Éclat trompeur, fard de la mort!"
+    },
+    {
+      "id": "s48-26",
+      "sceneId": "s48",
+      "text": "Elle tressaille à mon approche, Et son regard, triste et charmant, Sur le mien, d'un air de reproche, Se fixe douloureusement."
+    },
+    {
+      "id": "s48-27",
+      "sceneId": "s48",
+      "text": "Bien que la vie au loin m'emporte, Ton nom dans mon coeur est marqué, Fleur de pastel, gentille morte, Ombre en habit de bal masqué!"
+    },
+    {
+      "id": "s48-28",
+      "sceneId": "s48",
+      "text": "La nature de l'art jalouse, Voulant dépasser Murillo, A Paris créa l'Andalouse Qui rit dans le second tableau."
+    },
+    {
+      "id": "s48-29",
+      "sceneId": "s48",
+      "text": "Par un caprice poétique, Notre climat brumeux para D'une grâce au charme exotique Cette autre Petra Camara."
+    },
+    {
+      "id": "s48-30",
+      "sceneId": "s48",
+      "text": "De chaudes teintes orangées Dorent sa joue au fard vermeil; Ses paupières de jais frangées Filtrent des rayons de soleil."
+    },
+    {
+      "id": "s48-31",
+      "sceneId": "s48",
+      "text": "Entre ses lèvres d'écarlate Scintille un éclair argenté, Et sa beauté splendide éclate Comme une grenade en été."
+    },
+    {
+      "id": "s48-32",
+      "sceneId": "s48",
+      "text": "Au son des guitares d'Espagne Ma voix longtemps la célébra. Elle vint un jour, sans compagne, Et ma chambre fut l'Alhambra."
+    },
+    {
+      "id": "s48-33",
+      "sceneId": "s48",
+      "text": "Plus loin une beauté robuste, Aux bras forts cerclés d'anneaux lourds, Sertit le marbre de son buste Dans les perles et le velours."
+    },
+    {
+      "id": "s48-34",
+      "sceneId": "s48",
+      "text": "D'un air de reine qui s'ennuie Au sein de sa cour à genoux, Superbe et distraite, elle appuie La main sur un coffre à bijoux."
+    },
+    {
+      "id": "s48-35",
+      "sceneId": "s48",
+      "text": "Sa bouche humide et sensuelle Semble rouge du sang des coeurs, Et, pleins de volupté cruelle, Ses yeux ont des défis vainqueurs."
+    },
+    {
+      "id": "s48-36",
+      "sceneId": "s48",
+      "text": "Ici, plus de grâce touchante, Mais un attrait vertigineux. On dirait la Vénus méchante Qui préside aux amours haineux."
+    },
+    {
+      "id": "s48-37",
+      "sceneId": "s48",
+      "text": "Cette Vénus, mauvaise mère, Souvent a battu Cupidon. O toi, qui fus ma joie amère, Adieu pour toujours... et pardon!"
+    },
+    {
+      "id": "s48-38",
+      "sceneId": "s48",
+      "text": "Dans son cadre, que l'ombre moire, Au lieu de réfléchir mes traits, La glace ébauche de mémoire Le plus ancien de mes portraits."
+    },
+    {
+      "id": "s48-39",
+      "sceneId": "s48",
+      "text": "Spectre rétrospectif qui double Un type à jamais effacé, Il sort du fond du miroir trouble Et des ténèbres du passé."
+    },
+    {
+      "id": "s48-40",
+      "sceneId": "s48",
+      "text": "Dans son pourpoint de satin rose, Qu'un goût hardi coloria, Il semble chercher une pose Pour Boulanger ou Devéria."
+    },
+    {
+      "id": "s48-41",
+      "sceneId": "s48",
+      "text": "Terreur du bourgeois glabre et chauve, Une chevelure à tous crins De roi franc ou de lion fauve Roule en torrent jusqu'à ses reins."
+    },
+    {
+      "id": "s48-42",
+      "sceneId": "s48",
+      "text": "Tel, romantique opiniâtre, Soldat de l'art qui lutte encor, Il se ruait vers le théâtre Quand d'Hernani sonnait le cor."
+    },
+    {
+      "id": "s48-43",
+      "sceneId": "s48",
+      "text": "... La nuit tombe et met avec l'ombre Ses terreurs aux recoins dormants. L'inconnu, machiniste sombre, Monte ses épouvantements."
+    },
+    {
+      "id": "s48-44",
+      "sceneId": "s48",
+      "text": "Des explosions de bougies Crèvent soudain sur les flambeaux! Leurs auréoles élargies Semblent des lampes de tombeaux."
+    },
+    {
+      "id": "s48-45",
+      "sceneId": "s48",
+      "text": "Une main d'ombre ouvre la porte Sans en faire grincer la clé. D'hôtes pâles qu'un souffle apporte Le salon se trouve peuplé."
+    },
+    {
+      "id": "s48-46",
+      "sceneId": "s48",
+      "text": "Les portraits quittent la muraille, Frottant de leurs mouchoirs jaunis, Sur leur visage qui s'éraille, La crasse fauve du vernis."
+    },
+    {
+      "id": "s48-47",
+      "sceneId": "s48",
+      "text": "D'un reflet rouge illuminée, La bande se chauffe les doigts Et fait cercle à la cheminée Où tout à coup flambe le bois."
+    },
+    {
+      "id": "s48-48",
+      "sceneId": "s48",
+      "text": "L'image au sépulcre ravie Perd son aspect roide et glacé; La chaude pourpre de la vie Remonte aux veines du passé."
+    },
+    {
+      "id": "s48-49",
+      "sceneId": "s48",
+      "text": "Les masques blafards se colorent Comme au temps où je les connus. O vous que mes regrets déplorent, Amis, merci d'être venus!"
+    },
+    {
+      "id": "s48-50",
+      "sceneId": "s48",
+      "text": "Les vaillants de dix-huit cent trente, Je les revois tels que jadis. Comme les pirates d'Otrante Nous étions cent, nous sommes dix."
+    },
+    {
+      "id": "s48-51",
+      "sceneId": "s48",
+      "text": "L'un étale sa barbe rousse Comme Frédéric dans son roc, L'autre superbement retrousse Le bout de sa moustache en croc."
+    },
+    {
+      "id": "s48-52",
+      "sceneId": "s48",
+      "text": "Drapant sa souffrance secrète Sous les fiertés de son manteau, Pétrus fume une cigarette Qu'il baptise papelito."
+    },
+    {
+      "id": "s48-53",
+      "sceneId": "s48",
+      "text": "Celui-ci me conte ses rêves, Hélas! jamais réalisés, Icare tombé sur les grèves Où gisent les essors brisés."
+    },
+    {
+      "id": "s48-54",
+      "sceneId": "s48",
+      "text": "Celui-là me confie un drame Taillé sur le nouveau patron Qui fait, mêlant tout dans sa trame, Causer Molière et Calderon."
+    },
+    {
+      "id": "s48-55",
+      "sceneId": "s48",
+      "text": "Tom, qu'un abandon scandalise, Récite «Love's labours lost», Et Fritz explique à Cidalise Le «Walpurgisnachtstraum» de Faust."
+    },
+    {
+      "id": "s48-56",
+      "sceneId": "s48",
+      "text": "Mais le jour luit à la fenêtre; Et les spectres, moins arrêtés, Laissent les objets transparaître Dans leurs diaphanéités."
+    },
+    {
+      "id": "s48-57",
+      "sceneId": "s48",
+      "text": "Les cires fondent consumées; Sous les cendres s'éteint le feu, Du parquet montent des fumées; Château du Souvenir, adieu!"
+    },
+    {
+      "id": "s48-58",
+      "sceneId": "s48",
+      "text": "Encore une autre fois décembre Va retourner le sablier. Le présent entre dans ma chambre Et me dit en vain d'oublier."
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "ET PAQUERETTE"
+    },
+    {
+      "id": "s49-1",
+      "sceneId": "s49",
+      "text": "On admire les fleurs de serre Qui loin de leur soleil natal, Comme des joyaux mis sous verre, Brillent sous un ciel de cristal."
+    },
+    {
+      "id": "s49-2",
+      "sceneId": "s49",
+      "text": "Sans que les brises les effleurent De leurs baisers mystérieux, Elles naissent, vivent et meurent Devant le regard curieux."
+    },
+    {
+      "id": "s49-3",
+      "sceneId": "s49",
+      "text": "A l'abri de murs diaphanes, De leur sein ouvrant le trésor, Comme de belles courtisanes, Elles se vendent à prix d'or."
+    },
+    {
+      "id": "s49-4",
+      "sceneId": "s49",
+      "text": "La porcelaine de la Chine Les reçoit par groupes coquets, Ou quelque main gantée et fine Au bal les balance en bouquets."
+    },
+    {
+      "id": "s49-5",
+      "sceneId": "s49",
+      "text": "Mais souvent parmi l'herbe verte, Fuyant les yeux, fuyant les doigts, De silence et d'ombre couverte, Une fleur vit au fond des bois."
+    },
+    {
+      "id": "s49-6",
+      "sceneId": "s49",
+      "text": "Un papillon blanc qui voltige, Un coup d'oeil au hasard jeté, Vous fait surprendre sur sa tige La fleur dans sa simplicité,"
+    },
+    {
+      "id": "s49-7",
+      "sceneId": "s49",
+      "text": "Belle de sa parure agreste S'épanouissant au ciel bleu, Et versant son parfum modeste Pour la solitude et pour Dieu."
+    },
+    {
+      "id": "s49-8",
+      "sceneId": "s49",
+      "text": "Sans toucher à son pur calice Qu'agite un frisson de pudeur, Vous respirez avec délice Son âme dans sa fraîche odeur."
+    },
+    {
+      "id": "s49-9",
+      "sceneId": "s49",
+      "text": "Et tulipes au port superbe, Camélias si cher payés, Pour la petite fleur sous l'herbe, En un instant, sont oubliés!"
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "SUR UNE AQUARELLE DE LA PRINCESSE M..."
+    },
+    {
+      "id": "s50-1",
+      "sceneId": "s50",
+      "text": "Caprice d'un pinceau fantasque Et d'un impérial loisir, Votre fellah, sphinx qui se masque, Propose une énigme au désir."
+    },
+    {
+      "id": "s50-2",
+      "sceneId": "s50",
+      "text": "C'est une mode bien austère Que ce masque et cet habit long, Elle intrigue par son mystère Tous les OEdipes du salon."
+    },
+    {
+      "id": "s50-3",
+      "sceneId": "s50",
+      "text": "L'antique Isis légua ses voiles Aux modernes filles du Nil; Mais, sous le bandeau, deux étoiles Brillent d'un feu pur et subtil."
+    },
+    {
+      "id": "s50-4",
+      "sceneId": "s50",
+      "text": "Ces yeux qui sont tout un poème De langueur et de volupté Disent, résolvant le problème, «Sois l'amour, je suis la beauté.»"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "Sur les tuiles où se hasarde Le chat guettant l'oiseau qui boit, De mon balcon une mansarde Entre deux tuyaux s'aperçoit."
+    },
+    {
+      "id": "s51-1",
+      "sceneId": "s51",
+      "text": "Pour la parer d'un faux bien-être, Si je mentais comme un auteur, Je pourrais faire à sa fenêtre Un cadre de pois de senteur,"
+    },
+    {
+      "id": "s51-2",
+      "sceneId": "s51",
+      "text": "Et vous y montrer Rigolette Riant à son petit miroir, Dont le tain rayé ne reflète Que la moitié de son oeil noir;"
+    },
+    {
+      "id": "s51-3",
+      "sceneId": "s51",
+      "text": "Ou, la robe encor sans agrafe, Gorge et cheveux au vent, Margot Arrosant avec sa carafe Son jardin planté dans un pot;"
+    },
+    {
+      "id": "s51-4",
+      "sceneId": "s51",
+      "text": "Ou bien quelque jeune poète Qui scande ses vers sibyllins, En contemplant la silhouette De Montmartre et de ses moulins."
+    },
+    {
+      "id": "s51-5",
+      "sceneId": "s51",
+      "text": "Par malheur, ma mansarde est vraie, Il n'y grimpe aucun liseron, Et la vitre y fait voir sa taie, Sous l'ais verdi d'un vieux chevron."
+    },
+    {
+      "id": "s51-6",
+      "sceneId": "s51",
+      "text": "Pour la grisette et pour l'artiste, Pour le veuf et pour le garçon, Une mansarde est toujours triste: Le grenier n'est beau qu'en chanson."
+    },
+    {
+      "id": "s51-7",
+      "sceneId": "s51",
+      "text": "Jadis, sous le comble dont l'angle Penchait les fronts pour le baiser, L'amour, content d'un lit de sangle, Avec Suzon venait causer."
+    },
+    {
+      "id": "s51-8",
+      "sceneId": "s51",
+      "text": "Mais pour ouater notre joie, Il faut des murs capitonnés, Des flots de dentelle et de soie, Des lits par Monbro festonnés."
+    },
+    {
+      "id": "s51-9",
+      "sceneId": "s51",
+      "text": "Un soir, n'étant pas revenue, Margot s'attarde au mont Breda, Et Rigolette entretenue N'arrose plus son réséda."
+    },
+    {
+      "id": "s51-10",
+      "sceneId": "s51",
+      "text": "Voilà longtemps que le poète Las de prendre la rime au vol, S'est fait *reporter* de gazette, Quittant le ciel pour l'entresol."
+    },
+    {
+      "id": "s51-11",
+      "sceneId": "s51",
+      "text": "Et l'on ne voit contre la vitre Qu'une vieille au maigre profil, Devant Minet, qu'elle chapitre, Tirant sans cesse un bout de fil."
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "A l'horizon monte une nue, Sculptant sa forme dans l'azur: On dirait une vierge nue Émergeant d'un lac au flot pur."
+    },
+    {
+      "id": "s52-1",
+      "sceneId": "s52",
+      "text": "Debout dans sa conque nacrée, Elle vogue sur le bleu clair. Comme une Aphrodite éthérée, Faite de l'écume de l'air;"
+    },
+    {
+      "id": "s52-2",
+      "sceneId": "s52",
+      "text": "On voit onder en molles poses Son torse au contour incertain, Et l'aurore répand des roses Sur son épaule de satin."
+    },
+    {
+      "id": "s52-3",
+      "sceneId": "s52",
+      "text": "Ses blancheurs de marbre et de neige Se fondent amoureusement Comme, au clair-obscur du Corrége, Le corps d'Antiope dormant."
+    },
+    {
+      "id": "s52-4",
+      "sceneId": "s52",
+      "text": "Elle plane dans la lumière Plus haut que l'Alpe ou l'Apennin; Reflet de la beauté première, Soeur de «l'éternel féminin»."
+    },
+    {
+      "id": "s52-5",
+      "sceneId": "s52",
+      "text": "A son corps, en vain retenue, Sur l'aile de la passion, Mon âme vole à cette nue Et l'embrasse comme Ixion."
+    },
+    {
+      "id": "s52-6",
+      "sceneId": "s52",
+      "text": "La raison dit: «Vague fumée, Où l'on croit voir ce qu'on rêva, Ombre au gré du vent déformée, Bulle qui crève et qui s'en va!»"
+    },
+    {
+      "id": "s52-7",
+      "sceneId": "s52",
+      "text": "Le sentiment répond: «Qu'importe! Qu'est-ce après tout que la beauté? Spectre charmant qu'un souffle emporte Et qui n'est rien, ayant été!"
+    },
+    {
+      "id": "s52-8",
+      "sceneId": "s52",
+      "text": "«A l'Idéal ouvre ton âme, Mets dans ton coeur beaucoup de ciel, Aime une nue, aime une femme, Mais aime!--C'est l'essentiel!»"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "Un oiseau siffle dans les branches Et sautille gai, plein d'espoir, Sur les herbes, de givre blanches, En bottes jaunes, en frac noir."
+    },
+    {
+      "id": "s53-1",
+      "sceneId": "s53",
+      "text": "C'est un merle, chanteur crédule, Ignorant du calendrier, Qui rêve soleil, et module L'hymne d'avril en février."
+    },
+    {
+      "id": "s53-2",
+      "sceneId": "s53",
+      "text": "Pourtant il vente, il pleut à verse; L'Arve jaunit le Rhône bleu, Et le salon tendu de perse, Tient tous ses hôtes près du feu."
+    },
+    {
+      "id": "s53-3",
+      "sceneId": "s53",
+      "text": "Les monts sur l'épaule ont l'hermine, Comme des magistrats siégeant; Leur blanc tribunal examine Un cas d'hiver se prolongeant."
+    },
+    {
+      "id": "s53-4",
+      "sceneId": "s53",
+      "text": "Lustrant son aile qu'il essuie, L'oiseau persiste en sa chanson, Malgré neige, brouillard et pluie, Il croit à la jeune saison."
+    },
+    {
+      "id": "s53-5",
+      "sceneId": "s53",
+      "text": "Il gronde l'aube paresseuse De rester au lit si longtemps Et, gourmandant la fleur frileuse, Met en demeure le printemps."
+    },
+    {
+      "id": "s53-6",
+      "sceneId": "s53",
+      "text": "Il voit le jour derrière l'ombre; Tel un croyant, dans le saint lieu, L'autel désert, sous la nef sombre, Avec sa foi voit toujours Dieu."
+    },
+    {
+      "id": "s53-7",
+      "sceneId": "s53",
+      "text": "A la nature il se confie, Car son instinct pressent la loi. Qui rit de ta philosophie, Beau merle, est moins sage que toi!"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "QUI FAIT LE PRINTEMPS"
+    },
+    {
+      "id": "s54-1",
+      "sceneId": "s54",
+      "text": "Les marronniers de la terrasse Vont bientôt fleurir, à Saint-Jean, La villa d'où la vue embrasse Tant de monts bleus coiffés d'argent."
+    },
+    {
+      "id": "s54-2",
+      "sceneId": "s54",
+      "text": "La feuille, hier encor pliée Dans son étroit corset d'hiver, Met sur la branche déliée Les premières touches de vert."
+    },
+    {
+      "id": "s54-3",
+      "sceneId": "s54",
+      "text": "Mais en vain le soleil excite La sève des rameaux trop lents; La fleur retardataire hésite A faire voir ses thyrses blancs."
+    },
+    {
+      "id": "s54-4",
+      "sceneId": "s54",
+      "text": "Pourtant le pêcher est tout rose, Comme un désir de la pudeur. Et le pommier, que l'aube arrose, S'épanouit dans sa candeur."
+    },
+    {
+      "id": "s54-5",
+      "sceneId": "s54",
+      "text": "La véronique s'aventure Près des boutons d'or dans les prés, Les caresses de la nature Hâtent les germes rassurés."
+    },
+    {
+      "id": "s54-6",
+      "sceneId": "s54",
+      "text": "Il me faut retourner encor Au cercle d'enfer où je vis; Marronniers, pressez-vous d'éclore Et d'éblouir mes yeux ravis."
+    },
+    {
+      "id": "s54-7",
+      "sceneId": "s54",
+      "text": "Vous pouvez sortir pour la fête Vos girandoles sans péril, Un ciel bleu luit sur votre faîte Et déjà mai talonne avril."
+    },
+    {
+      "id": "s54-8",
+      "sceneId": "s54",
+      "text": "Par pitié donnez cette joie Au poète dans ses douleurs, Qu'avant de s'en aller, il voie Vos feux d'artifice de fleurs."
+    },
+    {
+      "id": "s54-9",
+      "sceneId": "s54",
+      "text": "Grands marronniers de la terrasse, Si fiers de vos splendeurs d'été, Montrez-vous à moi dans la grâce Qui précède votre beauté."
+    },
+    {
+      "id": "s54-10",
+      "sceneId": "s54",
+      "text": "Je connais vos riches livrées, Quand octobre, ouvrant son essor, Vous met des tuniques pourprées, Vous pose des couronnes d'or."
+    },
+    {
+      "id": "s54-11",
+      "sceneId": "s54",
+      "text": "Je vous ai vus, blanches ramées, Pareils aux dessins que le froid Aux vitres d'argent étamées Trace, la nuit, avec son doigt."
+    },
+    {
+      "id": "s54-12",
+      "sceneId": "s54",
+      "text": "Je sais tous vos aspects superbes, Arbres géants, vieux marronniers, Mais j'ignore vos fraîches gerbes Et vos aromes printaniers."
+    },
+    {
+      "id": "s54-13",
+      "sceneId": "s54",
+      "text": "Adieu, je pars lassé d'attendre; Gardez vos bouquets éclatants! Une autre fleur suave et tendre, Seule à mes yeux fait le printemps."
+    },
+    {
+      "id": "s54-14",
+      "sceneId": "s54",
+      "text": "Que mai remporte sa corbeille! Il me suffit de cette fleur; Toujours pour l'âme et pour l'abeille Elle a du miel pur dans le coeur."
+    },
+    {
+      "id": "s54-15",
+      "sceneId": "s54",
+      "text": "Par le ciel d'azur ou de brume Par la chaude ou froide saison, Elle sourit, charme et parfume, Violette de la maison!"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "Voilà longtemps que je vous aime: --L'aveu remonte à dix-huit ans!-- Vous êtes rose, je suis blême, J'ai les hivers, vous les printemps."
+    },
+    {
+      "id": "s55-1",
+      "sceneId": "s55",
+      "text": "Des lilas blancs de cimetière Près de mes tempes ont fleuri; J'aurai bientôt la touffe entière Pour ombrager mon front flétri."
+    },
+    {
+      "id": "s55-2",
+      "sceneId": "s55",
+      "text": "Mon soleil pâli qui décline Va disparaître à l'horizon, Et sur la funèbre colline Je vois ma dernière maison."
+    },
+    {
+      "id": "s55-3",
+      "sceneId": "s55",
+      "text": "Oh! que de votre lèvre il tombe Sur ma lèvre un tardif baiser, Pour que je puisse dans ma tombe, Le coeur tranquille, reposer!"
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "TOURTERELLE"
+    },
+    {
+      "id": "s56-1",
+      "sceneId": "s56",
+      "text": "Plaintive tourterelle, Qui roucoules toujours, Veux-tu prêter ton aile Pour servir mes amours!"
+    },
+    {
+      "id": "s56-2",
+      "sceneId": "s56",
+      "text": "Comme toi, pauvre amante, Bien loin de mon ramier, Je pleure et me lamente Sans pouvoir l'oublier."
+    },
+    {
+      "id": "s56-3",
+      "sceneId": "s56",
+      "text": "Vole et que ton pied rose Sur l'arbre ou sur la tour Jamais ne se repose, Car je languis d'amour."
+    },
+    {
+      "id": "s56-4",
+      "sceneId": "s56",
+      "text": "Évite, ô ma colombe, La halte des palmiers Et tous les toits où tombe La neige des ramiers."
+    },
+    {
+      "id": "s56-5",
+      "sceneId": "s56",
+      "text": "Va droit sur sa fenêtre, Près du palais du roi, Donne-lui cette lettre Et deux baisers pour moi."
+    },
+    {
+      "id": "s56-6",
+      "sceneId": "s56",
+      "text": "Puis sur mon sein en flamme Qui ne peut s'apaiser, Reviens, avec son âme, Reviens te reposer."
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "BONNE SOIRÉE"
+    },
+    {
+      "id": "s57-1",
+      "sceneId": "s57",
+      "text": "Quel temps de chien!--il pleut, il neige Les cochers, transis sur leur siège, Ont le nez bleu. Par ce vilain soir de décembre, Qu'il ferait bon garder la chambre, Devant son feu!"
+    },
+    {
+      "id": "s57-2",
+      "sceneId": "s57",
+      "text": "A l'angle de la cheminée La chauffeuse capitonnée Vous tend les bras Et semble avec une caresse Vous dire comme une maîtresse: «Tu resteras!»"
+    },
+    {
+      "id": "s57-3",
+      "sceneId": "s57",
+      "text": "Un papier rose à découpures, Comme un sein blanc sous des guipures, Voile à demi Le globe laiteux de la lampe Dont le reflet au plafond rampe, Tout endormi."
+    },
+    {
+      "id": "s57-4",
+      "sceneId": "s57",
+      "text": "On n'entend rien dans le silence Que le pendule qui balance Son disque d'or, Et que le vent qui pleure et rôde, Parcourant, pour entrer en fraude, Le corridor."
+    },
+    {
+      "id": "s57-5",
+      "sceneId": "s57",
+      "text": "C'est bal à l'ambassade anglaise; Mon habit noir est sur la chaise, Les bras ballants; Mon gilet bâille et ma chemise Semble dresser, pour être mise, Ses poignets blancs."
+    },
+    {
+      "id": "s57-6",
+      "sceneId": "s57",
+      "text": "Les brodequins à pointe étroite Montrent leur vernis qui miroite, Au feu placés; A côté des minces cravates S'allongent comme des mains plates Les gants glacés."
+    },
+    {
+      "id": "s57-7",
+      "sceneId": "s57",
+      "text": "Il faut sortir!--quelle corvée! Prendre la file à l'arrivée Et suivre au pas Les coupés des beautés altières Portant blasons sur leurs portières Et leurs appas."
+    },
+    {
+      "id": "s57-8",
+      "sceneId": "s57",
+      "text": "Rester debout contre une porte A voir se ruer la cohorte Des invités; Les vieux museaux, les frais visages, Les fracs en coeur et les corsages Décolletés;"
+    },
+    {
+      "id": "s57-9",
+      "sceneId": "s57",
+      "text": "Les dos où fleurit la pustule, Couvrant leur peau rouge d'un tulle Aérien; Les dandys et les diplomates, Sur leurs faces à teintes mates, Ne montrant rien."
+    },
+    {
+      "id": "s57-10",
+      "sceneId": "s57",
+      "text": "Et ne pouvoir franchir la haie Des douairières aux yeux d'orfraie Ou de vautour, Pour aller dire à son oreille Petite, nacrée et vermeille, Un mot d'amour!"
+    },
+    {
+      "id": "s57-11",
+      "sceneId": "s57",
+      "text": "Je n'irai pas!--et ferai mettre Dans son bouquet un bout de lettre, A l'Opéra. Par les violettes de Parme, La mauvaise humeur se désarme: Elle viendra!"
+    },
+    {
+      "id": "s57-12",
+      "sceneId": "s57",
+      "text": "J'ai là l'*Intermezzo* de Heine, Le *Thomas Grain-d'orge* de Taine, Les deux Goncourt, Le temps, jusqu'à l'heure où s'achève Sur l'oreiller l'idée en rêve, Me sera court."
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "Oui, l'oeuvre sort plus belle D'une forme au travail Rebelle, Vers, marbre, onyx, émail."
+    },
+    {
+      "id": "s58-1",
+      "sceneId": "s58",
+      "text": "Point de contraintes fausses! Mais que pour marcher droit Tu chausses, Muse, un cothurne étroit."
+    },
+    {
+      "id": "s58-2",
+      "sceneId": "s58",
+      "text": "Fi du rhythme commode, Comme un soulier trop grand, Du mode Que tout pied quitte et prend!"
+    },
+    {
+      "id": "s58-3",
+      "sceneId": "s58",
+      "text": "Statuaire, repousse L'argile que pétrit Le pouce Quand flotte ailleurs l'esprit,"
+    },
+    {
+      "id": "s58-4",
+      "sceneId": "s58",
+      "text": "Lutte avec le carrare, Avec le paros dur Et rare, Gardiens du contour pur;"
+    },
+    {
+      "id": "s58-5",
+      "sceneId": "s58",
+      "text": "Emprunte à Syracuse Son bronze où fermement S'accuse Le trait fier et charmant;"
+    },
+    {
+      "id": "s58-6",
+      "sceneId": "s58",
+      "text": "D'une main délicate Poursuis dans un filon D'agate Le profil d'Apollon."
+    },
+    {
+      "id": "s58-7",
+      "sceneId": "s58",
+      "text": "Peintre, fuis l'aquarelle, Et fixe la couleur Trop frêle Au four de l'émailleur."
+    },
+    {
+      "id": "s58-8",
+      "sceneId": "s58",
+      "text": "Fais les sirènes bleues, Tordant de cent façons Leurs queues, Les monstres des blasons,"
+    },
+    {
+      "id": "s58-9",
+      "sceneId": "s58",
+      "text": "Dans son nimbe trilobe La Vierge et son Jésus, Le globe Avec la croix dessus."
+    },
+    {
+      "id": "s58-10",
+      "sceneId": "s58",
+      "text": "Tout passe.--L'art robuste Seul a l'éternité, Le buste Survit à la cité."
+    },
+    {
+      "id": "s58-11",
+      "sceneId": "s58",
+      "text": "Et la médaille austère Que trouve un laboureur Sous terre Révèle un empereur."
+    },
+    {
+      "id": "s58-12",
+      "sceneId": "s58",
+      "text": "Les dieux eux-mêmes meurent, Mais les vers souverains Demeurent Plus forts que les airains."
+    },
+    {
+      "id": "s58-13",
+      "sceneId": "s58",
+      "text": "Sculpte, lime, cisèle; Que ton rêve flottant Se scelle Dans le bloc résistant!"
+    },
+    {
+      "id": "s58-14",
+      "sceneId": "s58",
+      "text": "TABLE"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "AFFINITÉS SECRÈTES, madrigal panthéiste 3"
+    },
+    {
+      "id": "s59-1",
+      "sceneId": "s59",
+      "text": "LE POÈME DE LA FEMME, marbre de Paros 7"
+    },
+    {
+      "id": "s59-2",
+      "sceneId": "s59",
+      "text": "ÉTUDE DE MAINS."
+    },
+    {
+      "id": "s59-3",
+      "sceneId": "s59",
+      "text": "I. Impéria 11"
+    },
+    {
+      "id": "s59-4",
+      "sceneId": "s59",
+      "text": "II. Lacenaire 15"
+    },
+    {
+      "id": "s59-5",
+      "sceneId": "s59",
+      "text": "VARIATIONS SUR LE CARNAVAL DE VENISE."
+    },
+    {
+      "id": "s59-6",
+      "sceneId": "s59",
+      "text": "I. Dans la rue 19"
+    },
+    {
+      "id": "s59-7",
+      "sceneId": "s59",
+      "text": "II. Sur les lagunes 23"
+    },
+    {
+      "id": "s59-8",
+      "sceneId": "s59",
+      "text": "III. Carnaval 27"
+    },
+    {
+      "id": "s59-9",
+      "sceneId": "s59",
+      "text": "IV. Clair de lune sentimental 31"
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "NOSTALGIES D'OBÉLISQUES."
+    },
+    {
+      "id": "s60-1",
+      "sceneId": "s60",
+      "text": "I. L'obélisque de Paris 63"
+    },
+    {
+      "id": "s60-2",
+      "sceneId": "s60",
+      "text": "II. L'obélisque de Luxor 67"
+    },
+    {
+      "id": "s60-3",
+      "sceneId": "s60",
+      "text": "VIEUX DE LA VIEILLE, 15 décembre 71"
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "Imp. de Malherbe, 12, passage des Favorites, Paris"
+    },
+    {
+      "id": "s61-1",
+      "sceneId": "s61",
+      "text": "Liste des modifications:"
+    },
+    {
+      "id": "s61-2",
+      "sceneId": "s61",
+      "text": "Page 52: «Touve» remplacé par «Trouve» (Trouve dans sa métamorphose) Page 68: «caparaces» par «carapaces» (Demi-cuits dans leurs carapaces) Page 105: «quelque» par «quelques» (Qui sait?--Après quelques détours) Page 115: «livide» par «livides» (Seulement deux flammes livides) Page 136: «suspens» par «suspends» (Je m'y suspends avec ma griffe) Page 137: «mer» par «mers» (Plaines brunes, pics blancs, mers bleues) Page 142: «chevrotte» par «chevrote» (L'émotion chevrote et tremble) Page 150: «Elle» par «Elles» (Elles se mettent en arrêt.) Page 167: «vielle» par «vieille» (Qu'une vieille au maigre profil) Page 189: «fort» par «forts» (Plus forts que les airains.)"
+    }
+  ]
+}
