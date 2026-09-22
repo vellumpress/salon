@@ -1,0 +1,1641 @@
+{
+  "id": "charmides-and-other-poems",
+  "title": "Charmides, and Other Poems",
+  "author": "Oscar Wilde",
+  "year": "1881",
+  "note": "Project Gutenberg 1031",
+  "minutes": 54,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "London",
+      "place": "London",
+      "reentry": "*This volume was first published in 1913*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "* * * * *",
+      "place": "* * * * *",
+      "reentry": "*Wilde’s Poems*, *a selection of which is given in this volume*, *were first published in volume form in* 1881, *and were reprinted four times before the end of* 1882. *A new Edition with additional poems*, *including Ravenna*, *The Sphinx*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Charmides                                              9",
+      "place": "Charmides                                              9",
+      "reentry": "Requiescat 67 San Miniato 69 Rome Unvisited 71 Humanitad 77 Louis Napoleon 114 Endymion 116 Le Jardin 119 La Mer 120 Le Panneau 121 Les Ballons 124 Canzonet 126 Le Jardin Des Tuileries 129 Pan: Double Villanelle 131 in the Forest 135 Sympho",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Sonnets",
+      "place": "Sonnets",
+      "reentry": "Hélas! 139 to Milton 140 on the Massacre of the Christians in Bulgaria 141 Holy Week At Genoa 142 Urbs Sacra Æterna 143 E Tenebris 144 At Verona 145 on the Sale By Auction of Keats’ Love Letters 146 the New Remorse 147",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "And in the market showed their brown and pictured pottery",
+      "place": "And in the market showed their brown and pictured pottery",
+      "reentry": "II.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Of diamonded mail, and we will mark",
+      "place": "Of diamonded mail, and we will mark",
+      "reentry": "The mullets swimming by the mast of some storm-foundered bark,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Cradled by murmuring halcyons on the rocks",
+      "place": "Cradled by murmuring halcyons on the rocks",
+      "reentry": "Where Proteus in quaint suit of green pastures his monstrous flocks.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "The nightjar shrieks, the fluttering bats repass,",
+      "place": "The nightjar shrieks, the fluttering bats repass,",
+      "reentry": "And the brown stoat with hollow flanks creeps through the dusky grass.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Whom men call Boreas, and I have seen",
+      "place": "Whom men call Boreas, and I have seen",
+      "reentry": "The mocking eyes of Hermes through the poplar’s silvery sheen.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Flown off in search of berried juniper",
+      "place": "Flown off in search of berried juniper",
+      "reentry": "Which most they love; the fretful wasp, that earliest vintager",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "For Cytheræa, the first silky down",
+      "place": "For Cytheræa, the first silky down",
+      "reentry": "Fringes his blushing cheeks, and his young limbs are strong and brown;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "To swim and drown in, the pink clover mead",
+      "place": "To swim and drown in, the pink clover mead",
+      "reentry": "Keeps its sweet store for him, and he can pipe on oaten reed.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Which mocked the midnight with its mimic moons",
+      "place": "Which mocked the midnight with its mimic moons",
+      "reentry": "That did not dread the dawn, and first the thrushes’ rapturous tunes",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Throbbed with the fitful pulse of amorous blood,",
+      "place": "Throbbed with the fitful pulse of amorous blood,",
+      "reentry": "And the wild winds of passion shook my slim stem’s maidenhood.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "She felt his hot breath stir her tangled hair,",
+      "place": "She felt his hot breath stir her tangled hair,",
+      "reentry": "And turned, and looked, and fled no more from such delightful snare.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Steered by a dragon-fly,—be not afraid",
+      "place": "Steered by a dragon-fly,—be not afraid",
+      "reentry": "To leave this wan and wave-kissed shore, surely the place was made",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "And ploughed a bloody furrow with its dart,",
+      "place": "And ploughed a bloody furrow with its dart,",
+      "reentry": "And dug a long red road, and cleft with wingèd death her heart.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "And all the pain of things unsatisfied,",
+      "place": "And all the pain of things unsatisfied,",
+      "reentry": "And the bright drops of crimson youth crept down her throbbing side.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Which not to know is not to live at all,",
+      "place": "Which not to know is not to live at all,",
+      "reentry": "And yet to know is to be held in death’s most deadly thrall.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "She bade her pigeons fold each straining plume,",
+      "place": "She bade her pigeons fold each straining plume,",
+      "reentry": "And dropt to earth, and reached the strand, and saw their dolorous",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "And with the flower’s loosened loneliness",
+      "place": "And with the flower’s loosened loneliness",
+      "reentry": "Strews the brown mould; or as some shepherd lad in wantonness",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Upon the hill Athenian,—alas!",
+      "place": "Upon the hill Athenian,—alas!",
+      "reentry": "That they who loved so well unloved into Death’s house should pass.’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "Till the faint air was troubled with the song",
+      "place": "Till the faint air was troubled with the song",
+      "reentry": "From the wan mouths that call on bleeding Thammuz all night long.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "On the low hills of Paphos, and the Faun",
+      "place": "On the low hills of Paphos, and the Faun",
+      "reentry": "Pipes in the noonday, and the nightingale sings on till dawn.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "And roused the ouzel, or the lizard crept",
+      "place": "And roused the ouzel, or the lizard crept",
+      "reentry": "Athwart the sunny rock, beneath the grass their bodies slept.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "Should beg a guerdon from her pallid Lord,",
+      "place": "Should beg a guerdon from her pallid Lord,",
+      "reentry": "And let Desire pass across dread Charon’s icy ford.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Strewed the dull waters of the dusky stream,",
+      "place": "Strewed the dull waters of the dusky stream,",
+      "reentry": "And watched the white stars founder, and the land was like a dream,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Stole into his, and warm lips timidly",
+      "place": "Stole into his, and warm lips timidly",
+      "reentry": "Brushed his pale cheeks, and breathed their secret forth into a sigh.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "And longing arms around her neck he cast,",
+      "place": "And longing arms around her neck he cast,",
+      "reentry": "And felt her throbbing bosom, and his breath came hot and fast,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "Till thou hast found the old Castalian rill,",
+      "place": "Till thou hast found the old Castalian rill,",
+      "reentry": "Or from the Lesbian waters plucked drowned Sappho’s golden quid!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "Where passion walks with naked unshod feet",
+      "place": "Where passion walks with naked unshod feet",
+      "reentry": "And is not wounded,—ah! enough that once their lips could meet",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Had bade them serve her by the ebon throne",
+      "place": "Had bade them serve her by the ebon throne",
+      "reentry": "Of the pale God who in the fields of Enna loosed her zone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "All my life’s buried here,",
+      "place": "All my life’s buried here,",
+      "reentry": "Heap earth upon it.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "O listen ere the searching sun",
+      "place": "O listen ere the searching sun",
+      "reentry": "Show to the world my sin and shame.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "For, ah! the way is steep and long",
+      "place": "For, ah! the way is steep and long",
+      "reentry": "That leads unto thy sacred street.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "And journeying towards the Tiber mouth",
+      "place": "And journeying towards the Tiber mouth",
+      "reentry": "To kneel again at Fiesole!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "Till from the drear Campagna’s way",
+      "place": "Till from the drear Campagna’s way",
+      "reentry": "The seven hills bear up the dome!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "May free my heart from all its fears,",
+      "place": "May free my heart from all its fears,",
+      "reentry": "And teach my lips a song to sing.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "And called upon the holy name",
+      "place": "And called upon the holy name",
+      "reentry": "Of Him who now doth hide His face.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "Upon the half-thawed snow the bleating sheep",
+      "place": "Upon the half-thawed snow the bleating sheep",
+      "reentry": "Press close against the hurdles, and the shivering house-dogs creep",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "The cawing rooks whirl round the frosted stack,",
+      "place": "The cawing rooks whirl round the frosted stack,",
+      "reentry": "Or crowd the dripping boughs; and in the fen the ice-pools crack",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "And laughs to see the sudden lightening scare",
+      "place": "And laughs to see the sudden lightening scare",
+      "reentry": "His children at their play, and yet,—the spring is in the air;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "The winter’s icy sorrow breaks to tears,",
+      "place": "The winter’s icy sorrow breaks to tears,",
+      "reentry": "And the brown thrushes mate, and with bright eyes the rabbit peers",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "Which the bees know so well, for with it come",
+      "place": "Which the bees know so well, for with it come",
+      "reentry": "Pale boy’s-love, sops-in-wine, and daffadillies all in bloom.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "And violets getting overbold withdraw",
+      "place": "And violets getting overbold withdraw",
+      "reentry": "From their shy nooks, and scarlet berries dot the leafless haw.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "Back to the pasture by the pool, and soon",
+      "place": "Back to the pasture by the pool, and soon",
+      "reentry": "Through the green leaves will float the hum of murmuring bees at noon.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "With mitred dusky leaves will scent the wind,",
+      "place": "With mitred dusky leaves will scent the wind,",
+      "reentry": "And straggling traveller’s-joy each hedge with yellow stars will bind.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "By every forest idyll;—do I change?",
+      "place": "By every forest idyll;—do I change?",
+      "reentry": "Or rather doth some evil thing through thy fair pleasaunce range?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "The chariot wheels of passion sweep too near,",
+      "place": "The chariot wheels of passion sweep too near,",
+      "reentry": "Hence! Hence! I pass unto a life more barren, more austere.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "Like Æschylos at well-fought Marathon,",
+      "place": "Like Æschylos at well-fought Marathon,",
+      "reentry": "And died to show that Milton’s England still could bear a son!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "Self-poised, self-centred, and self-comforted,",
+      "place": "Self-poised, self-centred, and self-comforted,",
+      "reentry": "To watch the world’s vain phantasies go by with unbowed head.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "And pitched his tent upon the reedy shore,",
+      "place": "And pitched his tent upon the reedy shore,",
+      "reentry": "And stayed two days to wonder, and then crept at midnight o’er",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "Where love and duty mingle!  Him at least",
+      "place": "Where love and duty mingle!  Him at least",
+      "reentry": "The most high Laws were glad of, he had sat at Wisdom’s feast;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "Which we ourselves have blunted, what man now",
+      "place": "Which we ourselves have blunted, what man now",
+      "reentry": "Shall scale the august ancient heights and to old Reverence bow?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "And deck the marble tomb wherein he lies",
+      "place": "And deck the marble tomb wherein he lies",
+      "reentry": "Whose soul is as some mighty orb unseen of mortal eyes;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "While as a ruined mother in some spasm",
+      "place": "While as a ruined mother in some spasm",
+      "reentry": "Bears a base child and loathes it, so our best enthusiasm",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "To draw from actual reed? ah! where is now",
+      "place": "To draw from actual reed? ah! where is now",
+      "reentry": "The cunning hand which made the flowering hawthorn branches bow",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "Weave the same tapestry of green and grey:",
+      "place": "Weave the same tapestry of green and grey:",
+      "reentry": "The unchanged hills are with us: but that Spirit hath passed away.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "And balanced symmetry of what in man",
+      "place": "And balanced symmetry of what in man",
+      "reentry": "Would else wage ceaseless warfare,—this at least within the span",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "Would walk ashamed of his adulteries,",
+      "place": "Would walk ashamed of his adulteries,",
+      "reentry": "And Passion creep from out the House of Lust with startled eyes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "And more exultant power,—this indeed",
+      "place": "And more exultant power,—this indeed",
+      "reentry": "Could we but reach it were to find the last, the perfect creed.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "And we were vain and ignorant nor knew",
+      "place": "And we were vain and ignorant nor knew",
+      "reentry": "That when we stabbed thy heart it was our own real hearts we slew.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "Till the suns met in heaven and began",
+      "place": "Till the suns met in heaven and began",
+      "reentry": "Their cycles, and the morning stars sang, and the Word was Man!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "No need have we of hyssop-laden rod,",
+      "place": "No need have we of hyssop-laden rod,",
+      "reentry": "That which is purely human, that is godlike, that is God.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "And that the giant wave Democracy",
+      "place": "And that the giant wave Democracy",
+      "reentry": "Breaks on the shores where Kings lay couched at ease.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "I know he will come back to me",
+      "place": "I know he will come back to me",
+      "reentry": "O rising moon! O Lady moon! Be you my lover’s sentinel,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "And he is soft as any dove,",
+      "place": "And he is soft as any dove,",
+      "reentry": "And brown and curly is his hair.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "Tell him that I am waiting where",
+      "place": "Tell him that I am waiting where",
+      "reentry": "The rushlight glimmers in the Farm.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "Ah! thou hast young Endymion",
+      "place": "Ah! thou hast young Endymion",
+      "reentry": "Thou hast the lips that should be kissed!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "The roses lie upon the grass",
+      "place": "The roses lie upon the grass",
+      "reentry": "Like little shreds of crimson silk.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "For the thin threads of yellow foam",
+      "place": "For the thin threads of yellow foam",
+      "reentry": "Float on the waves like ravelled lace.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "There stands a little ivory girl",
+      "place": "There stands a little ivory girl",
+      "reentry": "Under the rose-tree’s dancing shade.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "Wandering opals keeping tryst",
+      "place": "Wandering opals keeping tryst",
+      "reentry": "With the rubies of the lime.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "Yet woodland girls",
+      "place": "Yet woodland girls",
+      "reentry": "Have loved the shepherd’s note.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "Silver and still",
+      "place": "Silver and still",
+      "reentry": "Sinks the sad autumn day.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "Though it be winter I would break",
+      "place": "Though it be winter I would break",
+      "reentry": "Into spring blossoms white and blue!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "I",
+      "place": "I",
+      "reentry": "O Goat-Foot God of Arcady!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "This modern world is grey and old,",
+      "place": "This modern world is grey and old,",
+      "reentry": "And what remains to us of thee?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "Throw apples at thy wattled fold,",
+      "place": "Throw apples at thy wattled fold,",
+      "reentry": "O goat-foot God of Arcady!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "Thy soft brown limbs, thy beard of gold",
+      "place": "Thy soft brown limbs, thy beard of gold",
+      "reentry": "And what remains to us of thee?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "O goat-foot God of Arcady!",
+      "place": "O goat-foot God of Arcady!",
+      "reentry": "Ah, what remains to us of thee?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "For Faun and nymph are old and grey,",
+      "place": "For Faun and nymph are old and grey,",
+      "reentry": "Ah, leave the hills of Arcady!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "Lit grave-browed Milton on his way,",
+      "place": "Lit grave-browed Milton on his way,",
+      "reentry": "This modern world hath need of thee!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "Where gentle Sidney saw the day,",
+      "place": "Where gentle Sidney saw the day,",
+      "reentry": "Ah, leave the hills of Arcady!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "Ah, leave the hills of Arcady!",
+      "place": "Ah, leave the hills of Arcady!",
+      "reentry": "This modern world hath need of thee!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "Else moonstruck with music and madness",
+      "place": "Else moonstruck with music and madness",
+      "reentry": "I track him in vain!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "And at my feet the pale green Thames",
+      "place": "And at my feet the pale green Thames",
+      "reentry": "Lies like a rod of rippled jade.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "I did but touch the honey of romance—",
+      "place": "I did but touch the honey of romance—",
+      "reentry": "And must I lose a soul’s inheritance?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "Which bare a triple empire in her hand",
+      "place": "Which bare a triple empire in her hand",
+      "reentry": "When Cromwell spake the word Democracy!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "Come down, O Son of Man! and show Thy might",
+      "place": "Come down, O Son of Man! and show Thy might",
+      "reentry": "Lest Mahomet be crowned instead of Thee!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "Had drowned all memory of Thy bitter pain,",
+      "place": "Had drowned all memory of Thy bitter pain,",
+      "reentry": "The Cross, the Crown, the Soldiers and the Spear.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "When pilgrims kneel before the Holy One,",
+      "place": "When pilgrims kneel before the Holy One,",
+      "reentry": "The prisoned shepherd of the Church of God. Montre Mario",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "The feet of brass, the robe more white than flame,",
+      "place": "The feet of brass, the robe more white than flame,",
+      "reentry": "The wounded hands, the weary human face.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "I do possess what none can take away,",
+      "place": "I do possess what none can take away,",
+      "reentry": "My love and all the glory of the stars.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "Dice for the garments of a wretched man,",
+      "place": "Dice for the garments of a wretched man,",
+      "reentry": "Not knowing the God’s wonder, or His woe?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "The yet unravished roses of thy mouth,",
+      "place": "The yet unravished roses of thy mouth,",
+      "reentry": "And I shall weep and worship, as before.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "*This volume was first published in 1913*"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "*Wilde’s Poems*, *a selection of which is given in this volume*, *were first published in volume form in* 1881, *and were reprinted four times before the end of* 1882. *A new Edition with additional poems*, *including Ravenna*, *The Sphinx*, *and The Ballad of Reading Goal*, *was first published* (*limited issues on hand-made paper and Japanese vellum*) *by Methuen & Co. in March* 1908. *A further Edition* (*making the seventh*) *with some omissions from the issue of* 1908, *but including two new poems*, *was published in September*, 1909. *Eighth Edition*, *November* 1909. *Ninth Edition*, *December* 1909. *Tenth Edition*, *December* 1910. *Eleventh Edition*, *December*, 1911. *Twelfth Edition*, *May*, 1913."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "*A further selection of the poems*, *including The Ballad of Reading Gaol*, *is published uniform with this volume*."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Contents"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Requiescat 67 San Miniato 69 Rome Unvisited 71 Humanitad 77 Louis Napoleon 114 Endymion 116 Le Jardin 119 La Mer 120 Le Panneau 121 Les Ballons 124 Canzonet 126 Le Jardin Des Tuileries 129 Pan: Double Villanelle 131 in the Forest 135 Symphony in Yellow 136"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Hélas! 139 to Milton 140 on the Massacre of the Christians in Bulgaria 141 Holy Week At Genoa 142 Urbs Sacra Æterna 143 E Tenebris 144 At Verona 145 on the Sale By Auction of Keats’ Love Letters 146 the New Remorse 147"
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Charmides"
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "I."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "HE was a Grecian lad, who coming home With pulpy figs and wine from Sicily Stood at his galley’s prow, and let the foam Blow through his crisp brown curls unconsciously, And holding wave and wind in boy’s despite Peered from his dripping seat across the wet and stormy night."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Till with the dawn he saw a burnished spear Like a thin thread of gold against the sky, And hoisted sail, and strained the creaking gear, And bade the pilot head her lustily Against the nor’west gale, and all day long Held on his way, and marked the rowers’ time with measured song."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "And when the faint Corinthian hills were red Dropped anchor in a little sandy bay, And with fresh boughs of olive crowned his head, And brushed from cheek and throat the hoary spray, And washed his limbs with oil, and from the hold Brought out his linen tunic and his sandals brazen-soled,"
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "And a rich robe stained with the fishers’ juice Which of some swarthy trader he had bought Upon the sunny quay at Syracuse, And was with Tyrian broideries inwrought, And by the questioning merchants made his way Up through the soft and silver woods, and when the labouring day"
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "Had spun its tangled web of crimson cloud, Clomb the high hill, and with swift silent feet Crept to the fane unnoticed by the crowd Of busy priests, and from some dark retreat Watched the young swains his frolic playmates bring The firstling of their little flock, and the shy shepherd fling"
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "The crackling salt upon the flame, or hang His studded crook against the temple wall To Her who keeps away the ravenous fang Of the base wolf from homestead and from stall; And then the clear-voiced maidens ’gan to sing, And to the altar each man brought some goodly offering,"
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "A beechen cup brimming with milky foam, A fair cloth wrought with cunning imagery Of hounds in chase, a waxen honey-comb Dripping with oozy gold which scarce the bee Had ceased from building, a black skin of oil Meet for the wrestlers, a great boar the fierce and white-tusked spoil"
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "Stolen from Artemis that jealous maid To please Athena, and the dappled hide Of a tall stag who in some mountain glade Had met the shaft; and then the herald cried, And from the pillared precinct one by one Went the glad Greeks well pleased that they their simple vows had done."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "And the old priest put out the waning fires Save that one lamp whose restless ruby glowed For ever in the cell, and the shrill lyres Came fainter on the wind, as down the road In joyous dance these country folk did pass, And with stout hands the warder closed the gates of polished brass."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "Long time he lay and hardly dared to breathe, And heard the cadenced drip of spilt-out wine, And the rose-petals falling from the wreath As the night breezes wandered through the shrine, And seemed to be in some entrancèd swoon Till through the open roof above the full and brimming moon"
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "Flooded with sheeny waves the marble floor, When from his nook up leapt the venturous lad, And flinging wide the cedar-carven door Beheld an awful image saffron-clad And armed for battle! the gaunt Griffin glared From the huge helm, and the long lance of wreck and ruin flared"
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "Like a red rod of flame, stony and steeled The Gorgon’s head its leaden eyeballs rolled, And writhed its snaky horrors through the shield, And gaped aghast with bloodless lips and cold In passion impotent, while with blind gaze The blinking owl between the feet hooted in shrill amaze."
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "The lonely fisher as he trimmed his lamp Far out at sea off Sunium, or cast The net for tunnies, heard a brazen tramp Of horses smite the waves, and a wild blast Divide the folded curtains of the night, And knelt upon the little poop, and prayed in holy fright."
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "And guilty lovers in their venery Forgat a little while their stolen sweets, Deeming they heard dread Dian’s bitter cry; And the grim watchmen on their lofty seats Ran to their shields in haste precipitate, Or strained black-bearded throats across the dusky parapet."
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "For round the temple rolled the clang of arms, And the twelve Gods leapt up in marble fear, And the air quaked with dissonant alarums Till huge Poseidon shook his mighty spear, And on the frieze the prancing horses neighed, And the low tread of hurrying feet rang from the cavalcade."
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "Ready for death with parted lips he stood, And well content at such a price to see That calm wide brow, that terrible maidenhood, The marvel of that pitiless chastity, Ah! well content indeed, for never wight Since Troy’s young shepherd prince had seen so wonderful a sight."
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "Ready for death he stood, but lo! the air Grew silent, and the horses ceased to neigh, And off his brow he tossed the clustering hair, And from his limbs he throw the cloak away; For whom would not such love make desperate? And nigher came, and touched her throat, and with hands violate"
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "Undid the cuirass, and the crocus gown, And bared the breasts of polished ivory, Till from the waist the peplos falling down Left visible the secret mystery Which to no lover will Athena show, The grand cool flanks, the crescent thighs, the bossy hills of snow."
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "Those who have never known a lover’s sin Let them not read my ditty, it will be To their dull ears so musicless and thin That they will have no joy of it, but ye To whose wan cheeks now creeps the lingering smile, Ye who have learned who Eros is,—O listen yet awhile."
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "A little space he let his greedy eyes Rest on the burnished image, till mere sight Half swooned for surfeit of such luxuries, And then his lips in hungering delight Fed on her lips, and round the towered neck He flung his arms, nor cared at all his passion’s will to check."
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "Never I ween did lover hold such tryst, For all night long he murmured honeyed word, And saw her sweet unravished limbs, and kissed Her pale and argent body undisturbed, And paddled with the polished throat, and pressed His hot and beating heart upon her chill and icy breast."
+    },
+    {
+      "id": "s3-24",
+      "sceneId": "s3",
+      "text": "It was as if Numidian javelins Pierced through and through his wild and whirling brain, And his nerves thrilled like throbbing violins In exquisite pulsation, and the pain Was such sweet anguish that he never drew His lips from hers till overhead the lark of warning flew."
+    },
+    {
+      "id": "s3-25",
+      "sceneId": "s3",
+      "text": "They who have never seen the daylight peer Into a darkened room, and drawn the curtain, And with dull eyes and wearied from some dear And worshipped body risen, they for certain Will never know of what I try to sing, How long the last kiss was, how fond and late his lingering."
+    },
+    {
+      "id": "s3-26",
+      "sceneId": "s3",
+      "text": "The moon was girdled with a crystal rim, The sign which shipmen say is ominous Of wrath in heaven, the wan stars were dim, And the low lightening east was tremulous With the faint fluttering wings of flying dawn, Ere from the silent sombre shrine his lover had withdrawn."
+    },
+    {
+      "id": "s3-27",
+      "sceneId": "s3",
+      "text": "Down the steep rock with hurried feet and fast Clomb the brave lad, and reached the cave of Pan, And heard the goat-foot snoring as he passed, And leapt upon a grassy knoll and ran Like a young fawn unto an olive wood Which in a shady valley by the well-built city stood;"
+    },
+    {
+      "id": "s3-28",
+      "sceneId": "s3",
+      "text": "And sought a little stream, which well he knew, For oftentimes with boyish careless shout The green and crested grebe he would pursue, Or snare in woven net the silver trout, And down amid the startled reeds he lay Panting in breathless sweet affright, and waited for the day."
+    },
+    {
+      "id": "s3-29",
+      "sceneId": "s3",
+      "text": "On the green bank he lay, and let one hand Dip in the cool dark eddies listlessly, And soon the breath of morning came and fanned His hot flushed cheeks, or lifted wantonly The tangled curls from off his forehead, while He on the running water gazed with strange and secret smile."
+    },
+    {
+      "id": "s3-30",
+      "sceneId": "s3",
+      "text": "And soon the shepherd in rough woollen cloak With his long crook undid the wattled cotes, And from the stack a thin blue wreath of smoke Curled through the air across the ripening oats, And on the hill the yellow house-dog bayed As through the crisp and rustling fern the heavy cattle strayed."
+    },
+    {
+      "id": "s3-31",
+      "sceneId": "s3",
+      "text": "And when the light-foot mower went afield Across the meadows laced with threaded dew, And the sheep bleated on the misty weald, And from its nest the waking corncrake flew, Some woodmen saw him lying by the stream And marvelled much that any lad so beautiful could seem,"
+    },
+    {
+      "id": "s3-32",
+      "sceneId": "s3",
+      "text": "Nor deemed him born of mortals, and one said, ‘It is young Hylas, that false runaway Who with a Naiad now would make his bed Forgetting Herakles,’ but others, ‘Nay, It is Narcissus, his own paramour, Those are the fond and crimson lips no woman can allure.’"
+    },
+    {
+      "id": "s3-33",
+      "sceneId": "s3",
+      "text": "And when they nearer came a third one cried, ‘It is young Dionysos who has hid His spear and fawnskin by the river side Weary of hunting with the Bassarid, And wise indeed were we away to fly: They live not long who on the gods immortal come to spy.’"
+    },
+    {
+      "id": "s3-34",
+      "sceneId": "s3",
+      "text": "So turned they back, and feared to look behind, And told the timid swain how they had seen Amid the reeds some woodland god reclined, And no man dared to cross the open green, And on that day no olive-tree was slain, Nor rushes cut, but all deserted was the fair domain,"
+    },
+    {
+      "id": "s3-35",
+      "sceneId": "s3",
+      "text": "Save when the neat-herd’s lad, his empty pail Well slung upon his back, with leap and bound Raced on the other side, and stopped to hail, Hoping that he some comrade new had found, And gat no answer, and then half afraid Passed on his simple way, or down the still and silent glade"
+    },
+    {
+      "id": "s3-36",
+      "sceneId": "s3",
+      "text": "A little girl ran laughing from the farm, Not thinking of love’s secret mysteries, And when she saw the white and gleaming arm And all his manlihood, with longing eyes Whose passion mocked her sweet virginity Watched him awhile, and then stole back sadly and wearily."
+    },
+    {
+      "id": "s3-37",
+      "sceneId": "s3",
+      "text": "Far off he heard the city’s hum and noise, And now and then the shriller laughter where The passionate purity of brown-limbed boys Wrestled or raced in the clear healthful air, And now and then a little tinkling bell As the shorn wether led the sheep down to the mossy well."
+    },
+    {
+      "id": "s3-38",
+      "sceneId": "s3",
+      "text": "Through the grey willows danced the fretful gnat, The grasshopper chirped idly from the tree, In sleek and oily coat the water-rat Breasting the little ripples manfully Made for the wild-duck’s nest, from bough to bough Hopped the shy finch, and the huge tortoise crept across the slough."
+    },
+    {
+      "id": "s3-39",
+      "sceneId": "s3",
+      "text": "On the faint wind floated the silky seeds As the bright scythe swept through the waving grass, The ouzel-cock splashed circles in the reeds And flecked with silver whorls the forest’s glass, Which scarce had caught again its imagery Ere from its bed the dusky tench leapt at the dragon-fly."
+    },
+    {
+      "id": "s3-40",
+      "sceneId": "s3",
+      "text": "But little care had he for any thing Though up and down the beech the squirrel played, And from the copse the linnet ’gan to sing To its brown mate its sweetest serenade; Ah! little care indeed, for he had seen The breasts of Pallas and the naked wonder of the Queen."
+    },
+    {
+      "id": "s3-41",
+      "sceneId": "s3",
+      "text": "But when the herdsman called his straggling goats With whistling pipe across the rocky road, And the shard-beetle with its trumpet-notes Boomed through the darkening woods, and seemed to bode Of coming storm, and the belated crane Passed homeward like a shadow, and the dull big drops of rain"
+    },
+    {
+      "id": "s3-42",
+      "sceneId": "s3",
+      "text": "Fell on the pattering fig-leaves, up he rose, And from the gloomy forest went his way Past sombre homestead and wet orchard-close, And came at last unto a little quay, And called his mates aboard, and took his seat On the high poop, and pushed from land, and loosed the dripping sheet,"
+    },
+    {
+      "id": "s3-43",
+      "sceneId": "s3",
+      "text": "And steered across the bay, and when nine suns Passed down the long and laddered way of gold, And nine pale moons had breathed their orisons To the chaste stars their confessors, or told Their dearest secret to the downy moth That will not fly at noonday, through the foam and surging froth"
+    },
+    {
+      "id": "s3-44",
+      "sceneId": "s3",
+      "text": "Came a great owl with yellow sulphurous eyes And lit upon the ship, whose timbers creaked As though the lading of three argosies Were in the hold, and flapped its wings and shrieked, And darkness straightway stole across the deep, Sheathed was Orion’s sword, dread Mars himself fled down the steep,"
+    },
+    {
+      "id": "s3-45",
+      "sceneId": "s3",
+      "text": "And the moon hid behind a tawny mask Of drifting cloud, and from the ocean’s marge Rose the red plume, the huge and hornèd casque, The seven-cubit spear, the brazen targe! And clad in bright and burnished panoply Athena strode across the stretch of sick and shivering sea!"
+    },
+    {
+      "id": "s3-46",
+      "sceneId": "s3",
+      "text": "To the dull sailors’ sight her loosened looks Seemed like the jagged storm-rack, and her feet Only the spume that floats on hidden rocks, And, marking how the rising waters beat Against the rolling ship, the pilot cried To the young helmsman at the stern to luff to windward side"
+    },
+    {
+      "id": "s3-47",
+      "sceneId": "s3",
+      "text": "But he, the overbold adulterer, A dear profaner of great mysteries, An ardent amorous idolater, When he beheld those grand relentless eyes Laughed loud for joy, and crying out ‘I come’ Leapt from the lofty poop into the chill and churning foam."
+    },
+    {
+      "id": "s3-48",
+      "sceneId": "s3",
+      "text": "Then fell from the high heaven one bright star, One dancer left the circling galaxy, And back to Athens on her clattering car In all the pride of venged divinity Pale Pallas swept with shrill and steely clank, And a few gurgling bubbles rose where her boy lover sank."
+    },
+    {
+      "id": "s3-49",
+      "sceneId": "s3",
+      "text": "And the mast shuddered as the gaunt owl flew With mocking hoots after the wrathful Queen, And the old pilot bade the trembling crew Hoist the big sail, and told how he had seen Close to the stern a dim and giant form, And like a dipping swallow the stout ship dashed through the storm."
+    },
+    {
+      "id": "s3-50",
+      "sceneId": "s3",
+      "text": "And no man dared to speak of Charmides"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "II."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "BUT some good Triton-god had ruth, and bare The boy’s drowned body back to Grecian land, And mermaids combed his dank and dripping hair And smoothed his brow, and loosed his clenching hand; Some brought sweet spices from far Araby, And others bade the halcyon sing her softest lullaby."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "And when he neared his old Athenian home, A mighty billow rose up suddenly Upon whose oily back the clotted foam Lay diapered in some strange fantasy, And clasping him unto its glassy breast Swept landward, like a white-maned steed upon a venturous quest!"
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Now where Colonos leans unto the sea There lies a long and level stretch of lawn; The rabbit knows it, and the mountain bee For it deserts Hymettus, and the Faun Is not afraid, for never through the day Comes a cry ruder than the shout of shepherd lads at play."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "But often from the thorny labyrinth And tangled branches of the circling wood The stealthy hunter sees young Hyacinth Hurling the polished disk, and draws his hood Over his guilty gaze, and creeps away, Nor dares to wind his horn, or—else at the first break of day"
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "The Dryads come and throw the leathern ball Along the reedy shore, and circumvent Some goat-eared Pan to be their seneschal For fear of bold Poseidon’s ravishment, And loose their girdles, with shy timorous eyes, Lest from the surf his azure arms and purple beard should rise."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "On this side and on that a rocky cave, Hung with the yellow-belled laburnum, stands Smooth is the beach, save where some ebbing wave Leaves its faint outline etched upon the sands, As though it feared to be too soon forgot By the green rush, its playfellow,—and yet, it is a spot"
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "So small, that the inconstant butterfly Could steal the hoarded money from each flower Ere it was noon, and still not satisfy Its over-greedy love,—within an hour A sailor boy, were he but rude enow To land and pluck a garland for his galley’s painted prow,"
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "Would almost leave the little meadow bare, For it knows nothing of great pageantry, Only a few narcissi here and there Stand separate in sweet austerity, Dotting the unmown grass with silver stars, And here and there a daffodil waves tiny scimitars."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "Hither the billow brought him, and was glad Of such dear servitude, and where the land Was virgin of all waters laid the lad Upon the golden margent of the strand, And like a lingering lover oft returned To kiss those pallid limbs which once with intense fire burned,"
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "Ere the wet seas had quenched that holocaust, That self-fed flame, that passionate lustihead, Ere grisly death with chill and nipping frost Had withered up those lilies white and red Which, while the boy would through the forest range, Answered each other in a sweet antiphonal counter-change."
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "And when at dawn the wood-nymphs, hand-in-hand, Threaded the bosky dell, their satyr spied The boy’s pale body stretched upon the sand, And feared Poseidon’s treachery, and cried, And like bright sunbeams flitting through a glade Each startled Dryad sought some safe and leafy ambuscade."
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "Save one white girl, who deemed it would not be So dread a thing to feel a sea-god’s arms Crushing her breasts in amorous tyranny, And longed to listen to those subtle charms Insidious lovers weave when they would win Some fencèd fortress, and stole back again, nor thought it sin"
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "To yield her treasure unto one so fair, And lay beside him, thirsty with love’s drouth, Called him soft names, played with his tangled hair, And with hot lips made havoc of his mouth Afraid he might not wake, and then afraid Lest he might wake too soon, fled back, and then, fond renegade,"
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "Returned to fresh assault, and all day long Sat at his side, and laughed at her new toy, And held his hand, and sang her sweetest song, Then frowned to see how froward was the boy Who would not with her maidenhood entwine, Nor knew that three days since his eyes had looked on Proserpine;"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "The mullets swimming by the mast of some storm-foundered bark,"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Where Proteus in quaint suit of green pastures his monstrous flocks."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "And the brown stoat with hollow flanks creeps through the dusky grass."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "The mocking eyes of Hermes through the poplar’s silvery sheen."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Which most they love; the fretful wasp, that earliest vintager"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Fringes his blushing cheeks, and his young limbs are strong and brown;"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Keeps its sweet store for him, and he can pipe on oaten reed."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "That did not dread the dawn, and first the thrushes’ rapturous tunes"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "And the wild winds of passion shook my slim stem’s maidenhood."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "And turned, and looked, and fled no more from such delightful snare."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "To leave this wan and wave-kissed shore, surely the place was made"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "And dug a long red road, and cleft with wingèd death her heart."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "And the bright drops of crimson youth crept down her throbbing side."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "And yet to know is to be held in death’s most deadly thrall."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "And dropt to earth, and reached the strand, and saw their dolorous"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Strews the brown mould; or as some shepherd lad in wantonness"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "That they who loved so well unloved into Death’s house should pass.’"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "From the wan mouths that call on bleeding Thammuz all night long."
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "Pipes in the noonday, and the nightingale sings on till dawn."
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "Athwart the sunny rock, beneath the grass their bodies slept."
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "And let Desire pass across dread Charon’s icy ford."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "And watched the white stars founder, and the land was like a dream,"
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Brushed his pale cheeks, and breathed their secret forth into a sigh."
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "And felt her throbbing bosom, and his breath came hot and fast,"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "Or from the Lesbian waters plucked drowned Sappho’s golden quid!"
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "And is not wounded,—ah! enough that once their lips could meet"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "Of the pale God who in the fields of Enna loosed her zone."
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "Poems"
+    },
+    {
+      "id": "s31-2",
+      "sceneId": "s31",
+      "text": "Requiescat"
+    },
+    {
+      "id": "s31-3",
+      "sceneId": "s31",
+      "text": "Tread lightly, she is near Under the snow, Speak gently, she can hear The daisies grow."
+    },
+    {
+      "id": "s31-4",
+      "sceneId": "s31",
+      "text": "All her bright golden hair Tarnished with rust, She that was young and fair Fallen to dust."
+    },
+    {
+      "id": "s31-5",
+      "sceneId": "s31",
+      "text": "Lily-like, white as snow, She hardly knew She was a woman, so Sweetly she grew."
+    },
+    {
+      "id": "s31-6",
+      "sceneId": "s31",
+      "text": "Coffin-board, heavy stone, Lie on her breast, I vex my heart alone,"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "Heap earth upon it."
+    },
+    {
+      "id": "s32-1",
+      "sceneId": "s32",
+      "text": "Avignon"
+    },
+    {
+      "id": "s32-2",
+      "sceneId": "s32",
+      "text": "SAN Miniato"
+    },
+    {
+      "id": "s32-3",
+      "sceneId": "s32",
+      "text": "SEE, I have climbed the mountain side Up to this holy house of God,"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "Show to the world my sin and shame."
+    },
+    {
+      "id": "s33-1",
+      "sceneId": "s33",
+      "text": "Rome Unvisited"
+    },
+    {
+      "id": "s33-2",
+      "sceneId": "s33",
+      "text": "I."
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "That leads unto thy sacred street."
+    },
+    {
+      "id": "s34-1",
+      "sceneId": "s34",
+      "text": "II."
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "To kneel again at Fiesole!"
+    },
+    {
+      "id": "s35-1",
+      "sceneId": "s35",
+      "text": "And wandering through the tangled pines That break the gold of Arno’s stream, To see the purple mist and gleam"
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "The seven hills bear up the dome!"
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "And teach my lips a song to sing."
+    },
+    {
+      "id": "s37-1",
+      "sceneId": "s37",
+      "text": "Before yon field of trembling gold Is garnered into dusty sheaves, Or ere the autumn’s scarlet leaves"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "Of Him who now doth hide His face."
+    },
+    {
+      "id": "s38-1",
+      "sceneId": "s38",
+      "text": "Arona"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "Press close against the hurdles, and the shivering house-dogs creep"
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "Or crowd the dripping boughs; and in the fen the ice-pools crack"
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "His children at their play, and yet,—the spring is in the air;"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "And the brown thrushes mate, and with bright eyes the rabbit peers"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "Pale boy’s-love, sops-in-wine, and daffadillies all in bloom."
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "From their shy nooks, and scarlet berries dot the leafless haw."
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "Through the green leaves will float the hum of murmuring bees at noon."
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "And straggling traveller’s-joy each hedge with yellow stars will bind."
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "Or rather doth some evil thing through thy fair pleasaunce range?"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "Hence! Hence! I pass unto a life more barren, more austere."
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "And died to show that Milton’s England still could bear a son!"
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "To watch the world’s vain phantasies go by with unbowed head."
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "And stayed two days to wonder, and then crept at midnight o’er"
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "The most high Laws were glad of, he had sat at Wisdom’s feast;"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "Shall scale the august ancient heights and to old Reverence bow?"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "Whose soul is as some mighty orb unseen of mortal eyes;"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "Bears a base child and loathes it, so our best enthusiasm"
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "The cunning hand which made the flowering hawthorn branches bow"
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "The unchanged hills are with us: but that Spirit hath passed away."
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "Would else wage ceaseless warfare,—this at least within the span"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "And Passion creep from out the House of Lust with startled eyes."
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "Could we but reach it were to find the last, the perfect creed."
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "That when we stabbed thy heart it was our own real hearts we slew."
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "Their cycles, and the morning stars sang, and the Word was Man!"
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "That which is purely human, that is godlike, that is God."
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "Breaks on the shores where Kings lay couched at ease."
+    },
+    {
+      "id": "s64-1",
+      "sceneId": "s64",
+      "text": "Endymion (FOR Music)"
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "O rising moon! O Lady moon! Be you my lover’s sentinel,"
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "And brown and curly is his hair."
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "The rushlight glimmers in the Farm."
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "Thou hast the lips that should be kissed!"
+    },
+    {
+      "id": "s68-1",
+      "sceneId": "s68",
+      "text": "LE Jardin"
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "Like little shreds of crimson silk."
+    },
+    {
+      "id": "s69-1",
+      "sceneId": "s69",
+      "text": "LA MER"
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "Float on the waves like ravelled lace."
+    },
+    {
+      "id": "s70-1",
+      "sceneId": "s70",
+      "text": "LE Panneau"
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "Under the rose-tree’s dancing shade."
+    },
+    {
+      "id": "s71-1",
+      "sceneId": "s71",
+      "text": "LES Ballons"
+    },
+    {
+      "id": "s71-2",
+      "sceneId": "s71",
+      "text": "Against these turbid turquoise skies The light and luminous balloons Dip and drift like satin moons"
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "With the rubies of the lime."
+    },
+    {
+      "id": "s72-1",
+      "sceneId": "s72",
+      "text": "Canzonet"
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "Have loved the shepherd’s note."
+    },
+    {
+      "id": "s73-1",
+      "sceneId": "s73",
+      "text": "Then pluck a reed And bid me sing to thee,"
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "Sinks the sad autumn day."
+    },
+    {
+      "id": "s74-1",
+      "sceneId": "s74",
+      "text": "LE Jardin DES Tuileries"
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "Into spring blossoms white and blue!"
+    },
+    {
+      "id": "s75-1",
+      "sceneId": "s75",
+      "text": "PAN"
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "O Goat-Foot God of Arcady!"
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "And what remains to us of thee?"
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "O goat-foot God of Arcady!"
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "And what remains to us of thee?"
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "Ah, what remains to us of thee?"
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "Ah, leave the hills of Arcady!"
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "This modern world hath need of thee!"
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "Ah, leave the hills of Arcady!"
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "This modern world hath need of thee!"
+    },
+    {
+      "id": "s84-1",
+      "sceneId": "s84",
+      "text": "IN THE Forest"
+    },
+    {
+      "id": "s84-2",
+      "sceneId": "s84",
+      "text": "OUT of the mid-wood’s twilight Into the meadow’s dawn, Ivory limbed and brown-eyed, Flashes my Faun!"
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "I track him in vain!"
+    },
+    {
+      "id": "s85-1",
+      "sceneId": "s85",
+      "text": "Symphony IN Yellow"
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "Lies like a rod of rippled jade."
+    },
+    {
+      "id": "s86-1",
+      "sceneId": "s86",
+      "text": "Sonnets"
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "And must I lose a soul’s inheritance?"
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "When Cromwell spake the word Democracy!"
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "Lest Mahomet be crowned instead of Thee!"
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "The Cross, the Crown, the Soldiers and the Spear."
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "The prisoned shepherd of the Church of God. Montre Mario"
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "The wounded hands, the weary human face."
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "My love and all the glory of the stars."
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "Not knowing the God’s wonder, or His woe?"
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "And I shall weep and worship, as before."
+    }
+  ]
+}

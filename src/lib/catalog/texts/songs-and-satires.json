@@ -1,0 +1,2650 @@
+{
+  "id": "songs-and-satires",
+  "title": "Songs and Satires",
+  "author": "Edgar Lee Masters",
+  "year": "1916",
+  "note": "Project Gutenberg 36149",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "File was produced from images generously made available",
+      "place": "File was produced from images generously made available",
+      "reentry": "by The Internet Archive/Canadian Libraries)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Melbourne",
+      "place": "Melbourne",
+      "reentry": "The Macmillan Co. of Canada, Ltd. Toronto",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Author Of",
+      "place": "Author Of",
+      "reentry": "\"Spoon River Anthology\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "New York",
+      "place": "New York",
+      "reentry": "THE Macmillan Company",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "1916",
+      "place": "1916",
+      "reentry": "*All rights reserved*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "By the Macmillan Company",
+      "place": "By the Macmillan Company",
+      "reentry": "Set up and electrotyped. Published March, 1916. Reprinted March, June, 1916.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "J. S. Cushing Co.--Berwick & Smith Co",
+      "place": "J. S. Cushing Co.--Berwick & Smith Co",
+      "reentry": "Norwood, Mass., U.S.A",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Silence                            1",
+      "place": "Silence                            1",
+      "reentry": "St. Francis and Lady Clare 4",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Their silence shall be interpreted",
+      "place": "Their silence shall be interpreted",
+      "reentry": "As we approach them.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "His faith sank under earthly woes",
+      "place": "His faith sank under earthly woes",
+      "reentry": "Antonio cursed St. Clare in rhyme And took to wine and got the lime Of hatred on his soul, in time Grew healed though left a little lame,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "From earth like God's dove to the skies",
+      "place": "From earth like God's dove to the skies",
+      "reentry": "Diffused in heavenly flame.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Following an ideal!",
+      "place": "Following an ideal!",
+      "reentry": "Do you remember how slim he was, And trim he was, With black hair and pale brow, And the hawk-like nose and flashing eyes, Not turning slowly like an owl But with a sudden eagle motion?...",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "When the ripping ball went wild on the alley",
+      "place": "When the ripping ball went wild on the alley",
+      "reentry": "For we were radicals, And he wasn't a radical. Eh? Why, a radical stands for freedom, And for truth--which he never finds But always looks for. A radical is not a moralist. A radical doesn't say: \"This is true and you must believe it;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Oh no! a radical stands for freedom",
+      "place": "Oh no! a radical stands for freedom",
+      "reentry": "Do you remember that banquet at the Tremont In '97 on Jackson's day? Bryan and Altgeld walked together Out to the banquet room. That's the time he said the bolters must Bring fruits meet for repentance--ha! ha! Oh, Gawd!-- They never did it",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "You'd know, you see--but Gee!",
+      "place": "You'd know, you see--but Gee!",
+      "reentry": "He was 24-carat religious,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "And he looked like a lion,",
+      "place": "And he looked like a lion,",
+      "reentry": "There in the convention of '96--What do you know about that?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "Say, Ed! lend me eighty dollars",
+      "place": "Say, Ed! lend me eighty dollars",
+      "reentry": "To pay my life insurance.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "The splendid apparition, and so knew",
+      "place": "The splendid apparition, and so knew",
+      "reentry": "It was, alas! a dream within a dream!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "To what victories soever--",
+      "place": "To what victories soever--",
+      "reentry": "Vanquished or seemingly vanquished!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "I, who am altered, would not find",
+      "place": "I, who am altered, would not find",
+      "reentry": "The face I loved so greatly changed.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "Outside the stars look down. Stars are content",
+      "place": "Outside the stars look down. Stars are content",
+      "reentry": "To be so quiet and indifferent.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "The spirit of life awakes",
+      "place": "The spirit of life awakes",
+      "reentry": "In the fresh flags by the lakes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "The spirit of life awakes,",
+      "place": "The spirit of life awakes,",
+      "reentry": "In the fresh flags by the lakes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "I am glad we parted forever,",
+      "place": "I am glad we parted forever,",
+      "reentry": "And sad for the last good-by.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Since you saw Him the last",
+      "place": "Since you saw Him the last",
+      "reentry": "You had slept while He watched, but fierce were you, fierce and awake",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "When they sought Him to take,",
+      "place": "When they sought Him to take,",
+      "reentry": "And cursing, no doubt, as you smote off, as one of the least,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "And who made reply?",
+      "place": "And who made reply?",
+      "reentry": "As you leaped in the sea, so you spoke as you smote with the sword; \"Thou art Christ, even Lord!\" John leaned on His breast, but he asked you, your strength to foresee,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "The death of the law",
+      "place": "The death of the law",
+      "reentry": "In the dream of the vessel that held all the four-footed beasts,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "To use the big keys",
+      "place": "To use the big keys",
+      "reentry": "With which to reveal and fling wide all the soul and the scheme",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "Of the Galilee dream,",
+      "place": "Of the Galilee dream,",
+      "reentry": "When you flashed in a trice, as later you smote with the sword:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "In the annals of time",
+      "place": "In the annals of time",
+      "reentry": "You were called by Him, Peter, a rock, but we give you the name",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Oh Peter, the dreamer, impetuous, human, divine,",
+      "place": "Oh Peter, the dreamer, impetuous, human, divine,",
+      "reentry": "Gnarled branch of the vine!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "That when a man's genius calls him",
+      "place": "That when a man's genius calls him",
+      "reentry": "He must obey no matter what befalls him.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "What he had in his mind was growth",
+      "place": "What he had in his mind was growth",
+      "reentry": "Of soul by watching, And the creation of eyes Over your mind's eyes to supervise A clear activity and to ward off sloth.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "What he had in his mind was scotching",
+      "place": "What he had in his mind was scotching",
+      "reentry": "And killing the snake of Hatred and stripping the glove From the hand of Hypocrisy and quenching the fire",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "While making private pelf",
+      "place": "While making private pelf",
+      "reentry": "Secure and free to increase.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "And that his followers were multiplying,",
+      "place": "And that his followers were multiplying,",
+      "reentry": "And were going about rejoicing and defying",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "And fearing that his poems might be lost",
+      "place": "And fearing that his poems might be lost",
+      "reentry": "And certain members of the Bar Association, And of the Civic Federation, And of the League of Public Efficiency, And a legion",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "Shed on that day, and which",
+      "place": "Shed on that day, and which",
+      "reentry": "In red cells is so rich.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "This spell--well, friends, I greet ye once again",
+      "place": "This spell--well, friends, I greet ye once again",
+      "reentry": "With joy--but with a most unuttered pain.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "The brother of Eos and the Moon",
+      "place": "The brother of Eos and the Moon",
+      "reentry": "Stretched him and rubbed his eyes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "There was a time when heaven's vault",
+      "place": "There was a time when heaven's vault",
+      "reentry": "Cracked like a temple's roof. A new hierarchy burst its shell,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "The little waves patted the shore again",
+      "place": "The little waves patted the shore again",
+      "reentry": "Where the restless river flows.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "And since from the hour His son was sent",
+      "place": "And since from the hour His son was sent",
+      "reentry": "The hypocrite holds the state.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "The judges bartered the judgment seats",
+      "place": "The judges bartered the judgment seats",
+      "reentry": "And trafficked in the law.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "But Proserpina never grew",
+      "place": "But Proserpina never grew",
+      "reentry": "So deadly a passion flower.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "Your bones by the tiger will be licked clean",
+      "place": "Your bones by the tiger will be licked clean",
+      "reentry": "As he licks the bones of an ox.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "And the city may leave you sorrow free",
+      "place": "And the city may leave you sorrow free",
+      "reentry": "If you ask it not for bread.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "She had sold her cloak to shrive the dead",
+      "place": "She had sold her cloak to shrive the dead",
+      "reentry": "And buy a crucifix!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "He struck to earth the children",
+      "place": "He struck to earth the children",
+      "reentry": "With a dirty spade. As a tiger growls with an antelope After the hunt, Over the little faces I heard him grunt.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "The garden colored before me",
+      "place": "The garden colored before me",
+      "reentry": "To the kiss of spring. And the yellow face in a moment Was a mystic white;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "He carried a sword and a balance",
+      "place": "He carried a sword and a balance",
+      "reentry": "And stood on a globe. I watched him from the window Under a spell; The idiot was the angel Azrael!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "Helen of Troy",
+      "place": "Helen of Troy",
+      "reentry": "On an ancient vase representing in bas-relief the flight of Helen.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "He touched, and killed the past,",
+      "place": "He touched, and killed the past,",
+      "reentry": "And clove its bands.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "And lands more strange than these,",
+      "place": "And lands more strange than these,",
+      "reentry": "And flowers more fair.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "As men have fled?",
+      "place": "As men have fled?",
+      "reentry": "Ah! we would know relief From marts of wine and beef, And oil and bread.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "Down to the dusty end where pitiful Time",
+      "place": "Down to the dusty end where pitiful Time",
+      "reentry": "Grown weary cries Enough!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "Who knows what lips were kissed at Laracor?",
+      "place": "Who knows what lips were kissed at Laracor?",
+      "reentry": "Or who it was that walked through Burnham wood?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "And in that hour that passed us by",
+      "place": "And in that hour that passed us by",
+      "reentry": "We lived eternally.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "Do you make merry, do you weep?",
+      "place": "Do you make merry, do you weep?",
+      "reentry": "In whose arms are you now asleep?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "She only said, \"Again 'tis day!",
+      "place": "She only said, \"Again 'tis day!",
+      "reentry": "How red your cheeks, how bright your eyes!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "Or dizzily drifts like a drunken man",
+      "place": "Or dizzily drifts like a drunken man",
+      "reentry": "Falling, before the gale.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "And one would think that a hungry hound",
+      "place": "And one would think that a hungry hound",
+      "reentry": "Was out in the cold for the sound.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "Nor a cry of pain--one can't define",
+      "place": "Nor a cry of pain--one can't define",
+      "reentry": "The sound of a creaking sign.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "Before which everything,",
+      "place": "Before which everything,",
+      "reentry": "Becomes as plain as day.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "Of the ancient dream of Zion",
+      "place": "Of the ancient dream of Zion",
+      "reentry": "Or what's the matter with Bryan.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "But I see a light that shines and shines",
+      "place": "But I see a light that shines and shines",
+      "reentry": "And I rather think it's God.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "Who sees that himself is her riddle,",
+      "place": "Who sees that himself is her riddle,",
+      "reentry": "And she but the work of his hand.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "And leave the room, and then I rub a streak",
+      "place": "And leave the room, and then I rub a streak",
+      "reentry": "Of a tear from my cheek.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "But hear your words and laughter,",
+      "place": "But hear your words and laughter,",
+      "reentry": "And watch your hands and eyes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "Moving in painéd whiteness are put under",
+      "place": "Moving in painéd whiteness are put under",
+      "reentry": "The soothing earth to brighten April's wonder.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "And shut you up again with me and cage",
+      "place": "And shut you up again with me and cage",
+      "reentry": "Our love and hatred and our silent rage.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "No man can save a woman's soul,",
+      "place": "No man can save a woman's soul,",
+      "reentry": "Nor right a woman's wrong.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "The glare of noon is o'er us, we are ashamed to weep--",
+      "place": "The glare of noon is o'er us, we are ashamed to weep--",
+      "reentry": "The beginning and end of love are devoid of speech.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "And given to the junkman to re-sell",
+      "place": "And given to the junkman to re-sell",
+      "reentry": "You know this and the thought of it is hell!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "In the middle and cheeks stuck out with fatness,",
+      "place": "In the middle and cheeks stuck out with fatness,",
+      "reentry": "Plump from camembert and clicquot, eyelids Thin as skins of onions, cut like dough 'round the eyes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "And a vine on the porch, and a little garden,",
+      "place": "And a vine on the porch, and a little garden,",
+      "reentry": "And a dining room where the sun comes in,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "Take me as mistress or wife, it is yours to decide",
+      "place": "Take me as mistress or wife, it is yours to decide",
+      "reentry": "But take me as mistress and grow like the picture before you,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "\"There's the story of Hamlet, for instance,\" I added",
+      "place": "\"There's the story of Hamlet, for instance,\" I added",
+      "reentry": "Then fell into silence.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "Breakfast? Why, toast and coffee, not too strong,",
+      "place": "Breakfast? Why, toast and coffee, not too strong,",
+      "reentry": "My heart acts queer of late....",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "You have mutated, Julia, that is it,",
+      "place": "You have mutated, Julia, that is it,",
+      "reentry": "This flower of you is what I call *The Lover*!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "I have seen many faces changed by the Sculptor Death--",
+      "place": "I have seen many faces changed by the Sculptor Death--",
+      "reentry": "But never a face like Harold's who passed in a throe of pain. There were maidens and youths in the bud, and men in the lust of life; And women whom child-birth racked till the crying soul slipped through;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "All of these I have seen--but the face of Harold the bold",
+      "place": "All of these I have seen--but the face of Harold the bold",
+      "reentry": "Looked with a penitent pallor and stared with a sad surprise.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "For now at last he was still who never knew rest in life",
+      "place": "For now at last he was still who never knew rest in life",
+      "reentry": "And the ardent heat of his blood was cold as the sweat of a stone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "The heart of a girl who faintly smiled through her tears",
+      "place": "The heart of a girl who faintly smiled through her tears",
+      "reentry": "And her little life was tossed as the eddies that whirl in the hollows From the great world-currents that wreck the battle ships at sea. And the face of dead Lillian seemed like a rain-ruined flower.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "I have seen many faces changed by the Sculptor Death",
+      "place": "I have seen many faces changed by the Sculptor Death",
+      "reentry": "But the sorrow thereof is dumb like the cloth that lies on the brow. So what should be said of the faun surprised in the woodland dances, Of Harold the light of heart who fought with fear to the last?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "Feels the sun in the sky and pushes above the sod;",
+      "place": "Feels the sun in the sky and pushes above the sod;",
+      "reentry": "Perhaps this cry in my heart is nothing but God!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "Mother, your face is but a face among a million more",
+      "place": "Mother, your face is but a face among a million more",
+      "reentry": "You're standing on the deck, my son, and looking at the shore.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "Mother, my soul is weary, where is the way to God?",
+      "place": "Mother, my soul is weary, where is the way to God?",
+      "reentry": "Well, kiss the crucifix, my son, and pass beneath the rod.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "Wouldst thou escape for deeper or no breath?",
+      "place": "Wouldst thou escape for deeper or no breath?",
+      "reentry": "There is no door but death.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "Hence, soul, be brave across the ruined floor--",
+      "place": "Hence, soul, be brave across the ruined floor--",
+      "reentry": "Who knocks? Unbolt the door!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "Supplication",
+      "place": "Supplication",
+      "reentry": "*For He knoweth our frame, He remembereth that we are dust.*--Psalm Ciii. 14.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "And none is left for Thee to kill--",
+      "place": "And none is left for Thee to kill--",
+      "reentry": "Have mercy, Lord!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "If these accrue from Thy desire--",
+      "place": "If these accrue from Thy desire--",
+      "reentry": "Have mercy, Lord!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "We are Thy breed, we little men--",
+      "place": "We are Thy breed, we little men--",
+      "reentry": "Have mercy, Lord!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "We, beaten, fall upon the knife--",
+      "place": "We, beaten, fall upon the knife--",
+      "reentry": "Have mercy, Lord!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "In costly vessels all too weak",
+      "place": "In costly vessels all too weak",
+      "reentry": "Great works we planned in hopes that Thou",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "Thou wrotest failure on our brow--",
+      "place": "Thou wrotest failure on our brow--",
+      "reentry": "Have mercy, Lord!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "Could we but know, as Thou dost know--",
+      "place": "Could we but know, as Thou dost know--",
+      "reentry": "Hold the whole scheme at once in mind! Yet, dost Thou watch our anxious woe Who piece with palsied hands and blind The fragments of our little plan, To thrive and earn Thy blest reward, And make and keep the world of man--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "Put in our hands and through Thy grace",
+      "place": "Put in our hands and through Thy grace",
+      "reentry": "To be subdued and made divine. Whether we serve Thee ill or well, Thou knowest our frame, nor canst afford To leave Thy own for long in hell-- Have mercy, Lord!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "The Conversation",
+      "place": "The Conversation",
+      "reentry": "*The Human Voice*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "All this would come of You in ether moving?",
+      "place": "All this would come of You in ether moving?",
+      "reentry": "*A Voice*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "The parchment of the future, it were vain--",
+      "place": "The parchment of the future, it were vain--",
+      "reentry": "You could not read it.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "Life waits till the heart has lived too much",
+      "place": "Life waits till the heart has lived too much",
+      "reentry": "And then pours in new wine!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "Madeline, Madeline, come to the garden,",
+      "place": "Madeline, Madeline, come to the garden,",
+      "reentry": "And play with Marcia under the tree!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "Marcia, Marcia, look at Madeline",
+      "place": "Marcia, Marcia, look at Madeline",
+      "reentry": "Building a doll-house under the tree!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "Many sacrificial fires have been kindled",
+      "place": "Many sacrificial fires have been kindled",
+      "reentry": "In praise of spring and Aphrodite.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "For the gift of life,",
+      "place": "For the gift of life,",
+      "reentry": "Oh Life! Oh Love! We lift our hands to thee!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "She is the restlessness of life,",
+      "place": "She is the restlessness of life,",
+      "reentry": "Its rapture and despair.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "Anon there cometh in a dove",
+      "place": "Anon there cometh in a dove",
+      "reentry": "By the window's open fold,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "From a land of many colored flowers",
+      "place": "From a land of many colored flowers",
+      "reentry": "And trees of spicery.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "Betwixt her hands of tulip-white,",
+      "place": "Betwixt her hands of tulip-white,",
+      "reentry": "A golden cup did bear.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "\"That is,\" said Pelles, \"richest thing",
+      "place": "\"That is,\" said Pelles, \"richest thing",
+      "reentry": "That any man hath seen.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "\"O, Jesu,\" said Sir Launcelot,",
+      "place": "\"O, Jesu,\" said Sir Launcelot,",
+      "reentry": "\"What may this sight avail?\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "A golden cup did bear",
+      "place": "A golden cup did bear",
+      "reentry": "\"O Jesu,\" said Sir Launcelot,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s115",
+      "title": "Likewise the greatest knight this world",
+      "place": "Likewise the greatest knight this world",
+      "reentry": "May ever hope to see.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s116",
+      "title": "And Elaine so straight and tall--",
+      "place": "And Elaine so straight and tall--",
+      "reentry": "Nay, saith the Bishop of Canterbury,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s117",
+      "title": "They clutch for my soul eftsoon;",
+      "place": "They clutch for my soul eftsoon;",
+      "reentry": "Nay, saith the Bishop of Canterbury,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s118",
+      "title": "Before a silver urn",
+      "place": "Before a silver urn",
+      "reentry": "Nay, saith the Bishop of Canterbury,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s119",
+      "title": "O'er the holy vessels spread",
+      "place": "O'er the holy vessels spread",
+      "reentry": "Nay, saith the Bishop of Canterbury,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s120",
+      "title": "Shine in the room so clear",
+      "place": "Shine in the room so clear",
+      "reentry": "Nay, saith the Bishop of Canterbury,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s121",
+      "title": "Now sing a psalter, read a prayer",
+      "place": "Now sing a psalter, read a prayer",
+      "reentry": "May all souls find their rest. Amen.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s122",
+      "title": "What could I do but take a boat",
+      "place": "What could I do but take a boat",
+      "reentry": "And go to meet you?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s123",
+      "title": "And there is but one you would see,",
+      "place": "And there is but one you would see,",
+      "reentry": "All the interval of waiting is a wall.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s124",
+      "title": "Gray blankets and canvas pillows",
+      "place": "Gray blankets and canvas pillows",
+      "reentry": "I saw it all in a glance. And there in dread of eyes we stood",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s125",
+      "title": "And a bat flew up at my feet from the brush",
+      "place": "And a bat flew up at my feet from the brush",
+      "reentry": "And crossed the moon.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s126",
+      "title": "Where we had a dinner of fish",
+      "place": "Where we had a dinner of fish",
+      "reentry": "And where, after resting, to follow your will",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s127",
+      "title": "I looked for you,",
+      "place": "I looked for you,",
+      "reentry": "But you had arisen. Then I dressed and searched for you, But you were gone. Then I stood for long minutes Looking at a sail far out at sea And departed too.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s128",
+      "title": "Then I said this is the place for mad Frederick--",
+      "place": "Then I said this is the place for mad Frederick--",
+      "reentry": "Mad Frederick will be here.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s129",
+      "title": "By other pools there were dead bodies:",
+      "place": "By other pools there were dead bodies:",
+      "reentry": "Some of youth, some of age. They had given up the fight, They had drunk poisoned water, They had searched Until they fell-- All had gone mad!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s130",
+      "title": "Upon my ecstasy",
+      "place": "Upon my ecstasy",
+      "reentry": "They will never see me watching one star.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s131",
+      "title": "Where no wind blows,",
+      "place": "Where no wind blows,",
+      "reentry": "And glance at stars as I pass. They will never spy again Upon my ecstasy.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s132",
+      "title": "And covered as with a white blankness,",
+      "place": "And covered as with a white blankness,",
+      "reentry": "Which was the worst madness of all.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s133",
+      "title": "Others had lost the vision",
+      "place": "Others had lost the vision",
+      "reentry": "The star was there, but its meaning vanished. And mad Frederick, going here and there, With no purpose, Only curious and interested As I was, a certain god, Came by a certain pool",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s134",
+      "title": "The End",
+      "place": "The End",
+      "reentry": "Printed in the United States of America.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s135",
+      "title": "Spoon River Anthology",
+      "place": "Spoon River Anthology",
+      "reentry": "*Mr. Masters' book is considered by many to be the most striking and important contribution to American letters in recent years*:--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s136",
+      "title": "Which are not of a time or a locality.\"--Boston Transcript",
+      "place": "Which are not of a time or a locality.\"--Boston Transcript",
+      "reentry": "\"A work splendid in observation, marvelous in the artistry of exclusion, yet of democratic inclusiveness, piercingly analytic of character, of plastic facility of handling, sympathetic underneath",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s137",
+      "title": "Irony, humorous, pathetic, tragic, comic, particular yet",
+      "place": "Irony, humorous, pathetic, tragic, comic, particular yet",
+      "reentry": "universal--a Comedie Humaine--a creation of a whole community of",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s138",
+      "title": "Personalities.\"--William Marion Reedy",
+      "place": "Personalities.\"--William Marion Reedy",
+      "reentry": "\"We find a strange impressiveness, akin to greatness, in the 'Spoon River Anthology' of Edgar Lee Masters.... It is a book which, whether one likes it or not, one must respect.\"--*The New Republic.*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s139",
+      "title": "\"Mr. Masters speaks with a new and authentic voice. It is an",
+      "place": "\"Mr. Masters speaks with a new and authentic voice. It is an",
+      "reentry": "illuminating piece of work, and an unforgettable one.\"--_Chicago",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s140",
+      "title": "Evening Post",
+      "place": "Evening Post",
+      "reentry": "\"The natural child of Wait Whitman ... the only poet with true",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s141",
+      "title": "Americanism in his bones.\"--New York Times",
+      "place": "Americanism in his bones.\"--New York Times",
+      "reentry": "*Cloth, $1.25; leather, $1.50*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s142",
+      "title": "By John Masefield",
+      "place": "By John Masefield",
+      "reentry": "Author of \"The Everlasting Mercy\" and \"The Widow in the Bye Street,\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s143",
+      "title": "Cloth, 12mo, $1.25",
+      "place": "Cloth, 12mo, $1.25",
+      "reentry": "The title piece in this volume is a dramatic poem of sixty pages, the action of which takes place in the time of Christ. The characters introduced include Pontius Pilate, Joseph of Ramah and Herod. The play, for it is really such, is writte",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s144",
+      "title": "Masefield's most interesting and important contributions to",
+      "place": "Masefield's most interesting and important contributions to",
+      "reentry": "literature. In addition to this there are in the book many sonnets and",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s145",
+      "title": "Short poems",
+      "place": "Short poems",
+      "reentry": "\"Reveals an interesting development in poetic thought and expression ... a new Masefield ... who has never written with more dignity, nor with more artistry. Those who go in quest of Beauty will find her here.... Here is beauty of impressio",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s146",
+      "title": "Of thought, and beauty of phrase.\"--The New York Times",
+      "place": "Of thought, and beauty of phrase.\"--The New York Times",
+      "reentry": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s147",
+      "title": "By Edwin Arlington Robinson",
+      "place": "By Edwin Arlington Robinson",
+      "reentry": "Author of \"The Porcupine,\" \"Captain Craig and Other Poems,\" etc.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s148",
+      "title": "It has been some years since Mr. Robinson has given us a new",
+      "place": "It has been some years since Mr. Robinson has given us a new",
+      "reentry": "collection of poems. Those who remember \"Captain Craig and Other Poems,\" a volume which brought to its author the heartiest of congratulations, placing him at once in the rank of those American writers whose contributions to literature are ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s149",
+      "title": "Robinson's position in letters to-day",
+      "place": "Robinson's position in letters to-day",
+      "reentry": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s150",
+      "title": "Cloth, 12mo",
+      "place": "Cloth, 12mo",
+      "reentry": "Here with that intensely human note exhibited in his poems of the working classes, Mr. Gibson sings of the life of the soldier. There are many moods in the book, for the author has well caught the flow of spirits from gaiety to despair whic",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s151",
+      "title": "Collection on varying themes",
+      "place": "Collection on varying themes",
+      "reentry": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s152",
+      "title": "By Amy Lowell",
+      "place": "By Amy Lowell",
+      "reentry": "Author of \"Sword Blades and Poppy Seed,\" \"A Dome of Many-Coloured",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s153",
+      "title": "Cloth, 8vo, $2.50",
+      "place": "Cloth, 8vo, $2.50",
+      "reentry": "A brilliant series of biographical and critical essays dealing with Émile Verhaeren, Albert Samain, Remy de Gourmont, Henri de Régnier, Francis Jammes, and Paul Fort, by one of the foremost living American",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s154",
+      "title": "Poets",
+      "place": "Poets",
+      "reentry": "The translations make up an important part of the book, and together with the French originals constitute a representative anthology of the",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s155",
+      "title": "Professor Barrett Wendell, of Harvard University, says:",
+      "place": "Professor Barrett Wendell, of Harvard University, says:",
+      "reentry": "\"Seems to me as unusual--in the happiest sense of the word, ... I find the book a model, in total effect, of what a work with such",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s156",
+      "title": "Purpose ought to be.\"",
+      "place": "Purpose ought to be.\"",
+      "reentry": "William Lyon Phelps, Professor of English Literature, Yale University,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s157",
+      "title": "Says:",
+      "place": "Says:",
+      "reentry": "\"This is, I think, the most valuable work on contemporary French literature that I have seen for a long time. It is written by one who has a thorough knowledge of the subject and who is herself an American poet of distinction. She has the k",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s158",
+      "title": "Sword Blades and Poppy Seed",
+      "place": "Sword Blades and Poppy Seed",
+      "reentry": "*Boards, 12mo, $1.25*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s159",
+      "title": "Boards, 12mo, $1.25",
+      "place": "Boards, 12mo, $1.25",
+      "reentry": "\"Such verse as this is delightful, has a sort of personal flavor, a loyalty to the fundamentals of life and nationality.... The child",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s160",
+      "title": "The Macmillan Company",
+      "place": "The Macmillan Company",
+      "reentry": "Publishers 64-66 Fifth Avenue New York",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s161",
+      "title": "Punctuation has been corrected without note",
+      "place": "Punctuation has been corrected without note",
+      "reentry": "Inconsistencies in spelling and hyphenation have been retained from the",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s162",
+      "title": "Original",
+      "place": "Original",
+      "reentry": "It is not always possible to determine if a new stanza begins at the top of a printed page, but every effort has been made by the transcriber to retain stanza breaks where appropriate.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "by The Internet Archive/Canadian Libraries)"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Songs AND Satires"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "THE Macmillan Company"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The Macmillan Co. of Canada, Ltd. Toronto"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "\"Spoon River Anthology\""
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "THE Macmillan Company"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "*All rights reserved*"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Set up and electrotyped. Published March, 1916. Reprinted March, June, 1916."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Norwood, Mass., U.S.A"
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "For permission to print in book form certain of these poems I wish to acknowledge an indebtedness to *Poetry*, *The Smart Set*, *The Little Review*, *The Cosmopolitan Magazine*, and William Marion Reedy, Editor of *Reedy's Mirror*."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Contents"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "St. Francis and Lady Clare 4"
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "THE Cocked HAT 10"
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "THE Vision 18"
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "SO WE Grew Together 21"
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Rain IN MY Heart 31"
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "THE Loop 32"
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "When Under the Icy Eaves 40"
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "IN THE CAR 41"
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "Simon Surnamed Peter 43"
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "ALL Life IN A Life 47"
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "What YOU Will 56"
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "THE City 57"
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "THE Idiot 65"
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "Helen OF Troy 68"
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "O Glorious France 71"
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "FOR A Dance 74"
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "When Life IS Real 76"
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "THE Question 78"
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "THE Answer 79"
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "THE Sign 80"
+    },
+    {
+      "id": "s7-20",
+      "sceneId": "s7",
+      "text": "William Marion Reedy 82"
+    },
+    {
+      "id": "s7-21",
+      "sceneId": "s7",
+      "text": "A Study 85"
+    },
+    {
+      "id": "s7-22",
+      "sceneId": "s7",
+      "text": "Portrait OF A Woman 88"
+    },
+    {
+      "id": "s7-23",
+      "sceneId": "s7",
+      "text": "IN THE Cage 91"
+    },
+    {
+      "id": "s7-24",
+      "sceneId": "s7",
+      "text": "Saving a Woman: One Phase 95"
+    },
+    {
+      "id": "s7-25",
+      "sceneId": "s7",
+      "text": "Love IS A Madness 97"
+    },
+    {
+      "id": "s7-26",
+      "sceneId": "s7",
+      "text": "ON A Bust 98"
+    },
+    {
+      "id": "s7-27",
+      "sceneId": "s7",
+      "text": "Arabel 101"
+    },
+    {
+      "id": "s7-28",
+      "sceneId": "s7",
+      "text": "Jim and Arabel'S Sister 108"
+    },
+    {
+      "id": "s7-29",
+      "sceneId": "s7",
+      "text": "The Sorrow of Dead Faces 116"
+    },
+    {
+      "id": "s7-30",
+      "sceneId": "s7",
+      "text": "THE CRY 119"
+    },
+    {
+      "id": "s7-31",
+      "sceneId": "s7",
+      "text": "THE Helping Hand 120"
+    },
+    {
+      "id": "s7-32",
+      "sceneId": "s7",
+      "text": "THE Door 121"
+    },
+    {
+      "id": "s7-33",
+      "sceneId": "s7",
+      "text": "Supplication 122"
+    },
+    {
+      "id": "s7-34",
+      "sceneId": "s7",
+      "text": "THE Conversation 125"
+    },
+    {
+      "id": "s7-35",
+      "sceneId": "s7",
+      "text": "Terminus 130"
+    },
+    {
+      "id": "s7-36",
+      "sceneId": "s7",
+      "text": "Madeline 132"
+    },
+    {
+      "id": "s7-37",
+      "sceneId": "s7",
+      "text": "Marcia 134"
+    },
+    {
+      "id": "s7-38",
+      "sceneId": "s7",
+      "text": "THE Altar 135"
+    },
+    {
+      "id": "s7-39",
+      "sceneId": "s7",
+      "text": "Soul'S Desire 137"
+    },
+    {
+      "id": "s7-40",
+      "sceneId": "s7",
+      "text": "Ballad of Launcelot and Elaine 140"
+    },
+    {
+      "id": "s7-41",
+      "sceneId": "s7",
+      "text": "The Death of Launcelot 149"
+    },
+    {
+      "id": "s7-42",
+      "sceneId": "s7",
+      "text": "IN Michigan 156"
+    },
+    {
+      "id": "s7-43",
+      "sceneId": "s7",
+      "text": "THE Star 166"
+    },
+    {
+      "id": "s7-44",
+      "sceneId": "s7",
+      "text": "Songs AND Satires"
+    },
+    {
+      "id": "s7-45",
+      "sceneId": "s7",
+      "text": "Silence"
+    },
+    {
+      "id": "s7-46",
+      "sceneId": "s7",
+      "text": "I have known the silence of the stars and of the sea, And the silence of the city when it pauses, And the silence of a man and a maid, And the silence for which music alone finds the word, And the silence of the woods before the winds of spring begin, And the silence of the sick When their eyes roam about the room. And I ask: For the depths Of what use is language? A beast of the field moans a few times When death takes its young: And we are voiceless in the presence of realities-- We cannot speak."
+    },
+    {
+      "id": "s7-47",
+      "sceneId": "s7",
+      "text": "A curious boy asks an old soldier Sitting in front of the grocery store, \"How did you lose your leg?\" And the old soldier is struck with silence, Or his mind flies away, Because he cannot concentrate it on Gettysburg. It comes back jocosely And he says, \"A bear bit it off.\" And the boy wonders, while the old soldier Dumbly, feebly lives over The flashes of guns, the thunder of cannon, The shrieks of the slain, And himself lying on the ground, And the hospital surgeons, the knives, And the long days in bed. But if he could describe it all He would be an artist. But if he were an artist there would be deeper wounds Which he could not describe."
+    },
+    {
+      "id": "s7-48",
+      "sceneId": "s7",
+      "text": "There is the silence of a great hatred, And the silence of a great love, And the silence of a deep peace of mind, And the silence of an embittered friendship. There is the silence of a spiritual crisis, Through which your soul, exquisitely tortured, Comes with visions not to be uttered Into a realm of higher life. And the silence of the gods who understand each other without speech. There is the silence of defeat. There is the silence of those unjustly punished; And the silence of the dying whose hand Suddenly grips yours. There is the silence between father and son, When the father cannot explain his life, Even though he be misunderstood for it."
+    },
+    {
+      "id": "s7-49",
+      "sceneId": "s7",
+      "text": "There is the silence that comes between husband and wife. There is the silence of those who have failed; And the vast silence that covers Broken nations and vanquished leaders. There is the silence of Lincoln, Thinking of the poverty of his youth. And the silence of Napoleon After Waterloo. And the silence of Jeanne d'Arc Saying amid the flames, \"Blessed Jesus\"-- Revealing in two words all sorrow, all hope. And there is the silence of age, Too full of wisdom for the tongue to utter it In words intelligible to those who have not lived The great range of life."
+    },
+    {
+      "id": "s7-50",
+      "sceneId": "s7",
+      "text": "And there is the silence of the dead."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "As we approach them."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "St. Francis and Lady Clare"
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "Antonio loved the Lady Clare. He caught her to him on the stair And pressed her breasts and kissed her hair, And drew her lips in his, and drew Her soul out like a torch's flare. Her breath came quick, her blood swirled round; Her senses in a vortex swound. She tore him loose and turned around, And reached her chamber in a bound Her cheeks turned to a poppy's hue."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "She closed the door and turned the lock, Her breasts and flesh were turned to rock. She reeled as drunken from the shock. Before her eyes the devils skipped, She thought she heard the devils mock. For had her soul not been as pure As sifted snow, could she endure Antonio's passion and be sure Against his passion's strength and lure? Lean fears along her wonder slipped."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "Outside she heard a drunkard call, She heard a beggar against the wall Shaking his cup, a harlot's squall Struck through the riot like a sword, And gashed the midnight's festival. She watched the city through the pane, The old Silenus half insane, The idiot crowd that drags its chain-- And then she heard the bells again, And heard the voices with the word:"
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "Ecco il santo! Up the street There was the sound of running feet From closing door and window seat, And all the crowd turned on its way The Saint of Poverty to greet. He passed. And then a circling thrill, As water troubled which was still, Went through her body like a chill, Who of Antonio thought until She heard the Saint begin to pray."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "And then she turned into the room Her soul was cloven through with doom, Treading the softness and the gloom Of Asia's silk and Persia's wool, And China's magical perfume. She sickened from the vases hued In corals, yellows, greens, the lewd Twined dragon shapes and figures nude, And tapestries that showed a brood Of leopards by a pool!"
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "Candles of wax she lit before A pier glass standing from the floor; Up to the ceiling, off she tore With eager hands her jewels, then The silken vesture which she wore. Her little breasts so round to see Were budded like the peony. Her arms were white as ivory, And all her sunny hair lay free As marigold or celandine."
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "Her blue eyes sparkled like a vase Of crackled turquoise, in her face Was memory of the mad embrace Antonio gave her on the stair, And on her cheeks a salt tear's trace. Like pigeon blood her lips were red. She clasped her bands above her head. Under her arms the waxlight shed Delicate halos where was spread The downy growth of hair."
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "Such sudden sin the virgin knew She quenched the tapers as she blew Puff! puff! upon them, then she threw Herself in tears upon her knees, And round her couch the curtain drew. She called upon St. Francis' name, Feeling Antonio's passion maim Her body with his passion's flame To save her, save her from the shame Of fancies such as these!"
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "\"Go by mad life and old pursuits, The wine cup and the golden fruits, The gilded mirrors, rosewood flutes, I would praise God forevermore With harps of gold and silver lutes.\" She stripped the velvet from her couch Her broken spirit to avouch. She saw the devils slink and slouch, And passion like a leopard crouch Half mirrored on the polished floor."
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "Next day she found the saint and said: I would be God's bride, I would wed Poverty and I would eat the bread That you for anchorites prepare, For my soul's sake I am in dread. Go then, said Francis, nothing loth, Put off this gown of green snake cloth, Put on one somber as a moth, Then come to me and make your troth And I will clip your golden hair."
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "She went and came. But still there lay, A gem she did not put away, A locket twixt her breasts, all gay In shimmering pearls and tints of blue, And inlay work of fruit and spray. St. Francis felt it as he slipped His hand across her breast and whipped Her golden tresses ere he clipped-- He closed his eyes then as he gripped The shears, plunged the shears through."
+    },
+    {
+      "id": "s8-13",
+      "sceneId": "s8",
+      "text": "The waterfall of living gold. The locks fell to the floor and rolled, And curled like serpents which unfold. And there sat Lady Clare despoiled. Of worldly glory manifold. She thrilled to feel him take and hide The locket from her breast, a tide Of passion caught them side by side. He was the bridegroom, she the bride-- Their flesh but not their spirits foiled."
+    },
+    {
+      "id": "s8-14",
+      "sceneId": "s8",
+      "text": "Thus was the Lady Clare debased To sack cloth and around her waist A rope the jeweled belt replaced. Her feet made free of silken hose Naked in wooden sandals cased"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Antonio cursed St. Clare in rhyme And took to wine and got the lime Of hatred on his soul, in time Grew healed though left a little lame,"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Diffused in heavenly flame."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "THE Cocked HAT"
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "Would that someone would knock Mr. Bryan into a cocked hat.--Woodrow Wilson."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "It ain't really a hat at all, Ed: You know that, don't you? When you bowl over six out of the nine pins, And the three that are standing Are the triangular three in front, You've knocked the nine into a cocked hat. If it was really a hat, he would be knocked in, too. Which he hardly is. For a man with money, And a man who can draw a crowd to listen To what he says, ain't all-in yet.... Oh yes, defeated And killed off a dozen times, but still He's one of the three nine pins that's standing ... Eh? Why, the other is Teddy, the other Wilson, we'll say. We'll see, perhaps. But six are down to make the cocked hat-- That's me and thousands of others like me, And the first-rate men who were cuffed about"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Do you remember how slim he was, And trim he was, With black hair and pale brow, And the hawk-like nose and flashing eyes, Not turning slowly like an owl But with a sudden eagle motion?..."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "One time, in '96, he came here And we had just a dollar and sixty cents In the treasury of the organization. So I stuck his lithograph on a pole And started out for the station. By the time we got back here to Clark street Four thousand men were marching in line, And a band that was playing for an opening Of a restaurant on Franklin street Had left the job and was following his carriage. Why, it took all the money Mark Hanna could raise To beat me, with nothing but a pole And a lithograph. And it wasn't because he was one of the prophets Come back to earth again. It shows how human hearts are hungry How wonderfully true they are-- And how they will rise and follow a man Who seems to see the truth! Well, these fellows who marched are the cocked hat, And I am the cocked hat and the six millions, And more are the cocked hat, Who got themselves despised or suspected Of ignorance or something for being with him."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "For we were radicals, And he wasn't a radical. Eh? Why, a radical stands for freedom, And for truth--which he never finds But always looks for. A radical is not a moralist. A radical doesn't say: \"This is true and you must believe it;"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Do you remember that banquet at the Tremont In '97 on Jackson's day? Bryan and Altgeld walked together Out to the banquet room. That's the time he said the bolters must Bring fruits meet for repentance--ha! ha! Oh, Gawd!-- They never did it and they didn't have to, For they had made friends of the mammon of unrighteousness, Even as he did, a little later, in his own way. Well, Darrow was there that night. I thought it was terribly raw in him, But he said to Bryan, there, in a group: \"You'd better go back to Lincoln and study Science, history, philosophy, And read Flaubert's Madam something-or-other, And quit this village religious stuff. You're head of the party before you are ready And a leader should lead with thought.\" And Bryan turned to the others and said: \"Darrow's the only man in the world Who looks down on me for believing in God.\" \"Your kind of a God,\" snapped Darrow. Honest, Ed, I didn't see this religious business In Bryan in '96 or 1900. Oh well, I knew he went to Church, And talked as statesmen do of God-- But McKinley did it, and I used to laugh: \"We've got a man to match McKinley, And it's good for us, in a squeeze like this, We didn't nominate some fellow Ethical culture or Unitarian.\" You see, the newspapers and preachers then Were raising such a hullabaloo About irreligion and dishonesty, And calling old Altgeld an anarchist, And comparing us to Robespierre And the guillotine boys in France. And a little of this religion came in handy."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "He was 24-carat religious,"
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "There in the convention of '96--What do you know about that?"
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "But right here, I tell you he ain't a hypocrite, This ain't a pose. But I'll tell you: In '96 when they knocked him out, I know what he said to himself as well As if I heard him say it ... I'll tell you in a minute. But suppose you were giving a lecture on the constitution, And you got mixed on your dates, And the audience rotten-egged you, And some one in the confusion Stole the door receipts, And there you were, disgraced and broke! But suppose you could just change your clothes, And lecture to the same audience On the religious nature of Washington, And be applauded and make money-- You'd do it, wouldn't you? Well, this is what Bill said to himself: \"I'm naturally regular and religious. I'm a moral man and I can prove it By any one in Marion County, Or Jacksonville or Lincoln, Nebraska. I'm a radical, but a radical Alone can be religious. I belong to the church, if not to the bank, Of the people who defeated me. And I'll prove to religious people That I'm a man to be trusted-- And just what a radical is. And I'll make some money while winning the votes Of the churches over the country.\"..."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "That's it--it ain't hypocrisy, It's using what you are for ends, When you find yourself in trouble. And this accounts for \"The Prince of Peace\"-- Except no one but him could write it-- And \"The Value of an Ideal\"-- (Which is money in bank and several farms) ..."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "His place in history? One time my grandfather, who was nearly blind, Went out to sow some grass seed. They had two sacks in the barn, One with grass seed, one with fertilizer, And he got the sack with fertilizer, And scattered it over the ground, Thinking he was sowing grass. And as he was finishing up, a grandchild, Dorothy, eight years old, Followed him, dropping flower seeds. Well, after a time That was the greatest patch of weeds You ever saw! And the old man sat, Half blind, on the porch, and said: \"Good land, that grass is growing!\" And there was nothing but weeds except A few nasturtiums here and there That Dorothy had sown...."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "To pay my life insurance."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "THE Vision"
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "Of that dear vale where you and I have lain Scanning the mysteries of life and death I dreamed, though how impassable the space Of time between the present and the past! This was the vision that possessed my mind; I thought the weird and gusty days of March Had eased themselves in melody and peace. Pale lights, swift shadows, lucent stalks, clear streams, Cool, rosy eves behind the penciled mesh Of hazel thickets, and the huge feathered boughs Of walnut trees stretched singing to the blast; And the first pleasantries of sheep and kine; The cautioned twitterings of hidden birds; The flight of geese among the scattered clouds; Night's weeping stars and all the pageantries Of awakened life had blossomed into May, Whilst she with trailing violets in her hair Blew music from the stops of watery stems, And swept the grasses with her viewless robes, Which dreaming men thought voices, dreaming still. Now as I lay in vision by the stream That flows amidst our well beloved vale, I looked throughout the vista stretched between Two ranging hills; one meadowed rich in grass; The other wooded, thick and quite obscure With overgrowth, rank in the luxury Of all wild places, but ever growing sparse Of trees or saplings on the sudden slope That met the grassy level of the vale;-- But still within the shadow of those woods, Which sprinkled all beneath with fragrant dew, There grew all flowers, which tempted little paths Between them, up and on into the wood. Here, as the sun had left his midday peak The incommunicable blue of heaven blent With his fierce splendor, filling all the air With softened glory, while the pasturage Trembled with color of the poppy blooms Shook by the steps of the swift-sandaled wind. Nor any sound beside disturbed the dream Of Silence slumbering on the drowsy flowers. Then as I looked upon the widest space Of open meadow where the sunlight fell In veils of tempered radiance, I saw The form of one who had escaped the care And equal dullness of our common day. For like a bright mist rising from the earth He made appearance, growing more distinct Until I saw the stole, likewise the lyre Grasped by the fingers of the modeled hand. Yea, I did see the glory of his hair Against the deep green bay-leaves filleting The ungathered locks. And so throughout the vale His figure stood distinct and his own shade Was the sole shadow. Deeming this approach Augur of good, as if in hidden ways Of loveliness the gods do still appear The counselors of men, and even where Wonder and meditation wooed us oft, I cried, \"Apollo\"--and his form dissolved, As if the nymphs of echo, who took up The voice and bore it to the hollow wood, By that same flight had startled the great god"
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "It was, alas! a dream within a dream!"
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "\"SO WE Grew Together\""
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "Reading over your letters I find you wrote me \"My dear boy,\" or at times \"dear boy,\" and the envelope Said \"master\"--all as I had been your very son, And not the orphan whom you adopted. Well, you were father to me! And I can recall The things you did for me or gave me: One time we rode in a box car to Springfield To see the greatest show on earth; And one time you gave me redtop boots, And one time a watch, and one time a gun. Well, I grew to gawkiness with a voice Like a rooster trying to crow in August Hatched in April, we'll say. And you went about wrapped up in silence With eyes aflame, and I heard little rumors Of what they were doing to you, and how They wronged you--and we were poor--so poor! And I could not understand why you failed, And why if you did good things for the people The people did not sustain you. And why you loved another woman than Aunt Susan, So it was whispered at school, and what could be baser, Or so little to be forgiven?..."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "They crowded you hard in those days. But you fought like a wounded lion For yourself I know, but for us, for me. At last you fell ill, and for months you tottered Around the streets as thin as death, Trying to earn our bread, your great eyes glowing And the silence around you like a shawl! But something in you kept you up. You grew well again and rosy with cheeks Like an Indian peach almost, and eyes Full of moonlight and sunlight, and a voice That sang, and a humor that warded The arrows off. But still between us There was reticence; you kept me away With a glittering hardness; perhaps you thought I kept you away--for I was moving In spheres you knew not, living through Beliefs you believed in no more, and ideals That were just mirrors of unrealities. As a boy can be I was critical of you. And reasons for your failures began to arise In my mind--I saw specific facts here and there With no philosophy at hand to weld them And synthesize them into one truth-- And a rush of the strength of youth Deluded me into thinking the world Was something so easily understood and managed While I knew it not at all in truth. And an adolescent egotism Made me feel you did not know me Or comprehend the all that I was. All this you divined...."
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "So it went. And when I left you and passed To the world, the city--still I see you With eyes averted, and feel your hand Limp with sorrow--you could not speak. You thought of what I might be, and where Life would take me, and how it would end-- There was longer silence. A year or two Brought me closer to you. I saw the play now And the game somewhat and understood your fights And enmities, and hardnesses and silences, And wild humor that had kept you whole-- For your soul had made it as an antitoxin To the world's infections. And you swung to me Closer than before--and a chumship began Between us...."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "What vital power was yours! You never tired, or needed sleep, or had a pain, Or refused a delight. I loved the things now You had always loved, a winning horse, A roulette wheel, a contest of skill In games or sports ... long talks on the corner With men who have lived and tell you Things with a rich flavor of old wisdom or humor; A woman, a glass of whisky at a table Where the fatigue of life falls, and our reserves That wait for happiness come up in smiles, Laughter, gentle confidences. Here you were A man with youth, and I a youth was a man, Exulting in your braveries and delight in life. How you knocked that scamp over at Harry Varnell's When he tried to take your chips! And how I, Who had thought the devil in cards as a boy, Loved to play with you now and watch you play; And watch the subtle mathematics of your mind Prophecy, divine the plays. Who was it In your ancestry that you harked back to And reproduced with such various gifts Of flesh and spirit, Anglo-Saxon, Celt?-- You with such rapid wit and powerful skill For catching illogic and whipping Error's Fangéd head from the body?..."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "I was really ahead of you At this stage, with more self-consciousness Of what man is, and what life is at last, And how the spirit works, and by what laws, With what inevitable force. But still I was Behind you in that strength which in our youth, If ever we have it, squeezes all the nectar From the grapes. It seemed you'd never lose This power and sense of joy, but yet at times I saw another phase of you...."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "There was the day We rode together north of the old town, Past the old farm houses that I knew-- Past maple groves, and fields of corn in the shock, And fields of wheat with the fall green. It was October, but the clouds were summer's, Lazily floating in a sky of June; And a few crows flying here and there, And a quail's call, and around us a great silence That held at its core old memories Of pioneers, and dead days, forgotten things! I'll never forget how you looked that day. Your hair Was turning silver now, but still your eyes Burned as of old, and the rich olive glow In your cheeks shone, with not a line or wrinkle!-- You seemed to me perfection--a youth, a man! And now you talked of the world with the old wit, And now of the soul--how such a man went down Through folly or wrong done by him, and how Man's death cannot end all, There must be life hereafter!..."
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "As you were that day, as you looked and spoke, As the earth was, I hear as the soul of it all Godard's *Dawn*, Dvorák's *Humoresque*, The Morris Dances, Mendelssohn's *Barcarole*, And old Scotch songs, *When the Kye Come Hame*, And *The Moon Had Climbed the Highest Hill*, The Musseta Waltz and Rudolph's Narrative; Your great brow seemed Beethoven's And the lust of life in your face Cellini's, And your riotous fancy like Dumas. I was nearer you now than ever before, And finding each other thus I see to-day How the human soul seeks the human soul And finds the one it seeks at last. For you know you can open a window That looks upon embowered darkness, When the flowers sleep and the trees are still At Midnight, and no light burns in the room; And you can hide your butterfly Somewhere in the room, but soon you will see A host of butterfly mates Fluttering through the window to join Your butterfly hid in the room. It is somehow thus with souls...."
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "This day then I understood it all: Your vital democracy and love of men And tolerance of life; and how the excess of these Had wrought your sorrows in the days When we were so poor, and the small of mind Spoke of your sins and your connivance With sinful men. You had lived it down, Had triumphed over them, and you had grown. Prosperous in the world and had passed Into an easy mastery of life and beyond the thought Of further conquests for things. As the Brahmins say, no more you worshiped matter, Or scarcely ghosts, or even the gods With singleness of heart. This day you worshiped Eternal Peace Or Eternal Flame, with scarce a laugh or jest To hide your worship; and I understood, Seeing so many facets to you, why it was Blind Condon always smiled to hear your voice, And why it was in a greenroom years ago Booth turned to you, marking your face From all the rest, and said, \"There is a man Who might play Hamlet--better still Othello\"; And why it was the women loved you; and the priest Could feed his body and soul together drinking A glass of beer and visiting with you...."
+    },
+    {
+      "id": "s17-10",
+      "sceneId": "s17",
+      "text": "Then something happened: Your face grew smaller, your brow more narrow, Dull fires burned in your eyes, Your body shriveled, you walked with a cynical shuffle, Your hands mixed the keys of life, You had become a discord. A monstrous hatred consumed you-- You had suffered the greatest wrong of all, I knew and granted the wrong. You had mounted up to sixty years, now breathing hard, And just at the time that honor belonged to you You were dishonored at the hands of a friend. I wept for you, and still I wondered If all I had grown to see in you and find in you And love in you was just a fond illusion-- If after all I had not seen you aright as a boy: Barbaric, hard, suspicious, cruel, redeemed Alone by bubbling animal spirits-- Even these gone now, all of you smoke Laden with stinging gas and lethal vapor.... Then you came forth again like the sun after storm-- The deadly uric acid driven out at last Which had poisoned you and dwarfed your soul-- So much for soul!"
+    },
+    {
+      "id": "s17-11",
+      "sceneId": "s17",
+      "text": "The last time I saw you Your face was full of golden light, Something between flame and the richness of flesh. You were yourself again, wholly yourself. And oh, to find you again and resume Our understanding we had worked so long to reach-- You calm and luminant and rich in thought! This time it seemed we said but \"yes\" or \"no\"-- That was enough; we smoked together And drank a glass of wine and watched The leaves fall sitting on the porch.... Then life whirled me away like a leaf, And I went about the crowded ways of New York."
+    },
+    {
+      "id": "s17-12",
+      "sceneId": "s17",
+      "text": "And one night Alberta and I took dinner At a place near Fourteenth Street where the music Was like the sun on a breeze-swept lake When every wave is a patine of fire, And I thought of you not at all Looking at Alberta and watching her white teeth Bite off bits of Italian bread, And watching her smile and the wide pupils Of her eyes, electrified by wine And music and the touch of our hands Now and then across the table. We went to her house at last. And through a languorous evening. Where no light was but a single candle, We circled about and about a pending theme Till at last we solved it suddenly in rapture Almost by chance; and when I left She followed me to the hall and leaned above The railing about the stair for the farewell kiss-- And I went into the open air ecstatically, With the stars in the spaces of sky between The towering buildings, and the rush Of wheels and clang of bells, Still with the fragrance of her lips and cheeks And glinting hair about me, delicate And keen in spite of the open air. And just as I entered the brilliant car Something said to me you are dead-- I had not thought of you, was not thinking of you. But I knew it was true, as it was, For the telegram waited me at my room...."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "Vanquished or seemingly vanquished!"
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "Rain IN MY Heart"
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "There is a quiet in my heart Like one who rests from days of pain. Outside, the sparrows on the roof Are chirping in the dripping rain."
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "Rain in my heart; rain on the roof; And memory sleeps beneath the gray And windless sky and brings no dreams Of any well remembered day."
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "I would not have the heavens fair, Nor golden clouds, nor breezes mild,"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "The face I loved so greatly changed."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "THE Loop"
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "From State street bridge a snow-white glimpse of sea Beyond the river walled in by red buildings, O'ertopped by masts that take the sunset's gildings, Roped to the wharf till spring shall set them free. Great floes make known how swift the river's current. Out of the north sky blows a cutting wind. Smoke from the stacks and engines in a torrent Whirls downward, by the eddying breezes thinned. Enskyed are sign boards advertising soap, Tobacco, coal, transcontinental trains. A tug is whistling, straining at a rope, Fixed to a dredge with derricks, scoops and cranes. Down in the loop the blue-gray air enshrouds, As with a cyclops' cape, the man-made hills And towers of granite where the city crowds. Above the din a copper's whistle shrills. There is a smell of coffee and of spices. We near the market place of trade's devices. Blue smoke from out a roasting room is pouring. A rooster crows, geese cackle, men are bawling. Whips crack, trucks creak, it is the place of storing, And drawing out and loading up and hauling Fruit, vegetables and fowls and steaks and hams, Oysters and lobsters, fish and crabs and clams. And near at hand are restaurants and bars, Hotels with rooms at fifty cents a day, Beer tunnels, pool rooms, places where cigars And cigarettes their window signs display; Mixed in with letterings of printed tags, Twine, boxes, cartels, sacks and leather bags, Wigs, telescopes, eyeglasses, ladies' tresses, Or those who manicure or fashion dresses, Or sell us putters, tennis balls or brassies, Make shoes, pull teeth, or fit the eye with glasses."
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "And now the rows of windows showing laces, Silks, draperies and furs and costly vases, Watches and mirrors, silver cups and mugs, Emeralds, diamonds, Indian, Persian rugs, Hats, velvets, silver buckles, ostrich-plumes, Drugs, violet water, powder and perfumes. Here is a monstrous winking eye--beneath A showcase by an entrance full of teeth. Here rubber coats, umbrellas, mackintoshes, Hoods, rubber boots and arctics and galoshes. Here is half a block of overcoats, In this bleak time of snow and slender throats. Then windows of fine linen, snakewood canes, Scarfs, opera hats, in use where fashion reigns. As when the hive swarms, so the crowded street Roars to the shuffling of innumerable feet. Skyscrapers soar above them; they go by As bees crawl, little scales upon the skin Of a great dragon winding out and in. Above them hangs a tangled tree of signs, Suspended or uplifted like dædalian Hieroglyphics when the saturnalian Night commences, and their racing lines Run fire of blue and yellow in a puzzle, Bewildering to the eyes of those who guzzle, And gourmandize and stroll and seek the bubble Of happiness to put away their trouble."
+    },
+    {
+      "id": "s19-4",
+      "sceneId": "s19",
+      "text": "Around the loop the elevated crawls, And giant shadows sink against the walls Where ten to twenty stories strive to hold The pale refraction of the sunset's gold. Slop underfoot, we pass beneath the loop. The crowd is uglier, poorer; there are smells As from the depths of unsuspected hells, And from a groggery where beer and soup Are sold for five cents to the thieves and bums. Here now are huge cartoons in red and blue Of obese women and of skeleton men, Egyptian dancers, twined with monstrous snakes, Before the door a turbaned lithe Hindoo, A bagpipe shrilling, underneath a den Of opium, whence a man with hand that shakes, Rolling a cigarette, so palely comes. The clang of car bells and the beat of drums. Draft horses clamping with their steel-shod hoofs. The buildings have grown small and black and worn; The sky is more beholden; o'er the roofs A flock of pigeons soars; with dresses torn And yellow faces, labor women pass Some Chinese gabbling; and there, buying fruit, Stands a fair girl who is a late recruit To those poor women slain each year by lust. 'Tis evening now and trade will soon begin. The family entrance beckons for a glass Of hopeful mockery, the piano's din Into the street with sounds of rasping wires Filters, and near a pawner's window shows Pistols, accordions; and, luring buyers, A Jew stands mumbling to the passer-by Of jewelry and watches and old clothes. A limousine gleams quickly--with a cry A legless man fastened upon a board With casters 'neath it by a sudden shove Darts out of danger. And upon the corner A lassie tells a man that God is love, Holding a tambourine with its copper hoard To be augmented by the drunken scorner. A woman with no eyeballs in her sockets Plays \"Rock of Ages\" on a wheezy organ. A newsboy with cold hands thrust in his pockets Cries, \"All about the will of Pierpont Morgan!\" The roofline of the street now sinks and dwindles. The windows are begrimed with dust and beer. A child half clothed, with legs as thin as spindles, Carries a basket with some bits of coal. Between lace curtains eyes of yellow leer, The cheeks splotched with white places like the skin Inside an eggshell--destitute of soul. One sees a brass lamp oozing kerosene Upon a stand whereon her elbows lean; Lighted, it soon will welcome negroes in."
+    },
+    {
+      "id": "s19-5",
+      "sceneId": "s19",
+      "text": "The railroad tracks are near. We almost choke From filth whirled from the street and stinging vapors. Great engines vomit gas and heavy smoke Upon a north wind driving tattered papers, Dry dung and dust and refuse down the street. A circumambient roar as of a wheel Whirring far off--a monster's heart whose beat Is full of murmurs, comes as we retreat Towards Twenty-second. And a man with jaw Set like a tiger's, with a dirty beard, Skulks toward the loop, with heavy wrists red-raw Glowing above his pockets where his hands Pushed tensely round his hips the coat tails draw, And show what seems a slender piece of metal In his hip pocket. On these barren strands He waits for midnight for old scores to settle Against his ancient foe society, Who keeps the soup house and who builds the jails. Switchmen and firemen with their dinner pails Go by him homeward, and he wonders if These fellows know a hundred thousand workers Walk up and down the city's highways, stiff From cold and hunger, doomed to poverty, As wretched as the thieves and crooks and shirkers. He scurries to the lake front, loiters past The windows of wax lights with scarlet shades, Where smiling diners back of ambuscades Of silk and velvet hear not winter's blast Blowing across the lake. He has a thought Of Michigan, where once at picking berries He spent a summer--then his eye is caught At Randolph street by written light which tarries, Then like a film runs into sentences. He sees it all as from a black abyss. Taxis with skid chains rattle, limousines Draw up to awnings; for a space he catches A scent of musk or violets, sees the patches On powdered cheeks of furred and jeweled queens. The color round his cruel mouth grows whiter, He thrusts his coarse hands in his pockets tighter: He is a thief, he knows he is a thief, He is a thief found out, and, as he knows, The whole loop is a kingdom held in fief By men who work with laws instead of blows From sling shots, so he curses under breath The money and the invisible hand that owns From year to year, in spite of change and death, The wires for the lights and telephones, The railways on the streets, and overhead The railways, and beneath the winding tunnel Which crooks stole from the city for a runnel To drain her nickels; and the pipes of lead Which carry gas, wrapped round us like a snake, And round the courts, whose grip no court can break. He curses bitterly all those who rise, And rule by just the spirit which he plies Coarsely against the world's great store of wealth; Bankers and usurers and cliques whose stealth Works witchcraft through the market and the press, And hires editors, or owns the stock Controlling papers, playing with finesse The city's thinking, that they may unlock Treasures and powers like burglars in the dark. And thinking thus and cursing, through a flurry Of sudden snow he hastens on to Clark. In a cheap room there is an eye to mark His coming and be glad. His footsteps hurry. She will have money, earned this afternoon Through men who took her from a near saloon Wherein she sits at table to dragoon Roughnecks or simpletons upon a lark. Within a little hall a fierce-eyed youth Rants of the burdens on the people's backs-- He would cure all things with the single tax. A clergyman demands more gospel truth, Speaking to Christians at a weekly dinner. A parlor Marxian, for a beginner Would take the railways. And amid applause Where lawyers dine, a judge says all will be Well if we hand down to posterity Respect for courts and judges and the laws."
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "To be so quiet and indifferent."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "When Under THE ICY Eaves"
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "When under the icy eaves The swallow heralds the sun, And the dove for its lost mate grieves And the young lambs play and run;"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "In the fresh flags by the lakes."
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "When the sick man seeks the air, And the graves of the dead grow green, Where the children play unaware Of the faces no longer seen;"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "In the fresh flags by the lakes."
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "IN THE CAR"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "And sad for the last good-by."
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "Simon Surnamed Peter"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "You had slept while He watched, but fierce were you, fierce and awake"
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "And cursing, no doubt, as you smote off, as one of the least,"
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "As you leaped in the sea, so you spoke as you smote with the sword; \"Thou art Christ, even Lord!\" John leaned on His breast, but he asked you, your strength to foresee,"
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "In the dream of the vessel that held all the four-footed beasts,"
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "With which to reveal and fling wide all the soul and the scheme"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "When you flashed in a trice, as later you smote with the sword:"
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "You were called by Him, Peter, a rock, but we give you the name"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "Gnarled branch of the vine!"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "He must obey no matter what befalls him."
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "Of soul by watching, And the creation of eyes Over your mind's eyes to supervise A clear activity and to ward off sloth."
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "And killing the snake of Hatred and stripping the glove From the hand of Hypocrisy and quenching the fire"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "Secure and free to increase."
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "And were going about rejoicing and defying"
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "And certain members of the Bar Association, And of the Civic Federation, And of the League of Public Efficiency, And a legion"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "In red cells is so rich."
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "With joy--but with a most unuttered pain."
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "Stretched him and rubbed his eyes."
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "Cracked like a temple's roof. A new hierarchy burst its shell,"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Where the restless river flows."
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "The hypocrite holds the state.\""
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "And trafficked in the law."
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "So deadly a passion flower."
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "As he licks the bones of an ox."
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "If you ask it not for bread."
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "And buy a crucifix!"
+    },
+    {
+      "id": "s48-1",
+      "sceneId": "s48",
+      "text": "THE Idiot"
+    },
+    {
+      "id": "s48-2",
+      "sceneId": "s48",
+      "text": "Two children in a garden Shouting for joy Were playing dolls and houses, A girl and boy. I smiled at a neighbor window, And watched them play Under a budding oak tree On a wintry day."
+    },
+    {
+      "id": "s48-3",
+      "sceneId": "s48",
+      "text": "And then a board half broken In the high fence Fell over and there entered, I know not whence, A jailbird face of yellow With a vacant sulk, His body was a sickly"
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "With a dirty spade. As a tiger growls with an antelope After the hunt, Over the little faces I heard him grunt."
+    },
+    {
+      "id": "s49-1",
+      "sceneId": "s49",
+      "text": "I stood at the window frozen, And short of breath, And then I saw the idiot"
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "To the kiss of spring. And the yellow face in a moment Was a mystic white;"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "And stood on a globe. I watched him from the window Under a spell; The idiot was the angel Azrael!"
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "On an ancient vase representing in bas-relief the flight of Helen."
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "And clove its bands."
+    },
+    {
+      "id": "s53-1",
+      "sceneId": "s53",
+      "text": "And this, I deem, is why The restless ages sigh, Helen, for thee. Whate'er we do or dream, Whate'er we say or seem, We would be free."
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "And flowers more fair."
+    },
+    {
+      "id": "s54-1",
+      "sceneId": "s54",
+      "text": "We would behold fresh skies Where summer never dies And amaranths spring; Lands where the halcyon hours Nest over scented bowers On folded wing."
+    },
+    {
+      "id": "s54-2",
+      "sceneId": "s54",
+      "text": "We would be crowned with bays, And spend the long bright days On sea or shore; Or sit by haunted woods, And watch the deep sea's moods,"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "Ah! we would know relief From marts of wine and beef, And oil and bread."
+    },
+    {
+      "id": "s55-1",
+      "sceneId": "s55",
+      "text": "Helen of Troy, Greek art Hath made our heart thy heart, Thy love our love. For poesy, like thee, Must fly and wander free As the wild dove."
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "Grown weary cries Enough!"
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "Or who it was that walked through Burnham wood?"
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "We lived eternally."
+    },
+    {
+      "id": "s58-1",
+      "sceneId": "s58",
+      "text": "THE Question"
+    },
+    {
+      "id": "s58-2",
+      "sceneId": "s58",
+      "text": "I"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "In whose arms are you now asleep?"
+    },
+    {
+      "id": "s59-1",
+      "sceneId": "s59",
+      "text": "THE Answer"
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "How red your cheeks, how bright your eyes!\""
+    },
+    {
+      "id": "s60-1",
+      "sceneId": "s60",
+      "text": "THE Sign"
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "Falling, before the gale."
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "Was out in the cold for the sound."
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "The sound of a creaking sign."
+    },
+    {
+      "id": "s63-1",
+      "sceneId": "s63",
+      "text": "Especially if the sky be bleak, And no one stirs however you seek, And every time you hear it creak You wonder why they leave it stay When a man is buried and hidden away Many a day!"
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "Becomes as plain as day."
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "Or what's the matter with Bryan."
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "And I rather think it's God."
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "And she but the work of his hand."
+    },
+    {
+      "id": "s67-1",
+      "sceneId": "s67",
+      "text": "Portrait OF A Woman"
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "Of a tear from my cheek."
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "And watch your hands and eyes."
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "The soothing earth to brighten April's wonder."
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "Our love and hatred and our silent rage."
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "Nor right a woman's wrong."
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "The beginning and end of love are devoid of speech."
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "You know this and the thought of it is hell!"
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "Plump from camembert and clicquot, eyelids Thin as skins of onions, cut like dough 'round the eyes."
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "And a dining room where the sun comes in,"
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "But take me as mistress and grow like the picture before you,"
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "Then fell into silence."
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "My heart acts queer of late...."
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "This flower of you is what I call *The Lover*!"
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "But never a face like Harold's who passed in a throe of pain. There were maidens and youths in the bud, and men in the lust of life; And women whom child-birth racked till the crying soul slipped through;"
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "Looked with a penitent pallor and stared with a sad surprise."
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "And the ardent heat of his blood was cold as the sweat of a stone."
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "And her little life was tossed as the eddies that whirl in the hollows From the great world-currents that wreck the battle ships at sea. And the face of dead Lillian seemed like a rain-ruined flower."
+    },
+    {
+      "id": "s84-1",
+      "sceneId": "s84",
+      "text": "Or what is writ on the brow of the babe as the mother wails for the day When it leaped in the light of the sun and babbled its pure delight?"
+    },
+    {
+      "id": "s84-2",
+      "sceneId": "s84",
+      "text": "But the face of William the Great was fashioned by life and thought; And death made it massive as bronze, and deepened the lines thereof:"
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "But the sorrow thereof is dumb like the cloth that lies on the brow. So what should be said of the faun surprised in the woodland dances, Of Harold the light of heart who fought with fear to the last?"
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "Perhaps this cry in my heart is nothing but God!"
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "You're standing on the deck, my son, and looking at the shore."
+    },
+    {
+      "id": "s87-1",
+      "sceneId": "s87",
+      "text": "I lean against the wall, mother, and struggle hard for breath. You must have heard the step, my son, of the patrolman Death."
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "Well, kiss the crucifix, my son, and pass beneath the rod."
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "There is no door but death."
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "Who knocks? Unbolt the door!"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "*For He knoweth our frame, He remembereth that we are dust.*--Psalm Ciii. 14."
+    },
+    {
+      "id": "s91-1",
+      "sceneId": "s91",
+      "text": "Oh Lord, when all our bones are thrust Beyond the gaze of all but Thine; And these blaspheming tongues are dust Which babbled of Thy name divine, How helpless then to carp or rail Against the canons of Thy word; Wilt Thou, when thus our spirits fail, Have mercy, Lord?"
+    },
+    {
+      "id": "s91-2",
+      "sceneId": "s91",
+      "text": "Here from this ebon speck that floats As but a mote within Thine eye, Vain sneers and curses from our throats Rise to the vault of Thy fair sky: Yet when this world of ours is still"
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "Have mercy, Lord!"
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "Have mercy, Lord!"
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "Have mercy, Lord!"
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "Have mercy, Lord!"
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "Great works we planned in hopes that Thou"
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "Have mercy, Lord!"
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "Hold the whole scheme at once in mind! Yet, dost Thou watch our anxious woe Who piece with palsied hands and blind The fragments of our little plan, To thrive and earn Thy blest reward, And make and keep the world of man--"
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "To be subdued and made divine. Whether we serve Thee ill or well, Thou knowest our frame, nor canst afford To leave Thy own for long in hell-- Have mercy, Lord!"
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "*The Human Voice*"
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "*A Voice*"
+    },
+    {
+      "id": "s101-1",
+      "sceneId": "s101",
+      "text": "I knew."
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "You could not read it."
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "And then pours in new wine!"
+    },
+    {
+      "id": "s103-1",
+      "sceneId": "s103",
+      "text": "Madeline"
+    },
+    {
+      "id": "s103-2",
+      "sceneId": "s103",
+      "text": "I almost heard your little heart"
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "And play with Marcia under the tree!"
+    },
+    {
+      "id": "s104-1",
+      "sceneId": "s104",
+      "text": "Marcia"
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "Building a doll-house under the tree!"
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "In praise of spring and Aphrodite."
+    },
+    {
+      "id": "s106-1",
+      "sceneId": "s106",
+      "text": "My heart is an altar of chalcedony,"
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "Oh Life! Oh Love! We lift our hands to thee!"
+    },
+    {
+      "id": "s107-1",
+      "sceneId": "s107",
+      "text": "Soul'S Desire"
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "Its rapture and despair."
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "By the window's open fold,"
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "And trees of spicery."
+    },
+    {
+      "id": "s110-1",
+      "sceneId": "s110",
+      "text": "And therewithal was meat and drink, And a damsel passing fair,"
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "A golden cup did bear."
+    },
+    {
+      "id": "s111-1",
+      "sceneId": "s111",
+      "text": "\"O, Jesu,\" said Sir Launcelot, \"What may this marvel mean?\""
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "That any man hath seen.\""
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "\"What may this sight avail?\""
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "\"O Jesu,\" said Sir Launcelot,"
+    },
+    {
+      "id": "s115-0",
+      "sceneId": "s115",
+      "text": "May ever hope to see."
+    },
+    {
+      "id": "s115-1",
+      "sceneId": "s115",
+      "text": "The Death of Sir Launcelot"
+    },
+    {
+      "id": "s116-0",
+      "sceneId": "s116",
+      "text": "Nay, saith the Bishop of Canterbury,"
+    },
+    {
+      "id": "s117-0",
+      "sceneId": "s117",
+      "text": "Nay, saith the Bishop of Canterbury,"
+    },
+    {
+      "id": "s118-0",
+      "sceneId": "s118",
+      "text": "Nay, saith the Bishop of Canterbury,"
+    },
+    {
+      "id": "s119-0",
+      "sceneId": "s119",
+      "text": "Nay, saith the Bishop of Canterbury,"
+    },
+    {
+      "id": "s120-0",
+      "sceneId": "s120",
+      "text": "Nay, saith the Bishop of Canterbury,"
+    },
+    {
+      "id": "s121-0",
+      "sceneId": "s121",
+      "text": "May all souls find their rest. Amen."
+    },
+    {
+      "id": "s122-0",
+      "sceneId": "s122",
+      "text": "And go to meet you?"
+    },
+    {
+      "id": "s123-0",
+      "sceneId": "s123",
+      "text": "All the interval of waiting is a wall."
+    },
+    {
+      "id": "s124-0",
+      "sceneId": "s124",
+      "text": "I saw it all in a glance. And there in dread of eyes we stood"
+    },
+    {
+      "id": "s125-0",
+      "sceneId": "s125",
+      "text": "And crossed the moon."
+    },
+    {
+      "id": "s126-0",
+      "sceneId": "s126",
+      "text": "And where, after resting, to follow your will"
+    },
+    {
+      "id": "s127-0",
+      "sceneId": "s127",
+      "text": "But you had arisen. Then I dressed and searched for you, But you were gone. Then I stood for long minutes Looking at a sail far out at sea And departed too."
+    },
+    {
+      "id": "s128-0",
+      "sceneId": "s128",
+      "text": "Mad Frederick will be here."
+    },
+    {
+      "id": "s129-0",
+      "sceneId": "s129",
+      "text": "Some of youth, some of age. They had given up the fight, They had drunk poisoned water, They had searched Until they fell-- All had gone mad!"
+    },
+    {
+      "id": "s130-0",
+      "sceneId": "s130",
+      "text": "They will never see me watching one star."
+    },
+    {
+      "id": "s131-0",
+      "sceneId": "s131",
+      "text": "And glance at stars as I pass. They will never spy again Upon my ecstasy.\""
+    },
+    {
+      "id": "s131-1",
+      "sceneId": "s131",
+      "text": "And I knew that mad Frederick In this flight"
+    },
+    {
+      "id": "s132-0",
+      "sceneId": "s132",
+      "text": "Which was the worst madness of all."
+    },
+    {
+      "id": "s133-0",
+      "sceneId": "s133",
+      "text": "The star was there, but its meaning vanished. And mad Frederick, going here and there, With no purpose, Only curious and interested As I was, a certain god, Came by a certain pool"
+    },
+    {
+      "id": "s134-0",
+      "sceneId": "s134",
+      "text": "Printed in the United States of America."
+    },
+    {
+      "id": "s134-1",
+      "sceneId": "s134",
+      "text": "The following pages contain advertisements of books by the same author or on kindred subjects"
+    },
+    {
+      "id": "s135-0",
+      "sceneId": "s135",
+      "text": "*Mr. Masters' book is considered by many to be the most striking and important contribution to American letters in recent years*:--"
+    },
+    {
+      "id": "s135-1",
+      "sceneId": "s135",
+      "text": "\"An American 'Comedie Humaine' brings more characters into its pages than any American novel.... Takes its place among the masterpieces"
+    },
+    {
+      "id": "s136-0",
+      "sceneId": "s136",
+      "text": "\"A work splendid in observation, marvelous in the artistry of exclusion, yet of democratic inclusiveness, piercingly analytic of character, of plastic facility of handling, sympathetic underneath"
+    },
+    {
+      "id": "s137-0",
+      "sceneId": "s137",
+      "text": "universal--a Comedie Humaine--a creation of a whole community of"
+    },
+    {
+      "id": "s138-0",
+      "sceneId": "s138",
+      "text": "\"We find a strange impressiveness, akin to greatness, in the 'Spoon River Anthology' of Edgar Lee Masters.... It is a book which, whether one likes it or not, one must respect.\"--*The New Republic.*"
+    },
+    {
+      "id": "s139-0",
+      "sceneId": "s139",
+      "text": "illuminating piece of work, and an unforgettable one.\"--_Chicago"
+    },
+    {
+      "id": "s140-0",
+      "sceneId": "s140",
+      "text": "\"The natural child of Wait Whitman ... the only poet with true"
+    },
+    {
+      "id": "s141-0",
+      "sceneId": "s141",
+      "text": "*Cloth, $1.25; leather, $1.50*"
+    },
+    {
+      "id": "s141-1",
+      "sceneId": "s141",
+      "text": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York"
+    },
+    {
+      "id": "s142-0",
+      "sceneId": "s142",
+      "text": "Author of \"The Everlasting Mercy\" and \"The Widow in the Bye Street,\""
+    },
+    {
+      "id": "s143-0",
+      "sceneId": "s143",
+      "text": "The title piece in this volume is a dramatic poem of sixty pages, the action of which takes place in the time of Christ. The characters introduced include Pontius Pilate, Joseph of Ramah and Herod. The play, for it is really such, is written in rhyme and is one of Mr."
+    },
+    {
+      "id": "s144-0",
+      "sceneId": "s144",
+      "text": "literature. In addition to this there are in the book many sonnets and"
+    },
+    {
+      "id": "s145-0",
+      "sceneId": "s145",
+      "text": "\"Reveals an interesting development in poetic thought and expression ... a new Masefield ... who has never written with more dignity, nor with more artistry. Those who go in quest of Beauty will find her here.... Here is beauty of impression, beauty of expression, beauty"
+    },
+    {
+      "id": "s146-0",
+      "sceneId": "s146",
+      "text": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York"
+    },
+    {
+      "id": "s147-0",
+      "sceneId": "s147",
+      "text": "Author of \"The Porcupine,\" \"Captain Craig and Other Poems,\" etc."
+    },
+    {
+      "id": "s148-0",
+      "sceneId": "s148",
+      "text": "collection of poems. Those who remember \"Captain Craig and Other Poems,\" a volume which brought to its author the heartiest of congratulations, placing him at once in the rank of those American writers whose contributions to literature are of permanent value, will welcome this new work and will find that their anticipation of it and hopes for it are to be pleasantly realized. It is a book which well carries out that early promise and which helps to maintain Mr."
+    },
+    {
+      "id": "s149-0",
+      "sceneId": "s149",
+      "text": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York"
+    },
+    {
+      "id": "s150-0",
+      "sceneId": "s150",
+      "text": "Here with that intensely human note exhibited in his poems of the working classes, Mr. Gibson sings of the life of the soldier. There are many moods in the book, for the author has well caught the flow of spirits from gaiety to despair which makes up the soldier's days. The chief characteristic of the little pen pictures is their vividness, the way in which they bring before the reader the thoughts and feelings of those whose lives may be offered up for their country any moment. In addition to these poems of battle there are others in the"
+    },
+    {
+      "id": "s151-0",
+      "sceneId": "s151",
+      "text": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York"
+    },
+    {
+      "id": "s152-0",
+      "sceneId": "s152",
+      "text": "Author of \"Sword Blades and Poppy Seed,\" \"A Dome of Many-Coloured"
+    },
+    {
+      "id": "s153-0",
+      "sceneId": "s153",
+      "text": "A brilliant series of biographical and critical essays dealing with Émile Verhaeren, Albert Samain, Remy de Gourmont, Henri de Régnier, Francis Jammes, and Paul Fort, by one of the foremost living American"
+    },
+    {
+      "id": "s154-0",
+      "sceneId": "s154",
+      "text": "The translations make up an important part of the book, and together with the French originals constitute a representative anthology of the"
+    },
+    {
+      "id": "s155-0",
+      "sceneId": "s155",
+      "text": "\"Seems to me as unusual--in the happiest sense of the word, ... I find the book a model, in total effect, of what a work with such"
+    },
+    {
+      "id": "s156-0",
+      "sceneId": "s156",
+      "text": "William Lyon Phelps, Professor of English Literature, Yale University,"
+    },
+    {
+      "id": "s157-0",
+      "sceneId": "s157",
+      "text": "\"This is, I think, the most valuable work on contemporary French literature that I have seen for a long time. It is written by one who has a thorough knowledge of the subject and who is herself an American poet of distinction. She has the knowledge, the sympathy, the penetration, and the insight--all necessary to make a notable book of criticism. It is a work that should be widely read in America.\""
+    },
+    {
+      "id": "s158-0",
+      "sceneId": "s158",
+      "text": "*Boards, 12mo, $1.25*"
+    },
+    {
+      "id": "s158-1",
+      "sceneId": "s158",
+      "text": "\"From the standard of pure poetry, Miss Lowell's poem, 'The Book of the Hours of Sister Clotilde' is one of the loveliest in our poetry,"
+    },
+    {
+      "id": "s159-0",
+      "sceneId": "s159",
+      "text": "\"Such verse as this is delightful, has a sort of personal flavor, a loyalty to the fundamentals of life and nationality.... The child"
+    },
+    {
+      "id": "s160-0",
+      "sceneId": "s160",
+      "text": "Publishers 64-66 Fifth Avenue New York"
+    },
+    {
+      "id": "s161-0",
+      "sceneId": "s161",
+      "text": "Inconsistencies in spelling and hyphenation have been retained from the"
+    },
+    {
+      "id": "s162-0",
+      "sceneId": "s162",
+      "text": "It is not always possible to determine if a new stanza begins at the top of a printed page, but every effort has been made by the transcriber to retain stanza breaks where appropriate."
+    }
+  ]
+}

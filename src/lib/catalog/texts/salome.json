@@ -1,0 +1,2091 @@
+{
+  "id": "salome",
+  "title": "Salomé",
+  "author": "Oscar Wilde (trans. Lord Alfred Douglas)",
+  "year": "1893",
+  "note": "Project Gutenberg 42704",
+  "minutes": 63,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Salomé",
+      "place": "Terrace of Herod's palace",
+      "reentry": "Scene--THE Great Terrace Outside THE Palace.",
+      "prompt": "A line from this act."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Scene--THE Great Terrace Outside THE Palace."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "* * * * *"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Scene.--*A great terrace in the Palace of Herod, set above the banqueting-hall. Some soldiers are leaning over the balcony. To the right there is a gigantic staircase, to the left, at the back, an old cistern surrounded by a wall of green bronze. Moonlight.*"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "The Young Syrian: How beautiful is the Princess Salomé to-night!"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "The Page of Herodias: Look at the moon! How strange the moon seems! She is like a woman rising from a tomb. She is like a dead woman. You would fancy she was looking for dead things."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "The Young Syrian: She has a strange look. She is like a little princess who wears a yellow veil, and whose feet are of silver. She is like a princess who has little white doves for feet. You would fancy she was dancing."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "The Page of Herodias: She is like a woman who is dead. She moves very slowly."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "[*Noise in the banqueting-hall.*]"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "First Soldier: What an uproar! Who are those wild beasts howling?"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Second Soldier: The Jews. They are always like that. They are disputing about their religion."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "First Soldier: Why do they dispute about their religion?"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Second Soldier: I cannot tell. They are always doing it. The Pharisees, for instance, say that there are angels, and the Sadducees declare that angels do not exist."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "First Soldier: I think it is ridiculous to dispute about such things."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "The Young Syrian: How beautiful is the Princess Salomé to-night!"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "The Page of Herodias: You are always looking at her. You look at her too much. It is dangerous to look at people in such fashion. Something terrible may happen."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The Young Syrian: She is very beautiful to-night."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "First Soldier: The Tetrarch has a sombre look."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "Second Soldier: Yes; he has a sombre look."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "First Soldier: He is looking at something."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Second Soldier: He is looking at some one."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "First Soldier: At whom is he looking?"
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Second Soldier: I cannot tell."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "The Young Syrian: How pale the Princess is! Never have I seen her so pale. She is like the shadow of a white rose in a mirror of silver."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "The Page of Herodias: You must not look at her. You look too much at her."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "First Soldier: Herodias has filled the cup of the Tetrarch."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "The Cappadocian: Is that the Queen Herodias, she who wears a black mitre sewn with pearls, and whose hair is powdered with blue dust?"
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "First Soldier: Yes; that is Herodias, the Tetrarch's wife."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "Second Soldier: The Tetrarch is very fond of wine. He has wine of three sorts. One which is brought from the Island of Samothrace, and is purple like the cloak of Cæsar."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "The Cappadocian: I have never seen Cæsar."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "Second Soldier: Another that comes from a town called Cyprus, and is yellow like gold."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "The Cappadocian: I love gold."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "Second Soldier: And the third is a wine of Sicily. That wine is red like blood."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "The Nubian: The gods of my country are very fond of blood. Twice in the year we sacrifice to them young men and maidens; fifty young men and a hundred maidens. But it seems we never give them quite enough, for they are very harsh to us."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "The Cappadocian: In my country there are no gods left. The Romans have driven them out. There are some who say that they have hidden themselves in the mountains, but I do not believe it. Three nights I have been on the mountains seeking them everywhere. I did not find them. And at last I called them by their names, and they did not come. I think they are dead."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "First Soldier: The Jews worship a God that you cannot see."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "The Cappadocian: I cannot understand that."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "First Soldier: In fact, they only believe in things that you cannot see."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "The Cappadocian: That seems to me altogether ridiculous."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "The Voice of Jokanaan: After me shall come another mightier than I. I am not worthy so much as to unloose the latchet of his shoes. When he cometh, the solitary places shall be glad. They shall blossom like the lily. The eyes of the blind shall see the day, and the ears of the deaf shall be opened. The new-born child shall put his hand upon the dragon's lair, he shall lead the lions by their manes."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "Second Soldier: Make him be silent. He is always saying ridiculous things."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "First Soldier: No, no. He is a holy man. He is very gentle, too. Every day, when I give him to eat he thanks me."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "The Cappadocian: Who is he?"
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "First Soldier: A prophet."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "The Cappadocian: What is his name?"
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "First Soldier: Jokanaan."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "The Cappadocian: Whence comes he?"
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "First Soldier: From the desert, where he fed on locusts and wild honey. He was clothed in camel's hair, and round his loins he had a leathern belt. He was very terrible to look upon. A great multitude used to follow him. He even had disciples."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "The Cappadocian: What is he talking of?"
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "First Soldier: We can never tell. Sometimes he says terrible things, but it is impossible to understand what he says."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "The Cappadocian: May one see him?"
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "First Soldier: No. The Tetrarch has forbidden it."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "The Young Syrian: The Princess has hidden her face behind her fan! Her little white hands are fluttering like doves that fly to their dove-cots. They are like white butterflies. They are just like white butterflies."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "The Page of Herodias: What is that to you? Why do you look at her? You must not look at her.... Something terrible may happen."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "[*Pointing to the cistern.*]"
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "The Cappadocian: What a strange prison!"
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "Second Soldier: It is an old cistern."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "The Cappadocian: An old cistern! It must be very unhealthy."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "Second Soldier: Oh no! For instance, the Tetrarch's brother, his elder brother, the first husband of Herodias the Queen, was imprisoned there for twelve years. It did not kill him. At the end of the twelve years he had to be strangled."
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "The Cappadocian: Strangled? Who dared to do that?"
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "[*Pointing to the Executioner, a huge Negro.*]"
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "Second Soldier: That man yonder, Naaman."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "The Cappadocian: He was not afraid?"
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "Second Soldier: Oh no! The Tetrarch sent him the ring."
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "The Cappadocian: What ring?"
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "Second Soldier: The death-ring. So he was not afraid."
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "The Cappadocian: Yet it is a terrible thing to strangle a king."
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "First Soldier: Why? Kings have but one neck, like other folk."
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "The Cappadocian: I think it terrible."
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "The Young Syrian: The Princess rises! She is leaving the table! She looks very troubled. Ah, she is coming this way. Yes, she is coming towards us. How pale she is! Never have I seen her so pale."
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "The Page of Herodias: Do not look at her. I pray you not to look at her."
+    },
+    {
+      "id": "s0-70",
+      "sceneId": "s0",
+      "text": "The Young Syrian: She is like a dove that has strayed.... She is like a narcissus trembling in the wind.... She is like a silver flower."
+    },
+    {
+      "id": "s0-71",
+      "sceneId": "s0",
+      "text": "[*Enter Salomé*.]"
+    },
+    {
+      "id": "s0-72",
+      "sceneId": "s0",
+      "text": "Salomé: I will not stay. I cannot stay. Why does the Tetrarch look at me all the while with his mole's eyes under his shaking eyelids? It is strange that the husband of my mother looks at me like that. I know not what it means. In truth, yes, I know it."
+    },
+    {
+      "id": "s0-73",
+      "sceneId": "s0",
+      "text": "The Young Syrian: You have just left the feast, Princess?"
+    },
+    {
+      "id": "s0-74",
+      "sceneId": "s0",
+      "text": "Salomé: How sweet the air is here! I can breathe here! Within there are Jews from Jerusalem who are tearing each other in pieces over their foolish ceremonies, and barbarians who drink and drink, and spill their wine on the pavement, and Greeks from Smyrna with painted eyes and painted cheeks, and frizzed hair curled in twisted coils, and silent, subtle Egyptians, with long nails of jade and russett cloaks, and Romans brutal and coarse, with their uncouth jargon. Ah! how I loathe the Romans! They are rough and common, and they give themselves the airs of noble lords."
+    },
+    {
+      "id": "s0-75",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Will you be seated, Princess?"
+    },
+    {
+      "id": "s0-76",
+      "sceneId": "s0",
+      "text": "The Page of Herodias: Why do you speak to her? Why do you look at her? Oh! something terrible will happen."
+    },
+    {
+      "id": "s0-77",
+      "sceneId": "s0",
+      "text": "Salomé: How good to see the moon! She is like a little piece of money, you would think she was a little silver flower. The moon is cold and chaste. I am sure she is a virgin, she has a virgin's beauty. Yes, she is a virgin. She has never defiled herself. She has never abandoned herself to men, like the other goddesses."
+    },
+    {
+      "id": "s0-78",
+      "sceneId": "s0",
+      "text": "The Voice of Jokanaan: The Lord hath come. The son of man hath come. The centaurs have hidden themselves in the rivers, and the sirens have left the rivers, and are lying beneath the leaves of the forest."
+    },
+    {
+      "id": "s0-79",
+      "sceneId": "s0",
+      "text": "Salomé: Who was that who cried out?"
+    },
+    {
+      "id": "s0-80",
+      "sceneId": "s0",
+      "text": "Second Soldier: The prophet, Princess."
+    },
+    {
+      "id": "s0-81",
+      "sceneId": "s0",
+      "text": "Salomé: Ah, the prophet! He of whom the Tetrarch is afraid?"
+    },
+    {
+      "id": "s0-82",
+      "sceneId": "s0",
+      "text": "Second Soldier: We know nothing of that, Princess. It was the prophet Jokanaan who cried out."
+    },
+    {
+      "id": "s0-83",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Is it your pleasure that I bid them bring your litter, Princess? The night is fair in the garden."
+    },
+    {
+      "id": "s0-84",
+      "sceneId": "s0",
+      "text": "Salomé: He says terrible things about my mother, does he not?"
+    },
+    {
+      "id": "s0-85",
+      "sceneId": "s0",
+      "text": "Second Soldier: We never understand what he says, Princess."
+    },
+    {
+      "id": "s0-86",
+      "sceneId": "s0",
+      "text": "Salomé: Yes; he says terrible things about her."
+    },
+    {
+      "id": "s0-87",
+      "sceneId": "s0",
+      "text": "[*Enter a Slave*.]"
+    },
+    {
+      "id": "s0-88",
+      "sceneId": "s0",
+      "text": "The Slave: Princess, the Tetrarch prays you to return to the feast."
+    },
+    {
+      "id": "s0-89",
+      "sceneId": "s0",
+      "text": "Salomé: I will not go back."
+    },
+    {
+      "id": "s0-90",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Pardon me, Princess, but if you do not return some misfortune may happen."
+    },
+    {
+      "id": "s0-91",
+      "sceneId": "s0",
+      "text": "Salomé: Is he an old man, this prophet?"
+    },
+    {
+      "id": "s0-92",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Princess, it were better to return. Suffer me to lead you in."
+    },
+    {
+      "id": "s0-93",
+      "sceneId": "s0",
+      "text": "Salomé: This prophet ... is he an old man?"
+    },
+    {
+      "id": "s0-94",
+      "sceneId": "s0",
+      "text": "First Soldier: No, Princess, he is quite a young man."
+    },
+    {
+      "id": "s0-95",
+      "sceneId": "s0",
+      "text": "Second Soldier: You cannot be sure. There are those who say he is Elias."
+    },
+    {
+      "id": "s0-96",
+      "sceneId": "s0",
+      "text": "Salomé: Who is Elias?"
+    },
+    {
+      "id": "s0-97",
+      "sceneId": "s0",
+      "text": "Second Soldier: A very ancient prophet of this country, Princess."
+    },
+    {
+      "id": "s0-98",
+      "sceneId": "s0",
+      "text": "The Slave: What answer may I give the Tetrarch from the Princess?"
+    },
+    {
+      "id": "s0-99",
+      "sceneId": "s0",
+      "text": "The Voice of Jokanaan: Rejoice not thou, land of Palestine, because the rod of him who smote thee is broken. For from the seed of the serpent shall come forth a basilisk, and that which is born of it shall devour the birds."
+    },
+    {
+      "id": "s0-100",
+      "sceneId": "s0",
+      "text": "Salomé: What a strange voice! I would speak with him."
+    },
+    {
+      "id": "s0-101",
+      "sceneId": "s0",
+      "text": "First Soldier: I fear it is impossible, Princess. The Tetrarch does not wish any one to speak with him. He has even forbidden the high priest to speak with him."
+    },
+    {
+      "id": "s0-102",
+      "sceneId": "s0",
+      "text": "Salomé: I desire to speak with him."
+    },
+    {
+      "id": "s0-103",
+      "sceneId": "s0",
+      "text": "First Soldier: It is impossible, Princess."
+    },
+    {
+      "id": "s0-104",
+      "sceneId": "s0",
+      "text": "Salomé: I will speak with him."
+    },
+    {
+      "id": "s0-105",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Would it not be better to return to the banquet?"
+    },
+    {
+      "id": "s0-106",
+      "sceneId": "s0",
+      "text": "Salomé: Bring forth this prophet."
+    },
+    {
+      "id": "s0-107",
+      "sceneId": "s0",
+      "text": "[*Exit the slave.*]"
+    },
+    {
+      "id": "s0-108",
+      "sceneId": "s0",
+      "text": "First Soldier: We dare not, Princess."
+    },
+    {
+      "id": "s0-109",
+      "sceneId": "s0",
+      "text": "[*Approaching the cistern and looking down into it.*]"
+    },
+    {
+      "id": "s0-110",
+      "sceneId": "s0",
+      "text": "Salomé: How black it is, down there! It must be terrible to be in so black a pit! It is like a tomb.... [*To the soldiers.*] Did you not hear me? Bring out the prophet. I wish to see him."
+    },
+    {
+      "id": "s0-111",
+      "sceneId": "s0",
+      "text": "Second Soldier: Princess, I beg you do not require this of us."
+    },
+    {
+      "id": "s0-112",
+      "sceneId": "s0",
+      "text": "Salomé: You keep me waiting!"
+    },
+    {
+      "id": "s0-113",
+      "sceneId": "s0",
+      "text": "First Soldier: Princess, our lives belong to you, but we cannot do what you have asked of us. And indeed, it is not of us that you should ask this thing."
+    },
+    {
+      "id": "s0-114",
+      "sceneId": "s0",
+      "text": "[*Looking at the young Syrian.*]"
+    },
+    {
+      "id": "s0-115",
+      "sceneId": "s0",
+      "text": "Salomé: Ah!"
+    },
+    {
+      "id": "s0-116",
+      "sceneId": "s0",
+      "text": "The Page of Herodias: Oh! what is going to happen? I am sure that some misfortune will happen."
+    },
+    {
+      "id": "s0-117",
+      "sceneId": "s0",
+      "text": "[*Going up to the young Syrian.*]"
+    },
+    {
+      "id": "s0-118",
+      "sceneId": "s0",
+      "text": "Salomé: You will do this tiling for me, will you not, Narraboth? You will do this thing for me. I have always been kind to you. You will do it for me. I would but look at this strange prophet. Men have talked so much of him. Often have I heard the Tetrarch talk of him. I think the Tetrarch is afraid of him. Are you, even you, also afraid of him, Narraboth?"
+    },
+    {
+      "id": "s0-119",
+      "sceneId": "s0",
+      "text": "The Young Syrian: I fear him not, Princess; there is no man I fear. But the Tetrarch has formally forbidden that any man should raise the cover of this well."
+    },
+    {
+      "id": "s0-120",
+      "sceneId": "s0",
+      "text": "Salomé: You will do this thing for me, Narraboth, and to-morrow when I pass in my litter beneath the gateway of the idol-sellers I will let fall for you a little flower, a little green flower."
+    },
+    {
+      "id": "s0-121",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Princess, I cannot, I cannot."
+    },
+    {
+      "id": "s0-122",
+      "sceneId": "s0",
+      "text": "[*Smiling*.]"
+    },
+    {
+      "id": "s0-123",
+      "sceneId": "s0",
+      "text": "Salomé: You will do this thing for me, Narraboth. You know that you will do this thing for me. And to-morrow when I pass in my litter by the bridge of the idol-buyers, I will look at you through the muslin veils, I will look at you, Narraboth, it may be I will smile at you. Look at me, Narraboth, look at me. Ah! you know that you will do what I ask of you. You know it well.... I know that you will do this thing."
+    },
+    {
+      "id": "s0-124",
+      "sceneId": "s0",
+      "text": "[*Signing to the third soldier.*]"
+    },
+    {
+      "id": "s0-125",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Let the prophet come forth.... The Princess Salomé desires to see him."
+    },
+    {
+      "id": "s0-126",
+      "sceneId": "s0",
+      "text": "Salomé: Ah!"
+    },
+    {
+      "id": "s0-127",
+      "sceneId": "s0",
+      "text": "The Page of Herodias: Oh! How strange the moon looks. You would think it was the hand of a dead woman who is seeking to cover herself with a shroud."
+    },
+    {
+      "id": "s0-128",
+      "sceneId": "s0",
+      "text": "The Young Syrian: She has a strange look! She is like a little princess, whose eyes are eyes of amber. Through the clouds of muslin she is smiling like a little princess."
+    },
+    {
+      "id": "s0-129",
+      "sceneId": "s0",
+      "text": "The Young Syrian: [*The prophet comes out of the cistern. Salomé looks at him and steps slowly back.*]"
+    },
+    {
+      "id": "s0-130",
+      "sceneId": "s0",
+      "text": "Jokanaan: Where is he whose cup of abominations is now full? Where is he, who in a robe of silver shall one day die in the face of all the people? Bid him come forth, that he may hear the voice of him who hath cried in the waste places and in the houses of kings."
+    },
+    {
+      "id": "s0-131",
+      "sceneId": "s0",
+      "text": "Salomé: Of whom is he speaking?"
+    },
+    {
+      "id": "s0-132",
+      "sceneId": "s0",
+      "text": "The Young Syrian: You can never tell, Princess."
+    },
+    {
+      "id": "s0-133",
+      "sceneId": "s0",
+      "text": "Jokanaan: Where is she who having seen the images of men painted on the walls, the images of the Chaldeans limned in colours, gave herself up unto the lust of her eyes, and sent ambassadors into Chaldea?"
+    },
+    {
+      "id": "s0-134",
+      "sceneId": "s0",
+      "text": "Salomé: It is of my mother that he speaks."
+    },
+    {
+      "id": "s0-135",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Oh, no, Princess."
+    },
+    {
+      "id": "s0-136",
+      "sceneId": "s0",
+      "text": "Salomé: Yes; it is of my mother that he speaks."
+    },
+    {
+      "id": "s0-137",
+      "sceneId": "s0",
+      "text": "Jokanaan: Where is she who gave herself unto the Captains of Assyria, who have baldricks on their loins, and tiaras of divers colours on their heads? Where is she who hath given herself to the young men of Egypt, who are clothed in fine linen and purple, whose shields are of gold, whose helmets are of silver, whose bodies are mighty? Bid her rise up from the bed of her abominations, from the bed of her incestuousness, that she may hear the words of him who prepareth the way of the Lord, that she may repent her of her iniquities. Though she will never repent, but will stick fast in her abominations; bid her come, for the fan of the Lord is in His hand."
+    },
+    {
+      "id": "s0-138",
+      "sceneId": "s0",
+      "text": "Salomé: But he is terrible, he is terrible!"
+    },
+    {
+      "id": "s0-139",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Do not stay here, Princess, I beseech you."
+    },
+    {
+      "id": "s0-140",
+      "sceneId": "s0",
+      "text": "Salomé: It is his eyes above all that are terrible. They are like black holes burned by torches in a Tyrian tapestry. They are like black caverns where dragons dwell. They are like the black caverns of Egypt in which the dragons make their lairs. They are like black lakes troubled by fantastic moons.... Do you think he will speak again?"
+    },
+    {
+      "id": "s0-141",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Do not stay here, Princess. I pray you do not stay here."
+    },
+    {
+      "id": "s0-142",
+      "sceneId": "s0",
+      "text": "Salomé: How wasted he is! He is like a thin ivory statue. He is like an image of silver. I am sure he is chaste as the moon is. He is like a moonbeam, like a shaft of silver. His flesh must be cool like ivory. I would look closer at him."
+    },
+    {
+      "id": "s0-143",
+      "sceneId": "s0",
+      "text": "The Young Syrian: No, no, Princess."
+    },
+    {
+      "id": "s0-144",
+      "sceneId": "s0",
+      "text": "Salomé: I must look at him closer."
+    },
+    {
+      "id": "s0-145",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Princess! Princess!"
+    },
+    {
+      "id": "s0-146",
+      "sceneId": "s0",
+      "text": "Jokanaan: Who is this woman who is looking at me? I will not have her look at me. Wherefore doth she look at me with her golden eyes, under her gilded eyelids? I know not who she is. I do not wish to know who she is. Bid her begone. It is not to her that I would speak."
+    },
+    {
+      "id": "s0-147",
+      "sceneId": "s0",
+      "text": "Salomé: I am Salomé, daughter of Herodias, Princess of Judæa."
+    },
+    {
+      "id": "s0-148",
+      "sceneId": "s0",
+      "text": "Jokanaan: Back! daughter of Babylon! Come not near the chosen of the Lord. Thy mother hath filled the earth with the wine of her iniquities, and the cry of her sins hath come up to the ears of God."
+    },
+    {
+      "id": "s0-149",
+      "sceneId": "s0",
+      "text": "Salomé: Speak again, Jokanaan. Thy voice is wine to me."
+    },
+    {
+      "id": "s0-150",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Princess! Princess! Princess!"
+    },
+    {
+      "id": "s0-151",
+      "sceneId": "s0",
+      "text": "Salomé: Speak again! Speak again, Jokanaan, and tell me what I must do."
+    },
+    {
+      "id": "s0-152",
+      "sceneId": "s0",
+      "text": "Jokanaan: Daughter of Sodom, come not near me! But cover thy face with a veil, and scatter ashes upon thine head, and get thee to the desert and seek out the Son of Man."
+    },
+    {
+      "id": "s0-153",
+      "sceneId": "s0",
+      "text": "Salomé: Who is he, the Son of Man? Is he as beautiful as thou art, Jokanaan?"
+    },
+    {
+      "id": "s0-154",
+      "sceneId": "s0",
+      "text": "Jokanaan: Get thee behind me! I hear in the palace the beating of the wings of the angel of death."
+    },
+    {
+      "id": "s0-155",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Princess, I beseech thee to go within."
+    },
+    {
+      "id": "s0-156",
+      "sceneId": "s0",
+      "text": "Jokanaan: Angel of the Lord God, what dost thou here with thy sword? Whom seekest thou in this foul palace? The day of him who shall die in a robe of silver has not yet come."
+    },
+    {
+      "id": "s0-157",
+      "sceneId": "s0",
+      "text": "Salomé: Jokanaan!"
+    },
+    {
+      "id": "s0-158",
+      "sceneId": "s0",
+      "text": "Jokanaan: Who speaketh?"
+    },
+    {
+      "id": "s0-159",
+      "sceneId": "s0",
+      "text": "Salomé: Jokanaan, I am amorous of thy body! Thy body is white like the lilies of a field that the mower hath never mowed. Thy body is white like the snows that lie on the mountains, like the snows that lie on the mountains of Judæa, and come down into the valleys. The roses in the garden of the Queen of Arabia are not so white as thy body. Neither the roses in the garden of the Queen of Arabia, the perfumed garden of spices of the Queen of Arabia, nor the feet of the dawn when they light on the leaves, nor the breast of the moon when she lies on the breast of the sea.... There is nothing in the world so white as thy body. Let me touch thy body."
+    },
+    {
+      "id": "s0-160",
+      "sceneId": "s0",
+      "text": "Jokanaan: Back! daughter of Babylon! By woman came evil into the world. Speak not to me. I will not listen to thee. I listen but to the voice of the Lord God."
+    },
+    {
+      "id": "s0-161",
+      "sceneId": "s0",
+      "text": "Salomé: Thy body is hideous. It is like the body of a leper. It is like a plastered wall where vipers have crawled; like a plastered wall where the scorpions have made their nest. It is like a whitened sepulchre full of loathsome things. It is horrible, thy body is horrible. It is of thy hair that I am enamoured, Jokanaan. Thy hair is like clusters of grapes, like the clusters of black grapes that hang from the vine-trees of Edom in the land of the Edomites. Thy hair is like the cedars of Lebanon, like the great cedars of Lebanon that give their shade to the lions and to the robbers who would hide themselves by day. The long black nights, when the moon hides her face, when the stars are afraid, are not so black. The silence that dwells in the forest is not so black. There is nothing in the world so black as thy hair.... Let me touch thy hair."
+    },
+    {
+      "id": "s0-162",
+      "sceneId": "s0",
+      "text": "Jokanaan: Back, daughter of Sodom! Touch me not. Profane not the temple of the Lord God."
+    },
+    {
+      "id": "s0-163",
+      "sceneId": "s0",
+      "text": "Salomé: Thy hair is horrible. It is covered with mire and dust. It is like a crown of thorns which they have placed on thy forehead. It is like a knot of black serpents writhing round thy neck. I love not thy hair.... It is thy mouth that I desire, Jokanaan. Thy mouth is like a band of scarlet on a tower of ivory. It is like a pomegranate cut with a knife of ivory. The pomegranate-flowers that blossom in the gardens of Tyre, and are redder than roses, are not so red. The red blasts of trumpets that herald the approach of kings, and make afraid the enemy, are not so red. Thy mouth is redder than the feet of those who tread the wine in the wine-press. Thy mouth is redder than the feet of the doves who haunt the temples and are fed by the priests. It is redder than the feet of him who cometh from a forest where he hath slain a lion, and seen gilded tigers. Thy mouth is like a branch of coral that fishers have found in the twilight of the sea, the coral that they keep for the kings!... It is like the vermilion that the Moabites find in the mines of Moab, the vermilion that the kings take from them. It is like the bow of the King of the Persians, that is painted with vermilion, and is tipped with coral. There is nothing in the world so red as thy mouth.... Let me kiss thy mouth."
+    },
+    {
+      "id": "s0-164",
+      "sceneId": "s0",
+      "text": "Jokanaan: Never! daughter of Babylon! Daughter of Sodom! Never."
+    },
+    {
+      "id": "s0-165",
+      "sceneId": "s0",
+      "text": "Salomé: I will kiss thy mouth, Jokanaan. I will kiss thy mouth."
+    },
+    {
+      "id": "s0-166",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Princess, Princess, thou who art like a garden of myrrh, thou who art the dove of all doves, look not at this man, look not at him! Do not speak such words to him. I cannot suffer them.... Princess, Princess, do not speak these things."
+    },
+    {
+      "id": "s0-167",
+      "sceneId": "s0",
+      "text": "Salomé: I will kiss thy mouth, Jokanaan."
+    },
+    {
+      "id": "s0-168",
+      "sceneId": "s0",
+      "text": "The Young Syrian: Ah! [*He kills himself and falls between Salomé and Jokanaan.*]"
+    },
+    {
+      "id": "s0-169",
+      "sceneId": "s0",
+      "text": "The Page of Herodias: The young Syrian has slain himself! The young captain has slain himself! He has slain himself who was my friend! I gave him a little box of perfumes and ear-rings wrought in silver, and now he has killed himself! Ah, did he not foretell that some misfortune would happen? I, too, foretold it, and it has happened. Well I knew that the moon was seeking a dead thing, but I knew not that it was he whom she sought. Ah! why did I not hide him from the moon? If I had hidden him in a cavern she would not have seen him."
+    },
+    {
+      "id": "s0-170",
+      "sceneId": "s0",
+      "text": "First Soldier: Princess, the young captain has just killed himself."
+    },
+    {
+      "id": "s0-171",
+      "sceneId": "s0",
+      "text": "Salomé: Let me kiss thy mouth, Jokanaan."
+    },
+    {
+      "id": "s0-172",
+      "sceneId": "s0",
+      "text": "Jokanaan: Art thou not afraid, daughter of Herodias? Did I not tell thee that I had heard in the palace the beatings of the wings of the angel of death, and hath he not come, the angel of death?"
+    },
+    {
+      "id": "s0-173",
+      "sceneId": "s0",
+      "text": "Salomé: Let me kiss thy mouth."
+    },
+    {
+      "id": "s0-174",
+      "sceneId": "s0",
+      "text": "Jokanaan: Daughter of adultery, there is but one who can save thee, it is He of whom I spake. Go seek Him. He is in a boat on the sea of Galilee, and He talketh with His disciples. Kneel down on the shore of the sea, and call unto Him by His name. When He cometh to thee (and to all who call on Him He cometh), bow thyself at His feet and ask of Him the remission of thy sins."
+    },
+    {
+      "id": "s0-175",
+      "sceneId": "s0",
+      "text": "Salomé: Let me kiss thy mouth."
+    },
+    {
+      "id": "s0-176",
+      "sceneId": "s0",
+      "text": "Jokanaan: Cursed be thou! daughter of an incestuous mother, be thou accursed!"
+    },
+    {
+      "id": "s0-177",
+      "sceneId": "s0",
+      "text": "Salomé: I will kiss thy mouth, Jokanaan."
+    },
+    {
+      "id": "s0-178",
+      "sceneId": "s0",
+      "text": "Jokanaan: I do no wish to look at thee. I will not look at thee, thou art accursed, Salomé, thou art accursed. [*He goes down into the cistern.*]"
+    },
+    {
+      "id": "s0-179",
+      "sceneId": "s0",
+      "text": "Salomé: I will kiss thy mouth, Jokanaan; I will kiss thy mouth."
+    },
+    {
+      "id": "s0-180",
+      "sceneId": "s0",
+      "text": "First Soldier: We must bear away the body to another place. The Tetrarch does not care to see dead bodies, save the bodies of those whom he himself has slain."
+    },
+    {
+      "id": "s0-181",
+      "sceneId": "s0",
+      "text": "The Page of Herodias: He was my brother, and nearer to me than a brother. I gave him a little box full of perfumes, and a ring of agate that he wore always on his hand. In the evening we used to walk by the river, among the almond trees, and he would tell me of the things of his country. He spake ever very low. The sound of his voice was like the sound of the flute, of a flute player. Also he much loved to gaze at himself in the river. I used to reproach him for that."
+    },
+    {
+      "id": "s0-182",
+      "sceneId": "s0",
+      "text": "Second Soldier: You are right; we must hide the body. The Tetrarch must not see it."
+    },
+    {
+      "id": "s0-183",
+      "sceneId": "s0",
+      "text": "First Soldier: The Tetrarch will not come to this place. He never comes on the terrace. He is too much afraid of the prophet."
+    },
+    {
+      "id": "s0-184",
+      "sceneId": "s0",
+      "text": "[*Enter Herod, Herodias, and all the Court.*]"
+    },
+    {
+      "id": "s0-185",
+      "sceneId": "s0",
+      "text": "Herod: Where is Salomé? Where is the Princess? Why did she not return to the banquet as I commanded her? Ah! there she is!"
+    },
+    {
+      "id": "s0-186",
+      "sceneId": "s0",
+      "text": "Herodias: You must not look at her! You are always looking at her!"
+    },
+    {
+      "id": "s0-187",
+      "sceneId": "s0",
+      "text": "Herod: The moon has a strange look to-night. Has she not a strange look? She is like a mad woman, a mad woman who is seeking everywhere for lovers. She is naked too. She is quite naked. The clouds are seeking to clothe her nakedness, but she will not let them. She shows herself naked in the sky. She reels through the clouds like a drunken woman.... I am sure she is looking for lovers. Does she not reel like a drunken woman? She is like a mad woman, is she not?"
+    },
+    {
+      "id": "s0-188",
+      "sceneId": "s0",
+      "text": "Herodias: No; the moon is like the moon, that is all. Let us go within.... You have nothing to do here."
+    },
+    {
+      "id": "s0-189",
+      "sceneId": "s0",
+      "text": "Herod: I will stay here! Manesseh, lay carpets there. Light torches, bring forth the ivory tables, and the tables of jasper. The air here is delicious. I will drink more wine with my guests. We must show all honours to the ambassadors of Cæsar."
+    },
+    {
+      "id": "s0-190",
+      "sceneId": "s0",
+      "text": "Herodias: It is not because of them that you remain."
+    },
+    {
+      "id": "s0-191",
+      "sceneId": "s0",
+      "text": "Herod: Yes; the air is delicious. Come, Herodias, our guests await us. Ah! I have slipped! I have slipped in blood! It is an ill omen. It is a very evil omen. Wherefore is there blood here?... and this body, what does this body here? Think you I am like the King of Egypt, who gives no feast to his guests but that he shows them a corpse? Whose is it? I will not look on it."
+    },
+    {
+      "id": "s0-192",
+      "sceneId": "s0",
+      "text": "First Soldier: It is our captain, sire. He is the young Syrian whom you made captain only three days ago."
+    },
+    {
+      "id": "s0-193",
+      "sceneId": "s0",
+      "text": "Herod: I gave no order that he should be slain."
+    },
+    {
+      "id": "s0-194",
+      "sceneId": "s0",
+      "text": "Second Soldier: He killed himself, sire."
+    },
+    {
+      "id": "s0-195",
+      "sceneId": "s0",
+      "text": "Herod: For what reason? I had made him captain."
+    },
+    {
+      "id": "s0-196",
+      "sceneId": "s0",
+      "text": "Second Soldier: We do not know, sire. But he killed himself."
+    },
+    {
+      "id": "s0-197",
+      "sceneId": "s0",
+      "text": "Herod: That seems strange to me. I thought it was only the Roman philosophers who killed themselves. Is it not true, Tigellinus, that the philosophers at Rome kill themselves?"
+    },
+    {
+      "id": "s0-198",
+      "sceneId": "s0",
+      "text": "Tigellinus: There are some who kill themselves, sire. They are the Stoics. The Stoics are coarse people. They are ridiculous people. I myself regard them as being perfectly ridiculous."
+    },
+    {
+      "id": "s0-199",
+      "sceneId": "s0",
+      "text": "Herod: I also. It is ridiculous to kill oneself."
+    },
+    {
+      "id": "s0-200",
+      "sceneId": "s0",
+      "text": "Tigellinus: Everybody at Rome laughs at them. The Emperor has written a satire against them. It is recited everywhere."
+    },
+    {
+      "id": "s0-201",
+      "sceneId": "s0",
+      "text": "Herod: Ah! he has written a satire against them? Cæsar is wonderful. He can do everything.... It is strange that the young Syrian has killed himself. I am sorry he has killed himself. I am very sorry; for he was fair to look upon. He was even very fair. He had very languorous eyes. I remember that I saw that he looked languorously at Salomé. Truly, I thought he looked too much at her."
+    },
+    {
+      "id": "s0-202",
+      "sceneId": "s0",
+      "text": "Herodias: There are others who look at her too much."
+    },
+    {
+      "id": "s0-203",
+      "sceneId": "s0",
+      "text": "Herod: His father was a king. I drove him from his kingdom. And you made a slave of his mother, who was a queen, Herodias. So he was here as my guest, as it were, and for that reason I made him my captain. I am sorry he is dead. Ho! why have you left the body here? I will not look at it--away with it! [*They take away the body.*] It is cold here. There is a wind blowing. Is there not a wind blowing?"
+    },
+    {
+      "id": "s0-204",
+      "sceneId": "s0",
+      "text": "Herodias: No; there is no wind."
+    },
+    {
+      "id": "s0-205",
+      "sceneId": "s0",
+      "text": "Herod: I tell you there is a wind that blows.... And I hear in the air something that is like the beating of wings, like the beating of vast wings. Do you not hear it?"
+    },
+    {
+      "id": "s0-206",
+      "sceneId": "s0",
+      "text": "Herodias: I hear nothing."
+    },
+    {
+      "id": "s0-207",
+      "sceneId": "s0",
+      "text": "Herod: I hear it no longer. But I heard it. It was the blowing of the wind, no doubt. It has passed away. But no, I hear it again. Do you not hear it? It is just like the beating of wings."
+    },
+    {
+      "id": "s0-208",
+      "sceneId": "s0",
+      "text": "Herodias: I tell you there is nothing. You are ill. Let us go within."
+    },
+    {
+      "id": "s0-209",
+      "sceneId": "s0",
+      "text": "Herod: I am not ill. It is your daughter who is sick. She has the mien of a sick person. Never have I seen her so pale."
+    },
+    {
+      "id": "s0-210",
+      "sceneId": "s0",
+      "text": "Herodias: I have told you not to look at her."
+    },
+    {
+      "id": "s0-211",
+      "sceneId": "s0",
+      "text": "Herod: Pour me forth wine [*wine is brought*]. Salomé, come drink a little wine with me. I have here a wine that is exquisite. Cæsar himself sent it me. Dip into it thy little red lips, that I may drain the cup."
+    },
+    {
+      "id": "s0-212",
+      "sceneId": "s0",
+      "text": "Salomé: I am not thirsty, Tetrarch."
+    },
+    {
+      "id": "s0-213",
+      "sceneId": "s0",
+      "text": "Herod: You hear how she answers me, this daughter of yours?"
+    },
+    {
+      "id": "s0-214",
+      "sceneId": "s0",
+      "text": "Herodias: She does right. Why are you always gazing at her?"
+    },
+    {
+      "id": "s0-215",
+      "sceneId": "s0",
+      "text": "Herod: Bring me ripe fruits [*fruits are brought*]. Salomé, come and eat fruit with me. I love to see in a fruit the mark of thy little teeth. Bite but a little of this fruit and then I will eat what is left."
+    },
+    {
+      "id": "s0-216",
+      "sceneId": "s0",
+      "text": "Salomé: I am not hungry, Tetrarch."
+    },
+    {
+      "id": "s0-217",
+      "sceneId": "s0",
+      "text": "Herod: [*To Herodias.*] You see how you have brought up this daughter of yours."
+    },
+    {
+      "id": "s0-218",
+      "sceneId": "s0",
+      "text": "Herodias: My daughter and I come of a royal race. As for thee, thy father was a camel driver! He was also a robber!"
+    },
+    {
+      "id": "s0-219",
+      "sceneId": "s0",
+      "text": "Herod: Thou liest!"
+    },
+    {
+      "id": "s0-220",
+      "sceneId": "s0",
+      "text": "Herodias: Thou knowest well that it is true."
+    },
+    {
+      "id": "s0-221",
+      "sceneId": "s0",
+      "text": "Herod: Salomé, come and sit next to me. I will give thee the throne of thy mother."
+    },
+    {
+      "id": "s0-222",
+      "sceneId": "s0",
+      "text": "Salomé: I am not tired, Tetrarch."
+    },
+    {
+      "id": "s0-223",
+      "sceneId": "s0",
+      "text": "Herodias: You see what she thinks of you."
+    },
+    {
+      "id": "s0-224",
+      "sceneId": "s0",
+      "text": "Herod: Bring me--what is it that I desire? I forget. Ah! ah! I remember."
+    },
+    {
+      "id": "s0-225",
+      "sceneId": "s0",
+      "text": "The Voice of Jokanaan: Lo! the time is come! That which I foretold has come to pass, saith the Lord God. Lo! the day of which I spoke."
+    },
+    {
+      "id": "s0-226",
+      "sceneId": "s0",
+      "text": "Herodias: Bid him be silent. I will not listen to his voice. This man is for ever vomiting insults against me."
+    },
+    {
+      "id": "s0-227",
+      "sceneId": "s0",
+      "text": "Herod: He has said nothing against you. Besides, he is a very great prophet."
+    },
+    {
+      "id": "s0-228",
+      "sceneId": "s0",
+      "text": "Herodias: I do not believe in prophets. Can a man tell what will come to pass? No man knows it. Moreover, he is for ever insulting me. But I think you are afraid of him.... I know well that you are afraid of him."
+    },
+    {
+      "id": "s0-229",
+      "sceneId": "s0",
+      "text": "Herod: I am not afraid of him. I am afraid of no man."
+    },
+    {
+      "id": "s0-230",
+      "sceneId": "s0",
+      "text": "Herodias: I tell you, you are afraid of him. If you are not afraid of him why do you not deliver him to the Jews, who for these six months past have been clamouring for him?"
+    },
+    {
+      "id": "s0-231",
+      "sceneId": "s0",
+      "text": "A Jew: Truly, my lord, it were better to deliver him into our hands."
+    },
+    {
+      "id": "s0-232",
+      "sceneId": "s0",
+      "text": "Herod: Enough on this subject. I have already given you my answer. I will not deliver him into your hands. He is a holy man. He is a man who has seen God."
+    },
+    {
+      "id": "s0-233",
+      "sceneId": "s0",
+      "text": "A Jew: That cannot be. There is no man who hath seen God since the prophet Elias. He is the last man who saw God. In these days God doth not show Himself. He hideth Himself. Therefore great evils have come upon the land."
+    },
+    {
+      "id": "s0-234",
+      "sceneId": "s0",
+      "text": "Another Jew: Verily, no man knoweth if Elias the prophet did indeed see God. Peradventure it was but the shadow of God that he saw."
+    },
+    {
+      "id": "s0-235",
+      "sceneId": "s0",
+      "text": "A Third Jew: God is at no time hidden. He showeth Himself at all times and in everything. God is in what is evil even as He is in what is good."
+    },
+    {
+      "id": "s0-236",
+      "sceneId": "s0",
+      "text": "A Fourth Jew: That must not be said. It is a very dangerous doctrine. It is a doctrine that cometh from the schools at Alexandria, where men teach the philosophy of the Greeks. And the Greeks are Gentiles: They are not even circumcised."
+    },
+    {
+      "id": "s0-237",
+      "sceneId": "s0",
+      "text": "A Fifth Jew: No one can tell how God worketh. His ways are very mysterious. It may be that the things which we call evil are good, and that the things which we call good are evil. There is no knowledge of any thing. We must needs submit to everything, for God is very strong. He breaketh in pieces the strong together with the weak, for He regardeth not any man."
+    },
+    {
+      "id": "s0-238",
+      "sceneId": "s0",
+      "text": "First Jew: Thou speaketh truly. God is terrible; He breaketh the strong and the weak as a man brays corn in a mortar. But this man hath never seen God. No man hath seen God since the prophet Elias."
+    },
+    {
+      "id": "s0-239",
+      "sceneId": "s0",
+      "text": "Herodias: Make them be silent. They weary me."
+    },
+    {
+      "id": "s0-240",
+      "sceneId": "s0",
+      "text": "Herod: But I have heard it said that Jokanaan himself is your prophet Elias."
+    },
+    {
+      "id": "s0-241",
+      "sceneId": "s0",
+      "text": "The Jew: That cannot be. It is more than three hundred years since the days of the prophet Elias."
+    },
+    {
+      "id": "s0-242",
+      "sceneId": "s0",
+      "text": "Herod: There be some who say that this man is the prophet Elias.."
+    },
+    {
+      "id": "s0-243",
+      "sceneId": "s0",
+      "text": "A Nazarene: I am sure that he is the prophet Elias."
+    },
+    {
+      "id": "s0-244",
+      "sceneId": "s0",
+      "text": "The Jew: Nay, but he is not the prophet Elias."
+    },
+    {
+      "id": "s0-245",
+      "sceneId": "s0",
+      "text": "The Voice of Jokanaan: So the day is come, the day of the Lord, and I hear upon the mountains the feet of Him who shall be the Saviour of the world."
+    },
+    {
+      "id": "s0-246",
+      "sceneId": "s0",
+      "text": "Herod: What does that mean? The Saviour of the world."
+    },
+    {
+      "id": "s0-247",
+      "sceneId": "s0",
+      "text": "Tigellinus: It is a title that Cæsar takes."
+    },
+    {
+      "id": "s0-248",
+      "sceneId": "s0",
+      "text": "Herod: But Cæsar is not coming into Judæa. Only yesterday I received letters from Rome. They contained nothing concerning this matter. And you, Tigellinus, who were at Rome during the winter, you heard nothing concerning this matter, did you?"
+    },
+    {
+      "id": "s0-249",
+      "sceneId": "s0",
+      "text": "Tigellinus: Sire, I heard nothing concerning the matter. I was explaining the title. It is one of Cæsar's titles."
+    },
+    {
+      "id": "s0-250",
+      "sceneId": "s0",
+      "text": "Herod: But Cæsar cannot come. He is too gouty. They say that his feet are like the feet of an elephant. Also there are reasons of State. He who leaves Rome loses Rome. He will not come. Howbeit, Cæsar is lord, he will come if he wishes. Nevertheless, I do not think he will come."
+    },
+    {
+      "id": "s0-251",
+      "sceneId": "s0",
+      "text": "First Nazarene: It was not concerning Cæsar that the prophet spake these words, sire."
+    },
+    {
+      "id": "s0-252",
+      "sceneId": "s0",
+      "text": "Herod: Not of Cæsar?"
+    },
+    {
+      "id": "s0-253",
+      "sceneId": "s0",
+      "text": "First Nazarene: No, sire."
+    },
+    {
+      "id": "s0-254",
+      "sceneId": "s0",
+      "text": "Herod: Concerning whom then did he speak?"
+    },
+    {
+      "id": "s0-255",
+      "sceneId": "s0",
+      "text": "First Nazarene: Concerning Messias who has come."
+    },
+    {
+      "id": "s0-256",
+      "sceneId": "s0",
+      "text": "A Jew: Messiah hath not come."
+    },
+    {
+      "id": "s0-257",
+      "sceneId": "s0",
+      "text": "First Nazarene: He hath come, and everywhere He worketh miracles."
+    },
+    {
+      "id": "s0-258",
+      "sceneId": "s0",
+      "text": "First Nazarene: Herodias Ho! ho! miracles! I do not believe in miracles. I have seen too many. [*To the page.*] My fan!"
+    },
+    {
+      "id": "s0-259",
+      "sceneId": "s0",
+      "text": "First Nazarene: This man worketh true miracles. Thus, at a marriage which took place in a little town of Galilee, a town of some importance, He changed water into wine. Certain persons who were present related it to me. Also He healed two lepers that were seated before the Gate of Capernaum simply by touching them."
+    },
+    {
+      "id": "s0-260",
+      "sceneId": "s0",
+      "text": "Second Nazarene: Nay, it was blind men that he healed at Capernaum."
+    },
+    {
+      "id": "s0-261",
+      "sceneId": "s0",
+      "text": "First Nazarene: Nay; they were lepers. But He hath healed blind people also, and He was seen on a mountain talking with angels."
+    },
+    {
+      "id": "s0-262",
+      "sceneId": "s0",
+      "text": "A Sadducee: Angels do not exist."
+    },
+    {
+      "id": "s0-263",
+      "sceneId": "s0",
+      "text": "A Pharisee: Angels exist, but I do not believe that this Man has talked with them."
+    },
+    {
+      "id": "s0-264",
+      "sceneId": "s0",
+      "text": "First Nazarene: He was seen by a great multitude of people talking with angels."
+    },
+    {
+      "id": "s0-265",
+      "sceneId": "s0",
+      "text": "A Sadducee: Not with angels."
+    },
+    {
+      "id": "s0-266",
+      "sceneId": "s0",
+      "text": "Herodias: How these men weary me! They are ridiculous! [*To the page.*] Well! my fan! [*The page gives her the fan.*] You have a dreamer's look; you must not dream. It is only sick people who dream. [*She strikes the page with her fan.*]"
+    },
+    {
+      "id": "s0-267",
+      "sceneId": "s0",
+      "text": "Second Nazarene: There is also the miracle of the daughter of Jairus."
+    },
+    {
+      "id": "s0-268",
+      "sceneId": "s0",
+      "text": "First Nazarene: Yes, that is sure. No man can gainsay it."
+    },
+    {
+      "id": "s0-269",
+      "sceneId": "s0",
+      "text": "Herodias: These men are mad. They have looked too long on the moon. Command them to be silent."
+    },
+    {
+      "id": "s0-270",
+      "sceneId": "s0",
+      "text": "Herod: What is this miracle of the daughter of Jairus?"
+    },
+    {
+      "id": "s0-271",
+      "sceneId": "s0",
+      "text": "First Nazarene: The daughter of Jairus was dead. He raised her from the dead."
+    },
+    {
+      "id": "s0-272",
+      "sceneId": "s0",
+      "text": "Herod: He raises the dead?"
+    },
+    {
+      "id": "s0-273",
+      "sceneId": "s0",
+      "text": "First Nazarene: Yea, sire, He raiseth the dead."
+    },
+    {
+      "id": "s0-274",
+      "sceneId": "s0",
+      "text": "Herod: I do not wish Him to do that. I forbid Him to do that. I allow no man to raise the dead. This Man must be found and told that I forbid Him to raise the dead. Where is this Man at present?"
+    },
+    {
+      "id": "s0-275",
+      "sceneId": "s0",
+      "text": "Second Nazarene: He is in every place, my lord, but it is hard to find Him."
+    },
+    {
+      "id": "s0-276",
+      "sceneId": "s0",
+      "text": "First Nazarene: It is said that He is now in Samaria."
+    },
+    {
+      "id": "s0-277",
+      "sceneId": "s0",
+      "text": "A Jew: It is easy to see that this is not Messias, if He is in Samaria. It is not to the Samaritans that Messias shall come. The Samaritans are accursed. They bring no offerings to the Temple."
+    },
+    {
+      "id": "s0-278",
+      "sceneId": "s0",
+      "text": "Second Nazarene: He left Samaria a few days since. I think that at the present moment He is in the neighbourhood of Jerusalem."
+    },
+    {
+      "id": "s0-279",
+      "sceneId": "s0",
+      "text": "First Nazarene: No; He is not there. I have just come from Jerusalem. For two months they have had no tidings of Him."
+    },
+    {
+      "id": "s0-280",
+      "sceneId": "s0",
+      "text": "Herod: No matter! But let them find Him, and tell Him from me, I will not allow him to raise the dead! To change water into wine, to heal the lepers and the blind.... He may do these things if He will. I say nothing against these things. In truth I hold it a good deed to heal a leper. But I allow no man to raise the dead. It would be terrible if the dead came back."
+    },
+    {
+      "id": "s0-281",
+      "sceneId": "s0",
+      "text": "The Voice of Jokanaan: Ah! the wanton! The harlot! Ah! the daughter of Babylon with her golden eyes and her gilded eyelids!--Thus saith the Lord God, Let there come up against her a multitude of men. Let the people take stones and stone her...."
+    },
+    {
+      "id": "s0-282",
+      "sceneId": "s0",
+      "text": "Herodias: Command him to be silent."
+    },
+    {
+      "id": "s0-283",
+      "sceneId": "s0",
+      "text": "The Voice of Jokanaan: Let the war captains pierce her with their swords, let them crush her beneath their shields."
+    },
+    {
+      "id": "s0-284",
+      "sceneId": "s0",
+      "text": "Herodias: Nay, but it is infamous."
+    },
+    {
+      "id": "s0-285",
+      "sceneId": "s0",
+      "text": "The Voice of Jokanaan: It is thus that I will wipe out all wickedness from the earth, and that all women shall learn not to imitate her abominations."
+    },
+    {
+      "id": "s0-286",
+      "sceneId": "s0",
+      "text": "Herodias: You hear what he says against me? You allow him to revile your wife?"
+    },
+    {
+      "id": "s0-287",
+      "sceneId": "s0",
+      "text": "Herod: He did not speak your name."
+    },
+    {
+      "id": "s0-288",
+      "sceneId": "s0",
+      "text": "Herodias: What does that matter? You know well that it is I whom he seeks to revile. And I am your wife, am I not?"
+    },
+    {
+      "id": "s0-289",
+      "sceneId": "s0",
+      "text": "Herod: Of a truth, dear and noble Herodias, you are my wife, and before that you were the wife of my brother."
+    },
+    {
+      "id": "s0-290",
+      "sceneId": "s0",
+      "text": "Herodias: It was you who tore me from his arms."
+    },
+    {
+      "id": "s0-291",
+      "sceneId": "s0",
+      "text": "Herod: Of a truth I was stronger.... But let us not talk of that matter. I do not desire to talk of it. It is the cause of the terrible words that the prophet has spoken. Peradventure on account of it a misfortune will come. Let us not speak of this matter. Noble Herodias, we are not mindful of our guests. Fill thou my cup, my well-beloved. Fill with wine the great goblets of silver, and the great goblets of glass. I will drink to Cæsar. There are Romans here, we must drink to Cæsar."
+    },
+    {
+      "id": "s0-292",
+      "sceneId": "s0",
+      "text": "All: Cæsar! Cæsar!"
+    },
+    {
+      "id": "s0-293",
+      "sceneId": "s0",
+      "text": "Herod: Do you not see your daughter, how pale she is?"
+    },
+    {
+      "id": "s0-294",
+      "sceneId": "s0",
+      "text": "Herodias: What is it to you if she be pale or not?"
+    },
+    {
+      "id": "s0-295",
+      "sceneId": "s0",
+      "text": "Herod: Never have I seen her so pale."
+    },
+    {
+      "id": "s0-296",
+      "sceneId": "s0",
+      "text": "Herodias: You must not look at her."
+    },
+    {
+      "id": "s0-297",
+      "sceneId": "s0",
+      "text": "The Voice of Jokanaan: In that day the sun shall become black like sackcloth of hair, and the moon shall become like blood, and the stars of the heavens shall fall upon the earth like ripe figs that fall from the fig-tree, and the kings of the earth shall be afraid."
+    },
+    {
+      "id": "s0-298",
+      "sceneId": "s0",
+      "text": "Herodias: Ah! Ah! I should like to see that day of which he speaks, when the moon shall become like blood, and when the stars shall fall upon the earth like ripe figs. This prophet talks like a drunken man ... but I cannot suffer the sound of his voice. I hate his voice. Command him to be silent."
+    },
+    {
+      "id": "s0-299",
+      "sceneId": "s0",
+      "text": "Herod: I will not. I cannot understand what it is that he saith, but it may be an omen."
+    },
+    {
+      "id": "s0-300",
+      "sceneId": "s0",
+      "text": "Herodias: I do not believe in omens. He speaks like a drunken man."
+    },
+    {
+      "id": "s0-301",
+      "sceneId": "s0",
+      "text": "Herod: It may be he is drunk with the wine of God."
+    },
+    {
+      "id": "s0-302",
+      "sceneId": "s0",
+      "text": "Herodias: What wine is that, the wine of God? From what vineyards is it gathered? In what wine-press may one find it?"
+    },
+    {
+      "id": "s0-303",
+      "sceneId": "s0",
+      "text": "[*From this point he looks all the while at Salomé.*]"
+    },
+    {
+      "id": "s0-304",
+      "sceneId": "s0",
+      "text": "Herod: Tigellinus, when you were at Rome of late, did the Emperor speak with you: on the subject of...?"
+    },
+    {
+      "id": "s0-305",
+      "sceneId": "s0",
+      "text": "Tigellinus: On what subject, sire?"
+    },
+    {
+      "id": "s0-306",
+      "sceneId": "s0",
+      "text": "Herod: On what subject? Ah! I asked you a question, did I not? I have forgotten what I would have asked you."
+    },
+    {
+      "id": "s0-307",
+      "sceneId": "s0",
+      "text": "Herodias: You are looking again at my daughter. You must not look at her. I have already said so."
+    },
+    {
+      "id": "s0-308",
+      "sceneId": "s0",
+      "text": "Herod: You say nothing else."
+    },
+    {
+      "id": "s0-309",
+      "sceneId": "s0",
+      "text": "Herodias: I say it again."
+    },
+    {
+      "id": "s0-310",
+      "sceneId": "s0",
+      "text": "Herod: And that restoration of the Temple about which they have talked so much, will anything be done? They say the veil of the Sanctuary has disappeared, do they not?"
+    },
+    {
+      "id": "s0-311",
+      "sceneId": "s0",
+      "text": "Herodias: It was thyself didst steal it. Thou speakest at random. I will not stay here. Let us go within."
+    },
+    {
+      "id": "s0-312",
+      "sceneId": "s0",
+      "text": "Herod: Dance for me, Salomé."
+    },
+    {
+      "id": "s0-313",
+      "sceneId": "s0",
+      "text": "Herodias: I will not have her dance."
+    },
+    {
+      "id": "s0-314",
+      "sceneId": "s0",
+      "text": "Salomé: I have no desire to dance, Tetrarch."
+    },
+    {
+      "id": "s0-315",
+      "sceneId": "s0",
+      "text": "Herod: Salomé, daughter of Herodias, dance for me."
+    },
+    {
+      "id": "s0-316",
+      "sceneId": "s0",
+      "text": "Herodias: Let her alone."
+    },
+    {
+      "id": "s0-317",
+      "sceneId": "s0",
+      "text": "Herod: I command thee to dance, Salomé."
+    },
+    {
+      "id": "s0-318",
+      "sceneId": "s0",
+      "text": "Salomé: I will not dance, Tetrarch."
+    },
+    {
+      "id": "s0-319",
+      "sceneId": "s0",
+      "text": "Herodias: [*Laughing*]."
+    },
+    {
+      "id": "s0-320",
+      "sceneId": "s0",
+      "text": "Herodias: You see how she obeys you."
+    },
+    {
+      "id": "s0-321",
+      "sceneId": "s0",
+      "text": "Herod: What is it to me whether she dance or not? It is naught to me. To-night I am happy, I am exceeding happy. Never have I been so happy."
+    },
+    {
+      "id": "s0-322",
+      "sceneId": "s0",
+      "text": "First Soldier: The Tetrarch has a sombre look. Has he not a sombre look?"
+    },
+    {
+      "id": "s0-323",
+      "sceneId": "s0",
+      "text": "Second Soldier: Yes, he has a sombre look."
+    },
+    {
+      "id": "s0-324",
+      "sceneId": "s0",
+      "text": "Herod: Wherefore should I not be happy? Cæsar, who is lord of the world, who is lord of all things, loves me well. He has just sent me most precious gifts. Also he has promised me to summon to Rome the King of Cappadocia, who is my enemy. It may be that at Rome he will crucify him, for he is able to do all things that he wishes. Verily, Cæsar is lord. Thus you see I have a right to be happy. Indeed, I am happy. I have never been so happy. There is nothing in the world that can mar my happiness."
+    },
+    {
+      "id": "s0-325",
+      "sceneId": "s0",
+      "text": "The Voice of Jokanaan: He shall be seated on this throne. He shall be clothed in scarlet and purple. In his hand he shall bear a golden cup full of his blasphemies. And the angel of the Lord shall smite him. He shall be eaten of worms."
+    },
+    {
+      "id": "s0-326",
+      "sceneId": "s0",
+      "text": "Herodias: You hear what he says about you. He says that you will be eaten of worms."
+    },
+    {
+      "id": "s0-327",
+      "sceneId": "s0",
+      "text": "Herod: It is not of me that he speaks. He speaks never against me. It is of the King of Cappadocia that he speaks; the King of Cappadocia, who is mine enemy. It is he who shall be eaten of worms. It is not I. Never has he spoken word against me, this prophet, save that I sinned in taking to wife the wife of my brother. It may be he is right. For, of a truth, you are sterile."
+    },
+    {
+      "id": "s0-328",
+      "sceneId": "s0",
+      "text": "Herodias: I am sterile, I? You say that, you that are ever looking at my daughter, you that would have her dance for your pleasure? It is absurd to say that. I have borne a child. You have gotten no child, no, not even from one of your slaves. It is you who are sterile, not I."
+    },
+    {
+      "id": "s0-329",
+      "sceneId": "s0",
+      "text": "Herod: Peace, woman! I say that you are sterile. You have borne me no child, and the prophet says that our marriage is not a true marriage. He says that it is an incestuous marriage, a marriage that will bring evils.... I fear he is right; I am sure that he is right. But it is not the moment to speak of such things. I would be happy at this moment. Of a truth, I am happy. There is nothing I lack."
+    },
+    {
+      "id": "s0-330",
+      "sceneId": "s0",
+      "text": "Herodias: I am glad you are of so fair a humour to-night. It is not your custom. But it is late. Let us go within. Do not forget that we hunt at sunrise. All honours must be shown to Cæsar's ambassadors, must they not?"
+    },
+    {
+      "id": "s0-331",
+      "sceneId": "s0",
+      "text": "Second Soldier: What a sombre look the Tetrarch wears."
+    },
+    {
+      "id": "s0-332",
+      "sceneId": "s0",
+      "text": "First Soldier: Yes, he wears a sombre look."
+    },
+    {
+      "id": "s0-333",
+      "sceneId": "s0",
+      "text": "Herod: Salomé, Salomé, dance for me. I pray thee dance for me. I am sad to-night. Yes; I am passing sad to-night. When I came hither I slipped in blood, which is an evil omen; and I heard, I am sure I heard in the air a beating of wings, a beating of giant wings. I cannot tell what they mean ... I am sad to-night. Therefore dance for me. Dance for me, Salomé, I beseech you. If you dance for me you may ask of me what you will, and I will give it you, even unto the half of my kingdom."
+    },
+    {
+      "id": "s0-334",
+      "sceneId": "s0",
+      "text": "Salomé: [*Rising.*] Will you indeed give me whatsoever I shall ask, Tetrarch?"
+    },
+    {
+      "id": "s0-335",
+      "sceneId": "s0",
+      "text": "Herodias: Do not dance, my daughter."
+    },
+    {
+      "id": "s0-336",
+      "sceneId": "s0",
+      "text": "Herod: Everything, even the half of my kingdom."
+    },
+    {
+      "id": "s0-337",
+      "sceneId": "s0",
+      "text": "Salomé: You swear it, Tetrarch?"
+    },
+    {
+      "id": "s0-338",
+      "sceneId": "s0",
+      "text": "Herod: I swear it, Salomé."
+    },
+    {
+      "id": "s0-339",
+      "sceneId": "s0",
+      "text": "Herodias: Do not dance, my daughter."
+    },
+    {
+      "id": "s0-340",
+      "sceneId": "s0",
+      "text": "Salomé: By what will you swear, Tetrarch?"
+    },
+    {
+      "id": "s0-341",
+      "sceneId": "s0",
+      "text": "Herod: By my life, by my crown, by my gods. Whatsoever you desire I will give it you, even to the half of my kingdom, if you will but dance for me. O, Salomé, Salomé, dance for me!"
+    },
+    {
+      "id": "s0-342",
+      "sceneId": "s0",
+      "text": "Salomé: You have sworn, Tetrarch."
+    },
+    {
+      "id": "s0-343",
+      "sceneId": "s0",
+      "text": "Herod: I have sworn, Salomé."
+    },
+    {
+      "id": "s0-344",
+      "sceneId": "s0",
+      "text": "Salomé: All this I ask, even the half of your kingdom."
+    },
+    {
+      "id": "s0-345",
+      "sceneId": "s0",
+      "text": "Herodias: My daughter, do not dance."
+    },
+    {
+      "id": "s0-346",
+      "sceneId": "s0",
+      "text": "Herod: Even to the half of my kingdom. Thou wilt be passing fair as a queen, Salomé, if it please thee to ask for the half of my kingdom. Will she not be fair as a queen? Ah! it is cold here! There is an icy wind, and I hear ... wherefore do I hear in the air this beating of wings? Ah! one might fancy a bird, a huge black bird that hovers over the terrace. Why can I not see it, this bird? The beat of its wings is terrible. The breath of the wind of its wings is terrible. It is a chill wind. Nay, but it is not cold, it is hot. I am choking. Pour water on my hands. Give me snow to eat. Loosen my mantle. Quick! quick! loosen my mantle. Nay, but leave it. It is my garland that hurts me, my garland of roses. The flowers are like fire. They have burned my forehead."
+    },
+    {
+      "id": "s0-347",
+      "sceneId": "s0",
+      "text": "[*He tears the wreath from his head and throws it on the table.*]"
+    },
+    {
+      "id": "s0-348",
+      "sceneId": "s0",
+      "text": "Herod: Ah! I can breathe now. How red those petals are! They are like stains of blood on the cloth. That does not matter. You must not find symbols in everything you see. It makes life impossible. It were better to say that stains of blood are as lovely as rose petals. It were better far to say that.... But we will not speak of this. Now I am happy, I am passing happy. Have I not the right to be happy? Your daughter is going to dance for me. Will you not dance for me, Salomé? You have promised to dance for me."
+    },
+    {
+      "id": "s0-349",
+      "sceneId": "s0",
+      "text": "Herodias: I will not have her dance."
+    },
+    {
+      "id": "s0-350",
+      "sceneId": "s0",
+      "text": "Salomé: I will dance for you, Tetrarch."
+    },
+    {
+      "id": "s0-351",
+      "sceneId": "s0",
+      "text": "Herod: You hear what your daughter says. She is going to dance for me. You do well to dance for me, Salomé. And when you have danced for me, forget not to ask of me whatsoever you wish. Whatsoever you wish I will give it you, even to the half of my kingdom. I have sworn it, have I not?"
+    },
+    {
+      "id": "s0-352",
+      "sceneId": "s0",
+      "text": "Salomé: You have sworn it, Tetrarch."
+    },
+    {
+      "id": "s0-353",
+      "sceneId": "s0",
+      "text": "Herod: And I have never broken my word. I am not of those who break their oaths. I know not how to lie. I am the slave of my word, and my word is the word of a king. The King of Cappadocia always lies, but he is no true king. He is a coward. Also he owes me money that he will not repay. He has even insulted my ambassadors. He has spoken words that were wounding. But Cæsar will crucify him when he comes to Rome. I am sure that Cæsar will crucify him. And if not, yet will he die, being eaten of worms. The prophet has prophesied it. Well! wherefore dost thou tarry, Salomé?"
+    },
+    {
+      "id": "s0-354",
+      "sceneId": "s0",
+      "text": "Salomé: I am awaiting until my slaves bring perfumes to me and the seven veils, and take off my sandals. [*Slaves bring perfumes and the seven veils, and take off the sandals of Salomé.*]"
+    },
+    {
+      "id": "s0-355",
+      "sceneId": "s0",
+      "text": "Herod: Ah, you are going to dance with naked feet. 'Tis well!--'Tis well. Your little feet will be like white doves. They will be like little white flowers that dance upon the trees.... No, no, she is going to dance on blood. There is blood spilt on the ground. She must not dance on blood. It were an evil omen."
+    },
+    {
+      "id": "s0-356",
+      "sceneId": "s0",
+      "text": "Herodias: What is it to you if she dance on blood? Thou hast waded deep enough therein...."
+    },
+    {
+      "id": "s0-357",
+      "sceneId": "s0",
+      "text": "Herod: What is it to me? Ah! look at the moon! She has become red. She has become red as blood. Ah! the prophet prophesied truly. He prophesied that the moon would become red as blood. Did he not prophesy it? All of you heard him. And now the moon has become red as blood. Do ye not see it?"
+    },
+    {
+      "id": "s0-358",
+      "sceneId": "s0",
+      "text": "Herodias: Oh, yes, I see it well, and the stars are falling like ripe figs, are they not? and the sun is becoming black like sackcloth of hair, and the kings of the earth are afraid. That at least one can see. The prophet, for once in his life, was right, the kings of the earth are afraid.... Let us go within. You are sick. They will say at Rome that you are mad. Let us go within, I tell you."
+    },
+    {
+      "id": "s0-359",
+      "sceneId": "s0",
+      "text": "The Voice of Jokanaan: Who is this who cometh from Edom, who is this who cometh from Bozra, whose raiment is dyed with purple, who shineth in the beauty of his garments, who walketh mighty in his greatness? Wherefore is thy raiment stained with scarlet?"
+    },
+    {
+      "id": "s0-360",
+      "sceneId": "s0",
+      "text": "Herodias: Let us go within. The voice of that man maddens me. I will not have my daughter dance while he is continually crying out. I will not have her dance while you look at her in this fashion. In a word, I will not have her dance."
+    },
+    {
+      "id": "s0-361",
+      "sceneId": "s0",
+      "text": "Herod: Do not rise, my wife, my queen, it will avail thee nothing. I will not go within till she hath danced. Dance, Salomé, dance for me."
+    },
+    {
+      "id": "s0-362",
+      "sceneId": "s0",
+      "text": "Herodias: Do not dance, my daughter."
+    },
+    {
+      "id": "s0-363",
+      "sceneId": "s0",
+      "text": "Salomé: I am ready, Tetrarch."
+    },
+    {
+      "id": "s0-364",
+      "sceneId": "s0",
+      "text": "[*Salomé dances the dance of the seven veils.*]"
+    },
+    {
+      "id": "s0-365",
+      "sceneId": "s0",
+      "text": "Herod: Ah! wonderful! wonderful! You see that she has danced for me, your daughter. Come near, Salomé, come near, that I may give you your reward. Ah! I pay the dancers well. I will pay thee royally. I will give thee whatsoever thy soul desireth. What wouldst thou have? Speak."
+    },
+    {
+      "id": "s0-366",
+      "sceneId": "s0",
+      "text": "Salomé: [*Kneeling*]."
+    },
+    {
+      "id": "s0-367",
+      "sceneId": "s0",
+      "text": "Salomé: I would that they presently bring me in a silver charger...."
+    },
+    {
+      "id": "s0-368",
+      "sceneId": "s0",
+      "text": "[Laughing.]"
+    },
+    {
+      "id": "s0-369",
+      "sceneId": "s0",
+      "text": "Herod: In a silver charger? Surely yes, in a silver charger. She is charming, is she not? What is it you would have in a silver charger, O sweet and fair Salomé, you who are fairer than all the daughters of Judæa? What would you have them bring thee in a silver charger? Tell me. Whatsoever it may be, they shall give it you. My treasures belong to thee. What is it, Salomé?"
+    },
+    {
+      "id": "s0-370",
+      "sceneId": "s0",
+      "text": "Salomé: [*Rising*]."
+    },
+    {
+      "id": "s0-371",
+      "sceneId": "s0",
+      "text": "Salomé: The head of Jokanaan."
+    },
+    {
+      "id": "s0-372",
+      "sceneId": "s0",
+      "text": "Herodias: Ah! that is well said, my daughter."
+    },
+    {
+      "id": "s0-373",
+      "sceneId": "s0",
+      "text": "Herod: No, no!"
+    },
+    {
+      "id": "s0-374",
+      "sceneId": "s0",
+      "text": "Herodias: That is well said, my daughter."
+    },
+    {
+      "id": "s0-375",
+      "sceneId": "s0",
+      "text": "Herod: No, no, Salomé. You do not ask me that. Do not listen to your mother's voice. She is ever giving you evil counsel. Do not heed her."
+    },
+    {
+      "id": "s0-376",
+      "sceneId": "s0",
+      "text": "Salomé: I do not heed my mother. It is for mine own pleasure that I ask the head of Jokanaan in a silver charger. You hath sworn, Herod. Forget not that you have sworn an oath."
+    },
+    {
+      "id": "s0-377",
+      "sceneId": "s0",
+      "text": "Herod: I know it. I have sworn by my gods. I know it well. But I pray you, Salomé, ask of me something else. Ask of me the half of my kingdom, and I will give it you. But ask not of me what you have asked."
+    },
+    {
+      "id": "s0-378",
+      "sceneId": "s0",
+      "text": "Salomé: I ask of you the head of Jokanaan."
+    },
+    {
+      "id": "s0-379",
+      "sceneId": "s0",
+      "text": "Herod: No, no, I do not wish it."
+    },
+    {
+      "id": "s0-380",
+      "sceneId": "s0",
+      "text": "Salomé: You have sworn, Herod."
+    },
+    {
+      "id": "s0-381",
+      "sceneId": "s0",
+      "text": "Herodias: Yes, you have sworn. Everybody heard you. You swore it before everybody."
+    },
+    {
+      "id": "s0-382",
+      "sceneId": "s0",
+      "text": "Herod: Be silent! It is not to you I speak."
+    },
+    {
+      "id": "s0-383",
+      "sceneId": "s0",
+      "text": "Herodias: My daughter has done well to ask the head of Jokanaan. He has covered me with insults. He has said monstrous things against me. One can see that she loves her mother well. Do not yield, my daughter. He has sworn, he has sworn."
+    },
+    {
+      "id": "s0-384",
+      "sceneId": "s0",
+      "text": "Herod: Be silent, speak not to me!... Come, Salomé, be reasonable. I have never been hard to you. I have ever loved you.... It may be that I have loved you too much. Therefore ask not this thing of me. This is a terrible thing, an awful thing to ask of me. Surely, I think thou art jesting. The head of a man that is cut from his body is ill to look upon, is it not? It is not meet that the eyes of a virgin should look upon such a thing. What pleasure could you have in it? None. No, no, it is not what you desire. Hearken to me. I have an emerald, a great round emerald, which Cæsar's minion sent me. If you look through this emerald you can see things which happen at a great distance. Cæsar himself carries such an emerald when he goes to the circus. But my emerald is larger. I know well that it is larger. It is the largest emerald in the whole world. You would like that, would you not? Ask it of me and I will give it you."
+    },
+    {
+      "id": "s0-385",
+      "sceneId": "s0",
+      "text": "Salomé: I demand the head of Jokanaan."
+    },
+    {
+      "id": "s0-386",
+      "sceneId": "s0",
+      "text": "Herod: You are not listening. You are not listening. Suffer me to speak, Salomé."
+    },
+    {
+      "id": "s0-387",
+      "sceneId": "s0",
+      "text": "Salomé: The head of Jokanaan."
+    },
+    {
+      "id": "s0-388",
+      "sceneId": "s0",
+      "text": "Herod: No, no, you would not have that. You say that to trouble me, because I have looked at you all this evening. It is true, I have looked at you all this evening. Your beauty troubled me. Your beauty has grievously troubled me, and I have looked at you too much. But I will look at you no more. Neither at things, nor at people should one look. Only in mirrors should one look, for mirrors do but show us masks. Oh! oh! bring wine! I thirst.... Salomé, Salomé, let us be friends. Come now!... Ah! what would I say? What was't? Ah! I remember!... Salomé--nay, but come nearer to me; I fear you will not hear me--Salomé, you know my white peacocks, my beautiful white peacocks, that walk in the garden between the myrtles and the tall cypress trees. Their beaks are gilded with gold, and the grains that they eat are gilded with gold also, and their feet are stained with purple. When they cry out the rain comes, and the moon shows herself in the heavens when they spread their tails. Two by two they walk between the cypress trees and the black myrtles, and each has a slave to tend it. Sometimes they fly across the trees, and anon they crouch in the grass, and round the lake. There are not in all the world birds so wonderful. There is no king in all the world who possesses such wonderful birds. I am sure that Cæsar himself has no birds so fair as my birds. I will give you fifty of my peacocks. They will follow you whithersoever you go, and in the midst of them you will be like the moon in the midst of a great white cloud.... I will give them all to you. I have but a hundred, and in the whole world there is no king who has peacocks like unto my peacocks. But I will give them all to you. Only you must loose me from my oath, and must not ask of me that which you have asked of me."
+    },
+    {
+      "id": "s0-389",
+      "sceneId": "s0",
+      "text": "[*He empties the cup of wine.*]"
+    },
+    {
+      "id": "s0-390",
+      "sceneId": "s0",
+      "text": "Salomé: Give me the head of Jokanaan."
+    },
+    {
+      "id": "s0-391",
+      "sceneId": "s0",
+      "text": "Herodias: Well said, my daughter! As for you, you are ridiculous with your peacocks."
+    },
+    {
+      "id": "s0-392",
+      "sceneId": "s0",
+      "text": "Herod: Be silent! You cry out always; you cry out like a beast of prey. You must not. Your voice wearies me. Be silent, I say Salomé, think of what you are doing. This man comes perchance from God. He is a holy man. The finger of God has touched him. God has put into his mouth terrible words. In the palace as in the desert God is always with him.... At least it is possible. One does not know. It is possible that God is for him and with him. Furthermore, if he died some misfortune might happen to me. In any case, he said that the day he dies a misfortune will happen to some one. That could only be to me. Remember, I slipped in blood when I entered. Also, I heard a beating of wings in the air, a beating of mighty wings. These are very evil omens, and there were others. I am sure there were others though I did not see them. Well, Salomé, you do not wish a misfortune to happen to me? You do not wish that. Listen to me, then."
+    },
+    {
+      "id": "s0-393",
+      "sceneId": "s0",
+      "text": "Salomé: Give me the head of Jokanaan."
+    },
+    {
+      "id": "s0-394",
+      "sceneId": "s0",
+      "text": "Herod: Ah! you are not listening to me. Be calm. I--I am calm. I am quite calm. Listen. I have jewels hidden in this place--jewels that your mother even has never seen; jewels that are marvellous. I have a collar of pearls, set in four rows. They are like unto moons chained with rays of silver. They are like fifty moons caught in a golden net. On the ivory of her breast a queen has worn it. Thou shalt be as fair as a queen when thou wearest it. I have amethysts of two kinds, one that is black like wine, and one that is red like wine which has been coloured with water. I have topazes, yellow as are the eyes of tigers, and topazes that are pink as the eyes of a wood-pigeon, and green topazes that are as the eyes of cats. I have opals that burn always, with an icelike flame, opals that make sad men's minds, and are fearful of the shadows. I have onyxes like the eyeballs of a dead woman. I have moonstones that change when the moon changes, and are wan when they see the sun. I have sapphires big like eggs, and as blue as blue flowers. The sea wanders within them and the moon comes never to trouble the blue of their waves. I have chrysolites and beryls and chrysoprases and rubies. I have sardonyx and hyacinth stones, and stones of chalcedony, and I will give them all to you, all, and other things will I add to them. The King of the Indies has but even now sent me four fans fashioned from the feathers of parrots, and the King of Numidia a garment of ostrich feathers. I have a crystal, into which it is not lawful for a woman to look, nor may young men behold it until they have been beaten with rods. In a coffer of nacre I have three wondrous turquoises. He who wears them on his forehead can imagine things which are not, and he who carries them in his hand can make women sterile. These are great treasures above all price. They are treasures without price. But this is not all. In an ebony coffer I have two cups of amber, that are like apples of gold. If an enemy pour poison into these cups, they become like an apple of silver. In a coffer incrusted with amber I have sandals incrusted with glass. I have mantles that have been brought from the land of the Seres, and bracelets decked about with carbuncles and with jade that come from the city of Euphrates.... What desirest thou more than this, Salomé? Tell me the thing that thou desirest, and I will give it thee. All that thou askest I will give thee, save one thing. I will give thee all that is mine, save one life. I will give thee the mantle of the high priest. I will give thee the veil of the sanctuary."
+    },
+    {
+      "id": "s0-395",
+      "sceneId": "s0",
+      "text": "The Jews: Oh! oh!"
+    },
+    {
+      "id": "s0-396",
+      "sceneId": "s0",
+      "text": "Salomé: Give me the head of Jokanaan."
+    },
+    {
+      "id": "s0-397",
+      "sceneId": "s0",
+      "text": "Herod: [*Sinking back in his seat*]. Let her be given what she asks! Of a truth she is her mother's child! [*The first Soldier approaches. Herodias draws from the hand of the Tetrarch the ring of death and gives it to the Soldier, who straightway bears it to the Executioner. The Executioner looks scared.*] Who has taken my ring? There was a ring on my right hand. Who has drunk my wine? There was wine in my cup. It was full of wine. Someone has drunk it! Oh! surely some evil will befall some one. [*The Executioner goes down into the cistern.*] Ah! Wherefore did I give my oath? Kings ought never to pledge their word. If they keep it not, it is terrible, and if they keep it, it is terrible also."
+    },
+    {
+      "id": "s0-398",
+      "sceneId": "s0",
+      "text": "Herodias: My daughter has done well."
+    },
+    {
+      "id": "s0-399",
+      "sceneId": "s0",
+      "text": "Herod: I am sure that some misfortune will happen."
+    },
+    {
+      "id": "s0-400",
+      "sceneId": "s0",
+      "text": "[*She leans over the cistern and listens.*]"
+    },
+    {
+      "id": "s0-401",
+      "sceneId": "s0",
+      "text": "Salomé: There is no sound. I hear nothing. Why does he not cry out, this man? Ah! if any man sought to kill me, I would cry out, I would struggle, I would not suffer.... Strike, strike, Naaman, strike, I tell you.... No, I hear nothing. There is a silence, a terrible silence. Ah! something has fallen upon the ground. I heard something fall. It is the sword of the headsman. He is afraid, this slave. He has let his sword fall. He dare not kill him. He is a coward, this slave! Let soldiers be sent. [*She sees the Page of Herodias and addresses him.*] Come hither, thou wert the friend of him who is dead, is it not so? Well, I tell thee, there are not dead men enough. Go to the soldiers and bid them go down and bring me the thing I ask, the thing the Tetrarch has promised me, the thing that is mine. [*The Page recoils. She turns to the soldiers.*] Hither, ye soldiers. Get ye down into this cistern and bring me the head of this man. [*The Soldiers recoil.*] Tetrarch, Tetrarch, command your soldiers that they bring me the head of Jokanaan."
+    },
+    {
+      "id": "s0-402",
+      "sceneId": "s0",
+      "text": "Salomé: [*A huge black arm, the arm of the Executioner, comes forth from the cistern, bearing on a silver shield the head of Jokanaan. Salomé seizes it. Herod hides his face with his cloak. Herodias smiles and fans herself. The Nazarenes fall on their knees and begin to pray.*]"
+    },
+    {
+      "id": "s0-403",
+      "sceneId": "s0",
+      "text": "Salomé: Ah! thou wouldst not suffer me to kiss thy mouth, Jokanaan. Well! I will kiss it now. I will bite it with my teeth as one bites a ripe fruit. Yes, I will kiss thy mouth, Jokanaan. I said it; did I not say it? I said it. Ah! I will kiss it now.... But, wherefore dost thou not look at me, Jokanaan? Thine eyes that were so terrible, so full of rage and scorn, are shut now. Wherefore are they shut? Open thine eyes! Lift up thine eyelids, Jokanaan! Wherefore dost thou not look at me? Art thou afraid of me, Jokanaan, that thou wilt not look at me?... And thy tongue, that was like a red snake darting poison, it moves no more, it says nothing now, Jokanaan, that scarlet viper that spat its venom upon me. It is strange, is it not? How is it that the red viper stirs no longer?... Thou wouldst have none of me, Jokanaan. Thou didst reject me. Thou didst speak evil words against me. Thou didst treat me as a harlot, as a wanton, me, Salomé, daughter of Herodias, Princess of Judæa! Well, Jokanaan, I still live, but thou, thou art dead, and thy head belongs to me. I can do with it what I will. I can throw it to the dogs and to the birds of the air. That which the dogs leave, the birds of the air shall devour.... Ah, Jokanaan, Jokanaan, thou wert the only man that I have loved. All other men are hateful to me. But thou, thou wert beautiful! Thy body was a column of ivory set on a silver socket. It was a garden full of doves and of silver lilies. It was a tower of silver decked with shields of ivory. There was nothing in the world so white as thy body. There was nothing in the world so black as thy hair. In the whole world there was nothing so red as thy mouth. Thy voice was a censer that scattered strange perfumes, and when I looked on thee I heard a strange music. Ah! wherefore didst thou not look at me, Jokanaan? Behind thine hands and thy curses thou didst hide thy face. Thou didst put upon thine eyes the covering of him who would see his God. Well, thou hast seen thy God, Jokanaan, but me, me, thou didst never see. If thou hadst seen me thou wouldst have loved me. I, I saw thee, Jokanaan, and I loved thee. Oh, how I loved thee! I love thee yet, Jokanaan, I love thee only.... I am athirst for thy beauty; I am hungry for thy body; and neither wine nor fruits can appease my desire. What shall I do now, Jokanaan? Neither the floods nor the great waters can quench my passion. I was a princess, and thou didst scorn me. I was a virgin, and thou didst take my virginity from me. I was chaste, and thou didst fill my veins with fire.... Ah! ah! wherefore didst thou not look at me, Jokanaan? If thou hadst looked at me thou hadst loved me. Well I know that thou wouldst have loved me, and the mystery of love is greater than the mystery of death. Love only should one consider."
+    },
+    {
+      "id": "s0-404",
+      "sceneId": "s0",
+      "text": "Herod: She is monstrous, thy daughter, she is altogether monstrous. In truth, what she has done is a great crime. I am sure that it was a crime against an unknown God."
+    },
+    {
+      "id": "s0-405",
+      "sceneId": "s0",
+      "text": "Herodias: I approve of what my daughter has done. And I will stay here now."
+    },
+    {
+      "id": "s0-406",
+      "sceneId": "s0",
+      "text": "Herod: [*Rising*]."
+    },
+    {
+      "id": "s0-407",
+      "sceneId": "s0",
+      "text": "Herod: Ah! There speaks the incestuous wife! Come! I will not stay here. Come, I tell thee. Surely some terrible thing will befall. Manasseh, Issachar, Ozias, put out the torches. I will not look at things, I will not suffer things to look at me. Put out the torches! Hide the moon! Hide the stars! Let us hide ourselves in our palace, Herodias. I begin to be afraid."
+    },
+    {
+      "id": "s0-408",
+      "sceneId": "s0",
+      "text": "Herod: [*The slaves put out the torches. The stars disappear. A great black cloud crosses the moon and conceals it completely. The stage becomes very dark. The Tetrarch begins to climb the staircase.*]"
+    },
+    {
+      "id": "s0-409",
+      "sceneId": "s0",
+      "text": "The Voice of Salomé: Ah! I have kissed thy mouth, Jokanaan, I have kissed thy mouth. There was a bitter taste on thy lips. Was it the taste of blood?... But perchance it is the taste of love.... They say that love hath a bitter taste.... But what of that? what of that? I have kissed thy mouth, Jokanaan."
+    },
+    {
+      "id": "s0-410",
+      "sceneId": "s0",
+      "text": "[*A moonbeam falls on Salomé covering her with light.*]"
+    },
+    {
+      "id": "s0-411",
+      "sceneId": "s0",
+      "text": "[*Turning round and seeing Salomé*.]"
+    },
+    {
+      "id": "s0-412",
+      "sceneId": "s0",
+      "text": "Herod: Kill that woman!"
+    },
+    {
+      "id": "s0-413",
+      "sceneId": "s0",
+      "text": "Herod: [*The soldiers rush forward and crush beneath their shields Salomé, daughter of Herodias, Princess of Judæa.*]"
+    }
+  ]
+}
