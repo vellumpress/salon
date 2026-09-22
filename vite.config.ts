@@ -1,3 +1,6 @@
+// Patch router-core before TanStack imports it. A later plugin hook is too
+// late: the codec is already in the module cache and prerender keeps emitting NUL.
+import "./scripts/patch-ssr-match-id.mjs";
 import { existsSync, readdirSync } from "node:fs";
 import { join, resolve } from "node:path";
 import type { Plugin } from "vite";
@@ -13,6 +16,8 @@ import { appEnvPlugin } from "./scripts/app-env-plugin.mjs";
 import { isMigrationFile } from "./scripts/migration-plan.mjs";
 // @ts-expect-error JS helper alongside the TS vite config
 import { writeSpa404Html } from "./scripts/spa-pages-fallback.mjs";
+// @ts-expect-error JS plugin alongside the TS vite config
+import { ssrMatchIdNulPlugin } from "./scripts/ssr-nul.mjs";
 
 /** The files `src/lib/db.ts` globs — same directory, same non-recursive scope. */
 function hasGlobbedMigrations(root: string): boolean {
@@ -180,6 +185,8 @@ export default defineConfig(({ command, isPreview }) => {
     },
     resolve: { tsconfigPaths: true },
     plugins: [
+      // Before prerender: match ids must not dehydrate "/" as a raw NUL.
+      ssrMatchIdNulPlugin(),
       pgliteBootstrapPlugin(),
       // Before tanstackStart so /auth/popup never falls through to the SPA.
       authPopupPlugin(),

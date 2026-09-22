@@ -24,6 +24,7 @@ import { readFileSync, realpathSync } from "node:fs";
 import { constants as osConstants } from "node:os";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { patchInstalledDehydrateSsrMatchId } from "./ssr-nul.mjs";
 
 export const APP_ENV_REL_PATH = ".grok/app-env.json";
 
@@ -109,6 +110,15 @@ function main(argv) {
   if (!command) {
     console.error("usage: node scripts/with-app-env.mjs <command> [args…]");
     process.exit(2);
+  }
+  // Vite bundles this config with esbuild before executing it, and that bundle
+  // inlines router-core. Patch the codec on disk first or prerender keeps the
+  // old slash → U+0000 encoder in memory.
+  const patched = patchInstalledDehydrateSsrMatchId();
+  if (patched.length > 0) {
+    console.error(
+      `[ssr-match-id-no-nul] patched ${patched.length} router-core file(s) before Vite`,
+    );
   }
   const env = mergeAppEnv(readAppEnv(projectRoot()), process.env);
   const child = spawn(command, args, { stdio: "inherit", env });
