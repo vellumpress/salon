@@ -2284,6 +2284,63 @@ test("Tier B batches 13–14 are local format-min binds, never Featured", () => 
   assert.equal(FEATURED_CAROUSEL_IDS.includes("salammbo"), false);
 });
 
+/**
+ * Tier B format-min CLEAR batches 15–16. Later only — never Featured,
+ * never Next, never For you. Cold-open untouched.
+ *
+ * Held: recovered PG is a different work, or main already has a fuller local bind.
+ * aurora-leigh (fuller local on main, PG 56621), the-canterbury-tales (fuller local on main),
+ * effi-briest (PG 53235), elective-affinities (PG 43434),
+ * nana (PG 1406), rudin (PG 47935 is Fathers and Sons),
+ * with-fire-and-sword (PG 3750).
+ */
+const TIER_B_BATCH_15_16 = [
+  "beowulf",
+  "ghosts",
+  "hayy",
+  "kalevala",
+  "laxd-la-saga",
+  "njala",
+  "quo-vadis",
+  "the-lady-with-the-dog-and-other-stories",
+  "white-nights",
+] as const;
+
+test("Tier B batches 15–16 are local format-min binds, never Featured", () => {
+  assert.equal(TIER_B_BATCH_15_16.length, 9);
+  assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  const forYou = RITUAL_LANES.find((lane) => lane.id === "for-you");
+  assert.ok(forYou);
+  const coldOpen = new Set<string>(FIRST_SESSION_RITUAL_IDS);
+  for (const id of TIER_B_BATCH_15_16) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(curatorialTrack(id), "later", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    assert.equal(forYou!.workIds.includes(id), false, id);
+    assert.equal(coldOpen.has(id), false, id);
+    for (const lane of RITUAL_LANES) {
+      assert.equal(lane.workIds.includes(id), false, `${id} ${lane.id}`);
+    }
+    assertNoStubOpening(id);
+    const full = textWork(id);
+    assert.equal(work!.breaths, full.breaths.length, id);
+    assert.ok(full.breaths.length > 1, id);
+    assert.ok(
+      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
+      `${id} shelf opening`,
+    );
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
+  }
+});
+
 test("homepage examples keep country + concrete sentence", () => {
   assert.equal(countryFor(SHELF.find((w) => w.id === "passing")!), "United States");
   assert.match(blurbFor("passing"), /color line/i);
