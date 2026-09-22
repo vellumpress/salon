@@ -7,15 +7,19 @@ import { useVellum } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 /**
- * Glanceable today's score in the homepage mark, between Friends and You.
- * The number is `deriveReadingStats(...).dailyScore` — the same path the
- * You page hero uses, including day-ledger backfill. Week and month stay
- * on You.
+ * Glanceable today's score. The number is `deriveReadingStats(...).dailyScore`
+ * — the same path the You page hero uses, including day-ledger backfill.
+ * Week and month stay on You.
+ *
+ * `mark` sits in the top bar when Continue is hidden. `continue` is the
+ * score half of the homepage Continue block.
  */
 export function DailyScoreChip({
   className,
+  placement = "mark",
 }: {
   className?: string;
+  placement?: "mark" | "continue";
 }) {
   const hydrated = usePersistHydrated();
   const progress = useVellum((s) => s.progress);
@@ -77,24 +81,31 @@ export function DailyScoreChip({
 
   const text = dailyScoreGlance(daily);
   const quiet = text === "—";
+  const inContinue = placement === "continue";
 
   return (
     <Link
       to="/profile"
       preload="intent"
       data-home-daily-score={quiet ? "quiet" : text}
+      data-score-place={placement}
       aria-label={
         quiet
           ? "Today’s reading score, not yet. Open You."
           : `Today’s reading score ${text}. Open You.`
       }
       className={cn(
-        "daily-score-chip type-chrome flex h-full shrink-0 flex-col items-center justify-center self-stretch border-l border-ink/15 [touch-action:manipulation]",
-        quiet ? "bg-paper-deep text-ink/45" : "bg-yellow text-ink",
+        "daily-score-chip type-chrome flex flex-col items-center justify-center [touch-action:manipulation]",
+        inContinue
+          ? "daily-score-chip--continue min-h-11 flex-1 self-stretch bg-transparent"
+          : cn(
+              "h-full shrink-0 self-stretch border-l border-ink/15",
+              quiet ? "bg-paper-deep text-ink/45" : "bg-yellow text-ink",
+            ),
         className,
       )}
     >
-      <span className="type-kicker opacity-70">Today</span>
+      <span className={cn("type-kicker", quiet ? "opacity-55" : "opacity-70")}>Today</span>
       <span className="daily-score-num type-card" aria-hidden="true">
         {text}
       </span>

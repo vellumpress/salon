@@ -167,16 +167,23 @@ test("homepage glance matches the You-page daily total and stays soft at zero", 
   );
 });
 
-test("homepage chip is a tap to You and reuses the You daily score", () => {
+test("homepage score sits in Continue and reuses the You daily score", () => {
+  const home = readFileSync(new URL("../routes/index.tsx", import.meta.url), "utf8");
   const mark = readFileSync(new URL("../components/you-friends-mark.tsx", import.meta.url), "utf8");
   const chip = readFileSync(new URL("../components/daily-score-chip.tsx", import.meta.url), "utf8");
-  assert.match(mark, /Friends[\s\S]*<DailyScoreChip[\s\S]*\bYou\b/);
+
+  assert.match(home, /data-home-continue[\s\S]*DailyScoreChip placement="continue"[\s\S]*Continue/);
+  assert.match(home, /showScore=\{hydrated && !showResume\}/);
+  assert.match(mark, /showScore \? <DailyScoreChip \/> : null/);
+  assert.match(mark, /Friends[\s\S]*You/);
 
   assert.match(chip, /deriveReadingStats\(/);
   assert.match(chip, /\.dailyScore/);
   assert.match(chip, /dailyScoreGlance\(/);
   assert.match(chip, /to=["']\/profile["']/);
+  assert.match(chip, /placement\?: "mark" \| "continue"/);
   assert.doesNotMatch(chip, /weeklyScore|monthlyScore/);
+  assert.doesNotMatch(home, /weeklyScore|monthlyScore|Featured/);
   for (const key of [
     "readingMinutesByDay",
     "advancesByDay",

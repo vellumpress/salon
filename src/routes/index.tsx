@@ -1,6 +1,7 @@
 import { createFileRoute, Link, useRouter } from "@tanstack/react-router";
 import { useEffect, useMemo } from "react";
-import { ResumeLink, useLastRead } from "@/components/resume-link";
+import { DailyScoreChip } from "@/components/daily-score-chip";
+import { ResumeLink, useLastRead, usePersistHydrated } from "@/components/resume-link";
 import { YouFriendsMark } from "@/components/you-friends-mark";
 import { AdaptedStrip } from "@/components/adapted-strip";
 import { WorksStrip } from "@/components/works-strip";
@@ -41,6 +42,7 @@ const DOORS = [
 function Home() {
   const router = useRouter();
   const last = useLastRead();
+  const hydrated = usePersistHydrated();
   const visit = useVisitSeed();
   const { query, setQuery, searching, matches, poolSize } = useShelfSearch("local");
 
@@ -53,6 +55,7 @@ function Home() {
 
   const resumeFill: Fill | undefined = last ? blockFills[0] : undefined;
   const doorFills = last ? blockFills.slice(1) : blockFills;
+  const showResume = Boolean(last && resumeFill && !searching);
 
   useEffect(() => {
     void router.preloadRoute({ to: "/login" });
@@ -81,27 +84,30 @@ function Home() {
           {APP_NAME}
         </span>
         <ResumeLink />
-        <YouFriendsMark />
+        <YouFriendsMark showScore={hydrated && !showResume} />
       </div>
 
       {searching ? (
         <ShelfSearchHits matches={matches} query={query} />
       ) : (
         <>
-          {last && resumeFill ? (
-            <Link
-              to="/read/$workId"
-              params={{ workId: last.id }}
-              search={{ at: last.breathIndex }}
-              preload="intent"
-              aria-label={`Resume ${last.title} by ${last.author || "unknown"}`}
+          {showResume && last && resumeFill ? (
+            <div
               className={cn(
-                "cell-resume relative flex min-h-0 items-stretch",
+                "cell-resume flex min-h-0 items-stretch",
                 fillClass(resumeFill),
                 fillInk(resumeFill),
               )}
+              data-home-continue=""
             >
-              <span className="flex min-w-0 flex-1 flex-col justify-center px-5 py-4 sm:px-8 sm:py-5">
+              <Link
+                to="/read/$workId"
+                params={{ workId: last.id }}
+                search={{ at: last.breathIndex }}
+                preload="intent"
+                aria-label={`Resume ${last.title} by ${last.author || "unknown"}`}
+                className="flex min-w-0 flex-1 flex-col justify-center px-5 py-4 sm:px-8 sm:py-5"
+              >
                 <span className="type-kicker opacity-80">Resume</span>
                 <span className="pillar-title mt-1">{last.title}</span>
                 {last.author ? (
@@ -109,11 +115,21 @@ function Home() {
                     {last.author}
                   </span>
                 ) : null}
-              </span>
-              <span className="type-chrome flex shrink-0 items-center px-5 sm:px-8">
-                Continue
-              </span>
-            </Link>
+              </Link>
+              <div className="continue-score flex shrink-0 flex-col">
+                <DailyScoreChip placement="continue" />
+                <Link
+                  to="/read/$workId"
+                  params={{ workId: last.id }}
+                  search={{ at: last.breathIndex }}
+                  preload="intent"
+                  aria-label={`Continue ${last.title}`}
+                  className="continue-score-go type-chrome flex items-center justify-center px-2"
+                >
+                  Continue
+                </Link>
+              </div>
+            </div>
           ) : null}
 
           {DOORS.map((door, i) => {
