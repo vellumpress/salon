@@ -7,6 +7,11 @@ import { dayKey } from "./day-key.ts";
 import type { SitSession, WorkProgress } from "./store.ts";
 import type { TogetherKeep } from "./together-keep.ts";
 import { buildRadarAxes, type RadarAxis } from "./you-radar.ts";
+import {
+  deriveWindowScores,
+  type DailyScore,
+  type WindowScore,
+} from "./reading-score.ts";
 
 export type FormCount = { form: ShelfForm; label: string; count: number };
 export type OriginCount = { country: string; count: number };
@@ -74,6 +79,10 @@ export type ReadingStats = {
   favorites: number;
   kept: number;
   readiness: Readiness;
+  /** Daily reading score (0–100) — active-tap pillars. Hero number on You. */
+  dailyScore: DailyScore;
+  weeklyScore: WindowScore;
+  monthlyScore: WindowScore;
   breaths: number;
   /** Forward advances today — taps that moved to a new breath. */
   advancesToday: number;
@@ -517,6 +526,12 @@ export function deriveReadingStats(input: {
   favorites: string[];
   readingMinutesByDay?: Record<string, number>;
   advancesByDay?: Record<string, number>;
+  sceneCrossesByDay?: Record<string, number>;
+  keepsByDay?: Record<string, number>;
+  worksTouchedByDay?: Record<string, string[]>;
+  hostOpensByDay?: Record<string, number>;
+  sitsByDay?: Record<string, number>;
+  clubTouchesByDay?: Record<string, number>;
   lastActiveReadAt?: number;
   sitHistory?: SitSession[];
   togetherKeeps?: TogetherKeep[];
@@ -610,6 +625,61 @@ export function deriveReadingStats(input: {
     completed,
   });
 
+  // Backfill host / sit / club day maps from history when ledgers are empty
+  // (pre-score installs). Active minutes and advances already come from the
+  // active-tap clock.
+  const hostOpensByDay = { ...(input.hostOpensByDay ?? {}) };
+  const sitsByDay = { ...(input.sitsByDay ?? {}) };
+  const clubTouchesByDay = { ...(input.clubTouchesByDay ?? {}) };
+  const worksTouchedByDay = { ...(input.worksTouchedByDay ?? {}) };
+  const me = normalizeHandle(input.handle ?? "");
+  if (Object.keys(hostOpensByDay).length === 0) {
+    for (const sit of hostedSits) {
+      if (!sit.createdAt) continue;
+      if (me && sit.hostHandle === me) {
+        const key = dayKey(sit.createdAt);
+        hostOpensByDay[key] = (hostOpensByDay[key] ?? 0) + 1;
+      }
+    }
+  }
+  if (Object.keys(sitsByDay).length === 0) {
+    for (const sit of sitHistory) {
+      const key = dayKey(sit.endedAt);
+      sitsByDay[key] = (sitsByDay[key] ?? 0) + 1;
+    }
+  }
+  if (Object.keys(worksTouchedByDay).length === 0) {
+    for (const sit of sitHistory) {
+      const key = dayKey(sit.endedAt);
+      const list = worksTouchedByDay[key] ?? [];
+      if (sit.workId && !list.includes(sit.workId)) {
+        worksTouchedByDay[key] = [...list, sit.workId];
+      }
+    }
+  }
+  if (Object.keys(clubTouchesByDay).length === 0) {
+    for (const keep of togetherKeeps) {
+      if (!keep.createdAt) continue;
+      const key = dayKey(keep.createdAt);
+      clubTouchesByDay[key] = (clubTouchesByDay[key] ?? 0) + 1;
+    }
+  }
+
+  const { daily: dailyScore, weekly: weeklyScore, monthly: monthlyScore } =
+    deriveWindowScores(
+      {
+        readingMinutesByDay: byDay,
+        advancesByDay,
+        sceneCrossesByDay: input.sceneCrossesByDay,
+        keepsByDay: input.keepsByDay,
+        worksTouchedByDay,
+        hostOpensByDay,
+        sitsByDay,
+        clubTouchesByDay,
+      },
+      now,
+    );
+
   const sitTarget = sittingMinutes > 0 ? sittingMinutes : 20;
   const rings: RingStat[] = [
     {
@@ -681,6 +751,9 @@ export function deriveReadingStats(input: {
     favorites: favorites.length,
     kept,
     readiness,
+    dailyScore,
+    weeklyScore,
+    monthlyScore,
     breaths,
     advancesToday,
     advancesAll,

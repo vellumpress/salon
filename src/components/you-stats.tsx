@@ -51,6 +51,8 @@ export function ReadinessHero({
   const layout = radarLayout(reading.radar);
   const caption = radarCaption(reading.radar);
   const peak = Math.max(0, ...reading.radar.map((axis) => axis.score));
+  const daily = reading.dailyScore;
+  const scoreDisplay = Number.isFinite(daily.total) ? String(daily.total) : "—";
 
   return (
     <section className="flex flex-col border-b border-ink bg-paper text-ink">
@@ -60,7 +62,7 @@ export function ReadinessHero({
             viewBox={`0 0 ${layout.size} ${layout.size}`}
             className="h-full w-full"
             role="img"
-            aria-label={`Reading radar. Score ${reading.readiness.score}, ${reading.readiness.label}. ${caption}`}
+            aria-label={`Daily reading score ${scoreDisplay}, ${daily.label}. Week ${reading.weeklyScore.total}. Month ${reading.monthlyScore.total}. ${caption}`}
           >
             <rect width={layout.size} height={layout.size} fill="var(--color-paper)" />
             {layout.grids.map((d, i) => (
@@ -113,21 +115,32 @@ export function ReadinessHero({
             ))}
           </svg>
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-            <span className="you-radar-score type-title text-ink">{reading.readiness.score}</span>
+            <span className="you-radar-score type-title text-ink">{scoreDisplay}</span>
           </div>
         </figure>
         <div className="min-w-0 flex-1 pb-1">
           <p className="type-kicker text-muted">
             {handle || "This sitting"}
           </p>
-          <p className="mt-2 type-title">{reading.readiness.label}</p>
+          <p className="mt-2 type-title">{daily.label}</p>
           <p className="type-pitch mt-2.5 max-w-xl text-ink/75">
-            {reading.readiness.line}
+            {daily.line}
+          </p>
+          <p className="mt-4 font-sans text-xs tracking-chrome text-ink/55">
+            <span className="text-ink/70">Week {reading.weeklyScore.total}</span>
+            <span className="mx-2 text-ink/30" aria-hidden>
+              ·
+            </span>
+            <span className="text-ink/70">Month {reading.monthlyScore.total}</span>
           </p>
           {reading.hasSignal ? (
-            <p className="mt-3 font-sans text-xs tracking-chrome text-ink/55">
-              Week {formatActiveMinutes(reading.minutesWeek)} active
+            <p className="mt-2 font-sans text-xs tracking-chrome text-ink/45">
+              Today {formatActiveMinutes(reading.minutesToday)} active
               {reading.minutesAreEstimated ? " est." : ""}
+              <span className="mx-2 text-ink/25" aria-hidden>
+                ·
+              </span>
+              Week {formatActiveMinutes(reading.minutesWeek)} active
             </p>
           ) : null}
           <ul className="you-radar-legend mt-4 grid max-w-72 grid-cols-3 gap-x-3 gap-y-1 text-ink/50">
