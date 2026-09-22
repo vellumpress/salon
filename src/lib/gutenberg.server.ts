@@ -1,4 +1,4 @@
-import { breathsFor, type Work } from "./literature";
+import { breathsFor, type Work } from "./literature.ts";
 import {
   isChapterHeading,
   isChapterOne,
@@ -6,7 +6,7 @@ import {
   isStructuralMark,
   repairLines,
   splitSentences,
-} from "./sentences";
+} from "./sentences.ts";
 
 const MAX_BYTES = 2_200_000;
 const MAX_BREATHS = 10_000;
