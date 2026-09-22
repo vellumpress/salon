@@ -1,0 +1,2514 @@
+{
+  "id": "poems-by-emily-dickinson-series-one",
+  "title": "Poems by Emily Dickinson, Series One",
+  "author": "Emily Dickinson",
+  "year": "1890",
+  "note": "Project Gutenberg 2678",
+  "minutes": 45,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Success",
+      "place": "Success",
+      "reentry": "Success is counted sweetest By those who ne'er succeed. To comprehend a nectar Requires sorest need.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Our share of night to bear",
+      "place": "Our share of night to bear",
+      "reentry": "Our share of night to bear, Our share of morning, Our blank in bliss to fill, Our blank in scorning.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Rouge et Noir",
+      "place": "Rouge et Noir",
+      "reentry": "Soul, wilt thou toss again? By just such a hazard Hundreds have lost, indeed, But tens have won an all.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Rouge Gagne",
+      "place": "Rouge Gagne",
+      "reentry": "'T is so much joy! 'T is so much joy! If I should fail, what poverty! And yet, as poor as I Have ventured all upon a throw; Have gained! Yes! Hesitated so This side the victory!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Glee! The great storm is over!",
+      "place": "Glee! The great storm is over!",
+      "reentry": "Glee! The great storm is over! Four have recovered the land; Forty gone down together Into the boiling sand.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "If I can stop one heart from breaking",
+      "place": "If I can stop one heart from breaking",
+      "reentry": "If I can stop one heart from breaking, I shall not live in vain; If I can ease one life the aching, Or cool one pain, Or help one fainting robin Unto his nest again, I shall not live in vain.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Almost!",
+      "place": "Almost!",
+      "reentry": "Within my reach! I could have touched! I might have chanced that way! Soft sauntered through the village, Sauntered as soft away! So unsuspected violets Within the fields lie low, Too late for striving fingers That passed, an hour ago.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "A wounded deer leaps highest",
+      "place": "A wounded deer leaps highest",
+      "reentry": "A wounded deer leaps highest, I've heard the hunter tell; 'T is but the ecstasy of death, And then the brake is still.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "The heart asks pleasure first",
+      "place": "The heart asks pleasure first",
+      "reentry": "The heart asks pleasure first, And then, excuse from pain; And then, those little anodynes That deaden suffering;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "In a Library",
+      "place": "In a Library",
+      "reentry": "A precious, mouldering pleasure 't is To meet an antique book, In just the dress his century wore; A privilege, I think,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Much madness is divinest sense",
+      "place": "Much madness is divinest sense",
+      "reentry": "Much madness is divinest sense To a discerning eye; Much sense the starkest madness. 'T is the majority In this, as all, prevails. Assent, and you are sane; Demur, -- you're straightway dangerous, And handled with a chain.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "I asked no other thing",
+      "place": "I asked no other thing",
+      "reentry": "I asked no other thing, No other was denied. I offered Being for it; The mighty merchant smiled.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Exclusion",
+      "place": "Exclusion",
+      "reentry": "The soul selects her own society, Then shuts the door; On her divine majority Obtrude no more.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "The Secret",
+      "place": "The Secret",
+      "reentry": "Some things that fly there be, -- Birds, hours, the bumble-bee: Of these no elegy.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "The Lonely House",
+      "place": "The Lonely House",
+      "reentry": "I know some lonely houses off the road A robber 'd like the look of, -- Wooden barred, And windows hanging low, Inviting to A portico, Where two could creep: One hand the tools, The other peep To make sure all's asleep. Old-fashioned eyes, ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "To fight aloud is very brave",
+      "place": "To fight aloud is very brave",
+      "reentry": "To fight aloud is very brave, But gallanter, I know, Who charge within the bosom, The cavalry of woe.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "Dawn",
+      "place": "Dawn",
+      "reentry": "When night is almost done, And sunrise grows so near That we can touch the spaces, It 's time to smooth the hair",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "The Book of Martyrs",
+      "place": "The Book of Martyrs",
+      "reentry": "Read, sweet, how others strove, Till we are stouter; What they renounced, Till we are less afraid; How many times they bore The faithful witness, Till we are helped, As if a kingdom cared!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "The Mystery of Pain",
+      "place": "The Mystery of Pain",
+      "reentry": "Pain has an element of blank; It cannot recollect When it began, or if there were A day when it was not.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "I taste a liquor never brewed",
+      "place": "I taste a liquor never brewed",
+      "reentry": "I taste a liquor never brewed, From tankards scooped in pearl; Not all the vats upon the Rhine Yield such an alcohol!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "A Book",
+      "place": "A Book",
+      "reentry": "He ate and drank the precious words, His spirit grew robust; He knew no more that he was poor, Nor that his frame was dust. He danced along the dingy days, And this bequest of wings Was but a book. What liberty A loosened spirit brings!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "I had no time to hate, because",
+      "place": "I had no time to hate, because",
+      "reentry": "I had no time to hate, because The grave would hinder me, And life was not so ample I Could finish enmity.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "Unreturning",
+      "place": "Unreturning",
+      "reentry": "'T was such a little, little boat That toddled down the bay! 'T was such a gallant, gallant sea That beckoned it away!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "Whether my bark went down at sea",
+      "place": "Whether my bark went down at sea",
+      "reentry": "Whether my bark went down at sea, Whether she met with gales, Whether to isles enchanted She bent her docile sails;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Belshazzar had a letter, --",
+      "place": "Belshazzar had a letter, --",
+      "reentry": "Belshazzar had a letter, -- He never had but one; Belshazzar's correspondent Concluded and begun In that immortal copy The conscience of us all Can read without its glasses On revelation's wall.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "The brain within its groove",
+      "place": "The brain within its groove",
+      "reentry": "The brain within its groove Runs evenly and true; But let a splinter swerve, 'T were easier for you To put the water back When floods have slit the hills, And scooped a turnpike for themselves, And blotted out the mills!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Mine",
+      "place": "Mine",
+      "reentry": "Mine by the right of the white election! Mine by the royal seal! Mine by the sign in the scarlet prison Bars cannot conceal!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Bequest",
+      "place": "Bequest",
+      "reentry": "You left me, sweet, two legacies, -- A legacy of love A Heavenly Father would content, Had He the offer of;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Alter? When the hills do.",
+      "place": "Alter? When the hills do.",
+      "reentry": "Alter? When the hills do. Falter? When the sun Question if his glory Be the perfect one.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "Suspense",
+      "place": "Suspense",
+      "reentry": "Elysium is as far as to The very nearest room, If in that room a friend await Felicity or doom.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "Surrender",
+      "place": "Surrender",
+      "reentry": "Doubt me, my dim companion! Why, God would be content With but a fraction of the love Poured thee without a stint. The whole of me, forever, What more the woman can, -- Say quick, that I may dower thee With last delight I own!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "If you were coming in the fall",
+      "place": "If you were coming in the fall",
+      "reentry": "If you were coming in the fall, I'd brush the summer by With half a smile and half a spurn, As housewives do a fly.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "With a Flower",
+      "place": "With a Flower",
+      "reentry": "I hide myself within my flower, That wearing on your breast, You, unsuspecting, wear me too -- And angels know the rest.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "Proof",
+      "place": "Proof",
+      "reentry": "That I did always love, I bring thee proof: That till I loved I did not love enough.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "Have you got a brook in your little heart",
+      "place": "Have you got a brook in your little heart",
+      "reentry": "Have you got a brook in your little heart, Where bashful flowers blow, And blushing birds go down to drink, And shadows tremble so?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "Transplanted",
+      "place": "Transplanted",
+      "reentry": "As if some little Arctic flower, Upon the polar hem, Went wandering down the latitudes, Until it puzzled came To continents of summer, To firmaments of sun, To strange, bright crowds of flowers, And birds of foreign tongue! I say, as if thi",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "The Outlet",
+      "place": "The Outlet",
+      "reentry": "My river runs to thee: Blue sea, wilt welcome me?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "In Vain",
+      "place": "In Vain",
+      "reentry": "I cannot live with you, It would be life, And life is over there Behind the shelf",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "Renunciation",
+      "place": "Renunciation",
+      "reentry": "There came a day at summer's full Entirely for me; I thought that such were for the saints, Where revelations be.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "Love's Baptism",
+      "place": "Love's Baptism",
+      "reentry": "I'm ceded, I've stopped being theirs; The name they dropped upon my face With water, in the country church, Is finished using now, And they can put it with my dolls, My childhood, and the string of spools I've finished threading too.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "Resurrection",
+      "place": "Resurrection",
+      "reentry": "'T was a long parting, but the time For interview had come; Before the judgment-seat of God, The last and second time",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "Apocalypse",
+      "place": "Apocalypse",
+      "reentry": "I'm wife; I've finished that, That other state; I'm Czar, I'm woman now: It's safer so.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "The Wife",
+      "place": "The Wife",
+      "reentry": "She rose to his requirement, dropped The playthings of her life To take the honorable work Of woman and of wife.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "Apotheosis",
+      "place": "Apotheosis",
+      "reentry": "Come slowly, Eden! Lips unused to thee, Bashful, sip thy jasmines, As the fainting bee,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "New feet within my garden go",
+      "place": "New feet within my garden go",
+      "reentry": "New feet within my garden go, New fingers stir the sod; A troubadour upon the elm Betrays the solitude.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "May-Flower",
+      "place": "May-Flower",
+      "reentry": "Pink, small, and punctual, Aromatic, low, Covert in April, Candid in May,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "Why?",
+      "place": "Why?",
+      "reentry": "WHY?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "Perhaps you'd like to buy a flower?",
+      "place": "Perhaps you'd like to buy a flower?",
+      "reentry": "Perhaps you'd like to buy a flower? But I could never sell. If you would like to borrow Until the daffodil",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "The pedigree of honey",
+      "place": "The pedigree of honey",
+      "reentry": "The pedigree of honey Does not concern the bee; A clover, any time, to him Is aristocracy.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "A Service of Song",
+      "place": "A Service of Song",
+      "reentry": "Some keep the Sabbath going to church; I keep it staying at home, With a bobolink for a chorister, And an orchard for a dome.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "The bee is not afraid of me",
+      "place": "The bee is not afraid of me",
+      "reentry": "The bee is not afraid of me, I know the butterfly; The pretty people in the woods Receive me cordially.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "Summer's Armies",
+      "place": "Summer's Armies",
+      "reentry": "Some rainbow coming from the fair! Some vision of the world Cashmere I confidently see! Or else a peacock's purple train, Feather by feather, on the plain Fritters itself away!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "The Grass",
+      "place": "The Grass",
+      "reentry": "The grass so little has to do, -- A sphere of simple green, With only butterflies to brood, And bees to entertain,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "A little road not made of man",
+      "place": "A little road not made of man",
+      "reentry": "A little road not made of man, Enabled of the eye, Accessible to thill of bee, Or cart of butterfly.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "Summer Shower",
+      "place": "Summer Shower",
+      "reentry": "A drop fell on the apple tree, Another on the roof; A half a dozen kissed the eaves, And made the gables laugh.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "Psalm of the Day",
+      "place": "Psalm of the Day",
+      "reentry": "A something in a summer's day, As slow her flambeaux burn away, Which solemnizes me.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "The Sea of Sunset",
+      "place": "The Sea of Sunset",
+      "reentry": "This is the land the sunset washes, These are the banks of the Yellow Sea; Where it rose, or whither it rushes, These are the western mystery!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "Purple Clover",
+      "place": "Purple Clover",
+      "reentry": "There is a flower that bees prefer, And butterflies desire; To gain the purple democrat The humming-birds aspire.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "The Bee",
+      "place": "The Bee",
+      "reentry": "Like trains of cars on tracks of plush I hear the level bee: A jar across the flowers goes, Their velvet masonry",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "Presentiment is that long shadow on the lawn",
+      "place": "Presentiment is that long shadow on the lawn",
+      "reentry": "Presentiment is that long shadow on the lawn Indicative that suns go down; The notice to the startled grass That darkness is about to pass.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "As children bid the guest good-night",
+      "place": "As children bid the guest good-night",
+      "reentry": "As children bid the guest good-night, And then reluctant turn, My flowers raise their pretty lips, Then put their nightgowns on.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "Angels in the early morning",
+      "place": "Angels in the early morning",
+      "reentry": "Angels in the early morning May be seen the dews among, Stooping, plucking, smiling, flying: Do the buds to them belong?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "So bashful when I spied her",
+      "place": "So bashful when I spied her",
+      "reentry": "So bashful when I spied her, So pretty, so ashamed! So hidden in her leaflets, Lest anybody find;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "Two Worlds",
+      "place": "Two Worlds",
+      "reentry": "It makes no difference abroad, The seasons fit the same, The mornings blossom into noons, And split their pods of flame.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "The Mountain",
+      "place": "The Mountain",
+      "reentry": "The mountain sat upon the plain In his eternal chair, His observation omnifold, His inquest everywhere.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "A Day",
+      "place": "A Day",
+      "reentry": "I'll tell you how the sun rose, -- A ribbon at a time. The steeples swam in amethyst, The news like squirrels ran.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "The butterfly's assumption-gown",
+      "place": "The butterfly's assumption-gown",
+      "reentry": "The butterfly's assumption-gown, In chrysoprase apartments hung, This afternoon put on.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "The Wind",
+      "place": "The Wind",
+      "reentry": "Of all the sounds despatched abroad, There's not a charge to me Like that old measure in the boughs, That phraseless melody",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "Death and Life",
+      "place": "Death and Life",
+      "reentry": "Apparently with no surprise To any happy flower, The frost beheads it at its play In accidental power. The blond assassin passes on, The sun proceeds unmoved To measure off another day For an approving God.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "'T was later when the summer went",
+      "place": "'T was later when the summer went",
+      "reentry": "'T was later when the summer went Than when the cricket came, And yet we knew that gentle clock Meant nought but going home.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "Indian Summer",
+      "place": "Indian Summer",
+      "reentry": "These are the days when birds come back, A very few, a bird or two, To take a backward look.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "Autumn",
+      "place": "Autumn",
+      "reentry": "The morns are meeker than they were, The nuts are getting brown; The berry's cheek is plumper, The rose is out of town.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "Beclouded",
+      "place": "Beclouded",
+      "reentry": "The sky is low, the clouds are mean, A travelling flake of snow Across a barn or through a rut Debates if it will go.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "The Hemlock",
+      "place": "The Hemlock",
+      "reentry": "I think the hemlock likes to stand Upon a marge of snow; It suits his own austerity, And satisfies an awe",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "There's a certain slant of light",
+      "place": "There's a certain slant of light",
+      "reentry": "There's a certain slant of light, On winter afternoons, That oppresses, like the weight Of cathedral tunes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "One dignity delays for all",
+      "place": "One dignity delays for all",
+      "reentry": "One dignity delays for all, One mitred afternoon. None can avoid this purple, None evade this crown.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "Too Late",
+      "place": "Too Late",
+      "reentry": "Delayed till she had ceased to know, Delayed till in its vest of snow Her loving bosom lay. An hour behind the fleeting breath, Later by just an hour than death, -- Oh, lagging yesterday!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "Astra Castra",
+      "place": "Astra Castra",
+      "reentry": "Departed to the judgment, A mighty afternoon; Great clouds like ushers leaning, Creation looking on.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "Safe in their alabaster chambers",
+      "place": "Safe in their alabaster chambers",
+      "reentry": "Safe in their alabaster chambers, Untouched by morning and untouched by noon, Sleep the meek members of the resurrection, Rafter of satin, and roof of stone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "On this long storm the rainbow rose",
+      "place": "On this long storm the rainbow rose",
+      "reentry": "On this long storm the rainbow rose, On this late morn the sun; The clouds, like listless elephants, Horizons straggled down.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "From the Chrysalis",
+      "place": "From the Chrysalis",
+      "reentry": "My cocoon tightens, colors tease, I'm feeling for the air; A dim capacity for wings Degrades the dress I wear.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "Setting Sail",
+      "place": "Setting Sail",
+      "reentry": "Exultation is the going Of an inland soul to sea, -- Past the houses, past the headlands, Into deep eternity!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "Look back on time with kindly eyes",
+      "place": "Look back on time with kindly eyes",
+      "reentry": "Look back on time with kindly eyes, He doubtless did his best; How softly sinks his trembling sun In human nature's west!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "A train went through a burial gate",
+      "place": "A train went through a burial gate",
+      "reentry": "A train went through a burial gate, A bird broke forth and sang, And trilled, and quivered, and shook his throat Till all the churchyard rang;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "I died for beauty, but was scarce",
+      "place": "I died for beauty, but was scarce",
+      "reentry": "I died for beauty, but was scarce Adjusted in the tomb, When one who died for truth was lain In an adjoining room.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "Troubled about Many Things",
+      "place": "Troubled about Many Things",
+      "reentry": "\"TROUBLED ABOUT MANY THINGS.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "Real",
+      "place": "Real",
+      "reentry": "I like a look of agony, Because I know it 's true; Men do not sham convulsion, Nor simulate a throe.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "The Funeral",
+      "place": "The Funeral",
+      "reentry": "That short, potential stir That each can make but once, That bustle so illustrious 'T is almost consequence,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "I went to thank her",
+      "place": "I went to thank her",
+      "reentry": "I went to thank her, But she slept; Her bed a funnelled stone, With nosegays at the head and foot, That travellers had thrown,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "I've seen a dying eye",
+      "place": "I've seen a dying eye",
+      "reentry": "I've seen a dying eye Run round and round a room In search of something, as it seemed, Then cloudier become; And then, obscure with fog, And then be soldered down, Without disclosing what it be, 'T were blessed to have seen.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "Refuge",
+      "place": "Refuge",
+      "reentry": "The clouds their backs together laid, The north begun to push, The forests galloped till they fell, The lightning skipped like mice; The thunder crumbled like a stuff -- How good to be safe in tombs, Where nature's temper cannot reach, Nor ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "I never saw a moor",
+      "place": "I never saw a moor",
+      "reentry": "I never saw a moor, I never saw the sea; Yet know I how the heather looks, And what a wave must be.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "Playmates",
+      "place": "Playmates",
+      "reentry": "God permits industrious angels Afternoons to play. I met one, -- forgot my school-mates, All, for him, straightway.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "To know just how he suffered would be dear",
+      "place": "To know just how he suffered would be dear",
+      "reentry": "To know just how he suffered would be dear; To know if any human eyes were near To whom he could intrust his wavering gaze, Until it settled firm on Paradise.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "The last night that she lived",
+      "place": "The last night that she lived",
+      "reentry": "The last night that she lived, It was a common night, Except the dying; this to us Made nature different.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "The First Lesson",
+      "place": "The First Lesson",
+      "reentry": "Not in this world to see his face Sounds long, until I read the place Where this is said to be But just the primer to a life Unopened, rare, upon the shelf, Clasped yet to him and me.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "The bustle in a house",
+      "place": "The bustle in a house",
+      "reentry": "The bustle in a house The morning after death Is solemnest of industries Enacted upon earth, --",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "I reason, earth is short",
+      "place": "I reason, earth is short",
+      "reentry": "I reason, earth is short, And anguish absolute, And many hurt; But what of that?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "Afraid? Of whom am I afraid?",
+      "place": "Afraid? Of whom am I afraid?",
+      "reentry": "Afraid? Of whom am I afraid? Not death; for who is he? The porter of my father's lodge As much abasheth me.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "Dying",
+      "place": "Dying",
+      "reentry": "The sun kept setting, setting still; No hue of afternoon Upon the village I perceived, -- From house to house 't was noon.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "Two swimmers wrestled on the spar",
+      "place": "Two swimmers wrestled on the spar",
+      "reentry": "Two swimmers wrestled on the spar Until the morning sun, When one turned smiling to the land. O God, the other one!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "The Chariot",
+      "place": "The Chariot",
+      "reentry": "Because I could not stop for Death, He kindly stopped for me; The carriage held but just ourselves And Immortality.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "She went as quiet as the dew",
+      "place": "She went as quiet as the dew",
+      "reentry": "She went as quiet as the dew From a familiar flower. Not like the dew did she return At the accustomed hour!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "Resurgam",
+      "place": "Resurgam",
+      "reentry": "At last to be identified! At last, the lamps upon thy side, The rest of life to see! Past midnight, past the morning star! Past sunrise! Ah! what leagues there are Between our feet and day!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "Except to heaven, she is nought",
+      "place": "Except to heaven, she is nought",
+      "reentry": "Except to heaven, she is nought; Except for angels, lone; Except to some wide-wandering bee, A flower superfluous blown;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "Death is a dialogue between",
+      "place": "Death is a dialogue between",
+      "reentry": "Death is a dialogue between The spirit and the dust. \"Dissolve,\" says Death. The Spirit, \"Sir, I have another trust.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "It was too late for man",
+      "place": "It was too late for man",
+      "reentry": "It was too late for man, But early yet for God; Creation impotent to help, But prayer remained our side.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "Along the Potomac",
+      "place": "Along the Potomac",
+      "reentry": "When I was small, a woman died. To-day her only boy Went up from the Potomac, His face all victory,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "The daisy follows soft the sun",
+      "place": "The daisy follows soft the sun",
+      "reentry": "The daisy follows soft the sun, And when his golden walk is done, Sits shyly at his feet. He, waking, finds the flower near. \"Wherefore, marauder, art thou here?\" \"Because, sir, love is sweet!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "Emancipation",
+      "place": "Emancipation",
+      "reentry": "No rack can torture me, My soul's at liberty Behind this mortal bone There knits a bolder one",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "Lost",
+      "place": "Lost",
+      "reentry": "I lost a world the other day. Has anybody found? You'll know it by the row of stars Around its forehead bound.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "If I should n't be alive",
+      "place": "If I should n't be alive",
+      "reentry": "If I should n't be alive When the robins come, Give the one in red cravat A memorial crumb.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "Sleep is supposed to be",
+      "place": "Sleep is supposed to be",
+      "reentry": "Sleep is supposed to be, By souls of sanity, The shutting of the eye.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "I shall know why, when time is over",
+      "place": "I shall know why, when time is over",
+      "reentry": "I shall know why, when time is over, And I have ceased to wonder why; Christ will explain each separate anguish In the fair schoolroom of the sky.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "I never lost as much but twice",
+      "place": "I never lost as much but twice",
+      "reentry": "I never lost as much but twice, And that was in the sod; Twice have I stood a beggar Before the door of God!",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Success is counted sweetest\nBy those who ne'er succeed.\nTo comprehend a nectar\nRequires sorest need."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Not one of all the purple host\nWho took the flag to-day\nCan tell the definition,\nSo clear, of victory,"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "As he, defeated, dying,\nOn whose forbidden ear\nThe distant strains of triumph\nBreak, agonized and clear!"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Our share of night to bear,\nOur share of morning,\nOur blank in bliss to fill,\nOur blank in scorning."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Here a star, and there a star,\nSome lose their way.\nHere a mist, and there a mist,\nAfterwards -- day!"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Soul, wilt thou toss again?\nBy just such a hazard\nHundreds have lost, indeed,\nBut tens have won an all."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Angels'breathless ballot\nLingers to record thee;\nImps in eager caucus\nRaffle for my soul."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "'T is so much joy! 'T is so much joy!\nIf I should fail, what poverty!\nAnd yet, as poor as I\nHave ventured all upon a throw;\nHave gained! Yes! Hesitated so\nThis side the victory!"
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Life is but life, and death but death!\nBliss is but bliss, and breath but breath!\nAnd if, indeed, I fail,\nAt least to know the worst is sweet.\nDefeat means nothing but defeat,\nNo drearier can prevail!"
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "And if I gain, -- oh, gun at sea,\nOh, bells that in the steeples be,\nAt first repeat it slow!\nFor heaven is a different thing\nConjectured, and waked sudden in,\nAnd might o'erwhelm me so!"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Glee! The great storm is over!\nFour have recovered the land;\nForty gone down together\nInto the boiling sand."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Ring, for the scant salvation!\nToll, for the bonnie souls, --\nNeighbor and friend and bridegroom,\nSpinning upon the shoals!"
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "How they will tell the shipwreck\nWhen winter shakes the door,\nTill the children ask, \"But the forty?\nDid they come back no more?\""
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Then a silence suffuses the story,\nAnd a softness the teller's eye;\nAnd the children no further question,\nAnd only the waves reply."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "If I can stop one heart from breaking,\nI shall not live in vain;\nIf I can ease one life the aching,\nOr cool one pain,\nOr help one fainting robin\nUnto his nest again,\nI shall not live in vain."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Within my reach!\nI could have touched!\nI might have chanced that way!\nSoft sauntered through the village,\nSauntered as soft away!\nSo unsuspected violets\nWithin the fields lie low,\nToo late for striving fingers\nThat passed, an hour ago."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "A wounded deer leaps highest,\nI've heard the hunter tell;\n'T is but the ecstasy of death,\nAnd then the brake is still."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "The smitten rock that gushes,\nThe trampled steel that springs;\nA cheek is always redder\nJust where the hectic stings!"
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "Mirth is the mail of anguish,\nIn which it cautions arm,\nLest anybody spy the blood\nAnd \"You're hurt\" exclaim!"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "The heart asks pleasure first,\nAnd then, excuse from pain;\nAnd then, those little anodynes\nThat deaden suffering;"
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "And then, to go to sleep;\nAnd then, if it should be\nThe will of its Inquisitor,\nThe liberty to die."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "A precious, mouldering pleasure 't is\nTo meet an antique book,\nIn just the dress his century wore;\nA privilege, I think,"
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "His venerable hand to take,\nAnd warming in our own,\nA passage back, or two, to make\nTo times when he was young."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "His quaint opinions to inspect,\nHis knowledge to unfold\nOn what concerns our mutual mind,\nThe literature of old;"
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "What interested scholars most,\nWhat competitions ran\nWhen Plato was a certainty.\nAnd Sophocles a man;"
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "When Sappho was a living girl,\nAnd Beatrice wore\nThe gown that Dante deified.\nFacts, centuries before,"
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "He traverses familiar,\nAs one should come to town\nAnd tell you all your dreams were true;\nHe lived where dreams were sown."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "His presence is enchantment,\nYou beg him not to go;\nOld volumes shake their vellum heads\nAnd tantalize, just so."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Much madness is divinest sense\nTo a discerning eye;\nMuch sense the starkest madness.\n'T is the majority\nIn this, as all, prevails.\nAssent, and you are sane;\nDemur, -- you're straightway dangerous,\nAnd handled with a chain."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "I asked no other thing,\nNo other was denied.\nI offered Being for it;\nThe mighty merchant smiled."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Brazil? He twirled a button,\nWithout a glance my way:\n\"But, madam, is there nothing else\nThat we can show to-day?\""
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "The soul selects her own society,\nThen shuts the door;\nOn her divine majority\nObtrude no more."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "Unmoved, she notes the chariot's pausing\nAt her low gate;\nUnmoved, an emperor is kneeling\nUpon her mat."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "I've known her from an ample nation\nChoose one;\nThen close the valves of her attention\nLike stone."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Some things that fly there be, --\nBirds, hours, the bumble-bee:\nOf these no elegy."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "Some things that stay there be, --\nGrief, hills, eternity:\nNor this behooveth me."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "There are, that resting, rise.\nCan I expound the skies?\nHow still the riddle lies!"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "I know some lonely houses off the road\nA robber 'd like the look of, --\nWooden barred,\nAnd windows hanging low,\nInviting to\nA portico,\nWhere two could creep:\nOne hand the tools,\nThe other peep\nTo make sure all's asleep.\nOld-fashioned eyes,\nNot easy to surprise!"
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "How orderly the kitchen 'd look by night,\nWith just a clock, --\nBut they could gag the tick,\nAnd mice won't bark;\nAnd so the walls don't tell,\nNone will."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "A pair of spectacles ajar just stir --\nAn almanac's aware.\nWas it the mat winked,\nOr a nervous star?\nThe moon slides down the stair\nTo see who's there."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "There's plunder, -- where?\nTankard, or spoon,\nEarring, or stone,\nA watch, some ancient brooch\nTo match the grandmamma,\nStaid sleeping there."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "Day rattles, too,\nStealth's slow;\nThe sun has got as far\nAs the third sycamore.\nScreams chanticleer,\n\"Who's there?\"\nAnd echoes, trains away,\nSneer -- \"Where?\"\nWhile the old couple, just astir,\nFancy the sunrise left the door ajar!"
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "To fight aloud is very brave,\nBut gallanter, I know,\nWho charge within the bosom,\nThe cavalry of woe."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Who win, and nations do not see,\nWho fall, and none observe,\nWhose dying eyes no country\nRegards with patriot love."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "We trust, in plumed procession,\nFor such the angels go,\nRank after rank, with even feet\nAnd uniforms of snow."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "When night is almost done,\nAnd sunrise grows so near\nThat we can touch the spaces,\nIt 's time to smooth the hair"
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "And get the dimples ready,\nAnd wonder we could care\nFor that old faded midnight\nThat frightened but an hour."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "Read, sweet, how others strove,\nTill we are stouter;\nWhat they renounced,\nTill we are less afraid;\nHow many times they bore\nThe faithful witness,\nTill we are helped,\nAs if a kingdom cared!"
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "Read then of faith\nThat shone above the fagot;\nClear strains of hymn\nThe river could not drown;\nBrave names of men\nAnd celestial women,\nPassed out of record\nInto renown!"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "Pain has an element of blank;\nIt cannot recollect\nWhen it began, or if there were\nA day when it was not."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "It has no future but itself,\nIts infinite realms contain\nIts past, enlightened to perceive\nNew periods of pain."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "I taste a liquor never brewed,\nFrom tankards scooped in pearl;\nNot all the vats upon the Rhine\nYield such an alcohol!"
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "Inebriate of air am I,\nAnd debauchee of dew,\nReeling, through endless summer days,\nFrom inns of molten blue."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "When landlords turn the drunken bee\nOut of the foxglove's door,\nWhen butterflies renounce their drams,\nI shall but drink the more!"
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "Till seraphs swing their snowy hats,\nAnd saints to windows run,\nTo see the little tippler\nLeaning against the sun!"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "He ate and drank the precious words,\nHis spirit grew robust;\nHe knew no more that he was poor,\nNor that his frame was dust.\nHe danced along the dingy days,\nAnd this bequest of wings\nWas but a book. What liberty\nA loosened spirit brings!"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "I had no time to hate, because\nThe grave would hinder me,\nAnd life was not so ample I\nCould finish enmity."
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "Nor had I time to love; but since\nSome industry must be,\nThe little toil of love, I thought,\nWas large enough for me."
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "'T was such a little, little boat\nThat toddled down the bay!\n'T was such a gallant, gallant sea\nThat beckoned it away!"
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "'T was such a greedy, greedy wave\nThat licked it from the coast;\nNor ever guessed the stately sails\nMy little craft was lost!"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "Whether my bark went down at sea,\nWhether she met with gales,\nWhether to isles enchanted\nShe bent her docile sails;"
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "By what mystic mooring\nShe is held to-day, --\nThis is the errand of the eye\nOut upon the bay."
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "Belshazzar had a letter, --\nHe never had but one;\nBelshazzar's correspondent\nConcluded and begun\nIn that immortal copy\nThe conscience of us all\nCan read without its glasses\nOn revelation's wall."
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "The brain within its groove\nRuns evenly and true;\nBut let a splinter swerve,\n'T were easier for you\nTo put the water back\nWhen floods have slit the hills,\nAnd scooped a turnpike for themselves,\nAnd blotted out the mills!"
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "Mine by the right of the white election!\nMine by the royal seal!\nMine by the sign in the scarlet prison\nBars cannot conceal!"
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "Mine, here in vision and in veto!\nMine, by the grave's repeal\nTitled, confirmed, -- delirious charter!\nMine, while the ages steal!"
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "You left me, sweet, two legacies, --\nA legacy of love\nA Heavenly Father would content,\nHad He the offer of;"
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "You left me boundaries of pain\nCapacious as the sea,\nBetween eternity and time,\nYour consciousness and me."
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "Alter? When the hills do.\nFalter? When the sun\nQuestion if his glory\nBe the perfect one."
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "Surfeit? When the daffodil\nDoth of the dew:\nEven as herself, O friend!\nI will of you!"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "Elysium is as far as to\nThe very nearest room,\nIf in that room a friend await\nFelicity or doom."
+    },
+    {
+      "id": "s29-1",
+      "sceneId": "s29",
+      "text": "What fortitude the soul contains,\nThat it can so endure\nThe accent of a coming foot,\nThe opening of a door!"
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "Doubt me, my dim companion!\nWhy, God would be content\nWith but a fraction of the love\nPoured thee without a stint.\nThe whole of me, forever,\nWhat more the woman can, --\nSay quick, that I may dower thee\nWith last delight I own!"
+    },
+    {
+      "id": "s30-1",
+      "sceneId": "s30",
+      "text": "It cannot be my spirit,\nFor that was thine before;\nI ceded all of dust I knew, --\nWhat opulence the more\nHad I, a humble maiden,\nWhose farthest of degree\nWas that she might,\nSome distant heaven,\nDwell timidly with thee!"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "If you were coming in the fall,\nI'd brush the summer by\nWith half a smile and half a spurn,\nAs housewives do a fly."
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "If I could see you in a year,\nI'd wind the months in balls,\nAnd put them each in separate drawers,\nUntil their time befalls."
+    },
+    {
+      "id": "s31-2",
+      "sceneId": "s31",
+      "text": "If only centuries delayed,\nI'd count them on my hand,\nSubtracting till my fingers dropped\nInto Van Diemen's land."
+    },
+    {
+      "id": "s31-3",
+      "sceneId": "s31",
+      "text": "If certain, when this life was out,\nThat yours and mine should be,\nI'd toss it yonder like a rind,\nAnd taste eternity."
+    },
+    {
+      "id": "s31-4",
+      "sceneId": "s31",
+      "text": "But now, all ignorant of the length\nOf time's uncertain wing,\nIt goads me, like the goblin bee,\nThat will not state its sting."
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "I hide myself within my flower,\nThat wearing on your breast,\nYou, unsuspecting, wear me too --\nAnd angels know the rest."
+    },
+    {
+      "id": "s32-1",
+      "sceneId": "s32",
+      "text": "I hide myself within my flower,\nThat, fading from your vase,\nYou, unsuspecting, feel for me\nAlmost a loneliness."
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "That I did always love,\nI bring thee proof:\nThat till I loved\nI did not love enough."
+    },
+    {
+      "id": "s33-1",
+      "sceneId": "s33",
+      "text": "That I shall love alway,\nI offer thee\nThat love is life,\nAnd life hath immortality."
+    },
+    {
+      "id": "s33-2",
+      "sceneId": "s33",
+      "text": "This, dost thou doubt, sweet?\nThen have I\nNothing to show\nBut Calvary."
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "Have you got a brook in your little heart,\nWhere bashful flowers blow,\nAnd blushing birds go down to drink,\nAnd shadows tremble so?"
+    },
+    {
+      "id": "s34-1",
+      "sceneId": "s34",
+      "text": "And nobody knows, so still it flows,\nThat any brook is there;\nAnd yet your little draught of life\nIs daily drunken there."
+    },
+    {
+      "id": "s34-2",
+      "sceneId": "s34",
+      "text": "Then look out for the little brook in March,\nWhen the rivers overflow,\nAnd the snows come hurrying from the hills,\nAnd the bridges often go."
+    },
+    {
+      "id": "s34-3",
+      "sceneId": "s34",
+      "text": "And later, in August it may be,\nWhen the meadows parching lie,\nBeware, lest this little brook of life\nSome burning noon go dry!"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "As if some little Arctic flower,\nUpon the polar hem,\nWent wandering down the latitudes,\nUntil it puzzled came\nTo continents of summer,\nTo firmaments of sun,\nTo strange, bright crowds of flowers,\nAnd birds of foreign tongue!\nI say, as if this little flower\nTo Eden wandered in --\nWhat then? Why, nothing, only,\nYour inference therefrom!"
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "My river runs to thee:\nBlue sea, wilt welcome me?"
+    },
+    {
+      "id": "s36-1",
+      "sceneId": "s36",
+      "text": "My river waits reply.\nOh sea, look graciously!"
+    },
+    {
+      "id": "s36-2",
+      "sceneId": "s36",
+      "text": "I'll fetch thee brooks\nFrom spotted nooks, --"
+    },
+    {
+      "id": "s36-3",
+      "sceneId": "s36",
+      "text": "Say, sea,\nTake me!"
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "I cannot live with you,\nIt would be life,\nAnd life is over there\nBehind the shelf"
+    },
+    {
+      "id": "s37-1",
+      "sceneId": "s37",
+      "text": "The sexton keeps the key to,\nPutting up\nOur life, his porcelain,\nLike a cup"
+    },
+    {
+      "id": "s37-2",
+      "sceneId": "s37",
+      "text": "Discarded of the housewife,\nQuaint or broken;\nA newer Sevres pleases,\nOld ones crack."
+    },
+    {
+      "id": "s37-3",
+      "sceneId": "s37",
+      "text": "I could not die with you,\nFor one must wait\nTo shut the other's gaze down, --\nYou could not."
+    },
+    {
+      "id": "s37-4",
+      "sceneId": "s37",
+      "text": "And I, could I stand by\nAnd see you freeze,\nWithout my right of frost,\nDeath's privilege?"
+    },
+    {
+      "id": "s37-5",
+      "sceneId": "s37",
+      "text": "Nor could I rise with you,\nBecause your face\nWould put out Jesus',\nThat new grace"
+    },
+    {
+      "id": "s37-6",
+      "sceneId": "s37",
+      "text": "Glow plain and foreign\nOn my homesick eye,\nExcept that you, than he\nShone closer by."
+    },
+    {
+      "id": "s37-7",
+      "sceneId": "s37",
+      "text": "They'd judge us -- how?\nFor you served Heaven, you know,\nOr sought to;\nI could not,"
+    },
+    {
+      "id": "s37-8",
+      "sceneId": "s37",
+      "text": "Because you saturated sight,\nAnd I had no more eyes\nFor sordid excellence\nAs Paradise."
+    },
+    {
+      "id": "s37-9",
+      "sceneId": "s37",
+      "text": "And were you lost, I would be,\nThough my name\nRang loudest\nOn the heavenly fame."
+    },
+    {
+      "id": "s37-10",
+      "sceneId": "s37",
+      "text": "And were you saved,\nAnd I condemned to be\nWhere you were not,\nThat self were hell to me."
+    },
+    {
+      "id": "s37-11",
+      "sceneId": "s37",
+      "text": "So we must keep apart,\nYou there, I here,\nWith just the door ajar\nThat oceans are,\nAnd prayer,\nAnd that pale sustenance,\nDespair!"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "There came a day at summer's full\nEntirely for me;\nI thought that such were for the saints,\nWhere revelations be."
+    },
+    {
+      "id": "s38-1",
+      "sceneId": "s38",
+      "text": "The sun, as common, went abroad,\nThe flowers, accustomed, blew,\nAs if no soul the solstice passed\nThat maketh all things new."
+    },
+    {
+      "id": "s38-2",
+      "sceneId": "s38",
+      "text": "The time was scarce profaned by speech;\nThe symbol of a word\nWas needless, as at sacrament\nThe wardrobe of our Lord."
+    },
+    {
+      "id": "s38-3",
+      "sceneId": "s38",
+      "text": "Each was to each the sealed church,\nPermitted to commune this time,\nLest we too awkward show\nAt supper of the Lamb."
+    },
+    {
+      "id": "s38-4",
+      "sceneId": "s38",
+      "text": "The hours slid fast, as hours will,\nClutched tight by greedy hands;\nSo faces on two decks look back,\nBound to opposing lands."
+    },
+    {
+      "id": "s38-5",
+      "sceneId": "s38",
+      "text": "And so, when all the time had failed,\nWithout external sound,\nEach bound the other's crucifix,\nWe gave no other bond."
+    },
+    {
+      "id": "s38-6",
+      "sceneId": "s38",
+      "text": "Sufficient troth that we shall rise --\nDeposed, at length, the grave --\nTo that new marriage, justified\nThrough Calvaries of Love!"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "I'm ceded, I've stopped being theirs;\nThe name they dropped upon my face\nWith water, in the country church,\nIs finished using now,\nAnd they can put it with my dolls,\nMy childhood, and the string of spools\nI've finished threading too."
+    },
+    {
+      "id": "s39-1",
+      "sceneId": "s39",
+      "text": "Baptized before without the choice,\nBut this time consciously, of grace\nUnto supremest name,\nCalled to my full, the crescent dropped,\nExistence's whole arc filled up\nWith one small diadem."
+    },
+    {
+      "id": "s39-2",
+      "sceneId": "s39",
+      "text": "My second rank, too small the first,\nCrowned, crowing on my father's breast,\nA half unconscious queen;\nBut this time, adequate, erect,\nWith will to choose or to reject.\nAnd I choose -- just a throne."
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "'T was a long parting, but the time\nFor interview had come;\nBefore the judgment-seat of God,\nThe last and second time"
+    },
+    {
+      "id": "s40-1",
+      "sceneId": "s40",
+      "text": "These fleshless lovers met,\nA heaven in a gaze,\nA heaven of heavens, the privilege\nOf one another's eyes."
+    },
+    {
+      "id": "s40-2",
+      "sceneId": "s40",
+      "text": "No lifetime set on them,\nApparelled as the new\nUnborn, except they had beheld,\nBorn everlasting now."
+    },
+    {
+      "id": "s40-3",
+      "sceneId": "s40",
+      "text": "Was bridal e'er like this?\nA paradise, the host,\nAnd cherubim and seraphim\nThe most familiar guest."
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "I'm wife; I've finished that,\nThat other state;\nI'm Czar, I'm woman now:\nIt's safer so."
+    },
+    {
+      "id": "s41-1",
+      "sceneId": "s41",
+      "text": "How odd the girl's life looks\nBehind this soft eclipse!\nI think that earth seems so\nTo those in heaven now."
+    },
+    {
+      "id": "s41-2",
+      "sceneId": "s41",
+      "text": "This being comfort, then\nThat other kind was pain;\nBut why compare?\nI'm wife! stop there!"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "She rose to his requirement, dropped\nThe playthings of her life\nTo take the honorable work\nOf woman and of wife."
+    },
+    {
+      "id": "s42-1",
+      "sceneId": "s42",
+      "text": "If aught she missed in her new day\nOf amplitude, or awe,\nOr first prospective, or the gold\nIn using wore away,"
+    },
+    {
+      "id": "s42-2",
+      "sceneId": "s42",
+      "text": "It lay unmentioned, as the sea\nDevelops pearl and weed,\nBut only to himself is known\nThe fathoms they abide."
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "Come slowly, Eden!\nLips unused to thee,\nBashful, sip thy jasmines,\nAs the fainting bee,"
+    },
+    {
+      "id": "s43-1",
+      "sceneId": "s43",
+      "text": "Reaching late his flower,\nRound her chamber hums,\nCounts his nectars -- enters,\nAnd is lost in balms!"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "New feet within my garden go,\nNew fingers stir the sod;\nA troubadour upon the elm\nBetrays the solitude."
+    },
+    {
+      "id": "s44-1",
+      "sceneId": "s44",
+      "text": "New children play upon the green,\nNew weary sleep below;\nAnd still the pensive spring returns,\nAnd still the punctual snow!"
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "Pink, small, and punctual,\nAromatic, low,\nCovert in April,\nCandid in May,"
+    },
+    {
+      "id": "s45-1",
+      "sceneId": "s45",
+      "text": "Dear to the moss,\nKnown by the knoll,\nNext to the robin\nIn every human soul."
+    },
+    {
+      "id": "s45-2",
+      "sceneId": "s45",
+      "text": "Bold little beauty,\nBedecked with thee,\nNature forswears\nAntiquity."
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "WHY?"
+    },
+    {
+      "id": "s46-1",
+      "sceneId": "s46",
+      "text": "The murmur of a bee\nA witchcraft yieldeth me.\nIf any ask me why,\n'T were easier to die\nThan tell."
+    },
+    {
+      "id": "s46-2",
+      "sceneId": "s46",
+      "text": "The red upon the hill\nTaketh away my will;\nIf anybody sneer,\nTake care, for God is here,\nThat's all."
+    },
+    {
+      "id": "s46-3",
+      "sceneId": "s46",
+      "text": "The breaking of the day\nAddeth to my degree;\nIf any ask me how,\nArtist, who drew me so,\nMust tell!"
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "Perhaps you'd like to buy a flower?\nBut I could never sell.\nIf you would like to borrow\nUntil the daffodil"
+    },
+    {
+      "id": "s47-1",
+      "sceneId": "s47",
+      "text": "Unties her yellow bonnet\nBeneath the village door,\nUntil the bees, from clover rows\nTheir hock and sherry draw,"
+    },
+    {
+      "id": "s47-2",
+      "sceneId": "s47",
+      "text": "Why, I will lend until just then,\nBut not an hour more!"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "The pedigree of honey\nDoes not concern the bee;\nA clover, any time, to him\nIs aristocracy."
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "Some keep the Sabbath going to church;\nI keep it staying at home,\nWith a bobolink for a chorister,\nAnd an orchard for a dome."
+    },
+    {
+      "id": "s49-1",
+      "sceneId": "s49",
+      "text": "Some keep the Sabbath in surplice;\nI just wear my wings,\nAnd instead of tolling the bell for church,\nOur little sexton sings."
+    },
+    {
+      "id": "s49-2",
+      "sceneId": "s49",
+      "text": "God preaches, -- a noted clergyman, --\nAnd the sermon is never long;\nSo instead of getting to heaven at last,\nI'm going all along!"
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "The bee is not afraid of me,\nI know the butterfly;\nThe pretty people in the woods\nReceive me cordially."
+    },
+    {
+      "id": "s50-1",
+      "sceneId": "s50",
+      "text": "The brooks laugh louder when I come,\nThe breezes madder play.\nWherefore, mine eyes, thy silver mists?\nWherefore, O summer's day?"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "Some rainbow coming from the fair!\nSome vision of the world Cashmere\nI confidently see!\nOr else a peacock's purple train,\nFeather by feather, on the plain\nFritters itself away!"
+    },
+    {
+      "id": "s51-1",
+      "sceneId": "s51",
+      "text": "The dreamy butterflies bestir,\nLethargic pools resume the whir\nOf last year's sundered tune.\nFrom some old fortress on the sun\nBaronial bees march, one by one,\nIn murmuring platoon!"
+    },
+    {
+      "id": "s51-2",
+      "sceneId": "s51",
+      "text": "The robins stand as thick to-day\nAs flakes of snow stood yesterday,\nOn fence and roof and twig.\nThe orchis binds her feather on\nFor her old lover, Don the Sun,\nRevisiting the bog!"
+    },
+    {
+      "id": "s51-3",
+      "sceneId": "s51",
+      "text": "Without commander, countless, still,\nThe regiment of wood and hill\nIn bright detachment stand.\nBehold! Whose multitudes are these?\nThe children of whose turbaned seas,\nOr what Circassian land?"
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "The grass so little has to do, --\nA sphere of simple green,\nWith only butterflies to brood,\nAnd bees to entertain,"
+    },
+    {
+      "id": "s52-1",
+      "sceneId": "s52",
+      "text": "And stir all day to pretty tunes\nThe breezes fetch along,\nAnd hold the sunshine in its lap\nAnd bow to everything;"
+    },
+    {
+      "id": "s52-2",
+      "sceneId": "s52",
+      "text": "And thread the dews all night, like pearls,\nAnd make itself so fine, --\nA duchess were too common\nFor such a noticing."
+    },
+    {
+      "id": "s52-3",
+      "sceneId": "s52",
+      "text": "And even when it dies, to pass\nIn odors so divine,\nAs lowly spices gone to sleep,\nOr amulets of pine."
+    },
+    {
+      "id": "s52-4",
+      "sceneId": "s52",
+      "text": "And then to dwell in sovereign barns,\nAnd dream the days away, --\nThe grass so little has to do,\nI wish I were the hay!"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "A little road not made of man,\nEnabled of the eye,\nAccessible to thill of bee,\nOr cart of butterfly."
+    },
+    {
+      "id": "s53-1",
+      "sceneId": "s53",
+      "text": "If town it have, beyond itself,\n'T is that I cannot say;\nI only sigh, -- no vehicle\nBears me along that way."
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "A drop fell on the apple tree,\nAnother on the roof;\nA half a dozen kissed the eaves,\nAnd made the gables laugh."
+    },
+    {
+      "id": "s54-1",
+      "sceneId": "s54",
+      "text": "A few went out to help the brook,\nThat went to help the sea.\nMyself conjectured, Were they pearls,\nWhat necklaces could be!"
+    },
+    {
+      "id": "s54-2",
+      "sceneId": "s54",
+      "text": "The dust replaced in hoisted roads,\nThe birds jocoser sung;\nThe sunshine threw his hat away,\nThe orchards spangles hung."
+    },
+    {
+      "id": "s54-3",
+      "sceneId": "s54",
+      "text": "The breezes brought dejected lutes,\nAnd bathed them in the glee;\nThe East put out a single flag,\nAnd signed the fete away."
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "A something in a summer's day,\nAs slow her flambeaux burn away,\nWhich solemnizes me."
+    },
+    {
+      "id": "s55-1",
+      "sceneId": "s55",
+      "text": "A something in a summer's noon, --\nAn azure depth, a wordless tune,\nTranscending ecstasy."
+    },
+    {
+      "id": "s55-2",
+      "sceneId": "s55",
+      "text": "And still within a summer's night\nA something so transporting bright,\nI clap my hands to see;"
+    },
+    {
+      "id": "s55-3",
+      "sceneId": "s55",
+      "text": "Then veil my too inspecting face,\nLest such a subtle, shimmering grace\nFlutter too far for me."
+    },
+    {
+      "id": "s55-4",
+      "sceneId": "s55",
+      "text": "The wizard-fingers never rest,\nThe purple brook within the breast\nStill chafes its narrow bed;"
+    },
+    {
+      "id": "s55-5",
+      "sceneId": "s55",
+      "text": "Still rears the East her amber flag,\nGuides still the sun along the crag\nHis caravan of red,"
+    },
+    {
+      "id": "s55-6",
+      "sceneId": "s55",
+      "text": "Like flowers that heard the tale of dews,\nBut never deemed the dripping prize\nAwaited their low brows;"
+    },
+    {
+      "id": "s55-7",
+      "sceneId": "s55",
+      "text": "Or bees, that thought the summer's name\nSome rumor of delirium\nNo summer could for them;"
+    },
+    {
+      "id": "s55-8",
+      "sceneId": "s55",
+      "text": "Or Arctic creature, dimly stirred\nBy tropic hint, -- some travelled bird\nImported to the wood;"
+    },
+    {
+      "id": "s55-9",
+      "sceneId": "s55",
+      "text": "Or wind's bright signal to the ear,\nMaking that homely and severe,\nContented, known, before"
+    },
+    {
+      "id": "s55-10",
+      "sceneId": "s55",
+      "text": "The heaven unexpected came,\nTo lives that thought their worshipping\nA too presumptuous psalm."
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "This is the land the sunset washes,\nThese are the banks of the Yellow Sea;\nWhere it rose, or whither it rushes,\nThese are the western mystery!"
+    },
+    {
+      "id": "s56-1",
+      "sceneId": "s56",
+      "text": "Night after night her purple traffic\nStrews the landing with opal bales;\nMerchantmen poise upon horizons,\nDip, and vanish with fairy sails."
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "There is a flower that bees prefer,\nAnd butterflies desire;\nTo gain the purple democrat\nThe humming-birds aspire."
+    },
+    {
+      "id": "s57-1",
+      "sceneId": "s57",
+      "text": "And whatsoever insect pass,\nA honey bears away\nProportioned to his several dearth\nAnd her capacity."
+    },
+    {
+      "id": "s57-2",
+      "sceneId": "s57",
+      "text": "Her face is rounder than the moon,\nAnd ruddier than the gown\nOf orchis in the pasture,\nOr rhododendron worn."
+    },
+    {
+      "id": "s57-3",
+      "sceneId": "s57",
+      "text": "She doth not wait for June;\nBefore the world is green\nHer sturdy little countenance\nAgainst the wind is seen,"
+    },
+    {
+      "id": "s57-4",
+      "sceneId": "s57",
+      "text": "Contending with the grass,\nNear kinsman to herself,\nFor privilege of sod and sun,\nSweet litigants for life."
+    },
+    {
+      "id": "s57-5",
+      "sceneId": "s57",
+      "text": "And when the hills are full,\nAnd newer fashions blow,\nDoth not retract a single spice\nFor pang of jealousy."
+    },
+    {
+      "id": "s57-6",
+      "sceneId": "s57",
+      "text": "Her public is the noon,\nHer providence the sun,\nHer progress by the bee proclaimed\nIn sovereign, swerveless tune."
+    },
+    {
+      "id": "s57-7",
+      "sceneId": "s57",
+      "text": "The bravest of the host,\nSurrendering the last,\nNor even of defeat aware\nWhen cancelled by the frost."
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "Like trains of cars on tracks of plush\nI hear the level bee:\nA jar across the flowers goes,\nTheir velvet masonry"
+    },
+    {
+      "id": "s58-1",
+      "sceneId": "s58",
+      "text": "Withstands until the sweet assault\nTheir chivalry consumes,\nWhile he, victorious, tilts away\nTo vanquish other blooms."
+    },
+    {
+      "id": "s58-2",
+      "sceneId": "s58",
+      "text": "His feet are shod with gauze,\nHis helmet is of gold;\nHis breast, a single onyx\nWith chrysoprase, inlaid."
+    },
+    {
+      "id": "s58-3",
+      "sceneId": "s58",
+      "text": "His labor is a chant,\nHis idleness a tune;\nOh, for a bee's experience\nOf clovers and of noon!"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "Presentiment is that long shadow on the lawn\nIndicative that suns go down;\nThe notice to the startled grass\nThat darkness is about to pass."
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "As children bid the guest good-night,\nAnd then reluctant turn,\nMy flowers raise their pretty lips,\nThen put their nightgowns on."
+    },
+    {
+      "id": "s60-1",
+      "sceneId": "s60",
+      "text": "As children caper when they wake,\nMerry that it is morn,\nMy flowers from a hundred cribs\nWill peep, and prance again."
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "Angels in the early morning\nMay be seen the dews among,\nStooping, plucking, smiling, flying:\nDo the buds to them belong?"
+    },
+    {
+      "id": "s61-1",
+      "sceneId": "s61",
+      "text": "Angels when the sun is hottest\nMay be seen the sands among,\nStooping, plucking, sighing, flying;\nParched the flowers they bear along."
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "So bashful when I spied her,\nSo pretty, so ashamed!\nSo hidden in her leaflets,\nLest anybody find;"
+    },
+    {
+      "id": "s62-1",
+      "sceneId": "s62",
+      "text": "So breathless till I passed her,\nSo helpless when I turned\nAnd bore her, struggling, blushing,\nHer simple haunts beyond!"
+    },
+    {
+      "id": "s62-2",
+      "sceneId": "s62",
+      "text": "For whom I robbed the dingle,\nFor whom betrayed the dell,\nMany will doubtless ask me,\nBut I shall never tell!"
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "It makes no difference abroad,\nThe seasons fit the same,\nThe mornings blossom into noons,\nAnd split their pods of flame."
+    },
+    {
+      "id": "s63-1",
+      "sceneId": "s63",
+      "text": "Wild-flowers kindle in the woods,\nThe brooks brag all the day;\nNo blackbird bates his jargoning\nFor passing Calvary."
+    },
+    {
+      "id": "s63-2",
+      "sceneId": "s63",
+      "text": "Auto-da-fe and judgment\nAre nothing to the bee;\nHis separation from his rose\nTo him seems misery."
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "The mountain sat upon the plain\nIn his eternal chair,\nHis observation omnifold,\nHis inquest everywhere."
+    },
+    {
+      "id": "s64-1",
+      "sceneId": "s64",
+      "text": "The seasons prayed around his knees,\nLike children round a sire:\nGrandfather of the days is he,\nOf dawn the ancestor."
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "I'll tell you how the sun rose, --\nA ribbon at a time.\nThe steeples swam in amethyst,\nThe news like squirrels ran."
+    },
+    {
+      "id": "s65-1",
+      "sceneId": "s65",
+      "text": "The hills untied their bonnets,\nThe bobolinks begun.\nThen I said softly to myself,\n\"That must have been the sun!\""
+    },
+    {
+      "id": "s65-2",
+      "sceneId": "s65",
+      "text": "*  *  *"
+    },
+    {
+      "id": "s65-3",
+      "sceneId": "s65",
+      "text": "But how he set, I know not.\nThere seemed a purple stile\nWhich little yellow boys and girls\nWere climbing all the while"
+    },
+    {
+      "id": "s65-4",
+      "sceneId": "s65",
+      "text": "Till when they reached the other side,\nA dominie in gray\nPut gently up the evening bars,\nAnd led the flock away."
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "The butterfly's assumption-gown,\nIn chrysoprase apartments hung,\nThis afternoon put on."
+    },
+    {
+      "id": "s66-1",
+      "sceneId": "s66",
+      "text": "How condescending to descend,\nAnd be of buttercups the friend\nIn a New England town!"
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "Of all the sounds despatched abroad,\nThere's not a charge to me\nLike that old measure in the boughs,\nThat phraseless melody"
+    },
+    {
+      "id": "s67-1",
+      "sceneId": "s67",
+      "text": "The wind does, working like a hand\nWhose fingers brush the sky,\nThen quiver down, with tufts of tune\nPermitted gods and me."
+    },
+    {
+      "id": "s67-2",
+      "sceneId": "s67",
+      "text": "When winds go round and round in bands,\nAnd thrum upon the door,\nAnd birds take places overhead,\nTo bear them orchestra,"
+    },
+    {
+      "id": "s67-3",
+      "sceneId": "s67",
+      "text": "I crave him grace, of summer boughs,\nIf such an outcast be,\nHe never heard that fleshless chant\nRise solemn in the tree,"
+    },
+    {
+      "id": "s67-4",
+      "sceneId": "s67",
+      "text": "As if some caravan of sound\nOn deserts, in the sky,\nHad broken rank,\nThen knit, and passed\nIn seamless company."
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "Apparently with no surprise\nTo any happy flower,\nThe frost beheads it at its play\nIn accidental power.\nThe blond assassin passes on,\nThe sun proceeds unmoved\nTo measure off another day\nFor an approving God."
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "'T was later when the summer went\nThan when the cricket came,\nAnd yet we knew that gentle clock\nMeant nought but going home."
+    },
+    {
+      "id": "s69-1",
+      "sceneId": "s69",
+      "text": "'T was sooner when the cricket went\nThan when the winter came,\nYet that pathetic pendulum\nKeeps esoteric time."
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "These are the days when birds come back,\nA very few, a bird or two,\nTo take a backward look."
+    },
+    {
+      "id": "s70-1",
+      "sceneId": "s70",
+      "text": "These are the days when skies put on\nThe old, old sophistries of June, --\nA blue and gold mistake."
+    },
+    {
+      "id": "s70-2",
+      "sceneId": "s70",
+      "text": "Oh, fraud that cannot cheat the bee,\nAlmost thy plausibility\nInduces my belief,"
+    },
+    {
+      "id": "s70-3",
+      "sceneId": "s70",
+      "text": "Till ranks of seeds their witness bear,\nAnd softly through the altered air\nHurries a timid leaf!"
+    },
+    {
+      "id": "s70-4",
+      "sceneId": "s70",
+      "text": "Oh, sacrament of summer days,\nOh, last communion in the haze,\nPermit a child to join,"
+    },
+    {
+      "id": "s70-5",
+      "sceneId": "s70",
+      "text": "Thy sacred emblems to partake,\nThy consecrated bread to break,\nTaste thine immortal wine!"
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "The morns are meeker than they were,\nThe nuts are getting brown;\nThe berry's cheek is plumper,\nThe rose is out of town."
+    },
+    {
+      "id": "s71-1",
+      "sceneId": "s71",
+      "text": "The maple wears a gayer scarf,\nThe field a scarlet gown.\nLest I should be old-fashioned,\nI'll put a trinket on."
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "The sky is low, the clouds are mean,\nA travelling flake of snow\nAcross a barn or through a rut\nDebates if it will go."
+    },
+    {
+      "id": "s72-1",
+      "sceneId": "s72",
+      "text": "A narrow wind complains all day\nHow some one treated him;\nNature, like us, is sometimes caught\nWithout her diadem."
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "I think the hemlock likes to stand\nUpon a marge of snow;\nIt suits his own austerity,\nAnd satisfies an awe"
+    },
+    {
+      "id": "s73-1",
+      "sceneId": "s73",
+      "text": "That men must slake in wilderness,\nOr in the desert cloy, --\nAn instinct for the hoar, the bald,\nLapland's necessity."
+    },
+    {
+      "id": "s73-2",
+      "sceneId": "s73",
+      "text": "The hemlock's nature thrives on cold;\nThe gnash of northern winds\nIs sweetest nutriment to him,\nHis best Norwegian wines."
+    },
+    {
+      "id": "s73-3",
+      "sceneId": "s73",
+      "text": "To satin races he is nought;\nBut children on the Don\nBeneath his tabernacles play,\nAnd Dnieper wrestlers run."
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "There's a certain slant of light,\nOn winter afternoons,\nThat oppresses, like the weight\nOf cathedral tunes."
+    },
+    {
+      "id": "s74-1",
+      "sceneId": "s74",
+      "text": "Heavenly hurt it gives us;\nWe can find no scar,\nBut internal difference\nWhere the meanings are."
+    },
+    {
+      "id": "s74-2",
+      "sceneId": "s74",
+      "text": "None may teach it anything,\n' T is the seal, despair, --\nAn imperial affliction\nSent us of the air."
+    },
+    {
+      "id": "s74-3",
+      "sceneId": "s74",
+      "text": "When it comes, the landscape listens,\nShadows hold their breath;\nWhen it goes, 't is like the distance\nOn the look of death."
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "One dignity delays for all,\nOne mitred afternoon.\nNone can avoid this purple,\nNone evade this crown."
+    },
+    {
+      "id": "s75-1",
+      "sceneId": "s75",
+      "text": "Coach it insures, and footmen,\nChamber and state and throng;\nBells, also, in the village,\nAs we ride grand along."
+    },
+    {
+      "id": "s75-2",
+      "sceneId": "s75",
+      "text": "What dignified attendants,\nWhat service when we pause!\nHow loyally at parting\nTheir hundred hats they raise!"
+    },
+    {
+      "id": "s75-3",
+      "sceneId": "s75",
+      "text": "How pomp surpassing ermine,\nWhen simple you and I\nPresent our meek escutcheon,\nAnd claim the rank to die!"
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "Delayed till she had ceased to know,\nDelayed till in its vest of snow\nHer loving bosom lay.\nAn hour behind the fleeting breath,\nLater by just an hour than death, --\nOh, lagging yesterday!"
+    },
+    {
+      "id": "s76-1",
+      "sceneId": "s76",
+      "text": "Could she have guessed that it would be;\nCould but a crier of the glee\nHave climbed the distant hill;\nHad not the bliss so slow a pace, --\nWho knows but this surrendered face\nWere undefeated still?"
+    },
+    {
+      "id": "s76-2",
+      "sceneId": "s76",
+      "text": "Oh, if there may departing be\nAny forgot by victory\nIn her imperial round,\nShow them this meek apparelled thing,\nThat could not stop to be a king,\nDoubtful if it be crowned!"
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "Departed to the judgment,\nA mighty afternoon;\nGreat clouds like ushers leaning,\nCreation looking on."
+    },
+    {
+      "id": "s77-1",
+      "sceneId": "s77",
+      "text": "The flesh surrendered, cancelled,\nThe bodiless begun;\nTwo worlds, like audiences, disperse\nAnd leave the soul alone."
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "Safe in their alabaster chambers,\nUntouched by morning and untouched by noon,\nSleep the meek members of the resurrection,\nRafter of satin, and roof of stone."
+    },
+    {
+      "id": "s78-1",
+      "sceneId": "s78",
+      "text": "Light laughs the breeze in her castle of sunshine;\nBabbles the bee in a stolid ear;\nPipe the sweet birds in ignorant cadence, --\nAh, what sagacity perished here!"
+    },
+    {
+      "id": "s78-2",
+      "sceneId": "s78",
+      "text": "Grand go the years in the crescent above them;\nWorlds scoop their arcs, and firmaments row,\nDiadems drop and Doges surrender,\nSoundless as dots on a disk of snow."
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "On this long storm the rainbow rose,\nOn this late morn the sun;\nThe clouds, like listless elephants,\nHorizons straggled down."
+    },
+    {
+      "id": "s79-1",
+      "sceneId": "s79",
+      "text": "The birds rose smiling in their nests,\nThe gales indeed were done;\nAlas! how heedless were the eyes\nOn whom the summer shone!"
+    },
+    {
+      "id": "s79-2",
+      "sceneId": "s79",
+      "text": "The quiet nonchalance of death\nNo daybreak can bestir;\nThe slow archangel's syllables\nMust awaken her."
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "My cocoon tightens, colors tease,\nI'm feeling for the air;\nA dim capacity for wings\nDegrades the dress I wear."
+    },
+    {
+      "id": "s80-1",
+      "sceneId": "s80",
+      "text": "A power of butterfly must be\nThe aptitude to fly,\nMeadows of majesty concedes\nAnd easy sweeps of sky."
+    },
+    {
+      "id": "s80-2",
+      "sceneId": "s80",
+      "text": "So I must baffle at the hint\nAnd cipher at the sign,\nAnd make much blunder, if at last\nI take the clew divine."
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "Exultation is the going\nOf an inland soul to sea, --\nPast the houses, past the headlands,\nInto deep eternity!"
+    },
+    {
+      "id": "s81-1",
+      "sceneId": "s81",
+      "text": "Bred as we, among the mountains,\nCan the sailor understand\nThe divine intoxication\nOf the first league out from land?"
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "Look back on time with kindly eyes,\nHe doubtless did his best;\nHow softly sinks his trembling sun\nIn human nature's west!"
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "A train went through a burial gate,\nA bird broke forth and sang,\nAnd trilled, and quivered, and shook his throat\nTill all the churchyard rang;"
+    },
+    {
+      "id": "s83-1",
+      "sceneId": "s83",
+      "text": "And then adjusted his little notes,\nAnd bowed and sang again.\nDoubtless, he thought it meet of him\nTo say good-by to men."
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "I died for beauty, but was scarce\nAdjusted in the tomb,\nWhen one who died for truth was lain\nIn an adjoining room."
+    },
+    {
+      "id": "s84-1",
+      "sceneId": "s84",
+      "text": "He questioned softly why I failed?\n\"For beauty,\" I replied.\n\"And I for truth, -- the two are one;\nWe brethren are,\" he said."
+    },
+    {
+      "id": "s84-2",
+      "sceneId": "s84",
+      "text": "And so, as kinsmen met a night,\nWe talked between the rooms,\nUntil the moss had reached our lips,\nAnd covered up our names."
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "\"TROUBLED ABOUT MANY THINGS.\""
+    },
+    {
+      "id": "s85-1",
+      "sceneId": "s85",
+      "text": "How many times these low feet staggered,\nOnly the soldered mouth can tell;\nTry! can you stir the awful rivet?\nTry! can you lift the hasps of steel?"
+    },
+    {
+      "id": "s85-2",
+      "sceneId": "s85",
+      "text": "Stroke the cool forehead, hot so often,\nLift, if you can, the listless hair;\nHandle the adamantine fingers\nNever a thimble more shall wear."
+    },
+    {
+      "id": "s85-3",
+      "sceneId": "s85",
+      "text": "Buzz the dull flies on the chamber window;\nBrave shines the sun through the freckled pane;\nFearless the cobweb swings from the ceiling --\nIndolent housewife, in daisies lain!"
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "I like a look of agony,\nBecause I know it 's true;\nMen do not sham convulsion,\nNor simulate a throe."
+    },
+    {
+      "id": "s86-1",
+      "sceneId": "s86",
+      "text": "The eyes glaze once, and that is death.\nImpossible to feign\nThe beads upon the forehead\nBy homely anguish strung."
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "That short, potential stir\nThat each can make but once,\nThat bustle so illustrious\n'T is almost consequence,"
+    },
+    {
+      "id": "s87-1",
+      "sceneId": "s87",
+      "text": "Is the eclat of death.\nOh, thou unknown renown\nThat not a beggar would accept,\nHad he the power to spurn!"
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "I went to thank her,\nBut she slept;\nHer bed a funnelled stone,\nWith nosegays at the head and foot,\nThat travellers had thrown,"
+    },
+    {
+      "id": "s88-1",
+      "sceneId": "s88",
+      "text": "Who went to thank her;\nBut she slept.\n'T was short to cross the sea\nTo look upon her like, alive,\nBut turning back 't was slow."
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "I've seen a dying eye\nRun round and round a room\nIn search of something, as it seemed,\nThen cloudier become;\nAnd then, obscure with fog,\nAnd then be soldered down,\nWithout disclosing what it be,\n'T were blessed to have seen."
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "The clouds their backs together laid,\nThe north begun to push,\nThe forests galloped till they fell,\nThe lightning skipped like mice;\nThe thunder crumbled like a stuff --\nHow good to be safe in tombs,\nWhere nature's temper cannot reach,\nNor vengeance ever comes!"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "I never saw a moor,\nI never saw the sea;\nYet know I how the heather looks,\nAnd what a wave must be."
+    },
+    {
+      "id": "s91-1",
+      "sceneId": "s91",
+      "text": "I never spoke with God,\nNor visited in heaven;\nYet certain am I of the spot\nAs if the chart were given."
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "God permits industrious angels\nAfternoons to play.\nI met one, -- forgot my school-mates,\nAll, for him, straightway."
+    },
+    {
+      "id": "s92-1",
+      "sceneId": "s92",
+      "text": "God calls home the angels promptly\nAt the setting sun;\nI missed mine. How dreary marbles,\nAfter playing Crown!"
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "To know just how he suffered would be dear;\nTo know if any human eyes were near\nTo whom he could intrust his wavering gaze,\nUntil it settled firm on Paradise."
+    },
+    {
+      "id": "s93-1",
+      "sceneId": "s93",
+      "text": "To know if he was patient, part content,\nWas dying as he thought, or different;\nWas it a pleasant day to die,\nAnd did the sunshine face his way?"
+    },
+    {
+      "id": "s93-2",
+      "sceneId": "s93",
+      "text": "What was his furthest mind, of home, or God,\nOr what the distant say\nAt news that he ceased human nature\nOn such a day?"
+    },
+    {
+      "id": "s93-3",
+      "sceneId": "s93",
+      "text": "And wishes, had he any?\nJust his sigh, accented,\nHad been legible to me.\nAnd was he confident until\nIll fluttered out in everlasting well?"
+    },
+    {
+      "id": "s93-4",
+      "sceneId": "s93",
+      "text": "And if he spoke, what name was best,\nWhat first,\nWhat one broke off with\nAt the drowsiest?"
+    },
+    {
+      "id": "s93-5",
+      "sceneId": "s93",
+      "text": "Was he afraid, or tranquil?\nMight he know\nHow conscious consciousness could grow,\nTill love that was, and love too blest to be,\nMeet -- and the junction be Eternity?"
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "The last night that she lived,\nIt was a common night,\nExcept the dying; this to us\nMade nature different."
+    },
+    {
+      "id": "s94-1",
+      "sceneId": "s94",
+      "text": "We noticed smallest things, --\nThings overlooked before,\nBy this great light upon our minds\nItalicized, as 't were."
+    },
+    {
+      "id": "s94-2",
+      "sceneId": "s94",
+      "text": "That others could exist\nWhile she must finish quite,\nA jealousy for her arose\nSo nearly infinite."
+    },
+    {
+      "id": "s94-3",
+      "sceneId": "s94",
+      "text": "We waited while she passed;\nIt was a narrow time,\nToo jostled were our souls to speak,\nAt length the notice came."
+    },
+    {
+      "id": "s94-4",
+      "sceneId": "s94",
+      "text": "She mentioned, and forgot;\nThen lightly as a reed\nBent to the water, shivered scarce,\nConsented, and was dead."
+    },
+    {
+      "id": "s94-5",
+      "sceneId": "s94",
+      "text": "And we, we placed the hair,\nAnd drew the head erect;\nAnd then an awful leisure was,\nOur faith to regulate."
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "Not in this world to see his face\nSounds long, until I read the place\nWhere this is said to be\nBut just the primer to a life\nUnopened, rare, upon the shelf,\nClasped yet to him and me."
+    },
+    {
+      "id": "s95-1",
+      "sceneId": "s95",
+      "text": "And yet, my primer suits me so\nI would not choose a book to know\nThan that, be sweeter wise;\nMight some one else so learned be,\nAnd leave me just my A B C,\nHimself could have the skies."
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "The bustle in a house\nThe morning after death\nIs solemnest of industries\nEnacted upon earth, --"
+    },
+    {
+      "id": "s96-1",
+      "sceneId": "s96",
+      "text": "The sweeping up the heart,\nAnd putting love away\nWe shall not want to use again\nUntil eternity."
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "I reason, earth is short,\nAnd anguish absolute,\nAnd many hurt;\nBut what of that?"
+    },
+    {
+      "id": "s97-1",
+      "sceneId": "s97",
+      "text": "I reason, we could die:\nThe best vitality\nCannot excel decay;\nBut what of that?"
+    },
+    {
+      "id": "s97-2",
+      "sceneId": "s97",
+      "text": "I reason that in heaven\nSomehow, it will be even,\nSome new equation given;\nBut what of that?"
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "Afraid? Of whom am I afraid?\nNot death; for who is he?\nThe porter of my father's lodge\nAs much abasheth me."
+    },
+    {
+      "id": "s98-1",
+      "sceneId": "s98",
+      "text": "Of life? 'T were odd I fear a thing\nThat comprehendeth me\nIn one or more existences\nAt Deity's decree."
+    },
+    {
+      "id": "s98-2",
+      "sceneId": "s98",
+      "text": "Of resurrection? Is the east\nAfraid to trust the morn\nWith her fastidious forehead?\nAs soon impeach my crown!"
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "The sun kept setting, setting still;\nNo hue of afternoon\nUpon the village I perceived, --\nFrom house to house 't was noon."
+    },
+    {
+      "id": "s99-1",
+      "sceneId": "s99",
+      "text": "The dusk kept dropping, dropping still;\nNo dew upon the grass,\nBut only on my forehead stopped,\nAnd wandered in my face."
+    },
+    {
+      "id": "s99-2",
+      "sceneId": "s99",
+      "text": "My feet kept drowsing, drowsing still,\nMy fingers were awake;\nYet why so little sound myself\nUnto my seeming make?"
+    },
+    {
+      "id": "s99-3",
+      "sceneId": "s99",
+      "text": "How well I knew the light before!\nI could not see it now.\n'T is dying, I am doing; but\nI'm not afraid to know."
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "Two swimmers wrestled on the spar\nUntil the morning sun,\nWhen one turned smiling to the land.\nO God, the other one!"
+    },
+    {
+      "id": "s100-1",
+      "sceneId": "s100",
+      "text": "The stray ships passing spied a face\nUpon the waters borne,\nWith eyes in death still begging raised,\nAnd hands beseeching thrown."
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "Because I could not stop for Death,\nHe kindly stopped for me;\nThe carriage held but just ourselves\nAnd Immortality."
+    },
+    {
+      "id": "s101-1",
+      "sceneId": "s101",
+      "text": "We slowly drove, he knew no haste,\nAnd I had put away\nMy labor, and my leisure too,\nFor his civility."
+    },
+    {
+      "id": "s101-2",
+      "sceneId": "s101",
+      "text": "We passed the school where children played,\nTheir lessons scarcely done;\nWe passed the fields of gazing grain,\nWe passed the setting sun."
+    },
+    {
+      "id": "s101-3",
+      "sceneId": "s101",
+      "text": "We paused before a house that seemed\nA swelling of the ground;\nThe roof was scarcely visible,\nThe cornice but a mound."
+    },
+    {
+      "id": "s101-4",
+      "sceneId": "s101",
+      "text": "Since then 't is centuries; but each\nFeels shorter than the day\nI first surmised the horses' heads\nWere toward eternity."
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "She went as quiet as the dew\nFrom a familiar flower.\nNot like the dew did she return\nAt the accustomed hour!"
+    },
+    {
+      "id": "s102-1",
+      "sceneId": "s102",
+      "text": "She dropt as softly as a star\nFrom out my summer's eve;\nLess skilful than Leverrier\nIt's sorer to believe!"
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "At last to be identified!\nAt last, the lamps upon thy side,\nThe rest of life to see!\nPast midnight, past the morning star!\nPast sunrise! Ah! what leagues there are\nBetween our feet and day!"
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "Except to heaven, she is nought;\nExcept for angels, lone;\nExcept to some wide-wandering bee,\nA flower superfluous blown;"
+    },
+    {
+      "id": "s104-1",
+      "sceneId": "s104",
+      "text": "Except for winds, provincial;\nExcept by butterflies,\nUnnoticed as a single dew\nThat on the acre lies."
+    },
+    {
+      "id": "s104-2",
+      "sceneId": "s104",
+      "text": "The smallest housewife in the grass,\nYet take her from the lawn,\nAnd somebody has lost the face\nThat made existence home!"
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "Death is a dialogue between\nThe spirit and the dust.\n\"Dissolve,\" says Death. The Spirit, \"Sir,\nI have another trust.\""
+    },
+    {
+      "id": "s105-1",
+      "sceneId": "s105",
+      "text": "Death doubts it, argues from the ground.\nThe Spirit turns away,\nJust laying off, for evidence,\nAn overcoat of clay."
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "It was too late for man,\nBut early yet for God;\nCreation impotent to help,\nBut prayer remained our side."
+    },
+    {
+      "id": "s106-1",
+      "sceneId": "s106",
+      "text": "How excellent the heaven,\nWhen earth cannot be had;\nHow hospitable, then, the face\nOf our old neighbor, God!"
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "When I was small, a woman died.\nTo-day her only boy\nWent up from the Potomac,\nHis face all victory,"
+    },
+    {
+      "id": "s107-1",
+      "sceneId": "s107",
+      "text": "To look at her; how slowly\nThe seasons must have turned\nTill bullets clipt an angle,\nAnd he passed quickly round!"
+    },
+    {
+      "id": "s107-2",
+      "sceneId": "s107",
+      "text": "If pride shall be in Paradise\nI never can decide;\nOf their imperial conduct,\nNo person testified."
+    },
+    {
+      "id": "s107-3",
+      "sceneId": "s107",
+      "text": "But proud in apparition,\nThat woman and her boy\nPass back and forth before my brain,\nAs ever in the sky."
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "The daisy follows soft the sun,\nAnd when his golden walk is done,\nSits shyly at his feet.\nHe, waking, finds the flower near.\n\"Wherefore, marauder, art thou here?\"\n\"Because, sir, love is sweet!\""
+    },
+    {
+      "id": "s108-1",
+      "sceneId": "s108",
+      "text": "We are the flower, Thou the sun!\nForgive us, if as days decline,\nWe nearer steal to Thee, --\nEnamoured of the parting west,\nThe peace, the flight, the amethyst,\nNight's possibility!"
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "No rack can torture me,\nMy soul's at liberty\nBehind this mortal bone\nThere knits a bolder one"
+    },
+    {
+      "id": "s109-1",
+      "sceneId": "s109",
+      "text": "You cannot prick with saw,\nNor rend with scymitar.\nTwo bodies therefore be;\nBind one, and one will flee."
+    },
+    {
+      "id": "s109-2",
+      "sceneId": "s109",
+      "text": "The eagle of his nest\nNo easier divest\nAnd gain the sky,\nThan mayest thou,"
+    },
+    {
+      "id": "s109-3",
+      "sceneId": "s109",
+      "text": "Except thyself may be\nThine enemy;\nCaptivity is consciousness,\nSo's liberty."
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "I lost a world the other day.\nHas anybody found?\nYou'll know it by the row of stars\nAround its forehead bound."
+    },
+    {
+      "id": "s110-1",
+      "sceneId": "s110",
+      "text": "A rich man might not notice it;\nYet to my frugal eye\nOf more esteem than ducats.\nOh, find it, sir, for me!"
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "If I should n't be alive\nWhen the robins come,\nGive the one in red cravat\nA memorial crumb."
+    },
+    {
+      "id": "s111-1",
+      "sceneId": "s111",
+      "text": "If I could n't thank you,\nBeing just asleep,\nYou will know I'm trying\nWith my granite lip!"
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "Sleep is supposed to be,\nBy souls of sanity,\nThe shutting of the eye."
+    },
+    {
+      "id": "s112-1",
+      "sceneId": "s112",
+      "text": "Sleep is the station grand\nDown which on either hand\nThe hosts of witness stand!"
+    },
+    {
+      "id": "s112-2",
+      "sceneId": "s112",
+      "text": "Morn is supposed to be,\nBy people of degree,\nThe breaking of the day."
+    },
+    {
+      "id": "s112-3",
+      "sceneId": "s112",
+      "text": "Morning has not occurred!\nThat shall aurora be\nEast of eternity;"
+    },
+    {
+      "id": "s112-4",
+      "sceneId": "s112",
+      "text": "One with the banner gay,\nOne in the red array, --\nThat is the break of day."
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "I shall know why, when time is over,\nAnd I have ceased to wonder why;\nChrist will explain each separate anguish\nIn the fair schoolroom of the sky."
+    },
+    {
+      "id": "s113-1",
+      "sceneId": "s113",
+      "text": "He will tell me what Peter promised,\nAnd I, for wonder at his woe,\nI shall forget the drop of anguish\nThat scalds me now, that scalds me now."
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "I never lost as much but twice,\nAnd that was in the sod;\nTwice have I stood a beggar\nBefore the door of God!"
+    },
+    {
+      "id": "s114-1",
+      "sceneId": "s114",
+      "text": "Angels, twice descending,\nReimbursed my store.\nBurglar, banker, father,\nI am poor once more!"
+    }
+  ]
+}

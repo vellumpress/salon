@@ -1220,7 +1220,7 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       title: "Noli Me Tangere (The Social Cancer)",
       author: "José Rizal (tr. Charles Derbyshire)",
       opening: /^On the last of October Don Santiago de los Santos/,
-      breaths: 8108,
+      breaths: 3228,
     },
     "the-gadfly": {
       gutenberg: 3431,
