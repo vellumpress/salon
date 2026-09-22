@@ -264,6 +264,25 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "quincas",
     "marianela",
     "pepita-jimenez",
+    "a-illustre-casa-de-ramires",
+    "an-iceland-fisherman",
+    "aphrodite",
+    "azul",
+    "contes-cruels",
+    "les-amours-jaunes",
+    "libro-de-poemas",
+    "on-the-eve",
+    "papeis-avulsos",
+    "piping-hot",
+    "ramuntcho",
+    "smoke",
+    "the-fortune-of-the-rougons",
+    "the-paying-guest",
+    "the-triumph-of-death",
+    "the-witch-and-other-stories",
+    "therese-raquin",
+    "tradiciones-peruanas",
+    "watch-and-ward",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1501,7 +1520,6 @@ test("BATCH-5 CLEAR inventory binds are local Next / before-sleep sits, never Fe
   }
 });
 
-
 test("BATCH-8 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
   const expect = {
     "a-house-of-gentlefolk": { opening: "A bright spring day was fading into evening. High overhead in the clear heavens small rosy clouds se", breaths: 1083, scenes: 45, gutenberg: 5721 },
@@ -1565,6 +1583,68 @@ test("BATCH-8 CLEAR inventory binds are local Next / before-sleep sits, never Fe
   }
 });
 
+test("BATCH-9 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
+  const expect = {
+    "a-illustre-casa-de-ramires": { opening: "Desde as quatro horas da tarde, no calor e silencio do domingo de Junho, o Fidalgo da Torre, em chin", breaths: 2387, scenes: 12, gutenberg: 23145 },
+    "an-iceland-fisherman": { opening: "There they were, five huge, square-built seamen, drinking away together in the dismal cabin, which r", breaths: 952, scenes: 53, gutenberg: 2196 },
+    "aphrodite": { opening: "She lay upon her bosom, with her elbows in front of her, her legs wide apart and her cheek resting o", breaths: 1864, scenes: 35, gutenberg: 36378 },
+    "azul": { opening: "¡Amigo! el cielo está opaco, el aire frío, el día triste. Un cuento alegre.., así como para distraer", breaths: 556, scenes: 38, gutenberg: 52894 },
+    "contes-cruels": { opening: "«Le soldat prussien fait son café dans une lanterne sourde.»", breaths: 1882, scenes: 23, gutenberg: 62874 },
+    "les-amours-jaunes": { opening: "Un poète ayant rimé, IMPRIMÉ Vit sa Muse dépourvue De marraine, et presque nue: Pas le plus petit mo", breaths: 1005, scenes: 107, gutenberg: 16883 },
+    "libro-de-poemas": { opening: "Viento del Sur. Moreno, ardiente, Llegas sobre mi carne, Trayéndome semilla De brillantes Miradas, e", breaths: 609, scenes: 69, gutenberg: 75703 },
+    "on-the-eve": { opening: "On one of the hottest days of the summer of 1853, in the shade of a tall lime-tree on the bank of th", breaths: 1251, scenes: 35, gutenberg: 6902 },
+    "papeis-avulsos": { opening: "As chronicas da villa de ltaguahy dizem que em tempos remotos vivera alli um certo medico, o Dr. Sim", breaths: 1003, scenes: 11, gutenberg: 57001 },
+    "piping-hot": { opening: "In the Rue Neuve-Saint-Augustin, a block of vehicles arrested the cab which was bringing Octave Mour", breaths: 3026, scenes: 18, gutenberg: 54686 },
+    "ramuntcho": { opening: "The sad curlews, annunciators of the autumn, had just appeared in a mass in a gray squall, fleeing f", breaths: 895, scenes: 40, gutenberg: 9616 },
+    "smoke": { opening: "On the 10th of August 1862, at four o’clock in the afternoon, a great number of people were throngin", breaths: 1239, scenes: 28, gutenberg: 40813 },
+    "the-fortune-of-the-rougons": { opening: "On quitting Plassans by the Rome Gate, on the southern side of the town, you will find, on the right", breaths: 1429, scenes: 7, gutenberg: 5135 },
+    "the-paying-guest": { opening: "It was Mumford who saw the advertisement and made the suggestion. His wife gave him a startled look.", breaths: 631, scenes: 9, gutenberg: 4298 },
+    "the-triumph-of-death": { opening: "When she perceived a group of men leaning against the parapet and looking down into the street below", breaths: 2667, scenes: 43, gutenberg: 54272 },
+    "the-witch-and-other-stories": { opening: "IT was approaching nightfall. The sexton, Savely Gykin, was lying in his huge bed in the hut adjoini", breaths: 1584, scenes: 15, gutenberg: 1944 },
+    "therese-raquin": { opening: "Au bout de la rue Guénégaud, lorsqu'on vient des quais, on trouve le passage du Pont-Neuf, une sorte", breaths: 972, scenes: 32, gutenberg: 7461 },
+    "tradiciones-peruanas": { opening: "Esta tradición no tiene otra fuente de autoridad que el relato del pueblo. Todos la conocen en el Cu", breaths: 1031, scenes: 23, gutenberg: 21282 },
+    "watch-and-ward": { opening: "Roger Lawrence had come to town for the express purpose of doing a certain act, but as the hour for ", breaths: 663, scenes: 11, gutenberg: 72355 },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(sleep);
+  assert.ok(forYou);
+  assert.deepEqual(forYou.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  let prev = next.indexOf("all-quiet-on-the-western-front");
+  const sleepAnchor = sleep!.workIds.indexOf("all-quiet-on-the-western-front");
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.opening, want.opening, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "next", id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(forYou!.workIds.includes(id), false, id);
+    assert.ok(sleep!.workIds.includes(id), id);
+    const at = next.indexOf(id);
+    assert.ok(at > prev, `${id} follows All Quiet on Next`);
+    prev = at;
+    assert.ok(sleep!.workIds.indexOf(id) > sleepAnchor, id);
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: { title: string }[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.ok(full.breaths.length >= 3, id);
+    assert.ok(full.breaths[0]?.text.startsWith(want.opening.slice(0, 40)), id);
+  }
+});
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {
   const waking = RITUAL_LANES.find((item) => item.id === "waking-up");

@@ -1,0 +1,3542 @@
+{
+  "id": "libro-de-poemas",
+  "title": "Libro de poemas",
+  "author": "Federico García Lorca",
+  "year": "1921",
+  "note": "Project Gutenberg 75703",
+  "minutes": 178,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Veleta",
+      "place": "Veleta",
+      "reentry": "Viento del Sur. Moreno, ardiente, Llegas sobre mi carne, Trayéndome semilla De brillantes Miradas, empapado De azahares.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Los Encuentros De Un Caracol Aventurero",
+      "place": "Los Encuentros De Un Caracol Aventurero",
+      "reentry": "A RAMÓN P. RODA",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Canción Otoñal",
+      "place": "Canción Otoñal",
+      "reentry": "Hoy siento en el corazón Un vago temblor de estrellas Pero mi senda se pierde En alma de la niebla. La luz me troncha las alas Y el dolor de mi tristeza Va mojando los recuerdos En la fuente de la idea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Canción Primaveral",
+      "place": "Canción Primaveral",
+      "reentry": "*28 de marzo de 1919*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Canción Menor",
+      "place": "Canción Menor",
+      "reentry": "Tienen gotas de rocío Las alas del ruiseñor, Gotas claras de la luna Cuajadas por su ilusión.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Elegía a Doña Juana La Loca",
+      "place": "Elegía a Doña Juana La Loca",
+      "reentry": "A MELCHOR FERNÁNDEZ ALMAGRO",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "¡cigarra!",
+      "place": "¡cigarra!",
+      "reentry": "*3 de agosto de 1918* (FUENTE VAQUEROS GRANADA)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "¡cigarra!",
+      "place": "¡cigarra!",
+      "reentry": "¡Dichosa tú! Que sobre lecho de tierra Mueres borracha de luz.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Balada Triste",
+      "place": "Balada Triste",
+      "reentry": "PEQUEÑO POEMA",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Mañana",
+      "place": "Mañana",
+      "reentry": "*7 de agosto de 1918*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "La Sombra De Mi Alma",
+      "place": "La Sombra De Mi Alma",
+      "reentry": "La sombra de mi alma Huye por un ocaso de alfabetos, Niebla de libros Y palabras.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Lluvia",
+      "place": "Lluvia",
+      "reentry": "La lluvia tiene un vago secreto de ternura, Algo de soñolencia resignada y amable. Una música humilde se despierta con ella Que hace vibrar el alma dormida del paisaje.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Si Mis Manos Pudieran Deshojar",
+      "place": "Si Mis Manos Pudieran Deshojar",
+      "reentry": "*10 de noviembre de 1919*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "El Canto De La Miel",
+      "place": "El Canto De La Miel",
+      "reentry": "La miel es la palabra de Cristo. El oro derretido de su amor. El más allá del néctar. La momia de la luz del paraíso.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Elegía",
+      "place": "Elegía",
+      "reentry": "Como un incensario lleno de deseos, Pasas en la tarde luminosa y clara Con la carne obscura de nardo marchito Y el sexo potente sobre tu mirada.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Santiago",
+      "place": "Santiago",
+      "reentry": "BALADA INGENUA",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "El Diamante",
+      "place": "El Diamante",
+      "reentry": "El diamante de una estrella Ha rayado el hondo cielo, Pájaro de luz que quiere Escapar del universo Y huye del enorme nido Donde estaba prisionero Sin saber que lleva atada Una cadena en el cuello.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Madrigal De Verano",
+      "place": "Madrigal De Verano",
+      "reentry": "Junta tu roja boca con la mía ¡oh Estrella la gitana! Bajo el oro solar del mediodía Morderé la Manzana.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Cantos Nuevos",
+      "place": "Cantos Nuevos",
+      "reentry": "Dice la tarde, ¡Tengo sed de sombra! Dice la luna: «Yo, sed de luceros» La fuente cristalina pide labios Y suspiros el viento.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Alba",
+      "place": "Alba",
+      "reentry": "Mi corazón oprimido Siente junto a la alborada El dolor de sus amores Y el sueño de las distancias. La luz de la aurora lleva Semilleros de nostalgias Y la tristeza sin ojos De la médula del alma. La gran tumba de la noche Su negro velo lev",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "El Presentimiento",
+      "place": "El Presentimiento",
+      "reentry": "El presentimiento Es la sonda del alma En el misterio. Nariz del corazón, Palo de ciego Que explora en la tiniebla Del tiempo.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Canción Para La Luna",
+      "place": "Canción Para La Luna",
+      "reentry": "Blanca tortuga, Luna dormida, ¡Qué lentamente Caminas! Cerrando un párpado De sombra, miras Cual arqueológica Pupila. Que quizás sea... (Satán es tuerto) Una reliquia, Viva lección Para anarquistas. Jehová acostumbra Sembrar su finca Con oj",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "Elegia Del Silencio",
+      "place": "Elegia Del Silencio",
+      "reentry": "Silencio, ¿dónde llevas Tu cristal empañado De risas, de palabras Y sollozos del árbol? ¿Cómo limpias, silencio, El rocío del canto Y las manchas sonoras Que los mares lejanos Dejan sobre la albura Serena de tu manto? ¿Quién cierra tus heri",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "Balada De Un Día De Julio",
+      "place": "Balada De Un Día De Julio",
+      "reentry": "Esquilones de plata Llevan los bueyes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "In Memoriam",
+      "place": "In Memoriam",
+      "reentry": "Dulce chopo, Dulce chopo, Te has puesto De oro. Ayer estabas verde, Un verde loco De pájaros Gloriosos. Hoy estás abatido Bajo al cielo de agosto Como yo bajo al cielo De mi espíritu rojo. La fragancia cautiva De tu tronco Vendrá a mi coraz",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "Sueño",
+      "place": "Sueño",
+      "reentry": "Mi corazón reposa junto a la fuente fría.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Paisaje",
+      "place": "Paisaje",
+      "reentry": "Las estrellas apagadas Llenan de ceniza el río Verdoso y frío.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Noviembre",
+      "place": "Noviembre",
+      "reentry": "*Noviembre 1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Preguntas",
+      "place": "Preguntas",
+      "reentry": "Un pleno de cigarras tiene el campo. --¿Qué dices, Marco Aurelio, De estas viejas filósofas del llano?-- ¡Pobre es tu pensamiento!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "La Veleta Yacente",
+      "place": "La Veleta Yacente",
+      "reentry": "El duro corazón de la veleta Entre el libro del tiempo. (Una hoja la tierra Y otra hoja el cielo.) Aplastóse doliente sobre letras De tejados viejos. Lírica flor de torre Y luna de los vientos, Abandona el estambre de la cruz Y dispersa sus",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "Corazón Nuevo",
+      "place": "Corazón Nuevo",
+      "reentry": "Mi corazón, como una sierpe, Se ha desprendido de su piel, Y aquí la miro entre mis dedos Llena de heridas y de miel.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Se Ha Puesto El Sol",
+      "place": "Se Ha Puesto El Sol",
+      "reentry": "Se ha puesto el sol. Los árboles Meditan como estatuas. Ya está el trigo segado, ¡Qué tristeza De las norias paradas!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "Pajarita De Papel",
+      "place": "Pajarita De Papel",
+      "reentry": "¡Oh pajarita de papel! Aguila de los niños. Con las plumas de letras, Sin palomo Y sin nido.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "Madrigal",
+      "place": "Madrigal",
+      "reentry": "Mi beso era una granada, Profunda y abierta; Tu boca era rosa De papel.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "Una Campana",
+      "place": "Una Campana",
+      "reentry": "Una campana serena Crucificada en su ritmo Define a la mañana Con peluca de niebla Y arroyos de lágrimas. Mi viejo chopo Turbio de ruiseñores Esperaba Poner entre las hierbas Sus ramas Mucho antes que el otoño Lo dorara. Pero los puntales D",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "Consulta",
+      "place": "Consulta",
+      "reentry": "¡Pasionaria azul! Yunque de mariposas. ¿Vives bien en el limo De las horas?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "Tarde",
+      "place": "Tarde",
+      "reentry": "Tarde lluviosa en gris cansado, Y sigue el caminar. Los árboles marchitos. Mi cuarto, solitario. Y los retratos viejos Y el libro sin cortar...",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "Hay Almas Que Tienen",
+      "place": "Hay Almas Que Tienen",
+      "reentry": "*8 de febrero de 1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "Prólogo",
+      "place": "Prólogo",
+      "reentry": "*24 de julio de 1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "Balada Interior",
+      "place": "Balada Interior",
+      "reentry": "*16 de julio de 1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "El Lagarto Viejo",
+      "place": "El Lagarto Viejo",
+      "reentry": "*26 de julio de 1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "Patio Húmedo",
+      "place": "Patio Húmedo",
+      "reentry": "*1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "Balada De La Placeta",
+      "place": "Balada De La Placeta",
+      "reentry": "*1919*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "Encrucijada",
+      "place": "Encrucijada",
+      "reentry": "Oh, que dolor el tener Versos en la lejanía De la pasión, y el cerebro Todo manchado de tinta!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "Hora De Estrellas",
+      "place": "Hora De Estrellas",
+      "reentry": "*1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "El Camino",
+      "place": "El Camino",
+      "reentry": "No conseguirá nunca Tu lanza Herir al horizonte. La montaña Es un escudo Que lo guarda.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "El Concierto Interrumpido",
+      "place": "El Concierto Interrumpido",
+      "reentry": "*1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "Canción Oriental",
+      "place": "Canción Oriental",
+      "reentry": "*1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "Chopo Muerto",
+      "place": "Chopo Muerto",
+      "reentry": "*1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "Campo",
+      "place": "Campo",
+      "reentry": "*1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "La Balada Del Agua Del Mar",
+      "place": "La Balada Del Agua Del Mar",
+      "reentry": "*1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "Árboles",
+      "place": "Árboles",
+      "reentry": "*1919*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "La Luna Y La Muerte",
+      "place": "La Luna Y La Muerte",
+      "reentry": "*1919*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "Madrigal",
+      "place": "Madrigal",
+      "reentry": "*1919*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "Deseo",
+      "place": "Deseo",
+      "reentry": "*1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "Los Álamos De Plata",
+      "place": "Los Álamos De Plata",
+      "reentry": "Los álamos de plata Se inclinan sobre el agua. Ellos todo lo saben pero nunca hablarán. El lirio de la fuente No grita su tristeza. ¡Todo es más digno que la humanidad!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "Espigas",
+      "place": "Espigas",
+      "reentry": "El trigal se ha entregado a la muerte. Ya las hoces cortan las espigas. Cabecean los chopos hablando Con el alma sutil de la brisa.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "Meditación Bajo La Lluvia",
+      "place": "Meditación Bajo La Lluvia",
+      "reentry": "FRAGMENTO",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "Manantial",
+      "place": "Manantial",
+      "reentry": "FRAGMENTO",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "MAR",
+      "place": "MAR",
+      "reentry": "El mar es El Lucifer del azul. El cielo caído Por querer ser la luz.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "Sueño",
+      "place": "Sueño",
+      "reentry": "Iba yo montado sobre Un macho cabrío. El abuelo me habló Y me dijo: --Ese es tu camino. ¡Es ese!, gritó mi sombra, Disfrazada de mendigo. ¡Es aquel de oro, dijeron Mis vestidos! Un gran cisne me guiñó, Diciendo: ¡vente conmigo! Y una serpie",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "Otro Sueño",
+      "place": "Otro Sueño",
+      "reentry": "*1919*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "Encina",
+      "place": "Encina",
+      "reentry": "*1919*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "Invocación Al Laurel",
+      "place": "Invocación Al Laurel",
+      "reentry": "*1919*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "Ritmo De Otoño",
+      "place": "Ritmo De Otoño",
+      "reentry": "*1920*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "Aire De Nocturno",
+      "place": "Aire De Nocturno",
+      "reentry": "*1919*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "Nido",
+      "place": "Nido",
+      "reentry": "*1919*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "Otra Canción",
+      "place": "Otra Canción",
+      "reentry": "*1919 (Otoño)*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "El Macho Cabrio",
+      "place": "El Macho Cabrio",
+      "reentry": "*1919*",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Viento del Sur. Moreno, ardiente, Llegas sobre mi carne, Trayéndome semilla De brillantes Miradas, empapado De azahares."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Pones roja la luna Y sollozantes Los álamos cautivos, pero vienes ¡Demasiado tarde! ¡Ya he enrollado la noche de mi cuento En el estante!"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Sin ningún viento, ¡Hazme caso! Gira, corazón; Gira, corazón."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Aire del Norte, ¡Oso blanco del viento!, Llegas sobre mi carne Tembloroso de auroras Boreales, Con tu capa de espectros Capitanes, Y riyéndote a gritos Del Dante. ¡Oh pulidor de estrellas! Pero vienes Demasiado tarde. Mi almario está musgoso Y he perdido la llave."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Sin ningún viento, ¡Hazme caso! Gira, corazón; Gira, corazón."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Brisas, gnomos y vientos De ninguna parte. Mosquitos de la rosa De pétalos pirámides. Alisios destetados Entre los rudos árboles, Flautas en la tormenta, ¡Dejadme! Tiene recias cadenas Mi recuerdo, y está cautiva el ave Que dibuja con trinos La tarde."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Las cosas que se van no vuelven nunca, Todo el mundo lo sabe, Y entre el claro gentío de los vientos Es inútil quejarse. ¿Verdad, chopo, maestro de la brisa? ¡Es inútil quejarse!"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Sin ningún viento, ¡Hazme caso! Gira, corazón; Gira, corazón."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "A RAMÓN P. RODA"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Hay dulzura infantil En la mañana quieta. Los árboles extienden Sus brazos a la tierra. Un vaho tembloroso Cubre las sementeras, Y las arañas tienden Sus caminos de seda --Rayas al cristal limpio Del aire--. En la alameda Un manantial recita Su canto entre las hierbas. Y el caracol, pacífico Burgués de la vereda, Ignorada y humilde, El paisaje contempla. La divina quietud De la Naturaleza Le dió valor y fe, Y olvidando las penas De su hogar, deseó Ver el fin de senda."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Echó andar e internóse En un bosque de yedras Y de ortigas. En medio Había dos ranas viejas Que tomaban el sol, Aburridas y enfermas."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Estos cantos modernos, Murmuraba una de ellas, Son inútiles. Todos, Amiga, le contesta La otra rana, que estaba Herida y casi ciega: Cuando joven creía Que si al fin Dios oyera Nuestro canto, tendría Compasión. Y mi ciencia, Pues ya he vivido mucho, Hace que no la crea. Yo ya no canto más..."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Las dos ranas se quejan Pidiendo una limosna A una ranita nueva Que pasa presumida Apartando las hierbas."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Ante el bosque sombrío El caracol, se aterra. Quiere gritar. No puede. Las ranas se le acercan."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "¿Es una mariposa?, Dice la casi ciega. Tiene dos cuernecitos, La otra rana contesta. Es el caracol. ¿Vienes, Caracol, de otras tierras?"
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "Vengo de mi casa y quiero Volverme muy pronto a ella. Es un bicho muy cobarde, Exclama la rana ciega. ¿No cantas nunca? No canto, Dice el caracol. ¿Ni rezas? Tampoco: nunca aprendí. ¿Ni crees en la vida eterna? ¿Qué es eso? Pues vivir siempre En el agua más serena, Junto a una tierra florida Que a un rico manjar sustenta."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Cuando niño a mí me dijo Un día mi pobre abuela Que al morirme yo me iría Sobre las hojas más tiernas De los árboles más altos."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "Una hereje era tu abuela. La verdad te la decimos Nosotras. Creerás en ella, Dicen las ranas furiosas."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "¿Por qué quise ver la senda? Gime el caracol. Si, creo Por siempre en la vida eterna Qué predicáis... Las ranas, Muy pensativas, se alejan, Y el caracol, asustado, Se va perdiendo en la selva."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "Las dos ranas mendigas Como esfingen se quedan. Una de ellas pregunta: ¿Crees tú en la vida eterna? Yo no, dice muy triste La rana herida y ciega, ¿Por qué hemos dicho entonces Al caracol que crea? Por qué... No se por qué, Dice la rana ciega. Me lleno de emoción Al sentir la firmeza Con que llaman mis hijos A Dios desde la acequia..."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "El pobre caracol Vuelve atrás. Ya en la senda Un silencio ondulado Mana de la alameda. Con un grupo de hormigas Encarnadas se encuentra. Van muy alborotadas, Arrastrando tras ellas A otra hormiga que tiene Tronchadas las antenas. El caracol exclama: Hormiguitas, paciencia. ¿Por qué así maltratáis A vuestra compañera? Contadme lo que ha hecho. Yo juzgaré en conciencia. Cuéntalo tú, hormiguita."
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "La hormiga medio muerta Dice muy tristemente: Yo he visto las estrellas. «¿Qué son estrellas?--dicen Las hormigas inquietas. Y el caracol pregunta Pensativo: ¿estrellas? Sí, repite la hormiga, He visto las estrellas. Subí al árbol más alto Que tiene la alameda Y ví miles de ojos Dentro de mis tinieblas El caracol pregunta: ¿Pero qué son estrellas? Son luces que llevamos Sobre nuestra cabeza. Nosotras no las vemos, Las hormigas comentan. Y el caracol, mi vista Sólo alcanza a las hierbas."
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "Las hormigas exclaman Moviendo sus antenas: Te mataremos, eres Perezosa y perversa. El trabajo es tu ley."
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "Yo he visto a las estrellas, Dice la hormiga herida. Y el caracol sentencia: Dejadla que se vaya, Seguid vuestras faenas. Es fácil que muy pronto Ya rendida se muera."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "Por el aire dulzón Ha cruzado una abeja. La hormiga agonizando Huele la tarde inmensa Y dice, es la que viene A llevarme a una estrella."
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "Las demás hormiguitas Huyen al verla muerta."
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "El caracol suspira Y aturdido se aleja Lleno de confusión Por lo eterno. La senda No tiene fin, exclama. Acaso a las estrellas Se llegue por aquí. Pero mi gran torpeza Me impedirá llegar. No hay que pensar en ellas."
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "Todo estaba brumoso De sol débil y niebla. Campanarios lejanos Llaman gente a la iglesia, Y el caracol, pacífico Burgués de la vereda, Aturdido e inquieto El paisaje contempla."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Hoy siento en el corazón Un vago temblor de estrellas Pero mi senda se pierde En alma de la niebla. La luz me troncha las alas Y el dolor de mi tristeza Va mojando los recuerdos En la fuente de la idea."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Todas las rosas son blancas, Tan blancas como mi pena, Y no son las rosas blancas, Que ha nevado sobre ellas. Antes tuvieron el iris. También sobre el alma nieva. La nieve del alma tiene Copos de besos y escenas Que se hundieron en la sombra O en la luz del que las piensa. La nieve cae de las rosas Pero la del alma queda, Y la garra de los años Hace un sudario con ella."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "¿Se deshelará la nieve Cuando la muerte nos lleva? ¿O después habrá otra nieve Y otras rosas más perfectas?"
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "¿Será la paz con nosotros Como Cristo nos enseña? ¿O nunca será posible La solución del problema?"
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "¿Y si el Amor nos engaña? ¿Quién la vida nos alienta Si el crepúsculo nos hunde En la verdadera ciencia Del Bien que quizá no exista Y del Mal que late cerca?"
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "¿Si la esperanza se apaga Y la Babel se comienza Qué antorcha iluminara Los caminos en la Tierra?"
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "¿Si el azul es un ensueño Qué será de la inocencia? ¿Qué será del corazón Si el Amor no tiene flechas?"
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "¿Y si la muerte es la muerte Qué será de los poetas Y de las cosas dormidas Que ya nadie las recuerda? ¡Oh sol de las esperanzas! ¡Agua clara! ¡Luna nueva! ¡Corazones de los niños! ¡Almas rudas de las piedras! Hoy siento en el corazón Un vago temblor de estrellas Y todas las rosas son Tan blancas como mi pena."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "*28 de marzo de 1919*"
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Salen los niños alegres De la escuela, Poniendo en el aire tibio Del Abril, canciones tiernas. ¡Que alegría tiene el hondo Silencio de la calleja! Un silencio hecho pedazos Por risas de plata nueva."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Voy camino de la tarde Entre flores de la huerta Dejando sobre el camino El agua de mi tristeza. En el monte solitario Un cementerio de aldea Parece un campo sembrado Con granos de calaveras. Y han florecido cipreses Como gigantes cabezas Que con órbitas vacías Y verdosas cabelleras Pensativos y dolientes El horizonte contemplan."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "¡Abril divino, que vienes Cargado de sol y esencias Llena con nidos de oro Las floridas calaveras!"
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "Tienen gotas de rocío Las alas del ruiseñor, Gotas claras de la luna Cuajadas por su ilusión."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Tiene el mármol de la fuente El beso del surtidor, Sueño de estrellas humildes."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "Las niñas de los jardines Me dicen todas adiós Cuando paso. Las campanas También me dicen adiós. Y los árboles se besan En el crepúsculo. Yo Voy llorando por la calle, Grotesco y sin solución, Con tristeza de Cyrano Y de Quijote, Redentor De imposibles infinitos Con el ritmo del reloj. Y veo secarse los lirios Al contacto de mi voz Manchada de luz sangrienta, Y en mi lírica canción Llevo galas de payaso Empolvado. El amor Bello y lindo se ha escondido Bajo una araña. El sol Como otra araña me oculta Con sus patas de oro. No Conseguiré mi ventura, Pues soy como el mismo Amor, Cuyas flechas son de llanto, Y el carcaj el corazón."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "Daré todo a los demás Y lloraré mi pasión Como niño abandonado En cuento que se borró."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "A MELCHOR FERNÁNDEZ ALMAGRO"
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "Princesa enamorada sin ser correspondida. Clavel rojo en un valle profundo y desolado. La tumba que te guarda rezuma tu tristeza A través de los ojos que ha abierto sobre el mármol."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "Eras una paloma con alma gigantesca Cuyo nido fué sangre del suelo castellano Derramaste tu fuego sobre un cáliz de nieve Y al querer alentarlo tus alas se troncharon."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "Soñabas que tu amor fuera como el infante Que te sigue sumiso recogiendo tu manto. Y en vez de flores, versos y collares de perlas Te dió la Muerte rosas marchitas en un ramo."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "Tenías en el pecho la formidable aurora De Isabel de Segura. Melibea. Tu canto Como alondra que mira quebrarse el horizonte Se torna de repente monótono y amargo."
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "Y tu grito estremece los cimientos de Burgos. Y oprime la salmodia del coro cartujano. Y choca con los ecos de las lentas campanas Perdiéndose en la sombra tembloroso y rasgado."
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "Tenías la pasión que da el cielo de España. La pasión del puñal, de la ojera y el llanto. ¡Oh princesa divina de crepúsculo rojo Con la rueca de hierro y de acero lo hilado! Nunca tuviste el nido, ni el madrigal doliente, Ni el laud juglaresco que solloza lejano. Tu juglar fué un mancebo con escamas de plata Y un eco de trompeta su acento enamorado."
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "Y sin embargo, estabas para el amor formada Hecha para el suspiro, el mimo y el desmayo. Para llorar tristeza sobre el pecho querido Deshojando una rosa de olor entre los labios."
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "Para mirar la luna bordada sobre el río Y sentir la nostalgia que en sí lleva el rebaño. Y mirar los eternos jardines de la sombra. ¡Oh princesa morena que duermes bajo el mármol!"
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "¿Tienes los ojos negros abiertos a la luz? O se enredan serpientes a tus senos exaustos... ¿Dónde fueron tus besos lanzados a los vientos? ¿Dónde fué la tristeza de tu amor desgraciado? En el cofre de plomo, dentro de tu esqueleto, Tendrás el corazón partido en mil pedazos."
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "Y Granada te guarda como santa reliquia, ¡Oh princesa morena que duermes bajo el mármol! Eloisa y Julieta fueron dos margaritas Pero tú fuiste un rojo clavel ensangrentado. Que vino de la tierra dorada de Castilla A dormir entre nieves y ciprerales castos."
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "Granada era tu lecho de muerte, Doña Juana, Los cipreses tus cirios, La sierra tu retablo. Un retablo de nieve que mitigue tus ansias ¡Con el agua que pasa junto a ti! ¡La del Dauro!"
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "Granada era tu lecho de muerte, Doña Juana, La de las torres viejas y del jardín callado, La de la yedra muerta sobre los muros rojos, La de la niebla azul y el arrayan romántico."
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "Princesa enamorada y mal correspondida. Clavel rojo en un valle profundo y desolado, La tumba que te guarda rezuma tu tristeza A través de los ojos que ha abierto sobre el mármol."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "*3 de agosto de 1918* (FUENTE VAQUEROS GRANADA)"
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "A MARÍA LUISA"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "¡Dichosa tú! Que sobre lecho de tierra Mueres borracha de luz."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Tú sabes de las campiñas El secreto de la vida, Y el cuento del hada vieja Que nacer hierba sentía En ti quedóse guardado."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "¡Cigarra! ¡Dichosa tú! Pues mueres bajo la sangre De un corazón todo azul. La luz es Dios que desciende, Y el sol Brecha por donde se filtra."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "¡Cigarra! ¡Dichosa tú! Pues sientes en la agonía Todo el peso del azul."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Todo lo vivo que pasa Por las puertas de la muerte Va con la cabeza baja Y un aire blanco durmiente. Con habla de pensamiento. Sin sonidos... Tristemente, Cubierto con el silencio Que es el manto de la muerte."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Más tú, cigarra encantada, Derramando son te mueres Y quedas trasfigurada En sonido y luz celeste."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "¡Cigarra! ¡Dichosa tú! Pues te envuelve con su manto El propio espíritu Santo, Que es la luz."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "¡Cigarra! Estrella sonora Sobre los campos dormidos, Vieja amiga de las ranas Y de los obscuros grillos, Tienes sepulcros de oro En los rayos tremolinos Del sol que dulce te hiere En la fuerza del Estío, Y el sol se lleva tu alma Para hacerla luz."
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "Sea mi corazón cigarra Sobre los campos divinos. Que muera cantando lento Por el cielo azul herido Y cuando esté ya expirando Una mujer que adivino Lo derrame con sus manos Por el polvo."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "Y mi sangre sobre el campo Sea rosado y dulce limo Donde claven sus azadas Los cansados campesinos."
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "¡Cigarra! ¡Dichosa tú! Pues te hieren las espadas invisibles Del azul."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "PEQUEÑO POEMA"
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "¡Mi corazón es una mariposa, Niños buenos del prado! Que presa por la araña gris del tiempo Tiene el polen fatal del desengaño."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "De niño yo canté como vosotros, Niños buenos del prado, Solté mi gavilán con las temibles Cuatro uñas de gato. Pasé por el jardín de Cartagena La verbena invocando Y perdí la sortija de mi dicha Al pasar al arroyo imaginario."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "Fui también caballero Una tarde fresquita de Mayo, Ella era entonces para mí el enigma, Estrella azul sobre mi pecho intacto. Cabalgué lentamente hacia los cielos, Era un domingo de pipirigallo. Y ví que en vez de rosas y claveles Ella tronchaba lirios con sus manos."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "Yo siempre fui intranquilo, Niños buenos del prado, El *ella* del romance me sumía En ensoñares claros. ¿Quién será la que coge los claveles Y las rosas de Mayo? ¿Y por qué la verán sólo los niños A lomos de Pegaso? ¿Será esa misma la que en los rondones Con tristeza llamamos Estrella, suplicándole que salga A danzar por el campo?..."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "En abril de mi infancia yo cantaba, Niños buenos del prado, La *ella* impenetrable del romance Donde sale Pegaso. Yo decía en las noches la tristeza De mi amor ignorado, Y la luna lunera ¡qué sonrisa Ponía entre sus labios! ¿Quién será la que corta los claveles Y las rosas de Mayo? Y de aquella chiquita, tan bonita, Que su madre ha casado, ¿En qué oculto rincón de cementerio Dormirá su fracaso?"
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "Yo solo con mi amor desconocido, Sin corazón, sin llantos, Hacia el techo imposible de los cielos Con un gran sol por báculo."
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "¡Qué tristeza tan seria me da sombra! Niños buenos del prado, Cómo recuerda dulce el corazón Los días ya lejanos... ¿Quién será la que corta los claveles Y las rosas de Mayo?"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "*7 de agosto de 1918*"
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "A FERNANDO MARCHESI."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "Y la canción del agua Es una cosa eterna."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "Es la savia entrañable Que madura los campos Es sangre de poetas Que dejaron sus almas Perderse en los senderos De la naturaleza."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "¡Qué armonías derrama Al brotar de la peña! Se abandona a los hombres Con sus dulces cadencias."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "La mañana está clara. Los hogares humean Y son los humos brazos Que levantan la niebla."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "Escuchad los romances Del agua en las choperas. ¡Son pájaros sin alas Perdidos entre hierbas!"
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "Los árboles que cantan Se tronchan y se secan. Y se tornan llanuras Las montañas serenas. Mas la canción del agua Es una cosa eterna."
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "Ella es luz hecha canto De ilusiones románticas. Ella es firme y suave Llena de cielo y mansa, Ella es niebla y es rosa De la eterna mañana. Miel de luna que fluye De estrellas enterradas. ¿Qué es el santo bautismo, Sino Dios hecho agua Que nos unge las frentes Con su sangre de gracia? Por algo Jesucristo En ella confirmóse. Por algo las estrellas En sus ondas descansan. Por algo madre Venus En su seno engendróse Que amor de amor tomamos Cuando bebemos agua. Es el amor que corre Todo manso y divino, Es la vida del mundo, La historia de su alma."
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "Ella lleva secretos De las bocas humanas, Pues todos la besamos Y la sed nos apaga. Es un arca de besos De bocas ya cerradas, Es eterna cautiva, Del corazón hermana."
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "«Cristo debió decirnos: Confesaos con el agua, De todos los dolores, De todas las infamias. ¿A quién mejor, hermanos, Entregar nuestras ansias Que a ella que sube al cielo En envolturas blancas?»"
+    },
+    {
+      "id": "s9-12",
+      "sceneId": "s9",
+      "text": "No hay estado perfecto Como al tomar el agua, Nos volvemos más niños Y más buenos: y pasan Nuestras penas vestidas Con rosadas guirnaldas. Y los ojos se pierden En regiones doradas. ¡Oh fortuna divina Por ninguno ignorada! Agua dulce en que tantos Sus espíritus lavan, No hay nada comparable Con tus orillas santas Si una tristeza honda Nos ha dado sus alas."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "La sombra de mi alma Huye por un ocaso de alfabetos, Niebla de libros Y palabras."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "¡La sombra de mi alma!"
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "He llegado a la línea donde cesa La nostalgia, Y la gota de llanto se transforma Alabastro de espíritu."
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "El copo del dolor Se acaba, Pero queda la razón y la substancia De mi viejo medio día de labios de mi viejo medio día De miradas."
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "Un turbio laberinto De estrellas ahumadas Enreda mi ilusión Casi marchita."
+    },
+    {
+      "id": "s10-8",
+      "sceneId": "s10",
+      "text": "¡La sombra de mi alma!"
+    },
+    {
+      "id": "s10-9",
+      "sceneId": "s10",
+      "text": "Y una alucinación Me ordeña las miradas. Veo la palabra amor Desmoronada."
+    },
+    {
+      "id": "s10-10",
+      "sceneId": "s10",
+      "text": "¡Ruiseñor mío! ¡Ruiseñor! ¿Aún cantas?"
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "La lluvia tiene un vago secreto de ternura, Algo de soñolencia resignada y amable. Una música humilde se despierta con ella Que hace vibrar el alma dormida del paisaje."
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "Es un besar azul que recibe la Tierra, El mito primitivo que vuelve a realizarse. El contacto ya frío de cielo y tierra viejos Con una mansedumbre de atardecer constante."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "Es la aurora del fruto. La que nos trae las flores Y nos unge de espíritu santo de los mares. La que derrama vida sobre las sementeras Y en el alma tristeza de lo que no se sabe."
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "La nostalgia terrible de una vida perdida, El fatal sentimiento de haber nacido tarde, O la ilusión inquieta de un mañana imposible Con la inquietud cercana del dolor de la carne."
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "El amor se despierta en el gris de su ritmo, Nuestro cielo interior tiene un triunfo de sangre, Pero nuestro optimismo se convierte en tristeza Al contemplar las gotas muertas en los cristales."
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "Y son las gotas: ojos de infinito que miran Al infinito blanco que les sirvió de madre."
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "Cada gota de lluvia tiembla en el cristal turbio Y le dejan divinas heridas de diamante. Son poetas del agua que han visto y que meditan Lo que la muchedumbre de los ríos no sabe."
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "¡Oh lluvia silenciosa sin tormentas ni vientos, Lluvia mansa y serena de esquila y luz suave, Lluvia buena y pacífica que eres la verdadera, La que amorosa y triste sobre las cosas caes!"
+    },
+    {
+      "id": "s11-10",
+      "sceneId": "s11",
+      "text": "¡Oh lluvia franciscana que llevas a tus gotas Almas de fuentes claras y humildes manantiales! Cuando sobre los campos desciendes lentamente Las rosas de mi pecho con tus sonidos abres."
+    },
+    {
+      "id": "s11-11",
+      "sceneId": "s11",
+      "text": "El canto primitivo que dices al silencio Y la historia sonora que cuentas al ramaje Los comenta llorando mi corazón desierto En un negro y profundo pentágrama sin clave."
+    },
+    {
+      "id": "s11-12",
+      "sceneId": "s11",
+      "text": "Mi alma tiene tristeza de la lluvia serena, Tristeza resignada de cosa irrealizable, Tengo en el horizonte un lucero encendido Y el corazón me impide que corra a contemplarle."
+    },
+    {
+      "id": "s11-13",
+      "sceneId": "s11",
+      "text": "¡Oh lluvia silenciosa que los árboles aman Y eres sobre el piano dulzura emocionante. Das al alma las mismas nieblas y resonancias Que pones en el alma dormida del paisaje!"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "*10 de noviembre de 1919*"
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "Yo pronuncio tu nombre En las noches obscuras Cuando vienen los astros A beber en la luna Y duermen los ramajes de las frondas ocultas. Y yo me siento hueco de pasión y de música. Loco reloj que canta Muertas horas antiguas."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "Yo pronuncio tu nombre, En esta noche obscura, Y tu nombre me suena Más lejano que nunca. Más lejano que todas las estrellas Y más doliente que la mansa lluvia."
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "¿Te querré como entonces Alguna vez? ¿Qué culpa Tiene mi corazón? Si la niebla se esfuma ¿Qué otra pasión me espera? ¿Será tranquila y pura? ¡¡Si mis dedos pudieran Deshojar a la luna!!"
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "La miel es la palabra de Cristo. El oro derretido de su amor. El más allá del néctar. La momia de la luz del paraíso."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "La colmena es una estrella casta, Pozo de ambar que alimenta el ritmo De las abejas. Seno de los campos Tembloroso de aromas y zumbidos."
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "La miel es la epopeya del amor, La materialidad de lo infinito. Alma y sangre doliente de las flores Condensada a través de otro espíritu."
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "(Así la miel del hombre es la poesía Que mana de su pecho dolorido, De un panal con la cera del recuerdo Formado por la abeja de lo íntimo.)"
+    },
+    {
+      "id": "s13-6",
+      "sceneId": "s13",
+      "text": "La miel es la bucólica lejana Del pastor, la dulzaina y el olivo. Hermana de la leche y las bellotas, Reinas supremas del dorado siglo."
+    },
+    {
+      "id": "s13-7",
+      "sceneId": "s13",
+      "text": "La miel es como el sol de la mañana, Tiene toda la gracia del estío Y la frescura vieja del Otoño. Es la hoja marchita y es el trigo."
+    },
+    {
+      "id": "s13-8",
+      "sceneId": "s13",
+      "text": "¡Oh divino licor de la humildad, Sereno como un verso primitivo!"
+    },
+    {
+      "id": "s13-9",
+      "sceneId": "s13",
+      "text": "La armonía hecha carne tú eres, El resumen genial de lo lírico. En ti duerme la melancolía, El secreto del beso y del grito."
+    },
+    {
+      "id": "s13-10",
+      "sceneId": "s13",
+      "text": "Dulcísima. Dulce. Este es tu adjetivo. Dulce como los vientres de las hembras. Dulce como los ojos de los niños. Dulce como la sombra de la noche. Dulce como una voz O como un lirio."
+    },
+    {
+      "id": "s13-11",
+      "sceneId": "s13",
+      "text": "Para el que lleva la pena y la lira, Eres sol que ilumina el camino. Equivales a todas las bellezas Al color, a la luz, a los sonidos."
+    },
+    {
+      "id": "s13-12",
+      "sceneId": "s13",
+      "text": "¡Oh! Divino licor de la esperanza, Donde a la perfección del equilibrio Llegan alma y materia en unidad Como en la hostia cuerpo y luz de Cristo."
+    },
+    {
+      "id": "s13-13",
+      "sceneId": "s13",
+      "text": "Y el alma superior es de las flores. ¡Oh licor que esas almas has unido! El que te gusta no sabe que traga Un resumen dorado del lirismo."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "Como un incensario lleno de deseos, Pasas en la tarde luminosa y clara Con la carne obscura de nardo marchito Y el sexo potente sobre tu mirada."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "Llevas en la boca tu melancolía De pureza muerta, y en la dionisiaca Copa de tu vientre la araña que teje El velo infecundo que cubre la entraña Nunca florecida con las vivas rosas Fruto de los besos."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "En tus manos blancas Llevas la madeja de tus ilusiones, Muertas para siempre, y sobre tu alma La pasión hambrienta de besos de fuego Y tu amor de madre que sueña lejanas Visiones de cunas en ambientes quietos, Hilando en los labios lo azul de la nana."
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Como Ceres dieras tus espigas de oro Si el amor dormido tu cuerpo tocara, Y como la virgen María pudieras Brotar de tus senos otra vía láctea."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "Te marchitarás como la magnolia. Nadie besará tus muslos de brasa. Ni a tu cabellera llegarán los dedos Que la pulsen como Las cuerdas de un arpa."
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "¡Oh mujer potente de ébano y de nardo!, Cuyo aliento tiene blancor de biznagas. Venus del mantón de manila que sabe Del vino de Málaga y de la guitarra."
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "¡Oh cisne moreno!, cuyo lago tiene Lotos de saetas, olas de naranjas Y espumas de rojos claveles que aroman Los nidos marchitos que hay bajo sus alas."
+    },
+    {
+      "id": "s14-9",
+      "sceneId": "s14",
+      "text": "Nadie te fecunda. Mártir andaluza, Tus besos debieron ser bajo una parra Plenos del silencio que tiene la noche Y del ritmo turbio del agua estancada."
+    },
+    {
+      "id": "s14-10",
+      "sceneId": "s14",
+      "text": "Pero tus ojeras se van agrandando Y tu pelo negro va siendo de plata; Tus senos resbalan escanciando aromas Y empieza a curvarse tu espléndida espalda."
+    },
+    {
+      "id": "s14-11",
+      "sceneId": "s14",
+      "text": "¡Oh mujer esbelta, maternal y ardiente! Virgen dolorosa que tiene clavadas Todas las estrellas del cielo profundo En su corazón, ya sin esperanza."
+    },
+    {
+      "id": "s14-12",
+      "sceneId": "s14",
+      "text": "Eres el espejo de una Andalucía Que sufre pasiones gigantes y calla, Pasiones mecidas por los abanicos Y por las mantillas sobre las gargantas Que tienen temblores de sangre, de nieve Y arañazos rojos hechos por miradas."
+    },
+    {
+      "id": "s14-13",
+      "sceneId": "s14",
+      "text": "Te vas por la niebla del Otoño, virgen Como Inés, Cecilia, y la dulce Clara, Siendo una bacante que hubiera danzado De pámpanos verdes y vid coronada."
+    },
+    {
+      "id": "s14-14",
+      "sceneId": "s14",
+      "text": "La tristeza inmensa que flota en tus ojos Nos dice tu vida rota y fracasada, La monotonía de tu ambiente pobre Viendo pasar gente desde tu ventana, Oyendo la lluvia sobre la amargura Que tiene la vieja calle provinciana, Mientras que a lo lejos suenan los clamores Turbios y confusos de unas campanadas."
+    },
+    {
+      "id": "s14-15",
+      "sceneId": "s14",
+      "text": "Mas en vano escuchaste los acentos del aire. Nunca llegó a tu oído la dulce serenata. Detrás de tus cristales aún miras anhelante. ¡Qué tristeza tan honda tendrás dentro del alma Al sentir en el pecho ya cansado y exhausto La pasión de una niña recién enamorada!"
+    },
+    {
+      "id": "s14-16",
+      "sceneId": "s14",
+      "text": "Tu cuerpo irá a la tumba Intacto de emociones. Sobre la obscura tierra Brotará una alborada. De tus ojos saldrán dos claveles sangrientos Y de tus senos rosas como la nieve blancas. Pero tu gran tristeza se irá con las estrellas Como otra estrella digna de herirlas y eclipsarlas."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "BALADA INGENUA"
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "*25 de julio de 1918*"
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "Esta noche ha pasado Santiago Su camino de luz en el cielo, Lo comentan los niños jugando Con el agua de un cauce sereno."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "¿Dónde va el peregrino celeste Por el claro infinito sendero? Va a la aurora que brilla en el fondo En caballo blanco como el hielo."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "¡Niños chicos, cantad en el prado Horadando con risas al viento!"
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "Dice un hombre que ha visto a Santiago En tropel con doscientos guerreros. Iban todos cubiertos de luces, Con guirnaldas de verdes luceros, Y el caballo que monta Santiago Era un astro de brillos intensos."
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "Dice el hombre que cuenta la historia Que en la noche dormida se oyeron Tremolar plateado de alas Que en sus ondas llevóse el silencio."
+    },
+    {
+      "id": "s15-8",
+      "sceneId": "s15",
+      "text": "¿Qué sería que el río paróse? Eran ángeles los caballeros."
+    },
+    {
+      "id": "s15-9",
+      "sceneId": "s15",
+      "text": "¡Niños chicos, cantad en el prado Horadando con risas al viento!"
+    },
+    {
+      "id": "s15-10",
+      "sceneId": "s15",
+      "text": "Es la noche de luna menguante. ¡Escuchad! ¿Qué se siente en el cielo, Que los grillos refuerzan sus cuerdas Y dan voces los perros vegueros?"
+    },
+    {
+      "id": "s15-11",
+      "sceneId": "s15",
+      "text": "--¿Madre abuela, cuál es el camino, Madre abuela, que yo no lo veo?"
+    },
+    {
+      "id": "s15-12",
+      "sceneId": "s15",
+      "text": "--Mira bien y verás una cinta De polvillo harinoso y espeso, Un borrón que parece de plata O de nácar.--¿Lo ves? --Ya lo veo."
+    },
+    {
+      "id": "s15-13",
+      "sceneId": "s15",
+      "text": "--Madre abuela, ¿dónde está Santiago? --Por allí marcha con su cortejo, La cabeza llena de plumajes Y de perlas muy finas el cuerpo, Con la luna rendida a sus plantas, Con el sol escondido en el pecho."
+    },
+    {
+      "id": "s15-14",
+      "sceneId": "s15",
+      "text": "Esta noche en la vega se escuchan Los relatos brumosos del cuento."
+    },
+    {
+      "id": "s15-15",
+      "sceneId": "s15",
+      "text": "¡Niños chicos, cantad en el prado, Horadando con risas al viento!"
+    },
+    {
+      "id": "s15-16",
+      "sceneId": "s15",
+      "text": "Una vieja que vive muy pobre En la parte más alta del pueblo, Que posee una rueca inservible, Una virgen y dos gatos negros, Mientras hace la ruda calceta Con sus secos y temblones dedos, Rodeada de buenas comadres Y de sucios chiquillos traviesos, En la paz de la noche tranquila, Con las sierras perdidas en negro, Va contando con ritmos tardíos La visión que ella tuvo en sus tiempos."
+    },
+    {
+      "id": "s15-17",
+      "sceneId": "s15",
+      "text": "Ella vió en una noche lejana Como ésta, sin ruidos ni vientos, Al apostol Santiago en persona, Peregrino en la tierra del cielo."
+    },
+    {
+      "id": "s15-18",
+      "sceneId": "s15",
+      "text": "--Y comadre, ¿cómo iba vestido? --La preguntan dos voces a un tiempo--."
+    },
+    {
+      "id": "s15-19",
+      "sceneId": "s15",
+      "text": "--Con bordón de esmeraldas y perlas Y una túnica de terciopelo."
+    },
+    {
+      "id": "s15-20",
+      "sceneId": "s15",
+      "text": "Cuando hubo pasado la puerta, Mis palomas sus alas tendieron, Y mi perro, que estaba dormido, Fué tras él, sus pisadas lamiendo. Era dulce el Apostol divino, Más aún que la luna de Enero. A su paso dejó por la senda Un olor de azucena y de incienso."
+    },
+    {
+      "id": "s15-21",
+      "sceneId": "s15",
+      "text": "--Y comadre, ¿no le dijo nada? --La preguntan dos voces a un tiempo--."
+    },
+    {
+      "id": "s15-22",
+      "sceneId": "s15",
+      "text": "--Al pasar me miró sonriente Y una estrella dejóme aquí dentro."
+    },
+    {
+      "id": "s15-23",
+      "sceneId": "s15",
+      "text": "--¿Dónde tienes guardada esa estrella? --La pregunta un chiquillo travieso--."
+    },
+    {
+      "id": "s15-24",
+      "sceneId": "s15",
+      "text": "--¿Se ha apagado--dijéronle otros-- Como cosa de un encantamiento?"
+    },
+    {
+      "id": "s15-25",
+      "sceneId": "s15",
+      "text": "--No hijos míos, la estrella relumbra, Que en el alma clavada la llevo."
+    },
+    {
+      "id": "s15-26",
+      "sceneId": "s15",
+      "text": "--¿Cómo son las estrellas aquí?"
+    },
+    {
+      "id": "s15-27",
+      "sceneId": "s15",
+      "text": "--Hijo mío, igual que en el cielo."
+    },
+    {
+      "id": "s15-28",
+      "sceneId": "s15",
+      "text": "--Siga, siga la vieja comadre. ¿Dónde iba el glorioso viajero?"
+    },
+    {
+      "id": "s15-29",
+      "sceneId": "s15",
+      "text": "--Se perdió por aquellas montañas Con mis blancas palomas y el perro. Pero llena dejóme la casa De rosales y de jazmineros, Y las uvas verdes de la parra Maduraron, y mi troje lleno Encontré a la siguiente mañana. Todo obra del Apostol bueno."
+    },
+    {
+      "id": "s15-30",
+      "sceneId": "s15",
+      "text": "--¡Grande suerte que tuvo, comadre! --Sermonean dos voces a un tiempo--."
+    },
+    {
+      "id": "s15-31",
+      "sceneId": "s15",
+      "text": "Los chiquillos están ya dormidos Y los campos en hondo silencio."
+    },
+    {
+      "id": "s15-32",
+      "sceneId": "s15",
+      "text": "¡Niños chicos, pensad en Santiago Por los turbios caminos del sueño!"
+    },
+    {
+      "id": "s15-33",
+      "sceneId": "s15",
+      "text": "¡Noche clara, finales de Julio! ¡Ha pasado Santiago en el cielo!"
+    },
+    {
+      "id": "s15-34",
+      "sceneId": "s15",
+      "text": "La tristeza que tiene mi alma, Por el blanco camino la dejo, Para ver si la encuentran los niños Y en el agua la vayan hundiendo, Para ver si en la noche estrellada A muy lejos la llevan los vientos."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "El diamante de una estrella Ha rayado el hondo cielo, Pájaro de luz que quiere Escapar del universo Y huye del enorme nido Donde estaba prisionero Sin saber que lleva atada Una cadena en el cuello."
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "Cazadores extrahumanos Están cazando luceros, Cisnes de plata maciza En el agua del silencio."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "Los chopos niños recitan Su cartilla, es el maestro Un chopo antiguo que mueve Tranquilo sus brazos muertos. Ahora en el monte lejano Jugarán todos los muertos A la baraja. ¡Es tan triste La vida en el cementerio!"
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "¡Rana, empieza tu cantar! ¡Grillo, sal de tu agujero! Haced un bosque sonoro Con vuestras flautas. Yo vuelvo Hacia mi casa intranquilo."
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "Se agitan en mi cerebro Dos palomas campesinas Y en el horizonte, ¡lejos!, Se hunde el arcaduz del día. ¡Terrible noria del tiempo!"
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "Junta tu roja boca con la mía ¡oh Estrella la gitana! Bajo el oro solar del mediodía Morderé la Manzana."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "En el verde olivar de la colina, Hay una torre mora Del color de tu carne campesina Que sabe a miel y aurora."
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "Me ofreces en tu cuerpo requemado, El divino alimento Que da flores al cauce sosegado Y luceros al viento."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "¿Cómo a mí te entregaste luz morena? ¿Por qué me diste llenos De amor tu sexo de azucena Y el rumor de tus senos?"
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "¿No fué por mi figura entristecida? (¡Oh mis torpes andares!) ¿Te dió lástima acaso de mi vida, Marchita de cantares?"
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "¿Cómo no has preferido a mis lamentos Los muslos sudorosos De un San Cristóbal campesino lentos En el amor y hermosos?"
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "Danaide del placer eres conmigo. Femenino silvano. Huelen tus besos como huele el trigo Reseco del verano."
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "Entúrbiame los ojos con tu canto. Deja tu cabellera Extendida y solemne como un manto De sombra en la pradera."
+    },
+    {
+      "id": "s17-10",
+      "sceneId": "s17",
+      "text": "Píntame con tu boca ensangrentada Un cielo del amor, En un fondo de carne la morada Estrella de dolor."
+    },
+    {
+      "id": "s17-11",
+      "sceneId": "s17",
+      "text": "Mi pegaso andaluz está cautivo De tus ojos abiertos, Volará desolado y pensativo Cuando los vea muertos."
+    },
+    {
+      "id": "s17-12",
+      "sceneId": "s17",
+      "text": "Y aunque no me quisieras te querría, Por tu mirar sombrío Como quiere la alondra al nuevo día, Sólo por el rocío."
+    },
+    {
+      "id": "s17-13",
+      "sceneId": "s17",
+      "text": "Junta tu roja boca con la mía; ¡Oh Estrella la gitana! Déjame bajo el claro mediodía Consumir la manzana."
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "Dice la tarde, ¡Tengo sed de sombra! Dice la luna: «Yo, sed de luceros» La fuente cristalina pide labios Y suspiros el viento."
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "Yo tengo sed de aromas y de risas. Sed de cantares nuevos Sin lunas y sin lirios, Y sin amores muertos."
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "Un cantar de mañana que estremezca A los remansos quietos Del porvenir. Y llene de esperanza Sus ondas y sus cienos."
+    },
+    {
+      "id": "s18-5",
+      "sceneId": "s18",
+      "text": "Un cantar luminoso y reposado Pleno de pensamiento, Virginal de tristezas y de angustias Y virginal de ensueños."
+    },
+    {
+      "id": "s18-6",
+      "sceneId": "s18",
+      "text": "Cantar sin carne lírica que llene De risas el silencio. (Una bandada de palomas ciegas Lanzadas al misterio.)"
+    },
+    {
+      "id": "s18-7",
+      "sceneId": "s18",
+      "text": "Cantar que vaya al alma de las cosas Y al alma de los vientos Y que descanse al fin en la alegría Del corazón eterno."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "Mi corazón oprimido Siente junto a la alborada El dolor de sus amores Y el sueño de las distancias. La luz de la aurora lleva Semilleros de nostalgias Y la tristeza sin ojos De la médula del alma. La gran tumba de la noche Su negro velo levanta Para ocultar con el día La inmensa cumbre estrellada."
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "¡Qué haré yo sobre estos campos Cogiendo nidos y ramas Rodeado de la aurora Y llena de noche el alma! ¡Qué haré si tienes tus ojos Muertos a las luces claras Y no ha de sentir mi carne El calor de tus miradas! ¿Porqué te perdí por siempre En aquella tarde clara? Hoy mi pecho está reseco Como una estrella apagada."
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "El presentimiento Es la sonda del alma En el misterio. Nariz del corazón, Palo de ciego Que explora en la tiniebla Del tiempo."
+    },
+    {
+      "id": "s20-3",
+      "sceneId": "s20",
+      "text": "Ayer es lo marchito, El sentimiento Y el campo funeral Del recuerdo."
+    },
+    {
+      "id": "s20-4",
+      "sceneId": "s20",
+      "text": "Anteayer, Es lo muerto. Madriguera de ideas moribundas De pegasos sin freno. Malezas de memorias, Y desiertos Perdidos en la niebla De los sueños."
+    },
+    {
+      "id": "s20-5",
+      "sceneId": "s20",
+      "text": "Nada turba los siglos Pasados. No podemos Arrancar un suspiro De lo viejo. El pasado se pone Su coraza de hierro, Y tapa sus oídos Con algodón del viento. Nunca podrá arrancársele Un secreto."
+    },
+    {
+      "id": "s20-6",
+      "sceneId": "s20",
+      "text": "Sus músculos de siglos Y su cerebro De marchitas ideas En feto No darán el licor que necesita El corazón sediento."
+    },
+    {
+      "id": "s20-7",
+      "sceneId": "s20",
+      "text": "Pero el niño futuro Nos dirá algún secreto Cuando juegue en su cama De luceros. Y es fácil engañarle; Por eso, Démosle con dulzura Nuestro seno, Que el topo silencioso Del presentimiento Nos traerá sus sonajas Cuando se esté durmiendo."
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "Blanca tortuga, Luna dormida, ¡Qué lentamente Caminas! Cerrando un párpado De sombra, miras Cual arqueológica Pupila. Que quizás sea... (Satán es tuerto) Una reliquia, Viva lección Para anarquistas. Jehová acostumbra Sembrar su finca Con ojos muertos Y cabecitas De sus contrarias Milicias. Gobierna rígido La Faz divina Con su turbante De niebla fría, Poniendo dulces Astros sin vida Al rubio cuervo Del día. Por eso, luna, ¡Luna dormida!, Vas protestando Seca de brisas, Del gran abuso La tiranía De ese Jehová Que os encamina Por una senda, ¡Siempre la misma!, Mientras Él goza En compañía De Doña Muerte, Que es su querida..."
+    },
+    {
+      "id": "s21-2",
+      "sceneId": "s21",
+      "text": "Blanca tortuga, Luna dormida, Casta Verónica Del sol que limpias En el ocaso Su faz rojiza. Ten esperanza, Muerta pupila, Que el gran Lenin De tu campiña Será la Osa Mayor, la arisca Fiera del cielo Que irá tranquila A dar su abrazo De despedida, Al viejo enorme De los seis días."
+    },
+    {
+      "id": "s21-3",
+      "sceneId": "s21",
+      "text": "Y entonces, luna Blanca, vendría El puro reino De la ceniza."
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "Silencio, ¿dónde llevas Tu cristal empañado De risas, de palabras Y sollozos del árbol? ¿Cómo limpias, silencio, El rocío del canto Y las manchas sonoras Que los mares lejanos Dejan sobre la albura Serena de tu manto? ¿Quién cierra tus heridas Cuando sobre los campos Alguna vieja noria Clava su lento dardo En tu cristal inmenso? ¿Dónde vas si al ocaso Te hieren las campanas Y quiebran tu remanso Las bandadas de coplas Y el gran rumor dorado Que cae sobre los montes azules sollozando?"
+    },
+    {
+      "id": "s22-2",
+      "sceneId": "s22",
+      "text": "El aire del invierno Hace tu azul pedazos, Y troncha tus florestas El lamentar callado De alguna fuente fría. Donde posas tus manos, La espina de la risa O el caluroso hachazo De la pasión encuentras. Si te vas a los astros, El zumbido solemne De los azules pájaros Quiebra el gran equilibrio De tu escondido cráneo."
+    },
+    {
+      "id": "s22-3",
+      "sceneId": "s22",
+      "text": "Huyendo del sonido Eres sonido mismo, Espectro de harmonía, Humo de grito y canto. Vienes para decirnos En las noches obscuras La palabra infinita Sin aliento y sin labios."
+    },
+    {
+      "id": "s22-4",
+      "sceneId": "s22",
+      "text": "Taladrado de estrellas Y maduro de música, ¿Dónde llevas, silencio, Tu dolor extrahumano, Dolor de estar cautivo En la araña melódica, Ciego ya para siempre Tu manantial sagrado?"
+    },
+    {
+      "id": "s22-5",
+      "sceneId": "s22",
+      "text": "Hoy arrastran tus ondas Turbias de pensamiento La ceniza sonora Y el dolor del antaño. Los ecos de los gritos Que por siempre se fueron. El estruendo remoto Del mar, momificado."
+    },
+    {
+      "id": "s22-6",
+      "sceneId": "s22",
+      "text": "Si Jehová se ha dormido Sube al trono brillante Quiébrale en su cabeza Un lucero apagado, Y acaba seriamente Con la música eterna, La harmonía sonora De luz, y mientras tanto, Vuelve a tu manantial, Donde en la noche eterna, Antes que Dios y el Tiempo, Manabas sosegado."
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "Esquilones de plata Llevan los bueyes."
+    },
+    {
+      "id": "s23-2",
+      "sceneId": "s23",
+      "text": "--¿Dónde vas, niña mía, De sol y nieve?"
+    },
+    {
+      "id": "s23-3",
+      "sceneId": "s23",
+      "text": "--Voy a las margaritas Del prado verde."
+    },
+    {
+      "id": "s23-4",
+      "sceneId": "s23",
+      "text": "--El prado está muy lejos y miedo tiene."
+    },
+    {
+      "id": "s23-5",
+      "sceneId": "s23",
+      "text": "--Al airón y a la sombra Mi amor no teme."
+    },
+    {
+      "id": "s23-6",
+      "sceneId": "s23",
+      "text": "--Teme al sol, niña mía, De sol y nieve."
+    },
+    {
+      "id": "s23-7",
+      "sceneId": "s23",
+      "text": "--Se fué de mis cabellos Ya para siempre."
+    },
+    {
+      "id": "s23-8",
+      "sceneId": "s23",
+      "text": "--¿Quién eres, blanca niña? ¿De dónde vienes?"
+    },
+    {
+      "id": "s23-9",
+      "sceneId": "s23",
+      "text": "--Vengo de los amores Y de las fuentes."
+    },
+    {
+      "id": "s23-10",
+      "sceneId": "s23",
+      "text": "Esquilones de plata Llevan los bueyes."
+    },
+    {
+      "id": "s23-11",
+      "sceneId": "s23",
+      "text": "--¿Qué llevas en la boca Que se te enciende?"
+    },
+    {
+      "id": "s23-12",
+      "sceneId": "s23",
+      "text": "--La estrella de mi amante Que vive y muere."
+    },
+    {
+      "id": "s23-13",
+      "sceneId": "s23",
+      "text": "--¿Qué llevas en el pecho Tan fino y leve?"
+    },
+    {
+      "id": "s23-14",
+      "sceneId": "s23",
+      "text": "--La espada de mi amante Que vive y muere."
+    },
+    {
+      "id": "s23-15",
+      "sceneId": "s23",
+      "text": "--¿Qué llevas en los ojos Negro y solemne?"
+    },
+    {
+      "id": "s23-16",
+      "sceneId": "s23",
+      "text": "--Mi pensamiento triste Que siempre hiere."
+    },
+    {
+      "id": "s23-17",
+      "sceneId": "s23",
+      "text": "--¿Por qué llevas un manto Negro de muerte?"
+    },
+    {
+      "id": "s23-18",
+      "sceneId": "s23",
+      "text": "--¡Ay, yo soy la viudita Triste y sin bienes!"
+    },
+    {
+      "id": "s23-19",
+      "sceneId": "s23",
+      "text": "Del conde del Laurel De los Laureles."
+    },
+    {
+      "id": "s23-20",
+      "sceneId": "s23",
+      "text": "--¿A quién buscas aquí Si a nadie quieres?"
+    },
+    {
+      "id": "s23-21",
+      "sceneId": "s23",
+      "text": "--Busco el cuerpo del conde De los Laureles."
+    },
+    {
+      "id": "s23-22",
+      "sceneId": "s23",
+      "text": "--¿Tú buscas el amor, Viudita aleve? Tú buscas un amor Que ojalá encuentres."
+    },
+    {
+      "id": "s23-23",
+      "sceneId": "s23",
+      "text": "--Estrellitas del cielo Son mis quereres, ¿Dónde hallaré a mi amante Que vive y muere?"
+    },
+    {
+      "id": "s23-24",
+      "sceneId": "s23",
+      "text": "--Está muerto en el agua, Niña de nieve, Cubierto de nostalgias Y de claveles."
+    },
+    {
+      "id": "s23-25",
+      "sceneId": "s23",
+      "text": "--¡Ay! caballero errante De los cipreses, Una noche de luna Mi alma te ofrece."
+    },
+    {
+      "id": "s23-26",
+      "sceneId": "s23",
+      "text": "--Ah Isis soñadora. Niña sin mieles La que en bocas de niños Su cuento vierte. Mi corazón te ofrezco, Corazón tenue, Herido por los ojos De las mujeres."
+    },
+    {
+      "id": "s23-27",
+      "sceneId": "s23",
+      "text": "--Caballero galante, Con Dios te quedes."
+    },
+    {
+      "id": "s23-28",
+      "sceneId": "s23",
+      "text": "--Voy a buscar al conde De los Laureles..."
+    },
+    {
+      "id": "s23-29",
+      "sceneId": "s23",
+      "text": "--Adiós mi doncellita, Rosa durmiente, Tú vas para el amor Y yo a la muerte."
+    },
+    {
+      "id": "s23-30",
+      "sceneId": "s23",
+      "text": "Esquilones de plata Llevan los bueyes."
+    },
+    {
+      "id": "s23-31",
+      "sceneId": "s23",
+      "text": "--Mi corazón desangra Como una fuente."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "Dulce chopo, Dulce chopo, Te has puesto De oro. Ayer estabas verde, Un verde loco De pájaros Gloriosos. Hoy estás abatido Bajo al cielo de agosto Como yo bajo al cielo De mi espíritu rojo. La fragancia cautiva De tu tronco Vendrá a mi corazón Piadoso. ¡Rudo abuelo del prado! Nosotros, Nos hemos puesto De oro."
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "Mi corazón reposa junto a la fuente fría."
+    },
+    {
+      "id": "s25-3",
+      "sceneId": "s25",
+      "text": "El agua de la fuente su canción le decía."
+    },
+    {
+      "id": "s25-5",
+      "sceneId": "s25",
+      "text": "Mi corazón despierto sus amores decía."
+    },
+    {
+      "id": "s25-7",
+      "sceneId": "s25",
+      "text": "El agua de la fuente lo escuchaba sombría."
+    },
+    {
+      "id": "s25-9",
+      "sceneId": "s25",
+      "text": "Mi corazón se vuelca sobre la fuente fría."
+    },
+    {
+      "id": "s25-10",
+      "sceneId": "s25",
+      "text": "(Manos blancas, lejanas, Detened a las aguas.)"
+    },
+    {
+      "id": "s25-11",
+      "sceneId": "s25",
+      "text": "Y el agua se lo lleva cantando de alegría."
+    },
+    {
+      "id": "s25-12",
+      "sceneId": "s25",
+      "text": "(¡Manos blancas, lejanas, Nada queda en las aguas!)"
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "Las estrellas apagadas Llenan de ceniza el río Verdoso y frío."
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "La fuente no tiene trenzas. Ya se han quemado los nidos escondidos."
+    },
+    {
+      "id": "s26-3",
+      "sceneId": "s26",
+      "text": "Las ranas hacen del cauce Una siringa encantada Desafinada."
+    },
+    {
+      "id": "s26-4",
+      "sceneId": "s26",
+      "text": "Sale del monte la luna, Con su cara bonachona De jamona."
+    },
+    {
+      "id": "s26-5",
+      "sceneId": "s26",
+      "text": "Una estrella le hace burla Desde su casa de añil Infantil."
+    },
+    {
+      "id": "s26-6",
+      "sceneId": "s26",
+      "text": "El débil color rosado Hace cursi el horizonte Del monte,"
+    },
+    {
+      "id": "s26-7",
+      "sceneId": "s26",
+      "text": "Y observo que el laurel tiene Cansancio de ser poético Y profético."
+    },
+    {
+      "id": "s26-8",
+      "sceneId": "s26",
+      "text": "Como la hemos visto siempre El agua se va durmiendo, Sonriyendo."
+    },
+    {
+      "id": "s26-9",
+      "sceneId": "s26",
+      "text": "Todo llora por costumbre, Todo el campo se lamenta Sin darse cuenta."
+    },
+    {
+      "id": "s26-10",
+      "sceneId": "s26",
+      "text": "Yo, por no desafinar, Digo por educación: «¡Mi corazón!»."
+    },
+    {
+      "id": "s26-11",
+      "sceneId": "s26",
+      "text": "Pero una grave tristeza Tiñe mis labios manchados De pecados."
+    },
+    {
+      "id": "s26-12",
+      "sceneId": "s26",
+      "text": "Yo voy lejos del paisaje. Hay en mi pecho una hondura De sepultura."
+    },
+    {
+      "id": "s26-13",
+      "sceneId": "s26",
+      "text": "Un murciélago me avisa Que el sol se esconde doliente En el Poniente."
+    },
+    {
+      "id": "s26-14",
+      "sceneId": "s26",
+      "text": "¡Pater noster por mi amor! (Llanto de las alamedas Y arboledas.)"
+    },
+    {
+      "id": "s26-15",
+      "sceneId": "s26",
+      "text": "En el carbón de la tarde Miro mis ojos lejanos, Cual milanos."
+    },
+    {
+      "id": "s26-16",
+      "sceneId": "s26",
+      "text": "Y despeino mi alma muerta Con arañas de miradas Olvidadas."
+    },
+    {
+      "id": "s26-17",
+      "sceneId": "s26",
+      "text": "Ya es de noche, y las estrellas Clavan puñales al río Verdoso y frío."
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "*Noviembre 1920*"
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "Todos los ojos Estaban abiertos Frente a la soledad Despintada por el llanto. Tin Tan, Tin Tan."
+    },
+    {
+      "id": "s27-2",
+      "sceneId": "s27",
+      "text": "Los verdes cipreses Guardaban su alma Arrugada por el viento, Y las palabras como guadañas Segaban almas de flores. Tin Tan, Tin Tan."
+    },
+    {
+      "id": "s27-3",
+      "sceneId": "s27",
+      "text": "El cielo estaba marchito. ¡Oh tarde cautiva por las nubes, Esfinge sin ojos! Obeliscos y chimeneas Hacían pompas de jabón. Tin Tan, Tin Tan."
+    },
+    {
+      "id": "s27-4",
+      "sceneId": "s27",
+      "text": "Los ritmos se curvaban Y se curvaba el aire, Guerreros de niebla Hacían de los árboles Catapultas. Tin Tan, Tin Tan."
+    },
+    {
+      "id": "s27-5",
+      "sceneId": "s27",
+      "text": "¡Oh tarde, Tarde de mi otro beso! Tema lejano de mi sombra, ¡Sin rayo de oro! Cascabel vacío. Tarde desmoronada Sobre piras de silencio. Tin Tan, Tin Tan."
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "Un pleno de cigarras tiene el campo. --¿Qué dices, Marco Aurelio, De estas viejas filósofas del llano?-- ¡Pobre es tu pensamiento!"
+    },
+    {
+      "id": "s28-2",
+      "sceneId": "s28",
+      "text": "Corre el agua del río mansamente. --¡Oh, Sócrates! ¿Qué ves En el agua que va a la amarga muerte?-- ¡Pobre y triste es tu fe!"
+    },
+    {
+      "id": "s28-3",
+      "sceneId": "s28",
+      "text": "Se deshojan las rosas en el lodo. ¡Oh, dulce Juan de Dios! ¿Qué ves en estos pétalos gloriosos? ¡Chico es tu corazón!"
+    },
+    {
+      "id": "s29-2",
+      "sceneId": "s29",
+      "text": "El duro corazón de la veleta Entre el libro del tiempo. (Una hoja la tierra Y otra hoja el cielo.) Aplastóse doliente sobre letras De tejados viejos. Lírica flor de torre Y luna de los vientos, Abandona el estambre de la cruz Y dispersa sus pétalos, Para caer sobre las losas frías Comida por la oruga De los ecos."
+    },
+    {
+      "id": "s29-3",
+      "sceneId": "s29",
+      "text": "Yaces bajo una acacia. ¡Memento! No podías latir Porque eras de hierro... Mas poseíste la forma, ¡Conténtate con eso! Y húndete bajo el verde Legamo, En busca de tu gloria De fuego, Aunque te llamen tristes Las torres desde lejos Y oigas en las veletas Chirriar tus compañeros. Húndete bajo el paño Verdoso de tu lecho, Que ni la blanca monja, Ni el perro, Ni la luna menguante, Ni el lucero, Ni el turbio sacristán Del convento, Recordarán tus gritos Del invierno. Húndete lentamente, Que si no, luego, Te llevarán los hombres De los trapos viejos. Y ojalá pudiera darte Por compañero Este corazón mío ¡Tan incierto!"
+    },
+    {
+      "id": "s30-2",
+      "sceneId": "s30",
+      "text": "Mi corazón, como una sierpe, Se ha desprendido de su piel, Y aquí la miro entre mis dedos Llena de heridas y de miel."
+    },
+    {
+      "id": "s30-3",
+      "sceneId": "s30",
+      "text": "Los pensamientos que anidaron En tus arrugas ¿dónde están? ¿Dónde las rosas que aromaron A Jesucristo y a Satán?"
+    },
+    {
+      "id": "s30-4",
+      "sceneId": "s30",
+      "text": "¡Pobre envoltura que ha oprimido A mi fantástico lucero! Gris pergamino dolorido De lo que quise y ya no quiero."
+    },
+    {
+      "id": "s30-5",
+      "sceneId": "s30",
+      "text": "Yo veo en ti fetos de ciencias, Momias de versos y esqueletos De mis antiguas inocencias Y mis románticos secretos."
+    },
+    {
+      "id": "s30-6",
+      "sceneId": "s30",
+      "text": "¿Te colgaré sobre los muros De mi museo sentimental, Junto a los gélidos y obscuros Lirios durmientes de mi mal?"
+    },
+    {
+      "id": "s30-7",
+      "sceneId": "s30",
+      "text": "¿O te pondré sobre los pinos --Libro doliente de mi amor-- Para que sepas de los trinos Que da a la aurora el ruiseñor?"
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "Se ha puesto el sol. Los árboles Meditan como estatuas. Ya está el trigo segado, ¡Qué tristeza De las norias paradas!"
+    },
+    {
+      "id": "s31-2",
+      "sceneId": "s31",
+      "text": "Un perro campesino Quiere comerse a Venus, y le ladra. Brilla sobre su campo de pre-beso, Como una gran manzana."
+    },
+    {
+      "id": "s31-3",
+      "sceneId": "s31",
+      "text": "Los mosquitos--pegasos del rocío-- Vuelan, el aire en calma. La Penelope inmensa de la luz Teje una noche clara."
+    },
+    {
+      "id": "s31-4",
+      "sceneId": "s31",
+      "text": "Hijas mías, dormid, que viene el lobo, Las ovejitas balan. ¿Ha llegado el otoño, compañeras? Dice una flor ajada."
+    },
+    {
+      "id": "s31-5",
+      "sceneId": "s31",
+      "text": "¡Ya vendrán los pastores con sus nidos Por la sierra lejana! Ya jugarán las niñas en la puerta De la vieja posada, Y habrá coplas de amor Que ya se saben De memoria las casas."
+    },
+    {
+      "id": "s32-1",
+      "sceneId": "s32",
+      "text": "¡Oh pajarita de papel! Aguila de los niños. Con las plumas de letras, Sin palomo Y sin nido."
+    },
+    {
+      "id": "s32-2",
+      "sceneId": "s32",
+      "text": "Las manos aun mojadas de misterio Te crean en un frío Anochecer de otoño, cuando mueren Los pájaros y el ruido De la lluvia nos hace amar la lámpara, El corazón y el libro."
+    },
+    {
+      "id": "s32-3",
+      "sceneId": "s32",
+      "text": "Naces para vivir unos minutos En el frágil castillo De naipes que se eleva tembloroso Como el tallo de un lirio, Y meditas allí ciega y sin alas Que pudiste haber sido El atleta grotesco que sonríe Ahorcado por un hilo, El barco silencio sin remeros ni velamen, El lírico Buque fantasma del miedoso insecto, O el triste borriquito Que escarnecen, haciéndolo pegaso, Los soplos de los niños."
+    },
+    {
+      "id": "s32-4",
+      "sceneId": "s32",
+      "text": "Pero enmedio de tu meditación Van gotas de humorismo. Hecha con la corteza de la ciencia Te ríes del destino, Y gritas: Blanca flor no muere nunca, Ni se muere Luisito. La mañana es eterna, es eterna La fuente del rocío."
+    },
+    {
+      "id": "s32-5",
+      "sceneId": "s32",
+      "text": "Y aunque no crees en nada dices esto, No se enteren los niños, De que hay sombra detrás de las estrellas Y sombra en tu castillo."
+    },
+    {
+      "id": "s32-6",
+      "sceneId": "s32",
+      "text": "Enmedio de la mesa, al derrumbarse Tu azul mansión, has visto Que el milano te mira ansiosamente: Es un recién nacido. Una pompa de espuma sobre el agua Del sufrimiento vivo."
+    },
+    {
+      "id": "s32-7",
+      "sceneId": "s32",
+      "text": "Y tú vas a sus labios luminosos Mientras ríen los niños, Y callan los papás no sea despierten Los dolores vecinos."
+    },
+    {
+      "id": "s32-8",
+      "sceneId": "s32",
+      "text": "Así pájaro clown desapareces Para nacer en otro sitio. Así pájaro esfinge das tu alma De ave fénix al limbo."
+    },
+    {
+      "id": "s33-2",
+      "sceneId": "s33",
+      "text": "Mi beso era una granada, Profunda y abierta; Tu boca era rosa De papel."
+    },
+    {
+      "id": "s33-3",
+      "sceneId": "s33",
+      "text": "El fondo un campo de nieve."
+    },
+    {
+      "id": "s33-4",
+      "sceneId": "s33",
+      "text": "Mis manos eran hierros Para los yunques, Tu cuerpo era el ocaso De una campanada."
+    },
+    {
+      "id": "s33-5",
+      "sceneId": "s33",
+      "text": "El fondo un campo de nieve."
+    },
+    {
+      "id": "s33-6",
+      "sceneId": "s33",
+      "text": "En la agujereada Calavera azul Hicieron estalactitas Mis te quiero."
+    },
+    {
+      "id": "s33-7",
+      "sceneId": "s33",
+      "text": "El fondo un campo de nieve."
+    },
+    {
+      "id": "s33-8",
+      "sceneId": "s33",
+      "text": "Llenáronse de moho Mis sueños infantiles, Y taladró a la luna Mi dolor salomónico."
+    },
+    {
+      "id": "s33-9",
+      "sceneId": "s33",
+      "text": "El fondo un campo de nieve."
+    },
+    {
+      "id": "s33-10",
+      "sceneId": "s33",
+      "text": "Ahora a maestro grave A la alta escuela, A mi amor y a mis sueños (Caballitos sin ojos)."
+    },
+    {
+      "id": "s33-11",
+      "sceneId": "s33",
+      "text": "Y el fondo es un campo de nieve."
+    },
+    {
+      "id": "s34-1",
+      "sceneId": "s34",
+      "text": "Una campana serena Crucificada en su ritmo Define a la mañana Con peluca de niebla Y arroyos de lágrimas. Mi viejo chopo Turbio de ruiseñores Esperaba Poner entre las hierbas Sus ramas Mucho antes que el otoño Lo dorara. Pero los puntales De mis miradas Lo sostenían. ¡Viejo chopo, aguarda! ¿No sientes la madera De mi amor desgarrada? Tiéndete en la pradera Cuando cruja mi alma Que un vendaval de besos Y palabras Ha dejado rendida, Lacerada."
+    },
+    {
+      "id": "s35-1",
+      "sceneId": "s35",
+      "text": "¡Pasionaria azul! Yunque de mariposas. ¿Vives bien en el limo De las horas?"
+    },
+    {
+      "id": "s35-3",
+      "sceneId": "s35",
+      "text": "Clara estrella azul, Ombligo de la aurora. ¿Vives bien en la espuma De la sombra?"
+    },
+    {
+      "id": "s35-5",
+      "sceneId": "s35",
+      "text": "Corazón azulado, Lámpara de mi alcoba. ¿Lates bien sin mi sangre Filarmónica?"
+    },
+    {
+      "id": "s35-7",
+      "sceneId": "s35",
+      "text": "Os comprendo y me dejo Arrumbado en la cómoda Al insecto del tiempo. Sus metálicas gotas No se oirán en la calma De mi alcoba. Me dormiré tranquilo Como dormis vosotras Pasionarias y estrellas, Que al fin, la mariposa, Volará en la corriente De las horas Mientras nace en mi tronco La rosa."
+    },
+    {
+      "id": "s36-1",
+      "sceneId": "s36",
+      "text": "Tarde lluviosa en gris cansado, Y sigue el caminar. Los árboles marchitos. Mi cuarto, solitario. Y los retratos viejos Y el libro sin cortar..."
+    },
+    {
+      "id": "s36-2",
+      "sceneId": "s36",
+      "text": "Chorrea la tristeza por los muebles Y por mi alma. Quizá, No tenga para mí Naturaleza El pecho de cristal."
+    },
+    {
+      "id": "s36-3",
+      "sceneId": "s36",
+      "text": "Y me duele la carne del corazón Y la carne del alma. Y al hablar, Se quedan mis palabras en el aire Como corchos sobre agua."
+    },
+    {
+      "id": "s36-4",
+      "sceneId": "s36",
+      "text": "Sólo por tus ojos Sufro yo este mal, Tristezas de antaño Y las que vendrán."
+    },
+    {
+      "id": "s36-5",
+      "sceneId": "s36",
+      "text": "Tarde lluviosa en gris cansado, Y sigue el caminar."
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "*8 de febrero de 1920*"
+    },
+    {
+      "id": "s37-1",
+      "sceneId": "s37",
+      "text": "Hay almas que tienen Azules luceros, Mañanas marchitas Entre hojas del tiempo, Y castos rincones Que guardan un viejo Rumor de nostalgias Y sueños."
+    },
+    {
+      "id": "s37-2",
+      "sceneId": "s37",
+      "text": "Otras almas tienen Dolientes espectros De pasiones. Frutas Con gusanos. Ecos De una voz quemada Que viene de lejos Como una corriente De sombra. Recuerdos Vacíos de llanto, Y migajas de besos."
+    },
+    {
+      "id": "s37-3",
+      "sceneId": "s37",
+      "text": "Mi alma está madura Hace mucho tiempo, Y se desmorona Turbia de misterio. Piedras juveniles Roídas de ensueño Caen sobre las aguas De mis pensamientos. Cada piedra dice: ¡Dios está muy lejos!"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "*24 de julio de 1920*"
+    },
+    {
+      "id": "s38-2",
+      "sceneId": "s38",
+      "text": "Mi corazón está aquí, Dios mío. Hunde tu cetro en él, Señor. Es un membrillo Demasiado otoñal Y está podrido. Arranca los esqueletos De los gavilanes líricos Que tanto, tanto lo hirieron, Y si acaso tienes pico Móndale su corteza De Hastío."
+    },
+    {
+      "id": "s38-3",
+      "sceneId": "s38",
+      "text": "Mas si no quieres hacerlo, Me da lo mismo, Guárdate tu cielo azul Que es tan aburrido. El rigodón de los astros Y tu Infinito, Que yo pediré prestado El corazón a un amigo. Un corazón con arroyos Y pinos, Y un ruiseñor de hierro Que resista El martillo De los siglos."
+    },
+    {
+      "id": "s38-4",
+      "sceneId": "s38",
+      "text": "Ademas, Satanás me quiere mucho, Fué compañero mío En un examen de Lujuria, y el pícaro, Buscará a Margarita --Me lo tiene ofrecido-- Margarita morena, Sobre un fondo de viejos olivos, Con dos trenzas de noche De Estío, Para que yo desgarre Sus muslos limpios. Y entonces, ¡oh Señor!, Seré tan rico O más que tú, Porque el vacío No puede compararse Al vino Con que Satán obsequia A sus buenos amigos. Licor hecho con llanto. ¡Qué más da! Es lo mismo Que tu licor compuesto De trinos."
+    },
+    {
+      "id": "s38-5",
+      "sceneId": "s38",
+      "text": "Dime, Señor, ¡Dios mío! ¿Nos hundes en la sombra Del abismo? ¿Somos pájaros ciegos Sin nidos?"
+    },
+    {
+      "id": "s38-6",
+      "sceneId": "s38",
+      "text": "La luz se va apagando. ¿Y el aceite divino? Las olas agonizan. ¿Has querido Jugar como si fuéramos Soldaditos? Dime, Señor, ¡Dios mío! ¿No llega el dolor nuestro A tus oídos? ¿No han hecho las blasfemias Babeles sin ladrillos Para herirte, o te gustan Los gritos? ¿Estás sordo? ¿Estás ciego? ¿O eres bizco De espíritu Y ves el alma humana Con tonos invertidos?"
+    },
+    {
+      "id": "s38-7",
+      "sceneId": "s38",
+      "text": "¡Oh Señor soñoliento! ¡Mira mi corazón Frío Como un membrillo Demasiado otoñal Que está podrido!"
+    },
+    {
+      "id": "s38-8",
+      "sceneId": "s38",
+      "text": "Si tu luz va a llegar Abre los ojos vivos Pero si continúas Dormido, Ven, Satanás errante, Sangriento peregrino, Ponme la Margarita Morena en los olivos Con las trenzas de noche De Estío, Que yo sabré encenderle Sus ojos pensativos Con mis besos manchados De lirios. Y oiré una tarde ciega Mi ¡Enrique! ¡Enrique! Lírico, Mientras todos mis sueños Se llenan de rocío. Aquí, Señor, te dejo Mi corazón antiguo, Voy a pedir prestado Otro nuevo a un amigo. Corazón con arroyos Y pinos. Corazón sin culebras Ni lirios. Robusto, con la gracia De un joven campesino, Que atraviesa de un salto El río."
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "*16 de julio de 1920*"
+    },
+    {
+      "id": "s39-2",
+      "sceneId": "s39",
+      "text": "A GABRIEL"
+    },
+    {
+      "id": "s39-3",
+      "sceneId": "s39",
+      "text": "El corazón, Que tenía en la escuela Donde estuvo pintada La cartilla primera, ¿Está en ti, Noche negra?"
+    },
+    {
+      "id": "s39-5",
+      "sceneId": "s39",
+      "text": "El primer beso Que supo a beso y fué Para mis labios niños Como la lluvia fresca, ¿Está en ti, Noche negra?"
+    },
+    {
+      "id": "s39-7",
+      "sceneId": "s39",
+      "text": "Mi primer verso. La niña de las trenzas Que miraba de frente, ¿Está en ti, Noche negra?"
+    },
+    {
+      "id": "s39-9",
+      "sceneId": "s39",
+      "text": "Pero mi corazón Roído de culebras, El que estuvo colgado Del árbol de la ciencia, ¿Está en ti, Noche negra?"
+    },
+    {
+      "id": "s39-10",
+      "sceneId": "s39",
+      "text": "(Caliente, caliente, Como el agua De la fuente.)"
+    },
+    {
+      "id": "s39-11",
+      "sceneId": "s39",
+      "text": "Mi amor errante, Castillo sin firmeza, De sombras enmohecidas, ¿Está en ti, Noche negra?"
+    },
+    {
+      "id": "s39-12",
+      "sceneId": "s39",
+      "text": "(Caliente, caliente, Como el agua De la fuente.)"
+    },
+    {
+      "id": "s39-13",
+      "sceneId": "s39",
+      "text": "¡Oh, gran dolor! Admites en tu cueva Nada más que la sombra. ¿Es cierto, Noche negra?"
+    },
+    {
+      "id": "s39-14",
+      "sceneId": "s39",
+      "text": "(Caliente, caliente, Como el agua De la fuente.)"
+    },
+    {
+      "id": "s39-15",
+      "sceneId": "s39",
+      "text": "¡Oh, corazón perdido! ¡Réquiem aeternam!"
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "*26 de julio de 1920*"
+    },
+    {
+      "id": "s40-2",
+      "sceneId": "s40",
+      "text": "En la agostada senda He visto al buen lagarto (Gota de cocodrilo) Meditando. Con su verde levita De abate del diablo, Su talante correcto Y su cuello planchado, Tiene un aire muy triste De viejo catedrático. ¡Esos ojos marchitos De artista fracasado Cómo miran la tarde Desmayada!"
+    },
+    {
+      "id": "s40-3",
+      "sceneId": "s40",
+      "text": "¿Es este su paseo Crepuscular, amigo? Usad bastón, ya estáis Muy viejo, Don Lagarto, Y los niños del pueblo Pueden daros un susto. ¿Qué buscáis en la senda, Filósofo cegato, Si el fantasma indeciso De la tarde agosteña Ha roto el horizonte?"
+    },
+    {
+      "id": "s40-4",
+      "sceneId": "s40",
+      "text": "¿Buscáis la azul limosna Del cielo moribundo? ¿Un céntimo de estrella? ¿O acaso Estudiásteis un libro De Lamartine, y os gustan Los trinos platerescos De los pájaros?"
+    },
+    {
+      "id": "s40-5",
+      "sceneId": "s40",
+      "text": "(Miras al sol poniente, Y tus ojos relucen, ¡Oh, dragón de las ranas!, Con un fulgor humano. Las góndolas sin remos De las ideas, cruzan El agua tenebrosa De tus iris quemados.)"
+    },
+    {
+      "id": "s40-6",
+      "sceneId": "s40",
+      "text": "¿Venís quizá en la busca De la bella lagarta, Verde como los trigos De Mayo, Como las cabelleras De las fuentes dormidas, Que os despreciaba, y luego Se fué de vuestro campo? ¡Oh, dulce idilio roto Sobre la fresca juncia! ¡Pero vivir! ¡qué diantre! Me habéis sido simpático. El lema de «me opongo A la serpiente» triunfa En esa gran papada De arzobispo cristiano."
+    },
+    {
+      "id": "s40-7",
+      "sceneId": "s40",
+      "text": "Ya se ha disuelto el sol En la copa del monte, Y enturbian el camino Los rebaños. Es hora de marcharse, Dejad la angosta senda Y no continuéis Meditando, Que lugar tendréis luego De mirar las estrellas Cuando os coman sin prisa Los gusanos."
+    },
+    {
+      "id": "s40-8",
+      "sceneId": "s40",
+      "text": "¡Volved a vuestra casa Bajo el pueblo de grillos! ¡Buenas noches, amigo Don Lagarto!"
+    },
+    {
+      "id": "s40-9",
+      "sceneId": "s40",
+      "text": "Ya está el campo sin gente, Los montes apagados Y el camino desierto; Sólo de cuando en cuando Canta un cuco en la umbría De los álamos."
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "*1920*"
+    },
+    {
+      "id": "s41-1",
+      "sceneId": "s41",
+      "text": "Las arañas Iban por los laureles."
+    },
+    {
+      "id": "s41-2",
+      "sceneId": "s41",
+      "text": "La casualidad Se va tornando en nieve, Y los años dormidos Ya se atreven A clavar los telares Del siempre."
+    },
+    {
+      "id": "s41-3",
+      "sceneId": "s41",
+      "text": "La Quietud hecha esfinge Se ríe de la Muerte Que canta melancólica En un grupo De lejanos cipreses."
+    },
+    {
+      "id": "s41-4",
+      "sceneId": "s41",
+      "text": "La yedra de las gotas Tapiza las paredes Empapadas de arcaicos Misereres."
+    },
+    {
+      "id": "s41-5",
+      "sceneId": "s41",
+      "text": "¡Oh, torre vieja! Llora Tus lágrimas mudéjares Sobre este grave patio Que no tiene fuente."
+    },
+    {
+      "id": "s41-6",
+      "sceneId": "s41",
+      "text": "Las arañas Iban por los laureles."
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "*1919*"
+    },
+    {
+      "id": "s42-1",
+      "sceneId": "s42",
+      "text": "Cantan los niños En la noche quieta: ¡Arroyo claro, Fuente serena!"
+    },
+    {
+      "id": "s42-2",
+      "sceneId": "s42",
+      "text": "LOS NIÑOS."
+    },
+    {
+      "id": "s42-3",
+      "sceneId": "s42",
+      "text": "¿Qué tiene tu divino Corazón en fiesta?"
+    },
+    {
+      "id": "s42-4",
+      "sceneId": "s42",
+      "text": "YO."
+    },
+    {
+      "id": "s42-5",
+      "sceneId": "s42",
+      "text": "Un doblar de campanas Perdidas en la niebla."
+    },
+    {
+      "id": "s42-6",
+      "sceneId": "s42",
+      "text": "LOS NIÑOS."
+    },
+    {
+      "id": "s42-7",
+      "sceneId": "s42",
+      "text": "Ya nos dejas cantando En la plazuela. ¡Arroyo claro, Fuente serena!"
+    },
+    {
+      "id": "s42-8",
+      "sceneId": "s42",
+      "text": "¿Qué tienes en tus manos De primavera?"
+    },
+    {
+      "id": "s42-9",
+      "sceneId": "s42",
+      "text": "YO."
+    },
+    {
+      "id": "s42-10",
+      "sceneId": "s42",
+      "text": "Una rosa de sangre Y una azucena."
+    },
+    {
+      "id": "s42-11",
+      "sceneId": "s42",
+      "text": "LOS NIÑOS."
+    },
+    {
+      "id": "s42-12",
+      "sceneId": "s42",
+      "text": "Mójalas en el agua De la canción añeja. ¡Arroyo claro, Fuente serena!"
+    },
+    {
+      "id": "s42-13",
+      "sceneId": "s42",
+      "text": "¿Qué sientes en tu boca Roja y sedienta?"
+    },
+    {
+      "id": "s42-14",
+      "sceneId": "s42",
+      "text": "YO."
+    },
+    {
+      "id": "s42-15",
+      "sceneId": "s42",
+      "text": "El sabor de los huesos De mi gran calavera."
+    },
+    {
+      "id": "s42-16",
+      "sceneId": "s42",
+      "text": "LOS NIÑOS."
+    },
+    {
+      "id": "s42-17",
+      "sceneId": "s42",
+      "text": "Bebe el agua tranquila De la canción añeja. ¡Arroyo claro, Fuente serena!"
+    },
+    {
+      "id": "s42-18",
+      "sceneId": "s42",
+      "text": "¿Por qué te vas tan lejos De la plazuela?"
+    },
+    {
+      "id": "s42-19",
+      "sceneId": "s42",
+      "text": "YO."
+    },
+    {
+      "id": "s42-20",
+      "sceneId": "s42",
+      "text": "¡Voy en busca de magos Y de princesas!"
+    },
+    {
+      "id": "s42-21",
+      "sceneId": "s42",
+      "text": "LOS NIÑOS."
+    },
+    {
+      "id": "s42-22",
+      "sceneId": "s42",
+      "text": "¿Quién te enseñó el camino De los poetas?"
+    },
+    {
+      "id": "s42-23",
+      "sceneId": "s42",
+      "text": "YO."
+    },
+    {
+      "id": "s42-24",
+      "sceneId": "s42",
+      "text": "La fuente y el arroyo De la canción añeja."
+    },
+    {
+      "id": "s42-25",
+      "sceneId": "s42",
+      "text": "LOS NIÑOS."
+    },
+    {
+      "id": "s42-26",
+      "sceneId": "s42",
+      "text": "¿Te vas lejos, muy lejos Del mar y de la tierra?"
+    },
+    {
+      "id": "s42-27",
+      "sceneId": "s42",
+      "text": "YO."
+    },
+    {
+      "id": "s42-28",
+      "sceneId": "s42",
+      "text": "Se ha llenado de luces Mi corazón de seda, De campanas perdidas, De lirios y de abejas. Y yo me iré muy lejos, Más allá de esas sierras, Más allá de los mares, Cerca de las estrellas, Para pedirle a Cristo Señor que me devuelva Mi alma antigua de niño, Madura de leyendas, Con el gorro de plumas Y el sable de madera."
+    },
+    {
+      "id": "s42-29",
+      "sceneId": "s42",
+      "text": "LOS NIÑOS."
+    },
+    {
+      "id": "s42-30",
+      "sceneId": "s42",
+      "text": "Ya nos dejas cantando En la plazuela, ¡Arroyo claro, Fuente serena!"
+    },
+    {
+      "id": "s42-31",
+      "sceneId": "s42",
+      "text": "Las pupilas enormes De las frondas resecas, Heridas por el viento, Lloran las hojas muertas."
+    },
+    {
+      "id": "s43-1",
+      "sceneId": "s43",
+      "text": "Oh, que dolor el tener Versos en la lejanía De la pasión, y el cerebro Todo manchado de tinta!"
+    },
+    {
+      "id": "s43-2",
+      "sceneId": "s43",
+      "text": "¡Oh, que dolor no tener La fantástica camisa Del hombre feliz: la piel --Alfombra del sol--curtida."
+    },
+    {
+      "id": "s43-3",
+      "sceneId": "s43",
+      "text": "(Alrededor de mis ojos Bandadas de letras giran.)"
+    },
+    {
+      "id": "s43-4",
+      "sceneId": "s43",
+      "text": "¡Oh, que dolor el dolor Antiguo de la poesía, Este dolor pegajoso Tan lejos del agua limpia!"
+    },
+    {
+      "id": "s43-5",
+      "sceneId": "s43",
+      "text": "¡Oh, dolor de lamentarse Por sorber la vena lírica! ¡Oh dolor de fuente ciega Y molino sin harina!"
+    },
+    {
+      "id": "s43-6",
+      "sceneId": "s43",
+      "text": "¡Oh, que dolor no tener Dolor y pasar la vida, Sobre la hierba incolora De la vereda indecisa!"
+    },
+    {
+      "id": "s43-7",
+      "sceneId": "s43",
+      "text": "¡Oh, el más profundo dolor, El dolor de la alegría. Reja que nos abre surcos Donde el llanto fructifica!"
+    },
+    {
+      "id": "s43-8",
+      "sceneId": "s43",
+      "text": "(Por un monte de papel Asoma la luna fría) ¡Oh dolor de la verdad! ¡Oh dolor de la mentira!"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "*1920*"
+    },
+    {
+      "id": "s44-1",
+      "sceneId": "s44",
+      "text": "El silencio redondo de la noche Sobre el pentágrama Del infinito."
+    },
+    {
+      "id": "s44-2",
+      "sceneId": "s44",
+      "text": "Yo me salgo desnudo a la calle, Maduro de versos Perdidos. Lo negro, acribillado Por el canto del grillo, Tiene ese fuego fatuo, Muerto, Del sonido. Esa luz musical Que percibe El espíritu."
+    },
+    {
+      "id": "s44-3",
+      "sceneId": "s44",
+      "text": "Los esqueletos de mil mariposas Duermen en mi recinto."
+    },
+    {
+      "id": "s44-4",
+      "sceneId": "s44",
+      "text": "Hay una juventud de brisas locas Sobre el río."
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "No conseguirá nunca Tu lanza Herir al horizonte. La montaña Es un escudo Que lo guarda."
+    },
+    {
+      "id": "s45-1",
+      "sceneId": "s45",
+      "text": "No sueñes con la sangre de la luna Y descansa. Pero deja camino, Que mis plantas Exploren la caricia De la rociada."
+    },
+    {
+      "id": "s45-2",
+      "sceneId": "s45",
+      "text": "¡Quiromántico enorme! ¿Conocerás las almas Por el débil tatuaje Que olvidan en tu espalda? Si eres un Flanmarión De las pisadas, ¡Cómo debes amar A los asnos que pasan Acariciando con ternura humilde Tu carne desgarrada! Ellos solos meditan donde puede Llegar tu enorme lanza. Ellos solos, que son Los Bhudas de la Fauna, Cuando viejos y heridos deletrean Tu libro sin palabras."
+    },
+    {
+      "id": "s45-3",
+      "sceneId": "s45",
+      "text": "¡Cuánta melancolía Tienes entre las casas Del poblado! ¡Qué clara Es tu virtud! Aguantas Cuatro carros dormidos, Dos acacias, Y un pozo del antaño Que no tiene agua."
+    },
+    {
+      "id": "s45-4",
+      "sceneId": "s45",
+      "text": "Dando vueltas al mundo, No encontrarás posada. No tendrás camposanto Ni mortaja, Ni el aire del amor renovará Tu substancia."
+    },
+    {
+      "id": "s45-5",
+      "sceneId": "s45",
+      "text": "Pero sal de los campos Y en la negra distancia De lo eterno, si tallas La sombra con tu lima Blanca ¡oh, camino! ¡Pasarás por el puente De Santa Clara!"
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "*1920*"
+    },
+    {
+      "id": "s46-1",
+      "sceneId": "s46",
+      "text": "A ADOLFO SALAZAR"
+    },
+    {
+      "id": "s46-2",
+      "sceneId": "s46",
+      "text": "Ha roto la armonía De la noche profunda, El calderón helado y soñoliento De la media luna."
+    },
+    {
+      "id": "s46-3",
+      "sceneId": "s46",
+      "text": "Las acequias protestan sordamente Arropadas con juncias, Y las ranas, muecines de la sombra, Se han quedado mudas."
+    },
+    {
+      "id": "s46-4",
+      "sceneId": "s46",
+      "text": "En la vieja taberna del poblado Cesó la triste música, Y ha puesto la sordina a su aristón La estrella más antigua."
+    },
+    {
+      "id": "s46-5",
+      "sceneId": "s46",
+      "text": "El viento se ha sentado en los torcales De la montaña obscura, Y un chopo solitario--el Pitágoras De la casta llanura-- Quiere dar con su mano centenaria, Un cachete a la luna."
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "*1920*"
+    },
+    {
+      "id": "s47-1",
+      "sceneId": "s47",
+      "text": "Es la granada olorosa Un cielo cristalizado. (Cada grano es una estrella Cada velo es un ocaso) Cielo seco y comprimido Por la garra de los años."
+    },
+    {
+      "id": "s47-2",
+      "sceneId": "s47",
+      "text": "La granada es como un seno Viejo y apergaminado, Cuyo pezón se hizo estrella Para iluminar el campo."
+    },
+    {
+      "id": "s47-3",
+      "sceneId": "s47",
+      "text": "Es colmena diminuta Con panal ensangrentado Pues con bocas de mujeres Sus abejas la formaron. Por eso al estallar, ríe Con purpuras de mil labios..."
+    },
+    {
+      "id": "s47-4",
+      "sceneId": "s47",
+      "text": "La granada es corazón Que late sobre el sembrado, Un corazón desdeñoso Donde no pican los pájaros, Un corazón que por fuera Es duro como el humano, Pero da al que lo traspasa Olor y sangre de mayo. La granada es el tesoro Del viejo gnomo del prado, El que habló con niña Rosa, En el bosque solitario, Aquél de la blanca barba Y del traje colorado. Es el tesoro que aún guardan Las verdes hojas del árbol. Arca de piedras preciosas En entraña de oro vago."
+    },
+    {
+      "id": "s47-5",
+      "sceneId": "s47",
+      "text": "La espiga es el pan. Es Cristo En vida y muerte cuajado."
+    },
+    {
+      "id": "s47-6",
+      "sceneId": "s47",
+      "text": "El olivo es la firmeza De la fuerza y el trabajo."
+    },
+    {
+      "id": "s47-7",
+      "sceneId": "s47",
+      "text": "La manzana es lo carnal, Fruta esfinge del pecado, Gota de siglos que guarda De Satanás el contacto."
+    },
+    {
+      "id": "s47-8",
+      "sceneId": "s47",
+      "text": "La naranja es la tristeza Del azahar profanado, Pues se torna fuego y oro Lo que antes fué puro y blanco."
+    },
+    {
+      "id": "s47-9",
+      "sceneId": "s47",
+      "text": "Las vides son la lujuria Que se cuaja en el verano, De las que la iglesia saca Con bendición, licor santo."
+    },
+    {
+      "id": "s47-10",
+      "sceneId": "s47",
+      "text": "Las castañas son la paz Del hogar. Cosas de antaño. Crepitar de leños viejos, Peregrinos descarriados."
+    },
+    {
+      "id": "s47-11",
+      "sceneId": "s47",
+      "text": "La bellota es la serena Poesía de lo rancio, Y el membrillo de oro débil La limpieza de lo sano."
+    },
+    {
+      "id": "s47-12",
+      "sceneId": "s47",
+      "text": "Más la granada es la sangre, Sangre del cielo sagrado, Sangre de la tierra herida Por la aguja del regato. Sangre del viento que viene Del rudo monte arañado. Sangre de la mar tranquila, Sangre del dormido lago. La granada es la prehistoria De la sangre que llevamos, La idea de sangre, encerrada En glóbulo duro y agrio, Que tiene una vaga forma De corazón y de cráneo."
+    },
+    {
+      "id": "s47-13",
+      "sceneId": "s47",
+      "text": "¡Oh granada abierta!, que eres Una llama sobre el árbol, Hermana en carne de Venus, Risa del huerto oreado. Te cercan las mariposas Creyéndote sol parado, Y por miedo de quemarse Huyen de ti los gusanos."
+    },
+    {
+      "id": "s47-14",
+      "sceneId": "s47",
+      "text": "Porque eres luz, de la vida, Hembra de las frutas. Claro Lucero de la floresta Del arroyo enamorado."
+    },
+    {
+      "id": "s47-15",
+      "sceneId": "s47",
+      "text": "¡Quién fuera como tú, fruta, Todo pasión sobre el campo!"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "*1920*"
+    },
+    {
+      "id": "s48-1",
+      "sceneId": "s48",
+      "text": "¡Chopo viejo! Has caído En el espejo Del remanso dormido, Abatiendo tu frente Ante el poniente. No fué el vendaval ronco El que rompió tu tronco, Ni fué el hachazo grave Del leñador, que sabe Has de volver A nacer."
+    },
+    {
+      "id": "s48-2",
+      "sceneId": "s48",
+      "text": "Fué tu espíritu fuerte El que llamó a la muerte, Al hallarte sin nidos, olvidado De los chopos infantes del prado. Fué que estabas sediento De pensamiento, Y tu enorme cabeza centenaria, Solitaria Escuchaba los lejanos Cantos de tus hermanos."
+    },
+    {
+      "id": "s48-3",
+      "sceneId": "s48",
+      "text": "En tu cuerpo guardabas Las lavas De tu pasión, Y en tu corazón, El semen sin futuro de Pegaso. La terrible simiente De un amor inocente Por el sol del ocaso."
+    },
+    {
+      "id": "s48-4",
+      "sceneId": "s48",
+      "text": "¡Qué amargura tan honda Para el paisaje, El héroe de la fronda Sin ramaje!"
+    },
+    {
+      "id": "s48-5",
+      "sceneId": "s48",
+      "text": "Ya no serás la cuna De la luna, Ni la mágica risa De la brisa, Ni el bastón de un lucero Caballero. No tornará la primavera De tu vida, Ni verás la sementera Florecida. Serás nidal de ranas Y de hormigas. Tendrás por verdes canas Las ortigas, Y un día la corriente Sonriente Llevará tu corteza Con tristeza."
+    },
+    {
+      "id": "s48-6",
+      "sceneId": "s48",
+      "text": "¡Chopo viejo! Has caído En el espejo Del remanso dormido. Yo te vi descender En el atardecer, Y escribo tu elegía, Que es la mía."
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "*1920*"
+    },
+    {
+      "id": "s49-1",
+      "sceneId": "s49",
+      "text": "El cielo es de ceniza. Los árboles son blancos, Y son negros carbones Los rastrojos quemados. Tiene sangre reseca La herida del Ocaso, Y el papel incoloro Del monte, está arrugado. El polvo del camino Se esconde en los barrancos. Están las fuentes turbias Y quietos los remansos. Suena en un gris rojizo La esquila del rebaño, Y la noria materna Acabó su rosario."
+    },
+    {
+      "id": "s49-2",
+      "sceneId": "s49",
+      "text": "El cielo es de ceniza Los árboles son blancos."
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "*1920*"
+    },
+    {
+      "id": "s50-1",
+      "sceneId": "s50",
+      "text": "A EMILIO PRADOS (CAZADOR DE NUBES)"
+    },
+    {
+      "id": "s50-2",
+      "sceneId": "s50",
+      "text": "El mar, Sonríe a lo lejos. Dientes de espuma Labios de cielo."
+    },
+    {
+      "id": "s50-3",
+      "sceneId": "s50",
+      "text": "¿Qué vendes; oh joven turbia Con los senos al aire?"
+    },
+    {
+      "id": "s50-4",
+      "sceneId": "s50",
+      "text": "--Vendo señor, el agua De los mares.--"
+    },
+    {
+      "id": "s50-5",
+      "sceneId": "s50",
+      "text": "¿Qué llevas, oh negro joven, Mezclado con tu sangre?"
+    },
+    {
+      "id": "s50-6",
+      "sceneId": "s50",
+      "text": "--Llevo señor el agua De los mares.--"
+    },
+    {
+      "id": "s50-7",
+      "sceneId": "s50",
+      "text": "¿Esas lágrimas salobres De dónde vienen, madre?"
+    },
+    {
+      "id": "s50-8",
+      "sceneId": "s50",
+      "text": "--Lloro señor, el agua De los mares.--"
+    },
+    {
+      "id": "s50-9",
+      "sceneId": "s50",
+      "text": "¿Corazón; y esta amargura Seria, de dónde nace?"
+    },
+    {
+      "id": "s50-10",
+      "sceneId": "s50",
+      "text": "--¡Amarga mucho el agua De los mares!--"
+    },
+    {
+      "id": "s50-11",
+      "sceneId": "s50",
+      "text": "El mar Sonríe a lo lejos. Dientes de espuma Labios de cielo."
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "*1919*"
+    },
+    {
+      "id": "s51-1",
+      "sceneId": "s51",
+      "text": "¡Árboles! ¿Habéis sido flechas Caidas del azul? ¿Qué terribles guerreros os lanzaron? ¿Han sido las estrellas?"
+    },
+    {
+      "id": "s51-2",
+      "sceneId": "s51",
+      "text": "Vuestras músicas vienen del alma de los pájaros, De los ojos de Dios, De la pasión perfecta. ¡Árboles! ¿Conocerán vuestras raíces toscas Mi corazón en tierra?"
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "*1919*"
+    },
+    {
+      "id": "s52-1",
+      "sceneId": "s52",
+      "text": "La luna tiene dientes de marfil. ¡Qué vieja y triste asoma! Están los cauces secos, Los campos sin verdores Y los árboles mustios Sin nidos y sin hojas. Doña Muerte, arrugada, Pasea por saurales Con su absurdo cortejo De ilusiones remotas. Va vendiendo colores De cera y de tormenta Como un hada de cuento Mala y enredadora."
+    },
+    {
+      "id": "s52-2",
+      "sceneId": "s52",
+      "text": "La luna le ha comprado Pinturas a la Muerte. En esta noche turbia ¡Está la luna loca!"
+    },
+    {
+      "id": "s52-3",
+      "sceneId": "s52",
+      "text": "Yo mientras tanto pongo En mi pecho sombrío Una feria sin músicas Con las tiendas de sombra."
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "*1919*"
+    },
+    {
+      "id": "s53-1",
+      "sceneId": "s53",
+      "text": "Yo te miré a los ojos Cuando era niño y bueno. Tus manos me rozaron Y me distes un beso."
+    },
+    {
+      "id": "s53-2",
+      "sceneId": "s53",
+      "text": "(Los relojes llevan la misma cadencia, Y las noches tienen las mismas estrellas.)"
+    },
+    {
+      "id": "s53-3",
+      "sceneId": "s53",
+      "text": "Y se abrió mi corazón Como una flor bajo el cielo, Los pétalos de lujuria Y los estambres de sueño."
+    },
+    {
+      "id": "s53-4",
+      "sceneId": "s53",
+      "text": "(Los relojes llevan la misma cadencia, Y las noches tienen las mismas estrellas.)"
+    },
+    {
+      "id": "s53-5",
+      "sceneId": "s53",
+      "text": "En mi cuarto sollozaba Como el príncipe del cuento Por Estrellita de oro Que se fué de los torneos."
+    },
+    {
+      "id": "s53-6",
+      "sceneId": "s53",
+      "text": "(Los relojes llevan la misma cadencia, Y las noches tienen las mismas estrellas.)"
+    },
+    {
+      "id": "s53-7",
+      "sceneId": "s53",
+      "text": "Yo me alejé de tu lado Queriéndote sin saberlo, No sé como son tus ojos Tus manos ni tus cabellos. Solo me queda en la frente La mariposa del beso."
+    },
+    {
+      "id": "s53-8",
+      "sceneId": "s53",
+      "text": "(Los relojes llevan la misma cadencia, Y las noches tienen las mismas estrellas.)"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "*1920*"
+    },
+    {
+      "id": "s54-1",
+      "sceneId": "s54",
+      "text": "Solo tu corazón caliente, Y nada más."
+    },
+    {
+      "id": "s54-2",
+      "sceneId": "s54",
+      "text": "Mi paraíso un campo Sin ruiseñor Ni liras, Con un río discreto Y una fuentecilla."
+    },
+    {
+      "id": "s54-3",
+      "sceneId": "s54",
+      "text": "Sin la espuela del viento Sobre la fronda, Ni la estrella que quiere Ser hoja."
+    },
+    {
+      "id": "s54-4",
+      "sceneId": "s54",
+      "text": "Una enorme luz Que fuera Luciernaga De otra, En un campo de Miradas rotas."
+    },
+    {
+      "id": "s54-5",
+      "sceneId": "s54",
+      "text": "Un reposo claro Y allí nuestros besos, Lunares sonoros Del eco, Se abrirían muy lejos."
+    },
+    {
+      "id": "s54-6",
+      "sceneId": "s54",
+      "text": "Y tu corazón caliente, Nada más."
+    },
+    {
+      "id": "s55-1",
+      "sceneId": "s55",
+      "text": "Los álamos de plata Se inclinan sobre el agua. Ellos todo lo saben pero nunca hablarán. El lirio de la fuente No grita su tristeza. ¡Todo es más digno que la humanidad!"
+    },
+    {
+      "id": "s55-2",
+      "sceneId": "s55",
+      "text": "La ciencia del silencio frente al cielo estrellado, La posee la flor y el insecto no más. La ciencia de los cantos por los cantos, la tienen Los bosques rumorosos Y las aguas del mar."
+    },
+    {
+      "id": "s55-3",
+      "sceneId": "s55",
+      "text": "El silencio profundo de la vida en la tierra, Nos lo enseña la rosa Abierta en el rosal."
+    },
+    {
+      "id": "s55-4",
+      "sceneId": "s55",
+      "text": "¡Hay que dar el perfume Que encierran nuestras almas! Hay que ser todo cantos, Todo luz y bondad. ¡Hay que abrirse del todo Frente a la noche negra, Para que nos llenemos de rocío inmortal!"
+    },
+    {
+      "id": "s55-5",
+      "sceneId": "s55",
+      "text": "¡Hay que acostar al cuerpo Dentro del alma inquieta! Hay que cegar los ojos con luz de más allá. Tenemos que asomarnos A la sombra del pecho, Y arrancar las estrellas que nos puso Satán."
+    },
+    {
+      "id": "s55-6",
+      "sceneId": "s55",
+      "text": "Hay que ser como el árbol Que siempre está rezando, Como el agua del cauce Fija en la eternidad."
+    },
+    {
+      "id": "s55-7",
+      "sceneId": "s55",
+      "text": "¡Hay que arañarse el alma con garras de tristeza Para que entren las llamas Del horizonte astral!"
+    },
+    {
+      "id": "s55-8",
+      "sceneId": "s55",
+      "text": "Brotaría en la sombra del amor carcomido, Una fuente de aurora Tranquila y maternal. Desaparecerían ciudades en el viento Y a Dios en una nube Veríamos pasar."
+    },
+    {
+      "id": "s56-1",
+      "sceneId": "s56",
+      "text": "El trigal se ha entregado a la muerte. Ya las hoces cortan las espigas. Cabecean los chopos hablando Con el alma sutil de la brisa."
+    },
+    {
+      "id": "s56-2",
+      "sceneId": "s56",
+      "text": "El trigal sólo quiere silencio. Se cuajó con el sol, y suspira Por el amplio elemento en que moran Los ensueños despiertos. El día, Ya maduro de luz y sonido, Por los montes azules declina."
+    },
+    {
+      "id": "s56-3",
+      "sceneId": "s56",
+      "text": "¿Qué misterioso pensamiento Conmueve a las espigas? ¿Qué ritmo de tristeza soñadora Los trigales agita?..."
+    },
+    {
+      "id": "s56-4",
+      "sceneId": "s56",
+      "text": "¡Parecen las espigas viejos pájaros Que no pueden volar! Son cabecitas, Que tienen el cerebro de oro puro Y expresiones tranquilas."
+    },
+    {
+      "id": "s56-5",
+      "sceneId": "s56",
+      "text": "Todas piensan lo mismo, Todas llevan Un secreto profundo que meditan. Arrancan a la tierra su oro vivo Y cual dulces abejas del sol, liban El rayo abrasador con que se visten Para formar el alma de la harina."
+    },
+    {
+      "id": "s56-6",
+      "sceneId": "s56",
+      "text": "¡Oh, qué alegre tristeza me causais Dulcísimas espigas! Venís de las edades más profundas, Cantásteis en La Biblia, Y tocáis cuando os rozan los silencios Un concierto de liras."
+    },
+    {
+      "id": "s56-7",
+      "sceneId": "s56",
+      "text": "Brotáis para alimento de los hombres, ¡Pero mirad las blancas margaritas Y los lirios que nacen *porque sí*! ¡Momias de oro sobre las campiñas! La flor silvestre nace para el Sueño Y vosotras nacéis para la vida."
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "FRAGMENTO"
+    },
+    {
+      "id": "s57-1",
+      "sceneId": "s57",
+      "text": "*3 de enero de 1919*"
+    },
+    {
+      "id": "s57-2",
+      "sceneId": "s57",
+      "text": "A JOSÉ MORA"
+    },
+    {
+      "id": "s57-3",
+      "sceneId": "s57",
+      "text": "Ha besado la lluvia al jardín provinciano Dejando emocionantes cadencias en las hojas. El aroma sereno de la tierra mojada, Inunda al corazón de tristeza remota."
+    },
+    {
+      "id": "s57-4",
+      "sceneId": "s57",
+      "text": "Se rasgan nubes grises en el mudo horizonte. Sobre el agua dormida de la fuente, las gotas Se clavan, levantando claras perlas de espuma. Fuegos fatuos, que apaga el temblor de las ondas."
+    },
+    {
+      "id": "s57-5",
+      "sceneId": "s57",
+      "text": "La pena de la tarde estremece a mi pena. Se ha llenado el jardín de ternura monótona. ¿Todo mi sufrimiento se ha perder, Dios mío, Como se pierde el dulce sonido de las frondas?"
+    },
+    {
+      "id": "s57-6",
+      "sceneId": "s57",
+      "text": "¿Todo el eco de estrellas que guardo sobre el alma Será luz que me ayude a luchar con mi forma? ¿Y el alma verdadera se despierta en la muerte? ¿Y esto que ahora pensamos se lo traga la sombra?"
+    },
+    {
+      "id": "s57-7",
+      "sceneId": "s57",
+      "text": "¡Oh, qué tranquilidad del jardín con la lluvia! Todo el paisaje casto mi corazón transforma, En un ruido de ideas humildes y apenadas Que pone en mis entrañas un batir de palomas."
+    },
+    {
+      "id": "s57-8",
+      "sceneId": "s57",
+      "text": "Sale el sol. El jardín desangra en amarillo. Late sobre el ambiente una pena que ahoga. Yo siento la nostalgia de mi infancia intranquila, Mi ilusión de ser grande en el amor, las horas Pasadas como ésta contemplando la lluvia Con tristeza nativa. Caperucita roja Iba por el sendero... Se fueron mis historias, hoy medito, confuso, Ante la fuente turbia que del amor me brota."
+    },
+    {
+      "id": "s57-9",
+      "sceneId": "s57",
+      "text": "¿Todo mi sufrimiento se ha de perder, Dios mío, Como se pierde el dulce sonido de las frondas?"
+    },
+    {
+      "id": "s57-10",
+      "sceneId": "s57",
+      "text": "Vuelve a llover. El viento va trayendo a las sombras."
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "FRAGMENTO"
+    },
+    {
+      "id": "s58-1",
+      "sceneId": "s58",
+      "text": "*1919*"
+    },
+    {
+      "id": "s58-2",
+      "sceneId": "s58",
+      "text": "La sombra se ha dormido en la pradera. Los manantiales cantan."
+    },
+    {
+      "id": "s58-3",
+      "sceneId": "s58",
+      "text": "Frente al ancho crepúsculo de invierno Mi corazón soñaba. ¿Quién pudiera entender los manantiales, El secreto del agua Recién nacida. Ese cantar oculto A todas las miradas Del espíritu. Dulce melodía Más allá de las almas?..."
+    },
+    {
+      "id": "s58-4",
+      "sceneId": "s58",
+      "text": "Luchando bajo el peso de la sombra Un manantial cantaba. Yo me acerqué para escuchar su canto Pero mi corazón no entiende nada."
+    },
+    {
+      "id": "s58-5",
+      "sceneId": "s58",
+      "text": "Era un brotar de estrellas invisibles Sobre la hierba casta Nacimiento del Verbo de la tierra Por un sexo sin mancha."
+    },
+    {
+      "id": "s58-6",
+      "sceneId": "s58",
+      "text": "Mi chopo centenario de la vega Sus hojas meneaba Y eran las hojas trémulas de ocaso Como estrellas de plata. El resumen de un cielo de verano Era el gran chopo. Mansas Y turbias de penumbra yo sentía Las canciones del agua."
+    },
+    {
+      "id": "s58-7",
+      "sceneId": "s58",
+      "text": "¿Qué alfabeto de auroras ha compuesto Sus ocultas palabras? ¿Qué labios las pronuncian? ¿Y qué dicen A la estrella lejana? ¡Mi corazón es malo, Señor! Siento en mi carne La inaplacable brasa Del pecado. Mis mares interiores Se quedaron sin playas. Tu faro se apagó. ¡Ya los alumbra Mi corazón de llamas! Pero el negro secreto de la noche Y el secreto del agua ¿Son misterios tan solo para el ojo De la conciencia humana? ¿La niebla del misterio no estremece Al árbol, el insecto y la montaña? ¿El terror de la sombra no lo sienten Las piedras y las plantas? ¿Es sonido tan solo esta voz mía? ¿Y el casto manantial no dice nada?"
+    },
+    {
+      "id": "s58-8",
+      "sceneId": "s58",
+      "text": "Más yo siento en el agua Algo que me estremece... como un aire Que agita los ramajes de mi alma."
+    },
+    {
+      "id": "s58-9",
+      "sceneId": "s58",
+      "text": "¡Sé árbol! (Dijo una voz en la distancia.) Y hubo un torrente de luceros Sobre el cielo sin mancha."
+    },
+    {
+      "id": "s58-10",
+      "sceneId": "s58",
+      "text": "Yo me incrusté en el chopo centenario Con tristeza y con ansia Cual Dafne varonil que huye miedosa De un Apolo de sombra y de nostalgia. Mi espíritu fundióse con las hojas Y fué mi sangre savia. En untosa resina convirtióse La fuente de mis lágrimas. El corazón se fué con las raíces, Y mi pasión humana, Haciendo heridas en la ruda carne Fugaz me abandonaba."
+    },
+    {
+      "id": "s58-11",
+      "sceneId": "s58",
+      "text": "Frente al ancho crepúsculo de invierno Yo torcía las ramas Gozando de los ritmos ignorados Entre la brisa helada. Sentí sobre mis brazos dulces nidos, A cariciar de alas, Y sentí mil abejas campesinas Que en mis dedos zumbaban. ¡Tenía una colmena de oro vivo En las viejas entrañas! El paisaje y la tierra se perdieron Sólo el cielo quedaba, Y escuché el débil ruido de los astros Y el respirar de las montañas."
+    },
+    {
+      "id": "s58-12",
+      "sceneId": "s58",
+      "text": "¿No podrán comprender mis dulces hojas El secreto del agua? ¿Llegarán mis raíces a los reinos Donde nace y se cuaja? Encliné mis ramajes hacia el cielo Que las ondas copiaban, Mojé las hojas en el cristalino Diamante azul que canta, Y sentí borbotar los manantiales Como de humano yo los escuchara. Era el mismo fluir lleno de música Y de ciencia ignorada."
+    },
+    {
+      "id": "s58-13",
+      "sceneId": "s58",
+      "text": "Al levantar mis brazos gigantescos Frente al azul, estaba Lleno de niebla espesa, de rocío Y de luz marchitada."
+    },
+    {
+      "id": "s58-14",
+      "sceneId": "s58",
+      "text": "Tuve la gran tristeza vegetal, El amor a las alas, Para poder lanzarse con los vientos A las estrellas blancas. Pero mi corazón en las raíces Triste me murmuraba: Si no comprendes a los manantiales ¡Muere y troncha tus ramas!"
+    },
+    {
+      "id": "s58-15",
+      "sceneId": "s58",
+      "text": "¡Señor, arráncame del suelo! ¡Dame oídos Que entiendan a las aguas! Dame un voz que por amor arranque Su secreto a las ondas encantadas; Para encender tu faro sólo pido Aceite de palabras."
+    },
+    {
+      "id": "s58-16",
+      "sceneId": "s58",
+      "text": "¡Sé ruiseñor! dice una voz perdida En la muerta distancia, Y un torrente de cálidos luceros Brotó del seno que la noche guarda. ........................... ..........................."
+    },
+    {
+      "id": "s59-1",
+      "sceneId": "s59",
+      "text": "El mar es El Lucifer del azul. El cielo caído Por querer ser la luz."
+    },
+    {
+      "id": "s59-2",
+      "sceneId": "s59",
+      "text": "¡Pobre mar condenado A eterno movimiento, Habiendo antes estado Quieto en el firmamento!"
+    },
+    {
+      "id": "s59-3",
+      "sceneId": "s59",
+      "text": "Pero de tu amargura Te redimió el amor. Pariste a Venus pura, Y quedóse tu hondura Virgen y sin dolor."
+    },
+    {
+      "id": "s59-4",
+      "sceneId": "s59",
+      "text": "Tus tristezas son bellas, Mar de espasmos gloriosos. Mas hoy en vez de estrellas Tienes pulpos verdosos."
+    },
+    {
+      "id": "s59-5",
+      "sceneId": "s59",
+      "text": "Aguanta tu sufrir Formidable Satán. Cristo anduvo por ti, Mas también lo hizo Pan."
+    },
+    {
+      "id": "s59-6",
+      "sceneId": "s59",
+      "text": "La estrella Venus es La harmonía del mundo. ¡Calle el Eclesiastés! Venus es lo profundo Del alma..."
+    },
+    {
+      "id": "s59-7",
+      "sceneId": "s59",
+      "text": "... Y el hombre miserable Es un ángel caído. La tierra es el probable Paraíso perdido."
+    },
+    {
+      "id": "s60-1",
+      "sceneId": "s60",
+      "text": "Iba yo montado sobre Un macho cabrío. El abuelo me habló Y me dijo: --Ese es tu camino. ¡Es ese!, gritó mi sombra, Disfrazada de mendigo. ¡Es aquel de oro, dijeron Mis vestidos! Un gran cisne me guiñó, Diciendo: ¡vente conmigo! Y una serpiente mordía Mi sayal de peregrino."
+    },
+    {
+      "id": "s60-2",
+      "sceneId": "s60",
+      "text": "Mirando al cielo, pensaba: Yo no tengo camino. Las rosas del fin serán Como las del principio. En niebla se convierte La carne y el rocío."
+    },
+    {
+      "id": "s60-3",
+      "sceneId": "s60",
+      "text": "Mi caballo fantástico me lleva Por un campo rojizo. ¡Déjame!, clamó, llorando, Mi corazón pensativo. Yo lo abandoné en la tierra, Lleno de tristeza. Vino La noche, llena de arrugas Y de sombras."
+    },
+    {
+      "id": "s60-4",
+      "sceneId": "s60",
+      "text": "Alumbran el camino, Los ojos luminosos y azulados De mi macho cabrío."
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "*1919*"
+    },
+    {
+      "id": "s61-1",
+      "sceneId": "s61",
+      "text": "¡Una golondrina vuela Hacia muy lejos!..."
+    },
+    {
+      "id": "s61-2",
+      "sceneId": "s61",
+      "text": "Hay floraciones de rocío Sobre mi sueño, Y mi corazón da vueltas, Lleno de tedio, Como un «tío vivo» en que la Muerte Pasea a sus hijuelos. ¡Quisiera en estos árboles Atar al tiempo Con un cable de noche negra, Y pintar luego Con mi sangre las riberas Pálidas de mis recuerdos. ¿Cuántos hijos tiene la Muerte? ¡Todos están en mi pecho!"
+    },
+    {
+      "id": "s61-3",
+      "sceneId": "s61",
+      "text": "¡Una golondrina viene De muy lejos!"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "*1919*"
+    },
+    {
+      "id": "s62-1",
+      "sceneId": "s62",
+      "text": "Bajo tu casta sombra, encina vieja, Quiero sondar la fuente de mi vida Y sacar de los fangos de mi sombra Las esmeraldas líricas."
+    },
+    {
+      "id": "s62-2",
+      "sceneId": "s62",
+      "text": "Echo mis redes sobre el agua turbia Y las saco vacías. ¡Más abajo del cieno tenebroso Están mis pedrerías!"
+    },
+    {
+      "id": "s62-3",
+      "sceneId": "s62",
+      "text": "¡Hunde en mi pecho tus ramajes santos!, ¡Oh solitaria encina!, Y deja en mi sub-alma Tus secretos y tu pasión tranquila."
+    },
+    {
+      "id": "s62-4",
+      "sceneId": "s62",
+      "text": "Esta tristeza juvenil se pasa, ¡Ya lo sé! La alegría Otra vez dejará sus guirnaldas Sobre mi frente herida, Aunque nunca mis redes pescarán La oculta pedrería De tristeza inconsciente que reluce Al fondo de mi vida."
+    },
+    {
+      "id": "s62-5",
+      "sceneId": "s62",
+      "text": "Pero mi gran dolor trascendental Es tu dolor, encina. Es el mismo dolor de las estrellas Y de la flor marchita."
+    },
+    {
+      "id": "s62-6",
+      "sceneId": "s62",
+      "text": "Mis lágrimas resbalan a la tierra Y, como tus resinas, Corren sobre las aguas del gran cauce Que va a la noche fría. Y nosotros también resbalaremos, Yo con mis pedrerías, Y tú plenas las ramas de invisibles Bellotas matafísicas."
+    },
+    {
+      "id": "s62-7",
+      "sceneId": "s62",
+      "text": "No me abandones nunca en mis pesares, Esquelética amiga. Cántame con tu boca vieja y casta Una canción antigua, Con palabras de tierra entrelazadas En la azul melodía."
+    },
+    {
+      "id": "s62-8",
+      "sceneId": "s62",
+      "text": "Vuelvo otra vez a echar las redes sobre La fuente de mi vida, Redes hechas con hilos de esperanza, Nudos de poesía, Y saco piedras falsas entre un cieno De pasiones dormidas."
+    },
+    {
+      "id": "s62-9",
+      "sceneId": "s62",
+      "text": "Con el sol del otoño toda el agua De mi fontana vibra, Y noto que sacando sus raíces Huye de mí la encina."
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "*1919*"
+    },
+    {
+      "id": "s63-1",
+      "sceneId": "s63",
+      "text": "A PEPE CIENFUEGOS"
+    },
+    {
+      "id": "s63-2",
+      "sceneId": "s63",
+      "text": "Por el horizonte confuso y doliente Venía la noche preñada de estrellas. Yo, como el barbudo mago de los cuentos, Sabía lenguajes de flores y piedras."
+    },
+    {
+      "id": "s63-3",
+      "sceneId": "s63",
+      "text": "Aprendí secretos de melancolía, Dichos por cipreses, ortigas y yedras; Supe del ensueño por boca del nardo, Canté con los lirios canciones serenas."
+    },
+    {
+      "id": "s63-4",
+      "sceneId": "s63",
+      "text": "En el bosque antiguo, lleno de negrura, Todos me mostraban sus almas cual eran: El pinar, borracho de aroma y sonido; Los olivos viejos, cargados de ciencia; Los álamos muertos, nidales de hormigas; El musgo, nevado de blancas violetas."
+    },
+    {
+      "id": "s63-5",
+      "sceneId": "s63",
+      "text": "Todo hablaba dulce a mi corazón Temblando en los hilos de sonora seda Con que el agua envuelve las cosas paradas Como telaraña de harmonía eterna."
+    },
+    {
+      "id": "s63-6",
+      "sceneId": "s63",
+      "text": "Las rosas estaban soñando en la lira, Tejen las encinas oros de leyendas, Y entre la tristeza viril de los robles Dicen los enebros temores de aldea."
+    },
+    {
+      "id": "s63-7",
+      "sceneId": "s63",
+      "text": "Yo comprendo toda la pasión del bosque: Ritmo de la hoja, ritmo de la estrella. Mas decidme, ¡oh cedros!, si mi corazón Dormirá en los brazos de la luz perfecta."
+    },
+    {
+      "id": "s63-8",
+      "sceneId": "s63",
+      "text": "Conozco la lira que presientes, rosa; Formé su cordaje con mi vida muerta. ¡Dime en qué remanso podré abandonarla Como se abandonan las pasiones viejas!"
+    },
+    {
+      "id": "s63-9",
+      "sceneId": "s63",
+      "text": "¡Conozco el misterio que cantas, ciprés; Soy hermano tuyo en noche y en pena; Tenemos la entraña cuajada de nidos, Tú de ruiseñores y yo de tristezas!"
+    },
+    {
+      "id": "s63-10",
+      "sceneId": "s63",
+      "text": "¡Conozco tu encanto sin fin, padre olivo, Al darnos la sangre que extraes de la Tierra; Como tú, yo extraigo con mi sentimiento El óleo bendito Que tiene la idea!"
+    },
+    {
+      "id": "s63-11",
+      "sceneId": "s63",
+      "text": "Todos me abrumáis con vuestras canciones; Yo sólo os pregunto por la mía incierta; Ninguno queréis sofocar las ansias De este fuego casto Que el pecho me quema."
+    },
+    {
+      "id": "s63-12",
+      "sceneId": "s63",
+      "text": "¡Oh laurel divino, de alma inaccesible, Siempre silencioso, Lleno de nobleza! ¡Vierte en mis oídos tu historia divina, Tu sabiduría profunda y sincera!"
+    },
+    {
+      "id": "s63-13",
+      "sceneId": "s63",
+      "text": "¡Árbol que produces frutos de silencio, Maestro de besos y mago de orquestas, Formado del cuerpo rosado de Dafne Con savia potente de Apolo en tus venas!"
+    },
+    {
+      "id": "s63-14",
+      "sceneId": "s63",
+      "text": "¡Oh gran sacerdote del saber antiguo! ¡Oh mudo solemne cerrado a las quejas! ¡Todos tus hermanos del bosque me hablan; Sólo tú, severo, mi canción desprecias!"
+    },
+    {
+      "id": "s63-15",
+      "sceneId": "s63",
+      "text": "Acaso, ¡oh maestro del ritmo!, medites Lo inútil del triste llorar del poeta. Acaso tus hojas, manchadas de luna, Pierdan la ilusión de la primavera."
+    },
+    {
+      "id": "s63-16",
+      "sceneId": "s63",
+      "text": "La dulzura tenue del anochecer, Cual negro rocío, tapizó la senda, Teniendo de inmenso dosel a la noche, Que venía grave, preñada de estrellas."
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "*1920*"
+    },
+    {
+      "id": "s64-1",
+      "sceneId": "s64",
+      "text": "A MANUEL ANGELES"
+    },
+    {
+      "id": "s64-2",
+      "sceneId": "s64",
+      "text": "Amargura dorada en el paisaje. El corazón escucha."
+    },
+    {
+      "id": "s64-3",
+      "sceneId": "s64",
+      "text": "En la tristeza húmeda El viento dijo:"
+    },
+    {
+      "id": "s64-4",
+      "sceneId": "s64",
+      "text": "--Yo soy todo de estrellas derretidas, Sangre del infinito. Con mi roce descubro los colores De los fondos dormidos. Voy herido de místicas miradas, Yo llevo los suspiros En burbujas de sangre invisibles Hacia el sereno triunfo Del Amor inmortal lleno de Noche. Me conocen los niños, Y me cuajo en tristezas Sobre cuentos de reinas y castillos. Soy copa de la luz. Soy incensario De cantos desprendidos Que cayeron envueltos en azules Transparencias de ritmo. En mi alma perdiéronse solemnes Carne y alma de Cristo, Y finjo la tristeza de la tarde Melancólico y frío. Soy la eterna harmonía de la Tierra. El bosque innumerable."
+    },
+    {
+      "id": "s64-5",
+      "sceneId": "s64",
+      "text": "Llevo las carabelas de los sueños A lo desconocido. Y tengo la amargura solitaria De no saber mi fin ni mi destino.--"
+    },
+    {
+      "id": "s64-6",
+      "sceneId": "s64",
+      "text": "Las palabras del viento eran suaves, Con hondura de lirios. Mi corazón durmióse en la tristeza Del crepúsculo."
+    },
+    {
+      "id": "s64-7",
+      "sceneId": "s64",
+      "text": "Sobre la parda tierra de la estepa Los gusanos dijeron sus delirios. --Soportamos tristezas Al borde del camino. Sabemos de las flores de los bosques, Del canto monocorde de los grillos, De la lira sin cuerdas que pulsamos, Del oculto sendero que seguimos. Nuestro ideal no llega a las estrellas, Es sereno, sencillo; Quisiéramos hacer miel, como abejas, O tener dulce voz o fuerte grito, O fácil caminar sobre las hierbas, O senos donde mamen nuestros hijos."
+    },
+    {
+      "id": "s64-8",
+      "sceneId": "s64",
+      "text": "Dichosos los que nacen mariposas O tienen luz de luna en su vestido. ¡Dichosos los que cortan la rosa Y recogen el trigo! ¡Dichosos los que dudan de la Muerte Teniendo Paraíso, Y el aire que recorre lo que quiere Seguro de infinito. Dichosos los gloriosos y los fuertes, Los que jamás fueron compadecidos, Los que bendijo y sonrió triunfante El hermano Francisco. Pasamos mucha pena Cruzando los caminos. Quisiéramos saber lo que nos hablan Los álamos del río.--"
+    },
+    {
+      "id": "s64-9",
+      "sceneId": "s64",
+      "text": "Y en la muda tristeza de la tarde Respondióles el polvo del camino: --Dichosos, ¡oh gusanos!, que tenéis Justa conciencia de vosotros mismos, Y formas y pasiones Y hogares encendidos. Yo en el sol me disuelvo Siguiendo al peregrino, Y cuando pienso ya en la luz quedarme Caigo al suelo dormido.--"
+    },
+    {
+      "id": "s64-10",
+      "sceneId": "s64",
+      "text": "Los gusanos lloraron y los árboles Moviendo sus cabezas pensativos Dijeron:--El azul es imposible. Creimos alcanzarlo cuando niños, Y quisiéramos ser como las águilas Ahora que estamos por el rayo heridos. De las águilas es todo el azul.-- Y el águila a lo lejos --¡No, no es mío! Porque el azul lo tienen las estrellas Entre sus claros brillos.-- Las estrellas:--Tampoco lo tenemos: Está sobre nosotras escondido.-- Y la negra distancia:--El azul Lo tiene la esperanza en su recinto.-- Y la esperanza dice quedamente Desde el reino sombrío: --Vosotros me inventasteis corazones.-- Y el corazón... ¡Dios Mío!"
+    },
+    {
+      "id": "s64-11",
+      "sceneId": "s64",
+      "text": "El otoño ha dejado ya sin hojas Los álamos del río. El agua ha adormecido en plata vieja Al polvo del camino. Los gusanos se hunden soñolientos En sus hogares fríos. El águila se pierde en la montaña; El viento dice: «Soy eterno ritmo». Se oyen las nanas a las cunas pobres, Y el llanto del rebaño en el aprisco."
+    },
+    {
+      "id": "s64-12",
+      "sceneId": "s64",
+      "text": "La mojada tristeza del paisaje Enseña como un libro Las arrugas severas que dejaron Los ojos pensadores de los siglos."
+    },
+    {
+      "id": "s64-13",
+      "sceneId": "s64",
+      "text": "Y mientras que descansan las estrellas Sobre el azul dormido, Mi corazón ve su ideal lejano Y pregunta: ¡Dios mío! Pero, Dios mío, ¿a quién? ¿Quién es Dios mío? ¿Por qué nuestra esperanza se adormece Y sentimos el fracaso lírico Y los ojos se cierran comprendiendo Todo el azul?"
+    },
+    {
+      "id": "s64-14",
+      "sceneId": "s64",
+      "text": "Sobre el paisaje viejo y el hogar humeante Quiero lanzar mi grito, Sollozando de mí como el gusano Deplora su destino. Pidiendo lo del hombre Amor inmenso y azul como los álamos del río. Azul de corazones y de fuerza, El azul de mí mismo, Que me ponga en las manos la gran llave Que fuerce al infinito. Sin terror y sin miedo ante la muerte, Escarchado de amor y de lirismo. Aunque me hiera el rayo como al árbol Y me quede sin hojas y sin grito."
+    },
+    {
+      "id": "s64-15",
+      "sceneId": "s64",
+      "text": "Ahora tengo en la frente rosas blancas Y la copa rebosando vino."
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "*1919*"
+    },
+    {
+      "id": "s65-1",
+      "sceneId": "s65",
+      "text": "Tengo mucho miedo De las hojas muertas, Miedo de los prados Llenos de rocío. Yo voy a dormirme; Si no me despiertas, Dejaré a tu lado mi corazón frío."
+    },
+    {
+      "id": "s65-2",
+      "sceneId": "s65",
+      "text": "¿Qué es eso que suena muy lejos? Amor. El viento en las vidrieras, ¡Amor mío!"
+    },
+    {
+      "id": "s65-3",
+      "sceneId": "s65",
+      "text": "Te puse collares Con gemas de aurora. ¿Por qué me abandonas En este camino? Si te vas muy lejos Mi pájaro llora Y la verde viña No dará su vino."
+    },
+    {
+      "id": "s65-4",
+      "sceneId": "s65",
+      "text": "¿Qué es eso que suena Muy lejos? Amor. El viento en las vidrieras, ¡Amor mío!"
+    },
+    {
+      "id": "s65-5",
+      "sceneId": "s65",
+      "text": "Tú no sabrás nunca, Esfinge de nieve, Lo mucho que yo Te hubiera querido Esas madrugadas Cuando tanto llueve Y en la rama seca Se deshace el nido."
+    },
+    {
+      "id": "s65-6",
+      "sceneId": "s65",
+      "text": "¿Qué es eso que suena Muy lejos? Amor. El viento en las vidrieras, ¡Amor mío!"
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "*1919*"
+    },
+    {
+      "id": "s66-1",
+      "sceneId": "s66",
+      "text": "¿Qué es lo que guardo en estos Momentos de tristeza? ¡Ay quien tala mis bosques Dorados y floridos! ¿Qué leo en el espejo de plata conmovida Que la aurora me ofrece Sobre el agua del río? ¿Qué gran olmo de idea Se ha tronchado en mi bosque? ¿Qué lluvia de silencio Me deja estremecido? Si a mi amor dejé muerto En la ribera triste, ¿Qué zarzales me ocultan Algo recién nacido?"
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "*1919 (Otoño)*"
+    },
+    {
+      "id": "s67-1",
+      "sceneId": "s67",
+      "text": "¡El sueño se deshizo para siempre!"
+    },
+    {
+      "id": "s67-2",
+      "sceneId": "s67",
+      "text": "En la tarde lluviosa Mi corazón aprende La tragedia otoñal Que los árboles llueven."
+    },
+    {
+      "id": "s67-3",
+      "sceneId": "s67",
+      "text": "Y en la dulce tristeza Del paisaje que muere Mis voces se quebraron. El sueño se deshizo para siempre. ¡Para siempre! ¡Dios mío! Va cayendo la nieve En el campo desierto De mi vida, Y teme La ilusión, que va lejos, De helarse o de perderse."
+    },
+    {
+      "id": "s67-4",
+      "sceneId": "s67",
+      "text": "¡Cómo me dice el agua Que el sueño se deshizo para siempre! ¿El sueño es infinito? La niebla lo sostiene, Y la niebla es tan sólo Cansancio de la nieve."
+    },
+    {
+      "id": "s67-5",
+      "sceneId": "s67",
+      "text": "Mi ritmo va contando Que el sueño se deshizo para siempre. Y en la tarde brumosa Mi corazón aprende La tragedia otoñal Que los árboles llueven."
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "*1919*"
+    },
+    {
+      "id": "s68-1",
+      "sceneId": "s68",
+      "text": "El rebaño de cabras ha pasado Junto al agua del río. En la tarde de rosa y de zafiro, Llena de paz romántica, Yo miro Al gran macho cabrío."
+    },
+    {
+      "id": "s68-2",
+      "sceneId": "s68",
+      "text": "¡Salve demonio mudo! Eres el más Intenso animal. Místico eterno Del infierno Carnal..."
+    },
+    {
+      "id": "s68-3",
+      "sceneId": "s68",
+      "text": "¡Cuántos encantos Tiene tu barba, Tu frente ancha, Rudo don Juan! ¡Qué gran acento el de tu mirada Mefistofélica Y pasional!"
+    },
+    {
+      "id": "s68-4",
+      "sceneId": "s68",
+      "text": "Vas por los campos Con tu manada Hecho un eunuco ¡Siendo un sultán! Tu sed de sexo Nunca se apaga; ¡Bien aprendiste Del padre Pan!"
+    },
+    {
+      "id": "s68-5",
+      "sceneId": "s68",
+      "text": "La cabra, Lenta te va siguiendo, Enamorada con humildad; Mas tus pasiones son insaciables; Grecia vieja Te comprenderá."
+    },
+    {
+      "id": "s68-6",
+      "sceneId": "s68",
+      "text": "¡Oh ser de hondas leyendas santas De ascetas flacos y Satanás Con piedras negras y cruces toscas, Con fieras mansas y cuevas hondas Donde te vieron entre la sombra Soplar la llama De lo sexual!"
+    },
+    {
+      "id": "s68-7",
+      "sceneId": "s68",
+      "text": "¡Machos cornudos De bravas barbas! ¡Resumen negro a lo medieval!"
+    },
+    {
+      "id": "s68-8",
+      "sceneId": "s68",
+      "text": "Nacisteis juntos con Filomnedes Entre la espuma casta del mar, Y vuestras bocas La acariciaron Bajo el asombro del mundo astral."
+    },
+    {
+      "id": "s68-9",
+      "sceneId": "s68",
+      "text": "Sois de los bosques llenos de rosas Donde la luz es huracán; Sois de los prados de Anacreonte, Llenos con sangre de lo inmortal."
+    },
+    {
+      "id": "s68-10",
+      "sceneId": "s68",
+      "text": "¡Machos cabríos! Sois metamórfosis De viejos sátiros Perdidos ya. Vais derramando lujuria virgen Como no tuvo otro animal."
+    },
+    {
+      "id": "s68-11",
+      "sceneId": "s68",
+      "text": "¡Iluminados del Mediodía! Pararse en firme Para escuchar Que desde el fondo de las campiñas El gallo os dice: ¡Salud!, al pasar."
+    }
+  ]
+}
