@@ -283,6 +283,18 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "therese-raquin",
     "tradiciones-peruanas",
     "watch-and-ward",
+    "bay-a-book-of-poems",
+    "black-spirits-and-white-a-book-of-ghost-stories",
+    "fir-flower-tablets",
+    "hugh-selwyn-mauberley",
+    "os-lusiadas",
+    "the-black-monk-and-other-stories",
+    "the-heart-of-happy-hollow",
+    "the-hesperides-and-noble-numbers",
+    "the-horse-stealers-and-other-stories",
+    "the-mystery-of-choice",
+    "the-poems-of-emma-lazarus-volume-1",
+    "weird-tales",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1791,6 +1803,138 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
     assert.equal(full.scenes[0]?.title, want.scene, id);
+    assert.ok((full.breaths[0]?.text ?? "").startsWith(want.opening), id);
+  }
+});
+
+test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
+  const expect = {
+    "bay-a-book-of-poems": {
+      opening: "SHADES Shall I tell you, then, how it is?--",
+      breaths: 178,
+      scenes: 6,
+      gutenberg: 22734,
+    },
+    "black-spirits-and-white-a-book-of-ghost-stories": {
+      opening:
+        "When in May, 1886, I found myself at last in Paris, I naturally determined to throw myself on the charity of an old chum of mine, Eugene Marie d'Ardeche, who had forsaken Boston a year or more ago on receiving word of th",
+      breaths: 1305,
+      scenes: 40,
+      gutenberg: 26687,
+    },
+    "fir-flower-tablets": {
+      opening:
+        "Alas! Alas! The danger! The steepness! O Affliction! The Shu Road is as perilous and difficult as the way to the Green H",
+      breaths: 281,
+      scenes: 112,
+      gutenberg: 48222,
+    },
+    "hugh-selwyn-mauberley": {
+      opening:
+        'FOR three years, out of key with his time, He strove to resuscitate the dead art Of poetry; to maintain "the sublime" In the old sense.',
+      breaths: 89,
+      scenes: 11,
+      gutenberg: 23538,
+    },
+    "os-lusiadas": {
+      opening:
+        "1 As armas e os barões assinalados, Que da ocidental praia Lusitana, Por mares nunca de antes navegados, Passaram ainda ",
+      breaths: 1104,
+      scenes: 10,
+      gutenberg: 3333,
+    },
+    "the-black-monk-and-other-stories": {
+      opening:
+        "Andrei Vasilyevitch Kovrin, Magister, had worn himself out, and unsettled his nerves. He made no effort to undergo regul",
+      breaths: 1189,
+      scenes: 11,
+      gutenberg: 55307,
+    },
+    "the-heart-of-happy-hollow": {
+      opening:
+        "The law is usually supposed to be a stern mistress, not to be lightly wooed, and yielding only to the most ardent pursuit.",
+      breaths: 2559,
+      scenes: 2,
+      gutenberg: 24716,
+    },
+    "the-hesperides-and-noble-numbers": {
+      opening:
+        "I sing of brooks, of blossoms, birds and bowers, Of April, May, of June and July-flowers; I sing of May-poles, hock-carts, wassails, wakes, Of bridegrooms, brides and of their bridal cakes; I write of youth, of love, and",
+      breaths: 6886,
+      scenes: 504,
+      gutenberg: 22421,
+    },
+    "the-horse-stealers-and-other-stories": {
+      opening:
+        "A HOSPITAL assistant, called Yergunov, an empty-headed fellow, known throughout the district as a great braggart and dru",
+      breaths: 1447,
+      scenes: 22,
+      gutenberg: 13409,
+    },
+    "the-mystery-of-choice": {
+      opening: "The Purple Emperor watched me in silence.",
+      breaths: 3864,
+      scenes: 36,
+      gutenberg: 46581,
+    },
+    "the-poems-of-emma-lazarus-volume-1": {
+      opening:
+        "Sweet empty sky of June without a stain, Faint, gray-blue dewy mists on far-off hills, Warm, yellow sunlight flooding mead and plain, That each dark copse and hollow overfills; The rippling laugh of unseen, rain-fed rill",
+      breaths: 2972,
+      scenes: 55,
+      gutenberg: 3295,
+    },
+    "weird-tales": {
+      opening:
+        "Councillor Krespel was one of the strangest, oddest men I ever met with in my life. When I went to live in H---- for a t",
+      breaths: 649,
+      scenes: 6,
+      gutenberg: 31377,
+    },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(sleep);
+  assert.ok(forYou);
+  assert.equal(Object.keys(expect).length, 12);
+  assert.deepEqual(forYou.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  let prev = next.indexOf("watch-and-ward");
+  let sleepPrev = sleep.workIds.indexOf("watch-and-ward");
+  assert.ok(prev > next.indexOf("all-quiet-on-the-western-front"));
+  assert.ok(sleepPrev > sleep.workIds.indexOf("all-quiet-on-the-western-front"));
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.opening, want.opening, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "next", id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(forYou.workIds.includes(id), false, id);
+    const at = next.indexOf(id);
+    assert.ok(at > next.indexOf("all-quiet-on-the-western-front"), `${id} follows All Quiet on Next`);
+    assert.ok(at > prev, `${id} follows BATCH-9 on Next`);
+    prev = at;
+    const sleepAt = sleep.workIds.indexOf(id);
+    assert.ok(sleepAt > sleep.workIds.indexOf("all-quiet-on-the-western-front"), `${id} follows All Quiet before sleep`);
+    assert.ok(sleepAt > sleepPrev, `${id} follows BATCH-9 before sleep`);
+    sleepPrev = sleepAt;
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: unknown[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.ok(full.breaths.length >= 3, id);
     assert.ok((full.breaths[0]?.text ?? "").startsWith(want.opening), id);
   }
 });
