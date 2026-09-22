@@ -9,7 +9,7 @@ import { blurbFor, sentenceCount } from "./blurbs.ts";
 import { isBoundLocal } from "./en-rights.ts";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import { curatorialTrack, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
-import { FIRST_SESSION_RITUAL_IDS } from "./rituals.ts";
+import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES } from "./rituals.ts";
 
 /** Full local novels whose stub openings were deleted so Pages cannot strand readers. */
 const FULL_NOVEL_NO_STUB = [
@@ -2108,6 +2108,83 @@ test("Tier B batches 11–12 are local format-min binds, never Featured", () => 
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
     assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
+    assertNoStubOpening(id);
+    const full = textWork(id);
+    assert.equal(work!.breaths, full.breaths.length, id);
+    assert.ok(full.breaths.length > 1, id);
+    assert.ok(
+      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
+      `${id} shelf opening`,
+    );
+    assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
+  }
+});
+
+
+/** Tier B format-min CLEAR batches 9–10. Later only — never Featured, cold-open untouched. */
+const TIER_B_BATCH_9_10 = [
+  "a-lute-of-jade",
+  "japanese-fairy-tales",
+  "jenny",
+  "mother",
+  "old-people-and-the-things-that-pass",
+  "pelle-the-conqueror",
+  "penguin-island",
+  "sanin",
+  "swann",
+  "the-city-of-the-discreet",
+  "the-flowers-of-evil",
+  "the-gardener",
+  "the-gods-are-athirst",
+  "the-little-demon",
+  "the-persian-mystics-jalalu-d-din-rumi",
+  "the-phantom-of-the-opera",
+  "the-saint",
+  "the-seven-who-were-hanged",
+  "the-song-of-the-blood-red-flower",
+  "yiddish-tales",
+  "from-a-swedish-homestead",
+  "in-ghostly-japan",
+  "invisible-links",
+  "jean-christophe",
+  "jerusalem",
+  "pan",
+  "poems-from-the-divan-of-hafiz",
+  "poems-of-paul-verlaine",
+  "psyche",
+  "shallow-soil",
+  "the-knights-of-the-cross",
+  "the-literature-of-arabia",
+  "the-patriot-piccolo-mondo-antico",
+  "the-pharaoh-and-the-priest",
+  "the-songs-of-bilitis",
+  "the-twilight-of-the-souls",
+  "twenty-six-and-one-and-other-stories",
+  "victoria",
+] as const;
+
+test("Tier B batches 9–10 are local format-min binds, never Featured", () => {
+  assert.equal(TIER_B_BATCH_9_10.length, 38);
+  assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  assert.ok(forYou);
+  const chambermaid = SHELF.find((item) => item.id === "a-chambermaid-s-diary");
+  assert.ok(chambermaid);
+  assert.equal(chambermaid.local, undefined);
+  for (const id of TIER_B_BATCH_9_10) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(curatorialTrack(id), "later", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    assert.equal(forYou!.workIds.includes(id), false, id);
     assertNoStubOpening(id);
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);

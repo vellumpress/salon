@@ -64,7 +64,6 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * never Featured, not For you. Cold-open stays Mirth → Quicksand → Botchan.
  * BATCH-8 CLEAR (Sep 22) sits on Next after All Quiet and BATCH-5, before-sleep only —
  * never Featured, not For you. Cold-open stays Mirth → Quicksand → Botchan.
- * Mother stays the existing non-local shelf row (HOLD).
  * BATCH-11 CLEAR (Sep 22) sits on Next after BATCH-8 (after All Quiet),
  * before-sleep only — never Featured, not For you. Cold-open stays
  * Mirth → Quicksand → Botchan.
@@ -77,6 +76,9 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * BATCH-12 CLEAR (Sep 22) sits on Next after BATCH-9 (after All Quiet),
  * before-sleep only — never Featured, not For you. Cold-open stays
  * Mirth → Quicksand → Botchan. Ids already full-text local keep that bind.
+ * Tier B format-min batches 9–10 (Sep 22) are Later binds only — not Featured,
+ * not Next, not For you. Mother is one of those Later rows. The chambermaid
+ * stub stays unbound; Diary of a Chambermaid is the fuller local bind.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.

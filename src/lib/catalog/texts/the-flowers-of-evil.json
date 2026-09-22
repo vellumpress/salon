@@ -1,0 +1,4139 @@
+{
+  "id": "the-flowers-of-evil",
+  "title": "The Flowers of Evil",
+  "author": "Charles Baudelaire (tr. Cyril Scott)",
+  "year": "1909",
+  "note": "Project Gutenberg 36098",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Illusionary Love",
+      "place": "Illusionary Love",
+      "reentry": "Mists and Rains The Wine of Lovers",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Condemned Women",
+      "place": "Condemned Women",
+      "reentry": "The Death of the Lovers The Death of the Poor",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "When by the changeless Power of a Supreme Decree",
+      "place": "When by the changeless Power of a Supreme Decree",
+      "reentry": "The poet issues forth upon this sorry sphere, His mother, horrified, and full of blasphemy, Uplifts her voice to God, who takes compassion on her.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Oh cursèd be that transient night of vain desire",
+      "place": "Oh cursèd be that transient night of vain desire",
+      "reentry": "When I conceived my expiation in my womb!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "To be the degradation of my jaded mate,",
+      "place": "To be the degradation of my jaded mate,",
+      "reentry": "And since I cannot like a love-leaf wantonly Consign this stunted monster to the glowing grate,\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Upon the cursèd tool of thy most wicked spite",
+      "place": "Upon the cursèd tool of thy most wicked spite",
+      "reentry": "Forsooth, the branches of this wretched tree I'll wound And rob its pestilential blossoms of their might!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "So thus, she giveth vent unto her foaming ire,",
+      "place": "So thus, she giveth vent unto her foaming ire,",
+      "reentry": "And knowing not the changeless statutes of all times, Herself, amid the flames of hell, prepares the pyre;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "The consecrated penance of maternal crimes",
+      "place": "The consecrated penance of maternal crimes",
+      "reentry": "Yet 'neath th' invisible shelter of an Angel's wing",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "This sunlight-loving infant disinherited,",
+      "place": "This sunlight-loving infant disinherited,",
+      "reentry": "Exhales from all he eats and drinks, and everything The ever sweet ambrosia and the nectar red.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "About the way unto the Cross, he loves to sing,",
+      "place": "About the way unto the Cross, he loves to sing,",
+      "reentry": "The spirit on his pilgrimage; that faithful guide, Oft weeps to see him joyful like a bird of Spring.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "And some that waxen bold by his tranquility,",
+      "place": "And some that waxen bold by his tranquility,",
+      "reentry": "Endeavour hard some grievance from his heart to tear, And make on him the trial of their ferocity.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "To mingle dust and dirty spittle they essay,",
+      "place": "To mingle dust and dirty spittle they essay,",
+      "reentry": "And everything he touches, forth they slyly cast, Or scourge themselves, if e'er their feet betrod his way.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Why not perform the office of those ancient gods",
+      "place": "Why not perform the office of those ancient gods",
+      "reentry": "And like unto them, redeck myself with shining gold?\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "With genuflexions, delicate viandes and wine,",
+      "place": "With genuflexions, delicate viandes and wine,",
+      "reentry": "To see, in jest, if from a heart, that loves me dear, I cannot filch away the hommages divine.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "The hidden path unto his feeble heart to find.\"",
+      "place": "The hidden path unto his feeble heart to find.\"",
+      "reentry": "\"And like a youngling bird that trembles in its nest, I'll pluck his heart right out; within its own blood drowned,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "And finally to satiate my favourite beast,",
+      "place": "And finally to satiate my favourite beast,",
+      "reentry": "I'll throw it with intense disdain upon the ground!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "The poet calmly stretches forth his pious arms,",
+      "place": "The poet calmly stretches forth his pious arms,",
+      "reentry": "Whereon the lightenings from his lucid spirit veil The sight of the infuriated mob that swarms.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Like some divine redress for our infirmities,",
+      "place": "Like some divine redress for our infirmities,",
+      "reentry": "And like the most refreshing and the purest rain, To sanctify the strong, for saintly ecstasies.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Among the Sainted Legion and the Blissful ones,",
+      "place": "Among the Sainted Legion and the Blissful ones,",
+      "reentry": "That of the endless feast thou wilt accord his share To him, of Virtues, Dominations and of Thrones.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Which never may corrupted be by hell nor curse,",
+      "place": "Which never may corrupted be by hell nor curse,",
+      "reentry": "I know, in order to enwreathe my mystic crown I must inspire the ages and the universe.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "The undiscovered metals and the pearly sea",
+      "place": "The undiscovered metals and the pearly sea",
+      "reentry": "Of gems, that unto me you show could never hold Beside this diadem of blinding brilliancy.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Of rays primeval, from the holy hearth amassed,",
+      "place": "Of rays primeval, from the holy hearth amassed,",
+      "reentry": "Of which the eyes of Mortals, in their sheen entire, Are but the tarnished mirrors, sad and overcast!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "In Nature's temple, living columns rise,",
+      "place": "In Nature's temple, living columns rise,",
+      "reentry": "Which oftentimes give tongue to words subdued, And Man traverses this symbolic wood,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "Which looks at him with half familiar eyes,",
+      "place": "Which looks at him with half familiar eyes,",
+      "reentry": "Like lingering echoes, which afar confound",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Themselves in deep and sombre unity,",
+      "place": "Themselves in deep and sombre unity,",
+      "reentry": "As vast as Night, and like transplendency, The scents and colours to each other respond.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "As sweet as oboes, and as meadows fair,",
+      "place": "As sweet as oboes, and as meadows fair,",
+      "reentry": "And others, proud, corrupted, rich and vast,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Which have the expansion of infinity,",
+      "place": "Which have the expansion of infinity,",
+      "reentry": "Like amber, musk and frankincense and myrrh, That sing the soul's and senses' ecstasy.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Alas--my poor Muse--what aileth thee now?",
+      "place": "Alas--my poor Muse--what aileth thee now?",
+      "reentry": "Thine eyes are bedimmed with the visions of Night, And silent and cold--I perceive on thy brow",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "In their turns--Despair and Madness alight",
+      "place": "In their turns--Despair and Madness alight",
+      "reentry": "A succubus green, or a hobgoblin red, Has it poured o'er thee Horror and Love from its urn?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "Or the Nightmare with masterful bearing hath led",
+      "place": "Or the Nightmare with masterful bearing hath led",
+      "reentry": "Thee to drown in the depths of some magic Minturne?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "I wish, as the health-giving fragrance I cull,",
+      "place": "I wish, as the health-giving fragrance I cull,",
+      "reentry": "That thy breast with strong thoughts could for ever be full, And that rhymthmic'ly flowing--thy Christian blood",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Could resemble the olden-time metrical-flood,",
+      "place": "Could resemble the olden-time metrical-flood,",
+      "reentry": "Where each in his turn reigned the father of Rhymes Phoebus--and Pan, lord of Harvest-times.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "Oh Muse of my heart--so fond of palaces old,",
+      "place": "Oh Muse of my heart--so fond of palaces old,",
+      "reentry": "Wilt have--when New Year speeds its wintry blast, Amid those tedious nights, with snow o'ercast,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "A log to warm thy feet, benumbed with cold?",
+      "place": "A log to warm thy feet, benumbed with cold?",
+      "reentry": "Wilt thou thy marbled shoulders then revive",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "With nightly rays that through thy shutters peep?",
+      "place": "With nightly rays that through thy shutters peep?",
+      "reentry": "And--void thy purse and void thy palace--reap A golden hoard within some azure hive?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "Thou must, to earn thy daily bread, each night,",
+      "place": "Thou must, to earn thy daily bread, each night,",
+      "reentry": "Suspend the censer like an acolyte, Te-Deums sing, with sanctimonious ease,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "Or as a famished mountebank, with jokes obscene",
+      "place": "Or as a famished mountebank, with jokes obscene",
+      "reentry": "Essay to lull the vulgar rabble's spleen; Thy laughter soaked in tears which no one sees.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "The cloisters old, expounded on their walls",
+      "place": "The cloisters old, expounded on their walls",
+      "reentry": "With paintings, the Beatic Verity, The which--adorning their religious halls,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "Enriched the frigidness of their Austerity",
+      "place": "Enriched the frigidness of their Austerity",
+      "reentry": "In days when Christian seeds bloomed o'er the land,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "Full many a noble monk unknown to-day,",
+      "place": "Full many a noble monk unknown to-day,",
+      "reentry": "Upon the field of tombs would take his stand, Exalting Death in rude and simple way.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "My soul is a tomb where--bad monk that I be--",
+      "place": "My soul is a tomb where--bad monk that I be--",
+      "reentry": "I dwell and search its depths from all eternity, And nought bedecks the walls of the odious spot.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "Oh sluggard monk! when shall I glean aright",
+      "place": "Oh sluggard monk! when shall I glean aright",
+      "reentry": "From the living spectacle of my bitter lot, To mold my handywork and mine eyes' Delight?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "My childhood was nought but a ravaging storm,",
+      "place": "My childhood was nought but a ravaging storm,",
+      "reentry": "Enlivened at times by a brilliant sun; The rain and the winds wrought such havoc and harm",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "That of buds on my plot there remains hardly one",
+      "place": "That of buds on my plot there remains hardly one",
+      "reentry": "Behold now the Fall of ideas I have reached, And the shovel and rake one must therefore resume,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "In collecting the turf, inundated and breached,",
+      "place": "In collecting the turf, inundated and breached,",
+      "reentry": "Where the waters dug trenches as deep as a tomb.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "And yet these new blossoms, for which I craved,",
+      "place": "And yet these new blossoms, for which I craved,",
+      "reentry": "Will they find in this earth--like a shore that is laved-- The mystical fuel which vigour imparts?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "Oh misery!--Time devours our lives,",
+      "place": "Oh misery!--Time devours our lives,",
+      "reentry": "And the enemy black, which consumeth our hearts On the blood of our bodies, increases and thrives!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "This heavy burden to uplift,",
+      "place": "This heavy burden to uplift,",
+      "reentry": "O Sysiphus, thy pluck is required! And even though the heart aspired,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "Art is long and Time is swift",
+      "place": "Art is long and Time is swift",
+      "reentry": "Afar from sepulchres renowned,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "To a graveyard, quite apart,",
+      "place": "To a graveyard, quite apart,",
+      "reentry": "Like a broken drum, my heart, Beats the funeral marches' sound.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "Many a buried jewel sleeps",
+      "place": "Many a buried jewel sleeps",
+      "reentry": "In the long-forgotten deeps, Far from mattock and from sound;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "Many a flower wafts aloft",
+      "place": "Many a flower wafts aloft",
+      "reentry": "Its perfumes, like a secret soft, Within the solitudes, profound.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "A long while I dwelt beneath vast porticoes,",
+      "place": "A long while I dwelt beneath vast porticoes,",
+      "reentry": "While the ocean-suns bathed with a thousand fires, And which with their great and majestic spires,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "At eventide looked like basaltic grottoes",
+      "place": "At eventide looked like basaltic grottoes",
+      "reentry": "The billows, in rolling depictured the skies,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "And mingled, in solemn and mystical strain,",
+      "place": "And mingled, in solemn and mystical strain,",
+      "reentry": "The all-mighteous chords of their luscious refrain With the sun-set's colours reflexed in mine eyes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "It is there that I lived in exalted calm,",
+      "place": "It is there that I lived in exalted calm,",
+      "reentry": "In the midst of the azure, the splendour, the waves, While pregnant with perfumes, naked slaves",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "Refreshed my forehead with branches of palm,",
+      "place": "Refreshed my forehead with branches of palm,",
+      "reentry": "Whose gentle and only care was to know The secret that caused me to languish so.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "Free man! the sea is to thee ever dear!",
+      "place": "Free man! the sea is to thee ever dear!",
+      "reentry": "The sea is thy mirror, thou regardest thy soul In its mighteous waves that unendingly roll,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "And thy spirit is yet not a chasm less drear",
+      "place": "And thy spirit is yet not a chasm less drear",
+      "reentry": "Thou delight'st to plunge deep in thine image down; Thou tak'st it with eyes and with arms in embrace, And at times thine own inward voice would'st efface",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "With the sound of its savage ungovernable moan",
+      "place": "With the sound of its savage ungovernable moan",
+      "reentry": "You are both of you, sombre, secretive and deep:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "Oh mortal, thy depths are foraye unexplored,",
+      "place": "Oh mortal, thy depths are foraye unexplored,",
+      "reentry": "Oh sea--no one knoweth thy dazzling hoard, You both are so jealous your secrets to keep!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "And endless ages have wandered by,",
+      "place": "And endless ages have wandered by,",
+      "reentry": "Yet still without pity or mercy you fight, So mighty in plunder and death your delight:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "Oh wrestlers! so constant in enmity!",
+      "place": "Oh wrestlers! so constant in enmity!",
+      "reentry": "Beauty",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "I am lovely, O mortals, like a dream of stone,",
+      "place": "I am lovely, O mortals, like a dream of stone,",
+      "reentry": "And my bosom, where each one gets bruised in turn, To inspire the love of a poet is prone,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "Like matter eternally silent and stern",
+      "place": "Like matter eternally silent and stern",
+      "reentry": "As an unfathomed sphinx, enthroned by the Nile, My heart a swan's whiteness with granite combines,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "And I hate every movement, displacing the lines,",
+      "place": "And I hate every movement, displacing the lines,",
+      "reentry": "And never I weep and never I smile.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "The poets in front of mine attitudes fine",
+      "place": "The poets in front of mine attitudes fine",
+      "reentry": "(Which the proudest of monuments seem to implant), To studies profound all their moments assign,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "For I have all these docile swains to enchant--",
+      "place": "For I have all these docile swains to enchant--",
+      "reentry": "Two mirrors, which Beauty in all things ignite: Mine eyes, my large eyes, of eternal Light!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "The Ideal",
+      "place": "The Ideal",
+      "reentry": "It could ne'er be those beauties of ivory vignettes;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "The varied display of a worthless age,",
+      "place": "The varied display of a worthless age,",
+      "reentry": "Nor puppet-like figures with castonets, That ever an heart like mine could engage.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "I leave to Gavarni, that poet of chlorosis,",
+      "place": "I leave to Gavarni, that poet of chlorosis,",
+      "reentry": "His hospital-beauties in troups that whirl, For I cannot discover amid his pale roses",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "A flower to resemble my scarlet ideal",
+      "place": "A flower to resemble my scarlet ideal",
+      "reentry": "Since, what for this fathomless heart I require",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "Is--Lady Macbeth you! in crime so dire;",
+      "place": "Is--Lady Macbeth you! in crime so dire;",
+      "reentry": "--An Æschylus dream transposed from the South--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "Or thee, oh great \"Night\" of Michael-Angelo born,",
+      "place": "Or thee, oh great \"Night\" of Michael-Angelo born,",
+      "reentry": "Who so calmly thy limbs in strange posture hath drawn, Whose allurements are framed for a Titan's mouth.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "The Giantess",
+      "place": "The Giantess",
+      "reentry": "I should have loved--erewhile when Heaven conceived",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "Each day, some child abnormal and obscene,",
+      "place": "Each day, some child abnormal and obscene,",
+      "reentry": "Beside a maiden giantess to have lived, Like a luxurious cat at the feet of a queen;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "To see her body flowering with her soul,",
+      "place": "To see her body flowering with her soul,",
+      "reentry": "And grow, unchained, in awe-inspiring art, Within the mists across her eyes that stole",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "To divine the fires entombed within her heart",
+      "place": "To divine the fires entombed within her heart",
+      "reentry": "And oft to scramble o'er her mighty limbs,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "And climb the slopes of her enormous knees,",
+      "place": "And climb the slopes of her enormous knees,",
+      "reentry": "Or in summer when the scorching sunlight streams",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "Across the country, to recline at ease,",
+      "place": "Across the country, to recline at ease,",
+      "reentry": "And slumber in the shadow of her breast Like an hamlet 'neath the mountain-crest.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "Hymn to Beauty",
+      "place": "Hymn to Beauty",
+      "reentry": "O Beauty! dost thou generate from Heaven or from Hell?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "Within thy glance, so diabolic and divine,",
+      "place": "Within thy glance, so diabolic and divine,",
+      "reentry": "Confusedly both wickedness and goodness dwell, And hence one might compare thee unto sparkling wine.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "Thy perfumes, as upon a sultry night exhale,",
+      "place": "Thy perfumes, as upon a sultry night exhale,",
+      "reentry": "Thy kiss a philter, and thy mouth a Grecian vase, That renders heroes cowardly and infants hale.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "O Loveliness! thou spurnest corpses with delight,",
+      "place": "O Loveliness! thou spurnest corpses with delight,",
+      "reentry": "Among thy jewels, Horror hath such charms for thee, And Murder 'mid thy mostly cherished trinklets bright,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "Upon thy massive bosom dances amorously",
+      "place": "Upon thy massive bosom dances amorously",
+      "reentry": "The blinded, fluttering moth towards the candle flies, Then frizzles, falls, and falters--\"Blessings unto thee\"-- The panting swain that o'er his beauteous mistress sighs, Seems like the Sick, that stroke their gravestones lovingly.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "O Beauty, frightful ghoul, ingenuous and obscure!",
+      "place": "O Beauty, frightful ghoul, ingenuous and obscure!",
+      "reentry": "So long thine eyes, thy smile, to me the way can tell Towards that Infinite I love, but never saw.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "From God or Satan? Angel, Mermaid, Proserpine?",
+      "place": "From God or Satan? Angel, Mermaid, Proserpine?",
+      "reentry": "What matter if thou makest--blithe, voluptuous sprite-- With rhythms, perfumes, visions--O mine only queen!-- The universe less hideous and the hours less trite.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "When, with closed eyes, on a hot afternoon,",
+      "place": "When, with closed eyes, on a hot afternoon,",
+      "reentry": "The scent of thine ardent breast I inhale, Celestial vistas my spirit assail;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "Caressed by the flames of an endless sun",
+      "place": "Caressed by the flames of an endless sun",
+      "reentry": "A langorous island, where Nature abounds",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "With exotic trees and luscious fruit;",
+      "place": "With exotic trees and luscious fruit;",
+      "reentry": "And with men whose bodies are slim and astute, And with women whose frankness delights and astounds.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "By thy perfume enticed to this region remote,",
+      "place": "By thy perfume enticed to this region remote,",
+      "reentry": "A port I see, laden with mast and with boat, Still wearied and torn by the distant brine;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "While the tamarisk-odours that dreamily throng",
+      "place": "While the tamarisk-odours that dreamily throng",
+      "reentry": "The air, round my slumberous senses intwine, And mix, in my soul, with the mariners' song.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "La Chevelure",
+      "place": "La Chevelure",
+      "reentry": "O fleece, that foams down unto the shoulders bare! O curls, O scents which lovely languidness exhale!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "Delight! to fill this alcove's sombre atmosphere",
+      "place": "Delight! to fill this alcove's sombre atmosphere",
+      "reentry": "With memories, sleeping deep within this tress of hair, I'll wave it in the evening breezes like a veil!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "The shores of Africa, and Asia's burning skies,",
+      "place": "The shores of Africa, and Asia's burning skies,",
+      "reentry": "A world forgotten, distant, nearly dead and spent, Within thy depths, O aromatic forest! lies.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "And like to spirits floating unto melodies,",
+      "place": "And like to spirits floating unto melodies,",
+      "reentry": "Mine own, Belovèd! glides within thy sacred scent.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "With languor lull beside the hot and silent sea;",
+      "place": "With languor lull beside the hot and silent sea;",
+      "reentry": "Strong tresses bear me, be to me the waves and wind! Within thy fragrance lies a dazzling dream confined",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "Of sails and masts and flames--O lake of ebony!",
+      "place": "Of sails and masts and flames--O lake of ebony!",
+      "reentry": "A loudly echoing harbour, where my soul may hold To quaff, the silver cup of colours, scents and sounds,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "Wherein the vessels glide upon a sea of gold,",
+      "place": "Wherein the vessels glide upon a sea of gold,",
+      "reentry": "And stretch their mighty arms, the glory to enfold Of virgin skies, where never-ending heat abounds.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "Within this darkling ocean of infinitude,",
+      "place": "Within this darkling ocean of infinitude,",
+      "reentry": "Until my subtle spirit, which thy waves caress, Shall find you once again, O fertile weariness;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "Unending lullabye of perfumed lassitude!",
+      "place": "Unending lullabye of perfumed lassitude!",
+      "reentry": "Ye tresses blue--recess of strange and sombre shades,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "Ye make the azure of the starry Realm immense;",
+      "place": "Ye make the azure of the starry Realm immense;",
+      "reentry": "Upon the downy beeches, by your curls' cascades, Among your mingling fragrances, my spirit wades",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "To cull the musk and cocoa-nut and lotus scents",
+      "place": "To cull the musk and cocoa-nut and lotus scents",
+      "reentry": "Long--foraye--my hand, within thy heavy mane, Shall scatter rubies, pearls, sapphires eternally, And thus my soul's desire for thee shall never wane; For art not thou the oasis where I dream and drain With draughts profound, the golden wine",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "With pearly robes that wave within the wind,",
+      "place": "With pearly robes that wave within the wind,",
+      "reentry": "Even when she walks, she seems to dance, Like swaying serpents round those wands entwined",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "Which fakirs ware in rhythmic elegance",
+      "place": "Which fakirs ware in rhythmic elegance",
+      "reentry": "So like the desert's Blue, and the sands remote,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "Both, deaf to mortal suffering and to strife,",
+      "place": "Both, deaf to mortal suffering and to strife,",
+      "reentry": "Or like the sea-weeds 'neath the waves that float, Indifferently she moulds her budding life.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "Her polished eyes are made of minerals bright,",
+      "place": "Her polished eyes are made of minerals bright,",
+      "reentry": "And in her mien, symbolical and cold, Wherein an angel mingles with a sphinx of old,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "There shines, just like a useless star eternally,",
+      "place": "There shines, just like a useless star eternally,",
+      "reentry": "The sterile woman's frigid majesty.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "Ah, when thou shalt slumber, my darkling love,",
+      "place": "Ah, when thou shalt slumber, my darkling love,",
+      "reentry": "Beneath a black marble-made statuette, And when thou'lt have nought for thy house or alcove,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "But a cavernous den and a damp oubliette",
+      "place": "But a cavernous den and a damp oubliette",
+      "reentry": "When the tomb-stone, oppressing thy timorous breast, And thy hips drooping sweetly with listless decay,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "The pulse and desires of mine heart shall arrest,",
+      "place": "The pulse and desires of mine heart shall arrest,",
+      "reentry": "And thy feet from pursuing their adventurous way,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "Amid those long nights, which no slumber redeems",
+      "place": "Amid those long nights, which no slumber redeems",
+      "reentry": "'Twill query--\"What use to thee, incomplete spright That thou ne'er hast unfathomed the tears of the dead\"?-- Then the worms will gnaw deep at thy body, like Dread.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "Oh, Mother of Memories! Mistress of Mistresses!",
+      "place": "Oh, Mother of Memories! Mistress of Mistresses!",
+      "reentry": "Oh, thou all my pleasures, oh, thou all my prayers! Can'st thou remember those luscious caresses, The charm of the hearth and the sweet evening airs?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "Oh, Mother, of Memories, Mistress of Mistresses!",
+      "place": "Oh, Mother, of Memories, Mistress of Mistresses!",
+      "reentry": "Those evenings illumed by the glow of the coal, And those roseate nights with their vaporous wings, How calm was thy breast and how good was thy soul, 'Twas then we uttered imperishable things,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "Those evenings illumed by the glow of the coal",
+      "place": "Those evenings illumed by the glow of the coal",
+      "reentry": "How lovely the suns on those hot, autumn nights! How vast were the heavens! and the heart how hale! As I leaned towards you--oh, my Queen of Delights,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s115",
+      "title": "The scent of thy blood I seemed to inhale",
+      "place": "The scent of thy blood I seemed to inhale",
+      "reentry": "How lovely the sun on those hot, autumn nights!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s116",
+      "title": "The shadows of night-time grew dense like a pall,",
+      "place": "The shadows of night-time grew dense like a pall,",
+      "reentry": "And deep through the darkness thine eyes I divined, And I drank of thy breath--oh sweetness, oh gall,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s117",
+      "title": "And thy feet in my brotherly hands reclined,",
+      "place": "And thy feet in my brotherly hands reclined,",
+      "reentry": "The shadows of Night-time grew dense like a pall.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s118",
+      "title": "I know how to call forth those moments so dear,",
+      "place": "I know how to call forth those moments so dear,",
+      "reentry": "And to live my Past--laid on thy knees--once more, For where should I seek for thy beauties but here",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s119",
+      "title": "In thy langorous heart and thy body so pure?",
+      "place": "In thy langorous heart and thy body so pure?",
+      "reentry": "I know how to call forth those moments so dear.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s120",
+      "title": "Those perfumes, those infinite kisses and sighs,",
+      "place": "Those perfumes, those infinite kisses and sighs,",
+      "reentry": "Are they born in some gulf to our plummets denied? Like rejuvenate suns that mount up to the skies, That first have been cleansed in the depths of the tide;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s121",
+      "title": "The sun is enveloped in crape! like it,",
+      "place": "The sun is enveloped in crape! like it,",
+      "reentry": "O Moon of my Life! wrap thyself up in shade; At will, smoke or slumber, be silent, be staid,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s122",
+      "title": "And dive deep down in Dispassion's dark pit",
+      "place": "And dive deep down in Dispassion's dark pit",
+      "reentry": "I cherish thee thus! But if 'tis thy mood,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s123",
+      "title": "Like a star that from out its penumbra appears,",
+      "place": "Like a star that from out its penumbra appears,",
+      "reentry": "To float in the regions where madness careers, Fair dagger! burst forth from thy sheath! 'tis good.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s124",
+      "title": "Yea, light up thine eyes at the Fire of Renown!",
+      "place": "Yea, light up thine eyes at the Fire of Renown!",
+      "reentry": "Or kindle desire by the looks of some clown! Thine All is my joy, whether dull or aflame!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s125",
+      "title": "Just be what thou wilt, black night, dawn divine,",
+      "place": "Just be what thou wilt, black night, dawn divine,",
+      "reentry": "There is not a nerve in my trembling frame But cries, \"I adore thee, Beelzebub mine!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s126",
+      "title": "Semper Eadem",
+      "place": "Semper Eadem",
+      "reentry": "\"From whence it comes, you ask, this gloom acute,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s127",
+      "title": "Like waves that o'er the rocky headland fall?\"",
+      "place": "Like waves that o'er the rocky headland fall?\"",
+      "reentry": "--When once our hearts have gathered in their fruit, To live is a curse! a secret known to all,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s128",
+      "title": "A grief, quite simple, nought mysterious,",
+      "place": "A grief, quite simple, nought mysterious,",
+      "reentry": "And like your joy--for all, both loud and shrill, Nay cease to clamour, be not e'er so curious!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s129",
+      "title": "And yet although your voice is sweet, be still!",
+      "place": "And yet although your voice is sweet, be still!",
+      "reentry": "Be still, O soul, with rapture ever rife! O mouth, with the childish smile! Far more than Life,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s130",
+      "title": "The subtle bonds of Death around us twine",
+      "place": "The subtle bonds of Death around us twine",
+      "reentry": "Let--let my heart, the wine of falsehood drink,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s131",
+      "title": "And dream-like, deep within your fair eyes sink,",
+      "place": "And dream-like, deep within your fair eyes sink,",
+      "reentry": "And in the shade of thy lashes long recline!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s132",
+      "title": "The Demon, in my lofty vault,",
+      "place": "The Demon, in my lofty vault,",
+      "reentry": "This morning came to visit me, And striving me to find at fault,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s133",
+      "title": "He said, \"Fain would I know of thee;",
+      "place": "He said, \"Fain would I know of thee;",
+      "reentry": "\"Among the many beauteous things, --All which *her* subtle grace proclaim--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s134",
+      "title": "Among the dark and rosy things,",
+      "place": "Among the dark and rosy things,",
+      "reentry": "Which go to make her charming frame,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s135",
+      "title": "My soul! to Him thou didst retort--",
+      "place": "My soul! to Him thou didst retort--",
+      "reentry": "\"Since all with her is destiny, Of preference there can be nought.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s136",
+      "title": "When all transports me with delight,",
+      "place": "When all transports me with delight,",
+      "reentry": "If aught deludes I can not know, She either lulls one like the Night,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s137",
+      "title": "Or dazzles like the Morning-glow",
+      "place": "Or dazzles like the Morning-glow",
+      "reentry": "That harmony is too divine,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s138",
+      "title": "Which governs all her body fair,",
+      "place": "Which governs all her body fair,",
+      "reentry": "For powerless mortals to define In notes the many concords there.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s139",
+      "title": "O mystic metamorphosis",
+      "place": "O mystic metamorphosis",
+      "reentry": "Of all my senses blent in one! Her voice a beauteous perfume is,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s140",
+      "title": "What sayest thou, to-night, poor soul so drear,",
+      "place": "What sayest thou, to-night, poor soul so drear,",
+      "reentry": "What sayest--heart erewhile engulfed in gloom, To the very lovely, very chaste, and very dear,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s141",
+      "title": "Whose god-like look hath made thee to re-bloom?",
+      "place": "Whose god-like look hath made thee to re-bloom?",
+      "reentry": "To her, with pride we chant an echoing Hymn,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s142",
+      "title": "For nought can touch the sweetness of her sway;",
+      "place": "For nought can touch the sweetness of her sway;",
+      "reentry": "Her flesh ethereal as the seraphim, Her eyes with robe of light our souls array.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s143",
+      "title": "And be it in the night, or solitude,",
+      "place": "And be it in the night, or solitude,",
+      "reentry": "Among the streets or 'mid the multitude, Her shadow, torch-like, dances in the air,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s144",
+      "title": "And murmurs, \"I, the Beautiful proclaim--",
+      "place": "And murmurs, \"I, the Beautiful proclaim--",
+      "reentry": "That for my sake, alone ye love the Fair; I am the Guardian Angel, Muse and Dame!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s145",
+      "title": "They stand before me now, those eyes that shine,",
+      "place": "They stand before me now, those eyes that shine,",
+      "reentry": "No doubt inspired by an Angel wise; They stand, those God-like brothers that are mine,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s146",
+      "title": "And pour their diamond fires in mine eyes",
+      "place": "And pour their diamond fires in mine eyes",
+      "reentry": "From all transgressions, from all snares, they save,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s147",
+      "title": "Towards the Path of Joy they guide my ways;",
+      "place": "Towards the Path of Joy they guide my ways;",
+      "reentry": "They are my servants, and I am their slave; And all my soul, this living torch obeys.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s148",
+      "title": "Ye charming Eyes--ye have those mystic beams,",
+      "place": "Ye charming Eyes--ye have those mystic beams,",
+      "reentry": "Of candles, burning in full day; the sun Awakes, yet kills not their fantastic gleams:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s149",
+      "title": "Ye sing the Awak'ning, they the dark oblivion;",
+      "place": "Ye sing the Awak'ning, they the dark oblivion;",
+      "reentry": "The Awak'ning of my spirit ye proclaim, O stars--no sun can ever kill your flame!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s150",
+      "title": "When the morning white and rosy breaks,",
+      "place": "When the morning white and rosy breaks,",
+      "reentry": "With the gnawing Ideal, upon the debauchee, By the power of a strange decree,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s151",
+      "title": "Within the sotted beast an Angel wakes",
+      "place": "Within the sotted beast an Angel wakes",
+      "reentry": "The mental Heaven's inaccessible blue,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s152",
+      "title": "For wearied mortals that still dream and mourn,",
+      "place": "For wearied mortals that still dream and mourn,",
+      "reentry": "Expands and sinks; towards the chasm drawn. Thus, cherished goddess, Being pure and true--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s153",
+      "title": "Upon the rests of foolish orgy-nights",
+      "place": "Upon the rests of foolish orgy-nights",
+      "reentry": "Thine image, more sublime, more pink, more clear, Before my staring eyes is ever there.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s154",
+      "title": "The sun has darkened all the candle lights;",
+      "place": "The sun has darkened all the candle lights;",
+      "reentry": "And thus thy spectre like the immortal sun, Is ever victorious--thou resplendent one!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s155",
+      "title": "Evening Harmony",
+      "place": "Evening Harmony",
+      "reentry": "The hour approacheth, when, as their stems incline,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s156",
+      "title": "The flowers evaporate like an incense urn,",
+      "place": "The flowers evaporate like an incense urn,",
+      "reentry": "And sounds and scents in the vesper breezes turn; A melancholy waltz--and a drowsiness divine.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s157",
+      "title": "The flowers evaporate like an incense urn,",
+      "place": "The flowers evaporate like an incense urn,",
+      "reentry": "The viol vibrates like the wailing of souls that repine. A melancholy waltz--and a drowsiness divine,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s158",
+      "title": "The skies like a mosque are beautiful and stern",
+      "place": "The skies like a mosque are beautiful and stern",
+      "reentry": "The viol vibrates like the wailing of souls that repine; Sweet souls that shrink from chaos vast and etern,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s159",
+      "title": "The skies like a mosque are beautiful and stern,",
+      "place": "The skies like a mosque are beautiful and stern,",
+      "reentry": "The sunset drowns within its blood-red brine.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s160",
+      "title": "Essay the wreaths of their faded Past to entwine,",
+      "place": "Essay the wreaths of their faded Past to entwine,",
+      "reentry": "The sunset drowns within its blood-red brine, Thy thought within me glows like an incense urn.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s161",
+      "title": "Meseemeth thy glance, soft enshrouded with dew,",
+      "place": "Meseemeth thy glance, soft enshrouded with dew,",
+      "reentry": "Thy mysterious eyes (are they grey, green or blue?), Alternately cruel, and tender, and shy,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s162",
+      "title": "Reflect both the languor and calm of the sky",
+      "place": "Reflect both the languor and calm of the sky",
+      "reentry": "Thou recallest those white days--with shadows caressed,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s163",
+      "title": "Engendering tears from th' enraptured breast,",
+      "place": "Engendering tears from th' enraptured breast,",
+      "reentry": "When racked by an anguish unfathomed that weeps, The nerves, too awake, jibe the spirit that sleeps.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s164",
+      "title": "At times--thou art like those horizons divine,",
+      "place": "At times--thou art like those horizons divine,",
+      "reentry": "Where the suns of the nebulous seasons decline; How resplendent art thou--O pasturage vast,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s165",
+      "title": "Illumed by the beams of a sky overcast!",
+      "place": "Illumed by the beams of a sky overcast!",
+      "reentry": "O! dangerous dame--oh seductive clime!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s166",
+      "title": "As well, will I love both thy snow and thy rime,",
+      "place": "As well, will I love both thy snow and thy rime,",
+      "reentry": "And shall I know how from the frosts to entice Delights that are keener than iron and ice?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s167",
+      "title": "My sister, my dear",
+      "place": "My sister, my dear",
+      "reentry": "Consider how fair, Together to live it would be!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s168",
+      "title": "Down yonder to fly",
+      "place": "Down yonder to fly",
+      "reentry": "To love, till we die, In the land which resembles thee.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s169",
+      "title": "Those suns that rise",
+      "place": "Those suns that rise",
+      "reentry": "'Neath erratic skies, --No charm could be like unto theirs--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s170",
+      "title": "So strange and divine,",
+      "place": "So strange and divine,",
+      "reentry": "Like those eyes of thine Which glow in the midst of their tears.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s171",
+      "title": "There, all is order and loveliness,",
+      "place": "There, all is order and loveliness,",
+      "reentry": "Luxury, calm and voluptuousness.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s172",
+      "title": "The tables and chairs,",
+      "place": "The tables and chairs,",
+      "reentry": "Polished bright by the years, Would decorate sweetly our rooms,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s173",
+      "title": "And the rarest of flowers",
+      "place": "And the rarest of flowers",
+      "reentry": "Would twine round our bowers And mingle their amber perfumes:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s174",
+      "title": "The ceilings arrayed,",
+      "place": "The ceilings arrayed,",
+      "reentry": "And the mirrors inlaid, This Eastern splendour among,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s175",
+      "title": "Would furtively steal",
+      "place": "Would furtively steal",
+      "reentry": "O'er our souls, and appeal With its tranquillous native tongue.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s176",
+      "title": "There, all is order and loveliness,",
+      "place": "There, all is order and loveliness,",
+      "reentry": "Luxury, calm and voluptuousness.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s177",
+      "title": "In the harbours, peep,",
+      "place": "In the harbours, peep,",
+      "reentry": "At the vessels asleep (Their humour is always to roam),",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s178",
+      "title": "Yet it is but to grant",
+      "place": "Yet it is but to grant",
+      "reentry": "Thy smallest want From the ends of the earth that they come,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s179",
+      "title": "The sunsets beam",
+      "place": "The sunsets beam",
+      "reentry": "Upon meadow and stream, And upon the city entire 'Neath a violet crest,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s180",
+      "title": "The world sinks to rest,",
+      "place": "The world sinks to rest,",
+      "reentry": "Illumed by a golden fire.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s181",
+      "title": "There, all is order and loveliness,",
+      "place": "There, all is order and loveliness,",
+      "reentry": "Luxury, calm and voluptuousness.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s182",
+      "title": "You are a roseate autumn-sky, that glows!",
+      "place": "You are a roseate autumn-sky, that glows!",
+      "reentry": "Yet sadness rises in me like the flood, And leaves in ebbing on my lips morose,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s183",
+      "title": "The poignant memory of its bitter mind",
+      "place": "The poignant memory of its bitter mind",
+      "reentry": "In vain your hands my swooning breast embrace,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s184",
+      "title": "Oh, friend! alone remains the plundered spot,",
+      "place": "Oh, friend! alone remains the plundered spot,",
+      "reentry": "Where woman's biting grip has left its trace: My heart, the beasts devoured--seek it not!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s185",
+      "title": "My heart is a palace pillaged by the herd;",
+      "place": "My heart is a palace pillaged by the herd;",
+      "reentry": "They kill and take each other by the throat! A perfume glides around your bosom bared--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s186",
+      "title": "O loveliness, thou scourge of souls--devote",
+      "place": "O loveliness, thou scourge of souls--devote",
+      "reentry": "Thine eyes of fire--luminous-like feasts, To burn these rags--rejected by the beasts!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s187",
+      "title": "Autumn Song",
+      "place": "Autumn Song",
+      "reentry": "I",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s188",
+      "title": "Shortly we will plunge within the frigid gloom,",
+      "place": "Shortly we will plunge within the frigid gloom,",
+      "reentry": "Farewell swift summer brightness; all too short-- I hear already sounding with a death-like boom The wood that falls upon the pavement of the court.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s189",
+      "title": "The whole of winter enters in my Being--pain,",
+      "place": "The whole of winter enters in my Being--pain,",
+      "reentry": "Hate, honor, labour hard and forced--and dread, And like the northern sun upon its polar plane",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s190",
+      "title": "My heart will soon be but a stone, iced and red",
+      "place": "My heart will soon be but a stone, iced and red",
+      "reentry": "I listen trembling unto every log that falls, The scaffold, which they build, has not a duller sound,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s191",
+      "title": "My spirits waver, like the trembling tower walls",
+      "place": "My spirits waver, like the trembling tower walls",
+      "reentry": "that shake--with every echoing blow the builders pound.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s192",
+      "title": "Meeseemeth--as to these monotonous blows I sway,",
+      "place": "Meeseemeth--as to these monotonous blows I sway,",
+      "reentry": "They nail for one a coffin lid, or sound a knell-- For whom? Autumn now--and summer yesterday! This strange mysterious noise betokens a farewell.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s193",
+      "title": "I love within your oblong eyes the verdant rays,",
+      "place": "I love within your oblong eyes the verdant rays,",
+      "reentry": "My sweet! but bitter everything to-day meseems: And nought--your love, the boudoir, nor the flickering blaze,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s194",
+      "title": "Can replace the sun that o'er the screen streams",
+      "place": "Can replace the sun that o'er the screen streams",
+      "reentry": "And yet bemother and caress me, tender heart!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s195",
+      "title": "Even me the thankless and the worthless one;",
+      "place": "Even me the thankless and the worthless one;",
+      "reentry": "Beloved or sister--unto me the sweets impart Of a glorious autumn or a sinking sun.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s196",
+      "title": "Oh grant me--as upon your knees my head I lay,",
+      "place": "Oh grant me--as upon your knees my head I lay,",
+      "reentry": "(Because the white and torrid summer I regret), To taste the parted season's mild and amber ray.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s197",
+      "title": "Imagine Diana in gorgeous array,",
+      "place": "Imagine Diana in gorgeous array,",
+      "reentry": "How into the forests and thickets she flies, With her hair in the breezes, and flushed for the fray,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s198",
+      "title": "How the very best riders she proudly defies",
+      "place": "How the very best riders she proudly defies",
+      "reentry": "Have you seen Théroigne, of the blood-thirsty heart,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s199",
+      "title": "As an unshod herd to attack he bestirs,",
+      "place": "As an unshod herd to attack he bestirs,",
+      "reentry": "With cheeks all inflamed, playing up to his part, As he goes, sword in hand, up the royal stairs?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s200",
+      "title": "And so is Sisina--yet this warrior sweet,",
+      "place": "And so is Sisina--yet this warrior sweet,",
+      "reentry": "Has a soul with compassion and kindness replete, Inspired by drums and by powder, her sway",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s201",
+      "title": "Knows how to concede to the supplicants' prayers,",
+      "place": "Knows how to concede to the supplicants' prayers,",
+      "reentry": "And her bosom, laid waste by the flames, has alway, For those that are worthy, a fountain of tears.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s202",
+      "title": "In a country perfumed with the sun's embrace,",
+      "place": "In a country perfumed with the sun's embrace,",
+      "reentry": "I knew 'neath a dais of purpled palms, And branches where idleness weeps o'er one's face,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s203",
+      "title": "A Creolean lady of unknown charms",
+      "place": "A Creolean lady of unknown charms",
+      "reentry": "Her tint, pale and warm--this bewitching bride,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s204",
+      "title": "Displays a nobly nurtured mien,",
+      "place": "Displays a nobly nurtured mien,",
+      "reentry": "Courageous and grand like a huntsman, her stride; A tranquil smile and eyes serene.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s205",
+      "title": "If, madam, you'd go to the true land of gain,",
+      "place": "If, madam, you'd go to the true land of gain,",
+      "reentry": "By the banks of the verdant Loire or the Seine, How worthy to garnish some pile of renown.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s206",
+      "title": "You'd awake in the calm of some shadowy nest,",
+      "place": "You'd awake in the calm of some shadowy nest,",
+      "reentry": "A thousand songs in the poet's breast, That your eyes would inspire far more than your brown.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s207",
+      "title": "Moesta et Errabunda",
+      "place": "Moesta et Errabunda",
+      "reentry": "Oh, Agatha, tell! does thy heart not at times fly away?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s208",
+      "title": "Far from the city impure and the lowering sea,",
+      "place": "Far from the city impure and the lowering sea,",
+      "reentry": "To another ocean that blinds with its dazzling array, So blue and so clear and profound, like virginity? Oh, Agatha, tell! does thy heart not at times fly away?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s209",
+      "title": "To sing us (attuned to an Æolus-organ that rolls",
+      "place": "To sing us (attuned to an Æolus-organ that rolls",
+      "reentry": "Forth a grumbling burden) a lenitive lullabye? The sea, the vast ocean our travail and trouble consoles!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s210",
+      "title": "Oh, say! it is true that Agatha's desolate heart,",
+      "place": "Oh, say! it is true that Agatha's desolate heart,",
+      "reentry": "Proclaimeth, \"Away from remorse, and from crimes, and from cares,\" Oh, carry me, waggons, oh, sailing ships, help me depart!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s211",
+      "title": "Than China or India, is it still further away?",
+      "place": "Than China or India, is it still further away?",
+      "reentry": "Or, could one with pityful prayers bring it back to our sight? Or yet with a silvery voice o'er the ages convey That innocent heaven o'erflowing with furtive delight!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s212",
+      "title": "Just like an angel with evil eye,",
+      "place": "Just like an angel with evil eye,",
+      "reentry": "I shall return to thee silently, Upon thy bower I'll alight,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s213",
+      "title": "With falling shadows of the night",
+      "place": "With falling shadows of the night",
+      "reentry": "With thee, my brownie, I'll commune,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s214",
+      "title": "And give thee kisses cold as the moon,",
+      "place": "And give thee kisses cold as the moon,",
+      "reentry": "And with a serpent's moist embrace, I'll crawl around thy resting-place.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s215",
+      "title": "And when the livid morning falls,",
+      "place": "And when the livid morning falls,",
+      "reentry": "Thou'lt find alone the empty walls, And till the evening, cold 'twill be.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s216",
+      "title": "As others with their tenderness,",
+      "place": "As others with their tenderness,",
+      "reentry": "Upon thy life and youthfulness, I'll reign alone with dread o'er thee.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s217",
+      "title": "They ask me--thy crystalline eyes, so acute,",
+      "place": "They ask me--thy crystalline eyes, so acute,",
+      "reentry": "\"Odd lover--why am I to thee so dear?\" --Be sweet and keep silent, my heart, which is sear,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s218",
+      "title": "For all save the rude and untutored brute,",
+      "place": "For all save the rude and untutored brute,",
+      "reentry": "Is loth its infernal depths to reveal,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s219",
+      "title": "And its dissolute motto engraven with fire,",
+      "place": "And its dissolute motto engraven with fire,",
+      "reentry": "Oh charmer! whose arms endless slumber inspire! I abominate passion and wit makes me ill.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s220",
+      "title": "So let us love gently. Within his retreat,",
+      "place": "So let us love gently. Within his retreat,",
+      "reentry": "Foreboding, Love seeks for his arrows a prey, I know all the arms of his battle array.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s221",
+      "title": "Delirium and loathing--O pale Marguerite!",
+      "place": "Delirium and loathing--O pale Marguerite!",
+      "reentry": "Like me, art thou not an autumnal ray, Alas my so white, my so cold Marguerite!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s222",
+      "title": "Sadness of the Moon-Goddess",
+      "place": "Sadness of the Moon-Goddess",
+      "reentry": "To-night the Moon dreams with increased weariness,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s223",
+      "title": "Like a beauty stretched forth on a downy heap",
+      "place": "Like a beauty stretched forth on a downy heap",
+      "reentry": "Of rugs, while her languorous fingers caress The contour of her breasts, before falling to sleep.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s224",
+      "title": "On the satin back of the avalanche soft,",
+      "place": "On the satin back of the avalanche soft,",
+      "reentry": "She falls into lingering swoons, as she dies, While she lifteth her eyes to white visions aloft,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s225",
+      "title": "Which like efflorescence float up to the skies",
+      "place": "Which like efflorescence float up to the skies",
+      "reentry": "When at times, in her languor, down on to this sphere,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s226",
+      "title": "She slyly lets trickle a furtive tear,",
+      "place": "She slyly lets trickle a furtive tear,",
+      "reentry": "A poet, desiring slumber to shun,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s227",
+      "title": "Takes up this pale tear in the palm of his hand",
+      "place": "Takes up this pale tear in the palm of his hand",
+      "reentry": "(The colours of which like an opal blend), And buries it far from the eyes of the sun.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s228",
+      "title": "All ardent lovers and all sages prize,",
+      "place": "All ardent lovers and all sages prize,",
+      "reentry": "--As ripening years incline upon their brows-- The mild and mighty cats--pride of the house--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s229",
+      "title": "That like unto them are indolent, stern and wise",
+      "place": "That like unto them are indolent, stern and wise",
+      "reentry": "The friends of Learning and of Ecstasy,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s230",
+      "title": "They search for silence and the horrors of gloom;",
+      "place": "They search for silence and the horrors of gloom;",
+      "reentry": "The devil had used them for his steeds of Doom, Could he alone have bent their pride to slavery.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s231",
+      "title": "When musing, they display those outlines chaste,",
+      "place": "When musing, they display those outlines chaste,",
+      "reentry": "Of the great sphinxes--stretched o'er the sandy waste, That seem to slumber deep in a dream without end:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s232",
+      "title": "From out their loins a fountainous furnace flies,",
+      "place": "From out their loins a fountainous furnace flies,",
+      "reentry": "And grains of sparkling gold, as fine as sand, Bestar the mystic pupils of their eyes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s233",
+      "title": "Beneath the shades of sombre yews,",
+      "place": "Beneath the shades of sombre yews,",
+      "reentry": "The silent owls sit ranged in rows, Like ancient idols, strangely pose,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s234",
+      "title": "And darting fiery eyes, they muse",
+      "place": "And darting fiery eyes, they muse",
+      "reentry": "Immovable, they sit and gaze,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s235",
+      "title": "Until the melancholy hour,",
+      "place": "Until the melancholy hour,",
+      "reentry": "At which the darknesses devour The faded sunset's slanting rays.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s236",
+      "title": "Their attitude, instructs the wise,",
+      "place": "Their attitude, instructs the wise,",
+      "reentry": "That he--within this world--who flies From tumult and from merriment;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s237",
+      "title": "The man allured by a passing face,",
+      "place": "The man allured by a passing face,",
+      "reentry": "For ever bears the chastisement Of having wished to change his place.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s238",
+      "title": "Oft Music possesses me like the seas!",
+      "place": "Oft Music possesses me like the seas!",
+      "reentry": "To my planet pale, 'Neath a ceiling of mist, in the lofty breeze,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s239",
+      "title": "I set my sail",
+      "place": "I set my sail",
+      "reentry": "With inflated lungs and expanded chest,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s240",
+      "title": "Like to a sail,",
+      "place": "Like to a sail,",
+      "reentry": "On the backs of the heaped-up billows I rest-- Which the shadows veil--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s241",
+      "title": "I feel all the anguish within me arise",
+      "place": "I feel all the anguish within me arise",
+      "reentry": "Of a ship in distress; The tempest, the rain, 'neath the lowering skies,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s242",
+      "title": "My body caress;",
+      "place": "My body caress;",
+      "reentry": "At times, the calm pool or the mirror clear Of my despair!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s243",
+      "title": "Where snails abound--in a juicy soil,",
+      "place": "Where snails abound--in a juicy soil,",
+      "reentry": "I will dig for myself a fathomless grave, Where at leisure mine ancient bones I can coil, And sleep--quite forgotten--like a shark 'neath the wave.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s244",
+      "title": "I hate every tomb--I abominate wills,",
+      "place": "I hate every tomb--I abominate wills,",
+      "reentry": "And rather than tears from the world to implore, I would ask of the crows with their vampire bills",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s245",
+      "title": "To devour every bit of my carcass impure",
+      "place": "To devour every bit of my carcass impure",
+      "reentry": "Oh worms, without eyes, without ears, black friends!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s246",
+      "title": "To you a defunct-one, rejoicing, descends,",
+      "place": "To you a defunct-one, rejoicing, descends,",
+      "reentry": "Enlivened Philosophers--offspring of Dung!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s247",
+      "title": "Without any qualms, o'er my wreckage spread,",
+      "place": "Without any qualms, o'er my wreckage spread,",
+      "reentry": "And tell if some torment there still can be wrung For this soul-less old frame that is dead 'midst the dead!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s248",
+      "title": "How sweet and bitter, on a winter night,",
+      "place": "How sweet and bitter, on a winter night,",
+      "reentry": "Beside the palpitating fire to list, As, slowly, distant memories alight,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s249",
+      "title": "To sounds of chimes that sing across the mist",
+      "place": "To sounds of chimes that sing across the mist",
+      "reentry": "Oh, happy is that bell with hearty throat,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s250",
+      "title": "Which neither age nor time can e'er defeat,",
+      "place": "Which neither age nor time can e'er defeat,",
+      "reentry": "Which faithfully uplifts its pious note, Like an agèd soldier on his beat.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s251",
+      "title": "For me, my soul is cracked, and 'mid her cares,",
+      "place": "For me, my soul is cracked, and 'mid her cares,",
+      "reentry": "Would often fill with her songs the midnight airs And oft it chances that her feeble moan",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s252",
+      "title": "Is like the wounded warrior's fainting groan,",
+      "place": "Is like the wounded warrior's fainting groan,",
+      "reentry": "Who by a lake of blood, 'neath bodies slain, In anguish falls, and never moves again.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s253",
+      "title": "The rainy moon of all the world is weary,",
+      "place": "The rainy moon of all the world is weary,",
+      "reentry": "And from its urn a gloomy cold pours down, Upon the pallid inmates of the mortuary,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s254",
+      "title": "And on the neighbouring outskirts of the town",
+      "place": "And on the neighbouring outskirts of the town",
+      "reentry": "My wasted cat, in searching for a litter,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s255",
+      "title": "Bestirs its mangy paws from post to post;",
+      "place": "Bestirs its mangy paws from post to post;",
+      "reentry": "(A poet's soul that wanders in the gutter, With the jaded voice of a shiv'ring ghost).",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s256",
+      "title": "The smoking pine-log, while the drone laments,",
+      "place": "The smoking pine-log, while the drone laments,",
+      "reentry": "Accompanies the wheezy pendulum, The while amidst a haze of dirty scents,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s257",
+      "title": "The gallant knave of hearts and queen of spades",
+      "place": "The gallant knave of hearts and queen of spades",
+      "reentry": "Relate their ancient amorous escapades.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s258",
+      "title": "Great forests, you alarm me like a mighty fane;",
+      "place": "Great forests, you alarm me like a mighty fane;",
+      "reentry": "Like organ-tones you roar, and in our hearts of stone, Where ancient sobs vibrate, O halls of endless pain!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s259",
+      "title": "The answering echoes of your \"De Profundis\" moan",
+      "place": "The answering echoes of your \"De Profundis\" moan",
+      "reentry": "I hate thee, Ocean! hate thy tumults and thy throbs,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s260",
+      "title": "My spirit finds them in himself. This bitter glee",
+      "place": "My spirit finds them in himself. This bitter glee",
+      "reentry": "Of vanquished mortals, full of insults and of sobs, I hear it in the mighteous laughter of the sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s261",
+      "title": "O starless night! thy loveliness my soul inhales,",
+      "place": "O starless night! thy loveliness my soul inhales,",
+      "reentry": "Without those starry rays which speak a language known, For I desire the dark, the naked and the lone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s262",
+      "title": "Magnetic Horror",
+      "place": "Magnetic Horror",
+      "reentry": "\"Beneath this sky, so livid and strange,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s263",
+      "title": "Tormented like thy destiny,",
+      "place": "Tormented like thy destiny,",
+      "reentry": "What thoughts within thy spirit range Themselves?--O libertine reply.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s264",
+      "title": "Towards the uncertain, and the vast,",
+      "place": "Towards the uncertain, and the vast,",
+      "reentry": "And yet, like Ovid--I'll not mourn-- Who from his Roman Heaven was cast.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s265",
+      "title": "O heavens, turbulent as the streams,",
+      "place": "O heavens, turbulent as the streams,",
+      "reentry": "In you I mirror forth my pride! Your clouds, which clad in mourning, glide,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s266",
+      "title": "Are the hearses of my dreams,",
+      "place": "Are the hearses of my dreams,",
+      "reentry": "And in your illusion lies the hell, Wherein my heart delights to dwell.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s267",
+      "title": "Where'er he may rove, upon sea or on land,",
+      "place": "Where'er he may rove, upon sea or on land,",
+      "reentry": "'Neath a fiery sky or a pallid sun, Be he Christian or one of Cythera's band,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s268",
+      "title": "Opulent Croesus or beggar--'tis one,",
+      "place": "Opulent Croesus or beggar--'tis one,",
+      "reentry": "Whether citizen, peasant or vagabond he,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s269",
+      "title": "Be his little brain active or dull. Everywhere,",
+      "place": "Be his little brain active or dull. Everywhere,",
+      "reentry": "Man feels the terror of mystery, And looks upon high with a glance full of fear.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s270",
+      "title": "The Heaven above, that oppressive wall;",
+      "place": "The Heaven above, that oppressive wall;",
+      "reentry": "A ceiling lit up in some lewd music hall, Where the actors step forth on a blood-red soil;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s271",
+      "title": "The eremite's hope, and the dread of the sot,",
+      "place": "The eremite's hope, and the dread of the sot,",
+      "reentry": "The Sky; that black lid of a mighty pot, Where, vast and minute, human Races boil.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s272",
+      "title": "Bertha's Eyes",
+      "place": "Bertha's Eyes",
+      "reentry": "The loveliest eyes you can scorn with your wondrous glow: O! beautiful childish eyes there abounds in your light, A something unspeakably tender and good as the night: O! eyes! over me your enchanting darkness let flow.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s273",
+      "title": "How beauteous the sun as it rises supreme,",
+      "place": "How beauteous the sun as it rises supreme,",
+      "reentry": "Like an explosion that greets us from above, Oh, happy is he that can hail with love,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s274",
+      "title": "Its decline, more glorious far, than a dream",
+      "place": "Its decline, more glorious far, than a dream",
+      "reentry": "I saw flower, furrow, and brook.... I recall How they swooned like a tremulous heart 'neath the sun, Let us haste to the sky-line, 'tis late, let us run,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s275",
+      "title": "At least to catch one slanting ray ere it fall",
+      "place": "At least to catch one slanting ray ere it fall",
+      "reentry": "But the god, who eludes me, I chase all in vain,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s276",
+      "title": "The night, irresistible, plants its domain,",
+      "place": "The night, irresistible, plants its domain,",
+      "reentry": "Black mists and vague shivers of death it forbodes;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s277",
+      "title": "And on the swamp's margin, my timid foot treads",
+      "place": "And on the swamp's margin, my timid foot treads",
+      "reentry": "Upon slimy snails, and on unseen toads.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s278",
+      "title": "Be wise, O my Woe, seek thy grievance to drown,",
+      "place": "Be wise, O my Woe, seek thy grievance to drown,",
+      "reentry": "Thou didst call for the night, and behold it is here, An atmosphere sombre, envelopes the town,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s279",
+      "title": "To some bringing peace and to others a care",
+      "place": "To some bringing peace and to others a care",
+      "reentry": "Whilst the manifold souls of the vile multitude, 'Neath the lash of enjoyment, that merciless sway,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s280",
+      "title": "Go plucking remorse from the menial brood,",
+      "place": "Go plucking remorse from the menial brood,",
+      "reentry": "From them far, O my grief, hold my hand, come this way.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s281",
+      "title": "From Heaven, in faded apparel attired,",
+      "place": "From Heaven, in faded apparel attired,",
+      "reentry": "How Regret, smiling, foams on the waters like yeast;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s282",
+      "title": "Its arches of slumber the dying sun spreads,",
+      "place": "Its arches of slumber the dying sun spreads,",
+      "reentry": "And like a long winding-sheet dragged to the East, Oh, hearken Beloved, how the Night softly treads!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s283",
+      "title": "To a Passer-by",
+      "place": "To a Passer-by",
+      "reentry": "Around me thundered the deafening noise of the street, In mourning apparel, portraying majestic distress, With queenly fingers, just lifting the hem of her dress,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s284",
+      "title": "A stately woman passed by with hurrying feet",
+      "place": "A stately woman passed by with hurrying feet",
+      "reentry": "Agile and noble, with limbs of perfect poise, Ah, how I drank, thrilled through like a Being insane, In her look, a dark sky, from whence springs forth the hurricane, There lay but the sweetness that charms, and the joy that destroys.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s285",
+      "title": "Shall I not see you again till this life is o'er!",
+      "place": "Shall I not see you again till this life is o'er!",
+      "reentry": "Elsewhere, far away ... too late, perhaps never more, For I know not whither you fly, nor you, where I go, O soul that I would have loved, and *that* you know!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s286",
+      "title": "When I behold thee wander by, my languorous love,",
+      "place": "When I behold thee wander by, my languorous love,",
+      "reentry": "To songs of viols which throughout the dome resound, Harmonious and stately as thy footsteps move, Bestowing forth the languor of thy glance profound.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s287",
+      "title": "When I regard thee, glowing in the gaslight rays,",
+      "place": "When I regard thee, glowing in the gaslight rays,",
+      "reentry": "Thy pallid brow embellished by a charm obscure, Here where the evening torches light the twilight haze, Thine eyes attracting me like those of a portraiture,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s288",
+      "title": "I say--How beautiful she is! how strangely rich!",
+      "place": "I say--How beautiful she is! how strangely rich!",
+      "reentry": "A mighty memory, royal and commanding tower, A garland: and her heart, bruised like a ruddy peach,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s289",
+      "title": "Is ripe--like her body for Love's sapient power",
+      "place": "Is ripe--like her body for Love's sapient power",
+      "reentry": "Art thou, that spicy Autumn-fruit with taste supreme?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s290",
+      "title": "Art thou a funeral vase inviting tears of grief?",
+      "place": "Art thou a funeral vase inviting tears of grief?",
+      "reentry": "Aroma--causing one of Eastern wastes to dream; A downy cushion, bunch of flowers or golden sheaf?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s291",
+      "title": "I know that there are eyes, most melancholy ones,",
+      "place": "I know that there are eyes, most melancholy ones,",
+      "reentry": "Wherein no precious secret deeply hidden lies, Resplendent shrines, devoid of relics, sacred stones, More empty, more profound than ye yourselves, O skies?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s292",
+      "title": "To kindle senses which the cruel truth abhor?",
+      "place": "To kindle senses which the cruel truth abhor?",
+      "reentry": "All one to me! thy folly or thy heart of ice, Decoy or mask, all hail! thy beauty I adore!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s293",
+      "title": "O last of Autumn and Winter--steeped in haze,",
+      "place": "O last of Autumn and Winter--steeped in haze,",
+      "reentry": "O sleepy seasons! you I love and praise, Because around my heart and brain you twine",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s294",
+      "title": "A misty winding-sheet and a nebulous shrine",
+      "place": "A misty winding-sheet and a nebulous shrine",
+      "reentry": "On that great plain, where frigid blasts abound, Where through the nights, so long, the vane whirls round,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s295",
+      "title": "My soul, more free than in the springtime soft,",
+      "place": "My soul, more free than in the springtime soft,",
+      "reentry": "Will stretch her raven wings and soar aloft,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s296",
+      "title": "Unto an heart with gloomy things replete,",
+      "place": "Unto an heart with gloomy things replete,",
+      "reentry": "On which remain the frosts of former Times, O pallid seasons, mistress of our climes",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s297",
+      "title": "As your pale shadows--nothing is so sweet,",
+      "place": "As your pale shadows--nothing is so sweet,",
+      "reentry": "Unless it be, on a moonless night a-twain, On some chance couch to soothe to sleep our Pain.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s298",
+      "title": "To-day the Distance is superb,",
+      "place": "To-day the Distance is superb,",
+      "reentry": "Without bridle, spur or curb, Let us mount on the back of wine",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s299",
+      "title": "For Regions fairy and divine!",
+      "place": "For Regions fairy and divine!",
+      "reentry": "Let's, like two angels tortured by",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s300",
+      "title": "Some dark, delirious phantasy,",
+      "place": "Some dark, delirious phantasy,",
+      "reentry": "Pursue the distant mirage drawn O'er the blue crystal of the dawn!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s301",
+      "title": "And gently balanced on the wing",
+      "place": "And gently balanced on the wing",
+      "reentry": "Of some obliging whirlwind, we --In equal rapture revelling--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s302",
+      "title": "My sister, side by side will flee,",
+      "place": "My sister, side by side will flee,",
+      "reentry": "Without repose, nor truce, where gleams The golden Paradise of my dreams!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s303",
+      "title": "Condemned Women",
+      "place": "Condemned Women",
+      "reentry": "Like thoughtful cattle on the yellow sands reclined, They turn their eyes towards the horizon of the sea, Their feet towards each other stretched, their hands entwined,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s304",
+      "title": "They tell of gentle yearning, frigid misery",
+      "place": "They tell of gentle yearning, frigid misery",
+      "reentry": "A few, with heart-confiding faith of old, imbued Amid the darkling grove, where silver streamlets flow,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s305",
+      "title": "Unfold to each their loves of tender infanthood,",
+      "place": "Unfold to each their loves of tender infanthood,",
+      "reentry": "And carve the verdant stems of the vine-kissed portico.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s306",
+      "title": "Ascend the hallowed rocks of ancient mystic lore,",
+      "place": "Ascend the hallowed rocks of ancient mystic lore,",
+      "reentry": "Where long ago--St. Anthony, like a surging wave, The naked purpled breasts of his temptation saw.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s307",
+      "title": "Among the silent chasm of some pagan caves,",
+      "place": "Among the silent chasm of some pagan caves,",
+      "reentry": "To soothe their burning fevers unto thee they call O Bacchus! who all ancient wounds and sorrow laves.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s308",
+      "title": "Who hide a whip beneath their garments secretly,",
+      "place": "Who hide a whip beneath their garments secretly,",
+      "reentry": "Commingling, in the sombre wood and lonesome night, The foam of torments and of tears with ecstasy.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s309",
+      "title": "O saints and satyrs, searchers for infinitude!",
+      "place": "O saints and satyrs, searchers for infinitude!",
+      "reentry": "At times so full of shouts, at times so full of tears!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s310",
+      "title": "You, to whom within your hell my spirit flies,",
+      "place": "You, to whom within your hell my spirit flies,",
+      "reentry": "Poor sisters--yea, I love you as I pity you, For your unsatiated thirsts and anguished sighs, And for the vials of love within your hearts so true.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s311",
+      "title": "We will have beds which exhale odours soft,",
+      "place": "We will have beds which exhale odours soft,",
+      "reentry": "We will have divans profound as the tomb, And delicate plants on the ledges aloft,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s312",
+      "title": "Which under the bluest of skies for us bloom",
+      "place": "Which under the bluest of skies for us bloom",
+      "reentry": "Exhausting our hearts to their last desires,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s313",
+      "title": "They both shall be like unto two glowing coals,",
+      "place": "They both shall be like unto two glowing coals,",
+      "reentry": "Reflecting the twofold light of their fires Across the twin mirrors of our two souls.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s314",
+      "title": "One evening of mystical azure skies,",
+      "place": "One evening of mystical azure skies,",
+      "reentry": "We'll exchange but one single lightning flash, Just like a long sob--replete with good byes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s315",
+      "title": "And later an angel shall joyously pass",
+      "place": "And later an angel shall joyously pass",
+      "reentry": "Through the half-open doors, to replenish and wash The torches expired, and the tarnished glass.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s316",
+      "title": "The Death of the Poor",
+      "place": "The Death of the Poor",
+      "reentry": "It is Death that consoles--yea, and causes our lives; 'Tis the goal of this Life--and of Hope the sole ray,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s317",
+      "title": "Which like a strong potion enlivens and gives",
+      "place": "Which like a strong potion enlivens and gives",
+      "reentry": "Us the strength to plod on to the end of the day.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s318",
+      "title": "Whereat one can eat, and sleep, and recline;",
+      "place": "Whereat one can eat, and sleep, and recline;",
+      "reentry": "'Tis an angel that holds in his magic hands",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s319",
+      "title": "The sleep, which ecstatic dream commands,",
+      "place": "The sleep, which ecstatic dream commands,",
+      "reentry": "Who remakes up the beds of the naked and poor;",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Mists and Rains The Wine of Lovers"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The Death of the Lovers The Death of the Poor"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Benediction"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "The poet issues forth upon this sorry sphere, His mother, horrified, and full of blasphemy, Uplifts her voice to God, who takes compassion on her."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "\"Ah, why did I not bear a serpent's nest entire, Instead of bringing forth this hideous Child of Doom!"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "When I conceived my expiation in my womb!\""
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "\"Yet since among all women thou hast chosen me"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "And since I cannot like a love-leaf wantonly Consign this stunted monster to the glowing grate,\""
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "\"I'll cause thine overwhelming hatred to rebound"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Forsooth, the branches of this wretched tree I'll wound And rob its pestilential blossoms of their might!\""
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "And knowing not the changeless statutes of all times, Herself, amid the flames of hell, prepares the pyre;"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Yet 'neath th' invisible shelter of an Angel's wing"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Exhales from all he eats and drinks, and everything The ever sweet ambrosia and the nectar red."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "He trifles with the winds and with the clouds that glide,"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "The spirit on his pilgrimage; that faithful guide, Oft weeps to see him joyful like a bird of Spring."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "All those that he would cherish shrink from him with fear,"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Endeavour hard some grievance from his heart to tear, And make on him the trial of their ferocity."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "Within the bread and wine outspread for his repast"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "And everything he touches, forth they slyly cast, Or scourge themselves, if e'er their feet betrod his way."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "His wife goes round proclaiming in the crowded quads-- \"Since he can find my body beauteous to behold,"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "And like unto them, redeck myself with shining gold?\""
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "\"I'll bathe myself with incense, spikenard and myrrh,"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "To see, in jest, if from a heart, that loves me dear, I cannot filch away the hommages divine.\""
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "\"And when of these impious jokes at length I tire, My frail but mighty hands, around his breast entwined, With nails, like harpies' nails, shall cunningly conspire"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "\"And like a youngling bird that trembles in its nest, I'll pluck his heart right out; within its own blood drowned,"
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "I'll throw it with intense disdain upon the ground!\""
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Towards the Heavens where he sees the sacred grail"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Whereon the lightenings from his lucid spirit veil The sight of the infuriated mob that swarms."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "\"Oh blest be thou, Almighty who bestowest pain,"
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "And like the most refreshing and the purest rain, To sanctify the strong, for saintly ecstasies.\""
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "\"I know that for the poet thou wilt grant a chair,"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "That of the endless feast thou wilt accord his share To him, of Virtues, Dominations and of Thrones.\""
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "\"I know, that Sorrow is that nobleness alone,"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "I know, in order to enwreathe my mystic crown I must inspire the ages and the universe.\""
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "\"And yet the buried jewels of Palmyra old,"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Of gems, that unto me you show could never hold Beside this diadem of blinding brilliancy.\""
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "\"For it shall be engendered from the purest fire"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "Of which the eyes of Mortals, in their sheen entire, Are but the tarnished mirrors, sad and overcast!\""
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "Echoes"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "Which oftentimes give tongue to words subdued, And Man traverses this symbolic wood,"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "Like lingering echoes, which afar confound"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "As vast as Night, and like transplendency, The scents and colours to each other respond."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "And scents there are, like infant's flesh as chaste,"
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "And others, proud, corrupted, rich and vast,"
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "Like amber, musk and frankincense and myrrh, That sing the soul's and senses' ecstasy."
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Thine eyes are bedimmed with the visions of Night, And silent and cold--I perceive on thy brow"
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "A succubus green, or a hobgoblin red, Has it poured o'er thee Horror and Love from its urn?"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "Thee to drown in the depths of some magic Minturne?"
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "That thy breast with strong thoughts could for ever be full, And that rhymthmic'ly flowing--thy Christian blood"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "Where each in his turn reigned the father of Rhymes Phoebus--and Pan, lord of Harvest-times."
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "Wilt have--when New Year speeds its wintry blast, Amid those tedious nights, with snow o'ercast,"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "Wilt thou thy marbled shoulders then revive"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "And--void thy purse and void thy palace--reap A golden hoard within some azure hive?"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "Suspend the censer like an acolyte, Te-Deums sing, with sanctimonious ease,"
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "Essay to lull the vulgar rabble's spleen; Thy laughter soaked in tears which no one sees."
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "With paintings, the Beatic Verity, The which--adorning their religious halls,"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "In days when Christian seeds bloomed o'er the land,"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "Upon the field of tombs would take his stand, Exalting Death in rude and simple way."
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "I dwell and search its depths from all eternity, And nought bedecks the walls of the odious spot."
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "From the living spectacle of my bitter lot, To mold my handywork and mine eyes' Delight?"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Enlivened at times by a brilliant sun; The rain and the winds wrought such havoc and harm"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "Behold now the Fall of ideas I have reached, And the shovel and rake one must therefore resume,"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "Where the waters dug trenches as deep as a tomb."
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "Will they find in this earth--like a shore that is laved-- The mystical fuel which vigour imparts?"
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "And the enemy black, which consumeth our hearts On the blood of our bodies, increases and thrives!"
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "O Sysiphus, thy pluck is required! And even though the heart aspired,"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "Afar from sepulchres renowned,"
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "Like a broken drum, my heart, Beats the funeral marches' sound."
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "In the long-forgotten deeps, Far from mattock and from sound;"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "Its perfumes, like a secret soft, Within the solitudes, profound."
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "While the ocean-suns bathed with a thousand fires, And which with their great and majestic spires,"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "The billows, in rolling depictured the skies,"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "The all-mighteous chords of their luscious refrain With the sun-set's colours reflexed in mine eyes."
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "In the midst of the azure, the splendour, the waves, While pregnant with perfumes, naked slaves"
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "Whose gentle and only care was to know The secret that caused me to languish so."
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "The sea is thy mirror, thou regardest thy soul In its mighteous waves that unendingly roll,"
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "Thou delight'st to plunge deep in thine image down; Thou tak'st it with eyes and with arms in embrace, And at times thine own inward voice would'st efface"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "You are both of you, sombre, secretive and deep:"
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "Oh sea--no one knoweth thy dazzling hoard, You both are so jealous your secrets to keep!"
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "Yet still without pity or mercy you fight, So mighty in plunder and death your delight:"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "Beauty"
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "And my bosom, where each one gets bruised in turn, To inspire the love of a poet is prone,"
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "As an unfathomed sphinx, enthroned by the Nile, My heart a swan's whiteness with granite combines,"
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "And never I weep and never I smile."
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "(Which the proudest of monuments seem to implant), To studies profound all their moments assign,"
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "Two mirrors, which Beauty in all things ignite: Mine eyes, my large eyes, of eternal Light!"
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "It could ne'er be those beauties of ivory vignettes;"
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "Nor puppet-like figures with castonets, That ever an heart like mine could engage."
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "His hospital-beauties in troups that whirl, For I cannot discover amid his pale roses"
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "Since, what for this fathomless heart I require"
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "--An Æschylus dream transposed from the South--"
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "Who so calmly thy limbs in strange posture hath drawn, Whose allurements are framed for a Titan's mouth."
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "I should have loved--erewhile when Heaven conceived"
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "Beside a maiden giantess to have lived, Like a luxurious cat at the feet of a queen;"
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "And grow, unchained, in awe-inspiring art, Within the mists across her eyes that stole"
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "And oft to scramble o'er her mighty limbs,"
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "Or in summer when the scorching sunlight streams"
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "And slumber in the shadow of her breast Like an hamlet 'neath the mountain-crest."
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "O Beauty! dost thou generate from Heaven or from Hell?"
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "Confusedly both wickedness and goodness dwell, And hence one might compare thee unto sparkling wine."
+    },
+    {
+      "id": "s81-1",
+      "sceneId": "s81",
+      "text": "Thy look containeth both the dawn and sunset stars,"
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "Thy kiss a philter, and thy mouth a Grecian vase, That renders heroes cowardly and infants hale."
+    },
+    {
+      "id": "s82-1",
+      "sceneId": "s82",
+      "text": "Yea, art thou from the planets, or the fiery womb? The demon follows in thy train, with magic fraught, Thou scatter'st seeds haphazardly of joy and doom, Thou govern'st everything, but answer'st unto nought."
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "Among thy jewels, Horror hath such charms for thee, And Murder 'mid thy mostly cherished trinklets bright,"
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "The blinded, fluttering moth towards the candle flies, Then frizzles, falls, and falters--\"Blessings unto thee\"-- The panting swain that o'er his beauteous mistress sighs, Seems like the Sick, that stroke their gravestones lovingly."
+    },
+    {
+      "id": "s84-1",
+      "sceneId": "s84",
+      "text": "What matter, if thou comest from the Heavens or Hell,"
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "So long thine eyes, thy smile, to me the way can tell Towards that Infinite I love, but never saw."
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "What matter if thou makest--blithe, voluptuous sprite-- With rhythms, perfumes, visions--O mine only queen!-- The universe less hideous and the hours less trite."
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "The scent of thine ardent breast I inhale, Celestial vistas my spirit assail;"
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "A langorous island, where Nature abounds"
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "And with men whose bodies are slim and astute, And with women whose frankness delights and astounds."
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "A port I see, laden with mast and with boat, Still wearied and torn by the distant brine;"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "The air, round my slumberous senses intwine, And mix, in my soul, with the mariners' song."
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "O fleece, that foams down unto the shoulders bare! O curls, O scents which lovely languidness exhale!"
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "With memories, sleeping deep within this tress of hair, I'll wave it in the evening breezes like a veil!"
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "A world forgotten, distant, nearly dead and spent, Within thy depths, O aromatic forest! lies."
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "Mine own, Belovèd! glides within thy sacred scent."
+    },
+    {
+      "id": "s95-1",
+      "sceneId": "s95",
+      "text": "There I will hasten, where the trees and humankind"
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "Strong tresses bear me, be to me the waves and wind! Within thy fragrance lies a dazzling dream confined"
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "A loudly echoing harbour, where my soul may hold To quaff, the silver cup of colours, scents and sounds,"
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "And stretch their mighty arms, the glory to enfold Of virgin skies, where never-ending heat abounds."
+    },
+    {
+      "id": "s98-1",
+      "sceneId": "s98",
+      "text": "I'll plunge my brow, enamoured with voluptuousness"
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "Until my subtle spirit, which thy waves caress, Shall find you once again, O fertile weariness;"
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "Ye tresses blue--recess of strange and sombre shades,"
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "Upon the downy beeches, by your curls' cascades, Among your mingling fragrances, my spirit wades"
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "Long--foraye--my hand, within thy heavy mane, Shall scatter rubies, pearls, sapphires eternally, And thus my soul's desire for thee shall never wane; For art not thou the oasis where I dream and drain With draughts profound, the golden wine of memory?"
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "Even when she walks, she seems to dance, Like swaying serpents round those wands entwined"
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "So like the desert's Blue, and the sands remote,"
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "Or like the sea-weeds 'neath the waves that float, Indifferently she moulds her budding life."
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "And in her mien, symbolical and cold, Wherein an angel mingles with a sphinx of old,"
+    },
+    {
+      "id": "s106-1",
+      "sceneId": "s106",
+      "text": "Where all is gold, and steel, and gems, and light,"
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "The sterile woman's frigid majesty."
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "Beneath a black marble-made statuette, And when thou'lt have nought for thy house or alcove,"
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "When the tomb-stone, oppressing thy timorous breast, And thy hips drooping sweetly with listless decay,"
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "And thy feet from pursuing their adventurous way,"
+    },
+    {
+      "id": "s110-1",
+      "sceneId": "s110",
+      "text": "Then the grave, that dark friend of my limitless dreams (For the grave ever readeth the poet aright),"
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "'Twill query--\"What use to thee, incomplete spright That thou ne'er hast unfathomed the tears of the dead\"?-- Then the worms will gnaw deep at thy body, like Dread."
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "Oh, thou all my pleasures, oh, thou all my prayers! Can'st thou remember those luscious caresses, The charm of the hearth and the sweet evening airs?"
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "Those evenings illumed by the glow of the coal, And those roseate nights with their vaporous wings, How calm was thy breast and how good was thy soul, 'Twas then we uttered imperishable things,"
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "How lovely the suns on those hot, autumn nights! How vast were the heavens! and the heart how hale! As I leaned towards you--oh, my Queen of Delights,"
+    },
+    {
+      "id": "s115-0",
+      "sceneId": "s115",
+      "text": "How lovely the sun on those hot, autumn nights!"
+    },
+    {
+      "id": "s116-0",
+      "sceneId": "s116",
+      "text": "And deep through the darkness thine eyes I divined, And I drank of thy breath--oh sweetness, oh gall,"
+    },
+    {
+      "id": "s117-0",
+      "sceneId": "s117",
+      "text": "The shadows of Night-time grew dense like a pall."
+    },
+    {
+      "id": "s118-0",
+      "sceneId": "s118",
+      "text": "And to live my Past--laid on thy knees--once more, For where should I seek for thy beauties but here"
+    },
+    {
+      "id": "s119-0",
+      "sceneId": "s119",
+      "text": "I know how to call forth those moments so dear."
+    },
+    {
+      "id": "s120-0",
+      "sceneId": "s120",
+      "text": "Are they born in some gulf to our plummets denied? Like rejuvenate suns that mount up to the skies, That first have been cleansed in the depths of the tide;"
+    },
+    {
+      "id": "s121-0",
+      "sceneId": "s121",
+      "text": "O Moon of my Life! wrap thyself up in shade; At will, smoke or slumber, be silent, be staid,"
+    },
+    {
+      "id": "s122-0",
+      "sceneId": "s122",
+      "text": "I cherish thee thus! But if 'tis thy mood,"
+    },
+    {
+      "id": "s123-0",
+      "sceneId": "s123",
+      "text": "To float in the regions where madness careers, Fair dagger! burst forth from thy sheath! 'tis good."
+    },
+    {
+      "id": "s124-0",
+      "sceneId": "s124",
+      "text": "Or kindle desire by the looks of some clown! Thine All is my joy, whether dull or aflame!"
+    },
+    {
+      "id": "s125-0",
+      "sceneId": "s125",
+      "text": "There is not a nerve in my trembling frame But cries, \"I adore thee, Beelzebub mine!\""
+    },
+    {
+      "id": "s126-0",
+      "sceneId": "s126",
+      "text": "\"From whence it comes, you ask, this gloom acute,"
+    },
+    {
+      "id": "s127-0",
+      "sceneId": "s127",
+      "text": "--When once our hearts have gathered in their fruit, To live is a curse! a secret known to all,"
+    },
+    {
+      "id": "s128-0",
+      "sceneId": "s128",
+      "text": "And like your joy--for all, both loud and shrill, Nay cease to clamour, be not e'er so curious!"
+    },
+    {
+      "id": "s129-0",
+      "sceneId": "s129",
+      "text": "Be still, O soul, with rapture ever rife! O mouth, with the childish smile! Far more than Life,"
+    },
+    {
+      "id": "s130-0",
+      "sceneId": "s130",
+      "text": "Let--let my heart, the wine of falsehood drink,"
+    },
+    {
+      "id": "s131-0",
+      "sceneId": "s131",
+      "text": "And in the shade of thy lashes long recline!"
+    },
+    {
+      "id": "s132-0",
+      "sceneId": "s132",
+      "text": "This morning came to visit me, And striving me to find at fault,"
+    },
+    {
+      "id": "s133-0",
+      "sceneId": "s133",
+      "text": "\"Among the many beauteous things, --All which *her* subtle grace proclaim--"
+    },
+    {
+      "id": "s134-0",
+      "sceneId": "s134",
+      "text": "Which go to make her charming frame,"
+    },
+    {
+      "id": "s134-1",
+      "sceneId": "s134",
+      "text": "\"Which is the sweetest unto thee\"?"
+    },
+    {
+      "id": "s135-0",
+      "sceneId": "s135",
+      "text": "\"Since all with her is destiny, Of preference there can be nought."
+    },
+    {
+      "id": "s136-0",
+      "sceneId": "s136",
+      "text": "If aught deludes I can not know, She either lulls one like the Night,"
+    },
+    {
+      "id": "s137-0",
+      "sceneId": "s137",
+      "text": "That harmony is too divine,"
+    },
+    {
+      "id": "s138-0",
+      "sceneId": "s138",
+      "text": "For powerless mortals to define In notes the many concords there."
+    },
+    {
+      "id": "s139-0",
+      "sceneId": "s139",
+      "text": "Of all my senses blent in one! Her voice a beauteous perfume is,"
+    },
+    {
+      "id": "s140-0",
+      "sceneId": "s140",
+      "text": "What sayest--heart erewhile engulfed in gloom, To the very lovely, very chaste, and very dear,"
+    },
+    {
+      "id": "s141-0",
+      "sceneId": "s141",
+      "text": "To her, with pride we chant an echoing Hymn,"
+    },
+    {
+      "id": "s142-0",
+      "sceneId": "s142",
+      "text": "Her flesh ethereal as the seraphim, Her eyes with robe of light our souls array."
+    },
+    {
+      "id": "s143-0",
+      "sceneId": "s143",
+      "text": "Among the streets or 'mid the multitude, Her shadow, torch-like, dances in the air,"
+    },
+    {
+      "id": "s144-0",
+      "sceneId": "s144",
+      "text": "That for my sake, alone ye love the Fair; I am the Guardian Angel, Muse and Dame!\""
+    },
+    {
+      "id": "s145-0",
+      "sceneId": "s145",
+      "text": "No doubt inspired by an Angel wise; They stand, those God-like brothers that are mine,"
+    },
+    {
+      "id": "s146-0",
+      "sceneId": "s146",
+      "text": "From all transgressions, from all snares, they save,"
+    },
+    {
+      "id": "s147-0",
+      "sceneId": "s147",
+      "text": "They are my servants, and I am their slave; And all my soul, this living torch obeys."
+    },
+    {
+      "id": "s148-0",
+      "sceneId": "s148",
+      "text": "Of candles, burning in full day; the sun Awakes, yet kills not their fantastic gleams:"
+    },
+    {
+      "id": "s149-0",
+      "sceneId": "s149",
+      "text": "The Awak'ning of my spirit ye proclaim, O stars--no sun can ever kill your flame!"
+    },
+    {
+      "id": "s150-0",
+      "sceneId": "s150",
+      "text": "With the gnawing Ideal, upon the debauchee, By the power of a strange decree,"
+    },
+    {
+      "id": "s151-0",
+      "sceneId": "s151",
+      "text": "The mental Heaven's inaccessible blue,"
+    },
+    {
+      "id": "s152-0",
+      "sceneId": "s152",
+      "text": "Expands and sinks; towards the chasm drawn. Thus, cherished goddess, Being pure and true--"
+    },
+    {
+      "id": "s153-0",
+      "sceneId": "s153",
+      "text": "Thine image, more sublime, more pink, more clear, Before my staring eyes is ever there."
+    },
+    {
+      "id": "s154-0",
+      "sceneId": "s154",
+      "text": "And thus thy spectre like the immortal sun, Is ever victorious--thou resplendent one!"
+    },
+    {
+      "id": "s155-0",
+      "sceneId": "s155",
+      "text": "The hour approacheth, when, as their stems incline,"
+    },
+    {
+      "id": "s156-0",
+      "sceneId": "s156",
+      "text": "And sounds and scents in the vesper breezes turn; A melancholy waltz--and a drowsiness divine."
+    },
+    {
+      "id": "s157-0",
+      "sceneId": "s157",
+      "text": "The viol vibrates like the wailing of souls that repine. A melancholy waltz--and a drowsiness divine,"
+    },
+    {
+      "id": "s158-0",
+      "sceneId": "s158",
+      "text": "The viol vibrates like the wailing of souls that repine; Sweet souls that shrink from chaos vast and etern,"
+    },
+    {
+      "id": "s159-0",
+      "sceneId": "s159",
+      "text": "The sunset drowns within its blood-red brine."
+    },
+    {
+      "id": "s159-1",
+      "sceneId": "s159",
+      "text": "Sweet souls that shrink from chaos vast and etern,"
+    },
+    {
+      "id": "s160-0",
+      "sceneId": "s160",
+      "text": "The sunset drowns within its blood-red brine, Thy thought within me glows like an incense urn."
+    },
+    {
+      "id": "s161-0",
+      "sceneId": "s161",
+      "text": "Thy mysterious eyes (are they grey, green or blue?), Alternately cruel, and tender, and shy,"
+    },
+    {
+      "id": "s162-0",
+      "sceneId": "s162",
+      "text": "Thou recallest those white days--with shadows caressed,"
+    },
+    {
+      "id": "s163-0",
+      "sceneId": "s163",
+      "text": "When racked by an anguish unfathomed that weeps, The nerves, too awake, jibe the spirit that sleeps."
+    },
+    {
+      "id": "s164-0",
+      "sceneId": "s164",
+      "text": "Where the suns of the nebulous seasons decline; How resplendent art thou--O pasturage vast,"
+    },
+    {
+      "id": "s165-0",
+      "sceneId": "s165",
+      "text": "O! dangerous dame--oh seductive clime!"
+    },
+    {
+      "id": "s166-0",
+      "sceneId": "s166",
+      "text": "And shall I know how from the frosts to entice Delights that are keener than iron and ice?"
+    },
+    {
+      "id": "s167-0",
+      "sceneId": "s167",
+      "text": "Consider how fair, Together to live it would be!"
+    },
+    {
+      "id": "s168-0",
+      "sceneId": "s168",
+      "text": "To love, till we die, In the land which resembles thee."
+    },
+    {
+      "id": "s169-0",
+      "sceneId": "s169",
+      "text": "'Neath erratic skies, --No charm could be like unto theirs--"
+    },
+    {
+      "id": "s170-0",
+      "sceneId": "s170",
+      "text": "Like those eyes of thine Which glow in the midst of their tears."
+    },
+    {
+      "id": "s171-0",
+      "sceneId": "s171",
+      "text": "Luxury, calm and voluptuousness."
+    },
+    {
+      "id": "s172-0",
+      "sceneId": "s172",
+      "text": "Polished bright by the years, Would decorate sweetly our rooms,"
+    },
+    {
+      "id": "s173-0",
+      "sceneId": "s173",
+      "text": "Would twine round our bowers And mingle their amber perfumes:"
+    },
+    {
+      "id": "s174-0",
+      "sceneId": "s174",
+      "text": "And the mirrors inlaid, This Eastern splendour among,"
+    },
+    {
+      "id": "s175-0",
+      "sceneId": "s175",
+      "text": "O'er our souls, and appeal With its tranquillous native tongue."
+    },
+    {
+      "id": "s176-0",
+      "sceneId": "s176",
+      "text": "Luxury, calm and voluptuousness."
+    },
+    {
+      "id": "s177-0",
+      "sceneId": "s177",
+      "text": "At the vessels asleep (Their humour is always to roam),"
+    },
+    {
+      "id": "s178-0",
+      "sceneId": "s178",
+      "text": "Thy smallest want From the ends of the earth that they come,"
+    },
+    {
+      "id": "s179-0",
+      "sceneId": "s179",
+      "text": "Upon meadow and stream, And upon the city entire 'Neath a violet crest,"
+    },
+    {
+      "id": "s180-0",
+      "sceneId": "s180",
+      "text": "Illumed by a golden fire."
+    },
+    {
+      "id": "s181-0",
+      "sceneId": "s181",
+      "text": "Luxury, calm and voluptuousness."
+    },
+    {
+      "id": "s181-1",
+      "sceneId": "s181",
+      "text": "\"Causerie\""
+    },
+    {
+      "id": "s182-0",
+      "sceneId": "s182",
+      "text": "Yet sadness rises in me like the flood, And leaves in ebbing on my lips morose,"
+    },
+    {
+      "id": "s183-0",
+      "sceneId": "s183",
+      "text": "In vain your hands my swooning breast embrace,"
+    },
+    {
+      "id": "s184-0",
+      "sceneId": "s184",
+      "text": "Where woman's biting grip has left its trace: My heart, the beasts devoured--seek it not!"
+    },
+    {
+      "id": "s185-0",
+      "sceneId": "s185",
+      "text": "They kill and take each other by the throat! A perfume glides around your bosom bared--"
+    },
+    {
+      "id": "s186-0",
+      "sceneId": "s186",
+      "text": "Thine eyes of fire--luminous-like feasts, To burn these rags--rejected by the beasts!"
+    },
+    {
+      "id": "s187-0",
+      "sceneId": "s187",
+      "text": "I"
+    },
+    {
+      "id": "s188-0",
+      "sceneId": "s188",
+      "text": "Farewell swift summer brightness; all too short-- I hear already sounding with a death-like boom The wood that falls upon the pavement of the court."
+    },
+    {
+      "id": "s189-0",
+      "sceneId": "s189",
+      "text": "Hate, honor, labour hard and forced--and dread, And like the northern sun upon its polar plane"
+    },
+    {
+      "id": "s190-0",
+      "sceneId": "s190",
+      "text": "I listen trembling unto every log that falls, The scaffold, which they build, has not a duller sound,"
+    },
+    {
+      "id": "s191-0",
+      "sceneId": "s191",
+      "text": "that shake--with every echoing blow the builders pound."
+    },
+    {
+      "id": "s192-0",
+      "sceneId": "s192",
+      "text": "They nail for one a coffin lid, or sound a knell-- For whom? Autumn now--and summer yesterday! This strange mysterious noise betokens a farewell."
+    },
+    {
+      "id": "s192-1",
+      "sceneId": "s192",
+      "text": "II"
+    },
+    {
+      "id": "s193-0",
+      "sceneId": "s193",
+      "text": "My sweet! but bitter everything to-day meseems: And nought--your love, the boudoir, nor the flickering blaze,"
+    },
+    {
+      "id": "s194-0",
+      "sceneId": "s194",
+      "text": "And yet bemother and caress me, tender heart!"
+    },
+    {
+      "id": "s195-0",
+      "sceneId": "s195",
+      "text": "Beloved or sister--unto me the sweets impart Of a glorious autumn or a sinking sun."
+    },
+    {
+      "id": "s195-1",
+      "sceneId": "s195",
+      "text": "Ephemeral task! the beckoning the beckoning empty tomb is set!"
+    },
+    {
+      "id": "s196-0",
+      "sceneId": "s196",
+      "text": "(Because the white and torrid summer I regret), To taste the parted season's mild and amber ray."
+    },
+    {
+      "id": "s196-1",
+      "sceneId": "s196",
+      "text": "Sisina"
+    },
+    {
+      "id": "s197-0",
+      "sceneId": "s197",
+      "text": "How into the forests and thickets she flies, With her hair in the breezes, and flushed for the fray,"
+    },
+    {
+      "id": "s198-0",
+      "sceneId": "s198",
+      "text": "Have you seen Théroigne, of the blood-thirsty heart,"
+    },
+    {
+      "id": "s199-0",
+      "sceneId": "s199",
+      "text": "With cheeks all inflamed, playing up to his part, As he goes, sword in hand, up the royal stairs?"
+    },
+    {
+      "id": "s200-0",
+      "sceneId": "s200",
+      "text": "Has a soul with compassion and kindness replete, Inspired by drums and by powder, her sway"
+    },
+    {
+      "id": "s201-0",
+      "sceneId": "s201",
+      "text": "And her bosom, laid waste by the flames, has alway, For those that are worthy, a fountain of tears."
+    },
+    {
+      "id": "s202-0",
+      "sceneId": "s202",
+      "text": "I knew 'neath a dais of purpled palms, And branches where idleness weeps o'er one's face,"
+    },
+    {
+      "id": "s203-0",
+      "sceneId": "s203",
+      "text": "Her tint, pale and warm--this bewitching bride,"
+    },
+    {
+      "id": "s204-0",
+      "sceneId": "s204",
+      "text": "Courageous and grand like a huntsman, her stride; A tranquil smile and eyes serene."
+    },
+    {
+      "id": "s205-0",
+      "sceneId": "s205",
+      "text": "By the banks of the verdant Loire or the Seine, How worthy to garnish some pile of renown."
+    },
+    {
+      "id": "s206-0",
+      "sceneId": "s206",
+      "text": "A thousand songs in the poet's breast, That your eyes would inspire far more than your brown."
+    },
+    {
+      "id": "s207-0",
+      "sceneId": "s207",
+      "text": "Oh, Agatha, tell! does thy heart not at times fly away?"
+    },
+    {
+      "id": "s208-0",
+      "sceneId": "s208",
+      "text": "To another ocean that blinds with its dazzling array, So blue and so clear and profound, like virginity? Oh, Agatha, tell! does thy heart not at times fly away?"
+    },
+    {
+      "id": "s208-1",
+      "sceneId": "s208",
+      "text": "The sea, the vast ocean our travail and trouble consoles! What demon hath gifted the sea with a voice from on high,"
+    },
+    {
+      "id": "s209-0",
+      "sceneId": "s209",
+      "text": "Forth a grumbling burden) a lenitive lullabye? The sea, the vast ocean our travail and trouble consoles!"
+    },
+    {
+      "id": "s209-1",
+      "sceneId": "s209",
+      "text": "Oh, carry me, waggons, oh, sailing-ships, help me depart! Far, far, here the dust is quite wet with our showering tears,"
+    },
+    {
+      "id": "s210-0",
+      "sceneId": "s210",
+      "text": "Proclaimeth, \"Away from remorse, and from crimes, and from cares,\" Oh, carry me, waggons, oh, sailing ships, help me depart!"
+    },
+    {
+      "id": "s210-1",
+      "sceneId": "s210",
+      "text": "How distant you seem to be, perfumed Elysian fields! Wherein there is nothing but sunshine and love and glee; Where all that one loves is so worthy, and lovingly yields, And our hearts float about in the purest of ecstasy, How distant you seem to be, perfumed Elysian fields!"
+    },
+    {
+      "id": "s210-2",
+      "sceneId": "s210",
+      "text": "But the green paradise of those transient infantile loves, The strolls, and the songs, and the kisses, and bunches of flowers, The viols vibrating beyond, in the mountainous groves, With the chalice of wine and the evening, entwined, in the bowers, But the green paradise of those transient infantile loves."
+    },
+    {
+      "id": "s210-3",
+      "sceneId": "s210",
+      "text": "That innocent heaven o'erflowing with furtive delight,"
+    },
+    {
+      "id": "s211-0",
+      "sceneId": "s211",
+      "text": "Or, could one with pityful prayers bring it back to our sight? Or yet with a silvery voice o'er the ages convey That innocent heaven o'erflowing with furtive delight!"
+    },
+    {
+      "id": "s212-0",
+      "sceneId": "s212",
+      "text": "I shall return to thee silently, Upon thy bower I'll alight,"
+    },
+    {
+      "id": "s213-0",
+      "sceneId": "s213",
+      "text": "With thee, my brownie, I'll commune,"
+    },
+    {
+      "id": "s214-0",
+      "sceneId": "s214",
+      "text": "And with a serpent's moist embrace, I'll crawl around thy resting-place."
+    },
+    {
+      "id": "s215-0",
+      "sceneId": "s215",
+      "text": "Thou'lt find alone the empty walls, And till the evening, cold 'twill be."
+    },
+    {
+      "id": "s216-0",
+      "sceneId": "s216",
+      "text": "Upon thy life and youthfulness, I'll reign alone with dread o'er thee."
+    },
+    {
+      "id": "s217-0",
+      "sceneId": "s217",
+      "text": "\"Odd lover--why am I to thee so dear?\" --Be sweet and keep silent, my heart, which is sear,"
+    },
+    {
+      "id": "s218-0",
+      "sceneId": "s218",
+      "text": "Is loth its infernal depths to reveal,"
+    },
+    {
+      "id": "s219-0",
+      "sceneId": "s219",
+      "text": "Oh charmer! whose arms endless slumber inspire! I abominate passion and wit makes me ill."
+    },
+    {
+      "id": "s220-0",
+      "sceneId": "s220",
+      "text": "Foreboding, Love seeks for his arrows a prey, I know all the arms of his battle array."
+    },
+    {
+      "id": "s221-0",
+      "sceneId": "s221",
+      "text": "Like me, art thou not an autumnal ray, Alas my so white, my so cold Marguerite!"
+    },
+    {
+      "id": "s222-0",
+      "sceneId": "s222",
+      "text": "To-night the Moon dreams with increased weariness,"
+    },
+    {
+      "id": "s223-0",
+      "sceneId": "s223",
+      "text": "Of rugs, while her languorous fingers caress The contour of her breasts, before falling to sleep."
+    },
+    {
+      "id": "s224-0",
+      "sceneId": "s224",
+      "text": "She falls into lingering swoons, as she dies, While she lifteth her eyes to white visions aloft,"
+    },
+    {
+      "id": "s225-0",
+      "sceneId": "s225",
+      "text": "When at times, in her languor, down on to this sphere,"
+    },
+    {
+      "id": "s226-0",
+      "sceneId": "s226",
+      "text": "A poet, desiring slumber to shun,"
+    },
+    {
+      "id": "s227-0",
+      "sceneId": "s227",
+      "text": "(The colours of which like an opal blend), And buries it far from the eyes of the sun."
+    },
+    {
+      "id": "s227-1",
+      "sceneId": "s227",
+      "text": "Cats"
+    },
+    {
+      "id": "s228-0",
+      "sceneId": "s228",
+      "text": "--As ripening years incline upon their brows-- The mild and mighty cats--pride of the house--"
+    },
+    {
+      "id": "s229-0",
+      "sceneId": "s229",
+      "text": "The friends of Learning and of Ecstasy,"
+    },
+    {
+      "id": "s230-0",
+      "sceneId": "s230",
+      "text": "The devil had used them for his steeds of Doom, Could he alone have bent their pride to slavery."
+    },
+    {
+      "id": "s231-0",
+      "sceneId": "s231",
+      "text": "Of the great sphinxes--stretched o'er the sandy waste, That seem to slumber deep in a dream without end:"
+    },
+    {
+      "id": "s232-0",
+      "sceneId": "s232",
+      "text": "And grains of sparkling gold, as fine as sand, Bestar the mystic pupils of their eyes."
+    },
+    {
+      "id": "s232-1",
+      "sceneId": "s232",
+      "text": "Owls"
+    },
+    {
+      "id": "s233-0",
+      "sceneId": "s233",
+      "text": "The silent owls sit ranged in rows, Like ancient idols, strangely pose,"
+    },
+    {
+      "id": "s234-0",
+      "sceneId": "s234",
+      "text": "Immovable, they sit and gaze,"
+    },
+    {
+      "id": "s235-0",
+      "sceneId": "s235",
+      "text": "At which the darknesses devour The faded sunset's slanting rays."
+    },
+    {
+      "id": "s236-0",
+      "sceneId": "s236",
+      "text": "That he--within this world--who flies From tumult and from merriment;"
+    },
+    {
+      "id": "s237-0",
+      "sceneId": "s237",
+      "text": "For ever bears the chastisement Of having wished to change his place."
+    },
+    {
+      "id": "s237-1",
+      "sceneId": "s237",
+      "text": "Music"
+    },
+    {
+      "id": "s238-0",
+      "sceneId": "s238",
+      "text": "To my planet pale, 'Neath a ceiling of mist, in the lofty breeze,"
+    },
+    {
+      "id": "s239-0",
+      "sceneId": "s239",
+      "text": "With inflated lungs and expanded chest,"
+    },
+    {
+      "id": "s240-0",
+      "sceneId": "s240",
+      "text": "On the backs of the heaped-up billows I rest-- Which the shadows veil--"
+    },
+    {
+      "id": "s241-0",
+      "sceneId": "s241",
+      "text": "Of a ship in distress; The tempest, the rain, 'neath the lowering skies,"
+    },
+    {
+      "id": "s242-0",
+      "sceneId": "s242",
+      "text": "At times, the calm pool or the mirror clear Of my despair!"
+    },
+    {
+      "id": "s243-0",
+      "sceneId": "s243",
+      "text": "I will dig for myself a fathomless grave, Where at leisure mine ancient bones I can coil, And sleep--quite forgotten--like a shark 'neath the wave."
+    },
+    {
+      "id": "s244-0",
+      "sceneId": "s244",
+      "text": "And rather than tears from the world to implore, I would ask of the crows with their vampire bills"
+    },
+    {
+      "id": "s245-0",
+      "sceneId": "s245",
+      "text": "Oh worms, without eyes, without ears, black friends!"
+    },
+    {
+      "id": "s246-0",
+      "sceneId": "s246",
+      "text": "Enlivened Philosophers--offspring of Dung!"
+    },
+    {
+      "id": "s247-0",
+      "sceneId": "s247",
+      "text": "And tell if some torment there still can be wrung For this soul-less old frame that is dead 'midst the dead!"
+    },
+    {
+      "id": "s248-0",
+      "sceneId": "s248",
+      "text": "Beside the palpitating fire to list, As, slowly, distant memories alight,"
+    },
+    {
+      "id": "s249-0",
+      "sceneId": "s249",
+      "text": "Oh, happy is that bell with hearty throat,"
+    },
+    {
+      "id": "s250-0",
+      "sceneId": "s250",
+      "text": "Which faithfully uplifts its pious note, Like an agèd soldier on his beat."
+    },
+    {
+      "id": "s251-0",
+      "sceneId": "s251",
+      "text": "Would often fill with her songs the midnight airs And oft it chances that her feeble moan"
+    },
+    {
+      "id": "s252-0",
+      "sceneId": "s252",
+      "text": "Who by a lake of blood, 'neath bodies slain, In anguish falls, and never moves again."
+    },
+    {
+      "id": "s252-1",
+      "sceneId": "s252",
+      "text": "Spleen"
+    },
+    {
+      "id": "s253-0",
+      "sceneId": "s253",
+      "text": "And from its urn a gloomy cold pours down, Upon the pallid inmates of the mortuary,"
+    },
+    {
+      "id": "s254-0",
+      "sceneId": "s254",
+      "text": "My wasted cat, in searching for a litter,"
+    },
+    {
+      "id": "s255-0",
+      "sceneId": "s255",
+      "text": "(A poet's soul that wanders in the gutter, With the jaded voice of a shiv'ring ghost)."
+    },
+    {
+      "id": "s256-0",
+      "sceneId": "s256",
+      "text": "Accompanies the wheezy pendulum, The while amidst a haze of dirty scents,"
+    },
+    {
+      "id": "s256-1",
+      "sceneId": "s256",
+      "text": "--Those fatal remnants of a sick man's room--"
+    },
+    {
+      "id": "s257-0",
+      "sceneId": "s257",
+      "text": "Relate their ancient amorous escapades."
+    },
+    {
+      "id": "s257-1",
+      "sceneId": "s257",
+      "text": "Obsession"
+    },
+    {
+      "id": "s258-0",
+      "sceneId": "s258",
+      "text": "Like organ-tones you roar, and in our hearts of stone, Where ancient sobs vibrate, O halls of endless pain!"
+    },
+    {
+      "id": "s259-0",
+      "sceneId": "s259",
+      "text": "I hate thee, Ocean! hate thy tumults and thy throbs,"
+    },
+    {
+      "id": "s260-0",
+      "sceneId": "s260",
+      "text": "Of vanquished mortals, full of insults and of sobs, I hear it in the mighteous laughter of the sea."
+    },
+    {
+      "id": "s261-0",
+      "sceneId": "s261",
+      "text": "Without those starry rays which speak a language known, For I desire the dark, the naked and the lone."
+    },
+    {
+      "id": "s261-1",
+      "sceneId": "s261",
+      "text": "But e'en those darknesses themselves to me are veils, Where live--and, by the millions 'neath my eyelids prance,"
+    },
+    {
+      "id": "s262-0",
+      "sceneId": "s262",
+      "text": "\"Beneath this sky, so livid and strange,"
+    },
+    {
+      "id": "s263-0",
+      "sceneId": "s263",
+      "text": "What thoughts within thy spirit range Themselves?--O libertine reply.\""
+    },
+    {
+      "id": "s263-1",
+      "sceneId": "s263",
+      "text": "--With vain desires, for ever torn"
+    },
+    {
+      "id": "s264-0",
+      "sceneId": "s264",
+      "text": "And yet, like Ovid--I'll not mourn-- Who from his Roman Heaven was cast."
+    },
+    {
+      "id": "s265-0",
+      "sceneId": "s265",
+      "text": "In you I mirror forth my pride! Your clouds, which clad in mourning, glide,"
+    },
+    {
+      "id": "s266-0",
+      "sceneId": "s266",
+      "text": "And in your illusion lies the hell, Wherein my heart delights to dwell."
+    },
+    {
+      "id": "s267-0",
+      "sceneId": "s267",
+      "text": "'Neath a fiery sky or a pallid sun, Be he Christian or one of Cythera's band,"
+    },
+    {
+      "id": "s268-0",
+      "sceneId": "s268",
+      "text": "Whether citizen, peasant or vagabond he,"
+    },
+    {
+      "id": "s269-0",
+      "sceneId": "s269",
+      "text": "Man feels the terror of mystery, And looks upon high with a glance full of fear."
+    },
+    {
+      "id": "s270-0",
+      "sceneId": "s270",
+      "text": "A ceiling lit up in some lewd music hall, Where the actors step forth on a blood-red soil;"
+    },
+    {
+      "id": "s271-0",
+      "sceneId": "s271",
+      "text": "The Sky; that black lid of a mighty pot, Where, vast and minute, human Races boil."
+    },
+    {
+      "id": "s272-0",
+      "sceneId": "s272",
+      "text": "The loveliest eyes you can scorn with your wondrous glow: O! beautiful childish eyes there abounds in your light, A something unspeakably tender and good as the night: O! eyes! over me your enchanting darkness let flow."
+    },
+    {
+      "id": "s272-1",
+      "sceneId": "s272",
+      "text": "Large eyes of my child! O Arcana profoundly adored! Ye resemble so closely those caves in the magical creek; Where within the deep slumbering shade of some petrified peak, There shines, undiscovered, the gems of a dazzling hoard."
+    },
+    {
+      "id": "s272-2",
+      "sceneId": "s272",
+      "text": "My child has got eyes so profound and so dark and so vast, Like thee! oh unending Night, and thy mystical shine: Their flames are those thoughts that with Love and with Faith combine, And sparkle deep down in the depths so alluring or chaste."
+    },
+    {
+      "id": "s273-0",
+      "sceneId": "s273",
+      "text": "Like an explosion that greets us from above, Oh, happy is he that can hail with love,"
+    },
+    {
+      "id": "s274-0",
+      "sceneId": "s274",
+      "text": "I saw flower, furrow, and brook.... I recall How they swooned like a tremulous heart 'neath the sun, Let us haste to the sky-line, 'tis late, let us run,"
+    },
+    {
+      "id": "s275-0",
+      "sceneId": "s275",
+      "text": "But the god, who eludes me, I chase all in vain,"
+    },
+    {
+      "id": "s276-0",
+      "sceneId": "s276",
+      "text": "Black mists and vague shivers of death it forbodes;"
+    },
+    {
+      "id": "s276-1",
+      "sceneId": "s276",
+      "text": "While an odour of graves through the darkness spreads,"
+    },
+    {
+      "id": "s277-0",
+      "sceneId": "s277",
+      "text": "Upon slimy snails, and on unseen toads."
+    },
+    {
+      "id": "s277-1",
+      "sceneId": "s277",
+      "text": "Meditation"
+    },
+    {
+      "id": "s278-0",
+      "sceneId": "s278",
+      "text": "Thou didst call for the night, and behold it is here, An atmosphere sombre, envelopes the town,"
+    },
+    {
+      "id": "s279-0",
+      "sceneId": "s279",
+      "text": "Whilst the manifold souls of the vile multitude, 'Neath the lash of enjoyment, that merciless sway,"
+    },
+    {
+      "id": "s280-0",
+      "sceneId": "s280",
+      "text": "From them far, O my grief, hold my hand, come this way."
+    },
+    {
+      "id": "s280-1",
+      "sceneId": "s280",
+      "text": "Behold how they beckon, those years, long expired,"
+    },
+    {
+      "id": "s281-0",
+      "sceneId": "s281",
+      "text": "How Regret, smiling, foams on the waters like yeast;"
+    },
+    {
+      "id": "s282-0",
+      "sceneId": "s282",
+      "text": "And like a long winding-sheet dragged to the East, Oh, hearken Beloved, how the Night softly treads!"
+    },
+    {
+      "id": "s283-0",
+      "sceneId": "s283",
+      "text": "Around me thundered the deafening noise of the street, In mourning apparel, portraying majestic distress, With queenly fingers, just lifting the hem of her dress,"
+    },
+    {
+      "id": "s284-0",
+      "sceneId": "s284",
+      "text": "Agile and noble, with limbs of perfect poise, Ah, how I drank, thrilled through like a Being insane, In her look, a dark sky, from whence springs forth the hurricane, There lay but the sweetness that charms, and the joy that destroys."
+    },
+    {
+      "id": "s284-1",
+      "sceneId": "s284",
+      "text": "A flash--then the night.... O loveliness fugitive! Whose glance has so suddenly caused me again to live,"
+    },
+    {
+      "id": "s285-0",
+      "sceneId": "s285",
+      "text": "Elsewhere, far away ... too late, perhaps never more, For I know not whither you fly, nor you, where I go, O soul that I would have loved, and *that* you know!"
+    },
+    {
+      "id": "s286-0",
+      "sceneId": "s286",
+      "text": "To songs of viols which throughout the dome resound, Harmonious and stately as thy footsteps move, Bestowing forth the languor of thy glance profound."
+    },
+    {
+      "id": "s287-0",
+      "sceneId": "s287",
+      "text": "Thy pallid brow embellished by a charm obscure, Here where the evening torches light the twilight haze, Thine eyes attracting me like those of a portraiture,"
+    },
+    {
+      "id": "s288-0",
+      "sceneId": "s288",
+      "text": "A mighty memory, royal and commanding tower, A garland: and her heart, bruised like a ruddy peach,"
+    },
+    {
+      "id": "s289-0",
+      "sceneId": "s289",
+      "text": "Art thou, that spicy Autumn-fruit with taste supreme?"
+    },
+    {
+      "id": "s290-0",
+      "sceneId": "s290",
+      "text": "Aroma--causing one of Eastern wastes to dream; A downy cushion, bunch of flowers or golden sheaf?"
+    },
+    {
+      "id": "s291-0",
+      "sceneId": "s291",
+      "text": "Wherein no precious secret deeply hidden lies, Resplendent shrines, devoid of relics, sacred stones, More empty, more profound than ye yourselves, O skies?"
+    },
+    {
+      "id": "s291-1",
+      "sceneId": "s291",
+      "text": "Yea, does thy semblance, not alone for me suffice,"
+    },
+    {
+      "id": "s292-0",
+      "sceneId": "s292",
+      "text": "All one to me! thy folly or thy heart of ice, Decoy or mask, all hail! thy beauty I adore!"
+    },
+    {
+      "id": "s293-0",
+      "sceneId": "s293",
+      "text": "O sleepy seasons! you I love and praise, Because around my heart and brain you twine"
+    },
+    {
+      "id": "s294-0",
+      "sceneId": "s294",
+      "text": "On that great plain, where frigid blasts abound, Where through the nights, so long, the vane whirls round,"
+    },
+    {
+      "id": "s295-0",
+      "sceneId": "s295",
+      "text": "Will stretch her raven wings and soar aloft,"
+    },
+    {
+      "id": "s296-0",
+      "sceneId": "s296",
+      "text": "On which remain the frosts of former Times, O pallid seasons, mistress of our climes"
+    },
+    {
+      "id": "s297-0",
+      "sceneId": "s297",
+      "text": "Unless it be, on a moonless night a-twain, On some chance couch to soothe to sleep our Pain."
+    },
+    {
+      "id": "s298-0",
+      "sceneId": "s298",
+      "text": "Without bridle, spur or curb, Let us mount on the back of wine"
+    },
+    {
+      "id": "s299-0",
+      "sceneId": "s299",
+      "text": "Let's, like two angels tortured by"
+    },
+    {
+      "id": "s300-0",
+      "sceneId": "s300",
+      "text": "Pursue the distant mirage drawn O'er the blue crystal of the dawn!"
+    },
+    {
+      "id": "s301-0",
+      "sceneId": "s301",
+      "text": "Of some obliging whirlwind, we --In equal rapture revelling--"
+    },
+    {
+      "id": "s302-0",
+      "sceneId": "s302",
+      "text": "Without repose, nor truce, where gleams The golden Paradise of my dreams!"
+    },
+    {
+      "id": "s303-0",
+      "sceneId": "s303",
+      "text": "Like thoughtful cattle on the yellow sands reclined, They turn their eyes towards the horizon of the sea, Their feet towards each other stretched, their hands entwined,"
+    },
+    {
+      "id": "s304-0",
+      "sceneId": "s304",
+      "text": "A few, with heart-confiding faith of old, imbued Amid the darkling grove, where silver streamlets flow,"
+    },
+    {
+      "id": "s305-0",
+      "sceneId": "s305",
+      "text": "And carve the verdant stems of the vine-kissed portico."
+    },
+    {
+      "id": "s305-1",
+      "sceneId": "s305",
+      "text": "And others like unto nuns with footsteps slow and grave,"
+    },
+    {
+      "id": "s306-0",
+      "sceneId": "s306",
+      "text": "Where long ago--St. Anthony, like a surging wave, The naked purpled breasts of his temptation saw."
+    },
+    {
+      "id": "s306-1",
+      "sceneId": "s306",
+      "text": "And still some more, that 'neath the shimmering masses stroll,"
+    },
+    {
+      "id": "s307-0",
+      "sceneId": "s307",
+      "text": "To soothe their burning fevers unto thee they call O Bacchus! who all ancient wounds and sorrow laves."
+    },
+    {
+      "id": "s307-1",
+      "sceneId": "s307",
+      "text": "And others again, whose necks in scapulars delight,"
+    },
+    {
+      "id": "s308-0",
+      "sceneId": "s308",
+      "text": "Commingling, in the sombre wood and lonesome night, The foam of torments and of tears with ecstasy."
+    },
+    {
+      "id": "s308-1",
+      "sceneId": "s308",
+      "text": "O virgins, demons, monsters, and O martyred brood! Great souls that mock Reality with remorseless sneers,"
+    },
+    {
+      "id": "s309-0",
+      "sceneId": "s309",
+      "text": "At times so full of shouts, at times so full of tears!"
+    },
+    {
+      "id": "s310-0",
+      "sceneId": "s310",
+      "text": "Poor sisters--yea, I love you as I pity you, For your unsatiated thirsts and anguished sighs, And for the vials of love within your hearts so true."
+    },
+    {
+      "id": "s311-0",
+      "sceneId": "s311",
+      "text": "We will have divans profound as the tomb, And delicate plants on the ledges aloft,"
+    },
+    {
+      "id": "s312-0",
+      "sceneId": "s312",
+      "text": "Exhausting our hearts to their last desires,"
+    },
+    {
+      "id": "s313-0",
+      "sceneId": "s313",
+      "text": "Reflecting the twofold light of their fires Across the twin mirrors of our two souls."
+    },
+    {
+      "id": "s314-0",
+      "sceneId": "s314",
+      "text": "We'll exchange but one single lightning flash, Just like a long sob--replete with good byes."
+    },
+    {
+      "id": "s315-0",
+      "sceneId": "s315",
+      "text": "Through the half-open doors, to replenish and wash The torches expired, and the tarnished glass."
+    },
+    {
+      "id": "s316-0",
+      "sceneId": "s316",
+      "text": "It is Death that consoles--yea, and causes our lives; 'Tis the goal of this Life--and of Hope the sole ray,"
+    },
+    {
+      "id": "s317-0",
+      "sceneId": "s317",
+      "text": "Us the strength to plod on to the end of the day."
+    },
+    {
+      "id": "s317-1",
+      "sceneId": "s317",
+      "text": "And all through the tempest, the frost and the snows, 'Tis the shimmering light on our black sky-line; 'Tis the famous inn which the guide-book shows,"
+    },
+    {
+      "id": "s318-0",
+      "sceneId": "s318",
+      "text": "'Tis an angel that holds in his magic hands"
+    },
+    {
+      "id": "s319-0",
+      "sceneId": "s319",
+      "text": "Who remakes up the beds of the naked and poor;"
+    },
+    {
+      "id": "s319-1",
+      "sceneId": "s319",
+      "text": "'Tis the fame of the gods, 'tis the granary blest, 'Tis the purse of the poor, and his birth-place of rest, To the unknown Heavens, 'tis the wide-open door."
+    }
+  ]
+}
