@@ -253,6 +253,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Guy de Maupassant",
     "Henri Barbusse",
     "Honoré de Balzac",
+    "J.-K. Huysmans",
     "Joris-Karl Huysmans",
     "Jean d'Esme",
     "José-Maria de Heredia",
