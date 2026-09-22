@@ -1,0 +1,3370 @@
+{
+  "id": "fruit-gathering",
+  "title": "Fruit-Gathering",
+  "author": "Rabindranath Tagore",
+  "year": "1916",
+  "note": "Project Gutenberg 6522",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "Bid me and I shall gather my fruits to bring them in full baskets into your courtyard, though some are lost and some not ripe.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "My life when young was like a flower—a flower that loosens a petal or two from her abundance and never feels the loss when the spring breeze comes to beg at her door.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "Is summer’s festival only for fresh blossoms and not also for withered leaves and faded flowers?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Chapter IV",
+      "place": "Chapter IV",
+      "reentry": "I woke and found his letter with the morning.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Chapter V",
+      "place": "Chapter V",
+      "reentry": "A handful of dust could hide your signal when I did not know its meaning.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Chapter VI",
+      "place": "Chapter VI",
+      "reentry": "Where roads are made I lose my way.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Chapter VII",
+      "place": "Chapter VII",
+      "reentry": "Alas, I cannot stay in the house, and home has become no home to me, for the eternal Stranger calls, he is going along the road.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Chapter VIII",
+      "place": "Chapter VIII",
+      "reentry": "Be ready to launch forth, my heart! and let those linger who must.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Chapter IX",
+      "place": "Chapter IX",
+      "reentry": "When I lingered among my hoarded treasure I felt like a worm that feeds in the dark upon the fruit where it was born.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Chapter X",
+      "place": "Chapter X",
+      "reentry": "You took my hand and drew me to your side, made me sit on the high seat before all men, till I became timid, unable to stir and walk my own way; doubting and debating at every step lest I should tread upon any thorn of their disfavour.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Chapter XI",
+      "place": "Chapter XI",
+      "reentry": "It decks me only to mock me, this jewelled chain of mine.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Chapter XII",
+      "place": "Chapter XII",
+      "reentry": "Far below flowed the Jumna, swift and clear, above frowned the jutting bank.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Chapter XIII",
+      "place": "Chapter XIII",
+      "reentry": "To move is to meet you every moment, Fellow-traveller!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Chapter XIV",
+      "place": "Chapter XIV",
+      "reentry": "My portion of the best in this world will come from your hands: such was your promise.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Chapter XV",
+      "place": "Chapter XV",
+      "reentry": "Your speech is simple, my Master, but not theirs who talk of you.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Chapter XVI",
+      "place": "Chapter XVI",
+      "reentry": "They knew the way and went to seek you along the narrow lane, but I wandered abroad into the night for I was ignorant.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "Chapter XVII",
+      "place": "Chapter XVII",
+      "reentry": "I brought out my earthen lamp from my house and cried, “Come, children, I will light your path!”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Chapter XVIII",
+      "place": "Chapter XVIII",
+      "reentry": "No: it is not yours to open buds into blossoms.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Chapter XIX",
+      "place": "Chapter XIX",
+      "reentry": "Sudās, the gardener, plucked from his tank the last lotus left by the ravage of winter and went to sell it to the king at the palace gate.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Chapter XX",
+      "place": "Chapter XX",
+      "reentry": "Make me thy poet, O Night, veiled Night!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "Chapter XXI",
+      "place": "Chapter XXI",
+      "reentry": "I will meet one day the Life within me, the joy that hides in my life, though the days perplex my path with their idle dust.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Chapter XXII",
+      "place": "Chapter XXII",
+      "reentry": "This autumn morning is tired with excess of light, and if your songs grow fitful and languid give me your flute awhile.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "Chapter XXIII",
+      "place": "Chapter XXIII",
+      "reentry": "The poet’s mind floats and dances on the waves of life amidst the voices of wind and water.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "Chapter XXIV",
+      "place": "Chapter XXIV",
+      "reentry": "The night is dark and your slumber is deep in the hush of my being.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Chapter XXV",
+      "place": "Chapter XXV",
+      "reentry": "The bird of the morning sings.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "Chapter XXVI",
+      "place": "Chapter XXVI",
+      "reentry": "The beggar in me lifted his lean hands to the starless sky and cried into night’s ear with his hungry voice.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Chapter XXVII",
+      "place": "Chapter XXVII",
+      "reentry": "Sanātan was telling his beads by the Ganges when a Brahmin in rags came to him and said, “Help me, I am poor!”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Chapter XXVIII",
+      "place": "Chapter XXVIII",
+      "reentry": "Time after time I came to your gate with raised hands, asking for more and yet more.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Chapter XXIX",
+      "place": "Chapter XXIX",
+      "reentry": "You have set me among those who are defeated.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "Chapter XXX",
+      "place": "Chapter XXX",
+      "reentry": "A smile of mirth spread over the sky when you dressed my heart in rags and sent her forth into the road to beg.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "Chapter XXXI",
+      "place": "Chapter XXXI",
+      "reentry": "“Who among you will take up the duty of feeding the hungry?” Lord Buddha asked his followers when famine raged at Shravasti.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Chapter XXXII",
+      "place": "Chapter XXXII",
+      "reentry": "My king was unknown to me, therefore when he claimed his tribute I was bold to think I would hide myself leaving my debts unpaid.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "Chapter XXXIII",
+      "place": "Chapter XXXIII",
+      "reentry": "When I thought I would mould you, an image from my life for men to worship, I brought my dust and desires and all my coloured delusions and dreams.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "Chapter XXXIV",
+      "place": "Chapter XXXIV",
+      "reentry": "“Sire,” announced the servant to the King, “the saint Narottam has never deigned to enter your royal temple.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "Chapter XXXV",
+      "place": "Chapter XXXV",
+      "reentry": "The trumpet lies in the dust.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "Chapter XXXVI",
+      "place": "Chapter XXXVI",
+      "reentry": "When, mad in their mirth, they raised dust to soil thy robe, O Beautiful, it made my heart sick.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "Chapter XXXVII",
+      "place": "Chapter XXXVII",
+      "reentry": "Upagupta, the disciple of Buddha, lay asleep on the dust by the city wall of Mathura.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "Chapter XXXVIII",
+      "place": "Chapter XXXVIII",
+      "reentry": "This is no mere dallying of love between us, my lover.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "Chapter XXXIX",
+      "place": "Chapter XXXIX",
+      "reentry": "The wall breaks asunder, light, like divine laughter, bursts in.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "Chapter XL",
+      "place": "Chapter XL",
+      "reentry": "O fire, my brother, I sing victory to you.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "Chapter XLI",
+      "place": "Chapter XLI",
+      "reentry": "The Boatman is out crossing the wild sea at night.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "Chapter XLII",
+      "place": "Chapter XLII",
+      "reentry": "I cling to this living raft, my body, in the narrow stream of my earthly years.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "Chapter XLIII",
+      "place": "Chapter XLIII",
+      "reentry": "Over the relic of Lord Buddha King Bimbisār built a shrine, a salutation in white marble.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "Chapter XLIV",
+      "place": "Chapter XLIV",
+      "reentry": "The day that stands between you and me makes her last bow of farewell.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "Chapter XLV",
+      "place": "Chapter XLV",
+      "reentry": "My night has passed on the bed of sorrow, and my eyes are tired. My heavy heart is not yet ready to meet morning with its crowded joys.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "Chapter XLVI",
+      "place": "Chapter XLVI",
+      "reentry": "The time is past when I could repay her for all that I received.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "Chapter XLVII",
+      "place": "Chapter XLVII",
+      "reentry": "I found a few old letters of mine carefully hidden in her box—a few small toys for her memory to play with.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "Chapter XLVIII",
+      "place": "Chapter XLVIII",
+      "reentry": "Bring beauty and order into my forlorn life, woman, as you brought them into my house when you lived.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "Chapter XLIX",
+      "place": "Chapter XLIX",
+      "reentry": "The pain was great when the strings were being tuned, my Master!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "Chapter L",
+      "place": "Chapter L",
+      "reentry": "In the lightning flash of a moment I have seen the immensity of your creation in my life—creation through many a death from world to world.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "Chapter LI",
+      "place": "Chapter LI",
+      "reentry": "I know that at the dim end of some day the sun will bid me its farewell.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "Chapter LII",
+      "place": "Chapter LII",
+      "reentry": "What music is that in whose measure the world is rocked?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "Chapter LIII",
+      "place": "Chapter LIII",
+      "reentry": "I have kissed this world with my eyes and my limbs; I have wrapt it within my heart in numberless folds; I have flooded its days and nights with thoughts till the world and my life have grown one,—and I love my life because I love the light",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "Chapter LIV",
+      "place": "Chapter LIV",
+      "reentry": "The Cloud said to me, “I vanish”; the Night said, “I plunge into the fiery dawn.”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "Chapter LV",
+      "place": "Chapter LV",
+      "reentry": "Tulsidas, the poet, was wandering, deep in thought, by the Ganges, in that lonely spot where they burn their dead.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "Chapter LVI",
+      "place": "Chapter LVI",
+      "reentry": "You came for a moment to my side and touched me with the great mystery of the woman that there is in the heart of creation.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "Chapter LVII",
+      "place": "Chapter LVII",
+      "reentry": "Who is she who dwells in my heart, the woman forlorn for ever?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "Chapter LVIII",
+      "place": "Chapter LVIII",
+      "reentry": "Yours is the light that breaks forth from the dark, and the good that sprouts from the cleft heart of strife.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "Chapter LIX",
+      "place": "Chapter LIX",
+      "reentry": "When the weariness of the road is upon me, and the thirst of the sultry day; when the ghostly hours of the dusk throw their shadows across my life, then I cry not for your voice only, my friend, but for your touch.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "Chapter LX",
+      "place": "Chapter LX",
+      "reentry": "The odour cries in the bud, “Ah me, the day departs, the happy day of spring, and I am a prisoner in petals!”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "Chapter LXI",
+      "place": "Chapter LXI",
+      "reentry": "She is still a child, my lord.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "Chapter LXII",
+      "place": "Chapter LXII",
+      "reentry": "“What is there but the sky, O Sun, that can hold thine image?”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "Chapter LXIII",
+      "place": "Chapter LXIII",
+      "reentry": "Not for me is the love that knows no restraint, but like the foaming wine that having burst its vessel in a moment would run to waste.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "Chapter LXIV",
+      "place": "Chapter LXIV",
+      "reentry": "The sun had set on the western margin of the river among the tangle of the forest.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "Chapter LXV",
+      "place": "Chapter LXV",
+      "reentry": "May be there is one house in this city where the gate opens for ever this morning at the touch of the sunrise, where the errand of the light is fulfilled.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "Chapter LXVI",
+      "place": "Chapter LXVI",
+      "reentry": "Listen, my heart, in his flute is the music of the smell of wild flowers, of the glistening leaves and gleaming water, of shadows resonant with bees’ wings.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "Chapter LXVII",
+      "place": "Chapter LXVII",
+      "reentry": "You always stand alone beyond the stream of my songs.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "Chapter LXVIII",
+      "place": "Chapter LXVIII",
+      "reentry": "Suddenly the window of my heart flew open this morning, the window that looks out on your heart.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "Chapter LXIX",
+      "place": "Chapter LXIX",
+      "reentry": "You were in the centre of my heart, therefore when my heart wandered she never found you; you hid yourself from my loves and hopes till the last, for you were always in them.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "Chapter LXX",
+      "place": "Chapter LXX",
+      "reentry": "When you hold your lamp in the sky it throws its light on my face and its shadow falls over you.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "Chapter LXXI",
+      "place": "Chapter LXXI",
+      "reentry": "O the waves, the sky-devouring waves, glistening with light, dancing with life, the waves of eddying joy, rushing for ever.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "Chapter LXXII",
+      "place": "Chapter LXXII",
+      "reentry": "The joy ran from all the world to build my body.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "Chapter LXXIII",
+      "place": "Chapter LXXIII",
+      "reentry": "The spring with its leaves and flowers has come into my body.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "Chapter LXXIV",
+      "place": "Chapter LXXIV",
+      "reentry": "My bonds are cut, my debts are paid, my door has been opened, I go everywhere.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "Chapter LXXV",
+      "place": "Chapter LXXV",
+      "reentry": "It was only the other day that I came to your earth, naked and nameless, with a wailing cry.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "Chapter LXXVI",
+      "place": "Chapter LXXVI",
+      "reentry": "Timidly I cowered in the shadow of safety, but now, when the surge of joy carries my heart upon its crest, my heart clings to the cruel rock of its trouble.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "Chapter LXXVII",
+      "place": "Chapter LXXVII",
+      "reentry": "The world is yours at once and for ever.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "Chapter LXXVIII",
+      "place": "Chapter LXXVIII",
+      "reentry": "To the birds you gave songs, the birds gave you songs in return.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "Chapter LXXIX",
+      "place": "Chapter LXXIX",
+      "reentry": "Let me not pray to be sheltered from dangers but to be fearless in facing them.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "Chapter LXXX",
+      "place": "Chapter LXXX",
+      "reentry": "You did not know yourself when you dwelt alone, and there was no crying of an errand when the wind ran from the hither to the farther shore.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "Chapter LXXXI",
+      "place": "Chapter LXXXI",
+      "reentry": "You, in your timeless watch, listen to my approaching steps while your gladness gathers in the morning twilight and breaks in the burst of light.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "Chapter LXXXII",
+      "place": "Chapter LXXXII",
+      "reentry": "I will utter your name, sitting alone among the shadows of my silent thoughts.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "I feel that all the stars shine in me. The world breaks into my life like a flood.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "When the world sleeps I come to your door.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "Keep me at your door ever attending to your wishes, and let me go about in your Kingdom accepting your call.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "Chapter LXXXIV — The Oarsmen",
+      "place": "Chapter LXXXIV — The Oarsmen",
+      "reentry": "THE Oarsmen",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "Chapter LXXXV — The Song of the Defeated",
+      "place": "Chapter LXXXV — The Song of the Defeated",
+      "reentry": "The Song of the Defeated",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "Chapter LXXXVI — Thanksgiving",
+      "place": "Chapter LXXXVI — Thanksgiving",
+      "reentry": "Thanksgiving",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Bid me and I shall gather my fruits to bring them in full baskets into your courtyard, though some are lost and some not ripe."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "For the season grows heavy with its fulness, and there is a plaintive shepherd’s pipe in the shade."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Bid me and I shall set sail on the river."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "The March wind is fretful, fretting the languid waves into murmurs."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "The garden has yielded its all, and in the weary hour of evening the call comes from your house on the shore in the sunset."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "My life when young was like a flower—a flower that loosens a petal or two from her abundance and never feels the loss when the spring breeze comes to beg at her door."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Now at the end of youth my life is like a fruit, having nothing to spare, and waiting to offer herself completely with her full burden of sweetness."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Is summer’s festival only for fresh blossoms and not also for withered leaves and faded flowers?"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Is the song of the sea in tune only with the rising waves?"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Does it not also sing with the waves that fall?"
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Jewels are woven into the carpet where stands my king, but there are patient clods waiting to be touched by his feet."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Few are the wise and the great who sit by my Master, but he has taken the foolish in his arms and made me his servant for ever."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "I woke and found his letter with the morning."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "I do not know what it says, for I cannot read."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "I shall leave the wise man alone with his books, I shall not trouble him, for who knows if he can read what the letter says."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Let me hold it to my forehead and press it to my heart."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "When the night grows still and stars come out one by one I will spread it on my lap and stay silent."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "The rustling leaves will read it aloud to me, the rushing stream will chant it, and the seven wise stars will sing it to me from the sky."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "I cannot find what I seek, I cannot understand what I would learn; but this unread letter has lightened my burdens and turned my thoughts into songs."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "A handful of dust could hide your signal when I did not know its meaning."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Now that I am wiser I read it in all that hid it before."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "It is painted in petals of flowers; waves flash it from their foam; hills hold it high on their summits."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "I had my face turned from you, therefore I read the letters awry and knew not their meaning."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Where roads are made I lose my way."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "In the wide water, in the blue sky there is no line of a track."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "The pathway is hidden by the birds’ wings, by the star-fires, by the flowers of the wayfaring seasons."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "And I ask my heart if its blood carries the wisdom of the unseen way."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Alas, I cannot stay in the house, and home has become no home to me, for the eternal Stranger calls, he is going along the road."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "The sound of his footfall knocks at my breast; it pains me!"
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "The wind is up, the sea is moaning. I leave all my cares and doubts to follow the homeless tide, for the Stranger calls me, he is going along the road."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Be ready to launch forth, my heart! and let those linger who must."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "For your name has been called in the morning sky."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "Wait for none!"
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "The desire of the bud is for the night and dew, but the blown flower cries for the freedom of light."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Burst your sheath, my heart, and come forth!"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "When I lingered among my hoarded treasure I felt like a worm that feeds in the dark upon the fruit where it was born."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "I leave this prison of decay."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "I care not to haunt the mouldy stillness, for I go in search of everlasting youth; I throw away all that is not one with my life nor as light as my laughter."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "I run through time and, O my heart, in your chariot dances the poet who sings while he wanders."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "You took my hand and drew me to your side, made me sit on the high seat before all men, till I became timid, unable to stir and walk my own way; doubting and debating at every step lest I should tread upon any thorn of their disfavour."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "I am freed at last!"
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "The blow has come, the drum of insult sounded, my seat is laid low in the dust."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "My paths are open before me."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "My wings are full of the desire of the sky."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "I go to join the shooting stars of midnight, to plunge into the profound shadow."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "I am like the storm-driven cloud of summer that, having cast off its crown of gold, hangs as a sword the thunderbolt upon a chain of lightning."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "In desperate joy I run upon the dusty path of the despised; I draw near to your final welcome."
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "The child finds its mother when it leaves her womb."
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "When I am parted from you, thrown out from your household, I am free to see your face."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "It decks me only to mock me, this jewelled chain of mine."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "It bruises me when on my neck, it strangles me when I struggle to tear it off."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "It grips my throat, it chokes my singing."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "Could I but offer it to your hand, my Lord, I would be saved."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "Take it from me, and in exchange bind me to you with a garland, for I am ashamed to stand before you with this jewelled chain on my neck."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Far below flowed the Jumna, swift and clear, above frowned the jutting bank."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Hills dark with the woods and scarred with the torrents were gathered around."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "Govinda, the great Sikh teacher, sat on the rock reading scriptures, when Raghunath, his disciple, proud of his wealth, came and bowed to him and said, “I have brought my poor present unworthy of your acceptance.”"
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "Thus saying he displayed before the teacher a pair of gold bangles wrought with costly stones."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "The master took up one of them, twirling it round his finger, and the diamonds darted shafts of light."
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "Suddenly it slipped from his hand and rolled down the bank into the water."
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "“Alas,” screamed Raghunath, and jumped into the stream."
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "The teacher set his eyes upon his book, and the water held and hid what it stole and went its way."
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "The daylight faded when Raghunath came back to the teacher tired and dripping."
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "He panted and said, “I can still get it back if you show me where it fell.”"
+    },
+    {
+      "id": "s11-10",
+      "sceneId": "s11",
+      "text": "The teacher took up the remaining bangle and throwing it into the water said, “It is there.”"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "To move is to meet you every moment, Fellow-traveller!"
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "It is to sing to the falling of your feet."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "He whom your breath touches does not glide by the shelter of the bank."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "He spreads a reckless sail to the wind and rides the turbulent water."
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "He who throws his doors open and steps onward receives your greeting."
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "He does not stay to count his gain or to mourn his loss; his heart beats the drum for his march, for that is to march with you every step,"
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "Fellow-traveller!"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "My portion of the best in this world will come from your hands: such was your promise."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "Therefore your light glistens in my tears."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "I fear to be led by others lest I miss you waiting in some road corner to be my guide."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "I walk my own wilful way till my very folly tempts you to my door."
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "For I have your promise that my portion of the best in this world will come from your hands."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "Your speech is simple, my Master, but not theirs who talk of you."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "I understand the voice of your stars and the silence of your trees."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "I know that my heart would open like a flower; that my life has filled itself at a hidden fountain."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "Your songs, like birds from the lonely land of snow, are winging to build their nests in my heart against the warmth of its April, and I am content to wait for the merry season."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "They knew the way and went to seek you along the narrow lane, but I wandered abroad into the night for I was ignorant."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "I was not schooled enough to be afraid of you in the dark, therefore I came upon your doorstep unaware."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "The wise rebuked me and bade me be gone, for I had not come by the lane."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "I turned away in doubt, but you held me fast, and their scolding became louder every day."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "I brought out my earthen lamp from my house and cried, “Come, children, I will light your path!”"
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "The night was still dark when I returned, leaving the road to its silence, crying, “Light me, O Fire! for my earthen lamp lies broken in the dust!”"
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "No: it is not yours to open buds into blossoms."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "Shake the bud, strike it; it is beyond your power to make it blossom."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "Your touch soils it, you tear its petals to pieces and strew them in the dust."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "But no colours appear, and no perfume."
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "Ah! it is not for you to open the bud into a blossom."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "He who can open the bud does it so simply."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "He gives it a glance, and the life-sap stirs through its veins."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "At his breath the flower spreads its wings and flutters in the wind."
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "Colours flush out like heart-longings, the perfume betrays a sweet secret."
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "He who can open the bud does it so simply."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "Sudās, the gardener, plucked from his tank the last lotus left by the ravage of winter and went to sell it to the king at the palace gate."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "There he met a traveller who said to him, “Ask your price for the last lotus,—I shall offer it to Lord Buddha.”"
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "Sudās said, “If you pay one golden *māshā* it will be yours.”"
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "The traveller paid it."
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "At that moment the king came out and he wished to buy the flower, for he was on his way to see Lord Buddha, and he thought, “It would be a fine thing to lay at his feet the lotus that bloomed in winter.”"
+    },
+    {
+      "id": "s18-5",
+      "sceneId": "s18",
+      "text": "When the gardener said he had been offered a golden *māshā* the king offered him ten, but the traveller doubled the price."
+    },
+    {
+      "id": "s18-6",
+      "sceneId": "s18",
+      "text": "The gardener, being greedy, imagined a greater gain from him for whose sake they were bidding. He bowed and said, “I cannot sell this lotus.”"
+    },
+    {
+      "id": "s18-7",
+      "sceneId": "s18",
+      "text": "In the hushed shade of the mango grove beyond the city wall Sudās stood before Lord Buddha, on whose lips sat the silence of love and whose eyes beamed peace like the morning star of the dew-washed autumn."
+    },
+    {
+      "id": "s18-8",
+      "sceneId": "s18",
+      "text": "Sudās looked in his face and put the lotus at his feet and bowed his head to the dust."
+    },
+    {
+      "id": "s18-9",
+      "sceneId": "s18",
+      "text": "Buddha smiled and asked, “What is your wish, my son?”"
+    },
+    {
+      "id": "s18-10",
+      "sceneId": "s18",
+      "text": "Sudās cried, “The least touch of your feet.”"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "Make me thy poet, O Night, veiled Night!"
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "There are some who have sat speechless for ages in thy shadow; let me utter their songs."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "Take me up on thy chariot without wheels, running noiselessly from world to world, thou queen in the palace of time, thou darkly beautiful!"
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "Many a questioning mind has stealthily entered thy courtyard and roamed through thy lampless house seeking for answers."
+    },
+    {
+      "id": "s19-4",
+      "sceneId": "s19",
+      "text": "From many a heart, pierced with the arrow of joy from the hands of the Unknown, have burst forth glad chants, shaking the darkness to its foundation."
+    },
+    {
+      "id": "s19-5",
+      "sceneId": "s19",
+      "text": "Those wakeful souls gaze in the starlight in wonder at the treasure they have suddenly found."
+    },
+    {
+      "id": "s19-6",
+      "sceneId": "s19",
+      "text": "Make me their poet, O Night, the poet of thy fathomless silence."
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "I will meet one day the Life within me, the joy that hides in my life, though the days perplex my path with their idle dust."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "I have known it in glimpses, and its fitful breath has come upon me, making my thoughts fragrant for a while."
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "I will meet one day the Joy without me that dwells behind the screen of light—and will stand in the overflowing solitude where all things are seen as by their creator."
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "This autumn morning is tired with excess of light, and if your songs grow fitful and languid give me your flute awhile."
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "I shall but play with it as the whim takes me,—now take it on my lap, now touch it with my lips, now keep it by my side on the grass."
+    },
+    {
+      "id": "s21-2",
+      "sceneId": "s21",
+      "text": "But in the solemn evening stillness I shall gather flowers, to deck it with wreaths, I shall fill it with fragrance; I shall worship it with the lighted lamp."
+    },
+    {
+      "id": "s21-3",
+      "sceneId": "s21",
+      "text": "Then at night I shall come to you and give you back your flute."
+    },
+    {
+      "id": "s21-4",
+      "sceneId": "s21",
+      "text": "You will play on it the music of midnight when the lonely crescent moon wanders among the stars."
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "The poet’s mind floats and dances on the waves of life amidst the voices of wind and water."
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "Now when the sun has set and the darkened sky draws upon the sea like drooping lashes upon a weary eye it is time to take away his pen, and let his thoughts sink into the bottom of the deep amid the eternal secret of that silence."
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "The night is dark and your slumber is deep in the hush of my being."
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "Wake, O Pain of Love, for I know not how to open the door, and I stand outside."
+    },
+    {
+      "id": "s23-2",
+      "sceneId": "s23",
+      "text": "The hours wait, the stars watch, the wind is still, the silence is heavy in my heart."
+    },
+    {
+      "id": "s23-3",
+      "sceneId": "s23",
+      "text": "Wake, Love, wake! brim my empty cup, and with a breath of song ruffle the night."
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "The bird of the morning sings."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "Whence has he word of the morning before the morning breaks, and when the dragon night still holds the sky in its cold black coils?"
+    },
+    {
+      "id": "s24-2",
+      "sceneId": "s24",
+      "text": "Tell me, bird of the morning, how, through the twofold night of the sky and the leaves, he found his way into your dream, the messenger out of the east?"
+    },
+    {
+      "id": "s24-3",
+      "sceneId": "s24",
+      "text": "The world did not believe you when you cried, “The sun is on his way, the night is no more.”"
+    },
+    {
+      "id": "s24-4",
+      "sceneId": "s24",
+      "text": "O sleeper, awake!"
+    },
+    {
+      "id": "s24-5",
+      "sceneId": "s24",
+      "text": "Bare your forehead, waiting for the first blessing of light, and sing with the bird of the morning in glad faith."
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "The beggar in me lifted his lean hands to the starless sky and cried into night’s ear with his hungry voice."
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "His prayers were to the blind Darkness who lay like a fallen god in a desolate heaven of lost hopes."
+    },
+    {
+      "id": "s25-2",
+      "sceneId": "s25",
+      "text": "The cry of desire eddied round a chasm of despair, a wailing bird circling its empty nest."
+    },
+    {
+      "id": "s25-3",
+      "sceneId": "s25",
+      "text": "But when morning dropped anchor at the rim of the East, the beggar in me leapt and cried:"
+    },
+    {
+      "id": "s25-4",
+      "sceneId": "s25",
+      "text": "“Blessed am I that the deaf night denied me—that its coffer was empty.”"
+    },
+    {
+      "id": "s25-5",
+      "sceneId": "s25",
+      "text": "He cried, “O Life, O Light, you are precious! and precious is the joy that at last has known you!”"
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "Sanātan was telling his beads by the Ganges when a Brahmin in rags came to him and said, “Help me, I am poor!”"
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "“My alms-bowl is all that is my own,” said Sanātan, “I have given away everything I had.”"
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "“But my lord Shiva came to me in my dreams,” said the Brahmin, “and counselled me to come to you.”"
+    },
+    {
+      "id": "s26-3",
+      "sceneId": "s26",
+      "text": "Sanātan suddenly remembered he had picked up a stone without price among the pebbles on the river-bank, and thinking that some one might need it hid it in the sands."
+    },
+    {
+      "id": "s26-4",
+      "sceneId": "s26",
+      "text": "He pointed out the spot to the Brahmin, who wondering dug up the stone."
+    },
+    {
+      "id": "s26-5",
+      "sceneId": "s26",
+      "text": "The Brahmin sat on the earth and mused alone till the sun went down behind the trees, and cowherds went home with their cattle."
+    },
+    {
+      "id": "s26-6",
+      "sceneId": "s26",
+      "text": "Then he rose and came slowly to Sanātan and said, “Master, give me the least fraction of the wealth that disdains all the wealth of the world.”"
+    },
+    {
+      "id": "s26-7",
+      "sceneId": "s26",
+      "text": "And he threw the precious stone into the water."
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Time after time I came to your gate with raised hands, asking for more and yet more."
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "You gave and gave, now in slow measure, now in sudden excess."
+    },
+    {
+      "id": "s27-2",
+      "sceneId": "s27",
+      "text": "I took some, and some things I let drop; some lay heavy on my hands; some I made into playthings and broke them when tired; till the wrecks and the hoard of your gifts grew immense, hiding you, and the ceaseless expectation wore my heart out."
+    },
+    {
+      "id": "s27-3",
+      "sceneId": "s27",
+      "text": "Take, oh take—has now become my cry."
+    },
+    {
+      "id": "s27-4",
+      "sceneId": "s27",
+      "text": "Shatter all from this beggar’s bowl: put out this lamp of the importunate watcher: hold my hands, raise me from the still-gathering heap of your gifts into the bare infinity of your uncrowded presence."
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "You have set me among those who are defeated."
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "I know it is not for me to win, nor to leave the game."
+    },
+    {
+      "id": "s28-2",
+      "sceneId": "s28",
+      "text": "I shall plunge into the pool although but to sink to the bottom."
+    },
+    {
+      "id": "s28-3",
+      "sceneId": "s28",
+      "text": "I shall play the game of my undoing."
+    },
+    {
+      "id": "s28-4",
+      "sceneId": "s28",
+      "text": "I shall stake all I have and when I lose my last penny I shall stake myself, and then I think I shall have won through my utter defeat."
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "A smile of mirth spread over the sky when you dressed my heart in rags and sent her forth into the road to beg."
+    },
+    {
+      "id": "s29-1",
+      "sceneId": "s29",
+      "text": "She went from door to door, and many a time when her bowl was nearly full she was robbed."
+    },
+    {
+      "id": "s29-2",
+      "sceneId": "s29",
+      "text": "At the end of the weary day she came to your palace gate holding up her pitiful bowl, and you came and took her hand and seated her beside you on your throne."
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "“Who among you will take up the duty of feeding the hungry?” Lord Buddha asked his followers when famine raged at Shravasti."
+    },
+    {
+      "id": "s30-1",
+      "sceneId": "s30",
+      "text": "Ratnākar, the banker, hung his head and said, “Much more is needed than all my wealth to feed the hungry.”"
+    },
+    {
+      "id": "s30-2",
+      "sceneId": "s30",
+      "text": "Jaysen, the chief of the King’s army, said, “I would gladly give my life’s blood, but there is not enough food in my house.”"
+    },
+    {
+      "id": "s30-3",
+      "sceneId": "s30",
+      "text": "Dharmapāl, who owned broad acres of land, said with a sigh, “The drought demon has sucked my fields dry. I know not how to pay King’s dues.”"
+    },
+    {
+      "id": "s30-4",
+      "sceneId": "s30",
+      "text": "Then rose Supriyā, the mendicant’s daughter."
+    },
+    {
+      "id": "s30-5",
+      "sceneId": "s30",
+      "text": "She bowed to all and meekly said, “I will feed the hungry.”"
+    },
+    {
+      "id": "s30-6",
+      "sceneId": "s30",
+      "text": "“How!” they cried in surprise. “How can you hope to fulfil that vow?”"
+    },
+    {
+      "id": "s30-7",
+      "sceneId": "s30",
+      "text": "“I am the poorest of you all,” said Supriyā, “that is my strength. I have my coffer and my store at each of your houses.”"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "My king was unknown to me, therefore when he claimed his tribute I was bold to think I would hide myself leaving my debts unpaid."
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "I fled and fled behind my day’s work and my night’s dreams."
+    },
+    {
+      "id": "s31-2",
+      "sceneId": "s31",
+      "text": "But his claims followed me at every breath I drew."
+    },
+    {
+      "id": "s31-3",
+      "sceneId": "s31",
+      "text": "Thus I came to know that I am known to him and no place left which is mine."
+    },
+    {
+      "id": "s31-4",
+      "sceneId": "s31",
+      "text": "Now I wish to lay my all before his feet, and gain the right to my place in his kingdom."
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "When I thought I would mould you, an image from my life for men to worship, I brought my dust and desires and all my coloured delusions and dreams."
+    },
+    {
+      "id": "s32-1",
+      "sceneId": "s32",
+      "text": "When I asked you to mould with my life an image from your heart for you to love, you brought your fire and force, and truth, loveliness and peace."
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "“Sire,” announced the servant to the King, “the saint Narottam has never deigned to enter your royal temple."
+    },
+    {
+      "id": "s33-1",
+      "sceneId": "s33",
+      "text": "“He is singing God’s praise under the trees by the open road. The temple is empty of worshippers."
+    },
+    {
+      "id": "s33-2",
+      "sceneId": "s33",
+      "text": "“They flock round him like bees round the white lotus, leaving the golden jar of honey unheeded.”"
+    },
+    {
+      "id": "s33-3",
+      "sceneId": "s33",
+      "text": "The King, vexed at heart, went to the spot where Narottam sat on the grass."
+    },
+    {
+      "id": "s33-4",
+      "sceneId": "s33",
+      "text": "He asked him, “Father, why leave my temple of the golden dome and sit on the dust outside to preach God’s love?”"
+    },
+    {
+      "id": "s33-5",
+      "sceneId": "s33",
+      "text": "“Because God is not there in your temple,” said Narottam."
+    },
+    {
+      "id": "s33-6",
+      "sceneId": "s33",
+      "text": "The King frowned and said, “Do you know, twenty millions of gold went to the making of that marvel of art, and it was consecrated to God with costly rites?”"
+    },
+    {
+      "id": "s33-7",
+      "sceneId": "s33",
+      "text": "“Yes, I know it,” answered Narottam. “It was in that year when thousands of your people whose houses had been burned stood vainly asking for help at your door."
+    },
+    {
+      "id": "s33-8",
+      "sceneId": "s33",
+      "text": "“And God said, ‘The poor creature who can give no shelter to his brothers would build my house!’"
+    },
+    {
+      "id": "s33-9",
+      "sceneId": "s33",
+      "text": "“And he took his place with the shelterless under the trees by the road."
+    },
+    {
+      "id": "s33-10",
+      "sceneId": "s33",
+      "text": "“And that golden bubble is empty of all but hot vapour of pride.”"
+    },
+    {
+      "id": "s33-11",
+      "sceneId": "s33",
+      "text": "The King cried in anger, “Leave my land.”"
+    },
+    {
+      "id": "s33-12",
+      "sceneId": "s33",
+      "text": "Calmly said the saint, “Yes, banish me where you have banished my God.”"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "The trumpet lies in the dust."
+    },
+    {
+      "id": "s34-1",
+      "sceneId": "s34",
+      "text": "The wind is weary, the light is dead."
+    },
+    {
+      "id": "s34-2",
+      "sceneId": "s34",
+      "text": "Ah, the evil day!"
+    },
+    {
+      "id": "s34-3",
+      "sceneId": "s34",
+      "text": "Come, fighters, carrying your flags, and singers, with your war-songs!"
+    },
+    {
+      "id": "s34-4",
+      "sceneId": "s34",
+      "text": "Come, pilgrims of the march, hurrying on your journey!"
+    },
+    {
+      "id": "s34-5",
+      "sceneId": "s34",
+      "text": "The trumpet lies in the dust waiting for us."
+    },
+    {
+      "id": "s34-6",
+      "sceneId": "s34",
+      "text": "I was on my way to the temple with my evening offerings, seeking for a place of rest after the day’s dusty toil: hoping my hurts would be healed and the stains in my garment washed white, when I found thy trumpet lying in the dust."
+    },
+    {
+      "id": "s34-7",
+      "sceneId": "s34",
+      "text": "Was it not the hour for me to light my evening lamp?"
+    },
+    {
+      "id": "s34-8",
+      "sceneId": "s34",
+      "text": "Had not the night sung its lullaby to the stars?"
+    },
+    {
+      "id": "s34-9",
+      "sceneId": "s34",
+      "text": "O thou blood-red rose, my poppies of sleep have paled and faded!"
+    },
+    {
+      "id": "s34-10",
+      "sceneId": "s34",
+      "text": "I was certain my wanderings were over and my debts all paid when suddenly I came upon thy trumpet lying in the dust."
+    },
+    {
+      "id": "s34-11",
+      "sceneId": "s34",
+      "text": "Strike my drowsy heart with thy spell of youth!"
+    },
+    {
+      "id": "s34-12",
+      "sceneId": "s34",
+      "text": "Let my joy in life blaze up in fire. Let the shafts of awakening fly through the heart of night, and a thrill of dread shake blindness and palsy."
+    },
+    {
+      "id": "s34-13",
+      "sceneId": "s34",
+      "text": "I have come to raise thy trumpet from the dust."
+    },
+    {
+      "id": "s34-14",
+      "sceneId": "s34",
+      "text": "Sleep is no more for me—my walk shall be through showers of arrows."
+    },
+    {
+      "id": "s34-15",
+      "sceneId": "s34",
+      "text": "Some shall run out of their houses and come to my side—some shall weep."
+    },
+    {
+      "id": "s34-16",
+      "sceneId": "s34",
+      "text": "Some in their beds shall toss and groan in dire dreams."
+    },
+    {
+      "id": "s34-17",
+      "sceneId": "s34",
+      "text": "For to-night thy trumpet shall be sounded."
+    },
+    {
+      "id": "s34-18",
+      "sceneId": "s34",
+      "text": "From thee I have asked peace only to find shame."
+    },
+    {
+      "id": "s34-19",
+      "sceneId": "s34",
+      "text": "Now I stand before thee—help me to put on my armour!"
+    },
+    {
+      "id": "s34-20",
+      "sceneId": "s34",
+      "text": "Let hard blows of trouble strike fire into my life."
+    },
+    {
+      "id": "s34-21",
+      "sceneId": "s34",
+      "text": "Let my heart beat in pain, the drum of thy victory."
+    },
+    {
+      "id": "s34-22",
+      "sceneId": "s34",
+      "text": "My hands shall be utterly emptied to take up thy trumpet."
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "When, mad in their mirth, they raised dust to soil thy robe, O Beautiful, it made my heart sick."
+    },
+    {
+      "id": "s35-1",
+      "sceneId": "s35",
+      "text": "I cried to thee and said, “Take thy rod of punishment and judge them.”"
+    },
+    {
+      "id": "s35-2",
+      "sceneId": "s35",
+      "text": "The morning light struck upon those eyes, red with the revel of night; the place of the white lily greeted their burning breath; the stars through the depth of the sacred dark stared at their carousing—at those that raised dust to soil thy robe, O Beautiful!"
+    },
+    {
+      "id": "s35-3",
+      "sceneId": "s35",
+      "text": "Thy judgment seat was in the flower garden, in the birds’ notes in springtime: in the shady river-banks, where the trees muttered in answer to the muttering of the waves."
+    },
+    {
+      "id": "s35-4",
+      "sceneId": "s35",
+      "text": "O my Lover, they were pitiless in their passion."
+    },
+    {
+      "id": "s35-5",
+      "sceneId": "s35",
+      "text": "They prowled in the dark to snatch thy ornaments to deck their own desires."
+    },
+    {
+      "id": "s35-6",
+      "sceneId": "s35",
+      "text": "When they had struck thee and thou wert pained, it pierced me to the quick, and I cried to thee and said, “Take thy sword, O my Lover, and judge them!”"
+    },
+    {
+      "id": "s35-7",
+      "sceneId": "s35",
+      "text": "Ah, but thy justice was vigilant."
+    },
+    {
+      "id": "s35-8",
+      "sceneId": "s35",
+      "text": "A mother’s tears were shed on their insolence; the imperishable faith of a lover hid their spears of rebellion in its own wounds."
+    },
+    {
+      "id": "s35-9",
+      "sceneId": "s35",
+      "text": "Thy judgment was in the mute pain of sleepless love: in the blush of the chaste: in the tears of the night of the desolate: in the pale morning-light of forgiveness."
+    },
+    {
+      "id": "s35-10",
+      "sceneId": "s35",
+      "text": "O Terrible, they in their reckless greed climbed thy gate at night, breaking into thy storehouse to rob thee."
+    },
+    {
+      "id": "s35-11",
+      "sceneId": "s35",
+      "text": "But the weight of their plunder grew immense, too heavy to carry or to remove."
+    },
+    {
+      "id": "s35-12",
+      "sceneId": "s35",
+      "text": "Thereupon I cried to thee and said, Forgive them, O Terrible!"
+    },
+    {
+      "id": "s35-13",
+      "sceneId": "s35",
+      "text": "Thy forgiveness burst in storms, throwing them down, scattering their thefts in the dust."
+    },
+    {
+      "id": "s35-14",
+      "sceneId": "s35",
+      "text": "Thy forgiveness was in the thunder-stone; in the shower of blood; in the angry red of the sunset."
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "Upagupta, the disciple of Buddha, lay asleep on the dust by the city wall of Mathura."
+    },
+    {
+      "id": "s36-1",
+      "sceneId": "s36",
+      "text": "Lamps were all out, doors were all shut, and stars were all hidden by the murky sky of August."
+    },
+    {
+      "id": "s36-2",
+      "sceneId": "s36",
+      "text": "Whose feet were those tinkling with anklets, touching his breast of a sudden?"
+    },
+    {
+      "id": "s36-3",
+      "sceneId": "s36",
+      "text": "He woke up startled, and the light from a woman’s lamp struck his forgiving eyes."
+    },
+    {
+      "id": "s36-4",
+      "sceneId": "s36",
+      "text": "It was the dancing girl, starred with jewels, clouded with a pale-blue mantle, drunk with the wine of her youth."
+    },
+    {
+      "id": "s36-5",
+      "sceneId": "s36",
+      "text": "She lowered her lamp and saw the young face, austerely beautiful."
+    },
+    {
+      "id": "s36-6",
+      "sceneId": "s36",
+      "text": "“Forgive me, young ascetic,” said the woman; “graciously come to my house. The dusty earth is not a fit bed for you.”"
+    },
+    {
+      "id": "s36-7",
+      "sceneId": "s36",
+      "text": "The ascetic answered, “Woman, go on your way; when the time is ripe I will come to you.”"
+    },
+    {
+      "id": "s36-8",
+      "sceneId": "s36",
+      "text": "Suddenly the black night showed its teeth in a flash of lightning."
+    },
+    {
+      "id": "s36-9",
+      "sceneId": "s36",
+      "text": "The storm growled from the corner of the sky, and the woman trembled in fear."
+    },
+    {
+      "id": "s36-10",
+      "sceneId": "s36",
+      "text": "The branches of the wayside trees were aching with blossom."
+    },
+    {
+      "id": "s36-11",
+      "sceneId": "s36",
+      "text": "Gay notes of the flute came floating in the warm spring air from afar."
+    },
+    {
+      "id": "s36-12",
+      "sceneId": "s36",
+      "text": "The citizens had gone to the woods, to the festival of flowers."
+    },
+    {
+      "id": "s36-13",
+      "sceneId": "s36",
+      "text": "From the mid-sky gazed the full moon on the shadows of the silent town."
+    },
+    {
+      "id": "s36-14",
+      "sceneId": "s36",
+      "text": "The young ascetic was walking in the lonely street, while overhead the lovesick *koels* urged from the mango branches their sleepless plaint."
+    },
+    {
+      "id": "s36-15",
+      "sceneId": "s36",
+      "text": "Upagupta passed through the city gates, and stood at the base of the rampart."
+    },
+    {
+      "id": "s36-16",
+      "sceneId": "s36",
+      "text": "What woman lay in the shadow of the wall at his feet, struck with the black pestilence, her body spotted with sores, hurriedly driven away from the town?"
+    },
+    {
+      "id": "s36-17",
+      "sceneId": "s36",
+      "text": "The ascetic sat by her side, taking her head on his knees, and moistened her lips with water and smeared her body with balm."
+    },
+    {
+      "id": "s36-18",
+      "sceneId": "s36",
+      "text": "“Who are you, merciful one?” asked the woman."
+    },
+    {
+      "id": "s36-19",
+      "sceneId": "s36",
+      "text": "“The time, at last, has come to visit you, and I am here,” replied the young ascetic."
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "This is no mere dallying of love between us, my lover."
+    },
+    {
+      "id": "s37-1",
+      "sceneId": "s37",
+      "text": "Again and again have swooped down upon me the screaming nights of storm, blowing out my lamp: dark doubts have gathered, blotting out all stars from my sky."
+    },
+    {
+      "id": "s37-2",
+      "sceneId": "s37",
+      "text": "Again and again the banks have burst, letting the flood sweep away my harvest, and wailing and despair have rent my sky from end to end."
+    },
+    {
+      "id": "s37-3",
+      "sceneId": "s37",
+      "text": "This have I learnt that there are blows of pain in your love, never the cold apathy of death."
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "The wall breaks asunder, light, like divine laughter, bursts in."
+    },
+    {
+      "id": "s38-1",
+      "sceneId": "s38",
+      "text": "Victory, O Light!"
+    },
+    {
+      "id": "s38-2",
+      "sceneId": "s38",
+      "text": "The heart of the night is pierced!"
+    },
+    {
+      "id": "s38-3",
+      "sceneId": "s38",
+      "text": "With your flashing sword cut in twain the tangle of doubt and feeble desires!"
+    },
+    {
+      "id": "s38-4",
+      "sceneId": "s38",
+      "text": "Victory!"
+    },
+    {
+      "id": "s38-5",
+      "sceneId": "s38",
+      "text": "Come, Implacable!"
+    },
+    {
+      "id": "s38-6",
+      "sceneId": "s38",
+      "text": "Come, you who are terrible in your whiteness."
+    },
+    {
+      "id": "s38-7",
+      "sceneId": "s38",
+      "text": "O Light, your drum sounds in the march of fire, and the red torch is held on high; death dies in a burst of splendour!"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "O fire, my brother, I sing victory to you."
+    },
+    {
+      "id": "s39-1",
+      "sceneId": "s39",
+      "text": "You are the bright red image of fearful freedom."
+    },
+    {
+      "id": "s39-2",
+      "sceneId": "s39",
+      "text": "You swing your arms in the sky, you sweep your impetuous fingers across the harp-string, your dance music is beautiful."
+    },
+    {
+      "id": "s39-3",
+      "sceneId": "s39",
+      "text": "When my days are ended and the gates are opened you will burn to ashes this cordage of hands and feet."
+    },
+    {
+      "id": "s39-4",
+      "sceneId": "s39",
+      "text": "My body will be one with you, my heart will be caught in the whirls of your frenzy, and the burning heat that was my life will flash up and mingle itself in your flame."
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "The Boatman is out crossing the wild sea at night."
+    },
+    {
+      "id": "s40-1",
+      "sceneId": "s40",
+      "text": "The mast is aching because of its full sails filled with the violent wind."
+    },
+    {
+      "id": "s40-2",
+      "sceneId": "s40",
+      "text": "Stung with the night’s fang the sky falls upon the sea, poisoned with black fear."
+    },
+    {
+      "id": "s40-3",
+      "sceneId": "s40",
+      "text": "The waves dash their heads against the dark unseen, and the Boatman is out crossing the wild sea."
+    },
+    {
+      "id": "s40-4",
+      "sceneId": "s40",
+      "text": "The Boatman is out, I know not for what tryst, startling the night with the sudden white of his sails."
+    },
+    {
+      "id": "s40-5",
+      "sceneId": "s40",
+      "text": "I know not at what shore, at last, he lands to reach the silent courtyard where the lamp is burning and to find her who sits in the dust and waits."
+    },
+    {
+      "id": "s40-6",
+      "sceneId": "s40",
+      "text": "What is the quest that makes his boat care not for storm nor darkness?"
+    },
+    {
+      "id": "s40-7",
+      "sceneId": "s40",
+      "text": "Is it heavy with gems and pearls?"
+    },
+    {
+      "id": "s40-8",
+      "sceneId": "s40",
+      "text": "Ah, no, the Boatman brings with him no treasure, but only a white rose in his hand and a song on his lips."
+    },
+    {
+      "id": "s40-9",
+      "sceneId": "s40",
+      "text": "It is for her who watches alone at night with her lamp burning."
+    },
+    {
+      "id": "s40-10",
+      "sceneId": "s40",
+      "text": "She dwells in the wayside hut. Her loose hair flies in the wind and hides her eyes."
+    },
+    {
+      "id": "s40-11",
+      "sceneId": "s40",
+      "text": "The storm shrieks through her broken doors, the light flickers in her earthen lamp flinging shadows on the walls."
+    },
+    {
+      "id": "s40-12",
+      "sceneId": "s40",
+      "text": "Through the howl of the winds she hears him call her name, she whose name is unknown."
+    },
+    {
+      "id": "s40-13",
+      "sceneId": "s40",
+      "text": "It is long since the Boatman sailed. It will be long before the day breaks and he knocks at the door."
+    },
+    {
+      "id": "s40-14",
+      "sceneId": "s40",
+      "text": "The drums will not be beaten and none will know."
+    },
+    {
+      "id": "s40-15",
+      "sceneId": "s40",
+      "text": "Only light shall fill the house, blessed shall be the dust, and the heart glad."
+    },
+    {
+      "id": "s40-16",
+      "sceneId": "s40",
+      "text": "All doubts shall vanish in silence when the Boatman comes to the shore."
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "I cling to this living raft, my body, in the narrow stream of my earthly years."
+    },
+    {
+      "id": "s41-1",
+      "sceneId": "s41",
+      "text": "I leave it when the crossing is over. And then?"
+    },
+    {
+      "id": "s41-2",
+      "sceneId": "s41",
+      "text": "I do not know if the light there and the darkness are the same."
+    },
+    {
+      "id": "s41-3",
+      "sceneId": "s41",
+      "text": "The Unknown is the perpetual freedom:"
+    },
+    {
+      "id": "s41-4",
+      "sceneId": "s41",
+      "text": "He is pitiless in his love."
+    },
+    {
+      "id": "s41-5",
+      "sceneId": "s41",
+      "text": "He crushes the shell for the pearl, dumb in the prison of the dark."
+    },
+    {
+      "id": "s41-6",
+      "sceneId": "s41",
+      "text": "You muse and weep for the days that are done, poor heart!"
+    },
+    {
+      "id": "s41-7",
+      "sceneId": "s41",
+      "text": "Be glad that days are to come!"
+    },
+    {
+      "id": "s41-8",
+      "sceneId": "s41",
+      "text": "The hour strikes, O pilgrim!"
+    },
+    {
+      "id": "s41-9",
+      "sceneId": "s41",
+      "text": "It is time for you to take the parting of the ways!"
+    },
+    {
+      "id": "s41-10",
+      "sceneId": "s41",
+      "text": "His face will be unveiled once again and you shall meet."
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Over the relic of Lord Buddha King Bimbisār built a shrine, a salutation in white marble."
+    },
+    {
+      "id": "s42-1",
+      "sceneId": "s42",
+      "text": "There in the evening would come all the brides and daughters of the King’s house to offer flowers and light lamps."
+    },
+    {
+      "id": "s42-2",
+      "sceneId": "s42",
+      "text": "When the son became king in his time he washed his father’s creed away with blood, and lit sacrificial fires with its sacred books."
+    },
+    {
+      "id": "s42-3",
+      "sceneId": "s42",
+      "text": "The autumn day was dying."
+    },
+    {
+      "id": "s42-4",
+      "sceneId": "s42",
+      "text": "The evening hour of worship was near."
+    },
+    {
+      "id": "s42-5",
+      "sceneId": "s42",
+      "text": "Shrimati, the queen’s maid, devoted to Lord Buddha, having bathed in holy water, and decked the golden tray with lamps and fresh white blossoms, silently raised her dark eyes to the queen’s face."
+    },
+    {
+      "id": "s42-6",
+      "sceneId": "s42",
+      "text": "The queen shuddered in fear and said, “Do you not know, foolish girl, that death is the penalty for whoever brings worship to Buddha’s shrine?"
+    },
+    {
+      "id": "s42-7",
+      "sceneId": "s42",
+      "text": "“Such is the king’s will.”"
+    },
+    {
+      "id": "s42-8",
+      "sceneId": "s42",
+      "text": "Shrimati bowed to the queen, and turning away from her door came and stood before Amitā, the newly wed bride of the king’s son."
+    },
+    {
+      "id": "s42-9",
+      "sceneId": "s42",
+      "text": "A mirror of burnished gold on her lap, the newly wed bride was braiding her dark long tresses and painting the red spot of good luck at the parting of her hair."
+    },
+    {
+      "id": "s42-10",
+      "sceneId": "s42",
+      "text": "Her hands trembled when she saw the young maid, and she cried, “What fearful peril would you bring me! Leave me this instant.”"
+    },
+    {
+      "id": "s42-11",
+      "sceneId": "s42",
+      "text": "Princess Shuklā sat at the window reading her book of romance by the light of the setting sun."
+    },
+    {
+      "id": "s42-12",
+      "sceneId": "s42",
+      "text": "She started when she saw at her door the maid with the sacred offerings."
+    },
+    {
+      "id": "s42-13",
+      "sceneId": "s42",
+      "text": "Her book fell down from her lap, and she whispered in Shrimati’s ears, “Rush not to death, daring woman!”"
+    },
+    {
+      "id": "s42-14",
+      "sceneId": "s42",
+      "text": "Shrimati walked from door to door."
+    },
+    {
+      "id": "s42-15",
+      "sceneId": "s42",
+      "text": "She raised her head and cried, “O women of the king’s house, hasten!"
+    },
+    {
+      "id": "s42-16",
+      "sceneId": "s42",
+      "text": "“The time for our Lord’s worship is come!”"
+    },
+    {
+      "id": "s42-17",
+      "sceneId": "s42",
+      "text": "Some shut their doors in her face and some reviled her."
+    },
+    {
+      "id": "s42-18",
+      "sceneId": "s42",
+      "text": "The last gleam of daylight faded from the bronze dome of the palace tower."
+    },
+    {
+      "id": "s42-19",
+      "sceneId": "s42",
+      "text": "Deep shadows settled in street corners: the bustle of the city was hushed: the gong at the temple of Shiva announced the time of the evening prayer."
+    },
+    {
+      "id": "s42-20",
+      "sceneId": "s42",
+      "text": "In the dark of the autumn evening, deep as a limpid lake, stars throbbed with light, when the guards of the palace garden were startled to see through the trees a row of lamps burning at the shrine of Buddha."
+    },
+    {
+      "id": "s42-21",
+      "sceneId": "s42",
+      "text": "They ran with their swords unsheathed, crying, “Who are you, foolish one, reckless of death?”"
+    },
+    {
+      "id": "s42-22",
+      "sceneId": "s42",
+      "text": "“I am Shrimati,” replied a sweet voice, “the servant of Lord Buddha.”"
+    },
+    {
+      "id": "s42-23",
+      "sceneId": "s42",
+      "text": "The next moment her heart’s blood coloured the cold marble with its red."
+    },
+    {
+      "id": "s42-24",
+      "sceneId": "s42",
+      "text": "And in the still hour of stars died the light of the last lamp of worship at the foot of the shrine."
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "The day that stands between you and me makes her last bow of farewell."
+    },
+    {
+      "id": "s43-1",
+      "sceneId": "s43",
+      "text": "The night draws her veil over her face, and hides the one lamp burning in my chamber."
+    },
+    {
+      "id": "s43-2",
+      "sceneId": "s43",
+      "text": "Your dark servant comes noiselessly and spreads the bridal carpet for you to take your seat there alone with me in the wordless silence till night is done."
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "My night has passed on the bed of sorrow, and my eyes are tired. My heavy heart is not yet ready to meet morning with its crowded joys."
+    },
+    {
+      "id": "s44-1",
+      "sceneId": "s44",
+      "text": "Draw a veil over this naked light, beckon aside from me this glaring flash and dance of life."
+    },
+    {
+      "id": "s44-2",
+      "sceneId": "s44",
+      "text": "Let the mantle of tender darkness cover me in its folds, and cover my pain awhile from the pressure of the world."
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "The time is past when I could repay her for all that I received."
+    },
+    {
+      "id": "s45-1",
+      "sceneId": "s45",
+      "text": "Her night has found its morning and thou hast taken her to thy arms: and to thee I bring my gratitude and my gifts that were for her."
+    },
+    {
+      "id": "s45-2",
+      "sceneId": "s45",
+      "text": "For all hurts and offences to her I come to thee for forgiveness."
+    },
+    {
+      "id": "s45-3",
+      "sceneId": "s45",
+      "text": "I offer to thy service those flowers of my love that remained in bud when she waited for them to open."
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "I found a few old letters of mine carefully hidden in her box—a few small toys for her memory to play with."
+    },
+    {
+      "id": "s46-1",
+      "sceneId": "s46",
+      "text": "With a timorous heart she tried to steal these trifles from time’s turbulent stream, and said, “These are mine only!”"
+    },
+    {
+      "id": "s46-2",
+      "sceneId": "s46",
+      "text": "Ah, there is no one now to claim them, who can pay their price with loving care, yet here they are still."
+    },
+    {
+      "id": "s46-3",
+      "sceneId": "s46",
+      "text": "Surely there is love in this world to save her from utter loss, even like this love of hers that saved these letters with such fond care."
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "Bring beauty and order into my forlorn life, woman, as you brought them into my house when you lived."
+    },
+    {
+      "id": "s47-1",
+      "sceneId": "s47",
+      "text": "Sweep away the dusty fragments of the hours, fill the empty jars, and mend all that has been neglected."
+    },
+    {
+      "id": "s47-2",
+      "sceneId": "s47",
+      "text": "Then open the inner door of the shrine, light the candle, and let us meet there in silence before our God."
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "The pain was great when the strings were being tuned, my Master!"
+    },
+    {
+      "id": "s48-1",
+      "sceneId": "s48",
+      "text": "Begin your music, and let me forget the pain; let me feel in beauty what you had in your mind through those pitiless days."
+    },
+    {
+      "id": "s48-2",
+      "sceneId": "s48",
+      "text": "The waning night lingers at my doors, let her take her leave in songs."
+    },
+    {
+      "id": "s48-3",
+      "sceneId": "s48",
+      "text": "Pour your heart into my life strings, my Master, in tunes that descend from your stars."
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "In the lightning flash of a moment I have seen the immensity of your creation in my life—creation through many a death from world to world."
+    },
+    {
+      "id": "s49-1",
+      "sceneId": "s49",
+      "text": "I weep at my unworthiness when I see my life in the hands of the unmeaning hours,—but when I see it in your hands I know it is too precious to be squandered among shadows."
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "I know that at the dim end of some day the sun will bid me its farewell."
+    },
+    {
+      "id": "s50-1",
+      "sceneId": "s50",
+      "text": "Shepherds will play their pipes beneath the banyan trees, and cattle graze on the slope by the river, while my days will pass into the dark."
+    },
+    {
+      "id": "s50-2",
+      "sceneId": "s50",
+      "text": "This is my prayer, that I may know before I leave why the earth called me to her arms."
+    },
+    {
+      "id": "s50-3",
+      "sceneId": "s50",
+      "text": "Why her night’s silence spoke to me of stars, and her daylight kissed my thoughts into flower."
+    },
+    {
+      "id": "s50-4",
+      "sceneId": "s50",
+      "text": "Before I go may I linger over my last refrain, completing its music, may the lamp be lit to see your face and the wreath woven to crown you."
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "What music is that in whose measure the world is rocked?"
+    },
+    {
+      "id": "s51-1",
+      "sceneId": "s51",
+      "text": "We laugh when it beats upon the crest of life, we shrink in terror when it returns into the dark."
+    },
+    {
+      "id": "s51-2",
+      "sceneId": "s51",
+      "text": "But the play is the same that comes and goes with the rhythm of the endless music."
+    },
+    {
+      "id": "s51-3",
+      "sceneId": "s51",
+      "text": "You hide your treasure in the palm of your hand, and we cry that we are robbed."
+    },
+    {
+      "id": "s51-4",
+      "sceneId": "s51",
+      "text": "But open and shut your palm as you will, the gain and the loss are the same."
+    },
+    {
+      "id": "s51-5",
+      "sceneId": "s51",
+      "text": "At the game you play with your own self you lose and win at once."
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "I have kissed this world with my eyes and my limbs; I have wrapt it within my heart in numberless folds; I have flooded its days and nights with thoughts till the world and my life have grown one,—and I love my life because I love the light of the sky so enwoven with me."
+    },
+    {
+      "id": "s52-1",
+      "sceneId": "s52",
+      "text": "If to leave this world be as real as to love it—then there must be a meaning in the meeting and the parting of life."
+    },
+    {
+      "id": "s52-2",
+      "sceneId": "s52",
+      "text": "If that love were deceived in death, then the canker of this deceit would eat into all things, and the stars would shrivel and grow black."
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "The Cloud said to me, “I vanish”; the Night said, “I plunge into the fiery dawn.”"
+    },
+    {
+      "id": "s53-1",
+      "sceneId": "s53",
+      "text": "The Pain said, “I remain in deep silence as his footprint.”"
+    },
+    {
+      "id": "s53-2",
+      "sceneId": "s53",
+      "text": "“I die into the fulness,” said my life to me."
+    },
+    {
+      "id": "s53-3",
+      "sceneId": "s53",
+      "text": "The Earth said, “My lights kiss your thoughts every moment.”"
+    },
+    {
+      "id": "s53-4",
+      "sceneId": "s53",
+      "text": "“The days pass,” Love said, “but I wait for you.”"
+    },
+    {
+      "id": "s53-5",
+      "sceneId": "s53",
+      "text": "Death said, “I ply the boat of your life across the sea.”"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "Tulsidas, the poet, was wandering, deep in thought, by the Ganges, in that lonely spot where they burn their dead."
+    },
+    {
+      "id": "s54-1",
+      "sceneId": "s54",
+      "text": "He found a woman sitting at the feet of the corpse of her dead husband, gaily dressed as for a wedding."
+    },
+    {
+      "id": "s54-2",
+      "sceneId": "s54",
+      "text": "She rose as she saw him, bowed to him, and said, “Permit me, Master, with your blessing, to follow my husband to heaven.”"
+    },
+    {
+      "id": "s54-3",
+      "sceneId": "s54",
+      "text": "“Why such hurry, my daughter?” asked Tulsidas. “Is not this earth also His who made heaven?”"
+    },
+    {
+      "id": "s54-4",
+      "sceneId": "s54",
+      "text": "“For heaven I do not long,” said the woman. “I want my husband.”"
+    },
+    {
+      "id": "s54-5",
+      "sceneId": "s54",
+      "text": "Tulsidas smiled and said to her, “Go back to your home, my child. Before the month is over you will find your husband.”"
+    },
+    {
+      "id": "s54-6",
+      "sceneId": "s54",
+      "text": "The woman went back with glad hope. Tulsidas came to her every day and gave her high thoughts to think, till her heart was filled to the brim with divine love."
+    },
+    {
+      "id": "s54-7",
+      "sceneId": "s54",
+      "text": "When the month was scarcely over, her neighbours came to her, asking, “Woman, have you found your husband?”"
+    },
+    {
+      "id": "s54-8",
+      "sceneId": "s54",
+      "text": "The widow smiled and said, “I have.”"
+    },
+    {
+      "id": "s54-9",
+      "sceneId": "s54",
+      "text": "Eagerly they asked, “Where is he?”"
+    },
+    {
+      "id": "s54-10",
+      "sceneId": "s54",
+      "text": "“In my heart is my lord, one with me,” said the woman."
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "You came for a moment to my side and touched me with the great mystery of the woman that there is in the heart of creation."
+    },
+    {
+      "id": "s55-1",
+      "sceneId": "s55",
+      "text": "She who is ever returning to God his own outflo wing of sweetness; she is the ever fresh beauty and youth in nature; she dances in the bubbling streams and sings in the morning light; she with heaving waves suckles the thirsty earth; in her the Eternal One breaks in two in a joy that no longer may contain itself, and overflows in the pain of love."
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "Who is she who dwells in my heart, the woman forlorn for ever?"
+    },
+    {
+      "id": "s56-1",
+      "sceneId": "s56",
+      "text": "I wooed her and I failed to win her. I decked her with wreaths and sang in her praise."
+    },
+    {
+      "id": "s56-2",
+      "sceneId": "s56",
+      "text": "A smile shone in her face for a moment, then it faded."
+    },
+    {
+      "id": "s56-3",
+      "sceneId": "s56",
+      "text": "“I have no joy in thee,” she cried, the woman in sorrow."
+    },
+    {
+      "id": "s56-4",
+      "sceneId": "s56",
+      "text": "I bought her jewelled anklets and fanned her with a fan gem-studded; I made her a bed on a bedstead of gold."
+    },
+    {
+      "id": "s56-5",
+      "sceneId": "s56",
+      "text": "There flickered a gleam of gladness in her eyes, then it died."
+    },
+    {
+      "id": "s56-6",
+      "sceneId": "s56",
+      "text": "“I have no joy in these,” she cried, the woman in sorrow."
+    },
+    {
+      "id": "s56-7",
+      "sceneId": "s56",
+      "text": "I seated her upon a car of triumph and drove her from end to end of the earth."
+    },
+    {
+      "id": "s56-8",
+      "sceneId": "s56",
+      "text": "Conquered hearts bowed down at her feet, and shouts of applause rang in the sky."
+    },
+    {
+      "id": "s56-9",
+      "sceneId": "s56",
+      "text": "Pride shone in her eyes for a moment, then it was dimmed in tears."
+    },
+    {
+      "id": "s56-10",
+      "sceneId": "s56",
+      "text": "“I have no joy in conquest,” she cried, the woman in sorrow."
+    },
+    {
+      "id": "s56-11",
+      "sceneId": "s56",
+      "text": "I asked her, “Tell me whom do you seek?”"
+    },
+    {
+      "id": "s56-12",
+      "sceneId": "s56",
+      "text": "She only said, “I wait for him of the unknown name.”"
+    },
+    {
+      "id": "s56-13",
+      "sceneId": "s56",
+      "text": "Days pass by and she cries, “When will my beloved come whom I know not, and be known to me for ever?”"
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "Yours is the light that breaks forth from the dark, and the good that sprouts from the cleft heart of strife."
+    },
+    {
+      "id": "s57-1",
+      "sceneId": "s57",
+      "text": "Yours is the house that opens upon the world, and the love that calls to the battlefield."
+    },
+    {
+      "id": "s57-2",
+      "sceneId": "s57",
+      "text": "Yours is the gift that still is a gain when everything is a loss, and the life that flows through the caverns of death."
+    },
+    {
+      "id": "s57-3",
+      "sceneId": "s57",
+      "text": "Yours is the heaven that lies in the common dust, and you are there for me, you are there for all."
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "When the weariness of the road is upon me, and the thirst of the sultry day; when the ghostly hours of the dusk throw their shadows across my life, then I cry not for your voice only, my friend, but for your touch."
+    },
+    {
+      "id": "s58-1",
+      "sceneId": "s58",
+      "text": "There is an anguish in my heart for the burden of its riches not given to you."
+    },
+    {
+      "id": "s58-2",
+      "sceneId": "s58",
+      "text": "Put out your hand through the night, let me hold it and fill it and keep it; let me feel its touch along the lengthening stretch of my loneliness."
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "The odour cries in the bud, “Ah me, the day departs, the happy day of spring, and I am a prisoner in petals!”"
+    },
+    {
+      "id": "s59-1",
+      "sceneId": "s59",
+      "text": "Do not lose heart, timid thing! Your bonds will burst, the bud will open into flower, and when you die in the fulness of life, even then the spring will live on."
+    },
+    {
+      "id": "s59-2",
+      "sceneId": "s59",
+      "text": "The odour pants and flutters within the bud, crying, “Ah me, the hours pass by, yet I do not know where I go, or what it is I seek!”"
+    },
+    {
+      "id": "s59-3",
+      "sceneId": "s59",
+      "text": "Do not lose heart, timid thing! The spring breeze has overheard your desire, the day will not end before you have fulfilled your being."
+    },
+    {
+      "id": "s59-4",
+      "sceneId": "s59",
+      "text": "Dark is the future to her, and the odour cries in despair, “Ah me, through whose fault is my life so unmeaning?"
+    },
+    {
+      "id": "s59-5",
+      "sceneId": "s59",
+      "text": "“Who can tell me, why I am at all?” Do not lose heart, timid thing! The perfect dawn is near when you will mingle your life with all life and know at last your purpose."
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "She is still a child, my lord."
+    },
+    {
+      "id": "s60-1",
+      "sceneId": "s60",
+      "text": "She runs about your palace and plays, and tries to make of you a plaything as well."
+    },
+    {
+      "id": "s60-2",
+      "sceneId": "s60",
+      "text": "She heeds not when her hair tumbles down and her careless garment drags in the dust."
+    },
+    {
+      "id": "s60-3",
+      "sceneId": "s60",
+      "text": "She falls asleep when you speak to her and answers not—and the flower you give her in the morning slips to the dust from her hands."
+    },
+    {
+      "id": "s60-4",
+      "sceneId": "s60",
+      "text": "When the storm bursts and darkness is over the sky she is sleepless; her dolls lie scattered on the earth and she clings to you in terror."
+    },
+    {
+      "id": "s60-5",
+      "sceneId": "s60",
+      "text": "She is afraid that she may fail in service to you."
+    },
+    {
+      "id": "s60-6",
+      "sceneId": "s60",
+      "text": "But with a smile you watch her at her game."
+    },
+    {
+      "id": "s60-7",
+      "sceneId": "s60",
+      "text": "You know her."
+    },
+    {
+      "id": "s60-8",
+      "sceneId": "s60",
+      "text": "The child sitting in the dust is your destined bride; her play will be stilled and deepened into love."
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "“What is there but the sky, O Sun, that can hold thine image?”"
+    },
+    {
+      "id": "s61-1",
+      "sceneId": "s61",
+      "text": "“I dream of thee, but to serve thee I can never hope,” the dewdrop wept and said, “I am too small to take thee unto me, great lord, and my life is all tears.”"
+    },
+    {
+      "id": "s61-2",
+      "sceneId": "s61",
+      "text": "“I illumine the limitless sky, yet I can yield myself up to a tiny drop of dew,” thus the Sun said; “I shall become but a sparkle of light and fill you, and your little life will be a laughing orb.”"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "Not for me is the love that knows no restraint, but like the foaming wine that having burst its vessel in a moment would run to waste."
+    },
+    {
+      "id": "s62-1",
+      "sceneId": "s62",
+      "text": "Send me the love which is cool and pure like your rain that blesses the thirsty earth and fills the homely earthen jars."
+    },
+    {
+      "id": "s62-2",
+      "sceneId": "s62",
+      "text": "Send me the love that would soak down into the centre of being, and from there would spread like the unseen sap through the branching tree of life, giving birth to fruits and flowers."
+    },
+    {
+      "id": "s62-3",
+      "sceneId": "s62",
+      "text": "Send me the love that keeps the heart still with the fulness of peace."
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "The sun had set on the western margin of the river among the tangle of the forest."
+    },
+    {
+      "id": "s63-1",
+      "sceneId": "s63",
+      "text": "The hermit boys had brought the cattle home, and sat round the fire to listen to the master, Guatama, when a strange boy came, and greeted him with fruits and flowers, and, bowing low at his feet, spoke in a bird-like voice—“Lord, I have come to thee to be taken into the path of the supreme Truth."
+    },
+    {
+      "id": "s63-2",
+      "sceneId": "s63",
+      "text": "“My name is Satyakāma.”"
+    },
+    {
+      "id": "s63-3",
+      "sceneId": "s63",
+      "text": "“Blessings be on thy head,” said the master."
+    },
+    {
+      "id": "s63-4",
+      "sceneId": "s63",
+      "text": "“Of what clan art thou, my child? It is only fitting for a Brahmin to aspire to the highest wisdom.”"
+    },
+    {
+      "id": "s63-5",
+      "sceneId": "s63",
+      "text": "“Master,” answered the boy, “I know not of what clan I am. I shall go and ask my mother.”"
+    },
+    {
+      "id": "s63-6",
+      "sceneId": "s63",
+      "text": "Thus saying, Satyakāma took leave, and wading across the shallow stream, came back to his mother’s hut, which stood at the end of the sandy waste at the edge of the sleeping village."
+    },
+    {
+      "id": "s63-7",
+      "sceneId": "s63",
+      "text": "The lamp burnt dimly in the room, and the mother stood at the door in the dark waiting for her son’s return."
+    },
+    {
+      "id": "s63-8",
+      "sceneId": "s63",
+      "text": "She clasped him to her bosom, kissed him on his hair, and asked him of his errand to the master."
+    },
+    {
+      "id": "s63-9",
+      "sceneId": "s63",
+      "text": "“What is the name of my father, dear mother?” asked the boy."
+    },
+    {
+      "id": "s63-10",
+      "sceneId": "s63",
+      "text": "“It is only fitting for a Brahmin to aspire to the highest wisdom, said Lord Guatama to me.”"
+    },
+    {
+      "id": "s63-11",
+      "sceneId": "s63",
+      "text": "The woman lowered her eyes, and spoke in a whisper."
+    },
+    {
+      "id": "s63-12",
+      "sceneId": "s63",
+      "text": "“In my youth I was poor and had many masters. Thou didst come to thy mother Jabālā’s arms, my darling, who had no husband.”"
+    },
+    {
+      "id": "s63-13",
+      "sceneId": "s63",
+      "text": "The early rays of the sun glistened on the tree-tops of the forest hermitage."
+    },
+    {
+      "id": "s63-14",
+      "sceneId": "s63",
+      "text": "The students, with their tangled hair still wet with their morning bath, sat under the ancient tree, before the master."
+    },
+    {
+      "id": "s63-15",
+      "sceneId": "s63",
+      "text": "There came Satyakāma."
+    },
+    {
+      "id": "s63-16",
+      "sceneId": "s63",
+      "text": "He bowed low at the feet of the sage, and stood silent."
+    },
+    {
+      "id": "s63-17",
+      "sceneId": "s63",
+      "text": "“Tell me,” the great teacher asked him, “of what clan art thou?”"
+    },
+    {
+      "id": "s63-18",
+      "sceneId": "s63",
+      "text": "“My lord,” he answered, “I know it not. My mother said when I asked her, ‘I had served many masters in my youth, and thou hadst come to thy mother Jabālā’s arms, who had no husband.’”"
+    },
+    {
+      "id": "s63-19",
+      "sceneId": "s63",
+      "text": "There rose a murmur like the angry hum of bees disturbed in their hive; and the students muttered at the shameless insolence of that outcast."
+    },
+    {
+      "id": "s63-20",
+      "sceneId": "s63",
+      "text": "Master Guatama rose from his seat, stretched out his arms, took the boy to his bosom, and said, “Best of all Brahmins art thou, my child. Thou hast the noblest heritage of truth.”"
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "May be there is one house in this city where the gate opens for ever this morning at the touch of the sunrise, where the errand of the light is fulfilled."
+    },
+    {
+      "id": "s64-1",
+      "sceneId": "s64",
+      "text": "The flowers have opened in hedges and gardens, and may be there is one heart that has found in them this morning the gift that has been on its voyage from endless time."
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "Listen, my heart, in his flute is the music of the smell of wild flowers, of the glistening leaves and gleaming water, of shadows resonant with bees’ wings."
+    },
+    {
+      "id": "s65-1",
+      "sceneId": "s65",
+      "text": "The flute steals his smile from my friend’s lips and spreads it over my life."
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "You always stand alone beyond the stream of my songs."
+    },
+    {
+      "id": "s66-1",
+      "sceneId": "s66",
+      "text": "The waves of my tunes wash your feet but I know not how to reach them."
+    },
+    {
+      "id": "s66-2",
+      "sceneId": "s66",
+      "text": "This play of mine with you is a play from afar."
+    },
+    {
+      "id": "s66-3",
+      "sceneId": "s66",
+      "text": "It is the pain of separation that melts into melody through my flute."
+    },
+    {
+      "id": "s66-4",
+      "sceneId": "s66",
+      "text": "I wait for the time when your boat crosses over to my shore and you take my flute into your own hands."
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "Suddenly the window of my heart flew open this morning, the window that looks out on your heart."
+    },
+    {
+      "id": "s67-1",
+      "sceneId": "s67",
+      "text": "I wondered to see that the name by which you know me is written in April leaves and flowers, and I sat silent."
+    },
+    {
+      "id": "s67-2",
+      "sceneId": "s67",
+      "text": "The curtain was blown away for a moment between my songs and yours."
+    },
+    {
+      "id": "s67-3",
+      "sceneId": "s67",
+      "text": "I found that your morning light was full of my own mute songs unsung; I thought that I would learn them at your feet—and I sat silent."
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "You were in the centre of my heart, therefore when my heart wandered she never found you; you hid yourself from my loves and hopes till the last, for you were always in them."
+    },
+    {
+      "id": "s68-1",
+      "sceneId": "s68",
+      "text": "You were the inmost joy in the play of my youth, and when I was too busy with the play the joy was passed by."
+    },
+    {
+      "id": "s68-2",
+      "sceneId": "s68",
+      "text": "You sang to me in the ecstasies of my life and I forgot to sing to you."
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "When you hold your lamp in the sky it throws its light on my face and its shadow falls over you."
+    },
+    {
+      "id": "s69-1",
+      "sceneId": "s69",
+      "text": "When I hold the lamp of love in my heart its light falls on you and I am left standing behind in the shadow."
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "O the waves, the sky-devouring waves, glistening with light, dancing with life, the waves of eddying joy, rushing for ever."
+    },
+    {
+      "id": "s70-1",
+      "sceneId": "s70",
+      "text": "The stars rock upon them, thoughts of every tint are cast up out of the deep and scattered on the beach of life."
+    },
+    {
+      "id": "s70-2",
+      "sceneId": "s70",
+      "text": "Birth and death rise and fall with their rhythm, and the sea-gull of my heart spreads its wings crying in delight."
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "The joy ran from all the world to build my body."
+    },
+    {
+      "id": "s71-1",
+      "sceneId": "s71",
+      "text": "The lights of the skies kissed and kissed her till she woke."
+    },
+    {
+      "id": "s71-2",
+      "sceneId": "s71",
+      "text": "Flowers of hurrying summers sighed in her breath and voices of winds and water sang in her movements."
+    },
+    {
+      "id": "s71-3",
+      "sceneId": "s71",
+      "text": "The passion of the tide of colours in clouds and in forests flowed into her life, and the music of all things caressed her limbs into shape."
+    },
+    {
+      "id": "s71-4",
+      "sceneId": "s71",
+      "text": "She is my bride,—she has lighted her lamp in my house."
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "The spring with its leaves and flowers has come into my body."
+    },
+    {
+      "id": "s72-1",
+      "sceneId": "s72",
+      "text": "The bees hum there the morning long, and the winds idly play with the shadows."
+    },
+    {
+      "id": "s72-2",
+      "sceneId": "s72",
+      "text": "A sweet fountain springs up from the heart of my heart."
+    },
+    {
+      "id": "s72-3",
+      "sceneId": "s72",
+      "text": "My eyes are washed with delight like the dew-bathed morning, and life is quivering in all my limbs like the sounding strings of the lute."
+    },
+    {
+      "id": "s72-4",
+      "sceneId": "s72",
+      "text": "Are you wandering alone by the shore of my life, where the tide is in flood, O lover of my endless days?"
+    },
+    {
+      "id": "s72-5",
+      "sceneId": "s72",
+      "text": "Are my dreams flitting round you like the moths with their many-coloured wings?"
+    },
+    {
+      "id": "s72-6",
+      "sceneId": "s72",
+      "text": "And are those your songs that are echoing in the dark eaves of my being?"
+    },
+    {
+      "id": "s72-7",
+      "sceneId": "s72",
+      "text": "Who but you can hear the hum of the crowded hours that sounds in my veins to-day, the glad steps that dance in my breast, the clamour of the restless life beating its wings in my body?"
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "My bonds are cut, my debts are paid, my door has been opened, I go everywhere."
+    },
+    {
+      "id": "s73-1",
+      "sceneId": "s73",
+      "text": "They crouch in their corner and weave their web of pale hours, they count their coins sitting in the dust and call me back."
+    },
+    {
+      "id": "s73-2",
+      "sceneId": "s73",
+      "text": "But my sword is forged, my armour is put on, my horse is eager to run."
+    },
+    {
+      "id": "s73-3",
+      "sceneId": "s73",
+      "text": "I shall win my kingdom."
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "It was only the other day that I came to your earth, naked and nameless, with a wailing cry."
+    },
+    {
+      "id": "s74-1",
+      "sceneId": "s74",
+      "text": "To-day my voice is glad, while you, my lord, stand aside to make room that I may fill my life."
+    },
+    {
+      "id": "s74-2",
+      "sceneId": "s74",
+      "text": "Even when I bring you my songs for an offering I have the secret hope that men will come and love me for them."
+    },
+    {
+      "id": "s74-3",
+      "sceneId": "s74",
+      "text": "You love to discover that I love this world where you have brought me."
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "Timidly I cowered in the shadow of safety, but now, when the surge of joy carries my heart upon its crest, my heart clings to the cruel rock of its trouble."
+    },
+    {
+      "id": "s75-1",
+      "sceneId": "s75",
+      "text": "I sat alone in a corner of my house thinking it too narrow for any guest, but now when its door is flung open by an unbidden joy I find there is room for thee and for all the world."
+    },
+    {
+      "id": "s75-2",
+      "sceneId": "s75",
+      "text": "I walked upon tiptoe, careful of my person, perfumed, and adorned—but now when a glad whirlwind has overthrown me in the dust I laugh and roll on the earth at thy feet like a child."
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "The world is yours at once and for ever."
+    },
+    {
+      "id": "s76-1",
+      "sceneId": "s76",
+      "text": "And because you have no want, my king, you have no pleasure in your wealth."
+    },
+    {
+      "id": "s76-2",
+      "sceneId": "s76",
+      "text": "It is as though it were naught. Therefore through slow time you give me what is yours, and ceaselessly win your kingdom in me."
+    },
+    {
+      "id": "s76-3",
+      "sceneId": "s76",
+      "text": "Day after day you buy your sunrise from my heart, and you find your love carven into the image of my life."
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "To the birds you gave songs, the birds gave you songs in return."
+    },
+    {
+      "id": "s77-1",
+      "sceneId": "s77",
+      "text": "You gave me only voice, yet asked for more, and I sing."
+    },
+    {
+      "id": "s77-2",
+      "sceneId": "s77",
+      "text": "You made your winds light and they are fleet in their service. You burdened my hands that I myself may lighten them, and at last, gain unburdened freedom for your service."
+    },
+    {
+      "id": "s77-3",
+      "sceneId": "s77",
+      "text": "You created your Earth filling its shadows with fragments of light."
+    },
+    {
+      "id": "s77-4",
+      "sceneId": "s77",
+      "text": "There you paused; you left me empty-handed in the dust to create your heaven."
+    },
+    {
+      "id": "s77-5",
+      "sceneId": "s77",
+      "text": "To all things else you give; from me you ask."
+    },
+    {
+      "id": "s77-6",
+      "sceneId": "s77",
+      "text": "The harvest of my life ripens in the sun and the shower till I reap more than you sowed, gladdening your heart, O Master of the golden granary."
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "Let me not pray to be sheltered from dangers but to be fearless in facing them."
+    },
+    {
+      "id": "s78-1",
+      "sceneId": "s78",
+      "text": "Let me not beg for the stilling of my pain but for the heart to conquer it."
+    },
+    {
+      "id": "s78-2",
+      "sceneId": "s78",
+      "text": "Let me not look for allies in life’s battlefield but to my own strength."
+    },
+    {
+      "id": "s78-3",
+      "sceneId": "s78",
+      "text": "Let me not crave in anxious fear to be saved but hope for the patience to win my freedom."
+    },
+    {
+      "id": "s78-4",
+      "sceneId": "s78",
+      "text": "Grant me that I may not be a coward, feeling your mercy in my success alone; but let me find the grasp of your hand in my failure."
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "You did not know yourself when you dwelt alone, and there was no crying of an errand when the wind ran from the hither to the farther shore."
+    },
+    {
+      "id": "s79-1",
+      "sceneId": "s79",
+      "text": "I came and you woke, and the skies blossomed with lights."
+    },
+    {
+      "id": "s79-2",
+      "sceneId": "s79",
+      "text": "You made me open in many flowers; rocked me in the cradles of many forms; hid me in death and found me again in life."
+    },
+    {
+      "id": "s79-3",
+      "sceneId": "s79",
+      "text": "I came and your heart heaved; pain came to you and joy."
+    },
+    {
+      "id": "s79-4",
+      "sceneId": "s79",
+      "text": "You touched me and tingled into love."
+    },
+    {
+      "id": "s79-5",
+      "sceneId": "s79",
+      "text": "But in my eyes there is a film of shame and in my breast a flicker of fear; my face is veiled and I weep when I cannot see you."
+    },
+    {
+      "id": "s79-6",
+      "sceneId": "s79",
+      "text": "Yet I know the endless thirst in your heart for sight of me, the thirst that cries at my door in the repeated knockings of sunrise."
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "You, in your timeless watch, listen to my approaching steps while your gladness gathers in the morning twilight and breaks in the burst of light."
+    },
+    {
+      "id": "s80-1",
+      "sceneId": "s80",
+      "text": "The nearer I draw to you the deeper grows the fervour in the dance of the sea."
+    },
+    {
+      "id": "s80-2",
+      "sceneId": "s80",
+      "text": "Your world is a branching spray of light filling your hands, but your heaven is in my secret heart; it slowly opens its buds in shy love."
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "I will utter your name, sitting alone among the shadows of my silent thoughts."
+    },
+    {
+      "id": "s81-1",
+      "sceneId": "s81",
+      "text": "I will utter it without words, I will utter it without purpose."
+    },
+    {
+      "id": "s81-2",
+      "sceneId": "s81",
+      "text": "For I am like a child that calls its mother an hundred times, glad that it can say “Mother.”"
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "I feel that all the stars shine in me. The world breaks into my life like a flood."
+    },
+    {
+      "id": "s82-1",
+      "sceneId": "s82",
+      "text": "The flowers blossom in my body. All the youthfulness of land and water smokes like an incense in my heart; and the breath of all things plays on my thoughts as on a flute."
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "When the world sleeps I come to your door."
+    },
+    {
+      "id": "s83-1",
+      "sceneId": "s83",
+      "text": "The stars are silent, and I am afraid to sing."
+    },
+    {
+      "id": "s83-2",
+      "sceneId": "s83",
+      "text": "I wait and watch, till your shadow passes by the balcony of night and I return with a full heart."
+    },
+    {
+      "id": "s83-3",
+      "sceneId": "s83",
+      "text": "Then in the morning I sing by the roadside;"
+    },
+    {
+      "id": "s83-4",
+      "sceneId": "s83",
+      "text": "The flowers in the hedge give me answer and the morning air listens,"
+    },
+    {
+      "id": "s83-5",
+      "sceneId": "s83",
+      "text": "The travellers suddenly stop and look in my face, thinking I have called them by their names."
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "Keep me at your door ever attending to your wishes, and let me go about in your Kingdom accepting your call."
+    },
+    {
+      "id": "s84-1",
+      "sceneId": "s84",
+      "text": "Let me not sink and disappear in the depth of languor."
+    },
+    {
+      "id": "s84-2",
+      "sceneId": "s84",
+      "text": "Let not my life be worn out to tatters by penury of waste."
+    },
+    {
+      "id": "s84-3",
+      "sceneId": "s84",
+      "text": "Let not those doubts encompass me,—the dust of distractions."
+    },
+    {
+      "id": "s84-4",
+      "sceneId": "s84",
+      "text": "Let me not pursue many paths to gather many things."
+    },
+    {
+      "id": "s84-5",
+      "sceneId": "s84",
+      "text": "Let me not bend my heart to the yoke of the many."
+    },
+    {
+      "id": "s84-6",
+      "sceneId": "s84",
+      "text": "Let me hold my head high in the courage and pride of being your servant."
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "THE Oarsmen"
+    },
+    {
+      "id": "s85-1",
+      "sceneId": "s85",
+      "text": "Do you hear the tumult of death afar, The call midst the fire-floods and poisonous clouds —The Captain’s call to the steersman to turn the ship to an unnamed shore, For that time is over—the stagnant time in the port— Where the same old merchandise is bought and sold in an endless round, Where dead things drift in the exhaustion and emptiness of truth."
+    },
+    {
+      "id": "s85-2",
+      "sceneId": "s85",
+      "text": "They wake up in sudden fear and ask, “Comrades, what hour has struck? When shall the dawn begin?” The clouds have blotted away the stars— Who is there then can see the beckoning finger of the day? They run out with oars in hand, the beds are emptied, the mother prays, the wife watches by the door; There is a wail of parting that rises to the sky, And there is the Captain’s voice in the dark: “Come, sailors, for the time in the harbour is over!”"
+    },
+    {
+      "id": "s85-3",
+      "sceneId": "s85",
+      "text": "All the black evils in the world have overflowed their banks, Yet, oarsmen, take your places with the blessing of sorrow in your souls! Whom do you blame, brothers? Bow your heads down! The sin has been yours and ours. The heat growing in the heart of God for ages— The cowardice of the weak, the arrogance of the strong, the greed of fat prosperity, the rancour of the wronged, pride of race, and insult to man— Has burst God’s peace, raging in storm."
+    },
+    {
+      "id": "s85-4",
+      "sceneId": "s85",
+      "text": "Like a ripe pod, let the tempest break its heart into pieces, scattering thunders. Stop your bluster of dispraise and of self-praise, And with the calm of silent prayer on your foreheads sail to that unnamed shore."
+    },
+    {
+      "id": "s85-5",
+      "sceneId": "s85",
+      "text": "We have known sins and evils every day and death we have known; They pass over our world like clouds mocking us with their transient lightning laughter. Suddenly they have stopped, become a prodigy, And men must stand before them saying: “We do not fear you, O Monster! for we have lived every day by conquering you, “And we die with the faith that Peace is true, and Good is true, and true is the eternal One!”"
+    },
+    {
+      "id": "s85-6",
+      "sceneId": "s85",
+      "text": "If the Deathless dwell not in the heart of death, If glad wisdom bloom not bursting the sheath of sorrow, If sin do not die of its own revealment, If pride break not under its load of decorations, Then whence comes the hope that drives these men from their homes like stars rushing to their death in the morning light? Shall the value of the martyrs’ blood and mothers’ tears be utterly lost in the dust of the earth, not buying Heaven with their price? And when Man bursts his mortal bounds, is not the Boundless revealed that moment?"
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "The Song of the Defeated"
+    },
+    {
+      "id": "s86-1",
+      "sceneId": "s86",
+      "text": "My Master has bid me while I stand at the roadside, to sing the song of Defeat, for that is the bride whom He woos in secret."
+    },
+    {
+      "id": "s86-2",
+      "sceneId": "s86",
+      "text": "She has put on the dark veil, hiding her face from the crowd, but the jewel glows on her breast in the dark."
+    },
+    {
+      "id": "s86-3",
+      "sceneId": "s86",
+      "text": "She is forsaken of the day, and God’s night is waiting for her with its lamps lighted and flowers wet with dew."
+    },
+    {
+      "id": "s86-4",
+      "sceneId": "s86",
+      "text": "She is silent with her eyes downcast; she has left her home behind her, from her home has come that wailing in the wind."
+    },
+    {
+      "id": "s86-5",
+      "sceneId": "s86",
+      "text": "But the stars are singing the love-song of the eternal to a face sweet with shame and suffering."
+    },
+    {
+      "id": "s86-6",
+      "sceneId": "s86",
+      "text": "The door has been opened in the lonely chamber, the call has sounded, and the heart of the darkness throbs with awe because of the coming tryst."
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "Thanksgiving"
+    },
+    {
+      "id": "s87-1",
+      "sceneId": "s87",
+      "text": "Those who walk on the path of pride crushing the lowly life under their tread, covering the tender green of the earth with their footprints in blood;"
+    },
+    {
+      "id": "s87-2",
+      "sceneId": "s87",
+      "text": "Let them rejoice, and thank thee, Lord, for the day is theirs."
+    },
+    {
+      "id": "s87-3",
+      "sceneId": "s87",
+      "text": "But I am thankful that my lot lies with the humble who suffer and bear the burden of power, and hide their faces and stifle their sobs in the dark."
+    },
+    {
+      "id": "s87-4",
+      "sceneId": "s87",
+      "text": "For every throb of their pain has pulsed in the secret depth of thy night, and every insult has been gathered into thy great silence. And the morrow is theirs."
+    },
+    {
+      "id": "s87-5",
+      "sceneId": "s87",
+      "text": "O Sun, rise upon the bleeding hearts blossoming in flowers of the morning, and the torchlight revelry of pride shrunken to ashes."
+    },
+    {
+      "id": "s87-6",
+      "sceneId": "s87",
+      "text": "THE END"
+    }
+  ]
+}

@@ -1,0 +1,2695 @@
+{
+  "id": "lamia",
+  "title": "Lamia",
+  "author": "John Keats",
+  "year": "1820",
+  "note": "Project Gutenberg 2490",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Fallen in jealous curls about his shoulders bare",
+      "place": "Fallen in jealous curls about his shoulders bare",
+      "reentry": "From vale to vale, from wood to wood, he flew, Breathing upon the flowers his passion new,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "And wound with many a river to its head,",
+      "place": "And wound with many a river to its head,",
+      "reentry": "To find where this sweet nymph prepar'd her secret bed: In vain; the sweet nymph might nowhere be found,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "And so he rested, on the lonely ground,",
+      "place": "And so he rested, on the lonely ground,",
+      "reentry": "Pensive, and full of painful jealousies Of the Wood-Gods, and even the very trees.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "There as he stood, he heard a mournful voice,",
+      "place": "There as he stood, he heard a mournful voice,",
+      "reentry": "Such as once heard, in gentle heart, destroys All pain but pity: thus the lone voice spake: \"When from this wreathed tomb shall I awake!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "When move in a sweet body fit for life,",
+      "place": "When move in a sweet body fit for life,",
+      "reentry": "And love, and pleasure, and the ruddy strife Of hearts and lips! Ah, miserable me!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "The God, dove-footed, glided silently",
+      "place": "The God, dove-footed, glided silently",
+      "reentry": "Round bush and tree, soft-brushing, in his speed, The taller grasses and full-flowering weed,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Until he found a palpitating snake,",
+      "place": "Until he found a palpitating snake,",
+      "reentry": "Bright, and cirque-couchant in a dusky brake.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "She was a gordian shape of dazzling hue,",
+      "place": "She was a gordian shape of dazzling hue,",
+      "reentry": "Vermilion-spotted, golden, green, and blue; Striped like a zebra, freckled like a pard,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Eyed like a peacock, and all crimson barr'd;",
+      "place": "Eyed like a peacock, and all crimson barr'd;",
+      "reentry": "And full of silver moons, that, as she breathed, Dissolv'd, or brighter shone, or interwreathed",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Their lustres with the gloomier tapestries--",
+      "place": "Their lustres with the gloomier tapestries--",
+      "reentry": "So rainbow-sided, touch'd with miseries, She seem'd, at once, some penanced lady elf,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Some demon's mistress, or the demon's self",
+      "place": "Some demon's mistress, or the demon's self",
+      "reentry": "Upon her crest she wore a wannish fire Sprinkled with stars, like Ariadne's tiar:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Her head was serpent, but ah, bitter-sweet!",
+      "place": "Her head was serpent, but ah, bitter-sweet!",
+      "reentry": "She had a woman's mouth with all its pearls complete: And for her eyes: what could such eyes do there",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "But weep, and weep, that they were born so fair?",
+      "place": "But weep, and weep, that they were born so fair?",
+      "reentry": "As Proserpine still weeps for her Sicilian air. Her throat was serpent, but the words she spake",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Came, as through bubbling honey, for Love's sake,",
+      "place": "Came, as through bubbling honey, for Love's sake,",
+      "reentry": "And thus; while Hermes on his pinions lay, Like a stoop'd falcon ere he takes his prey.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "I had a splendid dream of thee last night:",
+      "place": "I had a splendid dream of thee last night:",
+      "reentry": "I saw thee sitting, on a throne of gold, Among the Gods, upon Olympus old,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "The only sad one; for thou didst not hear",
+      "place": "The only sad one; for thou didst not hear",
+      "reentry": "The soft, lute-finger'd Muses chaunting clear, Nor even Apollo when he sang alone, Deaf to his throbbing throat's long, long melodious moan.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "I dreamt I saw thee, robed in purple flakes,",
+      "place": "I dreamt I saw thee, robed in purple flakes,",
+      "reentry": "Break amorous through the clouds, as morning breaks, And, swiftly as a bright Phoebean dart,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Strike for the Cretan isle; and here thou art!",
+      "place": "Strike for the Cretan isle; and here thou art!",
+      "reentry": "Too gentle Hermes, hast thou found the maid?\" Whereat the star of Lethe not delay'd",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "His rosy eloquence, and thus inquired:",
+      "place": "His rosy eloquence, and thus inquired:",
+      "reentry": "\"Thou smooth-lipp'd serpent, surely high inspired! Thou beauteous wreath, with melancholy eyes,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Possess whatever bliss thou canst devise,",
+      "place": "Possess whatever bliss thou canst devise,",
+      "reentry": "Telling me only where my nymph is fled,-- Where she doth breathe!\" \"Bright planet, thou hast said,\" Return'd the snake, \"but seal with oaths, fair God!\" \"I swear,\" said Hermes, \"by my serpent rod,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "And by thine eyes, and by thy starry crown!\"",
+      "place": "And by thine eyes, and by thy starry crown!\"",
+      "reentry": "Light flew his earnest words, among the blossoms blown. Then thus again the brilliance feminine: \"Too frail of heart! for this lost nymph of thine,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Free as the air, invisibly, she strays",
+      "place": "Free as the air, invisibly, she strays",
+      "reentry": "About these thornless wilds; her pleasant days She tastes unseen; unseen her nimble feet",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "Leave traces in the grass and flowers sweet;",
+      "place": "Leave traces in the grass and flowers sweet;",
+      "reentry": "From weary tendrils, and bow'd branches green, She plucks the fruit unseen, she bathes unseen:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "And by my power is her beauty veil'd",
+      "place": "And by my power is her beauty veil'd",
+      "reentry": "To keep it unaffronted, unassail'd By the love-glances of unlovely eyes,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Of Satyrs, Fauns, and blear'd Silenus' sighs",
+      "place": "Of Satyrs, Fauns, and blear'd Silenus' sighs",
+      "reentry": "Pale grew her immortality, for woe Of all these lovers, and she grieved so",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "I took compassion on her, bade her steep",
+      "place": "I took compassion on her, bade her steep",
+      "reentry": "Her hair in weird syrops, that would keep Her loveliness invisible, yet free",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "To wander as she loves, in liberty",
+      "place": "To wander as she loves, in liberty",
+      "reentry": "Thou shalt behold her, Hermes, thou alone, If thou wilt, as thou swearest, grant my boon!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Then, once again, the charmed God began",
+      "place": "Then, once again, the charmed God began",
+      "reentry": "An oath, and through the serpent's ears it ran Warm, tremulous, devout, psalterian.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Ravish'd, she lifted her Circean head,",
+      "place": "Ravish'd, she lifted her Circean head,",
+      "reentry": "Blush'd a live damask, and swift-lisping said, \"I was a woman, let me have once more",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "A woman's shape, and charming as before",
+      "place": "A woman's shape, and charming as before",
+      "reentry": "I love a youth of Corinth--O the bliss! Give me my woman's form, and place me where he is.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "Stoop, Hermes, let me breathe upon thy brow,",
+      "place": "Stoop, Hermes, let me breathe upon thy brow,",
+      "reentry": "And thou shalt see thy sweet nymph even now.\" The God on half-shut feathers sank serene,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "She breath'd upon his eyes, and swift was seen",
+      "place": "She breath'd upon his eyes, and swift was seen",
+      "reentry": "Of both the guarded nymph near-smiling on the green. It was no dream; or say a dream it was,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "Real are the dreams of Gods, and smoothly pass",
+      "place": "Real are the dreams of Gods, and smoothly pass",
+      "reentry": "Their pleasures in a long immortal dream. One warm, flush'd moment, hovering, it might seem",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "Dash'd by the wood-nymph's beauty, so he burn'd;",
+      "place": "Dash'd by the wood-nymph's beauty, so he burn'd;",
+      "reentry": "Then, lighting on the printless verdure, turn'd To the swoon'd serpent, and with languid arm,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "Delicate, put to proof the lythe Caducean charm",
+      "place": "Delicate, put to proof the lythe Caducean charm",
+      "reentry": "So done, upon the nymph his eyes he bent, Full of adoring tears and blandishment,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "And towards her stept: she, like a moon in wane,",
+      "place": "And towards her stept: she, like a moon in wane,",
+      "reentry": "Faded before him, cower'd, nor could restrain Her fearful sobs, self-folding like a flower",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "That faints into itself at evening hour:",
+      "place": "That faints into itself at evening hour:",
+      "reentry": "But the God fostering her chilled hand, She felt the warmth, her eyelids open'd bland,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "And, like new flowers at morning song of bees,",
+      "place": "And, like new flowers at morning song of bees,",
+      "reentry": "Bloom'd, and gave up her honey to the lees. Into the green-recessed woods they flew;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "Nor grew they pale, as mortal lovers do",
+      "place": "Nor grew they pale, as mortal lovers do",
+      "reentry": "Left to herself, the serpent now began",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "To change; her elfin blood in madness ran,",
+      "place": "To change; her elfin blood in madness ran,",
+      "reentry": "Her mouth foam'd, and the grass, therewith besprent, Wither'd at dew so sweet and virulent;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "Her eyes in torture fix'd, and anguish drear,",
+      "place": "Her eyes in torture fix'd, and anguish drear,",
+      "reentry": "Hot, glaz'd, and wide, with lid-lashes all sear, Flash'd phosphor and sharp sparks, without one cooling tear.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "The colours all inflam'd throughout her train,",
+      "place": "The colours all inflam'd throughout her train,",
+      "reentry": "She writh'd about, convuls'd with scarlet pain: A deep volcanian yellow took the place",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "Of all her milder-mooned body's grace;",
+      "place": "Of all her milder-mooned body's grace;",
+      "reentry": "And, as the lava ravishes the mead, Spoilt all her silver mail, and golden brede; Made gloom of all her frecklings, streaks and bars,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "Eclips'd her crescents, and lick'd up her stars:",
+      "place": "Eclips'd her crescents, and lick'd up her stars:",
+      "reentry": "So that, in moments few, she was undrest Of all her sapphires, greens, and amethyst,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "And rubious-argent: of all these bereft,",
+      "place": "And rubious-argent: of all these bereft,",
+      "reentry": "Nothing but pain and ugliness were left. Still shone her crown; that vanish'd, also she",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "Melted and disappear'd as suddenly;",
+      "place": "Melted and disappear'd as suddenly;",
+      "reentry": "And in the air, her new voice luting soft, Cried, \"Lycius! gentle Lycius!\"--Borne aloft",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "With the bright mists about the mountains hoar",
+      "place": "With the bright mists about the mountains hoar",
+      "reentry": "These words dissolv'd: Crete's forests heard no more.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "Whither fled Lamia, now a lady bright,",
+      "place": "Whither fled Lamia, now a lady bright,",
+      "reentry": "A full-born beauty new and exquisite? She fled into that valley they pass o'er",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "Who go to Corinth from Cenchreas' shore;",
+      "place": "Who go to Corinth from Cenchreas' shore;",
+      "reentry": "And rested at the foot of those wild hills, The rugged founts of the Peraean rills,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "And of that other ridge whose barren back",
+      "place": "And of that other ridge whose barren back",
+      "reentry": "Stretches, with all its mist and cloudy rack, South-westward to Cleone. There she stood",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "About a young bird's flutter from a wood,",
+      "place": "About a young bird's flutter from a wood,",
+      "reentry": "Fair, on a sloping green of mossy tread, By a clear pool, wherein she passioned",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "To see herself escap'd from so sore ills,",
+      "place": "To see herself escap'd from so sore ills,",
+      "reentry": "While her robes flaunted with the daffodils.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "Ah, happy Lycius!--for she was a maid",
+      "place": "Ah, happy Lycius!--for she was a maid",
+      "reentry": "More beautiful than ever twisted braid, Or sigh'd, or blush'd, or on spring-flowered lea",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "Spread a green kirtle to the minstrelsy:",
+      "place": "Spread a green kirtle to the minstrelsy:",
+      "reentry": "A virgin purest lipp'd, yet in the lore Of love deep learned to the red heart's core:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "Not one hour old, yet of sciential brain",
+      "place": "Not one hour old, yet of sciential brain",
+      "reentry": "To unperplex bliss from its neighbour pain; Define their pettish limits, and estrange",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "Their points of contact, and swift counterchange;",
+      "place": "Their points of contact, and swift counterchange;",
+      "reentry": "Intrigue with the specious chaos, and dispart Its most ambiguous atoms with sure art;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "As though in Cupid's college she had spent",
+      "place": "As though in Cupid's college she had spent",
+      "reentry": "Sweet days a lovely graduate, still unshent, And kept his rosy terms in idle languishment.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "Why this fair creature chose so fairily",
+      "place": "Why this fair creature chose so fairily",
+      "reentry": "By the wayside to linger, we shall see; But first 'tis fit to tell how she could muse",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "And dream, when in the serpent prison-house,",
+      "place": "And dream, when in the serpent prison-house,",
+      "reentry": "Of all she list, strange or magnificent: How, ever, where she will'd, her spirit went;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "Whether to faint Elysium, or where",
+      "place": "Whether to faint Elysium, or where",
+      "reentry": "Down through tress-lifting waves the Nereids fair Wind into Thetis' bower by many a pearly stair;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "Or where God Bacchus drains his cups divine,",
+      "place": "Or where God Bacchus drains his cups divine,",
+      "reentry": "Stretch'd out, at ease, beneath a glutinous pine; Or where in Pluto's gardens palatine",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "Mulciber's columns gleam in far piazzian line",
+      "place": "Mulciber's columns gleam in far piazzian line",
+      "reentry": "And sometimes into cities she would send Her dream, with feast and rioting to blend;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "And once, while among mortals dreaming thus,",
+      "place": "And once, while among mortals dreaming thus,",
+      "reentry": "She saw the young Corinthian Lycius Charioting foremost in the envious race,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "Like a young Jove with calm uneager face,",
+      "place": "Like a young Jove with calm uneager face,",
+      "reentry": "And fell into a swooning love of him. Now on the moth-time of that evening dim",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "He would return that way, as well she knew,",
+      "place": "He would return that way, as well she knew,",
+      "reentry": "To Corinth from the shore; for freshly blew The eastern soft wind, and his galley now",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "Grated the quaystones with her brazen prow",
+      "place": "Grated the quaystones with her brazen prow",
+      "reentry": "In port Cenchreas, from Egina isle Fresh anchor'd; whither he had been awhile",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "To sacrifice to Jove, whose temple there",
+      "place": "To sacrifice to Jove, whose temple there",
+      "reentry": "Waits with high marble doors for blood and incense rare. Jove heard his vows, and better'd his desire;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "For by some freakful chance he made retire",
+      "place": "For by some freakful chance he made retire",
+      "reentry": "From his companions, and set forth to walk, Perhaps grown wearied of their Corinth talk:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "Over the solitary hills he fared,",
+      "place": "Over the solitary hills he fared,",
+      "reentry": "Thoughtless at first, but ere eve's star appeared His phantasy was lost, where reason fades,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "In the calm'd twilight of Platonic shades",
+      "place": "In the calm'd twilight of Platonic shades",
+      "reentry": "Lamia beheld him coming, near, more near-- Close to her passing, in indifference drear,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "His silent sandals swept the mossy green;",
+      "place": "His silent sandals swept the mossy green;",
+      "reentry": "So neighbour'd to him, and yet so unseen She stood: he pass'd, shut up in mysteries,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "His mind wrapp'd like his mantle, while her eyes",
+      "place": "His mind wrapp'd like his mantle, while her eyes",
+      "reentry": "Follow'd his steps, and her neck regal white Turn'd--syllabling thus, \"Ah, Lycius bright,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "And will you leave me on the hills alone?",
+      "place": "And will you leave me on the hills alone?",
+      "reentry": "Lycius, look back! and be some pity shown.\" He did; not with cold wonder fearingly,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "But Orpheus-like at an Eurydice;",
+      "place": "But Orpheus-like at an Eurydice;",
+      "reentry": "For so delicious were the words she sung, It seem'd he had lov'd them a whole summer long:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "And soon his eyes had drunk her beauty up,",
+      "place": "And soon his eyes had drunk her beauty up,",
+      "reentry": "Leaving no drop in the bewildering cup, And still the cup was full,--while he afraid",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "Lest she should vanish ere his lip had paid",
+      "place": "Lest she should vanish ere his lip had paid",
+      "reentry": "Due adoration, thus began to adore; Her soft look growing coy, she saw his chain so sure: \"Leave thee alone! Look back! Ah, Goddess, see",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "Whether my eyes can ever turn from thee!",
+      "place": "Whether my eyes can ever turn from thee!",
+      "reentry": "For pity do not this sad heart belie-- Even as thou vanishest so I shall die.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "Stay! though a Naiad of the rivers, stay!",
+      "place": "Stay! though a Naiad of the rivers, stay!",
+      "reentry": "To thy far wishes will thy streams obey: Stay! though the greenest woods be thy domain,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "Alone they can drink up the morning rain:",
+      "place": "Alone they can drink up the morning rain:",
+      "reentry": "Though a descended Pleiad, will not one Of thine harmonious sisters keep in tune",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "Thy spheres, and as thy silver proxy shine?",
+      "place": "Thy spheres, and as thy silver proxy shine?",
+      "reentry": "So sweetly to these ravish'd ears of mine Came thy sweet greeting, that if thou shouldst fade",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "Thy memory will waste me to a shade--",
+      "place": "Thy memory will waste me to a shade--",
+      "reentry": "For pity do not melt!\"--\"If I should stay,\" Said Lamia, \"here, upon this floor of clay,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "And pain my steps upon these flowers too rough,",
+      "place": "And pain my steps upon these flowers too rough,",
+      "reentry": "What canst thou say or do of charm enough To dull the nice remembrance of my home?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "Thou canst not ask me with thee here to roam",
+      "place": "Thou canst not ask me with thee here to roam",
+      "reentry": "Over these hills and vales, where no joy is,-- Empty of immortality and bliss!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "Thou art a scholar, Lycius, and must know",
+      "place": "Thou art a scholar, Lycius, and must know",
+      "reentry": "That finer spirits cannot breathe below In human climes, and live: Alas! poor youth,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "What taste of purer air hast thou to soothe",
+      "place": "What taste of purer air hast thou to soothe",
+      "reentry": "My essence? What serener palaces, Where I may all my many senses please, And by mysterious sleights a hundred thirsts appease?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "It cannot be--Adieu!\" So said, she rose",
+      "place": "It cannot be--Adieu!\" So said, she rose",
+      "reentry": "Tiptoe with white arms spread. He, sick to lose The amorous promise of her lone complain,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "Swoon'd, murmuring of love, and pale with pain",
+      "place": "Swoon'd, murmuring of love, and pale with pain",
+      "reentry": "The cruel lady, without any show Of sorrow for her tender favourite's woe,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "But rather, if her eyes could brighter be,",
+      "place": "But rather, if her eyes could brighter be,",
+      "reentry": "With brighter eyes and slow amenity, Put her new lips to his, and gave afresh",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "The life she had so tangled in her mesh:",
+      "place": "The life she had so tangled in her mesh:",
+      "reentry": "And as he from one trance was wakening Into another, she began to sing,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "Happy in beauty, life, and love, and every thing,",
+      "place": "Happy in beauty, life, and love, and every thing,",
+      "reentry": "A song of love, too sweet for earthly lyres, While, like held breath, the stars drew in their panting fires",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "And then she whisper'd in such trembling tone,",
+      "place": "And then she whisper'd in such trembling tone,",
+      "reentry": "As those who, safe together met alone For the first time through many anguish'd days,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "Use other speech than looks; bidding him raise",
+      "place": "Use other speech than looks; bidding him raise",
+      "reentry": "His drooping head, and clear his soul of doubt, For that she was a woman, and without",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "Any more subtle fluid in her veins",
+      "place": "Any more subtle fluid in her veins",
+      "reentry": "Than throbbing blood, and that the self-same pains Inhabited her frail-strung heart as his.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "And next she wonder'd how his eyes could miss",
+      "place": "And next she wonder'd how his eyes could miss",
+      "reentry": "Her face so long in Corinth, where, she said, She dwelt but half retir'd, and there had led",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "Days happy as the gold coin could invent",
+      "place": "Days happy as the gold coin could invent",
+      "reentry": "Without the aid of love; yet in content Till she saw him, as once she pass'd him by,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "Where 'gainst a column he leant thoughtfully",
+      "place": "Where 'gainst a column he leant thoughtfully",
+      "reentry": "At Venus' temple porch, 'mid baskets heap'd Of amorous herbs and flowers, newly reap'd",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "Late on that eve, as 'twas the night before",
+      "place": "Late on that eve, as 'twas the night before",
+      "reentry": "The Adonian feast; whereof she saw no more, But wept alone those days, for why should she adore?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "Lycius from death awoke into amaze,",
+      "place": "Lycius from death awoke into amaze,",
+      "reentry": "To see her still, and singing so sweet lays; Then from amaze into delight he fell",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "To hear her whisper woman's lore so well;",
+      "place": "To hear her whisper woman's lore so well;",
+      "reentry": "And every word she spake entic'd him on To unperplex'd delight and pleasure known.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "Let the mad poets say whate'er they please",
+      "place": "Let the mad poets say whate'er they please",
+      "reentry": "Of the sweets of Fairies, Peris, Goddesses, There is not such a treat among them all,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "Haunters of cavern, lake, and waterfall,",
+      "place": "Haunters of cavern, lake, and waterfall,",
+      "reentry": "As a real woman, lineal indeed From Pyrrha's pebbles or old Adam's seed.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "Thus gentle Lamia judg'd, and judg'd aright,",
+      "place": "Thus gentle Lamia judg'd, and judg'd aright,",
+      "reentry": "That Lycius could not love in half a fright, So threw the goddess off, and won his heart",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "More pleasantly by playing woman's part,",
+      "place": "More pleasantly by playing woman's part,",
+      "reentry": "With no more awe than what her beauty gave, That, while it smote, still guaranteed to save.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "Lycius to all made eloquent reply,",
+      "place": "Lycius to all made eloquent reply,",
+      "reentry": "Marrying to every word a twinborn sigh; And last, pointing to Corinth, ask'd her sweet,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "If 'twas too far that night for her soft feet",
+      "place": "If 'twas too far that night for her soft feet",
+      "reentry": "The way was short, for Lamia's eagerness Made, by a spell, the triple league decrease",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "To a few paces; not at all surmised",
+      "place": "To a few paces; not at all surmised",
+      "reentry": "By blinded Lycius, so in her comprized. They pass'd the city gates, he knew not how",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "So noiseless, and he never thought to know",
+      "place": "So noiseless, and he never thought to know",
+      "reentry": "As men talk in a dream, so Corinth all,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "Throughout her palaces imperial,",
+      "place": "Throughout her palaces imperial,",
+      "reentry": "And all her populous streets and temples lewd, Mutter'd, like tempest in the distance brew'd,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "To the wide-spreaded night above her towers",
+      "place": "To the wide-spreaded night above her towers",
+      "reentry": "Men, women, rich and poor, in the cool hours, Shuffled their sandals o'er the pavement white,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "Companion'd or alone; while many a light",
+      "place": "Companion'd or alone; while many a light",
+      "reentry": "Flared, here and there, from wealthy festivals, And threw their moving shadows on the walls,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "Or found them cluster'd in the corniced shade",
+      "place": "Or found them cluster'd in the corniced shade",
+      "reentry": "Of some arch'd temple door, or dusky colonnade.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "Muffling his face, of greeting friends in fear,",
+      "place": "Muffling his face, of greeting friends in fear,",
+      "reentry": "Her fingers he press'd hard, as one came near With curl'd gray beard, sharp eyes, and smooth bald crown,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "Slow-stepp'd, and robed in philosophic gown:",
+      "place": "Slow-stepp'd, and robed in philosophic gown:",
+      "reentry": "Lycius shrank closer, as they met and past, Into his mantle, adding wings to haste,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "While hurried Lamia trembled: \"Ah,\" said he,",
+      "place": "While hurried Lamia trembled: \"Ah,\" said he,",
+      "reentry": "\"Why do you shudder, love, so ruefully? Why does your tender palm dissolve in dew?\"-- \"I'm wearied,\" said fair Lamia: \"tell me who",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "Is that old man? I cannot bring to mind",
+      "place": "Is that old man? I cannot bring to mind",
+      "reentry": "His features--Lycius! wherefore did you blind Yourself from his quick eyes?\" Lycius replied, 'Tis Apollonius sage, my trusty guide",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s115",
+      "title": "And good instructor; but to-night he seems",
+      "place": "And good instructor; but to-night he seems",
+      "reentry": "The ghost of folly haunting my sweet dreams.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s116",
+      "title": "While yet he spake they had arrived before",
+      "place": "While yet he spake they had arrived before",
+      "reentry": "A pillar'd porch, with lofty portal door, Where hung a silver lamp, whose phosphor glow",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s117",
+      "title": "Reflected in the slabbed steps below,",
+      "place": "Reflected in the slabbed steps below,",
+      "reentry": "Mild as a star in water; for so new, And so unsullied was the marble hue,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s118",
+      "title": "So through the crystal polish, liquid fine,",
+      "place": "So through the crystal polish, liquid fine,",
+      "reentry": "Ran the dark veins, that none but feet divine Could e'er have touch'd there. Sounds Aeolian",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s119",
+      "title": "Breath'd from the hinges, as the ample span",
+      "place": "Breath'd from the hinges, as the ample span",
+      "reentry": "Of the wide doors disclos'd a place unknown Some time to any, but those two alone,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s120",
+      "title": "And a few Persian mutes, who that same year",
+      "place": "And a few Persian mutes, who that same year",
+      "reentry": "Were seen about the markets: none knew where They could inhabit; the most curious Were foil'd, who watch'd to trace them to their house:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s121",
+      "title": "And but the flitter-winged verse must tell,",
+      "place": "And but the flitter-winged verse must tell,",
+      "reentry": "For truth's sake, what woe afterwards befel, 'Twould humour many a heart to leave them thus,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s122",
+      "title": "Love in a hut, with water and a crust,",
+      "place": "Love in a hut, with water and a crust,",
+      "reentry": "Is--Love, forgive us!--cinders, ashes, dust; Love in a palace is perhaps at last",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s123",
+      "title": "More grievous torment than a hermit's fast--",
+      "place": "More grievous torment than a hermit's fast--",
+      "reentry": "That is a doubtful tale from faery land, Hard for the non-elect to understand.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s124",
+      "title": "Had Lycius liv'd to hand his story down,",
+      "place": "Had Lycius liv'd to hand his story down,",
+      "reentry": "He might have given the moral a fresh frown, Or clench'd it quite: but too short was their bliss To breed distrust and hate, that make the soft voice hiss.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s125",
+      "title": "Besides, there, nightly, with terrific glare,",
+      "place": "Besides, there, nightly, with terrific glare,",
+      "reentry": "Love, jealous grown of so complete a pair, Hover'd and buzz'd his wings, with fearful roar,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s126",
+      "title": "Above the lintel of their chamber door,",
+      "place": "Above the lintel of their chamber door,",
+      "reentry": "And down the passage cast a glow upon the floor.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s127",
+      "title": "For all this came a ruin: side by side",
+      "place": "For all this came a ruin: side by side",
+      "reentry": "They were enthroned, in the even tide, Upon a couch, near to a curtaining",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s128",
+      "title": "Whose airy texture, from a golden string,",
+      "place": "Whose airy texture, from a golden string,",
+      "reentry": "Floated into the room, and let appear Unveil'd the summer heaven, blue and clear,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s129",
+      "title": "Betwixt two marble shafts:--there they reposed,",
+      "place": "Betwixt two marble shafts:--there they reposed,",
+      "reentry": "Where use had made it sweet, with eyelids closed, Saving a tythe which love still open kept, That they might see each other while they almost slept;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s130",
+      "title": "When from the slope side of a suburb hill,",
+      "place": "When from the slope side of a suburb hill,",
+      "reentry": "Deafening the swallow's twitter, came a thrill Of trumpets--Lycius started--the sounds fled,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s131",
+      "title": "But left a thought, a buzzing in his head",
+      "place": "But left a thought, a buzzing in his head",
+      "reentry": "For the first time, since first he harbour'd in That purple-lined palace of sweet sin,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s132",
+      "title": "His spirit pass'd beyond its golden bourn",
+      "place": "His spirit pass'd beyond its golden bourn",
+      "reentry": "Into the noisy world almost forsworn. The lady, ever watchful, penetrant,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s133",
+      "title": "Saw this with pain, so arguing a want",
+      "place": "Saw this with pain, so arguing a want",
+      "reentry": "Of something more, more than her empery Of joys; and she began to moan and sigh",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s134",
+      "title": "Because he mused beyond her, knowing well",
+      "place": "Because he mused beyond her, knowing well",
+      "reentry": "That but a moment's thought is passion's passing bell. \"Why do you sigh, fair creature?\" whisper'd he: \"Why do you think?\" return'd she tenderly: \"You have deserted me--where am I now?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s135",
+      "title": "Not in your heart while care weighs on your brow:",
+      "place": "Not in your heart while care weighs on your brow:",
+      "reentry": "No, no, you have dismiss'd me; and I go From your breast houseless: ay, it must be so.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s136",
+      "title": "He answer'd, bending to her open eyes,",
+      "place": "He answer'd, bending to her open eyes,",
+      "reentry": "Where he was mirror'd small in paradise, My silver planet, both of eve and morn!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s137",
+      "title": "Why will you plead yourself so sad forlorn,",
+      "place": "Why will you plead yourself so sad forlorn,",
+      "reentry": "While I am striving how to fill my heart With deeper crimson, and a double smart?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s138",
+      "title": "How to entangle, trammel up and snare",
+      "place": "How to entangle, trammel up and snare",
+      "reentry": "Your soul in mine, and labyrinth you there Like the hid scent in an unbudded rose?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s139",
+      "title": "Ay, a sweet kiss--you see your mighty woes",
+      "place": "Ay, a sweet kiss--you see your mighty woes",
+      "reentry": "My thoughts! shall I unveil them? Listen then! What mortal hath a prize, that other men",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s140",
+      "title": "May be confounded and abash'd withal,",
+      "place": "May be confounded and abash'd withal,",
+      "reentry": "But lets it sometimes pace abroad majestical, And triumph, as in thee I should rejoice",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s141",
+      "title": "Amid the hoarse alarm of Corinth's voice",
+      "place": "Amid the hoarse alarm of Corinth's voice",
+      "reentry": "\"Let my foes choke, and my friends shout afar, While through the thronged streets your bridal car Wheels round its dazzling spokes.\" The lady's cheek",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s142",
+      "title": "Trembled; she nothing said, but, pale and meek,",
+      "place": "Trembled; she nothing said, but, pale and meek,",
+      "reentry": "Arose and knelt before him, wept a rain Of sorrows at his words; at last with pain",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s143",
+      "title": "Beseeching him, the while his hand she wrung,",
+      "place": "Beseeching him, the while his hand she wrung,",
+      "reentry": "To change his purpose. He thereat was stung, Perverse, with stronger fancy to reclaim",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s144",
+      "title": "Her wild and timid nature to his aim:",
+      "place": "Her wild and timid nature to his aim:",
+      "reentry": "Besides, for all his love, in self despite, Against his better self, he took delight",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s145",
+      "title": "Luxurious in her sorrows, soft and new",
+      "place": "Luxurious in her sorrows, soft and new",
+      "reentry": "His passion, cruel grown, took on a hue Fierce and sanguineous as 'twas possible",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s146",
+      "title": "In one whose brow had no dark veins to swell",
+      "place": "In one whose brow had no dark veins to swell",
+      "reentry": "Fine was the mitigated fury, like Apollo's presence when in act to strike",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s147",
+      "title": "The serpent--Ha, the serpent! certes, she",
+      "place": "The serpent--Ha, the serpent! certes, she",
+      "reentry": "Was none. She burnt, she lov'd the tyranny, And, all subdued, consented to the hour",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s148",
+      "title": "When to the bridal he should lead his paramour",
+      "place": "When to the bridal he should lead his paramour",
+      "reentry": "Whispering in midnight silence, said the youth, \"Sure some sweet name thou hast, though, by my truth,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s149",
+      "title": "I have not ask'd it, ever thinking thee",
+      "place": "I have not ask'd it, ever thinking thee",
+      "reentry": "Not mortal, but of heavenly progeny, As still I do. Hast any mortal name,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s150",
+      "title": "Fit appellation for this dazzling frame?",
+      "place": "Fit appellation for this dazzling frame?",
+      "reentry": "Or friends or kinsfolk on the citied earth, To share our marriage feast and nuptial mirth?\" \"I have no friends,\" said Lamia,\" no, not one;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s151",
+      "title": "My presence in wide Corinth hardly known:",
+      "place": "My presence in wide Corinth hardly known:",
+      "reentry": "My parents' bones are in their dusty urns Sepulchred, where no kindled incense burns,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s152",
+      "title": "Seeing all their luckless race are dead, save me,",
+      "place": "Seeing all their luckless race are dead, save me,",
+      "reentry": "And I neglect the holy rite for thee. Even as you list invite your many guests;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s153",
+      "title": "But if, as now it seems, your vision rests",
+      "place": "But if, as now it seems, your vision rests",
+      "reentry": "With any pleasure on me, do not bid Old Apollonius--from him keep me hid.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s154",
+      "title": "Lycius, perplex'd at words so blind and blank,",
+      "place": "Lycius, perplex'd at words so blind and blank,",
+      "reentry": "Made close inquiry; from whose touch she shrank, Feigning a sleep; and he to the dull shade",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s155",
+      "title": "Of deep sleep in a moment was betray'd",
+      "place": "Of deep sleep in a moment was betray'd",
+      "reentry": "It was the custom then to bring away",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s156",
+      "title": "The bride from home at blushing shut of day,",
+      "place": "The bride from home at blushing shut of day,",
+      "reentry": "Veil'd, in a chariot, heralded along By strewn flowers, torches, and a marriage song,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s157",
+      "title": "With other pageants: but this fair unknown",
+      "place": "With other pageants: but this fair unknown",
+      "reentry": "Had not a friend. So being left alone, (Lycius was gone to summon all his kin)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s158",
+      "title": "And knowing surely she could never win",
+      "place": "And knowing surely she could never win",
+      "reentry": "His foolish heart from its mad pompousness, She set herself, high-thoughted, how to dress",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s159",
+      "title": "The misery in fit magnificence",
+      "place": "The misery in fit magnificence",
+      "reentry": "She did so, but 'tis doubtful how and whence Came, and who were her subtle servitors.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s160",
+      "title": "About the halls, and to and from the doors,",
+      "place": "About the halls, and to and from the doors,",
+      "reentry": "There was a noise of wings, till in short space The glowing banquet-room shone with wide-arched grace.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s161",
+      "title": "A haunting music, sole perhaps and lone",
+      "place": "A haunting music, sole perhaps and lone",
+      "reentry": "Supportress of the faery-roof, made moan Throughout, as fearful the whole charm might fade.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s162",
+      "title": "Fresh carved cedar, mimicking a glade",
+      "place": "Fresh carved cedar, mimicking a glade",
+      "reentry": "Of palm and plantain, met from either side, High in the midst, in honour of the bride:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s163",
+      "title": "Two palms and then two plantains, and so on,",
+      "place": "Two palms and then two plantains, and so on,",
+      "reentry": "From either side their stems branch'd one to one All down the aisled place; and beneath all There ran a stream of lamps straight on from wall to wall.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s164",
+      "title": "So canopied, lay an untasted feast",
+      "place": "So canopied, lay an untasted feast",
+      "reentry": "Teeming with odours. Lamia, regal drest, Silently paced about, and as she went,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s165",
+      "title": "In pale contented sort of discontent,",
+      "place": "In pale contented sort of discontent,",
+      "reentry": "Mission'd her viewless servants to enrich The fretted splendour of each nook and niche.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s166",
+      "title": "Between the tree-stems, marbled plain at first,",
+      "place": "Between the tree-stems, marbled plain at first,",
+      "reentry": "Came jasper pannels; then, anon, there burst Forth creeping imagery of slighter trees,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s167",
+      "title": "And with the larger wove in small intricacies",
+      "place": "And with the larger wove in small intricacies",
+      "reentry": "Approving all, she faded at self-will, And shut the chamber up, close, hush'd and still,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s168",
+      "title": "Complete and ready for the revels rude,",
+      "place": "Complete and ready for the revels rude,",
+      "reentry": "When dreadful guests would come to spoil her solitude.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s169",
+      "title": "The day appear'd, and all the gossip rout",
+      "place": "The day appear'd, and all the gossip rout",
+      "reentry": "O senseless Lycius! Madman! wherefore flout The silent-blessing fate, warm cloister'd hours,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s170",
+      "title": "And show to common eyes these secret bowers?",
+      "place": "And show to common eyes these secret bowers?",
+      "reentry": "The herd approach'd; each guest, with busy brain, Arriving at the portal, gaz'd amain,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s171",
+      "title": "And enter'd marveling: for they knew the street,",
+      "place": "And enter'd marveling: for they knew the street,",
+      "reentry": "Remember'd it from childhood all complete Without a gap, yet ne'er before had seen",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s172",
+      "title": "That royal porch, that high-built fair demesne;",
+      "place": "That royal porch, that high-built fair demesne;",
+      "reentry": "So in they hurried all, maz'd, curious and keen: Save one, who look'd thereon with eye severe,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s173",
+      "title": "And with calm-planted steps walk'd in austere;",
+      "place": "And with calm-planted steps walk'd in austere;",
+      "reentry": "'Twas Apollonius: something too he laugh'd, As though some knotty problem, that had daft",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s174",
+      "title": "His patient thought, had now begun to thaw,",
+      "place": "His patient thought, had now begun to thaw,",
+      "reentry": "And solve and melt--'twas just as he foresaw.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s175",
+      "title": "He met within the murmurous vestibule",
+      "place": "He met within the murmurous vestibule",
+      "reentry": "His young disciple. \"'Tis no common rule, Lycius,\" said he, \"for uninvited guest",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s176",
+      "title": "To force himself upon you, and infest",
+      "place": "To force himself upon you, and infest",
+      "reentry": "With an unbidden presence the bright throng Of younger friends; yet must I do this wrong,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s177",
+      "title": "And you forgive me.\" Lycius blush'd, and led",
+      "place": "And you forgive me.\" Lycius blush'd, and led",
+      "reentry": "The old man through the inner doors broad-spread; With reconciling words and courteous mien",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s178",
+      "title": "Turning into sweet milk the sophist's spleen",
+      "place": "Turning into sweet milk the sophist's spleen",
+      "reentry": "Of wealthy lustre was the banquet-room,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s179",
+      "title": "Fill'd with pervading brilliance and perfume:",
+      "place": "Fill'd with pervading brilliance and perfume:",
+      "reentry": "Before each lucid pannel fuming stood A censer fed with myrrh and spiced wood,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s180",
+      "title": "Each by a sacred tripod held aloft,",
+      "place": "Each by a sacred tripod held aloft,",
+      "reentry": "Whose slender feet wide-swerv'd upon the soft Wool-woofed carpets: fifty wreaths of smoke",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s181",
+      "title": "From fifty censers their light voyage took",
+      "place": "From fifty censers their light voyage took",
+      "reentry": "To the high roof, still mimick'd as they rose Along the mirror'd walls by twin-clouds odorous.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s182",
+      "title": "Twelve sphered tables, by silk seats insphered,",
+      "place": "Twelve sphered tables, by silk seats insphered,",
+      "reentry": "High as the level of a man's breast rear'd On libbard's paws, upheld the heavy gold",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s183",
+      "title": "Of cups and goblets, and the store thrice told",
+      "place": "Of cups and goblets, and the store thrice told",
+      "reentry": "Of Ceres' horn, and, in huge vessels, wine Come from the gloomy tun with merry shine.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s184",
+      "title": "Thus loaded with a feast the tables stood,",
+      "place": "Thus loaded with a feast the tables stood,",
+      "reentry": "Each shrining in the midst the image of a God.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s185",
+      "title": "When in an antichamber every guest",
+      "place": "When in an antichamber every guest",
+      "reentry": "Had felt the cold full sponge to pleasure press'd, By minist'ring slaves, upon his hands and feet,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s186",
+      "title": "And fragrant oils with ceremony meet",
+      "place": "And fragrant oils with ceremony meet",
+      "reentry": "Pour'd on his hair, they all mov'd to the feast In white robes, and themselves in order placed",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s187",
+      "title": "Around the silken couches, wondering",
+      "place": "Around the silken couches, wondering",
+      "reentry": "Whence all this mighty cost and blaze of wealth could spring.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s188",
+      "title": "Soft went the music the soft air along,",
+      "place": "Soft went the music the soft air along,",
+      "reentry": "While fluent Greek a vowel'd undersong Kept up among the guests discoursing low",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s189",
+      "title": "At first, for scarcely was the wine at flow;",
+      "place": "At first, for scarcely was the wine at flow;",
+      "reentry": "But when the happy vintage touch'd their brains, Louder they talk, and louder come the strains",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s190",
+      "title": "Of powerful instruments--the gorgeous dyes,",
+      "place": "Of powerful instruments--the gorgeous dyes,",
+      "reentry": "The space, the splendour of the draperies, The roof of awful richness, nectarous cheer,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s191",
+      "title": "Beautiful slaves, and Lamia's self, appear,",
+      "place": "Beautiful slaves, and Lamia's self, appear,",
+      "reentry": "Now, when the wine has done its rosy deed, And every soul from human trammels freed,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s192",
+      "title": "No more so strange; for merry wine, sweet wine,",
+      "place": "No more so strange; for merry wine, sweet wine,",
+      "reentry": "Will make Elysian shades not too fair, too divine. Soon was God Bacchus at meridian height; Flush'd were their cheeks, and bright eyes double bright:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s193",
+      "title": "Garlands of every green, and every scent",
+      "place": "Garlands of every green, and every scent",
+      "reentry": "From vales deflower'd, or forest-trees branch rent, In baskets of bright osier'd gold were brought",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s194",
+      "title": "High as the handles heap'd, to suit the thought",
+      "place": "High as the handles heap'd, to suit the thought",
+      "reentry": "Of every guest; that each, as he did please, Might fancy-fit his brows, silk-pillow'd at his ease.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s195",
+      "title": "What wreath for Lamia? What for Lycius?",
+      "place": "What wreath for Lamia? What for Lycius?",
+      "reentry": "What for the sage, old Apollonius? Upon her aching forehead be there hung",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s196",
+      "title": "The leaves of willow and of adder's tongue;",
+      "place": "The leaves of willow and of adder's tongue;",
+      "reentry": "And for the youth, quick, let us strip for him The thyrsus, that his watching eyes may swim",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s197",
+      "title": "Into forgetfulness; and, for the sage,",
+      "place": "Into forgetfulness; and, for the sage,",
+      "reentry": "Let spear-grass and the spiteful thistle wage War on his temples. Do not all charms fly",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s198",
+      "title": "At the mere touch of cold philosophy?",
+      "place": "At the mere touch of cold philosophy?",
+      "reentry": "There was an awful rainbow once in heaven: We know her woof, her texture; she is given",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s199",
+      "title": "In the dull catalogue of common things",
+      "place": "In the dull catalogue of common things",
+      "reentry": "Philosophy will clip an Angel's wings, Conquer all mysteries by rule and line,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s200",
+      "title": "Empty the haunted air, and gnomed mine--",
+      "place": "Empty the haunted air, and gnomed mine--",
+      "reentry": "Unweave a rainbow, as it erewhile made The tender-person'd Lamia melt into a shade.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s201",
+      "title": "By her glad Lycius sitting, in chief place,",
+      "place": "By her glad Lycius sitting, in chief place,",
+      "reentry": "Scarce saw in all the room another face, Till, checking his love trance, a cup he took",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s202",
+      "title": "Full brimm'd, and opposite sent forth a look",
+      "place": "Full brimm'd, and opposite sent forth a look",
+      "reentry": "'Cross the broad table, to beseech a glance From his old teacher's wrinkled countenance,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s203",
+      "title": "And pledge him. the bald-head philosopher",
+      "place": "And pledge him. the bald-head philosopher",
+      "reentry": "Had fix'd his eye, without a twinkle or stir Full on the alarmed beauty of the bride, Brow-beating her fair form, and troubling her sweet pride.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s204",
+      "title": "Lycius then press'd her hand, with devout touch,",
+      "place": "Lycius then press'd her hand, with devout touch,",
+      "reentry": "As pale it lay upon the rosy couch: 'Twas icy, and the cold ran through his veins;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s205",
+      "title": "Then sudden it grew hot, and all the pains",
+      "place": "Then sudden it grew hot, and all the pains",
+      "reentry": "Of an unnatural heat shot to his heart. \"Lamia, what means this? Wherefore dost thou start?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s206",
+      "title": "Know'st thou that man?\" Poor Lamia answer'd not",
+      "place": "Know'st thou that man?\" Poor Lamia answer'd not",
+      "reentry": "He gaz'd into her eyes, and not a jot Own'd they the lovelorn piteous appeal:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s207",
+      "title": "More, more he gaz'd: his human senses reel:",
+      "place": "More, more he gaz'd: his human senses reel:",
+      "reentry": "Some hungry spell that loveliness absorbs; There was no recognition in those orbs. \"Lamia!\" he cried--and no soft-toned reply.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s208",
+      "title": "The many heard, and the loud revelry",
+      "place": "The many heard, and the loud revelry",
+      "reentry": "Grew hush; the stately music no more breathes; The myrtle sicken'd in a thousand wreaths. By faint degrees, voice, lute, and pleasure ceased;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s209",
+      "title": "A deadly silence step by step increased,",
+      "place": "A deadly silence step by step increased,",
+      "reentry": "Until it seem'd a horrid presence there, And not a man but felt the terror in his hair. \"Lamia!\" he shriek'd; and nothing but the shriek",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s210",
+      "title": "With its sad echo did the silence break",
+      "place": "With its sad echo did the silence break",
+      "reentry": "\"Begone, foul dream!\" he cried, gazing again In the bride's face, where now no azure vein",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s211",
+      "title": "Wander'd on fair-spaced temples; no soft bloom",
+      "place": "Wander'd on fair-spaced temples; no soft bloom",
+      "reentry": "Misted the cheek; no passion to illume The deep-recessed vision--all was blight;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s212",
+      "title": "Lamia, no longer fair, there sat a deadly white",
+      "place": "Lamia, no longer fair, there sat a deadly white",
+      "reentry": "\"Shut, shut those juggling eyes, thou ruthless man! Turn them aside, wretch! or the righteous ban",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s213",
+      "title": "Of all the Gods, whose dreadful images",
+      "place": "Of all the Gods, whose dreadful images",
+      "reentry": "Here represent their shadowy presences, May pierce them on the sudden with the thorn",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s214",
+      "title": "Of painful blindness; leaving thee forlorn,",
+      "place": "Of painful blindness; leaving thee forlorn,",
+      "reentry": "In trembling dotage to the feeblest fright Of conscience, for their long offended might,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s215",
+      "title": "For all thine impious proud-heart sophistries,",
+      "place": "For all thine impious proud-heart sophistries,",
+      "reentry": "Unlawful magic, and enticing lies. Corinthians! look upon that gray-beard wretch!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s216",
+      "title": "Mark how, possess'd, his lashless eyelids stretch",
+      "place": "Mark how, possess'd, his lashless eyelids stretch",
+      "reentry": "Around his demon eyes! Corinthians, see! My sweet bride withers at their potency.\" \"Fool!\" said the sophist, in an under-tone",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s217",
+      "title": "Gruff with contempt; which a death-nighing moan",
+      "place": "Gruff with contempt; which a death-nighing moan",
+      "reentry": "From Lycius answer'd, as heart-struck and lost, He sank supine beside the aching ghost. \"Fool! Fool!\" repeated he, while his eyes still",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s218",
+      "title": "Relented not, nor mov'd; \"from every ill",
+      "place": "Relented not, nor mov'd; \"from every ill",
+      "reentry": "Of life have I preserv'd thee to this day, And shall I see thee made a serpent's prey?\" Then Lamia breath'd death breath; the sophist's eye,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s219",
+      "title": "Like a sharp spear, went through her utterly,",
+      "place": "Like a sharp spear, went through her utterly,",
+      "reentry": "Keen, cruel, perceant, stinging: she, as well As her weak hand could any meaning tell,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s220",
+      "title": "Motion'd him to be silent; vainly so,",
+      "place": "Motion'd him to be silent; vainly so,",
+      "reentry": "He look'd and look'd again a level--No! \"A Serpent!\" echoed he; no sooner said,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s221",
+      "title": "Than with a frightful scream she vanished:",
+      "place": "Than with a frightful scream she vanished:",
+      "reentry": "And Lycius' arms were empty of delight, As were his limbs of life, from that same night.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s222",
+      "title": "On the high couch he lay!--his friends came round",
+      "place": "On the high couch he lay!--his friends came round",
+      "reentry": "Supported him--no pulse, or breath they found, And, in its marriage robe, the heavy body wound.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "From vale to vale, from wood to wood, he flew, Breathing upon the flowers his passion new,"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "To find where this sweet nymph prepar'd her secret bed: In vain; the sweet nymph might nowhere be found,"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Pensive, and full of painful jealousies Of the Wood-Gods, and even the very trees."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Such as once heard, in gentle heart, destroys All pain but pity: thus the lone voice spake: \"When from this wreathed tomb shall I awake!"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "And love, and pleasure, and the ruddy strife Of hearts and lips! Ah, miserable me!\""
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Round bush and tree, soft-brushing, in his speed, The taller grasses and full-flowering weed,"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Bright, and cirque-couchant in a dusky brake."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Vermilion-spotted, golden, green, and blue; Striped like a zebra, freckled like a pard,"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "And full of silver moons, that, as she breathed, Dissolv'd, or brighter shone, or interwreathed"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "So rainbow-sided, touch'd with miseries, She seem'd, at once, some penanced lady elf,"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Upon her crest she wore a wannish fire Sprinkled with stars, like Ariadne's tiar:"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "She had a woman's mouth with all its pearls complete: And for her eyes: what could such eyes do there"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "As Proserpine still weeps for her Sicilian air. Her throat was serpent, but the words she spake"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "And thus; while Hermes on his pinions lay, Like a stoop'd falcon ere he takes his prey."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "\"Fair Hermes, crown'd with feathers, fluttering light,"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "I saw thee sitting, on a throne of gold, Among the Gods, upon Olympus old,"
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "The soft, lute-finger'd Muses chaunting clear, Nor even Apollo when he sang alone, Deaf to his throbbing throat's long, long melodious moan."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Break amorous through the clouds, as morning breaks, And, swiftly as a bright Phoebean dart,"
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "Too gentle Hermes, hast thou found the maid?\" Whereat the star of Lethe not delay'd"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "\"Thou smooth-lipp'd serpent, surely high inspired! Thou beauteous wreath, with melancholy eyes,"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "Telling me only where my nymph is fled,-- Where she doth breathe!\" \"Bright planet, thou hast said,\" Return'd the snake, \"but seal with oaths, fair God!\" \"I swear,\" said Hermes, \"by my serpent rod,"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Light flew his earnest words, among the blossoms blown. Then thus again the brilliance feminine: \"Too frail of heart! for this lost nymph of thine,"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "About these thornless wilds; her pleasant days She tastes unseen; unseen her nimble feet"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "From weary tendrils, and bow'd branches green, She plucks the fruit unseen, she bathes unseen:"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "To keep it unaffronted, unassail'd By the love-glances of unlovely eyes,"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "Pale grew her immortality, for woe Of all these lovers, and she grieved so"
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Her hair in weird syrops, that would keep Her loveliness invisible, yet free"
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "Thou shalt behold her, Hermes, thou alone, If thou wilt, as thou swearest, grant my boon!\""
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "An oath, and through the serpent's ears it ran Warm, tremulous, devout, psalterian."
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "Blush'd a live damask, and swift-lisping said, \"I was a woman, let me have once more"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "I love a youth of Corinth--O the bliss! Give me my woman's form, and place me where he is."
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "And thou shalt see thy sweet nymph even now.\" The God on half-shut feathers sank serene,"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "Of both the guarded nymph near-smiling on the green. It was no dream; or say a dream it was,"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "Their pleasures in a long immortal dream. One warm, flush'd moment, hovering, it might seem"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "Then, lighting on the printless verdure, turn'd To the swoon'd serpent, and with languid arm,"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "So done, upon the nymph his eyes he bent, Full of adoring tears and blandishment,"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "Faded before him, cower'd, nor could restrain Her fearful sobs, self-folding like a flower"
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "But the God fostering her chilled hand, She felt the warmth, her eyelids open'd bland,"
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "Bloom'd, and gave up her honey to the lees. Into the green-recessed woods they flew;"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "Left to herself, the serpent now began"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "Her mouth foam'd, and the grass, therewith besprent, Wither'd at dew so sweet and virulent;"
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "Hot, glaz'd, and wide, with lid-lashes all sear, Flash'd phosphor and sharp sparks, without one cooling tear."
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "She writh'd about, convuls'd with scarlet pain: A deep volcanian yellow took the place"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "And, as the lava ravishes the mead, Spoilt all her silver mail, and golden brede; Made gloom of all her frecklings, streaks and bars,"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "So that, in moments few, she was undrest Of all her sapphires, greens, and amethyst,"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "Nothing but pain and ugliness were left. Still shone her crown; that vanish'd, also she"
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "And in the air, her new voice luting soft, Cried, \"Lycius! gentle Lycius!\"--Borne aloft"
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "These words dissolv'd: Crete's forests heard no more."
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "A full-born beauty new and exquisite? She fled into that valley they pass o'er"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "And rested at the foot of those wild hills, The rugged founts of the Peraean rills,"
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "Stretches, with all its mist and cloudy rack, South-westward to Cleone. There she stood"
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "Fair, on a sloping green of mossy tread, By a clear pool, wherein she passioned"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "While her robes flaunted with the daffodils."
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "More beautiful than ever twisted braid, Or sigh'd, or blush'd, or on spring-flowered lea"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "A virgin purest lipp'd, yet in the lore Of love deep learned to the red heart's core:"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "To unperplex bliss from its neighbour pain; Define their pettish limits, and estrange"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "Intrigue with the specious chaos, and dispart Its most ambiguous atoms with sure art;"
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "Sweet days a lovely graduate, still unshent, And kept his rosy terms in idle languishment."
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "By the wayside to linger, we shall see; But first 'tis fit to tell how she could muse"
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "Of all she list, strange or magnificent: How, ever, where she will'd, her spirit went;"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "Down through tress-lifting waves the Nereids fair Wind into Thetis' bower by many a pearly stair;"
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "Stretch'd out, at ease, beneath a glutinous pine; Or where in Pluto's gardens palatine"
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "And sometimes into cities she would send Her dream, with feast and rioting to blend;"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "She saw the young Corinthian Lycius Charioting foremost in the envious race,"
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "And fell into a swooning love of him. Now on the moth-time of that evening dim"
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "To Corinth from the shore; for freshly blew The eastern soft wind, and his galley now"
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "In port Cenchreas, from Egina isle Fresh anchor'd; whither he had been awhile"
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "Waits with high marble doors for blood and incense rare. Jove heard his vows, and better'd his desire;"
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "From his companions, and set forth to walk, Perhaps grown wearied of their Corinth talk:"
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "Thoughtless at first, but ere eve's star appeared His phantasy was lost, where reason fades,"
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "Lamia beheld him coming, near, more near-- Close to her passing, in indifference drear,"
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "So neighbour'd to him, and yet so unseen She stood: he pass'd, shut up in mysteries,"
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "Follow'd his steps, and her neck regal white Turn'd--syllabling thus, \"Ah, Lycius bright,"
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "Lycius, look back! and be some pity shown.\" He did; not with cold wonder fearingly,"
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "For so delicious were the words she sung, It seem'd he had lov'd them a whole summer long:"
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "Leaving no drop in the bewildering cup, And still the cup was full,--while he afraid"
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "Due adoration, thus began to adore; Her soft look growing coy, she saw his chain so sure: \"Leave thee alone! Look back! Ah, Goddess, see"
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "For pity do not this sad heart belie-- Even as thou vanishest so I shall die."
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "To thy far wishes will thy streams obey: Stay! though the greenest woods be thy domain,"
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "Though a descended Pleiad, will not one Of thine harmonious sisters keep in tune"
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "So sweetly to these ravish'd ears of mine Came thy sweet greeting, that if thou shouldst fade"
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "For pity do not melt!\"--\"If I should stay,\" Said Lamia, \"here, upon this floor of clay,"
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "What canst thou say or do of charm enough To dull the nice remembrance of my home?"
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "Over these hills and vales, where no joy is,-- Empty of immortality and bliss!"
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "That finer spirits cannot breathe below In human climes, and live: Alas! poor youth,"
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "My essence? What serener palaces, Where I may all my many senses please, And by mysterious sleights a hundred thirsts appease?"
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "Tiptoe with white arms spread. He, sick to lose The amorous promise of her lone complain,"
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "The cruel lady, without any show Of sorrow for her tender favourite's woe,"
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "With brighter eyes and slow amenity, Put her new lips to his, and gave afresh"
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "And as he from one trance was wakening Into another, she began to sing,"
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "A song of love, too sweet for earthly lyres, While, like held breath, the stars drew in their panting fires"
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "As those who, safe together met alone For the first time through many anguish'd days,"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "His drooping head, and clear his soul of doubt, For that she was a woman, and without"
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "Than throbbing blood, and that the self-same pains Inhabited her frail-strung heart as his."
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "Her face so long in Corinth, where, she said, She dwelt but half retir'd, and there had led"
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "Without the aid of love; yet in content Till she saw him, as once she pass'd him by,"
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "At Venus' temple porch, 'mid baskets heap'd Of amorous herbs and flowers, newly reap'd"
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "The Adonian feast; whereof she saw no more, But wept alone those days, for why should she adore?"
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "To see her still, and singing so sweet lays; Then from amaze into delight he fell"
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "And every word she spake entic'd him on To unperplex'd delight and pleasure known."
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "Of the sweets of Fairies, Peris, Goddesses, There is not such a treat among them all,"
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "As a real woman, lineal indeed From Pyrrha's pebbles or old Adam's seed."
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "That Lycius could not love in half a fright, So threw the goddess off, and won his heart"
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "With no more awe than what her beauty gave, That, while it smote, still guaranteed to save."
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "Marrying to every word a twinborn sigh; And last, pointing to Corinth, ask'd her sweet,"
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "The way was short, for Lamia's eagerness Made, by a spell, the triple league decrease"
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "By blinded Lycius, so in her comprized. They pass'd the city gates, he knew not how"
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "As men talk in a dream, so Corinth all,"
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "And all her populous streets and temples lewd, Mutter'd, like tempest in the distance brew'd,"
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "Men, women, rich and poor, in the cool hours, Shuffled their sandals o'er the pavement white,"
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "Flared, here and there, from wealthy festivals, And threw their moving shadows on the walls,"
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "Of some arch'd temple door, or dusky colonnade."
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "Her fingers he press'd hard, as one came near With curl'd gray beard, sharp eyes, and smooth bald crown,"
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "Lycius shrank closer, as they met and past, Into his mantle, adding wings to haste,"
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "\"Why do you shudder, love, so ruefully? Why does your tender palm dissolve in dew?\"-- \"I'm wearied,\" said fair Lamia: \"tell me who"
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "His features--Lycius! wherefore did you blind Yourself from his quick eyes?\" Lycius replied, 'Tis Apollonius sage, my trusty guide"
+    },
+    {
+      "id": "s115-0",
+      "sceneId": "s115",
+      "text": "The ghost of folly haunting my sweet dreams."
+    },
+    {
+      "id": "s116-0",
+      "sceneId": "s116",
+      "text": "A pillar'd porch, with lofty portal door, Where hung a silver lamp, whose phosphor glow"
+    },
+    {
+      "id": "s117-0",
+      "sceneId": "s117",
+      "text": "Mild as a star in water; for so new, And so unsullied was the marble hue,"
+    },
+    {
+      "id": "s118-0",
+      "sceneId": "s118",
+      "text": "Ran the dark veins, that none but feet divine Could e'er have touch'd there. Sounds Aeolian"
+    },
+    {
+      "id": "s119-0",
+      "sceneId": "s119",
+      "text": "Of the wide doors disclos'd a place unknown Some time to any, but those two alone,"
+    },
+    {
+      "id": "s120-0",
+      "sceneId": "s120",
+      "text": "Were seen about the markets: none knew where They could inhabit; the most curious Were foil'd, who watch'd to trace them to their house:"
+    },
+    {
+      "id": "s121-0",
+      "sceneId": "s121",
+      "text": "For truth's sake, what woe afterwards befel, 'Twould humour many a heart to leave them thus,"
+    },
+    {
+      "id": "s122-0",
+      "sceneId": "s122",
+      "text": "Is--Love, forgive us!--cinders, ashes, dust; Love in a palace is perhaps at last"
+    },
+    {
+      "id": "s123-0",
+      "sceneId": "s123",
+      "text": "That is a doubtful tale from faery land, Hard for the non-elect to understand."
+    },
+    {
+      "id": "s124-0",
+      "sceneId": "s124",
+      "text": "He might have given the moral a fresh frown, Or clench'd it quite: but too short was their bliss To breed distrust and hate, that make the soft voice hiss."
+    },
+    {
+      "id": "s125-0",
+      "sceneId": "s125",
+      "text": "Love, jealous grown of so complete a pair, Hover'd and buzz'd his wings, with fearful roar,"
+    },
+    {
+      "id": "s126-0",
+      "sceneId": "s126",
+      "text": "And down the passage cast a glow upon the floor."
+    },
+    {
+      "id": "s127-0",
+      "sceneId": "s127",
+      "text": "They were enthroned, in the even tide, Upon a couch, near to a curtaining"
+    },
+    {
+      "id": "s128-0",
+      "sceneId": "s128",
+      "text": "Floated into the room, and let appear Unveil'd the summer heaven, blue and clear,"
+    },
+    {
+      "id": "s129-0",
+      "sceneId": "s129",
+      "text": "Where use had made it sweet, with eyelids closed, Saving a tythe which love still open kept, That they might see each other while they almost slept;"
+    },
+    {
+      "id": "s130-0",
+      "sceneId": "s130",
+      "text": "Deafening the swallow's twitter, came a thrill Of trumpets--Lycius started--the sounds fled,"
+    },
+    {
+      "id": "s131-0",
+      "sceneId": "s131",
+      "text": "For the first time, since first he harbour'd in That purple-lined palace of sweet sin,"
+    },
+    {
+      "id": "s132-0",
+      "sceneId": "s132",
+      "text": "Into the noisy world almost forsworn. The lady, ever watchful, penetrant,"
+    },
+    {
+      "id": "s133-0",
+      "sceneId": "s133",
+      "text": "Of something more, more than her empery Of joys; and she began to moan and sigh"
+    },
+    {
+      "id": "s134-0",
+      "sceneId": "s134",
+      "text": "That but a moment's thought is passion's passing bell. \"Why do you sigh, fair creature?\" whisper'd he: \"Why do you think?\" return'd she tenderly: \"You have deserted me--where am I now?"
+    },
+    {
+      "id": "s135-0",
+      "sceneId": "s135",
+      "text": "No, no, you have dismiss'd me; and I go From your breast houseless: ay, it must be so.\""
+    },
+    {
+      "id": "s136-0",
+      "sceneId": "s136",
+      "text": "Where he was mirror'd small in paradise, My silver planet, both of eve and morn!"
+    },
+    {
+      "id": "s137-0",
+      "sceneId": "s137",
+      "text": "While I am striving how to fill my heart With deeper crimson, and a double smart?"
+    },
+    {
+      "id": "s138-0",
+      "sceneId": "s138",
+      "text": "Your soul in mine, and labyrinth you there Like the hid scent in an unbudded rose?"
+    },
+    {
+      "id": "s139-0",
+      "sceneId": "s139",
+      "text": "My thoughts! shall I unveil them? Listen then! What mortal hath a prize, that other men"
+    },
+    {
+      "id": "s140-0",
+      "sceneId": "s140",
+      "text": "But lets it sometimes pace abroad majestical, And triumph, as in thee I should rejoice"
+    },
+    {
+      "id": "s141-0",
+      "sceneId": "s141",
+      "text": "\"Let my foes choke, and my friends shout afar, While through the thronged streets your bridal car Wheels round its dazzling spokes.\" The lady's cheek"
+    },
+    {
+      "id": "s142-0",
+      "sceneId": "s142",
+      "text": "Arose and knelt before him, wept a rain Of sorrows at his words; at last with pain"
+    },
+    {
+      "id": "s143-0",
+      "sceneId": "s143",
+      "text": "To change his purpose. He thereat was stung, Perverse, with stronger fancy to reclaim"
+    },
+    {
+      "id": "s144-0",
+      "sceneId": "s144",
+      "text": "Besides, for all his love, in self despite, Against his better self, he took delight"
+    },
+    {
+      "id": "s145-0",
+      "sceneId": "s145",
+      "text": "His passion, cruel grown, took on a hue Fierce and sanguineous as 'twas possible"
+    },
+    {
+      "id": "s146-0",
+      "sceneId": "s146",
+      "text": "Fine was the mitigated fury, like Apollo's presence when in act to strike"
+    },
+    {
+      "id": "s147-0",
+      "sceneId": "s147",
+      "text": "Was none. She burnt, she lov'd the tyranny, And, all subdued, consented to the hour"
+    },
+    {
+      "id": "s148-0",
+      "sceneId": "s148",
+      "text": "Whispering in midnight silence, said the youth, \"Sure some sweet name thou hast, though, by my truth,"
+    },
+    {
+      "id": "s149-0",
+      "sceneId": "s149",
+      "text": "Not mortal, but of heavenly progeny, As still I do. Hast any mortal name,"
+    },
+    {
+      "id": "s150-0",
+      "sceneId": "s150",
+      "text": "Or friends or kinsfolk on the citied earth, To share our marriage feast and nuptial mirth?\" \"I have no friends,\" said Lamia,\" no, not one;"
+    },
+    {
+      "id": "s151-0",
+      "sceneId": "s151",
+      "text": "My parents' bones are in their dusty urns Sepulchred, where no kindled incense burns,"
+    },
+    {
+      "id": "s152-0",
+      "sceneId": "s152",
+      "text": "And I neglect the holy rite for thee. Even as you list invite your many guests;"
+    },
+    {
+      "id": "s153-0",
+      "sceneId": "s153",
+      "text": "With any pleasure on me, do not bid Old Apollonius--from him keep me hid.\""
+    },
+    {
+      "id": "s154-0",
+      "sceneId": "s154",
+      "text": "Made close inquiry; from whose touch she shrank, Feigning a sleep; and he to the dull shade"
+    },
+    {
+      "id": "s155-0",
+      "sceneId": "s155",
+      "text": "It was the custom then to bring away"
+    },
+    {
+      "id": "s156-0",
+      "sceneId": "s156",
+      "text": "Veil'd, in a chariot, heralded along By strewn flowers, torches, and a marriage song,"
+    },
+    {
+      "id": "s157-0",
+      "sceneId": "s157",
+      "text": "Had not a friend. So being left alone, (Lycius was gone to summon all his kin)"
+    },
+    {
+      "id": "s158-0",
+      "sceneId": "s158",
+      "text": "His foolish heart from its mad pompousness, She set herself, high-thoughted, how to dress"
+    },
+    {
+      "id": "s159-0",
+      "sceneId": "s159",
+      "text": "She did so, but 'tis doubtful how and whence Came, and who were her subtle servitors."
+    },
+    {
+      "id": "s160-0",
+      "sceneId": "s160",
+      "text": "There was a noise of wings, till in short space The glowing banquet-room shone with wide-arched grace."
+    },
+    {
+      "id": "s161-0",
+      "sceneId": "s161",
+      "text": "Supportress of the faery-roof, made moan Throughout, as fearful the whole charm might fade."
+    },
+    {
+      "id": "s162-0",
+      "sceneId": "s162",
+      "text": "Of palm and plantain, met from either side, High in the midst, in honour of the bride:"
+    },
+    {
+      "id": "s163-0",
+      "sceneId": "s163",
+      "text": "From either side their stems branch'd one to one All down the aisled place; and beneath all There ran a stream of lamps straight on from wall to wall."
+    },
+    {
+      "id": "s164-0",
+      "sceneId": "s164",
+      "text": "Teeming with odours. Lamia, regal drest, Silently paced about, and as she went,"
+    },
+    {
+      "id": "s165-0",
+      "sceneId": "s165",
+      "text": "Mission'd her viewless servants to enrich The fretted splendour of each nook and niche."
+    },
+    {
+      "id": "s166-0",
+      "sceneId": "s166",
+      "text": "Came jasper pannels; then, anon, there burst Forth creeping imagery of slighter trees,"
+    },
+    {
+      "id": "s167-0",
+      "sceneId": "s167",
+      "text": "Approving all, she faded at self-will, And shut the chamber up, close, hush'd and still,"
+    },
+    {
+      "id": "s168-0",
+      "sceneId": "s168",
+      "text": "When dreadful guests would come to spoil her solitude."
+    },
+    {
+      "id": "s169-0",
+      "sceneId": "s169",
+      "text": "O senseless Lycius! Madman! wherefore flout The silent-blessing fate, warm cloister'd hours,"
+    },
+    {
+      "id": "s170-0",
+      "sceneId": "s170",
+      "text": "The herd approach'd; each guest, with busy brain, Arriving at the portal, gaz'd amain,"
+    },
+    {
+      "id": "s171-0",
+      "sceneId": "s171",
+      "text": "Remember'd it from childhood all complete Without a gap, yet ne'er before had seen"
+    },
+    {
+      "id": "s172-0",
+      "sceneId": "s172",
+      "text": "So in they hurried all, maz'd, curious and keen: Save one, who look'd thereon with eye severe,"
+    },
+    {
+      "id": "s173-0",
+      "sceneId": "s173",
+      "text": "'Twas Apollonius: something too he laugh'd, As though some knotty problem, that had daft"
+    },
+    {
+      "id": "s174-0",
+      "sceneId": "s174",
+      "text": "And solve and melt--'twas just as he foresaw."
+    },
+    {
+      "id": "s175-0",
+      "sceneId": "s175",
+      "text": "His young disciple. \"'Tis no common rule, Lycius,\" said he, \"for uninvited guest"
+    },
+    {
+      "id": "s176-0",
+      "sceneId": "s176",
+      "text": "With an unbidden presence the bright throng Of younger friends; yet must I do this wrong,"
+    },
+    {
+      "id": "s177-0",
+      "sceneId": "s177",
+      "text": "The old man through the inner doors broad-spread; With reconciling words and courteous mien"
+    },
+    {
+      "id": "s178-0",
+      "sceneId": "s178",
+      "text": "Of wealthy lustre was the banquet-room,"
+    },
+    {
+      "id": "s179-0",
+      "sceneId": "s179",
+      "text": "Before each lucid pannel fuming stood A censer fed with myrrh and spiced wood,"
+    },
+    {
+      "id": "s180-0",
+      "sceneId": "s180",
+      "text": "Whose slender feet wide-swerv'd upon the soft Wool-woofed carpets: fifty wreaths of smoke"
+    },
+    {
+      "id": "s181-0",
+      "sceneId": "s181",
+      "text": "To the high roof, still mimick'd as they rose Along the mirror'd walls by twin-clouds odorous."
+    },
+    {
+      "id": "s182-0",
+      "sceneId": "s182",
+      "text": "High as the level of a man's breast rear'd On libbard's paws, upheld the heavy gold"
+    },
+    {
+      "id": "s183-0",
+      "sceneId": "s183",
+      "text": "Of Ceres' horn, and, in huge vessels, wine Come from the gloomy tun with merry shine."
+    },
+    {
+      "id": "s184-0",
+      "sceneId": "s184",
+      "text": "Each shrining in the midst the image of a God."
+    },
+    {
+      "id": "s185-0",
+      "sceneId": "s185",
+      "text": "Had felt the cold full sponge to pleasure press'd, By minist'ring slaves, upon his hands and feet,"
+    },
+    {
+      "id": "s186-0",
+      "sceneId": "s186",
+      "text": "Pour'd on his hair, they all mov'd to the feast In white robes, and themselves in order placed"
+    },
+    {
+      "id": "s187-0",
+      "sceneId": "s187",
+      "text": "Whence all this mighty cost and blaze of wealth could spring."
+    },
+    {
+      "id": "s188-0",
+      "sceneId": "s188",
+      "text": "While fluent Greek a vowel'd undersong Kept up among the guests discoursing low"
+    },
+    {
+      "id": "s189-0",
+      "sceneId": "s189",
+      "text": "But when the happy vintage touch'd their brains, Louder they talk, and louder come the strains"
+    },
+    {
+      "id": "s190-0",
+      "sceneId": "s190",
+      "text": "The space, the splendour of the draperies, The roof of awful richness, nectarous cheer,"
+    },
+    {
+      "id": "s191-0",
+      "sceneId": "s191",
+      "text": "Now, when the wine has done its rosy deed, And every soul from human trammels freed,"
+    },
+    {
+      "id": "s192-0",
+      "sceneId": "s192",
+      "text": "Will make Elysian shades not too fair, too divine. Soon was God Bacchus at meridian height; Flush'd were their cheeks, and bright eyes double bright:"
+    },
+    {
+      "id": "s193-0",
+      "sceneId": "s193",
+      "text": "From vales deflower'd, or forest-trees branch rent, In baskets of bright osier'd gold were brought"
+    },
+    {
+      "id": "s194-0",
+      "sceneId": "s194",
+      "text": "Of every guest; that each, as he did please, Might fancy-fit his brows, silk-pillow'd at his ease."
+    },
+    {
+      "id": "s195-0",
+      "sceneId": "s195",
+      "text": "What for the sage, old Apollonius? Upon her aching forehead be there hung"
+    },
+    {
+      "id": "s196-0",
+      "sceneId": "s196",
+      "text": "And for the youth, quick, let us strip for him The thyrsus, that his watching eyes may swim"
+    },
+    {
+      "id": "s197-0",
+      "sceneId": "s197",
+      "text": "Let spear-grass and the spiteful thistle wage War on his temples. Do not all charms fly"
+    },
+    {
+      "id": "s198-0",
+      "sceneId": "s198",
+      "text": "There was an awful rainbow once in heaven: We know her woof, her texture; she is given"
+    },
+    {
+      "id": "s199-0",
+      "sceneId": "s199",
+      "text": "Philosophy will clip an Angel's wings, Conquer all mysteries by rule and line,"
+    },
+    {
+      "id": "s200-0",
+      "sceneId": "s200",
+      "text": "Unweave a rainbow, as it erewhile made The tender-person'd Lamia melt into a shade."
+    },
+    {
+      "id": "s201-0",
+      "sceneId": "s201",
+      "text": "Scarce saw in all the room another face, Till, checking his love trance, a cup he took"
+    },
+    {
+      "id": "s202-0",
+      "sceneId": "s202",
+      "text": "'Cross the broad table, to beseech a glance From his old teacher's wrinkled countenance,"
+    },
+    {
+      "id": "s203-0",
+      "sceneId": "s203",
+      "text": "Had fix'd his eye, without a twinkle or stir Full on the alarmed beauty of the bride, Brow-beating her fair form, and troubling her sweet pride."
+    },
+    {
+      "id": "s204-0",
+      "sceneId": "s204",
+      "text": "As pale it lay upon the rosy couch: 'Twas icy, and the cold ran through his veins;"
+    },
+    {
+      "id": "s205-0",
+      "sceneId": "s205",
+      "text": "Of an unnatural heat shot to his heart. \"Lamia, what means this? Wherefore dost thou start?"
+    },
+    {
+      "id": "s206-0",
+      "sceneId": "s206",
+      "text": "He gaz'd into her eyes, and not a jot Own'd they the lovelorn piteous appeal:"
+    },
+    {
+      "id": "s207-0",
+      "sceneId": "s207",
+      "text": "Some hungry spell that loveliness absorbs; There was no recognition in those orbs. \"Lamia!\" he cried--and no soft-toned reply."
+    },
+    {
+      "id": "s208-0",
+      "sceneId": "s208",
+      "text": "Grew hush; the stately music no more breathes; The myrtle sicken'd in a thousand wreaths. By faint degrees, voice, lute, and pleasure ceased;"
+    },
+    {
+      "id": "s209-0",
+      "sceneId": "s209",
+      "text": "Until it seem'd a horrid presence there, And not a man but felt the terror in his hair. \"Lamia!\" he shriek'd; and nothing but the shriek"
+    },
+    {
+      "id": "s210-0",
+      "sceneId": "s210",
+      "text": "\"Begone, foul dream!\" he cried, gazing again In the bride's face, where now no azure vein"
+    },
+    {
+      "id": "s211-0",
+      "sceneId": "s211",
+      "text": "Misted the cheek; no passion to illume The deep-recessed vision--all was blight;"
+    },
+    {
+      "id": "s212-0",
+      "sceneId": "s212",
+      "text": "\"Shut, shut those juggling eyes, thou ruthless man! Turn them aside, wretch! or the righteous ban"
+    },
+    {
+      "id": "s213-0",
+      "sceneId": "s213",
+      "text": "Here represent their shadowy presences, May pierce them on the sudden with the thorn"
+    },
+    {
+      "id": "s214-0",
+      "sceneId": "s214",
+      "text": "In trembling dotage to the feeblest fright Of conscience, for their long offended might,"
+    },
+    {
+      "id": "s215-0",
+      "sceneId": "s215",
+      "text": "Unlawful magic, and enticing lies. Corinthians! look upon that gray-beard wretch!"
+    },
+    {
+      "id": "s216-0",
+      "sceneId": "s216",
+      "text": "Around his demon eyes! Corinthians, see! My sweet bride withers at their potency.\" \"Fool!\" said the sophist, in an under-tone"
+    },
+    {
+      "id": "s217-0",
+      "sceneId": "s217",
+      "text": "From Lycius answer'd, as heart-struck and lost, He sank supine beside the aching ghost. \"Fool! Fool!\" repeated he, while his eyes still"
+    },
+    {
+      "id": "s218-0",
+      "sceneId": "s218",
+      "text": "Of life have I preserv'd thee to this day, And shall I see thee made a serpent's prey?\" Then Lamia breath'd death breath; the sophist's eye,"
+    },
+    {
+      "id": "s219-0",
+      "sceneId": "s219",
+      "text": "Keen, cruel, perceant, stinging: she, as well As her weak hand could any meaning tell,"
+    },
+    {
+      "id": "s220-0",
+      "sceneId": "s220",
+      "text": "He look'd and look'd again a level--No! \"A Serpent!\" echoed he; no sooner said,"
+    },
+    {
+      "id": "s221-0",
+      "sceneId": "s221",
+      "text": "And Lycius' arms were empty of delight, As were his limbs of life, from that same night."
+    },
+    {
+      "id": "s222-0",
+      "sceneId": "s222",
+      "text": "Supported him--no pulse, or breath they found, And, in its marriage robe, the heavy body wound."
+    }
+  ]
+}

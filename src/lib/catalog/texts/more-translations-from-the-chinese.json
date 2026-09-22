@@ -1,0 +1,2145 @@
+{
+  "id": "more-translations-from-the-chinese",
+  "title": "More Translations from the Chinese",
+  "author": "Arthur Waley (tr.; Bai Juyi et al.)",
+  "year": "1919",
+  "note": "Project Gutenberg 16500",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "A cup of wine, under the flowering trees; I drink alone, for no friend is near. Raising my cup I beckon the bright moon, For he, with my shadow, will make three men. The moon, alas, is no drinker of wine; Listless, my shadow creeps about at",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "In the third month the town of Hsien-yang Is thick-spread with a carpet of fallen flowers. Who in Spring can bear to grieve alone? Who, sober, look on sights like these? Riches and Poverty, long or short life, By the Maker of Things are por",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "If High Heaven had no love for wine, There would not be a Wine Star in the sky. If Earth herself had no love for wine, There would not be a city called Wine Springs.[2] Since Heaven and Earth both love wine, I can love wine, without shame b",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "A cup of wine, under the flowering trees; I drink alone, for no friend is near. Raising my cup I beckon the bright moon, For he, with my shadow, will make three men. The moon, alas, is no drinker of wine; Listless, my shadow creeps about at my side. Yet with the moon as friend and the shadow as slave I must make merry before the Spring is spent. To the songs I sing the moon flickers her beams; In the dance I weave my shadow tangles and breaks. While we were sober, three shared the fun; Now we are drunk, each goes his way. May we long share our odd, inanimate feast, And meet at last on the Cloudy River of the sky.[1]"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "In the third month the town of Hsien-yang Is thick-spread with a carpet of fallen flowers. Who in Spring can bear to grieve alone? Who, sober, look on sights like these? Riches and Poverty, long or short life, By the Maker of Things are portioned and disposed; But a cup of wine levels life and death And a thousand things obstinately hard to prove. When I am drunk, I lose Heaven and Earth. Motionless--I cleave to my lonely bed. At last I forget that I exist at all, And at *that* moment my joy is great indeed."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "If High Heaven had no love for wine, There would not be a Wine Star in the sky. If Earth herself had no love for wine, There would not be a city called Wine Springs.[2] Since Heaven and Earth both love wine, I can love wine, without shame before God. Clear wine was once called a Saint;[3] Thick wine was once called “a Sage.”[3]"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Of Saint and Sage I have long quaffed deep, What need for me to study spirits and *hsien*?[4] At the third cup I penetrate the Great Way; A full gallon--Nature and I are one ... But the things I feel when wine possesses my soul I will never tell to those who are not drunk."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "[1] The Milky Way."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "[2] Ch‘iu-ch‘üan, in Kansuh."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "[3] “History of Wei Dynasty” (Life of Hsü Mo): “A drunken visitor said, ‘Clear wine I account a Saint: thick wine only a Sage.’”"
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "[4] The lore of Rishi, Immortals."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "[6] in the Mountains on a Summer Day"
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "Gently I stir a white feather fan, With open shirt sitting in a green wood. I take off my cap and hang it on a jutting stone; A wind from the pine-trees trickles on my bare head."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "[7] Waking from Drunkenness on a Spring Day"
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "“Life in the World is but a big dream; I will not spoil it by any labour or care.” So saying, I was drunk all the day, Lying helpless at the porch in front of my door. When I woke up, I blinked at the garden-lawn; A lonely bird was singing amid the flowers. I asked myself, had the day been wet or fine? The Spring wind was telling the mango-bird. Moved by its song I soon began to sigh, And as wine was there I filled my own cup. Wildly singing I waited for the moon to rise; When my song was over, all my senses had gone."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "[8] Self-Abandonment"
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "I sat drinking and did not notice the dusk, Till falling petals filled the folds of my dress. Drunken I rose and walked to the moonlit stream; The birds were gone, and men also few."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "[9] TO TAN CH‘IU"
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "My friend is lodging high in the Eastern Range, Dearly loving the beauty of valleys and hills. At green Spring he lies in the empty woods, And is still asleep when the sun shines on high. A pine-tree wind dusts his sleeves and coat; A pebbly stream cleans his heart and ears. I envy you, who far from strife and talk Are high-propped on a pillow of blue cloud."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "[10] Clearing at Dawn"
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "The fields are chill; the sparse rain has stopped; The colours of Spring teem on every side. With leaping fish the blue pond is full; With singing thrushes the green boughs droop. The flowers of the field have dabbled their powdered cheeks; The mountain grasses are bent level at the waist. By the bamboo stream the last fragment of cloud Blown by the wind slowly scatters away."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "PO CHU-I"
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "Life OF PO CHU-I"
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "772 Born on 20th of 1st month. 800 Passes his examinations. 806 Receives a minor post at Chou-chih, near the capital. 807 Made Scholar of the Han Lin Academy. 811 Retires to Wei River, being in mourning for his mother. 814 Returns to Court. 815 Banished to Hsün-yang. 818 Removed to Chung-chou. 820 Reprieved and returns to Court. 822 Governor of Hangchow. 825 Governor of Soochow. 826 Retires owing to illness. 827 Returns to Ch‘ang-an. 829 Settles permanently at Lo-yang. 831 Governor of Ho-nan, the province of which Lo-yang was capital. 833 Retires owing to illness. 839 Has paralytic stroke in tenth month. 846 Dies in the eighth month."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "[11] After Passing the Examination"
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "[*A.D. 800*]"
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "For ten years I never left my books; I went up ... and won unmerited praise. My high place I do not much prize; The joy of my parents will first make me proud. Fellow students, six or seven men, See me off as I leave the City gate. My covered couch is ready to drive away; Flutes and strings blend their parting tune. Hopes achieved dull the pains of parting; Fumes of wine shorten the long road.... Shod with wings is the horse of him who rides On a Spring day the road that leads to home."
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "[12] Escorting Candidates to the Examination Hall"
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "[*A.D. 805*]"
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "At dawn I rode to escort the Doctors of Art; In the eastern quarter the sky was still grey. I said to myself, “You have started far too soon,” But horses and coaches already thronged the road. High and low the riders’ torches bobbed; Muffled or loud, the watchman’s drum beat. Riders, when I see you prick To your early levee, pity fills my heart. When the sun rises and the hot dust flies And the creatures of earth resume their great strife, You, with your striving, what shall you each seek? Profit and fame, for that is all your care. But I, you courtiers, rise from my bed at noon And live idly in the city of Ch‘ang-an. Spring is deep and my term of office spent; Day by day my thoughts go back to the hills."
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "[13] in Early Summer Lodging in a Temple to Enjoy the Moonlight"
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "[*A.D. 805*]"
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "In early summer, with two or three more That were seeking fame in the city of Ch‘ang-an, Whose low employ gave them less business Than ever they had since first they left their homes,-- With these I wandered deep into the shrine of Tao, For the joy we sought was promised in this place. When we reached the gate, we sent our coaches back; We entered the yard with only cap and stick. Still and clear, the first weeks of May, When trees are green and bushes soft and wet; When the wind has stolen the shadows of new leaves And birds linger on the last boughs that bloom. Towards evening when the sky grew clearer yet And the South-east was still clothed in red, To the western cloister we carried our jar of wine; While we waited for the moon, our cups moved slow. Soon, how soon her golden ghost was born, Swiftly, as though she had waited for us to come. The beams of her light shone in every place, On towers and halls dancing to and fro. Till day broke we sat in her clear light Laughing and singing, and yet never grew tired. In Ch‘ang-an, the place of profit and fame, Such moods as this, how many men know?"
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "[14] Sick Leave"
+    },
+    {
+      "id": "s2-29",
+      "sceneId": "s2",
+      "text": "[*While Secretary to the Deputy-Assistant-Magistrate of Chou-chih, near Ch‘ang-an, in A.D. 806*]"
+    },
+    {
+      "id": "s2-30",
+      "sceneId": "s2",
+      "text": "Propped on pillows, not attending to business; For two days I’ve lain behind locked doors. I begin to think that those who hold office Get no rest, except by falling ill! For restful thoughts one does not need space; The room where I lie is ten foot square. By the western eaves, above the bamboo-twigs, From my couch I see the White Mountain rise. But the clouds that hover on its far-distant peak Bring shame to a face that is buried in the World’s dust."
+    },
+    {
+      "id": "s2-31",
+      "sceneId": "s2",
+      "text": "[15] Watching the Reapers"
+    },
+    {
+      "id": "s2-32",
+      "sceneId": "s2",
+      "text": "[*A.D. 806*]"
+    },
+    {
+      "id": "s2-33",
+      "sceneId": "s2",
+      "text": "Tillers of the soil have few idle months; In the fifth month their toil is double-fold. A south-wind visits the fields at night: Suddenly the hill is covered with yellow corn. Wives and daughters shoulder baskets of rice; Youths and boys carry the flasks of wine. Following after they bring a wage of meat, To the strong reapers toiling on the southern hill, Whose feet are burned by the hot earth they tread, Whose backs are scorched by flames of the shining sky. Tired they toil, caring nothing for the heat, Grudging the shortness of the long summer day. A poor woman follows at the reapers’ side With an infant child carried close at her breast. With her right hand she gleans the fallen grain; On her left arm a broken basket hangs. And *I* to-day ... by virtue of what right Have I never once tended field or tree? My government-pay is three hundred tons; At the year’s end I have still grain in hand. Thinking of this, secretly I grew ashamed; And all day the thought lingered in my head."
+    },
+    {
+      "id": "s2-34",
+      "sceneId": "s2",
+      "text": "[16] Going Alone to Spend a Night at the Hsien-Yu Temple"
+    },
+    {
+      "id": "s2-35",
+      "sceneId": "s2",
+      "text": "[*A.D. 806*]"
+    },
+    {
+      "id": "s2-36",
+      "sceneId": "s2",
+      "text": "The crane from the shore standing at the top of the steps; The moon on the pool seen at the open door; Where these are, I made my lodging-place And for two nights could not turn away. I am glad I chanced on a place so lonely and still With no companion to drag me early home. Now that I have tasted the joy of being alone I will never again come with a friend at my side."
+    },
+    {
+      "id": "s2-37",
+      "sceneId": "s2",
+      "text": "[17] Planting Bamboos"
+    },
+    {
+      "id": "s2-38",
+      "sceneId": "s2",
+      "text": "[*A.D. 806*]"
+    },
+    {
+      "id": "s2-39",
+      "sceneId": "s2",
+      "text": "Unrewarded, my will to serve the State; At my closed door autumn grasses grow. What could I do to ease a rustic heart? I planted bamboos, more than a hundred shoots. When I see their beauty, as they grow by the stream-side, I feel again as though I lived in the hills, And many a time on public holidays Round their railing I walk till night comes. Do not say that their roots are still weak, Do not say that their shade is still small; Already I feel that both in garden and house Day by day a fresher air moves. But most I love, lying near the window-side, To hear in their branches the sound of the autumn-wind."
+    },
+    {
+      "id": "s2-40",
+      "sceneId": "s2",
+      "text": "[18] TO LI Chien"
+    },
+    {
+      "id": "s2-41",
+      "sceneId": "s2",
+      "text": "[*Part of a Poem*]"
+    },
+    {
+      "id": "s2-42",
+      "sceneId": "s2",
+      "text": "[*A.D. 807*]"
+    },
+    {
+      "id": "s2-43",
+      "sceneId": "s2",
+      "text": "Worldly matters again draw my steps; Worldly things again seduce my heart. Whenever for long I part from Li Chien Gradually my thoughts grow narrow and covetous. I remember how once I used to visit you; I stopped my horse and tapped at the garden-gate. Often when I came you were still lying in bed; Your little children were sent to let me in. And you, laughing, ran to the front-door With coat-tails flying and cap all awry. On the swept terrace, green patterns of moss; On the dusted bench, clean shadows of leaves. To gaze at the hills we sat in the eastern lodge; To wait for the moon we walked to the southern moor. At your quiet gate only birds spoke; In your distant street few drums were heard. Opposite each other all day we talked, And never once spoke of profit or fame. Since we parted hands, how long has passed? Thrice and again the full moon has shone. For when we parted the last flowers were falling, And to-day I hear new cicadas sing. The scented year suddenly draws to its close, Yet the sorrow of parting is still unsubdued."
+    },
+    {
+      "id": "s2-44",
+      "sceneId": "s2",
+      "text": "[19] at the End of Spring"
+    },
+    {
+      "id": "s2-45",
+      "sceneId": "s2",
+      "text": "*To Yüan Chēn.*[1] [*A.D. 810*]"
+    },
+    {
+      "id": "s2-46",
+      "sceneId": "s2",
+      "text": "The flower of the pear-tree gathers and turns to fruit; The swallows’ eggs have hatched into young birds. When the Seasons’ changes thus confront the mind What comfort can the Doctrine of Tao give? It will teach me to watch the days and months fly Without grieving that Youth slips away; If the Fleeting World is but a long dream, It does not matter whether one is young or old. But ever since the day that my friend left my side And has lived an exile in the City of Chiang-ling, There is one wish I cannot quite destroy: That from time to time we may chance to meet again."
+    },
+    {
+      "id": "s2-47",
+      "sceneId": "s2",
+      "text": "[1] Po Chü-i’s great friend. See Nos. 63 and 64."
+    },
+    {
+      "id": "s2-48",
+      "sceneId": "s2",
+      "text": "[20] the Poem on the Wall"
+    },
+    {
+      "id": "s2-49",
+      "sceneId": "s2",
+      "text": "[*A.D. 810*]"
+    },
+    {
+      "id": "s2-50",
+      "sceneId": "s2",
+      "text": "[*Yüan Chēn wrote that on his way to exile he had discovered a poem inscribed by Po Chü-i, on the wall of the Lo-k‘ou Inn.*]"
+    },
+    {
+      "id": "s2-51",
+      "sceneId": "s2",
+      "text": "My clumsy poem on the inn-wall none cared to see. With bird-droppings and moss’s growth the letters were blotched away. There came a guest with heart so full, that though a page to the Throne, He did not grudge with his broidered coat to wipe off the dust, and read."
+    },
+    {
+      "id": "s2-52",
+      "sceneId": "s2",
+      "text": "[21] Chu Ch‘Ēn Village"
+    },
+    {
+      "id": "s2-53",
+      "sceneId": "s2",
+      "text": "[*A.D. 811*]"
+    },
+    {
+      "id": "s2-54",
+      "sceneId": "s2",
+      "text": "In Hsü-chou, in the District of Ku-fēng There lies a village whose name is Chu-ch‘ēn-- A hundred miles away from the county-town, Amid fields of hemp and green of mulberry-trees. Click, click goes the sound of the spinning-wheel; Mules and oxen pack the village-streets. The girls go drawing the water from the brook; The men go gathering fire-wood on the hill. So far from the town Government affairs are few; So deep in the hills, man’s ways are simple. Though they have wealth, they do not traffic with it; Though they reach the age, they do not enter the Army. Each family keeps to its village trade; Grey-headed, they have never left the gates."
+    },
+    {
+      "id": "s2-55",
+      "sceneId": "s2",
+      "text": "Alive, they are the people of Ch‘ēn Village; Dead, they become the dust of Ch‘ēn Village. Out in the fields old men and young Gaze gladly, each in the other’s face. In the whole village there are only two clans; Age after age Chus have married Ch‘ēns. Near or distant, they have kinsmen in every house; Young or old, they have friends wherever they go. On white wine and roasted fowl they fare At joyful meetings more than “once a week.” While they are alive, they have no distant partings; To choose a wife they go to a neighbour’s house. When they are dead,--no distant burial; Round the village graves lie thick. They are not troubled either about life or death; They have no anguish either of body or soul. And so it happens that they live to a ripe age And great-great-grandsons are often seen."
+    },
+    {
+      "id": "s2-56",
+      "sceneId": "s2",
+      "text": "*I* was born in the Realms of Etiquette; In early years, unprotected and poor. Alone, I learnt to distinguish between Evil and Good; Untutored, I toiled at bitter tasks. The World’s Law honours Learning and Fame; Scholars prize marriages and Caps. With these fetters I gyved my own hands; Truly I became a much-deceived man. At ten years old I learnt to read books; At fifteen, I knew how to write prose. At twenty I was made a Bachelor of Arts; At thirty I became a Censor at the Court. Above, the duty I owe to Prince and parents; Below, the ties that bind me to wife and child. The support of my family, the service of my country-- For these tasks my nature is not apt. I reckon the time that I first left my home; From then till now,--fifteen Springs! My lonely boat has thrice sailed to Ch‘u; Four times through Ch‘in my lean horse has passed. I have walked in the morning with hunger in my face; I have lain at night with a soul that could not rest. East and West I have wandered without pause, Hither and thither like a cloud astray in the sky. In the civil-war my old home was destroyed; Of my flesh and blood many are scattered and lost. North of the River, and South of the River-- In both lands are the friends of all my life; Life-friends whom I never see at all,-- Whose deaths I hear of only after the lapse of years. Sad at morning, I lie on my bed till dusk; Weeping at night, I sit and wait for dawn. The fire of sorrow has burnt my heart’s core; The frost of trouble has seized my hair’s roots. In such anguish has my whole life passed; Long I have envied the people of Ch‘ēn Village."
+    },
+    {
+      "id": "s2-57",
+      "sceneId": "s2",
+      "text": "[22] Fishing in the Wei River"
+    },
+    {
+      "id": "s2-58",
+      "sceneId": "s2",
+      "text": "[*A.D. 811*]"
+    },
+    {
+      "id": "s2-59",
+      "sceneId": "s2",
+      "text": "In waters still as a burnished mirror’s face, In the depths of Wei, carp and grayling swim. Idly I come with my bamboo fishing-rod And hang my hook by the banks of Wei stream. A gentle wind blows on my fishing-gear Softly shaking my ten feet of line. Though my body sits waiting for fish to come, My heart has wandered to the Land of Nothingness.[1] Long ago a white-headed man[2] Also fished at the same river’s side; A hooker of men, not a hooker of fish, At seventy years, he caught Wēn Wang.[2] But *I*, when I come to cast my hook in the stream, Have no thought either of fish or men. Lacking the skill to capture either prey, I can only bask in the autumn water’s light. When I tire of this, my fishing also stops; I go to my home and drink my cup of wine."
+    },
+    {
+      "id": "s2-60",
+      "sceneId": "s2",
+      "text": "[1] See “Chuang Tzŭ,” chap. i, end."
+    },
+    {
+      "id": "s2-61",
+      "sceneId": "s2",
+      "text": "[2] The Sage T‘ai-kung sat still till he was seventy, apparently fishing, but really waiting for a Prince who would employ him. At last Wēn Wang, Prince of Chou, happened to come that way and at once made him his counsellor."
+    },
+    {
+      "id": "s2-62",
+      "sceneId": "s2",
+      "text": "[23] Lazy MAN’S Song"
+    },
+    {
+      "id": "s2-63",
+      "sceneId": "s2",
+      "text": "[*A.D. 811*]"
+    },
+    {
+      "id": "s2-64",
+      "sceneId": "s2",
+      "text": "I have got patronage, but am too lazy to use it; I have got land, but am too lazy to farm it. My house leaks; I am too lazy to mend it. My clothes are torn; I am too lazy to darn them. I have got wine, but am too lazy to drink; So it’s just the same as if my cellar were empty. I have got a harp, but am too lazy to play; So it’s just the same as if it had no strings. My wife tells me there is no more bread in the house; I want to bake, but am too lazy to grind. My friends and relatives write me long letters; I should like to read them, but they’re such a bother to open. I have always been told that Chi Shu-yeh[1] Passed his whole life in absolute idleness. But he played the harp and sometimes transmuted metals, So even *he* was not so lazy as I."
+    },
+    {
+      "id": "s2-65",
+      "sceneId": "s2",
+      "text": "[1] Also known as Chi K‘ang. A famous Quietist."
+    },
+    {
+      "id": "s2-66",
+      "sceneId": "s2",
+      "text": "[24] Illness and Idleness"
+    },
+    {
+      "id": "s2-67",
+      "sceneId": "s2",
+      "text": "[*Circa A.D. 812*]"
+    },
+    {
+      "id": "s2-68",
+      "sceneId": "s2",
+      "text": "Illness and idleness give me much leisure. What do I do with my leisure, when it comes? I cannot bring myself to discard inkstone and brush; Now and then I make a new poem. When the poem is made, it is slight and flavourless, A thing of derision to almost every one. Superior people will be pained at the flatness of the metre; Common people will hate the plainness of the words. I sing it to myself, then stop and think about it ..."
+    },
+    {
+      "id": "s2-69",
+      "sceneId": "s2",
+      "text": "The Prefects of Soochow and P‘ēng-tsē[1] Would perhaps have praised it, but they died long ago. Who else would care to hear it? No one to-day except Yüan Chēn, And *he* is banished to the City of Chiang-ling, For three years an usher in the Penal Court. Parted from me by three thousand leagues He will never know even that the poem was made."
+    },
+    {
+      "id": "s2-70",
+      "sceneId": "s2",
+      "text": "[1] Wei Ying-wu, eighth century A.D., and T‘ao Ch‘ien, A.D. 365-427."
+    },
+    {
+      "id": "s2-71",
+      "sceneId": "s2",
+      "text": "[25] Winter Night"
+    },
+    {
+      "id": "s2-72",
+      "sceneId": "s2",
+      "text": "[*Written during his retirement in 812*]"
+    },
+    {
+      "id": "s2-73",
+      "sceneId": "s2",
+      "text": "My house is poor; those that I love have left me; My body sick; I cannot join the feast. There is not a living soul before my eyes As I lie alone locked in my cottage room. My broken lamp burns with a feeble flame; My tattered curtains are crooked and do not meet. “Tsek, tsek” on the door-step and window-sill Again I hear the new snow fall. As I grow older, gradually I sleep less; I wake at midnight and sit up straight in bed. If I had not learned the “art of sitting and forgetting,”[1] How could I bear this utter loneliness? Stiff and stark my body cleaves to the earth; Unimpeded my soul yields to Change.[2] So has it been for four hateful years, Through one thousand and three hundred nights!"
+    },
+    {
+      "id": "s2-74",
+      "sceneId": "s2",
+      "text": "[1] Yen Hui told Confucius that he had acquired the “art of sitting and forgetting.” Asked what that meant, Yen Hui replied, “I have learnt to discard my body and obliterate my intelligence; to abandon matter and be impervious to sense-perception. By this method I become one with the All-Pervading.”--*Chuang Tzŭ*, chap. vi."
+    },
+    {
+      "id": "s2-75",
+      "sceneId": "s2",
+      "text": "[2] “Change” is the principle of endless mutation which governs the Universe."
+    },
+    {
+      "id": "s2-76",
+      "sceneId": "s2",
+      "text": "[26] the Chrysanthemums in the Eastern Garden"
+    },
+    {
+      "id": "s2-77",
+      "sceneId": "s2",
+      "text": "[*A.D. 812*]"
+    },
+    {
+      "id": "s2-78",
+      "sceneId": "s2",
+      "text": "The days of my youth left me long ago; And now in their turn dwindle my years of prime. With what thoughts of sadness and loneliness I walk again in this cold, deserted place! In the midst of the garden long I stand alone; The sunshine, faint; the wind and dew chill. The autumn lettuce is tangled and turned to seed; The fair trees are blighted and withered away. All that is left are a few chrysanthemum-flowers That have newly opened beneath the wattled fence. I had brought wine and meant to fill my cup, When the sight of these made me stay my hand. I remember, when I was young, How easily my mood changed from sad to gay. If I saw wine, no matter at what season, Before I drank it, my heart was already glad. But now that age comes, A moment of joy is harder and harder to get. And always I fear that when I am quite old The strongest liquor will leave me comfortless. Therefore I ask you, late chrysanthemum-flower At this sad season why do you bloom alone? Though well I know that it was not for my sake, Taught by you, for a while I will open my face."
+    },
+    {
+      "id": "s2-79",
+      "sceneId": "s2",
+      "text": "[27] Poems in Depression, at Wei Village"
+    },
+    {
+      "id": "s2-80",
+      "sceneId": "s2",
+      "text": "[*A.D. 812*]"
+    },
+    {
+      "id": "s2-81",
+      "sceneId": "s2",
+      "text": "I hug my pillow and do not speak a word; In my empty room no sound stirs. Who knows that, all day a-bed, I am not ill and am not even asleep?"
+    },
+    {
+      "id": "s2-82",
+      "sceneId": "s2",
+      "text": "Turned to jade are the boy’s rosy cheeks; To his sick temples the frost of winter clings.... Do not wonder that my body sinks to decay; Though my limbs are old, my heart is older yet."
+    },
+    {
+      "id": "s2-83",
+      "sceneId": "s2",
+      "text": "[28] to His Brother Hsing-Chien, Who Was Serving in Tung-Ch‘Uan"
+    },
+    {
+      "id": "s2-84",
+      "sceneId": "s2",
+      "text": "[*A.D. 815*]"
+    },
+    {
+      "id": "s2-85",
+      "sceneId": "s2",
+      "text": "Sullen, sullen, my brows are ever knit; Silent, silent, my lips will not move. It is not indeed that I choose to sorrow thus; If I lift my eyes, who would share my joy? Last Spring *you* were called to the West To carry arms in the lands of Pa and Shu; And this Spring *I* was banished to the South To nurse my sickness on the River’s oozy banks. You are parted from me by six thousand leagues; In another world, under another sky. Of ten letters, nine do not reach; What can I do to open my sad face? Thirsty men often dream of drink; Hungry men often dream of food. Since Spring came, where do my dreams lodge? Ere my eyes are closed, I have travelled to Tung-ch‘uan."
+    },
+    {
+      "id": "s2-86",
+      "sceneId": "s2",
+      "text": "[29] Starting Early from the Ch‘U-Ch‘Ēng Inn"
+    },
+    {
+      "id": "s2-87",
+      "sceneId": "s2",
+      "text": "[*A.D. 815*]"
+    },
+    {
+      "id": "s2-88",
+      "sceneId": "s2",
+      "text": "Washed by the rain, dust and grime are laid; Skirting the river, the road’s course is flat. The moon has risen on the last remnants of night; The travellers’ speed profits by the early cold. In the great silence I whisper a faint song; In the black darkness are bred sombre thoughts. On the lotus-banks hovers a dewy breeze; Through the rice-furrows trickles a singing stream. At the noise of our bells a sleeping dog stirs; At the sight of our torches a roosting bird wakes. Dawn glimmers through the shapes of misty trees ... For ten miles, till day at last breaks."
+    },
+    {
+      "id": "s2-89",
+      "sceneId": "s2",
+      "text": "[30] Rain"
+    },
+    {
+      "id": "s2-90",
+      "sceneId": "s2",
+      "text": "[*A.D. 815*]"
+    },
+    {
+      "id": "s2-91",
+      "sceneId": "s2",
+      "text": "Since I lived a stranger in the City of Hsün-yang Hour by hour bitter rain has poured. On few days has the dark sky cleared; In listless sleep I have spent much time. The lake has widened till it almost joins the sky; The clouds sink till they touch the water’s face. Beyond my hedge I hear the boatmen’s talk; At the street-end I hear the fisher’s song. Misty birds are lost in yellow air; Windy sails kick the white waves. In front of my gate the horse and carriage-way In a single night has turned into a river-bed."
+    },
+    {
+      "id": "s2-92",
+      "sceneId": "s2",
+      "text": "[31] the Beginning of Summer"
+    },
+    {
+      "id": "s2-93",
+      "sceneId": "s2",
+      "text": "[*A.D. 815*]"
+    },
+    {
+      "id": "s2-94",
+      "sceneId": "s2",
+      "text": "At the rise of summer a hundred beasts and trees Join in gladness that the Season bids them thrive. Stags and does frolic in the deep woods; Snakes and insects are pleased by the rank grass. Wingèd birds love the thick leaves; Scaly fish enjoy the fresh weeds. But to one place Summer forgot to come; I alone am left like a withered straw ... Banished to the world’s end; Flesh and bone all in distant ways. From my native-place no tidings come; Rebel troops flood the land with war. Sullen grief, in the end, what will it bring? I am only wearing my own heart away. Better far to let both body and mind Blindly yield to the fate that Heaven made. Hsün-yang abounds in good wine; I will fill my cup and never let it be dry. On Pēn River fish are cheap as mud; Early and late I will eat them, boiled and fried. With morning rice at the temple under the hill, And evening wine at the island in the lake ... Why should my thoughts turn to my native land? For in this place one could well end one’s age."
+    },
+    {
+      "id": "s2-95",
+      "sceneId": "s2",
+      "text": "[32] Visiting the Hsi-Lin Temple"
+    },
+    {
+      "id": "s2-96",
+      "sceneId": "s2",
+      "text": "[*Written during his exile*]"
+    },
+    {
+      "id": "s2-97",
+      "sceneId": "s2",
+      "text": "I dismount from my horse at the Hsi-lin Temple; I throw the porter my slender riding-whip. In the morning I work at a Government office-desk; In the evening I become a dweller in the Sacred Hills. In the second month to the north of Kuang-lu The ice breaks and the snow begins to melt. On the southern plantation the tea-plant thrusts its sprouts; Through the northern sluice the veins of the spring ooze."
+    },
+    {
+      "id": "s2-98",
+      "sceneId": "s2",
+      "text": "This year there is war in An-hui, In every place soldiers are rushing to arms. Men of learning have been summoned to the Council Board; Men of action are marching to the battle-line. Only I, who have no talents at all, Am left in the mountains to play with the pebbles of the stream."
+    },
+    {
+      "id": "s2-99",
+      "sceneId": "s2",
+      "text": "[33] Prose Letter to Yüan Chēn"
+    },
+    {
+      "id": "s2-100",
+      "sceneId": "s2",
+      "text": "[*A.D. 818*]"
+    },
+    {
+      "id": "s2-101",
+      "sceneId": "s2",
+      "text": "Night of the tenth day of the fourth month. Lo-t‘ien[1] says: O Wei-chih,[2] Wei-chih, it is three years since I saw your face and almost two years since I had a letter from you. Is man’s life so long that he can afford such partings? Much less should hearts joined by glue be set in bodies remote as Hu and Yüeh.[3] In promotion we could not be together; and in failure we cannot forget each other. Snatched and wrenched apart, separately each of us grows grey. O Wei-chih, what is to be done? But this is the work of Heaven and there is no use in speaking of it."
+    },
+    {
+      "id": "s2-102",
+      "sceneId": "s2",
+      "text": "When I first arrived at Hsün-yang, Hsiung Ju-tēng[4] came with the letter which you had written the year before, when you were so ill. First you told me of the progress of your illness, next of your feelings while you were ill and last you spoke of all our meetings and partings, and of the occasion of your own difficulties and dangers. You had no time to write more, but sent a bundle of your writings with a note attached, which said, “Later on I will send a message by Po Min-chung.[5] Ask him for news and that will do instead of a letter.” Alas! Is it thus that Wei-chih treats me? But again, I read the poem you wrote when you heard I had been banished:"
+    },
+    {
+      "id": "s2-103",
+      "sceneId": "s2",
+      "text": "*The lamp had almost spent its light: shadows filled the room, The night I heard that Lo-t‘ien was banished to Kiu-kiang. And I that had lain sick to death sat up suddenly in bed; A dark wind blowing rain entered at the cold window.*"
+    },
+    {
+      "id": "s2-104",
+      "sceneId": "s2",
+      "text": "If even strangers’ hearts are touched by these lines, much more must mine be; so that to this day I cannot recite them without pain. Of this matter I will say no more, but tell you briefly what has passed of late."
+    },
+    {
+      "id": "s2-105",
+      "sceneId": "s2",
+      "text": "It is more than three years since I came to Kiu-kiang. All this time my body has been strong and my heart much at peace. There has been no sickness in my household, even among the servants. Last summer my elder brother arrived from Hsü-chou, leading by the hand six or seven little brothers and sisters, orphans of various households. So that I have under my eyes all those who at present demand my care. They share with me cold and heat, hunger and satiety. This is my first consolation."
+    },
+    {
+      "id": "s2-106",
+      "sceneId": "s2",
+      "text": "The climate of the River Province is somewhat cool, so that fevers and epidemics are rare. And while snakes and mosquitoes are few, the fish in the Pēn are remarkably fat, the River wine is exceedingly good, and indeed for the most part the food is like that of the North Country. Although the mouths within my doors are many and the salary of a Sub-Prefect is small, by a thrifty application of my means, I am yet able to provide for my household without seeking any man’s assistance to clothe their backs or fill their bellies. This is my second consolation."
+    },
+    {
+      "id": "s2-107",
+      "sceneId": "s2",
+      "text": "In the autumn of last year I visited Lu Shan[6] for the first time. Reaching a point between the Eastern Forest and Western Forest Temples, beneath the Incense-Burner Peak, I was enamoured by the unequalled prospect of cloud-girt waters and spray-clad rocks. Unable to leave this place, I built a cottage here. Before it stand ten tall pines and a thousand tapering bamboos. With green creepers I fenced my garden; with white stones I made bridge and path. Flowing waters encircle my home; flying spray falls between the eaves. Red pomegranate and white lotus cluster on the steps of the pond. All is after this pattern, though I cannot here name each delight. Whenever I come here alone, I am moved to prolong my stay to ten days; for of the things that have all my life most pleased me, not one is missing. So that not only do I forget to go back, but would gladly end my days here. This is my third consolation."
+    },
+    {
+      "id": "s2-108",
+      "sceneId": "s2",
+      "text": "Remembering that not having had news of me for so long, you might be in some anxiety with regard to me, I have hastened to set your mind at rest by recording these three consolations. What else I have to tell shall be set out in due order, as follows....[7]"
+    },
+    {
+      "id": "s2-109",
+      "sceneId": "s2",
+      "text": "Wei-chih, Wei-chih! The night I wrote this letter I was sitting at the mountain-window of my thatched hut. I let my brush run as my hand willed and wrote at hazard as my thoughts came. When I folded it and addressed it, I found that dawn had come. I raised my head and saw only a few mountain-priests, some sitting, some sleeping. I heard the mournful cries of mountain apes and the sad twitterings of valley birds. O friend of all my life, parted from me by a thousand leagues, at such times as this “dim thoughts of the World”[8] creep upon me for a while; so, following my ancient custom, I send you these three couplets:"
+    },
+    {
+      "id": "s2-110",
+      "sceneId": "s2",
+      "text": "*I remember how once I wrote you a letter sitting in the Palace at night, At the back of the Hall of Golden Bells, when dawn was coming in the sky. This night I fold your letter--in what place? Sitting in a cottage on Lu Shan, by the light of a late lamp. The caged bird and fettered ape are neither of them dead yet; In the world of men face to face will they ever meet again?*"
+    },
+    {
+      "id": "s2-111",
+      "sceneId": "s2",
+      "text": "O Wei-chih, Wei-chih! This night, this heart--do you know them or not? Lo-t‘ien bows his head."
+    },
+    {
+      "id": "s2-112",
+      "sceneId": "s2",
+      "text": "[1] Other name of Po Chü-i."
+    },
+    {
+      "id": "s2-113",
+      "sceneId": "s2",
+      "text": "[2] Other name of Yüan Chēn."
+    },
+    {
+      "id": "s2-114",
+      "sceneId": "s2",
+      "text": "[3] The extreme North and South of China."
+    },
+    {
+      "id": "s2-115",
+      "sceneId": "s2",
+      "text": "[4] A poet, several of whose short poems are well-known."
+    },
+    {
+      "id": "s2-116",
+      "sceneId": "s2",
+      "text": "[5] The son of Po Chü-i‘s uncle Po Ch‘i-k‘ang."
+    },
+    {
+      "id": "s2-117",
+      "sceneId": "s2",
+      "text": "[6] A famous mountain near Kiu-kiang."
+    },
+    {
+      "id": "s2-118",
+      "sceneId": "s2",
+      "text": "[7] What followed is omitted in the printed text."
+    },
+    {
+      "id": "s2-119",
+      "sceneId": "s2",
+      "text": "[8] This expression is used by Yüan Chēn in a poem addressed to Po Chü-i. By “the World,” he means their life together at Court."
+    },
+    {
+      "id": "s2-120",
+      "sceneId": "s2",
+      "text": "[34] Hearing the Early Oriole"
+    },
+    {
+      "id": "s2-121",
+      "sceneId": "s2",
+      "text": "[*Written in exile*]"
+    },
+    {
+      "id": "s2-122",
+      "sceneId": "s2",
+      "text": "When the sun rose I was still lying in bed; An early oriole sang on the roof of my house. For a moment I thought of the Royal Park at dawn When the Birds of Spring greeted their Lord from his trees. I remembered the days when I served before the Throne Pencil in hand, on duty at the Ch‘ēng-ming;[1] At the height of spring, when I paused an instant from work, Morning and evening, was *this* the voice I heard? Now in my exile the oriole sings again In the dreary stillness of Hsün-yang town ... The bird’s note cannot really have changed; All the difference lies in the listener’s heart. If he could but forget that he lives at the World’s end, The bird would sing as it sang in the Palace of old."
+    },
+    {
+      "id": "s2-123",
+      "sceneId": "s2",
+      "text": "[1] Name of a palace at Ch‘ang-an."
+    },
+    {
+      "id": "s2-124",
+      "sceneId": "s2",
+      "text": "[35] Dreaming That I Went with Lu and Yu to Visit Yüan Chēn"
+    },
+    {
+      "id": "s2-125",
+      "sceneId": "s2",
+      "text": "[*Written in exile*]"
+    },
+    {
+      "id": "s2-126",
+      "sceneId": "s2",
+      "text": "At night I dreamt I was back in Ch‘ang-an; I saw again the faces of old friends. And in my dreams, under an April sky, They led me by the hand to wander in the spring winds. Together we came to the village of Peace and Quiet; We stopped our horses at the gate of Yüan Chēn. Yüan Chēn was sitting all alone; When he saw me coming, a smile came to his face. He pointed back at the flowers in the western court; Then opened wine in the northern summer-house. He seemed to be saying that neither of us had changed; He seemed to be regretting that joy will not stay; That our souls had met only for a little while, To part again with hardly time for greeting. I woke up and thought him still at my side; I put out my hand; there was nothing there at all."
+    },
+    {
+      "id": "s2-127",
+      "sceneId": "s2",
+      "text": "[36] the Fifteenth Volume"
+    },
+    {
+      "id": "s2-128",
+      "sceneId": "s2",
+      "text": "[*Having completed the fifteenth volume of his works, the poet sends it to his friends Yüan Chēn and Li Chien, with a jesting poem.*]"
+    },
+    {
+      "id": "s2-129",
+      "sceneId": "s2",
+      "text": "[*Written in 818*]"
+    },
+    {
+      "id": "s2-130",
+      "sceneId": "s2",
+      "text": "My long poem, the “Eternal Grief,”[1] is a beautiful and moving work; My ten “Songs of Shensi” are models of tunefulness. I cannot prevent Old Yüan from stealing my best rhymes; But I earnestly beg Little Li to respect my ballads and songs. While I am alive riches and honour will never fall to my lot; But well I know that after I am dead the fame of my books will live. This random talk and foolish boasting forgive me, for to-day I have added Volume Fifteen to the row that stands to my name."
+    },
+    {
+      "id": "s2-131",
+      "sceneId": "s2",
+      "text": "[1] See Giles, “Chinese Literature,” p. 169."
+    },
+    {
+      "id": "s2-132",
+      "sceneId": "s2",
+      "text": "[37] Invitation to Hsiao Chü-Shih[1]"
+    },
+    {
+      "id": "s2-133",
+      "sceneId": "s2",
+      "text": "[*Written when Governor of Chung-Chou*]"
+    },
+    {
+      "id": "s2-134",
+      "sceneId": "s2",
+      "text": "Within the Gorges there is no lack of men; They are people one meets, not people one cares for. At my front door guests also arrive; They are people one sits with, not people one knows. When I look up, there are only clouds and trees; When I look down--only my wife and child. I sleep, eat, get up or sit still; Apart from that, nothing happens at all. But beyond the city Hsiao the hermit dwells; And with *him* at least I find myself at ease. For *he* can drink a full flagon of wine And is good at reciting long-line poems. Some afternoon, when the clerks have all gone home, At a season when the path by the river bank is dry, I beg you, take up your staff of bamboo-wood And find your way to the parlour of the Government House."
+    },
+    {
+      "id": "s2-135",
+      "sceneId": "s2",
+      "text": "[1] Nos. 37, 38, 39, and 40 were written when the poet was Governor of a remote part of Ssechuan,--in the extreme west of China."
+    },
+    {
+      "id": "s2-136",
+      "sceneId": "s2",
+      "text": "[38] TO LI Chien"
+    },
+    {
+      "id": "s2-137",
+      "sceneId": "s2",
+      "text": "[*A.D. 818*]"
+    },
+    {
+      "id": "s2-138",
+      "sceneId": "s2",
+      "text": "The province I govern is humble and remote; Yet our festivals follow the Courtly Calendar. At rise of day we sacrificed to the Wind God, When darkly, darkly, dawn glimmered in the sky. Officers followed, horsemen led the way; They brought us out to the wastes beyond the town, Where river mists fall heavier than rain, And the fires on the hill leap higher than the stars."
+    },
+    {
+      "id": "s2-139",
+      "sceneId": "s2",
+      "text": "Suddenly I remembered the early levees at Court When you and I galloped to the Purple Yard. As we walked our horses up Dragon Tail Street We turned our heads and gazed at the Southern Hills. Since we parted, both of us have been growing old; And our minds have been vexed by many anxious cares. Yet even now I fancy my ears are full Of the sound of jade tinkling on your bridle-straps."
+    },
+    {
+      "id": "s2-140",
+      "sceneId": "s2",
+      "text": "[39] the Spring River"
+    },
+    {
+      "id": "s2-141",
+      "sceneId": "s2",
+      "text": "[*A.D. 820*]"
+    },
+    {
+      "id": "s2-142",
+      "sceneId": "s2",
+      "text": "Heat and cold, dusk and dawn have crowded one upon the other; Suddenly I find it is two years since I came to Chung-chou. Through my closed doors I hear nothing but the morning and evening drum; From my upper windows all I see is the ships that come and go.[1] In vain the orioles tempt me with their song to stray beneath the flowering trees; In vain the grasses lure me by their colour to sit beside the pond. There is one thing and one alone I never tire of watching-- The spring river as it trickles over the stones and babbles past the rocks."
+    },
+    {
+      "id": "s2-143",
+      "sceneId": "s2",
+      "text": "[1] “The Emperor Saga of Japan [reigned A.D. 810-23] one day quoted to his Minister, Ono no Takamura, the couplet:"
+    },
+    {
+      "id": "s2-144",
+      "sceneId": "s2",
+      "text": "‘Through my closed doors I hear nothing but the morning and evening drum; From my upper windows in the distance I see ships that come and go.’"
+    },
+    {
+      "id": "s2-145",
+      "sceneId": "s2",
+      "text": "Takamura, thinking these were the Emperor’s own verses, said: ‘If I may venture to criticize an august composition, I would suggest that the phrase “in the distance” be altered.’ The Emperor was delighted, for he had purposely changed ‘all I see’ to ‘in the distance I see.’ At that time there was only one copy of Po Chü-i’s poems in Japan and the Emperor, to whom it belonged, had allowed no one to see it.”--From the *Kōdanshō* [twelfth century]."
+    },
+    {
+      "id": "s2-146",
+      "sceneId": "s2",
+      "text": "[40] After Collecting the Autumn Taxes"
+    },
+    {
+      "id": "s2-147",
+      "sceneId": "s2",
+      "text": "From my high castle I look at the town below Where the natives of Pa cluster like a swarm of flies. How can I govern these people and lead them aright? I cannot even understand what they say. But at least I am glad, now that the taxes are in, To learn that in my province there is no discontent. I fear its prosperity is not due to me And was only caused by the year’s abundant crops, The papers that lie on my desk are simple and few; My house by the moat is leisurely and still. In the autumn rain the berries fall from the eaves; At the evening bell the birds return to the wood. A broken sunlight quavers over the southern porch Where I lie on my couch abandoned to idleness."
+    },
+    {
+      "id": "s2-148",
+      "sceneId": "s2",
+      "text": "[41] Lodging with the Old Man of the Stream"
+    },
+    {
+      "id": "s2-149",
+      "sceneId": "s2",
+      "text": "[*A.D. 820*]"
+    },
+    {
+      "id": "s2-150",
+      "sceneId": "s2",
+      "text": "Men’s hearts love gold and jade; Men’s mouths covet wine and flesh. Not so the old man of the stream; He drinks from his gourd and asks nothing more. South of the stream he cuts firewood and grass; North of the stream he has built wall and roof. Yearly he sows a single acre of land; In spring he drives two yellow calves. In these things he finds great repose; Beyond these he has no wish or care. By chance I met him walking by the water-side; He took me home and lodged me in his thatched hut. When I parted from him, to seek market and Court, This old man asked my rank and pay. Doubting my tale, he laughed loud and long: “Privy Councillors do not sleep in barns.”"
+    },
+    {
+      "id": "s2-151",
+      "sceneId": "s2",
+      "text": "[42] to His Brother Hsing-Chien"
+    },
+    {
+      "id": "s2-152",
+      "sceneId": "s2",
+      "text": "[*A.D. 820*]"
+    },
+    {
+      "id": "s2-153",
+      "sceneId": "s2",
+      "text": "Can the single cup of wine We drank this morning have made my heart so glad? This is a joy that comes only from within, Which those who witness will never understand. I have but two brothers And bitterly grieved that both were far away; This Spring, back through the Gorges of Pa, I have come to them safely, ten thousand leagues. Two sisters I had Who had put up their hair, but not twined the sash;[1] Yesterday both were married and taken away By good husbands in whom I may well trust. I am freed at last from the thoughts that made me grieve, As though a sword had cut a rope from my neck. And limbs grow light when the heart sheds its care: Suddenly I seem to be flying up to the sky!"
+    },
+    {
+      "id": "s2-154",
+      "sceneId": "s2",
+      "text": "Hsing-chien, drink your cup of wine Then set it down and listen to what I say. Do not sigh that your home is far away; Do not mind if your salary is small. Only pray that as long as life lasts, You and I may never be forced to part."
+    },
+    {
+      "id": "s2-155",
+      "sceneId": "s2",
+      "text": "[1] I.e., got married."
+    },
+    {
+      "id": "s2-156",
+      "sceneId": "s2",
+      "text": "[43] the Pine-Trees in the Courtyard"
+    },
+    {
+      "id": "s2-157",
+      "sceneId": "s2",
+      "text": "[*A.D. 820*]"
+    },
+    {
+      "id": "s2-158",
+      "sceneId": "s2",
+      "text": "Below the hall The pine-trees grow in front of the steps, Irregularly scattered,--not in ordered lines. Some are tall and some are low: The tallest of them is six roods high; The lowest but ten feet. They are like wild things And no one knows who planted them. They touch the walls of my blue-tiled house; Their roots are sunk in the terrace of white sand. Morning and evening they are visited by the wind and moon; Rain or fine,--they are free from dust and mud. In the gales of autumn they whisper a vague tune; From the suns of summer they yield a cool shade. At the height of spring the fine evening rain Fills their leaves with a load of hanging pearls. At the year’s end the time of great snow Stamps their branches with a fret of glittering jade. Of the Four Seasons each has its own mood; Among all the trees none is like another. Last year, when they heard I had bought this house, Neighbours mocked and the World called me mad-- That a whole family of twice ten souls Should move house for the sake of a few pines! Now that I have come to them, what have they given me? They have only loosened the buckles of my care. Yet even so, they are “profitable friends,”[1] And fill my need of “converse with wise men.” Yet when I consider how, still a man of the world, In belt and cap I scurry through dirt and dust, From time to time my heart twinges with shame That I am not fit to be master of my pines!"
+    },
+    {
+      "id": "s2-159",
+      "sceneId": "s2",
+      "text": "[1] See “Analects of Confucius” 4 and 5, where three kinds of “profitable friends” and three kinds of “profitable pleasures” are described; the third of the latter being “plenty of intelligent companions.”"
+    },
+    {
+      "id": "s2-160",
+      "sceneId": "s2",
+      "text": "[44] Sleeping on Horseback"
+    },
+    {
+      "id": "s2-161",
+      "sceneId": "s2",
+      "text": "[*A.D. 822*]"
+    },
+    {
+      "id": "s2-162",
+      "sceneId": "s2",
+      "text": "We had rode long and were still far from the inn; My eyes grew dim; for a moment I fell asleep. Under my right arm the whip still dangled; In my left hand the reins for an instant slackened. Suddenly I woke and turned to question my groom: “We have gone a hundred paces since you fell asleep.” Body and spirit for a while had exchanged place; Swift and slow had turned to their contraries. For these few steps that my horse had carried me Had taken in my dream countless aeons of time! True indeed is that saying of Wise Men “A hundred years are but a moment of sleep.”"
+    },
+    {
+      "id": "s2-163",
+      "sceneId": "s2",
+      "text": "[45] Parting from the Winter Stove"
+    },
+    {
+      "id": "s2-164",
+      "sceneId": "s2",
+      "text": "[*A.D. 822*]"
+    },
+    {
+      "id": "s2-165",
+      "sceneId": "s2",
+      "text": "On the fifth day after the rise of Spring, Everywhere the season’s gracious altitudes! The white sun gradually lengthening its course, The blue-grey clouds hanging as though they would fall; The last icicle breaking into splinters of jade; The new stems marshalling red sprouts. The things I meet are all full of gladness; It is not only *I* who love the Spring. To welcome the flowers I stand in the back garden; To enjoy the sunlight I sit under the front eaves. Yet still in my heart there lingers one regret; Soon I shall part with the flame of my red stove!"
+    },
+    {
+      "id": "s2-166",
+      "sceneId": "s2",
+      "text": "[46] Good-Bye to the People of Hangchow"
+    },
+    {
+      "id": "s2-167",
+      "sceneId": "s2",
+      "text": "[*A.D. 824*]"
+    },
+    {
+      "id": "s2-168",
+      "sceneId": "s2",
+      "text": "Elders and officers line the returning road; Wine and soup load the parting table. I have not ruled you with the wisdom of Shao Kung;[1] What is the reason your tears should fall so fast? My taxes were heavy, though many of the people were poor; The farmers were hungry, for often their fields were dry. All I did was to dam the water of the Lake[2] And help a little in a year when things were bad."
+    },
+    {
+      "id": "s2-169",
+      "sceneId": "s2",
+      "text": "[1] A legendary ruler who dispensed justice sitting under a wild pear-tree."
+    },
+    {
+      "id": "s2-170",
+      "sceneId": "s2",
+      "text": "[2] Po Chü-i built the dam on the Western Lake which is still known as “Po’s dam.”"
+    },
+    {
+      "id": "s2-171",
+      "sceneId": "s2",
+      "text": "[47] Written When Governor of Soochow"
+    },
+    {
+      "id": "s2-172",
+      "sceneId": "s2",
+      "text": "[*A.D. 825*]"
+    },
+    {
+      "id": "s2-173",
+      "sceneId": "s2",
+      "text": "A Government building, not my own home. A Government garden, not my own trees. But at Lo-yang I have a small house And on Wei River I have built a thatched hut. I am free from the ties of marrying and giving in marriage; If I choose to retire, I have somewhere to end my days. And though I have lingered long beyond my time, To retire now would be better than not at all!"
+    },
+    {
+      "id": "s2-174",
+      "sceneId": "s2",
+      "text": "[48] Getting Up Early on a Spring Morning"
+    },
+    {
+      "id": "s2-175",
+      "sceneId": "s2",
+      "text": "[*Part of a poem written when Governor of Soochow in 825*]"
+    },
+    {
+      "id": "s2-176",
+      "sceneId": "s2",
+      "text": "The early light of the rising sun shines on the beams of my house; The first banging of opened doors echoes like the roll of a drum. The dog lies curled on the stone step, for the earth is wet with dew; The birds come near to the window and chatter, telling that the day is fine. With the lingering fumes of yesterday’s wine my head is still heavy; With new doffing of winter clothes my body has grown light."
+    },
+    {
+      "id": "s2-177",
+      "sceneId": "s2",
+      "text": "[49] Losing a Slave-Girl"
+    },
+    {
+      "id": "s2-178",
+      "sceneId": "s2",
+      "text": "[*Date uncertain*]"
+    },
+    {
+      "id": "s2-179",
+      "sceneId": "s2",
+      "text": "Around my garden the little wall is low; In the bailiff’s lodge the lists are seldom checked. I am ashamed to think we were not always kind; I regret your labours, that will never be repaid. The caged bird owes no allegiance; The wind-tossed flower does not cling to the tree."
+    },
+    {
+      "id": "s2-180",
+      "sceneId": "s2",
+      "text": "Where to-night she lies none can give us news; Nor any knows, save the bright watching moon."
+    },
+    {
+      "id": "s2-181",
+      "sceneId": "s2",
+      "text": "[50] the Grand Houses at Lo-Yang"
+    },
+    {
+      "id": "s2-182",
+      "sceneId": "s2",
+      "text": "[*Circa A.D. 829*]"
+    },
+    {
+      "id": "s2-183",
+      "sceneId": "s2",
+      "text": "By woods and water, whose houses are these With high gates and wide-stretching lands? From their blue gables gilded fishes hang; By their red pillars carven coursers run. Their spring arbours, warm with caged mist; Their autumn yards with locked moonlight cold. To the stem of the pine-tree amber beads cling; The bamboo-branches ooze ruby-drops. Of lake and terrace who may the masters be? Staff-officers, Councillors-of-State. All their lives they have never come to see, But know their houses only from the bailiff’s map!"
+    },
+    {
+      "id": "s2-184",
+      "sceneId": "s2",
+      "text": "[51] THE Cranes"
+    },
+    {
+      "id": "s2-185",
+      "sceneId": "s2",
+      "text": "[*A.D. 830*]"
+    },
+    {
+      "id": "s2-186",
+      "sceneId": "s2",
+      "text": "The western wind has blown but a few days; Yet the first leaf already flies from the bough. On the drying paths I walk in my thin shoes; In the first cold I have donned my quilted coat. Through shallow ditches the floods are clearing away; Through sparse bamboos trickles a slanting light. In the early dusk, down an alley of green moss, The garden-boy is leading the cranes home."
+    },
+    {
+      "id": "s2-187",
+      "sceneId": "s2",
+      "text": "[52] ON HIS Baldness"
+    },
+    {
+      "id": "s2-188",
+      "sceneId": "s2",
+      "text": "[*A.D. 832*]"
+    },
+    {
+      "id": "s2-189",
+      "sceneId": "s2",
+      "text": "At dawn I sighed to see my hairs fall; At dusk I sighed to see my hairs fall. For I dreaded the time when the last lock should go ... They are all gone and I do not mind at all! I have done with that cumbrous washing and getting dry; My tiresome comb for ever is laid aside. Best of all, when the weather is hot and wet, To have no top-knot weighing down on one’s head! I put aside my dusty conical cap; And loose my collar-fringe. In a silver jar I have stored a cold stream; On my bald pate I trickle a ladle-full. Like one baptized with the Water of Buddha’s Law, I sit and receive this cool, cleansing joy. *Now* I know why the priest who seeks Repose Frees his heart by first shaving his head."
+    },
+    {
+      "id": "s2-190",
+      "sceneId": "s2",
+      "text": "[53] Thinking of the Past"
+    },
+    {
+      "id": "s2-191",
+      "sceneId": "s2",
+      "text": "[*A.D. 833*]"
+    },
+    {
+      "id": "s2-192",
+      "sceneId": "s2",
+      "text": "In an idle hour I thought of former days; And former friends seemed to be standing in the room. And then I wondered “Where are they now?” Like fallen leaves they have tumbled to the Nether Springs. Han Yü[1] swallowed his sulphur pills, Yet a single illness carried him straight to the grave. Yüan Chēn smelted autumn stone[2] But before he was old, his strength crumbled away. Master Tu possessed the “Secret of Health”: All day long he fasted from meat and spice. The Lord Ts‘ui, trusting a strong drug, Through the whole winter wore his summer coat. Yet some by illness and some by sudden death ... All vanished ere their middle years were passed."
+    },
+    {
+      "id": "s2-193",
+      "sceneId": "s2",
+      "text": "Only I, who have never dieted myself Have thus protracted a tedious span of age, I who in young days Yielded lightly to every lust and greed; Whose palate craved only for the richest meat And knew nothing of bismuth or calomel. When hunger came, I gulped steaming food; When thirst came, I drank from the frozen stream. With verse I served the spirits of my Five Guts;[3] With wine I watered the three Vital Spots. Day by day joining the broken clod I have lived till now almost sound and whole. There is no gap in my two rows of teeth; Limbs and body still serve me well. Already I have opened the seventh book of years; Yet I eat my fill and sleep quietly; I drink, while I may, the wine that lies in my cup, And all else commit to Heaven’s care."
+    },
+    {
+      "id": "s2-194",
+      "sceneId": "s2",
+      "text": "[1] The famous poet, d. 824 A.D."
+    },
+    {
+      "id": "s2-195",
+      "sceneId": "s2",
+      "text": "[2] Carbamide crystals."
+    },
+    {
+      "id": "s2-196",
+      "sceneId": "s2",
+      "text": "[3] Heart, liver, stomach, lungs and kidney."
+    },
+    {
+      "id": "s2-197",
+      "sceneId": "s2",
+      "text": "[54] a Mad Poem Addressed to My Nephews and Nieces"
+    },
+    {
+      "id": "s2-198",
+      "sceneId": "s2",
+      "text": "[*A.D. 835*]"
+    },
+    {
+      "id": "s2-199",
+      "sceneId": "s2",
+      "text": "The World cheats those who cannot read; *I*, happily, have mastered script and pen. The World cheats those who hold no office; *I* am blessed with high official rank. The old are often ill; *I*, at this day have not an ache or pain. They are often burdened with ties; But *I* have finished with marriage and giving in marriage. No changes happen to disturb the quiet of my mind; No business comes to impair the vigour of my limbs. Hence it is that now for ten years Body and soul have rested in hermit peace. And all the more, in the last lingering years What I shall need are very few things. A single rug to warm me through the winter; One meal to last me the whole day. It does not matter that my house is rather small; One cannot sleep in more than one room! It does not matter that I have not many horses; One cannot ride in two coaches at once! As fortunate as me among the people of the world Possibly one would find seven out of ten. As contented as me among a hundred men Look as you may, you will not find one. In the affairs of others even fools are wise; In their own business even sages err. To no one else would I dare to speak my heart, So my wild words are addressed to my nephews and nieces."
+    },
+    {
+      "id": "s2-200",
+      "sceneId": "s2",
+      "text": "[55] OLD AGE"
+    },
+    {
+      "id": "s2-201",
+      "sceneId": "s2",
+      "text": "[*Addressed to Liu Yü-hsi, who was born in the same year*]"
+    },
+    {
+      "id": "s2-202",
+      "sceneId": "s2",
+      "text": "[*A.D. 835*]"
+    },
+    {
+      "id": "s2-203",
+      "sceneId": "s2",
+      "text": "We are growing old together, you and I, Let us ask ourselves, what is age like? The dull eye is closed ere night comes; The idle head, still uncombed at noon. Propped on a staff, sometimes a walk abroad; Or all day sitting with closed doors. One dares not look in the mirror’s polished face; One cannot read small-letter books. Deeper and deeper, one’s love of old friends; Fewer and fewer, one’s dealings with young men. One thing only, the pleasure of idle talk, Is great as ever, when you and I meet."
+    },
+    {
+      "id": "s2-204",
+      "sceneId": "s2",
+      "text": "[56] to a Talkative Guest"
+    },
+    {
+      "id": "s2-205",
+      "sceneId": "s2",
+      "text": "[*A.D. 836*]"
+    },
+    {
+      "id": "s2-206",
+      "sceneId": "s2",
+      "text": "The town visitor’s easy talk flows in an endless stream; The country host’s quiet thoughts ramble timidly on. “I beg you, Sir, do not tell me about things at Ch‘ang-an; For you entered just when my harp was tuned and lying balanced on my knees.”"
+    },
+    {
+      "id": "s2-207",
+      "sceneId": "s2",
+      "text": "[57] TO LIU YU-HSI"
+    },
+    {
+      "id": "s2-208",
+      "sceneId": "s2",
+      "text": "[*A.D. 838*]"
+    },
+    {
+      "id": "s2-209",
+      "sceneId": "s2",
+      "text": "In length of days and soundness of limb you and I are one; Our eyes are not wholly blind, nor our ears quite deaf. Deep drinking we lie together, fellows of a spring day; Or gay-hearted boldly break into gatherings of young men. When, seeking flowers, we borrowed his horse, the river-keeper was vexed; When, to play on the water, we stole his boat, the Duke Ling was sore. I hear it said that in Lo-yang, people are all shocked, And call us by the name of “Liu and Po, those two mad old men.”"
+    },
+    {
+      "id": "s2-210",
+      "sceneId": "s2",
+      "text": "[58] My Servant Wakes Me"
+    },
+    {
+      "id": "s2-211",
+      "sceneId": "s2",
+      "text": "[*A.D. 839*]"
+    },
+    {
+      "id": "s2-212",
+      "sceneId": "s2",
+      "text": "My servant wakes me: “Master, it is broad day. Rise from bed; I bring you bowl and comb. Winter comes and the morning air is chill; To-day your Honour must not venture abroad.” When I stay at home, no one comes to call; What must I do with the long, idle hours? Setting my chair where a faint sunshine falls I have warmed wine and opened my poetry-books."
+    },
+    {
+      "id": "s2-213",
+      "sceneId": "s2",
+      "text": "[59] Since I LAY ILL"
+    },
+    {
+      "id": "s2-214",
+      "sceneId": "s2",
+      "text": "[*A.D. 840*]"
+    },
+    {
+      "id": "s2-215",
+      "sceneId": "s2",
+      "text": "Since I lay ill, how long has passed? Almost a hundred heavy-hanging days. The maids have learnt to gather my medicine-herbs; The dog no longer barks when the doctor comes. The jars in my cellar are plastered deep with mould; My singer’s carpets are half crumbled to dust. How can I bear, when the Earth renews her light, To watch from a pillow the beauty of Spring unfold?"
+    },
+    {
+      "id": "s2-216",
+      "sceneId": "s2",
+      "text": "[60] Song OF Past Feelings [With Preface]"
+    },
+    {
+      "id": "s2-217",
+      "sceneId": "s2",
+      "text": "[*Circa A.D. 840*]"
+    },
+    {
+      "id": "s2-218",
+      "sceneId": "s2",
+      "text": "When Lo-t‘ien[1] was old, he fell ill of a palsy. So he made a list of his possessions and examined his expenses, that he might reject whatever had become superfluous. He had in his employ a girl about twenty years old called Fan Su, whose postures delighted him when she sang or danced. But above all she excelled in singing the “Willow-Branch,” so that many called her by the name of this song, and she was well known by this name in the town of Lo-yang. But she was on the list of unnecessary expenses and was to be sent away."
+    },
+    {
+      "id": "s2-219",
+      "sceneId": "s2",
+      "text": "He had too a white horse with black mane, sturdy and sure-footed, which he had ridden for many years. It stood on the list of things which could be dispensed with, and was to be sold. When the groom led the horse through the gate, it tossed its head and looked back, neighing once with a sound in its voice that seemed to say: “I know I am leaving you and long to stay.” Su, when she heard the horse neigh, rose timidly, bowed before me and spoke sweetly, as shall hereafter be shown. When she had done speaking her tears fell."
+    },
+    {
+      "id": "s2-220",
+      "sceneId": "s2",
+      "text": "When first I heard Su’s words, I was too sad to speak and could not answer her. But in a little while I ordered the bridle to be turned and the sleeve reversed.[1] Then I gave her wine and drank a cup myself, and in my happiness sang a few score notes. And these notes turned into a poem, a poem without fixed measure, for the measure followed my irregular tune. In all there were 255 words."
+    },
+    {
+      "id": "s2-221",
+      "sceneId": "s2",
+      "text": "Alas! I am no Sage. I could neither forget past feelings nor show such sensibility as this beast reputed incapable of feeling! Things that happen lay hold of my heart, and when my heart is moved, I cannot control it. Therefore, smiling at myself, I called this song “A Song of Past Feelings Unforgotten.”"
+    },
+    {
+      "id": "s2-222",
+      "sceneId": "s2",
+      "text": "The Song says:"
+    },
+    {
+      "id": "s2-223",
+      "sceneId": "s2",
+      "text": "*I was selling my white horse And sending Willow Branch away. She covered her dark eyebrows; He trailed his golden halter. The horse, for want of speech, Neighed long and turned his head; And Willow Branch, twice bowing, Knelt long and spoke to me: “Master, you have ridden this horse five years, One thousand eight hundred days; Meekly he has borne the bit, Without shying, without bolting. And I have served you for ten years, Three thousand and six hundred days; Patient carrier of towel and comb,[2] Without complaint, without loss. And now, though my shape is lowly, I am still fresh and strong. And the colt is still in his prime, Without lameness or fault. Why should you not use the colt’s strength To replace your sick legs? Why should you not use my song to gladden your casual cup? Need you in one morning send both away, Send them away never to return? This is what Su would say to you before she goes, And this is what your horse meant also When he neighed at the gate. Seeing my distress, who am a woman, And hearing its cries, that is but a horse, Shall our master alone remain pitiless?”*"
+    },
+    {
+      "id": "s2-224",
+      "sceneId": "s2",
+      "text": "I looked up and sighed: I looked down and laughed. Then I said:"
+    },
+    {
+      "id": "s2-225",
+      "sceneId": "s2",
+      "text": "*“Dear horse, stop your sad cries! Sweet Su, dry your bitter tears! For you shall go back to your stall; And you to the women’s room. For though I am ill indeed, And though my years are at their close, The doom of Hsiang Chi[3] has not befallen me yet. Must I in a single day Lose the horse I rode and the lady I loved? Su, O Su! Sing once again the Song of the Willow Branch! And I will pour you wine in that golden cup And take you with me to the Land of Drunkenness.”*"
+    },
+    {
+      "id": "s2-226",
+      "sceneId": "s2",
+      "text": "[1] I.e., Po Chü-i himself."
+    },
+    {
+      "id": "s2-227",
+      "sceneId": "s2",
+      "text": "[2] I.e., performing the functions of a wife."
+    },
+    {
+      "id": "s2-228",
+      "sceneId": "s2",
+      "text": "[3] Who, surrounded at the battle of Kai-hsia (202 B.C.), gave his horse to a boatman, lest it should fall into the hands of the enemy."
+    },
+    {
+      "id": "s2-229",
+      "sceneId": "s2",
+      "text": "[61] Illness"
+    },
+    {
+      "id": "s2-230",
+      "sceneId": "s2",
+      "text": "[*Written circa 842, when he was paralyzed*]"
+    },
+    {
+      "id": "s2-231",
+      "sceneId": "s2",
+      "text": "Dear friends, there is no cause for so much sympathy. I shall certainly manage from time to time to take my walks abroad. All that matters is an active mind, what is the use of feet? By land one can ride in a carrying-chair; by water, be rowed in a boat."
+    },
+    {
+      "id": "s2-232",
+      "sceneId": "s2",
+      "text": "[62] Resignation"
+    },
+    {
+      "id": "s2-233",
+      "sceneId": "s2",
+      "text": "Keep off your thoughts from things that are past and done; For thinking of the past wakes regret and pain. Keep off your thoughts from thinking what will happen; To think of the future fills one with dismay. Better by day to sit like a sack in your chair; Better by night to lie a stone in your bed. When food comes, then open your mouth; When sleep comes, then close your eyes."
+    },
+    {
+      "id": "s2-234",
+      "sceneId": "s2",
+      "text": "YÜAN Chen"
+    },
+    {
+      "id": "s2-235",
+      "sceneId": "s2",
+      "text": "[*A.D. 799-831*]"
+    },
+    {
+      "id": "s2-236",
+      "sceneId": "s2",
+      "text": "[63] the Story of Ts‘Ui Ying-Ying"
+    },
+    {
+      "id": "s2-237",
+      "sceneId": "s2",
+      "text": "During the Chēng-Yüan[1] period of the T‘ang dynasty there lived a man called Chang.[2] His nature was gentle and refined, and his person of great beauty. But his deeper feelings were resolutely held in restraint, and he would indulge in no license. Sometimes his friends took him to a party and he would try to join their frolics; but when the rest were shouting and scuffling their hardest, Chang only pretended to take his share. For he could never overcome his shyness. So it came about that though already twenty-three, he had not yet enjoyed a woman’s beauty. To those who questioned him he answered, “It is not such as Master Tēng-t’u[3] who are true lovers of beauty; for they are merely profligates. I consider myself a lover of beauty, who happens never to have met with it. And I am of this opinion because I know that, in other things, whatever is beautiful casts its spell upon me; so that I cannot be devoid of feeling.” His questioners only laughed."
+    },
+    {
+      "id": "s2-238",
+      "sceneId": "s2",
+      "text": "[1] A.D. 785-805."
+    },
+    {
+      "id": "s2-239",
+      "sceneId": "s2",
+      "text": "[2] I.e., Yüan Chēn himself."
+    },
+    {
+      "id": "s2-240",
+      "sceneId": "s2",
+      "text": "[3] Type of the indiscriminate lover, fourth century B.C."
+    },
+    {
+      "id": "s2-241",
+      "sceneId": "s2",
+      "text": "About this time Chang went to Puchow. Some two miles east of the town there is a temple called the P‘-u-chiu-ssŭ, and here he took up his lodging. Now it happened that at this time the widow of a certain Ts‘ui was returning to Ch‘ang-an.[4] She passed through Puchow on her way and stayed at the same temple."
+    },
+    {
+      "id": "s2-242",
+      "sceneId": "s2",
+      "text": "[4] The capital of China at that time; now called Hsi-an-fu."
+    },
+    {
+      "id": "s2-243",
+      "sceneId": "s2",
+      "text": "This lady was born of the Chēng family and Chang’s mother was also a Chēng. He unravelled their relationship and found that they were second-cousins."
+    },
+    {
+      "id": "s2-244",
+      "sceneId": "s2",
+      "text": "This year General Hun-Chan[5] died at Puchow. There was a certain Colonel Ting Wēn-ya who ill-treated his troops. The soldiers accordingly made Hun Chan’s funeral the occasion of a mutiny, and began to plunder the town. The Ts‘ui family had brought with them much valuable property and many slaves. Subjected to this sudden danger when far from home, they had no one from whom they could seek protection."
+    },
+    {
+      "id": "s2-245",
+      "sceneId": "s2",
+      "text": "[5] B. A.D. 735; d. 799. Famous for his campaigns against the Tibetans and Uighurs."
+    },
+    {
+      "id": "s2-246",
+      "sceneId": "s2",
+      "text": "Now it happened that Chang had been friendly with the political party to which the commander at Puchow belonged. At his request a guard was sent to the temple and no disorder took place there. A few days afterwards the Civil Commissioner Tu Chio was ordered by the Emperor to take over the command of the troops. The mutineers then laid down their arms."
+    },
+    {
+      "id": "s2-247",
+      "sceneId": "s2",
+      "text": "The widow Chēng was very sensible of the service which Chang had rendered. She therefore provided dainties and invited him to a banquet in the middle hall. At table she turned to him and said, “I, your cousin, a lonely and widowed relict, had young ones in my care. If we had fallen into the hands of the soldiery, I could not have helped them. Therefore the lives of my little boy and young daughter were saved by your protection, and they owe you eternal gratitude. I will now cause them to kneel before you, their merciful cousin, that they may thank you for your favours.” First she sent for her son, Huan-lang, who was about ten years old, a handsome and gentle child. Then she called to her daughter, Ying-ying: “Come and bow to your cousin. Your cousin saved your life.” For a long while she would not come, saying that she was not well. The widow grew angry and cried: “Your cousin saved your life. But for his help, you would now be a prisoner. How can you treat him so rudely?”"
+    },
+    {
+      "id": "s2-248",
+      "sceneId": "s2",
+      "text": "At last she came in, dressed in everyday clothes, with a look of deep unhappiness in her face. She had not put on any ornaments. Her hair hung down in coils, the black of her two eyebrows joined, her cheeks were not rouged. But her features were of exquisite beauty and shone with an almost dazzling lustre."
+    },
+    {
+      "id": "s2-249",
+      "sceneId": "s2",
+      "text": "Chang bowed to her, amazed. She sat down by her mother’s side and looked all the time towards her, turning from him with a fixed stare of aversion, as though she could not endure his presence."
+    },
+    {
+      "id": "s2-250",
+      "sceneId": "s2",
+      "text": "He asked how old she was. The widow answered, “She was born in the year of the present Emperor’s reign that was a year of the Rat, and now it is the year of the Dragon in the period Chēng-yüan.[6] So she must be seventeen years old.”"
+    },
+    {
+      "id": "s2-251",
+      "sceneId": "s2",
+      "text": "[6] I.e., A.D. 800."
+    },
+    {
+      "id": "s2-252",
+      "sceneId": "s2",
+      "text": "Chang tried to engage her in conversation, but she would not answer, and soon the dinner was over. He was passionately in love with her and wanted to tell her so, but could find no way."
+    },
+    {
+      "id": "s2-253",
+      "sceneId": "s2",
+      "text": "Ying-ying had a maid-servant called Hung-niang, whom Chang sometimes met and greeted. Once he stopped her and was beginning to tell her of his love for her mistress; but she was frightened and ran away. Then Chang was sorry he had not kept silence."
+    },
+    {
+      "id": "s2-254",
+      "sceneId": "s2",
+      "text": "Next day he met Hung-niang again, but was ashamed and did not say what was in his mind. But this time the maid herself broached the subject and said to Chang, “Master, I dare not tell her what you told me, or even hint at it. But since your mother was a kinswoman of the Ts‘uis, why do you not seek my mistress’s hand on that plea?”"
+    },
+    {
+      "id": "s2-255",
+      "sceneId": "s2",
+      "text": "Chang said, “Since I was a child in arms, my nature has been averse to intimacy. Sometimes I have idled with wearers of silk and gauze, but my fancy was never once detained. I little thought that in the end I should be entrapped."
+    },
+    {
+      "id": "s2-256",
+      "sceneId": "s2",
+      "text": "“Lately at the banquet I could scarcely contain myself; and since then, when I walk, I forget where I am going and when I eat, I forget to finish my meal, and do not know how to endure the hours from dawn to dusk."
+    },
+    {
+      "id": "s2-257",
+      "sceneId": "s2",
+      "text": "“If we were to get married through a matchmaker and perform the ceremonies of Sending Presents and Asking Names, it would take many months, and by that time you would have to look for me ‘in the dried-fish shop.’ What is the use of giving me such advice as that?”"
+    },
+    {
+      "id": "s2-258",
+      "sceneId": "s2",
+      "text": "The maid replied, “My mistress clings steadfastly to her chastity, and even an equal could not trip her with lewd talk. Much less may she be won through the stratagems of a maid-servant. But she is skilled in composition, and often when she has made a poem or essay, she is restless and dissatisfied for a long while after. You must try to provoke her by a love-poem. There is no other way.”"
+    },
+    {
+      "id": "s2-259",
+      "sceneId": "s2",
+      "text": "Chang was delighted and at once composed two Spring Poems to send her. Hung-niang took them away and came back the same evening with a coloured tablet, which she gave to Chang, saying, “This is from my mistress.” It bore the title “The Bright Moon of the Fifteenth Night.” The words ran:"
+    },
+    {
+      "id": "s2-260",
+      "sceneId": "s2",
+      "text": "*To wait for the moon I am sitting in the western parlour; To greet the wind, I have left the door ajar. When a flower’s shadow stirred and brushed the wall, For a moment I thought it the shadow of a lover coming.*"
+    },
+    {
+      "id": "s2-261",
+      "sceneId": "s2",
+      "text": "Chang could not doubt her meaning. That night was the fourth after the first decade of the second month. Beside the eastern wall of Ts‘ui’s apartments there grew an apricot-tree; by climbing it one could cross the wall. On the next night (which was the night of the full moon) Chang used the tree as a ladder and crossed the wall. He went straight to the western parlour and found the door ajar. Hung-niang lay asleep on the bed. He woke her, and she cried in a voice of astonishment, “Master Chang, what are you doing here?” Chang answered, half-truly: “Ts‘ui’s letter invited me. Tell her I have come.” Hung-niang soon returned, whispering, “She is coming, she is coming.” Chang was both delighted and surprised, thinking that his salvation was indeed at hand."
+    },
+    {
+      "id": "s2-262",
+      "sceneId": "s2",
+      "text": "At last Ts‘ui entered."
+    },
+    {
+      "id": "s2-263",
+      "sceneId": "s2",
+      "text": "Her dress was sober and correct, and her face was stern. She at once began to reprimand Chang, saying, “I am grateful for the service which you rendered to my family. You gave support to my dear mother when she was at a loss how to save her little boy and young daughter. How came you to send me a wicked message by the hand of a low maid-servant? In protecting me from the license of others, you acted nobly. But now that you wish to make me a partner to your own licentious desires, you are asking me to accept one wrong in exchange for another."
+    },
+    {
+      "id": "s2-264",
+      "sceneId": "s2",
+      "text": "“How was I to repel this advance? I would gladly have hidden your letter, but it would have been immoral to harbour a record of illicit proposals. Had I shown it to my mother, I should ill have requited the debt we owe you. Were I to entrust a message of refusal to a servant or concubine, I feared it might not be truly delivered. I thought of writing a letter to tell you what I felt; but I was afraid I might not be able to make you understand. So I sent those trivial verses, that I might be sure of your coming. I have no cause to be ashamed of an irregularity which had no other object but the preservation of my chastity.”"
+    },
+    {
+      "id": "s2-265",
+      "sceneId": "s2",
+      "text": "With these words she vanished. Chang remained for a long while petrified with astonishment. At last he climbed back over the wall and went home in despair."
+    },
+    {
+      "id": "s2-266",
+      "sceneId": "s2",
+      "text": "Several nights after this he was lying asleep near the verandah, when some one suddenly woke him. He rose with a startled sigh and found that Hung-niang was there, with bedclothes under her arm and a pillow in her hand. She shook Chang, saying, “She is coming, she is coming. Why are you asleep?” Then she arranged the bedclothes and pillow and went away."
+    },
+    {
+      "id": "s2-267",
+      "sceneId": "s2",
+      "text": "Chang sat up and rubbed his eyes. For a long while he thought he must be dreaming, but he assumed a respectful attitude and waited."
+    },
+    {
+      "id": "s2-268",
+      "sceneId": "s2",
+      "text": "Suddenly Hung-niang came back, bringing her mistress with her. Ts‘ui, this time, was languid and flushed, yielding and wanton in her air, as though her strength could scarcely support her limbs. Her former severity had utterly disappeared."
+    },
+    {
+      "id": "s2-269",
+      "sceneId": "s2",
+      "text": "That night was the eighth of the second decade. The crystal beams of the sinking moon twinkled secretly across their bed. Chang, in a strange exaltation, half-believed that a fairy had come to him, and not a child of mortal men."
+    },
+    {
+      "id": "s2-270",
+      "sceneId": "s2",
+      "text": "At last the temple bell sounded, dawn glimmered in the sky and Hung-niang came back to fetch her mistress away. Ts‘ui turned on her side with a pretty cry, and followed her maid to the door."
+    },
+    {
+      "id": "s2-271",
+      "sceneId": "s2",
+      "text": "The whole night she had not spoken a word."
+    },
+    {
+      "id": "s2-272",
+      "sceneId": "s2",
+      "text": "Chang rose when it was half-dark, still thinking that perhaps it had been a dream. But when it grew light, he saw her powder on his arm and smelt her perfume in his clothes. A tear she had shed still glittered on the mattress."
+    },
+    {
+      "id": "s2-273",
+      "sceneId": "s2",
+      "text": "For more than ten days afterwards he did not see her again. During this time he began to make a poem called “Meeting a Fairy,” in thirty couplets. It was not yet finished, when he chanced to meet Hung-niang in the road. He asked her to take the poem to Ts‘ui."
+    },
+    {
+      "id": "s2-274",
+      "sceneId": "s2",
+      "text": "After this Ts‘ui let him come to her, and for a month or more he crept out at dawn and in at dusk, the two of them living together in that western parlour of which I spoke before."
+    },
+    {
+      "id": "s2-275",
+      "sceneId": "s2",
+      "text": "Chang often asked her what her mother thought of him. Ts‘ui said, “I know she would not oppose my will. So why should we not get married at once?”"
+    },
+    {
+      "id": "s2-276",
+      "sceneId": "s2",
+      "text": "Soon afterwards, Chang had to go to the capital. Before starting, he tenderly informed her of his departure. She did not reproach him, but her face showed pitiable distress. On the night before he started, he was not able to see her."
+    },
+    {
+      "id": "s2-277",
+      "sceneId": "s2",
+      "text": "After spending a few months in the west, Chang returned to Puchow and again lodged for several months in the same building as the Ts‘uis. He made many attempts to see Ying-ying alone, but she would not let him do so. Remembering that she was fond of calligraphy and verse, he frequently sent her his own compositions, but she scarcely glanced at them."
+    },
+    {
+      "id": "s2-278",
+      "sceneId": "s2",
+      "text": "It was characteristic of her that when any situation was at its acutest point, she appeared quite unconscious of it. She talked glibly, but would seldom answer a question. She expected absolute devotion, but herself gave no encouragement."
+    },
+    {
+      "id": "s2-279",
+      "sceneId": "s2",
+      "text": "Sometimes when she was in the depth of despair, she would affect all the while to be quite indifferent. It was rarely possible to know from her face whether she was pleased or sorry."
+    },
+    {
+      "id": "s2-280",
+      "sceneId": "s2",
+      "text": "One night Chang came upon her unawares when she was playing on the harp, with a touch full of passion. But when she saw him coming, she stopped playing. This incident increased his infatuation."
+    },
+    {
+      "id": "s2-281",
+      "sceneId": "s2",
+      "text": "Soon afterwards, it became time for him to compete in the Literary Examinations, and he was obliged once more to set out for the western capital."
+    },
+    {
+      "id": "s2-282",
+      "sceneId": "s2",
+      "text": "The evening before his departure, he sat in deep despondency by Ts‘ui’s side, but did not try again to tell her of his love. Nor had he told her that he was going away, but she seemed to have guessed it, and with submissive face and gentle voice, she said to him softly: “Those whom a man leads astray, he will in the end abandon. It must be so, and I will not reproach you. You deigned to corrupt me and now you deign to leave me. That is all. And your vows of ‘faithfulness till death’--they too are cancelled. There is no need for you to grieve at this parting, but since I see you so sad and can give you no other comfort--you once praised my harp-playing; but I was bashful and would not play to you. Now I am bolder, and if you choose, I will play you a tune.”"
+    },
+    {
+      "id": "s2-283",
+      "sceneId": "s2",
+      "text": "She took her harp and began the prelude to “Rainbow Skirts and Feather Jackets.”[7] But after a few bars the tune broke off into a wild and passionate dirge."
+    },
+    {
+      "id": "s2-284",
+      "sceneId": "s2",
+      "text": "[7] A gay, court tune of the eighth century."
+    },
+    {
+      "id": "s2-285",
+      "sceneId": "s2",
+      "text": "All who were present caught their breath; but in a moment she stopped playing, threw down her harp and, weeping bitterly, ran to her mother’s room."
+    },
+    {
+      "id": "s2-286",
+      "sceneId": "s2",
+      "text": "She did not come back."
+    },
+    {
+      "id": "s2-287",
+      "sceneId": "s2",
+      "text": "Next morning Chang left. The following year he failed in his examinations and could not leave the capital. So, to unburden his heart, he wrote a letter to Ts‘ui. She answered him somewhat in this fashion: “I have read your letter and cherish it dearly. It has filled my heart half with sorrow, half with joy. You sent with it a box of garlands and five sticks of paste, that I may decorate my head and colour my lips."
+    },
+    {
+      "id": "s2-288",
+      "sceneId": "s2",
+      "text": "“I thank you for your presents; but there is no one now to care how I look. Seeing these things only makes me think of you and grieve the more."
+    },
+    {
+      "id": "s2-289",
+      "sceneId": "s2",
+      "text": "“You say that you are prospering in your career at the capital, and I am comforted by that news. But it makes me fear you will never come back again to one who is so distant and humble. But *that* is settled forever, and it is no use talking of it."
+    },
+    {
+      "id": "s2-290",
+      "sceneId": "s2",
+      "text": "“Since last autumn I have lived in a dazed stupor. Amid the clamour of the daytime, I have sometimes forced myself to laugh and talk; but alone at night I have done nothing but weep. Or, if I have fallen asleep my dreams have always been full of the sorrows of parting. Often I dreamt that you came to me as you used to do, but always before the moment of our joy your phantom vanished from my side. Yet, though we are still bedfellows in my dreams, when I wake and think of it the time when we were together seems very far off. For since we parted, the old year has slipped away and a new year has begun...."
+    },
+    {
+      "id": "s2-291",
+      "sceneId": "s2",
+      "text": "“Ch‘ang-an is a city of pleasure, where there are many snares to catch a young man’s heart. How can I hope that you will not forget one so sequestered and insignificant as I? And indeed, if you were to be faithful, so worthless a creature could never requite you. But our vows of unending love--those *I* at least can fulfil."
+    },
+    {
+      "id": "s2-292",
+      "sceneId": "s2",
+      "text": "“Because you are my cousin, I met you at the feast. Lured by a maid-servant, I visited you in private. A girl’s heart is not in her own keeping. You ‘tempted me by your ballads’[8] and I could not bring myself to ‘throw the shuttle.’[9]"
+    },
+    {
+      "id": "s2-293",
+      "sceneId": "s2",
+      "text": "[8] As Ssŭ-ma tempted Cho Wēn-chün, second century B.C."
+    },
+    {
+      "id": "s2-294",
+      "sceneId": "s2",
+      "text": "[9] As the neighbour’s daughter did to Hsieh Kun (A.D. fourth century), in order to repel his advances."
+    },
+    {
+      "id": "s2-295",
+      "sceneId": "s2",
+      "text": "“Then came the sharing of pillow and mat, the time of perfect loyalty and deepest tenderness. And I, being young and foolish, thought it would never end."
+    },
+    {
+      "id": "s2-296",
+      "sceneId": "s2",
+      "text": "“Now, having ‘seen my Prince,’[10] I cannot love again; nor, branded by the shame of self-surrender, am I fit to perform ‘the service of towel and comb’;[11] and of the bitterness of the long celibacy which awaits me, what need is there to speak?"
+    },
+    {
+      "id": "s2-297",
+      "sceneId": "s2",
+      "text": "[10] Odes I. 1., X. 2."
+    },
+    {
+      "id": "s2-298",
+      "sceneId": "s2",
+      "text": "[11] = become a bride."
+    },
+    {
+      "id": "s2-299",
+      "sceneId": "s2",
+      "text": "“The good man uses his heart; and if by chance his gaze has fallen on the humble and insignificant, till the day of his death, he continues the affections of his life. The cynic cares nothing for people’s feelings. He will discard the small to follow the great, look upon a former mistress merely as an accomplice in sin, and hold that the most solemn vows are made only to be broken. He will reverse all natural laws--as though Nature should suddenly let bone dissolve, while cinnabar resisted the fire. The dew that the wind has shaken from the tree still looks for kindness from the dust; and such, too, is the sum of *my* hopes and fears."
+    },
+    {
+      "id": "s2-300",
+      "sceneId": "s2",
+      "text": "“As I write, I am shaken by sobs and cannot tell you all that is in my heart. My darling, I am sending you a jade ring that I used to play with when I was a child. I want you to wear it at your girdle, that you may become firm and flawless as this jade, and, in your affections, unbroken as the circuit of this ring."
+    },
+    {
+      "id": "s2-301",
+      "sceneId": "s2",
+      "text": "“And with it I am sending a skein of thread and a tea-trough of flecked bamboo. There is no value in these few things. I send them only to remind you to keep your heart pure as jade and your affection unending as this round ring. The bamboo is mottled as if with tears, and the thread is tangled as the thoughts of those who are in sorrow. By these tokens I seek no more than that, knowing the truth, you may think kindly of me for ever."
+    },
+    {
+      "id": "s2-302",
+      "sceneId": "s2",
+      "text": "“Our hearts are very near, but our bodies are far apart. There is no time fixed for our meeting; yet a secret longing can unite souls that are separated by a thousand miles."
+    },
+    {
+      "id": "s2-303",
+      "sceneId": "s2",
+      "text": "“Protect yourself against the cold spring wind, eat well--look after yourself in all ways and do not worry too much about your worthless handmaid,"
+    },
+    {
+      "id": "s2-304",
+      "sceneId": "s2",
+      "text": "TS‘UI Ying-Ying.”"
+    },
+    {
+      "id": "s2-305",
+      "sceneId": "s2",
+      "text": "Chang showed this letter to his friends and so the story became known to many who lived at that time. All who heard it were deeply moved; but Chang, to their disappointment, declared that he meant to break with Ts‘ui. Yüan Chēn, of Honan, who knew Chang well, asked him why he had made this decision."
+    },
+    {
+      "id": "s2-306",
+      "sceneId": "s2",
+      "text": "Chang answered:"
+    },
+    {
+      "id": "s2-307",
+      "sceneId": "s2",
+      "text": "“I have observed that in Nature whatever has perfect beauty is either itself liable to sudden transformations or else is the cause of them in others. If Ts‘ui were to marry a rich gentleman and become his pet, she would forever be changing, as the clouds change to rain, or as the scaly dragon turns into the horned dragon. I, for one, could never keep pace with her transformations."
+    },
+    {
+      "id": "s2-308",
+      "sceneId": "s2",
+      "text": "“Of old, Hsin of the Yin dynasty and Yu of the Chou dynasty ruled over kingdoms of many thousand chariots, and their strength was very great. Yet a single woman brought them to ruin, dissipating their hosts and leading these monarchs to the assassin’s knife. So that to this day they are a laughing-stock to all the world. I know that my constancy could not withstand such spells, and that is why I have curbed my passion.”"
+    },
+    {
+      "id": "s2-309",
+      "sceneId": "s2",
+      "text": "At these words all who were present sighed deeply."
+    },
+    {
+      "id": "s2-310",
+      "sceneId": "s2",
+      "text": "A few years afterwards Ts‘ui married some one else and Chang also found a wife. Happening once to pass the house where Ts‘ui was living, he called on her husband and asked to see her, saying he was her cousin. The husband sent for her, but she would not come. Chang’s vexation showed itself in his face. Some one told Ts‘ui of this and she secretly wrote the poem:"
+    },
+    {
+      "id": "s2-311",
+      "sceneId": "s2",
+      "text": "*Since I have grown so lean, my face has lost its beauty. I have tossed and turned so many times that I am too tired to leave my bed. It is not that I mind the others seeing How ugly I have grown; It is *you* who have caused me to lose my beauty, Yet it is *you* I am ashamed should see me!*"
+    },
+    {
+      "id": "s2-312",
+      "sceneId": "s2",
+      "text": "Chang went away without meeting her, and a few days afterwards, when he was leaving the town, wrote a poem of final farewell, which said:"
+    },
+    {
+      "id": "s2-313",
+      "sceneId": "s2",
+      "text": "*You cannot say that you are abandoned and deserted; For you have found some one to love you. Why do you not convert your broodings over the past Into kindness to your present husband?*"
+    },
+    {
+      "id": "s2-314",
+      "sceneId": "s2",
+      "text": "After that they never heard of one another again. Many of Chang’s contemporaries praised the skill with which he extricated himself from this entanglement."
+    },
+    {
+      "id": "s2-315",
+      "sceneId": "s2",
+      "text": "[64] THE Pitcher"
+    },
+    {
+      "id": "s2-316",
+      "sceneId": "s2",
+      "text": "[*A.D. 779-831*]"
+    },
+    {
+      "id": "s2-317",
+      "sceneId": "s2",
+      "text": "I dreamt I climbed to a high, high plain; And on the plain I found a deep well. My throat was dry with climbing and I longed to drink; And my eyes were eager to look into the cool shaft. I walked round it; I looked right down; I saw my image mirrored on the face of the pool. An earthen pitcher was sinking into the black depths; There was no rope to pull it to the well-head. I was strangely troubled lest the pitcher should be lost, And started wildly running to look for help. From village to village I scoured that high plain; The men were gone: the dogs leapt at my throat. I came back and walked weeping round the well; Faster and faster the blinding tears flowed-- Till my own sobbing suddenly woke me up; My room was silent; no one in the house stirred; The flame of my candle flickered with a green smoke; The tears I had shed glittered in the candle-light. A bell sounded; I knew it was the midnight-chime; I sat up in bed and tried to arrange my thoughts: The plain in my dream was the graveyard at Ch‘ang-an, Those hundred acres of untilled land. The soil heavy and the mounds heaped high; And the dead below them laid in deep troughs. Deep are the troughs, yet sometimes dead men Find their way to the world above the grave. And to-night my love who died long ago Came into my dream as the pitcher sunk in the well. That was why the tears suddenly streamed from my eyes, Streamed from my eyes and fell on the collar of my dress."
+    },
+    {
+      "id": "s2-318",
+      "sceneId": "s2",
+      "text": "PO Hsing-Chien"
+    },
+    {
+      "id": "s2-319",
+      "sceneId": "s2",
+      "text": "[*A.D. 799-831*]"
+    },
+    {
+      "id": "s2-320",
+      "sceneId": "s2",
+      "text": "[*Brother* of Po-Chü-i]"
+    },
+    {
+      "id": "s2-321",
+      "sceneId": "s2",
+      "text": "[65] the Story of Miss Li"
+    },
+    {
+      "id": "s2-322",
+      "sceneId": "s2",
+      "text": "Miss Li, ennobled with the title “Lady of Ch‘ien-kuo,” was once a prostitute in Ch‘ang-an. The devotion of her conduct was so remarkable that I have thought it worth while to record her story. In the T‘ien-pao era[1] there was a certain nobleman, Governor of Ch‘ang-chou and Lord of Jung-yang, whose name and surname I will omit. He was a man of great wealth and highly esteemed by all. He had passed his fiftieth year and had a son who was close on twenty, a boy who in literary talent outstripped all his companions. His father was proud of him and had great hopes of his future. “This,” he would say, “is the ‘thousand-league colt’ of our family.” When the time came for the lad to compete at the Provincial Examinations, his father gave him fine clothes and a handsome coach with richly caparisoned horses for the journey; and to provide for his expense at the Capital, he gave him a large sum of money, saying, “I am sure that your talent is such that you will succeed at the first attempt; but I am giving you two years’ supply, that you may pursue your career free from all anxiety.” The young man was also quite confident and saw himself getting the first place as clearly as he saw the palm of his own hand."
+    },
+    {
+      "id": "s2-323",
+      "sceneId": "s2",
+      "text": "[1] A.D. 742-56."
+    },
+    {
+      "id": "s2-324",
+      "sceneId": "s2",
+      "text": "Starting from P‘i-ling[2] he reached Ch‘ang-an in a few weeks and took a house in the Pu-chēng quarter. One day he was coming back from a visit to the Eastern Market. He entered the City by the eastern gate of P‘ing-k‘ang and was going to visit a friend who lived in the south-western part of the town. When he reached the Ming-k‘o Bend, he saw a house of which the gate and courtyard were rather narrow; but the house itself was stately and stood well back from the road. One of the double doors was open, and at it stood a lady, attended by her maid-servant. She was of exquisite, bewitching beauty, such as the world has seldom produced."
+    },
+    {
+      "id": "s2-325",
+      "sceneId": "s2",
+      "text": "[2] In Kiang-su, near Ch‘ang-chou."
+    },
+    {
+      "id": "s2-326",
+      "sceneId": "s2",
+      "text": "When he saw her, the young man unconsciously reined in his horse and hesitated. Unable to leave the spot, he purposely let his whip fall to the ground and waited for his servant to pick it up, all the time staring at the lady in the doorway. She too was staring and met his gaze with a look that seemed to be an answer to his admiration. But in the end he went away without daring to speak to her."
+    },
+    {
+      "id": "s2-327",
+      "sceneId": "s2",
+      "text": "But he could not put the thought of her out of his mind and secretly begged those of his friends who were most expert in the pleasures of Ch‘ang-an to tell him what they knew of the girl. He learnt from them that the house belonged to a low and unprincipled woman named Li. When he asked what chance he had of winning the daughter, they answered: “The woman Li is possessed of considerable property, for her previous dealings have been with wealthy and aristocratic families, from whom she has received enormous sums. Unless you are willing to spend many thousand pounds, the daughter will have nothing to do with you.”"
+    },
+    {
+      "id": "s2-328",
+      "sceneId": "s2",
+      "text": "The young man answered: “All I care about is to win her. I do not mind if she costs a million pounds.” The next day he set out in his best clothes, with many servants riding behind him, and knocked at the door of Mrs. Li’s house. Immediately a page-boy drew the bolt. The young man asked, “Can you tell me whose house this is?” The boy did not answer, but ran back into the house and called out at the top of his voice, “Here is the gentleman who dropped his whip the other day!”"
+    },
+    {
+      "id": "s2-329",
+      "sceneId": "s2",
+      "text": "Miss Li was evidently very much pleased. He heard her saying, “Be sure not to let him go away. I am just going to do my hair and change my clothes; I will be back in a minute.” The young man, in high spirits, followed the page-boy into the house. A white-haired old lady was going upstairs, whom he took to be the girl’s mother. Bowing low, the young man addressed her as follows: “I am told that you have a vacant plot of land, which you would be willing to let as building-ground. Is that true?” The old lady answered, “I am afraid the site is too mean and confined; it would be quite unsuitable for a gentleman’s house. I should not like to offer it to you.” She then took him into the guest-room, which was a very handsome one, and asked him to be seated, saying, “I have a daughter who has little either of beauty or accomplishment, but she is fond of seeing strangers. I should like you to meet her.”"
+    },
+    {
+      "id": "s2-330",
+      "sceneId": "s2",
+      "text": "So saying, she called for her daughter, who presently entered. Her eyes sparkled with such fire, her arms were so dazzling white and there was in her movements such an exquisite grace that the young man could only leap to his feet in confusion and did not dare raise his eyes. When their salutations were over, he began to make a few remarks about the weather; and realized as he did so that her beauty was of a kind he had never encountered before."
+    },
+    {
+      "id": "s2-331",
+      "sceneId": "s2",
+      "text": "They sat down again. Tea was made and wine poured out. The vessels used were spotlessly clean. He lingered till the day was almost over; the curfew-drum sounded its four beats. The old lady asked if he lived far away. He answered untruthfully, “Several leagues beyond the Yen-p‘ing Gate,” hoping that they would ask him to stay. The old lady said, “The drum has sounded. You will have to go back at once, unless you mean to break the law.”"
+    },
+    {
+      "id": "s2-332",
+      "sceneId": "s2",
+      "text": "The young man answered, “I was being so agreeably entertained that I did not notice how rapidly the day had fled. My house is a long way off and in the city I have no friends or relations. What am I to do?” Miss Li then interposed, saying, “If you can forgive the meanness of our poor home, what harm would there be in your spending the night with us?” He looked doubtfully at the girl’s mother, but met with no discouragement."
+    },
+    {
+      "id": "s2-333",
+      "sceneId": "s2",
+      "text": "Calling his servants, he gave them money and told them to buy provisions for the night. But the girl laughingly stopped him, saying, “That is not the way guests are entertained. Our humble house will provide for your wants to-night, if you are willing to partake of our simple fare and defer your bounty to another occasion.” He tried to refuse, but in the end she would not allow him to, and they all moved to the western hall. The curtains, screens, blinds and couches were of dazzling splendour; while the toilet-boxes, rugs, and pillows were of the utmost elegance. Candles were lighted and an excellent supper was served."
+    },
+    {
+      "id": "s2-334",
+      "sceneId": "s2",
+      "text": "After supper the old lady retired, leaving the lovers engaged in the liveliest conversation, laughing and chattering completely at their ease."
+    },
+    {
+      "id": "s2-335",
+      "sceneId": "s2",
+      "text": "After a while the young man said: “I passed your house the other day and you happened to be standing at the door. And after that, I could think of nothing but you; whether I lay down to rest or sat down to eat, I could not stop thinking of you.” She laughed and answered: “It was just the same with me.” He said: “You must know that I did not come to-day simply to look for building-land. I came hoping that you would fulfil my lifelong desire; but I was not sure how you would welcome me. What--”"
+    },
+    {
+      "id": "s2-336",
+      "sceneId": "s2",
+      "text": "He had not finished speaking when the old woman came back and asked what they were saying. When they told her, she laughed and said, “Has not Mencius written that ‘the relationship between men and women is the ground-work of society’? When lovers are agreed, not even the mandate of a parent will deter them. But my daughter is of humble birth. Are you sure that she is fit to ‘present pillow and mat’ to a great man?”"
+    },
+    {
+      "id": "s2-337",
+      "sceneId": "s2",
+      "text": "He came down from the daïs and, bowing low, begged that she would accept him as her slave. Henceforward the old lady regarded him as her son-in-law; they drank heavily together and finally parted. Next morning he had all his boxes and bags brought round to Mrs. Li’s house and settled there permanently. Henceforward he shut himself up with his mistress and none of his friends ever heard of him. He consorted only with actors and dancers and low people of that kind, passing the time in wild sports and wanton feasting. When his money was all spent, he sold his horses and men-servants. In about a year his money, property, servants and horses were all gone."
+    },
+    {
+      "id": "s2-338",
+      "sceneId": "s2",
+      "text": "For some time the old lady’s manner towards him had been growing gradually colder, but his mistress remained as devoted as ever. One day she said to him, “We have been together a year, but I am still not with child. They say that the spirit of the Bamboo Grove answers a woman’s prayers as surely as an echo. Let us go to his temple and offer a libation.”"
+    },
+    {
+      "id": "s2-339",
+      "sceneId": "s2",
+      "text": "The young man, not suspecting any plot, was delighted to take her to the temple, and having pawned his coat to buy sweet wine for the libation, he went with her and performed the ceremony of prayer. They stayed one night at the temple and came back next day. Whipping up their donkey, they soon arrived at the north gate of the P‘ing-k‘ang quarter. At this point his mistress turned to him and said, “My aunt’s house is in a turning just near here. How would it be if we were to go there and rest for a little?”"
+    },
+    {
+      "id": "s2-340",
+      "sceneId": "s2",
+      "text": "He drove on as she directed him, and they had not gone more than a hundred paces, when he saw the entrance to a spacious carriage-drive. A servant who belonged to the place came out and stopped the cart, saying, “This is the entrance.” The young man got down and was met by some one who came out and asked who they were. When told that it was Miss Li, he went back and announced her. Presently a married lady came out who seemed to be about forty. She greeted him, saying, “Has my niece arrived?” Miss Li then got out of the cart and her aunt said to her: “Why have you not been to see me for so long?” At which they looked at one another and laughed. Then Miss Li introduced him to her aunt and when that was over they all went into a side garden near the Western Halberd Gate. In the middle of the garden was a pagoda, and round it grew bamboos and trees of every variety, while ponds and summer-houses added to its air of seclusion. He asked Miss Li if this were her aunt’s estate; she laughed, but did not answer and spoke of something else."
+    },
+    {
+      "id": "s2-341",
+      "sceneId": "s2",
+      "text": "Tea of excellent quality was served; but when they had been drinking it for a little while, a messenger came galloping up on a huge Fergana horse, saying that Miss Li’s mother had suddenly been taken very ill and had already lost consciousness, so that they had better come back as quickly as possible."
+    },
+    {
+      "id": "s2-342",
+      "sceneId": "s2",
+      "text": "Miss Li said to her aunt: “I am very much upset. I think I had better take the horse and ride on ahead. Then I will send it back, and you and my husband can come along later.” The young man was anxious to go with her, but the aunt and her servants engaged him in conversation, flourishing their hands in front of him and preventing him from leaving the garden. The aunt said to him: “No doubt my sister is dead by this time. You and I ought to discuss together what can be done to help with the expenses of the burial. What is the use of running off like that? Stay here and help me to make a plan for the funeral and mourning ceremonies.”"
+    },
+    {
+      "id": "s2-343",
+      "sceneId": "s2",
+      "text": "It grew late; but the messenger had not returned. The aunt said: “I am surprised he has not come back with the horse. You had better go there on foot as quickly as possible and see what has happened. I will come on later.”"
+    },
+    {
+      "id": "s2-344",
+      "sceneId": "s2",
+      "text": "The young man set out on foot for Mrs. Li’s house. When he got there he found the gate firmly bolted, locked and sealed. Astounded, he questioned the neighbors, who told him that the house had only been let to Mrs. Li and that, the lease having expired, the landlord had now resumed possession. The old lady, they said, had gone to live elsewhere. They did not know her new address."
+    },
+    {
+      "id": "s2-345",
+      "sceneId": "s2",
+      "text": "At first he thought of hurrying back to Hsüan-yang and questioning the aunt; but he found it was too late for him to get there. So he pawned some of his clothes, and, with the proceeds, bought himself supper and hired a bed. But he was too angry and distressed to sleep, and did not once close his eyes from dusk till dawn. Early in the morning he dragged himself away and went to the “aunt’s house.” He knocked on the door repeatedly, but it was breakfast-time and no one answered. At last, when he had shouted several times at the top of his voice, a footman walked majestically to the door. The young man nervously mentioned the aunt’s name and asked whether she was at home. The footman replied: “No one of that name here.” “But she lived here yesterday evening,” the young man protested; “why are you trying to deceive me? If she does not live here, who *does* the house belong to?” The footman answered: “This is the residence of His Excellency Mr. Ts‘ui. I believe that yesterday some persons hired a corner of the grounds. I understand that they wished to entertain a cousin who was coming from a distance. But they were gone before nightfall.”"
+    },
+    {
+      "id": "s2-346",
+      "sceneId": "s2",
+      "text": "The young man, perplexed and puzzled to the point of madness, was absolutely at a loss what to do next. The best he could think of was to go to the quarters in Pu-chēng, where he had installed himself when he first arrived at Ch‘ang-an. The landlord was sympathetic and offered to feed him. But the young man was too much upset to eat, and having fasted for three days fell seriously ill. He rapidly grew worse, and the landlord, fearing he would not recover, had him moved straight to the undertaker’s shop. In a short time the whole of the undertaker’s staff was collected round him, offering sympathy and bringing him food. Gradually he got better and was able to walk with a stick."
+    },
+    {
+      "id": "s2-347",
+      "sceneId": "s2",
+      "text": "The undertaker now hired him by the day to hold up the curtains of fine cloth, by which he earned just enough to support himself. In a few months he grew quite strong again, but whenever he heard the mourners’ doleful songs, in which they regretted that they could not change places with the corpse, burst into violent fits of sobbing and shed streams of tears over which they lost all control, then he used to go home and imitate their performance."
+    },
+    {
+      "id": "s2-348",
+      "sceneId": "s2",
+      "text": "Being a man of intelligence, he very soon mastered the art and finally became the most expert mourner in Ch‘ang-an. It happened that there were two undertakers at this time between whom there was a great rivalry. The undertaker of the east turned out magnificent hearses and biers, and in this respect his superiority could not be contested. But the mourners he provided were somewhat inferior. Hearing of our young man’s skill, he offered him a large sum for his services. The eastern undertaker’s supporters, who were familiar with the repertoire of his company, secretly taught the young man several fresh tunes and showed him how to fit the words to them. The lessons went on for several weeks, without any one being allowed to know of it. At the end of that time the two undertakers agreed to hold a competitive exhibition of their wares in T‘ien-mēn Street. The loser was to forfeit 50,000 cash to cover the cost of the refreshments provided. Before the exhibition an agreement was drawn up and duly signed by witnesses."
+    },
+    {
+      "id": "s2-349",
+      "sceneId": "s2",
+      "text": "A crowd of several thousand people collected to watch the competition. The mayor of the quarter got wind of the proceedings and told the chief of police. The chief of police told the governor of the city. Very soon all the gentlemen of Ch‘ang-an were hurrying to the spot and every house in the town was empty. The exhibition lasted from dawn till midday. Coaches, hearses and all kinds of funeral trappings were successively displayed, but the undertaker of the west could establish no superiority. Filled with shame, he set up a platform in the south corner of the square. Presently a man with a long beard came forward, carrying a hand-bell and attended by several assistants. He wagged his beard, raised his eyebrows, folded his arms across his chest and bowed. Then, mounting the platform, he sang the “Dirge of the White Horse.” When it was over, confident of an easy victory, he glared round him, as if to imply that his opponents had all vanished. He was applauded on every side and was himself convinced that his talents were a unique product of the age and could not possibly be called into question."
+    },
+    {
+      "id": "s2-350",
+      "sceneId": "s2",
+      "text": "After a while the undertaker of the east put together some benches in the north corner of the square, and a young man in a black hat came forward, attended by five assistants and carrying a bunch of hearse-plumes in his hand. It was the young man of our story."
+    },
+    {
+      "id": "s2-351",
+      "sceneId": "s2",
+      "text": "He adjusted his clothes, looked timidly up and down, and then cleared his throat and began his tune with an air of great diffidence."
+    },
+    {
+      "id": "s2-352",
+      "sceneId": "s2",
+      "text": "He sang the dirge “Dew on the Garlic.”[3] His voice rose so shrill and clear that “its echoes shook the forest trees.” Before he had finished the first verse, all who heard were sobbing and hiding their tears."
+    },
+    {
+      "id": "s2-353",
+      "sceneId": "s2",
+      "text": "[3] See p. 58, “170 Chinese Poems,” Alfred A. Knopf, 1919."
+    },
+    {
+      "id": "s2-354",
+      "sceneId": "s2",
+      "text": "When the performance was over, every one made fun of the western undertaker, and he was so much put out that he immediately removed his exhibits and retired from the contest. The audience was amazed by the collapse of the western undertaker and could not imagine where his rival had procured so remarkable a singer."
+    },
+    {
+      "id": "s2-355",
+      "sceneId": "s2",
+      "text": "It happened that the Emperor had recently issued an order commanding the governors of outside provinces to confer with him at the capital at least once a year."
+    },
+    {
+      "id": "s2-356",
+      "sceneId": "s2",
+      "text": "At this time the young man’s father, who was governor of Ch‘ang-chou, had recently arrived at the capital to make his report. Hearing of the competition, he and some of his colleagues discarded their official robes and insignia, and slipped away to join the crowd. With them was an old servant, who was the husband of the young man’s foster-nurse. Recognizing his foster-son’s way of moving and speaking, he was on the point of accosting him, but not daring to do so, he stood weeping silently. The father asked him why he was crying, and the servant replied, “Sir, the young man who is singing reminds me of your lost son.” The father answered: “My son became the prey of robbers, because I gave him too much money. This cannot be he.” So saying, he also began to weep and, leaving the crowd, returned to his lodging."
+    },
+    {
+      "id": "s2-357",
+      "sceneId": "s2",
+      "text": "But the old servant went about among the members of the troupe, asking who it was that had just sung with such skill. They all told him it was the son of such a one; and when he asked the young man’s own name, that too was unfamiliar, for he was living under an *alias*. The old servant was so much puzzled that he determined to put the matter to the test for himself. But when the young man saw his old friend walking towards him, he winced, turned away his face, and tried to hide in the crowd. The old man followed him and catching his sleeve, said: “Surely it is you!” Then they embraced and wept. Presently they went back together to his father’s lodging. But his father abused him, saying: “Your conduct has disgraced the family. How dare you show your face again?” So saying, he took him out of the house and led him to the ground between the Ch‘ü-chiang Pond and the Apricot Gardens. Here he stripped him naked and thrashed him with his horse-whip, till the young man succumbed to the pain and collapsed. The father then left him and went away."
+    },
+    {
+      "id": "s2-358",
+      "sceneId": "s2",
+      "text": "But the young man’s singing-master had told some of his friends to watch what happened to him. When they saw him stretched inanimate on the ground, they came back and told the other members of the troupe."
+    },
+    {
+      "id": "s2-359",
+      "sceneId": "s2",
+      "text": "The news occasioned universal lamentation, and two men were despatched with a reed mat to cover up the body. When they got there they found his heart still warm, and when they had held him in an upright posture for some time, his breathing recommenced. So they carried him home between them and administered liquid food through a reed-pipe. Next morning, he recovered consciousness; but after several months he was still unable to move his hands and feet. Moreover, the sores left by his thrashing festered in so disgusting a manner that his friends found him too troublesome, and one night deposited him in the middle of the road. However, the passers-by, harrowed by his condition, never failed to throw him scraps of food."
+    },
+    {
+      "id": "s2-360",
+      "sceneId": "s2",
+      "text": "So copious was his diet that in three months he recovered sufficiently to hobble with a stick. Clad in a linen coat,--which was knotted together in a hundred places, so that it looked as tattered as a quail’s tail,--and carrying a broken saucer in his hand, he now went about the idle quarters of the town, earning his living as a professional beggar."
+    },
+    {
+      "id": "s2-361",
+      "sceneId": "s2",
+      "text": "Autumn had now turned to winter. He spent his nights in public lavatories and his days haunting the markets and booths."
+    },
+    {
+      "id": "s2-362",
+      "sceneId": "s2",
+      "text": "One day when it was snowing hard, hunger and cold had driven him into the streets. His beggar’s cry was full of woe and all who heard it were heart-rent. But the snow was so heavy that hardly a house had its outer door open, and the streets were empty."
+    },
+    {
+      "id": "s2-363",
+      "sceneId": "s2",
+      "text": "When he reached the eastern gate of An-i, about the seventh or eighth turning north of the Hsün-li Wall, there was a house with the double-doors half open."
+    },
+    {
+      "id": "s2-364",
+      "sceneId": "s2",
+      "text": "It was the house where Miss Li was then living, but the young man did not know."
+    },
+    {
+      "id": "s2-365",
+      "sceneId": "s2",
+      "text": "He stood before the door, wailing loud and long."
+    },
+    {
+      "id": "s2-366",
+      "sceneId": "s2",
+      "text": "Hunger and cold had given such a piteous accent to his cry that none could have listened unmoved."
+    },
+    {
+      "id": "s2-367",
+      "sceneId": "s2",
+      "text": "Miss Li heard it from her room and at once said to her servant, “That is so-and-so. I know his voice.” She flew to the door and was horrified to see her old lover standing before her so emaciated by hunger and disfigured by sores that he seemed scarcely human. “Can it be you?” she said. But the young man was so overcome by bewilderment and excitement that he could not speak, but only moved his lips noiselessly."
+    },
+    {
+      "id": "s2-368",
+      "sceneId": "s2",
+      "text": "She threw her arms round his neck, then wrapped him in her own embroidered jacket and led him to the parlour. Here, with quavering voice, she reproached herself, saying, “It is my doing that you have been brought to this pass.” And with these words she swooned."
+    },
+    {
+      "id": "s2-369",
+      "sceneId": "s2",
+      "text": "Her mother came running up in great excitement, asking who had arrived. Miss Li, recovering herself, said who it was. The old woman cried out in rage: “Send him away! What did you bring him in here for?”"
+    },
+    {
+      "id": "s2-370",
+      "sceneId": "s2",
+      "text": "But Miss Li looked up at her defiantly and said: “Not so! This is the son of a noble house. Once he rode in grand coaches and wore golden trappings on his coat. But when he came to our house, he soon lost all he had; and then we plotted together and left him destitute. Our conduct has indeed been inhuman! We have ruined his career and robbed him even of his place in the category of human relationships. For the love of father and son is implanted by Heaven; yet we have hardened his father’s heart, so that he beat him with a stick and left him on the ground."
+    },
+    {
+      "id": "s2-371",
+      "sceneId": "s2",
+      "text": "“Every one in the land knows that it is I who have reduced him to his present plight. The Court is full of his kinsmen. Some day one of them will come into power. Then an inquiry will be set afoot, and disaster will overtake us. And since we have flouted Heaven and defied the laws of humanity, neither spirits nor divinities will be on our side. Let us not wantonly incur a further retribution!"
+    },
+    {
+      "id": "s2-372",
+      "sceneId": "s2",
+      "text": "“I have lived as your daughter for twenty years. Reckoning what I have cost you in that time, I find it must be close on a thousand pieces of gold. You are now aged sixty, so that by the price of twenty more years’ food and clothing, I can buy my freedom. I intend to live separately with this young man. We will not go far away; I shall see to it that we are near enough to pay our respects to you both morning and evening.”"
+    },
+    {
+      "id": "s2-373",
+      "sceneId": "s2",
+      "text": "The “mother” saw that she was not to be gainsaid and fell in with the arrangement. When she had paid her ransom, Miss Li had a hundred pieces of gold left over; and with them she hired a vacant room, five doors away. Here she gave the young man a bath, changed his clothes, fed him with hot soup to relax his stomach, and later on fattened him up with cheese and milk."
+    },
+    {
+      "id": "s2-374",
+      "sceneId": "s2",
+      "text": "In a few weeks she began to place before him all the choicest delicacies of land and sea; and she clothed him with cap, shoes and stockings of the finest quality. In a short time he began gradually to put on flesh, and by the end of the year, he had entirely recovered his former health."
+    },
+    {
+      "id": "s2-375",
+      "sceneId": "s2",
+      "text": "One day Miss Li said to him: “Now your limbs are stout again and your will strong! Sometimes, when deeply pondering in silent sorrow, I wonder to myself how much you remember of your old literary studies?” He thought and answered: “Of ten parts I remember two or three.”"
+    },
+    {
+      "id": "s2-376",
+      "sceneId": "s2",
+      "text": "Miss Li then ordered the carriage to be got ready and the young man followed her on horseback. When they reached the classical bookshop at the side-gate south of the Flag tower, she made him choose all the books he wanted, till she had laid out a hundred pieces of gold. Then she packed them in the cart and drove home. She now made him dismiss all other thoughts from his mind and apply himself only to study. All the evening he toiled at his books, with Miss Li at his side, and they did not retire till midnight. If ever she found that he was too tired to work, she made him lay down his classics and write a poem or ode."
+    },
+    {
+      "id": "s2-377",
+      "sceneId": "s2",
+      "text": "In two years he had thoroughly mastered his subjects and was admired by all the scholars of the realm. He said to Miss Li, “*Now*, surely, I am ready for the examiners!” but she would not let him compete and made him revise all he had learnt, to prepare for the “hundredth battle.” At the end of the third year she said, “Now you may go.” He went in for the examination and passed at the first attempt. His reputation spread rapidly through the examination rooms and even older men, when they saw his compositions, were filled with admiration and respect, and sought his friendship."
+    },
+    {
+      "id": "s2-378",
+      "sceneId": "s2",
+      "text": "But Miss Li would not let him make friends with them, saying, “Wait a little longer! Nowadays when a bachelor of arts has passed his examination, he thinks himself fit to hold the most advantageous posts at Court and to win a universal reputation. But your unfortunate conduct and disreputable past put you at a disadvantage beside your fellow-scholars. You must ‘grind, temper and sharpen’ your attainments, that you may secure a second victory. Then you will be able to match yourself against famous scholars and contend with the illustrious.”"
+    },
+    {
+      "id": "s2-379",
+      "sceneId": "s2",
+      "text": "The young man accordingly increased his efforts and enhanced his value. That year it happened that the Emperor had decreed a special examination for the selection of candidates of unusual merit from all parts of the Empire. The young man competed, and came out top in the “censorial essay.” He was offered the post of Army Inspector at Ch‘ēng-tu Fu. The officers who were to escort him were all previous friends."
+    },
+    {
+      "id": "s2-380",
+      "sceneId": "s2",
+      "text": "When he was about to take up his post, Miss Li said to him, “Now that you are restored to your proper station in life, I will not be a burden to you. Let me go back and look after the old lady till she dies. You must ally yourself with some lady of noble lineage, who will be worthy to carry the sacrificial dishes in your Ancestral Hall. Do not injure your prospects by an unequal union. Good-bye, for now I must leave you.”"
+    },
+    {
+      "id": "s2-381",
+      "sceneId": "s2",
+      "text": "The young man burst into tears and threatened to kill himself if she left him, but she obstinately refused to go with him. He begged her passionately not to desert him, and she at last consented to go with him across the river as far as Chien-mēn.[4] “There,” she said, “you must part with me.” The young man consented and in a few weeks they reached Chien-mēn. Before he had started out again, a proclamation arrived announcing that the young man’s father, who had been Governor of Ch‘ang-chou, had been appointed Governor of Ch‘ēng-tu and Intendant of the Chien-nan Circuit. Next morning the father arrived, and the young man sent in his card and waited upon him at the posting-station. His father did not recognize him, but the card bore the names of the young man’s father and grandfather, with their ranks and titles. When he read these, he was astounded, and bidding his son mount the steps he caressed him and wept. After a while he said: “Now we two are father and son once more,” and bade him tell his story. When he heard of the young man’s adventures, he was amazed. Presently he asked: “And where is Miss Li?” He replied: “She came with me as far as here, but now she is going back again.”"
+    },
+    {
+      "id": "s2-382",
+      "sceneId": "s2",
+      "text": "[4] The “Sword-gate”: commanding the pass which leads into Szechuan from the north."
+    },
+    {
+      "id": "s2-383",
+      "sceneId": "s2",
+      "text": "“I cannot allow it,” the father said. Next day he ordered a carriage for his son and sent him on to report himself at Ch‘ēng-tu; but he detained Miss Li at Chien-mēn, found her a suitable lodging and ordered a match-maker to perform the initial ceremonies for uniting the two families and to accomplish the six rites of welcome. The young man came back from Ch‘ēng-tu and they were duly married. In the years that followed their marriage, Miss Li showed herself a devoted wife and competent housekeeper, and was beloved by all her relations."
+    },
+    {
+      "id": "s2-384",
+      "sceneId": "s2",
+      "text": "Some years later both the young man’s parents died, and in his mourning observances he showed unusual piety. As a mark of divine favour, magic toadstools grew on the roof of his mourning-hut,[5] each stem bearing three plants. The report of his virtue reached even the Emperor’s ears. Moreover a number of white swallows nested in the beams of his roof, an omen which so impressed the Emperor that he raised his rank immediately."
+    },
+    {
+      "id": "s2-385",
+      "sceneId": "s2",
+      "text": "[5] See “Book or Rites,” xxxii, 3. On returning from his father’s burial a son must not enter the house; he should live in an “out-house,” mourning for his father’s absence."
+    },
+    {
+      "id": "s2-386",
+      "sceneId": "s2",
+      "text": "When the three years of mourning were over, he was successively promoted to various distinguished posts and in the course of ten years was Governor of several provinces. Miss Li was given the fief of Chien-kuo, with the title “The Lady of Chien-kuo.”"
+    },
+    {
+      "id": "s2-387",
+      "sceneId": "s2",
+      "text": "He had four sons who all held high rank. Even the least successful of them became Governor of T‘ai-yüan, and his brothers all married into great families, so that his good fortune both in public and private life was without parallel."
+    },
+    {
+      "id": "s2-388",
+      "sceneId": "s2",
+      "text": "How strange that we should find in the conduct of a prostitute a degree of constancy rarely equalled even by the heroines of history! Surely the story is one which cannot but provoke a sigh!"
+    },
+    {
+      "id": "s2-389",
+      "sceneId": "s2",
+      "text": "My great-uncle was Governor of Chin-chou; subsequently he joined the Ministry of Finance and became Inspector of Waterways, and finally Inspector of Roads. In all these three offices he had Miss Li’s husband as his colleague, so that her story was well known to him in every particular. During the Chēng-yüan period[6] I was sitting one day with Li Kung-tso[7] of Lung-hai; we fell to talking of wives who had distinguished themselves by remarkable conduct. I told him the story of Miss Li. He listened with rapt attention, and when it was over, asked me to write it down for him. So I took up my brush, wetted the hairs and made this rough outline of the story."
+    },
+    {
+      "id": "s2-390",
+      "sceneId": "s2",
+      "text": "[6] A.D. 785-805."
+    },
+    {
+      "id": "s2-391",
+      "sceneId": "s2",
+      "text": "[7] A writer."
+    },
+    {
+      "id": "s2-392",
+      "sceneId": "s2",
+      "text": "*[Dated] autumn, eighth month of the year Yi-hai, (A.D. 795), written by Po-Hsing-chien of T‘ai-yüan.*"
+    },
+    {
+      "id": "s2-393",
+      "sceneId": "s2",
+      "text": "Wang Chien"
+    },
+    {
+      "id": "s2-394",
+      "sceneId": "s2",
+      "text": "[*c. A.D. 830*]"
+    },
+    {
+      "id": "s2-395",
+      "sceneId": "s2",
+      "text": "[66] Hearing That His Friend Was Coming Back from the War"
+    },
+    {
+      "id": "s2-396",
+      "sceneId": "s2",
+      "text": "In old days those who went to fight In three years had one year’s leave. But in *this* war the soldiers are never changed; They must go on fighting till they die on the battle-field. I thought of you, so weak and indolent, Hopelessly trying to learn to march and drill. That a young man should ever come home again Seemed about as likely as that the sky should fall. Since I got the news that you were coming back, Twice I have mounted to the high hall of your home. I found your brother mending your horse’s stall; I found your mother sewing your new clothes. I am half afraid; perhaps it is not true; Yet I never weary of watching for you on the road. Each day I go out at the City Gate With a flask of wine, lest you should come thirsty. Oh that I could shrink the surface of the World, So that suddenly I might find you standing at my side."
+    },
+    {
+      "id": "s2-397",
+      "sceneId": "s2",
+      "text": "[67] THE South"
+    },
+    {
+      "id": "s2-398",
+      "sceneId": "s2",
+      "text": "In the southern land many birds sing; Of towns and cities half are unwalled. The country markets are thronged by wild tribes; The mountain-villages bear river-names. Poisonous mists rise from the damp sands; Strange fires gleam through the night-rain. And none passes but the lonely fisher of pearls. Year by year on his way to the South Sea."
+    },
+    {
+      "id": "s2-399",
+      "sceneId": "s2",
+      "text": "OU-Yang Hsiu"
+    },
+    {
+      "id": "s2-400",
+      "sceneId": "s2",
+      "text": "[*b. 1007; d. 1072*]"
+    },
+    {
+      "id": "s2-401",
+      "sceneId": "s2",
+      "text": "[68] Autumn"
+    },
+    {
+      "id": "s2-402",
+      "sceneId": "s2",
+      "text": "Master Ou-yang was reading his books[1] at night when he heard a strange sound coming from the north-west. He paused and listened intently, saying to himself: “How strange, how strange!” First there was a pattering and rustling; but suddenly this broke into a great churning and crashing, like the noise of waves that wake the traveller at night, when wind and rain suddenly come; and where they lash the ship, there is a jangling and clanging as of metal against metal."
+    },
+    {
+      "id": "s2-403",
+      "sceneId": "s2",
+      "text": "[1] The poem was written in 1052, when Ou-yang was finishing his “New History of the T‘ang Dynasty.”"
+    },
+    {
+      "id": "s2-404",
+      "sceneId": "s2",
+      "text": "Or again, like the sound of soldiers going to battle, who march swiftly with their gags[2] between their teeth, when the captain’s voice cannot be heard, but only the tramp of horses and men moving."
+    },
+    {
+      "id": "s2-405",
+      "sceneId": "s2",
+      "text": "[2] Pieces of wood put in their mouths to prevent their talking."
+    },
+    {
+      "id": "s2-406",
+      "sceneId": "s2",
+      "text": "I called to my boy, bidding him go out and see what noise this could be. The boy said: “The moon and stars are shining; the Milky Way glitters in the sky. Nowhere is there any noise of men. The noise must be in the trees.”"
+    },
+    {
+      "id": "s2-407",
+      "sceneId": "s2",
+      "text": "“I-hsi! alas!” I said, “this must be the sound of Autumn. Oh, why has Autumn come? For as to Autumn’s form, her colours are mournful and pale. Mists scatter and clouds withdraw. Her aspect is clean and bright. The sky is high and the sunlight clear as crystal. Her breath is shivering and raw, pricking men’s skin and bones; her thoughts are desolate, bringing emptiness and silence to the rivers and hills. And hence it is that her whisperings are sorrowful and cold, but her shouts are wild and angry. Pleasant grasses grew soft and green, vying in rankness. Fair trees knit their shade and gave delight. Autumn swept the grasses and their colour changed; she met the trees, and their boughs were stripped. And because Autumn’s being is compounded of sternness, therefore it was that they withered and perished, fell and decayed. For Autumn is an executioner,[3] and her hour is darkness. She is a warrior, and her element is metal. Therefore she is called ‘the doom-spirit of heaven and earth’;[4] for her thoughts are bent on stern destruction."
+    },
+    {
+      "id": "s2-408",
+      "sceneId": "s2",
+      "text": "[3] Executions took place in autumn. See *Chou Li*, Book xxxiv (Biot’s translation, tom. ii, p. 286)."
+    },
+    {
+      "id": "s2-409",
+      "sceneId": "s2",
+      "text": "[4] “Book of Rites,” I. 656 (Couvreur’s edition)."
+    },
+    {
+      "id": "s2-410",
+      "sceneId": "s2",
+      "text": "“In Spring, growth; in Autumn, fruit: that is Heaven’s plan. Therefore in music the note *shang* is the symbol of the West and *I-tsē* is the pitch-pipe of the seventh month. For *shang* means ‘*to strike*’; when things grow old they are stricken by grief. And *I* means ‘*to slay*’; things that have passed their prime must needs be slain. Plants and trees have no feelings; when their time comes they are blown down. But man moves and lives and is of creatures most divine. A hundred griefs assail his heart, ten thousand tasks wear out his limbs, and each inward stirring shakes the atoms of his soul. And all the more, when he thinks of things that his strength cannot achieve or grieves at things his mind cannot understand, is it strange that cheeks that were steeped in red should grow withered as an old stick, and hair that was black as ebony should turn as spangled as a starry sky? How should ought else but what is fashioned of brass or stone strive to outlast the splendour of a tree? Who but man himself is the slayer of his youth? Why was I angered at Autumn’s voice?”"
+    },
+    {
+      "id": "s2-411",
+      "sceneId": "s2",
+      "text": "The boy made no answer: he was sleeping with lowered head. I could hear nothing but the insects chirping shrilly on every side as though they sought to join in my lamentation."
+    },
+    {
+      "id": "s2-412",
+      "sceneId": "s2",
+      "text": "An essay on Po Chü-i, whose poems occupy most of this book, will be found in “170 Chinese Poems.” The fullest account of Li Po’s life (with translations) is given in a paper read by me to the China Society, and published in the *Asiatic Review*, July, 1919. Notices of Ch‘ü Yüan, Wang Wei, Yüan Chēn, Wang Chien and Ou-yang Hsiu will be found in Giles’s “Biographical Dictionary.” To Wang Chieh Po Chü-i addressed several poems."
+    },
+    {
+      "id": "s2-413",
+      "sceneId": "s2",
+      "text": "Of the 68 pieces in this book, 55 are now translated for the first time. Of the eight poems by Li Po, all but Number 6 have been translated before, some of them by several hands."
+    },
+    {
+      "id": "s2-414",
+      "sceneId": "s2",
+      "text": "Among the poems by Po Chü-i, three (Nos. 11, 12, and 44) have been translated by Woitsch[1] and one, (No. 43), very incorrectly, by Pfizmaier. Another (No. 21) was translated into rhymed verse by Prof. Giles in “Adversaria Sinica” (1914), p. 323. Ou-yang Hsiu’s “Autumn” was translated by Giles (with great freedom in many places) in his “Chinese Literature,” p. 215."
+    },
+    {
+      "id": "s2-415",
+      "sceneId": "s2",
+      "text": "[1] Aus den Gedichten Po Chü-i’s. Peking, 1908."
+    },
+    {
+      "id": "s2-416",
+      "sceneId": "s2",
+      "text": "[Transcriber’s Note: The following apparent misprints have been corrected for this electronic edition: Patient carrier of towel and comb,[2] --as printed, cited footnote 1, which is inapplicable and not on page"
+    },
+    {
+      "id": "s2-417",
+      "sceneId": "s2",
+      "text": "“Because you are my cousin, “Then came the sharing of pillow and mat, “Now, having ‘seen my Prince,’ --as printed, all were missing opening “"
+    },
+    {
+      "id": "s2-418",
+      "sceneId": "s2",
+      "text": "Footnote 3: See p. 58, “170 Chinese Poems,” Alfred A. Knopf, 1919. --as printed, See p, 58,"
+    },
+    {
+      "id": "s2-419",
+      "sceneId": "s2",
+      "text": "with bedclothes under her arm --as printed, bed-clothes]"
+    }
+  ]
+}

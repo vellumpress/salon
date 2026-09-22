@@ -1,0 +1,2093 @@
+{
+  "id": "stray-birds",
+  "title": "Stray Birds",
+  "author": "Rabindranath Tagore",
+  "year": "1916",
+  "note": "Project Gutenberg 6524",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Let me but listen",
+      "place": "Let me but listen",
+      "reentry": "20",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "I cannot choose the best",
+      "place": "I cannot choose the best",
+      "reentry": "The best chooses me.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "His own mornings are new surprises to God",
+      "place": "His own mornings are new surprises to God",
+      "reentry": "33 Life finds its wealth by the claims of the world, and its worth by the claims of love.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "The dry river-bed finds no thanks for its past",
+      "place": "The dry river-bed finds no thanks for its past",
+      "reentry": "35 The bird wishes it were a cloud. The cloud wishes it were a bird.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "God finds himself by creating",
+      "place": "God finds himself by creating",
+      "reentry": "47 Shadow, with her veil drawn, follows Light in secret meekness, with her silent steps of love.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Life is given to us, we earn it by giving it",
+      "place": "Life is given to us, we earn it by giving it",
+      "reentry": "57 We come nearest to the great when we are great in humility.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Take my wine in my own cup, friend",
+      "place": "Take my wine in my own cup, friend",
+      "reentry": "It loses its wreath of foam when poured into that of others.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Wrong cannot afford defeat but Right can",
+      "place": "Wrong cannot afford defeat but Right can",
+      "reentry": "69 \"I give my whole water in joy,\" sings the waterfall, \"though little of it is enough for the thirsty.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "The tree gave it",
+      "place": "The tree gave it",
+      "reentry": "72 In my solitude of heart I feel the sigh of this widowed evening veiled with mist and rain.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "The grass seeks her crowd in the earth",
+      "place": "The grass seeks her crowd in the earth",
+      "reentry": "The tree seeks his solitude of the sky.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Man barricades against himself",
+      "place": "Man barricades against himself",
+      "reentry": "80 Your voice, my friend, wanders in my heart, like the muffled sound of the sea among these listening pines.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Religion will be one when God is dead",
+      "place": "Religion will be one when God is dead",
+      "reentry": "85 The artist is the lover of Nature, therefore he is her slave and her master.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Power said to the world, \"You are mine",
+      "place": "Power said to the world, \"You are mine",
+      "reentry": "The world kept it prisoner on her throne. Love said to the world, \"I am thine.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "The world gave it the freedom of her house",
+      "place": "The world gave it the freedom of her house",
+      "reentry": "94 The mist is like the earth's desire. It hides the sun for whom she cries.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "The sadness of my soul is her bride's veil",
+      "place": "The sadness of my soul is her bride's veil",
+      "reentry": "It waits to be lifted in the night.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "The cloud stood humbly in a corner of the sky",
+      "place": "The cloud stood humbly in a corner of the sky",
+      "reentry": "The morning crowned it with splendour.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "Roots are the branches down in the earth",
+      "place": "Roots are the branches down in the earth",
+      "reentry": "Branches are roots in the air.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Dream is a wife who must talk",
+      "place": "Dream is a wife who must talk",
+      "reentry": "Sleep is a husband who silently suffers.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Leisure in its activity is work",
+      "place": "Leisure in its activity is work",
+      "reentry": "The stillness of the sea stirs in waves.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "The leaf becomes flower when it loves",
+      "place": "The leaf becomes flower when it loves",
+      "reentry": "The flower becomes fruit when it worships.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "This rainy evening the wind is restless",
+      "place": "This rainy evening the wind is restless",
+      "reentry": "I look at the swaying branches and ponder over the greatness of all things.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Truth in her dress finds facts too tight",
+      "place": "Truth in her dress finds facts too tight",
+      "reentry": "In fiction she moves with ease.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "It sings to me in the night,--\"I loved you.\"",
+      "place": "It sings to me in the night,--\"I loved you.\"",
+      "reentry": "145",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "The flaming fire warns me off by its own glow",
+      "place": "The flaming fire warns me off by its own glow",
+      "reentry": "Save me from the dying embers hidden under ashes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "I have my stars in the sky,",
+      "place": "I have my stars in the sky,",
+      "reentry": "But oh for my little lamp unlit in my house.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "The dust of the dead words clings to thee",
+      "place": "The dust of the dead words clings to thee",
+      "reentry": "Wash thy soul with silence.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Come out, my heart, with thy love to meet it",
+      "place": "Come out, my heart, with thy love to meet it",
+      "reentry": "150 My thoughts shimmer with these shimmering leaves and my heart sings with the touch of this sunlight; my life is glad to be floating with all things into the blue of space, into the dark of time.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "The Great walks with the Small without fear",
+      "place": "The Great walks with the Small without fear",
+      "reentry": "The Middling keeps aloof.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "I can see your face and know you as bliss",
+      "place": "I can see your face and know you as bliss",
+      "reentry": "163 \"The learned say that your lights will one day be no more.\" said the firefly to the stars.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "The stars made no answer",
+      "place": "The stars made no answer",
+      "reentry": "164 In the dusk of the evening the bird of some early dawn comes to the nest of my silence.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "I hear the voice of their wings",
+      "place": "I hear the voice of their wings",
+      "reentry": "166 The canal loves to think that rivers exist solely to supply it with water.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Either you have work or you have not",
+      "place": "Either you have work or you have not",
+      "reentry": "When you have to say, \"Let us do something,\" then begins mischief.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "Very little remains for my home",
+      "place": "Very little remains for my home",
+      "reentry": "176 The water in a vessel is sparkling; the water in the sea is dark. The small truth has words that are clear; the great truth has great silence.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "They hated and killed and men praised them",
+      "place": "They hated and killed and men praised them",
+      "reentry": "But God in shame hastens to hide its memory under the green grass.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "Sit still my heart, do not raise your dust",
+      "place": "Sit still my heart, do not raise your dust",
+      "reentry": "Let the world find its way to you.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "A mind all logic is like a knife all blade",
+      "place": "A mind all logic is like a knife all blade",
+      "reentry": "It makes the hand bleed that uses it.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "Praise shames me, for I secretly beg for it",
+      "place": "Praise shames me, for I secretly beg for it",
+      "reentry": "208 Let my doing nothing when I have nothing to do become untroubled in its depth of peace like the evening in the seashore when the water is silent.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "Men are cruel, but Man is kind",
+      "place": "Men are cruel, but Man is kind",
+      "reentry": "220 Make me thy cup and let my fulness be for thee and for thine.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "In heart's perspective the distance looms large",
+      "place": "In heart's perspective the distance looms large",
+      "reentry": "234 The moon has her light all over the sky, her dark spots to herself.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "Timid thoughts, do not be afraid of me",
+      "place": "Timid thoughts, do not be afraid of me",
+      "reentry": "I am a poet.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "Man is worse than an animal when he is an animal",
+      "place": "Man is worse than an animal when he is an animal",
+      "reentry": "249 Dark clouds become heaven's flowers when kissed by light.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "This sadness of my soul is her bride's veil",
+      "place": "This sadness of my soul is her bride's veil",
+      "reentry": "It waits to be lifted in the night.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "The little flower lies in the dust",
+      "place": "The little flower lies in the dust",
+      "reentry": "It sought the path of the butterfly.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "I do not ask thee into the house",
+      "place": "I do not ask thee into the house",
+      "reentry": "Come into my infinite loneliness, my Lover.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "Eternal Mother",
+      "place": "Eternal Mother",
+      "reentry": "272 I came to your shore as a stranger, I lived in your house as a guest, I leave your door as a friend, my earth.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "I am a child in the dark",
+      "place": "I am a child in the dark",
+      "reentry": "I stretch my hands through the coverlet of night for thee, Mother.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "Let me dream",
+      "place": "Let me dream",
+      "reentry": "277 The lamp of meeting burns long; it goes out in a moment at the parting.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "We live in this world when we love it",
+      "place": "We live in this world when we love it",
+      "reentry": "280 Let the dead have the immortality of fame, but the living the immortality of love.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "My heart longs for thy stars, my God",
+      "place": "My heart longs for thy stars, my God",
+      "reentry": "288 Love's pain sang round my life like the unplumbed sea, and love's joy sang like birds in its flowering groves.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "Put out the lamp when thou wishest",
+      "place": "Put out the lamp when thou wishest",
+      "reentry": "I shall know thy darkness and shall love it.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "God's silence ripens man's thoughts into speech",
+      "place": "God's silence ripens man's thoughts into speech",
+      "reentry": "306 Thou wilt find, Eternal Traveller, marks of thy footsteps across my songs.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "I am in this great world",
+      "place": "I am in this great world",
+      "reentry": "324 There are tracts in my life that are bare and silent. They are the open spaces where my busy days had their light and air.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "20"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The best chooses me."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "21 They throw their shadows before them who carry their lantern on their back."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "22 That I exist is a perpetual surprise which is life."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "23 \"We, the rustling leaves, have a voice that answers the storms, but who are you so silent?\""
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "\"I am a mere flower.\""
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "24 Rest belongs to the work as the eyelids to the eyes."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "25 Man is a born child, his power is the power of growth."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "26 God expects answers for the flowers he sends us, not for the sun and the earth."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "27 The light that plays, like a naked child, among the green leaves happily knows not that man can lie."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "28 O Beauty, find thyself in love, not in the flattery of thy mirror."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "29 My heart beats her waves at the shore of the world and writes upon it her signature in tears with the words, \"I love thee.\""
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "30 \"Moon, for what do you wait?\""
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "\"To salute the sun for whom I must make way.\""
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "31 The trees come up to my window like the yearning voice of the dumb earth."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "32"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "33 Life finds its wealth by the claims of the world, and its worth by the claims of love."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "34"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "35 The bird wishes it were a cloud. The cloud wishes it were a bird."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "36 The waterfall sings, \"I find my song, when I find my freedom.\""
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "37 I cannot tell why this heart languishes in silence. It is for small needs it never asks, or knows or remembers."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "38 Woman, when you move about in your household service your limbs sing like a hill stream among its pebbles."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "39 The sun goes to cross the Western sea, leaving its last salutation to the East."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "40 Do not blame your food because you have no appetite."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "41 The trees, like the longings of the earth, stand a-tiptoe to peep at the heaven."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "42 You smiled and talked to me of nothing and I felt that for this I had been waiting long."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "43 The fish in the water is silent, the animal on the earth is noisy, the bird in the air is singing, But Man has in him the silence of the sea, the noise of the earth and the music of the air."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "44 The world rushes on over the strings of the lingering heart making the music of sadness."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "45 He has made his weapons his gods. When his weapons win he is defeated himself."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "46"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "47 Shadow, with her veil drawn, follows Light in secret meekness, with her silent steps of love."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "48 The stars are not afraid to appear like fireflies."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "49 I thank thee that I am none of the wheels of power but I am one with the living creatures that are crushed by it."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "50 The mind, sharp but not broad, sticks at every point but does not move."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "51 Your idol is shattered in the dust to prove that God's dust is greater than your idol."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "52 Man does not reveal himself in his history, he struggles up through it."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "53 While the glass lamp rebukes the earthen for calling it cousin, the moon rises, and the glass lamp, with a bland smile, calls her, \"My dear, dear sister.\""
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "54 Like the meeting of the seagulls and the waves we meet and come near. The seagulls fly off, the waves roll away and we depart."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "55 My day is done, and I am like a boat drawn on the beach, listening to the dance-music of the tide in the evening."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "56"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "57 We come nearest to the great when we are great in humility."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "58 The sparrow is sorry for the peacock at the burden of its tail."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "59 Never be afraid of the moments--thus sings the voice of the everlasting."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "60 The hurricane seeks the shortest road by the no-road, and suddenly ends its search in the Nowhere."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "61"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "It loses its wreath of foam when poured into that of others."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "62 The Perfect decks itself in beauty for the love of the Imperfect."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "63 God says to man, \"I heal you therefore I hurt, love you therefore punish.\""
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "64 Thank the flame for its light, but do not forget the lampholder standing in the shade with constancy of patience."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "65 Tiny grass, your steps are small, but you possess the earth under your tread."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "66 The infant flower opens its bud and cries, \"Dear World, please do not fade.\""
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "67 God grows weary of great kingdoms, but never of little flowers."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "68"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "69 \"I give my whole water in joy,\" sings the waterfall, \"though little of it is enough for the thirsty.\""
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "70 Where is the fountain that throws up these flowers in a ceaseless outbreak of ecstasy?"
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "71 The woodcutter's axe begged for its handle from the tree."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "72 In my solitude of heart I feel the sigh of this widowed evening veiled with mist and rain."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "73 Chastity is a wealth that comes from abundance of love."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "74 The mist, like love, plays upon the heart of the hills and brings out surprises of beauty."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "75 We read the world wrong and say that it deceives us."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "76 The poet wind is out over the sea and the forest to seek his own voice."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "77 Every child comes with the message that God is not yet discouraged of man."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "78"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "The tree seeks his solitude of the sky."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "79"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "80 Your voice, my friend, wanders in my heart, like the muffled sound of the sea among these listening pines."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "81 What is this unseen flame of darkness whose sparks are the stars?"
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "82 Let life be beautiful like summer flowers and death like autumn leaves."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "83 He who wants to do good knocks at the gate; he who loves finds the gate open."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "84 In death the many becomes one; in life the one becomes many."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "85 The artist is the lover of Nature, therefore he is her slave and her master."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "86 \"How far are you from me, O Fruit?\""
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "\"I am hidden in your heart, O Flower.\""
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "87 This longing is for the one who is felt in the dark, but not seen in the day."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "88 \"You are the big drop of dew under the lotus leaf, I am the smaller one on its upper side,\" said the dewdrop to the lake."
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "89 The scabbard is content to be dull when it protects the keenness of the sword."
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "90 In darkness the One appears as uniform; in the light the One appears as manifold."
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "91 The great earth makes herself hospitable with the help of the grass."
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "92 The birth and death of the leaves are the rapid whirls of the eddy whose wider circles move slowly among stars."
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "93"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "The world kept it prisoner on her throne. Love said to the world, \"I am thine.\""
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "94 The mist is like the earth's desire. It hides the sun for whom she cries."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "95 Be still, my heart, these great trees are prayers."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "96 The noise of the moment scoffs at the music of the Eternal."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "97 I think of other ages that floated upon the stream of life and love and death and are forgotten, and I feel the freedom of passing away."
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "98"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "It waits to be lifted in the night."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "99 Death's stamp gives value to the coin of life; making it possible to buy with life what is truly precious."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "100"
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "The morning crowned it with splendour."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "101 The dust receives insult and in return offers her flowers."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "102 Do not linger to gather flowers to keep them, but walk on, for flowers will keep themselves blooming all your way."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "103"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Branches are roots in the air."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "104 The music of the far-away summer flutters around the Autumn seeking its former nest."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "105 Do not insult your friend by lending him merits from your own pocket."
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "106 The touch of the nameless days clings to my heart like mosses round the old tree."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "107 The echo mocks her origin to prove she is the original."
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "108 God is ashamed when the prosperous boasts of His special favour."
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "109 I cast my own shadow upon my path, because I have a lamp that has not been lighted."
+    },
+    {
+      "id": "s16-7",
+      "sceneId": "s16",
+      "text": "110 Man goes into the noisy crowd to drown his own clamour of silence."
+    },
+    {
+      "id": "s16-8",
+      "sceneId": "s16",
+      "text": "111 That which ends in exhaustion is death, but the perfect ending is in the endless."
+    },
+    {
+      "id": "s16-9",
+      "sceneId": "s16",
+      "text": "112 The sun has his simple robe of light. The clouds are decked with gorgeousness."
+    },
+    {
+      "id": "s16-10",
+      "sceneId": "s16",
+      "text": "113 The hills are like shouts of children who raise their arms, trying to catch stars."
+    },
+    {
+      "id": "s16-11",
+      "sceneId": "s16",
+      "text": "114 The road is lonely in its crowd for it is not loved."
+    },
+    {
+      "id": "s16-12",
+      "sceneId": "s16",
+      "text": "115 The power that boasts of its mischiefs is laughed at by the yellow leaves that fall, and clouds that pass by."
+    },
+    {
+      "id": "s16-13",
+      "sceneId": "s16",
+      "text": "116 The earth hums to me to-day in the sun, like a woman at her spinng, some ballad of the ancient time in a forgotten tongue."
+    },
+    {
+      "id": "s16-14",
+      "sceneId": "s16",
+      "text": "117 The grass-blade is worth of the great world where it grows."
+    },
+    {
+      "id": "s16-15",
+      "sceneId": "s16",
+      "text": "118"
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "Sleep is a husband who silently suffers."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "119 The night kisses the fading day whispering to his ear, \"I am death, your mother. I am to give you fresh birth.\""
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "120 I feel, thy beauty, dark night, like that of the loved woman when she has put out the lamp."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "121 I carry in my world that flourishes the worlds that have failed."
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "122 Dear friend, I feel the silence of your great thoughts of may a deepening eventide on this beach when I listen to these waves."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "123 The bird thinks it is an act of kindness to give the fish a lift in the air."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "124 \"In the moon thou sendest thy love letters to me,\" said the night to the sun."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "\"I leave my answers in tears upon the grass.\""
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "125 The Great is a born child; when he dies he gives his great childhood to the world."
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "126 Not hammerstrokes, but dance of the water sings the pebbles into perfection."
+    },
+    {
+      "id": "s17-10",
+      "sceneId": "s17",
+      "text": "127 Bees sip honey from flowers and hum their thanks when they leave. The gaudy butterfly is sure that the flowers owe thanks to him."
+    },
+    {
+      "id": "s17-11",
+      "sceneId": "s17",
+      "text": "128 To be outspoken is easy when you do not wait to speak the complete truth."
+    },
+    {
+      "id": "s17-12",
+      "sceneId": "s17",
+      "text": "129 Asks the Possible to the Impossible, \"Where is your dwelling place?\""
+    },
+    {
+      "id": "s17-13",
+      "sceneId": "s17",
+      "text": "\"In the dreams of the impotent,\" comes the answer."
+    },
+    {
+      "id": "s17-14",
+      "sceneId": "s17",
+      "text": "130 If you shut your door to all errors truth will be shut out."
+    },
+    {
+      "id": "s17-15",
+      "sceneId": "s17",
+      "text": "131 I hear some rustle of things behind my sadness of heart,--I cannot see them."
+    },
+    {
+      "id": "s17-16",
+      "sceneId": "s17",
+      "text": "132"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "The stillness of the sea stirs in waves."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "133"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "The flower becomes fruit when it worships."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "134 The roots below the earth claim no rewards for making the branches fruitful."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "135"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "I look at the swaying branches and ponder over the greatness of all things."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "136 Storm of midnight, like a giant child awakened in the untimely dark, has begun to play and shout."
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "137 Thou raisest thy waves vainly to follow thy lover. O sea, thou lonely bride of the storm."
+    },
+    {
+      "id": "s20-3",
+      "sceneId": "s20",
+      "text": "138 \"I am ashamed of my emptiness,\" said the Word to the Work. \"I know how poor I am when I see you,\" said the Work to the Word."
+    },
+    {
+      "id": "s20-4",
+      "sceneId": "s20",
+      "text": "139 Time is the wealth of change, but the clock in its parody makes it mere change and no wealth."
+    },
+    {
+      "id": "s20-5",
+      "sceneId": "s20",
+      "text": "140"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "In fiction she moves with ease."
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "141 When I travelled to here and to there, I was tired of thee, O Road, but now when thou leadest me to everywhere I am wedded to thee in love."
+    },
+    {
+      "id": "s21-2",
+      "sceneId": "s21",
+      "text": "142 Let me think that there is one among those stars that guides my life through the dark unknown."
+    },
+    {
+      "id": "s21-3",
+      "sceneId": "s21",
+      "text": "143 Woman, with the grace of your fingers you touched my things and order came out like music."
+    },
+    {
+      "id": "s21-4",
+      "sceneId": "s21",
+      "text": "144 One sad voice has its nest among the ruins of the years."
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "145"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "Save me from the dying embers hidden under ashes."
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "146"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "But oh for my little lamp unlit in my house."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "147"
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Wash thy soul with silence."
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "148 Gaps are left in life through which comes the sad music of death."
+    },
+    {
+      "id": "s25-2",
+      "sceneId": "s25",
+      "text": "149 The world has opened its heart of light in the morning."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "150 My thoughts shimmer with these shimmering leaves and my heart sings with the touch of this sunlight; my life is glad to be floating with all things into the blue of space, into the dark of time."
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "151 God's great power is in the gentle breeze, not in the storm."
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "152 This is a dream in which things are all loose and they oppress. I shall find them gathered in thee when I awake and shall be free."
+    },
+    {
+      "id": "s26-3",
+      "sceneId": "s26",
+      "text": "153 \"Who is there to take up my duties?\" asked the setting sun."
+    },
+    {
+      "id": "s26-4",
+      "sceneId": "s26",
+      "text": "\"I shall do what I can, my Master,\" said the earthen lamp."
+    },
+    {
+      "id": "s26-5",
+      "sceneId": "s26",
+      "text": "154 By plucking her petals you do not gather the beauty of the flower."
+    },
+    {
+      "id": "s26-6",
+      "sceneId": "s26",
+      "text": "155 Silence will carry your voice like the nest that holds the sleeping birds."
+    },
+    {
+      "id": "s26-7",
+      "sceneId": "s26",
+      "text": "156"
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "The Middling keeps aloof."
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "157 The night opens the flowers in secret and allows the day to get thanks."
+    },
+    {
+      "id": "s27-2",
+      "sceneId": "s27",
+      "text": "158 Power takes as ingratitude the writhings of its victims."
+    },
+    {
+      "id": "s27-3",
+      "sceneId": "s27",
+      "text": "159 When we rejoice in our fulness, then we can part with our fruits with joy."
+    },
+    {
+      "id": "s27-4",
+      "sceneId": "s27",
+      "text": "160 The raindrops kissed the earth and whispered,--\"We are thy homesick children, mother, come back to thee from the heaven.\""
+    },
+    {
+      "id": "s27-5",
+      "sceneId": "s27",
+      "text": "161 The cobweb pretends to catch dew-drops and catches flies."
+    },
+    {
+      "id": "s27-6",
+      "sceneId": "s27",
+      "text": "162 Love! when you come with the burning lamp of pain in your hand,"
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "163 \"The learned say that your lights will one day be no more.\" said the firefly to the stars."
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "164 In the dusk of the evening the bird of some early dawn comes to the nest of my silence."
+    },
+    {
+      "id": "s29-1",
+      "sceneId": "s29",
+      "text": "165 Thoughts pass in my mind like flocks of ducks in the sky."
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "166 The canal loves to think that rivers exist solely to supply it with water."
+    },
+    {
+      "id": "s30-1",
+      "sceneId": "s30",
+      "text": "167 The world has kissed my soul with its pain, asking for its return in songs."
+    },
+    {
+      "id": "s30-2",
+      "sceneId": "s30",
+      "text": "168 That which oppresses me, is it my soul trying to come out in the open, or the soul of the world knocking at my heart for its entrance?"
+    },
+    {
+      "id": "s30-3",
+      "sceneId": "s30",
+      "text": "169 Thought feeds itself with its own words and grows."
+    },
+    {
+      "id": "s30-4",
+      "sceneId": "s30",
+      "text": "170 I have dipped the vessel of my heart into this silent hour; it has filled with love."
+    },
+    {
+      "id": "s30-5",
+      "sceneId": "s30",
+      "text": "171"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "When you have to say, \"Let us do something,\" then begins mischief."
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "172 The sunflower blushed to own the nameless flower as her kin. The sun rose and smiled on it, saying, \"Are you well, my darling?\""
+    },
+    {
+      "id": "s31-2",
+      "sceneId": "s31",
+      "text": "173 \"Who drives me forward like fate?\""
+    },
+    {
+      "id": "s31-3",
+      "sceneId": "s31",
+      "text": "\"The Myself striding on my back.\""
+    },
+    {
+      "id": "s31-4",
+      "sceneId": "s31",
+      "text": "174 The clouds fill the watercups of the river, hiding themselves in the distant hills."
+    },
+    {
+      "id": "s31-5",
+      "sceneId": "s31",
+      "text": "175 I spill water from my water jar as I walk on my way,"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "176 The water in a vessel is sparkling; the water in the sea is dark. The small truth has words that are clear; the great truth has great silence."
+    },
+    {
+      "id": "s32-1",
+      "sceneId": "s32",
+      "text": "177 Your smile was the flowers of your own fields, your talk was the rustle of your own mountain pines, but your heart was the woman that we all know."
+    },
+    {
+      "id": "s32-2",
+      "sceneId": "s32",
+      "text": "178 It is the little things that I leave behind for my loved ones,-- great things are for everyone."
+    },
+    {
+      "id": "s32-3",
+      "sceneId": "s32",
+      "text": "179 Woman, thou hast encircled the world's heart with the depth of thy tears as the sea has the earth."
+    },
+    {
+      "id": "s32-4",
+      "sceneId": "s32",
+      "text": "180 The sunshine greets me with a smile. The rain, his sad sister, talks to my heart."
+    },
+    {
+      "id": "s32-5",
+      "sceneId": "s32",
+      "text": "181 My flower of the day dropped its petals forgotten. In the evening it ripens into a golden fruit of memory."
+    },
+    {
+      "id": "s32-6",
+      "sceneId": "s32",
+      "text": "182 I am like the road in the night listening to the footfalls of its memories in silence."
+    },
+    {
+      "id": "s32-7",
+      "sceneId": "s32",
+      "text": "183 The evening sky to me is like a window, and a lighted lamp, and a waiting behind it."
+    },
+    {
+      "id": "s32-8",
+      "sceneId": "s32",
+      "text": "184 He who is too busy doing good finds no time to be good."
+    },
+    {
+      "id": "s32-9",
+      "sceneId": "s32",
+      "text": "185 I am the autumn cloud, empty of rain, see my fulness in the field of ripened rice."
+    },
+    {
+      "id": "s32-10",
+      "sceneId": "s32",
+      "text": "186"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "But God in shame hastens to hide its memory under the green grass."
+    },
+    {
+      "id": "s33-1",
+      "sceneId": "s33",
+      "text": "187 Toes are the fingers that have forsaken their past."
+    },
+    {
+      "id": "s33-2",
+      "sceneId": "s33",
+      "text": "188 Darkness travels towards light, but blindness towards death."
+    },
+    {
+      "id": "s33-3",
+      "sceneId": "s33",
+      "text": "189 The pet dog suspects the universe for scheming to take its place."
+    },
+    {
+      "id": "s33-4",
+      "sceneId": "s33",
+      "text": "190"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "Let the world find its way to you."
+    },
+    {
+      "id": "s34-1",
+      "sceneId": "s34",
+      "text": "191 The bow whispers to the arrow before it speeds forth--\"Your freedom is mine.\""
+    },
+    {
+      "id": "s34-2",
+      "sceneId": "s34",
+      "text": "192 Woman, in your laughter you have the music of the fountain of life."
+    },
+    {
+      "id": "s34-3",
+      "sceneId": "s34",
+      "text": "193"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "It makes the hand bleed that uses it."
+    },
+    {
+      "id": "s35-1",
+      "sceneId": "s35",
+      "text": "194 God loves man's lamp lights better than his own great stars."
+    },
+    {
+      "id": "s35-2",
+      "sceneId": "s35",
+      "text": "195 This world is the world of wild storms kept tame with the music of beauty."
+    },
+    {
+      "id": "s35-3",
+      "sceneId": "s35",
+      "text": "196 \"My heart is like the golden casket of thy kiss,\" said the sunset cloud to the sun."
+    },
+    {
+      "id": "s35-4",
+      "sceneId": "s35",
+      "text": "197 By touching you may kill, by keeping away you may possess."
+    },
+    {
+      "id": "s35-5",
+      "sceneId": "s35",
+      "text": "198 The cricket's chirp and the patter of rain come to me through the dark, like the rustle of dreams from my past youth."
+    },
+    {
+      "id": "s35-6",
+      "sceneId": "s35",
+      "text": "199 \"I have lost my dewdrop,\" cries the flower to the morning sky that has lost all its stars."
+    },
+    {
+      "id": "s35-7",
+      "sceneId": "s35",
+      "text": "200 The burning log bursts in flame and cries,--\"This is my flower, my death.\""
+    },
+    {
+      "id": "s35-8",
+      "sceneId": "s35",
+      "text": "201 The wasp thinks that the honey-hive of the neighbouring bees is too small. His neighbours ask him to build one still smaller."
+    },
+    {
+      "id": "s35-9",
+      "sceneId": "s35",
+      "text": "202 \"I cannot keep your waves,\" says the bank to the river."
+    },
+    {
+      "id": "s35-10",
+      "sceneId": "s35",
+      "text": "\"Let me keep your footprints in my heart.\""
+    },
+    {
+      "id": "s35-11",
+      "sceneId": "s35",
+      "text": "203 The day, with the noise of this little earth, drowns the silence of all worlds."
+    },
+    {
+      "id": "s35-12",
+      "sceneId": "s35",
+      "text": "204 The song feels the infinite in the air, the picture in the earth, the poem in the air and the earth; For its words have meaning that walks and music that soars."
+    },
+    {
+      "id": "s35-13",
+      "sceneId": "s35",
+      "text": "205 When the sun goes down to the West, the East of his morning stands before him in silence."
+    },
+    {
+      "id": "s35-14",
+      "sceneId": "s35",
+      "text": "206 Let me not put myself wrongly to my world and set it against me."
+    },
+    {
+      "id": "s35-15",
+      "sceneId": "s35",
+      "text": "207"
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "208 Let my doing nothing when I have nothing to do become untroubled in its depth of peace like the evening in the seashore when the water is silent."
+    },
+    {
+      "id": "s36-1",
+      "sceneId": "s36",
+      "text": "209 Maiden, your simplicity, like the blueness of the lake, reveals your depth of truth."
+    },
+    {
+      "id": "s36-2",
+      "sceneId": "s36",
+      "text": "210 The best does not come alone. It comes with the company of the all."
+    },
+    {
+      "id": "s36-3",
+      "sceneId": "s36",
+      "text": "211 God's right hand is gentle, but terrible is his left hand."
+    },
+    {
+      "id": "s36-4",
+      "sceneId": "s36",
+      "text": "212 My evening came among the alien trees and spoke in a language which my morning stars did not know."
+    },
+    {
+      "id": "s36-5",
+      "sceneId": "s36",
+      "text": "213 Night's darkness is a bag that bursts with the gold of the dawn."
+    },
+    {
+      "id": "s36-6",
+      "sceneId": "s36",
+      "text": "214 Our desire lends the colours of the rainbow to the mere mists and vapours of life."
+    },
+    {
+      "id": "s36-7",
+      "sceneId": "s36",
+      "text": "215 God waits to win back his own flowers as gifts from man's hands."
+    },
+    {
+      "id": "s36-8",
+      "sceneId": "s36",
+      "text": "216 My sad thoughts tease me asking me their own names."
+    },
+    {
+      "id": "s36-9",
+      "sceneId": "s36",
+      "text": "217 The service of the fruit is precious, the service of the flower is sweet, but let my service be the service of the leaves in its shade of humble devotion."
+    },
+    {
+      "id": "s36-10",
+      "sceneId": "s36",
+      "text": "218 My heart has spread its sails to the idle winds for the shadowy island of Anywhere."
+    },
+    {
+      "id": "s36-11",
+      "sceneId": "s36",
+      "text": "219"
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "220 Make me thy cup and let my fulness be for thee and for thine."
+    },
+    {
+      "id": "s37-1",
+      "sceneId": "s37",
+      "text": "221 The storm is like the cry of some god in pain whose love the earth refuses."
+    },
+    {
+      "id": "s37-2",
+      "sceneId": "s37",
+      "text": "222 The world does not leak because death is not a crack."
+    },
+    {
+      "id": "s37-3",
+      "sceneId": "s37",
+      "text": "223 Life has become richer by the love that has been lost."
+    },
+    {
+      "id": "s37-4",
+      "sceneId": "s37",
+      "text": "224 My friend, your great heart shone with the sunrise of the East like the snowy summit of a lonely hill in the dawn."
+    },
+    {
+      "id": "s37-5",
+      "sceneId": "s37",
+      "text": "225 The fountain of death makes the still water of life play."
+    },
+    {
+      "id": "s37-6",
+      "sceneId": "s37",
+      "text": "226 Those who have everything but thee, my God, laugh at those who have nothing but thyself."
+    },
+    {
+      "id": "s37-7",
+      "sceneId": "s37",
+      "text": "227 The movement of life has its rest in its own music."
+    },
+    {
+      "id": "s37-8",
+      "sceneId": "s37",
+      "text": "228 Kicks only raise dust and not crops from the earth."
+    },
+    {
+      "id": "s37-9",
+      "sceneId": "s37",
+      "text": "229 Our names are the light that glows on the sea waves at night and then dies without leaving its signature."
+    },
+    {
+      "id": "s37-10",
+      "sceneId": "s37",
+      "text": "230 Let him only see the thorns who has eyes to see the rose."
+    },
+    {
+      "id": "s37-11",
+      "sceneId": "s37",
+      "text": "231 Set bird's wings with gold and it will never again soar in the sky."
+    },
+    {
+      "id": "s37-12",
+      "sceneId": "s37",
+      "text": "232 The same lotus of our clime blooms here in the alien water with the same sweetness, under another name."
+    },
+    {
+      "id": "s37-13",
+      "sceneId": "s37",
+      "text": "233"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "234 The moon has her light all over the sky, her dark spots to herself."
+    },
+    {
+      "id": "s38-1",
+      "sceneId": "s38",
+      "text": "235 Do not say, \"It is morning,\" and dismiss it with a name of yesterday. See it for the first time as a new-born child that has no name."
+    },
+    {
+      "id": "s38-2",
+      "sceneId": "s38",
+      "text": "236 Smoke boasts to the sky, and Ashes to the earth, that they are brothers to the fire."
+    },
+    {
+      "id": "s38-3",
+      "sceneId": "s38",
+      "text": "237 The raindrop whispered to the jasmine, \"Keep me in your heart for ever.\""
+    },
+    {
+      "id": "s38-4",
+      "sceneId": "s38",
+      "text": "The jasmine sighed, \"Alas,\" and dropped to the ground."
+    },
+    {
+      "id": "s38-5",
+      "sceneId": "s38",
+      "text": "238"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "I am a poet."
+    },
+    {
+      "id": "s39-1",
+      "sceneId": "s39",
+      "text": "239 The dim silence of my mind seems filled with crickets' chirp--the grey twilight of sound."
+    },
+    {
+      "id": "s39-2",
+      "sceneId": "s39",
+      "text": "240 Rockets, your insult to the stars follows yourself back to the earth."
+    },
+    {
+      "id": "s39-3",
+      "sceneId": "s39",
+      "text": "241 Thou hast led me through my crowded travels of the day to my evening's loneliness. I wait for its meaning through the stillness of the night."
+    },
+    {
+      "id": "s39-4",
+      "sceneId": "s39",
+      "text": "242 This life is the crossing of a sea, where we meet in the same narrow ship. In death we reach the shore and go to our different worlds."
+    },
+    {
+      "id": "s39-5",
+      "sceneId": "s39",
+      "text": "243 The stream of truth flows through its channels of mistakes."
+    },
+    {
+      "id": "s39-6",
+      "sceneId": "s39",
+      "text": "244 My heart is homesick to-day for the one sweet hour across the sea of time."
+    },
+    {
+      "id": "s39-7",
+      "sceneId": "s39",
+      "text": "245 The bird-song is the echo of the morning light back from the earth."
+    },
+    {
+      "id": "s39-8",
+      "sceneId": "s39",
+      "text": "246 \"Are you too proud to kiss me?\" the morning light asks the buttercup."
+    },
+    {
+      "id": "s39-9",
+      "sceneId": "s39",
+      "text": "247 \"How may I sing to thee and worship, O Sun?\" asked the little flower."
+    },
+    {
+      "id": "s39-10",
+      "sceneId": "s39",
+      "text": "\"By the simple silence of thy purity,\" answered the sun."
+    },
+    {
+      "id": "s39-11",
+      "sceneId": "s39",
+      "text": "248"
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "249 Dark clouds become heaven's flowers when kissed by light."
+    },
+    {
+      "id": "s40-1",
+      "sceneId": "s40",
+      "text": "250 Let not the sword-blade mock its handle for being blunt."
+    },
+    {
+      "id": "s40-2",
+      "sceneId": "s40",
+      "text": "251 The night's silence, like a deep lamp, is burning with the light of its milky way."
+    },
+    {
+      "id": "s40-3",
+      "sceneId": "s40",
+      "text": "252 Around the sunny island of Life swells day and night death's limitless song of the sea."
+    },
+    {
+      "id": "s40-4",
+      "sceneId": "s40",
+      "text": "253 Is not this mountain like a flower, with its petals of hills, drinking the sunlight?"
+    },
+    {
+      "id": "s40-5",
+      "sceneId": "s40",
+      "text": "254 The real with its meaning read wrong and emphasis misplaced is the unreal."
+    },
+    {
+      "id": "s40-6",
+      "sceneId": "s40",
+      "text": "255 Find your beauty, my heart, from the world's movement, like the boat that has the grace of the wind and the water."
+    },
+    {
+      "id": "s40-7",
+      "sceneId": "s40",
+      "text": "256 The eyes are not proud of their sight but of their eyeglasses."
+    },
+    {
+      "id": "s40-8",
+      "sceneId": "s40",
+      "text": "257 I live in this little world of mine and am afraid to make it the least less. Lift me into thy world and let me have the freedom gladly to lose my all."
+    },
+    {
+      "id": "s40-9",
+      "sceneId": "s40",
+      "text": "258 The false can never grow into truth by growing in power."
+    },
+    {
+      "id": "s40-10",
+      "sceneId": "s40",
+      "text": "259 My heart, with its lapping waves of song, longs to caress this green world of the sunny day."
+    },
+    {
+      "id": "s40-11",
+      "sceneId": "s40",
+      "text": "260 Wayside grass, love the star, then your dreams will come out in flowers."
+    },
+    {
+      "id": "s40-12",
+      "sceneId": "s40",
+      "text": "261 Let your music, like a sword, pierce the noise of the market to its heart."
+    },
+    {
+      "id": "s40-13",
+      "sceneId": "s40",
+      "text": "262 The trembling leaves of this tree touch my heart like the fingers of an infant child."
+    },
+    {
+      "id": "s40-14",
+      "sceneId": "s40",
+      "text": "263"
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "It waits to be lifted in the night."
+    },
+    {
+      "id": "s41-1",
+      "sceneId": "s41",
+      "text": "264"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "It sought the path of the butterfly."
+    },
+    {
+      "id": "s42-1",
+      "sceneId": "s42",
+      "text": "265 I am in the world of the roads. The night comes. Open thy gate, thou world of the home."
+    },
+    {
+      "id": "s42-2",
+      "sceneId": "s42",
+      "text": "266 I have sung the songs of thy day. In the evening let me carry thy lamp through the stormy path."
+    },
+    {
+      "id": "s42-3",
+      "sceneId": "s42",
+      "text": "267"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "Come into my infinite loneliness, my Lover."
+    },
+    {
+      "id": "s43-1",
+      "sceneId": "s43",
+      "text": "268 Death belongs to life as birth does. The walk is in the raising of the foot as in the laying of it down."
+    },
+    {
+      "id": "s43-2",
+      "sceneId": "s43",
+      "text": "269 I have learnt the simple meaning of thy whispers in flowers and sunshine--teach me to know thy words in pain and death."
+    },
+    {
+      "id": "s43-3",
+      "sceneId": "s43",
+      "text": "270 The night's flower was late when the morning kissed her, she shivered and sighed and dropped to the ground."
+    },
+    {
+      "id": "s43-4",
+      "sceneId": "s43",
+      "text": "271 Through the sadness of all things I hear the crooning of the"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "272 I came to your shore as a stranger, I lived in your house as a guest, I leave your door as a friend, my earth."
+    },
+    {
+      "id": "s44-1",
+      "sceneId": "s44",
+      "text": "273 Let my thoughts come to you, when I am gone, like the afterglow of sunset at the margin of starry silence."
+    },
+    {
+      "id": "s44-2",
+      "sceneId": "s44",
+      "text": "274 Light in my heart the evening star of rest and then let the night whisper to me of love."
+    },
+    {
+      "id": "s44-3",
+      "sceneId": "s44",
+      "text": "275"
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "I stretch my hands through the coverlet of night for thee, Mother."
+    },
+    {
+      "id": "s45-1",
+      "sceneId": "s45",
+      "text": "276 The day of work is done. Hide my face in your arms, Mother."
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "277 The lamp of meeting burns long; it goes out in a moment at the parting."
+    },
+    {
+      "id": "s46-1",
+      "sceneId": "s46",
+      "text": "278 One word keep for me in thy silence, O World, when I am dead, \"I have loved.\""
+    },
+    {
+      "id": "s46-2",
+      "sceneId": "s46",
+      "text": "279"
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "280 Let the dead have the immortality of fame, but the living the immortality of love."
+    },
+    {
+      "id": "s47-1",
+      "sceneId": "s47",
+      "text": "281 I have seen thee as the half-awakened child sees his mother in the dusk of the dawn and then smiles and sleeps again."
+    },
+    {
+      "id": "s47-2",
+      "sceneId": "s47",
+      "text": "282 I shall die again and again to know that life is inexhaustible."
+    },
+    {
+      "id": "s47-3",
+      "sceneId": "s47",
+      "text": "283 While I was passing with the crowd in the road I saw thy smile from the balcony and I sang and forgot all noise."
+    },
+    {
+      "id": "s47-4",
+      "sceneId": "s47",
+      "text": "284 Love is life in its fulness like the cup with its wine."
+    },
+    {
+      "id": "s47-5",
+      "sceneId": "s47",
+      "text": "285 They light their own lamps and sing their own words in their temples. But the birds sing thy name in thine own morning light,--for thy name is joy."
+    },
+    {
+      "id": "s47-6",
+      "sceneId": "s47",
+      "text": "286 Lead me in the centre of thy silence to fill my heart with songs."
+    },
+    {
+      "id": "s47-7",
+      "sceneId": "s47",
+      "text": "287 Let them live who choose in their own hissing world of fireworks."
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "288 Love's pain sang round my life like the unplumbed sea, and love's joy sang like birds in its flowering groves."
+    },
+    {
+      "id": "s48-1",
+      "sceneId": "s48",
+      "text": "289"
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "I shall know thy darkness and shall love it."
+    },
+    {
+      "id": "s49-1",
+      "sceneId": "s49",
+      "text": "290 When I stand before thee at the day's end thou shalt see my scars and know that I had my wounds and also my healing."
+    },
+    {
+      "id": "s49-2",
+      "sceneId": "s49",
+      "text": "291 Some day I shall sing to thee in the sunrise of some other world, \"I have seen thee before in the light of the earth, in the love of man.\""
+    },
+    {
+      "id": "s49-3",
+      "sceneId": "s49",
+      "text": "292 Clouds come floating into my life from other days no longer to shed rain or usher storm but to give colour to my sunset sky."
+    },
+    {
+      "id": "s49-4",
+      "sceneId": "s49",
+      "text": "293 Truth raises against itself the storm that scatters its seeds broadcast."
+    },
+    {
+      "id": "s49-5",
+      "sceneId": "s49",
+      "text": "294 The storm of the last night has crowned this morning with golden peace."
+    },
+    {
+      "id": "s49-6",
+      "sceneId": "s49",
+      "text": "295 Truth seems to come with its final word; and the final word gives birth to its next."
+    },
+    {
+      "id": "s49-7",
+      "sceneId": "s49",
+      "text": "296 Blessed is he whose fame does not outshine his truth."
+    },
+    {
+      "id": "s49-8",
+      "sceneId": "s49",
+      "text": "297 Sweetness of thy name fills my heart when I forget mine--like thy morning sun when the mist is melted."
+    },
+    {
+      "id": "s49-9",
+      "sceneId": "s49",
+      "text": "298 The silent night has the beauty of the mother and the clamorous day of the child."
+    },
+    {
+      "id": "s49-10",
+      "sceneId": "s49",
+      "text": "299 The world loved man when he smiled. The world became afraid of him when he laughed."
+    },
+    {
+      "id": "s49-11",
+      "sceneId": "s49",
+      "text": "300 God waits for man to regain his childhood in wisdom."
+    },
+    {
+      "id": "s49-12",
+      "sceneId": "s49",
+      "text": "301 Let me feel this world as thy love taking form, then my love will help it."
+    },
+    {
+      "id": "s49-13",
+      "sceneId": "s49",
+      "text": "302 Thy sunshine smiles upon the winter days of my heart, never doubting of its spring flowers."
+    },
+    {
+      "id": "s49-14",
+      "sceneId": "s49",
+      "text": "303 God kisses the finite in his love and man the infinite."
+    },
+    {
+      "id": "s49-15",
+      "sceneId": "s49",
+      "text": "304 Thou crossest desert lands of barren years to reach the moment of fulfilment."
+    },
+    {
+      "id": "s49-16",
+      "sceneId": "s49",
+      "text": "305"
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "306 Thou wilt find, Eternal Traveller, marks of thy footsteps across my songs."
+    },
+    {
+      "id": "s50-1",
+      "sceneId": "s50",
+      "text": "307 Let me not shame thee, Father, who displayest thy glory in thy children."
+    },
+    {
+      "id": "s50-2",
+      "sceneId": "s50",
+      "text": "308 Cheerless is the day, the light under frowning clouds is like a punished child with traces of tears on its pale cheeks, and the cry of the wind is like the cry of a wounded world. But I know I am travelling to meet my Friend."
+    },
+    {
+      "id": "s50-3",
+      "sceneId": "s50",
+      "text": "309 To-night there is a stir among the palm leaves, a swell in the sea, Full Moon, like the heart throb of the world. From what unknown sky hast thou carried in thy silence the aching secret of love?"
+    },
+    {
+      "id": "s50-4",
+      "sceneId": "s50",
+      "text": "310 I dream of a star, an island of light, where I shall be born and in the depth of its quickening leisure my life will ripen its works like the ricefield in the autumn sun."
+    },
+    {
+      "id": "s50-5",
+      "sceneId": "s50",
+      "text": "311 The smell of the wet earth in the rain rises like a great chant of praise from the voiceless multitude of the insignificant."
+    },
+    {
+      "id": "s50-6",
+      "sceneId": "s50",
+      "text": "312 That love can ever lose is a fact that we cannot accept as truth."
+    },
+    {
+      "id": "s50-7",
+      "sceneId": "s50",
+      "text": "313 We shall know some day that death can never rob us of that which our soul has gained, for her gains are one with herself."
+    },
+    {
+      "id": "s50-8",
+      "sceneId": "s50",
+      "text": "314 God comes to me in the dusk of my evening with the flowers from my past kept fresh in his basket."
+    },
+    {
+      "id": "s50-9",
+      "sceneId": "s50",
+      "text": "315 When all the strings of my life will be tuned, my Master, then at every touch of thine will come out the music of love."
+    },
+    {
+      "id": "s50-10",
+      "sceneId": "s50",
+      "text": "316 Let me live truly, my Lord, so that death to me become true."
+    },
+    {
+      "id": "s50-11",
+      "sceneId": "s50",
+      "text": "317 Man's history is waiting in patience for the triumph of the insulted man."
+    },
+    {
+      "id": "s50-12",
+      "sceneId": "s50",
+      "text": "318 I feel thy gaze upon my heart this moment like the sunny silence of the morning upon the lonely field whose harvest is over."
+    },
+    {
+      "id": "s50-13",
+      "sceneId": "s50",
+      "text": "319 I long for the Island of Songs across this heaving Sea of Shouts."
+    },
+    {
+      "id": "s50-14",
+      "sceneId": "s50",
+      "text": "320 The prelude of the night is commenced in the music of the sunset, in its solemn hymn to the ineffable dark."
+    },
+    {
+      "id": "s50-15",
+      "sceneId": "s50",
+      "text": "321 I have scaled the peak and found no shelter in fame's bleak and barren height. Lead me, my Guide, before the light fades, into the valley of quiet where life's harvest mellows into golden wisdom."
+    },
+    {
+      "id": "s50-16",
+      "sceneId": "s50",
+      "text": "322 Things look phantastic in this dimness of the dusk--the spires whose bases are lost in the dark and tree tops like blots of ink. I shall wait for the morning and wake up to see thy city in the light."
+    },
+    {
+      "id": "s50-17",
+      "sceneId": "s50",
+      "text": "323 I have suffered and despaired and known death and I am glad that"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "324 There are tracts in my life that are bare and silent. They are the open spaces where my busy days had their light and air."
+    },
+    {
+      "id": "s51-1",
+      "sceneId": "s51",
+      "text": "325 Release me from my unfulfilled past clinging to me from behind making death difficult."
+    },
+    {
+      "id": "s51-2",
+      "sceneId": "s51",
+      "text": "326 Let this be my last word, that I trust in thy love."
+    }
+  ]
+}

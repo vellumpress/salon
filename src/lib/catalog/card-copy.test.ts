@@ -1835,6 +1835,76 @@ test("Tier B batches 1–2 are local format-min binds, never Featured", () => {
   }
 });
 
+/** Tier B format-min CLEAR batches 7–8. Later only — never Featured, cold-open untouched. */
+const TIER_B_BATCH_7_8 = [
+  "atalanta-in-calydon",
+  "best-russian-short-stories",
+  "childe-harolds-pilgrimage",
+  "don-juan",
+  "drum-taps",
+  "endymion",
+  "evangeline-a-tale-of-acadie",
+  "fruit-gathering",
+  "idylls-of-the-king",
+  "kristin",
+  "lamia",
+  "leaves-of-grass",
+  "maria-chapdelaine",
+  "mashi-and-other-stories",
+  "more-translations-from-the-chinese",
+  "omoo",
+  "paradise-lost",
+  "pierre-or-the-ambiguities",
+  "selected-polish-tales",
+  "south-american-jungle-tales",
+  "stray-birds",
+  "tender-buttons",
+  "the-altar-of-the-dead",
+  "the-confidence-man",
+  "the-defence-of-guenevere-and-other-poems",
+  "the-emperor-of-portugallia",
+  "the-four-horsemen-of-the-apocalypse",
+  "the-gentleman-from-san-francisco-and-other-stori",
+  "the-hungry-stones-and-other-stories",
+  "the-last-man",
+  "the-marriage-of-heaven-and-hell",
+  "the-piazza-tales",
+  "the-rime-of-the-ancient-mariner",
+  "the-song-of-hiawatha",
+  "trial",
+  "typee",
+  "villette",
+  "within-a-budding-grove",
+  "yama-the-pit",
+  "zeno",
+] as const;
+
+test("Tier B batches 7–8 are local format-min binds, never Featured", () => {
+  assert.equal(TIER_B_BATCH_7_8.length, 40);
+  assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  for (const id of TIER_B_BATCH_7_8) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(curatorialTrack(id), "later", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assertNoStubOpening(id);
+    const full = textWork(id);
+    assert.equal(work!.breaths, full.breaths.length, id);
+    assert.ok(full.breaths.length > 1, id);
+    assert.ok(
+      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
+      `${id} shelf opening`,
+    );
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
+  }
+});
+
 test("homepage examples keep country + concrete sentence", () => {
   assert.equal(countryFor(SHELF.find((w) => w.id === "passing")!), "United States");
   assert.match(blurbFor("passing"), /color line/i);

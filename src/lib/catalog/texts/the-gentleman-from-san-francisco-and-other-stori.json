@@ -1,0 +1,730 @@
+{
+  "id": "the-gentleman-from-san-francisco-and-other-stori",
+  "title": "The Gentleman from San Francisco and Other Stories",
+  "author": "Ivan Bunin",
+  "year": "1915",
+  "note": "Project Gutenberg 44998",
+  "minutes": 80,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Gentle Breathing",
+      "place": "Gentle Breathing",
+      "reentry": "In the cemetery above a fresh mound of earth stands a new cross of oak--strong, heavy, smooth, a pleasant thing to look at. It is April, but the days are grey. From a long way off one can see through the bare trees the tomb-stones in the ce",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Kasimir Stanislavovitch",
+      "place": "Kasimir Stanislavovitch",
+      "reentry": "On the yellow card with a nobleman's coronet the young porter at the Hotel \"Versailles\" somehow managed to read the Christian name and patronymic \"Kasimir Stanislavovitch.\"[1] There followed something still more complicated and still more d",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Footnote 1:",
+      "place": "Footnote 1:",
+      "reentry": "*I.e.* There was no family name. The name is Polish, not Russian.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "The Hogarth Press",
+      "place": "The Hogarth Press",
+      "reentry": "Paradise Road, Richmond, Surrey",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Previous Publications",
+      "place": "Previous Publications",
+      "reentry": "Clive Bell Poems. 2*s.* 6*d.* net.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "T. S. Eliot",
+      "place": "T. S. Eliot",
+      "reentry": "Poems. *Out of print.*",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "Roger Fry",
+      "place": "Roger Fry",
+      "reentry": "Twelve Original Woodcuts. Third impression. 5*s.* net.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Katherine Mansfield",
+      "place": "Katherine Mansfield",
+      "reentry": "Prelude. 3*s.* 6*d.* net.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "J. Middleton Murry",
+      "place": "J. Middleton Murry",
+      "reentry": "The Critic in Judgment. 2*s.* 6*d.* net.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "Leonard Woolf",
+      "place": "Leonard Woolf",
+      "reentry": "Stories of the East. 3*s.* net.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "Leonard & Virginia Woolf",
+      "place": "Leonard & Virginia Woolf",
+      "reentry": "Two Stories. *Out of print.*",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s11",
+      "title": "Forthcoming Publications",
+      "place": "Forthcoming Publications",
+      "reentry": "Karn. A Poem. By Ruth Manning-Sanders. 3*s.* 6*d.* net.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s12",
+      "title": "The Gentleman from San Francisco",
+      "place": "The Gentleman from San Francisco",
+      "reentry": "and other Stories. By I. A. Bunin. Translated from the Russian by S. S. Koteliansky and Leonard Woolf.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "In the cemetery above a fresh mound of earth stands a new cross of oak--strong, heavy, smooth, a pleasant thing to look at. It is April, but the days are grey. From a long way off one can see through the bare trees the tomb-stones in the cemetery--a spacious, real country or cathedral town cemetery; the cold wind goes whistling, whistling through the china wreath at the foot of the cross. In the cross itself is set a rather large bronze medallion, and in the medallion is a portrait of a smart and charming school-girl, with happy, astonishingly vivacious eyes."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "It is Olga Meschersky."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "As a little girl there was nothing to distinguish her in the noisy crowd of brown dresses which made its discordant and youthful hum in the corridors and class-rooms; all that one could say of her was that she was just one of a number of pretty, rich, happy little girls, that she was clever, but playful, and very careless of the precepts of her class-teacher. Then she began to develop and to blossom, not by days, but by hours. At fourteen, with a slim waist and graceful legs, there was already well developed the outline of her breasts and all those contours of which the charm has never yet been expressed in human words; at fifteen she was said to be a beauty. How carefully some of her school friends did their hair, how clean they were, how careful and restrained in their movements! But she was afraid of nothing--neither of ink-stains on her fingers, nor of a flushed face, nor of dishevelled hair, nor of a bare knee after a rush and a tumble. Without a thought or an effort on her part, imperceptibly there came to her everything which so distinguished her from the rest of the school during her last two years--daintiness, smartness, quickness, the bright and intelligent gleam in her eyes. No one danced like Olga Meschersky, no one could run or skate like her, no one at dances had as many admirers as she had, and for some reason no one was so popular with the junior classes. Imperceptibly she grew up into a girl and imperceptibly her fame in the school became established, and already there were rumours that she is flighty, that she cannot live without admirers, that the schoolboy, Shensin, is madly in love with her, that she, too, perhaps loves him, but is so changeable in her treatment of him that he tried to commit suicide...."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "During her last winter, Olga Meschersky went quite crazy with happiness, so they said at school. It was a snowy, sunny, frosty winter; the sun would go down early behind the grove of tall fir-trees in the snowy school garden; but it was always fine and radiant weather, with a promise of frost and sun again to-morrow, a walk in Cathedral Street, skating in the town park, a pink sunset, music, and that perpetually moving crowd in which Olga Meschersky seemed to be the smartest, the most careless, and the happiest. And then, one day, when she was rushing like a whirlwind through the recreation room with the little girls chasing her and screaming for joy, she was unexpectedly called up to the headmistress. She stopped short, took one deep breath, with a quick movement, already a habit, arranged her hair, gave a pull to the corners of her apron to bring it up on her shoulders, and with shining eyes ran upstairs. The headmistress, small, youngish, but grey-haired, sat quietly with her knitting in her hands at the writing-table, under the portrait of the Tsar."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "\"Good morning, Miss Meschersky,\" she said in French, without lifting her eyes from her knitting. \"I am sorry that this is not the first time that I have had to call you here to speak to you about your behaviour.\""
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "\"I am attending, madam,\" answered Olga, coming up to the table, looking at her brightly and happily, but with an expressionless face, and curtsying so lightly and gracefully, as only she could."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"You will attend badly--unfortunately I have become convinced of that,\" said the headmistress, giving a pull at the thread so that the ball rolled away over the polished floor, and Olga watched it with curiosity. The headmistress raised her eyes: \"I shall not repeat myself, I shall not say much,\" she said."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Olga very much liked the unusually clean and large study; on frosty days the air in it was so pleasant with the warmth from the shining Dutch fire-place, and the fresh lilies-of-the-valley on the writing-table. She glanced at the young Tsar, painted full-length in a splendid hall, at the smooth parting in the white, neatly waved hair of the headmistress; she waited in silence."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"You are no longer a little girl,\" said the headmistress meaningly, beginning to feel secretly irritated."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"Yes, madam,\" answered Olga simply, almost merrily."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"But neither are you a woman yet,\" said the headmistress, still more meaningly, and her pale face flushed a little. \"To begin with, why do you do your hair like that? You do it like a woman.\""
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "\"It is not my fault, madam, that I have nice hair,\" Olga replied, and gave a little touch with both hands to her beautifully dressed hair."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"Ah, is that it? You are not to blame!\" said the headmistress. \"You are not to blame for the way you do your hair; you are not to blame for those expensive combs; you are not to blame for ruining your parents with your twenty-rouble shoes. But, I repeat, you completely forget that you are still only a schoolgirl....\""
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "And here Olga, without losing her simplicity and calm, suddenly interrupted her politely:"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "\"Excuse me, madam, you are mistaken--I am a woman. And, do you know who is to blame for that? My father's friend and neighbour, your brother, Alexey Mikhailovitch Malyntin. It happened last summer in the country....\""
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "And a month after this conversation, a Cossack officer, ungainly and of plebeian appearance, who had absolutely nothing in common with Olga Meschersky's circle, shot her on the platform of the railway station, in a large crowd of people who had just arrived by train. And the incredible confession of Olga Meschersky, which had stunned the headmistress, was completely confirmed; the officer told the coroner that Meschersky had led him on, had had a *liaison* with him, had promised to marry him, and at the railway station on the day of the murder, while seeing him off to Novocherkask had suddenly told him that she had never thought of marrying him, that all the talk about marriage was only to make a fool of him, and she gave him her diary to read with the pages in it which told about Malyntin."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "\"I glanced through those pages,\" said the officer, \"went out on to the platform where she was walking up and down, and waiting for me to finish reading it, and I shot her. The diary is in the pocket of my overcoat; look at the entry for July 10 of last year.\""
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "And this is what the coroner read:"
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"It is now nearly two o'clock in the morning. I fell sound asleep, but woke up again immediately.... I have become a woman to-day! Papa, mamma, and Tolya had all gone to town, and I was left alone. I cannot say how happy I was to be alone. In the morning I walked in the orchard, in the field, and I went into the woods, and it seemed to me that I was all by myself in the whole world, and I never had such pleasant thoughts before. I had lunch by myself; then I played for an hour, and the music made me feel that I should live for ever, and be happier than any one else had ever been. Then I fell asleep in papa's study, and at four o'clock Kate woke me, and said that Alexey Mikhailovitch had come. I was very glad to see him; it was so pleasant to receive him and entertain him. He came with his pair of Viatka horses, very beautiful, and they stood all the time at the front door, but he stayed because it was raining, and hoped that the roads would dry towards evening. He was very sorry not to find papa at home, was very animated and treated me very politely, and made many jokes about his having been long in love with me. Before tea we walked in the garden, and the weather was charming, the sun shining through the whole wet garden; but it grew quite cold, and he walked with me, arm in arm, and said that he was Faust with Margarete. He is fifty-six, but still very handsome, and always very well dressed--the only thing I didn't like was his coming in a sort of cape--he smells of English eau-de-Cologne, and his eyes are quite young, black; his beard is long and elegantly parted down the middle, it is quite silvery. We had tea in the glass verandah, and suddenly I did not feel very well, and lay down on the sofa while he smoked; then he sat down near me, and began to say nice things, and then to take my hand and kiss it. I covered my face with a silk handkerchief, and several times he kissed me on the lips through the handkerchief.... I can't understand how it happened; I went mad; I never thought I was like that. Now I have only one way out.... I feel such a loathing for him that I cannot endure it....\""
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "The town in these April days has become clean and dry, its stones have become white, and it is easy and pleasant to walk on them. Every Sunday, after mass, along Cathedral Street which leads out of the town, there walks a little woman in mourning, in black kid gloves, and with an ebony sunshade. She crosses the yard of the fire-station, crosses the dirty market-place by the road where there are many black smithies, and where the wind blows fresher from the fields; in the distance, between the monastery and the gaol, is the white slope of the sky and the grey of the spring fields; and then, when you have passed the muddy pools behind the monastery wall and turn to the left, you will see what looks like a large low garden, surrounded by a white wall, on the gates of which is written \"The Assumption of Our Lady.\" The little woman makes rapid little signs of the cross, and always walks on the main path. When she gets to the bench opposite the oak cross she sits down, in the wind and the chilly spring, for an hour, two hours, until her feet in the light boots, and her hand in the narrow kid glove, grow quite cold. Listening to the birds of spring, singing sweetly even in the cold, listening to the whistling of the wind through the porcelain wreath, she sometimes thinks that she would give half her life if only that dead wreath might not be before her eyes. The thought that it is Olga Meschersky who has been buried in that clay plunges her into astonishment bordering upon stupidity: how can one associate the sixteen-year-old school-girl, who but two or three months ago was so full of life, charm, happiness, with that mound of earth and that oak cross. Is it possible that beneath it is the same girl whose eyes shine out immortally from this bronze medallion, and how can one connect this bright look with the horrible event which is associated now with Olga Meschersky? But in the depths of her soul the little woman is happy, as are all those who are in love or are generally devoted to some passionate dream."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "The woman is Olga Meschersky's class-mistress, a girl over thirty, who has for long been living on some illusion and putting it in the place of her actual life. At first the illusion was her brother, a poor lieutenant, in no way remarkable--her whole soul was bound up in him and in his future, which, for some reason, she imagined as splendid, and she lived in the curious expectation that, thanks to him, her fate would transport her into some fairyland. Then, when he was killed at Mukden, she persuaded herself that she, very happily, is not like others, that instead of beauty and womanliness she has intellect and higher interests, that she is a worker for the ideal. And now Olga Meschersky is the object of all her thoughts, of her admiration and joy. Every holiday she goes to her grave--she had formed the habit of going to the cemetery after the death of her brother--for hours she never takes her eyes off the oak cross; she recalls Olga Meschersky's pale face in the coffin amid the flowers, and remembers what she once overheard: once during the luncheon hour, while walking in the school garden, Olga Meschersky was quickly, quickly saying to her favourite friend, the tall plump Subbotin:"
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "\"I have been reading one of papa's books--he has a lot of funny old books--I read about the kind of beauty which woman ought to possess. There's such a lot written there, you see, I can't remember it all; well, of course, eyes black as boiling pitch--upon my word, that's what they say there, boiling pitch!--eye-brows black as night, and a tender flush in the complexion, a slim figure, hands longer than the ordinary--little feet, a fairly large breast, a regularly rounded leg, a knee the colour of the inside of a shell, high but sloping shoulders--a good deal of it I have nearly learnt by heart, it is all so true; but do you know what the chief thing is? Gentle breathing! And I have got it; you listen how I breathe; isn't it gentle?\""
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Now the gentle breathing has again vanished away into the world, into the cloudy day, into the cold spring wind...."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "On the yellow card with a nobleman's coronet the young porter at the Hotel \"Versailles\" somehow managed to read the Christian name and patronymic \"Kasimir Stanislavovitch.\"[1] There followed something still more complicated and still more difficult to pronounce. The porter turned the card this way and that way in his hand, looked at the passport, which the visitor had given him with it, shrugged his shoulders--none of those who stayed at the \"Versailles\" gave their cards--then he threw both on to the table and began again to examine himself in the silvery, milky mirror which hung above the table, whipping up his thick hair with a comb. He wore an overcoat and shiny top-boots; the gold braid on his cap was greasy with age--the hotel was a bad one."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Kasimir Stanislavovitch left Kiev for Moscow on April 8th, Good Friday, on receiving a telegram with the one word \"tenth.\" Somehow or other he managed to get the money for his fare, and took his seat in a second-class compartment, grey and dim, but really giving him the sensation of comfort and luxury. The train was heated, and that railway-carriage heat and the smell of the heating apparatus, and the sharp tapping of the little hammers in it, reminded Kasimir Stanislavovitch of other times. At times it seemed to him that winter had returned, that in the fields the white, very white drifts of snow had covered up the yellowish bristle of stubble and the large leaden pools where the wild-duck swam. But often the snow-storm stopped suddenly and melted; the fields grew bright, and one felt that behind the clouds was much light, and the wet platforms of the railway-stations looked black, and the rooks called from the naked poplars. At each big station Kasimir Stanislavovitch went to the refreshment-room for a drink, and returned to his carriage with newspapers in his hands; but he did not read them; he only sat and sank in the thick smoke of his cigarettes, which burned and glowed, and to none of his neighbours--Odessa Jews who played cards all the time--did he say a single word. He wore an autumn overcoat of which the pockets were worn, a very old black top-hat, and new, but heavy, cheap boots. His hands, the typical hands of an habitual drunkard, and an old inhabitant of basements, shook when he lit a match. Everything else about him spoke of poverty and drunkenness: no cuffs, a dirty linen collar, an ancient tie, an inflamed and ravaged face, bright-blue watery eyes. His side-whiskers, dyed with a bad, brown dye, had an unnatural appearance. He looked tired and contemptuous."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "The train reached Moscow next day, not at all up to time; it was seven hours late. The weather was neither one thing nor the other, but better and drier than in Kiev, with something stirring in the air. Kasimir Stanislavovitch took a cab without bargaining with the driver, and told him to drive straight to the \"Versailles.\" \"I have known that hotel, my good fellow,\" he said, suddenly breaking his silence, \"since my student days.\" From the \"Versailles,\" as soon as his little bag, tied with stout rope, had been taken up to his room, he immediately went out."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "It was nearly evening: the air was warm, the black trees on the boulevards were turning green; everywhere there were crowds of people, cars, carts. Moscow was trafficking and doing business, was returning to the usual, pressing work, was ending her holiday, and unconsciously welcomed the spring. A man who has lived his life and ruined it feels lonely on a spring evening in a strange, crowded city. Kasimir Stanislavovitch walked the whole length of the Tverskoy Boulevard; he saw once more the cast-iron figure of the musing Poushkin, the golden and lilac top of the Strasnoy Monastery.... For about an hour he sat at the Café Filippov, drank chocolate, and read old comic papers. Then he went to a cinema, whose flaming signs shone from far away down the Tverskaya, through the darkling twilight. From the cinema he drove to a restaurant on the boulevard which he had also known in his student days. He was driven by an old man, bent in a bow, sad, gloomy, deeply absorbed in himself, in his old age, in his dark thoughts. All the way the man painfully and wearily helped on his lazy horse with his whole being, murmuring something to it all the time and occasionally bitterly reproaching it--and at last, when he reached the place, he allowed the load to slip from his shoulders for a moment and gave a deep sigh, as he took the money."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "\"I did not catch the name, and thought you meant 'Brague'!\" he muttered, turning his horse slowly; he seemed displeased, although the \"Prague\" was further away."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "\"I remember the 'Prague' too, old fellow,\" answered Kasimir Stanislavovitch. \"You must have been driving for a long time in Moscow.\""
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "\"Driving?\" the old man said; \"I have been driving now for fifty-one years.\""
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "\"That means that you may have driven me before,\" said Kasimir Stanislavovitch."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "\"Perhaps I did,\" answered the old man dryly. \"There are lots of people in the world; one can't remember all of you.\""
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "Of the old restaurant, once known to Kasimir Stanislavovitch, there remained only the name. Now it was a large, first-class, though vulgar, restaurant. Over the entrance burnt an electric globe which illuminated with its unpleasant, heliotrope light the smart, second-rate cabmen, impudent, and cruel to their lean, short-winded steeds. In the damp hall stood pots of laurels and tropical plants of the kind which one sees carried on to the platforms from weddings to funerals and *vice versa*. From the porters' lodge several men rushed out together to Kasimir Stanislavovitch, and all of them had just the same thick curl of hair as the porter at the \"Versailles.\" In the large greenish room, decorated in the rococo style, were a multitude of broad mirrors, and in the corner burnt a crimson icon-lamp. The room was still empty, and only a few of the electric lights were on. Kasimir Stanislavovitch sat for a long time alone, doing nothing. One felt that behind the windows with their white blinds the long, spring evening had not yet grown dark; one heard from the street the thudding of hooves; in the middle of the room there was the monotonous splash-splash of the little fountain in an aquarium round which gold-fish, with their scales peeling off, lighted somehow from below, swam through the water. A waiter in white brought the dinner things, bread, and a decanter of cold vodka. Kasimir Stanislavovitch began drinking the vodka, held it in his mouth before swallowing it, and, having swallowed it, smelt the black bread as though with loathing. With a suddenness which gave even him a start, a gramophone began to roar out through the room a mixture of Russian songs, now exaggeratedly boisterous and turbulent, now too tender, drawling, sentimental.... And Kasimir Stanislavovitch's eyes grew red and tears filmed them at that sweet and snuffling drone of the machine."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Then a grey-haired, curly, black-eyed Georgian brought him, on a large iron fork, a half-cooked, smelly shashlyk, cut off the meat on to the plate with a kind of dissolute smartness, and, with Asiatic simplicity, with his own hand sprinkled it with onions, salt, and rusty barbery powder, while the gramophone roared out in the empty hall a cake-walk, inciting one to jerks and spasms. Then Kasimir Stanislavovitch was served with cheese, fruit, red wine, coffee, mineral water, liquers.... The gramophone had long ago grown silent; instead of it there had been playing on the platform an orchestra of German women dressed in white; the lighted hall, continually filling up with people, grew hot, became dim with tobacco smoke and heavily saturated with the smell of food; waiters rushed about in a whirl; drunken people ordered cigars which immediately made them sick; the head-waiters showed excessive officiousness, combined with an intense realization of their own dignity; in the mirrors, in the watery gloom of their abysses, there was more and more chaotically reflected something huge, noisy, complicated. Several times Kasimir Stanislavovitch went out of the hot hall into the cool corridors, into the cold lavatory, where there was a strange smell of the sea; he walked as if on air, and, on returning to his table, again ordered wine. After midnight, closing his eyes and drawing the fresh night air through his nostrils into his intoxicated head, he raced in a hansom-cab on rubber tyres out of the town to a brothel; he saw in the distance infinite chains of light, running away somewhere down hill and then up hill again, but he saw it just as if it were not he, but some one else, seeing it. In the brothel he nearly had a fight with a stout gentleman who attacked him shouting that he was known to all thinking Russia. Then he lay, dressed, on a broad bed, covered with a satin quilt, in a little room half-lighted from the ceiling by a sky-blue lantern, with a sickly smell of scented soap, and with dresses hanging from a hook on the door. Near the bed stood a dish of fruit, and the girl who had been hired to entertain Kasimir Stanislavovitch, silently, greedily, with relish ate a pear, cutting off slices with a knife, and her friend, with fat bare arms, dressed only in a chemise which made her look like a little girl, was rapidly writing on the toilet-table, taking no notice of them. She wrote and wept--of what? There are lots of people in the world; one can't know everything...."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "On the tenth of April Kasimir Stanislavovitch woke up early. Judging from the start with which he opened his eyes, one could see that he was overwhelmed by the idea that he was in Moscow. He had got back after four in the morning. He staggered down the staircase of the \"Versailles,\" but without a mistake he went straight to his room down the long, stinking tunnel of a corridor which was lighted only at its entrance by a little lamp smoking sleepily. Outside every room stood boots and shoes--all of strangers, unknown to one another, hostile to one another. Suddenly a door opened, almost terrifying Kasimir Stanislavovitch; on its threshold appeared an old man, looking like a third-rate actor acting \"The Memoirs of a Lunatic,\" and Kasimir Stanislavovitch saw a lamp under a green shade and a room crowded with things, the cave of a lonely, old lodger, with icons in the corner, and innumerable cigarette boxes piled one upon another almost to the ceiling, near the icons. Was that the half-crazy writer of the lives of the saints, who had lived in the \"Versailles\" twenty-three years ago? Kasimir Stanislavovitch's dark room was terribly hot with a malignant and smelly dryness.... The light from the window over the door came faintly into the darkness. Kasimir Stanislavovitch went behind the screen, took the top-hat off his thin, greasy hair, threw his overcoat over the end of his bare bed.... As soon as he lay down, everything began to turn round him, to rush into an abyss, and he fell asleep instantly. In his sleep all the time he was conscious of the smell of the iron wash-stand which stood close to his face, and he dreamt of a spring day, trees in blossom, the hall of a manor house and a number of people waiting anxiously for the bishop to arrive at any moment; and all night long he was wearied and tormented with that waiting.... Now in the corridors of the \"Versailles\" people rang, ran, called to one another. Behind the screen, through the double, dusty window-panes, the sun shone; it was almost hot.... Kasimir Stanislavovitch took off his jacket, rang the bell, and began to wash. There came in a quick-eyed boy, the page-boy, with fox-coloured hair on his head, in a frock-coat and pink shirt."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "\"A loaf, samovar, and lemon,\" Kasimir Stanislavovitch said without looking at him."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "\"And tea and sugar?\" the boy asked with Moscow sharpness."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "And a minute later he rushed in with a boiling samovar in his hand, held out level with his shoulders; on the round table in front of the sofa he quickly put a tray with a glass and a battered brass slop-basin, and thumped the samovar down on the tray.... Kasimir Stanislavovitch, while the tea was drawing, mechanically opened the *Moscow Daily*, which the page-boy had brought in with the samovar. His eye fell on a report that yesterday an unknown man had been picked up unconscious.... \"The victim was taken to the hospital,\" he read, and threw the paper away. He felt very bad and unsteady. He got up and opened the window--it faced the yard--and a breath of freshness and of the city came to him; there came to him the melodious shouts of hawkers, the bells of horse-trams humming behind the house opposite, the blended rap-tap of the cars, the musical drone of church-bells.... The city had long since started its huge, noisy life in that bright, jolly, almost spring day. Kasimir Stanislavovitch squeezed the lemon into a glass of tea and greedily drank the sour, muddy liquid; then he again went behind the screen. The \"Versailles\" was quiet. It was pleasant and peaceful; his eye wandered leisurely over the hotel notice on the wall: \"A stay of three hours is reckoned as a full day.\" A mouse scuttled in the chest of drawers, rolling about a piece of sugar left there by some visitor.... Thus half asleep Kasimir Stanislavovitch lay for a long time behind the screen, until the sun had gone from the room and another freshness was wafted in from the window, the freshness of evening."
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "Then he carefully got himself in order: he undid his bag, changed his underclothing, took out a cheap, but clean handkerchief, brushed his shiny frock-coat, top-hat, and overcoat, took out of its torn pocket a crumpled Kiev newspaper of January 15, and threw it away into the corner.... Having dressed and combed his whiskers with a dyeing comb, he counted his money--there remained in his purse four roubles, seventy copecks--and went out. Exactly at six o'clock he was outside a low, ancient, little church in the Molchanovka. Behind the church fence a spreading tree was just breaking into green; children were playing there--the black stocking of one thin little girl, jumping over a rope, was continually coming down--and he sat there on a bench among perambulators with sleeping babies and nurses in Russian costumes. Sparrows prattled over all the tree; the air was soft, all but summer--even the dust smelt of summer--the sky above the sunset behind the houses melted into a gentle gold, and one felt that once more there was somewhere in the world joy, youth, happiness. In the church the chandeliers were already burning, and there stood the pulpit and in front of the pulpit was spread a little carpet. Kasimir Stanislavovitch cautiously took off his top-hat, trying not to untidy his hair, and entered the church nervously; he went into a corner, but a corner from which he could see the couple to be married. He looked at the painted vault, raised his eyes to the cupola, and his every movement and every gasp echoed loudly through the silence. The church shone with gold; the candles sputtered expectantly. And now the priests and choir began to enter, crossing themselves with the carelessness which comes of habit, then old women, children, smart wedding guests, and worried stewards. A noise was heard in the porch, the crunching wheels of the carriage, and every one turned their heads towards the entrance, and the hymn burst out \"Come, my dove!\" Kasimir Stanislavovitch became deadly pale, as his heart beat, and unconsciously he took a step forward. And close by him there passed--her veil touching him, and a breath of lily-of-the-valley--she who did not know even of his existence in the world; she passed, bending her charming head, all flowers and transparent gauze, all snow-white and innocent, happy and timid, like a princess going to her first communion.... Kasimir Stanislavovitch hardly saw the bridegroom who came to meet her, a rather small, broad-shouldered man with yellow, close-cropped hair. During the whole ceremony only one thing was before his eyes: the bent head, in the flowers and the veil, and the little hand trembling as it held a burning candle tied with a white ribbon in a bow...."
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "About ten o'clock he was back again in the hotel. All his overcoat smelt of the spring air. After coming out of the church, he had seen, near the porch, the car lined with white satin, and its window reflecting the sunset, and behind the window there flashed on him for the last time the face of her who was being carried away from him for ever. After that he had wandered about in little streets, and had come out on the Novensky Boulevard.... Now slowly and with trembling hands he took off his overcoat, put on the table a paper bag containing two green cucumbers which for some reason he had bought at a hawker's stall. They too smelt of spring even through the paper, and spring-like through the upper pane of the window the April moon shone silvery high up in the not yet darkened sky. Kasimir Stanislavovitch lit a candle, sadly illuminating his empty, casual home, and sat down on the sofa, feeling on his face the freshness of evening.... Thus he sat for a long time. He did not ring the bell, gave no orders, locked himself in--all this seemed suspicious to the porter who had seen him enter his room with his shuffling feet and taking the key out of the door in order to lock himself in from the inside. Several times the porter stole up on tiptoe to the door and looked through the key-hole: Kasimir Stanislavovitch was sitting on the sofa, trembling and wiping his face with a handkerchief, and weeping so bitterly, so copiously that the brown dye came off, and was smeared over his face."
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "At night he tore the cord off the blind, and, seeing nothing through his tears, began to fasten it to the hook of the clothes-peg. But the guttering candle flickered and the paper bag, and terrible dark waves swam and flickered over the locked room: he was old, weak--and he himself was well aware of it.... No, it was not in his power to die by his own hand!"
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "In the morning he started for the railway station about three hours before the train left. At the station he quietly walked about among the passengers, with his eyes on the ground and tear-stained; and he would stop unexpectedly now before one and now before another, and in a low voice, evenly but without expression, he would say rather quickly:"
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "\"For God's sake ... I am in a desperate position.... My fare to Briansk.... If only a few copecks....\""
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "And some passengers, trying not to look at his top-hat, at the worn velvet collar of his overcoat, at the dreadful face with the faded violet whiskers, hurriedly, and with confusion, gave him something."
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "And then, rushing out of the station on to the platform, he got mixed in the crowd and disappeared into it, while in the \"Versailles,\" in the room which for two days had as it were belonged to him, they carried out the slop-pail, opened the windows to the April sun and to the fresh air, noisily moved the furniture, swept up and threw out the dust--and with the dust there fell under the table, under the table cloth which slid on to the floor, his torn note, which he had forgotten with the cucumbers:"
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "\"I beg that no one be accused of my death. I was at the wedding of my only daughter who....\""
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "*I.e.* There was no family name. The name is Polish, not Russian."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "SON"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Madame Maraud was born and grew up in Lausanne, in a strict, honest, industrious family. She did not marry young, but she married for love. In March, 1876, among the passengers on an old French ship, the *Auvergne*, sailing from Marseilles to Italy, was the newly married couple. The weather was calm and fresh; the silvery mirror of the sea appeared and disappeared in the mists of the spring horizon. The newly married couple never left the deck. Every one liked them, every one looked at their happiness with friendly smiles; his happiness showed itself in the energy and keenness of his glance, in a need for movement, in the animation of his welcome to those around him; hers showed itself in the joy and interest with which she took in each detail.... The newly married couple were the Marauds."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "He was about ten years her elder; he was not tall, with a swarthy face and curly hair; his hand was dry and his voice melodious. One felt in her the presence of some other, non-Latin blood; she was over medium height, although her figure was charming, and she had dark hair and blue-grey eyes. After touching at Naples, Palermo, and Tunis, they arrived at the Algerian town of Constantine, where M. Maraud had obtained a rather good post. And their life in Constantine, for the fourteen years since that happy spring, gave them everything with which people are normally satisfied: wealth, family happiness, healthy and beautiful children."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "During the fourteen years the Marauds had greatly changed in appearance. He became as dark as an Arab; from his work, from travelling, from tobacco and the sun, he had grown grey and dried up--many people mistook him for a native of Algeria. And it would have been impossible to recognize in her the woman who sailed once in the *Auvergne*: at that time there was even in the boots which she put outside her door at night the charm of youth; now there was silver in her hair, her skin had become more transparent and more of a golden colour, her hands were thinner and in her care of them, of her linen, and of her clothes she already showed a certain excessive tidiness. Their relations had certainly changed too, although no one could say for the worse. They each lived their own life: his time was filled with work--he remained the same passionate, and, at the same time, sober man that he had been before; her time was filled up with looking after him and their children, two pretty girls, of whom the elder was almost a young lady: and every one with one voice agreed that in all Constantine there was no better hostess, no better mother, no more charming companion in the drawing-room than Madame Maraud."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Their house stood in a quiet, clean part of the town. From the front rooms on the second floor, which were always half dark with the blinds drawn down, one saw Constantine, known the world over for its picturesqueness. On steep rocks stands the ancient Arab fortress which has become a French city. The windows of the living-rooms looked into a garden where in perpetual heat and sunshine slumbered the evergreen eucalyptuses, the sycamores, and palms behind high walls. The master was frequently away on business, and the lady led the secluded existence to which the wives of Europeans are doomed in the colonies. On Sundays she always went to church. On weekdays she rarely went out, and she visited only a small and select circle. She read, did needle-work, talked or did lessons with the children; sometimes taking her younger daughter, the black-eyed Marie, on her knee, she would play the piano with one hand and sing old French songs, in order to while away the long African day, while the great breath of hot wind blew in through the open windows from the garden.... Constantine, with all its shutters closed and scorched pitilessly by the sun, seemed at such hours a dead city: only the birds called behind the garden wall, and from the hills behind the town came the dreary sound of pipes, filled with the melancholy of colonial countries, and at times there the dull thud of guns shook the earth, and you could see the flashing of the white helmets of soldiers."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "The days in Constantine passed monotonously, but no one noticed that Madame Maraud minded that. In her pure, refined nature there was no trace of abnormal sensitiveness or excessive nervousness. Her health could not be called robust, but it gave no cause of anxiety to M. Maraud. Only one incident once astonished him: in Tunis once, an Arab juggler so quickly and completely hypnotized her that it was only with difficulty that she could be brought to. But this happened at the time of their arrival from France; she had never since experienced so sudden a loss of will-power, such a morbid suggestibility. And M. Maraud was happy, untroubled, convinced that her soul was tranquil and open to him. And it was so, even in the last, the fourteenth year of their married life. But then there appeared in Constantine Emile Du-Buis."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "Emile Du-Buis, the son of Madame Bonnay, an old and good friend of M. Maraud, was only nineteen. Emile was the son of her first husband and had grown up in Paris where he studied law, but he spent most of his time in writing poems, intelligible only to himself; he was attached to the school of \"Seekers\" which has now ceased to exist. Madame Bonnay, the widow of an engineer, also had a daughter, Elise. In May, 1889, Elise was just going to be married, when she fell ill and died a few days before her wedding, and Emile, who had never been in Constantine, came to the funeral. It can be easily understood how that death moved Madame Maraud, the death of a girl already trying on her wedding dress; it is also known how quickly in such circumstances an intimacy springs up between people who have hardly met before. Besides, to Madame Maraud Emile was, indeed, only a boy. Soon after the funeral Madame Bonnay went for the summer to stay with her relations in France. Emile remained in Constantine, in a suburban villa which belonged to his late step-father, the villa \"Hashim,\" as it was called in the town, and he began coming nearly every day to the Marauds. Whatever he was, whatever he pretended to be, he was still very young, very sensitive, and he needed people to whom he could attach himself for a time. \"And isn't it strange?\" some said; \"Madame Maraud has become unrecognizable! How lively she has become, and how her looks have improved!\""
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "However, these insinuations were groundless. At first there was only this, that her life had become a little bit jollier, and her girls too had become more playful and coquettish, since Emile, every now and then forgetting his sorrow and the poison with which, as he thought, the *fin de siècle* had infected him, would for hours at a time play with Marie and Louise as if he were their age. It is true that he was all the same a man, a Parisian, and not altogether an ordinary man. He had already taken part in that life, inaccessible to ordinary mortals, which Parisian writers live; he often read aloud, with a hypnotic expressiveness, strange but sonorous poems; and, perhaps it was entirely owing to him that Madame Maraud's walk had become lighter and quicker, her dress at home imperceptibly smarter, the tones of her voice more tender and playful. Perhaps, too, there was in her soul a drop of purely feminine pleasure that here was a man to whom she could give her small commands, with whom she could talk, half seriously and half jokingly as a mentor, with that freedom which their difference in age so naturally allowed--a man who was so devoted to her whole household, in which, however, the first person--this, of course, very soon became clear--was for him, nevertheless, she herself. But how common all that is! And the chief thing was that often what she really felt for him was only pity."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "He honestly thought himself a born poet, and he wished outwardly too to look like a poet; his long hair was brushed back with artistic modesty; his hair was fine, brown, and suited his pale face just as did his black clothes; but the pallor was too bloodless, with a yellow tinge in it; his eyes were always shining, but the tired look in his face made them seem feverish; and so flat and narrow was his chest, so thin his legs and hands, that one felt a little uncomfortable when one saw him get very excited and run in the street or garden, with his body pushed forward a little, as though he were gliding, in order to hide his defect, that he had one leg shorter than the other. In company he was apt to be unpleasant, haughty, trying to appear mysterious, negligent, at times elegantly dashing, at times contemptuously absent-minded, in everything independent; but too often he could not carry it through to the end, he became confused and began to talk hurriedly with naïve frankness. And, of course, he was not very long able to hide his feelings, to maintain the pose of not believing in love or in happiness on earth. He had already begun to bore his host by his visits; every day he would bring from his villa bouquets of the rarest flowers, and he would sit from morn to night reading poems which were more and more unintelligible--the children often heard him beseeching some one that they should die together--while he spent his nights in the native quarter, in dens where Arabs, wrapped in dirty white robes, greedily watch the *danse de ventre*, and drank fiery liqueurs.... In a word it took less than six weeks for his passion to change into God knows what."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "His nerves gave way completely. Once he sat for nearly the whole day in silence; then he got up, bowed, took his hat and went out--and half an hour later he was carried in from the street in a terrible state; he was in hysterics and he wept so passionately that he terrified the children and servants. But Madame Maraud, it seemed, did not attach any particular importance to this delirium. She herself tried to help him recover himself, quickly undid his tie, told him to be a man, and she only smiled when he, without any restraint in her husband's presence, caught her hands and covered them with kisses and vowed devotion to her. But an end had to be put to all this. When, a few days after this outbreak, Emile, whom the children had greatly missed, arrived calm, but looking like some one who has been through a serious illness, Madame Maraud gently told him everything which is always said on such occasions."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "\"My friend, you are like a son to me,\" she said to him, for the first time uttering the word son, and, indeed, almost feeling a maternal affection. \"Don't put me in a ridiculous and painful position.\""
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "\"But I swear to you, you are mistaken!\" he exclaimed, with passionate sincerity. \"I am only devoted to you. I only want to see you, nothing else!\""
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "And suddenly he fell on his knees--they were in the garden, on a quiet, hot, dark evening--impetuously embraced her knees, nearly fainting with passion. And looking at his hair, at his thin white neck, she thought with pain and ecstasy:"
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "\"Ah yes, yes, I might have had such a son, almost his age!\""
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "However, from that time until he left for France he behaved reasonably. This essentially was a bad sign, for it might mean that his passion had become deeper. But outwardly everything had changed for the better--only once did he break down. It was on a Sunday after dinner at which several strangers were present, and he, careless of whether they noticed it, said to her:"
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "\"I beg you to spare me a minute.\""
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "She got up and followed him into the empty, half-dark drawing-room. He went to the window through which the evening light fell in broad shafts, and, looking straight into her face, said:"
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "\"To-day is the day on which my father died. I love you!\""
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "She turned and was about to leave him. Frightened, he hastily called after her:"
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "\"Forgive me, it is for the first and last time!\""
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "Indeed, she heard no further confessions from him. \"I was fascinated by her agitation,\" he noted that night in his diary in his elegant and pompous style; \"I swore never again to disturb her peace of mind: am I not blessed enough without that?\" He continued to come to town--he only slept at the villa Hashim--and he behaved erratically, but always more or less properly. At times he was, as before, unnaturally playful and naïve, running about with the children in the garden; but more often he sat with her and \"sipped of her presence,\" read newspapers and novels to her, and \"was happy in her listening to him.\" \"The children were not in the way,\" he wrote of those days, \"their voices, laughter, comings and goings, their very beings acted like the subtlest conductors for our feelings; thanks to them, the charm of those feelings was intensified; we talked about the most everyday matters, but something else sounded through what we said: our happiness; yes, yes, she, too, was happy--I maintain that! She loved me to read poetry; in the evenings from the balcony we looked down upon Constantine, lying at our feet in the bluish moonlight....\" At last, in August Madame Maraud insisted that he should go away, return to his work; and during his journey he wrote: \"I'm going away! I am going away, poisoned by the bitter sweet of parting! She gave me a remembrance, a velvet ribbon which she wore round her neck as a young girl. At the last moment she blessed me, and I saw tears shine in her eyes, when she said: 'Good-bye, my dear son.'\""
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "Was he right in thinking that Madam Maraud was also happy in August? No one knows. But that his leaving was painful to her--there is no doubt of that. That word \"son,\" which had often troubled her before, now had a sound for her which she could not bear to hear. Formerly when friends met her on the way to church, and said to her jokingly: \"What have you to pray for, Madame Maraud? You are already without sin and without troubles!\" she more than once answered with a sad smile: \"I complain to God that he has not given me a son.\" Now the thought of a son never left her, the thought of the happiness that he would constantly give her by his mere existence in the world. And once, soon after Emile's departure, she said to her husband:"
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "\"Now I understand it all. I now believe firmly that every mother ought to have a son, that every mother who has no son, if she look into her own heart and examine her whole life, will realize that she is unhappy. You are a man and cannot feel that, but it is so.... Oh how tenderly, passionately a woman can love a son!\""
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "She was very affectionate to her husband during that autumn. It would happen sometimes that, sitting alone with him, she would suddenly say bashfully:"
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "\"Listen, Hector.... I am ashamed to mention it again to you, but still ... do you ever think of March, '76? Ah, if we had had a son!\""
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "\"All this troubled me a good deal,\" M. Maraud said later, \"and it troubled me the more because she began to get thin and out of health. She grew feeble, became more and more silent and gentle. She went out to our friends more and more rarely, she avoided going to town unless compelled.... I have no doubt that some terrible, incomprehensible disease had been gradually getting hold of her, body and soul!\" And the governess added that that autumn, Madame Maraud, if she went out, invariably put on a thick white veil, which she had never done before, and that, on coming home, she would immediately take it off in front of the glass and would carefully examine her tired face. It is unnecessary to explain what had been going on in her soul during that period. But did she desire to see Emile? Did he write to her and did she answer him? He produced before the court two telegrams which he alleged she sent him in reply to letters of his. One was dated November 10: \"You are driving me mad. Be calm. Send me a message immediately.\" The other of December 23: \"No, no, don't come, I implore you. Think of me, love me as a mother.\" But, of course, the truth that the telegrams had been sent by her could not be proved. Only this is certain, that from September to January the life which Madame Maraud lived was miserable, agitated, morbid."
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "The late autumn of that year in Constantine was cold and rainy. Then, as is always the case in Algeria, there suddenly came a delightful spring. And a liveliness began again to return to Madame Maraud, that happy, subtle intoxication which people who have already lived through their youth feel at the blossoming of spring. She began to go out again; she drove out a good deal with the children and used to take them to the deserted garden of the villa Hashim; she intended to go to Algiers, and to show the children Blida near which there is in the hills a wooded gorge, the favourite haunt of monkeys. And so it went on until January 17 of the year 1893. On January 17 she woke up with a feeling of gentle happiness which, it seemed, had agitated her the whole night. Her husband was away on business, and in his absence she slept alone in the large room; the blinds and curtains made it almost dark. Still from the pale bluishness which filtered in one could see that it was very early. And, indeed, the little watch on the night table showed that it was six o'clock. She felt with delight the morning freshness coming from the garden, and, wrapping the light blanket round her, turned to the wall.... \"Why am I so happy?\" she thought as she fell asleep. And in vague and beautiful visions she saw scenes in Italy and Sicily, scenes of that far-off spring when she sailed in a cabin, with its windows opening on to the deck and the cold silvery sea, with doorhangings which time had worn and faded to a rusty silver colour, with its threshold of brass shining from perpetual polishings.... Then she saw boundless bays, lagoons, low shores, an Arab city all white with flat roofs and behind it misty blue hills and mountains. It was Tunis, where she had only once been, that spring when she was in Naples, Palermo.... But then, as though the chill of a wave had passed over her, with a start, she opened her eyes. It was past eight; she heard the voices of the children and the governess. She got up, put on a wrap, and, going out on to the balcony, went down to the garden and sat in the rocking-chair. It stood on the sand by a round table under a blossoming mimosa tree which made a golden arbour heavily scented in the sun. The maid brought her coffee. She again began to think of Tunis, and she remembered the strange thing which had happened to her there, the sweet terror and happy silence of the moment before death which she had experienced in that pale-blue city in a warm pink twilight, half lying in a rocking-chair on the hotel roof, faintly seeing the dark face of the Arab hypnotizer and juggler, who squatted in front of her and sent her to sleep by his hardly audible, monotonous melodies and the slow movements of his thin hands. And suddenly, as she was thinking and was looking mechanically with wide-open eyes at the bright silver spark which shone in the sunlight from the spoon in the glass of water, she lost consciousness.... When with a start she opened her eyes again, Emile was standing over her."
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "All that followed after that unexpected meeting is known from the words of Emile himself, from his story, from his answers in cross-examination. \"Yes, I came to Constantine out of the blue!\" he said; \"I came because I felt that the Powers of Heaven themselves could not stop me. In the morning of January 17 straight from the railway station, without any warning, I arrived at M. Maraud's house and ran into the garden. I was overwhelmed by what I saw, but no sooner had I taken a step forward than she woke up. She seemed to be amazed both by the unexpectedness of my appearance and by what had been happening to her, but she uttered no cry. She looked at me like a person who has just woken up from a sound sleep, and then she got up, arranging her hair."
+    },
+    {
+      "id": "s2-29",
+      "sceneId": "s2",
+      "text": "\"It is just what I anticipated,\" she said without expression; \"you did not obey me!\""
+    },
+    {
+      "id": "s2-30",
+      "sceneId": "s2",
+      "text": "And with a characteristic movement she folded the wrap round her bosom, and taking my head in her two hands kissed me twice on the forehead."
+    },
+    {
+      "id": "s2-31",
+      "sceneId": "s2",
+      "text": "I was bewildered with passionate ecstasy, but she quietly pushed me from her and said:"
+    },
+    {
+      "id": "s2-32",
+      "sceneId": "s2",
+      "text": "\"Come, I am not dressed; I'll be back presently; go to the children.\""
+    },
+    {
+      "id": "s2-33",
+      "sceneId": "s2",
+      "text": "\"But, for the love of God, what was the matter with you just now?\" I asked, following her on to the balcony."
+    },
+    {
+      "id": "s2-34",
+      "sceneId": "s2",
+      "text": "\"Oh, it was nothing, a slight faintness; I had been looking at the shining spoon,\" she answered, regaining control of herself, and beginning to speak with animation. \"But what have you done, what have you done!\""
+    },
+    {
+      "id": "s2-35",
+      "sceneId": "s2",
+      "text": "I could not find the children anywhere; it was empty and quiet in the house. I sat in the dining-room, and heard her suddenly begin to sing in a distant room in a strong, melodious voice, but I did not understand then the full horror of that singing, because I was trembling with nervousness. I had not slept at all all night; I had counted the minutes while the train was hurrying me to Constantine; I jumped into the first carriage I met, raced out of the station; I did not expect as I came to the town.... I knew I, too, had a foreboding that my coming would be fatal to us; but still what I saw in the garden, that mystical meeting, and that sudden change in her attitude towards me, I could not expect that! In ten minutes she came down with her hair dressed, in a light grey dress with a shade of blue in it."
+    },
+    {
+      "id": "s2-36",
+      "sceneId": "s2",
+      "text": "\"Ah,\" she said, while I kissed her hand, \"I forgot that to-day is Sunday; the children are at church, and I overslept.... After church the children will go to the pine-wood--have you ever been there?\""
+    },
+    {
+      "id": "s2-37",
+      "sceneId": "s2",
+      "text": "And, without waiting for my answer, she rang the bell, and told them to bring me coffee. She began to look fixedly at me, and, without listening to my replies, to ask me how I lived, and what I was doing; she began to speak of herself, of how, after two or three very bad months during which she had become \"terribly old\"--those words were uttered with an imperceptible smile--she now felt so well, as young, as never before.... I answered, listened, but a great deal I did not understand. Both of us said meaningless things; my hands grew cold at the thought of another terrible and inevitable hour. I do not deny that I felt as though I were struck by lightning when she said \"I have grown old....\" I suddenly noticed that she was right; in the thinness of her hands, and faded, though youthful, face, in the dryness of some of the outlines of her figure, I noticed the first signs of that which, painfully and somehow awkwardly--but still more painfully--makes one's heart contract at the sight of an ageing woman. Oh yes, how quickly and sharply she had changed, I thought. But still she was beautiful; I grew intoxicated looking at her. I had been accustomed to dream of her endlessly; I had never for an instant forgotten when, in the evening of July 11, I had embraced her knees for the first time. Her hands, too, trembled slightly, as she arranged her hair and spoke and smiled and looked at me; and suddenly--you will understand the whole catastrophic power of that woman--suddenly that smile somehow became distorted, and she said with difficulty, but yet firmly:"
+    },
+    {
+      "id": "s2-38",
+      "sceneId": "s2",
+      "text": "\"You must go home, you must rest after your journey--you are not looking yourself; your eyes are so terribly suffering, your lips so burning that I cannot bear it any longer.... Would you like me to come with you, to accompany you?\""
+    },
+    {
+      "id": "s2-39",
+      "sceneId": "s2",
+      "text": "And, without waiting for my answer, she got up and went to put on her hat and cloak...."
+    },
+    {
+      "id": "s2-40",
+      "sceneId": "s2",
+      "text": "We drove quickly to the villa Hashim. I stopped for a moment on the terrace to pick some flowers. She did not wait for me, but opened the door herself. I had no servants; there was only a watchman, but he did not see us. When I came into the hall, hot and dark with its drawn blinds, and gave her the flowers, she kissed them; then, putting one arm round me, she kissed me. Her lips were dry from excitement, but her voice was clear."
+    },
+    {
+      "id": "s2-41",
+      "sceneId": "s2",
+      "text": "\"But listen ... how shall we ... have you got anything?\" she asked."
+    },
+    {
+      "id": "s2-42",
+      "sceneId": "s2",
+      "text": "At first I did not understand her; I was so overwhelmed by the first kiss, the first endearment, and I murmured:"
+    },
+    {
+      "id": "s2-43",
+      "sceneId": "s2",
+      "text": "\"What do you mean?\""
+    },
+    {
+      "id": "s2-44",
+      "sceneId": "s2",
+      "text": "She shrank back."
+    },
+    {
+      "id": "s2-45",
+      "sceneId": "s2",
+      "text": "\"What!\" she said, almost sternly. \"Did you imagine that I... that we can live after this? Have you anything to kill ourselves with?\""
+    },
+    {
+      "id": "s2-46",
+      "sceneId": "s2",
+      "text": "I understood, and quickly showed her my revolver, loaded with five cartridges, which I always kept on me."
+    },
+    {
+      "id": "s2-47",
+      "sceneId": "s2",
+      "text": "She walked away quickly ahead of me from one room to the other. I followed her with that numbness of the senses with which a naked man on a sultry day walks out into the sea; I heard the rustle of her skirts. At last we were there; she threw off her cloak and began to untie the strings of her hat. Her hands were still trembling and in the half-light I again noticed something, pitiful and tired in her face...."
+    },
+    {
+      "id": "s2-48",
+      "sceneId": "s2",
+      "text": "But she died with firmness. At the last moment she was transformed; she kissed me, and moving her head back so as to see my face, she whispered to me such tender and moving words that I cannot repeat them."
+    },
+    {
+      "id": "s2-49",
+      "sceneId": "s2",
+      "text": "I wanted to go out and pick some flowers to strew on the death-bed. She would not let me; she was in a hurry and said:"
+    },
+    {
+      "id": "s2-50",
+      "sceneId": "s2",
+      "text": "\"No, no, you must not ... there are flowers here ... here are your flowers,\" and she kept on repeating: \"And see, I beseech you by all that is sacred to you, kill me!\""
+    },
+    {
+      "id": "s2-51",
+      "sceneId": "s2",
+      "text": "\"Yes, and then I will kill myself,\" I said, without for a moment doubting my resolution."
+    },
+    {
+      "id": "s2-52",
+      "sceneId": "s2",
+      "text": "\"Oh, I believe you, I believe you,\" she answered, already apparently half-unconscious...."
+    },
+    {
+      "id": "s2-53",
+      "sceneId": "s2",
+      "text": "A moment before her death she said very quietly and simply:"
+    },
+    {
+      "id": "s2-54",
+      "sceneId": "s2",
+      "text": "\"My God, this is unspeakable!\""
+    },
+    {
+      "id": "s2-55",
+      "sceneId": "s2",
+      "text": "And again:"
+    },
+    {
+      "id": "s2-56",
+      "sceneId": "s2",
+      "text": "\"Where are the flowers you gave me? Kiss me--for the last time.\""
+    },
+    {
+      "id": "s2-57",
+      "sceneId": "s2",
+      "text": "She herself put the revolver to her head. I wanted to do it, but she stopped me:"
+    },
+    {
+      "id": "s2-58",
+      "sceneId": "s2",
+      "text": "\"No, that is not right; let me do it. Like this, my child.... And *afterwards* make the sign of the cross over me and lay the flowers on my heart....\""
+    },
+    {
+      "id": "s2-59",
+      "sceneId": "s2",
+      "text": "When I fired, she made a slight movement with her lips, and I fired again...."
+    },
+    {
+      "id": "s2-60",
+      "sceneId": "s2",
+      "text": "She lay quiet; in her dead face there was a kind of bitter happiness. Her hair was loose; the tortoise-shell comb lay on the floor. I staggered to my feet in order to put an end to myself. But the room, despite the blinds, was light; in the light and stillness which suddenly surrounded me, I saw clearly her face already pale.... And suddenly madness seized me; I rushed to the window, undid and threw open the shutters, began shouting and firing into the air.... The rest you know....\""
+    },
+    {
+      "id": "s2-61",
+      "sceneId": "s2",
+      "text": "[In the spring, five years ago, while wandering in Algeria, the writer of these lines visited Constantine.... There often comes to him a memory of the cold, rainy, and yet spring evenings which he spent by the fire in the reading-room of a certain old and homely French hotel. In the heavy, elaborate book-case were much-read illustrated papers, and in them you could see the faded photographs of Madame Maraud. There were photographs taken of her at different ages, and among them the Lausanne portrait of her as a girl.... Her story is told here once more, from a desire to tell it in one's own way.]"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Paradise Road, Richmond, Surrey"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Clive Bell Poems. 2*s.* 6*d.* net."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Poems. *Out of print.*"
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "E. M. Forster The Story of the Siren. 2*s.* 6*d.* net."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Twelve Original Woodcuts. Third impression. 5*s.* net."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "Maxim Gorky Reminiscences of Tolstoi. Second edition. 5*s.* net."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Prelude. 3*s.* 6*d.* net."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Hope Mirrlees Paris. A Poem. *Out of print.*"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "The Critic in Judgment. 2*s.* 6*d.* net."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "Logan Pearsall Smith Stories from the Old Testament retold. 4*s.* 6*d.* net."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "The Note-books of Anton Tchekhov, together with Reminiscences of Tchekhov by Maxim Gorky. 5*s.* net."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Stories of the East. 3*s.* net."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "Virginia Woolf Monday or Tuesday. 4*s.* 6*d.* net. The Mark on the Wall. Second edition. 1*s.* 6*d.* net. Kew Gardens. *Out of print.*"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Two Stories. *Out of print.*"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Karn. A Poem. By Ruth Manning-Sanders. 3*s.* 6*d.* net."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Daybreak. A Book of Poems. By Fredegond Shove. 3*s.* 6*d.* net."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "and other Stories. By I. A. Bunin. Translated from the Russian by S. S. Koteliansky and Leonard Woolf."
+    }
+  ]
+}
