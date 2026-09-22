@@ -2639,6 +2639,20 @@ export const SHELF: ShelfWork[] = [
     breaths: 487,
     intro: "A rustic pockets his fare and takes the old cab back to the village. Open The Black Dog.",
   },
+  {
+    id: "poems-by-emily-dickinson-series-one",
+    title: "Poems by Emily Dickinson, Series One",
+    author: "Emily Dickinson",
+    year: 1890,
+    form: "poem",
+    language: "English",
+    minutes: 37,
+    local: true,
+    gutenberg: 2678,
+    opening: "Success is counted sweetest By those who ne'er succeed.",
+    breaths: 115,
+    intro: "Success is counted sweetest by those who ne'er succeed. Open Success; each poem is its own chapter.",
+  },
 ];
 
 const BY_ID = new Map(SHELF.map((item) => [item.id, item]));

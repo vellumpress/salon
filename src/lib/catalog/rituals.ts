@@ -325,6 +325,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "young-adventure",
       "the-tempers",
       "the-crescent-moon",
+      "poems-by-emily-dickinson-series-one",
       "the-gadfly",
       "ecstasy",
       "the-painted-veil",
