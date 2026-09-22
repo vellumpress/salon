@@ -32,6 +32,7 @@ import {
   noteResume,
   type SitClock,
 } from "./active-read.ts";
+import { bumpDayCount, touchWorkOnDay } from "./reading-score.ts";
 
 export { dayKey };
 
@@ -96,6 +97,18 @@ type VellumState = {
   readingMinutesByDay: Record<string, number>;
   /** Forward advances (new breath / finished last line) per local day. */
   advancesByDay: Record<string, number>;
+  /** Scene/chapter boundaries crossed by a forward advance, per local day. */
+  sceneCrossesByDay: Record<string, number>;
+  /** Lines kept (added) per local day. */
+  keepsByDay: Record<string, number>;
+  /** Distinct work ids that received a forward advance, per local day. */
+  worksTouchedByDay: Record<string, string[]>;
+  /** Hosted sits you opened, per local day. */
+  hostOpensByDay: Record<string, number>;
+  /** Finished sits (active advances closed), per local day. */
+  sitsByDay: Record<string, number>;
+  /** Together / club touches per local day. */
+  clubTouchesByDay: Record<string, number>;
   /** Timestamp of the last forward advance. 0 until one happens after the clock reset. */
   lastActiveReadAt: number;
   /**
@@ -140,7 +153,11 @@ type VellumState = {
   ensure: (workId: string) => WorkProgress;
   setBreath: (workId: string, index: number) => void;
   /** Forward advance: move to `index` and credit clamped active time. */
-  advanceBreath: (workId: string, index: number) => void;
+  advanceBreath: (
+    workId: string,
+    index: number,
+    opts?: { crossedScene?: boolean },
+  ) => void;
   /** Drop the open-sentence anchor (hidden, overlay, leaving). No credit. */
   pauseActiveRead: (workId: string) => void;
   /** Arm the anchor again after a pause, during an open sit. No credit. */
@@ -231,9 +248,17 @@ type ClockSlice = {
   progress: Record<string, WorkProgress>;
   readingMinutesByDay: Record<string, number>;
   advancesByDay: Record<string, number>;
+  sceneCrossesByDay: Record<string, number>;
+  keepsByDay: Record<string, number>;
+  worksTouchedByDay: Record<string, string[]>;
+  hostOpensByDay: Record<string, number>;
+  sitsByDay: Record<string, number>;
+  clubTouchesByDay: Record<string, number>;
   lastActiveReadAt: number;
   sitHistory: SitSession[];
 };
+
+type AdvanceOpts = { crossedScene?: boolean };
 
 /**
  * Credit one forward advance into the day ledger and the open sit.
@@ -243,12 +268,23 @@ function applyAdvance(
   state: ClockSlice,
   workId: string,
   now: number,
-): Pick<ClockSlice, "progress" | "readingMinutesByDay" | "advancesByDay" | "lastActiveReadAt"> {
+  opts?: AdvanceOpts,
+): Pick<
+  ClockSlice,
+  | "progress"
+  | "readingMinutesByDay"
+  | "advancesByDay"
+  | "sceneCrossesByDay"
+  | "worksTouchedByDay"
+  | "lastActiveReadAt"
+> {
   const current = state.progress[workId] ?? emptyProgress();
   const stepped = noteAdvance(clockOf(current), now);
   const day = dayKey(now);
-  const advancesByDay = { ...(state.advancesByDay ?? {}) };
-  advancesByDay[day] = (advancesByDay[day] ?? 0) + 1;
+  const advancesByDay = bumpDayCount(state.advancesByDay, day, 1);
+  const sceneCrossesByDay = opts?.crossedScene
+    ? bumpDayCount(state.sceneCrossesByDay, day, 1)
+    : (state.sceneCrossesByDay ?? {});
   return {
     progress: {
       ...state.progress,
@@ -263,6 +299,8 @@ function applyAdvance(
       [day]: addMinutes(state.readingMinutesByDay?.[day] ?? 0, stepped.creditMs),
     },
     advancesByDay,
+    sceneCrossesByDay,
+    worksTouchedByDay: touchWorkOnDay(state.worksTouchedByDay, day, workId),
     lastActiveReadAt: now,
   };
 }
@@ -275,7 +313,8 @@ function applySittingClose(
   state: ClockSlice,
   workId: string,
   endedAt: number,
-): Pick<ClockSlice, "progress"> & Partial<Pick<ClockSlice, "sitHistory">> {
+): Pick<ClockSlice, "progress"> &
+  Partial<Pick<ClockSlice, "sitHistory" | "sitsByDay" | "worksTouchedByDay">> {
   const current = state.progress[workId] ?? emptyProgress();
   const closed = closeSit(clockOf(current));
   const progress = {
@@ -288,11 +327,17 @@ function applySittingClose(
   if (!closed.countSit) {
     return { progress };
   }
+  const day = dayKey(endedAt);
   const sitHistory = [
     ...(state.sitHistory ?? []),
     { workId, minutes: closed.minutes, endedAt },
   ].slice(-MAX_SIT_HISTORY);
-  return { progress, sitHistory };
+  return {
+    progress,
+    sitHistory,
+    sitsByDay: bumpDayCount(state.sitsByDay, day, 1),
+    worksTouchedByDay: touchWorkOnDay(state.worksTouchedByDay, day, workId),
+  };
 }
 
 export const useVellum = create<VellumState>()(
@@ -314,6 +359,12 @@ export const useVellum = create<VellumState>()(
       readingNow: null,
       readingMinutesByDay: {},
       advancesByDay: {},
+      sceneCrossesByDay: {},
+      keepsByDay: {},
+      worksTouchedByDay: {},
+      hostOpensByDay: {},
+      sitsByDay: {},
+      clubTouchesByDay: {},
       lastActiveReadAt: 0,
       activeReadVersion: ACTIVE_READ_VERSION,
       sitHistory: [],
@@ -325,15 +376,26 @@ export const useVellum = create<VellumState>()(
         set((state) => {
           const togetherKeeps = state.togetherKeeps ?? [];
           if (togetherKeeps.some((row) => sameTogetherPair(row, pair))) return {};
-          return { togetherKeeps: [pair, ...togetherKeeps].slice(0, 40) };
+          const day = dayKey(pair.createdAt || Date.now());
+          return {
+            togetherKeeps: [pair, ...togetherKeeps].slice(0, 40),
+            clubTouchesByDay: bumpDayCount(state.clubTouchesByDay, day, 1),
+          };
         }),
       rememberHostedSit: (sit) =>
         set((state) => {
           const hostedSits = state.hostedSits ?? [];
           const prior = hostedSits.find((row) => row.id === sit.id);
           const next = mergeHostedSit(prior, sit);
+          const isNew = !prior;
+          const me = normalizeHandle(state.handle ?? "");
+          const hostedByMe = Boolean(me && next.hostHandle === me);
+          const day = dayKey(next.createdAt || Date.now());
           return {
             hostedSits: [next, ...hostedSits.filter((row) => row.id !== sit.id)].slice(0, 24),
+            ...(isNew && hostedByMe
+              ? { hostOpensByDay: bumpDayCount(state.hostOpensByDay, day, 1) }
+              : {}),
           };
         }),
       rsvpSit: (sitId, guest) =>
@@ -440,17 +502,22 @@ export const useVellum = create<VellumState>()(
       toggleJoin: (clubId) =>
         set((state) => {
           const joined = state.joined ?? [];
+          const adding = !joined.includes(clubId);
+          const day = dayKey(Date.now());
           return {
-            joined: joined.includes(clubId)
-              ? joined.filter((id) => id !== clubId)
-              : [...joined, clubId],
+            joined: adding ? [...joined, clubId] : joined.filter((id) => id !== clubId),
+            ...(adding ? { clubTouchesByDay: bumpDayCount(state.clubTouchesByDay, day, 1) } : {}),
           };
         }),
       joinClub: (clubId) =>
         set((state) => {
           const joined = state.joined ?? [];
           if (joined.includes(clubId)) return {};
-          return { joined: [...joined, clubId] };
+          const day = dayKey(Date.now());
+          return {
+            joined: [...joined, clubId],
+            clubTouchesByDay: bumpDayCount(state.clubTouchesByDay, day, 1),
+          };
         }),
       rememberInvite: (clubId, token) =>
         set((state) => {
@@ -526,7 +593,7 @@ export const useVellum = create<VellumState>()(
             },
           };
         }),
-      advanceBreath: (workId, index) =>
+      advanceBreath: (workId, index, opts) =>
         set((state) => {
           const now = Date.now();
           const current = state.progress[workId] ?? emptyProgress();
@@ -546,7 +613,9 @@ export const useVellum = create<VellumState>()(
               },
             };
           }
-          const credited = applyAdvance(state, workId, now);
+          const credited = applyAdvance(state, workId, now, {
+            crossedScene: Boolean(opts?.crossedScene),
+          });
           const row = credited.progress[workId] ?? emptyProgress();
           return {
             ...credited,
@@ -619,14 +688,18 @@ export const useVellum = create<VellumState>()(
       toggleKept: (workId, breathId) =>
         set((state) => {
           const current = state.progress[workId] ?? emptyProgress();
-          const kept = current.kept.includes(breathId)
-            ? current.kept.filter((id) => id !== breathId)
-            : [...current.kept, breathId];
+          const adding = !current.kept.includes(breathId);
+          const kept = adding
+            ? [...current.kept, breathId]
+            : current.kept.filter((id) => id !== breathId);
+          const now = Date.now();
+          const day = dayKey(now);
           return {
             progress: {
               ...state.progress,
-              [workId]: { ...current, kept, lastOpenedAt: Date.now() },
+              [workId]: { ...current, kept, lastOpenedAt: now },
             },
+            ...(adding ? { keepsByDay: bumpDayCount(state.keepsByDay, day, 1) } : {}),
           };
         }),
       complete: (workId) =>
@@ -641,6 +714,12 @@ export const useVellum = create<VellumState>()(
             progress: credited?.progress ?? state.progress,
             readingMinutesByDay: credited?.readingMinutesByDay ?? state.readingMinutesByDay,
             advancesByDay: credited?.advancesByDay ?? state.advancesByDay,
+            sceneCrossesByDay: credited?.sceneCrossesByDay ?? state.sceneCrossesByDay,
+            keepsByDay: state.keepsByDay,
+            worksTouchedByDay: credited?.worksTouchedByDay ?? state.worksTouchedByDay,
+            hostOpensByDay: state.hostOpensByDay,
+            sitsByDay: state.sitsByDay,
+            clubTouchesByDay: state.clubTouchesByDay,
             lastActiveReadAt: credited?.lastActiveReadAt ?? state.lastActiveReadAt,
             sitHistory: state.sitHistory,
           };
@@ -714,6 +793,12 @@ export const useVellum = create<VellumState>()(
         curator: state.curator,
         readingMinutesByDay: state.readingMinutesByDay,
         advancesByDay: state.advancesByDay,
+        sceneCrossesByDay: state.sceneCrossesByDay,
+        keepsByDay: state.keepsByDay,
+        worksTouchedByDay: state.worksTouchedByDay,
+        hostOpensByDay: state.hostOpensByDay,
+        sitsByDay: state.sitsByDay,
+        clubTouchesByDay: state.clubTouchesByDay,
         lastActiveReadAt: state.lastActiveReadAt,
         activeReadVersion: state.activeReadVersion,
         sitHistory: state.sitHistory,

@@ -277,8 +277,12 @@ export function VellumReader({
     lockUntil.current = Date.now() + wait;
     // Only a step onto the next breath is active reading. Retreats, jumps,
     // and scrolling the line do not add time.
-    if (next === index + 1) advanceBreath(work.id, next);
-    else setBreath(work.id, next);
+    if (next === index + 1) {
+      const from = work.breaths[index];
+      const to = work.breaths[next];
+      const crossedScene = Boolean(from && to && from.sceneId !== to.sceneId);
+      advanceBreath(work.id, next, { crossedScene });
+    } else setBreath(work.id, next);
     if (!together) setStill(true);
   }
 

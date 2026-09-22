@@ -110,6 +110,12 @@ function ProfileBody({
   const sittingMinutes = useVellum((s) => s.sittingMinutes);
   const readingMinutesByDay = useVellum((s) => s.readingMinutesByDay) ?? {};
   const advancesByDay = useVellum((s) => s.advancesByDay);
+  const sceneCrossesByDay = useVellum((s) => s.sceneCrossesByDay);
+  const keepsByDay = useVellum((s) => s.keepsByDay);
+  const worksTouchedByDay = useVellum((s) => s.worksTouchedByDay);
+  const hostOpensByDay = useVellum((s) => s.hostOpensByDay);
+  const sitsByDay = useVellum((s) => s.sitsByDay);
+  const clubTouchesByDay = useVellum((s) => s.clubTouchesByDay);
   const lastActiveReadAt = useVellum((s) => s.lastActiveReadAt);
   const sitHistory = useVellum((s) => s.sitHistory) ?? [];
   const togetherKeeps = useVellum((s) => s.togetherKeeps) ?? [];
@@ -180,6 +186,12 @@ function ProfileBody({
         favorites,
         readingMinutesByDay,
         advancesByDay,
+        sceneCrossesByDay,
+        keepsByDay,
+        worksTouchedByDay,
+        hostOpensByDay,
+        sitsByDay,
+        clubTouchesByDay,
         lastActiveReadAt,
         sitHistory,
         togetherKeeps,
@@ -192,6 +204,12 @@ function ProfileBody({
       favorites,
       readingMinutesByDay,
       advancesByDay,
+      sceneCrossesByDay,
+      keepsByDay,
+      worksTouchedByDay,
+      hostOpensByDay,
+      sitsByDay,
+      clubTouchesByDay,
       lastActiveReadAt,
       sitHistory,
       togetherKeeps,
