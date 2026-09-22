@@ -161,6 +161,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "white-jacket",
   "yekl",
   "zuleika-dobson",
+  "all-quiet-on-the-western-front",
 ] as const;
 
 /**

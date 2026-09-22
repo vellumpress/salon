@@ -1094,10 +1094,11 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
     "all-quiet-on-the-western-front": {
       gutenberg: 75011,
       title: "All Quiet on the Western Front",
-      author: "Erich Maria Remarque (tr. A. W. Wheen)",
+      author: "Erich Maria Remarque",
       year: 1929,
       opening: /^We are at rest five miles behind the front/,
-      breaths: 1680,
+      breaths: 1604,
+      scenes: 12,
     },
     we: {
       gutenberg: 61963,

@@ -167,6 +167,7 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "white-jacket",
     "yekl",
     "zuleika-dobson",
+    "all-quiet-on-the-western-front",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -198,7 +199,7 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("the-good-soldier"), "later");
   assert.equal(curatorialTrack("growth-of-the-soil"), "later");
   assert.equal(curatorialTrack("nada-the-lily"), "later");
-  assert.equal(curatorialTrack("all-quiet-on-the-western-front"), "later");
+  assert.equal(curatorialTrack("all-quiet-on-the-western-front"), "next");
   assert.equal(curatorialTrack("we"), "later");
   assert.equal(curatorialTrack("the-story-of-gosta-berling"), "later");
   assert.equal(curatorialTrack("thais"), "later");
@@ -804,7 +805,7 @@ test("All Quiet on the Western Front is a local before-sleep Next lead, not lock
   assert.ok(work);
   assert.equal(work.year, 1929);
   assert.equal(work.title, "All Quiet on the Western Front");
-  assert.equal(work.author, "Erich Maria Remarque (tr. A. W. Wheen)");
+  assert.equal(work.author, "Erich Maria Remarque");
   assert.equal(work.local, true);
   assert.equal(work.gutenberg, 75011);
   assert.equal(isBoundLocal(work), true);
@@ -815,10 +816,10 @@ test("All Quiet on the Western Front is a local before-sleep Next lead, not lock
   assert.ok(lane!.workIds.indexOf("all-quiet-on-the-western-front") > lane!.workIds.indexOf("quicksand"));
   assert.equal(
     (NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("all-quiet-on-the-western-front"),
-    false,
+    true,
   );
   assert.equal(FEATURED_CAROUSEL_IDS.includes("all-quiet-on-the-western-front"), false);
-  assert.equal(curatorialTrack("all-quiet-on-the-western-front"), "later");
+  assert.equal(curatorialTrack("all-quiet-on-the-western-front"), "next");
 });
 
 test("We is a local waking bind on Next, not locked recommend", () => {
