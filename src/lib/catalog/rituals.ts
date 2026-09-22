@@ -265,6 +265,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-awakening",
       "there-is-confusion",
       "miss-lulu-bett",
+      "seven-brothers",
     ],
   },
   {
@@ -551,7 +552,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "faust-part-i",
       "the-divine-comedy",
       "eugene-onegin",
-      "seven-brothers",
       "gilgamesh",
       "bontshe-the-silent",
       "shahnameh",
@@ -614,6 +614,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "lady-macbeth",
       "layla",
       "conference",
+      "gentlemen-prefer-blondes",
+      "of-one-blood",
+      "maria-chapdelaine",
+      "lady-into-fox",
     ],
   },
   {
@@ -642,6 +646,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "mountain-interval",
       "open-window-singapore",
       "the-nose-cape-town",
+      "seven-brothers",
     ],
   },
   {
@@ -699,6 +704,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "sour-grapes",
       "precipitations",
       "spring-and-all",
+      "seven-brothers",
     ],
   },
   {
@@ -1037,6 +1043,10 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "lady-macbeth": 5,
   "layla": 5,
   "conference": 5,
+  "gentlemen-prefer-blondes": 5,
+  "of-one-blood": 5,
+  "maria-chapdelaine": 5,
+  "lady-into-fox": 5,
 };
 
 export function ritualPitchFor(id: string): string | undefined {
