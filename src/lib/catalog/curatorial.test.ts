@@ -103,6 +103,7 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "young-adventure",
     "the-tempers",
     "the-crescent-moon",
+    "poems-by-emily-dickinson-series-one",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");

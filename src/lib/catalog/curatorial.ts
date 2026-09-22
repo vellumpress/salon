@@ -94,6 +94,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "young-adventure",
   "the-tempers",
   "the-crescent-moon",
+  "poems-by-emily-dickinson-series-one",
 ] as const;
 
 /**
