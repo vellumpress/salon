@@ -79,6 +79,21 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "tropic",
   "there-is-confusion",
   "miss-lulu-bett",
+  // Mira BATCH-1 CLEAR (Sep 22) — after the PM queue. Never Featured.
+  "the-three-impostors",
+  "reginald",
+  "last-poems-housman",
+  "the-dynamiter",
+  "candide",
+  "trooper-peter-halket-of-mashonaland",
+  "the-toys-of-peace",
+  "the-black-dog",
+  "children-of-the-frost",
+  "south-sea-tales",
+  "fairies-and-fusiliers",
+  "young-adventure",
+  "the-tempers",
+  "the-crescent-moon",
 ] as const;
 
 /**

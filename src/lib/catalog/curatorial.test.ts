@@ -89,6 +89,20 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "tropic",
     "there-is-confusion",
     "miss-lulu-bett",
+    "the-three-impostors",
+    "reginald",
+    "last-poems-housman",
+    "the-dynamiter",
+    "candide",
+    "trooper-peter-halket-of-mashonaland",
+    "the-toys-of-peace",
+    "the-black-dog",
+    "children-of-the-frost",
+    "south-sea-tales",
+    "fairies-and-fusiliers",
+    "young-adventure",
+    "the-tempers",
+    "the-crescent-moon",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -377,8 +391,9 @@ test("Trooper Peter Halket is a local before-sleep bind on Next", () => {
   assert.equal(FEATURED_CAROUSEL_IDS.includes("trooper-peter-halket"), false);
   const stub = SHELF.find((item) => item.id === "trooper-peter-halket-of-mashonaland");
   assert.ok(stub);
-  assert.equal(stub.local, undefined);
+  assert.equal(stub.local, true);
   assert.notEqual(stub.id, work.id);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes(stub.id), false);
 });
 
 test("Enchanted April is a local waking bind on locked recommend", () => {
