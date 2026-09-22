@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { canNativeShare, shareOrCopy } from "@/lib/shuffle";
+import { APP_NAME } from "@/lib/site";
 import { useVellum } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
@@ -45,8 +46,8 @@ export function ShareLinkButton({ className }: { className?: string }) {
       )}
       onClick={() => {
         void shareOrCopy({
-          title: document.title || "Salon",
-          text: "A sitting from Salon.",
+          title: document.title || APP_NAME,
+          text: `A sitting from ${APP_NAME}.`,
           url: window.location.href,
         }).then((result) => {
           if (result !== "shared" && result !== "copied") return;

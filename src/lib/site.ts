@@ -1,5 +1,5 @@
 /** User-facing product name. Repo / Pages path are `salon`. */
-export const APP_NAME = "Salon";
+export const APP_NAME = "Vellum";
 
 /** GitHub Pages subdirectory (no trailing slash). */
 export const APP_BASE_PATH = "/salon";

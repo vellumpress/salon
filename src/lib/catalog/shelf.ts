@@ -1239,7 +1239,7 @@ export const SHELF: ShelfWork[] = [
       "The long, long road over the moors and up into the forest—who trod it into being first of all?",
     breaths: 3314,
     intro:
-      "Who made the road over the moors? A man with a sack, a red beard, and scars — looking for land, or peace. Hamsun’s settler open uses the period word “Lapp” for Sámi herders on the common. Historical voice; Salon stays on the man with the sack. If you Host further, keep that named for the room.",
+      "Who made the road over the moors? A man with a sack, a red beard, and scars — looking for land, or peace. Hamsun’s settler open uses the period word “Lapp” for Sámi herders on the common. Historical voice; Vellum stays on the man with the sack. If you Host further, keep that named for the room.",
   },
   { id: "look-we-have-come-through", title: "Look! We Have Come Through!", author: "D. H. Lawrence", year: 1917, form: "poem", language: "English", local: true, opening: "THESE poems should not be considered separately, as so many single pieces.", breaths: 820, minutes: 105, gutenberg: 23394 },
   { id: "prufrock-and-other-observations", title: "Prufrock and Other Observations", author: "T. S. Eliot", year: 1917, form: "poem", language: "English", minutes: 90, local: true, opening: "Among the smoke and fog of a December afternoon You have the scene arrange itself--as it will seem to do-- With “I have saved this afternoon for you”; And four wax candles in the", breaths: 51, gutenberg: 1459 },
@@ -2220,7 +2220,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "miss-brill-adapted",
     title: "Katherine Mansfield, Miss Brill recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2234,7 +2234,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "prefer-not",
     title: "Herman Melville, Bartleby recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2248,7 +2248,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "late-season",
     title: "Anton Chekhov, The Lady with the Dog recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2263,7 +2263,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "between-the-drop-and-the-water",
     title: "Ambrose Bierce, An Occurrence at Owl Creek Bridge recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2278,7 +2278,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "he-woke-changed",
     title: "Franz Kafka, The Metamorphosis recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2293,7 +2293,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "the-pattern",
     title: "Charlotte Perkins Gilman, The Yellow Wallpaper recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2307,7 +2307,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "a-coat-worthy-of-respect",
     title: "Nikolai Gogol, The Overcoat recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2322,7 +2322,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "what-she-borrowed",
     title: "Guy de Maupassant, The Necklace recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2336,7 +2336,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "it-was-not-nervousness",
     title: "Edgar Allan Poe, The Tell-Tale Heart recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2350,7 +2350,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "during-carnival",
     title: "Edgar Allan Poe, The Cask of Amontillado recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2364,7 +2364,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "what-we-sold",
     title: "O. Henry, The Gift of the Magi recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2379,7 +2379,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "bliss-tokyo",
     title: "Katherine Mansfield, Bliss recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2393,7 +2393,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "open-window-singapore",
     title: "Saki, The Open Window recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2407,7 +2407,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "story-of-an-hour-buenos-aires",
     title: "Kate Chopin, The Story of an Hour recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2421,7 +2421,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "masque-rio",
     title: "Edgar Allan Poe, The Masque of the Red Death recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2435,7 +2435,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "boule-de-suif-istanbul",
     title: "Guy de Maupassant, Boule de Suif recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2449,7 +2449,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "happy-prince-hong-kong",
     title: "Oscar Wilde, The Happy Prince recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2464,7 +2464,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "hunger-artist-milan",
     title: "Franz Kafka, A Hunger Artist recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2479,7 +2479,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "the-nose-cape-town",
     title: "Nikolai Gogol, The Nose recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2493,7 +2493,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "queen-of-spades-paris",
     title: "Alexander Pushkin, The Queen of Spades recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2507,7 +2507,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "decapitated-chicken-lisbon",
     title: "Horacio Quiroga, The Decapitated Chicken recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2521,7 +2521,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "garden-party-barcelona",
     title: "Katherine Mansfield, The Garden Party recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2536,7 +2536,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "usher-prague",
     title: "Edgar Allan Poe, The Fall of the House of Usher recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2551,7 +2551,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "araby-seville",
     title: "James Joyce, Araby recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2566,7 +2566,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "madame-bovary-tokyo",
     title: "Gustave Flaubert, Madame Bovary recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2580,7 +2580,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "dorian-gray-shanghai",
     title: "Oscar Wilde, The Picture of Dorian Gray recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2594,7 +2594,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "anna-karenina-milan",
     title: "Leo Tolstoy, Anna Karenina recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2608,7 +2608,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "jane-eyre-singapore",
     title: "Charlotte Brontë, Jane Eyre recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2622,7 +2622,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "pride-prejudice-buenos-aires",
     title: "Jane Austen, Pride and Prejudice recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2636,7 +2636,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "dracula-istanbul",
     title: "Bram Stoker, Dracula recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2650,7 +2650,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "crime-punishment-cape-town",
     title: "Fyodor Dostoevsky, Crime and Punishment recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2664,7 +2664,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "age-of-innocence-venice",
     title: "Edith Wharton, The Age of Innocence recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2678,7 +2678,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "tess-lisbon",
     title: "Thomas Hardy, Tess of the d'Urbervilles recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2692,7 +2692,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "scarlet-letter-kyoto",
     title: "Nathaniel Hawthorne, The Scarlet Letter recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",
@@ -2706,7 +2706,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "wuthering-heights-rio",
     title: "Emily Brontë, Wuthering Heights recast",
-    author: "Salon",
+    author: "Vellum",
     year: 2026,
     form: "other",
     language: "English",

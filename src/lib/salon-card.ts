@@ -1,7 +1,7 @@
 import type { Fill } from "./mondrian.ts";
 import { fillOf } from "./mondrian.ts";
 import { clipLine } from "./share-codec.ts";
-import { publicUrl } from "./site.ts";
+import { APP_NAME, publicUrl } from "./site.ts";
 
 export const CARD_WIDTH = 1080;
 export const CARD_HEIGHT = 1350;
@@ -95,7 +95,7 @@ export function paintSalonCard(
   ctx.fillStyle = fill === "yellow" || fill === "paper" ? INK : PAPER;
   ctx.font = '500 28px "Outfit", ui-sans-serif, sans-serif';
   ctx.textBaseline = "middle";
-  ctx.fillText("SALON", inset, rule + 48);
+  ctx.fillText(APP_NAME.toUpperCase(), inset, rule + 48);
 
   ctx.fillStyle = INK;
   ctx.fillRect(rule, rule + 96, width - rule * 2, rule);
@@ -163,5 +163,5 @@ export function cardFileName(title: string): string {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "")
     .slice(0, 40);
-  return slug || "salon-card";
+  return slug || "vellum-card";
 }

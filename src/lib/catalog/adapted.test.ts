@@ -206,7 +206,7 @@ test("Adapted remakes are local sits with source credit, not locked recommend", 
     const work = shelfWork(id);
     assert.ok(work, id);
     assert.equal(work.title, want.title, id);
-    assert.equal(work.author, "Salon", id);
+    assert.equal(work.author, "Vellum", id);
     assert.equal(work.year, 2026, id);
     assert.equal(work.local, true, id);
     assert.equal(work.gutenberg, undefined, id);
@@ -365,7 +365,7 @@ test("homepage classics strip does not mix in Adapted remakes", () => {
   assert.ok(LOCAL_WORKS.some((item) => item.id === "the-pattern"));
   assert.ok(LOCAL_WORKS.some((item) => item.id === "he-woke-changed"));
   assert.equal(
-    CLASSIC_LOCAL_WORKS.some((item) => item.author === "Salon"),
+    CLASSIC_LOCAL_WORKS.some((item) => item.author === "Vellum" || item.author === "Salon"),
     false,
   );
   for (const id of NOVEL_REMAKE_IDS) {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { cardReadUrl, type SalonCardInput } from "@/lib/salon-card";
 import { clipLine } from "@/lib/share-codec";
-import { liveBackendEnabled, salonShareText, salonShareTitle } from "@/lib/site";
+import { APP_NAME, liveBackendEnabled, salonShareText, salonShareTitle } from "@/lib/site";
 import { createSentenceShare } from "@/lib/sentence-share";
 import { shareOrCopy } from "@/lib/shuffle";
 import { cn } from "@/lib/utils";
@@ -26,7 +26,7 @@ export function SalonCardShare({
     setState("busy");
     const shareUrl = cardReadUrl({ workId, at });
     const snippet = clipLine(text, 160);
-    const name = title || "Salon";
+    const name = title || APP_NAME;
     const result = await shareOrCopy({
       title: salonShareTitle(name),
       text: salonShareText(snippet),
@@ -58,7 +58,7 @@ export function SalonCardShare({
           ? "Copied"
           : compact
             ? "Card"
-            : "Salon card";
+            : `${APP_NAME} card`;
 
   return (
     <button

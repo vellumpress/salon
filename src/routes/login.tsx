@@ -7,7 +7,7 @@ import {
   signIn as signInProvider,
 } from "@/lib/auth/client";
 import { ReaderAuthForm } from "@/components/reader-auth-form";
-import { liveAuthAvailable, withBase } from "@/lib/site";
+import { APP_NAME, liveAuthAvailable, withBase } from "@/lib/site";
 import { useReaderSession, type ReaderAuthMode } from "@/lib/use-reader-session";
 import { cn } from "@/lib/utils";
 
@@ -42,7 +42,7 @@ function LoginHeader() {
         Home
       </Link>
       <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
-        Salon
+        {APP_NAME}
       </h1>
       <Link
         to="/profile"

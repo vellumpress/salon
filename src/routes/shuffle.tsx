@@ -11,7 +11,7 @@ import {
 } from "@/lib/shuffle";
 import { boardWork } from "@/lib/mondrian";
 import { useVellum } from "@/lib/store";
-import { publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
+import { APP_NAME, publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
 import { prefetchWork } from "@/lib/works";
 
 export const Route = createFileRoute("/shuffle")({
@@ -108,7 +108,7 @@ function ShufflePage() {
 
   async function sendLink() {
     const result = await shareOrCopy({
-      title: salonShareTitle(meta?.title ?? "Salon"),
+      title: salonShareTitle(meta?.title ?? APP_NAME),
       text: salonShareText(meta?.title ?? "A sitting"),
       url: href,
     });

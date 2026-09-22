@@ -1,8 +1,8 @@
-# Salon
+# Vellum
 
-A calm, phone-first reading app for public-domain classics. This repository is the GitHub Pages twin of [Vellum](https://vellumpress.vercel.app/): same catalog and chamber reader, named **Salon**.
+A calm, phone-first reading app for public-domain classics. This repository is the GitHub Pages build of Vellum: same catalog and chamber reader.
 
-The product name is Salon. The GitHub repo and Pages path are `salon`.
+The product name is **Vellum**. The GitHub repo and Pages path stay `salon` so existing links keep working.
 
 This tree is a full mirror of Vellum V4 (`c9c405`), including every local catalog text and opening (405 each). Do not thin the catalog to save size.
 
@@ -14,7 +14,7 @@ Live on GitHub Pages: **https://vellumpress.github.io/salon/**
 
 Pushes to `main` run `.github/workflows/deploy-pages.yml`. Vite/`tanstackStart` use `base` `/salon/`. Cold deep links (`/salon/read/…`, `/salon/rituals`, …) hit `404.html`, which redirects into `/salon/?/<route>`; `index.html` restores the path before the router boots ([spa-github-pages](https://github.com/rafgraph/spa-github-pages)).
 
-Add to Home Screen on iPhone uses the name **Salon** (`apple-mobile-web-app-title` + web app manifest) and a Mondrian red / blue / green icon.
+Add to Home Screen on iPhone and Android uses the name **Vellum** (`apple-mobile-web-app-title`, `application-name`, and the web app manifest `name` / `short_name`) and a Mondrian red / blue / green icon.
 
 ## Local run
 
@@ -44,7 +44,7 @@ npm run build:vercel
 - Chamber reader for all **888 local binds** (texts + openings stay in `src/lib/catalog/texts` and `src/lib/catalog/openings`)
 - Progress, favorites, kept breaths — `localStorage` (`vellum-v1`)
 - Continue-reading on Home (header + primary resume cell) from that same local progress
-- Friends: claim an `@username`, follow Salon readers, see what they are sitting — local-first
+- Friends: claim an `@username`, follow Vellum readers, see what they are sitting — local-first
 - Reader accounts on **You** (`/profile`) and `/login`: `@username` + email + password. First visit creates; return visits sign in. Session restores after a hard refresh from `localStorage` (`salon-reader-v1`). Password is stored as a PBKDF2 hash, never plaintext. The same `@handle` is shared with Friends so a name is not claimed twice on this phone.
 - Share links that stay on this origin (`/salon/read/…`)
 

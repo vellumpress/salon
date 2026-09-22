@@ -5,6 +5,7 @@ import { blurbFor } from "@/lib/catalog/blurbs";
 import { ritualDurationLabel } from "@/lib/catalog/rituals";
 import { PlaceChip } from "@/components/place-chip";
 import { ResumeLink } from "@/components/resume-link";
+import { APP_NAME } from "@/lib/site";
 import { prefetchWork } from "@/lib/works";
 
 export const Route = createFileRoute("/adapted")({
@@ -39,9 +40,9 @@ function AdaptedPage() {
       </div>
 
       <div className="cell-adapted-intro">
-        <span className="type-kicker opacity-70">Adapted by Salon</span>
+        <span className="type-kicker opacity-70">Adapted by {APP_NAME}</span>
         <span className="type-lede mt-1">
-          Remakes of older pages — Salon originals.
+          Remakes of older pages — {APP_NAME} originals.
         </span>
         <span className="type-pitch mt-2 max-w-xl opacity-80">
           After public-domain sources. Open a sit here, or find the same works
@@ -49,7 +50,7 @@ function AdaptedPage() {
         </span>
       </div>
 
-      <nav className="cell-adapted-lane" aria-label="Adapted by Salon remakes">
+      <nav className="cell-adapted-lane" aria-label={`Adapted by ${APP_NAME} remakes`}>
         <div className="adapted-lane">
           {ADAPTED_WORKS.map((work) => (
             <Link
