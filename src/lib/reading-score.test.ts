@@ -1,8 +1,10 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { readFileSync } from "node:fs";
 import {
   consistencyPts,
   dailyReadingScore,
+  dailyScoreGlance,
   depthPts,
   deriveWindowScores,
   engagementPts,
@@ -12,6 +14,7 @@ import {
   scoreForDay,
   weeklyReadingScore,
 } from "./reading-score.ts";
+import { deriveReadingStats } from "./reading-stats.ts";
 import { dayKey } from "./day-key.ts";
 
 test("focused time is linear to 40 at 30 active minutes and never exceeds 40", () => {
@@ -134,6 +137,62 @@ test("monthly mean soft-caps without breadth across three works", () => {
 
   const open = monthlyReadingScore([95, 95, 95, 95], 3);
   assert.equal(open.total, 95);
+});
+
+test("homepage glance matches the You-page daily total and stays soft at zero", () => {
+  const now = Date.parse("2026-09-22T15:00:00");
+  const today = dayKey(now);
+  const reading = deriveReadingStats({
+    progress: {},
+    favorites: [],
+    readingMinutesByDay: { [today]: 30 },
+    advancesByDay: { [today]: 22 },
+    sceneCrossesByDay: { [today]: 1 },
+    keepsByDay: { [today]: 1 },
+    worksTouchedByDay: { [today]: ["passing", "quicksand"] },
+    sitsByDay: { [today]: 1 },
+    now,
+  });
+  assert.equal(reading.dailyScore.total, 100);
+  assert.equal(dailyScoreGlance(reading.dailyScore), "100");
+  assert.equal(dailyScoreGlance(reading.dailyScore), String(reading.dailyScore.total));
+
+  const empty = deriveReadingStats({ progress: {}, favorites: [], now });
+  assert.equal(empty.dailyScore.total, 0);
+  assert.equal(dailyScoreGlance(empty.dailyScore), "—");
+  assert.equal(dailyScoreGlance(null), "—");
+  assert.equal(
+    dailyScoreGlance({ total: 0, hasSignal: true }),
+    "—",
+  );
+});
+
+test("homepage chip is a tap to You and reuses the You daily score", () => {
+  const mark = readFileSync(new URL("../components/you-friends-mark.tsx", import.meta.url), "utf8");
+  const chip = readFileSync(new URL("../components/daily-score-chip.tsx", import.meta.url), "utf8");
+  assert.match(mark, /Friends[\s\S]*<DailyScoreChip[\s\S]*\bYou\b/);
+
+  assert.match(chip, /deriveReadingStats\(/);
+  assert.match(chip, /\.dailyScore/);
+  assert.match(chip, /dailyScoreGlance\(/);
+  assert.match(chip, /to=["']\/profile["']/);
+  assert.doesNotMatch(chip, /weeklyScore|monthlyScore/);
+  for (const key of [
+    "readingMinutesByDay",
+    "advancesByDay",
+    "sceneCrossesByDay",
+    "keepsByDay",
+    "worksTouchedByDay",
+    "hostOpensByDay",
+    "sitsByDay",
+    "clubTouchesByDay",
+    "sitHistory",
+    "togetherKeeps",
+    "hostedSits",
+    "handle",
+  ]) {
+    assert.match(chip, new RegExp(key));
+  }
 });
 
 test("deriveWindowScores wires daily / weekly / monthly from day ledgers", () => {

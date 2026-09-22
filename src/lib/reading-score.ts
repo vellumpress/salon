@@ -356,6 +356,18 @@ export function scoreForDay(ledgers: DayLedgers, key: string): DailyScore {
   return dailyReadingScore(dayScoreInput(ledgers, key));
 }
 
+/**
+ * Homepage chip label for today's score.
+ * The number is the You-page daily total. An unopened day (no signal, or 0)
+ * stays a soft dash so home does not flash an alarming zero.
+ */
+export function dailyScoreGlance(
+  score: Pick<DailyScore, "total" | "hasSignal"> | null | undefined,
+): string {
+  if (!score || !score.hasSignal || !(score.total > 0)) return "—";
+  return String(score.total);
+}
+
 export function deriveWindowScores(
   ledgers: DayLedgers,
   now = Date.now(),
