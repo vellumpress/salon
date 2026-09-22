@@ -101,35 +101,35 @@ function Home() {
               data-home-continue=""
               data-resume-fill={resumeFill}
             >
-              <Link
-                to="/read/$workId"
-                params={{ workId: last.id }}
-                search={{ at: last.breathIndex }}
-                preload="intent"
-                aria-label={`Resume ${last.title} by ${last.author || "unknown"}`}
-                className="flex min-w-0 flex-1 flex-col justify-center px-5 py-4 sm:px-8 sm:py-5"
-              >
-                <span className="type-kicker opacity-80">Resume</span>
-                <span className="pillar-title mt-1">{last.title}</span>
-                {last.author ? (
-                  <span className="type-kicker mt-1 truncate opacity-75">
-                    {last.author}
-                  </span>
-                ) : null}
-              </Link>
-              <div className="continue-score flex shrink-0 flex-col">
-                <DailyScoreChip placement="continue" />
+              <div className="resume-column flex min-w-0 flex-1 flex-col">
+                <Link
+                  to="/read/$workId"
+                  params={{ workId: last.id }}
+                  search={{ at: last.breathIndex }}
+                  preload="intent"
+                  aria-label={`Resume ${last.title} by ${last.author || "unknown"}`}
+                  className="flex min-w-0 flex-1 flex-col justify-center px-5 py-4 sm:px-8 sm:py-5"
+                >
+                  <span className="type-kicker opacity-80">Resume</span>
+                  <span className="pillar-title mt-1">{last.title}</span>
+                  {last.author ? (
+                    <span className="type-kicker mt-1 truncate opacity-75">
+                      {last.author}
+                    </span>
+                  ) : null}
+                </Link>
                 <Link
                   to="/read/$workId"
                   params={{ workId: last.id }}
                   search={{ at: last.breathIndex }}
                   preload="intent"
                   aria-label={`Continue ${last.title}`}
-                  className="continue-score-go type-chrome flex items-center justify-center px-2"
+                  className="resume-continue type-chrome flex min-h-11 items-center px-5 sm:px-8"
                 >
                   Continue
                 </Link>
               </div>
+              <DailyScoreChip placement="continue" />
             </div>
           ) : null}
 

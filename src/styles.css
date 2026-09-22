@@ -442,8 +442,9 @@ html.together-compose.together-kb .chat-slot {
 }
 
 /* Homepage score. Mark placement uses the You "today" yellow.
-   Continue placement is its own plate: cream against red, blue, and
-   forest; ink when Continue is already paper or yellow. */
+   Continue placement is its own plate on the right of the resume cell:
+   cream against red, blue, and forest; ink when the cell is already
+   paper or yellow. The Continue strip sits in the title column. */
 .daily-score-chip {
   min-width: 2.75rem;
   gap: 0.12rem;
@@ -455,10 +456,12 @@ html.together-compose.together-kb .chat-slot {
   line-height: 1;
 }
 .daily-score-chip--continue {
-  width: 100%;
+  width: 5.5rem;
+  flex: none;
+  align-self: stretch;
   min-width: 0;
   gap: 0.28rem;
-  padding: 0.7rem 0.45rem 0.35rem;
+  padding: 0.7rem 0.45rem;
   background: var(--color-paper);
   color: var(--color-ink);
 }
@@ -471,18 +474,13 @@ html.together-compose.together-kb .chat-slot {
   font-size: var(--text-title);
   line-height: 1;
 }
-.continue-score > .daily-score-chip--continue {
-  flex: 1 1 auto;
-  min-height: 2.75rem;
-}
 .daily-score-chip--continue[data-home-daily-score="quiet"] .daily-score-num {
   opacity: 0.62;
 }
-.continue-score {
-  width: 5.5rem;
-  border-left: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+.resume-column {
+  border-right: 1px solid color-mix(in srgb, currentColor 22%, transparent);
 }
-.continue-score-go {
+.resume-continue {
   min-height: 2.75rem;
   border-top: 1px solid color-mix(in srgb, currentColor 22%, transparent);
   white-space: nowrap;
@@ -1001,7 +999,7 @@ html.together-compose.together-kb .chat-slot {
     height: auto;
     max-height: none;
   }
-  .continue-score {
+  .daily-score-chip--continue {
     width: 7.5rem;
   }
   .type-mark {

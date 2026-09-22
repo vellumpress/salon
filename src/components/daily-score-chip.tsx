@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
  * Week and month stay on You.
  *
  * `mark` sits in the top bar when Continue is hidden. `continue` is the
- * score half of the homepage Continue block.
+ * score tile on the right of the homepage resume cell.
  */
 export function DailyScoreChip({
   className,
@@ -97,7 +97,7 @@ export function DailyScoreChip({
       className={cn(
         "daily-score-chip type-chrome flex flex-col items-center justify-center [touch-action:manipulation]",
         inContinue
-          ? "daily-score-chip--continue min-h-11 flex-1 self-stretch"
+          ? "daily-score-chip--continue min-h-11 shrink-0 self-stretch"
           : cn(
               "h-full shrink-0 self-stretch border-l border-ink/15",
               quiet ? "bg-paper-deep text-ink/45" : "bg-yellow text-ink",
