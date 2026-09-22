@@ -78,6 +78,11 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * BATCH-12 CLEAR (Sep 22) sits on Next after BATCH-9 (after All Quiet),
  * before-sleep only — never Featured, not For you. Cold-open stays
  * Mirth → Quicksand → Botchan. Ids already full-text local keep that bind.
+ * BATCH-14 CLEAR (Sep 22) sits on Next after BATCH-13 (after All Quiet),
+ * before-sleep only — never Featured, not For you. Cold-open stays
+ * Mirth → Quicksand → Botchan. Ids already full-text local keep that bind
+ * (Yiddish Tales, Pharaoh, Brazilian Tales, Mashi, Casanova's Homecoming).
+ * Bertha Garlan stays on its earlier Next seat; the bind now opens on Chapter I.
  * Tier B format-min batches 9–10 (Sep 22) are Later binds only — not Featured,
  * not Next, not For you. Mother is one of those Later rows. The chambermaid
  * stub stays unbound; Diary of a Chambermaid is the fuller local bind.
@@ -332,6 +337,20 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "tales-grotesque-and-curious",
   "a-book-barnes",
   "a-spring-time-case",
+  "jewish-children",
+  "essays-and-soliloquies",
+  "tragic-sense-of-life",
+  "white-buildings",
+  "three-plays",
+  "our-lady-of-the-pillar",
+  "the-sweet-miracle",
+  "red-oleanders",
+  "stories-from-tagore",
+  "the-fugitive",
+  "nationalism",
+  "the-cycle-of-spring",
+  "creative-unity",
+  "the-lonely-way",
 ] as const;
 
 /**
