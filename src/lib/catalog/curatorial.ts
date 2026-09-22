@@ -113,8 +113,8 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * (Matson EN 79566) is For you only — not Next. Cold-open stays
  * Mirth → Quicksand → Botchan.
  * Generosity (Amber Later, 2026) is an original contemporary bind — rights
- * Vellum, not Gutenberg. It sits on Next after Maria Chapdelaine, before-sleep
- * only. Never Featured, not For you. Cold-open stays Mirth → Quicksand → Botchan.
+ * Vellum, not Gutenberg. Later lane only. Never Featured, not Next, not For you.
+ * Cold-open stays Mirth → Quicksand → Botchan.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -421,8 +421,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "gentlemen-prefer-blondes",
   "of-one-blood",
   "maria-chapdelaine",
-  // Original contemporary — Amber Later. Rights: Vellum. Never Featured. Not For you.
-  "generosity",
 ] as const;
 
 /**

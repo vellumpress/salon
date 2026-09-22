@@ -5,8 +5,8 @@
   "year": "2026",
   "rights": "Vellum",
   "source": "original",
-  "note": "Original contemporary text. Rights: Vellum.\n\nGenerosity, by Amber Later. The story opens on the first sentence; the poem sections follow, separated as in the manuscript.",
-  "minutes": 34,
+  "note": "Original contemporary text. Rights: Vellum.\n\nGenerosity, by Amber Later. The story opens on the first sentence. Each untitled poem is its own chapter.",
+  "minutes": 13,
   "cover": "",
   "coverAlt": "",
   "scenes": [
@@ -19,9 +19,51 @@
     },
     {
       "id": "s1",
-      "title": "***",
-      "place": "***",
+      "title": "Untitled",
+      "place": "Untitled",
       "reentry": "Without walls between rooms we",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Untitled",
+      "place": "Untitled",
+      "reentry": "Nighttime rain sluiced in the maze of your astounding mimicry.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Untitled",
+      "place": "Untitled",
+      "reentry": "I walked through freezing weather to a home",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Untitled",
+      "place": "Untitled",
+      "reentry": "In silent times passive sentiment draws flies.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "Untitled",
+      "place": "Untitled",
+      "reentry": "Your face, three quarters turned away",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "Untitled",
+      "place": "Untitled",
+      "reentry": "Looking out the room and the floor you slept on like it was outside where you slept so comfortable I saw a purple light at the top of the spire is a steel peak to attract charge unlike the night I left far from the stranger’s room when I placed the back of my hand against your palm tree on my image beach where your bald geometry begged my careless attraction and I beat you like a guilty not guilty show dog when you stole my coat I gifted you until I heard our master chew your numb limb and begged him to stop breeding without me as I dragged my arm around your looming shoulder and we went out of the tropical room into the mind of someone who was really empathetic but not me and you were brainless, sleeping idiot leftover girl from the world of the most beautiful world I saw you in, so talented because of your ability to read equations and derisive fear.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Untitled",
+      "place": "Untitled",
+      "reentry": "Moment of culture I remember falling on your lap and spilling charcoal.",
       "prompt": "A word from this stretch."
     }
   ],
@@ -34,370 +76,820 @@
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "Half a year ago, my aunt miscarried and the clothing she’d bought for her child, still folded in a box with the tags attached, became saturated in loss. To spare her further grief, I offered to remove the clothes from her home and donate them to a charity run through a local church. You and I drove to the church together and carried the clothes into the basement, which was used as a Sunday School classroom in addition to a nursery for young children while their parents attended mass."
+      "text": "Half a year ago, my aunt miscarried and the clothing she’d bought for her child, still folded in a box with the tags attached, became saturated in loss."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "The walls of the basement were covered in a mural, which the woman who collected our donation told us was painted by elementary schoolers. The mural depicted a web of smiling faces, all drawn with crude simplicity. Two lines and two dots. A circle head, a crescent smile, and two pinhole eyes. Some of them had noses, ears, or hair, but none were close to realistic."
+      "text": "To spare her further grief, I offered to remove the clothes from her home and donate them to a charity run through a local church."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "You drew my attention to one of these painted faces in particular. You said it looked like you, and I laughed until I realized you were serious."
+      "text": "You and I drove to the church together and carried the clothes into the basement, which was used as a Sunday School classroom in addition to a nursery for young children while their parents attended mass."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "“They all look the same, why this one?”"
+      "text": "The walls of the basement were covered in a mural, which the woman who collected our donation told us was painted by elementary schoolers."
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "“So you don’t see it?”"
+      "text": "The mural depicted a web of smiling faces, all drawn with crude simplicity."
     },
     {
       "id": "s0-6",
       "sceneId": "s0",
-      "text": "“No, I mean, none of them even look like real people to begin with.”"
+      "text": "Two lines and two dots."
     },
     {
       "id": "s0-7",
       "sceneId": "s0",
-      "text": "You didn’t look away from the face while you spoke, and you didn’t laugh when I laughed. Up until then, I’d known you as someone who was easily distracted and full of good humor. Your fixation on the face and the weight of your tone frightened me. Before we left, you asked me to take a photo of you standing beside it. I obliged."
+      "text": "A circle head, a crescent smile, and two pinhole eyes."
     },
     {
       "id": "s0-8",
       "sceneId": "s0",
-      "text": "“Now, smile in the next one.”"
+      "text": "Some of them had noses, ears, or hair, but none were close to realistic."
     },
     {
       "id": "s0-9",
       "sceneId": "s0",
-      "text": "“It’s fine, I only needed one.”"
+      "text": "You drew my attention to one of these painted faces in particular. You said it looked like you, and I laughed until I realized you were serious."
     },
     {
       "id": "s0-10",
       "sceneId": "s0",
-      "text": "“The face is smiling– you don’t want one of you smiling too?”"
+      "text": "“They all look the same, why this one?”"
     },
     {
       "id": "s0-11",
       "sceneId": "s0",
-      "text": "“No, not really.”"
+      "text": "“So you don’t see it?”"
     },
     {
       "id": "s0-12",
       "sceneId": "s0",
-      "text": "“Well, I do.” This time, you obliged me. Back outside, you saw a cloud and made a joke about how it looked like a rabbit in a magician’s hat. Your good nature had returned. I quickly forgot about the mural."
+      "text": "“No, I mean, none of them even look like real people to begin with.”"
     },
     {
       "id": "s0-13",
       "sceneId": "s0",
-      "text": "A little over a month later, we visited our friends, another couple, for dinner at their apartment. By the end of eating, everyone was relaxed and happy and almost drunk. I was surprised by the turn you then steered our conversation in."
+      "text": "You didn’t look away from the face while you spoke, and you didn’t laugh when I laughed."
     },
     {
       "id": "s0-14",
       "sceneId": "s0",
-      "text": "“The other day, he and I saw this mural and I thought it was like looking at a photo of myself. He didn’t see it though. What do you think?” You pulled out your phone and showed them the first photo that I took, the one in which you weren’t smiling."
+      "text": "Up until then, I’d known you as someone who was easily distracted and full of good humor."
     },
     {
       "id": "s0-15",
       "sceneId": "s0",
-      "text": "“Well...” one of our hosts began. “It doesn’t look like you more than anyone else, does it?” Everyone at the table, including you, laughed."
+      "text": "Your fixation on the face and the weight of your tone frightened me."
     },
     {
       "id": "s0-16",
       "sceneId": "s0",
-      "text": "“No, I guess not,” you said before putting away your phone."
+      "text": "Before we left, you asked me to take a photo of you standing beside it."
     },
     {
       "id": "s0-17",
       "sceneId": "s0",
-      "text": "I was annoyed by the ease with which you asked their opinion, the way you made it seem like a silly party game or joke instead of a neurotic obsession. If over a month had gone by since we saw the mural, why say “the other day”? And if it really wasn’t such a big deal that you could accept a ‘no’ so easily and immediately drop the subject, why did you even bring it up again in the first place, especially after going so long with no other mention of it in the meantime? Clearly, it mattered to you."
+      "text": "I obliged."
     },
     {
       "id": "s0-18",
       "sceneId": "s0",
-      "text": "This strange behavior repeated itself a number of times over the next several months. You would ask friends and acquaintances about the face in the mural, always in my presence, always acting like it was just light, humorous conversation surrounding a recent event. If I objected or called you out, our friends would call me harsh. They didn’t realize what an obsession it was for you. Your practiced indifference and casual delivery fooled them all."
+      "text": "“Now, smile in the next one.”"
     },
     {
       "id": "s0-19",
       "sceneId": "s0",
-      "text": "One night at bedtime you seemed troubled so I asked how you were feeling. You responded with a question of your own: “If I asked you to smile right now, could you?”"
+      "text": "“It’s fine, I only needed one.”"
     },
     {
       "id": "s0-20",
       "sceneId": "s0",
-      "text": "“No. I’m not in the mood.”"
+      "text": "“The face is smiling– you don’t want one of you smiling too?”"
     },
     {
       "id": "s0-21",
       "sceneId": "s0",
-      "text": "“Me neither, but mood doesn't matter."
+      "text": "“No, not really.”"
     },
     {
       "id": "s0-22",
       "sceneId": "s0",
-      "text": "“What do you mean, ‘mood doesn't matter’?”"
+      "text": "“Well, I do.” This time, you obliged me. Back outside, you saw a cloud and made a joke about how it looked like a rabbit in a magician’s hat. Your good nature had returned. I quickly forgot about the mural."
     },
     {
       "id": "s0-23",
       "sceneId": "s0",
-      "text": "“I mean it's just something you do with your muscles. Pulling back the cheeks or whatever.” To prove a point, you smiled wide, mouth open, teeth parted. I looked into the darkness in the back of your mouth and felt an anger as red as your throat."
+      "text": "A little over a month later, we visited our friends, another couple, for dinner at their apartment."
     },
     {
       "id": "s0-24",
       "sceneId": "s0",
-      "text": "“That’s weird,” I said."
+      "text": "By the end of eating, everyone was relaxed and happy and almost drunk."
     },
     {
       "id": "s0-25",
       "sceneId": "s0",
-      "text": "“What?”"
+      "text": "I was surprised by the turn you then steered our conversation in."
     },
     {
       "id": "s0-26",
       "sceneId": "s0",
-      "text": "“That it’s so easy for you to smile when you’re not happy.”"
+      "text": "“The other day, he and I saw this mural and I thought it was like looking at a photo of myself."
     },
     {
       "id": "s0-27",
       "sceneId": "s0",
-      "text": "“When did I say I wasn’t happy?” I turned off the lamp beside our bed and got under the covers. “I just wasn’t in the mood to smile.”"
+      "text": "He didn’t see it though."
     },
     {
       "id": "s0-28",
       "sceneId": "s0",
-      "text": "“But you did it anyway.”"
+      "text": "What do you think?”"
     },
     {
       "id": "s0-29",
       "sceneId": "s0",
-      "text": "“So? I just wasn’t in the mood. But it’s just pulling your cheeks back, or whatever. That’s all it is.”"
+      "text": "You pulled out your phone and showed them the first photo that I took, the one in which you weren’t smiling."
     },
     {
       "id": "s0-30",
       "sceneId": "s0",
-      "text": "“The face in the mural was smiling. Why do you never show people the photo of you smiling when you ask them to compare your face to the one in the mural?”"
+      "text": "“Well...” one of our hosts began. “It doesn’t look like you more than anyone else, does it?” Everyone at the table, including you, laughed."
     },
     {
       "id": "s0-31",
       "sceneId": "s0",
-      "text": "“I don’t like how I look in that one.”"
+      "text": "“No, I guess not,” you said before putting away your phone."
     },
     {
       "id": "s0-32",
       "sceneId": "s0",
-      "text": "“If you want to convince people you look like the face, you might as well show them the photo where you’re smiling. The only feature on it is its mouth anyway.”"
+      "text": "I was annoyed by the ease with which you asked their opinion, the way you made it seem like a silly party game or joke instead of a neurotic obsession."
     },
     {
       "id": "s0-33",
       "sceneId": "s0",
-      "text": "“I don’t want to convince people anything.”"
+      "text": "If over a month had gone by since we saw the mural, why say “the other day”?"
     },
     {
       "id": "s0-34",
       "sceneId": "s0",
-      "text": "“Then why the hell do you keep bringing it up?”"
+      "text": "And if it really wasn’t such a big deal that you could accept a ‘no’ so easily and immediately drop the subject, why did you even bring it up again in the first place, especially after going so long with no other mention of it in the meantime?"
     },
     {
       "id": "s0-35",
       "sceneId": "s0",
-      "text": "“I’m just asking their opinion, that’s all. It’s a fun conversation.”"
+      "text": "Clearly, it mattered to you."
     },
     {
       "id": "s0-36",
       "sceneId": "s0",
-      "text": "“No it’s not.”"
+      "text": "This strange behavior repeated itself a number of times over the next several months."
     },
     {
       "id": "s0-37",
       "sceneId": "s0",
-      "text": "You turned off the lights."
+      "text": "You would ask friends and acquaintances about the face in the mural, always in my presence, always acting like it was just light, humorous conversation surrounding a recent event."
     },
     {
       "id": "s0-38",
       "sceneId": "s0",
-      "text": "That night I dreamt you were smiling and your cheeks pulled so far back that the smile turned into a wound. Your skull was flayed and left as bare, expressionless bone. The skull was dropped in dark water and accumulated moss. When it was so overrun with green that I could no longer tell what it was down there, hovering in the deep, I woke up."
+      "text": "If I objected or called you out, our friends would call me harsh."
     },
     {
       "id": "s0-39",
       "sceneId": "s0",
-      "text": "Because we both had off from work that day, we decided to run errands around the city. Afterwards, we started on a walk through a park, only to be caught off guard by a sudden thunderstorm. We took shelter in a rank public restroom, the smell of stale urine mixed in with the freshness of the rain."
+      "text": "They didn’t realize what an obsession it was for you."
     },
     {
       "id": "s0-40",
       "sceneId": "s0",
-      "text": "From our shelter, I saw an old woman in a raincoat carrying two umbrellas. One was in use, the other tucked under her arm, unopened. I called out and waved her over."
+      "text": "Your practiced indifference and casual delivery fooled them all."
     },
     {
       "id": "s0-41",
       "sceneId": "s0",
-      "text": "“Can I buy that second umbrella?”"
+      "text": "One night at bedtime you seemed troubled so I asked how you were feeling. You responded with a question of your own: “If I asked you to smile right now, could you?”"
     },
     {
       "id": "s0-42",
       "sceneId": "s0",
-      "text": "“I’m waiting for someone.”"
+      "text": "“No. I’m not in the mood.”"
     },
     {
       "id": "s0-43",
       "sceneId": "s0",
-      "text": "“Here?”"
+      "text": "“Me neither, but mood doesn't matter."
     },
     {
       "id": "s0-44",
       "sceneId": "s0",
-      "text": "“Yes.”"
+      "text": "“What do you mean, ‘mood doesn't matter’?”"
     },
     {
       "id": "s0-45",
       "sceneId": "s0",
-      "text": "“And they’re not bringing an umbrella too?” She didn’t answer. “Look, can I just borrow it to run across the street and buy one there? I’ll return it right after.” The woman turned around and left. “What the hell?”"
+      "text": "“I mean it's just something you do with your muscles."
     },
     {
       "id": "s0-46",
       "sceneId": "s0",
-      "text": "“Don’t act so entitled,” you told me."
+      "text": "Pulling back the cheeks or whatever.”"
     },
     {
       "id": "s0-47",
       "sceneId": "s0",
-      "text": "“Entitled? It’s not entitled to expect a response when you’re talking to someone.” You shook your head in a way that made me feel condescended to. I became angry but said nothing, did nothing, stood and bit my cheek until it bled inside my mouth, a place you couldn't see. After a few more minutes of silence between us, the old woman returned. She was carrying a brand new umbrella and two cheap raincoats bought at the convenience store across the street."
+      "text": "To prove a point, you smiled wide, mouth open, teeth parted."
     },
     {
       "id": "s0-48",
       "sceneId": "s0",
-      "text": "“Here,” she said. “For you.” I was too surprised to say anything. You reached out and accepted the items into your hands."
+      "text": "I looked into the darkness in the back of your mouth and felt an anger as red as your throat."
     },
     {
       "id": "s0-49",
       "sceneId": "s0",
-      "text": "“Thank you,” you said. “How much was it?” She waved her hand dismissively."
+      "text": "“That’s weird,” I said."
     },
     {
       "id": "s0-50",
       "sceneId": "s0",
-      "text": "“It’s nothing, it’s nothing.”"
+      "text": "“What?”"
     },
     {
       "id": "s0-51",
       "sceneId": "s0",
-      "text": "“Thank you.”"
+      "text": "“That it’s so easy for you to smile when you’re not happy.”"
     },
     {
       "id": "s0-52",
       "sceneId": "s0",
-      "text": "“Are you two a couple?”"
+      "text": "“When did I say I wasn’t happy?” I turned off the lamp beside our bed and got under the covers. “I just wasn’t in the mood to smile.”"
     },
     {
       "id": "s0-53",
       "sceneId": "s0",
-      "text": "“Yes.”"
+      "text": "“But you did it anyway.”"
     },
     {
       "id": "s0-54",
       "sceneId": "s0",
-      "text": "“Beautiful men.”"
+      "text": "“So? I just wasn’t in the mood. But it’s just pulling your cheeks back, or whatever. That’s all it is.”"
     },
     {
       "id": "s0-55",
       "sceneId": "s0",
-      "text": "“Thank you. You know, if you have a moment, could I ask you something?” I tensed up even further as I saw you reach for your phone. I knew where this was going. If it wasn’t strange and humiliating enough to watch you ask our friends such an odd question, asking a total stranger was certainly crossing a line. “A few months ago, he and I saw this mural and had a disagreement about whether or not this face looked like mine. What do you think?”"
+      "text": "“The face in the mural was smiling. Why do you never show people the photo of you smiling when you ask them to compare your face to the one in the mural?”"
     },
     {
       "id": "s0-56",
       "sceneId": "s0",
-      "text": "You handed her your phone as she stepped into the bathroom and put down her umbrella. All of our friends had answered immediately with a laugh or joke, but she appraised the photo in earnest, moving her eyes between you and the phone, you and the phone, you and the phone again. I couldn’t stand how seriously she was taking such a stupid question."
+      "text": "“I don’t like how I look in that one.”"
     },
     {
       "id": "s0-57",
       "sceneId": "s0",
-      "text": "“It’s ridiculous.” You both looked at me. It was the first I’d spoken since she returned with the umbrella and raincoats for us. “It’s insanity. Every single time we meet someone, he insists on asking this fucking dumbass question, he pretends like it’s not a big deal but it’s all that’s on his mind, his own stupid fucking delusion.”"
+      "text": "“If you want to convince people you look like the face, you might as well show them the photo where you’re smiling. The only feature on it is its mouth anyway.”"
     },
     {
       "id": "s0-58",
       "sceneId": "s0",
-      "text": "“Well,” the woman said. “I do see some resemblance.” I shut my mouth, embarrassed. Was the woman telling the truth, or only feeling pity for you after hearing my outburst? If she knew the full series of events leading up to that moment, would she have answered the same way? On the walk back you were silent, lost in thought. You get like that sometimes. When you retreat into yourself, you’re as impossible for me to find as a skull growing moss in the bottom of a dark pond. And even though your eyes were full of vague emotion, I saw upon the rest of your face an expression so blank that I could have finally mistaken it for the face from the mural."
+      "text": "“I don’t want to convince people anything.”"
     },
     {
       "id": "s0-59",
       "sceneId": "s0",
-      "text": "The next morning at breakfast you dropped a ceramic mug and it shattered. You didn’t apologize or clean it up, but you did laugh. I did too. I don’t know why we found it funny. Then you muttered something about running late for work in between spoonfuls of yogurt and were out the door. You didn’t come back home for several days, and when you did we decided to break up."
+      "text": "“Then why the hell do you keep bringing it up?”"
     },
     {
       "id": "s0-60",
       "sceneId": "s0",
-      "text": "I guess it must have been almost two months after you moved out that you called to tell me you found some of my clothes in one of the boxes you packed. It was our first communication since you left. I was missing my favorite sweater and knew it must be at your place, so I walked over that afternoon, when it was very bright outside and the heat buzzed like a mild electric current conducted through the air. I texted you “I’m here” and waited on your stoop."
+      "text": "“I’m just asking their opinion, that’s all. It’s a fun conversation.”"
     },
     {
       "id": "s0-61",
       "sceneId": "s0",
-      "text": "Then you opened the door. Something was different about your face. I didn’t speak. Was it your face that had changed, or was my memory weak? I was unable to tell what was different. It was not that it looked any more or less like the face from the mural before. In fact, it is very possible that having grown so used to that juxtaposition, what surprised me about your face that afternoon, when the comparison with the mural was not particularly insistent in my mind, was that I was seeing it alone again."
+      "text": "“No it’s not.”"
     },
     {
       "id": "s0-62",
       "sceneId": "s0",
-      "text": "My silence continued as I followed you inside. But, it wasn’t out of bitterness that I was quiet. Please don’t think that I was quiet because I didn’t want to speak to you. It was the opposite. Your face was different than I remembered, but I still recognized it. Something as proximal as it was unfamiliar. Relief fell on my shoulders like a waterfall when I saw you. I was home and didn’t need the defense of words."
+      "text": "You turned off the lights."
     },
     {
       "id": "s0-63",
       "sceneId": "s0",
-      "text": "We sat across from each other for a while saying nothing. I recalled how angry your white lie made me, the lie you continued to tell about encountering the mural “the other day” even months after the fact. The lie about it not being a repeat question, an obsession. But then I had a new thought— isn’t it possible that each time you asked about the similarity between faces, you really didn’t believe that you were repeating yourself? That the idea seemed fresh to you every time? I do believe that this is possible. I even believe that it was likely."
+      "text": "That night I dreamt you were smiling and your cheeks pulled so far back that the smile turned into a wound."
     },
     {
       "id": "s0-64",
       "sceneId": "s0",
-      "text": "Isn’t it also possible that I do not have a very clear idea of what your face looks like, because I am more used to recognizing you than I am to seeing you?"
+      "text": "Your skull was flayed and left as bare, expressionless bone."
     },
     {
       "id": "s0-65",
       "sceneId": "s0",
-      "text": "You gave me several opportunities to show you kindness by recognizing the relationship between your face and the one in the mural. You saw a reflection of yourself in the mural, even though I did not. I saw a reflection of you in your face and my imagining of it. Two reflections becoming one— isn’t that the real you? If only I had accepted your generosity sooner, the generosity of a chance to express kindness, the generosity of a chance to accept your truth and escape myself, maybe we would still be in love."
+      "text": "The skull was dropped in dark water and accumulated moss."
     },
     {
       "id": "s0-66",
       "sceneId": "s0",
-      "text": "But, if I didn’t recognize your face in the mural from the beginning, what hope was there that I ever would? You were, and are, very optimistic. Your faith maintained that I could resolve the two reflections into one. Every time that you were asking someone else about the face, you were really asking me. I didn’t understand, and then my frustration..."
+      "text": "When it was so overrun with green that I could no longer tell what it was down there, hovering in the deep, I woke up."
     },
     {
       "id": "s0-67",
       "sceneId": "s0",
-      "text": "If I loved you, I would find a way to make you feel honest."
+      "text": "Because we both had off from work that day, we decided to run errands around the city."
     },
     {
       "id": "s0-68",
       "sceneId": "s0",
-      "text": "If I despised you, I would find a way to make you doubt yourself."
+      "text": "Afterwards, we started on a walk through a park, only to be caught off guard by a sudden thunderstorm."
     },
     {
       "id": "s0-69",
       "sceneId": "s0",
-      "text": "It doesn’t matter if I saw what you saw, agreed or disagreed."
+      "text": "We took shelter in a rank public restroom, the smell of stale urine mixed in with the freshness of the rain."
     },
     {
       "id": "s0-70",
       "sceneId": "s0",
-      "text": "It doesn’t matter if you were right or wrong."
+      "text": "From our shelter, I saw an old woman in a raincoat carrying two umbrellas. One was in use, the other tucked under her arm, unopened. I called out and waved her over."
     },
     {
       "id": "s0-71",
       "sceneId": "s0",
-      "text": "It doesn’t matter what was true and what was false."
+      "text": "“Can I buy that second umbrella?”"
     },
     {
       "id": "s0-72",
       "sceneId": "s0",
-      "text": "Because love is not about honesty."
+      "text": "“I’m waiting for someone.”"
     },
     {
       "id": "s0-73",
       "sceneId": "s0",
-      "text": "Love is about feeling honest."
+      "text": "“Here?”"
     },
     {
       "id": "s0-74",
+      "sceneId": "s0",
+      "text": "“Yes.”"
+    },
+    {
+      "id": "s0-75",
+      "sceneId": "s0",
+      "text": "“And they’re not bringing an umbrella too?” She didn’t answer. “Look, can I just borrow it to run across the street and buy one there? I’ll return it right after.” The woman turned around and left. “What the hell?”"
+    },
+    {
+      "id": "s0-76",
+      "sceneId": "s0",
+      "text": "“Don’t act so entitled,” you told me."
+    },
+    {
+      "id": "s0-77",
+      "sceneId": "s0",
+      "text": "“Entitled?"
+    },
+    {
+      "id": "s0-78",
+      "sceneId": "s0",
+      "text": "It’s not entitled to expect a response when you’re talking to someone.”"
+    },
+    {
+      "id": "s0-79",
+      "sceneId": "s0",
+      "text": "You shook your head in a way that made me feel condescended to."
+    },
+    {
+      "id": "s0-80",
+      "sceneId": "s0",
+      "text": "I became angry but said nothing, did nothing, stood and bit my cheek until it bled inside my mouth, a place you couldn't see."
+    },
+    {
+      "id": "s0-81",
+      "sceneId": "s0",
+      "text": "After a few more minutes of silence between us, the old woman returned."
+    },
+    {
+      "id": "s0-82",
+      "sceneId": "s0",
+      "text": "She was carrying a brand new umbrella and two cheap raincoats bought at the convenience store across the street."
+    },
+    {
+      "id": "s0-83",
+      "sceneId": "s0",
+      "text": "“Here,” she said. “For you.” I was too surprised to say anything. You reached out and accepted the items into your hands."
+    },
+    {
+      "id": "s0-84",
+      "sceneId": "s0",
+      "text": "“Thank you,” you said. “How much was it?” She waved her hand dismissively."
+    },
+    {
+      "id": "s0-85",
+      "sceneId": "s0",
+      "text": "“It’s nothing, it’s nothing.”"
+    },
+    {
+      "id": "s0-86",
+      "sceneId": "s0",
+      "text": "“Thank you.”"
+    },
+    {
+      "id": "s0-87",
+      "sceneId": "s0",
+      "text": "“Are you two a couple?”"
+    },
+    {
+      "id": "s0-88",
+      "sceneId": "s0",
+      "text": "“Yes.”"
+    },
+    {
+      "id": "s0-89",
+      "sceneId": "s0",
+      "text": "“Beautiful men.”"
+    },
+    {
+      "id": "s0-90",
+      "sceneId": "s0",
+      "text": "“Thank you."
+    },
+    {
+      "id": "s0-91",
+      "sceneId": "s0",
+      "text": "You know, if you have a moment, could I ask you something?”"
+    },
+    {
+      "id": "s0-92",
+      "sceneId": "s0",
+      "text": "I tensed up even further as I saw you reach for your phone."
+    },
+    {
+      "id": "s0-93",
+      "sceneId": "s0",
+      "text": "I knew where this was going."
+    },
+    {
+      "id": "s0-94",
+      "sceneId": "s0",
+      "text": "If it wasn’t strange and humiliating enough to watch you ask our friends such an odd question, asking a total stranger was certainly crossing a line."
+    },
+    {
+      "id": "s0-95",
+      "sceneId": "s0",
+      "text": "“A few months ago, he and I saw this mural and had a disagreement about whether or not this face looked like mine."
+    },
+    {
+      "id": "s0-96",
+      "sceneId": "s0",
+      "text": "What do you think?”"
+    },
+    {
+      "id": "s0-97",
+      "sceneId": "s0",
+      "text": "You handed her your phone as she stepped into the bathroom and put down her umbrella."
+    },
+    {
+      "id": "s0-98",
+      "sceneId": "s0",
+      "text": "All of our friends had answered immediately with a laugh or joke, but she appraised the photo in earnest, moving her eyes between you and the phone, you and the phone, you and the phone again."
+    },
+    {
+      "id": "s0-99",
+      "sceneId": "s0",
+      "text": "I couldn’t stand how seriously she was taking such a stupid question."
+    },
+    {
+      "id": "s0-100",
+      "sceneId": "s0",
+      "text": "“It’s ridiculous.”"
+    },
+    {
+      "id": "s0-101",
+      "sceneId": "s0",
+      "text": "You both looked at me."
+    },
+    {
+      "id": "s0-102",
+      "sceneId": "s0",
+      "text": "It was the first I’d spoken since she returned with the umbrella and raincoats for us."
+    },
+    {
+      "id": "s0-103",
+      "sceneId": "s0",
+      "text": "“It’s insanity."
+    },
+    {
+      "id": "s0-104",
+      "sceneId": "s0",
+      "text": "Every single time we meet someone, he insists on asking this fucking dumbass question, he pretends like it’s not a big deal but it’s all that’s on his mind, his own stupid fucking delusion.”"
+    },
+    {
+      "id": "s0-105",
+      "sceneId": "s0",
+      "text": "“Well,” the woman said."
+    },
+    {
+      "id": "s0-106",
+      "sceneId": "s0",
+      "text": "“I do see some resemblance.”"
+    },
+    {
+      "id": "s0-107",
+      "sceneId": "s0",
+      "text": "I shut my mouth, embarrassed."
+    },
+    {
+      "id": "s0-108",
+      "sceneId": "s0",
+      "text": "Was the woman telling the truth, or only feeling pity for you after hearing my outburst?"
+    },
+    {
+      "id": "s0-109",
+      "sceneId": "s0",
+      "text": "If she knew the full series of events leading up to that moment, would she have answered the same way?"
+    },
+    {
+      "id": "s0-110",
+      "sceneId": "s0",
+      "text": "On the walk back you were silent, lost in thought."
+    },
+    {
+      "id": "s0-111",
+      "sceneId": "s0",
+      "text": "You get like that sometimes."
+    },
+    {
+      "id": "s0-112",
+      "sceneId": "s0",
+      "text": "When you retreat into yourself, you’re as impossible for me to find as a skull growing moss in the bottom of a dark pond."
+    },
+    {
+      "id": "s0-113",
+      "sceneId": "s0",
+      "text": "And even though your eyes were full of vague emotion, I saw upon the rest of your face an expression so blank that I could have finally mistaken it for the face from the mural."
+    },
+    {
+      "id": "s0-114",
+      "sceneId": "s0",
+      "text": "The next morning at breakfast you dropped a ceramic mug and it shattered."
+    },
+    {
+      "id": "s0-115",
+      "sceneId": "s0",
+      "text": "You didn’t apologize or clean it up, but you did laugh."
+    },
+    {
+      "id": "s0-116",
+      "sceneId": "s0",
+      "text": "I did too."
+    },
+    {
+      "id": "s0-117",
+      "sceneId": "s0",
+      "text": "I don’t know why we found it funny."
+    },
+    {
+      "id": "s0-118",
+      "sceneId": "s0",
+      "text": "Then you muttered something about running late for work in between spoonfuls of yogurt and were out the door."
+    },
+    {
+      "id": "s0-119",
+      "sceneId": "s0",
+      "text": "You didn’t come back home for several days, and when you did we decided to break up."
+    },
+    {
+      "id": "s0-120",
+      "sceneId": "s0",
+      "text": "I guess it must have been almost two months after you moved out that you called to tell me you found some of my clothes in one of the boxes you packed."
+    },
+    {
+      "id": "s0-121",
+      "sceneId": "s0",
+      "text": "It was our first communication since you left."
+    },
+    {
+      "id": "s0-122",
+      "sceneId": "s0",
+      "text": "I was missing my favorite sweater and knew it must be at your place, so I walked over that afternoon, when it was very bright outside and the heat buzzed like a mild electric current conducted through the air."
+    },
+    {
+      "id": "s0-123",
+      "sceneId": "s0",
+      "text": "I texted you “I’m here” and waited on your stoop."
+    },
+    {
+      "id": "s0-124",
+      "sceneId": "s0",
+      "text": "Then you opened the door."
+    },
+    {
+      "id": "s0-125",
+      "sceneId": "s0",
+      "text": "Something was different about your face."
+    },
+    {
+      "id": "s0-126",
+      "sceneId": "s0",
+      "text": "I didn’t speak."
+    },
+    {
+      "id": "s0-127",
+      "sceneId": "s0",
+      "text": "Was it your face that had changed, or was my memory weak?"
+    },
+    {
+      "id": "s0-128",
+      "sceneId": "s0",
+      "text": "I was unable to tell what was different."
+    },
+    {
+      "id": "s0-129",
+      "sceneId": "s0",
+      "text": "It was not that it looked any more or less like the face from the mural before."
+    },
+    {
+      "id": "s0-130",
+      "sceneId": "s0",
+      "text": "In fact, it is very possible that having grown so used to that juxtaposition, what surprised me about your face that afternoon, when the comparison with the mural was not particularly insistent in my mind, was that I was seeing it alone again."
+    },
+    {
+      "id": "s0-131",
+      "sceneId": "s0",
+      "text": "My silence continued as I followed you inside."
+    },
+    {
+      "id": "s0-132",
+      "sceneId": "s0",
+      "text": "But, it wasn’t out of bitterness that I was quiet."
+    },
+    {
+      "id": "s0-133",
+      "sceneId": "s0",
+      "text": "Please don’t think that I was quiet because I didn’t want to speak to you."
+    },
+    {
+      "id": "s0-134",
+      "sceneId": "s0",
+      "text": "It was the opposite."
+    },
+    {
+      "id": "s0-135",
+      "sceneId": "s0",
+      "text": "Your face was different than I remembered, but I still recognized it."
+    },
+    {
+      "id": "s0-136",
+      "sceneId": "s0",
+      "text": "Something as proximal as it was unfamiliar."
+    },
+    {
+      "id": "s0-137",
+      "sceneId": "s0",
+      "text": "Relief fell on my shoulders like a waterfall when I saw you."
+    },
+    {
+      "id": "s0-138",
+      "sceneId": "s0",
+      "text": "I was home and didn’t need the defense of words."
+    },
+    {
+      "id": "s0-139",
+      "sceneId": "s0",
+      "text": "We sat across from each other for a while saying nothing."
+    },
+    {
+      "id": "s0-140",
+      "sceneId": "s0",
+      "text": "I recalled how angry your white lie made me, the lie you continued to tell about encountering the mural “the other day” even months after the fact."
+    },
+    {
+      "id": "s0-141",
+      "sceneId": "s0",
+      "text": "The lie about it not being a repeat question, an obsession."
+    },
+    {
+      "id": "s0-142",
+      "sceneId": "s0",
+      "text": "But then I had a new thought— isn’t it possible that each time you asked about the similarity between faces, you really didn’t believe that you were repeating yourself?"
+    },
+    {
+      "id": "s0-143",
+      "sceneId": "s0",
+      "text": "That the idea seemed fresh to you every time?"
+    },
+    {
+      "id": "s0-144",
+      "sceneId": "s0",
+      "text": "I do believe that this is possible."
+    },
+    {
+      "id": "s0-145",
+      "sceneId": "s0",
+      "text": "I even believe that it was likely."
+    },
+    {
+      "id": "s0-146",
+      "sceneId": "s0",
+      "text": "Isn’t it also possible that I do not have a very clear idea of what your face looks like, because I am more used to recognizing you than I am to seeing you?"
+    },
+    {
+      "id": "s0-147",
+      "sceneId": "s0",
+      "text": "You gave me several opportunities to show you kindness by recognizing the relationship between your face and the one in the mural."
+    },
+    {
+      "id": "s0-148",
+      "sceneId": "s0",
+      "text": "You saw a reflection of yourself in the mural, even though I did not."
+    },
+    {
+      "id": "s0-149",
+      "sceneId": "s0",
+      "text": "I saw a reflection of you in your face and my imagining of it."
+    },
+    {
+      "id": "s0-150",
+      "sceneId": "s0",
+      "text": "Two reflections becoming one— isn’t that the real you?"
+    },
+    {
+      "id": "s0-151",
+      "sceneId": "s0",
+      "text": "If only I had accepted your generosity sooner, the generosity of a chance to express kindness, the generosity of a chance to accept your truth and escape myself, maybe we would still be in love."
+    },
+    {
+      "id": "s0-152",
+      "sceneId": "s0",
+      "text": "But, if I didn’t recognize your face in the mural from the beginning, what hope was there that I ever would?"
+    },
+    {
+      "id": "s0-153",
+      "sceneId": "s0",
+      "text": "You were, and are, very optimistic."
+    },
+    {
+      "id": "s0-154",
+      "sceneId": "s0",
+      "text": "Your faith maintained that I could resolve the two reflections into one."
+    },
+    {
+      "id": "s0-155",
+      "sceneId": "s0",
+      "text": "Every time that you were asking someone else about the face, you were really asking me."
+    },
+    {
+      "id": "s0-156",
+      "sceneId": "s0",
+      "text": "I didn’t understand, and then my frustration..."
+    },
+    {
+      "id": "s0-157",
+      "sceneId": "s0",
+      "text": "If I loved you, I would find a way to make you feel honest."
+    },
+    {
+      "id": "s0-158",
+      "sceneId": "s0",
+      "text": "If I despised you, I would find a way to make you doubt yourself."
+    },
+    {
+      "id": "s0-159",
+      "sceneId": "s0",
+      "text": "It doesn’t matter if I saw what you saw, agreed or disagreed."
+    },
+    {
+      "id": "s0-160",
+      "sceneId": "s0",
+      "text": "It doesn’t matter if you were right or wrong."
+    },
+    {
+      "id": "s0-161",
+      "sceneId": "s0",
+      "text": "It doesn’t matter what was true and what was false."
+    },
+    {
+      "id": "s0-162",
+      "sceneId": "s0",
+      "text": "Because love is not about honesty."
+    },
+    {
+      "id": "s0-163",
+      "sceneId": "s0",
+      "text": "Love is about feeling honest."
+    },
+    {
+      "id": "s0-164",
       "sceneId": "s0",
       "text": "I’m sorry."
     },
@@ -427,119 +919,144 @@
       "text": "it was so cold"
     },
     {
-      "id": "s1-5",
-      "sceneId": "s1",
-      "text": "***"
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Nighttime rain sluiced in the maze of your astounding mimicry."
     },
     {
-      "id": "s1-6",
-      "sceneId": "s1",
-      "text": "Nighttime rain sluiced in the maze of your astounding mimicry. Before becoming human, there is a gate we must pass through. At the threshold we change and never stop. Rivulets on the window, in your dark iris a motive was made into driftwood."
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Before becoming human, there is a gate we must pass through."
     },
     {
-      "id": "s1-7",
-      "sceneId": "s1",
-      "text": "***"
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "At the threshold we change and never stop."
     },
     {
-      "id": "s1-8",
-      "sceneId": "s1",
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Rivulets on the window, in your dark iris a motive was made into driftwood."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
       "text": "I walked through freezing weather to a home"
     },
     {
-      "id": "s1-9",
-      "sceneId": "s1",
+      "id": "s3-1",
+      "sceneId": "s3",
       "text": "The man inside loved blood, decapitation"
     },
     {
-      "id": "s1-10",
-      "sceneId": "s1",
+      "id": "s3-2",
+      "sceneId": "s3",
       "text": "He wanted me to murder him"
     },
     {
-      "id": "s1-11",
-      "sceneId": "s1",
+      "id": "s3-3",
+      "sceneId": "s3",
       "text": "Only in memory do I see desire"
     },
     {
-      "id": "s1-12",
-      "sceneId": "s1",
+      "id": "s3-4",
+      "sceneId": "s3",
       "text": "circumscribe his head like a crown"
     },
     {
-      "id": "s1-13",
-      "sceneId": "s1",
+      "id": "s3-5",
+      "sceneId": "s3",
       "text": "The maroon glow of that man’s deathwish:"
     },
     {
-      "id": "s1-14",
-      "sceneId": "s1",
+      "id": "s3-6",
+      "sceneId": "s3",
       "text": "metal, lined with brilliant reflections"
     },
     {
-      "id": "s1-15",
-      "sceneId": "s1",
+      "id": "s3-7",
+      "sceneId": "s3",
       "text": "Now I see the color of his desire everywhere"
     },
     {
-      "id": "s1-16",
-      "sceneId": "s1",
+      "id": "s3-8",
+      "sceneId": "s3",
       "text": "For example, when I close my eyes"
     },
     {
-      "id": "s1-17",
-      "sceneId": "s1",
+      "id": "s3-9",
+      "sceneId": "s3",
       "text": "and press my palms into their sockets."
     },
     {
-      "id": "s1-18",
-      "sceneId": "s1",
-      "text": "***"
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "In silent times passive sentiment draws flies."
     },
     {
-      "id": "s1-19",
-      "sceneId": "s1",
-      "text": "In silent times passive sentiment draws flies. Portal to the burning ring behind a burning eyelid. What you forgot, a locked room. Slower than a planet’s crawl, tyrannical desire mounts an arch."
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Portal to the burning ring behind a burning eyelid."
     },
     {
-      "id": "s1-20",
-      "sceneId": "s1",
-      "text": "***"
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "What you forgot, a locked room."
     },
     {
-      "id": "s1-21",
-      "sceneId": "s1",
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Slower than a planet’s crawl, tyrannical desire mounts an arch."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
       "text": "Your face, three quarters turned away"
     },
     {
-      "id": "s1-22",
-      "sceneId": "s1",
+      "id": "s5-1",
+      "sceneId": "s5",
       "text": "from water toward water"
     },
     {
-      "id": "s1-23",
-      "sceneId": "s1",
+      "id": "s5-2",
+      "sceneId": "s5",
       "text": "lapping, scalding water"
     },
     {
-      "id": "s1-24",
-      "sceneId": "s1",
-      "text": "***"
-    },
-    {
-      "id": "s1-25",
-      "sceneId": "s1",
+      "id": "s6-0",
+      "sceneId": "s6",
       "text": "Looking out the room and the floor you slept on like it was outside where you slept so comfortable I saw a purple light at the top of the spire is a steel peak to attract charge unlike the night I left far from the stranger’s room when I placed the back of my hand against your palm tree on my image beach where your bald geometry begged my careless attraction and I beat you like a guilty not guilty show dog when you stole my coat I gifted you until I heard our master chew your numb limb and begged him to stop breeding without me as I dragged my arm around your looming shoulder and we went out of the tropical room into the mind of someone who was really empathetic but not me and you were brainless, sleeping idiot leftover girl from the world of the most beautiful world I saw you in, so talented because of your ability to read equations and derisive fear."
     },
     {
-      "id": "s1-26",
-      "sceneId": "s1",
-      "text": "***"
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Moment of culture I remember falling on your lap and spilling charcoal."
     },
     {
-      "id": "s1-27",
-      "sceneId": "s1",
-      "text": "Moment of culture I remember falling on your lap and spilling charcoal. Prevent one tone that traps silence in a ring, in a line. Nail in a drum and always already three seconds ahead of what I remember. Spilling charcoal. Falling. Your lap and then it is absence I."
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Prevent one tone that traps silence in a ring, in a line."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "Nail in a drum and always already three seconds ahead of what I remember."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Spilling charcoal."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Falling."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Your lap and then it is absence I."
     }
   ]
 }

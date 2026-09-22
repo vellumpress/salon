@@ -3149,7 +3149,7 @@ export const SHELF: ShelfWork[] = [
   { id: "the-history-of-yiddish-literature", title: "The History of Yiddish Literature in the Nineteenth Century", author: "Leo Wiener", year: 1899, form: "other", language: "English", minutes: 33, local: true, opening: "The literatures of the early Middle Ages were bilingual. The Catholic religion had brought with it t", breaths: 11, gutenberg: 46729 },
   { id: "korean-folk-tales", title: "Korean Folk Tales: Imps, Ghosts and Fairies", author: "Im Bang & Yi Ryuk (tr. James S. Gale)", year: 1913, form: "stories", language: "English", minutes: 48, local: true, opening: "In the days of King Sung-jong (A.D. 1488-1495) one of Korea's noted men became governor of Pyong-an ", breaths: 29, gutenberg: 51002 },
   // Original contemporary — Amber Later, Generosity. Rights: Vellum. Not Gutenberg. Never Featured.
-  { id: "generosity", title: "Generosity", author: "Amber Later", year: 2026, form: "stories", language: "English", minutes: 34, local: true, opening: "I should apologize.", breaths: 103, rights: "Vellum", intro: "An apology begins with a box of unused baby clothes and a basement mural of identical smiles. The story keeps going until the face is only itself again." },
+  { id: "generosity", title: "Generosity", author: "Amber Later", year: 2026, form: "stories", language: "English", minutes: 13, local: true, opening: "I should apologize.", breaths: 198, rights: "Vellum", intro: "An apology begins with a box of unused baby clothes and a basement mural of identical smiles. The story keeps going until the face is only itself again." },
 ];
 
 const BY_ID = new Map(SHELF.map((item) => [item.id, item]));
