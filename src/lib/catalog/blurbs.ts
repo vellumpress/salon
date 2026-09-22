@@ -118,8 +118,10 @@ const BLURBS: Record<string, string> = {
     "A fishing boat lay one May evening to beam-wind, out on Goosestone bay, while Rokarna were changing to blue.",
   marianela:
     "The sun had set, and after the brief interval of twilight the night fell calm and dark as the traveller went on into the north of Spain.",
+  maria:
+    "I was still a mere boy when sent away from home to study in ⸻ College, founded a few years before in Bogotá, and then well known all through Colombia.",
   "bel-ami":
-    "A handsome arriviste climbs Paris on other people’s beds and other people’s newspapers.",
+    "After changing his five-franc piece Georges Duroy left the restaurant.",
   "miss-julie":
     "Midsummer night in the kitchen: a count’s daughter and a valet bet the house on desire.",
   wallpaper:
@@ -318,7 +320,8 @@ const BLURBS: Record<string, string> = {
   "home-harlem": "A veteran comes back to Harlem looking for a night that still belongs to him.",
   "the-prophet": "Gibran’s Almustafa speaks on love, work, and leaving — counsel in a departing voice.",
   "the-madman-his-parables-and-poems": "Gibran’s parables of a man who stepped outside the town’s mind.",
-  mhudi: "Plaatje’s Tswana epic of war, cattle, and a woman who will not be a footnote.",
+  mhudi:
+    "Two centuries ago the Bechuana tribes inhabited the extensive areas between Central Transvaal and the Kalahari Desert.",
   "african-tragedy": "Dhlomo’s short novel of a mine, a city, and a life that cannot go home clean.",
   "kwaidan-stories-and-studies-of-strange-things":
     "Hearn’s Japan after dark: soft-spoken ghosts, fox wives, and studies that prefer a whisper.",
@@ -381,7 +384,8 @@ const BLURBS: Record<string, string> = {
     "Haarlem, a tulip, and a prisoner who grows a fortune through a prison window.",
   "colonel-chabert":
     "A Napoleonic colonel comes back from the dead and finds his wife has spent him.",
-  magnhild: "A mountain parish, a girl, and the quiet Norwegian weather of a life.",
+  magnhild:
+    "The landscape has high, bold mountains, above which are just passing the remnants of a storm.",
   "the-family-at-gilje":
     "A Norwegian official’s household where daughters wait on other people’s decisions.",
   "after-the-divorce":
@@ -567,7 +571,8 @@ const BLURBS: Record<string, string> = {
   "the-longest-journey": "Forster’s Cambridge, a brother, and a life that keeps choosing the wrong loyalty.",
   "the-celestial-omnibus-and-other-stories": "Forster fantasies where a bus might actually go to heaven.",
   "the-eternal-moment-and-other-stories": "Later Forster stories of Italy, time, and the thing you didn’t say.",
-  "a-passage-to-india": "A cave, an accusation, and the empire failing a friendship.",
+  "a-passage-to-india":
+    "Except for the Marabar Caves—and they are twenty miles off—the city of Chandrapore presents nothing extraordinary.",
   "the-country-house": "Galsworthy’s estate, a scandal, and the class that calls it taste.",
   "the-forsyte-saga": "A family that owns things, including people.",
   potterism: "Macaulay on the newspaper mind — slogans that eat a family.",

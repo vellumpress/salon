@@ -355,7 +355,6 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "gods-trombones",
     "hadji-murad",
     "anandamath",
-    "maria",
     "lady-macbeth",
     "layla",
     "conference",
@@ -363,6 +362,9 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "of-one-blood",
     "maria-chapdelaine",
     "african-farm",
+    "a-passage-to-india",
+    "mhudi",
+    "maria",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1483,11 +1485,12 @@ test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
     "quicksand",
     "botchan",
   ]);
-  assert.equal(forYou!.workIds.at(-6), "there-is-confusion");
-  assert.equal(forYou!.workIds.at(-5), "miss-lulu-bett");
-  assert.equal(forYou!.workIds.at(-4), "seven-brothers");
-  assert.equal(forYou!.workIds.at(-3), "futility");
-  assert.equal(forYou!.workIds.at(-2), "on-the-seaboard");
+  assert.equal(forYou!.workIds.at(-7), "there-is-confusion");
+  assert.equal(forYou!.workIds.at(-6), "miss-lulu-bett");
+  assert.equal(forYou!.workIds.at(-5), "seven-brothers");
+  assert.equal(forYou!.workIds.at(-4), "futility");
+  assert.equal(forYou!.workIds.at(-3), "on-the-seaboard");
+  assert.equal(forYou!.workIds.at(-2), "bel-ami");
   assert.equal(forYou!.workIds.at(-1), "generosity");
   assert.equal(sleep!.workIds[0], "quicksand");
 });
@@ -1990,13 +1993,6 @@ test("EXTRACTABLE-8 CLEAR inventory binds are local Next / before-sleep sits, ne
       scenes: 47,
       scene: "Part I · Chapter I",
     },
-    maria: {
-      opening:
-        "I was still a mere boy when sent away from home to study in ⸻ College, founded a few years before in Bogotá, and then we",
-      breaths: 2374,
-      scenes: 59,
-      scene: "Chapter I",
-    },
     "lady-macbeth": {
       opening:
         "IN our part of the country you sometimes meet people of whom, even many years after you have seen them, you are unable t",
@@ -2023,7 +2019,7 @@ test("EXTRACTABLE-8 CLEAR inventory binds are local Next / before-sleep sits, ne
   const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
   assert.ok(sleep);
   assert.ok(forYou);
-  assert.equal(Object.keys(expect).length, 8);
+  assert.equal(Object.keys(expect).length, 7);
   assert.deepEqual(forYou.workIds.slice(0, 3), [
     "the-house-of-mirth",
     "quicksand",
@@ -2741,7 +2737,8 @@ test("Mira NOON2 CLEAR sits on Next and For you, never Featured", () => {
   assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
   assert.equal(sleep?.workIds[0], "quicksand");
   assert.equal(forYou?.workIds.at(-1), "generosity");
-  assert.equal(forYou?.workIds.at(-2), "on-the-seaboard");
+  assert.equal(forYou?.workIds.at(-2), "bel-ami");
+  assert.equal(forYou?.workIds.at(-3), "on-the-seaboard");
 
   const farm = SHELF.find((item) => item.id === "african-farm");
   assert.ok(farm);
@@ -2753,12 +2750,13 @@ test("Mira NOON2 CLEAR sits on Next and For you, never Featured", () => {
     farm.opening,
     "The full African moon poured down its light from the blue sky into the wide, lonely plain.",
   );
-  assert.equal(next.at(-1), "african-farm");
+  assert.ok(next.indexOf("african-farm") > next.indexOf("maria-chapdelaine"));
+  assert.equal(next[next.indexOf("african-farm") + 1], "a-passage-to-india");
   assert.equal(next.includes("african-farm"), true);
   assert.equal(curatorialTrack("african-farm"), "next");
   assert.equal(featured.includes("african-farm"), false);
   assert.equal(forYou?.workIds.includes("african-farm"), false);
-  assert.equal(sleep?.workIds.at(-1), "african-farm");
+  assert.equal(sleep?.workIds[sleep.workIds.indexOf("african-farm") + 1], "a-passage-to-india");
   assert.equal(existsSync(new URL("./openings/african-farm.json", import.meta.url)), true);
 
   const nela = SHELF.find((item) => item.id === "marianela");
@@ -2817,4 +2815,156 @@ test("Mira NOON2 CLEAR sits on Next and For you, never Featured", () => {
   ) as { breaths: { text: string }[] };
   assert.equal(nelaFull.breaths.at(-1)?.text, "THE END.");
   assert.equal(nelaFull.breaths[0]?.text, nela.opening);
+});
+
+test("Mira 4PM CLEAR sits on Next, For you, and Rituals, never Featured", () => {
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const walk = RITUAL_LANES.find((item) => item.id === "on-a-walk");
+  const waking = RITUAL_LANES.find((item) => item.id === "waking-up");
+  const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
+  const featured = FEATURED_CAROUSEL_IDS as readonly string[];
+  const cold = ["the-house-of-mirth", "quicksand", "botchan"];
+  assert.deepEqual(forYou?.workIds.slice(0, 3), cold);
+  assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
+  assert.equal(sleep?.workIds[0], "quicksand");
+  assert.equal(forYou?.workIds.at(-1), "generosity");
+  assert.equal(forYou?.workIds.at(-2), "bel-ami");
+
+  const expect = {
+    "a-passage-to-india": {
+      opening:
+        "Except for the Marabar Caves—and they are twenty miles off—the city of Chandrapore presents nothing extraordinary.",
+      breaths: 6962,
+      scenes: 37,
+      minutes: 1254,
+      year: 1924,
+      gutenberg: 61221,
+      scene: "Part I: Mosque",
+      lane: "next",
+    },
+    mhudi: {
+      opening:
+        "Two centuries ago the Bechuana tribes inhabited the extensive areas between Central Transvaal and the Kalahari Desert.",
+      breaths: 2883,
+      scenes: 24,
+      minutes: 790,
+      year: 1930,
+      gutenberg: undefined,
+      scene: "CHAPTER 1 · A Tragedy and its Vendetta",
+      lane: "next",
+    },
+    maria: {
+      opening:
+        "I was still a mere boy when sent away from home to study in ⸻ College, founded a few years before in Bogotá, and then well known all through Colombia.",
+      breaths: 2378,
+      scenes: 59,
+      minutes: 887,
+      year: 1890,
+      gutenberg: undefined,
+      scene: "Chapter I",
+      lane: "next",
+    },
+    "bel-ami": {
+      opening: "After changing his five-franc piece Georges Duroy left the restaurant.",
+      breaths: 4163,
+      scenes: 22,
+      minutes: 639,
+      year: 1885,
+      gutenberg: 3733,
+      scene: "POVERTY",
+      lane: "for-you",
+    },
+    magnhild: {
+      opening:
+        "The landscape has high, bold mountains, above which are just passing the remnants of a storm.",
+      breaths: 2606,
+      scenes: 14,
+      minutes: 541,
+      year: 1877,
+      gutenberg: 33683,
+      scene: "Chapter 1",
+      lane: "rituals",
+    },
+  } as const;
+
+  assert.equal(next.at(-3), "a-passage-to-india");
+  assert.equal(next.at(-2), "mhudi");
+  assert.equal(next.at(-1), "maria");
+  assert.ok(next.indexOf("a-passage-to-india") > next.indexOf("african-farm"));
+  assert.ok(next.indexOf("mhudi") > next.indexOf("a-passage-to-india"));
+  assert.ok(next.indexOf("maria") > next.indexOf("mhudi"));
+  assert.equal(next.indexOf("maria"), next.lastIndexOf("maria"));
+
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work.local, true, id);
+    assert.equal(isBoundLocal(work), true, id);
+    assert.equal(work.opening, want.opening, id);
+    assert.equal(work.breaths, want.breaths, id);
+    assert.equal(work.minutes, want.minutes, id);
+    assert.equal(work.year, want.year, id);
+    assert.equal(work.gutenberg, want.gutenberg, id);
+    assert.equal(work.language, "English", id);
+    assert.equal(featured.includes(id), false, id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), true, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: { title: string }[];
+      breaths: { text: string }[];
+    };
+    const opened = JSON.parse(readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: { title: string }[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.equal(full.scenes[0]?.title, want.scene, id);
+    assert.equal(full.breaths[0]?.text, want.opening, id);
+    assert.equal(opened.breaths[0]?.text, want.opening, id);
+    assert.equal(JSON.stringify(full).includes("\u0000"), false, id);
+    assert.equal(JSON.stringify(opened).includes("\u0000"), false, id);
+    if (id === "a-passage-to-india") assert.equal(full.scenes[1]?.title, "Chapter II");
+    if (id === "maria") assert.notEqual(id, "marianela");
+  }
+
+  assert.equal(curatorialTrack("a-passage-to-india"), "next");
+  assert.equal(curatorialTrack("mhudi"), "next");
+  assert.equal(curatorialTrack("maria"), "next");
+  assert.equal(curatorialTrack("bel-ami"), "later");
+  assert.equal(curatorialTrack("magnhild"), "later");
+  assert.equal(next.includes("bel-ami"), false);
+  assert.equal(next.includes("magnhild"), false);
+  assert.equal(forYou?.workIds.includes("a-passage-to-india"), false);
+  assert.equal(forYou?.workIds.includes("mhudi"), false);
+  assert.equal(forYou?.workIds.includes("maria"), false);
+  assert.equal(forYou?.workIds.includes("magnhild"), false);
+  assert.equal(forYou?.workIds.includes("bel-ami"), true);
+  assert.ok((forYou?.workIds.indexOf("bel-ami") ?? 0) > 2);
+
+  const sleepTail = sleep?.workIds.slice(-5);
+  assert.deepEqual(sleepTail, [
+    "a-passage-to-india",
+    "mhudi",
+    "maria",
+    "bel-ami",
+    "magnhild",
+  ]);
+  assert.equal(unwind?.workIds.at(-1), "a-passage-to-india");
+  assert.equal(waking?.workIds.at(-1), "mhudi");
+  assert.equal(walk?.workIds.at(-2), "bel-ami");
+  assert.equal(walk?.workIds.at(-1), "magnhild");
+  assert.equal(sleep?.workIds.includes("three-hundred-tang-poems"), false);
+  assert.equal(sleep?.workIds.includes("the-bronze-horseman"), false);
+  assert.equal(next.includes("three-hundred-tang-poems"), false);
+  assert.equal(next.includes("the-bronze-horseman"), false);
+
+  const nela = SHELF.find((item) => item.id === "marianela");
+  const maria = SHELF.find((item) => item.id === "maria");
+  assert.notEqual(maria?.opening, nela?.opening);
+  assert.notEqual(maria?.gutenberg, nela?.gutenberg);
+  assert.match(maria?.author ?? "", /Ogden/);
+  assert.match(nela?.author ?? "", /Bell/);
 });

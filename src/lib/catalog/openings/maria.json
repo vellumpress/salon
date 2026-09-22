@@ -1,0 +1,571 @@
+{
+  "id": "maria",
+  "title": "María",
+  "author": "Jorge Isaacs (tr. Rollo Ogden)",
+  "year": "1890",
+  "note": "Ogden EN 1890 · Spanish 1867 · local bind (no PG) · DISTINCT from marianela",
+  "minutes": 887,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "I was still a mere boy when sent away from home to study in ⸻ College, founded a few years before in Bogotá, and then well known all through Colombia.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "After six years, the last days of a splendid August saw me returning to my native valley. My heart was overflowing with love of home. It was the last day of my journey, and I was enjoying the most charming morning of the autumn. The sky was",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "At eight we went to the dining-room, which had a most attractive eastern exposure. From it could be seen the naked summits of the mountains against the starry background of the sky. The desert breeze played through the garden gathering perf",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Chapter IV",
+      "place": "Chapter IV",
+      "reentry": "I slept as I used to when a child, after being lulled to slumber by a fairy story told me by the slave Pedro. I dreamed that María came in to renew the flowers on my table, and that when she went out she brushed against the curtains of my b",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Chapter V",
+      "place": "Chapter V",
+      "reentry": "After three days had passed, my father asked me to go with him to inspect his ranches in the valley. My mother insisted strongly that we should return soon. María did not ask, as did my sisters, that we should return the same week; but her ",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "Chapter VI",
+      "place": "Chapter VI",
+      "reentry": "What had María been thinking of in those four days?",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "Chapter VII",
+      "place": "Chapter VII",
+      "reentry": "At the time of my father’s last voyage to the Antilles his cousin Salomón, his dear friend from childhood, had just lost his wife. They had come to South America together when still young; and, in one of his voyages, my father had fallen in",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Chapter VIII",
+      "place": "Chapter VIII",
+      "reentry": "Early in the evening Emma knocked at my door to summon me to the table. I bathed my face to hide the traces of tears, and changed my clothes to give color to my delay. María was not in the dining-room, and in vain I tried to think what migh",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Chapter IX",
+      "place": "Chapter IX",
+      "reentry": "I rose the next morning at daybreak. The flush that was outlining in the east the peaks of the central Cordillera was gilding a few light clouds that hung round the mountains, and that now began to separate, slowly move away, and disappear.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "Chapter X",
+      "place": "Chapter X",
+      "reentry": "As I was slowly returning, the image of María again came into my mind. Those lonely spots⁠—the silent forests, the flowers, birds, brooks⁠—why did they remind me of her? What suggestion of María was there in the misty shadows, in the breeze",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "Chapter XI",
+      "place": "Chapter XI",
+      "reentry": "I was unnaturally gay the rest of the day. At the table I talked enthusiastically of the beautiful women of Bogotá, and especially recounted the graces and wit of P⁠⸺. My father seemed pleased to hear me; Eloisa would have liked to have me ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "I was still a mere boy when sent away from home to study in ⸻ College, founded a few years before in Bogotá, and then well known all through Colombia."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "The night before my departure, after the family gathering in the evening, one of my sisters came into my room, and, without saying a single word, because she could not trust her voice, cut off a lock of my hair; when she had gone, I found my neck wet with her tears."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "I fell asleep sorrowful, filled with a vague foreboding of coming trouble."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "That lock of hair taken from a boy’s head; that precaution of love against death, even in the presence of abounding life, caused my thoughts to wander all night about those scenes where I had passed, without knowing it, the happiest hours of my life."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "The next morning, my father had to loosen my mother’s arms from my neck. My sisters tried to kiss away my tears. María quietly waited her turn, and stammering out a goodbye, touched her blushing cheek to mine, chilled by the first feeling of sorrow."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "A few moments after, I was following my father, who hid his face from my eyes. The tramp of our horses on the pebbly path made my last sobs inaudible."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "The murmur of the Zabaletas, whose banks lay to our right, grew fainter and fainter."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "We were already rounding one of those hills in the path on which expected guests used to be looked for from the house; I threw a last glance backward: María was behind the creeper that climbed up by the windows of my mother’s room."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "After six years, the last days of a splendid August saw me returning to my native valley. My heart was overflowing with love of home. It was the last day of my journey, and I was enjoying the most charming morning of the autumn. The sky was a pale blue; towards the east, and above the highest peaks, still half veiled, floated little clouds of gold, like the gauze of a dancer’s turban stirred by an amorous breath. In the south hung the mists which had cloaked the mountains during the night. I was crossing plains carpeted with the greenest grass and watered by little brooks, the resorts of droves of cattle which had left their resting-places for a plunge in the pools, or for browsing along paths arched over by trees thick with leaves and blossoms. My eyes turned eagerly to those spots, half hidden to the traveler by clumps of old giant-reeds, where were the houses of good friends of mine. My heart would have been unmoved then by the arias of U⁠⸺’s piano; the perfumes I was drinking in were sweeter than those that clung to her rich garments, and captivating to my soul was the song of the numberless birds."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "I was struck dumb by all this beauty, though I thought I had preserved it in my memory, because some verses of mine, admired by my fellow-students, gave faint suggestions of it. When, in a ballroom flooded with lights, echoing with voluptuous music, filled with a thousand mingled perfumes and with the rustling robes of fascinating women, we meet her of whom we dreamed at eighteen, and her glance makes the face flush, her voice hushes all other voices for us, and her flowers leave a nameless fragrance behind them⁠—then we fall into a sort of celestial trance: our voices are powerless, hers we can scarcely hear, our eyes cannot rest upon her. But when, hours after, with our minds calmer, she comes again to the memory, our lips murmur songs in her praise, and it is that woman, her tones, her glance, her gliding over the carpet, we try to recall in the lyric which people think is purely ideal. So the sky, the horizon, the plains, the crests of Cauca, make those speechless who behold them. The great beauties of nature cannot be sung at the same time they are seen; they must return to the soul, made dim by a faulty memory."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Before sunset I had seen my father’s house whitening on the shoulder of the mountain. As I drew near it, I anxiously noted the groups of willows and orange-trees behind which I saw the glancing lights in the rooms. I was breathing, at last, the fragrance one never forgets of the garden he has seen planted. My horses’ hoofs rang upon the pavement of the court. I heard a vague cry; it was the voice of my mother. She caught me in her arms, and drew me to her bosom. A mist gathered before my eyes; it was the work of perfect joy in an innocent nature."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "When I tried to recognize in the women I saw about me the sisters whom I had left children, I saw María standing by my side: her eyes were concealed behind their broad, heavily fringed lids. Her face was the one to wear the deepest blush as my arm touched her waist; and her eyes were yet moist when she smiled at my first affectionate word, like those of a child whose tears have been dried by a mother’s caress."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "At eight we went to the dining-room, which had a most attractive eastern exposure. From it could be seen the naked summits of the mountains against the starry background of the sky. The desert breeze played through the garden gathering perfumes, and rustled in the rosebushes all around us. At times it would die down, and then could be heard the murmur of the river. Nature seemed to be displaying all her beauty that night, as if to welcome a guest."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "My father sat at the head of the table, and placed me at his right; my mother sat in her usual place at his left; my sisters and the children were promiscuously seated, and María was opposite me. My father, somewhat aged during my absence, cast pleased glances at me, and smiled with his own peculiar expression of mingled raillery and affection. My mother said little: she was the happiest of all present. My sisters pressed dainties upon me, and there was always a smile upon the face of the one to whom I spoke. María kept her eyes hidden from me resolutely; yet I could see that they had the brilliance and beauty belonging to those of the women of her race, in the instant when, in spite of herself, she let them fall full upon me. Her moist red lips had a prettily commanding curve; once they revealed to me the beautiful arch of her teeth. The waves of her dark hair were confined in two long braids, and on one side she wore a pink. Her dress was of light muslin, almost blue, and a fine cotton scarf, with its purple folds, was drawn over her bosom and up to her white throat. I admired her beautifully turned arms, and her hands as delicate as a queen’s."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "When supper was over the slaves cleared the table: one of them said the Lord’s Prayer, and their master and mistress finished the evening devotions. I then fell into a quiet chat with my parents. María carried off the child that had fallen asleep in her lap, and my sisters followed her to their rooms; they loved her intensely, and would almost quarrel for her favor."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "My mother wished me to go to see the room which had been assigned to me. María and my sisters, already less timid, came to witness the effect upon me of the way in which the room was adorned. It was in the front of the house, its single window-casing being about the right height for a table; the sashes and blinds were open, and branches of rosebushes, in full flower, pushed in to complete the ornamentation of the window-seat, where was placed a beautiful vase of blue porcelain filled with lilies and irises, pinks and yellow narcissuses from the river."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "“What lovely flowers!” I exclaimed."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "“María remembered how much you liked them,” remarked my mother."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "I turned to thank her, and her eyes managed that time to meet my gaze."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "“María,” I said, “won’t you keep them for me? for they are harmful in a sleeping-room.”"
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "“Is that so?” said she; “then I will take them away until morning.”"
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "What a lovely voice she had!"
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "“Are there many as beautiful as these?”"
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "“Oh, a great many; you can have them fresh every day.”"
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "Then my mother kissed me good night, and Emma gave me her hand; María, too, yielding me hers for an instant, smiled upon me; it was the dimpled smile of my childish dreams of love⁠—like the smile one detects on the face of a Virgin of Raphael’s."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "I slept as I used to when a child, after being lulled to slumber by a fairy story told me by the slave Pedro. I dreamed that María came in to renew the flowers on my table, and that when she went out she brushed against the curtains of my bed with her skirt of gauzy muslin dotted with blue flowers."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "When I awoke the birds were fluttering about among the leaves of the orange-trees, in full song, and the perfume of the orange-blossoms filled my room as soon as I unfastened the shutters. Then María’s sweet, clear voice reached my ears; it was her childish voice become more serious, and ready now to lend itself to all the intonation of tenderness and passion. How many times in my dreams an echo of that voice has since come to my soul, and my eyes have searched in vain that garden where I saw her, in all her loveliness, that August morning!"
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "As soon as I had lightly clothed myself I opened the window and perceived María, together with Emma, in one of the garden paths; her dress was darker than the one she had worn in the evening, and her purple scarf, belted at the waist, fell over her skirt like a sash; her long hair, parted into two masses, half hid her shoulder and breast. Both she and my sister were barefoot. She was carrying a little porcelain vase, scarcely whiter than her arms, which she was going to fill with roses that had opened in the night, rejecting the less dewy and luxuriant ones. Laughing with her companion, she buried her cheeks, fresher than the roses, in the odorous vase. Emma suddenly discovered me. María observed it, and without turning towards me, fell on her knees to hide her feet from me, loosened her scarf from her waist, and throwing it over her shoulders, pretended to be playing with the flowers. The daughters of the patriarchs, gathering flowers in the early dawn for the temple service, were not more beautiful."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "After breakfast my mother summoned me to her sewing-room; she wanted me at her side constantly. Emma and María were there embroidering. The latter began to smile when I entered; she was thinking, perhaps, of the start I had given her in the morning. Emma began to ask me a thousand things about Bogotá; commanded me to describe to them magnificent balls, elegant dresses, and the most beautiful women then figuring in refined society. They listened without giving over their work. María rose to consult my mother about the embroidery; her light and noble walk revealed the unsubdued pride of our race, and the fascinating modesty of a pure and maiden soul. Her eyes lit up when my mother expressed a desire to have me give lessons to the girls in grammar and geography, studies in which they had made small advance. It was agreed that we should begin the lessons after a few days."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Somewhat later it was told me that my bath was ready, and I went to enjoy it. A thick and leafy orange-tree, loaded with ripe fruit, formed a pavilion above the broad tank of polished stone; roses were floating in the water; it was an Oriental bath, perfumed with the flowers which María had gathered in the morning."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "After three days had passed, my father asked me to go with him to inspect his ranches in the valley. My mother insisted strongly that we should return soon. María did not ask, as did my sisters, that we should return the same week; but her eyes were continually upon me while we were preparing for the journey."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "During my absence at Bogotá my father had made great improvements: a fine and expensive sugar-mill, many acres of cane to supply it, large pastures with droves of cattle and horses in them, good stables, and an excellent house for the overseer were the most notable things about his farms in the tierra caliente. The slaves were well clad, and as happy as it is possible for slaves to be, and were docile and even affectionate towards their master. I found that the boys who, years before, had taught me to set snares for chilacoas and guatines in the thick woods were now men; they and their parents gave unmistakable signs of pleasure at seeing me again. But I was not to meet Pedro, my faithful friend and servant; he had shed tears when he placed me on my horse the day I set out for Bogotá, saying, “Dear little master, I shall never see you again.” His heart told him that he would die before my return."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "It was easy to see that my father, without ceasing to be a master, treated his slaves with kindness. He was anxious for their domestic happiness, and fondled the little ones."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "One evening, just at sunset, we were coming back with Higinio, the overseer, from the fields to the mill. They were talking about the work to be done; I was occupied with less serious things: I was thinking about the days of my childhood. The peculiar odor of trees just cut down, and of ripe cypress-cones; the clamor of the parrots in the neighboring reeds and among the guava-trees; the distant note of some shepherd’s horn echoing among the mountains; the piping of the slaves as they slowly came from their work with their tools on their shoulders; the red glow in the sky seen beyond the fields of waving cane⁠—all reminded me of the afternoons in which I, with María and my sisters, taking advantage of permission wrung with difficulty from my mother, used to gather guavas from our favorite trees, pluck bunches of cypress-cones, often at cost of many scratches on hands and arms, and spy out the fledgeling parrots in the hedges about the yards."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "As we met a group of slaves, my father said to a young negro of remarkably pleasant appearance, “Well, Bruno, your wedding is all arranged for the day after tomorrow?”"
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "“Yes, master,” he replied, taking off his hat made of rushes, and leaning upon the handle of his shovel."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "“Who are going to stand up with you?”"
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "“Dolores and Anselmo, if your honor pleases.”"
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "“Very well. You and Remigia must be sure to go to confession first. Have you bought everything which you two need with the money I ordered given you?”"
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "“Everything, master.”"
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "“And you want nothing more?”"
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "“Your honor will see to that.”"
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "“Is it a good cabin Higinio has given you?”"
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "“Yes, master.”"
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "“Ah, now I know what it is. You want a ball!”"
+    },
+    {
+      "id": "s4-15",
+      "sceneId": "s4",
+      "text": "Bruno laughed at this, showing his gleaming white teeth, and looking around at his companions."
+    },
+    {
+      "id": "s4-16",
+      "sceneId": "s4",
+      "text": "“That’s right; you conduct yourself well. Now you know what to do,” he added, addressing Higinio, “you attend to this and make them happy.”"
+    },
+    {
+      "id": "s4-17",
+      "sceneId": "s4",
+      "text": "“And will your honors go away before the wedding?”"
+    },
+    {
+      "id": "s4-18",
+      "sceneId": "s4",
+      "text": "“No,” I answered him, “and we understand we are invited.”"
+    },
+    {
+      "id": "s4-19",
+      "sceneId": "s4",
+      "text": "Bruno and Remigia were married the next Saturday morning. That night at seven, my father and I mounted our horses to go to the ball; we could hear the music from afar. When we arrived Julian, the slave captain of the gang, came out to help us dismount and to care for our horses. He was in his Sunday’s best, and there hung from his belt the long knife with silver-plated sheath which was the sign of his office. One large room of the old farmhouse had been cleared of its furniture for a ballroom. They had built a platform around it; in a wooden chandelier hanging from one of the beams a half-dozen candles were swinging; the musicians and singers, a mixture of slaves and freedmen, were stationed at one of the doors. There were only two reed flutes, an improvised drum, two rattles, and a timbrel; yet the fine voices of the negroes struck into the chants with such skill, there was in their songs such an affecting combination of melancholy and light and joyful chords, the verses they sang were so simple and tender, that the most cultivated ear would have listened with the highest pleasure to that half-savage music. We entered the room in leggings and hats. Remigia and Bruno were then dancing. She, with a blue flounced skirt, a girdle red-flowered, a white chemise embroidered with black, and necklace and earrings of ruby-colored glass, was dancing with all the ease and grace to be expected of her lithe figure. Bruno, with his woollen cloak folded about his shoulders, breeches of fine cotton cloth, a starched white shirt, and a new knife in his belt, was footing it with admirable dexterity."
+    },
+    {
+      "id": "s4-20",
+      "sceneId": "s4",
+      "text": "That dance over, the musicians struck up their best tune, for Julian told them it was to be for the master. Remigia, urged on by her husband and by the captain, at last agreed to dance a few moments with my father; but she dared not lift her eyes while she was doing it, and her dancing was rather constrained. At the end of an hour we went away."
+    },
+    {
+      "id": "s4-21",
+      "sceneId": "s4",
+      "text": "My father was pleased with my attentiveness during our visit to the farms; but when I told him that in the future I wished to share his labors, and stay by his side, he informed me, almost sorrowfully, that it was necessary for him to sacrifice his ease for my sake, and that he should keep the promise made to me before of sending me to Europe to study medicine; I should have to begin the journey, he said, at the end of four months at the latest. When he told me this his face wore an expression of unaffected gravity, which was always to be observed in him when he had taken an irrevocable resolution. This happened the afternoon when we were going back to the uplands. It was growing dark, and but for this he must have observed the emotion which his decision caused me. How gladly should I have returned to see María, had not this announcement thrust itself in between my hopes and her!"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "What had María been thinking of in those four days?"
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "She was just placing a lamp on one of the tables in the parlor when I went up to greet her; I had wondered at not finding her in the family group that had met us at the very door. Her hand trembled so that the lamp was in danger of falling; I sprang to her aid, less calm than I thought I should be. She seemed to me slightly pale, and there was a suspicion of a circle about her eyes, imperceptible to a casual glance. Her face was turned towards my mother, who was speaking just then, so that I could not see it in a good light, but I noticed in her hair an overblown pink; it was undoubtedly the one I had given her the evening before setting out for the valley. The little cross of enamelled coral which I had brought for her from Bogotá, precisely like the one I had given to each of my sisters also, she wore suspended from a black ribbon about her neck. She was very quiet, seated between my mother’s chair and mine. As my father’s decision about my departure was all the while in my mind, I must have appeared sad to her, for she said to me in a low voice, “Did the trip tire you very much?”"
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "“No, María,” I answered, “but we have been so much in the sun, and have ridden so far⁠—”"
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "I was going to say more, but her confidential tone, and the light, so new to me, which I discovered in her eyes, prevented me from doing anything but gaze at her, until, observing that she was embarrassed at the involuntary fixity of my look, and perceiving that my father’s eye was upon me (always most to be dreaded when a certain fleeting smile was playing upon his lips), I abruptly left the parlor and went to my room."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "I closed the door. There were the flowers gathered for me by her. I bruised them with kisses. I tried to draw in at a single breath all their odors, hoping to find among them the perfume that clung to María’s garments. My tears fell upon them. María! María! How much I loved you!"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "At the time of my father’s last voyage to the Antilles his cousin Salomón, his dear friend from childhood, had just lost his wife. They had come to South America together when still young; and, in one of his voyages, my father had fallen in love with the daughter of the ship’s captain, a brave Spaniard who, after having given up the service for several years, felt obliged, in 1819, take up arms on behalf of the Spanish throne, and was executed in Majagual on the 20th of May, 1820. Salomón married in Jamaica."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "When the two friends met, after several years, Salomón, as has been said, was a widower. His wife had left him a little girl, who was then three years old. My father found Salomón in great grief and prostration. He offered to take the daughter and educate her with his own children. Salomón finally consented, saying, “She has been my only comfort since Sara’s death, but her being here prevents me from going to India, as I much wish to, both for the sake of my health and on account of a fine business opportunity; since you want her, take her; she shall be your daughter.”"
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Tears choked the poor man’s voice as he spoke."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "In a few days the schooner which was to bear my father to the coasts of Colombia set sail from the Bay of Montego. The light barque spread her sails, like a heron of our forests beginning a long flight. Salomón came to my father’s lodging, carrying María on one arm, and on the other the valise which contained the child’s clothing. She held out her little arms to my father, and Salomón, giving her to his friend, fell into a chair and sobbed aloud. That precious little creature was a sacred trust; my father knew it well, and never forgot it."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "I was seven years old when my father came home, and I paid no attention to the presents which he brought me, having no eyes except for that little child, so lovely, pleasant, and smiling. My mother covered her with caresses, and my sisters treated her with the greatest kindness from the moment when my father put her in his wife’s lap and said, “This is Salomón’s daughter, and he has sent her to you.”"
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "In our childish plays María soon learned to speak Spanish, that language so euphonious and captivating in the lovely mouth of a woman, or on the smiling lips of a child."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "Six years passed by. Entering my father’s room one afternoon, I heard him weeping; his arms were crossed upon the table, and he was leaning his head upon them. My mother was near him, also in tears, and on her knees María was leaning her head, without understanding this grief, and almost unobservant of her uncle’s moans. A letter had come that day from Kingston, telling of Salomón’s death. I recall but one expression of my father’s that afternoon: “If I am to be bereft of all, without being able to receive their last farewell, why should I ever go back to my native land?”"
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "Alas! his ashes were destined to rest in a foreign land, where the wind of the ocean, on whose beach he had played as a boy, whose expanse he had crossed as an eager young man, could not come to sweep from his grave the dried blossoms of the myrrh-tree and the accumulated dust of years."
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "But few of those who knew our family then could suspect that María was not the child of my parents. She spoke our language perfectly, was loving, spirited, and intelligent. When my mother used to caress her at the same time with the rest of us, no one could have guessed which one was the orphan."
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "She was nine years old. Her abundant hair, still a clear chestnut, loosened and rippling down to her delicate waist; her expressive eyes; her voice with a certain melancholy in its tones that ours did not have⁠—such was the image which I carried with me when I went from home; such she was that morning behind the creeper at my mother’s window."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Early in the evening Emma knocked at my door to summon me to the table. I bathed my face to hide the traces of tears, and changed my clothes to give color to my delay. María was not in the dining-room, and in vain I tried to think what might have made her so late. My father noticed the vacant chair, and asked after her. Emma said that María had had a headache all the afternoon, and had already gone to bed. I endeavored to appear unconcerned, and forced myself to speak with enthusiasm of the great improvements I had found in the property. But it was all useless; my father was more tired than I, and went to his room early; Emma and my mother went to put the children to bed, and to see how María was, for which I thanked them in my heart, with no feeling of surprise at that sense of gratitude."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Although Emma came back to the dining-room, we were not long together there. Felipe and Eloisa, who had got me to play cards with them, accused me of falling asleep. Felipe had in vain besought my mother to be allowed to go with me up the mountain in the morning, and on this account he went away unhappy."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "Reflecting in my room, I thought I could guess the reason of María’s indisposition. I remembered the abrupt way I had gone out of the parlor, and how I had answered her so inconsiderately, through my effort to repress my own feelings. I would have given my life a thousand times over to obtain her pardon; but a doubt came to aggravate my distress⁠—could I be sure she loved me? Why, I thought, should I try to believe that she loved as I did? I was unworthy of so much beauty and goodness. I accused myself of blind pride in thinking that I might be the object of her love, when all I deserved was her sisterly affection. In my stress of feeling, I looked forward with less dread, no, with pleasure almost, to my coming journey."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "I rose the next morning at daybreak. The flush that was outlining in the east the peaks of the central Cordillera was gilding a few light clouds that hung round the mountains, and that now began to separate, slowly move away, and disappear. The green meadows and woods of the valley appeared as if seen through blue-tinted glass, and among them one caught sight of white cabins, spiral clouds of smoke rolling up the mountains recently burned over, and here and there the gleam of a river. The western cordillera, with its folds and hollows, looked like a succession of dark blue velvet mantles held at their centres by the hands of genii hidden by the clouds. In front of my window the roses and the leaves of the trees in the garden seemed to dread the first breeze that would come to brush off the dew now glistening upon them. It all struck me with a sense of sadness. I took my rifle; gave a signal to Mayo, the trusty dog who was seated on his hind-legs watching me fixedly, his forehead wrinkled in the excess of his anxiety to perceive the first order; leaped over the stone wall, and took the mountain path."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "The mountain was fresh and tremulous under the caresses of the last night-breezes. The herons were leaving their sleeping-places, forming in their flight undulating lines silvered by the sun, like a sash abandoned to the caprices of the wind. Thick flocks of parrots rose from the reedy growths, on their way to the neighboring cornfields; and from the heart of the range, the diostedé hailed the day with his sad and monotonous song."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "I went down to the precipitous bank of the river by the same path I had followed so many times six years before. The thunder of the current began to grow louder, and presently I discovered the waters eager to plunge over the falls; once over, they were changed into whirling foam, then became smooth and glassy in the quiet stretches of the river; always the same bed of rocks shaggy with moss, the same fringe on the bank of iracales, ferns, and reeds with yellow shoots, silky plumes, and purple flowers."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "I paused in the middle of the bridge⁠—a gigantic cedar flung there by a hurricane. Flowering parasitic plants grew out of the slime, and bluebells and heliotropes swung down in festoons beneath my feet to dip in the water. The luxuriant and towering vegetation at times arched the river completely, and the rays of the rising sun broke through it as if through the broken roof of an abandoned Indian temple. Mayo howled in cowardly fashion on the bank I had just left, but on my urging, at last made out to cross the fantastic bridge; then he was off at once ahead of me up the path which led to the cabin of old José, who was expecting my visit of greeting that day."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "Passing along a dark and sloping ridge, and leaping over the heaps of dead trees thrown down by the last mountain-slides, I came out into the little plot planted with vegetables, from which I could see the smoke of the hut, situated in the midst of green hills; though, when I last saw it, it was in an unbroken forest. The cows, of fine shape and markings, were lowing for their calves at the gate of the corral."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "The poultry were noisily eating their morning meal. In the neighboring palm groves, which had been spared by the axe, the clamorous goldhammers quarrelled in their hanging nests, and, in the midst of their pleasant chatter, one could hear now and then the shrill cry of the bird-catcher, who, from his moat and barbican, struck terror into the hungry macaws swooping down upon the cornfield."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "The fierce dogs announced my arrival by their barking. Mayo was afraid of them, and kept by me whining. José came out to greet me, his axe in one hand, and hat in the other."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "The little dwelling proclaimed industry, thrift, and neatness; everything was plain but convenient, and nothing was out of its place. The best room, which was scrupulously swept, had bamboo rush-bottomed seats scattered about, covered with bearskins; some sheets of colored paper with pictures of saints on them were pinned with thorns to the unwhitened walls; on the right was José’s bedroom, and on the left the girls’. The kitchen, built of strips of cane, and with a roof of the leaves of the same plant, was separated from the house by a little garden, where parsley, camomile, pennyroyal, and basil mingled their odors."
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "The women were dressed with more than usual care. Lucía and Tránsito, the girls, wore petticoats of violet-colored chintz, and fine white chemises; their collars were of lace, tied with black ribbon, and under them their rosaries were partly visible; their necklaces were of opal-colored glass. Their thick, jet-black hair was arranged in braids, which danced upon their shoulders at every movement of their bare, agile feet. They addressed me with the greatest timidity; and their father, observing this, encouraged them, saying, “Do you think it isn’t the same boy because he has come back from college such a wise young man?”"
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "Then they became more smilingly at ease; we were drawn to each other in the most friendly manner by the remembrance of games together as children⁠—a remembrance which has great power over the imagination of a poet, or of a woman."
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "With advancing age José’s face had gained much; although he did not let his beard grow, his countenance had an appearance almost patriarchal⁠—as has that of almost all old men of good habits in the land where he was born. Abundant gray hair shaded his broad and sunburn forehead, and his smile bespoke the tranquility of his mind. Luisa, his wife, somewhat more fortunate than he in the contest with time, preserved in her manner of dress something of the city style, and her vivacity and pleasant ways made it clear that she was contented with her lot."
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "José led me to the river, and talked to me about his crops and his hunting while I was taking a plunge in the transparent pool whence the stream fell over a small cascade. On our return we found a tempting breakfast served upon the only table in the house. Maize appeared in many forms⁠—in porridge served on plates of glazed clay, and in golden griddlecakes. The only knife and fork of the establishment were crossed upon my plate, which was white, with a blue border."
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "Mayo sat at my feet with an attentive gaze, though more subdued than usual. José was mending a fishnet, while his daughters, attentive though embarrassed, were carefully serving me, trying to guess from my eyes what I needed. They had grown very fine-looking, and from talkative children had changed into capable women. After I had finished the cup of thick creamy milk, the dessert of that patriarchal breakfast, José and I went out to walk about the garden and the clearing which he was making. He was astonished at my book-knowledge of seeds; and after an hour’s talk we went back to the house, I to take my leave of the girls and their mother."
+    },
+    {
+      "id": "s8-13",
+      "sceneId": "s8",
+      "text": "I placed in the good old man’s belt the cutlass which I had brought for him; gave pretty rosaries to Tránsito and Lucía; and left in the hands of Luisa the reliquary which she had asked my mother to get for her. I then started down the mountain; it was precisely noon, so José said as he studied the sun."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "As I was slowly returning, the image of María again came into my mind. Those lonely spots⁠—the silent forests, the flowers, birds, brooks⁠—why did they remind me of her? What suggestion of María was there in the misty shadows, in the breeze stirring among the leaves, in the echo of the river? It was a very Eden; but she was lacking. I could not cease to love her, even if she did not love me. I drank in the perfume of the cluster of wild lilies which José’s daughters had plucked for me, and thought that perhaps they might come to be touched by María’s lips⁠—so weak had become my heroic resolves of the night before."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "As soon as I reached the house I went to my mother’s sewing-room; María was there. She gave me a greeting, but then dropped her eyes to her sewing. My mother was delighted to see me come in, for she had been anxious at my being so long away, and had just sent someone to look for me. I talked to them about José’s improvements, while Mayo was licking off the burrs that had stuck to my clothes."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "María looked up again, and glanced at the cluster of lilies which I held in my left hand, leaning with my right on my rifle. I thought that she wanted them; but a strange fear, a regard for my mother and for my resolves of the past night, kept me offering them to her. But I pleased myself imagining how beautiful she would look with one of my small lilies in her shining hair. They ought to be hers, because she must have filled up my vase during the morning with orange-flowers and violets."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "When I went to my room, not a single flower was there. If I had found a viper coiled up on my table it would not have caused me so great a shock. The fragrance of María’s flowers had come to stand with me for something of her own spirit, floating about near me in my hours of study and of sleep. It was true, then; she did not love me! My dreamy imagination had been deceiving me. And this cluster of lilies which I had brought for her⁠—what should I do with it now? If another woman had been there then, in that moment of wounded pride, of anger with María, I would have given them to her, for her to show to everybody. I put them to my lips, as if for a last farewell to a cherished delusion, and flung them out of the window."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "I was unnaturally gay the rest of the day. At the table I talked enthusiastically of the beautiful women of Bogotá, and especially recounted the graces and wit of P⁠⸺. My father seemed pleased to hear me; Eloisa would have liked to have me keep on till night. María said nothing, though I thought she was unusually pale. She kept on playing with Juan, and finally went out into the garden with the boy."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "All the rest of the afternoon, and in the early evening, I had to help my father with his writing. At eight we were called to the dining-room. As we sat down, I was astonished to see one of the lilies in María’s hair. There was on her lovely face such an air of noble goodness and sweet submissiveness that I felt as if magnetized by something in her that I had not known before, and could not leave off gazing at her. An affectionate and happy child, a woman as pure and charming as a dream⁠—as such I had known her; but for her to be gentle and resigned before my angry pride⁠—that was new to me. I felt unworthy so much as to look at her."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "I replied confusedly to questions which they asked me about José and his family. I could not conceal my perturbation from my father; but he turned to María, and said, with a smile, “That’s a lovely lily you have in your hair; I do not remember any of that kind in the garden.”"
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "María replied in a low voice, “This kind grows only in the mountains.”"
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "“And who sent them to you?” asked my father."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "María was embarrassed; she glanced at me, and seemed to find something new and encouraging in my eyes, for she replied, in a firmer tone, “Efraín threw some into the garden; and it seemed to me a pity they should be thrown away, they are so rare. This is one of them.”"
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "“María,” I said to her, “if I had known you would like these flowers so much, I would have kept them for you; but they did not seem to me as beautiful as the ones that are in the vase on my table every day.”"
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "She understood now the cause of my resentment, and her glance told me so plainly."
+    }
+  ]
+}

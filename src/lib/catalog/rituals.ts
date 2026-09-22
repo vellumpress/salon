@@ -179,6 +179,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `The first sit opens on the harbour: the only thing to do was to fit all this into a book. The port sounds the note of departure, and the tall stone houses set the tone.`,
   "african-farm":
     `The full African moon poured down its light from the blue sky into the wide, lonely plain. Stunted karoo bushes and milk-bushes follow in the white light, then a solitary kopje of ironstones. Stop before the farm household densifies.`,
+  "a-passage-to-india":
+    `Skip the dedication. Chandrapore presents nothing extraordinary except the Marabar Caves, twenty miles off. Stop after the civil station and those extraordinary caves. The novel continues through Mosque, Caves, and Temple.`,
+  mhudi:
+    `Two centuries ago the Bechuana tribes inhabited the land between Central Transvaal and the Kalahari Desert. Stop before the Matebele invasion densifies. Lovedale, 1930. The novel continues.`,
+  maria:
+    `A boy is sent from home to a college in Bogotá, and his sister’s lock of hair is already a farewell. Stop before the six-year return. Ogden’s English, 1890, distinct from Marianela.`,
+  "bel-ami":
+    `After changing his five-franc piece Georges Duroy left the restaurant. Stop after the pocket-money on Rue Notre Dame de Lorette, before Forestier densifies. French 1885.`,
+  magnhild:
+    `Skip the Preface. High mountains, the remnants of a storm, then the fjord. Stop after the name Magnhild is shouted. Magnhild only.`,
   marianela:
     `The sun had set. After the brief interval of twilight the night fell calm and dark, and in its gloomy bosom the last sounds of a sleepy world died gently away. The traveller went forward on his way, hastening his step as night came on; the path he followed was narrow and worn by the constant tread of men and beasts, and led gently up a hill on whose verdant slopes grew picturesque clumps of wild cherry trees, beeches and oaks.--The reader perceives that we are in the north of Spain.`,
   "on-the-seaboard":
@@ -280,6 +290,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "seven-brothers",
       "futility",
       "on-the-seaboard",
+      "bel-ami",
       "generosity",
     ],
   },
@@ -626,7 +637,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "gods-trombones",
       "hadji-murad",
       "anandamath",
-      "maria",
       "lady-macbeth",
       "layla",
       "conference",
@@ -635,6 +645,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "maria-chapdelaine",
       "lady-into-fox",
       "african-farm",
+      "a-passage-to-india",
+      "mhudi",
+      "maria",
+      "bel-ami",
+      "magnhild",
     ],
   },
   {
@@ -663,6 +678,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "open-window-singapore",
       "the-nose-cape-town",
       "seven-brothers",
+      "mhudi",
     ],
   },
   {
@@ -696,6 +712,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "bliss-tokyo",
       "boule-de-suif-istanbul",
       "garden-party-barcelona",
+      "a-passage-to-india",
     ],
   },
   {
@@ -722,6 +739,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "spring-and-all",
       "seven-brothers",
       "on-the-seaboard",
+      "bel-ami",
+      "magnhild",
     ],
   },
   {
@@ -1065,6 +1084,10 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "maria-chapdelaine": 5,
   "lady-into-fox": 5,
   "african-farm": 5,
+  "a-passage-to-india": 5,
+  mhudi: 5,
+  "bel-ami": 5,
+  magnhild: 5,
   generosity: 20,
 };
 

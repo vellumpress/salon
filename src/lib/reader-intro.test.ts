@@ -130,6 +130,42 @@ test("Marianela opens on Bell’s dusk traveller, not a translator preface", () 
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|translator/i);
 });
 
+test("Passage to India opens on Chandrapore, dedication skipped", () => {
+  const copy = readerIntro(shelfAsWork("a-passage-to-india"));
+  assert.match(copy, /Marabar/);
+  assert.match(copy, /Chandrapore/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured/i);
+});
+
+test("Mhudi opens on the Bechuana tribes, not the chapter subtitle", () => {
+  const copy = readerIntro(shelfAsWork("mhudi"));
+  assert.match(copy, /Bechuana/);
+  assert.match(copy, /Kalahari/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured/i);
+});
+
+test("María opens on the Bogotá college, distinct from Marianela", () => {
+  const copy = readerIntro(shelfAsWork("maria"));
+  assert.match(copy, /Bogotá/);
+  assert.match(copy, /Marianela/);
+  assert.doesNotMatch(copy, /The sun had set/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured/i);
+});
+
+test("Bel-Ami opens on the five-franc piece", () => {
+  const copy = readerIntro(shelfAsWork("bel-ami"));
+  assert.match(copy, /five-franc/);
+  assert.match(copy, /1885/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured/i);
+});
+
+test("Magnhild opens on the storm, preface skipped", () => {
+  const copy = readerIntro(shelfAsWork("magnhild"));
+  assert.match(copy, /Preface/);
+  assert.match(copy, /Magnhild/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured|Dust/i);
+});
+
 test("On the Seaboard opens on Goosestone bay, preface skipped", () => {
   const copy = readerIntro(shelfAsWork("on-the-seaboard"));
   assert.match(copy, /Goosestone bay/);

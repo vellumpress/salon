@@ -3,7 +3,7 @@
   "title": "María",
   "author": "Jorge Isaacs (tr. Rollo Ogden)",
   "year": "1890",
-  "note": "Ogden EN 1890 · US PD · standardebooks.org/ebooks/jorge-isaacs/maria/rollo-ogden (from Archive scans) · no PG",
+  "note": "Ogden EN 1890 · Spanish 1867 · local bind (no PG) · DISTINCT from marianela",
   "minutes": 887,
   "cover": "",
   "coverAlt": "",
@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "I was still a mere boy when sent away from home to study in ⸻ College, founded a few years before in Bogotá, and then well known all through Colombia. The night before my departure, after the family gathering in the evening, one of my siste",
+      "reentry": "I was still a mere boy when sent away from home to study in ⸻ College, founded a few years before in Bogotá, and then well known all through Colombia.",
       "prompt": "A word from this stretch."
     },
     {
@@ -426,22 +426,42 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "I was still a mere boy when sent away from home to study in ⸻ College, founded a few years before in Bogotá, and then well known all through Colombia. The night before my departure, after the family gathering in the evening, one of my sisters came into my room, and, without saying a single word, because she could not trust her voice, cut off a lock of my hair; when she had gone, I found my neck wet with her tears."
+      "text": "I was still a mere boy when sent away from home to study in ⸻ College, founded a few years before in Bogotá, and then well known all through Colombia."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "I fell asleep sorrowful, filled with a vague foreboding of coming trouble. That lock of hair taken from a boy’s head; that precaution of love against death, even in the presence of abounding life, caused my thoughts to wander all night about those scenes where I had passed, without knowing it, the happiest hours of my life."
+      "text": "The night before my departure, after the family gathering in the evening, one of my sisters came into my room, and, without saying a single word, because she could not trust her voice, cut off a lock of my hair; when she had gone, I found my neck wet with her tears."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "The next morning, my father had to loosen my mother’s arms from my neck. My sisters tried to kiss away my tears. María quietly waited her turn, and stammering out a goodbye, touched her blushing cheek to mine, chilled by the first feeling of sorrow."
+      "text": "I fell asleep sorrowful, filled with a vague foreboding of coming trouble."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "A few moments after, I was following my father, who hid his face from my eyes. The tramp of our horses on the pebbly path made my last sobs inaudible. The murmur of the Zabaletas, whose banks lay to our right, grew fainter and fainter. We were already rounding one of those hills in the path on which expected guests used to be looked for from the house; I threw a last glance backward: María was behind the creeper that climbed up by the windows of my mother’s room."
+      "text": "That lock of hair taken from a boy’s head; that precaution of love against death, even in the presence of abounding life, caused my thoughts to wander all night about those scenes where I had passed, without knowing it, the happiest hours of my life."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "The next morning, my father had to loosen my mother’s arms from my neck. My sisters tried to kiss away my tears. María quietly waited her turn, and stammering out a goodbye, touched her blushing cheek to mine, chilled by the first feeling of sorrow."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "A few moments after, I was following my father, who hid his face from my eyes. The tramp of our horses on the pebbly path made my last sobs inaudible."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "The murmur of the Zabaletas, whose banks lay to our right, grew fainter and fainter."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "We were already rounding one of those hills in the path on which expected guests used to be looked for from the house; I threw a last glance backward: María was behind the creeper that climbed up by the windows of my mother’s room."
     },
     {
       "id": "s1-0",
