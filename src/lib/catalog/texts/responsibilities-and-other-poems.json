@@ -1,0 +1,3121 @@
+{
+  "id": "responsibilities-and-other-poems",
+  "title": "Responsibilities, and Other Poems",
+  "author": "W. B. Yeats",
+  "year": "1916",
+  "note": "Project Gutenberg 36865",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I — The Witch",
+      "place": "Chapter I — The Witch",
+      "reentry": "THE Witch",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II — The Peacock",
+      "place": "Chapter II — The Peacock",
+      "reentry": "THE Peacock",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "Dance there upon the shore; What need have you to care For wind or water's roar? And tumble out your hair That the salt drops have wet; Being young you have not known The fool's triumph, nor yet Love lost as soon as won, Nor the best labour",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "Has no one said those daring Kind eyes should be more learn'd? Or warned you how despairing The moths are when they are burned, I could have warned you, but you are young, So we speak a different tongue.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Chapter I — The Magi",
+      "place": "Chapter I — The Magi",
+      "reentry": "THE Magi",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Chapter II — The Dolls",
+      "place": "Chapter II — The Dolls",
+      "reentry": "THE Dolls",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "THE Witch"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Toil, and grow rich, What's that but to lie With a foul witch And after, drained dry, To be brought To the chamber where Lies one long sought With despair."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "THE Peacock"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "What's riches to him That has made a great peacock With the pride of his eye? The wind-beaten, stone-grey, And desolate Three-rock Would nourish his whim. Live he or die Amid wet rocks and heather, His ghost will be gay Adding feather to feather For the pride of his eye."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "THE Mountain Tomb"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Pour wine and dance if Manhood still have pride, Bring roses if the rose be yet in bloom; The cataract smokes upon the mountain side, Our Father Rosicross is in his tomb."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Pull down the blinds, bring fiddle and clarionet That there be no foot silent in the room Nor mouth from kissing, nor from wine unwet; Our Father Rosicross is in his tomb."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "In vain, in vain; the cataract still cries The everlasting taper lights the gloom; All wisdom shut into his onyx eyes Our Father Rosicross sleeps in his tomb."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "To a Child Dancing in the Wind"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Dance there upon the shore; What need have you to care For wind or water's roar? And tumble out your hair That the salt drops have wet; Being young you have not known The fool's triumph, nor yet Love lost as soon as won, Nor the best labourer dead And all the sheaves to bind. What need have you to dread The monstrous crying of wind?"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Has no one said those daring Kind eyes should be more learn'd? Or warned you how despairing The moths are when they are burned, I could have warned you, but you are young, So we speak a different tongue."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "O you will take whatever's offered And dream that all the world's a friend, Suffer as your mother suffered, Be as broken in the end. But I am old and you are young, And I speak a barbarous tongue."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "A Memory OF Youth"
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "The moments passed as at a play, I had the wisdom love brings forth; I had my share of mother wit And yet for all that I could say, And though I had her praise for it, A cloud blown from the cut-throat north Suddenly hid love's moon away."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Believing every word I said I praised her body and her mind Till pride had made her eyes grow bright, And pleasure made her cheeks grow red, And vanity her footfall light, Yet we, for all that praise, could find Nothing but darkness overhead."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "We sat as silent as a stone, We knew, though she'd not said a word, That even the best of love must die, And had been savagely undone Were it not that love upon the cry Of a most ridiculous little bird Tore from the clouds his marvellous moon."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "Fallen Majesty"
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "Although crowds gathered once if she but showed her face, And even old men's eyes grew dim, this hand alone, Like some last courtier at a gypsy camping place, Babbling of fallen majesty, records what's gone."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "The lineaments, a heart that laughter has made sweet, These, these remain, but I record what's gone. A crowd Will gather, and not know it walks the very street Whereon a thing once walked that seemed a burning cloud."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "Friends"
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "Now must I these three praise-- Three women that have wrought What joy is in my days; One that no passing thought, Nor those unpassing cares, No, not in these fifteen Many times troubled years, Could ever come between Heart and delighted heart; And one because her hand Had strength that could unbind What none can understand, What none can have and thrive, Youth's dreamy load, till she So changed me that I live Labouring in ecstasy. And what of her that took All till my youth was gone With scarce a pitying look? How should I praise that one? When day begins to break I count my good and bad, Being wakeful for her sake, Remembering what she had, What eagle look still shows, While up from my heart's root So great a sweetness flows I shake from head to foot."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "THE Cold Heaven"
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "Suddenly I saw the cold and rook-delighting Heaven That seemed as though ice burned and was but the more ice, And thereupon imagination and heart were driven So wild that every casual thought of that and this Vanished, and left but memories, that should be out of season With the hot blood of youth, of love crossed long ago; And I took all the blame out of all sense and reason, Until I cried and trembled and rocked to and fro, Riddled with light. Ah! when the ghost begins to quicken, Confusion of the death-bed over, is it sent Out naked on the roads, as the books say, and stricken By the injustice of the skies for punishment?"
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "That THE Night Come"
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "She lived in storm and strife, Her soul had such desire For what proud death may bring That it could not endure The common good of life, But lived as 'twere a king That packed his marriage day With banneret and pennon, Trumpet and kettledrum, And the outrageous cannon, To bundle time away That the night come."
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "AN Appointment"
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "Being out of heart with government I took a broken root to fling Where the proud, wayward squirrel went, Taking delight that he could spring; And he, with that low whinnying sound That is like laughter, sprang again And so to the other tree at a bound. Nor the tame will, nor timid brain, Bred that fierce tooth and cleanly limb And threw him up to laugh on the bough; No government appointed him."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "THE Magi"
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Now as at all times I can see in the mind's eye, In their stiff, painted clothes, the pale unsatisfied ones Appear and disappear in the blue depth of the sky With all their ancient faces like rain-beaten stones, And all their helms of silver hovering side by side, And all their eyes still fixed, hoping to find once more, Being by Calvary's turbulence unsatisfied, The uncontrollable mystery on the bestial floor."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "THE Dolls"
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "A doll in the doll-maker's house Looks at the cradle and balls: 'That is an insult to us.' But the oldest of all the dolls Who had seen, being kept for show, Generations of his sort, Out-screams the whole shelf: 'Although There's not a man can report Evil of this place, The man and the woman bring Hither to our disgrace, A noisy and filthy thing.' Hearing him groan and stretch The doll-maker's wife is aware Her husband has heard the wretch, And crouched by the arm of his chair, She murmurs into his ear, Head upon shoulder leant: 'My dear, my dear, oh dear, It was an accident.'"
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "A Coat"
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "I made my song a coat Covered with embroideries Out of old mythologies From heel to throat; But the fools caught it, Wore it in the world's eye As though they'd wrought it. Song, let them take it For there's more enterprise In walking naked."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "*While I, from that reed-throated whisperer* *Who comes at need, although not now as once* *A clear articulation in the air* *But inwardly, surmise companions* *Beyond the fling of the dull ass's hoof,* *--Ben Jonson's phrase--and find when June is come* *At Kyle-na-no under that ancient roof* *A sterner conscience and a friendlier home,* *I can forgive even that wrong of wrongs,* *Those undreamt accidents that have made me* *--Seeing that Fame has perished this long while* *Being but a part of ancient ceremony--* *Notorious, till all my priceless things* *Are but a post the passing dogs defile.*"
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "From the Green Helmet and Other Poems"
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "HIS Dream"
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "I swayed upon the gaudy stern The butt end of a steering oar, And everywhere that I could turn Men ran upon the shore."
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "And though I would have hushed the crowd There was no mother's son but said, 'What is the figure in a shroud Upon a gaudy bed?'"
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "And fishes bubbling to the brim Cried out upon that thing beneath, --It had such dignity of limb-- By the sweet name of Death."
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "Though I'd my finger on my lip, What could I but take up the song? And fish and crowd and gaudy ship Cried out the whole night long,"
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "Crying amid the glittering sea, Naming it with ecstatic breath, Because it had such dignity By the sweet name of Death."
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "A Woman Homer Sung"
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "If any man drew near When I was young, I thought, 'He holds her dear,' And shook with hate and fear. But oh, 'twas bitter wrong If he could pass her by With an indifferent eye."
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "Whereon I wrote and wrought, And now, being grey, I dream that I have brought To such a pitch my thought That coming time can say, 'He shadowed in a glass What thing her body was.'"
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "For she had fiery blood When I was young, And trod so sweetly proud As 'twere upon a cloud, A woman Homer sung, That life and letters seem But an heroic dream."
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "THE Consolation"
+    },
+    {
+      "id": "s5-17",
+      "sceneId": "s5",
+      "text": "I had this thought awhile ago, 'My darling cannot understand What I have done, or what would do In this blind bitter land.'"
+    },
+    {
+      "id": "s5-18",
+      "sceneId": "s5",
+      "text": "And I grew weary of the sun Until my thoughts cleared up again, Remembering that the best I have done Was done to make it plain;"
+    },
+    {
+      "id": "s5-19",
+      "sceneId": "s5",
+      "text": "That every year I have cried, 'At length My darling understands it all, Because I have come into my strength, And words obey my call.'"
+    },
+    {
+      "id": "s5-20",
+      "sceneId": "s5",
+      "text": "That had she done so who can say What would have shaken from the sieve? I might have thrown poor words away And been content to live."
+    },
+    {
+      "id": "s5-21",
+      "sceneId": "s5",
+      "text": "NO Second Troy"
+    },
+    {
+      "id": "s5-22",
+      "sceneId": "s5",
+      "text": "Why should I blame her that she filled my days With misery, or that she would of late Have taught to ignorant men most violent ways, Or hurled the little streets upon the great, Had they but courage equal to desire? What could have made her peaceful with a mind That nobleness made simple as a fire, With beauty like a tightened bow, a kind That is not natural in an age like this, Being high and solitary and most stern? Why, what could she have done being what she is? Was there another Troy for her to burn?"
+    },
+    {
+      "id": "s5-23",
+      "sceneId": "s5",
+      "text": "Reconciliation"
+    },
+    {
+      "id": "s5-24",
+      "sceneId": "s5",
+      "text": "Some may have blamed you that you took away The verses that could move them on the day When, the ears being deafened, the sight of the eyes blind With lightning you went from me, and I could find Nothing to make a song about but kings, Helmets, and swords, and half-forgotten things That were like memories of you--but now We'll out, for the world lives as long ago; And while we're in our laughing, weeping fit, Hurl helmets, crowns, and swords into the pit. But, dear, cling close to me; since you were gone, My barren thoughts have chilled me to the bone."
+    },
+    {
+      "id": "s5-25",
+      "sceneId": "s5",
+      "text": "King AND NO King"
+    },
+    {
+      "id": "s5-26",
+      "sceneId": "s5",
+      "text": "'Would it were anything but merely voice!' The No King cried who after that was King, Because he had not heard of anything That balanced with a word is more than noise; Yet Old Romance being kind, let him prevail Somewhere or somehow that I have forgot, Though he'd but cannon--Whereas we that had thought To have lit upon as clean and sweet a tale Have been defeated by that pledge you gave In momentary anger long ago; And I that have not your faith, how shall I know That in the blinding light beyond the grave We'll find so good a thing as that we have lost? The hourly kindness, the day's common speech, The habitual content of each with each When neither soul nor body has been crossed."
+    },
+    {
+      "id": "s5-27",
+      "sceneId": "s5",
+      "text": "Peace"
+    },
+    {
+      "id": "s5-28",
+      "sceneId": "s5",
+      "text": "Ah, that Time could touch a form That could show what Homer's age Bred to be a hero's wage. 'Were not all her life but storm, Would not painters paint a form Of such noble lines,' I said, 'Such a delicate high head, All that sternness amid charm, All that sweetness amid strength?' Ah, but peace that comes at length, Came when Time had touched her form."
+    },
+    {
+      "id": "s5-29",
+      "sceneId": "s5",
+      "text": "Against Unworthy Praise"
+    },
+    {
+      "id": "s5-30",
+      "sceneId": "s5",
+      "text": "O heart, be at peace, because Nor knave nor dolt can break What's not for their applause, Being for a woman's sake. Enough if the work has seemed, So did she your strength renew, A dream that a lion had dreamed Till the wilderness cried aloud, A secret between you two, Between the proud and the proud."
+    },
+    {
+      "id": "s5-31",
+      "sceneId": "s5",
+      "text": "What, still you would have their praise! But here's a haughtier text, The labyrinth of her days That her own strangeness perplexed; And how what her dreaming gave Earned slander, ingratitude, From self-same dolt and knave; Aye, and worse wrong than these, Yet she, singing upon her road, Half lion, half child, is at peace."
+    },
+    {
+      "id": "s5-32",
+      "sceneId": "s5",
+      "text": "The Fascination of What's Difficult"
+    },
+    {
+      "id": "s5-33",
+      "sceneId": "s5",
+      "text": "The fascination of what's difficult Has dried the sap out of my veins, and rent Spontaneous joy and natural content Out of my heart. There's something ails our colt That must, as if it had not holy blood, Nor on an Olympus leaped from cloud to cloud, Shiver under the lash, strain, sweat and jolt As though it dragged road metal. My curse on plays That have to be set up in fifty ways, On the day's war with every knave and dolt, Theatre business, management of men. I swear before the dawn comes round again I'll find the stable and pull out the bolt."
+    },
+    {
+      "id": "s5-34",
+      "sceneId": "s5",
+      "text": "A Drinking Song"
+    },
+    {
+      "id": "s5-35",
+      "sceneId": "s5",
+      "text": "Wine comes in at the mouth And love comes in at the eye; That's all we shall know for truth Before we grow old and die. I lift the glass to my mouth, I look at you, and I sigh."
+    },
+    {
+      "id": "s5-36",
+      "sceneId": "s5",
+      "text": "The Coming of Wisdom with Time"
+    },
+    {
+      "id": "s5-37",
+      "sceneId": "s5",
+      "text": "Though leaves are many, the root is one; Through all the lying days of my youth I swayed my leaves and flowers in the sun; Now I may wither into the truth."
+    },
+    {
+      "id": "s5-38",
+      "sceneId": "s5",
+      "text": "On Hearing That the Students of Our New University Have Joined the Ancient Order of Hibernians and the Agitation Against Immoral Literature"
+    },
+    {
+      "id": "s5-39",
+      "sceneId": "s5",
+      "text": "Where, where but here have Pride and Truth, That long to give themselves for wage, To shake their wicked sides at youth Restraining reckless middle-age."
+    },
+    {
+      "id": "s5-40",
+      "sceneId": "s5",
+      "text": "To a Poet, Who Would Have Me Praise Certain Bad Poets, Imitators of His and Mine"
+    },
+    {
+      "id": "s5-41",
+      "sceneId": "s5",
+      "text": "You say, as I have often given tongue In praise of what another's said or sung, 'Twere politic to do the like by these; But have you known a dog to praise his fleas?"
+    },
+    {
+      "id": "s5-42",
+      "sceneId": "s5",
+      "text": "THE Mask"
+    },
+    {
+      "id": "s5-43",
+      "sceneId": "s5",
+      "text": "'Put off that mask of burning gold With emerald eyes.' 'O no, my dear, you make so bold To find if hearts be wild and wise, And yet not cold.'"
+    },
+    {
+      "id": "s5-44",
+      "sceneId": "s5",
+      "text": "'I would but find what's there to find, Love or deceit.' 'It was the mask engaged your mind, And after set your heart to beat, Not what's behind.'"
+    },
+    {
+      "id": "s5-45",
+      "sceneId": "s5",
+      "text": "'But lest you are my enemy, I must enquire.' 'O no, my dear, let all that be, What matter, so there is but fire In you, in me?'"
+    },
+    {
+      "id": "s5-46",
+      "sceneId": "s5",
+      "text": "Upon a House Shaken by the Land Agitation"
+    },
+    {
+      "id": "s5-47",
+      "sceneId": "s5",
+      "text": "How should the world be luckier if this house, Where passion and precision have been one Time out of mind, became too ruinous To breed the lidless eye that loves the sun? And the sweet laughing eagle thoughts that grow Where wings have memory of wings, and all That comes of the best knit to the best? Although Mean roof-trees were the sturdier for its fall, How should their luck run high enough to reach The gifts that govern men, and after these To gradual Time's last gift, a written speech Wrought of high laughter, loveliness and ease?"
+    },
+    {
+      "id": "s5-48",
+      "sceneId": "s5",
+      "text": "AT THE Abbey Theatre"
+    },
+    {
+      "id": "s5-49",
+      "sceneId": "s5",
+      "text": "(*Imitated from Ronsard*)"
+    },
+    {
+      "id": "s5-50",
+      "sceneId": "s5",
+      "text": "Dear Craoibhin Aoibhin, look into our case. When we are high and airy hundreds say That if we hold that flight they'll leave the place, While those same hundreds mock another day Because we have made our art of common things, So bitterly, you'd dream they longed to look All their lives through into some drift of wings. You've dandled them and fed them from the book And know them to the bone; impart to us-- We'll keep the secret--a new trick to please. Is there a bridle for this Proteus That turns and changes like his draughty seas? Or is there none, most popular of men, But when they mock us that we mock again?"
+    },
+    {
+      "id": "s5-51",
+      "sceneId": "s5",
+      "text": "These ARE THE Clouds"
+    },
+    {
+      "id": "s5-52",
+      "sceneId": "s5",
+      "text": "These are the clouds about the fallen sun, The majesty that shuts his burning eye; The weak lay hand on what the strong has done, Till that be tumbled that was lifted high And discord follow upon unison, And all things at one common level lie. And therefore, friend, if your great race were run And these things came, so much the more thereby Have you made greatness your companion, Although it be for children that you sigh: These are the clouds about the fallen sun, The majesty that shuts his burning eye."
+    },
+    {
+      "id": "s5-53",
+      "sceneId": "s5",
+      "text": "AT Galway Races"
+    },
+    {
+      "id": "s5-54",
+      "sceneId": "s5",
+      "text": "There where the course is, Delight makes all of the one mind, The riders upon the galloping horses, The crowd that closes in behind: We, too, had good attendance once, Hearers and hearteners of the work; Aye, horsemen for companions, Before the merchant and the clerk Breathed on the world with timid breath. Sing on: sometime, and at some new moon, We'll learn that sleeping is not death, Hearing the whole earth change its tune, Its flesh being wild, and it again Crying aloud as the race course is, And we find hearteners among men That ride upon horses."
+    },
+    {
+      "id": "s5-55",
+      "sceneId": "s5",
+      "text": "A Friend'S Illness"
+    },
+    {
+      "id": "s5-56",
+      "sceneId": "s5",
+      "text": "Sickness brought me this Thought, in that scale of his: Why should I be dismayed Though flame had burned the whole World, as it were a coal, Now I have seen it weighed Against a soul?"
+    },
+    {
+      "id": "s5-57",
+      "sceneId": "s5",
+      "text": "All Things Can Tempt Me"
+    },
+    {
+      "id": "s5-58",
+      "sceneId": "s5",
+      "text": "All things can tempt me from this craft of verse: One time it was a woman's face, or worse-- The seeming needs of my fool-driven land; Now nothing but comes readier to the hand Than this accustomed toil. When I was young, I had not given a penny for a song Did not the poet sing it with such airs That one believed he had a sword upstairs; Yet would be now, could I but have my wish, Colder and dumber and deafer than a fish."
+    },
+    {
+      "id": "s5-59",
+      "sceneId": "s5",
+      "text": "THE Young MAN'S Song"
+    },
+    {
+      "id": "s5-60",
+      "sceneId": "s5",
+      "text": "I whispered, 'I am too young,' And then, 'I am old enough;' Wherefore I threw a penny To find out if I might love. 'Go and love, go and love, young man, If the lady be young and fair.' Ah, penny, brown penny, brown penny, I am looped in the loops of her hair."
+    },
+    {
+      "id": "s5-61",
+      "sceneId": "s5",
+      "text": "Oh, love is the crooked thing, There is nobody wise enough To find out all that is in it, For he would be thinking of love Till the stars had run away, And the shadows eaten the moon. Ah, penny, brown penny, brown penny, One cannot begin it too soon."
+    },
+    {
+      "id": "s5-62",
+      "sceneId": "s5",
+      "text": "THE Hour-Glass"
+    },
+    {
+      "id": "s5-63",
+      "sceneId": "s5",
+      "text": "NEW Version--1912"
+    },
+    {
+      "id": "s5-64",
+      "sceneId": "s5",
+      "text": "The Persons of the Play"
+    },
+    {
+      "id": "s5-65",
+      "sceneId": "s5",
+      "text": "Wise MAN. Bridget, his wife. Teigue, a fool. Angel. Children and Pupils."
+    },
+    {
+      "id": "s5-66",
+      "sceneId": "s5",
+      "text": "*Pupils come in and stand before the stage curtain, which is still closed. One pupil carries a book.*"
+    },
+    {
+      "id": "s5-67",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-68",
+      "sceneId": "s5",
+      "text": "He said we might choose the subject for the lesson."
+    },
+    {
+      "id": "s5-69",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-70",
+      "sceneId": "s5",
+      "text": "There is none of us wise enough to do that."
+    },
+    {
+      "id": "s5-71",
+      "sceneId": "s5",
+      "text": "Third Pupil"
+    },
+    {
+      "id": "s5-72",
+      "sceneId": "s5",
+      "text": "It would need a great deal of wisdom to know what it is we want to know."
+    },
+    {
+      "id": "s5-73",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-74",
+      "sceneId": "s5",
+      "text": "I will question him."
+    },
+    {
+      "id": "s5-75",
+      "sceneId": "s5",
+      "text": "Fifth Pupil"
+    },
+    {
+      "id": "s5-76",
+      "sceneId": "s5",
+      "text": "You?"
+    },
+    {
+      "id": "s5-77",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-78",
+      "sceneId": "s5",
+      "text": "Last night I dreamt that some one came and told me to question him. I was to say to him, 'You were wrong to say there is no God and no soul--maybe, if there is not much of either, there is yet some tatters, some tag on the wind--so to speak--some rag upon a bush, some bob-tail of a god.' I will argue with him,--nonsense though it be--according to my dream, and you will see how well I can argue, and what thoughts I have."
+    },
+    {
+      "id": "s5-79",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-80",
+      "sceneId": "s5",
+      "text": "I'd as soon listen to dried peas in a bladder, as listen to your thoughts."
+    },
+    {
+      "id": "s5-81",
+      "sceneId": "s5",
+      "text": "[*Fool comes in.*"
+    },
+    {
+      "id": "s5-82",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-83",
+      "sceneId": "s5",
+      "text": "Give me a penny."
+    },
+    {
+      "id": "s5-84",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-85",
+      "sceneId": "s5",
+      "text": "Let us choose a subject by chance. Here is his big book. Let us turn over the pages slowly. Let one of us put down his finger without looking. The passage his finger lights on will be the subject for the lesson."
+    },
+    {
+      "id": "s5-86",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-87",
+      "sceneId": "s5",
+      "text": "Give me a penny."
+    },
+    {
+      "id": "s5-88",
+      "sceneId": "s5",
+      "text": "Third Pupil"
+    },
+    {
+      "id": "s5-89",
+      "sceneId": "s5",
+      "text": "(*Taking up book*) How heavy it is."
+    },
+    {
+      "id": "s5-90",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-91",
+      "sceneId": "s5",
+      "text": "Spread it on Teigue's back, and then we can all stand round and see the choice."
+    },
+    {
+      "id": "s5-92",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-93",
+      "sceneId": "s5",
+      "text": "Make him spread out his arms."
+    },
+    {
+      "id": "s5-94",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-95",
+      "sceneId": "s5",
+      "text": "Down on your knees. Hunch up your back. Spread your arms out now, and look like a golden eagle in a church. Keep still, keep still."
+    },
+    {
+      "id": "s5-96",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-97",
+      "sceneId": "s5",
+      "text": "Give me a penny."
+    },
+    {
+      "id": "s5-98",
+      "sceneId": "s5",
+      "text": "Third Pupil"
+    },
+    {
+      "id": "s5-99",
+      "sceneId": "s5",
+      "text": "Is that the right cry for an eagle cock?"
+    },
+    {
+      "id": "s5-100",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-101",
+      "sceneId": "s5",
+      "text": "I'll turn the pages--you close your eyes and put your finger down."
+    },
+    {
+      "id": "s5-102",
+      "sceneId": "s5",
+      "text": "Third Pupil"
+    },
+    {
+      "id": "s5-103",
+      "sceneId": "s5",
+      "text": "That's it, and then he cannot blame us for the choice."
+    },
+    {
+      "id": "s5-104",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-105",
+      "sceneId": "s5",
+      "text": "There, I have chosen. Fool, keep still--and if what's wise is strange and sounds like nonsense, we've made a good choice."
+    },
+    {
+      "id": "s5-106",
+      "sceneId": "s5",
+      "text": "Fifth Pupil"
+    },
+    {
+      "id": "s5-107",
+      "sceneId": "s5",
+      "text": "The Master has come."
+    },
+    {
+      "id": "s5-108",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-109",
+      "sceneId": "s5",
+      "text": "Will anybody give a penny to a fool?"
+    },
+    {
+      "id": "s5-110",
+      "sceneId": "s5",
+      "text": "[*One of the pupils draws back the stage curtain showing the Master sitting at his desk. There is an hour-glass upon his desk or in a bracket on the wall. One pupil puts the book before him.*"
+    },
+    {
+      "id": "s5-111",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-112",
+      "sceneId": "s5",
+      "text": "We have chosen the passage for the lesson, Master. 'There are two living countries, one visible and one invisible, and when it is summer there, it is winter here, and when it is November with us, it is lambing-time there.'"
+    },
+    {
+      "id": "s5-113",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-114",
+      "sceneId": "s5",
+      "text": "That passage, that passage! what mischief has there been since yesterday?"
+    },
+    {
+      "id": "s5-115",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-116",
+      "sceneId": "s5",
+      "text": "None, Master."
+    },
+    {
+      "id": "s5-117",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-118",
+      "sceneId": "s5",
+      "text": "Oh yes, there has; some craziness has fallen from the wind, or risen from the graves of old men, and made you choose that subject."
+    },
+    {
+      "id": "s5-119",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-120",
+      "sceneId": "s5",
+      "text": "I knew that it was folly, but they would have it."
+    },
+    {
+      "id": "s5-121",
+      "sceneId": "s5",
+      "text": "Third Pupil"
+    },
+    {
+      "id": "s5-122",
+      "sceneId": "s5",
+      "text": "Had we not better say we picked it by chance?"
+    },
+    {
+      "id": "s5-123",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-124",
+      "sceneId": "s5",
+      "text": "No; he would say we were children still."
+    },
+    {
+      "id": "s5-125",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-126",
+      "sceneId": "s5",
+      "text": "I have found a sentence under that one that says--as though to show it had a hidden meaning--a beggar wrote it upon the walls of Babylon."
+    },
+    {
+      "id": "s5-127",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-128",
+      "sceneId": "s5",
+      "text": "Then find some beggar and ask him what it means, for I will have nothing to do with it."
+    },
+    {
+      "id": "s5-129",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-130",
+      "sceneId": "s5",
+      "text": "Come, Teigue, what is the old book's meaning when it says that there are sheep that drop their lambs in November?"
+    },
+    {
+      "id": "s5-131",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-132",
+      "sceneId": "s5",
+      "text": "To be sure--everybody knows, everybody in the world knows, when it is Spring with us, the trees are withering there, when it is Summer with us, the snow is falling there, and have I not myself heard the lambs that are there all bleating on a cold November day--to be sure, does not everybody with an intellect know that; and maybe when it's night with us, it is day with them, for many a time I have seen the roads lighted before me."
+    },
+    {
+      "id": "s5-133",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-134",
+      "sceneId": "s5",
+      "text": "The beggar who wrote that on Babylon wall meant that there is a spiritual kingdom that cannot be seen or known till the faculties whereby we master the kingdom of this world wither away, like green things in winter. A monkish thought, the most mischievous thought that ever passed out of a man's mouth."
+    },
+    {
+      "id": "s5-135",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-136",
+      "sceneId": "s5",
+      "text": "If he meant all that, I will take an oath that he was spindle-shanked, and cross-eyed, and had a lousy itching shoulder, and that his heart was crosser than his eyes, and that he wrote it out of malice."
+    },
+    {
+      "id": "s5-137",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-138",
+      "sceneId": "s5",
+      "text": "Let's come away and find a better subject."
+    },
+    {
+      "id": "s5-139",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-140",
+      "sceneId": "s5",
+      "text": "And maybe now you'll let me choose."
+    },
+    {
+      "id": "s5-141",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-142",
+      "sceneId": "s5",
+      "text": "Come."
+    },
+    {
+      "id": "s5-143",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-144",
+      "sceneId": "s5",
+      "text": "Were it but true 'twould alter everything Until the stream of the world had changed its course, And that and all our thoughts had run Into some cloudy thunderous spring They dream to be its source-- Aye, to some frenzy of the mind; And all that we have done would be undone, Our speculation but as the wind."
+    },
+    {
+      "id": "s5-145",
+      "sceneId": "s5",
+      "text": "[*A pause.*"
+    },
+    {
+      "id": "s5-146",
+      "sceneId": "s5",
+      "text": "I have dreamed it twice."
+    },
+    {
+      "id": "s5-147",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-148",
+      "sceneId": "s5",
+      "text": "Something has troubled him."
+    },
+    {
+      "id": "s5-149",
+      "sceneId": "s5",
+      "text": "[*Pupils go out.*"
+    },
+    {
+      "id": "s5-150",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-151",
+      "sceneId": "s5",
+      "text": "Twice have I dreamed it in a morning dream, Now nothing serves my pupils but to come With a like thought. Reason is growing dim; A moment more and Frenzy will beat his drum And laugh aloud and scream; And I must dance in the dream. No, no, but it is like a hawk, a hawk of the air, It has swooped down--and this swoop makes the third-- And what can I, but tremble like a bird?"
+    },
+    {
+      "id": "s5-152",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-153",
+      "sceneId": "s5",
+      "text": "Give me a penny."
+    },
+    {
+      "id": "s5-154",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-155",
+      "sceneId": "s5",
+      "text": "That I should dream it twice, and after that, that they should pick it out."
+    },
+    {
+      "id": "s5-156",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-157",
+      "sceneId": "s5",
+      "text": "Won't you give me a penny?"
+    },
+    {
+      "id": "s5-158",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-159",
+      "sceneId": "s5",
+      "text": "What do you want? What can it matter to you whether the words I am reading are wisdom or sheer folly?"
+    },
+    {
+      "id": "s5-160",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-161",
+      "sceneId": "s5",
+      "text": "Such a great, wise teacher will not refuse a penny to a fool."
+    },
+    {
+      "id": "s5-162",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-163",
+      "sceneId": "s5",
+      "text": "Seeing that everybody is a fool when he is asleep and dreaming, why do you call me wise?"
+    },
+    {
+      "id": "s5-164",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-165",
+      "sceneId": "s5",
+      "text": "O, I know,--I know, I know what I have seen."
+    },
+    {
+      "id": "s5-166",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-167",
+      "sceneId": "s5",
+      "text": "Well, to see rightly is the whole of wisdom, whatever dream be with us."
+    },
+    {
+      "id": "s5-168",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-169",
+      "sceneId": "s5",
+      "text": "When I went by Kilcluan, where the bells used to be ringing at the break of every day, I could hear nothing but the people snoring in their houses. When I went by Tubbervanach, where the young men used to be climbing the hill to the blessed well, they were sitting at the cross-roads playing cards. When I went by Carrigoras, where the friars used to be fasting and serving the poor, I saw them drinking wine and obeying their wives. And when I asked what misfortune had brought all these changes, they said it was no misfortune, but that it was the wisdom they had learned from your teaching."
+    },
+    {
+      "id": "s5-170",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-171",
+      "sceneId": "s5",
+      "text": "And you too have called me wise--you would be paid for that good opinion doubtless--Run to the kitchen, my wife will give you food and drink."
+    },
+    {
+      "id": "s5-172",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-173",
+      "sceneId": "s5",
+      "text": "That's foolish advice for a wise man to give."
+    },
+    {
+      "id": "s5-174",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-175",
+      "sceneId": "s5",
+      "text": "Why, Fool?"
+    },
+    {
+      "id": "s5-176",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-177",
+      "sceneId": "s5",
+      "text": "What is eaten is gone--I want pennies for my bag. I must buy bacon in the shops, and nuts in the market, and strong drink for the time the sun is weak, and snares to catch the rabbits and the hares, and a big pot to cook them in."
+    },
+    {
+      "id": "s5-178",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-179",
+      "sceneId": "s5",
+      "text": "I have more to think about than giving pennies to your like, so run away."
+    },
+    {
+      "id": "s5-180",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-181",
+      "sceneId": "s5",
+      "text": "Give me a penny and I will bring you luck. The fishermen let me sleep among their nets in the loft because I bring them luck; and in the summer time, the wild creatures let me sleep near their nests and their holes. It is lucky even to look at me, but it is much more lucky to give me a penny. If I was not lucky I would starve."
+    },
+    {
+      "id": "s5-182",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-183",
+      "sceneId": "s5",
+      "text": "What are the shears for?"
+    },
+    {
+      "id": "s5-184",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-185",
+      "sceneId": "s5",
+      "text": "I won't tell you. If I told you, you would drive them away."
+    },
+    {
+      "id": "s5-186",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-187",
+      "sceneId": "s5",
+      "text": "Drive them away! Who would I drive away?"
+    },
+    {
+      "id": "s5-188",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-189",
+      "sceneId": "s5",
+      "text": "I won't tell you."
+    },
+    {
+      "id": "s5-190",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-191",
+      "sceneId": "s5",
+      "text": "Not if I give you a penny?"
+    },
+    {
+      "id": "s5-192",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-193",
+      "sceneId": "s5",
+      "text": "No."
+    },
+    {
+      "id": "s5-194",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-195",
+      "sceneId": "s5",
+      "text": "Not if I give you two pennies?"
+    },
+    {
+      "id": "s5-196",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-197",
+      "sceneId": "s5",
+      "text": "You will be very lucky if you give me two pennies, but I won't tell you."
+    },
+    {
+      "id": "s5-198",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-199",
+      "sceneId": "s5",
+      "text": "Three pennies?"
+    },
+    {
+      "id": "s5-200",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-201",
+      "sceneId": "s5",
+      "text": "Four, and I will tell you."
+    },
+    {
+      "id": "s5-202",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-203",
+      "sceneId": "s5",
+      "text": "Very well--four, but from this out I will not call you Teigue the Fool."
+    },
+    {
+      "id": "s5-204",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-205",
+      "sceneId": "s5",
+      "text": "Let me come close to you, where nobody will hear me; but first you must promise not to drive them away. (*Wise Man nods.*) Every day men go out dressed in black and spread great black nets over the hills, great black nets."
+    },
+    {
+      "id": "s5-206",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-207",
+      "sceneId": "s5",
+      "text": "A strange place that to fish in."
+    },
+    {
+      "id": "s5-208",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-209",
+      "sceneId": "s5",
+      "text": "They spread them out on the hills that they may catch the feet of the angels; but every morning just before the dawn, I go out and cut the nets with the shears and the angels fly away."
+    },
+    {
+      "id": "s5-210",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-211",
+      "sceneId": "s5",
+      "text": "(*Speaking with excitement*) Ah, now I know that you are Teigue the Fool. You say that I am wise, and yet I say, there are no angels."
+    },
+    {
+      "id": "s5-212",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-213",
+      "sceneId": "s5",
+      "text": "I have seen plenty of angels."
+    },
+    {
+      "id": "s5-214",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-215",
+      "sceneId": "s5",
+      "text": "No, no, you have not."
+    },
+    {
+      "id": "s5-216",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-217",
+      "sceneId": "s5",
+      "text": "They are plenty if you but look about you. They are like the blades of grass."
+    },
+    {
+      "id": "s5-218",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-219",
+      "sceneId": "s5",
+      "text": "They are plenty as the blades of grass--I heard that phrase when I was but a child and was told folly."
+    },
+    {
+      "id": "s5-220",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-221",
+      "sceneId": "s5",
+      "text": "When one gets quiet. When one is so quiet that there is not a thought in one's head maybe, there is something that wakes up inside one, something happy and quiet, and then all in a minute one can smell summer flowers, and tall people go by, happy and laughing, but they will not let us look at their faces. Oh no, it is not right that we should look at their faces."
+    },
+    {
+      "id": "s5-222",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-223",
+      "sceneId": "s5",
+      "text": "You have fallen asleep upon a hill, yet, even those that used to dream of angels dream now of other things."
+    },
+    {
+      "id": "s5-224",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-225",
+      "sceneId": "s5",
+      "text": "I saw one but a moment ago--that is because I am lucky. It was coming behind me, but it was not laughing."
+    },
+    {
+      "id": "s5-226",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-227",
+      "sceneId": "s5",
+      "text": "There's nothing but what men can see when they are awake. Nothing, nothing."
+    },
+    {
+      "id": "s5-228",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-229",
+      "sceneId": "s5",
+      "text": "I knew you would drive them away."
+    },
+    {
+      "id": "s5-230",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-231",
+      "sceneId": "s5",
+      "text": "Pardon me, Fool, I had forgotten who I spoke to. Well, there are your four pennies--Fool you are called, And all day long they cry, 'Come hither, Fool.'"
+    },
+    {
+      "id": "s5-232",
+      "sceneId": "s5",
+      "text": "[*The Fool goes close to him.*"
+    },
+    {
+      "id": "s5-233",
+      "sceneId": "s5",
+      "text": "Or else it's, 'Fool, be gone.'"
+    },
+    {
+      "id": "s5-234",
+      "sceneId": "s5",
+      "text": "[*The Fool goes further off.*"
+    },
+    {
+      "id": "s5-235",
+      "sceneId": "s5",
+      "text": "Or, 'Fool, stand there.'"
+    },
+    {
+      "id": "s5-236",
+      "sceneId": "s5",
+      "text": "[*The Fool straightens himself up.*"
+    },
+    {
+      "id": "s5-237",
+      "sceneId": "s5",
+      "text": "Or, 'Fool, go sit in the corner.'"
+    },
+    {
+      "id": "s5-238",
+      "sceneId": "s5",
+      "text": "[*The Fool sits in the corner.*"
+    },
+    {
+      "id": "s5-239",
+      "sceneId": "s5",
+      "text": "And all the while What were they all but fools before I came? What are they now, but mirrors that seem men, Because of my image? Fool, hold up your head."
+    },
+    {
+      "id": "s5-240",
+      "sceneId": "s5",
+      "text": "[*Fool does so.*"
+    },
+    {
+      "id": "s5-241",
+      "sceneId": "s5",
+      "text": "What foolish stories they have told of the ghosts That fumbled with the clothes upon the bed, Or creaked and shuffled in the corridor, Or else, if they were pious bred, Of angels from the skies, That coming through the door, Or, it may be, standing there, Would solidly out stare The steadiest eyes with their unnatural eyes, Aye, on a man's own floor."
+    },
+    {
+      "id": "s5-242",
+      "sceneId": "s5",
+      "text": "[*An angel has come in. It should be played by a man if a man can be found with the right voice, and may wear a little golden domino and a halo made of metal. Or the whole face may be a beautiful mask, in which case the last sentence on page 136 should not be spoken.*"
+    },
+    {
+      "id": "s5-243",
+      "sceneId": "s5",
+      "text": "Yet it is strange, the strangest thing I have known, That I should still be haunted by the notion That there's a crisis of the spirit wherein We get new sight, and that they know some trick To turn our thoughts for their own ends to frenzy. Why do you put your finger to your lip, And creep away?"
+    },
+    {
+      "id": "s5-244",
+      "sceneId": "s5",
+      "text": "[*Fool goes out.*"
+    },
+    {
+      "id": "s5-245",
+      "sceneId": "s5",
+      "text": "(*Wise Man sees Angel.*) What are you? Who are you? I think I saw some like you in my dreams, When but a child. That thing about your head,-- That brightness in your hair--that flowery branch; But I have done with dreams, I have done with dreams."
+    },
+    {
+      "id": "s5-246",
+      "sceneId": "s5",
+      "text": "Angel"
+    },
+    {
+      "id": "s5-247",
+      "sceneId": "s5",
+      "text": "I am the crafty one that you have called."
+    },
+    {
+      "id": "s5-248",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-249",
+      "sceneId": "s5",
+      "text": "How that I called?"
+    },
+    {
+      "id": "s5-250",
+      "sceneId": "s5",
+      "text": "Angel"
+    },
+    {
+      "id": "s5-251",
+      "sceneId": "s5",
+      "text": "I am the messenger."
+    },
+    {
+      "id": "s5-252",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-253",
+      "sceneId": "s5",
+      "text": "What message could you bring to one like me?"
+    },
+    {
+      "id": "s5-254",
+      "sceneId": "s5",
+      "text": "Angel (*turning the hour-glass*)"
+    },
+    {
+      "id": "s5-255",
+      "sceneId": "s5",
+      "text": "That you will die when the last grain of sand Has fallen through this glass."
+    },
+    {
+      "id": "s5-256",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-257",
+      "sceneId": "s5",
+      "text": "I have a wife. Children and pupils that I cannot leave: Why must I die, my time is far away?"
+    },
+    {
+      "id": "s5-258",
+      "sceneId": "s5",
+      "text": "Angel"
+    },
+    {
+      "id": "s5-259",
+      "sceneId": "s5",
+      "text": "You have to die because no soul has passed The heavenly threshold since you have opened school, But grass grows there, and rust upon the hinge; And they are lonely that must keep the watch."
+    },
+    {
+      "id": "s5-260",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-261",
+      "sceneId": "s5",
+      "text": "And whither shall I go when I am dead?"
+    },
+    {
+      "id": "s5-262",
+      "sceneId": "s5",
+      "text": "Angel"
+    },
+    {
+      "id": "s5-263",
+      "sceneId": "s5",
+      "text": "You have denied there is a purgatory, Therefore that gate is closed; you have denied There is a heaven, and so that gate is closed."
+    },
+    {
+      "id": "s5-264",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-265",
+      "sceneId": "s5",
+      "text": "Where then? For I have said there is no hell."
+    },
+    {
+      "id": "s5-266",
+      "sceneId": "s5",
+      "text": "Angel"
+    },
+    {
+      "id": "s5-267",
+      "sceneId": "s5",
+      "text": "Hell is the place of those who have denied; They find there what they planted and what dug, A Lake of Spaces, and a Wood of Nothing, And wander there and drift, and never cease Wailing for substance."
+    },
+    {
+      "id": "s5-268",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-269",
+      "sceneId": "s5",
+      "text": "Pardon me, blessed Angel, I have denied and taught the like to others. But how could I believe before my sight Had come to me?"
+    },
+    {
+      "id": "s5-270",
+      "sceneId": "s5",
+      "text": "Angel"
+    },
+    {
+      "id": "s5-271",
+      "sceneId": "s5",
+      "text": "It is too late for pardon."
+    },
+    {
+      "id": "s5-272",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-273",
+      "sceneId": "s5",
+      "text": "Had I but met your gaze as now I met it-- But how can you that live but where we go In the uncertainty of dizzy dreams Know why we doubt? Parting, sickness and death, The rotting of the grass, tempest and drouth, These are the messengers that came to me. Why are you silent? You carry in your hands God's pardon, and you will not give it me. Why are you silent? Were I not afraid, I'd kiss your hands--no, no, the hem of your dress."
+    },
+    {
+      "id": "s5-274",
+      "sceneId": "s5",
+      "text": "Angel"
+    },
+    {
+      "id": "s5-275",
+      "sceneId": "s5",
+      "text": "Only when all the world has testified, May soul confound it, crying out in joy, And laughing on its lonely precipice. What's dearth and death and sickness to the soul That knows no virtue but itself? Nor could it, So trembling with delight and mother-naked, Live unabashed if the arguing world stood by."
+    },
+    {
+      "id": "s5-276",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-277",
+      "sceneId": "s5",
+      "text": "It is as hard for you to understand Why we have doubted, as it is for us To banish doubt--what folly have I said? There can be nothing that you do not know: Give me a year--a month--a week--a day, I would undo what I have done--an hour-- Give me until the sand has run in the glass."
+    },
+    {
+      "id": "s5-278",
+      "sceneId": "s5",
+      "text": "Angel"
+    },
+    {
+      "id": "s5-279",
+      "sceneId": "s5",
+      "text": "Though you may not undo what you have done, I have this power--if you but find one soul, Before the sands have fallen, that still believes, One fish to lie and spawn among the stones Till the great fisher's net is full again, You may, the purgatorial fire being passed, Spring to your peace."
+    },
+    {
+      "id": "s5-280",
+      "sceneId": "s5",
+      "text": "[*Pupils sing in the distance.*"
+    },
+    {
+      "id": "s5-281",
+      "sceneId": "s5",
+      "text": "'Who stole your wits away And where are they gone?'"
+    },
+    {
+      "id": "s5-282",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-283",
+      "sceneId": "s5",
+      "text": "My pupils come, Before you have begun to climb the sky I shall have found that soul. They say they doubt, But what their mothers dinned into their ears Cannot have been so lightly rooted up; Besides, I can disprove what I once proved-- And yet give me some thought, some argument, More mighty than my own."
+    },
+    {
+      "id": "s5-284",
+      "sceneId": "s5",
+      "text": "Angel"
+    },
+    {
+      "id": "s5-285",
+      "sceneId": "s5",
+      "text": "Farewell--farewell, For I am weary of the weight of time."
+    },
+    {
+      "id": "s5-286",
+      "sceneId": "s5",
+      "text": "[*Angel goes out. Wise Man makes a step to follow and pauses. Some of his pupils come in at the other side of the stage.*"
+    },
+    {
+      "id": "s5-287",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-288",
+      "sceneId": "s5",
+      "text": "Master, master, you must choose the subject."
+    },
+    {
+      "id": "s5-289",
+      "sceneId": "s5",
+      "text": "[*Enter other pupils with Fool, about whom they dance; all the pupils may have little cushions on which presently they seat themselves.*"
+    },
+    {
+      "id": "s5-290",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-291",
+      "sceneId": "s5",
+      "text": "Here is a subject--where have the Fool's wits gone? (*singing*) 'Who dragged your wits away Where no one knows? Or have they run off On their own pair of shoes?'"
+    },
+    {
+      "id": "s5-292",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-293",
+      "sceneId": "s5",
+      "text": "Give me a penny."
+    },
+    {
+      "id": "s5-294",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-295",
+      "sceneId": "s5",
+      "text": "The Master will find your wits,"
+    },
+    {
+      "id": "s5-296",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-297",
+      "sceneId": "s5",
+      "text": "And when they are found, you must not beg for pennies."
+    },
+    {
+      "id": "s5-298",
+      "sceneId": "s5",
+      "text": "Third Pupil"
+    },
+    {
+      "id": "s5-299",
+      "sceneId": "s5",
+      "text": "They are hidden somewhere in the badger's hole, But you must carry an old candle end If you would find them."
+    },
+    {
+      "id": "s5-300",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-301",
+      "sceneId": "s5",
+      "text": "They are up above the clouds."
+    },
+    {
+      "id": "s5-302",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-303",
+      "sceneId": "s5",
+      "text": "Give me a penny, give me a penny."
+    },
+    {
+      "id": "s5-304",
+      "sceneId": "s5",
+      "text": "First Pupil (*singing*)"
+    },
+    {
+      "id": "s5-305",
+      "sceneId": "s5",
+      "text": "'I'll find your wits again, Come, for I saw them roll, To where old badger mumbles In the black hole.'"
+    },
+    {
+      "id": "s5-306",
+      "sceneId": "s5",
+      "text": "Second Pupil (*singing*)"
+    },
+    {
+      "id": "s5-307",
+      "sceneId": "s5",
+      "text": "'No, but an angel stole them The night that you were born, And now they are but a rag, On the moon's horn.'"
+    },
+    {
+      "id": "s5-308",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-309",
+      "sceneId": "s5",
+      "text": "Be silent."
+    },
+    {
+      "id": "s5-310",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-311",
+      "sceneId": "s5",
+      "text": "Can you not see that he is troubled?"
+    },
+    {
+      "id": "s5-312",
+      "sceneId": "s5",
+      "text": "[*All the pupils are seated.*"
+    },
+    {
+      "id": "s5-313",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-314",
+      "sceneId": "s5",
+      "text": "What do you think of when alone at night? Do not the things your mothers spoke about, Before they took the candle from the bedside, Rush up into the mind and master it, Till you believe in them against your will?"
+    },
+    {
+      "id": "s5-315",
+      "sceneId": "s5",
+      "text": "Second Pupil (*to first pupil*)"
+    },
+    {
+      "id": "s5-316",
+      "sceneId": "s5",
+      "text": "You answer for us."
+    },
+    {
+      "id": "s5-317",
+      "sceneId": "s5",
+      "text": "Third Pupil (*in a whisper to first pupil*)"
+    },
+    {
+      "id": "s5-318",
+      "sceneId": "s5",
+      "text": "Be careful what you say; If he persuades you to an argument, He will but turn us all to mockery."
+    },
+    {
+      "id": "s5-319",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-320",
+      "sceneId": "s5",
+      "text": "We had no minds until you made them for us; Our bodies only were our mothers' work."
+    },
+    {
+      "id": "s5-321",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-322",
+      "sceneId": "s5",
+      "text": "You answer with incredible things. It is certain That there is one,--though it may be but one-- Believes in God and in some heaven and hell-- In all those things we put into our prayers."
+    },
+    {
+      "id": "s5-323",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-324",
+      "sceneId": "s5",
+      "text": "We thought those things before our minds were born, But that was long ago--we are not children."
+    },
+    {
+      "id": "s5-325",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-326",
+      "sceneId": "s5",
+      "text": "You are afraid to tell me what you think Because I am hot and angry when I am crossed. I do not blame you for it; but have no fear, For if there's one that sat on smiling there, As though my arguments were sweet as milk Yet found them bitter, I will thank him for it, If he but speak his mind."
+    },
+    {
+      "id": "s5-327",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-328",
+      "sceneId": "s5",
+      "text": "There is no one, Master, There is not one but found them sweet as milk."
+    },
+    {
+      "id": "s5-329",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-330",
+      "sceneId": "s5",
+      "text": "The things that have been told us in our childhood Are not so fragile."
+    },
+    {
+      "id": "s5-331",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-332",
+      "sceneId": "s5",
+      "text": "We are no longer children."
+    },
+    {
+      "id": "s5-333",
+      "sceneId": "s5",
+      "text": "Third Pupil"
+    },
+    {
+      "id": "s5-334",
+      "sceneId": "s5",
+      "text": "We all believe in you and in what you have taught."
+    },
+    {
+      "id": "s5-335",
+      "sceneId": "s5",
+      "text": "Other Pupils"
+    },
+    {
+      "id": "s5-336",
+      "sceneId": "s5",
+      "text": "All, all, all, all, in you, nothing but you."
+    },
+    {
+      "id": "s5-337",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-338",
+      "sceneId": "s5",
+      "text": "I have deceived you--where shall I go for words-- I have no thoughts--my mind has been swept bare. The messengers that stand in the fiery cloud, Fling themselves out, if we but dare to question, And after that, the Babylonian moon Blots all away."
+    },
+    {
+      "id": "s5-339",
+      "sceneId": "s5",
+      "text": "First Pupil (*to other pupils*)"
+    },
+    {
+      "id": "s5-340",
+      "sceneId": "s5",
+      "text": "I take his words to mean That visionaries, and martyrs when they are raised Above translunary things, and there enlightened, As the contention is, may lose the light, And flounder in their speech when the eyes open."
+    },
+    {
+      "id": "s5-341",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-342",
+      "sceneId": "s5",
+      "text": "How well he imitates their trick of speech."
+    },
+    {
+      "id": "s5-343",
+      "sceneId": "s5",
+      "text": "Third Pupil"
+    },
+    {
+      "id": "s5-344",
+      "sceneId": "s5",
+      "text": "Their air of mystery."
+    },
+    {
+      "id": "s5-345",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-346",
+      "sceneId": "s5",
+      "text": "Their empty gaze, As though they'd looked upon some winged thing, And would not condescend to mankind after."
+    },
+    {
+      "id": "s5-347",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-348",
+      "sceneId": "s5",
+      "text": "Master, we have all learnt that truth is learnt When the intellect's deliberate and cold, As it were a polished mirror that reflects An unchanged world; and not when the steel melts, Bubbling and hissing, till there's naught but fume."
+    },
+    {
+      "id": "s5-349",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-350",
+      "sceneId": "s5",
+      "text": "When it is melted, when it all fumes up, They walk, as when beside those three in the furnace The form of the fourth."
+    },
+    {
+      "id": "s5-351",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-352",
+      "sceneId": "s5",
+      "text": "Master, there's none among us That has not heard your mockery of these, Or thoughts like these, and we have not forgot."
+    },
+    {
+      "id": "s5-353",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-354",
+      "sceneId": "s5",
+      "text": "Something incredible has happened--some one has come Suddenly like a grey hawk out of the air, And all that I declared untrue is true."
+    },
+    {
+      "id": "s5-355",
+      "sceneId": "s5",
+      "text": "First Pupil (*to other pupils*)"
+    },
+    {
+      "id": "s5-356",
+      "sceneId": "s5",
+      "text": "You'd think the way he says it, that he felt it. There's not a mummer to compare with him. He's something like a man."
+    },
+    {
+      "id": "s5-357",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-358",
+      "sceneId": "s5",
+      "text": "Give us some proof."
+    },
+    {
+      "id": "s5-359",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-360",
+      "sceneId": "s5",
+      "text": "What proof have I to give, but that an angel An instant ago was standing on that spot."
+    },
+    {
+      "id": "s5-361",
+      "sceneId": "s5",
+      "text": "[*The pupils rise.*"
+    },
+    {
+      "id": "s5-362",
+      "sceneId": "s5",
+      "text": "Third Pupil"
+    },
+    {
+      "id": "s5-363",
+      "sceneId": "s5",
+      "text": "You dreamed it."
+    },
+    {
+      "id": "s5-364",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-365",
+      "sceneId": "s5",
+      "text": "I was awake as I am now."
+    },
+    {
+      "id": "s5-366",
+      "sceneId": "s5",
+      "text": "First Pupil (*to the others*)"
+    },
+    {
+      "id": "s5-367",
+      "sceneId": "s5",
+      "text": "I may be dreaming now for all I know. He wants to show we have no certain proof Of anything in the world."
+    },
+    {
+      "id": "s5-368",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-369",
+      "sceneId": "s5",
+      "text": "There is this proof That shows we are awake--we have all one world While every dreamer has a world of his own, And sees what no one else can."
+    },
+    {
+      "id": "s5-370",
+      "sceneId": "s5",
+      "text": "Third Pupil"
+    },
+    {
+      "id": "s5-371",
+      "sceneId": "s5",
+      "text": "Teigue sees angels. So when the Master says he has seen an angel, He may have seen one."
+    },
+    {
+      "id": "s5-372",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-373",
+      "sceneId": "s5",
+      "text": "Both may still be dreamers; Unless it's proved the angels were alike."
+    },
+    {
+      "id": "s5-374",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-375",
+      "sceneId": "s5",
+      "text": "What sort are the angels, Teigue?"
+    },
+    {
+      "id": "s5-376",
+      "sceneId": "s5",
+      "text": "Third Pupil"
+    },
+    {
+      "id": "s5-377",
+      "sceneId": "s5",
+      "text": "That will prove nothing, Unless we are sure prolonged obedience Has made one angel like another angel As they were eggs."
+    },
+    {
+      "id": "s5-378",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-379",
+      "sceneId": "s5",
+      "text": "The Master's silent now: For he has found that to dispute with us-- Seeing that he has taught us what we know-- Is but to reason with himself. Let us away, And find if there is one believer left."
+    },
+    {
+      "id": "s5-380",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-381",
+      "sceneId": "s5",
+      "text": "Yes, yes. Find me but one that still believes The things that we were told when we were children."
+    },
+    {
+      "id": "s5-382",
+      "sceneId": "s5",
+      "text": "Third Pupil"
+    },
+    {
+      "id": "s5-383",
+      "sceneId": "s5",
+      "text": "He'll mock and maul him."
+    },
+    {
+      "id": "s5-384",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-385",
+      "sceneId": "s5",
+      "text": "From the first I knew He wanted somebody to argue with."
+    },
+    {
+      "id": "s5-386",
+      "sceneId": "s5",
+      "text": "[*They go.*"
+    },
+    {
+      "id": "s5-387",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-388",
+      "sceneId": "s5",
+      "text": "I have no reason left. All dark, all dark!"
+    },
+    {
+      "id": "s5-389",
+      "sceneId": "s5",
+      "text": "[*Pupils return laughing. They push forward fourth pupil.*"
+    },
+    {
+      "id": "s5-390",
+      "sceneId": "s5",
+      "text": "First Pupil"
+    },
+    {
+      "id": "s5-391",
+      "sceneId": "s5",
+      "text": "Here, Master, is the very man you want. He said, when we were studying the book, That maybe after all the monks were right, And you mistaken, and if we but gave him time, He'd prove that it was so."
+    },
+    {
+      "id": "s5-392",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-393",
+      "sceneId": "s5",
+      "text": "I never said it."
+    },
+    {
+      "id": "s5-394",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-395",
+      "sceneId": "s5",
+      "text": "Dear friend, dear friend, do you believe in God?"
+    },
+    {
+      "id": "s5-396",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-397",
+      "sceneId": "s5",
+      "text": "Master, they have invented this to mock me."
+    },
+    {
+      "id": "s5-398",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-399",
+      "sceneId": "s5",
+      "text": "You are afraid of me."
+    },
+    {
+      "id": "s5-400",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-401",
+      "sceneId": "s5",
+      "text": "They know well, Master, That all I said was but to make them argue. They've pushed me in to make a mock of me, Because they knew I could take either side And beat them at it."
+    },
+    {
+      "id": "s5-402",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-403",
+      "sceneId": "s5",
+      "text": "If you believe in God, You are my soul's one friend."
+    },
+    {
+      "id": "s5-404",
+      "sceneId": "s5",
+      "text": "[*Pupils laugh.*"
+    },
+    {
+      "id": "s5-405",
+      "sceneId": "s5",
+      "text": "Mistress or wife Can give us but our good or evil luck Amid the howling world, but you shall give Eternity, and those sweet-throated things That drift above the moon."
+    },
+    {
+      "id": "s5-406",
+      "sceneId": "s5",
+      "text": "[*The pupils look at one another and are silent.*"
+    },
+    {
+      "id": "s5-407",
+      "sceneId": "s5",
+      "text": "Second Pupil"
+    },
+    {
+      "id": "s5-408",
+      "sceneId": "s5",
+      "text": "How strange he is."
+    },
+    {
+      "id": "s5-409",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-410",
+      "sceneId": "s5",
+      "text": "The angel that stood there upon that spot, Said that my soul was lost unless I found out One that believed."
+    },
+    {
+      "id": "s5-411",
+      "sceneId": "s5",
+      "text": "Fourth Pupil"
+    },
+    {
+      "id": "s5-412",
+      "sceneId": "s5",
+      "text": "Cease mocking at me, Master, For I am certain that there is no God Nor immortality, and they that said it Made a fantastic tale from a starved dream To plague our hearts. Will that content you, Master?"
+    },
+    {
+      "id": "s5-413",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-414",
+      "sceneId": "s5",
+      "text": "The giddy glass is emptier every moment, And you stand there, debating, laughing and wrangling. Out of my sight! Out of my sight, I say."
+    },
+    {
+      "id": "s5-415",
+      "sceneId": "s5",
+      "text": "[*He drives them out.*"
+    },
+    {
+      "id": "s5-416",
+      "sceneId": "s5",
+      "text": "I'll call my wife, for what can women do, That carry us in the darkness of their bodies, But mock the reason that lets nothing grow Unless it grow in light. Bridget, Bridget. A woman never ceases to believe, Say what we will. Bridget, come quickly, Bridget."
+    },
+    {
+      "id": "s5-417",
+      "sceneId": "s5",
+      "text": "[*Bridget comes in wearing her apron. Her sleeves turned up from her arms, which are covered with flour.*"
+    },
+    {
+      "id": "s5-418",
+      "sceneId": "s5",
+      "text": "Wife, what do you believe in? Tell me the truth, And not--as is the habit with you all-- Something you think will please me. Do you pray? Sometimes when you're alone in the house, do you pray?"
+    },
+    {
+      "id": "s5-419",
+      "sceneId": "s5",
+      "text": "Bridget"
+    },
+    {
+      "id": "s5-420",
+      "sceneId": "s5",
+      "text": "Prayers--no, you taught me to leave them off long ago. At first I was sorry, but I am glad now, for I am sleepy in the evenings."
+    },
+    {
+      "id": "s5-421",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-422",
+      "sceneId": "s5",
+      "text": "Do you believe in God?"
+    },
+    {
+      "id": "s5-423",
+      "sceneId": "s5",
+      "text": "Bridget"
+    },
+    {
+      "id": "s5-424",
+      "sceneId": "s5",
+      "text": "Oh, a good wife only believes in what her husband tells her."
+    },
+    {
+      "id": "s5-425",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-426",
+      "sceneId": "s5",
+      "text": "But sometimes, when the children are asleep And I am in the school, do you not think About the Martyrs and the saints and the angels, And all the things that you believed in once?"
+    },
+    {
+      "id": "s5-427",
+      "sceneId": "s5",
+      "text": "Bridget"
+    },
+    {
+      "id": "s5-428",
+      "sceneId": "s5",
+      "text": "I think about nothing--sometimes I wonder if the linen is bleaching white, or I go out to see if the crows are picking up the chickens' food."
+    },
+    {
+      "id": "s5-429",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-430",
+      "sceneId": "s5",
+      "text": "My God,--my God! I will go out myself. My pupils said that they would find a man Whose faith I never shook--they may have found him. Therefore I will go out--but if I go, The glass will let the sands run out unseen. I cannot go--I cannot leave the glass. Go call my pupils--I can explain all now, Only when all our hold on life is troubled, Only in spiritual terror can the Truth Come through the broken mind--as the pease burst Out of a broken pease-cod."
+    },
+    {
+      "id": "s5-431",
+      "sceneId": "s5",
+      "text": "[*He clutches Bridget as she is going.*"
+    },
+    {
+      "id": "s5-432",
+      "sceneId": "s5",
+      "text": "Say to them, That Nature would lack all in her most need, Could not the soul find truth as in a flash, Upon the battle-field, or in the midst Of overwhelming waves, and say to them-- But no, they would but answer as I bid."
+    },
+    {
+      "id": "s5-433",
+      "sceneId": "s5",
+      "text": "Bridget"
+    },
+    {
+      "id": "s5-434",
+      "sceneId": "s5",
+      "text": "You want somebody to get up an argument with."
+    },
+    {
+      "id": "s5-435",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-436",
+      "sceneId": "s5",
+      "text": "Look out and see if there is any one There in the street--I cannot leave the glass, For somebody might shake it, and the sand If it were shaken might run down on the instant."
+    },
+    {
+      "id": "s5-437",
+      "sceneId": "s5",
+      "text": "Bridget"
+    },
+    {
+      "id": "s5-438",
+      "sceneId": "s5",
+      "text": "I don't understand a word you are saying. There's a crowd of people talking to your pupils."
+    },
+    {
+      "id": "s5-439",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-440",
+      "sceneId": "s5",
+      "text": "Go out and find if they have found a man Who did not understand me when I taught, Or did not listen."
+    },
+    {
+      "id": "s5-441",
+      "sceneId": "s5",
+      "text": "Bridget"
+    },
+    {
+      "id": "s5-442",
+      "sceneId": "s5",
+      "text": "It is a hard thing to be married to a man of learning that must always be having arguments."
+    },
+    {
+      "id": "s5-443",
+      "sceneId": "s5",
+      "text": "[*She goes out.*"
+    },
+    {
+      "id": "s5-444",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-445",
+      "sceneId": "s5",
+      "text": "Strange that I should be blind to the great secret, And that so simple a man might write it out Upon a blade of grass or bit of rush With naught but berry juice, and laugh to himself Writing it out, because it was so simple."
+    },
+    {
+      "id": "s5-446",
+      "sceneId": "s5",
+      "text": "[*Enter Bridget followed by the Fool.*"
+    },
+    {
+      "id": "s5-447",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-448",
+      "sceneId": "s5",
+      "text": "Give me something; give me a penny to buy bacon in the shops and nuts in the market, and strong drink for the time when the sun is weak."
+    },
+    {
+      "id": "s5-449",
+      "sceneId": "s5",
+      "text": "Bridget"
+    },
+    {
+      "id": "s5-450",
+      "sceneId": "s5",
+      "text": "I have no pennies. (*To Wise Man*) Your pupils cannot find anybody to argue with you. There's nobody in the whole country with belief enough for a lover's oath. Can't you be quiet now, and not always wanting to have arguments? It must be terrible to have a mind like that."
+    },
+    {
+      "id": "s5-451",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-452",
+      "sceneId": "s5",
+      "text": "Then I am lost indeed."
+    },
+    {
+      "id": "s5-453",
+      "sceneId": "s5",
+      "text": "Bridget"
+    },
+    {
+      "id": "s5-454",
+      "sceneId": "s5",
+      "text": "Leave me alone now, I have to make the bread for you and the children."
+    },
+    {
+      "id": "s5-455",
+      "sceneId": "s5",
+      "text": "[*She goes into kitchen.*"
+    },
+    {
+      "id": "s5-456",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-457",
+      "sceneId": "s5",
+      "text": "Children, children!"
+    },
+    {
+      "id": "s5-458",
+      "sceneId": "s5",
+      "text": "Bridget"
+    },
+    {
+      "id": "s5-459",
+      "sceneId": "s5",
+      "text": "Your father wants you, run to him."
+    },
+    {
+      "id": "s5-460",
+      "sceneId": "s5",
+      "text": "[*Children run in.*"
+    },
+    {
+      "id": "s5-461",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-462",
+      "sceneId": "s5",
+      "text": "Come to me, children. Do not be afraid. I want to know if you believe in Heaven, God or the soul--no, do not tell me yet; You need not be afraid I shall be angry, Say what you please--so that it is your thought-- I wanted you to know before you spoke, That I shall not be angry."
+    },
+    {
+      "id": "s5-463",
+      "sceneId": "s5",
+      "text": "First Child"
+    },
+    {
+      "id": "s5-464",
+      "sceneId": "s5",
+      "text": "We have not forgotten, Father."
+    },
+    {
+      "id": "s5-465",
+      "sceneId": "s5",
+      "text": "Second Child"
+    },
+    {
+      "id": "s5-466",
+      "sceneId": "s5",
+      "text": "Oh no, Father."
+    },
+    {
+      "id": "s5-467",
+      "sceneId": "s5",
+      "text": "Both Children"
+    },
+    {
+      "id": "s5-468",
+      "sceneId": "s5",
+      "text": "(*As if repeating a lesson*) There is nothing we cannot see, nothing we cannot touch."
+    },
+    {
+      "id": "s5-469",
+      "sceneId": "s5",
+      "text": "First Child"
+    },
+    {
+      "id": "s5-470",
+      "sceneId": "s5",
+      "text": "Foolish people used to say that there was, but you have taught us better."
+    },
+    {
+      "id": "s5-471",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-472",
+      "sceneId": "s5",
+      "text": "Go to your mother, go--yet do not go. What can she say? If I am dumb you are lost; And yet, because the sands are running out, I have but a moment to show it all in. Children, The sap would die out of the blades of grass Had they a doubt. They understand it all, Being the fingers of God's certainty, Yet can but make their sign into the air; But could they find their tongues they'd show it all; But what am I to say that am but one, When they are millions and they will not speak--"
+    },
+    {
+      "id": "s5-473",
+      "sceneId": "s5",
+      "text": "[*Children have run out.*"
+    },
+    {
+      "id": "s5-474",
+      "sceneId": "s5",
+      "text": "But they are gone; what made them run away?"
+    },
+    {
+      "id": "s5-475",
+      "sceneId": "s5",
+      "text": "[*The Fool comes in with a dandelion.*"
+    },
+    {
+      "id": "s5-476",
+      "sceneId": "s5",
+      "text": "Look at me, tell me if my face is changed, Is there a notch of the fiend's nail upon it Already? Is it terrible to sight? Because the moment's near."
+    },
+    {
+      "id": "s5-477",
+      "sceneId": "s5",
+      "text": "[*Going to glass.*"
+    },
+    {
+      "id": "s5-478",
+      "sceneId": "s5",
+      "text": "I dare not look, I dare not know the moment when they come. No, no, I dare not. (*Covers glass.*) Will there be a footfall, Or will there be a sort of rending sound, Or else a cracking, as though an iron claw Had gripped the threshold stone?"
+    },
+    {
+      "id": "s5-479",
+      "sceneId": "s5",
+      "text": "[*Fool has begun to blow the dandelion.*"
+    },
+    {
+      "id": "s5-480",
+      "sceneId": "s5",
+      "text": "What are you doing?"
+    },
+    {
+      "id": "s5-481",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-482",
+      "sceneId": "s5",
+      "text": "Wait a minute--four--five--six--"
+    },
+    {
+      "id": "s5-483",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-484",
+      "sceneId": "s5",
+      "text": "What are you doing that for?"
+    },
+    {
+      "id": "s5-485",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-486",
+      "sceneId": "s5",
+      "text": "I am blowing the dandelion to find out what hour it is."
+    },
+    {
+      "id": "s5-487",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-488",
+      "sceneId": "s5",
+      "text": "You have heard everything, and that is why You'd find what hour it is--you'd find that out, That you may look upon a fleet of devils Dragging my soul away. You shall not stop, I will have no one here when they come in, I will have no one sitting there--no one-- And yet--and yet--there is something strange about you. I half remember something. What is it? Do you believe in God and in the soul?"
+    },
+    {
+      "id": "s5-489",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-490",
+      "sceneId": "s5",
+      "text": "So you ask me now. I thought when you were asking your pupils, 'Will he ask Teigue the Fool? Yes, he will, he will; no, he will not--yes, he will.' But Teigue will say nothing. Teigue will say nothing."
+    },
+    {
+      "id": "s5-491",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-492",
+      "sceneId": "s5",
+      "text": "Tell me quickly."
+    },
+    {
+      "id": "s5-493",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-494",
+      "sceneId": "s5",
+      "text": "I said, 'Teigue knows everything, not even the green-eyed cats and the hares that milk the cows have Teigue's wisdom'; but Teigue will not speak, he says nothing."
+    },
+    {
+      "id": "s5-495",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-496",
+      "sceneId": "s5",
+      "text": "Speak, speak, for underneath the cover there The sand is running from the upper glass, And when the last grain's through, I shall be lost."
+    },
+    {
+      "id": "s5-497",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-498",
+      "sceneId": "s5",
+      "text": "I will not speak. I will not tell you what is in my mind. I will not tell you what is in my bag. You might steal away my thoughts. I met a bodach on the road yesterday, and he said, 'Teigue, tell me how many pennies are in your bag; I will wager three pennies that there are not twenty pennies in your bag; let me put in my hand and count them.' But I gripped the bag the tighter, and when I go to sleep at night I hide the bag where nobody knows."
+    },
+    {
+      "id": "s5-499",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-500",
+      "sceneId": "s5",
+      "text": "There's but one pinch of sand, and I am lost If you are not he I seek."
+    },
+    {
+      "id": "s5-501",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-502",
+      "sceneId": "s5",
+      "text": "O, what a lot the Fool knows, but he says nothing."
+    },
+    {
+      "id": "s5-503",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-504",
+      "sceneId": "s5",
+      "text": "Yes, I remember now. You spoke of angels. You said but now that you had seen an angel. You are the one I seek, and I am saved."
+    },
+    {
+      "id": "s5-505",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-506",
+      "sceneId": "s5",
+      "text": "Oh no. How could poor Teigue see angels? Oh, Teigue tells one tale here, another there, and everybody gives him pennies. If Teigue had not his tales he would starve."
+    },
+    {
+      "id": "s5-507",
+      "sceneId": "s5",
+      "text": "[*He breaks away and goes out.*"
+    },
+    {
+      "id": "s5-508",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-509",
+      "sceneId": "s5",
+      "text": "The last hope is gone, And now that it's too late I see it all, We perish into God and sink away Into reality--the rest's a dream."
+    },
+    {
+      "id": "s5-510",
+      "sceneId": "s5",
+      "text": "[*The Fool comes back.*"
+    },
+    {
+      "id": "s5-511",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-512",
+      "sceneId": "s5",
+      "text": "There was one there--there by the threshold stone, waiting there; and he said, 'Go in, Teigue, and tell him everything that he asks you. He will give you a penny if you tell him.'"
+    },
+    {
+      "id": "s5-513",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-514",
+      "sceneId": "s5",
+      "text": "I know enough, that know God's will prevails."
+    },
+    {
+      "id": "s5-515",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-516",
+      "sceneId": "s5",
+      "text": "Waiting till the moment had come--That is what the one out there was saying, but I might tell you what you asked. That is what he was saying."
+    },
+    {
+      "id": "s5-517",
+      "sceneId": "s5",
+      "text": "Wise MAN"
+    },
+    {
+      "id": "s5-518",
+      "sceneId": "s5",
+      "text": "Be silent. May God's will prevail on the instant, Although His will be my eternal pain. I have no question: It is enough, I know what fixed the station Of star and cloud. And knowing all, I cry That what so God has willed On the instant be fulfilled, Though that be my damnation. The stream of the world has changed its course, And with the stream my thoughts have run Into some cloudy thunderous spring That is its mountain source-- Aye, to some frenzy of the mind, For all that we have done's undone, Our speculation but as the wind."
+    },
+    {
+      "id": "s5-519",
+      "sceneId": "s5",
+      "text": "[*He dies.*"
+    },
+    {
+      "id": "s5-520",
+      "sceneId": "s5",
+      "text": "Fool"
+    },
+    {
+      "id": "s5-521",
+      "sceneId": "s5",
+      "text": "Wise man--Wise man, wake up and I will tell you everything for a penny. It is I, poor Teigue the Fool. Why don't you wake up, and say, 'There is a penny for you, Teigue'? No, no, you will say nothing. You and I, we are the two fools, we know everything, but we will not speak."
+    },
+    {
+      "id": "s5-522",
+      "sceneId": "s5",
+      "text": "[*Angel enters holding a casket.*"
+    },
+    {
+      "id": "s5-523",
+      "sceneId": "s5",
+      "text": "O, look what has come from his mouth! O, look what has come from his mouth--the white butterfly! He is dead, and I have taken his soul in my hands; but I know why you open the lid of that golden box. I must give it to you. There then, (*he puts butterfly in casket*) he has gone through his pains, and you will open the lid in the Garden of Paradise. (*He closes curtain and remains outside it.*) He is gone, he is gone, he is gone, but come in, everybody in the world, and look at me."
+    },
+    {
+      "id": "s5-524",
+      "sceneId": "s5",
+      "text": "'I hear the wind a blow I hear the grass a grow, And all that I know, I know.' But I will not speak, I will run away."
+    },
+    {
+      "id": "s5-525",
+      "sceneId": "s5",
+      "text": "[*He goes out.*"
+    },
+    {
+      "id": "s5-526",
+      "sceneId": "s5",
+      "text": "Notes"
+    },
+    {
+      "id": "s5-527",
+      "sceneId": "s5",
+      "text": "Prefatory Poem"
+    },
+    {
+      "id": "s5-528",
+      "sceneId": "s5",
+      "text": "'Free of the ten and four' is an error I cannot now correct, without more rewriting than I have a mind for. Some merchant in Villon, I forget the reference, was 'free of the ten and four.' Irish merchants exempted from certain duties by the Irish Parliament were, unless memory deceives me again for I am writing away from books, 'free of the eight and six.'"
+    },
+    {
+      "id": "s5-529",
+      "sceneId": "s5",
+      "text": "Poems Beginning with That 'To a Wealthy Man' and Ending with That 'To a Shade'"
+    },
+    {
+      "id": "s5-530",
+      "sceneId": "s5",
+      "text": "During the thirty years or so during which I have been reading Irish newspapers, three public controversies have stirred my imagination. The first was the Parnell controversy. There were reasons to justify a man's joining either party, but there were none to justify, on one side or on the other, lying accusations forgetful of past service, a frenzy of detraction. And another was the dispute over 'The Playboy.' There were reasons for opposing as for supporting that violent, laughing thing, but none for the lies, for the unscrupulous rhetoric spread against it in Ireland, and from Ireland to America. The third prepared for the Corporation's refusal of a building for Sir Hugh Lane's famous collection of pictures."
+    },
+    {
+      "id": "s5-531",
+      "sceneId": "s5",
+      "text": "One could respect the argument that Dublin, with much poverty and many slums, could not afford the L22,000 the building was to cost the city, but not the minds that used it. One frenzied man compared the pictures to Troy horse which 'destroyed a city,' and innumerable correspondents described Sir Hugh Lane and those who had subscribed many thousands to give Dublin paintings by Corot, Manet, Monet, Degas, and Renoir, as 'self-seekers,' 'self-advertisers,' 'picture-dealers,' 'log-rolling cranks and faddists,' and one clerical paper told 'picture-dealer Lane' to take himself and his pictures out of that. A member of the Corporation said there were Irish artists who could paint as good if they had a mind to, and another described a half-hour in the temporary gallery in Harcourt Street as the most dismal of his life. Some one else asked instead of these eccentric pictures to be given pictures 'like those beautiful productions displayed in the windows of our city picture shops.' Another thought that we would all be more patriotic if we devoted our energy to fighting the Insurance Act. Another would not hang them in his kitchen, while yet another described the vogue of French impressionist painting as having gone to such a length among 'log-rolling enthusiasts' that they even admired 'works that were rejected from the Salon forty years ago by the finest critics in the world.'"
+    },
+    {
+      "id": "s5-532",
+      "sceneId": "s5",
+      "text": "The first serious opposition began in the *Irish Catholic*, the chief Dublin clerical paper, and Mr. William Murphy, the organiser of the recent lock-out and Mr. Healy's financial supporter in his attack upon Parnell, a man of great influence, brought to its support a few days later his newspapers *The Evening Herald* and *The Irish Independent*, the most popular of Irish daily papers. He replied to my poem 'To a Wealthy Man' (I was thinking of a very different wealthy man) from what he described as 'Paudeen's point of view,' and 'Paudeen's point of view' it was. The enthusiasm for 'Sir Hugh Lane's Corots'--one paper spelled the name repeatedly 'Crot'--being but 'an exotic fashion,' waited 'some satirist like Gilbert' who 'killed the aesthetic craze,' and as for the rest 'there were no greater humbugs in the world than art critics and so-called experts.' As the first avowed reason for opposition, the necessities of the poor got but a few lines, not so many certainly as the objection of various persons to supply Sir Hugh Lane with 'a monument at the city's expense,' and as the gallery was supported by Mr. James Larkin, the chief Labour leader, and important slum workers, I assume that the purpose of the opposition was not exclusively charitable."
+    },
+    {
+      "id": "s5-533",
+      "sceneId": "s5",
+      "text": "These controversies, political, literary, and artistic, have showed that neither religion nor politics can of itself create minds with enough receptivity to become wise, or just and generous enough to make a nation. Other cities have been as stupid--Samuel Butler laughs at shocked Montreal for hiding the Discobolus in a cellar--but Dublin is the capital of a nation, and an ancient race has nowhere else to look for an education. Goethe in *Wilhelm Meister* describes a saintly and naturally gracious woman, who getting into a quarrel over some trumpery detail of religious observance, grows--she and all her little religious community--angry and vindictive. In Ireland I am constantly reminded of that fable of the futility of all discipline that is not of the whole being. Religious Ireland--and the pious Protestants of my childhood were signal examples--thinks of divine things as a round of duties separated from life and not as an element that may be discovered in all circumstance and emotion, while political Ireland sees the good citizen but as a man who holds to certain opinions and not as a man of good will. Against all this we have but a few educated men and the remnants of an old traditional culture among the poor. Both were stronger forty years ago, before the rise of our new middle class which showed as its first public event, during the nine years of the Parnellite split, how base at moments of excitement are minds without culture. 1914."
+    },
+    {
+      "id": "s5-534",
+      "sceneId": "s5",
+      "text": "'Romantic Ireland's dead and gone' sounds old-fashioned now. It seemed true in 1913, but I did not foresee 1916. The late Dublin Rebellion, whatever one can say of its wisdom, will long be remembered for its heroism. 'They weighed so lightly what they gave,' and gave too in some cases without hope of success. July 1916."
+    },
+    {
+      "id": "s5-535",
+      "sceneId": "s5",
+      "text": "THE Dolls"
+    },
+    {
+      "id": "s5-536",
+      "sceneId": "s5",
+      "text": "The fable for this poem came into my head while I was giving some lectures in Dublin. I had noticed once again how all thought among us is frozen into 'something other than human life.' After I had made the poem, I looked up one day into the blue of the sky, and suddenly imagined, as if lost in the blue of the sky, stiff figures in procession. I remembered that they were the habitual image suggested by blue sky, and looking for a second fable called them 'The Magi', complimentary forms to those enraged dolls."
+    },
+    {
+      "id": "s5-537",
+      "sceneId": "s5",
+      "text": "THE Hour-Glass"
+    },
+    {
+      "id": "s5-538",
+      "sceneId": "s5",
+      "text": "A friend suggested to me the subject of this play, an Irish folk-tale from Lady Wilde's *Ancient Legends*. I have for years struggled with something which is charming in the naive legend but a platitude on the stage. I did not discover till a year ago that if the wise man humbled himself to the fool and received salvation as his reward, so much more powerful are pictures than words, no explanatory dialogue could set the matter right. I was faintly pleased when I converted a music-hall singer and kept him going to Mass for six weeks, so little responsibility does one feel for those to whom one has never been introduced; but I was always ashamed when I saw any friend of my own in the theatre. Now I have made my philosopher accept God's will, whatever it is, and find his courage again, and helped by the elaboration of verse, have so changed the fable that it is not false to my own thoughts of the world."
+    },
+    {
+      "id": "s5-539",
+      "sceneId": "s5",
+      "text": "Printed in the United States of America."
+    },
+    {
+      "id": "s5-540",
+      "sceneId": "s5",
+      "text": "The following pages contain advertisements of books by the same author or on kindred subjects."
+    },
+    {
+      "id": "s5-541",
+      "sceneId": "s5",
+      "text": "By William Butler Yeats"
+    },
+    {
+      "id": "s5-542",
+      "sceneId": "s5",
+      "text": "Reveries Over Childhood and Youth *$2.00*"
+    },
+    {
+      "id": "s5-543",
+      "sceneId": "s5",
+      "text": "In this book the celebrated Irish author gives us his reminiscences of his childhood and youth. The memories are written, as is to be expected, in charming prose. They have the appeal invariably attached to the account of a sensitive childhood."
+    },
+    {
+      "id": "s5-544",
+      "sceneId": "s5",
+      "text": "The Hour Glass and Other Plays *$1.25*"
+    },
+    {
+      "id": "s5-545",
+      "sceneId": "s5",
+      "text": "\"The Hour Glass\" is one of Mr. Yeats' noble and effective plays, and with the other plays in the volume, make a small, but none the less representative collection."
+    },
+    {
+      "id": "s5-546",
+      "sceneId": "s5",
+      "text": "Stories of Red Hanrahan *$1.25*"
+    },
+    {
+      "id": "s5-547",
+      "sceneId": "s5",
+      "text": "These tales belong to the realm of pure lyrical expression. They are mysterious and shadowy, full of infinite subtleties and old wisdom of folklore, and sad with the gray wistful Celtic sadness."
+    },
+    {
+      "id": "s5-548",
+      "sceneId": "s5",
+      "text": "\"Lovers of Mr. Yeats's suggestive and delicate writing will find him at his best in this volume.\"--*Springfield Republican.*"
+    },
+    {
+      "id": "s5-549",
+      "sceneId": "s5",
+      "text": "Ideas of Good and Evil *$1.50*"
+    },
+    {
+      "id": "s5-550",
+      "sceneId": "s5",
+      "text": "Essays on art and life, wherein are set forth much of Yeats' philosophy, his love of beauty, his hope for Ireland and for Irish artistic achievement."
+    },
+    {
+      "id": "s5-551",
+      "sceneId": "s5",
+      "text": "The Celtic Twilight *$1.50*"
+    },
+    {
+      "id": "s5-552",
+      "sceneId": "s5",
+      "text": "A collection of tales from Irish life and of Irish fancy, retold from peasants' stories with no additions except an occasional comment."
+    },
+    {
+      "id": "s5-553",
+      "sceneId": "s5",
+      "text": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York"
+    },
+    {
+      "id": "s5-554",
+      "sceneId": "s5",
+      "text": "The Cutting of an Agate"
+    },
+    {
+      "id": "s5-555",
+      "sceneId": "s5",
+      "text": "*12mo, $1.50*"
+    },
+    {
+      "id": "s5-556",
+      "sceneId": "s5",
+      "text": "\"Mr. Yeats is probably the most important as well as the most widely known of the men concerned directly in the so-called Celtic renaissance. More than this, he stands among the few men to be reckoned with in modern poetry.\"--*New York Herald.*"
+    },
+    {
+      "id": "s5-557",
+      "sceneId": "s5",
+      "text": "The Green Helmet and Other Poems"
+    },
+    {
+      "id": "s5-558",
+      "sceneId": "s5",
+      "text": "*Decorated cloth, 12mo, $1.25*"
+    },
+    {
+      "id": "s5-559",
+      "sceneId": "s5",
+      "text": "The initial piece in this volume is a deliciously conceived heroic farce, quaint in humor and sprightly in action. It tells of the difficulty in which two simple Irish folk find themselves when they enter into an agreement with an apparition of the sea, who demands that they knock off his head and who maintains that after they have done that he will knock off theirs. There is a real meaning in the play which it will not take the thoughtful reader long to discover. Besides this there are a number of shorter poems, notably one in which Mr. Yeats answers the critics of \"The Playboy of the Western World.\""
+    },
+    {
+      "id": "s5-560",
+      "sceneId": "s5",
+      "text": "Lyrical and Dramatic Poems"
+    },
+    {
+      "id": "s5-561",
+      "sceneId": "s5",
+      "text": "In Two Volumes"
+    },
+    {
+      "id": "s5-562",
+      "sceneId": "s5",
+      "text": "*Vol. I. Lyrical Poems, $1.75 Leather, $2.25*"
+    },
+    {
+      "id": "s5-563",
+      "sceneId": "s5",
+      "text": "*Vol. II. Plays (Revised), $2.00 Leather, $2.25*"
+    },
+    {
+      "id": "s5-564",
+      "sceneId": "s5",
+      "text": "The two-volume edition of the Irish poet's works included everything he has done in verse up to the present time. The first volume contains his lyrics; the second includes all of his five dramas in verse: \"The Countess Cathleen,\" \"The Land of Heart's Desire,\" \"The King's Threshold,\" \"On Baile's Strand,\" and \"The Shadowy Waters.\""
+    },
+    {
+      "id": "s5-565",
+      "sceneId": "s5",
+      "text": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York"
+    },
+    {
+      "id": "s5-566",
+      "sceneId": "s5",
+      "text": "The Quest"
+    },
+    {
+      "id": "s5-567",
+      "sceneId": "s5",
+      "text": "By John G. Neihardt"
+    },
+    {
+      "id": "s5-568",
+      "sceneId": "s5",
+      "text": "Author of \"The Song of Hugh Glass\""
+    },
+    {
+      "id": "s5-569",
+      "sceneId": "s5",
+      "text": "Here are brought together the more important of Mr. Neihardt's poems. For some years there have been those--and prominent critics, too--who have quite emphatically maintained that there is no greater American poet than Mr. Neihardt, that in him are found those essentials which make for true art--a feeling for words, a lyric power of the first quality, an understanding of rhythm. Here, for example, is the comment of the *Boston Transcript* on the book just preceding this, *The Song of Hugh Glass:* \"In this poem Mr. Neihardt touches life, power, beauty, spirit; the tremendous and impressive forces of nature.... The genius of American poetry is finding itself in such a poem as this.... The poem is powerfully poetic.... It is a big, sweeping thing blazing a pathway across the frontiers of our national life.\""
+    },
+    {
+      "id": "s5-570",
+      "sceneId": "s5",
+      "text": "Californians"
+    },
+    {
+      "id": "s5-571",
+      "sceneId": "s5",
+      "text": "By Robinson Jeffers"
+    },
+    {
+      "id": "s5-572",
+      "sceneId": "s5",
+      "text": "California is now to have its part in the poetry revival. Robinson Jeffers is a new poet, a man whose name is as yet unknown but whose work is of such outstanding character that once it is read he is sure of acceptance by those who have admired the writings of such men as John G. Neihardt, Edgar Lee Masters, Edwin Arlington Robinson and Thomas Walsh. Virtually all of the poems in this first collection have their setting in California, most of them in the Monterey peninsula, and they realize the scenery of the great State with vividness and richness of detail. The author's main source of inspiration has been the varying aspects of nature."
+    },
+    {
+      "id": "s5-573",
+      "sceneId": "s5",
+      "text": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York"
+    },
+    {
+      "id": "s5-574",
+      "sceneId": "s5",
+      "text": "Poems of the Great War"
+    },
+    {
+      "id": "s5-575",
+      "sceneId": "s5",
+      "text": "By J. W. Cunliffe"
+    },
+    {
+      "id": "s5-576",
+      "sceneId": "s5",
+      "text": "Here are brought together under the editorship of Dr. Cunliffe some of the more notable poems which have dealt with the great war. Among the writers represented are Rupert Brooke, John Masefield, Lincoln Colcord, William Benet, Wilfrid Wilson Gibson, Hermann Hagedorn, Alfred Noyes, Rabindranath Tagore, Walter De La Mare, Vachel Lindsay and Owen Seaman."
+    },
+    {
+      "id": "s5-577",
+      "sceneId": "s5",
+      "text": "The New Poetry: An Anthology"
+    },
+    {
+      "id": "s5-578",
+      "sceneId": "s5",
+      "text": "Edited by Harriet Monroe and Alice Corbin Henderson, Editors of *Poetry*"
+    },
+    {
+      "id": "s5-579",
+      "sceneId": "s5",
+      "text": "Probably few people are following as closely the poetry of to-day as are the editors of the *Poetry Magazine* of Chicago. They are eminently fitted, therefore, to prepare such a volume as this, which is intended to represent the work that is being done by the leading poets of the land. Here, between the covers of one book, are brought together poems by a great many different writers, all of whom may be said to be responsible in a measure for the revival of interest in poetry in this country."
+    },
+    {
+      "id": "s5-580",
+      "sceneId": "s5",
+      "text": "The Story of Eleusis"
+    },
+    {
+      "id": "s5-581",
+      "sceneId": "s5",
+      "text": "By Louis V. Ledoux"
+    },
+    {
+      "id": "s5-582",
+      "sceneId": "s5",
+      "text": "This is a lyrical drama, in the Greek manner, dealing with the story of Persephone. Mr. Ledoux has constructed such a play as might well have held the attention of the assembled mystae at Eleusis. It is Greek. Better than this, it is also human. Its beauty and its truthfulness to life will appeal alike to the lover of classical and the lover of modern dramatic poetry."
+    },
+    {
+      "id": "s5-583",
+      "sceneId": "s5",
+      "text": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York"
+    }
+  ]
+}
