@@ -11,8 +11,8 @@
  */
 export const EN_OFF_READABLE_IDS = new Set<string>([
   // PULL_EN
+  // siddhartha left this set in BATCH-13: PG 2500 is the verified 1922 English.
   "metamorphosis",
-  "siddhartha",
   "mama-blanca",
   "skylark",
   "nirmala",

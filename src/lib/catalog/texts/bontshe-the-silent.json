@@ -1,0 +1,516 @@
+{
+  "id": "bontshe-the-silent",
+  "title": "Bontshe the Silent",
+  "author": "I. L. Peretz (tr. Helena Frank)",
+  "year": "1894",
+  "note": "Project Gutenberg 37242",
+  "minutes": 31,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Bontzye Shweig",
+      "place": "Bontzye Shweig",
+      "reentry": "Down here, in *this* world, Bontzye Shweig's death made no impression at all. Ask anyone you like who Bontzye was, *how* he lived, and what he died of; whether of heart failure, or whether his strength gave out, or whether his back broke un",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Down here, in *this* world, Bontzye Shweig's death made no impression at all. Ask anyone you like who Bontzye was, *how* he lived, and what he died of; whether of heart failure, or whether his strength gave out, or whether his back broke under a heavy load, and they won't know. Perhaps, after all, he died of hunger."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "If a tram-car horse had fallen dead, there would have been more excitement. It would have been mentioned in the papers, and hundreds of people would have crowded round to look at the dead animal--even the spot where the accident took place."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "But the tramway horse would receive less attention if there were as many horses as men--a thousand million."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Bontzye lived quietly and died quietly. He passed through *our* world like a shadow."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "No wine was drunk at Bontzye's circumcision, no healths were proposed, and he made no beautiful speech when he was confirmed. He lived like a little dun-colored grain of sand on the sea-shore, among millions of his kind; and when the wind lifted him and blew him over to the other side of the sea, nobody noticed it."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "When he was alive, the mud in the street preserved no impression of his feet; after his death, the wind overturned the little board on his grave. The grave-digger's wife found it a long way off from the spot, and boiled a potful of potatoes over it. Three days after that, the grave-digger had forgotten where he had laid him."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "If Bontzye had been given a tombstone, then, in a hundred years or so, an antiquarian might have found it, and the name \"Bontzye Shweig\" would have echoed once again in *our* air."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "A shadow! His likeness remained photographed in nobody's brain, in nobody's heart; not a trace of him remained."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"No kith, no kin!\" He lived and died alone!"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Had it not been for the human commotion, some one might have heard Bontzye's spine snap under its load; had the world been less busy, some one might have remarked that Bontzye (also a human being) went about with two extinguished eyes and fearfully hollow cheeks; that even when he had no load on his shoulders, his head drooped earthward as though, while yet alive, he were looking for his grave. Were there as few men as tramway horses, some one might perhaps have asked: What has happened to Bontzye?"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "When they carried Bontzye into the hospital, his corner in the underground lodging was soon filled--there were ten of his like waiting for it, and they put it up to auction among themselves. When they carried him from the hospital bed to the dead-house, there were twenty poor sick persons waiting for the bed. When he had been taken out of the dead-house, they brought in twenty bodies from under a building that had fallen in. Who knows how long he will rest in his grave? Who knows how many are waiting for the little plot of ground?"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "A quiet birth, a quiet life, a quiet death, and a quieter burial."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "But it was not so in the *other* world. *There* Bontzye's death made a great impression."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "The blast of the great Messianic Shofar sounded through all the seven heavens: Bontzye Shweig has left the earth! The largest angels with the broadest wings flew about and told one another: Bontzye Shweig is to take his seat in the Heavenly Academy! In Paradise there was a noise and a joyful tumult: Bontzye Shweig! Just fancy! Bontzye Shweig!"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Little child-angels with sparkling eyes, gold thread-work wings, and silver slippers, ran delightedly to meet him. The rustle of the wings, the tap-tap of the little slippers, and the merry laughter of the fresh, rosy mouths, filled all the heavens and reached to the Throne of Glory, and God Himself knew that Bontzye Shweig was coming."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Abraham, our father, stood in the gate, his right hand stretched out with a hearty greeting, and a sweet smile lit up his old face."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "What are they wheeling through heaven?"
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "Two angels are pushing a golden arm-chair into Paradise for Bontzye Shweig."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "What flashed so brightly?"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "They were carrying past a gold crown set with precious stones--all for Bontzye Shweig."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"Before the decision of the Heavenly Court has been given?\" ask the saints, not quite without jealousy."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "\"O,\" reply the angels, \"that will be a mere formality. Even the prosecutor won't say a word against Bontzye Shweig. The case will not last five minutes.\""
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Just consider: Bontzye Shweig!"
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "When the little angels had met Bontzye in mid-air and played him a tune; when Abraham, our father, had shaken him by the hand like an old comrade; when he heard that a chair stood waiting for him in Paradise, that a crown lay ready for his head; and that not a word would be lost over his case before the Heavenly Court--Bontzye, just as in the other world, was too frightened to speak. His heart sank with terror. He is sure it is all a dream, or else simply a mistake."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "He is used to both. He often dreamt, in the other world, that he was picking up money off the floor--there were whole heaps of it--and then he woke to find himself as poor as ever; and more than once people had smiled at him and given him a friendly word and then turned away and spit out."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "\"It is my luck,\" he used to think. And now he dared not raise his eyes, lest the dream should vanish, lest he should wake up in some cave full of snakes and lizards. He was afraid to speak, afraid to move, lest he should be recognized and flung into the pit."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "He trembles and does not hear the angels' compliments, does not see how they dance round him, makes no answer to the greeting of Abraham, our father, and--when he is led into the presence of the Heavenly Court, he does not even wish it \"good morning!\""
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "He is beside himself with terror, and his fright increases when he happens to notice the floor of the Heavenly Courthouse; it is all alabaster set with diamonds. \"And my feet standing on it!\" He is paralyzed. \"Who knows what rich man, what rabbi, what saint they take me for--he will come--and that will be the end of me!\""
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "His terror is such, he never even hears the president call out: \"The case of Bontzye Shweig!\" adding, as he hands the deeds to the advocate, \"Read, but make haste!\""
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "The whole hall goes round and round in Bontzye's eyes, there is a rushing in his ears. And through the rushing he hears more and more clearly the voice of the advocate, speaking sweetly as a violin."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "\"His name,\" he hears, \"fitted him like the dress made for a slender figure by the hand of an artist-tailor.\""
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "\"What is he talking about?\" wondered Bontzye, and he heard an impatient voice break in with:"
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "\"No similes, please!\""
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "\"He never,\" continued the advocate, \"was heard to complain of either God or man; there was never a flash of hatred in his eye; he never lifted it with a claim on heaven.\""
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "Still Bontzye does not understand, and once again the hard voice interrupts: \"No rhetoric, please!\""
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "\"Job gave way--this one was more unfortunate--\""
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "\"Facts, dry facts!\""
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "\"When he was a week old, he was circumcised....\""
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "\"We want no realism!\""
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "\"The Mohel who circumcised him did not know his work--\""
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "\"Come, come!\""
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "\"And he kept silent,\" the advocate went on, \"even when his mother died, and he was given a step-mother at thirteen years old--a serpent, a vixen.\""
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "\"Can they mean me after all?\" thought Bontzye."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "\"No insinuations against a third party!\" said the president, angrily."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "\"She grudged him every mouthful--stale, mouldy bread, tendons instead of meat--and *she* drank coffee with cream.\""
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "\"Keep to the subject,\" ordered the president."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "\"She grudged him everything but her finger nails, and his black-and-blue body showed through the holes in his torn and fusty clothes. Winter time, in the hardest frost, he had to chop wood for her, barefoot, in the yard, and his hands were too young and too weak, the logs too thick, the hatchet too blunt. More than once he nearly dislocated his wrist; more than once his feet were nearly frost-bitten, but he kept silent, even to his father.\""
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "\"To that drunkard?\" laughs the accuser, and Bontzye feels cold in every limb."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "\"He never even complained to his father,\" finished up the advocate."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "\"And always alone,\" he continued, \"no playmates, no school, nor teaching of any kind--never a whole garment--never a free moment.\""
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "\"Facts, please!\" reminded the president."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "\"He kept silent even later, when his father seized him by the hair in a fit of drunkenness, and flung him out into the street on a snowy winter's night. He quietly picked himself up out of the snow and ran whither his feet carried him."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "\"He kept silent all the way--however hungry he might be, he only begged with his eyes."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "\"It was a wild, wet night in spring time, when he reached the great town; he fell like a drop into the ocean, and yet he passed that same night under arrest. He kept silent and never asked why, for what. He was let out, and looked about for the hardest work. And he kept silent. Harder than the work itself was the finding of it--and he kept silent."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "\"Bathed in a cold sweat, crushed together under heavy loads, his empty stomach convulsed with hunger--he kept silent."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "\"Bespattered with mud, spat at, driven with his load off the pavement and into the street among the cabs, carts, and tramways, looking death in the eyes every moment--he kept silent."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "\"He never calculated how many pounds' burden go to a groschen, how many times he fell on an errand worth a dreier; how many times he nearly panted out his soul going after his pay; he never calculated the difference between other people's lot and his--he kept silent."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "\"And he never insisted loudly on his pay; he stood in the door-way like a beggar, with a dog-like pleading in his eyes--Come again later! and he went like a shadow to come again later, and beg for his wage more humbly than before."
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "\"He kept silent even when they cheated him of part, or threw in a false coin."
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "\"He took everything in silence.\""
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "\"They mean me after all,\" thought Bontzye."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "\"Once,\" continued the advocate, after a sip of water, \"a change came into his life: there came flying along a carriage on rubber tires drawn by two runaway horses. The driver already lay some distance off on the pavement with a cracked skull. The terrified horses foamed at the mouth, sparks shot from their hoofs, their eyes shone like fiery lamps on a winter's night--and in the carriage, more dead than alive, sat a man."
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "\"And Bontzye stopped the horses. And the man he had saved was a charitable Jew, who was not ungrateful."
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "\"He put the dead man's whip into Bontzye's hands, and Bontzye became a coachman. More than that--he was provided with a wife, and more still--with a child."
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "\"And Bontzye kept silent!\""
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "\"Me, they mean me!\" Bontzye assured himself again, and yet had not the courage to give a glance at the Heavenly Court."
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "He listens to the advocate further:"
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "\"He kept silent also when his protector became bankrupt and did not pay him his wages."
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "\"He kept silent when his wife ran away from him, leaving him a child at the breast."
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "\"He was silent also fifteen years later, when the child had grown up and was strong enough to throw him out of the house.\""
+    },
+    {
+      "id": "s0-70",
+      "sceneId": "s0",
+      "text": "\"Me, they mean me!\" Now he is sure of it."
+    },
+    {
+      "id": "s0-71",
+      "sceneId": "s0",
+      "text": "\"He kept silent even,\" began the angelic advocate once more in a still softer and sadder voice, \"when the same philanthropist paid all his creditors their due but him--and even when (riding once again in a carriage with rubber tires and fiery horses) he knocked Bontzye down and drove over him."
+    },
+    {
+      "id": "s0-72",
+      "sceneId": "s0",
+      "text": "\"He kept silent. He did not even tell the police who had done for him.\""
+    },
+    {
+      "id": "s0-73",
+      "sceneId": "s0",
+      "text": "\"He kept silent even in the hospital, where one may cry out."
+    },
+    {
+      "id": "s0-74",
+      "sceneId": "s0",
+      "text": "\"He kept silent when the doctor would not come to his bedside without being paid fifteen kopeks, and when the attendant demanded another five--for changing his linen."
+    },
+    {
+      "id": "s0-75",
+      "sceneId": "s0",
+      "text": "\"He kept silent in the death-struggle--silent in death."
+    },
+    {
+      "id": "s0-76",
+      "sceneId": "s0",
+      "text": "\"Not a word against God; not a word against men!"
+    },
+    {
+      "id": "s0-77",
+      "sceneId": "s0",
+      "text": "\"*Dixi!*\""
+    },
+    {
+      "id": "s0-78",
+      "sceneId": "s0",
+      "text": "Once more Bontzye trembled all over, he knew that after the advocate comes the prosecutor. Who knows what *he* will say?"
+    },
+    {
+      "id": "s0-79",
+      "sceneId": "s0",
+      "text": "Bontzye himself had remembered nothing of his life."
+    },
+    {
+      "id": "s0-80",
+      "sceneId": "s0",
+      "text": "Even in the other world he forgot every moment what had happened in the one before. The advocate had recalled everything to his mind. Who knows what the prosecutor will not remind him of?"
+    },
+    {
+      "id": "s0-81",
+      "sceneId": "s0",
+      "text": "\"Gentlemen,\" begins the prosecutor, in a voice biting and acid as vinegar--but he breaks off."
+    },
+    {
+      "id": "s0-82",
+      "sceneId": "s0",
+      "text": "\"Gentlemen,\" he begins again, but his voice is milder, and a second time he breaks off."
+    },
+    {
+      "id": "s0-83",
+      "sceneId": "s0",
+      "text": "Then, from out the same throat, comes in a voice that is almost gentle:"
+    },
+    {
+      "id": "s0-84",
+      "sceneId": "s0",
+      "text": "\"Gentlemen! *He* was silent! I will be silent, too!\""
+    },
+    {
+      "id": "s0-85",
+      "sceneId": "s0",
+      "text": "There is a hush--and there sounds in front a new, soft, trembling voice:"
+    },
+    {
+      "id": "s0-86",
+      "sceneId": "s0",
+      "text": "\"Bontzye, my child,\" it speaks like a harp, \"my dear child Bontzye!\""
+    },
+    {
+      "id": "s0-87",
+      "sceneId": "s0",
+      "text": "And Bontzye's heart melts within him. Now he would lift up his eyes, but they are blinded with tears; he never felt such sweet emotion before. \"My child!\" \"My Bontzye!\"--no one, since his mother died, had spoken to him with such words in such a voice."
+    },
+    {
+      "id": "s0-88",
+      "sceneId": "s0",
+      "text": "\"My child,\" continued the presiding judge, \"you have suffered and kept silent; there is no whole limb, no whole bone in your body, without a scar, without a wound, not a fibre of your soul that has not bled--and you kept silent."
+    },
+    {
+      "id": "s0-89",
+      "sceneId": "s0",
+      "text": "\"There they did not understand. Perhaps you yourself did not know that you might have cried out, and that at your cry the walls of Jericho would have shaken and fallen. You yourself knew nothing of your hidden power."
+    },
+    {
+      "id": "s0-90",
+      "sceneId": "s0",
+      "text": "\"In the other world your silence was not understood, but *that* is the world of delusion; in the world of truth you will receive your reward."
+    },
+    {
+      "id": "s0-91",
+      "sceneId": "s0",
+      "text": "\"The Heavenly Court will not judge you; the Heavenly Court will not pass sentence on you; they will not apportion you a reward. Take what you will! Everything is yours!\""
+    },
+    {
+      "id": "s0-92",
+      "sceneId": "s0",
+      "text": "Bontzye looks up for the first time. He is dazzled; everything shines and flashes and streams with light."
+    },
+    {
+      "id": "s0-93",
+      "sceneId": "s0",
+      "text": "\"*Taki?*\" he asks shyly."
+    },
+    {
+      "id": "s0-94",
+      "sceneId": "s0",
+      "text": "\"Yes, really!\" answers the presiding judge with decision; \"really, I tell you, everything is yours; everything in heaven belongs to you. Because all that shines and sparkles is only the reflection of your hidden goodness, a reflection of your soul. You only take of what is yours.\""
+    },
+    {
+      "id": "s0-95",
+      "sceneId": "s0",
+      "text": "\"*Taki?*\" asks Bontzye again, this time in a firmer voice."
+    },
+    {
+      "id": "s0-96",
+      "sceneId": "s0",
+      "text": "\"*Taki! taki! taki!*\" they answer him from all sides."
+    },
+    {
+      "id": "s0-97",
+      "sceneId": "s0",
+      "text": "\"Well, if it is so,\" Bontzye smiles, \"I would like to have every day, for breakfast, a hot roll with fresh butter.\""
+    },
+    {
+      "id": "s0-98",
+      "sceneId": "s0",
+      "text": "The Court and the angels looked down, a little ashamed; the prosecutor laughed."
+    }
+  ]
+}

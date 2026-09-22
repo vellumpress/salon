@@ -918,6 +918,16 @@ const WORK_COUNTRY: Record<string, string> = {
   "the-witch-and-other-stories": "Russia",
   "therese-raquin": "France",
   "watch-and-ward": "United States",
+  "faust-part-i": "Germany",
+  "the-divine-comedy": "Italy",
+  "eugene-onegin": "Russia",
+  "gilgamesh": "Iraq",
+  "bontshe-the-silent": "Poland",
+  "baudelaire-prose-and-poetry": "France",
+  "tales-grotesque-and-curious": "Japan",
+  "a-book-barnes": "United States",
+  "a-spring-time-case": "Japan",
+  "hands-around-reigen": "Austria",
 };
 
 const AUTHOR_COUNTRY: Record<string, string> = (() => {

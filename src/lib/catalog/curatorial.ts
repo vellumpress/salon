@@ -81,6 +81,11 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Tier B format-min batches 9–10 (Sep 22) are Later binds only — not Featured,
  * not Next, not For you. Mother is one of those Later rows. The chambermaid
  * stub stays unbound; Diary of a Chambermaid is the fuller local bind.
+ * BATCH-13 CLEAR (Sep 22) sits on Next after BATCH-12 (after All Quiet),
+ * before-sleep only — never Featured, not For you. Cold-open stays
+ * Mirth → Quicksand → Botchan. Siddhartha is the PG 2500 English, off the old EN hold.
+ * The Divine Comedy is PG 1004 (Longfellow), not an invented Dante id.
+ * Hands Around (Reigen) was already full-text local on main, so this batch leaves that bind.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -313,6 +318,20 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-mystery-of-choice",
   "the-poems-of-emma-lazarus-volume-1",
   "weird-tales",
+  // Mira BATCH-13 CLEAR — after All Quiet. Never Featured. Not For you.
+  "siddhartha",
+  "faust-part-i",
+  "the-divine-comedy",
+  "eugene-onegin",
+  "seven-brothers",
+  "gilgamesh",
+  "bontshe-the-silent",
+  "shahnameh",
+  "song-of-songs",
+  "baudelaire-prose-and-poetry",
+  "tales-grotesque-and-curious",
+  "a-book-barnes",
+  "a-spring-time-case",
 ] as const;
 
 /**
