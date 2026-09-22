@@ -431,7 +431,7 @@ export const SHELF: ShelfWork[] = [
     breaths: 6709,
   },
   { id: "san-kuo-or-romance-of-the-three-kingdoms-vol-1", title: "San Kuo; or, Romance of the Three Kingdoms (Vol. 1)", author: "Luo Guanzhong", year: 1522, form: "novel", language: "Chinese", minutes: 160, gutenberg: 77416 },
-  { id: "os-lusiadas", title: "Os Lusíadas", author: "Luís de Camões", year: 1572, form: "poem", language: "Portuguese", minutes: 90, gutenberg: 3333 },
+  { id: "os-lusiadas", title: "Os Lusíadas", author: "Luís de Camões", year: 1572, form: "poem", language: "Portuguese", minutes: 704, local: true, opening: "1 As armas e os barões assinalados, Que da ocidental praia Lusitana, Por mares nunca de antes navegados, Passaram ainda ", breaths: 1104, gutenberg: 3333 },
   { id: "song-of-songs", title: "Song of Songs", author: "Anonymous (Hebrew Bible)", year: 1611, form: "other", language: "Hebrew", minutes: 40 },
   { id: "paradise-lost", title: "Paradise Lost", author: "John Milton", year: 1667, form: "poem", language: "English", minutes: 90, local: true, opening: "Of Mans First Disobedience, and the Fruit Of that Forbidden Tree, whose mortal tast Brought Death into the World, and all our woe, With loss of *Eden*, till one", breaths: 377, gutenberg: 20 },
   { id: "oku-no-hosomichi", title: "Oku no hosomichi", author: "Matsuo Bashō", year: 1702, form: "poem", language: "Japanese", minutes: 90 },
@@ -503,7 +503,7 @@ export const SHELF: ShelfWork[] = [
   { id: "hard-times", title: "Hard Times", author: "Charles Dickens", year: 1854, form: "novel", language: "English", minutes: 549, local: true, opening: "THE ONE THING NEEDFUL ‘NOW, what I want is, Facts.", breaths: 4392, gutenberg: 786 },
   { id: "israel-potter", title: "Israel Potter", author: "Herman Melville", year: 1855, form: "novel", language: "English", local: true, opening: "The traveller who at the present day is content to travel in the good old Asiatic style, neither rushed along by a locomotive, nor dragged by a stage-coach; who", breaths: 3336, minutes: 417, gutenberg: 15422 },
   { id: "leaves-of-grass", title: "Leaves of Grass", author: "Walt Whitman", year: 1855, form: "poem", language: "English", minutes: 90, local: true, opening: "One’s-Self I Sing", breaths: 2442, gutenberg: 1322 },
-  { id: "weird-tales", title: "Weird Tales", author: "E. T. A. Hoffmann", year: 1855, form: "stories", language: "German", minutes: 80 },
+  { id: "weird-tales", title: "Weird Tales", author: "E. T. A. Hoffmann", year: 1855, form: "stories", language: "German", minutes: 1426, local: true, opening: "Councillor Krespel was one of the strangest, oddest men I ever met with in my life. When I went to live in H---- for a t", breaths: 649, gutenberg: 31377 },
   { id: "rudin", title: "Rudin", author: "Ivan Turgenev", year: 1856, form: "novel", language: "Russian", minutes: 160, gutenberg: 75298 },
   { id: "the-piazza-tales", title: "The Piazza Tales", author: "Herman Melville", year: 1856, form: "stories", language: "English", minutes: 80, local: true, opening: "Through the fairy window, she pointed down the steep to a small garden patch near by—mere pot of rifled loam, half rounded in by sheltering rocks—where, side by", breaths: 1084, gutenberg: 15859 },
   { id: "les-fleurs-du-mal", title: "Les Fleurs du mal", author: "Charles Baudelaire", year: 1857, form: "poem", language: "French", minutes: 90 },
@@ -3079,6 +3079,9 @@ export const SHELF: ShelfWork[] = [
   { id: "the-triumph-of-death", title: "The Triumph of Death", author: "Gabriele D'Annunzio", year: 1894, form: "novel", language: "English", minutes: 1404, local: true, opening: "When she perceived a group of men leaning against the parapet and looking down into the street below", breaths: 2667, gutenberg: 54272 },
   { id: "the-witch-and-other-stories", title: "The Witch, and Other Stories", author: "Anton Chekhov", year: 1918, form: "stories", language: "English", minutes: 921, local: true, opening: "IT was approaching nightfall. The sexton, Savely Gykin, was lying in his huge bed in the hut adjoini", breaths: 1584, gutenberg: 1944 },
   { id: "watch-and-ward", title: "Watch and Ward", author: "Henry James", year: 1871, form: "novel", language: "English", minutes: 768, local: true, opening: "Roger Lawrence had come to town for the express purpose of doing a certain act, but as the hour for ", breaths: 663, gutenberg: 72355 },
+  { id: "fir-flower-tablets", title: "Fir-Flower Tablets", author: "Florence Ayscough; Amy Lowell (translators)", year: 1921, form: "poem", language: "English", minutes: 201, local: true, opening: "Alas! Alas! The danger! The steepness! O Affliction! The Shu Road is as perilous and difficult as the way to the Green H", breaths: 281, gutenberg: 48222 },
+  { id: "the-black-monk-and-other-stories", title: "The Black Monk, and Other Stories", author: "Anton Chekhov", year: 1903, form: "stories", language: "English", minutes: 832, local: true, opening: "Andrei Vasilyevitch Kovrin, Magister, had worn himself out, and unsettled his nerves. He made no effort to undergo regul", breaths: 1189, gutenberg: 55307 },
+  { id: "the-horse-stealers-and-other-stories", title: "The Horse-Stealers and Other Stories", author: "Anton Chekhov", year: 1921, form: "stories", language: "English", minutes: 849, local: true, opening: "A HOSPITAL assistant, called Yergunov, an empty-headed fellow, known throughout the district as a great braggart and dru", breaths: 1447, gutenberg: 13409 },
 ];
 
 const BY_ID = new Map(SHELF.map((item) => [item.id, item]));

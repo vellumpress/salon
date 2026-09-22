@@ -74,6 +74,9 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * BATCH-9 CLEAR (Sep 22) sits on Next after All Quiet (after BATCH-10),
  * before-sleep only — never Featured, not For you. Cold-open stays
  * Mirth → Quicksand → Botchan.
+ * BATCH-12 CLEAR (Sep 22) sits on Next after BATCH-9 (after All Quiet),
+ * before-sleep only — never Featured, not For you. Cold-open stays
+ * Mirth → Quicksand → Botchan. Ids already full-text local keep that bind.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -294,6 +297,18 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "therese-raquin",
   "tradiciones-peruanas",
   "watch-and-ward",
+  "bay-a-book-of-poems",
+  "black-spirits-and-white-a-book-of-ghost-stories",
+  "fir-flower-tablets",
+  "hugh-selwyn-mauberley",
+  "os-lusiadas",
+  "the-black-monk-and-other-stories",
+  "the-heart-of-happy-hollow",
+  "the-hesperides-and-noble-numbers",
+  "the-horse-stealers-and-other-stories",
+  "the-mystery-of-choice",
+  "the-poems-of-emma-lazarus-volume-1",
+  "weird-tales",
 ] as const;
 
 /**

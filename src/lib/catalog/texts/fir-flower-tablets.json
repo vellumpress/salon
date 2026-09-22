@@ -1,0 +1,2203 @@
+{
+  "id": "fir-flower-tablets",
+  "title": "Fir-Flower Tablets",
+  "author": "Florence Ayscough; Amy Lowell (translators)",
+  "year": "1921",
+  "note": "Project Gutenberg 48222",
+  "minutes": 201,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Perils of the Shu Road",
+      "place": "The Perils of the Shu Road",
+      "reentry": "Alas! Alas! The danger! The steepness! O Affliction! The Shu Road is as perilous and difficult as the way to the Green Heavens. No greater undertaking than this has been since Ts'an Ts'ung and Yü Fu ruled the land. For forty-eight thousand ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Looking at the Moon After Rain",
+      "place": "Looking at the Moon After Rain",
+      "reentry": "The heavy clouds are broken and blowing, And once more I can see the wide common stretching beyond the four sides of the city. Open the door. Half of the moon-toad is already up, The glimmer of it is like smooth hoar-frost spreading over te",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "The Lonely Wife",
+      "place": "The Lonely Wife",
+      "reentry": "The mist is thick. On the wide river, the water-plants float smoothly. No letters come; none go. There is only the moon, shining through the clouds of a hard, jade-green sky, Looking down at us so far divided, so anxiously apart. All day, g",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "The Pleasures Within the Palace",
+      "place": "The Pleasures Within the Palace",
+      "reentry": "From little, little girls, they have lived in the Golden House. They are lovely, lovely, in the Purple Hall. They dress their hair with hill flowers, And rock-bamboos are embroidered on their dresses of open-work silk gauze. When they go ou",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "The Young Girls of Yüeh",
+      "place": "The Young Girls of Yüeh",
+      "reentry": "Young girls are gathering lotus-seeds on the pond of Ya. Seeing a man on the bank, they turn and row away singing. Laughing, they hide among the lotus-flowers, And, in a pretence of bashfulness, will not come out.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Written in the Character of a Beautiful Woman Grieving Before Her Mirror",
+      "place": "Written in the Character of a Beautiful Woman Grieving Before Her Mirror",
+      "reentry": "Bright, bright, the gilded magpie mirror, Absolutely perfect in front of me on the jade dressing-stand. Wiped, rubbed, splendid as the Winter moon; Its light and brilliance, how clear and round! The rose-red face is older than it was yester",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Songs to the Peonies Sung to the Air: \"peaceful Brightness\"",
+      "place": "Songs to the Peonies Sung to the Air: \"peaceful Brightness\"",
+      "reentry": "The many-coloured clouds make me think of her upper garments, of her lower garments; Flowers make me think of her face. The Spring wind brushes the blossoms against the balustrade, In the heavy dew they are bright and tinted diversely. If i",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "The Cast-off Palace Woman of Ch'in and the Dragon Robes",
+      "place": "The Cast-off Palace Woman of Ch'in and the Dragon Robes",
+      "reentry": "At Wei Yang dwells the Son of Heaven. The all Unworthy One attends beside The Dragon-broidered robes. I ponder his regard, not mine the love Enjoyed by those within the Purple Palace. And yet I have attained to brightening The bed of yellow",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Journey",
+      "place": "Journey",
+      "reentry": "The wind blows. The inn is filled with the scent of willow-flowers. In the wine-shops of Wu, women are pressing the wine. The sight invites customers to taste. The young men and boys of Nanking have gathered to see me off; I wish to start, ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Of the Golden Mound",
+      "place": "Of the Golden Mound",
+      "reentry": "The silver-crested love-pheasants strutted upon the Pheasant Terrace. Now the pheasants are gone, the terrace is empty, and the river flows on its old, original way. Gone are the blossoms of the Palace of Wu and overgrown the road to it. Pa",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "The Northern Flight",
+      "place": "The Northern Flight",
+      "reentry": "What hardships are encountered in a Northern flight! We fly Northward, ascending the T'ai Hang Mountains. The mountain road winds round a cliff, and it is very steep and dangerous; The precipice, sheer as though cut with a knife, rises to t",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Fighting to the South of the City",
+      "place": "Fighting to the South of the City",
+      "reentry": "Last year they fought at the source of the Sang Ch'ien, This year they fight on the road by the Leek-green River. The soldiers were drenched by the waters of the Aral Sea, The horses were turned loose to find grass in the midst of the snows",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "The Crosswise River",
+      "place": "The Crosswise River",
+      "reentry": "There are people who say the Crosswise River is good; I say the Crosswise River is terrible. The savage wind blows as if it would overturn the Heaven's Gate Mountains. The white waves are as high as the high rooms in the Temple of Wa Kuan.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "On Hearing the Buddhist Priest of Shu Play His Table-lute",
+      "place": "On Hearing the Buddhist Priest of Shu Play His Table-lute",
+      "reentry": "The Priest of the Province of Shu, carrying his table-lute in a cover of green, shot silk, Comes down the Western slope of the peak of Mount Omei. He moves his hands for me, striking the lute. It is like listening to the waters in ten thous",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Ch'ang Kan",
+      "place": "Ch'ang Kan",
+      "reentry": "When the hair of your Unworthy One first began to cover her forehead, She picked flowers and played in front of the door. Then you, my Lover, came riding a bamboo horse. We ran round and round the bed, and tossed about the sweetmeats of gre",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Sorrow During a Clear Autumn",
+      "place": "Sorrow During a Clear Autumn",
+      "reentry": "I climb the hills of Chiu I--Oh-h-h-h-h! I look at the clear streams a long way off. I see distinctly the three branches of the Hsiang River, I hear the sound of its swift current. The water flows coldly; it is on its way to the lake. The h",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "Poignant Grief During a Sunny Spring",
+      "place": "Poignant Grief During a Sunny Spring",
+      "reentry": "The East wind has come again. I see the jade-green grass and realize that it is Spring. Everywhere there is an immense confusion of ripples and agitations. Why does the waving and fluttering of the weeping-willow make me sad? The sky is so ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Two Poems Written As Parting Gifts to Ts'ui (the Official) of Ch'iu Pu",
+      "place": "Two Poems Written As Parting Gifts to Ts'ui (the Official) of Ch'iu Pu",
+      "reentry": "I love Ts'ui of Ch'iu Pu. He follows the ways of the Official T'ao. At his gate, he has planted five willow-trees, And on either side of the well, crowding it between them, stand two wu-t'ung trees. Mountain birds fly down and listen while ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Sent As a Parting Gift to the Second Official of Ch'iu Pu",
+      "place": "Sent As a Parting Gift to the Second Official of Ch'iu Pu",
+      "reentry": "In the old days, Ch'iu Pu was bare and desolate, The serving-men in the Official Residence were few. Because you, my Lord, have planted peach-trees and plum-trees, This place has suddenly become exuberantly fragrant. As your writing-brush m",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Saying Good-bye to Liu Sixteen on His Return to the Hills",
+      "place": "Saying Good-bye to Liu Sixteen on His Return to the Hills",
+      "reentry": "The hills of Ch'u, The hills of Ch'in, White clouds everywhere. White clouds follow my Lord always, From place to place. They always follow My Lord, When my Lord arrives at the hills of Ch'u. Clouds also follow my Lord when he floats In a b",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "Wind-bound at the New Forest Reach. a Letter Sent to a Friend",
+      "place": "Wind-bound at the New Forest Reach. a Letter Sent to a Friend",
+      "reentry": "Tidal water is a determined thing, it can be depended on; But it is impossible to make an appointment with the wind of Heaven. In the clear dawn, it veers Northwest; At the last moment of sunset, it blows Southeast. It is therefore difficul",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Farewell to Wu Five on His Departure for Lang Ya",
+      "place": "Farewell to Wu Five on His Departure for Lang Ya",
+      "reentry": "King Yao has been dead for three thousand years, But the green pine, the ancient temple, remain. As we are bidding you good-bye, we set out offerings of cassia wine; We make obeisance, we bend our knees, and, rising, turn our faces to Heave",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "Drinking Alone in the Moonlight",
+      "place": "Drinking Alone in the Moonlight",
+      "reentry": "A pot of wine among flowers. I alone, drinking, without a companion. I lift the cup and invite the bright moon. My shadow opposite certainly makes us three. But the moon cannot drink, And my shadow follows the motions of my body in vain. Fo",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "Drinking Alone in the Moonlight",
+      "place": "Drinking Alone in the Moonlight",
+      "reentry": "If Heaven did not love wine, There would be no Wine Star in Heaven. If Earth did not love wine, There should be no Wine Springs on Earth. Why then be ashamed before Heaven to love wine. I have heard that clear wine is like the Sages; Again ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "A Statement of Resolutions After Being Drunk on a Spring Day",
+      "place": "A Statement of Resolutions After Being Drunk on a Spring Day",
+      "reentry": "This time of ours Is like a great, confused dream. Why should one spend one's life in toil? Thinking this, I have been drunk all day. I fell down and lay prone by the pillars in front of the house; When I woke up, I gazed for a long time At",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "River Chant",
+      "place": "River Chant",
+      "reentry": "Fig-wood oars, A boat of the wood of the sand-pear. At either end, Jade flageolets and pipes of gold.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Separated by Imperial Summons from Her Who Lives Within",
+      "place": "Separated by Imperial Summons from Her Who Lives Within",
+      "reentry": "The Emperor commands; three times the summons. He who left has not yet returned. To-morrow, at sunrise, he will go out by the Pass of Wu. From the upper chamber of white jade, I shall gaze far off; but I shall be able to make out nothing. O",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "A Woman Sings to the Air: \"sitting at Night\"",
+      "place": "A Woman Sings to the Air: \"sitting at Night\"",
+      "reentry": "A Winter night, a cold Winter night. To me, the night is unending. I chant heavily to myself a long time. I sit, sit in the North Hall. The water in the well is solid with ice. The moon enters the Women's Apartments. The flame of the gold l",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "The Palace Woman of Han Tan Becomes the Wife of the Soldiers' Cook",
+      "place": "The Palace Woman of Han Tan Becomes the Wife of the Soldiers' Cook",
+      "reentry": "Once the Unworthy One was a maiden of the Ts'ung Terrace. Joyfully lifting my moth-pencilled eyebrows, I entered the carnation-coloured Palace. Relying on myself, my flower-like face, How should I know that it would wither and fade? Banishe",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "The Sorrel Horse",
+      "place": "The Sorrel Horse",
+      "reentry": "The sorrel horse with the black tail gallops, gallops, and neighs, Lifting, curving, his grey-jade hoofs. He shies from the flowing water, unwilling to cross, As though he feared the mud for his embroidered saddlecloth. The snow is white on",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "A Poem Given to a Beautiful Woman Encountered on a Field-path",
+      "place": "A Poem Given to a Beautiful Woman Encountered on a Field-path",
+      "reentry": "The magnificent horse, galloping swiftly, tramples the fallen flower. Down comes the riding-whip, straight down--it strikes the Five Cloud Cart. The young person who lifts the pearl door-screen is very beautiful. Moreover, she smiles. She p",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Saying Good-bye to a Friend",
+      "place": "Saying Good-bye to a Friend",
+      "reentry": "Clear green hills at a right angle to the North wall, White water winding to the East of the city. Here is the place where we must part. The lonely water-plants go ten thousand *li*; The floating clouds wander everywhither as does man. Day ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "Lover of Hills; Spending the Night in the Preparation of Wine",
+      "place": "Lover of Hills; Spending the Night in the Preparation of Wine",
+      "reentry": "We come down the green-grey jade hill, The mountain moon accompanies us home. We turn and look back up the path: Green, green, the sky; the horizontal, kingfisher-green line of the hills is fading. Holding each other's hands, we reach the h",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "The Terraced Road of the Two-edged Sword Mountains",
+      "place": "The Terraced Road of the Two-edged Sword Mountains",
+      "reentry": "Looking South and straight from Hsien Yang for five thousand *li*, One could see, among the full, blowing clouds, the rocky sharpness of peaks, Were it not for the horizontal line of the Two-Edged Sword Mountains cutting across the view. Th",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "Hearing a Bamboo Flute on a Spring Night in the City of Lo Yang",
+      "place": "Hearing a Bamboo Flute on a Spring Night in the City of Lo Yang",
+      "reentry": "From whose house do the invisible notes of a jade flute come flying? The Spring wind scatters them. They fill the City of Lo Yang. To-night, as the phrases form, I hear \"The Snapped Willow.\" To whom do they not bring back the love of his ol",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "The Retreat of Hsieh Kung",
+      "place": "The Retreat of Hsieh Kung",
+      "reentry": "The sun is setting--has set--on the Spring-green Mountain. Hsieh Kung's retreat is solitary and still. No sound of man in the bamboo grove. The white moon shines in the centre of the unused garden pool. All round the ruined Summer-house is ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "A Traveller Comes to the Old Terrace of Su",
+      "place": "A Traveller Comes to the Old Terrace of Su",
+      "reentry": "The old Imperial Park--the ruined Terrace--the young willows. The water-chestnut pickers are singing, a simple song unaccompanied by instruments--but joy is unbearable. For now the moon over the Western River is alone. The time is past when",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "Theme of the Rest-house on the Clear Wan River",
+      "place": "Theme of the Rest-house on the Clear Wan River",
+      "reentry": "I love the beauty of the Wan River. One can see its clear heart shining a hundred feet deep. In what way does it not equal the river Hsin An? For a thousand times eight feet one can see its bright bed, The white sand keeps the colour of the",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "Drinking Song",
+      "place": "Drinking Song",
+      "reentry": "Do you not see the waters of the Yellow River coming down from Heaven? They rush with incredible speed to the sea, and they never turn and come back again. Do you not see, in the clear mirror of the Guest Hall, the miserable white hair on m",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "Answer to an Affectionate Invitation from Ts'ui Fifteen",
+      "place": "Answer to an Affectionate Invitation from Ts'ui Fifteen",
+      "reentry": "You have the \"bird's foot-print\" characters. You suggest that we drink together at the Lute Stream. The characters you wrote are in the centre of a foot of pure white silk, They are like exquisite clouds dropped from Heaven. Having finished",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "Parrot Island",
+      "place": "Parrot Island",
+      "reentry": "The parrots come, they cross the river waters of Wu. The island in the river is called Parrot Island. The parrots are flying West to the Dragon Mountain. There are sweet grasses on the island, and how green, green, are its trees!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "The Honourable Lady Chao",
+      "place": "The Honourable Lady Chao",
+      "reentry": "Moon over the houses of Han, over the site of Ch'in. It flows as water--its brightness shone on Ming Fei, the \"Bright Concubine,\" Who took the road to the Jade Pass. She went to the edge of Heaven, but she did not return; She gave up the mo",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "Thinking of the Frontier",
+      "place": "Thinking of the Frontier",
+      "reentry": "At what season last year did my Lord leave his Unworthy One? In the Southern garden, the butterflies were fluttering in the young green grass. Now, this year, at what season does the Unworthy One cherish thoughts of her Lord? There is white",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "A Song of Resentment",
+      "place": "A Song of Resentment",
+      "reentry": "At fifteen, she entered the Palace of Han, Her flower-face was like a river in Spring. The Prince chose her of the jade colour To attend his rest within the embroidered screen. As she presented the pillow, she was lovely as the evening moon",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "Picking Willow",
+      "place": "Picking Willow",
+      "reentry": "The drooping willow brushes the very clear water, Beautifully it flickers in this East-wind time of the year. Its flowers are bright as the snow of the Jade Pass, Its leaves soft as smoke against the gold window. She, the Lovely One, bound ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "On the Broad Reach",
+      "place": "On the Broad Reach",
+      "reentry": "In the clear green water--the shimmering moon. In the moonlight--white herons flying. A young man hears a girl plucking water-chestnuts; They paddle home together through the night, singing.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "He Is Absent",
+      "place": "He Is Absent",
+      "reentry": "A dog, A dog barking. And the sound of rushing water. How dark and rich the peach-flowers after the rain. Every now and then, between the trees, I see deer. Twelve o'clock, but I hear no bell in the ravine. Wild bamboos slit the blue-green ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "Reply to an Unrefined Person Encountered in the Hills",
+      "place": "Reply to an Unrefined Person Encountered in the Hills",
+      "reentry": "He asks why I perch in the green jade hills. I smile and do not answer. My heart is comfortable and at peace. Fallen peach-flowers spread out widely, widely, over the water. It is another sky and earth, not the world of man.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "The Golden Mound",
+      "place": "The Golden Mound",
+      "reentry": "The night is still in Chin Ling, a cool wind blows. I am alone in a high room, gazing over Wu and Yüeh. White clouds shine on the water and blur the reflection of the still city. The cold dew soaks my clothes, Autumn moonlight is damp. In t",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "Passing the Night at the White Heron Island",
+      "place": "Passing the Night at the White Heron Island",
+      "reentry": "At dawn, I left the Red Bird Gate; At sunset, I came to roost on the White Heron Island. The image of the moon tumbles along the bright surface of the water. The Tower above the City Gate is lost in the twinkling light of the stars. I gaze ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "Ascending the Three Chasms",
+      "place": "Ascending the Three Chasms",
+      "reentry": "The Sorceress Mountain presses against Green Heaven. The Serpent River runs terribly fast. The Serpent River can be suddenly exhausted. The time may never come when we shall arrive at the Green Heaven. Three dawns shine upon the Yellow Ox. ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "Parting from Yang, a Hill Man Who Is Returning to the High Mountain",
+      "place": "Parting from Yang, a Hill Man Who Is Returning to the High Mountain",
+      "reentry": "There is one place which is an everlasting home to me: The Jade Woman Peak on the High Southern Mountain. Often, a wide, flat moonlight Hangs upon the pines of the whirling Eastern stream. You are going to pick the fairy grasses And the sho",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "Night Thoughts",
+      "place": "Night Thoughts",
+      "reentry": "In front of my bed the moonlight is very bright. I wonder if that can be frost on the floor? I lift up my head and look full at the full moon, the dazzling moon. I drop my head, and think of the home of old days.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "Sent As a Present to Chia the Secretary",
+      "place": "Sent As a Present to Chia the Secretary",
+      "reentry": "Chia, the Scholar, gazes into the West, thinking of the splendour of the Capitol. Although you have been transferred to the broad reaches of the river Hsiang, you must not sigh in resentment. The mercy of the Sainted Lord is far greater tha",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "On the Subject of Old Tai's Wine-shop",
+      "place": "On the Subject of Old Tai's Wine-shop",
+      "reentry": "Old Tai is gone down to the Yellow Springs. Yet he must still wish to make \"Great Spring Wine.\" There is no Li Po on the terrace of Eternal Darkness. To whom, then, will he sell his wine?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "Drinking in the T'ao Pavilion",
+      "place": "Drinking in the T'ao Pavilion",
+      "reentry": "The house of the lonely scholar is in the winding lane. The great scholar's gate is very high. The garden pool lies and shines like the magic gall mirror; Groves of trees throw up flowers with wide, open faces; The leaf-coloured water draws",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "A Song for the Hour When the Crows Roost",
+      "place": "A Song for the Hour When the Crows Roost",
+      "reentry": "This is the hour when the crows come to roost on the Ku Su Terrace. In his Palace, the King of Wu is drinking with Hsi Shih. Songs of Wu--posturings of Ch'u dances--and yet the revels are not finished. But already the bright hills hold half",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "Poem Sent to the Official Wang of Han Yang",
+      "place": "Poem Sent to the Official Wang of Han Yang",
+      "reentry": "The Autumn moon was white upon the Southern Lake. That night the Official Wang sent me an invitation. Behind the embroidered bed-curtain lay the Official Secretary--drunk. The woven dresses of the beautiful girls who performed the wu dance ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "Drinking Alone on the Rock in the River of the Clear Stream",
+      "place": "Drinking Alone on the Rock in the River of the Clear Stream",
+      "reentry": "I have a flagon of wine in my hand. I am alone on the Ancestor Rock in the river. Since the time when Heaven and Earth were divided, How many thousand feet has the rock grown? I lift my cup to Heaven and smile. Heaven turns round, the sun s",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "Librarian",
+      "place": "Librarian",
+      "reentry": "When I was young, I spent the white days lavishly. I sang--I laughed--I boasted of my ruddy face. I do not realize that now, suddenly, I am old. With joy I see the Spring wind return. It is a pity that we must part, but let us make the best",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "Leave of Tu Fu",
+      "place": "Leave of Tu Fu",
+      "reentry": "When drunk, we were divided; but we have been together again for several days. We have climbed everywhere, to every pool and ledge. When, on the Stone Gate Road, Shall we pour from the golden flagon again? The Autumn leaves drop into the Fo",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "The Moon Over the Mountain Pass",
+      "place": "The Moon Over the Mountain Pass",
+      "reentry": "The bright moon rises behind the Heaven-high Mountain, A sea of clouds blows along the pale, wide sky. The far-off wind has come from nearly ten thousand *li*, It has blown across the Jade Gate Pass. Down the Po Têng Road went the people of",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "The Taking-up of Arms",
+      "place": "The Taking-up of Arms",
+      "reentry": "A hundred battles, the sandy fields of battles, armour broken into fragments. To the South of the city they are already shut in and surrounded by many layers of men. They rush out from their cantonments. They shoot and kill the General of t",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "A Song of the Rest-house of Deep Trouble",
+      "place": "A Song of the Rest-house of Deep Trouble",
+      "reentry": "At Chin Ling, the tavern where travellers part is called the Rest-House of Deep Trouble. The creeping grass spreads far, far, from the roadside where it started. There is no end to the ancient sorrow, as water flows to the East. Grief is in",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "The \"looking-for-husband\" Rock",
+      "place": "The \"looking-for-husband\" Rock",
+      "reentry": "In the attitude, and with the manner, of the woman of old, Full of grief, she stands in the glorious morning light. The dew is like the tears of to-day; The mosses like the garments of years ago. Her resentment is that of the Woman of the H",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "After Being Separated for a Long Time",
+      "place": "After Being Separated for a Long Time",
+      "reentry": "How many Springs have we been apart? You do not come home. Five times have I seen the cherry-blossoms from the jade window, Besides there are the \"embroidered character letters.\" You must sigh as you break the seals. When this happens, the ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "Bitter Jealousy in the Palace of the High Gate",
+      "place": "Bitter Jealousy in the Palace of the High Gate",
+      "reentry": "The Heavens have revolved. The \"Northern Measure\" hangs above the Western wing. In the Gold House, there is no one; fireflies flit to and fro. Moonlight seeks to enter the Palace of the High Gate, To one in the centre of the Palace it bring",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "Eternally Thinking of Each Other",
+      "place": "Eternally Thinking of Each Other",
+      "reentry": "(*The Woman Speaks*)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "Passionate Grief",
+      "place": "Passionate Grief",
+      "reentry": "Beautiful is this woman who rolls up the pearl-reed blind. She sits in an inner chamber, And her eyebrows, delicate as a moth's antennæ, Are drawn with grief. One sees only the wet lines of tears. For whom does she suffer this misery? We do",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "Sung to the Air: \"the Mantzŭ Like an Idol\"",
+      "place": "Sung to the Air: \"the Mantzŭ Like an Idol\"",
+      "reentry": "The trees in the level forest stand in rows and rows, The mist weaves through them. The jade-green of the cold hillside country hurts one's heart. Night colour drifts into the high cupola. In the cupola, a man grieves.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "To Kuang Ling",
+      "place": "To Kuang Ling",
+      "reentry": "I take leave of my dear old friend at the Yellow Crane Tower. In the flower-smelling mist of the Third Month he will arrive at Yang Chou. The single sail is shining far off--it is extinguished in the jade-coloured distance, I see only the l",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "In Deep Thought, Gazing at the Moon",
+      "place": "In Deep Thought, Gazing at the Moon",
+      "reentry": "The clear spring reflects the thin, wide-spreading pine-tree-- And for how many thousand, thousand years? No one knows. The late Autumn moon shivers along the little water ripples, The brilliance of it flows in through the window. Before it",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "Thoughts from a Thousand Li",
+      "place": "Thoughts from a Thousand Li",
+      "reentry": "Li Ling is buried in the sands of Hu. Su Wu has returned to the homes of Han. Far, far, the Five Spring Pass, Sorrowful to see the flower-like snow. He is gone, separated, by a distant country, But his thoughts return, Long sighing in grief",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "Word-pattern",
+      "place": "Word-pattern",
+      "reentry": "The Autumn wind is fresh and clear; The Autumn moon is bright. Fallen leaves whirl together and scatter. The jackdaws, who have gone to roost, are startled again. We are thinking of each other, but when shall we see each other? Now, to-nigh",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "The Heaven's Gate Mountains",
+      "place": "The Heaven's Gate Mountains",
+      "reentry": "In the far distance, the mountains seem to rise out of the river; Two peaks, standing opposite each other, make a natural gateway. The cold colour of the pines is reflected between the river-banks, Stones divide the current and shiver the w",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "Poem Sent on Hearing That Wang Ch'ang-ling Had Been Exiled to Lung Piao",
+      "place": "Poem Sent on Hearing That Wang Ch'ang-ling Had Been Exiled to Lung Piao",
+      "reentry": "In Yang Chou, the blossoms are dropping. The night-jar calls. I hear it said that you are going to Lung Piao--that you will cross the Five Streams. I fling the grief of my heart up to the bright moon That it may follow the wind and arrive, ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "A Parting Gift to Wang Lun",
+      "place": "A Parting Gift to Wang Lun",
+      "reentry": "Li Po gets into a small boat--he is on the point of starting. Suddenly he hears footsteps on the bank and the sound of singing. The Peach-Flower Pool is a thousand feet deep, Yet it is not greater than the emotion of Wang Lun as he takes le",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "Plum-flower Lake",
+      "place": "Plum-flower Lake",
+      "reentry": "I bid you good-bye, my friend, as you are going on an excursion to the Plum-Flower Lake. You should see the plum-blossoms open; It is understood that you hire a person to bring me some. You must not permit the rose-red fragrance to fade. Yo",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "A Poem Sent to Tu Fu from Sha Ch'iu Ch'êng",
+      "place": "A Poem Sent to Tu Fu from Sha Ch'iu Ch'êng",
+      "reentry": "After all, what have I come here to do? To lie and meditate at Sha Ch'iu Ch'êng. Near the city are ancient trees, And day and night are continuous with Autumn noises. One cannot get drunk on Lu wine, The songs of Ch'i have no power to excit",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "Bidding Good-bye to Yin Shu",
+      "place": "Bidding Good-bye to Yin Shu",
+      "reentry": "Before the White Heron Island--the moon. At dawn to-morrow I shall bid good-bye to the returning traveller. The sky is growing bright, The sun is behind the Green Dragon Hill; Head high it pushes out of the sea clouds and appears. Flowing w",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "A Desultory Visit to the Fêng Hsien Temple at the Dragon's Gate",
+      "place": "A Desultory Visit to the Fêng Hsien Temple at the Dragon's Gate",
+      "reentry": "I had already wandered away from the People's Temple, But I was obliged to sleep within the temple precincts. The dark ravine was full of the music of silence, The moon scattered bright shadows through the forest. The Great Gate against the",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "The Thatched House Unroofed by an Autumn Gale",
+      "place": "The Thatched House Unroofed by an Autumn Gale",
+      "reentry": "It is the Eighth Month, the very height of Autumn. The wind rages and roars. It tears off three layers of my grass-roof. The thatch flies--it crosses the river--it is scattered about in the open spaces by the river. High-flying, it hangs, t",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "The River Village",
+      "place": "The River Village",
+      "reentry": "The river makes a bend and encircles the village with its current. All the long Summer, the affairs and occupations of the river village are quiet and simple. The swallows who nest in the beams go and come as they please. The gulls in the m",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "Out to Enjoy the Cool of Evening. They Encounter a Shower of Rain",
+      "place": "Out to Enjoy the Cool of Evening. They Encounter a Shower of Rain",
+      "reentry": "How delightful, at sunset, to loosen the boat! A light wind is slow to raise waves. Deep in the bamboo grove, the guests linger; The lotus-flowers are pure and bright in the cool evening air. The young nobles stir the ice-water; The Beautif",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "The Recruiting Officers at the Village of the Stone Moat",
+      "place": "The Recruiting Officers at the Village of the Stone Moat",
+      "reentry": "I sought a lodging for the night, at sunset, in the Stone Moat Village. Recruiting Officers, who seize people by night, were there. A venerable old man climbed over the wall and fled. An old woman came out of the door and peered. What rage ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "Crossing the Frontier",
+      "place": "Crossing the Frontier",
+      "reentry": "When bows are bent, they should be bent strongly; When arrows are used, they should be long. The bow-men should first shoot the horses. In taking the enemy prisoner, the Leader should first be taken; There should be no limit to the killing ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "Crossing the Frontier",
+      "place": "Crossing the Frontier",
+      "reentry": "At dawn, the conscripted soldiers enter the camp outside the Eastern Gate. At sunset, they cross the bridge of Ho Yang. The setting sunlight is reflected on the great flags. Horses neigh. The wind whines--whines-- Ten thousand tents are spr",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "The Sorceress Gorge",
+      "place": "The Sorceress Gorge",
+      "reentry": "Jade dew lies upon the withered and wounded forest of maple-trees. On the Sorceress Hill, over the Sorceress Gorge, the mist is desolate and dark. The ripples of the river increase into waves and blur with the rapidly flowing sky. The wind-",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "Thinking of Li Po on a Spring Day",
+      "place": "Thinking of Li Po on a Spring Day",
+      "reentry": "The poems of Po are unequalled. His thoughts are never categorical, but fly high in the wind. His poems are clear and fresh as those of Yü, the official; They are fine and easy as those of Pao, the military counsellor. I am North of the riv",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "At the Edge of Heaven. Thinking of Li T'ai-po",
+      "place": "At the Edge of Heaven. Thinking of Li T'ai-po",
+      "reentry": "A cold wind blows up from the edge of Heaven. The state of mind of the superior man is what? When does the wild goose arrive? Autumn water flows high in the rivers and lakes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "Sent to Li Po As a Gift",
+      "place": "Sent to Li Po As a Gift",
+      "reentry": "Autumn comes, We meet each other. You still whirl about as a thistledown in the wind. Your Elixir of Immortality is not yet perfected And, remembering Ko Hung, you are ashamed. You drink a great deal, You sing wild songs, Your days pass in ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "A Toast for Mêng Yün-ch'ing",
+      "place": "A Toast for Mêng Yün-ch'ing",
+      "reentry": "Illimitable happiness, But grief for our white heads. We love the long watches of the night, the red candle. It would be difficult to have too much of meeting, Let us not be in a hurry to talk of separation. But because the Heaven River wil",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "Moon Night",
+      "place": "Moon Night",
+      "reentry": "To-night--the moon at Fu Chou. In the centre of the Women's Apartments There is only one to look at it. I am far away, but I love my little son, my daughter. They cannot understand and think of Ch'ang An. The sweet-smelling mist makes the c",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "Hearing the Early Oriole (written in Exile)",
+      "place": "Hearing the Early Oriole (written in Exile)",
+      "reentry": "The sun rose while I slept. I had not yet risen When I heard an early oriole above the roof of my house. Suddenly it was like the Royal Park at dawn, With birds calling from the branches of the ten-thousand-year trees. I thought of my time ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "The City of Stones. (nanking)",
+      "place": "The City of Stones. (nanking)",
+      "reentry": "Hills surround the ancient kingdom; they never change. The tide beats against the empty city, and silently, silently, returns. To the East, over the Huai River--the ancient moon. Through the long, quiet night it moves, crossing the battleme",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "Sung to the Tune of \"the Unripe Hawthorn Berry\"",
+      "place": "Sung to the Tune of \"the Unripe Hawthorn Berry\"",
+      "reentry": "Mist is trying to hide the Spring-coloured hills, The sky is pale, the stars are scattered and few. The moon is broken and fading, yet there is light on your face, These are the tears of separation, for now it is bright dawn.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "The Blue-green Stream",
+      "place": "The Blue-green Stream",
+      "reentry": "Every time I have started for the Yellow Flower River, I have gone down the Blue-Green Stream, Following the hills, making ten thousand turnings. We go along rapidly, but advance scarcely one hundred *li*. We are in the midst of a noise of ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "Farm House on the Wei Stream",
+      "place": "Farm House on the Wei Stream",
+      "reentry": "The slanting sun shines on the cluster of small houses upon the heights. Oxen and sheep are coming home along the distant lane. An old countryman is thinking of the herd-boy, He leans on his staff by the thorn-branch gate, watching. Pheasan",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "Seeking for the Hermit of the West Hill; Not Meeting Him",
+      "place": "Seeking for the Hermit of the West Hill; Not Meeting Him",
+      "reentry": "On the Nothing-Beyond Peak, a hut of red grass. I mount straight up for thirty *li*. I knock at the closed door--no serving boy. I look into the room. There is only the low table, and the stand for the elbows. If you are not sitting on the ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "Floating on the Pool of Jo Ya. Spring",
+      "place": "Floating on the Pool of Jo Ya. Spring",
+      "reentry": "Solitary meditation is not suddenly snapped off; it continues without interruption. It flows--drifts this way, that way--returns upon itself. The boat moves before a twilight wind. We enter the mouth of the pool by the flower path At the mo",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "(composed by Su Wu in the Time of the Emperor Wu of Han)",
+      "place": "(composed by Su Wu in the Time of the Emperor Wu of Han)",
+      "reentry": "Thread from the hands of a doting mother Worked into the clothes of a far-off journeying son. Before his departure, were the close, fine stitches set, Lest haply his return be long delayed. The heart--the inch-long grass-- Who will contend ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "Farewell Words to the Daughter of the House of Yang",
+      "place": "Farewell Words to the Daughter of the House of Yang",
+      "reentry": "Because of this, sad, sad has the whole day been to me. You must go forth and journey, far, very far. The time has come when you, the maiden, must go. The light boat ascends the great river. Your particular bitterness is to have none from w",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "Sung to the Air: \"looking South Over the River and Dreaming\"",
+      "place": "Sung to the Air: \"looking South Over the River and Dreaming\"",
+      "reentry": "The hair is combed, The face is washed, All is done.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "Once More Fields and Gardens",
+      "place": "Once More Fields and Gardens",
+      "reentry": "Even as a young man I was out of tune with ordinary pleasures. It was my nature to love the rooted hills, The high hills which look upon the four edges of Heaven. What folly to spend one's life like a dropped leaf Snared under the dust of s",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "To the Air: \"the Fallen Leaves and the Plaintive Cicada\"",
+      "place": "To the Air: \"the Fallen Leaves and the Plaintive Cicada\"",
+      "reentry": "There is no rustle of silken sleeves, Dust gathers in the Jade Courtyard. The empty houses are cold, still, without sound. The leaves fall and lie upon the bars of doorway after doorway. I long for the Most Beautiful One; how can I attain m",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "Written in Early Autumn at the Pool of Sprinkling Water",
+      "place": "Written in Early Autumn at the Pool of Sprinkling Water",
+      "reentry": "In Autumn, when the landscape is clear, to float over the wide, water ripples, To pick the water-chestnut and the lotus-flower with a quick, light hand! The fresh wind is cool, we start singing to the movement of the oars. The clouds are br",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "Proclaiming the Joy of Certain Hours",
+      "place": "Proclaiming the Joy of Certain Hours",
+      "reentry": "Cool wind rising. Sun sparkling on the wide canal. Pink lotuses, bent down by day, spread open at night. There is too much pleasure; a day cannot contain it. Clear sounds of strings, smooth flowing notes of flageolets--we sing the \"Jade Lov",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "A Song of Grief",
+      "place": "A Song of Grief",
+      "reentry": "Glazed silk, newly cut, smooth, glittering, white, As white, as clear, even as frost and snow. Perfectly fashioned into a fan, Round, round, like the brilliant moon, Treasured in my Lord's sleeve, taken out, put in-- Wave it, shake it, and ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "A Letter of Thanks for Precious Pearls Bestowed by One Above",
+      "place": "A Letter of Thanks for Precious Pearls Bestowed by One Above",
+      "reentry": "(THE \"PLUM-BLOSSOM\" CONCUBINE OF THE EMPEROR MING HUANG)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "Dancing",
+      "place": "Dancing",
+      "reentry": "(THE \"WHITE POPLAR\" IMPERIAL CONCUBINE OF THE EMPEROR MING HUANG)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "One of the \"songs of the Ten Requests\"",
+      "place": "One of the \"songs of the Ten Requests\"",
+      "reentry": "My skirt is cut out of peacock silk, Red and green shine together, they are also opposed. It dazzles like the gold-chequered skin of the scaly dragon. Clearly so odd and lovely a thing must be admired. My Lord himself knows well the size. I",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "The Great Ho River",
+      "place": "The Great Ho River",
+      "reentry": "(FROM \"THE BOOK OF ODES\")",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Alas! Alas! The danger! The steepness! O Affliction! The Shu Road is as perilous and difficult as the way to the Green Heavens. No greater undertaking than this has been since Ts'an Ts'ung and Yü Fu ruled the land. For forty-eight thousand years no man had passed the boundary of Ch'in. Westward, over the Great White Mountain, was a bird-track By which one could cross to the peak of Omei. But the earth of the mountain fell and overwhelmed the Heroes so that they perished. Afterwards, therefore, they made sky-ladders and joined the cliffs with hanging pathways. Above, the soaring tips of the high mountains hold back the six dragons of the sun; Below, in the ravines, the flowing waters break into whirlpools and swirl back against the current. Yellow geese flying toward the peaks cannot pass over them; The gibbons climb and climb, despairingly pulling themselves up higher and higher, but even their endurance fails. How the road coils and coils through the Green Mud Pass! With nine turns to a hundred steps, it winds round the ledges of the mountain crests. Clutching at Orion, passing the Well Star, I look up and gasp. I sit long with my hand pressed to my heart and groan. I ask my Lord how long this Westward wandering will last, when we shall return. It is impossible to climb the terrible road along the edges of the precipices. Among the ancient trees, one sees only cruel, mournful, black birds. Male birds, followed by females, fly to and fro through the woods. Sometimes one hears a nightingale in the melancholy moonlight of the lonely mountain. The Shu Road is as perilous and difficult as the way to the Green Heavens. The ruddy faces of those who hear the story of it turn pale. There is not a cubit's space between the mountain tops and the sky. Dead and uprooted pine-trees hang over sheer cliffs. Flying waterfalls and rolling torrents outdo one another in clamour and confusion; They dash against the perpendicular walls, whirl round ten thousand rocks, and boom like thunder along the ravines. This is what the Two-Edged Sword Mountains are like! Alas! How endless a road for man to undertake! How came he to attempt it! The Terraced Road of the Two-Edged Sword twists between glittering and rocky summits. One man alone could hold it against a thousand and mow them down like grass. If the guardian of the Pass were doubtful whether those who came were enemies of his kinsmen, He could fall upon them as a ravening wolf. At dawn, one flees the fierce tigers; In the evening, one flees the long snakes Who sharpen their fangs and suck blood, Destroying men like hemp. Even though the delights of the Embroidered City are as reported, Nothing could equal the joy of going home at once. The Shu Road is as perilous and difficult as the way to the Green Heavens. I turn toward the West, and, gazing long, I sigh."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The heavy clouds are broken and blowing, And once more I can see the wide common stretching beyond the four sides of the city. Open the door. Half of the moon-toad is already up, The glimmer of it is like smooth hoar-frost spreading over ten thousand *li*. The river is a flat, shining chain. The moon, rising, is a white eye to the hills; After it has risen, it is the bright heart of the sea. Because I love it--so--round as a fan, I hum songs until the dawn."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "The mist is thick. On the wide river, the water-plants float smoothly. No letters come; none go. There is only the moon, shining through the clouds of a hard, jade-green sky, Looking down at us so far divided, so anxiously apart. All day, going about my affairs, I suffer and grieve, and press the thought of you closely to my heart. My eyebrows are locked in sorrow, I cannot separate them. Nightly, nightly, I keep ready half the quilt, And wait for the return of that divine dream which is my Lord."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Beneath the quilt of the Fire-Bird, on the bed of the Silver-Crested Love-Pheasant, Nightly, nightly, I drowse alone. The red candles in the silver candlesticks melt, and the wax runs from them, As the tears of your so Unworthy One escape and continue constantly to flow. A flower face endures but a short season, Yet still he drifts along the river Hsiao and the river Hsiang. As I toss on my pillow, I hear the cold, nostalgic sound of the water-clock: Shêng! Shêng! it drips, cutting my heart in two."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "I rise at dawn. In the Hall of Pictures They come and tell me that the snow-flowers are falling. The reed-blind is rolled high, and I gaze at the beautiful, glittering, primeval snow, Whitening the distance, confusing the stone steps and the courtyard. The air is filled with its shining, it blows far out like the smoke of a furnace. The grass-blades are cold and white, like jade girdle pendants. Surely the Immortals in Heaven must be crazy with wine to cause such disorder, Seizing the white clouds, crumpling them up, destroying them."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "From little, little girls, they have lived in the Golden House. They are lovely, lovely, in the Purple Hall. They dress their hair with hill flowers, And rock-bamboos are embroidered on their dresses of open-work silk gauze. When they go out from the retired Women's Apartments, They often follow the Palace chairs. Their only sorrow, that the songs and wu dances are over, Changed into the five-coloured clouds and flown away."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Young girls are gathering lotus-seeds on the pond of Ya. Seeing a man on the bank, they turn and row away singing. Laughing, they hide among the lotus-flowers, And, in a pretence of bashfulness, will not come out."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Many of the young girls of Wu are white, dazzlingly white. They like to amuse themselves by floating in little boats on the water. Peeping out of the corners of their eyes, they spurn the Springtime heart. Gathering flowers, they ridicule the passer-by."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Bright, bright, the gilded magpie mirror, Absolutely perfect in front of me on the jade dressing-stand. Wiped, rubbed, splendid as the Winter moon; Its light and brilliance, how clear and round! The rose-red face is older than it was yesterday, The hair is whiter than it was last year. The white-lead powder is neglected, It is useless to look into the mirror. I am utterly miserable."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "When my Lord went away, he gave me this precious mirror coiled with dragons That I might gaze at my golden-threaded dress of silken gauze. Again and again I take my red sleeve and polish the bright moon. Because I love to see its splendour lighting up everything. In its centre is my reflection, and the golden magpie which does not fly away. I sit at my dressing-stand, and I am like the green Fire-Bird who, thinking of its mate, died alone. My husband is parted from me as an arrow from the bowstring. I know the day he left; I do not know the year when he will return. The cruel wind blows--truly the heart of the Unworthy One is cut to pieces. My tears, like white jade chop-sticks, fall in a single piece before the water-chestnut mirror."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "The many-coloured clouds make me think of her upper garments, of her lower garments; Flowers make me think of her face. The Spring wind brushes the blossoms against the balustrade, In the heavy dew they are bright and tinted diversely. If it were not on the Heaped Jade Mountain that I saw her, I must have met her at the Green Jasper Terrace, or encountered her by accident in the moon."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "A branch of opulent, beautiful flowers, sweet-scented under frozen dew. No love-night like that on the Sorceress Mountain for these; their bowels ache in vain. Pray may I ask who, in the Palace of Han, is her equal? Even the \"Flying Swallow\" is to be pitied, since she must rely upon ever new adornments."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "The renowned flower, and she of a loveliness to overthrow Kingdoms--both give happiness. Each receives a smile from the Prince when he looks at them. The Spring wind alone can understand and explain the boundless jealousy of the flower, Leaning over the railing of the balcony at the North side of the aloe-wood pavilion."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "SPRING GRIEF AND RESENTMENT BY LI T'AI-PO"
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "There is a white horse with a gold bridle to the East of the Liao Sea. Bed-curtains of open-work silk--embroidered quilt--I sleep with the Spring wind. The setting moon drops level to the balcony, it spies upon me. The candle is burnt out. A blown flower drifts in through the inner door--it mocks at the empty bed."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "At Wei Yang dwells the Son of Heaven. The all Unworthy One attends beside The Dragon-broidered robes. I ponder his regard, not mine the love Enjoyed by those within the Purple Palace. And yet I have attained to brightening The bed of yellow gold. If floods should come, I also would not leave. A bear might come and still I could protect. My inconsiderable body knows the honour Of serving Sun and Moon. I flicker with a little glow of light, A firefly's. I beg my Lord to pluck The trifling mustard plant and melon-flower And not reject them for their hidden roots."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "THE POET IS DETAINED IN A NANKING WINE-SHOP ON THE EVE OF STARTING ON A"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "The wind blows. The inn is filled with the scent of willow-flowers. In the wine-shops of Wu, women are pressing the wine. The sight invites customers to taste. The young men and boys of Nanking have gathered to see me off; I wish to start, but I do not, and we drink many, many horn cups to the bottom. I beg them to look at the water flowing toward the East, And when we separate to let their thoughts follow its example and run constantly in my direction."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "FÊNG HUANG T'AI"
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "ASCENDING THE TERRACE OF THE SILVER-CRESTED LOVE-PHEASANTS AT THE CITY"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "The silver-crested love-pheasants strutted upon the Pheasant Terrace. Now the pheasants are gone, the terrace is empty, and the river flows on its old, original way. Gone are the blossoms of the Palace of Wu and overgrown the road to it. Passed the generations of the Chin, with their robes and head-dresses; they lie beneath the ancient mounds."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "The three hills are half fallen down from Green Heaven. The White Heron Island cuts the river in two. Here also, drifting clouds may blind the Sun, One cannot see Ch'ang An, City of Eternal Peace. Therefore am I sorrowful."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "What hardships are encountered in a Northern flight! We fly Northward, ascending the T'ai Hang Mountains. The mountain road winds round a cliff, and it is very steep and dangerous; The precipice, sheer as though cut with a knife, rises to the great, wide blue of the sky. The horses' feet slip on the slanting ledges; The carriage-wheels are broken on the high ridges; The sand, scuffed into dust, floats in a continuous line to Yo Chou. The smoke of beacon fires connects us with the Country of the North. The spirit of killing is in the spears, in the cruel two-edged swords. The savage wind rips open the upper garments, the lower garments. The rushing whale squeezes the Yellow River; The man-eating beasts with long tusks assemble at Lo Yang."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "We press forward with no knowledge of when we shall return; We look back, thinking of our former home; Grieving and lamenting in the midst of ice and snow; Groaning aloud, with our bowels rent asunder. A foot of cloth does not cover the body, Our skins are cracked as the bark of a dead mulberry. The deep gullies prevent us from getting water from the mountain streams, Far away are the slopes where we might gather grass and twigs for our fires, Then, too, the terrible tiger lashes his tail, And his polished teeth glitter like Autumn frosts. Grass and trees cannot be eaten. We famish; we drink the drops of freezing dew. Alas! So we suffer, travelling Northward. I stop my four-horse carriage, overcome by misery. When will our Emperor find a peaceful road? When, before our glad faces, shall we see the Glory of Heaven?"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Last year they fought at the source of the Sang Ch'ien, This year they fight on the road by the Leek-green River. The soldiers were drenched by the waters of the Aral Sea, The horses were turned loose to find grass in the midst of the snows of the Heaven High Hills. Over ten thousand *li*, they attacked and fought, The three divisions are crumbled, decayed, utterly worn and old. The Hsiung Nu use killing and slaughter in the place of the business of plowing. From ancient times, only dry, white bones are seen on the yellow sand-fields. The House of Ch'in erected and pounded firm the wall to make a barrier before the dwelling-place of the Barbarians, The House of Han still preserved the beacon-stands where fires are lighted. The lighting of beacon fires on the stands never ceases, The fighting and attacking are without a time of ending. In savage attack they die--fighting without arms. The riderless horses scream with terror, throwing their heads up to the sky. Vultures and kites tear the bowels of men with their beaks And fly to hang them on the branches of dead trees. Officers and soldiers lying in mud, in grass, in undergrowth. Helpless, the General--Yes, incapable before this! We have learnt that soldiers are evil tools, But wise men have not accomplished the ending of war, and still we employ them."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "There are people who say the Crosswise River is good; I say the Crosswise River is terrible. The savage wind blows as if it would overturn the Heaven's Gate Mountains. The white waves are as high as the high rooms in the Temple of Wa Kuan."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "The sea tide flowing Southward passes Hsün Yang. From the beginning of things, the Ox Ledge has been more dangerous than the Standing Horse Hill. Those who wish to cross the Crosswise River Find evil winds and waves. The misery of that one stretch of water draws out its length to ten thousand *li*."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "When the Sea Demon passes by, a vicious wind curves back. The waves beat open the rock wall of the Gate of Heaven. Is the Eighth Month tide-bore of Chêkiang equal to this? It seems as though the vast, booming waves were part of the mountains--they spurt out snow."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "The Priest of the Province of Shu, carrying his table-lute in a cover of green, shot silk, Comes down the Western slope of the peak of Mount Omei. He moves his hands for me, striking the lute. It is like listening to the waters in ten thousand ravines, and the wind in ten thousand pine-trees. The traveller's heart is washed clean as in flowing water. The echoes of the overtones join with the evening bell. I am not conscious of the sunset behind the jade-grey hill, Nor how many and dark are the Autumn clouds."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "When the hair of your Unworthy One first began to cover her forehead, She picked flowers and played in front of the door. Then you, my Lover, came riding a bamboo horse. We ran round and round the bed, and tossed about the sweetmeats of green plums. We both lived in the village of Ch'ang Kan. We were both very young, and knew neither jealousy nor suspicion. At fourteen, I became the wife of my Lord. I could not yet lay aside my face of shame; I hung my head, facing the dark wall; You might call me a thousand times, not once would I turn round. At fifteen, I stopped frowning. I wanted to be with you, as dust with its ashes. I often thought that you were the faithful man who clung to the bridge-post, That I should never be obliged to ascend to the Looking-for-Husband Ledge. When I was sixteen, my Lord went far away. To the Ch'ü T'ang Chasm and the Whirling Water Rock of the Yü River Which, during the Fifth Month, must not be collided with; Where the wailing of the gibbons seems to come from the sky. Your departing footprints are still before the door where I bade you good-bye, In each has sprung up green moss. The moss is thick, it cannot be swept away. The leaves are falling, it is early for the Autumn wind to blow. It is the Eighth Month, the butterflies are yellow, Two are flying among the plants in the West garden; Seeing them, my heart is bitter with grief, they wound the heart of the Unworthy One. The bloom of my face has faded, sitting with my sorrow. From early morning until late in the evening, you descend the Three Serpent River. Prepare me first with a letter, bringing me the news of when you will reach home. I will not go far on the road to meet you, I will go straight until I reach the Long Wind Sands."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "I climb the hills of Chiu I--Oh-h-h-h-h! I look at the clear streams a long way off. I see distinctly the three branches of the Hsiang River, I hear the sound of its swift current. The water flows coldly; it is on its way to the lake. The horizontal Autumn clouds hide the sky. I go by the \"Bird's Path.\" I calculate the distance to my old home. Oh-h-h-h-h! I do not know how many thousand *li* it is from Ching to Wu. It is the hour of the Western brightness, of the half-round sun. The dazzle on the island is about to disappear; The smooth lake is brilliantly white--from the moon? Over the lake, the moon is rising. I think of the moment of meeting--the long stretch of time before it. I think of misty Yen and gaze at Yüeh. The lotus-flowers have fallen--Oh-h-h-h-h! The river is the colour of Autumn. The wind passes--passes. The night is endless--endless. I would go to the end of the Dark Sea. How eagerly I desire this! I think much of fishing for a leviathan from the Island of the Cold Sea. There is no rod long enough to raise it. I yield to the great waves, and my sorrow is increased. I will return. I will go home. Oh-h-h-h-h! Even for a little time, one cannot rely upon the World. I long to pick the immortal herbs on the hill of P'êng."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "The East wind has come again. I see the jade-green grass and realize that it is Spring. Everywhere there is an immense confusion of ripples and agitations. Why does the waving and fluttering of the weeping-willow make me sad? The sky is so bright it shines; everything is lovely and at peace. The breath of the sea is green, fresh, sweet-smelling; The heaths are vari-coloured, blue--green--as a kingfisher feather. Oh-h-h-h-h--How far one can see! Clouds whirl, fly, float, and cluster together, each one sharply defined; Waves are smoothed into a wide, continuous flowing. I examine the young moss in the well, how it starts into life. I see something dim--Oh-h-h-h-h--waving up and down like floss silk. I see it floating--it is a cobweb, coiling like smoke. Before all these things--Oh-h-h-h-h--my soul is severed from my body. Confronted with the wind, the brilliance, I suffer. I feel as one feels listening to the sound of the waters of the Dragon Mound in Ch'in, The gibbons wailing by the Serpent River. I feel as the \"Shining One\" felt when she passed the Jade Frontier, As the exile of Ch'u in the Maple Forest. I will try to climb a high hill and look far away into the distance. Pain cuts me to the bone and wounds my heart. My Spring heart is agitated as the surface of the sea, My Spring grief is bewildered like a flurry of snow. Ten thousand emotions are mingled--their sorrow and their joy. Yet I know only that my heart is torn in this Spring season. She of whom I am thinking--Oh-h-h-h-h--is at the shore of the Hsiang River, Separated by the clouds and the rainbow--without these mists I could surely see. I scatter my tears a foot's length upon the water's surface. I entrust the Easterly flowing water with my passion for the Cherished One. If I could command the shining of the Spring, could grasp it without putting it out--Oh-h-h-h-h-- I should wish to send it as a gift to that beautiful person at the border of Heaven."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "I love Ts'ui of Ch'iu Pu. He follows the ways of the Official T'ao. At his gate, he has planted five willow-trees, And on either side of the well, crowding it between them, stand two wu-t'ung trees. Mountain birds fly down and listen while he transacts business; From the eaves of his house, flowers drop into the midst of his wine. Thinking of my Lord, I cannot bear to depart. My thoughts are melancholy and endless."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "My Lord is like T'ao of P'êng Tsê. Often, during the day, he sleeps at the North window. Again, in the moonlight, he bends over his table-lute and plays, His hands follow his thoughts, for there are no strings. When a guest comes, it is wine alone which he pours out. He is the best of officials, since he does not care for gold. He has planted many grains on the Eastern heights, And he admonishes all the people to plow their fields early."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "In the old days, Ch'iu Pu was bare and desolate, The serving-men in the Official Residence were few. Because you, my Lord, have planted peach-trees and plum-trees, This place has suddenly become exuberantly fragrant. As your writing-brush moves, making the characters so full of life, you gaze at the white clouds; And, when the reed-blinds are rolled up, at the kingfisher-green of the fading hills; And, when the time comes, for long at the mountain moon; Still again, when you are exhilarated with wine, at the shadow of the moon in the wine-cup. Great man and teacher, I love you. I linger. I cannot bear to leave."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "THE SONG OF THE WHITE CLOUDS"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "The hills of Ch'u, The hills of Ch'in, White clouds everywhere. White clouds follow my Lord always, From place to place. They always follow My Lord, When my Lord arrives at the hills of Ch'u. Clouds also follow my Lord when he floats In a boat on the river Hsiang, With the wild wistaria hanging above The waters of the river Hsiang. My Lord will go back To where he can sleep Among the white clouds, When the sun is as high As the head of a helmeted man."
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Tidal water is a determined thing, it can be depended on; But it is impossible to make an appointment with the wind of Heaven. In the clear dawn, it veers Northwest; At the last moment of sunset, it blows Southeast. It is therefore difficult to set our sail. The thought of our happy meeting becomes insistent. The wide water reflects a moon no longer round, but broken. Water grass springs green in the broad reach. Yesterday, at the North Lake, there were plum-flowers; They were just beginning to open, the branches were not covered. To-day, at dawn, see the willows beyond the White Gate; The road is squeezed between them, they drop down their bright green silk threads. Everything stirs like this, with the year-- When will my coming be fixed? Willow-blossoms lie thick as snow on the river, I am worried, the heart of the traveller is sad. \"At daybreak I will leave the New Forest Reach\"-- But what is the use of humming Hsieh T'iao's poem."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "IN THE PROVINCE OF LU, AT THE ANCESTRAL SHRINE OF KING YAO. SAYING"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "King Yao has been dead for three thousand years, But the green pine, the ancient temple, remain. As we are bidding you good-bye, we set out offerings of cassia wine; We make obeisance, we bend our knees, and, rising, turn our faces to Heaven. Our hearts and spirits are pure. The colour of the sun urges our return. Song follows song, we tip up the flagon of sweet-scented wine. The horses whinny. We are all tipsy, yet we rise. Our hands separate. What words are there still to say?"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "A pot of wine among flowers. I alone, drinking, without a companion. I lift the cup and invite the bright moon. My shadow opposite certainly makes us three. But the moon cannot drink, And my shadow follows the motions of my body in vain. For the briefest time are the moon and my shadow my companions. Oh, be joyful! One must make the most of Spring. I sing--the moon walks forward rhythmically; I dance, and my shadow shatters and becomes confused. In my waking moments, we are happily blended. When I am drunk, we are divided from one another and scattered. For a long time I shall be obliged to wander without intention; But we will keep our appointment by the far-off Cloudy River."
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "If Heaven did not love wine, There would be no Wine Star in Heaven. If Earth did not love wine, There should be no Wine Springs on Earth. Why then be ashamed before Heaven to love wine. I have heard that clear wine is like the Sages; Again it is said that thick wine is like the Virtuous Worthies. Wherefore it appears that we have swallowed both Sages and Worthies. Why should we strive to be Gods and Immortals? Three cups, and one can perfectly understand the Great Tao; A gallon, and one is in accord with all nature. Only those in the midst of it can fully comprehend the joys of wine; I do not proclaim them to the sober."
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "This time of ours Is like a great, confused dream. Why should one spend one's life in toil? Thinking this, I have been drunk all day. I fell down and lay prone by the pillars in front of the house; When I woke up, I gazed for a long time At the courtyard before me. A bird sings among the flowers. May I ask what season this is? Spring wind, The bright oriole of the water-flowing flight calls. My feelings make me want to sigh. The wine is still here, I will throw back my head and drink."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "I sing splendidly, I wait for the bright moon. Already, by the end of the song, I have forgotten my feelings."
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Fig-wood oars, A boat of the wood of the sand-pear. At either end, Jade flageolets and pipes of gold."
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "Amidships, Jars of delectable wine, And ten thousand pints Put by."
+    },
+    {
+      "id": "s25-2",
+      "sceneId": "s25",
+      "text": "A boat-load of singing-girls Following the water ripples-- Going, Stopping, Veering--"
+    },
+    {
+      "id": "s25-3",
+      "sceneId": "s25",
+      "text": "The Immortal waited, Then mounted and rode the yellow crane. But he who is the guest of the sea has no such desire, Rather would he be followed by the white gulls."
+    },
+    {
+      "id": "s25-4",
+      "sceneId": "s25",
+      "text": "The *tzŭ* and *fu* of Ch'ü P'ing hang suspended like the sun and moon. The terraces and the pleasure-houses Of the Kings of Ch'u Are empty heaps of earth."
+    },
+    {
+      "id": "s25-5",
+      "sceneId": "s25",
+      "text": "I am drunk with wine. With the sweet taste of it; I am overflowed with the joy of it. When I take up my writing-brush, I could move the Five Peaks."
+    },
+    {
+      "id": "s25-6",
+      "sceneId": "s25",
+      "text": "When I have finished my poem, I laugh aloud in my arrogance. I rise to the country of the Immortals which lies in the middle of the sea. If fame followed the ways of the good official, If wealth and rank were long constant, Then indeed might the water of the Han River flow Northwest."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "The Emperor commands; three times the summons. He who left has not yet returned. To-morrow, at sunrise, he will go out by the Pass of Wu. From the upper chamber of white jade, I shall gaze far off; but I shall be able to make out nothing. Our thoughts will be with each other. I must ascend the Looking-for-Husband Hill."
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "As I left my door, my wife dragged my clothes with all her strength. She asked me in how many days I should return from the West. \"When I return, supposing I wear at my girdle the yellow gold seal, You must not imitate Su Ch'in's wife and not leave your loom.\""
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "The upper chamber of kingfisher jade, the stairs of gold-- Who passes the night alone, leaning against the door and sobbing? She sits all night by the cold lamp until the moon melts into the dawn. Her streaming, streaming tears are exhausted--to the West of the Ch'u Barrier."
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "A Winter night, a cold Winter night. To me, the night is unending. I chant heavily to myself a long time. I sit, sit in the North Hall. The water in the well is solid with ice. The moon enters the Women's Apartments. The flame of the gold lamp is very small, the oil is frozen. It shines on the misery of my weeping."
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "The gold lamp goes out, But the weeping continues and increases. The Unworthy One hides her tears in her sleeve. She hearkens to the song of her Lord, to the sound of it. The Unworthy One knows her passion. The passion and the sound unite, There is no discord between them. If a single phrase were unsympathetic to my thoughts, Then, though my Lord sang ten thousand verses which should cause even the dust on the beams to fly, to me it would be nothing."
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "Once the Unworthy One was a maiden of the Ts'ung Terrace. Joyfully lifting my moth-pencilled eyebrows, I entered the carnation-coloured Palace. Relying on myself, my flower-like face, How should I know that it would wither and fade? Banished below the jade steps, Gone as the early morning clouds are gone, Whenever I think of Han Tan City I dream of the Autumn moon from the middle of the Palace. I cannot see the Prince, my Lord. Desolate, my longing--until daylight comes."
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "The sorrel horse with the black tail gallops, gallops, and neighs, Lifting, curving, his grey-jade hoofs. He shies from the flowing water, unwilling to cross, As though he feared the mud for his embroidered saddlecloth. The snow is white on the far frontier hills, The clouds are yellow over the misty frontier sea. I strike with my leather whip, there are ten thousand *li* to go. How can I accomplish it, thinking of Spring in the Women's Apartments?"
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "The magnificent horse, galloping swiftly, tramples the fallen flower. Down comes the riding-whip, straight down--it strikes the Five Cloud Cart. The young person who lifts the pearl door-screen is very beautiful. Moreover, she smiles. She points to a Red Building in the distance--it is the home of the Flower Maiden."
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "Clear green hills at a right angle to the North wall, White water winding to the East of the city. Here is the place where we must part. The lonely water-plants go ten thousand *li*; The floating clouds wander everywhither as does man. Day is departing--it and my friend. Our hands separate. Now he is going. \"Hsiao, hsiao,\" the horse neighs. He neighs again, \"Hsiao, hsiao.\""
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "DESCENDING THE EXTREME SOUTH MOUNTAIN; PASSING THE HOUSE OF HU SSŬ,"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "We come down the green-grey jade hill, The mountain moon accompanies us home. We turn and look back up the path: Green, green, the sky; the horizontal, kingfisher-green line of the hills is fading. Holding each other's hands, we reach the house in the fields. Little boys throw open the gate of thorn branches, The quiet path winds among dark bamboos, Creepers, bright with new green, brush our garments. Our words are happy, rest is in them. Of an excellent flavour, the wine! We scatter the dregs of it contentedly. We sing songs for a long time; we chant them to the wind in the pine-trees. By the time the songs are finished, the stars in Heaven's River are few. I am tipsy. My friend is continuously merry. In fact, we are so exhilarated that we both forget this complicated machine, the world."
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "Looking South and straight from Hsien Yang for five thousand *li*, One could see, among the full, blowing clouds, the rocky sharpness of peaks, Were it not for the horizontal line of the Two-Edged Sword Mountains cutting across the view. They are flat against the green sky, and open in the middle to let the sky through. On their heights, the wind whistles awesomely in the pines; it booms in great, long gusts; it clashes like the strings of a jade-stone psaltery; it shouts on the clearness of a gale. In the Serpent River country, the gibbons--Oh-h-h-h-h--all the gibbons together moan and grieve. Beside the road, torrents flung from a great height rush down the gully, They toss stones and spray over the road, they run rapidly, they whirl, they startle with the noise of thunder. I bid good-bye to my devoted friend--Oh-h-h-h-h--now he leaves me. When will he come again? Oh-h-h-h-h--When will he return to me? I hope for my dear friend the utmost peace. My voice is heavy, I sigh and draw my breath haltingly. I look at the green surface of the water flowing to the East. I grieve that the white sun hides in the West. The wild goose has taken the place of the swallow--Oh-h-h-h-h--I hear the pattering, falling noises of Autumn. Dark are the rain clouds; the colour of the town of Ch'in is dark. When the moon glistens on the Road of the Two-Edged Sword--Oh-h-h-h-h-- I and you, even though in different provinces, may drink our wine opposite each other, And listen to the talking Of our hearts."
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "From whose house do the invisible notes of a jade flute come flying? The Spring wind scatters them. They fill the City of Lo Yang. To-night, as the phrases form, I hear \"The Snapped Willow.\" To whom do they not bring back the love of his old, early garden?"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "The sun is setting--has set--on the Spring-green Mountain. Hsieh Kung's retreat is solitary and still. No sound of man in the bamboo grove. The white moon shines in the centre of the unused garden pool. All round the ruined Summer-house is decaying grass, Grey mosses choke the abandoned well. There is only the free, clear wind Again--again--passing over the stones of the spring."
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "The old Imperial Park--the ruined Terrace--the young willows. The water-chestnut pickers are singing, a simple song unaccompanied by instruments--but joy is unbearable. For now the moon over the Western River is alone. The time is past when she gazed upon the concubines in the Palace of the King of Wu."
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "I love the beauty of the Wan River. One can see its clear heart shining a hundred feet deep. In what way does it not equal the river Hsin An? For a thousand times eight feet one can see its bright bed, The white sand keeps the colour of the moon. The dark green bamboos accentuate the Autumn sounds. Really one cannot help laughing to think that, until now, the rapid current celebrated by Yen Has usurped all the fame."
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "Do you not see the waters of the Yellow River coming down from Heaven? They rush with incredible speed to the sea, and they never turn and come back again. Do you not see, in the clear mirror of the Guest Hall, the miserable white hair on my head? At dawn it is like shining thread, but at sunset it is snow. In this life, to be perfectly happy, one must drain one's pleasures; The golden wine-cup must not stand empty opposite the moon. Heaven put us here, we must use what we have. Scatter a thousand ounces of silver and you are but where you were. Boil the sheep, Kill the ox, Be merry. We should drink three hundred cups at once. Mr. Wise Gentleman Ts'en, And you, Mr. Scholar Tan Ch'iu, Drink, you must not stop. I will sing one of my poems for you, Please lean over and listen: \"Bells! Drums! Delicacies Worth their weight in jade-- These things Are of the slightest value. I only want to be drunk For ages and never wake. The sages and worthies of old times Have left not a sound, Only those who drank Have achieved lasting fame. The King of Ch'ên, long ago, caroused In the Hall of Peaceful Content. They drank wine paid At a full ten thousand a gallon; They surpassed themselves in mirth, And the telling of obscene stories. How can a host say He has very little money. It is absolutely imperative That he buy wine for his friends. Horses of five colours, dappled flower horses, Fur coats costing A thousand ounces of silver-- He sends his son to exchange All these for delectable wine, So that you and I together May drown our ancient grief.\""
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "You have the \"bird's foot-print\" characters. You suggest that we drink together at the Lute Stream. The characters you wrote are in the centre of a foot of pure white silk, They are like exquisite clouds dropped from Heaven. Having finished reading, I smile at the empty air, I feel as though my friend were before me Reciting verses for a long time. The characters are not faded. I shall keep them in my sleeve, and they should last three years."
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "The parrots come, they cross the river waters of Wu. The island in the river is called Parrot Island. The parrots are flying West to the Dragon Mountain. There are sweet grasses on the island, and how green, green, are its trees!"
+    },
+    {
+      "id": "s40-1",
+      "sceneId": "s40",
+      "text": "The mists part and one can see the leaves of the spear-orchid, and its scent is warm on the wind; The water is embroidered and shot with the reflections of the peach-tree blossoms growing on both banks. Now indeed does the departing official realize the full meaning of his banishment. The long island--the solitary moon--facing each other in the brightness."
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "Moon over the houses of Han, over the site of Ch'in. It flows as water--its brightness shone on Ming Fei, the \"Bright Concubine,\" Who took the road to the Jade Pass. She went to the edge of Heaven, but she did not return; She gave up the moon of Han, she departed from the Eastern Sea. The \"Bright Concubine\" married in the West, and the day of her returning never came. For her beautiful painted face, there was the long, cold snow instead of flowers. She, with eyebrows like the antennæ of moths, pined and withered. Her grave is in the sand of the Barbarians' country. Because, when alive, she did not pay out yellow gold, The portrait painted of her was distorted. Now she is dead no one can prevent the bright green grass from spreading over her grave, And men weep because of it."
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "At what season last year did my Lord leave his Unworthy One? In the Southern garden, the butterflies were fluttering in the young green grass. Now, this year, at what season does the Unworthy One cherish thoughts of her Lord? There is white snow on the Western hills and the clouds of Ch'in are dark. It is three thousand *li* from here to the Jade Barrier. I desire to send the \"harmonious writings,\" but how can they reach you?"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "At fifteen, she entered the Palace of Han, Her flower-face was like a river in Spring. The Prince chose her of the jade colour To attend his rest within the embroidered screen. As she presented the pillow, she was lovely as the evening moon. He who wears the dragon robes delighted in the sweetly scented wind of her garments. How was it possible for the \"Flying Swallow\" to snatch the Emperor's love? Jealousy unending! Profoundest grief which can so wound a person And turn the black cloud head-dress to frosted thistledown!"
+    },
+    {
+      "id": "s43-1",
+      "sceneId": "s43",
+      "text": "If, for one day, our desires be not satisfied, Verily the things of the world are nothing. Change the duck-feather dress for sweet wine, Cease to embroider dragons on the dresses for the wu dance. She is chilly with bitterness, Words cannot be endured. For one's Lord one plays the table-lute of wu-t'ung wood with strings of silk, But when one's bowels are torn with grief, the strings also break. Grief in the heart at night is anguish and despair."
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "The drooping willow brushes the very clear water, Beautifully it flickers in this East-wind time of the year. Its flowers are bright as the snow of the Jade Pass, Its leaves soft as smoke against the gold window. She, the Lovely One, bound in her long thoughts; Facing them, her heart is burnt with grief. Pull down a branch, Gather the Spring colour And send it far, Even to that place Before the Dragon Gate."
+    },
+    {
+      "id": "s44-1",
+      "sceneId": "s44",
+      "text": "AUTUMN RIVER SONG"
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "In the clear green water--the shimmering moon. In the moonlight--white herons flying. A young man hears a girl plucking water-chestnuts; They paddle home together through the night, singing."
+    },
+    {
+      "id": "s45-1",
+      "sceneId": "s45",
+      "text": "VISITING THE TAOIST PRIEST ON THE MOUNTAIN WHICH UPHOLDS HEAVEN."
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "A dog, A dog barking. And the sound of rushing water. How dark and rich the peach-flowers after the rain. Every now and then, between the trees, I see deer. Twelve o'clock, but I hear no bell in the ravine. Wild bamboos slit the blue-green of a cloudy sky, The waterfall hangs against the jade-green peak. There is no one to tell me where he has gone. I lean against the pine-trees grieving."
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "He asks why I perch in the green jade hills. I smile and do not answer. My heart is comfortable and at peace. Fallen peach-flowers spread out widely, widely, over the water. It is another sky and earth, not the world of man."
+    },
+    {
+      "id": "s47-1",
+      "sceneId": "s47",
+      "text": "RECITING VERSES BY MOONLIGHT IN A WESTERN UPPER CHAMBER IN THE CITY OF"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "The night is still in Chin Ling, a cool wind blows. I am alone in a high room, gazing over Wu and Yüeh. White clouds shine on the water and blur the reflection of the still city. The cold dew soaks my clothes, Autumn moonlight is damp. In the moonlight, murmuring poems, one loses count of time. From old days until now, people who can really see with their eyes are few, Those who understand and speak of a clear river as being bright as silk. I suggest that men meditate at length on Hsieh Hsüan Hui."
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "At dawn, I left the Red Bird Gate; At sunset, I came to roost on the White Heron Island. The image of the moon tumbles along the bright surface of the water. The Tower above the City Gate is lost in the twinkling light of the stars. I gaze far off, toward my beloved, the Official of Chin Ling, And the longing in my heart is like that for the Green Jasper Tree. It is useless to tell my soul to dream; When it comes back, it will feel the night turned to Autumn. The green water understands my thoughts, For me it flows to the Northwest. Because of this, the sounds of my jade table-lute Will follow the flowing of its current and carry my grief to my friend."
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "The Sorceress Mountain presses against Green Heaven. The Serpent River runs terribly fast. The Serpent River can be suddenly exhausted. The time may never come when we shall arrive at the Green Heaven. Three dawns shine upon the Yellow Ox. Three sunsets--and we go so slowly. Three dawns--again three sunsets-- And we do not notice that our hair is white as silk."
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "There is one place which is an everlasting home to me: The Jade Woman Peak on the High Southern Mountain. Often, a wide, flat moonlight Hangs upon the pines of the whirling Eastern stream. You are going to pick the fairy grasses And the shooting purple flower of the *ch'ang p'u*."
+    },
+    {
+      "id": "s51-1",
+      "sceneId": "s51",
+      "text": "After a year, perhaps, you will come to see me Riding down from the green-blue Heaven on a white dragon."
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "In front of my bed the moonlight is very bright. I wonder if that can be frost on the floor? I lift up my head and look full at the full moon, the dazzling moon. I drop my head, and think of the home of old days."
+    },
+    {
+      "id": "s52-1",
+      "sceneId": "s52",
+      "text": "THE SERPENT MOUND"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "Chia, the Scholar, gazes into the West, thinking of the splendour of the Capitol. Although you have been transferred to the broad reaches of the river Hsiang, you must not sigh in resentment. The mercy of the Sainted Lord is far greater than that of Han Wên Ti. The Princely One had pity, and did not appoint you to the station of the Unending Sands."
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "Old Tai is gone down to the Yellow Springs. Yet he must still wish to make \"Great Spring Wine.\" There is no Li Po on the terrace of Eternal Darkness. To whom, then, will he sell his wine?"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "The house of the lonely scholar is in the winding lane. The great scholar's gate is very high. The garden pool lies and shines like the magic gall mirror; Groves of trees throw up flowers with wide, open faces; The leaf-coloured water draws the Spring sun. Sitting in the green, covered passage-way, watching the strange, red clouds of evening, Listening to the lovely music of flageolets and strings, The Golden Valley is not much to boast of."
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "This is the hour when the crows come to roost on the Ku Su Terrace. In his Palace, the King of Wu is drinking with Hsi Shih. Songs of Wu--posturings of Ch'u dances--and yet the revels are not finished. But already the bright hills hold half of the sun between their lips, The silver-white arrow-tablet above the gold-coloured brass jar of the water-clock marks the dripping of much water, And, rising, one can see the Autumn moon sliding beneath the ripples of the river, While slowly the sun mounts in the East-- What hope for the revels now?"
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "The Autumn moon was white upon the Southern Lake. That night the Official Wang sent me an invitation. Behind the embroidered bed-curtain lay the Official Secretary--drunk. The woven dresses of the beautiful girls who performed the wu dance took charming lines, The shrill notes of the bamboo flute reached to Mien and O, The phrases of the songs rose up to the silent clouds. Now that we are parted, I grieve. We think of each other a single piece of water distant."
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "I have a flagon of wine in my hand. I am alone on the Ancestor Rock in the river. Since the time when Heaven and Earth were divided, How many thousand feet has the rock grown? I lift my cup to Heaven and smile. Heaven turns round, the sun shines in the West. I am willing to sit on this rock forever, Perpetually casting my fish-line like Yen Ling. Send and ask the man in the midst of the hills Whether we are not in harmony, both pursuing the same thing."
+    },
+    {
+      "id": "s58-1",
+      "sceneId": "s58",
+      "text": "A FAREWELL BANQUET TO MY FATHER'S YOUNGER BROTHER YÜN, THE IMPERIAL"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "When I was young, I spent the white days lavishly. I sang--I laughed--I boasted of my ruddy face. I do not realize that now, suddenly, I am old. With joy I see the Spring wind return. It is a pity that we must part, but let us make the best of it and be happy. We walk to and fro among the peach-trees and plum-trees. We look at the flowers and drink excellent wine. We listen to the birds and climb a little way up the bright hills. Soon evening comes and the bamboo grove is silent. There is no one--I shut my door."
+    },
+    {
+      "id": "s59-1",
+      "sceneId": "s59",
+      "text": "IN THE PROVINCE OF LU, TO THE EAST OF THE STONE GATE MOUNTAIN, TAKING"
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "When drunk, we were divided; but we have been together again for several days. We have climbed everywhere, to every pool and ledge. When, on the Stone Gate Road, Shall we pour from the golden flagon again? The Autumn leaves drop into the Four Waters, The Ch'u Mountain is brightly reflected in the colour of the lake. We are flying like thistledown, each to a different distance; Pending this, we drain the cups in our hands."
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "The bright moon rises behind the Heaven-high Mountain, A sea of clouds blows along the pale, wide sky. The far-off wind has come from nearly ten thousand *li*, It has blown across the Jade Gate Pass. Down the Po Têng Road went the people of Han To waylay the men of Hu beside the Bright Green Bay. From the beginning, of those who go into battle, Not one man is seen returning. The exiled Official gazes at the frontier town, He thinks of his return home, and his face is very bitter. Surely to-night, in the distant cupola, He sighs, and draws heavy breaths. How then can rest be his?"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "A hundred battles, the sandy fields of battles, armour broken into fragments. To the South of the city they are already shut in and surrounded by many layers of men. They rush out from their cantonments. They shoot and kill the General of the Barbarians. A single officer leads the routed soldiers of the \"Thousand Horsemen\" returning whence they came."
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "At Chin Ling, the tavern where travellers part is called the Rest-House of Deep Trouble. The creeping grass spreads far, far, from the roadside where it started. There is no end to the ancient sorrow, as water flows to the East. Grief is in the wind of this place, burning grief in the white aspen. Like K'ang Lo I climb on board the dull travelling boat. I hum softly \"On the Clear Streams Flies the Night Frost.\" It is said that, long ago, on the Ox Island Hill, songs were sung which blended the five colours. Now do I not equal Hsieh, and the youth of the House of Yüan? The bitter bamboos make a cold sound, swaying in the Autumn moonlight. I pass the night alone, desolate behind the reed-blinds, and dream of returning to my distant home."
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "In the attitude, and with the manner, of the woman of old, Full of grief, she stands in the glorious morning light. The dew is like the tears of to-day; The mosses like the garments of years ago. Her resentment is that of the Woman of the Hsiang River; Her silence that of the concubine of the King of Ch'u. Still and solitary in the sweet-scented mist, As if waiting for her husband's return."
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "How many Springs have we been apart? You do not come home. Five times have I seen the cherry-blossoms from the jade window, Besides there are the \"embroidered character letters.\" You must sigh as you break the seals. When this happens, the agony of my longing must stop your heart. I have ceased to wear the cloud head-dress. I have stopped combing and dressing the green-black hair on my temples. My sorrow is like a whirling gale--like a flurry of white snow. Last year I sent a letter to the Hill of the Bright Ledge telling you these things; The letter I send this year will again implore you."
+    },
+    {
+      "id": "s65-1",
+      "sceneId": "s65",
+      "text": "East wind--Oh-h-h-h! East wind, blow for me. Make the floating cloud come Westward. I wait his coming, and he does not come. The fallen flower lies quietly, quietly, thrown upon the green moss."
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "The Heavens have revolved. The \"Northern Measure\" hangs above the Western wing. In the Gold House, there is no one; fireflies flit to and fro. Moonlight seeks to enter the Palace of the High Gate, To one in the centre of the Palace it brings an added grief."
+    },
+    {
+      "id": "s66-1",
+      "sceneId": "s66",
+      "text": "Unending grief in the Cassia Hall. Spring is forgotten. Autumn dust rises up on the four sides of the Yellow Gold House. At night, the bright mirror hangs against a dark sky; It shines upon the solitary one in the Palace of the High Gate."
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "(*The Woman Speaks*)"
+    },
+    {
+      "id": "s67-1",
+      "sceneId": "s67",
+      "text": "The colour of the day is over; flowers hold the mist in their lips. The bright moon is like glistening silk. I cannot sleep for grief. The tones of the Chao psaltery begin and end on the bridge of the silver-crested love-pheasant. I wish I could play my Shu table-lute on the mandarin duck strings. The meaning of this music--there is no one to receive it. I desire my thoughts to follow the Spring wind, even to the Swallow Mountains. I think of my Lord far, far away, remote as the Green Heaven. In old days, my eyes were like horizontal waves; Now they flow, a spring of tears. If you do not believe that the bowels of your Unworthy One are torn and severed, Return and take up the bright mirror I was wont to use."
+    },
+    {
+      "id": "s67-2",
+      "sceneId": "s67",
+      "text": "(*The Man Speaks*)"
+    },
+    {
+      "id": "s67-3",
+      "sceneId": "s67",
+      "text": "We think of each other eternally. My thoughts are at Ch'ang An. The Autumn cricket chirps beside the railing of the Golden Well; The light frost is chilly, chilly; the colour of the bamboo sleeping mat is cold. The neglected lamp does not burn brightly. My thoughts seem broken off. I roll up the long curtain and look at the moon--it is useless, I sigh continually. The Beautiful, Flower-like One is as far from me as the distance of the clouds. Above is the brilliant darkness of a high sky, Below is the rippling surface of the clear water. Heaven is far and the road to it is long; it is difficult for a man's soul to compass it in flight. Even in a dream my spirit cannot cross the grievous barrier of hills. We think of each other eternally. My heart and my liver are snapped in two."
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "Beautiful is this woman who rolls up the pearl-reed blind. She sits in an inner chamber, And her eyebrows, delicate as a moth's antennæ, Are drawn with grief. One sees only the wet lines of tears. For whom does she suffer this misery? We do not know."
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "The trees in the level forest stand in rows and rows, The mist weaves through them. The jade-green of the cold hillside country hurts one's heart. Night colour drifts into the high cupola. In the cupola, a man grieves."
+    },
+    {
+      "id": "s69-1",
+      "sceneId": "s69",
+      "text": "I stand--stand--on the jade steps, doing nothing. The birds are flying quickly to roost. There is the road I should follow if I were going home. Instead, for me, the \"long\" rest-houses alternate with the \"short\" rest-houses."
+    },
+    {
+      "id": "s69-2",
+      "sceneId": "s69",
+      "text": "AT THE YELLOW CRANE TOWER, TAKING LEAVE OF MÊNG HAO JAN ON HIS DEPARTURE"
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "I take leave of my dear old friend at the Yellow Crane Tower. In the flower-smelling mist of the Third Month he will arrive at Yang Chou. The single sail is shining far off--it is extinguished in the jade-coloured distance, I see only the long river flowing to the edge of Heaven."
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "The clear spring reflects the thin, wide-spreading pine-tree-- And for how many thousand, thousand years? No one knows. The late Autumn moon shivers along the little water ripples, The brilliance of it flows in through the window. Before it I sit for a long time absent-mindedly chanting, Thinking of my friend-- What deep thoughts! There is no way to see him. How then can we speak together? Joy is dead. Sorrow is the heart of man."
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "Li Ling is buried in the sands of Hu. Su Wu has returned to the homes of Han. Far, far, the Five Spring Pass, Sorrowful to see the flower-like snow. He is gone, separated, by a distant country, But his thoughts return, Long sighing in grief. Toward the Northwest Wild geese are flying. If I sent a letter--so--to the edge of Heaven."
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "The Autumn wind is fresh and clear; The Autumn moon is bright. Fallen leaves whirl together and scatter. The jackdaws, who have gone to roost, are startled again. We are thinking of each other, but when shall we see each other? Now, to-night, I suffer, because of my passion."
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "In the far distance, the mountains seem to rise out of the river; Two peaks, standing opposite each other, make a natural gateway. The cold colour of the pines is reflected between the river-banks, Stones divide the current and shiver the wave-flowers to fragments. Far off, at the border of Heaven, is the uneven line of mountain-pinnacles; Beyond, the bright sky is a blur of rose-tinted clouds. The sun sets, and the boat goes on and on-- As I turn my head, the mountains sink down into the brilliance of the cloud-covered sky."
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "In Yang Chou, the blossoms are dropping. The night-jar calls. I hear it said that you are going to Lung Piao--that you will cross the Five Streams. I fling the grief of my heart up to the bright moon That it may follow the wind and arrive, straight as eyesight, to the West of Yeh Lang."
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "Li Po gets into a small boat--he is on the point of starting. Suddenly he hears footsteps on the bank and the sound of singing. The Peach-Flower Pool is a thousand feet deep, Yet it is not greater than the emotion of Wang Lun as he takes leave of me."
+    },
+    {
+      "id": "s76-1",
+      "sceneId": "s76",
+      "text": "SAYING GOOD-BYE TO A FRIEND WHO IS GOING ON AN EXCURSION TO THE"
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "I bid you good-bye, my friend, as you are going on an excursion to the Plum-Flower Lake. You should see the plum-blossoms open; It is understood that you hire a person to bring me some. You must not permit the rose-red fragrance to fade. You will only be at the New Forest Reach a little time, Since we have agreed to drink at the City of the Golden Mound at full moon. Nevertheless you must not omit the wild-goose letter, Or else our knowledge of each other will be as the dust of Hu to the dust of Yüeh."
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "After all, what have I come here to do? To lie and meditate at Sha Ch'iu Ch'êng. Near the city are ancient trees, And day and night are continuous with Autumn noises. One cannot get drunk on Lu wine, The songs of Ch'i have no power to excite emotion. I think of my friend, and my thoughts are like the Wên River, Mightily moving, directed toward the South."
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "Before the White Heron Island--the moon. At dawn to-morrow I shall bid good-bye to the returning traveller. The sky is growing bright, The sun is behind the Green Dragon Hill; Head high it pushes out of the sea clouds and appears. Flowing water runs without emotions, The sail which will carry him away meets the wind and fills. We watch it together. We cannot bear to be separated. Again we pledge each other from the cups we hold in our hands."
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "I had already wandered away from the People's Temple, But I was obliged to sleep within the temple precincts. The dark ravine was full of the music of silence, The moon scattered bright shadows through the forest. The Great Gate against the sky seemed to impinge upon the paths of the planets. Sleeping among the clouds, my upper garments, my lower garments, were cold. Wishing to wake, I heard the sunrise bell Commanding men to come forth and examine themselves in meditation."
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "It is the Eighth Month, the very height of Autumn. The wind rages and roars. It tears off three layers of my grass-roof. The thatch flies--it crosses the river--it is scattered about in the open spaces by the river. High-flying, it hangs, tangled and floating, from the tops of forest trees; Low-flying, it whirls--turns--and sinks into the hollows of the marsh. The swarm of small boys from the South Village laugh at me because I am old and feeble. How dare they act like thieves and robbers before my face, Openly seizing my thatch and running into my bamboo grove? My lips are scorched, my mouth dry, I scream at them, but to no purpose. I return, leaning on my staff. I sigh and breathe heavily."
+    },
+    {
+      "id": "s81-1",
+      "sceneId": "s81",
+      "text": "Presently, of a sudden, the wind ceases. The clouds are the colour of ink. The Autumn sky is endless--endless--stretching toward dusk and night. My old cotton quilt is as cold as iron; My restless son sleeps a troubled sleep, his moving foot tears the quilt. Over the head of the bed is a leak. Not a place is dry. The rain streams and stands like hemp--there is no break in its falling. Since this misery and confusion, I have scarcely slept or dozed. All the long night, I am soaking wet. When will the light begin to sift in? If one could have a great house of one thousand, ten thousand rooms-- A great shelter where all the Empire's shivering scholars could have happy faces-- Not moved by wind or rain, solid as a mountain-- Alas! When shall I see that house standing before my eyes? Then, although my own hut were destroyed, although I might freeze and die, I should be satisfied."
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "The river makes a bend and encircles the village with its current. All the long Summer, the affairs and occupations of the river village are quiet and simple. The swallows who nest in the beams go and come as they please. The gulls in the middle of the river enjoy one another, they crowd together and touch one another. My old wife paints a chess-board on paper. My little sons hammer needles to make fish-hooks. I have many illnesses, therefore my only necessities are medicines; Besides these, what more can so humble a man as I ask?"
+    },
+    {
+      "id": "s82-1",
+      "sceneId": "s82",
+      "text": "THE EXCURSION"
+    },
+    {
+      "id": "s82-2",
+      "sceneId": "s82",
+      "text": "A NUMBER OF YOUNG GENTLEMEN OF RANK, ACCOMPANIED BY SINGING-GIRLS, GO"
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "How delightful, at sunset, to loosen the boat! A light wind is slow to raise waves. Deep in the bamboo grove, the guests linger; The lotus-flowers are pure and bright in the cool evening air. The young nobles stir the ice-water; The Beautiful Ones wash the lotus-roots, whose fibres are like silk threads. A layer of clouds above our heads is black. It will certainly rain, which impels me to write this poem."
+    },
+    {
+      "id": "s83-1",
+      "sceneId": "s83",
+      "text": "The rain comes, soaking the mats upon which we are sitting. A hurrying wind strikes the bow of the boat. The rose-red rouge of the ladies from Yüeh is wet; The Yen beauties are anxious about their kingfisher-eyebrows. We throw out a rope and draw in to the sloping bank. We tie the boat to the willow-trees. We roll up the curtains and watch the floating wave-flowers. Our return is different from our setting out. The wind whistles and blows in great gusts. By the time we reach the shore, it seems as though the Fifth Month were Autumn."
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "I sought a lodging for the night, at sunset, in the Stone Moat Village. Recruiting Officers, who seize people by night, were there. A venerable old man climbed over the wall and fled. An old woman came out of the door and peered. What rage in the shouts of the Recruiting Officers! What bitterness in the weeping of the old woman! I heard the words of the woman as she pled her cause before them: \"My three sons are with the frontier guard at Yeh Ch'êng. From one son I have received a letter. A little while ago, two sons died in battle. He who remains has stolen a temporary lease of life; The dead are finished forever. In the house, there is still no grown man, Only my grandson at the breast. The mother of my grandson has not gone, Going out, coming in, she has not a single whole skirt. I am an old, old woman, and my strength is failing, But I beg to go with the Recruiting Officers when they return this night. I will eagerly agree to act as a servant at Ho Yang; I am still able to prepare the early morning meal.\" The sound of words ceased in the long night, It was as though I heard the darkness choke with tears. At daybreak, I went on my way, Only the venerable old man was left."
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "When bows are bent, they should be bent strongly; When arrows are used, they should be long. The bow-men should first shoot the horses. In taking the enemy prisoner, the Leader should first be taken; There should be no limit to the killing of men. In making a kingdom, there must naturally be a boundary. If it were possible to regulate usurpation, Would so many be killed and wounded?"
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "At dawn, the conscripted soldiers enter the camp outside the Eastern Gate. At sunset, they cross the bridge of Ho Yang. The setting sunlight is reflected on the great flags. Horses neigh. The wind whines--whines-- Ten thousand tents are spread along the level sand. Officers instruct their companies. The bright moon hangs in the middle of the sky. The written orders are strict that the night shall be still and empty. Sadness everywhere. A few sounds from a Mongol flageolet jar the air. The strong soldiers are no longer proud, they quiver with sadness. May one ask who is their General? Perhaps it is Ho P'iao Yao."
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "Jade dew lies upon the withered and wounded forest of maple-trees. On the Sorceress Hill, over the Sorceress Gorge, the mist is desolate and dark. The ripples of the river increase into waves and blur with the rapidly flowing sky. The wind-clouds at the horizon become confused with the Earth. Darkness. The myriad chrysanthemums have bloomed twice. Days to come--tears. The solitary little boat is moored, but my heart is in the old-time garden. Everywhere people are hastening to measure and cut out their Winter clothes. At sunset, in the high City of the White Emperor, the hurried pounding of washed garments."
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "The poems of Po are unequalled. His thoughts are never categorical, but fly high in the wind. His poems are clear and fresh as those of Yü, the official; They are fine and easy as those of Pao, the military counsellor. I am North of the river Wei, looking at the Spring trees; You are East of the river, watching the sunset clouds. When shall we meet over a jug of wine? When shall I have another precious discussion of literature with you?"
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "A cold wind blows up from the edge of Heaven. The state of mind of the superior man is what? When does the wild goose arrive? Autumn water flows high in the rivers and lakes."
+    },
+    {
+      "id": "s89-1",
+      "sceneId": "s89",
+      "text": "They hated your essay--yet your fate was to succeed. The demons where you are rejoice to see men go by. You should hold speech with the soul of Yüan, And toss a poem into the Mi Lo River as a gift to him."
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "Autumn comes, We meet each other. You still whirl about as a thistledown in the wind. Your Elixir of Immortality is not yet perfected And, remembering Ko Hung, you are ashamed. You drink a great deal, You sing wild songs, Your days pass in emptiness. Your nature is a spreading fire, It is swift and strenuous. But what does all this bravery amount to?"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "Illimitable happiness, But grief for our white heads. We love the long watches of the night, the red candle. It would be difficult to have too much of meeting, Let us not be in a hurry to talk of separation. But because the Heaven River will sink, We had better empty the wine-cups. To-morrow, at bright dawn, the world's business will entangle us. We brush away our tears, We go--East and West."
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "To-night--the moon at Fu Chou. In the centre of the Women's Apartments There is only one to look at it. I am far away, but I love my little son, my daughter. They cannot understand and think of Ch'ang An. The sweet-smelling mist makes the cloud head-dress damp, The jade arm must be chilly In this clear, glorious shining. When shall I lean on the lonely screen? When shall we both be shone upon, and the scars of tears be dry?"
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "The sun rose while I slept. I had not yet risen When I heard an early oriole above the roof of my house. Suddenly it was like the Royal Park at dawn, With birds calling from the branches of the ten-thousand-year trees. I thought of my time as a Court Official When I was meticulous with my pencil in the Audience Hall. At the height of Spring, in occasional moments of leisure, I would look at the grass and growing things, And at dawn and at dusk I would hear this sound. Where do I hear it now? In the lonely solitude of the City of Hsün Yang. The bird's song is certainly the same, The change is in the emotions of the man. If I could only stop thinking that I am at the ends of the earth, I wonder, would it be so different from the Palace after all?"
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "Hills surround the ancient kingdom; they never change. The tide beats against the empty city, and silently, silently, returns. To the East, over the Huai River--the ancient moon. Through the long, quiet night it moves, crossing the battlemented wall."
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "Mist is trying to hide the Spring-coloured hills, The sky is pale, the stars are scattered and few. The moon is broken and fading, yet there is light on your face, These are the tears of separation, for now it is bright dawn."
+    },
+    {
+      "id": "s95-1",
+      "sceneId": "s95",
+      "text": "We have said many words, But our passion is not assuaged. Turn your head, I have still something to say: Remember my skirt of green open-work silk, The sweet-scented grasses everywhere will prevent your forgetting."
+    },
+    {
+      "id": "s95-2",
+      "sceneId": "s95",
+      "text": "WRITTEN BY WANG WEI, IN THE MANNER OF CHIA, THE (PALACE) SECRETARY, AFTER AN IMPERIAL AUDIENCE AT DAWN IN THE \"PALACE OF GREAT BRILLIANCE\""
+    },
+    {
+      "id": "s95-3",
+      "sceneId": "s95",
+      "text": "At the first light of the still-concealed sun, the Cock-man, in his dark-red cap, strikes the tally-sticks and proclaims aloud the hour. At this exact moment, the Keeper of the Robes sends in the eider-duck skin dress, with its cloud-like curving feather-scales of kingfisher green. In the Ninth Heaven, the Ch'ang Ho Gate opens; so do those of the Palaces, and the Halls of Ceremony in the Palaces. The ten thousand kingdoms send their ambassadors in the dresses and caps of their ranks to do reverence before the pearl-stringed head-dress. The immediately-arrived sun tips the \"Immortal Palm\"; it glitters. Sweet-scented smoke rises and flows about the Emperor's ceremonial robes, making the dragons writhe. The audience ended, I wish to cut the paper of five colours and write upon it the words of the Son of Heaven. My jade girdle-ornaments clash sweetly as I return to sit beside the Pool of the Crested Love-Pheasant."
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "Every time I have started for the Yellow Flower River, I have gone down the Blue-Green Stream, Following the hills, making ten thousand turnings. We go along rapidly, but advance scarcely one hundred *li*. We are in the midst of a noise of water, Of the confused and mingled sounds of water broken by stones, And in the deep darkness of pine-trees. Rocked, rocked, Moving on and on, We float past water-chestnuts Into a still clearness reflecting reeds and rushes. My heart is clean and white as silk; it has already achieved Peace; It is smooth as the placid river. I long to stay here, curled up on the rocks, Dropping my fish-line forever."
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "The slanting sun shines on the cluster of small houses upon the heights. Oxen and sheep are coming home along the distant lane. An old countryman is thinking of the herd-boy, He leans on his staff by the thorn-branch gate, watching. Pheasants are calling, the wheat is coming into ear, Silk-worms sleep, the mulberry-leaves are thin. Labourers, with their hoes over their shoulders, arrive; They speak pleasantly together, loth to part. It is for this I long--unambitious peace! Disappointed in my hopes, dissatisfied, I hum \"Dwindled and Shrunken.\""
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "On the Nothing-Beyond Peak, a hut of red grass. I mount straight up for thirty *li*. I knock at the closed door--no serving boy. I look into the room. There is only the low table, and the stand for the elbows. If you are not sitting on the cloth seat of your rough wood cart, Then you must be fishing in the Autumn water. We have missed each other; we have not seen each other; My effort to do you homage has been in vain. The grass is the colour which rain leaves. From inside the window, I hear the sound of pine-trees at dusk. There is no greater solitude than to be here. My ears hear it; my heart spreads open to it naturally. Although I lack the entertainment of a host, I have received much--the whole doctrine of clear purity. My joy exhausted, I descend the hill. Why should I wait for the Man of Wisdom?"
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "Solitary meditation is not suddenly snapped off; it continues without interruption. It flows--drifts this way, that way--returns upon itself. The boat moves before a twilight wind. We enter the mouth of the pool by the flower path At the moment when night enfolds the Western Valley. The serrated hills face the Southern Constellation, Mist hangs over the deep river pools and floats down gently, gently, with the current. Behind me, through the trees, the moon is sinking. The business of the world is a swiftly moving space of water, a rushing, spreading water. I am content to be an old man holding a bamboo fishing-rod."
+    },
+    {
+      "id": "s99-1",
+      "sceneId": "s99",
+      "text": "SUNG TO THE AIR: \"THE WANDERER\""
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "Thread from the hands of a doting mother Worked into the clothes of a far-off journeying son. Before his departure, were the close, fine stitches set, Lest haply his return be long delayed. The heart--the inch-long grass-- Who will contend that either can repay The gentle brightness of the Third Month of Spring."
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "Because of this, sad, sad has the whole day been to me. You must go forth and journey, far, very far. The time has come when you, the maiden, must go. The light boat ascends the great river. Your particular bitterness is to have none from whom you may claim support. I have cherished you. I have pondered over you. I have been increasingly gentle and tender to you. A child taken from those who have cared for it-- On both sides separation brings the tears which will not cease. Facing this, the very centre of the bowels is knotted. It is your duty, you must go. It is scarcely possible to delay farther. From early childhood, you have lacked a mother's guidance, How then will you know to serve your husband's mother? I am anxious. From this time, the support on which you must rely is the home of your husband. You will find kindness and sympathy, therefore you must not grumble; Modesty and thrift are indeed to be esteemed. Money and jewels, maid-servants and furnishings--are these necessary, a perfection to be waited for? The way of a wife should be filial piety, respect and compliance; Your manner, your conduct, should be in accord with this way. To-day, at dawn, we part. How many Autumns will pass before I see you? Usually I endeavour to command my feelings, But now, when my emotions come upon me suddenly, they are difficult to control. Being returned home, I look at my own little girl. My tears fall as rain. They trickle down the string of my cap and continue to flow."
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "The hair is combed, The face is washed, All is done."
+    },
+    {
+      "id": "s102-1",
+      "sceneId": "s102",
+      "text": "Alone, in the upper story of my Summer-house, I bend forward, looking at the river. A thousand sails pass--but among all of them the one is not. The slant sunlight will not speak, It will not speak. The long-stretched water scarcely moves."
+    },
+    {
+      "id": "s102-2",
+      "sceneId": "s102",
+      "text": "My bowels are broken within me. Oh! Island of the White Water Flowers!"
+    },
+    {
+      "id": "s102-3",
+      "sceneId": "s102",
+      "text": "TOGETHER WE KNOW HAPPINESS"
+    },
+    {
+      "id": "s102-4",
+      "sceneId": "s102",
+      "text": "WRITTEN BY A DESCENDANT OF THE FOUNDER OF THE SOUTHERN T'ANG DYNASTY"
+    },
+    {
+      "id": "s102-5",
+      "sceneId": "s102",
+      "text": "Silent and alone, I ascended the West Cupola. The moon was like a golden hook. In the quiet, empty, inner courtyard, the coolness of early Autumn enveloped the wu-t'ung tree."
+    },
+    {
+      "id": "s102-6",
+      "sceneId": "s102",
+      "text": "Scissors cannot cut this thing; Unravelled, it joins again and clings. It is the sorrow of separation, And none other tastes to the heart like this."
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "Even as a young man I was out of tune with ordinary pleasures. It was my nature to love the rooted hills, The high hills which look upon the four edges of Heaven. What folly to spend one's life like a dropped leaf Snared under the dust of streets, But for thirteen years it was so I lived."
+    },
+    {
+      "id": "s103-1",
+      "sceneId": "s103",
+      "text": "The caged bird longs for the fluttering of high leaves. The fish in the garden pool languishes for the whirled water Of meeting streams. So I desired to clear and seed a patch of the wild Southern moor. And always a countryman at heart, I have come back to the square enclosures of my fields And to my walled garden with its quiet paths."
+    },
+    {
+      "id": "s103-2",
+      "sceneId": "s103",
+      "text": "Mine is a little property of ten *mou* or so, A thatched house of eight or nine rooms. On the North side, the eaves are overhung With the thick leaves of elm-trees, And willow-trees break the strong force of the wind. On the South, in front of the great hall, Peach-trees and plum-trees spread a net of branches Before the distant view."
+    },
+    {
+      "id": "s103-3",
+      "sceneId": "s103",
+      "text": "The village is hazy, hazy, And mist sucks over the open moor. A dog barks in the sunken lane which runs through the village. A cock crows, perched on a clipped mulberry."
+    },
+    {
+      "id": "s103-4",
+      "sceneId": "s103",
+      "text": "There is no dust or clatter In the courtyard before my house. My private rooms are quiet, And calm with the leisure of moonlight through an open door."
+    },
+    {
+      "id": "s103-5",
+      "sceneId": "s103",
+      "text": "For a long time I lived in a cage; Now I have returned. For one must return To fulfil one's nature."
+    },
+    {
+      "id": "s103-6",
+      "sceneId": "s103",
+      "text": "SONG OF THE SNAPPED WILLOW"
+    },
+    {
+      "id": "s103-7",
+      "sceneId": "s103",
+      "text": "WRITTEN DURING THE LIANG DYNASTY"
+    },
+    {
+      "id": "s103-8",
+      "sceneId": "s103",
+      "text": "When he mounted his horse, he did not take his leather riding-whip; He pulled down and snapped off the branch of a willow-tree. When he dismounted, he blew into his horizontal flute, And it was as though the fierce grief of his departure would destroy the traveller."
+    },
+    {
+      "id": "s103-9",
+      "sceneId": "s103",
+      "text": "THE CLOUDY RIVER"
+    },
+    {
+      "id": "s103-10",
+      "sceneId": "s103",
+      "text": "(FROM THE \"BOOK OF ODES\")"
+    },
+    {
+      "id": "s103-11",
+      "sceneId": "s103",
+      "text": "How the Cloudy River glitters-- Shining, revolving in the sky! The King spoke: \"Alas! Alas! What crime have the men of to-day committed That Heaven sends down upon them Confusion and death? The grain does not sprout, The green harvests wither, Again and again this happens. There is no spirit to whom I have not rendered homage, No sacrifice I have withheld for love. My stone sceptres and round badges of rank have come to an end. Why have I not been heard?"
+    },
+    {
+      "id": "s103-12",
+      "sceneId": "s103",
+      "text": "Already the drought is terrible beyond expression! The heated air is overpowering; it is a concentrated fierceness. I have not ceased to offer the pure sacrifices, I myself have gone from the border altars to the ancestral temples. To Heaven, To Earth, I have made the proper offerings, I have buried them in the ground. There is no spirit I have not honoured, Hou Chi could do no more. Shang Ti does not look favourably upon us. This waste and ruin of the Earth-- If my body alone might endure it!"
+    },
+    {
+      "id": "s103-13",
+      "sceneId": "s103",
+      "text": "Already the drought is terrible beyond expression! I cannot evade the responsibility of it. I am afraid--afraid; I feel in peril--I feel in peril, As when one hears the clap of thunder and the roll of thunder. Of the remnant of the black-haired people of Chou There will not be left so much as half a man. Ruler over the high, wide Heavens, Even I shall not be spared. Why should I not be terrified Since the ancestral sacrifices will be ended?"
+    },
+    {
+      "id": "s103-14",
+      "sceneId": "s103",
+      "text": "Already the drought is terrible beyond expression! The consequences of it cannot be prevented. Scorching--scorching! Blazing--blazing! No living place is left to me. The Great Decree of Fate is near its end. There is none to look up to; none whose counsel I might ask. The many great officials, the upright men of ancient days, Cannot advise me in regard to these consequences. My father, my mother, my remote ancestors, How can you endure this which has befallen me?"
+    },
+    {
+      "id": "s103-15",
+      "sceneId": "s103",
+      "text": "Already the drought is terrible beyond expression! Parched and scoured the hills, the streams. Drought, the Demon of Drought, has caused these ravages, Like a burning fire which consumes everything. My heart is shrivelled with the heat; Sorrow rises from the heart as smoke from fire. The many great officials, the upright men of ancient days, Do not listen to me. Ruler of the high, wide Heavens, Permit that I retire to obscurity."
+    },
+    {
+      "id": "s103-16",
+      "sceneId": "s103",
+      "text": "Already the drought is terrible beyond expression! I strive, and force myself in vain. I dread that which will come. How--why--should I bear this madness of drought? I suffer not to know the reason for it. I offered the yearly sacrifices for full crops in good time. I neglected not one of the Spirits of the Four Quarters of the Earth. The Ruler of the high, wide Heavens Does not even consider me. I have worshipped and reverenced the bright gods, They should not be dissatisfied or angry with me."
+    },
+    {
+      "id": "s103-17",
+      "sceneId": "s103",
+      "text": "Already the drought is terrible beyond expression! Everything is in confusion; all authority is gone; My officials are reduced to extremity. My Chief Minister is afflicted with a continuing illness. My Master of the Horse, my Commander of the Guards, My Steward, my attendants of the Right and of the Left, Not one among them has failed to try and help the people, Not one has given up because powerless. I raise my head and look at the Ruler of the wide, bright Heavens. I cry: 'Why must I suffer such grief!'"
+    },
+    {
+      "id": "s103-18",
+      "sceneId": "s103",
+      "text": "I look upwards. I gaze at the wide, bright Heavens, There are little stars twinkling, even those stars. My officers and the great men of my country, You have wrought sincerely and without gain. The Great Decree is near its end. Do not abandon what you have partly accomplished, Your prayers are not for me alone, But to guard the people and those who watch over them from calamity. I look upwards. I gaze at the wide, bright Heavens. When shall I receive the favour of rest?\""
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "There is no rustle of silken sleeves, Dust gathers in the Jade Courtyard. The empty houses are cold, still, without sound. The leaves fall and lie upon the bars of doorway after doorway. I long for the Most Beautiful One; how can I attain my desire? Pain bursts my heart. There is no peace."
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "In Autumn, when the landscape is clear, to float over the wide, water ripples, To pick the water-chestnut and the lotus-flower with a quick, light hand! The fresh wind is cool, we start singing to the movement of the oars. The clouds are bright; they part before the light of dawn; the moon has sunk below the Silver River. Enjoying such pleasure for ten thousand years-- Could one consider it too much?"
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "Cool wind rising. Sun sparkling on the wide canal. Pink lotuses, bent down by day, spread open at night. There is too much pleasure; a day cannot contain it. Clear sounds of strings, smooth flowing notes of flageolets--we sing the \"Jade Love-Bird\" song. A thousand years? Ten thousand? Nothing could exceed such delight."
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "Glazed silk, newly cut, smooth, glittering, white, As white, as clear, even as frost and snow. Perfectly fashioned into a fan, Round, round, like the brilliant moon, Treasured in my Lord's sleeve, taken out, put in-- Wave it, shake it, and a little wind flies from it. How often I fear the Autumn Season's coming And the fierce, cold wind which scatters the blazing heat. Discarded, passed by, laid in a box alone; Such a little time, and the thing of love cast off."
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "(THE \"PLUM-BLOSSOM\" CONCUBINE OF THE EMPEROR MING HUANG)"
+    },
+    {
+      "id": "s108-1",
+      "sceneId": "s108",
+      "text": "It is long--long--since my two eyebrows were painted like cassia-leaves. I have ended the adorning of myself. My tears soak my dress of coarse red silk. All day I sit in the Palace of the High Gate. I do not wash; I do not comb my hair. How can precious pearls soothe so desolate a grief."
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "(THE \"WHITE POPLAR\" IMPERIAL CONCUBINE OF THE EMPEROR MING HUANG)"
+    },
+    {
+      "id": "s109-1",
+      "sceneId": "s109",
+      "text": "Wide sleeves sway. Scents, Sweet scents Incessantly coming."
+    },
+    {
+      "id": "s109-2",
+      "sceneId": "s109",
+      "text": "It is red lilies, Lotus lilies, Floating up, And up, Out of Autumn mist."
+    },
+    {
+      "id": "s109-3",
+      "sceneId": "s109",
+      "text": "Thin clouds Puffed, Fluttered, Blown on a rippling wind Through a mountain pass."
+    },
+    {
+      "id": "s109-4",
+      "sceneId": "s109",
+      "text": "Young willow shoots Touching, Brushing, The water Of the garden pool."
+    },
+    {
+      "id": "s109-5",
+      "sceneId": "s109",
+      "text": "SONGS OF THE COURTESANS"
+    },
+    {
+      "id": "s109-6",
+      "sceneId": "s109",
+      "text": "(WRITTEN DURING THE LIANG DYNASTY)"
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "My skirt is cut out of peacock silk, Red and green shine together, they are also opposed. It dazzles like the gold-chequered skin of the scaly dragon. Clearly so odd and lovely a thing must be admired. My Lord himself knows well the size. I beg thee, my Lover, give me a girdle."
+    },
+    {
+      "id": "s110-1",
+      "sceneId": "s110",
+      "text": "AI AI THINKS OF THE MAN SHE LOVES"
+    },
+    {
+      "id": "s110-2",
+      "sceneId": "s110",
+      "text": "How often must I pass the moonlight nights alone? I gaze far--far--for the Seven Scents Chariot. My girdle drops because my waist is shrunken. The golden hairpins of my disordered head-dress are all askew."
+    },
+    {
+      "id": "s110-3",
+      "sceneId": "s110",
+      "text": "SENT TO HER LOVER YÜAN AT HO NAN (SOUTH OF THE RIVER) BY CHANG PI LAN (JADE-GREEN ORCHID) FROM HU PEI (NORTH OF THE LAKE)"
+    },
+    {
+      "id": "s110-4",
+      "sceneId": "s110",
+      "text": "My Lover is like the tree-peony of Lo Yang. I, unworthy, like the common willows of Wu Ch'ang. Both places love the Spring wind. When shall we hold each other's hands again?"
+    },
+    {
+      "id": "s110-5",
+      "sceneId": "s110",
+      "text": "CH'IN, THE \"FIRE-BIRD WITH PLUMAGE WHITE AS JADE,\" LONGS FOR HER LOVER"
+    },
+    {
+      "id": "s110-6",
+      "sceneId": "s110",
+      "text": "Incessant the buzzing of insects beyond the orchid curtain. The moon flings slanting shadows from the pepper-trees across the courtyard. Pity the girl of the flowery house, Who is not equal to the blossoms Of Lo Yang."
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "(FROM \"THE BOOK OF ODES\")"
+    },
+    {
+      "id": "s111-1",
+      "sceneId": "s111",
+      "text": "Who says the Ho is wide? Why one little reed can bridge it."
+    },
+    {
+      "id": "s111-2",
+      "sceneId": "s111",
+      "text": "Who says that Sung is far? I stand on tiptoe and see it."
+    },
+    {
+      "id": "s111-3",
+      "sceneId": "s111",
+      "text": "Who says the Ho is wide? Why the smallest boat cannot enter."
+    },
+    {
+      "id": "s111-4",
+      "sceneId": "s111",
+      "text": "Who says that Sung is far? It takes not a morning to reach it."
+    },
+    {
+      "id": "s111-5",
+      "sceneId": "s111",
+      "text": "WRITTEN PICTURES"
+    },
+    {
+      "id": "s111-6",
+      "sceneId": "s111",
+      "text": "AN EVENING MEETING"
+    },
+    {
+      "id": "s111-7",
+      "sceneId": "s111",
+      "text": "The night is the colour of Spring mists. The lamp-flower falls. And the flame bursts out brightly. In the midst of the disorder of the dressing-table Lies a black eye-stone. As she dances, A golden hairpin drops to the ground. She peeps over her fan, Arch, coquettish, welcoming his arrival. Then suddenly striking the strings of her table-lute, She sings-- But what is the rain of Sorceress Gorge Doing by the shore of the Western Sea?"
+    },
+    {
+      "id": "s111-8",
+      "sceneId": "s111",
+      "text": "LI HAI-KU, 19th Century"
+    },
+    {
+      "id": "s111-9",
+      "sceneId": "s111",
+      "text": "THE EMPEROR'S RETURN FROM A JOURNEY TO THE SOUTH"
+    },
+    {
+      "id": "s111-10",
+      "sceneId": "s111",
+      "text": "Like a saint, he comes, The Most Noble. In his lacquered state chariot He awes the hundred living things. He is clouded with the purple smoke of incense, A round umbrella Protects the Son of Heaven. Exquisite is the beauty Of the two-edged swords, Of the chariots, Of the star-embroidered shoes of the attendants. The Sun and Moon fans are borne before him, And he is preceded by sharp spears And the blowing brightness of innumerable flags. The Spring wind proclaims the Emperor's return, Binding the ten thousand districts together In a chorded harmony of Peace and Satisfaction, So that the white-haired old men and the multitudes rejoice, And I wish to add my ode In praise of perfect peace."
+    },
+    {
+      "id": "s111-11",
+      "sceneId": "s111",
+      "text": "WÊN CHÊNG-MING, 16th Century"
+    },
+    {
+      "id": "s111-12",
+      "sceneId": "s111",
+      "text": "ON SEEING THE PORTRAIT OF A BEAUTIFUL CONCUBINE"
+    },
+    {
+      "id": "s111-13",
+      "sceneId": "s111",
+      "text": "Fine rain, Spring mud Slippery as bean curds. In a rose-red flash, she approaches-- Beautiful, sparkling like wine; Tottering as though overcome with wine. Her little feet slip on the sliding path; Who will support her? Clearly it is her picture We see here, In a rose-red silken dress, Her hair plaited like the folds Of the hundred clouds. It is Manshu."
+    },
+    {
+      "id": "s111-14",
+      "sceneId": "s111",
+      "text": "CH'EN HUNG-SHOU, 19th Century"
+    },
+    {
+      "id": "s111-15",
+      "sceneId": "s111",
+      "text": "CALLIGRAPHY"
+    },
+    {
+      "id": "s111-16",
+      "sceneId": "s111",
+      "text": "The writing of Li Po-hai Is like the vermilion bird And the blue-green dragon. It drifts slowly as clouds drift; It has the wide swiftness of wind. Hidden within it lurk the dragon and the tiger."
+    },
+    {
+      "id": "s111-17",
+      "sceneId": "s111",
+      "text": "The writing of Chia, the official, Is like the high hat of ceremonial. It flashes like flowers in the hair, And its music is the trailing of robes And the sweet tinkling of jade girdle-pendants. Because of his distinguished position, He never says anything not sanctioned by precedent."
+    },
+    {
+      "id": "s111-18",
+      "sceneId": "s111",
+      "text": "LIANG T'UNG-SHU, 18th Century"
+    },
+    {
+      "id": "s111-19",
+      "sceneId": "s111",
+      "text": "THE PALACE BLOSSOMS"
+    },
+    {
+      "id": "s111-20",
+      "sceneId": "s111",
+      "text": "When the rain ceases, The white water flowers of Ch'ang Lo stroll together at sunset In the City by the River. The young girls are no longer confined In the gold pavilions, But may gaze at the green water Whirling under the bridge of many turnings."
+    },
+    {
+      "id": "s111-21",
+      "sceneId": "s111",
+      "text": "TAI TA-MIEN, 18th Century"
+    },
+    {
+      "id": "s111-22",
+      "sceneId": "s111",
+      "text": "ONE GOES A JOURNEY"
+    },
+    {
+      "id": "s111-23",
+      "sceneId": "s111",
+      "text": "He is going to the Tung T'ing Lake, My friend whom I have loved so many years. The Spring wind startles the willows And they break into pale leaf. I go with my friend As far as the river-bank. He is gone-- And my mind is filled and overflowing With the things I did not say."
+    },
+    {
+      "id": "s111-24",
+      "sceneId": "s111",
+      "text": "Again the white water flower Is ripe for plucking. The green, pointed swords of the iris Splinter the brown earth. To the South of the river Are many sweet-olive trees. I gather branches of them to give to my friend On his return."
+    },
+    {
+      "id": "s111-25",
+      "sceneId": "s111",
+      "text": "LIU SHIH-AN, 18th Century"
+    },
+    {
+      "id": "s111-26",
+      "sceneId": "s111",
+      "text": "FROM THE STRAW HUT AMONG THE SEVEN PEAKS"
+    },
+    {
+      "id": "s111-27",
+      "sceneId": "s111",
+      "text": "From the high pavilion of the great rock, I look down at the green river. There is the sail of a returning boat. The birds are flying in pairs. The faint snuff colour of trees Closes the horizon. All about me Sharp peaks jag upward; But through my window, And beyond, Is the smooth, broad brightness Of the setting sun."
+    },
+    {
+      "id": "s111-28",
+      "sceneId": "s111",
+      "text": "Clouds brush the rocky ledge. In the dark green shadow left by the sunken sun A jade fountain flies, And a little stream, Thin as the fine thread spun by sad women in prison chambers, Slides through the grasses And whirls suddenly upon itself Avoiding the sharp edges of the iris-leaves. Few people pass here. Only the hermits of the hills come in companies To gather the Imperial Fern."
+    },
+    {
+      "id": "s111-29",
+      "sceneId": "s111",
+      "text": "LU KUN, 19th Century"
+    },
+    {
+      "id": "s111-30",
+      "sceneId": "s111",
+      "text": "ON THE CLASSIC OF THE HILLS AND SEA"
+    },
+    {
+      "id": "s111-31",
+      "sceneId": "s111",
+      "text": "In what place does the cinnabar-red tree of the alchemists seed? Upon the sun-slopes Of Mount Mi It pushes out its yellow flowers And rounds its crimson fruit. Eat it and you will live forever."
+    },
+    {
+      "id": "s111-32",
+      "sceneId": "s111",
+      "text": "The frozen dew is like white jade; It shimmers with the curious light of gems."
+    },
+    {
+      "id": "s111-33",
+      "sceneId": "s111",
+      "text": "Why do people regard these things? Because the Yellow Emperor considers them of importance."
+    },
+    {
+      "id": "s111-34",
+      "sceneId": "s111",
+      "text": "Written by LI HAI-KU, 19th Century"
+    },
+    {
+      "id": "s111-35",
+      "sceneId": "s111",
+      "text": "Composed by T'AO CH'IEN"
+    },
+    {
+      "id": "s111-36",
+      "sceneId": "s111",
+      "text": "THE HERMIT"
+    },
+    {
+      "id": "s111-37",
+      "sceneId": "s111",
+      "text": "A cold rain blurs the edges of the river. Night enters Wu. In the level brightness of dawn I saw my friend start alone for the Ch'u Mountain. He gave me this message for his friends and relations at Lo Yang: My heart is a piece of ice in a jade cup."
+    },
+    {
+      "id": "s111-38",
+      "sceneId": "s111",
+      "text": "Written by LI HAI-KU, 19th Century"
+    },
+    {
+      "id": "s111-39",
+      "sceneId": "s111",
+      "text": "Composed by WANG CH'ANG-LING"
+    },
+    {
+      "id": "s111-40",
+      "sceneId": "s111",
+      "text": "AFTER HOW MANY YEARS"
+    },
+    {
+      "id": "s111-41",
+      "sceneId": "s111",
+      "text": "SPRING"
+    },
+    {
+      "id": "s111-42",
+      "sceneId": "s111",
+      "text": "The willows near the roadside rest-house are soft with new-burst buds. I saunter along the river path, Listening to the occasional beating of the ferry drum. Clouds blow and separate, And between them I see the watch towers Of the distant city. They come in official coats To examine my books. Months go by; Years slide backwards and disappear. Musing, I shut my eyes And think of the road I have come, And of the Spring weeds Choking the fields of my house."
+    },
+    {
+      "id": "s111-43",
+      "sceneId": "s111",
+      "text": "SUMMER"
+    },
+    {
+      "id": "s111-44",
+      "sceneId": "s111",
+      "text": "The rain has stopped. The clouds drive in a new direction. The sand is so dry and hard that my wooden shoes ring upon it As I walk. The flowers in the wind are very beautiful. A little stream quietly draws a line Through the sand. Every household is drunk with sacrificial wine, And every field is tall with millet And pale young wheat. I have not much business. It is a good day. I smile. I will write a poem On all this sudden brightness."
+    },
+    {
+      "id": "s111-45",
+      "sceneId": "s111",
+      "text": "AUTUMN"
+    },
+    {
+      "id": "s111-46",
+      "sceneId": "s111",
+      "text": "Hoar-frost is falling, And the water of the river runs clear. The moon has not yet risen, But there are many stars. I hear the watch-dogs In the near-by village. On the opposite bank Autumn lamps are burning in the windows. I am sick, Sick with all the illnesses there are. I can bear this cold no longer, And a great pity for my whole past life Fills my mind. The boat has started at last. O be careful not to run foul Of the fishing-nets!"
+    },
+    {
+      "id": "s111-47",
+      "sceneId": "s111",
+      "text": "WINTER"
+    },
+    {
+      "id": "s111-48",
+      "sceneId": "s111",
+      "text": "I was lonely in the cold valleys Where I was stationed. But I am still lonely, And when no one is near I sigh. My gluttonous wife rails at me To guard her bamboo shoots. My son is ill and neglects to water The flowers. Oh yes, Old red rice can satisfy hunger, And poor people can buy muddy, unstrained wine On credit. But the pile of land-tax bills Is growing; I will go over and see my neighbour, Leaning on my staff."
+    },
+    {
+      "id": "s111-49",
+      "sceneId": "s111",
+      "text": "LI HAI-KU, 19th Century"
+    },
+    {
+      "id": "s111-50",
+      "sceneId": "s111",
+      "text": "THE INN AT THE MOUNTAIN PASS"
+    },
+    {
+      "id": "s111-51",
+      "sceneId": "s111",
+      "text": "I return to the inn at the foot of the Climbing Bean Pass. The smooth skin of the water shines, And the clouds slip over the sky. This is the twilight of dawn and dusk. On the top of Hsi Lêng The hill priest sits in the evening And meditates. Two-- Two-- Those are the lights of fishing-boats Arriving at the door."
+    },
+    {
+      "id": "s111-52",
+      "sceneId": "s111",
+      "text": "WANG CHING-TS'ÊNG, 19th Century"
+    },
+    {
+      "id": "s111-53",
+      "sceneId": "s111",
+      "text": "LI T'AI-PO MEDITATES"
+    },
+    {
+      "id": "s111-54",
+      "sceneId": "s111",
+      "text": "Li Po climbed the Flowery Mountain As far as the Peak of the Fallen Precipice. Gazing upward, he said: \"From this little space my breath can reach the God Star.\" He sighed, regretting his irresolution, and thought: \"Hsieh T'iao alarms people with his poetry. I can only scratch my head And beseech the Green Heaven To regard me.\""
+    },
+    {
+      "id": "s111-55",
+      "sceneId": "s111",
+      "text": "HO PING-SHOU, 19th Century"
+    },
+    {
+      "id": "s111-56",
+      "sceneId": "s111",
+      "text": "PAIR OF SCROLLS"
+    },
+    {
+      "id": "s111-57",
+      "sceneId": "s111",
+      "text": "Shoals of fish assemble and scatter, Suddenly there is no trace of them."
+    },
+    {
+      "id": "s111-58",
+      "sceneId": "s111",
+      "text": "The single butterfly comes-- Goes-- Comes-- Returning as though urged by love."
+    },
+    {
+      "id": "s111-59",
+      "sceneId": "s111",
+      "text": "HO SHAO-CHI, 19th Century"
+    },
+    {
+      "id": "s111-60",
+      "sceneId": "s111",
+      "text": "TWO PANELS"
+    },
+    {
+      "id": "s111-61",
+      "sceneId": "s111",
+      "text": "By the scent of the burning pine-cones, I read the \"Book of Changes.\""
+    },
+    {
+      "id": "s111-62",
+      "sceneId": "s111",
+      "text": "Shaking the dew from the lotus-flowers, I write T'ang poetry."
+    },
+    {
+      "id": "s111-63",
+      "sceneId": "s111",
+      "text": "LIANG T'UNG-SHU, 19th Century"
+    },
+    {
+      "id": "s111-64",
+      "sceneId": "s111",
+      "text": "THE RETURN"
+    },
+    {
+      "id": "s111-65",
+      "sceneId": "s111",
+      "text": "He is a solitary traveller Returning to his home in the West. Ah, but how difficult to find the way! He has journeyed three thousand *li*. He has attended an Imperial audience at the Twelve Towers. He sees the slanting willows by the road With their new leaves, But when he left his house His eyes were dazzled by the colours Of Autumn. What darkness fills them now! He is far from the Autumn-bright hills He remembers. The spread of the river before him is empty, It slides--slides."
+    },
+    {
+      "id": "s111-66",
+      "sceneId": "s111",
+      "text": "LI HAI-KU, 19th Century"
+    },
+    {
+      "id": "s111-67",
+      "sceneId": "s111",
+      "text": "EVENING CALM"
+    },
+    {
+      "id": "s111-68",
+      "sceneId": "s111",
+      "text": "The sun has set. The sand sparkles. The sky is bright with afterglow. The small waves flicker, And the swirling water rustles the stones. In the white path of the moon, A small boat drifts, Seeking for the entrance To the stream of many turnings. Probably there is snow On the shady slopes of the hills."
+    },
+    {
+      "id": "s111-69",
+      "sceneId": "s111",
+      "text": "KAO SHIH-CHI, 19th Century"
+    },
+    {
+      "id": "s111-70",
+      "sceneId": "s111",
+      "text": "FISHING PICTURE"
+    },
+    {
+      "id": "s111-71",
+      "sceneId": "s111",
+      "text": "The fishermen draw their nets From the great pool of the T'an River. They have hired a boat And come here to fish by the reflected light Of the sunken sun."
+    },
+    {
+      "id": "s111-72",
+      "sceneId": "s111",
+      "text": "TA CHUNG-KUANG, 19th Century"
+    },
+    {
+      "id": "s111-73",
+      "sceneId": "s111",
+      "text": "SPRING. SUMMER. AUTUMN"
+    },
+    {
+      "id": "s111-74",
+      "sceneId": "s111",
+      "text": "The stream at the foot of the mountain Runs all day. Even far back in the hills, The grass is growing; Spring is late there. From all about comes the sound Of dogs barking And chickens cheeping. They are stripping the mulberry-trees, But who planted them?"
+    },
+    {
+      "id": "s111-75",
+      "sceneId": "s111",
+      "text": "What a wind! We start in our boat To gather the red water-chestnut. Leaning on my staff, I watch the sun sink Behind the Western village. I can see the apricot-trees Set on their raised stone platform, With an old fisherman standing Beside them. It makes me think Of the Peach-Blossom Fountain, And the houses Clustered about it."
+    },
+    {
+      "id": "s111-76",
+      "sceneId": "s111",
+      "text": "Let us meet beside the spring And drink wine together. I will bring my table-lute; It is good To lean against The great pines. In the gardens to the South, The sun-flowers are wet with dew; They will pick them at dawn. And all night In the Western villages One hears the sound of yellow millet being pounded."
+    },
+    {
+      "id": "s111-77",
+      "sceneId": "s111",
+      "text": "LI HAI-KU, 19th Century"
+    }
+  ]
+}

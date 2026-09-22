@@ -618,6 +618,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "the-garden-of-bright-waters": "Iraq",
   "more-translations-from-the-chinese": "China",
   "a-hundred-and-seventy-chinese-poems": "China",
+  "fir-flower-tablets": "China",
   "three-hundred-tang-poems": "China",
   "a-lute-of-jade": "China",
   "roumanian-stories": "Romania",
