@@ -99,6 +99,7 @@ function Home() {
                 fillInk(resumeFill),
               )}
               data-home-continue=""
+              data-resume-fill={resumeFill}
             >
               <Link
                 to="/read/$workId"

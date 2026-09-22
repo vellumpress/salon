@@ -182,7 +182,16 @@ test("homepage score sits in Continue and reuses the You daily score", () => {
   assert.match(chip, /dailyScoreGlance\(/);
   assert.match(chip, /to=["']\/profile["']/);
   assert.match(chip, /placement\?: "mark" \| "continue"/);
+  assert.doesNotMatch(chip, /bg-transparent/);
   assert.doesNotMatch(chip, /weeklyScore|monthlyScore/);
+
+  const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
+  assert.match(home, /data-resume-fill=\{resumeFill\}/);
+  assert.match(css, /\.daily-score-chip--continue \{[^}]*background: var\(--color-paper\);[^}]*color: var\(--color-ink\);/s);
+  assert.match(
+    css,
+    /\.cell-resume\[data-resume-fill="paper"\] \.daily-score-chip--continue,\s*\.cell-resume\[data-resume-fill="yellow"\] \.daily-score-chip--continue \{\s*background: var\(--color-ink\);\s*color: var\(--color-paper\);/s,
+  );
   assert.doesNotMatch(home, /weeklyScore|monthlyScore|Featured/);
   for (const key of [
     "readingMinutesByDay",
