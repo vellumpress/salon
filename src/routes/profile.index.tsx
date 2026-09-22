@@ -15,6 +15,7 @@ import { KeptSentences } from "@/components/kept-sentences";
 import { ResumeLink, useLastRead } from "@/components/resume-link";
 import {
   DeskStrip,
+  ActiveReading,
   InsightStrip,
   LaneStrip,
   ReadinessHero,
@@ -108,6 +109,8 @@ function ProfileBody({
   const joined = useVellum((s) => s.joined) ?? [];
   const sittingMinutes = useVellum((s) => s.sittingMinutes);
   const readingMinutesByDay = useVellum((s) => s.readingMinutesByDay) ?? {};
+  const advancesByDay = useVellum((s) => s.advancesByDay);
+  const lastActiveReadAt = useVellum((s) => s.lastActiveReadAt);
   const sitHistory = useVellum((s) => s.sitHistory) ?? [];
   const togetherKeeps = useVellum((s) => s.togetherKeeps) ?? [];
   const hostedSits = useVellum((s) => s.hostedSits) ?? [];
@@ -176,6 +179,8 @@ function ProfileBody({
         progress,
         favorites,
         readingMinutesByDay,
+        advancesByDay,
+        lastActiveReadAt,
         sitHistory,
         togetherKeeps,
         hostedSits,
@@ -186,6 +191,8 @@ function ProfileBody({
       progress,
       favorites,
       readingMinutesByDay,
+      advancesByDay,
+      lastActiveReadAt,
       sitHistory,
       togetherKeeps,
       hostedSits,
@@ -330,6 +337,7 @@ function ProfileBody({
             <YouRings rings={reading.rings} />
             {reading.hasSignal ? (
               <>
+                <ActiveReading reading={reading} />
                 <WeekMinutes days={reading.weekDays} estimated={reading.minutesAreEstimated} />
                 <InsightStrip reading={reading} />
                 <YouBreakdown reading={reading} />

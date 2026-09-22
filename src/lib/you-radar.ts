@@ -61,11 +61,18 @@ export function radarScore(value: number, max: number): number {
 
 function compactMinutes(n: number) {
   if (n <= 0) return "0";
+  if (n < 1) return `${Math.max(1, Math.round(n * 60))}s`;
   if (n < 60) return String(Math.round(n));
   const whole = Math.round(n);
   const h = Math.floor(whole / 60);
   const m = whole % 60;
   return m ? `${h}h ${m}m` : `${h}h`;
+}
+
+function minuteUnit(n: number, estimated: boolean) {
+  if (estimated) return "est. min";
+  if (n > 0 && n < 1) return "active";
+  return "active min";
 }
 
 export function buildRadarAxes(input: {
@@ -79,9 +86,8 @@ export function buildRadarAxes(input: {
   minutesAreEstimated?: boolean;
 }): RadarAxis[] {
   const sitTarget = input.sittingMinutes && input.sittingMinutes > 0 ? input.sittingMinutes : 20;
-  const minUnit = input.minutesAreEstimated ? "est. min" : "min";
-  const today = Math.max(0, Math.round(input.minutesToday));
-  const week = Math.max(0, Math.round(input.minutesWeek));
+  const today = Math.max(0, input.minutesToday);
+  const week = Math.max(0, input.minutesWeek);
   const breaths = Math.max(0, Math.round(input.breaths));
   const kept = Math.max(0, Math.round(input.kept));
   const streak = Math.max(0, Math.round(input.streak));
@@ -95,7 +101,7 @@ export function buildRadarAxes(input: {
       max: sitTarget,
       score: radarScore(today, sitTarget),
       display: compactMinutes(today),
-      unit: minUnit,
+      unit: minuteUnit(today, Boolean(input.minutesAreEstimated)),
     },
     {
       id: "week",
@@ -104,7 +110,7 @@ export function buildRadarAxes(input: {
       max: sitTarget * 5,
       score: radarScore(week, sitTarget * 5),
       display: compactMinutes(week),
-      unit: minUnit,
+      unit: minuteUnit(week, Boolean(input.minutesAreEstimated)),
     },
     {
       id: "breaths",

@@ -2,7 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { fillClass, fillInk, fillVar, type Fill } from "@/lib/mondrian";
 import {
   formatActivityWhen,
-  formatMinutes,
+  formatActiveMinutes,
+  formatGapShort,
   streakLine,
   type ActivityItem,
   type DayMinutes,
@@ -125,7 +126,7 @@ export function ReadinessHero({
           </p>
           {reading.hasSignal ? (
             <p className="mt-3 font-sans text-xs tracking-chrome text-ink/55">
-              Week {formatMinutes(reading.minutesWeek)}
+              Week {formatActiveMinutes(reading.minutesWeek)} active
               {reading.minutesAreEstimated ? " est." : ""}
             </p>
           ) : null}
@@ -211,7 +212,7 @@ export function WeekMinutes({
   return (
     <section>
       <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-        This week{estimated ? " · estimated" : ""}
+        This week · active{estimated ? " · estimated" : ""}
       </p>
       <div className="grid grid-cols-7 gap-px bg-ink">
         {days.map((day, i) => {
@@ -231,13 +232,70 @@ export function WeekMinutes({
               </div>
               <p className="mt-2 type-kicker opacity-75">{day.label}</p>
               <p className="mt-1 font-sans text-xs tabular-nums">
-                {day.minutes > 0 ? formatMinutes(day.minutes) : "—"}
+                {day.minutes > 0 ? formatActiveMinutes(day.minutes) : "—"}
               </p>
             </div>
           );
         })}
       </div>
     </section>
+  );
+}
+
+export function ActiveReading({ reading }: { reading: ReadingStats }) {
+  const last =
+    reading.lastActiveReadAt > 0 ? formatActivityWhen(reading.lastActiveReadAt) : "—";
+  return (
+    <section>
+      <p className="border-b border-ink px-4 py-3 type-kicker text-muted">Active reading</p>
+      <div className="grid grid-cols-2 gap-px bg-ink">
+        <CountCell
+          fill="yellow"
+          label="Breaths today"
+          value={reading.advancesToday}
+          hint={reading.breaths === 1 ? "1 all-time" : `${reading.breaths} all-time`}
+        />
+        <CountCell
+          fill="red"
+          label="Works"
+          value={reading.opened}
+          hint={reading.completed > 0 ? `${reading.completed} finished` : "touched"}
+        />
+        <StringCell
+          fill="blue"
+          label="Pace"
+          value={formatGapShort(reading.pace.avgGapSec)}
+          hint="between breaths"
+        />
+        <StringCell fill="forest" label="Last read" value={last} hint="forward tap" />
+      </div>
+    </section>
+  );
+}
+
+function StringCell({
+  fill,
+  label,
+  value,
+  hint,
+}: {
+  fill: Fill;
+  label: string;
+  value: string;
+  hint: string;
+}) {
+  return (
+    <div
+      className={cn(
+        "flex min-h-28 flex-col justify-end p-4 sm:min-h-32 sm:p-5",
+        fillClass(fill),
+        fillInk(fill),
+      )}
+    >
+      <span className="type-kicker opacity-80">{label}</span>
+      <span className="mt-1 type-lede">{value}</span>
+      <span className="mt-1 font-sans text-xs opacity-70">{hint}</span>
+    </div>
   );
 }
 

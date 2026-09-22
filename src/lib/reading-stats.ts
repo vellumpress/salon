@@ -16,6 +16,8 @@ export type PaceInfo = {
   detail: string;
   breathsPerMinute: number | null;
   avgSitMinutes: number | null;
+  /** Mean credited gap between forward advances, in seconds. */
+  avgGapSec: number | null;
 };
 
 export type Readiness = {
@@ -73,6 +75,12 @@ export type ReadingStats = {
   kept: number;
   readiness: Readiness;
   breaths: number;
+  /** Forward advances today — taps that moved to a new breath. */
+  advancesToday: number;
+  /** Forward advances since the active-clock reset. */
+  advancesAll: number;
+  /** Last forward advance. 0 if none since the clock reset. */
+  lastActiveReadAt: number;
   inProgress: number;
   togetherKeeps: number;
   hostedSits: number;
@@ -110,7 +118,7 @@ function sumMap(map: Record<string, number> | undefined) {
   if (!map) return 0;
   let total = 0;
   for (const n of Object.values(map)) total += n || 0;
-  return Math.round(total * 4) / 4;
+  return Math.round(total * 1000) / 1000;
 }
 
 function sumSince(map: Record<string, number> | undefined, sinceKey: string) {
@@ -119,24 +127,7 @@ function sumSince(map: Record<string, number> | undefined, sinceKey: string) {
   for (const [day, n] of Object.entries(map)) {
     if (day >= sinceKey) total += n || 0;
   }
-  return Math.round(total * 4) / 4;
-}
-
-/** Rough minutes from breath progress × shelf length when no sits recorded yet. */
-function estimateMinutes(progress: Record<string, WorkProgress>) {
-  let total = 0;
-  for (const [workId, item] of Object.entries(progress)) {
-    if (!item.entered || item.breathIndex <= 0) continue;
-    const work = shelfWork(workId);
-    if (!work) continue;
-    const breaths = Math.max(
-      1,
-      work.breaths ?? Math.max(40, Math.round(work.minutes * 8)),
-    );
-    const ratio = Math.min(1, item.breathIndex / breaths);
-    total += ratio * work.minutes;
-  }
-  return Math.round(total);
+  return Math.round(total * 1000) / 1000;
 }
 
 function weightFor(
@@ -201,12 +192,19 @@ function topOrigins(
     .slice(0, 3);
 }
 
+function gapSeconds(minutes: number, advances: number): number | null {
+  if (!(minutes > 0) || !(advances > 0)) return null;
+  return Math.max(1, Math.round((minutes * 60) / advances));
+}
+
 function paceFrom(
   sitHistory: SitSession[],
   progress: Record<string, WorkProgress>,
   minutesAll: number,
+  avgGapSec: number | null,
 ): PaceInfo {
-  const sessions = sitHistory ?? [];
+  // Legacy rows were wall-clock and are stored as 0 after the clock migration.
+  const sessions = (sitHistory ?? []).filter((row) => row.minutes > 0);
   const avgSit =
     sessions.length > 0
       ? sessions.reduce((s, x) => s + x.minutes, 0) / sessions.length
@@ -227,20 +225,25 @@ function paceFrom(
   if (avgSit != null) {
     if (avgSit < 12) label = "Quick sits";
     else if (avgSit > 35) label = "Long sits";
+  } else if (avgGapSec != null) {
+    if (avgGapSec < 12) label = "Quick sits";
+    else if (avgGapSec > 45) label = "Long sits";
   } else if (breathsPerMinute != null) {
     if (breathsPerMinute >= 2.5) label = "Quick sits";
     else if (breathsPerMinute <= 0.8) label = "Long sits";
   }
 
   const detailParts: string[] = [];
+  if (avgGapSec != null) detailParts.push(formatGap(avgGapSec));
   if (breathsPerMinute != null) detailParts.push(`${breathsPerMinute} breaths/min`);
   if (avgSit != null) detailParts.push(`~${Math.round(avgSit)} min sits`);
 
   return {
     label,
-    detail: detailParts.join(" · ") || "After a few sits, pace appears here.",
+    detail: detailParts.join(" · ") || "After a few advances, pace appears here.",
     breathsPerMinute,
     avgSitMinutes: avgSit != null ? Math.round(avgSit * 10) / 10 : null,
+    avgGapSec,
   };
 }
 
@@ -303,7 +306,7 @@ export function weekMinutesSeries(
     days.push({
       key,
       label: DAY_LABELS[new Date(ts).getDay()] ?? "",
-      minutes: Math.round(map[key] ?? 0),
+      minutes: Math.round((map[key] ?? 0) * 1000) / 1000,
     });
   }
   return days;
@@ -450,7 +453,12 @@ export function activityTimeline(input: {
       at: sit.endedAt,
       kind: "sit",
       title: workTitle(sit.workId),
-      detail: `${formatMinutes(sit.minutes)} min sit`,
+      detail:
+        sit.minutes > 0
+          ? sit.minutes < 1
+            ? `${formatActiveMinutes(sit.minutes)} active`
+            : `${formatMinutes(sit.minutes)} min active`
+          : "Sit",
       workId: sit.workId,
     });
   }
@@ -508,6 +516,8 @@ export function deriveReadingStats(input: {
   progress: Record<string, WorkProgress>;
   favorites: string[];
   readingMinutesByDay?: Record<string, number>;
+  advancesByDay?: Record<string, number>;
+  lastActiveReadAt?: number;
   sitHistory?: SitSession[];
   togetherKeeps?: TogetherKeep[];
   hostedSits?: HostedSit[];
@@ -526,15 +536,27 @@ export function deriveReadingStats(input: {
   const sittingMinutes = input.sittingMinutes ?? 20;
 
   const today = dayKey(now);
+  const advancesByDay = input.advancesByDay ?? {};
+  // Active minutes only. Breath-progress estimates used to stand in for a
+  // missing ledger and would refill Today/Week after the wall-clock reset.
   const recordedAll = sumMap(byDay);
   const recordedToday = byDay[today] ?? 0;
   const recordedWeek = sumSince(byDay, dayKey(now - 6 * MS_DAY));
-
-  const estimated = recordedAll <= 0 ? estimateMinutes(progress) : 0;
-  const minutesAreEstimated = recordedAll <= 0 && estimated > 0;
-  const minutesAll = recordedAll > 0 ? recordedAll : estimated;
-  const minutesToday = recordedAll > 0 ? recordedToday : 0;
-  const minutesWeek = recordedAll > 0 ? recordedWeek : estimated;
+  const minutesAreEstimated = false;
+  const minutesAll = recordedAll;
+  const minutesToday = recordedToday;
+  const minutesWeek = recordedWeek;
+  const advancesToday = Math.max(0, Math.round(advancesByDay[today] ?? 0));
+  const advancesAll = Object.values(advancesByDay).reduce(
+    (sum, n) => sum + Math.max(0, Math.round(n) || 0),
+    0,
+  );
+  const lastActiveReadAt =
+    typeof input.lastActiveReadAt === "number" && input.lastActiveReadAt > 0
+      ? input.lastActiveReadAt
+      : 0;
+  const avgGapSec =
+    gapSeconds(recordedToday, advancesToday) ?? gapSeconds(recordedAll, advancesAll);
 
   const minutesByWork: Record<string, number> = {};
   for (const sit of sitHistory) {
@@ -560,7 +582,7 @@ export function deriveReadingStats(input: {
   const streak = Math.max(progressStreak(progress, now), minutesStreak(byDay, now));
   const forms = topForms([...workIds], progress, favSet, minutesByWork);
   const origins = topOrigins([...workIds], progress, favSet, minutesByWork);
-  const pace = paceFrom(sitHistory, progress, minutesAll);
+  const pace = paceFrom(sitHistory, progress, minutesAll, avgGapSec);
   const breaths = countBreaths(progress);
   const desk = deskWorks(progress);
   const lanes = ritualLanesUsed(workIds);
@@ -573,14 +595,14 @@ export function deriveReadingStats(input: {
     favorites.length > 0 ||
     kept > 0 ||
     recordedAll > 0 ||
-    estimated > 0 ||
+    advancesAll > 0 ||
     togetherKeeps.length > 0 ||
     hostedCount > 0;
 
   const readiness = readinessFrom({
     hasSignal,
     minutesToday,
-    minutesWeek: recordedAll > 0 ? minutesWeek : 0,
+    minutesWeek,
     sittingMinutes,
     daysPresent: daysPresent(progress, byDay, now),
     kept,
@@ -593,18 +615,18 @@ export function deriveReadingStats(input: {
     {
       id: "today",
       label: "Today",
-      value: Math.round(minutesToday),
+      value: minutesToday,
       max: sitTarget,
-      display: formatMinutes(Math.round(minutesToday)),
-      unit: minutesAreEstimated ? "est. min" : "min",
+      display: formatActiveMinutes(minutesToday),
+      unit: activeMinuteUnit(minutesToday),
     },
     {
       id: "week",
       label: "This week",
-      value: Math.round(minutesWeek),
+      value: minutesWeek,
       max: sitTarget * 5,
-      display: formatMinutes(Math.round(minutesWeek)),
-      unit: minutesAreEstimated ? "est. min" : "min",
+      display: formatActiveMinutes(minutesWeek),
+      unit: activeMinuteUnit(minutesWeek),
     },
     {
       id: "breaths",
@@ -646,9 +668,9 @@ export function deriveReadingStats(input: {
 
   return {
     hasSignal,
-    minutesToday: Math.round(minutesToday),
-    minutesWeek: Math.round(minutesWeek),
-    minutesAll: Math.round(minutesAll),
+    minutesToday,
+    minutesWeek,
+    minutesAll,
     minutesAreEstimated,
     streak,
     pace,
@@ -660,6 +682,9 @@ export function deriveReadingStats(input: {
     kept,
     readiness,
     breaths,
+    advancesToday,
+    advancesAll,
+    lastActiveReadAt,
     inProgress: desk.length,
     togetherKeeps: togetherKeeps.length,
     hostedSits: hostedCount,
@@ -687,6 +712,36 @@ export function formatMinutes(n: number) {
   const h = Math.floor(whole / 60);
   const m = whole % 60;
   return m ? `${h}h ${m}m` : `${h}h`;
+}
+
+/** Active-read span. Sub-minute credit stays visible as seconds. */
+export function formatActiveMinutes(n: number) {
+  if (!(n > 0)) return "0";
+  if (n < 1) return `${Math.max(1, Math.round(n * 60))}s`;
+  return formatMinutes(n);
+}
+
+export function activeMinuteUnit(n: number) {
+  return n > 0 && n < 1 ? "active" : "active min";
+}
+
+/** Mean gap between advances, for the pace tile. */
+export function formatGap(seconds: number) {
+  if (!(seconds > 0)) return "—";
+  if (seconds < 60) return `${Math.round(seconds)}s apart`;
+  const whole = Math.round(seconds);
+  const m = Math.floor(whole / 60);
+  const s = whole % 60;
+  return s ? `${m}m ${s}s apart` : `${m}m apart`;
+}
+
+export function formatGapShort(seconds: number | null) {
+  if (seconds == null || !(seconds > 0)) return "—";
+  if (seconds < 60) return `${Math.round(seconds)}s`;
+  const whole = Math.round(seconds);
+  const m = Math.floor(whole / 60);
+  const s = whole % 60;
+  return s ? `${m}m ${s}s` : `${m}m`;
 }
 
 export function formLabel(form: ShelfForm) {
