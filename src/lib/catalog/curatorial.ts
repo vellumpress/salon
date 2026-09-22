@@ -51,9 +51,10 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * before-sleep only — poem chapters, First Fig — not Next, not Featured.
  * PM cycle (Sep 21) sits on Next after that noon queue: Tropic Death is the
  * Next lead (Drought, Barbados), then There Is Confusion (For you after the
- * cold-open trio), then Buddenbrooks, then Miss Lulu Bett (For you). Color
- * is Rituals only — Yet Do I Marvel, then Incident, poem chapters — not
- * Next, not Featured. Cold-open stays Mirth → Quicksand → Botchan.
+ * cold-open trio), then Miss Lulu Bett (For you). Buddenbrooks is Later
+ * (soft inflation) — not Next, not Featured. Color is Rituals only — Yet Do
+ * I Marvel, then Incident, poem chapters — not Next, not Featured.
+ * Cold-open stays Mirth → Quicksand → Botchan.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -77,7 +78,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-awakening",
   "tropic",
   "there-is-confusion",
-  "buddenbrooks",
   "miss-lulu-bett",
 ] as const;
 

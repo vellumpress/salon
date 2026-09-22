@@ -55,17 +55,24 @@ test("local poem binds have no timed-sit scene chops", () => {
 test("A Hundred and Seventy Chinese Poems is one poem per scene", () => {
   const full = load("texts", "a-hundred-and-seventy-chinese-poems");
   const packed = load("openings", "a-hundred-and-seventy-chinese-poems");
-  assert.ok(full && packed);
+  assert.ok(full);
+  assert.equal(packed, null);
   assert.equal(full!.scenes[0]?.title, FIRST_SCENE_TITLE["a-hundred-and-seventy-chinese-poems"]);
-  assert.equal(full!.scenes[0]?.title, "Battle");
-  assert.match(full!.scenes[0]?.reentry ?? "", /Falling into Trouble|We grasp our battle-spears/);
-  assert.equal(full!.scenes.length, 139);
+  assert.equal(full!.scenes[0]?.title, "Winter Night");
+  assert.notEqual(full!.scenes[0]?.title, "Battle");
+  assert.match(full!.scenes[0]?.reentry ?? "", /^My bed is so empty/);
+  const battle = full!.scenes.find((scene) => scene.title === "Battle");
+  assert.ok(battle);
+  assert.match(battle!.reentry ?? "", /Ch’ü Yüan|Falling into Trouble|We grasp our battle-spears/);
+  assert.equal(full!.scenes.length, 140);
+  assert.equal(full!.breaths.length, 3196);
   assert.equal(
-    full!.scenes.some((scene) => /^(Chapter|Part|Introduction|Two Poems|Title)\b/i.test(scene.title)),
+    full!.scenes.some((scene) => /^(Chapter|Part|Introduction|Two Poems)\b/i.test(scene.title)),
     false,
   );
   const winter = full!.scenes.find((scene) => scene.title === "Winter Night");
   assert.ok(winter);
+  assert.equal(winter, full!.scenes[0]);
   const winterBreaths = full!.breaths.filter((b) => b.sceneId === winter!.id);
   assert.equal(winterBreaths.length, 4);
   assert.equal(
@@ -73,10 +80,9 @@ test("A Hundred and Seventy Chinese Poems is one poem per scene", () => {
     false,
     "next poem leaked into Winter Night",
   );
-  assert.deepEqual(packed!.scenes.map((s) => s.title), ["Winter Night"]);
-  assert.match(packed!.scenes[0]?.reentry ?? "", /^My bed is so empty/);
-  assert.match(packed!.breaths.at(-1)?.text ?? "", /carry me back to you!$/);
-  assert.doesNotMatch(packed!.breaths.map((b) => b.text).join(" "), /\bBattle\b/);
+  assert.match(winterBreaths[0]?.text ?? "", /^My bed is so empty/);
+  assert.match(winterBreaths.at(-1)?.text ?? "", /carry me back to you!$/);
+  assert.doesNotMatch(winterBreaths.map((b) => b.text).join(" "), /\bBattle\b/);
   for (const scene of full!.scenes) {
     const lines = full!.breaths.filter((b) => b.sceneId === scene.id).map((b) => b.text);
     const last = lines.at(-1) ?? "";

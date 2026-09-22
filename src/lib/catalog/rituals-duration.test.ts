@@ -102,8 +102,8 @@ test("Quicksand before-sleep sit is a short evening room, not the whole novel", 
   const item = work({
     id: "quicksand",
     form: "novel",
-    breaths: 3366,
-    minutes: 421,
+    breaths: 685,
+    minutes: 160,
     local: true,
   });
   assert.equal(estimateRitualMinutes(item), 5);

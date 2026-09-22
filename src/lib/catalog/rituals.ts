@@ -162,7 +162,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-bridge-of-san-luis-rey":
     `Five travellers fall from a Peruvian bridge — Wilder asks whether those lives were accident or intention.`,
   quicksand:
-    `Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door. Quicksand begins in intentional isolation after a taxing day among an unkind faculty. Nella Larsen’s 1928 novel is a character study with Copenhagen ahead — stop before the observer portrait.`,
+    `Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door. Quicksand begins in intentional isolation after a taxing day among an unkind faculty. Nella Larsen’s 1928 novel is the full book — Chapter I through XXV — with Copenhagen ahead.`,
   "attendants-confession":
     `A marked man offers a human document—and asks you not to publish it until he’s dead. Machado’s attendant begins in confidence and already smells of the grave.`,
   rashomon:
