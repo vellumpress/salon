@@ -1905,6 +1905,82 @@ test("Tier B batches 7–8 are local format-min binds, never Featured", () => {
   }
 });
 
+/** Tier B format-min CLEAR batches 3–4. Later only — never Featured, cold-open untouched. */
+const TIER_B_BATCH_3_4 = [
+  "a-dome-of-many-coloured-glass",
+  "alexander-s-bridge",
+  "burning-daylight",
+  "cathay",
+  "chance",
+  "jennie-gerhardt",
+  "lost-face",
+  "moving-the-mountain",
+  "our-mr-wrenn",
+  "responsibilities-and-other-poems",
+  "spectra-a-book-of-poetic-experiments",
+  "strictly-business-more-stories-of-the-four-million",
+  "the-green-helmet-and-other-poems",
+  "the-house-of-pride-and-other-tales-of-hawaii",
+  "the-night-born",
+  "the-quest-of-the-silver-fleece",
+  "the-scarlet-plague",
+  "the-stoneground-ghost-tales",
+  "the-trespasser",
+  "under-fire",
+  "vandover-and-the-brute",
+  "victory",
+  "when-god-laughs-and-other-stories",
+  "actions-and-reactions",
+  "chamber-music",
+  "green-mansions",
+  "in-search-of-the-unknown",
+  "in-the-seven-woods",
+  "kim",
+  "love-of-life-and-other-stories",
+  "mrs-craddock",
+  "my-brilliant-career",
+  "nostromo",
+  "of-one-blood",
+  "options",
+  "rio-grande-s-last-race-and-other-verses",
+  "such-is-life",
+  "the-ambassadors",
+  "the-spell-of-the-yukon-and-other-verses",
+  "the-sport-of-the-gods",
+  "the-wings-of-the-dove",
+  "traffics-and-discoveries",
+  "what-diantha-did",
+  "winona",
+] as const;
+
+test("Tier B batches 3–4 are local format-min binds, never Featured", () => {
+  assert.equal(TIER_B_BATCH_3_4.length, 44);
+  assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  const coldOpen = new Set<string>(FIRST_SESSION_RITUAL_IDS);
+  for (const id of TIER_B_BATCH_3_4) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(curatorialTrack(id), "later", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(coldOpen.has(id), false, id);
+    assertNoStubOpening(id);
+    const full = textWork(id);
+    assert.equal(work!.breaths, full.breaths.length, id);
+    assert.ok(full.breaths.length > 1, id);
+    assert.ok(
+      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
+      `${id} shelf opening`,
+    );
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
+  }
+});
+
 test("homepage examples keep country + concrete sentence", () => {
   assert.equal(countryFor(SHELF.find((w) => w.id === "passing")!), "United States");
   assert.match(blurbFor("passing"), /color line/i);

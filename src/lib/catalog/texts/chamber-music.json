@@ -1,0 +1,716 @@
+{
+  "id": "chamber-music",
+  "title": "Chamber Music",
+  "author": "James Joyce",
+  "year": "1907",
+  "note": "Project Gutenberg 2817",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "Strings in the earth and air Make music sweet; Strings by the river where The willows meet.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "The twilight turns from amethyst To deep and deeper blue, The lamp fills with a pale green glow The trees of the avenue.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "At that hour when all things have repose, O lonely watcher of the skies, Do you hear the night wind and the sighs Of harps playing unto Love to unclose The pale gates of sunrise?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Chapter IV",
+      "place": "Chapter IV",
+      "reentry": "When the shy star goes forth in heaven All maidenly, disconsolate, Hear you amid the drowsy even One who is singing by your gate. His song is softer than the dew And he is come to visit you.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Chapter V",
+      "place": "Chapter V",
+      "reentry": "Lean out of the window, Goldenhair, I hear you singing A merry air.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Chapter VI",
+      "place": "Chapter VI",
+      "reentry": "I would in that sweet bosom be (O sweet it is and fair it is!) Where no rude wind might visit me. Because of sad austerities I would in that sweet bosom be.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Chapter VII",
+      "place": "Chapter VII",
+      "reentry": "My love is in a light attire Among the apple-trees, Where the gay winds do most desire To run in companies.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Chapter VIII",
+      "place": "Chapter VIII",
+      "reentry": "Who goes amid the green wood With springtide all adorning her? Who goes amid the merry green wood To make it merrier?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Chapter IX",
+      "place": "Chapter IX",
+      "reentry": "Winds of May, that dance on the sea, Dancing a ring-around in glee From furrow to furrow, while overhead The foam flies up to be garlanded, In silvery arches spanning the air, Saw you my true love anywhere? Welladay! Welladay! For the winds",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Chapter X",
+      "place": "Chapter X",
+      "reentry": "Bright cap and streamers, He sings in the hollow: Come follow, come follow, All you that love. Leave dreams to the dreamers That will not after, That song and laughter Do nothing move.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Chapter XI",
+      "place": "Chapter XI",
+      "reentry": "Bid adieu, adieu, adieu, Bid adieu to girlish days, Happy Love is come to woo Thee and woo thy girlish ways— The zone that doth become thee fair, The snood upon thy yellow hair,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Chapter XII",
+      "place": "Chapter XII",
+      "reentry": "What counsel has the hooded moon Put in thy heart, my shyly sweet, Of Love in ancient plenilune, Glory and stars beneath his feet— A sage that is but kith and kin With the comedian Capuchin?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Chapter XIII",
+      "place": "Chapter XIII",
+      "reentry": "Go seek her out all courteously, And say I come, Wind of spices whose song is ever Epithalamium. O, hurry over the dark lands And run upon the sea For seas and lands shall not divide us, My love and me.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Chapter XIV",
+      "place": "Chapter XIV",
+      "reentry": "My dove, my beautiful one, Arise, arise! The night-dew lies Upon my lips and eyes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Chapter XV",
+      "place": "Chapter XV",
+      "reentry": "From dewy dreams, my soul, arise, From love’s deep slumber and from death, For lo! the trees are full of sighs Whose leaves the morn admonisheth.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Chapter XVI",
+      "place": "Chapter XVI",
+      "reentry": "O cool is the valley now And there, love, will we go For many a choir is singing now Where Love did sometime go. And hear you not the thrushes calling, Calling us away? O cool and pleasant is the valley And there, love, will we stay.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "Chapter XVII",
+      "place": "Chapter XVII",
+      "reentry": "Because your voice was at my side I gave him pain, Because within my hand I held Your hand again.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Chapter XVIII",
+      "place": "Chapter XVIII",
+      "reentry": "O sweetheart, hear you Your lover’s tale; A man shall have sorrow When friends him fail.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Chapter XIX",
+      "place": "Chapter XIX",
+      "reentry": "Be not sad because all men Prefer a lying clamour before you: Sweetheart, be at peace again— Can they dishonour you?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Chapter XX",
+      "place": "Chapter XX",
+      "reentry": "In the dark pine-wood I would we lay, In deep cool shadow At noon of day.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "Chapter XXI",
+      "place": "Chapter XXI",
+      "reentry": "He who hath glory lost, nor hath Found any soul to fellow his, Among his foes in scorn and wrath Holding to ancient nobleness, That high unconsortable one— His love is his companion.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Chapter XXII",
+      "place": "Chapter XXII",
+      "reentry": "Of that so sweet imprisonment My soul, dearest, is fain— Soft arms that woo me to relent And woo me to detain. Ah, could they ever hold me there Gladly were I a prisoner!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "Chapter XXIII",
+      "place": "Chapter XXIII",
+      "reentry": "This heart that flutters near my heart My hope and all my riches is, Unhappy when we draw apart And happy between kiss and kiss; My hope and all my riches—yes!— And all my happiness.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "Chapter XXIV",
+      "place": "Chapter XXIV",
+      "reentry": "Silently she’s combing, Combing her long hair, Silently and graciously, With many a pretty air.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Chapter XXV",
+      "place": "Chapter XXV",
+      "reentry": "Lightly come or lightly go: Though thy heart presage thee woe, Vales and many a wasted sun, Oread let thy laughter run Till the irreverent mountain air Ripple all thy flying hair.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "Chapter XXVI",
+      "place": "Chapter XXVI",
+      "reentry": "Thou leanest to the shell of night, Dear lady, a divining ear. In that soft choiring of delight What sound hath made thy heart to fear? Seemed it of rivers rushing forth From the grey deserts of the north?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Chapter XXVII",
+      "place": "Chapter XXVII",
+      "reentry": "Though I thy Mithridates were, Framed to defy the poison-dart, Yet must thou fold me unaware To know the rapture of thy heart, And I but render and confess The malice of thy tenderness.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Chapter XXVIII",
+      "place": "Chapter XXVIII",
+      "reentry": "Gentle lady, do not sing Sad songs about the end of love; Lay aside sadness and sing How love that passes is enough.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Chapter XXIX",
+      "place": "Chapter XXIX",
+      "reentry": "Dear heart, why will you use me so? Dear eyes that gently me upbraid, Still are you beautiful—but O, How is your beauty raimented!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "Chapter XXX",
+      "place": "Chapter XXX",
+      "reentry": "Love came to us in time gone by When one at twilight shyly played And one in fear was standing nigh— For Love at first is all afraid.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "Chapter XXXI",
+      "place": "Chapter XXXI",
+      "reentry": "O, it was out by Donnycarney When the bat flew from tree to tree My love and I did walk together; And sweet were the words she said to me.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Chapter XXXII",
+      "place": "Chapter XXXII",
+      "reentry": "Rain has fallen all the day. O come among the laden trees: The leaves lie thick upon the way Of memories.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "Chapter XXXIII",
+      "place": "Chapter XXXIII",
+      "reentry": "Now, O now, in this brown land Where Love did so sweet music make We two shall wander, hand in hand, Forbearing for old friendship’ sake, Nor grieve because our love was gay Which now is ended in this way.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "Chapter XXXIV",
+      "place": "Chapter XXXIV",
+      "reentry": "Sleep now, O sleep now, O you unquiet heart! A voice crying “Sleep now” Is heard in my heart.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "Chapter XXXV",
+      "place": "Chapter XXXV",
+      "reentry": "All day I hear the noise of waters Making moan, Sad as the sea-bird is, when going Forth alone, He hears the winds cry to the water’s Monotone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "Chapter XXXVI",
+      "place": "Chapter XXXVI",
+      "reentry": "I hear an army charging upon the land, And the thunder of horses plunging, foam about their knees: Arrogant, in black armour, behind them stand, Disdaining the reins, with fluttering whips, the charioteers.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Strings in the earth and air Make music sweet; Strings by the river where The willows meet."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "There’s music along the river For Love wanders there, Pale flowers on his mantle, Dark leaves on his hair."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "All softly playing, With head to the music bent, And fingers straying Upon an instrument."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The twilight turns from amethyst To deep and deeper blue, The lamp fills with a pale green glow The trees of the avenue."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "The old piano plays an air, Sedate and slow and gay; She bends upon the yellow keys, Her head inclines this way."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Shy thought and grave wide eyes and hands That wander as they list— The twilight turns to darker blue With lights of amethyst."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "At that hour when all things have repose, O lonely watcher of the skies, Do you hear the night wind and the sighs Of harps playing unto Love to unclose The pale gates of sunrise?"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "When all things repose, do you alone Awake to hear the sweet harps play To Love before him on his way, And the night wind answering in antiphon Till night is overgone?"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Play on, invisible harps, unto Love, Whose way in heaven is aglow At that hour when soft lights come and go, Soft sweet music in the air above And in the earth below."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "When the shy star goes forth in heaven All maidenly, disconsolate, Hear you amid the drowsy even One who is singing by your gate. His song is softer than the dew And he is come to visit you."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "O bend no more in revery When he at eventide is calling, Nor muse: Who may this singer be Whose song about my heart is falling? Know you by this, the lover’s chant, ’Tis I that am your visitant."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Lean out of the window, Goldenhair, I hear you singing A merry air."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "My book was closed, I read no more, Watching the fire dance On the floor."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "I have left my book, I have left my room, For I heard you singing Through the gloom."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Singing and singing A merry air, Lean out of the window, Goldenhair."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "I would in that sweet bosom be (O sweet it is and fair it is!) Where no rude wind might visit me. Because of sad austerities I would in that sweet bosom be."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "I would be ever in that heart (O soft I knock and soft entreat her!) Where only peace might be my part. Austerities were all the sweeter So I were ever in that heart."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "My love is in a light attire Among the apple-trees, Where the gay winds do most desire To run in companies."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "There, where the gay winds stay to woo The young leaves as they pass, My love goes slowly, bending to Her shadow on the grass;"
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "And where the sky’s a pale blue cup Over the laughing land, My love goes lightly, holding up Her dress with dainty hand."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Who goes amid the green wood With springtide all adorning her? Who goes amid the merry green wood To make it merrier?"
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Who passes in the sunlight By ways that know the light footfall? Who passes in the sweet sunlight With mien so virginal?"
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "The ways of all the woodland Gleam with a soft and golden fire— For whom does all the sunny woodland Carry so brave attire?"
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "O, it is for my true love The woods their rich apparel wear— O, it is for my own true love, That is so young and fair."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Winds of May, that dance on the sea, Dancing a ring-around in glee From furrow to furrow, while overhead The foam flies up to be garlanded, In silvery arches spanning the air, Saw you my true love anywhere? Welladay! Welladay! For the winds of May! Love is unhappy when love is away!"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Bright cap and streamers, He sings in the hollow: Come follow, come follow, All you that love. Leave dreams to the dreamers That will not after, That song and laughter Do nothing move."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "With ribbons streaming He sings the bolder; In troop at his shoulder The wild bees hum. And the time of dreaming Dreams is over— As lover to lover, Sweetheart, I come."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Bid adieu, adieu, adieu, Bid adieu to girlish days, Happy Love is come to woo Thee and woo thy girlish ways— The zone that doth become thee fair, The snood upon thy yellow hair,"
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "When thou hast heard his name upon The bugles of the cherubim Begin thou softly to unzone Thy girlish bosom unto him And softly to undo the snood That is the sign of maidenhood."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "What counsel has the hooded moon Put in thy heart, my shyly sweet, Of Love in ancient plenilune, Glory and stars beneath his feet— A sage that is but kith and kin With the comedian Capuchin?"
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Believe me rather that am wise In disregard of the divine, A glory kindles in those eyes Trembles to starlight. Mine, O Mine! No more be tears in moon or mist For thee, sweet sentimentalist."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "Go seek her out all courteously, And say I come, Wind of spices whose song is ever Epithalamium. O, hurry over the dark lands And run upon the sea For seas and lands shall not divide us, My love and me."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "Now, wind, of your good courtesy I pray you go, And come into her little garden And sing at her window; Singing: The bridal wind is blowing For Love is at his noon; And soon will your true love be with you, Soon, O soon."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "My dove, my beautiful one, Arise, arise! The night-dew lies Upon my lips and eyes."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "The odorous winds are weaving A music of sighs: Arise, arise, My dove, my beautiful one!"
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "I wait by the cedar tree, My sister, my love, White breast of the dove, My breast shall be your bed."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "The pale dew lies Like a veil on my head. My fair one, my fair dove, Arise, arise!"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "From dewy dreams, my soul, arise, From love’s deep slumber and from death, For lo! the trees are full of sighs Whose leaves the morn admonisheth."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "Eastward the gradual dawn prevails Where softly-burning fires appear, Making to tremble all those veils Of grey and golden gossamer."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "While sweetly, gently, secretly, The flowery bells of morn are stirred And the wise choirs of faery Begin (innumerous!) to be heard."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "O cool is the valley now And there, love, will we go For many a choir is singing now Where Love did sometime go. And hear you not the thrushes calling, Calling us away? O cool and pleasant is the valley And there, love, will we stay."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Because your voice was at my side I gave him pain, Because within my hand I held Your hand again."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "There is no word nor any sign Can make amend— He is a stranger to me now Who was my friend."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "O sweetheart, hear you Your lover’s tale; A man shall have sorrow When friends him fail."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "For he shall know then Friends be untrue And a little ashes Their words come to."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "But one unto him Will softly move And softly woo him In ways of love."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "His hand is under Her smooth round breast; So he who has sorrow Shall have rest."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "Be not sad because all men Prefer a lying clamour before you: Sweetheart, be at peace again— Can they dishonour you?"
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "They are sadder than all tears; Their lives ascend as a continual sigh. Proudly answer to their tears: As they deny, deny."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "In the dark pine-wood I would we lay, In deep cool shadow At noon of day."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "How sweet to lie there, Sweet to kiss, Where the great pine-forest Enaisled is!"
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "Thy kiss descending Sweeter were With a soft tumult Of thy hair."
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "O, unto the pine-wood At noon of day Come with me now, Sweet love, away."
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "He who hath glory lost, nor hath Found any soul to fellow his, Among his foes in scorn and wrath Holding to ancient nobleness, That high unconsortable one— His love is his companion."
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "Of that so sweet imprisonment My soul, dearest, is fain— Soft arms that woo me to relent And woo me to detain. Ah, could they ever hold me there Gladly were I a prisoner!"
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "Dearest, through interwoven arms By love made tremulous, That night allures me where alarms Nowise may trouble us; But sleep to dreamier sleep be wed Where soul with soul lies prisoned."
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "This heart that flutters near my heart My hope and all my riches is, Unhappy when we draw apart And happy between kiss and kiss; My hope and all my riches—yes!— And all my happiness."
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "For there, as in some mossy nest The wrens will divers treasures keep, I laid those treasures I possessed Ere that mine eyes had learned to weep. Shall we not be as wise as they Though love live but a day?"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "Silently she’s combing, Combing her long hair, Silently and graciously, With many a pretty air."
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "The sun is in the willow leaves And on the dappled grass, And still she’s combing her long hair Before the looking-glass."
+    },
+    {
+      "id": "s23-2",
+      "sceneId": "s23",
+      "text": "I pray you, cease to comb out, Comb out your long hair, For I have heard of witchery Under a pretty air,"
+    },
+    {
+      "id": "s23-3",
+      "sceneId": "s23",
+      "text": "That makes as one thing to the lover Staying and going hence, All fair, with many a pretty air And many a negligence."
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "Lightly come or lightly go: Though thy heart presage thee woe, Vales and many a wasted sun, Oread let thy laughter run Till the irreverent mountain air Ripple all thy flying hair."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "Lightly, lightly—ever so: Clouds that wrap the vales below At the hour of evenstar Lowliest attendants are; Love and laughter song-confessed When the heart is heaviest."
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Thou leanest to the shell of night, Dear lady, a divining ear. In that soft choiring of delight What sound hath made thy heart to fear? Seemed it of rivers rushing forth From the grey deserts of the north?"
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "That mood of thine, O timorous, Is his, if thou but scan it well, Who a mad tale bequeaths to us At ghosting hour conjurable— And all for some strange name he read In Purchas or in Holinshed."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "Though I thy Mithridates were, Framed to defy the poison-dart, Yet must thou fold me unaware To know the rapture of thy heart, And I but render and confess The malice of thy tenderness."
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "For elegant and antique phrase, Dearest, my lips wax all too wise; Nor have I known a love whose praise Our piping poets solemnize, Neither a love where may not be Ever so little falsity."
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Gentle lady, do not sing Sad songs about the end of love; Lay aside sadness and sing How love that passes is enough."
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "Sing about the long deep sleep Of lovers that are dead, and how In the grave all love shall sleep: Love is aweary now."
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "Dear heart, why will you use me so? Dear eyes that gently me upbraid, Still are you beautiful—but O, How is your beauty raimented!"
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "Through the clear mirror of your eyes, Through the soft sigh of kiss to kiss, Desolate winds assail with cries The shadowy garden where love is."
+    },
+    {
+      "id": "s28-2",
+      "sceneId": "s28",
+      "text": "And soon shall love dissolved be When over us the wild winds blow— But you, dear love, too dear to me, Alas! why will you use me so?"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "Love came to us in time gone by When one at twilight shyly played And one in fear was standing nigh— For Love at first is all afraid."
+    },
+    {
+      "id": "s29-1",
+      "sceneId": "s29",
+      "text": "We were grave lovers. Love is past That had his sweet hours many a one; Welcome to us now at the last The ways that we shall go upon."
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "O, it was out by Donnycarney When the bat flew from tree to tree My love and I did walk together; And sweet were the words she said to me."
+    },
+    {
+      "id": "s30-1",
+      "sceneId": "s30",
+      "text": "Along with us the summer wind Went murmuring—O, happily!— But softer than the breath of summer Was the kiss she gave to me."
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "Rain has fallen all the day. O come among the laden trees: The leaves lie thick upon the way Of memories."
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "Staying a little by the way Of memories shall we depart. Come, my beloved, where I may Speak to your heart."
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "Now, O now, in this brown land Where Love did so sweet music make We two shall wander, hand in hand, Forbearing for old friendship’ sake, Nor grieve because our love was gay Which now is ended in this way."
+    },
+    {
+      "id": "s32-1",
+      "sceneId": "s32",
+      "text": "A rogue in red and yellow dress Is knocking, knocking at the tree; And all around our loneliness The wind is whistling merrily. The leaves—they do not sigh at all When the year takes them in the fall."
+    },
+    {
+      "id": "s32-2",
+      "sceneId": "s32",
+      "text": "Now, O now, we hear no more The vilanelle and roundelay! Yet will we kiss, sweetheart, before We take sad leave at close of day. Grieve not, sweetheart, for anything— The year, the year is gathering."
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "Sleep now, O sleep now, O you unquiet heart! A voice crying “Sleep now” Is heard in my heart."
+    },
+    {
+      "id": "s33-1",
+      "sceneId": "s33",
+      "text": "The voice of the winter Is heard at the door. O sleep, for the winter Is crying “Sleep no more.”"
+    },
+    {
+      "id": "s33-2",
+      "sceneId": "s33",
+      "text": "My kiss will give peace now And quiet to your heart— Sleep on in peace now, O you unquiet heart!"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "All day I hear the noise of waters Making moan, Sad as the sea-bird is, when going Forth alone, He hears the winds cry to the water’s Monotone."
+    },
+    {
+      "id": "s34-1",
+      "sceneId": "s34",
+      "text": "The grey winds, the cold winds are blowing Where I go. I hear the noise of many waters Far below. All day, all night, I hear them flowing To and fro."
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "I hear an army charging upon the land, And the thunder of horses plunging, foam about their knees: Arrogant, in black armour, behind them stand, Disdaining the reins, with fluttering whips, the charioteers."
+    },
+    {
+      "id": "s35-1",
+      "sceneId": "s35",
+      "text": "They cry unto the night their battle-name: I moan in sleep when I hear afar their whirling laughter. They cleave the gloom of dreams, a blinding flame, Clanging, clanging upon the heart as upon an anvil."
+    },
+    {
+      "id": "s35-2",
+      "sceneId": "s35",
+      "text": "They come shaking in triumph their long, green hair: They come out of the sea and run shouting by the shore. My heart, have you no wisdom thus to despair? My love, my love, my love, why have you left me alone?"
+    }
+  ]
+}

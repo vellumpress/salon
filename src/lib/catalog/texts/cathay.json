@@ -1,0 +1,1693 @@
+{
+  "id": "cathay",
+  "title": "Cathay",
+  "author": "Ezra Pound (after Li Bai et al.)",
+  "year": "1915",
+  "note": "Project Gutenberg 50155",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Sorrowful minds, sorrow is strong, we are hungry",
+      "place": "Sorrowful minds, sorrow is strong, we are hungry",
+      "reentry": "and thirsty. Our defence is not yet made sure, no one can let his friend return.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "We grub the old fern-stalks",
+      "place": "We grub the old fern-stalks",
+      "reentry": "We say: Will we be let to go back in October? There is no ease in royal affairs, we have no comfort. Our sorrow is bitter, but we would not return to our country.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "What flower has come into blossom?",
+      "place": "What flower has come into blossom?",
+      "reentry": "Whose chariot? The General's. Horses, his horses even, are tired. They were strong.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "We have no rest, three battles a month",
+      "place": "We have no rest, three battles a month",
+      "reentry": "By heaven, his horses are tired. The generals are on them, the soldiers are by them The horses are well trained, the generals have ivory arrows and quivers ornamented with fish-skin.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "The enemy is swift, we must be careful",
+      "place": "The enemy is swift, we must be careful",
+      "reentry": "When we set out, the willows were drooping with spring, We come back in the snow,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "We go slowly, we are hungry and thirsty,",
+      "place": "We go slowly, we are hungry and thirsty,",
+      "reentry": "Our mind is full of sorrow, who will know of our grief?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "By Kutsugen",
+      "place": "By Kutsugen",
+      "reentry": "*4th Century B.C.*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "The Beautiful Toilet",
+      "place": "The Beautiful Toilet",
+      "reentry": "Blue, blue is the grass about the river",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "And the willows have overfilled the close garden",
+      "place": "And the willows have overfilled the close garden",
+      "reentry": "And within, the mistress, in the midmost of her youth, White, white of face, hesitates, passing the door.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Slender, she puts forth a slender hand,",
+      "place": "Slender, she puts forth a slender hand,",
+      "reentry": "And she was a courtezan in the old days,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "And she has married a sot,",
+      "place": "And she has married a sot,",
+      "reentry": "Who now goes drunkenly out And leaves her too much alone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "By Mei Sheng",
+      "place": "By Mei Sheng",
+      "reentry": "*B.C. 140.*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "The River Song",
+      "place": "The River Song",
+      "reentry": "This boat is of shato-wood, and its gunwales are cut magnolia, Musicians with jewelled flutes and with pipes of gold",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Fill full the sides in rows, and our wine",
+      "place": "Fill full the sides in rows, and our wine",
+      "reentry": "Is rich for a thousand cups. We carry singing girls, drift with the drifting water,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Yet Sennin needs",
+      "place": "Yet Sennin needs",
+      "reentry": "A yellow stork for a charger, and all our seamen Would follow the white gulls or ride them.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Kutsu's prose song",
+      "place": "Kutsu's prose song",
+      "reentry": "Hangs with the sun and moon.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "King So's terraced palace",
+      "place": "King So's terraced palace",
+      "reentry": "is now but a barren hill, But I draw pen on this barge",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Causing the five peaks to tremble,",
+      "place": "Causing the five peaks to tremble,",
+      "reentry": "And I have joy in these words like the joy of blue islands. (If glory could last forever",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Then the waters of Han would flow northward.)",
+      "place": "Then the waters of Han would flow northward.)",
+      "reentry": "And I have moped in the Emperor's garden, awaiting an order-to-write! I looked at the dragon-pond, with its willow-coloured water",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Just reflecting the sky's tinge,",
+      "place": "Just reflecting the sky's tinge,",
+      "reentry": "And heard the five-score nightingales aimlessly singing.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "And the Emperor is at Ko",
+      "place": "And the Emperor is at Ko",
+      "reentry": "Five clouds hang aloft, bright on the purple sky, The imperial guards come forth from the golden house with their armour a-gleaming. The emperor in his jewelled car goes out to inspect his flowers, He goes out to Hori, to look at the wing-f",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Their sound is mixed in this flute,",
+      "place": "Their sound is mixed in this flute,",
+      "reentry": "Their voice is in the twelve pipes here.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "By Rihaku",
+      "place": "By Rihaku",
+      "reentry": "*8th century A.D.*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "The River-Merchant's Wife: a Letter",
+      "place": "The River-Merchant's Wife: a Letter",
+      "reentry": "While my hair was still cut straight across my forehead",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "I played about the front gate, pulling flowers",
+      "place": "I played about the front gate, pulling flowers",
+      "reentry": "You came by on bamboo stilts, playing horse, You walked about my seat, playing with blue plums.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "And we went on living in the village of Chokan:",
+      "place": "And we went on living in the village of Chokan:",
+      "reentry": "Two small people, without dislike or suspicion.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "At fourteen I married My Lord you",
+      "place": "At fourteen I married My Lord you",
+      "reentry": "I never laughed, being bashful. Lowering my head, I looked at the wall.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Called to, a thousand times, I never looked back",
+      "place": "Called to, a thousand times, I never looked back",
+      "reentry": "At fifteen I stopped scowling,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "I desired my dust to be mingled with yours",
+      "place": "I desired my dust to be mingled with yours",
+      "reentry": "Forever and forever, and forever. Why should I climb the look out?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "At sixteen you departed,",
+      "place": "At sixteen you departed,",
+      "reentry": "You went into far Ku-to-Yen, by the river of swirling eddies, And you have been gone five months.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "The monkeys make sorrowful noise overhead",
+      "place": "The monkeys make sorrowful noise overhead",
+      "reentry": "You dragged your feet when you went out. By the gate now, the moss is grown, the different mosses,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Too deep to clear them away!",
+      "place": "Too deep to clear them away!",
+      "reentry": "The leaves fall early this autumn, in wind. The paired butterflies are already yellow with August",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "Over the grass in the West garden,",
+      "place": "Over the grass in the West garden,",
+      "reentry": "They hurt me, I grow older, If you are coming down through the narrows of the river Kiang,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "Please let me know beforehand,",
+      "place": "Please let me know beforehand,",
+      "reentry": "And I will come out to meet you, As far as Cho-fu-Sa.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "The Jewel Stairs' Grievance",
+      "place": "The Jewel Stairs' Grievance",
+      "reentry": "The jewelled steps are already quite white with dew, It is so late that the dew soaks my gauze stockings,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "And I let down the crystal curtain",
+      "place": "And I let down the crystal curtain",
+      "reentry": "And watch the moon through the clear autumn.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "By Rihaku",
+      "place": "By Rihaku",
+      "reentry": "Note.--Jewel stairs, therefore a palace. Grievance, therefore there is something to complain, of. Gauze stockings, therefore a court lady, not a servant who complains. Clear autumn, therefore he has no excuse on account of weather. Also she",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "March has come to the bridge head,",
+      "place": "March has come to the bridge head,",
+      "reentry": "Peach boughs and apricot boughs hang over a thousand gates, At morning there are flowers to cut the heart, And evening drives them on the eastward-flowing waters.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "Petals are on the gone waters and on the going,",
+      "place": "Petals are on the gone waters and on the going,",
+      "reentry": "And on the back-swirling eddies, But to-days men are not the men of the old days, Though they hang in the same way over the bridge-rail.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "The sea's colour moves at the dawn",
+      "place": "The sea's colour moves at the dawn",
+      "reentry": "And the princes still stand in rows, about the throne, And the moon falls over the portals of Sei-go-yo,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "And clings to the walls and the gate-top",
+      "place": "And clings to the walls and the gate-top",
+      "reentry": "With head-gear glittering against the cloud and sun, The lords go forth from the court, and into far borders.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "They ride upon dragon-like horses,",
+      "place": "They ride upon dragon-like horses,",
+      "reentry": "Upon horses with head-trappings of yellow-metal, And the streets make way for their passage.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "Haughty their passing,",
+      "place": "Haughty their passing,",
+      "reentry": "Haughty their steps as they go into great banquets, To high halls and curious food,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "To the perfumed air and girls dancing,",
+      "place": "To the perfumed air and girls dancing,",
+      "reentry": "To clear flutes and clear singing; To the dance of the seventy couples;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "To the mad chase through the gardens",
+      "place": "To the mad chase through the gardens",
+      "reentry": "Night and day are given over to pleasure And they think it will last a thousand autumns,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "Unwearying autumns",
+      "place": "Unwearying autumns",
+      "reentry": "For them the yellow dogs howl portents in vain, And what are they compared to the lady Riokushu,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "That was cause of hate!",
+      "place": "That was cause of hate!",
+      "reentry": "Who among them is a man like Han-rei Who departed alone with his mistress,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "With her hair unbound, and he his own skiffs-man!",
+      "place": "With her hair unbound, and he his own skiffs-man!",
+      "reentry": "*By Rihaku.*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "By the North Gate, the wind blows full of sand,",
+      "place": "By the North Gate, the wind blows full of sand,",
+      "reentry": "Lonely from the beginning of time until now! Trees fall, the grass goes yellow with autumn.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "I climb the towers and towers",
+      "place": "I climb the towers and towers",
+      "reentry": "to watch out the barbarous land: Desolate castle, the sky, the wide desert.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "There is no wall left to this village",
+      "place": "There is no wall left to this village",
+      "reentry": "Bones white with a thousand frosts, High heaps, covered with trees and grass;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "Who brought this to pass?",
+      "place": "Who brought this to pass?",
+      "reentry": "Who has brought the flaming imperial anger? Who has brought the army with drums and with kettle-drums?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "Barbarous kings",
+      "place": "Barbarous kings",
+      "reentry": "A gracious spring, turned to blood-ravenous autumn, A turmoil of wars-men, spread over the middle kingdom,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "Three hundred and sixty thousand,",
+      "place": "Three hundred and sixty thousand,",
+      "reentry": "And sorrow, sorrow like rain. Sorrow to go, and sorrow, sorrow returning,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "Desolate, desolate fields,",
+      "place": "Desolate, desolate fields,",
+      "reentry": "And no children of warfare upon them, No longer the men for offence and defence. Ah, how shall you know the dreary sorrow at the North Gate,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "With Rihoku's name forgotten,",
+      "place": "With Rihoku's name forgotten,",
+      "reentry": "And we guardsmen fed to the tigers.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "Exile's Letter",
+      "place": "Exile's Letter",
+      "reentry": "To So-Kin of Rakuyo, ancient friend, Chancellor of Gen.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "Now I remember that you built me a special tavern",
+      "place": "Now I remember that you built me a special tavern",
+      "reentry": "By the south side of the bridge at Ten-Shin. With yellow gold and white jewels, we paid for songs and laughter And we were drunk for month on month, forgetting the kings and princes. Intelligent men came drifting in from the sea and from th",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "And with them, and with you especially",
+      "place": "And with them, and with you especially",
+      "reentry": "There was nothing at cross purpose, And they made nothing of sea-crossing or of mountain crossing,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "If only they could be of that fellowship,",
+      "place": "If only they could be of that fellowship,",
+      "reentry": "And we all spoke out our hearts and minds, and without regret.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "And then I was sent off to South Wei,",
+      "place": "And then I was sent off to South Wei,",
+      "reentry": "smothered in laurel groves, And you to the north of Raku-hoku, Till we had nothing but thoughts and memories in common.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "And then, when separation had come to its worst,",
+      "place": "And then, when separation had come to its worst,",
+      "reentry": "We met, and travelled into Sen-Go, Through all the thirty-six folds of the turning and twisting waters,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "Into a valley of the thousand bright flowers,",
+      "place": "Into a valley of the thousand bright flowers,",
+      "reentry": "That was the first valley; And into ten thousand valleys full of voices and pine-winds.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "And with silver harness and reins of gold,",
+      "place": "And with silver harness and reins of gold,",
+      "reentry": "Out come the East of Kan foreman and his company. And there came also the \"True man\" of Shi-yo to meet me,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "Playing on a jewelled mouth-organ",
+      "place": "Playing on a jewelled mouth-organ",
+      "reentry": "In the storied houses of San-Ko they gave us more Sennin music, Many instruments, like the sound of young phoenix broods.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "The foreman of Kan Chu, drunk, danced",
+      "place": "The foreman of Kan Chu, drunk, danced",
+      "reentry": "because his long sleeves wouldn't keep still With that music-playing. And I, wrapped in brocade, went to sleep with my head on his lap, And my spirit so high it was all over the heavens, And before the end of the day we were scattered like ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "I had to be off to So, far away over the waters,",
+      "place": "I had to be off to So, far away over the waters,",
+      "reentry": "You back to your river-bridge.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "And your father, who was brave as a leopard,",
+      "place": "And your father, who was brave as a leopard,",
+      "reentry": "Was governor in Hei Shu, and put down the barbarian rabble. And one May he had you send for me, despite the long distance. And what with broken wheels and so on, I won't say it wasn't hard going,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "Over roads twisted like sheeps' guts",
+      "place": "Over roads twisted like sheeps' guts",
+      "reentry": "And I was still going, late in the year, in the cutting wind from the North,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "And thinking how little you cared for the cost,",
+      "place": "And thinking how little you cared for the cost,",
+      "reentry": "and you caring enough to pay it. And what a reception: Red jade cups, food well set on a blue jewelled table,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "And I was drunk, and had no thought of returning",
+      "place": "And I was drunk, and had no thought of returning",
+      "reentry": "And you would walk out with me to the western corner of the castle, To the dynastic temple, with water about it clear as blue jade, With boats floating, and the sound of mouth-organs and drums, With ripples like dragon-scales, going grass g",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "With the willow flakes falling like snow,",
+      "place": "With the willow flakes falling like snow,",
+      "reentry": "And the vermilioned girls getting drunk about sunset, And the water a hundred feet deep reflecting green eyebrows --Eyebrows painted green are a fine sight in young moonlight,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "Gracefully painted--",
+      "place": "Gracefully painted--",
+      "reentry": "And the girls singing back at each other, Dancing in transparent brocade, And the wind lifting the song, and interrupting it,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "Tossing it up under the clouds",
+      "place": "Tossing it up under the clouds",
+      "reentry": "And all this comes to an end. And is not again to be met with.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "I went up to the court for examination,",
+      "place": "I went up to the court for examination,",
+      "reentry": "Tried Layu's luck, offered the Choyo song, And got no promotion, and went back to the East Mountains white-headed. And once again, later, we met at the South bridge-head. And then the crowd broke up, you went north to San palace,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "And if you ask how I regret that parting:",
+      "place": "And if you ask how I regret that parting:",
+      "reentry": "It is like the flowers falling at Spring's end Confused, whirled in a tangle. What is the use of talking, and there is no end of talking,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "There is no end of things in the heart",
+      "place": "There is no end of things in the heart",
+      "reentry": "I call in the boy,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "Have him sit on his knees here",
+      "place": "Have him sit on his knees here",
+      "reentry": "To seal this, And send it a thousand miles, thinking.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "The Seafarer",
+      "place": "The Seafarer",
+      "reentry": "(*From the early Anglo-Saxon text*)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "May I for my own self song's truth reckon,",
+      "place": "May I for my own self song's truth reckon,",
+      "reentry": "Journey's jargon, how I in harsh days Hardship endured oft.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "Bitter breast-cares have I abided,",
+      "place": "Bitter breast-cares have I abided,",
+      "reentry": "Known on my keel many a care's hold, And dire sea-surge, and there I oft spent",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "Narrow nightwatch nigh the ship's head",
+      "place": "Narrow nightwatch nigh the ship's head",
+      "reentry": "While she tossed close to cliffs. Coldly afflicted, My feet were by frost benumbed.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "Chill its chains are; chafing sighs",
+      "place": "Chill its chains are; chafing sighs",
+      "reentry": "Hew my heart round and hunger begot Mere-weary mood. Lest man know not",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "That he on dry land loveliest liveth,",
+      "place": "That he on dry land loveliest liveth,",
+      "reentry": "List how I, care-wretched, on ice-cold sea, Weathered the winter, wretched outcast",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "Deprived of my kinsmen;",
+      "place": "Deprived of my kinsmen;",
+      "reentry": "Hung with hard ice-flakes, where hail-scur flew, There I heard naught save the harsh sea",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "And ice-cold wave, at whiles the swan cries,",
+      "place": "And ice-cold wave, at whiles the swan cries,",
+      "reentry": "Did for my games the gannet's clamour, Sea-fowls' loudness was for me laughter,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "The mews' singing all my mead-drink",
+      "place": "The mews' singing all my mead-drink",
+      "reentry": "Storms, on the stone-cliffs beaten, fell on the stern In icy feathers; full oft the eagle screamed",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "With spray on his pinion",
+      "place": "With spray on his pinion",
+      "reentry": "Not any protector",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "May make merry man faring needy",
+      "place": "May make merry man faring needy",
+      "reentry": "This he little believes, who aye in winsome life Abides 'mid burghers some heavy business,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "Wealthy and wine-flushed, how I weary oft",
+      "place": "Wealthy and wine-flushed, how I weary oft",
+      "reentry": "Must bide above brine. Neareth nightshade, snoweth from north,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "Frost froze the land, hail fell on earth then",
+      "place": "Frost froze the land, hail fell on earth then",
+      "reentry": "Corn of the coldest. Nathless there knocketh now The heart's thought that I on high streams",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "The salt-wavy tumult traverse alone",
+      "place": "The salt-wavy tumult traverse alone",
+      "reentry": "Moaneth alway my mind's lust That I fare forth, that I afar hence",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "Seek out a foreign fastness",
+      "place": "Seek out a foreign fastness",
+      "reentry": "For this there's no mood-lofty man over earth's midst, Not though he be given his good, but will have in his youth greed; Nor his deed to the daring, nor his king to the faithful",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "But shall have his sorrow for sea-fare",
+      "place": "But shall have his sorrow for sea-fare",
+      "reentry": "Whatever his lord will. He hath not heart for harping, nor in ring-having",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "Nor winsomeness to wife, nor world's delight",
+      "place": "Nor winsomeness to wife, nor world's delight",
+      "reentry": "Nor any whit else save the wave's slash, Yet longing comes upon him to fare forth on the water.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "Bosque taketh blossom, cometh beauty of berries,",
+      "place": "Bosque taketh blossom, cometh beauty of berries,",
+      "reentry": "Fields to fairness, land fares brisker, All this admonisheth man eager of mood,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "The heart turns to travel so that he then thinks",
+      "place": "The heart turns to travel so that he then thinks",
+      "reentry": "On flood-ways to be far departing. Cuckoo calleth with gloomy crying,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "He singeth summerward, bodeth sorrow,",
+      "place": "He singeth summerward, bodeth sorrow,",
+      "reentry": "The bitter heart's blood. Burgher knows not-- He the prosperous man--what some perform",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "Where wandering them widest draweth",
+      "place": "Where wandering them widest draweth",
+      "reentry": "So that but now my heart burst from my breast-lock, My mood 'mid the mere-flood,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "Over the whale's acre, would wander wide",
+      "place": "Over the whale's acre, would wander wide",
+      "reentry": "On earth's shelter cometh oft to me, Eager and ready, the crying lone-flyer,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "Whets for the whale-path the heart irresistibly,",
+      "place": "Whets for the whale-path the heart irresistibly,",
+      "reentry": "O'er tracks of ocean; seeing that anyhow My lord deems to me this dead life",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "On loan and on land, I believe not",
+      "place": "On loan and on land, I believe not",
+      "reentry": "That any earth-weal eternal standeth Save there be somewhat calamitous",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "That, ere a man's tide go, turn it to twain",
+      "place": "That, ere a man's tide go, turn it to twain",
+      "reentry": "Disease or oldness or sword-hate Beats out the breath from doom-gripped body. And for this, every earl whatever, for those speaking after--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "Laud of the living, boasteth some last word,",
+      "place": "Laud of the living, boasteth some last word,",
+      "reentry": "That he will work ere he pass onward, Frame on the fair earth 'gainst foes his malice,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "Daring ado,",
+      "place": "Daring ado,",
+      "reentry": "So that all men shall honour him after And his laud beyond them remain 'mid the English,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "Aye, for ever, a lasting life's-blast,",
+      "place": "Aye, for ever, a lasting life's-blast,",
+      "reentry": "Delight mid the doughty. Days little durable,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "And all arrogance of earthen riches,",
+      "place": "And all arrogance of earthen riches,",
+      "reentry": "There come now no kings nor Caesars Nor gold-giving lords like those gone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "Howe'er in mirth most magnified,",
+      "place": "Howe'er in mirth most magnified,",
+      "reentry": "Whoe'er lived in life most lordliest, Drear all this excellence, delights undurable!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "Waneth the watch, but the world holdeth",
+      "place": "Waneth the watch, but the world holdeth",
+      "reentry": "Tomb hideth trouble. The blade is laid low.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "Earthly glory ageth and seareth",
+      "place": "Earthly glory ageth and seareth",
+      "reentry": "No man at all going the earth's gait, But age fares against him, his face paleth,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "Grey-haired he groaneth, knows gone companions,",
+      "place": "Grey-haired he groaneth, knows gone companions,",
+      "reentry": "Lordly men are to earth o'ergiven, Nor may he then the flesh-cover, whose life ceaseth,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "Nor eat the sweet nor feel the sorry,",
+      "place": "Nor eat the sweet nor feel the sorry,",
+      "reentry": "Nor stir hand nor think in mid heart, And though he strew the grave with gold,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "His born brothers, their buried bodies",
+      "place": "His born brothers, their buried bodies",
+      "reentry": "Be an unlikely treasure hoard.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "Light rain is on the light dust",
+      "place": "Light rain is on the light dust",
+      "reentry": "*The willows of the inn-yard* *Will be going greener and greener,* *But you, Sir, had better take wine ere your departure,*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "For you will have no friends about you",
+      "place": "For you will have no friends about you",
+      "reentry": "*When you come to the gates of Go.*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s115",
+      "title": "Ko-jin goes west from Ko-kaku-ro,",
+      "place": "Ko-jin goes west from Ko-kaku-ro,",
+      "reentry": "The smoke-flowers are blurred over the river. His lone sail blots the far sky.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s116",
+      "title": "And now I see only the river,",
+      "place": "And now I see only the river,",
+      "reentry": "The long Kiang, reaching heaven.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s117",
+      "title": "Blue mountains to the north of the walls,",
+      "place": "Blue mountains to the north of the walls,",
+      "reentry": "White river winding about them; Here we must make separation And go out through a thousand miles of dead grass.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s118",
+      "title": "Mind like a floating wide cloud",
+      "place": "Mind like a floating wide cloud",
+      "reentry": "Sunset like the parting of old acquaintances Who bow over their clasped hands at a distance.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s119",
+      "title": "Our horses neigh to each other",
+      "place": "Our horses neigh to each other",
+      "reentry": "as we are departing.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s120",
+      "title": "Leave-taking near Shoku",
+      "place": "Leave-taking near Shoku",
+      "reentry": "\"*Sanso, King of Shoku, built roads*\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s121",
+      "title": "They say the roads of Sanso are steep,",
+      "place": "They say the roads of Sanso are steep,",
+      "reentry": "Sheer as the mountains. The walls rise in a man's face,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s122",
+      "title": "Clouds grow out of the hill",
+      "place": "Clouds grow out of the hill",
+      "reentry": "at his horse's bridle. Sweet trees are on the paved way of the Shin,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s123",
+      "title": "Their trunks burst through the paving,",
+      "place": "Their trunks burst through the paving,",
+      "reentry": "And freshets are bursting their ice in the midst of Shoku, a proud city.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s124",
+      "title": "Men's fates are already set,",
+      "place": "Men's fates are already set,",
+      "reentry": "There is no need of asking diviners.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s125",
+      "title": "The phoenix are at play on their terrace",
+      "place": "The phoenix are at play on their terrace",
+      "reentry": "The phoenix are gone, the river flows on alone. Flowers and grass",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s126",
+      "title": "Cover over the dark path",
+      "place": "Cover over the dark path",
+      "reentry": "where lay the dynastic house of the Go. The bright cloths and bright caps of Shin",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s127",
+      "title": "Are now the base of old hills",
+      "place": "Are now the base of old hills",
+      "reentry": "The Three Mountains fall through the far heaven,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s128",
+      "title": "The isle of White Heron",
+      "place": "The isle of White Heron",
+      "reentry": "splits the two streams apart. Now the high clouds cover the sun",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s129",
+      "title": "And I can not see Choan afar",
+      "place": "And I can not see Choan afar",
+      "reentry": "And I am sad.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s130",
+      "title": "South-Folk in Cold Country",
+      "place": "South-Folk in Cold Country",
+      "reentry": "The Dai horse neighs against the bleak wind of Etsu, The birds of Etsu have no love for En, in the north,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s131",
+      "title": "Emotion is born out of habit",
+      "place": "Emotion is born out of habit",
+      "reentry": "Yesterday we went out of the Wild-Goose gate, To-day from the Dragon-Pen.[1]",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s132",
+      "title": "Surprised. Desert turmoil. Sea sun",
+      "place": "Surprised. Desert turmoil. Sea sun",
+      "reentry": "Flying snow bewilders the barbarian heaven. Lice swarm like ants over our accoutrements.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s133",
+      "title": "Mind and spirit drive on the feathery banners",
+      "place": "Mind and spirit drive on the feathery banners",
+      "reentry": "Hard fight gets no reward. Loyalty is hard to explain.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s134",
+      "title": "Who will be sorry for General Rishogu,",
+      "place": "Who will be sorry for General Rishogu,",
+      "reentry": "the swift moving, Whose white head is lost for this province?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s135",
+      "title": "When you had left me.\"",
+      "place": "When you had left me.\"",
+      "reentry": "In another I find a perfect speech in a literality which will be to many most unacceptable. The couplet is as follows:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s136",
+      "title": "Raise cup, quench sorrow, sorrow again sorry.\"",
+      "place": "Raise cup, quench sorrow, sorrow again sorry.\"",
+      "reentry": "There are also other poems, notably the \"Five colour Screen,\" in which Professor Fenollosa was, as an art critic, especially interested, and Rihaku's sort of Ars Poetica, which might be given with diffidence to an audience of good will. But",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "and thirsty. Our defence is not yet made sure, no one can let his friend return."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "We say: Will we be let to go back in October? There is no ease in royal affairs, we have no comfort. Our sorrow is bitter, but we would not return to our country."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Whose chariot? The General's. Horses, his horses even, are tired. They were strong."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "By heaven, his horses are tired. The generals are on them, the soldiers are by them The horses are well trained, the generals have ivory arrows and quivers ornamented with fish-skin."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "When we set out, the willows were drooping with spring, We come back in the snow,"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Our mind is full of sorrow, who will know of our grief?"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "*4th Century B.C.*"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Blue, blue is the grass about the river"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "And within, the mistress, in the midmost of her youth, White, white of face, hesitates, passing the door."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "And she was a courtezan in the old days,"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Who now goes drunkenly out And leaves her too much alone."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "*B.C. 140.*"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "This boat is of shato-wood, and its gunwales are cut magnolia, Musicians with jewelled flutes and with pipes of gold"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Is rich for a thousand cups. We carry singing girls, drift with the drifting water,"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "A yellow stork for a charger, and all our seamen Would follow the white gulls or ride them."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Hangs with the sun and moon."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "is now but a barren hill, But I draw pen on this barge"
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "And I have joy in these words like the joy of blue islands. (If glory could last forever"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "And I have moped in the Emperor's garden, awaiting an order-to-write! I looked at the dragon-pond, with its willow-coloured water"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "And heard the five-score nightingales aimlessly singing."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "The eastern wind brings the green colour into the island grasses at Yei-shu, The purple house and the crimson are full of Spring softness. South of the pond the willow-tips are half-blue and bluer, Their cords tangle in mist, against the brocade-like palace. Vine-strings a hundred feet long hang down from carved railings, And high over the willows, the fine birds sing to each other, and listen, Crying--\"Kwan, Kuan,\" for the early wind, and the feel of it. The wind bundles itself into a bluish cloud and wanders off. Over a thousand gates, over a thousand doors are the sounds of spring singing,"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Five clouds hang aloft, bright on the purple sky, The imperial guards come forth from the golden house with their armour a-gleaming. The emperor in his jewelled car goes out to inspect his flowers, He goes out to Hori, to look at the wing-flapping storks, He returns by way of Sei rock, to hear the new nightingales, For the gardens at Jo-run are full of new nightingales,"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "Their voice is in the twelve pipes here."
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "*8th century A.D.*"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "While my hair was still cut straight across my forehead"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "You came by on bamboo stilts, playing horse, You walked about my seat, playing with blue plums."
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Two small people, without dislike or suspicion."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "I never laughed, being bashful. Lowering my head, I looked at the wall."
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "At fifteen I stopped scowling,"
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "Forever and forever, and forever. Why should I climb the look out?"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "You went into far Ku-to-Yen, by the river of swirling eddies, And you have been gone five months."
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "You dragged your feet when you went out. By the gate now, the moss is grown, the different mosses,"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "The leaves fall early this autumn, in wind. The paired butterflies are already yellow with August"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "They hurt me, I grow older, If you are coming down through the narrows of the river Kiang,"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "And I will come out to meet you, As far as Cho-fu-Sa."
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "The jewelled steps are already quite white with dew, It is so late that the dew soaks my gauze stockings,"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "And watch the moon through the clear autumn."
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "Note.--Jewel stairs, therefore a palace. Grievance, therefore there is something to complain, of. Gauze stockings, therefore a court lady, not a servant who complains. Clear autumn, therefore he has no excuse on account of weather. Also she has come early, for the dew has not merely whitened the stairs, but has soaked her stockings. The poem is especially prized because she utters no direct reproach."
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "Peach boughs and apricot boughs hang over a thousand gates, At morning there are flowers to cut the heart, And evening drives them on the eastward-flowing waters."
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "And on the back-swirling eddies, But to-days men are not the men of the old days, Though they hang in the same way over the bridge-rail."
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "And the princes still stand in rows, about the throne, And the moon falls over the portals of Sei-go-yo,"
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "With head-gear glittering against the cloud and sun, The lords go forth from the court, and into far borders."
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "Upon horses with head-trappings of yellow-metal, And the streets make way for their passage."
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Haughty their steps as they go into great banquets, To high halls and curious food,"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "To clear flutes and clear singing; To the dance of the seventy couples;"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "Night and day are given over to pleasure And they think it will last a thousand autumns,"
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "For them the yellow dogs howl portents in vain, And what are they compared to the lady Riokushu,"
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "Who among them is a man like Han-rei Who departed alone with his mistress,"
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "*By Rihaku.*"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "Lonely from the beginning of time until now! Trees fall, the grass goes yellow with autumn."
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "to watch out the barbarous land: Desolate castle, the sky, the wide desert."
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "Bones white with a thousand frosts, High heaps, covered with trees and grass;"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "Who has brought the flaming imperial anger? Who has brought the army with drums and with kettle-drums?"
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "A gracious spring, turned to blood-ravenous autumn, A turmoil of wars-men, spread over the middle kingdom,"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "And sorrow, sorrow like rain. Sorrow to go, and sorrow, sorrow returning,"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "And no children of warfare upon them, No longer the men for offence and defence. Ah, how shall you know the dreary sorrow at the North Gate,"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "And we guardsmen fed to the tigers."
+    },
+    {
+      "id": "s55-1",
+      "sceneId": "s55",
+      "text": "*Rihaku.*"
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "To So-Kin of Rakuyo, ancient friend, Chancellor of Gen."
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "By the south side of the bridge at Ten-Shin. With yellow gold and white jewels, we paid for songs and laughter And we were drunk for month on month, forgetting the kings and princes. Intelligent men came drifting in from the sea and from the west border,"
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "There was nothing at cross purpose, And they made nothing of sea-crossing or of mountain crossing,"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "And we all spoke out our hearts and minds, and without regret."
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "smothered in laurel groves, And you to the north of Raku-hoku, Till we had nothing but thoughts and memories in common."
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "We met, and travelled into Sen-Go, Through all the thirty-six folds of the turning and twisting waters,"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "That was the first valley; And into ten thousand valleys full of voices and pine-winds."
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "Out come the East of Kan foreman and his company. And there came also the \"True man\" of Shi-yo to meet me,"
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "In the storied houses of San-Ko they gave us more Sennin music, Many instruments, like the sound of young phoenix broods."
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "because his long sleeves wouldn't keep still With that music-playing. And I, wrapped in brocade, went to sleep with my head on his lap, And my spirit so high it was all over the heavens, And before the end of the day we were scattered like stars, or rain."
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "You back to your river-bridge."
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "Was governor in Hei Shu, and put down the barbarian rabble. And one May he had you send for me, despite the long distance. And what with broken wheels and so on, I won't say it wasn't hard going,"
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "And I was still going, late in the year, in the cutting wind from the North,"
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "and you caring enough to pay it. And what a reception: Red jade cups, food well set on a blue jewelled table,"
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "And you would walk out with me to the western corner of the castle, To the dynastic temple, with water about it clear as blue jade, With boats floating, and the sound of mouth-organs and drums, With ripples like dragon-scales, going grass green on the water, Pleasure lasting, with courtezans, going and coming without hindrance,"
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "And the vermilioned girls getting drunk about sunset, And the water a hundred feet deep reflecting green eyebrows --Eyebrows painted green are a fine sight in young moonlight,"
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "And the girls singing back at each other, Dancing in transparent brocade, And the wind lifting the song, and interrupting it,"
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "And all this comes to an end. And is not again to be met with."
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "Tried Layu's luck, offered the Choyo song, And got no promotion, and went back to the East Mountains white-headed. And once again, later, we met at the South bridge-head. And then the crowd broke up, you went north to San palace,"
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "It is like the flowers falling at Spring's end Confused, whirled in a tangle. What is the use of talking, and there is no end of talking,"
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "I call in the boy,"
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "To seal this, And send it a thousand miles, thinking."
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "(*From the early Anglo-Saxon text*)"
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "Journey's jargon, how I in harsh days Hardship endured oft."
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "Known on my keel many a care's hold, And dire sea-surge, and there I oft spent"
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "While she tossed close to cliffs. Coldly afflicted, My feet were by frost benumbed."
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "Hew my heart round and hunger begot Mere-weary mood. Lest man know not"
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "List how I, care-wretched, on ice-cold sea, Weathered the winter, wretched outcast"
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "Hung with hard ice-flakes, where hail-scur flew, There I heard naught save the harsh sea"
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "Did for my games the gannet's clamour, Sea-fowls' loudness was for me laughter,"
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "Storms, on the stone-cliffs beaten, fell on the stern In icy feathers; full oft the eagle screamed"
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "Not any protector"
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "This he little believes, who aye in winsome life Abides 'mid burghers some heavy business,"
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "Must bide above brine. Neareth nightshade, snoweth from north,"
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "Corn of the coldest. Nathless there knocketh now The heart's thought that I on high streams"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "Moaneth alway my mind's lust That I fare forth, that I afar hence"
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "For this there's no mood-lofty man over earth's midst, Not though he be given his good, but will have in his youth greed; Nor his deed to the daring, nor his king to the faithful"
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "Whatever his lord will. He hath not heart for harping, nor in ring-having"
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "Nor any whit else save the wave's slash, Yet longing comes upon him to fare forth on the water."
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "Fields to fairness, land fares brisker, All this admonisheth man eager of mood,"
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "On flood-ways to be far departing. Cuckoo calleth with gloomy crying,"
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "The bitter heart's blood. Burgher knows not-- He the prosperous man--what some perform"
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "So that but now my heart burst from my breast-lock, My mood 'mid the mere-flood,"
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "On earth's shelter cometh oft to me, Eager and ready, the crying lone-flyer,"
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "O'er tracks of ocean; seeing that anyhow My lord deems to me this dead life"
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "That any earth-weal eternal standeth Save there be somewhat calamitous"
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "Disease or oldness or sword-hate Beats out the breath from doom-gripped body. And for this, every earl whatever, for those speaking after--"
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "That he will work ere he pass onward, Frame on the fair earth 'gainst foes his malice,"
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "So that all men shall honour him after And his laud beyond them remain 'mid the English,"
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "Delight mid the doughty. Days little durable,"
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "There come now no kings nor Caesars Nor gold-giving lords like those gone."
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "Whoe'er lived in life most lordliest, Drear all this excellence, delights undurable!"
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "Tomb hideth trouble. The blade is laid low."
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "No man at all going the earth's gait, But age fares against him, his face paleth,"
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "Lordly men are to earth o'ergiven, Nor may he then the flesh-cover, whose life ceaseth,"
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "Nor stir hand nor think in mid heart, And though he strew the grave with gold,"
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "Be an unlikely treasure hoard."
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "*The willows of the inn-yard* *Will be going greener and greener,* *But you, Sir, had better take wine ere your departure,*"
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "*When you come to the gates of Go.*"
+    },
+    {
+      "id": "s115-0",
+      "sceneId": "s115",
+      "text": "The smoke-flowers are blurred over the river. His lone sail blots the far sky."
+    },
+    {
+      "id": "s116-0",
+      "sceneId": "s116",
+      "text": "The long Kiang, reaching heaven."
+    },
+    {
+      "id": "s117-0",
+      "sceneId": "s117",
+      "text": "White river winding about them; Here we must make separation And go out through a thousand miles of dead grass."
+    },
+    {
+      "id": "s118-0",
+      "sceneId": "s118",
+      "text": "Sunset like the parting of old acquaintances Who bow over their clasped hands at a distance."
+    },
+    {
+      "id": "s119-0",
+      "sceneId": "s119",
+      "text": "as we are departing."
+    },
+    {
+      "id": "s120-0",
+      "sceneId": "s120",
+      "text": "\"*Sanso, King of Shoku, built roads*\""
+    },
+    {
+      "id": "s121-0",
+      "sceneId": "s121",
+      "text": "Sheer as the mountains. The walls rise in a man's face,"
+    },
+    {
+      "id": "s122-0",
+      "sceneId": "s122",
+      "text": "at his horse's bridle. Sweet trees are on the paved way of the Shin,"
+    },
+    {
+      "id": "s123-0",
+      "sceneId": "s123",
+      "text": "And freshets are bursting their ice in the midst of Shoku, a proud city."
+    },
+    {
+      "id": "s124-0",
+      "sceneId": "s124",
+      "text": "There is no need of asking diviners."
+    },
+    {
+      "id": "s125-0",
+      "sceneId": "s125",
+      "text": "The phoenix are gone, the river flows on alone. Flowers and grass"
+    },
+    {
+      "id": "s126-0",
+      "sceneId": "s126",
+      "text": "where lay the dynastic house of the Go. The bright cloths and bright caps of Shin"
+    },
+    {
+      "id": "s127-0",
+      "sceneId": "s127",
+      "text": "The Three Mountains fall through the far heaven,"
+    },
+    {
+      "id": "s128-0",
+      "sceneId": "s128",
+      "text": "splits the two streams apart. Now the high clouds cover the sun"
+    },
+    {
+      "id": "s129-0",
+      "sceneId": "s129",
+      "text": "And I am sad."
+    },
+    {
+      "id": "s130-0",
+      "sceneId": "s130",
+      "text": "The Dai horse neighs against the bleak wind of Etsu, The birds of Etsu have no love for En, in the north,"
+    },
+    {
+      "id": "s131-0",
+      "sceneId": "s131",
+      "text": "Yesterday we went out of the Wild-Goose gate, To-day from the Dragon-Pen.[1]"
+    },
+    {
+      "id": "s132-0",
+      "sceneId": "s132",
+      "text": "Flying snow bewilders the barbarian heaven. Lice swarm like ants over our accoutrements."
+    },
+    {
+      "id": "s133-0",
+      "sceneId": "s133",
+      "text": "Hard fight gets no reward. Loyalty is hard to explain."
+    },
+    {
+      "id": "s134-0",
+      "sceneId": "s134",
+      "text": "the swift moving, Whose white head is lost for this province?"
+    },
+    {
+      "id": "s134-1",
+      "sceneId": "s134",
+      "text": "[1] I.e., we have been warring from one end of the empire to the other, now east, now west, on each border."
+    },
+    {
+      "id": "s134-2",
+      "sceneId": "s134",
+      "text": "I have not come to the end of Ernest Fenollosa's notes by a long way, nor is it entirely perplexity that causes me to cease from translation. True, I can find little to add to one line out of a certain poem :"
+    },
+    {
+      "id": "s134-3",
+      "sceneId": "s134",
+      "text": "\"You know well where it was that I walked"
+    },
+    {
+      "id": "s135-0",
+      "sceneId": "s135",
+      "text": "In another I find a perfect speech in a literality which will be to many most unacceptable. The couplet is as follows:"
+    },
+    {
+      "id": "s135-1",
+      "sceneId": "s135",
+      "text": "\"Drawing sword, cut into water, water again flow:"
+    },
+    {
+      "id": "s136-0",
+      "sceneId": "s136",
+      "text": "There are also other poems, notably the \"Five colour Screen,\" in which Professor Fenollosa was, as an art critic, especially interested, and Rihaku's sort of Ars Poetica, which might be given with diffidence to an audience of good will. But if I give them, with the necessary breaks for explanation, and a tedium of notes, it is quite certain that the personal hatred in which I am held by many, and the *invidia* which is directed against me because I have dared openly to declare my belief in certain young artists, will be brought to bear first on the flaws of such translation, and will then be merged into depreciation of the whole book of translations. Therefore I give only these unquestionable poems."
+    },
+    {
+      "id": "s136-1",
+      "sceneId": "s136",
+      "text": "E. P."
+    }
+  ]
+}
