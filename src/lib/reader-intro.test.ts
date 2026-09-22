@@ -82,6 +82,7 @@ test("A High Wind in Jamaica uses the before-sleep rank-plant sit", () => {
   const copy = readerIntro(shelfAsWork("high-wind-jamaica"));
   assert.match(copy, /Jamaica after Emancipation/);
   assert.match(copy, /rank plant/);
+  assert.match(copy, /period racial language/);
   assert.match(copy, /warn the room first/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|do not extend|locked/i);
 });
@@ -114,10 +115,10 @@ test("On a Chinese Screen uses the waking Parlour sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|Orientalist/i);
 });
 
-test("Futility uses the waking sisters-bouquet sit", () => {
+test("Futility uses the harbour open, preface skipped", () => {
   const copy = readerIntro(shelfAsWork("futility"));
-  assert.match(copy, /three sisters/i);
-  assert.match(copy, /dacha/);
+  assert.match(copy, /harbour/);
+  assert.match(copy, /fit all this into a book/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|Wharton/i);
 });
 

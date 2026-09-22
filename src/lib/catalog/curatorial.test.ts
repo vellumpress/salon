@@ -79,7 +79,6 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "noli-me-tangere",
     "vera",
     "on-a-chinese-screen",
-    "futility",
     "trooper-peter-halket",
     "the-home-and-the-world",
     "the-immoralist",
@@ -378,7 +377,7 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("noli-me-tangere"), "next");
   assert.equal(curatorialTrack("vera"), "next");
   assert.equal(curatorialTrack("on-a-chinese-screen"), "next");
-  assert.equal(curatorialTrack("futility"), "next");
+  assert.equal(curatorialTrack("futility"), "later");
   assert.equal(curatorialTrack("trooper-peter-halket"), "next");
   assert.equal(curatorialTrack("the-home-and-the-world"), "next");
   assert.equal(curatorialTrack("the-immoralist"), "next");
@@ -597,7 +596,7 @@ test("On a Chinese Screen is a local waking bind on Next", () => {
   assert.equal(isAdaptedBySalon("on-a-chinese-screen"), false);
 });
 
-test("Futility is a local waking bind on Next", () => {
+test("Futility is a local For you bind, not Next", () => {
   const work = SHELF.find((item) => item.id === "futility");
   assert.ok(work);
   assert.equal(work.year, 1922);
@@ -606,13 +605,23 @@ test("Futility is a local waking bind on Next", () => {
   assert.equal(work.local, true);
   assert.equal(work.gutenberg, 77253);
   assert.equal(isBoundLocal(work), true);
-  assert.match(work.opening ?? "", /^It was somewhat in the manner of an Ibsen drama/);
-  const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
+  assert.match(
+    work.opening ?? "",
+    /^And then it struck me that the only thing to do was to fit all this into a book/,
+  );
+  const lane = RITUAL_LANES.find((item) => item.id === "for-you");
   assert.ok(lane?.workIds.includes("futility"));
+  assert.ok(lane!.workIds.indexOf("futility") > lane!.workIds.indexOf("botchan"));
+  assert.equal(
+    RITUAL_LANES.find((item) => item.id === "waking-up")?.workIds.includes("futility"),
+    false,
+  );
   assert.equal(
     RITUAL_LANES.find((item) => item.id === "bite-sized")?.workIds.includes("futility"),
     false,
   );
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("futility"), false);
+  assert.equal(curatorialTrack("futility"), "later");
   assert.equal(FEATURED_CAROUSEL_IDS.includes("futility"), false);
 });
 
@@ -724,7 +733,7 @@ test("The Home and the World is a local before-sleep bind on Next", () => {
 test("The Immoralist is a local before-sleep bind on Next", () => {
   const work = SHELF.find((item) => item.id === "the-immoralist");
   assert.ok(work);
-  assert.equal(work.year, 1930);
+  assert.equal(work.year, 1902);
   assert.equal(work.title, "The Immoralist");
   assert.equal(work.author, "André Gide (tr. Dorothy Bussy)");
   assert.equal(work.local, true);
@@ -744,6 +753,8 @@ test("The Immoralist is a local before-sleep bind on Next", () => {
   const stub = SHELF.find((item) => item.id === "immoralist");
   assert.ok(stub);
   assert.equal(stub.local, undefined);
+  assert.equal(stub.language, "English");
+  assert.equal(stub.gutenberg, 78975);
   assert.notEqual(stub.id, work.id);
 });
 
@@ -1472,9 +1483,10 @@ test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
     "quicksand",
     "botchan",
   ]);
-  assert.equal(forYou!.workIds.at(-4), "there-is-confusion");
-  assert.equal(forYou!.workIds.at(-3), "miss-lulu-bett");
-  assert.equal(forYou!.workIds.at(-2), "seven-brothers");
+  assert.equal(forYou!.workIds.at(-5), "there-is-confusion");
+  assert.equal(forYou!.workIds.at(-4), "miss-lulu-bett");
+  assert.equal(forYou!.workIds.at(-3), "seven-brothers");
+  assert.equal(forYou!.workIds.at(-2), "futility");
   assert.equal(forYou!.workIds.at(-1), "generosity");
   assert.equal(sleep!.workIds[0], "quicksand");
 });
@@ -2686,4 +2698,30 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
   assert.equal(berthaFull.breaths.length, 1269);
   assert.equal(berthaFull.scenes[0]?.title, "Chapter I");
   assert.ok((berthaFull.breaths[0]?.text ?? "").startsWith(bertha.opening ?? ""));
+});
+
+test("Mira NOON CLEAR sits on Next, For you, and Rituals, never Featured", () => {
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const rituals = RITUAL_LANES.find((item) => item.id === "bite-sized");
+  const featured = FEATURED_CAROUSEL_IDS as readonly string[];
+  for (const id of ["the-hidden-force", "the-immoralist", "high-wind-jamaica"]) {
+    assert.equal(next.includes(id), true, id);
+    assert.equal(featured.includes(id), false, id);
+    assert.equal(forYou?.workIds.includes(id), false, id);
+  }
+  assert.equal(next.includes("futility"), false);
+  assert.equal(forYou?.workIds.includes("futility"), true);
+  assert.equal(featured.includes("futility"), false);
+  assert.equal(rituals?.workIds.includes("casanovas-homecoming"), true);
+  assert.equal(next.includes("casanovas-homecoming"), false);
+  assert.equal(forYou?.workIds.includes("casanovas-homecoming"), false);
+  assert.equal(featured.includes("casanovas-homecoming"), false);
+  const hidden = SHELF.find((item) => item.id === "the-hidden-force");
+  assert.match(hidden?.opening ?? "", /^The full moon wore the hue of tragedy/);
+  assert.equal(hidden?.breaths, 1338);
+  assert.equal(hidden?.local, true);
+  assert.equal(hidden?.gutenberg, 34725);
+  const cold = ["the-house-of-mirth", "quicksand", "botchan"];
+  assert.deepEqual(forYou?.workIds.slice(0, 3), cold);
 });

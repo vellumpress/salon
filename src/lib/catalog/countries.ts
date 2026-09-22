@@ -289,6 +289,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
   ],
   Austria: [
     "Arthur Schnitzler",
+    "Arthur Schnitzler (trans. Eden & Cedar Paul)",
     "Joseph Roth",
     "Leopold von Sacher-Masoch",
     "Rainer Maria Rilke",
