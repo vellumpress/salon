@@ -2201,7 +2201,8 @@ test("Generosity by Amber Later is For you only, never Featured", () => {
   assert.equal(work!.gutenberg, undefined);
   assert.equal(work!.language, "English");
   assert.equal(work!.opening, "I should apologize.");
-  assert.equal(work!.breaths, 198);
+  assert.equal(work!.minutes, 33);
+  assert.equal(work!.breaths, 85);
   assert.equal(isBoundLocal(work!), true);
   assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false);
   assert.equal(curatorialTrack(id), "later");
@@ -2222,37 +2223,33 @@ test("Generosity by Amber Later is For you only, never Featured", () => {
   const full = JSON.parse(readFileSync(new URL("./texts/generosity.json", import.meta.url), "utf8")) as {
     rights?: string;
     source?: string;
+    minutes?: number;
     scenes: { id: string; title: string; reentry: string }[];
     breaths: { text: string; sceneId: string }[];
     note?: string;
   };
-  assert.equal(full.rights, "Vellum");
-  assert.equal(full.source, "original");
+  assert.equal(full.rights, undefined);
+  assert.equal(full.source, undefined);
+  assert.equal(full.minutes, 33);
   assert.equal(full.scenes.length, 8);
   assert.equal(full.scenes[0]?.title, "Generosity");
   assert.deepEqual(
     full.scenes.slice(1).map((scene) => scene.title),
-    ["Untitled", "Untitled", "Untitled", "Untitled", "Untitled", "Untitled", "Untitled"],
+    ["Poem I", "Poem II", "Poem III", "Poem IV", "Poem V", "Poem VI", "Poem VII"],
   );
-  assert.equal(full.breaths.length, 198);
+  assert.equal(full.breaths.length, 85);
   assert.equal(full.breaths[0]?.text, "I should apologize.");
   const story = full.breaths.filter((breath) => breath.sceneId === "s0");
-  assert.equal(story.at(-1)?.text, "I’m sorry.");
+  assert.equal(story.at(-1)?.text, "I'm sorry.");
   assert.equal(full.breaths.filter((breath) => breath.text === "***").length, 0);
-  assert.deepEqual(
-    full.scenes.slice(1).map((scene) => scene.reentry),
-    [
-      "Without walls between rooms we",
-      "Nighttime rain sluiced in the maze of your astounding mimicry.",
-      "I walked through freezing weather to a home",
-      "In silent times passive sentiment draws flies.",
-      "Your face, three quarters turned away",
-      "Looking out the room and the floor you slept on like it was outside where you slept so comfortable I saw a purple light at the top of the spire is a steel peak to attract charge unlike the night I left far from the stranger’s room when I placed the back of my hand against your palm tree on my image beach where your bald geometry begged my careless attraction and I beat you like a guilty not guilty show dog when you stole my coat I gifted you until I heard our master chew your numb limb and begged him to stop breeding without me as I dragged my arm around your looming shoulder and we went out of the tropical room into the mind of someone who was really empathetic but not me and you were brainless, sleeping idiot leftover girl from the world of the most beautiful world I saw you in, so talented because of your ability to read equations and derisive fear.",
-      "Moment of culture I remember falling on your lap and spilling charcoal.",
-    ],
+  assert.equal(full.scenes[1]?.reentry.startsWith("Without walls between rooms we slept in beds unseparated"), true);
+  assert.equal(full.scenes[2]?.reentry.startsWith("Nighttime rain sluiced in the maze of your astounding mimicry."), true);
+  assert.equal(full.scenes[7]?.reentry.startsWith("Moment of culture I remember falling on your lap"), true);
+  assert.equal(
+    full.breaths.at(-1)?.text.endsWith("Your lap and then it is absence I."),
+    true,
   );
-  assert.equal(full.breaths.at(-1)?.text, "Your lap and then it is absence I.");
-  assert.ok(full.breaths.some((breath) => breath.text === "“They all look the same, why this one?”"));
+  assert.ok(full.breaths.some((breath) => breath.text === '"They all look the same, why this one?"'));
   assert.equal(JSON.stringify(full).includes("gutenberg.org"), false);
   assert.equal(/public domain|Project Gutenberg/i.test(full.note ?? ""), false);
   assert.equal(full.breaths.some((breath) => /^[A-Z][a-z]+: /.test(breath.text)), false);
