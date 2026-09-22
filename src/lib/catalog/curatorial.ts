@@ -91,6 +91,12 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Mirth → Quicksand → Botchan. Siddhartha is the PG 2500 English, off the old EN hold.
  * The Divine Comedy is PG 1004 (Longfellow), not an invented Dante id.
  * Hands Around (Reigen) was already full-text local on main, so this batch leaves that bind.
+ * BATCH-15 CLEAR (Sep 22) sits on Next after BATCH-14 (after All Quiet),
+ * before-sleep only — never Featured, not For you. Cold-open stays
+ * Mirth → Quicksand → Botchan. the-inferno is Strindberg (PG 44108), not Dante.
+ * Steppenwolf, The Red Room, and Queen of Spades and Other Stories keep their
+ * fuller local binds and stay off this Next queue. Marianela keeps the fuller
+ * Clara Bell English (PG 48818) in the BATCH-10 seat.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -351,6 +357,23 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-cycle-of-spring",
   "creative-unity",
   "the-lonely-way",
+  // Mira BATCH-15 CLEAR — after All Quiet. Never Featured. Not For you.
+  "rootabaga-stories",
+  "rootabaga-pigeons",
+  "auguste-rodin",
+  "on-the-seaboard",
+  "lucky-pehr",
+  "the-dream-play",
+  "the-father",
+  "easter",
+  "the-inferno",
+  "trafalgar",
+  "saragossa",
+  "leon-roch",
+  "yiddish-short-stories",
+  "tales-of-old-japan",
+  "chinese-literature",
+  "the-prose-tales",
 ] as const;
 
 /**
