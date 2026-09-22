@@ -1,0 +1,707 @@
+{
+  "id": "the-angels-of-mons",
+  "title": "The Angels of Mons: The Bowmen and Other Legends of the War",
+  "author": "Arthur Machen",
+  "year": "1915",
+  "note": "Project Gutenberg 14044",
+  "minutes": 94,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Bowmen",
+      "place": "The Bowmen",
+      "reentry": "It was during the Retreat of the Eighty Thousand, and the authority of the Censorship is sufficient excuse for not being more explicit. But it was on the most awful day of that awful time, on the day when ruin and disaster came so near that",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "The Soldiers' Rest",
+      "place": "The Soldiers' Rest",
+      "reentry": "The soldier with the ugly wound in the head opened his eyes at last, and looked about him with an air of pleasant satisfaction.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "The Monstrance",
+      "place": "The Monstrance",
+      "reentry": "Then it fell out in the sacring of the Mass that right as the priest heaved up the Host there came a beam redder than any rose and smote upon it, and then it was changed bodily into the shape and fashion of a Child having his arms stretched",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "The Dazzling Light",
+      "place": "The Dazzling Light",
+      "reentry": "The new head-covering is made of heavy steel, which has been specialty treated to increase its resisting power. The walls protecting the skull are particularly thick, and the weight of the helmet renders its use in open warfare out of the q",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "It was during the Retreat of the Eighty Thousand, and the authority of the Censorship is sufficient excuse for not being more explicit. But it was on the most awful day of that awful time, on the day when ruin and disaster came so near that their shadow fell over London far away; and, without any certain news, the hearts of men failed within them and grew faint; as if the agony of the army in the battlefield had entered into their souls."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "On this dreadful day, then, when three hundred thousand men in arms with all their artillery swelled like a flood against the little English company, there was one point above all other points in our battle line that was for a time in awful danger, not merely of defeat, but of utter annihilation. With the permission of the Censorship and of the military expert, this corner may, perhaps, be described as a salient, and if this angle were crushed and broken, then the English force as a whole would be shattered, the Allied left would be turned, and Sedan would inevitably follow."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "All the morning the German guns had thundered and shrieked against this corner, and against the thousand or so of men who held it. The men joked at the shells, and found funny names for them, and had bets about them, and greeted them with scraps of music-hall songs. But the shells came on and burst, and tore good Englishmen limb from limb, and tore brother from brother, and as the heat of the day increased so did the fury of that terrific cannonade. There was no help, it seemed. The English artillery was good, but there was not nearly enough of it; it was being steadily battered into scrap iron."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "There comes a moment in a storm at sea when people say to one another, \"It is at its worst; it can blow no harder,\" and then there is a blast ten times more fierce than any before it. So it was in these British trenches."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "There were no stouter hearts in the whole world than the hearts of these men; but even they were appalled as this seven-times-heated hell of the German cannonade fell upon them and overwhelmed them and destroyed them. And at this very moment they saw from their trenches that a tremendous host was moving against their lines. Five hundred of the thousand remained, and as far as they could see the German infantry was pressing on against them, column upon column, a grey world of men, ten thousand of them, as it appeared afterwards."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "There was no hope at all. They shook hands, some of them. One man improvised a new version of the battlesong, \"Good-bye, good-bye to Tipperary,\" ending with \"And we shan't get there\". And they all went on firing steadily. The officers pointed out that such an opportunity for high-class, fancy shooting might never occur again; the Germans dropped line after line; the Tipperary humorist asked, \"What price Sidney Street?\" And the few machine guns did their best. But everybody knew it was of no use. The dead grey bodies lay in companies and battalions, as others came on and on and on, and they swarmed and stirred and advanced from beyond and beyond."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"World without end. Amen,\" said one of the British soldiers with some irrelevance as he took aim and fired. And then he remembered--he says he cannot think why or wherefore--a queer vegetarian restaurant in London where he had once or twice eaten eccentric dishes of cutlets made of lentils and nuts that pretended to be steak. On all the plates in this restaurant there was printed a figure of St. George in blue, with the motto, *Adsit Anglis Sanctus Geogius*--May St. George be a present help to the English. This soldier happened to know Latin and other useless things, and now, as he fired at his man in the grey advancing mass--300 yards away--he uttered the pious vegetarian motto. He went on firing to the end, and at last Bill on his right had to clout him cheerfully over the head to make him stop, pointing out as he did so that the King's ammunition cost money and was not lightly to be wasted in drilling funny patterns into dead Germans."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "For as the Latin scholar uttered his invocation he felt something between a shudder and an electric shock pass through his body. The roar of the battle died down in his ears to a gentle murmur; instead of it, he says, he heard a great voice and a shout louder than a thunder-peal crying, \"Array, array, array!\""
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "His heart grew hot as a burning coal, it grew cold as ice within him, as it seemed to him that a tumult of voices answered to his summons. He heard, or seemed to hear, thousands shouting: \"St. George! St. George!\""
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"Ha! messire; ha! sweet Saint, grant us good deliverance!\""
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"St. George for merry England!\""
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "\"Harow! Harow! Monseigneur St. George, succour us.\""
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"Ha! St. George! Ha! St. George! a long bow and a strong bow.\""
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "\"Heaven's Knight, aid us!\""
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "And as the soldier heard these voices he saw before him, beyond the trench, a long line of shapes, with a shining about them. They were like men who drew the bow, and with another shout their cloud of arrows flew singing and tingling through the air towards the German hosts."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The other men in the trench were firing all the while. They had no hope; but they aimed just as if they had been shooting at Bisley. Suddenly one of them lifted up his voice in the plainest English, \"Gawd help us!\" he bellowed to the man next to him, \"but we're blooming marvels! Look at those grey... gentlemen, look at them! D'ye see them? They're not going down in dozens, nor in 'undreds; it's thousands, it is. Look! look! there's a regiment gone while I'm talking to ye.\""
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "\"Shut it!\" the other soldier bellowed, taking aim, \"what are ye gassing about!\""
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "But he gulped with astonishment even as he spoke, for, indeed, the grey men were falling by the thousands. The English could hear the guttural scream of the German officers, the crackle of their revolvers as they shot the reluctant; and still line after line crashed to the earth."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "All the while the Latin-bred soldier heard the cry: \"Harow! Harow! Monseigneur, dear saint, quick to our aid! St. George help us!\""
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "\"High Chevalier, defend us!\""
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "The singing arrows fled so swift and thick that they darkened the air; the heathen horde melted from before them."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "\"More machine guns!\" Bill yelled to Tom."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "\"Don't hear them,\" Tom yelled back. \"But, thank God, anyway; they've got it in the neck.\""
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "In fact, there were ten thousand dead German soldiers left before that salient of the English army, and consequently there was no Sedan. In Germany, a country ruled by scientific principles, the Great General Staff decided that the contemptible English must have employed shells containing an unknown gas of a poisonous nature, as no wounds were discernible on the bodies of the dead German soldiers. But the man who knew what nuts tasted like when they called themselves steak knew also that St. George had brought his Agincourt Bowmen to help the English."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The soldier with the ugly wound in the head opened his eyes at last, and looked about him with an air of pleasant satisfaction."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "He still felt drowsy and dazed with some fierce experience through which he had passed, but so far he could not recollect much about it. But--an agreeable glow began to steal about his heart--such a glow as comes to people who have been in a tight place and have come through it better than they had expected. In its mildest form this set of emotions may be observed in passengers who have crossed the Channel on a windy day without being sick. They triumph a little internally, and are suffused with vague, kindly feelings."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "The wounded soldier was somewhat of this disposition as he opened his eyes, pulled himself together, and looked about him. He felt a sense of delicious ease and repose in bones that had been racked and weary, and deep in the heart that had so lately been tormented there was an assurance of comfort--of the battle won. The thundering, roaring waves were passed; he had entered into the haven of calm waters. After fatigues and terrors that as yet he could not recollect he seemed now to be resting in the easiest of all easy chairs in a dim, low room."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "In the hearth there was a glint of fire and a blue, sweet-scented puff of wood smoke; a great black oak beam roughly hewn crossed the ceiling. Through the leaded panes of the windows he saw a rich glow of sunlight, green lawns, and against the deepest and most radiant of all blue skies the wonderful far-lifted towers of a vast, Gothic cathedral--mystic, rich with imagery."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "\"Good Lord!\" he murmured to himself. \"I didn't know they had such places in France. It's just like Wells. And it might be the other day when I was going past the Swan, just as it might be past that window, and asked the ostler what time it was, and he says, 'What time? Why, summer-time'; and there outside it looks like summer that would last for ever. If this was an inn they ought to call it *The Soldiers' Rest*.\""
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "He dozed off again, and when he opened his eyes once more a kindly looking man in some sort of black robe was standing by him."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "\"It's all right now, isn't it?\" he said, speaking in good English."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "\"Yes, thank you, sir, as right as can be. I hope to be back again soon.\""
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "\"Well well; but how did you come here? Where did you get that?\" He pointed to the wound on the soldier's forehead."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "The soldier put his hand: up to his brow and looked dazed and puzzled."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "\"Well, sir,\" he said at last, \"it was like this, to begin at the beginning. You know how we came over in August, and there we were in the thick of it, as you might say, in a day or two. An awful time it was, and I don't know how I got through it alive. My best friend was killed dead beside me as we lay in the trenches. By Cambrai, I think it was."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "\"Then things got a little quieter for a bit, and I was quartered in a village for the best part of a week. She was a very nice lady where I was, and she treated me proper with the best of everything. Her husband he was fighting; but she had the nicest little boy I ever knew, a little fellow of five, or six it might be, and we got on splendid. The amount of their lingo that kid taught me--'We, we' and 'Bong swot' and 'Commong voo potty we' and all--and I taught him English. You should have heard that nipper say ''Arf a mo', old un!' It was a treat."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "\"Then one day we got surprised. There was about a dozen of us in the village, and two or three hundred Germans came down on us early one morning. They got us; no help for 'it. Before we could shoot."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "\"Well there we were. They tied our hands behind our backs, and smacked our faces and kicked us a bit, and we were lined up opposite the house where I'd been staying."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "\"And then that poor little chap broke away from his mother, and he run out and saw one of the Boshes, as we call them, fetch me one over the jaw with his clenched fist. Oh dear! oh dear! he might have done it a dozen times if only that little child hadn't seen him."
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "\"He had a poor bit of a toy I'd bought him at the village shop; a toy gun it was. And out he came running, as I say, Crying out something in French like 'Bad man! bad man! don't hurt my Anglish or I shoot you'; and he pointed that gun at the German soldier. The German, he took his bayonet, and he drove it right through the poor little chap's throat.\""
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "The soldier's face worked and twitched and twisted itself into a sort of grin, and he sat grinding his teeth and staring at the man in the black robe. He was silent for a little. And then he found his voice, and the oaths rolled terrible, thundering from him, as he cursed that murderous wretch, and bade him go down and burn for ever in hell. And the tears were raining down his face, and they choked him at last."
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "\"I beg your pardon, sir, I'm sure,\" he said, \"especially you being a minister of some kind, I suppose; but I can't help it, he was such a dear little man.\""
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "The man in black murmured something to himself: \"*Pretiosa in conspectu Domini mors innocentium ejus*\"--Dear in the sight of the Lord is the death of His innocents. Then he put a hand very gently on the soldier's shoulder."
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "\"Never mind,\" said he; \"I've seen some service in my time, myself. But what about that wound?\""
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "\"Oh, that; that's nothing. But I'll tell you how I got it. It was just like this. The Germans had us fair, as I tell you, and they shut us up in a barn in the village; just flung us on the ground and left us to starve seemingly. They barred up the big door of the barn, and put a sentry there, and thought we were all right."
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "\"There were sort of slits like very narrow windows in one of the walls, and on the second day it was, I was looking out of these slits down the street, and I could see those German devils were up to mischief. They were planting their machine-guns everywhere handy where an ordinary man coming up the street would never see them, but I see them, and I see the infantry lining up behind the garden walls. Then I had a sort of a notion of what was coming; and presently, sure enough, I could hear some of our chaps singing 'Hullo, hullo, hullo!' in the distance; and I says to myself, 'Not this time.'"
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "\"So I looked about me, and I found a hole under the wall; a kind of a drain I should think it was, and I found I could just squeeze through. And I got out and crept, round, and away I goes running down the street, yelling for all I was worth, just as our chaps were getting round the corner at the bottom. 'Bang, bang!' went the guns, behind me and in front of me, and on each side of me, and then--bash! something hit me on the head and over I went; and I don't remember anything more till I woke up here just now.\""
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "The soldier lay back in his chair and closed his eyes for a moment. When he opened them he saw that there were other people in the room besides the minister in the black robes. One was a man in a big black cloak. He had a grim old face and a great beaky nose. He shook the soldier by the hand."
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "\"By God! sir,\" he said, \"you're a credit to the British Army; you're a damned fine soldier and a good man, and, by God! I'm proud to shake hands with you.\""
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "And then someone came out of the shadow, someone in queer clothes such as the soldier had seen worn by the heralds when he had been on duty at the opening of Parliament by the King."
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "\"Now, by *Corpus Domini*,\" this man said, \"of all knights ye be noblest and gentlest, and ye be of fairest report, and now ye be a brother of the noblest brotherhood that ever was since this world's beginning, since ye have yielded dear life for your friends' sake.\""
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "The soldier did not understand what the man was saying to him. There were others, too, in strange dresses, who came and spoke to him. Some spoke in what sounded like French. He could not make it out; but he knew that they all spoke kindly and praised him."
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "\"What does it all mean?\" he said to the minister. \"What are they talking about? They don't think I'd let down my pals?\""
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "\"Drink this,\" said the minister, and he handed the soldier a great silver cup, brimming with wine."
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "The soldier took a deep draught, and in that moment all his sorrows passed from him."
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "\"What is it?\" he asked?"
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "\"*Vin nouveau du Royaume*,\" said the minister. \"New Wine of the Kingdom, you call it.\" And then he bent down and murmured in the soldier's ear."
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "\"What,\" said the wounded man, \"the place they used to tell us about in Sunday school? With such drink and such joy--\""
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "His voice was hushed. For as he looked at the minister the fashion of his vesture was changed. The black robe seemed to melt away from him. He was all in armour, if armour be made of starlight, of the rose of dawn, and of sunset fires; and he lifted up a great sword of flame."
+    },
+    {
+      "id": "s1-35",
+      "sceneId": "s1",
+      "text": "Full in the midst, his Cross of Red Triumphant Michael brandished, And trampled the Apostate's pride."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Then it fell out in the sacring of the Mass that right as the priest heaved up the Host there came a beam redder than any rose and smote upon it, and then it was changed bodily into the shape and fashion of a Child having his arms stretched forth, as he had been nailed upon the Tree.--Old Romance."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "So far things were going very well indeed. The night was thick and black and cloudy, and the German force had come three-quarters of their way or more without an alarm. There was no challenge from the English lines; and indeed the English were being kept busy by a high shell-fire on their front. This had been the German plan; and it was coming off admirably. Nobody thought that there was any danger on the left; and so the Prussians, writhing on their stomachs over the ploughed field, were drawing nearer and nearer to the wood. Once there they could establish themselves comfortably and securely during what remained of the night; and at dawn the English left would be hopelessly enfiladed--and there would be another of those movements which people who really understand military matters call \"readjustments of our line.\""
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "The noise made by the men creeping and crawling over the fields was drowned by the cannonade, from the English side as well as the German. On the English centre and right things were indeed very brisk; the big guns were thundering and shrieking and roaring, the machine-guns were keeping up the very devil's racket; the flares and illuminating shells were as good as the Crystal Palace in the old days, as the soldiers said to one another. All this had been thought of and thought out on the other side. The German force was beautifully organised. The men who crept nearer and nearer to the wood carried quite a number of machine guns in bits on their backs; others of them had small bags full of sand; yet others big bags that were empty. When the wood was reached the sand from the small bags was to be emptied into the big bags; the machine-gun parts were to be put together, the guns mounted behind the sandbag redoubt, and then, as Major Von und Zu pleasantly observed, \"the English pigs shall to gehenna-fire quickly come.\""
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "The major was so well pleased with the way things had gone that he permitted himself a very low and guttural chuckle; in another ten minutes success would be assured. He half turned his head round to whisper a caution about some detail of the sandbag business to the big sergeant-major, Karl Heinz, who was crawling just behind him. At that instant Karl Heinz leapt into the air with a scream that rent through the night and through all the roaring of the artillery. He cried in a terrible voice, \"The Glory of the Lord!\" and plunged and pitched forward, stone dead. They said that his face as he stood up there and cried aloud was as if it had been seen through a sheet of flame."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "\"They\" were one or two out of the few who got back to the German lines. Most of the Prussians stayed in the ploughed field. Karl Heinz's scream had frozen the blood of the English soldiers, but it had also ruined the major's plans. He and his men, caught all unready, clumsy with the burdens that they carried, were shot to pieces; hardly a score of them returned. The rest of the force were attended to by an English burying party. According to custom the dead men were searched before they were buried, and some singular relies of the campaign were found upon them, but nothing so singular as Karl Heinz's diary."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "He had been keeping it for some time. It began with entries about bread and sausage and the ordinary incidents of the trenches; here and there Karl wrote about an old grandfather, and a big china pipe, and pinewoods and roast goose. Then the diarist seemed to get fidgety about his health. Thus:"
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "April 17.--Annoyed for some days by murmuring sounds in my head. I trust I shall not become deaf, like my departed uncle Christopher."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "April 20.--The noise in my head grows worse; it is a humming sound. It distracts me; twice I have failed to hear the captain and have been reprimanded."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "April 22.--So bad is my head that I go to see the doctor. He speaks of tinnitus, and gives me an inhaling apparatus that shall reach, he says, the middle ear."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "April 25.--The apparatus is of no use. The sound is now become like the booming of a great church bell. It reminds me of the bell at St. Lambart on that terrible day of last August."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "April 26.--I could swear that it is the bell of St. Lambart that I hear all the time. They rang it as the procession came out of the church."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "The man's writing, at first firm enough, begins to straggle unevenly over the page at this point. The entries show that he became convinced that he heard the bell of St. Lambart's Church ringing, though (as he knew better than most men) there had been no bell and no church at St. Lambart's since the summer of 1914. There was no village either--the whole place was a rubbish-heap."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "Then the unfortunate Karl Heinz was beset with other troubles."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "May 2.--I fear I am becoming ill. To-day Joseph Kleist, who is next to me in the trench, asked me why I jerked my head to the right so constantly. I told him to hold his tongue; but this shows that I am noticed. I keep fancying that there is something white just beyond the range of my sight on the right hand."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "May 3.--This whiteness is now quite clear, and in front of me. All this day it has slowly passed before me. I asked Joseph Kleist if he saw a piece of newspaper just beyond the trench. He stared at me solemnly--he is a stupid fool--and said, \"There is no paper.\""
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "May 4.--It looks like a white robe. There was a strong smell of incense to-day in the trench. No one seemed to notice it. There is decidedly a white robe, and I think I can see feet, passing very slowly before me at this moment while I write."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "There is no space here for continuous extracts from Karl Heinz's diary. But to condense with severity, it would seem that he slowly gathered about himself a complete set of sensory hallucinations. First the auditory hallucination of the sound of a bell, which the doctor called tinnitus. Then a patch of white growing into a white robe, then the smell of incense. At last he lived in two worlds. He saw his trench, and the level before it, and the English lines; he talked with his comrades and obeyed orders, though with a certain difficulty; but he also heard the deep boom of St. Lambart's bell, and saw continually advancing towards him a white procession of little children, led by a boy who was swinging a censer. There is one extraordinary entry: \"But in August those children carried no lilies; now they have lilies in their hands. Why should they have lilies?\""
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "It is interesting to note the transition over the border line. After May 2 there is no reference in the diary to bodily illness, with two notable exceptions. Up to and including that date the sergeant knows that he is suffering from illusions; after that he accepts his hallucinations as actualities. The man who cannot see what he sees and hear what he hears is a fool. So he writes: \"I ask who is singing 'Ave Maria Stella.' That blockhead Friedrich Schumacher raises his crest and answers insolently that no one sings, since singing is strictly forbidden for the present.\""
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "A few days before the disastrous night expedition the last figure in the procession appeared to those sick eyes."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "The old priest now comes in his golden robe, the two boys holding each side of it. He is looking just as he did when he died, save that when he walked in St. Lambart there was no shining round his head. But this is illusion and contrary to reason, since no one has a shining about his head. I must take some medicine."
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "Note here that Karl Heinz absolutely accepts the appearance of the martyred priest of St. Lambart as actual, while he thinks that the halo must be an illusion; and so he reverts again to his physical condition."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "The priest held up both his hands, the diary states, \"as if there were something between them. But there is a sort of cloud or dimness over this object, whatever it may be. My poor Aunt Kathie suffered much from her eyes in her old age.\""
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "One can guess what the priest of St. Lambart carried in his hands when he and the little children went out into the hot sunlight to implore mercy, while the great resounding bell of St. Lambart boomed over the plain. Karl Heinz knew what happened then; they said that it was he who killed the old priest and helped to crucify the little child against the church door. The baby was only three years old. He died calling piteously for \"mummy\" and \"daddy.\""
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "And those who will may guess what Karl Heinz saw when the mist cleared from before the monstrance in the priest's hands. Then he shrieked and died."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "The new head-covering is made of heavy steel, which has been specialty treated to increase its resisting power. The walls protecting the skull are particularly thick, and the weight of the helmet renders its use in open warfare out of the question. The rim is large, like that of the headpiece of Mambrino, and the soldier can at will either bring the helmet forward and protect his eyes or wear it so as to protect the base of the skull . . . Military experts admit that continuance of the present trench warfare may lead to those engaged in it, especially bombing parties and barbed wire cutters, being more heavily armoured than the knights, who fought at Bouvines and at Agincourt.--*The Times*, July 22, 1915"
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "The war is already a fruitful mother of legends. Some people think that there are too many war legends, and a Croydon gentleman--or lady, I am not sure which--wrote to me quite recently telling me that a certain particular legend, which I will not specify, had become the \"chief horror of the war.\" There may be something to be said for this point of view, but it strikes me as interesting that the old myth-making faculty has survived into these days, a relic of noble, far-off Homeric battles. And after all, what do we know? It does not do to be too sure that this, that, or the other hasn't happened and couldn't have happened."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "What follows, at any rate, has no claim to be considered either as legend or as myth. It is merely one of the odd circumstances of these times, and I have no doubt it can easily be \"explained away.\" In fact, the rationalistic explanation of the whole thing is patent and on the surface. There is only one little difficulty, and that, I fancy, is by no means insuperable. In any case this one knot or tangle may be put down as a queer coincidence and nothing more."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Here, then, is the curiosity or oddity in question. A young fellow, whom we will call for avoidance of all identification Delamere Smith-- he is now Lieutenant Delamere Smith--was spending his holidays on the coast of west South Wales at the beginning of the war. He was something or other not very important in the City, and in his leisure hours he smattered lightly and agreeably a little literature, a little art, a little antiquarianism. He liked the Italian primitives, he knew the difference between first, second, and third pointed, he had looked through Boutell's \"Engraved Brasses.\" He had been heard indeed to speak with enthusiasm of the brasses of Sir Robert de Septvans and Sir Roger de Trumpington."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "One morning--he thinks it must have been the morning of August 16, 1914--the sun shone so brightly into his room that he woke early, and the fancy took him that it would be fine to sit on the cliffs in the pure sunlight. So he dressed and went out, and climbed up Giltar Point, and sat there enjoying the sweet air and the radiance of the sea, and the sight of the fringe of creaming foam about the grey foundations of St. Margaret's Island. Then he looked beyond and gazed at the new white monastery on Caldy, and wondered who the architect was, and how he had contrived to make the group of buildings look exactly like the background of a mediæval picture."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "After about an hour of this and a couple of pipes, Smith confesses that he began to feel extremely drowsy. He was just wondering whether it would be pleasant to stretch himself out on the wild thyme that scented the high place and go to sleep till breakfast, when the mounting sun caught one of the monastery windows, and Smith stared sleepily at the darting flashing light till it dazzled him. Then he felt \"queer.\" There was an odd sensation as if the top of his head were dilating and contracting, and then he says he had a sort of shock, something between a mild current of electricity and the sensation of putting one's hand into the ripple of a swift brook."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "Now, what happened next Smith cannot describe at all clearly. He knew he was on Giltar, looking across the waves to Caldy; he heard all the while the hollow, booming tide in the caverns of the rocks far below him, And yet he saw, as if in a glass, a very different country--a level fenland cut by slow streams, by long avenues of trimmed trees."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "\"It looked,\" he says, \"as if it ought to have been a lonely country, but it was swarming with men; they were thick as ants in an anthill. And they were all dressed in armour; that was the strange thing about it."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "\"I thought I was standing by what looked as if it had been a farmhouse; but it was all battered to bits, just a heap of ruins and rubbish. All that was left was one tall round chimney, shaped very much like the fifteenth-century chimneys in Pembrokeshire. And thousands and tens of thousands went marching by."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "\"They were all in armour, and in all sorts of armour. Some of them had overlapping tongues of bright metal fastened on their clothes, others were in chain mail from head to foot, others were in heavy plate armour."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "\"They wore helmets of all shapes and sorts and sizes. One regiment had steel caps with wide trims, something like the old barbers' basins. Another lot had knights' tilting helmets on, closed up so that you couldn't see their faces. Most of them wore metal gauntlets, either of steel rings or plates, and they had steel over their boots. A great many had things like battle-maces swinging by their sides, and all these fellows carried a sort of string of big metal balls round their waist. Then a dozen regiments went by, every man with a steel shield slung over his shoulder. The last to go by were cross-bowmen.\""
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "In fact, it appeared to Delamere Smith that he watched the passing of a host of men in mediæval armour before him, and yet he knew--by the position of the sun and of a rosy cloud that was passing over the Worm's Head--that this vision, or whatever it was, only lasted a second or two. Then that slight sense of shock returned, and Smith returned to the contemplation of the physical phenomena of the Pembrokeshire coast--blue waves, grey St. Margaret's, and Caldy Abbey white in the sunlight."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "It will be said, no doubt, and very likely with truth, that Smith fell asleep on Giltar, and mingled in a dream the thought of the great war just begun with his smatterings of mediæval battle and arms and armour. The explanation seems tolerable enough."
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "But there is the one little difficulty. It has been said that Smith is now Lieutenant Smith. He got his commission last autumn, and went out in May. He happens to speak French rather well, and so he has become what is called, I believe, an officer of liaison, or some such term. Anyhow, he is often behind the French lines."
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "He was home on short leave last week, and said:"
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "\"Ten days ago I was ordered to ----. I got there early in the morning, and had to wait a bit before I could see the General. I looked about me, and there on the left of us was a farm shelled into a heap of ruins, with one round chimney standing, shaped like the 'Flemish' chimneys in Pembrokeshire. And then the men in armour marched by, just as I had seen them--French regiments. The things like battle-maces were bomb-throwers, and the metal balls round the men's waists were the bombs. They told me that the cross-bows were used for bomb-shooting."
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "\"The march I saw was part of a big movement; you will hear more of it before long.\""
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "The Bowmen And Other Noble Ghosts"
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "By \"The Londoner\""
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "There was a journalist--and the *Evening News* reader well knows the initials of his name--who lately sat down to write a story."
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "Of course his story had to be about the war; there are no other stories nowadays. And so he wrote of English soldiers who, in the dusk on a field of France, faced the sullen mass of the oncoming Huns. They were few against fearful odds, but, as they sent the breech-bolt home and aimed and fired, they became aware that others fought beside them. Down the air came cries to St. George and twanging of the bow-string; the old bowmen of England had risen at England's need from their graves in that French earth and were fighting for England."
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "He said that he made up that story by himself, that he sat down and wrote it out of his head. But others knew better. It must really have happened. There was, I remember, a clergyman of good credit who told him that he was clean mistaken; the archers had really and truly risen up to fight for England: the tale was all up and down the front."
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "For my part I had thought that he wrote out of his head; I had seen him at the detestable job of doing it. I myself have hated this business of writing ever since I found out that it was not so easy as it looks, and I can always spare a little sympathy for a man who is driving a pen to the task of putting words in their right places. Yet the clergyman persuaded me at last. Who am I that I should doubt the faith of a clerk in holy orders? It must have happened. Those archers fought for us, and the grey-goose feather has flown once again in English battle."
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "Since that day I look eagerly for the ghosts who must be taking their share in this world-war. Never since the world began was such a war as this: surely Marlborough and the Duke, Talbot and Harry of Monmouth, and many another shadowy captain must be riding among our horsemen. The old gods of war are wakened by this loud clamour of the guns."
+    },
+    {
+      "id": "s3-24",
+      "sceneId": "s3",
+      "text": "All the lands are astir. It is not enough that Asia should be humming like an angry hive and the far islands in arms, Australia sending her young men and Canada making herself a camp. When we talk over the war news, we call up ancient names: we debate how Rome stands and what is the matter with Greece."
+    },
+    {
+      "id": "s3-25",
+      "sceneId": "s3",
+      "text": "As for Greece, I have ceased to talk of her. If I wanted to say anything about Greece I should get down the Poetry Book and quote Lord Byron's fine old ranting verse. \"The mountains look on Marathon--and Marathon looks on the sea.\" But \"standing on the Persians' grave\" Greece seems in the same humour that made Lord Byron give her up as a hopelessly flabby country."
+    },
+    {
+      "id": "s3-26",
+      "sceneId": "s3",
+      "text": "\"'Tis Greece, but living Greece no more\" is as true as ever it was. That last telegram of the Kaiser must have done its soothing work. You remember how it ran: the Kaiser was too busy to make up new phrases. He telegraphed to his sister the familiar Potsdam sentence: \"Woe to those who dare to draw the sword against me.\" I am sure that I have heard that before. And he added--delightful and significant postscript!--\"My compliments to Tino.\""
+    },
+    {
+      "id": "s3-27",
+      "sceneId": "s3",
+      "text": "And Tino--King Constantine of the Hellenes--understood. He is in bed now with a very bad cold, and like to stay in bed until the weather be more settled. But before going to bed he was able to tell a journalist that Greece was going quietly on with her proper business; it was her mission to carry civilisation to the world. Truly that was the mission of ancient Greece. What we get from Tino's modern Greece is not civilisation but the little black currants for plum-cake."
+    },
+    {
+      "id": "s3-28",
+      "sceneId": "s3",
+      "text": "But Rome. Greece may be dead or in the currant trade. Rome is alive and immortal. Do not talk to me about Signor Giolitti, who is quite sure that the only things that matter in this new Italy, which is old Rome, are her commercial relations with Germany. Rome of the legions, our ancient mistress and conqueror, is alive to-day, and she cannot be for an ignoble peace. Here in my newspaper is the speech of a poet spoken in Rome to a shouting crowd: I will cut out the column and put it in the Poetry Book."
+    },
+    {
+      "id": "s3-29",
+      "sceneId": "s3",
+      "text": "He calls to the living and to the dead: \"I saw the fire of Vesta, O Romans, lit yesterday in the great steel works of Liguria, The fountain of Juturna, O Romans, I saw its water run to temper armour, to chill the drills that hollow out the bore of guns.\" This is poetry of the old Roman sort. I imagine that scene in Rome: the latest poet of Rome calling upon the Romans in the name of Vesta's holy fire, in the name of the springs at which the Great Twin Brethren washed their horses. I still believe in the power and the ancient charm of noble words. I do not think that Giolitti and the stockbrokers will keep old Rome off the old roads where the legions went."
+    },
+    {
+      "id": "s3-30",
+      "sceneId": "s3",
+      "text": "Postscript"
+    },
+    {
+      "id": "s3-31",
+      "sceneId": "s3",
+      "text": "While this volume was passing through the press, Mr. Ralph Shirley, the Editor of \"The Occult Review\" called my attention to an article that is appearing in the August issue of his magazine, and was kind enough to let me see the advance proof sheets."
+    },
+    {
+      "id": "s3-32",
+      "sceneId": "s3",
+      "text": "The article is called \"The Angelic Leaders\" It is written by Miss Phyllis Campbell. I have read it with great care."
+    },
+    {
+      "id": "s3-33",
+      "sceneId": "s3",
+      "text": "Miss Campbell says that she was in France when the war broke out. She became a nurse, and while she was nursing the wounded she was informed that an English soldier wanted a \"holy picture.\" She went to the man and found him to be a Lancashire Fusilier. He said that he was a Wesleyan Methodist, and asked \"for a picture or medal (he didn't care which) of St. George... because he had seen him on a white horse, leading the British at Vitry-le-François, when the Allies turned\""
+    },
+    {
+      "id": "s3-34",
+      "sceneId": "s3",
+      "text": "This statement was corroborated by a wounded R.F.A. man who was present. He saw a tall man with yellow hair, in golden armour, on a white horse, holding his sword up, and his mouth open as if he was saying, \"Come on, boys! I'll put the kybosh on the devils\" This figure was bareheaded--as appeared later from the testimony of other soldiers--and the R.F.A. man and the Fusilier knew that he was St. George, because he was exactly like the figure of St. George on the sovereigns. \"Hadn't they seen him with his sword on every 'quid' they'd ever had?\""
+    },
+    {
+      "id": "s3-35",
+      "sceneId": "s3",
+      "text": "From further evidence it seemed that while the English had seen the apparition of St. George coming out of a \"yellow mist\" or \"cloud of light,\" to the French had been vouchsafed visions of St. Michael the Archangel and Joan of Arc. Miss Campbell says:--"
+    },
+    {
+      "id": "s3-36",
+      "sceneId": "s3",
+      "text": "\"Everybody has seen them who has fought through from Mons to Ypres; they all agree on them individually, and have no doubt at all as to the final issue of their interference\""
+    },
+    {
+      "id": "s3-37",
+      "sceneId": "s3",
+      "text": "Such are the main points of the article as it concerns the great legend of \"The Angels of Mons.\" I cannot say that the author has shaken my incredulity--firstly, because the evidence is second-hand. Miss Campbell is perhaps acquainted with \"Pickwick\" and I would remind her of that famous (and golden) ruling of Stareleigh, J.: to the effect that you mustn't tell us what the soldier said; it's not evidence. Miss Campbell has offended against this rule, and she has not only told us what the soldier said, but she has omitted to give us the soldier's name and address."
+    },
+    {
+      "id": "s3-38",
+      "sceneId": "s3",
+      "text": "If Miss Campbell proffered herself as a witness at the Old Bailey and said, \"John Doe is undoubtedly guilty. A soldier I met told me that he had seen the prisoner put his hand into an old gentleman's pocket and take out a purse\"--well, she would find that the stout spirit of Mr. Justice Stareleigh still survives in our judges."
+    },
+    {
+      "id": "s3-39",
+      "sceneId": "s3",
+      "text": "The soldier must be produced. Before that is done we are not technically aware that he exists at all."
+    },
+    {
+      "id": "s3-40",
+      "sceneId": "s3",
+      "text": "Then there are one or two points in the article itself which puzzle me. The Fusilier and the R.F.A. man had seen \"St, George leading the British at Vitry-le-François, when the Allies turned.\" Thus the time of the apparition and the place of the apparition were firmly fixed in the two soldiers' minds."
+    },
+    {
+      "id": "s3-41",
+      "sceneId": "s3",
+      "text": "Yet the very next paragraph in the article begins:--"
+    },
+    {
+      "id": "s3-42",
+      "sceneId": "s3",
+      "text": "\"'Where was this ?' I asked. But neither of them could tell\""
+    },
+    {
+      "id": "s3-43",
+      "sceneId": "s3",
+      "text": "This is an odd circumstance. They knew, and yet they did not know; or, rather, they had forgotten a piece of information that they had themselves imparted a few seconds before."
+    },
+    {
+      "id": "s3-44",
+      "sceneId": "s3",
+      "text": "Another point. The soldiers knew that the figure on the horse was St. George by his exact likeness to the figure of the saint on the English sovereign."
+    },
+    {
+      "id": "s3-45",
+      "sceneId": "s3",
+      "text": "This, again, is odd. The apparition was of a bareheaded figure in golden armour. The St. George of the coinage is naked, except for a short cape flying from the shoulders, and a helmet. He is not bareheaded, and has no armour--save the piece on his head. I do not quite see how the soldiers were so certain as to the identity of the apparition."
+    },
+    {
+      "id": "s3-46",
+      "sceneId": "s3",
+      "text": "Lastly, Miss Campbell declares that \"everybody\" who fought from Mons to Ypres saw the apparitions. If that be so, it is again odd that Nobody has come forward to testify at first hand to the most amazing event of his life. Many men have been back on leave from the front, we have many wounded in hospital, many soldiers have written letters home. And they have all combined, this great host, to keep silence as to the most wonderful of occurrences, the most inspiring assurance, the surest omen of victory."
+    },
+    {
+      "id": "s3-47",
+      "sceneId": "s3",
+      "text": "It may be so, but--"
+    },
+    {
+      "id": "s3-48",
+      "sceneId": "s3",
+      "text": "Arthur Machen."
+    }
+  ]
+}

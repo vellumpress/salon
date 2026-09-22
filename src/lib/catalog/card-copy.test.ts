@@ -2121,3 +2121,56 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     assert.ok(countryFor(work!), id);
   }
 });
+
+test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => {
+  const expect = {
+    leila: { gutenberg: 78258, form: "novel", scenes: 17, breaths: 2320 },
+    "the-temptation-of-st-anthony": { gutenberg: 52225, form: "novel", scenes: 7, breaths: 1725 },
+    sanctuary: { gutenberg: 7517, form: "novel", scenes: 12, breaths: 541 },
+    "the-angels-of-mons": { gutenberg: 14044, form: "stories", scenes: 4, breaths: 133 },
+    "the-card": { gutenberg: 12986, form: "novel", scenes: 12, breaths: 1695 },
+    "the-flying-inn": { gutenberg: 59239, form: "novel", scenes: 25, breaths: 1417 },
+    "the-nabob": { gutenberg: 2077, form: "novel", scenes: 25, breaths: 1949 },
+    "the-shadow-of-the-cathedral": { gutenberg: 12041, form: "novel", scenes: 10, breaths: 1199 },
+    thyrza: { gutenberg: 4302, form: "novel", scenes: 41, breaths: 5397 },
+    "wine-water-and-song": { gutenberg: 35115, form: "poem", scenes: 16, breaths: 82 },
+    "against-the-grain": { gutenberg: 12341, form: "novel", scenes: 16, breaths: 900 },
+    "doctor-pascal": { gutenberg: 10720, form: "novel", scenes: 14, breaths: 1848 },
+    "hilda-lessways": { gutenberg: 10658, form: "novel", scenes: 36, breaths: 2117 },
+    kangaroo: { gutenberg: 59848, form: "novel", scenes: 18, breaths: 3425 },
+    "news-from-nowhere": { gutenberg: 3261, form: "novel", scenes: 32, breaths: 1113 },
+    "sketches-by-boz": { gutenberg: 882, form: "stories", scenes: 56, breaths: 3412 },
+    sulamith: { gutenberg: 33444, form: "novel", scenes: 12, breaths: 434 },
+    "the-new-machiavelli": { gutenberg: 1047, form: "novel", scenes: 15, breaths: 2275 },
+    "the-reverberator": { gutenberg: 7529, form: "novel", scenes: 14, breaths: 1072 },
+    "the-soil": { gutenberg: 56687, form: "novel", scenes: 30, breaths: 3476 },
+  } as const;
+  assert.equal(Object.keys(expect).length, 20);
+  assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.form, want.form, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /Featured|cold-open/i, id);
+    const full = textWork(id);
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    const first = (full.breaths[0]?.text ?? "").replace(/\s+/g, " ").trim();
+    assert.ok(first.startsWith(work!.opening ?? ""), id);
+    assert.ok((work!.intro ?? "").length >= 24, id);
+    assert.equal(sentenceCount(blurbFor(work!)), 1, id);
+    assert.ok(countryFor(work!), id);
+  }
+});
