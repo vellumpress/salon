@@ -1,0 +1,834 @@
+{
+  "id": "les-heures-claires",
+  "title": "Les Heures Claires",
+  "author": "Émile Verhaeren",
+  "year": "1896",
+  "note": "Project Gutenberg 10061",
+  "minutes": 45,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "O la splendeur de notre joie",
+      "place": "O la splendeur de notre joie",
+      "reentry": "Tissée en or dans l'air de soie!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "O la splendeur de notre joie",
+      "place": "O la splendeur de notre joie",
+      "reentry": "En ce jardin où nous vivons de nos emblèmes!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Quoique nous le voyions fleurir devant nos yeux",
+      "place": "Quoique nous le voyions fleurir devant nos yeux",
+      "reentry": "Ce jardin clair où nous passons silencieux, C'est plus encore en nous que se féconde Le plus joyeux et le plus doux jardin du monde.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Ce chapiteau barbare",
+      "place": "Ce chapiteau barbare",
+      "reentry": "Soudés entre eux, à coups de griffes et de dents, En un tumulte fou de sang, de cris ardents, De blessures et de gueules qui s'entre-mordent, C'était moi-même, avant que tu fusses la mienne, O toi la neuve, ô toi l'ancienne! Qui vins à moi ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Je sens en toi les mêmes choses",
+      "place": "Je sens en toi les mêmes choses",
+      "reentry": "Qu'en moi-même dormir Et notre soif de souvenir Boire l'écho, où nos passés se correspondent.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Le ciel en nuit s'est déplié",
+      "place": "Le ciel en nuit s'est déplié",
+      "reentry": "Et la lune semble veiller Sur le silence endormi.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Chaque heure, où je pense à ta bonté",
+      "place": "Chaque heure, où je pense à ta bonté",
+      "reentry": "Si simplement profonde, Je me confonds en prières vers toi.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Je suis venu si tard",
+      "place": "Je suis venu si tard",
+      "reentry": "Vers la douceur de ton regard Et de si loin, vers tes deux mains tendues, Tranquillement, par à travers les étendues!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Tu arbores parfois cette grâce bénigne",
+      "place": "Tu arbores parfois cette grâce bénigne",
+      "reentry": "Du matinal jardin tranquille et sinueux Qui déroule, là-bas, parmi les lointains bleus, Ses doux chemins courbés en cols de cygne.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Oh! laisse frapper à la porte",
+      "place": "Oh! laisse frapper à la porte",
+      "reentry": "La main qui passe avec ses doigts futiles; Notre heure est si unique, et le reste qu'importe, Le reste, avec ses doigts futiles.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Comme aux âges naïfs",
+      "place": "Comme aux âges naïfs",
+      "reentry": "Ainsi qu'une ample fleur Qui s'ouvre, au clair de la rosée; Entre ses plis frêles, ma bouche s'est posée.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Le printemps jeune et bénévole",
+      "place": "Le printemps jeune et bénévole",
+      "reentry": "Qui vêt le jardin de beauté Elucide nos voix et nos paroles Et les trempe dans sa limpidité.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Viens lentement t'asseoir",
+      "place": "Viens lentement t'asseoir",
+      "reentry": "Près du parterre, dont le soir Ferme les fleurs de tranquille lumière, Laisse filtrer la grande nuit en toi: Nous sommes trop heureux pour que sa mer d'effroi Trouble notre prière.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Combien elle est facilement ravie",
+      "place": "Combien elle est facilement ravie",
+      "reentry": "Avec ses yeux d'extase ignée, Elle, la douce et résignée Si simplement devant la vie.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Au temps où longuement",
+      "place": "Au temps où longuement",
+      "reentry": "Où les heures m'étaient des pièges, Tu m'apparus l'accueillante lumière Qui luit, aux fenêtres, l'hiver, Au fonds des soirs, sur de la neige.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "A ces reines qui lentement descendent",
+      "place": "A ces reines qui lentement descendent",
+      "reentry": "Les escaliers en ors et fleurs de la légende, Dans mon rêve, parfois, je t'apparie; Je te donne des noms qui se marient A la clarté, à la splendeur et à la joie, Et bruissent en syllabes de soie, Au long des vers bâtis comme une estrade Pou",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "Je dédie à tes pleurs",
+      "place": "Je dédie à tes pleurs",
+      "reentry": "Mes plus douces pensées, Celles que je te dis, celles aussi Qui demeurent imprécisées Et trop profondes pour les dire.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Je dédie à tes pleurs",
+      "place": "Je dédie à tes pleurs",
+      "reentry": "A toute ton âme, mon âme, Avec ses pleurs et ses sourires Et son baiser.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Je noie en tes deux yeux",
+      "place": "Je noie en tes deux yeux",
+      "reentry": "Et l'élan fou de cette âme éperdue, Pour que, plongée en leur douceur et leur prière, Plus claire et mieux trempée, elle me soit rendue.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Pour nous aimer des yeux",
+      "place": "Pour nous aimer des yeux",
+      "reentry": "Lavons nos deux regards, de ceux Que nous avons croisés, par milliers, dans la vie Mauvaise et asservie.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "Au clos de notre amour",
+      "place": "Au clos de notre amour",
+      "reentry": "Un paon d'or, là-bas traverse une avenue; Des pétales pavoisent, --Perles, émeraudes, turquoises-- L'uniforme sommeil des gazons verts; Nos étangs bleus luisent, couverts Du baiser blanc des nénuphars de neige; Aux quinconces, nos groseille",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Que tes yeux clairs",
+      "place": "Que tes yeux clairs",
+      "reentry": "Me soient, sur terre, Les images de la bonté.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "En ces heures où nous sommes perdus",
+      "place": "En ces heures où nous sommes perdus",
+      "reentry": "Si loin de tout ce qui n'est pas nous-mêmes. Quel sang lustral ou quel baptême Baigne nos coeurs vers tout l'amour tendus?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "Oh! ce bonheur",
+      "place": "Oh! ce bonheur",
+      "reentry": "Si rare et si frêle parfois Qu'il nous fait peur!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Sitôt que nos bouches se touchent",
+      "place": "Sitôt que nos bouches se touchent",
+      "reentry": "Nous nous sentons tant plus clairs de nous-mêmes Que l'on dirait des Dieux qui s'aiment Et qui s'unissent en nous-mêmes;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "Pour que rien de nous deux",
+      "place": "Pour que rien de nous deux",
+      "reentry": "Si profonde qu'elle en est sainte Et qu'à travers le corps même, l'amour soit clair, Nous descendons ensemble au jardin de ta chair.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Le don du corps",
+      "place": "Le don du corps",
+      "reentry": "N'est rien que l'aboutissement De deux tendresses entraînées L'une vers l'autre, éperdûment.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Fût-il en nous une seule tendresse",
+      "place": "Fût-il en nous une seule tendresse",
+      "reentry": "Une pensée, une joie, une promesse, Qui n'allât, d'elle-même, au devant de nos pas?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Le beau jardin fleuri de flammes",
+      "place": "Le beau jardin fleuri de flammes",
+      "reentry": "Qui nous semblait le double ou le miroir, Du jardin clair que nous portions dans l'âme, Se cristallise en gel et or, ce soir.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "S'il arrive jamais",
+      "place": "S'il arrive jamais",
+      "reentry": "Que nous soyons, sans le savoir, Souffrance ou peine ou désespoir, L'un pour l'autre; s'il se faisait Que la fatigue ou le banal plaisir Détendissent en nous l'arc d'or du haut désir; Si le cristal de la pure pensée De notre amour doit se b",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Tissée en or dans l'air de soie!"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Voici la maison douce et son pignon léger, Et le jardin et le verger."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Voici le banc, sous les pommiers D'où s'effeuille le printemps blanc, A pétales frôlants et lents. Voici des vols de lumineux ramiers Plânant, ainsi que des présages, Dans le ciel clair du paysage."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Voici--pareils à des baisers tombés sur terre De la bouche du frêle azur-- Deux bleus étangs simples et purs, Bordés naïvement de fleurs involontaires."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "En ce jardin où nous vivons de nos emblèmes!"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Là-bas, de lentes formes passent, Sont-ce nos deux âmes qui se délassent, Au long des bois et des terrasses?"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Sont-ce tes seins, sont-ce tes yeux Ces deux fleurs d'or harmonieux? Et ces herbes--on dirait des plumages Mouillés dans la source qu'ils plissent-- Sont-ce tes cheveux frais et lisses?"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Certes, aucun abri ne vaut le clair verger, Ni la maison au toit léger, Ni ce jardin, où le ciel trame Ce climat cher à nos deux âmes."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Ce jardin clair où nous passons silencieux, C'est plus encore en nous que se féconde Le plus joyeux et le plus doux jardin du monde."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Car nous vivons toutes les fleurs, Toutes les herbes, toutes les palmes En nos rires et en nos pleurs De bonheur pur et calme."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Car nous vivons toutes les transparences De l'étang bleu qui reflète l'exubérance Des roses d'or et des grands lys vermeils: Bouches et lèvres de soleil."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Car nous vivons toute la joie Dardée en cris de fête et de printemps, En nos aveux, où se côtoient Les mots fervents et exaltants."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Oh! dis, c'est bien en nous que se féconde Le plus joyeux et clair jardin du monde."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Soudés entre eux, à coups de griffes et de dents, En un tumulte fou de sang, de cris ardents, De blessures et de gueules qui s'entre-mordent, C'était moi-même, avant que tu fusses la mienne, O toi la neuve, ô toi l'ancienne! Qui vins à moi des loins d'éternité, Avec, entre tes mains, l'ardeur et la bonté."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Qu'en moi-même dormir Et notre soif de souvenir Boire l'écho, où nos passés se correspondent."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Nos yeux ont dû pleurer aux mêmes heures, Sans le savoir, pendant l'enfance: Avoir mêmes effrois, mêmes bonheurs, Mêmes éclairs de confiance: Car je te suis lié par l'inconnu Qui me fixait, jadis au fond des avenues Par où passait ma vie aventurière, Et, certes, si j'avais regardé mieux, J'aurais pu voir s'ouvrir tes yeux Depuis longtemps en ses paupières."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Et la lune semble veiller Sur le silence endormi."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "Tout est si pur et clair, Tout est si pur et si pâle dans l'air Et sur les lacs du paysage ami, Qu'elle angoisse, la goutte d'eau Qui tombe d'un roseau Et tinte et puis se tait dans l'eau."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "Mais j'ai tes mains entre les miennes Et tes yeux sûrs, qui me retiennent, De leurs ferveurs, si doucement; Et je te sens si bien en paix de toute chose, Que rien, pas même un fugitif soupçon de crainte, Ne troublera, fût-ce un moment, La confiance sainte Qui dort en nous comme un enfant repose."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Si simplement profonde, Je me confonds en prières vers toi."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Vers la douceur de ton regard Et de si loin, vers tes deux mains tendues, Tranquillement, par à travers les étendues!"
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "J'avais en moi tant de rouille tenace Qui me rongeait, à dents rapaces, La confiance;"
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "J'étais si lourd, j'étais si las, J'étais si vieux de méfiance, J'étais si lourd, j'étais si las Du vain chemin de tous mes pas."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Je méritais si peu la merveilleuse joie De voir tes pieds illuminer ma voie, Que j'en reste tremblant encore et presqu'en pleurs, Et humble, à tout jamais, en face du bonheur."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Du matinal jardin tranquille et sinueux Qui déroule, là-bas, parmi les lointains bleus, Ses doux chemins courbés en cols de cygne."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "Et, d'autres fois, tu m'es le frisson clair Du vent rapide et miroitant Qui passe, avec ses doigts d'éclair, Dans les crins d'eau de l'étang blanc."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "Au bon toucher de tes deux mains, Je sens comme des feuilles Me doucement frôler; Que midi brûle le jardin. Les ombres, aussitôt recueillent Les paroles chères dont ton être a tremblé."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "Chaque moment me semble, grâce à toi, Passer ainsi divinement en moi. Aussi, quand l'heure vient de la nuit blême, Où tu te cèles en toi-même, En refermant les yeux, Sens-tu mon doux regard dévotieux, Plus humble et long qu'une prière, Remercier le tien sous tes closes paupières?"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "La main qui passe avec ses doigts futiles; Notre heure est si unique, et le reste qu'importe, Le reste, avec ses doigts futiles."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "Laisse passer, par le chemin, La triste et fatigante joie, Avec ses crécelles en mains."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "Laisse monter, laisse bruire Et s'en aller le rire; Laisse passer la foule et ses milliers de voix."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "L'instant est si beau de lumière, Dans le jardin, autour de nous, L'instant est si rare de lumière trémière, Dans notre coeur, au fond de nous."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "Tout nous prêche de n'attendre plus rien De ce qui vient ou passe, Avec des chansons lasses Et des bras las par les chemins."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "Et de rester les doux qui bénissons le jour. Même devant la nuit d'ombre barricadée, Aimant en nous, par dessus tout, l'idée Que bellement nous nous faisons de notre amour."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Ainsi qu'une ample fleur Qui s'ouvre, au clair de la rosée; Entre ses plis frêles, ma bouche s'est posée."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "La fleur, je la cueillis au pré des fleurs en flamme; Ne lui dis rien: car la parole entre nous deux Serait banale, et tous les mots sont hasardeux. C'est à travers les yeux que l'âme écoute une âme."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "La fleur qui est mon coeur et mon aveu, Tout simplement, à tes lèvres confie Qu'elle est loyale et claire et bonne, et qu'on se fie Au vierge amour, comme un enfant se fie à Dieu."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "Laissons l'esprit fleurir sur les collines, En de capricieux chemins de vanité; Et faisons simple accueil à la sincérité Qui tient nos deux coeurs clairs, en ses mains cristallines; Et rien n'est beau comme une confession d'âmes, L'une à l'autre, le soir, lorsque la flamme Des incomptables diamants Brûle, comme autant d'yeux Silencieux, Le silence des firmaments."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Qui vêt le jardin de beauté Elucide nos voix et nos paroles Et les trempe dans sa limpidité."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "La brise et les lèvres des feuilles Babillent--et effeuillent En nous les syllabes de leur clarté."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "Mais le meilleur de nous se gare Et fuit les mots matériels; Un simple et doux élan muet Mieux que tout verbe amarre Notre bonheur à son vrai ciel: Celui de ton âme, à deux genoux, Tout simplement, devant la mienne, Et de mon âme, à deux genoux, Très doucement, devant la tienne."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "Près du parterre, dont le soir Ferme les fleurs de tranquille lumière, Laisse filtrer la grande nuit en toi: Nous sommes trop heureux pour que sa mer d'effroi Trouble notre prière."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "Là-haut, le pur cristal des étoiles s'éclaire. Voici le firmament plus net et translucide Qu'un étang bleu ou qu'un vitrail d'abside; Et puis voici le ciel qui regarde à travers."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "Les mille voix de l'énorme mystère Parlent autour de toi. Les mille lois de la nature entière Bougent autour de toi, Les arcs d'argent de l'invisible Prennent ton âme et son élan pour cible, Mais tu n'as peur, oh! simple coeur, Mais tu n'as peur, puisque ta foi Est que toute la terre collabore A cet amour que fit éclore La vie et son mystère en toi."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "Joins donc les mains tranquillement Et doucement adore; Un grand conseil de pureté Et de divine intimité Flotte, comme une étrange aurore, Sous les minuits du firmament."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Avec ses yeux d'extase ignée, Elle, la douce et résignée Si simplement devant la vie."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "Ce soir, comme un regard la surprenait fervente, Et comme un mot la transportait Au pur jardin de joie, où elle était Tout à la fois reine et servante."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "Humble d'elle, mais ardente de nous, C'était à qui ploierait les deux genoux, Pour recueillir le merveilleux bonheur Qui, mutuel, nous débordait du coeur."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "Nous écoutions se taire, en nous, la violence De l'exaltant amour qu'emprisonnaient nos bras Et le vivant silence Dire des mots que nous ne savions pas."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "Où les heures m'étaient des pièges, Tu m'apparus l'accueillante lumière Qui luit, aux fenêtres, l'hiver, Au fonds des soirs, sur de la neige."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "Ta clarté d'âme hospitalière Frôla, sans le blesser, mon coeur, Comme une main de tranquille chaleur; Un espoir tiède, un mot clément, Pénétrèrent en moi très lentement;"
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "Puis vint la bonne confiance Et la franchise et la tendresse et l'alliance, Enfin, de nos deux mains amies, Un soir de claire entente et de douce accalmie."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "Depuis, bien que l'été ait succédé au gel, En nous-mêmes et sous le ciel, Dont les flammes éternisées Pavoisent d'or tous les chemins de nos pensées, Et que l'amour soit devenu la fleur immense, Naissant du fier désir, Qui, sans cesse, pour mieux encor grandir, En notre coeur, se recommence, Je regarde toujours la petite lumière Qui me fut douce, la première."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "Je ne détaille pas, ni quels nous sommes L'un pour l'autre, ni les pourquois, ni les raisons: Tout doute est mort, en ce jardin de floraisons Qui s'ouvre en nous et hors de nous, si loin des hommes."
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Je ne raisonne pas, et ne veux pas savoir, Et rien ne troublera ce qui n'est que mystère Et qu'élans doux et que ferveur involontaire Et que tranquille essor vers nos parvis d'espoir."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "Je te sens claire avant de te comprendre telle; Et c'est ma joie, infiniment, De m'éprouver si doucement aimant, Sans demander pourquoi ta voix m'appelle."
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "Soyons simples et bons--et que le jour Nous soit tendresse et lumière servies, Et laissons dire que la vie N'est point faite pour un pareil amour."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Les escaliers en ors et fleurs de la légende, Dans mon rêve, parfois, je t'apparie; Je te donne des noms qui se marient A la clarté, à la splendeur et à la joie, Et bruissent en syllabes de soie, Au long des vers bâtis comme une estrade Pour la danse des mots et leurs belles parades."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Mais combien vite on se lasse du jeu, A te voir douce et profonde et si peu Celle dont on enjolive les attitudes; Ton front si clair et pur et blanc de certitude, Tes douces mains d'enfant en paix sur tes genoux, Tes seins se soulevant au rythme de ton pouls Qui bat comme ton coeur immense et ingénu, Oh! comme tout, hormis cela et ta prière, Oh! comme tout est pauvre et vain, hors la lumière Qui me regarde et qui m'accueille en tes yeux nus."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Mes plus douces pensées, Celles que je te dis, celles aussi Qui demeurent imprécisées Et trop profondes pour les dire."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "A toute ton âme, mon âme, Avec ses pleurs et ses sourires Et son baiser."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "Vois-tu, l'aurore naît sur la terre effacée, Des liens d'ombre semblent glisser Et s'en aller, avec mélancolie; L'eau des étangs s'écoule et tamise son bruit, L'herbe s'éclaire et les corolles se déplient, Et les bois d'or se désenlacent de la nuit."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "Oh! dis, pouvoir un jour, Entrer ainsi dans la pleine lumière; Oh! dis, pouvoir un jour Avec toutes les fleurs de nos âmes trémières, Sans plus aucun voile sur nous, Sans plus aucun mystère en nous, Oh dis, pouvoir, un jour, Entrer à deux dans le lucide amour!"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "Et l'élan fou de cette âme éperdue, Pour que, plongée en leur douceur et leur prière, Plus claire et mieux trempée, elle me soit rendue."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "S'unir pour épurer son être, Comme deux vitraux d'or en une même abside Croisent leurs feux différemment lucides Et se pénètrent!"
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "Je suis parfois si lourd, si las, D'être celui qui ne sait pas Etre parfait, comme il se veut! Mon coeur se bat contre ses voeux, Mon coeur dont les plantes mauvaises, Entre des rocs d'entêtement, Dressent, sournoisement, Leurs fleurs d'encre ou de braise; Mon coeur si faux, si vrai, selon les jours, Mon coeur contradictoire, Mon coeur exagéré toujours De joie immense ou de crainte attentatoire."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "Lavons nos deux regards, de ceux Que nous avons croisés, par milliers, dans la vie Mauvaise et asservie."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "L'aube est en fleur et en rosée Et en lumière tamisée Très douce: On croirait voir de molles plumes D'argent et de soleil, à travers brumes, Frôler et caresser, dans le jardin, les mousses."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "Nos bleus et merveilleux étangs Tremblent et s'animent d'or miroitant, Des vols émeraudés, sous les arbres, circulent; Et la clarté, hors des chemins, des clos, des haies, Balaie La cendre humide, où traîne encor le crépuscule."
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Un paon d'or, là-bas traverse une avenue; Des pétales pavoisent, --Perles, émeraudes, turquoises-- L'uniforme sommeil des gazons verts; Nos étangs bleus luisent, couverts Du baiser blanc des nénuphars de neige; Aux quinconces, nos groseillers font des cortèges;"
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "Un insecte de prisme irrite un coeur de fleur; De merveilleux sous-bois se jaspent de lueurs; Et, comme des bulles légères, mille abeilles Sur des grappes d'argent, vibrent, au long des treilles."
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "L'air est si beau qu'il paraît chatoyant; Sous les midis profonds et radiants, On dirait qu'il remue en roses de lumière; Tandis qu'au loin, les routes coutumières, Telles de lents gestes qui s'allongent vermeils, A l'horizon nacré, montent vers le soleil."
+    },
+    {
+      "id": "s20-3",
+      "sceneId": "s20",
+      "text": "Certes, la robe en diamants du bel été Ne vêt aucun jardin d'aussi pure clarté; Et c'est la joie unique éclose en nos deux âmes Qui reconnait sa vie en ces bouquets de flammes."
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "Me soient, sur terre, Les images de la bonté."
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "Laissons nos âmes embrasées Exalter d'or chaque flamme de nos pensées."
+    },
+    {
+      "id": "s21-2",
+      "sceneId": "s21",
+      "text": "Que mes deux mains contre ton coeur Te soient, sur terre, Les emblèmes de la douceur."
+    },
+    {
+      "id": "s21-3",
+      "sceneId": "s21",
+      "text": "Vivons pareils à deux prières éperdues L'une vers l'autre, à toute heure, tendues."
+    },
+    {
+      "id": "s21-4",
+      "sceneId": "s21",
+      "text": "Que nos baisers sur nos bouches ravies Nous soient sur terre, Les symboles de notre vie."
+    },
+    {
+      "id": "s21-5",
+      "sceneId": "s21",
+      "text": "Dis-moi, ma simple et ma tranquille amie, Dis, combien l'absence, même d'un jour, Attriste et attise l'amour Et le réveille, en ses brûlures endormies."
+    },
+    {
+      "id": "s21-6",
+      "sceneId": "s21",
+      "text": "Je m'en vais au devant de ceux Qui reviennent des lointains merveilleux, Où, dès l'aube, tu es allée; Je m'assieds sous un arbre, au détour de l'allée,"
+    },
+    {
+      "id": "s21-7",
+      "sceneId": "s21",
+      "text": "Et, sur la route, épiant leur venue, Je regarde et regarde, avec ferveur, leurs yeux Encore clairs de t'avoir vue."
+    },
+    {
+      "id": "s21-8",
+      "sceneId": "s21",
+      "text": "Et je voudrais baiser leurs doigts qui t'ont touchée, Et leur crier des mots qu'ils ne comprendraient pas, Et j'écoute longtemps se cadencer leurs pas Vers l'ombre, où les vieux soirs tiennent la nuit penchée."
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "Si loin de tout ce qui n'est pas nous-mêmes. Quel sang lustral ou quel baptême Baigne nos coeurs vers tout l'amour tendus?"
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "Joignant les mains, sans que l'on prie, Tendant les bras, sans que l'on crie, Mais adorant on ne sait quoi De plus lointain et de plus pur que soi, L'esprit fervent et ingénu, Dites, comme on se fond, comme on se vit dans l'inconnu."
+    },
+    {
+      "id": "s22-2",
+      "sceneId": "s22",
+      "text": "Comme on s'abîme en la présence De ces heures de suprême existence, Comme l'âme voudrait des cieux Pour y chercher de nouveaux dieux, Oh! l'angoissante et merveilleuse joie Et l'espérance audacieuse D'être, un jour, à travers la mort même, la proie De ces affres silencieuses."
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "Si rare et si frêle parfois Qu'il nous fait peur!"
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "Nous avons beau taire nos voix, Et nous faire comme une tente, Avec toute ta chevelure, Pour nous créer un abri sûr, Souvent l'angoisse en nos âmes fermente."
+    },
+    {
+      "id": "s23-2",
+      "sceneId": "s23",
+      "text": "Mais notre amour étant comme un ange à genoux, Prie et supplie, Que l'avenir donne à d'autres que nous Même tendresse et même vie, Pour que leur sort de notre sort ne soit jaloux."
+    },
+    {
+      "id": "s23-3",
+      "sceneId": "s23",
+      "text": "Et puis, aux jours mauvais, quand les grands soirs Illimitent, jusques au ciel, le désespoir, Nous demandons pardon à la nuit qui s'enflamme De la douceur de notre âme."
+    },
+    {
+      "id": "s23-4",
+      "sceneId": "s23",
+      "text": "Vivons, dans notre amour et notre ardeur, Vivons si hardiment nos plus belles pensées Qu'elles s'entrelacent, harmonisées A l'extase suprême et l'entière ferveur."
+    },
+    {
+      "id": "s23-5",
+      "sceneId": "s23",
+      "text": "Parce qu'en nos âmes pareilles, Quelque chose de plus sacré que nous Et de plus pur et de plus grand s'éveille, Joignons les mains pour l'adorer à travers nous."
+    },
+    {
+      "id": "s23-6",
+      "sceneId": "s23",
+      "text": "Il n'importe que nous n'ayons que cris ou larmes Pour humblement le définir, Et que si rare et si puissant en soit le charme, Qu'à le goûter, nos coeurs soient prêts à défaillir."
+    },
+    {
+      "id": "s23-7",
+      "sceneId": "s23",
+      "text": "Restons quand même et pour toujours, les fous De cet amour presqu'implacable, Et les fervents, à deux genoux, Du Dieu soudain qui règne en nous, Si violent et si ardemment doux Qu'il nous fait mal et nous accable."
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "Nous nous sentons tant plus clairs de nous-mêmes Que l'on dirait des Dieux qui s'aiment Et qui s'unissent en nous-mêmes;"
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "Nous nous sentons le coeur si divinement frais Et si renouvelé par leur lumière Première Que l'univers, sous leur clarté, nous apparaît."
+    },
+    {
+      "id": "s24-2",
+      "sceneId": "s24",
+      "text": "La joie est à nos yeux l'unique fleur du monde Qui se prodigue et se féconde, Innombrable, sur nos routes d'en bas; Comme là haut, par tas, En des pays de soie où voyagent des voiles Brille la fleur myriadaire des étoiles."
+    },
+    {
+      "id": "s24-3",
+      "sceneId": "s24",
+      "text": "L'ordre nous éblouit, comme les feux, la cendre, Tout nous éclaire et nous paraît: flambeau; Nos plus simples mots ont un sens si beau Que nous les répétons pour les sans cesse entendre."
+    },
+    {
+      "id": "s24-4",
+      "sceneId": "s24",
+      "text": "Nous sommes les victorieux sublimes Qui conquérons l'éternité, Sans nul orgueil et sans songer au temps minime: Et notre amour nous semble avoir toujours été."
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Si profonde qu'elle en est sainte Et qu'à travers le corps même, l'amour soit clair, Nous descendons ensemble au jardin de ta chair."
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "Tes seins sont là, ainsi que des offrandes, Et tes deux mains me sont tendues; Et rien ne vaut la naïve provende Des paroles dites et entendues."
+    },
+    {
+      "id": "s25-2",
+      "sceneId": "s25",
+      "text": "L'ombre des rameaux blancs voyage Parmi ta gorge et ton visage Et tes cheveux dénouent leur floraison, En guirlandes, sur les gazons."
+    },
+    {
+      "id": "s25-3",
+      "sceneId": "s25",
+      "text": "La nuit est toute d'argent bleu, La nuit est un beau lit silencieux, La nuit douce, dont les brises vont, une à une, Effeuiller les grands lys dardés au clair de lune."
+    },
+    {
+      "id": "s25-4",
+      "sceneId": "s25",
+      "text": "Bien que déjà, ce soir, L'automne Laisse aux sentes et aux orées, Comme des mains dorées, Lentes, les feuilles choir; Bien que déjà l'automne, Ce soir, avec ses bras de vent, Moissonne Sur les rosiers fervents, Les pétales et leur pâleur, Ne laissons rien de nos deux âmes Tomber soudain avec ces fleurs."
+    },
+    {
+      "id": "s25-5",
+      "sceneId": "s25",
+      "text": "Mais tous les deux autour des flammes De l'âtre en or du souvenir, Mais tous les deux blottissons-nous, Les mains au feu et les genoux."
+    },
+    {
+      "id": "s25-6",
+      "sceneId": "s25",
+      "text": "Contre les deuils à craindre ou à venir, Contre le temps qui fixe à toute ardeur sa fin, Contre notre terreur, contre nous-mêmes, enfin, Blottissons-nous, près du foyer, Que la mémoire en nous fait flamboyer."
+    },
+    {
+      "id": "s25-7",
+      "sceneId": "s25",
+      "text": "Et si l'automne obère A grands pans d'ombre et d'orages plânants, Les bois, les pelouses et les étangs, Que sa douleur du moins n'altère L'intérieur jardin tranquillisé, Où s'unissent, dans la lumière, Les pas égaux de nos pensées."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "N'est rien que l'aboutissement De deux tendresses entraînées L'une vers l'autre, éperdûment."
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "Tu n'es heureuse de ta chair Si simple, en sa beauté natale, Que pour, avec ferveur, m'en faire L'offre complète et l'aumône totale."
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "Et je me donne à toi, ne sachant rien Sinon que je m'exalte à te connaître, Toujours meilleure et plus pure peut-être Depuis que ton doux corps offrit sa fête au mien."
+    },
+    {
+      "id": "s26-3",
+      "sceneId": "s26",
+      "text": "L'amour, oh! qu'il nous soit la clairvoyance Unique, et l'unique raison du coeur, A nous, dont le plus fol bonheur Est d'être fous de confiance."
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Une pensée, une joie, une promesse, Qui n'allât, d'elle-même, au devant de nos pas?"
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "Fût-il une prière en secret entendue, Dont nous n'ayons serré les mains tendues Avec douceur, sur notre sein?"
+    },
+    {
+      "id": "s27-2",
+      "sceneId": "s27",
+      "text": "Fût-il un seul appel, un seul dessein, Un voeu tranquille ou violent Dont nous n'ayons épanoui l'élan?"
+    },
+    {
+      "id": "s27-3",
+      "sceneId": "s27",
+      "text": "Et, nous aimant ainsi, Nos coeurs s'en sont allés, tels des apôtres, Vers les doux coeurs timides et transis Des autres: Ils les ont conviés, par la pensée, A se sentir aux nôtres fiancés, A proclamer l'amour avec des ardeurs franches, Comme un peuple de fleurs aime la même branche Qui le suspend et le baigne dans le soleil; Et notre âme, comme agrandie, en cet éveil, S'est mise à célébrer tout ce qui aime, Magnifiant l'amour pour l'amour même, Et à chérir, divinement, d'un désir fou, Le monde entier qui se résume en nous."
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "Qui nous semblait le double ou le miroir, Du jardin clair que nous portions dans l'âme, Se cristallise en gel et or, ce soir."
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "Un grand silence blanc est descendu s'asseoir Là-bas, aux horizons de marbre, Vers où s'en vont, par défilés, les arbres Avec leur ombre immense et bleue Et régulière, à côté d'eux."
+    },
+    {
+      "id": "s28-2",
+      "sceneId": "s28",
+      "text": "Aucun souffle de vent, aucune haleine. Les grands voiles du froid, Se déplient seuls, de plaine en plaine, Sur des marais d'argent ou des routes en croix."
+    },
+    {
+      "id": "s28-3",
+      "sceneId": "s28",
+      "text": "Les étoiles paraissent vivre. Comme l'acier, brille le givre, A travers l'air translucide et glacé. De clairs métaux pulvérisés A l'infini, semblent neiger De la pâleur d'une lune de cuivre. Tout est scintillement dans l'immobilité."
+    },
+    {
+      "id": "s28-4",
+      "sceneId": "s28",
+      "text": "Et c'est l'heure divine, où l'esprit est hanté Par ces mille regards que projette sur terre, Vers les hasards de l'humaine misère, La bonne et pure et inchangeable éternité."
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "Que nous soyons, sans le savoir, Souffrance ou peine ou désespoir, L'un pour l'autre; s'il se faisait Que la fatigue ou le banal plaisir Détendissent en nous l'arc d'or du haut désir; Si le cristal de la pure pensée De notre amour doit se briser,"
+    },
+    {
+      "id": "s29-1",
+      "sceneId": "s29",
+      "text": "Si malgré tout, je me sentais Vaincu pour n'avoir pas été Assez en proie à la divine immensité De la bonté; Alors, oh! serrons-nous comme deux fous sublimes Qui sous les cieux cassés, se cramponnent aux cimes Quand même.--Et d'un unique essor L'âme en soleil, s'exaltent dans la mort."
+    },
+    {
+      "id": "s29-2",
+      "sceneId": "s29",
+      "text": "End of the Project Gutenberg EBook of Les Heures Claires, by Emile Verhaeren"
+    }
+  ]
+}
