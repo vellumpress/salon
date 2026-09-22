@@ -13,6 +13,8 @@ import { appEnvPlugin } from "./scripts/app-env-plugin.mjs";
 import { isMigrationFile } from "./scripts/migration-plan.mjs";
 // @ts-expect-error JS helper alongside the TS vite config
 import { writeSpa404Html } from "./scripts/spa-pages-fallback.mjs";
+// @ts-expect-error JS plugin alongside the TS vite config
+import { ssrMatchIdNulPlugin } from "./scripts/ssr-nul.mjs";
 
 /** The files `src/lib/db.ts` globs — same directory, same non-recursive scope. */
 function hasGlobbedMigrations(root: string): boolean {
@@ -180,6 +182,8 @@ export default defineConfig(({ command, isPreview }) => {
     },
     resolve: { tsconfigPaths: true },
     plugins: [
+      // Before prerender: match ids must not dehydrate "/" as a raw NUL.
+      ssrMatchIdNulPlugin(),
       pgliteBootstrapPlugin(),
       // Before tanstackStart so /auth/popup never falls through to the SPA.
       authPopupPlugin(),

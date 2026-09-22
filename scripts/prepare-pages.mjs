@@ -17,6 +17,7 @@ import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { applySpaPagesFallback } from "./spa-pages-fallback.mjs";
+import { applyPagesHtmlSafety } from "./ssr-nul.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dest = join(root, "dist");
@@ -65,5 +66,9 @@ if (!existsSync(join(dest, "index.html"))) {
   copyFileSync(shell, join(dest, "index.html"));
 }
 applySpaPagesFallback(dest);
+const safety = applyPagesHtmlSafety(dest);
 writeFileSync(join(dest, ".nojekyll"), "");
+console.log(
+  `[prepare-pages] html files=${safety.files} nul-bytes-removed=${safety.removed}`,
+);
 console.log("[prepare-pages] ready");
