@@ -738,7 +738,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "trial": `Franz Kafka’s 1925 novel The Trial. Sit with the world a moment before the first breath.`,
   "tristana": `Benito Pérez Galdós’s 1892 novel Tristana. Sit with the world a moment before the first breath.`,
   "trooper-peter-halket": `A lone Chartered Company trooper on a Mashonaland kopje, fire quivering, inventing gold companies in the dark after losing his column. Written in 1897, the open already frames colonial scouting; missionary and racial language harden after Salon stops—before the stranger arrives. We cut there so the sit stays a night watch, not a sermon. If you Host further, name that colonial frame up front.`,
-  "trooper-peter-halket-of-mashonaland": `Trooper Peter Halket of Mashonaland (1897): Karoo sky, farm religion, and children who will not convert. Sit with the world a moment before the first breath.`,
+  "trooper-peter-halket-of-mashonaland": `A lone trooper sits by a quivering fire on a Mashonaland kopje. Open Chapter I; this bind is the full novel.`,
   "twelve-stories-and-a-dream": `More Wells: inventions, hauntings, and the scientific romance in short. Enter one room at a time.`,
   "twenty-six-and-one-and-other-stories": `Twenty-six and One and Other Stories (1902): a man afraid, in a Russia that does not offer a soft job. Enter one room at a time.`,
   "twice-told-tales": `Hawthorne’s New England allegories, told as if they were news. Enter one room at a time.`,

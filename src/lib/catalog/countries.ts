@@ -111,6 +111,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Sherwood Anderson",
     "Sinclair Lewis",
     "Stephen Crane",
+    "Stephen Vincent Benét",
     "Sutton E. Griggs",
     "T. S. Stribling",
     "Theodore Dreiser",
@@ -220,7 +221,11 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Sarah Grand",
     "W. B. Yeats",
   ],
-  Scotland: ["Norman Douglas", "Robert Louis Stevenson"],
+  Scotland: [
+    "Norman Douglas",
+    "Robert Louis Stevenson",
+    "Robert Louis Stevenson; Fanny Van de Grift Stevenson",
+  ],
   Wales: ["Arthur Machen"],
   France: [
     "Alain-Fournier",
@@ -255,6 +260,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Stendhal",
     "Tristan Corbière",
     "Victor Hugo",
+    "Voltaire",
     "Villiers de l'Isle-Adam",
     "Émile Nolly",
     "Émile Zola",
