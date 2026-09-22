@@ -1472,8 +1472,9 @@ test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
     "quicksand",
     "botchan",
   ]);
-  assert.equal(forYou!.workIds.at(-2), "there-is-confusion");
-  assert.equal(forYou!.workIds.at(-1), "miss-lulu-bett");
+  assert.equal(forYou!.workIds.at(-3), "there-is-confusion");
+  assert.equal(forYou!.workIds.at(-2), "miss-lulu-bett");
+  assert.equal(forYou!.workIds.at(-1), "seven-brothers");
   assert.equal(sleep!.workIds[0], "quicksand");
 });
 
