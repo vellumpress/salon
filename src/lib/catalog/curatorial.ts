@@ -112,9 +112,10 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * not FR 13525) on before-sleep. Lady into Fox is Rituals only. Seven Brothers
  * (Matson EN 79566) is For you only — not Next. Cold-open stays
  * Mirth → Quicksand → Botchan.
- * Generosity (Amber Later, 2026) is an original contemporary bind — rights
- * Vellum, not Gutenberg. Recommend For you only — not Next, never Featured.
- * Cold-open stays Mirth → Quicksand → Botchan.
+ * Generosity (Amber Later, 2026) is the Mira CLEAR local manuscript — rights
+ * Vellum, no Project Gutenberg id. Recommend For you only — not Next, never Featured.
+ * Story through I'm sorry, then Poem I–VII. Cold-open stays
+ * Mirth → Quicksand → Botchan.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
