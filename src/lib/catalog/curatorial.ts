@@ -107,6 +107,11 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Mirth → Quicksand → Botchan. No Project Gutenberg ids. Anandamath is the
  * 1906 Abbey of Bliss, not Poison Tree. Conference of the Birds is FitzGerald’s
  * abridged Bird Parliament. Lady Macbeth hosts the one Chamot tale.
+ * Mira 8AM CLEAR ×5 (Sep 22) — Recommend only, never Featured. Gentlemen Prefer
+ * Blondes leads Next with Of One Blood and Maria Chapdelaine (Blake EN 4383,
+ * not FR 13525) on before-sleep. Lady into Fox is Rituals only. Seven Brothers
+ * (Matson EN 79566) is For you only — not Next. Cold-open stays
+ * Mirth → Quicksand → Botchan.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -344,7 +349,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "faust-part-i",
   "the-divine-comedy",
   "eugene-onegin",
-  "seven-brothers",
   "gilgamesh",
   "bontshe-the-silent",
   "shahnameh",
@@ -410,6 +414,10 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "lady-macbeth",
   "layla",
   "conference",
+  // Mira 8AM CLEAR ×5 — after EXTRACTABLE-8. Never Featured. Gentlemen leads Next.
+  "gentlemen-prefer-blondes",
+  "of-one-blood",
+  "maria-chapdelaine",
 ] as const;
 
 /**

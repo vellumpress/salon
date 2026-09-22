@@ -603,6 +603,14 @@ const BLURBS: Record<string, string> = {
   "the-sport-of-the-gods": "A Black family north to New York, and the city that was supposed to be better.",
   "iola-leroy": "A woman of mixed race after the war, choosing a people instead of a pass.",
   "of-one-blood": "Hopkins’ Boston and Meroe: a mystery of race that goes underground.",
+  "gentlemen-prefer-blondes":
+    "March 16th at the Ritz — Lorelei’s diary opens on diamonds, brains, and the joke that starts the sit.",
+  "lady-into-fox":
+    "Wonderful events are irregular — then Mrs. Tebrick’s change into a vixen is an established fact.",
+  "maria-chapdelaine":
+    "Péribonka church door on the snow road — Blake’s English of Hémon’s Quebec winter.",
+  "seven-brothers":
+    "Jukola Farm on the Häme slope: seven brothers, Matson’s English, no translator’s Preface.",
   "imperium-in-imperio": "Griggs’ secret Black nation inside the United States — a political thought-experiment.",
   cane: "Karintha at Georgia dusk: her skin is like dusk on the eastern horizon.",
   "nacha-regules":

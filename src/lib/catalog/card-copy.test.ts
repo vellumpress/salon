@@ -1848,7 +1848,6 @@ const TIER_B_BATCH_7_8 = [
   "kristin",
   "lamia",
   "leaves-of-grass",
-  "maria-chapdelaine",
   "mashi-and-other-stories",
   "more-translations-from-the-chinese",
   "omoo",
@@ -1879,7 +1878,7 @@ const TIER_B_BATCH_7_8 = [
 ] as const;
 
 test("Tier B batches 7–8 are local format-min binds, never Featured", () => {
-  assert.equal(TIER_B_BATCH_7_8.length, 40);
+  assert.equal(TIER_B_BATCH_7_8.length, 39);
   assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
     "the-house-of-mirth",
     "quicksand",
@@ -1939,7 +1938,6 @@ const TIER_B_BATCH_3_4 = [
   "mrs-craddock",
   "my-brilliant-career",
   "nostromo",
-  "of-one-blood",
   "options",
   "rio-grande-s-last-race-and-other-verses",
   "such-is-life",
@@ -1953,7 +1951,7 @@ const TIER_B_BATCH_3_4 = [
 ] as const;
 
 test("Tier B batches 3–4 are local format-min binds, never Featured", () => {
-  assert.equal(TIER_B_BATCH_3_4.length, 44);
+  assert.equal(TIER_B_BATCH_3_4.length, 43);
   assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
     "the-house-of-mirth",
     "quicksand",

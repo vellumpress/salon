@@ -299,7 +299,6 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "faust-part-i",
     "the-divine-comedy",
     "eugene-onegin",
-    "seven-brothers",
     "gilgamesh",
     "bontshe-the-silent",
     "shahnameh",
@@ -362,6 +361,9 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "lady-macbeth",
     "layla",
     "conference",
+    "gentlemen-prefer-blondes",
+    "of-one-blood",
+    "maria-chapdelaine",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1733,7 +1735,6 @@ test("BATCH-13 CLEAR inventory binds are local Next / before-sleep sits, never F
     "faust-part-i": { opening: "Again ye come, ye hovering Forms! I find ye, As early to my clouded sight ye shone! Shall I attempt,", breaths: 1453, scenes: 28, gutenberg: 14591 },
     "the-divine-comedy": { opening: "Midway upon the journey of our life I found myself within a forest dark, For the straightforward pat", breaths: 4821, scenes: 100, gutenberg: 1004 },
     "eugene-onegin": { opening: "“My uncle’s goodness is extreme, If seriously he hath disease; He hath acquired the world’s esteem A", breaths: 530, scenes: 8, gutenberg: 23997 },
-    "seven-brothers": { opening: "Jukola Farm, in the south of the province of Häme, stands on the northern slope of a hill, near the", breaths: 2691, scenes: 14, gutenberg: 79566 },
     "gilgamesh": { opening: "Gish sought to interpret the dream; Spoke to his mother: \"My mother, during my night I became strong", breaths: 416, scenes: 8, gutenberg: 11000 },
     "bontshe-the-silent": { opening: "Down here, in *this* world, Bontzye Shweig's death made no impression at all. Ask anyone you like wh", breaths: 99, scenes: 1, gutenberg: 37242 },
     "shahnameh": { opening: "O ye, who dwell in Youth's inviting bowers, Waste not, in useless joy, your fleeting hours, But rath", breaths: 118, scenes: 3, gutenberg: 10315 },
@@ -1748,7 +1749,7 @@ test("BATCH-13 CLEAR inventory binds are local Next / before-sleep sits, never F
   const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
   assert.ok(sleep);
   assert.ok(forYou);
-  assert.equal(Object.keys(expect).length, 13);
+  assert.equal(Object.keys(expect).length, 12);
   assert.deepEqual(forYou.workIds.slice(0, 3), [
     "the-house-of-mirth",
     "quicksand",
@@ -2063,6 +2064,128 @@ test("EXTRACTABLE-8 CLEAR inventory binds are local Next / before-sleep sits, ne
   const abbey = SHELF.find((item) => item.id === "anandamath");
   assert.match(abbey?.title ?? "", /Abbey of Bliss/);
   assert.equal(abbey?.year, 1906);
+});
+
+test("Mira 8AM CLEAR ×5 are Recommend-only local binds, never Featured", () => {
+  const nextExpect = {
+    "gentlemen-prefer-blondes": {
+      opening: "March 16th:",
+      breaths: 280,
+      scenes: 6,
+      gutenberg: 66829,
+      scene: "Chapter I",
+    },
+    "of-one-blood": {
+      opening:
+        "The recitations were over for the day. It was the first week in November and it had rained about eve",
+      breaths: 1079,
+      scenes: 24,
+      gutenberg: 69255,
+      scene: "Chapter I",
+    },
+    "maria-chapdelaine": {
+      opening:
+        "The door opened, and the men of the congregation began to come out of the church at Peribonka.",
+      breaths: 749,
+      scenes: 16,
+      gutenberg: 4383,
+      scene: "Chapter I",
+    },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const waking = RITUAL_LANES.find((item) => item.id === "waking-up");
+  const walk = RITUAL_LANES.find((item) => item.id === "on-a-walk");
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(sleep);
+  assert.ok(forYou);
+  assert.ok(waking);
+  assert.ok(walk);
+  assert.deepEqual(forYou.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  assert.equal(sleep.workIds[0], "quicksand");
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("gentlemen-prefer-blondes"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("lady-into-fox"), false);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("seven-brothers"), false);
+  assert.equal(next.includes("lady-into-fox"), false);
+  assert.equal(next.includes("seven-brothers"), false);
+  assert.equal(forYou.workIds.includes("lady-into-fox"), false);
+  assert.equal(forYou.workIds.includes("gentlemen-prefer-blondes"), false);
+  assert.equal(forYou.workIds.includes("seven-brothers"), true);
+  assert.equal(curatorialTrack("seven-brothers"), "later");
+  assert.equal(curatorialTrack("lady-into-fox"), "later");
+  assert.ok(waking.workIds.includes("seven-brothers"));
+  assert.ok(walk.workIds.includes("seven-brothers"));
+  assert.equal(sleep.workIds.includes("seven-brothers"), false);
+  assert.ok(sleep.workIds.includes("lady-into-fox"));
+  let prev = next.indexOf("conference");
+  assert.ok(prev > next.indexOf("all-quiet-on-the-western-front"));
+  let sleepAt = sleep.workIds.indexOf("conference");
+  assert.ok(sleepAt > sleep.workIds.indexOf("all-quiet-on-the-western-front"));
+  for (const [id, want] of Object.entries(nextExpect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.opening, want.opening, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.equal(work!.language, "English", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "next", id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(forYou!.workIds.includes(id), false, id);
+    const at = next.indexOf(id);
+    assert.ok(at > prev, `${id} follows EXTRACTABLE-8 on Next`);
+    prev = at;
+    const sit = sleep!.workIds.indexOf(id);
+    assert.ok(sit > sleepAt, `${id} follows EXTRACTABLE-8 on before-sleep`);
+    sleepAt = sit;
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: { title: string }[];
+      breaths: { text: string }[];
+      note?: string;
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.ok(full.breaths.length >= 3, id);
+    assert.equal(full.scenes[0]?.title, want.scene, id);
+    assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
+    assert.equal(JSON.stringify(full).includes("gutenberg.org"), false, id);
+  }
+  assert.equal(next.indexOf("gentlemen-prefer-blondes") < next.indexOf("of-one-blood"), true);
+  assert.equal(next.indexOf("of-one-blood") < next.indexOf("maria-chapdelaine"), true);
+  const maria = SHELF.find((item) => item.id === "maria-chapdelaine");
+  assert.equal(maria?.gutenberg, 4383);
+  assert.match(maria?.author ?? "", /Blake/);
+  assert.equal(maria?.language, "English");
+  const fox = SHELF.find((item) => item.id === "lady-into-fox");
+  assert.ok(fox);
+  assert.equal(fox!.local, true);
+  assert.equal(fox!.gutenberg, 10337);
+  assert.equal(fox!.breaths, 289);
+  assert.equal(fox!.opening, "Wonderful or supernatural events are not so uncommon, rather they are irregular in their incidence. ");
+  const foxFull = JSON.parse(readFileSync(new URL("./texts/lady-into-fox.json", import.meta.url), "utf8")) as {
+    scenes: unknown[];
+    breaths: { text: string }[];
+  };
+  assert.equal(foxFull.scenes.length, 8);
+  assert.equal(foxFull.breaths.length, 289);
+  assert.ok(foxFull.breaths[0]?.text.startsWith(fox!.opening ?? ""));
+  const brothers = SHELF.find((item) => item.id === "seven-brothers");
+  assert.ok(brothers);
+  assert.equal(brothers!.gutenberg, 79566);
+  assert.equal(brothers!.breaths, 2693);
+  assert.match(brothers!.author, /Matson/);
+  const brothersFull = JSON.parse(
+    readFileSync(new URL("./texts/seven-brothers.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.equal(brothersFull.breaths.length, 2693);
+  assert.ok(brothersFull.breaths[0]?.text.startsWith(brothers!.opening ?? ""));
 });
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {
