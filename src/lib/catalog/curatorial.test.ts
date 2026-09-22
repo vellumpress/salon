@@ -221,7 +221,7 @@ test("Adapted by Salon remakes are their own track — never locked recommend or
 test("The Attendant’s Confession is a local before-sleep bind on Next", () => {
   const work = SHELF.find((item) => item.id === "attendants-confession");
   assert.ok(work);
-  assert.equal(work.year, 1881);
+  assert.equal(work.year, 1907);
   assert.equal(work.local, true);
   assert.equal(work.gutenberg, 21040);
   assert.equal(isBoundLocal(work), true);
@@ -325,7 +325,7 @@ test("On a Chinese Screen is a local waking bind on Next", () => {
   assert.equal(work.local, true);
   assert.equal(work.gutenberg, 48788);
   assert.equal(isBoundLocal(work), true);
-  assert.match(work.opening ?? "", /^"I really think I can make something of it," she said/);
+  assert.match(work.opening ?? "", /^You come to the row of hovels/);
   const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
   assert.ok(lane?.workIds.includes("on-a-chinese-screen"));
   assert.equal(
@@ -345,7 +345,7 @@ test("Futility is a local waking bind on Next", () => {
   assert.equal(work.local, true);
   assert.equal(work.gutenberg, 77253);
   assert.equal(isBoundLocal(work), true);
-  assert.match(work.opening ?? "", /^It was somewhat in the manner of an Ibsen drama/);
+  assert.match(work.opening ?? "", /^And then it struck me that the only thing to do was to fit all this into a book/);
   const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
   assert.ok(lane?.workIds.includes("futility"));
   assert.equal(
@@ -358,9 +358,9 @@ test("Futility is a local waking bind on Next", () => {
 test("The Poison Tree is a local unwind bind on Later, not Next", () => {
   const work = SHELF.find((item) => item.id === "poison-tree");
   assert.ok(work);
-  assert.equal(work.year, 1884);
+  assert.equal(work.year, 1873);
   assert.equal(work.title, "The Poison Tree");
-  assert.equal(work.author, "Bankim Chandra Chatterjee (tr. Miriam S. Knight)");
+  assert.equal(work.author, "Bankim Chandra Chatterjee");
   assert.equal(work.local, true);
   assert.equal(work.gutenberg, 17455);
   assert.equal(isBoundLocal(work), true);

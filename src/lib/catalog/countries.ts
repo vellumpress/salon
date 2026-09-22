@@ -542,6 +542,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "some-chinese-ghosts": "China",
   "in-ghostly-japan": "Japan",
   shadowings: "Japan",
+  "the-romance-of-the-milky-way": "Japan",
   // McKay
   banjo: "France",
   "harlem-shadows": "United States",

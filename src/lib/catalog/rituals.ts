@@ -174,9 +174,23 @@ export const RITUAL_PITCHES: Record<string, string> = {
   vera:
     `Cornwall, noon heat, a garden gate, and a daughter who has lost everything—and feels nothing yet. Same author as Enchanted April, colder register. Wemyss intensifies later; this open stays clean emptiness.`,
   "on-a-chinese-screen":
-    `She takes a holy temple and papers it into Cheltenham—blue curtains for her eyes, pink stripes, an American stove where the Buddha sat.`,
+    `You come to the row of hovels that leads to the gate of the city. Maugham’s On a Chinese Screen opens on The Rising of the Curtain.`,
   futility:
-    `Three sisters spring out of a wooden dacha above the sea and introduce themselves in order of age—then the samovar household rearranges what “mother” means.`,
+    `And then it struck me that the only thing to do was to fit all this into a book. Gerhardie’s Futility opens on Part I · I — the preface stays off the sit.`,
+  "songs-and-satires":
+    `I have known the silence of the stars and of the sea. Masters’ Songs and Satires opens on Silence — a few poems, not the whole book at once.`,
+  "the-three-taverns":
+    `There were faces to remember in the Valley of the Shadow. Robinson’s The Three Taverns opens on that poem.`,
+  "a-diversity-of-creatures":
+    `MacDonough’s Song, then As Easy as ABC. Kipling’s A Diversity of Creatures — Host one story, not the whole volume.`,
+  "the-town-down-the-river":
+    `Said the Watcher by the Way to the young and the unladen. Robinson’s The Town Down the River opens on the title poem.`,
+  "prosas-profanas":
+    `ERA un aire suave, de pausados giros. Darío’s Prosas Profanas opens on Era Un Aire Suave — a few poems, not the whole book at once.`,
+  "the-romance-of-the-milky-way":
+    `Of old it was said: the River of Heaven is the Ghost of Waters. Hearn opens on The Romance of the Milky Way — one study, not the whole book.`,
+  "the-comedienne":
+    `Bukowiec, a station on the Dombrowa railroad, lies in a beautiful spot. Reymont’s The Comedienne opens on Chapter I.`,
   "poison-tree":
     `His wife makes him promise: if a storm rises, leave the boat. On the Ganges in Joisto, the weather keeps that promise.`,
   "trooper-peter-halket":
@@ -357,6 +371,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-house-of-souls",
       "wallpaper",
       "silhouettes",
+      "songs-and-satires",
+      "the-three-taverns",
+      "a-diversity-of-creatures",
+      "the-town-down-the-river",
+      "prosas-profanas",
+      "the-romance-of-the-milky-way",
+      "the-comedienne",
     ],
   },
   {
@@ -481,6 +502,13 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "on-a-chinese-screen": 5,
   futility: 4,
   "poison-tree": 5,
+  "songs-and-satires": 5,
+  "the-three-taverns": 5,
+  "a-diversity-of-creatures": 5,
+  "the-town-down-the-river": 5,
+  "prosas-profanas": 5,
+  "the-romance-of-the-milky-way": 5,
+  "the-comedienne": 5,
   "trooper-peter-halket": 4,
   "the-home-and-the-world": 2,
   "where-angels-fear-to-tread": 2,

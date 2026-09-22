@@ -3,72 +3,16 @@
   "title": "Rashōmon",
   "author": "Ryūnosuke Akutagawa",
   "year": "1915",
-  "note": "Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate. Akutagawa’s Kyoto opens on desolation before the crime story blooms.\n\n“Rashōmon” (Akutagawa; EN PG 78105). Sentence-case English, not Hearn. The before-sleep sit ends at “besides this single man, there was no one.” — continue for the whole story.",
-  "minutes": 14,
+  "note": "Project Gutenberg 78105",
+  "minutes": 73,
   "cover": "",
   "coverAlt": "",
   "scenes": [
     {
       "id": "s0",
-      "title": "Evening under Rashōmon",
-      "place": "one sitting",
-      "reentry": "It was evening.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s1",
-      "title": "The calamity years",
-      "place": "The calamity years",
-      "reentry": "This was because for the past two or three years in Kyōto one calamity after another--earthquakes, cyclones, fires and famines--had followed each other in rapid succession.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s2",
-      "title": "Nowhere to go",
-      "place": "Nowhere to go",
-      "reentry": "I have said that he was waiting for the rain to clear.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s3",
-      "title": "The ladder",
-      "place": "The ladder",
-      "reentry": "He sneezed a great sneeze and then got up laboriously.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s4",
-      "title": "The loft",
-      "place": "The loft",
-      "reentry": "He peered, and the loft, as rumor had it, was full of corpses flung carelessly away, but, the circle illuminated by the light being smaller than had at first seemed apparent, he was not able to judge how many there might be.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s5",
-      "title": "A living mortal",
-      "place": "A living mortal",
-      "reentry": "For the first time he had just caught sight of a living mortal squatting down among the dead.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s6",
-      "title": "What are you up to",
-      "place": "What are you up to",
-      "reentry": "So, bracing his two feet firmly, he suddenly sprang from the ladder up into the room.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s7",
-      "title": "Wigs",
-      "place": "Wigs",
-      "reentry": "“I’m pulling out hair, pulling out this woman’s hair, because I’m going to make wigs.”",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s8",
-      "title": "Into the night",
-      "place": "Into the night",
-      "reentry": "Then advancing one step forward, he suddenly removed his right hand from his carbuncle and, seizing the hag by the collar, said, “Then I guess you won’t blame me for turning highwayman, will you?",
+      "title": "Rashōmon",
+      "place": "Rashōmon",
+      "reentry": "It was evening. A solitary lackey sat under Rashōmon waiting for the rain to clear.",
       "prompt": "A word from this stretch."
     }
   ],
@@ -76,757 +20,622 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "It was evening."
+      "text": "It was evening. A solitary lackey sat under Rashōmon waiting for the rain to clear."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "A solitary lackey sat under Rashōmon waiting for the rain to clear."
+      "text": "Beneath the broad gate, there was not another soul. Only, on a big round pillar, from which the vermilion lacquer had peeled off here and there, sat one lone cricket. Since Rashōmon was in the great thoroughfare Sujaku Ōji, it would seem that there should also have been two or three tradeswomen in wide straw hats and men in citizen’s caps sheltering there from the rain. All the same, besides this single man, there was no one."
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "Beneath the broad gate, there was not another soul."
+      "text": "This was because for the past two or three years in Kyōto one calamity after another--earthquakes, cyclones, fires and famines--had followed each other in rapid succession. Wherefore, throughout the capital the desolation was extraordinary. According to the old records, things had come to such a pass that Buddhist images and temple furniture were broken up and, with their red lacquer and gold and silver foil clinging to them, were heaped along the streets and sold for fire wood. With the whole town in such a state, of course no one took the least thought for the upkeep of Rashōmon. So turning its abandonment to their profit, foxes and badgers found habitation there. Thieves abode there. And finally it even became a custom with men to bring unclaimed bodies there and leave them in the gate. Whence, when day had closed his eye, the place was abhorred of all, and no man would set foot in the neighborhood."
     },
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "Only, on a big round pillar, from which the vermilion lacquer had peeled off here and there, sat one lone cricket."
+      "text": "Instead, swarms of ravens from nobody knows where congregated there. By day the innumerable rout described a circle and wheeled crying about the ornamental grampuses high on the roof. Especially when the sky above the gate was aflare with the sunset glow, did they stand out distinctly like a scattering of sesamum seeds. Of course, they were there to pick the flesh from the corpses up in the gate. However, on this day, perhaps because of the lateness of the hour, not a bird was to be seen. Only here and there on the crumbling stone steps, where grass grew long in the crevices, their droppings shone in white splashes. The lackey sat in a threadbare coat of dark blue on the topmost of the seven steps and, fingering a great carbuncle on his right cheek, looked vacantly at the falling rain."
     },
     {
       "id": "s0-4",
       "sceneId": "s0",
-      "text": "Since Rashōmon was in the great thoroughfare Sujaku Ōji, it would seem that there should also have been two or three tradeswomen in wide straw hats and men in citizen’s caps sheltering there from the rain."
+      "text": "I have said that he was waiting for the rain to clear. But even if it did clear, he had nothing in particular he wished to do. Ordinarily, of course, he must have gone back to his master’s house. But four or five days before, he had been turned out. As I have already said, Kyōto was in unprecedented decay. And the dismissal of this man by a master whom he had served for years was one small ripple on this sea of troubles. Wherefore, rather than that he was waiting for the rain to clear, it would be more to the point to say that, driven to shelter by the storm, this lackey who had no place to go was at a loss what to do. Besides, the gloomy sky that day had no small effect on the sentimentalism of this man of the Heian period. The rain, which had been falling since a little after the hour of the monkey, still showed no sign of letting up. So the servant sat following a rambling train of thought on the one vital and immediate question of how he could ever manage to live through the morrow--that is, how he could ever do the impossible--and listened listlessly to the long rain that kept pounding down in Sujaku Ōji."
     },
     {
       "id": "s0-5",
       "sceneId": "s0",
-      "text": "All the same, besides this single man, there was no one."
+      "text": "The rain, enveloping Rashōmon, mustered a rattling roar from afar. Darkness gradually lowered in the sky, and overhead the roof of the gate supported a heavy leaden cloud on a point of its obliquely projecting tiles."
     },
     {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "This was because for the past two or three years in Kyōto one calamity after another--earthquakes, cyclones, fires and famines--had followed each other in rapid succession."
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "For the accomplishment of the impossible, there was no time left in which to choose a plan. If he took time, he could but choose between starvation under some wall and starvation by some road. And then he would simply be brought to the loft in this gate and thrown away like a dog. If he did not choose,--again and again the man’s thoughts went over the same winding way and arrived finally at this same place. But no matter how often this “if” came up, it remained still in the end but “if.” Even though he did not choose any plan, yet he had not the courage to make the positive admission naturally necessary to the settlement of the “if,” that there was nothing for it but to turn thief."
     },
     {
-      "id": "s1-1",
-      "sceneId": "s1",
-      "text": "Wherefore, throughout the capital the desolation was extraordinary."
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "He sneezed a great sneeze and then got up laboriously. Night-chilled Kyōto was cold enough to suggest the comfort of a fire. The pitiless wind swept with the deepening darkness between the pillars of the gate. And the cricket that had clung to the red lacquer of one of them had disappeared."
     },
     {
-      "id": "s1-2",
-      "sceneId": "s1",
-      "text": "According to the old records, things had come to such a pass that Buddhist images and temple furniture were broken up and, with their red lacquer and gold and silver foil clinging to them, were heaped along the streets and sold for fire wood."
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Drawing in his neck and lifting his shoulders high in the bright yellow shirt which he wore under his dark blue coat, the lackey looked all about the gate. If he could find a place, out of the wind and rain and free from the gaze of men, where he could pass one night in peaceful sleep, there anyway, he fain would rest until the dawn. Then fortunately his eyes fell upon a wide ladder, likewise red, mounting up into the tower of the gate. Above, though there might be men, they were but dead men after all. Then, taking heed lest the great plain-handled sword swinging at his side should slip in its scabbard, he planted a straw-sandaled foot on the bottom step of the ladder."
     },
     {
-      "id": "s1-3",
-      "sceneId": "s1",
-      "text": "With the whole town in such a state, of course no one took the least thought for the upkeep of Rashōmon."
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "A few minutes elapsed. In the middle of the wide ladder leading to the tower of Rashōmon the man crouched like a cat and, holding his breath, took in the state of affairs above. A ray of light shining from the tower faintly illumined his right cheek. It was the cheek on which the festering red carbuncle gleamed in his short beard. He had lightly calculated from the first that everybody up there was dead. But when he had climbed up two or three steps, it appeared that not only had some one above struck a light but that he was moving it to and fro. This was at once made evident by the dull yellow gleam that danced in reflection on the cobwebs hanging in the corners of the ceiling. Whoever had struck this light in Rashōmon on this rainy night was surely no ordinary being!"
     },
     {
-      "id": "s1-4",
-      "sceneId": "s1",
-      "text": "So turning its abandonment to their profit, foxes and badgers found habitation there."
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "At last, stealing up with muffled steps like a gecko, the lackey, crouching, scaled the ladder to the topmost step. Then lying as flat as he could and craning his neck forward as far as it would go, he peered with dread into the loft."
     },
     {
-      "id": "s1-5",
-      "sceneId": "s1",
-      "text": "Thieves abode there."
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "He peered, and the loft, as rumor had it, was full of corpses flung carelessly away, but, the circle illuminated by the light being smaller than had at first seemed apparent, he was not able to judge how many there might be. Only, he could make out vaguely that there were among them both clothed and unclothed cadavers. Of course, men and women appeared all to be jumbled up together. And like so many dolls of kneaded clay, these bodies sprawled on the floor with open mouths and out-thrown arms in such confusion as to make one doubt even that they had once been living beings. Moreover, while the wan light played on their shoulders, breasts and more elevated parts, the shadows of their depressions were intensified, and they lay in silence like eternal mutes that had never known speech."
     },
     {
-      "id": "s1-6",
-      "sceneId": "s1",
-      "text": "And finally it even became a custom with men to bring unclaimed bodies there and leave them in the gate."
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "In the stench of decaying flesh, the lackey involuntarily covered his nose. But the next moment his hand had forgotten its work. Excess of feeling had almost completely deprived him of his olfactory sense."
     },
     {
-      "id": "s1-7",
-      "sceneId": "s1",
-      "text": "Whence, when day had closed his eye, the place was abhorred of all, and no man would set foot in the neighborhood."
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "For the first time he had just caught sight of a living mortal squatting down among the dead. It was a monkey-like old hag in a dark brown kimono, short, skinny and white-headed. With a blazing splinter of pine in her right hand, she was peering fixedly into the face of one of the corpses. From its long hair, it seemed to be the body of a woman."
     },
     {
-      "id": "s1-8",
-      "sceneId": "s1",
-      "text": "Instead, swarms of ravens from nobody knows where congregated there."
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "For a space, the lackey, moved by six parts of horror and four of curiosity, forgot even to breathe. To borrow the words of an old writer, he felt that “the hair on his head and body swelled.” Then sticking the pine splinter into a crack in the floor, the hag took the head at which she had been gazing and, just like an old monkey picking lice from its young, began to pull out the long hairs one by one. They seemed to yield to her pull."
     },
     {
-      "id": "s1-9",
-      "sceneId": "s1",
-      "text": "By day the innumerable rout described a circle and wheeled crying about the ornamental grampuses high on the roof."
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "With every hair that came out, the dread seemed to depart appreciably from the heart of the lackey. And at the same time, intense hatred of the old hag was little by little engendered. No, “of the old hag” may not be just the right words. Rather his antipathy to all evil grew stronger every minute. If some one at that time had broached afresh the question which this man had been considering under the gate a little while before, whether he should starve or turn thief, in all likelihood he would have unhesitatingly chosen starvation. Thus fiercely, like the splint of pine the old hag had stuck in the floor, blazed up this man’s detestation of evil."
     },
     {
-      "id": "s1-10",
-      "sceneId": "s1",
-      "text": "Especially when the sky above the gate was aflare with the sunset glow, did they stand out distinctly like a scattering of sesamum seeds."
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "The lackey, of course, did not know why the old hag was pulling out the hair of the dead. Consequently, he did not know, rationally, whether her conduct should be set down as good or evil. But to him the pulling of hair from the heads of the dead on that rainy night up in Rashōmon was, on the face of it, an unpardonable crime. Naturally he had already forgot that a little before he had had half a mind to turn thief himself."
     },
     {
-      "id": "s1-11",
-      "sceneId": "s1",
-      "text": "Of course, they were there to pick the flesh from the corpses up in the gate."
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "So, bracing his two feet firmly, he suddenly sprang from the ladder up into the room. Then, grasping the plain handle of his sword, he advanced with great strides up to the hag. Naturally she was startled out of her wits."
     },
     {
-      "id": "s1-12",
-      "sceneId": "s1",
-      "text": "However, on this day, perhaps because of the lateness of the hour, not a bird was to be seen."
-    },
-    {
-      "id": "s1-13",
-      "sceneId": "s1",
-      "text": "Only here and there on the crumbling stone steps, where grass grew long in the crevices, their droppings shone in white splashes."
-    },
-    {
-      "id": "s1-14",
-      "sceneId": "s1",
-      "text": "The lackey sat in a threadbare coat of dark blue on the topmost of the seven steps and, fingering a great carbuncle on his right cheek, looked vacantly at the falling rain."
-    },
-    {
-      "id": "s2-0",
-      "sceneId": "s2",
-      "text": "I have said that he was waiting for the rain to clear."
-    },
-    {
-      "id": "s2-1",
-      "sceneId": "s2",
-      "text": "But even if it did clear, he had nothing in particular he wished to do."
-    },
-    {
-      "id": "s2-2",
-      "sceneId": "s2",
-      "text": "Ordinarily, of course, he must have gone back to his master’s house."
-    },
-    {
-      "id": "s2-3",
-      "sceneId": "s2",
-      "text": "But four or five days before, he had been turned out."
-    },
-    {
-      "id": "s2-4",
-      "sceneId": "s2",
-      "text": "As I have already said, Kyōto was in unprecedented decay."
-    },
-    {
-      "id": "s2-5",
-      "sceneId": "s2",
-      "text": "And the dismissal of this man by a master whom he had served for years was one small ripple on this sea of troubles."
-    },
-    {
-      "id": "s2-6",
-      "sceneId": "s2",
-      "text": "Wherefore, rather than that he was waiting for the rain to clear, it would be more to the point to say that, driven to shelter by the storm, this lackey who had no place to go was at a loss what to do."
-    },
-    {
-      "id": "s2-7",
-      "sceneId": "s2",
-      "text": "Besides, the gloomy sky that day had no small effect on the sentimentalism of this man of the Heian period."
-    },
-    {
-      "id": "s2-8",
-      "sceneId": "s2",
-      "text": "The rain, which had been falling since a little after the hour of the monkey, still showed no sign of letting up."
-    },
-    {
-      "id": "s2-9",
-      "sceneId": "s2",
-      "text": "So the servant sat following a rambling train of thought on the one vital and immediate question of how he could ever manage to live through the morrow--that is, how he could ever do the impossible--and listened listlessly to the long rain that kept pounding down in Sujaku Ōji."
-    },
-    {
-      "id": "s2-10",
-      "sceneId": "s2",
-      "text": "The rain, enveloping Rashōmon, mustered a rattling roar from afar."
-    },
-    {
-      "id": "s2-11",
-      "sceneId": "s2",
-      "text": "Darkness gradually lowered in the sky, and overhead the roof of the gate supported a heavy leaden cloud on a point of its obliquely projecting tiles."
-    },
-    {
-      "id": "s2-12",
-      "sceneId": "s2",
-      "text": "For the accomplishment of the impossible, there was no time left in which to choose a plan."
-    },
-    {
-      "id": "s2-13",
-      "sceneId": "s2",
-      "text": "If he took time, he could but choose between starvation under some wall and starvation by some road."
-    },
-    {
-      "id": "s2-14",
-      "sceneId": "s2",
-      "text": "And then he would simply be brought to the loft in this gate and thrown away like a dog."
-    },
-    {
-      "id": "s2-15",
-      "sceneId": "s2",
-      "text": "If he did not choose,--again and again the man’s thoughts went over the same winding way and arrived finally at this same place."
-    },
-    {
-      "id": "s2-16",
-      "sceneId": "s2",
-      "text": "But no matter how often this “if” came up, it remained still in the end but “if.”"
-    },
-    {
-      "id": "s2-17",
-      "sceneId": "s2",
-      "text": "Even though he did not choose any plan, yet he had not the courage to make the positive admission naturally necessary to the settlement of the “if,” that there was nothing for it but to turn thief."
-    },
-    {
-      "id": "s3-0",
-      "sceneId": "s3",
-      "text": "He sneezed a great sneeze and then got up laboriously."
-    },
-    {
-      "id": "s3-1",
-      "sceneId": "s3",
-      "text": "Night-chilled Kyōto was cold enough to suggest the comfort of a fire."
-    },
-    {
-      "id": "s3-2",
-      "sceneId": "s3",
-      "text": "The pitiless wind swept with the deepening darkness between the pillars of the gate."
-    },
-    {
-      "id": "s3-3",
-      "sceneId": "s3",
-      "text": "And the cricket that had clung to the red lacquer of one of them had disappeared."
-    },
-    {
-      "id": "s3-4",
-      "sceneId": "s3",
-      "text": "Drawing in his neck and lifting his shoulders high in the bright yellow shirt which he wore under his dark blue coat, the lackey looked all about the gate."
-    },
-    {
-      "id": "s3-5",
-      "sceneId": "s3",
-      "text": "If he could find a place, out of the wind and rain and free from the gaze of men, where he could pass one night in peaceful sleep, there anyway, he fain would rest until the dawn."
-    },
-    {
-      "id": "s3-6",
-      "sceneId": "s3",
-      "text": "Then fortunately his eyes fell upon a wide ladder, likewise red, mounting up into the tower of the gate."
-    },
-    {
-      "id": "s3-7",
-      "sceneId": "s3",
-      "text": "Above, though there might be men, they were but dead men after all."
-    },
-    {
-      "id": "s3-8",
-      "sceneId": "s3",
-      "text": "Then, taking heed lest the great plain-handled sword swinging at his side should slip in its scabbard, he planted a straw-sandaled foot on the bottom step of the ladder."
-    },
-    {
-      "id": "s3-9",
-      "sceneId": "s3",
-      "text": "A few minutes elapsed."
-    },
-    {
-      "id": "s3-10",
-      "sceneId": "s3",
-      "text": "In the middle of the wide ladder leading to the tower of Rashōmon the man crouched like a cat and, holding his breath, took in the state of affairs above."
-    },
-    {
-      "id": "s3-11",
-      "sceneId": "s3",
-      "text": "A ray of light shining from the tower faintly illumined his right cheek."
-    },
-    {
-      "id": "s3-12",
-      "sceneId": "s3",
-      "text": "It was the cheek on which the festering red carbuncle gleamed in his short beard."
-    },
-    {
-      "id": "s3-13",
-      "sceneId": "s3",
-      "text": "He had lightly calculated from the first that everybody up there was dead."
-    },
-    {
-      "id": "s3-14",
-      "sceneId": "s3",
-      "text": "But when he had climbed up two or three steps, it appeared that not only had some one above struck a light but that he was moving it to and fro."
-    },
-    {
-      "id": "s3-15",
-      "sceneId": "s3",
-      "text": "This was at once made evident by the dull yellow gleam that danced in reflection on the cobwebs hanging in the corners of the ceiling."
-    },
-    {
-      "id": "s3-16",
-      "sceneId": "s3",
-      "text": "Whoever had struck this light in Rashōmon on this rainy night was surely no ordinary being!"
-    },
-    {
-      "id": "s3-17",
-      "sceneId": "s3",
-      "text": "At last, stealing up with muffled steps like a gecko, the lackey, crouching, scaled the ladder to the topmost step."
-    },
-    {
-      "id": "s3-18",
-      "sceneId": "s3",
-      "text": "Then lying as flat as he could and craning his neck forward as far as it would go, he peered with dread into the loft."
-    },
-    {
-      "id": "s4-0",
-      "sceneId": "s4",
-      "text": "He peered, and the loft, as rumor had it, was full of corpses flung carelessly away, but, the circle illuminated by the light being smaller than had at first seemed apparent, he was not able to judge how many there might be."
-    },
-    {
-      "id": "s4-1",
-      "sceneId": "s4",
-      "text": "Only, he could make out vaguely that there were among them both clothed and unclothed cadavers."
-    },
-    {
-      "id": "s4-2",
-      "sceneId": "s4",
-      "text": "Of course, men and women appeared all to be jumbled up together."
-    },
-    {
-      "id": "s4-3",
-      "sceneId": "s4",
-      "text": "And like so many dolls of kneaded clay, these bodies sprawled on the floor with open mouths and out-thrown arms in such confusion as to make one doubt even that they had once been living beings."
-    },
-    {
-      "id": "s4-4",
-      "sceneId": "s4",
-      "text": "Moreover, while the wan light played on their shoulders, breasts and more elevated parts, the shadows of their depressions were intensified, and they lay in silence like eternal mutes that had never known speech."
-    },
-    {
-      "id": "s4-5",
-      "sceneId": "s4",
-      "text": "In the stench of decaying flesh, the lackey involuntarily covered his nose."
-    },
-    {
-      "id": "s4-6",
-      "sceneId": "s4",
-      "text": "But the next moment his hand had forgotten its work."
-    },
-    {
-      "id": "s4-7",
-      "sceneId": "s4",
-      "text": "Excess of feeling had almost completely deprived him of his olfactory sense."
-    },
-    {
-      "id": "s5-0",
-      "sceneId": "s5",
-      "text": "For the first time he had just caught sight of a living mortal squatting down among the dead."
-    },
-    {
-      "id": "s5-1",
-      "sceneId": "s5",
-      "text": "It was a monkey-like old hag in a dark brown kimono, short, skinny and white-headed."
-    },
-    {
-      "id": "s5-2",
-      "sceneId": "s5",
-      "text": "With a blazing splinter of pine in her right hand, she was peering fixedly into the face of one of the corpses."
-    },
-    {
-      "id": "s5-3",
-      "sceneId": "s5",
-      "text": "From its long hair, it seemed to be the body of a woman."
-    },
-    {
-      "id": "s5-4",
-      "sceneId": "s5",
-      "text": "For a space, the lackey, moved by six parts of horror and four of curiosity, forgot even to breathe."
-    },
-    {
-      "id": "s5-5",
-      "sceneId": "s5",
-      "text": "To borrow the words of an old writer, he felt that “the hair on his head and body swelled.”"
-    },
-    {
-      "id": "s5-6",
-      "sceneId": "s5",
-      "text": "Then sticking the pine splinter into a crack in the floor, the hag took the head at which she had been gazing and, just like an old monkey picking lice from its young, began to pull out the long hairs one by one."
-    },
-    {
-      "id": "s5-7",
-      "sceneId": "s5",
-      "text": "They seemed to yield to her pull."
-    },
-    {
-      "id": "s5-8",
-      "sceneId": "s5",
-      "text": "With every hair that came out, the dread seemed to depart appreciably from the heart of the lackey."
-    },
-    {
-      "id": "s5-9",
-      "sceneId": "s5",
-      "text": "And at the same time, intense hatred of the old hag was little by little engendered."
-    },
-    {
-      "id": "s5-10",
-      "sceneId": "s5",
-      "text": "No, “of the old hag” may not be just the right words."
-    },
-    {
-      "id": "s5-11",
-      "sceneId": "s5",
-      "text": "Rather his antipathy to all evil grew stronger every minute."
-    },
-    {
-      "id": "s5-12",
-      "sceneId": "s5",
-      "text": "If some one at that time had broached afresh the question which this man had been considering under the gate a little while before, whether he should starve or turn thief, in all likelihood he would have unhesitatingly chosen starvation."
-    },
-    {
-      "id": "s5-13",
-      "sceneId": "s5",
-      "text": "Thus fiercely, like the splint of pine the old hag had stuck in the floor, blazed up this man’s detestation of evil."
-    },
-    {
-      "id": "s5-14",
-      "sceneId": "s5",
-      "text": "The lackey, of course, did not know why the old hag was pulling out the hair of the dead."
-    },
-    {
-      "id": "s5-15",
-      "sceneId": "s5",
-      "text": "Consequently, he did not know, rationally, whether her conduct should be set down as good or evil."
-    },
-    {
-      "id": "s5-16",
-      "sceneId": "s5",
-      "text": "But to him the pulling of hair from the heads of the dead on that rainy night up in Rashōmon was, on the face of it, an unpardonable crime."
-    },
-    {
-      "id": "s5-17",
-      "sceneId": "s5",
-      "text": "Naturally he had already forgot that a little before he had had half a mind to turn thief himself."
-    },
-    {
-      "id": "s6-0",
-      "sceneId": "s6",
-      "text": "So, bracing his two feet firmly, he suddenly sprang from the ladder up into the room."
-    },
-    {
-      "id": "s6-1",
-      "sceneId": "s6",
-      "text": "Then, grasping the plain handle of his sword, he advanced with great strides up to the hag."
-    },
-    {
-      "id": "s6-2",
-      "sceneId": "s6",
-      "text": "Naturally she was startled out of her wits."
-    },
-    {
-      "id": "s6-3",
-      "sceneId": "s6",
+      "id": "s0-18",
+      "sceneId": "s0",
       "text": "With a glance at the lackey, she sprang up as if shot from a catapult."
     },
     {
-      "id": "s6-4",
-      "sceneId": "s6",
-      "text": "“Wretch!"
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "“Wretch! Where are you going?” cursed the man, blocking her way, as she stumbled among the corpses in a panic-stricken effort to escape."
     },
     {
-      "id": "s6-5",
-      "sceneId": "s6",
-      "text": "Where are you going?” cursed the man, blocking her way, as she stumbled among the corpses in a panic-stricken effort to escape."
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "All the same, she struggled to push him aside and get by. But peremptorily he forced her back. For a moment, the pair scuffled in silence among the corpses. But from the first there was no doubt of the victor."
     },
     {
-      "id": "s6-6",
-      "sceneId": "s6",
-      "text": "All the same, she struggled to push him aside and get by."
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "In the end, seizing one of her arms, the lackey twisted it and threw her violently down. It was nothing but skin and bone, just like the leg of a hen."
     },
     {
-      "id": "s6-7",
-      "sceneId": "s6",
-      "text": "But peremptorily he forced her back."
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "“What are you up to? Look you, what are you up to? Out with it! If you don’t speak, you get this, see!”"
     },
     {
-      "id": "s6-8",
-      "sceneId": "s6",
-      "text": "For a moment, the pair scuffled in silence among the corpses."
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "And casting her away, he suddenly unsheathed his sword and brandished the white flash of steel before her eyes. But the old hag held her tongue. Her hands trembling, her shoulders heaving as she gasped for breath, and her eyes so wide open that it seemed the balls must burst from their sockets, she persisted in her silence like a mute. At this, the lackey realized clearly for the first time that this old woman’s life and death depended entirely upon his will. And before he was aware, this realization had cooled the fires of detestation that up to this time had blazed so fiercely in his heart. What remained was simply that comfortable pride and satisfaction that follow upon a piece of work wholly carried to completion. Then, looking down upon her, he said in a slightly milder tone:"
     },
     {
-      "id": "s6-9",
-      "sceneId": "s6",
-      "text": "But from the first there was no doubt of the victor."
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "“I’m no official from the police commissioner’s office. I’m a wanderer who happened to pass under this gate a little while ago. So you won’t be tied with a rope and arrested. All I demand is that you tell me what you’re doing up in this gate at this hour.”"
     },
     {
-      "id": "s6-10",
-      "sceneId": "s6",
-      "text": "In the end, seizing one of her arms, the lackey twisted it and threw her violently down."
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "At this, the old hag’s wide-staring eyes grew all the larger, and she fastened them intently on the face of the lackey. They were sharp red-lidded eyes like those of some bird of prey. Then she moved her lips, practically one with her nose among the wrinkles, as if she were chewing something. A sharply projecting Adam’s apple slid up and down in her skinny throat. And at the same time, a voice like the croak of a raven came pantingly from that throat and struck harshly upon his ears."
     },
     {
-      "id": "s6-11",
-      "sceneId": "s6",
-      "text": "It was nothing but skin and bone, just like the leg of a hen."
-    },
-    {
-      "id": "s6-12",
-      "sceneId": "s6",
-      "text": "“What are you up to?"
-    },
-    {
-      "id": "s6-13",
-      "sceneId": "s6",
-      "text": "Look you, what are you up to?"
-    },
-    {
-      "id": "s6-14",
-      "sceneId": "s6",
-      "text": "Out with it!"
-    },
-    {
-      "id": "s6-15",
-      "sceneId": "s6",
-      "text": "If you don’t speak, you get this, see!”"
-    },
-    {
-      "id": "s6-16",
-      "sceneId": "s6",
-      "text": "And casting her away, he suddenly unsheathed his sword and brandished the white flash of steel before her eyes."
-    },
-    {
-      "id": "s6-17",
-      "sceneId": "s6",
-      "text": "But the old hag held her tongue."
-    },
-    {
-      "id": "s6-18",
-      "sceneId": "s6",
-      "text": "Her hands trembling, her shoulders heaving as she gasped for breath, and her eyes so wide open that it seemed the balls must burst from their sockets, she persisted in her silence like a mute."
-    },
-    {
-      "id": "s6-19",
-      "sceneId": "s6",
-      "text": "At this, the lackey realized clearly for the first time that this old woman’s life and death depended entirely upon his will."
-    },
-    {
-      "id": "s6-20",
-      "sceneId": "s6",
-      "text": "And before he was aware, this realization had cooled the fires of detestation that up to this time had blazed so fiercely in his heart."
-    },
-    {
-      "id": "s6-21",
-      "sceneId": "s6",
-      "text": "What remained was simply that comfortable pride and satisfaction that follow upon a piece of work wholly carried to completion."
-    },
-    {
-      "id": "s6-22",
-      "sceneId": "s6",
-      "text": "Then, looking down upon her, he said in a slightly milder tone: “I’m no official from the police commissioner’s office."
-    },
-    {
-      "id": "s6-23",
-      "sceneId": "s6",
-      "text": "I’m a wanderer who happened to pass under this gate a little while ago."
-    },
-    {
-      "id": "s6-24",
-      "sceneId": "s6",
-      "text": "So you won’t be tied with a rope and arrested."
-    },
-    {
-      "id": "s6-25",
-      "sceneId": "s6",
-      "text": "All I demand is that you tell me what you’re doing up in this gate at this hour.”"
-    },
-    {
-      "id": "s6-26",
-      "sceneId": "s6",
-      "text": "At this, the old hag’s wide-staring eyes grew all the larger, and she fastened them intently on the face of the lackey."
-    },
-    {
-      "id": "s6-27",
-      "sceneId": "s6",
-      "text": "They were sharp red-lidded eyes like those of some bird of prey."
-    },
-    {
-      "id": "s6-28",
-      "sceneId": "s6",
-      "text": "Then she moved her lips, practically one with her nose among the wrinkles, as if she were chewing something."
-    },
-    {
-      "id": "s6-29",
-      "sceneId": "s6",
-      "text": "A sharply projecting Adam’s apple slid up and down in her skinny throat."
-    },
-    {
-      "id": "s6-30",
-      "sceneId": "s6",
-      "text": "And at the same time, a voice like the croak of a raven came pantingly from that throat and struck harshly upon his ears."
-    },
-    {
-      "id": "s7-0",
-      "sceneId": "s7",
+      "id": "s0-26",
+      "sceneId": "s0",
       "text": "“I’m pulling out hair, pulling out this woman’s hair, because I’m going to make wigs.”"
     },
     {
-      "id": "s7-1",
-      "sceneId": "s7",
-      "text": "The servant was disappointed at the unexpected ordinariness of her answer."
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "The servant was disappointed at the unexpected ordinariness of her answer. And at the same time, the hatred he had felt before, mingled with a cold disdain, crept back into his heart again. And its manifestations probably transmitted themselves to the hag. For still holding in one hand the long hair she had pulled from the corpse’s head, she mumbled her case in the croaking voice of a toad."
     },
     {
-      "id": "s7-2",
-      "sceneId": "s7",
-      "text": "And at the same time, the hatred he had felt before, mingled with a cold disdain, crept back into his heart again."
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "To be sure, it might be wicked to pull hair from dead bodies, for all she knew. But these dead were mostly people who could well be treated in such a way. For instance, this woman from whose head she had just been pulling hair had cut snakes up into four-inch lengths and sold them for dried fish in the military camps. Had she not fallen prey to the epidemic and died, she might have been selling them yet. What was more, the samurai had found her dried fish tasty and bought them all up to eat with their rice. The hag did not find the woman’s conduct blameworthy. Since she must otherwise have starved to death, she could not well have helped it. Therefore, what she herself now did could not be called bad either. Since this, too, must be done or she would starve, it could not well be helped, and she thought this woman, who well knew her dilemma, would surely forgive her for what she did. Thus, by the large, ran the old hag’s explanation."
     },
     {
-      "id": "s7-3",
-      "sceneId": "s7",
-      "text": "And its manifestations probably transmitted themselves to the hag."
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "The lackey sheathed his sword and, with his left hand on the hilt, listened in cold blood to her recital. Of course, his right hand was busy fingering the festering carbuncle on his fiery cheek. But as he listened, a certain courage was born within him. It was the courage he had lacked under the gate a while before. And, moreover, it was a courage tending to move in just the opposite direction from the courage with which he had a little before mounted up into the gate and seized the old woman. It was not only that he was no longer at a loss whether to starve or turn thief. His emotions were now such that the idea of starving to death had been driven from his consciousness as well-nigh unthinkable."
     },
     {
-      "id": "s7-4",
-      "sceneId": "s7",
-      "text": "For still holding in one hand the long hair she had pulled from the corpse’s head, she mumbled her case in the croaking voice of a toad."
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "“Really? Is that true?”"
     },
     {
-      "id": "s7-5",
-      "sceneId": "s7",
-      "text": "To be sure, it might be wicked to pull hair from dead bodies, for all she knew."
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "When the old woman had finished her tale, he questioned her in a sneering voice. Then advancing one step forward, he suddenly removed his right hand from his carbuncle and, seizing the hag by the collar, said,"
     },
     {
-      "id": "s7-6",
-      "sceneId": "s7",
-      "text": "But these dead were mostly people who could well be treated in such a way."
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "“Then I guess you won’t blame me for turning highwayman, will you? I, too, must starve else.”"
     },
     {
-      "id": "s7-7",
-      "sceneId": "s7",
-      "text": "For instance, this woman from whose head she had just been pulling hair had cut snakes up into four-inch lengths and sold them for dried fish in the military camps."
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Like a flash he stripped off her kimono. Then, as she tried to cling to his legs, he violently kicked her down upon the corpses. It was but five paces to the head of the ladder. With the dark brown kimono under his arm, he ran in a twinkling down the steep steps into the depths of the night."
     },
     {
-      "id": "s7-8",
-      "sceneId": "s7",
-      "text": "Had she not fallen prey to the epidemic and died, she might have been selling them yet."
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "It was not long before the old woman, who had lain for a space like one dead, raised her naked body up from among the corpses. Murmuring and groaning, she crawled by the help of the light that still burned to the top of the ladder. And from there, with her short white hair hanging about her face, she peered down under the gate. Outside there was nothing but black and cavernous night."
     },
     {
-      "id": "s7-9",
-      "sceneId": "s7",
-      "text": "What was more, the samurai had found her dried fish tasty and bought them all up to eat with their rice."
-    },
-    {
-      "id": "s7-10",
-      "sceneId": "s7",
-      "text": "The hag did not find the woman’s conduct blameworthy."
-    },
-    {
-      "id": "s7-11",
-      "sceneId": "s7",
-      "text": "Since she must otherwise have starved to death, she could not well have helped it."
-    },
-    {
-      "id": "s7-12",
-      "sceneId": "s7",
-      "text": "Therefore, what she herself now did could not be called bad either."
-    },
-    {
-      "id": "s7-13",
-      "sceneId": "s7",
-      "text": "Since this, too, must be done or she would starve, it could not well be helped, and she thought this woman, who well knew her dilemma, would surely forgive her for what she did."
-    },
-    {
-      "id": "s7-14",
-      "sceneId": "s7",
-      "text": "Thus, by the large, ran the old hag’s explanation."
-    },
-    {
-      "id": "s7-15",
-      "sceneId": "s7",
-      "text": "The lackey sheathed his sword and, with his left hand on the hilt, listened in cold blood to her recital."
-    },
-    {
-      "id": "s7-16",
-      "sceneId": "s7",
-      "text": "Of course, his right hand was busy fingering the festering carbuncle on his fiery cheek."
-    },
-    {
-      "id": "s7-17",
-      "sceneId": "s7",
-      "text": "But as he listened, a certain courage was born within him."
-    },
-    {
-      "id": "s7-18",
-      "sceneId": "s7",
-      "text": "It was the courage he had lacked under the gate a while before."
-    },
-    {
-      "id": "s7-19",
-      "sceneId": "s7",
-      "text": "And, moreover, it was a courage tending to move in just the opposite direction from the courage with which he had a little before mounted up into the gate and seized the old woman."
-    },
-    {
-      "id": "s7-20",
-      "sceneId": "s7",
-      "text": "It was not only that he was no longer at a loss whether to starve or turn thief."
-    },
-    {
-      "id": "s7-21",
-      "sceneId": "s7",
-      "text": "His emotions were now such that the idea of starving to death had been driven from his consciousness as well-nigh unthinkable."
-    },
-    {
-      "id": "s7-22",
-      "sceneId": "s7",
-      "text": "“Really?"
-    },
-    {
-      "id": "s7-23",
-      "sceneId": "s7",
-      "text": "Is that true?”"
-    },
-    {
-      "id": "s7-24",
-      "sceneId": "s7",
-      "text": "When the old woman had finished her tale, he questioned her in a sneering voice."
-    },
-    {
-      "id": "s8-0",
-      "sceneId": "s8",
-      "text": "Then advancing one step forward, he suddenly removed his right hand from his carbuncle and, seizing the hag by the collar, said, “Then I guess you won’t blame me for turning highwayman, will you?"
-    },
-    {
-      "id": "s8-1",
-      "sceneId": "s8",
-      "text": "I, too, must starve else.”"
-    },
-    {
-      "id": "s8-2",
-      "sceneId": "s8",
-      "text": "Like a flash he stripped off her kimono."
-    },
-    {
-      "id": "s8-3",
-      "sceneId": "s8",
-      "text": "Then, as she tried to cling to his legs, he violently kicked her down upon the corpses."
-    },
-    {
-      "id": "s8-4",
-      "sceneId": "s8",
-      "text": "It was but five paces to the head of the ladder."
-    },
-    {
-      "id": "s8-5",
-      "sceneId": "s8",
-      "text": "With the dark brown kimono under his arm, he ran in a twinkling down the steep steps into the depths of the night."
-    },
-    {
-      "id": "s8-6",
-      "sceneId": "s8",
-      "text": "It was not long before the old woman, who had lain for a space like one dead, raised her naked body up from among the corpses."
-    },
-    {
-      "id": "s8-7",
-      "sceneId": "s8",
-      "text": "Murmuring and groaning, she crawled by the help of the light that still burned to the top of the ladder."
-    },
-    {
-      "id": "s8-8",
-      "sceneId": "s8",
-      "text": "And from there, with her short white hair hanging about her face, she peered down under the gate."
-    },
-    {
-      "id": "s8-9",
-      "sceneId": "s8",
-      "text": "Outside there was nothing but black and cavernous night."
-    },
-    {
-      "id": "s8-10",
-      "sceneId": "s8",
+      "id": "s0-35",
+      "sceneId": "s0",
       "text": "The lackey had already braved the rain and hurried away into the streets of Kyōto to rob."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "LICE"
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "I"
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "On the twenty-sixth day of the eleventh month of the first year of Genji (Dec. 25, 1864), the followers of the daimyō of Kaga, who had been engaged in the safeguarding of Kyōto, put to sea under the leadership of Chō Osumi-no-kami, from the mouth of the Ajikawa in Ōsaka, to take part in the impending chastisement of Chōshū."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "There were two sub-commanders, Tsukuda Kyudayu and Yamagishi Sanjurō, and white standards were set up in Tsukuda’s boats and red in Yamagishi’s. History records that it was a most brave scene as their Kompira vessels, each of 500 *koku* burden, left the estuary for the deep, all with their red and white banners flapping in the wind."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "But the men in the boats did not feel at all gallant. In the first place, every boat was loaded with thirty-four of the party and four sailors, a total of thirty-eight men. Wherefore, they were so closely packed together that free movement was impossible. Moreover, in the waist of each vessel stood so many loach tubs full of pickled radishes that there was almost no place left to step. Until they got used to it, the evil odor of the things filled every man who breathed it with a sudden nausea. Finally, as it was the end of the eleventh month of the old calendar (December), the wind blowing on the sea was so cold that it seemed to fairly cut their flesh. Especially when the sun had set, what with the winds blowing down from Maya and the chill of the sea, the teeth of most even of these young samurai from the north chattered."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "Moreover, in the boats there was an abundance of lice. And they were not the simple sort of lice that hide themselves in the seams of garments. They swarmed upon the sails. They swarmed upon the masts. They swarmed upon the anchors. To exaggerate slightly, it was hard to tell whether the boats were for men or for lice. Of course in such a plethora, scores of the pests swarmed upon their clothes. And whenever they so much as touched the skin of a man, they were straightway elated and fell to till he tingled. Had there been but some five or ten of the vermin, they might somehow or other have been brought under control, but since, as already stated, there were so many that they looked like a sprinkling of white sesame, there was no possible hope of cleaning them out. Wherefore, in the Tsukuda party and the Yamagishi party alike, the bodies of all the samurai in the boats swelled red with bites all over on breast and abdomen and everywhere, just as if they had the measles."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "But impossible as it was to bring the lice under control, it was still more impossible to let them go on unmolested. So the people in the boats spent their leisure time hunting. All of them, from the chief retainers to the sandal bearers, stripped themselves and went about, each with a teacup, picking up the ubiquitous lice and putting them into it. Were he to imagine thirty-odd samurai, each dressed in but a loin-cloth, with his teacup in his hand, searching with all his might here and there under the rigging and beneath the anchor in each Kompira boat with sails alight in the winter sunshine of the Inland Sea, any man in these days would at once think it a great joke, but it was no less true before the Restoration than it is now that in the face of necessity everything becomes serious. So these boats full of naked samurai, each one himself like a great louse, abode the cold and went about patiently day after day diligently crushing the lice on the decks."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "II"
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "But there was one odd fellow on the Tsukuda boat. He was an eccentric middle-aged man named Mori Gonnoshin, an officer of foot with an allowance of seventy bales of rice and rations for five men. Strangely this man alone did not catch lice. Therefore, of course, he was covered with them all over. While some mounted to the knot on his queued hair, others crossed over on the edge of the plate at the back of his divided skirt. Yet he paid no special attention to them."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "Then if you think that this man alone was not bitten by the lice, still you are mistaken. Just like the rest, he was covered with so many red blotches all over his body that he might well be described as spotted with coins. Moreover, from the way he scratched them, it did not look as if they were itchless. But no matter whether they itched or what they did, he affected utter indifference."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "If it had all been affectation, it would not have been so strange, but when he saw the others diligently gathering lice, he called to them,"
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "“If you catch ’em, don’t kill ’em. Put ’em in teacups alive, an’ I’ll take ’em.”"
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "“When you get ’em, what’ll you do with ’em?” asked one of his fellows, with a look of surprise."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "“When I get ’em? Then I’ll go so far as to raise ’em,” Mori calmly replied."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "“Then we’ll take ’em alive and give ’em to you.”"
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "The officer, because he thought it a joke, worked half a day with two or three others and collected several cupfuls of living lice. He thought in his heart that if he handed them over thus and said, “Well, raise ’em,” even Mori, despite his contrariness, would be stumped."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "Then, before he had time to utter a word, Mori spoke up and said,"
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "“You’ve got ’em, haven’t you? Then I’ll take ’em.”"
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "His fellows were all taken aback."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "“Then put ’em in here,” said Mori calmly, opening the neck of his garment."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "“Don’t go makin’ yourself put up with it now and afterwards gettin’ into trouble for it,” said the others, but he would not listen."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "Then one at a time, they turned their teacups upside down, like ricemen measuring rice in half-gallon measures, and poured the lice down Mori’s neck, whereupon he, maintaining his composure and carefully picking up those that had spilled outside, said, as if to himself,"
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "“Thanks. With these I can sleep warm from this night on.”"
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "“When you have lice, is it warm?” said the dumbfounded officers to nobody in particular, all looking into each other’s faces."
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "Then Mori, adjusting with particularity the neck of his dress which had received the lice, gave one triumphant look around at each of their faces and proceeded to express himself to this effect:"
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "“Each and every one of you caught cold in this recent snap, but what of this Gonnoshin? He doesn’t sneeze. He doesn’t run at the nose. More, not once has he felt feverish or cold in the hands or feet. Whose good work do you s’pose this is? It’s all the good work of the lice.”"
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "According to Mori’s explanation, it seems that when there are lice on the body, they are bound to bite and make it itch. When they bite, one is sure to want to scratch. Then, when the whole body is bitten all over, one wants to scratch all over the whole body, too. But man is wonderfully made, so that while he scratches where he feels himself itch, the scratched places naturally get warm as with a fever. Then, when he is warm, he gets sleepy. When he is sleepy, he no longer feels the itch. In this way, if one but have many lice on one’s body, one falls asleep easily and catches no colds. Wherefore, we should by all means keep lice and by no means kill them out."
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "“Sure enough, it’s like that, ain’t it?” said several of his fellows approvingly when they had heard Mori’s argument."
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "III"
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "After that there came to be a group in that boat that followed the example of Mori and kept lice. In the matter of going about in pursuit of lice whenever they had leisure, this group was not different from the rest of the party. The only difference was that all they caught, they put one by one faithfully into their bosoms and carefully kept."
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "But it is seldom in any country in any age that the precursor’s teaching is accepted in its first form by all the people. In this boat, too, there were many Pharisees who set themselves up against Mori’s doctrines on lice."
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "At the forefront of these stood a captain of foot called Inoue Tenzo. He, too, was an eccentric, and he always ate all the lice he caught. When he had finished his evening meal, he would place a teacup before him and sit slowly munching something that was evidently delicious, so somebody looked into the cup and saw that it was full of the lice he had caught and asked,"
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "“What do they taste like?”"
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "“Let’s see. Like oily parched rice, I guess,” said he."
+    },
+    {
+      "id": "s0-70",
+      "sceneId": "s0",
+      "text": "Those who use their mouths to crush lice are to be found everywhere, but this man was not of their number. As light refreshment pure and simple, he ate them every day. He was the first to oppose Mori."
+    },
+    {
+      "id": "s0-71",
+      "sceneId": "s0",
+      "text": "There was not another soul who took after Inoue and ate lice, but a considerable number joined him in his opposition. According to them, men’s bodies certainly could not be warmed by the presence of lice. Moreover, in the Book of Filial Piety, it is written that we receive our bodies, hair and hide, from our fathers and mothers, and the very beginning of filial duty lies in not injuring them. Of one’s own choice to feed these bodies to such things as lice was egregiously unfilial. Whence lice should by all means be hunted out. They should not be raised."
+    },
+    {
+      "id": "s0-72",
+      "sceneId": "s0",
+      "text": "Under these circumstances, disputes arose from time to time between the Mori and Inoue groups. And so long as they simply ended in argument, there was no harm. But in the end things developed unexpectedly from such beginnings even unto the starting of an appeal to the sword."
+    },
+    {
+      "id": "s0-73",
+      "sceneId": "s0",
+      "text": "It came about in this way. One day Mori received from the others a lot of lice which he put into a teacup and set aside, intending to raise them carefully as usual, when Inoue, taking advantage of his incaution, ate them up before he noticed. When Mori came to look for them, there was not one left. Then this precursor flared into anger."
+    },
+    {
+      "id": "s0-74",
+      "sceneId": "s0",
+      "text": "“What’d you eat ’em for?” he demanded, edging up to Inoue with his arms akimbo and his eyes blazing."
+    },
+    {
+      "id": "s0-75",
+      "sceneId": "s0",
+      "text": "“Fact is, it’s idiotic to keep lice,” said Inoue indifferently, showing absolutely no desire to take him up."
+    },
+    {
+      "id": "s0-76",
+      "sceneId": "s0",
+      "text": "“It’s idiotic to eat ’em.”"
+    },
+    {
+      "id": "s0-77",
+      "sceneId": "s0",
+      "text": "Mori flew into a fury and, pounding the plank deck shouted,"
+    },
+    {
+      "id": "s0-78",
+      "sceneId": "s0",
+      "text": "“Look here! Is there anybody in this ship who isn’t indebted to lice? Takin’ these lice an’ eatin’ ’em is just like payin’ kindness with hate!”"
+    },
+    {
+      "id": "s0-79",
+      "sceneId": "s0",
+      "text": "“I haven’t the least recollection of ever receivin’ any favor from lice.”"
+    },
+    {
+      "id": "s0-80",
+      "sceneId": "s0",
+      "text": "“Nay, even if you haven’t, to wantonly take the lives of livin’ things is unspeakable.”"
+    },
+    {
+      "id": "s0-81",
+      "sceneId": "s0",
+      "text": "After two or three more remarks had been exchanged with increasing vehemence, Mori suddenly saw red and put his hand on the hilt of his maroon-sheathed sword. Of course Inoue did not back down. He quickly snatched up his long blade in its cinnabar scabbard and sprang to his feet. Had not the naked men who were going about catching lice excitedly forced the two apart, it would probably have meant the life of one or the other of them."
+    },
+    {
+      "id": "s0-82",
+      "sceneId": "s0",
+      "text": "According to the story of one who saw this flurry with his own eyes, the two men, held fast in the arms of the whole party, still foamed at the mouth and shouted, “Lice--Lice--”"
+    },
+    {
+      "id": "s0-83",
+      "sceneId": "s0",
+      "text": "IV"
+    },
+    {
+      "id": "s0-84",
+      "sceneId": "s0",
+      "text": "And while the samurai in the ships thus came almost to bloodshed over the lice, the 500-*koku* Kompira vessels, as if alone indifferent utterly to all this, ran on farther and farther west with their red and white banners flapping in the cold wind under the snowy sky on the long, long road leading to the chastisement of Chōshū."
+    },
+    {
+      "id": "s0-85",
+      "sceneId": "s0",
+      "text": "THE SPIDER’S THREAD"
+    },
+    {
+      "id": "s0-86",
+      "sceneId": "s0",
+      "text": "I"
+    },
+    {
+      "id": "s0-87",
+      "sceneId": "s0",
+      "text": "One day the Buddha was sauntering alone on the brink of the lotus pond of Paradise."
+    },
+    {
+      "id": "s0-88",
+      "sceneId": "s0",
+      "text": "The lotus flowers in bloom in the pond were all as white as pearls, and the golden pistils and stamens in their centers ceaselessly filled all the air with ineffable fragrance."
+    },
+    {
+      "id": "s0-89",
+      "sceneId": "s0",
+      "text": "It was morning in Paradise."
+    },
+    {
+      "id": "s0-90",
+      "sceneId": "s0",
+      "text": "Presently the Buddha stood still on the brink of the pond, and through an opening among the leaves which covered the face of the water, suddenly beheld the scene below."
+    },
+    {
+      "id": "s0-91",
+      "sceneId": "s0",
+      "text": "As the floor of Hell lay directly beneath the lotus pond of Paradise, the Sanzu-no-Kawa and Hari-no-Yama were distinctly visible through the crystal water, as through a sterioptiscope."
+    },
+    {
+      "id": "s0-92",
+      "sceneId": "s0",
+      "text": "Then his eye fell on a man named Kandata, who was squirming with the other sinners in the bottom of Hell."
+    },
+    {
+      "id": "s0-93",
+      "sceneId": "s0",
+      "text": "This Kandata was a great robber who had done many evil things, murdering and setting fire to houses, but he had to his credit one good action. Once while on his way through a deep forest, he had noticed a little spider creeping along beside the road."
+    },
+    {
+      "id": "s0-94",
+      "sceneId": "s0",
+      "text": "So quickly lifting his foot, he was about to trample it to death, when he suddenly thought, “No, no, as small as this thing is, it, too, has a soul: it would be rather a shame to recklessly kill it,” and spared the spider’s life."
+    },
+    {
+      "id": "s0-95",
+      "sceneId": "s0",
+      "text": "As he looked down into Hell, the Buddha remembered how this Kandata had spared the spider’s life. And in return for that good deed, he thought, if possible, he would like to deliver him out of Hell. Fortunately when he looked around, he saw a spider of Paradise spinning a beautiful silvery thread on the halcyon-colored lotus leaves."
+    },
+    {
+      "id": "s0-96",
+      "sceneId": "s0",
+      "text": "The Buddha quietly took up the spider’s thread in his hand. And he let it straight down to the bottom of Hell far below through the opening among the pearly white lotus flowers."
+    },
+    {
+      "id": "s0-97",
+      "sceneId": "s0",
+      "text": "II"
+    },
+    {
+      "id": "s0-98",
+      "sceneId": "s0",
+      "text": "Here Kandata was rising and sinking with the other sinners in the Pond of Blood on the floor of Hell."
+    },
+    {
+      "id": "s0-99",
+      "sceneId": "s0",
+      "text": "It was pitch black everywhere, and when sometimes a glimpse was caught of something rising from that darkness, it turned out to be the gleam of the needle of the dread Hari-no-Yama, so it was inexpressibly forbidding. Moreover the stillness of the grave reigned everywhere, and the only thing that could at times be heard was the faint sighing of the sinners."
+    },
+    {
+      "id": "s0-100",
+      "sceneId": "s0",
+      "text": "This was because such sinners as had come down to this spot had already been tired out by the other manifold tortures of Hell and had lost even the strength to cry aloud."
+    },
+    {
+      "id": "s0-101",
+      "sceneId": "s0",
+      "text": "So, great robber though he was, Kandata, also suffocated with the blood, could do nothing but struggle in the pond like a dying frog."
+    },
+    {
+      "id": "s0-102",
+      "sceneId": "s0",
+      "text": "But his time came. One day when Kandata lifted his head by chance and looked up at the sky above the Pond of Blood, he saw a silver spider’s thread slipping down toward him from the high, high heavens, glittering slightly in the silent darkness just as if it feared the eyes of man."
+    },
+    {
+      "id": "s0-103",
+      "sceneId": "s0",
+      "text": "When he saw this, his hands clapped themselves for joy. If, clinging to this thread, he climbed as far as it went, he could surely escape from Hell."
+    },
+    {
+      "id": "s0-104",
+      "sceneId": "s0",
+      "text": "Nay, if all went well, he might even enter Paradise. Then he would never be driven on to Hari-no-Yama nor sunk in the Pond of Blood."
+    },
+    {
+      "id": "s0-105",
+      "sceneId": "s0",
+      "text": "As soon as these thoughts came into his mind, he grasped the thread tightly in his two hands and began to climb up and up with all his might."
+    },
+    {
+      "id": "s0-106",
+      "sceneId": "s0",
+      "text": "Because he was a great robber, he had long been thoroughly familiar with such things."
+    },
+    {
+      "id": "s0-107",
+      "sceneId": "s0",
+      "text": "But Hell is nobody-knows-how-many myriads of miles removed from Paradise and, strive as he might, he could not easily get out. After climbing for a while, he was finally exhausted and could not ascend an inch higher."
+    },
+    {
+      "id": "s0-108",
+      "sceneId": "s0",
+      "text": "So since he could do nothing else, he stopped to rest and, hanging to the thread, looked far, far down below him. Now since he had climbed with all his might, the Pond of Blood where he had just been was already, much to his surprise, hidden deep down in the darkness. And the dread Hari-no-Yama glittered dimly under him. If he went up at this rate, he might get out of Hell more easily than he had thought."
+    },
+    {
+      "id": "s0-109",
+      "sceneId": "s0",
+      "text": "With his hand twisted into the spider’s thread, Kandata laughed and cried out in a voice such as he had not uttered during all the years since coming here, “Success! Success!”"
+    },
+    {
+      "id": "s0-110",
+      "sceneId": "s0",
+      "text": "But suddenly he noticed that below on the thread countless sinners were climbing eagerly after him, up and up, just like a procession of ants."
+    },
+    {
+      "id": "s0-111",
+      "sceneId": "s0",
+      "text": "When he saw this, Kandata simply blinked his eyes for a moment, with his big mouth hanging foolishly open in surprise and terror."
+    },
+    {
+      "id": "s0-112",
+      "sceneId": "s0",
+      "text": "How could that slender spider’s thread, which seemed as if it must break even with him alone, ever support the weight of all those people?"
+    },
+    {
+      "id": "s0-113",
+      "sceneId": "s0",
+      "text": "If it should break in midair, even he himself, after all his effort in reaching this spot, would have to fall headlong back into Hell. It would be terrible if such a thing happened."
+    },
+    {
+      "id": "s0-114",
+      "sceneId": "s0",
+      "text": "But meanwhile hundreds and thousands of sinners were squirming out of the dark Pond of Blood and climbing with all their might in a line up the slender glittering thread. If he did not do something quickly, the thread was sure to break in two and fall. So Kandata cried out in a loud voice,"
+    },
+    {
+      "id": "s0-115",
+      "sceneId": "s0",
+      "text": "“Here, you sinners! This spider’s thread is mine. Who on earth gave you permission to come up it? Get down! Get down!”"
+    },
+    {
+      "id": "s0-116",
+      "sceneId": "s0",
+      "text": "Just at that moment, the spider’s thread, which had shown no sign of breaking up to that time, suddenly broke with a snap at the point where Kandata was hanging."
+    },
+    {
+      "id": "s0-117",
+      "sceneId": "s0",
+      "text": "So he was helpless. Without time to utter a cry, he shot down and fell headlong into the darkness, spinning swiftly round and round like a top."
+    },
+    {
+      "id": "s0-118",
+      "sceneId": "s0",
+      "text": "Afterwards, only the spider’s thread of Paradise, glittering and slender, hung short in the moonless and starless sky."
+    },
+    {
+      "id": "s0-119",
+      "sceneId": "s0",
+      "text": "III"
+    },
+    {
+      "id": "s0-120",
+      "sceneId": "s0",
+      "text": "Standing on the brink of the Lotus Pond of Paradise, the Buddha watched closely all that happened, and when Kandata sank like a stone to the bottom of the Pond of Blood, he began to saunter again with a sad expression on his face."
+    },
+    {
+      "id": "s0-121",
+      "sceneId": "s0",
+      "text": "Doubtless Kandata’s cold heart that would have saved only himself from Hell and his having received proper punishment and fallen back into Hell, had appeared to the Buddha’s eyes most pitiful. But the lotuses in the lotus pond of Paradise cared nothing at all about such things."
+    },
+    {
+      "id": "s0-122",
+      "sceneId": "s0",
+      "text": "The pearly white flowers were swaying about the Buddha’s feet. As they swayed, from the golden pistils in their centers, their ineffable fragrance ceaselessly filled all the air."
+    },
+    {
+      "id": "s0-123",
+      "sceneId": "s0",
+      "text": "It was near noon in Paradise."
     }
   ]
 }

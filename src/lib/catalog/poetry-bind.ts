@@ -16,6 +16,10 @@ export const FIRST_SCENE_TITLE: Record<string, string> = {
   "the-weary-blues": "Proem",
   harmonium: "The Snow Man",
   "a-few-figs-from-thistles": "First Fig",
+  "songs-and-satires": "Silence",
+  "the-three-taverns": "The Valley of the Shadow",
+  "the-town-down-the-river": "The Town Down The River",
+  "prosas-profanas": "Era Un Aire Suave",
 };
 
 /** Mira poem-chapter stamps — do not flatten these with the generic rebind. */
@@ -37,6 +41,10 @@ export const MIRA_STAMPED_POEM_IDS = [
   "sour-grapes",
   "harmonium",
   "a-few-figs-from-thistles",
+  "songs-and-satires",
+  "the-three-taverns",
+  "the-town-down-the-river",
+  "prosas-profanas",
 ] as const;
 
 /** Waley 1918 headings from Winter Night through Last Poem (PG 42290). */

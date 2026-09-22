@@ -107,17 +107,17 @@ test("Vera uses the before-sleep cliff-gate sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
 });
 
-test("On a Chinese Screen uses the waking Parlour sit", () => {
+test("On a Chinese Screen uses the waking Rising of the Curtain sit", () => {
   const copy = readerIntro(shelfAsWork("on-a-chinese-screen"));
-  assert.match(copy, /Cheltenham/);
-  assert.match(copy, /American stove/);
+  assert.match(copy, /row of hovels/);
+  assert.match(copy, /Rising of the Curtain/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|Orientalist/i);
 });
 
-test("Futility uses the waking sisters-bouquet sit", () => {
+test("Futility uses the waking Part I sit", () => {
   const copy = readerIntro(shelfAsWork("futility"));
-  assert.match(copy, /three sisters/i);
-  assert.match(copy, /dacha/);
+  assert.match(copy, /fit all this into a book/);
+  assert.match(copy, /Part I/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|Wharton/i);
 });
 

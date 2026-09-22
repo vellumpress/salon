@@ -7,6 +7,7 @@ import { LOCAL_WORKS } from "./full-pdf.ts";
 import { countryFor, isCityHubLabel } from "./countries.ts";
 import { blurbFor, sentenceCount } from "./blurbs.ts";
 import { isBoundLocal } from "./en-rights.ts";
+import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 
 /** Full local novels whose stub openings were deleted so Pages cannot strand readers. */
 const FULL_NOVEL_NO_STUB = [
@@ -37,6 +38,9 @@ const FULL_NOVEL_NO_STUB = [
   "the-story-of-gosta-berling",
   "futility",
   "poison-tree",
+  "attendants-confession",
+  "rashomon",
+  "on-a-chinese-screen",
   "trooper-peter-halket",
   "martin-bircks-youth",
   "bliss",
@@ -241,12 +245,12 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^When the doctor had gone/,
     },
     "on-a-chinese-screen": {
-      scene: /My Lady/i,
-      opening: /^"I really think I can make something of it," she said/,
+      scene: /Rising of the Curtain/i,
+      opening: /^You come to the row of hovels/,
     },
     futility: {
-      scene: /Sisters/i,
-      opening: /^It was somewhat in the manner of an Ibsen drama/,
+      scene: /Part I/i,
+      opening: /^And then it struck me that the only thing to do was to fit all this into a book/,
     },
     "poison-tree": {
       scene: /storm/i,
@@ -429,18 +433,14 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       );
     }
     if (id === "attendants-confession") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /Here it is\.?$/);
-      assert.doesNotMatch(
-        packed.breaths.map((b) => b.text).join(" "),
-        /Great Mogul|dead man's shoes|dead man’s shoes/i,
-      );
+      assert.equal(packed.scenes.length, 1);
+      assert.equal(packed.breaths.length, 58);
+      assert.match(packed.scenes[0]?.title ?? "", /Attendant/);
     }
     if (id === "rashomon") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /besides this single man, there was no one\.?$/);
-      assert.doesNotMatch(
-        packed.breaths.map((b) => b.text).join(" "),
-        /earthquakes, cyclones, fires and famines|desolation was extraordinary/i,
-      );
+      assert.equal(packed.scenes.length, 1);
+      assert.equal(packed.breaths.length, 124);
+      assert.match(packed.scenes[0]?.title ?? "", /Rashōmon/);
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "high-wind-jamaica") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /lashed permanently open by a rank plant\.?$/);
@@ -464,7 +464,9 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       );
     }
     if (id === "on-a-chinese-screen") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /Tunbridge Wells\."?$/);
+      assert.equal(packed.scenes[0]?.title, "The Rising of the Curtain");
+      assert.equal(packed.scenes.length, 57);
+      assert.equal(packed.breaths.length, 569);
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "futility") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /the only man who really mattered in the world/);
@@ -679,109 +681,13 @@ test("Silhouettes opens in sentence case, not PG first-word ALL-CAPS", () => {
   }
 });
 
-test("The Attendant’s Confession opens in sentence case and stops before the Mogul flourish", () => {
-  const work = SHELF.find((item) => item.id === "attendants-confession");
-  assert.ok(work);
-  assert.equal(work!.local, true);
-  assert.equal(isBoundLocal(work!), true);
-  assert.equal(work!.gutenberg, 21040);
-  assert.match(work!.opening ?? "", /^So it really seems to you/);
-  const packed = JSON.parse(
-    readFileSync(new URL("./openings/attendants-confession.json", import.meta.url), "utf8"),
-  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
-  const full = JSON.parse(
-    readFileSync(new URL("./texts/attendants-confession.json", import.meta.url), "utf8"),
-  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
-  assert.match(packed.scenes[0]?.title ?? "", /A human document/i);
-  assert.match(packed.scenes[0]?.reentry ?? "", /^So it really seems to you/);
-  assert.equal(packed.breaths.at(-1)?.text, "Here it is.");
-  assert.equal(
-    packed.breaths.some((breath) => /Great Mogul/.test(breath.text)),
-    false,
-    "open-at should stop before the Mogul/shoes flourish",
-  );
-  assert.match(full.breaths[0]?.text ?? "", /^So it really seems to you/);
-  assert.match(full.breaths.at(-1)?.text ?? "", /Blessed are they who possess/);
-  assert.equal(
-    full.breaths.some((breath) => /fortune-teller/i.test(breath.text)),
-    false,
-    "full text should end before The Fortune-Teller",
-  );
-  for (const pack of [packed, full]) {
-    const joined = pack.breaths.map((breath) => breath.text).join("\n");
-    assert.doesNotMatch(joined, /project gutenberg/i);
-    const decorative = pack.breaths.filter((breath) => {
-      const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
-      return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
-    });
-    assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
-  }
-});
-
-test("Rashōmon opens in sentence case and binds only the title story", () => {
-  const work = SHELF.find((item) => item.id === "rashomon");
-  assert.ok(work);
-  assert.equal(work!.local, true);
-  assert.equal(isBoundLocal(work!), true);
-  assert.equal(work!.gutenberg, 78105);
-  assert.equal(work!.title, "Rashōmon");
-  assert.match(work!.opening ?? "", /^It was evening\./);
-  const packed = JSON.parse(
-    readFileSync(new URL("./openings/rashomon.json", import.meta.url), "utf8"),
-  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
-  const full = JSON.parse(
-    readFileSync(new URL("./texts/rashomon.json", import.meta.url), "utf8"),
-  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
-  assert.match(packed.scenes[0]?.title ?? "", /Evening under Rashōmon/i);
-  assert.match(packed.scenes[0]?.reentry ?? "", /^It was evening\./);
-  assert.equal(packed.breaths.at(-1)?.text, "All the same, besides this single man, there was no one.");
-  assert.equal(
-    packed.breaths.some((breath) => /earthquakes, cyclones, fires and famines/.test(breath.text)),
-    false,
-    "open-at should stop before the calamity catalogue",
-  );
-  assert.match(full.breaths[0]?.text ?? "", /^It was evening\./);
-  assert.match(full.breaths.at(-1)?.text ?? "", /streets of Kyōto to rob/);
-  assert.equal(
-    full.breaths.some((breath) => /\bLICE\b|Mori Gonnoshin|twenty-sixth day of the eleventh/.test(breath.text)),
-    false,
-    "full text should bind only Rashōmon, not later stories in PG 78105",
-  );
-  for (const pack of [packed, full]) {
-    const joined = pack.breaths.map((breath) => breath.text).join("\n");
-    assert.doesNotMatch(joined, /project gutenberg/i);
-    const decorative = pack.breaths.filter((breath) => {
-      const withoutRoman = breath.text.replace(/\b(?:I{1,3}|IV|VI{0,3}|IX|X)\b/g, "");
-      return /\b[A-Z]{2,}[A-Z'’]*\b/.test(withoutRoman);
-    });
-    assert.deepEqual(decorative, [], `leftover ALL-CAPS: ${decorative.map((b) => b.text).join(" | ")}`);
-  }
-});
-
-
-test("On a Chinese Screen opens on My Lady’s Parlour and binds only that sketch", () => {
-  const work = SHELF.find((item) => item.id === "on-a-chinese-screen");
-  assert.ok(work);
-  assert.equal(work!.local, true);
-  assert.equal(isBoundLocal(work!), true);
-  assert.equal(work!.gutenberg, 48788);
-  assert.equal(work!.title, "On a Chinese Screen");
-  assert.equal(work!.author, "W. Somerset Maugham");
-  assert.match(work!.opening ?? "", /^"I really think I can make something of it," she said/);
-  const packed = JSON.parse(
-    readFileSync(new URL("./openings/on-a-chinese-screen.json", import.meta.url), "utf8"),
-  ) as { scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
-  const full = JSON.parse(
-    readFileSync(new URL("./texts/on-a-chinese-screen.json", import.meta.url), "utf8"),
-  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
-  assert.match(packed.scenes[0]?.title ?? "", /My Lady/i);
-  assert.match(packed.scenes[0]?.reentry ?? "", /^"I really think I can make something of it," she said/);
-  assert.match(packed.breaths.at(-1)?.text ?? "", /Tunbridge Wells\."?$/);
-  assert.equal(full.breaths.length, packed.breaths.length, "full bind is the Host sit, not the book");
-  assert.equal(work!.breaths, packed.breaths.length);
-  for (const pack of [packed, full]) {
-    const joined = pack.breaths.map((breath) => breath.text).join("\n");
-    assert.doesNotMatch(joined, /project gutenberg/i);
+test("BATCH-2 CLEAR shorts load full text with no opening stub", () => {
+  for (const id of ["attendants-confession", "rashomon", "on-a-chinese-screen"] as const) {
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
   }
 });
 
@@ -1198,13 +1104,13 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       author: "Elizabeth von Arnim",
       year: 1922,
       opening: /^It began in a Woman/,
-      breaths: 4371,
+      breaths: 1540,
     },
     "high-wind-jamaica": {
       gutenberg: 75530,
       title: "A High Wind in Jamaica",
       opening: /^One of the fruits of Emancipation/,
-      breaths: 3167,
+      breaths: 1515,
       intro: /warn the room first/,
     },
     vera: {
@@ -1213,7 +1119,7 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       author: "Elizabeth von Arnim",
       year: 1921,
       opening: /^When the doctor had gone/,
-      breaths: 3495,
+      breaths: 1726,
     },
     "noli-me-tangere": {
       gutenberg: 6737,
@@ -1252,15 +1158,42 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       gutenberg: 77253,
       title: "Futility",
       author: "William Gerhardie",
-      opening: /^It was somewhat in the manner of an Ibsen drama/,
-      breaths: 4334,
+      opening: /^And then it struck me that the only thing to do was to fit all this into a book/,
+      breaths: 1523,
     },
     "poison-tree": {
       gutenberg: 17455,
       title: "The Poison Tree",
-      author: "Bankim Chandra Chatterjee (tr. Miriam S. Knight)",
+      author: "Bankim Chandra Chatterjee",
       opening: /^Nagendra Natha Datta is about to travel by boat/,
-      breaths: 3090,
+      breaths: 1027,
+    },
+    "attendants-confession": {
+      gutenberg: 21040,
+      title: "The Attendant’s Confession",
+      author: "Machado de Assis",
+      year: 1907,
+      opening: /^So it really seems to you that what happened to me in 1860 is worth while writing down/,
+      breaths: 58,
+      scenes: 1,
+    },
+    rashomon: {
+      gutenberg: 78105,
+      title: "Rashōmon",
+      author: "Ryūnosuke Akutagawa",
+      year: 1915,
+      opening: /^It was evening/,
+      breaths: 124,
+      scenes: 1,
+    },
+    "on-a-chinese-screen": {
+      gutenberg: 48788,
+      title: "On a Chinese Screen",
+      author: "W. Somerset Maugham",
+      year: 1922,
+      opening: /^You come to the row of hovels/,
+      breaths: 569,
+      scenes: 57,
     },
     "trooper-peter-halket": {
       gutenberg: 1431,
@@ -1446,7 +1379,7 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
     if ("year" in want) assert.equal(work!.year, want.year, id);
     assert.match(work!.opening ?? "", want.opening, `${id} shelf opening`);
     const full = textWork(id);
-    assert.ok(full.breaths.length > 100, `${id} full bind`);
+    assert.ok(full.breaths.length > 50, `${id} full bind`);
     assert.equal(work!.breaths, full.breaths.length, `${id} shelf breaths`);
     if ("breaths" in want) assert.equal(full.breaths.length, want.breaths, id);
     if ("scenes" in want) assert.equal(full.scenes.length, want.scenes, id);
