@@ -51,6 +51,8 @@ const FULL_NOVEL_NO_STUB = [
   "strange-tales",
   "short-stories-from-the-balkans",
   "the-awakening",
+  "quicksand",
+  "a-hundred-and-seventy-chinese-poems",
 ] as const;
 
 const FULL_NOVEL_NO_STUB_SET = new Set<string>(FULL_NOVEL_NO_STUB);
@@ -215,7 +217,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^\[A room which is still called the nursery\./,
     },
     quicksand: {
-      scene: /Chapter I.*Closed door/i,
+      scene: /^Chapter I$/,
       opening: /^Helga Crane sat alone in her room, which at that hour, eight in the evening, was in soft gloom/,
     },
     "attendants-confession": {
@@ -416,10 +418,14 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     const early = packed.breaths.slice(0, 12).map((b) => b.text).join(" ");
     assert.doesNotMatch(early, /project gutenberg|standard ebooks|table of contents|transcriber/i, id);
     if (id === "quicksand") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /never opened her door\.?$/);
-      assert.doesNotMatch(
+      assert.equal(packed.scenes[0]?.title, "Chapter I");
+      assert.equal(packed.scenes.length, 25);
+      assert.equal(packed.breaths.length, 685);
+      assert.match(packed.breaths[0]?.text ?? "", /^Helga Crane sat alone/);
+      assert.match(packed.breaths.at(-1)?.text ?? "", /fifth child/);
+      assert.match(
         packed.breaths.map((b) => b.text).join(" "),
-        /an observer would have thought/i,
+        /An observer would have thought her well fitted/,
       );
     }
     if (id === "attendants-confession") {
@@ -603,8 +609,11 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       );
     }
     if (id === "a-hundred-and-seventy-chinese-poems") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /carry me back to you!$/);
-      assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /\bBattle\b/);
+      assert.equal(packed.scenes[0]?.title, "Winter Night");
+      assert.notEqual(packed.scenes[0]?.title, "Battle");
+      const winter = packed.breaths.slice(0, 4).map((b) => b.text).join(" ");
+      assert.match(winter, /carry me back to you!$/);
+      assert.doesNotMatch(winter, /\bBattle\b/);
     }
     if (id === "dubliners") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /arranging his opinion in his mind\.?$/);
@@ -843,17 +852,28 @@ test("Bliss is the full collection bind; bliss-and-other-stories stays its own s
   assert.equal(full.scenes.length, 14);
   assert.equal(full.breaths.length, 1603);
   assert.equal(work!.breaths, full.breaths.length);
-  assert.match(full.scenes.map((scene) => scene.title).join(" "), /Prelude/);
-  assert.match(full.scenes.map((scene) => scene.title).join(" "), /^[\s\S]*Bliss/);
-  assert.match(full.breaths.map((breath) => breath.text).join("\n"), /Although Bertha Young was thirty/);
+  assert.equal(full.scenes[0]?.title, "Bliss");
+  assert.notEqual(full.scenes[0]?.title, "Prelude");
+  assert.ok(full.scenes.some((scene) => scene.title === "Prelude"));
+  assert.ok(full.scenes.findIndex((scene) => scene.title === "Prelude") > 0);
+  assert.match(full.breaths[0]?.text ?? "", /^Although Bertha Young was thirty/);
   assert.doesNotMatch(work!.intro ?? "", /Featured-track|Recommend|cold-open/i);
   const collection = SHELF.find((item) => item.id === "bliss-and-other-stories");
   assert.ok(collection);
   assert.equal(collection!.local, true);
-  assert.equal(collection!.breaths, 5240);
+  assert.match(collection!.opening ?? "", /^Although Bertha Young was thirty/);
+  assert.equal(collection!.breaths, 1603);
+  assert.equal(existsSync(new URL("./openings/bliss-and-other-stories.json", import.meta.url)), false);
+  const other = JSON.parse(
+    readFileSync(new URL("./texts/bliss-and-other-stories.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string }[]; breaths: { text: string }[] };
+  assert.equal(other.scenes[0]?.title, "Bliss");
+  assert.match(other.breaths[0]?.text ?? "", /^Although Bertha Young was thirty/);
+  assert.equal(other.scenes.length, 14);
+  assert.equal(other.breaths.length, 1603);
 });
 
-test("A Hundred and Seventy Chinese Poems rituals open on Winter Night; the book opens on Battle", () => {
+test("A Hundred and Seventy Chinese Poems opens on Winter Night, not Battle", () => {
   const work = SHELF.find((item) => item.id === "a-hundred-and-seventy-chinese-poems");
   assert.ok(work);
   assert.equal(work!.local, true);
@@ -863,23 +883,26 @@ test("A Hundred and Seventy Chinese Poems rituals open on Winter Night; the book
   assert.equal(work!.author, "Various (tr. Arthur Waley)");
   assert.equal(work!.year, 1918);
   assert.match(work!.opening ?? "", /^My bed is so empty/);
-  const packed = JSON.parse(
-    readFileSync(new URL("./openings/a-hundred-and-seventy-chinese-poems.json", import.meta.url), "utf8"),
-  ) as { note: string; scenes: { title: string; reentry: string }[]; breaths: { text: string }[] };
+  assert.equal(
+    existsSync(new URL("./openings/a-hundred-and-seventy-chinese-poems.json", import.meta.url)),
+    false,
+  );
   const full = JSON.parse(
     readFileSync(new URL("./texts/a-hundred-and-seventy-chinese-poems.json", import.meta.url), "utf8"),
-  ) as { note: string; scenes: { title: string }[]; breaths: { text: string }[] };
-  assert.match(packed.note, /Winter Night/);
-  assert.match(packed.note, /not Battle|Never Battle/);
-  assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
-  assert.match(full.note, /Battle/);
+  ) as { note: string; scenes: { id: string; title: string }[]; breaths: { sceneId: string; text: string }[] };
   assert.match(full.note, /Winter Night/);
-  assert.match(full.scenes[0]?.title ?? "", /^Battle$/);
-  assert.match(packed.scenes[0]?.title ?? "", /Winter Night/i);
-  assert.match(packed.scenes[0]?.reentry ?? "", /^My bed is so empty/);
-  assert.match(packed.breaths.at(-1)?.text ?? "", /carry me back to you!$/);
-  assert.doesNotMatch(packed.breaths.map((breath) => breath.text).join(" "), /\bBattle\b/);
-  assert.ok(full.breaths.length > packed.breaths.length, "later lyrics stay after the sit");
+  assert.match(full.note, /not Battle/);
+  assert.doesNotMatch(full.note, /open on Battle/i);
+  assert.equal(full.scenes[0]?.title, "Winter Night");
+  assert.notEqual(full.scenes[0]?.title, "Battle");
+  assert.ok(full.scenes.some((scene) => scene.title === "Battle"));
+  const winter = full.breaths.filter((breath) => breath.sceneId === full.scenes[0]?.id);
+  assert.equal(winter.length, 4);
+  assert.match(winter[0]?.text ?? "", /^My bed is so empty/);
+  assert.match(winter.at(-1)?.text ?? "", /carry me back to you!$/);
+  assert.doesNotMatch(winter.map((breath) => breath.text).join(" "), /\bBattle\b/);
+  assert.equal(full.scenes.length, 140);
+  assert.equal(full.breaths.length, 3196);
   assert.equal(work!.breaths, full.breaths.length);
 });
 
@@ -1386,6 +1409,27 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       last: /musky odor of pinks filled the air\.$/,
       intro: /Chapter I/,
     },
+    quicksand: {
+      title: "Quicksand",
+      author: "Nella Larsen",
+      year: 1928,
+      opening: /^Helga Crane sat alone in her room, which at that hour, eight in the evening, was in soft gloom/,
+      breaths: 685,
+      scenes: 25,
+      last: /fifth child/,
+      intro: /lamp-lit room/,
+    },
+    "a-hundred-and-seventy-chinese-poems": {
+      gutenberg: 42290,
+      title: "A Hundred and Seventy Chinese Poems",
+      author: "Various (tr. Arthur Waley)",
+      year: 1918,
+      opening: /^My bed is so empty/,
+      breaths: 3196,
+      scenes: 140,
+      last: /^THE END$/,
+      intro: /Winter Night/,
+    },
   } as const;
 
   assert.deepEqual([...FULL_NOVEL_NO_STUB].sort(), Object.keys(expect).sort());
@@ -1620,6 +1664,11 @@ test("Salon noon CLEAR ×5 load as local full binds on the Host open", () => {
     assert.doesNotMatch(full.breaths[0]?.text ?? "", want.absent, id);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /Featured/i, id);
   }
+  const hero = textWork("a-hero-of-our-time");
+  const dukhan = hero.breaths.find((breath) => /stopped at a dukhan/.test(breath.text));
+  assert.ok(dukhan);
+  assert.match(dukhan.text, /stopped at a dukhan\. About a score/);
+  assert.doesNotMatch(dukhan.text, /\[\d+\]/);
   const strange = textWork("strange-tales");
   assert.equal(strange.scenes[0]?.title, "The Painted Wall");
   assert.ok(strange.scenes.some((scene) => scene.title === "Examination for the Post of Guardian Angel"));
@@ -1636,7 +1685,7 @@ test("Salon PM CLEAR ×5 load as local full binds on the Host open", () => {
   const expect = {
     tropic: {
       scenes: 10,
-      breaths: 3260,
+      breaths: 3259,
       opening: /^The whistle blew for eleven o'clock\.$/,
       scene: /^Drought$/,
       absent: /Updated editions will replace/,
@@ -1644,7 +1693,7 @@ test("Salon PM CLEAR ×5 load as local full binds on the Host open", () => {
     "there-is-confusion": {
       scenes: 36,
       breaths: 2014,
-      opening: /^JOANNA’S first consciousness/,
+      opening: /^Joanna’s first consciousness/,
       scene: /^Chapter I$/,
       absent: /^But alas for poor Joel!/,
     },
@@ -1685,6 +1734,13 @@ test("Salon PM CLEAR ×5 load as local full binds on the Host open", () => {
     assert.match(full.breaths[0]?.text ?? "", want.opening, id);
     assert.doesNotMatch(full.breaths.map((breath) => breath.text).join("\n"), want.absent, id);
   }
+  const tropic = textWork("tropic");
+  const droughtEnd = tropic.breaths.findIndex((breath) => breath.text.startsWith("The sun was slowly dying."));
+  assert.ok(droughtEnd > 0);
+  assert.doesNotMatch(
+    tropic.breaths.slice(0, droughtEnd).map((breath) => breath.text).join("\n"),
+    /FOOTNOTES|PANAMA GOLD/,
+  );
   const confusion = textWork("there-is-confusion");
   const knee = confusion.breaths.findIndex((breath) => /father’s knee/.test(breath.text));
   const mammy = confusion.breaths.findIndex((breath) => /Mammy, I’ll be a great man/.test(breath.text));

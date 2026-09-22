@@ -12,7 +12,7 @@ const SKIP_LINE =
 /** First-scene titles for the full local bind (ritual openings may differ). */
 export const FIRST_SCENE_TITLE: Record<string, string> = {
   gitanjali: "Poem 1",
-  "a-hundred-and-seventy-chinese-poems": "Battle",
+  "a-hundred-and-seventy-chinese-poems": "Winter Night",
   "the-weary-blues": "Proem",
   harmonium: "The Snow Man",
   "a-few-figs-from-thistles": "First Fig",

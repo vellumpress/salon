@@ -88,9 +88,11 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "the-awakening",
     "tropic",
     "there-is-confusion",
-    "buddenbrooks",
     "miss-lulu-bett",
   ]);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
+  assert.equal(curatorialTrack("buddenbrooks"), "later");
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("quicksand"), "featured");
   assert.equal(curatorialTrack("the-house-of-mirth"), "featured");
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("quicksand"), false);
@@ -1123,17 +1125,17 @@ test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
     tropic: {
       track: "next",
       opening: /^The whistle blew for eleven o'clock\.$/,
-      breaths: 3260,
+      breaths: 3259,
       forYou: false,
     },
     "there-is-confusion": {
       track: "next",
-      opening: /^JOANNA’S first consciousness/,
+      opening: /^Joanna’s first consciousness/,
       breaths: 2014,
       forYou: true,
     },
     buddenbrooks: {
-      track: "next",
+      track: "later",
       opening: /^“And--and--what comes next\?”$/,
       breaths: 1845,
       forYou: false,
@@ -1186,8 +1188,8 @@ test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
   const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
   assert.ok(next.indexOf("tropic") > next.indexOf("the-awakening"));
   assert.ok(next.indexOf("there-is-confusion") > next.indexOf("tropic"));
-  assert.ok(next.indexOf("buddenbrooks") > next.indexOf("there-is-confusion"));
-  assert.ok(next.indexOf("miss-lulu-bett") > next.indexOf("buddenbrooks"));
+  assert.ok(next.indexOf("miss-lulu-bett") > next.indexOf("there-is-confusion"));
+  assert.equal(next.includes("buddenbrooks"), false);
   assert.equal(next.includes("color"), false);
   assert.deepEqual(forYou!.workIds.slice(0, 3), [
     "the-house-of-mirth",

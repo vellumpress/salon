@@ -315,7 +315,7 @@ export const SHELF: ShelfWork[] = [
     local: true,
     gutenberg: 71465,
     opening: "The whistle blew for eleven o'clock.",
-    breaths: 3260,
+    breaths: 3259,
     intro:
       "The whistle blew for eleven o'clock. Open Drought — a Barbados quarry at eleven, then the walk home through the marl. Period words for Black workers are already in this stretch; name them if you Host further. The stories continue.",
   },
@@ -349,13 +349,13 @@ export const SHELF: ShelfWork[] = [
     year: 1928,
     form: "novel",
     language: "English",
-    minutes: 421,
+    minutes: 160,
     local: true,
     opening:
       "Helga Crane sat alone in her room, which at that hour, eight in the evening, was in soft gloom.",
-    breaths: 3366,
+    breaths: 685,
     intro:
-      "Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door. Quicksand begins in intentional isolation after a taxing day among an unkind faculty.\n\nNella Larsen’s 1928 novel (Standard Ebooks / Wikisource local bind) is the worldly non-NY backup after Mirth: a character study, Copenhagen path ahead. Sit in the lamp-lit room. Stop before the observer portrait.",
+      "Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door. Quicksand begins in intentional isolation after a taxing day among an unkind faculty.\n\nNella Larsen’s 1928 novel (Standard Ebooks / Wikisource local bind) is the full book: Chapter I through XXV, lamp-lit room first. The novel continues.",
   },
   { id: "ryder", title: "Ryder", author: "Djuna Barnes", year: 1928, form: "novel", language: "English", minutes: 160 },
   {
@@ -1186,7 +1186,7 @@ export const SHELF: ShelfWork[] = [
     gutenberg: 42290,
     opening:
       "My bed is so empty that I keep on waking up: As the cold increases, the night-wind begins to blow.",
-    breaths: 3187,
+    breaths: 3196,
     intro:
       "Gentler China lyrics for a night sit. Open the Winter Night pack — not Battle.",
   },
@@ -1256,7 +1256,7 @@ export const SHELF: ShelfWork[] = [
       "My candle burns at both ends. This sit is First Fig and Recuerdo — the ferry, the apples, the subway fare — about five minutes. Each poem is its own chapter; the book continues.",
   },
   { id: "a-voyage-to-arcturus", title: "A Voyage to Arcturus", author: "David Lindsay", year: 1920, form: "novel", language: "English", local: true, opening: "Chapter 1. THE SÉANCE", breaths: 7730, minutes: 966, gutenberg: 1329 },
-  { id: "bliss-and-other-stories", title: "Bliss, and Other Stories", author: "Katherine Mansfield", year: 1920, form: "stories", language: "English", minutes: 655, local: true, opening: "There was not an inch of room for Lottie and Kezia in the buggy.", breaths: 5240 },
+  { id: "bliss-and-other-stories", title: "Bliss, and Other Stories", author: "Katherine Mansfield", year: 1920, form: "stories", language: "English", minutes: 160, local: true, opening: "Although Bertha Young was thirty she still had moments like this when she wanted to run instead of walk, to take dancing steps on and off the pavement, to bowl a hoop, to throw something up in the air and catch it again, or to stand still and laugh at—nothing—at nothing, simply.", breaths: 1603 },
   {
     id: "bliss",
     title: "Bliss",
@@ -1909,7 +1909,7 @@ export const SHELF: ShelfWork[] = [
     local: true,
     gutenberg: 78915,
     opening:
-      "JOANNA’S first consciousness of the close understanding which existed between herself and her father dated back to a time when she was very young. Her mother, her brothers and her sister had gone to church, and Joanna, suffering from some slight childish complaint, had been left home. She had climbed upon her father’s knee demanding a story.",
+      "Joanna’s first consciousness of the close understanding which existed between herself and her father dated back to a time when she was very young. Her mother, her brothers and her sister had gone to church, and Joanna, suffering from some slight childish complaint, had been left home. She had climbed upon her father’s knee demanding a story.",
     breaths: 2014,
     intro:
       "Joanna climbs onto her father’s knee and asks for a story about somebody great. The sit runs through Mammy’s chair and stops before “But alas for poor Joel!” Chapter I continues.",
