@@ -5,7 +5,7 @@ import { fillClass, fillInk, planeOf } from "@/lib/mondrian";
 import { friendKeptLine, friendsFeed, searchPeople, youCard } from "@/lib/friends";
 import { renameActiveHandle } from "@/lib/reader-account";
 import { formatHandle, handleError, normalizeHandle, readerByHandle } from "@/lib/social";
-import { liveBackendEnabled, salonShareText, salonShareTitle } from "@/lib/site";
+import { APP_NAME, liveBackendEnabled, salonShareText, salonShareTitle } from "@/lib/site";
 import { useVellum } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import { encodeEchoInvite } from "@/lib/together-keep";
@@ -527,7 +527,7 @@ function FriendsPage() {
         {!liveBackendEnabled ? (
           <p className="px-4 py-6 font-serif text-sm text-ink/60">
             Handles, together-keeps, sits, and tonight-notes stay on this device.
-            Share the link so another phone can hold the same sitting. A hosted Salon can sync them later.
+            Share the link so another phone can hold the same sitting. A hosted {APP_NAME} can sync them later.
           </p>
         ) : (
           <p className="px-4 py-6 font-serif text-sm text-ink/60">

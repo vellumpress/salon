@@ -33,9 +33,9 @@ test("publicUrl is origin + Pages base when window is present", () => {
   }
 });
 
-test("share copy keeps Salon on the title and the body", () => {
-  assert.equal(salonShareTitle("Passing"), "Passing · Salon");
-  assert.equal(salonShareTitle("Salon"), "Salon");
-  assert.match(salonShareText("The envelope is still unopened."), /Salon/);
+test("share copy keeps Vellum on the title and the body", () => {
+  assert.equal(salonShareTitle("Passing"), "Passing · Vellum");
+  assert.equal(salonShareTitle("Vellum"), "Vellum");
+  assert.match(salonShareText("The envelope is still unopened."), /Vellum/);
   assert.match(salonShareText("The envelope is still unopened."), /envelope/);
 });

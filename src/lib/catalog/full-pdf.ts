@@ -32,9 +32,9 @@ export const FULL_TEXT_WORKS: ShelfWork[] = SHELF.filter((item) => isBoundReadab
 
 export const LOCAL_WORKS: ShelfWork[] = SHELF.filter((item) => isBoundLocal(item));
 
-/** Homepage classics strip — remakes live on the Adapted by Salon lane. */
+/** Homepage classics strip — remakes live on the Adapted by Vellum lane. */
 export const CLASSIC_LOCAL_WORKS: ShelfWork[] = LOCAL_WORKS.filter(
-  (item) => !isAdaptedBySalon(item.id) && item.author !== "Salon",
+  (item) => !isAdaptedBySalon(item.id) && item.author !== "Vellum" && item.author !== "Salon",
 );
 
 export const ADAPTED_WORKS: ShelfWork[] = ADAPTED_BY_SALON_IDS.flatMap((id) => {

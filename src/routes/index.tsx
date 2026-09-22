@@ -12,6 +12,7 @@ import {
 import { fillClass, fillInk, mosaicFills, type Fill } from "@/lib/mondrian";
 import { useVisitSeed } from "@/lib/use-visit-seed";
 import { prefetchWork } from "@/lib/works";
+import { APP_NAME } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
@@ -77,7 +78,7 @@ function Home() {
     >
       <div className="cell-mark flex bg-paper">
         <span className="type-mark flex h-full min-w-0 flex-1 items-center self-stretch bg-paper px-4 text-ink">
-          Salon
+          {APP_NAME}
         </span>
         <ResumeLink />
         <YouFriendsMark />
