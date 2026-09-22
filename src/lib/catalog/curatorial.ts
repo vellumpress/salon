@@ -55,6 +55,10 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * (soft inflation) — not Next, not Featured. Color is Rituals only — Yet Do
  * I Marvel, then Incident, poem chapters — not Next, not Featured.
  * Cold-open stays Mirth → Quicksand → Botchan.
+ * BATCH-2b CLEAR (14) sits on Next after that queue, and on Rituals / For you
+ * after the cold-open trio. Mr. Fortune’s Maggot stays locked recommend —
+ * already Featured, not added again. Noli stays Next + unwind. Never move
+ * the cold-open.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -94,6 +98,18 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "young-adventure",
   "the-tempers",
   "the-crescent-moon",
+  "cousin-betty",
+  "eugenie-grandet",
+  "heart-of-darkness",
+  "hidden-force",
+  "lady-windermeres-fan",
+  "rosmersholm",
+  "salome",
+  "the-crux",
+  "the-man-of-property",
+  "the-napoleon-of-notting-hill",
+  "the-pit",
+  "the-village",
 ] as const;
 
 /**

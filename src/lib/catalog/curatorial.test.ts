@@ -103,6 +103,18 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "young-adventure",
     "the-tempers",
     "the-crescent-moon",
+    "cousin-betty",
+    "eugenie-grandet",
+    "heart-of-darkness",
+    "hidden-force",
+    "lady-windermeres-fan",
+    "rosmersholm",
+    "salome",
+    "the-crux",
+    "the-man-of-property",
+    "the-napoleon-of-notting-hill",
+    "the-pit",
+    "the-village",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1211,8 +1223,12 @@ test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
     "quicksand",
     "botchan",
   ]);
-  assert.equal(forYou!.workIds.at(-2), "there-is-confusion");
-  assert.equal(forYou!.workIds.at(-1), "miss-lulu-bett");
+  assert.equal(
+    forYou!.workIds.indexOf("miss-lulu-bett"),
+    forYou!.workIds.indexOf("there-is-confusion") + 1,
+  );
+  assert.equal(forYou!.workIds[forYou!.workIds.indexOf("miss-lulu-bett") + 1], "cousin-betty");
+  assert.equal(forYou!.workIds.at(-1), "the-village");
   assert.equal(sleep!.workIds[0], "quicksand");
 });
 

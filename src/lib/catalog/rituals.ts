@@ -237,6 +237,30 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Praised be Jesus Christ! — Agatha and the priest on the roadside, then out into the wide world across bare autumnal fields. Winter is coming. First sit is that Chapter I greeting; the Autumn volume continues.",
   cane:
     "Karintha: her skin is like dusk on the eastern horizon. Skip Waldo Frank’s foreword. First sit ends on the dusk-song refrain; the Georgia cycle continues.",
+  "cousin-betty":
+    "After the dedication, Cousin Betty opens on the title and the Paris household that will not let go.",
+  "eugenie-grandet":
+    "Provincial houses that look like cloisters — Chapter I of Eugénie Grandet, before the gold tightens.",
+  "heart-of-darkness":
+    "The Nellie swings to her anchor on the Thames and waits. Part I opens there; the river talk continues.",
+  "hidden-force":
+    "The full moon wears the hue of tragedy over the tamarinds. Chapter I only; the Java novel continues.",
+  "lady-windermeres-fan":
+    "Lady Windermere’s Fan opens on the First Act, a London drawing room, before the fan changes hands.",
+  rosmersholm:
+    "The sitting-room at Rosmersholm, birch on the stove. Act 1 is the sit; the play continues.",
+  salome:
+    "How beautiful is the Princess Salomé to-night — the one-act opens on that terrace line.",
+  "the-crux":
+    "The back way into the house. Chapter I of Gilman’s The Crux; the westward move comes later.",
+  "the-man-of-property":
+    "A Forsyte family festival in full plumage — Chapter I, at home at Old Jolyon’s. The novel continues.",
+  "the-napoleon-of-notting-hill":
+    "The human race has been playing at children’s games. Book I, Chapter I; the boroughs come later.",
+  "the-pit":
+    "Eight o’clock in the Auditorium Theatre vestibule — Laura Dearborn still waiting. Chapter I; the wheat pit comes later.",
+  "the-village":
+    "Part One of Bunin’s village opens here. The provincial novel continues.",
 
 };
 
@@ -265,6 +289,18 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-awakening",
       "there-is-confusion",
       "miss-lulu-bett",
+      "cousin-betty",
+      "eugenie-grandet",
+      "heart-of-darkness",
+      "hidden-force",
+      "lady-windermeres-fan",
+      "rosmersholm",
+      "salome",
+      "the-crux",
+      "the-man-of-property",
+      "the-napoleon-of-notting-hill",
+      "the-pit",
+      "the-village",
     ],
   },
   {
@@ -357,6 +393,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-house-of-souls",
       "wallpaper",
       "silhouettes",
+      "heart-of-darkness",
+      "hidden-force",
+      "salome",
+      "the-pit",
+      "cousin-betty",
+      "rosmersholm",
     ],
   },
   {
@@ -385,6 +427,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "mountain-interval",
       "open-window-singapore",
       "the-nose-cape-town",
+      "eugenie-grandet",
+      "the-man-of-property",
+      "the-napoleon-of-notting-hill",
+      "the-crux",
+      "the-village",
+      "lady-windermeres-fan",
     ],
   },
   {
@@ -524,6 +572,18 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   buddenbrooks: 5,
   "miss-lulu-bett": 5,
   color: 5,
+  "cousin-betty": 5,
+  "eugenie-grandet": 5,
+  "heart-of-darkness": 5,
+  "hidden-force": 5,
+  "lady-windermeres-fan": 5,
+  rosmersholm: 5,
+  salome: 5,
+  "the-crux": 5,
+  "the-man-of-property": 5,
+  "the-napoleon-of-notting-hill": 5,
+  "the-pit": 5,
+  "the-village": 5,
 };
 
 export function ritualPitchFor(id: string): string | undefined {
