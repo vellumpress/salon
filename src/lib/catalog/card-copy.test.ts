@@ -16,7 +16,6 @@ const FULL_NOVEL_NO_STUB = [
   "the-painted-veil",
   "growth-of-the-soil",
   "the-good-soldier",
-  "nada-the-lily",
   "demian",
   "the-immoralist",
   "all-quiet-on-the-western-front",
@@ -312,7 +311,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^The long, long road over the moors/,
     },
     "nada-the-lily": {
-      scene: /Hidden name/i,
+      scene: /The Boy Chaka Prophesies/,
       opening: /^You ask me, my father/,
     },
     "all-quiet-on-the-western-front": {
@@ -557,10 +556,6 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "growth-of-the-soil") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /in search of peace\.?$/);
       assert.ok(packed.breaths.some((breath) => /\bLapp\b/.test(breath.text)));
-    }
-    if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "nada-the-lily") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /did any know my name\.?$/);
-      assert.ok(packed.breaths.some((breath) => /White Man/.test(breath.text)));
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "all-quiet-on-the-western-front") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /now that is decent\.?$/);
@@ -1067,15 +1062,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       year: 1915,
       opening: /^This is the saddest story I have ever heard/,
       breaths: 4104,
-    },
-    "nada-the-lily": {
-      gutenberg: 1207,
-      title: "Nada the Lily",
-      author: "H. Rider Haggard",
-      year: 1892,
-      opening: /^You ask me, my father/,
-      breaths: 1850,
-      intro: /White Man/,
     },
     demian: {
       gutenberg: 74222,
@@ -1930,7 +1916,6 @@ const TIER_B_BATCH_3_4 = [
   "when-god-laughs-and-other-stories",
   "actions-and-reactions",
   "chamber-music",
-  "green-mansions",
   "in-search-of-the-unknown",
   "in-the-seven-woods",
   "kim",
@@ -1951,7 +1936,7 @@ const TIER_B_BATCH_3_4 = [
 ] as const;
 
 test("Tier B batches 3–4 are local format-min binds, never Featured", () => {
-  assert.equal(TIER_B_BATCH_3_4.length, 43);
+  assert.equal(TIER_B_BATCH_3_4.length, 42);
   assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
     "the-house-of-mirth",
     "quicksand",

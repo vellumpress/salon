@@ -1,0 +1,508 @@
+{
+  "id": "nada-the-lily",
+  "title": "Nada the Lily",
+  "author": "H. Rider Haggard",
+  "year": "1892",
+  "note": "Project Gutenberg 1207 · Dedication dated 13 Sep 1891 on PG text; catalog year 1892 · Host: skip Dedication/Preface/Intro; imperialism note in HOST-OPENS",
+  "minutes": 1406,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I · The Boy Chaka Prophesies",
+      "place": "Chapter I · The Boy Chaka Prophesies",
+      "reentry": "You ask me, my father, to tell you the tale of the youth of Umslopogaas, holder of the iron Chieftainess, the axe Groan-maker, who was named Bulalio the Slaughterer, and of his love for Nada, the most beautiful of Zulu women.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II · Mopo Is In Trouble",
+      "place": "Chapter II · Mopo Is In Trouble",
+      "reentry": "Now, I must tell how my mother did what the boy Chaka had told her, and died quickly. For where his stick had struck her on the forehead there came a sore that would not be healed, and in the sore grew an abscess, and the abscess ate inward",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "You ask me, my father, to tell you the tale of the youth of Umslopogaas, holder of the iron Chieftainess, the axe Groan-maker, who was named Bulalio the Slaughterer, and of his love for Nada, the most beautiful of Zulu women."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "It is long; but you are here for many nights, and, if I live to tell it, it shall be told."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Strengthen your heart, my father, for I have much to say that is sorrowful, and even now, when I think of Nada the tears creep through the horn that shuts out my old eyes from light."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Do you know who I am, my father? You do not know. You think that I am an old, old witch-doctor named Zweete. So men have thought for many years, but that is not my name."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Few have known it, for I have kept it locked in my breast, lest, though I live now under the law of the White Man, and the Great Queen is my chieftainess, an assegai still might find this heart did any know my name."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Look at this hand, my father—no, not that which is withered with fire; look on this right hand of mine. You see it, though I who am blind cannot. But still, within me, I see it as it was once. Ay! I see it red and strong—red with the blood of two kings."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Listen, my father; bend your ear to me and listen. I am Mopo—ah! I felt you start; you start as the regiment of the Bees started when Mopo walked before their ranks, and from the assegai in his hand the blood of Chaka[1] dropped slowly to the earth."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "I am Mopo who slew Chaka the king. I killed him with Dingaan and Umhlangana the princes; but the wound was mine that his life crept out of, and but for me he would never have been slain. I killed him with the princes, but Dingaan, I and one other slew alone."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "What do you say? “Dingaan died by the Tongola.”"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Yes, yes, he died, but not there; he died on the Ghost Mountain; he lies in the breast of the old Stone Witch who sits aloft forever waiting for the world to perish. But I also was on the Ghost Mountain."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "In those days my feet still could travel fast, and vengeance would not let me sleep. I travelled by day, and by night I found him. I and another, we killed him—ah! ah!"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Why do I tell you this? What has it to do with the loves of Umslopogaas and Nada the Lily? I will tell you. I stabbed Chaka for the sake of my sister, Baleka, the mother of Umslopogaas, and because he had murdered my wives and children."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "I and Umslopogaas slew Dingaan for the sake of Nada, who was my daughter."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "There are great names in the story, my father. Yes, many have heard the names: when the Impis roared them out as they charged in battle, I have felt the mountains shake and seen the waters quiver in their sound."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "But where are they now? Silence has them, and the white men write them down in books. I opened the gates of distance for the holders of the names. They passed through and they are gone beyond. I cut the strings that tied them to the world. They fell off. Ha! ha! They fell off!"
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Perhaps they are falling still, perhaps they creep about their desolate kraals in the skins of snakes. I wish I knew the snakes that I might crush them with my heel. Yonder, beneath us, at the burying-place of kings, there is a hole."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "In that hole lie the bones of Chaka, the king who died for Baleka. Far away in Zululand there is a cleft upon the Ghost Mountain. At the foot of that cleft lie the bones of Dingaan, the king who died for Nada."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "It was far to fall and he was heavy; those bones of his are broken into little pieces. I went to see them when the vultures and the jackals had done their work. And then I laughed three times and came here to die."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "All that is long ago, and I have not died; though I wish to die and follow the road that Nada trod. Perhaps I have lived to tell you this tale, my father, that you may repeat it to the white men if you will. How old am I? Nay, I do not know."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Very, very old. Had Chaka lived he would have been as old as I.[2] None are living whom I knew when I was a boy. I am so old that I must hasten. The grass withers, and the winter comes. Yes, while I speak the winter nips my heart."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Well, I am ready to sleep in the cold, and perhaps I shall awake again in the spring."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Before the Zulus were a people—for I will begin at the beginning—I was born of the Langeni tribe. We were not a large tribe; afterwards, all our able-bodied men numbered one full regiment in Chaka’s army, perhaps there were between two and three thousand of them, but they were brave."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Now they are all dead, and their women and children with them,—that people is no more. It is gone like last month’s moon; how it went I will tell you by-and-bye."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Our tribe lived in a beautiful open country; the Boers, whom we call the Amaboona, are there now, they tell me. My father, Makedama, was chief of the tribe, and his kraal was built on the crest of a hill, but I was not the son of his head wife."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "One evening, when I was still little, standing as high as a man’s elbow only, I went out with my mother below the cattle kraal to see the cows driven in. My mother was very fond of these cows, and there was one with a white face that would follow her about."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "She carried my little sister Baleka riding on her hip; Baleka was a baby then. We walked till we met the lads driving in the cows. My mother called the white-faced cow and gave it mealie leaves which she had brought with her."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Then the boys went on with the cattle, but the white-faced cow stopped by my mother. She said that she would bring it to the kraal when she came home. My mother sat down on the grass and nursed her baby, while I played round her, and the cow grazed."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "Presently we saw a woman walking towards us across the plain. She walked like one who is tired. On her back was a bundle of mats, and she led by the hand a boy of about my own age, but bigger and stronger than I was."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "We waited a long while, till at last the woman came up to us and sank down on the veldt, for she was very weary. We saw by the way her hair was dressed that she was not of our tribe."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "“Greeting to you!” said the woman."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "“Good-morrow!” answered my mother. “What do you seek?”"
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "“Food, and a hut to sleep in,” said the woman. “I have travelled far.”"
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "“How are you named?—and what is your people?” asked my mother."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "“My name is Unandi: I am the wife of Senzangacona, of the Zulu tribe,” said the stranger."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "Now there had been war between our people and the Zulu people, and Senzangacona had killed some of our warriors and taken many of our cattle. So, when my mother heard the speech of Unandi she sprang up in anger."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "“You dare to come here and ask me for food and shelter, wife of a dog of a Zulu!” she cried; “begone, or I will call the girls to whip you out of our country.”"
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "The woman, who was very handsome, waited till my mother had finished her angry words; then she looked up and spoke slowly, “There is a cow by you with milk dropping from its udder; will you not even give me and my boy a gourd of milk?” And she took a gourd from her bundle and held it towards us."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "“I will not,” said my mother."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "“We are thirsty with long travel; will you not, then, give us a cup of water? We have found none for many hours.”"
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "“I will not, wife of a dog; go and seek water for yourself.”"
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "The woman’s eyes filled with tears, but the boy folded his arms on his breast and scowled. He was a very handsome boy, with bright black eyes, but when he scowled his eyes were like the sky before a thunderstorm."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "“Mother,” he said, “we are not wanted here any more than we were wanted yonder,” and he nodded towards the country where the Zulu people lived. “Let us be going to Dingiswayo; the Umtetwa people will protect us.”"
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "“Yes, let us be going, my son,” answered Unandi; “but the path is long, we are weary and shall fall by the way.”"
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "I heard, and something pulled at my heart; I was sorry for the woman and her boy, they looked so tired. Then, without saying anything to my mother, I snatched the gourd and ran with it to a little donga that was hard by, for I knew that there was a spring."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "Presently I came back with the gourd full of water. My mother wanted to catch me, for she was very angry, but I ran past her and gave the gourd to the boy."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "Then my mother ceased trying to interfere, only she beat the woman with her tongue all the while, saying that evil had come to our kraals from her husband, and she felt in her heart that more evil would come upon us from her son."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "Her *Ehlosé*[3] told her so. Ah! my father, her *Ehlosé* told her true. If the woman Unandi and her child had died that day on the veldt, the gardens of my people would not now be a wilderness, and their bones would not lie in the great gulley that is near U’Cetywayo’s kraal."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "While my mother talked I and the cow with the white face stood still and watched, and the baby Baleka cried aloud. The boy, Unandi’s son, having taken the gourd, did not offer the water to his mother."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "He drank two-thirds of it himself; I think that he would have drunk it all had not his thirst been slaked; but when he had done he gave what was left to his mother, and she finished it."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "Then he took the gourd again, and came forward, holding it in one hand; in the other he carried a short stick."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "“What is your name, boy?” he said to me as a big rich man speaks to one who is little and poor."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "“Mopo is my name,” I answered."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "“And what is the name of your people?”"
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "I told him the name of my tribe, the Langeni tribe."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "“Very well, Mopo; now I will tell you my name. My name is Chaka, son of Senzangacona, and my people are called the Amazulu. And I will tell you something more. I am little to-day, and my people are a small people."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "But I shall grow big, so big that my head will be lost in the clouds; you will look up and you shall not see it. My face will blind you; it will be bright like the sun; and my people will grow great with me; they shall eat up the whole world."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "And when I am big and my people are big, and we have stamped the earth flat as far as men can travel, then I will remember your tribe—the tribe of the Langeni, who would not give me and my mother a cup of milk when we were weary."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "You see this gourd; for every drop it can hold the blood of a man shall flow—the blood of one of your men. But because you gave me the water I will spare you, Mopo, and you only, and make you great under me."
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "You shall grow fat in my shadow. You alone I will never harm, however you sin against me; this I swear. But for that woman,” and he pointed to my mother, “let her make haste and die, so that I do not need to teach her what a long time death can take to come."
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "I have spoken.” And he ground his teeth and shook his stick towards us."
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "My mother stood silent awhile. Then she gasped out: “The little liar! He speaks like a man, does he? The calf lows like a bull. I will teach him another note—the brat of an evil prophet!” And putting down Baleka, she ran at the boy."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "Chaka stood quite still till she was near; then suddenly he lifted the stick in his hand, and hit her so hard on the head that she fell down. After that he laughed, turned, and went away with his mother Unandi."
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "These, my father, were the first words I heard Chaka speak, and they were words of prophecy, and they came true. The last words I heard him speak were words of prophecy also, and I think that they will come true."
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "Even now they are coming true. In the one he told how the Zulu people should rise. And say, have they not risen? In the other he told how they should fall; and they did fall. Do not the white men gather themselves together even now against U’Cetywayo, as vultures gather round a dying ox?"
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "The Zulus are not what they were to stand against them. Yes, yes, they will come true, and mine is the song of a people that is doomed."
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "But of these other words I will speak in their place."
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "I went to my mother. Presently she raised herself from the ground and sat up with her hands over her face. The blood from the wound the stick had made ran down her face on to her breast, and I wiped it away with grass."
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "She sat for a long while thus, while the child cried, the cow lowed to be milked, and I wiped up the blood with the grass. At last she took her hands away and spoke to me."
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "“Mopo, my son,” she said, “I have dreamed a dream. I dreamed that I saw the boy Chaka who struck me: he was grown like a giant. He stalked across the mountains and the veldt, his eyes blazed like the lightning, and in his hand he shook a little assegai that was red with blood."
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "He caught up people after people in his hands and tore them, he stamped their kraals flat with his feet. Before him was the green of summer, behind him the land was black as when the fires have eaten the grass."
+    },
+    {
+      "id": "s0-70",
+      "sceneId": "s0",
+      "text": "I saw our people, Mopo; they were many and fat, their hearts laughed, the men were brave, the girls were fair; I counted their children by the hundreds."
+    },
+    {
+      "id": "s0-71",
+      "sceneId": "s0",
+      "text": "I saw them again, Mopo. They were bones, white bones, thousands of bones tumbled together in a rocky place, and he, Chaka, stood over the bones and laughed till the earth shook. Then, Mopo, in my dream, I saw you grown a man."
+    },
+    {
+      "id": "s0-72",
+      "sceneId": "s0",
+      "text": "You alone were left of our people. You crept up behind the giant Chaka, and with you came others, great men of a royal look. You stabbed him with a little spear, and he fell down and grew small again; he fell down and cursed you."
+    },
+    {
+      "id": "s0-73",
+      "sceneId": "s0",
+      "text": "But you cried in his ear a name—the name of Baleka, your sister—and he died. Let us go home, Mopo, let us go home; the darkness falls.”"
+    },
+    {
+      "id": "s0-74",
+      "sceneId": "s0",
+      "text": "So we rose and went home. But I held my peace, for I was afraid, very much afraid."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Now, I must tell how my mother did what the boy Chaka had told her, and died quickly. For where his stick had struck her on the forehead there came a sore that would not be healed, and in the sore grew an abscess, and the abscess ate inwards till it came to the brain."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Then my mother fell down and died, and I cried very much, for I loved her, and it was dreadful to see her cold and stiff, with not a word to say however loudly I called to her. Well, they buried my mother, and she was soon forgotten."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "I only remembered her, nobody else did—not even Baleka, for she was too little—and as for my father he took another young wife and was content."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "After that I was unhappy, for my brothers did not love me, because I was much cleverer than they, and had greater skill with the assegai, and was swifter in running; so they poisoned the mind of my father against me and he treated me badly."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "But Baleka and I loved each other, for we were both lonely, and she clung to me like a creeper to the only tree in a plain, and though I was young, I learned this: that to be wise is to be strong, for though he who holds the assegai kills, yet he whose mind directs the battle is greater than he who kills."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Now I saw that the witch-finders and the medicine-men were feared in the land, and that everybody looked up to them, so that, even when they had only a stick in their hands, ten men armed with spears would fly before them."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Therefore I determined that I should be a witch-doctor, for they alone can kill those whom they hate with a word. So I learned the arts of the medicine-men."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "I made sacrifices, I fasted in the veldt alone, I did all those things of which you have heard, and I learned much; for there is wisdom in our magic as well as lies—and you know it, my father, else you had not come here to ask me about your lost oxen."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "So things went on till I was twenty years of age—a man full grown. By now I had mastered all I could learn by myself, so I joined myself on to the chief medicine-man of our tribe, who was named Noma. He was old, had one eye only, and was very clever."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "Of him I learned some tricks and more wisdom, but at last he grew jealous of me and set a trap to catch me. As it chanced, a rich man of a neighbouring tribe had lost some cattle, and came with gifts to Noma praying him to smell them out."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Noma tried and could not find them; his vision failed him. Then the headman grew angry and demanded back his gifts; but Noma would not give up that which he once had held, and hot words passed. The headman said that he would kill Noma; Noma said that he would bewitch the headman."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "“Peace,” I said, for I feared that blood would be shed. “Peace, and let me see if my snake will tell me where the cattle are.”"
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "“You are nothing but a boy,” answered the headman. “Can a boy have wisdom?”"
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "“That shall soon be known,” I said, taking the bones in my hand.[1]"
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "“Leave the bones alone!” screamed Noma. “We will ask nothing more of our snakes for the good of this son of a dog.”"
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "“He shall throw the bones,” answered the headman. “If you try to stop him, I will let sunshine through you with my assegai.” And he lifted his spear."
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "Then I made haste to begin; I threw the bones. The headman sat on the ground before me and answered my questions."
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "You know of these matters, my father—how sometimes the witch-doctor has knowledge of where the lost things are, for our ears are long, and sometimes his *Ehlosé* tells him, as but the other day it told me of your oxen. Well, in this case, my snake stood up."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "I knew nothing of the man’s cattle, but my Spirit was with me and soon I saw them all, and told them to him one by one, their colour, their age—everything."
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "I told him, too, where they were, and how one of them had fallen into a stream and lay there on its back drowned, with its forefoot caught in a forked root. As my *Ehlosé* told me so I told the headman."
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "Now, the man was pleased, and said that if my sight was good, and he found the cattle, the gifts should be taken from Noma and given to me; and he asked the people who were sitting round, and there were many, if this was not just."
+    }
+  ]
+}

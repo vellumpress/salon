@@ -353,7 +353,6 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "korean-folk-tales",
     "smoke-and-steel",
     "gods-trombones",
-    "hadji-murad",
     "anandamath",
     "lady-macbeth",
     "layla",
@@ -365,6 +364,9 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "a-passage-to-india",
     "mhudi",
     "maria",
+    "of-human-bondage",
+    "green-mansions",
+    "nada-the-lily",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -395,7 +397,7 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("the-painted-veil"), "later");
   assert.equal(curatorialTrack("the-good-soldier"), "later");
   assert.equal(curatorialTrack("growth-of-the-soil"), "later");
-  assert.equal(curatorialTrack("nada-the-lily"), "later");
+  assert.equal(curatorialTrack("nada-the-lily"), "next");
   assert.equal(curatorialTrack("all-quiet-on-the-western-front"), "next");
   assert.equal(curatorialTrack("we"), "later");
   assert.equal(curatorialTrack("the-story-of-gosta-berling"), "later");
@@ -1004,9 +1006,9 @@ test("Nada the Lily is a local before-sleep bind on Next, not locked recommend",
   const lane = RITUAL_LANES.find((item) => item.id === "before-sleep");
   assert.ok(lane?.workIds.includes("nada-the-lily"));
   assert.ok(lane!.workIds.indexOf("nada-the-lily") > lane!.workIds.indexOf("the-good-soldier"));
-  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("nada-the-lily"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("nada-the-lily"), true);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("nada-the-lily"), false);
-  assert.equal(curatorialTrack("nada-the-lily"), "later");
+  assert.equal(curatorialTrack("nada-the-lily"), "next");
 });
 
 test("All Quiet on the Western Front is a local before-sleep Next lead, not locked recommend", () => {
@@ -1485,12 +1487,13 @@ test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
     "quicksand",
     "botchan",
   ]);
-  assert.equal(forYou!.workIds.at(-7), "there-is-confusion");
-  assert.equal(forYou!.workIds.at(-6), "miss-lulu-bett");
-  assert.equal(forYou!.workIds.at(-5), "seven-brothers");
-  assert.equal(forYou!.workIds.at(-4), "futility");
-  assert.equal(forYou!.workIds.at(-3), "on-the-seaboard");
-  assert.equal(forYou!.workIds.at(-2), "bel-ami");
+  assert.equal(forYou!.workIds.at(-8), "there-is-confusion");
+  assert.equal(forYou!.workIds.at(-7), "miss-lulu-bett");
+  assert.equal(forYou!.workIds.at(-6), "seven-brothers");
+  assert.equal(forYou!.workIds.at(-5), "futility");
+  assert.equal(forYou!.workIds.at(-4), "on-the-seaboard");
+  assert.equal(forYou!.workIds.at(-3), "bel-ami");
+  assert.equal(forYou!.workIds.at(-2), "hadji-murad");
   assert.equal(forYou!.workIds.at(-1), "generosity");
   assert.equal(sleep!.workIds[0], "quicksand");
 });
@@ -1979,13 +1982,6 @@ test("EXTRACTABLE-8 CLEAR inventory binds are local Next / before-sleep sits, ne
       scenes: 8,
       scene: "Listen, Lord—A Prayer",
     },
-    "hadji-murad": {
-      opening:
-        "I WAS returning home by the fields. It was midsummer ; the hay harvest was over, and they were just beginning to reap th",
-      breaths: 1332,
-      scenes: 20,
-      scene: "Opening",
-    },
     anandamath: {
       opening:
         "On a certain day in the year 1176 B.S-, the sun was shining hot in the village of Padachinha. The village was full of ho",
@@ -2019,7 +2015,7 @@ test("EXTRACTABLE-8 CLEAR inventory binds are local Next / before-sleep sits, ne
   const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
   assert.ok(sleep);
   assert.ok(forYou);
-  assert.equal(Object.keys(expect).length, 7);
+  assert.equal(Object.keys(expect).length, 6);
   assert.deepEqual(forYou.workIds.slice(0, 3), [
     "the-house-of-mirth",
     "quicksand",
@@ -2737,8 +2733,9 @@ test("Mira NOON2 CLEAR sits on Next and For you, never Featured", () => {
   assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
   assert.equal(sleep?.workIds[0], "quicksand");
   assert.equal(forYou?.workIds.at(-1), "generosity");
-  assert.equal(forYou?.workIds.at(-2), "bel-ami");
-  assert.equal(forYou?.workIds.at(-3), "on-the-seaboard");
+  assert.equal(forYou?.workIds.at(-2), "hadji-murad");
+  assert.equal(forYou?.workIds.at(-3), "bel-ami");
+  assert.equal(forYou?.workIds.at(-4), "on-the-seaboard");
 
   const farm = SHELF.find((item) => item.id === "african-farm");
   assert.ok(farm);
@@ -2830,7 +2827,8 @@ test("Mira 4PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
   assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
   assert.equal(sleep?.workIds[0], "quicksand");
   assert.equal(forYou?.workIds.at(-1), "generosity");
-  assert.equal(forYou?.workIds.at(-2), "bel-ami");
+  assert.equal(forYou?.workIds.at(-2), "hadji-murad");
+  assert.equal(forYou?.workIds.at(-3), "bel-ami");
 
   const expect = {
     "a-passage-to-india": {
@@ -2889,10 +2887,11 @@ test("Mira 4PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
     },
   } as const;
 
-  assert.equal(next.at(-3), "a-passage-to-india");
-  assert.equal(next.at(-2), "mhudi");
-  assert.equal(next.at(-1), "maria");
-  assert.ok(next.indexOf("a-passage-to-india") > next.indexOf("african-farm"));
+  const passageAt = next.indexOf("a-passage-to-india");
+  assert.equal(next[passageAt + 1], "mhudi");
+  assert.equal(next[passageAt + 2], "maria");
+  assert.equal(next[passageAt + 3], "of-human-bondage");
+  assert.ok(passageAt > next.indexOf("african-farm"));
   assert.ok(next.indexOf("mhudi") > next.indexOf("a-passage-to-india"));
   assert.ok(next.indexOf("maria") > next.indexOf("mhudi"));
   assert.equal(next.indexOf("maria"), next.lastIndexOf("maria"));
@@ -2944,18 +2943,21 @@ test("Mira 4PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
   assert.equal(forYou?.workIds.includes("bel-ami"), true);
   assert.ok((forYou?.workIds.indexOf("bel-ami") ?? 0) > 2);
 
-  const sleepTail = sleep?.workIds.slice(-5);
-  assert.deepEqual(sleepTail, [
+  const sleepPassage = sleep?.workIds.indexOf("a-passage-to-india") ?? -1;
+  assert.deepEqual(sleep?.workIds.slice(sleepPassage, sleepPassage + 5), [
     "a-passage-to-india",
     "mhudi",
     "maria",
     "bel-ami",
     "magnhild",
   ]);
-  assert.equal(unwind?.workIds.at(-1), "a-passage-to-india");
+  const unwindPassage = unwind?.workIds.indexOf("a-passage-to-india") ?? -1;
+  assert.ok(unwindPassage >= 0);
+  assert.equal(unwind?.workIds[unwindPassage + 1], "of-human-bondage");
   assert.equal(waking?.workIds.at(-1), "mhudi");
-  assert.equal(walk?.workIds.at(-2), "bel-ami");
-  assert.equal(walk?.workIds.at(-1), "magnhild");
+  const walkBel = walk?.workIds.indexOf("bel-ami") ?? -1;
+  assert.equal(walk?.workIds[walkBel + 1], "magnhild");
+  assert.equal(walk?.workIds[walkBel + 2], "green-mansions");
   assert.equal(sleep?.workIds.includes("three-hundred-tang-poems"), false);
   assert.equal(sleep?.workIds.includes("the-bronze-horseman"), false);
   assert.equal(next.includes("three-hundred-tang-poems"), false);
@@ -2967,4 +2969,163 @@ test("Mira 4PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
   assert.notEqual(maria?.gutenberg, nela?.gutenberg);
   assert.match(maria?.author ?? "", /Ogden/);
   assert.match(nela?.author ?? "", /Bell/);
+});
+
+test("Mira 6PM CLEAR sits on Next, For you, and Rituals, never Featured", () => {
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const walk = RITUAL_LANES.find((item) => item.id === "on-a-walk");
+  const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
+  const bite = RITUAL_LANES.find((item) => item.id === "bite-sized");
+  const featured = FEATURED_CAROUSEL_IDS as readonly string[];
+  const cold = ["the-house-of-mirth", "quicksand", "botchan"];
+  assert.deepEqual(forYou?.workIds.slice(0, 3), cold);
+  assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
+  assert.equal(sleep?.workIds[0], "quicksand");
+  assert.equal(forYou?.workIds.at(-1), "generosity");
+  assert.equal(forYou?.workIds.at(-2), "hadji-murad");
+  assert.equal(featured.includes("the-painted-veil"), false);
+  assert.equal(featured.includes("high-wind-jamaica"), false);
+  assert.equal(next.includes("the-painted-veil"), false);
+  assert.notEqual(
+    SHELF.find((item) => item.id === "the-painted-veil")?.opening,
+    SHELF.find((item) => item.id === "of-human-bondage")?.opening,
+  );
+
+  const expect = {
+    "of-human-bondage": {
+      opening: "The day broke gray and dull.",
+      breaths: 16207,
+      scenes: 116,
+      minutes: 3241,
+      year: 1915,
+      gutenberg: 351,
+      scene: "Chapter I",
+      lane: "next",
+    },
+    "green-mansions": {
+      opening:
+        "Now that we are cool, he said, and regret that we hurt each other, I am not sorry that it happened.",
+      breaths: 2257,
+      scenes: 22,
+      minutes: 1063,
+      year: 1904,
+      gutenberg: 942,
+      scene: "Chapter I",
+      lane: "next",
+    },
+    "nada-the-lily": {
+      opening:
+        "You ask me, my father, to tell you the tale of the youth of Umslopogaas, holder of the iron Chieftainess, the axe Groan-maker, who was named Bulalio the Slaughterer, and of his love for Nada, the most beautiful of Zulu women.",
+      breaths: 3260,
+      scenes: 36,
+      minutes: 1406,
+      year: 1892,
+      gutenberg: 1207,
+      scene: "Chapter I · The Boy Chaka Prophesies",
+      lane: "next",
+    },
+    "jamaica-anansi-stories": {
+      opening: "One great hungry time.",
+      breaths: 9059,
+      scenes: 347,
+      minutes: 1356,
+      year: 1924,
+      gutenberg: 72735,
+      scene: "1. Tying Tiger · Hungry-time fish pot",
+      lane: "rituals",
+    },
+    "hadji-murad": {
+      opening:
+        "I was returning home by the fields. It was midsummer; the hay harvest was over, and they were just beginning to reap the rye.",
+      breaths: 1595,
+      scenes: 25,
+      minutes: 583,
+      year: 1912,
+      gutenberg: undefined,
+      scene: "Opening · Thistle prologue",
+      lane: "for-you",
+    },
+  } as const;
+
+  assert.equal(next.at(-3), "of-human-bondage");
+  assert.equal(next.at(-2), "green-mansions");
+  assert.equal(next.at(-1), "nada-the-lily");
+  assert.equal(next.includes("hadji-murad"), false);
+  assert.equal(next.includes("jamaica-anansi-stories"), false);
+  assert.ok(next.indexOf("of-human-bondage") > next.indexOf("maria"));
+  assert.deepEqual(sleep?.workIds.slice(-4), [
+    "of-human-bondage",
+    "green-mansions",
+    "jamaica-anansi-stories",
+    "hadji-murad",
+  ]);
+  assert.equal(unwind?.workIds.at(-1), "of-human-bondage");
+  assert.deepEqual(walk?.workIds.slice(-2), ["green-mansions", "hadji-murad"]);
+  assert.equal(bite?.workIds.at(-1), "jamaica-anansi-stories");
+  assert.equal(forYou?.workIds.includes("of-human-bondage"), false);
+  assert.equal(forYou?.workIds.includes("green-mansions"), false);
+  assert.equal(forYou?.workIds.includes("nada-the-lily"), false);
+  assert.equal(forYou?.workIds.includes("jamaica-anansi-stories"), false);
+  assert.equal(next.includes("three-hundred-tang-poems"), false);
+  assert.equal(next.includes("the-bronze-horseman"), false);
+
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work.local, true, id);
+    assert.equal(isBoundLocal(work), true, id);
+    assert.equal(work.opening, want.opening, id);
+    assert.equal(work.breaths, want.breaths, id);
+    assert.equal(work.minutes, want.minutes, id);
+    assert.equal(work.year, want.year, id);
+    assert.equal(work.gutenberg, want.gutenberg, id);
+    assert.equal(work.language, "English", id);
+    assert.equal(featured.includes(id), false, id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal((cold as readonly string[]).includes(id), false, id);
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), true, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: { title: string }[];
+      breaths: { text: string }[];
+    };
+    const opened = JSON.parse(readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: { title: string }[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.equal(full.scenes[0]?.title, want.scene, id);
+    assert.equal(full.breaths[0]?.text, want.opening, id);
+    assert.equal(opened.breaths[0]?.text, want.opening, id);
+    assert.equal(JSON.stringify(full).includes("\u0000"), false, id);
+    assert.equal(JSON.stringify(opened).includes("\u0000"), false, id);
+    if (want.lane === "next") {
+      assert.equal(curatorialTrack(id), "next", id);
+      assert.equal(next.includes(id), true, id);
+      assert.equal(forYou?.workIds.includes(id), false, id);
+    } else if (want.lane === "for-you") {
+      assert.equal(curatorialTrack(id), "later", id);
+      assert.equal(next.includes(id), false, id);
+      assert.equal(forYou?.workIds.includes(id), true, id);
+      assert.ok((forYou?.workIds.indexOf(id) ?? 0) > 2, id);
+    } else {
+      assert.equal(curatorialTrack(id), "later", id);
+      assert.equal(next.includes(id), false, id);
+      assert.equal(forYou?.workIds.includes(id), false, id);
+      assert.equal(bite?.workIds.includes(id), true, id);
+      assert.equal(sleep?.workIds.includes(id), true, id);
+    }
+  }
+
+  const nada = SHELF.find((item) => item.id === "nada-the-lily");
+  assert.match(nada?.intro ?? "", /Mopo/);
+  assert.match(nada?.intro ?? "", /White Man/);
+  assert.match(nada?.intro ?? "", /imperial romance/);
+  assert.match(nada?.intro ?? "", /not ethnographic authority/);
+  assert.doesNotMatch(nada?.intro ?? "", /Featured/);
+  const hadji = SHELF.find((item) => item.id === "hadji-murad");
+  assert.equal(hadji?.gutenberg, undefined);
+  assert.match(hadji?.author ?? "", /Maude/);
 });

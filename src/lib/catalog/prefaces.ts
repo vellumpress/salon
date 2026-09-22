@@ -10,7 +10,7 @@ import { STORED_PREFACES } from "./prefaces-stored.ts";
  */
 export const PREFACES: Record<string, string> = {
   "of-human-bondage":
-    "A club foot, a medical student, and a love that humiliates on purpose. Maugham’s 1915 novel waits in a gray English morning and a child’s still room. Sit with that weather before the first breath.",
+    "A club foot, a medical student, and a love that humiliates on purpose. Skip the title matter and open Chapter I on the gray morning — Wake up, Philip — and keep the first sit to that chapter only. Sit with that weather before the first breath.",
   gatsby:
     "West Egg money, a green light, and a man who throws parties for a ghost. Fitzgerald’s 1925 summer asks you to watch the lights before anyone arrives. Sit with the bay a moment, then enter.",
   ulysses:
