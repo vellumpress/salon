@@ -1,0 +1,4669 @@
+{
+  "id": "lucky-pehr",
+  "title": "Lucky Pehr",
+  "author": "August Strindberg (tr. Velma Swanston Howard)",
+  "year": "1912",
+  "note": "Project Gutenberg 8510",
+  "minutes": 226,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Act I",
+      "place": "Act I",
+      "reentry": "SCENE: A Room in the Church Tower.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Act II",
+      "place": "Act II",
+      "reentry": "Snow-clad woods; diagonally across stage is an ice-covered brook. Dawn. Wind blows through the trees as curtain rises. Pehr on.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Act III",
+      "place": "Act III",
+      "reentry": "SCENE: A public square. To right, Courthouse arcade, above which there is a speakers' cage with places for Burgomaster and Councilmen; to left shoemaker's house, with shop window and sign; outside a bench and table, close to them a hen-coop",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Act IV",
+      "place": "Act IV",
+      "reentry": "Interior of a palace in Oriental style. To right a throne, before it a table, with royal regalia; to left a divan, pillows arranged on floor in a semi-circle.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Act V",
+      "place": "Act V",
+      "reentry": "SCENE: Interior of a little country church, with frescoed ceiling. At back, centre, altar with crucifix; to left, pulpit; on a pillar down left an image of Saint Bartholomew with skin in hand; directly opposite, on a pillar, image of Saint ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "SCENE: A Room in the Church Tower."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Window shutters at back wide open, starlit sky is seen through windows. Background: Snow covered house-roofs; gable windows in the distance brilliantly illuminated. In room an old chair, a fire-pan and a picture of the Virgin, with a lighted candle before it. Room is divided by posts--two in centre thick enough to conceal an adult."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Chant, in unison, from the church below:"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "A Solis ortus cardine Et usque terrae limitem Christum canamus principem Natum Maria Virgini."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "[Old Man comes up tower steps and enters carrying a rat-trap, a barley-sheaf and a dish of porridge, which he sets down on the floor.]"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "OLD MAN. Now the elf shall have his Christmas porridge. And this year he has earned it honestly--twice he awakened me when I fell asleep and forgot the tower shutters; once he rang the bell when fire broke loose. Merry Christmas, Elf! and many of them. [Takes up rat-trap and sets it.] Here's your Christmas mess, Satan's rats!"
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "A VOICE. Curse not Christmas!"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "OLD MAN. I believe there are spirits about to-night--Ugh! it's the cold increasing; then the beams always creak, like an old ship. Here's your Christmas supper. Now perhaps you'll quit gnawing the bell-rope and eating up the tallow, you accursed pest!"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "A VOICE. Curse not Christmas!"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "OLD MAN. The spooks are at it again! Christmas eve--yes, yes! [Places rat-trap on the floor.] There! Now they have their portion. And now comes the turn of the feathered wretches. They must have grain, of course, so they can soil the tin roof for me. Such is life! The church wardens pay for it, so it's not my affair. But if I were to ask for an extra shilling two in wages--that they couldn't afford. That wouldn't be seen! But when one sticks out a grain-sheaf on a pole once a year, it looks generous. Ah, that one is a fine fellow!--and generosity is a virtue. Now, if we were to share and share alike, I should get back my porridge, which I gave to the elf. [Shakes sheaf and gathers the grain into a bowl.]"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "A VOICE. He robs Christmas! He robs Christmas!"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "OLD MAN. Now I'll put this thing on the pole so that it will look like a symbol, and as a symbol it will also be of service--for it shows what is not to be found within. [He puts sheaf through window and hangs it on pole, then shakes his fist at town below.] Oh, you old human pit down there! I spit on you! [Spits through window; comes down and sees the burning candle before the Virgin's picture.] This must be the boy's doings! The times are not such that one burns up candles needlessly. [Snuffs out light and puts the candle into his pocket.]"
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "A VOICE. Woe! Woe! [Head of Virgin shakes three times and a bright ray of light darts out from the head.]"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "OLD MAN. [Shrinking.] Is hell let loose to-night?"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "A VOICE. Heaven!"
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "OLD MAN. Pehr, Pehr! Where are you? My eyes! Light the candles--My son, my son!"
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "VIRGIN'S IMAGE. *My* SON!"
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "OLD MAN. [Groping his way toward the stairs.] My eyes! Hell-fire! [He rushes down the steps.]"
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "[Two rats, Nisse and Nilla, come on right, one behind the other. They have mourning veils swathed about their tails.]"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "NISSE. I say, it smells like roast pig!"
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "NILLA. Oh, I promise you! Be careful, Nisse! I see the trap over there. [Sits on hind legs.] 'Twas in that very trap that our little ones were lost! O dear, dear, dear!"
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "NISSE. If we could only hit upon some trick to play on the bad old man it would do my bowels good! Can you see if he has left anything about which he values?"
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "NILLA. Suppose we gnaw the ropes so the bells will tumble down on his head--"
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "NISSE. Why, Nilla! you know that I have only one poor tooth left in my head."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "NILLA. But I have two--and where there's a will there's--but you, you have no feeling for your children!"
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "NISSE. Come now! we shan't quarrel on Christmas Eve."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "NILLA. Hush! What have we here?"
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "NISSE. A dish of porridge--"
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "NILLA. Which the old man has left--"
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "NISSE. For the elf. He's afraid of him!"
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "NILLA. Now I know! We'll eat up the porridge so--"
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "NISSE. The elf will get after him--"
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "NILLA. And he can raise the mischief when he gets angry. [They are over by the dish now, and eating.]"
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "NISSE. Oh, move along and make room for me!"
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "NILLA. Hush! It creaks in the stairs."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "NISSE. Now I see the bottom of the dish; there's the lump of butter!"
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "NILLA. Help me with this corner."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "NISSE. Ah!--now we'll wipe our mouths and run. [They scurry off left.]"
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "[Elf slides down bell-rope.]"
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "ELF. [Walks about and searches.] Where's my Christmas porridge? I scented its aroma a long way off. It will taste good to me on a cold night, like this. I hope he has given me a big lump of butter this year, since I have been so good to him. [Loosens belt.] There! get you ready, my stomach. I'll let out two holes in the belt, which will make it about right. [He sees dish.] Ah, ha! what's this? Empty dishes! What has come over the old man-hater? Has he grown stingy and arrogant, or does he mock me, when he sets out an empty dish! There has been porridge here [smells]--butter, too! Well, well, old man! I'm sorry for you, but I shall have to punish you. The elf is for the purpose of punishing and rewarding. I must sit down and think out some *real* Christmas gift. [Sits in chair.] Let me see! The old man shuts himself up in this place with his son, whom he wishes to shield from the evils and shams of the world. The old man has seen much of the world, and hates it; the young one has never been beyond the church door and has seen the world only from the tower. But I know that it tempts him, just because he has seen it like this--from a bird's-eye view. The old man has but one wish in life--that his son shall succeed him and thus be spared the struggles of life and the cruelty of men. It is this wish which I shall cross; it is his only vulnerable point. Well and good! I'll call his godmother. She shall take the boy in hand and show him all the glories of the world; afterwards, there will be nothing more for the old man to do in the matter. The dreams of youth--I know their powers. Well, then! [Blows a whistle.]"
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "[Fairy dressed like an old witch, with brown cloak and cane, emerges from behind a post.]"
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "FAIRY. Good evening, lad."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "ELF. Good evening, old lady. Can you corrupt a young man?--Oh! understand me aright."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "FAIRY. That depends--"
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "ELF. It won't go in that costume! You see, it's a question of the old man's son."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "FAIRY. Our Pehr?"
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "ELF. Just he! Hush, old lady, I'm talking now! The boy is very dear to my heart--that he has been ever since his birth. We--you and I--stood sponsor for him, and we each have our duties. His education is being neglected; he has seen nothing of the world, although he is fifteen to-day. I want him to go out and look around so he will be a credit to us. Have you anything against it?"
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "FAIRY. Nothing. But I fear that he will meet with difficulties out there which we cannot adjust, since our power does not extend beyond these church walls."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "ELF. True; and I must search my brain for another idea. Ah--I have it! We'll each give him his godgift, which can serve him in all conditions of life."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "FAIRY. And what shall you give? Let us hear!"
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "ELF. Life is rather ticklish, as you know, and the boy is young! He has not as yet, through proper training, had time to learn all the arts by which one gains one's wishes. Now, I ask nothing more of life, for I know what it gives; therefore he shall have my wish-ring. And you?"
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "FAIRY. I daresay that gift is a good one, but when once he has got all that he wished for, he will have made his journey like the blind; therefore I shall give him a gift which will show him matter's face value--I shall give him good company on the way."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "ELF. Feminine?"
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "FAIRY. Naturally."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "ELF. You're a wise one! No--now you shall take charge of the lad and see that he gets away."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "FAIRY. But how? He fears and obeys his father."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "ELF. Fiddlesticks! Do your hokus-pokus and show him all the glories down there, in the Christmas-bedecked homes. Then it will go fast enough!"
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "FAIRY. Do you think so?"
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "ELF. I know the young. Here's my ring--and now to business!"
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "FAIRY. Is it right to play with human destiny?"
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "ELF. We only play with human beings, their destinies we do not control. Soon or late, the boy will go out into the world, and he is better equipped than many who have faced life before him. When his journey is over, we can discuss the subject more at length. Are you ready?"
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "FAIRY. [Going toward post.] Immediately. [Fairy disappears.]"
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "ELF. Then I'll whistle. [Disappears behind the other post.]"
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "[Pehr comes down steps leading from top of tower.]"
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "PEHR. Who's there?"
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "FAIRY. [Appears suddenly, dressed in white.] Your godmother, Pehr. Don't you know me?"
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "PEHR. Ah! you are the one who caught me in your arms that time, when I fell from the tower. What do you want of me to-day?"
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "FAIRY. I want to give you a Christmas gift."
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "PEHR. A gift? What is that?"
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "FAIRY. Something that gives one pleasure."
+    },
+    {
+      "id": "s0-70",
+      "sceneId": "s0",
+      "text": "PEHR. Pleasure?"
+    },
+    {
+      "id": "s0-71",
+      "sceneId": "s0",
+      "text": "FAIRY. Fulfillment of one's wishes."
+    },
+    {
+      "id": "s0-72",
+      "sceneId": "s0",
+      "text": "PEHR. Wishes! Now I begin to understand."
+    },
+    {
+      "id": "s0-73",
+      "sceneId": "s0",
+      "text": "FAIRY. When standing out there on the balcony, have you never felt as if something were drawing you--sort of enticing you down?"
+    },
+    {
+      "id": "s0-74",
+      "sceneId": "s0",
+      "text": "PEHR. Yes, that I have felt. You see the black streak over there, where light and darkness meet? In the daytime it looks different; and when the wind blows, it moves."
+    },
+    {
+      "id": "s0-75",
+      "sceneId": "s0",
+      "text": "FAIRY. The forest."
+    },
+    {
+      "id": "s0-76",
+      "sceneId": "s0",
+      "text": "PEHR. What is it like in the forest?"
+    },
+    {
+      "id": "s0-77",
+      "sceneId": "s0",
+      "text": "FAIRY. It is cool and delightful."
+    },
+    {
+      "id": "s0-78",
+      "sceneId": "s0",
+      "text": "PEHR. That's well! Thither I am drawn, sometimes, so powerfully that I want to rush through the tower window and soar, like the birds in the air!"
+    },
+    {
+      "id": "s0-79",
+      "sceneId": "s0",
+      "text": "FAIRY. Beyond the borders of the forest?"
+    },
+    {
+      "id": "s0-80",
+      "sceneId": "s0",
+      "text": "PEHR. Is there something beyond?"
+    },
+    {
+      "id": "s0-81",
+      "sceneId": "s0",
+      "text": "FAIRY. There lies the world."
+    },
+    {
+      "id": "s0-82",
+      "sceneId": "s0",
+      "text": "PEHR. The world! What is that?"
+    },
+    {
+      "id": "s0-83",
+      "sceneId": "s0",
+      "text": "FAIRY. Would you like to see it?"
+    },
+    {
+      "id": "s0-84",
+      "sceneId": "s0",
+      "text": "PEHR. Is it pleasant?"
+    },
+    {
+      "id": "s0-85",
+      "sceneId": "s0",
+      "text": "FAIRY. Some say it is; the majority say it is not. Come over here and I will show you some pictures from that checkered panorama which people call life. [Transparency curtain.]"
+    },
+    {
+      "id": "s0-86",
+      "sceneId": "s0",
+      "text": "Do you see the great house on the square, where all the windows are lighted? The rich man lives there. Now look into the rooms. On the table there is a lighted Christmas-tree laden with all kinds of gifts: the golden fruits of the tropics from across the seas; earth's hidden treasures, to which people bend the knee and which in their dazzling settings reflect the lights. But, do you see the light in the faces of the little children? That is the earth-life's sun--that is *happiness*--which is something you do not know, poor child! But you shall know it. You want to, do you not?"
+    },
+    {
+      "id": "s0-87",
+      "sceneId": "s0",
+      "text": "PEHR. Who is the good fairy that walks about and gives the children the golden fruits?"
+    },
+    {
+      "id": "s0-88",
+      "sceneId": "s0",
+      "text": "FAIRY. That is the mother."
+    },
+    {
+      "id": "s0-89",
+      "sceneId": "s0",
+      "text": "PEHR. Mother?--I don't understand."
+    },
+    {
+      "id": "s0-90",
+      "sceneId": "s0",
+      "text": "FAIRY. You, too, had a mother, but she died when you were very young."
+    },
+    {
+      "id": "s0-91",
+      "sceneId": "s0",
+      "text": "PEHR. And the old man in the corner, with the mild look in his eyes?"
+    },
+    {
+      "id": "s0-92",
+      "sceneId": "s0",
+      "text": "FAIRY. He is the father, who in memory is living over his childhood."
+    },
+    {
+      "id": "s0-93",
+      "sceneId": "s0",
+      "text": "PEHR. The father! But he looks so pleasant."
+    },
+    {
+      "id": "s0-94",
+      "sceneId": "s0",
+      "text": "FAIRY. Yes, for he loves some one besides himself."
+    },
+    {
+      "id": "s0-95",
+      "sceneId": "s0",
+      "text": "PEHR. And the youth who puts his arm around the young girl's waist--[Eagerly.] Now he presses his face against hers--their lips meet--what does that mean? Does one speak like that in life?"
+    },
+    {
+      "id": "s0-96",
+      "sceneId": "s0",
+      "text": "FAIRY. That is love's way of speaking."
+    },
+    {
+      "id": "s0-97",
+      "sceneId": "s0",
+      "text": "PEHR. Love! Then it must be glorious to see it all!"
+    },
+    {
+      "id": "s0-98",
+      "sceneId": "s0",
+      "text": "FAIRY. Wait! Now look up there, in the gable window--a single candle burns, a poor, wretched light. [Tableau.]"
+    },
+    {
+      "id": "s0-99",
+      "sceneId": "s0",
+      "text": "PEHR. Poverty! That I know. Show me something pretty!"
+    },
+    {
+      "id": "s0-100",
+      "sceneId": "s0",
+      "text": "FAIRY. [Regarding him.] You are pleasure loving. Very well!--Look again up there, around the same Christmas light--it shines dimly but warmly on the contented table of poverty."
+    },
+    {
+      "id": "s0-101",
+      "sceneId": "s0",
+      "text": "PEHR. No! I want to see something beautiful."
+    },
+    {
+      "id": "s0-102",
+      "sceneId": "s0",
+      "text": "FAIRY. Really! Is there anything more beautiful than--but, wait! you shall see--Now look over yonder--toward the castle, where the King lives. [Tableau.]"
+    },
+    {
+      "id": "s0-103",
+      "sceneId": "s0",
+      "text": "PEHR. Oh!"
+    },
+    {
+      "id": "s0-104",
+      "sceneId": "s0",
+      "text": "FAIRY. Do you see the beautiful robes, the glittering jewels? Do you see how the walls reflect the brilliant lights and how in the middle of winter real roses and blue lilies are in bloom?"
+    },
+    {
+      "id": "s0-105",
+      "sceneId": "s0",
+      "text": "PEHR. Oh!"
+    },
+    {
+      "id": "s0-106",
+      "sceneId": "s0",
+      "text": "FAIRY. And the young girls, with the flowing locks, who serve wine in silver goblets--"
+    },
+    {
+      "id": "s0-107",
+      "sceneId": "s0",
+      "text": "PEHR. *There* I want to be!"
+    },
+    {
+      "id": "s0-108",
+      "sceneId": "s0",
+      "text": "FAIRY. And now stewards, in white, carry on the dishes."
+    },
+    {
+      "id": "s0-109",
+      "sceneId": "s0",
+      "text": "PEHR. Oh!"
+    },
+    {
+      "id": "s0-110",
+      "sceneId": "s0",
+      "text": "FAIRY. The heralds rap on the floor with their staves--the trumpets sound--[Three strokes of a bell are heard; the tower chamber takes on its former appearance.] Alas! the time is up. Pehr, do you wish to go out and taste of life?"
+    },
+    {
+      "id": "s0-111",
+      "sceneId": "s0",
+      "text": "PEHR. Yes, yes!"
+    },
+    {
+      "id": "s0-112",
+      "sceneId": "s0",
+      "text": "FAIRY. Good and bad?"
+    },
+    {
+      "id": "s0-113",
+      "sceneId": "s0",
+      "text": "PEHR. Bad? That I think I know; the good I would learn to know."
+    },
+    {
+      "id": "s0-114",
+      "sceneId": "s0",
+      "text": "FAIRY. You think so? But you shall soon see that all which seems good is not good, and all that seems bad is not bad."
+    },
+    {
+      "id": "s0-115",
+      "sceneId": "s0",
+      "text": "PEHR. Only let me get out--and away from here!"
+    },
+    {
+      "id": "s0-116",
+      "sceneId": "s0",
+      "text": "FAIRY. You may go; but first I want to give you, as a help on your journey, a gift which will be of service to you. When you have it, you will have been given more than others, and therefore more will be required of you at some future time."
+    },
+    {
+      "id": "s0-117",
+      "sceneId": "s0",
+      "text": "PEHR. Let me see it!"
+    },
+    {
+      "id": "s0-118",
+      "sceneId": "s0",
+      "text": "FAIRY. This ring has the power to grant you all your wishes--to your credit, but to no one's harm."
+    },
+    {
+      "id": "s0-119",
+      "sceneId": "s0",
+      "text": "PEHR. That's a fine ring! But what will the old man say?"
+    },
+    {
+      "id": "s0-120",
+      "sceneId": "s0",
+      "text": "FAIRY. He is only going to meet with his just punishment--punishment for his selfishness."
+    },
+    {
+      "id": "s0-121",
+      "sceneId": "s0",
+      "text": "PEHR. Yes, that is just. All the same I feel sorry for him."
+    },
+    {
+      "id": "s0-122",
+      "sceneId": "s0",
+      "text": "FAIRY. Do not grieve for him; I shall watch over his sorrow."
+    },
+    {
+      "id": "s0-123",
+      "sceneId": "s0",
+      "text": "PEHR. Sorrow! Nothing else? Sorrow, he says, is the one pleasure in life. Let him sit and enjoy it then. I shall probably furnish him with opportunities."
+    },
+    {
+      "id": "s0-124",
+      "sceneId": "s0",
+      "text": "FAIRY. And lastly, young man, will you take provisions from the Wise Man?"
+    },
+    {
+      "id": "s0-125",
+      "sceneId": "s0",
+      "text": "PEHR. What should they be?--Good advice?"
+    },
+    {
+      "id": "s0-126",
+      "sceneId": "s0",
+      "text": "FAIRY. Yes."
+    },
+    {
+      "id": "s0-127",
+      "sceneId": "s0",
+      "text": "PEHR. Alas, I have such quantities of that!"
+    },
+    {
+      "id": "s0-128",
+      "sceneId": "s0",
+      "text": "FAIRY. I know that, and I know its fate. Farewell then! May life so teach you to live that when your journey is over you shall be--whether great or obscure; successful or unsuccessful; learned or ignorant--a man, and above all, a manly man. Farewell! [Fairy disappears in column.]"
+    },
+    {
+      "id": "s0-129",
+      "sceneId": "s0",
+      "text": "PEHR. [Alone.] Well, Pehr, you are going out into life! Others before you have probably done likewise. But is it, then, so difficult out there? To be sure I have stood on the church roof and watched the throngs of people down in the street crawl around each other, going and coming. To me they appear so quiet and orderly, and I don't see that they trample on one another, although they are as thick as gnats. That dogs and apprentices fight sometimes, that I have seen, but grown folk--never! The old man and I never fight, although we pass each other on the stairs ten times a day. True, he has beaten me, but I have never beaten him; and other people may not be so bad either, if the truth were told. Wasn't there a fire the other day in the house of a rich merchant and didn't a lot of poor wretches come running from all directions, and didn't they go up to the rich man's place and save his goods? Oh, yes, I saw how they took silver pieces from his table and carried them far out of the city, where they hid them behind haystacks so the silver wouldn't be burned up. Wasn't that kind of them? We shall see, we shall see! Meanwhile, my dear Pehr, you shall go out and have a look at the world and make use of your gifts. [Examines ring.] Let's see! What shall I wish for first?"
+    },
+    {
+      "id": "s0-130",
+      "sceneId": "s0",
+      "text": "[Old man enters as if through wall.]"
+    },
+    {
+      "id": "s0-131",
+      "sceneId": "s0",
+      "text": "PEHR. Oh! so the old man is here. I did not hear your footsteps on the stairs. Which way did you come?"
+    },
+    {
+      "id": "s0-132",
+      "sceneId": "s0",
+      "text": "OLD MAN. [Alarmed.] Did you see?"
+    },
+    {
+      "id": "s0-133",
+      "sceneId": "s0",
+      "text": "PEHR. No."
+    },
+    {
+      "id": "s0-134",
+      "sceneId": "s0",
+      "text": "OLD MAN. Let me look at you! [Gazes fixedly at him.] Something has happened here--"
+    },
+    {
+      "id": "s0-135",
+      "sceneId": "s0",
+      "text": "PEHR. Nothing--nothing whatever!"
+    },
+    {
+      "id": "s0-136",
+      "sceneId": "s0",
+      "text": "OLD MAN. My son, it will soon be midnight. Don't you want to retire to your room so that I may lock you in?"
+    },
+    {
+      "id": "s0-137",
+      "sceneId": "s0",
+      "text": "PEHR. You always want to shut me in! Tell me, Father, have you never meant to let me out in the world? Surely you cannot have thought that I should sit here forever, and dry up!"
+    },
+    {
+      "id": "s0-138",
+      "sceneId": "s0",
+      "text": "OLD MAN. I have seen life; I know its Sodom apples--therefore I wish to shield you."
+    },
+    {
+      "id": "s0-139",
+      "sceneId": "s0",
+      "text": "PEHR. But life is not as sour as you say, perhaps."
+    },
+    {
+      "id": "s0-140",
+      "sceneId": "s0",
+      "text": "OLD MAN. What do you know about it?"
+    },
+    {
+      "id": "s0-141",
+      "sceneId": "s0",
+      "text": "PEHR. Oh, I can see things from my high place! Come here and I will show you."
+    },
+    {
+      "id": "s0-142",
+      "sceneId": "s0",
+      "text": "OLD MAN. What can you show me that I do not already know?"
+    },
+    {
+      "id": "s0-143",
+      "sceneId": "s0",
+      "text": "PEHR. [Leads Old Man to the window.] Look! Do you see the great house on the square?"
+    },
+    {
+      "id": "s0-144",
+      "sceneId": "s0",
+      "text": "OLD MAN. Yes; but make haste! Before the clock strikes twelve, you must be in bed."
+    },
+    {
+      "id": "s0-145",
+      "sceneId": "s0",
+      "text": "PEHR. Do you see the Christmas-tree, with its gold and silver?"
+    },
+    {
+      "id": "s0-146",
+      "sceneId": "s0",
+      "text": "OLD MAN. Only paper, boy!"
+    },
+    {
+      "id": "s0-147",
+      "sceneId": "s0",
+      "text": "PEHR. And the golden fruits of the tropics?"
+    },
+    {
+      "id": "s0-148",
+      "sceneId": "s0",
+      "text": "OLD MAN. Worm-eaten--"
+    },
+    {
+      "id": "s0-149",
+      "sceneId": "s0",
+      "text": "PEHR. And the sun--Happiness--how it shines on the children's faces!"
+    },
+    {
+      "id": "s0-150",
+      "sceneId": "s0",
+      "text": "OLD MAN. Between times distorted by envy--"
+    },
+    {
+      "id": "s0-151",
+      "sceneId": "s0",
+      "text": "PEHR. And the old man who sits there, contented and happy--"
+    },
+    {
+      "id": "s0-152",
+      "sceneId": "s0",
+      "text": "OLD MAN. It's a lie! He trembles in his heart for the house rent, which must be paid on the new year--"
+    },
+    {
+      "id": "s0-153",
+      "sceneId": "s0",
+      "text": "PEHR. He--the rich man?"
+    },
+    {
+      "id": "s0-154",
+      "sceneId": "s0",
+      "text": "OLD MAN. Hides his approaching downfall!"
+    },
+    {
+      "id": "s0-155",
+      "sceneId": "s0",
+      "text": "PEHR. And those young people--Do you see how he stretches his arm--"
+    },
+    {
+      "id": "s0-156",
+      "sceneId": "s0",
+      "text": "OLD MAN. After the father's money bag!"
+    },
+    {
+      "id": "s0-157",
+      "sceneId": "s0",
+      "text": "PEHR. Shame on you! Their lips meet--"
+    },
+    {
+      "id": "s0-158",
+      "sceneId": "s0",
+      "text": "OLD MAN. In lust!"
+    },
+    {
+      "id": "s0-159",
+      "sceneId": "s0",
+      "text": "PEHR. What is that?--Ah! Now look up there, at the gable window, with the single light--"
+    },
+    {
+      "id": "s0-160",
+      "sceneId": "s0",
+      "text": "OLD MAN. Prompted by caution, which demands darkness--"
+    },
+    {
+      "id": "s0-161",
+      "sceneId": "s0",
+      "text": "PEHR. By the glow of contentment's calm light--"
+    },
+    {
+      "id": "s0-162",
+      "sceneId": "s0",
+      "text": "OLD MAN. Which they stole from the spice stall, and their delight is in planning the next expedition to the city market. I know it, do you hear! And up there, in the palace, where the lights glisten by the thousands and mirror themselves in the wines' sour streams--there they roll--empty heads and empty hearts--who say that they think and feel for the people's welfare! There they roll, between bottles and dishes--"
+    },
+    {
+      "id": "s0-163",
+      "sceneId": "s0",
+      "text": "PEHR. Why do you talk so fast? Let me continue--"
+    },
+    {
+      "id": "s0-164",
+      "sceneId": "s0",
+      "text": "OLD MAN. No! Away with you and obey, boy!"
+    },
+    {
+      "id": "s0-165",
+      "sceneId": "s0",
+      "text": "PEHR. Yes, away from here! I want to go out and see the world. I want to see child-faces--even if they can be clouded by envy's cankerworm! I want to taste the fruit of the tropics even if it is worm-eaten! I would drink the wine though it were gall, and I want to put my arm around a maid's waist, even if a bankrupt father does sit at the hearth stone! I want silver and gold--if in the end it is nothing but dross!"
+    },
+    {
+      "id": "s0-166",
+      "sceneId": "s0",
+      "text": "OLD MAN. Hell-fire! who's been here?"
+    },
+    {
+      "id": "s0-167",
+      "sceneId": "s0",
+      "text": "A VOICE. Curse not Christmas!"
+    },
+    {
+      "id": "s0-168",
+      "sceneId": "s0",
+      "text": "PEHR. What can this mean? It is so strange here to-night--stranger than usual. Father, look at me! Why, that's not his face!"
+    },
+    {
+      "id": "s0-169",
+      "sceneId": "s0",
+      "text": "OLD MAN. [Kneeling.] My son! Listen to your father--obey the old man, who wishes you only good; remain within these peaceful walls!"
+    },
+    {
+      "id": "s0-170",
+      "sceneId": "s0",
+      "text": "PEHR. It is too late!"
+    },
+    {
+      "id": "s0-171",
+      "sceneId": "s0",
+      "text": "OLD MAN. What do I see?--that ring! who gave it to you? [Tries to take the ring from Pehr.]"
+    },
+    {
+      "id": "s0-172",
+      "sceneId": "s0",
+      "text": "PEHR. Who are you? You are not my father!"
+    },
+    {
+      "id": "s0-173",
+      "sceneId": "s0",
+      "text": "OLD MAN. Your guilty, your unhappy father, who is bound by the witchcraft of the Powers! [Old Man is transformed into a big black cat.]"
+    },
+    {
+      "id": "s0-174",
+      "sceneId": "s0",
+      "text": "PEHR. Jesu Maria, help! [Bright rays dart out from Virgin's image; clock strikes twelve.]"
+    },
+    {
+      "id": "s0-175",
+      "sceneId": "s0",
+      "text": "PEHR. The witch! The witch! Away, unclean spirit! [Cat vanishes.] And now--[opens tower shutters] for life! [Fingers ring.] To the forest. [Going through window.] *Out*!"
+    },
+    {
+      "id": "s0-176",
+      "sceneId": "s0",
+      "text": "CURTAIN."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Snow-clad woods; diagonally across stage is an ice-covered brook. Dawn. Wind blows through the trees as curtain rises. Pehr on."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "PEHR. So this is the forest, whither my thoughts have so often flown through the clear air, and this is the snow! Now I want to throw snowballs, as I've seen school boys do. It is supposed to be something uncommonly amusing. [He takes up some snow and casts a few snowballs.] H-m! That's not so wonderful! Once again--I think it almost stupid."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "But what is it that plays up in the tree tops? The wind--Ah, it sounds rather well. Zoo, zoo, zoo! But one grows sleepy if one listens to that long. Zoo, zoo, zoo! Now it sounds like the gnats on a summer's evening. Strange how short everything is out here in Nature! The dullness in the tower--that was long! Now it's not at all pretty or amusing. [Sees brook.] Why, what is this? Ice! What pleasure can one get from that? Ah, now I remember--one can skate on it. I must try that! [He goes out on the brook; slides; ice cracks; he falls from fright and lies there, stunned.]"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "[Enter Lisa.]"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "LISA. [Runs up to Pehr.] There he is! Ah--he sleeps! [Sees something that glitters.] What is that? [Picks up ring, which Pehr dropped when he fell.] A ring! He is sleeping in the snow! What can have happened? He is hurt! What can I do? In the very heart of the forest and right in the snow! Not a human being comes this way. He'll freeze to death if he cannot get away. The good fairy sent me here to look up that boy, but she did not tell me that I should find him half dead in a snow drift! If only it were summer, with the sun shining on the green grass-carpet--"
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "[Lisa fingers ring. Transformation: Landscape is changed from winter into summer; brook loses ice-cake and runs forth between the stones; sun shines on the whole.]"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "LISA. What can be the meaning of this! [Amazed, glances in all directions. Pehr awakens.]"
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "PEHR. [Rubbing his eyes.] Why, what is this--I fly from the church tower, come into a forest of snow, throw snowballs, skate, bump my head on the ice, lose my senses--then I wake up and find that it is summer! Have I been lying here under the snow six months? No, it doesn't seem likely. [Looks at himself in the brook.] I'm as red as a rose. [Bends over water.] But what do I see down in the deep--A blue sky, green trees, white water-lilies, and right in their midst--a girl!--just like the one the youth had his arm around in the Christmas-home: flowing hair, a mouth like a song, eyes like the dove's!--Ah! she nods to me--I'm coming, I'm coming! [About to plunge into the brook, when Lisa gives a cry. He turns.] There she is! A moment ago she was down here."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "LISA. So it seems, but do not always believe your eyes."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "PEHR. A strange world, this! But let me see if it is the same girl? [Stares at her.] Yes, it is she. [Starts to run toward her, then catches sight of ring.] What! my ring? You robbed me while I lay senseless! Oh, do not believe your eyes, you said. No! for now I have my first lesson--I wanted to embrace an angel, and I find a thief."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "LISA. Do not always believe your eyes, Pehr; investigate before you judge."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "PEHR. You are right. I shall do so. Girl, who are you? What is your name?"
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "LISA. Lisa is my name, but who I am you must not know until the time is fulfilled. I came here and found you senseless--on the ice I found your ring, the powers of which I did not know."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "PEHR. You have saved me from certain death in the snow. Forgive me! Lisa, you shall go with me on my journey, and you shall see a jolly life."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "LISA. You are traveling, you say--What is the object of your journey?"
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "PEHR. I seek--like all the rest--happiness."
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "LISA. You seek happiness! That is a fleeting thing."
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "PEHR. Ah, say not so! I can have all that I wish for. Have we not been given the most delightful summer in the middle of winter? See how gloriously the sun shines up in the pines! You must know that all this is new to me. Oh, look! [Picks up a few spruce-cones.] What are these?"
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "LISA. The fruit of the trees."
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "PEHR. Then it is good to eat."
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "LISA. No; but children play with it."
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "PEHR. Play--that I have never done! Shall we play, Lisa?"
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "LISA. Yes--but what? Shall we play a game of tag?"
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "PEHR. How does it go?"
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "LISA. Watch me! [She runs behind a tree and throws cones at Pehr.] Now catch me!"
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "PEHR. [Running after her.] But that's not so easily done! [Steps on a cone and hurts his foot.] The damned spruce apples!"
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "LISA. Mustn't curse the fruit of the trees!"
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "PEHR. One can do without such fruit! I prefer the kind I saw on a Christmas-tree. If this spruce could bear such fruit, then--[Instantly spruce bears oranges.] Look, look! Let us taste. [They pick fruit and eat.]"
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "LISA. Well, what think you?"
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "PEHR. Oh! it's rather good--but not quite what I had fancied."
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "LISA. So it is always--all through life."
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "PEHR. My dear girl, how wise you are! Lisa, may I put my arm around your waist? [A bird in the tree begins to sing softly.]"
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "LISA. Yes; but what for?"
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "PEHR. May I kiss you also?"
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "LISA. Yes--there's no harm in that, surely. [Bird sings louder.]"
+    },
+    {
+      "id": "s1-35",
+      "sceneId": "s1",
+      "text": "PEHR. I'm so warm after the play, Lisa! Shall we bathe in the brook?"
+    },
+    {
+      "id": "s1-36",
+      "sceneId": "s1",
+      "text": "LISA. [Covers her eyes with her hands.] Bathe!"
+    },
+    {
+      "id": "s1-37",
+      "sceneId": "s1",
+      "text": "PEHR. [Throws off coat.] Yes!"
+    },
+    {
+      "id": "s1-38",
+      "sceneId": "s1",
+      "text": "LISA. [Hides behind a tree.] No, no, no! [Bird sings.]"
+    },
+    {
+      "id": "s1-39",
+      "sceneId": "s1",
+      "text": "PEHR. Who is that screech-owl up in the tree?"
+    },
+    {
+      "id": "s1-40",
+      "sceneId": "s1",
+      "text": "LISA. It is a bird that sings."
+    },
+    {
+      "id": "s1-41",
+      "sceneId": "s1",
+      "text": "PEHR. What does he sing about?"
+    },
+    {
+      "id": "s1-42",
+      "sceneId": "s1",
+      "text": "LISA. Hush! I understand bird language; that my godmother taught me."
+    },
+    {
+      "id": "s1-43",
+      "sceneId": "s1",
+      "text": "PEHR. It will be fun hearing about it! [Bird sings.]"
+    },
+    {
+      "id": "s1-44",
+      "sceneId": "s1",
+      "text": "LISA. \"Not so, not so!\" he said just then. [Bird sings again.] Pehr, do you know what he said then?"
+    },
+    {
+      "id": "s1-45",
+      "sceneId": "s1",
+      "text": "PEHR. No."
+    },
+    {
+      "id": "s1-46",
+      "sceneId": "s1",
+      "text": "LISA. \"Live guiltless! Mine eye seeth thee.\""
+    },
+    {
+      "id": "s1-47",
+      "sceneId": "s1",
+      "text": "PEHR. Guiltless--what is that?"
+    },
+    {
+      "id": "s1-48",
+      "sceneId": "s1",
+      "text": "LISA. I don't know--but dress yourself!"
+    },
+    {
+      "id": "s1-49",
+      "sceneId": "s1",
+      "text": "PEHR. It's only nonsense; there's no one here to see us. [Cuckoo calls.] Cuckoo! Cuckoo!"
+    },
+    {
+      "id": "s1-50",
+      "sceneId": "s1",
+      "text": "PEHR. What is that rogue calling?"
+    },
+    {
+      "id": "s1-51",
+      "sceneId": "s1",
+      "text": "LISA. [Imitates cuckoo.] Cuckoo, cuckoo!"
+    },
+    {
+      "id": "s1-52",
+      "sceneId": "s1",
+      "text": "PEHR. What a lot of tiresome formalities there has got to be!"
+    },
+    {
+      "id": "s1-53",
+      "sceneId": "s1",
+      "text": "LISA. Can you not enjoy the great, innocent pleasures of Nature?"
+    },
+    {
+      "id": "s1-54",
+      "sceneId": "s1",
+      "text": "PEHR. Yes, for a little while--What was that? [Tears off vest.]"
+    },
+    {
+      "id": "s1-55",
+      "sceneId": "s1",
+      "text": "LISA. An ant."
+    },
+    {
+      "id": "s1-56",
+      "sceneId": "s1",
+      "text": "PEHR. [Beats right and left with his hat.] Only look at all the horrid pests! Ouch! what was it that stung me? A mosquito!"
+    },
+    {
+      "id": "s1-57",
+      "sceneId": "s1",
+      "text": "LISA. Everything here in life is incomplete, Pehr. Remember that, and take the bad with the good."
+    },
+    {
+      "id": "s1-58",
+      "sceneId": "s1",
+      "text": "PEHR. Deuce take the bad! I want the good. [Beats at the air.] Now I'm tired of the for est. Surely one cannot play all one's life! I yearn for activity, and want to be among people. Tell me, Lisa--you, who are such a wise little creature, what do people value most? For that I shall procure for myself."
+    },
+    {
+      "id": "s1-59",
+      "sceneId": "s1",
+      "text": "LISA. Pehr, before I answer you, listen to a sensible word! People will cause you just as much annoyance as the mosquitoes do, but they will not give you the delight to be found in Nature's perennial youth."
+    },
+    {
+      "id": "s1-60",
+      "sceneId": "s1",
+      "text": "PEHR. Nature!--Oh, yes, it is very pretty when seen from a church tower, but it becomes rather monotonous near to. Doesn't everything stand still? Don't the trees stand in the selfsame places where they stood fifty years ago, and won't they be standing there fifty years hence? My eyes are already weary of *this* splendor! I want movement and noise, and if the people are like mosquitoes, it will be so much easier to keep them at a distance than this company. [Beats about his head with his hat.]"
+    },
+    {
+      "id": "s1-61",
+      "sceneId": "s1",
+      "text": "LISA. You'll see, no doubt, you'll see! Experience will teach you better than my word."
+    },
+    {
+      "id": "s1-62",
+      "sceneId": "s1",
+      "text": "PEHR. And now, Lisa, what do people value most in a person?"
+    },
+    {
+      "id": "s1-63",
+      "sceneId": "s1",
+      "text": "LISA. I'm ashamed to say it."
+    },
+    {
+      "id": "s1-64",
+      "sceneId": "s1",
+      "text": "PEHR. You must tell me!"
+    },
+    {
+      "id": "s1-65",
+      "sceneId": "s1",
+      "text": "LISA. Gold."
+    },
+    {
+      "id": "s1-66",
+      "sceneId": "s1",
+      "text": "PEHR. Gold? But that is something outside the person which does not belong to his being."
+    },
+    {
+      "id": "s1-67",
+      "sceneId": "s1",
+      "text": "LISA. Yes, that is known; but it is so nevertheless."
+    },
+    {
+      "id": "s1-68",
+      "sceneId": "s1",
+      "text": "PEHR. What extraordinary qualities does gold possess?"
+    },
+    {
+      "id": "s1-69",
+      "sceneId": "s1",
+      "text": "LISA. All! It is good for everything--and nothing. It gives all that earth has to offer; in itself it is the most perfect of all the earth's products which rust cannot spot--but which can put rust-spots into souls."
+    },
+    {
+      "id": "s1-70",
+      "sceneId": "s1",
+      "text": "PEHR. Well, then! Will you follow me, Lisa?"
+    },
+    {
+      "id": "s1-71",
+      "sceneId": "s1",
+      "text": "LISA. I will always follow you--at a distance."
+    },
+    {
+      "id": "s1-72",
+      "sceneId": "s1",
+      "text": "PEHR. At a distance! and why not near me? Lisa, now I shall put my arm around your waist again. [Lisa tears herself away; bird sings.] Why do you run away?"
+    },
+    {
+      "id": "s1-73",
+      "sceneId": "s1",
+      "text": "LISA. Ask the bird!"
+    },
+    {
+      "id": "s1-74",
+      "sceneId": "s1",
+      "text": "PEHR. I can't understand what he says; you must tell me."
+    },
+    {
+      "id": "s1-75",
+      "sceneId": "s1",
+      "text": "LISA. [Embarrassed.] No, I cannot!"
+    },
+    {
+      "id": "s1-76",
+      "sceneId": "s1",
+      "text": "PEHR. Cannot? What is it?"
+    },
+    {
+      "id": "s1-77",
+      "sceneId": "s1",
+      "text": "LISA. He is not singing for us now. He sings to his sweetheart, so you must know what he is saying."
+    },
+    {
+      "id": "s1-78",
+      "sceneId": "s1",
+      "text": "PEHR. How should I know that!"
+    },
+    {
+      "id": "s1-79",
+      "sceneId": "s1",
+      "text": "LISA. He says like this: [Running off] \"I love you, I love you!\""
+    },
+    {
+      "id": "s1-80",
+      "sceneId": "s1",
+      "text": "PEHR. Stay! Shall you run away from me? Lisa! Lisa! She's gone! Very well then! Come hither palace and plates and wines and horses and chariots and gold--gold!"
+    },
+    {
+      "id": "s1-81",
+      "sceneId": "s1",
+      "text": "SCENE TWO."
+    },
+    {
+      "id": "s1-82",
+      "sceneId": "s1",
+      "text": "A luxurious Banquet Hall. Servants bring on a table, with food and wines; other servants carry in a chest containing gold; others, again, a table covered with plates, vases, candle-sticks, etc.--all of gold."
+    },
+    {
+      "id": "s1-83",
+      "sceneId": "s1",
+      "text": "PEHR. [Walks about and looks around.] So this is the rich man's abode! Well, it looks rather promising. Slaves! Give me my best holiday-coat--but it must be of gold. [Servants hand him a gold-cloth coat.] A chair! [They place a gold chair at table.] Now, Pehr, you shall enjoy life! and that is your right. Haven't you been up mornings at four o'clock; and rung for early Mass; haven't you swept the church on Fridays and scoured the stairs on Saturdays; haven't you eaten bread and herring three hundred and sixty-five days in the year and rinsed them down with cold water; haven't you slept on pease-bolt which was so badly threshed that you could feel the pease in your knee-joints? Oh, yes, you have--therefore enjoy yourself! [Wants to sit at table.]"
+    },
+    {
+      "id": "s1-84",
+      "sceneId": "s1",
+      "text": "BUTLER. [With staff in hand.] Pardon, Your Grace! The table is not laid."
+    },
+    {
+      "id": "s1-85",
+      "sceneId": "s1",
+      "text": "PEHR. Isn't it?"
+    },
+    {
+      "id": "s1-86",
+      "sceneId": "s1",
+      "text": "BUTLER. In a couple of hours the roasts will be ready."
+    },
+    {
+      "id": "s1-87",
+      "sceneId": "s1",
+      "text": "PEHR. I don't want any roasts."
+    },
+    {
+      "id": "s1-88",
+      "sceneId": "s1",
+      "text": "BUTLER. [Intercepts Pehr with staff.] It can never be that one sits down at an unlaid table!"
+    },
+    {
+      "id": "s1-89",
+      "sceneId": "s1",
+      "text": "PEHR. Who forbids me in my own house?"
+    },
+    {
+      "id": "s1-90",
+      "sceneId": "s1",
+      "text": "BUTLER. Etiquette, Your Grace, does not under any circumstances permit it."
+    },
+    {
+      "id": "s1-91",
+      "sceneId": "s1",
+      "text": "PEHR. Etiquette! What kind of torment is that?"
+    },
+    {
+      "id": "s1-92",
+      "sceneId": "s1",
+      "text": "BUTLER. Your Grace, listen to an old man's word! He who in Your Grace's position violates the rules of etiquette is lost."
+    },
+    {
+      "id": "s1-93",
+      "sceneId": "s1",
+      "text": "PEHR. [Frightened.] What a harsh gentleman! I shall have to submit, although I'm beastly hungry--But, wait! Is there nothing that will move that gentleman? I have heard that gold--[Goes over to chest and takes out a handful of gold coins.] Would not--"
+    },
+    {
+      "id": "s1-94",
+      "sceneId": "s1",
+      "text": "BUTLER. Your Grace! I stand above the servants; above me stands Your Grace, but above us all stands--Conventionality. Its laws are perpetual, for they have their foundation both in common sense and in what we call historical hypotheses."
+    },
+    {
+      "id": "s1-95",
+      "sceneId": "s1",
+      "text": "PEHR. And the historical hypotheses--cannot they be reached with gold?"
+    },
+    {
+      "id": "s1-96",
+      "sceneId": "s1",
+      "text": "BUTLER. They are non-corruptible--in this instance!"
+    },
+    {
+      "id": "s1-97",
+      "sceneId": "s1",
+      "text": "PEHR. What's the good of all my wealth if I cannot eat my fill when I'm hungry? I am worse off than the poorest bellringer."
+    },
+    {
+      "id": "s1-98",
+      "sceneId": "s1",
+      "text": "[Butler stations himself at the table, and stands like a statue.]"
+    },
+    {
+      "id": "s1-99",
+      "sceneId": "s1",
+      "text": "[Enter Tax Assessor and assistants, who walk about and take an inventory.]"
+    },
+    {
+      "id": "s1-100",
+      "sceneId": "s1",
+      "text": "PEHR. Look--here's a new torture! With what shall you gentlemen pester an innocent victim?"
+    },
+    {
+      "id": "s1-101",
+      "sceneId": "s1",
+      "text": "TAX ASSESSOR. Taxation, Your Grace."
+    },
+    {
+      "id": "s1-102",
+      "sceneId": "s1",
+      "text": "PEHR. Indeed! So it is you who regulate people's worth. How high is a human being estimated these days?"
+    },
+    {
+      "id": "s1-103",
+      "sceneId": "s1",
+      "text": "TAX ASSESSOR. Two per hundred, Your Grace;--all depends on what one is good for."
+    },
+    {
+      "id": "s1-104",
+      "sceneId": "s1",
+      "text": "PEHR. Tell me, can't I withdraw while the gentlemen figure up? for I am both hungry and thirsty."
+    },
+    {
+      "id": "s1-105",
+      "sceneId": "s1",
+      "text": "TAX ASSESSOR. Impossible! It must be done in the owner's presence."
+    },
+    {
+      "id": "s1-106",
+      "sceneId": "s1",
+      "text": "PEHR. O Lord, what trials! But I may be allowed to sit down at least?"
+    },
+    {
+      "id": "s1-107",
+      "sceneId": "s1",
+      "text": "TAX ASSESSOR. As you please! [To assistants.] Two dozen plates with beveled edges--write! Six wine-coolers, with handles of finer metal--write! One sugar bowl, with sifting spoon, and two smaller ditto--write! Two dozen knives, with handles of mother-of-pearl--brand new--write!"
+    },
+    {
+      "id": "s1-108",
+      "sceneId": "s1",
+      "text": "PEHR. See if I don't go crazy!"
+    },
+    {
+      "id": "s1-109",
+      "sceneId": "s1",
+      "text": "TAX ASSESSOR. Dining table of oak, with double leaves--write! Six walnut chairs. [Enter Lawyer.]"
+    },
+    {
+      "id": "s1-110",
+      "sceneId": "s1",
+      "text": "PEHR. One more!"
+    },
+    {
+      "id": "s1-111",
+      "sceneId": "s1",
+      "text": "LAWYER. Your Grace is summoned to the City Court to have tax No. 2867 legalized before twelve o'clock this day."
+    },
+    {
+      "id": "s1-112",
+      "sceneId": "s1",
+      "text": "PEHR. The Court? Litigation? I never institute proceedings, sir!"
+    },
+    {
+      "id": "s1-113",
+      "sceneId": "s1",
+      "text": "LAWYER. It's not a question of litigation--only to verify facts."
+    },
+    {
+      "id": "s1-114",
+      "sceneId": "s1",
+      "text": "PEHR. I don't wish to verify facts."
+    },
+    {
+      "id": "s1-115",
+      "sceneId": "s1",
+      "text": "LAWYER. But to put the case--"
+    },
+    {
+      "id": "s1-116",
+      "sceneId": "s1",
+      "text": "PEHR. I don't want to put the case--I want my dinner! Butler, can't I take a sandwich? [Butler raises staff threateningly; enter petty constable.]"
+    },
+    {
+      "id": "s1-117",
+      "sceneId": "s1",
+      "text": "PEHR. Are there still more?"
+    },
+    {
+      "id": "s1-118",
+      "sceneId": "s1",
+      "text": "PETTY CONSTABLE. Your Grace is summoned to the Bar tomorrow at eleven o'clock for neglecting to keep the street clean."
+    },
+    {
+      "id": "s1-119",
+      "sceneId": "s1",
+      "text": "PEHR. Must I keep the street clean--I, who am such a rich man! What, then, must I not do?"
+    },
+    {
+      "id": "s1-120",
+      "sceneId": "s1",
+      "text": "PETTY CONSTABLE. It is the duty of every householder to keep clean in front of his own house."
+    },
+    {
+      "id": "s1-121",
+      "sceneId": "s1",
+      "text": "PEHR. Etiquette, taxation, put the case, keep yard and street clean, hunger and thirst--is that the rich man's lot! Then I would rather be a street sweeper and own myself. And I'm not allowed to turn these gentlemen out, who crowd into my room, and I cannot go my way when I choose!"
+    },
+    {
+      "id": "s1-122",
+      "sceneId": "s1",
+      "text": "[Enter petitioner, followed by a servant carrying two baskets of papers.]"
+    },
+    {
+      "id": "s1-123",
+      "sceneId": "s1",
+      "text": "PEHR. Mr. Lawyer and Mr. Constable, can't the law protect an unfortunate rich man so that he may have peace in his home, or is the law only for the poor?"
+    },
+    {
+      "id": "s1-124",
+      "sceneId": "s1",
+      "text": "LAWYER. Your Grace can no longer be regarded as an individual; for when one through riches has risen to the community's heights, one belongs to the whole."
+    },
+    {
+      "id": "s1-125",
+      "sceneId": "s1",
+      "text": "PEHR. And so one is placed outside the law."
+    },
+    {
+      "id": "s1-126",
+      "sceneId": "s1",
+      "text": "LAWYER. [Smiles; glances about.] Above the law, Your Grace!"
+    },
+    {
+      "id": "s1-127",
+      "sceneId": "s1",
+      "text": "PEHR. Ha--! What does this last friend want! Are there any presents in those baskets?"
+    },
+    {
+      "id": "s1-128",
+      "sceneId": "s1",
+      "text": "PETITIONER. Your Honorable Grace is appointed Church Warden--"
+    },
+    {
+      "id": "s1-129",
+      "sceneId": "s1",
+      "text": "PEHR. [Interrupts.] Called--"
+    },
+    {
+      "id": "s1-130",
+      "sceneId": "s1",
+      "text": "PETITIONER. Called to vote day after to-morrow."
+    },
+    {
+      "id": "s1-131",
+      "sceneId": "s1",
+      "text": "PEHR. Eleven o'clock--"
+    },
+    {
+      "id": "s1-132",
+      "sceneId": "s1",
+      "text": "PETITIONER. Eleven o'clock-to be present at the election of the new Rector. But before that, Your Grace must take part in the preliminaries which are here inclosed, and which are for the purpose of showing the incompetence of the opposing candidate for the office."
+    },
+    {
+      "id": "s1-133",
+      "sceneId": "s1",
+      "text": "PEHR. Must I read through two baskets full of papers between now and day after to-morrow? No, no!"
+    },
+    {
+      "id": "s1-134",
+      "sceneId": "s1",
+      "text": "PETITIONER. Perhaps Your Grace would like to give your vote to our candidate--"
+    },
+    {
+      "id": "s1-135",
+      "sceneId": "s1",
+      "text": "PEHR. Without having to read--is that permissible? Thank you, my good friend! Pen and ink!"
+    },
+    {
+      "id": "s1-136",
+      "sceneId": "s1",
+      "text": "PETITIONER. [Hands Pehr pen, ink and paper for signature.] Admirable! I thank Your Grace."
+    },
+    {
+      "id": "s1-137",
+      "sceneId": "s1",
+      "text": "PEHR. [Embracing him.] Ah, it is I that must thank you!"
+    },
+    {
+      "id": "s1-138",
+      "sceneId": "s1",
+      "text": "BUTLER. [Raps on table three times with staff; servants enter with dishes.] Dinner is served. [All go except Pehr and butler.]"
+    },
+    {
+      "id": "s1-139",
+      "sceneId": "s1",
+      "text": "PEHR. [Sits down at table.] At last! [Soft music.] See, now they go when he commands; but when I beg, it's useless!"
+    },
+    {
+      "id": "s1-140",
+      "sceneId": "s1",
+      "text": "BUTLER. It is not my command they obey, Your Grace, but the rules of etiquette."
+    },
+    {
+      "id": "s1-141",
+      "sceneId": "s1",
+      "text": "PEHR. And they transcend my will?"
+    },
+    {
+      "id": "s1-142",
+      "sceneId": "s1",
+      "text": "BUTLER. Laws are the agreements of many, and must of course come before the individual's will."
+    },
+    {
+      "id": "s1-143",
+      "sceneId": "s1",
+      "text": "PEHR. I declare, he can answer all things! Now I shall enjoy myself at all events. Wine warms the heart, food warms the body--but where's the pleasure in loneliness? Mr. Butler, do the rules of etiquette permit that one has company when one is enjoying oneself?"
+    },
+    {
+      "id": "s1-144",
+      "sceneId": "s1",
+      "text": "BUTLER. I almost believe that something in that way is required."
+    },
+    {
+      "id": "s1-145",
+      "sceneId": "s1",
+      "text": "PEHR. Well, then, I want--"
+    },
+    {
+      "id": "s1-146",
+      "sceneId": "s1",
+      "text": "[First Friend enters and rushes into Pehr's arms.]"
+    },
+    {
+      "id": "s1-147",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. Friend of my heart! So I see thee again after such a long separation! And you are like yourself--a little thinner than when I last saw you; but how's everything now, dear old chap?"
+    },
+    {
+      "id": "s1-148",
+      "sceneId": "s1",
+      "text": "PEHR. [Eyeing him.] Oh, thanks, thanks--very well indeed, as--ahem--you see. Pray take a chair and sit down."
+    },
+    {
+      "id": "s1-149",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. Why, bless my soul! I've just had dinner, but I'll go into your ante-room and wait there while you finish yours."
+    },
+    {
+      "id": "s1-150",
+      "sceneId": "s1",
+      "text": "PEHR. No, that is just what you shall not do! I remarked a while ago that I thought life so empty when one must sit alone at table. Take a chair and sit down."
+    },
+    {
+      "id": "s1-151",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. Dear old friend, if you insist I will sit beside you while you dine; but it actually looks as though I had come here for a meal."
+    },
+    {
+      "id": "s1-152",
+      "sceneId": "s1",
+      "text": "PEHR. What matter even if it were so."
+    },
+    {
+      "id": "s1-153",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. [Protests.] Oh--!"
+    },
+    {
+      "id": "s1-154",
+      "sceneId": "s1",
+      "text": "PEHR. Wait a bit--I'm not saying that it is so!"
+    },
+    {
+      "id": "s1-155",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. [Seats himself.] So now you are in clover, as they say. It is pleasant to contemplate that fate can be so kindly, and it must ever rejoice a sensitive soul to see that some one is favored by fickle fortune. Not all--more's the pity!--can praise fickle fortune."
+    },
+    {
+      "id": "s1-156",
+      "sceneId": "s1",
+      "text": "PEHR. Indeed! Have you any grievances?"
+    },
+    {
+      "id": "s1-157",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. I?"
+    },
+    {
+      "id": "s1-158",
+      "sceneId": "s1",
+      "text": "PEHR. Yes--for I don't want to hear any hard-luck stories now, when I'm eating. Won't you be good enough to favor me by trying a hazel-grouse?"
+    },
+    {
+      "id": "s1-159",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. If you speak of favors, my friend!"
+    },
+    {
+      "id": "s1-160",
+      "sceneId": "s1",
+      "text": "PEHR. Then you mustn't say \"my friend\"; you must call me by name."
+    },
+    {
+      "id": "s1-161",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. Christopher! You ask a service of poor me--can I then deny you! [He begins to eat, his appetite increases during following repartee. Pehr regards him with open-eyed wonder.]"
+    },
+    {
+      "id": "s1-162",
+      "sceneId": "s1",
+      "text": "PEHR. One should never deny another anything?"
+    },
+    {
+      "id": "s1-163",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. Well said! One should never deny oneself anything--one another, I mean."
+    },
+    {
+      "id": "s1-164",
+      "sceneId": "s1",
+      "text": "[Enter Second Friend.]"
+    },
+    {
+      "id": "s1-165",
+      "sceneId": "s1",
+      "text": "SECOND FRIEND. [Walking straight up to the table.] Good day, Goran! Do you remember me? [Pehr Stares at him.] No you don't, but I remember you. You see, I never forget my old friends! In the hour of need I look them up. Here you sit and eat and I have nothing to eat, therefore I say right out: Boy, here am I! [Seats himself at table.]"
+    },
+    {
+      "id": "s1-166",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. [To Pehr.] Who is that tramp? He eats as though he had not seen food from Christmas to Easter!"
+    },
+    {
+      "id": "s1-167",
+      "sceneId": "s1",
+      "text": "PEHR. Oh, he's a friend of mine."
+    },
+    {
+      "id": "s1-168",
+      "sceneId": "s1",
+      "text": "SECOND FRIEND. [To Pehr.] Who is that beggar? He stuffs himself like a. wolf in the springtime!"
+    },
+    {
+      "id": "s1-169",
+      "sceneId": "s1",
+      "text": "PEHR. Oh, he is a good friend of mine."
+    },
+    {
+      "id": "s1-170",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. [To Pehr.] Beware false friends, Pehr!"
+    },
+    {
+      "id": "s1-171",
+      "sceneId": "s1",
+      "text": "SECOND FRIEND. [To Pehr.] Beware false friends, Pehr!"
+    },
+    {
+      "id": "s1-172",
+      "sceneId": "s1",
+      "text": "PEHR. Yes, yes!"
+    },
+    {
+      "id": "s1-173",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. [To Pehr.] You'll see, he is going to borrow money from you."
+    },
+    {
+      "id": "s1-174",
+      "sceneId": "s1",
+      "text": "SECOND FRIEND. [To Pehr.] If he asks for a loan from you, you must say no--for he never pays."
+    },
+    {
+      "id": "s1-175",
+      "sceneId": "s1",
+      "text": "PEHR. You don't say so! Well, good friends, don't you think this an excellent repast?"
+    },
+    {
+      "id": "s1-176",
+      "sceneId": "s1",
+      "text": "SECOND FRIEND. I never flatter!"
+    },
+    {
+      "id": "s1-177",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. No, my friend, you only stuff yourself! I never flatter, either, but I cannot therefore mask the truth and must acknowledge that anything of this sort I have never before had a share in, and it has to be Christopher that offers such a treat! Your health, brother Christopher!"
+    },
+    {
+      "id": "s1-178",
+      "sceneId": "s1",
+      "text": "PEHR. [Aghast.] Christopher?"
+    },
+    {
+      "id": "s1-179",
+      "sceneId": "s1",
+      "text": "SECOND FRIEND. I'm a plain, everyday sort of man, and cannot make pretty speeches--which I scorn, and the expression of which from such a source I can ascribe only to a secret desire to get money. That is my plain, everyday opinion."
+    },
+    {
+      "id": "s1-180",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. What insolence!"
+    },
+    {
+      "id": "s1-181",
+      "sceneId": "s1",
+      "text": "PEHR. I must beg that no serious discussions interrupt this delightful gathering, which would be even more agreeable if it were sweetened by some charming representative of the opposite sex."
+    },
+    {
+      "id": "s1-182",
+      "sceneId": "s1",
+      "text": "[A Woman appears.]"
+    },
+    {
+      "id": "s1-183",
+      "sceneId": "s1",
+      "text": "PEHR. Behold!"
+    },
+    {
+      "id": "s1-184",
+      "sceneId": "s1",
+      "text": "WOMAN. So you couldn't wait for me! That was most impolite, but I forgive you since you are my friend. There's my hand!"
+    },
+    {
+      "id": "s1-185",
+      "sceneId": "s1",
+      "text": "PEHR. [Kisses her hand.] I beg a thousand pardons, my beauty, but I must have been mistaken as to the day? Meanwhile, be seated. Will my friends make room at my side? [Friends crowd nearer to him.] No? Well, he who is the younger must do so. That perhaps you do not know? Then he who is my best friend will voluntarily give up his place, for he is always just as near to my heart anyhow. [Both friends give up their places.] I see that you are both my best friends."
+    },
+    {
+      "id": "s1-186",
+      "sceneId": "s1",
+      "text": "WOMAN. And I your best friend among women. Am I not, Alonzo?"
+    },
+    {
+      "id": "s1-187",
+      "sceneId": "s1",
+      "text": "PEHR. Quite right. And now as I raise the bumper, I want to drain it to Friendship! Friendship is like gold, for it is pure."
+    },
+    {
+      "id": "s1-188",
+      "sceneId": "s1",
+      "text": "WOMAN. [To friends.] How prettily he speaks!"
+    },
+    {
+      "id": "s1-189",
+      "sceneId": "s1",
+      "text": "PEHR. Friendship is like the moon--"
+    },
+    {
+      "id": "s1-190",
+      "sceneId": "s1",
+      "text": "THREE FRIENDS. Bravo! Bravo!"
+    },
+    {
+      "id": "s1-191",
+      "sceneId": "s1",
+      "text": "PEHR. For it borrows its gold--[Three Friends exchange glances]--from the sun. And it darkens when the sun departs; true, is it not?"
+    },
+    {
+      "id": "s1-192",
+      "sceneId": "s1",
+      "text": "ALL THREE FRIENDS. [Sullenly.] Very well said!"
+    },
+    {
+      "id": "s1-193",
+      "sceneId": "s1",
+      "text": "PEHR. But friendship is a fire; it must be fed if it is to be kept burning. You have given me your friendship, what have I to give you? [Three friends glance around.] You look on my gold. Alack, it is but dust as compared with your friendship!"
+    },
+    {
+      "id": "s1-194",
+      "sceneId": "s1",
+      "text": "WOMAN. [Adroitly.] One must not despise the temporal because the eternal exists."
+    },
+    {
+      "id": "s1-195",
+      "sceneId": "s1",
+      "text": "FRIENDS. Admirably expressed!"
+    },
+    {
+      "id": "s1-196",
+      "sceneId": "s1",
+      "text": "PEHR. Very well, I wish to reward your faith. See--all this gold I give you!"
+    },
+    {
+      "id": "s1-197",
+      "sceneId": "s1",
+      "text": "ALL THREE FRIENDS. Ah! [They upset the table.]"
+    },
+    {
+      "id": "s1-198",
+      "sceneId": "s1",
+      "text": "PEHR. But remember, I have told you that gold is nothing but dross. [Puts hand to mouth and paces back and forth.] O my God! I believe I'm dying!"
+    },
+    {
+      "id": "s1-199",
+      "sceneId": "s1",
+      "text": "WOMAN. What's wrong with you, Alonzo?"
+    },
+    {
+      "id": "s1-200",
+      "sceneId": "s1",
+      "text": "PEHR. I've got the toothache--oh, my teeth! You see that the rich man, also, is exposed to the annoyances of life. [Friends, with gold pieces, move toward doors.]"
+    },
+    {
+      "id": "s1-201",
+      "sceneId": "s1",
+      "text": "PEHR. No, don't leave me alone in my misery--now, when I most need your company!"
+    },
+    {
+      "id": "s1-202",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. Oh, a little toothache is not dangerous; it will soon pass!"
+    },
+    {
+      "id": "s1-203",
+      "sceneId": "s1",
+      "text": "SECOND FRIEND. Take some cold water in your mouth, then you'll be all right."
+    },
+    {
+      "id": "s1-204",
+      "sceneId": "s1",
+      "text": "WOMAN. Oh, the men! They are so sensitive to a little pain. You should see a woman suffer!"
+    },
+    {
+      "id": "s1-205",
+      "sceneId": "s1",
+      "text": "PEHR. Ah, don't forsake me! I suffer so terribly!"
+    },
+    {
+      "id": "s1-206",
+      "sceneId": "s1",
+      "text": "FIRST FRIEND. I shall never forsake you! [Hand on door.] I'll run for the dentist."
+    },
+    {
+      "id": "s1-207",
+      "sceneId": "s1",
+      "text": "PEHR. No, stay!"
+    },
+    {
+      "id": "s1-208",
+      "sceneId": "s1",
+      "text": "SECOND FRIEND. [Near door.] No; as George's oldest friend it devolves upon me to--"
+    },
+    {
+      "id": "s1-209",
+      "sceneId": "s1",
+      "text": "PEHR. You want to run away from me! Oh, I curse this gold! I curse you, false friends! [Gold pieces in their hands turn black.]"
+    },
+    {
+      "id": "s1-210",
+      "sceneId": "s1",
+      "text": "ALL THREE FRIENDS. He has deceived us--look, look! [All three are stricken with toothache and begin to moan.] Oh! Oh!"
+    },
+    {
+      "id": "s1-211",
+      "sceneId": "s1",
+      "text": "PEHR. [Recovered.] Oh, it's only a little toothache; it will soon pass.--Take cold water in your mouth, old friend, and then it will disappear. [Woman faints.] Surely a woman will not faint for such a little pain! [Friends rush out.] Now run to the dentist and let him draw all your teeth, foxes! After that you'll not bite any more sheep."
+    },
+    {
+      "id": "s1-212",
+      "sceneId": "s1",
+      "text": "WOMAN. [Coming to.] Alfred! all have forsaken you; but I shall remain with you."
+    },
+    {
+      "id": "s1-213",
+      "sceneId": "s1",
+      "text": "PEHR. Yes, but why should you? I'm as poor as the poorest; soon the tax collector will be coming around for the taxes, and he'll seize everything."
+    },
+    {
+      "id": "s1-214",
+      "sceneId": "s1",
+      "text": "WOMAN. [Snuggles up to him.] Then I want to be at your side to support you--[seizes his hand and steals ring during following speeches] and extend to you the hand--"
+    },
+    {
+      "id": "s1-215",
+      "sceneId": "s1",
+      "text": "PEHR. [Duped.] You! Can this be true?"
+    },
+    {
+      "id": "s1-216",
+      "sceneId": "s1",
+      "text": "WOMAN. True? Look at me!"
+    },
+    {
+      "id": "s1-217",
+      "sceneId": "s1",
+      "text": "PEHR. Ah, I have been told that woman is more faithless than man--"
+    },
+    {
+      "id": "s1-218",
+      "sceneId": "s1",
+      "text": "WOMAN. She is wiser than man [puts ring on], therefore she is called faithless. Oh, let me sit, I'm so unstrung! [Pehr leads her to a chair by the wall.]"
+    },
+    {
+      "id": "s1-219",
+      "sceneId": "s1",
+      "text": "PEHR. Compose yourself, my friend; I have only frightened you."
+    },
+    {
+      "id": "s1-220",
+      "sceneId": "s1",
+      "text": "WOMAN. Give me a glass of wine; I feel so faint after all this commotion."
+    },
+    {
+      "id": "s1-221",
+      "sceneId": "s1",
+      "text": "[Pehr goes over to table; wall back of the chair opens and woman and chair disappear. Only the hand with ring is seen as she is heard speaking.]"
+    },
+    {
+      "id": "s1-222",
+      "sceneId": "s1",
+      "text": "Ha, ha--schoolboy! Learn from this not to trust a woman whom you have tricked!"
+    },
+    {
+      "id": "s1-223",
+      "sceneId": "s1",
+      "text": "[Alone, Pehr runs to window and looks out, as he draws back his head, he has the ears of an ass.]"
+    },
+    {
+      "id": "s1-224",
+      "sceneId": "s1",
+      "text": "PEHR. Curses on gold, friendship and women! Now I stand alone--poor, deserted--with a pair of long ears and without my magic ring! Had I known that life was so utterly ignoble, I should have stayed at home with the witch. Where shall I turn to now--without friends, without money, without house and home? Trouble awaits me at the door. Must I now, in all seriousness, go out in the world and work for the attainment of my every wish? If only I were not so alone! Yet, why not as well be alone, since there is no such thing as friendship, and everything is so false and empty? Damnation!"
+    },
+    {
+      "id": "s1-225",
+      "sceneId": "s1",
+      "text": "[Enter Lisa.]"
+    },
+    {
+      "id": "s1-226",
+      "sceneId": "s1",
+      "text": "LISA. Don't curse, Pehr!"
+    },
+    {
+      "id": "s1-227",
+      "sceneId": "s1",
+      "text": "PEHR. Lisa! You do not forsake me, although I forgot you in my prosperous days."
+    },
+    {
+      "id": "s1-228",
+      "sceneId": "s1",
+      "text": "LISA. It is in our need that we find our friends."
+    },
+    {
+      "id": "s1-229",
+      "sceneId": "s1",
+      "text": "PEHR. Friends? A curse on friendship!"
+    },
+    {
+      "id": "s1-230",
+      "sceneId": "s1",
+      "text": "LISA. Don't, Pehr! There are real friendships in life as well as false friends."
+    },
+    {
+      "id": "s1-231",
+      "sceneId": "s1",
+      "text": "PEHR. I have now tried the good things of life, and I found only emptiness and vanity!"
+    },
+    {
+      "id": "s1-232",
+      "sceneId": "s1",
+      "text": "LISA. You have tried in your way--meantime you have made the first plunge of youth, and now you shall be a man! You have looked for happiness in the wrong direction. Don't you want to go out and do good, enlighten your fellow-men, and be useful? For your clear vision can penetrate the perversion and crookedness which one finds in life."
+    },
+    {
+      "id": "s1-233",
+      "sceneId": "s1",
+      "text": "PEHR. And be a great man!"
+    },
+    {
+      "id": "s1-234",
+      "sceneId": "s1",
+      "text": "LISA. Great or obscure, it is all one. You shall be useful--you shall be a reformer who leads humanity onward and upward."
+    },
+    {
+      "id": "s1-235",
+      "sceneId": "s1",
+      "text": "PEHR. Yes, a reformer who will be honored and idolized by the people, and whose name will be on everyone's lips."
+    },
+    {
+      "id": "s1-236",
+      "sceneId": "s1",
+      "text": "LISA. Oh, how far you are from the truth, Pehr! You seek greatness only for personal honor; you shall have it and you shall have a new experience."
+    },
+    {
+      "id": "s1-237",
+      "sceneId": "s1",
+      "text": "PEHR. But how? My ring is gone!"
+    },
+    {
+      "id": "s1-238",
+      "sceneId": "s1",
+      "text": "LISA. The qualities inherent in that ring are such that it can never be away from its owner."
+    },
+    {
+      "id": "s1-239",
+      "sceneId": "s1",
+      "text": "PEHR. [Looks at his hand.] Ah! See, there it is! Well, then, I want to be a great man--a reformer; but you, Lisa, must follow me."
+    },
+    {
+      "id": "s1-240",
+      "sceneId": "s1",
+      "text": "LISA. Not yet. But I will follow thee at a distance, and when thou dost meet with sorrow and need and the sun of happiness is for thee o'erclouded, then I will be near thee with my weak support. Go thou out into life, see what wrongs are done there; but when 'midst filth and mire thou hast seen how even the flower of beauty thrives, then think on this: Life is made up of both good and bad."
+    },
+    {
+      "id": "s1-241",
+      "sceneId": "s1",
+      "text": "CURTAIN"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "SCENE: A public square. To right, Courthouse arcade, above which there is a speakers' cage with places for Burgomaster and Councilmen; to left shoemaker's house, with shop window and sign; outside a bench and table, close to them a hen-coop and water-tub. In the centre of the square stands a pillory, with two neck-irons on chains, above it a bronze figure with a switch in its hand; to right centre, statue o f Burgomaster Hans Schulze, which leans toward a marble female statue crowned with a laurel wreath. Background: view of city."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "[Pillory and Statue.]"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "PILLORY. [Bows low to statue.] Good morning, Statue. Did you sleep well last night?"
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "STATUE. [Nods.] Good morning, Pillory. Did you sleep well yourself?"
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "PILLORY. To be sure I did--and dreamed also! Can you guess what I dreamed?"
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "STATUE. [Crustily.] How should that be possible?"
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "PILLORY. Well, I dreamt--can you imagine it?--that a reformer came to the city."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "STATUE. What--a reformer? [Stamps.] Hell! how cold your feet get standing here; but what does one not do for glory's sake! A reformer? Then he, too, is to have a statue?"
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "PILLORY. A statue--well, hardly! No, he had to play statue himself, at my feet, while I clasped him around the neck with both arms. [Neck-irons clash.] You see, he was a real reformer, and not a charlatan, such as you were in life!"
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "STATUE. Oh, bosh! You should be put to shame!"
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "PILLORY. I should--but I always have justice on my side. [Swings switch.]"
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "STATUE. What, then, was his specialty?"
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "PILLORY. He was a reformer in street paving."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "STATUE. In street paving? Pestilence and cowardice! He dabbles, then, in my profession. [Bumps into female statue.]"
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "PILLORY. No; he does intelligently what you dabbled in, and you wouldn't be standing where you are had you not been the burgomaster's father-in-law!"
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "STATUE. Was not I the one who carried out the new idea of stone-paved streets?"
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "PILLORY. Yes, that you did; but the idea was not new. And what did you do? In place of the soft sand in which one formerly placed one's feet, one must now balance oneself on jagged and rolly stones, which destroy both feet and shoes--save on the street which leads from your house to the tavern, where you let lay a footbridge of flat stones."
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "STATUE. And now this reformer--or charlatan--wants to undo what I did?"
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "PILLORY. He wants to tear up what you laid down and pave all the streets with \"burgomaster\" stones, so that all may be equally comfortable."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "STATUE. So he's a rabid radical!"
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "PILLORY. Yes, that's it, and he has no party politics back of him. You had the wagonmaker, the shoemaker, the chiropodist and the burgomaster with you, therefore you succeeded."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "STATUE. He'd better be careful! Every stone which he removes from my work the people will hurl at him, and woe be unto him if he touches my memory!"
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "PILLORY. Let us hope that he unmasks you, you old fraud! Do you recall how you happened to become one of the great ones after your death? First, at the funeral, the parson embroidered your virtues--for twenty marks; the contractor, who had grown rich on your streets, delivered a eulogy; the chiropodist, who acquired practice through your beautiful street stones, had a medallion struck of you; then the wagonmaker, who made money patching up wagons, named a vehicle after you; and last, the shoemaker held a memorial fest in your honor. Then it was done! Your son-in-law, the burgomaster, sent out a subscription blank for a statue no one dared refuse, and now you stand there."
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "STATUE. Yes, I do, and it grieves you. To-day the Schulze Society will come with wreaths and will sing the memorial song ordered by my son-in-law. I daresay having to stand and listen to it will make you writhe."
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "PILLORY. I can't dispute that, but in the end we shall see if I'm not a true dreamer!"
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "STATUE. Hold your tongue! for here comes the Society."
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "PILLORY. I shall have to hold my sides for laughter--three persons constitute the whole Society! Last year they were six. You're a back number, Schulze. Soon you'll see that they will move you into the ox-grove!"
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "STATUE. A people who reverence their great men and cherish past events can never sink so low as to consign their statues to the ox-grove."
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "[Shoemaker comes out from his house and opens shop window.]"
+    },
+    {
+      "id": "s2-29",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. I believe there has been rain in the night, brother Schulze looks so shiny. If it will only be fair weather when the singing society makes its appearance! [Shouts back into the house.] Hans!"
+    },
+    {
+      "id": "s2-30",
+      "sceneId": "s2",
+      "text": "HANS. [At window.] Yes, master."
+    },
+    {
+      "id": "s2-31",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. Sit here by the window with your work, I'm going out to fulfil a civic duty."
+    },
+    {
+      "id": "s2-32",
+      "sceneId": "s2",
+      "text": "HANS. Yes, master."
+    },
+    {
+      "id": "s2-33",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. If you don't watch out, I'll let the strap do a dance on your back! Do you hear that, knave?"
+    },
+    {
+      "id": "s2-34",
+      "sceneId": "s2",
+      "text": "HANS. Yes, master."
+    },
+    {
+      "id": "s2-35",
+      "sceneId": "s2",
+      "text": "[Enter Wagonmaker, with a banner.]"
+    },
+    {
+      "id": "s2-36",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. 'Morning, Shoemaker."
+    },
+    {
+      "id": "s2-37",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. Good morning."
+    },
+    {
+      "id": "s2-38",
+      "sceneId": "s2",
+      "text": "[Enter Chiropodist, with a laurel wreath.]"
+    },
+    {
+      "id": "s2-39",
+      "sceneId": "s2",
+      "text": "CHIROPODIST. Good morning, good morning. Shall we wait for the burgomaster? I think we'd better hurry along, it's preparing for more rain."
+    },
+    {
+      "id": "s2-40",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. That's just what I said to myself this morning, therefore I was wise and brought my raincoat."
+    },
+    {
+      "id": "s2-41",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. The people should now assemble here and form a procession, but I don't see a cat! Shoemaker, didn't you tell the printer that we were to celebrate the Memorial Festival to-day?"
+    },
+    {
+      "id": "s2-42",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. Why certainly, certainly!"
+    },
+    {
+      "id": "s2-43",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. Will the gentlemen please form a semi-circle around the object's pedestal--so!"
+    },
+    {
+      "id": "s2-44",
+      "sceneId": "s2",
+      "text": "CHIROPODIST. We might begin with the cantata--then perhaps the people will come."
+    },
+    {
+      "id": "s2-45",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. I can't understand why the burgomaster isn't here? He always treated us to brandy other years."
+    },
+    {
+      "id": "s2-46",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. If you start the song he'll wake up, if he has overslept himself. Tune up, gentlemen--do, mi, sol, do!"
+    },
+    {
+      "id": "s2-47",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. Then, I'll begin--but watch out for the trio so as to make it a regular ear-splitting ensemble!"
+    },
+    {
+      "id": "s2-48",
+      "sceneId": "s2",
+      "text": "[Solo Recitative.] Hail to thee, Burgomaster! Hail to thee, benefactor! Life burns our deeds within its envious fire, But mem'ry, like a phoenix from the pyre, Rises on stalwart wing to waft them higher."
+    },
+    {
+      "id": "s2-49",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. Well whistled, Wagonmaker! Any signs of the grog yet?"
+    },
+    {
+      "id": "s2-50",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. Go on, Shoemaker! Now comes the aria; it must be rendered with feeling. Then you shall see that the burgomaster will wake up!"
+    },
+    {
+      "id": "s2-51",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. [Sings aria.]"
+    },
+    {
+      "id": "s2-52",
+      "sceneId": "s2",
+      "text": "ARIA."
+    },
+    {
+      "id": "s2-53",
+      "sceneId": "s2",
+      "text": "The breath of the rose and carnation-bud's fragrance, 'mongst wonder-flowers' fated! As false at heart As glitter-wave, She held toward him her billowy hair, Where all the ocean's freshness breathes. And lily so red and lily so white Confidingly muse on death and life."
+    },
+    {
+      "id": "s2-54",
+      "sceneId": "s2",
+      "text": "CHIROPODIST. That was a rare strophe! But it doesn't seem to have any special bearing upon the subject and our present conditions. Where did you get it?"
+    },
+    {
+      "id": "s2-55",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. Well, you see, I have an apprentice at home who is one of your idealists; he does things of this sort when he's free, on Sundays."
+    },
+    {
+      "id": "s2-56",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. If I may venture an opinion, I think it inconceivably difficult to get at the pith of the strophe."
+    },
+    {
+      "id": "s2-57",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. That's just the fine point, you see! But hush--methinks we have the rain here. [Puts on coat.]"
+    },
+    {
+      "id": "s2-58",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. Do the gentlemen think it worth while to stand here in the rain and get soaked on that old duffer's account?"
+    },
+    {
+      "id": "s2-59",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. But we are paid to support the song and we must at least do the trio before we go; for when we all pitch in together the object itself won't be able to sleep! The oration, on the other hand, can be given at any time; besides, there is too small a public for so big a speech. We'll take the trio--do, mi, sol, do. It is not as ideal as the aria, but it evinces greater familiarity with the specific conditions. [Rain patters, wind increases.]"
+    },
+    {
+      "id": "s2-60",
+      "sceneId": "s2",
+      "text": "CHIROPODIST. Damned if I stand here any longer and catch cold for that old charlatan! Remuneration? Six marks each! One can do without that."
+    },
+    {
+      "id": "s2-61",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. I think so, too."
+    },
+    {
+      "id": "s2-62",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. Were you not in on the subscription for the statue, perhaps? Were you not there and helped, with a medallion, to turn him into a great man?"
+    },
+    {
+      "id": "s2-63",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. Well, we had to, didn't we? otherwise they would have downed us."
+    },
+    {
+      "id": "s2-64",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. True--but it is ungrateful not to respect his memory. I shall sing the trio alone."
+    },
+    {
+      "id": "s2-65",
+      "sceneId": "s2",
+      "text": "CHIROPODIST. Oh, you can do it--you, with your sou'wester! I'm going home to breakfast. [Flings wreath on pedestal, dashes hood of cloak over head and runs off.]"
+    },
+    {
+      "id": "s2-66",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. This is the last time I'm going to lend myself to such tomfoolery! Good-bye!"
+    },
+    {
+      "id": "s2-67",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. [Alone.] And now I'm going to the burgomaster's for a brandy. But first, I must deliver my speech to the old man on the pedestal; then my conscience will be easier. [Talks to statue.] You think, you old Schulze, it is for your sake that we sing, for your sake that we speechify; can't you comprehend that we do so for our own sakes? We need a big man to push forward when we turn out to be too little ourselves. We need your word to quote, since no one credits ours. Our little town needed your statue in order to become a great city; your insignificant relatives needed your statue to help them get on and find occupation in this troublesome world--and therefore, mark you, you stand so high above us all--a figure for naught but ciphers! Now you have heard a true remark, you poor wretch! the first and the last you'll hear, perhaps--[Alarmed.] Surely no one has been listening to what I said? Ah! here comes the great man's relative."
+    },
+    {
+      "id": "s2-68",
+      "sceneId": "s2",
+      "text": "[Enter Relative.]"
+    },
+    {
+      "id": "s2-69",
+      "sceneId": "s2",
+      "text": "RELATIVE. Good morning, Shoemaker. Have you heard--have you heard of the scurrilous attack?"
+    },
+    {
+      "id": "s2-70",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. What now? What's up, Herr Relative?"
+    },
+    {
+      "id": "s2-71",
+      "sceneId": "s2",
+      "text": "RELATIVE. A reformer has come to the city; haven't you read his broad-sheet?"
+    },
+    {
+      "id": "s2-72",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. No, no!"
+    },
+    {
+      "id": "s2-73",
+      "sceneId": "s2",
+      "text": "RELATIVE. Oh, it is unprecedented--read for yourself!"
+    },
+    {
+      "id": "s2-74",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. I'm too agitated to read; you read it."
+    },
+    {
+      "id": "s2-75",
+      "sceneId": "s2",
+      "text": "RELATIVE. Then listen to what the scoundrel writes: \"A quarter of a century has hardly elapsed since Burgomaster Schulze gladdened this community with weighty improvements as regards its street paving, by giving us in place of the old sand-ground rough cobble stones.\" Do you hear! Do you hear!"
+    },
+    {
+      "id": "s2-76",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. Yes, I hear. But that was not very alarming."
+    },
+    {
+      "id": "s2-77",
+      "sceneId": "s2",
+      "text": "RELATIVE. Not alarming! Doesn't he call him Burgomaster Schulze? One does not say burgomaster of a dead man--one says Our Illustrious--Does not the wretch write about rough cobble stones? Does he not attempt with that to undermine *his* worth?"
+    },
+    {
+      "id": "s2-78",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. But one cannot call it an attack, if he says that cobble stones are rough when they are rough."
+    },
+    {
+      "id": "s2-79",
+      "sceneId": "s2",
+      "text": "RELATIVE. Of course they are rough, but one must not say that they are when a great man is responsible for them. Have a care, Master Shoemaker! I see that you are a sceptic. Have a care--you know the consequences!"
+    },
+    {
+      "id": "s2-80",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. For God's sake, I'm no sceptic! Haven't I been standing here chanting odes to brother Schulze?"
+    },
+    {
+      "id": "s2-81",
+      "sceneId": "s2",
+      "text": "RELATIVE. Brother! If you were a brother to him in life, please remember that all titles are annulled by death. Will you admit that this is an attack?"
+    },
+    {
+      "id": "s2-82",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. Of course I will--Have I said anything to the contrary? Can you prove that I said anything to the contrary?"
+    },
+    {
+      "id": "s2-83",
+      "sceneId": "s2",
+      "text": "RELATIVE. No; but be careful! We hold Common Council here on the square at nine o'clock, when that reformer will speak for his cause. Do you know what he wants?"
+    },
+    {
+      "id": "s2-84",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. No."
+    },
+    {
+      "id": "s2-85",
+      "sceneId": "s2",
+      "text": "RELATIVE. Can you imagine it! He wants to repave all our streets with flagstones."
+    },
+    {
+      "id": "s2-86",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. But that's rather considerate of him."
+    },
+    {
+      "id": "s2-87",
+      "sceneId": "s2",
+      "text": "RELATIVE. [Laughs ironically.] Considerate? Oh, very! How will it go, for example just to mention your calling--how will it go with the precious shoemaking trade when the people no longer wear out any shoes?"
+    },
+    {
+      "id": "s2-88",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. What--what say you? Forgive me, my friend, but you are right. However, I'm not thinking of my humble calling, but of all the poor innocent working men who will be robbed of their bread--and of their poor wives and children!"
+    },
+    {
+      "id": "s2-89",
+      "sceneId": "s2",
+      "text": "HANS. [At window, makes faces.] Poor unfortunate workingmen!"
+    },
+    {
+      "id": "s2-90",
+      "sceneId": "s2",
+      "text": "RELATIVE. You see, you see! [Pointing to statue.] He was the friend of the poor, and he was a man that knew what he did!"
+    },
+    {
+      "id": "s2-91",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. You may depend upon it that both the wagonmaker and the chiropodist will share my opinion."
+    },
+    {
+      "id": "s2-92",
+      "sceneId": "s2",
+      "text": "RELATIVE. Am I quite sure of that?"
+    },
+    {
+      "id": "s2-93",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. In life and in death!"
+    },
+    {
+      "id": "s2-94",
+      "sceneId": "s2",
+      "text": "RELATIVE. Happy the people who respect their great men! [Runs.]"
+    },
+    {
+      "id": "s2-95",
+      "sceneId": "s2",
+      "text": "[Enter populace. Relative is talking with the wagonmaker and the chiropodist.] [The Courthouse clock strikes nine; two trumpeters and a drummer come on and sound a call. When the music has ceased Pehr enters, and is joined by Street-Paver.]"
+    },
+    {
+      "id": "s2-96",
+      "sceneId": "s2",
+      "text": "PEHR. Good morning, master. How do you think this matter will go for me?"
+    },
+    {
+      "id": "s2-97",
+      "sceneId": "s2",
+      "text": "STREET-PAVER. Badly, very badly!"
+    },
+    {
+      "id": "s2-98",
+      "sceneId": "s2",
+      "text": "PEHR. Don't the people want improvements, then?"
+    },
+    {
+      "id": "s2-99",
+      "sceneId": "s2",
+      "text": "STREET-PAVER. There's no question as to that--it's a question of the great man's reputation, which you have attacked."
+    },
+    {
+      "id": "s2-100",
+      "sceneId": "s2",
+      "text": "PEHR. Have I attacked him? [Rain has ceased.]"
+    },
+    {
+      "id": "s2-101",
+      "sceneId": "s2",
+      "text": "STREET-PAVER. You called him *burgomaster*, and that title has become a by-word in the town; you said that his paving stones were rough--in a word, you have expressed the common opinion of the man, therefore you are ruined."
+    },
+    {
+      "id": "s2-102",
+      "sceneId": "s2",
+      "text": "PEHR. It's a very remarkable world that we live in!"
+    },
+    {
+      "id": "s2-103",
+      "sceneId": "s2",
+      "text": "STREET-PAVER. It's rather see-saw, and has its little eccentricities, but do not try to help it, sir, for then it will send you straight to tophet!"
+    },
+    {
+      "id": "s2-104",
+      "sceneId": "s2",
+      "text": "PEHR. The people are dissatisfied and when one wants to dig up the cause of their dissatisfaction, they throw stones at one! [A boy thrusts a leaflet into their hands, hurries along and distributes more among the populace.]"
+    },
+    {
+      "id": "s2-105",
+      "sceneId": "s2",
+      "text": "PEHR. [Glances at leaflet.] But this is outrageous! They have sketched us. Have I a nose like that?"
+    },
+    {
+      "id": "s2-106",
+      "sceneId": "s2",
+      "text": "STREET-PAVER. They have hit us off rather well--but surely I haven't such ears!"
+    },
+    {
+      "id": "s2-107",
+      "sceneId": "s2",
+      "text": "PEHR. I can't understand this--Yesterday the editor was for the cause and to-day he abuses me."
+    },
+    {
+      "id": "s2-108",
+      "sceneId": "s2",
+      "text": "STREET-PAVER. Public opinion, you see! He said to me, also, that he approved of this movement, but that he stared not defy public opinion."
+    },
+    {
+      "id": "s2-109",
+      "sceneId": "s2",
+      "text": "PEHR. A curious way of working for his cause! Who, then, is public opinion for him?"
+    },
+    {
+      "id": "s2-110",
+      "sceneId": "s2",
+      "text": "STREET-PAVER. First, the customers; then the burgomaster, money, and power."
+    },
+    {
+      "id": "s2-111",
+      "sceneId": "s2",
+      "text": "PEHR. Then why did he caricature you?"
+    },
+    {
+      "id": "s2-112",
+      "sceneId": "s2",
+      "text": "STREET-PAVER. Because I entered into your proposition. As a matter of course, I did it because I could make money by it. Meantime, he is selling hundreds of these poems to-day--[Trumpets and drum sound; Burgomaster, Councilmen and Clerks come out into speakers' cage.]"
+    },
+    {
+      "id": "s2-113",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. Well, my children, you must have heard that an impostor has come to town."
+    },
+    {
+      "id": "s2-114",
+      "sceneId": "s2",
+      "text": "ONE OF THE PEOPLE. He's no impostor; he is a reformer."
+    },
+    {
+      "id": "s2-115",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. It comes to the same thing--but you must hold your tongue, my lad, you have no vote!"
+    },
+    {
+      "id": "s2-116",
+      "sceneId": "s2",
+      "text": "PEHR. Herr Burgomaster, I would beg that my proposition be presented in a proper manner before this honored popular assembly--"
+    },
+    {
+      "id": "s2-117",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. Just listen to him! We know his proposition and it simply remains for us to express ourselves. Well and good, I consign it to the madhouse! It is the man's wish--think of it, my children! that all may be permitted to tread upon smooth pavements. So long as Our Lord creates different kinds of human beings, there must be different kinds of stones on our streets. Is there anybody who would add further remarks?"
+    },
+    {
+      "id": "s2-118",
+      "sceneId": "s2",
+      "text": "ONE OF THE PEOPLE. That isn't true! Our Lord does not create different kinds of human beings."
+    },
+    {
+      "id": "s2-119",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. Who gave you permission to shriek?"
+    },
+    {
+      "id": "s2-120",
+      "sceneId": "s2",
+      "text": "ONE OF THE PEOPLE. Since we have no voice in things, we may at least be allowed to shriek!"
+    },
+    {
+      "id": "s2-121",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. Yes, shriek, and I'll put you in the lockup! There is no one, of course, who has something to add?"
+    },
+    {
+      "id": "s2-122",
+      "sceneId": "s2",
+      "text": "RELATIVE. Herr Burgomaster, as a man of honor, may I not be permitted to enter a protest against the scandalous attack that has been made?"
+    },
+    {
+      "id": "s2-123",
+      "sceneId": "s2",
+      "text": "PEHR. I challenge the relative!"
+    },
+    {
+      "id": "s2-124",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. And I, on the other hand, attach more weight to the Relative's utterance since he is allied to a great man; that is always the community's best guarantee--"
+    },
+    {
+      "id": "s2-125",
+      "sceneId": "s2",
+      "text": "ROOSTER. [From hen-coop outside the shoemaker's.] Cockelicoo!"
+    },
+    {
+      "id": "s2-126",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. What's that devilish racket?"
+    },
+    {
+      "id": "s2-127",
+      "sceneId": "s2",
+      "text": "ONE OF THE PEOPLE. That's one who is blessed with a voice!"
+    },
+    {
+      "id": "s2-128",
+      "sceneId": "s2",
+      "text": "ROOSTER. Cockelicoo!"
+    },
+    {
+      "id": "s2-129",
+      "sceneId": "s2",
+      "text": "ONE OF THE PEOPLE. Arrest him! [Laughter and groans.]"
+    },
+    {
+      "id": "s2-130",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. Quiet, back there! Secondly: Said adventurer has spoken outrageously of the administration in that he has made defamatory speeches against the city's departed burgomaster. We would hear a few impartial citizens--Master Shoemaker, what, in your opinion, does he merit?"
+    },
+    {
+      "id": "s2-131",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. I vote with the administration."
+    },
+    {
+      "id": "s2-132",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. Quite right; he should be held in contempt. What say you, Master Chiropodist?"
+    },
+    {
+      "id": "s2-133",
+      "sceneId": "s2",
+      "text": "CHIROPODIST. I concur."
+    },
+    {
+      "id": "s2-134",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. And the wagonmaker?"
+    },
+    {
+      "id": "s2-135",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. I have the honor to agree with the last speaker."
+    },
+    {
+      "id": "s2-136",
+      "sceneId": "s2",
+      "text": "ONE OF THE PEOPLE. Those who have the right to speak are silent."
+    },
+    {
+      "id": "s2-137",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. Silence, back there! On the ground of what has already been advanced, with the support of conclusive evidence, the adventurer named Pehr [no family name] is hereby sentenced for vicious utterances against the administration to stand in the pillory two hours, later to be expelled from the city, to his everlasting disgrace and as a warning to others."
+    },
+    {
+      "id": "s2-138",
+      "sceneId": "s2",
+      "text": "PEHR. Herr Burgomaster, the proofs are lacking."
+    },
+    {
+      "id": "s2-139",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. We require none. Axiom, or self-evident points, neither can nor need be proved. Away with him! [Pehr is led off.]"
+    },
+    {
+      "id": "s2-140",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. Thirdly: In consideration of the vexatious as well as unforeseen incident that the city's dogs give unseemly expression to their inward feelings for the hideous around the pedestal of Hans Schulze's statue, an appropriation is demanded for an iron railing around the same. Surely no one will refuse a deserving man such trifling act of respect?"
+    },
+    {
+      "id": "s2-141",
+      "sceneId": "s2",
+      "text": "QUALIFIED VOTERS. No!"
+    },
+    {
+      "id": "s2-142",
+      "sceneId": "s2",
+      "text": "ONE OF THE PEOPLE. That is the first time we've heard the voters say no!"
+    },
+    {
+      "id": "s2-143",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. Officer, put him in the lockup! The question has been answered, then, in the affirmative."
+    },
+    {
+      "id": "s2-144",
+      "sceneId": "s2",
+      "text": "QUALIFIED VOTERS. Yes."
+    },
+    {
+      "id": "s2-145",
+      "sceneId": "s2",
+      "text": "ONE OF THE PEOPLE. [Makes noise like a sheep.] B-a-a-a! [An instant of laughter and commotion.]"
+    },
+    {
+      "id": "s2-146",
+      "sceneId": "s2",
+      "text": "BURGOMASTER. The Common Council is adjourned. [Trumpets and drum sound, after which silence on stage.]"
+    },
+    {
+      "id": "s2-147",
+      "sceneId": "s2",
+      "text": "RELATIVE. [To Shoemaker.] He's an uncommonly firm expeditor, that burgomaster."
+    },
+    {
+      "id": "s2-148",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. He ought to be in the Legislature--then it would go a little faster with the common motions."
+    },
+    {
+      "id": "s2-149",
+      "sceneId": "s2",
+      "text": "[Burgomaster, Councilmen and Secretary go into Courthouse. People continue to circulate on square; Street-paver keeps aloof.]"
+    },
+    {
+      "id": "s2-150",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. [To Chiropodist, Wagonmaker and Relative.] Gentlemen, won't you sit down and drink a glass of ale with me?"
+    },
+    {
+      "id": "s2-151",
+      "sceneId": "s2",
+      "text": "CHIROPODIST, WAGONMAKER, RELATIVE. Thank you!"
+    },
+    {
+      "id": "s2-152",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. [At door, gives order; Hans brings on ale.] Well, Herr Relative, you did not choose to be present this morning at the memorial fest for your illustrious kinsman?"
+    },
+    {
+      "id": "s2-153",
+      "sceneId": "s2",
+      "text": "RELATIVE. Where was the need of my going out in the rain? You were there with the Society."
+    },
+    {
+      "id": "s2-154",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. The whole Society! There were three of us."
+    },
+    {
+      "id": "s2-155",
+      "sceneId": "s2",
+      "text": "RELATIVE. Did you sing?"
+    },
+    {
+      "id": "s2-156",
+      "sceneId": "s2",
+      "text": "CHIROPODIST. Yes, a little."
+    },
+    {
+      "id": "s2-157",
+      "sceneId": "s2",
+      "text": "RELATIVE. [Laughing.] Were there many people?"
+    },
+    {
+      "id": "s2-158",
+      "sceneId": "s2",
+      "text": "WAGONMAKER. Not a soul!"
+    },
+    {
+      "id": "s2-159",
+      "sceneId": "s2",
+      "text": "RELATIVE. And the burgomaster--"
+    },
+    {
+      "id": "s2-160",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. Overslept himself."
+    },
+    {
+      "id": "s2-161",
+      "sceneId": "s2",
+      "text": "RELATIVE. [Laughing.] Have you seen the *Morning Crow*?"
+    },
+    {
+      "id": "s2-162",
+      "sceneId": "s2",
+      "text": "ALL. No."
+    },
+    {
+      "id": "s2-163",
+      "sceneId": "s2",
+      "text": "RELATIVE. [Takes up a pamphlet.] Would you like to hear, then--\"*Tribute*. The customary tribute paid by the Schulze Society to the memory of our worthy citizen, whom we commemorate in bronze on the city's public square, took place this morning in presence of a great crowd of people that greeted the memorial songs, sung in honor of the illustrious departed, with hearty applause. The songs were rendered by the great chorus with the usual precision and good ensemble. The oration, which had been prepared with the utmost care, was delivered in clear, resonant tones by the worthy shoemaker, Pumpen-Block. Among the notables present we observed the city's burgomaster, the kinsman of the departed, and others.\" [All laugh.]"
+    },
+    {
+      "id": "s2-164",
+      "sceneId": "s2",
+      "text": "RELATIVE. Isn't that rich?"
+    },
+    {
+      "id": "s2-165",
+      "sceneId": "s2",
+      "text": "ALL. Oh, it's priceless!--You wrote that."
+    },
+    {
+      "id": "s2-166",
+      "sceneId": "s2",
+      "text": "RELATIVE. By the by, have you seen the cartoon of the reformer and the street-paver? It's capital!"
+    },
+    {
+      "id": "s2-167",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. But it was a bit extravagant to caricature them in that way!"
+    },
+    {
+      "id": "s2-168",
+      "sceneId": "s2",
+      "text": "RELATIVE. Oh, no sensible person has anything against the proposition; but that it should fall into such hands--Hush, here he comes!"
+    },
+    {
+      "id": "s2-169",
+      "sceneId": "s2",
+      "text": "[Pehr is led on by guards, who place him in the pillory and adjust neck-irons. The populace nudge each other and point at him. Shoemaker's company slightly embarrassed. Enter a lyre player and an old blind woman, with a painted canvas on a pole. Old woman sings and points at canvas, which is painted in six panels--one for each stanza.]"
+    },
+    {
+      "id": "s2-170",
+      "sceneId": "s2",
+      "text": "OLD WOMAN."
+    },
+    {
+      "id": "s2-171",
+      "sceneId": "s2",
+      "text": "There was a guileless youth Who heard the people's wail; Lawgivers sat in the square And gaily quaffed their ale."
+    },
+    {
+      "id": "s2-172",
+      "sceneId": "s2",
+      "text": "The youth to the people said: \"I would make your pathway fair!\" \"There's trouble,\" the rulers cried, \"Sedition breeds in the air.\""
+    },
+    {
+      "id": "s2-173",
+      "sceneId": "s2",
+      "text": "Still they sat in the square, And still they quaffed their ale; They talked of the people's good, But heard not the people's wail."
+    },
+    {
+      "id": "s2-174",
+      "sceneId": "s2",
+      "text": "The youth in the pillory stood, For there he'd been given his place; In the wag'nmaker's hen-coop the cock crew As of yore in Caiphas' palace."
+    },
+    {
+      "id": "s2-175",
+      "sceneId": "s2",
+      "text": "The great respect the law, Their own renown they buy With statues and tombs and gold To praise them when they die."
+    },
+    {
+      "id": "s2-176",
+      "sceneId": "s2",
+      "text": "The people pass under the yoke, They wail through the vigils of night, And wait till the cock shall crow To herald an era of light."
+    },
+    {
+      "id": "s2-177",
+      "sceneId": "s2",
+      "text": "[Shoemaker's company make wry faces and pretend not to be listening; the people are interested and drop pennies into the old woman's bank. The women are moved to tears and wipe their eyes now and then.]"
+    },
+    {
+      "id": "s2-178",
+      "sceneId": "s2",
+      "text": "RELATIVE. [To shoemaker.] Have you many orders now-a-days?"
+    },
+    {
+      "id": "s2-179",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. Oh, so-so--"
+    },
+    {
+      "id": "s2-180",
+      "sceneId": "s2",
+      "text": "OLD WOMAN. Give the old blind woman a coin?"
+    },
+    {
+      "id": "s2-181",
+      "sceneId": "s2",
+      "text": "CHIROPODIST. Begging is prohibited, don't you know that?"
+    },
+    {
+      "id": "s2-182",
+      "sceneId": "s2",
+      "text": "ONE OF THE PEOPLE. She's not begging; she asks remuneration."
+    },
+    {
+      "id": "s2-183",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. What kind of rot is he talking?"
+    },
+    {
+      "id": "s2-184",
+      "sceneId": "s2",
+      "text": "ONE OF THE PEOPLE. The Schulze Society is paid to sing for the statue yonder, but the men pocket the coins and stay away. This morning only three were there."
+    },
+    {
+      "id": "s2-185",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. [To his guests.] Think, they know all that goes on, the villains!"
+    },
+    {
+      "id": "s2-186",
+      "sceneId": "s2",
+      "text": "OLD WOMAN. Give the blind old woman a coin!"
+    },
+    {
+      "id": "s2-187",
+      "sceneId": "s2",
+      "text": "RELATIVE. One must pay, to boot, for her croaking?"
+    },
+    {
+      "id": "s2-188",
+      "sceneId": "s2",
+      "text": "ONE OF THE PEOPLE. She sings better than the shoemaker sang this morning, when we stood round the corner listening to him. He certainly does not sing ideally about carnations and roses, but a true word spoken at the right moment is also ideal!"
+    },
+    {
+      "id": "s2-189",
+      "sceneId": "s2",
+      "text": "RELATIVE. If you don't go, old hag, you'll be locked up!"
+    },
+    {
+      "id": "s2-190",
+      "sceneId": "s2",
+      "text": "[Thunder and lightning, wind, rain, commotion.]"
+    },
+    {
+      "id": "s2-191",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. Egad! it's raining again. Step inside, gentlemen. [They break up.]"
+    },
+    {
+      "id": "s2-192",
+      "sceneId": "s2",
+      "text": "OLD WOMAN. Must that poor wretch in the pillory stand out in the rain?"
+    },
+    {
+      "id": "s2-193",
+      "sceneId": "s2",
+      "text": "RELATIVE. If my kinsman, who is so great a personage, can stand outside, then that fellow may as well stay where he is."
+    },
+    {
+      "id": "s2-194",
+      "sceneId": "s2",
+      "text": "SHOEMAKER. It cools these reformers off so nicely to get a little cold water over them. [Trips, stubs toe against a stone.] The damned cobble stones! [Hops into house on one leg. Exit all but Pehr and Old Woman--Lisa.]"
+    },
+    {
+      "id": "s2-195",
+      "sceneId": "s2",
+      "text": "LISA. [Throws off disguise.] Well, Pehr! You have become a famous man; your name is now on every one's lips, your picture is being carried round on all streets and public squares and the people hail you as a reformer. Are you satisfied?"
+    },
+    {
+      "id": "s2-196",
+      "sceneId": "s2",
+      "text": "PEHR. Yes, Lisa, now I am satisfied with being a reformer!"
+    },
+    {
+      "id": "s2-197",
+      "sceneId": "s2",
+      "text": "LISA. Shall you leave your work half-done?"
+    },
+    {
+      "id": "s2-198",
+      "sceneId": "s2",
+      "text": "PEHR. Yes, Lord save us! If only I can escape with my skin."
+    },
+    {
+      "id": "s2-199",
+      "sceneId": "s2",
+      "text": "LISA. You sought glory and renown--"
+    },
+    {
+      "id": "s2-200",
+      "sceneId": "s2",
+      "text": "PEHR. But all do that!"
+    },
+    {
+      "id": "s2-201",
+      "sceneId": "s2",
+      "text": "LISA. Not all. But you had the approval of the people."
+    },
+    {
+      "id": "s2-202",
+      "sceneId": "s2",
+      "text": "PEHR. The people! They have nothing to say."
+    },
+    {
+      "id": "s2-203",
+      "sceneId": "s2",
+      "text": "LISA. So it was the approval of the great that you wanted. Then stand there and be ashamed! You did not even believe in the cause for which you stood."
+    },
+    {
+      "id": "s2-204",
+      "sceneId": "s2",
+      "text": "PEHR. Frankly, I think it a matter of slight consequence whether one walks upon smooth or rough stones."
+    },
+    {
+      "id": "s2-205",
+      "sceneId": "s2",
+      "text": "LISA. When one walks in calfskin boots--yes; but not when one goes barefooted!"
+    },
+    {
+      "id": "s2-206",
+      "sceneId": "s2",
+      "text": "PEHR. Moreover, the community isn't worth a straw; the whole thing is only a sham! *The common good, the common good*--one never talks of anything else. What, then, is the common good? It strikes me as being an agreement between a few private individuals."
+    },
+    {
+      "id": "s2-207",
+      "sceneId": "s2",
+      "text": "LISA. It should be everyone's good, but it isn't. Make it so, and it will be so."
+    },
+    {
+      "id": "s2-208",
+      "sceneId": "s2",
+      "text": "PEHR. I want to--oh, I want to do it, but I haven't the power!"
+    },
+    {
+      "id": "s2-209",
+      "sceneId": "s2",
+      "text": "LISA. Then get it, Pehr, and let's see if I have made a mistake."
+    },
+    {
+      "id": "s2-210",
+      "sceneId": "s2",
+      "text": "PEHR. [Breaks irons and comes down stage.] You shall see, Lisa, that I will do something big when I have the power."
+    },
+    {
+      "id": "s2-211",
+      "sceneId": "s2",
+      "text": "LISA. Why something big? Something good would be better."
+    },
+    {
+      "id": "s2-212",
+      "sceneId": "s2",
+      "text": "PEHR. But you must always be by my side, Lisa. What was it that the bird in the wood sang?"
+    },
+    {
+      "id": "s2-213",
+      "sceneId": "s2",
+      "text": "LISA. That I will tell you next time."
+    },
+    {
+      "id": "s2-214",
+      "sceneId": "s2",
+      "text": "PEHR. No, now!"
+    },
+    {
+      "id": "s2-215",
+      "sceneId": "s2",
+      "text": "LISA. He said: \"I love you!\""
+    },
+    {
+      "id": "s2-216",
+      "sceneId": "s2",
+      "text": "PEHR. Won't you love me, Lisa?"
+    },
+    {
+      "id": "s2-217",
+      "sceneId": "s2",
+      "text": "LISA. Yes, when you love me."
+    },
+    {
+      "id": "s2-218",
+      "sceneId": "s2",
+      "text": "PEHR. But I do!"
+    },
+    {
+      "id": "s2-219",
+      "sceneId": "s2",
+      "text": "LISA. No, you do not; so far you love only yourself. Out again, Pehr, and learn something! There are not many wishes left to you; the greatest but most dangerous one is ahead of you--Power! That is the highest thing a frail mortal can attain. But woe to him who misuses it! He is the world's greatest criminal, for he makes a caricature of Our Blessed Lord! Farewell, King! thy crown awaits thee! [Disappears.]"
+    },
+    {
+      "id": "s2-220",
+      "sceneId": "s2",
+      "text": "PEHR. Oh, my queen!"
+    },
+    {
+      "id": "s2-221",
+      "sceneId": "s2",
+      "text": "CURTAIN."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Interior of a palace in Oriental style. To right a throne, before it a table, with royal regalia; to left a divan, pillows arranged on floor in a semi-circle."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "At rise of curtain The Ameer discovered lying on floor writing on a paper scroll."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "[Enter Chamberlain of the Caliph.]"
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. Is that the young Caliph's genealogical chart?"
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "AMEER. Yes, Chamberlain."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. It certainly looks very imposing. Whom leave you given him as progenitor?"
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "AMEER. Caliph Omar, of course."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. I think that Haroun-al-Raschid would have been better."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "AMEER. He was certainly more popular--but in that case our gracious sovereign would not be related to the ancient house."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. Very true. Will you be ready soon? We expect him at any moment."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "AMEER. Has your Excellency seen the new caliph?"
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. Yes; he looks like all the rest--It is only the genealogical tree that separates him from us."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "AMEER. Yes, the genealogical tree!"
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. [Examines ancestral chart again.] You have got an awful width to it!"
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "AMEER. I had to put in a bastard line; it looks so flourishing on paper, and gives to the race a semblance of strength, which is always flattering."
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. [Laughs.] What will the Caliph Omar say to this?"
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "[Enter Court Mullah.]"
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "MULLAH. Allah akbar barai! How dost?"
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. Allah! Eloim! I thank you, excellently."
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "MULLAH. Is the Renunciation Act made out in duplicate form?"
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. In duplicate form. Will you be good enough to compare, then he will only have to add his signature."
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "MULLAH. If there's time enough, it would be the better way."
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "[Chamberlain takes two papers from table and hands one to the Mullah.]"
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. [Reads aloud.] \"We, Omar the twenty-seventh, do hereby solemnly forswear our--the Roman Catholic--faith, and adopt the Mohammedan doctrine as it is determined in the Koran and the sacred writings.\""
+    },
+    {
+      "id": "s3-24",
+      "sceneId": "s3",
+      "text": "Dated, etc. OMAR."
+    },
+    {
+      "id": "s3-25",
+      "sceneId": "s3",
+      "text": "Correct?"
+    },
+    {
+      "id": "s3-26",
+      "sceneId": "s3",
+      "text": "MULLAH. Correct."
+    },
+    {
+      "id": "s3-27",
+      "sceneId": "s3",
+      "text": "[Enter Pehr--Grand Vizier and Royal Historian having entered just before him. Ameer jumps up from the floor with the genealogical chart; Royal Historian stands quietly and jots down in a book what he hears.]"
+    },
+    {
+      "id": "s3-28",
+      "sceneId": "s3",
+      "text": "VIZIER. Will it please Your Highness to scan this ancestral chart, which our--and the Kingdom's Ameer has made of Your Highness' illustrious old family tree."
+    },
+    {
+      "id": "s3-29",
+      "sceneId": "s3",
+      "text": "PEHR. My ancestral chart? I have never known of any relative but my father, the old sexton."
+    },
+    {
+      "id": "s3-30",
+      "sceneId": "s3",
+      "text": "VIZIER. [Pretends not to hear.] It begins with a great and glorious name--Caliph Omar--"
+    },
+    {
+      "id": "s3-31",
+      "sceneId": "s3",
+      "text": "PEHR. Caliph Omar! What kind of fish is that?"
+    },
+    {
+      "id": "s3-32",
+      "sceneId": "s3",
+      "text": "VIZIER. [Sternly.] That is no fish. He was a great and honorable ruler."
+    },
+    {
+      "id": "s3-33",
+      "sceneId": "s3",
+      "text": "PEHR. Be that as it may, but I was born in wedlock and not between satin sheets, good gentlemen!"
+    },
+    {
+      "id": "s3-34",
+      "sceneId": "s3",
+      "text": "VIZIER. It does not become a ruler to be selfish; he must in all particulars sacrifice his personal interests and tastes for the welfare of the people."
+    },
+    {
+      "id": "s3-35",
+      "sceneId": "s3",
+      "text": "PEHR. Very good; but does the welfare of the people demand that I shall be illegitimate?"
+    },
+    {
+      "id": "s3-36",
+      "sceneId": "s3",
+      "text": "VIZIER. Yes."
+    },
+    {
+      "id": "s3-37",
+      "sceneId": "s3",
+      "text": "PEHR. Then hand me the paper! [Ameer delivers ancestral chart and a pen.] It begins with a lie, and will probably end with theft. [Signs.]"
+    },
+    {
+      "id": "s3-38",
+      "sceneId": "s3",
+      "text": "VIZIER. There remains a slight formality--Will it please Your Highness to sign this paper also. [Mullah presents Renunciation Act.]"
+    },
+    {
+      "id": "s3-39",
+      "sceneId": "s3",
+      "text": "PEHR. What now?"
+    },
+    {
+      "id": "s3-40",
+      "sceneId": "s3",
+      "text": "VIZIER. Your Highness need not trouble himself to road; it is only a matter of form."
+    },
+    {
+      "id": "s3-41",
+      "sceneId": "s3",
+      "text": "PEHR. Renounce my forefathers' Faith--But that outrageous!"
+    },
+    {
+      "id": "s3-42",
+      "sceneId": "s3",
+      "text": "VIZIER. Political considerations--the people's welfare--"
+    },
+    {
+      "id": "s3-43",
+      "sceneId": "s3",
+      "text": "PEHR. I must become a Mohammedan and may not drink a glass of wine?"
+    },
+    {
+      "id": "s3-44",
+      "sceneId": "s3",
+      "text": "VIZIER. There are substitutes in all politics."
+    },
+    {
+      "id": "s3-45",
+      "sceneId": "s3",
+      "text": "PEHR. What are they?"
+    },
+    {
+      "id": "s3-46",
+      "sceneId": "s3",
+      "text": "VIZIER. Compromises, modifications--"
+    },
+    {
+      "id": "s3-47",
+      "sceneId": "s3",
+      "text": "PEHR. Circumventions, eh?"
+    },
+    {
+      "id": "s3-48",
+      "sceneId": "s3",
+      "text": "VIZIER. Will it please Your Highness to sign?"
+    },
+    {
+      "id": "s3-49",
+      "sceneId": "s3",
+      "text": "PEHR. But I shall despise myself if I begin with a low action, and all the more will the people have the right to despise me!"
+    },
+    {
+      "id": "s3-50",
+      "sceneId": "s3",
+      "text": "VIZIER. The people demand that the ruler sacrifice all personal considerations for their welfare."
+    },
+    {
+      "id": "s3-51",
+      "sceneId": "s3",
+      "text": "PEHR. Their welfare, then, is to be built upon a lie and a crime?"
+    },
+    {
+      "id": "s3-52",
+      "sceneId": "s3",
+      "text": "VIZIER. [Goes toward window.] Your Highness, the people await their chief. They are always ready to offer their sweat and blood for the ruler, therefore they demand, also, that the ruler make his sacrifices."
+    },
+    {
+      "id": "s3-53",
+      "sceneId": "s3",
+      "text": "PEHR. Is what you say true? Well, then, give it me! [Accepts paper--hesitates.] The belfry, the chimes, the singing, the lights, Christmas--all pass before mine eyes! No more Christmas Eve! Life is so pitiless; it only demands, but never gives anything!"
+    },
+    {
+      "id": "s3-54",
+      "sceneId": "s3",
+      "text": "VIZIER. Your Highness, the people are clamoring! They would see their chief in the attire of the old caliphs--the crown and sceptre await to be borne anew by a branch of the old ancestral tree."
+    },
+    {
+      "id": "s3-55",
+      "sceneId": "s3",
+      "text": "PEHR. [Catches sight of crown and sceptre.] Ah! Vizier, who can command me to forswear my faith?"
+    },
+    {
+      "id": "s3-56",
+      "sceneId": "s3",
+      "text": "VIZIER. The laws."
+    },
+    {
+      "id": "s3-57",
+      "sceneId": "s3",
+      "text": "PEHR. Who made the laws?"
+    },
+    {
+      "id": "s3-58",
+      "sceneId": "s3",
+      "text": "VIZIER. Our forefathers."
+    },
+    {
+      "id": "s3-59",
+      "sceneId": "s3",
+      "text": "PEHR. They were weak mortals, like ourselves. Well and good, I'll make over all the laws!"
+    },
+    {
+      "id": "s3-60",
+      "sceneId": "s3",
+      "text": "VIZIER. The Caliph does not reconstruct laws, for our form of administration has not given him law-making rights."
+    },
+    {
+      "id": "s3-61",
+      "sceneId": "s3",
+      "text": "PEHR. What is the form of administration in this land?"
+    },
+    {
+      "id": "s3-62",
+      "sceneId": "s3",
+      "text": "VIZIER. Constitutional Despotism."
+    },
+    {
+      "id": "s3-63",
+      "sceneId": "s3",
+      "text": "PEHR. Answer! Am I Caliph, or not?"
+    },
+    {
+      "id": "s3-64",
+      "sceneId": "s3",
+      "text": "VIZIER. You will be as soon as you have affixed your signature."
+    },
+    {
+      "id": "s3-65",
+      "sceneId": "s3",
+      "text": "PEHR. Then hand me the paper! [Signs. Enter Viziers, Court Attendants, etc. Crowning Ceremony.]"
+    },
+    {
+      "id": "s3-66",
+      "sceneId": "s3",
+      "text": "PEOPLE. [Without.] Long live Omar the twenty-seventh! Allah, Allah, Allah!"
+    },
+    {
+      "id": "s3-67",
+      "sceneId": "s3",
+      "text": "VIZIER. Will it please Your Royal Highness to ascend the throne and begin the reign?"
+    },
+    {
+      "id": "s3-68",
+      "sceneId": "s3",
+      "text": "PEHR. That will be quite diverting. Admit the people!"
+    },
+    {
+      "id": "s3-69",
+      "sceneId": "s3",
+      "text": "VIZIER. The people? The people have nothing to do with the Government!"
+    },
+    {
+      "id": "s3-70",
+      "sceneId": "s3",
+      "text": "PEHR. But surely I shall have someone to rule over?"
+    },
+    {
+      "id": "s3-71",
+      "sceneId": "s3",
+      "text": "VIZIER. That is done in writing. [Takes out a few documents.]"
+    },
+    {
+      "id": "s3-72",
+      "sceneId": "s3",
+      "text": "PEHR. Proceed!"
+    },
+    {
+      "id": "s3-73",
+      "sceneId": "s3",
+      "text": "VIZIER. In order to spare Your Royal Highness the weighty burdens of government on this, the first day of his reign, we have tabled all petitions but one, which can very easily be disposed of."
+    },
+    {
+      "id": "s3-74",
+      "sceneId": "s3",
+      "text": "PEHR. That was stupid, but it can't be helped now. Let's hear it!"
+    },
+    {
+      "id": "s3-75",
+      "sceneId": "s3",
+      "text": "VIZIER. Aschmed Sheik, with face in the dust and with his heart's prayers, begs that he may go over to the Sunnees' faith."
+    },
+    {
+      "id": "s3-76",
+      "sceneId": "s3",
+      "text": "PEHR. What is the Sunnees' faith?"
+    },
+    {
+      "id": "s3-77",
+      "sceneId": "s3",
+      "text": "VIZIER. It is a sect, a dangerous sect."
+    },
+    {
+      "id": "s3-78",
+      "sceneId": "s3",
+      "text": "PEHR. In what particular does it differ from the--ahem!--true doctrine?"
+    },
+    {
+      "id": "s3-79",
+      "sceneId": "s3",
+      "text": "VIZIER. A true Moslem greets Allah in this manner--[crosses hands on breast] but a sectarian does like this--[Pinches his nose and pokes his fingers into his ears.]"
+    },
+    {
+      "id": "s3-80",
+      "sceneId": "s3",
+      "text": "PEHR. [Laughing.] Well, can't the man poke his fingers in his ears?"
+    },
+    {
+      "id": "s3-81",
+      "sceneId": "s3",
+      "text": "VIZIER. No; the laws of the land do not permit it."
+    },
+    {
+      "id": "s3-82",
+      "sceneId": "s3",
+      "text": "PEHR. There is no religious liberty, then?"
+    },
+    {
+      "id": "s3-83",
+      "sceneId": "s3",
+      "text": "VIZIER. Yes, for the *true* faith."
+    },
+    {
+      "id": "s3-84",
+      "sceneId": "s3",
+      "text": "PEHR. But for the others?"
+    },
+    {
+      "id": "s3-85",
+      "sceneId": "s3",
+      "text": "VIZIER. There must be no others!"
+    },
+    {
+      "id": "s3-86",
+      "sceneId": "s3",
+      "text": "PEHR. Then I shall give them religious liberty!"
+    },
+    {
+      "id": "s3-87",
+      "sceneId": "s3",
+      "text": "VIZIER. That the Caliph can not do."
+    },
+    {
+      "id": "s3-88",
+      "sceneId": "s3",
+      "text": "PEHR. Who can, then?"
+    },
+    {
+      "id": "s3-89",
+      "sceneId": "s3",
+      "text": "VIZIER. The Government alone."
+    },
+    {
+      "id": "s3-90",
+      "sceneId": "s3",
+      "text": "PEHR. Who is the government?"
+    },
+    {
+      "id": "s3-91",
+      "sceneId": "s3",
+      "text": "[Vizier and all others present place a finger to mouth.]"
+    },
+    {
+      "id": "s3-92",
+      "sceneId": "s3",
+      "text": "PEHR. A secret?"
+    },
+    {
+      "id": "s3-93",
+      "sceneId": "s3",
+      "text": "VIZIER. That is the constitutional despotism's secret."
+    },
+    {
+      "id": "s3-94",
+      "sceneId": "s3",
+      "text": "PEHR. But I had the liberty of changing the religion?"
+    },
+    {
+      "id": "s3-95",
+      "sceneId": "s3",
+      "text": "VIZIER. Politics is another matter!"
+    },
+    {
+      "id": "s3-96",
+      "sceneId": "s3",
+      "text": "PEHR. Then God save all peoples from politics! Must I begin my reign with the refusal of an humble petition?"
+    },
+    {
+      "id": "s3-97",
+      "sceneId": "s3",
+      "text": "VIZIER. Your Highness cannot begin better than by strengthening the laws of the realm."
+    },
+    {
+      "id": "s3-98",
+      "sceneId": "s3",
+      "text": "PEHR. But I'll never sign!"
+    },
+    {
+      "id": "s3-99",
+      "sceneId": "s3",
+      "text": "VIZIER. It is not necessary; the Administration will attend to that. The Cabinet is adjourned. Will it please Your Highness to lay aside his official attire and return to private life, with its petty diversions. The Chamberlain is at Your Highness' service. [Goes.]"
+    },
+    {
+      "id": "s3-100",
+      "sceneId": "s3",
+      "text": "[The Chamberlain removes Caliph's crown and sceptre and conducts him to divan. Enter Dancers, Singers and Poet Laureate. The Dance.]"
+    },
+    {
+      "id": "s3-101",
+      "sceneId": "s3",
+      "text": "PEHR. What is this company?"
+    },
+    {
+      "id": "s3-102",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. This is the Court."
+    },
+    {
+      "id": "s3-103",
+      "sceneId": "s3",
+      "text": "PEHR. Why do they wear such short dresses? I do not like that custom."
+    },
+    {
+      "id": "s3-104",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. It is the custom of the country, Your Highness."
+    },
+    {
+      "id": "s3-105",
+      "sceneId": "s3",
+      "text": "PEHR. This at least is not politics."
+    },
+    {
+      "id": "s3-106",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. The first Court Singer begs that she may entertain Your Highness with an idealistic song written by the celebrated poet laureate, Hourglass-Link."
+    },
+    {
+      "id": "s3-107",
+      "sceneId": "s3",
+      "text": "PEHR. Be good enough to entertain me!"
+    },
+    {
+      "id": "s3-108",
+      "sceneId": "s3",
+      "text": "SINGER. [With lute, sings.]"
+    },
+    {
+      "id": "s3-109",
+      "sceneId": "s3",
+      "text": "Then say farewell to Horaire, the march is already broken. O army, hast thou the strength to say a farewell!"
+    },
+    {
+      "id": "s3-110",
+      "sceneId": "s3",
+      "text": "PEHR. Where's the rhyme?"
+    },
+    {
+      "id": "s3-111",
+      "sceneId": "s3",
+      "text": "POET LAUREATE. There are no rhymes in this kind of poetry."
+    },
+    {
+      "id": "s3-112",
+      "sceneId": "s3",
+      "text": "PEHR. That's bad! Continue--"
+    },
+    {
+      "id": "s3-113",
+      "sceneId": "s3",
+      "text": "AMEER. [Aside to historian.] He's not long for this place."
+    },
+    {
+      "id": "s3-114",
+      "sceneId": "s3",
+      "text": "SINGER. Your Highness must pardon me, but I am indisposed to-day."
+    },
+    {
+      "id": "s3-115",
+      "sceneId": "s3",
+      "text": "PEHR. Chamberlain, is there not something in the constitution called bastinado?"
+    },
+    {
+      "id": "s3-116",
+      "sceneId": "s3",
+      "text": "[Panic.]"
+    },
+    {
+      "id": "s3-117",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. Assuredly--but--"
+    },
+    {
+      "id": "s3-118",
+      "sceneId": "s3",
+      "text": "PEHR. [To singer.] Continue, then!"
+    },
+    {
+      "id": "s3-119",
+      "sceneId": "s3",
+      "text": "SINGER. [Sings.] Marble brow, flowing hair, sparkling rows of teeth, She steps as light as the pacer, lest she soil her hoof in the mud."
+    },
+    {
+      "id": "s3-120",
+      "sceneId": "s3",
+      "text": "PEHR. Mud? I don't like dirt in poetry. Go on!"
+    },
+    {
+      "id": "s3-121",
+      "sceneId": "s3",
+      "text": "SINGER. Swelling bosom, slender waist, throbbing now anew; As she gives each fresh embrace, she is like to break in two!"
+    },
+    {
+      "id": "s3-122",
+      "sceneId": "s3",
+      "text": "PEHR. Oh--!"
+    },
+    {
+      "id": "s3-123",
+      "sceneId": "s3",
+      "text": "SINGER. O happy man with perfume laden Man of high estate! Who may in some dreary hour Hold her in his sweet embrace."
+    },
+    {
+      "id": "s3-124",
+      "sceneId": "s3",
+      "text": "PEHR. That will do! Where's the author? Author!"
+    },
+    {
+      "id": "s3-125",
+      "sceneId": "s3",
+      "text": "POET LAUREATE. Your Highness, I have not learned to flatter."
+    },
+    {
+      "id": "s3-126",
+      "sceneId": "s3",
+      "text": "PEHR. Haven't you? That's a poor poet laureate! Then play up your strophe so we may hear if you lie."
+    },
+    {
+      "id": "s3-127",
+      "sceneId": "s3",
+      "text": "POET LAUREATE. Your Highness--surely I can never question--"
+    },
+    {
+      "id": "s3-128",
+      "sceneId": "s3",
+      "text": "PEHR. Don't talk--just reel off!"
+    },
+    {
+      "id": "s3-129",
+      "sceneId": "s3",
+      "text": "POET LAUREATE."
+    },
+    {
+      "id": "s3-130",
+      "sceneId": "s3",
+      "text": "The soul hath lost itself since love's flame it hath grasped, Nor doth it awaken to reason, under the witchcraft of eyes. But my love for hinds I leave--"
+    },
+    {
+      "id": "s3-131",
+      "sceneId": "s3",
+      "text": "PEHR. Pardon--what did you say?"
+    },
+    {
+      "id": "s3-132",
+      "sceneId": "s3",
+      "text": "POET LAUREATE. [Irritated.]"
+    },
+    {
+      "id": "s3-133",
+      "sceneId": "s3",
+      "text": "My love for hinds I leave and cherish a noble prince, Generous and well born--nor tainted by low base deeds; The prince who hath vanquished his foemen. Whatever the cost might be, Strong in the Faith is he! Heresy's dreaded scourge!"
+    },
+    {
+      "id": "s3-134",
+      "sceneId": "s3",
+      "text": "PEHR. [Springs to his feet.] Do you mean it seriously or are you joking?"
+    },
+    {
+      "id": "s3-135",
+      "sceneId": "s3",
+      "text": "POET LAUREATE. I mean it seriously, Your Highness. How should anything else be--"
+    },
+    {
+      "id": "s3-136",
+      "sceneId": "s3",
+      "text": "PEHR. Indeed! It is in all seriousness, then, that you praise my low actions?"
+    },
+    {
+      "id": "s3-137",
+      "sceneId": "s3",
+      "text": "POET LAUREATE. Your Highness stands as high above low actions as the sun above a mud-puddle!"
+    },
+    {
+      "id": "s3-138",
+      "sceneId": "s3",
+      "text": "PEHR. I know you and your gang, counterfeiter! You call me, who foreswore my faith, the Defender of the Faith; you say that I, a bell-ringer's son, am of royal descent; that I am generous, who refused to grant the first humble petition presented since my coming to the throne! I know you, for your kind is to be found the world over. You live for thought and immortality, you say; but you are never seen when a thought is to be born; you are never felt when it comes to a question of immortality. But around heaped up dishes, in the sunlight of affluence and power, there you swarm, like fat meat flies, only to fly away that you may set black specks upon those who can let themselves be slain for both thought and immortality. Out of my sight, liar! I would have your head removed did I not see the shadow of a purpose in your presence. A poor ruler is forced by political considerations to do so many despicable things that he would die of shame did he not have an institution like you to dull his conscience continually. Go! I would be alone."
+    },
+    {
+      "id": "s3-139",
+      "sceneId": "s3",
+      "text": "CHAMBERLAIN. Your Highness, it cannot be."
+    },
+    {
+      "id": "s3-140",
+      "sceneId": "s3",
+      "text": "PEHR. It can be! [All go out except Pehr and Royal Historian.]"
+    },
+    {
+      "id": "s3-141",
+      "sceneId": "s3",
+      "text": "PEHR. What are you waiting for? What do you do?"
+    },
+    {
+      "id": "s3-142",
+      "sceneId": "s3",
+      "text": "HISTORIAN. I am writing Your Highness' history."
+    },
+    {
+      "id": "s3-143",
+      "sceneId": "s3",
+      "text": "PEHR. So you are Court Historian."
+    },
+    {
+      "id": "s3-144",
+      "sceneId": "s3",
+      "text": "HISTORIAN. Royal--"
+    },
+    {
+      "id": "s3-145",
+      "sceneId": "s3",
+      "text": "PEHR. What matter, once you're dead! But what shall you write about? I have never carried on any wars."
+    },
+    {
+      "id": "s3-146",
+      "sceneId": "s3",
+      "text": "HISTORIAN. That is just what I wish to speak about. Your Highness only need turn to the Minister of War--"
+    },
+    {
+      "id": "s3-147",
+      "sceneId": "s3",
+      "text": "PEHR. Then he will arrange one; that is his occupation, and for that he is paid 20,000 shekels."
+    },
+    {
+      "id": "s3-148",
+      "sceneId": "s3",
+      "text": "HISTORIAN. It is the people, Your Highness, who--"
+    },
+    {
+      "id": "s3-149",
+      "sceneId": "s3",
+      "text": "PEHR. Conduct the wars. The Minister of War makes them, while we sit at home and take the glory--the shame we never take."
+    },
+    {
+      "id": "s3-150",
+      "sceneId": "s3",
+      "text": "[Enter Vizier.]"
+    },
+    {
+      "id": "s3-151",
+      "sceneId": "s3",
+      "text": "VIZIER. The bride is waiting."
+    },
+    {
+      "id": "s3-152",
+      "sceneId": "s3",
+      "text": "PEHR. The bride! Who? Where? What does it mean?"
+    },
+    {
+      "id": "s3-153",
+      "sceneId": "s3",
+      "text": "VIZIER. Your Highness' consort."
+    },
+    {
+      "id": "s3-154",
+      "sceneId": "s3",
+      "text": "PEHR. Lisa! She loves me still, despite all my faults? Conduct her hither. She shall bring the fresh air of the forest into these musty halls!"
+    },
+    {
+      "id": "s3-155",
+      "sceneId": "s3",
+      "text": "VIZIER. Your Highness wished first to sign the marriage contract."
+    },
+    {
+      "id": "s3-156",
+      "sceneId": "s3",
+      "text": "PEHR. I'm forever writing! No, this time I don't have to read. [Signs.] Now, Royal Historian, you can put down at least one action in my life that was not crime! [Vizier and Historian go.]"
+    },
+    {
+      "id": "s3-157",
+      "sceneId": "s3",
+      "text": "[Bride, veiled in Oriental fashion, is ushered in; attendants withdraw immediately; from behind is heard soft music.]"
+    },
+    {
+      "id": "s3-158",
+      "sceneId": "s3",
+      "text": "PEHR. [Runs toward bride.] Lisa, Lisa! You always come like a sunbeam when the clouds thicken--always like a friend in the dark hour!"
+    },
+    {
+      "id": "s3-159",
+      "sceneId": "s3",
+      "text": "BRIDE. [Raises veil.] My name is not Lisa."
+    },
+    {
+      "id": "s3-160",
+      "sceneId": "s3",
+      "text": "PEHR. Not Lisa--What does this mean? Treachery! Who are you then?"
+    },
+    {
+      "id": "s3-161",
+      "sceneId": "s3",
+      "text": "BRIDE. Your consort."
+    },
+    {
+      "id": "s3-162",
+      "sceneId": "s3",
+      "text": "PEHR. My consort!"
+    },
+    {
+      "id": "s3-163",
+      "sceneId": "s3",
+      "text": "BRIDE. [Indifferently.] The Administration had three candidates for you: The Vizier's choice fell upon me because my father threatened you with a tariff treaty."
+    },
+    {
+      "id": "s3-164",
+      "sceneId": "s3",
+      "text": "PEHR. The administration's candidate--tariff treaties--what does that signify?"
+    },
+    {
+      "id": "s3-165",
+      "sceneId": "s3",
+      "text": "BRIDE. Politics require that princes shall sacrifice their personal considerations for the good of the people."
+    },
+    {
+      "id": "s3-166",
+      "sceneId": "s3",
+      "text": "PEHR. Politics require--But does the good of the people require any princes?"
+    },
+    {
+      "id": "s3-167",
+      "sceneId": "s3",
+      "text": "BRIDE. I don't know--but it's done once for all, and now you are my husband. Have the goodness to be happy, or you will be miserable."
+    },
+    {
+      "id": "s3-168",
+      "sceneId": "s3",
+      "text": "PEHR. Are you happy?"
+    },
+    {
+      "id": "s3-169",
+      "sceneId": "s3",
+      "text": "BRIDE. I am nothing."
+    },
+    {
+      "id": "s3-170",
+      "sceneId": "s3",
+      "text": "PEHR. Do you love me?"
+    },
+    {
+      "id": "s3-171",
+      "sceneId": "s3",
+      "text": "BRIDE. No, certainly not! And you me?"
+    },
+    {
+      "id": "s3-172",
+      "sceneId": "s3",
+      "text": "PEHR. No!"
+    },
+    {
+      "id": "s3-173",
+      "sceneId": "s3",
+      "text": "BRIDE. You love your Lisa?"
+    },
+    {
+      "id": "s3-174",
+      "sceneId": "s3",
+      "text": "PEHR. And you your--"
+    },
+    {
+      "id": "s3-175",
+      "sceneId": "s3",
+      "text": "BRIDE. Ali."
+    },
+    {
+      "id": "s3-176",
+      "sceneId": "s3",
+      "text": "PEHR. O misery and lamentation!"
+    },
+    {
+      "id": "s3-177",
+      "sceneId": "s3",
+      "text": "BRIDE. Calm yourself a moment--One moment, while they come in and congratulate us. The bridal procession is waiting without. Silence! They are nearing; stand at my side!"
+    },
+    {
+      "id": "s3-178",
+      "sceneId": "s3",
+      "text": "PEHR. Must I go forth again, and jest?"
+    },
+    {
+      "id": "s3-179",
+      "sceneId": "s3",
+      "text": "BRIDE. Obey me, for I'm a wise woman! When they go I shall tell you my plan. Here they come! Look pleasant, husband, else they will say that I made you unhappy."
+    },
+    {
+      "id": "s3-180",
+      "sceneId": "s3",
+      "text": "PEHR. Dear old father, how right you were! Black is black and can never be white. [Pehr and bride seat themselves on divan and assume a sentimental attitude.]"
+    },
+    {
+      "id": "s3-181",
+      "sceneId": "s3",
+      "text": "[Enter Singers, Dancers, Chamberlain, Ameer, Royal Historian, Vizier.]"
+    },
+    {
+      "id": "s3-182",
+      "sceneId": "s3",
+      "text": "*Chorus of women sing*: Joyous the loving hearts That bleed from cupid's darts! Ye nightingales and ye roses sing, Noble halls and courtyards ring! The Caliph's court rejoices And echoes love's true voices."
+    },
+    {
+      "id": "s3-183",
+      "sceneId": "s3",
+      "text": "[Pehr and bride hide their agitation.]"
+    },
+    {
+      "id": "s3-184",
+      "sceneId": "s3",
+      "text": "VIZIER. Caliph, a happy people, whom you find assembled here, at the foot of the throne, rejoice as they see happiness, like a sun, beam in your eyes to shine on the white rose which long hath sought the tall oak's trunk to lean upon; a happy people, youthful princess, rejoice in your good fortune and hope that your tree may have off-shoots with fresh rose buds, which, at some future day, may spread joy and bliss, like a spring rain, over land and kingdom!"
+    },
+    {
+      "id": "s3-185",
+      "sceneId": "s3",
+      "text": "[Pehr leaps up and draws his sword, bride attempts in vain to calm him.]"
+    },
+    {
+      "id": "s3-186",
+      "sceneId": "s3",
+      "text": "PEHR. Hell and Damnation! You grand vizier of lies! and you, dressed up adventurers, are you my people! Are these hired maidens, with their venal tricks, my people who pay taxes to us that we may say nay to their humblest request? No! I have never seen my people. Is this young woman, whom you have placed by my side, my mate who loves me? No--She is a heifer that you have let into my stall; she is an imp who is to shoot branches on the genealogical tree; she is an administration's candidate who makes happy her spouse with a tariff treaty. You call us happy because we pretend to be; but we are most unhappy, for we stand near the brink of a crime, which, praise God, we shall never commit. I curse you, palace! dedicated as a temple of lies. Down in the dust with you, false family tree! [Genealogical chart drops from wall and rolls up on floor.] Break into shatters, crown and sceptre, tyranny's symbols! [Crown and sceptre come down with a crash.] Tumble throne, where unrighteousness is seated! [Throne collapses. Thunder, lightning, storm.] Scatter like decoys, fortune hunters and outcasts that have placed yourselves between noble and commoner! [All but bride disappear. To bride.] You lamb of sacrifice, be free like myself! Now I want to go out into Nature and see if honor and decency do not still live! [Bride vanishes; Pehr remains standing, hands to face, until scene is changed.]"
+    },
+    {
+      "id": "s3-187",
+      "sceneId": "s3",
+      "text": "SCENE TWO."
+    },
+    {
+      "id": "s3-188",
+      "sceneId": "s3",
+      "text": "Seashore with wreckage of cast up seaweed, etc. To left an up-rooted oak-stump, fishing tackle and hulk of a wrecked vessel. Background: open sea; seamews float on waves. To right cliff-shore with pine woods; lower down is a hut."
+    },
+    {
+      "id": "s3-189",
+      "sceneId": "s3",
+      "text": "PEHR. Where am I? I breathe freer--All evil thoughts flee! I sense a perfume as of old romances; I hear a murmur, like far-away streams; the ground under me is soft as a bed. Ah--it is the seashore!"
+    },
+    {
+      "id": "s3-190",
+      "sceneId": "s3",
+      "text": "O Sea! Thou Mother Earth's good mother! Be greeted by an old and withered heart Which comes that it may be by thy moist winds Swept clean and freshened; Which comes to thy salt waves for cleansing baths And healing for the sores the world's lies and madness gave to it. Blow wind, and fill with thy pure air My lungs, that breathed in pois'n-filled vapours; Sing wave, and let mine ear be soothed By the harmonies of thy pure tones, As I stand here 'mongst the wreckage on the strand, A wreck myself, which the breakers cast upon the sand When the vessel crashed 'gainst the sharp cliff-rocks! Be greeted, Sea, that nurses healthy thoughts And recreates the soul in shrunken body When every spring thy billows break And gull and swallow chatter 'bove thy wave, To wak'n anew the joy of life, and strength, and hope!"
+    },
+    {
+      "id": "s3-191",
+      "sceneId": "s3",
+      "text": "[Sees hut.]"
+    },
+    {
+      "id": "s3-192",
+      "sceneId": "s3",
+      "text": "What's this? A human habitation! Not even here is a moment's peace granted me--Maledictions!"
+    },
+    {
+      "id": "s3-193",
+      "sceneId": "s3",
+      "text": "A VOICE. Curse not!"
+    },
+    {
+      "id": "s3-194",
+      "sceneId": "s3",
+      "text": "[It darkens and the sea begins to rise, moving toward him during following speech so that he is forced down stage.]"
+    },
+    {
+      "id": "s3-195",
+      "sceneId": "s3",
+      "text": "PEHR. Who spoke? [Tries to flee toward left and is met by elk.] Wild beasts stop me! [Tries to flee toward right, but is intercepted by bulls.] Even here--Back! [Animals come on stage and crowd around him.] They surround me! Help! [Runs to but and knocks.] Is no one here? Help, help! [Attempts to cast himself into the sea, but sea-serpents and dragons rise up.] Ah, nature, even you are a savage monster that would devour all you come upon! You, my last friend, tricked me also--What terror's visions! The sea would swallow me. What is my life worth more? Come, Death, and set me free! [Sea gradually subsides.]"
+    },
+    {
+      "id": "s3-196",
+      "sceneId": "s3",
+      "text": "[Enter Death; beasts vanish.]"
+    },
+    {
+      "id": "s3-197",
+      "sceneId": "s3",
+      "text": "DEATH. Here am I, at your service! What would you me?"
+    },
+    {
+      "id": "s3-198",
+      "sceneId": "s3",
+      "text": "PEHR. [Cowers, but recovers himself.] Oh, really!--It was nothing especially pressing--"
+    },
+    {
+      "id": "s3-199",
+      "sceneId": "s3",
+      "text": "DEATH. You called me!"
+    },
+    {
+      "id": "s3-200",
+      "sceneId": "s3",
+      "text": "PEHR. Did I actually do that? Well, it is only a form of speech which we use; I really want nothing of you."
+    },
+    {
+      "id": "s3-201",
+      "sceneId": "s3",
+      "text": "DEATH. But I want something of you! Stand straight on your legs and I'll cut; it will be over in no time. [Raises scythe.]"
+    },
+    {
+      "id": "s3-202",
+      "sceneId": "s3",
+      "text": "PEHR. Mercy, mercy! I don't want to die!"
+    },
+    {
+      "id": "s3-203",
+      "sceneId": "s3",
+      "text": "DEATH. Bosh! What has life to offer you who have no wishes left?"
+    },
+    {
+      "id": "s3-204",
+      "sceneId": "s3",
+      "text": "PEHR. That one does not know; if one might stop to consider, then perhaps--"
+    },
+    {
+      "id": "s3-205",
+      "sceneId": "s3",
+      "text": "DEATH. Oh, you have had ample time; now it is too late. Straighten your back so that you may fall like a real world-hater! [Lifts scythe.]"
+    },
+    {
+      "id": "s3-206",
+      "sceneId": "s3",
+      "text": "PEHR. No, no, for God's sake, wait a little--"
+    },
+    {
+      "id": "s3-207",
+      "sceneId": "s3",
+      "text": "DEATH. You're a timid beggar! Live on then if you think it anything; but don't regret it later. I shall not come again for a long time. [Starts to go.]"
+    },
+    {
+      "id": "s3-208",
+      "sceneId": "s3",
+      "text": "PEHR. No, no, no! don't leave me alone--"
+    },
+    {
+      "id": "s3-209",
+      "sceneId": "s3",
+      "text": "DEATH. Alone? Why, you have lovely Nature!"
+    },
+    {
+      "id": "s3-210",
+      "sceneId": "s3",
+      "text": "PEHR. Yes, it's all very well when the weather is fine and the sun shines, but thus late--"
+    },
+    {
+      "id": "s3-211",
+      "sceneId": "s3",
+      "text": "DEATH. You see now that you cannot live without your fellow men. Knock three times on the door over yonder, and you will find company. [Death vanishes. Pehr knocks three times on door of hut; the Wise Man comes out.]"
+    },
+    {
+      "id": "s3-212",
+      "sceneId": "s3",
+      "text": "WISE MAN. Whom seek you?"
+    },
+    {
+      "id": "s3-213",
+      "sceneId": "s3",
+      "text": "PEHR. A human being! In short--I'm unhappy."
+    },
+    {
+      "id": "s3-214",
+      "sceneId": "s3",
+      "text": "WISE MAN. Then you should not seek human beings, for they cannot help you."
+    },
+    {
+      "id": "s3-215",
+      "sceneId": "s3",
+      "text": "PEHR. I know it, yet I would neither live nor die; I have suffered all, and my heart will not break!"
+    },
+    {
+      "id": "s3-216",
+      "sceneId": "s3",
+      "text": "WISE MAN. You are young, and do not know the human heart. In here I have lately been pondering the causes of mankind's misery. Would you like to see how the little object called the human heart looks? [Steps into hut and returns presently with a casket and a lantern, which he hangs on a tree.]"
+    },
+    {
+      "id": "s3-217",
+      "sceneId": "s3",
+      "text": "You see the little three-cornered muscle, which now has ceased to beat--Once it throbbed with rage, thumped with joy, cramped with sorrow, swelled with hope. You see that it is divided into two large chambers: In one lives the good, in the other the evil--or, with a word, there sits an angel on one side of the wall and a devil on the other. When they chance to be at odds with each other--which happens quite often--there is unrest in the person and he fancies the heart will burst--but it doesn't, for the walls are thick. Oh, yes, look at this one! Do you see thousands of little scars from needle thrusts? They did not go through, but the pricks remain nevertheless."
+    },
+    {
+      "id": "s3-218",
+      "sceneId": "s3",
+      "text": "PEHR. Who has borne this heart, Wise Man?"
+    },
+    {
+      "id": "s3-219",
+      "sceneId": "s3",
+      "text": "WISE MAN. The unhappiest of humans."
+    },
+    {
+      "id": "s3-220",
+      "sceneId": "s3",
+      "text": "PEHR. And who was that?"
+    },
+    {
+      "id": "s3-221",
+      "sceneId": "s3",
+      "text": "WISE MAN. It was a man. Do you see the marks of a heel; do you see the nail-prints? It was a woman that trampled on this heart for twenty-six years."
+    },
+    {
+      "id": "s3-222",
+      "sceneId": "s3",
+      "text": "PEHR. And he did not tire?"
+    },
+    {
+      "id": "s3-223",
+      "sceneId": "s3",
+      "text": "WISE MAN. Yes, he grew weary one Christmas Eve and freed himself from her. As a punishment, he came under the ban of the Powers; he cannot die, although his heart has been taken from him."
+    },
+    {
+      "id": "s3-224",
+      "sceneId": "s3",
+      "text": "PEHR. Can he never be released from the spell?"
+    },
+    {
+      "id": "s3-225",
+      "sceneId": "s3",
+      "text": "WISE MAN. When his son shall have found a faithful woman and brought her home a bride, then the spell will be broken. But that can never be because his son is gone forever."
+    },
+    {
+      "id": "s3-226",
+      "sceneId": "s3",
+      "text": "PEHR. What has become of him?"
+    },
+    {
+      "id": "s3-227",
+      "sceneId": "s3",
+      "text": "WISE MAN. He went out in the world."
+    },
+    {
+      "id": "s3-228",
+      "sceneId": "s3",
+      "text": "PEHR. Then why can he never get any bride, poor boy!"
+    },
+    {
+      "id": "s3-229",
+      "sceneId": "s3",
+      "text": "WISE MAN. Because one who loves only himself can never love anyone else."
+    },
+    {
+      "id": "s3-230",
+      "sceneId": "s3",
+      "text": "PEHR. He means the old man, my father. [Wise Man sinks through floor; but vanishes. It begins to dawn.]"
+    },
+    {
+      "id": "s3-231",
+      "sceneId": "s3",
+      "text": "PEHR. \"He who loves only himself \"--So said Lisa also--But I hate myself, I loathe myself after the cowardly things I have done, and I love Lisa! Yes, I love her, I love her! [Sun shines on waves and lights up pine woods to right; clouds disperse. A boat is seen out at sea, it comes nearer and nearer and Lisa is seen at the rudder. She beckons to Pehr as the boat recedes.]"
+    },
+    {
+      "id": "s3-232",
+      "sceneId": "s3",
+      "text": "Sea-gulls in the air, tell her! Sunbeams, carry my words on your pillars of fire, and bear them to her. But where must I seek thee--where? [Boat is seen on horizon a moment.] It is she! Now, ring, fulfill my last wish and take me to her! The ring is gone! Woe, what does this augur? Is my story ended, or shall it now begin perhaps? Lisa, my soul's beloved! [He runs up on cliff and waves.] If you hear me, answer; if you see me, give me a sign! Ah--she turns out toward the fjord--Well, then, storm and sea, that separate me from all that my heart loves, I challenge you to battle for the highest prize! [Pushes out boat drawn up on shore.]"
+    },
+    {
+      "id": "s3-233",
+      "sceneId": "s3",
+      "text": "Blow, wind, and rock, wave! My weak keel shall cleave you like a sword. On, my boat, even though we miss the goal, let us struggle on till we sink!"
+    },
+    {
+      "id": "s3-234",
+      "sceneId": "s3",
+      "text": "CURTAIN."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "SCENE: Interior of a little country church, with frescoed ceiling. At back, centre, altar with crucifix; to left, pulpit; on a pillar down left an image of Saint Bartholomew with skin in hand; directly opposite, on a pillar, image of Saint Laurence with the grill. Broom is propped against altar railing. Two rows of praying stools at right and left sides form an aisle from front to altar. At right a confessional; at left an iron door."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "[The Elf stands in one window, the Fairy in the other.]"
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "ELF. It was not the old man that ate up the porridge, it was the rats."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "FAIRY. Then it was not to do Pehr a kindness that you sent him out in the world, but to harm the old man!"
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "ELF. Even we immortals can make mistakes. Let, us make amends for our fault."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "FAIRY. If it is not too late?"
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "ELF. How so?"
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "FAIRY. Pehr is a misanthrope and cannot become reconciled to life."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "ELF. Lisa will rectify all that, and then the old man will have atoned for his sin. One must patch where one has torn."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "FAIRY. I have already made my preparations."
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "ELF. Here?"
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "FAIRY. Here in this sanctuary whose floor we may not tread."
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "ELF. And why not? True, it is holy ground, and we were not allowed to become participants in the Great Redemption because--well, because something which we mustn't know about came between. But that does not prevent the humans from believing some good of us; and in that they do right, for the matter has its sides. Meantime, I shall not absent myself--even if I may not be near to witness that this reconciliation comes out all right. Even we lost souls can rejoice in the happiness of others. Farewell, but not for long."
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "FAIRY. Farewell. [Elf and Fairy vanish.]"
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "[Enter Lisa.]"
+    },
+    {
+      "id": "s4-15",
+      "sceneId": "s4",
+      "text": "LISA. Here in this peaceful church the good fairy promised me that I should meet him--How shall I behold him now? Has he learned aught of life, or is he still the same selfish, pleasure-loving youth who pursues only fickle fortune? If he had had the courage to do a bad act in a good cause, then he would at least have shown that he could make a sacrifice for something besides himself; for the most that we can give to a cause is our precious regard for ourselves. Higher powers demand that such and such shall take place; they choose the instruments where they will and none may give up the commission, even if it means going under. My friend was not that sort, and therefore, therefore--Hush! I hear footsteps--It is he! No, I would not meet him yet; I must collect my thoughts. If I conceal myself here--in the confessional--[Steps in.]"
+    },
+    {
+      "id": "s4-16",
+      "sceneId": "s4",
+      "text": "[Enter Pehr.]"
+    },
+    {
+      "id": "s4-17",
+      "sceneId": "s4",
+      "text": "PEHR. [Drops down on a prayer stool, left.] She flees from me, as I flee from my bad thoughts! Alone, forsaken--what more is there for me in life? Naught have I learned of life save its nothingness, and no wishes are left to me but evil ones. My soul would be like an empty shell were it not filled with her! My life--Ah, what has it been? [Pall pounds on floor.] What was that?--Ghosts in the sunshine? That would be a funny sight! [Broom raps on floor.] Again! 'Tis said that one can see ghosts in broad daylight, if one peeps through a door-crack, it is even maintained that one can see oneself. *Oneself*--! If one could really do that, how easy it would be to evade one's worst faults! I'll try it. [Opens door left and places himself behind it.]"
+    },
+    {
+      "id": "s4-18",
+      "sceneId": "s4",
+      "text": "[Pehr's shadow steps up into the pulpit, drinks from the goblet, and turns hour-glass. Pehr stands at door with back to spectators.]"
+    },
+    {
+      "id": "s4-19",
+      "sceneId": "s4",
+      "text": "SHADOW. My beloved hearers! [Pall, Broom, Bartholomew and Laurence stir.] My beloved hearers and you, Pehr, who stand behind the door, my sermon will not be long since the hour is already late and it is especially to this so-called *Lucky Pehr* that I would address a few remarks. Yes, you, Pehr--you have rushed through life like a fool, in pursuit of fortune; all your wishes have been fulfilled--save one and they have brought you no happiness. Pay attention, you who stand behind the door! You have made no leap through life, for on that track one runs well. All the experiences through which you think you have passed were but dreams; for, believe me, one wins no wishes with luck-rings out here in Reality; here one gains nothing without labor. Do you know what labor is?--No! It is something very heavy; but it must be heavy the sweeter the repose--Labor, Pehr, and be honest, but don't become a saint, for then you would be vain, and it is not our virtues but our faults that make us human. Listen well, you who stand behind the door--Life is not such as you saw it in your youthful dreams. It is a desert, that is true; but a desert which has its flowers; it is a stormy sea, but one that has its ports by verdant isles. Heed, Pehr! If you want to go forth into life now, then do it in earnest. But you will never be a *real* man without a woman--Find her! And now, pay close attention, Pehr, for I shall leave the word to Saint Laurence after dismissing you with the sage's eternally young and eternally old exhortation--Know thyself! Saint Laurence has the word. [Shadow vanishes.]"
+    },
+    {
+      "id": "s4-20",
+      "sceneId": "s4",
+      "text": "SAINT LAURENCE. [Presents his grill.] I am the holy Saint Laurence with the grill, who, at Emperor Dicii's command was beaten with thongs seven days in succession and afterwards was broiled on this grill by a slow fire. There is no one who has suffered so much as I!"
+    },
+    {
+      "id": "s4-21",
+      "sceneId": "s4",
+      "text": "SAINT BARTHOLOMEW. What is that to speak of! I am the holy Saint Bartholomew with the skin, who, at Emperor Pamphilii's command was flayed alive clear down to the knees; and what miracles happened after my death! You perhaps have never heard of the mysteries or of the devil in woman shape and the prognostication about the volcano?"
+    },
+    {
+      "id": "s4-22",
+      "sceneId": "s4",
+      "text": "SAINT LAURENCE. What is that to speak of as compared with mine? I have six miracles: The beam in the church, the crystal chalice, the Nun's corpse--"
+    },
+    {
+      "id": "s4-23",
+      "sceneId": "s4",
+      "text": "PALL. [Rises up.] Oh, boast moderately of your sufferings. I am only a pall, but for fifty years I have borne on my back so many corpses, and have seen so much suffering--so many shattered hopes, so much inconsolable grief, so many torn hearts that suffered in silence and were thrust into oblivion without the solace of gilded statues--that you would be silent had you seen one-half of it. Ah, life is so black, so black, so black!"
+    },
+    {
+      "id": "s4-24",
+      "sceneId": "s4",
+      "text": "BROOM. [Raps on floor and rustles its straws.] What--you chatter about life, old Pall, you who have seen only death? Life is black on one side and white on the other. To-day I'm only a broom, but yesterday I stood in the forest, so stout and trim, and wanted to be something great. They all want to be great, you see, so it happened as it happened! Now I think like this: What comes is best; since you couldn't be great, you may as well be something else; there is so much to choose from--One may of course be useful, and at worst one can content oneself with being good, and when one has not been given two legs to stand on, one must be happy anyhow and hop on one. [Broom goes bumping along and finally leans against altar.]"
+    },
+    {
+      "id": "s4-25",
+      "sceneId": "s4",
+      "text": "PEHR. [Walks rapidly over to holy-water fount, by confessional, takes holy-water sprinkler and sprinkles out into the church.] Away, spectres and evil spirits! [As he lays back sprinkler a noise is heard from the confessional.] Someone is there! Reverend Father, hear me and accept the sighs of a broken heart!"
+    },
+    {
+      "id": "s4-26",
+      "sceneId": "s4",
+      "text": "LISA. [In assumed voice--from confessional.] Speak, my son."
+    },
+    {
+      "id": "s4-27",
+      "sceneId": "s4",
+      "text": "PEHR. How shall I leave my dreams?"
+    },
+    {
+      "id": "s4-28",
+      "sceneId": "s4",
+      "text": "LISA. Oh, you have dreamed enough and you are no longer young. Think of your missteps--have you not made such?"
+    },
+    {
+      "id": "s4-29",
+      "sceneId": "s4",
+      "text": "PEHR. Yes, I have pursued fortune and have sacrificed conscience and honor in order to win fame and power. Now I cannot bear misfortune, and hate myself!"
+    },
+    {
+      "id": "s4-30",
+      "sceneId": "s4",
+      "text": "LISA. Then you have ceased to love yourself above all else?"
+    },
+    {
+      "id": "s4-31",
+      "sceneId": "s4",
+      "text": "PEHR. Yes.--I would free myself from *self*--if I could."
+    },
+    {
+      "id": "s4-32",
+      "sceneId": "s4",
+      "text": "LISA. Then, Pehr, you can also love another."
+    },
+    {
+      "id": "s4-33",
+      "sceneId": "s4",
+      "text": "PEHR. Oh, yes! But where shall I seek her?"
+    },
+    {
+      "id": "s4-34",
+      "sceneId": "s4",
+      "text": "LISA. [Comes out.] Here! [They embrace.]"
+    },
+    {
+      "id": "s4-35",
+      "sceneId": "s4",
+      "text": "PEHR. Now you will not leave me again?"
+    },
+    {
+      "id": "s4-36",
+      "sceneId": "s4",
+      "text": "LISA. No, Pehr, for now I believe you love me."
+    },
+    {
+      "id": "s4-37",
+      "sceneId": "s4",
+      "text": "PEHR. What good fairy sent you across my pathway?"
+    },
+    {
+      "id": "s4-38",
+      "sceneId": "s4",
+      "text": "LISA. Do you still believe in good fairies? Mark you, when a little baby boy is born into the world, a little baby girl is also born somewhere; and they seek and seek until they find each other. Sometimes they go amiss as to the right one, then it turns out badly; sometimes they never find each other, then there is much sorrow and affliction; but when they find each other, then there is joy, and it is the greatest joy life holds."
+    },
+    {
+      "id": "s4-39",
+      "sceneId": "s4",
+      "text": "PEHR. It is Paradise Found!"
+    },
+    {
+      "id": "s4-40",
+      "sceneId": "s4",
+      "text": "[Enter sexton, with staff--The old Man in the tower.]"
+    },
+    {
+      "id": "s4-41",
+      "sceneId": "s4",
+      "text": "SEXTON. The church must be closed."
+    },
+    {
+      "id": "s4-42",
+      "sceneId": "s4",
+      "text": "LISA. See, now he drives us from Paradise!"
+    },
+    {
+      "id": "s4-43",
+      "sceneId": "s4",
+      "text": "PEHR. That he cannot do.--We carry it with us and lay it, like the verdant isle, out in the stormy sea."
+    },
+    {
+      "id": "s4-44",
+      "sceneId": "s4",
+      "text": "SEXTON. [Lays down his staff.] Alongside the peaceful harbor, where the waves break up and go to rest."
+    },
+    {
+      "id": "s4-45",
+      "sceneId": "s4",
+      "text": "PEHR AND LISA. Father! Father! [Fairy and Elf appear, each in their window.]"
+    },
+    {
+      "id": "s4-46",
+      "sceneId": "s4",
+      "text": "CURTAIN."
+    },
+    {
+      "id": "s4-47",
+      "sceneId": "s4",
+      "text": "End of the Project Gutenberg EBook of Lucky Pehr, by August Strindberg"
+    }
+  ]
+}

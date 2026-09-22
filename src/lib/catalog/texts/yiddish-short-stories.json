@@ -1,0 +1,512 @@
+{
+  "id": "yiddish-short-stories",
+  "title": "Yiddish Short Stories",
+  "author": "Various (ed. E. Haldeman-Julius)",
+  "year": "1923",
+  "note": "Project Gutenberg 77680",
+  "minutes": 43,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Scales of Justice",
+      "place": "The Scales of Justice",
+      "reentry": "Somewhere many and many a year ago, a Jew breathed his last.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "The First Gift",
+      "place": "The First Gift",
+      "reentry": "The poor little soul flies downward to the world of the living in search of gifts for the pious people of Heaven. It hovers about, everywhere; about the villages and the towns, about every habitation of man, amid the burning rays of hottest",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "The Second Gift",
+      "place": "The Second Gift",
+      "reentry": "“Remember now,” said the angel as he barred the window. “Remember--two more offerings.”",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "The Third Gift",
+      "place": "The Third Gift",
+      "reentry": "And downward again the soul wends her way. But one more gift! And as before, year follows year and melancholy has its grip upon her. The world has grown little indeed. Men are becoming ever more insignificant. Their deeds too are tiny and m",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Somewhere many and many a year ago, a Jew breathed his last."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "No one, of course, may live for ever. The man was dead; the attentions due the dead were paid, and a grave among the folk of his own faith lodged him."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "The grave closed over him, the orphaned son recited his Kaddish and the soul flew upward--to Judgment."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "On arriving there it found the scales of Justice already swinging in the court chamber. Here the good deeds and the evil were to be weighed. And forthwith the dead man’s Advocate enters, the Good Spirit of his former life. A pure, snow-white sack is in his hand and he stands near the right scale of the Balance."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "And behold the dead man’s Accuser enters--the Evil Spirit of his former life. An unclean sack is in his hands and he stands near the left scale of the Balance. The sack of pure white contains the good deeds. The sack that is begrimed and black--the evil, sinful deeds. And the vindicator of the soul pours out the contents of the white sack on the right scale. The good deeds are of the odor of incense and glow with the radiancy of the stars. The Accuser pours out the contents of the unclean sack on the left scale of the Balance. The evil deeds--Heaven protect us--are as black as coal, and reek of the very stench of tar and pitch."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "And the poor soul stares at it all--and gasps. It never dreamt to behold such a distinction between the “Good” and the “Evil.” “There” it had often recognized neither of them and had mistaken the one for the other."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "The scales rise gradually. Now the one, now the other moves up and down ... and the indicator oscillates now a hair’s breadth to the left, now a trifle towards the right. But a hair’s breadth variation and that gradually ... an ordinary mortal this soul must have been; neither rebellious to the Holy Spirit nor yet dwelling much within it ... capable of trivial virtues and trivial vices only. The scales held but little particles, tiny dots of things, at times hardly visible to the eye."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "And yet, what a clamor of joy and of gladness from the empyrean when the Balance indicator turns but a trifle towards the right and what racking cries of agony mark every turn to the left. And slowly, ever so slowly the angels empty the sacks. With a zest they show up the tiny particles, just as decent burghers will add one farthing to another in self-exhibition to a seeing world."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "However, the deepest well will run dry--and the sacks, too, are soon empty."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "“Is that all?” inquires the court-usher. He, too, is an angel among his like. Both the Good and the Evil Spirits turn their sacks inside out. Absolutely nothing more. The court-usher steps forward to the Balance. He examines the indicator to see whether it is inclined towards the right or the left; and he stares at it good and long; for he beholds something that none ever saw since first the Heavens and the Earth knew creation...."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "“Why such hesitancy?” demands the Chief Justice. And the usher mutters:"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "“But one moment! The index is exactly in the center. The Evil deeds and the Good are exactly of the same weight.”"
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "“Is that absolutely so?” queries a voice from about the table."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "The usher looks yet again: “Yea even to a hair’s breadth.”"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "The Heavenly Tribunal holds its consultation and the decision as to the sentence is thus pronounced: “Since the Evil deeds do not weigh more than the good--the soul, of course, is free from Hell. But, on the other hand, since the Good deeds do not prevail over the Evil--neither can Paradise receive her.[3] Therefore she is to be neither here, nor there, but a wanderer between the realms of Heaven and Earth, until the Lord have mercy upon her and in His goodness call her unto him.”"
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "And the usher of the courts leads the soul away."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "She sobs, and bemoans her fate."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "“Why art thou weeping?” he asks her. “’Tis true thou wilt not know the joy and the gladness of Eden, but neither will the agonies and pangs of Hell be thine.”"
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "But the soul, unconsoled, replies:"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "“The worst agony is preferable to nothing at all. Nothing is most dreadful....”"
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "And the heavenly usher pities her and offers her some advice."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "“Fly downward little soul, and hover about the living world of men. Gaze not unto heaven. For what canst thou see on the other side, but the little stars. Radiant little people--they certainly are, but alas, very cold. They know no pity. They’ll never speak to the Lord about you. Only the pious souls of Paradise will go to such trouble for a poor, exiled soul ... but they ... hearken unto me ... they do love gifts, fair and beautiful gifts.”"
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "The usher talked bitterly. “Such are the ways of Paradise, nowadays. Fly downward, then, to the living world and watch life there and its course. And if thou only catchest a glimpse of something that is surpassingly fair or good, seize thou it, and fly up to heaven. Present it as a gift to the pious there. Knock at the little window and in my name, speak to the angel-guard. And when thou wilt have brought three gifts--why then be certain that the gates of Heaven will be unbarred ... they will manage to have it so for thee.... At the Throne of Honor, the well-born are not loved ... but the well-grown....”"
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "And in this wise, and with compassion, he thrusts her out of Paradise."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The poor little soul flies downward to the world of the living in search of gifts for the pious people of Heaven. It hovers about, everywhere; about the villages and the towns, about every habitation of man, amid the burning rays of hottest summer; amid the drops and water spears of rainy autumn; amid the silver web, fantastical, in the last days of summer; amid the snowflakes that fall from above.... It gazes about and about till it well-nigh spends its sight."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Wherever and whenever it spies a Jew it runs hastily up to him and looks at him intently--perhaps he is on his way to Prayer--to bless the name of the Lord. Wherever a light breaks through the chink of a shutter--she is there, to peep inside, to see whether the Lord’s fragrant flowerets, the secret deeds of good, blossom in that silent house. Alas!... most of the time it must dart away from the window in agony and dismay...."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "And thus season follows season, and year follows year. Oft, the soul becomes moody and sullen. Cities turn into graveyards, the graveyards into fields of pasture; forests are felled. The pebbles of the brook become sand; rivers have changed their courses; myriads of stars have fallen and myriads of souls have flown upward; but the gracious Lord has never thought of her; neither has she found aught that was beautiful or good."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "And she thinks within herself: “How poor the whole world is. Its people--how mediocre; their souls--how dark and obscure.... How can aught good be found here? Alas! I must rove about--an exile, forever.”"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "But suddenly a red flame bursts before her. Out of the dark and gloomy night a red flame leaps forth. She stares about her.... ’Tis from an upper window of a house that the flame has shot forth. Robbers are attacking a wealthy man. Masks are on their faces. One holds a burning torch in his hands; another holds a blazing knife at the man’s breast and repeats his threat again and again:"
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "“Jew, make but the slightest motion and you are dead. The knife will most assuredly pass through your back, then.” The others are all busy, opening chests and drawers. The man looks serenely about him, although the knife is at his breast. The brows above his lucid eyes do not quiver. Not a hair of that gray beard that reaches to the waist moves. All of it seems to be something that is not his concern. “The Lord hath given, the Lord taketh away,” he muses, and his pale lips mutter: “Blessed be the name of the Lord.”"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "“One is not born thus and one may not carry it all to his grave.” He views them calmly when they are about to clear the last drawer of the last bureau and watches, in absolute silence, the pillage of the gold and the silver, the jewelry and other precious things!"
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Perhaps he is renouncing it all!"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "But all at once--as the robbers are about to lay hold upon the last hidden treasure--a little sack, hidden in the most secret nook of all--he forgets himself--trembles all over, his eyes are bloodshot, and he stretches his right hand forward, to the weapon. He would, as it seems, cry out!"
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "“Touch it not!”"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "But the cry is unuttered. A red, vaporous stream of blood shoots forth, the knife has done its work.... It is the heart’s blood that besprinkles the little sack. He falls to the ground. The robbers tear the little sack open in a hurry. That will be the best--the most precious gain of all!"
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "But what a grievous error! The blood had been shed in vain--neither silver, nor gold, nor jewels were there. Naught of any value in this world. It was a little measure of sand from the Holy Land, to be strewn on his face at burial. That, the wealthy man had wished to save from the hands and gaze of strangers. That had shed his blood ... and the soul seizes a blood-soiled particle of the sand and knocks at the little window of Heaven. Her first gift found ready acceptance."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "“Remember now,” said the angel as he barred the window. “Remember--two more offerings.”"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "“The Lord will aid me”--thinks the soul, grown hopeful; and joyously flies down again. However, her gladness lasts but a little while. Again, years follow years and she can find nothing that is surpassingly beautiful. And her melancholy returns to her. “The world has, it seems, forsaken the way of the Lord, and like a spring ever runs out and out. The more the water that flows into the soil, the more sucked in--the more the soil becomes foul and unclean. Fewer are the gifts for heaven then. Men become ever petty and more petty. Their good deeds grow tiny; their evil deeds blacker and blacker dust--their deeds are hardly visible to the eye!...”"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "And thus speaking to herself she seems to think that should the Lord command all the evil deeds and the good of the world to be weighed in the Balance, that the needle would hardly move, yea, not even tremble. The earth can hardly rise or fall now, she is but a wanderer from the empyrean above to the black abyss of Sheol below. A splendid cause for an eternal disputation between the spirits of good and of evil; just such a one as the eternal dispute between darkness and light, heat and cold, life and death...."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "The earth rocks to and fro. She can neither ascend nor descend. Thus we ever have weddings and divorces, parties and funerals, love and hate--ever, forever."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Suddenly the blare of trumpets and of horns resounds. The soul looks down--and beholds an ancient German town. All sorts of roofs, narrow and bent, surround the courthouse. A motley crowd fills the place. People peer out of the windows; others throng the roofs, and some sit astride the beams at the edge, where they are propped up by the wall."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "A table, covered with a green cloth stands at the head of the court-hall. The cloth has golden tassels and fringes. The men of the court are held with golden hooks. They wear sable caps and large feathers stick from the shining buttons to which they are sewed. At the head of the table, the President of the court is seated. An Eagle hovers overhead...."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "A young Jewess, all bound, stands on one side. Ten slaves hold a white horse firmly near her. The president has risen and with his eyes towards the market-place, he reads the paper he has in his hand--her sentence."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "“This Jewess,” he says, “is guilty of a monstrous sin. Even the Lord, in his graciousness and great mercy, could not forgive her that...."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "“On our last and most sacred holiday, she slunk out of her ghetto and walked through the clean streets of our town...."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "“She has sullied the Holy procession. Her eyes have defiled the sacred images that we bore with hymnal song and music through the streets...."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "“The hymns of our innocent children, or our young, clad in snow-white garments, her ears have sucked in--and the beating of the holy drum likewise ... who knows whether the devil, the foul fiend, has not transformed himself into this image of the Jewess, of this cursed Rabbi’s daughter? Who knows whether thus, he has not touched and polluted a holy treasure of ours?"
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "“What was the fiend up to, in this fair disguise? We need not equivocate. Undoubtedly, she is fair; a devilish beauty is hers--Do but look at the wicked sparkle of her eyes, and the modest and humble pose of her silken eyelashes...."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "“See you her alabaster face? It has indeed grown paler since her imprisonment, but duller not a whit!... Look at her fingers. How thin and long and how transparent they seem in the sunlight!..."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "“What could the fiend have wanted but to dissuade a soul from its Holy faith, and that he has done indeed:"
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "“What a beautiful maiden!” exclaimed one of our own Knighthood--a member of one of our best families...."
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "“It was more than patience could endure. The crowd noticed her and lay hands upon her--The fiend did not even stir for defense--How could she? There were all pure of sin. They had been absolved. He had no power over them."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "“Let this then be the sentence of the devil--of the fiend disguised in this form of a Jewish maiden:"
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "“Bind her hair, her fiendishly long hair, to the tail of this savage horse...."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "“Let the horse fly over the streets and drag her like a ‘corpse’ across the very streets she has polluted in defiance of our sacred laws."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "“May her blood besprinkle them and wash those that her feet have besmirched!”"
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "Savage cries of joy fill the market-place and when the great din is over the convicted woman is asked her last wish."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "She answers calmly: “I have one wish. Give me but a few pins.”"
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "“Her grief has made her mad!” think the men of the court."
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "“Not so,” she answers serenely and frigidly: “This is my last wish; my last desire.”"
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "They gratified her in that."
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "“Now, bind her!” commands the President of the Court."
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "The hands of the servants tremble as they bind her long dark braids to the tail of the horse, which is so wild that he can hardly be controlled...."
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "“Make room!” the command is heard. There is a wild rush forward. The crowd huddles close to the walls of the buildings. All raise their hands. All are ready to goad the horse along. Some have whips, some have cords, others wiretips. Their breath is stifled for the moment; their faces are aflame, their eyes sparkle and in all this hubbub no one notices how the convicted maiden bends down and pins her skirts at the seam and pushes the pins deep into her body, so that it may be covered absolutely when she is dragged about in the streets. Only the exiled soul notices it all...."
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "“Free the horse,” the command is heard again. The slaves have leaped away. The horse bounds forward. A deafening shout fills the air. Whips and cords and wires are whirled about and whistle loudly. The horse, wild with terror, rushes across the market-place, across the streets, over the alley and far, far out of the town...."
+    },
+    {
+      "id": "s2-29",
+      "sceneId": "s2",
+      "text": "The vagrant soul has drawn a blood-stained pin out of the victim’s body and is on her way to heaven with it!"
+    },
+    {
+      "id": "s2-30",
+      "sceneId": "s2",
+      "text": "And the angel at the little window soothes her, saying: “But *one* more gift!”"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "And downward again the soul wends her way. But one more gift! And as before, year follows year and melancholy has its grip upon her. The world has grown little indeed. Men are becoming ever more insignificant. Their deeds too are tiny and more so; the good and the evil alike...."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "And a new thought occurs to her:"
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "“What if the Lord, Blessed be His name, were to halt the world process this very moment and announce the final Judgment; would not then the Advocate appear on the right side of the Balance and pour out the contents of his white sack, its tiny particles and little grains of sand; would not the Accuser follow and empty his sack on the left scale--his little wee bits and fragments? What a long process that would be! What a multitude of little things!"
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "“And when the emptying of the sack is completed, what then? Of course, the indicator would be pointing right to the center!"
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "“Such insignificant things weigh nothing; no matter what their number. Indeed, what can be the weight of a tiny thread, of a straw or of an empty husk?"
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "“What might the decision of the Lord be then?"
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "“Would he turn the whole into a void again? Certainly not; for the Evil deeds do not weigh more than the good."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "“Perhaps he might grant salvation to all. But that, too, is unlikely, for the deeds of Good do not prevail over those of Evil."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "“It is hard to see what would follow then."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "“Might he not say: ‘Pass ye along. Rove ye from the realms of Hell to Heaven amid Love and Hate, in tears of mercy or vaporous blood ... from cradle unto grave, rove ye farther--even farther.’”"
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "However, Destiny seems to have planned the deliverance of the Soul from her gloomy reflections. The din of beating drums arouses her...."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "“Where am I now, and what the time?” She cannot recognize the place. She has no idea of the time."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "She beholds the courtyard of a prison. The rays of the sun hover about the little windows and even penetrate the iron bars.... They glide along the wall and fall upon a heap of sundry weapons supported there. The soldier-guards have but a moment ago received their whips...."
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "Two long rows of soldiers and only a narrow passage between."
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "Who is it that must run the gauntlet here? Oh, it is but an insignificant Jew. A torn shirt is on his emaciated body and a skull-cap on his half-shaven head. There he is being led forth."
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "But what is his crime? What has he stolen? Has he robbed any one,--murdered?... Perhaps it is but a false accusation. Is that not an ancient custom and were not many such before?"
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "The soldiers smile as they ponder: What was the use of having all of us here? Would not half the number have sufficed!"
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "He is thrust into the passage. He steps forward. He walks directly on. The lashes fall upon him. But he curses no one, neither does he falter or fall...."
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "A fit of rage overwhelms the soldiers. He walks on and on!"
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "The whips whistle in the air, fiendishly. They grip and coil around the body as serpents do. The blood of the emaciated frame gushes forth and does not cease!"
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "Whoop--whack! Whoop--whack! Suddenly a whip falling high, throws the skull-cap down to the ground. The doomed man notices it after a few paces.... He stirs and reflects. He turns round again and walks onward, serenely calm though covered with streaming blood. The skull-cap is on his head.[4] He walks on till he falls...."
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "And when he fell thus, the Soul ran swiftly up to him, and seized the cap that had cost so many innocent lashes, and with it she flew up to the little window of Heaven."
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "And the third gift also found acceptance! The pious Souls tried their best and spared no trouble: the doors of Eden were now open! And a voice of the “Oracle” was heard:"
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "“These are truly beautiful gifts, of surpassing fairness.... They may be of no practical use. They may not even serve for show.... But they are marvelous.”"
+    },
+    {
+      "id": "s3-24",
+      "sceneId": "s3",
+      "text": "--Translated by Samuel P. Rudens."
+    },
+    {
+      "id": "s3-25",
+      "sceneId": "s3",
+      "text": "[Note 3: Soul is feminine in Yiddish. (tr.)]"
+    },
+    {
+      "id": "s3-26",
+      "sceneId": "s3",
+      "text": "[Note 4: The head must be covered during all religious services.]"
+    }
+  ]
+}

@@ -928,6 +928,23 @@ const WORK_COUNTRY: Record<string, string> = {
   "a-book-barnes": "United States",
   "a-spring-time-case": "Japan",
   "hands-around-reigen": "Austria",
+  "marianela": "Spain",
+  "rootabaga-stories": "United States",
+  "rootabaga-pigeons": "United States",
+  "auguste-rodin": "Austria",
+  "on-the-seaboard": "Sweden",
+  "lucky-pehr": "Sweden",
+  "the-dream-play": "Sweden",
+  "the-father": "Sweden",
+  "easter": "Sweden",
+  "the-inferno": "Sweden",
+  "trafalgar": "Spain",
+  "saragossa": "Spain",
+  "leon-roch": "Spain",
+  "yiddish-short-stories": "Poland",
+  "tales-of-old-japan": "Japan",
+  "chinese-literature": "China",
+  "the-prose-tales": "Russia",
 };
 
 const AUTHOR_COUNTRY: Record<string, string> = (() => {

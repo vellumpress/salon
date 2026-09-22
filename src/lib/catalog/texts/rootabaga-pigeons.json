@@ -1,0 +1,121 @@
+{
+  "id": "rootabaga-pigeons",
+  "title": "Rootabaga Pigeons",
+  "author": "Carl Sandburg",
+  "year": "1923",
+  "note": "Project Gutenberg 61553",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Skyscraper to the Moon",
+      "place": "The Skyscraper to the Moon",
+      "reentry": "Blixie Bimber’s mother was chopping hash. And the hatchet broke. So Blixie started downtown with fifteen cents to buy a new hash hatchet for chopping hash.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Blixie Bimber’s mother was chopping hash. And the hatchet broke. So Blixie started downtown with fifteen cents to buy a new hash hatchet for chopping hash."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Downtown she peeped around the corner next nearest the postoffice where the Potato Face Blind Man sat with his accordion. And the old man had his legs crossed, one foot on the sidewalk, the other foot up in the air."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "The foot up in the air had a green rat sitting on it, tying the old man’s shoestrings in knots and double knots. Whenever the old man’s foot wiggled and wriggled the green rat wiggled and wriggled."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "The tail of the rat wrapped five wraps around the shoe and then fastened and tied like a package."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "On the back of the green rat was a long white swipe from the end of the nose to the end of the tail. Two little white swipes stuck up over the eyelashes. And five short thick swipes of white played pussy-wants-a-corner back of the ears and along the ribs of the green rat."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "They were talking, the old man and the green rat, talking about alligators and why the alligators keep their baby shoes locked up in trunks over the winter time—and why the rats in the moon lock their mittens in ice boxes."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "“I had the rheumatism last summer a year ago,” said the rat. “I had the rheumatism so bad I ran a thousand miles south and west till I came to the Egg Towns and stopped in the Village of Eggs Up.”"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "“So?” quizzed the Potato Face."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "“There in the Village of Eggs Up, they asked me, ‘Do you know how to stop the moon moving?’ I answered them, ‘Yes, I know how—a baby alligator told me—but I told the baby alligator I wouldn’t tell.’"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "“Many years ago there in that Village of Eggs Up they started making a skyscraper to go up till it reached the moon. They said, ‘We will step in the elevator and go up to the roof and sit on the roof and eat supper on the moon.’"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "“The bricklayers and the mortar men and the iron riveters and the wheelbarrowers and the plasterers went higher and higher making that skyscraper, till at last they were half way up to the moon, saying to each other while they worked, ‘We will step in the elevator and go up to the roof and sit on the roof and eat supper on the moon.’"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "“Yes, they were halfway up to the moon. And that night looking at the moon they saw it move and they said to each other, ‘We must stop the moon moving,’ and they said later, ‘We don’t know how to stop the moon moving.’"
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "“And the bricklayers and the mortar men and the iron riveters and the wheelbarrowers and the plasterers said to each other, ‘If we go on now and make this skyscraper it will miss the moon and we will never go up in the elevator and sit on the roof and eat supper on the moon.’"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "“So they took the skyscraper down and started making it over again, aiming it straight at the moon again. And one night standing looking at the moon they saw it move and they said to each other, ‘We must stop the moon moving,’ saying later to each other, ‘We don’t know how to stop the moon moving.’"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "“And now they stand in the streets at night there in the Village of Eggs Up, stretching their necks looking at the moon, and asking each other, ‘Why does the moon move and how can we stop the moon moving?’"
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "“Whenever I saw them standing there stretching their necks looking at the moon, I had a zig-zag ache in my left hind foot and I wanted to tell them what the baby alligator told me, the secret of how to stop the moon moving. One night that ache zig-zagged me so—way inside my left hind foot—it zig-zagged so I ran home here a thousand miles.”"
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "The Potato Face Blind Man wriggled his shoe—and the green rat wriggled—and the long white swipe from the end of the nose to the end of the tail of the green rat wriggled."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "“Is your rheumatism better?” the old man asked."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "The rat answered, “Any rheumatism is better if you run a thousand miles twice.”"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "And Blixie Bimber going home with the fifteen cent hash hatchet for her mother to chop hash, Blixie said to herself, “It is a large morning to be thoughtful about.”"
+    }
+  ]
+}

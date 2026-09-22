@@ -322,6 +322,22 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "the-cycle-of-spring",
     "creative-unity",
     "the-lonely-way",
+    "rootabaga-stories",
+    "rootabaga-pigeons",
+    "auguste-rodin",
+    "on-the-seaboard",
+    "lucky-pehr",
+    "the-dream-play",
+    "the-father",
+    "easter",
+    "the-inferno",
+    "trafalgar",
+    "saragossa",
+    "leon-roch",
+    "yiddish-short-stories",
+    "tales-of-old-japan",
+    "chinese-literature",
+    "the-prose-tales",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1751,6 +1767,85 @@ test("BATCH-13 CLEAR inventory binds are local Next / before-sleep sits, never F
   }
 });
 
+
+test("BATCH-15 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
+  const expect = {
+    "rootabaga-stories": { opening: "Gimme the Ax lived in a house where everything is the same as it always was.", breaths: 58, scenes: 1, gutenberg: 27085, scene: "How They Broke Away to Go to the Rootabaga Country" },
+    "rootabaga-pigeons": { opening: "Blixie Bimber’s mother was chopping hash. And the hatchet broke. So Blixie started downtown with fif", breaths: 20, scenes: 1, gutenberg: 61553, scene: "The Skyscraper to the Moon" },
+    "auguste-rodin": { opening: "Rodin has pronounced Rilke's essay the supreme interpretation of his work. A few years ago the sculp", breaths: 115, scenes: 2, gutenberg: 45605, scene: "Preface" },
+    "on-the-seaboard": { opening: "A fishing boat lay one May evening to beam-wind, out on Goosestone bay. \"Rokarna,\" known to all on t", breaths: 1097, scenes: 14, gutenberg: 44184, scene: "Chapter I" },
+    "lucky-pehr": { opening: "SCENE: A Room in the Church Tower.", breaths: 924, scenes: 5, gutenberg: 8510, scene: "Act I" },
+    "the-dream-play": { opening: "*The background represents cloud banks that resemble corroding slate cliffs with ruins of castles an", breaths: 1085, scenes: 2, gutenberg: 45375, scene: "Prologue" },
+    "the-father": { opening: "[The sitting room at the Captain's. There is a door a little to the right at the back. In the middle", breaths: 727, scenes: 3, gutenberg: 8499, scene: "Act I" },
+    "easter": { opening: "[Thursday before Easter. The music before curtain is: Haydn: Sieben Worte des Erloesers. Introductio", breaths: 807, scenes: 3, gutenberg: 8500, scene: "Act I" },
+    "the-inferno": { opening: "An American critic says \"Strindberg is the greatest subjectivist of all time.\" Certainly neither Aug", breaths: 651, scenes: 17, gutenberg: 44108, scene: "Introduction" },
+    "trafalgar": { opening: "I trust that, before relating the important events of which I have been an eye-witness, I may be all", breaths: 556, scenes: 17, gutenberg: 47980, scene: "Chapter I" },
+    "saragossa": { opening: "It was, I believe, the evening of the eighteenth when we saw Saragossa in the distance. As we entere", breaths: 1034, scenes: 31, gutenberg: 47769, scene: "Chapter I" },
+    "leon-roch": { opening: "“*Ugoibea*, AUGUST 30th.", breaths: 1334, scenes: 32, gutenberg: 48752, scene: "Chapter I" },
+    "yiddish-short-stories": { opening: "Somewhere many and many a year ago, a Jew breathed his last.", breaths: 94, scenes: 4, gutenberg: 77680, scene: "The Scales of Justice" },
+    "tales-of-old-japan": { opening: "The books which have been written of late years about Japan have either been compiled from official ", breaths: 75, scenes: 2, gutenberg: 13015, scene: "The Forty-seven Rônins" },
+    "chinese-literature": { opening: "\"To learn,\" said the Master, \"and then to practise opportunely what one has learnt--does not this br", breaths: 875, scenes: 5, gutenberg: 10056, scene: "Analects · Book I" },
+    "the-prose-tales": { opening: "My father, Andrei Petrovitch Grineff, after having served in his youth under Count Münich,[1] quitte", breaths: 1034, scenes: 14, gutenberg: 55219, scene: "Chapter I · The Sergeant of the Guards" },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(sleep);
+  assert.ok(forYou);
+  assert.equal(Object.keys(expect).length, 16);
+  assert.deepEqual(forYou.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  assert.equal(sleep.workIds[0], "quicksand");
+  const dante = SHELF.find((item) => item.id === "inferno");
+  assert.ok(dante);
+  assert.equal(dante.local, undefined);
+  assert.equal(dante.gutenberg, undefined);
+  assert.equal(next.includes("inferno"), false);
+  assert.equal(next.includes("steppenwolf"), false);
+  assert.equal(next.includes("the-red-room"), false);
+  assert.equal(next.includes("the-queen-of-spades-and-other-stories"), false);
+  let prev = next.indexOf("the-lonely-way");
+  assert.ok(prev > next.indexOf("all-quiet-on-the-western-front"));
+  const sleepPrev = sleep.workIds.indexOf("the-lonely-way");
+  assert.ok(sleepPrev > sleep.workIds.indexOf("all-quiet-on-the-western-front"));
+  let sleepAt = sleepPrev;
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.opening, want.opening, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "next", id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(forYou!.workIds.includes(id), false, id);
+    const at = next.indexOf(id);
+    assert.ok(at > prev, `${id} follows All Quiet on Next`);
+    prev = at;
+    const sit = sleep!.workIds.indexOf(id);
+    assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
+    sleepAt = sit;
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: { title: string }[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.ok(full.breaths.length >= 3, id);
+    assert.equal(full.scenes[0]?.title, want.scene, id);
+    assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
+  }
+  const inferno = SHELF.find((item) => item.id === "the-inferno");
+  assert.equal(inferno?.author.startsWith("August Strindberg"), true);
+  assert.equal(inferno?.gutenberg, 44108);
+});
+
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {
   const waking = RITUAL_LANES.find((item) => item.id === "waking-up");
   const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
@@ -1860,7 +1955,7 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
     "the-mandarin": { opening: "Decorreu um mez.", breaths: 359, scenes: 7, gutenberg: 16384, scene: "Chapter II" },
     "policarpo": { opening: "Como de habito, Polycarpo Quaresma, mais conhecido por major Quaresma, bateu em casa ás 4 e 15 da tarde. Havia mais de v", breaths: 1966, scenes: 15, gutenberg: 67535, scene: "Part I · Chapter I · A Lição De Violão" },
     "quincas": { opening: "Rubião fitava a enseada,--eram oito horas da manhã. Quem o visse, com os polegares mettidos no cordão do chambre, á jane", breaths: 1829, scenes: 201, gutenberg: 55682, scene: "Chapter I" },
-    "marianela": { opening: "Se puso el sol. Tras el breve crepúsculo vino tranquila y oscura la noche, en cuyo negro seno murieron poco a poco los ú", breaths: 1221, scenes: 22, gutenberg: 17340, scene: "Chapter I · Perdido" },
+    "marianela": { opening: "The sun had set. After the brief interval of twilight the night fell calm and dark, and in its gloom", breaths: 1312, scenes: 22, gutenberg: 48818, scene: "Chapter I · Gone Astray" },
     "pepita-jimenez": { opening: "*22 de Marzo*.", breaths: 850, scenes: 3, gutenberg: 17223, scene: "Chapter I · Cartas de mi sobrino" },
   } as const;
   assert.equal(Object.keys(expect).length, 19);
