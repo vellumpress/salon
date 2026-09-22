@@ -1,0 +1,2065 @@
+{
+  "id": "the-three-taverns",
+  "title": "The Three Taverns: A Book of Poems",
+  "author": "Edwin Arlington Robinson",
+  "year": "1920",
+  "note": "Project Gutenberg 1040",
+  "minutes": 76,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "[Note on text:  Italicized words or phrases are CAPITALIZED",
+      "place": "[Note on text:  Italicized words or phrases are CAPITALIZED",
+      "reentry": "Lines longer than 78 characters are broken and the continuation is indented two spaces. Some obvious errors may have been corrected.]",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Author of \"The Man Against the Sky\", \"Merlin, a Poem\", etc",
+      "place": "Author of \"The Man Against the Sky\", \"Merlin, a Poem\", etc",
+      "reentry": "[American (Maine) Poet. 1869-1935.]",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Several poems included in this book appeared originally",
+      "place": "Several poems included in this book appeared originally",
+      "reentry": "in American periodicals, as follows: The Three Taverns, London Bridge,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "A Song at Shannon's, the New Tenants, Discovery, John Brown;",
+      "place": "A Song at Shannon's, the New Tenants, Discovery, John Brown;",
+      "reentry": "Archibald's Example, The Valley of the Shadow; Nimmo; The Wandering Jew, Souvenir; Neighbors, Tact; Demos; The Mill, An Evangelist's Wife;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Firelight; Late Summer; Inferential; the Flying Dutchman;",
+      "place": "Firelight; Late Summer; Inferential; the Flying Dutchman;",
+      "reentry": "On the Way, The False Gods; Peace on Earth; The Old King's New Jester.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "There were faces unregarded, there were faces to forget;",
+      "place": "There were faces unregarded, there were faces to forget;",
+      "reentry": "There were fires of grief and fear that are a few forgotten ashes,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "At a measureless malfeasance that obscurely willed it thus,",
+      "place": "At a measureless malfeasance that obscurely willed it thus,",
+      "reentry": "They were lost and unacquainted -- till they found themselves in others, Who had groped as they were groping where dim ways were perilous.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "All to fail before the triumph of a weed that only grows",
+      "place": "All to fail before the triumph of a weed that only grows",
+      "reentry": "There were thirsting heirs of golden sieves that held not wine or water,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "And had no names in traffic or more value there than toys:",
+      "place": "And had no names in traffic or more value there than toys:",
+      "reentry": "There were blighted sons of wonder in the Valley of the Shadow, Where they suffered and still wondered why their wonder made no noise.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Of what were now the dusty ruins of their father's dreams",
+      "place": "Of what were now the dusty ruins of their father's dreams",
+      "reentry": "There were these, and there were many who had stumbled up to manhood, Where they saw too late the road they should have taken long ago: There were thwarted clerks and fiddlers in the Valley of the Shadow, The commemorative wreckage of what ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Unrelieved as were the blasting obligations of their birth;",
+      "place": "Unrelieved as were the blasting obligations of their birth;",
+      "reentry": "And among them, giving always what was not for their possession,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "There were maidens, very quiet, with no quiet in their eyes:",
+      "place": "There were maidens, very quiet, with no quiet in their eyes:",
+      "reentry": "There were daughters of the silence in the Valley of the Shadow,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Each an isolated item in the family sacrifice",
+      "place": "Each an isolated item in the family sacrifice",
+      "reentry": "There were creepers among catacombs where dull regrets were torches, Giving light enough to show them what was there upon the shelves -- Where there was more for them to see than pleasure would remember Of something that had been alive and ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "While as many fled repentance for the promise of despair:",
+      "place": "While as many fled repentance for the promise of despair:",
+      "reentry": "There were drinkers of wrong waters in the Valley of the Shadow, And all the sparkling ways were dust that once had led them there.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "And over beauty's aftermath of hazardous ambitions",
+      "place": "And over beauty's aftermath of hazardous ambitions",
+      "reentry": "There were tears for what had vanished as they vanished where they fell. Not assured of what was theirs, and always hungry for the nameless, There were some whose only passion was for Time who made them cold:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "There were numerous fair women in the Valley of the Shadow,",
+      "place": "There were numerous fair women in the Valley of the Shadow,",
+      "reentry": "Dreaming rather less of heaven than of hell when they were old.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "And another cloaked a soul as with an ash of human embers,",
+      "place": "And another cloaked a soul as with an ash of human embers,",
+      "reentry": "Having covered thus a treasure that would last him for a while.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Whose exemption was included in the weight that others bore:",
+      "place": "Whose exemption was included in the weight that others bore:",
+      "reentry": "There were seekers after darkness in the Valley of the Shadow, And they alone were there to find what they were looking for.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "May abide without an answer until all have ceased to mourn",
+      "place": "May abide without an answer until all have ceased to mourn",
+      "reentry": "For the children of the dark are more to name than are the wretched,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Or the broken, or the weary, or the baffled, or the shamed:",
+      "place": "Or the broken, or the weary, or the baffled, or the shamed:",
+      "reentry": "There are builders of new mansions in the Valley of the Shadow, And among them are the dying and the blinded and the maimed.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "I knew the man as I had known",
+      "place": "I knew the man as I had known",
+      "reentry": "His image when I was a child.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "And wondered if they found in mine",
+      "place": "And wondered if they found in mine",
+      "reentry": "Compassion that I might regret.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "The tribute of a tempered ear",
+      "place": "The tribute of a tempered ear",
+      "reentry": "To an untempered eloquence.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "And if it mattered how remote",
+      "place": "And if it mattered how remote",
+      "reentry": "Our fathers were from such a place.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "And I could ask if what I saw,",
+      "place": "And I could ask if what I saw,",
+      "reentry": "Before me there, was man or ghost.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "Those old, unyielding eyes may flash,",
+      "place": "Those old, unyielding eyes may flash,",
+      "reentry": "And flinch -- and look the other way.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Love, with his gift of pain, had given",
+      "place": "Love, with his gift of pain, had given",
+      "reentry": "More than one heart could hold.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "And what was hanging from a beam",
+      "place": "And what was hanging from a beam",
+      "reentry": "Would not have heeded where she went.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Though ruffled once, would soon appear",
+      "place": "Though ruffled once, would soon appear",
+      "reentry": "The same as ever to the sight.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "You fade -- as if the last of days",
+      "place": "You fade -- as if the last of days",
+      "reentry": "Were fading, and all wars were done.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "With them.  I hope that we shall meet again,",
+      "place": "With them.  I hope that we shall meet again,",
+      "reentry": "But none may say what he shall find in Rome.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Of your deliverance that has not come,",
+      "place": "Of your deliverance that has not come,",
+      "reentry": "And shall not, if I fail you -- as I might.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "The many, or the many are to fall --",
+      "place": "The many, or the many are to fall --",
+      "reentry": "Still to be wrangling in a noisy grave.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "Abandoning, as always, and undaunted,",
+      "place": "Abandoning, as always, and undaunted,",
+      "reentry": "One fog-walled island more.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "That only made a man to smile",
+      "place": "That only made a man to smile",
+      "reentry": "And left him undeceived.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "As any that was ever heard",
+      "place": "As any that was ever heard",
+      "reentry": "Upon a starry night.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "On anyone who lingered there,",
+      "place": "On anyone who lingered there,",
+      "reentry": "Alone below the stars.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "(Philadelphia, 1794)",
+      "place": "(Philadelphia, 1794)",
+      "reentry": "Note. -- The following imaginary dialogue between Alexander Hamilton and Aaron Burr, which is not based upon any specific incident in American history, may be supposed to have occurred a few months previous to Hamilton's retirement from Was",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "Who has been characterized, without much exaggeration,",
+      "place": "Who has been characterized, without much exaggeration,",
+      "reentry": "as the inventor of American politics -- began to be conspicuously formidable to the Federalists. These activities on the part of Burr resulted, as the reader will remember, in the Burr-Jefferson tie for the Presidency in 1800, and finally i",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "To see what's coming.  Bury me first if -I- do",
+      "place": "To see what's coming.  Bury me first if -I- do",
+      "reentry": "Hamilton",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "When men forget the stars, and are forgotten",
+      "place": "When men forget the stars, and are forgotten",
+      "reentry": "Burr",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "Upon the world when Alcibiades",
+      "place": "Upon the world when Alcibiades",
+      "reentry": "Cut off his dog's tail to induce distinction. There are dogs yet, and Alcibiades Is not forgotten.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "God knows; and I can hear them in my dreams",
+      "place": "God knows; and I can hear them in my dreams",
+      "reentry": "Burr",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "Would be for you in your autumnal mood",
+      "place": "Would be for you in your autumnal mood",
+      "reentry": "A pleasant sort of warmth along the shoulders.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "Was ordered, there was never a long pause",
+      "place": "Was ordered, there was never a long pause",
+      "reentry": "For caution between doing and undoing.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "That has a name or an identity",
+      "place": "That has a name or an identity",
+      "reentry": "Hamilton",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "To coughing, made the road.  Now it seems dry,",
+      "place": "To coughing, made the road.  Now it seems dry,",
+      "reentry": "And in a measure safe.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "With Washington.  Ask Adams about that",
+      "place": "With Washington.  Ask Adams about that",
+      "reentry": "Hamilton",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "Of asking when this man says everything,",
+      "place": "Of asking when this man says everything,",
+      "reentry": "With all his tongues of silence?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "We mean his Western Majesty, King George",
+      "place": "We mean his Western Majesty, King George",
+      "reentry": "Hamilton",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "A majesty like his that has no name",
+      "place": "A majesty like his that has no name",
+      "reentry": "Burr",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "I have not crossed your glory, though I might",
+      "place": "I have not crossed your glory, though I might",
+      "reentry": "If I saw thrones at auction.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "If war is on the way, I shall be -- here;",
+      "place": "If war is on the way, I shall be -- here;",
+      "reentry": "And I've no vision of your distant heels.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "Your fealty to the aggregated greatness",
+      "place": "Your fealty to the aggregated greatness",
+      "reentry": "Of him you lean on while he leans on you.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "But hold your disposition off the balance,",
+      "place": "But hold your disposition off the balance,",
+      "reentry": "And weigh him in the light. Once (I believe",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "You might not -- or that Quaker with his cane",
+      "place": "You might not -- or that Quaker with his cane",
+      "reentry": "Burr",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "Possibly, too, I should.  When the Almighty",
+      "place": "Possibly, too, I should.  When the Almighty",
+      "reentry": "Rides a white horse, I fancy we shall know it.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "Than any other I have ever known",
+      "place": "Than any other I have ever known",
+      "reentry": "Burr",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "Of your republic.  But I must have erred",
+      "place": "Of your republic.  But I must have erred",
+      "reentry": "Hamilton",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "As to be sure of anything in these days",
+      "place": "As to be sure of anything in these days",
+      "reentry": "Put that much in account with modesty.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "And Ahab cut his hair off and went softly",
+      "place": "And Ahab cut his hair off and went softly",
+      "reentry": "Hamilton",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "I don't remember that he cut his hair off",
+      "place": "I don't remember that he cut his hair off",
+      "reentry": "Burr",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "If so, it's in the Book; and if not so,",
+      "place": "If so, it's in the Book; and if not so,",
+      "reentry": "He did the rest, and did it handsomely.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "Who fell to make him famous.  Would you fall",
+      "place": "Who fell to make him famous.  Would you fall",
+      "reentry": "So far as he, to be so far remembered?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "And the old wine is nearer to the lees",
+      "place": "And the old wine is nearer to the lees",
+      "reentry": "Than you are to the work that you are doing.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "Into new lands and languages begin?",
+      "place": "Into new lands and languages begin?",
+      "reentry": "Burr",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "Or rather of his horse.  for you alone,",
+      "place": "Or rather of his horse.  for you alone,",
+      "reentry": "Or for your fame, I'd wish it might have been so.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "Into the law.  I'm going to New York",
+      "place": "Into the law.  I'm going to New York",
+      "reentry": "Burr",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "Like Alcibiades, come back again",
+      "place": "Like Alcibiades, come back again",
+      "reentry": "He went away to Phrygia, and fared ill.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "Hamilton",
+      "place": "Hamilton",
+      "reentry": "Quite so. Farewell.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "The coming work of death which is to be,",
+      "place": "The coming work of death which is to be,",
+      "reentry": "That life may be. There is no other way",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "For man's endurance of accomplishment",
+      "place": "For man's endurance of accomplishment",
+      "reentry": "I shall have more to say when I am dead.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "\"We are false and evanescent, and aware of our deceit,",
+      "place": "\"We are false and evanescent, and aware of our deceit,",
+      "reentry": "From the straw that is our vitals to the clay that is our feet. You may serve us if you must, and you shall have your wage of ashes, --",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "Though arrears due thereafter may be hard for you to meet",
+      "place": "Though arrears due thereafter may be hard for you to meet",
+      "reentry": "\"You may swear that we are solid, you may say that we are strong, But we know that we are neither and we say that you are wrong;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "But your large admiration of us now is not for long",
+      "place": "But your large admiration of us now is not for long",
+      "reentry": "\"If your doom is to adore us with a doubt that's never still, And you pray to see our faces -- pray in earnest, and you will. You may gaze at us and live, and live assured of our confusion:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "There's an order in the ages for the ages to enjoy;",
+      "place": "There's an order in the ages for the ages to enjoy;",
+      "reentry": "Though the temples you are shaping and the passions you are singing",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "And you seem a little more than ordinarily alive,",
+      "place": "And you seem a little more than ordinarily alive,",
+      "reentry": "Make a note that you are sure you understand our obligations -- For there's grief always auditing where two and two are five.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "If you doubt the only truth in all our perjured composition,",
+      "place": "If you doubt the only truth in all our perjured composition,",
+      "reentry": "May the True Gods attend you and forget us when we go.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "And looked across the clover to the place",
+      "place": "And looked across the clover to the place",
+      "reentry": "That he remembered when the trees were there.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "London Bridge",
+      "place": "London Bridge",
+      "reentry": "\"Do I hear them? Yes, I hear the children singing -- and what of it? Have you come with eyes afire to find me now and ask me that?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "If I were not their father and if you were not their mother,",
+      "place": "If I were not their father and if you were not their mother,",
+      "reentry": "We might believe they made a noise. . . . What are you -- driving at!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "And though I pray for them to cease, I know they never will;",
+      "place": "And though I pray for them to cease, I know they never will;",
+      "reentry": "For their music on my heart, though you may freeze it, will fall always,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "Like summer snow that never melts upon a mountain-top",
+      "place": "Like summer snow that never melts upon a mountain-top",
+      "reentry": "Do you hear them? Do you hear them overhead -- the children -- singing? Do you hear the children singing? . . . God, will you make them stop!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "All I know is, it will kill me if I try to keep it hidden --",
+      "place": "All I know is, it will kill me if I try to keep it hidden --",
+      "reentry": "Well, I met him. . . . Yes, I met him, and I talked with him -- today.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "Long ago, before I knew you for the woman that you are?",
+      "place": "Long ago, before I knew you for the woman that you are?",
+      "reentry": "Take a chair; and don't begin your stories always in the middle.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "Was he man, or was he demon?  Anyhow, you've gone too far",
+      "place": "Was he man, or was he demon?  Anyhow, you've gone too far",
+      "reentry": "To go back, and I'm your servant. I'm the lord, but you're the master.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "\"Do you mean --",
+      "place": "\"Do you mean --",
+      "reentry": "Do you mean to make me try to think that you know less than I do?\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "Were to swing or to stay bolted from now on for evermore.\"",
+      "place": "Were to swing or to stay bolted from now on for evermore.\"",
+      "reentry": "\"Do you conceive, with all your smooth contempt of every feeling,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "Of hiding what you know and what you must have known before?",
+      "place": "Of hiding what you know and what you must have known before?",
+      "reentry": "Is it worth a woman's torture to stand here and have you smiling,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "With only your poor fetish of possession on your side?",
+      "place": "With only your poor fetish of possession on your side?",
+      "reentry": "No thing but one is wholly sure, and that's not one to scare me;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "Henceforward will be more for you to bear than are your own;",
+      "place": "Henceforward will be more for you to bear than are your own;",
+      "reentry": "And you must give me keys of yours to rooms I have not entered. Do you see me on your threshold all my life, and there alone? Will you tell me where you see me in your fancy -- when it leads you",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "Far enough beyond the moment for a glance at the abyss?\"",
+      "place": "Far enough beyond the moment for a glance at the abyss?\"",
+      "reentry": "\"Will you tell me what intrinsic and amazing sort of nonsense You are crowding on the patience of the man who gives you -- this?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "With a civet and a fish-net, and with you to pay the rent",
+      "place": "With a civet and a fish-net, and with you to pay the rent",
+      "reentry": "I say words that you can spell without the use of all your letters; And I grant, if you insist, that I've a guess at what you meant.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "That I'm a trifle more aware of what he wants than you are",
+      "place": "That I'm a trifle more aware of what he wants than you are",
+      "reentry": "But I shouldn't throw that at you. Make believe that I forgot. Make believe that he's a genius, if you like, -- but in the meantime",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "\"Make believe!",
+      "place": "\"Make believe!",
+      "reentry": "When you see me standing helpless on a plank above a whirlpool,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "How much more am I to say or do for you before I tell you",
+      "place": "How much more am I to say or do for you before I tell you",
+      "reentry": "That I met him! What's to follow now may be for you to choose. Do you hear me? Won't you listen? It's an easy thing to listen. . . .\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "Do I seem to tell you nothing when I tell you I shall try?",
+      "place": "Do I seem to tell you nothing when I tell you I shall try?",
+      "reentry": "If you save me, and I lose him -- I don't know -- it won't much matter.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "\"When I came into this room,",
+      "place": "\"When I came into this room,",
+      "reentry": "It seemed as if I saw the place, and you there at your table,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "As you are now at this moment, for the last time in my life;",
+      "place": "As you are now at this moment, for the last time in my life;",
+      "reentry": "And I told myself before I came to find you, `I shall tell him, If I can, what I have learned of him since I became his wife.'",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "And if you say, as I've no doubt you will before I finish,",
+      "place": "And if you say, as I've no doubt you will before I finish,",
+      "reentry": "That you have tried unceasingly, with all your might and main,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "To teach me, knowing more than I of what it was I needed,",
+      "place": "To teach me, knowing more than I of what it was I needed,",
+      "reentry": "Don't think, with all you may have thought, that you have tried in vain; For you have taught me more than hides in all the shelves of knowledge Of how little you found that's in me and was in me all along.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "I believed, if I intruded nothing on you that I cared for,",
+      "place": "I believed, if I intruded nothing on you that I cared for,",
+      "reentry": "I'd be half as much as horses, -- and it seems that I was wrong; I believed there was enough of earth in me, with all my nonsense Over things that made you sleepy, to keep something still awake; But you taught me soon to read my book, and G",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "Ages longer than an angel would have read it for your sake",
+      "place": "Ages longer than an angel would have read it for your sake",
+      "reentry": "I have said that you must open other doors than I have entered,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "To endure another like it -- and another -- till I'm dead?\"",
+      "place": "To endure another like it -- and another -- till I'm dead?\"",
+      "reentry": "\"Has your tame cat sold a picture? -- or more likely had a windfall? Or for God's sake, what's broke loose? Have you a bee-hive in your head?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "A little more of this from you will not be easy hearing",
+      "place": "A little more of this from you will not be easy hearing",
+      "reentry": "Do you know that? Understand it, if you do; for if you won't. . . . What the devil are you saying! Make believe you never said it, And I'll say I never heard it. . . . Oh, you. . . . If you. . . .\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "\"If I don't?\"",
+      "place": "\"If I don't?\"",
+      "reentry": "\"There are men who say there's reason hidden somewhere in a woman, But I doubt if God himself remembers where the key was hung.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "\"Stop -- you devil!\"",
+      "place": "\"Stop -- you devil!\"",
+      "reentry": "\". . . Or that souls are any whiter when their bodies are called wives. If a dollar's worth of gold will hoop the walls of hell together,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "And if at last I lied my starving soul away to nothing,",
+      "place": "And if at last I lied my starving soul away to nothing,",
+      "reentry": "Are you sure you might not miss it? Have you come to such a pass",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "That you would have me longer in your arms if you discovered",
+      "place": "That you would have me longer in your arms if you discovered",
+      "reentry": "That I made you into someone else. . . . Oh! . . . Well, there are",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "Worse ways",
+      "place": "Worse ways",
+      "reentry": "But why aim it at my feet -- unless you fear you may be sorry. . . .",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "\"I do not see those days.\"",
+      "place": "\"I do not see those days.\"",
+      "reentry": "\"I can see them. Granted even I am wrong, there are the children. And are they to praise their father for his insight if we die? Do you hear them? Do you hear them overhead -- the children -- singing?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "\"Why?",
+      "place": "\"Why?",
+      "reentry": "What have They done? . . . Well, then, -- do it. . . . Do it now,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "One who sees the end already of so much that one end more",
+      "place": "One who sees the end already of so much that one end more",
+      "reentry": "Would have now the small importance of one other small illusion, Which in turn would have a welcome where the rest have gone before.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "But if I were you, my fancy would look on a little farther",
+      "place": "But if I were you, my fancy would look on a little farther",
+      "reentry": "For the glimpse of a release that may be somewhere still in sight.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "Furthermore, you must remember those two hundred invitations",
+      "place": "Furthermore, you must remember those two hundred invitations",
+      "reentry": "For the dancing after dinner. We shall have to shine tonight.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s115",
+      "title": "We shall dance, and be as happy as a pair of merry spectres,",
+      "place": "We shall dance, and be as happy as a pair of merry spectres,",
+      "reentry": "On the grave of all the lies that we shall never have to tell;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s116",
+      "title": "No -- no -- don't cancel anything.  I'll dance until I drop",
+      "place": "No -- no -- don't cancel anything.  I'll dance until I drop",
+      "reentry": "I can't walk yet, but I'm going to. . . . Go away somewhere,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s117",
+      "title": "And leave me. . . ",
+      "place": "And leave me. . . ",
+      "reentry": "Oh, you children! Oh, you children! . . . God, will they never stop!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s118",
+      "title": "Others, I found, remembered Ferguson,",
+      "place": "Others, I found, remembered Ferguson,",
+      "reentry": "But none of them had heard of Tasker Norcross.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s119",
+      "title": "Went his own way, and with his own regret,",
+      "place": "Went his own way, and with his own regret,",
+      "reentry": "Not knowing what the other may have heard.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s120",
+      "title": "And though a child, I knew it was the voice",
+      "place": "And though a child, I knew it was the voice",
+      "reentry": "Of one whose occupation was to die.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s121",
+      "title": "That earth has not a school where we may go",
+      "place": "That earth has not a school where we may go",
+      "reentry": "For wisdom, or for more than we may know.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s122",
+      "title": "Her thoughts a moment since of one who shines",
+      "place": "Her thoughts a moment since of one who shines",
+      "reentry": "Apart, and would be hers if he had known.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s123",
+      "title": "By the slow guile of their vindictiveness,",
+      "place": "By the slow guile of their vindictiveness,",
+      "reentry": "What ultimate insolence would soon be theirs.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s124",
+      "title": "If some of us were not so far behind,",
+      "place": "If some of us were not so far behind,",
+      "reentry": "The rest of us were not so far ahead.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s125",
+      "title": "And we who do the fiction of our share",
+      "place": "And we who do the fiction of our share",
+      "reentry": "Say less of rats and rather more of men.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s126",
+      "title": "Note. --  Rahel Robert and Varnhagen von Ense were married,",
+      "place": "Note. --  Rahel Robert and Varnhagen von Ense were married,",
+      "reentry": "after many protestations on her part, in 1814. The marriage -- so far as he was concerned, at any rate -- appears to have been satisfactory.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s127",
+      "title": "And say to me aloud what else there is",
+      "place": "And say to me aloud what else there is",
+      "reentry": "Than ruins in it that you most admire.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s128",
+      "title": "To a cold end?  You know so dismal much",
+      "place": "To a cold end?  You know so dismal much",
+      "reentry": "As that about me? . . . Well, I believe you do.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s129",
+      "title": "I'm painting here a better man, you say,",
+      "place": "I'm painting here a better man, you say,",
+      "reentry": "Than I, the painter; and you say the truth.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s130",
+      "title": "Outside a jail-yard, am I wrong",
+      "place": "Outside a jail-yard, am I wrong",
+      "reentry": "If now I sing Him a new song?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s131",
+      "title": "Would rather tell the truth than lie --",
+      "place": "Would rather tell the truth than lie --",
+      "reentry": "On Christmas Eve. No matter why.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s132",
+      "title": "So droll a derelict as that",
+      "place": "So droll a derelict as that",
+      "reentry": "Should have at least another hat.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s133",
+      "title": "No ship was coming.  When the darkness",
+      "place": "No ship was coming.  When the darkness",
+      "reentry": "Fell, she was there, and alone, still gazing.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s134",
+      "title": "\"In David's time poor Michal had to go",
+      "place": "\"In David's time poor Michal had to go",
+      "reentry": "Jealous of God? Well, if you like it so.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s135",
+      "title": "Where the old wrong seems right",
+      "place": "Where the old wrong seems right",
+      "reentry": "Longer ago than cave-men had their changes Our fathers may have slain a son or two,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s136",
+      "title": "May give you qualms -- and one or two concerning",
+      "place": "May give you qualms -- and one or two concerning",
+      "reentry": "The last of your content.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s137",
+      "title": "Only His eyes; and they looked into mine --",
+      "place": "Only His eyes; and they looked into mine --",
+      "reentry": "Long into mine -- long, long, as if He knew.\"",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Lines longer than 78 characters are broken and the continuation is indented two spaces. Some obvious errors may have been corrected.]"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "The Three Taverns"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "[American (Maine) Poet. 1869-1935.]"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "To Thomas Sergeant Perry and Lilla Cabot Perry"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Contents"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "The Valley of the Shadow The Wandering Jew Neighbors The Mill The Dark Hills The Three Taverns Demos I Demos II The Flying Dutchman Tact On the Way John Brown The False Gods Archibald's Example London Bridge Tasker Norcross A Song at Shannon's Souvenir Discovery Firelight The New Tenants Inferential The Rat Rahel to Varnhagen Nimmo Peace on Earth Late Summer An Evangelist's Wife The Old King's New Jester Lazarus"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "in American periodicals, as follows: The Three Taverns, London Bridge,"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Archibald's Example, The Valley of the Shadow; Nimmo; The Wandering Jew, Souvenir; Neighbors, Tact; Demos; The Mill, An Evangelist's Wife;"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "On the Way, The False Gods; Peace on Earth; The Old King's New Jester."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "------------------- The Three Taverns -------------------"
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "The Valley of the Shadow"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "There were fires of grief and fear that are a few forgotten ashes,"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "They were lost and unacquainted -- till they found themselves in others, Who had groped as they were groping where dim ways were perilous."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "There were lives that were as dark as are the fears and intuitions Of a child who knows himself and is alone with what he knows; There were pensioners of dreams and there were debtors of illusions,"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "There were thirsting heirs of golden sieves that held not wine or water,"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "There were blighted sons of wonder in the Valley of the Shadow, Where they suffered and still wondered why their wonder made no noise."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "There were slaves who dragged the shackles of a precedent unbroken,"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "There were these, and there were many who had stumbled up to manhood, Where they saw too late the road they should have taken long ago: There were thwarted clerks and fiddlers in the Valley of the Shadow, The commemorative wreckage of what others did not know."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "And there were daughters older than the mothers who had borne them,"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "And among them, giving always what was not for their possession,"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "There were daughters of the silence in the Valley of the Shadow,"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "There were creepers among catacombs where dull regrets were torches, Giving light enough to show them what was there upon the shelves -- Where there was more for them to see than pleasure would remember Of something that had been alive and once had been themselves. There were some who stirred the ruins with a solid imprecation,"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "There were drinkers of wrong waters in the Valley of the Shadow, And all the sparkling ways were dust that once had led them there."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "There were some who knew the steps of Age incredibly beside them, And his fingers upon shoulders that had never felt the wheel; And their last of empty trophies was a gilded cup of nothing, Which a contemplating vagabond would not have come to steal. Long and often had they figured for a larger valuation, But the size of their addition was the balance of a doubt:"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "There were tears for what had vanished as they vanished where they fell. Not assured of what was theirs, and always hungry for the nameless, There were some whose only passion was for Time who made them cold:"
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Dreaming rather less of heaven than of hell when they were old."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Now and then, as if to scorn the common touch of common sorrow,"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Having covered thus a treasure that would last him for a while."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "There were seekers after darkness in the Valley of the Shadow, And they alone were there to find what they were looking for."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "So they were, and so they are; and as they came are coming others,"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "For the children of the dark are more to name than are the wretched,"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "There are builders of new mansions in the Valley of the Shadow, And among them are the dying and the blinded and the maimed."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "The Wandering Jew"
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "I saw by looking in his eyes That they remembered everything;"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "His image when I was a child."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "With evidence at every turn, I should have held it safe to guess That all the newness of New York Had nothing new in loneliness; Yet here was one who might be Noah, Or Nathan, or Abimelech, Or Lamech, out of ages lost, -- Or, more than all, Melchizedek."
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "Assured that he was none of these, I gave them back their names again,"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "Compassion that I might regret."
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "Pity, I learned, was not the least Of time's offending benefits"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "To an untempered eloquence."
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "Before I pondered long enough On whence he came and who he was,"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "Our fathers were from such a place."
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "Before there was an hour for me To contemplate with less concern The crumbling realm awaiting us Than his that was beyond return, A dawning on the dust of years Had shaped with an elusive light Mirages of remembered scenes That were no longer for the sight."
+    },
+    {
+      "id": "s23-2",
+      "sceneId": "s23",
+      "text": "For now the gloom that hid the man Became a daylight on his wrath, And one wherein my fancy viewed New lions ramping in his path. The old were dead and had no fangs, Wherefore he loved them -- seeing not They were the same that in their time Had eaten everything they caught."
+    },
+    {
+      "id": "s23-3",
+      "sceneId": "s23",
+      "text": "The world around him was a gift Of anguish to his eyes and ears, And one that he had long reviled As fit for devils, not for seers. Where, then, was there a place for him That on this other side of death Saw nothing good, as he had seen No good come out of Nazareth?"
+    },
+    {
+      "id": "s23-4",
+      "sceneId": "s23",
+      "text": "Yet here there was a reticence, And I believe his only one, That hushed him as if he beheld A Presence that would not be gone. In such a silence he confessed How much there was to be denied; And he would look at me and live, As others might have looked and died."
+    },
+    {
+      "id": "s23-5",
+      "sceneId": "s23",
+      "text": "As if at last he knew again That he had always known, his eyes"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "Before me there, was man or ghost."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "He may have died so many times That all there was of him to see Was pride, that kept itself alive As too rebellious to be free; He may have told, when more than once Humility seemed imminent, How many a lonely time in vain The Second Coming came and went."
+    },
+    {
+      "id": "s24-2",
+      "sceneId": "s24",
+      "text": "Whether he still defies or not The failure of an angry task"
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "And flinch -- and look the other way."
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "Neighbors"
+    },
+    {
+      "id": "s25-2",
+      "sceneId": "s25",
+      "text": "As often as we thought of her, We thought of a gray life That made a quaint economist Of a wolf-haunted wife; We made the best of all she bore That was not ours to bear, And honored her for wearing things That were not things to wear."
+    },
+    {
+      "id": "s25-3",
+      "sceneId": "s25",
+      "text": "There was a distance in her look That made us look again; And if she smiled, we might believe That we had looked in vain. Rarely she came inside our doors, And had not long to stay; And when she left, it seemed somehow That she was far away."
+    },
+    {
+      "id": "s25-4",
+      "sceneId": "s25",
+      "text": "At last, when we had all forgot That all is here to change,"
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "More than one heart could hold."
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "The Mill"
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "The miller's wife had waited long, The tea was cold, the fire was dead; And there might yet be nothing wrong In how he went and what he said: \"There are no millers any more,\" Was all that she had heard him say; And he had lingered at the door So long that it seemed yesterday."
+    },
+    {
+      "id": "s26-3",
+      "sceneId": "s26",
+      "text": "Sick with a fear that had no form She knew that she was there at last;"
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Would not have heeded where she went."
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "And if she thought it followed her, She may have reasoned in the dark"
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "The same as ever to the sight."
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "The Dark Hills"
+    },
+    {
+      "id": "s28-2",
+      "sceneId": "s28",
+      "text": "Dark hills at evening in the west, Where sunset hovers like a sound"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "Were fading, and all wars were done."
+    },
+    {
+      "id": "s29-1",
+      "sceneId": "s29",
+      "text": "The Three Taverns"
+    },
+    {
+      "id": "s29-2",
+      "sceneId": "s29",
+      "text": "When the brethren heard of us, they came to meet us as far as Appii Forum, and The Three Taverns. (Acts 28:15)"
+    },
+    {
+      "id": "s29-3",
+      "sceneId": "s29",
+      "text": "Herodion, Apelles, Amplias, And Andronicus? Is it you I see -- At last? And is it you now that are gazing As if in doubt of me? Was I not saying That I should come to Rome? I did say that; And I said furthermore that I should go On westward, where the gateway of the world Lets in the central sea. I did say that, But I say only, now, that I am Paul -- A prisoner of the Law, and of the Lord A voice made free. If there be time enough To live, I may have more to tell you then Of western matters. I go now to Rome, Where Caesar waits for me, and I shall wait, And Caesar knows how long. In Caesarea There was a legend of Agrippa saying In a light way to Festus, having heard My deposition, that I might be free, Had I stayed free of Caesar; but the word Of God would have it as you see it is -- And here I am. The cup that I shall drink Is mine to drink -- the moment or the place Not mine to say. If it be now in Rome, Be it now in Rome; and if your faith exceed The shadow cast of hope, say not of me Too surely or too soon that years and shipwreck, And all the many deserts I have crossed That are not named or regioned, have undone Beyond the brevities of our mortal healing The part of me that is the least of me. You see an older man than he who fell Prone to the earth when he was nigh Damascus, Where the great light came down; yet I am he That fell, and he that saw, and he that heard. And I am here, at last; and if at last I give myself to make another crumb For this pernicious feast of time and men -- Well, I have seen too much of time and men To fear the ravening or the wrath of either."
+    },
+    {
+      "id": "s29-4",
+      "sceneId": "s29",
+      "text": "Yes, it is Paul you see -- the Saul of Tarsus That was a fiery Jew, and had men slain For saying Something was beyond the Law, And in ourselves. I fed my suffering soul Upon the Law till I went famishing, Not knowing that I starved. How should I know, More then than any, that the food I had -- What else it may have been -- was not for me? My fathers and their fathers and their fathers Had found it good, and said there was no other, And I was of the line. When Stephen fell, Among the stones that crushed his life away, There was no place alive that I could see For such a man. Why should a man be given To live beyond the Law? So I said then, As men say now to me. How then do I Persist in living? Is that what you ask? If so, let my appearance be for you No living answer; for Time writes of death On men before they die, and what you see Is not the man. The man that you see not -- The man within the man -- is most alive; Though hatred would have ended, long ago, The bane of his activities. I have lived, Because the faith within me that is life Endures to live, and shall, till soon or late, Death, like a friend unseen, shall say to me My toil is over and my work begun."
+    },
+    {
+      "id": "s29-5",
+      "sceneId": "s29",
+      "text": "How often, and how many a time again, Have I said I should be with you in Rome! He who is always coming never comes, Or comes too late, you may have told yourselves; And I may tell you now that after me, Whether I stay for little or for long, The wolves are coming. Have an eye for them, And a more careful ear for their confusion Than you need have much longer for the sound Of what I tell you -- should I live to say More than I say to Caesar. What I know Is down for you to read in what is written; And if I cloud a little with my own Mortality the gleam that is immortal, I do it only because I am I -- Being on earth and of it, in so far As time flays yet the remnant. This you know; And if I sting men, as I do sometimes, With a sharp word that hurts, it is because Man's habit is to feel before he sees; And I am of a race that feels. Moreover, The world is here for what is not yet here For more than are a few; and even in Rome, Where men are so enamored of the Cross That fame has echoed, and increasingly, The music of your love and of your faith To foreign ears that are as far away As Antioch and Haran, yet I wonder How much of love you know, and if your faith Be the shut fruit of words. If so, remember Words are but shells unfilled. Jews have at least A Law to make them sorry they were born If they go long without it; and these Gentiles, For the first time in shrieking history, Have love and law together, if so they will, For their defense and their immunity In these last days. Rome, if I know the name, Will have anon a crown of thorns and fire Made ready for the wreathing of new masters, Of whom we are appointed, you and I, -- And you are still to be when I am gone, Should I go presently. Let the word fall, Meanwhile, upon the dragon-ridden field Of circumstance, either to live or die; Concerning which there is a parable, Made easy for the comfort and attention Of those who preach, fearing they preach in vain. You are to plant, and then to plant again Where you have gathered, gathering as you go; For you are in the fields that are eternal, And you have not the burden of the Lord Upon your mortal shoulders. What you have Is a light yoke, made lighter by the wearing, Till it shall have the wonder and the weight Of a clear jewel, shining with a light Wherein the sun and all the fiery stars May soon be fading. When Gamaliel said That if they be of men these things are nothing, But if they be of God they are for none To overthrow, he spoke as a good Jew, And one who stayed a Jew; and he said all. And you know, by the temper of your faith, How far the fire is in you that I felt Before I knew Damascus. A word here, Or there, or not there, or not anywhere, Is not the Word that lives and is the life; And you, therefore, need weary not yourselves With jealous aches of others. If the world Were not a world of aches and innovations, Attainment would have no more joy of it. There will be creeds and schisms, creeds in creeds, And schisms in schisms; myriads will be done To death because a farthing has two sides, And is at last a farthing. Telling you this, I, who bid men to live, appeal to Caesar. Once I had said the ways of God were dark, Meaning by that the dark ways of the Law. Such is the glory of our tribulations; For the Law kills the flesh that kills the Law, And we are then alive. We have eyes then; And we have then the Cross between two worlds -- To guide us, or to blind us for a time, Till we have eyes indeed. The fire that smites A few on highways, changing all at once, Is not for all. The power that holds the world Away from God that holds himself away -- Farther away than all your works and words Are like to fly without the wings of faith -- Was not, nor ever shall be, a small hazard Enlivening the ways of easy leisure Or the cold road of knowledge. When our eyes Have wisdom, we see more than we remember; And the old world of our captivities May then become a smitten glimpse of ruin, Like one where vanished hewers have had their day Of wrath on Lebanon. Before we see, Meanwhile, we suffer; and I come to you, At last, through many storms and through much night."
+    },
+    {
+      "id": "s29-6",
+      "sceneId": "s29",
+      "text": "Yet whatsoever I have undergone, My keepers in this instance are not hard. But for the chance of an ingratitude, I might indeed be curious of their mercy, And fearful of their leisure while I wait, A few leagues out of Rome. Men go to Rome, Not always to return -- but not that now. Meanwhile, I seem to think you look at me With eyes that are at last more credulous Of my identity. You remark in me No sort of leaping giant, though some words Of mine to you from Corinth may have leapt A little through your eyes into your soul. I trust they were alive, and are alive Today; for there be none that shall indite So much of nothing as the man of words Who writes in the Lord's name for his name's sake And has not in his blood the fire of time To warm eternity. Let such a man -- If once the light is in him and endures -- Content himself to be the general man, Set free to sift the decencies and thereby To learn, except he be one set aside For sorrow, more of pleasure than of pain; Though if his light be not the light indeed, But a brief shine that never really was, And fails, leaving him worse than where he was, Then shall he be of all men destitute. And here were not an issue for much ink, Or much offending faction among scribes."
+    },
+    {
+      "id": "s29-7",
+      "sceneId": "s29",
+      "text": "The Kingdom is within us, we are told; And when I say to you that we possess it In such a measure as faith makes it ours, I say it with a sinner's privilege Of having seen and heard, and seen again, After a darkness; and if I affirm To the last hour that faith affords alone The Kingdom entrance and an entertainment, I do not see myself as one who says To man that he shall sit with folded hands Against the Coming. If I be anything, I move a driven agent among my kind, Establishing by the faith of Abraham, And by the grace of their necessities, The clamoring word that is the word of life Nearer than heretofore to the solution Of their tomb-serving doubts. If I have loosed A shaft of language that has flown sometimes A little higher than the hearts and heads Of nature's minions, it will yet be heard, Like a new song that waits for distant ears. I cannot be the man that I am not; And while I own that earth is my affliction, I am a man of earth, who says not all To all alike. That were impossible, Even as it were so that He should plant A larger garden first. But you today Are for the larger sowing; and your seed, A little mixed, will have, as He foresaw, The foreign harvest of a wider growth, And one without an end. Many there are, And are to be, that shall partake of it, Though none may share it with an understanding That is not his alone. We are all alone; And yet we are all parcelled of one order -- Jew, Gentile, or barbarian in the dark Of wildernesses that are not so much As names yet in a book. And there are many, Finding at last that words are not the Word, And finding only that, will flourish aloft, Like heads of captured Pharisees on pikes, Our contradictions and discrepancies; And there are many more will hang themselves Upon the letter, seeing not in the Word The friend of all who fail, and in their faith A sword of excellence to cut them down."
+    },
+    {
+      "id": "s29-8",
+      "sceneId": "s29",
+      "text": "As long as there are glasses that are dark -- And there are many -- we see darkly through them; All which have I conceded and set down In words that have no shadow. What is dark Is dark, and we may not say otherwise; Yet what may be as dark as a lost fire For one of us, may still be for another A coming gleam across the gulf of ages, And a way home from shipwreck to the shore; And so, through pangs and ills and desperations, There may be light for all. There shall be light. As much as that, you know. You cannot say This woman or that man will be the next On whom it falls; you are not here for that. Your ministration is to be for others The firing of a rush that may for them Be soon the fire itself. The few at first Are fighting for the multitude at last; Therefore remember what Gamaliel said Before you, when the sick were lying down In streets all night for Peter's passing shadow. Fight, and say what you feel; say more than words. Give men to know that even their days of earth To come are more than ages that are gone. Say what you feel, while you have time to say it. Eternity will answer for itself, Without your intercession; yet the way For many is a long one, and as dark, Meanwhile, as dreams of hell. See not your toil Too much, and if I be away from you, Think of me as a brother to yourselves, Of many blemishes. Beware of stoics, And give your left hand to grammarians; And when you seem, as many a time you may, To have no other friend than hope, remember That you are not the first, or yet the last."
+    },
+    {
+      "id": "s29-9",
+      "sceneId": "s29",
+      "text": "The best of life, until we see beyond The shadows of ourselves (and they are less Than even the blindest of indignant eyes Would have them) is in what we do not know. Make, then, for all your fears a place to sleep With all your faded sins; nor think yourselves Egregious and alone for your defects Of youth and yesterday. I was young once; And there's a question if you played the fool With a more fervid and inherent zeal Than I have in my story to remember, Or gave your necks to folly's conquering foot, Or flung yourselves with an unstudied aim, Less frequently than I. Never mind that. Man's little house of days will hold enough, Sometimes, to make him wish it were not his, But it will not hold all. Things that are dead Are best without it, and they own their death By virtue of their dying. Let them go, -- But think you not the world is ashes yet, And you have all the fire. The world is here Today, and it may not be gone tomorrow; For there are millions, and there may be more, To make in turn a various estimation Of its old ills and ashes, and the traps Of its apparent wrath. Many with ears That hear not yet, shall have ears given to them, And then they shall hear strangely. Many with eyes That are incredulous of the Mystery Shall yet be driven to feel, and then to read Where language has an end and is a veil, Not woven of our words. Many that hate Their kind are soon to know that without love Their faith is but the perjured name of nothing. I that have done some hating in my time See now no time for hate; I that have left, Fading behind me like familiar lights That are to shine no more for my returning, Home, friends, and honors, -- I that have lost all else For wisdom, and the wealth of it, say now To you that out of wisdom has come love, That measures and is of itself the measure Of works and hope and faith. Your longest hours Are not so long that you may torture them And harass not yourselves; and the last days Are on the way that you prepare for them, And was prepared for you, here in a world Where you have sinned and suffered, striven and seen. If you be not so hot for counting them Before they come that you consume yourselves, Peace may attend you all in these last days -- And me, as well as you. Yes, even in Rome. Well, I have talked and rested, though I fear My rest has not been yours; in which event, Forgive one who is only seven leagues From Caesar. When I told you I should come, I did not see myself the criminal You contemplate, for seeing beyond the Law That which the Law saw not. But this, indeed,"
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "But none may say what he shall find in Rome."
+    },
+    {
+      "id": "s30-1",
+      "sceneId": "s30",
+      "text": "Demos I"
+    },
+    {
+      "id": "s30-2",
+      "sceneId": "s30",
+      "text": "All you that are enamored of my name And least intent on what most I require, Beware; for my design and your desire, Deplorably, are not as yet the same. Beware, I say, the failure and the shame Of losing that for which you now aspire So blindly, and of hazarding entire The gift that I was bringing when I came."
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "And shall not, if I fail you -- as I might."
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "Demos II"
+    },
+    {
+      "id": "s31-2",
+      "sceneId": "s31",
+      "text": "So little have you seen of what awaits Your fevered glimpse of a democracy Confused and foiled with an equality Not equal to the envy it creates, That you see not how near you are the gates Of an old king who listens fearfully To you that are outside and are to be The noisy lords of imminent estates."
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "Still to be wrangling in a noisy grave."
+    },
+    {
+      "id": "s32-1",
+      "sceneId": "s32",
+      "text": "The Flying Dutchman"
+    },
+    {
+      "id": "s32-2",
+      "sceneId": "s32",
+      "text": "Unyielding in the pride of his defiance, Afloat with none to serve or to command, Lord of himself at last, and all by Science, He seeks the Vanished Land."
+    },
+    {
+      "id": "s32-3",
+      "sceneId": "s32",
+      "text": "Alone, by the one light of his one thought, He steers to find the shore from which we came, -- Fearless of in what coil he may be caught On seas that have no name."
+    },
+    {
+      "id": "s32-4",
+      "sceneId": "s32",
+      "text": "Into the night he sails; and after night There is a dawning, though there be no sun; Wherefore, with nothing but himself in sight,"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "One fog-walled island more."
+    },
+    {
+      "id": "s33-1",
+      "sceneId": "s33",
+      "text": "Tact"
+    },
+    {
+      "id": "s33-2",
+      "sceneId": "s33",
+      "text": "Observant of the way she told So much of what was true,"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "And left him undeceived."
+    },
+    {
+      "id": "s34-1",
+      "sceneId": "s34",
+      "text": "Aware that all imagining Of more than what she meant"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "Upon a starry night."
+    },
+    {
+      "id": "s35-1",
+      "sceneId": "s35",
+      "text": "She smiled a little, knowing well That he would not remark"
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "Alone below the stars."
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "Note. -- The following imaginary dialogue between Alexander Hamilton and Aaron Burr, which is not based upon any specific incident in American history, may be supposed to have occurred a few months previous to Hamilton's retirement from Washington's Cabinet in 1795"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "as the inventor of American politics -- began to be conspicuously formidable to the Federalists. These activities on the part of Burr resulted, as the reader will remember, in the Burr-Jefferson tie for the Presidency in 1800, and finally in the Burr-Hamilton duel at Weehawken in 1804."
+    },
+    {
+      "id": "s38-1",
+      "sceneId": "s38",
+      "text": "Burr"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "Burr"
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "Cut off his dog's tail to induce distinction. There are dogs yet, and Alcibiades Is not forgotten."
+    },
+    {
+      "id": "s41-1",
+      "sceneId": "s41",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Burr"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "A pleasant sort of warmth along the shoulders."
+    },
+    {
+      "id": "s43-1",
+      "sceneId": "s43",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "For caution between doing and undoing."
+    },
+    {
+      "id": "s44-1",
+      "sceneId": "s44",
+      "text": "Burr"
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "And in a measure safe."
+    },
+    {
+      "id": "s46-1",
+      "sceneId": "s46",
+      "text": "Burr"
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "With all his tongues of silence?"
+    },
+    {
+      "id": "s48-1",
+      "sceneId": "s48",
+      "text": "Burr"
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "Burr"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "If I saw thrones at auction."
+    },
+    {
+      "id": "s51-1",
+      "sceneId": "s51",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "And I've no vision of your distant heels."
+    },
+    {
+      "id": "s52-1",
+      "sceneId": "s52",
+      "text": "Burr"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "Of him you lean on while he leans on you."
+    },
+    {
+      "id": "s53-1",
+      "sceneId": "s53",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "And weigh him in the light. Once (I believe"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "Burr"
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "Rides a white horse, I fancy we shall know it."
+    },
+    {
+      "id": "s56-1",
+      "sceneId": "s56",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "Burr"
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "Put that much in account with modesty."
+    },
+    {
+      "id": "s59-1",
+      "sceneId": "s59",
+      "text": "Burr"
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "Burr"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "He did the rest, and did it handsomely."
+    },
+    {
+      "id": "s62-1",
+      "sceneId": "s62",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "So far as he, to be so far remembered?"
+    },
+    {
+      "id": "s63-1",
+      "sceneId": "s63",
+      "text": "Burr"
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "Than you are to the work that you are doing."
+    },
+    {
+      "id": "s64-1",
+      "sceneId": "s64",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "Burr"
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "Or for your fame, I'd wish it might have been so."
+    },
+    {
+      "id": "s66-1",
+      "sceneId": "s66",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "Burr"
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "He went away to Phrygia, and fared ill."
+    },
+    {
+      "id": "s68-1",
+      "sceneId": "s68",
+      "text": "Hamilton"
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "Quite so. Farewell."
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "That life may be. There is no other way"
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "I shall have more to say when I am dead."
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "From the straw that is our vitals to the clay that is our feet. You may serve us if you must, and you shall have your wage of ashes, --"
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "\"You may swear that we are solid, you may say that we are strong, But we know that we are neither and we say that you are wrong;"
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "\"If your doom is to adore us with a doubt that's never still, And you pray to see our faces -- pray in earnest, and you will. You may gaze at us and live, and live assured of our confusion:"
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "Though the temples you are shaping and the passions you are singing"
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "Make a note that you are sure you understand our obligations -- For there's grief always auditing where two and two are five."
+    },
+    {
+      "id": "s76-1",
+      "sceneId": "s76",
+      "text": "\"There was this for us to say and there was this for you to know, Though it humbles and it hurts us when we have to tell you so."
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "May the True Gods attend you and forget us when we go.\""
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "That he remembered when the trees were there."
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "\"Do I hear them? Yes, I hear the children singing -- and what of it? Have you come with eyes afire to find me now and ask me that?"
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "We might believe they made a noise. . . . What are you -- driving at!\""
+    },
+    {
+      "id": "s80-1",
+      "sceneId": "s80",
+      "text": "\"Well, be glad that you can hear them, and be glad they are so near us, -- For I have heard the stars of heaven, and they were nearer still."
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "For their music on my heart, though you may freeze it, will fall always,"
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "Do you hear them? Do you hear them overhead -- the children -- singing? Do you hear the children singing? . . . God, will you make them stop!\""
+    },
+    {
+      "id": "s82-1",
+      "sceneId": "s82",
+      "text": "\"And what now in his holy name have you to do with mountains? We're back to town again, my dear, and we've a dance tonight. Frozen hearts and falling music? Snow and stars, and -- what the devil!"
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "Well, I met him. . . . Yes, I met him, and I talked with him -- today.\""
+    },
+    {
+      "id": "s83-1",
+      "sceneId": "s83",
+      "text": "\"You met him? Did you meet the ghost of someone you had poisoned,"
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "Take a chair; and don't begin your stories always in the middle."
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "To go back, and I'm your servant. I'm the lord, but you're the master."
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "Do you mean to make me try to think that you know less than I do?\""
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "\"Do you conceive, with all your smooth contempt of every feeling,"
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "Is it worth a woman's torture to stand here and have you smiling,"
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "No thing but one is wholly sure, and that's not one to scare me;"
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "And you must give me keys of yours to rooms I have not entered. Do you see me on your threshold all my life, and there alone? Will you tell me where you see me in your fancy -- when it leads you"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "\"Will you tell me what intrinsic and amazing sort of nonsense You are crowding on the patience of the man who gives you -- this?"
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "I say words that you can spell without the use of all your letters; And I grant, if you insist, that I've a guess at what you meant.\""
+    },
+    {
+      "id": "s92-1",
+      "sceneId": "s92",
+      "text": "\"Have I told you, then, for nothing, that I met him? Are you trying"
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "But I shouldn't throw that at you. Make believe that I forgot. Make believe that he's a genius, if you like, -- but in the meantime"
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "When you see me standing helpless on a plank above a whirlpool,"
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "That I met him! What's to follow now may be for you to choose. Do you hear me? Won't you listen? It's an easy thing to listen. . . .\""
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "If you save me, and I lose him -- I don't know -- it won't much matter."
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "It seemed as if I saw the place, and you there at your table,"
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "And I told myself before I came to find you, `I shall tell him, If I can, what I have learned of him since I became his wife.'"
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "That you have tried unceasingly, with all your might and main,"
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "Don't think, with all you may have thought, that you have tried in vain; For you have taught me more than hides in all the shelves of knowledge Of how little you found that's in me and was in me all along."
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "I'd be half as much as horses, -- and it seems that I was wrong; I believed there was enough of earth in me, with all my nonsense Over things that made you sleepy, to keep something still awake; But you taught me soon to read my book, and God knows I have read it --"
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "I have said that you must open other doors than I have entered,"
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "\"Has your tame cat sold a picture? -- or more likely had a windfall? Or for God's sake, what's broke loose? Have you a bee-hive in your head?"
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "Do you know that? Understand it, if you do; for if you won't. . . . What the devil are you saying! Make believe you never said it, And I'll say I never heard it. . . . Oh, you. . . . If you. . . .\""
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "\"There are men who say there's reason hidden somewhere in a woman, But I doubt if God himself remembers where the key was hung.\""
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "\". . . Or that souls are any whiter when their bodies are called wives. If a dollar's worth of gold will hoop the walls of hell together,"
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "Are you sure you might not miss it? Have you come to such a pass"
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "That I made you into someone else. . . . Oh! . . . Well, there are"
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "But why aim it at my feet -- unless you fear you may be sorry. . . ."
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "\"I can see them. Granted even I am wrong, there are the children. And are they to praise their father for his insight if we die? Do you hear them? Do you hear them overhead -- the children -- singing?"
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "What have They done? . . . Well, then, -- do it. . . . Do it now,"
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "Would have now the small importance of one other small illusion, Which in turn would have a welcome where the rest have gone before."
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "For the glimpse of a release that may be somewhere still in sight."
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "For the dancing after dinner. We shall have to shine tonight."
+    },
+    {
+      "id": "s115-0",
+      "sceneId": "s115",
+      "text": "On the grave of all the lies that we shall never have to tell;"
+    },
+    {
+      "id": "s116-0",
+      "sceneId": "s116",
+      "text": "I can't walk yet, but I'm going to. . . . Go away somewhere,"
+    },
+    {
+      "id": "s117-0",
+      "sceneId": "s117",
+      "text": "Oh, you children! Oh, you children! . . . God, will they never stop!\""
+    },
+    {
+      "id": "s118-0",
+      "sceneId": "s118",
+      "text": "But none of them had heard of Tasker Norcross."
+    },
+    {
+      "id": "s119-0",
+      "sceneId": "s119",
+      "text": "Not knowing what the other may have heard."
+    },
+    {
+      "id": "s120-0",
+      "sceneId": "s120",
+      "text": "Of one whose occupation was to die."
+    },
+    {
+      "id": "s121-0",
+      "sceneId": "s121",
+      "text": "For wisdom, or for more than we may know."
+    },
+    {
+      "id": "s122-0",
+      "sceneId": "s122",
+      "text": "Apart, and would be hers if he had known."
+    },
+    {
+      "id": "s123-0",
+      "sceneId": "s123",
+      "text": "What ultimate insolence would soon be theirs."
+    },
+    {
+      "id": "s123-1",
+      "sceneId": "s123",
+      "text": "Inferential"
+    },
+    {
+      "id": "s124-0",
+      "sceneId": "s124",
+      "text": "The rest of us were not so far ahead.\""
+    },
+    {
+      "id": "s125-0",
+      "sceneId": "s125",
+      "text": "Say less of rats and rather more of men."
+    },
+    {
+      "id": "s126-0",
+      "sceneId": "s126",
+      "text": "after many protestations on her part, in 1814. The marriage -- so far as he was concerned, at any rate -- appears to have been satisfactory."
+    },
+    {
+      "id": "s127-0",
+      "sceneId": "s127",
+      "text": "Than ruins in it that you most admire."
+    },
+    {
+      "id": "s128-0",
+      "sceneId": "s128",
+      "text": "As that about me? . . . Well, I believe you do."
+    },
+    {
+      "id": "s129-0",
+      "sceneId": "s129",
+      "text": "Than I, the painter; and you say the truth."
+    },
+    {
+      "id": "s130-0",
+      "sceneId": "s130",
+      "text": "If now I sing Him a new song?"
+    },
+    {
+      "id": "s131-0",
+      "sceneId": "s131",
+      "text": "On Christmas Eve. No matter why.\""
+    },
+    {
+      "id": "s131-1",
+      "sceneId": "s131",
+      "text": "His unshaved, educated face,"
+    },
+    {
+      "id": "s132-0",
+      "sceneId": "s132",
+      "text": "Should have at least another hat."
+    },
+    {
+      "id": "s133-0",
+      "sceneId": "s133",
+      "text": "Fell, she was there, and alone, still gazing."
+    },
+    {
+      "id": "s134-0",
+      "sceneId": "s134",
+      "text": "Jealous of God? Well, if you like it so.\""
+    },
+    {
+      "id": "s135-0",
+      "sceneId": "s135",
+      "text": "Longer ago than cave-men had their changes Our fathers may have slain a son or two,"
+    },
+    {
+      "id": "s136-0",
+      "sceneId": "s136",
+      "text": "The last of your content."
+    },
+    {
+      "id": "s137-0",
+      "sceneId": "s137",
+      "text": "Long into mine -- long, long, as if He knew.\""
+    }
+  ]
+}

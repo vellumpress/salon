@@ -1,0 +1,2569 @@
+{
+  "id": "the-ballad-of-the-white-horse",
+  "title": "The Ballad of the White Horse",
+  "author": "G. K. Chesterton",
+  "year": "1911",
+  "note": "Project Gutenberg 1719",
+  "minutes": 68,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Prefatory Note:",
+      "place": "Prefatory Note:",
+      "reentry": "This ballad needs no historical notes, for the simple reason that it does not profess to be historical. All of it that is not frankly fictitious, as in any prose romance about the past, is meant to emphasize tradition rather than history. K",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "About him",
+      "place": "About him",
+      "reentry": "The cult of Alfred was a popular cult, from the darkness of the ninth century to the deepening twilight of the twentieth. It is wholly as a popular legend that I deal with him here. I write as one ignorant of everything, except that I have ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Alfred about as much as we bother about Eadwig",
+      "place": "Alfred about as much as we bother about Eadwig",
+      "reentry": "One other consideration needs a note. Alfred has come down to us in the best way (that is, by national legends) solely for the same reason as Arthur and Roland and the other giants of that darkness, because he fought for the Christian civil",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "And watched the western glory faint",
+      "place": "And watched the western glory faint",
+      "reentry": "Along the road to Frome.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Had seen their sunrise pass,",
+      "place": "Had seen their sunrise pass,",
+      "reentry": "The White Horse of the White Horse Vale Was cut out of the grass.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Was peace and war in western hills,",
+      "place": "Was peace and war in western hills,",
+      "reentry": "And the White Horse looked on.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "He saw heaven fall and the world end,",
+      "place": "He saw heaven fall and the world end,",
+      "reentry": "O God, how long ago.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "With golden crown and girded fleece",
+      "place": "With golden crown and girded fleece",
+      "reentry": "Made laws under a tree.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "With horned heads, came wading in",
+      "place": "With horned heads, came wading in",
+      "reentry": "Through the long, low sea-mire.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "They took the kindly cross of God",
+      "place": "They took the kindly cross of God",
+      "reentry": "And cut it up for wood.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Yet they took hold upon the heavens",
+      "place": "Yet they took hold upon the heavens",
+      "reentry": "And no help came at all.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "And set the flag before,",
+      "place": "And set the flag before,",
+      "reentry": "Returning as a wheel returns, Came ruin and the rain that burns,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "But shameful tears of rage,",
+      "place": "But shameful tears of rage,",
+      "reentry": "In the island in the river In the end of all his age.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "The sea-folk breaking down the wood",
+      "place": "The sea-folk breaking down the wood",
+      "reentry": "Like a high tide from sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Done by a great and smiling king",
+      "place": "Done by a great and smiling king",
+      "reentry": "In daylight on a deck.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Between the sunlit sea and the sun",
+      "place": "Between the sunlit sea and the sun",
+      "reentry": "When the land is left behind.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "After lost battles turn to the sky",
+      "place": "After lost battles turn to the sky",
+      "reentry": "An everlasting laugh.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Eldred, the Franklin by the sea,",
+      "place": "Eldred, the Franklin by the sea,",
+      "reentry": "And Mark, the man from Italy, And Colan of the Sacred Tree, From the old tribe on Usk.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "But the eyes in his head were strong like steel,",
+      "place": "But the eyes in his head were strong like steel,",
+      "reentry": "And his soul remembered Rome.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "I have seen the truth like fire,",
+      "place": "I have seen the truth like fire,",
+      "reentry": "This--that the sky grows darker yet And the sea rises higher.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "And Colan of the Sacred Tree",
+      "place": "And Colan of the Sacred Tree",
+      "reentry": "Went slowly to his cave.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Sounded a single chord",
+      "place": "Sounded a single chord",
+      "reentry": "Then laughed; and watched the finches flash, The sullen flies in swarm, And went unarmed over the hills, With the harp upon his arm,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "Fires over Glastonbury Thorn--",
+      "place": "Fires over Glastonbury Thorn--",
+      "reentry": "Fires out on Ely Fen.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "They roared like the great green sea;",
+      "place": "They roared like the great green sea;",
+      "reentry": "But when they came to the red camp fire",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "But when they came to the red camp fire",
+      "place": "But when they came to the red camp fire",
+      "reentry": "They stood all in a row.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "And Elf, whose gold lute had a string",
+      "place": "And Elf, whose gold lute had a string",
+      "reentry": "That sighed like all desire.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Fire over Glastonbury roof",
+      "place": "Fire over Glastonbury roof",
+      "reentry": "And out on Ely, fire.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Who sees all folk that live and die--",
+      "place": "Who sees all folk that live and die--",
+      "reentry": "Pigmy and far away.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "He sang of some old British raid",
+      "place": "He sang of some old British raid",
+      "reentry": "On the wild west march of yore.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "Deepens like a garden to the gates",
+      "place": "Deepens like a garden to the gates",
+      "reentry": "In the purple walls of Wales.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "The kings of the mountaineers",
+      "place": "The kings of the mountaineers",
+      "reentry": "Till Harold laughed and snatched the harp, The kinsman of the King, A big youth, beardless like a child, Whom the new wine of war sent wild,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Thunder of Thor, we hunt you",
+      "place": "Thunder of Thor, we hunt you",
+      "reentry": "A hare on the mountain height.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "That have pleasure in their pain",
+      "place": "That have pleasure in their pain",
+      "reentry": "As he sang of Balder beautiful,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "There is always a forgotten thing,",
+      "place": "There is always a forgotten thing,",
+      "reentry": "And love is not secure.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "Fury, that does not fail",
+      "place": "Fury, that does not fail",
+      "reentry": "\"The wrath of the gods behind the gods Who would rend all gods and men,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "Than you to win again",
+      "place": "Than you to win again",
+      "reentry": "\"Your lord sits high in the saddle, A broken-hearted king,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "And the owls moaned from the mighty trees,",
+      "place": "And the owls moaned from the mighty trees,",
+      "reentry": "And the Danes laughed loud and long.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "Were the night's noises when the King",
+      "place": "Were the night's noises when the King",
+      "reentry": "Shouldering his harp, went home.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "And the one great stolen altar-lamp",
+      "place": "And the one great stolen altar-lamp",
+      "reentry": "Over Guthrum in his tent.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "And in a wood not far away",
+      "place": "And in a wood not far away",
+      "reentry": "The pale road split in twain.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "How ruin had come and victory,",
+      "place": "How ruin had come and victory,",
+      "reentry": "And both were a surprise.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "As Alfred rushed his spears and rent",
+      "place": "As Alfred rushed his spears and rent",
+      "reentry": "The shield-wall of the Danes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "Wise in both hours and ignorant,",
+      "place": "Wise in both hours and ignorant,",
+      "reentry": "Knowing neither more nor less.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "As the proud look up at the evil stars,",
+      "place": "As the proud look up at the evil stars,",
+      "reentry": "In the red heavens of hell.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "And Eldred who beside the sea",
+      "place": "And Eldred who beside the sea",
+      "reentry": "Held heavily his farm.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "A great grey woman with scarred face",
+      "place": "A great grey woman with scarred face",
+      "reentry": "And strong and humbled eyes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "And even as the woman pitied him",
+      "place": "And even as the woman pitied him",
+      "reentry": "So did he pity her.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "Unless there be a little door,",
+      "place": "Unless there be a little door,",
+      "reentry": "A little door in heaven.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "And struck him suddenly on the face,",
+      "place": "And struck him suddenly on the face,",
+      "reentry": "Leaving a scarlet scar.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "And the strange spears hung with ancient charms",
+      "place": "And the strange spears hung with ancient charms",
+      "reentry": "Of Colan of the Usk.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "And a boy went before them all",
+      "place": "And a boy went before them all",
+      "reentry": "Blowing a ram's horn.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "Grey carven men he fancied them,",
+      "place": "Grey carven men he fancied them,",
+      "reentry": "Hewn in an age of stone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "And Halmer, come from his first mass,",
+      "place": "And Halmer, come from his first mass,",
+      "reentry": "Lately baptized, a Dane.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "For the laughter of the King",
+      "place": "For the laughter of the King",
+      "reentry": "And the beasts of the earth and the birds looked down, In a wild solemnity, On a stranger sight than a sylph or elf,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "And Jack's away with his master's lass,",
+      "place": "And Jack's away with his master's lass,",
+      "reentry": "And the miser is banged with all his brass,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "As a man flings up sand,",
+      "place": "As a man flings up sand,",
+      "reentry": "But the firm feet of humility",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "The last lost giant, even God,",
+      "place": "The last lost giant, even God,",
+      "reentry": "Is risen against the world.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "And up in the northern scrub and brier,",
+      "place": "And up in the northern scrub and brier,",
+      "reentry": "They fell upon the Dane.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "From Chester to the Humber",
+      "place": "From Chester to the Humber",
+      "reentry": "He drove his foemen forth.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "Till high on Hampshire beacons",
+      "place": "Till high on Hampshire beacons",
+      "reentry": "He saw the southern sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "And the road parts on either hand,",
+      "place": "And the road parts on either hand,",
+      "reentry": "There came to him a sign.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "Not less with weighty care he drew",
+      "place": "Not less with weighty care he drew",
+      "reentry": "Long lines for pike and shield.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "And the rabbits ran like an elves' army",
+      "place": "And the rabbits ran like an elves' army",
+      "reentry": "Ere Alfred came in sight.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "But the Celtic prince's soul was sad",
+      "place": "But the Celtic prince's soul was sad",
+      "reentry": "For the things that never were.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "To wait till the holy horn is blown,",
+      "place": "To wait till the holy horn is blown,",
+      "reentry": "And all poor men are free.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "And the foes I slew openly",
+      "place": "And the foes I slew openly",
+      "reentry": "Have never wished me harm.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "The trees grow tall and grey",
+      "place": "The trees grow tall and grey",
+      "reentry": "And the trees talk together",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "For all the earth is Roman earth",
+      "place": "For all the earth is Roman earth",
+      "reentry": "And I shall die in Rome.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "With crackle and acclaim and shout,",
+      "place": "With crackle and acclaim and shout,",
+      "reentry": "Scrolled and aflame and far.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "Out from the black wood into the blaze",
+      "place": "Out from the black wood into the blaze",
+      "reentry": "Of sun and steel and song.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "And leftwards Colan darkling,",
+      "place": "And leftwards Colan darkling,",
+      "reentry": "In the last shade of the wood.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "Red giants of an age of raids,",
+      "place": "Red giants of an age of raids,",
+      "reentry": "In the thornland of Ethandune.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "But Ogier went on foot to die,",
+      "place": "But Ogier went on foot to die,",
+      "reentry": "In the old way of the Danes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "And on the King's right Harold stood,",
+      "place": "And on the King's right Harold stood,",
+      "reentry": "The kinsman of the King.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "Foewards, where, grey as cobwebs hung,",
+      "place": "Foewards, where, grey as cobwebs hung,",
+      "reentry": "The banners of the Usk.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "But all this carrion a man shoots",
+      "place": "But all this carrion a man shoots",
+      "reentry": "Before the fight begins.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "And swift had sprung the arrow,",
+      "place": "And swift had sprung the arrow,",
+      "reentry": "But swifter sprang the Gael.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "It smote Earl Harold over the eye,",
+      "place": "It smote Earl Harold over the eye,",
+      "reentry": "And blood began to run.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "Man shall not taste of victory",
+      "place": "Man shall not taste of victory",
+      "reentry": "Till he throws his sword away.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "Beginneth the battle of Ethandune",
+      "place": "Beginneth the battle of Ethandune",
+      "reentry": "With the throwing of the sword.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "Clanged all Prince Harold's howling kin",
+      "place": "Clanged all Prince Harold's howling kin",
+      "reentry": "On Colan and the sword.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "Tall Eldred broke the sea of spears",
+      "place": "Tall Eldred broke the sea of spears",
+      "reentry": "As a tall ship breaks the sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "Men could not count the crests he broke,",
+      "place": "Men could not count the crests he broke,",
+      "reentry": "So fast the crests went down.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "If ever he went home",
+      "place": "If ever he went home",
+      "reentry": "Spoke some stiff piece of childish prayer, Dull as the distant chimes, That thanked our God for good eating",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "Full seven spears, and the seventh",
+      "place": "Full seven spears, and the seventh",
+      "reentry": "Was never made by man.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "Move among roots of nations,",
+      "place": "Move among roots of nations,",
+      "reentry": "Being sunken for a sign.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "And belief that stood on unbelief",
+      "place": "And belief that stood on unbelief",
+      "reentry": "Stood up iron and alone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "And Mark against Elf yet shouting,",
+      "place": "And Mark against Elf yet shouting,",
+      "reentry": "Shocked, in his mid-career.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "Acrcuum, scutum, Gorlias,",
+      "place": "Acrcuum, scutum, Gorlias,",
+      "reentry": "Gladium et bellum.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "The trumpet of the Roman tongue,",
+      "place": "The trumpet of the Roman tongue,",
+      "reentry": "The thunder of the psalm.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "And brake the helm about his brow,",
+      "place": "And brake the helm about his brow,",
+      "reentry": "And broke him to his knee.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "And towered above the tossing field,",
+      "place": "And towered above the tossing field,",
+      "reentry": "A statue on a roof.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "While Ogier writhed under his shield",
+      "place": "While Ogier writhed under his shield",
+      "reentry": "Like a tortoise in his dome.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "And a death-stroke to the Roman's side",
+      "place": "And a death-stroke to the Roman's side",
+      "reentry": "Sent suddenly and well.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "Back by the place of the parting ways",
+      "place": "Back by the place of the parting ways",
+      "reentry": "Christ's knights were whirled away.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "But Colan swept the other way,",
+      "place": "But Colan swept the other way,",
+      "reentry": "Where he smote great strokes and fell.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "The loud lost blows, the last alarms,",
+      "place": "The loud lost blows, the last alarms,",
+      "reentry": "Came not to Alfred's ears.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "Seemed unto Alfred lightly borne",
+      "place": "Seemed unto Alfred lightly borne",
+      "reentry": "The last cry of the Gael.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "And patiently would pluck the grass,",
+      "place": "And patiently would pluck the grass,",
+      "reentry": "Patiently push the stone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "As a child plays on the last line",
+      "place": "As a child plays on the last line",
+      "reentry": "That sunders sand and surf.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "The Uncreated rent the sea",
+      "place": "The Uncreated rent the sea",
+      "reentry": "With roarings, from the land.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "And evermore the stones fell down,",
+      "place": "And evermore the stones fell down,",
+      "reentry": "And he piled them up again.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "The child whom Time can never tire,",
+      "place": "The child whom Time can never tire,",
+      "reentry": "Sings over White Horse Down.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "Struck him that ancient innocence",
+      "place": "Struck him that ancient innocence",
+      "reentry": "That is more than mastery.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "\"Endeth the Battle of Ethandune",
+      "place": "\"Endeth the Battle of Ethandune",
+      "reentry": "With the blowing of a horn.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "As if an outpost were encamped",
+      "place": "As if an outpost were encamped",
+      "reentry": "At the cloven ways for night.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "And one looked backwards, very small,",
+      "place": "And one looked backwards, very small,",
+      "reentry": "Far up the road, alone.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "No, brothers, by your leave, I think",
+      "place": "No, brothers, by your leave, I think",
+      "reentry": "Death is a better ale to drink,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "Yelling to all its fiends alive,",
+      "place": "Yelling to all its fiends alive,",
+      "reentry": "And not a rag care we.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "But when I blow the battle sign,",
+      "place": "But when I blow the battle sign,",
+      "reentry": "Charge all and go to God.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "Was fitted and was flown,",
+      "place": "Was fitted and was flown,",
+      "reentry": "When the broken shield hung on the breast,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "As when between white walls she went",
+      "place": "As when between white walls she went",
+      "reentry": "And the lilies of Nazareth.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "And she was a queen most womanly--",
+      "place": "And she was a queen most womanly--",
+      "reentry": "But she was a queen of men.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "And seven swords were in her heart--",
+      "place": "And seven swords were in her heart--",
+      "reentry": "But one was in her hand.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "And Ogier of the Stone and Sling",
+      "place": "And Ogier of the Stone and Sling",
+      "reentry": "Drove at him with a spear.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s115",
+      "title": "And either host cried suddenly,",
+      "place": "And either host cried suddenly,",
+      "reentry": "As Alfred leapt aside.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s116",
+      "title": "And Alfred sprang over him dead,",
+      "place": "And Alfred sprang over him dead,",
+      "reentry": "And blew the battle sign.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s117",
+      "title": "Horses like horns of nightmare",
+      "place": "Horses like horns of nightmare",
+      "reentry": "Neigh horribly and long.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s118",
+      "title": "How wild their watchfires burn!",
+      "place": "How wild their watchfires burn!",
+      "reentry": "\"The Mother of God goes over them,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s119",
+      "title": "Endeth the battle of Ethandune",
+      "place": "Endeth the battle of Ethandune",
+      "reentry": "With the blowing of a horn.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s120",
+      "title": "Or stunned of heaven, or stricken pale",
+      "place": "Or stunned of heaven, or stricken pale",
+      "reentry": "Before the face of the King.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s121",
+      "title": "And behind, his men came murderously,",
+      "place": "And behind, his men came murderously,",
+      "reentry": "Dry-throated, drinking death.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s122",
+      "title": "And vain and lonely stood the tower--",
+      "place": "And vain and lonely stood the tower--",
+      "reentry": "The tower in Guelderland.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s123",
+      "title": "Who blocked the Seine with battleships",
+      "place": "Who blocked the Seine with battleships",
+      "reentry": "Round Paris on the Isle.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s124",
+      "title": "Naked as their old British kin,",
+      "place": "Naked as their old British kin,",
+      "reentry": "And bright with blood for woad.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s125",
+      "title": "That bore King Alfred's battle-sword",
+      "place": "That bore King Alfred's battle-sword",
+      "reentry": "Broken in his left hand.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s126",
+      "title": "Sang high and deathly on each hand",
+      "place": "Sang high and deathly on each hand",
+      "reentry": "When the dead man went to war.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s127",
+      "title": "Called to the horns of White Horse Vale,",
+      "place": "Called to the horns of White Horse Vale,",
+      "reentry": "And all the horns replied.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s128",
+      "title": "And the eyes of Guthrum altered,",
+      "place": "And the eyes of Guthrum altered,",
+      "reentry": "For the first time since morn.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s129",
+      "title": "As when one wise man truly sees",
+      "place": "As when one wise man truly sees",
+      "reentry": "What is more wise than he.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s130",
+      "title": "But Gurth the fowler laid one hand",
+      "place": "But Gurth the fowler laid one hand",
+      "reentry": "Upon this bridle rein.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s131",
+      "title": "We set a sign on Guthrum",
+      "place": "We set a sign on Guthrum",
+      "reentry": "To blaze a thousand years.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s132",
+      "title": "When we put the cross on Guthrum",
+      "place": "When we put the cross on Guthrum",
+      "reentry": "In the parting of the ways.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s133",
+      "title": "As when a great man knows indeed",
+      "place": "As when a great man knows indeed",
+      "reentry": "A greater thing than he.)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s134",
+      "title": "Giving all lands by the northern sea",
+      "place": "Giving all lands by the northern sea",
+      "reentry": "To the sons of the northern star.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s135",
+      "title": "The King sat in his orchard,",
+      "place": "The King sat in his orchard,",
+      "reentry": "Among apples green and red,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s136",
+      "title": "With the little book in his bosom",
+      "place": "With the little book in his bosom",
+      "reentry": "And the sunshine on his head.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s137",
+      "title": "And the other sea at the world's back",
+      "place": "And the other sea at the world's back",
+      "reentry": "Cries through a closed door.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s138",
+      "title": "Our sway; and our feet climb the throne",
+      "place": "Our sway; and our feet climb the throne",
+      "reentry": "In the mountains of Strathclyde.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s139",
+      "title": "By an island of the blest",
+      "place": "By an island of the blest",
+      "reentry": "\"An island like a little book Full of a hundred tales,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s140",
+      "title": "Because I am not wise enough",
+      "place": "Because I am not wise enough",
+      "reentry": "To rule so small a thing.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s141",
+      "title": "They stripped the White Horse of the grass",
+      "place": "They stripped the White Horse of the grass",
+      "reentry": "As they strip it to this day.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s142",
+      "title": "The sheriffs keep the shire.\"",
+      "place": "The sheriffs keep the shire.\"",
+      "reentry": "But the young earl said: \"Ill the saints,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s143",
+      "title": "Red rust shall grow on God's great bell",
+      "place": "Red rust shall grow on God's great bell",
+      "reentry": "And grass in the streets of God.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s144",
+      "title": "Marching in haste and bitterness",
+      "place": "Marching in haste and bitterness",
+      "reentry": "For Christ's sake and the crown's.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s145",
+      "title": "Or where the thorn of the grave of God",
+      "place": "Or where the thorn of the grave of God",
+      "reentry": "Burns over Glastonbury.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s146",
+      "title": "And the tiny coloured towns that dwell",
+      "place": "And the tiny coloured towns that dwell",
+      "reentry": "In the corners of the sky.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s147",
+      "title": "The scoured chalk; and he said,",
+      "place": "The scoured chalk; and he said,",
+      "reentry": "\"Though I give this land to Our Lady, That helped me in Athelney,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s148",
+      "title": "Too blind to be abhorred;",
+      "place": "Too blind to be abhorred;",
+      "reentry": "\"By terror and the cruel tales Of curse in bone and kin,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s149",
+      "title": "From the plains of the white sunrise,",
+      "place": "From the plains of the white sunrise,",
+      "reentry": "And sad St. Edmund's crown, Where the pools of Essex pale and gleam Out beyond London Town--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s150",
+      "title": "Where the bald brow of White Horse Down",
+      "place": "Where the bald brow of White Horse Down",
+      "reentry": "Is close to the cold stars.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s151",
+      "title": "The sky reddened and the smoke swayed,",
+      "place": "The sky reddened and the smoke swayed,",
+      "reentry": "And the tall grey horse went by.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s152",
+      "title": "And the little sorrel, while all men slept,",
+      "place": "And the little sorrel, while all men slept,",
+      "reentry": "Unwrought the work of man.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s153",
+      "title": "And the grass, like a great green witch's wheel,",
+      "place": "And the grass, like a great green witch's wheel,",
+      "reentry": "Unwound the toils of men.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s154",
+      "title": "And the smoke changed and the wind went by,",
+      "place": "And the smoke changed and the wind went by,",
+      "reentry": "And the King took London Town.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "This ballad needs no historical notes, for the simple reason that it does not profess to be historical. All of it that is not frankly fictitious, as in any prose romance about the past, is meant to emphasize tradition rather than history. King Alfred is not a legend in the sense that King Arthur may be a legend; that is, in the sense that he may possibly be a lie. But King Alfred is a legend in this broader and more human sense, that the legends are the most important things"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The cult of Alfred was a popular cult, from the darkness of the ninth century to the deepening twilight of the twentieth. It is wholly as a popular legend that I deal with him here. I write as one ignorant of everything, except that I have found the legend of a King of Wessex still alive in the land. I will give three curt cases of what I mean. A tradition connects the ultimate victory of Alfred with the valley in Berkshire called the Vale of the White Horse. I have seen doubts of the tradition, which may be valid doubts. I do not know when or where the story started; it is enough that it started somewhere and ended with me; for I only seek to write upon a hearsay, as the old balladists did. For the second case, there is a popular tale that Alfred played the harp and sang in the Danish camp; I select it because it is a popular tale, at whatever time it arose. For the third case, there is a popular tale that Alfred came in contact with a woman and cakes; I select it because it is a popular tale, because it is a vulgar one. It has been disputed by grave historians, who were, I think, a little too grave to be good judges of it. The two chief charges against the story are that it was first recorded long after Alfred's death, and that (as Mr. Oman urges) Alfred never really wandered all alone without any thanes or soldiers. Both these objections might possibly be met. It has taken us nearly as long to learn the whole truth about Byron, and perhaps longer to learn the whole truth about Pepys, than elapsed between Alfred and the first writing of such tales. And as for the other objection, do the historians really think that Alfred after Wilton, or Napoleon after Leipsic, never walked about in a wood by himself for the matter of an hour or two? Ten minutes might be made sufficient for the essence of the story. But I am not concerned to prove the truth of these popular traditions. It is enough for me to maintain two things: that they are popular traditions; and that without these popular traditions we should have bothered about"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "One other consideration needs a note. Alfred has come down to us in the best way (that is, by national legends) solely for the same reason as Arthur and Roland and the other giants of that darkness, because he fought for the Christian civilization against the heathen nihilism. But since this work was really done by generation after generation, by the Romans before they withdrew, and by the Britons while they remained, I have summarised this first crusade in a triple symbol, and given to a fictitious Roman, Celt, and Saxon, a part in the glory of Ethandune. I fancy that in fact Alfred's Wessex was of very mixed bloods; but in any case, it is the chief value of legend to mix up the centuries while preserving the sentiment; to see all ages in a sort of splendid foreshortening. That is the use of tradition: it telescopes history."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "G.K.C."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Dedication"
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Of great limbs gone to chaos, A great face turned to night-- Why bend above a shapeless shroud Seeking in such archaic cloud Sight of strong lords and light?"
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Where seven sunken Englands Lie buried one by one, Why should one idle spade, I wonder, Shake up the dust of thanes like thunder To smoke and choke the sun?"
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "In cloud of clay so cast to heaven What shape shall man discern? These lords may light the mystery Of mastery or victory, And these ride high in history, But these shall not return."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Gored on the Norman gonfalon The Golden Dragon died: We shall not wake with ballad strings The good time of the smaller things, We shall not see the holy kings Ride down by Severn side."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "Stiff, strange, and quaintly coloured As the broidery of Bayeux The England of that dawn remains, And this of Alfred and the Danes Seems like the tales a whole tribe feigns Too English to be true."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "Of a good king on an island That ruled once on a time; And as he walked by an apple tree There came green devils out of the sea With sea-plants trailing heavily And tracks of opal slime."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "Yet Alfred is no fairy tale; His days as our days ran, He also looked forth for an hour On peopled plains and skies that lower, From those few windows in the tower That is the head of a man."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "But who shall look from Alfred's hood Or breathe his breath alive? His century like a small dark cloud Drifts far; it is an eyeless crowd, Where the tortured trumpets scream aloud And the dense arrows drive."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "Lady, by one light only We look from Alfred's eyes, We know he saw athwart the wreck The sign that hangs about your neck, Where One more than Melchizedek Is dead and never dies."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "Therefore I bring these rhymes to you Who brought the cross to me, Since on you flaming without flaw I saw the sign that Guthrum saw When he let break his ships of awe, And laid peace on the sea."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "Do you remember when we went Under a dragon moon, And 'mid volcanic tints of night Walked where they fought the unknown fight And saw black trees on the battle-height, Black thorn on Ethandune?"
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "And I thought, \"I will go with you, As man with God has gone, And wander with a wandering star, The wandering heart of things that are, The fiery cross of love and war That like yourself, goes on.\""
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "O go you onward; where you are Shall honour and laughter be, Past purpled forest and pearled foam, God's winged pavilion free to roam, Your face, that is a wandering home, A flying home for me."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "Ride through the silent earthquake lands, Wide as a waste is wide, Across these days like deserts, when Pride and a little scratching pen Have dried and split the hearts of men, Heart of the heroes, ride."
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "Up through an empty house of stars, Being what heart you are, Up the inhuman steeps of space As on a staircase go in grace, Carrying the firelight on your face Beyond the loneliest star."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Along the road to Frome."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Book I. the Vision of the King"
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Before the gods that made the gods"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "The White Horse of the White Horse Vale Was cut out of the grass."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Before the gods that made the gods Had drunk at dawn their fill, The White Horse of the White Horse Vale Was hoary on the hill."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "Age beyond age on British land, Aeons on aeons gone,"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "And the White Horse looked on."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "O God, how long ago."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "For the end of the world was long ago, And all we dwell to-day As children of some second birth, Like a strange people left on earth After a judgment day."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "For the end of the world was long ago, When the ends of the world waxed free, When Rome was sunk in a waste of slaves, And the sun drowned in the sea."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "When Caesar's sun fell out of the sky And whoso hearkened right Could only hear the plunging Of the nations in the night."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "When the ends of the earth came marching in To torch and cresset gleam. And the roads of the world that lead to Rome Were filled with faces that moved like foam, Like faces in a dream."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "And men rode out of the eastern lands, Broad river and burning plain; Trees that are Titan flowers to see, And tiger skies, striped horribly, With tints of tropic rain."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "Where Ind's enamelled peaks arise Around that inmost one, Where ancient eagles on its brink, Vast as archangels, gather and drink The sacrament of the sun."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "And men brake out of the northern lands, Enormous lands alone, Where a spell is laid upon life and lust And the rain is changed to a silver dust And the sea to a great green stone."
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "And a Shape that moveth murkily In mirrors of ice and night, Hath blanched with fear all beasts and birds, As death and a shock of evil words Blast a man's hair with white."
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "And the cry of the palms and the purple moons, Or the cry of the frost and foam, Swept ever around an inmost place, And the din of distant race on race Cried and replied round Rome."
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "And there was death on the Emperor And night upon the Pope: And Alfred, hiding in deep grass, Hardened his heart with hope."
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "A sea-folk blinder than the sea Broke all about his land, But Alfred up against them bare And gripped the ground and grasped the air, Staggered, and strove to stand."
+    },
+    {
+      "id": "s6-12",
+      "sceneId": "s6",
+      "text": "He bent them back with spear and spade, With desperate dyke and wall, With foemen leaning on his shield And roaring on him when he reeled; And no help came at all."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Made laws under a tree."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "The Northmen came about our land A Christless chivalry: Who knew not of the arch or pen, Great, beautiful half-witted men From the sunrise and the sea."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "Misshapen ships stood on the deep Full of strange gold and fire, And hairy men, as huge as sin"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Through the long, low sea-mire."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "And cut it up for wood."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "Their souls were drifting as the sea, And all good towns and lands They only saw with heavy eyes, And broke with heavy hands,"
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "Their gods were sadder than the sea, Gods of a wandering will,"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "And no help came at all."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "They bred like birds in English woods, They rooted like the rose, When Alfred came to Athelney To hide him from their bows"
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "There was not English armour left, Nor any English thing, When Alfred came to Athelney To be an English king."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "For earthquake swallowing earthquake Uprent the Wessex tree; The whirlpool of the pagan sway Had swirled his sires as sticks away When a flood smites the sea."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "And the great kings of Wessex Wearied and sank in gore, And even their ghosts in that great stress Grew greyer and greyer, less and less, With the lords that died in Lyonesse And the king that comes no more."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "And the God of the Golden Dragon Was dumb upon his throne, And the lord of the Golden Dragon Ran in the woods alone."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Returning as a wheel returns, Came ruin and the rain that burns,"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "In the island in the river In the end of all his age."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "In the island in the river He was broken to his knee: And he read, writ with an iron pen, That God had wearied of Wessex men And given their country, field and fen, To the devils of the sea."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "And he saw in a little picture, Tiny and far away, His mother sitting in Egbert's hall, And a book she showed him, very small, Where a sapphire Mary sat in stall With a golden Christ at play."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "It was wrought in the monk's slow manner, From silver and sanguine shell, Where the scenes are little and terrible, Keyholes of heaven and hell."
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "In the river island of Athelney, With the river running past, In colours of such simple creed All things sprang at him, sun and weed, Till the grass grew to be grass indeed And the tree was a tree at last."
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "Fearfully plain the flowers grew, Like the child's book to read, Or like a friend's face seen in a glass; He looked; and there Our Lady was, She stood and stroked the tall live grass As a man strokes his steed."
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "Her face was like an open word When brave men speak and choose, The very colours of her coat Were better than good news."
+    },
+    {
+      "id": "s12-7",
+      "sceneId": "s12",
+      "text": "She spoke not, nor turned not, Nor any sign she cast, Only she stood up straight and free, Between the flowers in Athelney, And the river running past."
+    },
+    {
+      "id": "s12-8",
+      "sceneId": "s12",
+      "text": "One dim ancestral jewel hung On his ruined armour grey, He rent and cast it at her feet: Where, after centuries, with slow feet, Men came from hall and school and street And found it where it lay."
+    },
+    {
+      "id": "s12-9",
+      "sceneId": "s12",
+      "text": "\"Mother of God,\" the wanderer said, \"I am but a common king, Nor will I ask what saints may ask, To see a secret thing."
+    },
+    {
+      "id": "s12-10",
+      "sceneId": "s12",
+      "text": "\"The gates of heaven are fearful gates Worse than the gates of hell; Not I would break the splendours barred Or seek to know the thing they guard, Which is too good to tell."
+    },
+    {
+      "id": "s12-11",
+      "sceneId": "s12",
+      "text": "\"But for this earth most pitiful, This little land I know, If that which is for ever is, Or if our hearts shall break with bliss, Seeing the stranger go?"
+    },
+    {
+      "id": "s12-12",
+      "sceneId": "s12",
+      "text": "\"When our last bow is broken, Queen, And our last javelin cast, Under some sad, green evening sky, Holding a ruined cross on high, Under warm westland grass to lie, Shall we come home at last?\""
+    },
+    {
+      "id": "s12-13",
+      "sceneId": "s12",
+      "text": "And a voice came human but high up, Like a cottage climbed among The clouds; or a serf of hut and croft That sits by his hovel fire as oft, But hears on his old bare roof aloft A belfry burst in song."
+    },
+    {
+      "id": "s12-14",
+      "sceneId": "s12",
+      "text": "\"The gates of heaven are lightly locked, We do not guard our gain, The heaviest hind may easily Come silently and suddenly Upon me in a lane."
+    },
+    {
+      "id": "s12-15",
+      "sceneId": "s12",
+      "text": "\"And any little maid that walks In good thoughts apart, May break the guard of the Three Kings And see the dear and dreadful things I hid within my heart."
+    },
+    {
+      "id": "s12-16",
+      "sceneId": "s12",
+      "text": "\"The meanest man in grey fields gone Behind the set of sun, Heareth between star and other star, Through the door of the darkness fallen ajar, The council, eldest of things that are, The talk of the Three in One."
+    },
+    {
+      "id": "s12-17",
+      "sceneId": "s12",
+      "text": "\"The gates of heaven are lightly locked, We do not guard our gold, Men may uproot where worlds begin, Or read the name of the nameless sin; But if he fail or if he win To no good man is told."
+    },
+    {
+      "id": "s12-18",
+      "sceneId": "s12",
+      "text": "\"The men of the East may spell the stars, And times and triumphs mark, But the men signed of the cross of Christ Go gaily in the dark."
+    },
+    {
+      "id": "s12-19",
+      "sceneId": "s12",
+      "text": "\"The men of the East may search the scrolls For sure fates and fame, But the men that drink the blood of God Go singing to their shame."
+    },
+    {
+      "id": "s12-20",
+      "sceneId": "s12",
+      "text": "\"The wise men know what wicked things Are written on the sky, They trim sad lamps, they touch sad strings, Hearing the heavy purple wings, Where the forgotten seraph kings Still plot how God shall die."
+    },
+    {
+      "id": "s12-21",
+      "sceneId": "s12",
+      "text": "\"The wise men know all evil things Under the twisted trees, Where the perverse in pleasure pine And men are weary of green wine And sick of crimson seas."
+    },
+    {
+      "id": "s12-22",
+      "sceneId": "s12",
+      "text": "\"But you and all the kind of Christ Are ignorant and brave, And you have wars you hardly win And souls you hardly save."
+    },
+    {
+      "id": "s12-23",
+      "sceneId": "s12",
+      "text": "\"I tell you naught for your comfort, Yea, naught for your desire, Save that the sky grows darker yet And the sea rises higher."
+    },
+    {
+      "id": "s12-24",
+      "sceneId": "s12",
+      "text": "\"Night shall be thrice night over you, And heaven an iron cope. Do you have joy without a cause, Yea, faith without a hope?\""
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Like a high tide from sea."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "He only heard the heathen men, Whose eyes are blue and bleak, Singing about some cruel thing"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "In daylight on a deck."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "When the land is left behind."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Book Ii. the Gathering of the Chiefs"
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "Up across windy wastes and up Went Alfred over the shaws, Shaken of the joy of giants, The joy without a cause."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "In the slopes away to the western bays, Where blows not ever a tree, He washed his soul in the west wind And his body in the sea."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "And he set to rhyme his ale-measures, And he sang aloud his laws, Because of the joy of the giants, The joy without a cause."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "The King went gathering Wessex men, As grain out of the chaff The few that were alive to die,"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "An everlasting laugh."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "And Mark, the man from Italy, And Colan of the Sacred Tree, From the old tribe on Usk."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "The rook croaked homeward heavily, The west was clear and warm, The smoke of evening food and ease Rose like a blue tree in the trees When he came to Eldred's farm."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "But Eldred's farm was fallen awry, Like an old cripple's bones, And Eldred's tools were red with rust, And on his well was a green crust, And purple thistles upward thrust, Between the kitchen stones."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "But smoke of some good feasting Went upwards evermore, And Eldred's doors stood wide apart For loitering foot or labouring cart, And Eldred's great and foolish heart Stood open like his door."
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "A mighty man was Eldred, A bulk for casks to fill, His face a dreaming furnace, His body a walking hill."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "In the old wars of Wessex His sword had sunken deep, But all his friends, he sighed and said, Were broken about Ethelred; And between the deep drink and the dead He had fallen upon sleep."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "\"Come not to me, King Alfred, Save always for the ale: Why should my harmless hinds be slain Because the chiefs cry once again, As in all fights, that we shall gain, And in all fights we fail?"
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "\"Your scalds still thunder and prophesy That crown that never comes; Friend, I will watch the certain things, Swine, and slow moons like silver rings, And the ripening of the plums.\""
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "And Alfred answered, drinking, And gravely, without blame, \"Nor bear I boast of scald or king, The thing I bear is a lesser thing, But comes in a better name."
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "\"Out of the mouth of the Mother of God, More than the doors of doom, I call the muster of Wessex men From grassy hamlet or ditch or den, To break and be broken, God knows when, But I have seen for whom."
+    },
+    {
+      "id": "s17-10",
+      "sceneId": "s17",
+      "text": "\"Out of the mouth of the Mother of God Like a little word come I; For I go gathering Christian men From sunken paving and ford and fen, To die in a battle, God knows when, By God, but I know why."
+    },
+    {
+      "id": "s17-11",
+      "sceneId": "s17",
+      "text": "\"And this is the word of Mary, The word of the world's desire 'No more of comfort shall ye get, Save that the sky grows darker yet And the sea rises higher.'\""
+    },
+    {
+      "id": "s17-12",
+      "sceneId": "s17",
+      "text": "Then silence sank. And slowly Arose the sea-land lord, Like some vast beast for mystery, He filled the room and porch and sky, And from a cobwebbed nail on high Unhooked his heavy sword."
+    },
+    {
+      "id": "s17-13",
+      "sceneId": "s17",
+      "text": "Up on the shrill sea-downs and up Went Alfred all alone, Turning but once e'er the door was shut, Shouting to Eldred over his butt, That he bring all spears to the woodman's hut Hewn under Egbert's Stone."
+    },
+    {
+      "id": "s17-14",
+      "sceneId": "s17",
+      "text": "And he turned his back and broke the fern, And fought the moths of dusk, And went on his way for other friends Friends fallen of all the wide world's ends, From Rome that wrath and pardon sends And the grey tribes on Usk."
+    },
+    {
+      "id": "s17-15",
+      "sceneId": "s17",
+      "text": "He saw gigantic tracks of death And many a shape of doom, Good steadings to grey ashes gone And a monk's house white like a skeleton In the green crypt of the combe."
+    },
+    {
+      "id": "s17-16",
+      "sceneId": "s17",
+      "text": "And in many a Roman villa Earth and her ivies eat, Saw coloured pavements sink and fade In flowers, and the windy colonnade Like the spectre of a street."
+    },
+    {
+      "id": "s17-17",
+      "sceneId": "s17",
+      "text": "But the cold stars clustered Among the cold pines Ere he was half on his pilgrimage Over the western lines."
+    },
+    {
+      "id": "s17-18",
+      "sceneId": "s17",
+      "text": "And the white dawn widened Ere he came to the last pine, Where Mark, the man from Italy, Still made the Christian sign."
+    },
+    {
+      "id": "s17-19",
+      "sceneId": "s17",
+      "text": "The long farm lay on the large hill-side, Flat like a painted plan, And by the side the low white house, Where dwelt the southland man."
+    },
+    {
+      "id": "s17-20",
+      "sceneId": "s17",
+      "text": "A bronzed man, with a bird's bright eye, And a strong bird's beak and brow, His skin was brown like buried gold, And of certain of his sires was told That they came in the shining ship of old, With Caesar in the prow."
+    },
+    {
+      "id": "s17-21",
+      "sceneId": "s17",
+      "text": "His fruit trees stood like soldiers Drilled in a straight line, His strange, stiff olives did not fail, And all the kings of the earth drank ale, But he drank wine."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "And his soul remembered Rome."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "Then Alfred of the lonely spear Lifted his lion head; And fronted with the Italian's eye, Asking him of his whence and why, King Alfred stood and said:"
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "\"I am that oft-defeated King Whose failure fills the land, Who fled before the Danes of old,"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "This--that the sky grows darker yet And the sea rises higher.\""
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "Long looked the Roman on the land; The trees as golden crowns Blazed, drenched with dawn and dew-empearled While faintlier coloured, freshlier curled, The clouds from underneath the world Stood up over the downs."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "\"These vines be ropes that drag me hard,\" He said. \"I go not far; Where would you meet? For you must hold Half Wiltshire and the White Horse wold, And the Thames bank to Owsenfold, If Wessex goes to war."
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "\"Guthrum sits strong on either bank And you must press his lines Inwards, and eastward drive him down; I doubt if you shall take the crown Till you have taken London town. For me, I have the vines.\""
+    },
+    {
+      "id": "s19-4",
+      "sceneId": "s19",
+      "text": "\"If each man on the Judgment Day Meet God on a plain alone,\" Said Alfred, \"I will speak for you As for myself, and call it true That you brought all fighting folk you knew Lined under Egbert's Stone."
+    },
+    {
+      "id": "s19-5",
+      "sceneId": "s19",
+      "text": "\"Though I be in the dust ere then, I know where you will be.\" And shouldering suddenly his spear He faded like some elfin fear, Where the tall pines ran up, tier on tier Tree overtoppling tree."
+    },
+    {
+      "id": "s19-6",
+      "sceneId": "s19",
+      "text": "He shouldered his spear at morning And laughed to lay it on, But he leaned on his spear as on a staff, With might and little mood to laugh, Or ever he sighted chick or calf Of Colan of Caerleon."
+    },
+    {
+      "id": "s19-7",
+      "sceneId": "s19",
+      "text": "For the man dwelt in a lost land Of boulders and broken men, In a great grey cave far off to the south Where a thick green forest stopped the mouth, Giving darkness in his den."
+    },
+    {
+      "id": "s19-8",
+      "sceneId": "s19",
+      "text": "And the man was come like a shadow, From the shadow of Druid trees, Where Usk, with mighty murmurings, Past Caerleon of the fallen kings, Goes out to ghostly seas."
+    },
+    {
+      "id": "s19-9",
+      "sceneId": "s19",
+      "text": "Last of a race in ruin-- He spoke the speech of the Gaels; His kin were in holy Ireland, Or up in the crags of Wales."
+    },
+    {
+      "id": "s19-10",
+      "sceneId": "s19",
+      "text": "But his soul stood with his mother's folk, That were of the rain-wrapped isle, Where Patrick and Brandan westerly Looked out at last on a landless sea And the sun's last smile."
+    },
+    {
+      "id": "s19-11",
+      "sceneId": "s19",
+      "text": "His harp was carved and cunning, As the Celtic craftsman makes, Graven all over with twisting shapes Like many headless snakes."
+    },
+    {
+      "id": "s19-12",
+      "sceneId": "s19",
+      "text": "His harp was carved and cunning, His sword prompt and sharp, And he was gay when he held the sword, Sad when he held the harp."
+    },
+    {
+      "id": "s19-13",
+      "sceneId": "s19",
+      "text": "For the great Gaels of Ireland Are the men that God made mad, For all their wars are merry, And all their songs are sad."
+    },
+    {
+      "id": "s19-14",
+      "sceneId": "s19",
+      "text": "He kept the Roman order, He made the Christian sign; But his eyes grew often blind and bright, And the sea that rose in the rocks at night Rose to his head like wine."
+    },
+    {
+      "id": "s19-15",
+      "sceneId": "s19",
+      "text": "He made the sign of the cross of God, He knew the Roman prayer, But he had unreason in his heart Because of the gods that were."
+    },
+    {
+      "id": "s19-16",
+      "sceneId": "s19",
+      "text": "Even they that walked on the high cliffs, High as the clouds were then, Gods of unbearable beauty, That broke the hearts of men."
+    },
+    {
+      "id": "s19-17",
+      "sceneId": "s19",
+      "text": "And whether in seat or saddle, Whether with frown or smile, Whether at feast or fight was he, He heard the noise of a nameless sea On an undiscovered isle."
+    },
+    {
+      "id": "s19-18",
+      "sceneId": "s19",
+      "text": "Lifting the great green ivy And the great spear lowering, One said, \"I am Alfred of Wessex, And I am a conquered king.\""
+    },
+    {
+      "id": "s19-19",
+      "sceneId": "s19",
+      "text": "And the man of the cave made answer, And his eyes were stars of scorn, \"And better kings were conquered Or ever your sires were born."
+    },
+    {
+      "id": "s19-20",
+      "sceneId": "s19",
+      "text": "\"What goddess was your mother,"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Went slowly to his cave."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "Book Iii. the Harp of Alfred"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "Then laughed; and watched the finches flash, The sullen flies in swarm, And went unarmed over the hills, With the harp upon his arm,"
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "Until he came to the White Horse Vale And saw across the plains, In the twilight high and far and fell, Like the fiery terraces of hell, The camp fires of the Danes--"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "Fires out on Ely Fen."
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "But when they came to the red camp fire"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "They stood all in a row."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "For golden in the firelight, With a smile carved on his lips, And a beard curled right cunningly, Was Guthrum of the Northern Sea, The emperor of the ships--"
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "That sighed like all desire."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "And out on Ely, fire."
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Pigmy and far away."
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "On the wild west march of yore."
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "In the purple walls of Wales."
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "Till Harold laughed and snatched the harp, The kinsman of the King, A big youth, beardless like a child, Whom the new wine of war sent wild,"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "A hare on the mountain height.\""
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "As he sang of Balder beautiful,"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "And love is not secure.\""
+    },
+    {
+      "id": "s33-1",
+      "sceneId": "s33",
+      "text": "And all that sat by the fire were sad, Save Ogier, who was stern, And his eyes hardened, even to stones, As he took the harp in turn;"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "\"The wrath of the gods behind the gods Who would rend all gods and men,"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "\"Your lord sits high in the saddle, A broken-hearted king,"
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "And the Danes laughed loud and long."
+    },
+    {
+      "id": "s36-1",
+      "sceneId": "s36",
+      "text": "Book Iv. the Woman in the Forest"
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "Shouldering his harp, went home."
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "Over Guthrum in his tent."
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "The pale road split in twain."
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "And both were a surprise."
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "The shield-wall of the Danes."
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Knowing neither more nor less."
+    },
+    {
+      "id": "s42-1",
+      "sceneId": "s42",
+      "text": "As he went down to the river-hut"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "In the red heavens of hell."
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "Held heavily his farm."
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "And strong and humbled eyes."
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "So did he pity her."
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "A little door in heaven.\""
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "Leaving a scarlet scar."
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "Of Colan of the Usk."
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "Blowing a ram's horn."
+    },
+    {
+      "id": "s50-1",
+      "sceneId": "s50",
+      "text": "As mocking such rude revelry, The dim clan of the Gael Came like a bad king's burial-end, With dismal robes that drop and rend And demon pipes that wail--"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "Hewn in an age of stone."
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "Lately baptized, a Dane."
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "And the beasts of the earth and the birds looked down, In a wild solemnity, On a stranger sight than a sylph or elf,"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "And the miser is banged with all his brass,"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "But the firm feet of humility"
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "Is risen against the world.\""
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "They fell upon the Dane."
+    },
+    {
+      "id": "s57-1",
+      "sceneId": "s57",
+      "text": "Book V. Ethandune: the First Stroke"
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "He drove his foemen forth."
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "He saw the southern sea."
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "There came to him a sign."
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "Long lines for pike and shield."
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "Ere Alfred came in sight."
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "For the things that never were."
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "And all poor men are free.\""
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "Have never wished me harm.\""
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "And the trees talk together"
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "And I shall die in Rome.\""
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "Scrolled and aflame and far."
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "Of sun and steel and song."
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "In the last shade of the wood."
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "In the thornland of Ethandune."
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "In the old way of the Danes."
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "The kinsman of the King."
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "The banners of the Usk."
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "Before the fight begins.\""
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "But swifter sprang the Gael."
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "And blood began to run."
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "Till he throws his sword away.\""
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "With the throwing of the sword."
+    },
+    {
+      "id": "s79-1",
+      "sceneId": "s79",
+      "text": "Book Vi. Ethandune: the Slaying of the Chiefs"
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "On Colan and the sword."
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "As a tall ship breaks the sea."
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "So fast the crests went down."
+    },
+    {
+      "id": "s82-1",
+      "sceneId": "s82",
+      "text": "As the tall white devil of the Plague Moves out of Asian skies, With his foot on a waste of cities And his head in a cloud of flies;"
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "Spoke some stiff piece of childish prayer, Dull as the distant chimes, That thanked our God for good eating"
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "Was never made by man."
+    },
+    {
+      "id": "s84-1",
+      "sceneId": "s84",
+      "text": "Seven spears, and the seventh Was wrought as the faerie blades, And given to Elf the minstrel"
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "Being sunken for a sign."
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "Stood up iron and alone."
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "Shocked, in his mid-career."
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "Gladium et bellum.\""
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "The thunder of the psalm."
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "And broke him to his knee."
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "A statue on a roof."
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "Like a tortoise in his dome."
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "Sent suddenly and well."
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "Christ's knights were whirled away."
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "Where he smote great strokes and fell."
+    },
+    {
+      "id": "s95-1",
+      "sceneId": "s95",
+      "text": "The thorn-woods over Ethandune"
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "Came not to Alfred's ears."
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "The last cry of the Gael."
+    },
+    {
+      "id": "s97-1",
+      "sceneId": "s97",
+      "text": "Book Vii. Ethandune: the Last Charge"
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "Patiently push the stone."
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "That sunders sand and surf."
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "With roarings, from the land."
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "And he piled them up again."
+    },
+    {
+      "id": "s101-1",
+      "sceneId": "s101",
+      "text": "And crimson kings on battle-towers, And saints on Gothic spires, And hermits on their peaks of snow, And heroes on their pyres,"
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "Sings over White Horse Down."
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "That is more than mastery."
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "With the blowing of a horn.\""
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "At the cloven ways for night."
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "Far up the road, alone."
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "Death is a better ale to drink,"
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "And not a rag care we.\""
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "Charge all and go to God.\""
+    },
+    {
+      "id": "s109-1",
+      "sceneId": "s109",
+      "text": "Wild stared the Danes at the double ways Where they loitered, all at large, As that dark line for the last time Doubled the knee to charge--"
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "When the broken shield hung on the breast,"
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "And the lilies of Nazareth."
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "But she was a queen of men."
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "But one was in her hand."
+    },
+    {
+      "id": "s113-1",
+      "sceneId": "s113",
+      "text": "Then the last charge went blindly,"
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "Drove at him with a spear."
+    },
+    {
+      "id": "s115-0",
+      "sceneId": "s115",
+      "text": "As Alfred leapt aside."
+    },
+    {
+      "id": "s115-1",
+      "sceneId": "s115",
+      "text": "Short time had shaggy Ogier To pull his lance in line-- He knew King Alfred's axe on high,"
+    },
+    {
+      "id": "s116-0",
+      "sceneId": "s116",
+      "text": "And blew the battle sign."
+    },
+    {
+      "id": "s117-0",
+      "sceneId": "s117",
+      "text": "Neigh horribly and long."
+    },
+    {
+      "id": "s118-0",
+      "sceneId": "s118",
+      "text": "\"The Mother of God goes over them,"
+    },
+    {
+      "id": "s119-0",
+      "sceneId": "s119",
+      "text": "With the blowing of a horn.\""
+    },
+    {
+      "id": "s120-0",
+      "sceneId": "s120",
+      "text": "Before the face of the King."
+    },
+    {
+      "id": "s121-0",
+      "sceneId": "s121",
+      "text": "Dry-throated, drinking death."
+    },
+    {
+      "id": "s122-0",
+      "sceneId": "s122",
+      "text": "The tower in Guelderland."
+    },
+    {
+      "id": "s123-0",
+      "sceneId": "s123",
+      "text": "Round Paris on the Isle."
+    },
+    {
+      "id": "s124-0",
+      "sceneId": "s124",
+      "text": "And bright with blood for woad."
+    },
+    {
+      "id": "s125-0",
+      "sceneId": "s125",
+      "text": "Broken in his left hand."
+    },
+    {
+      "id": "s126-0",
+      "sceneId": "s126",
+      "text": "When the dead man went to war."
+    },
+    {
+      "id": "s127-0",
+      "sceneId": "s127",
+      "text": "And all the horns replied."
+    },
+    {
+      "id": "s128-0",
+      "sceneId": "s128",
+      "text": "For the first time since morn."
+    },
+    {
+      "id": "s129-0",
+      "sceneId": "s129",
+      "text": "What is more wise than he."
+    },
+    {
+      "id": "s130-0",
+      "sceneId": "s130",
+      "text": "Upon this bridle rein."
+    },
+    {
+      "id": "s130-1",
+      "sceneId": "s130",
+      "text": "King Guthrum was a great lord, And higher than his gods-- He put the popes to laughter,"
+    },
+    {
+      "id": "s131-0",
+      "sceneId": "s131",
+      "text": "To blaze a thousand years."
+    },
+    {
+      "id": "s132-0",
+      "sceneId": "s132",
+      "text": "In the parting of the ways."
+    },
+    {
+      "id": "s132-1",
+      "sceneId": "s132",
+      "text": "Book Viii. the Scouring of the Horse"
+    },
+    {
+      "id": "s132-2",
+      "sceneId": "s132",
+      "text": "In the years of the peace of Wessex, When the good King sat at home; Years following on that bloody boon When she that stands above the moon Stood above death at Ethandune And saw his kingdom come--"
+    },
+    {
+      "id": "s133-0",
+      "sceneId": "s133",
+      "text": "A greater thing than he.)"
+    },
+    {
+      "id": "s134-0",
+      "sceneId": "s134",
+      "text": "To the sons of the northern star."
+    },
+    {
+      "id": "s134-1",
+      "sceneId": "s134",
+      "text": "In the days of the rest of Alfred, When all these things were done, And Wessex lay in a patch of peace,"
+    },
+    {
+      "id": "s135-0",
+      "sceneId": "s135",
+      "text": "Among apples green and red,"
+    },
+    {
+      "id": "s136-0",
+      "sceneId": "s136",
+      "text": "And the sunshine on his head."
+    },
+    {
+      "id": "s137-0",
+      "sceneId": "s137",
+      "text": "Cries through a closed door."
+    },
+    {
+      "id": "s137-1",
+      "sceneId": "s137",
+      "text": "And men went forth from Alfred's face, Even great gift-bearing lords, Not to Rome only, but more bold, Out to the high hot courts of old, Of negroes clad in cloth of gold, Silence, and crooked swords,"
+    },
+    {
+      "id": "s138-0",
+      "sceneId": "s138",
+      "text": "In the mountains of Strathclyde.\""
+    },
+    {
+      "id": "s139-0",
+      "sceneId": "s139",
+      "text": "\"An island like a little book Full of a hundred tales,"
+    },
+    {
+      "id": "s140-0",
+      "sceneId": "s140",
+      "text": "To rule so small a thing.\""
+    },
+    {
+      "id": "s141-0",
+      "sceneId": "s141",
+      "text": "As they strip it to this day."
+    },
+    {
+      "id": "s142-0",
+      "sceneId": "s142",
+      "text": "But the young earl said: \"Ill the saints,"
+    },
+    {
+      "id": "s143-0",
+      "sceneId": "s143",
+      "text": "And grass in the streets of God.\""
+    },
+    {
+      "id": "s144-0",
+      "sceneId": "s144",
+      "text": "For Christ's sake and the crown's."
+    },
+    {
+      "id": "s145-0",
+      "sceneId": "s145",
+      "text": "Burns over Glastonbury."
+    },
+    {
+      "id": "s146-0",
+      "sceneId": "s146",
+      "text": "In the corners of the sky."
+    },
+    {
+      "id": "s146-1",
+      "sceneId": "s146",
+      "text": "But dark and thick as thronged the host,"
+    },
+    {
+      "id": "s147-0",
+      "sceneId": "s147",
+      "text": "\"Though I give this land to Our Lady, That helped me in Athelney,"
+    },
+    {
+      "id": "s148-0",
+      "sceneId": "s148",
+      "text": "\"By terror and the cruel tales Of curse in bone and kin,"
+    },
+    {
+      "id": "s149-0",
+      "sceneId": "s149",
+      "text": "And sad St. Edmund's crown, Where the pools of Essex pale and gleam Out beyond London Town--"
+    },
+    {
+      "id": "s150-0",
+      "sceneId": "s150",
+      "text": "Is close to the cold stars."
+    },
+    {
+      "id": "s151-0",
+      "sceneId": "s151",
+      "text": "And the tall grey horse went by."
+    },
+    {
+      "id": "s152-0",
+      "sceneId": "s152",
+      "text": "Unwrought the work of man."
+    },
+    {
+      "id": "s153-0",
+      "sceneId": "s153",
+      "text": "Unwound the toils of men."
+    },
+    {
+      "id": "s153-1",
+      "sceneId": "s153",
+      "text": "And clover and silent thistle throve, And buds burst silently, With little care for the Thames Valley Or what things there might be--"
+    },
+    {
+      "id": "s154-0",
+      "sceneId": "s154",
+      "text": "And the King took London Town."
+    }
+  ]
+}

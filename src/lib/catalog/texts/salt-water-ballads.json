@@ -1,0 +1,3453 @@
+{
+  "id": "salt-water-ballads",
+  "title": "Salt-Water Ballads",
+  "author": "John Masefield",
+  "year": "1902",
+  "note": "Project Gutenberg 52761",
+  "minutes": 79,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Dallas · Atlanta · San Francisco",
+      "place": "Dallas · Atlanta · San Francisco",
+      "reentry": "Macmillan & CO., Limited",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Melbourne",
+      "place": "Melbourne",
+      "reentry": "The Macmillan Co. of Canada, Ltd.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "New York",
+      "place": "New York",
+      "reentry": "THE Macmillan Company",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "1915",
+      "place": "1915",
+      "reentry": "Set up and electrotyped. Published September, 1913 Reprinted April, 1915.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Years ago. J. M",
+      "place": "Years ago. J. M",
+      "reentry": "*9th June 1913*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Page",
+      "place": "Page",
+      "reentry": "A Consecration",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "‘He’s deader ’n nails,’ the fo’c’s’le said, ‘’n’",
+      "place": "‘He’s deader ’n nails,’ the fo’c’s’le said, ‘’n’",
+      "reentry": "gone to his long sleep’ 11",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Christmas Eve At Sea",
+      "place": "Christmas Eve At Sea",
+      "reentry": "A wind is rustling ‘south and soft’ 64",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "The Dead Knight",
+      "place": "The Dead Knight",
+      "reentry": "The cleanly rush of the mountain air 89",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "On Malvern Hill",
+      "place": "On Malvern Hill",
+      "reentry": "A wind is brushing down the clover 92",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "‘Rest Her Soul, She’S Dead!’",
+      "place": "‘Rest Her Soul, She’S Dead!’",
+      "reentry": "She has done with the sea’s sorrow and the world’s way 97",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "In Memory of A. P. R",
+      "place": "In Memory of A. P. R",
+      "reentry": "Once in the windy wintry weather 101",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "The portly presence of potentates goodly in girth;--",
+      "place": "The portly presence of potentates goodly in girth;--",
+      "reentry": "*Mine be the dirt and the dross, the dust and scum of the earth!*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Mine be a handful of ashes, a mouthful of mould",
+      "place": "Mine be a handful of ashes, a mouthful of mould",
+      "reentry": "*Of the maimed, of the halt and the blind in the rain and the cold--*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Heave now ’n’ start her, heave ’n’ pawl!’",
+      "place": "Heave now ’n’ start her, heave ’n’ pawl!’",
+      "reentry": "Hear the yarn of a sailor, An old yarn learned at sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "It’s time we tackled the wheel a spell.’",
+      "place": "It’s time we tackled the wheel a spell.’",
+      "reentry": "Hear the yarn of a sailor, An old yarn learned at sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "With her royals set and a bone in her mouth",
+      "place": "With her royals set and a bone in her mouth",
+      "reentry": "Hear the yarn of a sailor, An old yarn learned at sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "But one night off the River Plate",
+      "place": "But one night off the River Plate",
+      "reentry": "Hear the yarn of a sailor, An old yarn learned at sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Overboard went her mizzen-mast",
+      "place": "Overboard went her mizzen-mast",
+      "reentry": "Hear the yarn of a sailor, An old yarn learned at sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "She was cluttered up in a blushing mess",
+      "place": "She was cluttered up in a blushing mess",
+      "reentry": "Hear the yarn of a sailor, An old yarn learned at sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "Hear the yarn of a sailor,",
+      "place": "Hear the yarn of a sailor,",
+      "reentry": "An old yarn learned at sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "‘We rigged up a tackle, a purchase, a sort of a shift,",
+      "place": "‘We rigged up a tackle, a purchase, a sort of a shift,",
+      "reentry": "To hoist the boats off o’ the deck-house and get them adrift, When her stern gives a sickenin’ settle, her bows give a lift,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "’N’ moans about Love like a dern old hen wi’ the pip--",
+      "place": "’N’ moans about Love like a dern old hen wi’ the pip--",
+      "reentry": "(I sets no store upon stooards--they ain’t no use on a ship).",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "’N’ quiet he lays ’n’ quiet I leaves him lie,",
+      "place": "’N’ quiet he lays ’n’ quiet I leaves him lie,",
+      "reentry": "’N’ I was alone with his corp, ’n’ the cold green sea and the sky.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Was the voice of a mate as was sayin’ to one of the crew,",
+      "place": "Was the voice of a mate as was sayin’ to one of the crew,",
+      "reentry": "“Easy, my son, wi’ the brandy, be shot if he ain’t comin’-to!”’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "Burial Party",
+      "place": "Burial Party",
+      "reentry": "‘He’s deader ’n nails,’ the fo’c’s’le said, ‘’n’ gone to his long sleep’; ‘’N’ about his corp,’ said Tom to Dan, ‘d’ye think his corp’ll keep Till the day’s done, ’n’ the work’s through, ’n’ the ebb’s upon",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "The neap?’",
+      "place": "The neap?’",
+      "reentry": "‘He’s deader ’n nails,’ said Dan to Tom, ‘’n’ I wish his sperrit j’y; He spat straight ’n’ he steered true, but listen to me, say I, Take ’n’ cover ’n’ bury him now, ’n’ I’ll take ’n’ tell you why.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "With a blue ’n’ beastly Will o’ the Wisp a-burnin’ over him,",
+      "place": "With a blue ’n’ beastly Will o’ the Wisp a-burnin’ over him,",
+      "reentry": "With a herring, maybe, a-scoffin’ a toe or a shark a-chewin’ a limb.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Right to be),",
+      "place": "Right to be),",
+      "reentry": "Till the sky’s grey ’n’ the dawn’s clear, ’n’ then the sperrit’s free.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "’N’ if we bury him durin’ the day, his soul can take ’n’ go;",
+      "place": "’N’ if we bury him durin’ the day, his soul can take ’n’ go;",
+      "reentry": "So we’ll dump his corp when the bell strikes ’n’ we can get below.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "Bill",
+      "place": "Bill",
+      "reentry": "He lay dead on the cluttered deck and stared at the cold skies, With never a friend to mourn for him nor a hand to close his eyes: ‘Bill, he’s dead,’ was all they said; ‘he’s dead, ’n’ there he lies.’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "His pore teeth are chattering, ’n’ what’s a man to do?--",
+      "place": "His pore teeth are chattering, ’n’ what’s a man to do?--",
+      "reentry": "It’s cruel when a fo’c’s’le gets the fever!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "Fever-Chills",
+      "place": "Fever-Chills",
+      "reentry": "He tottered out of the alleyway with cheeks the colour of paste, And shivered a spell and mopped his brow with a clout of cotton waste: ‘I’ve a lick of fever-chills,’ he said, ‘’n’ my inside it’s green, But I’d be as right as rain,’ he said",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "But there ain’t no quinine for us poor sailor-men",
+      "place": "But there ain’t no quinine for us poor sailor-men",
+      "reentry": "‘But them there passengers,’ he said, ‘if they gets fever-chills, There’s brimmin’ buckets o’ quinine for them, ’n’ bulgin’ crates",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "O’ pills,",
+      "place": "O’ pills,",
+      "reentry": "’N’ a doctor with Latin ’n’ drugs ’n’ all--enough to sink a town, ’N’ they lies quiet in their blushin’ bunks ’n’ mops their gruel down,-- But their ain’t none o’ them fine ways for us poor sailor-men.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "A straight tip:",
+      "place": "A straight tip:",
+      "reentry": "Come none o’ your Cape Horn fever lays aboard o’ this yer ship. On wi’ your rags o’ duds, my son, ’n’ aft, ’n’ down the hole: The best cure known for fever-chills is shovelling bloody coal.” It’s *hard*, my son, that’s what it is, for us po",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "I met a derelict donkeyman who led me a merry dance,",
+      "place": "I met a derelict donkeyman who led me a merry dance,",
+      "reentry": "Till he landed me ’n’ bleached me fair in the bar of a rum-saloon, ’N’ there he spun me a juice of a yarn to this-yer brand of tune.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "And work by night and work by day enough to strike him dead",
+      "place": "And work by night and work by day enough to strike him dead",
+      "reentry": "‘But that there’s by the way,’ says he; ‘the yarn I’m goin’ to spin Is about myself ’n’ the life I led in the last ship I was in,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "The “Esmeralda,” casual tramp, from Hull towards the Hook,",
+      "place": "The “Esmeralda,” casual tramp, from Hull towards the Hook,",
+      "reentry": "Wi’ one o’ the brand o’ Cain for mate ’n’ a human mistake for cook.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "’N’ then come white Atlantic fog as chilled us to the bones",
+      "place": "’N’ then come white Atlantic fog as chilled us to the bones",
+      "reentry": "‘We slowed her down and started the horn and watch and watch about, We froze the marrow in all our bones a-keepin’ a good look-out, ’N’ the ninth night out, in the middle watch, I woke from a pleasant",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "Dream,",
+      "place": "Dream,",
+      "reentry": "With the smash of a steamer ramming our plates a point abaft the beam.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "Reversin’",
+      "place": "Reversin’",
+      "reentry": "‘She was leavin’ us, mate, to sink or swim, ’n’ the words we took",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "’n’ said",
+      "place": "’n’ said",
+      "reentry": "They turned the port-light grassy-green ’n’ the starboard rosy-red. We give her a hot perpetual taste of the singeing curse of Cain, As we heard her back ’n’ clear the wreck ’n’ off to her course again.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "Yer chin,",
+      "place": "Yer chin,",
+      "reentry": "Or I’ll smash yer skulls, so help me James, ’n’ let some wisdom in. Ye dodderin’ scum o’ the slums,” he says, “are ye drunk or blazin’ daft? If ye wish to save yer sickly hides, ye’d best contrive a raft.”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "“You’re aboard the R.M.S. ‘Marie’ in the after Glory-Hole,",
+      "place": "“You’re aboard the R.M.S. ‘Marie’ in the after Glory-Hole,",
+      "reentry": "’N’ you’ve had a shave, if you wish to know, from the port o’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "Kingdom Come",
+      "place": "Kingdom Come",
+      "reentry": "Drink this,” he says, ’n’ I takes ’n’ drinks, ’n’ s’elp me, it was rum!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "’N’ D.B.S.’d to Mersey Docks (’n’ a joyful trip we made),",
+      "place": "’N’ D.B.S.’d to Mersey Docks (’n’ a joyful trip we made),",
+      "reentry": "’N’ there the skipper were given a purse by a grateful Board of Trade.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "Rocks ’n’ fogs ’n’ shatterin’ seas ’n’ breakers right ahead,",
+      "place": "Rocks ’n’ fogs ’n’ shatterin’ seas ’n’ breakers right ahead,",
+      "reentry": "’N’ work o’ nights ’n’ work o’ days enough to strike you dead.’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "For he painted the alongshore blue,--",
+      "place": "For he painted the alongshore blue,--",
+      "reentry": "It was rum for Poll, and rum for Nan, and gin for Jolly Jack.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "He had to pinch a little straw, he had to beg a sack",
+      "place": "He had to pinch a little straw, he had to beg a sack",
+      "reentry": "To sleep on, when his watch was through,-- So he did.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "‘But simply the sperrits of mariners livin’ again",
+      "place": "‘But simply the sperrits of mariners livin’ again",
+      "reentry": "‘Them birds goin’ fishin’ is nothin’ but souls o’ the drowned,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "An’ merry’s the life they are living. They settle and dip,",
+      "place": "An’ merry’s the life they are living. They settle and dip,",
+      "reentry": "They fishes, they never stands watches, they waggle their wings;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "A haughty old copper-bound albatross dipping for fish",
+      "place": "A haughty old copper-bound albatross dipping for fish",
+      "reentry": "And coming the proud over all o’ the birds o’ the sea.’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "Harbour-Bar",
+      "place": "Harbour-Bar",
+      "reentry": "All in the feathered palm-tree tops the bright green parrots screech, The white line of the running surf goes booming down the beach, But I shall never see them, though the land lies close aboard, I’ve shaped the last long silent tack as ta",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "Give me the Scripters, Jakey, ’n’ my pipe atween my lips,",
+      "place": "Give me the Scripters, Jakey, ’n’ my pipe atween my lips,",
+      "reentry": "I’m bound for somewhere south and far beyond the track of ships; I’ve run my rags of colours up and clinched them to the stay,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "And God the pilot’s come aboard to bring me up the bay",
+      "place": "And God the pilot’s come aboard to bring me up the bay",
+      "reentry": "You’ll mainsail-haul my bits o’ things when Christ has took my soul, ’N’ you’ll lay me quiet somewhere at the landward end the Mole, Where I shall hear the steamers’ sterns a-squattering from the heave, And the topsail blocks a-piping when ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "Give me a sup of lime-juice; Lord, I’m drifting in to port,",
+      "place": "Give me a sup of lime-juice; Lord, I’m drifting in to port,",
+      "reentry": "The landfall lies to windward and the wind comes light and short,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "And I’m for signing off and out to take my watch below,",
+      "place": "And I’m for signing off and out to take my watch below,",
+      "reentry": "And--prop a fellow, Jakey--Lord, it’s time for me to go!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "The Turn of the Tide",
+      "place": "The Turn of the Tide",
+      "reentry": "An’ Bill can have my sea-boots, Nigger Jim can have my knife,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "You can divvy up the dungarees an’ bed,",
+      "place": "You can divvy up the dungarees an’ bed,",
+      "reentry": "An’ the ship can have my blessing, an’ the Lord can have my life,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "An’ sails an’ fish my body when I’m dead",
+      "place": "An’ sails an’ fish my body when I’m dead",
+      "reentry": "An’ dreaming down below there in the tangled greens an’ blues,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "Where the sunlight shudders golden round about,",
+      "place": "Where the sunlight shudders golden round about,",
+      "reentry": "I shall hear the ships complainin’ an’ the cursin’ of the crews,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "For my soul will follow seawards like a gull",
+      "place": "For my soul will follow seawards like a gull",
+      "reentry": "I shall hear the blocks a-grunting in the bumpkins over-side,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "An’ the swirl and splash of porpoises at play",
+      "place": "An’ the swirl and splash of porpoises at play",
+      "reentry": "An’ Bill can have my sea-boots, Nigger Jim can have my knife,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "You can divvy up the whack I haven’t scofft,",
+      "place": "You can divvy up the whack I haven’t scofft,",
+      "reentry": "An’ the ship can have my blessing and the Lord can have my life, For it’s time I quit the deck and went aloft.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "The watch was up on the topsail-yard a-making fast the sail,",
+      "place": "The watch was up on the topsail-yard a-making fast the sail,",
+      "reentry": "’N’ Joe was swiggin’ his gasket taut, ’n’ I felt the stirrup *give*, ’N’ he dropped sheer from the tops’l-yard ’n’ barely cleared the rail,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "That no boat wouldn’t live",
+      "place": "That no boat wouldn’t live",
+      "reentry": "I seed him rise in the white o’ the wake, I seed him lift a hand (’N’ him in his oilskin suit ’n’ all), I heard him lift a cry; ’N’ there was his place on the yard ’n’ all, ’n’ the stirrup’s",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "So we left him there to die",
+      "place": "So we left him there to die",
+      "reentry": "He couldn’t have kept afloat for long an’ him lashed up ’n’ all, ’N’ we couldn’t see him for long, for the sea was blurred with",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "’N’ a empty bunk ’n’ a pannikin as wasn’t wanted",
+      "place": "’N’ a empty bunk ’n’ a pannikin as wasn’t wanted",
+      "reentry": "When the watch went below.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "Well, so-long, Billy, ’n’ a spankin’ heavy pay-day to you!",
+      "place": "Well, so-long, Billy, ’n’ a spankin’ heavy pay-day to you!",
+      "reentry": "So-long, my fancy man!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "A Night At Dago Tom’S",
+      "place": "A Night At Dago Tom’S",
+      "reentry": "Oh yesterday, I t’ink it was, while cruisin’ down the street, I met with Bill.--‘Hullo,’ he says, ‘let’s give the girls a treat.’ We’d red bandanas round our necks ’n’ our shrouds new rattled down, So we filled a couple of Santy Cruz and cl",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "The ‘Sailor’s Rest,’ by Dago Tom, alongside ‘Paddy’s Goose.’",
+      "place": "The ‘Sailor’s Rest,’ by Dago Tom, alongside ‘Paddy’s Goose.’",
+      "reentry": "Red curtains to the windies, ay, ’n’ white sand to the floor, And an old blind fiddler liltin’ the tune of ‘Lowlands no more.’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "Bowing, stamping, curtsying, in the shuffling of the dance;",
+      "place": "Bowing, stamping, curtsying, in the shuffling of the dance;",
+      "reentry": "The old floor rocked and quivered, so it struck beholders dumb,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "Aboard the ships with royals set a-sailing on the sea,",
+      "place": "Aboard the ships with royals set a-sailing on the sea,",
+      "reentry": "Yarns of the hooker ‘Spindrift,’ her as had the clipper-bow,-- ‘There ain’t no ships,’ says Bill to me, ‘like that there hooker now.’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "It’s a fine place for sailor-men is that there port",
+      "place": "It’s a fine place for sailor-men is that there port",
+      "reentry": "’N’ I wish-- I wish as I was there.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "Lollin’ on the fo’c’s’le, sonny, lookin’ at the ships",
+      "place": "Lollin’ on the fo’c’s’le, sonny, lookin’ at the ships",
+      "reentry": "’N’ I wish-- I wish as I was there.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "They lays there merry, sonny, swingin’ to the tide",
+      "place": "They lays there merry, sonny, swingin’ to the tide",
+      "reentry": "’N’ I wish--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "’N’ I wish--",
+      "place": "’N’ I wish--",
+      "reentry": "I wish as I was there.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "“For a shift towards a better place.”",
+      "place": "“For a shift towards a better place.”",
+      "reentry": "‘Well, he sogered about decks till sunrise, When a rooster in the hen-coop crowed,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "Long o’ them cold fishy females",
+      "place": "Long o’ them cold fishy females",
+      "reentry": "With long green weeds for hair.’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "Jake was a dirty Dago lad, an’ he gave the skipper chin,",
+      "place": "Jake was a dirty Dago lad, an’ he gave the skipper chin,",
+      "reentry": "An’ the skipper up an’ took him a crack with an iron belaying-pin Which stiffened him out a rusty corp, as pretty as you could wish, An’ then we shovelled him up in a sack an’ dumped him to the fish.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "Josey slipped from the tops’l-yard an’ bust his bloody back",
+      "place": "Josey slipped from the tops’l-yard an’ bust his bloody back",
+      "reentry": "(Which corned from playing the giddy goat an’ leavin’ go the jack); We lashed his chips in clouts of sail an’ ballasted him with stones, ‘The Lord hath taken away,’ we says, an’ we give him to Davy Jones.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "An’ all the watch he had the sun a-singein’ him on the neck,",
+      "place": "An’ all the watch he had the sun a-singein’ him on the neck,",
+      "reentry": "An’ forrard he falls at last, he does, an’ he lets his mallet go, Dead as a nail with a calenture, an’ that was the end of Joe.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "An’ that was just afore we made the Plate",
+      "place": "An’ that was just afore we made the Plate",
+      "reentry": "All o’ the rest were sailor-men, an’ it come to rain an’ squall, An’ then it was halliards, sheets, an ’tacks ‘clue up, an’ let go all.’ We snugged her down an’ hove her to, an’ the old contrairy cuss Started a plate, an’ settled an’ sank, ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "A D.B.S. a-earnin’ a stake by helpin’ peelin’ spuds,",
+      "place": "A D.B.S. a-earnin’ a stake by helpin’ peelin’ spuds,",
+      "reentry": "An’ if ever I fetch to Prince’s Stage an’ sets my feet ashore, You bet your hide that there I stay, an’ follers the sea no more.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "Steer clear, I says, o’ Mother Carey,",
+      "place": "Steer clear, I says, o’ Mother Carey,",
+      "reentry": "’N’ that there Davy Jones.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "And I’m atop of you, banging your head upon the dirty deck;",
+      "place": "And I’m atop of you, banging your head upon the dirty deck;",
+      "reentry": "And both your eyes are bunged and blind like those of a mewling pup, For you’re the juggins who caught the crab and lost the ship the Cup.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "‘A long pull, a strong pull, and aft the main-sheet.’",
+      "place": "‘A long pull, a strong pull, and aft the main-sheet.’",
+      "reentry": "Shrilly squeal the running sheaves, the weather-gear strains,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "We’ll be clear of the Channel, so watch how you steer,",
+      "place": "We’ll be clear of the Channel, so watch how you steer,",
+      "reentry": "‘Ease her when she pitches, *and so-long, my dear*.’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "Oh I’ll be chewing salted horse and biting flinty bread,",
+      "place": "Oh I’ll be chewing salted horse and biting flinty bread,",
+      "reentry": "And dancing with the stars to watch, upon the fo’c’s’le head,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "Of a thousand tons of clipper running free",
+      "place": "Of a thousand tons of clipper running free",
+      "reentry": "For the tug has got the tow-rope and will take us to the Downs, Her paddles churn the river-wrack to muddy greens and browns,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "We’ll sheet the mizzen-royals home and shimmer down the Bay,",
+      "place": "We’ll sheet the mizzen-royals home and shimmer down the Bay,",
+      "reentry": "The sea-line blue with billows, the land-line blurred and grey;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "The weight of all the run-out line will be a thing to feel,",
+      "place": "The weight of all the run-out line will be a thing to feel,",
+      "reentry": "As the bacca-quidding shell-back shambles aft to take the wheel, And the sea-sick little middy strikes the bell.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "The bells chime faintly, like a soft, warm rain,",
+      "place": "The bells chime faintly, like a soft, warm rain,",
+      "reentry": "In the Golden City of St. Mary.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "Till I come to quiet moorings and a watch below,",
+      "place": "Till I come to quiet moorings and a watch below,",
+      "reentry": "In the Golden City of St. Mary.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "And day-long, night long, the cool and pleasant breeze",
+      "place": "And day-long, night long, the cool and pleasant breeze",
+      "reentry": "Of the steady Trade Winds blowing.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "Of the quiet voice calling me, the long low croon",
+      "place": "Of the quiet voice calling me, the long low croon",
+      "reentry": "Of the steady Trade Winds blowing.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "Sea-Fever",
+      "place": "Sea-Fever",
+      "reentry": "I must down to the seas again, to the lonely sea and the sky,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "And all I ask is a tall ship and a star to steer her by,",
+      "place": "And all I ask is a tall ship and a star to steer her by,",
+      "reentry": "And the wheel’s kick and the wind’s song and the white sail’s shaking,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "And a grey mist on the sea’s face and a grey dawn breaking",
+      "place": "And a grey mist on the sea’s face and a grey dawn breaking",
+      "reentry": "I must down to the seas again, for the call of the running tide",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "And all I ask is a windy day with the white clouds flying,",
+      "place": "And all I ask is a windy day with the white clouds flying,",
+      "reentry": "And the flung spray and the blown spume, and the sea-gulls crying.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "And all I ask is a merry yarn from a laughing fellow-rover,",
+      "place": "And all I ask is a merry yarn from a laughing fellow-rover,",
+      "reentry": "And quiet sleep and a sweet dream when the long trick’s over.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "And I’ll be going, going, from the roaring of the wheels,",
+      "place": "And I’ll be going, going, from the roaring of the wheels,",
+      "reentry": "For a wind’s in the heart of me, a fire’s in my heels.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "On many a drowned seventy-four, many a sunken town,",
+      "place": "On many a drowned seventy-four, many a sunken town,",
+      "reentry": "And the whitening of the dead men’s skulls.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "I charge you, brothers, sing Nowell, Nowell,",
+      "place": "I charge you, brothers, sing Nowell, Nowell,",
+      "reentry": "*Rex Judæorum natus est*.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "And it’s pleasant dreams--to them--to hear us sayin’,",
+      "place": "And it’s pleasant dreams--to them--to hear us sayin’,",
+      "reentry": "Yonder’s Cape St. Vincent and the Dead.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "Straight an’ keep it flyin’--recollectin’,",
+      "place": "Straight an’ keep it flyin’--recollectin’,",
+      "reentry": "Yonder’s Cape St. Vincent and the Dead.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "And an island in the Spanish Main beyond the setting sun,",
+      "place": "And an island in the Spanish Main beyond the setting sun,",
+      "reentry": "And a silver flagon full of red wine to drink when work is done, Like a fine old salt-sea scavenger, like a tarry Buccaneer.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "Of doubloons and double moidores and pieces of eight,",
+      "place": "Of doubloons and double moidores and pieces of eight,",
+      "reentry": "Like a fine old salt-sea scavenger, like a tarry Buccaneer.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "And a thoughtful way with mutineers of making them maroons,",
+      "place": "And a thoughtful way with mutineers of making them maroons,",
+      "reentry": "Like a fine old salt-sea scavenger, like a tarry Buccaneer.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "And a silver whistle about my neck secured to a golden cord,",
+      "place": "And a silver whistle about my neck secured to a golden cord,",
+      "reentry": "And a habit of taking captives and walking them along a board,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "Like a fine old salt-sea scavenger, like a tarry Buccaneer",
+      "place": "Like a fine old salt-sea scavenger, like a tarry Buccaneer",
+      "reentry": "With a spy-glass tucked beneath my arm and a cocked hat cocked askew, And a long low rakish schooner a-cutting of the waves in two, And a flag of skull and cross-bones the wickedest that ever flew, Like a fine old salt-sea scavenger, like a",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "A Ballad of John Silver",
+      "place": "A Ballad of John Silver",
+      "reentry": "We were schooner-rigged and rakish, with a long and lissome hull, And we flew the pretty colours of the cross-bones and the skull;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "We had each a brace of pistols and a cutlass at the hip;",
+      "place": "We had each a brace of pistols and a cutlass at the hip;",
+      "reentry": "It’s a point which tells against us, and a fact to be deplored, But we chased the goodly merchant-men and laid their ships aboard.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "O! then it was (while standing by the taffrail on the poop)",
+      "place": "O! then it was (while standing by the taffrail on the poop)",
+      "reentry": "We could hear the drowning folk lament the absent chicken-coop;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s115",
+      "title": "Then, having washed the blood away, we’d little else to do",
+      "place": "Then, having washed the blood away, we’d little else to do",
+      "reentry": "Than to dance a quiet hornpipe as the old salts taught us to.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s116",
+      "title": "With the silver seas around us and the pale moon overhead,",
+      "place": "With the silver seas around us and the pale moon overhead,",
+      "reentry": "And the look-out not a-looking and his pipe-bowl glowing red.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s117",
+      "title": "The schooners and the merry crews are laid away to rest,",
+      "place": "The schooners and the merry crews are laid away to rest,",
+      "reentry": "A little south the sunset in the Islands of the Blest.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s118",
+      "title": "Lyrics from ‘The Buccaneer’",
+      "place": "Lyrics from ‘The Buccaneer’",
+      "reentry": "I",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s119",
+      "title": "Is troubled with the shifting tide,",
+      "place": "Is troubled with the shifting tide,",
+      "reentry": "Where the gulls are flying, crying in the bright white spray,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s120",
+      "title": "When the guns are growling and the blood runs red,",
+      "place": "When the guns are growling and the blood runs red,",
+      "reentry": "And the prisoners are walking of the planks.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s121",
+      "title": "When the last fire is out and the last guest departed,",
+      "place": "When the last fire is out and the last guest departed,",
+      "reentry": "Grant the last prayer that I shall pray, Be good to me, O Lord!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s122",
+      "title": "About the fine keen bows of the stately clippers steering",
+      "place": "About the fine keen bows of the stately clippers steering",
+      "reentry": "Towards the lone northern star and the fair ports of home.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s123",
+      "title": "And April’s in the west wind, and daffodils",
+      "place": "And April’s in the west wind, and daffodils",
+      "reentry": "It’s a fine land, the west land, for hearts as tired as mine,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s124",
+      "title": "To hear the wild bees and see the merry spring again",
+      "place": "To hear the wild bees and see the merry spring again",
+      "reentry": "‘Larks are singing in the west, brother, above the green wheat,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s125",
+      "title": "So will ye not come home, brother, and rest your tired feet?",
+      "place": "So will ye not come home, brother, and rest your tired feet?",
+      "reentry": "I’ve a balm for bruised hearts, brother, sleep for aching eyes,’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s126",
+      "title": "It’s the white road westwards is the road I must tread",
+      "place": "It’s the white road westwards is the road I must tread",
+      "reentry": "To the green grass, the cool grass, and rest for heart and head,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s127",
+      "title": "To the violets and the warm hearts and the thrushes’ song,",
+      "place": "To the violets and the warm hearts and the thrushes’ song,",
+      "reentry": "In the fine land, the west land, the land where I belong.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s128",
+      "title": "Drive the oars grunting in the banks",
+      "place": "Drive the oars grunting in the banks",
+      "reentry": "A long pull,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s129",
+      "title": "A long pull,",
+      "place": "A long pull,",
+      "reentry": "And a long long pull to Mydath.’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s130",
+      "title": "To the sunless place of the wrecks where the waters sway",
+      "place": "To the sunless place of the wrecks where the waters sway",
+      "reentry": "Gently, dreamily, quietly over desolate sands!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s131",
+      "title": "My mark’s the gypsy fires, the lonely inns,",
+      "place": "My mark’s the gypsy fires, the lonely inns,",
+      "reentry": "An’ jest the dusty road.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s132",
+      "title": "Then passed into the night, and I go seeking her",
+      "place": "Then passed into the night, and I go seeking her",
+      "reentry": "Down the dark, silent streets, past the warm, lighted inns.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s133",
+      "title": "And one to slather the spunyarn, and one to knot the hank;",
+      "place": "And one to slather the spunyarn, and one to knot the hank;",
+      "reentry": "It’s an easy job for a summer watch, and a pleasant job enough,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s134",
+      "title": "I have travelled on land and sea, and all that I have found",
+      "place": "I have travelled on land and sea, and all that I have found",
+      "reentry": "Are these poor songs to brace the arms that help the winches round.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s135",
+      "title": "The mournful word the seas say",
+      "place": "The mournful word the seas say",
+      "reentry": "When tides are wandering out or in.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s136",
+      "title": "Personal",
+      "place": "Personal",
+      "reentry": "Tramping at night in the cold and wet, I passed the lighted inn,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s137",
+      "title": "And an old tune, a sweet tune, was being played within",
+      "place": "And an old tune, a sweet tune, was being played within",
+      "reentry": "It was full of the laugh of the leaves and the song the wind sings; It brought the tears and the choked throat, and a catch to the",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s138",
+      "title": "Heart-strings",
+      "place": "Heart-strings",
+      "reentry": "And it brought a bitter thought of the days that now were dead to me,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s139",
+      "title": "The merry days in the old home before I went to sea--",
+      "place": "The merry days in the old home before I went to sea--",
+      "reentry": "Days that were dead to me indeed. I bowed my head to the rain, And I passed by the lighted inn to the lonely roads again.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s140",
+      "title": "Quiet are clan and chief, and quiet",
+      "place": "Quiet are clan and chief, and quiet",
+      "reentry": "Centurion and signifer.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s141",
+      "title": "Tewkesbury Road",
+      "place": "Tewkesbury Road",
+      "reentry": "It is good to be out on the road, and going one knows not where, Going through meadow and village, one knows not whither nor why;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s142",
+      "title": "Rush of the air,",
+      "place": "Rush of the air,",
+      "reentry": "Under the flying white clouds, and the broad blue lift of the sky;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s143",
+      "title": "Purple and white;",
+      "place": "Purple and white;",
+      "reentry": "Where the shy-eyed delicate deer troop down to the pools to drink, When the stars are mellow and large at the coming on of the night.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s144",
+      "title": "Ghostly it grows, and darker, the burning",
+      "place": "Ghostly it grows, and darker, the burning",
+      "reentry": "Fades into smoke, and now the gusty oaks are A silent army of phantoms thronging A land of shadows.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s145",
+      "title": "(The grass which hides the glory and the grace of her),",
+      "place": "(The grass which hides the glory and the grace of her),",
+      "reentry": "May the Spring bring the flowers.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s146",
+      "title": "They haunt me, burn me to the heart, as I turn aside to go:",
+      "place": "They haunt me, burn me to the heart, as I turn aside to go:",
+      "reentry": "The king’s face and the cur’s face, and the face of the stuffed swine, They are passing, they are passing, their eyes look into mine.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s147",
+      "title": "I never can tire of the music of the noise of many feet,",
+      "place": "I never can tire of the music of the noise of many feet,",
+      "reentry": "The thrill of the blood pulsing, the tick of the heart’s beat,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s148",
+      "title": "Of the men many as sands, of the squadrons ranked and massed",
+      "place": "Of the men many as sands, of the squadrons ranked and massed",
+      "reentry": "Who are passing, changing always, and never have changed or passed.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s149",
+      "title": "‘And would he were with me,’ sighs his fellow,",
+      "place": "‘And would he were with me,’ sighs his fellow,",
+      "reentry": "‘With me upon the roads again!’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s150",
+      "title": "The upland outlaws ringed us in and herded us as sheep,",
+      "place": "The upland outlaws ringed us in and herded us as sheep,",
+      "reentry": "They drove us from the stricken field and bayed us into keep;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s151",
+      "title": "But to-morrow",
+      "place": "But to-morrow",
+      "reentry": "By the living God, we’ll try the game again!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s152",
+      "title": "And all a summer afternoon they hunted us and slew;",
+      "place": "And all a summer afternoon they hunted us and slew;",
+      "reentry": "But to-morrow,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s153",
+      "title": "And here upon the turret-top the bale-fire glowers red,",
+      "place": "And here upon the turret-top the bale-fire glowers red,",
+      "reentry": "The wake-lights burn and drip about our hacked, disfigured dead,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s154",
+      "title": "But to-morrow,",
+      "place": "But to-morrow,",
+      "reentry": "By the living God, we’ll try the game again!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s155",
+      "title": "Roses in the feathered hats, the long plumes swaying,",
+      "place": "Roses in the feathered hats, the long plumes swaying,",
+      "reentry": "A king’s son ahead of them showing them the way.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s156",
+      "title": "A Song At Parting",
+      "place": "A Song At Parting",
+      "reentry": "The tick of the blood is settling slow, my heart will soon be still,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s157",
+      "title": "So gather me up and lay me down, for ready and ripe am I,",
+      "place": "So gather me up and lay me down, for ready and ripe am I,",
+      "reentry": "For the weary vigil with sightless eyes that may not see the sky.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s158",
+      "title": "So carry me up the lonely hill and lay me in the grave,",
+      "place": "So carry me up the lonely hill and lay me in the grave,",
+      "reentry": "And cover me in with cleanly mould and old and lichened stones, In a place where ever the cry of the wind shall thrill my sleepy bones.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s159",
+      "title": "Gather me up and lay me down with an old song and a prayer,",
+      "place": "Gather me up and lay me down with an old song and a prayer,",
+      "reentry": "Cover me in with wholesome earth, and weep and leave me there; And get you gone with a kindly thought and an old tune and a sigh, And leave me alone, asleep, at rest, for ready and ripe am I.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s160",
+      "title": "Abaft the beam.--That half of a ship included between her",
+      "place": "Abaft the beam.--That half of a ship included between her",
+      "reentry": "amidship section and the taffrail. (For ‘taffrail,’ *see* below.)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s161",
+      "title": "Abel Brown.--An unquotable sea-song",
+      "place": "Abel Brown.--An unquotable sea-song",
+      "reentry": "*Advance-note.*--A note for one month’s wages issued to sailors on",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s162",
+      "title": "Rigging may be secured or belayed. Belaying-pins, from their",
+      "place": "Rigging may be secured or belayed. Belaying-pins, from their",
+      "reentry": "handiness and peculiar club-shape, are sometimes used as bludgeons.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s163",
+      "title": "And eighteenth centuries",
+      "place": "And eighteenth centuries",
+      "reentry": "*Blue Peter.*--A blue and white flag hoisted at the fore-trucks of",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s164",
+      "title": "Bonded Jacky.--Negro-head tobacco or sweet cake",
+      "place": "Bonded Jacky.--Negro-head tobacco or sweet cake",
+      "reentry": "*Bull of Barney.*--A beast mentioned in an unquotable sea-proverb.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s165",
+      "title": "‘cat-head.’",
+      "place": "‘cat-head.’",
+      "reentry": "*Chanty.*--A song sung to lighten labour at the capstan sheets, and halliards. The soloist is known as the chanty-man, and is usually a person of some authority in the fo’c’s’le. Many chanties are of",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s166",
+      "title": "Clipper-bow.--A bow of delicate curves and lines",
+      "place": "Clipper-bow.--A bow of delicate curves and lines",
+      "reentry": "*Clout.*--A rag or cloth. Also a blow:--‘I fetched him a clout i’",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s167",
+      "title": "The lug.’",
+      "place": "The lug.’",
+      "reentry": "*Crimp.*--A sort of scoundrelly land-shark preying upon sailors.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s168",
+      "title": "Are invalided home from foreign ports",
+      "place": "Are invalided home from foreign ports",
+      "reentry": "*Dungaree.*--A cheap, rough thin cloth (generally blue or brown),",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s169",
+      "title": "Forward or Forrard.--Towards the bows",
+      "place": "Forward or Forrard.--Towards the bows",
+      "reentry": "*Fo’c’s’le (Forecastle).*--The deck-house or living-room of the crew. The word is often used to indicate the crew, or those members",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s170",
+      "title": "Heave and pawl.--A cry of encouragement at the capstan",
+      "place": "Heave and pawl.--A cry of encouragement at the capstan",
+      "reentry": "*Hooker.*--A periphrasis for ship, I suppose from a ship’s carrying",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s171",
+      "title": "Hooks or anchors",
+      "place": "Hooks or anchors",
+      "reentry": "*Jack or Jackstay.*--A slender iron rail running along the upper",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s172",
+      "title": "Portions of the yards in some ships",
+      "place": "Portions of the yards in some ships",
+      "reentry": "*Leeward.*--Pronounced ‘looard.’ That quarter to which the wind",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s173",
+      "title": "Mainyards.’ to loot, steal, or ‘acquire.’",
+      "place": "Mainyards.’ to loot, steal, or ‘acquire.’",
+      "reentry": "*Main-shrouds.*--Ropes, usually wire, supporting lateral strains",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s174",
+      "title": "Mollies.--Molly-hawks, or Fulmar petrels. Wide-winged dusky",
+      "place": "Mollies.--Molly-hawks, or Fulmar petrels. Wide-winged dusky",
+      "reentry": "sea-fowls, common in high latitudes, oily to taste, gluttonous.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s175",
+      "title": "Great fishers and garbage-eaters",
+      "place": "Great fishers and garbage-eaters",
+      "reentry": "*Port Mahon Baboon*, or *Port Mahon Soger*.--I have been unable to discover either the origin of these insulting epithets or the reasons for the peculiar bitterness with which they sting the marine recipient. They are older than Dana (*circ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s176",
+      "title": "Our older poets",
+      "place": "Our older poets",
+      "reentry": "The real Port Mahon, a fine harbour in Minorca, was taken by the French, from Admiral Byng, in the year 1756.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s177",
+      "title": "Scantling.--Planks",
+      "place": "Scantling.--Planks",
+      "reentry": "*Soger.*--A laggard, malingerer, or hang-back. To loaf or skulk or",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s178",
+      "title": "Work Tom Cox’s Traverse",
+      "place": "Work Tom Cox’s Traverse",
+      "reentry": "*Spunyarn.*--A three-strand line spun out of old rope-yarns knotted",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s179",
+      "title": "Together. Most sailing-ships carry a spunyarn winch, and the",
+      "place": "Together. Most sailing-ships carry a spunyarn winch, and the",
+      "reentry": "spinning of such yarn is a favourite occupation in fine weather.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s180",
+      "title": "Sailors stand when aloft on the yards",
+      "place": "Sailors stand when aloft on the yards",
+      "reentry": "*Tack.*--To stay or ’bout ship. A reach to windward. The weather",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s181",
+      "title": "Look-out",
+      "place": "Look-out",
+      "reentry": "*Windward* or *Weather*.--That quarter from which the wind blows.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s182",
+      "title": "The Daffodil Fields",
+      "place": "The Daffodil Fields",
+      "reentry": "Cloth, 12mo, $1.25 net; postpaid, $1.36",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s183",
+      "title": "A Mainsail Haul",
+      "place": "A Mainsail Haul",
+      "reentry": "Cloth, 12mo. Preparing",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s184",
+      "title": "The Tragedy of Pompey",
+      "place": "The Tragedy of Pompey",
+      "reentry": "Cloth, 12mo. Preparing",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s185",
+      "title": "Widow in the Bye Street",
+      "place": "Widow in the Bye Street",
+      "reentry": "Cloth, $1.25 net; postpaid, $1.38",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s186",
+      "title": "The year.”",
+      "place": "The year.”",
+      "reentry": "“John Masefield is the man of the hour, and the man of to-morrow too, in",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s187",
+      "title": "Poetry and in the playwriting craft.”--JOHN GALSWORTHY",
+      "place": "Poetry and in the playwriting craft.”--JOHN GALSWORTHY",
+      "reentry": "“--recreates a wholly new drama of existence.”--William Stanley",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s188",
+      "title": "BRAITHWAITE, N. Y. Times",
+      "place": "BRAITHWAITE, N. Y. Times",
+      "reentry": "“Mr. Masefield comes like a flash of light across contemporary English poetry, and he trails glory where his imaginations reveals the substances of life. The improbable has been accomplished by Mr. Masefield; he has made poetry out of the v",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s189",
+      "title": "Coleridge.”--Boston Evening Transcript",
+      "place": "Coleridge.”--Boston Evening Transcript",
+      "reentry": "“Originality, force, distinction, and deep knowledge of the human",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s190",
+      "title": "“They are truly great pieces.”--Kentucky Post",
+      "place": "“They are truly great pieces.”--Kentucky Post",
+      "reentry": "“A vigor and sincerity rare in modern English literature.”--_The",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s191",
+      "title": "Independent",
+      "place": "Independent",
+      "reentry": "“If Mr. Masefield has occasionally appeared to touch a reminiscent chord with George Meredith, it is merely an example of his good taste and the sameness of big themes.”--George Middleton in *La Follette’s Magazine*.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s192",
+      "title": "And other Poems",
+      "place": "And other Poems",
+      "reentry": "Cloth, 12mo, $1.30 net; postpaid, $1.43",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s193",
+      "title": "New and Revised Edition",
+      "place": "New and Revised Edition",
+      "reentry": "“John Masefield has produced the finest literature of the year.”--J. W.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s194",
+      "title": "Barrie",
+      "place": "Barrie",
+      "reentry": "“John Masefield is the most interesting poetic personality of the",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s195",
+      "title": "Day.”--The Continent",
+      "place": "Day.”--The Continent",
+      "reentry": "“Ah! the story of that rounding the Horn! Never in prose has the sea",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s196",
+      "title": "Been so tremendously described.”--Chicago Evening Post",
+      "place": "Been so tremendously described.”--Chicago Evening Post",
+      "reentry": "“Masefield’s new book attracts the widest attention from those who in",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s197",
+      "title": "“Vivid and thrillingly realistic.”--Current Literature",
+      "place": "“Vivid and thrillingly realistic.”--Current Literature",
+      "reentry": "“A genuine sailor and a genuine poet are a rare combination; they have produced a rare poem of the sea, which has made Mr. Masefield’s position in literature secure beyond the reach of caviling.”--_Everybody’s",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s198",
+      "title": "Magazine",
+      "place": "Magazine",
+      "reentry": "“Masefield has prisoned in verse the spirit of life at sea.”--_N. Y.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s199",
+      "title": "Sun",
+      "place": "Sun",
+      "reentry": "“There is strength about everything Masefield writes that compels the feeling that he has an inward eye on which he draws to shape new films of old pictures. In these pictures is freshness combined with power, which form the keynotes of his",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s200",
+      "title": "$1.25 net",
+      "place": "$1.25 net",
+      "reentry": "Contains “The Shirt,” a new poem of impressive poignancy and power.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s201",
+      "title": "FIRES $1.25 net",
+      "place": "FIRES $1.25 net",
+      "reentry": "“In ‘Fires’ as in ‘Daily Bread,’ the fundamental note is human sympathy with the whole of life. Impressive as these dramas are, it is in their cumulative effect that they are chiefly powerful.”--*Atlantic Monthly.*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s202",
+      "title": "WOMENKIND $1.25 net",
+      "place": "WOMENKIND $1.25 net",
+      "reentry": "“Mr. Gibson is a genuine singer of his own day and turns into appealing harmony the world’s harshly jarring notes of poverty and pain.”--*The Outlook.*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s203",
+      "title": "The Macmillan Company",
+      "place": "The Macmillan Company",
+      "reentry": "64-66 Fifth Avenue New York",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s204",
+      "title": "LONICERA AND OTHER POEMS Preparing",
+      "place": "LONICERA AND OTHER POEMS Preparing",
+      "reentry": "This book introduces another poet of promise to the verse-lovers of this country. It is of interest to learn that Mr. Helston, who for several years was an operative mechanic in electrical works, has created a remarkable impression in Engla",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s205",
+      "title": "POEMS AND BALLADS Preparing",
+      "place": "POEMS AND BALLADS Preparing",
+      "reentry": "“His is perhaps the most confident of the prophecies of our new poets for he has seen most clearly the poetry in the new life. His song is full of the spirit of youth and hope.... It is the song that the new century needs. His verse is stro",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s206",
+      "title": "By Fannie Stearns Davis",
+      "place": "By Fannie Stearns Davis",
+      "reentry": "Myself AND I $1.00 net",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Macmillan & CO., Limited"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The Macmillan Co. of Canada, Ltd."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Toronto"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Salt-Water Ballads"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "BY"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "John Masefield"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "THE Macmillan Company"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Set up and electrotyped. Published September, 1913 Reprinted April, 1915."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Some of this book was written in my boyhood, all of it in my youth; it is now re-issued, much as it was when first published nearly eleven"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "*9th June 1913*"
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Contents"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "A Consecration"
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "*Not of the princes and prelates with periwigged charioteers.* 1"
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "The Yarn of the ‘Loch Achray’"
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "The ‘Loch Achray’ was a clipper tall. 3"
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "Sing A Song O’ Shipwreck"
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "He lolled on a bollard, a sun-burned son of the sea 7"
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "Burial Party"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "gone to his long sleep’ 11"
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "Bill"
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "He lay dead on the cluttered deck and stared at the cold skies 14"
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "Fever Ship"
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "There’ll be no weepin’ gells ashore when *our* ship sails 15"
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "Fever-Chills"
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "He tottered out of the alleyway with cheeks the colour of paste 17"
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "One of the Bo’Sun’S Yarns"
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "Loafin’ around in Sailor Town, a-bluin’ o’ my advance 19"
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "Hell’S Pavement"
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "‘When I’m discharged in Liverpool ’n’ draws my bit o’ pay’ 25"
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "SEA-Change"
+    },
+    {
+      "id": "s6-12",
+      "sceneId": "s6",
+      "text": "‘Goneys an’ gullies an’ all o’ the birds o’ the sea’ 27"
+    },
+    {
+      "id": "s6-13",
+      "sceneId": "s6",
+      "text": "Harbour-BAR"
+    },
+    {
+      "id": "s6-14",
+      "sceneId": "s6",
+      "text": "All in the feathered palm-tree tops the bright green parrots screech 29"
+    },
+    {
+      "id": "s6-15",
+      "sceneId": "s6",
+      "text": "THE Turn OF THE Tide"
+    },
+    {
+      "id": "s6-16",
+      "sceneId": "s6",
+      "text": "An’ Bill can have my sea-boots, Nigger Jim can have my knife 31"
+    },
+    {
+      "id": "s6-17",
+      "sceneId": "s6",
+      "text": "ONE OF Wally’S Yarns"
+    },
+    {
+      "id": "s6-18",
+      "sceneId": "s6",
+      "text": "The watch was up on the topsail-yard a-making fast the sail 33"
+    },
+    {
+      "id": "s6-19",
+      "sceneId": "s6",
+      "text": "A Valediction (Liverpool Docks)"
+    },
+    {
+      "id": "s6-20",
+      "sceneId": "s6",
+      "text": "Is there anything as I can do ashore for you 35"
+    },
+    {
+      "id": "s6-21",
+      "sceneId": "s6",
+      "text": "A Night AT Dago TOM’S"
+    },
+    {
+      "id": "s6-22",
+      "sceneId": "s6",
+      "text": "Oh yesterday, I t’ink it was, while cruisin’ down the street 38"
+    },
+    {
+      "id": "s6-23",
+      "sceneId": "s6",
+      "text": "‘Port OF Many Ships’"
+    },
+    {
+      "id": "s6-24",
+      "sceneId": "s6",
+      "text": "‘It’s a sunny pleasant anchorage, is Kingdom Come’ 40"
+    },
+    {
+      "id": "s6-25",
+      "sceneId": "s6",
+      "text": "Cape Horn Gospel--I"
+    },
+    {
+      "id": "s6-26",
+      "sceneId": "s6",
+      "text": "‘I was in a hooker once,’ said Karlssen 42"
+    },
+    {
+      "id": "s6-27",
+      "sceneId": "s6",
+      "text": "Cape Horn Gospel--II"
+    },
+    {
+      "id": "s6-28",
+      "sceneId": "s6",
+      "text": "Jake was a dirty Dago lad, an’ he gave the skipper chin 45"
+    },
+    {
+      "id": "s6-29",
+      "sceneId": "s6",
+      "text": "Mother Carey"
+    },
+    {
+      "id": "s6-30",
+      "sceneId": "s6",
+      "text": "Mother Carey? She’s the mother o’ the witches 48"
+    },
+    {
+      "id": "s6-31",
+      "sceneId": "s6",
+      "text": "Evening--Regatta DAY"
+    },
+    {
+      "id": "s6-32",
+      "sceneId": "s6",
+      "text": "Your nose is a red jelly, your mouth’s a toothless wreck 50"
+    },
+    {
+      "id": "s6-33",
+      "sceneId": "s6",
+      "text": "A Valediction"
+    },
+    {
+      "id": "s6-34",
+      "sceneId": "s6",
+      "text": "We’re bound for blue water where the great winds blow 52"
+    },
+    {
+      "id": "s6-35",
+      "sceneId": "s6",
+      "text": "A Pier-Head Chorus"
+    },
+    {
+      "id": "s6-36",
+      "sceneId": "s6",
+      "text": "Oh, I’ll be chewing salted horse and biting flinty bread 54"
+    },
+    {
+      "id": "s6-37",
+      "sceneId": "s6",
+      "text": "The Golden City of St. Mary"
+    },
+    {
+      "id": "s6-38",
+      "sceneId": "s6",
+      "text": "Out beyond the sunset, could I but find the way 56"
+    },
+    {
+      "id": "s6-39",
+      "sceneId": "s6",
+      "text": "Trade Winds"
+    },
+    {
+      "id": "s6-40",
+      "sceneId": "s6",
+      "text": "In the harbour, in the island, in the Spanish Seas 58"
+    },
+    {
+      "id": "s6-41",
+      "sceneId": "s6",
+      "text": "SEA-Fever"
+    },
+    {
+      "id": "s6-42",
+      "sceneId": "s6",
+      "text": "I must down to the seas again, to the lonely sea and the sky 59"
+    },
+    {
+      "id": "s6-43",
+      "sceneId": "s6",
+      "text": "A Wanderer’S Song"
+    },
+    {
+      "id": "s6-44",
+      "sceneId": "s6",
+      "text": "A wind’s in the heart o’ me, a fire’s in my heels 61"
+    },
+    {
+      "id": "s6-45",
+      "sceneId": "s6",
+      "text": "Cardigan BAY"
+    },
+    {
+      "id": "s6-46",
+      "sceneId": "s6",
+      "text": "Clean, green, windy billows notching out the sky 63"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "A wind is rustling ‘south and soft’ 64"
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "A Ballad of Cape St. Vincent"
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "‘Now, Bill, ain’t it prime to be a-sailin’ 66"
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "THE Tarry Buccaneer"
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "I’m going to be a pirate with a bright brass pivot-gun 68"
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "A Ballad OF John Silver"
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "We were schooner-rigged and rakish, with a long and lissome hull 71"
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "Lyrics From ‘The Buccaneer’"
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "I.--We are far from sight of the harbour lights 74"
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "II.--There’s a sea-way somewhere where all day long 75"
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "III.--The toppling rollers at the harbour mouth 76"
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "D’Avalos’ Prayer"
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "When the last sea is sailed and the last shallow charted 77"
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "THE West Wind"
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "It’s a warm wind, the west wind, full of birds’ cries 79"
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "THE Galley-Rowers"
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "Staggering over the running combers 82"
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "Sorrow OF Mydath"
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "Weary the cry of the wind is, weary the sea 84"
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "Vagabond"
+    },
+    {
+      "id": "s7-20",
+      "sceneId": "s7",
+      "text": "Dunno a heap about the what an’ why 85"
+    },
+    {
+      "id": "s7-21",
+      "sceneId": "s7",
+      "text": "Vision"
+    },
+    {
+      "id": "s7-22",
+      "sceneId": "s7",
+      "text": "I have drunken the red wine and flung the dice 86"
+    },
+    {
+      "id": "s7-23",
+      "sceneId": "s7",
+      "text": "Spunyarn"
+    },
+    {
+      "id": "s7-24",
+      "sceneId": "s7",
+      "text": "Spunyarn, spunyarn, with one to turn the crank 88"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "The cleanly rush of the mountain air 89"
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "Personal"
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "Tramping at night in the cold and wet, I passed the lighted inn 91"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "A wind is brushing down the clover 92"
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "Tewkesbury Road"
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "It is good to be out on the road, and going one knows not where 94"
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "ON Eastnor Knoll"
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "Silent are the woods, and the dim green boughs are 96"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "She has done with the sea’s sorrow and the world’s way 97"
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "‘ALL YE That Pass BY’"
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "On the long dusty ribbon of the long city street 99"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Once in the windy wintry weather 101"
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "TO-Morrow"
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "Oh yesterday the cutting edge drank thirstily and deep 102"
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "Cavalier"
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "All the merry kettle-drums are thudding into rhyme 104"
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "A Song AT Parting"
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "The tick of the blood is settling slow, my heart will soon be still 106"
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "Glossary 109"
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "‘The mariners are a pleasant people, but little like those in the towns, and they can speak no other language than that used in ships.’"
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "*The Licenciate Vidriera.*"
+    },
+    {
+      "id": "s11-10",
+      "sceneId": "s11",
+      "text": "A Consecration"
+    },
+    {
+      "id": "s11-11",
+      "sceneId": "s11",
+      "text": "*NOT of the princes and prelates with periwigged charioteers* *Riding triumphantly laurelled to lap the fat of the years,--* *Rather the scorned--the rejected--the men hemmed in with the spears;*"
+    },
+    {
+      "id": "s11-12",
+      "sceneId": "s11",
+      "text": "*The men of the tattered battalion which fights till it dies,* *Dazed with the dust of the battle, the din and the cries,* *The men with the broken heads and the blood running into their eyes.*"
+    },
+    {
+      "id": "s11-13",
+      "sceneId": "s11",
+      "text": "*Not the be-medalled Commander, beloved of the throne,* *Riding cock-horse to parade when the bugles are blown,* *But the lads who carried the koppie and cannot be known.*"
+    },
+    {
+      "id": "s11-14",
+      "sceneId": "s11",
+      "text": "*Not the ruler for me, but the ranker, the tramp of the road,* *The slave with the sack on his shoulders pricked on with the goad,* *The man with too weighty a burden, too weary a load.*"
+    },
+    {
+      "id": "s11-15",
+      "sceneId": "s11",
+      "text": "*The sailor, the stoker of steamers, the man with the clout,* *The chantyman bent at the halliards putting a tune to the shout,*"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "*Mine be the dirt and the dross, the dust and scum of the earth!*"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "*Of the maimed, of the halt and the blind in the rain and the cold--*"
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "*Of these shall my songs be fashioned, my tales be told.*"
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "Amen."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "The Yarn of the ‘Loch Achray’"
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "The ‘Loch Achray’ was a clipper tall"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "Hear the yarn of a sailor, An old yarn learned at sea."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Hear the yarn of a sailor, An old yarn learned at sea."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "The dockside loafers talked on the quay The day that she towed down to sea: ‘Lord, what a handsome ship she be! Cheer her, sonny boys, three times three!’ And the dockside loafers gave her a shout As the red-funnelled tug-boat towed her out; They gave her a cheer as the custom is, And the crew yelled ‘Take our loves to Liz-- Three cheers, bullies, for old Pier Head ’N’ the bloody stay-at-homes!’ they said. Hear the yarn of a sailor An old yarn learned at sea."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "In the grey of the coming on of night"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Hear the yarn of a sailor, An old yarn learned at sea."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "Hear the yarn of a sailor, An old yarn learned at sea."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "It freshened up till it blew like thunder"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "Hear the yarn of a sailor, An old yarn learned at sea."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "Then a fierce squall struck the ‘Loch Achray’"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "Hear the yarn of a sailor, An old yarn learned at sea."
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "She couldn’t lay-to nor yet pay-off, And she got swept clean in the bloody trough; Her masts were gone, and afore you knowed She filled by the head and down she goed. Her crew made seven-and-twenty dishes For the big jack-sharks and the little fishes, And over their bones the water swishes. Hear the yarn of a sailor, An old yarn learned at sea."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "The wives and girls they watch in the rain For a ship as won’t come home again. ‘I reckon it’s them head-winds,’ they say, ‘She’ll be home to-morrow, if not to-day. I’ll just nip home ’n’ I’ll air the sheets ’N’ buy the fixins ’n’ cook the meats As my man likes ’n’ as my man eats.’"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "An old yarn learned at sea."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "Sing A Song O’ Shipwreck"
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "He lolled on a bollard, a sun-burned son of the sea, With ear-rings of brass and a jumper of dungaree, ‘’N’ many a queer lash-up have I seen,’ says he."
+    },
+    {
+      "id": "s20-3",
+      "sceneId": "s20",
+      "text": "‘But the toughest hooray o’ the racket,’ he says, ‘I’ll be sworn, ’N’ the roughest traverse I worked since the day I was born, Was a packet o’ Sailor’s Delight as I scoffed in the seas o’ the Horn."
+    },
+    {
+      "id": "s20-4",
+      "sceneId": "s20",
+      "text": "‘All day long in the calm she had rolled to the swell, Rolling through fifty degrees till she clattered her bell; ’N’ then came snow, ’n’ a squall, ’n’ a wind was colder ’n hell."
+    },
+    {
+      "id": "s20-5",
+      "sceneId": "s20",
+      "text": "‘It blew like the Bull of Barney, a beast of a breeze, ’N’ over the rail come the cold green lollopin’ seas,"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "To hoist the boats off o’ the deck-house and get them adrift, When her stern gives a sickenin’ settle, her bows give a lift,"
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "‘’N’ comes a crash of green water as sets me afloat With freezing fingers clutching the keel of a boat-- The bottom-up whaler--’n’ that was the juice of a note."
+    },
+    {
+      "id": "s21-2",
+      "sceneId": "s21",
+      "text": "‘Well, I clambers acrost o’ the keel ’n’ I gets me secured, When I sees a face in the white o’ the smother to looard, So I gives ’im a ’and, ’n’ be shot if it wasn’t the stooard!"
+    },
+    {
+      "id": "s21-3",
+      "sceneId": "s21",
+      "text": "‘So he climbs up forrard o’ me, ’n’ “thanky,” a’ says, ’N’ we sits ’n’ shivers ’n’ freeze to the bone wi’ the sprays, ’N’ *I* sings “Abel Brown,” ’n’ the stooard he prays."
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "(I sets no store upon stooards--they ain’t no use on a ship)."
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "‘’N’ “mother,” the looney cackles, “come ’n’ put Willy to bed!” So I says “Dry up, or I’ll fetch you a crack o’ the head”; “The kettle’s a-bilin’,” he answers, “’n’ I’ll go butter the bread.”"
+    },
+    {
+      "id": "s22-2",
+      "sceneId": "s22",
+      "text": "‘’N’ he falls to singin’ some slush about clinkin’ a can, ’N’ at last he dies, so he does, ’n’ I tells you, Jan,"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "’N’ I was alone with his corp, ’n’ the cold green sea and the sky."
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "“Easy, my son, wi’ the brandy, be shot if he ain’t comin’-to!”’"
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "‘He’s deader ’n nails,’ the fo’c’s’le said, ‘’n’ gone to his long sleep’; ‘’N’ about his corp,’ said Tom to Dan, ‘d’ye think his corp’ll keep Till the day’s done, ’n’ the work’s through, ’n’ the ebb’s upon"
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "‘He’s deader ’n nails,’ said Dan to Tom, ‘’n’ I wish his sperrit j’y; He spat straight ’n’ he steered true, but listen to me, say I, Take ’n’ cover ’n’ bury him now, ’n’ I’ll take ’n’ tell you why."
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "‘It’s a rummy rig of a guffy’s yarn, ’n’ the juice of a rummy note, But if you buries a corp at night, it takes ’n’ keeps afloat, For its bloody soul’s afraid o’ the dark ’n’ sticks within the throat."
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "‘’N’ all the night till the grey o’ the dawn the dead ’un has to swim"
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "With a herring, maybe, a-scoffin’ a toe or a shark a-chewin’ a limb."
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "‘’N’ all the night the shiverin’ corp it has to swim the sea, With its shudderin’ soul inside the throat (where a soul’s no"
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "Till the sky’s grey ’n’ the dawn’s clear, ’n’ then the sperrit’s free."
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "‘Now Joe was a man was right as rain. I’m sort of sore for Joe,"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "So we’ll dump his corp when the bell strikes ’n’ we can get below."
+    },
+    {
+      "id": "s29-1",
+      "sceneId": "s29",
+      "text": "‘I’d fairly hate for him to swim in a blue ’n’ beastly light, With his shudderin’ soul inside of him a-feelin’ the fishes bite, So over he goes at noon, say I, ’n’ he shall sleep to-night.’"
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "He lay dead on the cluttered deck and stared at the cold skies, With never a friend to mourn for him nor a hand to close his eyes: ‘Bill, he’s dead,’ was all they said; ‘he’s dead, ’n’ there he lies.’"
+    },
+    {
+      "id": "s30-1",
+      "sceneId": "s30",
+      "text": "The mate came forrard at seven bells and spat across the rail: ‘Just lash him up wi’ some holystone in a clout o’ rotten sail, ’N’, rot ye, get a gait on ye, ye’re slower’n a bloody snail!’"
+    },
+    {
+      "id": "s30-2",
+      "sceneId": "s30",
+      "text": "When the rising moon was a copper disc and the sea was a strip of steel, We dumped him down to the swaying weeds ten fathom beneath the keel. ‘It’s rough about Bill,’ the fo’c’s’le said, ‘we’ll have to stand his wheel.’"
+    },
+    {
+      "id": "s30-3",
+      "sceneId": "s30",
+      "text": "Fever Ship"
+    },
+    {
+      "id": "s30-4",
+      "sceneId": "s30",
+      "text": "There’ll be no weepin’ gells ashore when *our* ship sails, Nor no crews cheerin’ us, standin’ at the rails, ’N’ no Blue Peter a-foul the royal stay, For we’ve the Yellow Fever--Harry died to-day.-- It’s cruel when a fo’c’s’le gets the fever!"
+    },
+    {
+      "id": "s30-5",
+      "sceneId": "s30",
+      "text": "’N’ Dick has got the fever-shakes, ’n’ look what I was told (I went to get a sack for him to keep him from the cold): ‘Sir, can I have a sack?’ I says, ‘for Dick ’e’s fit to die.’ ‘Oh, sack be shot!’ the skipper says, ‘jest let the rotter lie!’--"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "It’s cruel when a fo’c’s’le gets the fever!"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "He tottered out of the alleyway with cheeks the colour of paste, And shivered a spell and mopped his brow with a clout of cotton waste: ‘I’ve a lick of fever-chills,’ he said, ‘’n’ my inside it’s green, But I’d be as right as rain,’ he said, ‘if I had some quinine,--"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "‘But them there passengers,’ he said, ‘if they gets fever-chills, There’s brimmin’ buckets o’ quinine for them, ’n’ bulgin’ crates"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "’N’ a doctor with Latin ’n’ drugs ’n’ all--enough to sink a town, ’N’ they lies quiet in their blushin’ bunks ’n’ mops their gruel down,-- But their ain’t none o’ them fine ways for us poor sailor-men."
+    },
+    {
+      "id": "s34-1",
+      "sceneId": "s34",
+      "text": "‘But the Chief comes forrard ’n’ he says, says he, “I gives you"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "Come none o’ your Cape Horn fever lays aboard o’ this yer ship. On wi’ your rags o’ duds, my son, ’n’ aft, ’n’ down the hole: The best cure known for fever-chills is shovelling bloody coal.” It’s *hard*, my son, that’s what it is, for us poor sailor-men.’"
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "Till he landed me ’n’ bleached me fair in the bar of a rum-saloon, ’N’ there he spun me a juice of a yarn to this-yer brand of tune."
+    },
+    {
+      "id": "s36-1",
+      "sceneId": "s36",
+      "text": "‘It’s a solemn gospel, mate,’ he says, ‘but a man as ships aboard A steamer-tramp, he gets his whack of the wonders of the Lord-- Such as roaches crawlin’ over his bunk, ’n’ snakes inside his bread,"
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "‘But that there’s by the way,’ says he; ‘the yarn I’m goin’ to spin Is about myself ’n’ the life I led in the last ship I was in,"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "Wi’ one o’ the brand o’ Cain for mate ’n’ a human mistake for cook."
+    },
+    {
+      "id": "s38-1",
+      "sceneId": "s38",
+      "text": "‘We’d a week or so of dippin’ around in a wind from outer hell, With a fathom or more of broken sea at large in the forrard well, Till our boats were bashed and bust and broke and gone to Davy Jones,"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "‘We slowed her down and started the horn and watch and watch about, We froze the marrow in all our bones a-keepin’ a good look-out, ’N’ the ninth night out, in the middle watch, I woke from a pleasant"
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "With the smash of a steamer ramming our plates a point abaft the beam."
+    },
+    {
+      "id": "s40-1",
+      "sceneId": "s40",
+      "text": "‘’Twas cold and dark when I fetched the deck, dirty ’n’ cold ’n’ thick, ’N’ there was a feel in the way she rode as fairly turned me sick;-- She was settlin’, listin’ quickly down, ’n’ I heard the mates a-cursin’, ’N’ I heard the wash ’n’ the grumble-grunt of a steamer’s screws"
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "‘She was leavin’ us, mate, to sink or swim, ’n’ the words we took"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "They turned the port-light grassy-green ’n’ the starboard rosy-red. We give her a hot perpetual taste of the singeing curse of Cain, As we heard her back ’n’ clear the wreck ’n’ off to her course again."
+    },
+    {
+      "id": "s42-1",
+      "sceneId": "s42",
+      "text": "‘Then the mate came dancin’ on to the scene, ’n’ he says, “Now quit"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "Or I’ll smash yer skulls, so help me James, ’n’ let some wisdom in. Ye dodderin’ scum o’ the slums,” he says, “are ye drunk or blazin’ daft? If ye wish to save yer sickly hides, ye’d best contrive a raft.”"
+    },
+    {
+      "id": "s43-1",
+      "sceneId": "s43",
+      "text": "‘So he spoke us fair and turned us to, ’n’ we wrought wi’ tooth and nail Wi’ scantling, casks, ’n’ coops ’n’ ropes, ’n’ boiler-plates ’n’ sail, ’N’ all the while it were dark ’n’ cold ’n’ dirty as it could be, ’N’ she was soggy ’n’ settlin’ down to a berth beneath the sea."
+    },
+    {
+      "id": "s43-2",
+      "sceneId": "s43",
+      "text": "‘Soggy she grew, ’n’ she didn’t lift, ’n’ she listed more ’n’ more, Till her bell struck ’n’ her boiler-pipes began to wheeze ’n’ snore; She settled, settled, listed, heeled, ’n’ then may I be cust, If her sneezin’, wheezin’ boiler-pipes did not begin to bust!"
+    },
+    {
+      "id": "s43-3",
+      "sceneId": "s43",
+      "text": "‘’N’ then the stars began to shine, ’n’ the birds began to sing, ’N’ the next I knowed I was bandaged up ’n’ my arm were in a sling, ’N’ a swab in uniform were there, ’n’ “Well,” says he, “’n’ how Are yer arms, ’n’ legs, ’n’ liver, ’n’ lungs, ’n’ bones a-feelin’ now?”"
+    },
+    {
+      "id": "s43-4",
+      "sceneId": "s43",
+      "text": "“Where am I?” says I, ’n’ he says, says he, a-cantin’ to the roll,"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "’N’ you’ve had a shave, if you wish to know, from the port o’"
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "Drink this,” he says, ’n’ I takes ’n’ drinks, ’n’ s’elp me, it was rum!"
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "’N’ there the skipper were given a purse by a grateful Board of Trade."
+    },
+    {
+      "id": "s46-1",
+      "sceneId": "s46",
+      "text": "‘That’s the end o’ the yarn,’ he says, ’n’ he takes ’n’ wipes his lips, Them’s the works o’ the Lord you sees in steam ’n’ sailin’ ships,--"
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "’N’ work o’ nights ’n’ work o’ days enough to strike you dead.’"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "It was rum for Poll, and rum for Nan, and gin for Jolly Jack."
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "To sleep on, when his watch was through,-- So he did."
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "‘Them birds goin’ fishin’ is nothin’ but souls o’ the drowned,"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "They fishes, they never stands watches, they waggle their wings;"
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "And coming the proud over all o’ the birds o’ the sea.’"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "All in the feathered palm-tree tops the bright green parrots screech, The white line of the running surf goes booming down the beach, But I shall never see them, though the land lies close aboard, I’ve shaped the last long silent tack as takes one to the Lord."
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "I’m bound for somewhere south and far beyond the track of ships; I’ve run my rags of colours up and clinched them to the stay,"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "You’ll mainsail-haul my bits o’ things when Christ has took my soul, ’N’ you’ll lay me quiet somewhere at the landward end the Mole, Where I shall hear the steamers’ sterns a-squattering from the heave, And the topsail blocks a-piping when a rope-yarn fouls the sheave."
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "The landfall lies to windward and the wind comes light and short,"
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "And--prop a fellow, Jakey--Lord, it’s time for me to go!"
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "An’ Bill can have my sea-boots, Nigger Jim can have my knife,"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "An’ the ship can have my blessing, an’ the Lord can have my life,"
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "An’ dreaming down below there in the tangled greens an’ blues,"
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "I shall hear the ships complainin’ an’ the cursin’ of the crews,"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "I shall hear the blocks a-grunting in the bumpkins over-side,"
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "An’ Bill can have my sea-boots, Nigger Jim can have my knife,"
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "An’ the ship can have my blessing and the Lord can have my life, For it’s time I quit the deck and went aloft."
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "’N’ Joe was swiggin’ his gasket taut, ’n’ I felt the stirrup *give*, ’N’ he dropped sheer from the tops’l-yard ’n’ barely cleared the rail,"
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "I seed him rise in the white o’ the wake, I seed him lift a hand (’N’ him in his oilskin suit ’n’ all), I heard him lift a cry; ’N’ there was his place on the yard ’n’ all, ’n’ the stirrup’s"
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "He couldn’t have kept afloat for long an’ him lashed up ’n’ all, ’N’ we couldn’t see him for long, for the sea was blurred with"
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "When the watch went below."
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "So-long, my fancy man!"
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "Oh yesterday, I t’ink it was, while cruisin’ down the street, I met with Bill.--‘Hullo,’ he says, ‘let’s give the girls a treat.’ We’d red bandanas round our necks ’n’ our shrouds new rattled down, So we filled a couple of Santy Cruz and cleared for Sailor Town."
+    },
+    {
+      "id": "s70-1",
+      "sceneId": "s70",
+      "text": "We scooted south with a press of sail till we fetched to a caboose,"
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "Red curtains to the windies, ay, ’n’ white sand to the floor, And an old blind fiddler liltin’ the tune of ‘Lowlands no more.’"
+    },
+    {
+      "id": "s71-1",
+      "sceneId": "s71",
+      "text": "He played the ‘Shaking of the Sheets’ ’n’ the couples did advance,"
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "The old floor rocked and quivered, so it struck beholders dumb,"
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "Yarns of the hooker ‘Spindrift,’ her as had the clipper-bow,-- ‘There ain’t no ships,’ says Bill to me, ‘like that there hooker now.’"
+    },
+    {
+      "id": "s73-1",
+      "sceneId": "s73",
+      "text": "When the old blind fiddler played the tune of ‘Pipe the Watch Below,’ The skew-eyed landlord dowsed the glim and bade us ‘stamp ’n’ go,’ ’N’ we linked it home, did Bill ’n’ I, adown the scattered streets, Until we fetched to Land o’ Nod atween the linen sheets."
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "’N’ I wish-- I wish as I was there."
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "’N’ I wish-- I wish as I was there."
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "’N’ I wish--"
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "I wish as I was there."
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "‘Well, he sogered about decks till sunrise, When a rooster in the hen-coop crowed,"
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "With long green weeds for hair.’"
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "An’ the skipper up an’ took him a crack with an iron belaying-pin Which stiffened him out a rusty corp, as pretty as you could wish, An’ then we shovelled him up in a sack an’ dumped him to the fish."
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "(Which corned from playing the giddy goat an’ leavin’ go the jack); We lashed his chips in clouts of sail an’ ballasted him with stones, ‘The Lord hath taken away,’ we says, an’ we give him to Davy Jones."
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "An’ forrard he falls at last, he does, an’ he lets his mallet go, Dead as a nail with a calenture, an’ that was the end of Joe."
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "All o’ the rest were sailor-men, an’ it come to rain an’ squall, An’ then it was halliards, sheets, an ’tacks ‘clue up, an’ let go all.’ We snugged her down an’ hove her to, an’ the old contrairy cuss Started a plate, an’ settled an’ sank, an’ that was the end of us."
+    },
+    {
+      "id": "s83-1",
+      "sceneId": "s83",
+      "text": "We slopped around on coops an’ planks in the cold an’ in the dark, An’ Bill were drowned, an’ Tom were ate by a swine of a cruel shark, An’ a mail-boat reskied Harry an’ I (which comed of pious prayers), Which brings me here a-kickin’ my heels in the port of Buenos Ayres."
+    },
+    {
+      "id": "s83-2",
+      "sceneId": "s83",
+      "text": "I’m bound for home in the ‘Oronook,’ in a suit of looted duds,"
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "An’ if ever I fetch to Prince’s Stage an’ sets my feet ashore, You bet your hide that there I stay, an’ follers the sea no more."
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "’N’ that there Davy Jones."
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "And both your eyes are bunged and blind like those of a mewling pup, For you’re the juggins who caught the crab and lost the ship the Cup."
+    },
+    {
+      "id": "s86-1",
+      "sceneId": "s86",
+      "text": "He caught a crab in the spurt home, this blushing cherub did, And the ‘Craigie’s’ whaler slipped ahead like a cart-wheel on the skid, And beat us fair by a boat’s nose though we sweated fit to start her, So we are playing at Nero now, and *he’s* the Christian martyr."
+    },
+    {
+      "id": "s86-2",
+      "sceneId": "s86",
+      "text": "And Stroke is lashing a bunch of keys to the buckle-end a belt, And we’re going to lay you over a chest and baste you till you melt. The ‘Craigie’ boys are beating the bell and cheering down the tier, D’ye hear, you Port Mahone baboon, I ask you, do you *hear*?"
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "Shrilly squeal the running sheaves, the weather-gear strains,"
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "‘Ease her when she pitches, *and so-long, my dear*.’"
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "And dancing with the stars to watch, upon the fo’c’s’le head,"
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "For the tug has got the tow-rope and will take us to the Downs, Her paddles churn the river-wrack to muddy greens and browns,"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "The sea-line blue with billows, the land-line blurred and grey;"
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "As the bacca-quidding shell-back shambles aft to take the wheel, And the sea-sick little middy strikes the bell."
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "In the Golden City of St. Mary."
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "In the Golden City of St. Mary."
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "Of the steady Trade Winds blowing."
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "Of the steady Trade Winds blowing."
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "I must down to the seas again, to the lonely sea and the sky,"
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "And the wheel’s kick and the wind’s song and the white sail’s shaking,"
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "I must down to the seas again, for the call of the running tide"
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "And the flung spray and the blown spume, and the sea-gulls crying."
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "And quiet sleep and a sweet dream when the long trick’s over."
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "For a wind’s in the heart of me, a fire’s in my heels."
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "And the whitening of the dead men’s skulls."
+    },
+    {
+      "id": "s103-1",
+      "sceneId": "s103",
+      "text": "Christmas EVE AT SEA"
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "*Rex Judæorum natus est*."
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "Yonder’s Cape St. Vincent and the Dead."
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "Yonder’s Cape St. Vincent and the Dead."
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "And a silver flagon full of red wine to drink when work is done, Like a fine old salt-sea scavenger, like a tarry Buccaneer."
+    },
+    {
+      "id": "s107-1",
+      "sceneId": "s107",
+      "text": "With a sandy creek to careen in, and a pig-tailed Spanish mate,"
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "Like a fine old salt-sea scavenger, like a tarry Buccaneer."
+    },
+    {
+      "id": "s108-1",
+      "sceneId": "s108",
+      "text": "With a taste for Spanish wine-shops and for spending my doubloons,"
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "Like a fine old salt-sea scavenger, like a tarry Buccaneer."
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "And a habit of taking captives and walking them along a board,"
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "With a spy-glass tucked beneath my arm and a cocked hat cocked askew, And a long low rakish schooner a-cutting of the waves in two, And a flag of skull and cross-bones the wickedest that ever flew, Like a fine old salt-sea scavenger, like a tarry Buccaneer."
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "We were schooner-rigged and rakish, with a long and lissome hull, And we flew the pretty colours of the cross-bones and the skull;"
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "It’s a point which tells against us, and a fact to be deplored, But we chased the goodly merchant-men and laid their ships aboard."
+    },
+    {
+      "id": "s113-1",
+      "sceneId": "s113",
+      "text": "Then the dead men fouled the scuppers and the wounded filled the chains, And the paint-work all was spatter-dashed with other people’s brains, She was boarded, she was looted, she was scuttled till she sank,"
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "We could hear the drowning folk lament the absent chicken-coop;"
+    },
+    {
+      "id": "s115-0",
+      "sceneId": "s115",
+      "text": "Than to dance a quiet hornpipe as the old salts taught us to."
+    },
+    {
+      "id": "s115-1",
+      "sceneId": "s115",
+      "text": "O! the fiddle on the fo’c’s’le, and the slapping naked soles, And the genial ‘Down the middle, Jake, and curtsey when she rolls!’"
+    },
+    {
+      "id": "s116-0",
+      "sceneId": "s116",
+      "text": "And the look-out not a-looking and his pipe-bowl glowing red."
+    },
+    {
+      "id": "s116-1",
+      "sceneId": "s116",
+      "text": "Ah! the pig-tailed, quidding pirates and the pretty pranks we played, All have since been put a stop-to by the naughty Board of Trade;"
+    },
+    {
+      "id": "s117-0",
+      "sceneId": "s117",
+      "text": "A little south the sunset in the Islands of the Blest."
+    },
+    {
+      "id": "s118-0",
+      "sceneId": "s118",
+      "text": "I"
+    },
+    {
+      "id": "s119-0",
+      "sceneId": "s119",
+      "text": "Where the gulls are flying, crying in the bright white spray,"
+    },
+    {
+      "id": "s120-0",
+      "sceneId": "s120",
+      "text": "And the prisoners are walking of the planks."
+    },
+    {
+      "id": "s121-0",
+      "sceneId": "s121",
+      "text": "Grant the last prayer that I shall pray, Be good to me, O Lord!"
+    },
+    {
+      "id": "s121-1",
+      "sceneId": "s121",
+      "text": "And let me pass in a night at sea, a night of storm and thunder, In the loud crying of the wind through sail and rope and spar; Send me a ninth great peaceful wave to drown and roll me under To the cold tunny-fishes’ home where the drowned galleons are."
+    },
+    {
+      "id": "s121-2",
+      "sceneId": "s121",
+      "text": "And in the dim green quiet place far out of sight and hearing, Grant I may hear at whiles the wash and thresh of the sea-foam"
+    },
+    {
+      "id": "s122-0",
+      "sceneId": "s122",
+      "text": "Towards the lone northern star and the fair ports of home."
+    },
+    {
+      "id": "s123-0",
+      "sceneId": "s123",
+      "text": "It’s a fine land, the west land, for hearts as tired as mine,"
+    },
+    {
+      "id": "s124-0",
+      "sceneId": "s124",
+      "text": "‘Larks are singing in the west, brother, above the green wheat,"
+    },
+    {
+      "id": "s125-0",
+      "sceneId": "s125",
+      "text": "I’ve a balm for bruised hearts, brother, sleep for aching eyes,’"
+    },
+    {
+      "id": "s126-0",
+      "sceneId": "s126",
+      "text": "To the green grass, the cool grass, and rest for heart and head,"
+    },
+    {
+      "id": "s127-0",
+      "sceneId": "s127",
+      "text": "In the fine land, the west land, the land where I belong."
+    },
+    {
+      "id": "s128-0",
+      "sceneId": "s128",
+      "text": "A long pull,"
+    },
+    {
+      "id": "s129-0",
+      "sceneId": "s129",
+      "text": "And a long long pull to Mydath.’"
+    },
+    {
+      "id": "s130-0",
+      "sceneId": "s130",
+      "text": "Gently, dreamily, quietly over desolate sands!"
+    },
+    {
+      "id": "s131-0",
+      "sceneId": "s131",
+      "text": "An’ jest the dusty road."
+    },
+    {
+      "id": "s132-0",
+      "sceneId": "s132",
+      "text": "Down the dark, silent streets, past the warm, lighted inns."
+    },
+    {
+      "id": "s133-0",
+      "sceneId": "s133",
+      "text": "It’s an easy job for a summer watch, and a pleasant job enough,"
+    },
+    {
+      "id": "s134-0",
+      "sceneId": "s134",
+      "text": "Are these poor songs to brace the arms that help the winches round."
+    },
+    {
+      "id": "s134-1",
+      "sceneId": "s134",
+      "text": "THE Dead Knight"
+    },
+    {
+      "id": "s135-0",
+      "sceneId": "s135",
+      "text": "When tides are wandering out or in."
+    },
+    {
+      "id": "s136-0",
+      "sceneId": "s136",
+      "text": "Tramping at night in the cold and wet, I passed the lighted inn,"
+    },
+    {
+      "id": "s137-0",
+      "sceneId": "s137",
+      "text": "It was full of the laugh of the leaves and the song the wind sings; It brought the tears and the choked throat, and a catch to the"
+    },
+    {
+      "id": "s138-0",
+      "sceneId": "s138",
+      "text": "And it brought a bitter thought of the days that now were dead to me,"
+    },
+    {
+      "id": "s139-0",
+      "sceneId": "s139",
+      "text": "Days that were dead to me indeed. I bowed my head to the rain, And I passed by the lighted inn to the lonely roads again."
+    },
+    {
+      "id": "s139-1",
+      "sceneId": "s139",
+      "text": "ON Malvern Hill"
+    },
+    {
+      "id": "s140-0",
+      "sceneId": "s140",
+      "text": "Centurion and signifer."
+    },
+    {
+      "id": "s141-0",
+      "sceneId": "s141",
+      "text": "It is good to be out on the road, and going one knows not where, Going through meadow and village, one knows not whither nor why;"
+    },
+    {
+      "id": "s142-0",
+      "sceneId": "s142",
+      "text": "Under the flying white clouds, and the broad blue lift of the sky;"
+    },
+    {
+      "id": "s142-1",
+      "sceneId": "s142",
+      "text": "And to halt at the chattering brook, in the tall green fern at the brink"
+    },
+    {
+      "id": "s143-0",
+      "sceneId": "s143",
+      "text": "Where the shy-eyed delicate deer troop down to the pools to drink, When the stars are mellow and large at the coming on of the night."
+    },
+    {
+      "id": "s143-1",
+      "sceneId": "s143",
+      "text": "O! to feel the warmth of the rain, and the homely smell of the earth, Is a tune for the blood to jig to, a joy past power of words; And the blessed green comely meadows seem all a-ripple with mirth At the lilt of the shifting feet, and the dear wild cry of the birds."
+    },
+    {
+      "id": "s144-0",
+      "sceneId": "s144",
+      "text": "Fades into smoke, and now the gusty oaks are A silent army of phantoms thronging A land of shadows."
+    },
+    {
+      "id": "s145-0",
+      "sceneId": "s145",
+      "text": "May the Spring bring the flowers."
+    },
+    {
+      "id": "s146-0",
+      "sceneId": "s146",
+      "text": "The king’s face and the cur’s face, and the face of the stuffed swine, They are passing, they are passing, their eyes look into mine."
+    },
+    {
+      "id": "s147-0",
+      "sceneId": "s147",
+      "text": "The thrill of the blood pulsing, the tick of the heart’s beat,"
+    },
+    {
+      "id": "s148-0",
+      "sceneId": "s148",
+      "text": "Who are passing, changing always, and never have changed or passed."
+    },
+    {
+      "id": "s148-1",
+      "sceneId": "s148",
+      "text": "IN Memory OF A. P. R."
+    },
+    {
+      "id": "s148-2",
+      "sceneId": "s148",
+      "text": "Once in the windy wintry weather, The road dust blowing in our eyes, We starved or tramped or slept together"
+    },
+    {
+      "id": "s149-0",
+      "sceneId": "s149",
+      "text": "‘With me upon the roads again!’"
+    },
+    {
+      "id": "s150-0",
+      "sceneId": "s150",
+      "text": "They drove us from the stricken field and bayed us into keep;"
+    },
+    {
+      "id": "s151-0",
+      "sceneId": "s151",
+      "text": "By the living God, we’ll try the game again!"
+    },
+    {
+      "id": "s151-1",
+      "sceneId": "s151",
+      "text": "Oh yesterday our little troop was ridden through and through,"
+    },
+    {
+      "id": "s152-0",
+      "sceneId": "s152",
+      "text": "But to-morrow,"
+    },
+    {
+      "id": "s153-0",
+      "sceneId": "s153",
+      "text": "The wake-lights burn and drip about our hacked, disfigured dead,"
+    },
+    {
+      "id": "s154-0",
+      "sceneId": "s154",
+      "text": "By the living God, we’ll try the game again!"
+    },
+    {
+      "id": "s155-0",
+      "sceneId": "s155",
+      "text": "A king’s son ahead of them showing them the way."
+    },
+    {
+      "id": "s156-0",
+      "sceneId": "s156",
+      "text": "The tick of the blood is settling slow, my heart will soon be still,"
+    },
+    {
+      "id": "s157-0",
+      "sceneId": "s157",
+      "text": "For the weary vigil with sightless eyes that may not see the sky."
+    },
+    {
+      "id": "s157-1",
+      "sceneId": "s157",
+      "text": "I have lived my life: I have spilt the wine that God the Maker gave,"
+    },
+    {
+      "id": "s158-0",
+      "sceneId": "s158",
+      "text": "And cover me in with cleanly mould and old and lichened stones, In a place where ever the cry of the wind shall thrill my sleepy bones."
+    },
+    {
+      "id": "s159-0",
+      "sceneId": "s159",
+      "text": "Cover me in with wholesome earth, and weep and leave me there; And get you gone with a kindly thought and an old tune and a sigh, And leave me alone, asleep, at rest, for ready and ripe am I."
+    },
+    {
+      "id": "s160-0",
+      "sceneId": "s160",
+      "text": "amidship section and the taffrail. (For ‘taffrail,’ *see* below.)"
+    },
+    {
+      "id": "s161-0",
+      "sceneId": "s161",
+      "text": "*Advance-note.*--A note for one month’s wages issued to sailors on"
+    },
+    {
+      "id": "s162-0",
+      "sceneId": "s162",
+      "text": "handiness and peculiar club-shape, are sometimes used as bludgeons."
+    },
+    {
+      "id": "s162-1",
+      "sceneId": "s162",
+      "text": "*Bloody.*--An intensive derived from the substantive ‘blood,’ a name applied to the Bucks, Scowrers, and Mohocks of the seventeenth"
+    },
+    {
+      "id": "s163-0",
+      "sceneId": "s163",
+      "text": "*Blue Peter.*--A blue and white flag hoisted at the fore-trucks of"
+    },
+    {
+      "id": "s164-0",
+      "sceneId": "s164",
+      "text": "*Bull of Barney.*--A beast mentioned in an unquotable sea-proverb."
+    },
+    {
+      "id": "s164-1",
+      "sceneId": "s164",
+      "text": "*Bumpkin.*--An iron bar (projecting out-board from the ship’s side) to which the lower and topsail brace blocks are sometimes hooked."
+    },
+    {
+      "id": "s165-0",
+      "sceneId": "s165",
+      "text": "*Chanty.*--A song sung to lighten labour at the capstan sheets, and halliards. The soloist is known as the chanty-man, and is usually a person of some authority in the fo’c’s’le. Many chanties are of"
+    },
+    {
+      "id": "s166-0",
+      "sceneId": "s166",
+      "text": "*Clout.*--A rag or cloth. Also a blow:--‘I fetched him a clout i’"
+    },
+    {
+      "id": "s167-0",
+      "sceneId": "s167",
+      "text": "*Crimp.*--A sort of scoundrelly land-shark preying upon sailors."
+    },
+    {
+      "id": "s167-1",
+      "sceneId": "s167",
+      "text": "*D.B.S.*--Distressed British Sailor. A term applied to those who"
+    },
+    {
+      "id": "s168-0",
+      "sceneId": "s168",
+      "text": "*Dungaree.*--A cheap, rough thin cloth (generally blue or brown),"
+    },
+    {
+      "id": "s169-0",
+      "sceneId": "s169",
+      "text": "*Fo’c’s’le (Forecastle).*--The deck-house or living-room of the crew. The word is often used to indicate the crew, or those members"
+    },
+    {
+      "id": "s170-0",
+      "sceneId": "s170",
+      "text": "*Hooker.*--A periphrasis for ship, I suppose from a ship’s carrying"
+    },
+    {
+      "id": "s171-0",
+      "sceneId": "s171",
+      "text": "*Jack or Jackstay.*--A slender iron rail running along the upper"
+    },
+    {
+      "id": "s172-0",
+      "sceneId": "s172",
+      "text": "*Leeward.*--Pronounced ‘looard.’ That quarter to which the wind"
+    },
+    {
+      "id": "s173-0",
+      "sceneId": "s173",
+      "text": "*Main-shrouds.*--Ropes, usually wire, supporting lateral strains"
+    },
+    {
+      "id": "s174-0",
+      "sceneId": "s174",
+      "text": "sea-fowls, common in high latitudes, oily to taste, gluttonous."
+    },
+    {
+      "id": "s175-0",
+      "sceneId": "s175",
+      "text": "*Port Mahon Baboon*, or *Port Mahon Soger*.--I have been unable to discover either the origin of these insulting epithets or the reasons for the peculiar bitterness with which they sting the marine recipient. They are older than Dana (*circa* 1840)."
+    },
+    {
+      "id": "s175-1",
+      "sceneId": "s175",
+      "text": "An old merchant sailor, now dead, once told me that Port Mahon was that godless city from which the Ark set sail, in which case the name may have some traditional connection with that evil ‘Mahoun’ or ‘Mahu,’ prince of darkness, mentioned by Shakespeare and some of"
+    },
+    {
+      "id": "s176-0",
+      "sceneId": "s176",
+      "text": "The real Port Mahon, a fine harbour in Minorca, was taken by the French, from Admiral Byng, in the year 1756."
+    },
+    {
+      "id": "s177-0",
+      "sceneId": "s177",
+      "text": "*Soger.*--A laggard, malingerer, or hang-back. To loaf or skulk or"
+    },
+    {
+      "id": "s178-0",
+      "sceneId": "s178",
+      "text": "*Spunyarn.*--A three-strand line spun out of old rope-yarns knotted"
+    },
+    {
+      "id": "s179-0",
+      "sceneId": "s179",
+      "text": "spinning of such yarn is a favourite occupation in fine weather."
+    },
+    {
+      "id": "s180-0",
+      "sceneId": "s180",
+      "text": "*Tack.*--To stay or ’bout ship. A reach to windward. The weather"
+    },
+    {
+      "id": "s181-0",
+      "sceneId": "s181",
+      "text": "*Windward* or *Weather*.--That quarter from which the wind blows."
+    },
+    {
+      "id": "s181-1",
+      "sceneId": "s181",
+      "text": "The following pages contain advertisements of books by the same author,"
+    },
+    {
+      "id": "s182-0",
+      "sceneId": "s182",
+      "text": "Cloth, 12mo, $1.25 net; postpaid, $1.36"
+    },
+    {
+      "id": "s182-1",
+      "sceneId": "s182",
+      "text": "“Neither in the design nor in the telling did or could ‘Enoch Arden’"
+    },
+    {
+      "id": "s183-0",
+      "sceneId": "s183",
+      "text": "Cloth, 12mo. Preparing"
+    },
+    {
+      "id": "s183-1",
+      "sceneId": "s183",
+      "text": "As a sailor before the mast Masefield has traveled the world over. Many of the tales in this volume are his own experiences written with the"
+    },
+    {
+      "id": "s184-0",
+      "sceneId": "s184",
+      "text": "Cloth, 12mo. Preparing"
+    },
+    {
+      "id": "s184-1",
+      "sceneId": "s184",
+      "text": "A play such as only the author of “Nan” could have written. Tense in situation and impressive in its poetry it conveys Masefield’s genius in the handling of the dramatic form."
+    },
+    {
+      "id": "s184-2",
+      "sceneId": "s184",
+      "text": "Published BY"
+    },
+    {
+      "id": "s184-3",
+      "sceneId": "s184",
+      "text": "THE Macmillan Company 64-66 Fifth Avenue New York"
+    },
+    {
+      "id": "s184-4",
+      "sceneId": "s184",
+      "text": "John Masefield’S"
+    },
+    {
+      "id": "s185-0",
+      "sceneId": "s185",
+      "text": "Cloth, $1.25 net; postpaid, $1.38"
+    },
+    {
+      "id": "s185-1",
+      "sceneId": "s185",
+      "text": "NEW AND Revised Edition"
+    },
+    {
+      "id": "s185-2",
+      "sceneId": "s185",
+      "text": "“_The Everlasting Mercy” was awarded the Edward de Polignac prize of $500 by the Royal Society of Literature for the best imaginative work of"
+    },
+    {
+      "id": "s186-0",
+      "sceneId": "s186",
+      "text": "“John Masefield is the man of the hour, and the man of to-morrow too, in"
+    },
+    {
+      "id": "s187-0",
+      "sceneId": "s187",
+      "text": "“--recreates a wholly new drama of existence.”--William Stanley"
+    },
+    {
+      "id": "s188-0",
+      "sceneId": "s188",
+      "text": "“Mr. Masefield comes like a flash of light across contemporary English poetry, and he trails glory where his imaginations reveals the substances of life. The improbable has been accomplished by Mr. Masefield; he has made poetry out of the very material that has refused to yield it for almost a score of years. It has only yielded it with a"
+    },
+    {
+      "id": "s189-0",
+      "sceneId": "s189",
+      "text": "“Originality, force, distinction, and deep knowledge of the human"
+    },
+    {
+      "id": "s190-0",
+      "sceneId": "s190",
+      "text": "“A vigor and sincerity rare in modern English literature.”--_The"
+    },
+    {
+      "id": "s191-0",
+      "sceneId": "s191",
+      "text": "“If Mr. Masefield has occasionally appeared to touch a reminiscent chord with George Meredith, it is merely an example of his good taste and the sameness of big themes.”--George Middleton in *La Follette’s Magazine*."
+    },
+    {
+      "id": "s191-1",
+      "sceneId": "s191",
+      "text": "Published BY"
+    },
+    {
+      "id": "s191-2",
+      "sceneId": "s191",
+      "text": "THE Macmillan Company"
+    },
+    {
+      "id": "s191-3",
+      "sceneId": "s191",
+      "text": "64-66 Fifth Avenue New York"
+    },
+    {
+      "id": "s192-0",
+      "sceneId": "s192",
+      "text": "Cloth, 12mo, $1.30 net; postpaid, $1.43"
+    },
+    {
+      "id": "s193-0",
+      "sceneId": "s193",
+      "text": "“John Masefield has produced the finest literature of the year.”--J. W."
+    },
+    {
+      "id": "s194-0",
+      "sceneId": "s194",
+      "text": "“John Masefield is the most interesting poetic personality of the"
+    },
+    {
+      "id": "s195-0",
+      "sceneId": "s195",
+      "text": "“Ah! the story of that rounding the Horn! Never in prose has the sea"
+    },
+    {
+      "id": "s196-0",
+      "sceneId": "s196",
+      "text": "“Masefield’s new book attracts the widest attention from those who in"
+    },
+    {
+      "id": "s197-0",
+      "sceneId": "s197",
+      "text": "“A genuine sailor and a genuine poet are a rare combination; they have produced a rare poem of the sea, which has made Mr. Masefield’s position in literature secure beyond the reach of caviling.”--_Everybody’s"
+    },
+    {
+      "id": "s198-0",
+      "sceneId": "s198",
+      "text": "“Masefield has prisoned in verse the spirit of life at sea.”--_N. Y."
+    },
+    {
+      "id": "s199-0",
+      "sceneId": "s199",
+      "text": "“There is strength about everything Masefield writes that compels the feeling that he has an inward eye on which he draws to shape new films of old pictures. In these pictures is freshness combined with power, which form the keynotes of his poetry.”--*N. Y. Globe.*"
+    },
+    {
+      "id": "s199-1",
+      "sceneId": "s199",
+      "text": "Published BY"
+    },
+    {
+      "id": "s199-2",
+      "sceneId": "s199",
+      "text": "THE Macmillan Company 64-66 Fifth Avenue New York"
+    },
+    {
+      "id": "s200-0",
+      "sceneId": "s200",
+      "text": "Contains “The Shirt,” a new poem of impressive poignancy and power."
+    },
+    {
+      "id": "s200-1",
+      "sceneId": "s200",
+      "text": "“A Millet in word-painting, who writes with a terrible simplicity, is Wilfrid Wilson Gibson, born in Hexham, England, in 1878, of whom Canon Cheyne wrote: ‘A new poet of the people has risen up among us.’ The story of a soul is written as plainly in ‘Daily Bread’ as in ‘The Divine"
+    },
+    {
+      "id": "s201-0",
+      "sceneId": "s201",
+      "text": "“In ‘Fires’ as in ‘Daily Bread,’ the fundamental note is human sympathy with the whole of life. Impressive as these dramas are, it is in their cumulative effect that they are chiefly powerful.”--*Atlantic Monthly.*"
+    },
+    {
+      "id": "s202-0",
+      "sceneId": "s202",
+      "text": "“Mr. Gibson is a genuine singer of his own day and turns into appealing harmony the world’s harshly jarring notes of poverty and pain.”--*The Outlook.*"
+    },
+    {
+      "id": "s203-0",
+      "sceneId": "s203",
+      "text": "64-66 Fifth Avenue New York"
+    },
+    {
+      "id": "s203-1",
+      "sceneId": "s203",
+      "text": "Three Important New Volumes of Poetry"
+    },
+    {
+      "id": "s204-0",
+      "sceneId": "s204",
+      "text": "This book introduces another poet of promise to the verse-lovers of this country. It is of interest to learn that Mr. Helston, who for several years was an operative mechanic in electrical works, has created a remarkable impression in England where much is expected of him. This volume, characterized by verse of rare beauty, presents his most representative work, ranging from the long descriptive title-poem to shorter lyrics."
+    },
+    {
+      "id": "s205-0",
+      "sceneId": "s205",
+      "text": "“His is perhaps the most confident of the prophecies of our new poets for he has seen most clearly the poetry in the new life. His song is full of the spirit of youth and hope.... It is the song that the new century needs. His verse is strong and flexible and has an ease, a naturalness, a rhythm that is rare in young poets. In many of his"
+    },
+    {
+      "id": "s206-0",
+      "sceneId": "s206",
+      "text": "Myself AND I $1.00 net"
+    },
+    {
+      "id": "s206-1",
+      "sceneId": "s206",
+      "text": "“For some years the poems of Miss Davis have attracted wide attention in the best periodicals. That note of wistful mysticism which shimmers in almost every line gives her art a distinction that is bound to make its appeal. In this first book--where every verse is significant--Miss Davis has achieved very beautiful and serious poetry.”--*Boston Transcript.*"
+    },
+    {
+      "id": "s206-2",
+      "sceneId": "s206",
+      "text": "Published BY"
+    },
+    {
+      "id": "s206-3",
+      "sceneId": "s206",
+      "text": "THE Macmillan Company 64-66 Fifth Avenue New York"
+    }
+  ]
+}

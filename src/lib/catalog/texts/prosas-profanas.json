@@ -1,0 +1,3088 @@
+{
+  "id": "prosas-profanas",
+  "title": "Prosas Profanas",
+  "author": "Rubén Darío",
+  "year": "1896",
+  "note": "Project Gutenberg 47650",
+  "minutes": 57,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Letras itálicas son denotadas con líneas",
+      "place": "Letras itálicas son denotadas con líneas",
+      "reentry": "Las versalitas (letras mayúsculas de tamaño igual a las minúsculas) han sido sustituidas por letras mayúsculas de tamaño normal.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "De",
+      "place": "De",
+      "reentry": "Enrique Ochoa",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Palabras Liminares",
+      "place": "Palabras Liminares",
+      "reentry": "*DESPUÉS de* Azul.. *después de* Los Raros, _voces insinuantes, buena y mala intención, entusiasmo sonoro y envidia subterránea--todo bella cosecha--, solicitaron lo que, en conciencia, no he creído fructuoso ni",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Ni fructuoso ni oportuno:",
+      "place": "Ni fructuoso ni oportuno:",
+      "reentry": "a) _Por la absoluta falta de elevación mental de la mayoría pensante de nuestro continente, en la cual impera el universal personaje clasificado por Remy de Gourmont con el nombre de Celui-qui-ne-comprend-pas. Celui-qui-ne-comprend pas es, ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Poeta, rastaquouer,",
+      "place": "Poeta, rastaquouer,",
+      "reentry": "b) _Porque la obra colectiva de los nuevos de América es aún vana, estando muchos de los mejores talentos en el limbo de un completo",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Desconocimiento del mismo Arte a que se consagran",
+      "place": "Desconocimiento del mismo Arte a que se consagran",
+      "reentry": "c) *Porque proclamando, como proclamo, una estética acrática, la imposición de un modelo o de un código implicaría una contradicción.*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Sobre todo, a mí\". Gran decir",
+      "place": "Sobre todo, a mí\". Gran decir",
+      "reentry": "[Ilustración]",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Hombre soy",
+      "place": "Hombre soy",
+      "reentry": "[Ilustración]",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Cuya corte--oro, seda, mármol--me acuerdo en sueños",
+      "place": "Cuya corte--oro, seda, mármol--me acuerdo en sueños",
+      "reentry": "(_Si hay poesía en nuestra América, ella está en las cosas viejas: en Palenke y Utatlán, en el indio legendario, y en el inca sensual y fino, y en el gran Moctezuma de la silla de oro. Lo demás es tuyo, demócrata",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "¡Y mañana!",
+      "place": "¡Y mañana!",
+      "reentry": "[Ilustración]",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "¡Verlaine...!)",
+      "place": "¡Verlaine...!)",
+      "reentry": "_Luego al despedirme--: \"Abuelo, preciso es decíroslo: mi esposa es de",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Mi tierra; mi querida, de París.\"",
+      "place": "Mi tierra; mi querida, de París.\"",
+      "reentry": "[Ilustración]",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "¿Y la cuestión métrica? ¿Y el ritmo?",
+      "place": "¿Y la cuestión métrica? ¿Y el ritmo?",
+      "reentry": "_Como cada palabra tiene una alma, hay en cada verso, además de la armonía verbal, una melodía ideal. La música es sólo de la idea, muchas",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Veces",
+      "place": "Veces",
+      "reentry": "[Ilustración]",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Cae a tus pies una rosa, otra rosa, otra rosa. ¡Y besos!",
+      "place": "Cae a tus pies una rosa, otra rosa, otra rosa. ¡Y besos!",
+      "reentry": "[Ilustración]",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Pero sé que Eulalia ríe todavía,",
+      "place": "Pero sé que Eulalia ríe todavía,",
+      "reentry": "¡Y es cruel y eterna su risa de oro!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "En los perfumes que en el aire dejas;",
+      "place": "En los perfumes que en el aire dejas;",
+      "reentry": "Y el dios de piedra se despierte y ría.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Y hay tras ella una fuga de leopardos",
+      "place": "Y hay tras ella una fuga de leopardos",
+      "reentry": "[Ilustración]",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Wolfgang la larga cabellera, el manto;",
+      "place": "Wolfgang la larga cabellera, el manto;",
+      "reentry": "Y de la uva teutona el blanco vino.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Roja cual las heridas y las bocas",
+      "place": "Roja cual las heridas y las bocas",
+      "reentry": "[Ilustración]",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "Que el tesoro que vela la importuna",
+      "place": "Que el tesoro que vela la importuna",
+      "reentry": "Caricia de Marfil de tu abanico.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Ornado al par de crisantemo y loto,",
+      "place": "Ornado al par de crisantemo y loto,",
+      "reentry": "La civilización de Yamagata.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "Tendrán rosas y miel tus dromedarios",
+      "place": "Tendrán rosas y miel tus dromedarios",
+      "reentry": "Tigre Hotel, Diciembre 1894.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "Y que llega de lejos, vencedor de la Muerte,",
+      "place": "Y que llega de lejos, vencedor de la Muerte,",
+      "reentry": "A encenderte los labios con su beso de amor!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Y hechos son de perfume, de armiño,",
+      "place": "Y hechos son de perfume, de armiño,",
+      "reentry": "De luz alba, de seda y de sueño.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "¡Yo soy el postrer gaucho que parte para siempre,",
+      "place": "¡Yo soy el postrer gaucho que parte para siempre,",
+      "reentry": "De nuestra vieja patria llevando el corazón!»",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "De las grandes ojeras, ¡oh, luz negra",
+      "place": "De las grandes ojeras, ¡oh, luz negra",
+      "reentry": "Que hace cantar a Pan bajo las viñas!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Le carnaval s'amuse!",
+      "place": "Le carnaval s'amuse!",
+      "reentry": "Viens le chanter, ma Muse..._ Banville.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Los carnavales",
+      "place": "Los carnavales",
+      "reentry": "Sus gritos y sus canciones. Sus comparsas y sus trajes Sus perlas, tintes y encajes y pompones.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "Con su faz de porcelana",
+      "place": "Con su faz de porcelana",
+      "reentry": "De una blancura eucarística.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "El resplandor de una estrella",
+      "place": "El resplandor de una estrella",
+      "reentry": "Que fuese alma de una esfinge.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "La orgullosa bizarría,",
+      "place": "La orgullosa bizarría,",
+      "reentry": "De la cabellera espesa.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "La pinte junto a una flor",
+      "place": "La pinte junto a una flor",
+      "reentry": "En un vaso de marfil.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "¡Mira cómo mancha tu corpiño blanco",
+      "place": "¡Mira cómo mancha tu corpiño blanco",
+      "reentry": "La más roja rosa que hay en mi jardín!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "Iban mil amores de flechas tremendas",
+      "place": "Iban mil amores de flechas tremendas",
+      "reentry": "En aquella noche de Carnestolendas.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "--«¡Pierrot! ten por cierto",
+      "place": "--«¡Pierrot! ten por cierto",
+      "reentry": "Que tu fiel amada, que la Luna, ha muerto!»",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "Y llevan gozosos, sátiro y centauro",
+      "place": "Y llevan gozosos, sátiro y centauro",
+      "reentry": "La alegría noble del vino de oro.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "El clavel de sangre y la rosa de arrebol,",
+      "place": "El clavel de sangre y la rosa de arrebol,",
+      "reentry": "en el país del sol!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "En el país del sol!",
+      "place": "En el país del sol!",
+      "reentry": "Vuelve, pues, a tu barca, que tienes lista la vela--(resuena,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "De oro bajo un regio azul parasol,",
+      "place": "De oro bajo un regio azul parasol,",
+      "reentry": "en el país del sol.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "La Muerte, la celosa, por ver si me querías,",
+      "place": "La Muerte, la celosa, por ver si me querías,",
+      "reentry": "¡Como a una margarita de amor, te deshojó!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "Mía: luz del día,",
+      "place": "Mía: luz del día,",
+      "reentry": "Mía: rosas, llamas.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "¿No has de ser entonces",
+      "place": "¿No has de ser entonces",
+      "reentry": "Mía hasta la muerte?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "Tu secreto es una",
+      "place": "Tu secreto es una",
+      "reentry": "Melodía en un rayo de luna... --¿Una melodía?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "¿Ella?",
+      "place": "¿Ella?",
+      "reentry": "(No la anuncian. No llega aún.)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "Apagaré la llama de la vestal intacta",
+      "place": "Apagaré la llama de la vestal intacta",
+      "reentry": "¡Y la faunesa antigua me rugirá de amor!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "La voz de los criados cuadrúpedos divinos",
+      "place": "La voz de los criados cuadrúpedos divinos",
+      "reentry": "QUIRÓN",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "De los astros, se eleva bajo el cielo nocturno",
+      "place": "De los astros, se eleva bajo el cielo nocturno",
+      "reentry": "QUIRÓN",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "De la suprema fuerza, de la virtud del Numen",
+      "place": "De la suprema fuerza, de la virtud del Numen",
+      "reentry": "QUIRÓN",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "Tal el hijo robusto de Ixión y de la Nube",
+      "place": "Tal el hijo robusto de Ixión y de la Nube",
+      "reentry": "QUIRÓN",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "O gozo: el cuervo es malo y la torcaz es buena",
+      "place": "O gozo: el cuervo es malo y la torcaz es buena",
+      "reentry": "QUIRÓN",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "¡Oh, envidia de las flores y celos de los astros!",
+      "place": "¡Oh, envidia de las flores y celos de los astros!",
+      "reentry": "QUIRÓN",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "¡No olvidaré los ojos radiantes de Hipodamia!",
+      "place": "¡No olvidaré los ojos radiantes de Hipodamia!",
+      "reentry": "Hipea",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "La hembra humana es hermana del Dolor y la Muerte",
+      "place": "La hembra humana es hermana del Dolor y la Muerte",
+      "reentry": "QUIRÓN",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "El monstruo, siendo el símbolo, se viste de belleza",
+      "place": "El monstruo, siendo el símbolo, se viste de belleza",
+      "reentry": "Grineo",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "Yo amo lo inanimado que amó el divino Hesiodo",
+      "place": "Yo amo lo inanimado que amó el divino Hesiodo",
+      "reentry": "QUIRÓN",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "Y el mármol en que duermen la línea y la palabra",
+      "place": "Y el mármol en que duermen la línea y la palabra",
+      "reentry": "QUIRÓN",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "La Muerte es de la Vida la inseparable hermana",
+      "place": "La Muerte es de la Vida la inseparable hermana",
+      "reentry": "QUIRÓN",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "Los mismos dioses buscan la dulce paz que vierte",
+      "place": "Los mismos dioses buscan la dulce paz que vierte",
+      "reentry": "QUIRÓN",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "Y por el llano extenso van en tropel sonoro",
+      "place": "Y por el llano extenso van en tropel sonoro",
+      "reentry": "Los Centauros, y al paso, tiembla la Isla de Oro.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "¿Has visto acaso el vuelo del alma de mi Stella,",
+      "place": "¿Has visto acaso el vuelo del alma de mi Stella,",
+      "reentry": "La hermana de Ligeia, por quien mi canto a veces es tan triste?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "Pórtico[1]",
+      "place": "Pórtico[1]",
+      "reentry": "[1] Para el libro *En tropel*, del poeta español Salvador Rueda,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "Lleva a sus labios la copa de Horacio,",
+      "place": "Lleva a sus labios la copa de Horacio,",
+      "reentry": "Bebe falerno en su ebúrneo triclinio.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "Ese es el rey del país Fantasía,",
+      "place": "Ese es el rey del país Fantasía,",
+      "reentry": "Que lleva un claro lucero en la frente.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "A una errabunda y fugaz caravana",
+      "place": "A una errabunda y fugaz caravana",
+      "reentry": "Que hace del viento su brújula y guía.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "Sueña y habita en la Alhambra del moro;",
+      "place": "Sueña y habita en la Alhambra del moro;",
+      "reentry": "Y en sus cabellos perfumes derrama.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "Y esto pasó en el reinado de Hugo,",
+      "place": "Y esto pasó en el reinado de Hugo,",
+      "reentry": "Emperador de la barba florida.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "Polítona y triunfante, la seguidilla",
+      "place": "Polítona y triunfante, la seguidilla",
+      "reentry": "Es la flor del sonoro Pindo de España.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "Concibe en una gloria de luz y de harmonía",
+      "place": "Concibe en una gloria de luz y de harmonía",
+      "reentry": "La Helena eterna y pura que encarna el ideal.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "La Página Blanca",
+      "place": "La Página Blanca",
+      "reentry": "*A. A. Lamberti.*",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "Cual si fuese un desierto de hielo,",
+      "place": "Cual si fuese un desierto de hielo,",
+      "reentry": "Atraviesan la página blanca.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "Que vienen al mundo de víctimas trágicas!",
+      "place": "Que vienen al mundo de víctimas trágicas!",
+      "reentry": "Otro lleva",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "En que va, dolorosa difunta,",
+      "place": "En que va, dolorosa difunta,",
+      "reentry": "Como un muerto lirio la pobre Esperanza.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "El que encuentra en los astros del cielo",
+      "place": "El que encuentra en los astros del cielo",
+      "reentry": "Prodigios que abruman y signos que espantan,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "Ya la aljaba de Diciembre se fué toda por el arco",
+      "place": "Ya la aljaba de Diciembre se fué toda por el arco",
+      "reentry": "Del Arquero.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "Donde en triunfo llega Enero,",
+      "place": "Donde en triunfo llega Enero,",
+      "reentry": "Ante Dios bendice al mundo; y su brazo abarca el arco y el Arquero.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "Y el grillo preludia un solo monótono",
+      "place": "Y el grillo preludia un solo monótono",
+      "reentry": "En la única cuerda que está en su violín.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "Y esa es la virtud sacra de la divina Idea",
+      "place": "Y esa es la virtud sacra de la divina Idea",
+      "reentry": "Cuya alma es una sombra que todo lo ilumina.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "Y Apolo:",
+      "place": "Y Apolo:",
+      "reentry": "--«Es Sagitario que ha robado una estrella.»",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "Una cruz que se eleve cubriendo el horizonte",
+      "place": "Una cruz que se eleve cubriendo el horizonte",
+      "reentry": "Y un resplandor sobre la cruz!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "Con que de Saturno celébrase el brillo",
+      "place": "Con que de Saturno celébrase el brillo",
+      "reentry": "En los manicomios y en los hospitales.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "Verso de fuego que al propicio numen",
+      "place": "Verso de fuego que al propicio numen",
+      "reentry": "Cantaba ardiente de la vida el himno.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "Súbitas voces nuestras ansias turban",
+      "place": "Súbitas voces nuestras ansias turban",
+      "reentry": "Lírica procesión al viento esparce",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "Garrido infante, de Eros por hermoso",
+      "place": "Garrido infante, de Eros por hermoso",
+      "reentry": "Emulo y par, risueño aparecía. Y de él en pos de las ménades ardientes, Al aire el busto en que su pompa erigen",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "Circundaban la flor de Citerea",
+      "place": "Circundaban la flor de Citerea",
+      "reentry": "Y el pámpano fragante de las viñas. Aun me parece que mis ojos tornan Al cuadro lleno de color y fuerza: Dos robustos mancebos que los cabos De cadenas metálicas empuñan, Y cuyo porte y músculos de Ares Divinos dones son, pintada fiera",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "Como lleno de luz se dirigía",
+      "place": "Como lleno de luz se dirigía",
+      "reentry": "Amor pasó con su dorada antorcha. Y no lejos del nido en que las aves, Las dos aves de Cipris, sus arrullos Cual tiernas rimas a los aires dieran, Fuí más feliz que el luminoso cisne",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "Vió el Dios viril en mármol cincelado",
+      "place": "Vió el Dios viril en mármol cincelado",
+      "reentry": "Cabe la fresca viña de Corinto.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "Ii.--Palimpsesto",
+      "place": "Ii.--Palimpsesto",
+      "reentry": "_ESCRITA en viejo dialecto eolio",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "Hay sus lagunas",
+      "place": "Hay sus lagunas",
+      "reentry": "...Cuando los toros De las campañas, bajo los oros Que vierte el hijo de Hiperión, Pasan mugiendo, y en las eternas Rocas salvajes de las cavernas Esperezándose ruge el león;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "En grupo lírico van los centauros",
+      "place": "En grupo lírico van los centauros",
+      "reentry": "Con la harmonía de su tropel.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "Se oye el ruido de claras linfas",
+      "place": "Se oye el ruido de claras linfas",
+      "reentry": "Y a la algazara que hacen las ninfas. Risa de plata que el aire riega Hasta sus ávidos oídos llega;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "Del fresco río, donde está ella",
+      "place": "Del fresco río, donde está ella",
+      "reentry": "Blanca y desnuda como una estrella.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "¡Ay del cuitado que a ver se atreve",
+      "place": "¡Ay del cuitado que a ver se atreve",
+      "reentry": "Lo que fué espanto para Acteón!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "Los cascos finos, y en la mirada",
+      "place": "Los cascos finos, y en la mirada",
+      "reentry": "Brilla del sátiro la llamarada. En un instante, veloz y listo,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "Con el orgullo de su conquista",
+      "place": "Con el orgullo de su conquista",
+      "reentry": "¿A dó va Diana? Viva la vista",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "Entre sus dedos humedecidos",
+      "place": "Entre sus dedos humedecidos",
+      "reentry": "Lleva una flecha para el ladrón.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "Con su saeta castigadora",
+      "place": "Con su saeta castigadora",
+      "reentry": "A la robada mató También.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "--¡Princesas, envolvedme con vuestros blancos velos!",
+      "place": "--¡Princesas, envolvedme con vuestros blancos velos!",
+      "reentry": "--¡Príncipes, estrechadme con vuestros brazos rojos!»",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "En su guante de hierro hay una flor naciente,",
+      "place": "En su guante de hierro hay una flor naciente,",
+      "reentry": "Y en lo íntimo del alma como un dulzor de miel.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "Dezir",
+      "place": "Dezir",
+      "reentry": "(A la manera de Johan de Duenyas.)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "Por ti mama",
+      "place": "Por ti mama",
+      "reentry": "sangre de los corazones.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "Que en el vino del amor",
+      "place": "Que en el vino del amor",
+      "reentry": "hay la amargura del mar.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "Nuevo aliento,",
+      "place": "Nuevo aliento,",
+      "reentry": "nueva copa y nuevo vino.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "La vendimia de mi vida",
+      "place": "La vendimia de mi vida",
+      "reentry": "bajo pámpanos de fuego.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "Danzo las danzas de ahora",
+      "place": "Danzo las danzas de ahora",
+      "reentry": "con la música pagana.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "Y aquel de reflejos rojos",
+      "place": "Y aquel de reflejos rojos",
+      "reentry": "que a tu blancor sienta tanto.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "De topacios amarillos",
+      "place": "De topacios amarillos",
+      "reentry": "y esmeraldas nunca vistas.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "Y en el vaso de tu boca",
+      "place": "Y en el vaso de tu boca",
+      "reentry": "te sorberé el corazón.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "La evocada musa antigua",
+      "place": "La evocada musa antigua",
+      "reentry": "su himno de carne levanta.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "Lay",
+      "place": "Lay",
+      "reentry": "(A la manera de Johan de Torres.)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "Preludia por ti una diana",
+      "place": "Preludia por ti una diana",
+      "reentry": "en la lira de la Aurora.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "La salutación pagana",
+      "place": "La salutación pagana",
+      "reentry": "de las náyades a Flora.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "Con las formas de Diana",
+      "place": "Con las formas de Diana",
+      "reentry": "la celeste cazadora.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "El fogoso amante llega",
+      "place": "El fogoso amante llega",
+      "reentry": "a su divina señora.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "Que el amor no admite cuerdas reflexiones",
+      "place": "Que el amor no admite cuerdas reflexiones",
+      "reentry": "(A la manera de Santa Ffe.)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s115",
+      "title": "Como la tienda del día",
+      "place": "Como la tienda del día",
+      "reentry": "o el palacio de la aurora. Y al perfume de tu ungüento te persigue mi ventura, y me enciende el pensamiento la locura.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s116",
+      "title": "Como en el santo Cantar:",
+      "place": "Como en el santo Cantar:",
+      "reentry": "*Mel et lac sub lingua tua.* La delicia de tu aliento",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s117",
+      "title": "Loor",
+      "place": "Loor",
+      "reentry": "(A la manera del mismo.)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s118",
+      "title": "Y el amor",
+      "place": "Y el amor",
+      "reentry": "tiene su antorcha encendida.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s119",
+      "title": "Luz que está",
+      "place": "Luz que está",
+      "reentry": "dentro de tu cuerpo prendida.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s120",
+      "title": "Viene Eros",
+      "place": "Viene Eros",
+      "reentry": "a causar la dulce herida.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s121",
+      "title": "Los desatados cabellos",
+      "place": "Los desatados cabellos",
+      "reentry": "la divina espalda aroman. Bajo la camisa asoman dos cisnes de negros cuellos",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s122",
+      "title": "Di, ¿por qué las blancas gatas",
+      "place": "Di, ¿por qué las blancas gatas",
+      "reentry": "gustan de sedas obscuras?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s123",
+      "title": "Y al resonar tus números dispersos",
+      "place": "Y al resonar tus números dispersos",
+      "reentry": "Pitagoriza en tus constelaciones.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s124",
+      "title": "Este vale una copa de champaña",
+      "place": "Este vale una copa de champaña",
+      "reentry": "Como aquél vale «un vaso do bon vino».",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s125",
+      "title": "El sollozo continuo del chorro de la fuente",
+      "place": "El sollozo continuo del chorro de la fuente",
+      "reentry": "Y el cuello del gran cisne blanco que me interroga.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s126",
+      "title": "Prosas Profanas",
+      "place": "Prosas Profanas",
+      "reentry": "Era un aire suave 15",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s127",
+      "title": "Varia",
+      "place": "Varia",
+      "reentry": "El poeta pregunta por Stella 107",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s128",
+      "title": "Verlaine",
+      "place": "Verlaine",
+      "reentry": "Responso 143",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s129",
+      "title": "Recreaciones Arqueológicas",
+      "place": "Recreaciones Arqueológicas",
+      "reentry": "I. Friso 153",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s130",
+      "title": "[Ilustración]",
+      "place": "[Ilustración]",
+      "reentry": "Acabóse De Imprimir Este Libro En Madrid, En El Establecimiento Tipográfico De José Yagües Sanz, El Día Xxxi De Julio Del Año Mcmxvii",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s131",
+      "title": "Rubén Dario",
+      "place": "Rubén Dario",
+      "reentry": "cuidadosamente seleccionadas, corregidas e impresas en tomos de 300 a 400 páginas, con magníficas decoraciones del insigne artista",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s132",
+      "title": "Se publica un volumen mensual",
+      "place": "Se publica un volumen mensual",
+      "reentry": "Para la adquisición de estas colecciones se admiten suscripciones a los",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s133",
+      "title": "En España.     En el Extranjero",
+      "place": "En España.     En el Extranjero",
+      "reentry": "En rústica 40 ptas. 45 pesetas. En tela con planchas doradas 52 » 55 » En pasta española 58 » 62 »",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s134",
+      "title": "Volumen suelto:",
+      "place": "Volumen suelto:",
+      "reentry": "En rústica 3,50 ptas. En tela con planchas doradas 4,50 » En pasta española 5,00 »",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s135",
+      "title": "Edicion Especial Para Bibliófilos",
+      "place": "Edicion Especial Para Bibliófilos",
+      "reentry": "Además se hará una tirada extraordinaria de cien colecciones numeradas, impresas en papel fabricado especialmente y encuadernadas en pergamino, que se servirán únicamente por suscripción en las mismas condiciones que",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s136",
+      "title": "Diez Pesetas Cada Tomo",
+      "place": "Diez Pesetas Cada Tomo",
+      "reentry": "En cada tomo se harán constar los nombres de los suscriptores a todas",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s137",
+      "title": "Las colecciones, tanto de la edición corriente como de ésta,",
+      "place": "Las colecciones, tanto de la edición corriente como de ésta,",
+      "reentry": "especialmente dedicada a bibliófilos, la cual llevará además, si así lo desea el interesado, su nombre o iniciales en la tapa de encuadernación, sin ningún otro adorno; pero si el suscriptor desea que la tapa vaya decorada a mano por el Sr.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s138",
+      "title": "Este trabajo. Cada tomo llevará distinta decoración",
+      "place": "Este trabajo. Cada tomo llevará distinta decoración",
+      "reentry": "Para suscripciones y pedidos de ejemplares, dirigirse a la casa",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s139",
+      "title": "Editorial Mundo Latino",
+      "place": "Editorial Mundo Latino",
+      "reentry": "Barbieri, 1 duplicado.--Apartado 502",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s140",
+      "title": "Madrid",
+      "place": "Madrid",
+      "reentry": "Las librerías de España y América deberán dirigir sus pedidos a la",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s141",
+      "title": "Diarios, Revistas Y Publicaciones (S. A.)",
+      "place": "Diarios, Revistas Y Publicaciones (S. A.)",
+      "reentry": "Ferraz, 21. Madrid.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Las versalitas (letras mayúsculas de tamaño igual a las minúsculas) han sido sustituidas por letras mayúsculas de tamaño normal."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Prosas Profanas Y Otros Poemas"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Prosas Profanas"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "POR"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "RUBÉN Dario"
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Ilustraciones"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Enrique Ochoa"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Volumen II de las obras completas. Administración: Editorial Mundo Latino"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Madrid."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "ES Propiedad"
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Palabras Liminares"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "*DESPUÉS de* Azul.. *después de* Los Raros, _voces insinuantes, buena y mala intención, entusiasmo sonoro y envidia subterránea--todo bella cosecha--, solicitaron lo que, en conciencia, no he creído fructuoso ni"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "a) _Por la absoluta falta de elevación mental de la mayoría pensante de nuestro continente, en la cual impera el universal personaje clasificado por Remy de Gourmont con el nombre de Celui-qui-ne-comprend-pas. Celui-qui-ne-comprend pas es, entre nosotros, profesor, académico correspondiente de la Real Academia Española, periodista, abogado,"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "b) _Porque la obra colectiva de los nuevos de América es aún vana, estando muchos de los mejores talentos en el limbo de un completo"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "c) *Porque proclamando, como proclamo, una estética acrática, la imposición de un modelo o de un código implicaría una contradicción.*"
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "_Yo no tengo literatura \"mía\"--como lo ha manifestado una magistral autoridad--, para marcar el rumbo de los demás: mi literatura es mía en mí--; quien siga servilmente mis huellas perderá su tesoro personal y, paje o esclavo, no podrá ocultar sello o librea. Wagner a Augusta Holmés, su discípula, dijo un día: \"lo primero, no imitar a nadie, y"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "_Yo he dicho, en la misa rosa de mi juventud, mis antífonas, mis secuencias, mis profanas prosas--. Tiempo y menos fatigas de alma y corazón me han hecho falta, para, como un buen monje artífice, hacer mis mayúsculas dignas de cada página del breviario. (A través de los fuegos divinos de las vidrieras historiadas, me río del viento que sopla afuera, del mal que pasa.) Tocad, campanas de oro, campanas de plata, tocad todos los días llamándome a la fiesta en que brillan los ojos de fuego, y las rosas de las bocas sangran delicias únicas. Mi órgano es un viejo clavicordio pompadour, al son del cual danzaron sus gavotas alegres abuelos; y el perfume de tu pecho es mi perfume, eterno"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "_¿Hay en mi sangre alguna gota de sangre de África, o de indio chorotega o nagrandano? Pudiera ser, a despecho de mis manos de marqués; mas he aquí que veréis en mis versos princesas, reyes, cosas imperiales, visiones de países lejanos o imposibles; ¡qué queréis! yo detesto la vida y el tiempo en que me tocó nacer; y a un presidente de República no podré saludarle en el idioma en que te cantaría a ti, ¡oh, Halagabal! de"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "(_Si hay poesía en nuestra América, ella está en las cosas viejas: en Palenke y Utatlán, en el indio legendario, y en el inca sensual y fino, y en el gran Moctezuma de la silla de oro. Lo demás es tuyo, demócrata"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "_El abuelo español de barba blanca me señala una serie de retratos ilustres: \"Este, me dice, es el gran don Miguel de Cervantes Saavedra, genio y manco; éste es Lope de Vega, éste Garcilaso, éste Quintana.\" Yo le pregunto por el noble Gracián, por Teresa la Santa, por el bravo Góngora y el más fuerte de todos, don Francisco de Quevedo y Villegas. Después exclamo: ¡Shakespeare! ¡Dante! ¡Hugo...! (Y en mi interior:"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "_Luego al despedirme--: \"Abuelo, preciso es decíroslo: mi esposa es de"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "_Como cada palabra tiene una alma, hay en cada verso, además de la armonía verbal, una melodía ideal. La música es sólo de la idea, muchas"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "_La gritería de trescientas ocas no te impedirá, silvano, tocar tu encantadora flauta, con tal de que tu amigo el ruiseñor esté contento de tu melodía. Cuando él no esté para escucharte, cierra los ojos y toca para los habitantes de tu reino interior. ¡Oh, pueblo de desnudas"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "*Y la primera ley, creador: crear. Bufe el eunuco. Cuando una musa te dé un hijo, queden las otras ocho en cinta.*"
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "R. D."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Prosas Profanas"
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "ERA UN Aire Suave..."
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "ERA un aire suave, de pausados giros; El hada Harmonía ritmaba sus vuelos; E iban frases vagas y tenues suspiros Entre los sollozos de los violoncelos."
+    },
+    {
+      "id": "s14-9",
+      "sceneId": "s14",
+      "text": "Sobre la terraza, junto a los ramajes, Diríase un trémolo de liras eolias Cuando acariciaban los sedosos trajes, Sobre el tallo erguidas, las blancas magnolias."
+    },
+    {
+      "id": "s14-10",
+      "sceneId": "s14",
+      "text": "La marquesa Eulalia risas y desvíos Daba a un tiempo mismo para dos rivales: El vizconde rubio de los desafíos Y el abate joven de los madrigales."
+    },
+    {
+      "id": "s14-11",
+      "sceneId": "s14",
+      "text": "Cerca, coronado con hojas de viña, Reía en su máscara Término barbudo, Y, como un efebo que fuese una niña, Mostraba una Diana su mármol desnudo."
+    },
+    {
+      "id": "s14-12",
+      "sceneId": "s14",
+      "text": "Y bajo un boscaje del amor palestra, Sobre rico zócalo al modo de Jonia, Con un candelabro prendido en la diestra Volaba el Mercurio de Juan de Bolonia."
+    },
+    {
+      "id": "s14-13",
+      "sceneId": "s14",
+      "text": "La orquesta perlaba sus mágicas notas; Un coro de sones alados se oía; Galantes pavanas fugaces gavotas, Cantaban los dulces violines de Hungría."
+    },
+    {
+      "id": "s14-14",
+      "sceneId": "s14",
+      "text": "Al oir las quejas de sus caballeros Ríe, ríe, ríe, la divina Eulalia, Pues son su tesoro las flechas de Eros, El cinto de Cipria, la rueca de Onfalia."
+    },
+    {
+      "id": "s14-15",
+      "sceneId": "s14",
+      "text": "¡Ay de quien sus mieles y frases recoja! ¡Ay de quien del canto de su amor se fíe! Con sus ojos lindos y su boca roja, La divina Eulalia, ríe, ríe, ríe."
+    },
+    {
+      "id": "s14-16",
+      "sceneId": "s14",
+      "text": "Tiene azules ojos, es maligna y bella; Cuando mira vierte viva luz extraña; Se asoma a sus húmedas pupilas de estrella El alma del rubio cristal de Champaña."
+    },
+    {
+      "id": "s14-17",
+      "sceneId": "s14",
+      "text": "Es noche de fiesta, y el baile de trajes Ostenta su gloria de triunfos mundanos. La divina Eulalia, vestida de encajes, Una flor destroza con sus tersas manos."
+    },
+    {
+      "id": "s14-18",
+      "sceneId": "s14",
+      "text": "El teclado armónico de su risa fina A la alegre música de un pájaro iguala. Con los staccati de una bailarina Y las locas fugas de una colegiala."
+    },
+    {
+      "id": "s14-19",
+      "sceneId": "s14",
+      "text": "¡Amoroso pájaro que trinos exhala Bajo el ala a veces ocultando el pico; Que desdenes rudos lanza bajo el ala, Bajo el ala aleve del leve abanico!"
+    },
+    {
+      "id": "s14-20",
+      "sceneId": "s14",
+      "text": "Cuando a media noche sus notas arranque Y en arpegios áureos gima Filomela, Y el ebúrneo cisne, sobre el quieto estanque, Como blanca góndola imprima su estela,"
+    },
+    {
+      "id": "s14-21",
+      "sceneId": "s14",
+      "text": "La marquesa alegre llegará al boscaje, Boscaje que cubre la amable glorieta Donde han de estrecharla los brazos de un paje, que siendo su paje será su poeta."
+    },
+    {
+      "id": "s14-22",
+      "sceneId": "s14",
+      "text": "Al compás de un canto de artista de Italia Que en la brisa errante la orquesta deslíe, Junto a los rivales, la divina Eulalia, La divina Eulalia, ríe, ríe, ríe."
+    },
+    {
+      "id": "s14-23",
+      "sceneId": "s14",
+      "text": "¿Fué acaso en el tiempo del rey Luis de Francia, Sol con corte de astros, en campos de azur, Cuando los alcázares llenó de fragancia La regia y pomposa rosa Pompadour?"
+    },
+    {
+      "id": "s14-24",
+      "sceneId": "s14",
+      "text": "¿Fué cuando la bella su falda cogía Con dedos de ninfa, bailando el minué, Y de los compases el ritmo seguía Sobre el tacón rojo, lindo y leve el pie?"
+    },
+    {
+      "id": "s14-25",
+      "sceneId": "s14",
+      "text": "¿O cuando pastoras de floridos valles Ornaban con cintas sus albos corderos, Y oían, divinas Tirsis de Versalles, Las declaraciones de sus caballeros?"
+    },
+    {
+      "id": "s14-26",
+      "sceneId": "s14",
+      "text": "¿Fué en ese buen tiempo de duques pastores, De amantes princesas y tiernos galanes,"
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "¡Y es cruel y eterna su risa de oro!"
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "1893."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "DIVAGACIÓN"
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "¿Vienes? me llega aquí, pues que suspiras, Un soplo de las mágicas fragancias"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Y el dios de piedra se despierte y ría."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "Y el dios de piedra se despierte y cante La gloria de los tirsos florecientes En el gesto ritual de la bacante De rojos labios y nevados dientes;"
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "En el gesto ritual que en las hermosas Ninfalias guía a la divina hoguera, Hoguera que hace llamear las rosas En las manchadas pieles de pantera."
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "Y pues amas reir, ríe, y la brisa Lleve el son de los líricos cristales De tu reir, y haga temblar la risa La barba de los Términos joviales."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "Mira hacia el lado del boscaje, mira Blanquear el muslo de marfil de Diana, Y después de la Virgen, la Hetaira"
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "¿Te gusta amar en griego? Yo las fiestas Galantes busco, en donde se recuerde, Al suave són de rítmicas orquestas, La tierra de la luz y el mirlo verde."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "(Los abates refieren aventuras A las rubias marquesas. Soñolientos Filósofos defienden las ternuras Del amor, con sutiles argumentos,"
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "Mientras que surge de la verde grama, En la mano el acanto de Corinto, Una ninfa a quien puso un epigrama Beaumarchais, sobre el mármol de su plinto."
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "Amo más que la Grecia de los griegos La Grecia de la Francia, porque en Francia, Al eco de las Risas y los Juegos, Su más dulce licor Venus escancia."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "Demuestran más encantos y perfidias Coronadas de flores y desnudas, Las diosas de Clodión que las de Fidias; Unas cantan francés, otras son mudas."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "Verlaine es más que Sócrates; y Arsenio Houssaye supera al viejo Anacreonte. En París reinan el Amor y el Genio. Ha perdido su imperio el dios bifronte."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "Monsieur Prudhomme y Homais no saben nada. Hay Chipres, Pafos, Tempes y Amatuntes, Donde el amor de mi madrina, un hada, Tus frescos labios a los míos juntes.)"
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "Sones de bandolín. El rojo vino Conduce un paje rojo. ¿Amas los sones Del bandolín, y un amor florentino? Serás la reina en los decamerones."
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "(Un coro de poetas y pintores Cuenta historias picantes. Con maligna Sonrisa alegre aprueban los señores. Clelia enrojece, una dueña se signa.)"
+    },
+    {
+      "id": "s17-10",
+      "sceneId": "s17",
+      "text": "¿O un amor alemán?--que no han sentido Jamás los alemanes--: la celeste Gretchen; claro de luna; el aria; el nido Del ruiseñor; y en una roca agreste,"
+    },
+    {
+      "id": "s17-11",
+      "sceneId": "s17",
+      "text": "La luz de nieve que del cielo llega Y baña a una hermosura que suspira La queja vaga que a la noche entrega Loreley en la lengua de la lira."
+    },
+    {
+      "id": "s17-12",
+      "sceneId": "s17",
+      "text": "Y sobre el agua azul el caballero Lohengrín; y su cisne, cual si fuese"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "Y de la uva teutona el blanco vino."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "O amor lleno de sol, amor de España, Amor lleno de púrpuras y oros; Amor que da el clavel, la flor extraña"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "¿Los amores exóticos acaso...? Como rosa de Oriente me fascinas: Me deleitan la seda, el oro, el raso. Gautier adoraba a las princesas chinas."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "¡Oh, bello amor de mil genuflexiones; Torres de kaolín, pies imposibles, Tazas de té, tortugas y dragones, Y verdes arrozales apacibles!"
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "Ámame en chino, en el sonoro chino De Li-Tai-Pe. Yo igualaré a los sabios"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Caricia de Marfil de tu abanico."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "Ámame, japonesa, japonesa Antigua, que no sepa de naciones Occidentales; tal una princesa"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "La civilización de Yamagata."
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "O con amor hindú que alza sus llamas En la visión suprema de los mitos, Y hace temblar en misteriosas bramas La iniciación de los sagrados ritos,"
+    },
+    {
+      "id": "s21-2",
+      "sceneId": "s21",
+      "text": "En tanto mueven tigres y panteras Sus hierros, y en los fuertes elefantes Sueñan con ideales bayaderas Los rajahs, constelados de brillantes."
+    },
+    {
+      "id": "s21-3",
+      "sceneId": "s21",
+      "text": "O negra, negra como la que canta En su Jerusalem el rey hermoso, Negra que haga brotar bajo su planta La rosa y la cicuta del reposo..."
+    },
+    {
+      "id": "s21-4",
+      "sceneId": "s21",
+      "text": "Amor, en fin, que todo diga y cante, Amor que encante y deje sorprendida A la serpiente de ojos de diamante Que está enroscada al árbol de la vida."
+    },
+    {
+      "id": "s21-5",
+      "sceneId": "s21",
+      "text": "Amame así, fatal cosmopolita, Universal, inmensa, única, sola y todas; misteriosa y erudita: Amame mar y nube, espuma y ola."
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "Tigre Hotel, Diciembre 1894."
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s22-2",
+      "sceneId": "s22",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s22-3",
+      "sceneId": "s22",
+      "text": "Sonatina"
+    },
+    {
+      "id": "s22-4",
+      "sceneId": "s22",
+      "text": "LA princesa está triste... ¿qué tendrá la princesa? Los suspiros se escapan de su boca de fresa, Que ha perdido la risa, que ha perdido el color. La princesa está pálida en su silla de oro, Está mudo el teclado de su clave sonoro; Y en un vaso olvidada se desmaya una flor."
+    },
+    {
+      "id": "s22-5",
+      "sceneId": "s22",
+      "text": "El jardín puebla el triunfo de los pavos reales. Parlanchina, la dueña dice cosas banales, Y vestido de rojo piruetea el bufón. La princesa no ríe, la princesa no siente; La princesa persigue por el cielo de Oriente La libélula vaga de una vaga ilusión."
+    },
+    {
+      "id": "s22-6",
+      "sceneId": "s22",
+      "text": "¿Piensa acaso en el príncipe de Golconda o de China, O en el que ha detenido su carroza argentina Para ver de sus ojos la dulzura de luz, O en el rey de las Islas de las rosas fragantes, O en el que es soberano de los claros diamantes, O en el dueño orgulloso de las perlas de Ormuz?"
+    },
+    {
+      "id": "s22-7",
+      "sceneId": "s22",
+      "text": "¡Ay! la pobre princesa de la boca de rosa, Quiere ser golondrina, quiere ser mariposa. Tener alas ligeras, bajo el cielo volar, Ir al sol por la escala luminosa de un rayo, Saludar a los lirios con los versos de Mayo, O perderse en el viento sobre el trueno del mar."
+    },
+    {
+      "id": "s22-8",
+      "sceneId": "s22",
+      "text": "Ya no quiere el palacio, ni la rueca de plata, Ni el halcón encantado, ni el bufón escarlata, Ni los cisnes unánimes en el lago de azur. Y están tristes las flores por la flor de la corte; Los jazmines de Oriente, los nelumbos del Norte, De Occidente las dalias y las rosas del Sur."
+    },
+    {
+      "id": "s22-9",
+      "sceneId": "s22",
+      "text": "¡Pobrecita princesa de los ojos azules! Está presa en sus oros, está presa en sus tules, En la jaula de mármol del palacio real; El palacio soberbio que vigilan los guardas, Que custodian cien negros con sus cien alabardas, Un lebrel que no duerme y un dragón colosal."
+    },
+    {
+      "id": "s22-10",
+      "sceneId": "s22",
+      "text": "¡Oh, quién fuera hipsipila que dejó la crisálida! (La princesa está triste. La princesa está pálida) ¡Oh, visión adorada de oro, rosa y marfil! ¡Quien volara a la tierra donde un príncipe existe (La princesa está pálida. La princesa está triste) Más brillante que el alba, más hermoso que Abril!"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "A encenderte los labios con su beso de amor!"
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s23-2",
+      "sceneId": "s23",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s23-3",
+      "sceneId": "s23",
+      "text": "BLASÓN"
+    },
+    {
+      "id": "s23-4",
+      "sceneId": "s23",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s23-5",
+      "sceneId": "s23",
+      "text": "BLASÓN *Para la condesa de Peralta.*"
+    },
+    {
+      "id": "s23-6",
+      "sceneId": "s23",
+      "text": "EL olímpico cisne de nieve Con el ágata rosa del pico Lustra el ala eucarística y breve que abre al sol como un casto abanico."
+    },
+    {
+      "id": "s23-7",
+      "sceneId": "s23",
+      "text": "En la forma de un brazo de lira Y del asa de un ánfora griega Es su cándido cuello, que inspira Como prora ideal que navega."
+    },
+    {
+      "id": "s23-8",
+      "sceneId": "s23",
+      "text": "Es el cisne, de estirpe sagrada, Cuyo beso, por campos de seda, Ascendió hasta la cima rosada De las dulces colinas de Leda."
+    },
+    {
+      "id": "s23-9",
+      "sceneId": "s23",
+      "text": "Blanco rey de la fuente Castalia Su victoria ilumina el Danubio; Vinci fué su barón en Italia; Lohengrín es su príncipe rubio."
+    },
+    {
+      "id": "s23-10",
+      "sceneId": "s23",
+      "text": "Su blancura es hermana del lino, Del botón de los blancos rosales Y del albo toisón diamantino De los tiernos corderos pascuales."
+    },
+    {
+      "id": "s23-11",
+      "sceneId": "s23",
+      "text": "Rimador de ideal florilegio Es de armiño su lírico manto, Y es el mágico pájaro regio Que al morir rima el alma en un canto."
+    },
+    {
+      "id": "s23-12",
+      "sceneId": "s23",
+      "text": "El alado aristócrata muestra Lises albos en campo de azur, Y ha sentido en sus plumas la diestra De la amable y gentil Pompadour."
+    },
+    {
+      "id": "s23-13",
+      "sceneId": "s23",
+      "text": "Boga y boga en el lago sonoro Donde el sueño a los tristes espera,"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "De luz alba, de seda y de sueño."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s24-2",
+      "sceneId": "s24",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s24-3",
+      "sceneId": "s24",
+      "text": "DEL Campo"
+    },
+    {
+      "id": "s24-4",
+      "sceneId": "s24",
+      "text": "¡Pradera, feliz día! Del regio Buenos Aires Quedaron allá lejos el fuego y el hervor; Hoy en tu verde triunfo tendrán mis sueños vida, Respiraré tu aliento, me bañaré en tu sol."
+    },
+    {
+      "id": "s24-5",
+      "sceneId": "s24",
+      "text": "Muy buenos días, huerto. Saludo la frescura Que brota de las ramas de tu durazno en flor; Formada de rosales tu calle de Florida Mira pasar la Gloria, la Banca y el Sport."
+    },
+    {
+      "id": "s24-6",
+      "sceneId": "s24",
+      "text": "Un pájaro poeta, rumia en su buche versos; Chismoso y petulante, charlando va un gorrión; Las plantas trepadoras conversan de política; Las rosas y los lirios, del arte y del amor."
+    },
+    {
+      "id": "s24-7",
+      "sceneId": "s24",
+      "text": "Rigiendo su cuadriga de mágicas libélulas, De sueños millonarios, pasa el travieso Puck; Y, espléndida sportwoman, en su celeste carro, La emperatriz Titania seguida de Oberón."
+    },
+    {
+      "id": "s24-8",
+      "sceneId": "s24",
+      "text": "De noche, cuando muestra su medio anillo de oro, Bajo el azul tranquilo, la amada de Pierrot, Es una fiesta pálida la que en el huerto reina, Toca en la lira el aire su do-re-mi-fa-sol."
+    },
+    {
+      "id": "s24-9",
+      "sceneId": "s24",
+      "text": "Curiosas las violetas a su balcón se asoman. Y una suspira: «¡lástima que falte el ruiseñor!» Los silfos acompasan la danza de las brisas En un walpurgis vago de aroma y de visión."
+    },
+    {
+      "id": "s24-10",
+      "sceneId": "s24",
+      "text": "De pronto se oye el eco del grito de la pampa; Brilla como una puesta del argentino sol;"
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "De nuestra vieja patria llevando el corazón!»"
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s25-2",
+      "sceneId": "s25",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s25-3",
+      "sceneId": "s25",
+      "text": "Alaba Los Ojos Negros De Julia"
+    },
+    {
+      "id": "s25-4",
+      "sceneId": "s25",
+      "text": "EVA era rubia? No. Con negros ojos Vió la manzana del jardín: con labios Rojos probó su miel; con labios rojos Que saben hoy más ciencia que los sabios."
+    },
+    {
+      "id": "s25-5",
+      "sceneId": "s25",
+      "text": "Venus tuvo el azur en sus pupilas Pero su hijo no. Negros y fieros Encienden a las tórtolas tranquilas Los dos ojos de Eros."
+    },
+    {
+      "id": "s25-6",
+      "sceneId": "s25",
+      "text": "Los ojos de las reinas fabulosas, De las reinas magníficas y fuertes, Tenían las pupilas tenebrosas Que daban los amores y las muertes."
+    },
+    {
+      "id": "s25-7",
+      "sceneId": "s25",
+      "text": "Pentensilea, reina de amazonas, Judith, espada y fuerza de Betulia, Cleopatra, encantadora de coronas, La luz tuvieron de tus ojos, Julia."
+    },
+    {
+      "id": "s25-8",
+      "sceneId": "s25",
+      "text": "La negra, que es más luz que la luz blanca Del sol, y las azules de los cielos."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "Que hace cantar a Pan bajo las viñas!"
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Viens le chanter, ma Muse..._ Banville."
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "Musa, la máscara apresta, Ensaya un aire jovial Y goza y ríe en la fiesta Del carnaval."
+    },
+    {
+      "id": "s27-2",
+      "sceneId": "s27",
+      "text": "Ríe en la danza que gira, Muestra la pierna rosada, Y suene, como una lira, Tu carcajada."
+    },
+    {
+      "id": "s27-3",
+      "sceneId": "s27",
+      "text": "Para volar más ligera Ponte dos hojas de rosa, Como hace tu compañera La mariposa."
+    },
+    {
+      "id": "s27-4",
+      "sceneId": "s27",
+      "text": "Y que en tu boca risueña, Que se une al alegre coro, Deje la abeja posteña Su miel de oro."
+    },
+    {
+      "id": "s27-5",
+      "sceneId": "s27",
+      "text": "Unete a la mascarada, Y mientras muequea un clown Con la faz pintarrajeada Como Frank Brown;"
+    },
+    {
+      "id": "s27-6",
+      "sceneId": "s27",
+      "text": "Mientras Arlequín revela Que al prisma sus tintes roba Y aparece Pulchinela Con su joroba,"
+    },
+    {
+      "id": "s27-7",
+      "sceneId": "s27",
+      "text": "Di a Colombina la bella Lo que de ella pienso yo, Y descorcha una botella Para Pierrot."
+    },
+    {
+      "id": "s27-8",
+      "sceneId": "s27",
+      "text": "Que él te cuente cómo rima Sus amores con la luna Y te haga un poema en una Pantomima."
+    },
+    {
+      "id": "s27-9",
+      "sceneId": "s27",
+      "text": "Da al aire la serenata, Toca el áuro bandolín, Lleva un látigo de plata Para el *spleen*."
+    },
+    {
+      "id": "s27-10",
+      "sceneId": "s27",
+      "text": "Sé lírica y sé bizarra; Con la cítara sé griega; O gaucha, con la guitarra De santos Vega."
+    },
+    {
+      "id": "s27-11",
+      "sceneId": "s27",
+      "text": "Mueve tu espléndido torso Por las calles pintorescas Y juega y adorna el corso, Con rosas frescas."
+    },
+    {
+      "id": "s27-12",
+      "sceneId": "s27",
+      "text": "De perlas riega un tesoro De Andrade en el regio nido, Y en la hopalanda de Guido, Polvo de oro."
+    },
+    {
+      "id": "s27-13",
+      "sceneId": "s27",
+      "text": "Penas y duelos olvida, Canta deleites y amores; Busca la flor de las flores Por Florida."
+    },
+    {
+      "id": "s27-14",
+      "sceneId": "s27",
+      "text": "Con la armonía le encantas De las rimas de cristal, Y deshojas a sus plantas, Un madrigal."
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "Sus gritos y sus canciones. Sus comparsas y sus trajes Sus perlas, tintes y encajes y pompones."
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "Y lleve la rauda brisa, Sonora, argentina, fresca, La victoria de tu risa Funambulesca!"
+    },
+    {
+      "id": "s28-2",
+      "sceneId": "s28",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s28-3",
+      "sceneId": "s28",
+      "text": "Para UNA Cubana"
+    },
+    {
+      "id": "s28-4",
+      "sceneId": "s28",
+      "text": "POESÍA dulce y mística, Busca a la blanca cubana"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "De una blancura eucarística."
+    },
+    {
+      "id": "s29-1",
+      "sceneId": "s29",
+      "text": "Llena de un prestigio asiático,"
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "Que fuese alma de una esfinge."
+    },
+    {
+      "id": "s30-1",
+      "sceneId": "s30",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s30-2",
+      "sceneId": "s30",
+      "text": "Para LA Misma"
+    },
+    {
+      "id": "s30-3",
+      "sceneId": "s30",
+      "text": "MIRÉ al sentarme a la mesa, Bañado en la luz del día,"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "De la cabellera espesa."
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "Diera un tesoro el Mikado"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "En un vaso de marfil."
+    },
+    {
+      "id": "s32-1",
+      "sceneId": "s32",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s32-2",
+      "sceneId": "s32",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s32-3",
+      "sceneId": "s32",
+      "text": "Bouquet"
+    },
+    {
+      "id": "s32-4",
+      "sceneId": "s32",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "La más roja rosa que hay en mi jardín!"
+    },
+    {
+      "id": "s33-1",
+      "sceneId": "s33",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s33-2",
+      "sceneId": "s33",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s33-3",
+      "sceneId": "s33",
+      "text": "EL FAISÁN"
+    },
+    {
+      "id": "s33-4",
+      "sceneId": "s33",
+      "text": "Dijo sus secretos el faisán de oro:--"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "En aquella noche de Carnestolendas."
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "Que tu fiel amada, que la Luna, ha muerto!»"
+    },
+    {
+      "id": "s35-1",
+      "sceneId": "s35",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s35-2",
+      "sceneId": "s35",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "La alegría noble del vino de oro."
+    },
+    {
+      "id": "s36-1",
+      "sceneId": "s36",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "en el país del sol!"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "Vuelve, pues, a tu barca, que tienes lista la vela--(resuena,"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "en el país del sol."
+    },
+    {
+      "id": "s39-1",
+      "sceneId": "s39",
+      "text": "New-Yoy, 1893."
+    },
+    {
+      "id": "s39-2",
+      "sceneId": "s39",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s39-3",
+      "sceneId": "s39",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "¡Como a una margarita de amor, te deshojó!"
+    },
+    {
+      "id": "s40-1",
+      "sceneId": "s40",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s40-2",
+      "sceneId": "s40",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "Mía: rosas, llamas."
+    },
+    {
+      "id": "s41-1",
+      "sceneId": "s41",
+      "text": "¡Qué aroma derramas En el alma mía"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Mía hasta la muerte?"
+    },
+    {
+      "id": "s42-1",
+      "sceneId": "s42",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s42-2",
+      "sceneId": "s42",
+      "text": "Dice MIA"
+    },
+    {
+      "id": "s42-3",
+      "sceneId": "s42",
+      "text": "MI pobre alma pálida Era un crisálida."
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "Melodía en un rayo de luna... --¿Una melodía?"
+    },
+    {
+      "id": "s43-1",
+      "sceneId": "s43",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s43-2",
+      "sceneId": "s43",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "(No la anuncian. No llega aún.)"
+    },
+    {
+      "id": "s44-1",
+      "sceneId": "s44",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "¡Y la faunesa antigua me rugirá de amor!"
+    },
+    {
+      "id": "s45-1",
+      "sceneId": "s45",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s45-2",
+      "sceneId": "s45",
+      "text": "Coloquio DE LOS Centauros *A Paul Groussac.*"
+    },
+    {
+      "id": "s45-3",
+      "sceneId": "s45",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "QUIRÓN"
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "QUIRÓN"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "QUIRÓN"
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "QUIRÓN"
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "QUIRÓN"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "QUIRÓN"
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "Hipea"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "QUIRÓN"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "Grineo"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "QUIRÓN"
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "QUIRÓN"
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "QUIRÓN"
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "QUIRÓN"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "Los Centauros, y al paso, tiembla la Isla de Oro."
+    },
+    {
+      "id": "s59-1",
+      "sceneId": "s59",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s59-2",
+      "sceneId": "s59",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s59-3",
+      "sceneId": "s59",
+      "text": "Varia *A Luis Berisso*."
+    },
+    {
+      "id": "s59-4",
+      "sceneId": "s59",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "La hermana de Ligeia, por quien mi canto a veces es tan triste?"
+    },
+    {
+      "id": "s60-1",
+      "sceneId": "s60",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s60-2",
+      "sceneId": "s60",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "[1] Para el libro *En tropel*, del poeta español Salvador Rueda,"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "Bebe falerno en su ebúrneo triclinio."
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "Que lleva un claro lucero en la frente."
+    },
+    {
+      "id": "s63-1",
+      "sceneId": "s63",
+      "text": "Es en Oriente donde ella se inspira En las moriscas exóticas zambras; Donde primero contempla y admira"
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "Que hace del viento su brújula y guía."
+    },
+    {
+      "id": "s64-1",
+      "sceneId": "s64",
+      "text": "Era la errante familia bohemia, Sabia en extraños conjuros y estigmas, Que une en su boca plegaria y blasfemia,"
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "Y en sus cabellos perfumes derrama."
+    },
+    {
+      "id": "s65-1",
+      "sceneId": "s65",
+      "text": "Busca del pueblo las penas, la flores, Mantos bordados de alhajas de seda, Y la guitarra que sabe de amores,"
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "Emperador de la barba florida."
+    },
+    {
+      "id": "s66-1",
+      "sceneId": "s66",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s66-2",
+      "sceneId": "s66",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "Es la flor del sonoro Pindo de España."
+    },
+    {
+      "id": "s67-1",
+      "sceneId": "s67",
+      "text": "Madrid, 1892."
+    },
+    {
+      "id": "s67-2",
+      "sceneId": "s67",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s67-3",
+      "sceneId": "s67",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "La Helena eterna y pura que encarna el ideal."
+    },
+    {
+      "id": "s68-1",
+      "sceneId": "s68",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s68-2",
+      "sceneId": "s68",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "*A. A. Lamberti.*"
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "Atraviesan la página blanca."
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "Otro lleva"
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "Como un muerto lirio la pobre Esperanza."
+    },
+    {
+      "id": "s72-1",
+      "sceneId": "s72",
+      "text": "Y camina sobre un dromedario la Pálida, La vestida de ropas obscuras, La Reina invencible, la bella inviolada:"
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "Prodigios que abruman y signos que espantan,"
+    },
+    {
+      "id": "s73-1",
+      "sceneId": "s73",
+      "text": "Mira al dromedario de la caravana Como al mensajero que la luz conduce, ¡En el vago desierto que forma la página blanca!"
+    },
+    {
+      "id": "s73-2",
+      "sceneId": "s73",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s73-3",
+      "sceneId": "s73",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "Del Arquero."
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "Ante Dios bendice al mundo; y su brazo abarca el arco y el Arquero."
+    },
+    {
+      "id": "s75-1",
+      "sceneId": "s75",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s75-2",
+      "sceneId": "s75",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "En la única cuerda que está en su violín."
+    },
+    {
+      "id": "s76-1",
+      "sceneId": "s76",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s76-2",
+      "sceneId": "s76",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "Cuya alma es una sombra que todo lo ilumina."
+    },
+    {
+      "id": "s77-1",
+      "sceneId": "s77",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s77-2",
+      "sceneId": "s77",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "--«Es Sagitario que ha robado una estrella.»"
+    },
+    {
+      "id": "s78-1",
+      "sceneId": "s78",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s78-2",
+      "sceneId": "s78",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s78-3",
+      "sceneId": "s78",
+      "text": "Verlaine *A Angel Estrada, poeta.*"
+    },
+    {
+      "id": "s78-4",
+      "sceneId": "s78",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "Y un resplandor sobre la cruz!"
+    },
+    {
+      "id": "s79-1",
+      "sceneId": "s79",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s79-2",
+      "sceneId": "s79",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "En los manicomios y en los hospitales."
+    },
+    {
+      "id": "s80-1",
+      "sceneId": "s80",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s80-2",
+      "sceneId": "s80",
+      "text": "Recreaciones ARQUEOLÓGICAS *A Julio L. Jaimes.*"
+    },
+    {
+      "id": "s80-3",
+      "sceneId": "s80",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s80-4",
+      "sceneId": "s80",
+      "text": "I.--Friso"
+    },
+    {
+      "id": "s80-5",
+      "sceneId": "s80",
+      "text": "Cabe una fresca viña de corinto Que verde techo presta al simulacro Del Dios viril, que artífice de Atenas En intacto pentélico labrara, Un día alegre, al deslumbrar el mundo"
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "Cantaba ardiente de la vida el himno."
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "Lírica procesión al viento esparce"
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "Emulo y par, risueño aparecía. Y de él en pos de las ménades ardientes, Al aire el busto en que su pompa erigen"
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "Y el pámpano fragante de las viñas. Aun me parece que mis ojos tornan Al cuadro lleno de color y fuerza: Dos robustos mancebos que los cabos De cadenas metálicas empuñan, Y cuyo porte y músculos de Ares Divinos dones son, pintada fiera"
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "Amor pasó con su dorada antorcha. Y no lejos del nido en que las aves, Las dos aves de Cipris, sus arrullos Cual tiernas rimas a los aires dieran, Fuí más feliz que el luminoso cisne"
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "Cabe la fresca viña de Corinto."
+    },
+    {
+      "id": "s86-1",
+      "sceneId": "s86",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s86-2",
+      "sceneId": "s86",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "_ESCRITA en viejo dialecto eolio"
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "...Cuando los toros De las campañas, bajo los oros Que vierte el hijo de Hiperión, Pasan mugiendo, y en las eternas Rocas salvajes de las cavernas Esperezándose ruge el león;"
+    },
+    {
+      "id": "s88-1",
+      "sceneId": "s88",
+      "text": "Cuando en las vírgenes y verdes parras Sus secas notas dan las cigarras,"
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "Con la harmonía de su tropel."
+    },
+    {
+      "id": "s89-1",
+      "sceneId": "s89",
+      "text": "Uno las patas rítmicas mueve, Otro alza el cuello con gallardía Como en hermoso bajo-relieve Que a golpes mágicos Scopas haría;"
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "Y a la algazara que hacen las ninfas. Risa de plata que el aire riega Hasta sus ávidos oídos llega;"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "Blanca y desnuda como una estrella."
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "Lo que fué espanto para Acteón!"
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "Brilla del sátiro la llamarada. En un instante, veloz y listo,"
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "¿A dó va Diana? Viva la vista"
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "Lleva una flecha para el ladrón."
+    },
+    {
+      "id": "s95-1",
+      "sceneId": "s95",
+      "text": "Ya a los centauros a ver alcanza"
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "A la robada mató También."
+    },
+    {
+      "id": "s96-1",
+      "sceneId": "s96",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s96-2",
+      "sceneId": "s96",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "--¡Príncipes, estrechadme con vuestros brazos rojos!»"
+    },
+    {
+      "id": "s97-1",
+      "sceneId": "s97",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s97-2",
+      "sceneId": "s97",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "Y en lo íntimo del alma como un dulzor de miel."
+    },
+    {
+      "id": "s98-1",
+      "sceneId": "s98",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s98-2",
+      "sceneId": "s98",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s98-3",
+      "sceneId": "s98",
+      "text": "Dezires, Layes Y Canciones"
+    },
+    {
+      "id": "s98-4",
+      "sceneId": "s98",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "(A la manera de Johan de Duenyas.)"
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "sangre de los corazones."
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "hay la amargura del mar."
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "nueva copa y nuevo vino."
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "bajo pámpanos de fuego."
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "con la música pagana."
+    },
+    {
+      "id": "s104-1",
+      "sceneId": "s104",
+      "text": "Ffinida"
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "que a tu blancor sienta tanto."
+    },
+    {
+      "id": "s105-1",
+      "sceneId": "s105",
+      "text": "En el obscuro cabello"
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "y esmeraldas nunca vistas."
+    },
+    {
+      "id": "s106-1",
+      "sceneId": "s106",
+      "text": "Un camarín te decoro"
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "te sorberé el corazón."
+    },
+    {
+      "id": "s107-1",
+      "sceneId": "s107",
+      "text": "Luz de sueño, flor de mito,"
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "su himno de carne levanta."
+    },
+    {
+      "id": "s108-1",
+      "sceneId": "s108",
+      "text": "Del ánfora en que está el viejo"
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "(A la manera de Johan de Torres.)"
+    },
+    {
+      "id": "s109-1",
+      "sceneId": "s109",
+      "text": "¿Qué pude yo hacer para merecer la ofrenda de ardor de aquella mujer a quien, como a Ester, maceró el Amor?"
+    },
+    {
+      "id": "s109-2",
+      "sceneId": "s109",
+      "text": "Intenso licor, perfume y color me hiciera sentir"
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "en la lira de la Aurora."
+    },
+    {
+      "id": "s110-1",
+      "sceneId": "s110",
+      "text": "Desnuda sale la bella, y del cabello el tesoro"
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "de las náyades a Flora."
+    },
+    {
+      "id": "s111-1",
+      "sceneId": "s111",
+      "text": "En el baño al beso incita sobre el cristal de la onda"
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "la celeste cazadora."
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "a su divina señora."
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "(A la manera de Santa Ffe.)"
+    },
+    {
+      "id": "s114-1",
+      "sceneId": "s114",
+      "text": "Señora, amor es violento, y cuando nos transfigura nos enciende el pensamiento la locura."
+    },
+    {
+      "id": "s114-2",
+      "sceneId": "s114",
+      "text": "No pidas paz a mis brazos que a los tuyos tienen presos: son de guerra mis abrazos y son de incendio mis besos; y sería vano intento el tornar mi mente obscura si me enciende el pensamiento la locura."
+    },
+    {
+      "id": "s115-0",
+      "sceneId": "s115",
+      "text": "o el palacio de la aurora. Y al perfume de tu ungüento te persigue mi ventura, y me enciende el pensamiento la locura."
+    },
+    {
+      "id": "s116-0",
+      "sceneId": "s116",
+      "text": "*Mel et lac sub lingua tua.* La delicia de tu aliento"
+    },
+    {
+      "id": "s117-0",
+      "sceneId": "s117",
+      "text": "(A la manera del mismo.)"
+    },
+    {
+      "id": "s118-0",
+      "sceneId": "s118",
+      "text": "tiene su antorcha encendida."
+    },
+    {
+      "id": "s118-1",
+      "sceneId": "s118",
+      "text": "Quiera darme el garzón de Ida la henchida copa, y Juno la oriental pompa del pavón real,"
+    },
+    {
+      "id": "s119-0",
+      "sceneId": "s119",
+      "text": "dentro de tu cuerpo prendida."
+    },
+    {
+      "id": "s119-1",
+      "sceneId": "s119",
+      "text": "La blanca pareja anida adormecida: aves que bajo el corpiño ha colocado el dios niño,"
+    },
+    {
+      "id": "s120-0",
+      "sceneId": "s120",
+      "text": "a causar la dulce herida."
+    },
+    {
+      "id": "s120-1",
+      "sceneId": "s120",
+      "text": "Ffin"
+    },
+    {
+      "id": "s121-0",
+      "sceneId": "s121",
+      "text": "la divina espalda aroman. Bajo la camisa asoman dos cisnes de negros cuellos"
+    },
+    {
+      "id": "s122-0",
+      "sceneId": "s122",
+      "text": "gustan de sedas obscuras?"
+    },
+    {
+      "id": "s122-1",
+      "sceneId": "s122",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s122-2",
+      "sceneId": "s122",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s123-0",
+      "sceneId": "s123",
+      "text": "Pitagoriza en tus constelaciones."
+    },
+    {
+      "id": "s124-0",
+      "sceneId": "s124",
+      "text": "Como aquél vale «un vaso do bon vino»."
+    },
+    {
+      "id": "s124-1",
+      "sceneId": "s124",
+      "text": "Mas a uno y otro pájaro divino La primitiva cárcel es extraña; El barrote maltrata, el grillo daña, Que vuelo y libertad son su destino,"
+    },
+    {
+      "id": "s124-2",
+      "sceneId": "s124",
+      "text": "Así procuro que en la luz resalte"
+    },
+    {
+      "id": "s125-0",
+      "sceneId": "s125",
+      "text": "Y el cuello del gran cisne blanco que me interroga."
+    },
+    {
+      "id": "s125-1",
+      "sceneId": "s125",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s125-2",
+      "sceneId": "s125",
+      "text": "[Ilustración]"
+    },
+    {
+      "id": "s126-0",
+      "sceneId": "s126",
+      "text": "Era un aire suave 15"
+    },
+    {
+      "id": "s126-1",
+      "sceneId": "s126",
+      "text": "Divagación 23"
+    },
+    {
+      "id": "s126-2",
+      "sceneId": "s126",
+      "text": "Sonatina 33"
+    },
+    {
+      "id": "s126-3",
+      "sceneId": "s126",
+      "text": "Blasón 39"
+    },
+    {
+      "id": "s126-4",
+      "sceneId": "s126",
+      "text": "Del campo 43"
+    },
+    {
+      "id": "s126-5",
+      "sceneId": "s126",
+      "text": "Alaba los ojos negros de Julia 47"
+    },
+    {
+      "id": "s126-6",
+      "sceneId": "s126",
+      "text": "Canción de Carnaval 51"
+    },
+    {
+      "id": "s126-7",
+      "sceneId": "s126",
+      "text": "Para una cubana 57"
+    },
+    {
+      "id": "s126-8",
+      "sceneId": "s126",
+      "text": "Para la misma 59"
+    },
+    {
+      "id": "s126-9",
+      "sceneId": "s126",
+      "text": "Bouquet 63"
+    },
+    {
+      "id": "s126-10",
+      "sceneId": "s126",
+      "text": "El Faisan 65"
+    },
+    {
+      "id": "s126-11",
+      "sceneId": "s126",
+      "text": "Garçonnière 69"
+    },
+    {
+      "id": "s126-12",
+      "sceneId": "s126",
+      "text": "El país del sol 73"
+    },
+    {
+      "id": "s126-13",
+      "sceneId": "s126",
+      "text": "Margarita 77"
+    },
+    {
+      "id": "s126-14",
+      "sceneId": "s126",
+      "text": "Mía 79"
+    },
+    {
+      "id": "s126-15",
+      "sceneId": "s126",
+      "text": "Dice Mía 81"
+    },
+    {
+      "id": "s126-16",
+      "sceneId": "s126",
+      "text": "Heraldos 83"
+    },
+    {
+      "id": "s126-17",
+      "sceneId": "s126",
+      "text": "Ite, missa est 85"
+    },
+    {
+      "id": "s126-18",
+      "sceneId": "s126",
+      "text": "Coloquio De Los Centauros 89"
+    },
+    {
+      "id": "s127-0",
+      "sceneId": "s127",
+      "text": "El poeta pregunta por Stella 107"
+    },
+    {
+      "id": "s127-1",
+      "sceneId": "s127",
+      "text": "Pórtico 109"
+    },
+    {
+      "id": "s127-2",
+      "sceneId": "s127",
+      "text": "Elogio de la seguidilla 119"
+    },
+    {
+      "id": "s127-3",
+      "sceneId": "s127",
+      "text": "El cisne 123"
+    },
+    {
+      "id": "s127-4",
+      "sceneId": "s127",
+      "text": "La página blanca 125"
+    },
+    {
+      "id": "s127-5",
+      "sceneId": "s127",
+      "text": "Año nuevo 129"
+    },
+    {
+      "id": "s127-6",
+      "sceneId": "s127",
+      "text": "Sinfonía en gris mayor 133"
+    },
+    {
+      "id": "s127-7",
+      "sceneId": "s127",
+      "text": "La Dea 137"
+    },
+    {
+      "id": "s127-8",
+      "sceneId": "s127",
+      "text": "Epitalamio bárbaro 139"
+    },
+    {
+      "id": "s128-0",
+      "sceneId": "s128",
+      "text": "Responso 143"
+    },
+    {
+      "id": "s128-1",
+      "sceneId": "s128",
+      "text": "Canto de la sangre 147"
+    },
+    {
+      "id": "s129-0",
+      "sceneId": "s129",
+      "text": "I. Friso 153"
+    },
+    {
+      "id": "s129-1",
+      "sceneId": "s129",
+      "text": "II. Palimpsesto 159"
+    },
+    {
+      "id": "s129-2",
+      "sceneId": "s129",
+      "text": "EL Reino Interior 165"
+    },
+    {
+      "id": "s129-3",
+      "sceneId": "s129",
+      "text": "Cosas del Cid 171"
+    },
+    {
+      "id": "s129-4",
+      "sceneId": "s129",
+      "text": "Dezires, layes y canciones 177"
+    },
+    {
+      "id": "s129-5",
+      "sceneId": "s129",
+      "text": "Las Anforas de Epicuro 189"
+    },
+    {
+      "id": "s130-0",
+      "sceneId": "s130",
+      "text": "Acabóse De Imprimir Este Libro En Madrid, En El Establecimiento Tipográfico De José Yagües Sanz, El Día Xxxi De Julio Del Año Mcmxvii"
+    },
+    {
+      "id": "s130-1",
+      "sceneId": "s130",
+      "text": "Primera Y Unica Edicion"
+    },
+    {
+      "id": "s130-2",
+      "sceneId": "s130",
+      "text": "DE LAS"
+    },
+    {
+      "id": "s130-3",
+      "sceneId": "s130",
+      "text": "Obras Completas"
+    },
+    {
+      "id": "s131-0",
+      "sceneId": "s131",
+      "text": "cuidadosamente seleccionadas, corregidas e impresas en tomos de 300 a 400 páginas, con magníficas decoraciones del insigne artista"
+    },
+    {
+      "id": "s132-0",
+      "sceneId": "s132",
+      "text": "Para la adquisición de estas colecciones se admiten suscripciones a los"
+    },
+    {
+      "id": "s133-0",
+      "sceneId": "s133",
+      "text": "En rústica 40 ptas. 45 pesetas. En tela con planchas doradas 52 » 55 » En pasta española 58 » 62 »"
+    },
+    {
+      "id": "s134-0",
+      "sceneId": "s134",
+      "text": "En rústica 3,50 ptas. En tela con planchas doradas 4,50 » En pasta española 5,00 »"
+    },
+    {
+      "id": "s134-1",
+      "sceneId": "s134",
+      "text": "Las suscripciones, tanto a España como al Extranjero, se servirán =Franco DE Porte= y se cobrarán por"
+    },
+    {
+      "id": "s134-2",
+      "sceneId": "s134",
+      "text": "Semestres Adelantados"
+    },
+    {
+      "id": "s135-0",
+      "sceneId": "s135",
+      "text": "Además se hará una tirada extraordinaria de cien colecciones numeradas, impresas en papel fabricado especialmente y encuadernadas en pergamino, que se servirán únicamente por suscripción en las mismas condiciones que"
+    },
+    {
+      "id": "s136-0",
+      "sceneId": "s136",
+      "text": "En cada tomo se harán constar los nombres de los suscriptores a todas"
+    },
+    {
+      "id": "s137-0",
+      "sceneId": "s137",
+      "text": "especialmente dedicada a bibliófilos, la cual llevará además, si así lo desea el interesado, su nombre o iniciales en la tapa de encuadernación, sin ningún otro adorno; pero si el suscriptor desea que la tapa vaya decorada a mano por el Sr. Ochoa, habrá de aumentar otras 10 ptas. por"
+    },
+    {
+      "id": "s138-0",
+      "sceneId": "s138",
+      "text": "Para suscripciones y pedidos de ejemplares, dirigirse a la casa"
+    },
+    {
+      "id": "s139-0",
+      "sceneId": "s139",
+      "text": "Barbieri, 1 duplicado.--Apartado 502"
+    },
+    {
+      "id": "s140-0",
+      "sceneId": "s140",
+      "text": "Las librerías de España y América deberán dirigir sus pedidos a la"
+    },
+    {
+      "id": "s141-0",
+      "sceneId": "s141",
+      "text": "Ferraz, 21. Madrid."
+    }
+  ]
+}
