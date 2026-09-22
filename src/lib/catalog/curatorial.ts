@@ -116,6 +116,12 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Vellum, no Project Gutenberg id. Recommend For you only — not Next, never Featured.
  * Story through I'm sorry, then Poem I–VII. Cold-open stays
  * Mirth → Quicksand → Botchan.
+ * NOON2 CLEAR (Sep 22) — Recommend only, never Featured. African Farm joins
+ * Next / before-sleep on the Karoo moon (PG 1441). Marianela stays in its
+ * BATCH-10 Next seat, Bell English, ads after THE END stripped (PG 48818).
+ * On the Seaboard leaves Next for For you (and the walk / before-sleep sit);
+ * Preface skipped, Goosestone bay open (PG 44184). Siddhartha and The Red
+ * Room stay unstamped this wave. Cold-open stays Mirth → Quicksand → Botchan.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -378,7 +384,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "rootabaga-stories",
   "rootabaga-pigeons",
   "auguste-rodin",
-  "on-the-seaboard",
   "lucky-pehr",
   "the-dream-play",
   "the-father",
@@ -421,6 +426,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "gentlemen-prefer-blondes",
   "of-one-blood",
   "maria-chapdelaine",
+  // Mira NOON2 CLEAR — after 8AM. Never Featured. Not For you.
+  "african-farm",
 ] as const;
 
 /**

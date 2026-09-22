@@ -113,7 +113,11 @@ const BLURBS: Record<string, string> = {
   "the-cherry-orchard":
     "A Russian estate in blossom — Chekhov’s family cannot keep the orchard they still call home.",
   "african-farm":
-    "On a Karoo farm, two children grow up against religion, land, and a sky that will not blink.",
+    "The full African moon poured down its light from the blue sky into the wide, lonely plain.",
+  "on-the-seaboard":
+    "A fishing boat lay one May evening to beam-wind, out on Goosestone bay, while Rokarna were changing to blue.",
+  marianela:
+    "The sun had set, and after the brief interval of twilight the night fell calm and dark as the traveller went on into the north of Spain.",
   "bel-ami":
     "A handsome arriviste climbs Paris on other people’s beds and other people’s newspapers.",
   "miss-julie":
