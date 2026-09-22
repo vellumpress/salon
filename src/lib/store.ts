@@ -20,6 +20,18 @@ import {
 import { mergePledge, type SitPledge, type SitPledgeStatus } from "./sit-pledge.ts";
 import { sameTogetherPair, type TogetherKeep } from "./together-keep.ts";
 import { dayKey } from "./day-key.ts";
+import {
+  ACTIVE_READ_VERSION,
+  addMinutes,
+  beginSit,
+  closeSit,
+  migrateReadingClock,
+  type ReadingClockState,
+  noteAdvance,
+  notePause,
+  noteResume,
+  type SitClock,
+} from "./active-read.ts";
 
 export { dayKey };
 
@@ -31,6 +43,14 @@ export type WorkProgress = {
   kept: string[];
   completedAt: number | null;
   entered: boolean;
+  /**
+   * Active-read clock for the open sit. Optional so older snapshots still
+   * parse; missing fields are treated as a fresh clock. Minutes are credited
+   * in `noteAdvance`, not from `sittingStartedAt`.
+   */
+  activeAnchorAt?: number | null;
+  activeMs?: number;
+  activeAdvances?: number;
 };
 
 /** One finished sit — capped history for pace / resonance. */
@@ -41,8 +61,6 @@ export type SitSession = {
 };
 
 const MAX_SIT_HISTORY = 80;
-const MAX_SESSION_MINUTES = 180;
-const MIN_SESSION_MINUTES = 0.25;
 
 export type CuratorTurn = { role: "user" | "curator"; text: string };
 
@@ -71,8 +89,20 @@ type VellumState = {
   favorites: string[];
   curator: CuratorTurn[];
   readingNow: ReadingNow | null;
-  /** Per calendar day (local YYYY-MM-DD) accumulated sitting minutes. */
+  /**
+   * Per calendar day (local YYYY-MM-DD) of *active* reading minutes.
+   * Credited on a forward breath, clamped per tap. Not wall-clock.
+   */
   readingMinutesByDay: Record<string, number>;
+  /** Forward advances (new breath / finished last line) per local day. */
+  advancesByDay: Record<string, number>;
+  /** Timestamp of the last forward advance. 0 until one happens after the clock reset. */
+  lastActiveReadAt: number;
+  /**
+   * 1 = active-advance clock. Missing / 0 is the legacy wall-clock ledger,
+   * cleared once in `migrateReadingClock`.
+   */
+  activeReadVersion: number;
   /** Recent finished sits (newest last), capped. */
   sitHistory: SitSession[];
   /** Last completed episode number per serialize plan id. */
@@ -109,6 +139,12 @@ type VellumState = {
   setReadingNow: (now: ReadingNow | null) => void;
   ensure: (workId: string) => WorkProgress;
   setBreath: (workId: string, index: number) => void;
+  /** Forward advance: move to `index` and credit clamped active time. */
+  advanceBreath: (workId: string, index: number) => void;
+  /** Drop the open-sentence anchor (hidden, overlay, leaving). No credit. */
+  pauseActiveRead: (workId: string) => void;
+  /** Arm the anchor again after a pause, during an open sit. No credit. */
+  resumeActiveRead: (workId: string) => void;
   startSitting: (workId: string, opts?: { restart?: boolean }) => void;
   endSitting: (workId: string) => void;
   saveKeyword: (workId: string, sceneId: string, keyword: string) => void;
@@ -126,6 +162,9 @@ const emptyProgress = (): WorkProgress => ({
   kept: [],
   completedAt: null,
   entered: false,
+  activeAnchorAt: null,
+  activeMs: 0,
+  activeAdvances: 0,
 });
 
 const REENTRY_MS = 8 * 60 * 1000;
@@ -157,56 +196,103 @@ const persistStorage = {
   },
 };
 
-if (typeof window !== "undefined") {
-  window.addEventListener("pagehide", flushPersist);
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden) flushPersist();
-  });
+function clockOf(progress: WorkProgress): SitClock {
+  return {
+    sittingStartedAt: progress.sittingStartedAt,
+    activeAnchorAt: progress.activeAnchorAt ?? null,
+    activeMs: progress.activeMs ?? 0,
+    activeAdvances: progress.activeAdvances ?? 0,
+  };
 }
 
-
-function elapsedSittingMinutes(startedAt: number | null | undefined, endedAt: number) {
-  if (typeof startedAt !== "number" || startedAt <= 0) return 0;
-  const raw = (endedAt - startedAt) / 60_000;
-  if (!Number.isFinite(raw) || raw < MIN_SESSION_MINUTES) return 0;
-  return Math.min(MAX_SESSION_MINUTES, Math.round(raw * 4) / 4);
+function writeClock(progress: WorkProgress, clock: SitClock): WorkProgress {
+  return {
+    ...progress,
+    sittingStartedAt: clock.sittingStartedAt,
+    activeAnchorAt: clock.activeAnchorAt,
+    activeMs: clock.activeMs,
+    activeAdvances: clock.activeAdvances,
+  };
 }
 
-type SittingSlice = {
+/** Clear every open-sentence anchor so a restored page cannot claim hidden time. */
+function pauseAllAnchors(progress: Record<string, WorkProgress>) {
+  let changed = false;
+  const next: Record<string, WorkProgress> = { ...progress };
+  for (const [id, item] of Object.entries(progress)) {
+    if (!item?.activeAnchorAt) continue;
+    next[id] = writeClock(item, notePause(clockOf(item)));
+    changed = true;
+  }
+  return changed ? next : progress;
+}
+
+type ClockSlice = {
   progress: Record<string, WorkProgress>;
   readingMinutesByDay: Record<string, number>;
+  advancesByDay: Record<string, number>;
+  lastActiveReadAt: number;
   sitHistory: SitSession[];
 };
 
-/** Credit elapsed sit time, clear sittingStartedAt, append sitHistory. */
+/**
+ * Credit one forward advance into the day ledger and the open sit.
+ * Closing the sit later must not add this time again.
+ */
+function applyAdvance(
+  state: ClockSlice,
+  workId: string,
+  now: number,
+): Pick<ClockSlice, "progress" | "readingMinutesByDay" | "advancesByDay" | "lastActiveReadAt"> {
+  const current = state.progress[workId] ?? emptyProgress();
+  const stepped = noteAdvance(clockOf(current), now);
+  const day = dayKey(now);
+  const advancesByDay = { ...(state.advancesByDay ?? {}) };
+  advancesByDay[day] = (advancesByDay[day] ?? 0) + 1;
+  return {
+    progress: {
+      ...state.progress,
+      [workId]: {
+        ...writeClock(current, stepped.clock),
+        lastOpenedAt: now,
+        entered: true,
+      },
+    },
+    readingMinutesByDay: {
+      ...(state.readingMinutesByDay ?? {}),
+      [day]: addMinutes(state.readingMinutesByDay?.[day] ?? 0, stepped.creditMs),
+    },
+    advancesByDay,
+    lastActiveReadAt: now,
+  };
+}
+
+/**
+ * Finish a sit. History minutes are the active sum from advances, not
+ * `endedAt - sittingStartedAt`. Idle open → no row, no extra minutes.
+ */
 function applySittingClose(
-  state: SittingSlice,
+  state: ClockSlice,
   workId: string,
   endedAt: number,
-): SittingSlice {
+): Pick<ClockSlice, "progress"> & Partial<Pick<ClockSlice, "sitHistory">> {
   const current = state.progress[workId] ?? emptyProgress();
-  const minutes = elapsedSittingMinutes(current.sittingStartedAt, endedAt);
+  const closed = closeSit(clockOf(current));
   const progress = {
     ...state.progress,
     [workId]: {
-      ...current,
-      sittingStartedAt: null,
+      ...writeClock(current, closed.clock),
       lastOpenedAt: endedAt,
     },
   };
-  if (minutes <= 0) {
-    return { ...state, progress };
+  if (!closed.countSit) {
+    return { progress };
   }
-  const day = dayKey(endedAt);
-  const readingMinutesByDay = {
-    ...(state.readingMinutesByDay ?? {}),
-    [day]: Math.round(((state.readingMinutesByDay?.[day] ?? 0) + minutes) * 4) / 4,
-  };
   const sitHistory = [
     ...(state.sitHistory ?? []),
-    { workId, minutes, endedAt },
+    { workId, minutes: closed.minutes, endedAt },
   ].slice(-MAX_SIT_HISTORY);
-  return { progress, readingMinutesByDay, sitHistory };
+  return { progress, sitHistory };
 }
 
 export const useVellum = create<VellumState>()(
@@ -227,6 +313,9 @@ export const useVellum = create<VellumState>()(
       curator: [],
       readingNow: null,
       readingMinutesByDay: {},
+      advancesByDay: {},
+      lastActiveReadAt: 0,
+      activeReadVersion: ACTIVE_READ_VERSION,
       sitHistory: [],
       serializeNight: {},
       togetherKeeps: [],
@@ -391,17 +480,17 @@ export const useVellum = create<VellumState>()(
       setReadingNow: (readingNow) => set({ readingNow }),
       startShuffle: (workId) =>
         set((state) => {
+          const now = Date.now();
           const current = state.progress[workId] ?? emptyProgress();
           return {
             lastShuffle: workId,
             progress: {
               ...state.progress,
               [workId]: {
-                ...current,
+                ...writeClock(current, beginSit(clockOf(current), now, false)),
                 breathIndex: 0,
                 completedAt: null,
-                sittingStartedAt: Date.now(),
-                lastOpenedAt: Date.now(),
+                lastOpenedAt: now,
                 entered: true,
               },
             },
@@ -418,21 +507,82 @@ export const useVellum = create<VellumState>()(
       },
       setBreath: (workId, index) =>
         set((state) => {
+          const now = Date.now();
           const current = state.progress[workId] ?? emptyProgress();
+          // Retreats and jumps are not advances. Restart the gap so the next
+          // forward tap measures only the sentence now on screen.
+          const clock = current.sittingStartedAt
+            ? noteResume(notePause(clockOf(current)), now)
+            : clockOf(current);
           return {
             progress: {
               ...state.progress,
               [workId]: {
-                ...current,
+                ...writeClock(current, clock),
                 breathIndex: index,
-                lastOpenedAt: Date.now(),
+                lastOpenedAt: now,
                 entered: true,
               },
             },
           };
         }),
+      advanceBreath: (workId, index) =>
+        set((state) => {
+          const now = Date.now();
+          const current = state.progress[workId] ?? emptyProgress();
+          if (!(index > current.breathIndex)) {
+            const clock = current.sittingStartedAt
+              ? noteResume(notePause(clockOf(current)), now)
+              : clockOf(current);
+            return {
+              progress: {
+                ...state.progress,
+                [workId]: {
+                  ...writeClock(current, clock),
+                  breathIndex: index,
+                  lastOpenedAt: now,
+                  entered: true,
+                },
+              },
+            };
+          }
+          const credited = applyAdvance(state, workId, now);
+          const row = credited.progress[workId] ?? emptyProgress();
+          return {
+            ...credited,
+            progress: {
+              ...credited.progress,
+              [workId]: { ...row, breathIndex: index },
+            },
+          };
+        }),
+      pauseActiveRead: (workId) =>
+        set((state) => {
+          const current = state.progress[workId];
+          if (!current?.activeAnchorAt) return {};
+          return {
+            progress: {
+              ...state.progress,
+              [workId]: writeClock(current, notePause(clockOf(current))),
+            },
+          };
+        }),
+      resumeActiveRead: (workId) =>
+        set((state) => {
+          const current = state.progress[workId];
+          if (!current?.sittingStartedAt) return {};
+          const clock = noteResume(clockOf(current), Date.now());
+          if (clock.activeAnchorAt === (current.activeAnchorAt ?? null)) return {};
+          return {
+            progress: {
+              ...state.progress,
+              [workId]: writeClock(current, clock),
+            },
+          };
+        }),
       startSitting: (workId, opts) =>
         set((state) => {
+          const now = Date.now();
           const current = state.progress[workId] ?? emptyProgress();
           const restart = Boolean(opts?.restart);
           const keep =
@@ -443,9 +593,8 @@ export const useVellum = create<VellumState>()(
             progress: {
               ...state.progress,
               [workId]: {
-                ...current,
-                sittingStartedAt: keep ? current.sittingStartedAt : Date.now(),
-                lastOpenedAt: Date.now(),
+                ...writeClock(current, beginSit(clockOf(current), now, keep)),
+                lastOpenedAt: now,
                 entered: true,
               },
             },
@@ -483,16 +632,30 @@ export const useVellum = create<VellumState>()(
       complete: (workId) =>
         set((state) => {
           const now = Date.now();
-          const closed = applySittingClose(state, workId, now);
-          const current = closed.progress[workId] ?? emptyProgress();
+          const current = state.progress[workId] ?? emptyProgress();
+          if (current.completedAt) return {};
+          // Finishing the last line is an advance: credit the sentence just left.
+          const armed = Boolean(current.sittingStartedAt || current.activeAnchorAt);
+          const credited = armed ? applyAdvance(state, workId, now) : null;
+          const merged: ClockSlice = {
+            progress: credited?.progress ?? state.progress,
+            readingMinutesByDay: credited?.readingMinutesByDay ?? state.readingMinutesByDay,
+            advancesByDay: credited?.advancesByDay ?? state.advancesByDay,
+            lastActiveReadAt: credited?.lastActiveReadAt ?? state.lastActiveReadAt,
+            sitHistory: state.sitHistory,
+          };
+          const closed = applySittingClose(merged, workId, now);
+          const row = closed.progress[workId] ?? emptyProgress();
           return {
+            ...(credited ?? {}),
             ...closed,
             progress: {
               ...closed.progress,
               [workId]: {
-                ...current,
+                ...row,
                 completedAt: now,
                 sittingStartedAt: null,
+                activeAnchorAt: null,
                 lastOpenedAt: now,
               },
             },
@@ -531,6 +694,10 @@ export const useVellum = create<VellumState>()(
     }),
     {
       name: "vellum-v1",
+      // v2: active-advance clock. v0/v1 ledgers were open→close wall time.
+      version: 2,
+      migrate: (persisted, version) =>
+        migrateReadingClock((persisted ?? {}) as ReadingClockState, version),
       storage: createJSONStorage(() => persistStorage),
       partialize: (state) => ({
         theme: state.theme,
@@ -546,6 +713,9 @@ export const useVellum = create<VellumState>()(
         favorites: state.favorites,
         curator: state.curator,
         readingMinutesByDay: state.readingMinutesByDay,
+        advancesByDay: state.advancesByDay,
+        lastActiveReadAt: state.lastActiveReadAt,
+        activeReadVersion: state.activeReadVersion,
         sitHistory: state.sitHistory,
         serializeNight: state.serializeNight,
         togetherKeeps: state.togetherKeeps,
@@ -557,6 +727,24 @@ export const useVellum = create<VellumState>()(
 );
 
 export const useChamber = useVellum;
+
+if (typeof window !== "undefined") {
+  window.addEventListener("pagehide", () => {
+    const progress = pauseAllAnchors(useVellum.getState().progress);
+    if (progress !== useVellum.getState().progress) {
+      useVellum.setState({ progress });
+    }
+    flushPersist();
+  });
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) return;
+    const progress = pauseAllAnchors(useVellum.getState().progress);
+    if (progress !== useVellum.getState().progress) {
+      useVellum.setState({ progress });
+    }
+    flushPersist();
+  });
+}
 
 export function shouldReenter(progress: WorkProgress | undefined) {
   if (!progress) return false;

@@ -36,7 +36,7 @@ test("six FIFA-hex axes map live reading stats", () => {
   );
   assert.equal(axes[0]?.score, 90);
   assert.equal(axes[0]?.display, "18");
-  assert.equal(axes[0]?.unit, "min");
+  assert.equal(axes[0]?.unit, "active min");
   assert.equal(axes[1]?.score, 30);
   assert.equal(axes[1]?.label, "Week");
   assert.equal(axes[2]?.score, 30);
@@ -120,6 +120,6 @@ test("caption lists every axis for assistive text", () => {
     sittingMinutes: 20,
   });
   const caption = radarCaption(axes);
-  assert.match(caption, /Today 18 min/);
+  assert.match(caption, /Today 18 active min/);
   assert.match(caption, /Sits 2 sits/);
 });

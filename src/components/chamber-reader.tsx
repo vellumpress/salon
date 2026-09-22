@@ -92,6 +92,9 @@ export function VellumReader({
   const setSittingMinutes = useVellum((s) => s.setSittingMinutes);
   const progress = useVellum((s) => s.progress[work.id]);
   const setBreath = useVellum((s) => s.setBreath);
+  const advanceBreath = useVellum((s) => s.advanceBreath);
+  const pauseActiveRead = useVellum((s) => s.pauseActiveRead);
+  const resumeActiveRead = useVellum((s) => s.resumeActiveRead);
   const startSitting = useVellum((s) => s.startSitting);
   const endSitting = useVellum((s) => s.endSitting);
   const completeSerializeNight = useVellum((s) => s.completeSerializeNight);
@@ -217,6 +220,28 @@ export function VellumReader({
     return () => document.documentElement.classList.remove("sitting");
   }, []);
 
+  // Idle, background, and the threshold / timer sheets are not reading.
+  // The anchor is cleared so the next advance cannot claim that gap.
+  useEffect(() => {
+    if (overlay !== "none") {
+      pauseActiveRead(work.id);
+      return;
+    }
+    resumeActiveRead(work.id);
+    const onVis = () => {
+      if (document.hidden) pauseActiveRead(work.id);
+      else resumeActiveRead(work.id);
+    };
+    document.addEventListener("visibilitychange", onVis);
+    const onHide = () => pauseActiveRead(work.id);
+    window.addEventListener("pagehide", onHide);
+    return () => {
+      document.removeEventListener("visibilitychange", onVis);
+      window.removeEventListener("pagehide", onHide);
+      pauseActiveRead(work.id);
+    };
+  }, [overlay, pauseActiveRead, resumeActiveRead, work.id]);
+
   useEffect(() => {
     setCanShare(canNativeShare());
   }, []);
@@ -250,7 +275,10 @@ export function VellumReader({
     const words = target ? target.text.split(/\s+/).length : 8;
     const wait = Math.min(140, 36 + words * 5);
     lockUntil.current = Date.now() + wait;
-    setBreath(work.id, next);
+    // Only a step onto the next breath is active reading. Retreats, jumps,
+    // and scrolling the line do not add time.
+    if (next === index + 1) advanceBreath(work.id, next);
+    else setBreath(work.id, next);
     if (!together) setStill(true);
   }
 

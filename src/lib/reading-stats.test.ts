@@ -99,6 +99,8 @@ test("recorded sits drive today, week, and rings", () => {
   assert.equal(reading.rings[0]?.value, 18);
   assert.equal(reading.rings[0]?.max, 20);
   assert.equal(reading.sits, 2);
+  assert.equal(reading.advancesToday, 0);
+  assert.equal(reading.lastActiveReadAt, 0);
   assert.equal(reading.radar[0]?.id, "today");
   assert.equal(reading.radar[0]?.score, 90);
   assert.equal(reading.radar[5]?.id, "sits");
@@ -216,6 +218,52 @@ test("streak copy stays optional and unashamed", () => {
   assert.match(streakLine(0), /sit can start/);
   assert.match(streakLine(1), /Tomorrow can join/);
   assert.match(streakLine(4), /quiet run of 4/);
+});
+
+test("breath progress does not invent minutes", () => {
+  const reading = deriveReadingStats({
+    progress: {
+      passing: progress({
+        entered: true,
+        breathIndex: 400,
+        lastOpenedAt: NOW,
+      }),
+    },
+    favorites: [],
+    now: NOW,
+  });
+  assert.equal(reading.minutesToday, 0);
+  assert.equal(reading.minutesWeek, 0);
+  assert.equal(reading.minutesAll, 0);
+  assert.equal(reading.minutesAreEstimated, false);
+  assert.equal(reading.breaths, 400);
+  assert.equal(reading.rings[0]?.unit, "active min");
+});
+
+test("advances today stay separate from all-time breaths", () => {
+  const today = dayKey(NOW);
+  const yesterday = dayKey(NOW - 24 * 60 * 60 * 1000);
+  const reading = deriveReadingStats({
+    progress: {
+      passing: progress({ entered: true, breathIndex: 40, lastOpenedAt: NOW }),
+    },
+    favorites: [],
+    readingMinutesByDay: { [today]: 4, [yesterday]: 2 },
+    advancesByDay: { [today]: 8, [yesterday]: 4 },
+    lastActiveReadAt: NOW - 60_000,
+    sitHistory: [{ workId: "passing", minutes: 0, endedAt: NOW - 60_000 }],
+    now: NOW,
+  });
+  assert.equal(reading.breaths, 40);
+  assert.equal(reading.advancesToday, 8);
+  assert.equal(reading.advancesAll, 12);
+  assert.equal(reading.minutesToday, 4);
+  assert.equal(reading.minutesWeek, 6);
+  assert.equal(reading.lastActiveReadAt, NOW - 60_000);
+  assert.equal(reading.pace.avgGapSec, 30);
+  assert.match(reading.pace.detail, /30s apart/);
+  assert.equal(reading.sits, 1);
+  assert.equal(reading.activity[0]?.detail, "Sit");
 });
 
 test("formatMinutes stays compact", () => {
