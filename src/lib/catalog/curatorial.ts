@@ -64,6 +64,8 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * never Featured, not For you. Cold-open stays Mirth → Quicksand → Botchan.
  * BATCH-8 CLEAR (Sep 22) sits on Next after All Quiet and BATCH-5, before-sleep only —
  * never Featured, not For you. Cold-open stays Mirth → Quicksand → Botchan.
+ * Tier B format-min batches 15–16 sit on Later only — never Featured, not Next,
+ * not For you. Cold-open stays Mirth → Quicksand → Botchan.
  * BATCH-11 CLEAR (Sep 22) sits on Next after BATCH-8 (after All Quiet),
  * before-sleep only — never Featured, not For you. Cold-open stays
  * Mirth → Quicksand → Botchan.
