@@ -122,6 +122,16 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * On the Seaboard leaves Next for For you (and the walk / before-sleep sit);
  * Preface skipped, Goosestone bay open (PG 44184). Siddhartha and The Red
  * Room stay unstamped this wave. Cold-open stays Mirth → Quicksand → Botchan.
+ * 4PM CLEAR (Sep 22) — Recommend only, never Featured. A Passage to India leads
+ * this cycle’s Next append (Chandrapore / Marabar, English 1924, PG 61221),
+ * then Mhudi (Bechuana open, Lovedale 1930, no Project Gutenberg id), then
+ * María, moved off its EXTRACTABLE-8 seat onto this Next tail. María is Ogden’s
+ * English 1890, lock-of-hair open, distinct from Marianela. Bel-Ami is For you
+ * only (French 1885, PG 3733; no invented English year), after the cold-open
+ * trio and before Generosity. Magnhild is Rituals only — before-sleep and a
+ * walk, PG 33683, Preface skipped, Dust cut — not Next, not For you.
+ * Cold-open stays Mirth → Quicksand → Botchan. Tang Poems and The Bronze
+ * Horseman stay HOLD.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -418,7 +428,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "gods-trombones",
   "hadji-murad",
   "anandamath",
-  "maria",
   "lady-macbeth",
   "layla",
   "conference",
@@ -428,6 +437,10 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "maria-chapdelaine",
   // Mira NOON2 CLEAR — after 8AM. Never Featured. Not For you.
   "african-farm",
+  // Mira 4PM CLEAR — Passage leads Next. Never Featured. Not For you.
+  "a-passage-to-india",
+  "mhudi",
+  "maria",
 ] as const;
 
 /**
