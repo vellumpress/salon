@@ -268,6 +268,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "there-is-confusion",
       "miss-lulu-bett",
       "seven-brothers",
+      "generosity",
     ],
   },
   {
@@ -620,7 +621,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "of-one-blood",
       "maria-chapdelaine",
       "lady-into-fox",
-      "generosity",
     ],
   },
   {

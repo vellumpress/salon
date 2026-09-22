@@ -364,7 +364,6 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "gentlemen-prefer-blondes",
     "of-one-blood",
     "maria-chapdelaine",
-    "generosity",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1473,9 +1472,10 @@ test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
     "quicksand",
     "botchan",
   ]);
-  assert.equal(forYou!.workIds.at(-3), "there-is-confusion");
-  assert.equal(forYou!.workIds.at(-2), "miss-lulu-bett");
-  assert.equal(forYou!.workIds.at(-1), "seven-brothers");
+  assert.equal(forYou!.workIds.at(-4), "there-is-confusion");
+  assert.equal(forYou!.workIds.at(-3), "miss-lulu-bett");
+  assert.equal(forYou!.workIds.at(-2), "seven-brothers");
+  assert.equal(forYou!.workIds.at(-1), "generosity");
   assert.equal(sleep!.workIds[0], "quicksand");
 });
 
@@ -2190,7 +2190,7 @@ test("Mira 8AM CLEAR ×5 are Recommend-only local binds, never Featured", () => 
   assert.ok(brothersFull.breaths[0]?.text.startsWith(brothers!.opening ?? ""));
 });
 
-test("Generosity by Amber Later is an original Vellum bind on Next, never Featured", () => {
+test("Generosity by Amber Later is For you only, never Featured", () => {
   const id = "generosity";
   const work = SHELF.find((item) => item.id === id);
   assert.ok(work);
@@ -2201,14 +2201,12 @@ test("Generosity by Amber Later is an original Vellum bind on Next, never Featur
   assert.equal(work!.gutenberg, undefined);
   assert.equal(work!.language, "English");
   assert.equal(work!.opening, "I should apologize.");
-  assert.equal(work!.breaths, 103);
+  assert.equal(work!.breaths, 198);
   assert.equal(isBoundLocal(work!), true);
   assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false);
-  assert.equal(curatorialTrack(id), "next");
+  assert.equal(curatorialTrack(id), "later");
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false);
   assert.equal(isAdaptedBySalon(id), false);
-  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
-  assert.equal(next.at(-1), id);
-  assert.ok(next.indexOf(id) > next.indexOf("maria-chapdelaine"));
   const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
   assert.deepEqual(forYou!.workIds.slice(0, 3), [
@@ -2216,28 +2214,45 @@ test("Generosity by Amber Later is an original Vellum bind on Next, never Featur
     "quicksand",
     "botchan",
   ]);
-  assert.equal(forYou!.workIds.includes(id), false);
+  assert.equal(forYou!.workIds.includes(id), true);
+  assert.equal(forYou!.workIds.at(-1), id);
+  assert.equal(sleep!.workIds.includes(id), false);
   assert.equal(sleep!.workIds[0], "quicksand");
-  assert.equal(sleep!.workIds.at(-1), id);
   assert.equal(existsSync(new URL("./openings/generosity.json", import.meta.url)), false);
   const full = JSON.parse(readFileSync(new URL("./texts/generosity.json", import.meta.url), "utf8")) as {
     rights?: string;
     source?: string;
-    scenes: { title: string; reentry: string }[];
-    breaths: { text: string }[];
+    scenes: { id: string; title: string; reentry: string }[];
+    breaths: { text: string; sceneId: string }[];
     note?: string;
   };
   assert.equal(full.rights, "Vellum");
   assert.equal(full.source, "original");
-  assert.equal(full.scenes.length, 2);
+  assert.equal(full.scenes.length, 8);
   assert.equal(full.scenes[0]?.title, "Generosity");
-  assert.equal(full.scenes[1]?.title, "***");
-  assert.equal(full.breaths.length, 103);
+  assert.deepEqual(
+    full.scenes.slice(1).map((scene) => scene.title),
+    ["Untitled", "Untitled", "Untitled", "Untitled", "Untitled", "Untitled", "Untitled"],
+  );
+  assert.equal(full.breaths.length, 198);
   assert.equal(full.breaths[0]?.text, "I should apologize.");
-  assert.equal(full.breaths.at(-1)?.text.startsWith("Moment of culture"), true);
-  assert.equal(full.breaths.filter((breath) => breath.text === "***").length, 6);
-  assert.ok(full.breaths.some((breath) => breath.text === "I’m sorry."));
-  assert.ok(full.breaths.some((breath) => breath.text === "Without walls between rooms we"));
+  const story = full.breaths.filter((breath) => breath.sceneId === "s0");
+  assert.equal(story.at(-1)?.text, "I’m sorry.");
+  assert.equal(full.breaths.filter((breath) => breath.text === "***").length, 0);
+  assert.deepEqual(
+    full.scenes.slice(1).map((scene) => scene.reentry),
+    [
+      "Without walls between rooms we",
+      "Nighttime rain sluiced in the maze of your astounding mimicry.",
+      "I walked through freezing weather to a home",
+      "In silent times passive sentiment draws flies.",
+      "Your face, three quarters turned away",
+      "Looking out the room and the floor you slept on like it was outside where you slept so comfortable I saw a purple light at the top of the spire is a steel peak to attract charge unlike the night I left far from the stranger’s room when I placed the back of my hand against your palm tree on my image beach where your bald geometry begged my careless attraction and I beat you like a guilty not guilty show dog when you stole my coat I gifted you until I heard our master chew your numb limb and begged him to stop breeding without me as I dragged my arm around your looming shoulder and we went out of the tropical room into the mind of someone who was really empathetic but not me and you were brainless, sleeping idiot leftover girl from the world of the most beautiful world I saw you in, so talented because of your ability to read equations and derisive fear.",
+      "Moment of culture I remember falling on your lap and spilling charcoal.",
+    ],
+  );
+  assert.equal(full.breaths.at(-1)?.text, "Your lap and then it is absence I.");
+  assert.ok(full.breaths.some((breath) => breath.text === "“They all look the same, why this one?”"));
   assert.equal(JSON.stringify(full).includes("gutenberg.org"), false);
   assert.equal(/public domain|Project Gutenberg/i.test(full.note ?? ""), false);
   assert.equal(full.breaths.some((breath) => /^[A-Z][a-z]+: /.test(breath.text)), false);
