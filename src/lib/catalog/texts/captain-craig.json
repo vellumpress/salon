@@ -1,0 +1,1416 @@
+{
+  "id": "captain-craig",
+  "title": "Captain Craig: A Book of Poems",
+  "author": "Edwin Arlington Robinson",
+  "year": "1902",
+  "note": "Project Gutenberg 77544",
+  "minutes": 364,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Captain Craig",
+      "place": "Captain Craig",
+      "reentry": "I doubt if ten men in all Tilbury Town Had ever shaken hands with Captain Craig, Or called him by his name, or looked at him So curiously, or so concernedly, As they had looked at ashes; but a few-- Say five or six of us--had found somehow ",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Isaac and Archibald",
+      "place": "Isaac and Archibald",
+      "reentry": "Isaac and Archibald were two old men. I knew them, and I may have laughed at them A little; but I must have honored them For they were old, and they were geniuses.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "The Return of Morgan and Fingal",
+      "place": "The Return of Morgan and Fingal",
+      "reentry": "And there we were together again-- Together again, we three: Morgan, Fingal, fiddle, and all, They had come for the night with me.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Aunt Imogen",
+      "place": "Aunt Imogen",
+      "reentry": "Aunt Imogen was coming, and therefore The children--Jane, Sylvester, and Young George-- Were eyes and ears; for there was only one Aunt Imogen to them in the whole world, And she was in it only for four weeks In fifty-two. But those great b",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "The Klondike",
+      "place": "The Klondike",
+      "reentry": "Never mind the day we left, or the way the women clung to us; All we need now is the last way they looked at us. Never mind the twelve men there amid the cheering-- Twelve men or one man, ’twill soon be all the same; For this is what we kno",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "The Growth of \"Lorraine\"",
+      "place": "The Growth of \"Lorraine\"",
+      "reentry": "While I stood listening, discreetly dumb, Lorraine was having the last word with me: “I know,” she said, “I know it, but you see Some creatures are born fortunate, and some Are born to be found out and overcome,-- Born to be slaves, to let ",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "The Sage",
+      "place": "The Sage",
+      "reentry": "Foreguarded and unfevered and serene, Back to the perilous gates of Truth he went-- Back to fierce wisdom and the Orient, To the Dawn that is, that shall be, and has been: Previsioned of the madness and the mean He stood where Asia, crowned",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Erasmus",
+      "place": "Erasmus",
+      "reentry": "When he protested, not too solemnly, That for a world’s achieving maintenance The crust of overdone divinity Lacked aliment, they called it recreance; And when he chose through his own glass to scan Sick Europe, and reduced, unyieldingly, T",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "The Woman and the Wife",
+      "place": "The Woman and the Wife",
+      "reentry": "“You thought we knew,” she said, “but we were wrong. This we can say, the rest we do not say; Nor do I let you throw yourself away Because you love me. Let us both be strong, And we shall find in sorrow, before long, Only the price Love rul",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "The Book of Annandale",
+      "place": "The Book of Annandale",
+      "reentry": "Partly to think, more to be left alone, George Annandale said something to his friends-- A word or two, brusque, but yet smoothed enough To suit their funeral gaze--and went upstairs; And there, in the one room that he could call His own, h",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "Sainte-Nitouche",
+      "place": "Sainte-Nitouche",
+      "reentry": "Though not for common praise of him, Nor yet for pride or charity, Still would I make to Vanderberg One tribute for his memory:",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s11",
+      "title": "As a World Would Have It",
+      "place": "As a World Would Have It",
+      "reentry": "Shall I never make him look at me again? I look at him, I look my life at him, I tell him all I know the way to tell, But there he stays the same.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s12",
+      "title": "The Corridor",
+      "place": "The Corridor",
+      "reentry": "It may have been the pride in me for aught I know, or just a patronizing whim; But call it freak or fancy, or what not, I cannot hide that hungry face of him.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s13",
+      "title": "Cortège",
+      "place": "Cortège",
+      "reentry": "Four o’clock this afternoon, Fifteen hundred miles away: So it goes, the crazy tune, So it pounds and hums all day.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s14",
+      "title": "The Wife of Palissy",
+      "place": "The Wife of Palissy",
+      "reentry": "Yes, you have it; I can see. Beautiful?... Dear, look at me! Look and let my shame confess Triumph after weariness. Beautiful? Ah, yes.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s15",
+      "title": "Twilight Song",
+      "place": "Twilight Song",
+      "reentry": "Through the shine, through the rain We have shared the day’s load; To the old march again We have tramped the long road; We have laughed, we have cried, And we’ve tossed the King’s crown; We have fought, we have died, And we’ve trod the day",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "I doubt if ten men in all Tilbury Town Had ever shaken hands with Captain Craig, Or called him by his name, or looked at him So curiously, or so concernedly, As they had looked at ashes; but a few-- Say five or six of us--had found somehow The spark in him, and we had fanned it there, Choked under, like a jest in Holy Writ, By Tilbury prudence. He had lived his life, And he had shared, with all of humankind, Inveterate leave to fashion of himself, By some resplendent metamorphosis, Whatever he was not. And after time, When it had come sufficiently to pass That he was going patch-clad through the streets, Weak, dizzy, chilled, and half starved, he had laid Some nerveless fingers on a prudent sleeve And told the sleeve, in furtive confidence, Just how it was: “My name is Captain Craig,” He said, “and I must eat.” The sleeve moved on, And after it moved others--one or two; For Captain Craig, before the day was done, Got back to the scant refuge of his bed And shivered into it without a curse-- Without a murmur even. He was cold, And old, and hungry; but the worst of it Was a forlorn familiar consciousness That he had failed again. There was a time When he had fancied, if worst came to worst, And he could work no more, that he might beg Nor be the less for it; but when it came To practice he found out that he had not The genius. It was that, and that was all: Experience had made him to detect The blunder for his own, like all the rest Of him. There were no other men to blame. He was himself, and he had lost the speed He started with, and he was left behind. There was no mystery, no tragedy; And if they found him lying on his back Stone dead there some sharp morning, as they might,-- Well, once upon a time there was a man-- *Es war einmal ein König*, if it pleased him. And he was right: there were no men to blame: There was just a false note in the Tilbury tune-- A note that able-bodied men might sound Hosannas on while Captain Craig lay quiet. They might have made him sing by feeding him Till he should work again, but probably Such yielding would have jeopardized the rhythm; They found it more melodious to shout Right on, with unmolested adoration, To keep the tune as it had always been, To trust in God, and let the Captain starve."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "He must have understood that afterwards-- When we had laid some fuel to the spark Of him, and oxidized it--for he laughed Out loud and long at us to feel it burn, And then, for gratitude, made game of us: “You are the resurrection and the life,” He said, “and I the hymn the Brahmin sings; O Fuscus! and we’ll go no more a-roving.”"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "We were not quite accoutred for a blast Of any lettered nonchalance like that, And some of us--the five or six of us Who found him out--were singularly struck. But soon there came assurance of his lips, Like phrases out of some sweet instrument Man’s hand had never fitted, that he felt “No penitential shame for what had come, No virtuous regret for what had been,-- But rather a joy to find it in his life To be an outcast usher of the soul For such as had good courage of the Sun To pattern Love.” The Captain had one chair; And on the bottom of it, like a king, For longer time than I dare chronicle, Sat with an ancient ease and eulogized His opportunity. My friends got out, Like brokers out of Arcady; but I-- May be for fascination of the thing, Or may be for the larger humor of it-- Stayed listening, unwearied and unstung. When they were gone the Captain’s tuneful ooze Of rhetoric took on a change; he smiled At me and then continued, earnestly: “Your friends have had enough of it; but you, For a motive hardly vindicated yet By prudence or by conscience, have remained; And that is very good, for I have things To tell you: things that are not words alone Which are the ghosts of things--but something firmer."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "“First, would I have you know, for every gift Or sacrifice, there are--or there may be-- Two kinds of gratitude: the sudden kind We feel for what we take, the slower kind We feel for what we give. Once we have learned As much as this, we know the truth has been Told over to the world a thousand times;-- But we have had no ears to listen yet For more than fragments of it: we have heard A murmur now and then, an echo here And there, and we have made great music of it; And we have made innumerable books To please the Unknown God. Time throws away Dead thousands of them, but the God that knows No death denies not one: the books all count, The songs all count; and yet God’s music has No modes, his language has no adjectives.”"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "“You may be right, you may be wrong,” said I; “But what has all of this that you say now-- This nineteenth-century Nirvana-talk-- To do with you and me?” The Captain raised His hand and held it westward, where a patched And unwashed attic-window filtered in What barren light could reach us, and then said, With a suave, complacent resonance: “There shines The sun. Behold it. We go round and round, And wisdom comes to us with every whirl We count throughout the circuit. We may say The child is born, the boy becomes a man, The man does this and that, and the man goes,-- But having said it we have not said much, Not very much. Do I fancy, or you think, That it will be the end of anything When I am gone? There was a soldier once Who fought one fight and in that fight fell dead. Sad friends went after, and they brought him home And had a brass band at his funeral, As you should have at mine; and after that A few remembered him. But he was dead, They said, and they should have their friend no more.-- However, there was once a starveling child-- A ragged-vested little incubus, Born to be cuffed and frighted out of all Capacity for childhood’s happiness-- Who started out one day, quite suddenly, To drown himself. He ran away from home, Across the clover-fields and through the woods, And waited on the rock above the stream, Just like a kingfisher. He might have dived, Or jumped, or he might not; but anyhow, There came along a man who looked at him With such an unexpected friendliness, And talked with him in such a common way, That life grew marvelously different: What he had lately known for sullen trunks And branches, and a world of tedious leaves, Was all transmuted; a faint forest wind That once had made the loneliest of all Sad sounds on earth, made now the rarest music; And the water that had called him once to death Now seemed a flowing glory. And that man, Born to go down a soldier, did this thing.-- Not much to do? Not very much, I grant you: Good occupation for a sonneteer, Or for a clown, or for a clergyman, But small work for a soldier. By the way, When you are weary sometimes of your own Utility, I wonder if you find Occasional great comfort pondering What power a man has in him to put forth? ‘Of all the many marvelous things that are, Nothing is there more marvelous than man,’ Said Sophocles; and he lived long ago; ‘And earth, unending ancient of the gods He furrows; and the ploughs go back and forth, Turning the broken mould, year after year.’..."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "“I turned a little furrow of my own Once on a time, and everybody laughed-- As I laughed afterwards; and I doubt not The First Intelligence, which we have drawn In our competitive humility As if it went forever on two legs, Had some diversion of it: I believe God’s humor is the music of the spheres-- But even as we draft omnipotence Itself to our own image, we pervert The courage of an infinite ideal To finite resignation. You have made The cement of your churches out of tears And ashes, and the fabric will not stand: The shifted walls that you have coaxed and shored So long with unavailing compromise Will crumble down to dust and blow away, And younger dust will follow after them; Though not the faintest or the farthest whirled First atom of the least that ever flew Shall be by man defrauded of the touch God thrilled it with to make a dream for man When Science was unborn. And after time, When we have earned our spiritual ears, And art’s commiseration of the truth No longer glorifies the singing beast, Or venerates the clinquant charlatan,-- Then shall at last come ringing through the sun, Through time, through flesh, God’s music of the soul. For wisdom is that music, and all joy That wisdom:--you may counterfeit, you think, The burden of it in a thousand ways; But as the bitterness that loads your tears Makes Dead Sea swimming easy, so the gloom, The penance, and the woeful pride you keep, Make bitterness your buoyance of the world. And at the fairest and the frenziedest Alike of your God-fearing festivals, You so compound the truth to pamper fear That in the doubtful surfeit of your faith You clamor for the food that shadows eat. You call it rapture or deliverance,-- Passion or exaltation, or what most The moment needs, but your faint-heartedness Lives in it yet: you quiver and you clutch For something larger, something unfulfilled, Some wiser kind of joy that you shall have Never, until you learn to laugh with God.” And with a calm Socratic patronage, At once half sombre and half humorous, The Captain reverently twirled his thumbs And fixed his eyes on something far away; Then, with a gradual gaze, conclusive, shrewd, And at the moment unendurable For sheer beneficence, he looked at me.-- “But the brass band?” I said, not quite at ease With altruism yet.--He made a kind Of reminiscent little inward noise, Midway between a chuckle and a laugh, And that was all his answer: not a word Of explanation or suggestion came From those tight-smiling lips. And when I left, I wondered, as I trod the creaking snow And had the world-wide air to breathe again,-- Though I had seen the tremor of his mouth And honored the endurance of his hand-- Whether or not, securely closeted Up there in the stived haven of his den, The man sat laughing at me; and I felt My teeth grind hard together with a quaint Revulsion--as I think back on it now-- Not only for my Captain, but as well For every smug-faced failure on God’s earth-- Albeit I could swear, at the same time, That there were tears in the old fellow’s eyes. I question if in tremors or in tears There be more guidance to man’s worthiness Than--well, say in his prayers. But oftentimes It humors us to think that we possess By some divine adjustment of our own Particular shrewd cells, or something else, What others, for untutored sympathy, Go spirit-fishing more than half their lives To catch--like cheerful sinners to catch faith; And I have not a doubt but I assumed Some egotistic attribute like this When, cautiously, next morning I reduced The fretful qualms of my novitiate, For most part, to an undigested pride. Only, I live convinced that I regret This enterprise no more than I regret My life; and I am glad that I was born."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "That evening, at “The Chrysalis,” I found The faces of my comrades all suffused With what I chose then to denominate Superfluous good feeling. In return, They loaded me with titles of odd form And unexemplified significance, Like “Bellows-mender to Prince Æolus,” “Pipe-filler to the Hoboscholiast,” “Bread-fruit for the Non-Doing,” with one more That I remember, and a dozen more That I forget. I may have been disturbed, I do not say that I was not annoyed, But something of the same serenity That fortified me later made me feel For their skin-pricking arrows not so much Of pain as of a vigorous defect In this world’s archery. I might have tried, With a flat facetiousness, to demonstrate What they had only snapped at and thereby Made out of my best evidence no more Than comfortable food for their conceit; But patient wisdom frowned on argument, With a side nod for silence, and I smoked A series of incurable dry pipes While Morgan fiddled, with obnoxious care, Some things that I detested.--Killigrew, Drowsed with a fond abstraction, like an ass, Lay blinking at me while he grinned and made Remarks. The learned Plunket made remarks."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "It may have been for smoke that I cursed cats That night, but I have rather to believe As I lay turning, twisting, listening, And wondering, between great sleepless yawns, What possible satisfaction those dead leaves Could find in sending shadows to my room And swinging them like black rags on a line, That I, with a forlorn clear-headedness Was ekeing out probation. I had sinned In fearing to believe what I believed, And I was paying for it.--Whimsical, You think,--factitious; but “there is no luck, No fate, no fortune for us, but the old Unswerving and inviolable price Gets paid: God sells himself eternally, But never gives a crust,” my friend had said; And while I watched those leaves, and heard those cats, And with half mad minuteness analyzed The Captain’s attitude and then my own, I felt at length as one who throws himself Down restless on a couch when clouds are dark, And shuts his eyes to find, when he wakes up And opens them again, what seems at first An unfamiliar sunlight in his room And in his life--as if the child in him Had laughed and let him see; and then I knew Some prowling superfluity of child In me had found the child in Captain Craig And had the sunlight reach him. While I slept, That thought reshaped itself to friendly dreams, And in the morning it was with me still. Through March and shifting April to the time When winter first becomes a memory My friend the Captain--to my other friend’s Incredulous regret that such as he Should ever get the talons of his talk So fixed in my unfledged credulity-- Kept up the peroration of his life, Not yielding at a threshold, nor, I think, Too often on the stairs. He made me laugh Sometimes, and then again he made me weep Almost; for I had insufficiency Enough in me to make me know the truth Within the jest, and I could feel it there As well as if it were the folded note I felt between my fingers. I had said Before that I should have to go away And leave him for the season; and his eyes Had shone with well-becoming interest At that intelligence. There was no mist In them that I remember; but I marked An unmistakable self-questioning And a reticence of unassumed regret. The two together made anxiety-- Not selfishness, I ventured. I should see No more of him for six or seven months, And I was there to tell him as I might What humorous provision we had made For keeping him locked up in Tilbury Town. That finished--with a few more commonplace Prosaics on the certified event Of my return to find him young again-- I left him neither vexed, I thought, with us, Nor very much at odds with destiny. At any rate, save always for a look That I had seen too often to mistake Or to forget, he gave no other sign."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "When I was in the street I heard him shout Some anxious Latin down; but a slow load Of trailing rails absorbed it, and I lost Whatever of good counsel or farewell It may have had for me. I turned about And having waved a somewhat indistinct Acknowledgment, I walked along. The train Was late and I was early, but the gap Was filled and even crowded. Killigrew Had left his pigeonholes to say good-by, And he stood waiting by the ticket window Like one grin-cursed of Orcus.--“You have heard?” Said he.--“Heard what?” said I.--“He! he!” said he; “Then your gray-headed beneficiary-- Your paragon of abstract usefulness-- Your philhellenic proletariat-- He! he!”--“But what the devil is it all About?” said I. “What has he done? What ails him?”-- “What has he done? Ye gods! What has he done? Man, he’s a tramp--a Waggles--a dead beat! I have a friend who knew him fifteen years Ago, and I have his assurance now That your sequestered parasite achieved The same discreet collapse, at intervals, Then as when first you found him. And you ask What he has done! Go find a looking-glass And you may see some recent work of his-- The most remunerative, and I think The most unconscious.” With another man I might have made of that last adjective A stimulating text; but Killigrew Was not the one for me to stimulate In five defective minutes, and I knew it. So I offer no defense for keeping still While he gave birth to phrases for my sake, Nor more for staring at the changeless curve Where river and railroad vanished, half a mile Beyond us to the north. I gave him leave To talk as long as he had words in him, And watched the track and waited for the train; And I remember, when the brakes had ceased Their welcome wheezing and the place was filled With yells and shadows and official smash, How he ground my patient fingers and said, “Well, Good-by, old man!--good-by! And don’t forget: Patrician, but all Waggles to the grave.” The grin became a smile soon after that, And I knew that he had let the Captain go; And I could read, where once the jest had been, The spirit of the friend who cared the most."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "The train began to move; and as it moved, I felt a comfortable sudden change All over and inside. Partly it seemed As if the strings of me had all at once Gone down a tone or two; and even though It made me scowl to think so trivial A touch had owned the strength to tighten them, It made me laugh to think that I was free. But free from what--when I began to turn The question round--was more than I could say: I was no longer vexed with Killigrew, Nor more was I possessed with Captain Craig; But I was eased of some restraint, I thought, Not qualified by those amenities, And I should have to search the matter down; For I was young, and I was very keen. So I began to smoke a bad cigar That Plunket, in his love, had given me The night before; and as I smoked I watched The flying mirrors for a mile or so, Till to the changing glimpse, now sharp, now faint, They gave me of the woodland over west, A gleam of long-forgotten strenuous years Came back, when we were Red Men on the trail, With Morgan for the big chief Wocky-Bocky; But I soon yawned out of that and set myself To face again the loud monotonous ride That lay before me like a vista drawn Of bag-racks to the fabled end of things."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Yet that ride had an end, as all rides have; And the days that followed after took the road That all days take,--though never one of them Went by but I got some good thought of it For Captain Craig. Not that I pitied him, Or nursed a mordant hunger for his presence; But what I thought (what Killigrew still thinks) An irremediable cheerfulness Was in him and about the name of him, And I fancy that it may be most of all For the jokes he made that I have saved his letters. I like to think of him, and how he looked-- Or should have looked--in his renewed estate, Composing them. They may be dreariness Unspeakable to you that never saw The Captain; but to five or six of us Who knew him they are not so bad as that. It may be we have smiled not always where The text itself would seem to indicate Responsive titillation on our part,-- Yet having smiled at all we have done well, For we know that we have touched the ghost of him. He tells me that he thinks of nothing now That he would rather do than be himself, Wisely alive. So let us heed this man:--"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "“The world that has been old is young again, The touch that faltered clings; and this is May. So think of your decrepit pensioner As one who cherishes the living light, Forgetful of dead shadows. He may gloat, And he may not have power in his arms To make the young world move; but he has eyes And ears, and he can read the sun. Therefore Think first of him as one who vegetates In tune with all the children who laugh best And longest through the sunshine, though far off Their laughter, and unheard; for ’tis the child, O friend, that with his laugh redeems the man. Time steals the infant, but the child he leaves; And we, we fighters over of old wars-- We men, we shearers of the Golden Fleece-- Were brutes without him,--brutes to tear the scars Of one another’s wounds and weep in them, And then cry out on God that he should flaunt For life such anguish and flesh-wretchedness. But let the brute go roaring his own way: We do not need him, and he loves us not. Let music be for us the forward song, And let us give the good world one more chance."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "“I cannot think of anything to-day That I would rather do than be myself, Primevally alive, and have the sun Shine into me; for on a day like this, When the chaff-parts of a man’s adversities Are blown by quick spring breezes out of him-- When even a flicker of wind that wakes no more Than a tuft of grass, or a few young yellow leaves, Comes like the falling of a prophet’s breath On altar-flames rekindled of crushed embers,-- Then do I feel, now do I feel, within me No dreariness, no grief, no discontent, No twinge of human envy. But I beg That you forego credentials of the past For these illuminations of the present, Or better still, to give the shadow justice, You let me tell you something: I have yearned In many another season for these days, And having them with God’s own pageantry To make me glad for them,--yes, I have cursed The sunlight and the breezes and the leaves To think of men on stretchers and on beds, Or on foul floors, like starved outrageous lizards, Made human with paralysis and rags; Or of some poor devil on a battle-field, Left undiscovered and without the strength To drag a maggot from his clotted mouth; Or of women working where a man would fall-- Flat-breasted miracles of cheerfulness Made neuter by the work that no man counts Until it waits undone; children thrown out To feed their veins and souls with offal.... Yes, I have had half a mind to blow my brains out Sometimes; and I have gone from door to door, Ragged myself, trying to do something-- Crazy, I hope.--But what has this to do With Spring? Because one half of humankind Lives here in hell, shall not the other half Do any more than just for conscience’ sake Be miserable? Is this the way for us To lead these creatures up to find the light, Or the way to be drawn down to find the dark Again? What is it? What does the child say?"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "“But let us not make riot for the child Untaught, nor let us hold that we may read The sun but through the shadows; nor, again, Be we forgetful ever that we keep The shadows on their side. For evidence, I might go back a little to the days When I had hounds and credit, and grave friends To borrow my books and set wet glasses on them, And other friends of all sorts, grave and gay, Of whom one woman and one man stand out From all the rest, this morning. The man said One day, as we were riding, ‘Now, you see, There goes a woman cursed with happiness: Beauty and wealth, health, horses,--everything That she could ask, or we could ask, is hers, Except an inward eye for the plain fact Of what this damned world is. The cleverness God gave her--or the devil--cautions her That she must keep the china cup of life Filled somehow, and she fills it--runs it over-- Claps her white hands while some one does the sopping With fingers made, she thinks, for just that purpose, Giggles and eats and reads and goes to church, Makes pretty little penitential prayers, And has an eighteen-carat crucifix Wrapped up in chamois-skin. She gives enough, You say; but what is giving like hers worth? What is a gift without the soul to guide it? “Poor dears, and they have cancers?--Oh!” she says; And away she works at that new altar-cloth For the Reverend Hieronymus Mackintosh-- Third person, Jerry. “Jerry,” she says, “can say Such lovely things, and make life seem so sweet!” Jerry can drink, also.--And there she goes, Like a whirlwind through an orchard in the springtime-- Throwing herself away as if she thought The world and the whole planetary circus Were a flourish of apple-blossoms. Look at her! Lilies and roses! Butterflies! Great Scott! And here is this infernal world of ours-- And hers, if only she might find it out-- Starving and shrieking, sickening, suppurating, Whirling to God knows where.... But look at her! Confucius, how she rides! And by Saint Satan, She’s galloping over to talk with us, woman and horse All ours! But look--just look at her!--By Jove!’..."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "“And after that it came about somehow, Almost as if the Fates were killing time, That she, the spendthrift of a thousand joys, Rode in her turn with me, and in her turn Made observations: ‘Now there goes a man,’ She said, ‘who feeds his very soul on poison: No matter what he does, or where he looks, He finds unhappiness; or, if he fails To find it, he creates it, and then hugs it: Pygmalion again for all the world-- Pygmalion gone wrong. You know I think If when that precious animal was young, His mother, or some watchful aunt of his, Had spanked him with *Pendennis* and *Don Juan*, And given him the *Lady of the Lake*, Or *Cord and Creese*, or almost anything, There might have been a tonic for him? Listen: When he was possibly nineteen years old He came to me and said, “I understand You are in love”--yes, that is what he said,-- “But never mind, it won’t last very long; It never does; we all get over it. We have this clinging nature, for you see The Great Bear shook himself once on a time And the world is one of many that let go.” But I let the creature live, and there you see him; And he would have this life no fairer thing Than a certain time for numerous marionettes To do the Dance of Death. Give him a rose, And he will tell you it is very sweet, But only for a day. Most wonderful! Show him a child, or anything that laughs, And he begins at once to crunch his wormwood And then runs on with his “realities.” What does he know about realities, Who sees the truth of things almost as well As Nero saw the Northern Lights? Good gracious! Can’t you do something with him? Call him something-- Call him a type, and that will make him cry: One of those not at all unusual, Prophetic, would-be-Delphic manger-snappers That always get replaced when they are gone; Or one of those impenetrable men, Who seem to carry branded on their foreheads, “We are abstruse, but not quite so abstruse As we think the Lord intended we should be;” One of those men who never quite confess That Washington was great;--the kind of man That everybody knows and always will,-- Shrewd, critical, facetious, insincere, And for the most part harmless, I’m afraid. But even then, I truly think you ought To tell him something.’--And I said I would."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "“So in one afternoon you see we have The child in absence--or, to say the least, In ominous defect,--and in excess Commensurate, likewise. Now the question is, Not which was right and which was wrong, for each, By virtue of one-sidedness, was both; But rather--to my mind, as heretofore-- Is it better to be blinded by the lights, Or by the shadows? By the lights, you say? The shadows are all devils, and the lights Gleam guiding and eternal? Very good; But while you say so do not quite forget That sunshine has a devil of its own, And one that we, for the great craft of him, But vaguely recognize. The marvel is That this persuasive and especial devil, By grace of his extreme transparency, Precludes all common vision of him; yet There is one way to glimpse him and a way, As I believe, to test him,--granted once That we have ousted prejudice, which means That we have made magnanimous advance Through self-acquaintance. Not an easy thing For some of us; impossible, may be, For all of us: the woman and the man I cited, for example, would have wrought The most intractable conglomerate Of everything, if they had set themselves To analyze themselves and not each other; If only for the sake of self-respect, They would have come to no place but the same Wherefrom they started; one would have lived awhile In paradise without defending it, And one in hell without enjoying it; And each had been dissuaded neither more Nor less thereafter. There are such on earth As might have been composed primarily For object-lessons: he was one of them, And she--the devil makes us hesitate: ’Tis easy to read words writ well with ink That makes a good black mark on smooth white paper; But words are done sometimes with other ink Whereof the smooth white paper gives no sign Till science brings it out; and here we come To knowledge, and the way to test a devil."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "“To the greater number of us, you contend, This demon of the sunlight is a stranger; But if you break the sunlight of yourself, Project it, and observe the quaint shades of it, I have a shrewd suspicion you may find That even as a name lives unrevealed In ink that waits an agent, so it is The devil--or this devil--hides himself To all the diagnoses we have made Save one,--sincerity. The quest is hard-- As hard as truth; but once we seem to know That his compound obsequiousness prevails Unferreted within us, we may find That sympathy, which aureoles itself To superfluity from you and me, May stand against the soul for five or six Persistent and indubitable streaks Of irritating brilliance, out of which A man may read, if he have knowledge in him, Proportionate attest of ignorance, Hypocrisy, good-heartedness, conceit, Indifference,--with all of these out-hued By the spiritual inactivity Which more than often is identified With individual intensity, And is the parent of that selfishness Whereof no end of lesser *tions* and *isms* Are querulously born. But there are things To be considered here, or your machine May never justify the purchase of it; For if you fail to gauge the difference Between self-sacrifice and self-contempt, Your light will be all devil and your faith Diseased,--whatever courage you have left: Courage is not enough to make men glad For laughter when that laughter is itself The tribute of recriminating groans; Nor are the shapes of obsolescent creeds Much longer to flit near enough to make Men glad for living in a world like this; But wisdom, courage, knowledge, and the faith Which has the soul and is the soul of reason-- These are the world’s achievers. And the child-- The child that is the saviour of all ages, The prophet and the poet, the crown-bearer, Must yet with Love’s unhonored fortitude, Survive to cherish and attain for us The candor and the generosity, By leave of which we smile if we bring back Some first ideal flash that wakened us When wisdom like a shaft of dungeon-light Came searching down to find us."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "“Halfway back I made a mild allusion to the Fates, Not knowing then that ever I should have Dream-visions of them, painted on the air,-- Clotho, Lachesis, Atropos. Faint-hued They seem, but with a faintness never fading, Unblurred by gloom, unshattered by the sun, Still with eternal color, colorless, They move and they remain. The while I write These very words I see them,--Atropos, Lachesis, Clotho; and the last is laughing: When Clotho laughs, Atropos rattles her shears; But Clotho keeps on laughing just the same. Some time when I have dreamed that Atropos Has laughed, I’ll tell you how the colors change-- The colors that are changeless, colorless.”"
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "I fear I may have answered Captain Craig’s Epistle Number One with what he chose, Good-humoredly but anxiously, to take For something that was not all reverence; From the tone of Number Two it seemed almost As if the flanges of the old man’s faith Had slipped the treacherous rails of my allegiance And left him by the roadside, humorously Upset, with nothing more convivial To do than be facetious and austere:--"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "“If you did not like *Don César de Bazan* There must be some imperfection in your vitals. Flamboyant and old-fashioned? Overdone? Romantico-robustious?--Dear young man, There are fifteen thousand ways to be one-sided, And I have indicated two of them Already. Now you bait me with a third-- As if it were a spider with nine legs; But what it is that you would have me do, What fatherly wrath you most anticipate, I lack the needed impulse to discern. If you did not like *Don César de Bazan*, However, there are comedies in reach That have the fashion always. For example:--"
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "“At the time when there was not enough of laurel On Parnassus to feed quite the Boston market, An admirable poet undertook With earnest fingers to graft asphodels And old world cypress-plumes on apple-boughs; And at the end of his experiments, Like Johann Kepler, he brought forth a book. The book was not sublime, but from its hard And uncommutative perversity Of words there came, like jewels out of sand, Six measured songs too beautiful to die. So I take that self-repudiating name ‘Perversity’ and throw it like a spleen To the last and farthest of Thalia’s kennels-- Though I who shape no songs of any sort, I who have made no music, thrilled no canvas,-- I who have added nothing to the world The world would reckon save long-squandered wit-- Might with half-pardonable reverence Beguile my faith, maybe, to the forlorn Extent of some sequestered murmuring Anent the vanities. No doubt I should, If mine were the one life that I have lived; But with a few good glimpses I have had Of heaven through the little holes in hell, I do not any longer feel myself To be ordained or even qualified For criticising God to my advantage. If you doubt the true humility of this, You doubt the spectrum; and if you doubt that, You cannot understand what price it was The poet paid, at one time and another, For those indemnifying sonnet-songs That are to be the kernel in what lives To shrine him when the new-born men come singing."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "“Nor can you understand what I have read From even the squeezed items of account Which I have to my credit in that book Whereof the leaves are ages and the text Eternity. What do I care to-day For the pages that have nothing? I have lived, And I have died, and I have lived again; And I am very comfortable. Yes, Though I look back through barren years enough To make me seem--as I transmute myself In a downward retrospect from what I am-- As unproductive and as unconvinced Of the living bread and the soul’s eternal draught As a frog on a Passover-cake in a streamless desert,-- Still do I trust the light that I have earned, And having earned, received. You shake your head, But I do not know that you will shake it off."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "“Meanwhile I have the flowers and the grass, My brothers here the trees, and all July To make me joyous. Why do you shake your head? Why do you laugh?--because you are so young? Do you think if you laugh hard enough the truth Will go to sleep? Do you think of any couch Made soft enough to put the truth to sleep? Do you think there are no proper comedies But yours that have the fashion? For example, Do you think that I forget, or shall forget, One friendless, fat, fantastic nondescript Who knew the ways of laughter on low roads,-- A vagabond, a drunkard, and a sponge, But always a free creature with a soul? For a compliment to your intelligence I bring him back, though not without misgivings, And I caution you to damn him sparingly."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "“Count Pretzel von Würzburger, the Obscene (The beggar may have had another name, But no man to my knowledge ever knew it) Was a poet and a skeptic and a critic, And in his own mad manner a musician: He had found an old piano in a bar-room, And it was his career--three nights a week, From ten o’clock till twelve--to make it rattle; And then, when I was just far down enough To sit and watch him with his long straight hair, And pity him, and think he looked like Liszt, I might have glorified a musical Steam-engine, or a xylophone. The Count Played half of everything and ‘improvised’ The rest: he told me once that he was born With a genius in him that ‘prohibited Complete fidelity,’ and that his art ‘Confessed vagaries,’ therefore. But I made Kind reckoning of his vagaries then: I had the whole great pathos of the man To purify me, and all sorts of music To give me spiritual nourishment And cerebral athletics; for the Count Played indiscriminately--with an 𝆑, And with incurable presto--cradle-songs And carnivals, spring-songs and funeral marches, The Marseillaise and Schubert’s Serenade-- And always in a way to make me think Procrustes had the germ of music in him. And when this interesting reprobate Began to talk--then there were more vagaries: He made a reeking fetich of all filth, Apparently; but there was yet revealed About him, through his words and on his flesh, That ostracizing nimbus of a soul’s Abject, apologetic purity-- That phosphorescence of sincerity-- Which indicates the curse and the salvation Of a life wherein starved art may never perish."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "“One evening I remember clearliest Of all that I passed with him. Having wrought, With his nerve-ploughing ingenuity, The *Träumerei* into a Titan’s nightmare, The man sat down across the table from me And all at once was ominously decent. ‘“The more we measure what is ours to use,”’ He said then, wiping his froth-plastered mouth With the inside of his hand, ‘“the less we groan For what the gods refuse.” I’ve had that sleeved A decade for you. Now but one more stein, And I shall be prevailed upon to read The only sonnet I have ever made; And after that, if you propitiate Gambrinus, I shall play you that Andante As the world has never heard it played before.’ So saying, he produced a piece of paper, Unfolded it, and read, ‘SONNET UNIQUE DE PRETZEL VON WÜRZBURGER, DIT L’OBSCÉNE:--"
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "“‘*Carmichael had a kind of joke-disease, And he had queer things fastened on his wall. There are three green china frogs that I recall More potently than anything, for these Three frogs have demonstrated, by degrees, What curse was on the man to make him fall: “They are not ordinary frogs at all, They are the Frogs of Aristophanes.*”"
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "“‘*God! how he laughed whenever he said that; And how we caught from one another’s eyes The flash of what a tongue could never tell! We always laughed at him, no matter what The joke was worth. But when a man’s brain dies, We are not always glad.... Poor Carmichael!*’"
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "“‘I am a sowbug and a necrophile,’ Said Pretzel, ‘and the gods are growing old; The stars are singing *Golden hair to gray, Green leaf to yellow leaf*,--or chlorophyll To xanthophyll, to be more scientific,-- So speed me one more stein. You may believe That I’m a mendicant, but I am not: For though it look to you that I go begging, The truth is I go giving--giving all My strength and all my personality, My wisdom and experience--myself, To make it final--for your preservation; Though I be not the one thing or the other, Though I strike between the sunset and the dawn, Though I be cliff-rubbed wreckage on the shoals Of Circumstance,--doubt not that I comprise, With all of my disintegrated zeal, Far more than my appearance. Here he comes; Now drink to good old Pretzel! Drink down Pretzel! *Quousque tandem*, Pretzel, and O Lord, How long! But let regret go hang: the good Die first, and of the poor did many cease To be. Beethoven after Wordsworth. *Prosit!* There were geniuses among the trilobites, And I suspect that I was one of them.’"
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "“How much of him was earnest and how much Fantastic, I know not; nor do I need Profounder knowledge to exonerate The squalor or the folly of a man Than a consciousness--though even the crude laugh Of indigent Priapus follow it-- That I get good of him. The poet made Six golden sonnets. Well, Count Pretzel made No golden sort of product I remember Except a shield of wisdom for the mind Of Captain Craig--whatever you may think Of him or of his armor. If you like him, Then some time in the future, past a doubt, You will have him in a book, make metres of him,-- To the great delight of Mr. Killigrew, And the grief of all your kinsmen. Christian shame And self-confuted Orientalism For the more sagacious of them; vulture-tracks Of my Promethean bile for the rest of them; And that will be a joke. There’s nothing quite So funny as a joke that’s lost on earth And laughed at by the gods. Your devil knows it."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "“I come to like your Mr. Killigrew, And I rejoice that you speak well of him. The sprouts of human blossoming are in him, And useful eyes--if he will open them; But one thing ails the man. He smiles too much. He comes to see me once or twice a week, And I must tell him that he smiles too much. If I were Socrates, how I should do it!”"
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "Epistle Number Three was longer coming. I waited for it, even worried for it-- Though Killigrew, and of his own free will, Had written reassuring little scraps From time to time, and I had valued them The more for being his. “The Sage,” he said, “From all that I can see, is doing well-- I should say very well. Three meals a day, Siestas, and innumerable pipes-- Not to the tune of water on the stones, But rather to the tune of his own Ego, Which seems to be about the same as God. But I was always weak in metaphysics, And I pray therefore that you be lenient. I’m going to be married in December, And I have made a poem that will scan-- So Plunket says. You said the other wouldn’t:"
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "“*Augustus Plunket, Ph. D., And oh, the Bishop’s daughter; A very learned man was he And in twelve weeks he got her;* *And oh, she was as fair to see As pippins on the pippin tree ... Tu, tui, tibi, te,--chubs in the mill water.*"
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "“Connotative, succinct, and erudite; Three dots to boot. Now goodman Killigrew May wind an epic one of these glad years, And after that who knoweth but the Lord-- The Lord of Hosts who is the King of Glory?”"
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Still, when the Captain’s own words were before me, I seemed to read from them, or into them, The protest of a mortuary joy Not all substantiating Killigrew’s Off-hand assurance. The man’s face came back The while I read them, and that look again, Which I had seen so often, came back with it. I do not know that I can say just why, But I felt the feathery touch of something wrong:--"
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "“Since last I wrote--and I fear the weeks have gone Too long for me to leave my gratitude Unuttered for its own acknowledgment-- I have won, without the magic of Amphion Without the songs of Orpheus or Apollo, The frank regard--and with it, if you like, The fledged respect--of three quick-footed friends. (‘Nothing is there more marvelous than man,’ Said Sophocles; and I say after him: ‘He traps and captures, all-inventive one, The light birds and the creatures of the wold, And in his nets the fishes of the sea.’) Once they were pictures, painted on the air, Faint with eternal color, colorless,-- But now they are not pictures, they are fowls."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "“At first they stood aloof and cocked their small, Smooth, prudent heads at me and made as if, With a cryptic idiotic melancholy, To look authoritative and sagacious; But when I tossed a piece of apple to them, They scattered back with a discord of short squawks And then came forward with a craftiness That made me think of Eden. Atropos Came first, and having grabbed the morsel up, Ran flapping far away and out of sight, With Clotho and Lachesis hard after her; But finally the three fared all alike, And the next day I persuaded them with corn. In a week they came and had it from my fingers And looked up at me while I pinched their bills And made them sneeze. Count Pretzel’s Carmichael Had said they were not ordinary Birds At all,--and they are not: they are the Fates, Foredoomed of their own insufficiency To be assimilated.--Do not think, Because in my contented isolation It suits me at this time to be jocose, That I am nailing reason to the cross, Or that I set the bauble and the bells Above the crucible; for I do nought, Say nought, but with an ancient levity That is the forbear of all earnestness."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "“The cross, I said.--I had a dream last night: A dream not like to any other dream That I remember. I was all alone, Sitting as I do now beneath a tree, But looking not, as I am looking now, Against the sunlight. There was neither sun Nor moon, nor do I think of any stars; Yet there was light, and there were cedar trees, And there were sycamores. I lay at rest, Or should have seemed at rest, within a trough Between two giant roots. A weariness Was on me, and I would have gone to sleep,-- But I had not the courage. If I slept, I feared that I should never wake again; And if I did not sleep I should go mad, And with my own dull tools, which I had used With wretched skill so long, hack out my life. And while I lay there, tortured out of death, Great waves of cold, as if the dead were breathing, Came over me and through me; and I felt Quick fearful tears of anguish on my face And in my throat. But soon, and in the distance, Concealed, importunate, there was a sound Of coming steps,--and I was not afraid; No, I was not afraid then, I was glad; For I could feel, with every thought, the Man, The Mystery, the Child, a footfall nearer. Then, when he stood before me, there was no Surprise, there was no questioning: I knew him, As I had known him always; and he smiled. ‘Why are you here?’ he asked; and reaching down, He took up my dull blades and rubbed his thumb Across the edges of them and then smiled Once more.--‘I was a carpenter,’ I said, ‘But there was nothing in the world to do.’ ‘Nothing?’ said he.--‘No, nothing,’ I replied.-- ‘But are you sure,’ he asked, ‘that you have skill? And are you sure that you have learned your trade? No, you are not.’--He looked at me and laughed As he said that; but I did not laugh then, Although I might have laughed.--‘They are dull,’ said he; ‘They were not very sharp if they were ground; But they are what you have, and they will earn What you have not. So take them as they are, Grind them and clean them, put new handles to them, And then go learn your trade in Nazareth. Only be sure that you find Nazareth.’-- ‘But if I starve--what then?’ said I.--He smiled."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "“Now I call that as curious a dream As ever Meleager’s mother had,-- Æneas, Alcibiades, or Jacob. I’ll not except the scientist who dreamed That he was Adam and that he was Eve At the same time; or yet that other man Who dreamed that he was Æschylus, reborn To clutch, combine, compensate, and adjust The plunging and unfathomable chorus Wherein we catch, like a bacchanale through thunder, The chanting of the new Eumenides, Implacable, renascent, farcical, Triumphant, and American. He did it, But he did it in a dream. When he awoke One phrase of it remained; one verse of it Went singing through the remnant of his life Like a bag-pipe through a mad-house.--He died young, And the more I ponder the small history That I have gleaned of him by scattered roads, The more do I rejoice that he died young. That measure would have chased him all his days, Defeated him, deposed him, wasted him, And shrewdly ruined him--though in that ruin There would have lived, as always it has lived, In ruin as in failure, the supreme Fulfillment unexpressed, the rhythm of God That beats unheard through songs of shattered men Who dream but cannot sound it.--He declined, From all that I have ever learned of him, With absolute good-humor. No complaint, No groaning at the burden which is light, No brain-waste of impatience--‘Never mind,’ He whispered, ‘for I might have written Odes.’"
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "“Speaking of odes now makes me think of ballads. Your admirable Mr. Killigrew Has latterly committed what he calls *A Ballad of London*--London ‘Town,’ of course-- And he has wished that I pass judgment on it. He says there is a ‘generosity’ About it, and a ‘sympathetic insight;’ And there are strong lines in it, so he says. But who am I that he should make of me A judge? You are his friend, and you know best The measure of his jingle. I am old, And you are young. Be sure, I may go back To squeak for you the tunes of yesterday On my old fiddle--or what’s left of it-- And give you as I’m able a young sound; But all the while I do it I remain One of Apollo’s pensioners (and yours), An usher in the Palace of the Sun, A candidate for mattocks and trombones (The brass-band will be indispensable), A patron of high science, but no critic. So I shall have to tell him, I suppose, That I read nothing now but Wordsworth, Pope, Lucretius, Robert Burns, and William Shakespeare. Now this is Mr. Killigrew’s performance:"
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "“*‘Say, do you go to London Town, You with the golden feather?’-- ‘And if I go to London Town With my golden feather?’-- ‘These autumn roads are bright and brown, The season wears a russet crown; And if you go to London Town, We’ll go down together.’*"
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "“I cannot say for certain, but I think The brown bright nightingale was half assuaged Before your Mr. Killigrew was born. If I have erred in my chronology, No matter,--for the feathered man sings now:"
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "“*‘Yes, I go to London Town’ (Merrily waved the feather), ‘And if you go to London Town, Yes, we’ll go together.’ So in the autumn bright and brown, Just as the year began to frown, All the way to London Town Rode the two together.*"
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "“*‘I go to marry a fair maid’ (Lightly swung the feather)-- ‘Pardie, a true and loyal maid’ (Oh, the swinging feather!)--* *‘For us the wedding gold is weighed, For us the feast will soon be laid; We’ll make a gallant show,’ he said,-- ‘She and I together.’*"
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "“The feathered man will do a thousand things And the world go smiling; but the feathered man May do too much. Now mark how he continues:"
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "“*‘And you--you go to London Town?’ (Breezes waved the feather)-- ‘Yes, I go to London Town.’ (Ah, the stinging feather!)-- ‘Why do you go, my merry blade? Like me, to marry a fair maid?’-- ‘Why do I go?... God knows,’ he said; And on they rode together.*"
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "“Now you have read it through, and you know best What worth it has. We fellows with gray hair Who march with sticks to music that is gray Judge not your vanguard fifing. You are one To judge; and you will tell me what you think:-- Barring the Town, the Fair Maid, and the Feather, The dialogue and those parentheses, You cherish it, undoubtedly. Pardee! You call it, with a few conservative Allowances, an excellent small thing For patient inexperience to do: Derivative, you say,--still rather pretty. But what is wrong with Mr. Killigrew? Is he in love, or has he read Rossetti?-- Forgive me! I am old and doddering.... When are you coming back to Tilbury Town?”"
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "I could forgive the Captain soon enough, But Killigrew--there was a question there; Nor was it answered when the next week brought A letter from him. After rocketing For six or seven pages about love, Truth, purity, the passion of the soul, And other salutary attributes, Discovered or miraculously born Within six months, he said: “The Patriarch Is not quite as he should be. There’s a clutch Of something on him that will not let go; And there are days together when his eyes Are like two lamps in ashes. The gray look, Which we thought once the glory and the crown Of your too flexible determinist, Has gone all over him. And when he laughs, He waits as if to hear the angels weep: It seems to make him sorry when he laughs, And I know what it does to me. But here As at the station--I remember that-- The quantitative bias of the boy May slant me too much to the other side And make me blind again. By Jove! old man, If you could really know her as I do ’Twould be the revelation of your life: You would see that there are women in the world Who are altogether different,” etc."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "There was more generosity in “women” I thought than in the man without the feather.-- Meanwhile I saw that Captain Craig was dying."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "I found the old man sitting in his bed, Propped up and uncomplaining. On a chair Beside him was a dreary bowl of broth, A magazine, some glasses, and a pipe. “I do not light it nowadays,” he said, “But keep it for an antique influence That it exerts, an aura that it sheds-- Like hautboys, or Provence. You understand: The charred memorial defeats us yet, But think you not for always. We are young, And we are friends of time. Time that made smoke Will drive away the smoke, and we shall know The work that we are doing. We shall build With embers of all shrines one pyramid, And we shall have the most resplendent flame From earth to heaven, as the old words go, And we shall need no smoke.... Why don’t you laugh?”"
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "I gazed into those calm, half-lighted eyes And smiled at them with grim obedience. He told me that I did it very well, But added that I should undoubtedly Do better in the future: “There is nothing,” He said, “so beneficial in a sick-room As a well-bred spontaneity of manner. Your sympathetic scowl obtrudes itself, And is indeed surprising. After death, Were you to take it with you to your coffin An unimaginative man might think That you had lost your life in worrying To find out what it was that worried you. The ways of unimaginative men Are singularly fierce.... Why do you stand? Sit here and watch me while I take this soup. The doctor likes it, therefore it is good."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "“The man who wrote the decalogue,” pursued The Captain, having swallowed four or five Heroic spoonfuls of his lukewarm broth, “Forgot the doctors. And I think sometimes The man of Galilee (or, if you choose, The men who made the sayings of the man) Like Buddha, and the others who have seen, Was to men’s loss the Poet--though it be The Poet only of him we revere, The Poet we remember. We have put The prose of him so far away from us, The fear of him so crudely over us, That I have wondered--wondered.”--Cautiously, But yet as one were cautious in a dream, He set the bowl down on the chair again, Crossed his thin fingers, looked me in the face, And looking smiled a little. “Go away,” He said at last, “and let me go to sleep. I told you I should eat, but I shall not. To-morrow I shall eat; and I shall read Some clauses of a jocund instrument That I have been preparing here of late For you and for the rest, assuredly. ‘Attend the testament of Captain Craig: Good citizens, good fathers and your sons, Good mothers and your daughters.’ I should say so. Now go away and let me go to sleep.”"
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "I stood before him and held out my hand, He took it, pressed it; and I felt again The sick soft closing on it. He would not Let go, but lay there, looking up to me With eyes that had a sheen of water on them And a faint wet spark within them. So he clung, Tenaciously, with fingers icy warm, And eyes too full to keep the sheen unbroken. I looked at him. The fingers closed hard once, And then fell down.--I should have left him then."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "But when we found him the next afternoon, My first thought was that he had made his eyes Miraculously smaller. They were sharp And hard and dry, and the spark in them was dry. For a glance it all but seemed as if the man Had artfully forsworn the brimming gaze Of yesterday, and with a wizard strength Inveigled in, reduced, and vitalized The straw-shine of October; and had that Been truth, we should have humored him not less, Albeit he had fooled us,--for he said That we had made him glad by coming to him. And he was glad: the manner of his words Revealed the source of them; and the gray smile Which lingered like a twilight on his face Told of its own slow fading that it held The promise of the sun. Cadaverous, God knows it was; and we knew it was honest."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "“So you have come to have the old man read To you from his last will and testament: Well, it will not be long--not very long-- So listen.” He brought out from underneath His pillow a new manuscript, and said, “You are doing well to come and have me read My testament. There are men in the world Who say of me, if they remember me, That I am poor;--and I believe the ways Of certain men who never find things out Are stranger than the way Lord Bacon wrote *Leviticus*, and *Faust*.” He fixed his eyes Abstractedly on something far from us, And with a look that I remembered well Gazed hard the while we waited. But at length He found himself and soon began to chant, With a fitful shift at thin sonorousness The jocund instrument; and had he been Definitively parceling to us All Kimberly and half of Ballarat, The lordly quaver of his poor old words Could not have been the more magniloquent. No promise of dead carbon or of gold, However, flashed in ambush to corrupt us:"
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "“I, Captain Craig, abhorred iconoclast, Sage-errant, favored of the Cosmic Joke, And self-reputed humorist at large, Do now, confessed of my world-worshiping, Time-questioning, sun-fearing, and heart-yielding, Approve and unreservedly devise To you and your assigns for evermore, God’s universe and yours. If I had won What first I sought, I might have made you beam By giving less; but now I make you laugh By giving more than what had made you beam, And it is well. No man has ever done The deed of humor that God promises, But now and then we know tragedians Reform, and in denial too divine For sacrifice, too firm for ecstasy, Record in jolly letters or in books What fragment of God’s laughter they have caught, What earnest of its rhythm; and I believe That I, in having somewhat recognized The formal measure of it, have endured The discord of infirmity not less Through fortune than by failure. What men lose, Man gains; and what man gains reports itself In losses we but vaguely deprecate, So they be not for us;--and this is right, Except that when the devil in the sun Misguides us we go darkly where the shine Misleads us, and we know not what we see: We know not if we climb or if we fall; And if we fly, we know not where we fly."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "“And here do I insert an urging clause For climbers and up-fliers of all sorts, Cliff-climbers and high-fliers: Phaethon, Bellerophon, and Icarus did each Go gloriously up, and each in turn Did famously come down--as you have read In poems and elsewhere; but other men Have mounted where no fame has followed them, And we have had no sight, no news of them, And we have heard no crash. The crash may count, Undoubtedly, and earth be fairer for it; Yet none save creatures out of harmony Have ever, in their fealty to the flesh, Made crashing an ideal. It is the flesh That ails us, for the spirit knows no qualm, No failure, no down-falling: so climb high, And having set your steps regard not much The downward laughter clinging at your feet, Nor overmuch the warning; only know, As well as you know dawn from lantern-light, That far above you, for you, and within you, There burns and shines and lives, unwavering And always yours, the truth. Take on yourself But your sincerity, and you take on Good promise for all climbing: fly for truth, And hell shall have no storm to crush your flight, No laughter to vex down your loyalty."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "“I think you may be smiling at me now-- And if I make you smile, so much the better; For I would have you know that I rejoice Always to see the thing that I would see-- The righteous thing, the wise thing. I rejoice Always to think that any thought of mine, Or any word or any deed of mine, May grant sufficient of what fortifies Good feeling and the courage of calm joy To make the joke worth while. Contrariwise, When I review some faces I have known-- Sad faces, hungry faces--and reflect On thoughts I might have moulded, human words I might have said, straightway it saddens me To feel perforce that had I not been mute And actionless, I might have made them bright Somehow, though only for the moment. Yes, Howbeit I confess the vanities, It saddens me;--and sadness, of all things Miscounted wisdom, and the most of all When warmed with old illusions and regrets, I mark the selfishest, and on like lines The shrewdest. For your sadness makes you climb With dragging footsteps, and it makes you groan; It hinders you when most you would be free, And there are many days it wearies you Beyond the toil itself. And if the load It lays on you may not be shaken off Till you have known what now you do not know-- Meanwhile you climb; and he climbs best who sees Above him truth burn faithfulest, and feels Within him truth burn purest. Climb or fall, One road remains and one firm guidance always; One way that shall be taken, climb or fall."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "“But ‘falling, falling, falling.’ There’s your song, The cradle-song that sings you to the grave. What is it your bewildered poet says?--"
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "“*‘The toiling ocean thunders of unrest And aching desolation; the still sea Paints but an outward calm that mocks itself To the final and irrefragable sleep That owns no shifting fury; and the shoals Of ages are but records of regret Where Time, the sun’s arch-phantom, writes on sand The prelude of his ancient nothingness.’*"
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "“’Tis easy to compound a dirge like that, And it is easy too to be deceived And alienated by the fleshless note Of half-world yearning in it; but the truth To which we all are tending,--charlatans And architects alike, artificers In tinsel as in gold, evangelists Of ruin and redemption, all alike,-- The truth we seek and equally the truth We do not seek, but yet may not escape, Was never found alone through flesh contempt Or through flesh reverence. Look east and west And we may read the story: where the light Shone first the shade now darkens; where the shade Clung first, the light fights westward--though the shade Still feeds, and there is yet the Orient."
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "“But there is this to be remembered always: Whatever be the altitude you reach, You do not rise alone; nor do you fall But you drag others down to more or less Than your preferred abasement. God forbid That ever I should preach, and in my zeal Forget that I was born an humorist; But now, for once, before I go away, I beg of you to be magnanimous A moment, while I speak to please myself-- The moment now for flowers; and your patience:"
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "“Though I have heard it variously sung That even in the fury and the clash Of battles, and the closer fights of men When silence gives the knowing world no sign, One flower there is, though crushed and cursed it be, Keeps rooted through all tumult and all scorn,-- Still do I find, when I look sharply down, There’s yet another flower that grows well And has the most unconscionable roots Of any weed on earth. Perennial It grows, and has the name of Selfishness; No doubt you call it Love. In either case, You propagate it with a diligence That hardly were outmeasured had its leaf The very juice in it of that famed herb Which gave back breath to Glaucus; and I know That in the twilight, after the day’s work, You take your little children in your arms, Or lead them by their credulous frail hands Benignly out and through the garden-gate And show them there the things that you have raised; Not everything, perchance, but always one Miraculously rooted flower plot Which is your pride, their pattern. Socrates, Could he be with you there at such a time, Would have some unsolicited shrewd words To say that you might hearken to; but I Say nothing, for I am not Socrates.-- So much, good friends, for flowers; and I thank you. “There was a poet once who would have roared Away the world and had an end of stars. Where was he when I quoted him?--oh, yes: ’Tis easy for a man to link loud words With woeful pomp and unschooled emphasis And add one thundered contribution more To the dirges of all-hollowness, I said; But here again I find the question set Before me, after turning books on books And looking soulward through man after man, If there indeed be more determining Play-service in remotely sounding down The world’s one-sidedness. If I judge right, Your pounding protestations, echoing Their burden of unfraught futility, Surge back to mute forgetfulness at last And have a kind of sunny, sullen end, Like any cold north storm.--But there are few Still seas that have no life to profit them, And even in such currents of the mind As have no tide-rush to them, but are drowsed, Crude thoughts may dart in armor and upspring With a waking sound, when all is dim with peace, Like sturgeons in the twilight out of Lethe; And though they be discordant, hard, grotesque, And all unwelcome to the lethargy That you think means repose, you know as well As if your names were shouted when they leap, And when they leap you listen.--Ah! friends, friends, There are these things we do not like to know: They trouble us, they make us hesitate, They touch us, and we try to put them off. We banish one another and then say That we are left alone: the midnight leaf That rattles when it hangs above the snow-- Gaunt, fluttering, forlorn--scarcely may seem So cold in all its palsied loneliness As we, we frozen brothers, who have yet Profoundly and severely to find out That there is more of unpermitted love In most men’s reticence than most men think."
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "“Once, when I made it out fond-headedness To say that we should ever be apprised; Of our deserts and their emolument At all but in the specious way of words, The wisdom of a warm thought woke within me And I could read the sun. Then did I turn My long-defeated face full to the world, And through the clouded warfare of it all Discern the light. Through dusk that hindered it, I found the truth, and for the first whole time Knew then that we were climbing. Not as one Who mounts along with his experience Bound on him like an Old Man of the Sea-- Not as a moral pedant who drags chains Of his unearned ideals after him And always to the lead-like thud they make Attunes a cold inhospitable chant Of All Things Easy to the Non-Attached,-- But as a man, a scarred man among men, I knew it, and I felt the strings of thought Between us to pull tight the while I strove; And if a curse came ringing now and then To my defended ears, how could I know The light that burned above me and within me, And at the same time put on cap-and-bells For such as yet were groping?”"
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "Killigrew Made there as if to stifle a small cough. I might have kicked him, but regret forbade The subtle admonition; and indeed When afterwards I reprimanded him, The fellow never knew quite what I meant. I may have been unjust.--The Captain read Right on, without a chuckle or a pause, As if he had heard nothing:"
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "“How, forsooth, Shall any man, by curses or by groans, Or by the laugh-jarred stillness of all hell, Be so drawn down to servitude again That on some backward level of lost laws And undivined relations, he may know No longer Love’s imperative resource, Firm once and his, well treasured then, but now Too fondly thrown away? And if there come But once on all his journey, singing down To find him, the gold-throated forward call, What way but one, what but the forward way, Shall after that call guide him? When his ears Have earned an inward skill to methodize The clash of all crossed voices and all noises, How shall he grope to be confused again, As he has been, by discord? When his eyes Have read the book of wisdom in the sun, And after dark deciphered it on earth, How shall he turn them back to scan some huge Blood-lettered protest of bewildered men That hunger while he feeds where they should starve And all absurdly perish?”"
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "Killigrew Looked hard for a subtle object on the wall, And, having found it, sighed. The Captain paused: If he grew tedious, most assuredly Did he crave pardon of us; he had feared Beforehand that he might be wearisome, But there was not much more of it, he said,-- No more than just enough. And we rejoiced That he should look so kindly on us then. (“Commend me to a dying man’s grimace For absolute humor, always,” Killigrew Maintains; but I know better.)"
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "“Work for them, You tell me? Work the folly out of them? Go back to them and teach them how to climb, While you teach caterpillars how to fly? You tell me that Alnaschar is a fool Because he dreams? And what is this you ask? I make him wise? I teach him to be still? While you go polishing the Pyramids, I hold Alnaschar’s feet? And while you have The ghost of Memnon’s image all day singing, I sit with aching arms and hardly catch A few spilled echoes of the song of songs-- The song that I should have as utterly For mine as any other man should have, The sweetest a glad shepherd ever trilled In Sharon, long ago? Is this the way For me to do good climbing any more Than Phaethon’s? Do you think the golden tone Of that far-singing call you all have heard Means any more for you than you should be Wise-heartedly, glad-heartedly yourselves? Do this, there is no more for you to do; And you have no dread left, no shame, no scorn. And while you have your wisdom and your gold, Songs calling, and the Princess in your arms, Remember, if you like, from time to time, Down yonder where the clouded millions go, Your bloody-knuckled scullions are not slaves, Your children of Alnaschar are not fools."
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "“Nor are they quite so foreign or far down As you may think to see them. What you take To be the cursedest mean thing that crawls On earth is nearer to you than you know: You may not ever crush him but you lose, You may not ever shield him but you gain-- As he, with all his crookedness, gains with you. Your preaching and your teaching, your achieving, Your lifting up and your discovering, Are more than often--more than you have dreamed-- The world-refracted evidence of what Your dream denies. You cannot hide yourselves In any multitude or solitude, Or mask yourselves in any studied guise Of hardness or of old humility, But soon by some discriminating man-- Some humorist at large, like Socrates-- You get yourselves found out.--Now I should be Found out without an effort. For example: When I go riding, trimmed and shaved again, Consistent, adequate, respectable,-- Some citizen, for curiosity, Will ask of a good neighbor, ‘What is this?’-- ‘It is the funeral of Captain Craig,’ Will be the neighbor’s word.--‘And who, good man, Was Captain Craig?’--‘He was an humorist; And we are told that there is nothing more For any man alive to say of him.’-- ‘There is nothing very strange in that,’ says A; ‘But the brass band? What has he done to be Blown through like this by cornets and trombones? And here you have this incompatible dirge-- Where are the jokes in that?’--Then B should say: ‘Maintained his humor: nothing more or less. The story goes that on the day before He died--some say a week, but that’s a trifle-- He said, with a subdued facetiousness, “Play Handel, not Chopin; assuredly not Chopin.”’--He was indeed an humorist.”"
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "He made the paper fall down at arm’s length; And with a tension of half-quizzical Benignity that made it hard for us, He looked up--first at Morgan, then at me-- Almost, I thought, as if his eyes would ask If we were satisfied; and as he looked, The tremor of an old heart’s weariness Was on his mouth. He gazed at each of us, But spoke no further word that afternoon. He put away the paper, closed his eyes, And went to sleep with his lips flickering; And after that we left him.--At midnight Plunket and I looked in; but he still slept, And everything was going as it should. The watchman yawned, rattled his newspaper, And wondered what it was that ailed his lamp. He said it wheezed. He feared it might explode."
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "Next day we found the Captain wide awake, Propped up, and searching dimly with a spoon Through another dreary dish of chicken-broth, Which he raised up to me, at my approach, So fervently and so unconsciously, That one could only laugh. He looked again At each of us, and as he looked he frowned; And there was something in that frown of his That none of us had ever seen before. “Kind friends,” he said, “be sure that I rejoice To know that you have come to visit me; Be sure I speak with undisguised words And earnest, when I say that I rejoice.”-- “But what the devil!” whispered Killigrew. I kicked him, for I thought I understood."
+    },
+    {
+      "id": "s0-70",
+      "sceneId": "s0",
+      "text": "The old man’s eyes had glimmered wearily At first, but now they glittered like to those Of a glad fish. “Beyond a doubt,” said he, “My dream this morning was more singular Than any other I have ever known. Give me that I might live ten thousand years, And all those years do nothing but have dreams, I doubt me much if any one of them Could be so quaint or so fantastical, So pregnant, as a dream of mine this morning. You may not think it any more than odd; You may not feel--you cannot wholly feel-- How droll it was:--I dreamed that I found Hamlet-- Found him at work, drenched with an angry sweat, Predestined, he declared with emphasis, To root out a large weed on Lethe wharf; And after I had watched him for some time, I laughed at him and told him that no root Would ever come the while he talked like that: The power was not in him, I explained, For such compound accomplishment. He glared At me, of course,--next moment laughed at me, And finally laughed with me. I was right, And we had eisel on the strength of it:-- ‘They tell me that this water is not good,’ Said Hamlet, and you should have seen him smile. Conceited? Pelion on Ossa?--pah!..."
+    },
+    {
+      "id": "s0-71",
+      "sceneId": "s0",
+      "text": "“But anon comes in a crocodile. We stepped Adroitly down upon the back of him, And away we went to an undiscovered country-- A fertile place, but in more ways than one So like the region we had started from, That Hamlet straightway found another weed And there began to tug. I laughed again, Till he cried out on me and on my mirth, Protesting all he knew: ‘The Fates,’ he said, ‘Have ordered it that I shall have these roots.’ But all at once a dreadful hunger seized him, And it was then we killed the crocodile-- Killed him and ate him. Washed with eisel down That luckless reptile was, to the last morsel; And there we were with flag-fens all around us,-- And there was Hamlet, at his task again, Ridiculous. And while I watched him work, The drollest of all changes came to pass:-- The weed had snapped off just above the root, Not warning him, and I was left alone. The bubbles rose, and I laughed heartily To think of him; I laughed when I woke up; And when my soup came in I laughed again; I think I may have laughed a little--no?-- Not when you came?... Why do you look like that? You don’t believe me? Crocodiles--why not? Who knows what he has eaten in his life? Who knows but I have eaten Atropos?... ‘Briar and oak for a soldier’s crown,’ you say? Provence? Oh, no.... Had I been Socrates, Count Pretzel would have been the King of Spain.”"
+    },
+    {
+      "id": "s0-72",
+      "sceneId": "s0",
+      "text": "Now of all casual things we might have said To make the matter smooth at such a time, There may have been a few that we had found Sufficient. Recollection fails, however, To say that we said anything. We looked. Had he been Carmichael, we might have stood Like faithful hypocrites and laughed at him; But the Captain was not Carmichael at all, For the Captain had no frogs: he had the sun. So there we waited, hungry for the word,-- Tormented, unsophisticated, stretched-- Till, with a drawl, to save us, Killigrew Good-humoredly spoke out. The Captain fixed His eyes on him with some severity."
+    },
+    {
+      "id": "s0-73",
+      "sceneId": "s0",
+      "text": "“That was a funny dream, beyond a doubt,” Said Killigrew;--“too funny to be laughed at; Too humorous, we mean.”--“Too humorous?” The Captain answered; “I approve of that. Proceed.”--We were not glad for Killigrew."
+    },
+    {
+      "id": "s0-74",
+      "sceneId": "s0",
+      "text": "“Well,” he went on, “’twas only this. You see My dream this morning was a droll one too: I dreamed that a sad man was in my room, Sitting, as I do now, beside the bed. I questioned him, but he made no reply,-- Said not a word, but sang.”--“Said not a word, But sang,” the Captain echoed. “Very good. Now tell me what it was the sad man sang.” “Now that,” said Killigrew, constrainedly, And with a laugh that might have been left out, “Is why I know it must have been a dream. But there he was, and I lay in the bed Like you; and I could see him just as well As you see my right hand. And for the songs He sang to me--there’s where the dream part comes.”"
+    },
+    {
+      "id": "s0-75",
+      "sceneId": "s0",
+      "text": "“You don’t remember them?” the Captain said, With a weary little chuckle; “very well, I might have guessed it. Never mind your dream, But let me go to sleep.”--For a moment then There was half a frown on Killigrew’s good face, But he turned it to a smile.--“Not quite,” said he; “The songs that he sang first were sorrowful, And they were stranger than the man himself-- And he was very strange; but I found out, Through all the gloom of him and of his music, That a kind of--well, say mystic cheerfulness, Or give it almost any trumped-up name, Pervaded him; for slowly, as he sang, There came a change, and I began to know The method of it all. Song after song Was ended; and when I had listened there For hours--I mean for dream-hours--hearing him, And always glad that I was hearing him, There came another change--a great one. Tears Rolled out at last like bullets from his eyes, And I could hear them fall down on the floor Like shoes; and they were always marking time For the song that he was singing. I have lost The greater number of his verses now, But there are some, like these, that I remember:"
+    },
+    {
+      "id": "s0-76",
+      "sceneId": "s0",
+      "text": "“*‘Ten men from Zanzibar, Black as iron hammers are, Riding on a cable-car Down to Crowley’s theatre.’*...”"
+    },
+    {
+      "id": "s0-77",
+      "sceneId": "s0",
+      "text": "“Ten men?” the Captain interrupted there-- “Ten men, my Euthyphron? That is beautiful. But never mind, I wish to go to sleep: Tell Cebes that I wish to go to sleep.... O ye of little faith, your golden plumes Are like to drag ... par-dee!”--We may have smiled In after days to think how Killigrew Had sacrificed himself to fight that silence, But we were grateful to him, none the less; And if we smiled, that may have been the reason. But the good Captain for a long time then Said nothing: he lay quiet--fast asleep, For all that we could see. We waited there Till each of us, I fancy, must have made The paper on the wall begin to squirm, And then got up to leave. My friends went out, And I was going, when the old man cried: “You leave me now--now it has come to this? What have I done to make you go? Come back! Come back!”"
+    },
+    {
+      "id": "s0-78",
+      "sceneId": "s0",
+      "text": "There was a quaver in his cry That we shall not forget--reproachful, kind, Indignant, piteous. It seemed as one Marooned on treacherous tide-feeding sand Were darkly calling over the still straits Between him and irrevocable shores Where now there was no lamp to fade for him, No call to give him answer. We were there Before him, but his eyes were not much turned On us; nor was it very much to us That he began to speak the broken words, The scattered words, that he had left in him."
+    },
+    {
+      "id": "s0-79",
+      "sceneId": "s0",
+      "text": "“So it has come to this? And what is this? Death, do you call it? Death? And what is death? Why do you look like that at me again? Why do you shrink your brows and shut your lips? If it be fear, then I can do no more Than hope for all of you that you may find Your promise of the sun; if it be grief You feel, to think that this old face of mine May never look at you and laugh again, Then tell me why it is that you have gone So long with me, and followed me so far, And had me to believe you took my words For more than ever misers did their gold?”"
+    },
+    {
+      "id": "s0-80",
+      "sceneId": "s0",
+      "text": "He listened, but his eyes were far from us-- Too far to make us turn to Killigrew, Or search the futile shelves of our own thoughts For golden-labeled insincerities To make placebos of. The marrowy sense Of a slow November storm that splashed against The shingles and the glass reminded us That we had brought umbrellas. He continued:"
+    },
+    {
+      "id": "s0-81",
+      "sceneId": "s0",
+      "text": "“Oh, can it be that I, too credulous, Have made myself believe that you believe Yourselves to be the men that you are not? I prove and I prize well your friendliness, But I would have that your last look at me Be not like this; for I would scan to-day Strong thoughts on all your faces--no regret, No fine commiseration--oh, not that, Not that! Nor say of me, when I am gone, That I was cold and harsh, for I was warm To strangeness, and for you.... Say not like that Of me--nor think of me that I reproached The friends of my tight battles and hard years, But say that I did love them to the last And in my love reproved them for the grief They did not--for they dared not--throw away. Courage, my boys,--courage, is what you need: Courage that is not all flesh-recklessness, But earnest of the world and of the soul-- First of the soul; for a man may be as brave As Ajax in the fury of his arms, And in the midmost warfare of his thoughts Be frail as Paris.... For the love, therefore, That brothered us when we stood back that day From Delium--the love that holds us now More than it held us at Amphipolis-- Forget you not that he who in his work Would mount from these low roads of measured shame To tread the leagueless highway must fling first And fling forevermore beyond his reach The shackles of a slave who doubts the sun. There is no servitude so fraudulent As of a sun-shut mind; for ’tis the mind That makes you craven or invincible, Diseased or puissant. The mind will pay Ten thousand fold and be the richer then To grant new service; but the world pays hard And accurately sickens till in years The dole has eked its end and there is left What all of you are noting on all days In these Athenian streets, where squandered men Drag ruins of half-warriors to the grave-- Or to Hippocrates.”"
+    },
+    {
+      "id": "s0-82",
+      "sceneId": "s0",
+      "text": "His head fell back, And he lay still with wearied eyes half-closed. We waited, but a few faint words yet stayed: “Kind friends,” he said, “friends I have known so long, Though I have jested with you in time past, Though I have stung your pride with epithets Not all forbearing,--still, when I am gone, Say Socrates wrought always for the best And for the wisest end.... Give me the cup! The truth is yours, God’s universe is yours.... Good-by ... good citizens ... give me the cup”.... Again we waited; and this time we knew Those lips of his that would not flicker down Had yet some fettered message for us there. We waited, and we watched him. All at once, With a faint flash, the clouded eyes grew clear; And then we knew the man was coming back, And we knew that he would speak in the old way. We watched him, and I listened. The man smiled And looked about him--not regretfully, Not anxiously; and when at last he spoke, Before the long drowse came to give him peace, One word was all he said. “Trombones,” he said."
+    },
+    {
+      "id": "s0-83",
+      "sceneId": "s0",
+      "text": "That evening, at “The Chrysalis” again, We smoked and looked at one another’s eyes, And we were glad. The world had scattered ways For us to take, we knew; but for the time That one snug room where the big beech logs roared smooth Defiance to the cold rough rain outside Sufficed. There were no scattered ways for us That we could see just then, and we were glad: We were glad to be on earth, and we rejoiced No less for Captain Craig that he was gone. We might, for his dead benefit, have run The gamut of all human weaknesses And uttered after-platitudes enough-- Wrecked on his own abstractions, and all such-- To drive away Gambrinus and the bead From Bernard’s ale; and I suppose we might Have praised, accordingly, the Lord of Hosts For making us to see that we were not (Like certain unapproved inferiors Whom we had known, and having known might name) Abominable flotsam. But the best And wisest occupation, we had learned,-- At work, at home, or at “The Chrysalis,” Companioned or unfriended, winged or chained,-- Was always to perpetuate the bead."
+    },
+    {
+      "id": "s0-84",
+      "sceneId": "s0",
+      "text": "So Plunket, who had knowledge of all sorts, Yet hardly ever spoke, began to plink *O tu, Palermo!*--quaintly, with his nails,-- On Morgan’s fiddle, and at once got seized, As if he were some small thing, by the neck. Then the consummate Morgan, having told Explicitly what hardship might accrue To Plunket if he did that any more, Made roaring chords and acrobatic runs-- To charge his fingers and the strings, he said,-- And then, with his kind eyes on Killigrew, Struck up the schoolgirls’ march in *Lohengrin*, So Killigrew might smile and stretch himself And have to light his pipe. When that was done We knew that Morgan, by the looks of him, Was in the mood for almost anything From Bach to Offenbach;--and of all times That he has ever played, that one somehow-- That evening of the day the Captain died-- Stands out like one great verse of a good song, One strain that sings itself beyond the rest For the magic and a glamour that it has."
+    },
+    {
+      "id": "s0-85",
+      "sceneId": "s0",
+      "text": "The ways have scattered for us, and all things Have changed; and we have wisdom, I doubt not, More fit for the world’s work than we had then; But neither parted roads nor cent per cent May starve quite out the child that lives in us-- The Child that is the Man, the Mystery, The Phœnix of the World. So, now and then, That evening of the day the Captain died Returns to us; and there comes always with it The storm, the warm restraint, the fellowship, The friendship and the firelight, and the fiddle. So too there comes a day that followed it-- A windy, dreary day with a cold white shine That only gummed the tumbled frozen ruts We tramped upon. The road was hard and long, But we had what we knew to comfort us, And we had the large humor of the thing To make it advantageous; for men stopped And eyed us on that road from time to time, And on that road the children followed us; And all along that road the Tilbury Band Blared indiscreetly the Dead March in Saul."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Isaac and Archibald were two old men. I knew them, and I may have laughed at them A little; but I must have honored them For they were old, and they were geniuses."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "I do not think of either of them now Without remembering, infallibly, A journey that I made one afternoon With Isaac to find out what Archibald Was doing with his oats. It was high time Those oats were cut, said Isaac; and he feared That Archibald--well, he could never feel Quite sure of Archibald. Accordingly The good old man invited me--that is, Permitted me--to go along with him; And I, with a small boy’s adhesiveness To competent old age, got up and went. I do not know that I cared overmuch For Archibald’s or anybody’s oats, But Archibald was quite another thing, And Isaac yet another; and the world Was wide, and there was gladness everywhere. We walked together down the River Road With all the warmth and wonder of the land Around us, and the wayside flash of leaves,-- And Isaac said the day was glorious; But somewhere at the end of the first mile I found that I was figuring to find How long those ancient legs of his would keep The pace that he had set for them. The sun Was hot, and I was ready to sweat blood; But Isaac, for aught I could make of him, Was cool to his hat-band. So I said then With a dry gasp of affable despair, Something about the scorching days we have In August without knowing it sometimes; But Isaac said the day was like a dream, And praised the Lord, and talked about the breeze. I made a fair confession of the breeze, And crowded casually on his thought The nearness of a profitable nook That I could see. First I was half inclined To caution him that he was growing old, But something that was not compassion soon Made plain the folly of all subterfuge. Isaac was old, but not so old as that."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "So I proposed, without an overture, That we be seated in the shade a while, And Isaac made no murmur. Soon the talk Was turned on Archibald, and I began To feel some premonitions of a kind That only childhood knows; for the old man Had looked at me and clutched me with his eye, And asked if I had ever noticed things. I told him that I could not think of them, And I knew then, by the frown that left his face Unsatisfied, that I had injured him. “My good young friend,” he said, “you cannot feel What I have seen so long. You have the eyes-- Oh, yes--but you have not the other things: The sight within that never will deceive, You do not know--you have no right to know; The twilight warning of experience, The singular idea of loneliness,-- These are not yours. But they have long been mine, And they have shown me now for seven years That Archibald is changing. It is not So much that he should come to his last hand, And leave the game, and go the old way down; But I have known him in and out so long, And I have seen so much of good in him That other men have shared and have not seen, And I have gone so far through thick and thin, Through cold and fire with him, that it brings To this old heart of mine an ache that you Have not yet lived enough to know about. But even unto you, with your boy’s faith, Your freedom, and your untried confidence, A time will come to find out what it means To know that you are losing what was yours, To know that you are being left behind; And then the long contempt of innocence-- God bless you, boy!--don’t think the worse of it Because an old man chatters in the shade-- Will all be like a story you have read In childhood and remembered for the pictures. And when the best friend of your life goes down, When first you know in him the slackening That comes, and coming always tells the end,-- Now in a common word that would have passed Uncaught from any other lips than his, Now in some trivial act of every day, Done as he might have done it all along But for a twinging little difference That bites you like a squirrel’s teeth--oh, yes, Then you will understand it well enough. But oftener it comes in other ways; It comes without your knowing when it comes; You know that he is changing, and you know That he is going--just as I know now That Archibald is going and that I Am staying.... Look at me, my boy, And when the time shall come for you to see That I must follow after him, try then To think of me, to bring me back again, Just as I was to-day. Think of the place Where we are sitting now, and think of me-- Think of old Isaac as you knew him then, When you set out with him in August once To see old Archibald.”--The words come back Almost as Isaac must have uttered them, And there comes with them a dry memory Of something in my throat that would not move."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "If you had asked me then to tell just why I made so much of Isaac and the things He said, I should have reached far for an answer; For I knew it was not sorrow that I felt, Whatever I may have wished it, or tried then To make myself believe. My mouth was full Of words, and they would have been comforting To Isaac, spite of my twelve years, I think; But there was not in me the willingness To speak them out. Therefore I watched the ground; And I was wondering what made the Lord Create a thing so nervous as an ant, When Isaac, with commendable unrest, Ordained that we should take the road again-- For it was yet three miles to Archibald’s, And one to the first pump. I felt relieved All over when the old man told me that; I felt that he had stilled a fear of mine That those extremities of heat and cold Which he had long gone through with Archibald Had made the man impervious to both; But Isaac had a desert somewhere in him, And at the pump he thanked God for all things That he had put on earth for men to drink, And he drank well,--so well that I proposed That we go slowly lest I learn too soon The bitterness of being left behind, And all those other things. That was a joke To Isaac, and it pleased him very much; And that pleased me--for I was twelve years old."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "At the end of an hour’s walking after that The cottage of old Archibald appeared. Little and white and high on a smooth round hill It stood, with hackmatacks and apple-trees Before it, and a big barn-roof beyond; And over the place--trees, houses, fields and all-- Hovered an air of still simplicity And a fragrance of old summers--the old style That lives the while it passes. I dare say That I was lightly conscious of all this When Isaac, of a sudden, stopped himself, And for the long first quarter of a minute Gazed with incredulous eyes, forgetful quite Of breezes and of me and of all else Under the scorching sun but a smooth-cut field, Faint yellow in the distance. I was young, But there were a few things that I could see, And this was one of them.--“Well, well!” said he; And “Archibald will be surprised, I think,” Said I. But all my childhood subtlety Was lost on Isaac, for he strode along Like something out of Homer--powerful And awful on the wayside, so I thought. Also I thought how good it was to be So near the end of my short-legged endeavor To keep the pace with Isaac for five miles."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Hardly had we turned in from the main road When Archibald, with one hand on his back And the other clutching his huge-headed cane, Came limping down to meet us.--“Well! well! well!” Said he; and then he looked at my red face, All streaked with dust and sweat, and shook my hand, And said it must have been a right smart walk That we had had that day from Tilbury Town.-- “Magnificent,” said Isaac; and he told About the beautiful west wind there was Which cooled and clarified the atmosphere. “You must have made it with your legs, I guess,” Said Archibald; and Isaac humored him With one of those infrequent smiles of his Which he kept in reserve, apparently, For Archibald alone. “But why,” said he, “Should Providence have cider in the world If not for such an afternoon as this?” And Archibald, with a soft light in his eyes, Replied that if he chose to go down cellar, There he would find eight barrels--one of which Was newly tapped, he said, and to his taste An honor to the fruit. Isaac approved Most heartily of that, and guided us Forthwith, as if his venerable feet Were measuring the turf in his own door-yard, Straight to the open rollway. Down we went, Out of the fiery sunshine to the gloom, Grateful and half sepulchral, where we found The barrels, like eight potent sentinels, Close ranged along the wall. From one of them A bright pine spile stuck out convincingly, And on the black flat stone, just under it, Glimmered a late-spilled proof that Archibald Had spoken from unfeigned experience. There was a fluted antique water-glass Close by, and in it, prisoned, or at rest, There was a cricket, of the brown soft sort That feeds on darkness. Isaac turned him out, And touched him with his thumb to make him jump, And then composedly pulled out the plug With such a practiced hand that scarce a drop Did even touch his fingers. Then he drank And smacked his lips with a slow patronage And looked along the line of barrels there With a pride that may have been forgetfulness: “I never twist a spigot nowadays,” He said, and raised the glass up to the light, “But I thank God for orchards.” And that glass Was filled repeatedly for the same hand Before I thought it worth while to discern Again that I was young, and that old age, With all his woes, had some advantages."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "“Now, Archibald,” said Isaac, when we stood Outside again, “I have it in my mind That I shall take a sort of little walk-- To stretch my legs and see what you are doing. You stay and rest your back and tell the boy A story: Tell him all about the time In Stafford’s cabin forty years ago, When four of us were snowed up for ten days With only one dried haddock. Tell him all About it, and be wary of your back. Now I will go along.”--I looked up then At Archibald, and as I looked I saw The way his nostrils widened once or twice And then grew narrow. I can hear to-day The way the old man chuckled to himself-- Not wholesomely, not wholly to convince Another of his mirth,--as I can hear The lonely sigh that followed.--But at length He said: “The orchard now’s the place for us; We may find something like an apple there, And we shall have the shade, at any rate.” So there we went and there we laid ourselves Where the sunlight could not reach us; and I champed A dozen of worm-blighted astrakhans While Archibald said nothing--merely told The tale of Stafford’s cabin, which was good, Though “master chilly”--after his own phrase-- Even for a day like that. But other thoughts Were moving in his mind, imperative, And writhing to be spoken: I could see The glimmer of them in a glance or two, Cautious, or else unconscious, that he gave Over his shoulder: ... “Stafford and the rest Would have had no story of their own to tell; They would have left it all for others--yes-- But that’s an old song now, and Archibald And Isaac are old men. Remember, boy, That we are old. Whatever we have gained, Or lost, or thrown away, we are old men. You look before you and we look behind, And we are playing life out in the shadow-- But that’s not all of it. The sunshine lights A good road yet before us if we look, And we are doing that when least we know it; For both of us are children of the sun, Like you, and like the weed there at your feet. The shadow calls us, and it frightens us-- We think; but there’s a light behind the stars And we old fellows who have dared to live, We see it--and we see the other things, The other things.... Yes, I have seen it come These eight years, and these ten years, and I know Now that it cannot be for very long That Isaac will be Isaac. You have seen-- Young as you are, you must have seen the strange Uncomfortable habit of the man? He’ll take my nerves and tie them in a knot Sometimes, and that’s not Isaac. I know that-- And I know what it is: I get it here A little, in my knees, and Isaac--here.” The old man shook his head regretfully And laid his knuckles three times on his forehead. “That’s what it is: Isaac is not quite right. You see it, but you don’t know what it means: The thousand little differences--no, You do not know them, and it’s well you don’t; You’ll know them soon enough--God bless you, boy!-- You’ll know them, but not all of them--not all. So think of them as little as you can: There’s nothing in them for you, or for me-- But I am old and I must think of them; I’m in the shadow, but I don’t forget The light, my boy,--the light behind the stars. Remember that: remember that I said it; And when the time that you think far away Shall come for you to say it--say it, boy; Let there be no confusion or distrust In you, no snarling of a life half lived, Nor any cursing over broken things That your complaint has been the ruin of. Live to see clearly and the light will come To you, and as you need it.--But there, there, I’m going it again, as Isaac says, And I’ll stop now before you go to sleep.-- Only be sure that you growl cautiously, And always where the shadow may not reach you.”"
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Never shall I forget, long as I live, The quaint thin crack in Archibald’s old voice, The lonely twinkle in his little eyes, Or the way it made me feel to be with him. I know I lay and looked for a long time Down through the orchard and across the road, Across the river and the sun-scorched hills That ceased in a blue forest, where the world Ceased with it. Now and then my fancy caught A flying glimpse of a good life beyond-- Something of ships and sunlight, streets and singing, Troy falling, and the ages coming back, And ages coming forward: Archibald And Isaac were good fellows in old clothes And Agamemnon was a friend of mine; Ulysses coming home again to shoot With bows and feathered arrows made another, And all was as it should be. I was young."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "So I lay dreaming of what things I would, Calm and incorrigibly satisfied With apples and romance and ignorance, And the floating smoke from Archibald’s clay pipe. There was a stillness over everything, As if the spirit of heat had laid its hand Upon the world and hushed it; and I felt Within the mightiness of the white sun That smote the land around us and wrought out A fragrance from the trees, a vital warmth And fullness for the time that was to come, And a glory for the world beyond the forest. The present and the future and the past, Isaac and Archibald, the burning bush, The Trojans and the walls of Jericho, Were beautifully fused; and all went well Till Archibald began to fret for Isaac And said it was a master day for sunstroke. That was enough to make a mummy smile, I thought; and I remained hilarious, In face of all precedence and respect, Till Isaac (who had come to us unheard) Found he had no tobacco, looked at me Peculiarly, and asked of Archibald What ailed the boy to make him chirrup so. From that he told us what a blessed world The Lord had given us.--“But, Archibald,” He added, with a sweet severity That made me think of peach-skins and goose-flesh, “I’m half afraid you cut those oats of yours A day or two before they were well set.” “They were set well enough,” said Archibald,-- And I remarked the process of his nose Before the words came out; “but never mind Your neighbor’s oats: you stay here in the shade And rest yourself while I go find the cards. We’ll have a little game of seven-up And let the boy keep count.”--“We’ll have the game, Assuredly,” said Isaac; “and I think That I will have a draught of cider, also.”-- They marched away together towards the house And left me to my childish ruminations Upon the ways of men. I followed them Down cellar with my fancy, and then left them For a fairer vision of all things at once That was anon to be destroyed again By the sound of voices and of heavy feet-- One of the sounds of life that I remember, Though I forget so many that rang first As if they were thrown down to me from Sinai."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "So I remember, even to this day, Just how they sounded, how they placed themselves, And how the game went on while I made marks And crossed them out, and meanwhile made some Trojans. Likewise I made Ulysses, after Isaac, And a little after Flaxman. Archibald Was wounded when he found himself left out, But he had no heroics, and I said so: I told him that his white beard was too long And too straight down to be like things in Homer. “Quite so,” said Isaac.--“Low,” said Archibald; And he threw down a deuce with a deep grin That showed his yellow teeth and made me happy. So they played on till a bell rang from the door, And Archibald said, “Supper.”--After that The old men smoked while I sat watching them And wondered with all comfort what might come To me, and what might never come to me; And when the time came for the long walk home With Isaac in the twilight, I could see The forest and the sunset and the sky-line, No matter where it was that I was looking: The flame beyond the boundary, the music, The foam and the white ships, and two old men Were things that would not leave me.--And that night There came to me a dream--a shining one, With two old angels in it. They had wings, And they were sitting where a silver light Suffused them, face to face. The wings of one Began to palpitate as I approached, But I was yet unseen when a dry voice Cried thinly, with unpatronizing triumph, “I’ve got you, Isaac; high, low, jack, and the game.”"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Isaac and Archibald have gone their way To the silence of the loved and well-forgotten. I knew them, and I may have laughed at them; But there’s a laughing that has honor in it, And I have no regret for light words now. Rather I think sometimes they may have made Their sport of me;--but they would not do that, They were too old for that. They were old men, And I may laugh at them because I knew them."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "And there we were together again-- Together again, we three: Morgan, Fingal, fiddle, and all, They had come for the night with me."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "The spirit of joy was in Morgan’s wrist, There were songs in Fingal’s throat; And secure outside, for the spray to drench, Was a tossed and empty boat."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "And there were the pipes, and there was the punch, And somewhere were twelve years; So it came, in the manner of things unsought, That a quick knock vexed our ears."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "The night wind hovered and shrieked and snarled, And I heard Fingal swear; Then I opened the door--but I found no more Than a chalk-skinned woman there."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "I looked, and at last, “What is it?” I said-- “What is it that we can do?” But never a word could I get from her But “You--you three--it is you!”"
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Now the sense of a crazy speech like that Was more than a man could make; So I said, “But we--we are what, we three?” And I saw the creature shake."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "“Be quick!” she cried, “for I left her dead-- And I was afraid to come; But you, you three--God made it be-- Will ferry the dead girl home."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "“Be quick! be quick!--but listen to that Who is it that makes it?--hark!” But I heard no more than a knocking splash And a wind that shook the dark."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "“It is only the wind that blows,” I said, “And the boat that rocks outside.” And I watched her there, and I pitied her there-- “Be quick! be quick!” she cried."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "She cried it so loud that her voice went in To find where my two friends were; So Morgan came, and Fingal came, And out we went with her."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "’Twas a lonely way for a man to take And a tedious way for three; And over the water, and all day long, They had come for the night with me."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "But the girl was dead, as the woman had said, And the best we could see to do Was to lay her aboard. The north wind roared, And into the night we flew."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "Four of us living and one for a ghost, Furrowing crest and swell, Through the surge and the dark, for that faint far spark, We ploughed with Azrael."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "Three of us ruffled and one gone mad, Crashing to south we went; And three of us there were too spattered to care What this late sailing meant."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "So down we steered and along we tore Through the flash of the midnight foam: Silent enough to be ghosts on guard, We ferried the dead girl home."
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "We ferried her down to the voiceless wharf, And we carried her up to the light; And we left the two to the father there, Who counted the coals that night."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "Then back we steered through the foam again, But our thoughts were fast and few; And all we did was to crowd the surge And to measure the life we knew;--"
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "Till at last we came where a dancing gleam Skipped out to us, we three,-- And the dark wet mooring pointed home Like a finger from the sea."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "Then out we pushed the teetering skiff And in we drew to the stairs; And up we went, each man content With a life that fed no cares."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "Fingers were cold and feet were cold, And the tide was cold and rough; But the light was warm, and the room was warm, And the world was good enough."
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "And there were the pipes, and there was the punch, More shrewd than Satan’s tears: Fingal had fashioned it, all by himself, With a craft that comes of years."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "And there we were together again-- Together again, we three: Morgan, Fingal, fiddle, and all, They were there for the night with me."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Aunt Imogen was coming, and therefore The children--Jane, Sylvester, and Young George-- Were eyes and ears; for there was only one Aunt Imogen to them in the whole world, And she was in it only for four weeks In fifty-two. But those great bites of time Made all September a Queen’s Festival; And they would strive, informally, to make The most of them.--The mother understood, And wisely stepped away. Aunt Imogen Was there for only one month in the year, While she, the mother,--she was always there; And that was what made all the difference. She knew it must be so, for Jane had once Expounded it to her so learnedly That she had looked away from the child’s eyes And thought; and she had thought of many things."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "There was a demonstration every time Aunt Imogen appeared, and there was more Than one this time. And she was at a loss Just how to name the meaning of it all: It puzzled her to think that she could be So much to any crazy things alive-- Even to her sister’s little savages Who knew no better than to be themselves; But in the midst of her glad wonderment She found herself besieged and overcome By two tight arms and one tumultuous head, And therewith half bewildered and half pained By the joy she felt and by the sudden love That proved itself in childhood’s honest noise. Jane, by the wings of sex, had reached her first; And while she strangled her, approvingly, Sylvester thumped his drum and Young George howled.-- But finally, when all was rectified, And she had stilled the clamor of Young George By letting him go “pig-back” through the hall, They went together into the old room That looked across the fields; and Imogen Gazed out with a girl’s gladness in her eyes, Happy to know that she was back once more Where there were those who knew her, and at last Had gloriously got away again From cabs and clattered asphalt for a while; And there she sat and talked and looked and laughed And made the mother and the children laugh. Aunt Imogen made everybody laugh."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "There was the feminine paradox--that she Who had so little sunshine for herself Should have so much for others. How it was That she could make, and feel for making it, So much of joy for them, and all along Be covering, like a scar, the while she smiled, That hungering incompleteness and regret-- That passionate ache for something of her own, For something of herself--she never knew. She knew that she could seem to make them all Believe there was no other part of her Than her persistent happiness; but the why And how she did not know. Still none of them Could have a thought that she was living down-- Almost as if regret were criminal, So proud it was and yet so profitless-- The penance of a dream, and that was good: Even her big bewhiskered brother Giles Had called her in his letter, not long since, A superannuated pretty girl; And she, to do the thing most adequate, Had posted back sarcastic sheets enough To keep the beast in humor for a month. But her sister Jane--the mother of little Jane, Sylvester, and Young George--may, after all, Have known; for she was--well, she was a woman."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Young George, however, did not yield himself To nourish the false hunger of a ghost That made no good return. He saw too much: The accumulated wisdom of his years Had so conclusively made plain to him The permanent profusion of a world Where everybody might have everything To do, and almost everything to eat, That he was jubilantly satisfied And all unthwarted by adversity. Young George knew things. The world, he had found out, Was a good place, and life was a good game-- Particularly when Aunt Imogen Was in it. And one day it came to pass-- One rainy day when she was holding him And rocking him--that he, in his own right, Took it upon himself to tell her so; And something in his way of telling it-- The language, or the tone, or something else-- Gripped like a baby’s fingers on her throat, And then went feeling through as if to make A plaything of her heart. Such undeserved And unsophisticated confidence Went mercilessly home; and had she sat Before a looking glass, the deeps of it Could not have shown more clearly to her then Than one thought-mirrored little glimpse had shown, The pang that wrenched her face and filled her eyes With anguish and intolerable mist. The blow that she had vaguely thrust aside Like fright so many times had found her now: Clean-thrust and final it had come to her From a child’s lips at last, as it had come Never before, and as it might be felt Never again. Some grief, like some delight, Stings hard but once: to custom after that The rapture or the pain submits itself, And we are wiser than we were before. And Imogen was wiser; though at first Her dream-defeating wisdom was indeed A thankless heritage: there was no sweet, No bitter now; nor was there anything To make a daily meaning for her life-- Till truth, like Harlequin, leapt out somehow From ambush and threw sudden savor to it-- But the blank taste of time. There were no dreams, No phantoms in her future any more: One clinching revelation of what was, One by-flash of irrevocable chance, Had acridly but honestly foretold The mystical fulfillment of a life That might have once.... But that was all gone by: There was no need of reaching back for that: The triumph was not hers: there was no love Save borrowed love: there was no might have been."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "But there was yet Young George--and he had gone Conveniently to sleep, like a good boy; And there was yet Sylvester with his drum, And there was frowzle-headed little Jane; And there was Jane the sister, and the mother,-- Her sister, and the mother of them all. They were not hers, not even one of them: She was not born to be so much as that, For she was born to be Aunt Imogen. Now she could see the truth and look at it; Now she could make stars out where once had palled A future’s emptiness; now she could share With others--ah, the others!--to the end The largess of a woman who could smile; Now it was hers to dance the folly down, And all the murmuring; now it was hers To be Aunt Imogen.--So, when Young George Woke up and blinked at her with his big eyes, And smiled to see the way she blinked at him, ’Twas only in old concord with the stars That she took hold of him and held him close, Close to herself, and crushed him till he laughed."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Never mind the day we left, or the way the women clung to us; All we need now is the last way they looked at us. Never mind the twelve men there amid the cheering-- Twelve men or one man, ’twill soon be all the same; For this is what we know: we are five men together, Five left o’ twelve men to find the golden river."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Far we came to find it out, but the place was here for all of us; Far, far we came, and here we have the last of us. We that were the front men, we that would be early, We that had the faith, and the triumph in our eyes: We that had the wrong road, twelve men together,-- Singing when the devil sang to find the golden river."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "Say the gleam was not for us, but never say we doubted it; Say the wrong road was right before we followed it. We that were the front men, fit for all forage,-- Say that while we dwindle we are front men still; For this is what we know to-night: we’re starving here together-- Starving on the wrong road to find the golden river."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Wrong, we say, but wait a little: hear him in the corner there; He knows more than we, and he’ll tell us if we listen there-- He that fought the snow-sleep less than all the others Stays awhile yet, and he knows where he stays: Foot and hand a frozen clout, brain a freezing feather, Still he’s here to talk with us and to the golden river."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "“Flow,” he says, “and flow along, but you cannot flow away from us; All the world’s ice will never keep you far from us; Every man that heeds your call takes the way that leads him-- The one way that’s his way, and lives his own life: Starve or laugh, the game goes on, and on goes the river; Gold or no, they go their way--twelve men together."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "“Twelve,” he says, “who sold their shame for a lure you call too fair for them-- You that laugh and flow to the same word that urges them: Twelve who left the old town shining in the sunset, Left the weary street and the small safe days: Twelve who knew but one way out, wide the way or narrow: Twelve who took the frozen chance and laid their lives on yellow."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "“Flow by night and flow by day, nor ever once be seen by them; Flow, freeze, and flow, till time shall hide the bones of them; Laugh and wash their names away, leave them all forgotten, Leave the old town to crumble where it sleeps; Leave it there as they have left it, shining in the valley,-- Leave the town to crumble down and let the women marry."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "“Twelve of us or five,” he says, “we know the night is on us now: Five while we last, and we may as well be thinking now: Thinking each his own thought, knowing, when the light comes, Five left or none left, the game will not be lost. Crouch or sleep, we go the way, the last way together: Five or none, the game goes on, and on goes the river."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "“For after all that we have done and all that we have failed to do, Life will be life and the world will have its work to do: Every man who follows us will heed in his own fashion The calling and the warning and the friends who do not know: Each will hold an icy knife to punish his heart’s lover, And each will go the frozen way to find the golden river.”"
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "There you hear him, all he says, and the last we’ll ever get from him. Now he wants to sleep, and that will be the best for him. Let him have his own way--no, you needn’t shake him-- Your own turn will come, so let the man sleep. For this is what we know: we are stalled here together-- Hands and feet and hearts of us, to find the golden river."
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "And there’s a quicker way than sleep?... Never mind the looks of him: All he needs now is a finger on the eyes of him. You there on the left hand, reach a little over-- Shut the stars away, or he’ll see them all night: He’ll see them all night and he’ll see them all to-morrow, Crawling down the frozen sky, cold and hard and yellow."
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "Won’t you move an inch or two--to keep the stars away from him? --No, he won’t move, and there’s no need of asking him. Never mind the twelve men, never mind the women; Three while we last, we’ll let them all go; And we’ll hold our thoughts north while we starve here together, Looking each his own way to find the golden river."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "While I stood listening, discreetly dumb, Lorraine was having the last word with me: “I know,” she said, “I know it, but you see Some creatures are born fortunate, and some Are born to be found out and overcome,-- Born to be slaves, to let the rest go free; And if I’m one of them (and I must be) You may as well forget me and go home."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "“You tell me not to say these things, I know, But I should never try to be content: I’ve gone too far; the life would be too slow. Some could have done it--some girls have the stuff; But I can’t do it: I don’t know enough. I’m going to the devil.”--And she went."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "I did not half believe her when she said That I should never hear from her again; Nor when I found a letter from Lorraine, Was I surprised or grieved at what I read: “Dear friend, when you find this, I shall be dead. You are too far away to make me stop. They say that one drop--think of it, one drop!-- Will be enough,--but I’ll take five instead."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "“You do not frown because I call you friend, For I would have you glad that I still keep Your memory, and even at the end-- Impenitent, sick, shattered--cannot curse The love that flings, for better or for worse, This worn-out, cast-out flesh of mine to sleep.”"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Foreguarded and unfevered and serene, Back to the perilous gates of Truth he went-- Back to fierce wisdom and the Orient, To the Dawn that is, that shall be, and has been: Previsioned of the madness and the mean He stood where Asia, crowned with ravishment, The curtain of Love’s inner shrine had rent, And after had gone scarred by the Unseen."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "There at his touch there was a treasure chest, And in it was a gleam, but not of gold; And on it, like a flame, these words were scrolled: “I keep the mintage of Eternity. Who comes to take one coin may take the rest, And all may come--but not without the key.”"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "When he protested, not too solemnly, That for a world’s achieving maintenance The crust of overdone divinity Lacked aliment, they called it recreance; And when he chose through his own glass to scan Sick Europe, and reduced, unyieldingly, The monk within the cassock to the man Within the monk, they called it heresy."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "And when he made so perilously bold As to be scattered forth in black and white, Good fathers looked askance at him and rolled Their inward eyes in anguish and affright; There were some of them did shake at what was told, And they shook best who knew that he was right."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "“You thought we knew,” she said, “but we were wrong. This we can say, the rest we do not say; Nor do I let you throw yourself away Because you love me. Let us both be strong, And we shall find in sorrow, before long, Only the price Love ruled that we should pay: The dark is at the end of every day, And silence is the end of every song."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "“You ask me for one proof that I speak right, But I can answer only what I know; You look for just one lie to make black white, But I can tell you only what is true-- God never made me for the wife of you. This we can say,--believe me!... Tell me so!”"
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "II--THE ANNIVERSARY"
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "“Give me the truth, whatever it may be. You thought we knew, now tell me what you miss: You are the one to tell me what it is-- You are a man, and you have married me. What is it worth to-night that you can see More marriage in the dream of one dead kiss Than in a thousand years of life like this? Passion has turned the lock, Pride keeps the key."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "“Whatever I have said or left unsaid, Whatever I have done or left undone,-- Tell me. Tell me the truth.... Are you afraid? Do you think that Love was ever fed with lies But hunger lived thereafter in his eyes? Do you ask me to take moonlight for the sun?”"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Partly to think, more to be left alone, George Annandale said something to his friends-- A word or two, brusque, but yet smoothed enough To suit their funeral gaze--and went upstairs; And there, in the one room that he could call His own, he found a kind of meaningless Annoyance in the mute familiar things That filled it; for the grate’s monotonous gleam Was not the gleam that he had known before, The books were not the books that used to be, The place was not the place. There was a lack Of something; and the certitude of death Itself, as with a furtive questioning, Hovered, and he could not yet understand. He knew that she was gone--there was no need Of any argued proof to tell him that, For they had buried her that afternoon, Under the leaves and snow; and still there was A doubt, a pitiless doubt, a plunging doubt, That struck him, and upstartled when it struck, The vision, the old thought in him. There was A lack, and one that wrenched him; but it was Not that--not that. There was a present sense Of something indeterminably near-- The soul-clutch of a prescient emptiness That would not be foreboding. And if not, What then?--or was it anything at all? Yes, it was something--it was everything-- But what was everything? or anything?"
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "Tired of time, bewildered, he sat down; But in his chair he kept on wondering That he should feel so desolately strange And yet--for all he knew that he had lost More of the world than most men ever win-- So curiously calm. And he was left Unanswered and unsatisfied: there came No clearer meaning to him than had come Before; the old abstraction was the best That he could find, the farthest he could go; To that was no beginning and no end-- No end that he could reach. So he must learn To live the surest and the largest life Attainable in him, would he divine The meaning of the dream and of the words That he had written, without knowing why, On sheets that he had bound up like a book And covered with red leather. There it was-- There in his desk, the record he had made, The spiritual plaything of his life: There were the words no eyes had ever seen Save his; there were the words that were not made For glory or for gold. The pretty wife Whom he had loved and lost had not so much As heard of them. They were not made for her. His love had been so much the life of her, And hers had been so much the life of him, That any wayward phrasing on his part Would have had no moment. Neither had lived enough To know the book, albeit one of them Had grown enough to write it. There it was, However, though he knew not why it was: There was the book, but it was not for her, For she was dead. And yet, there was the book."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "Thus would his fancy circle out and out, And out and in again, till he would make As if with a large freedom to crush down Those under-thoughts. He covered with his hands His tired eyes, and waited: he could hear-- Or partly feel and hear, mechanically-- The sound of talk, with now and then the steps And skirts of some one scudding on the stairs, Forgetful of the nerveless funeral feet That she had brought with her; and more than once There came to him a call as of a voice-- A voice of love returning--but not hers. Whose he knew not, nor dreamed; nor did he know, Nor did he dream, in his blurred loneliness Of thought, what all the rest might think of him."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "For it had come at last, and she was gone With all the vanished women of old time,-- And she was never coming back again. Yes, they had buried her that afternoon, Under the frozen leaves and the cold earth, Under the leaves and snow. The flickering week, The sharp and certain day, and the long drowse Were over, and the man was left alone. He knew the loss--Therefore it puzzled him That he should sit so long there as he did, And bring the whole thing back--the love, the trust, The pallor, the poor face, and the faint way She last had looked at him--and yet not weep, Or even choose to look about the room To see how sad it was; and once or twice He winked and pinched his eyes against the flame And hoped there might be tears. But hope was all, And all to him was nothing: he was lost. And yet he was not lost: he was astray-- Out of his life and in another life; And in the stillness of this other life He wondered and he drowsed. He wondered when It was, and wondered if it ever was On earth that he had known the other face-- The searching face, the eloquent, strange face-- That with a sightless beauty looked at him And with a speechless promise uttered words That were not the world’s words, or any kind That he had known before. What was it, then? What was it held him--fascinated him? Why should he not be human? He could sigh, And he could even groan,--but what of that? There was no grief left in him. Was he glad?"
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "Yet how could he be glad, or reconciled, Or anything but wretched and undone? How could he be so frigid and inert-- So like a man with water in his veins Where blood had been a little while before? How could he sit shut in there like a snail? What ailed him? What was on him? Was he glad? Over and over again the question came, Unanswered and unchanged,--and there he was. But what in heaven’s name did it all mean? If he had lived as other men had lived, If home had ever shown itself to be The counterfeit that others had called home, Then to this undivined resource of his There were some key; but now ... Philosophy? Yes, he could reason in a kind of way That he was glad for Miriam’s release-- Much as he might be glad to see his friends Laid out around him with their grave-clothes on, And this life done for them; but something else There was that foundered reason, overwhelmed it, And with a chilled, intuitive rebuff Beat back the self-cajoling sophistries That his half-tutored thought would half-project."
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "What was it, then? Had he become transformed And hardened through long watches and long grief Into a loveless, feelingless dead thing That brooded like a man, breathed like a man,-- Did everything but ache? And was a day To come some time when feeling should return Forever to drive off that other face-- The lineless, indistinguishable face-- That once had thrilled itself between his own And hers there on the pillow,--and again Between him and the coffin-lid had flashed Like fate before it closed,--and at the last Had come, as it should seem, to stay with him, Bidden or not? He were a stranger then, Foredrowsed awhile by some deceiving draught Of poppied anguish, to the covert grief And the stark loneliness that waited him, And for the time were cursedly endowed With a dull trust that shammed indifference To knowing there would be no touch again Of her small hand on his, no silencing Of her quick lips on his, no feminine Completeness and love-fragrance in the house, No sound of some one singing any more, No smoothing of slow fingers on his hair, No shimmer of pink slippers on brown tiles."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "But there was nothing, nothing, in all that: He had not fooled himself so much as that; He might be dreaming or he might be sick, But not like that. There was no place for fear, No reason for remorse. There was the book That he had made, though.... It might be the book; Perhaps he might find something in the book; But no, there could be nothing there at all-- He knew it word for word; but what it meant-- He was not sure that he had written it For what it meant; and he was not quite sure That he had written it;--more likely it Was all a paper ghost.... But the dead wife Was real: he knew that, for he had been To see them bury her; and he had seen The flowers and the snow and the stripped limbs Of trees; and he had heard the preacher pray; And he was back again, and he was glad. Was he a brute? No, he was not a brute: He was a man--like any other man: He had loved and married his wife Miriam, They had lived a little while in paradise And she was gone; and that was all of it."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "But no, not all of it--not all of it: There was the book again; something in that Pursued him, overpowered him, put out The futile strength of all his whys and wheres, And left him unintelligibly numb-- Too numb to care for anything but rest. It must have been a curious kind of book That he had made: it was a drowsy book At any rate. The very thought of it Was like the taste of some impossible drink-- A taste that had no taste, but for all that Had mixed with it a strange thought-cordial, So potent that it somehow killed in him The ultimate need of doubting any more-- Of asking any more. Did he but live The life that he must live, there were no more To seek.--The rest of it was on the way."
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "Still there was nothing, nothing, in all this-- Nothing that he cared now to reconcile With reason or with sorrow. All he knew For certain was that he was tired out: His flesh was heavy and his blood beat small; Something supreme had been wrenched out of him As if to make vague room for something else. He had been through too much. Yes, he would stay There where he was and rest.--And there he stayed; The daylight became twilight, and he stayed; The flame and the face faded, and he slept. And they had buried her that afternoon, Under the tight-screwed lid of a long box, Under the earth, under the leaves and snow."
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "II--DAMARIS"
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "Look where she would, feed conscience how she might, There was but one way now for Damaris-- One straight way that was hers, hers to defend, At hand, imperious. But the nearness of it, The flesh-bewildering simplicity, And the plain strangeness of it, thrilled again That wretched little quivering single string Which yielded not, but held her to the place Where now for five triumphant years had slept The flameless dust of Argan.--He was gone, The good man she had married long ago; And she had lived, and living she had learned, And surely there was nothing to regret: Much happiness had been for each of them, And they had been like lovers to the last: And after that, and long, long after that, Her tears had washed out more of widowed grief Than smiles had ever told of other joy.-- But could she, looking back, find anything That should return to her in the new time, And with relentless magic uncreate This temple of new love where she had thrown Dead sorrow on the altar of new life? Only one thing, only one thread was left; When she broke that, when reason snapped it off, And once for all, baffled, the grave let go The trivial hideous hold it had on her,-- Then she were free, free to be what she would, Free to be what she was.--And yet she stayed, Leashed, as it were, and with a cobweb strand, Close to a tombstone--maybe to starve there."
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "But why to starve? And why stay there at all? Why not make one good leap and then be done Forever and at once with Argan’s ghost And all such outworn churchyard servitude? For it was Argan’s ghost that held the string, And her sick fancy that held Argan’s ghost-- Held it and pitied it. She laughed, almost, There for the moment; but her strained eyes filled With tears, and she was angry for those tears-- Angry at first, then proud, then sorry for them. So she grew calm; and after a vain chase For thoughts more vain, she questioned of herself What measure of primeval doubts and fears Were still to be gone through that she might win Persuasion of her strength and of herself To be what she could see that she must be, No matter where the ghost was.--And the more She lived, the more she came to recognize That something out of her thrilled ignorance Was luminously, proudly being born, And thereby proving, thought by forward thought The prowess of its image; and she learned At length to look right on to the long days Before her without fearing. She could watch The coming course of them as if they were No more than birds, that slowly, silently, And irretrievably should wing themselves Uncounted out of sight. And when he came Again she should be free--she would be free. Else, when he looked at her she must look down, Defeated, and malignly dispossessed Of what was hers to prove and in the proving Wisely to consecrate. And if the plague Of that perverse defeat should come to be-- If at that sickening end she were to find Herself to be the same poor prisoner That he had found at first--then she must lose All sight and sound of him, she must abjure All possible thought of him; for he would go So far and for so long from her that love-- Even a love like his, exiled enough, Might for another’s touch be born again-- Born to be lost and starved for and not found; Or, at the next, the second wretchedest, It might go mutely flickering down and out, And on some incomplete and piteous day, Some perilous day to come, she might at last Learn, with a noxious freedom, what it is To be at peace with ghosts. Then were the blow Thrice deadlier than any kind of death Could ever be: to know that she had won The truth too late--there were the dregs indeed Of wisdom, and of love the final thrust Unmerciful; and there where now did lie So plain before her the straight radiance Of what was her appointed way to take, Were only the bleak ruts of an old road That stretched ahead and faded and lay far Through deserts of unconscionable years."
+    },
+    {
+      "id": "s9-12",
+      "sceneId": "s9",
+      "text": "But vampire thoughts like these confessed the doubt That love denied; and once, if never again, They should be turned away. They might come back-- More craftily, perchance, they might come back-- And with a spirit-thirst insatiable Finish the strength of her; but now, to-day She would have none of them. She knew that love Was true, that he was true, that she was true; And should a death-bed snare that she had made So long ago be stretched inexorably Through all her life, only to be unspun With her last breathing? And were bats and threads, Accursedly devised with watered gules, To be Love’s heraldry? What were it worth To live and to find out that life were life But for an unrequited incubus Of outlawed shame that would not be thrown down Till she had thrown down fear and overcome The woman that was yet so much of her That she might yet go mad? What were it worth To live, to linger, and to be condemned In her submission to a common thought That clogged itself and made of its first faith Its last impediment? What augured it, Now in this quick beginning of new life, To clutch the sunlight and be feeling back, Back with a scared fantastic fearfulness, To touch, not knowing why, the vexed-up ghost Of what was gone?"
+    },
+    {
+      "id": "s9-13",
+      "sceneId": "s9",
+      "text": "Yes, there was Argan’s face, Pallid and pinched and ruinously marked With big pathetic bones; there were his eyes, Quiet and large, fixed wistfully on hers; And there, close-pressed again within her own, Quivered his cold thin fingers. And, ah! yes, There were the words, those dying words again, And hers that answered when she promised him. Promised him? ... yes. And had she known the truth Of what she felt that he should ask her that, And had she known the love that was to be, God knew that she could not have told him then. But then she knew it not, nor thought of it; There was no need of it; nor was there need Of any problematical support Whereto to cling while she convinced herself That love’s intuitive utility, Inexorably merciful, had proved That what was human was unpermanent And what was flesh was ashes. She had told Him then that she would love no other man, That there was not another man on earth Whom she could ever love, or who could make So much as a love thought go through her brain; And he had smiled. And just before he died His lips had made as if to say something-- Something that passed unwhispered with his breath, Out of her reach, out of all quest of it. And then, could she have known enough to know The meaning of her grief, the folly of it, The faithlessness and the proud anguish of it, There might be now no threads to punish her, No vampire thoughts to suck the coward blood, The life, the very soul of her."
+    },
+    {
+      "id": "s9-14",
+      "sceneId": "s9",
+      "text": "Yes, Yes, They might come back.... But why should they come back? Why was it she had suffered? Why had she Struggled and grown these years to demonstrate That close without those hovering clouds of gloom And through them here and there forever gleamed The Light itself, the life, the love, the glory, Which was of its own radiance good proof That all the rest was darkness and blind sight? And who was *she*? The woman she had known-- The woman she had petted and called “I”-- The woman she had pitied, and at last Commiserated for the most abject And persecuted of all womankind,-- Could it be she that had sought out the way To measure and thereby to quench in her The woman’s fear--the fear of her not fearing? A nervous little laugh that lost itself, Like logic in a dream, fluttered her thoughts An instant there that ever she should ask What she might then have told so easily-- So easily that Annandale had frowned, Had he been given wholly to be told The truth of what had never been before So passionately, so inevitably Confessed. For she could see from where she sat The sheets that he had bound up like a book And covered with red leather; and her eyes Could see between the pages of the book, Though her eyes, like them, were closed. And she could read As well as if she had them in her hand, What he had written on them long ago,-- Six years ago, when he was waiting for her. She might as well have said that she could see The man himself, as once he would have looked Had she been there to watch him while he wrote Those words, and all for her.... For her whose face Had flashed itself, prophetic and unseen, But not unspirited, between the life That would have been without her and the life That he had gathered up like frozen roots Out of a grave-clod lying at his feet, Unconsciously, and as unconsciously Transplanted and revived. He did not know The kind of life that he had found, nor did He doubt, not knowing it; but well he knew That it was life--new life, and that the old Might then with unimprisoned wings go free, Onward and all along to its own light, Through the appointed shadow. While she gazed Upon it there she felt within herself The growing of a newer consciousness-- The pride of something fairer than her first Outclamoring of interdicted thought Had ever quite foretold; and all at once There quivered and requivered through her flesh, Like music, like the sound of an old song, Triumphant, love-remembered murmurings Of what for passion’s innocence had been Too mightily, too perilously hers, Ever to be reclaimed and realized Until to-day. To-day she could throw off The burden that had held her down so long, And she could stand upright, and she could see The way to take, with eyes that had in them No gleam but of the spirit. Day or night, No matter; she could see what was to see-- All that had been till now shut out from her, The service, the fulfillment, and the truth, And thus the cruel wiseness of it all."
+    },
+    {
+      "id": "s9-15",
+      "sceneId": "s9",
+      "text": "So Damaris, more like than anything To one long prisoned in a twilight cave With hovering bats for all companionship, And after time set free to fight the sun, Laughed out, so glad she was to recognize The test of what had been, through all her folly, The courage of her conscience; for she knew, Now on a late-flushed autumn afternoon That else had been too bodeful of dead things To be endured with aught but the same old Inert, self-contradicted martyrdom Which she had known so long, that she could look Right forward through the years, nor any more Shrink with a cringing prescience to behold The glitter of dead summer on the grass, Or the brown-glimmered crimson of still trees Across the intervale where flashed along, Black-silvered, the cold river. She had found, As if by some transcendent freakishness Of reason, the glad life that she had sought Where naught but obvious clouds could ever be-- Clouds to put out the sunlight from her eyes, And to put out the love-light from her soul. But they were gone--now they were all gone; And with a whimsied pathos, like the mist Of grief that clings to new-found happiness Hard wrought, she might have pity for the small Defeated quest of them that brushed her sight Like flying lint--lint that had once been thread...."
+    },
+    {
+      "id": "s9-16",
+      "sceneId": "s9",
+      "text": "Yes, like an anodyne, the voice of him, There were the words that he had made for her, For her alone. The more she thought of them The more she lived them, and the more she knew The life-grip and the pulse of warm strength in them. They were the first and last of words to her, And there was in them a far questioning That had for long been variously at work, Divinely and elusively at work, With her, and with the grave that had been hers; They were eternal words, and they diffused A flame of meaning that men’s lexicons Had never kindled; they were choral words That harmonized with love’s enduring chords Like wisdom with release; triumphant words That rang like elemental orisons Through ages out of ages; words that fed Love’s hunger in the spirit; words that smote; Thrilled words that echoed, and barbed words that clung;-- And every one of them was like a friend Whose obstinate fidelity, well tried, Had found at last and irresistibly The way to her close conscience, and thereby Revealed the unsubstantial Nemesis That she had clutched and shuddered at so long; And every one of them was like a real And ringing voice, clear toned and absolute, But of a love-subdued authority That uttered thrice the plain significance Of what had else been generously vague And indolently true. It may have been The triumph and the magic of the soul, Unspeakably revealed, that finally Had reconciled the grim probationing Of wisdom with unalterable faith, But she could feel--not knowing what it was, For the sheer freedom of it--a new joy That humanized the latent wizardry Of his prophetic voice and put for it The man within the music."
+    },
+    {
+      "id": "s9-17",
+      "sceneId": "s9",
+      "text": "So it came To pass, like many a long-compelled emprise That with its first accomplishment almost Annihilates its own severity, That she could find, whenever she might look, The certified achievement of a love That had endured, self-guarded and supreme, To the glad end of all that wavering; And she could see that now the flickering world Of autumn was awake with sudden bloom, New-born, perforce, of a slow bourgeoning. And she had found what more than half had been The grave-deluded, flesh-bewildered fear Which men and women struggle to call faith, To be the paid progression to an end Whereat she knew the foresight and the strength To glorify the gift of what was hers, To vindicate the truth of what she was. And had it come to her so suddenly? There was a pity and a weariness In asking that, and a great needlessness; For now there were no wretched quivering strings That held her to the churchyard any more: There were no thoughts that flapped themselves like bats Around her any more. The shield of love Was clean, and she had paid enough to learn How it had always been so. And the truth, Like silence after some far victory, Had come to her, and she had found it out As if it were a vision, a thing born So suddenly!--just as a flower is born, Or as a world is born--so suddenly."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Though not for common praise of him, Nor yet for pride or charity, Still would I make to Vanderberg One tribute for his memory:"
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "One honest warrant of a friend Who found with him that flesh was grass-- Who neither blamed him in defect Nor marveled how it came to pass;"
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "Or why it ever was that he-- That Vanderberg, of all good men, Should lose himself to find himself, Straightway to lose himself again."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "For we had buried Sainte-Nitouche, And he had said to me that night: “Yes, we have laid her in the earth, But what of that?” And he was right."
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "And he had said: “We have a wife, We have a child, we have a church; ’Twould be a scurrilous way out If we should leave them in the lurch."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "“That’s why I have you here with me To-night: you know a talk may take The place of bromide, cyanide, *Et cetera*. For heaven’s sake,"
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "“Why do you look at me like that? What have I done to freeze you so? Dear man, you see where friendship means A few things yet that you don’t know;"
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "“And you see partly why it is That I am glad for what is gone: For Sainte-Nitouche and for the world In me that followed. What lives on--"
+    },
+    {
+      "id": "s10-8",
+      "sceneId": "s10",
+      "text": "“Well, here you have it: here at home-- For even home will yet return. You know the truth is on my side, And that will make the embers burn."
+    },
+    {
+      "id": "s10-9",
+      "sceneId": "s10",
+      "text": "“I see them brighten while I speak, I see them flash,--and they are mine! You do not know them, but I do: I know the way they used to shine."
+    },
+    {
+      "id": "s10-10",
+      "sceneId": "s10",
+      "text": "“And I know more than I have told Of other life that is to be: I shall have earned it when it comes, And when it comes I shall be free."
+    },
+    {
+      "id": "s10-11",
+      "sceneId": "s10",
+      "text": "“Not as I was before she came But farther on for having been The servitor, the slave of her-- The fool, you think. But there’s your sin--"
+    },
+    {
+      "id": "s10-12",
+      "sceneId": "s10",
+      "text": "“Forgive me!--and your ignorance: Could you but have the vision here That I have, you would understand As I do that all ways are clear"
+    },
+    {
+      "id": "s10-13",
+      "sceneId": "s10",
+      "text": "“For those who dare to follow them With earnest eyes and honest feet. But Sainte-Nitouche has made the way For me, and I shall find it sweet."
+    },
+    {
+      "id": "s10-14",
+      "sceneId": "s10",
+      "text": "“Sweet with a bitter sting left?--Yes, Bitter enough, God knows, at first; But there are more steep ways than one To make the best look like the worst;"
+    },
+    {
+      "id": "s10-15",
+      "sceneId": "s10",
+      "text": "“And here is mine--the dark and hard, For me to follow, trust, and hold: And worship, so that I may leave No broken story to be told."
+    },
+    {
+      "id": "s10-16",
+      "sceneId": "s10",
+      "text": "“Therefore I welcome what may come, Glad for the days, the nights, the years.”-- An upward flash of ember-flame Revealed the gladness in his tears."
+    },
+    {
+      "id": "s10-17",
+      "sceneId": "s10",
+      "text": "“You see them, but you know,” said he, “Too much to be incredulous: You know the day that makes us wise, The moment that makes fools of us."
+    },
+    {
+      "id": "s10-18",
+      "sceneId": "s10",
+      "text": "“So I shall follow from now on The road that she has found for me: The dark and starry way that leads Right upward, and eternally."
+    },
+    {
+      "id": "s10-19",
+      "sceneId": "s10",
+      "text": "“Stumble at first? I may do that; And I may grope, and hate the night; But there’s a guidance for the man Who stumbles upward for the light,"
+    },
+    {
+      "id": "s10-20",
+      "sceneId": "s10",
+      "text": "“And I shall have it all from her, The foam-born child of innocence. I feel you smiling while I speak, But that’s of little consequence;"
+    },
+    {
+      "id": "s10-21",
+      "sceneId": "s10",
+      "text": "“For when we learn that we may find The truth where others miss the mark, What is it worth for us to know That friends are smiling in the dark?"
+    },
+    {
+      "id": "s10-22",
+      "sceneId": "s10",
+      "text": "“Could we but share the lonely pride Of knowing, all would then be well; But knowledge often writes itself In flaming words we cannot spell."
+    },
+    {
+      "id": "s10-23",
+      "sceneId": "s10",
+      "text": "“And I, who have my work to do, Look forward; and I dare to see, Far stretching and all mountainous, God’s pathway through the gloom for me.”"
+    },
+    {
+      "id": "s10-24",
+      "sceneId": "s10",
+      "text": "I found so little to say then That I said nothing.--“Say good-night,” Said Vanderberg; “and when we meet To-morrow, tell me I was right."
+    },
+    {
+      "id": "s10-25",
+      "sceneId": "s10",
+      "text": "“Forget the dozen other things That you have not the faith to say; For now I know as well as you That you are glad to go away.”"
+    },
+    {
+      "id": "s10-26",
+      "sceneId": "s10",
+      "text": "I could have blessed the man for that, And he could read me with a smile: “You doubt,” said he, “but if we live You’ll know me in a little while.”"
+    },
+    {
+      "id": "s10-27",
+      "sceneId": "s10",
+      "text": "He lived; and all as he foretold, I knew him--better than he thought: My fancy did not wholly dig The pit where I believed him caught."
+    },
+    {
+      "id": "s10-28",
+      "sceneId": "s10",
+      "text": "But yet he lived and laughed, and preached, And worked--as only players can: He scoured the shrine that once was home And kept himself a clergyman."
+    },
+    {
+      "id": "s10-29",
+      "sceneId": "s10",
+      "text": "The clockwork of his cold routine Put friends far off that once were near; The five staccatos in his laugh Were too defensive and too clear;"
+    },
+    {
+      "id": "s10-30",
+      "sceneId": "s10",
+      "text": "The glacial sermons that he preached Were longer than they should have been; And, like the man who fashioned them, The best were too divinely thin."
+    },
+    {
+      "id": "s10-31",
+      "sceneId": "s10",
+      "text": "But still he lived, and moved, and had The sort of being that was his, Till on a day the shrine of home For him was in the Mysteries:--"
+    },
+    {
+      "id": "s10-32",
+      "sceneId": "s10",
+      "text": "“My friend, there’s one thing yet,” said he, “And one that I have never shared With any man that I have met; But you--you know me.” And he stared"
+    },
+    {
+      "id": "s10-33",
+      "sceneId": "s10",
+      "text": "For a slow moment at me then With conscious eyes that had the gleam, The shine, before the stroke:--“You know The ways of us, the way we dream:"
+    },
+    {
+      "id": "s10-34",
+      "sceneId": "s10",
+      "text": "“You know the glory we have won, You know the glamour we have lost; You see me now, you look at me,-- And yes, you pity me, almost;"
+    },
+    {
+      "id": "s10-35",
+      "sceneId": "s10",
+      "text": "“But never mind the pity--no, Confess the faith you can’t conceal; And if you frown, be not like one Of those who frown before they feel."
+    },
+    {
+      "id": "s10-36",
+      "sceneId": "s10",
+      "text": "“For there is truth, and half truth,--yes, And there’s a quarter truth, no doubt; But mine was more than half.... You smile? You understand? You bear me out?"
+    },
+    {
+      "id": "s10-37",
+      "sceneId": "s10",
+      "text": "“You always knew that I was right-- You are my friend--and I have tried Your faith--your love.”--The gleam grew small, The stroke was easy, and he died."
+    },
+    {
+      "id": "s10-38",
+      "sceneId": "s10",
+      "text": "I saw the dim look change itself To one that never will be dim; I saw the dead flesh to the grave, But that was not the last of him."
+    },
+    {
+      "id": "s10-39",
+      "sceneId": "s10",
+      "text": "For what was his to live lives yet: Truth, quarter truth, death cannot reach; Nor is it always what we know That we are fittest here to teach."
+    },
+    {
+      "id": "s10-40",
+      "sceneId": "s10",
+      "text": "The fight goes on when fields are still, The triumph clings when arms are down; The jewels of all coronets Are pebbles of the unseen crown;"
+    },
+    {
+      "id": "s10-41",
+      "sceneId": "s10",
+      "text": "The specious weight of loud reproof Sinks where a still conviction floats; And on God’s ocean after storm Time’s wreckage is half pilot-boats;"
+    },
+    {
+      "id": "s10-42",
+      "sceneId": "s10",
+      "text": "And what wet faces wash to sight Thereafter feed the common moan;-- But Vanderberg no pilot had, Nor could have: he was all alone."
+    },
+    {
+      "id": "s10-43",
+      "sceneId": "s10",
+      "text": "Unchallenged by the larger light The starry quest was his to make; And of all ways that are for men, The starry way was his to take."
+    },
+    {
+      "id": "s10-44",
+      "sceneId": "s10",
+      "text": "We grant him idle names enough To-day, but even while we frown The fight goes on, the triumph clings, And there is yet the unseen crown."
+    },
+    {
+      "id": "s10-45",
+      "sceneId": "s10",
+      "text": "But was it his? Did Vanderberg Find half truth to be passion’s thrall, Or as we met him day by day, Was love triumphant, after all?"
+    },
+    {
+      "id": "s10-46",
+      "sceneId": "s10",
+      "text": "I do not know so much as that; I only know that he died right: Saint Anthony nor Sainte-Nitouche Had ever smiled as he did--quite."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Shall I never make him look at me again? I look at him, I look my life at him, I tell him all I know the way to tell, But there he stays the same."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Shall I never make him speak one word to me? Shall I never make him say enough to show My heart if he be glad? Be glad? ... ah! God, Why did they bring me back?"
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "I wonder, if I go to him again, If I take him by those two cold hands again, Shall I get one look of him at last, or feel One sign--or anything?"
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "Or will he still sit there in the same way, Without an answer for me from his lips, Or from his eyes,--or even with a touch Of his hand on my hand?..."
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "“Will you look down this once--look down at me? Speak once--and if you never speak again, Tell me enough--tell me enough to make Me know that you are glad!"
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "“You are my King, and once my King would speak: You were Admetus once, you loved me once: Life was a dream of heaven for us once-- And has the dream gone by?"
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "“Do I cling to shadows when I call you Life? Do you love me still, or are the shadows all? Or is it I that love you in the grave, And you that mourn for me?"
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "“If it be that, then do not mourn for me; Be glad that I have loved you, and be King. But if it be not that--if it be true.... Tell me if it be true!”"
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "Then with a choking answer the King spoke; But never touched his hand on hers, or fixed His eyes on hers, or on the face of her: “Yes, it is true,” he said."
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "“You are alive, and you are with me now; And you are reaching up to me that I-- That I may take you--I that am a King-- I that was once a man.”"
+    },
+    {
+      "id": "s11-10",
+      "sceneId": "s11",
+      "text": "So then she knew. She might have known before; Truly, she thought, she must have known it long Before: she must have known it when she came From that great sleep of hers."
+    },
+    {
+      "id": "s11-11",
+      "sceneId": "s11",
+      "text": "She knew the truth, but not yet all of it: He loved her, but he would not let his eyes Prove that he loved her; and he would not hold His wife there in his arms."
+    },
+    {
+      "id": "s11-12",
+      "sceneId": "s11",
+      "text": "So, like a slave, she waited at his knees, And waited. She was not unhappy now. She quivered, but she knew that he would speak Again--and he did speak."
+    },
+    {
+      "id": "s11-13",
+      "sceneId": "s11",
+      "text": "And while she felt the tremor of his words, He told her all there was for him to tell; And then he turned his face to meet her face, That she might look at him."
+    },
+    {
+      "id": "s11-14",
+      "sceneId": "s11",
+      "text": "She looked; and all her trust was in that look, And all her faith was in it, and her love; And when his answer to that look came back, It flashed back through his tears."
+    },
+    {
+      "id": "s11-15",
+      "sceneId": "s11",
+      "text": "So then she put her arms around his neck, And kissed him on his forehead and his lips; And there she clung, fast in his arms again, Triumphant, with closed eyes."
+    },
+    {
+      "id": "s11-16",
+      "sceneId": "s11",
+      "text": "At last, half whispering, she spoke once more: “Why was it that you suffered for so long? Why could you not believe me--trust in me? Was I so strange as that?"
+    },
+    {
+      "id": "s11-17",
+      "sceneId": "s11",
+      "text": "“We suffer when we do not understand; And you have suffered--you that love me now-- Because you are a man.... There is one thing No man can understand."
+    },
+    {
+      "id": "s11-18",
+      "sceneId": "s11",
+      "text": "“I would have given everything?--gone down To Tartarus--to silence? Was it that? I would have died? I would have let you live?-- And was it very strange?”"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "It may have been the pride in me for aught I know, or just a patronizing whim; But call it freak or fancy, or what not, I cannot hide that hungry face of him."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "I keep a scant half-dozen words he said, And every now and then I lose his name; He may be living or he may be dead, But I must have him with me all the same."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "I knew it, and I knew it all along,-- And felt it once or twice, or thought I did; But only as a glad man feels a song That sounds around a stranger’s coffin lid."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "I knew it, and he knew it, I believe, But silence held us alien to the end; And I have now no magic to retrieve That year, to stop that hunger for a friend."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Four o’clock this afternoon, Fifteen hundred miles away: So it goes, the crazy tune, So it pounds and hums all day."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "Four o’clock this afternoon, Earth will hide them far away: Best they go to go so soon, Best for them the grave to-day."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "Had she gone but half so soon, Half the world had passed away. Four o’clock this afternoon, Best for them they go to-day."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "Four o’clock this afternoon Love will hide them deep, they say; Love that made the grave so soon, Fifteen hundred miles away."
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "Four o’clock this afternoon-- Ah, but they go slow to-day: Slow to suit my crazy tune, Past the need of all we say."
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "Best it came to come so soon, Best for them they go to-day: Four o’clock this afternoon, Fifteen hundred miles away."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "Yes, you have it; I can see. Beautiful?... Dear, look at me! Look and let my shame confess Triumph after weariness. Beautiful? Ah, yes."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "Lift it where the beams are bright; Hold it where the western light, Shining in above my bed, Throws a glory on your head, Now it is all said."
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "All there was for me to say From the first until to-day. Long denied and long deferred, Now I say it in one word-- Now; and you have heard."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "Life would have its way with us, And I’ve called it glorious: For I know the glory now And I read it on your brow. You have shown me how."
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "I can feel your cheeks all wet, But your eyes will not forget: In the frown you cannot hide I can read where faith and pride Are not satisfied."
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "But the word was, two should live: Two should suffer--and forgive: By the steep and weary way, For the glory of the clay, Two should have their day."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "We have toiled and we have wept For the gift the gods have kept: Clashing and unreconciled When we might as well have smiled, We have played the child."
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "But the clashing is all past, And the gift is yours at last. Lift it--hold it high again!... Did I doubt you now and then? Well, we are not men."
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "Never mind; we know the way,-- And I do not need to stay. Let us have it well confessed: You to triumph, I to rest. That will be the best."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Through the shine, through the rain We have shared the day’s load; To the old march again We have tramped the long road; We have laughed, we have cried, And we’ve tossed the King’s crown; We have fought, we have died, And we’ve trod the day down. So it’s lift the old song Ere the night flies again, Where the road leads along Through the shine, through the rain."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Long ago, far away, Came a sign from the skies; And we feared then to pray For the new sun to rise: With the King there at hand, Not a child stepped or stirred-- Where the light filled the land And the light brought the word; For we knew then the gleam Though we feared then the day, And the dawn smote the dream Long ago, far away."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "But the road leads us all, For the King now is dead; And we know, stand or fall, We have shared the day’s bread. We can laugh down the dream, For the dream breaks and flies; And we trust now the gleam, For the gleam never dies;-- So it’s off now the load, For we know the night’s call, And we know now the road And the road leads us all."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "Through the shine, through the rain, We have wrought the day’s quest; To the old march again We have earned the day’s rest; We have laughed, we have cried, And we’ve heard the King’s groans; We have fought, we have died, And we’ve burned the King’s bones, And we lift the old song Ere the night flies again, Where the road leads along Through the shine, through the rain."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "The Riverside Press"
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "*Electrotyped and printed by H. O. Houghton & Co. Cambridge, Mass., U. S. A.*"
+    }
+  ]
+}

@@ -58,6 +58,8 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Tier A CLEAR (Sep 22) sits on Next after that queue, before-sleep only —
  * never Featured. Cold-open stays Mirth → Quicksand → Botchan. Noli stays the
  * live Derbyshire Host bind already on Next / Unwind.
+ * BATCH-4 CLEAR (Sep 22) sits on Next after Tier A, before-sleep only —
+ * never Featured, not For you. Cold-open stays Mirth → Quicksand → Botchan.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -162,6 +164,26 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "yekl",
   "zuleika-dobson",
   "all-quiet-on-the-western-front",
+  "a-group-of-noble-dames",
+  "captain-craig",
+  "daniel-deronda",
+  "day-and-night-stories",
+  "fifty-one-tales",
+  "jude-the-obscure",
+  "les-villes-tentaculaires",
+  "neue-gedichte",
+  "over-the-brazier",
+  "rolling-stones",
+  "salammbo",
+  "smoke-bellew",
+  "songs-from-vagabondia",
+  "songs-of-childhood",
+  "ten-minute-stories",
+  "the-everlasting-mercy",
+  "the-golden-bowl",
+  "the-rainbow",
+  "the-sword-of-welleran",
+  "time-and-the-gods",
 ] as const;
 
 /**
