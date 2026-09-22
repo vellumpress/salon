@@ -268,6 +268,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "there-is-confusion",
       "miss-lulu-bett",
       "seven-brothers",
+      "generosity",
     ],
   },
   {

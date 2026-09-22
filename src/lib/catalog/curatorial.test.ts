@@ -1472,9 +1472,10 @@ test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
     "quicksand",
     "botchan",
   ]);
-  assert.equal(forYou!.workIds.at(-3), "there-is-confusion");
-  assert.equal(forYou!.workIds.at(-2), "miss-lulu-bett");
-  assert.equal(forYou!.workIds.at(-1), "seven-brothers");
+  assert.equal(forYou!.workIds.at(-4), "there-is-confusion");
+  assert.equal(forYou!.workIds.at(-3), "miss-lulu-bett");
+  assert.equal(forYou!.workIds.at(-2), "seven-brothers");
+  assert.equal(forYou!.workIds.at(-1), "generosity");
   assert.equal(sleep!.workIds[0], "quicksand");
 });
 
@@ -2189,7 +2190,7 @@ test("Mira 8AM CLEAR ×5 are Recommend-only local binds, never Featured", () => 
   assert.ok(brothersFull.breaths[0]?.text.startsWith(brothers!.opening ?? ""));
 });
 
-test("Generosity by Amber Later is a Later original, never Featured", () => {
+test("Generosity by Amber Later is For you only, never Featured", () => {
   const id = "generosity";
   const work = SHELF.find((item) => item.id === id);
   assert.ok(work);
@@ -2213,7 +2214,8 @@ test("Generosity by Amber Later is a Later original, never Featured", () => {
     "quicksand",
     "botchan",
   ]);
-  assert.equal(forYou!.workIds.includes(id), false);
+  assert.equal(forYou!.workIds.includes(id), true);
+  assert.equal(forYou!.workIds.at(-1), id);
   assert.equal(sleep!.workIds.includes(id), false);
   assert.equal(sleep!.workIds[0], "quicksand");
   assert.equal(existsSync(new URL("./openings/generosity.json", import.meta.url)), false);

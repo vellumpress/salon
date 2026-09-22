@@ -113,7 +113,7 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * (Matson EN 79566) is For you only — not Next. Cold-open stays
  * Mirth → Quicksand → Botchan.
  * Generosity (Amber Later, 2026) is an original contemporary bind — rights
- * Vellum, not Gutenberg. Later lane only. Never Featured, not Next, not For you.
+ * Vellum, not Gutenberg. Recommend For you only — not Next, never Featured.
  * Cold-open stays Mirth → Quicksand → Botchan.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
