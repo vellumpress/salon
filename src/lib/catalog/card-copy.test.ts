@@ -248,8 +248,8 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^"I really think I can make something of it," she said/,
     },
     futility: {
-      scene: /Sisters/i,
-      opening: /^It was somewhat in the manner of an Ibsen drama/,
+      scene: /Part I/i,
+      opening: /^And then it struck me that the only thing to do was to fit all this into a book/,
     },
     "poison-tree": {
       scene: /storm/i,
@@ -1089,9 +1089,9 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       gutenberg: 78975,
       title: "The Immoralist",
       author: "André Gide (tr. Dorothy Bussy)",
-      year: 1930,
+      year: 1902,
       opening: /^My dear friends, I knew you were faithful/,
-      breaths: 631,
+      breaths: 591,
       intro: /freedom/i,
     },
     "all-quiet-on-the-western-front": {
@@ -1208,8 +1208,8 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       gutenberg: 75530,
       title: "A High Wind in Jamaica",
       opening: /^One of the fruits of Emancipation/,
-      breaths: 3167,
-      intro: /warn the room first/,
+      breaths: 1514,
+      intro: /period racial language/,
     },
     vera: {
       gutenberg: 34366,
@@ -1256,8 +1256,8 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       gutenberg: 77253,
       title: "Futility",
       author: "William Gerhardie",
-      opening: /^It was somewhat in the manner of an Ibsen drama/,
-      breaths: 4334,
+      opening: /^And then it struck me that the only thing to do was to fit all this into a book/,
+      breaths: 1523,
     },
     "poison-tree": {
       gutenberg: 17455,

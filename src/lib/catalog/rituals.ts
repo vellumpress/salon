@@ -168,7 +168,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   rashomon:
     `Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate. Akutagawa’s Kyoto opens on desolation before the crime story blooms.`,
   "high-wind-jamaica":
-    `This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant. Hughes’s 1929 voice already uses period racial language in this stretch, and a sharper racial gaze continues immediately after the open-at. If you Host further into the chapter, warn the room first.`,
+    `This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant. Hughes’s 1929 voice already uses period racial language in this stretch, and a sharper racial gaze continues immediately after Vellum’s stop. We end at the plant on purpose so the timed sit stays bounded; if you Host further into the chapter, warn the room first. Flag — do not sanitize mid-bind.`,
   "noli-me-tangere":
     `Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.`,
   vera:
@@ -176,7 +176,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "on-a-chinese-screen":
     `She takes a holy temple and papers it into Cheltenham—blue curtains for her eyes, pink stripes, an American stove where the Buddha sat.`,
   futility:
-    `Three sisters spring out of a wooden dacha above the sea and introduce themselves in order of age—then the samovar household rearranges what “mother” means.`,
+    `The first sit opens on the harbour: the only thing to do was to fit all this into a book. The port sounds the note of departure, and the tall stone houses set the tone.`,
   "poison-tree":
     `His wife makes him promise: if a storm rises, leave the boat. On the Ganges in Joisto, the weather keeps that promise.`,
   "trooper-peter-halket":
@@ -188,7 +188,11 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-gadfly":
     `Pisa seminary heat — a lost sermon page, a caressing *Padre*, and a fruitseller calling *Fragola!* down the street. Later violence comes after this sit.`,
   "the-immoralist":
-    `Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for.`,
+    `Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for. The sit opens on the frame letter and stops on the freedom line.`,
+  "the-hidden-force":
+    `The full moon wore the hue of tragedy that evening — a blood-red ball behind the tamarind-trees in the Lange Laan, then stillness in a pallid sky. The first sit stops before the household dinner.`,
+  "casanovas-homecoming":
+    `Casanova is in his fifty-third year, circling toward Venice like a wounded bird, and the petitions home have turned humble.`,
   "letters-of-a-javanese-princess":
     `Kartini writes from colonial Java in 1899, hungry for the “modern girl” of Europe while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. The Rituals sit is the cloistered-arms beat; if you Host further letters, name that colonial frame for the room first.`,
   "blood-and-sand":
@@ -268,6 +272,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "there-is-confusion",
       "miss-lulu-bett",
       "seven-brothers",
+      "futility",
       "generosity",
     ],
   },
@@ -290,6 +295,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "carmilla",
       "hungry-hearts",
       "in-our-time",
+      "casanovas-homecoming",
     ],
   },
   {
@@ -629,7 +635,6 @@ export const RITUAL_LANES: RitualLane[] = [
     workIds: [
       "enchanted-april",
       "on-a-chinese-screen",
-      "futility",
       "where-angels-fear-to-tread",
       "letters-of-a-javanese-princess",
       "blood-and-sand",

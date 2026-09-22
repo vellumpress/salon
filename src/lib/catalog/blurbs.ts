@@ -50,7 +50,7 @@ const BLURBS: Record<string, string> = {
   "on-a-chinese-screen":
     "She takes a holy temple and papers it into Cheltenham—blue curtains for her eyes, pink stripes, an American stove where the Buddha sat.",
   futility:
-    "Three sisters spring out of a wooden dacha above the sea and introduce themselves in order of age—then the samovar household rearranges what “mother” means.",
+    "The harbour sounds the note of departure: the only thing to do was to fit all this into a book.",
   "poison-tree":
     "His wife makes him promise: if a storm rises, leave the boat—and on the Ganges in Joisto the weather keeps that promise.",
   "trooper-peter-halket":

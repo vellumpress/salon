@@ -144,7 +144,7 @@ test("Locked recommend, Next, and ritual-lane works all resolve a place with a s
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("noli-me-tangere"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("vera"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("on-a-chinese-screen"));
-  assert.ok(NEXT_FEATURED_TRACK_IDS.includes("futility"));
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("futility"), false);
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("trooper-peter-halket"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("the-home-and-the-world"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("the-immoralist"));
