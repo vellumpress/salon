@@ -68,7 +68,5 @@ if (!existsSync(join(dest, "index.html"))) {
 applySpaPagesFallback(dest);
 const safety = applyPagesHtmlSafety(dest);
 writeFileSync(join(dest, ".nojekyll"), "");
-console.log(
-  `[prepare-pages] html files=${safety.files} nul-bytes-removed=${safety.removed}`,
-);
+console.log(`[prepare-pages] html files=${safety.files} nul-bytes-removed=${safety.removed}`);
 console.log("[prepare-pages] ready");

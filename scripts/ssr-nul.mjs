@@ -83,7 +83,7 @@ export function ssrMatchIdNulPlugin() {
     const patched = patchInstalledDehydrateSsrMatchId();
     if (!logged && patched.length > 0) {
       logged = true;
-      console.log(
+      console.error(
         `[ssr-match-id-no-nul] rewrote slash delimiters in ${patched.length} router-core file(s)`,
       );
     }

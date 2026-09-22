@@ -1,3 +1,6 @@
+// Patch router-core before TanStack imports it. A later plugin hook is too
+// late: the codec is already in the module cache and prerender keeps emitting NUL.
+import "./scripts/patch-ssr-match-id.mjs";
 import { existsSync, readdirSync } from "node:fs";
 import { join, resolve } from "node:path";
 import type { Plugin } from "vite";
