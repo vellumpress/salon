@@ -6,7 +6,7 @@
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from "node:fs";
 import { SHELF, type ShelfWork } from "../src/lib/catalog/shelf.ts";
-import { buildFromRaw } from "../src/lib/gutenberg.server.ts";
+import { betweenMarks, buildFromRaw } from "../src/lib/gutenberg.server.ts";
 import { findCueOnlyBreaths, mergeWorkDialogue } from "../src/lib/catalog/dialogue-formatting.ts";
 import type { Work } from "../src/lib/literature.ts";
 
@@ -27,6 +27,39 @@ const HELD_IDS = new Set([
   "the-tempers",
   "the-crescent-moon",
   "poems-by-emily-dickinson-series-one",
+  "attendants-confession",
+  "enchanted-april",
+  "vera",
+  "futility",
+  "high-wind-jamaica",
+  "rashomon",
+  "on-a-chinese-screen",
+  "poison-tree",
+  "songs-and-satires",
+  "the-three-taverns",
+  "a-diversity-of-creatures",
+  "the-town-down-the-river",
+  "prosas-profanas",
+  "the-romance-of-the-milky-way",
+  "the-comedienne",
+  "mr-fortunes-maggot",
+  "noli-me-tangere",
+  "cousin-betty",
+  "eugenie-grandet",
+  "heart-of-darkness",
+  "hidden-force",
+  "lady-windermeres-fan",
+  "rosmersholm",
+  "salome",
+  "the-crux",
+  "the-man-of-property",
+  "the-napoleon-of-notting-hill",
+  "the-pit",
+  "the-village",
+  "the-octopus",
+  "under-fire",
+  "kalevala",
+  "before-adam",
 ]);
 
 const HELD_PG = new Set([
@@ -45,6 +78,18 @@ const TEXT_DIR = "src/lib/catalog/texts";
 const SHELF_PATH = "src/lib/catalog/shelf.ts";
 const MAX_BREATHS = 22000;
 const UA = "VellumPressSalon/1.0 (literary catalog; +https://vellumpress.github.io/salon/)";
+
+/** Slice past a preface so the host breath is the work itself. */
+const ANCHORS: Record<string, string> = {
+  "the-canterbury-tales": "WHEN that Aprilis, with his showers swoot",
+  "aurora-leigh": "FIRST BOOK.",
+  "black-spirits-and-white-a-book-of-ghost-stories": "No. 252 Rue M. le Prince.",
+  "the-poems-of-emma-lazarus-volume-1": "\nEPOCHS.\n",
+  "the-hesperides-and-noble-numbers": "1. THE ARGUMENT OF HIS BOOK.",
+};
+
+const CHROME =
+  /transcriber|produced by|project gutenberg|table of contents|minor typographical|indicate _italics_|modern scholars believe|mcclurg|fac-?simile|all rights reserved/i;
 
 const JUNK =
   /gutenberg|transcriber|produced by|ebook|copyright|all rights reserved|table of contents|^\s*contents\s*$|this (book|etext|project)|online distributed|proofread|digitiz|start of (this|the)|end of (this|the)|illustrated by|title page|printer'?s? note|editorial note/i;
@@ -117,14 +162,20 @@ function authorMatches(raw: string, author: string) {
 }
 
 function citesTitle(raw: string, title: string) {
-  const head = raw.slice(0, 12000).toLowerCase();
-  const words = title
+  const head = raw.slice(0, 12000);
+  const full = title.trim();
+  if (full.length >= 3) {
+    const esc = full.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    if (new RegExp(`\\b${esc}\\b`, "i").test(head)) return true;
+  }
+  const low = head.toLowerCase();
+  const words = full
     .toLowerCase()
     .replace(/[^a-z0-9\s]/g, " ")
     .split(/\s+/)
     .filter((word) => word.length > 3 && !["from", "with", "that", "other", "tales", "story", "stories"].includes(word));
-  if (words.length === 0) return title.toLowerCase().slice(0, 12).length > 3 && head.includes(title.toLowerCase().slice(0, 12));
-  const hits = words.filter((word) => head.includes(word));
+  if (words.length === 0) return false;
+  const hits = words.filter((word) => low.includes(word));
   return hits.length >= Math.min(2, words.length) || (words.length === 1 && hits.length === 1);
 }
 
@@ -157,8 +208,9 @@ function polish(work: Work): Work {
 
   while (scenes.length > 1) {
     const lines = sceneBreaths(scenes[0]!.id).map((breath) => breath.text);
-    const joined = lines.join(" ");
-    if (proseEnough(joined) && proseEnough(lines.find((line) => proseEnough(line)) ?? "")) break;
+    const first = lines.find((line) => proseEnough(line)) ?? "";
+    const head = lines.slice(0, 3).join(" ");
+    if (proseEnough(first) && !CHROME.test(first) && !CHROME.test(head)) break;
     const drop = scenes[0]!.id;
     scenes = scenes.slice(1);
     breaths = breaths.filter((breath) => breath.sceneId !== drop);
@@ -167,7 +219,14 @@ function polish(work: Work): Work {
   if (scenes[0]) {
     const id = scenes[0].id;
     let lines = sceneBreaths(id).map((breath) => breath.text);
-    while (lines.length > 1 && isJunkLine(lines[0] ?? "")) lines = lines.slice(1);
+    while (
+      lines.length > 1 &&
+      (isJunkLine(lines[0] ?? "") ||
+        CHROME.test(lines[0] ?? "") ||
+        ((lines[0] ?? "").trim().length < 40 && (lines[1] ?? "").trim().length > 80))
+    ) {
+      lines = lines.slice(1);
+    }
     breaths = [...lines.map((text, i) => ({ id: `${id}-${i}`, sceneId: id, text })), ...breaths.filter((breath) => breath.sceneId !== id)];
     const first = lines.find((line) => proseEnough(line)) ?? lines[0] ?? "";
     scenes[0] = { ...scenes[0], reentry: first };
@@ -215,7 +274,7 @@ function rejectReason(work: Work) {
   if (!proseEnough(first) && !proseEnough(work.breaths.find((breath) => proseEnough(breath.text))?.text ?? "")) {
     return `no prose open: ${first.slice(0, 80)}`;
   }
-  if (JUNK.test(first)) return `junk open: ${first.slice(0, 80)}`;
+  if (JUNK.test(first) || CHROME.test(first)) return `junk open: ${first.slice(0, 80)}`;
   const cues = findCueOnlyBreaths(work.breaths.map((breath) => breath.text));
   if (cues.length > 0) return `cue-only ×${cues.length}: ${cues[0]?.text}`;
   return "";
@@ -302,13 +361,32 @@ function patchShelf(bound: { work: ShelfWork; text: Work }[]) {
   writeFileSync(SHELF_PATH, src);
 }
 
+function hostRaw(work: ShelfWork, raw: string) {
+  const body = betweenMarks(raw);
+  const anchor = ANCHORS[work.id];
+  if (!anchor) return raw;
+  const at = body.indexOf(anchor);
+  if (at < 0) throw new Error(`anchor missing for ${work.id}`);
+  return `*** START OF THE PROJECT GUTENBERG EBOOK ***\n\n${body.slice(at)}\n`;
+}
+
+function coverage(raw: string, text: Work) {
+  const bodyLetters = betweenMarks(raw).replace(/[^A-Za-z]/g, "").length;
+  const boundLetters = text.breaths
+    .map((breath) => breath.text)
+    .join("")
+    .replace(/[^A-Za-z]/g, "").length;
+  if (bodyLetters < 2000) return 1;
+  return boundLetters / bodyLetters;
+}
+
 async function bindOne(work: ShelfWork) {
   const raw = await fetchPg(work.gutenberg!);
   if (!isEnglish(raw)) throw new Error("not english");
   if (!authorMatches(raw, work.author)) throw new Error("author does not match shelf");
   if (!citesTitle(raw, work.title)) throw new Error("title not in source");
   const built = buildFromRaw(
-    raw,
+    hostRaw(work, raw),
     {
       id: work.id,
       title: work.title,
@@ -325,6 +403,9 @@ async function bindOne(work: ShelfWork) {
   const text = polish(built);
   const why = rejectReason(text);
   if (why) throw new Error(why);
+  const ratio = coverage(raw, text);
+  const floor = work.form === "poem" ? 0.35 : 0.45;
+  if (ratio < floor) throw new Error(`truncated ${ratio.toFixed(2)}`);
   return text;
 }
 
