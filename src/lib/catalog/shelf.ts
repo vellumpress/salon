@@ -278,7 +278,7 @@ export const SHELF: ShelfWork[] = [
   { id: "zeno", title: "Zeno's Conscience", author: "Italo Svevo", year: 1923, form: "novel", language: "Italian", minutes: 160, local: true, opening: "My doctor has gone away on a holiday and I never asked him whether he meant me to give the story of my father’s life as well as my own. If I were to describe my", breaths: 2388, gutenberg: 79453 },
   { id: "savoy", title: "Hotel Savoy", author: "Joseph Roth", year: 1924, form: "novel", language: "German", minutes: 160 },
   { id: "iphigenia", title: "Iphigenia", author: "Teresa de la Parra", year: 1924, form: "novel", language: "Spanish", minutes: 160 },
-  { id: "naomi", title: "Naomi", author: "Jun'ichirō Tanizaki", year: 1924, form: "novel", language: "Japanese", minutes: 405, local: true, opening: "I mean to set down, as honestly and as frankly as I can, the plain facts of the married life I share with my wife.", breaths: 4928 },
+  { id: "naomi", title: "Naomi", author: "Jun'ichirō Tanizaki", year: 1924, form: "novel", language: "Japanese", minutes: 405, local: true, opening: "I mean to set down, as honestly and as frankly as I can, the plain facts of the married life I share with my wife—a relationship that, I suspect, has few parallels anywhere.", breaths: 4928 },
   { id: "odessa", title: "Odessa Stories", author: "Isaac Babel", year: 1924, form: "stories", language: "Russian", minutes: 61, local: true, opening: "The nuptials were finished.", breaths: 728 },
   { id: "skylark", title: "Skylark", author: "Dezső Kosztolányi", year: 1924, form: "novel", language: "Hungarian", minutes: 160 }, // Thea PULL EN 2026-09-16: first EN 1993 — catalog-only / HU
   { id: "vortex", title: "The Vortex", author: "José Eustasio Rivera", year: 1924, form: "novel", language: "Spanish", minutes: 160 },
@@ -297,7 +297,7 @@ export const SHELF: ShelfWork[] = [
     intro:
       "Cheeks burning — D-503 will straighten the wild curve into the wisest of lines, and call the record *We*.",
   },
-  { id: "bread-givers", title: "Bread Givers", author: "Anzia Yezierska", year: 1925, form: "novel", language: "English", minutes: 674, local: true, opening: "CHAPTER I HESTER STREET HAD just begun to peel the potatoes for dinner when my oldest sister Bessie came in, her eyes far away and very tired.", breaths: 5388 },
+  { id: "bread-givers", title: "Bread Givers", author: "Anzia Yezierska", year: 1925, form: "novel", language: "English", minutes: 674, local: true, opening: "I had just begun to peel the potatoes for dinner when my oldest sister Bessie came in, her eyes far away and very tired.", breaths: 5388 },
   { id: "manhattan", title: "Manhattan Transfer", author: "John Dos Passos", year: 1925, form: "novel", language: "English", minutes: 733, local: true, opening: "Three gulls wheel above the broken boxes, orangerinds, spoiled cabbage heads that heave between the splintered plank walls.", breaths: 11765, gutenberg: 71853 },
   { id: "dalloway", title: "Mrs Dalloway", author: "Virginia Woolf", year: 1925, form: "novel", language: "English", local: true, opening: "Mrs. Dalloway said she would buy the flowers herself.", breaths: 3342, minutes: 418, gutenberg: 71865 },
   { id: "rangbhoomi", title: "Rangbhoomi", author: "Premchand", year: 1925, form: "novel", language: "Hindi", minutes: 160 },
@@ -414,7 +414,7 @@ export const SHELF: ShelfWork[] = [
   { id: "barbara", title: "Doña Bárbara", author: "Rómulo Gallegos", year: 1929, form: "novel", language: "Spanish", minutes: 160 },
   { id: "grand-hotel", title: "Grand Hotel", author: "Vicki Baum", year: 1929, form: "novel", language: "German", minutes: 160 }, // Thea HOLD_EN_VERIFY 2026-09-16: Creighton US imprint uncleared — catalog-only / DE
   { id: "mama-blanca", title: "Memories of Mamá Blanca", author: "Teresa de la Parra", year: 1929, form: "novel", language: "Spanish", minutes: 160 }, // Thea PULL EN 2026-09-16: first EN 1959 — catalog-only / ES
-  { id: "passing", title: "Passing", author: "Nella Larsen", year: 1929, form: "novel", language: "English", minutes: 197, local: true, opening: "It was the last letter in Irene Redfield's little pile of morning mail.", breaths: 3034, intro: `Irene Redfield sorts her morning mail in Harlem and finds a thin envelope in purple ink—no return address, a hand she knows at once. Clare Kendry, the childhood friend who slipped into another world, is writing again. Nella Larsen’s 1929 New York novel opens on that letter, still unopened, and the careful life it threatens to unsettle.`},
+  { id: "passing", title: "Passing", author: "Nella Larsen", year: 1929, form: "novel", language: "English", minutes: 197, local: true, opening: "It was the last letter in Irene Redfield’s little pile of morning mail.", breaths: 3034, intro: `Irene Redfield sorts her morning mail in Harlem and finds a thin envelope in purple ink—no return address, a hand she knows at once. Clare Kendry, the childhood friend who slipped into another world, is writing again. Nella Larsen’s 1929 New York novel opens on that letter, still unopened, and the careful life it threatens to unsettle.`},
   { id: "pather", title: "Pather Panchali", author: "Bibhutibhushan Bandyopadhyay", year: 1929, form: "novel", language: "Bengali", minutes: 160 },
   { id: "nettles", title: "Some Prefer Nettles", author: "Jun'ichirō Tanizaki", year: 1929, form: "novel", language: "Japanese", minutes: 160 },
   { id: "blacker", title: "The Blacker the Berry", author: "Wallace Thurman", year: 1929, form: "novel", language: "English", local: true, opening: "PART I", breaths: 3492, minutes: 437, gutenberg: 78747 },
@@ -554,7 +554,7 @@ export const SHELF: ShelfWork[] = [
     minutes: 178,
     local: true,
     gutenberg: 10007,
-    opening: "Upon a paper attached to the Narrative which follows, Doctor Hesselius has written a rather elaborate note, which he accompanies with a reference to his Essay on the strange subject which the MS. illuminates.",
+    opening: "In Styria, we, though by no means magnificent people, inhabit a castle, or schloss.",
     breaths: 1422,
     intro:
       `A lonely schloss in Styria. A teenage narrator with too few neighbors. And a childhood night she still can’t forget—a pretty face at the bedside, then a pain like needles. Sheridan Le Fanu’s gothic novella (serialized 1871–72; collected 1872) opens on solitude and that first fright, before any carriage has rolled in.`,
@@ -1370,7 +1370,7 @@ export const SHELF: ShelfWork[] = [
     local: true,
     gutenberg: 41232,
     opening:
-      `"My heart chokes in me like in a prison! I'm dying for a little love and I got nobody--nobody!" wailed Shenah Pessah, as she looked out of the dismal basement window.`,
+      `"My heart chokes in me like in a prison!`,
     breaths: 4346,
     intro:
       `Basement light on a Lower East Side Sunday—and Shenah Pessah opens the window for the first spring sun. Anzia Yezierska’s 1920 story “Wings” starts with a hunger that isn’t only for bread: love, dignity, a little beauty, a life that feels like America and not just work.`,
@@ -1600,7 +1600,7 @@ export const SHELF: ShelfWork[] = [
     minutes: 397,
     local: true,
     opening:
-      "Everybody was drunk. The whole battery was drunk going along the road in the dark.",
+      "Everybody was drunk.",
     breaths: 3177,
     intro:
       `A drunk battery on a dark road—then a Michigan lake at dawn, and Nick Adams in a rowboat with his father. Ernest Hemingway’s 1925 American collection opens with a war vignette snapped against “Indian Camp”: spare sentences, long silences, the method already underway.`,
@@ -1672,7 +1672,7 @@ export const SHELF: ShelfWork[] = [
     intro:
       "A solitary horseman among uniform red sand-hills in central New Mexico, 1851 — until the country has no more changed than if he had stood still. Open on Book One New Mexico only — never the Sabine-hills Rome prologue.",
   },
-  { id: "the-bridge-of-san-luis-rey", title: "The Bridge of San Luis Rey", author: "Thornton Wilder", year: 1927, form: "novel", language: "English", minutes: 240, local: true, opening: "ON Friday noon, July the twentieth, 1714, the finest bridge in all Peru broke and precipitated five travellers into the gulf below.", breaths: 1919, gutenberg: 69768 },
+  { id: "the-bridge-of-san-luis-rey", title: "The Bridge of San Luis Rey", author: "Thornton Wilder", year: 1927, form: "novel", language: "English", minutes: 240, local: true, opening: "On Friday noon, July the twentieth, 1714, the finest bridge in all Peru broke and precipitated five travellers into the gulf below.", breaths: 1919, gutenberg: 69768 },
   { id: "god-s-trombones", title: "God's Trombones", author: "James Weldon Johnson", year: 1927, form: "poem", language: "English", minutes: 90 },
   { id: "gods-trombones", title: "God's Trombones", author: "James Weldon Johnson", year: 1927, form: "poem", language: "English", minutes: 68, local: true, opening: "O Lord, we come this morning Knee-bowed and body-bent Before thy throne of grace. O Lord—this morning— Bow our hearts be", breaths: 147, intro: "Knee-bowed and body-bent, the prayer opens Listen, Lord." },
   { id: "men-without-women", title: "Men Without Women", author: "Ernest Hemingway", year: 1927, form: "stories", language: "English", minutes: 552, local: true, opening: "MANUEL GARCIA climbed the stairs to Don Miguel Retana’s office.", breaths: 4419, gutenberg: 69683 },
