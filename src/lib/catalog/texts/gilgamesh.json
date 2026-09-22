@@ -1,0 +1,2150 @@
+{
+  "id": "gilgamesh",
+  "title": "The Epic of Gilgamesh (Old Babylonian Version)",
+  "author": "Anonymous",
+  "year": "1917",
+  "note": "Project Gutenberg 11000 — Old Babylonian scholarly English (Pennsylvania & Yale tablets)",
+  "minutes": 226,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Pennsylvania Tablet · Translation",
+      "place": "Pennsylvania Tablet · Translation",
+      "reentry": "Gish sought to interpret the dream; Spoke to his mother: \"My mother, during my night I became strong and moved about among the heroes; And from the starry heaven A meteor(?) of Anu fell upon me: I bore it and it grew heavy upon me, I became",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Yale Tablet · Translation",
+      "place": "Yale Tablet · Translation",
+      "reentry": "(About ten lines missing.)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Appendix · Column 1",
+      "place": "Appendix · Column 1",
+      "reentry": "5. Read *it-lu-tim* (\"heroes\") instead of *id-da-tim* (\"omens\").",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Appendix · Column 2",
+      "place": "Appendix · Column 2",
+      "reentry": "4. Read at the end of the line *di-da-sá(?) ip-tí-[e]* instead of *Di-?-al-lu-un* (!).",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Appendix · Column 3",
+      "place": "Appendix · Column 3",
+      "reentry": "14. Read *Kàs* (= *sikaram*, \"wine\") *si-ti*, \"drink,\" as in line 17, instead of *bi-is-ti*, which leads Langdon to render this perfectly simple line \"of the conditions and the fate of the land\"(!).",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Appendix · Column 4",
+      "place": "Appendix · Column 4",
+      "reentry": "4. The first sign is clearly *iz*, not *ta*, as Langdon has it in note 1 on page 216.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Appendix · Column 5",
+      "place": "Appendix · Column 5",
+      "reentry": "2. Read *[wa]-ar-ki-sú*.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Appendix · Column 6",
+      "place": "Appendix · Column 6",
+      "reentry": "3. Read *i-na si-ri-[sú]*.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Gish sought to interpret the dream; Spoke to his mother: \"My mother, during my night I became strong and moved about among the heroes; And from the starry heaven A meteor(?) of Anu fell upon me: I bore it and it grew heavy upon me, I became weak and its weight I could not endure. The land of Erech gathered about it. The heroes kissed its feet. [142] It was raised up before me. They stood me up. [143] I bore it and carried it to thee.\" The mother of Gish, who knows all things, Spoke to Gish: \"Some one, O Gish, who like thee In the field was born and Whom the mountain has reared, Thou wilt see (him) and [like a woman(?)] thou wilt rejoice. Heroes will kiss his feet. Thou wilt spare [him and wilt endeavor] To lead him to me.\" He slept and saw another Dream, which he reported to his mother: [\"My mother,] I have seen another [Dream.] My likeness I have seen in the streets [Of Erech] of the plazas. An axe was brandished, and They gathered about him; And the axe made him angry. I saw him and I rejoiced, I loved him as a woman, I embraced him. I took him and regarded him As my brother.\" The mother of Gish, who knows all things, [Spoke to Gish]: [\"O Gish, the man whom thou sawest,] [Whom thou didst embrace like a woman]."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "(means) that he is to be associated with thee.\" Gish understood the dream. [As] Enki[du] was sitting before the woman, [Her] loins(?) he embraced, her vagina(?) he opened. [Enkidu] forgot the place where he was born. Six days and seven nights Enkidu continued To cohabit with [the courtesan]. [The woman] opened her [mouth] and Spoke to Enkidu: \"I gaze upon thee, O Enkidu, like a god art thou! Why with the cattle Dost thou [roam] across the field? Come, let me lead thee into [Erech] of the plazas, to the holy house, the dwelling of Anu, O, Enkidu arise, let me conduct thee To Eanna, the dwelling of Anu, The place [where Gish is, perfect] in vitality. And thou [like a wife wilt embrace] him. Thou [wilt love him like] thyself. Come, arise from the ground (that is) cursed.\" He heard her word and accepted her speech. The counsel of the woman Entered his heart. She stripped off a garment, Clothed him with one. Another garment She kept on herself. She took hold of his hand. Like [a god(?)] she brought him To the fertile meadow, The place of the sheepfolds. In that place they received food; [For he, Enkidu, whose birthplace was the mountain,] [With the gazelles he was accustomed to eat herbs,] [With the cattle to drink water,] [With the water beings he was happy.]"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "(Perhaps one additional line missing.)"
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Milk of the cattle He was accustomed to suck. Food they placed before him, He broke (it) off and looked And gazed. Enkidu had not known To eat food. To drink wine He had not been taught. The woman opened her mouth and Spoke to Enkidu: \"Eat food, O Enkidu, The provender of life! Drink wine, the custom of the land!\" Enkidu ate food Till he was satiated. Wine he drank, Seven goblets. His spirit was loosened, he became hilarious. His heart became glad and His face shone. [The barber(?)] removed The hair on his body. He was anointed with oil. He became manlike. He put on a garment, He was like a man. He took his weapon; Lions he attacked, (so that) the night shepherds could rest. He plunged the dagger; Lions he overcame. The great [shepherds] lay down; Enkidu was their protector. The strong man, The unique hero, To [the shepherds(?)] he speaks:"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "(About five lines missing.)"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "(About eight lines missing.)"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Making merry. He lifted up his eyes, He sees the man. He spoke to the woman: \"O, courtesan, lure on the man. Why has he come to me? His name I will destroy.\" The woman called to the man Who approaches to him [144] and he beholds him. \"Away! why dost thou [quake(?)] Evil is the course of thy activity.\" [145] Then he [146] opened his mouth and Spoke to Enkidu: \"[To have (?)] a family home Is the destiny of men, and The prerogative(?) of the nobles. For the city(?) load the workbaskets! Food supply for the city lay to one side! For the King of Erech of the plazas, Open the hymen(?), perform the marriage act! For Gish, the King of Erech of the plazas, Open the hymen(?), Perform the marriage act! With the legitimate wife one should cohabit. So before, As well as in the future. [147] By the decree pronounced by a god, From the cutting of his umbilical cord (Such) is his fate.\" At the speech of the hero His face grew pale."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "(About three lines missing.)"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "(About six lines missing.)"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "[Enkidu] went [in front], And the courtesan behind him. He entered into Erech of the plazas. The people gathered about him. As he stood in the streets Of Erech of the plazas, The men gathered, Saying in regard to him: \"Like the form of Gish he has suddenly become; shorter in stature. [In his structure high(?)], powerful, .......... overseeing(?) In the land strong of power has he become. Milk of cattle He was accustomed to suck.\" Steadily(?) in Erech ..... The heroes rejoiced. He became a leader. To the hero of fine appearance, To Gish, like a god, He became a rival to him. [148] For Ishhara a couch Was stretched, and Gish [lay down, and afterwards(?)] In the night he fled. He approaches and [Enkidu stood] in the streets. He blocked the path of Gish. At the exhibit of his power,"
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "(About three lines missing.)"
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "(About four lines missing.)"
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Strong(?) ... Gish Against him [Enkidu proceeded], [His hair] luxuriant. He started [to go] Towards him. They met in the plaza of the district. Enkidu blocked the gate With his foot, Not permitting Gish to enter. They seized (each other), like oxen, They fought. The threshold they demolished; The wall they impaired. Gish and Enkidu Seized (each other). Like oxen they fought. The threshold they demolished; The wall they impaired. Gish bent His foot to the ground, [149] His wrath was appeased, His breast was quieted. When his breast was quieted, Enkidu to him Spoke, to Gish: \"As a unique one, thy mother bore thee. The wild cow of the stall, [150] Ninsun, Has exalted thy head above men. Kingship over men Enlil has decreed for thee. Second tablet, enlarged beyond [the original(?)]. 240 lines."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "COMMENTARY ON THE PENNSYLVANIA TABLET."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Line 1. The verb *tibû* with *pasâru* expresses the aim of Gish to secure an interpretation for his dream. This disposes of Langdon's note 1 on page 211 of his edition, in which he also erroneously speaks of our text as \"late.\" *Pasâru* is not a variant of *zakâru*. Both verbs occur just as here in the Assyrian version I, 5, 25."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Line 3. *ina sât musitia*, \"in this my night,\" i.e., in the course of this night of mine. A curious way of putting it, but the expression occurs also in the Assyrian version, e.g., I, 5, 26 (parallel passage to ours) and II, 4a, 14. In the Yale tablet we find, similarly, *mu-si-it-ka* (l. 262), \"thy night,\" i.e., \"at night to thee.\""
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Line 5. Before Langdon put down the strange statement of Gish \"wandering about in the midst of omens\" (misreading *id-da-tim * for *it-lu-tim*), he might have asked himself the question, what it could possibly mean. How can one walk among omens?"
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Line 6. *ka-ka-bu sá-ma-i* must be taken as a compound term for \"starry heaven.\" The parallel passage in the Assyrian version (Tablet I, 5, 27) has the ideograph for star, with the plural sign as a variant. Literally, therefore, \"The starry heaven (or \"the stars in heaven\") was there,\" etc. Langdon's note 2 on page 211 rests on an erroneous reading."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Line 7. *kisru sá Anim*, \"mass of Anu,\" appears to be the designation of a meteor, which might well be described as a \"mass\" coming from Anu, i.e., from the god of heaven who becomes the personification of the heavens in general. In the Assyrian version (I, 5, 28) we have *kima ki-is-rù*, i.e., \"something like a mass of heaven.\" Note also I, 3, 16, where in a description of Gilgamesh, his strength is said to be \"strong like a mass (i.e., a meteor) of heaven.\""
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Line 9. For *nussasu ûl iltê* we have a parallel in the Hebrew phrase NLE'ETIY NS' (Isaiah 1, 14)."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Line 10. *Uruk mâtum*, as the designation for the district of Erech, occurs in the Assyrian version, e.g., I, 5, 31, and IV, 2, 38; also to be supplied, I, 6, 23."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "For *pahir* the parallel in the Assyrian version has *iz-za-az* (I, 5, 31), but VI, 197, we find *pah-ru* and *pah-ra*."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "Line 17. *mi-in-di* does not mean \"truly\" as Langdon translates, but \"some one.\" It occurs also in the Assyrian version X, 1, 13, *mi-in-di-e ma-an-nu-u*, \"this is some one who,\" etc."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "Line 18. Cf. Assyrian version I, 5, 3, and IV, 4, 7, *ina siri âlid*--both passages referring to Enkidu."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "Line 21. Cf. Assyrian version II, 3b, 38, with *malkê*, \"kings,\" as a synonym of *itlutum*."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "Line 23. *ta-tar-ra-as-sú* from *tarâsu*, \"direct,\" \"guide,\" etc."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "Line 24. I take *us-ti-nim-ma* as III, 2, from *isênu* (YOSEN), the verb underlying *sittu*, \"sleep,\" and *suttu*, \"dream.\""
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Line 26. Cf. Assyrian version I, 6, 21--a complete parallel."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "Line 28. *Uruk ri-bi-tim*, the standing phrase in both tablets of the old Babylonian version, for which in the Assyrian version we have *Uruk su-pu-ri*. The former term suggests the \"broad space\" outside of the city or the \"common\" in a village community, while *supûri*, \"enclosed,\" would refer to the city within the walls. Dr. W. F. Albright (in a private communication) suggests \"Erech of the plazas\" as a suitable translation for *Uruk ribîtim*. A third term, *Uruk mâtum* (see above, note to line 10), though designating rather the district of which Erech was the capital, appears to be used as a synonym to *Uruk ribîtim*, as may be concluded from the phrase *i-na ri-bi-tum ma-ti* (l. 214 of the Pennsylvania tablet), which clearly means the \"plaza\" of the city. One naturally thinks of REHOBOT `IYR in Genesis 10, 11--the equivalent of Babylonian *ri-bi-tu âli*--which can hardly be the name of a city. It appears to be a gloss, as is HIY' HO`IYR HAGEDOLOH at the end of v. 12. The latter gloss is misplaced, since it clearly describes \"Nineveh,\" mentioned in v. 11. Inasmuch as REHOBOT `IYR immediately follows the mention of Nineveh, it seems simplest to take the phrase as designating the \"outside\" or \"suburbs\" of the city, a complete parallel, therefore, to *ri-bi-tu mâti* in our text. Nineveh, together with the \"suburbs,\" forms the \"great city.\" *Uruk ribîtim* is, therefore, a designation for \"greater Erech,\" proper to a capital city, which by its gradual growth would take in more than its original confines. \"Erech of the plazas\" must have come to be used as a honorific designation of this important center as early as 2000 B. C., whereas later, perhaps because of its decline, the epithet no longer seemed appropriate and was replaced by the more modest designation of \"walled Erech,\" with an allusion to the tradition which ascribed the building of the wall of the city to Gilgamesh. At all events, all three expressions, \"Erech of the plazas,\" \"Erech walled\" and \"Erech land,\" are to be regarded as synonymous. The position once held by Erech follows also from its ideographic designation (Brünnow No. 4796) by the sign \"house\" with a \"gunufied\" extension, which conveys the idea of Unu = *subtu*, or \"dwelling\" *par excellence*. The pronunciation Unug or Unuk (see the gloss *u-nu-uk*, VR 23, 8a), composed of *unu*, \"dwelling,\" and *ki*, \"place,\" is hardly to be regarded as older than Uruk, which is to be resolved into *uru*, \"city,\" and *ki*, \"place,\" but rather as a play upon the name, both Unu + ki and Uru + ki conveying the same idea of *the* city or *the* dwelling place *par excellence*. As the seat of the second oldest dynasty according to Babylonian traditions (see Poebel's list in *Historical and Grammatical Texts* No. 2), Erech no doubt was regarded as having been at one time \"the city,\" i.e., the capital of the entire Euphrates Valley."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "Line 31. A difficult line for which Langdon proposes the translation: \"Another axe seemed his visage\"!!--which may be picturesque, but hardly a description befitting a hero. How can a man's face seem to be an axe? Langdon attaches *sá-ni* in the sense of \"second\" to the preceding word \"axe,\" whereas *sanî bunusu*, \"change of his countenance\" or \"his countenance being changed,\" is to be taken as a phrase to convey the idea of \"being disturbed,\" \"displeased\" or \"angry.\" The phrase is of the same kind as the well-known *sunnu têmu*, \"changing of reason,\" to denote \"insanity.\" See the passages in Muss-Arnolt, *Assyrian Dictionary*, pp. 355 and 1068. In Hebrew, too, we have the same two phrases, e.g., VAYESANOV 'ETTA`EMOV (I Sam. 21, 14 = Ps. 34, 1), \"and he changed his reason,\" i.e., feigned insanity and MESANEH PONOYV (Job 14, 20), \"changing his face,\" to indicate a radical alteration in the frame of mind. There is a still closer parallel in Biblical Aramaic: Dan. 3, 19, \"The form of his visage was changed,\" meaning \"he was enraged.\" Fortunately, the same phrase occurs also in the Yale tablet (l. 192), *sá-nu-ú bu-nu-sú*, in a connection which leaves no doubt that the aroused fury of the tyrant Huwawa is described by it:"
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "\"Huwawa heard and his face was changed\""
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "precisely, therefore, as we should say--following Biblical usage--\"his countenance fell.\" Cf. also the phrase *pânusu arpu*, \"his countenance was darkened\" (Assyrian version I, 2, 48), to express \"anger.\" The line, therefore, in the Pennsylvania tablet must describe Enkidu's anger. With the brandishing of the axe the hero's anger was also stirred up. The touch was added to prepare us for the continuation in which Gish describes how, despite this (or perhaps just because of it), Enkidu seemed so attractive that Gish instantly fell in love with him. May perhaps the emphatic form *hasinumma* (line 31) against *hasinu* (line 29) have been used to indicate \"The axe it was,\" or \"because of the axe?\" It would be worth while to examine other texts of the Hammurabi period with a view of determining the scope in the use and meaning of the emphatic *ma* when added to a substantive."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "Line 32. The combination *amur ù ahtadu* occurs also in the El-Amarna Letters, No. 18, 12."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "Line 34. In view of the common Hebrew, Syriac and Arabic Hobab \"to love,\" it seems preferable to read here, as in the other passages in the Assyrian versions (I, 4, 15; 4, 35; 6, 27, etc.), *a-ha-ab-bu-ub*, *ah-bu-ub*, *ih-bu-bu*, etc. (instead of with *p*), and to render \"embrace.\""
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "Lines 38-40, completing the column, may be supplied from the Assyrian version I, 6, 30-32, in conjunction with lines 33-34 of our text. The beginning of line 32 in Jensen's version is therefore to be filled out *[ta-ra-am-sú ki]-i*."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "Line 43. The restoration at the beginning of this line"
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "*En-ki-[du wa]-si-ib ma-har ha-ri-im-tim*"
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "enables us to restore also the beginning of the second tablet of the Assyrian version (cf. the colophon of the fragment 81, 7-27, 93, in Jeremias, *Izdubar-Nimrod*, plate IV = Jensen, p. 134),"
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "*[d*En-ki-du wa-si-ib] ma-har-sá."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "Line 44. The restoration of this line is largely conjectural, based on the supposition that its contents correspond in a general way to I, 4, 16, of the Assyrian version. The reading *di-da* is quite certain, as is also *ip-ti-[e]*; and since both words occur in the line of the Assyrian version in question, it is tempting to supply at the beginning *ur-[sá]* = \"her loins\" (cf. Holma, *Namen der Körperteile*, etc., p. 101), which is likewise found in the same line of the Assyrian version. At all events the line describes the fascination exercised upon Enkidu by the woman's bodily charms, which make him forget everything else."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "Lines 46-47 form a parallel to I, 4, 21, of the Assyrian version. The form *samkatu*, \"courtesan,\" is constant in the old Babylonian version (ll. 135 and 172), as against *samhatu* in the Assyrian version (I, 3, 19, 40, 45; 4, 16), which also uses the plural *sam-ha-a-ti* (II, 3b, 40). The interchange between *h* and *k* is not without precedent (cf. Meissner, *Altbabylonisches Privatrecht*, page 107, note 2, and more particularly Chiera, *List of Personal Names*, page 37)."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "In view of the evidence, set forth in the Introduction, for the assumption that the Enkidu story has been combined with a tale of the evolution of primitive man to civilized life, it is reasonable to suggest that in the original Enkidu story the female companion was called *samkatu*, \"courtesan,\" whereas in the tale of the primitive man, which was transferred to Enkidu, the associate was *harimtu*, a \"woman,\" just as in the Genesis tale, the companion of Adam is simply called *ishshâ*, \"woman.\" Note that in the Assyrian parallel (Tablet I, 4, 26) we have two readings, *ir-hi* (imperf.) and a variant *i-ri-hi* (present). The former is the better reading, as our tablet shows."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "Lines 49-59 run parallel to the Assyrian version I, 4, 33-38, with slight variations which have been discussed above, p. 58, and from which we may conclude that the Assyrian version represents an independent redaction. Since in our tablet we have presumably the repetition of what may have been in part at least set forth in the first tablet of the old Babylonian version, we must not press the parallelism with the first tablet of the Assyrian version too far; but it is noticeable nevertheless (1) that our tablet contains lines 57-58 which are not represented in the Assyrian version, and (2) that the second speech of the \"woman\" beginning, line 62, with *al-ka*, \"come\" (just as the first speech, line 54), is likewise not found in the first tablet of the Assyrian version; which on the other hand contains a line (39) not in the Babylonian version, besides the detailed answer of Enkidu (I 4, 42-5, 5). Line 6, which reads \"Enkidu and the woman went (*il-li-ku*) to walled Erech,\" is also not found in the second tablet of the old Babylonian version."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "Line 63. For *magrû*, \"accursed,\" see the frequent use in Astrological texts (Jastrow, *Religion Babyloniens und Assyriens* II, page 450, note 2). Langdon, by his strange error in separating *ma-a-ag-ri-im* into two words *ma-a-ak* and *ri-i-im*, with a still stranger rendering: \"unto the place yonder of the shepherds!!\", naturally misses the point of this important speech."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "Line 64 corresponds to I, 4, 40, of the Assyrian version, which has an additional line, leading to the answer of Enkidu. From here on, our tablet furnishes material not represented in the Assyrian version, but which was no doubt included in the second tablet of that version of which we have only a few fragments."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "Line 70 must be interpreted as indicating that the woman kept one garment for herself. *Ittalbas* would accordingly mean, \"she kept on.\" The female dress appears to have consisted of an upper and a lower garment."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "Line 72. The restoration \"like a god\" is favored by line 51, where Enkidu is likened to a god, and is further confirmed by l. 190."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "Line 73. *gupru* is identical with *gu-up-ri* (Thompson, *Reports of the Magicians and Astrologers*, etc., 223 rev. 2 and 223a rev. 8), and must be correlated to *gipâru* (Muss-Arnolt, *Assyrian Dictionary*, p. 229a), \"planted field,\" \"meadow,\" and the like. Thompson's translation \"men\" (as though a synonym of *gabru*) is to be corrected accordingly."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "Line 74. There is nothing missing between *a-sar* and *tar-ba-si-im*."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "Line 75. *ri-ia-ú*, which Langdon renders \"shepherd,\" is the equivalent of the Arabic *ri'y* and Hebrew RE`IY \"pasturage,\" \"fodder.\" We have usually the feminine form *ri-i-tu* (Muss-Arnolt, *Assyrian Dictionary*, p. 990b). The break at the end of the second column is not serious. Evidently Enkidu, still accustomed to live like an animal, is first led to the sheepfolds, and this suggests a repetition of the description of his former life. Of the four or five lines missing, we may conjecturally restore four, on the basis of the Assyrian version, Tablet I, 4, 2-5, or I, 2, 39-41. This would then join on well to the beginning of column 3."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "Line 81. Both here and in l. 52 our text has *na-ma-ás-te-e*, as against *nam-mas-si-i* in the Assyrian version, e.g., Tablet I, 2, 41; 4, 5, etc.,--the feminine form, therefore, as against the masculine. Langdon's note 3 on page 213 is misleading. In astrological texts we also find *nam-mas-te*; e.g., Thompson, *Reports of the Magicians and Astrologers*, etc., No. 200, Obv. 2."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "Line 93. *zi-ma-at* (for *simat*) *ba-la-ti-im* is not \"conformity of life\" as Langdon renders, but that which \"belongs to life\" like *si-mat pag-ri-sá*, \"belonging to her body,\" in the Assyrian version III, 2a, 3 (Jensen, page 146). \"Food,\" says the woman, \"is the staff of life.\""
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "Line 94. Langdon's strange rendering \"of the conditions and fate of the land\" rests upon an erroneous reading (see the corrections, Appendix I), which is the more inexcusable because in line 97 the same ideogram, Kàs = *sikaru*, \"wine,\" occurs, and is correctly rendered by him. *Simti mâti* is not the \"fate of the land,\" but the \"fixed custom of the land.\""
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "Line 98. *as-sa-mi-im* (plural of *assamu*), which Langdon takes as an adverb in the sense of \"times,\" is a well-known word for a large \"goblet,\" which occurs in Incantation texts, e.g., *CT* XVI, 24, obv. 1, 19, *mê a-sa-am-mi-e sú-puk*, \"pour out goblets of water.\" Line 18 of the passage shoves that *asammu* is a Sumerian loan word."
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "Line 99. *it-tap-sar*, I, 2, from *pasâru*, \"loosen.\" In combination with *kabtatum* (from *kabitatum*, yielding two forms: *kabtatum*, by elision of *i*, and *kabittu*, by elision of *a*), \"liver,\" *pasâru* has the force of becoming cheerful. Cf. *ka-bit-ta-ki lip-pa-sir* (*ZA* V., p. 67, line 14)."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "Line 100, note the customary combination of \"liver\" (*kabtatum*) and \"heart\" (*libbu*) for \"disposition\" and \"mind,\" just as in the standing phrase in penitential prayers: \"May thy liver be appeased, thy heart be quieted.\""
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "Line 102. The restoration [lùSÚ]-I = *gallabu* \"barber\" (Delitzsch, *Sumer. Glossar*, p. 267) was suggested to me by Dr. H. F. Lutz. The ideographic writing \"raising the hand\" is interesting as recalling the gesture of shaving or cutting. Cf. a reference to a barber in Lutz, *Early Babylonian Letters from Larsa*, No. 109, 6."
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "Line 103. Langdon has correctly rendered *suhuru* as \"hair,\" and has seen that we have here a loan-word from the Sumerian Suhur = *kimmatu*, \"hair,\" according to the Syllabary Sb 357 (cf. Delitzsch, *Sumer. Glossar.*, p. 253). For *kimmatu*, \"hair,\" more specifically hair of the head and face, see Holma, *Namen der Körperteile*, page 3. The same sign Suhur or Suh (Brünnow No. 8615), with Lal, i.e., \"hanging hair,\" designates the \"beard\" (*ziknu*, cf. Brünnow, No. 8620, and Holma, l. c., p. 36), and it is interesting to note that we have *suhuru* (introduced as a loan-word) for the barbershop, according to II R, 21, 27c (= *CT* XII, 41)."
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "Ê suhur(ra) (i.e., house of the hair) = *sú-hu-ru*."
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "In view of all this, we may regard as assured Holma's conjecture to read *sú-[hur-ma-sú]* in the list 93074 obv. (*MVAG* 1904, p. 203; and Holma, *Beiträge z. Assyr. Lexikon*, p. 36), as the Akkadian equivalent to Suhur-Mas-Ha and the name of a fish, so called because it appeared to have a double \"beard\" (cf. Holma, *Namen der Körperteile*). One is tempted, furthermore, to see in the difficult word SKYRH (Isaiah 7, 20) a loan-word from our *suhuru*, and to take the words 'ETHORO'S VESA`AR HORAGELAYIM \"the head and hair of the feet\" (euphemistic for the hair around the privates), as an explanatory gloss to the rare word Skyrh for \"hair\" of the body in general--just as in the passage in the Pennsylvania tablet. The verse in Isaiah would then read, \"The Lord on that day will shave with the razor the hair (HSKYRH), and even the beard will be removed.\" The rest of the verse would represent a series of explanatory glosses: (a) \"Beyond the river\" (i.e., Assyria), a gloss to YEGALAH (b) \"with the king of Assyria,\" a gloss to BETA`AR \"with a razor;\" and (c) \"the hair of the head and hair of the feet,\" a gloss to HSKYRH. For \"hair of the feet\" we have an interesting equivalent in Babylonian *su-hur* (and *sú-hu-ur*) *sêpi* (*CT* XII, 41, 23-24 c-d). Cf. also Boissier, *Documents Assyriens relatifs aux Présages*, p. 258, 4-5. The Babylonian phrase is like the Hebrew one to be interpreted as a euphemism for the hair around the male or female organ. To be sure, the change from H to K in HSKYRH constitutes an objection, but not a serious one in the case of a loan-word, which would aim to give the *pronunciation* of the original word, rather than the correct etymological equivalent. The writing with aspirated K fulfills this condition. (Cf. *samkatum* and *samhatum*, above p. 73). The passage in Isaiah being a reference to Assyria, the prophet might be tempted to use a foreign word to make his point more emphatic. To take HSKYRH as \"hired,\" as has hitherto been done, and to translate \"with a hired razor,\" is not only to suppose a very wooden metaphor, but is grammatically difficult, since HSKYRH would be a feminine adjective attached to a masculine substantive."
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "Coming back to our passage in the Pennsylvania tablet, it is to be noted that Enkidu is described as covered \"all over his body with hair\" (Assyrian version, Tablet I, 2, 36) like an animal. To convert him into a civilized man, the hair is removed."
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "Line 107. *mutu* does not mean \"husband\" here, as Langdon supposes, but must be taken as in l. 238 in the more general sense of \"man,\" for which there is good evidence."
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "Line 109. *la-bi* (plural form) are \"lions\"--not \"panthers\" as Langdon has it. The verb *ú-gi-ir-ri* is from *gâru*, \"to attack.\" Langdon by separating *ú* from *gi-ir-ri* gets a totally wrong and indeed absurd meaning. See the corrections in the Appendix. He takes the sign *ú* for the copula (!!) which of course is impossible."
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "Line 110. Read *us-sa-ak-pu*, III, 1, of *sakâpu*, which is frequently used for \"lying down\" and is in fact a synonym of *salâlu*. See Muss-Arnolt, *Assyrian Dictionary*, page 758a. The original has very clearly Síb (= *rê'u*, \"shepherd\") with the plural sign. The \"shepherds of the night,\" who could now rest since Enkidu had killed the lions, are of course the shepherds who were accustomed to watch the flocks during the night."
+    },
+    {
+      "id": "s0-70",
+      "sceneId": "s0",
+      "text": "Line 111. *ut-tap-pi-is* is II, 2, *napâsu*, \"to make a hole,\" hence \"to plunge\" in connection with a weapon. *Sib-ba-ri* is, of course, not \"mountain goats,\" as Langdon renders, but a by-form to *sibbiru*, \"stick,\" and designates some special weapon. Since on seal cylinders depicting Enkidu killing lions and other animals the hero is armed with a dagger, this is presumably the weapon *sibbaru*."
+    },
+    {
+      "id": "s0-71",
+      "sceneId": "s0",
+      "text": "Line 113. Langdon's translation is again out of the question and purely fanciful. The traces favor the restoration *na-ki-[di-e]*, \"shepherds,\" and since the line appears to be a parallel to line 110, I venture to suggest at the beginning *[it-ti]-lu* from *na'âlu*, \"lie down\"--a synonym, therefore, to *sakâpu* in line 110. The shepherds can sleep quietly after Enkidu has become the \"guardian\" of the flocks. In the Assyrian version (tablet II, 3a, 4) Enkidu is called a *na-kid*, \"shepherd,\" and in the preceding line we likewise have lùNa-Kid with the plural sign, i.e., \"shepherds.\" This would point to *nakidu* being a Sumerian loan-word, unless it is *vice versa*, a word that has gone over into the Sumerian from Akkadian. Is perhaps the fragment in question (K 8574) in the Assyrian version (Haupt's ed. No. 25) the *parallel* to our passage? If in line 4 of this fragment we could read *sú* for *sa*, i.e., *na-kid-sú-nu*, \"their shepherd, we would have a parallel to line 114 of the Pennsylvania tablet, with *na-kid* as a synonym to *massaru*, \"protector.\" The preceding line would then be completed as follows:"
+    },
+    {
+      "id": "s0-72",
+      "sceneId": "s0",
+      "text": "*[it-ti-lu]-nim-ma na-kidmes* [ra-bu-tum]"
+    },
+    {
+      "id": "s0-73",
+      "sceneId": "s0",
+      "text": "(or perhaps only *it-ti-lu-ma*, since the *nim* is not certain) and would correspond to line 113 of the Pennsylvania tablet. Inasmuch as the writing on the tiny fragment is very much blurred, it is quite possible that in line 2 we must read *sib-ba-ri* (instead of *bar-ba-ri*), which would furnish a parallel to line 111 of the Pennsylvania tablet. The difference between Bar and Sib is slight, and the one sign might easily be mistaken for the other in the case of close writing. The continuation of line 2 of the fragment would then correspond to line 112 of the Pennsylvania tablet, while line 1 of the fragment might be completed *[re-e]-u-ti(?) sá [mu-si-a-tim]*, though this is by no means certain."
+    },
+    {
+      "id": "s0-74",
+      "sceneId": "s0",
+      "text": "The break at the close of column 3 (about 5 lines) and the top of column 4 (about 8 lines) is a most serious interruption in the narrative, and makes it difficult to pick up the thread where the tablet again becomes readable. We cannot be certain whether the \"strong man, the unique hero\" who addresses some one (lines 115-117) is Enkidu or Gish or some other personage, but presumably Gish is meant. In the Assyrian version, Tablet I, 3, 2 and 29, we find Gilgamesh described as the \"unique hero\" and in l. 234 of the Pennsylvania tablet Gish is called \"unique,\" while again, in the Assyrian version, Tablet I, 2, 15 and 26, he is designated as *gasru* as in our text. Assuming this, whom does he address? Perhaps the shepherds? In either case he receives an answer that rejoices him. If the fragment of the Assyrian version (K 8574) above discussed is the equivalent to the close of column 3 of the Pennsylvania tablet, we may go one step further, and with some measure of assurance assume that Gish is told of Enkidu's exploits and that the latter is approaching Erech. This pleases Gish, but Enkidu when he sees Gish(?) is stirred to anger and wants to annihilate him. At this point, the \"man\" (who is probably Gish, though the possibility of a third personage must be admitted) intervenes and in a long speech sets forth the destiny and higher aims of mankind. The contrast between Enkidu and Gish (or the third party) is that between the primitive savage and the civilized being. The contrast is put in the form of an opposition between the two. The primitive man is the stronger and wishes to destroy the one whom he regards as a natural foe and rival. On the other hand, the one who stands on a higher plane wants to lift his fellow up. The whole of column 4, therefore, forms part of the lesson attached to the story of Enkidu, who, identified with man in a primitive stage, is made the medium of illustrating how the higher plane is reached through the guiding influences of the woman's hold on man, an influence exercised, to be sure, with the help of her bodily charms."
+    },
+    {
+      "id": "s0-75",
+      "sceneId": "s0",
+      "text": "Line 135. *uk-ki-si* (imperative form) does not mean \"take away,\" as Langdon (who entirely misses the point of the whole passage) renders, but on the contrary, \"lure him on,\" \"entrap him,\" and the like. The verb occurs also in the Yale tablet, ll. 183 and 186."
+    },
+    {
+      "id": "s0-76",
+      "sceneId": "s0",
+      "text": "Line 137. Langdon's note to *lu-us-sú* had better be passed over in silence. The form is II. 1, from *esû*, \"destroy.\""
+    },
+    {
+      "id": "s0-77",
+      "sceneId": "s0",
+      "text": "Line 139. Since the man whom the woman calls approaches Enkidu, the subject of both verbs is the man, and the object is Enkidu; i.e., therefore, \"The man approaches Enkidu and beholds him.\""
+    },
+    {
+      "id": "s0-78",
+      "sceneId": "s0",
+      "text": "Line 140. Langdon's interpretation of this line again is purely fanciful. *E-di-il* cannot, of course, be a \"phonetic variant\" of *edir*; and certainly the line does not describe the state of mind of the woman. Lines 140-141 are to be taken as an expression of amazement at Enkidu's appearance. The first word appears to be an imperative in the sense of \"Be off,\" \"Away,\" from *dâlu*, \"move, roam.\" The second word *e-es*, \"why,\" occurs with the same verb *dâlu* in the Meissner fragment: *e-es ta-da-al* (column 3, 1), \"why dost thou roam about?\" The verb at the end of the line may perhaps be completed to *ta-hi-il-la-am*. The last sign appears to be *am*, but may be *ma*, in which case we should have to complete simply *ta-hi-il-ma*. *Tahîl* would be the second person present of *hîlu*. Cf. *i-hi-il*, frequently in astrological texts, e.g., Virolleaud, *Adad* No. 3, lines 21 and 33."
+    },
+    {
+      "id": "s0-79",
+      "sceneId": "s0",
+      "text": "Line 141. The reading *lim-nu* at the beginning, instead of Langdon's *mi-nu*, is quite certain, as is also *ma-na-ah-ti-ka* instead of what Langdon proposes, which gives no sense whatever. *Manahtu* in the sense of the \"toil\" and \"activity of life\" (like `OMOL throughout the Book of Ecclesiastes) occurs in the introductory lines to the Assyrian version of the Epic I, 1, 8, *ka-lu ma-na-ah-ti-[su]*, \"all of his toil,\" i.e., all of his career."
+    },
+    {
+      "id": "s0-80",
+      "sceneId": "s0",
+      "text": "Line 142. The subject of the verb cannot be the woman, as Langdon supposes, for the text in that case, e.g., line 49, would have said *pi-sá* (\"her mouth\") not *pi-sú* (\"his mouth\"). The long speech, detailing the function and destiny of civilized man, is placed in the mouth of the man who meets Enkidu."
+    },
+    {
+      "id": "s0-81",
+      "sceneId": "s0",
+      "text": "In the Introduction it has been pointed out that lines 149 and 151 of the speech appear to be due to later modifications of the speech designed to connect the episode with Gish. Assuming this to be the case, the speech sets forth the following five distinct aims of human life: (1) establishing a home (line 144), (2) work (line 147), (3) storing up resources (line 148), (4) marriage (line 150), (5) monogamy (line 154); all of which is put down as established for all time by divine decree (lines 155-157), and as man's fate from his birth (lines 158-159)."
+    },
+    {
+      "id": "s0-82",
+      "sceneId": "s0",
+      "text": "Line 144. *bi-ti-is e-mu-ti* is for *bîti sá e-mu-ti*, just as *kab-lu-us Ti-a-ma-ti* (Assyrian Creation Myth, IV, 65) stands for *kablu sá Tiamti*. Cf. *bît e-mu-ti* (Assyrian version, IV, 2, 46 and 48). The end of the line is lost beyond recovery, but the general sense is clear."
+    },
+    {
+      "id": "s0-83",
+      "sceneId": "s0",
+      "text": "Line 146. *tu-a-ar* is a possible reading. It may be the construct of *tu-a-ru*, of frequent occurrence in legal texts and having some such meaning as \"right,\" \"claim\" or \"prerogative.\" See the passages given by Muss-Arnolt, *Assyrian Dictionary*, p. 1139b."
+    },
+    {
+      "id": "s0-84",
+      "sceneId": "s0",
+      "text": "Line 148. The reading *uk-la-at*, \"food,\" and then in the wider sense \"food supply,\" \"provisions,\" is quite certain. The fourth sign looks like the one for \"city.\" *E-mi-sa* may stand for *e-mid-sa*, \"place it.\" The general sense of the line, at all events, is clear, as giving the advice to gather resources. It fits in with the Babylonian outlook on life to regard work and wealth as the fruits of work and as a proper purpose in life."
+    },
+    {
+      "id": "s0-85",
+      "sceneId": "s0",
+      "text": "Line 150 (repeated lines 152-153) is a puzzling line. To render *piti pûk epsi* (or *episi*), as Langdon proposes, \"open, addressing thy speech,\" is philologically and in every other respect inadmissible. The word *pu-uk* (which Langdon takes for \"thy mouth\"!!) can, of course, be nothing but the construct form of *pukku*, which occurs in the Assyrian version in the sense of \"net\" (*pu-uk-ku* I, 2, 9 and 21, and also in the colophon to the eleventh tablet furnishing the beginning of the twelfth tablet (Haupt's edition No. 56), as well as in column 2, 29, and column 3, 6, of this twelfth tablet). In the two last named passages *pukku* is a synonym of *mekû*, which from the general meaning of \"enclosure\" comes to be a euphemistic expression for the female organ. So, for example, in the Assyrian Creation Myth, Tablet IV, 66 (synonym of *kablu*, \"waist,\" etc.). See Holma, *Namen der Körperteile*, page 158. Our word *pukku* must be taken in this same sense as a designation of the female organ--perhaps more specifically the \"hymen\" as the \"net,\" though the womb in general might also be designated as a \"net\" or \"enclosure.\" *Kak-(si)* is no doubt to be read *epsi*, as Langdon correctly saw; or perhaps better, *episi*. An expression like *ip-si-sú lul-la-a* (Assyrian version, I, 4, 13; also line 19, *i-pu-us-su-ma lul-la-a*), with the explanation *sipir zinnisti*, \"the work of woman\" (i.e., after the fashion of woman), shows that *epêsu* is used in connection with the sexual act. The phrase *pitî pûk episi a-na ha-a-a-ri*, literally \"open the net, perform the act for marriage,\" therefore designates the fulfillment of the marriage act, and the line is intended to point to marriage with the accompanying sexual intercourse as one of the duties of man. While the general meaning is thus clear, the introduction of Gish is puzzling, except on the supposition that lines 149 and 151 represent later additions to connect the speech, detailing the advance to civilized life, with the hero. See above, p. 45 *seq.*"
+    },
+    {
+      "id": "s0-86",
+      "sceneId": "s0",
+      "text": "Line 154. *assat simâtim* is the \"legitimate wife,\" and the line inculcates monogamy as against promiscuous sexual intercourse. We know that monogamy was the rule in Babylonia, though a man could in addition to the wife recognized as the legalized spouse take a concubine, or his wife could give her husband a slave as a concubine. Even in that case, according to the Hammurabi Code, §§145-146, the wife retained her status. The Code throughout assumes that a man has only *one* wife--the *assat simâtim* of our text. The phrase \"so\" (or \"that\") before \"as afterwards\" is to be taken as an idiomatic expression--\"so it was and so it should be for all times\"--somewhat like the phrase *mahriam ù arkiam*, \"for all times,\" in legal documents (*CT* VIII, 38c, 22-23). For the use of *mûk* see Behrens, *Assyrisch-Babylonische Briefe*, p. 3."
+    },
+    {
+      "id": "s0-87",
+      "sceneId": "s0",
+      "text": "Line 158. *i-na bi-ti-ik a-bu-un-na-ti-sú*. Another puzzling line, for which Langdon proposes \"in the work of his presence,\" which is as obscure as the original. In a note he says that *apunnâti* means \"nostrils,\" which is certainly wrong. There has been considerable discussion about this term (see Holma, *Namen der Körperteile*, pages 150 and 157), the meaning of which has been advanced by Christian's discussion in *OLZ* 1914, p. 397. From this it appears that it must designate a part of the body which could acquire a wider significance so as to be used as a synonym for \"totality,\" since it appears in a list of equivalent for Dur = *nap-ha-ru*, \"totality,\" *ka-lu-ma*, \"all,\" *a-bu-un-na-tum e-si-im-tum*, \"bony structure,\" and *kul-la-tum*, \"totality\" (*CT* XII, 10, 7-10). Christian shows that it may be the \"navel,\" which could well acquire a wider significance for the body in general; but we may go a step further and specify the \"umbilical cord\" (tentatively suggested also by Christian) as the primary meaning, then the \"navel,\" and from this the \"body\" in general. The structure of the umbilical cord as a series of strands would account for designating it by a plural form *abunnâti*, as also for the fact that one could speak of a right and left side of the *appunnâti*. To distinguish between the \"umbilical cord\" and the \"navel,\" the ideograph Dur (the common meaning of which is *riksu*, \"bond\" [Delitzsch, *Sumer. Glossar.*, p. 150]), was used for the former, while for the latter Li Dur was employed, though the reading in Akkadian in both cases was the same. The expression \"with (or at) the cutting of his umbilical cord\" would mean, therefore, \"from his birth\"--since the cutting of the cord which united the child with the mother marks the beginning of the separate life. Lines 158-159, therefore, in concluding the address to Enkidu, emphasize in a picturesque way that what has been set forth is man's fate for which he has been destined from birth. [See now Albright's remarks on *abunnatu* in the Revue d'Assyriologie 16, pp. 173-175, with whose conclusion, however, that it means primarily \"backbone\" and then \"stature,\" I cannot agree.]"
+    },
+    {
+      "id": "s0-88",
+      "sceneId": "s0",
+      "text": "In the break of about three lines at the bottom of column 4, and of about six at the beginning of column 5, there must have been set forth the effect of the address on Enkidu and the indication of his readiness to accept the advice; as in a former passage (line 64), Enkidu showed himself willing to follow the woman. At all events the two now proceed to the heart of the city. Enkidu is in front and the woman behind him. The scene up to this point must have taken place outside of Erech--in the suburbs or approaches to the city, where the meadows and the sheepfolds were situated."
+    },
+    {
+      "id": "s0-89",
+      "sceneId": "s0",
+      "text": "Line 174. *um-ma-nu-um* are not the \"artisans,\" as Langdon supposes, but the \"people\" of Erech, just as in the Assyrian version, Tablet IV, 1, 40, where the word occurs in connection with *i-dip-pi-ir*, which is perhaps to be taken as a synonym of *pahâru*, \"gather;\" so also *i-dip-pir* (Tablet I, 2, 40) \"gathers with the flock.\""
+    },
+    {
+      "id": "s0-90",
+      "sceneId": "s0",
+      "text": "Lines 180-182 must have contained the description of Enkidu's resemblance to Gish, but the lines are too mutilated to permit of any certain restoration. See the corrections (Appendix) for a suggested reading for the end of line 181."
+    },
+    {
+      "id": "s0-91",
+      "sceneId": "s0",
+      "text": "Line 183 can be restored with considerable probability on the basis of the Assyrian version, Tablet I, 3, 3 and 30, where Enkidu is described as one \"whose power is strong in the land.\""
+    },
+    {
+      "id": "s0-92",
+      "sceneId": "s0",
+      "text": "Lines 186-187. The puzzling word, to be read apparently *kak-ki-a-tum*, can hardly mean \"weapons,\" as Langdon proposes. In that case we should expect *kakkê*; and, moreover, to so render gives no sense, especially since the verb *ú-te-el-li-lu* is without much question to be rendered \"rejoiced,\" and not \"purified.\" *Kakkiatum*--if this be the correct reading--may be a designation of Erech like *ribîtim*."
+    },
+    {
+      "id": "s0-93",
+      "sceneId": "s0",
+      "text": "Lines 188-189 are again entirely misunderstood by Langdon, owing to erroneous readings. See the corrections in the Appendix."
+    },
+    {
+      "id": "s0-94",
+      "sceneId": "s0",
+      "text": "Line 190. *i-li-im* in this line is used like Hebrew Elohîm, \"God.\""
+    },
+    {
+      "id": "s0-95",
+      "sceneId": "s0",
+      "text": "Line 191. *sakissum* = *sakin-sum*, as correctly explained by Langdon."
+    },
+    {
+      "id": "s0-96",
+      "sceneId": "s0",
+      "text": "Line 192. With this line a new episode begins which, owing to the gap at the beginning of column 6, is somewhat obscure. The episode leads to the hostile encounter between Gish and Enkidu. It is referred to in column 2 of the fourth tablet of the Assyrian version. Lines 35-50--all that is preserved of this column--form in part a parallel to columns 5-6 of the Pennsylvania tablet, but in much briefer form, since what on the Pennsylvania tablet is the incident itself is on the fourth tablet of the Assyrian version merely a repeated summary of the relationship between the two heroes, leading up to the expedition against Hu(m)baba. Lines 38-40 of column 2 of the Assyrian version correspond to lines 174-177 of the Pennsylvania tablet, and lines 44-50 to lines 192-221. It would seem that Gish proceeds stealthily at night to go to the goddess Ishhara, who lies on a couch in the *bît êmuti* , the \"family house\" Assyrian version, Tablet IV, 2. 46-48). He encounters Enkidu in the street, and the latter blocks Gish's path, puts his foot in the gate leading to the house where the goddess is, and thus prevents Gish from entering. Thereupon the two have a fierce encounter in which Gish is worsted. The meaning of the episode itself is not clear. Does Enkidu propose to deprive Gish, here viewed as a god (cf. line 190 of the Pennsylvania tablet = Assyrian version, Tablet I, 4, 45, \"like a god\"), of his spouse, the goddess Ishhara--another form of Ishtar? Or are the two heroes, the one a counterpart of the other, contesting for the possession of a goddess? Is it in this scene that Enkidu becomes the \"rival\" (*me-ih-rù*, line 191 of the Pennsylvania tablet) of the divine Gish? We must content ourself with having obtained through the Pennsylvania tablet a clearer indication of the occasion of the fight between the two heroes, and leave the further explanation of the episode till a fortunate chance may throw additional light upon it. There is perhaps a reference to the episode in the Assyrian version, Tablet II, 3b, 35-36."
+    },
+    {
+      "id": "s0-97",
+      "sceneId": "s0",
+      "text": "Line 196. For *i-na-ag-sá-am* (from *nagâsu*), Langdon proposes the purely fanciful \"embracing her in sleep,\" whereas it clearly means \"he approaches.\" Cf. Muss-Arnolt, *Assyrian Dictionary*, page 645a."
+    },
+    {
+      "id": "s0-98",
+      "sceneId": "s0",
+      "text": "Lines 197-200 appear to correspond to Tablet IV, 2, 35-37, of the Assyrian version, though not forming a complete parallel. We may therefore supply at the beginning of line 35 of the Assyrian version *[ittaziz] Enkidu*, corresponding to line 197 of the Pennsylvania tablet. Line 36 of IV, 2, certainly appears to correspond to line 200 (*dan-nu-ti* = *da-na-ni-is-sú*)."
+    },
+    {
+      "id": "s0-99",
+      "sceneId": "s0",
+      "text": "Line 208. The first sign looks more like *sar*, though *ur* is possible."
+    },
+    {
+      "id": "s0-100",
+      "sceneId": "s0",
+      "text": "Line 211 is clearly a description of Enkidu, as is shown by a comparison with the Assyrian version I, 2, 37: *[pi]-ti-ik pi-ir-ti-sú uh-tan-na-ba kima d*Nidaba, \"The form of his hair sprouted like wheat.\" We must therefore supply Enkidu in the preceding line. Tablet IV, 4, 6, of the Assyrian version also contains a reference to the flowing hair of Enkidu."
+    },
+    {
+      "id": "s0-101",
+      "sceneId": "s0",
+      "text": "Line 212. For the completion of the line cf. Harper, *Assyrian and Babylonian Letters*, No. 214."
+    },
+    {
+      "id": "s0-102",
+      "sceneId": "s0",
+      "text": "Line 214. For *ribîtu mâti* see the note above to line 28 of column 1."
+    },
+    {
+      "id": "s0-103",
+      "sceneId": "s0",
+      "text": "Lines 215-217 correspond almost entirely to the Assyrian version IV, 2, 46-48. The variations *ki-ib-su* in place of *sêpu*, and *kima lîm*, \"like oxen,\" instead of *ina bâb êmuti* (repeated from line 46), *ana surûbi* for *êribam*, are slight though interesting. The Assyrian version shows that the \"gate\" in line 215 is \"the gate of the family house\" in which the goddess Ishhara lies."
+    },
+    {
+      "id": "s0-104",
+      "sceneId": "s0",
+      "text": "Lines 218-228. The detailed description of the fight between the two heroes is only partially preserved in the Assyrian version."
+    },
+    {
+      "id": "s0-105",
+      "sceneId": "s0",
+      "text": "Line 218. *li-i-im* is evidently to be taken as plural here as in line 224, just as *su-ki-im* (lines 27 and 175), *ri-bi-tim* (lines 4, 28, etc.), *tarbasim* (line 74), *assamim* (line 98) are plural forms. Our text furnishes, as does also the Yale tablet, an interesting illustration of the vacillation in the Hammurabi period in the twofold use of *im*: (a) as an indication of the plural (as in Hebrew), and (b) as a mere emphatic ending (lines 63, 73, and 232), which becomes predominant in the post-Hammurabi age."
+    },
+    {
+      "id": "s0-106",
+      "sceneId": "s0",
+      "text": "Line 227. Gilgamesh is often represented on seal cylinders as kneeling, e.g., Ward Seal Cylinders Nos. 159, 160, 165. Cf. also Assyrian version V, 3, 6, where Gilgamesh is described as kneeling, though here in prayer. See further the commentary to the Yale tablet, line 215."
+    },
+    {
+      "id": "s0-107",
+      "sceneId": "s0",
+      "text": "Line 229. We must of course read *uz-za-sú*, \"his anger,\" and not *us-sa-sú*, \"his javelin,\" as Langdon does, which gives no sense."
+    },
+    {
+      "id": "s0-108",
+      "sceneId": "s0",
+      "text": "Line 231. Langdon's note is erroneous. He again misses the point. The stem of the verb here as in line 230 (*i-ni-ih*) is the common *nâhu*, used so constantly in connection with *pasâhu*, to designate the cessation of anger."
+    },
+    {
+      "id": "s0-109",
+      "sceneId": "s0",
+      "text": "Line 234. *istên* applied to Gish designates him of course as \"unique,\" not as \"an ordinary man,\" as Langdon supposes."
+    },
+    {
+      "id": "s0-110",
+      "sceneId": "s0",
+      "text": "Line 236. On this title \"wild cow of the stall\" for Ninsun, see Poebel in *OLZ* 1914, page 6, to whom we owe the correct view regarding the name of Gilgamesh's mother."
+    },
+    {
+      "id": "s0-111",
+      "sceneId": "s0",
+      "text": "Line 238. *mu-ti* here cannot mean \"husband,\" but \"man\" in general. See above note to line 107. Langdon's strange misreading *ri-es-su* for *ri-es-ka* (\"thy head\") leads him again to miss the point, namely that Enkidu comforts his rival by telling him that he is destined for a career above that of the ordinary man. He is to be more than a mere prize fighter; he is to be a king, and no doubt in the ancient sense, as the representative of the deity. This is indicated by the statement that the kingship is decreed for him by Enlil. Similarly, Hu(m)baba or Huwawa is designated by Enlil to inspire terror among men (Assyrian version, Tablet IV, 5, 2 and 5), *i-sim-sú d*Enlil = Yale tablet, l. 137, where this is to be supplied. This position accorded to Enlil is an important index for the origin of the Epic, which is thus shown to date from a period when the patron deity of Nippur was acknowledged as the general head of the pantheon. This justifies us in going back several centuries at least before Hammurabi for the beginning of the Gilgamesh story. If it had originated in the Hammurabi period, we should have had Marduk introduced instead of Enlil."
+    },
+    {
+      "id": "s0-112",
+      "sceneId": "s0",
+      "text": "Line 242. As has been pointed out in the corrections to the text (Appendix), *sú-tu-ur* can only be III, 1, from *atâru*, \"to be in excess of.\" It is a pity that the balance of the line is broken off, since this is the first instance of a colophon beginning with the term in question. In some way *sutûr* must indicate that the copy of the text has been \"enlarged.\" It is tempting to fill out the line *sú-tu-ur e-li [duppi labiri]*, and to render \"enlarged from an original,\" as an indication of an independent recension of the Epic in the Hammurabi period. All this, however, is purely conjectural, and we must patiently hope for more tablets of the Old Babylonian version to turn up. The chances are that some portions of the same edition as the Yale and Pennsylvania tablets are in the hands of dealers at present or have been sold to European museums. The war has seriously interfered with the possibility of tracing the whereabouts of groups of tablets that ought never to have been separated."
+    },
+    {
+      "id": "s0-113",
+      "sceneId": "s0",
+      "text": "YALE TABLET."
+    },
+    {
+      "id": "s0-115",
+      "sceneId": "s0",
+      "text": "(About ten lines missing.)"
+    },
+    {
+      "id": "s0-117",
+      "sceneId": "s0",
+      "text": ".................. [ib]-ri(?) [mi-im-ma(?) sá(?)]-kú-tu wa(?)-ak-rum [am-mi-nim] ta-ah-si-ih [an-ni]-a-am [e-pi]-sá-am ...... mi-im[-ma sá-kú-tu(?)]ma- di-is [am-mi]-nim [tah]-si-ih [ur(?)]-ta-du-ú [a-na ki-i]s-tim si-ip-ra-am it-[ta-sú]-ú i-na [nisê] it-ta-ás-sú-ú-ma i-pu-sú ru-hu-tam .................. us-ta-di-nu ............................. bu ..............................."
+    },
+    {
+      "id": "s0-118",
+      "sceneId": "s0",
+      "text": "(About 17 lines missing.)"
+    },
+    {
+      "id": "s0-119",
+      "sceneId": "s0",
+      "text": ".............. nam-........ .................... u ib-[ri] ..... .............. ú-na-i-du ...... [zi-ik]-ra-am ú-[tí-ir]-ru [a-na] ha-ri-[im]-tim [i]-pu(?)-sú a-na sa-[ka]-pu-ti"
+    },
+    {
+      "id": "s0-121",
+      "sceneId": "s0",
+      "text": "(About eleven lines missing.)"
+    },
+    {
+      "id": "s0-122",
+      "sceneId": "s0",
+      "text": "... sú(?)-mu(?) ............... ma-hi-ra-am [sá i-si-sú] sú-uk-ni-sum-[ma] ............... la-al-la-ru-[tu] .................. um-mi d-[Gis mu-di-a-at ka-la-ma] i-na ma-[har dSamas i-di-sá is-si] sá ú i-na- an(?)-[na am-mi-nim] ta-[as-kun(?) a-na ma-ri-ia li-ib-bi la] sa-[li-la te-mid-su] ............................."
+    },
+    {
+      "id": "s0-123",
+      "sceneId": "s0",
+      "text": "(About four lines missing.)"
+    },
+    {
+      "id": "s0-124",
+      "sceneId": "s0",
+      "text": "i-na [sá dEn-ki-du im-la-a] di-[im-tam] il-[pu-ut li]-ib-ba-sú-[ma] [zar-bis(?)] us-ta-ni-[ih] [i-na sá dEn]-ki-du im-la-a di-im-tam [il-pu-ut] li-ib-ba-sú-ma [zar-bis(?)] us-ta-ni-[ih] [dGis ú-ta]-ab-bil pa-ni-sú [iz-za-kar-am] a-na dEn-ki-du [ib-ri am-mi-nim] i-na-ka [im-la-a di-im]-tam [il-pu-ut li-ib-bi]-ka [zar-bis tu-us-ta]-ni-ih [dEn-ki-du pi-sú i-pu-sá]-am-ma iz-za-[kàr-am] a-na dGis ta-ab-bi-a-tum ib-ri us-ta-li-pa da- [151]da-ni-ia a-ha-a-a ir-ma-a-ma e-mu-ki i-ni-is dGis pi-sú i-pu-sá-am-ma iz-za-kàr-am a-na dEn-ki-du"
+    },
+    {
+      "id": "s0-125",
+      "sceneId": "s0",
+      "text": "(About four lines missing.)"
+    },
+    {
+      "id": "s0-127",
+      "sceneId": "s0",
+      "text": "..... [a-di dHu]-wa-wa da-pi-nu .................. ra-[am(?)-ma] ................ [ú-hal]- li-ik [lu-ur-ra-du a-na ki-is-ti sá] iserini ............ lam(?) hal-bu ............ [li]-li-is-su .............. lu(?)-up-ti-sú dEn-ki-du pi-sú i-pu-sá-am-ma iz-za-kàr-am a-na dGis i-di-ma ib-ri i-na sadî(-i) i-nu-ma at-ta-la-ku it-ti bu-lim a-na istên(-en) kas-gíd-ta-a-an nu-ma-at ki-is-tum [e-di-is(?)] ur-ra-du a-na libbi-sá d[Hu-wa]-wa ri-ig-ma-sú a-bu-bu pi-[sú] dBil-gi-ma na-pi-is-sú mu-tum am-mi-nim ta-ah-si-ih an-ni-a-am e-pi-sá-am ga-[ba]-al-la ma-ha-ar [sú]-pa-at dHu-wa-wa (d)Gis pi-sú i-pu-sá-am-ma [iz-za-k]àr-am a-na dEn-ki-du ....... su(?)-lu-li a-sá-ki [152]-sá ............. [i-na ki-is]-tim ............................... ik(?) ......................... a-na .......................... mu-sá-ab [dHu-wa-wa] ....... ha-as-si-nu ................. at-ta lu(?) ................. a-na-ku lu-[ur-ra-du a-na ki-is-tim] dEn-ki-du pi-sú i-pu-[sá-am-ma] iz-za-kàr-am a-na [dGis] ki-i ni[il]-la-ak [is-te-nis(?)] a-na ki-is-ti [sá iserini] na-si-ir-sá dGis muk-[tab-lu] da-a-an la sa[-li-lu(?)] dHu-wa-wa dpi-ir-[hu sa (?)] dAdad is .......... sú-ú .................."
+    },
+    {
+      "id": "s0-129",
+      "sceneId": "s0",
+      "text": "ás-súm sú-ul-lu-m[u ki-is-ti sáiserini] pu-ul-hi-a-tim 7 [sú(?) i-sim-sú dEnlil] dGis pi-sú i-pu [sá-am-ma] iz-za-kàr-am a-na [dEn-ki-du] ma-an-nu ib-ri e-lu-ú sá-[ru-ba(?)] i-tib-ma it-ti dSamas da-ri-is ú-[me-sú] a-we-lu-tum ba-ba-nu ú-tam-mu-sá-[ma] mi-im-ma sá i-te-ni-pu-sú sá-ru-ba at-ta an-na-nu-um-ma ta-dar mu-tam ul is-sú da-na-nu kar-ra-du-ti-ka lu-ul-li-ik-ma i-na pa-ni-ka pi-ka li-is-si-a-am ti-hi-e ta-du-ur sum-ma am-ta-ku-ut sú-mi lu-us-zi-iz dGis mi [153]-it-ti dHu-wa-wa da-pi-nim il(?)-ku-ut is-tu i-wa-al-dam-ma tar-bi-a i-na sam-mu(?) Il(?) is-hi-it-ka-ma la-bu ka-la-ma ti-di it- ku(?) ..... [il(?)]-pu-tu-(?) ma ..... .............. ka-ma .............. si pi-ti ............ ki-ma re'i(?) na-gi-la sa-rak-ti .... [ta-sá-s]i-a-am tu-lim-mi-in li-ib-bi [ga-ti lu]-us-ku-un-ma [lu-u-ri]-ba-am iserini [sú-ma sá]-ta-ru-ú a-na-ku lu-us-ta-ak-na [pu-tu-ku(?)] ib-ri a-na ki-is-ka-tim lu-mu-ha [be-le-e li-is-]-pu-ku i-na mah-ri-ni [pu-tu]-ku a-na ki-is-ka-ti-i i-mu-hu wa-ás-bu us-ta-da-nu um-mi-a-nu pa-si is-pu-ku ra-bu-tim ha-as-si-ni 3 biltu-ta-a-an is-tap-ku pa-at-ri is-pu-ku ra-bu-tim me-se-li-tum 2 biltu-ta-a-an si-ip-ru 30 ma-na-ta-a-an sá a-hi-si-na isid(?) pa-at-ri 30 ma-na-ta-a-an hurasi [d]Gis ù [dEn-ki-]du 10 biltu-ta-a-an sá-ak-nu] .... ul-la . .[Uruk]ki 7 i-di-il-sú ...... is-me-ma um-ma-nu ib-bi-ra [us-te-(?)]-mi-a i-na sûki sá Urukki ri-bi-tim ...... [u-se(?)]-sa-sú dGis [ina sûki sá(?) Urukki] ri-bi-tim [dEn-ki-du(?) ú]-sá-ab i-na mah-ri-sú ..... [ki-a-am(?) i-ga]-ab-bi [........ Urukki ri]-bi-tim [ma-ha-ar-sú]"
+    },
+    {
+      "id": "s0-131",
+      "sceneId": "s0",
+      "text": "dGis sá i-ga-ab-bu-ú lu-mu-ur sá sú-um-sú it-ta-nam-ma-la ma-ta-tum lu-uk-sú-su-ma i-na ki-is-ti iserini ki-ma da-an-nu pi-ir-hu-um sá Urukki lu-si-es-mi ma-tam ga-ti lu-us-ku-un-ma lu-uk-[sú] [154]-su-ma iserini sú-ma sá-ta-ru-ú a-na-ku lu-us-tak-nam si-bu-tum sá Urukki ri-bi-tim zi-ik-ra ú-ti-ir-ru a-na dGis si-ih-ri-ti-ma dGis libbi-ka na-si-ka mi-im-ma sá te-te-ni-pu-sú la ti-di ni-si-im-me-ma dHu-wa-wa sá-nu-ú bu-nu-sú ma-an-nu-um [us-tam]-ha-ru ka-ak-ki-sú a-na istên(-en) [kas-gíd-ta-a]-an nu-ma-at kisti ma-an-nu sá [ur-ra]-du a-na libbi-sá dHu-wa-wa ri-ig-ma-sú a-bu-bu pi-sú dBil-gi-ma na-pi-su mu-tum am-mi-nim tah-si-ih an-ni-a-am e-pi-sá ga-ba-al-la ma-ha-ar sú-pa-at dHu-wa-wa is-me-e-ma dGis zi-ki-ir ma-li-[ki]-sú ip-pa-al-sa-am-ma i-si-ih a-na ib-[ri-sú] i-na-an-na ib-[ri] ki-a-am [a-ga-ab-bi] a-pa-al-ah-sú-ma a-[al-la-ak a-na kisti] [lu]ul-[lik it-ti-ka a-na ki-is-ti iserini(?)]"
+    },
+    {
+      "id": "s0-132",
+      "sceneId": "s0",
+      "text": "(About five lines missing.)"
+    },
+    {
+      "id": "s0-133",
+      "sceneId": "s0",
+      "text": "........................ -ma li ............... -ka ilu-ka li(?) ..............-ka harrana li-sá-[tir-ka a-na sú-ul-mi] a-na kar sá [Urukki ri-bi-tim] ka-mi-is-ma dGis [ma-ha-ar dSamas(?)] a-wa-at i-ga-ab- [bu-sú-ma] a-al-la-ak dSamas katâ-[ka a-sa-bat] ul-la-nu lu-us-li-ma na-pi-[is-ti] te-ir-ra-an-ni a-na kar i-[na Urukki] si-il-[la]m sú-ku-un [a-na ia-a-si(?)] is-si-ma dGis ib-[ri.....] te-ir-ta-sú .......... is(?) .............. tam ................ ........................ i-nu(?)-[ma] .................."
+    },
+    {
+      "id": "s0-134",
+      "sceneId": "s0",
+      "text": "(About two lines missing.)"
+    },
+    {
+      "id": "s0-136",
+      "sceneId": "s0",
+      "text": "[a-na-ku] dGis [i-ik]-ka-di ma-tum ........... harrana sá la al-[kam] ma-ti-ma .... a-ka-lu ..... la(?) i-di [ul-la-nu] lu-us-li-[mu] a-na-ku [lu-ud-lul]-ka i-na [h]u-ud li-ib-bi ...... [sú]-ku-ut-[ti] la-li-ka [lu-se-sib(?)] - ka i-na kussêmes ....................... ú-nu-su [bêlêmes(?)ú-ti-ir]-ru ra-bu-tum [ka-as-tum] ù is-pa-tum [i-na] ga-ti is-ku-nu [il-]te-ki pa-si ....... -ri is-pa-as-su ..... [a-na] ili sá-ni-tam [it-ti pa(?)] - tar-[sú] i-na si-ip-pi-sú ........ i-ip-pu-sú a-la-kam [sa]-nis ú-ga-ra-bu dGis [a-di ma]-ti tu-ut-te-ir a-na libbi Urukki [si-bu]-tum i-ka-ra-bu-sú [a-na] harrani i-ma-li-ku dGis [la t]a-at-kal dGis a-na e-[mu]-ki-ka [a-]ka-lu sú-wa-ra-ma ú-sur ra-ma-an-ka [li]-il-lik dEn-ki-du i-na pa-ni-ka [ur-ha]-am a-we-ir a-lik harrana(-na) [a-di] sá kisti ni-ri-bi-tim [sá(?)] [d]Hu-wa-wa ka-li-sú-nu si-ip-pi-ih(?)-sú [sa(?)a-lik] mah-ra tap-pa-a ú-sá-lim [harrana](-na)-sú sú-wa-ra-[ma ú-sur ra-ma-na-ka] [li-sak-sid]-ka ir-[ni-ta]-ka dSamas [ta]-ak-bi-a-at pi-ka li-kal-li-ma i-na-ka li-ip-ti-ku pa-da-nam pi-hi-tam harrana li-is-ta-zi-ik a-na ki-ib-si-ka sá-di-a li-is-ta-zi-ik a-na sêpi-ka mu-si-it-ka aw-a-at ta-ha-du-ú li-ib-la-ma dLugal-ban-da li-iz-zi-iz-ka i-na ir-ni-ti-ka ki-ma si-ih-ri ir-ni-ta-ka-ma lus-mida(-da) i-na na-ri sá dHu-wa-wa sá tu-sa-ma-ru mi-zi si-pi-ka i-na bat-ba-ti-ka hi-ri bu-ur-tam lu-ka-a-a-nu mê ellu i-na na-di-ka [ka-]su-tim me-e a-na dSamas ta-na-di [li-is]ta-ha-sa-as dLugal-ban-da [dEn-ki-]du pi-su i-pu-sá-am-ma, iz-za-kàr a-na dGis [is(?)]-tu(?) ta-ás-dan-nu e-pu-us a-la-kam [la pa]la-ah libbi-ka ia-ti tu-uk-la-ni [sú-ku-]un i-di-a-am sú-pa-as-su [harrana(?)]sá dHu-wa-wa it-ta-la-ku .......... ki-bi-ma te-[ir]-sú-nu-ti"
+    },
+    {
+      "id": "s0-137",
+      "sceneId": "s0",
+      "text": "(Three lines missing.)"
+    },
+    {
+      "id": "s0-138",
+      "sceneId": "s0",
+      "text": "L.E."
+    },
+    {
+      "id": "s0-139",
+      "sceneId": "s0",
+      "text": ".............. nam-ma-la ............... il-li-ku it-ti-ia ............... ba-ku-nu-si-im ......... [ul]-la(?)-nu i-na hu-ud li-ib-bi [i-na se-me-e] an-ni-a ga-ba-sú e-dis harrana(?) us-te-[zi-ik] a-lik dGis lu-[ul-lik a-na pa-ni-ka] li-lik il-ka .......... li-sá-ak-lim-[ka harrana] ...... dGis ù[dEn-ki-du] ....... mu-di-es .......... bi-ri-[su-nu] ........"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "(About ten lines missing.)"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": ".................. (my friend?) [Something] that is exceedingly difficult, [Why] dost thou desire [to do this?] .... something (?) that is very [difficult (?)], [Why dost thou] desire [to go down to the forest]? A message [they carried] among [men] They carried about. They made a .... .............. they brought .............................. .............................."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "(About 17 lines missing.)"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "............................. ................... my friend ................ they raised ..... answer [they returned.] [To] the woman They proceeded to the overthrowing"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "(About eleven lines missing.)"
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": ".......... name(?) ............. [The one who is] a rival [to him] subdue and ................ Wailing ................ The mother [of Gish, who knows everything] Before [Shamash raised her hand] Who Now(?) [why] hast thou stirred up the heart for my son, [Restlessness imposed upon him (?)] ............................"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "(About four lines missing.)"
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "The eyes [of Enkidu filled with tears]. [He clutched] his heart; [Sadly(?)] he sighed. [The eyes of En]kidu filled with tears. [He clutched] his heart; [Sadly(?)] he sighed. The face [of Gish was grieved]. [He spoke] to Enkidu: [\"My friend, why are] thy eyes [Filled with tears]? Thy [heart clutched] Dost thou sigh [sadly(?)]?\" [Enkidu opened his mouth] and spoke to Gish: \"Attacks, my friend, have exhausted my strength(?). My arms are lame, my strength has become weak.\" Gish opened his mouth and spoke to Enkidu:"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "(About four lines missing.)"
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "..... [until] Huwawa, [the terrible], ........................ ............ [I destroyed]. [I will go down to the] cedar forest, ................... the jungle ............... tambourine (?) ................ I will open it. Enkidu opened his mouth and spoke to Gish: \"Know, my friend, in the mountain, when I moved about with the cattle to a distance of one double hour into the heart of the forest, [Alone?] I penetrated within it, [To] Huwawa, whose roar is a flood, whose mouth is fire, whose breath is death. Why dost thou desire To do this? To advance towards the dwelling(?) of Huwawa?\" Gish opened his mouth and [spoke to Enkidu: \"... [the covering(?)] I will destroy. ....[in the forest] .................... .................... To ................. The dwelling [of Huwawa] The axe .......... Thou .......... I will [go down to the forest].\" Enkidu opened his mouth and spoke to [Gish:] \"When [together(?)] we go down To the [cedar] forest, whose guardian, O warrior Gish, a power(?) without [rest(?)], Huwawa, an offspring(?) of .... Adad ...................... He ........................"
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "To keep safe [the cedar forest], [Enlil has decreed for it] seven-fold terror.\" Gish [opened] his mouth and spoke to [Enkidu]: \"Whoever, my friend, overcomes (?) [terror(?)], it is well (for him) with Shamash for the length of [his days]. Mankind will speak of it at the gates. Wherever terror is to be faced, Thou, forsooth, art in fear of death. Thy prowess lacks strength. I will go before thee. Though thy mouth calls to me; \"thou art afraid to approach.\" If I fall, I will establish my name. Gish, the corpse(?) of Huwawa, the terrible one, has snatched (?) from the time that My offspring was born in ...... The lion restrained (?) thee, all of which thou knowest. ........................ .............. thee and ................ open (?) ........ like a shepherd(?) ..... [When thou callest to me], thou afflictest my heart. I am determined [to enter] the cedar forest. I will, indeed, establish my name. [The work(?)], my friend, to the artisans I will entrust. [Weapons(?)] let them mould before us.\" [The work(?)] to the artisans they entrusted. A dwelling(?) they assigned to the workmen. Hatchets the masters moulded: Axes of 3 talents each they moulded. Lances the masters moulded; Blades(?) of 2 talents each, A spear of 30 mina each attached to them. The hilt of the lances of 30 mina in gold Gish and [Enki]du were equipped with 10 talents each .......... in Erech seven its .... ....... the people heard and .... [proclaimed(?)] in the street of Erech of the plazas. ..... Gis [brought him out(?)] [In the street (?)] of Erech of the plazas [Enkidu(?)] sat before him ..... [thus] he spoke: \"........ [of Erech] of the plazas ............ [before him]"
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "Gish of whom they speak, let me see! whose name fills the lands. I will lure him to the cedar forest, Like a strong offspring of Erech. I will let the land hear (that) I am determined to lure (him) in the cedar (forest) [155]. A name I will establish.\" The elders of Erech of the plazas brought word to Gish: \"Thou art young, O Gish, and thy heart carries thee away. Thou dost not know what thou proposest to do. We hear that Huwawa is enraged. Who has ever opposed his weapon? To one [double hour] in the heart of the forest, Who has ever penetrated into it? Huwawa, whose roar is a deluge, whose mouth is fire, whose breath is death. Why dost thou desire to do this? To advance towards the dwelling (?) of Huwawa?\" Gish heard the report of his counsellors. He saw and cried out to [his] friend: \"Now, my friend, thus [I speak]. I fear him, but [I will go to the cedar forest(?)]; I will go [with thee to the cedar forest]."
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "(About five lines missing.)"
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": ".............................. May ................... thee Thy god may (?) ........ thee; On the road may he guide [thee in safety(?)]. At the rampart of [Erech of the plazas], Gish kneeled down [before Shamash(?)], A word then he spoke [to him]: \"I will go, O Shamash, [thy] hands [I seize hold of]. When I shall have saved [my life], Bring me back to the rampart [in Erech]. Grant protection [to me ?]!\" Gish cried, \"[my friend] ...... His oracle .................. ........................ ........................ ........................ When (?)"
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "(About two lines missing.)"
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "\"[I(?)] Gish, the strong one (?) of the land. ...... A road which I have never [trodden]; ........ food ...... do not (?) know. [When] I shall have succeeded, [I will praise] thee in the joy of my heart, [I will extol (?)] the superiority of thy power, [I will seat thee] on thrones.\" .................. his vessel(?) The masters [brought the weapons (?)]; [bow] and quiver They placed in hand. [He took] the hatchet. ................. his quiver. ..... [to] the god(?) a second time [With his lance(?)] in his girdle, ......... they took the road. [Again] they approached Gish! \"[How long] till thou returnest to Erech?\" [Again the elders] approached him. [For] the road they counselled Gis: \"Do [not] rely, O Gish, on thy strength! Provide food and save thyself! Let Enkidu go before thee. He is acquainted with the way, he has trodden the road [to] the entrance of the forest. of Huwawa all of them his ...... [He who goes] in advance will save the companion. Provide for his [road] and [save thyself]! (May) Shamash [carry out] thy endeavor! May he make thy eyes see the prophecy of thy mouth. May he track out (for thee) the closed path! May he level the road for thy treading! May he level the mountain for thy foot! During thy night [156] the word that wilt rejoice may Lugal-banda convey, and stand by thee in thy endeavor! Like a youth may he establish thy endeavor! In the river of Huwawa as thou plannest, wash thy feet! Round about thee dig a well! May there be pure water constantly for thy libation Goblets of water pour out to Shamash! [May] Lugal-banda take note of it!\" [Enkidu] opened his mouth and spoke to Gish: \"[Since thou art resolved] to take the road. Thy heart [be not afraid,] trust to me! [Confide] to my hand his dwelling(?)!\" [on the road to] Huwawa they proceeded. ....... command their return"
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "(Three lines missing.)"
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "L.E."
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "............... were filled. .......... they will go with me. ............................... .................. joyfully. [Upon hearing] this word of his, Alone, the road(?) [he levelled]. \"Go, O Gish [I will go before thee(?)]. May thy god(?) go ......... May he show [thee the road !] ..... Gish and [Enkidu] Knowingly .................... Between [them] ................"
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "Lines 13-14 (also line 16). See for the restoration, lines 112-13."
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "Line 62. For the restoration, see Jensen, p. 146 (Tablet III, 2a,9.)"
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "Lines 64-66. Restored on the basis of the Assyrian version, *ib*. line 10."
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "Line 72. Cf. Assyrian version, Tablet IV, 4, 10, and restore at the end of this line *di-im-tam* as in our text, instead of Jensen's conjecture."
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "Lines 74, 77 and 83. The restoration *zar-bis*, suggested by the Assyrian version, Tablet IV, 4, 4."
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "Lines 76 and 82. Cf. Assyrian version, Tablet VIII, 3, 18."
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "Line 78. *(ú-ta-ab-bil* from *abâlu*, \"grieve\" or \"darkened.\" Cf. *us-ta-kal* (Assyrian version, *ib*. line 9), where, perhaps, we are to restore *it-ta-[bil pa-ni-sú]*."
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "Line 87. *us-ta-li-pa* from *elêpu*, \"exhaust.\" See Muss-Arnolt, *Assyrian Dictionary*, p. 49a."
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "Line 89. Cf. Assyrian version, *ib*. line 11, and restore the end of the line there to *i-ni-is*, as in our text."
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "Line 96. For *dapinu* as an epithet of Huwawa, see Assyrian version, Tablet III, 2a, 17, and 3a, 12. *Dapinu* occurs also as a description of an ox (Rm 618, Bezold, *Catalogue of the Kouyunjik Tablets*, etc., p. 1627)."
+    },
+    {
+      "id": "s1-35",
+      "sceneId": "s1",
+      "text": "Line 98. The restoration on the basis of *ib.* III, 2a, 18."
+    },
+    {
+      "id": "s1-36",
+      "sceneId": "s1",
+      "text": "Lines 96-98 may possibly form a parallel to *ib*. lines 17-18, which would then read about as follows: \"Until I overcome Huwawa, the terrible, and all the evil in the land I shall have destroyed.\" At the same time, it is possible that we are to restore *[lu-ul]-li-ik* at the end of line 98."
+    },
+    {
+      "id": "s1-37",
+      "sceneId": "s1",
+      "text": "Line 101. *lilissu* occurs in the Assyrian version, Tablet IV, 6, 36."
+    },
+    {
+      "id": "s1-38",
+      "sceneId": "s1",
+      "text": "Line 100. For *halbu*, \"jungle,\" see Assyrian version, Tablet V, 3, 39 (p. 160)."
+    },
+    {
+      "id": "s1-39",
+      "sceneId": "s1",
+      "text": "Lines 109-111. These lines enable us properly to restore Assyrian version, Tablet IV, 5, 3 = Haupt's edition, p. 83 (col. 5, 3). No doubt the text read as ours *mu-tum* (or *mu-u-tum*) *na-pis-su*."
+    },
+    {
+      "id": "s1-40",
+      "sceneId": "s1",
+      "text": "Line 115. *supatu*, which occurs again in line 199 and also line 275.*sú-pa-as-su* (= *supat-su*) must have some such meaning as \"dwelling,\" demanded by the context. [Dhorme refers me to *OLZ* 1916, p. 145]."
+    },
+    {
+      "id": "s1-41",
+      "sceneId": "s1",
+      "text": "Line 129. Restored on the basis of the Assyrian version, Tablet IV, 6, 38."
+    },
+    {
+      "id": "s1-42",
+      "sceneId": "s1",
+      "text": "Line 131. The restoration *muktablu*, tentatively suggested on the basis of CT XVIII, 30, 7b, where *muktablu*, \"warrior,\" appears as one of the designations of Gilgamesh, followed by *a-lik pa-na*, \"the one who goes in advance,\" or \"leader\"--the phrase so constantly used in the Huwawa episode."
+    },
+    {
+      "id": "s1-43",
+      "sceneId": "s1",
+      "text": "Line 132. Cf. Assyrian version, Tablet I, 5, 18-19."
+    },
+    {
+      "id": "s1-44",
+      "sceneId": "s1",
+      "text": "Lines 136-137. These two lines restored on the basis of Jensen IV, 5, 2 and 5. The variant in the Assyrian version, *sá nise* (written Ukumes in one case and Lumes in the other), for the numeral 7 in our text to designate a terror of the largest and most widespread character, is interesting. The number 7 is similarly used as a designation of Gilgamesh, who is called *Esigga imin*, \"seven-fold strong,\" i.e., supremely strong (CT XVIII, 30, 6-8). Similarly, Enkidu, *ib.* line 10, is designated *a-rá imina*, \"seven-fold.\""
+    },
+    {
+      "id": "s1-45",
+      "sceneId": "s1",
+      "text": "Line 149. A difficult line because of the uncertainty of the reading at the beginning of the following line. The most obvious meaning of *mi-it-tu* is \"corpse,\" though in the Assyrian version *salamtu* is used (Assyrian version, Tablet V, 2, 42). On the other hand, it is possible--as Dr. Lutz suggested to me--that *mittu*, despite the manner of writing, is identical with *mittú*, the name of a divine weapon, well-known from the Assyrian creation myth (Tablet IV, 130), and other passages. The combination *mit-tu sá-ku-ú-*, \"lofty weapon,\" in the Bilingual text IV, R2, 18 No. 3, 31-32, would favor the meaning \"weapon\" in our passage, since *[sá]-ku-tu* is a possible restoration at the beginning of line 150. However, the writing *mi-it-ti* points too distinctly to a derivative of the stem *mâtu*, and until a satisfactory explanation of lines 150-152 is forthcoming, we must stick to the meaning \"corpse\" and read the verb *il-ku-ut*."
+    },
+    {
+      "id": "s1-46",
+      "sceneId": "s1",
+      "text": "Line 152. The context suggests \"lion\" for the puzzling *la-bu*."
+    },
+    {
+      "id": "s1-47",
+      "sceneId": "s1",
+      "text": "Line 156. Another puzzling line. Dr. Clay's copy is an accurate reproduction of what is distinguishable. At the close of the line there appears to be a sign written over an erasure."
+    },
+    {
+      "id": "s1-48",
+      "sceneId": "s1",
+      "text": "Line 158. *[ga-ti lu-]us-kun* as in line 186, literally, \"I will place my hand,\" i.e., I purpose, I am determined."
+    },
+    {
+      "id": "s1-49",
+      "sceneId": "s1",
+      "text": "Line 160. The restoration on the basis of the parallel line 187. Note the interesting phrase, \"writing a name\" in the sense of acquiring \"fame.\""
+    },
+    {
+      "id": "s1-50",
+      "sceneId": "s1",
+      "text": "Line 161. The *kiskattê*, \"artisans,\" are introduced also in the Assyrian version, Tablet VI, 187, to look at the enormous size and weight of the horns of the slain divine bull. See for other passages Muss-Arnolt *Assyrian Dictionary*, p. 450b. At the beginning of this line, we must seek for the same word as in line 163."
+    },
+    {
+      "id": "s1-51",
+      "sceneId": "s1",
+      "text": "Line 162. While the restoration *belê*, \"weapon,\" is purely conjectural, the context clearly demands some such word. I choose *belê* in preference to *kakkê*, in view of the Assyrian version, Tablet VI, 1."
+    },
+    {
+      "id": "s1-52",
+      "sceneId": "s1",
+      "text": "Line 163. *Putuku* (or *putukku*) from *patâku* would be an appropriate word for the fabrication of weapons."
+    },
+    {
+      "id": "s1-53",
+      "sceneId": "s1",
+      "text": "Line 165. The *rabûtim* here, as in line 167, I take as the \"master mechanics\" as contrasted with the *ummianu*, \"common workmen,\" or journeymen. A parallel to this forging of the weapons for the two heroes is to be found in the Sumerian fragment of the Gilgamesh Epic published by Langdon, *Historical and Religious Texts from the Temple Library of Nippur* (Munich, 1914), No. 55, 1-15."
+    },
+    {
+      "id": "s1-54",
+      "sceneId": "s1",
+      "text": "Lines 168-170 describe the forging of the various parts of the lances for the two heroes. The *sipru* is the spear point Muss-Arnolt, *Assyrian Dictionary*, p. 886b; the *isid patri* is clearly the \"hilt,\" and the *meselitum* I therefore take as the \"blade\" proper. The word occurs here for the first time, so far as I can see. For 30 minas, see Assyrian version, Tablet VI, 189, as the weight of the two horns of the divine bull. Each axe weighing 3 *biltu*, and the lance with point and hilt 3 *biltu* we would have to assume 4 *biltu* for each *pasu*, so as to get a total of 10 *biltu* as the weight of the weapons for each hero. The lance is depicted on seal cylinders representing Gilgamesh and Enkidu, for example, Ward, *Seal Cylinders*, No. 199, and also in Nos. 184 and 191 in the field, with the broad hilt; and in an enlarged form in No. 648. Note the clear indication of the hilt. The two figures are Gilgamesh and Enkidu--not two Gilgameshes, as Ward assumed. See above, page 34. A different weapon is the club or mace, as seen in Ward, Nos. 170 and 173. This appears also to be the weapon which Gilgamesh holds in his hand on the colossal figure from the palace of Sargon (Jastrow, *Civilization of Babylonia and Assyria*, Pl. LVII), though it has been given a somewhat grotesque character by a perhaps intentional approach to the scimitar, associated with Marduk (see Ward, *Seal Cylinders*, Chap. XXVII). The exact determination of the various weapons depicted on seal-cylinders merits a special study."
+    },
+    {
+      "id": "s1-55",
+      "sceneId": "s1",
+      "text": "Line 181. Begins a speech of Huwawa, extending to line 187, reported to Gish by the elders (line 188-189), who add a further warning to the youthful and impetuous hero."
+    },
+    {
+      "id": "s1-56",
+      "sceneId": "s1",
+      "text": "Line 183. *lu-uk-sú-su* (also l. 186), from *akâsu*, \"drive on\" or \"lure on,\" occurs on the Pennsylvania tablet, line 135, *uk-ki-si*, \"lure on\" or \"entrap,\" which Langdon erroneously renders \"take away\" and thereby misses the point completely. See the comment to the line of the Pennsylvania tablet in question."
+    },
+    {
+      "id": "s1-57",
+      "sceneId": "s1",
+      "text": "Line 192. On the phrase *sanû bunu*, \"change of countenance,\" in the sense of \"enraged,\" see the note to the Pennsylvania tablet, l.31."
+    },
+    {
+      "id": "s1-58",
+      "sceneId": "s1",
+      "text": "Line 194. *nu-ma-at* occurs in a tablet published by Meissner, *Altbabyl. Privatrecht*, No. 100, with *bît abi*, which shows that the total confine of a property is meant; here, therefore, the \"interior\" of the forest or heart. It is hardly a \"by-form\" of *nuptum* as Muss-Arnolt, *Assyrian Dictionary*, p. 690b, and others have supposed, though *nu-um-tum* in one passage quoted by Muss-Arnolt, *ib.* p. 705a, may have arisen from an aspirate pronunciation of the *p* in *nubtum*."
+    },
+    {
+      "id": "s1-59",
+      "sceneId": "s1",
+      "text": "Line 215. The kneeling attitude of prayer is an interesting touch. It symbolizes submission, as is shown by the description of Gilgamesh's defeat in the encounter with Enkidu (Pennsylvania tablet, l. 227), where Gilgamesh is represented as forced to \"kneel\" to the ground. Again in the Assyrian version, Tablet V, 4, 6, Gilgamesh kneels down (though the reading *ka-mis* is not certain) and has a vision."
+    },
+    {
+      "id": "s1-60",
+      "sceneId": "s1",
+      "text": "Line 229. It is much to be regretted that this line is so badly preserved, for it would have enabled us definitely to restore the opening line of the Assyrian version of the Gilgamesh Epic. The fragment published by Jeremias in his appendix to his *Izdubar-Nimrod*, Plate IV, gives us the end of the colophon line to the Epic, reading ......... *di ma-a-ti* (cf. *ib.*, Pl. I, 1. ... *a-ti*). Our text evidently reproduces the same phrase and enables us to supply *ka*, as well as the name of the hero Gish of which there are distinct traces. The missing word, therefore, describes the hero as the ruler, or controller of the land. But what are the two signs before *ka*? A participial form from *pakâdu*, which one naturally thinks of, is impossible because of the *ka*, and for the same reason one cannot supply the word for shepherd (*nakidu*). One might think of *ka-ak-ka-du*, except that *kakkadu* is not used for \"head\" in the sense of \"chief\" of the land. I venture to restore *[i-ik-]ka-di*, \"strong one.\" Our text at all events disposes of Haupt's conjecture *is-di ma-a-ti* (*JAOS* 22, p. 11), \"Bottom of the earth,\" as also of Ungnad's proposed *[a-di pa]-a-ti*, \"to the ends\" (Ungnad-Gressmann, *Gilgamesch-Epos*, p. 6, note), or a reading *di-ma-a-ti*, \"pillars.\" The first line of the Assyrian version would now read"
+    },
+    {
+      "id": "s1-61",
+      "sceneId": "s1",
+      "text": "*sá nak-ba i-mu-ru [d*Gis-gi(n)-mas i-ik-ka]-di ma-a-ti,"
+    },
+    {
+      "id": "s1-62",
+      "sceneId": "s1",
+      "text": "i.e., \"The one who saw everything, Gilgamesh the strong one (?) of the land.\""
+    },
+    {
+      "id": "s1-63",
+      "sceneId": "s1",
+      "text": "We may at all events be quite certain that the name of the hero occurred in the first line and that he was described by some epithet indicating his superior position."
+    },
+    {
+      "id": "s1-64",
+      "sceneId": "s1",
+      "text": "Lines 229-235 are again an address of Gilgamesh to the sun-god, after having received a favorable \"oracle\" from the god (line 222). The hero promises to honor and to celebrate the god, by erecting thrones for him."
+    },
+    {
+      "id": "s1-65",
+      "sceneId": "s1",
+      "text": "Lines 237-244 describe the arming of the hero by the \"master\" craftsman. In addition to the *pasu* and *patru*, the bow (?) and quiver are given to him."
+    },
+    {
+      "id": "s1-66",
+      "sceneId": "s1",
+      "text": "Line 249 is paralleled in the new fragment of the Assyrian version published by King in *PSBA* 1914, page 66 (col. 1, 2), except that this fragment adds *gi-mir* to *e-mu-ki-ka*."
+    },
+    {
+      "id": "s1-67",
+      "sceneId": "s1",
+      "text": "Lines 251-252 correspond to column 1, 6-8, of King's fragment, with interesting variations \"battle\" and \"fight\" instead of \"way\" and \"road,\" which show that in the interval between the old Babylonian and the Assyrian version, the real reason why Enkidu should lead the way, namely, because he knows the country in which Huwawa dwells (lines 252-253), was supplemented by describing Enkidu also as being more experienced in battle than Gilgamesh."
+    },
+    {
+      "id": "s1-68",
+      "sceneId": "s1",
+      "text": "Line 254. I am unable to furnish a satisfactory rendering for this line, owing to the uncertainty of the word at the end. Can it be \"his household,\" from the stem which in Hebrew gives us MISEPOHOH \"family?\""
+    },
+    {
+      "id": "s1-69",
+      "sceneId": "s1",
+      "text": "Line 255. Is paralleled by col. 1, 4, of King's new fragment. The episode of Gish and Enkidu proceeding to Ninsun, the mother of Gish, to obtain her counsel, which follows in King's fragment, appears to have been omitted in the old Babylonian version. Such an elaboration of the tale is exactly what we should expect as it passed down the ages."
+    },
+    {
+      "id": "s1-70",
+      "sceneId": "s1",
+      "text": "Line 257. Our text shows that *irnittu* (lines 257, 264, 265) means primarily \"endeavor,\" and then success in one's endeavor, or \"triumph.\""
+    },
+    {
+      "id": "s1-71",
+      "sceneId": "s1",
+      "text": "Lines 266-270. Do not appear to refer to rites performed after a victory, as might at a first glance appear, but merely voice the hope that Gish will completely take possession of Huwawa's territory, so as to wash up after the fight in Huwawa's own stream; and the hope is also expressed that he may find pure water in Huwawa's land in abundance, to offer a libation to Shamash."
+    },
+    {
+      "id": "s1-72",
+      "sceneId": "s1",
+      "text": "Line 275. *On sú-pa-as-su* = *supat-su*, see above, to l. 115."
+    },
+    {
+      "id": "s1-73",
+      "sceneId": "s1",
+      "text": "[Note on Sabitum (above, p. 11)"
+    },
+    {
+      "id": "s1-74",
+      "sceneId": "s1",
+      "text": "In a communication before the Oriental Club of Philadelphia (Feb. 10, 1920), Prof. Haupt made the suggestion that *sa-bi-tum* (or *tu*), hitherto regarded as a proper name, is an epithet describing the woman who dwells at the seashore which Gilgamesh in the course of his wanderings reaches, as an \"innkeeper\". It is noticeable that the term always appears without the determinative placed before proper names; and since in the old Babylonian version (so far as preserved) and in the Assyrian version, the determinative is invariably used, its consistent absence in the case of *sabitum* (Assyrian Version, Tablet X, 1, 1, 10, 15, 20; 2, 15-16 [*sa-bit*]; Meissner fragment col. 2, 11-12) speaks in favor of Professor Haupt's suggestion. The meaning \"innkeeper\", while not as yet found in Babylonian-Assyrian literature is most plausible, since we have *sabu* as a general name for 'drink', though originally designating perhaps more specifically sesame wine (Muss-Arnolt, Assyrian Dictionary, p. 745b) or distilled brandy, according to Prof. Haupt. Similarly, in the Aramaic dialects, *se*bha is used for \"to drink\" and in the Pael to \"furnish drink\". Muss-Arnolt in his Assyrian Dictionary, 746b, has also recognized that *sabitum* was originally an epithet and compares the Aramaic *se*bhoyâthâ(p1) \"barmaids\". In view of the bad reputation of inns in ancient Babylonia as brothels, it would be natural for an epithet like *sabitum* to become the equivalent to \"public\" women, just as the inn was a \"public\" house. Sabitum would, therefore, have the same force as *samhatu* (the \"harlot\"), used in the Gilgamesh Epic by the side of *harimtu* \"woman\" (see the note to line 46 of Pennsylvania Tablet). The Sumerian term for the female innkeeper is Sal Gestinna \"the woman of the wine,\" known to us from the Hammurabi Code §§108-111. The bad reputation of inns is confirmed by these statutes, for the house of the Sal Gestinna is a gathering place for outlaws. The punishment of a female devotee who enters the \"house of a wine woman\" (bît Sal Gestinna §110) is death. It was not \"prohibition\" that prompted so severe a punishment, but the recognition of the purpose for which a devotee would enter such a house of ill repute. The speech of the *sabitum* or innkeeper to Gilgamesh (above, p. 12) was, therefore, an invitation to stay with her, instead of seeking for life elsewhere. Viewed as coming from a \"public woman\" the address becomes significant. The invitation would be parallel to the temptation offered by the *harimtu* in the first tablet of the Enkidu, and to which Enkidu succumbs. The incident in the tablet would, therefore, form a parallel in the adventures of Gilgamesh to the one that originally belonged to the Enkidu cycle. Finally, it is quite possible that *sabitum* is actually the Akkadian equivalent of the Sumerian Sal Gestinna, though naturally until this equation is confirmed by a syllabary or by other direct evidence, it remains a conjecture. See now also Albright's remarks on Sabitum in the A. J. S. L. 36, pp. 269 *seq.*]"
+    },
+    {
+      "id": "s1-75",
+      "sceneId": "s1",
+      "text": "CORRECTIONS TO THE TEXT OF LANGDON'S EDITION OF THE PENNSYLVANIA TABLET. [157]"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "5. Read *it-lu-tim* (\"heroes\") instead of *id-da-tim* (\"omens\")."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "6. Read *ka-ka-bu* instead of *ka-ka-'a*. This disposes of Langdon's note 2 on p. 211."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "9 Read *ú-ni-is-sú-ma*, \"I became weak\" (from *enêsu*, \"weak\") instead of *ilam is-sú-ma*, \"He bore a net\"(!). This disposes of Langdon's note 5 on page 211."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "10. Read *Urukki* instead of *ad-ki*. Langdon's note 7 is wrong."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "12. Langdon's note 8 is wrong. *ú-um-mid-ma pu-ti* does not mean \"he attained my front.\""
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "14. Read *ab-ba-la-ás-sú* instead of *at-ba-la-ás-sú*."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "15. Read *mu-di-a-at* instead of *mu-u-da-a-at*."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "20. Read *ta-ha-du* instead of an impossible *[sa]-ah-ha-ta*--two mistakes in one word. Supply *kima Sal* before *tahadu*."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "22. Read *ás-sú* instead of *sú*; and at the end of the line read *[tu-ut]-tu-ú-ma* instead of *sú-ú-zu*."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "23. Read *ta-tar-ra-[as-su]*."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "24. Read *[us]-ti-nim-ma* instead of *[is]-ti-lam-ma*."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "28. Read at the beginning *sá* instead of *ina*."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "29. Langdon's text and transliteration of the first word do not tally. Read *ha-as-si-nu*, just as in line 31."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "32. Read *ah-ta-du* (\"I rejoiced\") instead of *ah-ta-ta*."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "4. Read at the end of the line *di-da-sá(?) ip-tí-[e]* instead of *Di-?-al-lu-un* (!)."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "5. Supply *d*En-ki-du at the beginning. Traces point to this reading."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "19. Read *[gi]-it-ma-[lu]* after *d*Gis, as suggested by the Assyrian version, Tablet I, 4, 38, where *emûku* (\"strength\") replaces *nepistu* of our text."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "20. Read *at-[ta kima Sal ta-ha]-bu-[ub]-sú*."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "21. Read *ta-[ra-am-sú ki-ma]*."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "23. Read as one word *ma-a-ag-ri-i-im* (\"accursed\"), spelled in characteristic Hammurabi fashion, instead of dividing into two words *ma-a-ak* and *ri-i-im*, as Langdon does, who suggests as a translation \"unto the place yonder(?) of the shepherd\"(!)."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "24. Read *im-ta-har* instead of *im-ta-gar*."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "32. Supply *ili*(?) after *ki-ma*."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "33. Read *sá-ri-i-im* as one word."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "35. Read *i-na [ás]-ri-sú [im]-hu-ru*."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "36. Traces at beginning point to either *ù* or *ki* (= *itti*). Restoration of lines 36-39 (perhaps to be distributed into five lines) on the basis of the Assyrian version, Tablet I, 4, 2-5."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "14. Read *Kàs* (= *sikaram*, \"wine\") *si-ti*, \"drink,\" as in line 17, instead of *bi-is-ti*, which leads Langdon to render this perfectly simple line \"of the conditions and the fate of the land\"(!)."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "21. Read *it-tam-ru* instead of *it-ta-bir-ru*."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "22. Supply *[lù*Sú]-I."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "29. Read *ú-gi-ir-ri* from *garû* (\"attack), instead of separating into *ú* and *gi-ir-ri*, as Langdon does, who translates \"and the lion.\" The sign used can *never* stand for the copula! Nor is *girru*, \"lion!\""
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "30. Read *Síbmes*, \"shepherds,\" instead of *sab-[si]-es*!"
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "31. *sib-ba-ri* is not \"mountain goat,\" nor can *ut-tap-pi-is* mean \"capture.\" The first word means \"dagger,\" and the second \"he drew out.\""
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "33. Read *it-ti-[lu] na-ki-[di-e]*, instead of *itti immer nakie* which yields no sense. Langdon's rendering, even on the basis of his reading of the line, is a grammatical monstrosity."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "35. Read *gis* instead of *wa*."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "37. Read perhaps *a-na [na-ki-di-e i]- za-ak-ki-ir*."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "4. The first sign is clearly *iz*, not *ta*, as Langdon has it in note 1 on page 216."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "9. The fourth sign is *su*, not *sú*."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "10. Separate *e-es* (\"why\") from the following. Read *ta-hi-[il]*, followed, perhaps, by *la*. The last sign is not certain; it may be *ma*."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "11. Read *lim-nu* instead of *mi-nu*. In the same line read *a-la-ku ma-na-ah-[ti]-ka* instead of *a-la-ku-zu*(!) *na-ah ... ma*, which, naturally, Langdon cannot translate."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "16. Read *e-lu-tim* instead of *pa-a-ta-tim*. The first sign of the line, *tu*, is not certain, because apparently written over an erasure. The second sign may be *a*. Some one has scratched the tablet at this point."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "18. Read *uk-la-at âli* (?) instead of *ug-ad-ad-lil*, which gives no possible sense!"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "2. Read *[wa]-ar-ki-sú*."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "8. Read *i-ta-wa-a* instead of *i-ta-me-a*. The word *pi-it-tam* belongs to line 9! The sign *pi* is unmistakable. This disposes of note 1 on p. 218."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "9. Read Mi = *salmu*, \"image.\" This disposes of Langdon's note 2 on page 218. Of six notes on this page, four are wrong."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "11. The first sign appears to be *si* and the second *ma*. At the end we are perhaps to supply *[sá-ki-i pu]-uk-ku-ul*, on the basis of the Assyrian version, Tablet IV, 2, 45, *sá-ki-i pu-[uk-ku-ul]*."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "12. Traces at end of line suggest *i-pa(?)-ka-du*."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "13. Read *i-[na mâti da-an e-mu]-ki i-wa*."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "18. Read *ur-sá-nu* instead of *ip-sá-nu*."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "19. Read *i-sá-ru* instead of *i-tu-ru*."
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "24. The reading *it-ti* after *d*Gis is suggested by the traces."
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "25. Read *in-ni-[ib-bi-it]* at the end of the line."
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "28. Read *ip-ta-ra-[as a-la]-ak-tam* at the end of the line, as in the Assyrian version, Tablet IV, 2, 37."
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "30. The conjectural restoration is based on the Assyrian version, Tablet IV, 2, 36."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "3. Read *i-na si-ri-[sú]*."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "5. Supply *[il-li-ik]*."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "21. Langdon's text has a superfluous *ga*."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "22. Read *uz-za-sú*, \"his anger,\" instead of *us-sa-sú*, \"his javelin\" (!)."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "23. Read *i-ni-ih i-ra-as-su*, i.e., \"his breast was quieted,\" in the sense of \"his anger was appeased.\""
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "31. Read *ri-es-ka* instead of *ri-es-su*."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "In general, it should be noted that the indications of the number of lines missing at the bottom of columns 1-3 and at the top of columns 4-6 as given by Langdon are misleading. Nor should he have drawn any lines at the bottom of columns 1-3 as though the tablet were complete. Besides in very many cases the space indications of what is missing within a line are inaccurate. Dr. Langdon also omitted to copy the statement on the edge: *4 sú-si*, i.e., \"240 lines;\" and in the colophon he mistranslates *sú-tu-ur*, \"written,\" as though from *satâru*, \"write,\" whereas the form is the permansive III, 1, of *atâru*, \"to be in excess of.\" The sign *tu* never has the value *tu*! In all, Langdon has misread the text or mistransliterated it in over forty places, and of the 204 preserved lines he has mistranslated about one-half."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "NOTES"
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "[1] See for further details of this royal library, Jastrow, *Civilization of Babylonia and Assyria*, p. 21 *seq*."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "[2] *Das Babylonische Nimrodepos* (Leipzig, 1884-1891), supplemented by Haupt's article *Die Zwölfte Tafel des Babylonischen Nimrodepos* in *BA* I, pp. 48-79, containing the fragments of the twelfth tablet. The fragments of the Epic in Ashurbanapal's library--some sixty--represent portions of several copies. Sin-likî-unnini--perhaps from Erech, since this name appears as that of a family in tablets from Erech (see Clay, *Legal Documents from Erech*, Index, p. 73)--is named in a list of texts (K 9717--Haupt's edition No. 51, line 18) as the editor of the Epic, though probably he was not the only compiler. Since the publication of Haupt's edition, a few fragments were added by him as an appendix to Alfred Jeremias *Izdubar-Nimrod* (Leipzig, 1891) Plates II-IV, and two more are embodied in Jensen's transliteration of all the fragments in the *Keilinschriftliche Bibliothek* VI; pp. 116-265, with elaborate notes, pp. 421-531. Furthermore a fragment, obtained from supplementary excavations at Kouyunjik, has been published by L. W. King in his *Supplement to the Catalogue of the Cuneiform Tablets in the Kouyunjik Collection of the British Cuneiform Tablets in the Kouyunjik Collection of the British Museum* No. 56 and *PSBA* Vol. 36, pp. 64-68. Recently a fragment of the 6th tablet from the excavations at Assur has been published by Ebeling, *Keilschrifttexte aus Assur Religiösen Inhalts* No. 115, and one may expect further portions to turn up."
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "The designation \"Nimrod Epic\" on the supposition that the hero of the Babylonian Epic is identical with Nimrod, the \"mighty hunter\" of Genesis 10, has now been generally abandoned, in the absence of any evidence that the Babylonian hero bore a name like Nimrod. For all that, the description of Nimrod as the \"mighty hunter\" and the occurrence of a \"hunter\" in the Babylonian Epic (Assyrian version Tablet I)--though he is not the hero--points to a confusion in the Hebrew form of the borrowed tradition between Gilgamesh and Nimrod. The latest French translation of the Epic is by Dhorme, *Choix de Textes Religieux Assyro-Babyloniens* (Paris, 1907), pp. 182-325; the latest German translation by Ungnad-Gressmann, *Das Gilgamesch-Epos* (Göttingen, 1911), with a valuable analysis and discussion. These two translations now supersede Jensen's translation in the *Keilinschriftliche Bibliothek*, which, however, is still valuable because of the detailed notes, containing a wealth of lexicographical material. Ungnad also gave a partial translation in Gressmann-Ranke, *Altorientalische Texte and Bilder* I, pp. 39-61. In English, we have translations of substantial portions by Muss-Arnolt in Harper's *Assyrian and Babylonian Literature* (New York, 1901), pp. 324-368; by Jastrow, *Religion of Babylonia and Assyria* (Boston, 1898), Chap. XXIII; by Clay in *Light on the Old Testament from Babel*, pp. 78-84; by Rogers in *Cuneiform Parallels to the Old Testament*, pp. 80-103; and most recently by Jastrow in *Sacred Books and Early Literature of the East* (ed. C. F. Horne, New York, 1917), Vol. I, pp. 187-220."
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "[3] See Luckenbill in *JAOS*, Vol. 37, p. 452 *seq.* Prof. Clay, it should be added, clings to the older reading, Hammurabi, which is retained in this volume."
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "[4] *ZA*, Vol. 14, pp. 277-292."
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "[5] The survivor of the Deluge is usually designated as Ut-napishtim in the Epic, but in one passage (Assyrian version, Tablet XI, 196), he is designated as Atra-hasis \"the very wise one.\" Similarly, in a second version of the Deluge story, also found in Ashurbanapal's library (IV R2 additions, p. 9, line 11). The two names clearly point to two versions, which in accordance with the manner of ancient compositions were merged into one. See an article by Jastrow in *ZA*, Vol. 13, pp. 288-301."
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "[6] Published by Scheil in *Recueil des Travaux*, etc. Vol. 20, pp. 55-58."
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "[7] The text does not form part of the Gilgamesh Epic, as the colophon, differing from the one attached to the Epic, shows."
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "[8] *Ein altbabylonisches Fragment des Gilgamosepos* (*MVAG* 1902, No. 1)."
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "[9] On these variant forms of the two names see the discussion below, p. 24."
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "[10] The passage is paralleled by Ecc. 9, 7-9. See Jastrow, *A Gentle Cynic*, p. 172 *seq.*"
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "[11] Among the Nippur tablets in the collection of the University of Pennsylvania Museum. The fragment was published by Dr. Poebel in his *Historical and Grammatical Texts* No. 23. See also Poebel in the *Museum Journal*, Vol. IV, p. 47, and an article by Dr. Langdon in the same Journal, Vol. VII, pp. 178-181, though Langdon fails to credit Dr. Poebel with the discovery and publication of the important tablet."
+    },
+    {
+      "id": "s7-20",
+      "sceneId": "s7",
+      "text": "[12] No. 55 in Langdon's *Historical and Religious Texts from the Temple Library of Nippur* (Munich, 1914)."
+    },
+    {
+      "id": "s7-21",
+      "sceneId": "s7",
+      "text": "[13] No. 5 in his *Sumerian Liturgical Texts*. (Philadelphia, 1917)"
+    },
+    {
+      "id": "s7-22",
+      "sceneId": "s7",
+      "text": "[14] See on this name below, p. 23."
+    },
+    {
+      "id": "s7-23",
+      "sceneId": "s7",
+      "text": "[15] See further below, p. 37 *seq*."
+    },
+    {
+      "id": "s7-24",
+      "sceneId": "s7",
+      "text": "[16] See Poebel, *Historical and Grammatical Texts*, No. 1, and Jastrow in *JAOS*, Vol. 36, pp. 122-131 and 274-299."
+    },
+    {
+      "id": "s7-25",
+      "sceneId": "s7",
+      "text": "[17] See an article by Jastrow, *Sumerian and Akkadian Views of Beginnings* (*JAOS* Vol. 36, pp. 274-299)."
+    },
+    {
+      "id": "s7-26",
+      "sceneId": "s7",
+      "text": "[18] See on this point Eduard Meyer, *Sumerier und Semiten in Babylonien* (Berlin, 1906), p. 107 *seq*., whose view is followed in Jastrow, *Civilization of Babylonia and Assyria*, p. 121. See also Clay, *Empire of the Amorites* (Yale University Press, 1919), p. 23 *et seq*."
+    },
+    {
+      "id": "s7-27",
+      "sceneId": "s7",
+      "text": "[19] See the discussion below, p. 24 *seq*."
+    },
+    {
+      "id": "s7-28",
+      "sceneId": "s7",
+      "text": "[20] Dr. Poebel published an article on the tablet in *OLZ*, 1914, pp. 4-6, in which he called attention to the correct name for the mother of Gilgamesh, which was settled by the tablet as Ninsun."
+    },
+    {
+      "id": "s7-29",
+      "sceneId": "s7",
+      "text": "[21] *Historical Texts* No. 2, Column 2, 26. See the discussion in *Historical and Grammatical Texts*, p. 123, *seq.*"
+    },
+    {
+      "id": "s7-30",
+      "sceneId": "s7",
+      "text": "[22] See Fostat in *OLZ*, 1915, p. 367."
+    },
+    {
+      "id": "s7-31",
+      "sceneId": "s7",
+      "text": "[23] *Publications of the University of Pennsylvania Museum, Babylonian Section*, Vol. X, No. 3 (Philadelphia, 1917). It is to be regretted that Dr. Langdon should not have given full credit to Dr. Poebel for his discovery of the tablet. He merely refers in an obscure footnote to Dr. Poebel's having made a copy."
+    },
+    {
+      "id": "s7-32",
+      "sceneId": "s7",
+      "text": "[24] E.g., in the very first note on page 211, and again in a note on page 213."
+    },
+    {
+      "id": "s7-33",
+      "sceneId": "s7",
+      "text": "[25] Dr. Langdon neglected to copy the signs *4 sú-si* = 240 which appear on the edge of the tablet. He also misunderstood the word *sú-tu-ur* in the colophon which he translated \"written,\" taking the word from a stem *satâru*, \"write.\" The form *sú-tu-ur* is III, 1, from *atâru*, \"to be in excess of,\" and indicates, presumably, that the text is a copy \"enlarged\" from an older original. See the Commentary to the colophon, p. 86."
+    },
+    {
+      "id": "s7-34",
+      "sceneId": "s7",
+      "text": "[26] *Museum Journal*, Vol. VIII, p. 29."
+    },
+    {
+      "id": "s7-35",
+      "sceneId": "s7",
+      "text": "[27] See below, p. 23."
+    },
+    {
+      "id": "s7-36",
+      "sceneId": "s7",
+      "text": "[28] I follow the enumeration of tablets, columns and lines in Jensen's edition, though some fragments appear to have been placed by him in a wrong position."
+    },
+    {
+      "id": "s7-37",
+      "sceneId": "s7",
+      "text": "[29] According to Bezold's investigation, *Verbalsuffixformen als Alterskriterien babylonisch-assyrischer Inschriften* (Heidelberg Akad. d. Wiss., Philos.-Histor. Klasse, 1910, 9te Abhandlung), the bulk of the tablets in Ashurbanapal's library are copies of originals dating from about 1500 B.C. It does not follow, however, that all the copies date from originals of the same period. Bezold reaches the conclusion on the basis of various forms for verbal suffixes, that the fragments from the Ashurbanapal Library actually date from three distinct periods ranging from before c. 1450 to c. 700 B.C."
+    },
+    {
+      "id": "s7-38",
+      "sceneId": "s7",
+      "text": "[30] \"Before thou comest from the mountain, Gilgamesh in Erech will see thy dreams,\" after which the dreams are recounted by the woman to Enkidu. The expression \"thy dreams\" means here \"dreams about thee.\" (Tablet I, 5, 23-24)."
+    },
+    {
+      "id": "s7-39",
+      "sceneId": "s7",
+      "text": "[31] Lines 100-101."
+    },
+    {
+      "id": "s7-40",
+      "sceneId": "s7",
+      "text": "[32] In a paper read before the American Oriental Society at New Haven, April 4, 1918."
+    },
+    {
+      "id": "s7-41",
+      "sceneId": "s7",
+      "text": "[33] See the commentary to col. 4 of the Yale tablet for further details."
+    },
+    {
+      "id": "s7-42",
+      "sceneId": "s7",
+      "text": "[34] This is no doubt the correct reading of the three signs which used to be read Iz-tu-bar or Gish-du-bar. The first sign has commonly the value Gish, the second can be read Gin or Gi (Brünnow No. 11900) and the third Mash as well as Bar. See Ungnad in Ungnad-Gressmann, *Das Gilgamesch-Epos*, p. 76, and Poebel, *Historical and Grammatical Texts*, p. 123."
+    },
+    {
+      "id": "s7-43",
+      "sceneId": "s7",
+      "text": "[35] So also in Sumerian (Zimmern, *Sumerische Kultlieder aus altbabylonischer Zeit*, No. 196, rev. 14 and 16.)"
+    },
+    {
+      "id": "s7-44",
+      "sceneId": "s7",
+      "text": "[36] The sign used, LUM (Brünnow No. 11183), could have the value hu as well as hum."
+    },
+    {
+      "id": "s7-45",
+      "sceneId": "s7",
+      "text": "[37] The addition \"father-in-law of Moses\" to the name Hobab b. Re'uel in this passage must refer to Re'uel, and not to Hobab. In Judges 4, 11, the gloss \"of the Bene Hobab, the father-in-law of Moses\" must be separated into two: (1) \"Bene Hobab,\" and (2) \"father-in-law of Moses.\" The latter addition rests on an erroneous tradition, or is intended as a brief reminder that Hobab is identical with the son of Re'uel."
+    },
+    {
+      "id": "s7-46",
+      "sceneId": "s7",
+      "text": "[38] See his *List of Personal Names from the Temple School of Nippur*, p. 122. *Hu-um-ba-bi-tu* and *si-kin hu-wa-wa* also occur in Omen Texts (*CT* XXVII, 4, 8-9 = Pl. 3, 17 = Pl. 6, 3-4 = *CT* XXVIII, 14, 12). The contrast to *huwawa* is *ligru*, \"dwarf\" (*CT* XXVII, 4, 12 and 14 = Pl. 6, 7.9 = Pl. 3, 19). See Jastrow, *Religion Babyloniens und Assyriens*, II, p. 913, Note 7. Huwawa, therefore, has the force of \"monster.\""
+    },
+    {
+      "id": "s7-47",
+      "sceneId": "s7",
+      "text": "[39] Ungnad-Gressmann, *Das Gilgamesch-Epos*, p. 111 *seq.*"
+    },
+    {
+      "id": "s7-48",
+      "sceneId": "s7",
+      "text": "[40] Ungnad, 1. c. p. 77, called attention to this name, but failed to draw the conclusion that Hu(m)baba therefore belongs to the West and not to the East."
+    },
+    {
+      "id": "s7-49",
+      "sceneId": "s7",
+      "text": "[41] First pointed out by Ungnad in *OLZ* 1910, p. 306, on the basis of *CT* XVIII, 30, 10, where En-gi-dú appears in the column furnishing *phonetic* readings."
+    },
+    {
+      "id": "s7-50",
+      "sceneId": "s7",
+      "text": "[42] See Clay *Amurru*, pp. 74, 129, etc."
+    },
+    {
+      "id": "s7-51",
+      "sceneId": "s7",
+      "text": "[43] Tablet I, 2, 39-40; 3, 6-7 and 33-34; 4, 3-4."
+    },
+    {
+      "id": "s7-52",
+      "sceneId": "s7",
+      "text": "[44] Tablet I, 2, 1 and IX, 2, 16. Note also the statement about Gilgamesh that \"his body is flesh of the gods\" (Tablet IX, 2, 14; X, 1, 7)."
+    },
+    {
+      "id": "s7-53",
+      "sceneId": "s7",
+      "text": "[45] *BOR* IV, p. 264."
+    },
+    {
+      "id": "s7-54",
+      "sceneId": "s7",
+      "text": "[46] Lewin, *Die Scholien des Theodor bar Koni zur Patriarchengeschichte* (Berlin, 1905), p. 2. See Gressmann in Ungnad-Gressmann, *Das Gilgamesch-Epos*, p. 83, who points out that the first element of GLMGVS compared with the second of GMYGMVS gives the exact form that we require, namely, Gilgamos."
+    },
+    {
+      "id": "s7-55",
+      "sceneId": "s7",
+      "text": "[47] Tablet I, col. 2, is taken up with this episode."
+    },
+    {
+      "id": "s7-56",
+      "sceneId": "s7",
+      "text": "[48] See Poebel, *Historical and Grammatical Texts*, p. 123."
+    },
+    {
+      "id": "s7-57",
+      "sceneId": "s7",
+      "text": "[49] See Poebel, *Historical Texts* No. 2, col. 2, 26."
+    },
+    {
+      "id": "s7-58",
+      "sceneId": "s7",
+      "text": "[50] Hilprecht, *Old Babylonian Inscriptions* I, 1 No. 26."
+    },
+    {
+      "id": "s7-59",
+      "sceneId": "s7",
+      "text": "[51] Delitzsch, *Assyrische Lesestücke*, p. 88, VI, 2-3. Cf. also *CT* XXV, 28(K 7659) 3, where we must evidently supply [Esigga]-tuk, for which in the following line we have again Gish-bil-ga-mesh as an equivalent. See Meissner, *OLZ* 1910, 99."
+    },
+    {
+      "id": "s7-60",
+      "sceneId": "s7",
+      "text": "[52] See, e.g., Barton, *Haverford Collection* II No. 27, Col. I, 14, etc."
+    },
+    {
+      "id": "s7-61",
+      "sceneId": "s7",
+      "text": "[53] Deimel, *Pantheon Babylonicum*, p. 95."
+    },
+    {
+      "id": "s7-62",
+      "sceneId": "s7",
+      "text": "[54] *CT* XII, 50 (K 4359) obv. 17."
+    },
+    {
+      "id": "s7-63",
+      "sceneId": "s7",
+      "text": "[55] See Barton, *Origin and Development of Babylonian Writing*, II, p. 99 *seq.*, for various explanations, though all centering around the same idea of the picture of fire in some form."
+    },
+    {
+      "id": "s7-64",
+      "sceneId": "s7",
+      "text": "[56] See the passages quoted by Poebel, *Historical and Grammatical Texts*, p. 126."
+    },
+    {
+      "id": "s7-65",
+      "sceneId": "s7",
+      "text": "[57] E.g., Genesis 4, 20, Jabal, \"the father of tent-dwelling and cattle holding;\" Jubal (4, 21), \"the father of harp and pipe striking.\""
+    },
+    {
+      "id": "s7-66",
+      "sceneId": "s7",
+      "text": "[58] See particularly the plays (in the J. Document) upon the names of the twelve sons of Jacob, which are brought forward either as tribal characteristics, or as suggested by some incident or utterance by the mother at the birth of each son."
+    },
+    {
+      "id": "s7-67",
+      "sceneId": "s7",
+      "text": "[59] The designation is variously explained by Arabic writers. See Beidhawi's *Commentary* (ed. Fleischer), to Súra 18, 82."
+    },
+    {
+      "id": "s7-68",
+      "sceneId": "s7",
+      "text": "[60] The writing Gish-gi-mash as an approach to the pronunciation Gilgamesh would thus represent the beginning of the artificial process which seeks to interpret the first syllable as \"hero.\""
+    },
+    {
+      "id": "s7-69",
+      "sceneId": "s7",
+      "text": "[61] See above, p. 27."
+    },
+    {
+      "id": "s7-70",
+      "sceneId": "s7",
+      "text": "[62] Poebel, *Historical Texts*, p. 115 *seq*."
+    },
+    {
+      "id": "s7-71",
+      "sceneId": "s7",
+      "text": "[63] Many years ago (*BA* III, p. 376) I equated Etana with Ethan in the Old Testament--therefore a West Semitic name."
+    },
+    {
+      "id": "s7-72",
+      "sceneId": "s7",
+      "text": "[64] See Clay, *The Empire of the Amorites*, p. 80."
+    },
+    {
+      "id": "s7-73",
+      "sceneId": "s7",
+      "text": "[65] Professor Clay strongly favors an Amoritic origin also for Gilgamesh. His explanation of the name is set forth in his recent work on *The Empire of the Amorites*, page 89, and is also referred to in his work on *Amurru*, page 79, and in his volume of *Miscellaneous Inscriptions in the Yale Babylonian Collection*, page 3, note. According to Professor Clay the original form of the hero's name was West Semitic, and was something like *Bilga-Mash*, the meaning of which was perhaps \"the offspring of Mash.\" For the first element in this division of the name cf. Pilikam, the name of a ruler of an early dynasty, and Balak of the Old Testament. In view of the fact that the axe figures so prominently in the Epic as an instrument wielded by Gilgamesh, Professor Clay furthermore thinks it reasonable to assume that the name was interpreted by the Babylonian scribe as \"the axe of Mash.\" In this way he would account for the use of the determinative for weapons, which is also the sign Gish, in the name. It is certainly noteworthy that the ideogram Gish-Tún in the later form of *Gish-Tún-mash* = *pasu*, \"axe,\" *CT* XVI, 38:14b, etc. *Tun* also = *pilaku* \"axe,\" *CT* xii, 10:34b. Names with similar element (besides Pilikam) are Belaku of the Hammurabi period, Bilakku of the Cassite period, etc."
+    },
+    {
+      "id": "s7-74",
+      "sceneId": "s7",
+      "text": "It is only proper to add that Professor Jastrow assumes the responsibility for the explanation of the form and etymology of the name Gilgamesh proposed in this volume. The question is one in regard to which legitimate differences of opinion will prevail among scholars until through some chance a definite decision, one way or the other, can be reached."
+    },
+    {
+      "id": "s7-75",
+      "sceneId": "s7",
+      "text": "[66] *me-ih-rù* (line 191)."
+    },
+    {
+      "id": "s7-76",
+      "sceneId": "s7",
+      "text": "[67] Tablet I, 5, 23. Cf. I, 3, 2 and 29."
+    },
+    {
+      "id": "s7-77",
+      "sceneId": "s7",
+      "text": "[68] Tablet IV, 4, 7 and I, 5, 3."
+    },
+    {
+      "id": "s7-78",
+      "sceneId": "s7",
+      "text": "[69] Assyrian version, Tablet II, 3b 34, in an address of Shamash to Enkidu."
+    },
+    {
+      "id": "s7-79",
+      "sceneId": "s7",
+      "text": "[70] So Assyrian version, Tablet VIII, 3, 11. Also supplied VIII, 5, 20 and 21; and X, 1, 46-47 and 5, 6-7."
+    },
+    {
+      "id": "s7-80",
+      "sceneId": "s7",
+      "text": "[71] Tablet XII, 3, 25."
+    },
+    {
+      "id": "s7-81",
+      "sceneId": "s7",
+      "text": "[72] Ward, *Seal Cylinders of Western Asia*, Chap. X, and the same author's *Cylinders and other Ancient Oriental Seals*--Morgan collection Nos. 19-50."
+    },
+    {
+      "id": "s7-82",
+      "sceneId": "s7",
+      "text": "[73] E.g., Ward No. 192, Enkidu has human legs like Gilgamesh; also No. 189, where it is difficult to say which is Gilgamesh, and which is Enkidu. The clothed one is probably Gilgamesh, though not infrequently Gilgamesh is also represented as nude, or merely with a girdle around his waist."
+    },
+    {
+      "id": "s7-83",
+      "sceneId": "s7",
+      "text": "[74] E.g., Ward, Nos. 173, 174, 190, 191, 195 as well as 189 and 192."
+    },
+    {
+      "id": "s7-84",
+      "sceneId": "s7",
+      "text": "[75] On the other hand, in Ward Nos. 459 and 461, the conflict between the two heroes is depicted with the heroes distinguished in more conventional fashion, Enkidu having the hoofs of an animal, and also with a varying arrangement of beard and hair."
+    },
+    {
+      "id": "s7-85",
+      "sceneId": "s7",
+      "text": "[76] See Jastrow, *Religion of Babylonia and Assyria* (Boston, 1898), p. 468 *seq.*"
+    },
+    {
+      "id": "s7-86",
+      "sceneId": "s7",
+      "text": "[77] Ungnad-Gressmann, *Das Gilgamesch-Epos*, p. 90 *seq.*"
+    },
+    {
+      "id": "s7-87",
+      "sceneId": "s7",
+      "text": "[78] Pennsylvania tablet, l. 198 = Assyrian version, Tablet IV, 2, 37."
+    },
+    {
+      "id": "s7-88",
+      "sceneId": "s7",
+      "text": "[79] \"Enkidu blocked the gate\" (Pennsylvania tablet, line 215) = Assyrian version Tablet IV, 2, 46: \"Enkidu interposed his foot at the gate of the family house.\""
+    },
+    {
+      "id": "s7-89",
+      "sceneId": "s7",
+      "text": "[80] Pennsylvania tablet, lines 218 and 224."
+    },
+    {
+      "id": "s7-90",
+      "sceneId": "s7",
+      "text": "[81] Yale tablet, line 198; also to be supplied lines 13-14."
+    },
+    {
+      "id": "s7-91",
+      "sceneId": "s7",
+      "text": "[82] Yale tablet, lines 190 and 191."
+    },
+    {
+      "id": "s7-92",
+      "sceneId": "s7",
+      "text": "[83] *PSBA* 1914, 65 *seq.* = Jensen III, 1a, 4-11, which can now be completed and supplemented by the new fragment."
+    },
+    {
+      "id": "s7-93",
+      "sceneId": "s7",
+      "text": "[84] I.e., Enkidu will save Gilgamesh."
+    },
+    {
+      "id": "s7-94",
+      "sceneId": "s7",
+      "text": "[85] These two lines impress one as popular sayings--here applied to Enkidu."
+    },
+    {
+      "id": "s7-95",
+      "sceneId": "s7",
+      "text": "[86] King's fragment, col. I, 13-27, which now enables us to complete Jensen III, 1a, 12-21."
+    },
+    {
+      "id": "s7-96",
+      "sceneId": "s7",
+      "text": "[87] Yale tablet, lines 252-253."
+    },
+    {
+      "id": "s7-97",
+      "sceneId": "s7",
+      "text": "[88] Yale tablet, lines 143-148 = Assyrian version, Tablet IV, 6, 26 *seq.*"
+    },
+    {
+      "id": "s7-98",
+      "sceneId": "s7",
+      "text": "[89] Assyrian version, Tablet III, 2a, 13-14."
+    },
+    {
+      "id": "s7-99",
+      "sceneId": "s7",
+      "text": "[90] Lines 215-222."
+    },
+    {
+      "id": "s7-100",
+      "sceneId": "s7",
+      "text": "[91] Assyrian version, Tablet V, Columns 3-4. We have to assume that in line 13 of column 4 (Jensen, p. 164), Enkidu takes up the thread of conversation, as is shown by line 22: \"Enkidu brought his dream to him and spoke to Gilgamesh.\""
+    },
+    {
+      "id": "s7-101",
+      "sceneId": "s7",
+      "text": "[92] Assyrian version, Tablet VI, lines 146-147."
+    },
+    {
+      "id": "s7-102",
+      "sceneId": "s7",
+      "text": "[93] Lines 178-183."
+    },
+    {
+      "id": "s7-103",
+      "sceneId": "s7",
+      "text": "[94] Lines 176-177."
+    },
+    {
+      "id": "s7-104",
+      "sceneId": "s7",
+      "text": "[95] Tablet VII, Column 6."
+    },
+    {
+      "id": "s7-105",
+      "sceneId": "s7",
+      "text": "[96] Assyrian version, Tablet VI, 200-203. These words are put into the mouth of Gilgamesh (lines 198-199). It is, therefore, unlikely that he would sing his own praise. Both Jensen and Ungnad admit that Enkidu is to be supplied in at least one of the lines."
+    },
+    {
+      "id": "s7-106",
+      "sceneId": "s7",
+      "text": "[97] Lines 109 and 112."
+    },
+    {
+      "id": "s7-107",
+      "sceneId": "s7",
+      "text": "[98] Assyrian version, Tablet IX, 1, 8-9."
+    },
+    {
+      "id": "s7-108",
+      "sceneId": "s7",
+      "text": "[99] Tablet VIII, 5, 2-6."
+    },
+    {
+      "id": "s7-109",
+      "sceneId": "s7",
+      "text": "[100] So also Gressmann in Ungnad-Gressmann, *Das Gilgamesch-Epos*, p. 97, regards Enkidu as the older figure."
+    },
+    {
+      "id": "s7-110",
+      "sceneId": "s7",
+      "text": "[101] See Jastrow, *Adam and Eve in Babylonian Literature, AJSL*, Vol. 15, pp. 193-214."
+    },
+    {
+      "id": "s7-111",
+      "sceneId": "s7",
+      "text": "[102] Assyrian version, Tablet I, 2, 31-36."
+    },
+    {
+      "id": "s7-112",
+      "sceneId": "s7",
+      "text": "[103] It will be recalled that Enkidu is always spoken of as \"born in the field.\""
+    },
+    {
+      "id": "s7-113",
+      "sceneId": "s7",
+      "text": "[104] Note the repetition *ibtani* \"created\" in line 33 of the \"man of Anu\" and in line 35 of the offspring of Ninib. The creation of the former is by the \"heart,\" i.e., by the will of Aruru, the creation of the latter is an act of moulding out of clay."
+    },
+    {
+      "id": "s7-114",
+      "sceneId": "s7",
+      "text": "[105] Tablet I, Column 3."
+    },
+    {
+      "id": "s7-115",
+      "sceneId": "s7",
+      "text": "[106] Following as usual the enumeration of lines in Jensen's edition."
+    },
+    {
+      "id": "s7-116",
+      "sceneId": "s7",
+      "text": "[107] An analogy does not involve a dependence of one tale upon the other, but merely that both rest on similar traditions, which *may* have arisen independently."
+    },
+    {
+      "id": "s7-117",
+      "sceneId": "s7",
+      "text": "[108] Note that the name of Eve is not mentioned till after the fall (Genesis 3, 20). Before that she is merely *ishsha*, i.e., \"woman,\" just as in the Babylonian tale the woman who guides Enkidu is *harimtu*, \"woman.\""
+    },
+    {
+      "id": "s7-118",
+      "sceneId": "s7",
+      "text": "[109] \"And he drank and became drunk\" (Genesis 9, 21)."
+    },
+    {
+      "id": "s7-119",
+      "sceneId": "s7",
+      "text": "[110] \"His heart became glad and his face shone\" (Pennsylvania Tablet, lines 100-101)."
+    },
+    {
+      "id": "s7-120",
+      "sceneId": "s7",
+      "text": "[111] That in the combination of this Enkidu with tales of primitive man, inconsistent features should have been introduced, such as the union of Enkidu with the woman as the beginning of a higher life, whereas the presence of a hunter and his father shows that human society was already in existence, is characteristic of folk-tales, which are indifferent to details that may be contradictory to the general setting of the story."
+    },
+    {
+      "id": "s7-121",
+      "sceneId": "s7",
+      "text": "[112] Pennsylvania tablet, lines 102-104."
+    },
+    {
+      "id": "s7-122",
+      "sceneId": "s7",
+      "text": "[113] Line 105."
+    },
+    {
+      "id": "s7-123",
+      "sceneId": "s7",
+      "text": "[114] Tablet I, 1, 9. See also the reference to the wall of Erech as an \"old construction\" of Gilgamesh, in the inscription of An-Am in the days of Sin-gamil (Hilprecht, *Old Babylonian Inscriptions*, I, No. 26.) Cf IV R2 52, 3, 53."
+    },
+    {
+      "id": "s7-124",
+      "sceneId": "s7",
+      "text": "[115] The invariable designation in the Assyrian version as against *Uruk ribîtim*, \"Erech of the plazas,\" in the old Babylonian version."
+    },
+    {
+      "id": "s7-125",
+      "sceneId": "s7",
+      "text": "[116] In Ungnad-Gressmann, *Das Gilgamesch-Epos*, p. 123 *seq.*"
+    },
+    {
+      "id": "s7-126",
+      "sceneId": "s7",
+      "text": "[117] See Jensen, p. 266. Gilgamesh is addressed as \"judge,\" as the one who inspects the divisions of the earth, precisely as Shamash is celebrated. In line 8 of the hymn in question, Gilgamesh is in fact addressed as Shamash."
+    },
+    {
+      "id": "s7-127",
+      "sceneId": "s7",
+      "text": "[118] The darkness is emphasized with each advance in the hero's wanderings (Tablet IX, col. 5)."
+    },
+    {
+      "id": "s7-128",
+      "sceneId": "s7",
+      "text": "[119] This tale is again a nature myth, marking the change from the dry to the rainy season. The Deluge is an annual occurrence in the Euphrates Valley through the overflow of the two rivers. Only the canal system, directing the overflow into the fields, changed the curse into a blessing. In contrast to the Deluge, we have in the Assyrian creation story the drying up of the primeval waters so that the earth makes its appearance with the change from the rainy to the dry season. The world is created in the spring, according to the Akkadian view which is reflected in the Biblical creation story, as related in the P. document. See Jastrow, *Sumerian and Akkadian Views of Beginnings* (*JAOS*, Vol 36, p. 295 seq.)."
+    },
+    {
+      "id": "s7-129",
+      "sceneId": "s7",
+      "text": "[120] As-am in Sumerian corresponding to the Akkadian Sabatu, which conveys the idea of destruction."
+    },
+    {
+      "id": "s7-130",
+      "sceneId": "s7",
+      "text": "[121] The month is known as the \"Mission of Ishtar\" in Sumerian, in allusion to another nature myth which describes Ishtar's disappearance from earth and her mission to the lower world."
+    },
+    {
+      "id": "s7-131",
+      "sceneId": "s7",
+      "text": "[122] *Historical Texts* No. 1. The Sumerian name of the survivor is Zi-u-gíd-du or perhaps Zi-u-su-du (cf. King, *Legends of Babylon and Egypt*, p. 65, note 4), signifying \"He who lengthened the day of life,\" i.e., the one of long life, of which Ut-napishtim (\"Day of Life\") in the Assyrian version seems to be an abbreviated Akkadian rendering, with the omission of the verb. So King's view, which is here followed. See also *CT* XVIII, 30, 9, and Langdon, *Sumerian Epic of Paradise*, p. 90, who, however, enters upon further speculations that are fanciful."
+    },
+    {
+      "id": "s7-132",
+      "sceneId": "s7",
+      "text": "[123] See the translation in Ungnad-Gressmann, *Das Gilgamesch-Epos*, pp. 69, *seq.* and 73."
+    },
+    {
+      "id": "s7-133",
+      "sceneId": "s7",
+      "text": "[124] According to Professor Clay, quite certainly Amurru, just as in the case of Enkidu."
+    },
+    {
+      "id": "s7-134",
+      "sceneId": "s7",
+      "text": "[125] Gressmann in Ungnad-Gressmann, *Das Gilgamesch-Epos*, p. 100 *seq.* touches upon this *motif*, but fails to see the main point that the companions are also twins or at least brothers. Hence such examples as Abraham and Lot, David and Jonathan, Achilles and Patroclus, Eteokles and Polyneikes, are not parallels to Gilgamesh-Enkidu, but belong to the *enlargement* of the *motif* so as to include companions who are *not* regarded as brothers."
+    },
+    {
+      "id": "s7-135",
+      "sceneId": "s7",
+      "text": "[126] Or Romus. See Rendell Harris, l. c., p. 59, note 2."
+    },
+    {
+      "id": "s7-136",
+      "sceneId": "s7",
+      "text": "[127] One might also include the primeval pair Yama-Yami with their equivalents in Iranian mythology (Carnoy, *Iranian Mythology*, p. 294 *seq.*)."
+    },
+    {
+      "id": "s7-137",
+      "sceneId": "s7",
+      "text": "[128] Becoming, however, a triad and later increased to seven. Cf. Rendell Harris, l. c., p. 32."
+    },
+    {
+      "id": "s7-138",
+      "sceneId": "s7",
+      "text": "[129] I am indebted to my friend, Professor A. J. Carnoy, of the University of Louvain, for having kindly gathered and placed at my disposal material on the \"twin-brother\" *motif* from Indo-European sources, supplemental to Rendell Harris' work."
+    },
+    {
+      "id": "s7-139",
+      "sceneId": "s7",
+      "text": "[130] On the other hand, *Uruk mâtum* for the district of Erech, i.e., the territory over which the city holds sway, appears in both versions (Pennsylvania tablet, 1. 10 = Assyrian version I, 5, 36)."
+    },
+    {
+      "id": "s7-140",
+      "sceneId": "s7",
+      "text": "[131] \"My likeness\" (line 27). It should be noted, however, that lines 32-44 of I, 5, in Jensen's edition are part of a fragment K 9245 (not published, but merely copied by Bezold and Johns, and placed at Jensen's disposal), which may represent a *duplicate* to I, 6, 23-34, with which it agrees entirely except for one line, viz., line 34 of K 9245 which is not found in column 6, 23-34. If this be correct, then there is lacking after line 31 of column 5, the interpretation of the dream given in the Pennsylvania tablet in lines 17-23."
+    },
+    {
+      "id": "s7-141",
+      "sceneId": "s7",
+      "text": "[132] *ina sap-li-ki*, literally, \"below thee,\" whereas in the old Babylonian version we have *ana si-ri-ka*, \"towards thee.\""
+    },
+    {
+      "id": "s7-142",
+      "sceneId": "s7",
+      "text": "[133] Repeated I, 6, 28."
+    },
+    {
+      "id": "s7-143",
+      "sceneId": "s7",
+      "text": "[134] *ul-tap-rid ki-is-su-sú-ma*. The verb is from *parâdu*, \"violent.\" For *kissu*, \"strong,\" see *CT* XVI, 25, 48-49. Langdon (*Gilgamesh Epic*, p. 211, note 5) renders the phrase: \"he shook his murderous weapon!!\"--another illustration of his haphazard way of translating texts."
+    },
+    {
+      "id": "s7-144",
+      "sceneId": "s7",
+      "text": "[135] Shown by the colophon (Jeremias, *Izdubar-Nimrod*, Plate IV.)"
+    },
+    {
+      "id": "s7-145",
+      "sceneId": "s7",
+      "text": "[136] Lines 42-43 must be taken as part of the narrative of the compiler, who tells us that after the woman had informed Enkidu that Gilgamesh already knew of Enkidu's coming through dreams interpreted by Ninsun, Gilgamesh actually set out and encountered Enkidu."
+    },
+    {
+      "id": "s7-146",
+      "sceneId": "s7",
+      "text": "[137] Tablet I, col. 4. See also above, p. 19."
+    },
+    {
+      "id": "s7-147",
+      "sceneId": "s7",
+      "text": "[138] IV, 2, 44-50. The word *ullanum*, (l.43) \"once\" or \"since,\" points to the following being a reference to a former recital, and not an original recital."
+    },
+    {
+      "id": "s7-148",
+      "sceneId": "s7",
+      "text": "[139] Only the lower half (Haupt's edition, p. 82) is preserved."
+    },
+    {
+      "id": "s7-149",
+      "sceneId": "s7",
+      "text": "[140] \"The eyes of Enkidu were filled with tears,\" corresponding to IV, 4, 10."
+    },
+    {
+      "id": "s7-150",
+      "sceneId": "s7",
+      "text": "[141] Unless indeed the number \"seven\" is a slip for the sign sa. See the commentary to the line."
+    },
+    {
+      "id": "s7-151",
+      "sceneId": "s7",
+      "text": "[142] I.e., paid homage to the meteor."
+    },
+    {
+      "id": "s7-152",
+      "sceneId": "s7",
+      "text": "[143] I.e., the heroes of Erech raised me to my feet, or perhaps in the sense of \"supported me.\""
+    },
+    {
+      "id": "s7-153",
+      "sceneId": "s7",
+      "text": "[144] I.e., Enkidu."
+    },
+    {
+      "id": "s7-154",
+      "sceneId": "s7",
+      "text": "[145] I.e., \"thy way of life.\""
+    },
+    {
+      "id": "s7-155",
+      "sceneId": "s7",
+      "text": "[146] I.e., the man."
+    },
+    {
+      "id": "s7-156",
+      "sceneId": "s7",
+      "text": "[147] I.e., an idiomatic phrase meaning \"for all times.\""
+    },
+    {
+      "id": "s7-157",
+      "sceneId": "s7",
+      "text": "[148] I.e., Enkidu became like Gish, godlike. Cf. col. 2, 11."
+    },
+    {
+      "id": "s7-158",
+      "sceneId": "s7",
+      "text": "[149] He was thrown and therefore vanquished."
+    },
+    {
+      "id": "s7-159",
+      "sceneId": "s7",
+      "text": "[150] Epithet given to Ninsun. See the commentary to the line."
+    },
+    {
+      "id": "s7-160",
+      "sceneId": "s7",
+      "text": "[151] Scribal error for *an*."
+    },
+    {
+      "id": "s7-161",
+      "sceneId": "s7",
+      "text": "[152] Text apparently *di*."
+    },
+    {
+      "id": "s7-162",
+      "sceneId": "s7",
+      "text": "[153] Hardly *ul*."
+    },
+    {
+      "id": "s7-163",
+      "sceneId": "s7",
+      "text": "[154] Omitted by scribe."
+    },
+    {
+      "id": "s7-164",
+      "sceneId": "s7",
+      "text": "[155] *Kisti* omitted by scribe."
+    },
+    {
+      "id": "s7-165",
+      "sceneId": "s7",
+      "text": "[156] I.e., at night to thee, may Lugal-banda, etc."
+    },
+    {
+      "id": "s7-166",
+      "sceneId": "s7",
+      "text": "[157] The enumeration here is according to Langdon's edition."
+    }
+  ]
+}

@@ -1,0 +1,623 @@
+{
+  "id": "shahnameh",
+  "title": "Shahnameh (Story of Sohrab)",
+  "author": "Ferdowsi (tr. James Atkinson)",
+  "year": "1010",
+  "note": "Project Gutenberg 10315",
+  "minutes": 183,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Story of Sohrab",
+      "place": "Story of Sohrab",
+      "reentry": "O ye, who dwell in Youth's inviting bowers, Waste not, in useless joy, your fleeting hours, But rather let the tears of sorrow roll, And sad reflection fill the conscious soul. For many a jocund spring has passed away, And many a flower has",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Story of Sohrab II",
+      "reentry": "Soon as the sun with vivifying ray, Gleams o'er the landscape, and renews the day; The flaming troops the lofty walls surround, With thundering crash the bursting gates resound. Already are the captives bound, in thought, And like a herd be",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Story of Sohrab III",
+      "reentry": "\"And where didst thou encountering armies see? Why Rustem's praise so proudly urge to me? Let us but meet and thou shalt trembling know, How fierce that wrath which bids my bosom glow: If living flames express his boundless ire, O'erwhelmin",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "O ye, who dwell in Youth's inviting bowers, Waste not, in useless joy, your fleeting hours, But rather let the tears of sorrow roll, And sad reflection fill the conscious soul. For many a jocund spring has passed away, And many a flower has blossomed, to decay; And human life, still hastening to a close, Finds in the worthless dust its last repose. Still the vain world abounds in strife and hate, And sire and son provoke each other's fate; And kindred blood by kindred hands is shed, And vengeance sleeps not--dies not, with the dead. All nature fades--the garden's treasures fall, Young bud, and citron ripe--all perish, all."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "And now a tale of sorrow must be told, A tale of tears, derived from Múbid old, And thus remembered.--"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "With the dawn of day, Rustem arose, and wandering took his way, Armed for the chase, where sloping to the sky, Túrán's lone wilds in sullen grandeur lie; There, to dispel his melancholy mood, He urged his matchless steed through glen and wood. Flushed with the noble game which met his view, He starts the wild-ass o'er the glistening dew; And, oft exulting, sees his quivering dart, Plunge through the glossy skin, and pierce the heart. Tired of the sport, at length, he sought the shade, Which near a stream embowering trees displayed, And with his arrow's point, a fire he raised, And thorns and grass before him quickly blazed. The severed parts upon a bough he cast, To catch the flames; and when the rich repast Was drest; with flesh and marrow, savory food, He quelled his hunger; and the sparkling flood That murmured at his feet, his thirst represt; Then gentle sleep composed his limbs to rest."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Meanwhile his horse, for speed and form renown'd, Ranged o'er the plain with flowery herbage crown'd, Encumbering arms no more his sides opprest, No folding mail confined his ample chest,[12] Gallant and free, he left the Champion's side, And cropp'd the mead, or sought the cooling tide; When lo! it chanced amid that woodland chase, A band of horsemen, rambling near the place, Saw, with surprise, superior game astray, And rushed at once to seize the noble prey; But, in the imminent struggle, two beneath His steel-clad hoofs received the stroke of death; One proved a sterner fate--for downward borne, The mangled head was from the shoulders torn. Still undismayed, again they nimbly sprung, And round his neck the noose entangling flung: Now, all in vain, he spurns the smoking ground, In vain the tumult echoes all around; They bear him off, and view, with ardent eyes, His matchless beauty and majestic size; Then soothe his fury, anxious to obtain, A bounding steed of his immortal strain."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "When Rustem woke, and miss'd his favourite horse, The loved companion of his glorious course; Sorrowing he rose, and, hastening thence, began To shape his dubious way to Samengán; \"Reduced to journey thus, alone!\" he said, \"How pierce the gloom which thickens round my head; Burthen'd, on foot, a dreary waste in view, Where shall I bend my steps, what path pursue? The scoffing Turks will cry, 'Behold our might! We won the trophy from the Champion-knight! From him who, reckless of his fame and pride, Thus idly slept, and thus ignobly died,'\" Girding his loins he gathered from the field, His quivered stores, his beamy sword and shield, Harness and saddle-gear were o'er him slung. Bridle and mail across his shoulders hung.[13] Then looking round, with anxious eye, to meet, The broad impression of his charger's feet, The track he hail'd, and following, onward prest. While grief and hope alternate filled his breast."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "O'er vale and wild-wood led, he soon descries. The regal city's shining turrets rise. And when the Champion's near approach is known, The usual homage waits him to the throne. The king, on foot, received his welcome guest With preferred friendship, and his coming blest: But Rustem frowned, and with resentment fired, Spoke of his wrongs, the plundered steed required. \"I've traced his footsteps to your royal town, Here must he be, protected by your crown; But if retained, if not from fetters freed, My vengeance shall o'ertake the felon-deed.\" \"My honored guest!\" the wondering King replied-- \"Shall Rustem's wants or wishes be denied? But let not anger, headlong, fierce, and blind, O'ercloud the virtues of a generous mind. If still within the limits of my reign, The well known courser shall be thine again: For Rakush never can remain concealed, No more than Rustem in the battle-field! Then cease to nourish useless rage, and share With joyous heart my hospitable fare.\""
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "The son of Zál now felt his wrath subdued, And glad sensations in his soul renewed. The ready herald by the King's command, Convened the Chiefs and Warriors of the land; And soon the banquet social glee restored, And China wine-cups glittered on the board; And cheerful song, and music's magic power, And sparkling wine, beguiled the festive hour. The dulcet draughts o'er Rustem's senses stole, And melting strains absorbed his softened soul. But when approached the period of repose, All, prompt and mindful, from the banquet rose; A couch was spread well worthy such a guest, Perfumed with rose and musk; and whilst at rest, In deep sound sleep, the wearied Champion lay, Forgot were all the sorrows of the way."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "One watch had passed, and still sweet slumber shed Its magic power around the hero's head-- When forth Tahmíneh came--a damsel held An amber taper, which the gloom dispelled, And near his pillow stood; in beauty bright, The monarch's daughter struck his wondering sight. Clear as the moon, in glowing charms arrayed, Her winning eyes the light of heaven displayed; Her cypress form entranced the gazer's view, Her waving curls, the heart, resistless, drew, Her eye-brows like the Archer's bended bow; Her ringlets, snares; her cheek, the rose's glow, Mixed with the lily--from her ear-tips hung Rings rich and glittering, star-like; and her tongue, And lips, all sugared sweetness--pearls the while Sparkled within a mouth formed to beguile. Her presence dimmed the stars, and breathing round Fragrance and joy, she scarcely touched the ground, So light her step, so graceful--every part Perfect, and suited to her spotless heart."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Rustem, surprised, the gentle maid addressed, And asked what lovely stranger broke his rest. \"What is thy name,\" he said--\"what dost thou seek Amidst the gloom of night? Fair vision, speak!\""
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"O thou,\" she softly sigh'd, \"of matchless fame! With pity hear, Tahmíneh is my name! The pangs of love my anxious heart employ, And flattering promise long-expected joy; No curious eye has yet these features seen, My voice unheard, beyond the sacred screen.[14] How often have I listened with amaze, To thy great deeds, enamoured of thy praise; How oft from every tongue I've heard the strain, And thought of thee--and sighed, and sighed again. The ravenous eagle, hovering o'er his prey, Starts at thy gleaming sword and flies away: Thou art the slayer of the Demon brood, And the fierce monsters of the echoing wood. Where'er thy mace is seen, shrink back the bold, Thy javelin's flash all tremble to behold. Enchanted with the stories of thy fame, My fluttering heart responded to thy name; And whilst their magic influence I felt, In prayer for thee devotedly I knelt; And fervent vowed, thus powerful glory charms, No other spouse should bless my longing arms. Indulgent heaven propitious to my prayer, Now brings thee hither to reward my care. Túrán's dominions thou hast sought, alone, By night, in darkness--thou, the mighty one! O claim my hand, and grant my soul's desire; Ask me in marriage of my royal sire; Perhaps a boy our wedded love may crown, Whose strength like thine may gain the world's renown. Nay more--for Samengán will keep my word-- Rakush to thee again shall be restored.\""
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "The damsel thus her ardent thought expressed, And Rustem's heart beat joyous in his breast, Hearing her passion--not a word was lost, And Rakush safe, by him still valued most; He called her near; with graceful step she came, And marked with throbbing pulse his kindled flame."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "And now a Múbid, from the Champion-knight, Requests the royal sanction to the rite; O'erjoyed, the King the honoured suit approves, O'erjoyed to bless the doting child he loves, And happier still, in showering smiles around, To be allied to warrior so renowned. When the delighted father, doubly blest, Resigned his daughter to his glorious guest, The people shared the gladness which it gave, The union of the beauteous and the brave. To grace their nuptial day--both old and young, The hymeneal gratulations sung: \"May this young moon bring happiness and joy, And every source of enmity destroy.\" The marriage-bower received the happy pair, And love and transport shower'd their blessings there."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Ere from his lofty sphere the morn had thrown His glittering radiance, and in splendour shone, The mindful Champion, from his sinewy arm, His bracelet drew, the soul-ennobling charm; And, as he held the wondrous gift with pride, He thus address'd his love-devoted bride! \"Take this,\" he said, \"and if, by gracious heaven, A daughter for thy solace should be given, Let it among her ringlets be displayed, And joy and honour will await the maid; But should kind fate increase the nuptial-joy, And make thee mother of a blooming boy, Around his arm this magic bracelet bind, To fire with virtuous deeds his ripening mind; The strength of Sám will nerve his manly form, In temper mild, in valour like the storm; His not the dastard fate to shrink, or turn From where the lions of the battle burn; To him the soaring eagle from the sky Will stoop, the bravest yield to him, or fly; Thus shall his bright career imperious claim The well-won honours of immortal fame!\" Ardent he said, and kissed her eyes and face, And lingering held her in a fond embrace."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "When the bright sun his radiant brow displayed, And earth in all its loveliest hues arrayed, The Champion rose to leave his spouse's side, The warm affections of his weeping bride. For her, too soon the winged moments flew, Too soon, alas! the parting hour she knew; Clasped in his arms, with many a streaming tear, She tried, in vain, to win his deafen'd ear; Still tried, ah fruitless struggle! to impart, The swelling anguish of her bursting heart."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The father now with gratulations due Rustem approaches, and displays to view The fiery war-horse--welcome as the light Of heaven, to one immersed in deepest night; The Champion, wild with joy, fits on the rein, And girds the saddle on his back again; Then mounts, and leaving sire and wife behind, Onward to Sístán rushes like the wind."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "But when returned to Zábul's friendly shade, None knew what joys the Warrior had delayed; Still, fond remembrance, with endearing thought, Oft to his mind the scene of rapture brought."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "When nine slow-circling months had roll'd away, Sweet-smiling pleasure hailed the brightening day-- A wondrous boy Tahmíneh's tears supprest, And lull'd the sorrows of her heart to rest; To him, predestined to be great and brave, The name Sohráb his tender mother gave; And as he grew, amazed, the gathering throng, View'd his large limbs, his sinews firm and strong; His infant years no soft endearment claimed: Athletic sports his eager soul inflamed; Broad at the chest and taper round the loins, Where to the rising hip the body joins; Hunter and wrestler; and so great his speed, He could overtake, and hold the swiftest steed. His noble aspect, and majestic grace, Betrayed the offspring of a glorious race. How, with a mother's ever anxious love, Still to retain him near her heart she strove! For when the father's fond inquiry came, Cautious, she still concealed his birth and name, And feign'd a daughter born, the evil fraught With misery to avert--but vain the thought; Not many years had passed, with downy flight, Ere he, Tahmíneh's wonder and delight, With glistening eye, and youthful ardour warm, Filled her foreboding bosom with alarm. \"O now relieve my heart!\" he said, \"declare, From whom I sprang and breathe the vital air. Since, from my childhood I have ever been, Amidst my play-mates of superior mien; Should friend or foe demand my father's name, Let not my silence testify my shame! If still concealed, you falter, still delay, A mother's blood shall wash the crime away.\""
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"This wrath forego,\" the mother answering cried, \"And joyful hear to whom thou art allied. A glorious line precedes thy destined birth, The mightiest heroes of the sons of earth. The deeds of Sám remotest realms admire, And Zál, and Rustem thy illustrious sire!\""
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "In private, then, she Rustem's letter placed Before his view, and brought with eager haste Three sparkling rubies, wedges three of gold, From Persia sent--\"Behold,\" she said, \"behold Thy father's gifts, will these thy doubts remove The costly pledges of paternal love! Behold this bracelet charm, of sovereign power To baffle fate in danger's awful hour; But thou must still the perilous secret keep, Nor ask the harvest of renown to reap; For when, by this peculiar signet known, Thy glorious father shall demand his son, Doomed from her only joy in life to part, O think what pangs will rend thy mother's heart!-- Seek not the fame which only teems with woe; Afrásiyáb is Rustem's deadliest foe! And if by him discovered, him I dread, Revenge will fail upon thy guiltless head.\""
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "The youth replied: \"In vain thy sighs and tears, The secret breathes and mocks thy idle fears. No human power can fate's decrees control, Or check the kindled ardour of my soul. Then why from me the bursting truth conceal? My father's foes even now my vengeance feel; Even now in wrath my native legions rise, And sounds of desolation strike the skies; Káús himself, hurled from his ivory throne, Shall yield to Rustem the imperial crown, And thou, my mother, still in triumph seen, Of lovely Persia hailed the honoured queen! Then shall Túrán unite beneath my hand, And drive this proud oppressor from the land! Father and Son, in virtuous league combined, No savage despot shall enslave mankind; When Sun and Moon o'er heaven refulgent blaze, Shall little stars obtrude their feeble rays?\"[15]"
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "He paused, and then: \"O mother, I must now My father seek, and see his lofty brow; Be mine a horse, such as a prince demands, Fit for the dusty field, a warrior's hands; Strong as an elephant his form should be, And chested like the stag, in motion free, And swift as bird, or fish; it would disgrace A warrior bold on foot to show his face.\""
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "The mother, seeing how his heart was bent, His day-star rising in the firmament, Commands the stables to be searched to find Among the steeds one suited to his mind; Pressing their backs he tries their strength and nerve, Bent double to the ground their bellies curve; Not one, from neighbouring plain and mountain brought, Equals the wish with which his soul is fraught; Fruitless on every side he anxious turns, Fruitless, his brain with wild impatience burns, But when at length they bring the destined steed, From Rakush bred, of lightning's winged speed, Fleet, as the arrow from the bow-string flies, Fleet, as the eagle darting through the skies, Rejoiced he springs, and, with a nimble bound, Vaults in his seat, and wheels the courser round; \"With such a horse--thus mounted, what remains? Káús, the Persian King, no longer reigns!\" High flushed he speaks--with youthful pride elate, Eager to crush the Monarch's glittering state; He grasps his javelin with a hero's might, And pants with ardour for the field of fight."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Soon o'er the realm his fame expanding spread, And gathering thousands hasten'd to his aid. His Grand-sire, pleased, beheld the warrior-train Successive throng and darken all the plain; And bounteously his treasures he supplied, Camels, and steeds, and gold.--In martial pride, Sohráb was seen--a Grecian helmet graced His brow--and costliest mail his limbs embraced."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Afrásiyáb now hears with ardent joy, The bold ambition of the warrior-boy, Of him who, perfumed with the milky breath Of infancy, was threatening war and death, And bursting sudden from his mother's side, Had launched his bark upon the perilous tide."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "The insidious King sees well the tempting hour, Favouring his arms against the Persian power, And thence, in haste, the enterprise to share, Twelve thousand veterans selects with care; To Húmán and Bármán the charge consigns, And thus his force with Samengán combines; But treacherous first his martial chiefs he prest, To keep the secret fast within their breast:-- \"For this bold youth must not his father know, Each must confront the other as his foe-- Such is my vengeance! With unhallowed rage, Father and Son shall dreadful battle wage! Unknown the youth shall Rustem's force withstand, And soon o'erwhelm the bulwark of the land. Rustem removed, the Persian throne is ours, An easy conquest to confederate powers; And then, secured by some propitious snare, Sohráb himself our galling bonds shall wear. Or should the Son by Rustem's falchion bleed, The father's horror at that fatal deed, Will rend his soul, and 'midst his sacred grief, Káús in vain will supplicate relief.\""
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "The tutored chiefs advance with speed, and bring Imperial presents to the future king; In stately pomp the embassy proceeds; Ten loaded camels, ten unrivalled steeds, A golden crown, and throne, whose jewels bright Gleam in the sun, and shed a sparkling light, A letter too the crafty tyrant sends, And fraudful thus the glorious aim commends.-- \"If Persia's spoils invite thee to the field, Accept the aid my conquering legions yield; Led by two Chiefs of valour and renown, Upon thy head to place the kingly crown.\""
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "Elate with promised fame, the youth surveys The regal vest, the throne's irradiant blaze, The golden crown, the steeds, the sumptuous load Of ten strong camels, craftily bestowed; Salutes the Chiefs, and views on every side, The lengthening ranks with various arms supplied. The march begins--the brazen drums resound,[16] His moving thousands hide the trembling ground; For Persia's verdant land he wields the spear, And blood and havoc mark his groaning rear.[17]"
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "To check the Invader's horror-spreading course, The barrier-fort opposed unequal force; That fort whose walls, extending wide, contained The stay of Persia, men to battle trained. Soon as Hujír the dusky crowd descried, He on his own presumptuous arm relied, And left the fort; in mail with shield and spear, Vaunting he spoke--\"What hostile force is here? What Chieftain dares our war-like realms invade?\" \"And who art thou?\" Sohráb indignant said, Rushing towards him with undaunted look-- \"Hast thou, audacious! nerve and soul to brook The crocodile in fight, that to the strife Singly thou comest, reckless of thy life?\""
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "To this the foe replied--\"A Turk and I Have never yet been bound in friendly tie; And soon thy head shall, severed by my sword, Gladden the sight of Persia's mighty lord, While thy torn limbs to vultures shall be given, Or bleach beneath the parching blast of heaven.\""
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "The youthful hero laughing hears the boast, And now by each continual spears are tost, Mingling together; like a flood of fire The boaster meets his adversary's ire; The horse on which he rides, with thundering pace, Seems like a mountain moving from its base; Sternly he seeks the stripling's loins to wound, But the lance hurtless drops upon the ground; Sohráb, advancing, hurls his steady spear Full on the middle of the vain Hujír, Who staggers in his seat. With proud disdain The youth now flings him headlong on the plain, And quick dismounting, on his heaving breast Triumphant stands, his Khunjer firmly prest, To strike the head off--but the blow was stayed--Trembling, for life, the craven boaster prayed. That mercy granted eased his coward mind, Though, dire disgrace, in captive bonds confined, And sent to Húmán, who amazed beheld How soon Sohráb his daring soul had quelled."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "When Gúrd-afríd, a peerless warrior-dame, Heard of the conflict, and the hero's shame, Groans heaved her breast, and tears of anger flowed, Her tulip cheek with deeper crimson glowed; Speedful, in arms magnificent arrayed, A foaming palfrey bore the martial maid; The burnished mail her tender limbs embraced, Beneath her helm her clustering locks she placed; Poised in her hand an iron javelin gleamed, And o'er the ground its sparkling lustre streamed; Accoutred thus in manly guise, no eye However piercing could her sex descry; Now, like a lion, from the fort she bends, And 'midst the foe impetuously descends; Fearless of soul, demands with haughty tone, The bravest chief, for war-like valour known, To try the chance of fight. In shining arms, Again Sohráb the glow of battle warms; With scornful smiles, \"Another deer!\" he cries, \"Come to my victor-toils, another prize!\" The damsel saw his noose insidious spread, And soon her arrows whizzed around his head; With steady skill the twanging bow she drew, And still her pointed darts unerring flew; For when in forest sports she touched the string, Never escaped even bird upon the wing; Furious he burned, and high his buckler held, To ward the storm, by growing force impell'd; And tilted forward with augmented wrath, But Gúrd-áfríd aspires to cross his path; Now o'er her back the slacken'd bow resounds; She grasps her lance, her goaded courser bounds, Driven on the youth with persevering might-- Unconquer'd courage still prolongs the fight; The stripling Chief shields off the threaten'd blow, Reins in his steed, then rushes on the foe; With outstretch'd arm, he bending backwards hung, And, gathering strength, his pointed javelin flung; Firm through her girdle belt the weapon went, And glancing down the polish'd armour rent. Staggering, and stunned by his superior force, She almost tumbled from her foaming horse, Yet unsubdued, she cut the spear in two, And from her side the quivering fragment drew, Then gain'd her seat, and onward urged her steed, But strong and fleet Sohráb arrests her speed: Strikes off her helm, and sees--a woman's face, Radiant with blushes and commanding grace! Thus undeceived, in admiration lost, He cries, \"A woman, from the Persian host! If Persian damsels thus in arms engage, Who shall repel their warrior's fiercer rage?\" Then from his saddle thong--his noose he drew, And round her waist the twisted loop he threw-- \"Now seek not to escape,\" he sharply said, \"Such is the fate of war, unthinking maid! And, as such beauty seldom swells our pride, Vain thy attempt to cast my toils aside.\""
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "In this extreme, but one resource remained, Only one remedy her hope sustained-- Expert in wiles each siren-art she knew, And thence exposed her blooming face to view; Raising her full black orbs, serenely bright, In all her charms she blazed before his sight; And thus addressed Sohráb--\"O warrior brave, Hear me, and thy imperilled honour save, These curling tresses seen by either host, A woman conquered, whence the glorious boast? Thy startled troops will know, with inward grief, A woman's arm resists their towering chief, Better preserve a warrior's fair renown, And let our struggle still remain unknown, For who with wanton folly would expose A helpless maid, to aggravate her woes; The fort, the treasure, shall thy toils repay, The chief, and garrison, thy will obey, And thine the honours of this dreadful day.\""
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Raptured he gazed, her smiles resistless move The wildest transports of ungoverned love. Her face disclosed a paradise to view, Eyes like the fawn, and cheeks of rosy hue-- Thus vanquished, lost, unconscious of her aim, And only struggling with his amorous flame, He rode behind, as if compelled by fate, And heedless saw her gain the castle-gate."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "Safe with her friends, escaped from brand and spear, Smiling she stands, as if unknown to fear. --The father now, with tearful pleasure wild, Clasps to his heart his fondly-foster'd child; The crowding warriors round her eager bend, And grateful prayers to favouring heaven ascend."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "Now from the walls, she, with majestic air, Exclaims: \"Thou warrior of Túrán! forbear, Why vex thy soul, and useless strife demand! Go, and in peace enjoy thy native land.\" Stern he rejoins: \"Thou beauteous tyrant! say, Though crown'd with charms, devoted to betray, When these proud walls, in dust and ruins laid, Yield no defence, and thou a captive maid, Will not repentance through thy bosom dart, And sorrow soften that disdainful heart?\""
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "Quick she replied: \"O'er Persia's fertile fields The savage Turk in vain his falchion wields; When King Káús this bold invasion hears, And mighty Rustem clad in arms appears! Destruction wide will glut the slippery plain, And not one man of all thy host remain. Alas! that bravery, high as thine, should meet Amidst such promise, with a sure defeat, But not a gleam of hope remains for thee, Thy wondrous valour cannot keep thee free. Avert the fate which o'er thy head impends, Return, return, and save thy martial friends!\""
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "Thus to be scorned, defrauded of his prey, With victory in his grasp--to lose the day! Shame and revenge alternate filled his mind; The suburb-town to pillage he consigned, And devastation--not a dwelling spared; The very owl was from her covert scared; Then thus: \"Though luckless in my aim to-day, To-morrow shall behold a sterner fray; This fort, in ashes, scattered o'er the plain.\" He ceased--and turned towards his troops again; There, at a distance from the hostile power, He brooding waits the slaughter-breathing hour."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "Meanwhile the sire of Gúrd-afríd, who now Governed the fort, and feared the warrior's vow; Mournful and pale, with gathering woes opprest, His distant Monarch trembling thus addrest. But first invoked the heavenly power to shed Its choicest blessings o'er his royal head. \"Against our realm with numerous foot and horse, A stripling warrior holds his ruthless course. His lion-breast unequalled strength betrays, And o'er his mien the sun's effulgence plays: Sohráb his name; like Sám Suwár he shows, Or Rustem terrible amidst his foes. The bold Hujír lies vanquished on the plain, And drags a captive's ignominious chain; Myriads of troops besiege our tottering wall, And vain the effort to suspend its fall. Haste, arm for fight, this Tartar-power withstand, Let sweeping Vengeance lift her flickering brand; Rustem alone may stem the roaring wave, And, prompt as bold, his groaning country save. Meanwhile in flight we place our only trust, Ere the proud ramparts crumble in the dust.\""
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "Swift flies the messenger through secret ways, And to the King the dreadful tale conveys, Then passed, unseen, in night's concealing shade, The mournful heroes and the warrior maid."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Soon as the sun with vivifying ray, Gleams o'er the landscape, and renews the day; The flaming troops the lofty walls surround, With thundering crash the bursting gates resound. Already are the captives bound, in thought, And like a herd before the conqueror brought; Sohráb, terrific o'er the ruin, views His hopes deceived, but restless still pursues. An empty fortress mocks his searching eye, No steel-clad chiefs his burning wrath defy; No warrior-maid reviving passion warms, And soothes his soul with fondly-valued charms. Deep in his breast he feels the amorous smart, And hugs her image closer to his heart. \"Alas! that Fate should thus invidious shroud The moon's soft radiance in a gloomy cloud; Should to my eyes such winning grace display, Then snatch the enchanter of my soul away! A beauteous roe my toils enclosed in vain, Now I, her victim, drag the captive's chain; Strange the effects that from her charms proceed, I gave the wound, and I afflicted bleed! Vanquished by her, I mourn the luckless strife; Dark, dark, and bitter, frowns my morn of life. A fair unknown my tortured bosom rends, Withers each joy, and every hope suspends.\""
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Impassioned thus Sohráb in secret sighed, And sought, in vain, o'er-mastering grief to hide. Can the heart bleed and throb from day to day, And yet no trace its inmost pangs betray? Love scorns control, and prompts the labouring sigh, Pales the red lip, and dims the lucid eye; His look alarmed the stern Túránian Chief, Closely he mark'd his heart-corroding grief;-- And though he knew not that the martial dame, Had in his bosom lit the tender flame[18]; Full well he knew such deep repinings prove, The hapless thraldom of disastrous love. Full well he knew some idol's musky hair, Had to his youthful heart become a snare, But still unnoted was the gushing tear, Till haply he had gained his private ear:-- \"In ancient times, no hero known to fame, Not dead to glory e'er indulged the flame; Though beauty's smiles might charm a fleeting hour, The heart, unsway'd, repelled their lasting power. A warrior Chief to trembling love a prey? What! weep for woman one inglorious day? Canst thou for love's effeminate control, Barter the glory of a warrior's soul? Although a hundred damsels might be gained, The hero's heart shall still be free, unchained. Thou art our leader, and thy place the field Where soldiers love to fight with spear and shield; And what hast thou to do with tears and smiles, The silly victim to a woman's wiles? Our progress, mark! from far Túrán we came, Through seas of blood to gain immortal fame; And wilt thou now the tempting conquest shun, When our brave arms this Barrier-fort have won? Why linger here, and trickling sorrows shed, Till mighty Káús thunders o'er thy head! Till Tús, and Gíw, and Gúdarz, and Báhrám, And Rustem brave, Ferámurz, and Rehám, Shall aid the war! A great emprise is thine, At once, then, every other thought resign; For know the task which first inspired thy zeal, Transcends in glory all that love can feel. Rise, lead the war, prodigious toils require Unyielding strength, and unextinguished fire; Pursue the triumph with tempestuous rage, Against the world in glorious strife engage, And when an empire sinks beneath thy sway (O quickly may we hail the prosperous day), The fickle sex will then with blooming charms, Adoring throng to bless thy circling arms!\""
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Húmán's warm speech, the spirit-stirring theme, Awoke Sohráb from his inglorious dream. No more the tear his faded cheek bedewed, Again ambition all his hopes renewed: Swell'd his bold heart with unforgotten zeal, The noble wrath which heroes only feel; Fiercely he vowed at one tremendous stroke, To bow the world beneath the tyrant's yoke! \"Afrásiyáb,\" he cried, \"shall reign alone, The mighty lord of Persia's gorgeous throne!\""
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Burning, himself, to rule this nether sphere, These welcome tidings charmed the despot's ear. Meantime Káús, this dire invasion known, Had called his chiefs around his ivory throne: There stood Gurgín, and Báhrám, and Gushwád, And Tús, and Gíw, and Gúdárz, and Ferhád; To them he read the melancholy tale, Gust'hem had written of the rising bale; Besought their aid and prudent choice, to form Some sure defence against the threatening storm. With one consent they urge the strong request, To summon Rustem from his rural rest.-- Instant a warrior-delegate they send, And thus the King invites his patriot-friend,"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "\"To thee all praise, whose mighty arm alone, Preserves the glory of the Persian throne! Lo! Tartar hordes our happy realms invade; The tottering state requires thy powerful aid; A youthful Champion leads the ruthless host, His savage country's widely-rumoured boast. The Barrier-fortress sinks beneath his sway, Hujír is vanquished, ruin tracks his way; Strong as a raging elephant in fight, No arm but thine can match his furious might. Mázinderán thy conquering prowess knew; The Demon-king thy trenchant falchion slew, The rolling heavens, abash'd with fear, behold Thy biting sword, thy mace adorned with gold! Fly to the succour of a King distress'd, Proud of thy love, with thy protection blest. When o'er the nation dread misfortunes lower, Thou art the refuge, thou the saving power. The chiefs assembled claim thy patriot vows, Give to thy glory all that life allows; And while no whisper breathes the direful tale, O, let thy Monarch's anxious prayers prevail.\""
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Closing the fragrant page[19] o'ercome with dread, The afflicted King to Gíw, the warrior, said:-- \"Go, bind the saddle on thy fleetest horse, Outstrip the tempest in thy rapid course, To Rustem swift his country's woes convey, Too true art thou to linger on the way; Speed, day and night--and not one instant wait, Whatever hour may bring thee to his gate.\""
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Followed no pause--to Gíw enough was said, Nor rest, nor taste of food, his speed delayed. And when arrived, where Zábul's bowers exhale Ambrosial sweets and scent the balmy gale, The sentinel's loud voice in Rustem's ear, Announced a messenger from Persia, near; The Chief himself amidst his warriors stood, Dispensing honours to the brave and good, And soon as Gíw had joined the martial ring, (The sacred envoy of the Persian King), He, with becoming loyalty inspired, Asked what the monarch, what the state required; But Gíw, apart, his secret mission told-- The written page was speedily unrolled."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Struck with amazement, Rustem--\"Now on earth A warrior-knight of Sám's excelling worth? Whence comes this hero of the prosperous star? I know no Turk renowned, like him, in war; He bears the port of Rustem too, 'tis said, Like Sám, like Narímán, a warrior bred! He cannot be my son, unknown to me; Reason forbids the thought--it cannot be! At Samengán, where once affection smiled, To me Tahmíneh bore her only child, That was a daughter?\" Pondering thus he spoke, And then aloud--\"Why fear the invader's yoke? Why trembling shrink, by coward thoughts dismayed, Must we not all in dust, at length, be laid? But come, to Nírum's palace, haste with me, And there partake the feast--from sorrow free; Breathe, but awhile--ere we our toils renew, And moisten the parched lip with needful dew. Let plans of war another day decide, We soon shall quell this youthful hero's pride. The force of fire soon flutters and decays When ocean, swelled by storms, its wrath displays. What danger threatens! whence the dastard fear! Rest, and at leisure share a warrior's cheer.\""
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "In vain the Envoy prest the Monarch's grief; The matchless prowess of the stripling chief; How brave Hujír had felt his furious hand; What thickening woes beset the shuddering land. But Rustem, still, delayed the parting day, And mirth and feasting rolled the hours away; Morn following morn beheld the banquet bright, Music and wine prolonged the genial rite; Rapt by the witchery of the melting strain, No thought of Káús touch'd his swimming brain.[20]"
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "The trumpet's clang, on fragrant breezes borne, Now loud salutes the fifth revolving morn; The softer tones which charm'd the jocund feast, And all the noise of revelry, had ceased, The generous horse, with rich embroidery deckt, Whose gilded trappings sparkling light reflect, Bears with majestic port the Champion brave, And high in air the victor-banners wave. Prompt at the martial call, Zúára leads His veteran troops from Zábul's verdant meads.[21]"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Ere Rustem had approached his journey's end, Tús, Gúdarz, Gushwád, met their champion-friend With customary honours; pleased to bring The shield of Persia to the anxious King. But foaming wrath the senseless monarch swayed; His friendship scorned, his mandate disobeyed, Beneath dark brows o'er-shadowing deep, his eye Red gleaming shone, like lightning through the sky And when the warriors met his sullen view, Frowning revenge, still more enraged he grew:-- Loud to the Envoy thus he fiercely cried:-- \"Since Rustem has my royal power defied, Had I a sword, this instant should his head Roll on the ground; but let him now be led Hence, and impaled alive.\"[22] Astounded Gíw Shrunk from such treatment of a knight so true; But this resistance added to the flame, And both were branded with revolt and shame; Both were condemned, and Tús, the stern decree Received, to break them on the felon-tree. Could daring insult, thus deliberate given, Escape the rage of one to frenzy driven? No, from his side the nerveless Chief was flung, Bent to the ground. Away the Champion sprung; Mounted his foaming horse, and looking round-- His boiling wrath thus rapid utterance found:-- \"Ungrateful King, thy tyrant acts disgrace The sacred throne, and more, the human race; Midst clashing swords thy recreant life I saved, And am I now by Tús contemptuous braved?[23] On me shall Tús, shall Káús dare to frown? On me, the bulwark of the regal crown? Wherefore should fear in Rustem's breast have birth, Káús, to me, a worthless clod of earth! Go, and thyself Sohráb's invasion stay, Go, seize the plunderers growling o'er their prey! Wherefore to others give the base command? Go, break him on the tree with thine own hand. Know, thou hast roused a warrior, great and free, Who never bends to tyrant Kings like thee! Was not this untired arm triumphant seen, In Misser, Rúm, Mázinderán, and Chín! And must I shrink at thy imperious nod! Slave to no Prince, I only bow to God. Whatever wrath from thee, proud King! may fall, For thee I fought, and I deserve it all. The regal sceptre might have graced my hand, I kept the laws, and scorned supreme command. When Kai-kobád and Alberz mountain strayed, I drew him thence, and gave a warrior's aid; Placed on his brows the long-contested crown, Worn by his sires, by sacred right his own; Strong in the cause, my conquering arms prevailed, Wouldst thou have reign'd had Rustem's valour failed When the White Demon raged in battle-fray, Wouldst thou have lived had Rustem lost the day?\" Then to his friends: \"Be wise, and shun your fate, Fly the wide ruin which o'erwhelms the state; The conqueror comes--the scourge of great and small, And vultures, following fast, will gorge on all. Persia no more its injured Chief shall view\"-- He said, and sternly from the court withdrew."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "The warriors now, with sad forebodings wrung, Torn from that hope to which they proudly clung, On Gúdarz rest, to soothe with gentle sway, The frantic King, and Rustem's wrath allay. With bitter grief they wail misfortune's shock, No shepherd now to guard the timorous flock. Gúdarz at length, with boding cares imprest, Thus soothed the anger in the royal breast. \"Say, what has Rustem done, that he should be Impaled upon the ignominious tree? Degrading thought, unworthy to be bred Within a royal heart, a royal head. Hast thou forgot when near the Caspian-wave, Defeat and ruin had appalled the brave, When mighty Rustem struck the dreadful blow, And nobly freed thee from the savage foe? Did Demons huge escape his flaming brand? Their reeking limbs bestrew'd the slippery strand. Shall he for this resign his vital breath? What! shall the hero's recompense be death? But who will dare a threatening step advance, What earthly power can bear his withering glance? Should he to Zábul fired with wrongs return, The plunder'd land will long in sorrow mourn! This direful presage all our warriors feel, For who can now oppose the invader's steel; Thus is it wise thy champion to offend, To urge to this extreme thy warrior-friend? Remember, passion ever scorns control, And wisdom's mild decrees should rule a Monarch's soul.\"[24] Káús, relenting, heard with anxious ear, And groundless wrath gave place to shame and fear; \"Go then,\" he cried, \"his generous aid implore, And to your King the mighty Chief restore!\""
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "When Gúdarz rose, and seized his courser's rein, A crowd of heroes followed in his train. To Rustem, now (respectful homage paid), The royal prayer he anxious thus conveyed. \"The King, repentant, seeks thy aid again, Grieved to the heart that he has given thee pain; But though his anger was unjust and strong, Thy country still is guiltless of the wrong, And, therefore, why abandoned thus by thee? Thy help the King himself implores through me.\" Rustem rejoined: \"Unworthy the pretence, And scorn and insult all my recompense? Must I be galled by his capricious mood? I, who have still his firmest champion stood? But all is past, to heaven alone resigned, No human cares shall more disturb my mind!\" Then Gúdarz thus (consummate art inspired His prudent tongue, with all that zeal required); \"When Rustem dreads Sohráb's resistless power, Well may inferiors fly the trying hour! The dire suspicion now pervades us all, Thus, unavenged, shall beauteous Persia fall! Yet, generous still, avert the lasting shame, O, still preserve thy country's glorious fame! Or wilt thou, deaf to all our fears excite, Forsake thy friends, and shun the pending fight? And worse, O grief! in thy declining days, Forfeit the honours of thy country's praise?\" This artful censure set his soul on fire, But patriot firmness calm'd his burning ire; And thus he said--\"Inured to war's alarms, Did ever Rustem shun the din of arms? Though frowns from Káús I disdain to bear, My threatened country claims a warrior's care.\" He ceased, and prudent joined the circling throng, And in the public good forgot the private wrong."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "From far the King the generous Champion viewed, And rising, mildly thus his speech pursued:-- \"Since various tempers govern all mankind, Me, nature fashioned of a froward mind;[25] And what the heavens spontaneously bestow, Sown by their bounty must for ever grow. The fit of wrath which burst within me, soon Shrunk up my heart as thin as the new moon;[26] Else had I deemed thee still my army's boast, Source of my regal power, beloved the most, Unequalled. Every day, remembering thee, I drain the wine cup, thou art all to me; I wished thee to perform that lofty part, Claimed by thy valour, sanctioned by my heart; Hence thy delay my better thoughts supprest, And boisterous passions revelled in my breast; But when I saw thee from my Court retire In wrath, repentance quenched my burning ire. O, let me now my keen contrition prove, Again enjoy thy fellowship and love: And while to thee my gratitude is known, Still be the pride and glory of my throne.\""
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "Rustem, thus answering said:--\"Thou art the King, Source of command, pure honour's sacred spring; And here I stand to follow thy behest, Obedient ever--be thy will expressed, And services required--Old age shall see My loins still bound in fealty to thee.\""
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "To this the King:--\"Rejoice we then to-day, And on the morrow marshal our array.\" The monarch quick commands the feast of joy, And social cares his buoyant mind employ, Within a bower, beside a crystal spring,[27] Where opening flowers, refreshing odours fling, Cheerful he sits, and forms the banquet scene, In regal splendour on the crowded green; And as around he greets his valiant bands, Showers golden presents from his bounteous hands;[28] Voluptuous damsels trill the sportive lay, Whose sparkling glances beam celestial day; Fill'd with delight the heroes closer join, And quaff till midnight cups of generous wine."
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "Soon as the Sun had pierced the veil of night, And o'er the prospect shed his earliest light, Káús, impatient, bids the clarions sound, The sprightly notes from hills and rocks rebound; His treasure gates are opened:--and to all A largess given; obedient to the call, His subjects gathering crowd the mountain's brow, And following thousands shade the vales below; With shields, in armor, numerous legions bend; And troops of horse the threatening lines extend. Beneath the tread of heroes fierce and strong, By war's tumultuous fury borne along, The firm earth shook: the dust, in eddies driven, Whirled high in air, obscured the face of heaven; Nor earth, nor sky appeared--all, seeming lost, And swallowed up by that wide-spreading host. The steely armour glitter'd o'er the fields,[29] And lightnings flash'd from gold emblazoned shields; Thou wouldst have said, the clouds had burst in showers, Of sparkling amber o'er the martial powers.[30] Thus, close embodied, they pursued their way, And reached the Barrier-fort in terrible array."
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "The legions of Túrán, with dread surprise, Saw o'er the plain successive myriads rise; And showed them to Sohráb; he, mounting high The fort, surveyed them with a fearless eye; To Húmán, who, with withering terror pale, Had marked their progress through the distant vale, He pointed out the sight, and ardent said:-- \"Dispel these woe-fraught broodings from thy head, I wage the war, Afrásiyáb! for thee, And make this desert seem a rolling sea.\" Thus, while amazement every bosom quell'd, Sohráb, unmoved, the coming storm beheld, And boldly gazing on the camp around, Raised high the cup with wine nectareous crowned: O'er him no dreams of woe insidious stole, No thought but joy engaged his ardent soul."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "The Persian legions had restrained their course, Tents and pavilions, countless foot and horse, Clothed all the spacious plain, and gleaming threw Terrific splendours on the gazer's view. But when the Sun had faded in the west, And night assumed her ebon-coloured vest, The mighty Chief approached the sacred throne, And generous thus made danger all his own: \"The rules of war demand a previous task, To watch this dreadful foe I boldly ask; With wary step the wondrous youth to view, And mark the heroes who his path pursue.\" The King assents: \"The task is justly thine, Favourite of heaven, inspired by power divine.\" In Turkish habit, secretly arrayed, The lurking Champion wandered through the shade And, cautious, standing near the palace gate, Saw how the chiefs were ranged in princely state."
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "What time Sohráb his thoughts to battle turned, And for the first proud fruits of conquest burned, His mother called a warrior to his aid, And Zinda-ruzm his sister's call obeyed. To him Tahmineh gave her only joy, And bade him shield the bold adventurous boy: \"But, in the dreadful strife, should danger rise, Present my child before his father's eyes! By him protected, war may rage in vain, Though he may never bless these arms again!\" This guardian prince sat on the stripling's right, Viewing the imperial banquet with delight. Húmán and Bármán, near the hero placed, In joyous pomp the full assembly graced; A hundred valiant Chiefs begirt the throne, And, all elate, were chaunting his renown. Closely concealed, the gay and splendid scene, Rustem contemplates with astonished mien; When Zind, retiring, marks the listener nigh, Watching the festal train with curious eye; And well he knew, amongst his Tartar host, Such towering stature not a Chief could boast-- \"What spy is here, close shrouded by the night? Art thou afraid to face the beams of light?\" But scarcely from his lips these words had past, Ere, fell'd to earth, he groaning breathed his last; Unseen he perish'd, fate decreed the blow, To add fresh keenness to a parent's woe."
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "Meantime Sohráb, perceiving the delay In Zind's return, looked round him with dismay; The seat still vacant--but the bitter truth, Full soon was known to the distracted youth; Full soon he found that Zinda-ruzm was gone, His day of feasting and of glory done; Speedful towards the fatal spot he ran, Where slept in bloody vest the slaughtered man."
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "The lighted torches now displayed the dead, Stiff on the ground his graceful limbs were spread; Sad sight to him who knew his guardian care, Now doom'd a kinsman's early loss to bear; Anguish and rage devour his breast by turns, He vows revenge, then o'er the warrior mourns: And thus exclaims to each afflicted Chief:-- \"No time, to-night, my friends, for useless grief; The ravenous wolf has watched his helpless prey, Sprung o'er the fold, and borne its flower away; But if the heavens my lifted arm befriend, Upon the guilty shall my wrath descend-- Unsheathed, this sword shall dire revenge pursue, And Persian blood the thirsty land bedew.\" Frowning he paused, and check'd the spreading woe, Resumed the feast, and bid the wine-cup flow!"
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "The valiant Gíw was sentinel that night, And marking dimly by the dubious light, A warrior form approach, he claps his hands, With naked sword and lifted shield he stands, To front the foe; but Rustem now appears, And Gíw the secret tale astonished hears; From thence the Champion on the Monarch waits. The power and splendour of Sohráb relates: \"Circled by Chiefs this glorious youth was seen, Of lofty stature and majestic mien; No Tartar region gave the hero birth: Some happier portion of the spacious earth; Tall, as the graceful cypress he appears; Like Sám, the brave, his warrior-front he rears!\" Then having told how, while the banquet shone, Unhappy Zind had sunk, without a groan; He forms his conquering bands in close array, And, cheer'd by wine, awaits the coming day."
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "When now the Sun his golden buckler raised, And genial light through heaven diffusive blazed, Sohráb in mail his nervous limbs attired, For dreadful wrath his soul to vengeance fired; With anxious haste he bent the yielding cord, Ring within ring, more fateful than the sword; Around his brows a regal helm he bound; His dappled steed impatient stampt the ground. Thus armed, ascending where the eye could trace The hostile force, and mark each leader's place, He called Hujír, the captive Chief addressed, And anxious thus, his soul's desire expressed: \"A prisoner thou, if freedom's voice can charm, And dungeon darkness fill thee with alarm, That freedom merit, shun severest woe, And truly answer what I ask to know! If rigid truth thy ready speech attend, Honours and wealth shall dignify my friend.\""
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "\"Obedient to thy wish,\" Hujír replied, \"Truth thou shalt hear, whatever chance betide; For what on earth to praise has better claim? Falsehood but leads to sorrow and to shame!\""
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "\"Then say, what heroes lead the adverse host, Where they command, what dignities they boast; Say, where does Káús hold his kingly state, Where Tús, and Gúdarz, on his bidding wait; Gíw, Gust'hem, and Báhrám--all known to thee, And where is mighty Rustem, where is he? Look round with care, their names and power display Or instant death shall end thy vital day.\""
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "\"Where yonder splendid tapestries extend, And o'er pavilions bright infolding bend, A throne triumphal shines with sapphire rays, And golden suns upon the banners blaze; Full in the centre of the hosts--and round The tent a hundred elephants are bound, As if, in pomp, he mocked the power of fate; There royal Káús holds his kingly state."
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "\"In yonder tent which numerous guards protect, Where front and rear illustrious Chiefs collect; Where horsemen wheeling seem prepared for fight, Their golden armour glittering in the light; Tús lifts his banners, deck'd with royal pride, Feared by the brave, the soldier's friend and guide.[31]"
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "\"That crimson tent where spear-men frowning stand, And steel-clad veterans form a threatening band, Holds mighty Gúdarz, famed for martial fire, Of eighty valiant sons the valiant sire; Yet strong in arms, he shuns inglorious ease, His lion-banners floating in the breeze."
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "\"But mark, that green pavilion; girt around By Persian nobles, speaks the Chief renowned; Fierce on the standard, worked with curious art, A hideous dragon writhing seems to start; Throned in his tent the warrior's form is seen, Towering above the assembled host between! A generous horse before him snorts and neighs, The trembling earth the echoing sound conveys. Like him no Champion ever met my eyes, No horse like that for majesty and size; What Chief illustrious bears a port so high? Mark, how his standard flickers through the sky!\""
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "Thus ardent spoke Sohráb. Hujír dismayed, Paused ere reply the dangerous truth betrayed. Trembling for Rustem's life the captive groaned; Basely his country's glorious boast disowned, And said the Chief from distant China came-- Sohráb abrupt demands the hero's name; The name unknown, grief wrings his aching heart, And yearning anguish speeds her venom'd dart; To him his mother gave the tokens true, He sees them all, and all but mock his view. When gloomy fate descends in evil hour, Can human wisdom bribe her favouring power? Yet, gathering hope, again with restless mien He marks the Chiefs who crowd the warlike scene."
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "\"Where numerous heroes, horse and foot, appear, And brazen trumpets thrill the listening ear, Behold the proud pavilion of the brave! With wolves emboss'd the silken banners wave. The throne's bright gems with radiant lustre glow, Slaves rank'd around with duteous homage bow. What mighty Chieftain rules his cohorts there? His name and lineage, free from guile, declare!\""
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "\"Gíw, son of Gúdarz, long a glorious name, Whose prowess even transcends his father's fame.\"[32]"
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "\"Mark yonder tent of pure and dazzling white, Whose rich brocade reflects a quivering light; An ebon seat surmounts the ivory throne; There frowns in state a warrior of renown. The crowding slaves his awful nod obey, And silver moons around his banners play; What Chief, or Prince, has grasped the hostile sword? Fríburz, the son of Persia's mighty lord.\" Again: \"These standards show one champion more, Upon their centre flames the savage boar;[33] The saffron-hued pavilion bright ascends, Whence many a fold of tasselled fringe depends; Who there presides?\""
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "\"Guráz, from heroes sprung, Whose praise exceeds the power of mortal tongue.\""
+    },
+    {
+      "id": "s1-35",
+      "sceneId": "s1",
+      "text": "Thus, anxious, he explored the crowded field, Nor once the secret of his birth revealed;[34] Heaven will'd it so. Pressed down by silent grief, Surrounding objects promised no relief. This world to mortals still denies repose, And life is still the scene of many woes. Again his eye, instinctive turned, descried The green pavilion, and the warrior's pride. Again he cries: \"O tell his glorious name; Yon gallant horse declares the hero's fame!\" But false Hujír the aspiring hope repelled, Crushed the fond wish, the soothing balm withheld, \"And why should I conceal his name from thee? His name and title are unknown to me.\""
+    },
+    {
+      "id": "s1-36",
+      "sceneId": "s1",
+      "text": "Then thus Sohráb--\"In all that thou hast said, No sign of Rustem have thy words conveyed; Thou sayest he leads the Persian host to arms, With him has battle lost its boisterous charms? Of him no trace thy guiding hand has shown; Can power supreme remain unmark'd, unknown?\""
+    },
+    {
+      "id": "s1-37",
+      "sceneId": "s1",
+      "text": "\"Perhaps returned to Zábul's verdant bowers, He undisturbed enjoys his peaceful hours, The vernal banquets may constrain his stay, And rural sports invite prolonged delay.\""
+    },
+    {
+      "id": "s1-38",
+      "sceneId": "s1",
+      "text": "\"Ah! say not thus; the Champion of the world, Shrink from the kindling war with banners furled! It cannot be! Say where his lightnings dart, Show me the warrior, all thou know'st impart; Treasures uncounted shall be thy reward, Death changed to life, my friendship more than shared. Dost thou not know what, in the royal ear, The Múbid said--befitting Kings to hear? 'Untold, a secret is a jewel bright, Yet profitless whilst hidden from the light; But when revealed, in words distinctly given, It shines refulgent as the sun through heaven.'\"[35]"
+    },
+    {
+      "id": "s1-39",
+      "sceneId": "s1",
+      "text": "To him, Hujír evasive thus replies: \"Through all the extended earth his glory flies! Whenever dangers round the nation close, Rustem approaches, and repels its foes; And shouldst thou see him mix in mortal strife, Thou'dst think 'twere easier to escape with life From tiger fell, or demon--or the fold Of the chafed dragon, than his dreadful hold-- When fiercest battle clothes the fields with fire, Before his rage embodied hosts retire!\""
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "\"And where didst thou encountering armies see? Why Rustem's praise so proudly urge to me? Let us but meet and thou shalt trembling know, How fierce that wrath which bids my bosom glow: If living flames express his boundless ire, O'erwhelming waters quench consuming fire! And deepest darkness, glooms of ten-fold night, Fly from the piercing beams of radiant light.\""
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Hujír shrunk back with undissembled dread, And thus communing with himself, he said-- \"Shall I, regardless of my country, guide To Rustem's tent this furious homicide? And witness there destruction to our host? The bulwark of the land for ever lost! What Chief can then the Tartar power restrain! Káús dethroned, the mighty Rustem slain! Better a thousand deaths should lay me low, Than, living, yield such triumph to the foe. For in this struggle should my blood be shed, No foul dishonour can pursue me, dead; No lasting shame my father's age oppress, Whom eighty sons of martial courage bless![36] They for their brother slain, incensed will rise, And pour their vengeance on my enemies.\" Then thus aloud--\"Can idle words avail? Why still of Rustem urge the frequent tale? Why for the elephant-bodied hero ask? Thee, he will find--no uncongenial task. Why seek pretences to destroy my life? Strike, for no Rustem views th' unequal strife!\""
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Sohráb confused, with hopeless anguish mourned, Back from the lofty walls he quick returned, And stood amazed."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Now war and vengeance claim, Collected thought and deeds of mighty name; The jointed mail his vigorous body clasps, His sinewy hand the shining javelin grasps; Like a mad elephant he meets the foe, His steed a moving mountain--deeply glow His cheeks with passionate ardour, as he flies Resistless onwards, and with sparkling eyes, Full on the centre drives his daring horse--[37] The yielding Persians fly his furious course; As the wild ass impetuous springs away, When the fierce lion thunders on his prey. By every sign of strength and martial power, They think him Rustem in his direst hour; On Káús now his proud defiance falls, Scornful to him the stripling warrior calls: \"And why art thou misnamed of royal strain? What work of thine befits the tented plain? This thirsty javelin seeks thy coward breast; Thou and thy thousands doomed to endless rest. True to my oath, which time can never change, On thee, proud King! I hurl my just revenge. The blood of Zind inspires my burning hate, And dire resentment hurries on thy fate; Whom canst thou send to try the desperate strife? What valiant Chief, regardless of his life? Where now can Fríburz, Tús, Gíw, Gúdarz, be, And the world-conquering Rustem, where is he?\""
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "No prompt reply from Persian lip ensued-- Then rushing on, with demon-strength endued, Sohráb elate his javelin waved around, And hurled the bright pavilion to the ground; With horror Káús feels destruction nigh, And cries: \"For Rustem's needful succour fly! This frantic Turk, triumphant on the plain, Withers the souls of all my warrior train.\" That instant Tús the mighty Champion sought, And told the deeds the Tartar Chief had wrought; \"'Tis ever thus, the brainless Monarch's due! Shame and disaster still his steps pursue!\" This saying, from his tent he soon descried, The wild confusion spreading far and wide; And saddled Rakush--whilst, in deep dismay, Girgín incessant cried--\"Speed, speed, away.\" Rehám bound on the mace, Tús promptly ran, And buckled on the broad Burgustuwán. Rustem, meanwhile, the thickening tumult hears And in his heart, untouched by human fears, Says: \"What is this, that feeling seems to stun! This battle must be led by Ahirmun,[38] The awful day of doom must have begun.\" In haste he arms, and mounts his bounding steed, The growing rage demands redoubled speed; The leopard's skin he o'er his shoulders throws, The regal girdle round his middle glows.[39] High wave his glorious banners; broad revealed, The pictured dragons glare along the field Borne by Zúára. When, surprised, he views Sohráb, endued with ample breast and thews, Like Sám Suwár, he beckons him apart; The youth advances with a gallant heart, Willing to prove his adversary's might, By single combat to decide the fight; And eagerly, \"Together brought,\" he cries, \"Remote from us be foemen, and allies, And though at once by either host surveyed, Ours be the strife which asks no mortal aid.\""
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Rustem, considerate, view'd him o'er and o'er, So wondrous graceful was the form he bore, And frankly said: \"Experience flows with age, And many a foe has felt my conquering rage; Much have I seen, superior strength and art Have borne my spear thro' many a demon's heart; Only behold me on the battle plain, Wait till thou see'st this hand the war sustain, And if on thee should changeful fortune smile, Thou needst not fear the monster of the Nile![40] But soft compassion melts my soul to save, A youth so blooming with a mind so brave!\""
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "The generous speech Sohráb attentive heard, His heart expanding glowed at every word: \"One question answer, and in answering show, That truth should ever from a warrior flow; Art thou not Rustem, whose exploits sublime, Endear his name thro' every distant clime?\""
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "\"I boast no station of exalted birth, No proud pretensions to distinguished worth; To him inferior, no such powers are mine, No offspring I of Nírum's glorious line!\"[41]"
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "The prompt denial dampt his filial joy, All hope at once forsook the Warrior-boy, His opening day of pleasure, and the bloom Of cherished life, immersed in shadowy gloom. Perplexed with what his mother's words implied;-- A narrow space is now prepared, aside, For single combat. With disdainful glance Each boldly shakes his death-devoting lance, And rushes forward to the dubious fight; Thoughts high and brave their burning souls excite; Now sword to sword; continuous strokes resound, Till glittering fragments strew the dusty ground. Each grasps his massive club with added force,[42] The folding mail is rent from either horse; It seemed as if the fearful day of doom Had, clothed in all its withering terrors, come. Their shattered corslets yield defence no more-- At length they breathe, defiled with dust and gore; Their gasping throats with parching thirst are dry, Gloomy and fierce they roll the lowering eye, And frown defiance. Son and Father driven To mortal strife! are these the ways of Heaven? The various swarms which boundless ocean breeds, The countless tribes which crop the flowery meads, All know their kind, but hapless man alone Has no instinctive feeling for his own! Compell'd to pause, by every eye surveyed, Rustem, with shame, his wearied strength betrayed; Foil'd by a youth in battle's mid career, His groaning spirit almost sunk with fear; Recovering strength, again they fiercely meet; Again they struggle with redoubled heat; With bended bows they furious now contend; And feather'd shafts in rattling showers descend; Thick as autumnal leaves they strew the plain, Harmless their points, and all their fury vain. And now they seize each other's girdle-band; Rustem, who, if he moved his iron hand, Could shake a mountain, and to whom a rock Seemed soft as wax, tried, with one mighty stroke, To hurl him thundering from his fiery steed, But Fate forbids the gallant youth should bleed; Finding his wonted nerves relaxed, amazed That hand he drops which never had been raised Uncrowned with victory, even when demons fought, And pauses, wildered with despairing thought. Sohráb again springs with terrific grace, And lifts, from saddle-bow, his ponderous mace; With gather'd strength the quick-descending blow Wounds in its fall, and stuns the unwary foe; Then thus contemptuous: \"All thy power is gone; Thy charger's strength exhausted as thy own; Thy bleeding wounds with pity I behold; O seek no more the combat of the bold!\""
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "Rustem to this reproach made no reply, But stood confused--meanwhile, tumultuously The legions closed; with soul-appalling force, Troop rushed on troop, o'erwhelming man and horse; Sohráb, incensed, the Persian host engaged, Furious along the scattered lines he raged; Fierce as a wolf he rode on every side, The thirsty earth with streaming gore was dyed. Midst the Túránians, then, the Champion sped, And like a tiger heaped the fields with dead. But when the Monarch's danger struck his thought, Returning swift, the stripling youth he sought; Grieved to the soul, the mighty Champion view'd His hands and mail with Persian blood imbrued; And thus exclaimed with lion-voice--\"O say, Why with the Persians dost thou war to-day? Why not with me alone decide the fight, Thou'rt like a wolf that seek'st the fold by night.\""
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "To this Sohráb his proud assent expressed-- And Rustem, answering, thus the youth addressed. \"Night-shadows now are thickening o'er the plain, The morrow's sun must see our strife again; In wrestling let us then exert our might!\" He said, and eve's last glimmer sunk in night"
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "Thus as the skies a deeper gloom displayed, The stripling's life was hastening into shade!"
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "The gallant heroes to their tents retired, The sweets of rest their wearied limbs required: Sohráb, delighted with his brave career, Describes the fight in Húmán's anxious ear: Tells how he forced unnumbered Chiefs to yield, And stood himself the victor of the field! \"But let the morrow's dawn,\" he cried, \"arrive, And not one Persian shall the day survive; Meanwhile let wine its strengthening balm impart, And add new zeal to every drooping heart.\" The valiant Gíw with Rustem pondering stood, And, sad, recalled the scene of death and blood; Grief and amazement heaved the frequent sigh, And almost froze the crimson current dry. Rustem, oppressed by Gíw's desponding thought, Amidst his Chiefs the mournful Monarch sought; To him he told Sohráb's tremendous sway, The dire misfortunes of this luckless day; Told with what grasping force he tried, in vain, To hurl the wondrous stripling to the plain: \"The whispering zephyr might as well aspire To shake a mountain--such his strength and fire. But night came on--and, by agreement, we Must meet again to-morrow--who shall be Victorious, Heaven knows only:--for by Heaven, Victory or death to man is ever given.\" This said, the King, o'erwhelmed in deep despair, Passed the dread night in agony and prayer."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "The Champion, silent, joined his bands at rest, And spurned at length despondence from his breast; Removed from all, he cheered Zúára's heart, And nerved his soul to bear a trying part:-- \"Ere early morning gilds the ethereal plain, In martial order range my warrior-train; And when I meet in all his glorious pride, This valiant Turk whom late my rage defied, Should fortune's smiles my arduous task requite, Bring them to share the triumph of my might; But should success the stripling's arm attend, And dire defeat and death my glories end, To their loved homes my brave associates guide; Let bowery Zábul all their sorrows hide-- Comfort my venerable father's heart; In gentlest words my heavy fate impart. The dreadful tidings to my mother bear, And soothe her anguish with the tenderest care; Say, that the will of righteous Heaven decreed, That thus in arms her mighty son should bleed. Enough of fame my various toils acquired, When warring demons, bathed in blood, expired. Were life prolonged a thousand lingering years, Death comes at last and ends our mortal fears; Kirshásp, and Sám, and Narímán, the best And bravest heroes, who have ever blest This fleeting world, were not endued with power, To stay the march of fate one single hour; The world for them possessed no fixed abode, The path to death's cold regions must be trod; Then, why lament the doom ordained for all? Thus Jemshíd fell, and thus must Rustem fall.\""
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "When the bright dawn proclaimed the rising day, The warriors armed, impatient of delay; But first Sohráb, his proud confederate nigh, Thus wistful spoke, as swelled the boding sigh-- \"Now, mark my great antagonist in arms! His noble form my filial bosom warms; My mother's tokens shine conspicuous here, And all the proofs my heart demands, appear; Sure this is Rustem, whom my eyes engage! Shall I, O grief! provoke my Father's rage? Offended Nature then would curse my name, And shuddering nations echo with my shame.\" He ceased, then Húmán: \"Vain, fantastic thought, Oft have I been where Persia's Champion fought; And thou hast heard, what wonders he performed, When, in his prime, Mázinderán was stormed; That horse resembles Rustem's, it is true, But not so strong, nor beautiful to view.\""
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "Sohráb now buckles on his war attire, His heart all softness, and his brain all fire; Around his lips such smiles benignant played, He seemed to greet a friend, as thus he said:-- \"Here let us sit together on the plain, Here, social sit, and from the fight refrain; Ask we from heaven forgiveness of the past, And bind our souls in friendship that may last; Ours be the feast--let us be warm and free, For powerful instinct draws me still to thee; Fain would my heart in bland affection join, Then let thy generous ardour equal mine; And kindly say, with whom I now contend-- What name distinguished boasts my warrior-friend! Thy name unfit for champion brave to hide, Thy name so long, long sought, and still denied; Say, art thou Rustem, whom I burn to know? Ingenuous say, and cease to be my foe!\""
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "Sternly the mighty Champion cried, \"Away-- Hence with thy wiles--now practised to delay; The promised struggle, resolute, I claim, Then cease to move me to an act of shame.\" Sohráb rejoined--\"Old man! thou wilt not hear The words of prudence uttered in thine ear; Then, Heaven! look on.\""
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "Preparing for the shock, Each binds his charger to a neighbouring rock; And girds his loins, and rubs his wrists, and tries Their suppleness and force, with angry eyes; And now they meet--now rise, and now descend, And strong and fierce their sinewy arms extend; Wrestling with all their strength they grasp and strain, And blood and sweat flow copious on the plain; Like raging elephants they furious close; Commutual wounds are given, and wrenching blows. Sohráb now clasps his hands, and forward springs Impatiently, and round the Champion clings; Seizes his girdle belt, with power to tear The very earth asunder; in despair Rustem, defeated, feels his nerves give way, And thundering falls. Sohráb bestrides his prey: Grim as the lion, prowling through the wood, Upon a wild ass springs, and pants for blood. His lifted sword had lopt the gory head, But Rustem, quick, with crafty ardour said:-- \"One moment, hold! what, are our laws unknown? A Chief may fight till he is twice o'erthrown; The second fall, his recreant blood is spilt, These are our laws, avoid the menaced guilt.\""
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "Proud of his strength, and easily deceived, The wondering youth the artful tale believed; Released his prey, and, wild as wind or wave, Neglecting all the prudence of the brave, Turned from the place, nor once the strife renewed, But bounded o'er the plain and other cares pursued, As if all memory of the war had died, All thoughts of him with whom his strength was tried."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "Húmán, confounded at the stripling's stay, Went forth, and heard the fortune of the day; Amazed to find the mighty Rustem freed, With deepest grief he wailed the luckless deed. \"What! loose a raging lion from the snare, And let him growling hasten to his lair? Bethink thee well; in war, from this unwise, This thoughtless act what countless woes may rise; Never again suspend the final blow, Nor trust the seeming weakness of a foe!\"[43] \"Hence with complaint,\" the dauntless youth replied, \"To-morrow's contest shall his fate decide.\""
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "When Rustem was released, in altered mood He sought the coolness of the murmuring flood; There quenched his thirst; and bathed his limbs, and prayed, Beseeching Heaven to yield its strengthening aid. His pious prayer indulgent Heaven approved, And growing strength through all his sinews moved;[44] Such as erewhile his towering structure knew, When his bold arm unconquered demons slew. Yet in his mien no confidence appeared, No ardent hope his wounded spirits cheered."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "Again they met. A glow of youthful grace, Diffused its radiance o'er the stripling's face, And when he saw in renovated guise, The foe so lately mastered; with surprise, He cried--\"What! rescued from my power, again Dost thou confront me on the battle plain? Or, dost thou, wearied, draw thy vital breath, And seek, from warrior bold, the shaft of death? Truth has no charms for thee, old man; even now, Some further cheat may lurk upon thy brow; Twice have I shown thee mercy, twice thy age Hath been thy safety--twice it soothed my rage.\" Then mild the Champion: \"Youth is proud and vain! The idle boast a warrior would disdain; This aged arm perhaps may yet control, The wanton fury that inflames thy soul!\""
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "Again, dismounting, each the other viewed With sullen glance, and swift the fight renewed; Clenched front to front, again they tug and bend, Twist their broad limbs as every nerve would rend; With rage convulsive Rustem grasps him round; Bends his strong back, and hurls him to the ground; Him, who had deemed the triumph all his own; But dubious of his power to keep him down, Like lightning quick he gives the deadly thrust, And spurns the Stripling weltering in the dust. --Thus as his blood that shining steel imbrues, Thine too shall flow, when Destiny pursues;[45] For when she marks the victim of her power, A thousand daggers speed the dying hour. Writhing with pain Sohráb in murmurs sighed-- And thus to Rustem--\"Vaunt not, in thy pride; Upon myself this sorrow have I brought, Thou but the instrument of fate--which wrought My downfall; thou are guiltless--guiltless quite; O! had I seen my father in the fight, My glorious father! Life will soon be o'er, And his great deeds enchant my soul no more! Of him my mother gave the mark and sign, For him I sought, and what an end is mine! My only wish on earth, my constant sigh, Him to behold, and with that wish I die. But hope not to elude his piercing sight, In vain for thee the deepest glooms of night; Couldst thou through Ocean's depths for refuge fly, Or midst the star-beams track the upper sky! Rustem, with vengeance armed, will reach thee there, His soul the prey of anguish and despair.\""
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "An icy horror chills the Champion's heart, His brain whirls round with agonizing smart; O'er his wan cheek no gushing sorrows flow, Senseless he sinks beneath the weight of woe; Relieved at length, with frenzied look, he cries: \"Prove thou art mine, confirm my doubting eyes! For I am Rustem!\" Piercing was the groan, Which burst from his torn heart--as wild and lone, He gazed upon him. Dire amazement shook The dying youth, and mournful thus he spoke: \"If thou art Rustem, cruel is thy part, No warmth paternal seems to fill thy heart; Else hadst thou known me when, with strong desire, I fondly claimed thee for my valiant sire; Now from my body strip the shining mail, Untie these bands, ere life and feeling fail; And on my arm the direful proof behold! Thy sacred bracelet of refulgent gold! When the loud brazen drums were heard afar, And, echoing round, proclaimed the pending war, Whilst parting tears my mother's eyes o'erflowed, This mystic gift her bursting heart bestowed: 'Take this,' she said, 'thy father's token wear, And promised glory will reward thy care.' The hour is come, but fraught with bitterest woe, We meet in blood to wail the fatal blow.\""
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "The loosened mail unfolds the bracelet bright, Unhappy gift! to Rustem's wildered sight, Prostrate he falls--\"By my unnatural hand, My son, my son is slain--and from the land Uprooted.\"--Frantic, in the dust his hair He rends in agony and deep despair; The western sun had disappeared in gloom, And still, the Champion wept his cruel doom; His wondering legions marked the long delay, And, seeing Rakush riderless astray, The rumour quick to Persia's Monarch spread, And there described the mighty Rustem dead. Káús, alarmed, the fatal tidings hears; His bosom quivers with increasing fears. \"Speed, speed, and see what has befallen to-day To cause these groans and tears--what fatal fray! If he be lost, if breathless on the ground, And this young warrior, with the conquest crowned-- Then must I, humbled, from my kingdom torn, Wander like Jemshíd, through the world forlorn.\"[46]"
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "The army roused, rushed o'er the dusty plain, Urged by the Monarch to revenge the slain; Wild consternation saddened every face, Tús winged with horror sought the fatal place, And there beheld the agonizing sight-- The murderous end of that unnatural fight. Sohráb, still breathing, hears the shrill alarms, His gentle speech suspends the clang of arms: \"My light of life now fluttering sinks in shade, Let vengeance sleep, and peaceful vows be made. Beseech the King to spare this Tartar host, For they are guiltless, all to them is lost; I led them on, their souls with glory fired, While mad ambition all my thoughts inspired. In search of thee, the world before my eyes, War was my choice, and thou the sacred prize; With thee, my sire! in virtuous league combined, No tyrant King should persecute mankind. That hope is past--the storm has ceased to rave-- My ripening honours wither in the grave; Then let no vengeance on my comrades fall, Mine was the guilt, and mine the sorrow, all; How often have I sought thee--oft my mind Figured thee to my sight--o'erjoyed to find My mother's token; disappointment came, When thou denied thy lineage and thy name; Oh! still o'er thee my soul impassioned hung, Still to my father fond affection clung! But fate, remorseless, all my hopes withstood, And stained thy reeking hands in kindred blood.\""
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "His faltering breath protracted speech denied: Still from his eye-lids flowed a gushing tide; Through Rustem's soul redoubled horror ran, Heart-rending thoughts subdued the mighty man, And now, at last, with joy-illumined eye, The Zábul bands their glorious Chief descry; But when they saw his pale and haggard look, Knew from what mournful cause he gazed and shook, With downcast mien they moaned and wept aloud; While Rustem thus addressed the weeping crowd \"Here ends the war! let gentle peace succeed, Enough of death, I--I have done the deed!\" Then to his brother, groaning deep, he said-- \"O what a curse upon a parent's head! But go--and to the Tartar say--no more, Let war between us steep the earth with gore.\" Zúára flew and wildly spoke his grief, To crafty Húmán, the Túránian Chief, Who, with dissembled sorrow, heard him tell The dismal tidings which he knew too well; \"And who,\" he said, \"has caused these tears to flow? Who, but Hujír? He might have stayed the blow, But when Sohráb his Father's banners sought; He still denied that here the Champion fought; He spread the ruin, he the secret knew, Hence should his crime receive the vengeance due!\" Zúára, frantic, breathed in Rustem's ear, The treachery of the captive Chief, Hujír; Whose headless trunk had weltered on the strand, But prayers and force withheld the lifted hand. Then to his dying son the Champion turned, Remorse more deep within his bosom burned; A burst of frenzy fired his throbbing brain; He clenched his sword, but found his fury vain; The Persian Chiefs the desperate act represt, And tried to calm the tumult in his breast: Thus Gúdarz spoke--\"Alas! wert thou to give Thyself a thousand wounds, and cease to live; What would it be to him thou sorrowest o'er? It would not save one pang--then weep no more; For if removed by death, O say, to whom Has ever been vouchsafed a different doom? All are the prey of death--the crowned, the low, And man, through life, the victim still of woe.\" Then Rustem: \"Fly! and to the King relate, The pressing horrors which involve my fate; And if the memory of my deeds e'er swayed His mind, O supplicate his generous aid; A sovereign balm he has whose wondrous power, All wounds can heal, and fleeting life restore;[47] Swift from his tent the potent medicine bring.\" --But mark the malice of the brainless King! Hard as the flinty rock, he stern denies The healthful draught, and gloomy thus replies: \"Can I forgive his foul and slanderous tongue? The sharp disdain on me contemptuous flung? Scorned 'midst my army by a shameless boy, Who sought my throne, my sceptre to destroy! Nothing but mischief from his heart can flow, Is it, then, wise to cherish such a foe? The fool who warms his enemy to life, Only prepares for scenes of future strife.\""
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "Gúdarz, returning, told the hopeless tale-- And thinking Rustem's presence might prevail; The Champion rose, but ere he reached the throne, Sohráb had breathed the last expiring groan."
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "Now keener anguish rack'd the father's mind, Reft of his son, a murderer of his kind; His guilty sword distained with filial gore, He beat his burning breast, his hair he tore; The breathless corse before his shuddering view, A shower of ashes o'er his head he threw; \"In my old age,\" he cried, \"what have I done? Why have I slain my son, my innocent son! Why o'er his splendid dawning did I roll The clouds of death--and plunge my burthened soul In agony? My son! from heroes sprung; Better these hands were from my body wrung; And solitude and darkness, deep and drear, Fold me from sight than hated linger here. But when his mother hears, with horror wild, That I have shed the life-blood of her child, So nobly brave, so dearly loved, in vain, How can her heart that rending shock sustain?\""
+    },
+    {
+      "id": "s2-29",
+      "sceneId": "s2",
+      "text": "Now on a bier the Persian warriors place The breathless Youth, and shade his pallid face; And turning from that fatal field away, Move towards the Champion's home in long array. Then Rustem, sick of martial pomp and show, Himself the spring of all this scene of woe, Doomed to the flames the pageantry he loved, Shield, spear, and mace, so oft in battle proved; Now lost to all, encompassed by despair; His bright pavilion crackling blazed in air; The sparkling throne the ascending column fed; In smoking fragments fell the golden bed; The raging fire red glimmering died away, And all the Warrior's pride in dust and ashes lay."
+    },
+    {
+      "id": "s2-30",
+      "sceneId": "s2",
+      "text": "Káús, the King, now joins the mournful Chief, And tries to soothe his deep and settled grief; For soon or late we yield our vital breath, And all our worldly troubles end in death! \"When first I saw him, graceful in his might, He looked far other than a Tartar knight; Wondering I gazed--now Destiny has thrown Him on thy sword--he fought, and he is gone; And should even Heaven against the earth be hurled, Or fire inwrap in crackling flames the world, That which is past--we never can restore, His soul has travelled to some happier shore. Alas! no good from sorrow canst thou reap, Then wherefore thus in gloom and misery weep?\""
+    },
+    {
+      "id": "s2-31",
+      "sceneId": "s2",
+      "text": "But Rustem's mighty woes disdained his aid, His heart was drowned in grief, and thus he said: \"Yes, he is gone! to me for ever lost! O then protect his brave unguided host; From war removed and this detested place, Let them, unharmed, their mountain-wilds retrace; Bid them secure my brother's will obey, The careful guardian of their weary way,[48] To where the Jihún's distant waters stray.\" To this the King: \"My soul is sad to see Thy hopeless grief--but, since approved by thee, The war shall cease--though the Túránian brand Has spread dismay and terror through the land.\""
+    },
+    {
+      "id": "s2-32",
+      "sceneId": "s2",
+      "text": "The King, appeased, no more with vengeance burned, The Tartar legions to their homes returned; The Persian warriors, gathering round the dead, Grovelled in dust, and tears of sorrow shed; Then back to loved Irán their steps the monarch led."
+    },
+    {
+      "id": "s2-33",
+      "sceneId": "s2",
+      "text": "But Rustem, midst his native bands, remained, And further rites of sacrifice maintained; A thousand horses bled at his command, And the torn drums were scattered o'er the sand; And now through Zábul's deep and bowery groves, In mournful pomp the sad procession moves. The mighty Chief on foot precedes the bier; His Warrior-friends, in grief assembled near: The dismal cadence rose upon the gale, And Zál astonished heard the piercing wail; He and his kindred joined the solemn train; Hung round the bier and wondering viewed the slain. \"There gaze, and weep!\" the sorrowing Father said, \"For there, behold my glorious offspring dead!\" The hoary Sire shrunk backward with surprise, And tears of blood o'erflowed his aged eyes; And now the Champion's rural palace gate Receives the funeral group in gloomy state; Rúdábeh loud bemoaned the Stripling's doom; Sweet flower, all drooping in the hour of bloom, His tender youth in distant bowers had past, Sheltered at home he felt no withering blast; In the soft prison of his mother's arms, Secure from danger and the world's alarms. O ruthless Fortune! flushed with generous pride, He sought his sire, and thus unhappy, died."
+    },
+    {
+      "id": "s2-34",
+      "sceneId": "s2",
+      "text": "Rustem again the sacred bier unclosed; Again Sohráb to public view exposed; Husbands, and wives, and warriors, old and young, Struck with amaze, around the body hung, With garments rent and loosely flowing hair; Their shrieks and clamours filled the echoing air; Frequent they cried: \"Thus Sám the Champion slept! Thus sleeps Sohráb!\" Again they groaned, and wept."
+    },
+    {
+      "id": "s2-35",
+      "sceneId": "s2",
+      "text": "Now o'er the corpse a yellow robe is spread, The aloes bier is closed upon the dead; And, to preserve the hapless hero's name, Fragrant and fresh, that his unblemished fame Might live and bloom through all succeeding days, A mound sepulchral on the spot they raise, Formed like a charger's hoof."
+    },
+    {
+      "id": "s2-36",
+      "sceneId": "s2",
+      "text": "In every ear The story has been told--and many a tear, Shed at the sad recital. Through Túrán, Afrásiyáb's wide realm, and Samengán, Deep sunk the tidings--nuptial bower, and bed, And all that promised happiness, had fled!"
+    },
+    {
+      "id": "s2-37",
+      "sceneId": "s2",
+      "text": "But when Tahmíneh heard this tale of woe, Think how a mother bore the mortal blow! Distracted, wild, she sprang from place to place; With frenzied hands deformed her beauteous face; The musky locks her polished temples crowned. Furious she tore, and flung upon the ground; Starting, in agony of grief, she gazed-- Her swimming eyes to Heaven imploring raised; And groaning cried: \"Sole comfort of my life! Doomed the sad victim of unnatural strife, Where art thou now with dust and blood defiled? Thou darling boy, my lost, my murdered child! When thou wert gone--how, night and lingering day, Did thy fond mother watch the time away; For hope still pictured all I wished to see, Thy father found, and thou returned to me, Yes--thou, exulting in thy father's fame! And yet, nor sire nor son, nor tidings, came: How could I dream of this? ye met--but how? That noble aspect--that ingenuous brow, Moved not a nerve in him--ye met--to part, Alas! the life-blood issuing from the heart Short was the day which gave to me delight, Soon, soon, succeeds a long and dismal night; On whom shall now devolve my tender care? Who, loved like thee, my bosom-sorrows share? Whom shall I take to fill thy vacant place, To whom extend a mother's soft embrace? Sad fate! for one so young, so fair, so brave, Seeking thy father thus to find a grave. These arms no more shall fold thee to my breast, No more with thee my soul be doubly blest; No, drowned in blood thy lifeless body lies, For ever torn from these desiring eyes; Friendless, alone, beneath a foreign sky, Thy mail thy death-clothes--and thy father, by; Why did not I conduct thee on the way, And point where Rustem's bright pavilion lay? Thou hadst the tokens--why didst thou withhold Those dear remembrances--that pledge of gold? Hadst thou the bracelet to his view restored, Thy precious blood had never stained his sword.\""
+    },
+    {
+      "id": "s2-38",
+      "sceneId": "s2",
+      "text": "The strong emotion choked her panting breath, Her veins seemed withered by the cold of death: The trembling matrons hastening round her mourned, With piercing cries, till fluttering life returned; Then gazing up, distraught, she wept again, And frantic, seeing 'midst her pitying train, The favourite steed--now more than ever dear, The hoofs she kissed, and bathed with many a tear; Clasping the mail Sohráb in battle wore, With burning lips she kissed it o'er and o'er; His martial robes she in her arms comprest, And like an infant strained them to her breast; The reins, and trappings, club, and spear, were brought, The sword, and shield, with which the Stripling fought, These she embraced with melancholy joy, In sad remembrance of her darling boy. And still she beat her face, and o'er them hung, As in a trance--or to them wildly clung-- Day after day she thus indulged her grief, Night after night, disdaining all relief; At length worn out--from earthly anguish riven, The mother's spirit joined her child in Heaven."
+    }
+  ]
+}

@@ -10,7 +10,6 @@ import {
 test("hold/pull ids are marked off English readable", () => {
   for (const id of [
     "metamorphosis",
-    "siddhartha",
     "mama-blanca",
     "skylark",
     "nirmala",
@@ -31,6 +30,13 @@ test("hold/pull ids are marked off English readable", () => {
     assert.equal(isBoundReadable({ id, local: true, gutenberg: 1 }), false, id);
     assert.equal(isBoundLocal({ id, local: true }), false, id);
   }
+});
+
+
+test("Siddhartha PG 2500 is a readable local EN bind", () => {
+  assert.equal(isEnReadableOff("siddhartha"), false);
+  assert.equal(isBoundLocal({ id: "siddhartha", local: true }), true);
+  assert.equal(isBoundReadable({ id: "siddhartha", local: true, gutenberg: 2500 }), true);
 });
 
 test("Dragon's Teeth (basilio) is not on the EN-off list", () => {

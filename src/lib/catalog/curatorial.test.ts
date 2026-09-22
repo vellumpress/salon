@@ -10,7 +10,7 @@ import {
 } from "./curatorial.ts";
 import { RITUAL_LANES } from "./rituals.ts";
 import { SHELF } from "./shelf.ts";
-import { isBoundLocal } from "./en-rights.ts";
+import { isBoundLocal, isEnReadableOff } from "./en-rights.ts";
 
 test("Locked recommend order is April, Bridge, Maggot, then Mirth, then Quicksand", () => {
   assert.deepEqual(FEATURED_CAROUSEL_IDS, [
@@ -295,6 +295,19 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "the-mystery-of-choice",
     "the-poems-of-emma-lazarus-volume-1",
     "weird-tales",
+    "siddhartha",
+    "faust-part-i",
+    "the-divine-comedy",
+    "eugene-onegin",
+    "seven-brothers",
+    "gilgamesh",
+    "bontshe-the-silent",
+    "shahnameh",
+    "song-of-songs",
+    "baudelaire-prose-and-poetry",
+    "tales-grotesque-and-curious",
+    "a-book-barnes",
+    "a-spring-time-case",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1656,6 +1669,71 @@ test("BATCH-9 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     assert.equal(full.breaths.length, want.breaths, id);
     assert.ok(full.breaths.length >= 3, id);
     assert.ok(full.breaths[0]?.text.startsWith(want.opening.slice(0, 40)), id);
+  }
+});
+
+
+test("BATCH-13 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
+  const expect = {
+    "siddhartha": { opening: "In the shade of the house, in the sunshine of the riverbank near the boats, in the shade of the Sal-", breaths: 520, scenes: 12, gutenberg: 2500 },
+    "faust-part-i": { opening: "Again ye come, ye hovering Forms! I find ye, As early to my clouded sight ye shone! Shall I attempt,", breaths: 1453, scenes: 28, gutenberg: 14591 },
+    "the-divine-comedy": { opening: "Midway upon the journey of our life I found myself within a forest dark, For the straightforward pat", breaths: 4821, scenes: 100, gutenberg: 1004 },
+    "eugene-onegin": { opening: "“My uncle’s goodness is extreme, If seriously he hath disease; He hath acquired the world’s esteem A", breaths: 530, scenes: 8, gutenberg: 23997 },
+    "seven-brothers": { opening: "Jukola Farm, in the south of the province of Häme, stands on the northern slope of a hill, near the", breaths: 2691, scenes: 14, gutenberg: 79566 },
+    "gilgamesh": { opening: "Gish sought to interpret the dream; Spoke to his mother: \"My mother, during my night I became strong", breaths: 416, scenes: 8, gutenberg: 11000 },
+    "bontshe-the-silent": { opening: "Down here, in *this* world, Bontzye Shweig's death made no impression at all. Ask anyone you like wh", breaths: 99, scenes: 1, gutenberg: 37242 },
+    "shahnameh": { opening: "O ye, who dwell in Youth's inviting bowers, Waste not, in useless joy, your fleeting hours, But rath", breaths: 118, scenes: 3, gutenberg: 10315 },
+    "song-of-songs": { opening: "The scene of this division is in the royal tent of Solomon. The Shulamite, separated from her belove", breaths: 455, scenes: 5, gutenberg: 69329 },
+    "baudelaire-prose-and-poetry": { opening: "The Moon, who is caprice itself, looked in through the window when you lay asleep in your cradle, an", breaths: 1124, scenes: 112, gutenberg: 47032 },
+    "tales-grotesque-and-curious": { opening: "There was nobody at Ike-no-O who did not know about the nose of Zenchi Naigu. It was five or six inc", breaths: 41, scenes: 1, gutenberg: 78105 },
+    "a-book-barnes": { opening: "Toward dusk, in the Summer of the year, a man dressed in a frock coat and top hat, and carrying a ca", breaths: 1635, scenes: 22, gutenberg: 60904 },
+    "a-spring-time-case": { opening: "It was around the tolling of the fifth hour in the early evening that a fish monger, of the next str", breaths: 448, scenes: 5, gutenberg: 73132 },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(sleep);
+  assert.ok(forYou);
+  assert.equal(Object.keys(expect).length, 13);
+  assert.deepEqual(forYou.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  assert.equal(sleep.workIds[0], "quicksand");
+  assert.equal(isEnReadableOff("siddhartha"), false);
+  let prev = next.indexOf("weird-tales");
+  assert.ok(prev > next.indexOf("all-quiet-on-the-western-front"));
+  const sleepPrev = sleep.workIds.indexOf("weird-tales");
+  assert.ok(sleepPrev > sleep.workIds.indexOf("all-quiet-on-the-western-front"));
+  let sleepAt = sleepPrev;
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.opening, want.opening, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "next", id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(forYou!.workIds.includes(id), false, id);
+    const at = next.indexOf(id);
+    assert.ok(at > prev, `${id} follows All Quiet on Next`);
+    prev = at;
+    const sit = sleep!.workIds.indexOf(id);
+    assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
+    sleepAt = sit;
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: unknown[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.ok(full.breaths.length >= 3, id);
+    assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
   }
 });
 
