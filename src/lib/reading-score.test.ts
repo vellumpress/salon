@@ -167,12 +167,16 @@ test("homepage glance matches the You-page daily total and stays soft at zero", 
   );
 });
 
-test("homepage score sits in Continue and reuses the You daily score", () => {
+test("homepage score tile sits beside the resume column and reuses the You daily score", () => {
   const home = readFileSync(new URL("../routes/index.tsx", import.meta.url), "utf8");
   const mark = readFileSync(new URL("../components/you-friends-mark.tsx", import.meta.url), "utf8");
   const chip = readFileSync(new URL("../components/daily-score-chip.tsx", import.meta.url), "utf8");
 
-  assert.match(home, /data-home-continue[\s\S]*DailyScoreChip placement="continue"[\s\S]*Continue/);
+  assert.match(
+    home,
+    /data-home-continue[\s\S]*className="resume-column[\s\S]*Resume[\s\S]*resume-continue[\s\S]*Continue[\s\S]*DailyScoreChip placement="continue"/,
+  );
+  assert.doesNotMatch(home, /continue-score/);
   assert.match(home, /showScore=\{hydrated && !showResume\}/);
   assert.match(mark, /showScore \? <DailyScoreChip \/> : null/);
   assert.match(mark, /Friends[\s\S]*You/);
