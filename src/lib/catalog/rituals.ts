@@ -606,6 +606,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "hebrew-literature",
       "the-history-of-yiddish-literature",
       "korean-folk-tales",
+      "smoke-and-steel",
+      "gods-trombones",
+      "hadji-murad",
+      "anandamath",
+      "maria",
+      "lady-macbeth",
+      "layla",
+      "conference",
     ],
   },
   {
@@ -1021,6 +1029,14 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "hebrew-literature": 5,
   "the-history-of-yiddish-literature": 5,
   "korean-folk-tales": 5,
+  "smoke-and-steel": 5,
+  "gods-trombones": 5,
+  "hadji-murad": 5,
+  "anandamath": 5,
+  "maria": 5,
+  "lady-macbeth": 5,
+  "layla": 5,
+  "conference": 5,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

@@ -354,6 +354,14 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "hebrew-literature",
     "the-history-of-yiddish-literature",
     "korean-folk-tales",
+    "smoke-and-steel",
+    "gods-trombones",
+    "hadji-murad",
+    "anandamath",
+    "maria",
+    "lady-macbeth",
+    "layla",
+    "conference",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1936,6 +1944,125 @@ test("BATCH-16 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.ok(full.breaths.length >= 3, id);
     assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
   }
+});
+
+test("EXTRACTABLE-8 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
+  const expect = {
+    "smoke-and-steel": {
+      opening: "SMOKE of the fields in spring is one,",
+      breaths: 2064,
+      scenes: 201,
+      scene: "Smoke and Steel",
+    },
+    "gods-trombones": {
+      opening:
+        "O Lord, we come this morning Knee-bowed and body-bent Before thy throne of grace. O Lord—this morning— Bow our hearts be",
+      breaths: 147,
+      scenes: 8,
+      scene: "Listen, Lord—A Prayer",
+    },
+    "hadji-murad": {
+      opening:
+        "I WAS returning home by the fields. It was midsummer ; the hay harvest was over, and they were just beginning to reap th",
+      breaths: 1332,
+      scenes: 20,
+      scene: "Opening",
+    },
+    anandamath: {
+      opening:
+        "On a certain day in the year 1176 B.S-, the sun was shining hot in the village of Padachinha. The village was full of ho",
+      breaths: 1168,
+      scenes: 47,
+      scene: "Part I · Chapter I",
+    },
+    maria: {
+      opening:
+        "I was still a mere boy when sent away from home to study in ⸻ College, founded a few years before in Bogotá, and then we",
+      breaths: 2374,
+      scenes: 59,
+      scene: "Chapter I",
+    },
+    "lady-macbeth": {
+      opening:
+        "IN our part of the country you sometimes meet people of whom, even many years after you have seen them, you are unable t",
+      breaths: 649,
+      scenes: 14,
+      scene: "Chapter I",
+    },
+    layla: {
+      opening:
+        "Its power, its wond'rous power, in me. — No ancestors have I to boast ; The trace of my descent is lost. From Adam what ",
+      breaths: 1345,
+      scenes: 14,
+      scene: "Invocation",
+    },
+    conference: {
+      opening: "Once on a time from all the Circles seven",
+      breaths: 1023,
+      scenes: 35,
+      scene: "Bird Parliament · Opening",
+    },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(sleep);
+  assert.ok(forYou);
+  assert.equal(Object.keys(expect).length, 8);
+  assert.deepEqual(forYou.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  assert.equal(sleep.workIds[0], "quicksand");
+  assert.equal(next.includes("the-poison-tree"), true);
+  assert.equal(forYou.workIds.includes("anandamath"), false);
+  const stub = SHELF.find((item) => item.id === "god-s-trombones");
+  assert.ok(stub);
+  assert.equal(stub.local, undefined);
+  assert.equal(stub.gutenberg, undefined);
+  let prev = next.indexOf("korean-folk-tales");
+  assert.ok(prev > next.indexOf("all-quiet-on-the-western-front"));
+  const sleepPrev = sleep.workIds.indexOf("korean-folk-tales");
+  assert.ok(sleepPrev > sleep.workIds.indexOf("all-quiet-on-the-western-front"));
+  let sleepAt = sleepPrev;
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.gutenberg, undefined, id);
+    assert.equal(work!.opening, want.opening, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(work!.language, "English", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "next", id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(forYou!.workIds.includes(id), false, id);
+    const at = next.indexOf(id);
+    assert.ok(at > prev, `${id} follows All Quiet on Next`);
+    prev = at;
+    const sit = sleep!.workIds.indexOf(id);
+    assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
+    sleepAt = sit;
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      title: string;
+      scenes: { title: string }[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.ok(full.breaths.length >= 3, id);
+    assert.equal(full.scenes[0]?.title, want.scene, id);
+    assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
+    assert.equal(JSON.stringify(full).includes("gutenberg.org"), false, id);
+  }
+  const birds = SHELF.find((item) => item.id === "conference");
+  assert.match(birds?.title ?? "", /abridged/i);
+  const abbey = SHELF.find((item) => item.id === "anandamath");
+  assert.match(abbey?.title ?? "", /Abbey of Bliss/);
+  assert.equal(abbey?.year, 1906);
 });
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {

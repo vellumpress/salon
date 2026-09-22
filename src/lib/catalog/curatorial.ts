@@ -102,6 +102,11 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Mirth → Quicksand → Botchan. Fifty Years & Other Poems, Japanese Fairy Tales,
  * Some Chinese Ghosts, and Shadowings were already full-text local (the last
  * three fuller than this host-one pack), so those binds stay.
+ * EXTRACTABLE-8 CLEAR (Sep 22, last pack) sits on Next after BATCH-16 (after
+ * All Quiet), before-sleep only — never Featured, not For you. Cold-open stays
+ * Mirth → Quicksand → Botchan. No Project Gutenberg ids. Anandamath is the
+ * 1906 Abbey of Bliss, not Poison Tree. Conference of the Birds is FitzGerald’s
+ * abridged Bird Parliament. Lady Macbeth hosts the one Chamot tale.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -396,6 +401,15 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "hebrew-literature",
   "the-history-of-yiddish-literature",
   "korean-folk-tales",
+  // Mira EXTRACTABLE-8 CLEAR — after All Quiet. Never Featured. Not For you. No PG.
+  "smoke-and-steel",
+  "gods-trombones",
+  "hadji-murad",
+  "anandamath",
+  "maria",
+  "lady-macbeth",
+  "layla",
+  "conference",
 ] as const;
 
 /**
