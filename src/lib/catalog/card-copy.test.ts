@@ -2058,6 +2058,69 @@ test("Tier B batches 5–6 are local format-min binds, never Featured", () => {
   }
 });
 
+/** Tier B format-min CLEAR batches 11–12. Later only — never Featured, cold-open untouched. */
+const TIER_B_BATCH_11_12 = [
+  "eline-vere",
+  "eyes-like-the-sea",
+  "footsteps-of-fate",
+  "germinal",
+  "hunger",
+  "la-bas",
+  "madame-chrysantheme",
+  "married",
+  "pierre-and-jean",
+  "rebours",
+  "some-chinese-ghosts",
+  "the-child-of-pleasure",
+  "the-deluge",
+  "the-duel-and-other-stories",
+  "the-kreutzer-sonata",
+  "the-reign-of-greed-el-filibusterismo",
+  "without-dogma",
+  "a-family-of-noblemen",
+  "anna",
+  "dona-perfecta",
+  "karamazov",
+  "l-assommoir",
+  "malavoglia",
+  "marie-grubbe",
+  "sentimental-education",
+  "skipper-worse",
+  "the-idiot",
+  "the-ladies-paradise",
+  "the-red-room",
+  "venus-in-furs",
+] as const;
+
+test("Tier B batches 11–12 are local format-min binds, never Featured", () => {
+  assert.equal(TIER_B_BATCH_11_12.length, 30);
+  assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  for (const id of TIER_B_BATCH_11_12) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(curatorialTrack(id), "later", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
+    assertNoStubOpening(id);
+    const full = textWork(id);
+    assert.equal(work!.breaths, full.breaths.length, id);
+    assert.ok(full.breaths.length > 1, id);
+    assert.ok(
+      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
+      `${id} shelf opening`,
+    );
+    assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
+  }
+});
+
 test("homepage examples keep country + concrete sentence", () => {
   assert.equal(countryFor(SHELF.find((w) => w.id === "passing")!), "United States");
   assert.match(blurbFor("passing"), /color line/i);
