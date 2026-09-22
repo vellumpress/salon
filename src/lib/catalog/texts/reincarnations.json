@@ -1,0 +1,2637 @@
+{
+  "id": "reincarnations",
+  "title": "Reincarnations",
+  "author": "James Stephens",
+  "year": "1918",
+  "note": "Project Gutenberg 37213",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Geoffrey Keating",
+      "place": "Geoffrey Keating",
+      "reentry": "Mary Hynes (after Raftery) The Coolun do.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Peggy Mitchell          do",
+      "place": "Peggy Mitchell          do",
+      "reentry": "Nancy Walsh do. The Red Man's Wife do.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Nancy Walsh             do",
+      "place": "Nancy Walsh             do",
+      "reentry": "Anthony O'Daly do. Mary Ruane do.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "William O'Kelly         do",
+      "place": "William O'Kelly         do",
+      "reentry": "Sean O'Cosgair do. The County Mayo do.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Eileen, Diarmuid and Teig (After O'Rahilly)",
+      "place": "Eileen, Diarmuid and Teig (After O'Rahilly)",
+      "reentry": "Honoro Butler and Lord Kenmare do. Clann Cartie do.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "The Land of Fal (Anon.)",
+      "place": "The Land of Fal (Anon.)",
+      "reentry": "Inis Fal (after O'Rahilly) Owen O'Neill (after Pierce Ferriter)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Egan O'Rahilly (after O'Rahilly)",
+      "place": "Egan O'Rahilly (after O'Rahilly)",
+      "reentry": "Righteous Anger (after O'Bruadair) The Weavers do.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Odell                   do",
+      "place": "Odell                   do",
+      "reentry": "The Apology do. The Gang do.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "The Geraldine's Cloak   do",
+      "place": "The Geraldine's Cloak   do",
+      "reentry": "Skim-Milk do. Blue Blood do.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "O'Bruaidar              do",
+      "place": "O'Bruaidar              do",
+      "reentry": "Note",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Geoffrey Keating",
+      "place": "Geoffrey Keating",
+      "reentry": "O woman full of wiliness!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Although for love of me you pine,",
+      "place": "Although for love of me you pine,",
+      "reentry": "Withhold your hand adventurous, It holdeth nothing holding mine.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Look on my head, how it is grey!",
+      "place": "Look on my head, how it is grey!",
+      "reentry": "My body's weakness doth appear; My blood is chill and thin; my day",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Is done, and there is nothing here",
+      "place": "Is done, and there is nothing here",
+      "reentry": "Do not call me a foolish man,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Nor lean your lovely cheek to mine",
+      "place": "Nor lean your lovely cheek to mine",
+      "reentry": "O slender witch, our bodies can Not mingle now, nor any time.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "So take your mouth from mine, your hand",
+      "place": "So take your mouth from mine, your hand",
+      "reentry": "From mine, ah, take your lips away! Lest heat to will should ripen, and",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "All this be grave that had been gay",
+      "place": "All this be grave that had been gay",
+      "reentry": "It is this curl, a silken nest,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "And this grey eye bright as the dew,",
+      "place": "And this grey eye bright as the dew,",
+      "reentry": "And this round, lovely, snow-white breast That draws desire in search of you.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "I would do all for you, meseems,",
+      "place": "I would do all for you, meseems,",
+      "reentry": "But this, tho' this were happiness! I shall not mingle in your dreams,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Mary Hynes",
+      "place": "Mary Hynes",
+      "reentry": "She is the sky of the sun,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "She is the dart",
+      "place": "She is the dart",
+      "reentry": "Of love, She is the love of my heart,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "She is a rune,",
+      "place": "She is a rune,",
+      "reentry": "She is above The women of the race of Eve",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "As the sun is above the moon",
+      "place": "As the sun is above the moon",
+      "reentry": "Lovely and airy the view from the hill",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "That looks down Ballylea;",
+      "place": "That looks down Ballylea;",
+      "reentry": "But no good sight is good until By great good luck you see",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "The Blossom of the Branches walking towards you",
+      "place": "The Blossom of the Branches walking towards you",
+      "reentry": "Airily.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "The Coolun",
+      "place": "The Coolun",
+      "reentry": "Come with me, under my coat,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "And we will drink our fill",
+      "place": "And we will drink our fill",
+      "reentry": "Of the milk of the white goat, Or wine if it be thy will;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "And we will talk until",
+      "place": "And we will talk until",
+      "reentry": "Talk is a trouble, too, Out on the side of the hill,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "And nothing is left to do,",
+      "place": "And nothing is left to do,",
+      "reentry": "But an eye to look into an eye And a hand in a hand to slip,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "And a sigh to answer a sigh,",
+      "place": "And a sigh to answer a sigh,",
+      "reentry": "And a lip to find out a lip: What if the night be black",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "And the air on the mountain chill,",
+      "place": "And the air on the mountain chill,",
+      "reentry": "Where the goat lies down in her track And all but the fern is still!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Stay with me, under my coat,",
+      "place": "Stay with me, under my coat,",
+      "reentry": "And we will drink our fill Of the milk of the white goat",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "Peggy Mitchell",
+      "place": "Peggy Mitchell",
+      "reentry": "As lily grows up easily,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "In modest, gentle dignity",
+      "place": "In modest, gentle dignity",
+      "reentry": "To sweet perfection, So grew she,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "As easily",
+      "place": "As easily",
+      "reentry": "Or as the rose that takes no care",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "Will open out on sunny air",
+      "place": "Will open out on sunny air",
+      "reentry": "Bloom after bloom, fair after fair, Sweet after sweet;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "Just so did she,",
+      "place": "Just so did she,",
+      "reentry": "As carelessly.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "She is our torment without end,",
+      "place": "She is our torment without end,",
+      "reentry": "She is our enemy and friend, Our joy, our woe;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "And she will send",
+      "place": "And she will send",
+      "reentry": "Madness or glee To you and me,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "Nancy Walsh",
+      "place": "Nancy Walsh",
+      "reentry": "I, without bite or sup,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "If thou wert fated for me,",
+      "place": "If thou wert fated for me,",
+      "reentry": "I would up And would go after thee",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "Through mountains",
+      "place": "Through mountains",
+      "reentry": "A thousand thanks from me",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "To God have gone,",
+      "place": "To God have gone,",
+      "reentry": "Because I have not lost my senses to thee, Though it was hardly I escaped from thee,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "The Red Man's Wife",
+      "place": "The Red Man's Wife",
+      "reentry": "Then she arose",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "And walked in the valley",
+      "place": "And walked in the valley",
+      "reentry": "In her fine clothes.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "After great fire",
+      "place": "After great fire",
+      "reentry": "Great frost Comes following.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "Turgesius was lost",
+      "place": "Turgesius was lost",
+      "reentry": "By the daughter of Maelsheachlin The King.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "By Grainne,",
+      "place": "By Grainne,",
+      "reentry": "Of high Ben Gulbain in the north, Was Diarmuid lost.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "The strong sons of Ushna,",
+      "place": "The strong sons of Ushna,",
+      "reentry": "Who never submitted, They fell by Deirdre.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "Nancy Walsh",
+      "place": "Nancy Walsh",
+      "reentry": "It is not on her gown",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "She fears to tread;",
+      "place": "She fears to tread;",
+      "reentry": "It is her hair Which tumbles down",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "And strays",
+      "place": "And strays",
+      "reentry": "About her ways That she must care.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "And she lives nigh this place:",
+      "place": "And she lives nigh this place:",
+      "reentry": "The dead would rise If they could see her face;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "The dead would rise",
+      "place": "The dead would rise",
+      "reentry": "Only to hear her sing: But death is blind, and gives not ear nor eye",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "To anything",
+      "place": "To anything",
+      "reentry": "We would leave behind",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "Both wife and child,",
+      "place": "Both wife and child,",
+      "reentry": "And house and home; And wander blind,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "And wander thus,",
+      "place": "And wander thus,",
+      "reentry": "And ever roam, If she would come to us",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "In Erris",
+      "place": "In Erris",
+      "reentry": "Softly she said to me--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "Be patient till the night comes,",
+      "place": "Be patient till the night comes,",
+      "reentry": "And I will go with thee.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "Anthony O'Daly",
+      "place": "Anthony O'Daly",
+      "reentry": "Since your limbs were laid out",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "The stars do not shine,",
+      "place": "The stars do not shine,",
+      "reentry": "The fish leap not out In the waves.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "On our meadows the dew",
+      "place": "On our meadows the dew",
+      "reentry": "Does not fall in the morn, For O'Daly is dead:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "Not a flower can be born,",
+      "place": "Not a flower can be born,",
+      "reentry": "Not a word can be said, Not a tree have a leaf;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "Anthony, after you",
+      "place": "Anthony, after you",
+      "reentry": "There is nothing to do, There is nothing but grief.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "Mary Ruane",
+      "place": "Mary Ruane",
+      "reentry": "The sky-like girl whom we knew!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "She dressed herself to go to the fair",
+      "place": "She dressed herself to go to the fair",
+      "reentry": "In a dress of white and blue; A white lace cap, and ribbons white",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "She wore in her hair;",
+      "place": "She wore in her hair;",
+      "reentry": "She does not hear in the night Her mother crying for her, Where,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "Deep down in the sea,",
+      "place": "Deep down in the sea,",
+      "reentry": "She rolls and lingers to and fro Unweariedly.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "William O'Kelly",
+      "place": "William O'Kelly",
+      "reentry": "The Protecting Tree",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "Of the men of the land of Fal!",
+      "place": "Of the men of the land of Fal!",
+      "reentry": "What aileth thee, And why is it that all",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "About thee grieves?",
+      "place": "About thee grieves?",
+      "reentry": "Alas, O Tree of the Leaves!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "Here is thy rhyme:",
+      "place": "Here is thy rhyme:",
+      "reentry": "Thy bloom is lightened; And if thy fruit be withered",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "Thy root hath not tightened",
+      "place": "Thy root hath not tightened",
+      "reentry": "At the same time.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "Not since the Gael was sold",
+      "place": "Not since the Gael was sold",
+      "reentry": "At Aughrim. Not since to cold, Dull death went Owen Roe; Not since the drowning of Clann Adam in the days of Noe",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "Brought men to hush,",
+      "place": "Brought men to hush,",
+      "reentry": "Has such a tale of woe come to us In such a rush.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "The true clean-wheat of the Gael is reaped",
+      "place": "The true clean-wheat of the Gael is reaped",
+      "reentry": "Destruction be upon Death,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "For he has come and taken from our tree",
+      "place": "For he has come and taken from our tree",
+      "reentry": "The topmost blackberry!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "Sean O'Cosgair",
+      "place": "Sean O'Cosgair",
+      "reentry": "Pity it was that you should ever stand",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "In ship or boat,",
+      "place": "In ship or boat,",
+      "reentry": "Or that you went afloat Inside that ship!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "The lusty steps you took!",
+      "place": "The lusty steps you took!",
+      "reentry": "The ways and journeys you knew how to wend From London back to Beltra,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "And this end!",
+      "place": "And this end!",
+      "reentry": "You who could swim so well!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "What time you sported in the lifting tides",
+      "place": "What time you sported in the lifting tides",
+      "reentry": "The girls swam out to you, and held your sides When they were weary, for they knew they were",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "Safe, because you were there",
+      "place": "Safe, because you were there",
+      "reentry": "Your little-mother thought that this was true (And so she made no stir",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "Till you were found),",
+      "place": "Till you were found),",
+      "reentry": "Although an hundred might be drowned, you Would come back safe to her,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "The County Mayo",
+      "place": "The County Mayo",
+      "reentry": "Now with the coming in of the spring the days will stretch a bit, And after the Feast of Brigid I shall hoist my flag and go, For since the thought got into my head I can neither stand nor sit Until I find myself in the middle of the County",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "When I remember Carra and Gallen close beside,",
+      "place": "When I remember Carra and Gallen close beside,",
+      "reentry": "And the Gap of the Two Bushes, and the wide plains of Mayo.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "Eileen, Diarmuid and Teig",
+      "place": "Eileen, Diarmuid and Teig",
+      "reentry": "Be kind unto these three, O King! For they were fragrant-skinned, cheerful and giving; Three stainless pearls, three of mild, winning ways,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "Three candles sending forth three pleasant rays,",
+      "place": "Three candles sending forth three pleasant rays,",
+      "reentry": "Three vines, three doves, three apples from a bough, Three graces in a house, three who refused nohow",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "Help to the needy, three of slenderness,",
+      "place": "Help to the needy, three of slenderness,",
+      "reentry": "Three memories for the companionless, Three strings of music, three deep holes in clay,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "Three lovely children who loved Christ alway,",
+      "place": "Three lovely children who loved Christ alway,",
+      "reentry": "Three mouths, three hearts, three minds beneath a stone; Ruin it is! three causes for the moan",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "That rises everywhere now they are gone:",
+      "place": "That rises everywhere now they are gone:",
+      "reentry": "Be kind, O King, unto this two and one!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "Honoro Butler and Lord Kenmare (1720)",
+      "place": "Honoro Butler and Lord Kenmare (1720)",
+      "reentry": "In bloom and bud the bees are busily",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "Storing against the winter their sweet hoard",
+      "place": "Storing against the winter their sweet hoard",
+      "reentry": "That shall be rifled ere the autumn be Past, or the winter comes with silver sword",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "To fright the bees, until the merry round",
+      "place": "To fright the bees, until the merry round",
+      "reentry": "Tells them that sweets again are to be found.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "The lusty tide is flowing by in ease,",
+      "place": "The lusty tide is flowing by in ease,",
+      "reentry": "Telling of joy along its brimming way; Far in its waters is an isle of trees",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "Whereto the sun will go at end of day,",
+      "place": "Whereto the sun will go at end of day,",
+      "reentry": "As who in secret place and dear is hid, And scarce can rouse him thence tho' he be chid.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "Now justice comes all trouble to repair,",
+      "place": "Now justice comes all trouble to repair,",
+      "reentry": "And cheeks that had been wan are coloured well, The untilled moor is comely, and the air",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "Hath a great round of song from bird in dell,",
+      "place": "Hath a great round of song from bird in dell,",
+      "reentry": "And bird on wing and bird on forest tree, And from each place and space where bird may be.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "There is no grievance here, and no distress,",
+      "place": "There is no grievance here, and no distress,",
+      "reentry": "The woeful are not woeful any longer, The rose hath put on her a finer dress,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "And every girl to bloom adds bloom again,",
+      "place": "And every girl to bloom adds bloom again,",
+      "reentry": "And every man hath heart beyond all men.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "Comes joyfully this day of days to wed",
+      "place": "Comes joyfully this day of days to wed",
+      "reentry": "Her choice of all whom fame hath loved till now, And who chose her from all that love instead: The Joy of the Flock, the Bud of the Branch is she,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "Crown of the Irish Pride and Chivalry",
+      "place": "Crown of the Irish Pride and Chivalry",
+      "reentry": "He is a chief and prince, well famed is he,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "The love of thousands unto him does run;",
+      "place": "The love of thousands unto him does run;",
+      "reentry": "And all days were before and all will be, He was and will be loved by every one;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "And she and he be loved by all no less",
+      "place": "And she and he be loved by all no less",
+      "reentry": "Who courage love, and love, and loveliness.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "The nobles of the province take their wine,",
+      "place": "The nobles of the province take their wine,",
+      "reentry": "And drink a merry health to groom and bride; They shall be drunken ere the sun decline,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "And all their merrymaking lay aside",
+      "place": "And all their merrymaking lay aside",
+      "reentry": "In deep, sweet sleep that seals a merry day Until the dawn, when they shall ride away,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "Leaving those two who now are one behind",
+      "place": "Leaving those two who now are one behind",
+      "reentry": "O Moon! pour on the silence all thy beams, And for this night be beautiful and kind;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "Weave in their sleep thy best and dearest dreams;",
+      "place": "Weave in their sleep thy best and dearest dreams;",
+      "reentry": "And fortune them in their own land to be Safe from all evil chance, and from all enmity.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "Clann Cartie",
+      "place": "Clann Cartie",
+      "reentry": "My heart is withered and my health is gone,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "For they who were not easy put upon,",
+      "place": "For they who were not easy put upon,",
+      "reentry": "Masters of mirth and of fair clemency, Masters of wealth and gentle charity,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "They are all gone.  Mac Caura Mor is dead,",
+      "place": "They are all gone.  Mac Caura Mor is dead,",
+      "reentry": "Mac Caura of the Lee is finished, Mac Caura of Kanturk joined clay to clay",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "And gat him gone, and bides as deep as they",
+      "place": "And gat him gone, and bides as deep as they",
+      "reentry": "Their years, their gentle deeds, their flags are furled,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "And deeply down, under the stiffened world,",
+      "place": "And deeply down, under the stiffened world,",
+      "reentry": "In chests of oaken wood are princes thrust, To crumble day by day into the dust",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "A mouth might puff at; nor is left a trace",
+      "place": "A mouth might puff at; nor is left a trace",
+      "reentry": "Of those who did of grace all that was grace.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "O Wave of Cliona, cease thy bellowing!",
+      "place": "O Wave of Cliona, cease thy bellowing!",
+      "reentry": "And let mine ears forget a while to ring At thy long, lamentable misery:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s115",
+      "title": "The great are dead indeed, the great are dead;",
+      "place": "The great are dead indeed, the great are dead;",
+      "reentry": "And I, in little time, will stoop my head And put it under, and will be forgot",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s116",
+      "title": "With them, and be with them, and thus be not:",
+      "place": "With them, and be with them, and thus be not:",
+      "reentry": "Ease thee, cease thy long keening, cry no more: End is, and here is end, and end is sore,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s117",
+      "title": "And to all lamentation be there end:",
+      "place": "And to all lamentation be there end:",
+      "reentry": "If I might come on thee, O howling friend! Knowing that sails were drumming on the sea",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s118",
+      "title": "Westward to Eire, and that help would be",
+      "place": "Westward to Eire, and that help would be",
+      "reentry": "Trampling for her upon a Spanish deck, I'd ram thy lamentation down thy neck.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s119",
+      "title": "The Land of Fal",
+      "place": "The Land of Fal",
+      "reentry": "If all must suffer equally, and pay",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s120",
+      "title": "In equal share for that sin wrought by Eve,",
+      "place": "In equal share for that sin wrought by Eve,",
+      "reentry": "O Thou, if Thou wilt deign to answer, say: Why are the poor tormented? why made grieve",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s121",
+      "title": "The innocent? why are the free enslaved?",
+      "place": "The innocent? why are the free enslaved?",
+      "reentry": "Why have the wicked peace tho' void of ruth? Why are there none to pity, when, dismayed,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s122",
+      "title": "And sick with fear, the lamb bleats to the tooth",
+      "place": "And sick with fear, the lamb bleats to the tooth",
+      "reentry": "That tears him down? why is the cry unheard Of lonely anguish? why, when the land of Fal",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s123",
+      "title": "Had loved Thee long and well, was she not spared",
+      "place": "Had loved Thee long and well, was she not spared",
+      "reentry": "The ruin that hath stamped her under all That mourn and die?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s124",
+      "title": "Inis Fal",
+      "place": "Inis Fal",
+      "reentry": "Now may we turn aside and dry our tears,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s125",
+      "title": "And comfort us, and lay aside our fears,",
+      "place": "And comfort us, and lay aside our fears,",
+      "reentry": "For all is gone--all comely quality, All gentleness and hospitality,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s126",
+      "title": "All courtesy and merriment is gone;",
+      "place": "All courtesy and merriment is gone;",
+      "reentry": "Our virtues all are withered every one, Our music vanished and our skill to sing:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s127",
+      "title": "Now may we quiet us and quit our moan,",
+      "place": "Now may we quiet us and quit our moan,",
+      "reentry": "Nothing is whole that could be broke; no thing Remains to us of all that was our own.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s128",
+      "title": "Owen O'Neill",
+      "place": "Owen O'Neill",
+      "reentry": "If poesy have truth at all,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s129",
+      "title": "If some great lion of the Gael",
+      "place": "If some great lion of the Gael",
+      "reentry": "Shall rule the lovely land of Fal; O yellow mast and roaring sail!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s130",
+      "title": "Carry the leadership for me,",
+      "place": "Carry the leadership for me,",
+      "reentry": "Writ in this letter, o'er the sea To great O'Neill.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s131",
+      "title": "Egan O'Rahilly",
+      "place": "Egan O'Rahilly",
+      "reentry": "Here in a distant place I hold my tongue;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s132",
+      "title": "I am O'Rahilly:",
+      "place": "I am O'Rahilly:",
+      "reentry": "When I was young, Who now am young no more,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s133",
+      "title": "I did not eat things picked up from the shore",
+      "place": "I did not eat things picked up from the shore",
+      "reentry": "The periwinkle, and the tough dogfish At even-time have got into my dish! The great, where are they now! the great had said--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s134",
+      "title": "This is not seemly, bring to him instead",
+      "place": "This is not seemly, bring to him instead",
+      "reentry": "That which serves his and serves our dignity-- And that was done.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s135",
+      "title": "I am O'Rahilly:",
+      "place": "I am O'Rahilly:",
+      "reentry": "Here in a distant place I hold my tongue, Who once said all his say, when he was young!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s136",
+      "title": "Righteous Anger",
+      "place": "Righteous Anger",
+      "reentry": "The lanky hank of a she in the inn over there Nearly killed me for asking the loan of a glass of beer: May the devil grip the whey-faced slut by the hair,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s137",
+      "title": "And beat bad manners out of her skin for a year",
+      "place": "And beat bad manners out of her skin for a year",
+      "reentry": "That parboiled imp, with the hardest jaw you will see On virtue's path, and a voice that would rasp the dead, Came roaring and raging the minute she looked at me, And threw me out of the house on the back of my head!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s138",
+      "title": "If I asked her master he'd give me a cask a day;",
+      "place": "If I asked her master he'd give me a cask a day;",
+      "reentry": "But she, with the beer at hand, not a gill would arrange! May she marry a ghost and bear him a kitten, and may The High King of Glory permit her to get the mange.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s139",
+      "title": "The Weavers",
+      "place": "The Weavers",
+      "reentry": "Many a time your father gave me aid",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s140",
+      "title": "When I was down, and now I'm down again:",
+      "place": "When I was down, and now I'm down again:",
+      "reentry": "You mustn't take it bad or be dismayed Because I say, young folk should help old men",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s141",
+      "title": "And 'tis their duty to do that: Amen!",
+      "place": "And 'tis their duty to do that: Amen!",
+      "reentry": "I have no cows, no sheep, no cloak, no hat,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s142",
+      "title": "For those who used to give me things are dead",
+      "place": "For those who used to give me things are dead",
+      "reentry": "And my luck died with them: because of that I won't pay you a farthing, but, instead,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s143",
+      "title": "I'll owe you till the dead rise from the dead",
+      "place": "I'll owe you till the dead rise from the dead",
+      "reentry": "A farthing! that's not much, but, all the same,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s144",
+      "title": "I haven't half a farthing, for that grand",
+      "place": "I haven't half a farthing, for that grand",
+      "reentry": "Big idiot called Fortune rigged the game And gave me nothing, while she filled the hand",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s145",
+      "title": "Of every stingy devil in the land",
+      "place": "Of every stingy devil in the land",
+      "reentry": "You weave, and I: you shirts: I weave instead",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s146",
+      "title": "My careful verse--but you get paid at times!",
+      "place": "My careful verse--but you get paid at times!",
+      "reentry": "The only rap I get is on my head: But should it come again that men like rhymes",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s147",
+      "title": "Odell",
+      "place": "Odell",
+      "reentry": "My mind is sad and weary thinking how",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s148",
+      "title": "The griffins of the Gael went over the sea",
+      "place": "The griffins of the Gael went over the sea",
+      "reentry": "From noble Eire, and are fighting now In France and Flanders and in Germany.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s149",
+      "title": "If they, 'mid whom I sported without dread,",
+      "place": "If they, 'mid whom I sported without dread,",
+      "reentry": "Were home I would not mind what foe might do, Or fear tax-man Odell would seize my bed",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s150",
+      "title": "To pay the hearth-rate that is overdue",
+      "place": "To pay the hearth-rate that is overdue",
+      "reentry": "I pray to Him who, in the haughty hour",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s151",
+      "title": "Of Babel, threw confusion on each tongue,",
+      "place": "Of Babel, threw confusion on each tongue,",
+      "reentry": "That I may see our princes back in power, And see Odell, the tax-collector, hung.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s152",
+      "title": "The Apology",
+      "place": "The Apology",
+      "reentry": "Do not be distant with me, do not be",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s153",
+      "title": "Angry because I drank deep of your wine,",
+      "place": "Angry because I drank deep of your wine,",
+      "reentry": "But treat that laughing matter laughingly Because I am a poet, and incline",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s154",
+      "title": "By nature and by art to jollity",
+      "place": "By nature and by art to jollity",
+      "reentry": "Always I loved to see, I will aver,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s155",
+      "title": "The good red tide lip at the flagon's brim,",
+      "place": "The good red tide lip at the flagon's brim,",
+      "reentry": "Sitting half fool and half philosopher, Chatting with every kind of her and him,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s156",
+      "title": "And shrugged at sneer of money-gatherer",
+      "place": "And shrugged at sneer of money-gatherer",
+      "reentry": "Often enough I trudge by hedge and wall,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s157",
+      "title": "Too often there's no money in my purse,",
+      "place": "Too often there's no money in my purse,",
+      "reentry": "Nor malice in my mind ever at all, And for my songs no person is the worse",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s158",
+      "title": "But I who give all of my store to all",
+      "place": "But I who give all of my store to all",
+      "reentry": "If busybody spoke to you of it,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s159",
+      "title": "Say, kindly man, if kindly man do live:",
+      "place": "Say, kindly man, if kindly man do live:",
+      "reentry": "The poet only takes his sup and bit, And say: It is no great return to give",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s160",
+      "title": "The Gang",
+      "place": "The Gang",
+      "reentry": "Our fathers must have sinned: we pay for it! Through them the base-born tribe that sold their king",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s161",
+      "title": "Sneaked into power, and in high places sit,",
+      "place": "Sneaked into power, and in high places sit,",
+      "reentry": "And do their will and wish in everything; For they may rob and kill, grieve and disgrace",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s162",
+      "title": "All who are left alive of Eiver's race",
+      "place": "All who are left alive of Eiver's race",
+      "reentry": "They seized with daring guile on rank and pelf,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s163",
+      "title": "And swore that they would never bend a knee",
+      "place": "And swore that they would never bend a knee",
+      "reentry": "Unto the king: they robbed the Church herself: They stole our princes' lands, and o'er the sea",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s164",
+      "title": "They packed those princes, or drove them away",
+      "place": "They packed those princes, or drove them away",
+      "reentry": "To barren rocks and fields that have no clay.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s165",
+      "title": "That spawn of base mechanics! who could ne'er,",
+      "place": "That spawn of base mechanics! who could ne'er,",
+      "reentry": "Though Doomsday came, by any art be made Noble, are noble now, and have no care:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s166",
+      "title": "Snugly they sit and safe and unafraid",
+      "place": "Snugly they sit and safe and unafraid",
+      "reentry": "In stately places, proud as if the mud And slime that swills their veins were princes' blood.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s167",
+      "title": "Let us be wise and wary of that gang!",
+      "place": "Let us be wise and wary of that gang!",
+      "reentry": "When they seem friendly know they have much wit, And if it come that any man shall hang,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s168",
+      "title": "This neck will go unchoked, that nose unslit,",
+      "place": "This neck will go unchoked, that nose unslit,",
+      "reentry": "For, be things wry and crooked and to guess, Those twisters are at home in twistiness.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s169",
+      "title": "We know now what their plottings were about,",
+      "place": "We know now what their plottings were about,",
+      "reentry": "And how they planned, and what they meant to win; 'Twas God, not us, that took their tangles out,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s170",
+      "title": "For no sleek eel inside an oily skin",
+      "place": "For no sleek eel inside an oily skin",
+      "reentry": "Could slip with more address from harm than they Can slip from punishment and get away.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s171",
+      "title": "When trouble came it was their plan to get",
+      "place": "When trouble came it was their plan to get",
+      "reentry": "Our friends into the boat they meant to leave, And there was some one left to pay their debt,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s172",
+      "title": "And they were free again to lie and thieve:",
+      "place": "And they were free again to lie and thieve:",
+      "reentry": "So they could put the feet of the man they'd rob Into the boots of the one that did the job.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s173",
+      "title": "If burnt child does truly dread the flame,",
+      "place": "If burnt child does truly dread the flame,",
+      "reentry": "If wounded soldier shrinks again to see A steel point sloping to him, let the same",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s174",
+      "title": "Experience teach our chiefs that they may be",
+      "place": "Experience teach our chiefs that they may be",
+      "reentry": "Crafty in meeting craft, and may beware Of brewer's bees and buzzers everywhere.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s175",
+      "title": "Unto the Mind which pardons sin I pray,",
+      "place": "Unto the Mind which pardons sin I pray,",
+      "reentry": "I pray to Him who did permit our woe But halted our destruction, that to-day",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s176",
+      "title": "Kindness and love and trust and inward glow",
+      "place": "Kindness and love and trust and inward glow",
+      "reentry": "Of vision light our hearts with light divine, So that we know our way until the end of time.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s177",
+      "title": "The Geraldine's Cloak",
+      "place": "The Geraldine's Cloak",
+      "reentry": "I will not heed the message which you bring:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s178",
+      "title": "That lovely lady gave her cloak to us,",
+      "place": "That lovely lady gave her cloak to us,",
+      "reentry": "And who'd believe she'd give away a thing And ask it back again?--'tis fabulous!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s179",
+      "title": "My parting from her gave me cause to grieve,",
+      "place": "My parting from her gave me cause to grieve,",
+      "reentry": "For she, that I was poor, had misty eyes; If some Archangel blew it I'd believe",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s180",
+      "title": "The message which you bring, not otherwise",
+      "place": "The message which you bring, not otherwise",
+      "reentry": "I do not say this just to make a joke,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s181",
+      "title": "Nor would I rob her, but, 'tis verity,",
+      "place": "Nor would I rob her, but, 'tis verity,",
+      "reentry": "So long as I could swagger in a cloak I never cared how bad my luck could be.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s182",
+      "title": "That lady, all perfection, knows the sting",
+      "place": "That lady, all perfection, knows the sting",
+      "reentry": "Of poverty was thrust deep into me: I don't believe she'd do this kind of thing,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s183",
+      "title": "Skim-Milk",
+      "place": "Skim-Milk",
+      "reentry": "A small part only of my grief I write;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s184",
+      "title": "And if I do not give you all the tale",
+      "place": "And if I do not give you all the tale",
+      "reentry": "It is because my gloom gets some respite By just a small bewailing: I bewail",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s185",
+      "title": "That I with sly and stupid folk must bide",
+      "place": "That I with sly and stupid folk must bide",
+      "reentry": "Who steal my food and ruin my inside.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s186",
+      "title": "Once I had books, each book beyond compare,",
+      "place": "Once I had books, each book beyond compare,",
+      "reentry": "But now no book at all is left to me, And I am spied and peeped on everywhere,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s187",
+      "title": "And my old head, stuffed with latinity,",
+      "place": "And my old head, stuffed with latinity,",
+      "reentry": "And with the poet's load of grave and gay Will not get me skim-milk for half a day.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s188",
+      "title": "Wild horse or quiet, not a horse have I,",
+      "place": "Wild horse or quiet, not a horse have I,",
+      "reentry": "But to the forest every day I go Bending beneath a load of wood, that high!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s189",
+      "title": "Which raises on my back a sorry row",
+      "place": "Which raises on my back a sorry row",
+      "reentry": "Of raw, red blisters; so I cry, alack, The rider that rides me will break my back.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s190",
+      "title": "Ossian, when he was old and near his end,",
+      "place": "Ossian, when he was old and near his end,",
+      "reentry": "Met Patrick by good luck, and he was stayed; I am a poet too and seek a friend,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s191",
+      "title": "A prop, a staff, a comforter, an aid,",
+      "place": "A prop, a staff, a comforter, an aid,",
+      "reentry": "A Patrick who will lift me from despair, In Cormac Uasal Mac Donagh of the golden hair.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s192",
+      "title": "Blue Blood",
+      "place": "Blue Blood",
+      "reentry": "We thought at first, this man is a king for sure, Or the branch of a mighty and ancient and famous lineage--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s193",
+      "title": "That silly, sulky, illiterate, black-avised boor",
+      "place": "That silly, sulky, illiterate, black-avised boor",
+      "reentry": "Who was hatched by foreign vulgarity under a hedge.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s194",
+      "title": "And gazing with me in awe at the princely lad,",
+      "place": "And gazing with me in awe at the princely lad,",
+      "reentry": "And asking each other from what bluest blueness of blood His daddy was squeezed, and the pa of the da of his dad?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s195",
+      "title": "We waited there, gaping and wondering, anxiously,",
+      "place": "We waited there, gaping and wondering, anxiously,",
+      "reentry": "Until he'd stop eating and let the glad tidings out, And the slack-jawed booby proved to the hilt that he Was lout, son of lout, by old lout, and was da to a lout!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s196",
+      "title": "O'Bruaidar",
+      "place": "O'Bruaidar",
+      "reentry": "I will sing no more songs: the pride of my country I sang Through forty long years of good rhyme, without any avail; And no one cared even as much as the half of a hang For the song or the singer, so here is an end to the tale.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s197",
+      "title": "Note",
+      "place": "Note",
+      "reentry": "This book ought to be called Loot or Plunder or Pieces of Eight or Treasure-Trove, or some name which would indicate and get away from its source, for although everything in it can be referred to the Irish of from one hundred to three hundr",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s198",
+      "title": "I am Raftery the poet,",
+      "place": "I am Raftery the poet,",
+      "reentry": "Full of hope and love, My eyes without sight,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s199",
+      "title": "My mind without torment,",
+      "place": "My mind without torment,",
+      "reentry": "Going west on my journey",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s200",
+      "title": "By the light of my heart,",
+      "place": "By the light of my heart,",
+      "reentry": "Tired and weary To the end of the road.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s201",
+      "title": "Behold me now",
+      "place": "Behold me now",
+      "reentry": "With my back to a wall, Playing music",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s202",
+      "title": "To empty pockets",
+      "place": "To empty pockets",
+      "reentry": "See Douglas Hyde's *Life of Raftery*.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s203",
+      "title": "By James Stephens",
+      "place": "By James Stephens",
+      "reentry": "The Charwoman's Daughter. Cr. 8vo. 4s. 6d. net.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s204",
+      "title": "The Crock of Gold.  Cr. 8vo.  6s. net",
+      "place": "The Crock of Gold.  Cr. 8vo.  6s. net",
+      "reentry": "Here are Ladies. Cr. 8vo. 6s. net.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s205",
+      "title": "The Demi-Gods.  Cr. 8vo.  6s. net",
+      "place": "The Demi-Gods.  Cr. 8vo.  6s. net",
+      "reentry": "Songs from the Clay. Poems. Cr. 8vo. 4s. 6d. net.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s206",
+      "title": "Some New Books",
+      "place": "Some New Books",
+      "reentry": "Moments of Vision and Miscellaneous Verses. By Thomas Hardy. Cr. 8vo. 6s. net.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s207",
+      "title": "By ALGERNON BLACKWOOD and VIOLET PEARN.  Cr. 8vo",
+      "place": "By ALGERNON BLACKWOOD and VIOLET PEARN.  Cr. 8vo",
+      "reentry": "Twenty: A volume of Poems. By Stella Benson, author of \"I Pose.\" Cr. 8vo.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s208",
+      "title": "By Sir Rabindranath Tagore",
+      "place": "By Sir Rabindranath Tagore",
+      "reentry": "Lover's Gift and Crossing. Cr. 8vo. 5s. net.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Mary Hynes (after Raftery) The Coolun do."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Nancy Walsh do. The Red Man's Wife do."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Anthony O'Daly do. Mary Ruane do."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Sean O'Cosgair do. The County Mayo do."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Honoro Butler and Lord Kenmare do. Clann Cartie do."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Inis Fal (after O'Rahilly) Owen O'Neill (after Pierce Ferriter)"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Righteous Anger (after O'Bruadair) The Weavers do."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "The Apology do. The Gang do."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Skim-Milk do. Blue Blood do."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Note"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "O woman full of wiliness!"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Withhold your hand adventurous, It holdeth nothing holding mine."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "My body's weakness doth appear; My blood is chill and thin; my day"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Do not call me a foolish man,"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "O slender witch, our bodies can Not mingle now, nor any time."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "From mine, ah, take your lips away! Lest heat to will should ripen, and"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "It is this curl, a silken nest,"
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "And this round, lovely, snow-white breast That draws desire in search of you."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "But this, tho' this were happiness! I shall not mingle in your dreams,"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "She is the sky of the sun,"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Of love, She is the love of my heart,"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "She is above The women of the race of Eve"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "Lovely and airy the view from the hill"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "But no good sight is good until By great good luck you see"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "Airily."
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Come with me, under my coat,"
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "Of the milk of the white goat, Or wine if it be thy will;"
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Talk is a trouble, too, Out on the side of the hill,"
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "But an eye to look into an eye And a hand in a hand to slip,"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "And a lip to find out a lip: What if the night be black"
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "Where the goat lies down in her track And all but the fern is still!"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "And we will drink our fill Of the milk of the white goat"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "As lily grows up easily,"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "To sweet perfection, So grew she,"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "Or as the rose that takes no care"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "Bloom after bloom, fair after fair, Sweet after sweet;"
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "As carelessly."
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "She is our enemy and friend, Our joy, our woe;"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "Madness or glee To you and me,"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "I, without bite or sup,"
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "I would up And would go after thee"
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "A thousand thanks from me"
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Because I have not lost my senses to thee, Though it was hardly I escaped from thee,"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "Then she arose"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "In her fine clothes."
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "Great frost Comes following."
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "By the daughter of Maelsheachlin The King."
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "Of high Ben Gulbain in the north, Was Diarmuid lost."
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "Who never submitted, They fell by Deirdre."
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "It is not on her gown"
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "It is her hair Which tumbles down"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "About her ways That she must care."
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "The dead would rise If they could see her face;"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "Only to hear her sing: But death is blind, and gives not ear nor eye"
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "We would leave behind"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "And house and home; And wander blind,"
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "And ever roam, If she would come to us"
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "Softly she said to me--"
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "And I will go with thee."
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "Since your limbs were laid out"
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "The fish leap not out In the waves."
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "Does not fall in the morn, For O'Daly is dead:"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "Not a word can be said, Not a tree have a leaf;"
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "There is nothing to do, There is nothing but grief."
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "The sky-like girl whom we knew!"
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "In a dress of white and blue; A white lace cap, and ribbons white"
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "She does not hear in the night Her mother crying for her, Where,"
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "She rolls and lingers to and fro Unweariedly."
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "The Protecting Tree"
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "What aileth thee, And why is it that all"
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "Alas, O Tree of the Leaves!"
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "Thy bloom is lightened; And if thy fruit be withered"
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "At the same time."
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "At Aughrim. Not since to cold, Dull death went Owen Roe; Not since the drowning of Clann Adam in the days of Noe"
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "Has such a tale of woe come to us In such a rush."
+    },
+    {
+      "id": "s74-1",
+      "sceneId": "s74",
+      "text": "The true flower of the blood of the place is fallen:"
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "Destruction be upon Death,"
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "The topmost blackberry!"
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "Pity it was that you should ever stand"
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "Or that you went afloat Inside that ship!"
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "The ways and journeys you knew how to wend From London back to Beltra,"
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "You who could swim so well!"
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "The girls swam out to you, and held your sides When they were weary, for they knew they were"
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "Your little-mother thought that this was true (And so she made no stir"
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "Although an hundred might be drowned, you Would come back safe to her,"
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "Now with the coming in of the spring the days will stretch a bit, And after the Feast of Brigid I shall hoist my flag and go, For since the thought got into my head I can neither stand nor sit Until I find myself in the middle of the County of Mayo."
+    },
+    {
+      "id": "s84-1",
+      "sceneId": "s84",
+      "text": "In Claremorris I would stop a night and sleep with decent men, And then go on to Balla just beyond and drink galore, And next to Kiltimagh for a visit of about a month, and then I would only be a couple of miles away from Ballymore."
+    },
+    {
+      "id": "s84-2",
+      "sceneId": "s84",
+      "text": "I say and swear my heart lifts up like the lifting of a tide, Rising up like the rising wind till fog or mist must go,"
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "And the Gap of the Two Bushes, and the wide plains of Mayo."
+    },
+    {
+      "id": "s85-1",
+      "sceneId": "s85",
+      "text": "To Killaden then, to the place where everything grows that is best, There are raspberries there and strawberries there and all that is good for men; And if I were only there in the middle of my folk my heart could rest, For age itself would leave me there and I'd be young again."
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "Be kind unto these three, O King! For they were fragrant-skinned, cheerful and giving; Three stainless pearls, three of mild, winning ways,"
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "Three vines, three doves, three apples from a bough, Three graces in a house, three who refused nohow"
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "Three memories for the companionless, Three strings of music, three deep holes in clay,"
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "Three mouths, three hearts, three minds beneath a stone; Ruin it is! three causes for the moan"
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "Be kind, O King, unto this two and one!"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "In bloom and bud the bees are busily"
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "That shall be rifled ere the autumn be Past, or the winter comes with silver sword"
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "Tells them that sweets again are to be found."
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "Telling of joy along its brimming way; Far in its waters is an isle of trees"
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "As who in secret place and dear is hid, And scarce can rouse him thence tho' he be chid."
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "And cheeks that had been wan are coloured well, The untilled moor is comely, and the air"
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "And bird on wing and bird on forest tree, And from each place and space where bird may be."
+    },
+    {
+      "id": "s97-1",
+      "sceneId": "s97",
+      "text": "The languid are made strong, the strong grow stronger,"
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "The woeful are not woeful any longer, The rose hath put on her a finer dress,"
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "And every man hath heart beyond all men."
+    },
+    {
+      "id": "s99-1",
+      "sceneId": "s99",
+      "text": "For the Star of Munster, Pearl of the Golden Bough,"
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "Her choice of all whom fame hath loved till now, And who chose her from all that love instead: The Joy of the Flock, the Bud of the Branch is she,"
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "He is a chief and prince, well famed is he,"
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "And all days were before and all will be, He was and will be loved by every one;"
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "Who courage love, and love, and loveliness."
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "And drink a merry health to groom and bride; They shall be drunken ere the sun decline,"
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "In deep, sweet sleep that seals a merry day Until the dawn, when they shall ride away,"
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "O Moon! pour on the silence all thy beams, And for this night be beautiful and kind;"
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "And fortune them in their own land to be Safe from all evil chance, and from all enmity."
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "My heart is withered and my health is gone,"
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "Masters of mirth and of fair clemency, Masters of wealth and gentle charity,"
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "Mac Caura of the Lee is finished, Mac Caura of Kanturk joined clay to clay"
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "Their years, their gentle deeds, their flags are furled,"
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "In chests of oaken wood are princes thrust, To crumble day by day into the dust"
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "Of those who did of grace all that was grace."
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "And let mine ears forget a while to ring At thy long, lamentable misery:"
+    },
+    {
+      "id": "s115-0",
+      "sceneId": "s115",
+      "text": "And I, in little time, will stoop my head And put it under, and will be forgot"
+    },
+    {
+      "id": "s116-0",
+      "sceneId": "s116",
+      "text": "Ease thee, cease thy long keening, cry no more: End is, and here is end, and end is sore,"
+    },
+    {
+      "id": "s117-0",
+      "sceneId": "s117",
+      "text": "If I might come on thee, O howling friend! Knowing that sails were drumming on the sea"
+    },
+    {
+      "id": "s118-0",
+      "sceneId": "s118",
+      "text": "Trampling for her upon a Spanish deck, I'd ram thy lamentation down thy neck."
+    },
+    {
+      "id": "s119-0",
+      "sceneId": "s119",
+      "text": "If all must suffer equally, and pay"
+    },
+    {
+      "id": "s120-0",
+      "sceneId": "s120",
+      "text": "O Thou, if Thou wilt deign to answer, say: Why are the poor tormented? why made grieve"
+    },
+    {
+      "id": "s121-0",
+      "sceneId": "s121",
+      "text": "Why have the wicked peace tho' void of ruth? Why are there none to pity, when, dismayed,"
+    },
+    {
+      "id": "s122-0",
+      "sceneId": "s122",
+      "text": "That tears him down? why is the cry unheard Of lonely anguish? why, when the land of Fal"
+    },
+    {
+      "id": "s123-0",
+      "sceneId": "s123",
+      "text": "The ruin that hath stamped her under all That mourn and die?"
+    },
+    {
+      "id": "s124-0",
+      "sceneId": "s124",
+      "text": "Now may we turn aside and dry our tears,"
+    },
+    {
+      "id": "s125-0",
+      "sceneId": "s125",
+      "text": "For all is gone--all comely quality, All gentleness and hospitality,"
+    },
+    {
+      "id": "s126-0",
+      "sceneId": "s126",
+      "text": "Our virtues all are withered every one, Our music vanished and our skill to sing:"
+    },
+    {
+      "id": "s127-0",
+      "sceneId": "s127",
+      "text": "Nothing is whole that could be broke; no thing Remains to us of all that was our own."
+    },
+    {
+      "id": "s128-0",
+      "sceneId": "s128",
+      "text": "If poesy have truth at all,"
+    },
+    {
+      "id": "s129-0",
+      "sceneId": "s129",
+      "text": "Shall rule the lovely land of Fal; O yellow mast and roaring sail!"
+    },
+    {
+      "id": "s130-0",
+      "sceneId": "s130",
+      "text": "Writ in this letter, o'er the sea To great O'Neill."
+    },
+    {
+      "id": "s131-0",
+      "sceneId": "s131",
+      "text": "Here in a distant place I hold my tongue;"
+    },
+    {
+      "id": "s132-0",
+      "sceneId": "s132",
+      "text": "When I was young, Who now am young no more,"
+    },
+    {
+      "id": "s133-0",
+      "sceneId": "s133",
+      "text": "The periwinkle, and the tough dogfish At even-time have got into my dish! The great, where are they now! the great had said--"
+    },
+    {
+      "id": "s134-0",
+      "sceneId": "s134",
+      "text": "That which serves his and serves our dignity-- And that was done."
+    },
+    {
+      "id": "s135-0",
+      "sceneId": "s135",
+      "text": "Here in a distant place I hold my tongue, Who once said all his say, when he was young!"
+    },
+    {
+      "id": "s136-0",
+      "sceneId": "s136",
+      "text": "The lanky hank of a she in the inn over there Nearly killed me for asking the loan of a glass of beer: May the devil grip the whey-faced slut by the hair,"
+    },
+    {
+      "id": "s137-0",
+      "sceneId": "s137",
+      "text": "That parboiled imp, with the hardest jaw you will see On virtue's path, and a voice that would rasp the dead, Came roaring and raging the minute she looked at me, And threw me out of the house on the back of my head!"
+    },
+    {
+      "id": "s138-0",
+      "sceneId": "s138",
+      "text": "But she, with the beer at hand, not a gill would arrange! May she marry a ghost and bear him a kitten, and may The High King of Glory permit her to get the mange."
+    },
+    {
+      "id": "s139-0",
+      "sceneId": "s139",
+      "text": "Many a time your father gave me aid"
+    },
+    {
+      "id": "s140-0",
+      "sceneId": "s140",
+      "text": "You mustn't take it bad or be dismayed Because I say, young folk should help old men"
+    },
+    {
+      "id": "s141-0",
+      "sceneId": "s141",
+      "text": "I have no cows, no sheep, no cloak, no hat,"
+    },
+    {
+      "id": "s142-0",
+      "sceneId": "s142",
+      "text": "And my luck died with them: because of that I won't pay you a farthing, but, instead,"
+    },
+    {
+      "id": "s143-0",
+      "sceneId": "s143",
+      "text": "A farthing! that's not much, but, all the same,"
+    },
+    {
+      "id": "s144-0",
+      "sceneId": "s144",
+      "text": "Big idiot called Fortune rigged the game And gave me nothing, while she filled the hand"
+    },
+    {
+      "id": "s145-0",
+      "sceneId": "s145",
+      "text": "You weave, and I: you shirts: I weave instead"
+    },
+    {
+      "id": "s146-0",
+      "sceneId": "s146",
+      "text": "The only rap I get is on my head: But should it come again that men like rhymes"
+    },
+    {
+      "id": "s147-0",
+      "sceneId": "s147",
+      "text": "My mind is sad and weary thinking how"
+    },
+    {
+      "id": "s148-0",
+      "sceneId": "s148",
+      "text": "From noble Eire, and are fighting now In France and Flanders and in Germany."
+    },
+    {
+      "id": "s149-0",
+      "sceneId": "s149",
+      "text": "Were home I would not mind what foe might do, Or fear tax-man Odell would seize my bed"
+    },
+    {
+      "id": "s150-0",
+      "sceneId": "s150",
+      "text": "I pray to Him who, in the haughty hour"
+    },
+    {
+      "id": "s151-0",
+      "sceneId": "s151",
+      "text": "That I may see our princes back in power, And see Odell, the tax-collector, hung."
+    },
+    {
+      "id": "s152-0",
+      "sceneId": "s152",
+      "text": "Do not be distant with me, do not be"
+    },
+    {
+      "id": "s153-0",
+      "sceneId": "s153",
+      "text": "But treat that laughing matter laughingly Because I am a poet, and incline"
+    },
+    {
+      "id": "s154-0",
+      "sceneId": "s154",
+      "text": "Always I loved to see, I will aver,"
+    },
+    {
+      "id": "s155-0",
+      "sceneId": "s155",
+      "text": "Sitting half fool and half philosopher, Chatting with every kind of her and him,"
+    },
+    {
+      "id": "s156-0",
+      "sceneId": "s156",
+      "text": "Often enough I trudge by hedge and wall,"
+    },
+    {
+      "id": "s157-0",
+      "sceneId": "s157",
+      "text": "Nor malice in my mind ever at all, And for my songs no person is the worse"
+    },
+    {
+      "id": "s158-0",
+      "sceneId": "s158",
+      "text": "If busybody spoke to you of it,"
+    },
+    {
+      "id": "s159-0",
+      "sceneId": "s159",
+      "text": "The poet only takes his sup and bit, And say: It is no great return to give"
+    },
+    {
+      "id": "s160-0",
+      "sceneId": "s160",
+      "text": "Our fathers must have sinned: we pay for it! Through them the base-born tribe that sold their king"
+    },
+    {
+      "id": "s161-0",
+      "sceneId": "s161",
+      "text": "And do their will and wish in everything; For they may rob and kill, grieve and disgrace"
+    },
+    {
+      "id": "s162-0",
+      "sceneId": "s162",
+      "text": "They seized with daring guile on rank and pelf,"
+    },
+    {
+      "id": "s163-0",
+      "sceneId": "s163",
+      "text": "Unto the king: they robbed the Church herself: They stole our princes' lands, and o'er the sea"
+    },
+    {
+      "id": "s164-0",
+      "sceneId": "s164",
+      "text": "To barren rocks and fields that have no clay."
+    },
+    {
+      "id": "s165-0",
+      "sceneId": "s165",
+      "text": "Though Doomsday came, by any art be made Noble, are noble now, and have no care:"
+    },
+    {
+      "id": "s166-0",
+      "sceneId": "s166",
+      "text": "In stately places, proud as if the mud And slime that swills their veins were princes' blood."
+    },
+    {
+      "id": "s167-0",
+      "sceneId": "s167",
+      "text": "When they seem friendly know they have much wit, And if it come that any man shall hang,"
+    },
+    {
+      "id": "s168-0",
+      "sceneId": "s168",
+      "text": "For, be things wry and crooked and to guess, Those twisters are at home in twistiness."
+    },
+    {
+      "id": "s169-0",
+      "sceneId": "s169",
+      "text": "And how they planned, and what they meant to win; 'Twas God, not us, that took their tangles out,"
+    },
+    {
+      "id": "s170-0",
+      "sceneId": "s170",
+      "text": "Could slip with more address from harm than they Can slip from punishment and get away."
+    },
+    {
+      "id": "s171-0",
+      "sceneId": "s171",
+      "text": "Our friends into the boat they meant to leave, And there was some one left to pay their debt,"
+    },
+    {
+      "id": "s172-0",
+      "sceneId": "s172",
+      "text": "So they could put the feet of the man they'd rob Into the boots of the one that did the job."
+    },
+    {
+      "id": "s173-0",
+      "sceneId": "s173",
+      "text": "If wounded soldier shrinks again to see A steel point sloping to him, let the same"
+    },
+    {
+      "id": "s174-0",
+      "sceneId": "s174",
+      "text": "Crafty in meeting craft, and may beware Of brewer's bees and buzzers everywhere."
+    },
+    {
+      "id": "s175-0",
+      "sceneId": "s175",
+      "text": "I pray to Him who did permit our woe But halted our destruction, that to-day"
+    },
+    {
+      "id": "s176-0",
+      "sceneId": "s176",
+      "text": "Of vision light our hearts with light divine, So that we know our way until the end of time."
+    },
+    {
+      "id": "s177-0",
+      "sceneId": "s177",
+      "text": "I will not heed the message which you bring:"
+    },
+    {
+      "id": "s178-0",
+      "sceneId": "s178",
+      "text": "And who'd believe she'd give away a thing And ask it back again?--'tis fabulous!"
+    },
+    {
+      "id": "s179-0",
+      "sceneId": "s179",
+      "text": "For she, that I was poor, had misty eyes; If some Archangel blew it I'd believe"
+    },
+    {
+      "id": "s180-0",
+      "sceneId": "s180",
+      "text": "I do not say this just to make a joke,"
+    },
+    {
+      "id": "s181-0",
+      "sceneId": "s181",
+      "text": "So long as I could swagger in a cloak I never cared how bad my luck could be."
+    },
+    {
+      "id": "s182-0",
+      "sceneId": "s182",
+      "text": "Of poverty was thrust deep into me: I don't believe she'd do this kind of thing,"
+    },
+    {
+      "id": "s183-0",
+      "sceneId": "s183",
+      "text": "A small part only of my grief I write;"
+    },
+    {
+      "id": "s184-0",
+      "sceneId": "s184",
+      "text": "It is because my gloom gets some respite By just a small bewailing: I bewail"
+    },
+    {
+      "id": "s185-0",
+      "sceneId": "s185",
+      "text": "Who steal my food and ruin my inside."
+    },
+    {
+      "id": "s186-0",
+      "sceneId": "s186",
+      "text": "But now no book at all is left to me, And I am spied and peeped on everywhere,"
+    },
+    {
+      "id": "s187-0",
+      "sceneId": "s187",
+      "text": "And with the poet's load of grave and gay Will not get me skim-milk for half a day."
+    },
+    {
+      "id": "s188-0",
+      "sceneId": "s188",
+      "text": "But to the forest every day I go Bending beneath a load of wood, that high!"
+    },
+    {
+      "id": "s189-0",
+      "sceneId": "s189",
+      "text": "Of raw, red blisters; so I cry, alack, The rider that rides me will break my back."
+    },
+    {
+      "id": "s190-0",
+      "sceneId": "s190",
+      "text": "Met Patrick by good luck, and he was stayed; I am a poet too and seek a friend,"
+    },
+    {
+      "id": "s191-0",
+      "sceneId": "s191",
+      "text": "A Patrick who will lift me from despair, In Cormac Uasal Mac Donagh of the golden hair."
+    },
+    {
+      "id": "s192-0",
+      "sceneId": "s192",
+      "text": "We thought at first, this man is a king for sure, Or the branch of a mighty and ancient and famous lineage--"
+    },
+    {
+      "id": "s193-0",
+      "sceneId": "s193",
+      "text": "Who was hatched by foreign vulgarity under a hedge."
+    },
+    {
+      "id": "s193-1",
+      "sceneId": "s193",
+      "text": "The good men of Clare were drinking his health in a flood,"
+    },
+    {
+      "id": "s194-0",
+      "sceneId": "s194",
+      "text": "And asking each other from what bluest blueness of blood His daddy was squeezed, and the pa of the da of his dad?"
+    },
+    {
+      "id": "s195-0",
+      "sceneId": "s195",
+      "text": "Until he'd stop eating and let the glad tidings out, And the slack-jawed booby proved to the hilt that he Was lout, son of lout, by old lout, and was da to a lout!"
+    },
+    {
+      "id": "s196-0",
+      "sceneId": "s196",
+      "text": "I will sing no more songs: the pride of my country I sang Through forty long years of good rhyme, without any avail; And no one cared even as much as the half of a hang For the song or the singer, so here is an end to the tale."
+    },
+    {
+      "id": "s196-1",
+      "sceneId": "s196",
+      "text": "If a person should think I complain and have not got the cause, Let him bring his eyes here and take a good look at my hand, Let him say if a goose-quill has calloused this poor pair of paws Or the spade that I grip on and dig with out there in the land?"
+    },
+    {
+      "id": "s196-2",
+      "sceneId": "s196",
+      "text": "When the great ones were safe and renowned and were rooted and tough, Though my mind went to them and took joy in the fortune of those, And pride in their pride and their fame, they gave little enough, Not as much as two boots for my feet, or an old suit of clothes."
+    },
+    {
+      "id": "s196-3",
+      "sceneId": "s196",
+      "text": "I ask of the Craftsman that fashioned the fly and the bird, Of the Champion whose passion will lift me from death in a time, Of the Spirit that melts icy hearts with the wind of a word, That my people be worthy, and get, better singing than mine."
+    },
+    {
+      "id": "s196-4",
+      "sceneId": "s196",
+      "text": "I had hoped to live decent, when Ireland was quit of her care, As a bailiff or steward perhaps in a house of degree, But my end of the tale is, old brogues and old britches to wear, So I'll sing no more songs for the men that care nothing for me."
+    },
+    {
+      "id": "s197-0",
+      "sceneId": "s197",
+      "text": "This book ought to be called Loot or Plunder or Pieces of Eight or Treasure-Trove, or some name which would indicate and get away from its source, for although everything in it can be referred to the Irish of from one hundred to three hundred years ago the word translation would be a misdescription. There are really only two translations in it, Keating's \"O Woman full of Wiliness\" and Raftery's \"County Mayo.\" Some of the poems owe no more than a phrase, a line, half a line, to the Irish, and around these scraps I have blown a bubble of verse and made my poem. In other cases, where the matter of the poem is almost entirely taken from the Irish, I have yet followed my own instinct in the arrangement of it, and the result might be called new poems. My first idea was to make an anthology of people whom long ago our poets had praised, so that, in another language and another time, these honoured names might be heard again, even though in my own terms and not in the historic context. I did not pursue this course, for I could not control the material which came to me and which took no heed of my plan and was just as interesting. It would therefore be a mistake to consider that these verses are representative of the poets by whom they are inspired. In the case of David O'Bruadair this is less true than in any of the others, but, even in his case, although I have often conveyed his matter almost verbatim, the selection is not representative of the poet. One side only, and that the least, is shown, for a greater pen than mine would be necessary if that tornado of rage, eloquence, and humour were to be presented; but the poems which I give might almost be taken as translations of one side of his terrific muse."
+    },
+    {
+      "id": "s197-1",
+      "sceneId": "s197",
+      "text": "As regards Egan O'Rahilly a similar remark is necessary. No pen and no language but his own could even distantly indicate a skill and melody which might be spoken of as one of the wonders of the world. I have done exactly as I pleased with his material."
+    },
+    {
+      "id": "s197-2",
+      "sceneId": "s197",
+      "text": "From Antoine O'Raftery I have taken more than from any of the others, and have in nearly every instance treated his matter so familiarly that a lover of Raftery (and who, having read a verse of his, does not love him?) might not know I was indebted to this poet for my songs. His work is different from that of Keating, O'Rahilly, or O'Bruadair, for these were learned men, and were writing out of a tradition so hoary with age and so complicated in convention that only learned and subtle minds could attempt it. I have wondered would Keating or O'Rahilly have been very scornful of Raftery's work? I think they might have been angry at such an ignorance of all the rules, and would probably have torn the paper on which his poems were written, and sat down to compose a satire which would have raised blisters on that poor, blind, wandering singer, the master of them all."
+    },
+    {
+      "id": "s197-3",
+      "sceneId": "s197",
+      "text": "In two of the poems which I tried to translate from Raftery I have completely failed. Against one of them I broke an hundred pens in vain; and in the other, \"The County Mayo,\" I have been so close to success and so far from succeeding that I may mourn a little about it. The first three verses are not bad, but the last verse is the completest miss: the simplicity of the original is there, its music is not, and in the last two lines the poignance, which should come on the reader as though a hand gripped at his heart, is absent. The other failure I have not printed because I could get no way on it at all: it would not even begin to translate. This is Raftery's reply to the man who did not recognise him as he fiddled to a crowd, and asked \"who is the musician?\""
+    },
+    {
+      "id": "s198-0",
+      "sceneId": "s198",
+      "text": "Full of hope and love, My eyes without sight,"
+    },
+    {
+      "id": "s199-0",
+      "sceneId": "s199",
+      "text": "Going west on my journey"
+    },
+    {
+      "id": "s200-0",
+      "sceneId": "s200",
+      "text": "Tired and weary To the end of the road."
+    },
+    {
+      "id": "s201-0",
+      "sceneId": "s201",
+      "text": "With my back to a wall, Playing music"
+    },
+    {
+      "id": "s202-0",
+      "sceneId": "s202",
+      "text": "See Douglas Hyde's *Life of Raftery*."
+    },
+    {
+      "id": "s202-1",
+      "sceneId": "s202",
+      "text": "Dissimilar as these poets are from each other in time, education, and temperament, they are alike in that they were all poor men, so poor that there was often little difference between them and beggars. They all sing of their poverty: Keating as a fact to be recorded among other facts, O'Rahilly in a very stately and bitter complaint, and Raftery as in the quotation above; but O'Bruadair lets out of him an unending, rebellious bawl which would be the most desolating utterance ever made by man if it was not also the most gleeful."
+    },
+    {
+      "id": "s202-2",
+      "sceneId": "s202",
+      "text": "THE END"
+    },
+    {
+      "id": "s203-0",
+      "sceneId": "s203",
+      "text": "The Charwoman's Daughter. Cr. 8vo. 4s. 6d. net."
+    },
+    {
+      "id": "s204-0",
+      "sceneId": "s204",
+      "text": "Here are Ladies. Cr. 8vo. 6s. net."
+    },
+    {
+      "id": "s205-0",
+      "sceneId": "s205",
+      "text": "Songs from the Clay. Poems. Cr. 8vo. 4s. 6d. net."
+    },
+    {
+      "id": "s205-1",
+      "sceneId": "s205",
+      "text": "The Adventures of Seumas Beg: The Rocky Road to Dublin. Cr. 8vo. 4s. 6d. net."
+    },
+    {
+      "id": "s206-0",
+      "sceneId": "s206",
+      "text": "Moments of Vision and Miscellaneous Verses. By Thomas Hardy. Cr. 8vo. 6s. net."
+    },
+    {
+      "id": "s206-1",
+      "sceneId": "s206",
+      "text": "Per Amica Silentia Lunae. By William Butler Yeats. Cr. 8vo. 4s. 6d. net."
+    },
+    {
+      "id": "s206-2",
+      "sceneId": "s206",
+      "text": "Whin: A volume of Poems. By Wilfrid Wilson Gibson, author of \"Livelihood.\" Cr. 8vo. 3s. 6d. net."
+    },
+    {
+      "id": "s206-3",
+      "sceneId": "s206",
+      "text": "Poems. By Ralph Hodgson. Fifth Impression. Fcap. 8vo. 3s. 6d. net."
+    },
+    {
+      "id": "s206-4",
+      "sceneId": "s206",
+      "text": "Karma. A Re-incarnation Play in Prologue, Epilogue, and Three Acts."
+    },
+    {
+      "id": "s207-0",
+      "sceneId": "s207",
+      "text": "Twenty: A volume of Poems. By Stella Benson, author of \"I Pose.\" Cr. 8vo."
+    },
+    {
+      "id": "s208-0",
+      "sceneId": "s208",
+      "text": "Lover's Gift and Crossing. Cr. 8vo. 5s. net."
+    },
+    {
+      "id": "s208-1",
+      "sceneId": "s208",
+      "text": "Mashi and other Stories. Cr. 8vo. 5s. net."
+    },
+    {
+      "id": "s208-2",
+      "sceneId": "s208",
+      "text": "London: Macmillan and Co., Ltd."
+    }
+  ]
+}

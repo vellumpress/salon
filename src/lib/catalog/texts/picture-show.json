@@ -1,0 +1,605 @@
+{
+  "id": "picture-show",
+  "title": "Picture-Show",
+  "author": "Siegfried Sassoon",
+  "year": "1919",
+  "note": "Project Gutenberg 59800",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "Fires in the dark you build; tall quivering flames In the huge midnight forest of the unknown. Your soul is full of cities with dead names, And blind-faced, earth-bound gods of bronze and stone Whose priests and kings and lust-begotten lord",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "In a strange house I woke; heard overhead Hastily-thudding feet and a muffled scream... (Is death like that?) ... I quaked uncomforted, Striving to frame to-morrow in a dream Of woods and sliding pools and cloudless day. (You know how bees ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "You understand my thoughts; though, when you think, You're out beyond the boundaries of my brain. I'm but a bird at dawn that cries, 'chink, chink'-- A garden-bird that warbles in the rain. And you're the flying-man, the speck that steers A",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Fires in the dark you build; tall quivering flames In the huge midnight forest of the unknown. Your soul is full of cities with dead names, And blind-faced, earth-bound gods of bronze and stone Whose priests and kings and lust-begotten lords Watch the procession of their thundering hosts, Or guard relentless fanes with flickering swords And wizardry of ghosts."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "In a strange house I woke; heard overhead Hastily-thudding feet and a muffled scream... (Is death like that?) ... I quaked uncomforted, Striving to frame to-morrow in a dream Of woods and sliding pools and cloudless day. (You know how bees come into a twilight room From dazzling afternoon, then sail away Out of the curtained gloom.)"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "You understand my thoughts; though, when you think, You're out beyond the boundaries of my brain. I'm but a bird at dawn that cries, 'chink, chink'-- A garden-bird that warbles in the rain. And you're the flying-man, the speck that steers A careful course; far down the verge of day, Half-way across the world. Above the years You soar ... Is death so bad? ... I wish you'd say."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Early Chronology"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Slowly the daylight left our listening faces. Professor Brown, with level baritone, Discoursed into the dusk. Five thousand years He guided us through scientific spaces Of excavated History, till the lone Roads of research grew blurred, and in our ears Time was the rumoured tongues of vanished races, And Thought a chartless Age of Ice and Stone."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "The story ended. Then the darkened air Flowered as he lit his pipe; an aureole glowed Enwreathed with smoke; the moment's match-light showed His rosy face, broad brow, and smooth grey hair, Backed by the crowded book-shelves. In his wake An archæologist began to make Assumptions about aqueducts; (he quoted Professor Sandstorm's book;) and soon they floated Through desiccated forests; mangled myths; And argued easily round megaliths. * * * * * * * Beyond the college garden something glinted: A copper moon climbed clear above the trees. Some Lydian coin? ... Professor Brown agrees That copper coins *were* in that culture minted. But, as her whitening way aloft she took, I thought she had a pre-dynastic look."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Elegy"
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "(TO Robert Ross)"
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Your dextrous wit will haunt us long Wounding our grief with yesterday. Your laughter is a broken song; And death has found you, kind and gay."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "We may forget those transient things That made your charm and our delight: But loyal love has deathless wings That rise and triumph out of night."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "So, in the days to come, your name Shall be as music that ascends When honour turns a heart from shame... O heart of hearts! ... O friend of friends!"
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "Miracles"
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "I dreamt I saw a huge grey boat in silence steaming Down a canal; it drew the dizzy landscape after; The solemn world was sucked along with it--a streaming Land-slide of loveliness. O, but I rocked with laughter, Staring, and clinging to my tree-top. For a lake Of gleaming peace swept on behind. (I mustn't wake.)"
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "And then great clouds gathered and burst in spumes of green That plunged into the water; and the sun came out On glittering islands thronged with orchards scarlet-bloomed; And rosy-plumed flamingoes flashed across the scene... O, but the beauty of their freedom made me shout... And when I woke I wondered where on earth I'd been."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "THE Goldsmith"
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "'*This job's the best I've done.*' He bent his head Over the golden vessel that he'd wrought. A bird was singing. But the craftsman's thought Is a forgotten language, lost and dead."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "He sigh'd and stretch'd brown arms. His friend came in And stood beside him in the morning sun. The goldwork glitter'd.... '*That's the best I've done.* '*And now I've got a necklace to begin.*'"
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "This was at Gnossos, in the isle of Crete... A girl was selling flowers along the street."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "Devotion TO Duty"
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "I was near the King that day. I saw him snatch And briskly scan the G.H.Q. dispatch. Thick-voiced, he read it out. (His face was grave.) 'This officer advanced with the first wave, 'And when our first objective had been gained, '(Though wounded twice), reorganized the line: 'The spirit of the troops was by his fine 'Example most effectively sustained.'"
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "He gripped his beard; then closed his eyes and said, 'Bathsheba must be warned that he is dead. 'Send for her. I will be the first to tell 'This wife how her heroic husband fell.'"
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "Ancient History"
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "Adam, a brown old vulture in the rain, Shivered below his wind-whipped olive-trees; Huddling sharp chin on scarred and scraggy knees, He moaned and mumbled to his darkening brain; '*He was the grandest of them all--was Cain!* 'A lion laired in the hills, that none could tire; 'Swift as a stag; a stallion of the plain, 'Hungry and fierce with deeds of huge desire.'"
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "Grimly he thought of Abel, soft and fair-- A lover with disaster in his face, And scarlet blossom twisted in bright hair. 'Afraid to fight; was murder more disgrace? ... '*God always hated Cain.*' ... He bowed his head-- The gaunt wild man whose lovely sons were dead."
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "Sporting Acquaintances"
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "I watched old squatting Chimpanzee: he traced His painful patterns in the dirt: I saw Red-haired Ourang-Utang, whimsical-faced, Chewing a sportsman's meditative straw. I'd met them years ago, and half-forgotten They'd come to grief. (But how, I'd never heard, Poor beggars!) Still, it seemed so rude and rotten To stand and gape at them with never a word."
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "I ventured 'Ages since we met,' and tried My candid smile of friendship. No success. One scratched his hairy thigh, while t'other sighed And glanced away. I saw they liked me less Than when, on Epsom Downs, in cloudless weather, We backed The Tetrarch and got drunk together."
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "What the Captain Said at the Point-To-Point"
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "I've had a good bump round; my little horse Refused the brook first time, Then jumped it prime; And ran out at the double, But of course There's always trouble at a double: And then--I don't know how It was--he turned it up At that big, hairy fence before the plough; And some young silly pup, (I don't know which), Near as a toucher knocked me into the ditch; But we finished full of running, and quite sound: And anyhow I've had a good bump round."
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "Cinema Hero"
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "O, this is more than fiction! It's the truth That somehow never happened. Pay your bob, And walk straight in, abandoning To-day. (To-day's a place outside the picture-house; Forget it, and the film will do the rest.)"
+    },
+    {
+      "id": "s2-29",
+      "sceneId": "s2",
+      "text": "There's nothing fine in being as large as life: The splendour starts when things begin to move And gestures grow enormous. That's the way To dramatise your dreams and play the part As you'd have done if luck had starred your face."
+    },
+    {
+      "id": "s2-30",
+      "sceneId": "s2",
+      "text": "I'm 'Rupert from the Mountains'! (Pass the stout)... Yes, I'm the Broncho Boy we watched to-night, That robbed a ranch and galloped down the creek. (Moonlight and shattering hoofs.... O moonlight of the West! Wind in the gum-trees, and my swerving mare Beating her flickering shadow on the post.) Ah, I was wild in those fierce days! You saw me Fix that saloon? They stared into my face And slowly put their hands up, while I stood With dancing eyes,--romantic to the world!"
+    },
+    {
+      "id": "s2-31",
+      "sceneId": "s2",
+      "text": "Things happened afterwards ... You know the story... The sheriff's daughter, bandaging my head; Love at first sight; the escape; and making good (To music by Mascagni). And at last---- Peace; and the gradual beauty of my smile."
+    },
+    {
+      "id": "s2-32",
+      "sceneId": "s2",
+      "text": "But that's all finished now. One has to take Life as it comes. I've nothing to regret. For men like me, the only thing that counts Is the adventure. Lord, what times I've had!"
+    },
+    {
+      "id": "s2-33",
+      "sceneId": "s2",
+      "text": "God and King Charles! And then my mistress's arms.... (To-morrow evening I'm a Cavalier.)"
+    },
+    {
+      "id": "s2-34",
+      "sceneId": "s2",
+      "text": "Well, what's the news to-night about the Strike?"
+    },
+    {
+      "id": "s2-35",
+      "sceneId": "s2",
+      "text": "Fancy Dress"
+    },
+    {
+      "id": "s2-36",
+      "sceneId": "s2",
+      "text": "Some Brave, awake in you to-night, Knocked at your heart: an eagle's flight Stirred in the feather on your head. Your wide-set Indian eyes, alight Above high cheek-bones smeared with red, Unveiled cragg'd centuries, and led You, the snared wraith of bygone things-- Wild ancestries of trackless Kings-- Out of the past.... So men have felt Strange anger move them as they knelt Praying to gods serenely starred In heavens where tomahawks are barred."
+    },
+    {
+      "id": "s2-37",
+      "sceneId": "s2",
+      "text": "Middle-Ages"
+    },
+    {
+      "id": "s2-38",
+      "sceneId": "s2",
+      "text": "I heard a clash, and a cry, And a horseman fleeing the wood. The moon hid in a cloud. Deep in shadow I stood. '*Ugly work!*' thought I, Holding my breath. '*Men must be cruel and proud,* '*Jousting for death.*'"
+    },
+    {
+      "id": "s2-39",
+      "sceneId": "s2",
+      "text": "With gusty glimmering shone The moon; and the wind blew colder. A man went over the hill, Bent to his horse's shoulder. '*Time for me to be gone*'... Darkly I fled. Owls in the wood were shrill, And the moon sank red."
+    },
+    {
+      "id": "s2-40",
+      "sceneId": "s2",
+      "text": "THE Portrait"
+    },
+    {
+      "id": "s2-41",
+      "sceneId": "s2",
+      "text": "I watch you, gazing at me from the wall, And wonder how you'd match your dreams with mine, If, mastering time's illusion, I could call You back to share this quiet candle-shine."
+    },
+    {
+      "id": "s2-42",
+      "sceneId": "s2",
+      "text": "For you were young, three-hundred years ago; And by your looks I guess that you were wise... Come, whisper soft, and Death will never know You've slipped away from those calm, painted eyes."
+    },
+    {
+      "id": "s2-43",
+      "sceneId": "s2",
+      "text": "Strange is your voice ... Poor ninny, dead so long, And all your pride forgotten like your name. '*One April morn I heard a blackbird's song,* '*And joy was in my heart like leaves aflame.*'"
+    },
+    {
+      "id": "s2-44",
+      "sceneId": "s2",
+      "text": "And so you died before your songs took wing; While Andrew Marvell followed in your wake. '*Love thrilled me into music. I could sing But for a moment,--but for beauty's sake.*'"
+    },
+    {
+      "id": "s2-45",
+      "sceneId": "s2",
+      "text": "Who passes? There's a star-lit breeze that stirs The glimmer of white lilies in the gloom. Who speaks? Death has his silent messengers: And there was more than silence in this room"
+    },
+    {
+      "id": "s2-46",
+      "sceneId": "s2",
+      "text": "While you were gazing at me from the wall And wondering how you'd match your dreams with mine, If, mastering time's illusion, you could call Me back to share your vanished candle-shine."
+    },
+    {
+      "id": "s2-47",
+      "sceneId": "s2",
+      "text": "Butterflies"
+    },
+    {
+      "id": "s2-48",
+      "sceneId": "s2",
+      "text": "Frail travellers, deftly flickering over the flowers; O living flowers against the heedless blue Of summer days, what sends them dancing through This fiery-blossom'd revel of the hours?"
+    },
+    {
+      "id": "s2-49",
+      "sceneId": "s2",
+      "text": "Theirs are the musing silences between The enraptured crying of shrill birds that make Heaven in the wood while summer dawns awake; And theirs the faintest winds that hush the green."
+    },
+    {
+      "id": "s2-50",
+      "sceneId": "s2",
+      "text": "And they are as my soul that wings its way Out of the starlit dimness into morn: And they are as my tremulous being--born To know but this, the phantom glare of day."
+    },
+    {
+      "id": "s2-51",
+      "sceneId": "s2",
+      "text": "Wraiths"
+    },
+    {
+      "id": "s2-52",
+      "sceneId": "s2",
+      "text": "They know not the green leaves; In whose earth-haunting dream Dimly the forest heaves, And voiceless goes the stream. Strangely they seek a place In love's night-memoried hall; Peering from face to face, Until some heart shall call And keep them, for a breath, Half-mortal ... (*Hark to the rain!*) ... They are dead ... (*O hear how death Gropes on the shutter'd pane!*)"
+    },
+    {
+      "id": "s2-53",
+      "sceneId": "s2",
+      "text": "Phantom"
+    },
+    {
+      "id": "s2-54",
+      "sceneId": "s2",
+      "text": "The clock has stopped; and the wind's dropped: A candle burns with moon-gold flame. Blank silence whispers at my ears, '*Though I've been dead these coffin'd years, 'You'll never choke my shame.*'"
+    },
+    {
+      "id": "s2-55",
+      "sceneId": "s2",
+      "text": "'*Dip your quill in clotted ink:* '*Write; I'll quicken you to think* '*In my old fiery alphabet.*' The candle-flame upon its wick Staggers; the time-piece starts to tick; And down the dark the wind blows wet."
+    },
+    {
+      "id": "s2-56",
+      "sceneId": "s2",
+      "text": "Good angels, help me to forget."
+    },
+    {
+      "id": "s2-57",
+      "sceneId": "s2",
+      "text": "THE Dark House"
+    },
+    {
+      "id": "s2-58",
+      "sceneId": "s2",
+      "text": "Dusk in the rain-soaked garden, And dark the house within. A door creaked: someone was early To watch the dawn begin. But he stole away like a thief In the chilly, star-bright air: Though the house was shuttered for slumber, He had left one wakeful there."
+    },
+    {
+      "id": "s2-59",
+      "sceneId": "s2",
+      "text": "Nothing moved in the garden. Never a bird would sing, Nor shake and scatter the dew from the boughs With shy and startled wing. But when that lover had passed the gate A quavering thrush began... 'Come back; come back!' he shrilled to the heart Of the passion-plighted man."
+    },
+    {
+      "id": "s2-60",
+      "sceneId": "s2",
+      "text": "Idyll"
+    },
+    {
+      "id": "s2-61",
+      "sceneId": "s2",
+      "text": "In the grey summer garden I shall find you With day-break and the morning hills behind you. There will be rain-wet roses; stir of wings; And down the wood a thrush that wakes and sings. Not from the past you'll come, but from that deep Where beauty murmurs to the soul asleep: And I shall know the sense of life re-born From dreams into the mystery of morn Where gloom and brightness meet. And standing there Till that calm song is done, at last we'll share The league-spread, quiring symphonies that are Joy in the world, and peace, and dawn's one star."
+    },
+    {
+      "id": "s2-62",
+      "sceneId": "s2",
+      "text": "Parted"
+    },
+    {
+      "id": "s2-63",
+      "sceneId": "s2",
+      "text": "Sleepless I listen to the surge and drone And drifting roar of the town's undertone; Till through quiet falling rain I hear the bells Tolling and chiming their brief tune that tells Day's midnight end. And from the day that's over No flashes of delight I can recover; But only dreary winter streets, and faces Of people moving in loud clanging places: And I in my loneliness, longing for you..."
+    },
+    {
+      "id": "s2-64",
+      "sceneId": "s2",
+      "text": "For all I did to-day, and all I'll do To-morrow, in this city of intense Arteried activities that throb and strive, Is but a beating down of that suspense Which holds me from your arms. I am alive Only that I may find you at the end Of these slow-striking hours I toil to spend, Putting each one behind me, knowing but this-- That all my days are turning toward your kiss; That all expectancy awaits the deep Consoling passion of your eyes, that keep Their radiance for my coming, and their peace For when I find in you my love's release."
+    },
+    {
+      "id": "s2-65",
+      "sceneId": "s2",
+      "text": "Lovers"
+    },
+    {
+      "id": "s2-66",
+      "sceneId": "s2",
+      "text": "You were glad to-night: and now you've gone away. Flushed in the dark, you put your dreams to bed; But as you fall asleep I hear you say Those tired sweet drowsy words we left unsaid."
+    },
+    {
+      "id": "s2-67",
+      "sceneId": "s2",
+      "text": "I am alone: but in the windless night I listen to the gurgling rain that veils The gloom with peace; and whispering of your white Limbs, and your mouth that stormed my throat with bliss, The rain becomes your voice, and tells me tales That crowd my heart with memories of your kiss."
+    },
+    {
+      "id": "s2-68",
+      "sceneId": "s2",
+      "text": "Sleep well: for I can follow you, to bless And lull your distant beauty where you roam; And with wild songs of hoarded loveliness Recall you to these arms that were your home."
+    },
+    {
+      "id": "s2-69",
+      "sceneId": "s2",
+      "text": "Slumber-Song"
+    },
+    {
+      "id": "s2-70",
+      "sceneId": "s2",
+      "text": "Sleep; and my song shall build about your bed A Paradise of dimness. You shall feel The folding of tired wings; and peace will dwell Throned in your silence: and one hour shall hold Summer, and midnight, and immensity Lulled to forgetfulness. For, where you dream, The stately gloom of foliage shall embower Your slumbering thought with tapestries of blue. And there shall be no memory of the sky, Nor sunlight with its cruelty of swords. But, to your soul that sinks from deep to deep Through drowned and glimmering colour, Time shall be Only slow rhythmic swaying; and your breath; And roses in the darkness; and my love."
+    },
+    {
+      "id": "s2-71",
+      "sceneId": "s2",
+      "text": "THE Imperfect Lover"
+    },
+    {
+      "id": "s2-72",
+      "sceneId": "s2",
+      "text": "I never asked you to be perfect--did I?-- Though often I've called you sweet, in the invasion Of mastering love. I never prayed that you Might stand, unsoiled, angelic and inhuman, Pointing the way toward Sainthood like a sign-post."
+    },
+    {
+      "id": "s2-73",
+      "sceneId": "s2",
+      "text": "Oh yes, I know the way to heaven was easy. We found the little kingdom of our passion That all can share who walk the road of lovers. In wild and secret happiness we stumbled; And gods and demons clamoured in our senses."
+    },
+    {
+      "id": "s2-74",
+      "sceneId": "s2",
+      "text": "But I've grown thoughtful now. And you have lost Your early-morning freshness of surprise At being so utterly mine: you've learned to fear The gloomy, stricken places in my soul, And the occasional ghosts that haunt my gaze."
+    },
+    {
+      "id": "s2-75",
+      "sceneId": "s2",
+      "text": "You made me glad; and I can still return To you, the haven of my lonely pride: But I am sworn to murder those illusions That blossom from desire with desperate beauty: And there shall be no falsehood in our failure; Since, if we loved like beasts, the thing is done, And I'll not hide it, though our heaven be hell."
+    },
+    {
+      "id": "s2-76",
+      "sceneId": "s2",
+      "text": "You dream long liturgies of our devotion. Yet, in my heart, I dread our love's destruction. But, should you grow to hate me, I would ask No mercy of your mood: I'd have you stand And look me in the eyes, and laugh, and smite me."
+    },
+    {
+      "id": "s2-77",
+      "sceneId": "s2",
+      "text": "Then I should know, at least, that truth endured, Though love had died of wounds. And you could leave me Unvanquished in my atmosphere of devils."
+    },
+    {
+      "id": "s2-78",
+      "sceneId": "s2",
+      "text": "Vision"
+    },
+    {
+      "id": "s2-79",
+      "sceneId": "s2",
+      "text": "I love all things that pass: their briefness is Music that fades on transient silences. Winds, birds, and glittering leaves that flare and fall-- They fling delight across the world; they call To rhythmic-flashing limbs that rove and race... A moment in the dawn for Youth's lit face; A moment's passion, closing on the cry-- 'O Beauty, born of lovely things that die!'"
+    },
+    {
+      "id": "s2-80",
+      "sceneId": "s2",
+      "text": "TO A Childless Woman"
+    },
+    {
+      "id": "s2-81",
+      "sceneId": "s2",
+      "text": "You think I cannot understand. Ah, but I do ... I have been wrung with anger and compassion for you. I wonder if you'd loathe my pity, if you knew."
+    },
+    {
+      "id": "s2-82",
+      "sceneId": "s2",
+      "text": "But you *shall* know. I've carried in my heart too long This secret burden. Has not silence wrought *your* wrong-- Brought you to dumb and wintry middle-age, with grey Unfruitful withering?--Ah, the pitiless things I say..."
+    },
+    {
+      "id": "s2-83",
+      "sceneId": "s2",
+      "text": "What do you ask your God for, at the end of day, Kneeling beside your bed with bowed and hopeless head? What mercy can He give you?--Dreams of the unborn Children that haunt your soul like loving words unsaid-- Dreams, as a song half-heard through sleep in early morn?"
+    },
+    {
+      "id": "s2-84",
+      "sceneId": "s2",
+      "text": "I see you in the chapel, where you bend before The enhaloed calm of everlasting Motherhood That wounds your life; I see you humbled to adore The painted miracle you've never understood. Tender, and bitter-sweet, and shy, I've watched you holding Another's child. O childless woman, was it then That, with an instant's cry, your heart, made young again, Was crucified for ever--those poor arms enfolding The life, the consummation that had been denied you? I too have longed for children. Ah, but you must not weep. Something I have to whisper as I kneel beside you... And you must pray for me before you fall asleep."
+    },
+    {
+      "id": "s2-85",
+      "sceneId": "s2",
+      "text": "Aftermath"
+    },
+    {
+      "id": "s2-86",
+      "sceneId": "s2",
+      "text": "*Have you forgotten yet?* ... For the world's events have rumbled on since those gagged days, Like traffic checked awhile at the crossing of city-ways: And the haunted gap in your mind has filled with thoughts that flow Like clouds in the lit heavens of life; and you're a man reprieved to go, Taking your peaceful share of Time, with joy to spare. *But the past is just the same--and War's a bloody game... Have you forgotten yet? ... Look down, and swear by the slain of the War that you'll never forget.*"
+    },
+    {
+      "id": "s2-87",
+      "sceneId": "s2",
+      "text": "Do you remember the dark months you held the sector at Mametz-- The nights you watched and wired and dug and piled sandbags on parapets? Do you remember the rats; and the stench Of corpses rotting in front of the front-line trench-- And dawn coming, dirty-white, and chill with a hopeless rain? Do you ever stop and ask, 'Is it all going to happen again?'"
+    },
+    {
+      "id": "s2-88",
+      "sceneId": "s2",
+      "text": "Do you remember that hour of din before the attack-- And the anger, the blind compassion that seized and shook you then As you peered at the doomed and haggard faces of your men? Do you remember the stretcher-cases lurching back With dying eyes and lolling heads--those ashen-grey Masks of the lads who once were keen and kind and gay?"
+    },
+    {
+      "id": "s2-89",
+      "sceneId": "s2",
+      "text": "*Have you forgotten yet? ... Look up, and swear by the green of the spring that you'll never forget.*"
+    },
+    {
+      "id": "s2-90",
+      "sceneId": "s2",
+      "text": "*March, 1919*."
+    },
+    {
+      "id": "s2-91",
+      "sceneId": "s2",
+      "text": "Falling Asleep"
+    },
+    {
+      "id": "s2-92",
+      "sceneId": "s2",
+      "text": "Voices moving about in the quiet house: Thud of feet and a muffled shutting of doors: Everyone yawning ... only the clocks are alert."
+    },
+    {
+      "id": "s2-93",
+      "sceneId": "s2",
+      "text": "Out in the night there's autumn-smelling gloom Crowded with whispering trees,--looming of oaks That roared in wild wet gales: across the park The hollow cry of hounds like lonely bells: And I know that the clouds are moving across the moon, The low, red, rising moon. The herons call And wrangle by their pool; and hooting owls Sail from the wood across pale stocks of wheat."
+    },
+    {
+      "id": "s2-94",
+      "sceneId": "s2",
+      "text": "Waiting for sleep, I drift from thoughts like these; And where to-day was dream-like, build my dreams. Music ... there was a bright white room below, And someone singing a song about a soldier,-- One hour, two hours ago; and soon the song Will be 'last night': but now the beauty swings Across my brain, ghost of remember'd chords Which still can make such radiance in my dream That I can watch the marching of my soldiers, And count their faces; faces; sunlit faces."
+    },
+    {
+      "id": "s2-95",
+      "sceneId": "s2",
+      "text": "Falling asleep ... the herons, and the hounds... September in the darkness; and the world I've known; all fading past me into peace."
+    },
+    {
+      "id": "s2-96",
+      "sceneId": "s2",
+      "text": "Prelude to an Unwritten Masterpiece"
+    },
+    {
+      "id": "s2-97",
+      "sceneId": "s2",
+      "text": "You like my bird-sung gardens: wings and flowers; Calm landscapes for emotion; star-lit lawns; And Youth against the sun-rise ... '*Not profound;* '*But such a haunting music in the sound:* '*Do it once more; it helps us to forget.*'"
+    },
+    {
+      "id": "s2-98",
+      "sceneId": "s2",
+      "text": "Last night I dreamt an old recurring scene-- Some complex out of childhood; (sex, of course!) I can't remember how the trouble starts; And then I'm running blindly in the sun Down the old orchard, and there's something cruel Chasing me; someone roused to a grim pursuit Of clumsy anger ... Crash! I'm through the fence And thrusting wildly down the wood that's dense With woven green of safety; paths that wind Moss-grown from glade to glade; and far behind, One thwarted yell; then silence. I've escaped."
+    },
+    {
+      "id": "s2-99",
+      "sceneId": "s2",
+      "text": "That's where it used to stop. Last night I went Onward until the trees were dark and huge, And I was lost, cut off from all return By swamps and birdless jungles. I'd no chance Of getting home for tea. I woke with shivers, And thought of crocodiles in crawling rivers."
+    },
+    {
+      "id": "s2-100",
+      "sceneId": "s2",
+      "text": "Some day I'll build (more ruggedly than Doughty) A dark tremendous song you'll never hear. My beard will be a snow-storm, drifting whiter On bowed, prophetic shoulders, year by year. And some will say, 'His work has grown so dreary.' Others, 'He used to be a charming writer.' And you, my friend, will query-- 'Why can't you cut it short, you pompous blighter?'"
+    },
+    {
+      "id": "s2-101",
+      "sceneId": "s2",
+      "text": "Limitations"
+    },
+    {
+      "id": "s2-102",
+      "sceneId": "s2",
+      "text": "If you could crowd them into forty lines! Yes; you can do it, once you get a start: All that you want is waiting in your head, For long-ago you've learnt it off by heart."
+    },
+    {
+      "id": "s2-103",
+      "sceneId": "s2",
+      "text": "Begin: your mind's the room where you must sleep, (Don't pause for rhymes), till twilight wakes you early. The window stands wide-open, as it stood When tree-tops loomed enchanted for a child Hearing the dawn's first thrushes through the wood Warbling (you know the words) serene and wild."
+    },
+    {
+      "id": "s2-104",
+      "sceneId": "s2",
+      "text": "You've said it all before: you dreamed of Death, A dim Apollo in the bird-voiced breeze That drifts across the morning veiled with showers, While golden weather shines among dark trees."
+    },
+    {
+      "id": "s2-105",
+      "sceneId": "s2",
+      "text": "You've got your limitations; let them sing, And all your life will waken with a cry: Why should you halt when rapture's on the wing And you've no limit but the cloud-flocked sky?..."
+    },
+    {
+      "id": "s2-106",
+      "sceneId": "s2",
+      "text": "But some chap shouts, 'Here, stop it; that's been done!'-- As God might holloa to the rising sun, And then relent, because the glorying rays Reminded Him of glinting Eden days, And Adam's trustful eyes as he looks up From carving eagles on his beechwood cup."
+    },
+    {
+      "id": "s2-107",
+      "sceneId": "s2",
+      "text": "Young Adam knew his job; he could condense Life to an eagle from the unknown immense ... Go on, whoever you are; your lines can be A whisper in the music from the weirs Of song that plunge and tumble toward the sea That is the uncharted mercy of our tears."
+    },
+    {
+      "id": "s2-108",
+      "sceneId": "s2",
+      "text": "I told you it was easy: words are fools Who follow blindly, once they get a lead. But thoughts are kingfishers that haunt the pools Of quiet; seldom-seen; and all you need Is just that flash of joy above your dream. So, when those forty platitudes are done, You'll hear a bird-note calling from the stream That wandered through your childhood; and the sun Will strike the old flaming wonder from the waters ... And there'll be forty lines not yet begun."
+    },
+    {
+      "id": "s2-109",
+      "sceneId": "s2",
+      "text": "Everyone Sang"
+    },
+    {
+      "id": "s2-110",
+      "sceneId": "s2",
+      "text": "Everyone suddenly burst out singing; And I was filled with such delight As prisoned birds must find in freedom, Winging wildly across the white Orchards and dark-green fields; on--on--and out of sight."
+    },
+    {
+      "id": "s2-111",
+      "sceneId": "s2",
+      "text": "Everyone's voice was suddenly lifted; And beauty came like the setting sun: My heart was shaken with tears; and horror Drifted away ... O, but Everyone Was a bird; and the song was wordless; the singing will never be done."
+    }
+  ]
+}
