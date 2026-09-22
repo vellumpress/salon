@@ -82,7 +82,7 @@ const BLURBS: Record<string, string> = {
   "growth-of-the-soil":
     "A man with a sack, a red beard, and scars walks the ownerless moors looking for land or peace.",
   "nada-the-lily":
-    "You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think.",
+    "You ask for the youth of Umslopogaas — Haggard’s late-Victorian imperial romance, not a substitute for Zulu-authored history.",
   madmen:
     "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:
@@ -276,7 +276,8 @@ const BLURBS: Record<string, string> = {
   "jacob-s-room": "Woolf builds a man from the rooms and people he has already left.",
   "night-and-day": "London talk, two couples, and the long negotiation of who gets to want what.",
   "monday-or-tuesday": "Short Woolf pieces that catch a mind in the act of looking.",
-  "of-human-bondage": "A club foot, a medical student, and a love that humiliates on purpose.",
+  "of-human-bondage":
+    "The day broke gray and dull — Wake up, Philip, and keep the first sit to Chapter I.",
   "the-moon-and-sixpence": "A stockbroker walks out of a life to paint — Maugham’s Gauguin rumor.",
   "the-magician": "Paris occult, a charlatan who might not be, and a marriage that becomes a dare.",
   "the-old-wives-tale": "Two sisters from the Five Towns, told across a whole ordinary century.",
@@ -723,7 +724,12 @@ const BLURBS: Record<string, string> = {
   "the-book-of-the-birds-paksi-pakaranam": "A Siamese bird epic, in Crosby’s English.",
   "laos-folk-lore-of-farther-india": "Fleeson’s Lao tales, collected as if the hills were a library.",
   "jamaican-song-and-story": "Jekyll’s Anansi, songs, and the island talking in two tongues.",
-  "jamaica-anansi-stories": "Beckwith’s Anansi: spider, trickster, and the story that walks.",
+  "jamaica-anansi-stories":
+    "One great hungry time — one Anansi tale per sit, and this one is the fish pot.",
+  "green-mansions":
+    "Now that we are cool, he said, and regret that we hurt each other, I am not sorry that it happened.",
+  "hadji-murad":
+    "I was returning home by the fields, midsummer, the hay in and the rye just beginning.",
   "south-african-folk-tales": "Honey’s collection of southern African tales, animals arguing like people.",
   "west-african-folk-tales": "Gold Coast stories of spider, tortoise, and the bargain.",
   "sappho-one-hundred-lyrics": "Carman’s Sappho reconstructions — fragments turned into a book of desire.",

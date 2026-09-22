@@ -1,0 +1,501 @@
+{
+  "id": "green-mansions",
+  "title": "Green Mansions",
+  "author": "W. H. Hudson",
+  "year": "1904",
+  "note": "Project Gutenberg 942 · EN first published 1904 (Duckworth) · skip Foreword; open Ch I flight",
+  "minutes": 1063,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "Now that we are cool, he said, and regret that we hurt each other, I am not sorry that it happened.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Now that we are cool, he said, and regret that we hurt each other, I am not sorry that it happened."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "I deserved your reproach: a hundred times I have wished to tell you the whole story of my travels and adventures among the savages, and one of the reasons which prevented me was the fear that it would have an unfortunate effect on our friendship."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "That was precious, and I desired above everything to keep it. But I must think no more about that now. I must think only of how I am to tell you my story. I will begin at a time when I was twenty-three."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "It was early in life to be in the thick of politics, and in trouble to the extent of having to fly my country to save my liberty, perhaps my life."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Every nation, someone remarks, has the government it deserves, and Venezuela certainly has the one it deserves and that suits it best."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "We call it a republic, not only because it is not one, but also because a thing must have a name; and to have a good name, or a fine name, is very convenient--especially when you want to borrow money."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "If the Venezuelans, thinly distributed over an area of half a million square miles, mostly illiterate peasants, half-breeds, and indigenes, were educated, intelligent men, zealous only for the public weal, it would be possible for them to have a real republic."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "They have instead a government by cliques, tempered by revolution; and a very good government it is, in harmony with the physical conditions of the country and the national temperament."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Now, it happens that the educated men, representing your higher classes, are so few that there are not many persons unconnected by ties of blood or marriage with prominent members of the political groups to which they belong."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "By this you will see how easy and almost inevitable it is that we should become accustomed to look on conspiracy and revolt against the regnant party--the men of another clique--as only in the natural order of things."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "In the event of failure such outbreaks are punished, but they are not regarded as immoral. On the contrary, men of the highest intelligence and virtue among us are seen taking a leading part in these adventures."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Whether such a condition of things is intrinsically wrong or not, or would be wrong in some circumstances and is not wrong, because inevitable, in others, I cannot pretend to decide; and all this tiresome profusion is only to enable you to understand how I--a young man of unblemished character, not a soldier by profession, not ambitious of political distinction, wealthy for that country, popular in society, a lover of social pleasures, of books, of nature actuated, as I believed, by the highest motives, allowed myself to be drawn very readily by friends and relations into a conspiracy to overthrow the government of the moment, with the object of replacing it by more worthy men--ourselves, to wit."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "Our adventure failed because the authorities got wind of the affair and matters were precipitated."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Our leaders at the moment happened to be scattered over the country--some were abroad; and a few hotheaded men of the party, who were in Caracas just then and probably feared arrest, struck a rash blow: the President was attacked in the street and wounded."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "But the attackers were seized, and some of them shot on the following day."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "When the news reached me I was at a distance from the capital, staying with a friend on an estate he owned on the River Quebrada Honda, in the State of Guarico, some fifteen to twenty miles from the town of Zaraza."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "My friend, an officer in the army, was a leader in the conspiracy; and as I was the only son of a man who had been greatly hated by the Minister of War, it became necessary for us both to fly for our lives."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "In the circumstances we could not look to be pardoned, even on the score of youth."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Our first decision was to escape to the sea-coast; but as the risk of a journey to La Guayra, or any other port of embarkation on the north side of the country, seemed too great, we made our way in a contrary direction to the Orinoco, and downstream to Angostura."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Now, when we had reached this comparatively safe breathing-place--safe, at all events, for the moment--I changed my mind about leaving or attempting to leave the country."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Since boyhood I had taken a very peculiar interest in that vast and almost unexplored territory we possess south of the Orinoco, with its countless unmapped rivers and trackless forests; and in its savage inhabitants, with their ancient customs and character, unadulterated by contact with Europeans."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "To visit this primitive wilderness had been a cherished dream; and I had to some extent even prepared myself for such an adventure by mastering more than one of the Indian dialects of the northern states of Venezuela."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "And now, finding myself on the south side of our great river, with unlimited time at my disposal, I determined to gratify this wish."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "My companion took his departure towards the coast, while I set about making preparations and hunting up information from those who had travelled in the interior to trade with the savages."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "I decided eventually to go back upstream and penetrate to the interior in the western part of Guayana, and the Amazonian territory bordering on Colombia and Brazil, and to return to Angostura in about six months’ time."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "I had no fear of being arrested in the semi-independent and in most part savage region, as the Guayana authorities concerned themselves little enough about the political upheavals at Caracas."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "The first five or six months I spent in Guayana, after leaving the city of refuge, were eventful enough to satisfy a moderately adventurous spirit."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "A complaisant government employee at Angostura had provided me with a passport, in which it was set down (for few to read) that my object in visiting the interior was to collect information concerning the native tribes, the vegetable products of the country, and other knowledge which would be of advantage to the Republic; and the authorities were requested to afford me protection and assist me in my pursuits."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "I ascended the Orinoco, making occasional expeditions to the small Christian settlements in the neighbourhood of the right bank, also to the Indian villages; and travelling in this way, seeing and learning much, in about three months I reached the River Metal."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "During this period I amused myself by keeping a journal, a record of personal adventures, impressions of the country and people, both semi-civilized and savage; and as my journal grew, I began to think that on my return at some future time to Caracas, it might prove useful and interesting to the public, and also procure me fame; which thought proved pleasurable and a great incentive, so that I began to observe things more narrowly and to study expression."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "But the book was not to be."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "From the mouth of the Meta I journeyed on, intending to visit the settlement of Atahapo, where the great River Guaviare, with other rivers, empties itself into the Orinoco."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "But I was not destined to reach it, for at the small settlement of Manapuri I fell ill of a low fever; and here ended the first half-year of my wanderings, about which no more need be told."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "A more miserable place than Manapuri for a man to be ill of a low fever in could not well be imagined."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "The settlement, composed of mean hovels, with a few large structures of mud, or plastered wattle, thatched with palm leaves, was surrounded by water, marsh, and forest, the breeding-place of myriads of croaking frogs and of clouds of mosquitoes; even to one in perfect health existence in such a place would have been a burden."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "The inhabitants mustered about eighty or ninety, mostly Indians of that degenerate class frequently to be met with in small trading outposts."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "The savages of Guayana are great drinkers, but not drunkards in our sense, since their fermented liquors contain so little alcohol that inordinate quantities must be swallowed to produce intoxication; in the settlements they prefer the white man’s more potent poisons, with the result that in a small place like Manapuri one can see enacted, as on a stage, the last act in the great American tragedy."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "To be succeeded, doubtless, by other and possibly greater tragedies. My thoughts at that period of suffering were pessimistic in the extreme."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "Sometimes, when the almost continuous rain held up for half a day, I would manage to creep out a short distance; but I was almost past making any exertion, scarcely caring to live, and taking absolutely no interest in the news from Caracas, which reached me at long intervals."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "At the end of two months, feeling a slight improvement in my health, and with it a returning interest in life and its affairs, it occurred to me to get out my diary and write a brief account of my sojourn at Manapuri."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "I had placed it for safety in a small deal box, lent to me for the purpose by a Venezuelan trader, an old resident at the settlement, by name Pantaleon--called by all Don Panta--one who openly kept half a dozen Indian wives in his house, and was noted for his dishonesty and greed, but who had proved himself a good friend to me."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "The box was in a corner of the wretched palm-thatched hovel I inhabited; but on taking it out I discovered that for several weeks the rain had been dripping on it, and that the manuscript was reduced to a sodden pulp."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "I flung it upon the floor with a curse and threw myself back on my bed with a groan."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "In that desponding state I was found by my friend Panta, who was constant in his visits at all hours; and when in answer to his anxious inquiries I pointed to the pulpy mass on the mud floor, he turned it over with his foot, and then, bursting into a loud laugh, kicked it out, remarking that he had mistaken the object for some unknown reptile that had crawled in out of the rain."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "He affected to be astonished that I should regret its loss. It was all a true narrative, he exclaimed; if I wished to write a book for the stay-at-homes to read, I could easily invent a thousand lies far more entertaining than any real experiences."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "He had come to me, he said, to propose something. He had lived twenty years at that place, and had got accustomed to the climate, but it would not do for me to remain any longer if I wished to live."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "I must go away at once to a different country--to the mountains, where it was open and dry."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "“And if you want quinine when you are there,” he concluded, “smell the wind when it blows from the south-west, and you will inhale it into your system, fresh from the forest.” When I remarked despondingly that in my condition it would be impossible to quit Manapuri, he went on to say that a small party of Indians was now in the settlement; that they had come, not only to trade, but to visit one of their own tribe, who was his wife, purchased some years ago from her father."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "“And the money she cost me I have never regretted to this day,” said he, “for she is a good wife not jealous,” he added, with a curse on all the others. These Indians came all the way from the Queneveta mountains, and were of the Maquiritari tribe."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "He, Panta, and, better still, his good wife would interest them on my behalf, and for a suitable reward they would take me by slow, easy stages to their own country, where I would be treated well and recover my health."
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "This proposal, after I had considered it well, produced so good an effect on me that I not only gave a glad consent, but, on the following day, I was able to get about and begin the preparations for my journey with some spirit."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "In about eight days I bade good-bye to my generous friend Panta, whom I regarded, after having seen much of him, as a kind of savage beast that had sprung on me, not to rend, but to rescue from death; for we know that even cruel savage brutes and evil men have at times sweet, beneficent impulses, during which they act in a way contrary to their natures, like passive agents of some higher power."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "It was a continual pain to travel in my weak condition, and the patience of my Indians was severely taxed; but they did not forsake me; and at last the entire distance, which I conjectured to be about sixty-five leagues, was accomplished; and at the end I was actually stronger and better in every way than at the start."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "From this time my progress towards complete recovery was rapid."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "The air, with or without any medicinal virtue blown from the cinchona trees in the far-off Andean forest, was tonic; and when I took my walks on the hillside above the Indian village, or later when able to climb to the summits, the world as seen from those wild Queneveta mountains had a largeness and varied glory of scenery peculiarly refreshing and delightful to the soul."
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "With the Maquiritari tribe I passed some weeks, and the sweet sensations of returning health made me happy for a time; but such sensations seldom outlast convalescence. I was no sooner well again than I began to feel a restless spirit stirring in me."
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "The monotony of savage life in this place became intolerable. After my long listless period the reaction had come, and I wished only for action, adventure--no matter how dangerous; and for new scenes, new faces, new dialects."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "In the end I conceived the idea of going on to the Casiquiare river, where I would find a few small settlements, and perhaps obtain help from the authorities there which would enable me to reach the Rio Negro."
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "For it was now in my mind to follow that river to the Amazons, and so down to Para and the Atlantic coast."
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "Leaving the Queneveta range, I started with two of the Indians as guides and travelling companions; but their journey ended only half-way to the river I wished to reach; and they left me with some friendly savages living on the Chunapay, a tributary of the Cunucumana, which flows to the Orinoco."
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "Here I had no choice but to wait until an opportunity of attaching myself to some party of travelling Indians going south-west should arrive; for by this time I had expended the whole of my small capital in ornaments and calico brought from Manapuri, so that I could no longer purchase any man’s service."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "And perhaps it will be as well to state at this point just what I possessed. For some time I had worn nothing but sandals to protect my feet; my garments consisted of a single suit, and one flannel shirt, which I washed frequently, going shirtless while it was drying."
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "Fortunately I had an excellent blue cloth cloak, durable and handsome, given to me by a friend at Angostura, whose prophecy on presenting it, that it would outlast ME, very nearly came true."
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "It served as a covering by night, and to keep a man warm and comfortable when travelling in cold and wet weather no better garment was ever made."
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "I had a revolver and metal cartridge-box in my broad leather belt, also a good hunting-knife with strong buckhorn handle and a heavy blade about nine inches long."
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "In the pocket of my cloak I had a pretty silver tinder-box, and a match-box--to be mentioned again in this narrative--and one or two other trifling objects; these I was determined to keep until they could be kept no longer."
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "During the tedious interval of waiting on the Chunapay I was told a flattering tale by the village Indians, which eventually caused me to abandon the proposed journey to the Rio Negro."
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "These Indians wore necklets, like nearly all the Guayana savages; but one, I observed, possessed a necklet unlike that of the others, which greatly aroused my curiosity. It was made of thirteen gold plates, irregular in form, about as broad as a man’s thumb-nail, and linked together with fibres."
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "I was allowed to examine it, and had no doubt that the pieces were of pure gold, beaten flat by the savages. When questioned about it, they said it was originally obtained from the Indians of Parahuari, and Parahuari, they further said, was a mountainous country west of the Orinoco."
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "Every man and woman in that place, they assured me, had such a necklet. This report inflamed my mind to such a degree that I could not rest by night or day for dreaming golden dreams, and considering how to get to that rich district, unknown to civilized men."
+    },
+    {
+      "id": "s0-70",
+      "sceneId": "s0",
+      "text": "The Indians gravely shook their heads when I tried to persuade them to take me. They were far enough from the Orinoco, and Parahuari was ten, perhaps fifteen, days’ journey further on--a country unknown to them, where they had no relations."
+    },
+    {
+      "id": "s0-71",
+      "sceneId": "s0",
+      "text": "In spite of difficulties and delays, however, and not without pain and some perilous adventures, I succeeded at last in reaching the upper Orinoco, and, eventually, in crossing to the other side."
+    },
+    {
+      "id": "s0-72",
+      "sceneId": "s0",
+      "text": "With my life in my hand I struggled on westward through an unknown difficult country, from Indian village to village, where at any moment I might have been murdered with impunity for the sake of my few belongings."
+    },
+    {
+      "id": "s0-73",
+      "sceneId": "s0",
+      "text": "It is hard for me to speak a good word for the Guayana savages; but I must now say this of them, that they not only did me no harm when I was at their mercy during this long journey, but they gave me shelter in their villages, and fed me when I was hungry, and helped me on my way when I could make no return."
+    },
+    {
+      "id": "s0-74",
+      "sceneId": "s0",
+      "text": "You must not, however, run away with the idea that there is any sweetness in their disposition, any humane or benevolent instincts such as are found among the civilized nations: far from it."
+    },
+    {
+      "id": "s0-75",
+      "sceneId": "s0",
+      "text": "I regard them now, and, fortunately for me, I regarded them then, when, as I have said, I was at their mercy, as beasts of prey, plus a cunning or low kind of intelligence vastly greater than that of the brute; and, for only morality, that respect for the rights of other members of the same family, or tribe, without which even the rudest communities cannot hold together."
+    },
+    {
+      "id": "s0-76",
+      "sceneId": "s0",
+      "text": "How, then, could I do this thing, and dwell and travel freely, without receiving harm, among tribes that have no peace with and no kindly feelings towards the stranger, in a district where the white man is rarely or never seen?"
+    },
+    {
+      "id": "s0-77",
+      "sceneId": "s0",
+      "text": "Because I knew them so well. Without that knowledge, always available, and an extreme facility in acquiring new dialects, which had increased by practice until it was almost like intuition, I should have fared badly after leaving the Maquiritari tribe."
+    },
+    {
+      "id": "s0-78",
+      "sceneId": "s0",
+      "text": "As it was, I had two or three very narrow escapes."
+    },
+    {
+      "id": "s0-79",
+      "sceneId": "s0",
+      "text": "To return from this digression. I looked at last on the famous Parahuari mountains, which, I was greatly surprised to find, were after all nothing but hills, and not very high ones."
+    },
+    {
+      "id": "s0-80",
+      "sceneId": "s0",
+      "text": "This, however, did not impress me. The very fact that Parahuari possessed no imposing feature in its scenery seemed rather to prove that it must be rich in gold: how else could its name and the fame of its treasures be familiar to people dwelling so far away as the Cunucumana?"
+    },
+    {
+      "id": "s0-81",
+      "sceneId": "s0",
+      "text": "But there was no gold. I searched through the whole range, which was about seven leagues long, and visited the villages, where I talked much with the Indians, interrogating them, and they had no necklets of gold, nor gold in any form; nor had they ever heard of its presence in Parahuari or in any other place known to them."
+    },
+    {
+      "id": "s0-82",
+      "sceneId": "s0",
+      "text": "The very last village where I spoke on the subject of my quest, albeit now without hope, was about a league from the western extremity of the range, in the midst of a high broken country of forest and savannah and many swift streams; near one of these, called the Curicay, the village stood, among low scattered trees--a large building, in which all the people, numbering eighteen, passed most of their time when not hunting, with two smaller buildings attached to it."
+    },
+    {
+      "id": "s0-83",
+      "sceneId": "s0",
+      "text": "The head, or chief, Runi by name, was about fifty years old, a taciturn, finely formed, and somewhat dignified savage, who was either of a sullen disposition or not well pleased at the intrusion of a white man. And for a time I made no attempt to conciliate him."
+    },
+    {
+      "id": "s0-84",
+      "sceneId": "s0",
+      "text": "What profit was there in it at all? Even that light mask, which I had worn so long and with such good effect, incommoded me now: I would cast it aside and be myself--silent and sullen as my barbarous host."
+    },
+    {
+      "id": "s0-85",
+      "sceneId": "s0",
+      "text": "If any malignant purpose was taking form in his mind, let it, and let him do his worst; for when failure first stares a man in the face, it has so dark and repellent a look that not anything that can be added can make him more miserable; nor has he any apprehension."
+    },
+    {
+      "id": "s0-86",
+      "sceneId": "s0",
+      "text": "For weeks I had been searching with eager, feverish eyes in every village, in every rocky crevice, in every noisy mountain streamlet, for the glittering yellow dust I had travelled so far to find."
+    },
+    {
+      "id": "s0-87",
+      "sceneId": "s0",
+      "text": "And now all my beautiful dreams--all the pleasure and power to be--had vanished like a mere mirage on the savannah at noon."
+    },
+    {
+      "id": "s0-88",
+      "sceneId": "s0",
+      "text": "It was a day of despair which I spent in this place, sitting all day indoors, for it was raining hard, immersed in my own gloomy thoughts, pretending to doze in my seat, and out of the narrow slits of my half-closed eyes seeing the others, also sitting or moving about, like shadows or people in a dream; and I cared nothing about them, and wished not to seem friendly, even for the sake of the food they might offer me by and by."
+    },
+    {
+      "id": "s0-89",
+      "sceneId": "s0",
+      "text": "Towards evening the rain ceased; and rising up I went out a short distance to the neighbouring stream, where I sat on a stone and, casting off my sandals, laved my bruised feet in the cool running water."
+    },
+    {
+      "id": "s0-90",
+      "sceneId": "s0",
+      "text": "The western half of the sky was blue again with that tender lucid blue seen after rain, but the leaves still glittered with water, and the wet trunks looked almost black under the green foliage. The rare loveliness of the scene touched and lightened my heart."
+    },
+    {
+      "id": "s0-91",
+      "sceneId": "s0",
+      "text": "Away back in the east the hills of Parahuari, with the level sun full on them, loomed with a strange glory against the grey rainy clouds drawing off on that side, and their new mystic beauty almost made me forget how these same hills had wearied, and hurt, and mocked me."
+    },
+    {
+      "id": "s0-92",
+      "sceneId": "s0",
+      "text": "On that side, also to the north and south, there was open forest, but to the west a different prospect met the eye."
+    },
+    {
+      "id": "s0-93",
+      "sceneId": "s0",
+      "text": "Beyond the stream and the strip of verdure that fringed it, and the few scattered dwarf trees growing near its banks, spread a brown savannah sloping upwards to a long, low, rocky ridge, beyond which rose a great solitary hill, or rather mountain, conical in form, and clothed in forest almost to the summit."
+    },
+    {
+      "id": "s0-94",
+      "sceneId": "s0",
+      "text": "This was the mountain Ytaioa, the chief landmark in that district."
+    },
+    {
+      "id": "s0-95",
+      "sceneId": "s0",
+      "text": "As the sun went down over the ridge, beyond the savannah, the whole western sky changed to a delicate rose colour that had the appearance of rose-coloured smoke blown there by some far off-wind, and left suspended--a thin, brilliant veil showing through it the distant sky beyond, blue and ethereal."
+    }
+  ]
+}

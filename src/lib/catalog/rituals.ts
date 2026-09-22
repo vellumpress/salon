@@ -227,8 +227,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Nine seasons at Bad Nauheim — intimacy like a good glove, and still they knew nothing.`,
   "growth-of-the-soil":
     `Who made the road over the moors? A man with a sack, a red beard, and scars — looking for land, or peace. Hamsun’s settler open uses the period word “Lapp” for Sámi herders on the common. Historical voice; Vellum stays on the man with the sack. If you Host further, keep that named for the room.`,
+  "of-human-bondage":
+    `A club foot, a medical student, and a love that humiliates on purpose. Skip the title matter and open Chapter I on the gray morning — Wake up, Philip — and keep the first sit to that chapter only. Sit with that weather before the first breath.`,
+  "green-mansions":
+    `Skip the Foreword. Now that we are cool, he said, and regret that we hurt each other, I am not sorry that it happened. Stop after the flight from the country into Guayana, then the forest.`,
+  "jamaica-anansi-stories":
+    `One great hungry time — the fish pot, and one tale only. Stop at the end of Tying Tiger. The collection stays on the shelf; the sit does not cross into the next tale.`,
+  "hadji-murad":
+    `I was returning home by the fields. It was midsummer; the hay harvest was over, and they were just beginning to reap the rye. Skip the editor’s notes and stop after the crushed thistle turns into the Caucasian episode.`,
   "nada-the-lily":
-    `You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zululand frame — an old narrator under “the White Man” / Great Queen law — is colonial adventure voice, with period names and violence ahead. Name that frame for the room before you Host further.`,
+    `You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zulu epic is told through an invented oral narrator (Mopo) inside late-Victorian imperial romance — the White Man / Great Queen frame — and is not ethnographic authority or a substitute for Zulu-authored history. Name that frame for the room before you Host further, and do not sanitize mid-bind.`,
   "all-quiet-on-the-western-front":
     `Five miles behind the front — bellies full, double sausage, and a cook who won’t stop ladling. This sit is rest and double rations five miles behind the line; later chapters bring trench violence and period enemy language. Warn the room if you Host further.`,
   we:
@@ -291,6 +299,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "futility",
       "on-the-seaboard",
       "bel-ami",
+      "hadji-murad",
       "generosity",
     ],
   },
@@ -314,6 +323,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "hungry-hearts",
       "in-our-time",
       "casanovas-homecoming",
+      "jamaica-anansi-stories",
     ],
   },
   {
@@ -635,7 +645,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "korean-folk-tales",
       "smoke-and-steel",
       "gods-trombones",
-      "hadji-murad",
       "anandamath",
       "lady-macbeth",
       "layla",
@@ -650,6 +659,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "maria",
       "bel-ami",
       "magnhild",
+      "of-human-bondage",
+      "green-mansions",
+      "jamaica-anansi-stories",
+      "hadji-murad",
     ],
   },
   {
@@ -713,6 +726,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "boule-de-suif-istanbul",
       "garden-party-barcelona",
       "a-passage-to-india",
+      "of-human-bondage",
     ],
   },
   {
@@ -741,6 +755,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "on-the-seaboard",
       "bel-ami",
       "magnhild",
+      "green-mansions",
+      "hadji-murad",
     ],
   },
   {
@@ -1088,6 +1104,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   mhudi: 5,
   "bel-ami": 5,
   magnhild: 5,
+  "of-human-bondage": 5,
+  "green-mansions": 5,
+  "jamaica-anansi-stories": 5,
   generosity: 20,
 };
 
