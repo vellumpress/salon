@@ -1,0 +1,3100 @@
+{
+  "id": "miss-julia",
+  "title": "Miss Julia",
+  "author": "August Strindberg (tr. Edwin Björkman)",
+  "year": "1913",
+  "note": "Project Gutenberg 14347",
+  "minutes": 176,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Miss Julia",
+      "place": "Miss Julia",
+      "reentry": "(A large kitchen: the ceiling and the side walls are hidden by draperies and hangings. The rear wall runs diagonally across the stage, from the left side and away from the spectators. On this wall, to the left, there are two shelves full of",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Pantomime",
+      "place": "Pantomime",
+      "reentry": "Must be acted as if the actress were really alone in the place. When necessary she turns her back to the public. She should not look in the direction of the spectators, and she should not hurry as if fearful that they might become impatient",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Ballet",
+      "place": "Ballet",
+      "reentry": "The peasants enter. They are decked out in their best and carry flowers in their hats. A fiddler leads them. On the table they place a barrel of small-beer and a keg of \"brännvin,\" or white Swedish whiskey, both of them decorated with wreat",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "(A large kitchen: the ceiling and the side walls are hidden by draperies and hangings. The rear wall runs diagonally across the stage, from the left side and away from the spectators. On this wall, to the left, there are two shelves full of utensils made of copper, iron, and tin. The shelves are trimmed with scalloped paper.)"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "(A little to the right may be seen three fourths of the big arched doorway leading to the outside. It has double glass doors, through which are seen a fountain with a cupid, lilac shrubs in bloom, and the tops of some Lombardy poplars.)"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "(On the left side of the stage is seen the corner of a big cook stove built of glazed bricks; also a part of the smoke-hood above it.)"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "(From the right protrudes one end of the servants' dining-table of white pine, with a few chairs about it.)"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "(The stove is dressed with bundled branches of birch. Twigs of juniper are scattered on the floor.)"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "(On the table end stands a big Japanese spice pot full of lilac blossoms.)"
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "(An icebox, a kitchen-table, and a wash-stand.)"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "(Above the door hangs a big old-fashioned bell on a steel spring, and the mouthpiece of a speaking-tube appears at the left of the door.)"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "(CHRISTINE is standing by the stove, frying something in a pan. She has on a dress of light-coloured cotton, which she has covered up with a big kitchen apron.)"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "(JEAN enters, dressed in livery and carrying a pair of big, spurred riding boots, which he places on the floor in such manner that they remain visible to the spectators.)"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "JEAN. To-night Miss Julia is crazy again; absolutely crazy."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "CHRISTINE. So you're back again?"
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "JEAN. I took the count to the station, and when I came back by the barn, I went in and had a dance, and there I saw the young lady leading the dance with the gamekeeper. But when she caught sight of me, she rushed right up to me and asked me to dance the ladies' waltz with her. And ever since she's been waltzing like--well, I never saw the like of it. She's crazy!"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "CHRISTINE. And has always been, but never the way it's been this last fortnight, since her engagement was broken."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "JEAN. Well, what kind of a story was that anyhow? He's a fine fellow, isn't he, although he isn't rich? Ugh, but they're so full of notions. [Sits down at the end of the table] It's peculiar anyhow, that a young lady--hm!--would rather stay at home with the servants--don't you think?--than go with her father to their relatives!"
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "CHRISTINE. Oh, I guess she feels sort of embarrassed by that rumpus with her fellow."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "JEAN. Quite likely. But there was some backbone to that man just the same. Do you know how it happened, Christine? I saw it, although I didn't care to let on."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "CHRISTINE. No, did you?"
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "JEAN. Sure, I did. They were in the stable-yard one evening, and the young lady was training him, as she called it. Do you know what that meant? She made him leap over her horse-whip the way you teach a dog to jump. Twice he jumped and got a cut each time. The third time he took the whip out of her hand and broke it into a thousand bits. And then he got out."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "CHRISTINE. So that's the way it happened! You don't say!"
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "JEAN. Yes, that's how that thing happened. Well, Christine, what have you got that's tasty?"
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "CHRISTINE. [Serves from the pan and puts the plate before Jean] Oh, just some kidney which I cut out of the veal roast."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "JEAN. [Smelling the food] Fine! That's my great *délice*. [Feeling the plate] But you might have warmed the plate."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "CHRISTINE. Well, if you ain't harder to please than the count himself! [Pulls his hair playfully.]"
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "JEAN. [Irritated] Don't pull my hair! You know how sensitive I am."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "CHRISTINE. Well, well, it was nothing but a love pull, you know."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "[JEAN eats.]"
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "[CHRISTINE opens a bottle of beer.]"
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "JEAN. Beer-on Midsummer Eve? No, thank you! Then I have something better myself. [Opens a table-drawer and takes out a bottle of claret with yellow cap] Yellow seal, mind you! Give me a glass—-and you use those with stems when you drink it *pure*."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "CHRISTINE. [Returns to the stove and puts a small pan on the fire] Heaven preserve her that gets you for a husband, Mr. Finicky!"
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "JEAN. Oh, rot! You'd be glad enough to get a smart fellow like me. And I guess it hasn't hurt you that they call me your beau. [Tasting the wine] Good! Pretty good! Just a tiny bit too cold. [He warms the glass with his hand.] We got this at Dijon. It cost us four francs per litre, not counting the bottle. And there was the duty besides. What is it you're cooking--with that infernal smell?"
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "CHRISTINE. Oh, it's some deviltry the young lady is going to give Diana."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "JEAN. You should choose your words with more care, Christine. But why should you be cooking for a bitch on a holiday eve like this? Is she sick?"
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "CHRISTINE. Ye-es, she is sick. She's been running around with the gate-keeper's pug--and now's there's trouble--and the young lady just won't hear of it."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "JEAN. The young lady is too stuck up in some ways and not proud enough in others--just as was the countess while she lived. She was most at home in the kitchen and among the cows, but she would never drive with only one horse. She wore her cuffs till they were dirty, but she had to have cuff buttons with a coronet on them. And speaking of the young lady, she doesn't take proper care of herself and her person. I might even say that she's lacking in refinement. Just now, when she was dancing in the barn, she pulled the gamekeeper away from Anna and asked him herself to come and dance with her. We wouldn't act in that way. But that's just how it is: when upper-class people want to demean themselves, then they grow—- mean! But she's splendid! Magnificent! Oh, such shoulders! And--and so on!"
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "CHRISTINE. Oh, well, don't brag too much! I've heard Clara talking, who tends to her dressing."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "JEAN. Pooh, Clara! You're always jealous of each other. I, who have been out riding with her--And then the way she dances!"
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "CHRISTINE. Say, Jean, won't you dance with me when I'm done?"
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "JEAN. Of course I will."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "CHRISTINE. Do you promise?"
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "JEAN. Promise? When I say so, I'll do it. Well, here's thanks for the good food. It tasted fine! [Puts the cork back into the bottle.]"
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "JULIA. [Appears in the doorway, speaking to somebody on the outside] I'll be back in a minute. You go right on in the meantime."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "[JEAN slips the bottle into the table-drawer and rises respectfully.]"
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "JULIA.[Enters and goes over to CHRISTINE by the wash-stand] Well, is it done yet?"
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "[CHRISTINE signs to her that JEAN is present.]"
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "JEAN. [Gallantly] The ladies are having secrets, I believe."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "JULIA. [Strikes him in the face with her handkerchief] That's for you, Mr. Pry!"
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "JEAN. Oh, what a delicious odor that violet has!"
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "JULIA. [With coquetry] Impudent! So you know something about perfumes also? And know pretty well how to dance--Now don't peep! Go away!"
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "JEAN. [With polite impudence] Is it some kind of witches' broth the ladies are cooking on Midsummer Eve--something to tell fortunes by and bring out the lucky star in which one's future love is seen?"
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "JULIA. [Sharply] If you can see that, you'll have good eyes, indeed! [To CHRISTINE] Put it in a pint bottle and cork it well. Come and dance a *schottische* with me now, Jean."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "JEAN. [Hesitatingly] I don't want to be impolite, but I had promised to dance with Christine this time—-"
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "JULIA. Well, she can get somebody else--can't you, Christine? Won't you let me borrow Jean from you?"
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "CHRISTINE. That isn't for me to say. When Miss Julia is so gracious, it isn't for him to say no. You just go along, and be thankful for the honour, too!"
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "JEAN. Frankly speaking, but not wishing to offend in any way, I cannot help wondering if it's wise for Miss Julia to dance twice in succession with the same partner, especially as the people here are not slow in throwing out hints--"
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "JULIA. [Flaring up] What is that? What kind of hints? What do you mean?"
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "JEAN. [Submissively] As you don't want to understand, I have to speak more plainly. It don't look well to prefer one servant to all the rest who are expecting to be honoured in the same unusual way--"
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "JULIA. Prefer! What ideas! I'm surprised! I, the mistress of the house, deign to honour this dance with my presence, and when it so happens that I actually want to dance, I want to dance with one who knows how to lead, so that I am not made ridiculous."
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "JEAN. As you command, Miss Julia! I am at your service!"
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "JULIA. [Softened] Don't take it as a command. To-night we should enjoy ourselves as a lot of happy people, and all rank should be forgotten. Now give me your arm. Don't be afraid, Christine! I'll return your beau to you!"
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "[JEAN offers his arm to MISS JULIA and leads her out.]"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Must be acted as if the actress were really alone in the place. When necessary she turns her back to the public. She should not look in the direction of the spectators, and she should not hurry as if fearful that they might become impatient."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "CHRISTINE is alone. A *schottische* tune played on a violin is heard faintly in the distance."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "While humming the tune, CHRISTINE clears o$ the table after JEAN, washes the plate at the kitchen table, wipes it, and puts it away in a cupboard."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Then she takes of her apron, pulls out a small mirror from one of the table-drawers and leans it against the flower jar on the table; lights a tallow candle and heats a hairpin, which she uses to curl her front hair."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Then she goes to the door and stands there listening. Returns to the table. Discovers the handkerchief which MISS JULIA has left behind, picks it up, and smells it, spreads it out absent-mindedly and begins to stretch it, smooth it, fold it up, and so forth."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "JEAN. [Enters alone] Crazy, that's what she is! The way she dances! And the people stand behind the doors and grill at her. What do you think of it, Christine?"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "CHRISTINE. Oh, she has her time now, and then she is always a little queer like that. But are you going to dance with me now?"
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "JEAN. You are not mad at me because I disappointed you?"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "CHRISTINE. No!--Not for a little thing like that, you know! And also, I know my place--"
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "JEAN. [Putting his arm around her waist] You are a, sensible girl, Christine, and I think you'll make a good wife--"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "JULIA. [Enters and is unpleasantly surprised; speaks with forced gayety] Yes, you are a fine partner--running away from your lady!"
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "JEAN. On the contrary, Miss Julia. I have, as you see, looked up the one I deserted."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "JULIA. [Changing tone] Do you know, there is nobody that dances like you!--But why do you wear your livery on an evening like this? Take it off at once!"
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "JEAN. Then I must ask you to step outside for a moment, as my black coat is hanging right here. [Points toward the right and goes in that direction.]"
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "JULIA. Are you bashful on my account? Just to change a coat? Why don't you go into your own room and come back again? Or, you can stay right here, and I'll turn my back on you."
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "JEAN. With your permission, Miss Julia. [Goes further over to the right; one of his arms can be seen as he changes his coat.]"
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "JULIA [To CHRISTINE] Are you and Jean engaged, that he's so familiar with you?"
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "CHRISTINE. Engaged? Well, in a way. We call it that."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "JULIA. Call it?"
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "CHRISTINE. Well, Miss Julia, you have had a fellow of your own, and--"
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "JULIA. We were really engaged--"
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "CHRISTINE. But it didn't come to anything just the same--"
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "[JEAN enters, dressed in black frock coat and black derby.]"
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "JULIA. *Très gentil, Monsieur Jean! Très gentil!*"
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "JEAN. *Vous voulez plaisanter, Madame!*"
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "JULIA. *Et vous voulez parler français!* Where did you learn it?"
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "JEAN. In Switzerland, while I worked as *sommelier* in one of the big hotels at Lucerne."
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "JULIA. But you look like a real gentleman in your frock coat! Charming! [Sits down at the table.]"
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "JEAN. Oh, you flatter me."
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "JULIA. [Offended] Flatter--you!"
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "JEAN. My natural modesty does not allow me to believe that you could be paying genuine compliments to one like me, and so I dare to assume that you are exaggerating, or, as we call it, flattering."
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "JULIA. Where did you learn to use your words like that? You must have been to the theatre a great deal?"
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "JEAN. That, too. I have been to a lot of places."
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "JULIA. But you were born in this neighbourhood?"
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "JEAN. My father was a cotter on the county attorney's property right by here, and I can recall seeing you as a child, although you, of course, didn't notice me."
+    },
+    {
+      "id": "s1-35",
+      "sceneId": "s1",
+      "text": "JULIA. No, really!"
+    },
+    {
+      "id": "s1-36",
+      "sceneId": "s1",
+      "text": "JEAN. Yes, and I remember one time in particular--but of that I can't speak."
+    },
+    {
+      "id": "s1-37",
+      "sceneId": "s1",
+      "text": "JULIA. Oh, yes, do! Why--just for once."
+    },
+    {
+      "id": "s1-38",
+      "sceneId": "s1",
+      "text": "JEAN. No, really, I cannot do it now. Another time, perhaps."
+    },
+    {
+      "id": "s1-39",
+      "sceneId": "s1",
+      "text": "JULIA. Another time is no time. Is it as bad as that?"
+    },
+    {
+      "id": "s1-40",
+      "sceneId": "s1",
+      "text": "JEAN. It isn't bad, but it comes a little hard. Look at that one! [Points to CHRISTINE, who has fallen asleep on a chair by the stove.]"
+    },
+    {
+      "id": "s1-41",
+      "sceneId": "s1",
+      "text": "JULIA. She'll make a pleasant wife. And perhaps she snores, too."
+    },
+    {
+      "id": "s1-42",
+      "sceneId": "s1",
+      "text": "JEAN. No, she doesn't, but she talks in her sleep."
+    },
+    {
+      "id": "s1-43",
+      "sceneId": "s1",
+      "text": "JULIA. [Cynically] How do you know?"
+    },
+    {
+      "id": "s1-44",
+      "sceneId": "s1",
+      "text": "JEAN. [Insolently] I have heard it."
+    },
+    {
+      "id": "s1-45",
+      "sceneId": "s1",
+      "text": "[Pause during which they study each other.]"
+    },
+    {
+      "id": "s1-46",
+      "sceneId": "s1",
+      "text": "JULIA. Why don't you sit down?"
+    },
+    {
+      "id": "s1-47",
+      "sceneId": "s1",
+      "text": "JEAN. It wouldn't be proper in your presence."
+    },
+    {
+      "id": "s1-48",
+      "sceneId": "s1",
+      "text": "JULIA. But if I order you to do it?"
+    },
+    {
+      "id": "s1-49",
+      "sceneId": "s1",
+      "text": "JEAN. Then I obey."
+    },
+    {
+      "id": "s1-50",
+      "sceneId": "s1",
+      "text": "JULIA. Sit down, then!--But wait a moment! Can you give me something to drink first?"
+    },
+    {
+      "id": "s1-51",
+      "sceneId": "s1",
+      "text": "JEAN. I don't know what we have got in the icebox. I fear it is nothing but beer."
+    },
+    {
+      "id": "s1-52",
+      "sceneId": "s1",
+      "text": "JULIA. And you call that nothing? My taste is so simple that I prefer it to wine."
+    },
+    {
+      "id": "s1-53",
+      "sceneId": "s1",
+      "text": "JEAN. [Takes a bottle of beer from the icebox and opens it; gets a glass and a plate from the cupboard, and serves the beer] Allow me!"
+    },
+    {
+      "id": "s1-54",
+      "sceneId": "s1",
+      "text": "JULIA. Thank you. Don't you want some yourself?"
+    },
+    {
+      "id": "s1-55",
+      "sceneId": "s1",
+      "text": "JEAN. I don't care very much for beer, but if it is a command, of course--"
+    },
+    {
+      "id": "s1-56",
+      "sceneId": "s1",
+      "text": "JULIA. Command?--I should think a polite gentleman might keep his lady company."
+    },
+    {
+      "id": "s1-57",
+      "sceneId": "s1",
+      "text": "JEAN. Yes, that's the way it should be. [Opens another bottle and takes out a glass.]"
+    },
+    {
+      "id": "s1-58",
+      "sceneId": "s1",
+      "text": "JULIA. Drink my health now!"
+    },
+    {
+      "id": "s1-59",
+      "sceneId": "s1",
+      "text": "[JEAN hesitates.]"
+    },
+    {
+      "id": "s1-60",
+      "sceneId": "s1",
+      "text": "JULIA. Are you bashful--a big, grown-up man?"
+    },
+    {
+      "id": "s1-61",
+      "sceneId": "s1",
+      "text": "JEAN. [Kneels with mock solemnity and raises his glass] To the health of my liege lady!"
+    },
+    {
+      "id": "s1-62",
+      "sceneId": "s1",
+      "text": "JULIA. Bravo!--And now you must also kiss my shoe in order to get it just right."
+    },
+    {
+      "id": "s1-63",
+      "sceneId": "s1",
+      "text": "[JEAN hesitates a moment; then he takes hold of her foot and touches it lightly with his lips.]"
+    },
+    {
+      "id": "s1-64",
+      "sceneId": "s1",
+      "text": "JULIA. Excellent! You should have been on the stage."
+    },
+    {
+      "id": "s1-65",
+      "sceneId": "s1",
+      "text": "JEAN. [Rising to his feet] This won't do any longer, Miss Julia. Somebody might see us."
+    },
+    {
+      "id": "s1-66",
+      "sceneId": "s1",
+      "text": "JULIA. What would that matter?"
+    },
+    {
+      "id": "s1-67",
+      "sceneId": "s1",
+      "text": "JEAN. Oh, it would set the people talking--that's all! And if you only knew how their tongues were wagging up there a while ago—-"
+    },
+    {
+      "id": "s1-68",
+      "sceneId": "s1",
+      "text": "JULIA. What did they have to say? Tell me--Sit down now!"
+    },
+    {
+      "id": "s1-69",
+      "sceneId": "s1",
+      "text": "JEAN. [Sits down] I don't want to hurt you, but they were using expressions--which cast reflections of a kind that--oh, you know it yourself! You are not a child, and when a lady is seen alone with a man, drinking--no matter if he's only a servant--and at night-—then--"
+    },
+    {
+      "id": "s1-70",
+      "sceneId": "s1",
+      "text": "JULIA. Then what? And besides, we are not alone. Isn't Christine with us?"
+    },
+    {
+      "id": "s1-71",
+      "sceneId": "s1",
+      "text": "JEAN. Yes--asleep!"
+    },
+    {
+      "id": "s1-72",
+      "sceneId": "s1",
+      "text": "JULIA. Then I'll wake her. [Rising] Christine, are you asleep?"
+    },
+    {
+      "id": "s1-73",
+      "sceneId": "s1",
+      "text": "CHRISTINE. [In her sleep] Blub-blub-blub-blub!"
+    },
+    {
+      "id": "s1-74",
+      "sceneId": "s1",
+      "text": "JULIA. Christine!--Did you ever see such a sleeper."
+    },
+    {
+      "id": "s1-75",
+      "sceneId": "s1",
+      "text": "CHRISTINE. [In her sleep] The count's boots are polished--put on the coffee--yes, yes, yes--my-my--pooh!"
+    },
+    {
+      "id": "s1-76",
+      "sceneId": "s1",
+      "text": "JULIA. [Pinches her nose] Can't you wake up?"
+    },
+    {
+      "id": "s1-77",
+      "sceneId": "s1",
+      "text": "JEAN. [Sternly] You shouldn't bother those that sleep."
+    },
+    {
+      "id": "s1-78",
+      "sceneId": "s1",
+      "text": "JULIA. [Sharply] What's that?"
+    },
+    {
+      "id": "s1-79",
+      "sceneId": "s1",
+      "text": "JEAN. One who has stood by the stove all day has a right to be tired at night. And sleep should be respected."
+    },
+    {
+      "id": "s1-80",
+      "sceneId": "s1",
+      "text": "JULIA. [Changing tone] It is fine to think like that, and it does you honour--I thank you for it. [Gives JEAN her hand] Come now and pick some lilacs for me."
+    },
+    {
+      "id": "s1-81",
+      "sceneId": "s1",
+      "text": "[During the following scene CHRISTINE wakes up. She moves as if still asleep and goes out to the right in order to go to bed.]"
+    },
+    {
+      "id": "s1-82",
+      "sceneId": "s1",
+      "text": "JEAN. With you, Miss Julia?"
+    },
+    {
+      "id": "s1-83",
+      "sceneId": "s1",
+      "text": "JULIA. With me!"
+    },
+    {
+      "id": "s1-84",
+      "sceneId": "s1",
+      "text": "JEAN. But it won't do! Absolutely not!"
+    },
+    {
+      "id": "s1-85",
+      "sceneId": "s1",
+      "text": "JULIA. I can't understand what you are thinking of. You couldn't possibly imagine--"
+    },
+    {
+      "id": "s1-86",
+      "sceneId": "s1",
+      "text": "JEAN. No, not I, but the people."
+    },
+    {
+      "id": "s1-87",
+      "sceneId": "s1",
+      "text": "JULIA. What? That I am fond of the valet?"
+    },
+    {
+      "id": "s1-88",
+      "sceneId": "s1",
+      "text": "JEAN. I am not at all conceited, but such things have happened--and to the people nothing is sacred."
+    },
+    {
+      "id": "s1-89",
+      "sceneId": "s1",
+      "text": "JULIA. You are an aristocrat, I think."
+    },
+    {
+      "id": "s1-90",
+      "sceneId": "s1",
+      "text": "JEAN. Yes, I am."
+    },
+    {
+      "id": "s1-91",
+      "sceneId": "s1",
+      "text": "JULIA. And I am stepping down--"
+    },
+    {
+      "id": "s1-92",
+      "sceneId": "s1",
+      "text": "JEAN. Take my advice, Miss Julia, don't step down. Nobody will believe you did it on purpose. The people will always say that you fell down."
+    },
+    {
+      "id": "s1-93",
+      "sceneId": "s1",
+      "text": "JULIA. I think better of the people than you do. Come and see if I am not right. Come along! [She ogles him.]"
+    },
+    {
+      "id": "s1-94",
+      "sceneId": "s1",
+      "text": "JEAN. You're mighty queer, do you know!"
+    },
+    {
+      "id": "s1-95",
+      "sceneId": "s1",
+      "text": "JULIA. Perhaps. But so are you. And for that matter, everything is queer. Life, men, everything--just a mush that floats on top of the water until it sinks, sinks down! I have a dream that comes back to me ever so often. And just now I am reminded of it. I have climbed to the top of a column and sit there without being able to tell how to get down again. I get dizzy when I look down, and I must get down, but I haven't the courage to jump off. I cannot hold on, and I am longing to fall, and yet I don't fall. But there will be no rest for me until I get down, no rest until I get down, down on the ground. And if I did reach the ground, I should want to get still further down, into the ground itself--Have you ever felt like that?"
+    },
+    {
+      "id": "s1-96",
+      "sceneId": "s1",
+      "text": "JEAN. No, my dream is that I am lying under a tall tree in a dark wood. I want to get up, up to the top, so that I can look out over the smiling landscape, where the sun is shining, and so that I can rob the nest in which lie the golden eggs. And I climb and climb, but the trunk is so thick and smooth, and it is so far to the first branch. But I know that if I could only reach that first branch, then I should go right on to the top as on a ladder. I have not reached it yet, but I am going to, if it only be in my dreams."
+    },
+    {
+      "id": "s1-97",
+      "sceneId": "s1",
+      "text": "JULIA. Here I am chattering to you about dreams! Come along! Only into the park! [She offers her arm to him, and they go toward the door.]"
+    },
+    {
+      "id": "s1-98",
+      "sceneId": "s1",
+      "text": "JEAN. We must sleep on nine midsummer flowers to-night, Miss Julia—- then our dreams will come true."
+    },
+    {
+      "id": "s1-99",
+      "sceneId": "s1",
+      "text": "[They turn around in the doorway, and JEAN puts one hand up to his eyes.]"
+    },
+    {
+      "id": "s1-100",
+      "sceneId": "s1",
+      "text": "JULIA. Let me see what you have got in your eye."
+    },
+    {
+      "id": "s1-101",
+      "sceneId": "s1",
+      "text": "JEAN. Oh, nothing--just some dirt--it will soon be gone."
+    },
+    {
+      "id": "s1-102",
+      "sceneId": "s1",
+      "text": "JULIA. It was my sleeve that rubbed against it. Sit down and let me help you. [Takes him by the arm and makes him sit down; takes hold of his head and bends it backwards; tries to get out the dirt with a corner of her handkerchief] Sit still now, absolutely still! [Slaps him on the hand] Well, can't you do as I say? I think you are shaking—-a big, strong fellow like you! [Feels his biceps] And with such arms!"
+    },
+    {
+      "id": "s1-103",
+      "sceneId": "s1",
+      "text": "JEAN. [Ominously] Miss Julia!"
+    },
+    {
+      "id": "s1-104",
+      "sceneId": "s1",
+      "text": "JULIA. Yes, Monsieur Jean."
+    },
+    {
+      "id": "s1-105",
+      "sceneId": "s1",
+      "text": "JEAN. *Attention! Je ne suis qu'un homme.*"
+    },
+    {
+      "id": "s1-106",
+      "sceneId": "s1",
+      "text": "JULIA. Can't you sit still!--There now! Now it's gone. Kiss my hand now, and thank me."
+    },
+    {
+      "id": "s1-107",
+      "sceneId": "s1",
+      "text": "JEAN. [Rising] Miss Julia, listen to me. Christine has gone to bed now--Won't you listen to me?"
+    },
+    {
+      "id": "s1-108",
+      "sceneId": "s1",
+      "text": "JULIA. Kiss my hand first."
+    },
+    {
+      "id": "s1-109",
+      "sceneId": "s1",
+      "text": "JEAN. Listen to me!"
+    },
+    {
+      "id": "s1-110",
+      "sceneId": "s1",
+      "text": "JULIA. Kiss my hand first!"
+    },
+    {
+      "id": "s1-111",
+      "sceneId": "s1",
+      "text": "JEAN. All right, but blame nobody but yourself!"
+    },
+    {
+      "id": "s1-112",
+      "sceneId": "s1",
+      "text": "JULIA. For what?"
+    },
+    {
+      "id": "s1-113",
+      "sceneId": "s1",
+      "text": "JEAN. For what? Are you still a mere child at twenty-five? Don't you know that it is dangerous to play with fire?"
+    },
+    {
+      "id": "s1-114",
+      "sceneId": "s1",
+      "text": "JULIA. Not for me. I am insured."
+    },
+    {
+      "id": "s1-115",
+      "sceneId": "s1",
+      "text": "JEAN. [Boldly] No, you are not. And even if you were, there are inflammable surroundings to be counted with."
+    },
+    {
+      "id": "s1-116",
+      "sceneId": "s1",
+      "text": "JULIA. That's you, I suppose?"
+    },
+    {
+      "id": "s1-117",
+      "sceneId": "s1",
+      "text": "JEAN. Yes. Not because I am I, but because I am a young man--"
+    },
+    {
+      "id": "s1-118",
+      "sceneId": "s1",
+      "text": "JULIA. Of handsome appearance--what an incredible conceit! A Don Juan, perhaps. Or a Joseph? On my soul, I think you are a Joseph!"
+    },
+    {
+      "id": "s1-119",
+      "sceneId": "s1",
+      "text": "JEAN. Do you?"
+    },
+    {
+      "id": "s1-120",
+      "sceneId": "s1",
+      "text": "JULIA. I fear it almost."
+    },
+    {
+      "id": "s1-121",
+      "sceneId": "s1",
+      "text": "[JEAN goes boldly up to her and takes her around the waist in order to kiss her.]"
+    },
+    {
+      "id": "s1-122",
+      "sceneId": "s1",
+      "text": "JULIA. [Gives him a cuff on the ear] Shame!"
+    },
+    {
+      "id": "s1-123",
+      "sceneId": "s1",
+      "text": "JEAN. Was that in play or in earnest?"
+    },
+    {
+      "id": "s1-124",
+      "sceneId": "s1",
+      "text": "JULIA. In earnest."
+    },
+    {
+      "id": "s1-125",
+      "sceneId": "s1",
+      "text": "JEAN. Then you were in earnest a moment ago also. Your playing is too serious, and that's the dangerous thing about it. Now I am tired of playing, and I ask to be excused in order to resume my work. The count wants his boots to be ready for him, and it is after midnight already."
+    },
+    {
+      "id": "s1-126",
+      "sceneId": "s1",
+      "text": "JULIA. Put away the boots."
+    },
+    {
+      "id": "s1-127",
+      "sceneId": "s1",
+      "text": "JEAN. No, it's my work, which I am bound to do. But I have not undertaken to be your playmate. It's something I can never become—- I hold myself too good for it."
+    },
+    {
+      "id": "s1-128",
+      "sceneId": "s1",
+      "text": "JULIA. You're proud!"
+    },
+    {
+      "id": "s1-129",
+      "sceneId": "s1",
+      "text": "JEAN. In some ways, and not in others."
+    },
+    {
+      "id": "s1-130",
+      "sceneId": "s1",
+      "text": "JULIA. Have you ever been in love?"
+    },
+    {
+      "id": "s1-131",
+      "sceneId": "s1",
+      "text": "JEAN. We don't use that word. But I have been fond of a lot of girls, and once I was taken sick because I couldn't have the one I wanted: sick, you know, like those princes in the Arabian Nights who cannot eat or drink for sheer love."
+    },
+    {
+      "id": "s1-132",
+      "sceneId": "s1",
+      "text": "JULIA. Who was it?"
+    },
+    {
+      "id": "s1-133",
+      "sceneId": "s1",
+      "text": "[JEAN remains silent.]"
+    },
+    {
+      "id": "s1-134",
+      "sceneId": "s1",
+      "text": "JULIA. Who was it?"
+    },
+    {
+      "id": "s1-135",
+      "sceneId": "s1",
+      "text": "JEAN. You cannot make me tell you."
+    },
+    {
+      "id": "s1-136",
+      "sceneId": "s1",
+      "text": "JULIA. If I ask you as an equal, ask you as--a friend: who was it?"
+    },
+    {
+      "id": "s1-137",
+      "sceneId": "s1",
+      "text": "JEAN. It was you."
+    },
+    {
+      "id": "s1-138",
+      "sceneId": "s1",
+      "text": "JULIA. [Sits down] How funny!"
+    },
+    {
+      "id": "s1-139",
+      "sceneId": "s1",
+      "text": "JEAN. Yes, as you say--it was ludicrous. That was the story, you see, which I didn't want to tell you a while ago. But now I am going to tell it. Do you know how the world looks from below--no, you don't. No more than do hawks and falcons, of whom we never see the back because they are always floating about high up in the sky. I lived in the cotter's hovel, together with seven other children, and a pig--out there on the grey plain, where there isn't a single tree. But from our windows I could see the wall around the count's park, and apple-trees above it. That was the Garden of Eden, and many fierce angels were guarding it with flaming swords. Nevertheless I and some other boys found our way to the Tree of Life--now you despise me?"
+    },
+    {
+      "id": "s1-140",
+      "sceneId": "s1",
+      "text": "JULIA. Oh, stealing apples is something all boys do."
+    },
+    {
+      "id": "s1-141",
+      "sceneId": "s1",
+      "text": "JEAN. You may say so now, but you despise me nevertheless. However—- once I got into the Garden of Eden with my mother to weed the onion beds. Near by stood a Turkish pavillion, shaded by trees and covered with honeysuckle. I didn't know what it was used for, but I had never seen a more beautiful building. People went in and came out again, and one day the door was left wide open. I stole up and saw the walls covered with pictures of kings and emperors, and the windows were hung with red, fringed curtains--now you know what I mean. I--[breaks off a lilac sprig and holds it under MISS JULIA's nose]--I had never been inside the manor, and I had never seen anything but the church--and this was much finer. No matter where my thoughts ran, they returned always--to that place. And gradually a longing arose within me to taste the full pleasure of--*enfin*! I sneaked in, looked and admired. Then I heard somebody coming. There was only one way out for fine people, but for me there was another, and I could do nothing else but choose it."
+    },
+    {
+      "id": "s1-142",
+      "sceneId": "s1",
+      "text": "[JULIA, who has taken the lilac sprig, lets it drop on the table.]"
+    },
+    {
+      "id": "s1-143",
+      "sceneId": "s1",
+      "text": "JEAN. Then I started to run, plunged through a hedge of raspberry bushes, chased right across a strawberry plantation, and came out on the terrace where the roses grow. There I caught sight of a pink dress and pair of white stockings--that was you! I crawled under a pile of weeds--right into it, you know--into stinging thistles and wet, ill-smelling dirt. And I saw you walking among the roses, and I thought: if it be possible for a robber to get into heaven and dwell with the angels, then it is strange that a cotter's child, here on God's own earth, cannot get into the park and play with the count's daughter."
+    },
+    {
+      "id": "s1-144",
+      "sceneId": "s1",
+      "text": "JULIA. [Sentimentally] Do you think all poor children have the same thoughts as you had in this case?"
+    },
+    {
+      "id": "s1-145",
+      "sceneId": "s1",
+      "text": "JEAN. [Hesitatingly at first; then with conviction] If *all* poor—- yes—-of course. Of course!"
+    },
+    {
+      "id": "s1-146",
+      "sceneId": "s1",
+      "text": "JULIA. It must be a dreadful misfortune to be poor."
+    },
+    {
+      "id": "s1-147",
+      "sceneId": "s1",
+      "text": "JEAN. [In a tone of deep distress and with rather exaggerated emphasis] Oh, Miss Julia! Oh!--A dog may lie on her ladyship's sofa; a horse may have his nose patted by the young lady's hand, but a servant--[changing his tone]--oh well, here and there you meet one made of different stuff, and he makes a way for himself in the world, but how often does it happen?--However, do you know what I did? I jumped into the mill brook with my clothes on, and was pulled out, and got a licking. But the next Sunday, when my father and the rest of the people were going over to my grandmother's, I fixed it so that I could stay at home. And then I washed myself with soap and hot water, and put on my best clothes, and went to church, where I could see you. I did see you, and went home determined to die. But I wanted to die beautifully and pleasantly, without any pain. And then I recalled that it was dangerous to sleep under an elder bush. We had a big one that was in full bloom. I robbed it of all its flowers, and then I put them in the big box where the oats were kept and lay down in them. Did you ever notice the smoothness of oats? Soft to the touch as the skin of the human body! However, I pulled down the lid and closed my eyes--fell asleep and was waked up a very sick boy. But I didn't die, as you can see. What I wanted--that's more than I can tell. Of course, there was not the least hope of winning you—-but you symbolised the hopelessness of trying to get out of the class into which I was born."
+    },
+    {
+      "id": "s1-148",
+      "sceneId": "s1",
+      "text": "JULIA. You narrate splendidly, do you know! Did you ever go to school?"
+    },
+    {
+      "id": "s1-149",
+      "sceneId": "s1",
+      "text": "JEAN. A little. But I have read a lot of novels and gone to the theatre a good deal. And besides, I have listened to the talk of better-class people, and from that I have learned most of all."
+    },
+    {
+      "id": "s1-150",
+      "sceneId": "s1",
+      "text": "JULIA. Do you stand around and listen to what we are saying?"
+    },
+    {
+      "id": "s1-151",
+      "sceneId": "s1",
+      "text": "JEAN. Of course! And I have heard a lot, too, when I was on the box of the carriage, or rowing the boat. Once I heard you, Miss Julia, and one of your girl friends--"
+    },
+    {
+      "id": "s1-152",
+      "sceneId": "s1",
+      "text": "JULIA. Oh!--What was it you heard then?"
+    },
+    {
+      "id": "s1-153",
+      "sceneId": "s1",
+      "text": "JEAN. Well, it wouldn't be easy to repeat. But I was rather surprised, and I couldn't understand where you had learned all those words. Perhaps, at bottom, there isn't quite so much difference as they think between one kind of people and another."
+    },
+    {
+      "id": "s1-154",
+      "sceneId": "s1",
+      "text": "JULIA. You ought to be ashamed of yourself! We don't live as you do when we are engaged."
+    },
+    {
+      "id": "s1-155",
+      "sceneId": "s1",
+      "text": "JEAN. [Looking hard at her] Is it so certain?--Well, Miss Julia, it won't pay to make yourself out so very innocent to me—-"
+    },
+    {
+      "id": "s1-156",
+      "sceneId": "s1",
+      "text": "JULIA. The man on whom I bestowed my love was a scoundrel."
+    },
+    {
+      "id": "s1-157",
+      "sceneId": "s1",
+      "text": "JEAN. That's what you always say--afterwards."
+    },
+    {
+      "id": "s1-158",
+      "sceneId": "s1",
+      "text": "JULIA. Always?"
+    },
+    {
+      "id": "s1-159",
+      "sceneId": "s1",
+      "text": "JEAN. Always, I believe, for I have heard the same words used several times before, on similar occasions."
+    },
+    {
+      "id": "s1-160",
+      "sceneId": "s1",
+      "text": "JULIA. What occasions?"
+    },
+    {
+      "id": "s1-161",
+      "sceneId": "s1",
+      "text": "JEAN. Like the one of which we were speaking. The last time--"
+    },
+    {
+      "id": "s1-162",
+      "sceneId": "s1",
+      "text": "JULIA. [Rising] Stop! I don't want to hear any more!"
+    },
+    {
+      "id": "s1-163",
+      "sceneId": "s1",
+      "text": "JEAN. Nor did *she*--curiously enough! Well, then I ask permission to go to bed."
+    },
+    {
+      "id": "s1-164",
+      "sceneId": "s1",
+      "text": "JULIA. [Gently] Go to bed on Midsummer Eve?"
+    },
+    {
+      "id": "s1-165",
+      "sceneId": "s1",
+      "text": "JEAN. Yes, for dancing with that mob out there has really no attraction for me."
+    },
+    {
+      "id": "s1-166",
+      "sceneId": "s1",
+      "text": "JULIA. Get the key to the boat and take me out on the lake--I want to watch the sunrise."
+    },
+    {
+      "id": "s1-167",
+      "sceneId": "s1",
+      "text": "JEAN. Would that be wise?"
+    },
+    {
+      "id": "s1-168",
+      "sceneId": "s1",
+      "text": "JULIA. It sounds as if you were afraid of your reputation."
+    },
+    {
+      "id": "s1-169",
+      "sceneId": "s1",
+      "text": "JEAN. Why not? I don't care to be made ridiculous, and I don't care to be discharged without a recommendation, for I am trying to get on in the world. And then I feel myself under a certain obligation to Christine."
+    },
+    {
+      "id": "s1-170",
+      "sceneId": "s1",
+      "text": "JULIA. So it's Christine now"
+    },
+    {
+      "id": "s1-171",
+      "sceneId": "s1",
+      "text": "JEAN. Yes, but it's you also--Take my advice and go to bed!"
+    },
+    {
+      "id": "s1-172",
+      "sceneId": "s1",
+      "text": "JULIA. Am I to obey you?"
+    },
+    {
+      "id": "s1-173",
+      "sceneId": "s1",
+      "text": "JEAN. For once--and for your own sake! The night is far gone. Sleepiness makes us drunk, and the head grows hot. Go to bed! And besides--if I am not mistaken—-I can hear the crowd coming this way to look for me. And if we are found together here, you are lost!"
+    },
+    {
+      "id": "s1-174",
+      "sceneId": "s1",
+      "text": "CHORUS. [Is heard approaching]: Through the fields come two ladies a-walking, Treederee-derallah, treederee-derah. And one has her shoes full of water, Treederee-derallah-lah."
+    },
+    {
+      "id": "s1-175",
+      "sceneId": "s1",
+      "text": "They're talking of hundreds of dollars, Treederee-derallah, treederee-derah. But have not between them a dollar Treederee-derallah-lah."
+    },
+    {
+      "id": "s1-176",
+      "sceneId": "s1",
+      "text": "This wreath I give you gladly, Treederee-derallah, treederee-derah. But love another madly, Treederee-derallah-lah."
+    },
+    {
+      "id": "s1-177",
+      "sceneId": "s1",
+      "text": "JULIA. I know the people, and I love them, just as they love me. Let them come, and you'll see."
+    },
+    {
+      "id": "s1-178",
+      "sceneId": "s1",
+      "text": "JEAN. No, Miss Julia, they don't love you. They take your food and spit at your back. Believe me. Listen to me--can't you hear what they are singing?--No, don't pay any attention to it!"
+    },
+    {
+      "id": "s1-179",
+      "sceneId": "s1",
+      "text": "JULIA. [Listening] What is it they are singing?"
+    },
+    {
+      "id": "s1-180",
+      "sceneId": "s1",
+      "text": "JEAN. Oh, something scurrilous. About you and me."
+    },
+    {
+      "id": "s1-181",
+      "sceneId": "s1",
+      "text": "JULIA. How infamous! They ought to be ashamed! And the treachery of it!"
+    },
+    {
+      "id": "s1-182",
+      "sceneId": "s1",
+      "text": "JEAN. The mob is always cowardly. And in such a fight as this there is nothing to do but to run away."
+    },
+    {
+      "id": "s1-183",
+      "sceneId": "s1",
+      "text": "JULIA. Run away? Where to? We cannot get out. And we cannot go into Christine's room."
+    },
+    {
+      "id": "s1-184",
+      "sceneId": "s1",
+      "text": "JEAN. Oh, we cannot? Well, into my room, then! Necessity knows no law. And you can trust me, for I am your true and frank and respectful friend."
+    },
+    {
+      "id": "s1-185",
+      "sceneId": "s1",
+      "text": "JULIA. But think only-think if they should look for you in there!"
+    },
+    {
+      "id": "s1-186",
+      "sceneId": "s1",
+      "text": "JEAN. I shall bolt the door. And if they try to break it I open, I'll shoot!--Come! [Kneeling before her] Come!"
+    },
+    {
+      "id": "s1-187",
+      "sceneId": "s1",
+      "text": "JULIA. [Meaningly] And you promise me--?"
+    },
+    {
+      "id": "s1-188",
+      "sceneId": "s1",
+      "text": "JEAN. I swear!"
+    },
+    {
+      "id": "s1-189",
+      "sceneId": "s1",
+      "text": "[MISS JULIA goes quickly out to the right. JEAN follows her eagerly.]"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "The peasants enter. They are decked out in their best and carry flowers in their hats. A fiddler leads them. On the table they place a barrel of small-beer and a keg of \"brännvin,\" or white Swedish whiskey, both of them decorated with wreathes woven out of leaves. First they drink. Then they form in ring and sing and dance to the melody heard before:"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "\"Through the fields come two ladies a-walking.\""
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "The dance finished, they leave singing."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "JULIA. [Enters alone. On seeing the disorder in the kitchen, she claps her hands together. Then she takes out a powder-puff and begins to powder her face.]"
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "JEAN. [Enters in a state of exaltation] There you see! And you heard, didn't you? Do you think it possible to stay here?"
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "JULIA. No, I don't think so. But what are we to do?"
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "JEAN. Run away, travel, far away from here."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "JULIA. Travel? Yes-but where?"
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "JEAN. To Switzerland, the Italian lakes--you have never been there?"
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "JULIA. No. Is the country beautiful?"
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "JEAN. Oh! Eternal summer! Orange trees! Laurels! Oh!"
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "JULIA. But then-what are we to do down there?"
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "JEAN. I'll start a hotel, everything first class, including the customers?"
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "JULIA. Hotel?"
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "JEAN. That's the life, I tell you! Constantly new faces and new languages. Never a minute free for nerves or brooding. No trouble about what to do--for the work is calling to be done: night and day, bells that ring, trains that whistle, 'busses that come and go; and gold pieces raining on the counter all the time. That's the life for you!"
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "JULIA. Yes, that is life. And I?"
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "JEAN. The mistress of everything, the chief ornament of the house. With your looks--and your manners--oh, success will be assured! Enormous! You'll sit like a queen in the office and keep the slaves going by the touch of an electric button. The guests will pass in review before your throne and timidly deposit their treasures on your table. You cannot imagine how people tremble when a bill is presented to them--I'll salt the items, and you'll sugar them with your sweetest smiles. Oh, let us get away from here--[pulling a time-table from his pocket]--at once, with the next train! We'll be in Malmö at 6.30; in Hamburg at 8.40 to-morrow morning; in Frankfort and Basel a day later. And to reach Como by way of the St. Gotthard it will take us--let me see--three days. Three days!"
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "JULIA. All that is all right. But you must give me some courage— Jean. Tell me that you love me. Come and take me in your arms."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "JEAN. [Reluctantly] I should like to--but I don't dare. Not in this house again. I love you--beyond doubt--or, can you doubt it, Miss Julia?"
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "JULIA. [With modesty and true womanly feeling] Miss? Call me Julia. Between us there can be no barriers here after. Call me Julia!"
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "JEAN. [Disturbed] I cannot! There will be barriers between us as long as we stay in this house--there is the past, and there is the count-—and I have never met another person for whom I felt such respect. If I only catch sight of his gloves on a chair I feel small. If I only hear that bell up there, I jump like a shy horse. And even now, when I see his boots standing there so stiff and perky, it is as if something made my back bend. [Kicking at the boots] It's nothing but superstition and tradition hammered into us from childhood--but it can be as easily forgotten again. Let us only get to another country, where they have a republic, and you'll see them bend their backs double before my liveried porter. You see, backs have to be bent, but not mine. I wasn't born to that kind of thing. There's better stuff in me--character--and if I only get hold of the first branch, you'll see me do some climbing. To-day I am a valet, but next year I'll be a hotel owner. In ten years I can live on the money I have made, and then I'll go to Roumania and get myself an order. And I may--note well that I say *may*--end my days as a count."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "JULIA. Splendid, splendid!"
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "JEAN. Yes, in Roumania the title of count can be had for cash, and so you'll be a countess after all. My countess!"
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "JULIA. What do I care about all I now cast behind me! Tell me that you love me: otherwise--yes, what am I otherwise?"
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "JEAN. I will tell you so a thousand times--later. But not here. And above all, no sentimentality, or everything will be lost. We must look at the matter in cold blood, like sensible people. [Takes out a cigar, cuts of the point, and lights it] Sit down there now, and I'll sit here, and then we'll talk as if nothing had happened."
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "JULIA. [In despair] Good Lord! Have you then no feelings at all?"
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "JEAN. I? No one is more full of feeling than I am. But I know how to control myself."
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "JULIA. A while ago you kissed my shoe--and now!"
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "JEAN. [Severely] Yes, that was then. Now we have other things to think of."
+    },
+    {
+      "id": "s2-29",
+      "sceneId": "s2",
+      "text": "JULIA. Don't speak harshly to me!"
+    },
+    {
+      "id": "s2-30",
+      "sceneId": "s2",
+      "text": "JEAN. No, but sensibly. One folly has been committed--don't let us commit any more! The count may be here at any moment, and before he comes our fate must be settled. What do you think of my plans for the future? Do you approve of them?"
+    },
+    {
+      "id": "s2-31",
+      "sceneId": "s2",
+      "text": "JULIA. They seem acceptable, on the whole. But there is one question: a big undertaking of that kind will require a big capital have you got it?"
+    },
+    {
+      "id": "s2-32",
+      "sceneId": "s2",
+      "text": "JEAN. [Chewing his cigar] I? Of course! I have my expert knowledge, my vast experience, my familiarity with several languages. That's the very best kind of capital, I should say."
+    },
+    {
+      "id": "s2-33",
+      "sceneId": "s2",
+      "text": "JULIA. But it won't buy you a railroad ticket even."
+    },
+    {
+      "id": "s2-34",
+      "sceneId": "s2",
+      "text": "JEAN. That's true enough. And that is just why I am looking for a backer to advance the needful cash."
+    },
+    {
+      "id": "s2-35",
+      "sceneId": "s2",
+      "text": "JULIA. Where could you get one all of a sudden?"
+    },
+    {
+      "id": "s2-36",
+      "sceneId": "s2",
+      "text": "JEAN. It's for you to find him if you want to become my partner."
+    },
+    {
+      "id": "s2-37",
+      "sceneId": "s2",
+      "text": "JULIA. I cannot do it, and I have nothing myself. [Pause.]"
+    },
+    {
+      "id": "s2-38",
+      "sceneId": "s2",
+      "text": "JEAN. Well, then that's off--"
+    },
+    {
+      "id": "s2-39",
+      "sceneId": "s2",
+      "text": "JULIA. And—-"
+    },
+    {
+      "id": "s2-40",
+      "sceneId": "s2",
+      "text": "JEAN. Everything remains as before."
+    },
+    {
+      "id": "s2-41",
+      "sceneId": "s2",
+      "text": "JULIA. Do you think I am going to stay under this roof as your concubine? Do you think I'll let the people point their fingers at me? Do you think I can look my father in the face after this? No, take me away from here, from all this humiliation and disgrace!— Oh, what have I done? My God, my God! [Breaks into tears.]"
+    },
+    {
+      "id": "s2-42",
+      "sceneId": "s2",
+      "text": "JEAN. So we have got around to that tune now!--What you have done? Nothing but what many others have done before you."
+    },
+    {
+      "id": "s2-43",
+      "sceneId": "s2",
+      "text": "JULIA. [Crying hysterically] And now you're despising me!--I'm falling, I'm falling!"
+    },
+    {
+      "id": "s2-44",
+      "sceneId": "s2",
+      "text": "JEAN. Fall down to me, and I'll lift you up again afterwards."
+    },
+    {
+      "id": "s2-45",
+      "sceneId": "s2",
+      "text": "JULIA. What horrible power drew me to you? Was it the attraction which the strong exercises on the weak--the one who is rising on one who is falling? Or was it love? This love! Do you know what love is?"
+    },
+    {
+      "id": "s2-46",
+      "sceneId": "s2",
+      "text": "JEAN. I? Well, I should say so! Don't you think I have been there before?"
+    },
+    {
+      "id": "s2-47",
+      "sceneId": "s2",
+      "text": "JULIA. Oh, the language you use, and the thoughts you think!"
+    },
+    {
+      "id": "s2-48",
+      "sceneId": "s2",
+      "text": "JEAN. Well, that's the way I was brought up, and that's the way I am. Don't get nerves now and play the exquisite, for now one of us is just as good as the other. Look here, my girl, let me treat you to a glass of something superfine. [He opens the table-drawer, takes out the wine bottle and fills up two glasses that have already been used.]"
+    },
+    {
+      "id": "s2-49",
+      "sceneId": "s2",
+      "text": "JULIA. Where did you get that wine?"
+    },
+    {
+      "id": "s2-50",
+      "sceneId": "s2",
+      "text": "JEAN. In the cellar."
+    },
+    {
+      "id": "s2-51",
+      "sceneId": "s2",
+      "text": "JULIA. My father's Burgundy!"
+    },
+    {
+      "id": "s2-52",
+      "sceneId": "s2",
+      "text": "JEAN. Well, isn't it good enough for the son-in-law?"
+    },
+    {
+      "id": "s2-53",
+      "sceneId": "s2",
+      "text": "JULIA. And I am drinking beer--I!"
+    },
+    {
+      "id": "s2-54",
+      "sceneId": "s2",
+      "text": "JEAN. It shows merely that I have better taste than you."
+    },
+    {
+      "id": "s2-55",
+      "sceneId": "s2",
+      "text": "JULIA. Thief!"
+    },
+    {
+      "id": "s2-56",
+      "sceneId": "s2",
+      "text": "JEAN. Do you mean to tell on me?"
+    },
+    {
+      "id": "s2-57",
+      "sceneId": "s2",
+      "text": "JULIA. Oh, oh! The accomplice of a house thief! Have I been drunk, or have I been dreaming all this night? Midsummer Eve! The feast of innocent games—-"
+    },
+    {
+      "id": "s2-58",
+      "sceneId": "s2",
+      "text": "JEAN. Innocent--hm!"
+    },
+    {
+      "id": "s2-59",
+      "sceneId": "s2",
+      "text": "JULIA. [Walking back and forth] Can there be another human being on earth so unhappy as I am at this moment'"
+    },
+    {
+      "id": "s2-60",
+      "sceneId": "s2",
+      "text": "JEAN. But why should you be? After such a conquest? Think of Christine in there. Don't you think she has feelings also?"
+    },
+    {
+      "id": "s2-61",
+      "sceneId": "s2",
+      "text": "JULIA. I thought so a while ago, but I don't think so any longer. No, a menial is a menial--"
+    },
+    {
+      "id": "s2-62",
+      "sceneId": "s2",
+      "text": "JEAN. And a whore a whore!"
+    },
+    {
+      "id": "s2-63",
+      "sceneId": "s2",
+      "text": "JULIA. [On her knees, with folded hands] O God in heaven, make an end of this wretched life! Take me out of the filth into which I am sinking! Save me! Save me!"
+    },
+    {
+      "id": "s2-64",
+      "sceneId": "s2",
+      "text": "JEAN. I cannot deny that I feel sorry for you. When I was lying among the onions and saw you up there among the roses--I'll tell you now--I had the same nasty thoughts that all boys have."
+    },
+    {
+      "id": "s2-65",
+      "sceneId": "s2",
+      "text": "JULIA. And you who wanted to die for my sake!"
+    },
+    {
+      "id": "s2-66",
+      "sceneId": "s2",
+      "text": "JEAN. Among the oats. That was nothing but talk."
+    },
+    {
+      "id": "s2-67",
+      "sceneId": "s2",
+      "text": "JULIA. Lies in other words!"
+    },
+    {
+      "id": "s2-68",
+      "sceneId": "s2",
+      "text": "JEAN. [Beginning to feel sleepy] Just about. I think I read the story in a paper, and it was about a chimney-sweep who crawled into a wood-box full of lilacs because a girl had brought suit against him for not supporting her kid—-"
+    },
+    {
+      "id": "s2-69",
+      "sceneId": "s2",
+      "text": "JULIA. So that's the sort you are--"
+    },
+    {
+      "id": "s2-70",
+      "sceneId": "s2",
+      "text": "JEAN. Well, I had to think of something--for it's the high-faluting stuff that the women bite on."
+    },
+    {
+      "id": "s2-71",
+      "sceneId": "s2",
+      "text": "JULIA. Scoundrel!"
+    },
+    {
+      "id": "s2-72",
+      "sceneId": "s2",
+      "text": "JEAN. Rot!"
+    },
+    {
+      "id": "s2-73",
+      "sceneId": "s2",
+      "text": "JULIA. And now you have seen the back of the hawk--"
+    },
+    {
+      "id": "s2-74",
+      "sceneId": "s2",
+      "text": "JEAN. Well, I don't know--"
+    },
+    {
+      "id": "s2-75",
+      "sceneId": "s2",
+      "text": "JULIA. And I was to be the first branch--"
+    },
+    {
+      "id": "s2-76",
+      "sceneId": "s2",
+      "text": "JEAN. But the branch was rotten--"
+    },
+    {
+      "id": "s2-77",
+      "sceneId": "s2",
+      "text": "JULIA. I was to be the sign in front of the hotel--"
+    },
+    {
+      "id": "s2-78",
+      "sceneId": "s2",
+      "text": "JEAN. And I the hotel--"
+    },
+    {
+      "id": "s2-79",
+      "sceneId": "s2",
+      "text": "JULIA. Sit at your counter, and lure your customers, and doctor your bills--"
+    },
+    {
+      "id": "s2-80",
+      "sceneId": "s2",
+      "text": "JEAN. No, that I should have done myself--"
+    },
+    {
+      "id": "s2-81",
+      "sceneId": "s2",
+      "text": "JULIA. That a human soul can be so steeped in dirt!"
+    },
+    {
+      "id": "s2-82",
+      "sceneId": "s2",
+      "text": "JEAN. Well, wash it off!"
+    },
+    {
+      "id": "s2-83",
+      "sceneId": "s2",
+      "text": "JULIA. You lackey, you menial, stand up when I talk to you!"
+    },
+    {
+      "id": "s2-84",
+      "sceneId": "s2",
+      "text": "JEAN. You lackey-love, you mistress of a menial--shut up and get out of here! You're the right one to come and tell me that I am vulgar. People of my kind would never in their lives act as vulgarly as you have acted to-night. Do you think any servant girl would go for a man as you did? Did you ever see a girl of my class throw herself at anybody in that way? I have never seen the like of it except among beasts and prostitutes."
+    },
+    {
+      "id": "s2-85",
+      "sceneId": "s2",
+      "text": "JULIA. [Crushed] That's right: strike me, step on me--I haven't deserved any better! I am a wretched creature. But help me! Help me out of this, if there be any way to do so!"
+    },
+    {
+      "id": "s2-86",
+      "sceneId": "s2",
+      "text": "JEAN. [In a milder tone] I don't want to lower myself by a denial of my share in the honour of seducing. But do you think a person in my place would have dared to raise his eyes to you, if the invitation to do so had not come from yourself? I am still sitting here in a state of utter surprise--"
+    },
+    {
+      "id": "s2-87",
+      "sceneId": "s2",
+      "text": "JULIA. And pride--"
+    },
+    {
+      "id": "s2-88",
+      "sceneId": "s2",
+      "text": "JEAN. Yes, why not? Although I must confess that the victory was too easy to bring with it any real intoxication."
+    },
+    {
+      "id": "s2-89",
+      "sceneId": "s2",
+      "text": "JULIA. Strike me some more!"
+    },
+    {
+      "id": "s2-90",
+      "sceneId": "s2",
+      "text": "JEAN. [Rising] No! Forgive me instead what I have been saying. I don't want to strike one who is disarmed, and least of all a lady. On one hand I cannot deny that it has given me pleasure to discover that what has dazzled us below is nothing but cat-gold; that the hawk is simply grey on the back also; that there is powder on the tender cheek; that there may be black borders on the polished nails; and that the handkerchief may be dirty, although it smells of perfume. But on the other hand it hurts me to have discovered that what I was striving to reach is neither better nor more genuine. It hurts me to see you sinking so low that you are far beneath your own cook--it hurts me as it hurts to see the Fall flowers beaten down by the rain and turned into mud."
+    },
+    {
+      "id": "s2-91",
+      "sceneId": "s2",
+      "text": "JULIA. You speak as if you were already above me?"
+    },
+    {
+      "id": "s2-92",
+      "sceneId": "s2",
+      "text": "JEAN. Well, so I am. Don't you see: I could have made a countess of you, but you could never make me a count."
+    },
+    {
+      "id": "s2-93",
+      "sceneId": "s2",
+      "text": "JULIA. But I am born of a count, and that's more than you can ever achieve."
+    },
+    {
+      "id": "s2-94",
+      "sceneId": "s2",
+      "text": "JEAN. That's true. But I might be the father of counts—if--"
+    },
+    {
+      "id": "s2-95",
+      "sceneId": "s2",
+      "text": "JULIA. But you are a thief--and I am not."
+    },
+    {
+      "id": "s2-96",
+      "sceneId": "s2",
+      "text": "JEAN. Thief is not the worst. There are other kinds still farther down. And then, when I serve in a house, I regard myself in a sense as a member of the family, as a child of the house, and you don't call it theft when children pick a few of the berries that load down the vines. [His passion is aroused once more] Miss Julia, you are a magnificent woman, and far too good for one like me. You were swept along by a spell of intoxication, and now you want to cover up your mistake by making yourself believe that you are in love with me. Well, you are not, unless possibly my looks might tempt you-—in which case your love is no better than mine. I could never rest satisfied with having you care for nothing in me but the mere animal, and your love I can never win."
+    },
+    {
+      "id": "s2-97",
+      "sceneId": "s2",
+      "text": "JULIA. Are you so sure of that?"
+    },
+    {
+      "id": "s2-98",
+      "sceneId": "s2",
+      "text": "JEAN. You mean to say that it might be possible? That I might love you: yes, without doubt--for you are beautiful, refined, [goes up to her and takes hold of her hand] educated, charming when you want to be so, and it is not likely that the flame will ever burn out in a man who has once been set of fire by you. [Puts his arm around her waist] You are like burnt wine with strong spices in it, and one of your kisses--"
+    },
+    {
+      "id": "s2-99",
+      "sceneId": "s2",
+      "text": "[He tries to lead her away, but she frees herself gently from his hold.]"
+    },
+    {
+      "id": "s2-100",
+      "sceneId": "s2",
+      "text": "JULIA. Leave me alone! In that way you cannot win me."
+    },
+    {
+      "id": "s2-101",
+      "sceneId": "s2",
+      "text": "JEAN. How then?--Not in that way! Not by caresses and sweet words! Not by thought for the future, by escape from disgrace! How then?"
+    },
+    {
+      "id": "s2-102",
+      "sceneId": "s2",
+      "text": "JULIA. How? How? I don't know--Not at all! I hate you as I hate rats, but I cannot escape from you!"
+    },
+    {
+      "id": "s2-103",
+      "sceneId": "s2",
+      "text": "JEAN. Escape with me!"
+    },
+    {
+      "id": "s2-104",
+      "sceneId": "s2",
+      "text": "JULIA. [Straightening up] Escape? Yes, we must escape!--But I am so tired. Give me a glass of wine."
+    },
+    {
+      "id": "s2-105",
+      "sceneId": "s2",
+      "text": "[JEAN pours out wine.]"
+    },
+    {
+      "id": "s2-106",
+      "sceneId": "s2",
+      "text": "JULIA. [Looks at her watch] But we must have a talk first. We have still some time left. [Empties her glass and holds it out for more.]"
+    },
+    {
+      "id": "s2-107",
+      "sceneId": "s2",
+      "text": "JEAN. Don't drink so much. It will go to your head."
+    },
+    {
+      "id": "s2-108",
+      "sceneId": "s2",
+      "text": "JULIA. What difference would that make?"
+    },
+    {
+      "id": "s2-109",
+      "sceneId": "s2",
+      "text": "JEAN. What difference would it make? It's vulgar to get drunk--What was it you wanted to tell me?"
+    },
+    {
+      "id": "s2-110",
+      "sceneId": "s2",
+      "text": "JULIA. We must get away. But first we must have a talk--that is, I must talk, for so far you have done all the talking. You have told me about your life. Now I must tell you about mine, so that we know each other right to the bottom before we begin the journey together."
+    },
+    {
+      "id": "s2-111",
+      "sceneId": "s2",
+      "text": "JEAN. One moment, pardon me! Think first, so that you don't regret it afterwards, when you have already given up the secrets of your life."
+    },
+    {
+      "id": "s2-112",
+      "sceneId": "s2",
+      "text": "JULIA. Are you not my friend?"
+    },
+    {
+      "id": "s2-113",
+      "sceneId": "s2",
+      "text": "JEAN. Yes, at times--but don't rely on me."
+    },
+    {
+      "id": "s2-114",
+      "sceneId": "s2",
+      "text": "JULIA. You only talk like that--and besides, my secrets are known to everybody. You see, my mother was not of noble birth, but came of quite plain people. She was brought up in the ideas of her time about equality, and woman's independence, and that kind of thing. And she had a decided aversion to marriage. Therefore, when my father proposed to her, she said she wouldn't marry him--and then she did it just the same. I came into the world--against my mother's wish, I have come to think. Then my mother wanted to bring me up in a perfectly natural state, and at the same time I was to learn everything that a boy is taught, so that I might prove that a woman is just as good as a man. I was dressed as a boy, and was taught how to handle a horse, but could have nothing to do with the cows. I had to groom and harness and go hunting on horseback. I was even forced to learn something about agriculture. And all over the estate men were set to do women's work, and women to do men's--with the result that everything went to pieces and we became the laughing-stock of the whole neighbourhood. At last my father must have recovered from the spell cast over him, for he rebelled, and everything was changed to suit his own ideas. My mother was taken sick--what kind of sickness it was I don't know, but she fell often into convulsions, and she used to hide herself in the garret or in the garden, and sometimes she stayed out all night. Then came the big fire, of which you have heard. The house, the stable, and the barn were burned down, and this under circumstances which made it look as if the fire had been set on purpose. For the disaster occurred the day after our insurance expired, and the money sent for renewal of the policy had been delayed by the messenger's carelessness, so that it came too late. [She fills her glass again and drinks.]"
+    },
+    {
+      "id": "s2-115",
+      "sceneId": "s2",
+      "text": "JEAN. Don't drink any more."
+    },
+    {
+      "id": "s2-116",
+      "sceneId": "s2",
+      "text": "JULIA. Oh, what does it matter!--We were without a roof over our heads and had to sleep in the carriages. My father didn't know where to get money for the rebuilding of the house. Then my mother suggested that he try to borrow from a childhood friend of hers, a brick manufacturer living not far from here. My father got the loan, but was not permitted to pay any interest, which astonished him. And so the house was built up again. [Drinks again] Do you know who set fire to the house?"
+    },
+    {
+      "id": "s2-117",
+      "sceneId": "s2",
+      "text": "JEAN. Her ladyship, your mother!"
+    },
+    {
+      "id": "s2-118",
+      "sceneId": "s2",
+      "text": "JULIA. Do you know who the brick manufacturer was?"
+    },
+    {
+      "id": "s2-119",
+      "sceneId": "s2",
+      "text": "JEAN. Your mother's lover?"
+    },
+    {
+      "id": "s2-120",
+      "sceneId": "s2",
+      "text": "JULIA. Do you know to whom the money belonged?"
+    },
+    {
+      "id": "s2-121",
+      "sceneId": "s2",
+      "text": "JEAN. Wait a minute--no, that I don't know."
+    },
+    {
+      "id": "s2-122",
+      "sceneId": "s2",
+      "text": "JULIA. To my mother."
+    },
+    {
+      "id": "s2-123",
+      "sceneId": "s2",
+      "text": "JEAN. In other words, to the count, if there was no settlement."
+    },
+    {
+      "id": "s2-124",
+      "sceneId": "s2",
+      "text": "JULIA. There was no settlement. My mother possessed a small fortune of her own which she did not want to leave in my father's control, so she invested it with--her friend."
+    },
+    {
+      "id": "s2-125",
+      "sceneId": "s2",
+      "text": "JEAN. Who copped it."
+    },
+    {
+      "id": "s2-126",
+      "sceneId": "s2",
+      "text": "JULIA. Exactly! He kept it. All this came to my father's knowledge. He couldn't bring suit; he couldn't pay his wife's lover; he couldn't prove that it was his wife's money. That was my mother's revenge because he had made himself master in his own house. At that time he came near shooting himself--it was even rumoured that he had tried and failed. But he took a new lease of life, and my mother had to pay for what she had done. I can tell you that those were five years I'll never forget! My sympathies were with my father, but I took my mother's side because I was not aware of the true circumstances. From her I learned to suspect and hate men--for she hated the whole sex, as you have probably heard--and I promised her on my oath that I would never become a man's slave."
+    },
+    {
+      "id": "s2-127",
+      "sceneId": "s2",
+      "text": "JEAN. And so you became engaged to the County Attorney."
+    },
+    {
+      "id": "s2-128",
+      "sceneId": "s2",
+      "text": "JULIA. Yes, in order that he should be my slave."
+    },
+    {
+      "id": "s2-129",
+      "sceneId": "s2",
+      "text": "JEAN. And he didn't want to?"
+    },
+    {
+      "id": "s2-130",
+      "sceneId": "s2",
+      "text": "JULIA. Oh, he wanted, but I wouldn't let him. I got tired of him."
+    },
+    {
+      "id": "s2-131",
+      "sceneId": "s2",
+      "text": "JEAN. Yes, I saw it--in the stable-yard."
+    },
+    {
+      "id": "s2-132",
+      "sceneId": "s2",
+      "text": "JULIA. What did you see?"
+    },
+    {
+      "id": "s2-133",
+      "sceneId": "s2",
+      "text": "JEAN. Just that--how he broke the engagement."
+    },
+    {
+      "id": "s2-134",
+      "sceneId": "s2",
+      "text": "JULIA. That's a lie! It was I who broke it. Did he say he did it, the scoundrel?"
+    },
+    {
+      "id": "s2-135",
+      "sceneId": "s2",
+      "text": "JEAN. Oh, he was no scoundrel, I guess. So you hate men, Miss Julia?"
+    },
+    {
+      "id": "s2-136",
+      "sceneId": "s2",
+      "text": "JULIA. Yes! Most of the time. But now and then--when the weakness comes over me--oh, what shame!"
+    },
+    {
+      "id": "s2-137",
+      "sceneId": "s2",
+      "text": "JEAN. And you hate me too?"
+    },
+    {
+      "id": "s2-138",
+      "sceneId": "s2",
+      "text": "JULIA. Beyond measure! I should like to kill you like a wild beast--"
+    },
+    {
+      "id": "s2-139",
+      "sceneId": "s2",
+      "text": "JEAN. As you make haste to shoot a mad dog. Is that right?"
+    },
+    {
+      "id": "s2-140",
+      "sceneId": "s2",
+      "text": "JULIA. That's right!"
+    },
+    {
+      "id": "s2-141",
+      "sceneId": "s2",
+      "text": "JEAN. But now there is nothing to shoot with--and there is no dog. What are we to do then?"
+    },
+    {
+      "id": "s2-142",
+      "sceneId": "s2",
+      "text": "JULIA. Go abroad."
+    },
+    {
+      "id": "s2-143",
+      "sceneId": "s2",
+      "text": "JEAN. In order to plague each other to death?"
+    },
+    {
+      "id": "s2-144",
+      "sceneId": "s2",
+      "text": "JULIA. No-in order to enjoy ourselves: a couple of days, a week, as long as enjoyment is possible. And then--die!"
+    },
+    {
+      "id": "s2-145",
+      "sceneId": "s2",
+      "text": "JEAN. Die? How silly! Then I think it's much better to start a hotel."
+    },
+    {
+      "id": "s2-146",
+      "sceneId": "s2",
+      "text": "JULIA. [Without listening to JEAN]--At Lake Como, where the sun is always shining, and the laurels stand green at Christmas, and the oranges are glowing."
+    },
+    {
+      "id": "s2-147",
+      "sceneId": "s2",
+      "text": "JEAN. Lake Como is a rainy hole, and I could see no oranges except in the groceries. But it is a good place for tourists, as it has a lot of villas that can be rented to loving couples, and that's a profitable business--do you know why? Because they take a lease for six months--and then they leave after three weeks."
+    },
+    {
+      "id": "s2-148",
+      "sceneId": "s2",
+      "text": "JULIA. [Naïvely] Why after three weeks?"
+    },
+    {
+      "id": "s2-149",
+      "sceneId": "s2",
+      "text": "JEAN. Because they quarrel, of course. But the rent has to be paid just the same. And then you can rent the house again. And that way it goes on all the time, for there is plenty of love--even if it doesn't last long."
+    },
+    {
+      "id": "s2-150",
+      "sceneId": "s2",
+      "text": "JULIA. You don't want to die with me?"
+    },
+    {
+      "id": "s2-151",
+      "sceneId": "s2",
+      "text": "JEAN. I don't want to die at all. Both because I am fond of living, and because I regard suicide as a crime against the Providence which has bestowed life on us."
+    },
+    {
+      "id": "s2-152",
+      "sceneId": "s2",
+      "text": "JULIA. Do you mean to say that you believe in God?"
+    },
+    {
+      "id": "s2-153",
+      "sceneId": "s2",
+      "text": "JEAN. Of course, I do. And I go to church every other Sunday. Frankly speaking, now I am tired of all this, and now I am going to bed."
+    },
+    {
+      "id": "s2-154",
+      "sceneId": "s2",
+      "text": "JULIA. So! And you think that will be enough for me? Do you know what you owe a woman that you have spoiled?"
+    },
+    {
+      "id": "s2-155",
+      "sceneId": "s2",
+      "text": "JEAN. [Takes out his purse and throws a silver coin on the table] You're welcome! I don't want to be in anybody's debt."
+    },
+    {
+      "id": "s2-156",
+      "sceneId": "s2",
+      "text": "JULIA. [Pretending not to notice the insult] Do you know what the law provides--"
+    },
+    {
+      "id": "s2-157",
+      "sceneId": "s2",
+      "text": "JEAN. Unfortunately the law provides no punishment for a woman who seduces a man."
+    },
+    {
+      "id": "s2-158",
+      "sceneId": "s2",
+      "text": "JULIA. [As before] Can you think of any escape except by our going abroad and getting married, and then getting a divorce?"
+    },
+    {
+      "id": "s2-159",
+      "sceneId": "s2",
+      "text": "JEAN. Suppose I refuse to enter into this *mésaillance*?"
+    },
+    {
+      "id": "s2-160",
+      "sceneId": "s2",
+      "text": "JULIA. *Mésaillance*--"
+    },
+    {
+      "id": "s2-161",
+      "sceneId": "s2",
+      "text": "JEAN. Yes, for me. You see, I have better ancestry than you, for nobody in my family was ever guilty of arson."
+    },
+    {
+      "id": "s2-162",
+      "sceneId": "s2",
+      "text": "JULIA. How do you know?"
+    },
+    {
+      "id": "s2-163",
+      "sceneId": "s2",
+      "text": "JEAN. Well, nothing is known to the contrary, for we keep no Pedigrees--except in the police bureau. But I have read about your pedigree in a book that was lying on the drawing-room table. Do you know who was your first ancestor? A miller who let his wife sleep with the king one night during the war with Denmark. I have no such ancestry. I have none at all, but I can become an ancestor myself."
+    },
+    {
+      "id": "s2-164",
+      "sceneId": "s2",
+      "text": "JULIA. That's what I get for unburdening my heart to one not worthy of it; for sacrificing my family's honour--"
+    },
+    {
+      "id": "s2-165",
+      "sceneId": "s2",
+      "text": "JEAN. Dishonour! Well, what was it I told you? You shouldn't drink, for then you talk. And you must not talk!"
+    },
+    {
+      "id": "s2-166",
+      "sceneId": "s2",
+      "text": "JULIA. Oh, how I regret what I have done! How I regret it! If at least you loved me!"
+    },
+    {
+      "id": "s2-167",
+      "sceneId": "s2",
+      "text": "JEAN. For the last time: what do you mean? Am I to weep? Am I to jump over your whip? Am I to kiss you, and lure you down to Lake Como for three weeks, and so on? What am I to do? What do you expect? This is getting to be rather painful! But that's what comes from getting mixed up with women. Miss Julia! I see that you are unhappy; I know that you are suffering; but I cannot understand you. We never carry on like that. There is never any hatred between us. Love is to us a play, and we play at it when our work leaves us time to do so. But we have not the time to do so all day and all night, as you have. I believe you are sick--I am sure you are sick."
+    },
+    {
+      "id": "s2-168",
+      "sceneId": "s2",
+      "text": "JULIA. You should be good to me--and now you speak like a human being."
+    },
+    {
+      "id": "s2-169",
+      "sceneId": "s2",
+      "text": "JEAN. All right, but be human yourself. You spit on me, and then you won't let me wipe myself--on you!"
+    },
+    {
+      "id": "s2-170",
+      "sceneId": "s2",
+      "text": "JULIA. Help me, help me! Tell me only what I am to do--where I am to turn?"
+    },
+    {
+      "id": "s2-171",
+      "sceneId": "s2",
+      "text": "JEAN. O Lord, if I only knew that myself!"
+    },
+    {
+      "id": "s2-172",
+      "sceneId": "s2",
+      "text": "JULIA. I have been exasperated, I have been mad, but there ought to be some way of saving myself."
+    },
+    {
+      "id": "s2-173",
+      "sceneId": "s2",
+      "text": "JEAN. Stay right here and keep quiet. Nobody knows anything."
+    },
+    {
+      "id": "s2-174",
+      "sceneId": "s2",
+      "text": "JULIA. Impossible! The people know, and Christine knows."
+    },
+    {
+      "id": "s2-175",
+      "sceneId": "s2",
+      "text": "JEAN. They don't know, and they would never believe it possible."
+    },
+    {
+      "id": "s2-176",
+      "sceneId": "s2",
+      "text": "JULIA. [Hesitating] But-it might happen again."
+    },
+    {
+      "id": "s2-177",
+      "sceneId": "s2",
+      "text": "JEAN. That's true."
+    },
+    {
+      "id": "s2-178",
+      "sceneId": "s2",
+      "text": "JULIA. And the results?"
+    },
+    {
+      "id": "s2-179",
+      "sceneId": "s2",
+      "text": "JEAN. [Frightened] The results! Where was my head when I didn't think of that! Well, then there is only one thing to do--you must leave. At once! I can't go with you, for then everything would be lost, so you must go alone--abroad--anywhere!"
+    },
+    {
+      "id": "s2-180",
+      "sceneId": "s2",
+      "text": "JULIA. Alone? Where?--I can't do it."
+    },
+    {
+      "id": "s2-181",
+      "sceneId": "s2",
+      "text": "JEAN. You must! And before the count gets back. If you stay, then you know what will happen. Once on the wrong path, one wants to keep on, as the harm is done anyhow. Then one grows more and more reckless--and at last it all comes out. So you must get away! Then you can write to the count and tell him everything, except that it was me. And he would never guess it. Nor do I think he would be very anxious to find out."
+    },
+    {
+      "id": "s2-182",
+      "sceneId": "s2",
+      "text": "JULIA. I'll go if you come with me."
+    },
+    {
+      "id": "s2-183",
+      "sceneId": "s2",
+      "text": "JEAN. Are you stark mad, woman? Miss Julia to run away with her valet! It would be in the papers in another day, and the count could never survive it."
+    },
+    {
+      "id": "s2-184",
+      "sceneId": "s2",
+      "text": "JULIA. I can't leave! I can't stay! Help me! I am so tired, so fearfully tired. Give me orders! Set me going, for I can no longer think, no longer act—-"
+    },
+    {
+      "id": "s2-185",
+      "sceneId": "s2",
+      "text": "JEAN. Do you see now what good-for-nothings you are! Why do you strut and turn up your noses as if you were the lords of creation? Well, I am going to give you orders. Go up and dress. Get some travelling money, and then come back again."
+    },
+    {
+      "id": "s2-186",
+      "sceneId": "s2",
+      "text": "JULIA: [In an undertone] Come up with me!"
+    },
+    {
+      "id": "s2-187",
+      "sceneId": "s2",
+      "text": "JEAN. To your room? Now you're crazy again! [Hesitates a moment] No, you must go at once! [Takes her by the hand and leads her out.]"
+    },
+    {
+      "id": "s2-188",
+      "sceneId": "s2",
+      "text": "JULIA. [On her way out] Can't you speak kindly to me, Jean?"
+    },
+    {
+      "id": "s2-189",
+      "sceneId": "s2",
+      "text": "JEAN. An order must always sound unkind. Now you can find out how it feels!"
+    },
+    {
+      "id": "s2-190",
+      "sceneId": "s2",
+      "text": "[JULIA goes out.]"
+    },
+    {
+      "id": "s2-191",
+      "sceneId": "s2",
+      "text": "[JEAN, alone, draws a sigh of relief; sits down at the table; takes out a note-book and a pencil; figures aloud from time to time; dumb play until CHRISTINE enters dressed for church; she has a false shirt front and a white tie in one of her hands.]"
+    },
+    {
+      "id": "s2-192",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Goodness gracious, how the place looks! What have you been up to anyhow?"
+    },
+    {
+      "id": "s2-193",
+      "sceneId": "s2",
+      "text": "JEAN. Oh, it was Miss Julia who dragged in the people. Have you been sleeping so hard that you didn't hear anything at all?"
+    },
+    {
+      "id": "s2-194",
+      "sceneId": "s2",
+      "text": "CHRISTINE. I have been sleeping like a log."
+    },
+    {
+      "id": "s2-195",
+      "sceneId": "s2",
+      "text": "JEAN. And dressed for church already?"
+    },
+    {
+      "id": "s2-196",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Yes, didn't you promise to come with me to communion to-day?"
+    },
+    {
+      "id": "s2-197",
+      "sceneId": "s2",
+      "text": "JEAN. Oh, yes, I remember now. And there you've got the finery. Well, come on with it. [Sits down; CHRISTINE helps him to put on the shirt front and the white tie.]"
+    },
+    {
+      "id": "s2-198",
+      "sceneId": "s2",
+      "text": "[Pause.]"
+    },
+    {
+      "id": "s2-199",
+      "sceneId": "s2",
+      "text": "JEAN. [Sleepily] What's the text to-day?"
+    },
+    {
+      "id": "s2-200",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Oh, about John the Baptist beheaded, I guess."
+    },
+    {
+      "id": "s2-201",
+      "sceneId": "s2",
+      "text": "JEAN. That's going to be a long story, I'm sure. My, but you choke me! Oh, I'm so sleepy, so sleepy!"
+    },
+    {
+      "id": "s2-202",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Well, what has been keeping you up all night? Why, man, you're just green in the face!"
+    },
+    {
+      "id": "s2-203",
+      "sceneId": "s2",
+      "text": "JEAN. I have been sitting here talking with Miss Julia."
+    },
+    {
+      "id": "s2-204",
+      "sceneId": "s2",
+      "text": "CHRISTINE. She hasn't an idea of what's proper, that creature!"
+    },
+    {
+      "id": "s2-205",
+      "sceneId": "s2",
+      "text": "[Pause.]"
+    },
+    {
+      "id": "s2-206",
+      "sceneId": "s2",
+      "text": "JEAN. Say, Christine."
+    },
+    {
+      "id": "s2-207",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Well?"
+    },
+    {
+      "id": "s2-208",
+      "sceneId": "s2",
+      "text": "JEAN. Isn't it funny anyhow, when you come to think of it? Her!"
+    },
+    {
+      "id": "s2-209",
+      "sceneId": "s2",
+      "text": "CHRISTINE. What is it that's funny?"
+    },
+    {
+      "id": "s2-210",
+      "sceneId": "s2",
+      "text": "JEAN. Everything!"
+    },
+    {
+      "id": "s2-211",
+      "sceneId": "s2",
+      "text": "[Pause.]"
+    },
+    {
+      "id": "s2-212",
+      "sceneId": "s2",
+      "text": "CHRISTINE. [Seeing the glasses on the table that are only half-emptied] So you've been drinking together also?"
+    },
+    {
+      "id": "s2-213",
+      "sceneId": "s2",
+      "text": "JEAN. Yes."
+    },
+    {
+      "id": "s2-214",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Shame on you! Look me in the eye!"
+    },
+    {
+      "id": "s2-215",
+      "sceneId": "s2",
+      "text": "JEAN. Yes."
+    },
+    {
+      "id": "s2-216",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Is it possible? Is it possible?"
+    },
+    {
+      "id": "s2-217",
+      "sceneId": "s2",
+      "text": "JEAN. [After a moment's thought] Yes, it is!"
+    },
+    {
+      "id": "s2-218",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Ugh! That's worse than I could ever have believed. It's awful!"
+    },
+    {
+      "id": "s2-219",
+      "sceneId": "s2",
+      "text": "JEAN. You are not jealous of her, are you?"
+    },
+    {
+      "id": "s2-220",
+      "sceneId": "s2",
+      "text": "CHRISTINE. No, not of her. Had it been Clara or Sophie, then I'd have scratched your eyes out. Yes, that's the way I feel about it, and I can't tell why. Oh my, but that was nasty!"
+    },
+    {
+      "id": "s2-221",
+      "sceneId": "s2",
+      "text": "JEAN. Are you mad at her then?"
+    },
+    {
+      "id": "s2-222",
+      "sceneId": "s2",
+      "text": "CHRISTINE. No, but at you! It was wrong of you, very wrong! Poor girl! No, I tell you, I don't want to stay in this house any longer, with people for whom it is impossible to have any respect."
+    },
+    {
+      "id": "s2-223",
+      "sceneId": "s2",
+      "text": "JEAN. Why should you have any respect for them?"
+    },
+    {
+      "id": "s2-224",
+      "sceneId": "s2",
+      "text": "CHRISTINE. And you who are such a smarty can't tell that! You wouldn't serve people who don't act decently, would you? It's to lower oneself, I think."
+    },
+    {
+      "id": "s2-225",
+      "sceneId": "s2",
+      "text": "JEAN. Yes, but it ought to be a consolation to us that they are not a bit better than we."
+    },
+    {
+      "id": "s2-226",
+      "sceneId": "s2",
+      "text": "CHRISTINE. No, I don't think so. For if they're no better, then it's no use trying to get up to them. And just think of the count! Think of him who has had so much sorrow in his day! No, I don't want to stay any longer in this house--And with a fellow like you, too. If it had been the county attorney--if it had only been some one of her own sort--"
+    },
+    {
+      "id": "s2-227",
+      "sceneId": "s2",
+      "text": "JEAN. Now look here!"
+    },
+    {
+      "id": "s2-228",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Yes, yes! You're all right in your way, but there's after all some difference between one kind of people and another—- No, but this is something I'll never get over!--And the young lady who was so proud, and so tart to the men, that you couldn't believe she would ever let one come near her--and such a one at that! And she who wanted to have poor Diana shot because she had been running around with the gate-keeper's pug!--Well, I declare!--But I won't stay here any longer, and next October I get out of here."
+    },
+    {
+      "id": "s2-229",
+      "sceneId": "s2",
+      "text": "JEAN. And then?"
+    },
+    {
+      "id": "s2-230",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Well, as we've come to talk of that now, perhaps it would be just as well if you looked for something, seeing that we're going to get married after all."
+    },
+    {
+      "id": "s2-231",
+      "sceneId": "s2",
+      "text": "JEAN. Well, what could I look for? As a married man I couldn't get a place like this."
+    },
+    {
+      "id": "s2-232",
+      "sceneId": "s2",
+      "text": "CHRISTINE. No, I understand that. But you could get a job as a janitor, or maybe as a messenger in some government bureau. Of course, the public loaf is always short in weight, but it comes steady, and then there is a pension for the widow and the children--"
+    },
+    {
+      "id": "s2-233",
+      "sceneId": "s2",
+      "text": "JEAN. [Making a face] That's good and well, but it isn't my style to think of dying all at once for the sake of wife and children. I must say that my plans have been looking toward something better than that kind of thing."
+    },
+    {
+      "id": "s2-234",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Your plans, yes--but you've got obligations also, and those you had better keep in mind!"
+    },
+    {
+      "id": "s2-235",
+      "sceneId": "s2",
+      "text": "JEAN. Now don't you get my dander up by talking of obligations! I know what I've got to do anyhow. [Listening for some sound on the outside] However, we've plenty of time to think of all this. Go in now and get ready, and then we'll go to church."
+    },
+    {
+      "id": "s2-236",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Who is walking around up there?"
+    },
+    {
+      "id": "s2-237",
+      "sceneId": "s2",
+      "text": "JEAN. I don't know, unless it be Clara."
+    },
+    {
+      "id": "s2-238",
+      "sceneId": "s2",
+      "text": "CHRISTINE. [Going out] It can't be the count, do you think, who's come home without anybody hearing him?"
+    },
+    {
+      "id": "s2-239",
+      "sceneId": "s2",
+      "text": "JEAN. [Scared] The count? No, that isn't possible, for then he would have rung for me."
+    },
+    {
+      "id": "s2-240",
+      "sceneId": "s2",
+      "text": "CHRISTINE. [As she goes out] Well, God help us all! Never have I seen the like of it!"
+    },
+    {
+      "id": "s2-241",
+      "sceneId": "s2",
+      "text": "[The sun has risen and is shining on the tree tops in the park. The light changes gradually until it comes slantingly in through the windows. JEAN goes to the door and gives a signal.]"
+    },
+    {
+      "id": "s2-242",
+      "sceneId": "s2",
+      "text": "JULIA. [Enters in travelling dress and carrying a small birdcage covered up with a towel; this she places on a chair] Now I am ready."
+    },
+    {
+      "id": "s2-243",
+      "sceneId": "s2",
+      "text": "JEAN. Hush! Christine is awake."
+    },
+    {
+      "id": "s2-244",
+      "sceneId": "s2",
+      "text": "JULIA. [Showing extreme nervousness during the following scene] Did she suspect anything?"
+    },
+    {
+      "id": "s2-245",
+      "sceneId": "s2",
+      "text": "JEAN. She knows nothing at all. But, my heavens, how you look!"
+    },
+    {
+      "id": "s2-246",
+      "sceneId": "s2",
+      "text": "JULIA. How do I look?"
+    },
+    {
+      "id": "s2-247",
+      "sceneId": "s2",
+      "text": "JEAN. You're as pale as a corpse, and--pardon me, but your face is dirty."
+    },
+    {
+      "id": "s2-248",
+      "sceneId": "s2",
+      "text": "JULIA. Let me wash it then--Now! [She goes over to the washstand and washes her face and hands] Give me a towel--Oh!--That's the sun rising!"
+    },
+    {
+      "id": "s2-249",
+      "sceneId": "s2",
+      "text": "JEAN. And then the ogre bursts."
+    },
+    {
+      "id": "s2-250",
+      "sceneId": "s2",
+      "text": "JULIA. Yes, ogres and trolls were abroad last night!—But listen, Jean. Come with me, for now I have the money."
+    },
+    {
+      "id": "s2-251",
+      "sceneId": "s2",
+      "text": "JEAN. [Doubtfully] Enough?"
+    },
+    {
+      "id": "s2-252",
+      "sceneId": "s2",
+      "text": "JULIA. Enough to start with. Come with me, for I cannot travel alone to-day. Think of it--Midsummer Day, on a stuffy train, jammed with people who stare at you--and standing still at stations when you want to fly. No, I cannot! I cannot! And then the memories will come: childhood memories of Midsummer Days, when the inside of the church was turned into a green forest--birches and lilacs; the dinner at the festive table with relatives and friends; the afternoon in the park, with dancing and music, flowers and games! Oh, you may run and run, but your memories are in the baggage-car, and with them remorse and repentance!"
+    },
+    {
+      "id": "s2-253",
+      "sceneId": "s2",
+      "text": "JEAN. I'll go with you-but at once, before it's too late. This very moment!"
+    },
+    {
+      "id": "s2-254",
+      "sceneId": "s2",
+      "text": "JULIA. Well, get dressed then. [Picks up the cage.]"
+    },
+    {
+      "id": "s2-255",
+      "sceneId": "s2",
+      "text": "JEAN. But no baggage! That would only give us away."
+    },
+    {
+      "id": "s2-256",
+      "sceneId": "s2",
+      "text": "JULIA. No, nothing at all! Only what we can take with us in the car."
+    },
+    {
+      "id": "s2-257",
+      "sceneId": "s2",
+      "text": "JEAN. [Has taken down his hat] What have you got there? What is it?"
+    },
+    {
+      "id": "s2-258",
+      "sceneId": "s2",
+      "text": "JULIA. It's only my finch. I can't leave it behind."
+    },
+    {
+      "id": "s2-259",
+      "sceneId": "s2",
+      "text": "JEAN. Did you ever! Dragging a bird-cage along with us! You must be raving mad! Drop the cage!"
+    },
+    {
+      "id": "s2-260",
+      "sceneId": "s2",
+      "text": "JULIA. The only thing I take with me from my home! The only living creature that loves me since Diana deserted me! Don't be cruel! Let me take it along!"
+    },
+    {
+      "id": "s2-261",
+      "sceneId": "s2",
+      "text": "JEAN. Drop the cage, I tell you! And don't talk so loud--Christine can hear us."
+    },
+    {
+      "id": "s2-262",
+      "sceneId": "s2",
+      "text": "JULIA. No, I won't let it fall into strange hands. I'd rather have you kill it!"
+    },
+    {
+      "id": "s2-263",
+      "sceneId": "s2",
+      "text": "JEAN. Well, give it to me, and I'll wring its neck."
+    },
+    {
+      "id": "s2-264",
+      "sceneId": "s2",
+      "text": "JULIA. Yes, but don't hurt it. Don't--no, I cannot!"
+    },
+    {
+      "id": "s2-265",
+      "sceneId": "s2",
+      "text": "JEAN. Let me--I can!"
+    },
+    {
+      "id": "s2-266",
+      "sceneId": "s2",
+      "text": "JULIA. [Takes the bird out of the cage and kisses it] Oh, my little birdie, must it die and go away from its mistress!"
+    },
+    {
+      "id": "s2-267",
+      "sceneId": "s2",
+      "text": "JEAN. Don't make a scene, please. Don't you know it's a question of your life, of your future? Come, quick! [Snatches the bird away from her, carries it to the chopping block and picks up an axe. MISS JULIA turns away.]"
+    },
+    {
+      "id": "s2-268",
+      "sceneId": "s2",
+      "text": "JEAN. You should have learned how to kill chickens instead of shooting with a revolver--[brings down the axe]--then you wouldn't have fainted for a drop of blood."
+    },
+    {
+      "id": "s2-269",
+      "sceneId": "s2",
+      "text": "JULIA. [Screaming] Kill me too! Kill me! You who can take the life of an innocent creature without turning a hair! Oh, I hate and despise you! There is blood between us! Cursed be the hour when I first met you! Cursed be the hour when I came to life in my mother's womb!"
+    },
+    {
+      "id": "s2-270",
+      "sceneId": "s2",
+      "text": "JEAN. Well, what's the use of all that cursing? Come on!"
+    },
+    {
+      "id": "s2-271",
+      "sceneId": "s2",
+      "text": "JULIA. [Approaching the chopping-block as if drawn to it against her will] No, I don't want to go yet. I cannot—-I must see--Hush! There's a carriage coming up the road. [Listening without taking her eyes of the block and the axe] You think I cannot stand the sight of blood. You think I am as weak as that--oh, I should like to see your blood, your brains, on that block there. I should like to see your whole sex swimming in blood like that thing there. I think I could drink out of your skull, and bathe my feet in your open breast, and eat your heart from the spit!--You think I am weak; you think I love you because the fruit of my womb was yearning for your seed; you think I want to carry your offspring under my heart and nourish it with my blood--bear your children and take your name! Tell me, you, what are you called anyhow? I have never heard your family name—-and maybe you haven't any. I should become Mrs. \"Hovel,\" or Mrs. \"Backyard\"--you dog there, that's wearing my collar; you lackey with my coat of arms on your buttons-- and I should share with my cook, and be the rival of my own servant. Oh! Oh! Oh!--You think I am a coward and want to run away! No, now I'll stay--and let the lightning strike! My father will come home--will find his chiffonier opened--the money gone! Then he'll ring--twice for the valet--and then he'll send for the sheriff--and then I shall tell everything! Everything! Oh, but it will be good to get an end to it--if it only be the end! And then his heart will break, and he dies!--So there will be an end to all of us--and all will be quiet—peace--eternal rest!--And then the coat of arms will be shattered on the coffin--and the count's line will be wiped out--but the lackey's line goes on in the orphan asylum--wins laurels in the gutter, and ends in jail."
+    },
+    {
+      "id": "s2-272",
+      "sceneId": "s2",
+      "text": "JEAN. There spoke the royal blood! Bravo, Miss Julia! Now you put the miller back in his sack!"
+    },
+    {
+      "id": "s2-273",
+      "sceneId": "s2",
+      "text": "[CHRISTINE enters dressed for church and carrying n hymn-book in her hand.]"
+    },
+    {
+      "id": "s2-274",
+      "sceneId": "s2",
+      "text": "JULIA. [Hurries up to her and throws herself into her arms ax if seeking protection] Help me, Christine! Help me against this man!"
+    },
+    {
+      "id": "s2-275",
+      "sceneId": "s2",
+      "text": "CHRISTINE. [Unmoved and cold] What kind of performance is this on the Sabbath morning? [Catches sight of the chopping-block] My, what a mess you have made!--What's the meaning of all this? And the way you shout and carry on!"
+    },
+    {
+      "id": "s2-276",
+      "sceneId": "s2",
+      "text": "JULIA. You are a woman, Christine, and you are my friend. Beware of that scoundrel!"
+    },
+    {
+      "id": "s2-277",
+      "sceneId": "s2",
+      "text": "JEAN. [A little shy and embarrassed] While the ladies are discussing I'll get myself a shave. [Slinks out to the right.]"
+    },
+    {
+      "id": "s2-278",
+      "sceneId": "s2",
+      "text": "JULIA. You must understand me, and you must listen to me."
+    },
+    {
+      "id": "s2-279",
+      "sceneId": "s2",
+      "text": "CHRISTINE. No, really, I don't understand this kind of trolloping. Where are you going in your travelling-dress--and he with his hat on--what?--What?"
+    },
+    {
+      "id": "s2-280",
+      "sceneId": "s2",
+      "text": "JULIA. Listen, Christine, listen, and I'll tell you everything--"
+    },
+    {
+      "id": "s2-281",
+      "sceneId": "s2",
+      "text": "CHRISTINE. I don't want to know anything--"
+    },
+    {
+      "id": "s2-282",
+      "sceneId": "s2",
+      "text": "JULIA. You must listen to me--"
+    },
+    {
+      "id": "s2-283",
+      "sceneId": "s2",
+      "text": "CHRISTINE. What is it about? Is it about this nonsense with Jean? Well, I don't care about it at all, for it's none of my business. But if you're planning to get him away with you, we'll put a stop to that!"
+    },
+    {
+      "id": "s2-284",
+      "sceneId": "s2",
+      "text": "JULIA. [Extremely nervous] Please try to be quiet, Christine, and listen to me. I cannot stay here, and Jean cannot stay here--and so we must leave—-"
+    },
+    {
+      "id": "s2-285",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Hm, hm!"
+    },
+    {
+      "id": "s2-286",
+      "sceneId": "s2",
+      "text": "JULIA. [Brightening. up] But now I have got an idea, you know. Suppose all three of us should leave--go abroad--go to Switzerland and start a hotel together--I have money, you know--and Jean and I could run the whole thing--and you, I thought, could take charge of the kitchen--Wouldn't that be fine!--Say yes, now! And come along with us! Then everything is fixed!--Oh, say yes!"
+    },
+    {
+      "id": "s2-287",
+      "sceneId": "s2",
+      "text": "[She puts her arms around CHRISTINE and pats her.]"
+    },
+    {
+      "id": "s2-288",
+      "sceneId": "s2",
+      "text": "CHRISTINE. [Coldly and thoughtfully] Hm, hm!"
+    },
+    {
+      "id": "s2-289",
+      "sceneId": "s2",
+      "text": "JULIA. [Presto tempo] You have never travelled, Christine--you must get out and have a look at the world. You cannot imagine what fun it is to travel on a train--constantly new people--new countries—- and then we get to Hamburg and take in the Zoological Gardens in passing--that's what you like--and then we go to the theatres and to the opera--and when we get to Munich, there, you know, we have a lot of museums, where they keep Rubens and Raphael and all those big painters, you know--Haven't you heard of Munich, where King Louis used to live--the king, you know, that went mad--And then we'll have a look at his castle--he has still some castles that are furnished just as in a fairy tale--and from there it isn't very far to Switzerland--and the Alps, you know--just think of the Alps, with snow on top of them in the middle of the summer--and there you have orange trees and laurels that are green all the year around--"
+    },
+    {
+      "id": "s2-290",
+      "sceneId": "s2",
+      "text": "[JEAN is seen in the right wing, sharpening his razor on a strop which he holds between his teeth and his left hand; he listens to the talk with a pleased mien and nods approval now and then.]"
+    },
+    {
+      "id": "s2-291",
+      "sceneId": "s2",
+      "text": "JULIA. [Tempo prestissimo] And then we get a hotel--and I sit in the office, while Jean is outside receiving tourists--and goes out marketing--and writes letters--That's a life for you--Then the train whistles, and the 'bus drives up, and it rings upstairs, and it rings in the restaurant--and then I make out the bills--and I am going to salt them, too--You can never imagine how timid tourists are when they come to pay their bills! And you--you will sit like a queen in the kitchen. Of course, you are not going to stand at the stove yourself. And you'll have to dress neatly and nicely in order to show yourself to people--and with your looks--yes, I am not flattering you--you'll catch a husband some fine day--some rich Englishman, you know-—for those fellows are so easy [slowing down] to catch--and then we grow rich--and we build us a villa at Lake Como--of course, it is raining a little in that place now and then—- but [limply] the sun must be shining sometimes--although it looks dark--and--then--or else we can go home again--and come back--here—- or some other place--"
+    },
+    {
+      "id": "s2-292",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Tell me, Miss Julia, do you believe in all that yourself?"
+    },
+    {
+      "id": "s2-293",
+      "sceneId": "s2",
+      "text": "JULIA. [Crushed] Do I believe in it myself?"
+    },
+    {
+      "id": "s2-294",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Yes."
+    },
+    {
+      "id": "s2-295",
+      "sceneId": "s2",
+      "text": "JULIA. [Exhausted] I don't know: I believe no longer in anything. [She sinks down on the bench and drops her head between her arms on the table] Nothing! Nothing at all!"
+    },
+    {
+      "id": "s2-296",
+      "sceneId": "s2",
+      "text": "CHRISTINE. [Turns to the right, where JEAN is standing] So you were going to run away!"
+    },
+    {
+      "id": "s2-297",
+      "sceneId": "s2",
+      "text": "JEAN. [Abashed, puts the razor on the table] Run away? Well, that's putting it rather strong. You have heard what the young lady proposes, and though she is tired out now by being up all night, it's a proposition that can be put through all right."
+    },
+    {
+      "id": "s2-298",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Now you tell me: did you mean me to act as cook for that one there--?"
+    },
+    {
+      "id": "s2-299",
+      "sceneId": "s2",
+      "text": "JEAN. [Sharply] Will you please use decent language in speaking to your mistress! Do you understand?"
+    },
+    {
+      "id": "s2-300",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Mistress!"
+    },
+    {
+      "id": "s2-301",
+      "sceneId": "s2",
+      "text": "JEAN. Yes!"
+    },
+    {
+      "id": "s2-302",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Well, well! Listen to him!"
+    },
+    {
+      "id": "s2-303",
+      "sceneId": "s2",
+      "text": "JEAN. Yes, it would be better for you to listen a little more and talk a little less. Miss Julia is your mistress, and what makes you disrespectful to her now should snake you feel the same way about yourself."
+    },
+    {
+      "id": "s2-304",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Oh, I have always had enough respect for myself--"
+    },
+    {
+      "id": "s2-305",
+      "sceneId": "s2",
+      "text": "JEAN. To have none for others!"
+    },
+    {
+      "id": "s2-306",
+      "sceneId": "s2",
+      "text": "CHRISTINE. --not to go below my own station. You can't say that the count's cook has had anything to do with the groom or the swineherd. You can't say anything of the kind!"
+    },
+    {
+      "id": "s2-307",
+      "sceneId": "s2",
+      "text": "JEAN. Yes, it's your luck that you have had to do with a gentleman."
+    },
+    {
+      "id": "s2-308",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Yes, a gentleman who sells the oats out of the count's stable!"
+    },
+    {
+      "id": "s2-309",
+      "sceneId": "s2",
+      "text": "JEAN. What's that to you who get a commission on the groceries and bribes from the butcher?"
+    },
+    {
+      "id": "s2-310",
+      "sceneId": "s2",
+      "text": "CHRISTINE. What's that?"
+    },
+    {
+      "id": "s2-311",
+      "sceneId": "s2",
+      "text": "JEAN. And so you can't respect your master and mistress any longer! You--you!"
+    },
+    {
+      "id": "s2-312",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Are you coming with me to church? I think you need a good sermon on top of such a deed."
+    },
+    {
+      "id": "s2-313",
+      "sceneId": "s2",
+      "text": "JEAN. No, I am not going to church to-day. You can go by yourself and confess your own deeds."
+    },
+    {
+      "id": "s2-314",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Yes, I'll do that, and I'll bring back enough forgiveness to cover you also. The Saviour suffered and died on the cross for all our sins, and if we go to him with a believing heart and a repentant mind, he'll take all our guilt on himself."
+    },
+    {
+      "id": "s2-315",
+      "sceneId": "s2",
+      "text": "JULIA. Do you believe that, Christine?"
+    },
+    {
+      "id": "s2-316",
+      "sceneId": "s2",
+      "text": "CHRISTINE. It is my living belief, as sure as I stand here, and the faith of my childhood which I have kept since I was young, Miss Julia. And where sin abounds, grace abounds too."
+    },
+    {
+      "id": "s2-317",
+      "sceneId": "s2",
+      "text": "JULIA. Oh, if I had your faith! Oh, if—-"
+    },
+    {
+      "id": "s2-318",
+      "sceneId": "s2",
+      "text": "CHRISTINE. Yes, but you don't get it without the special grace of God, and that is not bestowed on everybody--"
+    },
+    {
+      "id": "s2-319",
+      "sceneId": "s2",
+      "text": "JULIA. On whom is it bestowed then?"
+    },
+    {
+      "id": "s2-320",
+      "sceneId": "s2",
+      "text": "CHRISTINE. That's just the great secret of the work of grace, Miss Julia, and the Lord has no regard for persons, but there those that are last shall be the foremost--"
+    },
+    {
+      "id": "s2-321",
+      "sceneId": "s2",
+      "text": "JULIA. Yes, but that means he has regard for those that are last."
+    },
+    {
+      "id": "s2-322",
+      "sceneId": "s2",
+      "text": "CHRISTINE. [Going right on] --and it is easier for a camel to go through a needle's eye than for a rich man to get into heaven. That's the way it is, Miss Julia. Now I am going, however-—alone—- and as I pass by, I'll tell the stableman not to let out the horses if anybody should like to get away before the count comes home. Good-bye! [Goes out.]"
+    },
+    {
+      "id": "s2-323",
+      "sceneId": "s2",
+      "text": "JEAN. Well, ain't she a devil!--And all this for the sake of a finch!"
+    },
+    {
+      "id": "s2-324",
+      "sceneId": "s2",
+      "text": "JULIA. [Apathetically] Never mind the finch!--Can you see any way out of this, any way to end it?"
+    },
+    {
+      "id": "s2-325",
+      "sceneId": "s2",
+      "text": "JEAN. [Ponders] No!"
+    },
+    {
+      "id": "s2-326",
+      "sceneId": "s2",
+      "text": "JULIA. What would you do in my place?"
+    },
+    {
+      "id": "s2-327",
+      "sceneId": "s2",
+      "text": "JEAN. In your place? Let me see. As one of gentle birth, as a woman, as one who has--fallen. I don't know--yes, I do know!"
+    },
+    {
+      "id": "s2-328",
+      "sceneId": "s2",
+      "text": "JULIA. [Picking up the razor with a significant gesture] Like this?"
+    },
+    {
+      "id": "s2-329",
+      "sceneId": "s2",
+      "text": "JEAN. Yes!--But please observe that I myself wouldn't do it, for there is a difference between us."
+    },
+    {
+      "id": "s2-330",
+      "sceneId": "s2",
+      "text": "JULIA. Because you are a man and I a woman? What is the difference?"
+    },
+    {
+      "id": "s2-331",
+      "sceneId": "s2",
+      "text": "JEAN. It is the same--as--that between man and woman."
+    },
+    {
+      "id": "s2-332",
+      "sceneId": "s2",
+      "text": "JULIA. [With the razor in her hand] I want to, but I cannot!--My father couldn't either, that time he should have done it."
+    },
+    {
+      "id": "s2-333",
+      "sceneId": "s2",
+      "text": "JEAN. No, he should not have done it, for he had to get his revenge first."
+    },
+    {
+      "id": "s2-334",
+      "sceneId": "s2",
+      "text": "JULIA. And now it is my mother's turn to revenge herself again, through me."
+    },
+    {
+      "id": "s2-335",
+      "sceneId": "s2",
+      "text": "JEAN. Have you not loved your father, Miss Julia?"
+    },
+    {
+      "id": "s2-336",
+      "sceneId": "s2",
+      "text": "JULIA. Yes, immensely, but I must have hated him, too. I think I must have been doing so without being aware of it. But he was the one who reared me in contempt for my own sex--half woman and half man! Whose fault is it, this that has happened? My father's--my mother's--my own? My own? Why, I have nothing that is my own. I haven't a thought that didn't come from my father; not a passion that didn't come from my mother; and now this last--this about all human creatures being equal--I got that from him, my fiancé--whom I call a scoundrel for that reason! How can it be my own fault? To put the blame on Jesus, as Christine does--no, I am too proud for that, and know too much--thanks to my father's teachings--And that about a rich person not getting into heaven, it's just a lie, and Christine, who has money in the savings-bank, wouldn't get in anyhow. Whose is the fault?--What does it matter whose it is? For just the same I am the one who must bear the guilt and the results--"
+    },
+    {
+      "id": "s2-337",
+      "sceneId": "s2",
+      "text": "JEAN. Yes, but--"
+    },
+    {
+      "id": "s2-338",
+      "sceneId": "s2",
+      "text": "[Two sharp strokes are rung on the bell. MISS JULIA leaps to her feet. JEAN changes his coat.]"
+    },
+    {
+      "id": "s2-339",
+      "sceneId": "s2",
+      "text": "JEAN. The count is back. Think if Christine-- [Goes to the speaking-tube, knocks on it, and listens.]"
+    },
+    {
+      "id": "s2-340",
+      "sceneId": "s2",
+      "text": "JULIA. Now he has been to the chiffonier!"
+    },
+    {
+      "id": "s2-341",
+      "sceneId": "s2",
+      "text": "JEAN. It is Jean, your lordship! [Listening again, the spectators being unable to hear what the count says] Yes, your lordship! [Listening] Yes, your lordship! At once! [Listening] In a minute, your lordship! [Listening] Yes, yes! In half an hour!"
+    },
+    {
+      "id": "s2-342",
+      "sceneId": "s2",
+      "text": "JULIA. [With intense concern] What did he say? Lord Jesus, what did he say?"
+    },
+    {
+      "id": "s2-343",
+      "sceneId": "s2",
+      "text": "JEAN. He called for his boots and wanted his coffee in half an hour."
+    },
+    {
+      "id": "s2-344",
+      "sceneId": "s2",
+      "text": "JULIA. In half an hour then! Oh, I am so tired. I can't do anything; can't repent, can't run away, can't stay, can't live—- can't die! Help me now! Command me, and I'll obey you like a dog! Do me this last favour--save my honour, and save his name! You know what my will ought to do, and what it cannot do--now give me your will, and make me do it!"
+    },
+    {
+      "id": "s2-345",
+      "sceneId": "s2",
+      "text": "JEAN. I don't know why--but now I can't either--I don't understand—- It is just as if this coat here made a--I cannot command you--and now, since I've heard the count's voice--now--I can't quite explain it-—but--Oh, that damned menial is back in my spine again. I believe if the count should come down here, and if he should tell me to cut my own throat--I'd do it on the spot!"
+    },
+    {
+      "id": "s2-346",
+      "sceneId": "s2",
+      "text": "JULIA. Make believe that you are he, and that I am you! You did some fine acting when you were on your knees before me--then you were the nobleman--or--have you ever been to a show and seen one who could hypnotize people?"
+    },
+    {
+      "id": "s2-347",
+      "sceneId": "s2",
+      "text": "[JEAN makes a sign of assent.]"
+    },
+    {
+      "id": "s2-348",
+      "sceneId": "s2",
+      "text": "JULIA. He says to his subject: get the broom. And the man gets it. He says: sweep. And the man sweeps."
+    },
+    {
+      "id": "s2-349",
+      "sceneId": "s2",
+      "text": "JEAN. But then the other person must be asleep."
+    },
+    {
+      "id": "s2-350",
+      "sceneId": "s2",
+      "text": "JULIA. [Ecstatically] I am asleep already--there is nothing in the whole room but a lot of smoke--and you look like a stove--that looks like a man in black clothes and a high hat--and your eyes glow like coals when the fire is going out--and your face is a lump of white ashes. [The sunlight has reached the floor and is now falling on JEAN] How warm and nice it is! [She rubs her hands as if warming them before a fire.] And so light--and so peaceful!"
+    },
+    {
+      "id": "s2-351",
+      "sceneId": "s2",
+      "text": "JEAN. [Takes the razor and puts it in her hand] There's the broom! Go now, while it is light--to the barn--and-- [Whispers something in her ear.]"
+    },
+    {
+      "id": "s2-352",
+      "sceneId": "s2",
+      "text": "JULIA. [Awake] Thank you! Now I shall have rest! But tell me first—- that the foremost also receive the gift of grace. Say it, even if you don't believe it."
+    },
+    {
+      "id": "s2-353",
+      "sceneId": "s2",
+      "text": "JEAN. The foremost? No, I can't do that!--But wait--Miss Julia--I know! You are no longer among the foremost--now when you are among the--last!"
+    },
+    {
+      "id": "s2-354",
+      "sceneId": "s2",
+      "text": "JULIA. That's right. I am among the last of all: I am the very last. Oh!--But now I cannot go--Tell me once more that I must go!"
+    },
+    {
+      "id": "s2-355",
+      "sceneId": "s2",
+      "text": "JEAN. No, now I can't do it either. I cannot!"
+    },
+    {
+      "id": "s2-356",
+      "sceneId": "s2",
+      "text": "JULIA. And those that are foremost shall be the last."
+    },
+    {
+      "id": "s2-357",
+      "sceneId": "s2",
+      "text": "JEAN. Don't think, don't think! Why, you are taking away my strength, too, so that I become a coward--What? I thought I saw the bell moving!--To be that scared of a bell! Yes, but it isn't only the bell--there is somebody behind it--a hand that makes it move—- and something else that makes the hand move-but if you cover up your ears--just cover up your ears! Then it rings worse than ever! Rings and rings, until you answer it--and then it's too late--then comes the sheriff--and then--"
+    },
+    {
+      "id": "s2-358",
+      "sceneId": "s2",
+      "text": "[Two quick rings from the bell.]"
+    },
+    {
+      "id": "s2-359",
+      "sceneId": "s2",
+      "text": "JEAN. [Shrinks together; then he straightens himself up] It's horrid! But there's no other end to it!--Go!"
+    },
+    {
+      "id": "s2-360",
+      "sceneId": "s2",
+      "text": "[JULIA goes firmly out through the door.]"
+    },
+    {
+      "id": "s2-361",
+      "sceneId": "s2",
+      "text": "(Curtain.)"
+    }
+  ]
+}

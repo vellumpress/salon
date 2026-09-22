@@ -379,7 +379,7 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   assert.match(home, /useShelfSearch\("local"\)/);
   assert.doesNotMatch(home, /useShelfSearch\("fullPdf"\)/);
 
-  assert.equal(LOCAL_WORKS.length, 1050);
+  assert.equal(LOCAL_WORKS.length, 1066);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 

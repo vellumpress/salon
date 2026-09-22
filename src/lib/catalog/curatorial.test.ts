@@ -338,6 +338,22 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "tales-of-old-japan",
     "chinese-literature",
     "the-prose-tales",
+    "self-determining-haiti",
+    "leon-roch-vol-2",
+    "miss-julia",
+    "in-midsummer-days",
+    "the-chinese-fairy-book",
+    "japanese-fairy-world",
+    "japanese-literature",
+    "romances-of-old-japan",
+    "warriors-of-old-japan",
+    "a-history-of-chinese-literature",
+    "the-civilization-of-china",
+    "kimiko",
+    "glimpses-of-unfamiliar-japan",
+    "hebrew-literature",
+    "the-history-of-yiddish-literature",
+    "korean-folk-tales",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1844,6 +1860,82 @@ test("BATCH-15 CLEAR inventory binds are local Next / before-sleep sits, never F
   const inferno = SHELF.find((item) => item.id === "the-inferno");
   assert.equal(inferno?.author.startsWith("August Strindberg"), true);
   assert.equal(inferno?.gutenberg, 44108);
+});
+
+
+test("BATCH-16 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
+  const expect = {
+    "self-determining-haiti": { opening: "To know the reasons for the present political situation in Haiti, to understand why the United State", breaths: 22, scenes: 1, gutenberg: 35025 },
+    "leon-roch-vol-2": { opening: "The crisis through which the house of Telleria was passing remained unsolved. In fact the catastroph", breaths: 1624, scenes: 25, gutenberg: 49272 },
+    "miss-julia": { opening: "(A large kitchen: the ceiling and the side walls are hidden by draperies and hangings. The rear wall", breaths: 613, scenes: 3, gutenberg: 14347 },
+    "in-midsummer-days": { opening: "In Midsummer days when in the countries of the North the earth is a bride, when the ground is full o", breaths: 78, scenes: 1, gutenberg: 6694 },
+    "the-chinese-fairy-book": { opening: "Once upon a time there were two brothers, who lived in the same house. And the big brother listened ", breaths: 19, scenes: 1, gutenberg: 29939 },
+    "japanese-fairy-world": { opening: "One of the greatest days in the calendar of old Japan was the seventh of July; or, as the Japanese p", breaths: 8, scenes: 1, gutenberg: 29337 },
+    "japanese-literature": { opening: "In the reign of a certain Emperor, whose name is unknown to us, there was, among the Niogo[76] and K", breaths: 104, scenes: 1, gutenberg: 19264 },
+    "romances-of-old-japan": { opening: "His old widowed mother would not die happy unless he were rehabilitated, and to this end he knew tha", breaths: 327, scenes: 1, gutenberg: 45933 },
+    "warriors-of-old-japan": { opening: "Long, long ago there lived in Japan a man named Hachiro Tametomo, who became famous as the most skil", breaths: 58, scenes: 1, gutenberg: 41437 },
+    "a-history-of-chinese-literature": { opening: "The date of the beginning of all things has been nicely calculated by Chinese chronologers. There wa", breaths: 9, scenes: 1, gutenberg: 43711 },
+    "the-civilization-of-china": { opening: "It is a very common thing now-a-days to meet people who are going to \"China,\" which can be reached b", breaths: 35, scenes: 1, gutenberg: 2076 },
+    "kimiko": { opening: "The name is on a paper-lantern at the entrance of a house in the Street of the Geisha.", breaths: 33, scenes: 5, gutenberg: 41579 },
+    "glimpses-of-unfamiliar-japan": { opening: "'Do not fail to write down your first impressions as soon as possible,' said a kind English professo", breaths: 93, scenes: 1, gutenberg: 8130 },
+    "hebrew-literature": { opening: "1. “From what time do we recite the Shemah(8) in the evening?” “From the hour the priests(9) enter (", breaths: 56, scenes: 1, gutenberg: 28369 },
+    "the-history-of-yiddish-literature": { opening: "The literatures of the early Middle Ages were bilingual. The Catholic religion had brought with it t", breaths: 11, scenes: 1, gutenberg: 46729 },
+    "korean-folk-tales": { opening: "In the days of King Sung-jong (A.D. 1488-1495) one of Korea's noted men became governor of Pyong-an ", breaths: 29, scenes: 1, gutenberg: 51002 },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(sleep);
+  assert.ok(forYou);
+  assert.equal(Object.keys(expect).length, 16);
+  assert.deepEqual(forYou.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  assert.equal(sleep.workIds[0], "quicksand");
+  for (const held of [
+    "fifty-years-other-poems",
+    "japanese-fairy-tales",
+    "some-chinese-ghosts",
+    "shadowings",
+  ]) {
+    assert.equal(next.includes(held), false, held);
+    assert.equal(curatorialTrack(held), "later", held);
+  }
+  let prev = next.indexOf("the-prose-tales");
+  assert.ok(prev > next.indexOf("all-quiet-on-the-western-front"));
+  const sleepPrev = sleep.workIds.indexOf("the-prose-tales");
+  assert.ok(sleepPrev > sleep.workIds.indexOf("all-quiet-on-the-western-front"));
+  let sleepAt = sleepPrev;
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.opening, want.opening, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "next", id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(forYou!.workIds.includes(id), false, id);
+    const at = next.indexOf(id);
+    assert.ok(at > prev, `${id} follows All Quiet on Next`);
+    prev = at;
+    const sit = sleep!.workIds.indexOf(id);
+    assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
+    sleepAt = sit;
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: unknown[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.ok(full.breaths.length >= 3, id);
+    assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
+  }
 });
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {

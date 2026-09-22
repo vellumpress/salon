@@ -1,0 +1,61 @@
+{
+  "id": "japanese-fairy-world",
+  "title": "Japanese Fairy World",
+  "author": "William Elliot Griffis",
+  "year": "1887",
+  "note": "Project Gutenberg 29337",
+  "minutes": 11,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Meeting of the Star-Lovers",
+      "place": "The Meeting of the Star-Lovers",
+      "reentry": "One of the greatest days in the calendar of old Japan was the seventh of July; or, as the Japanese people put it, \"the seventh day of the seventh month.\" It was a vermilion day in the almanacs, to which every child looked forward with eyes ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "One of the greatest days in the calendar of old Japan was the seventh of July; or, as the Japanese people put it, \"the seventh day of the seventh month.\" It was a vermilion day in the almanacs, to which every child looked forward with eyes sparkling, hands clapping, and fingers counting, as each night rolled the time nearer. All manner of fruits and other eatable vegetables were prepared, and cakes baked, in the household. The boys plucked bamboo stalks, and strung on their branches bright-colored ribbons, tinkling bells, and long streamers of paper, on which poetry was written. On this night, mothers hoped for wealth, happiness, good children, and wisdom. The girls made a wish that they might become skilled in needlework. Only one wish a year, however, could be made. So, if any one wanted several things--health, wealth, skill in needlework, wisdom, etc.--they must wait many years before all the favors could be granted. Above all things, rainy weather was not desired. It was a \"good sign\" when a spider spun his web over a melon, or, if put in a square box he should weave a circular web. Now, the cause of all this preparation was that on the seventh of July the Herd-boy star and the Spinning Maiden star cross the Milky Way to meet each other. These are the stars which we call Capricornus and Alpha Lyra. These stars that shine and glitter so far up in the zenith, are the boy with an ox and the girl with a shuttle, about whom the story runs as follows:"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "On the banks of the Silver River of Heaven (which we call the Milky Way) there lived a beautiful maiden, who was the daughter of the sun. Her name was Shokujo. She did not care for games or play, like her companions, and, thinking nothing of vain display, wore only the simplest of dress. Yet she was very diligent, and made many garments for others. Indeed, so busy was she that all called her the Weaving or Spinning Princess."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "The sun-king noticed the serious disposition and close habits of his daughter, and tried in various ways to get her to be more lively. At last he thought to marry her. As marriages in the star-land are usually planned by the parents, and not by the foolish lover-boys and girls, he arranged the union without consulting his daughter. The young man on whom the sun-king thus bestowed his daughter's hand was Kingin, who kept a herd of cows on the banks of the celestial stream. He had always been a good neighbor, and, living on the same side of the river, the father thought he would get a nice son-in-law, and at the same time improve his daughter's habits and disposition."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "No sooner did the maiden become wife than her habits and character utterly changed for the worse, and the father had a very vexatious case of *tadashiku suguru* (\"too much of a good thing\") on his hands. The wife became not only very merry and lively, but utterly forsook loom and needle. She gave up her nights and days to play and idleness, and no silly lover could have been more foolish than she."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "The sun-king became very much offended at all this, and thinking that the husband was the cause of it, he determined to separate the couple. So he ordered the husband to remove to the other side of the river of stars, and told him that hereafter they should meet only once a year, on the seventh night of the seventh month. To make a bridge over the flood of stars, the sun-king called myriads of magpies, which thereupon flew together, and, making a bridge, supported him on their wings and backs as if it were a roadway of solid land. So, bidding his weeping wife farewell, the lover-husband sorrowfully crossed the River of Heaven. No sooner had he set foot on the opposite side than the magpies flew away, filling all the heavens with their chatter. The weeping wife and lover-husband stood for a long time wistfully gazing at each other from afar. Then they separated, the one to lead his ox, the other to ply her shuttle during the long hours of the day with diligent toil. Thus they filled the hours, and the sun-king again rejoiced in his daughter's industry."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "But when night fell, and all the lamps of heaven were lighted, the lovers would come and stand by the banks of the starry river, and gaze longingly at each other, waiting for the seventh night of the seventh month."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "At last the time drew near, and only one fear possessed the loving wife. Every time she thought of it her heart played pit-a-pat faster. What if it should rain? For the River of Heaven is always full to the brim, and one extra drop of rain causes a flood which sweeps away even the bird-bridge."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "But not a drop fell. The seventh month, seventh night, came, and all the heavens were clear. The magpies flew joyfully in myriads, making one way for the tiny feet of the little lady. Trembling with joy, and with heart fluttering more than the bridge of wings, she crossed the River of Heaven, and was in the arms of her husband. This she did every year. The lover-husband stayed on his side of the river, and the wife came to him on the magpie bridge, save on the sad occasion when it rained. So every year the people hope for clear weather, and the happy festival is celebrated alike by old and young."
+    }
+  ]
+}

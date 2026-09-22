@@ -945,6 +945,22 @@ const WORK_COUNTRY: Record<string, string> = {
   "tales-of-old-japan": "Japan",
   "chinese-literature": "China",
   "the-prose-tales": "Russia",
+  "self-determining-haiti": "United States",
+  "leon-roch-vol-2": "Spain",
+  "miss-julia": "Sweden",
+  "in-midsummer-days": "Sweden",
+  "the-chinese-fairy-book": "China",
+  "japanese-fairy-world": "Japan",
+  "japanese-literature": "Japan",
+  "romances-of-old-japan": "Japan",
+  "warriors-of-old-japan": "Japan",
+  "a-history-of-chinese-literature": "China",
+  "the-civilization-of-china": "China",
+  "kimiko": "Japan",
+  "glimpses-of-unfamiliar-japan": "Japan",
+  "hebrew-literature": "Palestine",
+  "the-history-of-yiddish-literature": "Poland",
+  "korean-folk-tales": "Korea",
 };
 
 const AUTHOR_COUNTRY: Record<string, string> = (() => {

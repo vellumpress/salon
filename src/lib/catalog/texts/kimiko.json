@@ -1,0 +1,214 @@
+{
+  "id": "kimiko",
+  "title": "Kimiko, and Other Japanese Sketches",
+  "author": "Lafcadio Hearn",
+  "year": "1896",
+  "note": "Project Gutenberg 41579",
+  "minutes": 42,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Section I",
+      "place": "Section I",
+      "reentry": "The name is on a paper-lantern at the entrance of a house in the Street of the Geisha.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Section II",
+      "place": "Section II",
+      "reentry": "There is no more Ichi-dai-me Kimiko: she is only a remembrance. Kimika was quite young when she called that Kimiko her professional sister.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Section III",
+      "place": "Section III",
+      "reentry": "Between Kimiko and other geisha there was a difference of gentle blood. Before she took a professional name, her name was Ai, which, written with the proper character, means love. Written with another character the same word-sound signifies",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Section IV",
+      "place": "Section IV",
+      "reentry": "It was in the period of the fourth moon that Kimiko was carried away to the home prepared for her--a place in which to forget all the unpleasant realities of life--a sort of fairy-palace lost in the charmed repose of great shadowy silent hi",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Section V",
+      "place": "Section V",
+      "reentry": "Nobody knew when or how or whither she had gone. Even in the neighborhood of the home she had left, none had seen her pass. At first it seemed that she must soon return. Of all her beautiful and precious things--her robes, her ornaments, he",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "The name is on a paper-lantern at the entrance of a house in the Street of the Geisha."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Seen at night the street is one of the queerest in the world. It is narrow as a gangway; and the dark shining wood-work of the house-fronts, all tightly closed,--each having a tiny sliding door with paper-panes that look just like frosted glass,--makes you think of first-class passenger-cabins. Really the buildings are several stories high; but you do not observe this at once--especially if there be no moon--because only the lower stories are illuminated up to their awnings, above which all is darkness. The illumination is made by lamps behind the narrow paper-paned doors, and by the paper-lanterns hanging outside--one at every door. You look down the street between two lines of these lanterns--lines converging far-off into one motionless bar of yellow light. Some of the lanterns are egg-shaped, some cylindrical; others four-sided or six-sided; and Japanese characters are beautifully written upon them. The street is very quiet--silent as a display of cabinet-work in some great exhibition after closing-time. This is because the inmates are mostly away--attending banquets and other festivities. Their life is of the night."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "The legend upon the first lantern to the left as you go south is \"Kinoya: uchi O-Kata\"; and that means The House of Gold wherein O-Kata dwells. The lantern to the right tells of the House of Nishimura, and of a girl Miyotsuru--which name signifies The Stork Magnificently Existing. Next upon the left comes the House of Kajita;--and in that house are Kohana, the Flower-Bud, and Hinako, whose face is pretty as the face of a doll. Opposite is the House Nagaye, wherein live Kimika and Kimiko.... And this luminous double litany of names is half-a-mile long."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "The inscription on the lantern of the last-named house reveals the relationship between Kimika and Kimiko--and yet something more; for Kimiko is styled \"Ni-dai-me,\" an honorary untranslatable title which signifies that she is only Kimiko No. 2. Kimika is the teacher and mistress: she has educated two geisha, both named, or rather renamed by her, Kimiko; and this use of the same name twice is proof positive that the first Kimiko--\"Ichi-dai-me\"--must have been celebrated. The professional appellation borne by an unlucky or unsuccessful geisha is never given to her successor."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "If you should ever have good and sufficient reason to enter the house,--pushing open that lantern-slide of a door which sets a gong-bell ringing to announce visits,--you might be able to see Kimika, provided her little troupe be not engaged for the evening. You would find her a very intelligent person, and well worth talking to. She can tell, when she pleases, the most remarkable stories--real flesh-and-blood stories--true stories of human nature. For the Street of the Geisha is full of traditions--tragic, comic, melodramatic;--every house has its memories;--and Kimika knows them all. Some are very, very terrible; and some would make you laugh; and some would make you think. The story of the first Kimiko belongs to the last class. It is not one of the most extraordinary; but it is one of the least difficult for Western people to understand."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "There is no more Ichi-dai-me Kimiko: she is only a remembrance. Kimika was quite young when she called that Kimiko her professional sister."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "\"An exceedingly wonderful girl,\" is what Kimika says of Kimiko. To win any renown in her profession, a geisha must be pretty or very clever; and the famous ones are usually both--having been selected at a very early age by their trainers according to the promise of such qualities. Even the commoner class of singing-girls must have some charm in their best years--if only that *beauté du diable* which inspired the Japanese proverb that even a devil is pretty at eighteen.[2] But Kimiko was much more than pretty. She was according to the Japanese ideal of beauty; and that standard is not reached by one woman in a hundred thousand. Also she was more than clever: she was accomplished. She composed very dainty poems--could arrange flowers exquisitely, perform tea-ceremonies faultlessly, embroider, make silk mosaic: in short, she was genteel. And her first public appearance made a flutter in the fast world of Kyoto. It was evident that she could make almost any conquest she pleased, and that fortune was before her."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "[2] *Oni mo jiuhachi, azami no hana.* There is a similar saying of a dragon: *ja mo hatachi* (\"even a dragon at twenty\")."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "But it soon became evident, also, that she had been perfectly trained for her profession. She had been taught how to conduct herself under almost any possible circumstances; for what she could not have known Kimika knew everything about: the power of beauty, and the weakness of passion; the craft of promises and the worth of indifference; and all the folly and evil in the hearts of men. So Kimiko made few mistakes and shed few tears. By and by she proved to be, as Kimika wished--slightly dangerous. So a lamp is to night-fliers: otherwise some of them would put it out. The duty of the lamp is to make pleasant things visible: it has no malice. Kimiko had no malice, and was not too dangerous. Anxious parents discovered that she did not want to enter into respectable families, nor even to lend herself to any serious romances. But she was not particularly merciful to that class of youths who sign documents with their own blood, and ask a dancing-girl to cut off the extreme end of the little finger of her left hand as a pledge of eternal affection. She was mischievous enough with them to cure them of their folly. Some rich folks who offered her lands and houses on condition of owning her, body and soul, found her less merciful. One proved generous enough to purchase her freedom unconditionally, at a price which made Kimika a rich woman; and Kimiko was grateful--but she remained a geisha. She managed her rebuffs with too much tact to excite hate, and knew how to heal despairs in most cases. There were exceptions, of course. One old man, who thought life not worth living unless he could get Kimiko all to himself, invited her to a banquet one evening, and asked her to drink wine with him. But Kimika, accustomed to read faces, deftly substituted tea (which has precisely the same color) for Kimiko's wine, and so instinctively saved the girl's precious life--for only ten minutes later the soul of the silly host was on its way to the Meido alone, and doubtless greatly disappointed.... After that night Kimika watched over Kimiko as a wild cat guards her kitten."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "The kitten became a fashionable mania, a craze--a delirium--one of the great sights and sensations of the period. There is a foreign prince who remembers her name: he sent her a gift of diamonds which she never wore. Other presents in multitude she received from all who could afford the luxury of pleasing her; and to be in her good graces, even for a day, was the ambition of the \"gilded youth.\" Nevertheless she allowed no one to imagine himself a special favorite, and refused to make any contracts for perpetual affection. To any protests on the subject she answered that she knew her place. Even respectable women spoke not unkindly of her--because her name never figured in any story of family unhappiness. She really kept her place. Time seemed to make her more charming. Other geisha grew into fame, but no one was even classed with her. Some manufacturers secured the sole right to use her photograph for a label; and that label made a fortune for the firm."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "But one day the startling news was abroad that Kimiko had at last shown a very soft heart. She had actually said good-bye to Kimika, and had gone away with somebody able to give her all the pretty dresses she could wish for--somebody eager to give her social position also, and to silence gossip about her naughty past--somebody willing to die for her ten times over, and already half-dead for love of her. Kimika said that a fool had tried to kill himself because of Kimiko, and that Kimiko had taken pity on him, and nursed him back to foolishness. Taiko Hideyoshi had said that there were only two things in this world which he feared--a fool and a dark night. Kimika had always been afraid of a fool; and a fool had taken Kimiko away. And she added, with not unselfish tears, that Kimiko would never come back to her: it was a case of love on both sides for the time of several existences."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Nevertheless, Kimika was only half right. She was very shrewd indeed; but she had never been able to see into certain private chambers in the soul of Kimiko. If she could have seen, she would have screamed for astonishment."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Between Kimiko and other geisha there was a difference of gentle blood. Before she took a professional name, her name was Ai, which, written with the proper character, means love. Written with another character the same word-sound signifies grief. The story of Ai was a story of both grief and love."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "She had been nicely brought up. As a child she had been sent to a private school kept by an old samurai--where the little girls squatted on cushions before little writing-tables twelve inches high, and where the teachers taught without salary. In these days when teachers get better salaries than civil-service officials, the teaching is not nearly so honest or so pleasant as it used to be. A servant always accompanied the child to and from the school-house, carrying her books, her writing-box, her kneeling cushion, and her little table."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Afterwards she attended an elementary public school. The first \"modern\" textbooks had just been issued--containing Japanese translations of English, German, and French stories about honor and duty and heroism, excellently chosen, and illustrated with tiny innocent pictures of Western people in costumes never of this world. Those dear pathetic little textbooks are now curiosities: they have long been superseded by pretentious compilations much less lovingly and sensibly edited. Ai learned well. Once a year, at examination time, a great official would visit the school, and talk to the children as if they were all his own, and stroke each silky head as he distributed the prizes. He is now a retired statesman, and has doubtless forgotten Ai;--and in the schools of today nobody caresses little girls, or gives them prizes."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Then came those reconstructive changes by which families of rank were reduced to obscurity and poverty; and Ai had to leave school. Many great sorrows followed, till there remained to her only her mother and an infant sister. The mother and Ai could do little but weave; and by weaving alone they could not earn enough to live. House and lands first--then, article by article, all things not necessary to existence--heirlooms, trinkets, costly robes, crested lacquer-ware--passed cheaply to those whom misery makes rich, and whose wealth is called by the people *Namida no kane*--\"the Money of Tears.\" Help from the living was scanty--for most of the samurai-families of kin were in like distress. But when there was nothing left to sell--not even Ai's little school-books--help was sought from the dead."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "For it was remembered that the father of Ai's father had been buried with his sword, the gift of a daimyo; and that the mountings of the weapon were of gold. So the grave was opened, and the grand hilt of curious workmanship exchanged for a common one, and the ornaments of the lacquered sheath removed. But the good blade was not taken, because the warrior might need it. Ai saw his face as he sat erect in the great red-clay urn which served in lieu of coffin to the samurai of high rank when buried by the ancient rite. His features were still recognizable after all those years of sepulture; and he seemed to nod a grim assent to what had been done as his sword was given back to him."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "At last the mother of Ai became too weak and ill to work at the loom; and the gold of the dead had been spent. Ai said: \"Mother, I know there is but one thing now to do. Let me be sold to the dancing-girls.\" The mother wept, and made no reply. Ai did not weep, but went out alone."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "She remembered that in other days, when banquets were given in her father's house, and dancers served the wine, a free geisha named Kimika had often caressed her. She went straight to the house of Kimika. \"I want you to buy me,\" said Ai;--\"and I want a great deal of money.\" Kimika laughed, and petted her, and made her eat, and heard her story--which was bravely told, without one tear. \"My child,\" said Kimika, \"I cannot give you a great deal of money; for I have very little. But this I can do:--I can promise to support your mother. That will be better than to give her much money for you--because your mother, my child, has been a great lady, and therefore cannot know how to use money cunningly. Ask your honored mother to sign the bond--promising that you will stay with me till you are twenty-four years old, or until such time as you can pay me back. And what money I can now spare, take home with you as a free gift.\""
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "Thus Ai became a geisha; and Kimika renamed her Kimiko, and kept the pledge to maintain the mother and the child-sister. The mother died before Kimiko became famous; the little sister was put to school. Afterwards those things already told came to pass."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "The young man who had wanted to die for love of a dancing-girl was worthy of better things. He was an only son; and his parents, wealthy and titled people, were willing to make any sacrifice for him--even that of accepting a geisha for daughter-in-law. Moreover, they were not altogether displeased with Kimiko, because of her sympathy for their boy."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "Before going away, Kimiko attended the wedding of her young sister, Umé, who had just finished school. She was good and pretty. Kimiko had made the match, and used her wicked knowledge of men in making it. She chose a very plain, honest, old-fashioned merchant--a man who could not have been bad, even if he tried. Umé did not question the wisdom of her sister's choice, which time proved fortunate."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "It was in the period of the fourth moon that Kimiko was carried away to the home prepared for her--a place in which to forget all the unpleasant realities of life--a sort of fairy-palace lost in the charmed repose of great shadowy silent high-walled gardens. Therein she might have felt as one reborn, by reason of good deeds, into the realm of Horai. But the spring passed, and the summer came--and Kimiko remained simply Kimiko. Three times she had contrived, for reasons unspoken, to put off the wedding-day."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "In the period of the eighth moon, Kimiko ceased to be playful, and told her reasons very gently but very firmly: \"It is time that I should say what I have long delayed saying. For the sake of the mother who gave me life, and for the sake of my little sister, I have lived in hell. All that is past; but the scorch of the fire is upon me, and there is no power that can take it away. It is not for such as I to enter into an honored family--nor to bear you a son--nor to build up your house.... Suffer me to speak; for in the knowing of wrong I am very, very much wiser than you.... Never shall I be your wife to become your shame. I am your companion only, your play-fellow, your guest of an hour--and this not for any gifts. When I shall be no longer with you--nay! certainly that day must come!--you will have clearer sight. I shall still be dear to you, but not in the same way as now--which is foolishness. You will remember these words out of my heart. Some true sweet lady will be chosen for you, to become the mother of your children. I shall see them; but the place of a wife I shall never take, and the joy of a mother I must never know. I am only your folly, my beloved--an illusion, a dream, a shadow flitting across your life. Somewhat more in later time I may become, but a wife to you never--neither in this existence nor in the next. Ask me again--and I go.\""
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "In the period of the tenth moon, and without any reason imaginable, Kimiko disappeared--vanished--utterly ceased to exist."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Nobody knew when or how or whither she had gone. Even in the neighborhood of the home she had left, none had seen her pass. At first it seemed that she must soon return. Of all her beautiful and precious things--her robes, her ornaments, her presents: a fortune in themselves--she had taken nothing. But weeks passed without word or sign; and it was feared that something terrible had befallen her. Rivers were dragged, and wells were searched. Inquiries were made by telegraph and by letter. Trusted servants were sent to look for her. Rewards were offered for any news--especially a reward to Kimika, who was really attached to the girl, and would have been only too happy to find her without any reward at all. But the mystery remained a mystery. Application to the authorities would have been useless: the fugitive had done no wrong, broken no law; and the vast machinery of the imperial police-system was not to be set in motion by the passionate whim of a boy. Months grew into years; but neither Kimika, nor the little sister in Kyoto, nor any one of the thousands who had known and admired the beautiful dancer, ever saw Kimiko again."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "But what she had foretold came true;--for time dries all tears and quiets all longing; and even in Japan one does not really try to die twice for the same despair. The lover of Kimiko became wiser; and there was found for him a very sweet person for wife, who gave him a son. And other years passed; and there was happiness in the fairy-home where Kimiko had once been."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "There came to that home one morning, as if seeking alms, a traveling nun; and the child, hearing her Buddhist cry of \"Ha--ï! ha--ï!\" ran to the gate. And presently a house-servant, bringing out the customary gift of rice, wondered to see the nun caressing the child, and whispering to him. Then the little one cried to the servant, \"Let me give!\"--and the nun pleaded from under the veiling shadow of her great straw hat: \"Honorably allow the child to give me.\" So the boy put the rice into the mendicant's bowl. Then she thanked him, and asked: \"Now will you say again for me the little word which I prayed you to tell your honored father?\" And the child lisped: \"*Father, one whom you will never see again in this world, says that her heart is glad because she has seen your son.*\""
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "The nun laughed softly, and caressed him again, and passed away swiftly; and the servant wondered more than ever, while the child ran to tell his father the words of the mendicant."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "But the father's eyes dimmed as he heard the words, and he wept over his boy. For he, and only he, knew who had been at the gate--and the sacrificial meaning of all that had been hidden."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "Now he thinks much, but tells his thought to no one."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "He knows that the space between sun and sun is less than the space between himself and the woman who loved him."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "He knows it were vain to ask in what remote city, in what fantastic riddle of narrow nameless streets, in what obscure little temple known only to the poorest poor, she waits for the darkness before the Dawn of the Immeasurable Light--when the Face of the Teacher will smile upon her--when the Voice of the Teacher will say to her, in tones of sweetness deeper than ever came from human lover's lips: \"*O my daughter in the Law, thou hast practiced the perfect way; thou hast believed and understood the highest truth;--therefore come I now to meet and to welcome thee!*\""
+    }
+  ]
+}

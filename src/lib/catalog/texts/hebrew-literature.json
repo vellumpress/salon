@@ -1,0 +1,301 @@
+{
+  "id": "hebrew-literature",
+  "title": "Hebrew Literature",
+  "author": "Epiphanius Wilson (ed.)",
+  "year": "1901",
+  "note": "Project Gutenberg 28369",
+  "minutes": 50,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "On Blessings",
+      "place": "On Blessings",
+      "reentry": "1. “From what time do we recite the Shemah(8) in the evening?” “From the hour the priests(9) enter (the temple) to eat their heave offerings, until the end of the first watch.”(10) The words of R. Eleazar; but the Sages say “until midnight.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "1. “From what time do we recite the Shemah(8) in the evening?” “From the hour the priests(9) enter (the temple) to eat their heave offerings, until the end of the first watch.”(10) The words of R. Eleazar; but the Sages say “until midnight.” Rabban Gamaliel says, “until the pillar of the morn ascend.” It happened that his sons came from a banquet. They said to him, “we have not yet said the Shemah.” He said to them, “if the pillar of the morn be not yet ascended, you are bound to say it; and not only this, but all that the Sages say, ‘till midnight,’ they command till the pillar of the morn ascend.” The burning of the fat and members they command “till the pillar of the morn ascend.” And all offerings, which must be eaten the same day, they command “till the pillar of the morn ascend.” If so, why do the Sages say “until midnight”? “To withhold man from transgression.”"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "2. “From what time do we recite the Shemah in the morning?” When one can discern betwixt “blue and white.” R. Eleazar says “betwixt blue and leek green.” And it may be finished “until the sun shine forth.” R. Joshua says “until the third hour.”(11) For such is the way of royal princes to rise at the third hour. He who recites Shemah afterward loses nothing. He is like a man reading the Law."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "3. The school of Shammai say that in the evening all men are to recline when they recite the Shemah; and in the morning they are to stand up; for it is said, “when thou liest down and when thou risest up.”(12) But the school of Hillel say, that every man is to recite it in his own way; for it is said, “when thou walkest by the way.”(13) If so, why is it said, “when thou liest down and when thou risest up”? “When mankind usually lie down, and when mankind usually rise up.” R. Tarphon said, “I came on the road, and reclined to recite the Shemah according to the words of the school of Shammai, and I was in danger of robbers.” The Sages said to him, “thou wast guilty against thyself, because thou didst transgress the words of the school of Hillel.”"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "4. In the morning two blessings are said before (the Shemah), and one after it; and in the evening two blessings before and two after it, one long and one short.(14) Where the (Sages) have said to lengthen, none is allowed to shorten; and to shorten none is allowed to lengthen: to close, none is allowed not to close; not to close, none is allowed to close."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "5. We commemorate the departure from Egypt at night; said R. Eleazar, son of Azariah, “truly I am a son of seventy years, and was not clear that thou shouldst say the departure from Egypt at night until the son of Zoma expounded, ‘that thou mayest remember the day when thou camest forth out of the land of Egypt all the days of thy life;’(15) the days of thy life (are) days; all the days of thy life (include) the nights.” But the Sages say, “the days of thy life (are) this world; all the days of thy life (include) the days of the Messiah.”"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "1. “If one who is reading in the Law when the time comes for praying intends it in his heart?” “He is free.” “But if not?” “He is not free.” “At the end of the sections one salutes out of respect, and responds; but in the middle of a section he salutes from fear, and responds.” Such are the words of R. Mair. R. Judah says, “in the middle he salutes from fear, and responds out of respect; at the end he salutes out of respect, and repeats peace to every man.”"
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "2. The intervals of the sections are between the first blessing and the second—between the second and “Hear, O Israel;” between “Hear” and “it shall come to pass;”(16) between “and it shall come to pass” and “and he said;”(17) between “and he said” and “it is true and certain.”(18) Said R. Judah, “between ‘and he said’ and ‘it is true and certain,’ none is to pause.” R. Joshua, the son of Korcha, said, “Why does the (section) ‘Hear,’ etc., precede ‘and it shall come to pass’? ‘That one may take on himself the kingdom of heaven, before he take on himself the yoke of the commandments.’ Why does (the section) ‘and it shall come to pass’ precede ‘and he said’? Because ‘and it shall come to pass’ may be practised by day and by night;(19) but ‘and he said,’ etc., only by day.”(20)"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "3. He who recites the Shemah so as not to be audible to his own ears, is legally free.(21) R. José says “he is not legally free.” “If he has said it without grammar and pronunciation?” R. José says “he is legally free.” R. Judah says “he is not legally free.” “If he said it irregularly?” “He is not legally free.” “In recitation he mistook?” “He must recommence from the place where he mistook.”"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "4. Laborers may recite the Shemah on the top of a tree, or of a wall, but they are not allowed to do so with the prayer.(22)"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "5. A bridegroom is exempted from reciting the Shemah on the first night of marriage, and, even until the expiration of the Sabbath if the marriage be not complete. It happened that Rabban Gamaliel recited on the first night. His disciples said to him, “hast thou not taught us, our master, that a bridegroom is exempted from reciting Shemah on the first night?” He said to them, “I will not hear you, to deprive myself of the yoke of the kingdom of heaven even one hour.”"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "6. He (R. Gamaliel) bathed on the first night of his wife’s death. His disciples said to him, “hast thou not taught us, our master, that a mourner is forbidden to bathe?” He said to them, “I am not like all other men; I am infirm.”"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "7. When his slave Tabbi died, he received visits of condolence. His disciples said to him, “hast thou not taught us, our master, that visits of condolence are not to be received for slaves?” He said to them, “my slave Tabbi was not like all other slaves, he was upright.”"
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "8. The bridegroom who wishes to recite the Shemah on the first night may recite it. R. Simeon, the son of Gamaliel, said, “not every one who wishes to affect the pious reputation can affect it.”"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "1. He whose dead lies before him is exempted from reciting the Shemah,—from the prayer,—and from the phylacteries.(23) Those who carry the bier, and those who relieve them, and those who relieve the relief,—those who go before the bier, and those who follow it, who are required for the bier, are exempted from reciting the Shemah. But those not required for the bier are bound to recite it. Both (parties) are exempted from the prayer."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "2. When they have buried the dead, and return, if they have time to begin and end (the Shemah) before they reach the rows (of mourners), they must begin: if not, they must not begin. Of those standing in the rows the inner (mourners) are exempt, but the outer ones are bound to recite the Shemah."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "3. Women, slaves, and children, are exempt from reciting the Shemah, and also from the phylacteries; but they are bound in the prayer, the sign on the door-post, and the blessing after food."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "4. A man in his legal uncleanness is to meditate in his heart on the (Shemah), but he is not to bless before, or after it. After his food he blesses, but not before it. R. Judah says “he blesses both before and after it.”"
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "5. If one stand in prayer, and recollect that he is in his uncleanness, he is not to pause, but to shorten (the prayer). If he has gone down into the water (to bathe),(24) and can go up, dress, and recite the Shemah before the sun shines forth, he is to go up, dress, and recite it. But he is not to cover himself with foul water or with water holding matter in solution unless he has poured clean water to it. “How far is he to keep from foul water, or excrement?” “Four cubits.”"
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "6. A man in his uncleanness with a running issue, a woman in her uncleanness, during separation, and she who perceives the need of separation, require the bath. But R. Judah “exempts them.”"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "1. The morning prayer may be said till noon. R. Judah says “until the fourth hour.” The afternoon prayer until the evening. R. Judah says “until half the afternoon.” The evening prayer has no limit, and the additional prayers may be said all day. R. Judah says “until the seventh hour.”"
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "2. R. Nechooniah, son of Hakanah, used to pray when he entered the lecture-room, and when he went out he said a short prayer. The (Sages) said to him, “what occasion is there for this prayer?” He said to them, “when I enter I pray that no cause of offence may arise through me; and when I go out I give thanks for my lot.”"
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "3. Rabban Gamaliel said, “one must daily say the eighteen prayers.” R. Joshua said “a summary of the eighteen.” R. Akivah said, “if his prayer be fluent in his mouth, he says the eighteen; if not, a summary of the eighteen.”"
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "4. R. Eleazar said, “if one make his prayer fixed, his prayer is not supplications.” R. Joshua said, “if a man travel in dangerous places, let him use this short prayer: ‘Save, O Lord, thy people, the remnant of Israel; at every stage of their journey(25) let their wants be before thee. Blessed art thou, O Lord, who hearest prayers.’ ”"
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "5. If one ride on an ass, he must dismount: if he cannot dismount, he must turn his face; and if he cannot turn his face, he must direct his heart toward the Holy of Holies."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "6. If one be seated in a ship, or in a carriage, or on a raft, he must direct his mind toward the Holy of Holies."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "7. R. Eleazar, the son of Azariah, said “the additional(26) prayers are only to be said in a public congregation.” But the Sages say, “if there be a public congregation, or no public congregation.” R. Judah said in his name, “in every place, where there is a public congregation, individuals are exempted from additional prayers.”"
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "1. Men should not stand up to pray, except with reverential head. The pious of ancient days used to pause one hour before they began to pray, that they might direct their hearts to God. Though the king salute, one must not respond; and though a serpent wind itself round his heel, one must not pause."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "2. Men should mention the heavy rain in praying for the resurrection of the dead; and entreat for rain in the blessing for the year, and “the distinction between the Sabbath and weekday”(27) is to be said in the prayer “who graciously bestows knowledge.”(28) R. Akivah said, “the distinction between the Sabbath and week-day is to be said in a fourth prayer by itself.” R. Eleazar said, “in the thanksgivings.”"
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "3. He who says, “Thy mercies extend to a bird’s nest,” or, “for goodness be Thy name remembered,” or he who says, “we give thanks, we give thanks,”(29) is to be silenced. If a man pass up to the ark (where the rolls of the Law are kept) and make a mistake, another must pass up in his stead; nor may he in such a moment refuse. “Where does he begin?” “From the beginning of the prayer in which the other made the mistake.”"
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "4. He who passes up to the ark is not to answer “Amen” after the priests, lest his attention be distracted. If no other priest be present but himself, he is not to lift up his hands (to bless the congregation). But if he be confident that he can lift up his hands, and then resume, he is at liberty."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "5. If a man pray, and make a mistake, it is a bad sign for him. If he be a representative of a congregation, it is a bad sign for his constituents, for a man’s representative is like himself. They say of R. Hanina, son of Dosa, that when he prayed for the sick, he used to say, “this one will live,” or “this one will die.” The (Sages) said to him, “how do you know?” He said to them, “if my prayer be fluent in my mouth, I know that he is accepted; but if not, I know that he is lost.”"
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "1. “How do we bless for fruit?” “For fruit of a tree say, ‘Who createst the fruit of the wood,’ excepting the wine. For wine say, ‘Who createst the fruit of the vine.’ For fruits of the earth say, ‘Who createst the fruit of the ground,’ excepting the morsel. For the morsel say, ‘Who bringest forth bread from the earth.’ For vegetables say, ‘Who createst the fruit of the ground.’ R. Judah says, ‘Who createst various kinds of herbs.’ ”"
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "2. He who blessed the fruits of the tree (thus), “Who createst the fruits of the ground?” “He is free.” And for the fruits of ground (said), “Who createst the fruits of the wood?” “He is not free.” But, in general, if one say, “(Who createst) everything?” “He is free.”"
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "3. For the thing which groweth not from the earth, say, “(Who createst) everything.” For vinegar, unripe fruit, and locusts, say “everything.” For milk, cheese, and eggs, say “everything.” R. Judah says, “whatever it be, which had its origin in a curse, is not to be blessed.”"
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "4. If a man have before him many kinds of fruits? R. Judah says, “if there be among them of the seven(30) kinds, he is to bless them.” But the Sages say “he may bless whichever of them he pleases.”"
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "5. “If one blessed the wine before food?” “The blessing frees the wine after food.” “If he blessed the titbit before food?” “It frees the titbit after food.” “If he blessed the bread?” “It frees the titbit.” But the blessing on the titbit does not free the bread. The school of Shammai say, “neither does it free the cookery.”"
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "6. “If several persons sit down to eat?” “Each blesses for himself.” “But if they recline together?” “One blesses for all.” “If wine come to them during food?” “Each blesses for himself.” “But if after food?” “One blesses for all.” He also blesses for the incense, even though they have not brought it till after the repast."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "7. “If they first set salt food before a man and bread with it?” “He blesses the salt food, which frees the bread, as the bread is only an appendage.” The rule is, whenever there is principal and with it appendage,—the blessing on the principal frees the appendage."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "8. “If one have eaten figs, grapes, and pomegranates?” “He must say after them three blessings.” The words of Rabban Gamaliel. But the Sages say, “one blessing—a summary of the three.” R. Akivah says, “if one have eaten boiled (pulse); and it is his meal, he must say after it three blessings.” Whoever drinks water for his thirst, says, “By whose word everything is,” etc. R. Tarphon says, “Who createst many souls,” etc."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "1. Three men who have eaten together are bound to bless after food. “If a person have eaten of that which is doubtful, whether it has paid tithe or not; or of first tithe from which the heave offering has been taken; or of second tithe or consecrated things, which have been redeemed; also, if the waiter have eaten the size of an olive; or a Samaritan be of the party?” “The blessing must be said.” “But if one have eaten the untithed—or first tithes from which the heave offering has not been taken—or consecrated things which are unredeemed; or if the waiter have eaten less than the size of an olive, or a stranger be of the party?” “The blessing is not to be said.”"
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "2. There is no blessing at food for women, slaves, and children. What quantity is required for the blessing at food? The size of an olive. R. Judah says “the size of an egg.”"
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "3. “How do we bless at food?” “If there be three, one says, ‘Let us bless,’ etc.; if three and himself, he says, ‘Bless ye,’ etc.: if ten, he says, ‘Let us bless our God,’ etc.; if ten and himself, he says, ‘Bless ye,’ etc.; (so) if there be ten or ten myriads. If there be an hundred, he says, ‘Let us bless the Lord our God,’ etc.; if there be an hundred and himself, he says, ‘Bless ye,’ etc.: if there be a thousand, he says, ‘Let us bless the Lord our God, the God of Israel;’ if there be a thousand and himself, he says, ‘Bless ye,’ etc.: if there be a myriad, he says, ‘Let us bless the Lord our God, the God of Israel, the God of Hosts, who sitteth between the Cherubim,’ etc.; if there be a myriad and himself, he says, ‘Bless ye,’ etc. As he pronounces the blessing, so they respond after him, ‘Blessed be the Lord our God, the God of Israel, the God of Hosts, who sitteth between the Cherubim, for the food we have eaten.’ ” R. José the Galilean says they should bless according to the number of the assembly; for it is written, “Bless ye God in the congregations; (even) the Lord from the fountain of Israel.”(31) Said R. Akivah, “What do we find in the synagogue? whether many or few the minister says, ‘Bless ye the Lord,’ ” etc. R. Ishmael says, “Bless ye the Lord, who is ever blessed.”"
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "4. When three have eaten together, they are not permitted to separate without blessing; nor four or five. But six may divide into two parties, and so may any number up to ten. But ten may not separate without blessing, nor any number less than twenty (who can divide into two parties)."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "5. If two companies have eaten in one house, and some of each company be able to see some of the other company, they may join in the blessing; but if not, each company blesses for itself. “They should not bless the wine till it has been mixed with water.” The words of R. Eleazar. But the Sages say “they may bless it unmixed.”"
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "1. These are the controversies relating to meals between the schools of Shammai and Hillel. The school of Shammai say, “one must say the blessing of the day, and then bless the wine;” but the school of Hillel say, “one must say the blessing on the wine, and then bless the day.”"
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "2. The school of Shammai say, “men must pour water on the hands, and then mix the goblet;” but the school of Hillel say, “the goblet must be mixed, and then water poured on the hands.”"
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "3. The school of Shammai say, “one is to wipe his hands on the napkin, and lay it on the table;” but the school of Hillel say, “on the cushion.”"
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "4. The school of Shammai bless “the light, the food, the spices, and the distinction of the day;” but the school of Hillel bless “the light, the spices, the food, and the distinction of the day.” The school of Shammai say, “who created the light of fire;” but the school of Hillel say, “Creator of the lights of fire.”"
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "6. Men must not bless light and spices of idolatrous Gentiles, nor light and spices of corpses, nor light and spices before an idol. They must not bless the light until they have enjoyed the light."
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "7. “If one have eaten, and forgotten, and not blessed?” The school of Shammai say, “he must return to his place and bless.” But the school of Hillel say, “he may bless in the place where he recollects.” “How long is one obliged to bless?” “Until the food in his stomach be digested.”"
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "8. “If wine came to the company, and there is but one goblet?” The school of Shammai say “that one must bless the wine and then bless the food.” But the school of Hillel say “that one must bless the food and then bless the wine.” Men must answer “Amen” when an Israelite blesses; but they must not answer “Amen” when a Samaritan blesses, until the whole(32) blessing be heard."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "1. He who sees a place where signs were wrought for Israel, says, “Blessed be He who wrought signs for our fathers in this place;” a place where idolatry has been rooted out,—says, “Blessed be He who hath rooted idolatry out of our land.”"
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "2. On comets, earthquakes, lightnings, thunder, and tempests, say, “Blessed be He whose strength and might fill the world.” On mountains, hills, seas, rivers, and deserts, say, “Blessed be He who made the creation.” R. Judah says, when a man sees the great sea he is to say, “Blessed be He who made the great sea,”—when he sees it at intervals. On rains, and on good news say, “Blessed be He who is good and beneficent.” On bad news say, “Blessed be the true Judge.”"
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "3. He who has built a new house, or bought new furniture, says, “Blessed be He who has kept us alive,” etc. One must bless for evil the source of good; and for good the source of evil. “He who supplicates for what is past?” “Such prayer is vain.” “How?” His wife is pregnant, and he says, “God grant that my wife may bring forth a male child.” Such prayer is vain. Or if one on the road hear the voice of lamentation in the city, and say, “God grant that it may not be my son, my house,” etc., such prayer is vain."
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "4. Whoever enters a fortified town must say two prayers, one at his entrance, and one at his departure. Ben Azai says, “four, two at his entrance, and two at his departure; he returns thanks for the past, and supplicates for the future.”"
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "5. Man is bound to bless God for evil, as he is bound to bless Him for good. For it is said, “And thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy might.”(33) “With all thy heart” means, with both thy inclinations, the evil as well as the good. “With all thy soul” means, even should He deprive thee of life; and “with all thy might” means with all thy wealth. Another opinion is, that “with all thy might” means whatever measure He metes out unto thee, do thou thank Him with thy entire might. No man is to be irreverent opposite the eastern gate of the Temple, for it is opposite the Holy of Holies. No man is to go on the mountain of the house with his staff, shoes, or purse, nor with dust on his feet, nor is he to make it a short cut, nor is he to spit at all. All the seals of the blessings in the sanctuary used to say, “from eternity.” But since the Epicureans perversely taught there is but one world, it was directed that man should say, “from eternity to eternity.” It was also directed that every man should greet his friend in THE NAME, as it is said, “And behold Boaz came from Bethlehem, and said unto the reapers, The Lord (be) with you: and they answered him, The Lord bless thee.”(34) And it is also said, “The Lord *is* with thee, thou mighty man of valor.”(35) And it is said, “Despise not thy mother when she is old.”(36) And it is also said, “(It is) time for (thee), Lord, to work, for they have made void thy law.”(37) R. Nathan says, “They have made void thy law because (it is) time for (thee), Lord, to work.”"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "a-history-of-chinese-literature",
+  "title": "A History of Chinese Literature",
+  "author": "Herbert A. Giles",
+  "year": "1901",
+  "note": "Project Gutenberg 43711",
+  "minutes": 13,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I · Legendary Ages",
+      "place": "Chapter I · Legendary Ages",
+      "reentry": "The date of the beginning of all things has been nicely calculated by Chinese chronologers. There was first of all a period when Nothing existed, though some enthusiasts have attempted to deal with a period antecedent even to that. Graduall",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "The date of the beginning of all things has been nicely calculated by Chinese chronologers. There was first of all a period when Nothing existed, though some enthusiasts have attempted to deal with a period antecedent even to that. Gradually Nothing took upon itself the form and limitations of Unity, represented by a point at the centre of a circle. Thus there was a Great Monad, a First Cause, an Aura, a Zeitgeist, or whatever one may please to call it."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "After countless ages, spent apparently in doing nothing, this Monad split into Two Principles, one active, the other passive; one positive, the other negative; light and darkness; male and female. The interaction of these Two Principles resulted in the production of all things, as we see them in the universe around us, 2,269,381 years ago. Such is the cosmogony of the Chinese in a nutshell."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "The more sober Chinese historians, however, are content to begin with a sufficiently mythical emperor, who reigned only 2800 years before the Christian era. The practice of agriculture, the invention of wheeled vehicles, and the simpler arts of early civilisation are generally referred to this period; but to the dispassionate European student it is a period of myth and legend: in fact, we know very little about it. Neither do we know much, in the historical sense, of the numerous rulers whose names and dates appear in the chronology of the succeeding two thousand years. It is not indeed until we reach the eighth century B.C. that anything like history can be said to begin."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "For reasons which will presently be made plain, the sixth century B.C. is a convenient starting-point for the student of Chinese literature."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "[Sidenote: FEUDALISM]"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "China was then confined to a comparatively small area, lying for the most part between the Yellow River on the north and the river Yang-tsze on the south. No one knows where the Chinese came from. Some hold the fascinating theory that they were emigrants from Accadia in the ancient kingdom of Babylonia; others have identified them with the lost tribes of Israel. No one seems to think they can possibly have originated in the fertile plains where they are now found. It appears indeed to be an ethnological axiom that every race must have come from somewhere outside its own territory. However that may be, the China of the eighth century B.C. consisted of a number of Feudal States, ruled by nobles owning allegiance to a Central State, at the head of which was a king. The outward tokens of subjection were homage and tribute; but after all, the allegiance must have been more nominal than real, each State being practically an independent kingdom. This condition of things was the cause of much mutual jealousy, and often of bloody warfare, several of the States hating one another quite as cordially as Athens and Sparta at their best."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "There was, notwithstanding, considerable physical civilisation in the ancient States of those early days. Their citizens, when not employed in cutting each other’s throats, enjoyed a reasonable security of life and property. They lived in well-built houses; they dressed in silk or homespun; they wore shoes of leather; they carried umbrellas; they sat on chairs and used tables; they rode in carts and chariots; they travelled by boat; and they ate their food off plates and dishes of pottery, coarse perhaps, yet still superior to the wooden trencher common not so very long ago in Europe. They measured time by the sundial, and in the Golden Age they had the two famous calendar trees, representations of which have come down to us in sculpture, dating from about A.D. 150. One of these trees put forth a leaf every day for fifteen days, after which a leaf fell off daily for fifteen more days. The other put forth a leaf once a month for half a year, after which a leaf fell off monthly for a similar period. With these trees growing in the courtyard, it was possible to say at a glance what was the day of the month, and what was the month of the year. But civilisation proved unfavourable to their growth, and the species became extinct."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "In the sixth century B.C. the Chinese were also in possession of a written language, fully adequate to the most varied expression of human thought, and indeed almost identical with their present script, allowing, among other things, for certain modifications of form brought about by the substitution of paper and a camel’s-hair brush for the bamboo tablet and stylus of old. The actual stages by which that point was reached are so far unknown to us. China has her Cadmus in the person of a prehistoric individual named Ts‘ang Chieh, who is said to have had four eyes, and to have taken the idea of a written language from the markings of birds’ claws upon the sand. Upon the achievement of his task the sky rained grain and evil spirits mourned by night. Previous to this mankind had no other system than rude methods of knotting cords and notching sticks for noting events or communicating with one another at a distance."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "As to the origin of the written language of China, invention is altogether out of the question. It seems probable that in prehistoric ages, the Chinese, like other peoples, began to make rude pictures of the sun, moon, and stars, of man himself, of trees, of fire, of rain, and they appear to have followed these up by ideograms of various kinds. How far they went in this direction we can only surmise. There are comparatively few obviously pictorial characters and ideograms to be found even in the script of two thousand years ago; but investigations carried on for many years by Mr. L. C. Hopkins, H.M. Consul, Chefoo, and now approaching completion, point more and more to the fact that the written language will some day be recognised as systematically developed from pictorial symbols. It is, at any rate, certain that at a very early date subsequent to the legendary period of “knotted cords” and “notches,” while the picture-symbols were still comparatively few, some master-mind reached at a bound the phonetic principle, from which point the rapid development of a written language such as we now find would be an easy matter."
+    }
+  ]
+}
