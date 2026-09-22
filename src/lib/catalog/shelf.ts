@@ -591,7 +591,11 @@ export const SHELF: ShelfWork[] = [
   { id: "kim-van-kieu-tan-truyen-the-tale-of-kieu", title: "Kim Vân Kiều Tân Truyện (The Tale of Kiều)", author: "Nguyễn Du; ed./tr. Abel des Michels", year: 1884, form: "poem", language: "English", minutes: 90 },
   { id: "la-regenta", title: "La Regenta", author: "Leopoldo Alas (Clarín)", year: 1884, form: "novel", language: "Spanish", minutes: 3777, local: true, gutenberg: 17073, opening: "La heroica ciudad dormía la siesta. El viento Sur, caliente y perezoso, empujaba las nubes blanqueci", breaths: 5902 },
   { id: "married", title: "Married", author: "August Strindberg", year: 1884, form: "stories", language: "Swedish", minutes: 80, local: true, opening: "The assistant had not thought of studying the price of wheat before he called on the major to ask him for the hand of his daughter; but the major had studied it.", breaths: 2049, gutenberg: 7956 },
-  { id: "with-fire-and-sword", title: "With Fire and Sword", author: "Henryk Sienkiewicz", year: 1884, form: "novel", language: "Polish", minutes: 160, gutenberg: 37027 },
+  { id: "with-fire-and-sword", title: "With Fire and Sword", author: "Henryk Sienkiewicz", year: 1884, form: "novel", language: "Polish", minutes: 2218, gutenberg: 37027,
+    local: true,
+    opening: "The year 1647 was that wonderful year in which manifold signs in the heavens and on the earth announced misfortunes of some kind and unusual events.",
+    breaths: 17740,
+  },
   {
     id: "poison-tree",
     title: "The Poison Tree",
