@@ -237,6 +237,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Praised be Jesus Christ! — Agatha and the priest on the roadside, then out into the wide world across bare autumnal fields. Winter is coming. First sit is that Chapter I greeting; the Autumn volume continues.",
   cane:
     "Karintha: her skin is like dusk on the eastern horizon. Skip Waldo Frank’s foreword. First sit ends on the dusk-song refrain; the Georgia cycle continues.",
+  generosity:
+    "An apology begins with a box of unused baby clothes and a basement mural of identical smiles. The story keeps going until the face is only itself again.",
 
 };
 
@@ -618,6 +620,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "of-one-blood",
       "maria-chapdelaine",
       "lady-into-fox",
+      "generosity",
     ],
   },
   {
@@ -1047,6 +1050,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "of-one-blood": 5,
   "maria-chapdelaine": 5,
   "lady-into-fox": 5,
+  generosity: 20,
 };
 
 export function ritualPitchFor(id: string): string | undefined {

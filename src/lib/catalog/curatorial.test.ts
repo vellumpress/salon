@@ -364,6 +364,7 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "gentlemen-prefer-blondes",
     "of-one-blood",
     "maria-chapdelaine",
+    "generosity",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -2187,6 +2188,59 @@ test("Mira 8AM CLEAR ×5 are Recommend-only local binds, never Featured", () => 
   ) as { breaths: { text: string }[] };
   assert.equal(brothersFull.breaths.length, 2693);
   assert.ok(brothersFull.breaths[0]?.text.startsWith(brothers!.opening ?? ""));
+});
+
+test("Generosity by Amber Later is an original Vellum bind on Next, never Featured", () => {
+  const id = "generosity";
+  const work = SHELF.find((item) => item.id === id);
+  assert.ok(work);
+  assert.equal(work!.title, "Generosity");
+  assert.equal(work!.author, "Amber Later");
+  assert.equal(work!.local, true);
+  assert.equal(work!.rights, "Vellum");
+  assert.equal(work!.gutenberg, undefined);
+  assert.equal(work!.language, "English");
+  assert.equal(work!.opening, "I should apologize.");
+  assert.equal(work!.breaths, 103);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false);
+  assert.equal(curatorialTrack(id), "next");
+  assert.equal(isAdaptedBySalon(id), false);
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.equal(next.at(-1), id);
+  assert.ok(next.indexOf(id) > next.indexOf("maria-chapdelaine"));
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.deepEqual(forYou!.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  assert.equal(forYou!.workIds.includes(id), false);
+  assert.equal(sleep!.workIds[0], "quicksand");
+  assert.equal(sleep!.workIds.at(-1), id);
+  assert.equal(existsSync(new URL("./openings/generosity.json", import.meta.url)), false);
+  const full = JSON.parse(readFileSync(new URL("./texts/generosity.json", import.meta.url), "utf8")) as {
+    rights?: string;
+    source?: string;
+    scenes: { title: string; reentry: string }[];
+    breaths: { text: string }[];
+    note?: string;
+  };
+  assert.equal(full.rights, "Vellum");
+  assert.equal(full.source, "original");
+  assert.equal(full.scenes.length, 2);
+  assert.equal(full.scenes[0]?.title, "Generosity");
+  assert.equal(full.scenes[1]?.title, "***");
+  assert.equal(full.breaths.length, 103);
+  assert.equal(full.breaths[0]?.text, "I should apologize.");
+  assert.equal(full.breaths.at(-1)?.text.startsWith("Moment of culture"), true);
+  assert.equal(full.breaths.filter((breath) => breath.text === "***").length, 6);
+  assert.ok(full.breaths.some((breath) => breath.text === "I’m sorry."));
+  assert.ok(full.breaths.some((breath) => breath.text === "Without walls between rooms we"));
+  assert.equal(JSON.stringify(full).includes("gutenberg.org"), false);
+  assert.equal(/public domain|Project Gutenberg/i.test(full.note ?? ""), false);
+  assert.equal(full.breaths.some((breath) => /^[A-Z][a-z]+: /.test(breath.text)), false);
 });
 
 test("Locked recommend five stay findable on ritual lanes, not a homepage rail", () => {
