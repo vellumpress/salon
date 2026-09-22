@@ -97,6 +97,11 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Steppenwolf, The Red Room, and Queen of Spades and Other Stories keep their
  * fuller local binds and stay off this Next queue. Marianela keeps the fuller
  * Clara Bell English (PG 48818) in the BATCH-10 seat.
+ * BATCH-16 CLEAR (Sep 22) sits on Next after BATCH-15 (after All Quiet),
+ * before-sleep only — never Featured, not For you. Cold-open stays
+ * Mirth → Quicksand → Botchan. Fifty Years & Other Poems, Japanese Fairy Tales,
+ * Some Chinese Ghosts, and Shadowings were already full-text local (the last
+ * three fuller than this host-one pack), so those binds stay.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -374,6 +379,23 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "tales-of-old-japan",
   "chinese-literature",
   "the-prose-tales",
+  // Mira BATCH-16 CLEAR — after All Quiet. Never Featured. Not For you.
+  "self-determining-haiti",
+  "leon-roch-vol-2",
+  "miss-julia",
+  "in-midsummer-days",
+  "the-chinese-fairy-book",
+  "japanese-fairy-world",
+  "japanese-literature",
+  "romances-of-old-japan",
+  "warriors-of-old-japan",
+  "a-history-of-chinese-literature",
+  "the-civilization-of-china",
+  "kimiko",
+  "glimpses-of-unfamiliar-japan",
+  "hebrew-literature",
+  "the-history-of-yiddish-literature",
+  "korean-folk-tales",
 ] as const;
 
 /**
