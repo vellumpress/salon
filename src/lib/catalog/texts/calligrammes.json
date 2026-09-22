@@ -1,0 +1,2239 @@
+{
+  "id": "calligrammes",
+  "title": "Calligrammes",
+  "author": "Guillaume Apollinaire",
+  "year": "1918",
+  "note": "Project Gutenberg 55569",
+  "minutes": 150,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Un Fantôme De Nuées",
+      "place": "Un Fantôme De Nuées",
+      "reentry": "Comme c'était la veille du quatorze juillet Vers les quatre heures de l'après-midi Je descendis dans la rue pour aller voir les saltimbanques",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Fumées",
+      "place": "Fumées",
+      "reentry": "Et tandis que la guerre Ensanglante la terre Je hausse les odeurs Près des couleurs-saveurs",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "La Jolie Rousse",
+      "place": "La Jolie Rousse",
+      "reentry": "Me voici devant tous un homme plein de sens Connaissant la vie et de la mort ce qu'un vivant peut connaître Ayant éprouvé les douleurs et les joies de l'amour Ayant su quelquefois imposer ses idées Connaissant plusieurs langages Ayant pas m",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "La Petite Auto",
+      "place": "La Petite Auto",
+      "reentry": "LA MANDOLINE l'ŒILLET ET LE BAMBOU",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "À Nîmes",
+      "place": "À Nîmes",
+      "reentry": "LA COLOMBE POIGNARDÉE ET LE JET D'EAU 2e CANONNIER CONDUCTEUR",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Case D'armons",
+      "place": "Case D'armons",
+      "reentry": "LOIN DU PIGEONNIER",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Reconnaissance",
+      "place": "Reconnaissance",
+      "reentry": "S. P. VISÉE 1915 CARTE POSTALE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Fête",
+      "place": "Fête",
+      "reentry": "MADELEINE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Les Saisons",
+      "place": "Les Saisons",
+      "reentry": "VENU DE DIEUZE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Lueurs Des Tirs",
+      "place": "Lueurs Des Tirs",
+      "reentry": "LA GRACE EXILÉE LA BOUCLE RETROUVÉE REFUS DE LA COLOMBE LES FEUX DU BIVOUAC LES GRENADINES REPENTANTES TOURBILLON DE MOUCHES L'ADIEU DU CAVALIER LE PALAIS DU TONNERRE PHOTOGRAPHIE L'INSCRIPTION ANGLAISE DANS L'ABRI-CAVERNE FUSÉE DÉSIR",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Chant De L'horizon En Champagne",
+      "place": "Chant De L'horizon En Champagne",
+      "reentry": "OCÉAN DE TERRE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Obus Couleur De Lune",
+      "place": "Obus Couleur De Lune",
+      "reentry": "MERVEILLE DE LA GUERRE EXERCICE À L'ITALIE LA TRAVERSÉE IL Y A L'ESPIONNE LE CHANT D'AMOUR AUSSI BIEN QUE LES CIGALES SIMULTANÉITÉS DU COTON DANS LES OREILLES",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "La Tête Étoilée",
+      "place": "La Tête Étoilée",
+      "reentry": "LE DÉPART LE VIGNERON CHAMPENOIS CARTE POSTALE ÉVENTAIL DES SAVEURS SOUVENIRS L'AVENIR UN OISEAU CHANTE CHEVAUX DE FRISE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Chant De L'honneur",
+      "place": "Chant De L'honneur",
+      "reentry": "CHEF DE SECTION TRISTESSE D'UNE ÉTOILE",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "La Victoire",
+      "place": "La Victoire",
+      "reentry": "LA JOLIE ROUSSE",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Comme c'était la veille du quatorze juillet Vers les quatre heures de l'après-midi Je descendis dans la rue pour aller voir les saltimbanques"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Ces gens qui font des tours en plein air Commencent à être rares à Paris Dans ma jeunesse on en voyait beaucoup plus qu'aujourd'hui Ils s'en sont allés presque tous en province"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Je pris le boulevard Saint-Germain Et sur une petite place située entre Saint-Germain-des-Prés et la statue de Danton Je rencontrai les saltimbanques"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "La foule les entourait muette et résignée à attendre Je me fis une place dans ce cercle afin de tout voir Poids formidables, Villes de Belgique soulevées à bras tendu par un ouvrier russe de Longwy Haltères noirs et creux qui ont pour tige un fleuve figé Doigts roulant une cigarette amère et délicieuse comme la vie"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "De nombreux tapis sales couvraient le sol Tapis qui ont des plis qu'on ne défera pas Tapis qui sont presque entièrement couleur de la poussière Et où quelques taches jaunes ou vertes ont persisté Comme un air de musique qui vous poursuit"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Vois-tu le personnage maigre et sauvage La cendre de ses pères lui sortait en barbe grisonnante Ii portait ainsi toute son hérédité au visage Il semblait rêver à l'avenir En tournant machinalement un orgue de Barbarie Dont la lente voix se lamentait merveilleusement Les glouglous les couacs et les sourds gémissements"
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Les saltimbanques ne bougeaient pas Le plus vieux avait un maillot couleur de ce rose violâtre qu'ont aux joues certaines jeunes filles fraîches mais près de la mort Ce rose-là se niche surtout dans les plis qui entourent souvent leur bouche Ou près des narines C'est un rose plein de traîtrise"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Cet homme portait-il ainsi sur le dos La teinte ignoble de ses poumons"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Les bras les bras partout montaient la garde"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Le second saltimbanque N'était vêtu que de son ombre Je le regardai longtemps Son visage m'échappe entièrement C'est un homme sans tête"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Un autre enfin avait l'air d'un voyou D'un apache bon et crapule à la fois Avec son pantalon bouffant et les accroche-chaussettes N'aurait-il pas eu l'apparence d'un maquereau à sa toilette"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "La musique se tut et ce furent des pourparlers avec le public Qui sou à sou jeta sur le tapis la somme de deux francs cinquante Au lieu des trois francs que le vieux avait fixés comme prix des tours"
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "Mais quand il fut clair que personne ne donnerait plus rien On se décida à commencer la séance De dessous l'orgue sortit un tout petit saltimbanque habillé de rose pulmonaire Avec de la fourrure aux poignets et aux chevilles Il poussait des cris brefs Et saluait en écartant gentiment les avant-bras Mains ouvertes"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Une jambe en arrière prête à la génuflexion Il salua ainsi aux quatre points cardinaux Et quand il marcha sur une boule Son corps mince devint une musique si délicate que nul parmi les spectateurs n'y fut insensible Un petit esprit sans aucune humanité Pensa chacun Et cette musique des formes Détruisit celle de l'orgue mécanique Que moulait l'homme au visage couvert d'ancêtres"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Le petit saltimbanque fit la roue Avec tant d'harmonie Que l'orgue cessa de jouer Et que l'organiste se cacha le visage dans les mains Aux doigts semblables aux descendants de son destin Fœtus minuscules qui lui sortaient de la barbe Nouveaux cris de Peau-Rouge Musique angélique des arbres Disparition de l'enfant"
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Les saltimbanques soulevèrent les gros haltères à bout de bras Ils jonglèrent avec les poids"
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Mais chaque spectateur cherchait en soi l'enfant miraculeux Siècle ô siècle des nuages"
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "TOUR"
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "*À R. D.*"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Au Nord au Sud Zénith Nadir Et les grands cris de l'Est L'Océan se gonfle à l'Ouest La Tour à la Roue S'adresse"
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "À TRAVERS L'EUROPE"
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "*À M. Ch.*"
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Rotsoge Ton visage écarlate ton biplan transformable en hydroplan Ta maison ronde où il nage un hareng saur Il me faut la clef des paupières Heureusement que nous avons vu M. Panado Et nous sommes tranquilles de ce côté-là Qu'est-ce que tu vois mon vieux M. D... 90 ou 324 un homme en l'air un veau qui regarde à travers le ventre de sa mère"
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "J'ai cherché longtemps sur les routes Tant d'yeux sont clos au bord des routes Le vent fait pleurer les saussaies Ouvre ouvre ouvre ouvre ouvre Regarde mais regarde donc Le vieux se lave les pieds dans la cuvette Una volta ho inteso dire Chè vuoi Je me mis à pleurer en me souvenant de vos enfances"
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Et toi tu me montres un violet épouvantable"
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Ce petit tableau où il y a une voiture m'a rappelé le jour Un jour fait de morceaux mauves jaunes bleus verts et rouges Où je m'en allais à la campagne avec une charmante cheminée tenant sa chienne en laisse Il n'y en a plus tu n'as plus ton petit mirliton La cheminée fume loin de moi des cigarettes russes La chienne aboie contre les lilas La veilleuse est consumée Sur la robe ont chu des pétales Deux anneaux d'or près des sandales Au soleil se sont allumés Mais tes cheveux sont le trolley À travers l'Europe vêtue de petits feux multicolores"
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "ÉTENDARDS"
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "LA PETITE AUTO"
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "Le 31 du mois d'Août 1914 Je partis de Deauville un peu avant minuit Dans la petite auto de Rouveyre"
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "Avec son chauffeur nous étions trois"
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "Nous dîmes adieu à toute une époque Des géants furieux se dressaient sur l'Europe Les aigles quittaient leur aire attendant le soleil Les poissons voraces montaient des abîmes Les peuples accouraient pour se connaître à fond Les morts tremblaient de peur dans leurs sombres demeures"
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "Les chiens aboyaient vers là-bas où étaient les frontières Je m'en allais portant en moi toutes ces armées qui se battaient Je les sentais monter en moi et s'étaler les contrées où elles serpentaient Avec les forêts les villages heureux de la Belgique Francorchamps avec l'Eau Rouge et les pouhons Région par où se font toujours les invasions Artères ferroviaires où ceux qui s'en allaient mourir Saluaient encore une fois la vie colorée Océans profonds où remuaient les monstres Dans les vieilles carcasses naufragées Hauteurs inimaginables où l'homme combat Plus haut que l'aigle ne plane L'homme y combat contre l'homme Et descend tout à coup comme une étoile filante"
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "Je sentais en moi des êtres neufs pleins de dextérité Bâtir et aussi agencer un univers nouveau Un marchand d'une opulence inouïe et d'une taille prodigieuse Disposait un étalage extraordinaire Et des bergers gigantesques menaient De grands troupeaux muets qui broutaient les paroles Et contre lesquels aboyaient tous les chiens sur la route Et quand après avoir passé l'après-midi Par Fontainebleau"
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Nous arrivâmes à Paris Au moment où l'on affichait la mobilisation Nous comprîmes mon camarade et moi Que la petite auto nous avait conduits dans une époque Nouvelle Et bien qu'étant déjà tous deux des hommes mûrs Nous venions cependant de naître"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Et tandis que la guerre Ensanglante la terre Je hausse les odeurs Près des couleurs-saveurs"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Et je fu m e"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "du"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "ta bac de ZoNE"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Des fleurs à ras du sol regardent par bouffées Les boucles des odeurs par tes mains décoiffées Mais je connais aussi les grottes parfumées Où gravite l'azur unique des fumées Où plus doux que la nuit et plus pur que le jour. Tu t'étends comme un dieu fatigué par l'amour Tu fascines les flammes Elles rampent à les pieds Ces nonchalantes femmes Tes feuilles de papier"
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "À NÎMES"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "*À Emile Léonard*"
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Je me suis engagé sous le plus beau des cieux Dans Nice la Marine au nom victorieux"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "Perdu parmi 900 conducteurs anonymes Je suis un charretier du neuf charroi de Nîmes"
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "L'Amour dit Reste ici Mais là-bas les obus Épousent ardemment et sans cesse les buts"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "J'attends que le printemps commande que s'en aille Vers le nord glorieux l'intrépide bleusaille"
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "Les 3 servants assis dodelinent leurs fronts Où brillent leurs yeux clairs comme mes éperons"
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "Un bel après-midi de garde à l'écurie J'entends sonner les trompettes d'artillerie"
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "J'admire la gaîté de ce détachement Qui va rejoindre au front notre beau régiment"
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "Le territorial se mange une salade À l'anchois en parlant de sa femme malade"
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "4 pointeurs fixaient les bulles des niveaux Qui remuaient ainsi que les yeux des chevaux"
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "Le bon chanteur Girault nous chante après 9 heures Un grand air d'opéra toi l'écoutant tu pleures"
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "Je flatte de la main le petit canon gris Gris comme l'eau de Seine et je songe à Paris"
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "Mais ce pâle blessé m'a dit à la cantine Des obus dans la nuit la splendeur argentine"
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "Je mâche lentement ma portion de bœuf Je me promène seul le soir de 5 à 9"
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "Je selle mon cheval nous battons la campagne Je te salue au loin belle rose ô tour Magne"
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "2e CANONNIER CONDUCTEUR"
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "Me voici libre et fier parmi mes compagnons Le Réveil a sonné et dans le petit jour je salue La fameuse Nancéenne que je n'ai pas connue"
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "Les 3 servants bras dessus bras dessous se sont endormis sur l'avant-train Et conducteur par mont par vol sur le porteur Au pas au trot ou au galop je conduis le canon Le bras de l'officier est mon étoile polaire Il pleut mon manteau est trempé et je m'essuie parfois la figure Avec la serviette-torchon qui est dans la sacoche du sous-verge Voici des fantassins aux pas pesants aux pieds boueux La pluie les pique de ses aiguilles le sac les suit"
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "Fantassins Marchantes mottes de terre Vous êtes la puissance Du sol qui vous a faits Et c'est le sol qui va Lorsque vous avancez Un officier passe au galop Comme un ange bleu dans la pluie grise Un blessé chemine en fumant une pipe Le lièvre détale et voici un ruisseau que j'aime Et cette jeune femme nous salue charretiers La Victoire se tient après nos jugulaires Et calcule pour nos canons les mesures angulaires Nos salves nos rafales sont ses cris de joie Ses fleurs sont nos obus aux gerbes merveilleuses Sa pensée se recueille aux tranchées glorieuses"
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "J'ENTENDS C H A L N E TER l'oiseau B E EL OISEAU RAPAC"
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "VEILLE"
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "Mon cher André Rouveyre Troudla la Champignon Tabatière On ne sait quand on partira Ni quand on reviendra"
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "Au Mercure de France Mars revient tout couleur d'espérance J'ai envoyé mon papier Sur papier quadrillé"
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "J'entends les pas des grands chevaux d'artillerie allant au trot sur la grand-route où moi je veille Un grand manteau gris de crayon comme le ciel m'enveloppe jusqu'à l'oreille"
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "Quel Ciel Triste Piste Où Va le Pâle Sou- rire De la lune qui me regarde écrire"
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "OMBRE"
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "Vous voilà de nouveau près de moi Souvenirs de mes compagnons morts à la guerre L'olive du temps Souvenirs qui n'en faites plus qu'un Comme cent fourrures ne font qu'un manteau Comme ces milliers de blessures ne font qu'un article de journal Apparence impalpable et sombre qui avez pris La forme changeante de mon ombre Un indien à l'affût pendant l'éternité Ombre vous rampez près de moi Mais vous ne m'entendez plus Vous ne connaîtrez plus les poèmes divins que je chante Tandis que moi je vous entends je vous vois encore Destinées Ombre multiple que le soleil vous garde Vous qui m'aimez assez pour ne jamais me quitter Et qui dansez au soleil sans faire de poussière Ombre encre du soleil Écriture de ma lumière Caisson de regrets Un dieu qui s'humilie"
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "C'EST LOU QU'ON LA NOMMAIT"
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "Il est des loups de toute sorte Je connais le plus inhumain Mon cœur que le diable l'emporte Et qu'il le dépose à sa porte N'est plus qu'un jouet dans sa main"
+    },
+    {
+      "id": "s1-35",
+      "sceneId": "s1",
+      "text": "Les loups jadis étaient fidèles Comme sont les petits toutous Et les soldats amants des belles Galamment en souvenir d'elles Ainsi que les loups étaient doux"
+    },
+    {
+      "id": "s1-36",
+      "sceneId": "s1",
+      "text": "Mais aujourd'hui les temps sont pires Les loups sont tigres devenus Et les Soldats et les Empires Les Césars devenus Vampires Sont aussi cruels que Vénus"
+    },
+    {
+      "id": "s1-37",
+      "sceneId": "s1",
+      "text": "J'en ai pris mon parti Rouveyre Et monté sur mon grand cheval Je vais bientôt partir en guerre Sans pitié chaste et l'œil sévère Comme ces guerriers qu'Épinal"
+    },
+    {
+      "id": "s1-38",
+      "sceneId": "s1",
+      "text": "Vendait Images populaires Que Georgin gravait dans le bois Où sont-ils ces beaux militaires Soldats passés Où sont les guerres Où sont les guerres d'autrefois"
+    },
+    {
+      "id": "s1-39",
+      "sceneId": "s1",
+      "text": "CASE D'ARMONS"
+    },
+    {
+      "id": "s1-40",
+      "sceneId": "s1",
+      "text": "La 1re édition à 25 exemplaires de *Case d'Armons* a été polygraphiée sur papier quadrillé, à l'encre violette, au moyen de gélatine, à la batterie de tir (45e batterie, 38e Régiment d'artillerie de campagne) devant l'ennemi, et le tirage a été achevé le 17 juin 1915."
+    },
+    {
+      "id": "s1-41",
+      "sceneId": "s1",
+      "text": "RECONNAISSANCE"
+    },
+    {
+      "id": "s1-42",
+      "sceneId": "s1",
+      "text": "*À Mademoiselle P...*"
+    },
+    {
+      "id": "s1-43",
+      "sceneId": "s1",
+      "text": "Un seul bouleau crépusculaire Pâlit au seuil de l'horizon Où fuit la mesure angulaire Du cœur à l'âme et la raison"
+    },
+    {
+      "id": "s1-44",
+      "sceneId": "s1",
+      "text": "Le galop bleu des souvenances Traverse les lilas des yeux"
+    },
+    {
+      "id": "s1-45",
+      "sceneId": "s1",
+      "text": "Et les canons des indolences Tirent nies songes vers les cieux"
+    },
+    {
+      "id": "s1-46",
+      "sceneId": "s1",
+      "text": "SAILLANT"
+    },
+    {
+      "id": "s1-47",
+      "sceneId": "s1",
+      "text": "*À André Level*"
+    },
+    {
+      "id": "s1-48",
+      "sceneId": "s1",
+      "text": "Rapidité attentive à peine un peu d'incertitude Mais un dragon à pied sans armes Parmi le vent quand survient la"
+    },
+    {
+      "id": "s1-49",
+      "sceneId": "s1",
+      "text": "S torpille aérienne A Le balai de verdure Grain Salut L T'en souviens-tu de La Rapace U Il est ici dans les pierres blé T Du beau royaume dévasté"
+    },
+    {
+      "id": "s1-50",
+      "sceneId": "s1",
+      "text": "Mais la couleuvre me regarde dressée comme une épée"
+    },
+    {
+      "id": "s1-51",
+      "sceneId": "s1",
+      "text": "Vive comme un cheval pif Un trou d'obus propre comme une salle de bain Berger suivi de son troupeau mordoré Mais où est un cœur et le svastica"
+    },
+    {
+      "id": "s1-52",
+      "sceneId": "s1",
+      "text": "Aÿ Ancien nom du renom Le crapaud chantait les saphirs nocturnes"
+    },
+    {
+      "id": "s1-53",
+      "sceneId": "s1",
+      "text": "Lou [Illustration: VIVE LE CAPISTON] Lou Verzy"
+    },
+    {
+      "id": "s1-54",
+      "sceneId": "s1",
+      "text": "Et le long du canal des filles s'en allaient"
+    },
+    {
+      "id": "s1-55",
+      "sceneId": "s1",
+      "text": "GUERRE"
+    },
+    {
+      "id": "s1-56",
+      "sceneId": "s1",
+      "text": "Rameau central de combat Contact par l'écoute Ou tire dans la direction «des bruits entendus» Les jeunes de la classe 1915 Et ces fils de fer électrisés Ne pleurez donc pas sur les horreurs de la guerre Avant elle nous n'avions que la surface De la terre et des mers Après elle nous aurons les abîmes Le sous-sol et l'espace aviatique Maîtres du timon Après après Nous prendrons toutes les joies Des vainqueurs qui se délassent Femmes Jeux Usines Commerce Industrie Agriculture Métal Feu Cristal Vitesse Voix Regard Tact à part Et ensemble dans le tact venu de loin De plus loin encore De l'Au-delà de cette terre"
+    },
+    {
+      "id": "s1-57",
+      "sceneId": "s1",
+      "text": "MUTATION"
+    },
+    {
+      "id": "s1-58",
+      "sceneId": "s1",
+      "text": "Une femme qui pleurait Eh! Oh! Ha! Des soldats qui passaient Eh! Oh! Ha! Un éclusier qui pêchait Eh! Oh! Ha! Les tranchées qui blanchissaient Eh! Oh! Ha! Des obus qui pétaient Eh! Oh! Ha! Des allumettes qui ne prenaient pas Et tout A tant changé En moi Tout Sauf mon Amour Eh! Oh! Ha!"
+    },
+    {
+      "id": "s1-59",
+      "sceneId": "s1",
+      "text": "ORACLES"
+    },
+    {
+      "id": "s1-60",
+      "sceneId": "s1",
+      "text": "Je porte votre bague Elle est très finement ciselée Le sifflet me fait plus plaisir Qu'un palais égyptien Le sifflet des tranchées Tu sais Tout au plus si je n'arrête pas Les métros et les taxis avec Ô Guerre Multiplication de l'amour"
+    },
+    {
+      "id": "s1-61",
+      "sceneId": "s1",
+      "text": "PETIT Avec un fil SIFFLET on prend à 2 trous la mesure du doigt"
+    },
+    {
+      "id": "s1-62",
+      "sceneId": "s1",
+      "text": "14 JUIN 1915"
+    },
+    {
+      "id": "s1-63",
+      "sceneId": "s1",
+      "text": "On ne peut rien dire Rien de ce qui se passe Mais on change de Secteur Ah! voyageur égaré Pas de lettres Mais l'espoir Mais un journal Le glaive antique de la Marseillaise de Rude S'est changé en constellation Il combat pour nous au ciel Mais cela signifie surtout Qu'il faut être de ce temps Pas de glaive antique Pas de Glaive Mais l'Espoir"
+    },
+    {
+      "id": "s1-64",
+      "sceneId": "s1",
+      "text": "DE LA BATTERIE DE TIR"
+    },
+    {
+      "id": "s1-65",
+      "sceneId": "s1",
+      "text": "*Au maréchal des logis F. Bodard*"
+    },
+    {
+      "id": "s1-66",
+      "sceneId": "s1",
+      "text": "Nous sommes ton collier France Venus des Atlantides ou bien des Négrities Des Eldorados ou bien des Cimméries Rivière d'hommes forts et d'obus dont l'orient chatoie Diamants qui éclosent la nuit Ô Roses ô France Nous nous pâmons de volupté À ton cou penché vers l'Est Nous sommes l'Arc-en-terre Signe plus pur que l'Arc-en-Ciel Signe de nos origines profondes Étincelles Ô nous les très belles couleurs"
+    },
+    {
+      "id": "s1-67",
+      "sceneId": "s1",
+      "text": "ÉCHELON"
+    },
+    {
+      "id": "s1-68",
+      "sceneId": "s1",
+      "text": "Grenouilles et rainettes Crapauds et crapoussins Ascèse sous les peupliers et les frênes La reine des prés va fleurir Une petite hutte dans la forêt Là-bas plus blanche est la blessure"
+    },
+    {
+      "id": "s1-69",
+      "sceneId": "s1",
+      "text": "Le Ciel"
+    },
+    {
+      "id": "s1-70",
+      "sceneId": "s1",
+      "text": "Coquelicots Flacon au col d'or On a pendu la mort À la lisière du bois On a pendu la mort Et ses beaux seins dorés Se montrent tour à tour"
+    },
+    {
+      "id": "s1-71",
+      "sceneId": "s1",
+      "text": "[VERT. gauche et droite]"
+    },
+    {
+      "id": "s1-72",
+      "sceneId": "s1",
+      "text": "On tire contre avions Verdun"
+    },
+    {
+      "id": "s1-73",
+      "sceneId": "s1",
+      "text": "L'orvet *Le sac à malice* *La trousse à boutons*"
+    },
+    {
+      "id": "s1-74",
+      "sceneId": "s1",
+      "text": "Ô rose toujours vive Ô France Embaume les espoirs d'une armée qui halète"
+    },
+    {
+      "id": "s1-75",
+      "sceneId": "s1",
+      "text": "Le Loriot chante"
+    },
+    {
+      "id": "s1-76",
+      "sceneId": "s1",
+      "text": "N'est-ce pas rigolo"
+    },
+    {
+      "id": "s1-77",
+      "sceneId": "s1",
+      "text": "Enfin une plume d'épervier"
+    },
+    {
+      "id": "s1-78",
+      "sceneId": "s1",
+      "text": "VERS LE SUD"
+    },
+    {
+      "id": "s1-79",
+      "sceneId": "s1",
+      "text": "Zénith Tous ces regrets Ces jardins sans limite Où le crapaud module un tendre cri d'azur La biche du silence éperdu passe vite Un rossignol meurtri par l'amour chante sur Le rosier de ton corps dont j'ai cueilli les roses Nos cœurs pendent ensemble au même grenadier Et les fleurs de grenade en nos regards écloses En tombant tour à tour ont jonché le sentier"
+    },
+    {
+      "id": "s1-80",
+      "sceneId": "s1",
+      "text": "LES SOUPIRS DU SERVANT DE DAKAR"
+    },
+    {
+      "id": "s1-81",
+      "sceneId": "s1",
+      "text": "C'est dans la cagnat en rondins voilés d'osier Auprès des canons gris tournés vers le nord Que je songe au village africain Où l'on dansait où l'on chantait où l'on faisait l'amour Et de longs discours Nobles et joyeux"
+    },
+    {
+      "id": "s1-82",
+      "sceneId": "s1",
+      "text": "Je revois mon père qui se battit Contre les Achantis Au service des Anglais Je revois ma sœur au rire en folie Aux seins durs comme des obus Et je revois Ma mère la sorcière qui seule du village Méprisait le sel Piler le millet dans un mortier Je me souviens du si délicat si inquiétant Fétiche dans l'arbre Et du double fétiche de la fécondité"
+    },
+    {
+      "id": "s1-83",
+      "sceneId": "s1",
+      "text": "Plus tard une tête coupée Au bord d'un marécage Ô pâleur de mon ennemi C'était une tête d'argent Et dans le marais C'était la lune qui luisait C'était donc une tête d'argent Là-haut c'était la lune qui dansait C'était donc une tête d'argent Et moi dans l'antre j'étais invisible C'était donc une tête de nègre dans la nuit profonde Similitudes Pâleurs Et ma sœur Suivit plus tard un tirailleur Mort à Arras"
+    },
+    {
+      "id": "s1-84",
+      "sceneId": "s1",
+      "text": "Si je voulais savoir mon âge Il faudrait le demander à l'évêque Si doux si doux avec ma mère De beurre de beurre avec ma sœur C'était dans une petite cabane Moins sauvage que notre cagnat de canonniers-servants J'ai connu l'affût au bord des marécages Où la girafe boit les jambes écartées"
+    },
+    {
+      "id": "s1-85",
+      "sceneId": "s1",
+      "text": "J'ai connu l'horreur de l'ennemi qui dévaste Le Village Viole les femmes Emmène les filles Et les garçons dont la croupe dure sursaute J'ai porté l'administrateur des semaines De village en village En chantonnant Et je fus domestique à Paris Je ne sais pas mon âge Mais au recrutement On m'a donné vingt ans Je suis soldat français on m'a blanchi du coup Secteur 59 je ne peux pas dire où Pourquoi donc être blanc est-ce mieux qu'être noir Pourquoi ne pas danser et discourir Manger et puis dormir Et nous tirons sur les ravitaillements boches Ou sur les fils de fer devant les bobosses Sous la tempête métallique Je me souviens d'un lac affreux Et de couples enchaînés par un atroce amour Une nuit folle Une nuit de sorcellerie Comme cette nuit-ci Où tant d'affreux regards Éclatent dans le ciel splendide"
+    },
+    {
+      "id": "s1-86",
+      "sceneId": "s1",
+      "text": "TOUJOURS"
+    },
+    {
+      "id": "s1-87",
+      "sceneId": "s1",
+      "text": "*À Madame Faure-Favier*"
+    },
+    {
+      "id": "s1-88",
+      "sceneId": "s1",
+      "text": "Toujours Nous irons plus loin sans avancer jamais"
+    },
+    {
+      "id": "s1-89",
+      "sceneId": "s1",
+      "text": "Et de planète en planète De nébuleuse en nébuleuse Le don Juan des mille et trois comètes Même sans bouger de la terre Cherche les forces neuves Et prend au sérieux les fantômes"
+    },
+    {
+      "id": "s1-90",
+      "sceneId": "s1",
+      "text": "Et tant d'univers s'oublient Quels sont les grands oublieurs Qui donc saura nous faire oublier telle ou telle partie du monde Où est le Christophe Colomb à qui l'on devra l'oubli d'un continent"
+    },
+    {
+      "id": "s1-91",
+      "sceneId": "s1",
+      "text": "Perdre Mais perdre vraiment Pour laisser place à la trouvaille Perdre La vie pour trouver la Victoire"
+    },
+    {
+      "id": "s1-92",
+      "sceneId": "s1",
+      "text": "FÊTE"
+    },
+    {
+      "id": "s1-93",
+      "sceneId": "s1",
+      "text": "*À André Rouveyre*"
+    },
+    {
+      "id": "s1-94",
+      "sceneId": "s1",
+      "text": "Feu d'artifice en acier Qu'il est charmant cet éclairage Artifice d'artificier Mêler quelque grâce au courage"
+    },
+    {
+      "id": "s1-95",
+      "sceneId": "s1",
+      "text": "Deux fusants Rose éclatement Comme deux seins que l'on dégrafe Tendent leurs bouts insolemment IL SUT AIMER quelle épitaphe"
+    },
+    {
+      "id": "s1-96",
+      "sceneId": "s1",
+      "text": "Un poète dans la forêt Regarde avec indifférence Son revolver au cran d'arrêt Des roses mourir d'espérance"
+    },
+    {
+      "id": "s1-97",
+      "sceneId": "s1",
+      "text": "Il songe aux roses de Saadi Et soudain sa tête se penche Car une rose lui redit La molle courbe d'une hanche"
+    },
+    {
+      "id": "s1-98",
+      "sceneId": "s1",
+      "text": "L'air est plein d'un terrible alcool Filtré des étoiles mi-closes Les obus caressent le mol Parfum nocturne où tu reposes Mortification des roses"
+    },
+    {
+      "id": "s1-99",
+      "sceneId": "s1",
+      "text": "LES SAISONS"
+    },
+    {
+      "id": "s1-100",
+      "sceneId": "s1",
+      "text": "C'était un temps béni nous étions sur les plages Va-t'en de bon matin pieds nus et sans chapeau Et vite comme va la langue d'un crapaud L'amour blessait au cœur les fous comme les sages"
+    },
+    {
+      "id": "s1-101",
+      "sceneId": "s1",
+      "text": "As-tu connu Guy au galop Du temps qu'il était militaire As-tu connu Guy au galop Du temps qu'il était artiflot À la guerre"
+    },
+    {
+      "id": "s1-102",
+      "sceneId": "s1",
+      "text": "C'était un temps béni Le temps du vaguemestre On est bien plus serré que dans les autobus Et des astres passaient que singeaient les obus Quand dans la nuit survint la batterie équestre"
+    },
+    {
+      "id": "s1-103",
+      "sceneId": "s1",
+      "text": "As-tu connu Guy au galop Du temps qu'il était militaire As-tu connu Guy au galop Du temps qu'il était artiflot À la guerre"
+    },
+    {
+      "id": "s1-104",
+      "sceneId": "s1",
+      "text": "C'était un temps béni Jours vagues et nuits vagues Les marmites donnaient aux rondins des cagnats Quelque aluminium où tu t'ingénias À limer jusqu'au soir d'invraisemblables bagues"
+    },
+    {
+      "id": "s1-105",
+      "sceneId": "s1",
+      "text": "As-tu connu Guy au galop Du temps qu'il était militaire As-tu connu Guy au galop Du temps qu'il était artiflot À la guerre"
+    },
+    {
+      "id": "s1-106",
+      "sceneId": "s1",
+      "text": "C'était un temps béni La guerre continue Les Servants ont limé la bague au long des mois Le Conducteur écoute abrité dans les bois La chanson que répète une étoile inconnue"
+    },
+    {
+      "id": "s1-107",
+      "sceneId": "s1",
+      "text": "As-tu connu Guy au galop Du temps qu'il était militaire As-tu connu Guy au galop Du temps qu'il était artiflot À la guerre"
+    },
+    {
+      "id": "s1-108",
+      "sceneId": "s1",
+      "text": "LA NUIT D'AVRIL 1915"
+    },
+    {
+      "id": "s1-109",
+      "sceneId": "s1",
+      "text": "*À L. de C.--C.*"
+    },
+    {
+      "id": "s1-110",
+      "sceneId": "s1",
+      "text": "Le ciel est étoilé par les obus des Boches La forêt merveilleuse où je vis donne un bal La mitrailleuse joue un air à triples-croches Mais avez-vous le mot Eh! oui le mot fatal Aux créneaux Aux créneaux Laissez là les pioches"
+    },
+    {
+      "id": "s1-111",
+      "sceneId": "s1",
+      "text": "Comme un astre éperdu qui cherche ses saisons Cœur obus éclaté tu sifflais ta romance Et tes mille soleils ont vidé les caissons Que les dieux de mes yeux remplissent en silence"
+    },
+    {
+      "id": "s1-112",
+      "sceneId": "s1",
+      "text": "Nous vous aimons ô vie et nous vous agaçons"
+    },
+    {
+      "id": "s1-113",
+      "sceneId": "s1",
+      "text": "Les obus miaulaient un amour à mourir Un amour qui se meurt est plus doux que les autres Ton souffle nage au fleuve où le sang va tarir"
+    },
+    {
+      "id": "s1-114",
+      "sceneId": "s1",
+      "text": "Les obus miaulaient Entends chanter les nôtres Pourpre amour salué par ceux qui vont périr"
+    },
+    {
+      "id": "s1-115",
+      "sceneId": "s1",
+      "text": "Le printemps tout mouillé la veilleuse l'attaque"
+    },
+    {
+      "id": "s1-116",
+      "sceneId": "s1",
+      "text": "Il pleut mon âme il pleut mais il pleut des yeux morts"
+    },
+    {
+      "id": "s1-117",
+      "sceneId": "s1",
+      "text": "Ulysse que de jours pour rentrer dans Ithaque"
+    },
+    {
+      "id": "s1-118",
+      "sceneId": "s1",
+      "text": "Couche-toi sur la paille et songe un beau remords Qui pur effet de l'art soit aphrodisiaque"
+    },
+    {
+      "id": "s1-119",
+      "sceneId": "s1",
+      "text": "Mais orgues aux fétus de la paille où tu dors L'hymne de l'avenir est paradisiaque"
+    },
+    {
+      "id": "s1-120",
+      "sceneId": "s1",
+      "text": "LUEURS DES TIRS"
+    },
+    {
+      "id": "s1-121",
+      "sceneId": "s1",
+      "text": "LA GRACE EXILÉE"
+    },
+    {
+      "id": "s1-122",
+      "sceneId": "s1",
+      "text": "Va-t'en va-t'en mon arc-en-ciel Allez-vous-en couleurs charmantes Cet exil t'est essentiel Infante aux écharpes changeantes"
+    },
+    {
+      "id": "s1-123",
+      "sceneId": "s1",
+      "text": "Et l'arc-en-ciel est exilé Puisqu'on exile qui l'irise Mais un drapeau s'est envolé Prendre ta place au vent de bise"
+    },
+    {
+      "id": "s1-124",
+      "sceneId": "s1",
+      "text": "LA BOUCLE RETROUVÉE"
+    },
+    {
+      "id": "s1-125",
+      "sceneId": "s1",
+      "text": "Il retrouve dans sa mémoire La boucle de cheveux châtains T'en souvient-il à n'y point croire De nos deux étranges destins"
+    },
+    {
+      "id": "s1-126",
+      "sceneId": "s1",
+      "text": "Du boulevard de la Chapelle Du joli Montmartre et d'Auteuil Je me souviens murmure-t-elle Du jour où j'ai franchi ton seuil"
+    },
+    {
+      "id": "s1-127",
+      "sceneId": "s1",
+      "text": "Il y tomba comme un automne La boucle de mon souvenir Et notre destin qui t'étonne Se joint au jour qui va finir"
+    },
+    {
+      "id": "s1-128",
+      "sceneId": "s1",
+      "text": "REFUS DE LA COLOMBE"
+    },
+    {
+      "id": "s1-129",
+      "sceneId": "s1",
+      "text": "Mensonge de l'Annonciade La Noël fut la Passion Et qu'elle était charmante et sade Cette renonciation"
+    },
+    {
+      "id": "s1-130",
+      "sceneId": "s1",
+      "text": "Si la colombe poignardée Saigne encore de ses refus J'en plume les ailes l'idée Et le poème que tu fus"
+    },
+    {
+      "id": "s1-131",
+      "sceneId": "s1",
+      "text": "LES FEUX DU BIVOUAC"
+    },
+    {
+      "id": "s1-132",
+      "sceneId": "s1",
+      "text": "Les feux mouvants du bivouac Éclairent des formes de rêve Et le songe dans l'entrelac Des branches lentement s'élève"
+    },
+    {
+      "id": "s1-133",
+      "sceneId": "s1",
+      "text": "Voici les dédains du regret Tout écorché comme une fraise Le souvenir et le secret Dont il ne reste que la braise"
+    },
+    {
+      "id": "s1-134",
+      "sceneId": "s1",
+      "text": "LES GRENADINES REPENTANTES"
+    },
+    {
+      "id": "s1-135",
+      "sceneId": "s1",
+      "text": "En est-il donc deux dans Grenade Qui pleurent sur ton seul péché Ici l'on jette la grenade Qui se change en un œuf coché"
+    },
+    {
+      "id": "s1-136",
+      "sceneId": "s1",
+      "text": "Puisqu'il en naît des coqs Infante Entends-les chanter leurs dédains Et que la grenade est touchante Dans nos effroyables jardins"
+    },
+    {
+      "id": "s1-137",
+      "sceneId": "s1",
+      "text": "TOURBILLON DE MOUCHES"
+    },
+    {
+      "id": "s1-138",
+      "sceneId": "s1",
+      "text": "Un cavalier va dans la plaine La jeune fille pense à lui Et cette flotte à Mitylène Le fil de fer est là qui luit"
+    },
+    {
+      "id": "s1-139",
+      "sceneId": "s1",
+      "text": "Comme ils cueillaient la rose ardente Leurs jeux tout à coup ont fleuri Mais quel soleil la bouche errante À qui la bouche avait souri"
+    },
+    {
+      "id": "s1-140",
+      "sceneId": "s1",
+      "text": "L'ADIEU DU CAVALIER"
+    },
+    {
+      "id": "s1-141",
+      "sceneId": "s1",
+      "text": "Ah Dieu! que la guerre est jolie Avec ses chants ses longs loisirs Cette bague je l'ai polie Le vent se mêle à vos soupirs"
+    },
+    {
+      "id": "s1-142",
+      "sceneId": "s1",
+      "text": "Adieu! voici le boute-selle Il disparut dans un tournant Et mourut là-bas tandis qu'elle Riait au destin surprenant"
+    },
+    {
+      "id": "s1-143",
+      "sceneId": "s1",
+      "text": "LE PALAIS DU TONNERRE"
+    },
+    {
+      "id": "s1-144",
+      "sceneId": "s1",
+      "text": "Par l'issue ouverte sur le boyau dans la craie En regardant le paroi adverse qui semble en nougat On voit à gauche et à droite fuir l'humide couloir désert Où meurt étendue une pelle à la face effrayante à deux yeux réglementaires qui servent à l'attacher sous les caissons Un rat y recule en hâte tandis que j'avance en hâte Et le boyau s'en va couronné de craie semée de branches Comme un fantôme creux qui met du vide où il passe blanchâtre Et là-haut le toit est bleu et couvre bien le regard fermé par quelques lignes droites Mais en deçà de l'issue c'est le palais bien nouveau et qui paraît ancien Le plafond est fait de traverses de chemin de fer Entre lesquelles il y a des morceaux de craie et des touffes d'aiguilles de sapin Et de temps en temps des débris de craie tombent comme des morceaux de vieillesse"
+    },
+    {
+      "id": "s1-145",
+      "sceneId": "s1",
+      "text": "À côté de l'issue que ferme un tissu lâche d'une espèce qui sert généralement aux emballages Il y a un trou qui tient lieu d'âtre et ce qui y brûle est un feu semblable à l'âme Tant il tourbillonne et tant il est inséparable de ce qu'il dévore et fugitif Les fils de fer se tendent partout servant de sommier supportant des planches Ils forment aussi des crochets et l'on y suspend mille choses Comme on fait à la mémoire Des musettes bleues des casques bleus des cravates bleues des vareuses bleues Morceaux du ciel tissus des souvenirs les plus purs Et il flotte parfois en l'air de vagues nuages de craie"
+    },
+    {
+      "id": "s1-146",
+      "sceneId": "s1",
+      "text": "Sur la planche brillent des fusées détonateurs joyaux dorés à tête émaillée Noirs blancs rouges Funambules qui attendent leur tour de passer sur les trajectoires Et font un ornement mince et élégant à cette demeure souterraine Ornée de six lits placés en fer à cheval Six lits couverts de riches manteaux bleus"
+    },
+    {
+      "id": "s1-147",
+      "sceneId": "s1",
+      "text": "Sur le palais il y a un haut tumulus de craie Et des plaques de tôle ondulée Fleuve figé de ce domaine idéal Mais privé d'eau car ici il ne roule que le feu jailli de la mélinite Le parc aux fleurs de fulminate jaillit des trous penchés Tas de cloches aux doux sons des douilles rutilantes Sapins élégants et petits comme en un paysage japonais Le palais s'éclaire parfois d'une bougie à la flamme aussi petite qu'une souris Ô palais minuscule comme si on te regardait par le gros bout d'une lunette Petit palais où tout s'assourdit Petit palais où tout est neuf rien rien d'ancien Et où tout est précieux où tout le monde est vêtu comme un roi Une selle est dans un coin à cheval sur une caisse Un journal du jour traîne par terre Et cependant tout paraît vieux dans cette neuve demeure Si bien qu'on comprend que l'amour de l'antique Le goût de l'anticaille Soit venu aux hommes dès le temps des cavernes Tout y était si précieux et si neuf Tout y est si précieux et si neuf Qu'une chose plus ancienne ou qui a déjà servi y apparaît Plus précieuse Que ce qu'on a sous la main Dans ce palais souterrain creusé dans la craie si blanche et si neuve Et deux marches neuves Elles n'ont pas deux semaines Sont si vieilles et si usées dans ce palais qui semble antique sans imiter l'antique Qu'on voit que ce qu'il y a de plus simple de plus neuf est ce qui est Le plus près de ce que l'on appelle la beauté antique Et ce qui est surchargé d'ornements A besoin de vieillir pour avoir la beauté qu'on appelle antique Et qui est la noblesse la force l'ardeur l'âme l'usure De ce qui est neuf et qui sert Surtout si cela est simple simple Aussi simple que le petit palais du tonnerre"
+    },
+    {
+      "id": "s1-148",
+      "sceneId": "s1",
+      "text": "PHOTOGRAPHIE"
+    },
+    {
+      "id": "s1-149",
+      "sceneId": "s1",
+      "text": "Ton sourire m'attire comme Pourrait m'attirer une fleur Photographie tu es le champignon brun De la forêt Qu'est sa beauté Les blancs y sont Un clair de lune Dans un jardin pacifique Plein d'eaux vives et de jardiniers endiablés Photographie tu es la fumée de l'ardeur Qu'est sa beauté Et il y a en toi Photographie Des tons alanguis On y entend Une mélopée Photographie tu es l'ombre Du Soleil Qu'est sa beauté"
+    },
+    {
+      "id": "s1-150",
+      "sceneId": "s1",
+      "text": "L'INSCRIPTION ANGLAISE"
+    },
+    {
+      "id": "s1-151",
+      "sceneId": "s1",
+      "text": "C'est quelque chose de si ténu de si lointain Que d'y penser on arrive à le trop matérialiser Forme limitée par la mer bleue Par la rumeur d'un train en marche Par l'odeur des eucalyptus des mimosas Et des pins maritimes"
+    },
+    {
+      "id": "s1-152",
+      "sceneId": "s1",
+      "text": "*Mais le contact et la saveur*"
+    },
+    {
+      "id": "s1-153",
+      "sceneId": "s1",
+      "text": "Et cette petite voyageuse alerte inclina brusquement la tête sur le quai de la gare à Marseille Et s'en alla Sans savoir Que son souvenir planerait Sur un petit bois de la Champagne où un soldat s'efforce Devant le feu d'un bivouac d'évoquer cette apparition À travers la fumée d'écorce de bouleau Qui sent l'encens minéen Tandis que les volutes bleuâtres qui montent D'un cigare écrivent le plus tendre des noms Mais les nœuds de couleuvres en se dénouant Écrivent aussi le nom émouvant Dont chaque lettre se love en belle anglaise"
+    },
+    {
+      "id": "s1-154",
+      "sceneId": "s1",
+      "text": "Et le soldat n'ose point achever Le jeu de mots bilingue que ne manque point de susciter Cette calligraphie sylvestre et vernale"
+    },
+    {
+      "id": "s1-155",
+      "sceneId": "s1",
+      "text": "DANS L'ABRI-CAVERNE"
+    },
+    {
+      "id": "s1-156",
+      "sceneId": "s1",
+      "text": "Je me jette vers toi et il me semble aussi que tu te jettes vers moi Une force part de nous qui est un feu solide qui nous soude Et puis il y a aussi une contradiction qui fait que nous ne pouvons nous apercevoir En face de moi la paroi de craie s'effrite Il y a des cassures De longues traces d'outils traces lisses et qui semblent être faites dans de la stéarine Des coins de cassures sont arrachés par le passage des types de ma pièce Moi j'ai ce soir une âme qui s'est creusée qui est vide On dirait qu'on y tombe sans cesse et sans trouver de fond Et qu'il n'y a rien pour se raccrocher Ce qui y tombe et qui vit c'est une sorte d'êtres laids qui me font mal et qui y viennent de je ne sais où Oui je crois qu'ils viennent de la vie d'une sorte de vie qui est dans l'avenir dans l'avenir brut qu'on n'a pu encore cultiver ou élever ou humaniser Dans ce grand vide de mon âme il manque un soleil il manque ce qui éclaire C'est aujourd'hui c'est ce soir et non toujours Heureusement que ce n'est que ce soir Les autres jours je me rattache à toi Les autres jours je me console de la solitude et de toutes les horreurs En imaginant ta beauté Pour l'élever au-dessus de l'univers extasié Puis je pense que je l'imagine en vain Je ne la connais par aucun sens Ni même par les mots Et mon goût de la beauté est-il donc aussi vain Existe-tu mon amour Où n'es-tu qu'une entité que j'ai créée sans le vouloir Pour peupler la solitude Es-tu une de ces déesses comme celles que les Grecs avaient douées pour moins s'ennuyer Je t'adore ô ma déesse exquise même si tu n'es que dans mon imagination"
+    },
+    {
+      "id": "s1-157",
+      "sceneId": "s1",
+      "text": "FUSÉE"
+    },
+    {
+      "id": "s1-158",
+      "sceneId": "s1",
+      "text": "La boucle des cheveux noirs de ta nuque est mon trésor Ma pensée te rejoint et la tienne la croise Tes seins sont les seuls obus que j'aime Ton souvenir est la lanterne de repérage qui nous sert à pointer la nuit"
+    },
+    {
+      "id": "s1-159",
+      "sceneId": "s1",
+      "text": "En voyant la large croupe de mon cheval j'ai pensé à tes hanches"
+    },
+    {
+      "id": "s1-160",
+      "sceneId": "s1",
+      "text": "Voici les fantassins qui s'en vont à l'arrière en lisant un journal"
+    },
+    {
+      "id": "s1-161",
+      "sceneId": "s1",
+      "text": "Le chien du brancardier revient avec une pipe dans sa gueule"
+    },
+    {
+      "id": "s1-162",
+      "sceneId": "s1",
+      "text": "Un chat-huant ailes fauves yeux ternes gueule de petit chat et pattes de chat"
+    },
+    {
+      "id": "s1-163",
+      "sceneId": "s1",
+      "text": "Une souris verte file parmi la mousse"
+    },
+    {
+      "id": "s1-164",
+      "sceneId": "s1",
+      "text": "Le riz a brûlé dans la marmite de campement Ça signifie qu'il faut prendre garde à bien des choses"
+    },
+    {
+      "id": "s1-165",
+      "sceneId": "s1",
+      "text": "Le mégaphone crie Allongez le tir"
+    },
+    {
+      "id": "s1-166",
+      "sceneId": "s1",
+      "text": "Allongez le tir amour de vos batteries"
+    },
+    {
+      "id": "s1-167",
+      "sceneId": "s1",
+      "text": "Balance des batteries lourdes cymbales Qu'agitent les chérubins fous d'amour En l honneur du Dieu des Armées"
+    },
+    {
+      "id": "s1-168",
+      "sceneId": "s1",
+      "text": "Un arbre dépouillé sur une butte"
+    },
+    {
+      "id": "s1-169",
+      "sceneId": "s1",
+      "text": "Le bruit des tracteurs qui grimpent dans la vallée"
+    },
+    {
+      "id": "s1-170",
+      "sceneId": "s1",
+      "text": "Ô vieux monde du XIXe siècle plein de hautes cheminées si belles et si pures"
+    },
+    {
+      "id": "s1-171",
+      "sceneId": "s1",
+      "text": "Virilités du siècle où nous sommes Ô canons"
+    },
+    {
+      "id": "s1-172",
+      "sceneId": "s1",
+      "text": "Douilles éclatantes des obus de 75 Carillonnez pieusement"
+    },
+    {
+      "id": "s1-173",
+      "sceneId": "s1",
+      "text": "DÉSIR"
+    },
+    {
+      "id": "s1-174",
+      "sceneId": "s1",
+      "text": "Mon désir est la région qui est devant moi Derrière les lignes boches Mon désir est aussi derrière moi Après la zone des armées"
+    },
+    {
+      "id": "s1-175",
+      "sceneId": "s1",
+      "text": "Mon désir c'est la butte du Mesnil Mon désir est là sur quoi je tire De mon désir qui est au delà de la zone des armées Je n'en parle pas aujourd'hui mais j'y pense"
+    },
+    {
+      "id": "s1-176",
+      "sceneId": "s1",
+      "text": "Butte du Mesnil je t'imagine en vain Des fils de fer des mitrailleuses des ennemis trop sûrs d'eux Trop enfoncés sous terre déjà enterrés Ca ta clac des coups qui meurent en s'éloignant"
+    },
+    {
+      "id": "s1-177",
+      "sceneId": "s1",
+      "text": "En y veillant tard dans la nuit Le Decauville qui toussote La tôle ondulée sous la pluie Et sous la pluie ma bourguignotte"
+    },
+    {
+      "id": "s1-178",
+      "sceneId": "s1",
+      "text": "Entends la terre véhémente Vois les lueurs avant d'entendre les coups"
+    },
+    {
+      "id": "s1-179",
+      "sceneId": "s1",
+      "text": "Et tel obus siffler de la démence Ou le tac tac tac monotone et bref plein de dégoût"
+    },
+    {
+      "id": "s1-180",
+      "sceneId": "s1",
+      "text": "Je désire Te serrer dans ma main Main de Massiges Si décharnée sur la carte"
+    },
+    {
+      "id": "s1-181",
+      "sceneId": "s1",
+      "text": "Le boyau Gœthe où j'ai tiré J'ai tiré même sur le boyau Nietzsche Décidément je ne respecte aucune gloire"
+    },
+    {
+      "id": "s1-182",
+      "sceneId": "s1",
+      "text": "Nuit violente et violette et sombre et pleine d'or par moments Nuit des hommes seulement Nuit du 24 septembre Demain l'assaut Nuit violente ô nuit dont l'épouvantable cri profond devenait plus intense de minute en minute Nuit qui criait comme une femme qui accouche Nuit des hommes seulement"
+    },
+    {
+      "id": "s1-183",
+      "sceneId": "s1",
+      "text": "CHANT DE L'HORIZON EN CHAMPAGNE"
+    },
+    {
+      "id": "s1-184",
+      "sceneId": "s1",
+      "text": "*À M. Joseph Granié*"
+    },
+    {
+      "id": "s1-185",
+      "sceneId": "s1",
+      "text": "Voici le tétin rose de l'euphorbe verruquée Voici le nez des soldats invisibles Moi l'horizon invisible je chante Que les civils et les femmes écoutent ces chansons Et voici d'abord la cantilène du brancardier blessé"
+    },
+    {
+      "id": "s1-186",
+      "sceneId": "s1",
+      "text": "Le sol est blanc la nuit l'azure Saigne la crucifixion Tandis que saigne la blessure Du soldat de Promission"
+    },
+    {
+      "id": "s1-187",
+      "sceneId": "s1",
+      "text": "Un chien jappait l'obus miaule La lueur muette a jailli À savoir si la guerre est drôle Les masques n'ont pas tressailli"
+    },
+    {
+      "id": "s1-188",
+      "sceneId": "s1",
+      "text": "Mais quel fou rire sous le masque Blancheur éternelle d'ici Où la colombe porte un casque Et l'acier s'envole aussi"
+    },
+    {
+      "id": "s1-189",
+      "sceneId": "s1",
+      "text": "Je suis seul sur le champ de bataille Je suis la tranchée blanche le bois vert et roux L'obus miaule Je te tuerai Animez-vous fantassins à passepoil jaune Grands artilleurs roux comme des taupes Bleu-de-roi comme les golfes méditerranéens Veloutés de toutes les nuances du velours Ou mauves encore ou bleu-horizon comme les autres Ou déteints Venez le pot en tête Debout fusée éclairante Danse grenadier en agitant tes pommes de pin Alidades des triangles de visée pointez-vous sur les lueurs Creusez des trous enfants de 20 ans creusez des trous Sculptez les profondeurs Envolez-vous essaims des avions blonds ainsi que les avettes Moi l'horizon je fais la roue comme un grand Paon Écoutez renaître les oracles qui avaient cessé Le grand Pan est ressuscité"
+    },
+    {
+      "id": "s1-190",
+      "sceneId": "s1",
+      "text": "Champagne viril qui émoustille la Champagne Hommes faits jeunes gens Caméléon des autos-canons Et vous classe 16 Craquements des arrivées ou bien floraison blanche dans les cieux J'étais content pourtant ça brûlait la paupière Les officiers captifs voulaient cacher leurs noms Œil du Breton blessé couché sur la civière Et qui criait aux morts aux sapins aux canons *Priez pour moi Bon Dieu je suis le pauvre Pierre*"
+    },
+    {
+      "id": "s1-191",
+      "sceneId": "s1",
+      "text": "Boyaux et rumeur du canon Sur cette mer aux blanches vagues Fou stoïque comme Zénon Pilote du cœur tu zigzagues"
+    },
+    {
+      "id": "s1-192",
+      "sceneId": "s1",
+      "text": "Petites forêts de sapins La nichée attend la becquée Pointe-t-il des nez de lapins Comme l'euphorbe verruquée"
+    },
+    {
+      "id": "s1-193",
+      "sceneId": "s1",
+      "text": "Ainsi que l'euphorbe d'ici Le soleil à peine boutonne Je l'adore comme un Parsi Ce tout petit soleil d'automne"
+    },
+    {
+      "id": "s1-194",
+      "sceneId": "s1",
+      "text": "Un fantassin presque un enfant Bleu comme le jour qui s'écoule Beau comme mon cœur triomphant Disait en mettant sa cagoule"
+    },
+    {
+      "id": "s1-195",
+      "sceneId": "s1",
+      "text": "*Tandis que nous n'y sommes pas* *Que de filles deviennent belles* *Voici l'hiver et pas à pas* *Leur beauté s'éloignera d'elles*"
+    },
+    {
+      "id": "s1-196",
+      "sceneId": "s1",
+      "text": "*Ô Lueurs soudaines des tirs* *Cette beauté que j'imagine* *Faute d'avoir des souvenirs* *Tire de vous son origine*"
+    },
+    {
+      "id": "s1-197",
+      "sceneId": "s1",
+      "text": "*Car elle n'est rien que l'ardeur* *De la bataille violente* Et de la terrible lueur Il s'est fait une muse ardente"
+    },
+    {
+      "id": "s1-198",
+      "sceneId": "s1",
+      "text": "Il regarde longtemps l'horizon Couteaux tonneaux d'eau Des lanternes allumées se sont croisées Moi l'horizon je combattrai pour la victoire Je suis l'invisible qui ne peut disparaître Je suis comme l'onde Allons ouvrez les écluses que je me précipite tout"
+    },
+    {
+      "id": "s1-199",
+      "sceneId": "s1",
+      "text": "OCÉAN DE TERRE"
+    },
+    {
+      "id": "s1-200",
+      "sceneId": "s1",
+      "text": "*À G. de Chirico*"
+    },
+    {
+      "id": "s1-201",
+      "sceneId": "s1",
+      "text": "J'ai bâti une maison au milieu de l'Océan Ses fenêtres sont les fleuves qui s'écoulent de mes yeux Des poulpes grouillent partout où se tiennent les murailles Entendez battre leur triple cœur et leur bec cogner aux vitres Maison humide Maison ardente Saison rapide Saison qui chante Les avions pondent des œufs Attention on va jeter l'ancre Attention à l'encre que l'on jette Il serait bon que vous vinssiez du ciel Le chèvrefeuille du ciel grimpe Les poulpes terrestres palpitent"
+    },
+    {
+      "id": "s1-202",
+      "sceneId": "s1",
+      "text": "Et puis nous sommes tant et tant à être nos propres fossoyeurs Pâles poulpes des vagues crayeuses ô poulpes aux becs pâles Autour de la maison il y a cet océan que tu connais Et qui ne se repose jamais"
+    },
+    {
+      "id": "s1-203",
+      "sceneId": "s1",
+      "text": "OBUS COULEUR DE LUNE"
+    },
+    {
+      "id": "s1-204",
+      "sceneId": "s1",
+      "text": "MERVEILLE DE LA GUERRE"
+    },
+    {
+      "id": "s1-205",
+      "sceneId": "s1",
+      "text": "Que c'est beau ces fusées qui illuminent la nuit Elles montent sur leur propre cime et se penchent pour regarder Ce sont des dames qui dansent avec leurs regard pour yeux bras et cœurs"
+    },
+    {
+      "id": "s1-206",
+      "sceneId": "s1",
+      "text": "Jai reconnu ton sourire et ta vivacité"
+    },
+    {
+      "id": "s1-207",
+      "sceneId": "s1",
+      "text": "C'est aussi l'apothéose quotidienne de toutes mes Bérénices dont les chevelures sont devenues des comètes Ces danseuses surdorées appartiennent à tous les temps et à toutes les races Elles accouchent brusquement d'enfants qui n'ont que le temps de mourir"
+    },
+    {
+      "id": "s1-208",
+      "sceneId": "s1",
+      "text": "Comme c'est beau toutes ces fusées Mais ce serait bien plus beau s'il y en avait plus encore S'il y en avait des millions qui auraient un sens complet et relatif comme les lettres d'un livre Pourtant c'est aussi beau que si la vie même sortait des mourants"
+    },
+    {
+      "id": "s1-209",
+      "sceneId": "s1",
+      "text": "Mais ce serait plus beau encore s'il y en avait plus encore Cependant je les regarde comme une beauté qui s'offre et s'évanouit aussitôt Il me semble assister à un grand festin éclairé à giorno C'est un banquet que s'offre la terre Elle a faim et ouvre de longues bouches pâles La terre a faim et voici son festin de Balthasar cannibale"
+    },
+    {
+      "id": "s1-210",
+      "sceneId": "s1",
+      "text": "Qui aurait dit qu'on pût être à ce point anthropophage Et qu'il fallût tant de feu pour rôtir le corps humain C'est pourquoi l'air a un petit goût empyreumatique qui n'est ma foi pas désagréable Mais le festin serait plus beau encore si le ciel y mangeait avec la terre il n'avale que les âmes Ce qui est une façon de ne pas se nourrir Et se contente de jongler avec des feux versicolores"
+    },
+    {
+      "id": "s1-211",
+      "sceneId": "s1",
+      "text": "Mais j'ai coulé dans la douceur de cette guerre avec toute ma compagnie au long des longs boyaux"
+    },
+    {
+      "id": "s1-212",
+      "sceneId": "s1",
+      "text": "Quelques cris de flamme annoncent sans cesse ma présence J'ai creusé le lit ou je coule en me ramifiant en mille petits fleuves qui vont partout Je suis dans la tranchée de première ligne et cependant je suis partout ou plutôt je commence à être partout C'est moi qui commence celte chose des siècles à venir Ce sera plus long à réaliser que non la fable d'Icare volant"
+    },
+    {
+      "id": "s1-213",
+      "sceneId": "s1",
+      "text": "Je lègue à l'avenir l'histoire de Guillaume Apollinaire Qui fut à la guerre et sut être partout Dans les villes heureuses de l'arrière Dans tout le reste de l'univers Dans ceux qui meurent en piétinant dans le barbelé Dans les femmes dans les canons dans les chevaux Au zénith au nadir aux 4 point cardinaux Et dans l'unique ardeur de cette veillée d'armes"
+    },
+    {
+      "id": "s1-214",
+      "sceneId": "s1",
+      "text": "Et ce serait sans doute bien plus beau Si je pouvais supposer que toutes ces choses dans lesquelles je suis partout Pouvaient m'occuper aussi Mais dans ce sens il n'y a rien de fait Car si je suis partout à cette heure il n'y a cependant que moi qui suis en moi"
+    },
+    {
+      "id": "s1-215",
+      "sceneId": "s1",
+      "text": "EXERCICE"
+    },
+    {
+      "id": "s1-216",
+      "sceneId": "s1",
+      "text": "Vers un village de l'arrière S'en allaient quatre bombardiers Ils étaient couverts de poussière Depuis la tête jusqu'aux pieds"
+    },
+    {
+      "id": "s1-217",
+      "sceneId": "s1",
+      "text": "Ils regardaient la vaste plaine En parlant entre eux du passé Et ne se retournaient qu'à peine Quand un obus avait toussé"
+    },
+    {
+      "id": "s1-218",
+      "sceneId": "s1",
+      "text": "Tous quatre de la classe seize Parlaient d'antan non d'avenir Ainsi se prolongeait l'ascèse Qui les exerçait à mourir"
+    },
+    {
+      "id": "s1-219",
+      "sceneId": "s1",
+      "text": "À L'ITALIE"
+    },
+    {
+      "id": "s1-220",
+      "sceneId": "s1",
+      "text": "*À Ardengo Soffici*"
+    },
+    {
+      "id": "s1-221",
+      "sceneId": "s1",
+      "text": "L'amour a remué ma vie comme on remue la terre dans la zone des armées J'atteignais l'âge mûr quand la guerre arriva Et dans ce jour d'août 1915 le plus chaud de l'année Bien abrité dans l'hypogée que j'ai creusé moi-même C'est à toi que je songe Italie mère de mes pensées Et déjà quand von Kluck marchait sur Paris avant la Marne"
+    },
+    {
+      "id": "s1-222",
+      "sceneId": "s1",
+      "text": "J'évoquais le sac de Rome par les Allemands Le sac de Rome qu'ont décrit Un Bonaparte le vicaire espagnol Delicado et l'Arétin Je me disais Est-il possible que la nation Qui est la mère de la civilisation Regarde sans la défendre les efforts qu'on fait pour la détruire"
+    },
+    {
+      "id": "s1-223",
+      "sceneId": "s1",
+      "text": "Puis les temps sont venus les tombes se sont ouvertes Les fantômes des Esclaves toujours frémissants Se sont dressés en criant SUS AUX TUDESQUES Nous l'armée invisible aux cris éblouissants Plus doux que n'est le miel et plus simples qu'un peu de terre Nous te tournons bénignement le dos Italie Mais ne t'en fais pas nous t'aimons bien Italie mère qui est aussi notre fille"
+    },
+    {
+      "id": "s1-224",
+      "sceneId": "s1",
+      "text": "Nous sommes là tranquillement et sans tristesse Et si malgré les masques les sacs de sable les rondins nous tombions Nous savons qu'un autre prendrait notre place Et que les Armées ne périront jamais"
+    },
+    {
+      "id": "s1-225",
+      "sceneId": "s1",
+      "text": "Les mois ne sont pas longs ni les jours ni les nuits C'est la guerre qui est longue"
+    },
+    {
+      "id": "s1-226",
+      "sceneId": "s1",
+      "text": "Italie Toi notre mère et notre fille quelque chose comme une sœur J'ai comme toi pour me réconforter Le quart de pinard Qui met tant de différence entre nous et les Boches J'ai aussi comme toi l'envol des compagnies de perdreaux des 75"
+    },
+    {
+      "id": "s1-227",
+      "sceneId": "s1",
+      "text": "Comme toi je n'ai pas cet orgueil sans joie des Boches et je sais rigoler Je ne suis pas sentimental à l'excès comme le sont ces gens sans mesure que leurs actions dépassent sans qu'ils sachent s'amuser Notre civilisation a plus de finesse que les choses qu'ils emploient Elle est au delà de la vie confortable Et de ce qui est l'extérieur dans l'art et l'industrie Les fleurs sont nos enfants et non les leurs Même la fleur de lys qui meurt au Vatican"
+    },
+    {
+      "id": "s1-228",
+      "sceneId": "s1",
+      "text": "La plaine est infinie et les tranchées sont blanches Les avions bourdonnent ainsi que des abeilles Sur les roses momentanés des éclatements Et les nuits sont parées de guirlandes d'éblouissements De bulles de globules aux couleurs insoupçonnées"
+    },
+    {
+      "id": "s1-229",
+      "sceneId": "s1",
+      "text": "Nous jouissons de tout même de nos souffrances Notre humeur est charmante l'ardeur vient quand il faut Nous sommes narquois car nous savons faire la part des choses Et il n'y a pas plus de folie chez celui qui jette les grenades que chez celui qui plume les patates Tu aimes un peu plus que nous les gestes et les mots sonores"
+    },
+    {
+      "id": "s1-230",
+      "sceneId": "s1",
+      "text": "Tu as à ta disposition les sortilèges étrusques le sens de la majesté héroïque et le courageux honneur individuel Nous avons le sourire nous devinons ce qu'on ne nous dit pas nous sommes démerdards et même ceux qui se dégonflent sauraient à l'occasion faire preuve de l'esprit de sacrifice qu'on appelle la bravoure Et nous fumons du gros avec volupté"
+    },
+    {
+      "id": "s1-231",
+      "sceneId": "s1",
+      "text": "C'est la nuit je suis dans mon blockhaus éclairé par l'électricité en bâton Je pense à toi pays des 2 volcans Je salue le souvenir des sirènes et des scylles mortes au moment de Messine Je salue le Colleoni équestre de Venise Je salue la chemise rouge Je t'envoie mes amitiés Italie et m'apprête à applaudir aux hauts faits de ta bleusaille Non parce que j'imagine qu'il y aura jamais plus de bonheur ou de malheur en ce monde Mais parce que comme toi j'aime à penser seul et que les Boches m'en empêcheraient Mais parce que le goût naturel de la perfection que nous avons l'un et l'autre si on les laissait faire serait vite remplacé par je ne sais quelles commodités dont je n'ai que faire"
+    },
+    {
+      "id": "s1-232",
+      "sceneId": "s1",
+      "text": "Et surtout parce que comme toi je sais je veux choisir et qu'eux voudraient nous forcer à ne plus choisir Une même destinée nous lie en cette occase"
+    },
+    {
+      "id": "s1-233",
+      "sceneId": "s1",
+      "text": "Ce n'est pas pour l'ensemble que je le dis Mais pour chacun de toi Italie"
+    },
+    {
+      "id": "s1-234",
+      "sceneId": "s1",
+      "text": "Ne te borne point à prendre les terres irrédentes Mets ton destin dans la balance où est le nôtre"
+    },
+    {
+      "id": "s1-235",
+      "sceneId": "s1",
+      "text": "Les réflecteurs dardent leurs lueurs comme des yeux d'escargots Et les obus en tombant sont des chiens qui jettent de la terre avec leurs pattes après avoir fait leurs besoins"
+    },
+    {
+      "id": "s1-236",
+      "sceneId": "s1",
+      "text": "Notre armée invisible est une belle nuit constellée Et chacun de nos hommes est un astre merveilleux"
+    },
+    {
+      "id": "s1-237",
+      "sceneId": "s1",
+      "text": "Ô nuit ô nuit éblouissante Les morts sont avec nos soldats Les morts sont debout dans les tranchées Ou se glissent souterrainement vers les Bien-Aimées Ô Lille Saint-Quentin Laon Maubeuge Vouziers Nous jetons nos villes comme des grenades Nos fleuves sont brandis comme des sabres Nos montagnes chargent comme cavalerie"
+    },
+    {
+      "id": "s1-238",
+      "sceneId": "s1",
+      "text": "Nous reprendrons les villes les fleuves les collines De la frontière helvétique aux frontières bataves Entre toi et nous Italie Il y a des patelins pleins de femmes Et près de toi m'attend celle que j'adore Ô Frères d'Italie"
+    },
+    {
+      "id": "s1-239",
+      "sceneId": "s1",
+      "text": "Ondes nuages délétères Métalliques débris qui vous rouillez partout Ô frères d'Italie vos plumes sur la tête Italie Entends crier Louvain vois Reims tordre ses bras Et ce soldat blessé toujours debout Arras"
+    },
+    {
+      "id": "s1-240",
+      "sceneId": "s1",
+      "text": "Et maintenant chantons ceux qui sont morts Ceux qui vivent Les officiers les soldats Les flingots Rosalie le canon la fusée l'hélice la pelle les chevaux Chantons les bagues pâles les casques Chantons ceux qui sont morts Chantons la terre qui bâille d'ennui Chantons et rigolons Durant des années Italie Entends braire l'âne boche Faisons la guerre à coups de fouets Faits avec les rayons du soleil Italie Chantons et rigolons Durant des années"
+    },
+    {
+      "id": "s1-241",
+      "sceneId": "s1",
+      "text": "LA TRAVERSÉE"
+    },
+    {
+      "id": "s1-242",
+      "sceneId": "s1",
+      "text": "Du joli bateau de Port-Vendres Tes yeux étaient les matelots Et comme les flots étaient tendres Dans les parages de Palos"
+    },
+    {
+      "id": "s1-243",
+      "sceneId": "s1",
+      "text": "Que de sous-marins dans mon âme Naviguent et vont l'attendant Le superbe navire où clame Le chœur de ton regard ardent."
+    },
+    {
+      "id": "s1-244",
+      "sceneId": "s1",
+      "text": "IL Y A"
+    },
+    {
+      "id": "s1-245",
+      "sceneId": "s1",
+      "text": "Il y un vaisseau qui a emporté ma bien-aimée Il y a dans le ciel six saucisses et la nuit venant on dirait des asticots dont naîtraient les étoiles Il y a un sous-marin ennemi qui en voulait à mon amour Il y a mille petits sapins brisés par les éclats d'obus autour de moi Il y a un fantassin qui passe aveuglé par les gaz asphyxiants Il y a que nous avons tout haché dans les boyaux de Nietzsche de Goethe et de Cologne Il y a que je languis après une lettre qui tarde Il y a dans mon porte-carte plusieurs photos de mon amour Il y a les prisonniers qui passent la mine inquiète Il y a une batterie dont les servants s'agitent autour des pièces Il y a le vaguemestre qui arrive au trot par le chemin de l'Abre isolé Il y a dit-on un espion qui rôde par ici invisible comme l'horizon dont il s'est indignement revêtu et avec quoi il se confond Il y a dressé comme un lys le buste de mon amour Il y a un capitaine qui attend avec anxiété les communications de la T S F sur l'Atlantique Il y a à minuit des soldats qui scient des planches pour les cercueils Il y a des femmes qui demandent du maïs à grands cris devant un Christ sanglant à Mexico Il y a le Gulf Stream qui est si tiède et si bienfaisant Il y a un cimetière plein de croix à 5 kilomètres Il y a des croix partout de-ci de-là Il y a des figues de barbarie sur ces cactus en Algérie Il y a les longues mains souples de mon amour Il y a un encrier que j'avais fait dans une fusée de 15 centimètres et qu'on n'a pas laissé partir Il y a ma selle exposée à la pluie Il y a les fleuves qui ne remontent pas leurs cours Il y a l'amour qui m'entraîne avec douceur Il y avait un prisonnier boche qui portait sa mitrailleuse sur son dos Il y a des hommes dans le monde qui n'ont jamais été à la guerre Il y a des Hindous qui regardent avec étonnement les campagnes occidentales Ils pensent avec mélancolie à ceux dont ils se demandent s'ils les reverront Car on a poussé très loin durant cette guerre l'art de l'invisibilité"
+    },
+    {
+      "id": "s1-246",
+      "sceneId": "s1",
+      "text": "L'ESPIONNE"
+    },
+    {
+      "id": "s1-247",
+      "sceneId": "s1",
+      "text": "Pâle espionne de l'Amour Ma mémoire à peine fidèle N'eut pour observer cette belle Forteresse qu'une heure un jour"
+    },
+    {
+      "id": "s1-248",
+      "sceneId": "s1",
+      "text": "Tu te déguises À ta guise Mémoire espionne du cœur Tu ne retrouves plus l'exquise Ruse et le cœur seul est vainqueur"
+    },
+    {
+      "id": "s1-249",
+      "sceneId": "s1",
+      "text": "Mais la vois-tu cette mémoire Les yeux bandés prête à mourir Elle affirme qu'on peut l'en croire Mon cœur vaincra sans coup férir"
+    },
+    {
+      "id": "s1-250",
+      "sceneId": "s1",
+      "text": "LE CHANT D'AMOUR"
+    },
+    {
+      "id": "s1-251",
+      "sceneId": "s1",
+      "text": "Voici de quoi est fait le chant symphonique de l'amour Il y a le chant de l'amour de jadis Le bruit des baisers éperdus des amants illustres Les cris d'amour des mortelles violées par les dieux Les virilités des héros fabuleux érigées comme des pièces contre avions Le hurlement précieux de Jason Le chant mortel du cygne Et l'hymne victorieux que les premiers rayons du soleil ont fait chanter à Memnon l'immobile Il y a le cri des Sabines au moment de l'enlèvement Il y a aussi les cris d'amour des félins dans les jongles La rumeur sourde des sèves montant dans les plantes tropicales Le tonnerre des artilleries qui accomplissent le terrible amour des peuples Les vagues de la mer où naît la vie et la beauté"
+    },
+    {
+      "id": "s1-252",
+      "sceneId": "s1",
+      "text": "Il y a là le chant de tout l'amour du monde"
+    },
+    {
+      "id": "s1-253",
+      "sceneId": "s1",
+      "text": "AUSSI BIEN QUE LES CIGALES"
+    },
+    {
+      "id": "s1-254",
+      "sceneId": "s1",
+      "text": "*gens du midi* ne savez pas M *gens du mi* creuser que ais *di vous n'* vous ne sa vous *avez donc* vez pas vous savez *pas regar* éclairer ni encore *dé les ciga* voir Que vous boire com le jour *les que vous* manque-t-il me les ci de gloire donc pour gales ô se voir aus gens du mi *c* ra si bien di gens du *reusez* ce que les soleil gens qui *voyez bu* lui ciga devriez savoir *vez pissez* où les creuser et voir *comme* vous aussi bien pour le *les ciga* sau moins aussi bien *les* rez que les cigales creu Eh quoi! vous savez *gens du Midi il faut* ser boire et ne savez *creuser voir boire* pour plus pisser utile *pisser aussi bien que* bien ment comme les *les cigales* sor cigales LA JOIE *pour chan* tir ADORABLE *ter com* au DE LA PAIX *me elles* so SOLAIRE leil"
+    },
+    {
+      "id": "s1-255",
+      "sceneId": "s1",
+      "text": "SIMULTANÉITÉS"
+    },
+    {
+      "id": "s1-256",
+      "sceneId": "s1",
+      "text": "Les canons tonnent dans la nuit On dirait des vagues tempête Des cœurs où pointe un grand ennui Ennui qui toujours se répète"
+    },
+    {
+      "id": "s1-257",
+      "sceneId": "s1",
+      "text": "Il regarde venir là-bas Les prisonniers L'heure est si douce Dans ce grand bruit ouaté très bas Très bas qui grandit sans secousse"
+    },
+    {
+      "id": "s1-258",
+      "sceneId": "s1",
+      "text": "Il tient son casque dans ses mains Pour saluer la souvenance Des lys des roses des jasmins Éclos dans les jardins de France"
+    },
+    {
+      "id": "s1-259",
+      "sceneId": "s1",
+      "text": "Et sous la cagoule masqué Il pense à des cheveux si sombres Mais qui donc l'attend sur le quai Ô vaste mer aux mauves ombres"
+    },
+    {
+      "id": "s1-260",
+      "sceneId": "s1",
+      "text": "Belles noix du vivant noyer La grand folie en vain vous gaule Brunette écoute gazouiller La mésange sur ton épaule"
+    },
+    {
+      "id": "s1-261",
+      "sceneId": "s1",
+      "text": "Notre amour est une lueur Qu'un projecteur du cœur dirige Vers l'ardeur égale du cœur Qui sur le haut Phare s'érige"
+    },
+    {
+      "id": "s1-262",
+      "sceneId": "s1",
+      "text": "Ô phare-fleur mes souvenirs Les cheveux noirs de Madeleine Les atroces lueurs des tirs Ajoutent leur clarté soudaine À tes beaux yeux ô Madeleine"
+    },
+    {
+      "id": "s1-263",
+      "sceneId": "s1",
+      "text": "Ceux qui revenaient de la mort En attendaient une pareille Et tout ce qui venait du nord Allait obscurcir le soleil"
+    },
+    {
+      "id": "s1-264",
+      "sceneId": "s1",
+      "text": "Mais que voulez-vous c'est son sort Allô la truie"
+    },
+    {
+      "id": "s1-265",
+      "sceneId": "s1",
+      "text": "C'est quand sonnera le réveil"
+    },
+    {
+      "id": "s1-266",
+      "sceneId": "s1",
+      "text": "ALLÔ LA TRUIE"
+    },
+    {
+      "id": "s1-267",
+      "sceneId": "s1",
+      "text": "La sentinelle au long regard La sentinelle au long regard Et la cagnat s'appelait"
+    },
+    {
+      "id": "s1-268",
+      "sceneId": "s1",
+      "text": "LES CÉNOBITES TRANQUILLES"
+    },
+    {
+      "id": "s1-269",
+      "sceneId": "s1",
+      "text": "La sentinelle au long regard la sentinelle au large regard Allô la truie"
+    },
+    {
+      "id": "s1-270",
+      "sceneId": "s1",
+      "text": "Tant et tant de coquelicots D'où tant de sang a-t-il coulé Qu'est-ce qu'il se met dans le coco Bon sang de bois il s'est saoulé Et sans pinard et sans tacot Avec de l'eau Allô la truie"
+    },
+    {
+      "id": "s1-271",
+      "sceneId": "s1",
+      "text": "Le silence des phonographes Mitrailleuses des cinémas Tout l'échelon là-bas piaffe Fleurs de feu des lueurs-frimas Puisque le canon avait soif Allô la truie Et les trajectoires cabrées Trébuchements de soleils-nains Sur tant de chansons déchirées"
+    },
+    {
+      "id": "s1-272",
+      "sceneId": "s1",
+      "text": "Il a l'Étoile du Bénin Mais du singe en boîtes carrées Crois-tu qu'il y aura la guerre Allô la truie Ah! s'il vous plaît Ami l'Anglais Ah! qu'il est laid Ton frère ton frère ton frère de lait"
+    },
+    {
+      "id": "s1-273",
+      "sceneId": "s1",
+      "text": "Et je mangeais du pain de Gênes En respirant leurs gaz lacrymogènes Mets du coton dans tes oreilles D'siré"
+    },
+    {
+      "id": "s1-274",
+      "sceneId": "s1",
+      "text": "Puis ce fut cette fleur sans nom À peine un souffle un souvenir Quand s'en allèrent les canons. Au tour des roues heure à courir La baleine a d'autres fanons Éclatements qui nous fanons"
+    },
+    {
+      "id": "s1-275",
+      "sceneId": "s1",
+      "text": "Mais mets du coton dans des oreilles Evidemment les fanions Des signaleurs Allô la truie"
+    },
+    {
+      "id": "s1-276",
+      "sceneId": "s1",
+      "text": "*Ici la musique militaire joue* *Quelque chose* * Et chacun se souvient d'une joue* *Rose* *Parce que même les airs entraînants* *Ont quelque chose de déchirant quand on les entend à* *la guerre*"
+    },
+    {
+      "id": "s1-277",
+      "sceneId": "s1",
+      "text": "Écoute s'il pleut écoute s'il pleut"
+    },
+    {
+      "id": "s1-278",
+      "sceneId": "s1",
+      "text": "puis sol des con la é dats Flan fon pluie cou a dres dez- si tez veu à vous ten tom gles l' a dre ber per a vec la la dus go l' pluie pluie par nie ho si si mi sous ri dou ten les la zon ce dre che pluie beaux et vaux fi ê si de ne tres dou fri la in ce se pluie vi sous si si la ten bles lu dre sous ne et la li si pluie qui dou fi de ce ne"
+    },
+    {
+      "id": "s1-279",
+      "sceneId": "s1",
+      "text": "Les longs boyaux où tu chemines Adieu les cagnats d'artilleurs"
+    },
+    {
+      "id": "s1-280",
+      "sceneId": "s1",
+      "text": "Tu retrouveras La tranchée en première ligne Les éléphants des pare-éclats Une girouette maligne Et les regards des guetteurs las Qui veillent le silence insigne Ne vois-tu rien venir"
+    },
+    {
+      "id": "s1-281",
+      "sceneId": "s1",
+      "text": "au Pé ris co pe"
+    },
+    {
+      "id": "s1-282",
+      "sceneId": "s1",
+      "text": "La balle qui froisse le silence Les projectiles d'artillerie qui glissent Comme un fleuve aérien Ne mettez plus de coton dans les oreilles Ça n'en vaut plus la peine Mais appelez donc Napoléon sur la tour Allô"
+    },
+    {
+      "id": "s1-283",
+      "sceneId": "s1",
+      "text": "Le petit geste du fantassin qui se gratte au où les totos le démangent La vague Dans les caves Dans les caves"
+    },
+    {
+      "id": "s1-284",
+      "sceneId": "s1",
+      "text": "LA TÊTE ÉTOILÉE"
+    },
+    {
+      "id": "s1-285",
+      "sceneId": "s1",
+      "text": "LE DÉPART"
+    },
+    {
+      "id": "s1-286",
+      "sceneId": "s1",
+      "text": "Et leurs visages étaient pâles Et leurs sanglots s'étaient brisés"
+    },
+    {
+      "id": "s1-287",
+      "sceneId": "s1",
+      "text": "Comme la neige aux purs pétales Ou bien tes mains sur mes baisers Tombaient les feuilles automnales"
+    },
+    {
+      "id": "s1-288",
+      "sceneId": "s1",
+      "text": "LE VIGNERON CHAMPENOIS"
+    },
+    {
+      "id": "s1-289",
+      "sceneId": "s1",
+      "text": "Le régiment arrive Le village est presque endormi dans la lumière parfumée Un prêtre a le casque en tête La bouteille champenoise est-elle ou non une artillerie Les ceps de vigne comme l'hermine sur un écu Bonjour soldats Je les ai vus passer et repasser en courant Bonjour soldats bouteilles champenoises où le sang fermente Vous resterez quelques jours et puis remonterez en ligne Echelonnés ainsi que sont les ceps de vigne J'envoie mes bouteilles partout comme les obus d'une charmante artillerie"
+    },
+    {
+      "id": "s1-290",
+      "sceneId": "s1",
+      "text": "La nuit est blonde ô vin blond Un vigneron chantait courbé dans sa vigne Un vigneron sans bouche au fond de l'horizon Un vigneron qui était lui-même la bouteille vivante Un vigneron qui sait ce qu'est la guerre Un vigneron champenois qui est un artilleur"
+    },
+    {
+      "id": "s1-291",
+      "sceneId": "s1",
+      "text": "C'est maintenant le soir et l'on joue à la mouche Puis les soldats s'en iront là-haut Où l'Artillerie débouche ses bouteilles crémantes Allons Adieu messieurs tâchez de revenir Mais nul ne sait ce qui peut advenir"
+    },
+    {
+      "id": "s1-292",
+      "sceneId": "s1",
+      "text": "CARTE POSTALE"
+    },
+    {
+      "id": "s1-293",
+      "sceneId": "s1",
+      "text": "Je t'écris de dessous la tente Tandis que meurt ce jour d'été Où floraison éblouissante Dans le ciel à peine bleuté Une canonnade éclatante Se fane avant d'avoir été"
+    },
+    {
+      "id": "s1-294",
+      "sceneId": "s1",
+      "text": "SOUVENIRS"
+    },
+    {
+      "id": "s1-295",
+      "sceneId": "s1",
+      "text": "Deux lacs nègres Entre une forêt Et une chemise qui sèche"
+    },
+    {
+      "id": "s1-296",
+      "sceneId": "s1",
+      "text": "Bouche ouverte sur un harmonium C'était une voix faite d'yeux Tandis qu'il traîne de petites gens"
+    },
+    {
+      "id": "s1-297",
+      "sceneId": "s1",
+      "text": "Une toute petite vieille au nez pointu J'admire la bouillotte d'émail bleu Mais le rat pénètre dans le cadavre et y demeure"
+    },
+    {
+      "id": "s1-298",
+      "sceneId": "s1",
+      "text": "Un monsieur en bras de chemise Se rase près de la fenêtre En chantant un petit air qu'il ne sait pas très bien Ça fait tout un opéra"
+    },
+    {
+      "id": "s1-299",
+      "sceneId": "s1",
+      "text": "Toi qui te tournes vers le roi Est-ce que Dieu voudrait mourir encore"
+    },
+    {
+      "id": "s1-300",
+      "sceneId": "s1",
+      "text": "L'AVENIR"
+    },
+    {
+      "id": "s1-301",
+      "sceneId": "s1",
+      "text": "Soulevons la paille Regardons la neige Écrivons des lettres Attendons des ordres"
+    },
+    {
+      "id": "s1-302",
+      "sceneId": "s1",
+      "text": "Fumons la pipe En songeant à l'amour Les gabions sont là Regardons la rose"
+    },
+    {
+      "id": "s1-303",
+      "sceneId": "s1",
+      "text": "La fontaine n'a pas tari Pas plus que l'or de la paille ne s'est terni Regardons l'abeille Et ne songeons pas à l'avenir"
+    },
+    {
+      "id": "s1-304",
+      "sceneId": "s1",
+      "text": "Regardons nos mains Qui sont la neige La rose et l'abeille Ainsi que l'avenir"
+    },
+    {
+      "id": "s1-305",
+      "sceneId": "s1",
+      "text": "UN OISEAU CHANTE"
+    },
+    {
+      "id": "s1-306",
+      "sceneId": "s1",
+      "text": "Un oiseau chante ne sais où C'est je crois ton âme qui veille Parmi tous les soldats d'un sou Et l'oiseau charme mon oreille"
+    },
+    {
+      "id": "s1-307",
+      "sceneId": "s1",
+      "text": "Écoute il chante tendrement Je ne sais pas sur quelle branche Et partout il va me charmant Nuit et jour semaine et dimanche"
+    },
+    {
+      "id": "s1-308",
+      "sceneId": "s1",
+      "text": "Mais que dire de cet oiseau Que dire des métamorphoses De l'âme en chant dans l'arbrisseau Du cœur en ciel du ciel en roses"
+    },
+    {
+      "id": "s1-309",
+      "sceneId": "s1",
+      "text": "L'oiseau des soldats c'est l'amour Et mon amour c'est une fille La rose est moins parfaite et pour Moi seul l'oiseau bleu s'égosille"
+    },
+    {
+      "id": "s1-310",
+      "sceneId": "s1",
+      "text": "Oiseau bleu comme le cœur bleu De mon amour au cœur céleste Ton chant si doux répète-le À la mitrailleuse funeste"
+    },
+    {
+      "id": "s1-311",
+      "sceneId": "s1",
+      "text": "Qui claque à l'horizon et puis Sont-ce les astres que l'on sème Ainsi vont les jours et les nuits Amour bleu comme est le cœur même"
+    },
+    {
+      "id": "s1-312",
+      "sceneId": "s1",
+      "text": "CHEVAUX DE FRISE"
+    },
+    {
+      "id": "s1-313",
+      "sceneId": "s1",
+      "text": "Pendant le blanc et nocturne novembre Alors que les arbres déchiquetés par l'artillerie Vieillissaient encore sous la neige Et semblaient à peine des chevaux de frise Entourés de vagues de fils de fer Mon cœur renaissait comme un arbre au printemps Un arbre fruitier sur lequel s'épanouissent Les fleurs de l'amour"
+    },
+    {
+      "id": "s1-314",
+      "sceneId": "s1",
+      "text": "Pendant le blanc et nocturne novembre Tandis que chantaient épouvantablement les obus Et que les fleurs mortes de la terre exhalaient Leurs mortelles odeurs Moi je décrivais tous les jours mon amour à Madeleine"
+    },
+    {
+      "id": "s1-315",
+      "sceneId": "s1",
+      "text": "La neige met de pâles fleurs sur les arbres Et toisonne d'hermine les chevaux de frise Que l'on voit partout Abandonnés et sinistres Chevaux muets"
+    },
+    {
+      "id": "s1-316",
+      "sceneId": "s1",
+      "text": "Non chevaux barbes mais barbelés Et je les anime tout soudain En troupeau de jolis chevaux pies Qui vont vers toi comme de blanches vagues Sur la Méditerranée Et t'apportent mon amour Roselys ô panthère ô colombes étoile bleue ô Madeleine Je t'aime avec délices Si je songe à tes yeux je songe aux sources fraîches Si je pense à ta bouche les roses m'apparaissent Si je songe à tes seins le Paraclet descend Ô double colombe de ta poitrine Et vient délier ma langue de poète Pour te redire Je t'aime Ton visage est un bouquet de fleurs Aujourd'hui je te vois non Panthère Mais Toutefleur Et je te respire ô ma Toutefleur Tous les lys montent en toi comme des cantiques d'amour et d'allégresse Et ces chants qui s'envolent vers toi M'emportent à ton côté Dans ton bel Orient où les lys Se changent en palmiers qui de leurs belles mains Me font signe de venir La fusée s'épanouit fleur nocturne Quand il fait noir Et elle retombe comme une pluie de larmes amoureuses De larmes heureuses que la joie fait couler Et je t'aime comme tu m'aimes Madeleine"
+    },
+    {
+      "id": "s1-317",
+      "sceneId": "s1",
+      "text": "CHANT DE L'HONNEUR"
+    },
+    {
+      "id": "s1-318",
+      "sceneId": "s1",
+      "text": "LE POÈTE"
+    },
+    {
+      "id": "s1-319",
+      "sceneId": "s1",
+      "text": "Je me souviens ce soir de ce drame indien Le Chariot d'Enfant un voleur y survient Qui pense avant de faire un trou dans la muraille Quelle forme il convient de donner à l'entaille Afin que la beauté ne perde pas ses droits Même au moment d'un crime Et nous aurions je crois À l'instant de périr nous poètes nous hommes Un souci de même ordre à la guerre où nous sommes"
+    },
+    {
+      "id": "s1-320",
+      "sceneId": "s1",
+      "text": "Mais ici comme ailleurs je le sais la beauté N'est la plupart du temps que la simplicité Et combien j'en ai vu qui morts dans la tranchée Étaient restés debout et la tête penchée S'appuyant simplement contre le parapet"
+    },
+    {
+      "id": "s1-321",
+      "sceneId": "s1",
+      "text": "J'en vis quatre une fois qu'un même obus frappait Ils restèrent longtemps ainsi morts et très crânes Avec l'aspect penché de quatre tours pisanes"
+    },
+    {
+      "id": "s1-322",
+      "sceneId": "s1",
+      "text": "Depuis dix jours au fond d'un couloir trop étroit Dans les éboulements et la boue et le froid Parmi la chair qui souffre et dans la pourriture Anxieux nous gardons la route de Tahure"
+    },
+    {
+      "id": "s1-323",
+      "sceneId": "s1",
+      "text": "J'ai plus que les trois cœurs des poulpes pour souffrir Vos cœurs sont tous en moi je sens chaque blessure Ô mes soldats souffrants ô blessés à mourir"
+    },
+    {
+      "id": "s1-324",
+      "sceneId": "s1",
+      "text": "Cette nuit est si belle où la balle roucoule Tout un fleuve d'obus sur nos têtes s'écoule Parfois une fusée illumine la nuit C'est une fleur qui s'ouvre et puis s'évanouit La terre se lamente et comme une marée Monte le flot chantant dans mon abri de craie Séjour de l'insomnie incertaine maison De l'Alerte la Mort et la Démangeaison"
+    },
+    {
+      "id": "s1-325",
+      "sceneId": "s1",
+      "text": "LA TRANCHÉE"
+    },
+    {
+      "id": "s1-326",
+      "sceneId": "s1",
+      "text": "Ô jeunes gens je m'offre à vous comme une épouse Mon amour est puissant j'aime jusqu'à la mort Tapie au fond du sol je vous guette jalouse Et mon corps n'est en tout qu'un long baiser qui mord"
+    },
+    {
+      "id": "s1-327",
+      "sceneId": "s1",
+      "text": "LES BALLES"
+    },
+    {
+      "id": "s1-328",
+      "sceneId": "s1",
+      "text": "De nos ruches d'acier sortons à tire-d'aile Abeilles le butin qui sanglant emmielle Les doux rayons d'un jour qui toujours renouvelle Provient de ce jardin exquis l'humanité Aux fleurs d'intelligence à parfum de beauté"
+    },
+    {
+      "id": "s1-329",
+      "sceneId": "s1",
+      "text": "LE POÈTE"
+    },
+    {
+      "id": "s1-330",
+      "sceneId": "s1",
+      "text": "Le Christ n'est donc venu qu'en vain parmi les hommes Si des fleuves de sang limitent les royaumes Et même de l'Amour on sait la cruauté C'est pourquoi faut au moins penser à la Beauté Seule chose ici-bas qui jamais n'est mauvaise Elle porte cent noms dans la langue française Grâce Vertu Courage Honneur et ce n'est là Que la même Beauté"
+    },
+    {
+      "id": "s1-331",
+      "sceneId": "s1",
+      "text": "LA FRANCE"
+    },
+    {
+      "id": "s1-332",
+      "sceneId": "s1",
+      "text": "Poète honore-la Souci de la Beauté non souci de la Gloire Mais la Perfection n'est-ce pas la Victoire"
+    },
+    {
+      "id": "s1-333",
+      "sceneId": "s1",
+      "text": "LE POÈTE"
+    },
+    {
+      "id": "s1-334",
+      "sceneId": "s1",
+      "text": "Ô poètes des temps à venir ô chanteurs Je chante la beauté de toutes nos douleurs J'en ai saisi des traits mais vous saurez bien mieux Donner un sens sublime aux gestes glorieux Et fixer la grandeur de ces trépas pieux"
+    },
+    {
+      "id": "s1-335",
+      "sceneId": "s1",
+      "text": "L'un qui détend son corps en jetant des grenades L'autre ardent à tirer nourrit les fusillades L'autre les bras ballants porte des seaux de vin Et le prêtre-soldat dit le secret divin"
+    },
+    {
+      "id": "s1-336",
+      "sceneId": "s1",
+      "text": "J'interprète pour tous la douceur des trois notes Que lance un loriot canon quand tu sanglotes"
+    },
+    {
+      "id": "s1-337",
+      "sceneId": "s1",
+      "text": "Oui donc saura jamais que de fois j'ai pleuré Ma génération sur ton trépas sacré"
+    },
+    {
+      "id": "s1-338",
+      "sceneId": "s1",
+      "text": "Prends mes vers ô ma France Avenir Multitude Chantez ce que je chante un chant pur le prélude Des chants sacrés que la beauté de notre temps Saura vous inspirer plus purs plus éclatants Que ceux que je m'efforce à moduler ce soir En l'honneur de l'Honneur la beauté du Devoir"
+    },
+    {
+      "id": "s1-339",
+      "sceneId": "s1",
+      "text": "17 décembre 1915"
+    },
+    {
+      "id": "s1-340",
+      "sceneId": "s1",
+      "text": "CHEF DE SECTION"
+    },
+    {
+      "id": "s1-341",
+      "sceneId": "s1",
+      "text": "Ma bouche aura des ardeur de géhenne Ma bouche te sera un enfer de douceur et de séduction Les anges de ma bouche trôneront dans ton cœur Les soldats de ma bouche te prendront d'assaut Les prêtres de ma bouche encenseront ta beauté Ton âme s'agitera comme une région pendant un tremblement de terre Tes yeux seront alors chargés de tout l'amour qui s'est amassé dans les regards de l'humanité depuis qu'elle existe Ma bouche sera une armée contre toi une armée pleine de disparates Variée comme un enchanteur qui sait varier ses métamorphoses L'orchestre et les chœurs de ma bouche te diront mon amour Elle te le murmure de loin Tandis que les yeux fixés sur la montre j'attends la minute prescrite pour l'assaut"
+    },
+    {
+      "id": "s1-342",
+      "sceneId": "s1",
+      "text": "TRISTESSE D'UNE ÉTOILE"
+    },
+    {
+      "id": "s1-343",
+      "sceneId": "s1",
+      "text": "Une belle Minerve est l'enfant de ma tête Une étoile de sang me couronne à jamais La raison est au fond et le ciel est au faîte Du chef où dès longtemps Déesse tu t'armais"
+    },
+    {
+      "id": "s1-344",
+      "sceneId": "s1",
+      "text": "C'est pourquoi de mes maux ce n'était pas le pire Ce trou presque mortel et qui s'est étoilé Mais le secret malheur qui nourrit mon délire Est bien plus grand qu'aucun âme ait jamais celé"
+    },
+    {
+      "id": "s1-345",
+      "sceneId": "s1",
+      "text": "Et je porte avec moi cette ardente souffrance Comme le ver luisant tient son corps enflammé Comme au cœur du soldat il palpite la France Et comme au cœur du lys le pollen parfumé"
+    },
+    {
+      "id": "s1-346",
+      "sceneId": "s1",
+      "text": "LA VICTOIRE"
+    },
+    {
+      "id": "s1-347",
+      "sceneId": "s1",
+      "text": "Un coq chante je rêve et les feuillards agitent Leurs feuilles qui ressemblent à de pauvres marins"
+    },
+    {
+      "id": "s1-348",
+      "sceneId": "s1",
+      "text": "Ailés et tournoyants comme Icare le faux Des aveugles gesticulant comme des fourmis Se miraient sous la pluie aux reflets du trottoir"
+    },
+    {
+      "id": "s1-349",
+      "sceneId": "s1",
+      "text": "Leurs rires amassés en grappes de raisin"
+    },
+    {
+      "id": "s1-350",
+      "sceneId": "s1",
+      "text": "Ne sors plus de chez moi diamant qui parlais Dors doucement tu es chez toi tout t'appartient Mon lit ma lampe et mon casque troué"
+    },
+    {
+      "id": "s1-351",
+      "sceneId": "s1",
+      "text": "Regards précieux saphirs taillés aux environs de Saint-Claude Les jours étaient une pure émeraude"
+    },
+    {
+      "id": "s1-352",
+      "sceneId": "s1",
+      "text": "Je me souviens de toi ville des météores Ils fleurissaient en l'air pendant ces nuits où rien ne dort"
+    },
+    {
+      "id": "s1-353",
+      "sceneId": "s1",
+      "text": "Jardins de la lumière où j'ai cueilli des bouquets"
+    },
+    {
+      "id": "s1-354",
+      "sceneId": "s1",
+      "text": "Tu dois en avoir assez de faire peur à ce ciel Qu'il garde son hoquet"
+    },
+    {
+      "id": "s1-355",
+      "sceneId": "s1",
+      "text": "On imagine difficilement À quel point le succès rend les gens stupides et tranquilles"
+    },
+    {
+      "id": "s1-356",
+      "sceneId": "s1",
+      "text": "À l'institut des jeunes aveugles on a demandé *N'avez-vous point de jeune aveugle ailé*"
+    },
+    {
+      "id": "s1-357",
+      "sceneId": "s1",
+      "text": "Ô bouches l'homme est à la recherche d'un nouveau langage Auquel le grammairien d'aucune langue n'aura rien à dire"
+    },
+    {
+      "id": "s1-358",
+      "sceneId": "s1",
+      "text": "Et ces vieilles langues sont tellement près de mourir Que c'est vraiment par habitude et manque d'audace Qu'on les fait encore servir à la poésie"
+    },
+    {
+      "id": "s1-359",
+      "sceneId": "s1",
+      "text": "Mais elles sont comme des malades sans volonté Ma foi les gens s'habitueraient vite au mutisme La mimique suffit bien au cinéma"
+    },
+    {
+      "id": "s1-360",
+      "sceneId": "s1",
+      "text": "Mais entêtons-nous à parler Remuons la langue Lançons des postillons On veut de nouveaux sons de nouveaux sons de nouveaux sons On veut des consonnes sans voyelles Des consonnes qui pèsent sourdement Imitez le son de la toupie Laisser pétiller un son nasal et continu Faites claquer votre langue Servez-vous du bruit sourd de celui qui mange sans civilité Le raclement aspiré du crachement ferait aussi une belle consonne"
+    },
+    {
+      "id": "s1-361",
+      "sceneId": "s1",
+      "text": "Les divers pets labiaux rendraient aussi vos discours claironnants Habituez-vous à roter à volonté Et quelle lettre grave comme un son de cloche À travers nos mémoires Nous n'aimons pas assez la joie De voir les belles choses neuves Ô mon amie hâte-toi Crains qu'un jour un train ne t'émeuve Plus Regarde-le plus vite pour toi Ces chemins de fer qui circulent Sortiront bientôt de la vie Ils seront beaux et ridicules"
+    },
+    {
+      "id": "s1-362",
+      "sceneId": "s1",
+      "text": "Deux lampes brûlent devant moi Comme deux femmes qui rient Je courbe tristement la tête Devant l'ardente moquerie Ce rire se répand Partout Parlez avec les mains faites claquer vos doigts Tapez-vous sur la joue comme sur un tambour Ô paroles Elles suivent dans la myrtaie L'Eros et l'Antéros en larmes Je suis le ciel de la cité"
+    },
+    {
+      "id": "s1-363",
+      "sceneId": "s1",
+      "text": "Écoutez la mer"
+    },
+    {
+      "id": "s1-364",
+      "sceneId": "s1",
+      "text": "La mer gémir au loin et crier toute seule Ma voix fidèle comme l'ombre Veut être enfin l'ombre de la vie Veut être ô mer vivante infidèle comme toi"
+    },
+    {
+      "id": "s1-365",
+      "sceneId": "s1",
+      "text": "La mer qui a trahi des matelots sans nombre Engloutit mes grand cris comme des dieux noyés Et la mer au soleil ne supporte que l'ombre Que jettent des oiseaux les ailes éployées"
+    },
+    {
+      "id": "s1-366",
+      "sceneId": "s1",
+      "text": "La parole est soudaine et c'est un Dieu qui tremble Avance et soutiens-moi je regrette les mains De ceux qui les tendaient et m'adoraient ensemble Quelle oasis de bras m'accueillera demain Connais-tu cette joie de voir des choses neuves"
+    },
+    {
+      "id": "s1-367",
+      "sceneId": "s1",
+      "text": "Ô voix je parle le langage de la mer Et dans le port la nuit les dernières tavernes Moi qui suis plus têtu que non l'hydre de Lerne"
+    },
+    {
+      "id": "s1-368",
+      "sceneId": "s1",
+      "text": "La rue où nagent mes deux mains Aux-doigts subtils fouillant la ville S'en va mais qui sait si demain La rue devenait immobile Qui sait ou serait mon chemin"
+    },
+    {
+      "id": "s1-369",
+      "sceneId": "s1",
+      "text": "Songe que les chemins de fer Seront démodés et abandonnés dans peu de temps Regarde"
+    },
+    {
+      "id": "s1-370",
+      "sceneId": "s1",
+      "text": "La Victoire avant tout sera De bien voir au loin De tout voir De près Et que tout ait un nom nouveau"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Me voici devant tous un homme plein de sens Connaissant la vie et de la mort ce qu'un vivant peut connaître Ayant éprouvé les douleurs et les joies de l'amour Ayant su quelquefois imposer ses idées Connaissant plusieurs langages Ayant pas mal voyagé Ayant vu la guerre dans l'Artillerie et l'Infanterie Blessé à la tête trépané sous le chloroforme Ayant perdu ses meilleurs amis dans l'effroyable lutte Je sais d'ancien et de nouveau autant qu'un homme seul pourrait des deux savoir Et sans m'inquiéter aujourd'hui de cette guerre Entre nous et pour nous mes amis Je juge cette longue querelle de la tradition et de l'invention De l'Ordre et de l'Aventure"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Vous dont la bouche est faite à l'image de celle de Dieu Bouche qui est l'ordre même Soyez indulgents quand vous nous comparez À ceux qui furent la perfection de l'ordre Nous qui quêtons partout l'aventure"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Nous ne sommes pas vos ennemis Nous voulons vous donner de vastes et d'étranges domaines Où le mystère en fleurs s'offre à qui veut le cueillir Il y a là des feux nouveaux des couleurs jamais vues Mille phantasmes impondérables Auxquels il faut donner de la réalité Nous voulons explorer la bonté contrée énorme où tout se tait Il y a aussi le temps qu'on peut chasser ou faire revenir Pitié pour nous qui combattons toujours aux frontières De l'illimité et de l'avenir Pitié pour nos erreurs pitié pour nos péchés"
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Voici que vient l'été la saison violente Et ma jeunesse est morte ainsi que le printemps Ô Soleil c'est le temps de la Raison ardente Et j'attends Pour la suivre toujours la forme noble et douce Qu'elle prend afin que je l'aime seulement Elle vient et m'attire ainsi qu'un fer l'aimant Elle a l'aspect charmant D'une adorable rousse"
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Ses cheveux sont d'or on dirait Un bel éclair qui durerait Ou ces flammes qui se pavanent Dans les roses-thé qui se fanent"
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Mais riez riez de moi Hommes de partout surtout gens d'ici Car il y a tant de choses que je n'ose vous dire Tant de choses que vous ne me laisseriez pas dire Ayez pitié de moi"
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "TABLE"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "LA MANDOLINE l'ŒILLET ET LE BAMBOU"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "LA COLOMBE POIGNARDÉE ET LE JET D'EAU 2e CANONNIER CONDUCTEUR"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "LOIN DU PIGEONNIER"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "S. P. VISÉE 1915 CARTE POSTALE"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "MADELEINE"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "VENU DE DIEUZE"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "LA GRACE EXILÉE LA BOUCLE RETROUVÉE REFUS DE LA COLOMBE LES FEUX DU BIVOUAC LES GRENADINES REPENTANTES TOURBILLON DE MOUCHES L'ADIEU DU CAVALIER LE PALAIS DU TONNERRE PHOTOGRAPHIE L'INSCRIPTION ANGLAISE DANS L'ABRI-CAVERNE FUSÉE DÉSIR"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "OCÉAN DE TERRE"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "MERVEILLE DE LA GUERRE EXERCICE À L'ITALIE LA TRAVERSÉE IL Y A L'ESPIONNE LE CHANT D'AMOUR AUSSI BIEN QUE LES CIGALES SIMULTANÉITÉS DU COTON DANS LES OREILLES"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "LE DÉPART LE VIGNERON CHAMPENOIS CARTE POSTALE ÉVENTAIL DES SAVEURS SOUVENIRS L'AVENIR UN OISEAU CHANTE CHEVAUX DE FRISE"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "CHEF DE SECTION TRISTESSE D'UNE ÉTOILE"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "LA JOLIE ROUSSE"
+    }
+  ]
+}

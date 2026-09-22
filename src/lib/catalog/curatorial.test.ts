@@ -227,6 +227,24 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "the-price-of-love",
     "the-private-papers-of-henry-ryecroft",
     "unhuman-tour-kusamakura",
+    "ubirajara",
+    "cecilia",
+    "la-regenta",
+    "los-pazos-de-ulloa",
+    "nazarin",
+    "the-octopus",
+    "the-red-and-the-black",
+    "alcools",
+    "petersburg",
+    "st-peter-s-umbrella",
+    "caesar-or-nothing",
+    "calligrammes",
+    "martin-fierro",
+    "the-complete-original-short-stories",
+    "the-cabin",
+    "les-chants-de-maldoror",
+    "pan-tadeusz",
+    "the-red-laugh",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1540,5 +1558,81 @@ test("Locked recommend five stay findable on ritual lanes, not a homepage rail",
   assert.ok(sleep?.workIds.includes("quicksand"));
   for (const id of FEATURED_CAROUSEL_IDS) {
     assert.equal(curatorialTrack(id), "featured", id);
+  }
+});
+
+test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
+  const expect = {
+    "ubirajara": { opening: "Pela marjem do grande rio caminha Jaguar\u00ea, o joven ca\u00e7ador.", breaths: 985, scenes: 9, gutenberg: 38496 },
+    "cecilia": { opening: "*Tal es el fruto de la culpa, Tello, cosecha de dolor.*", breaths: 3966, scenes: 45, gutenberg: 28281 },
+    "la-regenta": { opening: "La heroica ciudad dorm\u00eda la siesta. El viento Sur, caliente y perezoso, empujaba las nubes blanqueci", breaths: 5902, scenes: 30, gutenberg: 17073 },
+    "los-pazos-de-ulloa": { opening: "Por m\u00e1s que el jinete trataba de sofrenarlo agarr\u00e1ndose con todas sus fuerzas a la \u00fanica rienda de c", breaths: 1293, scenes: 30, gutenberg: 18005 },
+    "nazarin": { opening: "A un periodista de los de nuevo cu\u00f1o, de estos que designamos con el ex\u00f3tico nombre de *reporter*, d", breaths: 1162, scenes: 35, gutenberg: 73322 },
+    "the-octopus": { opening: "Just after passing Caraher's saloon, on the County Road that ran south from Bonneville, and that div", breaths: 3563, scenes: 15, gutenberg: 268 },
+    "the-red-and-the-black": { opening: "Put thousands together less bad, But the cage less gay.--*Hobbes*.", breaths: 3449, scenes: 74, gutenberg: 44747 },
+    "alcools": { opening: "\u00c0 la fin tu es las de ce monde ancien", breaths: 542, scenes: 44, gutenberg: 15462 },
+    "petersburg": { opening: "Apollon Apollonowitsch Ableuchow war von h\u00f6chst w\u00fcrdiger Abstammung: er hatte Adam zum Vorfahren geh", breaths: 4563, scenes: 8, gutenberg: 39919 },
+    "st-peter-s-umbrella": { opening: "LITTLE VERONICA IS TAKEN AWAY.", breaths: 1856, scenes: 17, gutenberg: 31945 },
+    "caesar-or-nothing": { opening: "*MARSEILLES!*", breaths: 3586, scenes: 46, gutenberg: 8444 },
+    "calligrammes": { opening: "Comme c'\u00e9tait la veille du quatorze juillet Vers les quatre heures de l'apr\u00e8s-midi Je descendis dans", breaths: 424, scenes: 15, gutenberg: 55569 },
+    "martin-fierro": { opening: "1 Aqu\u00ed me pongo a cantar Al comp\u00e1s de la vig\u00fcela, Que el hombre que lo desvela Una pena estraordinar", breaths: 395, scenes: 12, gutenberg: 14765 },
+    "the-complete-original-short-stories": { opening: "For several days in succession fragments of a defeated army had passed through the town. They were m", breaths: 13590, scenes: 186, gutenberg: 3090 },
+    "the-cabin": { opening: "The vast plain stretched out under the blue splendour of dawn, a broad sash of light which appeared ", breaths: 1205, scenes: 10, gutenberg: 38165 },
+    "les-chants-de-maldoror": { opening: "Pl\u00fbt au ciel que le lecteur, enhardi et devenu momentan\u00e9ment f\u00e9roce comme ce qu'il lit, trouve, sans", breaths: 189, scenes: 6, gutenberg: 12005 },
+    "pan-tadeusz": { opening: "GOSPODARSTWO.", breaths: 424, scenes: 5, gutenberg: 31536 },
+    "the-red-laugh": { opening: "..... Horror and madness.", breaths: 459, scenes: 19, gutenberg: 62460 },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(sleep);
+  assert.ok(forYou);
+  assert.equal(Object.keys(expect).length, 18);
+  assert.deepEqual(forYou.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  assert.equal(sleep.workIds[0], "quicksand");
+  let prev = next.indexOf("unhuman-tour-kusamakura");
+  assert.ok(prev > next.indexOf("all-quiet-on-the-western-front"));
+  const sleepPrev = sleep.workIds.indexOf("unhuman-tour-kusamakura");
+  assert.ok(sleepPrev > sleep.workIds.indexOf("all-quiet-on-the-western-front"));
+  let sleepAt = sleepPrev;
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.opening, want.opening, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "next", id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(forYou!.workIds.includes(id), false, id);
+    const at = next.indexOf(id);
+    assert.ok(at > prev, `${id} follows All Quiet on Next`);
+    prev = at;
+    const sit = sleep!.workIds.indexOf(id);
+    assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
+    sleepAt = sit;
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: unknown[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.ok(full.breaths.length >= 3, id);
+    assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
+  }
+  for (const held of ["three-hundred-tang-poems", "the-bronze-horseman"]) {
+    const work = SHELF.find((item) => item.id === held);
+    assert.ok(work, held);
+    assert.equal(work!.local, undefined, held);
+    assert.equal(isBoundLocal(work!), false, held);
+    assert.equal(next.includes(held), false, held);
+    assert.equal(existsSync(new URL(`./texts/${held}.json`, import.meta.url)), false, held);
   }
 });
