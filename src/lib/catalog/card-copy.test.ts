@@ -1981,6 +1981,83 @@ test("Tier B batches 3–4 are local format-min binds, never Featured", () => {
   }
 });
 
+/** Tier B format-min CLEAR batches 5–6. Later only — never Featured, cold-open untouched. */
+const TIER_B_BATCH_5_6 = [
+  "a-crystal-age",
+  "a-pair-of-blue-eyes",
+  "a-shropshire-lad",
+  "barrack-room-ballads",
+  "bayou-folk",
+  "children-of-the-night",
+  "fantastic-fables",
+  "far-from-the-madding-crowd",
+  "felix-holt-the-radical",
+  "ghetto-tragedies",
+  "imperium-in-imperio",
+  "iola-leroy",
+  "life-s-handicap-being-stories-of-mine-own-people",
+  "life-s-little-ironies",
+  "looking-backward",
+  "lord-jim",
+  "main-travelled-roads",
+  "new-grub-street",
+  "poems-first-series-et-al",
+  "poems-of-passion",
+  "ramona",
+  "robbery-under-arms",
+  "roderick-hudson",
+  "soldiers-three",
+  "tales-of-mean-streets",
+  "the-awkward-age",
+  "the-country-of-the-pointed-firs",
+  "the-days-work",
+  "the-greater-inclination",
+  "the-hand-of-ethelberta",
+  "the-happy-prince-and-other-tales",
+  "the-light-that-failed",
+  "the-luck-of-roaring-camp-and-other-tales",
+  "the-mayor-of-casterbridge",
+  "the-phantom-rickshaw-and-other-ghost-stories",
+  "the-purple-cloud",
+  "the-ramayan-of-valmiki",
+  "the-return-of-the-native",
+  "the-sacred-fount",
+  "the-secret-rose",
+  "the-strength-of-gideon-and-other-stories",
+  "the-turn-of-the-screw",
+  "under-the-greenwood-tree",
+  "war-is-kind",
+  "wessex-tales",
+  "what-maisie-knew",
+] as const;
+
+test("Tier B batches 5–6 are local format-min binds, never Featured", () => {
+  assert.equal(TIER_B_BATCH_5_6.length, 46);
+  assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  for (const id of TIER_B_BATCH_5_6) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(curatorialTrack(id), "later", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assertNoStubOpening(id);
+    const full = textWork(id);
+    assert.equal(work!.breaths, full.breaths.length, id);
+    assert.ok(full.breaths.length > 1, id);
+    assert.ok(
+      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
+      `${id} shelf opening`,
+    );
+    assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
+  }
+});
+
 test("homepage examples keep country + concrete sentence", () => {
   assert.equal(countryFor(SHELF.find((w) => w.id === "passing")!), "United States");
   assert.match(blurbFor("passing"), /color line/i);
