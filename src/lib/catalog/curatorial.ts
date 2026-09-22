@@ -68,6 +68,9 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * BATCH-11 CLEAR (Sep 22) sits on Next after BATCH-8 (after All Quiet),
  * before-sleep only — never Featured, not For you. Cold-open stays
  * Mirth → Quicksand → Botchan.
+ * BATCH-10 CLEAR (Sep 22) sits on Next after All Quiet on the Western Front,
+ * before-sleep only — never Featured, not For you. Cold-open stays
+ * Mirth → Quicksand → Botchan. Inferno stays HOLD (no invented Dante PG).
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -249,6 +252,26 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "les-chants-de-maldoror",
   "pan-tadeusz",
   "the-red-laugh",
+  // Mira BATCH-10 CLEAR (Sep 22) — after All Quiet. Never Featured. Not For you.
+  "before-adam",
+  "bruges-la-morte",
+  "casmurro",
+  "les-civilises",
+  "ein-landarzt",
+  "hien-le-maboul",
+  "knulp",
+  "iracema",
+  "meaulnes",
+  "tristana",
+  "niels",
+  "amor-de-perdicao",
+  "das-stunden-buch",
+  "misericordia",
+  "the-mandarin",
+  "policarpo",
+  "quincas",
+  "marianela",
+  "pepita-jimenez",
 ] as const;
 
 /**

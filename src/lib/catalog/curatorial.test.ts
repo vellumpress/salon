@@ -245,6 +245,25 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "les-chants-de-maldoror",
     "pan-tadeusz",
     "the-red-laugh",
+    "before-adam",
+    "bruges-la-morte",
+    "casmurro",
+    "les-civilises",
+    "ein-landarzt",
+    "hien-le-maboul",
+    "knulp",
+    "iracema",
+    "meaulnes",
+    "tristana",
+    "niels",
+    "amor-de-perdicao",
+    "das-stunden-buch",
+    "misericordia",
+    "the-mandarin",
+    "policarpo",
+    "quincas",
+    "marianela",
+    "pepita-jimenez",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1634,5 +1653,64 @@ test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.equal(isBoundLocal(work!), false, held);
     assert.equal(next.includes(held), false, held);
     assert.equal(existsSync(new URL(`./texts/${held}.json`, import.meta.url)), false, held);
+  }
+});
+
+test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
+  const expect = {
+    "before-adam": { opening: "Pictures! Pictures! Pictures! Often, before I learned, did I wonder whence came the multitudes of pictures that thronged", breaths: 423, scenes: 18, gutenberg: 310, scene: "Chapter I" },
+    "bruges-la-morte": { opening: "Hugues recommençait chaque soir le même itinéraire, suivant la ligne des quais, d'une marche indécise, un peu voûté déjà", breaths: 400, scenes: 14, gutenberg: 14911, scene: "Chapter II · Hugues recommençait chaque soir le même itinéraire, suivant la" },
+    "casmurro": { opening: "Do titulo.", breaths: 1631, scenes: 90, gutenberg: 55752, scene: "Chapter I" },
+    "les-civilises": { opening: "«Cap'taine Torral,» grogna Mévil à ses coureurs en redescendant.", breaths: 1844, scenes: 35, gutenberg: 47712, scene: "Chapter II" },
+    "ein-landarzt": { opening: "Wir haben einen neuen Advokaten, den Dr. Bucephalus. In seinem Äußern erinnert wenig an die Zeit, da er noch Streitroß A", breaths: 120, scenes: 14, gutenberg: 21989, scene: "Der neue Advokat" },
+    "hien-le-maboul": { opening: "Le clairon traversa la route, s’avança jusqu’au bord de la digue de pierres sèches et sonna le réveil. Les notes alertes", breaths: 1177, scenes: 22, gutenberg: 68588, scene: "Chapter II · Le clairon traversa la route, s’avança jusqu’au bord de la digue de" },
+    "knulp": { opening: "Anfang der neunziger Jahre mußte unser Freund Knulp einmal mehrere Wochen im Spital liegen, und als er entlassen wurde, ", breaths: 656, scenes: 3, gutenberg: 17622, scene: "Vorfrühling" },
+    "iracema": { opening: "Iracema passou entre as arvores, silenciosa como uma sombra: seu olhar scintillante coava entre as folhas, quaes frouxos", breaths: 968, scenes: 27, gutenberg: 67740, scene: "Chapter VII" },
+    "meaulnes": { opening: "Il arriva chez nous un dimanche de novembre 189...", breaths: 1486, scenes: 45, gutenberg: 5781, scene: "Part I · Chapter I · Le Pensionnaire" },
+    "tristana": { opening: "Resignada en absoluto no, porque más de una vez, en aquel año que precedió a lo que se va a referir, la linda figurilla ", breaths: 627, scenes: 28, gutenberg: 66979, scene: "Chapter II · Resignada en absoluto no, porque más de una vez, en aquel año que" },
+    "niels": { opening: "She had the black, luminous eyes of the Blid family with delicate, straight eyebrows; she had their boldly shaped nose, ", breaths: 933, scenes: 14, gutenberg: 55389, scene: "Chapter I" },
+    "amor-de-perdicao": { opening: "Domingos José Correia Botelho de Mesquita e Menezes, fidalgo de linhagem, e um dos mais antigos solarengos de Villa Real", breaths: 1569, scenes: 19, gutenberg: 16425, scene: "Part 1 · Chapter I" },
+    "das-stunden-buch": { opening: "Produced by Markus Brenner and the Online Distributed Proofreading Team at http://www.pgdp.net", breaths: 430, scenes: 309, gutenberg: 24288, scene: "Book I · Produced by Markus Brenner and the Online Distributed" },
+    "misericordia": { opening: "Dos caras, como algunas personas, tiene la parroquia de San Sebastián... mejor será decir la iglesia... dos caras que se", breaths: 1500, scenes: 40, gutenberg: 21831, scene: "Chapter I" },
+    "the-mandarin": { opening: "Decorreu um mez.", breaths: 359, scenes: 7, gutenberg: 16384, scene: "Chapter II" },
+    "policarpo": { opening: "Como de habito, Polycarpo Quaresma, mais conhecido por major Quaresma, bateu em casa ás 4 e 15 da tarde. Havia mais de v", breaths: 1966, scenes: 15, gutenberg: 67535, scene: "Part I · Chapter I · A Lição De Violão" },
+    "quincas": { opening: "Rubião fitava a enseada,--eram oito horas da manhã. Quem o visse, com os polegares mettidos no cordão do chambre, á jane", breaths: 1829, scenes: 201, gutenberg: 55682, scene: "Chapter I" },
+    "marianela": { opening: "Se puso el sol. Tras el breve crepúsculo vino tranquila y oscura la noche, en cuyo negro seno murieron poco a poco los ú", breaths: 1221, scenes: 22, gutenberg: 17340, scene: "Chapter I · Perdido" },
+    "pepita-jimenez": { opening: "*22 de Marzo*.", breaths: 850, scenes: 3, gutenberg: 17223, scene: "Chapter I · Cartas de mi sobrino" },
+  } as const;
+  assert.equal(Object.keys(expect).length, 19);
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(sleep && forYou);
+  assert.deepEqual(forYou.workIds.slice(0, 3), ["the-house-of-mirth","quicksand","botchan"]);
+  const inferno = SHELF.find((item) => item.id === "inferno");
+  assert.ok(inferno && inferno.local !== true && inferno.gutenberg === undefined);
+  assert.equal(next.includes("inferno"), false);
+  let prev = next.indexOf("the-red-laugh");
+  let sleepPrev = sleep.workIds.indexOf("the-red-laugh");
+  const quiet = next.indexOf("all-quiet-on-the-western-front");
+  assert.ok(quiet >= 0 && prev > quiet && sleepPrev > sleep.workIds.indexOf("all-quiet-on-the-western-front"));
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work && work.local === true && isBoundLocal(work), id);
+    assert.equal(work.opening, want.opening, id);
+    assert.equal(work.breaths, want.breaths, id);
+    assert.equal(work.gutenberg, want.gutenberg, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "next", id);
+    assert.equal(forYou.workIds.includes(id), false, id);
+    const at = next.indexOf(id);
+    assert.ok(at > prev, id);
+    prev = at;
+    const sleepAt = sleep.workIds.indexOf(id);
+    assert.ok(sleepAt > sleepPrev, id);
+    sleepPrev = sleepAt;
+    assert.equal(existsSync(new URL("./openings/" + id + ".json", import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL("./texts/" + id + ".json", import.meta.url), "utf8"));
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.equal(full.scenes[0]?.title, want.scene, id);
+    assert.ok((full.breaths[0]?.text ?? "").startsWith(want.opening), id);
   }
 });
