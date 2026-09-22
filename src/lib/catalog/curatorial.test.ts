@@ -8,7 +8,7 @@ import {
   isAdaptedBySalon,
   NEXT_FEATURED_TRACK_IDS,
 } from "./curatorial.ts";
-import { RITUAL_LANES } from "./rituals.ts";
+import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES } from "./rituals.ts";
 import { SHELF } from "./shelf.ts";
 import { isBoundLocal, isEnReadableOff } from "./en-rights.ts";
 
@@ -323,7 +323,6 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "rootabaga-stories",
     "rootabaga-pigeons",
     "auguste-rodin",
-    "on-the-seaboard",
     "lucky-pehr",
     "the-dream-play",
     "the-father",
@@ -363,6 +362,7 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "gentlemen-prefer-blondes",
     "of-one-blood",
     "maria-chapdelaine",
+    "african-farm",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1483,10 +1483,11 @@ test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
     "quicksand",
     "botchan",
   ]);
-  assert.equal(forYou!.workIds.at(-5), "there-is-confusion");
-  assert.equal(forYou!.workIds.at(-4), "miss-lulu-bett");
-  assert.equal(forYou!.workIds.at(-3), "seven-brothers");
-  assert.equal(forYou!.workIds.at(-2), "futility");
+  assert.equal(forYou!.workIds.at(-6), "there-is-confusion");
+  assert.equal(forYou!.workIds.at(-5), "miss-lulu-bett");
+  assert.equal(forYou!.workIds.at(-4), "seven-brothers");
+  assert.equal(forYou!.workIds.at(-3), "futility");
+  assert.equal(forYou!.workIds.at(-2), "on-the-seaboard");
   assert.equal(forYou!.workIds.at(-1), "generosity");
   assert.equal(sleep!.workIds[0], "quicksand");
 });
@@ -1812,7 +1813,6 @@ test("BATCH-15 CLEAR inventory binds are local Next / before-sleep sits, never F
     "rootabaga-stories": { opening: "Gimme the Ax lived in a house where everything is the same as it always was.", breaths: 58, scenes: 1, gutenberg: 27085, scene: "How They Broke Away to Go to the Rootabaga Country" },
     "rootabaga-pigeons": { opening: "Blixie Bimber’s mother was chopping hash. And the hatchet broke. So Blixie started downtown with fif", breaths: 20, scenes: 1, gutenberg: 61553, scene: "The Skyscraper to the Moon" },
     "auguste-rodin": { opening: "Rodin has pronounced Rilke's essay the supreme interpretation of his work. A few years ago the sculp", breaths: 115, scenes: 2, gutenberg: 45605, scene: "Preface" },
-    "on-the-seaboard": { opening: "A fishing boat lay one May evening to beam-wind, out on Goosestone bay. \"Rokarna,\" known to all on t", breaths: 1097, scenes: 14, gutenberg: 44184, scene: "Chapter I" },
     "lucky-pehr": { opening: "SCENE: A Room in the Church Tower.", breaths: 924, scenes: 5, gutenberg: 8510, scene: "Act I" },
     "the-dream-play": { opening: "*The background represents cloud banks that resemble corroding slate cliffs with ruins of castles an", breaths: 1085, scenes: 2, gutenberg: 45375, scene: "Prologue" },
     "the-father": { opening: "[The sitting room at the Captain's. There is a door a little to the right at the back. In the middle", breaths: 727, scenes: 3, gutenberg: 8499, scene: "Act I" },
@@ -1831,7 +1831,7 @@ test("BATCH-15 CLEAR inventory binds are local Next / before-sleep sits, never F
   const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
   assert.ok(sleep);
   assert.ok(forYou);
-  assert.equal(Object.keys(expect).length, 16);
+  assert.equal(Object.keys(expect).length, 15);
   assert.deepEqual(forYou.workIds.slice(0, 3), [
     "the-house-of-mirth",
     "quicksand",
@@ -2376,7 +2376,7 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
     "the-mandarin": { opening: "Decorreu um mez.", breaths: 359, scenes: 7, gutenberg: 16384, scene: "Chapter II" },
     "policarpo": { opening: "Como de habito, Polycarpo Quaresma, mais conhecido por major Quaresma, bateu em casa ás 4 e 15 da tarde. Havia mais de v", breaths: 1966, scenes: 15, gutenberg: 67535, scene: "Part I · Chapter I · A Lição De Violão" },
     "quincas": { opening: "Rubião fitava a enseada,--eram oito horas da manhã. Quem o visse, com os polegares mettidos no cordão do chambre, á jane", breaths: 1829, scenes: 201, gutenberg: 55682, scene: "Chapter I" },
-    "marianela": { opening: "The sun had set. After the brief interval of twilight the night fell calm and dark, and in its gloom", breaths: 1312, scenes: 22, gutenberg: 48818, scene: "Chapter I · Gone Astray" },
+    "marianela": { opening: "The sun had set. After the brief interval of twilight the night fell calm and dark, and in its gloomy bosom the last sounds of a sleepy world died gently away. The traveller went forward on his way, hastening his step as night came on; the path he followed was narrow and worn by the constant tread of men and beasts, and led gently up a hill on whose verdant slopes grew picturesque clumps of wild cherry trees, beeches and oaks.--The reader perceives that we are in the north of Spain.", breaths: 1138, scenes: 22, gutenberg: 48818, scene: "Chapter I · Gone Astray" },
     "pepita-jimenez": { opening: "*22 de Marzo*.", breaths: 850, scenes: 3, gutenberg: 17223, scene: "Chapter I · Cartas de mi sobrino" },
   } as const;
   assert.equal(Object.keys(expect).length, 19);
@@ -2407,7 +2407,11 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
     const sleepAt = sleep.workIds.indexOf(id);
     assert.ok(sleepAt > sleepPrev, id);
     sleepPrev = sleepAt;
-    assert.equal(existsSync(new URL("./openings/" + id + ".json", import.meta.url)), false, id);
+    assert.equal(
+      existsSync(new URL("./openings/" + id + ".json", import.meta.url)),
+      id === "marianela",
+      id,
+    );
     const full = JSON.parse(readFileSync(new URL("./texts/" + id + ".json", import.meta.url), "utf8"));
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
@@ -2724,4 +2728,93 @@ test("Mira NOON CLEAR sits on Next, For you, and Rituals, never Featured", () =>
   assert.equal(hidden?.gutenberg, 34725);
   const cold = ["the-house-of-mirth", "quicksand", "botchan"];
   assert.deepEqual(forYou?.workIds.slice(0, 3), cold);
+});
+
+test("Mira NOON2 CLEAR sits on Next and For you, never Featured", () => {
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const walk = RITUAL_LANES.find((item) => item.id === "on-a-walk");
+  const featured = FEATURED_CAROUSEL_IDS as readonly string[];
+  const cold = ["the-house-of-mirth", "quicksand", "botchan"];
+  assert.deepEqual(forYou?.workIds.slice(0, 3), cold);
+  assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
+  assert.equal(sleep?.workIds[0], "quicksand");
+  assert.equal(forYou?.workIds.at(-1), "generosity");
+  assert.equal(forYou?.workIds.at(-2), "on-the-seaboard");
+
+  const farm = SHELF.find((item) => item.id === "african-farm");
+  assert.ok(farm);
+  assert.equal(farm.local, true);
+  assert.equal(farm.gutenberg, 1441);
+  assert.equal(farm.breaths, 6189);
+  assert.equal(farm.minutes, 1254);
+  assert.equal(
+    farm.opening,
+    "The full African moon poured down its light from the blue sky into the wide, lonely plain.",
+  );
+  assert.equal(next.at(-1), "african-farm");
+  assert.equal(next.includes("african-farm"), true);
+  assert.equal(curatorialTrack("african-farm"), "next");
+  assert.equal(featured.includes("african-farm"), false);
+  assert.equal(forYou?.workIds.includes("african-farm"), false);
+  assert.equal(sleep?.workIds.at(-1), "african-farm");
+  assert.equal(existsSync(new URL("./openings/african-farm.json", import.meta.url)), true);
+
+  const nela = SHELF.find((item) => item.id === "marianela");
+  assert.ok(nela);
+  assert.equal(nela.local, true);
+  assert.equal(nela.gutenberg, 48818);
+  assert.equal(nela.breaths, 1138);
+  assert.equal(nela.minutes, 695);
+  assert.match(nela.opening ?? "", /^The sun had set\./);
+  assert.match(nela.opening ?? "", /north of Spain\.$/);
+  assert.equal(next.includes("marianela"), true);
+  assert.equal(curatorialTrack("marianela"), "next");
+  assert.equal(featured.includes("marianela"), false);
+  assert.equal(forYou?.workIds.includes("marianela"), false);
+  assert.equal(sleep?.workIds.includes("marianela"), true);
+  assert.equal(existsSync(new URL("./openings/marianela.json", import.meta.url)), true);
+
+  const sea = SHELF.find((item) => item.id === "on-the-seaboard");
+  assert.ok(sea);
+  assert.equal(sea.local, true);
+  assert.equal(sea.gutenberg, 44184);
+  assert.equal(sea.breaths, 1097);
+  assert.equal(sea.minutes, 833);
+  assert.match(sea.opening ?? "", /Goosestone bay/);
+  assert.match(sea.opening ?? "", /began to sink\.$/);
+  assert.equal(next.includes("on-the-seaboard"), false);
+  assert.equal(curatorialTrack("on-the-seaboard"), "later");
+  assert.equal(featured.includes("on-the-seaboard"), false);
+  assert.equal(forYou?.workIds.includes("on-the-seaboard"), true);
+  assert.ok((forYou?.workIds.indexOf("on-the-seaboard") ?? -1) > 2);
+  assert.equal(sleep?.workIds.includes("on-the-seaboard"), true);
+  assert.equal(walk?.workIds.includes("on-the-seaboard"), true);
+  assert.equal(existsSync(new URL("./openings/on-the-seaboard.json", import.meta.url)), true);
+
+  for (const held of ["siddhartha", "the-red-room"] as const) {
+    assert.equal(featured.includes(held), false, held);
+    assert.equal(forYou?.workIds.includes(held), false, held);
+    assert.equal((cold as readonly string[]).includes(held), false, held);
+  }
+  const heldFarm = JSON.parse(
+    readFileSync(new URL("./texts/african-farm.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[]; scenes: unknown[] };
+  assert.equal(heldFarm.scenes.length, 36);
+  assert.equal(heldFarm.breaths.length, 6189);
+  assert.equal(heldFarm.breaths[0]?.text, farm.opening);
+  assert.equal(heldFarm.breaths[1]?.text.startsWith("The dry, sandy earth"), true);
+  assert.match(heldFarm.breaths[2]?.text ?? "", /milk-bushes/);
+  const seaFull = JSON.parse(
+    readFileSync(new URL("./texts/on-the-seaboard.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[]; scenes: { title: string }[] };
+  assert.equal(seaFull.scenes[0]?.title, "Chapter I");
+  assert.equal(seaFull.breaths[0]?.text, sea.opening);
+  assert.doesNotMatch(seaFull.breaths[0]?.text ?? "", /^Preface/);
+  const nelaFull = JSON.parse(
+    readFileSync(new URL("./texts/marianela.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.equal(nelaFull.breaths.at(-1)?.text, "THE END.");
+  assert.equal(nelaFull.breaths[0]?.text, nela.opening);
 });

@@ -115,6 +115,29 @@ test("On a Chinese Screen uses the waking Parlour sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|Orientalist/i);
 });
 
+test("African Farm opens on the Karoo moon, preface skipped", () => {
+  const copy = readerIntro(shelfAsWork("african-farm"));
+  assert.match(copy, /full African moon/);
+  assert.match(copy, /lonely plain/);
+  assert.match(copy, /kopje/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|THE STORY OF AN AFRICAN FARM/i);
+});
+
+test("Marianela opens on Bell’s dusk traveller, not a translator preface", () => {
+  const copy = readerIntro(shelfAsWork("marianela"));
+  assert.match(copy, /The sun had set/);
+  assert.match(copy, /north of Spain/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|translator/i);
+});
+
+test("On the Seaboard opens on Goosestone bay, preface skipped", () => {
+  const copy = readerIntro(shelfAsWork("on-the-seaboard"));
+  assert.match(copy, /Goosestone bay/);
+  assert.match(copy, /Rokarna/);
+  assert.match(copy, /Surveyor/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track/i);
+});
+
 test("Futility uses the harbour open, preface skipped", () => {
   const copy = readerIntro(shelfAsWork("futility"));
   assert.match(copy, /harbour/);

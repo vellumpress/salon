@@ -177,6 +177,12 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `She takes a holy temple and papers it into Cheltenham—blue curtains for her eyes, pink stripes, an American stove where the Buddha sat.`,
   futility:
     `The first sit opens on the harbour: the only thing to do was to fit all this into a book. The port sounds the note of departure, and the tall stone houses set the tone.`,
+  "african-farm":
+    `The full African moon poured down its light from the blue sky into the wide, lonely plain. Stunted karoo bushes and milk-bushes follow in the white light, then a solitary kopje of ironstones. Stop before the farm household densifies.`,
+  marianela:
+    `The sun had set. After the brief interval of twilight the night fell calm and dark, and in its gloomy bosom the last sounds of a sleepy world died gently away. The traveller went forward on his way, hastening his step as night came on; the path he followed was narrow and worn by the constant tread of men and beasts, and led gently up a hill on whose verdant slopes grew picturesque clumps of wild cherry trees, beeches and oaks.--The reader perceives that we are in the north of Spain.`,
+  "on-the-seaboard":
+    `A fishing boat lay one May evening to beam-wind, out on Goosestone bay. "Rokarna," known to all on the coast by their three pyramids, were changing to blue, while upon the clear sky clouds were forming just as the sun began to sink. The first sit stops after the Surveyor at the tiller.`,
   "poison-tree":
     `His wife makes him promise: if a storm rises, leave the boat. On the Ganges in Joisto, the weather keeps that promise.`,
   "trooper-peter-halket":
@@ -273,6 +279,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "miss-lulu-bett",
       "seven-brothers",
       "futility",
+      "on-the-seaboard",
       "generosity",
     ],
   },
@@ -627,6 +634,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "of-one-blood",
       "maria-chapdelaine",
       "lady-into-fox",
+      "african-farm",
     ],
   },
   {
@@ -713,6 +721,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "precipitations",
       "spring-and-all",
       "seven-brothers",
+      "on-the-seaboard",
     ],
   },
   {
@@ -1055,6 +1064,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "of-one-blood": 5,
   "maria-chapdelaine": 5,
   "lady-into-fox": 5,
+  "african-farm": 5,
   generosity: 20,
 };
 
