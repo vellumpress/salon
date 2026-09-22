@@ -1,0 +1,592 @@
+{
+  "id": "the-queen-of-spades",
+  "title": "The Queen of Spades",
+  "author": "Alexander Pushkin",
+  "year": "1834",
+  "note": "Project Gutenberg 23058",
+  "minutes": 160,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "There is another way of freeing yourself.'",
+      "place": "There is another way of freeing yourself.'",
+      "reentry": "\"'But I have no money at all,' insisted my grandmother.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Lisaveta Ivanovna sat",
+      "place": "Lisaveta Ivanovna sat",
+      "reentry": "\"Whom do you wish to present?\" asked the girl.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "The girl smiled and made no reply",
+      "place": "The girl smiled and made no reply",
+      "reentry": "Pavel Tomsky took his leave, and, left to herself, Lisaveta glanced out of the window. Soon, a young officer appeared at the corner of the street; the girl blushed and bent her head low over her canvas.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "He was rewarded at last by the following:",
+      "place": "He was rewarded at last by the following:",
+      "reentry": "\"To-night we go to the ambassador's ball. We shall remain until two o'clock. I can arrange for a meeting in this way. After our departure, the servants will probably all go out, or go to sleep. At half-past eleven enter the vestibule boldly",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "There was no reply",
+      "place": "There was no reply",
+      "reentry": "The young man then drew a pistol from his pocket, exclaiming: \"You old witch, I'll force you to tell me!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Lisa made no reply",
+      "place": "Lisa made no reply",
+      "reentry": "\"This Herman,\" continued Tomsky, \"is a romantic character; he has the profile of a Napoleon and the heart of a Mephistopheles. It is said he has at least three crimes on his conscience. But how pale you are.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "The words of Tomsky flashed through Lisa's mind",
+      "place": "The words of Tomsky flashed through Lisa's mind",
+      "reentry": "Herman sat down and told her all. She listened with a feeling of terror and disgust. So those passionate letters, that audacious pursuit were not the result of tenderness and love. It was money that he desired. The poor girl felt that she h",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Now I am afraid to do so.\"",
+      "place": "Now I am afraid to do so.\"",
+      "reentry": "\"Direct me, and I will find the way alone,\" replied Herman.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "All eyes were instantly turned upon the speaker",
+      "place": "All eyes were instantly turned upon the speaker",
+      "reentry": "\"He has lost his wits,\" thought Naroumov.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "\"'But I have no money at all,' insisted my grandmother."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "\"'There is no need of money. Listen to me.'"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "\"The Count then told her a secret which any of us would give a good deal to know.\""
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "The young gamesters were all attention. Tomsky lit his pipe, took a few whiffs, then continued:"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "\"The next evening, grandmother appeared at Versailles at the Queen's gaming-table. The Duke of Orleans was the dealer. Grandmother made some excuse for not having brought any money, and began to punt. She chose three cards in succession, again and again, winning every time, and was soon out of debt.\""
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "\"A fable,\" remarked Herman; \"perhaps the cards were marked.\""
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"I hardly think so,\" replied Tomsky, with an air of importance."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "\"So you have a grandmother who knows three winning cards, and you haven't found out the magic secret.\""
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"I must say I have not. She had four sons, one of them being my father, all of whom are devoted to play; she never told the secret to one of them. But my uncle told me this much, on his word of honor. Tchaplitzky, who died in poverty after having squandered millions, lost at one time, at play, nearly three hundred thousand rubles. He was desperate and grandmother took pity on him. She told him the three cards, making him swear never to use them again. He returned to the game, staked fifty thousand rubles on each card, and came out ahead, after paying his debts.\""
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "As day was dawning the party now broke up, each one draining his glass and taking his leave."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "The Countess Anna Fedorovna was seated before her mirror in her dressing-room. Three women were assisting at her toilet. The old Countess no longer made the slightest pretensions to beauty, but she still clung to all the habits of her youth, and spent as much time at her toilet as she had done sixty years before. At the window a young girl, her ward, sat at her needlework."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "\"Good afternoon, grandmother,\" cried a young officer, who had just entered the room. \"I have come to ask a favor of you.\""
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"What, Pavel?\""
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "\"I want to be allowed to present one of my friends to you, and to take you to the ball on Tuesday night.\""
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "\"Take me to the ball and present him to me there.\""
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "After a few more remarks the officer walked up to the window where"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "\"Whom do you wish to present?\" asked the girl."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "\"Naroumov; do you know him?\""
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "\"No; is he a soldier?\""
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "\"Yes.\""
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "\"An engineer?\""
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "\"No; why do you ask?\""
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Pavel Tomsky took his leave, and, left to herself, Lisaveta glanced out of the window. Soon, a young officer appeared at the corner of the street; the girl blushed and bent her head low over her canvas."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "This appearance of the officer had become a daily occurrence. The man was totally unknown to her, and as she was not accustomed to coquetting with the soldiers she saw on the street, she hardly knew how to explain his presence. His persistence finally roused an interest entirely strange to her. One day, she even ventured to smile upon her admirer, for such he seemed to be."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "The reader need hardly be told that the officer was no other than Herman, the would-be gambler, whose imagination had been strongly excited by the story told by Tomsky of the three magic cards."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "\"Ah,\" he thought, \"if the old Countess would only reveal the secret to me. Why not try to win her good-will and appeal to her sympathy?\""
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "With this idea in mind, he took up his daily station before the house, watching the pretty face at the window, and trusting to fate to bring about the desired acquaintance."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "One day, as Lisaveta was standing on the pavement about to enter the carriage after the Countess, she felt herself jostled and a note was thrust into her hand. Turning, she saw the young officer at her elbow. As quick as thought, she put the note in her glove and entered the carriage. On her return from the drive, she hastened to her chamber to read the missive, in a state of excitement mingled with fear. It was a tender and respectful declaration of affection, copied word for word from a German novel. Of this fact, Lisa was, of course, ignorant."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "The young girl was much impressed by the missive, but she felt that the writer must not be encouraged. She therefore wrote a few lines of explanation and, at the first opportunity, dropped it, with the letter, out of the window. The officer hastily crossed the street, picked up the papers and entered a shop to read them."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "In no wise daunted by this rebuff, he found the opportunity to send her another note in a few days. He received no reply, but, evidently understanding the female heart, he presevered, begging for an interview."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "\"To-night we go to the ambassador's ball. We shall remain until two o'clock. I can arrange for a meeting in this way. After our departure, the servants will probably all go out, or go to sleep. At half-past eleven enter the vestibule boldly, and if you see any one, inquire for the Countess; if not, ascend the stairs, turn to the left and go on until you come to a door, which opens into her bedchamber. Enter this room and behind a screen you will find another door leading to a corridor; from this a spiral staircase leads to my sitting-room. I shall expect to find you there on my return.\""
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Herman trembled like a leaf as the appointed hour drew near. He obeyed instructions fully, and, as he met no one, he reached the old lady's bedchamber without difficulty. Instead of going out of the small door behind the screen, however, he concealed himself in a closet to await the return of the old Countess."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "The hours dragged slowly by; at last he heard the sound of wheels. Immediately lamps were lighted and servants began moving about. Finally the old woman tottered into the room, completely exhausted. Her women removed her wraps and proceeded to get her in readiness for the night. Herman watched the proceedings with a curiosity not unmingled with superstitious fear. When at last she was attired in cap and gown, the old woman looked less uncanny than when she wore her ball-dress of blue brocade."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "She sat down in an easy chair beside a table, as she was in the habit of doing before retiring, and her women withdrew. As the old lady sat swaying to and fro, seemingly oblivious to her surroundings, Herman crept out of his hiding-place."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "At the slight noise the old woman opened her eyes, and gazed at the intruder with a half-dazed expression."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "\"Have no fear, I beg of you,\" said Herman, in a calm voice. \"I have not come to harm you, but to ask a favor of you instead.\""
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "The Countess looked at him in silence, seemingly without comprehending him. Herman thought she might be deaf, so he put his lips close to her ear and repeated his remark. The listener remained perfectly mute."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "\"You could make my fortune without its costing you anything,\" pleaded the young man; \"only tell me the three cards which are sure to win, and--\""
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "Herman paused as the old woman opened her lips as if about to speak."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "\"It was only a jest; I swear to you, it was only a jest,\" came from the withered lips."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "\"There was no jesting about it. Remember Tchaplitzky, who, thanks to you, was able to pay his debts.\""
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "An expression of interior agitation passed over the face of the old woman; then she relapsed into her former apathy."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "\"Will you tell me the names of the magic cards, or not?\" asked Herman after a pause."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "The young man then drew a pistol from his pocket, exclaiming: \"You old witch, I'll force you to tell me!\""
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "At the sight of the weapon the Countess gave a second sign of life. She threw back her head and put out her hands as if to protect herself; then they dropped and she sat motionless."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "Herman grasped her arm roughly, and was about to renew his threats, when he saw that she was dead!"
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Seated in her room, still in her ball-dress, Lisaveta gave herself up to her reflections. She had expected to find the young officer there, but she felt relieved to see that he was not."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "Strangely enough, that very night at the ball, Tomsky had rallied her about her preference for the young officer, assuring her that he knew more than she supposed he did."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "\"Of whom are you speaking?\" she had asked in alarm, fearing her adventure had been discovered."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "\"Of the remarkable man,\" was the reply. \"His name is Herman.\""
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "\"This Herman,\" continued Tomsky, \"is a romantic character; he has the profile of a Napoleon and the heart of a Mephistopheles. It is said he has at least three crimes on his conscience. But how pale you are.\""
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "\"It is only a slight headache. But why do you talk to me of this Herman?\""
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "\"Because I believe he has serious intentions concerning you.\""
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "\"Where has he seen me?\""
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "\"At church, perhaps, or on the street.\""
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "The conversation was interrupted at this point, to the great regret of the young girl. The words of Tomsky made a deep impression upon her, and she realized how imprudently she had acted. She was thinking of all this and a great deal more when the door of her apartment suddenly opened, and Herman stood before her. She drew back at sight of him, trembling violently."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "\"Where have you been?\" she asked in a frightened whisper."
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "\"In the bedchamber of the Countess. She is dead,\" was the calm reply."
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "\"My God! What are you saying?\" cried the girl."
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "\"Furthermore, I believe that I was the cause of her death.\""
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Herman sat down and told her all. She listened with a feeling of terror and disgust. So those passionate letters, that audacious pursuit were not the result of tenderness and love. It was money that he desired. The poor girl felt that she had in a sense been an accomplice in the death of her benefactress. She began to weep bitterly. Herman regarded her in silence."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "\"You are a monster!\" exclaimed Lisa, drying her eyes."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "\"I didn't intend to kill her; the pistol was not even loaded."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "\"How are you going to get out of the house?\" inquired Lisa. \"It is nearly daylight. I intended to show you the way to a secret staircase, while the Countess was asleep, as we would have to cross her chamber."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "\"Direct me, and I will find the way alone,\" replied Herman."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "She gave him minute instructions and a key with which to open the street door. The young man pressed the cold, inert hand, then went out."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "The death of the Countess had surprised no one, as it had long been expected. Her funeral was attended by every one of note in the vicinity. Herman mingled with the throng without attracting any especial attention. After all the friends had taken their last look at the dead face, the young man approached the bier. He prostrated himself on the cold floor, and remained motionless for a long time. He rose at last with a face almost as pale as that of the corpse itself, and went up the steps to look into the casket. As he looked down it seemed to him that the rigid face returned his glance mockingly, closing one eye. He turned abruptly away, made a false step, and fell to the floor. He was picked up, and, at the same moment, Lisaveta was carried out in a faint."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Herman did not recover his usual composure during the entire day. He dined alone at an out-of-the-way restaurant, and drank a great deal, in the hope of stifling his emotion. The wine only served to stimulate his imagination. He returned home and threw himself down on his bed without undressing."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "During the night he awoke with a start; the moon shone into his chamber, making everything plainly visible. Some one looked in at the window, then quickly disappeared. He paid no attention to this, but soon he heard the vestibule door open. He thought it was his orderly, returning late, drunk as usual. The step was an unfamiliar one, and he heard the shuffling sound of loose slippers."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "The door of his room opened, and a woman in white entered. She came close to the bed, and the terrified man recognized the Countess."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "\"I have come to you against my will,\" she said abruptly; \"but I was commanded to grant your request. The tray, seven, and ace in succession are the magic cards. Twenty-four hours must elapse between the use of each card, and after the three have been used you must never play again.\""
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "The fantom then turned and walked away. Herman heard the outside door close, and again saw the form pass the window."
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "He rose and went out into the hall, where his orderly lay asleep on the floor. The door was closed. Finding no trace of a visitor, he returned to his room, lit his candle, and wrote down what he had just heard."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "Two fixed ideas cannot exist in the brain at the same time any more than two bodies can occupy the same point in space. The tray, seven, and ace soon chased away the thoughts of the dead woman, and all other thoughts from the brain of the young officer. All his ideas merged into a single one: how to turn to advantage the secret paid for so dearly. He even thought of resigning his commission and going to Paris to force a fortune from conquered fate. Chance rescued him from his embarrassment."
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "Tchekalinsky, a man who had passed his whole life at cards, opened a club at St. Petersburg. His long experience secured for him the confidence of his companions, and his hospitality and genial humor conciliated society."
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "The gilded youth flocked around him, neglecting society, preferring the charms of faro to those of their sweethearts. Naroumov invited Herman to accompany him to the club, and the young man accepted the invitation only too willingly."
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "The two officers found the apartments full. Generals and statesmen played whist; young men lounged on sofas, eating ices or smoking. In the principal salon stood a long table, at which about twenty men sat playing faro, the host of the establishment being the banker."
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "He was a man of about sixty, gray-haired and respectable. His ruddy face shone with genial humor; his eyes sparkled and a constant smile hovered around his lips."
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "Naroumov presented Herman. The host gave him a cordial handshake, begged him not to stand upon ceremony, and returned, to his dealing. More than thirty cards were already on the table. Tchekalinsky paused after each coup, to allow the punters time to recognize their gains or losses, politely answering all questions and constantly smiling."
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "After the deal was over, the cards were shuffled and the game began again."
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "\"Permit me to choose a card,\" said Herman, stretching out his hand over the head of a portly gentleman, to reach a livret. The banker bowed without replying."
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "Herman chose a card, and wrote the amount of his stake upon it with a piece of chalk."
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "\"How much is that?\" asked the banker; \"excuse me, sir, but I do not see well.\""
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "\"Forty thousand rubles,\" said Herman coolly."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "\"He has lost his wits,\" thought Naroumov."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "\"Allow me to observe,\" said Tchekalinsky, with his eternal smile, \"that your stake is excessive.\""
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "\"What of it?\" replied Herman, nettled. \"Do you accept it or not?\""
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "The banker nodded in assent. \"I have only to remind you that the cash will be necessary; of course your word is good, but in order to keep the confidence of my patrons, I prefer the ready money.\""
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "Herman took a bank-check from his pocket and handed it to his host. The latter examined it attentively, then laid it on the card chosen."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "He began dealing: to the right, a nine; to the left, a tray."
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "\"The tray wins,\" said Herman, showing the card he held--a tray."
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "A murmur ran through the crowd. Tchekalinsky frowned for a second only, then his smile returned. He took a roll of bank-bills from his pocket and counted out the required sum. Herman received it and at once left the table."
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "The next evening saw him at the place again. Every one eyed him curiously, and Tchekalinsky greeted him cordially."
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "He selected his card and placed upon it his fresh stake. The banker began dealing: to the right, a nine; to the left, a seven."
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "Herman then showed his card--a seven spot. The onlookers exclaimed, and the host was visibly disturbed. He counted out ninety-four-thousand rubles and passed them to Herman, who accepted them without showing the least surprise, and at once withdrew."
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "The following evening he went again. His appearance was the signal for the cessation of all occupation, every one being eager to watch the developments of events. He selected his card--an ace."
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "The dealing began: to the right, a queen; to the left, an ace."
+    },
+    {
+      "id": "s8-13",
+      "sceneId": "s8",
+      "text": "\"The ace wins,\" remarked Herman, turning up his card without glancing at it."
+    },
+    {
+      "id": "s8-14",
+      "sceneId": "s8",
+      "text": "\"Your queen is killed,\" remarked Tchekalinsky quietly."
+    },
+    {
+      "id": "s8-15",
+      "sceneId": "s8",
+      "text": "Herman trembled; looking down, he saw, not the ace he had selected, but the queen of spades. He could scarcely believe his eyes. It seemed impossible that he could have made such a mistake. As he stared at the card it seemed to him that the queen winked one eye at him mockingly."
+    },
+    {
+      "id": "s8-16",
+      "sceneId": "s8",
+      "text": "\"The old woman!\" he exclaimed involuntarily."
+    },
+    {
+      "id": "s8-17",
+      "sceneId": "s8",
+      "text": "The croupier raked in the money while he looked on in stupid terror. When he left the table, all made way for him to pass; the cards were shuffled, and the gambling went on."
+    },
+    {
+      "id": "s8-18",
+      "sceneId": "s8",
+      "text": "Herman became a lunatic. He was confined at the hospital at Oboukov, where he spoke to no one, but kept constantly murmuring in a monotonous tone: \"The tray, seven, ace! The tray, seven, queen!\""
+    }
+  ]
+}

@@ -2121,7 +2121,6 @@ test("Tier B batches 11–12 are local format-min binds, never Featured", () => 
   }
 });
 
-
 /** Tier B format-min CLEAR batches 9–10. Later only — never Featured, cold-open untouched. */
 const TIER_B_BATCH_9_10 = [
   "a-lute-of-jade",
@@ -2196,6 +2195,93 @@ test("Tier B batches 9–10 are local format-min binds, never Featured", () => {
     assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
+});
+
+/** Tier B format-min CLEAR batches 13–14. Later only — never Featured, cold-open untouched. */
+const TIER_B_BATCH_13_14 = [
+  "a-hungarian-nabob",
+  "a-sportsman-s-sketches",
+  "bovary",
+  "camille",
+  "crime",
+  "dead-souls",
+  "fathers-and-sons",
+  "havelaar",
+  "immensee",
+  "midst-the-wild-carpathians",
+  "oblomov",
+  "poor-folk",
+  "the-charterhouse-of-parma",
+  "the-cossacks",
+  "the-gambler",
+  "the-house-of-the-dead",
+  "the-man-who-laughs",
+  "the-mantle-and-other-stories",
+  "the-story-of-grettir-the-strong",
+  "underground",
+  "chitra",
+  "father-goriot",
+  "genji",
+  "hands-around-reigen",
+  "liaisons",
+  "metamorphoses",
+  "nights",
+  "poems-and-ballads-of-heinrich-heine",
+  "red-chamber",
+  "san-kuo-or-romance-of-the-three-kingdoms-vol-1",
+  "six-characters",
+  "taras-bulba-and-other-tales",
+  "taras-bulba",
+  "the-aeneid",
+  "the-betrothed",
+  "the-devil-s-elixir",
+  "the-nibelungenlied",
+  "the-poems-of-giacomo-leopardi",
+  "the-queen-of-spades-and-other-stories",
+  "the-queen-of-spades",
+  "three-plays-incl-henry-iv",
+  "venice",
+] as const;
+
+test("Tier B batches 13–14 are local format-min binds, never Featured", () => {
+  assert.equal(TIER_B_BATCH_13_14.length, 42);
+  assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  const coldOpen = new Set<string>(FIRST_SESSION_RITUAL_IDS);
+  for (const id of TIER_B_BATCH_13_14) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(curatorialTrack(id), "later", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    assert.equal(coldOpen.has(id), false, id);
+    for (const lane of RITUAL_LANES) {
+      assert.equal(lane.workIds.includes(id), false, `${id} ${lane.id}`);
+    }
+    assertNoStubOpening(id);
+    const full = textWork(id);
+    assert.equal(work!.breaths, full.breaths.length, id);
+    assert.ok(full.breaths.length > 1, id);
+    assert.ok(
+      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
+      `${id} shelf opening`,
+    );
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
+  }
+  const salammbo = SHELF.find((item) => item.id === "salammbo");
+  assert.ok(salammbo);
+  assert.equal(salammbo.breaths, 1924);
+  assert.equal(
+    salammbo.opening,
+    "It was at Megara, a suburb of Carthage, in the gardens of Hamilcar. The soldiers whom he had command",
+  );
+  assert.equal(curatorialTrack("salammbo"), "next");
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("salammbo"), false);
 });
 
 test("homepage examples keep country + concrete sentence", () => {

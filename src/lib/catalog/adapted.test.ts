@@ -379,16 +379,16 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   assert.match(home, /useShelfSearch\("local"\)/);
   assert.doesNotMatch(home, /useShelfSearch\("fullPdf"\)/);
 
-  assert.equal(LOCAL_WORKS.length, 956);
+  assert.equal(LOCAL_WORKS.length, 998);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 
-  const crime = SHELF.find((item) => item.id === "crime");
-  assert.ok(crime);
-  assert.equal(isBoundLocal(crime), false);
-  assert.ok(crime.gutenberg);
+  const nana = SHELF.find((item) => item.id === "nana");
+  assert.ok(nana);
+  assert.equal(isBoundLocal(nana), false);
+  assert.ok(nana.gutenberg);
   assert.equal(
-    withLocalBound(searchShelf("crime and punishment")).some((item) => item.id === "crime"),
+    withLocalBound(searchShelf("nana")).some((item) => item.id === "nana"),
     false,
   );
 
