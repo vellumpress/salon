@@ -97,7 +97,7 @@ export function DailyScoreChip({
       className={cn(
         "daily-score-chip type-chrome flex flex-col items-center justify-center [touch-action:manipulation]",
         inContinue
-          ? "daily-score-chip--continue min-h-11 flex-1 self-stretch bg-transparent"
+          ? "daily-score-chip--continue min-h-11 flex-1 self-stretch"
           : cn(
               "h-full shrink-0 self-stretch border-l border-ink/15",
               quiet ? "bg-paper-deep text-ink/45" : "bg-yellow text-ink",
