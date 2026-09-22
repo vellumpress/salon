@@ -392,15 +392,15 @@ export const SHELF: ShelfWork[] = [
   {
     id: "all-quiet-on-the-western-front",
     title: "All Quiet on the Western Front",
-    author: "Erich Maria Remarque (tr. A. W. Wheen)",
+    author: "Erich Maria Remarque",
     year: 1929,
     form: "novel",
     language: "English",
-    minutes: 210,
+    minutes: 100,
     local: true,
     gutenberg: 75011,
     opening: "We are at rest five miles behind the front.",
-    breaths: 1680,
+    breaths: 1604,
     intro:
       "Five miles behind the front — bellies full, double sausage, and a cook who won’t stop ladling. This sit is rest and double rations five miles behind the line; later chapters bring trench violence and period enemy language. Warn the room if you Host further.",
   },
