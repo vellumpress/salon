@@ -1,0 +1,805 @@
+{
+  "id": "gods-trombones",
+  "title": "God's Trombones",
+  "author": "James Weldon Johnson",
+  "year": "1927",
+  "note": "Viking 1927 EN · US PD (1927→PD 2023) · en.wikisource.org/wiki/God's_Trombones · no PG",
+  "minutes": 68,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Listen, Lord—A Prayer",
+      "place": "Listen, Lord—A Prayer",
+      "reentry": "O Lord, we come this morning Knee-bowed and body-bent Before thy throne of grace. O Lord—this morning— Bow our hearts beneath our knees, And our knees in some lonesome valley.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "The Creation",
+      "place": "The Creation",
+      "reentry": "And God stepped out on space, And he looked around and said: I'm lonely— I'll make me a world. And far as the eye of God could see Darkness covered everything,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "The Prodigal Son",
+      "place": "The Prodigal Son",
+      "reentry": "Young man— Young man— Your arm's too short to box with God. But Jesus spake in a parable, and he said: A certain man had two sons. Jesus didn't give this man a name,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Go Down Death—A Funeral Sermon",
+      "place": "Go Down Death—A Funeral Sermon",
+      "reentry": "Weep not, weep not, She is not dead; She's resting in the bosom of Jesus. Heart-broken husband—weep no more; Grief-stricken son—weep no more; Left-lonesome daughter—weep no more;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Noah Built the Ark",
+      "place": "Noah Built the Ark",
+      "reentry": "In the cool of the day— God was walking— Around in the Garden of Eden. And except for the beasts, eating in the fields, And except for the birds, flying through the trees, The garden looked like it was deserted.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "The Crucifixion",
+      "place": "The Crucifixion",
+      "reentry": "Jesus, my gentle Jesus, Walking in the dark of the Garden— The Garden of Gethsemane, Saying to the three disciples: Sorrow is in my soul— Even unto death;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Let My People Go",
+      "place": "Let My People Go",
+      "reentry": "And God called Moses from the burning bush, He called in a still, small voice, And he said: Moses—Moses— And Moses listened, And he answered and said: Lord, here am I.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "The Judgment Day",
+      "place": "The Judgment Day",
+      "reentry": "In that great day, People, in that great day, God's a-going to rain down fire. God's a-going to sit in the middle of the air To judge the quick and the dead. Early one of these mornings,",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "O Lord, we come this morning Knee-bowed and body-bent Before thy throne of grace. O Lord—this morning— Bow our hearts beneath our knees, And our knees in some lonesome valley."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "We come this morning— Like empty pitchers to a full fountain, With no merits of our own. O Lord—open up a window of heaven, And lean out far over the battlements of glory, And listen this morning."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Lord, have mercy on proud and dying sinners— Sinners hanging over the mouth of hell, Who seem to love their distance well. Lord—ride by this morning— Mount your milk-white horse, And ride-a this morning—"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "And in your ride, ride by old hell, Ride by the dingy gates of hell, And stop poor sinners in their headlong plunge. And now, O Lord, this man of God, Who breaks the bread of life this morning— Shadow him in the hollow of thy hand,"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "And keep him out of the gunshot of the devil. Take him, Lord—this morning— Wash him with hyssop inside and out, Hang him up and drain him dry of sin. Pin his ear to the wisdom-post, And make his words sledge hammers of truth—"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Beating on the iron heart of sin. Lord God, this morning— Put his eye to the telescope of eternity, And let him look upon the paper walls of time. Lord, turpentine his imagination, Put perpetual motion in his arms,"
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Fill him full of the dynamite of thy power, Anoint him all over with the oil of thy salvation, And set his tongue on fire. And now, O Lord— When I've done drunk my last cup of sorrow— When I've been called everything but a child of God—"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "When I'm done travelling up the rough side of the mountain— O—Mary's Baby— When I start down the steep and slippery steps of death— When this old world begins to rock beneath my feet— Lower me to my dusty grave in peace To wait for that great gittin' up morning—Amen."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "And God stepped out on space, And he looked around and said: I'm lonely— I'll make me a world. And far as the eye of God could see Darkness covered everything,"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Blacker than a hundred midnights Down in a cypress swamp. Then God smiled, And the light broke, And the darkness rolled up on one side, And the light stood shining on the other,"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "And God said: That's good! Then God reached out and took the light in his hands, And God rolled the light around in his hands Until he made the sun; And he set that sun a-blazing in the heavens. And the light that was left from making the sun"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "God gathered it up in a shining ball And flung it against the darkness, Spangling the night with the moon and stars. Then down between The darkness and the light He hurled the world;"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "And God said: That's good! Then God himself stepped down— And the sun was on his right hand, And the moon was on his left; The stars were clustered about his head, And the earth was under his feet."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "And God walked, and where he trod His footsteps hollowed the valleys out And bulged the mountains up. Then he stopped and looked and saw That the earth was hot and barren. So God stepped over to the edge of the world"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "And he spat out the seven seas— He batted his eyes, and the lightnings flashed— He clapped his hands, and the thunders rolled— And the waters above the earth came down, The cooling waters came down. Then the green grass sprouted,"
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "And the little red flowers blossomed, The pine tree pointed his finger to the sky, And the oak spread out his arms, The lakes cuddled down in the hollows of the ground, And the rivers ran down to the sea; And God smiled again,"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "And the rainbow appeared, And curled itself around his shoulder. Then God raised his arm and he waved his hand Over the sea and over the land, And he said: Bring forth! Bring forth! And quicker than God could drop his hand,"
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "Fishes and fowls And beasts and birds Swam the rivers and the seas, Roamed the forests and the woods, And split the air with their wings. And God said: That's good!"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Then God walked around, And God looked around On all that he had made. He looked at his sun, And he looked at his moon, And he looked at his little stars;"
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "He looked on his world With all its living things, And God said: I'm lonely still. Then God sat down— On the side of a hill where he could think; By a deep, wide river he sat down;"
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "With his head in his hands, God thought and thought, Till he thought: I'll make me a man! Up from the bed of the river God scooped the clay; And by the bank of the river"
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "He kneeled him down; And there the great God Almighty Who lit the sun and fixed it in the sky, Who flung the stars to the most far corner of the night, Who rounded the earth in the middle of his hand; This Great God,"
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "Like a mammy bending over her baby, Kneeled down in the dust Toiling over a lump of clay Till he shaped it in his own image; Then into it he blew the breath of life, And man became a living soul."
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "Amen. Amen."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Young man— Young man— Your arm's too short to box with God. But Jesus spake in a parable, and he said: A certain man had two sons. Jesus didn't give this man a name,"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "But his name is God Almighty. And Jesus didn't call these sons by name, But ev'ry young man, Ev'rywhere, Is one of these two sons. And the younger son said to his father,"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "He said: Father, divide up the property, And give me my portion now. And the father with tears in his eyes said: Son, Don't leave your father's house. But the boy was stubborn in his head, And haughty in his heart,"
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "And he took his share of his father's goods, And went into a far-off country. There comes a time, There comes a time When ev'ry young man looks out from his father's house, Longing for that far-off country."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "And the young man journeyed on his way, And he said to himself as he travelled along: This sure is an easy road, Nothing like the rough furrows behind my father's plow. Young man— Young man—"
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Smooth and easy is the road That leads to hell and destruction. Down grade all the way, The further you travel, the faster you go. No need to trudge and sweat and toil, Just slip and slide and slip and slide"
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Till you bang up against hell's iron gate. And the younger son kept travelling along, Till at night-time he came to a city. And the city was bright in the night-time like day, The streets all crowded with people, Brass bands and string bands a-playing,"
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "And ev'rywhere the young man turned There was singing and laughing and dancing. And he stopped a passer-by and he said: Tell me what city is this? And the passer-by laughed and said: Don't you know? This is Babylon, Babylon,"
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "That great city of Babylon. Come on, my friend, and go along with me. And the young man joined the crowd. Young man— Young man— You're never lonesome in Babylon."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "You can always join a crowd in Babylon. Young man— Young man— You can never be alone in Babylon, Alone with your Jesus in Babylon. You can never find a place, a lonesome place,"
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "A lonesome place to go down on your knees, And talk with your God, in Babylon. You're always in a crowd in Babylon. And the young man went with his new-found friend, And bought himself some brand new clothes, And he spent his days in the drinking dens,"
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "Swallowing the fires of hell. And he spent his nights in the gambling dens, Throwing dice with the devil for his soul. And he met up with the women of Babylon. Oh, the women of Babylon! Dressed in yellow and purple and scarlet,"
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "Loaded with rings and earrings and bracelets, Their lips like a honeycomb dripping with honey, Perfumed and sweet-smelling like a jasmine flower; And the jasmine smell of the Babylon women Got in his nostrils and went to his head, And he wasted his substance in riotous living,"
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "In the evening, in the black and dark of night, With the sweet-sinning women of Babylon. And they stripped him of his money, And they stripped him of his clothes, And they left him broke and ragged In the streets of Babylon."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "Then the young man joined another crowd— The beggars and lepers of Babylon. And he went to feeding swine, And he was hungrier than the hogs; He got down on his belly in the mire and mud And ate the husks with the hogs."
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "And not a hog was too low to turn up his nose At the man in the mire of Babylon. Then the young man came to himself— He came to himself and said: In my father's house are many mansions, Ev'ry servant in his house has bread to eat,"
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "Ev'ry servant in his house has a place to sleep; I will arise and go to my father. And his father saw him afar off, And he ran up the road to meet him. He put clean clothes upon his back, And a golden chain around his neck,"
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "He made a feast and killed the fatted calf, And invited the neighbors in. Oh-o-oh, sinner, When you're mingling with the crowd in Babylon— Drinking the wine of Babylon— Running with the women of Babylon—"
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "You forget about God, and you laugh at Death. Today you've got the strength of a bull in your neck And the strength of a bear in your arms, But some o' these days, some o' these days, You'll have a hand-to-hand struggle with bony Death, And Death is bound to win."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "Young man, come away from Babylon, That hell-border city of Babylon. Leave the dancing and gambling of Babylon, The wine and whiskey of Babylon, The hot-mouthed women of Babylon; Fall down on your knees,"
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "And say in your heart: I will arise and go to my Father."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Weep not, weep not, She is not dead; She's resting in the bosom of Jesus. Heart-broken husband—weep no more; Grief-stricken son—weep no more; Left-lonesome daughter—weep no more;"
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "She's only just gone home. Day before yesterday morning, God was looking down from his great, high heaven, Looking down on all his children, And his eye fell on Sister Caroline, Tossing on her bed of pain."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "And God's big heart was touched with pity, With the everlasting pity. And God sat back on his throne, And he commanded that tall, bright angel standing at his right hand: Call me Death! And that tall, bright angel cried in a voice"
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "That broke like a clap of thunder: Call Death!—Call Death! And the echo sounded down the streets of heaven Till it reached away back to that shadowy place, Where Death waits with his pale, white horses. And Death heard the summons,"
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "And he leaped on his fastest horse, Pale as a sheet in the moonlight. Up the golden street Death galloped, And the hoofs of his horse struck fire from the gold, But they didn't make no sound. Up Death rode to the Great White Throne,"
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "And waited for God's command. And God said: Go down, Death, go down, Go down to Savannah, Georgia, Down in Yamacraw, And find Sister Caroline. She's borne the burden and heat of the day,"
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "She's labored long in my vineyard, And she's tired— She's weary— Go down, Death, and bring her to me. And Death didn't say a word, But he loosed the reins on his pale, white horse,"
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "And he clamped the spurs to his bloodless sides, And out and down he rode, Through heaven's pearly gates, Past suns and moons and stars; On Death rode, And the foam from his horse was like a comet in the sky;"
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "On Death rode, Leaving the lightning's flash behind; Straight on down he came. While we were watching round her bed, She turned her eyes and looked away, She saw what we couldn't see;"
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "She saw Old Death. She saw Old Death, Coming like a falling star. But Death didn't frighten Sister Caroline; He looked to her like a welcome friend. And she whispered to us: I'm going home, And she smiled and closed her eyes."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "And Death took her up like a baby, And she lay in his icy arms, But she didn't feel no chill. And Death began to ride again— Up beyond the evening star, Out beyond the morning star,"
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "Into the glittering light of glory, On to the Great White Throne. And there he laid Sister Caroline On the loving breast of Jesus. And Jesus took his own hand and wiped away her tears, And he smoothed the furrows from her face,"
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "And the angels sang a little song, And Jesus rocked her in his arms, And kept a-saying: Take your rest Take your rest, take your rest. Weep not—weep not, She is not dead;"
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "She's resting in the bosom of Jesus."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "In the cool of the day— God was walking— Around in the Garden of Eden. And except for the beasts, eating in the fields, And except for the birds, flying through the trees, The garden looked like it was deserted."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "And God called out and said: Adam, Adam, where art thou? And Adam, with Eve behind his back, Came out from where he was hiding. And God said: Adam, What hast thou done?"
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "Thou hast eaten of the tree! And Adam, With his head hung down, Blamed it on the woman. For after God made the first man Adam, He breathed a sleep upon him;"
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Then he took out of Adam one of his ribs, And out of that rib made woman. And God put the man and woman together In the beautiful Garden of Eden, With nothing to do the whole day long But play all around in the garden."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "And God called Adam before him, And he said to him: Listen now, Adam, Of all the fruit in the garden you can eat, Except of the tree of knowledge; For the day thou eatest of that tree,"
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "Thou shalt surely die. Then pretty soon along came Satan. Old Satan came like a snake in the grass To try out his tricks on the woman. I imagine I can see Old Satan now A-sidling up to the woman."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "I imagine the first word Satan said was: Eve, you're surely good looking. I imagine he brought her a present, too,— And, if there was such a thing in those ancient days, He brought her a looking-glass. And Eve and Satan got friendly—"
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "Then Eve got to walking on shaky ground; Don't ever get friendly with Satan.— And they started to talk about the garden, And Satan said: Tell me, how do you like The fruit on the nice, tall, blooming tree Standing in the middle of the garden?"
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "And Eve said: That's the forbidden fruit, Which if we eat we die. And Satan laughed a devilish little laugh, And he said to the woman: God's fooling you, Eve; That's the sweetest fruit in the garden."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "I know you can eat that forbidden fruit, And I know that you will not die. And Eve looked at the forbidden fruit, And it was red and ripe and juicy. And Eve took a taste, and she offered it to Adam, And Adam wasn't able to refuse;"
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "So he took a bite, and they both sat down And ate the forbidden fruit.— Back there, six thousand years ago, Man first fell by woman— Lord, and he's doing the same today. And that's how sin got into this world."
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "And man, as he multiplied on the earth, Increased in wickedness and sin. He went on down from sin to sin, From wickedness to wickedness, Murder and lust and violence, All kinds of fornications,"
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "Till the earth was corrupt and rotten with flesh, An abomination in God's sight. And God was angry at the sins of men. And God got sorry that he ever made man. And he said: I will destroy him. I'll bring down judgment on him with a flood."
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "I'll destroy ev'rything on the face of the earth, Man, beasts and birds, and creeping things. And he did— Ev'rything but the fishes. But Noah was a just and righteous man. Noah walked and talked with God."
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "And, one day, God said to Noah, He said: Noah, build thee an ark. Build it out of gopher wood. Build it good and strong. Pitch it within and pitch it without. And build it according to the measurements"
+    },
+    {
+      "id": "s4-15",
+      "sceneId": "s4",
+      "text": "That I will give to thee. Build it for you and all your house, And to save the seeds of life on earth; For I'm going to send down a mighty flood To destroy this wicked world. And Noah commenced to work on the ark."
+    },
+    {
+      "id": "s4-16",
+      "sceneId": "s4",
+      "text": "And he worked for about one hundred years. And ev'ry day the crowd came round To make fun of Old Man Noah. And they laughed and they said: Tell us, old man, Where do you expect to sail that boat Up here amongst the hills?"
+    },
+    {
+      "id": "s4-17",
+      "sceneId": "s4",
+      "text": "But Noah kept on a-working. And ev'ry once in a while Old Noah would stop, He'd lay down his hammer and lay down his saw, And take his staff in hand; And with his long, white beard a-flying in the wind, And the gospel light a-gleaming from his eye,"
+    },
+    {
+      "id": "s4-18",
+      "sceneId": "s4",
+      "text": "Old Noah would preach God's word: Sinners, oh, sinners, Repent, for the judgment is at hand. Sinners, oh, sinners, Repent, for the time is drawing nigh. God's wrath is gathering in the sky."
+    },
+    {
+      "id": "s4-19",
+      "sceneId": "s4",
+      "text": "God's a-going to rain down rain on rain. God's a-going to loosen up the bottom of the deep, And drown this wicked world. Sinners, repent while yet there's time For God to change his mind. Some smart young fellow said: This old man's"
+    },
+    {
+      "id": "s4-20",
+      "sceneId": "s4",
+      "text": "Got water on the brain. And the crowd all laughed—Lord, but didn't they laugh; And they paid no mind to Noah, But kept on sinning just the same. One bright and sunny morning, Not a cloud nowhere to be seen,"
+    },
+    {
+      "id": "s4-21",
+      "sceneId": "s4",
+      "text": "God said to Noah: Get in the ark! And Noah and his folks all got in the ark, And all the animals, two by two, A he and a she marched in. Then God said: Noah, Bar the door! And Noah barred the door."
+    },
+    {
+      "id": "s4-22",
+      "sceneId": "s4",
+      "text": "And a little black spot begun to spread, Like a bottle of ink spilling over the sky; And the thunder rolled like a rumbling drum; And the lightning jumped from pole to pole; And it rained down rain, rain, rain, Great God, but didn't it rain!"
+    },
+    {
+      "id": "s4-23",
+      "sceneId": "s4",
+      "text": "For forty days and forty nights Waters poured down and waters gushed up; And the dry land turned to sea. And the old ark-a she begun to ride; The old ark-a she begun to rock; Sinners came a-running down to the ark;"
+    },
+    {
+      "id": "s4-24",
+      "sceneId": "s4",
+      "text": "Sinners came a-swimming all round the ark; Sinners pleaded and sinners prayed— Sinners wept and sinners wailed— But Noah'd done barred the door. And the trees and the hills and the mountain tops Slipped underneath the waters."
+    },
+    {
+      "id": "s4-25",
+      "sceneId": "s4",
+      "text": "And the old ark sailed that lonely sea— For twelve long months she sailed that sea, A sea without a shore. Then the waters begun to settle down, And the ark touched bottom on the tallest peak Of old Mount Ararat."
+    },
+    {
+      "id": "s4-26",
+      "sceneId": "s4",
+      "text": "The dove brought Noah the olive leaf, And Noah when he saw that the grass was green, Opened up the ark, and they all climbed down, The folks, and the animals, two by two, Down from the mount to the valley. And Noah wept and fell on his face"
+    },
+    {
+      "id": "s4-27",
+      "sceneId": "s4",
+      "text": "And hugged and kissed the dry ground. And then— God hung out his rainbow cross the sky, And he said to Noah: That's my sign! No more will I judge the world by flood— Next time I'll rain down fire."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Jesus, my gentle Jesus, Walking in the dark of the Garden— The Garden of Gethsemane, Saying to the three disciples: Sorrow is in my soul— Even unto death;"
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "Tarry ye here a little while, And watch with me. Jesus, my burdened Jesus, Praying in the dark of the Garden— The Garden of Gethsemane. Saying: Father,"
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "Oh, Father, This bitter cup, This bitter cup, Let it pass from me. Jesus, my sorrowing Jesus, The sweat like drops of blood upon his brow,"
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "Talking with his Father, While the three disciples slept, Saying: Father, Oh, Father, Not as I will, Not as I will,"
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "But let thy will be done. Oh, look at black-hearted Judas— Sneaking through the dark of the Garden— Leading his crucifying mob. Oh, God! Strike him down!"
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "Why don't you strike him down, Before he plants his traitor's kiss Upon my Jesus' cheek? And they take my blameless Jesus, And they drag him to the Governor, To the mighty Roman Governor."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "Great Pilate seated in his hall— Great Pilate on his judgment seat, Said: In this man I find no fault. I find no fault in him. And Pilate washed his hands. But they cried out, saying:"
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "Crucify him!— Crucify him!— Crucify him!— His blood be on our heads. And they beat my loving Jesus, They spit on my precious Jesus;"
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "They dressed him up in a purple robe, They put a crown of thorns upon his head, And they pressed it down— Oh, they pressed it down— And they mocked my sweet King Jesus. Up Golgotha's rugged road"
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "I see my Jesus go. I see him sink beneath the load, I see my drooping Jesus sink. And then they laid hold on Simon, Black Simon, yes, black Simon; They put the cross on Simon,"
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "And Simon bore the cross. On Calvary, on Calvary, They crucified my Jesus. They nailed him to the cruel tree, And the hammer! The hammer!"
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "The hammer! Rang through Jerusalem's streets. The hammer! The hammer! The hammer! Rang through Jerusalem's streets."
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "Jesus, my lamb-like Jesus, Shivering as the nails go through his hands; Jesus, my lamb-like Jesus, Shivering as the nails go through his feet. Jesus, my darling Jesus, Groaning as the Roman spear plunged in his side;"
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "Jesus, my darling Jesus, Groaning as the blood came spurting from his wound. Oh, look how they done my Jesus. Mary, Weeping Mary, Sees her poor little Jesus on the cross."
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "Mary, Weeping Mary, Sees her sweet, baby Jesus on the cruel cross, Hanging between two thieves. And Jesus, my lonesome Jesus, Called out once more to his Father,"
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "Saying: My God, My God, Why hast thou forsaken me? And he drooped his head and died. And the veil of the temple was split in two,"
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "The midday sun refused to shine, The thunder rumbled and the lightning wrote An unknown language in the sky. What a day! Lord, what a day! When my blessed Jesus died. Oh, I tremble, yes, I tremble,"
+    },
+    {
+      "id": "s5-17",
+      "sceneId": "s5",
+      "text": "It causes me to tremble, tremble, When I think how Jesus died; Died on the steeps of Calvary, How Jesus died for sinners, Sinners like you and me."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "And God called Moses from the burning bush, He called in a still, small voice, And he said: Moses—Moses— And Moses listened, And he answered and said: Lord, here am I."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "And the voice in the bush said: Moses, Draw not nigh, take off your shoes, For you're standing on holy ground. And Moses stopped where he stood, And Moses took off his shoes, And Moses looked at the burning bush,"
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "And he heard the voice, But he saw no man. Then God again spoke to Moses, And he spoke in a voice of thunder: I am the Lord God Almighty, I am the God of thy fathers,"
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "I am the God of Abraham, Of Isaac and of Jacob. And Moses hid his face. And God said to Moses: I've seen the awful suffering Of my people down in Egypt."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "I've watched their hard oppressors, Their overseers and drivers; The groans of my people have filled my ears And I can't stand it no longer; So I'm come down to deliver them Out of the land of Egypt,"
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "And I will bring them out of that land Into the land of Canaan; Therefore, Moses, go down, Go down into Egypt, And tell Old Pharaoh To let my people go."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "And Moses said: Lord, who am I To make a speech before Pharaoh? For, Lord, you know I'm slow of tongue. But God said: I will be thy mouth and I will be thy tongue; Therefore, Moses, go down, Go down yonder into Egypt land,"
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "And tell Old Pharaoh To let my people go. And Moses with his rod in hand Went down and said to Pharaoh: Thus saith the Lord God of Israel, Let my people go."
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "And Pharaoh looked at Moses, He stopped still and looked at Moses; And he said to Moses: Who is this Lord? I know all the gods of Egypt, But I know no God of Israel; So go back, Moses, and tell your God,"
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "I will not let this people go. Poor Old Pharaoh, He knows all the knowledge of Egypt, Yet never knew— He never knew The one and the living God."
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "Poor Old Pharaoh, He's got all the power of Egypt, And he's going to try To test his strength With the might of the great Jehovah, With the might of the Lord God of Hosts,"
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "The Lord mighty in battle. And God, sitting high up in his heaven, Laughed at poor Old Pharaoh. And Pharaoh called the overseers, And Pharaoh called the drivers, And he said: Put heavier burdens still"
+    },
+    {
+      "id": "s6-12",
+      "sceneId": "s6",
+      "text": "On the backs of the Hebrew Children. Then the people chode with Moses, And they cried out: Look here, Moses, You've been to Pharaoh, but look and see What Pharaoh's done to us now. And Moses was troubled in mind."
+    },
+    {
+      "id": "s6-13",
+      "sceneId": "s6",
+      "text": "But God said: Go again, Moses, You and your brother, Aaron, And say once more to Pharaoh, Thus saith the Lord God of the Hebrews, Let my people go. And Moses and Aaron with their rods in hand"
+    },
+    {
+      "id": "s6-14",
+      "sceneId": "s6",
+      "text": "Worked many signs and wonders. But Pharaoh called for his magic men, And they worked wonders, too. So Pharaohs' heart was hardened, And he would not, No, he would not"
+    },
+    {
+      "id": "s6-15",
+      "sceneId": "s6",
+      "text": "Let God's people go. And God rained down plagues on Egypt, Plagues of frogs and lice and locusts, Plagues of blood and boils and darkness, And other plagues besides. But ev'ry time God moved the plague"
+    },
+    {
+      "id": "s6-16",
+      "sceneId": "s6",
+      "text": "Old Pharaoh's heart was hardened, And he would not, No, he would not Let God's people go. And Moses was troubled in mind. Then the Lord said: Listen, Moses,"
+    },
+    {
+      "id": "s6-17",
+      "sceneId": "s6",
+      "text": "The God of Israel will not be mocked, Just one more witness of my power I'll give hard-hearted Pharaoh. This very night about midnight, I'll pass over Egypt land, In my righteous wrath will I pass over,"
+    },
+    {
+      "id": "s6-18",
+      "sceneId": "s6",
+      "text": "And smite their first-born dead. And God that night passed over. And a cry went up out of Egypt. And Pharaoh rose in the middle of the night And he sent in a hurry for Moses; And he said: Go forth from among my people,"
+    },
+    {
+      "id": "s6-19",
+      "sceneId": "s6",
+      "text": "You and all the Hebrew Children; Take your goods and take your flocks, And get away from the land of Egypt. And, right then, Moses led them out, With all their goods and all their flocks; And God went on before,"
+    },
+    {
+      "id": "s6-20",
+      "sceneId": "s6",
+      "text": "A guiding pillar of cloud by day, And a pillar of fire by night. And they journeyed on in the wilderness, And came down to the Red Sea. In the morning, Oh, in the morning,"
+    },
+    {
+      "id": "s6-21",
+      "sceneId": "s6",
+      "text": "They missed the Hebrew Children. Four hundred years, Four hundred years They'd held them down in Egypt land. Held them under the driver's lash, Working without money and without price."
+    },
+    {
+      "id": "s6-22",
+      "sceneId": "s6",
+      "text": "And it might have been Pharaoh's wife that said: Pharaoh—look what you've done. You let those Hebrew Children go, And who's going to serve us now? Who's going to make our bricks and mortar? Who's going to plant and plow our corn?"
+    },
+    {
+      "id": "s6-23",
+      "sceneId": "s6",
+      "text": "Who's going to get up in the chill of the morning? And who's going to work in the blazing sun? Pharaoh, tell me that! And Pharaoh called his generals, And the generals called the captains, And the captains called the soldiers."
+    },
+    {
+      "id": "s6-24",
+      "sceneId": "s6",
+      "text": "And they hitched up all the chariots, Six hundred chosen chariots of war, And twenty-four hundred horses. And the chariots all were full of men, With swords and shields And shiny spears"
+    },
+    {
+      "id": "s6-25",
+      "sceneId": "s6",
+      "text": "And battle bows and arrows. And Pharaoh and his army Pursued the Hebrew Children To the edge of the Red Sea. Now, the Children of Israel, looking back, Saw Pharaoh's army coming."
+    },
+    {
+      "id": "s6-26",
+      "sceneId": "s6",
+      "text": "And the rumble of the chariots was like a thunder storm, And the whirring of the wheels was like a rushing wind, And the dust from the horses made a cloud that darked the day, And the glittering of the spears was like lightnings in the night. And the Children of Israel all lost faith, The children of Israel all lost hope;"
+    },
+    {
+      "id": "s6-27",
+      "sceneId": "s6",
+      "text": "Deep Red Sea in front of them And Pharaoh's host behind. And they mumbled and grumbled among themselves: Were there no graves in Egypt? And they wailed aloud to Moses and said: Slavery in Egypt was better than to come"
+    },
+    {
+      "id": "s6-28",
+      "sceneId": "s6",
+      "text": "To die here in this wilderness. But Moses said: Stand still! Stand still! And see the Lord's salvation. For the Lord God of Israel Will not forsake his people."
+    },
+    {
+      "id": "s6-29",
+      "sceneId": "s6",
+      "text": "The Lord will break the chariots, The Lord will break the horsemen, He'll break great Egypt's sword and shield, The battle bows and arrows; This day he'll make proud Pharaoh know Who is the God of Israel."
+    },
+    {
+      "id": "s6-30",
+      "sceneId": "s6",
+      "text": "And Moses lifted up his rod Over the Red Sea; And God with a blast of his nostrils Blew the waters apart, And the waves rolled back and stood up in a pile, And left a path through the middle of the sea"
+    },
+    {
+      "id": "s6-31",
+      "sceneId": "s6",
+      "text": "Dry as the sands of the desert. And the Children of Israel all crossed over On to the other side. When Pharaoh saw them crossing dry, He dashed on in behind them— Old Pharaoh got about half way cross,"
+    },
+    {
+      "id": "s6-32",
+      "sceneId": "s6",
+      "text": "And God unlashed the waters, And the waves rushed back together, And Pharaoh and all his army got lost, And all his host got drownded. And Moses sang and Miriam danced, And the people shouted for joy,"
+    },
+    {
+      "id": "s6-33",
+      "sceneId": "s6",
+      "text": "And God led the Hebrew Children on Till they reached the promised land. Listen!—Listen! All you sons of Pharaoh. Who do you think can hold God's people When the Lord God himself has said,"
+    },
+    {
+      "id": "s6-34",
+      "sceneId": "s6",
+      "text": "Let my people go?"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "In that great day, People, in that great day, God's a-going to rain down fire. God's a-going to sit in the middle of the air To judge the quick and the dead. Early one of these mornings,"
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "God's a-going to call for Gabriel, That tall, bright angel, Gabriel,; And God's a-going to say to him: Gabriel, Blow your silver trumpet, And wake the living nations. And Gabriel's going to ask him: Lord,"
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "How loud must I blow it? And to them on the left God's a-going to say: Depart from me into everlasting darkness, Down into the bottomless pit. And the wicked like lumps of lead will start to fall, Headlong for seven days and nights they'll fall,"
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Plumb into the big, black, red-hot mouth of hell, Belching out fire and brimstone. And their cries like howling, yelping dogs, Will go up with the fire and smoke from hell, But God will stop his ears. Too late, sinner! Too late!"
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Good-bye, sinner! Good-bye! In hell, sinner! In hell! Beyond the reach of the love of God. And I hear a voice, crying, crying: Time shall be no more! Time shall be no more!"
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Time shall be no more! And the sun will go out like a candle in the wind, The moon will turn to dripping blood, The stars will fall like cinders, And the sea will burn like tar; And the earth shall melt away and be dissolved,"
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "And the sky will roll up like a scroll. With a wave of his hand God will blot out time, And start the wheel of eternity. Sinner, oh, sinner, Where will you stand In that great day when God's a-going to rain down fire?"
+    }
+  ]
+}

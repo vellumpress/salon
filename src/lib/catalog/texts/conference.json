@@ -1,0 +1,5374 @@
+{
+  "id": "conference",
+  "title": "The Conference of the Birds (Bird Parliament, abridged)",
+  "author": "Attar of Nishapur (tr. Edward FitzGerald)",
+  "year": "1889",
+  "note": "ABRIDGED FitzGerald Bird Parliament · from Letters and Literary Remains (1889) · US PD · archive.org/details/BirdParliamentEnglishFareeduddinAttaarFitzgerald · not unabridged · no PG",
+  "minutes": 143,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Bird Parliament · Opening",
+      "place": "Bird Parliament · Opening",
+      "reentry": "Once on a time from all the Circles seven",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Bird Parliament · Section 2",
+      "place": "Bird Parliament · Section 2",
+      "reentry": "The Congregation of all Wings addrest.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Bird Parliament · Section 3",
+      "place": "Bird Parliament · Section 3",
+      "reentry": "Waits till the sullen Reprobate at cost",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Bird Parliament · Section 4",
+      "place": "Bird Parliament · Section 4",
+      "reentry": "One Night from out the swarming City Gate",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "Bird Parliament · Section 5",
+      "place": "Bird Parliament · Section 5",
+      "reentry": "And yet may never reach, or all go wrong:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Bird Parliament · Section 6",
+      "place": "Bird Parliament · Section 6",
+      "reentry": "And, since Today yours seems to turn from you,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Bird Parliament · Section 7",
+      "place": "Bird Parliament · Section 7",
+      "reentry": "When I reveal a little to the Rest,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Bird Parliament · Section 8",
+      "place": "Bird Parliament · Section 8",
+      "reentry": "But whose Neck kindles with a lower Fire —",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Bird Parliament · Section 9",
+      "place": "Bird Parliament · Section 9",
+      "reentry": "That long for that lost Eden as the true;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Bird Parliament · Section 10",
+      "place": "Bird Parliament · Section 10",
+      "reentry": "'My Father?' — 'Yes,' the Musulman replied,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Bird Parliament · Section 11",
+      "place": "Bird Parliament · Section 11",
+      "reentry": "And perch upon the Fist that wears the Ring;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "Bird Parliament · Section 12",
+      "place": "Bird Parliament · Section 12",
+      "reentry": "Exacts a strict account of every Grain.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "Bird Parliament · Section 13",
+      "place": "Bird Parliament · Section 13",
+      "reentry": "But one Night in a Vision, far away",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Bird Parliament · Section 14",
+      "place": "Bird Parliament · Section 14",
+      "reentry": "To whom the Tajidar, whose Voice for those",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "Bird Parliament · Section 15",
+      "place": "Bird Parliament · Section 15",
+      "reentry": "The baser Forms, to whatsoever Change",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Bird Parliament · Section 16",
+      "place": "Bird Parliament · Section 16",
+      "reentry": "Thou for Self-whole mistake thy Shadow-part,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "Bird Parliament · Section 17",
+      "place": "Bird Parliament · Section 17",
+      "reentry": "Of Knowledge does but justify thy Less.'",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "Bird Parliament · Section 18",
+      "place": "Bird Parliament · Section 18",
+      "reentry": "Belief — in vain; so back to Heaven went",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "Bird Parliament · Section 19",
+      "place": "Bird Parliament · Section 19",
+      "reentry": "The third night after Bajazyd had died, One saw him, in a dream, at his Bedside, And said, 'Thou Bajazyd? Tell me O Pyr, How fared it there with Munkar and Nakyr?' And Bajazyd replied, 'When from the Grave",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "Bird Parliament · Section 20",
+      "place": "Bird Parliament · Section 20",
+      "reentry": "He went to him and said 'Lo, if Thou rue",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "Bird Parliament · Section 21",
+      "place": "Bird Parliament · Section 21",
+      "reentry": "A false Bazaar whose Wares are all a lie,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Bird Parliament · Section 22",
+      "place": "Bird Parliament · Section 22",
+      "reentry": "For Home and hunting-ground: And by and by",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "Bird Parliament · Section 23",
+      "place": "Bird Parliament · Section 23",
+      "reentry": "And so by husbanding each wretched Thread",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "Bird Parliament · Section 24",
+      "place": "Bird Parliament · Section 24",
+      "reentry": "If Thou and God should never have again",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Bird Parliament · Section 25",
+      "place": "Bird Parliament · Section 25",
+      "reentry": "Himself without a Word on either side,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "Bird Parliament · Section 26",
+      "place": "Bird Parliament · Section 26",
+      "reentry": "'The Tajidar! The Tajidar!' with Him",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "Bird Parliament · Section 27",
+      "place": "Bird Parliament · Section 27",
+      "reentry": "And bleaching with the Bones of those who fail'd:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "Bird Parliament · Section 28",
+      "place": "Bird Parliament · Section 28",
+      "reentry": "Less from lost Road than insufficient Stride —",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Bird Parliament · Section 29",
+      "place": "Bird Parliament · Section 29",
+      "reentry": "When nearest waking deepliest in Dream,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "Bird Parliament · Section 30",
+      "place": "Bird Parliament · Section 30",
+      "reentry": "Raise it tow'rd Culmination, with the torn",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "Bird Parliament · Section 31",
+      "place": "Bird Parliament · Section 31",
+      "reentry": "Seem'd but as Shadows of a Noonday Sun,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Bird Parliament · Section 32",
+      "place": "Bird Parliament · Section 32",
+      "reentry": "Some spent with Travel over Wave and Ground;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "Bird Parliament · Section 33",
+      "place": "Bird Parliament · Section 33",
+      "reentry": "Before the Majesty that sat thereon,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "Bird Parliament · Section 34",
+      "place": "Bird Parliament · Section 34",
+      "reentry": "Answers aloud the Question in his Heart —",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "Bird Parliament · Section 35",
+      "place": "Bird Parliament · Section 35",
+      "reentry": "Which being now recounted, Lo, the Ground",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Once on a time from all the Circles seven"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Between the stedfast Earth and rolling Heaven"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "THE BIRDS, of all Note, Plumage, and Degree,"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "That float in Air, and roost upon the Tree;"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "And they that from the Waters snatch their Meat,"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "And they that scour the Desert with long Feet;"
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Birds of all Natures, known or not to Man,"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Flock'd from all Quarters into full Divan,"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "On no less solemn business than to find"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Or choose, a Sultan Khalif of their kind,"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "For whom, if never theirs, or lost, they pined."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "The Snake had his, 'twas said; and so the Beast"
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "His Lion-lord: and Man had his, at least:"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "And that the Birds, who nearest were the Skies,"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "And went apparell'd in its Angel Dyes."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Should be without — under no better Law"
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Than that which lost all other in the Maw —"
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "Disperst without a Bond of Union — nay,"
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Or meeting to make each the other's Prey —"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "This was the Grievance — this the solemn Thing"
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "On which the scatter'd Commonwealth of Wing,"
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "From all the four Winds, flying like to Cloud"
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "That met and blacken'd Heav'n, and Thunder-loud"
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "With Sound of whirring Wings and Beaks that clash'd"
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Down like a Torrent on the Desert dash'd:"
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Till by Degrees, the Hubbub and Pell-mell"
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Into some Order and Precedence fell,"
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "And, Proclamation made of Silence, each"
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "In special Accent, but in general Speech"
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "That all should understand, as seem'd him best,"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The Congregation of all Wings addrest."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "And first, with Heart so full as from his Eyes Ran weeping, up rose Tajidar the Wise; The mystic Mark upon whose Bosom show'd That He alone of all the Birds THE ROAD Had travell'd: and the Crown upon his Head Had reach'd the Goal; and He stood forth and said:"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "3"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "'O Birds, by what Authority divine"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "I speak you know by His authentic Sign,"
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "And Name, emblazon'd on my Breast and Bill:"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Whose Counsel I assist at, and fulfil:"
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "At His Behest I measured as he plann'd"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "The Spaces of the Air and Sea and Land;"
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "I gauged the secret sources of the Springs"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "From Cloud to Fish: the Shadow of my Wings"
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "Dream'd over sleeping Deluge: piloted"
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "The Blast that bore Sulayman's Throne: and led"
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "The Cloud of Birds that canopied his Head;"
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "Whose Word I brought to Balkis: and I shared"
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "The Counsel that with Asaf he prepared."
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "And now you want a Khalif: and I know"
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "Him, and his whereabout, and How to go:"
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "And go alone I could, and plead your cause"
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "Alone for all: but, by the eternal laws,"
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "Yourselves by Toil and Travel of your own"
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "Must for your old Delinquency atone."
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "Were you indeed not blinded by the Curse"
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "Of Self-exile, that still grows worse and worse,"
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "Yourselves would know that, though you see him not,"
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "He is with you this Moment, on this Spot,"
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "Your Lord through all Forgetfulness and Crime,"
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "Here, There, and Everywhere, and through all Time."
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "But as a Father, whom some wayward Child"
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "By sinful Self-will has unreconciled,"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Waits till the sullen Reprobate at cost"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Of long Repentance should regain the Lost;"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Therefore, yourselves to see as you are seen,"
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Yourselves must bridge the Gulf you made between"
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "By such a Search and Travel to be gone"
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "Up to the mighty mountain Kaf, whereon"
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Hinges the World, and round about whose Knees"
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "Into one Ocean mingle the Sev'n Seas;"
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "In whose impenetrable Forest-folds"
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "Of Light and Dark \"Symurgh\" his Presence holds;"
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "Not to be reach 'd, if to be reach'd at all"
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "But by a Road the stoutest might apal;"
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "Of Travel not of Days or Months, but Years —"
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "Life-long perhaps: of Dangers, Doubts, and Fears"
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "As yet unheard of: Sweat of Blood and Brain"
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "Interminable — often all in vain —"
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "And, if successful, no Return again:"
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "A Road whose very Preparation scared"
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "The Traveller who yet must be prepared."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "4"
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "Who then this Travel to Result would bring"
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "Needs both a Lion's Heart beneath the Wing,"
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "And even more, a Spirit purified"
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "Of Worldly Passion, Malice, Lust, and Pride:"
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "Yea, ev'n of Worldly Wisdom, which grows dim"
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "And dark, the nearer it approaches Him,"
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "Who to the Spirit's Eye alone reveal'd,"
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "By sacrifice of Wisdom's self unseal'd;"
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "Without which none who reach the Place could bear"
+    },
+    {
+      "id": "s2-29",
+      "sceneId": "s2",
+      "text": "To look upon the Glory dwelling there.'"
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "One Night from out the swarming City Gate"
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Stept holy Bajazyd, to meditate"
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Alone amid the breathing Fields that lay"
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "In solitary Silence leagues away,"
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Beneath a Moon and Stars as bright as Day."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "And the Saint wondering such a Temple were,"
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "And so lit up, and scarce one worshipper,"
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "A voice from Heav'n amid the stillness said:"
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "'The Royal Road is not for all to tread,"
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "Nor is the Royal Palace for the Rout,"
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "Who, even if they reach it, are shut out."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "The Blaze that from my Harim window breaks"
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "With fright the Rabble of the Roadside takes;"
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "And ev'n of those that at my Portal din,"
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "Thousands may knock for one that enters in.'"
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "Thus spoke the Tajidar: and the wing'd Crowd, That underneath his Word in Silence bow'd, 1 10 Clapp'd Acclamation: and their Hearts and Eyes Were kindled by the Firebrand of the Wise. They felt their Degradation: they believed The word that told them how to be retrieved, And in that glorious Consummation won Forgot the Cost at which it must be done. 'They only long'd to follow: they would go Whither he led, through Flood, or Fire, or Snow' — So cried the Multitude. But some there were Who listen'd with a cold disdainful air, 120 Content with what they were, or grudging Cost Of Time or Travel that might all be lost; These, one by one, came forward, and preferr'd Unwise Objection: which the wiser Word Shot with direct Reproof, or subtly round With Argument and Allegory wound."
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "5"
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "The Pheasant first would know by what pretence"
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "The Tajidar to that pre-eminence"
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "Was raised — a Bird, but for his lofty Crest"
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "(And such the Pheasant had) like all the Rest —"
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "Who answer'd — 'By no Virtue of my own"
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "Sulayman chose me, but by His alone:"
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "Not by the Gold and Silver of my Sighs"
+    },
+    {
+      "id": "s3-24",
+      "sceneId": "s3",
+      "text": "Made mine, but the free Largess of his Eyes."
+    },
+    {
+      "id": "s3-25",
+      "sceneId": "s3",
+      "text": "Behold the Grace of Allah comes and goes"
+    },
+    {
+      "id": "s3-26",
+      "sceneId": "s3",
+      "text": "As to Itself is good: and no one knows"
+    },
+    {
+      "id": "s3-27",
+      "sceneId": "s3",
+      "text": "Which way it turns: in that mysterious Court"
+    },
+    {
+      "id": "s3-28",
+      "sceneId": "s3",
+      "text": "Not he most finds who furthest travels for't."
+    },
+    {
+      "id": "s3-29",
+      "sceneId": "s3",
+      "text": "For one may crawl upon his knees Life-long,"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "And yet may never reach, or all go wrong:"
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "Another just arriving at the Place"
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "He toil'd for, and — the Door shut in his Face:"
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "Whereas Another, scarcely gone a Stride,"
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "And suddenly — Behold he is Inside ! —"
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "But though the Runner win not, he that stands,"
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "No Thorn will turn to Roses in his Hands:"
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "Each one must do his best and all endure,"
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "And all endeavour, hoping but not sure."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "Heav'n its own Umpire is; its Bidding do,"
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "And Thou perchance shalt be Sulayman's too.'"
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "One day Shah Mahmud, riding with the Wind"
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "A-hunting, left his Retinue behind,"
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "And coming to a River, whose swift Course"
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "Doubled back Game and Dog, and Man and Horse,"
+    },
+    {
+      "id": "s4-15",
+      "sceneId": "s4",
+      "text": "Beheld upon the Shore a little Lad"
+    },
+    {
+      "id": "s4-16",
+      "sceneId": "s4",
+      "text": "A-fishing, very poor, and Tatter-clad"
+    },
+    {
+      "id": "s4-17",
+      "sceneId": "s4",
+      "text": "He was, and weeping as his Heart would break."
+    },
+    {
+      "id": "s4-18",
+      "sceneId": "s4",
+      "text": "So the Great Sultan, for good humour's sake"
+    },
+    {
+      "id": "s4-19",
+      "sceneId": "s4",
+      "text": "Pull'd in his Horse a moment, and drew nigh,"
+    },
+    {
+      "id": "s4-20",
+      "sceneId": "s4",
+      "text": "And after making his Salam, ask'd why"
+    },
+    {
+      "id": "s4-21",
+      "sceneId": "s4",
+      "text": "He wept — weeping, the Sultan said, so sore"
+    },
+    {
+      "id": "s4-22",
+      "sceneId": "s4",
+      "text": "As he had never seen one weep before."
+    },
+    {
+      "id": "s4-23",
+      "sceneId": "s4",
+      "text": "The Boy look'd up, and 'O Amir,' he said,"
+    },
+    {
+      "id": "s4-24",
+      "sceneId": "s4",
+      "text": "'Sev'n of us are at home, and Father dead,"
+    },
+    {
+      "id": "s4-25",
+      "sceneId": "s4",
+      "text": "And Mother left with scarce a Bit of Bread:"
+    },
+    {
+      "id": "s4-26",
+      "sceneId": "s4",
+      "text": "And now since Sunrise have I fish'd — and see!"
+    },
+    {
+      "id": "s4-27",
+      "sceneId": "s4",
+      "text": "Caught nothing for our Supper — Woe is Me!'"
+    },
+    {
+      "id": "s4-28",
+      "sceneId": "s4",
+      "text": "The Sultan lighted from his horse. 'Behold,'"
+    },
+    {
+      "id": "s4-29",
+      "sceneId": "s4",
+      "text": "Said he, 'Good Fortune will not be controll'd:"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "And, since Today yours seems to turn from you,"
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "Suppose we try for once what mine will do,"
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "6"
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "And we will share alike in all I win.'"
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "So the Shah took, and flung his Fortune in,"
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "The Net; which, cast by the Great Mahmud's Hand,"
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "A hundred glittering Fishes brought to Land."
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "The Lad look'd up in Wonder — Mahmud smiled"
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "And vaulted into Saddle. But the Child"
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "Ran after — 'Nay, Amir, but half the Haul"
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "Is yours by Bargain' — 'Nay, Today take all,'"
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "The Sultan cried, and shook his Bridle free —"
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "'But mind — Tomorrow All belongs to Me — '"
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "And so rode off. Next morning at Divan"
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "The Sultan's Mind upon his Bargain ran,"
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "And being somewhat in a mind for sport"
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "Sent for the Lad: who, carried up to Court,"
+    },
+    {
+      "id": "s5-17",
+      "sceneId": "s5",
+      "text": "And marching into Royalty's full Blaze"
+    },
+    {
+      "id": "s5-18",
+      "sceneId": "s5",
+      "text": "With such a Catch of Fish as yesterday's,"
+    },
+    {
+      "id": "s5-19",
+      "sceneId": "s5",
+      "text": "The Sultan call'd and set him by his side,"
+    },
+    {
+      "id": "s5-20",
+      "sceneId": "s5",
+      "text": "And asking him, 'What Luck?' The Boy replied,"
+    },
+    {
+      "id": "s5-21",
+      "sceneId": "s5",
+      "text": "'This is the Luck that follows every Cast,"
+    },
+    {
+      "id": "s5-22",
+      "sceneId": "s5",
+      "text": "Since o'er my Net the Sultan's Shadow pass'd.'"
+    },
+    {
+      "id": "s5-23",
+      "sceneId": "s5",
+      "text": "Then came The Nightingale, from such a Draught"
+    },
+    {
+      "id": "s5-24",
+      "sceneId": "s5",
+      "text": "Of Ecstasy that from the Rose he quaff d"
+    },
+    {
+      "id": "s5-25",
+      "sceneId": "s5",
+      "text": "Reeling as drunk, and ever did distil"
+    },
+    {
+      "id": "s5-26",
+      "sceneId": "s5",
+      "text": "In exquisite divisions from his Bill"
+    },
+    {
+      "id": "s5-27",
+      "sceneId": "s5",
+      "text": "To inflame the Hearts of Men — and thus sang He —"
+    },
+    {
+      "id": "s5-28",
+      "sceneId": "s5",
+      "text": "'To me alone, alone, is giv'n the Key"
+    },
+    {
+      "id": "s5-29",
+      "sceneId": "s5",
+      "text": "Of Love; of whose whole Mystery possesst,"
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "When I reveal a little to the Rest,"
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "Forthwith Creation listening forsakes"
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "The Reins of Reason, and my Frenzy takes:"
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "Yea, whosoever once has quaint this wine"
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "He leaves unlisten'd David's Song for mine."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "In vain do Men for my Divisions strive,"
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "And die themselves making dead Lutes alive:"
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "I hang the Stars with Meshes for Men's Souls:"
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "The Garden underneath my Music rolls."
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "The long, long Morns that mourn the Rose away"
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "I sit in silence, and on Anguish prey:"
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "But the first Air which the New Year shall breathe"
+    },
+    {
+      "id": "s6-12",
+      "sceneId": "s6",
+      "text": "Up to my Boughs of Message from beneath"
+    },
+    {
+      "id": "s6-13",
+      "sceneId": "s6",
+      "text": "That in her green Harim my Bride unveils,"
+    },
+    {
+      "id": "s6-14",
+      "sceneId": "s6",
+      "text": "My Throat bursts silence and her Advent hails,"
+    },
+    {
+      "id": "s6-15",
+      "sceneId": "s6",
+      "text": "Who in her crimson Volume registers"
+    },
+    {
+      "id": "s6-16",
+      "sceneId": "s6",
+      "text": "The Notes of Him whose Life is lost in hers."
+    },
+    {
+      "id": "s6-17",
+      "sceneId": "s6",
+      "text": "The Rose I love and worship now is here;"
+    },
+    {
+      "id": "s6-18",
+      "sceneId": "s6",
+      "text": "7"
+    },
+    {
+      "id": "s6-19",
+      "sceneId": "s6",
+      "text": "If dying, yet reviving, Year by Year;"
+    },
+    {
+      "id": "s6-20",
+      "sceneId": "s6",
+      "text": "But that you tell of, all my Life why waste"
+    },
+    {
+      "id": "s6-21",
+      "sceneId": "s6",
+      "text": "In vainly searching; or, if found, not taste?'"
+    },
+    {
+      "id": "s6-22",
+      "sceneId": "s6",
+      "text": "So with Division infinite and Trill 220 On would the Nightingale have warbled still, And all the World have listen'd; but a Note Of sterner Import check'd the lovesick Throat."
+    },
+    {
+      "id": "s6-23",
+      "sceneId": "s6",
+      "text": "'O watering with thy melodious Tears Love's Garden, and who dost indeed the Ears Of men with thy melodious Fingers mould As David's Finger Iron did of old: Why not, like David, dedicate thy Dower Of Song to something better than a Flower? Empress indeed of Beauty, so they say, 230 But one whose Empire hardly lasts a Day, By Insurrection of the Morning's Breath That made her hurried to Decay and Death: And while she lasts contented to be seen, And worshipt, for the Garden's only Queen, Leaving thee singing on thy Bough forlorn, Or if she smile on Thee, perhaps in Scorn.'"
+    },
+    {
+      "id": "s6-24",
+      "sceneId": "s6",
+      "text": "Like that fond Dervish waiting in the throng When some World-famous Beauty went along, Who smiling on the Antic as she pass'd — 240 Forthwith Staff, Bead and Scrip away he cast, And grovelling in the Kennel, took to whine Before her Door among the Dogs and Swine. Which when she often went unheeding by, But one day quite as heedless ask'd him — Why?' — He told of that one Smile, which, all the Rest Passing, had kindled Hope within his Breast — Again she smiled and said, 'O self -beguiled Poor Wretch, at whom and not on whom I smiled.'"
+    },
+    {
+      "id": "s6-25",
+      "sceneId": "s6",
+      "text": "Then came the subtle Parrot in a coat 250 Greener than Greensward, and about his Throat A Collar ran of sub-sulphureous Gold; And in his Beak a Sugar-plum he troll'd, That all his Words with luscious Lisping ran, And to this Tune — 'O cruel Cage, and Man More iron still who did confine me there, Who else with him whose Livery I wear Ere this to his Eternal Fount had been,"
+    },
+    {
+      "id": "s6-26",
+      "sceneId": "s6",
+      "text": "8"
+    },
+    {
+      "id": "s6-27",
+      "sceneId": "s6",
+      "text": "And drunk what should have kept me ever-green. But now I know the Place, and I am free 260 To go, and all the Wise will follow Me. Some' — and upon the Nightingale one Eye He leer'd — 'for nothing but the Blossom sigh: But I am for the luscious Pulp that grows Where, and for which the Blossom only blows: And which so long as the Green Tree provides What better grows along Kaf's dreary Sides? And what more needful Prophet there than He Who gives me Life to nip it from the Tree?'"
+    },
+    {
+      "id": "s6-28",
+      "sceneId": "s6",
+      "text": "To whom the Tajidar — 'O thou whose Best"
+    },
+    {
+      "id": "s6-29",
+      "sceneId": "s6",
+      "text": "In the green leaf of Paradise is drest,"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "But whose Neck kindles with a lower Fire —"
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "O slip the collar off of base Desire,"
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "And stand apparell'd in Heav'n's Woof entire!"
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "This Life that hangs so sweet about your Lips"
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "But, spite of all your Khizar, slips and slips,"
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "What is it but itself the coarser Rind"
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Of the True Life withinside and behind,"
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "Which he shall never never reach unto"
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "Till the gross Shell of Carcase he break through?'"
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "For what said He, that dying Hermit, whom Your Prophet came to, trailing through the Gloom His Emerald Vest, and tempted — 'Come with Me, And Live.' The Hermit answered — 'Not with Thee. Two Worlds there are, and This was thy Design, And thou hast got it; but The Next is mine; Whose Fount is this life's Death, and to whose Side Ev'n now I find my Way without a Guide.'"
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "Then like a Sultan glittering in all Rays"
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "Of Jewelry, and deckt with his own Blaze,"
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "The glorious Peacock swept into the Ring:"
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "And, turning slowly that the glorious Thing"
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "Might fill all Eyes with wonder, thus said He."
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "'Behold, the Secret Artist, making me,"
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "With no one Colour of the skies bedeckt,"
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "But from its Angel's Feathers did select"
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "To make up mine withal, the Gabriel"
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "Of all the Birds: though from my Place I fell"
+    },
+    {
+      "id": "s7-20",
+      "sceneId": "s7",
+      "text": "In Eden, when Acquaintance I did make"
+    },
+    {
+      "id": "s7-21",
+      "sceneId": "s7",
+      "text": "In those blest days with that Sev'n-headed Snake,"
+    },
+    {
+      "id": "s7-22",
+      "sceneId": "s7",
+      "text": "And thence with him, my perfect Beauty marr'd"
+    },
+    {
+      "id": "s7-23",
+      "sceneId": "s7",
+      "text": "9"
+    },
+    {
+      "id": "s7-24",
+      "sceneId": "s7",
+      "text": "With these ill Feet, was thrust out and debarr'd. Little I care for Worldly Fruit or Flower, Would you restore me to lost Eden's Bower, But first my Beauty making all complete With reparation of these ugly Feet.'"
+    },
+    {
+      "id": "s7-25",
+      "sceneId": "s7",
+      "text": "'Were it,' 'twas answer'd, 'only to return"
+    },
+    {
+      "id": "s7-26",
+      "sceneId": "s7",
+      "text": "To that lost Eden, better far to burn"
+    },
+    {
+      "id": "s7-27",
+      "sceneId": "s7",
+      "text": "In Self-abasement up thy plumed Pride,"
+    },
+    {
+      "id": "s7-28",
+      "sceneId": "s7",
+      "text": "And ev'n with lamer feet to creep inside —"
+    },
+    {
+      "id": "s7-29",
+      "sceneId": "s7",
+      "text": "But all mistaken you and all like you"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "That long for that lost Eden as the true;"
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "Fair as it was, still nothing but the shade"
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "And Out-court of the Majesty that made."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "That which I point you tow'rd, and which the King"
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "I tell you of broods over with his Wing,"
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "With no deciduous leaf, but with the Rose"
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "Of Spiritual Beauty, smells and glows:"
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "No plot of Earthly Pleasance, but the whole"
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "True Garden of the Universal Soul.'"
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "For so Creation's Master- Jewel fell"
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "From that same Eden: loving which too well,"
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "The Work before the Artist did prefer,"
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "And in the Garden lost the Gardener."
+    },
+    {
+      "id": "s8-13",
+      "sceneId": "s8",
+      "text": "Wherefore one Day about the Garden went"
+    },
+    {
+      "id": "s8-14",
+      "sceneId": "s8",
+      "text": "A voice that found him in his false Content,"
+    },
+    {
+      "id": "s8-15",
+      "sceneId": "s8",
+      "text": "And like a bitter Sarsar of the North"
+    },
+    {
+      "id": "s8-16",
+      "sceneId": "s8",
+      "text": "Shrivell'd the Garden up, and drove him forth"
+    },
+    {
+      "id": "s8-17",
+      "sceneId": "s8",
+      "text": "Into the Wilderness: and so the Eye"
+    },
+    {
+      "id": "s8-18",
+      "sceneId": "s8",
+      "text": "Of Eden closed on him till by and by."
+    },
+    {
+      "id": "s8-19",
+      "sceneId": "s8",
+      "text": "Then from a Ruin where conceal'd he lay Watching his buried Gold, and hating Day, Hooted The Owl. — T tell you, my Delight Is in the Ruin and the Dead of Night Where I was born, and where I love to wone All my Life long, sitting on some cold stone Away from all your roystering Companies, In some dark Corner where a Treasure lies; That, buried by some Miser in the Dark, Speaks up to me at Midnight like a Spark; 340 And o'er it like a Talisman I brood, Companion of the Serpent and the Toad. What need of other Sovereign, having found, And keeping as in Prison underground,"
+    },
+    {
+      "id": "s8-20",
+      "sceneId": "s8",
+      "text": "10"
+    },
+    {
+      "id": "s8-21",
+      "sceneId": "s8",
+      "text": "One before whom all other Kings bow down,"
+    },
+    {
+      "id": "s8-22",
+      "sceneId": "s8",
+      "text": "And with his glittering Heel their Foreheads crown?'"
+    },
+    {
+      "id": "s8-23",
+      "sceneId": "s8",
+      "text": "'He that a Miser lives and Miser dies,"
+    },
+    {
+      "id": "s8-24",
+      "sceneId": "s8",
+      "text": "At the Last Day what Figure shall he rise?'"
+    },
+    {
+      "id": "s8-25",
+      "sceneId": "s8",
+      "text": "A Fellow all his life lived hoarding Gold,"
+    },
+    {
+      "id": "s8-26",
+      "sceneId": "s8",
+      "text": "And, dying, hoarded left it. And behold,"
+    },
+    {
+      "id": "s8-27",
+      "sceneId": "s8",
+      "text": "One Night his Son saw peering through the House"
+    },
+    {
+      "id": "s8-28",
+      "sceneId": "s8",
+      "text": "A Man, with yet the semblance of a Mouse,"
+    },
+    {
+      "id": "s8-29",
+      "sceneId": "s8",
+      "text": "Watching a crevice in the Wall — and cried"
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "'My Father?' — 'Yes,' the Musulman replied,"
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "'Thy Father!' — 'But why watching thus?' — For fear"
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "Lest any smell my Treasure buried here.'"
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "'But wherefore, Sir, so metamousified?'"
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "'Because, my Son, such is the true outside"
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "Of the inner Soul by which I lived and died.'"
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "Aye,' said The Partridge, with his Foot and Bill"
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "Crimson with raking Rubies from the Hill,"
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "And clattering his Spurs — Wherewith the Ground"
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "I stab,' said he, 'for Rubies, that, when found"
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "I swallow; which, as soon as swallow'd, turn"
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "To Sparks which though my beak and eyes do burn."
+    },
+    {
+      "id": "s9-12",
+      "sceneId": "s9",
+      "text": "Gold, as you say, is but dull Metal dead,"
+    },
+    {
+      "id": "s9-13",
+      "sceneId": "s9",
+      "text": "And hanging on the Hoarder's Soul like Lead:"
+    },
+    {
+      "id": "s9-14",
+      "sceneId": "s9",
+      "text": "But Rubies that have Blood within, and grown"
+    },
+    {
+      "id": "s9-15",
+      "sceneId": "s9",
+      "text": "And nourisht in the Mountain Heart of Stone,"
+    },
+    {
+      "id": "s9-16",
+      "sceneId": "s9",
+      "text": "Burn with an inward Light, which they inspire,"
+    },
+    {
+      "id": "s9-17",
+      "sceneId": "s9",
+      "text": "And make their Owners Lords of their Desire.'"
+    },
+    {
+      "id": "s9-18",
+      "sceneId": "s9",
+      "text": "To whom the Tajidar — As idly sold To the quick Pebble as the drowsy Gold, As dead when sleeping in their mountain mine As dangerous to Him who makes them shine: Slavish indeed to do their Lord's Commands, And slave-like aptest to escape his Hands, And serve a second Master like the first, And working all their wonders for the worst.'"
+    },
+    {
+      "id": "s9-19",
+      "sceneId": "s9",
+      "text": "Never was Jewel after or before"
+    },
+    {
+      "id": "s9-20",
+      "sceneId": "s9",
+      "text": "Like that Sulayman for a Signet wore:"
+    },
+    {
+      "id": "s9-21",
+      "sceneId": "s9",
+      "text": "Whereby one Ruby, weighing scarce a grain"
+    },
+    {
+      "id": "s9-22",
+      "sceneId": "s9",
+      "text": "Did Sea and Land and all therein constrain,"
+    },
+    {
+      "id": "s9-23",
+      "sceneId": "s9",
+      "text": "Yea, ev'n the Winds of Heav'n — made the fierce East"
+    },
+    {
+      "id": "s9-24",
+      "sceneId": "s9",
+      "text": "Bear his League-wide Pavilion like a Beast,"
+    },
+    {
+      "id": "s9-25",
+      "sceneId": "s9",
+      "text": "11"
+    },
+    {
+      "id": "s9-26",
+      "sceneId": "s9",
+      "text": "Whither he would: yea, the Good Angel held His subject, and the lower Fiend compell'd. Till, looking round about him in his pride, He overtax'd the Fountain that supplied, Praying that after him no Son of Clay 390 Should ever touch his Glory. And one Day Almighty God his Jewel stole away, And gave it to the Div, who with the Ring Wore also the Resemblance of the King, And so for forty days play'd such a Game As blots Sulayman's forty years with Shame."
+    },
+    {
+      "id": "s9-27",
+      "sceneId": "s9",
+      "text": "Then The Shah-Falcon, tossing up his Head"
+    },
+    {
+      "id": "s9-28",
+      "sceneId": "s9",
+      "text": "Blink-hooded as it was — 'Behold,' he said,"
+    },
+    {
+      "id": "s9-29",
+      "sceneId": "s9",
+      "text": "'I am the chosen Comrade of the King,"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "And perch upon the Fist that wears the Ring;"
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "Born, bred, and nourisht, in the Royal Court,"
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "I take the Royal Name and make the Sport."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "And if strict Discipline I undergo"
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "And half my Life am blinded — be it so;"
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "Because the Shah's Companion ill may brook"
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "On aught save Royal Company to look."
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "And why am Ito leave my King, and fare"
+    },
+    {
+      "id": "s10-8",
+      "sceneId": "s10",
+      "text": "With all these Rabble Wings I know not where?' —"
+    },
+    {
+      "id": "s10-9",
+      "sceneId": "s10",
+      "text": "'O blind indeed' — the Answer was, 'and dark To any but a vulgar Mortal Mark, 410 And drunk with Pride of Vassalage to those Whose Humour like their Kingdom comes and goes; All Mutability: who one Day please To give: and next Day what they gave not seize: Like to the Fire: a dangerous Friend at best, Which who keeps farthest from does wiseliest."
+    },
+    {
+      "id": "s10-10",
+      "sceneId": "s10",
+      "text": "A certain Shah there was in Days foregone Who had a lovely Slave he doted on, And cherish'd as the Apple of his Eye, Clad gloriously, fed sumptuously, set high, 420 And never was at Ease were He not by, Who yet, for all this Sunshine, Day by Day Was seen to wither like a Flower away. Which, when observing, one without the Veil Of Favour ask'd the Favourite — Why so pale And sad?' thus sadly answer'd the poor Thing — 'No Sun that rises sets until the King, Whose Archery is famous among Men,"
+    },
+    {
+      "id": "s10-11",
+      "sceneId": "s10",
+      "text": "12"
+    },
+    {
+      "id": "s10-12",
+      "sceneId": "s10",
+      "text": "Aims at an Apple on my Head, and when"
+    },
+    {
+      "id": "s10-13",
+      "sceneId": "s10",
+      "text": "The stricken Apple splits, and those who stand"
+    },
+    {
+      "id": "s10-14",
+      "sceneId": "s10",
+      "text": "Around cry \"Lo! the Shah's unerring Hand!\""
+    },
+    {
+      "id": "s10-15",
+      "sceneId": "s10",
+      "text": "Then He too laughing asks me \"Why so pale"
+    },
+    {
+      "id": "s10-16",
+      "sceneId": "s10",
+      "text": "And sorrow-some? as could the Sultan fail,"
+    },
+    {
+      "id": "s10-17",
+      "sceneId": "s10",
+      "text": "Who such a master of the Bow confest,"
+    },
+    {
+      "id": "s10-18",
+      "sceneId": "s10",
+      "text": "And aiming by the Head that he loves best.'\""
+    },
+    {
+      "id": "s10-19",
+      "sceneId": "s10",
+      "text": "Then on a sudden swoop 'd The Phoenix down As though he wore as well as gave The Crown: And cried — 'I care not, I, to wait on Kings, Whose crowns are but the Shadow of my Wings!'"
+    },
+    {
+      "id": "s10-20",
+      "sceneId": "s10",
+      "text": "Aye,' was the Answer — And, pray, how has sped, 440 On which it lighted, many a mortal Head?'"
+    },
+    {
+      "id": "s10-21",
+      "sceneId": "s10",
+      "text": "A certain Sultan dying, his Vizier"
+    },
+    {
+      "id": "s10-22",
+      "sceneId": "s10",
+      "text": "In Dream beheld him, and in mortal Fear"
+    },
+    {
+      "id": "s10-23",
+      "sceneId": "s10",
+      "text": "Began — 'O mighty Shah of Shahs ! Thrice-blest' —"
+    },
+    {
+      "id": "s10-24",
+      "sceneId": "s10",
+      "text": "But loud the Vision shriek'd and struck its Breast,"
+    },
+    {
+      "id": "s10-25",
+      "sceneId": "s10",
+      "text": "And 'Stab me not with empty Title!' cried —"
+    },
+    {
+      "id": "s10-26",
+      "sceneId": "s10",
+      "text": "'One only Shah there is, and none beside,"
+    },
+    {
+      "id": "s10-27",
+      "sceneId": "s10",
+      "text": "Who from his Throne above for certain Ends"
+    },
+    {
+      "id": "s10-28",
+      "sceneId": "s10",
+      "text": "Awhile some Spangle of his Glory lends"
+    },
+    {
+      "id": "s10-29",
+      "sceneId": "s10",
+      "text": "To Men on Earth; but calling in again"
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Exacts a strict account of every Grain."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Sultan I lived, and held the World in scorn:"
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "O better had I glean'd the Field of Corn!"
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "O better had I been a Beggar born,"
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "And for my Throne and Crown, down in the Dust"
+    },
+    {
+      "id": "s11-5",
+      "sceneId": "s11",
+      "text": "My living Head had laid where Dead I must!"
+    },
+    {
+      "id": "s11-6",
+      "sceneId": "s11",
+      "text": "wither'd, wither'd, wither'd, be the Wing Whose overcasting Shadow made me King!'"
+    },
+    {
+      "id": "s11-7",
+      "sceneId": "s11",
+      "text": "Then from a Pond, where all day long he kept, Waddled the dapper Duck demure, adept 460 At infinite Ablution, and precise In keeping of his Raiment clean and nice. And 'Sure of all the Race of Birds,' said He, 'None for Religious Purity like Me, Beyond what strictest Rituals prescribe — Methinks I am the Saint of all our Tribe, To whom, by Miracle, the Water, that"
+    },
+    {
+      "id": "s11-8",
+      "sceneId": "s11",
+      "text": "wash in, also makes my Praying-Mat.'"
+    },
+    {
+      "id": "s11-9",
+      "sceneId": "s11",
+      "text": "13"
+    },
+    {
+      "id": "s11-10",
+      "sceneId": "s11",
+      "text": "To whom, more angrily than all, replied"
+    },
+    {
+      "id": "s11-11",
+      "sceneId": "s11",
+      "text": "The Leader, lashing that religious Pride,"
+    },
+    {
+      "id": "s11-12",
+      "sceneId": "s11",
+      "text": "That under ritual Obedience"
+    },
+    {
+      "id": "s11-13",
+      "sceneId": "s11",
+      "text": "To outer Law with inner might dispense:"
+    },
+    {
+      "id": "s11-14",
+      "sceneId": "s11",
+      "text": "For, fair as all the Feather to be seen,"
+    },
+    {
+      "id": "s11-15",
+      "sceneId": "s11",
+      "text": "Could one see through, the Maw was not so clean:"
+    },
+    {
+      "id": "s11-16",
+      "sceneId": "s11",
+      "text": "But He that made both Maw and Feather too"
+    },
+    {
+      "id": "s11-17",
+      "sceneId": "s11",
+      "text": "Would take account of, seeing through and through."
+    },
+    {
+      "id": "s11-18",
+      "sceneId": "s11",
+      "text": "A Shah returning to his Capital, His subjects drest it forth in Festival, Thronging with Acclamation Square and Street, And kneeling flung before his Horse's feet 480 Jewel and Gold. All which with scarce an Eye The Sultan superciliously rode by: Till coming to the public Prison, They Who dwelt within those grisly Walls, by way Of Welcome, having neither Pearl nor Gold, Over the wall chopt Head and Carcase roll'd, Some almost parcht to Mummy with the Sun, Some wet with Execution that day done. At which grim Compliment at last the Shah Drew Bridle: and amid a wild Hurrah 490 Of savage Recognition, smiling threw Silver and Gold among the wretched Crew, And so rode forward. Whereat of his Train One wondering that, while others sued in vain With costly gifts, which carelessly he pass'd, But smiled at ghastly Welcome like the last; The Shah made answer — All that Pearl and Gold Of ostentatious Welcome only told: A little with great Clamour from the Store Of hypocrites who kept at home much more. 500 But when those sever'd Heads and Trunks I saw — Save by strict Execution of my Law They had not parted company; not one But told my Will not talk'd about, but done.'"
+    },
+    {
+      "id": "s11-19",
+      "sceneId": "s11",
+      "text": "Then from a Wood was heard unseen to coo The Ring-dove — Yusuf ! Yusuf ! Yiisuf ! Yu-' (For thus her sorrow broke her Note in twain, And, just where broken, took it up again) '-suf! Yusuf! Yusuf! Yusuf!'— But one Note, Which still repeating, she made hoarse her throat:"
+    },
+    {
+      "id": "s11-20",
+      "sceneId": "s11",
+      "text": "14"
+    },
+    {
+      "id": "s11-21",
+      "sceneId": "s11",
+      "text": "Till checkt — 'O You, who with your idle Sighs Block up the Road of better Enterprise; Sham Sorrow all, or bad as sham if true, When once the better thing is come to do; Beware lest wailing thus you meet his Doom Who all too long his Darling wept, from whom You draw the very Name you hold so dear, And which the World is somewhat tired to hear.'"
+    },
+    {
+      "id": "s11-22",
+      "sceneId": "s11",
+      "text": "When Yusuf from his Father's Home was torn,"
+    },
+    {
+      "id": "s11-23",
+      "sceneId": "s11",
+      "text": "The Patriarch's Heart was utterly forlorn,"
+    },
+    {
+      "id": "s11-24",
+      "sceneId": "s11",
+      "text": "And, like a Pipe with but one stop, his Tongue"
+    },
+    {
+      "id": "s11-25",
+      "sceneId": "s11",
+      "text": "With nothing but the name of Yusuf rung."
+    },
+    {
+      "id": "s11-26",
+      "sceneId": "s11",
+      "text": "Then down from Heaven's Branches flew the Bird"
+    },
+    {
+      "id": "s11-27",
+      "sceneId": "s11",
+      "text": "OfHeav'n and said 'God wearies of that word:"
+    },
+    {
+      "id": "s11-28",
+      "sceneId": "s11",
+      "text": "Hast thou not else to do and else to say?'"
+    },
+    {
+      "id": "s11-29",
+      "sceneId": "s11",
+      "text": "So Jacob's lips were sealed from that Day."
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "But one Night in a Vision, far away"
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "His darling in some alien Field he saw"
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "Binding the Sheaf; and what between the Awe"
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "Of God's Displeasure and the bitter Pass"
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "Of passionate Affection, sigh'd Alas — '"
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "And stopp'd — But with the morning Sword of Flame"
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "That oped his Eyes the sterner Angel's came"
+    },
+    {
+      "id": "s12-7",
+      "sceneId": "s12",
+      "text": "For the forbidden Word not utter'd by"
+    },
+    {
+      "id": "s12-8",
+      "sceneId": "s12",
+      "text": "Thy Lips was yet sequester'd in that Sigh.'"
+    },
+    {
+      "id": "s12-9",
+      "sceneId": "s12",
+      "text": "And the right Passion whose Excess was wrong"
+    },
+    {
+      "id": "s12-10",
+      "sceneId": "s12",
+      "text": "Blinded the aged Eyes that wept too long."
+    },
+    {
+      "id": "s12-11",
+      "sceneId": "s12",
+      "text": "And after these came others — arguing,"
+    },
+    {
+      "id": "s12-12",
+      "sceneId": "s12",
+      "text": "Enquiring and excusing — some one Thing,"
+    },
+    {
+      "id": "s12-13",
+      "sceneId": "s12",
+      "text": "And some another — endless to repeat,"
+    },
+    {
+      "id": "s12-14",
+      "sceneId": "s12",
+      "text": "But, in the Main, Sloth, Folly, or Deceit."
+    },
+    {
+      "id": "s12-15",
+      "sceneId": "s12",
+      "text": "Their Souls were to the vulgar Figure cast"
+    },
+    {
+      "id": "s12-16",
+      "sceneId": "s12",
+      "text": "Of earthly Victual not of Heavenly Fast."
+    },
+    {
+      "id": "s12-17",
+      "sceneId": "s12",
+      "text": "At last one smaller Bird, of a rare kind,"
+    },
+    {
+      "id": "s12-18",
+      "sceneId": "s12",
+      "text": "Of modest Plume and unpresumptuous Mind,"
+    },
+    {
+      "id": "s12-19",
+      "sceneId": "s12",
+      "text": "Whisper'd 'O Tajidar, we know indeed"
+    },
+    {
+      "id": "s12-20",
+      "sceneId": "s12",
+      "text": "How Thou both knowest, and would'st help our Need;"
+    },
+    {
+      "id": "s12-21",
+      "sceneId": "s12",
+      "text": "For thou art wise and holy, and hast been"
+    },
+    {
+      "id": "s12-22",
+      "sceneId": "s12",
+      "text": "Behind the Veil, and there The Presence seen."
+    },
+    {
+      "id": "s12-23",
+      "sceneId": "s12",
+      "text": "But we are weak and vain, with little care"
+    },
+    {
+      "id": "s12-24",
+      "sceneId": "s12",
+      "text": "Beyond our yearly Nests and daily Fare —"
+    },
+    {
+      "id": "s12-25",
+      "sceneId": "s12",
+      "text": "How should we reach the Mountain? and if there"
+    },
+    {
+      "id": "s12-26",
+      "sceneId": "s12",
+      "text": "How get so great a Prince to hear our Prayer?"
+    },
+    {
+      "id": "s12-27",
+      "sceneId": "s12",
+      "text": "For there, you say, dwells The Symurgh alone"
+    },
+    {
+      "id": "s12-28",
+      "sceneId": "s12",
+      "text": "15"
+    },
+    {
+      "id": "s12-29",
+      "sceneId": "s12",
+      "text": "In Glory, like Sulayman on his Throne, And we but Pismires at his feet: can He Such puny Creatures stoop to hear, or see; Or hearing, seeing, own us — unakin As He to Folly, Woe, and Death, and Sin?' —"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "To whom the Tajidar, whose Voice for those"
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "Bewilder'd ones to full Compassion rose"
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "'O lost so long in exile, you disclaim"
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "The very Fount of Being whence you came,"
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "Cannot be parted from, and, will or no,"
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "Whether for Good or Evil must re-flow !"
+    },
+    {
+      "id": "s13-6",
+      "sceneId": "s13",
+      "text": "For look — the Shadows into which the Light"
+    },
+    {
+      "id": "s13-7",
+      "sceneId": "s13",
+      "text": "Of his pure Essence down by infinite"
+    },
+    {
+      "id": "s13-8",
+      "sceneId": "s13",
+      "text": "Gradation dwindles, which at random play"
+    },
+    {
+      "id": "s13-9",
+      "sceneId": "s13",
+      "text": "Through Space in Shape indefinite — one Ray"
+    },
+    {
+      "id": "s13-10",
+      "sceneId": "s13",
+      "text": "Of his Creative Will into defined"
+    },
+    {
+      "id": "s13-11",
+      "sceneId": "s13",
+      "text": "Creation quickens: We that swim the Wind,"
+    },
+    {
+      "id": "s13-12",
+      "sceneId": "s13",
+      "text": "And they the Flood below, and Man and Beast"
+    },
+    {
+      "id": "s13-13",
+      "sceneId": "s13",
+      "text": "That walk between, from Lion to the least"
+    },
+    {
+      "id": "s13-14",
+      "sceneId": "s13",
+      "text": "Pismire that creeps along Sulayman's Wall —"
+    },
+    {
+      "id": "s13-15",
+      "sceneId": "s13",
+      "text": "Yea, that in which they swim, fly, walk, and crawl —"
+    },
+    {
+      "id": "s13-16",
+      "sceneId": "s13",
+      "text": "However near the Fountain Light, or far"
+    },
+    {
+      "id": "s13-17",
+      "sceneId": "s13",
+      "text": "Removed, yet His authentic Shadows are;"
+    },
+    {
+      "id": "s13-18",
+      "sceneId": "s13",
+      "text": "Dead Matter's Self but the dark Residue"
+    },
+    {
+      "id": "s13-19",
+      "sceneId": "s13",
+      "text": "Exterminating Glory dwindles to."
+    },
+    {
+      "id": "s13-20",
+      "sceneId": "s13",
+      "text": "A Mystery too fearful in the Crowd"
+    },
+    {
+      "id": "s13-21",
+      "sceneId": "s13",
+      "text": "To utter — scarcely to Thyself aloud —"
+    },
+    {
+      "id": "s13-22",
+      "sceneId": "s13",
+      "text": "But when in solitary Watch and Prayer"
+    },
+    {
+      "id": "s13-23",
+      "sceneId": "s13",
+      "text": "Consider'd: and religiously beware"
+    },
+    {
+      "id": "s13-24",
+      "sceneId": "s13",
+      "text": "Lest Thou the Copy with the Type confound;"
+    },
+    {
+      "id": "s13-25",
+      "sceneId": "s13",
+      "text": "And Deity, with Deity indrown'd, —"
+    },
+    {
+      "id": "s13-26",
+      "sceneId": "s13",
+      "text": "For as pure Water into purer Wine"
+    },
+    {
+      "id": "s13-27",
+      "sceneId": "s13",
+      "text": "Incorporating shall itself reline"
+    },
+    {
+      "id": "s13-28",
+      "sceneId": "s13",
+      "text": "While the dull Drug lies half-re solved below,"
+    },
+    {
+      "id": "s13-29",
+      "sceneId": "s13",
+      "text": "With Him and with his Shadows is it so:"
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "The baser Forms, to whatsoever Change"
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "Subject, still vary through their lower Range:"
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "To which the higher even shall decay,"
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "That, letting ooze their better Part away"
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "For Things of Sense and Matter, in the End"
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "Shall merge into the Clay to which they tend."
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "Unlike to him, who straining through the Bond"
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "Of outward Being for a Life beyond,"
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "While the gross Worldling to his Centre clings,"
+    },
+    {
+      "id": "s14-9",
+      "sceneId": "s14",
+      "text": "That draws him deeper in, exulting springs"
+    },
+    {
+      "id": "s14-10",
+      "sceneId": "s14",
+      "text": "16"
+    },
+    {
+      "id": "s14-11",
+      "sceneId": "s14",
+      "text": "To merge him in the central Soul of Things."
+    },
+    {
+      "id": "s14-12",
+      "sceneId": "s14",
+      "text": "And shall not he pass home with other Zest"
+    },
+    {
+      "id": "s14-13",
+      "sceneId": "s14",
+      "text": "Who, with full Knowledge, yearns for such a Rest,"
+    },
+    {
+      "id": "s14-14",
+      "sceneId": "s14",
+      "text": "Than he, who with his better self at strife,"
+    },
+    {
+      "id": "s14-15",
+      "sceneId": "s14",
+      "text": "Drags on the weary Exile call'd This Life? —"
+    },
+    {
+      "id": "s14-16",
+      "sceneId": "s14",
+      "text": "One, like a child with outstretcht Arms and Face"
+    },
+    {
+      "id": "s14-17",
+      "sceneId": "s14",
+      "text": "Upturn'd, anticipates his Sire's Embrace;"
+    },
+    {
+      "id": "s14-18",
+      "sceneId": "s14",
+      "text": "The other crouching like a guilty Slave"
+    },
+    {
+      "id": "s14-19",
+      "sceneId": "s14",
+      "text": "Till flogg'd to Punishment across the Grave."
+    },
+    {
+      "id": "s14-20",
+      "sceneId": "s14",
+      "text": "And, knowing that His glory ill can bear"
+    },
+    {
+      "id": "s14-21",
+      "sceneId": "s14",
+      "text": "The unpurged Eye; do thou Thy Breast prepare:"
+    },
+    {
+      "id": "s14-22",
+      "sceneId": "s14",
+      "text": "And the mysterious Mirror He set there,"
+    },
+    {
+      "id": "s14-23",
+      "sceneId": "s14",
+      "text": "To temper his reflected Image in,"
+    },
+    {
+      "id": "s14-24",
+      "sceneId": "s14",
+      "text": "Clear of Distortion, Doubleness, and Sin:"
+    },
+    {
+      "id": "s14-25",
+      "sceneId": "s14",
+      "text": "And in thy Conscience understanding this,"
+    },
+    {
+      "id": "s14-26",
+      "sceneId": "s14",
+      "text": "The Double only seems, but The One is,"
+    },
+    {
+      "id": "s14-27",
+      "sceneId": "s14",
+      "text": "Thyself to Self-annihilation give"
+    },
+    {
+      "id": "s14-28",
+      "sceneId": "s14",
+      "text": "That this false Two in that true One may live."
+    },
+    {
+      "id": "s14-29",
+      "sceneId": "s14",
+      "text": "For this I say: if, looking in thy Heart,"
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Thou for Self-whole mistake thy Shadow-part,"
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "That Shadow-part indeed into The Sun"
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "Shall melt, but senseless of its Union:"
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "But in that Mirror if with purged eyes"
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "Thy Shadow Thou for Shadow recognise,"
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "Then shalt Thou back into thy Centre fall"
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "A conscious Ray of that eternal All.'"
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "He ceased, and for awhile Amazement quell'd The Host, and in the Chain of Silence held: A Mystery so awful who would dare — So glorious who would not wish — to share? So Silence brooded on the feather'd Folk, 630 Till here and there a timid Murmur broke From some too poor in honest Confidence, And then from others of too much Pretence; Whom both, as each unduly hoped or fear'd, The Tajidar in answer check'd or cheer'd."
+    },
+    {
+      "id": "s15-8",
+      "sceneId": "s15",
+      "text": "Some said their Hearts were good indeed to go The Way he pointed out: but they were slow Of Comprehension, and scarce understood Their present Evil or the promised Good: And so, tho' willing to do all they could, 640 Must not they fall short, or go wholly wrong, On such mysterious Errand, and so long? Whom the wise Leader bid but Do their Best"
+    },
+    {
+      "id": "s15-9",
+      "sceneId": "s15",
+      "text": "17"
+    },
+    {
+      "id": "s15-10",
+      "sceneId": "s15",
+      "text": "In Hope and Faith, and leave to Him the rest, For He who fix'd the Race, and knew its Length And Danger, also knew the Runner's Strength."
+    },
+    {
+      "id": "s15-11",
+      "sceneId": "s15",
+      "text": "Shah Mahmud, absent on an Enterprise,"
+    },
+    {
+      "id": "s15-12",
+      "sceneId": "s15",
+      "text": "Ayas, the very Darling of his eyes,"
+    },
+    {
+      "id": "s15-13",
+      "sceneId": "s15",
+      "text": "At home under an Evil Eye fell sick,"
+    },
+    {
+      "id": "s15-14",
+      "sceneId": "s15",
+      "text": "Then cried the Sultan to a soldier 'Quick!"
+    },
+    {
+      "id": "s15-15",
+      "sceneId": "s15",
+      "text": "To Horse! to Horse! without a Moment's Stay, —"
+    },
+    {
+      "id": "s15-16",
+      "sceneId": "s15",
+      "text": "The shortest Road with all the Speed you may, —"
+    },
+    {
+      "id": "s15-17",
+      "sceneId": "s15",
+      "text": "Or, by the Lord, your Head shall pay for it!' —"
+    },
+    {
+      "id": "s15-18",
+      "sceneId": "s15",
+      "text": "Off went the Soldier, plying Spur and Bit —"
+    },
+    {
+      "id": "s15-19",
+      "sceneId": "s15",
+      "text": "Over the sandy Desert, over green"
+    },
+    {
+      "id": "s15-20",
+      "sceneId": "s15",
+      "text": "Valley, and Mountain, and the Stream between,"
+    },
+    {
+      "id": "s15-21",
+      "sceneId": "s15",
+      "text": "Without a Moment's Stop for rest or bait,"
+    },
+    {
+      "id": "s15-22",
+      "sceneId": "s15",
+      "text": "Up to the City — to the Palace Gate —"
+    },
+    {
+      "id": "s15-23",
+      "sceneId": "s15",
+      "text": "Up to the Presence-Chamber at a Stride —"
+    },
+    {
+      "id": "s15-24",
+      "sceneId": "s15",
+      "text": "And Lo! The Sultan at his Darling's side! —"
+    },
+    {
+      "id": "s15-25",
+      "sceneId": "s15",
+      "text": "Then thought the Soldier — I have done my Best,"
+    },
+    {
+      "id": "s15-26",
+      "sceneId": "s15",
+      "text": "And yet shall die for it.' The Sultan guess'd"
+    },
+    {
+      "id": "s15-27",
+      "sceneId": "s15",
+      "text": "His Thought and smiled. 'Indeed your Best you did,"
+    },
+    {
+      "id": "s15-28",
+      "sceneId": "s15",
+      "text": "The nearest Road you knew, and well you rid:"
+    },
+    {
+      "id": "s15-29",
+      "sceneId": "s15",
+      "text": "And if / knew a shorter, my Excess"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "Of Knowledge does but justify thy Less.'"
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "And then, with drooping Crest and Feather, came Others, bow'd down with Penitence and Shame. They long'd indeed to go; 'but how begin, Mesh'd and entangled as they were in Sin 670 Which often-times Repentance of past Wrong As often broken had but knit more strong?' Whom the wise Leader bid be of good cheer, And, conscious of the Fault, dismiss the Fear, Nor at the very Entrance of the Fray Their Weapon, ev'n if broken, fling away: Since Mercy on the broken Branch anew Would blossom were but each Repentance true."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "For did not God his Prophet take to Task? 'Sev'n-times of Thee did Karun Pardon ask; 680 Which, hadst thou been like Me his Maker — yea, But present at the Kneading of his Clay With those twain Elements of Hell and Heav'n, — One prayer had won what Thou deny'st to Sev'n.'"
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "18"
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "For like a Child sent with a fluttering Light"
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "To feel his way along a gusty Night"
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "Man walks the World: again and yet again"
+    },
+    {
+      "id": "s16-7",
+      "sceneId": "s16",
+      "text": "The Lamp shall be by Fits of Passion slain:"
+    },
+    {
+      "id": "s16-8",
+      "sceneId": "s16",
+      "text": "But shall not He who sent him from the Door"
+    },
+    {
+      "id": "s16-9",
+      "sceneId": "s16",
+      "text": "Relight the Lamp once more, and yet once more?"
+    },
+    {
+      "id": "s16-10",
+      "sceneId": "s16",
+      "text": "When the rebellious Host from Death shall wake"
+    },
+    {
+      "id": "s16-11",
+      "sceneId": "s16",
+      "text": "Black with Despair of Judgment, God shall take"
+    },
+    {
+      "id": "s16-12",
+      "sceneId": "s16",
+      "text": "Ages of holy Merit from the Count"
+    },
+    {
+      "id": "s16-13",
+      "sceneId": "s16",
+      "text": "Of Angels to make up Man's short Amount,"
+    },
+    {
+      "id": "s16-14",
+      "sceneId": "s16",
+      "text": "And bid the murmuring Angel gladly spare"
+    },
+    {
+      "id": "s16-15",
+      "sceneId": "s16",
+      "text": "Of that which, undiminishing his Share,"
+    },
+    {
+      "id": "s16-16",
+      "sceneId": "s16",
+      "text": "Of Bliss, shall rescue Thousands from the Cost"
+    },
+    {
+      "id": "s16-17",
+      "sceneId": "s16",
+      "text": "Of Bankruptcy within the Prison lost."
+    },
+    {
+      "id": "s16-18",
+      "sceneId": "s16",
+      "text": "Another Story told how in the Scale"
+    },
+    {
+      "id": "s16-19",
+      "sceneId": "s16",
+      "text": "Good Will beyond mere Knowledge would prevail."
+    },
+    {
+      "id": "s16-20",
+      "sceneId": "s16",
+      "text": "In Paradise the Angel Gabriel heard"
+    },
+    {
+      "id": "s16-21",
+      "sceneId": "s16",
+      "text": "The Lips of Allah trembling with the Word"
+    },
+    {
+      "id": "s16-22",
+      "sceneId": "s16",
+      "text": "Of perfect Acceptation: and he thought"
+    },
+    {
+      "id": "s16-23",
+      "sceneId": "s16",
+      "text": "'Some perfect Faith such perfect Answer wrought,"
+    },
+    {
+      "id": "s16-24",
+      "sceneId": "s16",
+      "text": "But whose?' — And therewith slipping from the Crypt"
+    },
+    {
+      "id": "s16-25",
+      "sceneId": "s16",
+      "text": "Of Sidra, through the Angel-ranks he slipt"
+    },
+    {
+      "id": "s16-26",
+      "sceneId": "s16",
+      "text": "Watching what Lip yet trembled with the Shot"
+    },
+    {
+      "id": "s16-27",
+      "sceneId": "s16",
+      "text": "That so had hit the Mark — but found it not."
+    },
+    {
+      "id": "s16-28",
+      "sceneId": "s16",
+      "text": "Then, in a Glance to Earth, he threaded through"
+    },
+    {
+      "id": "s16-29",
+      "sceneId": "s16",
+      "text": "Mosque, Palace, Cell and Cottage of the True"
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "Belief — in vain; so back to Heaven went"
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "And — Allah's Lips still trembling with assent!"
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "Then the tenacious Angel once again"
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "Threaded the Ranks of Heav'n and Earth — in vain —"
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "Till, once again return'd to Paradise,"
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "There, looking into God's, the Angel's Eyes"
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "Beheld the Prayer that brought that Benison"
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "Rising like Incense from the Lips of one"
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "Who to an Idol bowed — as best he knew"
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "Under that False God worshipping the True."
+    },
+    {
+      "id": "s17-10",
+      "sceneId": "s17",
+      "text": "And then came others whom the summons found Not wholly sick indeed, but far from sound: Whose light inconstant Soul alternate flew From Saint to Sinner, and to both untrue; Who like a niggard Tailor, tried to match Truth's single Garment with a worldly Patch."
+    },
+    {
+      "id": "s17-11",
+      "sceneId": "s17",
+      "text": "19"
+    },
+    {
+      "id": "s17-12",
+      "sceneId": "s17",
+      "text": "A dangerous Game; for, striving to adjust"
+    },
+    {
+      "id": "s17-13",
+      "sceneId": "s17",
+      "text": "The hesitating Scale of either Lust,"
+    },
+    {
+      "id": "s17-14",
+      "sceneId": "s17",
+      "text": "That which had least within it upward flew,"
+    },
+    {
+      "id": "s17-15",
+      "sceneId": "s17",
+      "text": "And still the weightier to the Earth down drew,"
+    },
+    {
+      "id": "s17-16",
+      "sceneId": "s17",
+      "text": "And, while suspended between Rise and Fall,"
+    },
+    {
+      "id": "s17-17",
+      "sceneId": "s17",
+      "text": "Apt with a shaking Hand to forfeit all."
+    },
+    {
+      "id": "s17-18",
+      "sceneId": "s17",
+      "text": "There was a Queen of Egypt like the Bride Of Night, Full-moon-faced and Canopus-eyed, Whom one among the meanest of her Crowd Loved — and she knew it (for he loved aloud), And sent for him, and said 'Thou lov'st thy Queen: Now therefore Thou hast this to choose between: Fly for thy Life: or for this one night Wed Thy Queen, and with the Sunrise lose thy Head.' 740 He paused — he turn'd to fly — she struck him dead. For had he truly loved his Queen,' said She, 'He would at once have giv'n his Life for me, And Life and Wife had carried: but he lied; And loving only Life, has justly died.'"
+    },
+    {
+      "id": "s17-19",
+      "sceneId": "s17",
+      "text": "And then came one who having clear'd his Throat"
+    },
+    {
+      "id": "s17-20",
+      "sceneId": "s17",
+      "text": "With sanctimonious Sweetness in his Note"
+    },
+    {
+      "id": "s17-21",
+      "sceneId": "s17",
+      "text": "Thus lisp'd — 'Behold I languish from the first"
+    },
+    {
+      "id": "s17-22",
+      "sceneId": "s17",
+      "text": "With passionate and unrequited Thirst"
+    },
+    {
+      "id": "s17-23",
+      "sceneId": "s17",
+      "text": "Of Love for more than any mortal Bird."
+    },
+    {
+      "id": "s17-24",
+      "sceneId": "s17",
+      "text": "Therefore have I withdrawn me from the Herd"
+    },
+    {
+      "id": "s17-25",
+      "sceneId": "s17",
+      "text": "To pine in Solitude. But Thou at last"
+    },
+    {
+      "id": "s17-26",
+      "sceneId": "s17",
+      "text": "Hast drawn a line across the dreary Past,"
+    },
+    {
+      "id": "s17-27",
+      "sceneId": "s17",
+      "text": "And sure I am by Foretaste that the Wine"
+    },
+    {
+      "id": "s17-28",
+      "sceneId": "s17",
+      "text": "I long'd for, and Thou tell'st of, shall be mine.'"
+    },
+    {
+      "id": "s17-29",
+      "sceneId": "s17",
+      "text": "But he was sternly checkt. 'I tell thee this: Such Boast is no Assurance of such Bliss: Thou canst not even fill the sail of Prayer Unless from Him breathe that authentic Air That shall lift up the Curtain that divides 760 His Lover from the Harim where He hides — And the Fulfilment of thy Vows must be, Not from thy Love for Him, but His for Thee.'"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "The third night after Bajazyd had died, One saw him, in a dream, at his Bedside, And said, 'Thou Bajazyd? Tell me O Pyr, How fared it there with Munkar and Nakyr?' And Bajazyd replied, 'When from the Grave"
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "20"
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "They met me rising, and \"If Allah's slave\""
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "Ask'd me, \"or collar'd with the Chain of Hell?\""
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "I said \"Not I but God alone can tell:"
+    },
+    {
+      "id": "s18-5",
+      "sceneId": "s18",
+      "text": "My Passion for his service were but fond"
+    },
+    {
+      "id": "s18-6",
+      "sceneId": "s18",
+      "text": "Ambition had not He approved the Bond:"
+    },
+    {
+      "id": "s18-7",
+      "sceneId": "s18",
+      "text": "Had He not round my neck the Collar thrown"
+    },
+    {
+      "id": "s18-8",
+      "sceneId": "s18",
+      "text": "And told me in the Number of his own;"
+    },
+    {
+      "id": "s18-9",
+      "sceneId": "s18",
+      "text": "And that He only knew. What signifies"
+    },
+    {
+      "id": "s18-10",
+      "sceneId": "s18",
+      "text": "A hundred Years of Prayer if none replies?'\""
+    },
+    {
+      "id": "s18-11",
+      "sceneId": "s18",
+      "text": "'But,' said Another, 'then shall none the Seal Of Acceptation on his Forehead feel Ere the Grave yield them on the other Side 780 Where all is settled?'"
+    },
+    {
+      "id": "s18-12",
+      "sceneId": "s18",
+      "text": "But the Chief replied — 'Enough for us to know that who is meet Shall enter, and with unreproved Feet, (Ev'n as he might upon the Waters walk) The Presence-room, and in the Presence talk With such unbridled Licence as shall seem To the Uninitiated to blaspheme.'"
+    },
+    {
+      "id": "s18-13",
+      "sceneId": "s18",
+      "text": "Just as another Holy Spirit fled, The Skies above him burst into a Bed Of Angels looking down and singing clear 790 'Nightingale! Nightingale! thy Rose is here!' And yet, the Door wide open to that Bliss, As some hot Lover slights a scanty Kiss, The Saint cried All I sigh'd for come to thisl I who lifelong have struggled, Lord, to be Not of thy Angels one, but one with Thee!'"
+    },
+    {
+      "id": "s18-14",
+      "sceneId": "s18",
+      "text": "Others were sure that all he said was true: They were extremely wicked, that they knew: And much they long'd to go at once — but some, They said, so unexpectedly had come 800 Leaving their Nests half-built — in bad Repair — With Children in — Themselves about to pair — 'Might he not choose a better Season — nay, Better perhaps a Year or Two's Delay, Till all was settled, and themselves more stout And strong to carry their Repentance out — And then' —"
+    },
+    {
+      "id": "s18-15",
+      "sceneId": "s18",
+      "text": "21"
+    },
+    {
+      "id": "s18-16",
+      "sceneId": "s18",
+      "text": "'And then, the same or like Excuse, With harden'd Heart and Resolution loose With dallying: and old Age itself engaged Still to shirk that which shirking we have aged: 810 And so with Self-delusion, till, too late, Death upon all Repentance shuts the Gate; Or some fierce blow compels the Way to choose, And forced Repentance half its Virtue lose.'"
+    },
+    {
+      "id": "s18-17",
+      "sceneId": "s18",
+      "text": "As of an aged Indian King they tell"
+    },
+    {
+      "id": "s18-18",
+      "sceneId": "s18",
+      "text": "Who, when his Empire with his Army fell"
+    },
+    {
+      "id": "s18-19",
+      "sceneId": "s18",
+      "text": "Under young Mahmud's Sword of Wrath, was sent"
+    },
+    {
+      "id": "s18-20",
+      "sceneId": "s18",
+      "text": "At sunset to the Conqueror in his Tent;"
+    },
+    {
+      "id": "s18-21",
+      "sceneId": "s18",
+      "text": "But, ere the old King's silver head could reach"
+    },
+    {
+      "id": "s18-22",
+      "sceneId": "s18",
+      "text": "The Ground, was lifted up — with kindly Speech,"
+    },
+    {
+      "id": "s18-23",
+      "sceneId": "s18",
+      "text": "And with so holy Mercy reassured,"
+    },
+    {
+      "id": "s18-24",
+      "sceneId": "s18",
+      "text": "That, after due Persuasion, he abjured"
+    },
+    {
+      "id": "s18-25",
+      "sceneId": "s18",
+      "text": "His idols, sate upon Mahmud's Divan,"
+    },
+    {
+      "id": "s18-26",
+      "sceneId": "s18",
+      "text": "And took the Name and Faith of Musulman."
+    },
+    {
+      "id": "s18-27",
+      "sceneId": "s18",
+      "text": "But when the Night fell, in his Tent alone"
+    },
+    {
+      "id": "s18-28",
+      "sceneId": "s18",
+      "text": "The poor old King was heard to weep and groan"
+    },
+    {
+      "id": "s18-29",
+      "sceneId": "s18",
+      "text": "And smite his Bosom; which, when Mahmud knew,"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "He went to him and said 'Lo, if Thou rue"
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "Thy lost Dominion, Thou shalt wear the Ring"
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "Of thrice as large a Realm.' But the dark King"
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "Still wept, and Ashes on his Forehead threw"
+    },
+    {
+      "id": "s19-4",
+      "sceneId": "s19",
+      "text": "And cried 'Not for my Kingdom lost I rue:"
+    },
+    {
+      "id": "s19-5",
+      "sceneId": "s19",
+      "text": "But thinking how at the Last Day, will stand"
+    },
+    {
+      "id": "s19-6",
+      "sceneId": "s19",
+      "text": "The Prophet with The Volume in his Hand,"
+    },
+    {
+      "id": "s19-7",
+      "sceneId": "s19",
+      "text": "And ask of me \"How was't that, in thy Day"
+    },
+    {
+      "id": "s19-8",
+      "sceneId": "s19",
+      "text": "Of Glory, Thou didst turn from Me and slay"
+    },
+    {
+      "id": "s19-9",
+      "sceneId": "s19",
+      "text": "My People; but soon as thy Infidel"
+    },
+    {
+      "id": "s19-10",
+      "sceneId": "s19",
+      "text": "Before my True Believers' Army fell"
+    },
+    {
+      "id": "s19-11",
+      "sceneId": "s19",
+      "text": "Like Corn before the Reaper — thou didst own"
+    },
+    {
+      "id": "s19-12",
+      "sceneId": "s19",
+      "text": "His Sword who scoutedst Me.\" Of seed so sown"
+    },
+    {
+      "id": "s19-13",
+      "sceneId": "s19",
+      "text": "What profitable Harvest should be grown?'"
+    },
+    {
+      "id": "s19-14",
+      "sceneId": "s19",
+      "text": "Then after cheering others who delay'd, Not of the Road but of Themselves afraid, The Tajidar the Troop of those address'd, Whose uncomplying Attitude confess'd Their Souls entangled in the old Deceit, And hankering still after forbidden Meat —"
+    },
+    {
+      "id": "s19-15",
+      "sceneId": "s19",
+      "text": "'O ye who so long feeding on the Husk Forgo the Fruit, and doting on the Dusk Of the false Dawn, are blinded to the True:"
+    },
+    {
+      "id": "s19-16",
+      "sceneId": "s19",
+      "text": "22"
+    },
+    {
+      "id": "s19-17",
+      "sceneId": "s19",
+      "text": "That in the Maidan of this World pursue"
+    },
+    {
+      "id": "s19-18",
+      "sceneId": "s19",
+      "text": "The Golden Ball which, driven to the Goal,"
+    },
+    {
+      "id": "s19-19",
+      "sceneId": "s19",
+      "text": "Wins the World's Game but loses your own Soul:"
+    },
+    {
+      "id": "s19-20",
+      "sceneId": "s19",
+      "text": "Or like to Children after Bubbles run"
+    },
+    {
+      "id": "s19-21",
+      "sceneId": "s19",
+      "text": "That still elude your Fingers; or, if won,"
+    },
+    {
+      "id": "s19-22",
+      "sceneId": "s19",
+      "text": "Burst in Derision at your Touch; all thin"
+    },
+    {
+      "id": "s19-23",
+      "sceneId": "s19",
+      "text": "Glitter without, and empty Wind within."
+    },
+    {
+      "id": "s19-24",
+      "sceneId": "s19",
+      "text": "So as a prosperous Worldling on the Bed"
+    },
+    {
+      "id": "s19-25",
+      "sceneId": "s19",
+      "text": "Of Death — \"Behold, I am as one,\" he said,"
+    },
+    {
+      "id": "s19-26",
+      "sceneId": "s19",
+      "text": "\"Who all my Life long have been measuring Wind,"
+    },
+    {
+      "id": "s19-27",
+      "sceneId": "s19",
+      "text": "And, dying, now leave even that behind\" —"
+    },
+    {
+      "id": "s19-28",
+      "sceneId": "s19",
+      "text": "This World's a Nest in which the Cockatrice"
+    },
+    {
+      "id": "s19-29",
+      "sceneId": "s19",
+      "text": "Is warm'd and hatcht of Vanity and Vice:"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "A false Bazaar whose Wares are all a lie,"
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "Or never worth the Price at which you buy:"
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "A many-headed Monster that, supplied"
+    },
+    {
+      "id": "s20-3",
+      "sceneId": "s20",
+      "text": "The faster, faster is unsatisfied;"
+    },
+    {
+      "id": "s20-4",
+      "sceneId": "s20",
+      "text": "So as one, hearing a rich Fool one day"
+    },
+    {
+      "id": "s20-5",
+      "sceneId": "s20",
+      "text": "To God for yet one other Blessing pray,"
+    },
+    {
+      "id": "s20-6",
+      "sceneId": "s20",
+      "text": "Bid him no longer bounteous Heaven tire"
+    },
+    {
+      "id": "s20-7",
+      "sceneId": "s20",
+      "text": "For Life to feed, but Death to quench, the Fire."
+    },
+    {
+      "id": "s20-8",
+      "sceneId": "s20",
+      "text": "And what are all the Vanities and Wiles"
+    },
+    {
+      "id": "s20-9",
+      "sceneId": "s20",
+      "text": "In which the false World decks herself and smiles"
+    },
+    {
+      "id": "s20-10",
+      "sceneId": "s20",
+      "text": "To draw Men down into her harlot Lap?"
+    },
+    {
+      "id": "s20-11",
+      "sceneId": "s20",
+      "text": "Lusts of the Flesh that Soul and Body sap,"
+    },
+    {
+      "id": "s20-12",
+      "sceneId": "s20",
+      "text": "And, melting Soul down into carnal Lust,"
+    },
+    {
+      "id": "s20-13",
+      "sceneId": "s20",
+      "text": "Ev'n that for which 'tis sacrificed disgust:"
+    },
+    {
+      "id": "s20-14",
+      "sceneId": "s20",
+      "text": "Or Lust of worldly Glory — hollow more"
+    },
+    {
+      "id": "s20-15",
+      "sceneId": "s20",
+      "text": "Than the Drum beaten at the Sultan's Door,"
+    },
+    {
+      "id": "s20-16",
+      "sceneId": "s20",
+      "text": "And fluctuating with the Breath of Man"
+    },
+    {
+      "id": "s20-17",
+      "sceneId": "s20",
+      "text": "As the Vain Banner flapping in the Van."
+    },
+    {
+      "id": "s20-18",
+      "sceneId": "s20",
+      "text": "And Lust of Gold — perhaps of Lusts the worst;"
+    },
+    {
+      "id": "s20-19",
+      "sceneId": "s20",
+      "text": "The mis-created Idol most accurst"
+    },
+    {
+      "id": "s20-20",
+      "sceneId": "s20",
+      "text": "That between Man and Him who made him stands:"
+    },
+    {
+      "id": "s20-21",
+      "sceneId": "s20",
+      "text": "The Felon that with suicidal hands"
+    },
+    {
+      "id": "s20-22",
+      "sceneId": "s20",
+      "text": "He sweats to dig and rescue from his Grave,"
+    },
+    {
+      "id": "s20-23",
+      "sceneId": "s20",
+      "text": "And sets at large to make Himself its Slave."
+    },
+    {
+      "id": "s20-24",
+      "sceneId": "s20",
+      "text": "For lo, to what worse than oblivion gone Are some the cozening World most doted on. Pharaoh tried Glory: and his Chariots drown'd: 890 Karun with all his Gold went underground: Down toppled Nembroth with his airy Stair: Schedad among his Roses lived — but where!"
+    },
+    {
+      "id": "s20-25",
+      "sceneId": "s20",
+      "text": "23"
+    },
+    {
+      "id": "s20-26",
+      "sceneId": "s20",
+      "text": "'And as the World upon her victims feeds"
+    },
+    {
+      "id": "s20-27",
+      "sceneId": "s20",
+      "text": "So She herself goes down the Way she leads."
+    },
+    {
+      "id": "s20-28",
+      "sceneId": "s20",
+      "text": "For all her false allurements are the Threads"
+    },
+    {
+      "id": "s20-29",
+      "sceneId": "s20",
+      "text": "The Spider from her Entrail spins, and spreads"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "For Home and hunting-ground: And by and by"
+    },
+    {
+      "id": "s21-1",
+      "sceneId": "s21",
+      "text": "Darts at due Signal on the tangled Fly,"
+    },
+    {
+      "id": "s21-2",
+      "sceneId": "s21",
+      "text": "Seizes, dis-wings, and drains the Life, and leaves"
+    },
+    {
+      "id": "s21-3",
+      "sceneId": "s21",
+      "text": "The swinging Carcase, and forthwith re- weaves"
+    },
+    {
+      "id": "s21-4",
+      "sceneId": "s21",
+      "text": "Her Web: each Victim adding to the store"
+    },
+    {
+      "id": "s21-5",
+      "sceneId": "s21",
+      "text": "Of poison'd Entrail to entangle more."
+    },
+    {
+      "id": "s21-6",
+      "sceneId": "s21",
+      "text": "And so She bloats in Glory: till one Day"
+    },
+    {
+      "id": "s21-7",
+      "sceneId": "s21",
+      "text": "The Master of the House, passing that way,"
+    },
+    {
+      "id": "s21-8",
+      "sceneId": "s21",
+      "text": "Perceives, and with one flourish of his Broom"
+    },
+    {
+      "id": "s21-9",
+      "sceneId": "s21",
+      "text": "Of Web and Fly and Spider clears the Room."
+    },
+    {
+      "id": "s21-10",
+      "sceneId": "s21",
+      "text": "'Behold, dropt through the Gate of Mortal Birth, The Knightly Soul alights from Heav'n on Earth; Begins his Race, but scarce the Saddle feels, 910 When a foul Imp up from the distance steals, And, double as he will, about his Heels Closer and ever closer circling creeps, Then, half-invited, on the Saddle leaps, Clings round the Rider, and, once there, in vain The strongest strives to thrust him off again. In Childhood just peeps up the Blade of 111, That Youth to Lust rears, Fury, and Self-will: And, as Man cools to sensual Desire, Ambition catches with as fierce a Fire; 920 Until Old Age sends him with one last Lust Of Gold, to keep it where he found — in Dust. Life at both ends so feeble and constrain'd How should that Imp of Sin be slain or chain'd?"
+    },
+    {
+      "id": "s21-11",
+      "sceneId": "s21",
+      "text": "And woe to him who feeds the hateful Beast That of his Feeder makes an after-feast! We know the Wolf: by Strategem and Force Can hunt the Tiger down: but what Resource Against the Plague we heedless hatch within, Then, growing, pamper into full-blown Sin 930 With the Soul's self: ev'n, as the wise man said, Feeding the very Devil with God's own Bread; Until the Lord his Largess misapplied Resent, and drive us wholly from his Side?"
+    },
+    {
+      "id": "s21-12",
+      "sceneId": "s21",
+      "text": "For should the Greyhound whom a Sultan fed, And by a jewell'd String a-hunting led,"
+    },
+    {
+      "id": "s21-13",
+      "sceneId": "s21",
+      "text": "24"
+    },
+    {
+      "id": "s21-14",
+      "sceneId": "s21",
+      "text": "Turned by the Way to gnaw some nasty Thing And snarl at Him who twitch'd the silken String, Would not his Lord soon weary of Dispute, And turn adrift the incorrigible Brute?"
+    },
+    {
+      "id": "s21-15",
+      "sceneId": "s21",
+      "text": "'Nay, would one follow, and without a Chain,"
+    },
+    {
+      "id": "s21-16",
+      "sceneId": "s21",
+      "text": "The only Master truly worth the Pain,"
+    },
+    {
+      "id": "s21-17",
+      "sceneId": "s21",
+      "text": "One must beware lest, growing over-fond"
+    },
+    {
+      "id": "s21-18",
+      "sceneId": "s21",
+      "text": "Of even Life's more consecrated Bond,"
+    },
+    {
+      "id": "s21-19",
+      "sceneId": "s21",
+      "text": "We clog our Footsteps to the World beyond."
+    },
+    {
+      "id": "s21-20",
+      "sceneId": "s21",
+      "text": "Like that old Arab Chieftain, who confess'd"
+    },
+    {
+      "id": "s21-21",
+      "sceneId": "s21",
+      "text": "His soul by two too Darling Things possess'd —"
+    },
+    {
+      "id": "s21-22",
+      "sceneId": "s21",
+      "text": "That only Son of his: and that one Colt"
+    },
+    {
+      "id": "s21-23",
+      "sceneId": "s21",
+      "text": "Descended from the Prophet's Thunderbolt."
+    },
+    {
+      "id": "s21-24",
+      "sceneId": "s21",
+      "text": "\"And I might well bestow the last,\" he said,"
+    },
+    {
+      "id": "s21-25",
+      "sceneId": "s21",
+      "text": "\"On him who brought me Word the Boy was dead.\""
+    },
+    {
+      "id": "s21-26",
+      "sceneId": "s21",
+      "text": "And if so vain the glittering Fish we get,"
+    },
+    {
+      "id": "s21-27",
+      "sceneId": "s21",
+      "text": "How doubly vain to dote upon the Net,"
+    },
+    {
+      "id": "s21-28",
+      "sceneId": "s21",
+      "text": "Call'd Life, that draws them, patching up this thin"
+    },
+    {
+      "id": "s21-29",
+      "sceneId": "s21",
+      "text": "Tissue of Breathing out and Breathing in,"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "And so by husbanding each wretched Thread"
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "Spin out Death's very terror that we dread —"
+    },
+    {
+      "id": "s22-2",
+      "sceneId": "s22",
+      "text": "For as the Raindrop from the sphere of God"
+    },
+    {
+      "id": "s22-3",
+      "sceneId": "s22",
+      "text": "Dropt for a while into the Mortal Clod"
+    },
+    {
+      "id": "s22-4",
+      "sceneId": "s22",
+      "text": "So little makes of its allotted Time"
+    },
+    {
+      "id": "s22-5",
+      "sceneId": "s22",
+      "text": "Back to its Heav'n itself to re- sublime,"
+    },
+    {
+      "id": "s22-6",
+      "sceneId": "s22",
+      "text": "That it but serves to saturate its Clay"
+    },
+    {
+      "id": "s22-7",
+      "sceneId": "s22",
+      "text": "With Bitterness that will not pass away.'"
+    },
+    {
+      "id": "s22-8",
+      "sceneId": "s22",
+      "text": "One day the Prophet on a River Bank, Dipping his Lips into the Channel, drank A Draught as sweet as Honey. Then there came One who an earthen Pitcher from the same Drew up, and drank: and after some short stay Under the Shadow, rose and went his Way. Leaving his earthen Bowl. In which, anew 970 Thirsting, the Prophet from the River drew, And drank from: but the Water that came up Sweet from the Stream, drank bitter from the Cup. At which the Prophet in a still Surprise For Answer turning up to Heav'n his Eyes, The Vessel's Earthen Lips with Answer ran — 'The Clay that I am made of once was Man, Who dying, and resolved into the same Obliterated Earth from which he came Was for the Potter dug, and chased in turn"
+    },
+    {
+      "id": "s22-9",
+      "sceneId": "s22",
+      "text": "25"
+    },
+    {
+      "id": "s22-10",
+      "sceneId": "s22",
+      "text": "Through long Vicissitude of Bowl and Urn: But howsoever moulded, still the Pain Of that first mortal Anguish would retain, And cast, and re-cast, for a Thousand years Would turn the sweetest Water into Tears.'"
+    },
+    {
+      "id": "s22-11",
+      "sceneId": "s22",
+      "text": "And after Death? — that, shirk it as we may, Will come, and with it bring its After-Day —"
+    },
+    {
+      "id": "s22-12",
+      "sceneId": "s22",
+      "text": "For ev'n as Yusuf (when his Brotherhood Came up from Egypt to buy Corn, and stood Before their Brother in his lofty Place, 990 Nor knew him, for a Veil before his Face) Struck on his Mystic Cup, which straightway then Rung out their Story to those guilty Ten: — Not to them only, but to every one; Whatever he have said and thought and done, Unburied with the Body shall fly up, And gather into Heav'n's inverted Cup, Which, stricken by God's Finger, shall tell all The Story whereby we must stand or fall. And though we walk this World as if behind 1000 There were no Judgement, or the Judge half-blind, Beware, for He with whom we have to do Outsees the Lynx, outlives the Phoenix too —"
+    },
+    {
+      "id": "s22-13",
+      "sceneId": "s22",
+      "text": "So Sultan Mahmud, coming Face to Face"
+    },
+    {
+      "id": "s22-14",
+      "sceneId": "s22",
+      "text": "With mightier numbrs of the swarthy Race,"
+    },
+    {
+      "id": "s22-15",
+      "sceneId": "s22",
+      "text": "Vow'd that if God to him the battle gave,"
+    },
+    {
+      "id": "s22-16",
+      "sceneId": "s22",
+      "text": "God's Dervish People all the Spoil should have."
+    },
+    {
+      "id": "s22-17",
+      "sceneId": "s22",
+      "text": "And God the Battle gave him; and the Fruit"
+    },
+    {
+      "id": "s22-18",
+      "sceneId": "s22",
+      "text": "Of a great Conquest coming to compute,"
+    },
+    {
+      "id": "s22-19",
+      "sceneId": "s22",
+      "text": "A Murmur through the Sultan's Army stirr'd"
+    },
+    {
+      "id": "s22-20",
+      "sceneId": "s22",
+      "text": "Lest, ill committed to one hasty Word,"
+    },
+    {
+      "id": "s22-21",
+      "sceneId": "s22",
+      "text": "The Shah should squander on an idle Brood"
+    },
+    {
+      "id": "s22-22",
+      "sceneId": "s22",
+      "text": "What should be theirs who earn'd it with their Blood,"
+    },
+    {
+      "id": "s22-23",
+      "sceneId": "s22",
+      "text": "Or go to fill the Coffers of the State."
+    },
+    {
+      "id": "s22-24",
+      "sceneId": "s22",
+      "text": "So Mahmud's Soul began to hesitate:"
+    },
+    {
+      "id": "s22-25",
+      "sceneId": "s22",
+      "text": "Till looking round in Doubt from side to side"
+    },
+    {
+      "id": "s22-26",
+      "sceneId": "s22",
+      "text": "A raving Zealot in the Press he spied,"
+    },
+    {
+      "id": "s22-27",
+      "sceneId": "s22",
+      "text": "And call'd and had him brought before his Face,"
+    },
+    {
+      "id": "s22-28",
+      "sceneId": "s22",
+      "text": "And, telling, bid him arbitrate the case."
+    },
+    {
+      "id": "s22-29",
+      "sceneId": "s22",
+      "text": "Who, having listen'd, said — 'The Thing is plain:"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "If Thou and God should never have again"
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "To deal together, rob him of his share:"
+    },
+    {
+      "id": "s23-2",
+      "sceneId": "s23",
+      "text": "But if perchance you should — why then Beware!'"
+    },
+    {
+      "id": "s23-3",
+      "sceneId": "s23",
+      "text": "26"
+    },
+    {
+      "id": "s23-4",
+      "sceneId": "s23",
+      "text": "So spake the Tajidar: but Fear and Doubt Among the Birds in Whispers went about: Great was their Need: and Succour to be sought At any Risk: at any Ransom bought: But such a Monarch — greater than Mahmud The Great Himself! Why how should he be woo'd To listen to them? they too have come 1030 O So suddenly, and unprepared from home With any Gold, or Jewel, or rich Thing To carry with them to so great a King — Poor Creatures! with the old and carnal Blind, Spite of all said, so thick upon the Mind, Devising how they might ingratiate Access, as to some earthly Potentate."
+    },
+    {
+      "id": "s23-5",
+      "sceneId": "s23",
+      "text": "'Let him that with this Monarch would engage"
+    },
+    {
+      "id": "s23-6",
+      "sceneId": "s23",
+      "text": "Bring the Gold Dust of a long Pilgrimage:"
+    },
+    {
+      "id": "s23-7",
+      "sceneId": "s23",
+      "text": "The Ruby of a bleeding Heart, whose Sighs"
+    },
+    {
+      "id": "s23-8",
+      "sceneId": "s23",
+      "text": "Breathe more than Amber-incense as it dies;"
+    },
+    {
+      "id": "s23-9",
+      "sceneId": "s23",
+      "text": "And while in naked Beggary he stands"
+    },
+    {
+      "id": "s23-10",
+      "sceneId": "s23",
+      "text": "Hope for the Robe of Honour from his Hands.'"
+    },
+    {
+      "id": "s23-11",
+      "sceneId": "s23",
+      "text": "And, as no gift this Sovereign receives"
+    },
+    {
+      "id": "s23-12",
+      "sceneId": "s23",
+      "text": "Save the mere Soul and Self of him who gives,"
+    },
+    {
+      "id": "s23-13",
+      "sceneId": "s23",
+      "text": "So let that Soul for other none Reward"
+    },
+    {
+      "id": "s23-14",
+      "sceneId": "s23",
+      "text": "Look than the Presence of its Sovereign Lord.'"
+    },
+    {
+      "id": "s23-15",
+      "sceneId": "s23",
+      "text": "And as his Hearers seem'd to estimate"
+    },
+    {
+      "id": "s23-16",
+      "sceneId": "s23",
+      "text": "Their Scale of Glory from Mahmud the Great,"
+    },
+    {
+      "id": "s23-17",
+      "sceneId": "s23",
+      "text": "A simple Story of the Sultan told"
+    },
+    {
+      "id": "s23-18",
+      "sceneId": "s23",
+      "text": "How best a subject with his Shah made bold —"
+    },
+    {
+      "id": "s23-19",
+      "sceneId": "s23",
+      "text": "One night Shah Mahmud who had been of late"
+    },
+    {
+      "id": "s23-20",
+      "sceneId": "s23",
+      "text": "Somewhat distemper'd with Affairs of State"
+    },
+    {
+      "id": "s23-21",
+      "sceneId": "s23",
+      "text": "Stroll'd through the Streets disguised, as wont to do —"
+    },
+    {
+      "id": "s23-22",
+      "sceneId": "s23",
+      "text": "And, coming to the Baths, there on the Flue"
+    },
+    {
+      "id": "s23-23",
+      "sceneId": "s23",
+      "text": "Saw the poor Fellow who the Furnace fed"
+    },
+    {
+      "id": "s23-24",
+      "sceneId": "s23",
+      "text": "Sitting beside his Water-jug and Bread."
+    },
+    {
+      "id": "s23-25",
+      "sceneId": "s23",
+      "text": "Mahmud stept in — sat down — unask'd took up"
+    },
+    {
+      "id": "s23-26",
+      "sceneId": "s23",
+      "text": "And tasted of the untasted Loaf and Cup,"
+    },
+    {
+      "id": "s23-27",
+      "sceneId": "s23",
+      "text": "Saying within himself, 'Grudge but a bit,"
+    },
+    {
+      "id": "s23-28",
+      "sceneId": "s23",
+      "text": "And, by the Lord, your Head shall pay for it!'"
+    },
+    {
+      "id": "s23-29",
+      "sceneId": "s23",
+      "text": "So having rested, warm'd and satisfied"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "Himself without a Word on either side,"
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "At last the wayward Sultan rose to go."
+    },
+    {
+      "id": "s24-2",
+      "sceneId": "s24",
+      "text": "And then at last his Host broke silence — 'So? —"
+    },
+    {
+      "id": "s24-3",
+      "sceneId": "s24",
+      "text": "Art satisfied? Well, Brother, any Day"
+    },
+    {
+      "id": "s24-4",
+      "sceneId": "s24",
+      "text": "Or Night, remember, when you come this Way"
+    },
+    {
+      "id": "s24-5",
+      "sceneId": "s24",
+      "text": "27"
+    },
+    {
+      "id": "s24-6",
+      "sceneId": "s24",
+      "text": "And want a bit of Provender — why, you"
+    },
+    {
+      "id": "s24-7",
+      "sceneId": "s24",
+      "text": "Are welcome, and if not — why, welcome too.' —"
+    },
+    {
+      "id": "s24-8",
+      "sceneId": "s24",
+      "text": "The Sultan was so tickled with the whim"
+    },
+    {
+      "id": "s24-9",
+      "sceneId": "s24",
+      "text": "Of this quaint Entertainment and of him"
+    },
+    {
+      "id": "s24-10",
+      "sceneId": "s24",
+      "text": "Who offer'd it, that many a Night again"
+    },
+    {
+      "id": "s24-11",
+      "sceneId": "s24",
+      "text": "Stoker and Shah forgather'd in that Vein —"
+    },
+    {
+      "id": "s24-12",
+      "sceneId": "s24",
+      "text": "Till, the poor Fellow having stood the Test"
+    },
+    {
+      "id": "s24-13",
+      "sceneId": "s24",
+      "text": "Of true Good-fellowship, Mahmud confess'd"
+    },
+    {
+      "id": "s24-14",
+      "sceneId": "s24",
+      "text": "One Night the Sultan that had been his Guest:"
+    },
+    {
+      "id": "s24-15",
+      "sceneId": "s24",
+      "text": "And in requital of the scanty Dole"
+    },
+    {
+      "id": "s24-16",
+      "sceneId": "s24",
+      "text": "The Poor Man offer'd with so large a soul,"
+    },
+    {
+      "id": "s24-17",
+      "sceneId": "s24",
+      "text": "Bid him ask any Largess that he would"
+    },
+    {
+      "id": "s24-18",
+      "sceneId": "s24",
+      "text": "A Throne — if he would have it, so he should."
+    },
+    {
+      "id": "s24-19",
+      "sceneId": "s24",
+      "text": "The Poor Man kiss'd the Dust, and All,' said he,"
+    },
+    {
+      "id": "s24-20",
+      "sceneId": "s24",
+      "text": "'I ask is what and where I am to be;"
+    },
+    {
+      "id": "s24-21",
+      "sceneId": "s24",
+      "text": "If but the Shah from time to time will come"
+    },
+    {
+      "id": "s24-22",
+      "sceneId": "s24",
+      "text": "As now and see me in the lowly Home"
+    },
+    {
+      "id": "s24-23",
+      "sceneId": "s24",
+      "text": "His presence makes a palace, and my own"
+    },
+    {
+      "id": "s24-24",
+      "sceneId": "s24",
+      "text": "Poor Flue more royal than another's Throne.'"
+    },
+    {
+      "id": "s24-25",
+      "sceneId": "s24",
+      "text": "So said the cheery Tale: and, as they heard, Again the Heart beneath the Feather stirr'd: Again forgot the Danger and the Woes Of the long Travel in its glorious Close: — 1090 'Here truly all was Poverty, Despair And miserable Banishment — but there That more than Mahmud, for no more than Prayer Who would restore them to their ancient Place, And round their Shoulders fling his Robe of Grace.' They clapp'd their Wings, on Fire to be assay'd And prove of what true Metal they were made, Although defaced, and wanting the true Ring And Superscription of their rightful King."
+    },
+    {
+      "id": "s24-26",
+      "sceneId": "s24",
+      "text": "'The Road! The Road!' in countless voices cried 1100 The Host — 'The Road! and who shall be our Guide?' And they themselves 'The Tajidar!' replied: Yet to make doubly certain that the Voice Of Heav'n according with the People's Choice, Lots should be drawn; and He on whom should light Heav'n's Hand — they swore to follow him outright. This settled, and once more the Hubbub quell'd, Once more Suspense the Host in Silence held, While, Tribe by Tribe, the Birds their fortune drew; And Lo ! upon the Tajidar it flew. 1110 Then rising up again in wide and high"
+    },
+    {
+      "id": "s24-27",
+      "sceneId": "s24",
+      "text": "28"
+    },
+    {
+      "id": "s24-28",
+      "sceneId": "s24",
+      "text": "Circumference of wings that mesh'd the sky"
+    },
+    {
+      "id": "s24-29",
+      "sceneId": "s24",
+      "text": "'The Tajidar! The Tajidar!' they cry —"
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "'The Tajidar! The Tajidar!' with Him"
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "Was Heav'n, and They would follow Life and Limb !"
+    },
+    {
+      "id": "s25-2",
+      "sceneId": "s25",
+      "text": "Then, once more fluttering to their Places down,"
+    },
+    {
+      "id": "s25-3",
+      "sceneId": "s25",
+      "text": "Upon his Head they set the Royal Crown"
+    },
+    {
+      "id": "s25-4",
+      "sceneId": "s25",
+      "text": "As Khalif of their Khalif so long lost,"
+    },
+    {
+      "id": "s25-5",
+      "sceneId": "s25",
+      "text": "And Captain of his now repentant Host;"
+    },
+    {
+      "id": "s25-6",
+      "sceneId": "s25",
+      "text": "And setting him on high, and Silence call'd,"
+    },
+    {
+      "id": "s25-7",
+      "sceneId": "s25",
+      "text": "The Tajidar, in Pulpit-throne install'd,"
+    },
+    {
+      "id": "s25-8",
+      "sceneId": "s25",
+      "text": "His Voice into a Trumpet-tongue so clear"
+    },
+    {
+      "id": "s25-9",
+      "sceneId": "s25",
+      "text": "As all the winged Multitude should hear"
+    },
+    {
+      "id": "s25-10",
+      "sceneId": "s25",
+      "text": "Raised, to proclaim the Order and Array"
+    },
+    {
+      "id": "s25-11",
+      "sceneId": "s25",
+      "text": "Of March; which, many as it frighten'd — yea,"
+    },
+    {
+      "id": "s25-12",
+      "sceneId": "s25",
+      "text": "The Heart of Multitudes at outset broke,"
+    },
+    {
+      "id": "s25-13",
+      "sceneId": "s25",
+      "text": "Yet for due Preparation must be spoke."
+    },
+    {
+      "id": "s25-14",
+      "sceneId": "s25",
+      "text": "— A Road indeed that never Wing before"
+    },
+    {
+      "id": "s25-15",
+      "sceneId": "s25",
+      "text": "Flew, nor Foot trod, nor Heart imagined — o'er"
+    },
+    {
+      "id": "s25-16",
+      "sceneId": "s25",
+      "text": "Waterless Deserts — Waters where no Shore —"
+    },
+    {
+      "id": "s25-17",
+      "sceneId": "s25",
+      "text": "Valleys comprising cloud-high Mountains: these"
+    },
+    {
+      "id": "s25-18",
+      "sceneId": "s25",
+      "text": "Again their Valleys deeper than the Seas:"
+    },
+    {
+      "id": "s25-19",
+      "sceneId": "s25",
+      "text": "Whose Dust all Adders, and whose vapour Fire:"
+    },
+    {
+      "id": "s25-20",
+      "sceneId": "s25",
+      "text": "Where all once hostile Elements conspire"
+    },
+    {
+      "id": "s25-21",
+      "sceneId": "s25",
+      "text": "To set the Soul against herself, and tear"
+    },
+    {
+      "id": "s25-22",
+      "sceneId": "s25",
+      "text": "Courage to Terror — Hope into Despair,"
+    },
+    {
+      "id": "s25-23",
+      "sceneId": "s25",
+      "text": "And Madness; Terrors, Trials, to make stray"
+    },
+    {
+      "id": "s25-24",
+      "sceneId": "s25",
+      "text": "Or Stop where Death to wander or delay:"
+    },
+    {
+      "id": "s25-25",
+      "sceneId": "s25",
+      "text": "Where when half dead with Famine, Toil, and Heat,"
+    },
+    {
+      "id": "s25-26",
+      "sceneId": "s25",
+      "text": "'Twas Death indeed to rest, or drink, or eat."
+    },
+    {
+      "id": "s25-27",
+      "sceneId": "s25",
+      "text": "A Road still waxing in Self-sacrifice"
+    },
+    {
+      "id": "s25-28",
+      "sceneId": "s25",
+      "text": "As it went on: still ringing with the Cries"
+    },
+    {
+      "id": "s25-29",
+      "sceneId": "s25",
+      "text": "And Groans of Those who had not yet prevail'd,"
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "And bleaching with the Bones of those who fail'd:"
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "Where, almost all withstood, perhaps to earn"
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "Nothing: and, earning, never to return. —"
+    },
+    {
+      "id": "s26-3",
+      "sceneId": "s26",
+      "text": "And first the VALE OF SEARCH: an endless Maze,"
+    },
+    {
+      "id": "s26-4",
+      "sceneId": "s26",
+      "text": "Branching into innumerable Ways"
+    },
+    {
+      "id": "s26-5",
+      "sceneId": "s26",
+      "text": "All courting Entrance: but one right: and this"
+    },
+    {
+      "id": "s26-6",
+      "sceneId": "s26",
+      "text": "Beset with Pitfall, Gulf, and Precipice,"
+    },
+    {
+      "id": "s26-7",
+      "sceneId": "s26",
+      "text": "Where Dust is Embers, Air a fiery Sleet,"
+    },
+    {
+      "id": "s26-8",
+      "sceneId": "s26",
+      "text": "Through which with blinded Eyes and bleeding Feet"
+    },
+    {
+      "id": "s26-9",
+      "sceneId": "s26",
+      "text": "The Pilgrim stumbles, with Hyena's Howl"
+    },
+    {
+      "id": "s26-10",
+      "sceneId": "s26",
+      "text": "Around, and hissing Snake, and deadly Ghoul,"
+    },
+    {
+      "id": "s26-11",
+      "sceneId": "s26",
+      "text": "Whose Prey he falls if tempted but to droop,"
+    },
+    {
+      "id": "s26-12",
+      "sceneId": "s26",
+      "text": "Or if to wander famish'd from the Troop"
+    },
+    {
+      "id": "s26-13",
+      "sceneId": "s26",
+      "text": "29"
+    },
+    {
+      "id": "s26-14",
+      "sceneId": "s26",
+      "text": "For fruit that falls to ashes in the Hand,"
+    },
+    {
+      "id": "s26-15",
+      "sceneId": "s26",
+      "text": "Water that reacht recedes into the Sand."
+    },
+    {
+      "id": "s26-16",
+      "sceneId": "s26",
+      "text": "The only word is 'Forward!' Guide in sight,"
+    },
+    {
+      "id": "s26-17",
+      "sceneId": "s26",
+      "text": "After him, swerving neither left nor right,"
+    },
+    {
+      "id": "s26-18",
+      "sceneId": "s26",
+      "text": "Thyself for thine own Victual by Day,"
+    },
+    {
+      "id": "s26-19",
+      "sceneId": "s26",
+      "text": "At night thine own Self s Caravanserai."
+    },
+    {
+      "id": "s26-20",
+      "sceneId": "s26",
+      "text": "Till suddenly, perhaps when most subdued"
+    },
+    {
+      "id": "s26-21",
+      "sceneId": "s26",
+      "text": "And desperate, the Heart shall be renew'd"
+    },
+    {
+      "id": "s26-22",
+      "sceneId": "s26",
+      "text": "When deep in utter Darkness, by one Gleam"
+    },
+    {
+      "id": "s26-23",
+      "sceneId": "s26",
+      "text": "Of Glory from the far remote Harim,"
+    },
+    {
+      "id": "s26-24",
+      "sceneId": "s26",
+      "text": "That, with a scarcely conscious Shock of Change,"
+    },
+    {
+      "id": "s26-25",
+      "sceneId": "s26",
+      "text": "Shall light the Pilgrim toward the Mountain Range"
+    },
+    {
+      "id": "s26-26",
+      "sceneId": "s26",
+      "text": "Of KNOWLEDGE: where, if stronger and more pure"
+    },
+    {
+      "id": "s26-27",
+      "sceneId": "s26",
+      "text": "The Light and Air, yet harder to endure;"
+    },
+    {
+      "id": "s26-28",
+      "sceneId": "s26",
+      "text": "And if, perhaps, the Footing more secure,"
+    },
+    {
+      "id": "s26-29",
+      "sceneId": "s26",
+      "text": "Harder to keep up with a nimble Guide,"
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Less from lost Road than insufficient Stride —"
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "Yet tempted still by false Shows from the Track,"
+    },
+    {
+      "id": "s27-2",
+      "sceneId": "s27",
+      "text": "And by false Voices call'd aside or back,"
+    },
+    {
+      "id": "s27-3",
+      "sceneId": "s27",
+      "text": "Which echo from the Bosom, as if won"
+    },
+    {
+      "id": "s27-4",
+      "sceneId": "s27",
+      "text": "The Journey's End when only just begun,"
+    },
+    {
+      "id": "s27-5",
+      "sceneId": "s27",
+      "text": "And not a Mountain Peak with Toil attain'd"
+    },
+    {
+      "id": "s27-6",
+      "sceneId": "s27",
+      "text": "But shows a top yet higher to be gain'd."
+    },
+    {
+      "id": "s27-7",
+      "sceneId": "s27",
+      "text": "Wherefore still Forward, Forward! Love that fired"
+    },
+    {
+      "id": "s27-8",
+      "sceneId": "s27",
+      "text": "Thee first to search, by Search so re-inspired"
+    },
+    {
+      "id": "s27-9",
+      "sceneId": "s27",
+      "text": "As that the Spirit shall the carnal Load"
+    },
+    {
+      "id": "s27-10",
+      "sceneId": "s27",
+      "text": "Burn up, and double wing Thee on the Road;"
+    },
+    {
+      "id": "s27-11",
+      "sceneId": "s27",
+      "text": "That wert thou knocking at the very Door"
+    },
+    {
+      "id": "s27-12",
+      "sceneId": "s27",
+      "text": "Of Heav'n, thou still would'st cry for More, More, More!"
+    },
+    {
+      "id": "s27-13",
+      "sceneId": "s27",
+      "text": "Till loom in sight Kaf s Mountain Peak ashroud In Mist — uncertain yet Mountain or Cloud, But where the Pilgrim 'gins to hear the Tide Of that one Sea in which the Sev'n subside; And not the Sev'n Seas only: but the sev'n 1190 And self-enfolded Spheres of Earth and Heav'n — Yea, the Two Worlds, that now as Pictures sleep Upon its Surface — but when once the Deep From its long Slumber 'gins to heave and sway — Under the Tempest shall be swept away With all their Phases and Phenomena: Not senseless Matter only, but combined With Life in all Varieties of Kind; Yea, ev'n the abstract Forms that Space and Time Men call, and Weal and Woe, Virtue and Crime, 1200 And all the several Creeds like those who fell"
+    },
+    {
+      "id": "s27-14",
+      "sceneId": "s27",
+      "text": "30"
+    },
+    {
+      "id": "s27-15",
+      "sceneId": "s27",
+      "text": "Before them, Musulman and Infidel Shall from the Face of Being melt away, Cancell'd and swept as Dreams before the Day. So hast thou seen the Astrologer prepare His mystic Table smooth of sand, and there Inscribe his mystic figures, Square, and Trine, Circle and Pentagram, and heavenly Sign Of Star and Planet: from whose Set and Rise, Meeting and Difference, he prophesies; 1210 And, having done it, with his Finger clean Obliterates as never they had been."
+    },
+    {
+      "id": "s27-16",
+      "sceneId": "s27",
+      "text": "Such is when reacht the Table Land of One"
+    },
+    {
+      "id": "s27-17",
+      "sceneId": "s27",
+      "text": "And Wonder: blazing with so fierce a Sun"
+    },
+    {
+      "id": "s27-18",
+      "sceneId": "s27",
+      "text": "Of Unity that blinds while it reveals"
+    },
+    {
+      "id": "s27-19",
+      "sceneId": "s27",
+      "text": "The Universe that to a Point congeals,"
+    },
+    {
+      "id": "s27-20",
+      "sceneId": "s27",
+      "text": "So, stunn'd with utter Revelation, reels"
+    },
+    {
+      "id": "s27-21",
+      "sceneId": "s27",
+      "text": "The Pilgrim, when that Double- seeming House,"
+    },
+    {
+      "id": "s27-22",
+      "sceneId": "s27",
+      "text": "Against whose Beams he long had chafed his Brows,"
+    },
+    {
+      "id": "s27-23",
+      "sceneId": "s27",
+      "text": "Crumbles and cracks before that Sea, whose near"
+    },
+    {
+      "id": "s27-24",
+      "sceneId": "s27",
+      "text": "And nearer Voice now overwhelms his Ear."
+    },
+    {
+      "id": "s27-25",
+      "sceneId": "s27",
+      "text": "Till blinded, deafen'd, madden 'd, drunk with doubt"
+    },
+    {
+      "id": "s27-26",
+      "sceneId": "s27",
+      "text": "Of all within Himself as all without,"
+    },
+    {
+      "id": "s27-27",
+      "sceneId": "s27",
+      "text": "Nay, whether a Without there be, or not,"
+    },
+    {
+      "id": "s27-28",
+      "sceneId": "s27",
+      "text": "Or a Within that doubts: and if, then what? —"
+    },
+    {
+      "id": "s27-29",
+      "sceneId": "s27",
+      "text": "Ev'n so shall the bewilder'd Pilgrim seem"
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "When nearest waking deepliest in Dream,"
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "And darkest next to Dawn; and lost what had"
+    },
+    {
+      "id": "s28-2",
+      "sceneId": "s28",
+      "text": "When All is found: and just when sane quite Mad —"
+    },
+    {
+      "id": "s28-3",
+      "sceneId": "s28",
+      "text": "As one that having found the Key once more"
+    },
+    {
+      "id": "s28-4",
+      "sceneId": "s28",
+      "text": "Returns, and Lo! he cannot find the Door"
+    },
+    {
+      "id": "s28-5",
+      "sceneId": "s28",
+      "text": "He stumbles over — So the Pilgrim stands"
+    },
+    {
+      "id": "s28-6",
+      "sceneId": "s28",
+      "text": "A moment on the Threshold — with raised Hands"
+    },
+    {
+      "id": "s28-7",
+      "sceneId": "s28",
+      "text": "Calls to the eternal Saki for one Draught"
+    },
+    {
+      "id": "s28-8",
+      "sceneId": "s28",
+      "text": "Of Light from the One Essence: which when quaff d,"
+    },
+    {
+      "id": "s28-9",
+      "sceneId": "s28",
+      "text": "He plunges headlong in: and all is well"
+    },
+    {
+      "id": "s28-10",
+      "sceneId": "s28",
+      "text": "With him who never more returns to tell."
+    },
+    {
+      "id": "s28-11",
+      "sceneId": "s28",
+      "text": "Such being then the Race and such the Goal,"
+    },
+    {
+      "id": "s28-12",
+      "sceneId": "s28",
+      "text": "Judge if you must not Body both and Soul"
+    },
+    {
+      "id": "s28-13",
+      "sceneId": "s28",
+      "text": "With Meditation, Watch and Fast prepare."
+    },
+    {
+      "id": "s28-14",
+      "sceneId": "s28",
+      "text": "For he that wastes his body to a Hair"
+    },
+    {
+      "id": "s28-15",
+      "sceneId": "s28",
+      "text": "Shall seize the Locks of Truth: and He that prays"
+    },
+    {
+      "id": "s28-16",
+      "sceneId": "s28",
+      "text": "Good Angels in their Ministry waylays:"
+    },
+    {
+      "id": "s28-17",
+      "sceneId": "s28",
+      "text": "And the Midnightly Watcher in the Folds"
+    },
+    {
+      "id": "s28-18",
+      "sceneId": "s28",
+      "text": "Of his own Darkness God Almighty holds."
+    },
+    {
+      "id": "s28-19",
+      "sceneId": "s28",
+      "text": "He that would prosper here must from him strip"
+    },
+    {
+      "id": "s28-20",
+      "sceneId": "s28",
+      "text": "31"
+    },
+    {
+      "id": "s28-21",
+      "sceneId": "s28",
+      "text": "The World, and take the Dervish Gown and Scrip:"
+    },
+    {
+      "id": "s28-22",
+      "sceneId": "s28",
+      "text": "And as he goes must gather from all Sides"
+    },
+    {
+      "id": "s28-23",
+      "sceneId": "s28",
+      "text": "Irrelevant Ambitions, Lusts and Prides,"
+    },
+    {
+      "id": "s28-24",
+      "sceneId": "s28",
+      "text": "Glory and Gold, and sensual Desire,"
+    },
+    {
+      "id": "s28-25",
+      "sceneId": "s28",
+      "text": "Whereof to build the fundamental Pyre"
+    },
+    {
+      "id": "s28-26",
+      "sceneId": "s28",
+      "text": "Of Self-annihilation: and cast in"
+    },
+    {
+      "id": "s28-27",
+      "sceneId": "s28",
+      "text": "All old Relations and Regards of Kin"
+    },
+    {
+      "id": "s28-28",
+      "sceneId": "s28",
+      "text": "And Country: and, the Pile with this perplext"
+    },
+    {
+      "id": "s28-29",
+      "sceneId": "s28",
+      "text": "World platform'd, from the Fables of the Next"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "Raise it tow'rd Culmination, with the torn"
+    },
+    {
+      "id": "s29-1",
+      "sceneId": "s29",
+      "text": "Rags and Integuments of Creeds out-worn;"
+    },
+    {
+      "id": "s29-2",
+      "sceneId": "s29",
+      "text": "And top the giddy Summit with the Scroll"
+    },
+    {
+      "id": "s29-3",
+      "sceneId": "s29",
+      "text": "Of Reason that in dingy Smoke shall roll"
+    },
+    {
+      "id": "s29-4",
+      "sceneId": "s29",
+      "text": "Over the true Self-sacrifice of Soul:"
+    },
+    {
+      "id": "s29-5",
+      "sceneId": "s29",
+      "text": "(For such a Prayer was his — 'O God, do Thou"
+    },
+    {
+      "id": "s29-6",
+      "sceneId": "s29",
+      "text": "With all my Wealth in the other World endow"
+    },
+    {
+      "id": "s29-7",
+      "sceneId": "s29",
+      "text": "My Friends: and with my Wealth in this my Foes,"
+    },
+    {
+      "id": "s29-8",
+      "sceneId": "s29",
+      "text": "Till bankrupt in thy Riches I repose!')"
+    },
+    {
+      "id": "s29-9",
+      "sceneId": "s29",
+      "text": "Then, all the Pile completed of the Pelf"
+    },
+    {
+      "id": "s29-10",
+      "sceneId": "s29",
+      "text": "Of either World — at last throw on Thyself,"
+    },
+    {
+      "id": "s29-11",
+      "sceneId": "s29",
+      "text": "And with the torch of Self-negation fire;"
+    },
+    {
+      "id": "s29-12",
+      "sceneId": "s29",
+      "text": "And ever as the Flames rise high and higher,"
+    },
+    {
+      "id": "s29-13",
+      "sceneId": "s29",
+      "text": "With Cries of agonising Glory still"
+    },
+    {
+      "id": "s29-14",
+      "sceneId": "s29",
+      "text": "All of that Self 'burn up that burn up will,"
+    },
+    {
+      "id": "s29-15",
+      "sceneId": "s29",
+      "text": "Leaving the Phoenix that no Fire can slay"
+    },
+    {
+      "id": "s29-16",
+      "sceneId": "s29",
+      "text": "To spring from its own Ashes kindled — nay,"
+    },
+    {
+      "id": "s29-17",
+      "sceneId": "s29",
+      "text": "Itself an inextinguishable Spark"
+    },
+    {
+      "id": "s29-18",
+      "sceneId": "s29",
+      "text": "Of Being, now beneath Earth-ashes dark,"
+    },
+    {
+      "id": "s29-19",
+      "sceneId": "s29",
+      "text": "Transcending these, at last Itself transcends"
+    },
+    {
+      "id": "s29-20",
+      "sceneId": "s29",
+      "text": "And with the One Eternal Essence blends."
+    },
+    {
+      "id": "s29-21",
+      "sceneId": "s29",
+      "text": "The Moths had long been exiled from the Flame They worship: so to solemn Council came, And voted One of them by Lot be sent To find their Idol. One was chosen: went. 1280 And after a long Circuit in sheer Gloom, Seeing, he thought, the TAPER in a Room Flew back at once to say so. But the chief Of Mothistan slighted so slight Belief, And sent another Messenger, who flew Up to the House, in at the window, through The Flame itself; and back the Message brings, With yet no sign of Conflict on his wings. Then went a Third, and spurr'd with true Desire, Plunging at once into the sacred Fire, 1290 Folded his Wings within, till he became"
+    },
+    {
+      "id": "s29-22",
+      "sceneId": "s29",
+      "text": "32"
+    },
+    {
+      "id": "s29-23",
+      "sceneId": "s29",
+      "text": "One Colour and one Substance with the Flame."
+    },
+    {
+      "id": "s29-24",
+      "sceneId": "s29",
+      "text": "He only knew the Flame who in it burn'd;"
+    },
+    {
+      "id": "s29-25",
+      "sceneId": "s29",
+      "text": "And only He could tell who ne'er to tell return'd."
+    },
+    {
+      "id": "s29-26",
+      "sceneId": "s29",
+      "text": "After declaring what of this declared"
+    },
+    {
+      "id": "s29-27",
+      "sceneId": "s29",
+      "text": "Must be, that all who went should be prepared,"
+    },
+    {
+      "id": "s29-28",
+      "sceneId": "s29",
+      "text": "From his high Station ceased the Tajidar —"
+    },
+    {
+      "id": "s29-29",
+      "sceneId": "s29",
+      "text": "And lo ! the Terrors that, when told afar,"
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "Seem'd but as Shadows of a Noonday Sun,"
+    },
+    {
+      "id": "s30-1",
+      "sceneId": "s30",
+      "text": "Now that the talkt-of Thing was to be done,"
+    },
+    {
+      "id": "s30-2",
+      "sceneId": "s30",
+      "text": "Lengthening into those of closing Day"
+    },
+    {
+      "id": "s30-3",
+      "sceneId": "s30",
+      "text": "Strode into utter Darkness: and Dismay"
+    },
+    {
+      "id": "s30-4",
+      "sceneId": "s30",
+      "text": "Like Night on the husht Sea of Feathers lay,"
+    },
+    {
+      "id": "s30-5",
+      "sceneId": "s30",
+      "text": "Late so elate — 'So terrible a Track!"
+    },
+    {
+      "id": "s30-6",
+      "sceneId": "s30",
+      "text": "Endless — or, ending, never to come back! —"
+    },
+    {
+      "id": "s30-7",
+      "sceneId": "s30",
+      "text": "Never to Country, Family, or Friend!' —"
+    },
+    {
+      "id": "s30-8",
+      "sceneId": "s30",
+      "text": "In sooth no easy Bow for Birds to bend! —"
+    },
+    {
+      "id": "s30-9",
+      "sceneId": "s30",
+      "text": "Even while he spoke, how many Wings and Crests"
+    },
+    {
+      "id": "s30-10",
+      "sceneId": "s30",
+      "text": "Had slunk away to distant Woods and Nests;"
+    },
+    {
+      "id": "s30-11",
+      "sceneId": "s30",
+      "text": "Others again in Preparation spent"
+    },
+    {
+      "id": "s30-12",
+      "sceneId": "s30",
+      "text": "What little Strength they had, and never went:"
+    },
+    {
+      "id": "s30-13",
+      "sceneId": "s30",
+      "text": "And others, after preparation due —"
+    },
+    {
+      "id": "s30-14",
+      "sceneId": "s30",
+      "text": "When up the Veil of that first Valley drew"
+    },
+    {
+      "id": "s30-15",
+      "sceneId": "s30",
+      "text": "From whose waste Wilderness of Darkness blew"
+    },
+    {
+      "id": "s30-16",
+      "sceneId": "s30",
+      "text": "A Sarsar, whether edged of Flames or Snows,"
+    },
+    {
+      "id": "s30-17",
+      "sceneId": "s30",
+      "text": "That through from Root to Tip their Feathers froze —"
+    },
+    {
+      "id": "s30-18",
+      "sceneId": "s30",
+      "text": "Up went a Multitude that overhead"
+    },
+    {
+      "id": "s30-19",
+      "sceneId": "s30",
+      "text": "A moment darken'd, then on all sides fled,"
+    },
+    {
+      "id": "s30-20",
+      "sceneId": "s30",
+      "text": "Dwindling the World- assembled Caravan"
+    },
+    {
+      "id": "s30-21",
+      "sceneId": "s30",
+      "text": "To less than half the Number that began."
+    },
+    {
+      "id": "s30-22",
+      "sceneId": "s30",
+      "text": "Of those who fled not, some in Dread and Doubt"
+    },
+    {
+      "id": "s30-23",
+      "sceneId": "s30",
+      "text": "Sat without stirring: others who set out"
+    },
+    {
+      "id": "s30-24",
+      "sceneId": "s30",
+      "text": "With frothy Force, or stupidly resign'd,"
+    },
+    {
+      "id": "s30-25",
+      "sceneId": "s30",
+      "text": "Before a League, flew off or fell behind."
+    },
+    {
+      "id": "s30-26",
+      "sceneId": "s30",
+      "text": "And howsoever the more Brave and Strong"
+    },
+    {
+      "id": "s30-27",
+      "sceneId": "s30",
+      "text": "In Courage, Wing, or Wisdom push'd along,"
+    },
+    {
+      "id": "s30-28",
+      "sceneId": "s30",
+      "text": "Yet League by League the Road was thicklier spread"
+    },
+    {
+      "id": "s30-29",
+      "sceneId": "s30",
+      "text": "By the fast falling Foliage of the Dead:"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "Some spent with Travel over Wave and Ground;"
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "Scorcht, frozen, dead for Drought, or drinking drown'd."
+    },
+    {
+      "id": "s31-2",
+      "sceneId": "s31",
+      "text": "Famisht, or poison'd with the Food when found:"
+    },
+    {
+      "id": "s31-3",
+      "sceneId": "s31",
+      "text": "By Weariness, or Hunger, or Affright"
+    },
+    {
+      "id": "s31-4",
+      "sceneId": "s31",
+      "text": "Seduced to stop or stray, become the Bite"
+    },
+    {
+      "id": "s31-5",
+      "sceneId": "s31",
+      "text": "Of Tiger howling round or hissing Snake,"
+    },
+    {
+      "id": "s31-6",
+      "sceneId": "s31",
+      "text": "Or Crocodile that eyed them from the Lake:"
+    },
+    {
+      "id": "s31-7",
+      "sceneId": "s31",
+      "text": "33"
+    },
+    {
+      "id": "s31-8",
+      "sceneId": "s31",
+      "text": "Or raving Mad, or in despair Self-slain: Or slaying one another for a Grain: —"
+    },
+    {
+      "id": "s31-9",
+      "sceneId": "s31",
+      "text": "Till of the mighty Host that fledged the Dome"
+    },
+    {
+      "id": "s31-10",
+      "sceneId": "s31",
+      "text": "Of Heav'n and Floor of Earth on leaving Home,"
+    },
+    {
+      "id": "s31-11",
+      "sceneId": "s31",
+      "text": "A Handful reach'd and scrambled up the Knees"
+    },
+    {
+      "id": "s31-12",
+      "sceneId": "s31",
+      "text": "Of Kaf whose Feet dip in the Seven Seas;"
+    },
+    {
+      "id": "s31-13",
+      "sceneId": "s31",
+      "text": "And of the few that up his Forest- sides"
+    },
+    {
+      "id": "s31-14",
+      "sceneId": "s31",
+      "text": "Of Light and Darkness where The Presence hides,"
+    },
+    {
+      "id": "s31-15",
+      "sceneId": "s31",
+      "text": "But Thirty — thirty desperate draggled Things,"
+    },
+    {
+      "id": "s31-16",
+      "sceneId": "s31",
+      "text": "Half-dead, with scarce a Feather on their Wings,"
+    },
+    {
+      "id": "s31-17",
+      "sceneId": "s31",
+      "text": "Stunn'd, blinded, deafen'd with the Crash and Craze"
+    },
+    {
+      "id": "s31-18",
+      "sceneId": "s31",
+      "text": "Of Rock and Sea collapsing in a Blaze"
+    },
+    {
+      "id": "s31-19",
+      "sceneId": "s31",
+      "text": "That struck the Sun to Cinder — fell upon"
+    },
+    {
+      "id": "s31-20",
+      "sceneId": "s31",
+      "text": "The Threshold of the Everlasting One,"
+    },
+    {
+      "id": "s31-21",
+      "sceneId": "s31",
+      "text": "With but enough of Life in each to cry,"
+    },
+    {
+      "id": "s31-22",
+      "sceneId": "s31",
+      "text": "On THAT which all absorb'd—"
+    },
+    {
+      "id": "s31-23",
+      "sceneId": "s31",
+      "text": "And suddenly Forth flash'd a winged Harbinger of Flame And Tongue of Fire, and 'Who?' and 'Whence they came?' And Why?' demanded. And the Tajidar For all the Thirty answer'd him — We are Those Fractions of the Sum of Being, far Dis- spent and foul disfigured, that once more Strike for Admission at the Treasury Door.' To whom the Angel answer'd — 'Know ye not That He you seek recks little who or what 1360 Of Quantity and Kind — himself the Fount Of Being Universal needs no Count Of all the Drops o'erflowing from his Urn, In what Degree they issue or return?'"
+    },
+    {
+      "id": "s31-24",
+      "sceneId": "s31",
+      "text": "Then cried the Spokesman, 'Be it even so:"
+    },
+    {
+      "id": "s31-25",
+      "sceneId": "s31",
+      "text": "Let us but see the Fount from which we flow,"
+    },
+    {
+      "id": "s31-26",
+      "sceneId": "s31",
+      "text": "And, seeing, lose Ourselves therein!' and, Lo!"
+    },
+    {
+      "id": "s31-27",
+      "sceneId": "s31",
+      "text": "Before the Word was utter'd, or the Tongue"
+    },
+    {
+      "id": "s31-28",
+      "sceneId": "s31",
+      "text": "Of Fire replied, or Portal open flung."
+    },
+    {
+      "id": "s31-29",
+      "sceneId": "s31",
+      "text": "They were within — they were before the Throne,"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "Before the Majesty that sat thereon,"
+    },
+    {
+      "id": "s32-1",
+      "sceneId": "s32",
+      "text": "But wrapt in so insufferable a Blaze"
+    },
+    {
+      "id": "s32-2",
+      "sceneId": "s32",
+      "text": "Of Glory as beat down their baffled Gaze."
+    },
+    {
+      "id": "s32-3",
+      "sceneId": "s32",
+      "text": "Which, downward dropping, fell upon a Scroll"
+    },
+    {
+      "id": "s32-4",
+      "sceneId": "s32",
+      "text": "That, Lightning-like, flash'd back on each the whole"
+    },
+    {
+      "id": "s32-5",
+      "sceneId": "s32",
+      "text": "Past half-forgotten Story of his Soul:"
+    },
+    {
+      "id": "s32-6",
+      "sceneId": "s32",
+      "text": "Like that which Yusuf in his Glory gave"
+    },
+    {
+      "id": "s32-7",
+      "sceneId": "s32",
+      "text": "His Brethren as some Writing he would have"
+    },
+    {
+      "id": "s32-8",
+      "sceneId": "s32",
+      "text": "34"
+    },
+    {
+      "id": "s32-9",
+      "sceneId": "s32",
+      "text": "Interpreted; and at a Glance, behold"
+    },
+    {
+      "id": "s32-10",
+      "sceneId": "s32",
+      "text": "Their own Indenture for their Brother sold!"
+    },
+    {
+      "id": "s32-11",
+      "sceneId": "s32",
+      "text": "And so with these poor Thirty: who, abasht"
+    },
+    {
+      "id": "s32-12",
+      "sceneId": "s32",
+      "text": "In Memory all laid bare and Conscience lasht,"
+    },
+    {
+      "id": "s32-13",
+      "sceneId": "s32",
+      "text": "By full Confession and Self-loathing flung"
+    },
+    {
+      "id": "s32-14",
+      "sceneId": "s32",
+      "text": "The Rags of carnal Self that round them clung;"
+    },
+    {
+      "id": "s32-15",
+      "sceneId": "s32",
+      "text": "And, their old selves self-knowledged and self-loathed,"
+    },
+    {
+      "id": "s32-16",
+      "sceneId": "s32",
+      "text": "And in the Soul's Integrity re-clothed,"
+    },
+    {
+      "id": "s32-17",
+      "sceneId": "s32",
+      "text": "Once more they ventured from the Dust to raise"
+    },
+    {
+      "id": "s32-18",
+      "sceneId": "s32",
+      "text": "Their Eyes — up to the Throne — into the Blaze,"
+    },
+    {
+      "id": "s32-19",
+      "sceneId": "s32",
+      "text": "And in the Centre of the Glory there"
+    },
+    {
+      "id": "s32-20",
+      "sceneId": "s32",
+      "text": "Beheld the Figure of — Themselves — as 'twere"
+    },
+    {
+      "id": "s32-21",
+      "sceneId": "s32",
+      "text": "Transfigured — looking to Themselves, beheld"
+    },
+    {
+      "id": "s32-22",
+      "sceneId": "s32",
+      "text": "The Figure on the Throne en-miracled,"
+    },
+    {
+      "id": "s32-23",
+      "sceneId": "s32",
+      "text": "Until their Eyes themselves and That between"
+    },
+    {
+      "id": "s32-24",
+      "sceneId": "s32",
+      "text": "Did hesitate which Seer was, which Seen;"
+    },
+    {
+      "id": "s32-25",
+      "sceneId": "s32",
+      "text": "They That, That They: Another, yet the Same:"
+    },
+    {
+      "id": "s32-26",
+      "sceneId": "s32",
+      "text": "Dividual, yet One: from whom there came"
+    },
+    {
+      "id": "s32-27",
+      "sceneId": "s32",
+      "text": "A Voice of awful Answer, scarce discern'd"
+    },
+    {
+      "id": "s32-28",
+      "sceneId": "s32",
+      "text": "From which to Aspiration whose return'd"
+    },
+    {
+      "id": "s32-29",
+      "sceneId": "s32",
+      "text": "They scarcely knew; as when some Man apart"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "Answers aloud the Question in his Heart —"
+    },
+    {
+      "id": "s33-1",
+      "sceneId": "s33",
+      "text": "'The Sun of my Perfection is a Glass"
+    },
+    {
+      "id": "s33-2",
+      "sceneId": "s33",
+      "text": "Wherein from Seeing into Being pass"
+    },
+    {
+      "id": "s33-3",
+      "sceneId": "s33",
+      "text": "All who, reflecting as reflected see"
+    },
+    {
+      "id": "s33-4",
+      "sceneId": "s33",
+      "text": "Themselves in Me, and Me in Them: not Me,"
+    },
+    {
+      "id": "s33-5",
+      "sceneId": "s33",
+      "text": "But all of Me that a contracted Eye"
+    },
+    {
+      "id": "s33-6",
+      "sceneId": "s33",
+      "text": "Is comprehensive of Infinity:"
+    },
+    {
+      "id": "s33-7",
+      "sceneId": "s33",
+      "text": "Nor yet Themselves: no Selves, but of The All"
+    },
+    {
+      "id": "s33-8",
+      "sceneId": "s33",
+      "text": "Fractions, from which they split and whither fall."
+    },
+    {
+      "id": "s33-9",
+      "sceneId": "s33",
+      "text": "As Water lifted from the Deep, again"
+    },
+    {
+      "id": "s33-10",
+      "sceneId": "s33",
+      "text": "Falls back in individual Drops of Rain"
+    },
+    {
+      "id": "s33-11",
+      "sceneId": "s33",
+      "text": "Then melts into the Universal Main."
+    },
+    {
+      "id": "s33-12",
+      "sceneId": "s33",
+      "text": "All you have been, and seen, and done, and thought,"
+    },
+    {
+      "id": "s33-13",
+      "sceneId": "s33",
+      "text": "Not You but /, have seen and been and wrought:"
+    },
+    {
+      "id": "s33-14",
+      "sceneId": "s33",
+      "text": "I was the Sin that from Myself rebell'd:"
+    },
+    {
+      "id": "s33-15",
+      "sceneId": "s33",
+      "text": "I the Remorse that tow'rd Myself compell'd:"
+    },
+    {
+      "id": "s33-16",
+      "sceneId": "s33",
+      "text": "I was the Tajidar who led the Track:"
+    },
+    {
+      "id": "s33-17",
+      "sceneId": "s33",
+      "text": "I was the little Briar that pull'd you back:"
+    },
+    {
+      "id": "s33-18",
+      "sceneId": "s33",
+      "text": "Sin and Contrition — Retribution owed,"
+    },
+    {
+      "id": "s33-19",
+      "sceneId": "s33",
+      "text": "And cancell'd — Pilgrim, Pilgrimage, and Road,"
+    },
+    {
+      "id": "s33-20",
+      "sceneId": "s33",
+      "text": "Was but Myself toward Myself: and Your"
+    },
+    {
+      "id": "s33-21",
+      "sceneId": "s33",
+      "text": "Arrival but Myself at my own Door:"
+    },
+    {
+      "id": "s33-22",
+      "sceneId": "s33",
+      "text": "Who in your Fraction of Myself behold"
+    },
+    {
+      "id": "s33-23",
+      "sceneId": "s33",
+      "text": "Myself within the Mirror Myself hold"
+    },
+    {
+      "id": "s33-24",
+      "sceneId": "s33",
+      "text": "To see Myself in, and each part of Me"
+    },
+    {
+      "id": "s33-25",
+      "sceneId": "s33",
+      "text": "35"
+    },
+    {
+      "id": "s33-26",
+      "sceneId": "s33",
+      "text": "That sees himself, though drown'd, shall ever see. Come you lost Atoms to your Centre draw, And be the Eternal Mirror that you saw: Rays that have wander'd into Darkness wide Return, and back into your Sun subside.' —"
+    },
+    {
+      "id": "s33-27",
+      "sceneId": "s33",
+      "text": "This was the Parliament of Birds: and this"
+    },
+    {
+      "id": "s33-28",
+      "sceneId": "s33",
+      "text": "The Story of the Host who went amiss,"
+    },
+    {
+      "id": "s33-29",
+      "sceneId": "s33",
+      "text": "And of the Few that better Upshot found;"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "Which being now recounted, Lo, the Ground"
+    },
+    {
+      "id": "s34-1",
+      "sceneId": "s34",
+      "text": "Of Speech fails underfoot: But this to tell —"
+    },
+    {
+      "id": "s34-2",
+      "sceneId": "s34",
+      "text": "Their Road is thine — Follow — and Fare thee well."
+    }
+  ]
+}
