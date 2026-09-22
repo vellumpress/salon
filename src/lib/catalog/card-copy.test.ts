@@ -1788,7 +1788,6 @@ const TIER_B_BATCH_1_2 = [
   "the-waste-land",
   "tortoises",
   "ulysses",
-  "white-buildings",
   "amores",
   "counter-attack-and-other-poems",
   "fifty-years-other-poems",
@@ -1810,7 +1809,7 @@ const TIER_B_BATCH_1_2 = [
 ] as const;
 
 test("Tier B batches 1–2 are local format-min binds, never Featured", () => {
-  assert.equal(TIER_B_BATCH_1_2.length, 43);
+  assert.equal(TIER_B_BATCH_1_2.length, 42);
   assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
     "the-house-of-mirth",
     "quicksand",

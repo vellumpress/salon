@@ -308,6 +308,20 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "tales-grotesque-and-curious",
     "a-book-barnes",
     "a-spring-time-case",
+    "jewish-children",
+    "essays-and-soliloquies",
+    "tragic-sense-of-life",
+    "white-buildings",
+    "three-plays",
+    "our-lady-of-the-pillar",
+    "the-sweet-miracle",
+    "red-oleanders",
+    "stories-from-tagore",
+    "the-fugitive",
+    "nationalism",
+    "the-cycle-of-spring",
+    "creative-unity",
+    "the-lonely-way",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -2016,4 +2030,156 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.ok(full.breaths.length >= 3, id);
     assert.ok((full.breaths[0]?.text ?? "").startsWith(want.opening), id);
   }
+});
+
+test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
+  const expect = {
+    "jewish-children": {
+      opening: "Busie is a name; it is the short for Esther-Liba: Libusa: Busie. She is a year older than I, perhaps two years. And both of us together are no more than twenty ",
+      breaths: 1432,
+      scenes: 19,
+      gutenberg: 27001,
+    },
+    "essays-and-soliloquies": {
+      opening: "No writer ever stood less in need of an introduction than Miguel de Unamuno, for probably none ever revealed himself so naturally and so nakedly in his writings",
+      breaths: 752,
+      scenes: 21,
+      gutenberg: 71260,
+    },
+    "tragic-sense-of-life": {
+      opening: "*Homo sum; nihil humani a me alienum puto*, said the Latin playwright. And I would rather say, *Nullum hominem a me alienum puto*: I am a man; no other man do I",
+      breaths: 1080,
+      scenes: 12,
+      gutenberg: 14636,
+    },
+    "white-buildings": {
+      opening: "As silent as a mirror is believed Realities plunge in silence by....",
+      breaths: 158,
+      scenes: 23,
+      gutenberg: 77837,
+    },
+    "three-plays": {
+      opening: "*N.B. The Comedy is without acts or scenes. The performance is interrupted once, without the curtain being lowered, when the manager and the chief characters wi",
+      breaths: 2733,
+      scenes: 9,
+      gutenberg: 42148,
+    },
+    "our-lady-of-the-pillar": {
+      opening: "In 1474, a year abounding in divine favours for all Christendom, when King Henry IV. reigned in Castile, there came to live in the city of Segovia, where he had",
+      breaths: 29,
+      scenes: 1,
+      gutenberg: 56670,
+    },
+    "the-sweet-miracle": {
+      opening: "luminous margins of the Lake of Tiberias; but the news of his miracles had already penetrated as far as Enganim, a rich city of strong battlements set among vin",
+      breaths: 16,
+      scenes: 1,
+      gutenberg: 74802,
+    },
+    "red-oleanders": {
+      opening: "*The Curtain rises on a window covered by a network of intricate pattern in front of the Palace.*",
+      breaths: 1729,
+      scenes: 50,
+      gutenberg: 77892,
+    },
+    "stories-from-tagore": {
+      opening: "My five years' old daughter Mini cannot live without chattering. I really believe that in all her life she has not wasted a minute in silence. Her mother is oft",
+      breaths: 1037,
+      scenes: 10,
+      gutenberg: 33525,
+    },
+    "the-fugitive": {
+      opening: "Darkly you sweep on, Eternal Fugitive, round whose bodiless rush stagnant space frets into eddying bubbles of light.",
+      breaths: 930,
+      scenes: 6,
+      gutenberg: 7971,
+    },
+    "nationalism": {
+      opening: "Man's history is being shaped according to the difficulties it encounters. These have offered us problems and claimed their solutions from us, the penalty of no",
+      breaths: 181,
+      scenes: 4,
+      gutenberg: 40766,
+    },
+    "the-cycle-of-spring": {
+      opening: "*The stage is on two levels: the higher, at the back, for the Song-preludes alone, concealed by a purple curtain; the lower only being discovered when the drop ",
+      breaths: 1070,
+      scenes: 5,
+      gutenberg: 24607,
+    },
+    "creative-unity": {
+      opening: "Civility is beauty of behaviour. It requires for its perfection patience, self-control, and an environment of leisure. For genuine courtesy is a creation, like ",
+      breaths: 428,
+      scenes: 10,
+      gutenberg: 23136,
+    },
+    "the-lonely-way": {
+      opening: "*The little garden attached to Professor Wegrat's house. It is almost surrounded by buildings, so that no outlook of any kind is to be had. At the right in the ",
+      breaths: 3085,
+      scenes: 9,
+      gutenberg: 29745,
+    },
+  } as const;
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  assert.ok(sleep);
+  assert.ok(forYou);
+  assert.equal(Object.keys(expect).length, 14);
+  assert.deepEqual(forYou.workIds.slice(0, 3), [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  let prev = next.indexOf("a-spring-time-case");
+  let sleepPrev = sleep.workIds.indexOf("a-spring-time-case");
+  assert.ok(prev > next.indexOf("all-quiet-on-the-western-front"));
+  assert.ok(sleepPrev > sleep.workIds.indexOf("all-quiet-on-the-western-front"));
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.opening, want.opening, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal(curatorialTrack(id), "next", id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal(forYou.workIds.includes(id), false, id);
+    const at = next.indexOf(id);
+    assert.ok(at > next.indexOf("all-quiet-on-the-western-front"), `${id} follows All Quiet on Next`);
+    assert.ok(at > prev, `${id} follows BATCH-13 on Next`);
+    prev = at;
+    const sleepAt = sleep.workIds.indexOf(id);
+    assert.ok(sleepAt > sleep.workIds.indexOf("all-quiet-on-the-western-front"), `${id} follows All Quiet before sleep`);
+    assert.ok(sleepAt > sleepPrev, `${id} follows BATCH-13 before sleep`);
+    sleepPrev = sleepAt;
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: unknown[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.ok(full.breaths.length >= 3, id);
+    assert.ok((full.breaths[0]?.text ?? "").startsWith(want.opening), id);
+  }
+  const bertha = SHELF.find((item) => item.id === "bertha-garlan");
+  assert.ok(bertha);
+  assert.equal(bertha.local, true);
+  assert.equal(bertha.breaths, 1269);
+  assert.equal(bertha.gutenberg, 9955);
+  assert.equal(bertha.opening, "She was walking slowly down the hill; not by the broad high road which wound its way towards the town, but by the narrow footpath between the trellises of the v");
+  assert.equal(curatorialTrack("bertha-garlan"), "next");
+  assert.equal(FEATURED_CAROUSEL_IDS.includes("bertha-garlan"), false);
+  assert.equal(forYou.workIds.includes("bertha-garlan"), false);
+  assert.ok(sleep.workIds.includes("bertha-garlan"));
+  const berthaFull = JSON.parse(readFileSync(new URL("./texts/bertha-garlan.json", import.meta.url), "utf8")) as {
+    scenes: { title: string }[];
+    breaths: { text: string }[];
+  };
+  assert.equal(berthaFull.scenes.length, 11);
+  assert.equal(berthaFull.breaths.length, 1269);
+  assert.equal(berthaFull.scenes[0]?.title, "Chapter I");
+  assert.ok((berthaFull.breaths[0]?.text ?? "").startsWith(bertha.opening ?? ""));
 });
