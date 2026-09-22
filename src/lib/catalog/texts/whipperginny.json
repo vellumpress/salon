@@ -1,0 +1,1629 @@
+{
+  "id": "whipperginny",
+  "title": "Whipperginny",
+  "author": "Robert Graves",
+  "year": "1923",
+  "note": "Project Gutenberg 58642",
+  "minutes": 114,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Whipperginny",
+      "place": "Whipperginny",
+      "reentry": "To cards we have recourse When Time with cruelty runs, To courtly Bridge for stress of love, To Nap for noise of guns.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "The Bedpost",
+      "place": "The Bedpost",
+      "reentry": "Sleepy Betsy from her pillow Sees the post and ball Of her sister’s wooden bedstead Shadowed on the wall.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "A Lover since Childhood",
+      "place": "A Lover since Childhood",
+      "reentry": "Tangled in thought am I, Stumble in speech do I? Do I blunder and blush for the reason why? Wander aloof do I, Lean over gates and sigh, Making friends with the bee and the butterfly?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Song of Contrariety",
+      "place": "Song of Contrariety",
+      "reentry": "Far away is close at hand, Close joined is far away, Love might come at your command Yet will not stay.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "The Ridge-Top",
+      "place": "The Ridge-Top",
+      "reentry": "Below the ridge a raven flew And we heard the lost curlew Mourning out of sight below; Mountain tops were touched with snow; Even the long dividing plain Showed no wealth of sheep or grain, But fields of boulders lay like corn And raven’s c",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Song in Winter",
+      "place": "Song in Winter",
+      "reentry": "The broken spray left hanging Can hold his dead leaf longer Into your glum November Than this live twig tossed shivering By your East Wind anger.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "Unicorn and the White Doe",
+      "place": "Unicorn and the White Doe",
+      "reentry": "“Alone Through forests evergreen, By legend known, By no eye seen, Unmated, Unbaited, Untrembling between The shifting shadows, The sudden echoes, Deathless I go Unheard, unseen,” Says the White Doe.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "Sullen Moods",
+      "place": "Sullen Moods",
+      "reentry": "Love, do not count your labour lost Though I turn sullen, grim, retired Even at your side; my thought is crossed With fancies by old longings fired.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "A False Report",
+      "place": "A False Report",
+      "reentry": "Are they blind, the lords of Gaza, That each his fellow urges “Samson the proud is pillow-smothered,” They raise mock dirges?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "Children of Darkness",
+      "place": "Children of Darkness",
+      "reentry": "(“In their generation wiser than the children of Light.”)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "Richard Roe and John Doe",
+      "place": "Richard Roe and John Doe",
+      "reentry": "Richard Roe wished himself *Solomon* Made cuckold, you should know, by one John Doe; *Solomon’s* neck was firm enough to bear Some score of antlers more than Roe could wear.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "The Dialecticians",
+      "place": "The Dialecticians",
+      "reentry": "Thought has a bias, Direction a bend, Space its inhibitions, Time a dead end.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "The Lands of Whipperginny",
+      "place": "The Lands of Whipperginny",
+      "reentry": "(“Heaven or Hell or the Lands of Whipperginny.”--Nashe’s *Jack Wilton*.)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "The General Elliott",
+      "place": "The General Elliott",
+      "reentry": "He fell in victory’s fierce pursuit, Holed through and through with shot, A sabre sweep had hacked him deep ’Twixt neck and shoulder-knot....",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "A Fight to the Death",
+      "place": "A Fight to the Death",
+      "reentry": "Two blind old men in a blind corridor Fought to the death, by sense of sound or touch. Doom flailed unseen, an iron hook-hand tore Flesh from the enemy’s ribs who swung the crutch. One gasped, “She looked on me and smiled, I say,” So life w",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Old Wives’ Tales",
+      "place": "Old Wives’ Tales",
+      "reentry": "Were the tales they told absurd, Random tags for a child’s ear? Soon I mocked at all I heard, Though with cause indeed for fear.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "Christmas Eve",
+      "place": "Christmas Eve",
+      "reentry": "On Christmas Eve the brute Creation Lift up their heads and speak with human voices; The Ox roars out his song of jubilation And the Ass rejoices.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "The Snake and the Bull",
+      "place": "The Snake and the Bull",
+      "reentry": "Snake Bull, my namesake, man of wrath, By no expense of knives or cloth, Only by work of muttered charms Could draw all woman to his arms; None whom he summoned might resist Nor none recall whom once he kissed And loosed them from his kiss,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "The Red Ribbon Dream",
+      "place": "The Red Ribbon Dream",
+      "reentry": "As I stood by the stair-head in the upper hall The rooms to left and right were locked as before. It was senseless to hammer at an unreal door Painted on the plaster of a ten-foot wall.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "In Procession",
+      "place": "In Procession",
+      "reentry": "Donne (for example’s sake), Keats, Marlowe, Spenser, Blake, Shelley and Milton, Shakespeare and Chaucer, Skelton-- We love them as we know them, But who could dare outgo them At their several arts, At their particular parts Of wisdom, power",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "Henry and Mary",
+      "place": "Henry and Mary",
+      "reentry": "Henry was a worthy king, Mary was his queen, He gave to her a snowdrop, Upon a stalk of green.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "An English Wood",
+      "place": "An English Wood",
+      "reentry": "This valley wood is hedged With the set shape of things. Here sorrows come not edged, Here are no harpies fledged, No roc has clapped his wings, No gryphons wave their stings; Here, poised in quietude Calm elementals brood On the set shape ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "Mirror, Mirror!",
+      "place": "Mirror, Mirror!",
+      "reentry": "Mirror, Mirror, tell me, Am I pretty or plain? Or am I downright ugly And ugly to remain?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "What did I dream?",
+      "place": "What did I dream?",
+      "reentry": "What did I dream? I do not know. The fragments fly like chaff. Yet, strange, my mind was tickled so I cannot help but laugh.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Interlude: On Preserving a Poetical Formula",
+      "place": "Interlude: On Preserving a Poetical Formula",
+      "reentry": "“There’s less and less cohesion In each collection Of my published poetries?” You are taking me to task? And “What were my last Royalties? Reckoned in pounds, were they, or shillings, Or even perhaps in pence?” No, do not ask! I’m lost, in ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "A History of Peace",
+      "place": "A History of Peace",
+      "reentry": "(Solitudinem faciunt, pacem appellant)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "The Rock Below",
+      "place": "The Rock Below",
+      "reentry": "Comes a muttering from the earth Where speedwell grows and daisies grow, “Pluck these weeds up, root and all, Search what hides below.”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "An Idyll of Old Age",
+      "place": "An Idyll of Old Age",
+      "reentry": "Two gods once visited a hermit couple, Philemon and his Baucis, old books tell; They sampled elder-wine and called it nectar, Though nectar is the tastier drink by far. They made ambrosia of pot-herb and lentil, They ate pease-porridge even",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "The Lord Chamberlain tells of a Famous Meeting",
+      "place": "The Lord Chamberlain tells of a Famous Meeting",
+      "reentry": "Unknown to each other in a hostile camp, Spies of two empire nations unallied, These heroes met, princes of East and West, Over a ragged pack of cards, by chance. Never believe what credulous annalists Record you in good faith of that encou",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "The Sewing Basket",
+      "place": "The Sewing Basket",
+      "reentry": "(Accompanying a wedding present from Jenny Nicholson to Winifred Roberts)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "Against Clock and Compasses",
+      "place": "Against Clock and Compasses",
+      "reentry": "“*Beauty dwindles into shadow, Beauty dies, preferred by Fate, Past the rescue of bold thought. Sentries drowsed*,” they say, “*at Beauty’s gate*.”",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "The Avengers",
+      "place": "The Avengers",
+      "reentry": "Who grafted quince on Western may, Sharon’s mild rose on Northern briar? In loathing since that Gospel day The two saps flame, the tree’s on fire.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "On the Poet’s Birth",
+      "place": "On the Poet’s Birth",
+      "reentry": "A page, a huntsman, and a priest of God, Her lovers, met in jealous contrariety, Equally claiming the sole parenthood Of him the perfect crown of their variety. Then, whom to admit, herself she could not tell; That always was her fate, she ",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "The Technique of Perfection",
+      "place": "The Technique of Perfection",
+      "reentry": "Said hermit monk to hermit monk, “Friend, in this island anchorage Our life has tranquilly been sunk From pious youth to pious age,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "The Sibyl",
+      "place": "The Sibyl",
+      "reentry": "Her hand falls helpless: thought amazements fly Far overhead, they leave no record mark-- Wild swans urged whistling across dazzled sky, Or Gabriel hounds in chorus through the dark.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "A Crusader",
+      "place": "A Crusader",
+      "reentry": "Death, kindly eager to pretend Himself my servant in the land of spears, Humble allegiance at the end Broke where the homeward track your castle nears, Let his white steed before my red steed press And rapt you from me into quietness.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "A New Portrait of Judith of Bethulia",
+      "place": "A New Portrait of Judith of Bethulia",
+      "reentry": "She trod the grasses grey with dew, She hugged the unlikely head; Avenging where the warrior Jew Incontinent had fled.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "A Reversal",
+      "place": "A Reversal",
+      "reentry": "The old man in his fast car Leaves Achilles lagging, The old man with his long gun Outshoots Ulysses’ bow, Nestor in his botched old age Rivals Ajax bragging, To Nestor’s honeyed courtship Could Helen say “No”?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "The Martyred Decadents: a Sympathetic Satire",
+      "place": "The Martyred Decadents: a Sympathetic Satire",
+      "reentry": "We strain our strings thus tight, Our voices pitch thus high, A song to indite That nevermore shall die.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "On Christopher Marlowe",
+      "place": "On Christopher Marlowe",
+      "reentry": "Here ranted Isaac’s elder son, The proud shag-breasted godless one, From whom observant Smooth-Cheek stole Birthright, blessing, hunter’s soul.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "A Village Conflict",
+      "place": "A Village Conflict",
+      "reentry": "The cottage damson laden as could be Scowls at the Manor House magnolia tree That year by year within its thoughtless powers Yields flowers and leaves and flowers and leaves and flowers, While the Magnolia shudders as in fear, “*Figurez-vou",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "Dedicatory",
+      "place": "Dedicatory",
+      "reentry": "Dolon, analyst of souls, To the Graces hangs up here His shrimp-net rotting into holes And oozy from the infernal mere; He wreathes his gift around with cress, Lush harvest of the public cess.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "Motto to a Book of Emblems",
+      "place": "Motto to a Book of Emblems",
+      "reentry": "Though you read these, but understand not, curse not! Or though you read and understand, yet praise not! What poet weaves a better knot or worse knot Untangling which, your own lives you unbrace not?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "The Bowl and Rim",
+      "place": "The Bowl and Rim",
+      "reentry": "The bearded rabbi, the meek friar, Linked by their ankles in one cell, Through joint distress of dungeon mire Learned each to love his neighbour well.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "A Forced Music",
+      "place": "A Forced Music",
+      "reentry": "Of Love he sang, full-hearted one. But when the song was done The King demanded more, Ay, and commanded more. The boy found nothing for encore, Words, melodies, none: Ashamed the song’s glad rise and plaintive fall Had so charmed King and Q",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "The Turn of a Page",
+      "place": "The Turn of a Page",
+      "reentry": "*He suddenly*, the page read as it turned, *Died*. The indignant eye discerned No sense. “Good page, turn back,” it cried (Happily evermore was cheated). *After these things he suddenly died*, The truthful page repeated.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "The Manifestation in the Temple",
+      "place": "The Manifestation in the Temple",
+      "reentry": "On the High Feast Day in that reverent space Between the Sacrifice and the word of Grace, I, come to town with a merry-making throng To pay my tithes and join in the season’s song, Closing my eyes, there prayed--and was hurried far Beyond w",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "To Any Saint",
+      "place": "To Any Saint",
+      "reentry": "You turn the unsmitten other cheek, In silence welcoming God’s grace, Disdaining, though they scourge, to speak, Smiling forgiveness face to face.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "A Dewdrop",
+      "place": "A Dewdrop",
+      "reentry": "The dewdrop carries in its eye Snowdon and Hebog, sea and sky, Twelve lakes at least, woods, rivers, moors, And half a county’s out-of-doors: Trembling beneath a wind-flower’s shield In this remote and rocky field.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "A Valentine",
+      "place": "A Valentine",
+      "reentry": "The hunter to the husbandman Pays tribute since our love began, And to love-loyalty dedicates The phantom kills he meditates. Let me embrace, embracing you, Beauty of other shape and hue, Odd glinting graces of which none Shone more than ca",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "To cards we have recourse When Time with cruelty runs, To courtly Bridge for stress of love, To Nap for noise of guns."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "On fairy earth we tread, No present problems vex Where man’s four humours fade to suits, With red and black for sex."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Where phantom gains accrue By tricks instead of cash, Where pasteboard federacies of Powers In battles-royal clash."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Then read the antique word That hangs above this page As type of mirth-abstracted joy, Calm terror, noiseless rage,"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "A realm of ideal thought, Obscured by veils of Time, Cipher remote enough to stand As namesake for my rhyme,"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "A game to play apart When all but crushed with care; Let right and left, your jealous hands, The lists of love prepare."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Sleepy Betsy from her pillow Sees the post and ball Of her sister’s wooden bedstead Shadowed on the wall."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Now this grave young warrior standing With uncovered head Tells her stories of old battle, As she lies in bed."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "How the Emperor and the Farmer, Fighting knee to knee, Broke their swords but whirled their scabbards Till they gained the sea."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "How the ruler of that shore Foully broke his oath, Gave them beds in his sea cavern, Then stabbed them both."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "How the daughters of the Emperor, Diving boldly through, Caught and killed their father’s murderer, Old Cro-bar-cru."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "How the Farmer’s sturdy sons Fought the giant Gog, Threw him into Stony Cataract In the land of Og."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Will and Abel were their names, Though they went by others; He could tell ten thousand stories Of these lusty brothers."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "How the Emperor’s elder daughter Fell in love with Will, And went with him to the Court of Venus Over Hoo Hill;"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "How Gog’s wife encountered Abel Whom she hated most, Stole away his arms and helmet, Turned him to a post."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "As a post he shall be rooted For yet many years, Until a maiden shall release him With a fall of tears."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "But Betsy likes the bloodier stories, Clang and clash of fight, And Abel wanes with the spent candle, “Sweetheart, good-night!”"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Tangled in thought am I, Stumble in speech do I? Do I blunder and blush for the reason why? Wander aloof do I, Lean over gates and sigh, Making friends with the bee and the butterfly?"
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "If thus and thus I do, Dazed by the thought of you, Walking my sorrowful way in the early dew, My heart cut through and through In this despair for you, Starved for a word or a look will my hope renew;"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "Give then a thought for me Walking so miserably, Wanting relief in the friendship of flower or tree; Do but remember, we Once could in love agree, Swallow your pride, let us be as we used to be."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Far away is close at hand, Close joined is far away, Love might come at your command Yet will not stay."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "At summons of your dream-despair She could not disobey, But slid close down beside you there And complaisant lay."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Yet now her flesh and blood consent In waking hours of day, Joy and passion both are spent, Fading clean away."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Is the presence empty air, Is the spectre clay, That Love, lent substance by despair, Wanes, and leaves you lonely there On the bridal day?"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Below the ridge a raven flew And we heard the lost curlew Mourning out of sight below; Mountain tops were touched with snow; Even the long dividing plain Showed no wealth of sheep or grain, But fields of boulders lay like corn And raven’s croak was shepherd’s horn To slow cloud shadow strayed across A pasture of thin heath and moss. The North Wind rose; I saw him press With lusty force against your dress, Moulding your body’s inward grace, And streaming off from your set face; So now no longer flesh and blood, But poised in marble thought you stood, O wingless Victory, loved of men, Who could withstand your triumph then?"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "The broken spray left hanging Can hold his dead leaf longer Into your glum November Than this live twig tossed shivering By your East Wind anger."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "Unrepentant, hoping Spring, Flowery hoods of glory hoping, Carelessly I sing, With envy none for the broken spray When the Spring comes, fallen away."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "“Alone Through forests evergreen, By legend known, By no eye seen, Unmated, Unbaited, Untrembling between The shifting shadows, The sudden echoes, Deathless I go Unheard, unseen,” Says the White Doe."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "Unicorn with bursting heart Breath of love hath drawn On his desolate crags apart At rumour of dawn;"
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Has volleyed forth his pride Twenty thousand years mute, Tossed his horn from side to side, Lunged with his foot."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "“Like a storm of sand I run Breaking the desert’s boundaries, I go in hiding from the sun In thick shade of trees."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "Straight was the track I took Across the plains, but here with briar And mire the tangled alleys crook, Baulking desire."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "And there, what glinted white? (A bough still shakes.) What was it darted from my sight Through the forest brakes?"
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "Where are you fled from me? I pursue, you fade; I run, you hide from me In the dark glade."
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "Towering straight the trees grow, The grass grows thick. Where you are I do not know, You fly so quick.”"
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "“Seek me not here Lodged among mortal deer,” Says the White Doe; “Keeping one place Held by the ties of Space,” Says the White Doe. “I Equally In air Above your bare Hill crest, your basalt lair, Mirage-reflected drink At the clear pool’s brink; With tigers at play In the glare of day Blithely I stray; Under shadow of myrtle With Phœnix and his Turtle For all time true; With Gryphons at grass Under the Upas, Sipping warm dew That falls hourly new; I, unattainable Complete, incomprehensible, No mate for you. In sun’s beam Or star-gleam, No mate for you, No mate for you,” Says the White Doe."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Love, do not count your labour lost Though I turn sullen, grim, retired Even at your side; my thought is crossed With fancies by old longings fired."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "And when I answer you, some days Vaguely and wildly, do not fear That my love walks forbidden ways, Breaking the ties that hold it here."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "If I speak gruffly, this mood is Mere indignation at my own Shortcomings, plagues, uncertainties; I forget the gentler tone."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "You, now that you have come to be My one beginning, prime and end, I count at last as wholly me, Lover no longer nor yet friend."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "Friendship is flattery, though close hid; Must I then flatter my own mind? And must (which laws of shame forbid) Blind love of you make self-love blind?"
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Do not repay me my own coin, The sharp rebuke, the frown, the groan; Remind me, rather, to disjoin Your emanation from my own."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Help me to see you as before When overwhelmed and dead, almost, I stumbled on that secret door Which saves the live man from the ghost."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "Be once again the distant light, Promise of glory, not yet known In full perfection--wasted quite When on my imperfection thrown."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Are they blind, the lords of Gaza, That each his fellow urges “Samson the proud is pillow-smothered,” They raise mock dirges?"
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "Philistines and dullards, Turn, look with amaze At my foxes running in your cornfields With their tails ablaze,"
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "At bloody jawbone, at bees flitting From the stark lion’s hide: At these, the gates of well-walled Gaza, Clanking to my stride."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "(“In their generation wiser than the children of Light.”)"
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "We spurred our parents to the kiss, Though doubtfully they shrank from this-- Day had no courage to review What lusty dark alone might do-- Then were we joined from their caress In heat of midnight, one from two."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "This night-seed knew no discontent, In certitude his changings went; Though there were veils about his face, With forethought, even in that pent place, Down towards the light his way he bent To kingdoms of more ample space."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "Was Day prime error, that regret For darkness roars unstifled yet? That in this freedom, by faith won, Only acts of doubt are done? That unveiled eyes with tears are wet, They loathe to gaze upon the sun?"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "Richard Roe wished himself *Solomon* Made cuckold, you should know, by one John Doe; *Solomon’s* neck was firm enough to bear Some score of antlers more than Roe could wear."
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "Richard Roe wished himself *Alexander*, Being robbed of house and land by the same hand; Ten thousand acres or a principal town Would have cost *Alexander* scarce a frown."
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "Richard Roe wished himself *Job* the prophet, Sunk past reclaim in stinking rags and shame; *Job’s* plight was utterly bad, his own even worse, He found no God to call on or to curse."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "He wished himself *Job*, *Solomon*, *Alexander*, For cunning, patience, power to overthrow His tyrant, but with heart gone so far rotten That most of all he wished himself John Doe."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Thought has a bias, Direction a bend, Space its inhibitions, Time a dead end."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "Is whiteness white? O then, call it black: Farthest from the truth Is yet half-way back."
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "Effect ordains Cause, Head swallowing its tail; Does whale engulf sprat, Or sprat assume whale?"
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "Contentions weary, It giddies all to think; Then kiss, girl, kiss! Or drink, fellow, drink!"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "(“Heaven or Hell or the Lands of Whipperginny.”--Nashe’s *Jack Wilton*.)"
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "Come closer yet, sweet honeysuckle, my coney, O my Jinny, With a low sun gilding the bloom of the wood. Be this Heaven, be it Hell, or the Lands of Whipperginny, It lies in a fairy lustre, it savours most good."
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "Then stern proud psalms from the chapel on the moors Waver in the night wind, their firm rhythm broken, Lugubriously twisted to a howling of whores Or lent an airy glory too strange to be spoken."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "He fell in victory’s fierce pursuit, Holed through and through with shot, A sabre sweep had hacked him deep ’Twixt neck and shoulder-knot...."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "The potman cannot well recall, The ostler never knew, Whether his day was Malplaquet, The Boyne, or Waterloo."
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "But there he hangs for tavern sign, With foolish bold regard For cock and hen and loitering men And wagons down the yard."
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "Raised high above the hayseed world He smokes his painted pipe, And now surveys the orchard ways, The damsons clustering ripe."
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "He sees the churchyard slabs beyond, Where country neighbours lie, Their brief renown set lowly down; *His* name assaults the sky."
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "He grips the tankard of brown ale That spills a generous foam: Oft-times he drinks, they say, and winks At drunk men lurching home."
+    },
+    {
+      "id": "s13-6",
+      "sceneId": "s13",
+      "text": "No upstart hero may usurp That honoured swinging seat; His seasons pass with pipe and glass Until the tale’s complete."
+    },
+    {
+      "id": "s13-7",
+      "sceneId": "s13",
+      "text": "And paint shall keep his buttons bright Though all the world’s forgot Whether he died for England’s pride By battle, or by pot."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "Two blind old men in a blind corridor Fought to the death, by sense of sound or touch. Doom flailed unseen, an iron hook-hand tore Flesh from the enemy’s ribs who swung the crutch. One gasped, “She looked on me and smiled, I say,” So life was battered out, for yea or nay."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "Were the tales they told absurd, Random tags for a child’s ear? Soon I mocked at all I heard, Though with cause indeed for fear."
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "Of the mermaids’ doleful game In deep water I heard tell, Of lofty dragons blowing flame, Of the hornèd fiend of Hell."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "Now I have met the mermaid kin And find them bound by natural laws, They have neither tail nor fin, But are the deadlier for that cause."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "Dragons have no darting tongues, Teeth saw-edged nor rattling scales, No fire issues from their lungs, Poison has not slimed their tails."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "But they are creatures of dark air, Unsubstantial tossing forms, Thunderclaps of man’s despair In mid whirl of mental storms."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "And there’s a true and only fiend Worse than prophets prophesy, Whose full powers to hurt are screened Lest the race of man should die."
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "Ever in vain may courage plot The dragon’s death with shield and sword, Or love abjure the mermaid grot, Or faith be fixed in one blest word."
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "Mermaids will not be denied Of our last enduring shame, The dragon flaunts his unpierced hide, The fiend makes laughter with God’s Name."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "On Christmas Eve the brute Creation Lift up their heads and speak with human voices; The Ox roars out his song of jubilation And the Ass rejoices."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "They dance for mirth in simple credence That man from devildom this day was saved, That of his froward spirit he has found riddance; They hymn the Son of David."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "Ox and Ass cloistered in stable, Break bounds to-night and see what shall astound you, A second Fall, a second death of Abel, Wars renewed around you."
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "Cabals of great men against small men, Mobs, murders, informations, the packed jury, While Ignorance, the lubber prince of all men, Glowers with old-time fury."
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "Excellent beasts, resign your speaking, Tempted in man’s own choleric tongue to name him. Hoof-and-horn vengeance have no thought of wreaking, Let your dumb grief shame him."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "Snake Bull, my namesake, man of wrath, By no expense of knives or cloth, Only by work of muttered charms Could draw all woman to his arms; None whom he summoned might resist Nor none recall whom once he kissed And loosed them from his kiss, by whom This mother-shame had come."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "The power of his compelling flame Was bound in virtue of our name, But when in secret he taught me Like him a thief of love to be, For half his secret I had found And half explored the wizard ground Of words, and when giving consent Out at his heels I went."
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "Then Fessé, jungle-god whose shape Is one part man and three parts ape, Avenger of misuse by man Of lust that by his art began, And master of all mimicries Made tittering laughter in the trees. With girlish whispers, sighs and giggling Set the Bull prancing, the Snake wriggling; Where leaves were broadest and light dim, Fessé ambushed him."
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "Up through the air I saw him swung To bridal bowers with red flowers hung; He choked for mercy like a maid By his own violent whim betrayed; Blood broke in fountains from his neck, I heard his hugged ribs creak and break, But what the tree-top rites might be How should I stay to see?"
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "In terror of the Ape God’s power I changed my person in that hour, Cast off the livery of my clan, Over unlawful hills I ran, I soiled me with forbidden earth. In nakedness of second birth I scorched away the Snake’s red eyes Tattoed for name about my thighs, And slew the Sacred Bull oppressed With passion on my breast."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "The girls of my new tribe are cold, Amazon, scarred, not soft to hold. They seek not men, nor are they sought, Whose children are not theirs, but bought From outlaw tribes who dwell in trees-- Tamed apes suckle these."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "The young men of the tribe are such That knife or bow they dare not touch, But in close watching of the skies And reckoning counts they dim their eyes. Closed, each by each, in thoughtful bars They plot the circuits of the stars, And frozen music dulls their need Of drink and man-flesh greed."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "They hold that virtue from them slips When eye greets eye or lips touch lips; Down to the knee their broad beards fall And hardly are they men at all. Possessions they have none, nor schools For tribal duties, nor close rules, No gods, no rites, no totem beasts, No friendships, no love feasts."
+    },
+    {
+      "id": "s17-8",
+      "sceneId": "s17",
+      "text": "Now quit, as they, of gong-roused lust, The leap of breasts, the scattering dust, In hermit splendour at my glass I watch the skies’ procession pass, Tracing my figures on the floor Of planets’ paths and comets’ lore; In calm amaze I cloak my will, I gaze, I count, until"
+    },
+    {
+      "id": "s17-9",
+      "sceneId": "s17",
+      "text": "Harsh from his House the Bull roars out, Forked lightning leaps his points about, Tattoos his shape upon the sky: Night anger fills the Serpent’s eye With desolating fire for one Who thought the Serpent’s days were done, And girlish titterings from the trees Loosen my firm knees."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "As I stood by the stair-head in the upper hall The rooms to left and right were locked as before. It was senseless to hammer at an unreal door Painted on the plaster of a ten-foot wall."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "There was half-light here, piled darkness beyond Rising up sheer as the mountain of Time, The blank rock-face that no thought can climb, Girdled around with the Slough of Despond."
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "I stood quite dumb, sunk fast in the mire, Lonely as the first man, or the last man, Chilled to despair since evening began, Dazed for the memory of a lost desire."
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "But a voice said “Easily,” and a voice said “Come!” Easily I followed with no thought of doubt, Turned to the right hand, and the way stretched out; The ground held firmly; I was no more dumb."
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "For that was the place where I longed to be, And past all hope there the kind lamp shone, The carpet was holy that my feet were on, And logs on the fire lay hissing for me."
+    },
+    {
+      "id": "s18-5",
+      "sceneId": "s18",
+      "text": "The cushions were friendship and the chairs were love, Shaggy with love was the great wolf skin, The clock ticked “Easily” as I entered in, “Come,” called the bullfinch from his cage above."
+    },
+    {
+      "id": "s18-6",
+      "sceneId": "s18",
+      "text": "Love went before me; it was shining now From the eyes of a girl by the window wall, Whose beauty I knew to be fate and all By the thin red ribbon on her calm brow."
+    },
+    {
+      "id": "s18-7",
+      "sceneId": "s18",
+      "text": "Then I was a hero and a bold boy Kissing the hand I had never yet kissed; I felt red ribbon like a snake twist In my own thick hair, so I laughed for joy."
+    },
+    {
+      "id": "s18-8",
+      "sceneId": "s18",
+      "text": "I stand by the stair-head in the upper hall; The rooms to the left and right are locked as before. Once I found entrance, but now never more, And Time leans forward with his glassy wall."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "Donne (for example’s sake), Keats, Marlowe, Spenser, Blake, Shelley and Milton, Shakespeare and Chaucer, Skelton-- We love them as we know them, But who could dare outgo them At their several arts, At their particular parts Of wisdom, power and knowledge? In the Poets’ College 10 Are no degrees nor stations, Comparisons, rivals, Stern examinations, Class declarations, Senior survivals; No creeds, religions, nations Combatant together With mutual damnations. Or tell me whether Shelley’s hand could take 20 The laurel wreath from Blake? Could Shakespeare make the less Chaucer’s goodliness?"
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "The poets of old, Each with his pen of gold Gloriously writing, Found no need for fighting, In common being so rich; None need take the ditch, Unless this Chaucer beats 30 That Chaucer, or this Keats With other Keats is flyting: See Donne deny Donne’s feats, Shelley take Shelley down, Blake snatch at his own crown. Without comparison aiming high, Watching with no jealous eye A neighbour’s renown, Each in his time contended, But with a mood late ended, 40 Some manner now put by, Or force expended, Sinking a new well when the old ran dry."
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "So like my masters I Voice my ambition loud, In prospect proud, Treading the poet’s road, In retrospect most humble, For I stumble and tumble, I spill my load. 50"
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "But often, Half-way to sleep, On a mountain shagged and steep, The sudden moment on me comes With terrible roll of dream drums, Reverberations, cymbals, horns replying, When with standards flying, A cloud of horsemen behind, The coloured pomps unwind The Carnival wagons With their saints and their dragons 60 On the screen of my teeming mind, The Creation and Flood With our Saviour’s Blood And fat Silenus’ flagons, With every rare beast From the South and East, Both greatest and least, On and on, In endless variable procession. I stand at the top rungs 70 Of a ladder reared in the air, And I speak with strange tongues So the crowds murmur and stare, Then volleys again the blare Of horns, and summer flowers Fly scattering in showers, And the Sun rolls in the sky, While the drums thumping by Proclaim me.... Oh, then, when I wake Could I recovering take 80 And propose on this page The words of my rage And my blandishing speech Steadfast and sage, Could I stretch and reach The flowers and the ripe fruit Laid out at the ladder’s foot, Could I rip a silken shred From the banner tossed ahead, Could I call a double flam 90 From the drums, could the Goat Horned with gold, could the Ram With a flank like a barn-door, The dwarf, the blackamoor, Could *Jonah and the Whale* And the *Holy Grail* With the *Sacking of Rome* And *Lot at his home*, The Ape with his platter, Going clitter-clatter, 100 The Nymphs and the Satyr, And every other such matter Come before me here Standing and speaking clear With a “How do ye do?” And “Who are ye, who?” Could I show them so to you That you saw them with me, Oh then, then I could be The Prince of all Poetry 110 With never a peer, Seeing my way so clear To unveil mystery."
+    },
+    {
+      "id": "s19-4",
+      "sceneId": "s19",
+      "text": "Telling you of land and sea, Of Heaven blithe and free, How I know there to be Such and such Castles built in Spain, Telling also of Cockaigne, Of that glorious kingdom, Cand, Of the Delectable Land, 120 The land of Crooked Stiles, The Fortunate Isles, Of the more than three score miles That to Babylon lead, A pretty city indeed Built on a four-square plan, Of the land of the Gold Man Whose eager horses whinny In their cribs of gold, Of the lands of Whipperginny, 130 Of the land where none grow old."
+    },
+    {
+      "id": "s19-5",
+      "sceneId": "s19",
+      "text": "Especially I could tell Of the Town of Hell, A huddle of dirty woes And houses in endless rows Straggling across all space; Hell has no market-place, Nor point where four ways meet, Nor principal street, Nor barracks, nor Town Hall, 140 Nor shops at all, Nor rest for weary feet, Nor theatre, square, or park, Nor lights after dark, Nor churches nor inns, Nor convenience for sins, Hell nowhere begins, Hell nowhere ends, But over the world extends Rambling, dreary, limitless, hated well: 150 The suburbs of itself, I say, is Hell."
+    },
+    {
+      "id": "s19-6",
+      "sceneId": "s19",
+      "text": "But back to the sweets Of Spenser and Keats And the calm joy that greets The chosen of Apollo! Here let me mope, quirk, holloa With a gesture that meets The needs that I follow In my own fierce way. Let me be grave-gay 160 Or merry-sad, Who rhyming here have had Marvellous hope of achievement And deeds of ample scope, Then deceiving and bereavement Of this same hope."
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "Henry was a worthy king, Mary was his queen, He gave to her a snowdrop, Upon a stalk of green."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "Then all for his kindness And all for his care She gave him a new-laid egg In the garden there."
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "Love, can you sing? I cannot sing. Or story-tell? Not one I know. Then let us play at king and queen, As down the garden lawns we go."
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "This valley wood is hedged With the set shape of things. Here sorrows come not edged, Here are no harpies fledged, No roc has clapped his wings, No gryphons wave their stings; Here, poised in quietude Calm elementals brood On the set shape of things, They fend away alarms From this green wood. Here nothing is that harms, No bull with lungs of brass, No toothed or spiny grass, No tree whose clutching arms Drink blood when travellers pass, No mount of Glass. No bardic tongues unfold Satires or charms. Only the lawns are soft, The tree-stems, grave and old. Slow branches sway aloft, The evening air comes cold, The sunset scatters gold. Small grasses toss and bend, Small pathways idly tend Towards no certain end."
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "Mirror, Mirror, tell me, Am I pretty or plain? Or am I downright ugly And ugly to remain?"
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "Shall I marry a gentleman? Shall I marry a clown? Or shall I marry Old Knives-and-Scissors Shouting through the town?"
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "What did I dream? I do not know. The fragments fly like chaff. Yet, strange, my mind was tickled so I cannot help but laugh."
+    },
+    {
+      "id": "s23-1",
+      "sceneId": "s23",
+      "text": "Pull the curtains close again, Tuck my blanket in; Must a glorious humour wane Because birds begin"
+    },
+    {
+      "id": "s23-2",
+      "sceneId": "s23",
+      "text": "Discoursing in a restless tone, Rousing me from sleep-- The finest entertainment known, And given rag-cheap?"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "“There’s less and less cohesion In each collection Of my published poetries?” You are taking me to task? And “What were my last Royalties? Reckoned in pounds, were they, or shillings, Or even perhaps in pence?” No, do not ask! I’m lost, in buyings and sellings. But please permit only once more for luck Irreconcilabilities in my book...."
+    },
+    {
+      "id": "s24-1",
+      "sceneId": "s24",
+      "text": "For these are all the same stuff really, The obverse and reverse, if you look closely, Of busy Imagination’s new-coined money; And if you watch the blind Phototropisms of my fluttering mind, Whether, growing strong, I wrestle Jacob-wise With fiendish darkness blinking threatfully Its bale-fire eyes, Or whether childishly"
+    },
+    {
+      "id": "s24-2",
+      "sceneId": "s24",
+      "text": "I dart to Mother-skirts of love and peace To play with toys until those horrors leave me-- Yet note, whichever way I find release, By fight or flight By being harsh or tame, The SPIRIT’S the same, the Pen-and-Ink’s the same."
+    },
+    {
+      "id": "s24-3",
+      "sceneId": "s24",
+      "text": "(II)"
+    },
+    {
+      "id": "s24-4",
+      "sceneId": "s24",
+      "text": "*Epitaph on an Unfortunate Artist*"
+    },
+    {
+      "id": "s24-5",
+      "sceneId": "s24",
+      "text": "He found a formula for drawing comic rabbits: This formula for drawing comic rabbits paid, So in the end he could not change the tragic habits This formula for drawing comic rabbits made."
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "(Solitudinem faciunt, pacem appellant)"
+    },
+    {
+      "id": "s25-1",
+      "sceneId": "s25",
+      "text": "Here rest in peace the bones of Henry Reece, Dead through his bitter championship of Peace Against all eagle-nosed and cynic lords Who keep the *Pax Romana* with their swords."
+    },
+    {
+      "id": "s25-2",
+      "sceneId": "s25",
+      "text": "Henry was only son of Thomas Reece, Banker and sometime Justice of the Peace, And of Jane Reece whom Thomas kept in dread By *Pax Romana* of his board and bed."
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "Comes a muttering from the earth Where speedwell grows and daisies grow, “Pluck these weeds up, root and all, Search what hides below.”"
+    },
+    {
+      "id": "s26-1",
+      "sceneId": "s26",
+      "text": "Root and all I pluck them out; There, close under, I have found Stumps of thorn with ancient crooks Grappled in the ground."
+    },
+    {
+      "id": "s26-2",
+      "sceneId": "s26",
+      "text": "I wrench the thorn-stocks from their hold To set a rose-bush in that place; Love has pleasure in my roses For a summer space."
+    },
+    {
+      "id": "s26-3",
+      "sceneId": "s26",
+      "text": "Yet the bush cries out in grief: “Our lowest rootlets turn on rock, We live in terror of the drought Withering crown and stock.”"
+    },
+    {
+      "id": "s26-4",
+      "sceneId": "s26",
+      "text": "I grow angry with my creature, Tear it out and see it die; Far beneath I strike the stone, Jarring hatefully."
+    },
+    {
+      "id": "s26-5",
+      "sceneId": "s26",
+      "text": "Impotently must I mourn Roses never to flower again? Are heart and back too slightly built For a heaving strain?"
+    },
+    {
+      "id": "s26-6",
+      "sceneId": "s26",
+      "text": "Heave shall break my proud back never, Strain shall never burst my heart: Steely fingers hook in the crack, Up the rock shall start."
+    },
+    {
+      "id": "s26-7",
+      "sceneId": "s26",
+      "text": "Now from the deep and frightful pit Shoots forth the spiring phœnix-tree Long despaired in this bleak land, Holds the air with boughs, with bland Fragrance welcome to the bee, With fruits of immortality."
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Two gods once visited a hermit couple, Philemon and his Baucis, old books tell; They sampled elder-wine and called it nectar, Though nectar is the tastier drink by far. They made ambrosia of pot-herb and lentil, They ate pease-porridge even, with a will. Why, and so forth.... But that night in the spare bedroom Where they lay shivering in the musty gloom, Hermes and Zeus overheard conversation, Behind the intervening wall, drag on In thoughtful snatches through the night. They idly Listened, and first they heard Philemon sigh:--"
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "*Phi.* “Since two souls meet and merge at time of marriage, Conforming to one stature and one age, An honest token each with each exchanging Of Only Love unbroken as a ring-- What signified my boyhood’s ideal friendship That stared its ecstasy at eye and lip, But dared not touch because love seemed too holy For flesh with flesh in real embrace to lie?”"
+    },
+    {
+      "id": "s27-2",
+      "sceneId": "s27",
+      "text": "*Bau.* Then Baucis sighed in answer to Philemon, “Many’s the young man that my eye rests on (Our younger guest to-night provides the instance) Whose body brings my heart hotter romance Than your dear face could ever spark within me; Often I wish my heart from yours set free.”"
+    },
+    {
+      "id": "s27-3",
+      "sceneId": "s27",
+      "text": "*Phi.* “In this wild medley round us of Bought Love, Free Love and Forced Love and pretentious No-Love, Let us walk upright, yet with care consider Whether, in living thus, we do not err. Why might we not approve adulterous licence Increasing pleasurable experience? What could the soul lose through the body’s rapture With a body not its mate, where thought is pure?”"
+    },
+    {
+      "id": "s27-4",
+      "sceneId": "s27",
+      "text": "*Bau.* “Are children bonds of love? But even children Grow up too soon as women and as men, And in the growing find their own love private, Meet parent-love with new suspicious hate. Our favourites run the surest to the Devil In spite of early cares and all good will.”"
+    },
+    {
+      "id": "s27-5",
+      "sceneId": "s27",
+      "text": "*Phi.* “Sweetheart, you know that you have my permission To go your own way and to take love on Wherever love may signal.”"
+    },
+    {
+      "id": "s27-6",
+      "sceneId": "s27",
+      "text": "She replying *Bau.* Said, “I allow you, dearest, the same thing.”"
+    },
+    {
+      "id": "s27-7",
+      "sceneId": "s27",
+      "text": "Zeus was struck dumb at this unholy compact, But Hermes knew the shadow from the fact And took an oath that for whole chests of money Neither would faithless to the other be, Would not and could not, being twined together In such close love that he for want of her Removed one night-time from his side, would perish, And she was magnet-drawn by his least wish."
+    },
+    {
+      "id": "s27-8",
+      "sceneId": "s27",
+      "text": "Eternal Gods deny the sense of humour, That well might prejudice their infallible power, So Hermes and King Zeus not once considered, In treating of this idyll overheard, That love rehearses after life’s defeat Remembered conflicts of an earlier heat, Baucis, kind soul, was palsied, withered and bent, Philemon, too, was ten years impotent."
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "Unknown to each other in a hostile camp, Spies of two empire nations unallied, These heroes met, princes of East and West, Over a ragged pack of cards, by chance. Never believe what credulous annalists Record you in good faith of that encounter. I was there myself, East’s man, and witnessed all. In the main camp of the Middle Kingdom’s army At a soldier’s mess, shortly before Retreat, East, a pretended trooper, stepping in 10 Glanced round the room, shortly discerning West, Who sat dejected at a corner table. East moved by curiosity or compassion Pulled out his cards, offering West the cut, And West, disguised as a travelling ballad-man, Took and cut; they played together then For half an hour or more; then went their ways."
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "Never believe such credulous annalists As tell you, West for sign of recognition, Greatness to greatness, wit to dexterous wit, 20 With sleight of magic most extraordinary Alters the Duty on his Ace of Spades, Making three-pence three-halfpence; East, it’s said, For a fantastic sly acknowledgment, While his grave eyes betoken no surprise, Makes magic too; presto, the Knave of Hearts Nims the Queen’s rose and cocks it in his cap Furtively, so that only West remarks it. But such was not the fact; contrariwise, When Proteus meets with Proteus, each annuls 30 The variability of the other’s mind. Single they stand, casting their mutable cloaks. So for this present chance, I take my oath That leaning across and watching the cards close I caught no hint of prestidigitation."
+    },
+    {
+      "id": "s28-2",
+      "sceneId": "s28",
+      "text": "Never believe approved biographers Who’ll show a sequence of the games then played, Explaining that the minds of these two princes Were of such subtlety and such nimbleness That Whipperginny on the fall of a card 40 Changed to Bézique or Cribbage or Piquet, Euchre or Écarté, then back once more, Each comprehending with no signal shown The opposing fancies of the other’s mind. It’s said, spectators of this play grew dazed, They turned away, thinking the gamesters drunk. But I, who sat there watching, keeping score, Say they observed the rules of but one game The whole bout, playing neither well nor ill But slowly, with their thoughts in other channels, 50 Serene and passionless like wooden men."
+    },
+    {
+      "id": "s28-3",
+      "sceneId": "s28",
+      "text": "Neither believe those elegant essayists Who reconstruct the princes’ conversation From grotesque fabrics of their own vain brains. I only know that East gave West a nod, Asking him careless questions about trade; West gave the latest rumours from the front, Raising of sieges, plots and pillages. He told a camp-fire yarn to amuse the soldiers Whereat they all laughed emptily (East laughed too). 60 He sang a few staves of the latest catch, And pulling out his roll of rhymes, unfurled it, Ballads and songs, measured by the yard-rule. But do not trust the elegant essayists Who’d have you swallow all they care to tell Of the riddling speech in painful *double entendre* That West and East juggled across the cards, So intricate, so exquisitely resolved In polished antithetical periods That by comparison, as you must believe, 70 Solomon himself faced with the Queen of Sheba And Bishop Such, preaching before the King, Joined in one person would have seemed mere trash. I give my testimony beyond refutal, Nailing the lie for all who ask the facts."
+    },
+    {
+      "id": "s28-4",
+      "sceneId": "s28",
+      "text": "Pay no heed to those vagabond dramatists Who, to present this meeting on the stage, Would make my Prince, stealthily drawing out A golden quill and stabbing his arm for blood, Scratch on a vellum slip some hasty sentence 80 And pass it under the table; which West signs With *his* blood, so the treaty’s made between them All unobserved and two far nations wedded While enemy soldiers loll, yawning, around. I was there myself, I say, seeing everything. Truly, this is what passed, that East regarding West with a steady look and knowing him well, For an instant let the heavy soldier-mask, His best protection, a dull cast of face, Light up with joy, and his eyes shoot out mirth. 90 West then knew East, checked, and misdealt the cards. Nothing at all was said, on went the game. But East bought from West’s bag of ballads, after, Two sombre histories, and some songs for dancing."
+    },
+    {
+      "id": "s28-5",
+      "sceneId": "s28",
+      "text": "Also distrust those allegorical Painters who treating of this famous scene Are used to splash the skies with lurching Cupids, Goddesses with loose hair, and broad-cheeked Zephyrs; They burnish up the soldiers’ breastplate steel Rusted with languor of their long campaign, 100 To twinkling high-lights of unmixed white paint, Giving them buskins and tall plumes to wear, While hard by, in a wanton imagery, Aquatic Triton thunders on his conch And Satyrs gape from behind neighbouring trees. I who was there, sweating in my shirt-sleeves, Felt no divinity brooding in that mess, For human splendour gave the gods rebuff."
+    },
+    {
+      "id": "s28-6",
+      "sceneId": "s28",
+      "text": "Do not believe them, seem they never so wise, Credibly posted with all new research, 110 Those elegant essayists, vagabond dramatists, Authentic and approved biographers, Solemn annalists, allegorical Painters, each one misleading or misled. One thing is true, that of all sights I have seen In any quarter of this world of men, By night, by day, in court, field, tavern, or barn, That was the noblest, East encountering West, Their silent understanding and restraint, Meeting and parting like the Kings they were 120 With plain indifference to all circumstance; Saying no good-bye, no handclasp and no tears, But letting speech between them fade away In casual murmurs and half compliments, East sauntering out for fresh intelligence, And West shuffling away, not looking back, Though each knew well that this chance meeting stood For turning movement of world history. And I? I trembled, knowing these things must be."
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "(Accompanying a wedding present from Jenny Nicholson to Winifred Roberts)"
+    },
+    {
+      "id": "s29-1",
+      "sceneId": "s29",
+      "text": "To Winifred The day she’s wed (Having no gold) I send instead This sewing basket, And lovingly Demand that she, If ever wanting help from me, Will surely ask it."
+    },
+    {
+      "id": "s29-2",
+      "sceneId": "s29",
+      "text": "Which being gravely said, Now to go straight ahead With a cutting of string, An unwrapping of paper, With a haberdasher’s flourish, The airs of a draper, To review And search this basket through."
+    },
+    {
+      "id": "s29-3",
+      "sceneId": "s29",
+      "text": "Here’s one place full Of coloured wool, And various yarn With which to darn; A sampler, too, I’ve worked for you, Lettered from A to Z, The text of which In small cross-stitch Is *Love to Winifred*."
+    },
+    {
+      "id": "s29-4",
+      "sceneId": "s29",
+      "text": "Here’s a rag-doll wherein To thrust the casual pin. His name is Benjamin For his ingenuous face; Be sure I’ve not forgotten Black thread or crochet cotton; While Brussels lace Has found a place Behind the needle-case. (But the case for the scissors? Empty, as you see; Love must never be sundered Between you and me.)"
+    },
+    {
+      "id": "s29-5",
+      "sceneId": "s29",
+      "text": "Winifred Roberts, Think of me, do, When the friends I am sending Are working for you. The song of the thimble Is, “Oh, forget her not.” Says the tape-measure, “Absent but never forgot.”"
+    },
+    {
+      "id": "s29-6",
+      "sceneId": "s29",
+      "text": "Benjamin’s song He sings all day long, Though his voice is not strong: He hoarsely holloas More or less as follows:--"
+    },
+    {
+      "id": "s29-7",
+      "sceneId": "s29",
+      "text": "*Button boxes Never have locks-es, For the keys would soon disappear. But here’s a linen button With a smut on, And a big bone button With a cut on, A pearly and a fancy Of small significancy, And the badges of a Fireman and a Fusilier.* Which song he’ll alternate With sounds like a Turkish hubble-bubble Smoked at a furious rate, The words are scarcely intelligible:--"
+    },
+    {
+      "id": "s29-8",
+      "sceneId": "s29",
+      "text": "(*Prestissimo*) *Needles and ribbons and packets of pins, Prints and chintz and odd bodikins, They’d never mind whether You laid ’em together Or one from the other in pockets and tins.*"
+    },
+    {
+      "id": "s29-9",
+      "sceneId": "s29",
+      "text": "*For packets of pins and ribbons and needles Or odd bodikins and chintz and prints, Being birds of a feather. Would huddle together Like minnows on billows or pennies in mints.*"
+    },
+    {
+      "id": "s29-10",
+      "sceneId": "s29",
+      "text": "He’ll learn to sing more prettily When you take him out to Italy On your honeymoon, (Oh come back soon!) To Florence or to Rome, The *prima donnas’* home, To Padua or to Genoa Where tenors all sing tra-la-la...."
+    },
+    {
+      "id": "s29-11",
+      "sceneId": "s29",
+      "text": "Good-bye, Winifred, Bless your heart, Ben. Come back happy And safe agen."
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "“*Beauty dwindles into shadow, Beauty dies, preferred by Fate, Past the rescue of bold thought. Sentries drowsed*,” they say, “*at Beauty’s gate*.”"
+    },
+    {
+      "id": "s30-1",
+      "sceneId": "s30",
+      "text": "“*Time duteous to his hour-glass, Time with unerring sickle, Garners to a land remote Where your vows of true love are proved fickle.*”"
+    },
+    {
+      "id": "s30-2",
+      "sceneId": "s30",
+      "text": "“*Love chill upon her forehead, Love fading from her cheek, Love dulled in either eye, With voice of love*,” they say, “*no more to speak*.”"
+    },
+    {
+      "id": "s30-3",
+      "sceneId": "s30",
+      "text": "I deny to Time his terror; Come-and-go prevails not here; Spring is constant, loveless winter Looms, but elsewhere, for he comes not near."
+    },
+    {
+      "id": "s30-4",
+      "sceneId": "s30",
+      "text": "I deny to Space the sorrow; No leagues measure love from me; Turning boldly from her arms, Into her arms I shall come certainly."
+    },
+    {
+      "id": "s30-5",
+      "sceneId": "s30",
+      "text": "Time and Space, folly’s wonder, Three-card shufflers, magic-men! True love is, that none shall say It ever was, or ever flowers again."
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "Who grafted quince on Western may, Sharon’s mild rose on Northern briar? In loathing since that Gospel day The two saps flame, the tree’s on fire."
+    },
+    {
+      "id": "s31-1",
+      "sceneId": "s31",
+      "text": "The briar-rose weeps for injured right, May sprouts up red to choke the quince. With angry throb of equal spite Our wood leaps maddened ever since."
+    },
+    {
+      "id": "s31-2",
+      "sceneId": "s31",
+      "text": "Then mistletoe, of gods not least, Kindler of warfare since the Flood, Against green things of South and East Voices the vengeance of our blood."
+    },
+    {
+      "id": "s31-3",
+      "sceneId": "s31",
+      "text": "Crusading ivy Southward breaks And sucks your lordly palms upon, Our island oak the water takes To outrage cedared Lebanon."
+    },
+    {
+      "id": "s31-4",
+      "sceneId": "s31",
+      "text": "Our slender ash-twigs feathered fly Against your vines; bold buttercup Pours down his legions; malt of rye Inflames and burns your lentils up...."
+    },
+    {
+      "id": "s31-5",
+      "sceneId": "s31",
+      "text": "For bloom of quince yet caps the may, The briar is held by Sharon’s rose, Monsters of thought through earth we stray, And how remission comes, God knows."
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "A page, a huntsman, and a priest of God, Her lovers, met in jealous contrariety, Equally claiming the sole parenthood Of him the perfect crown of their variety. Then, whom to admit, herself she could not tell; That always was her fate, she loved too well."
+    },
+    {
+      "id": "s32-1",
+      "sceneId": "s32",
+      "text": "“But, many-fathered little one,” she said, “Whether of high or low, of smooth or rough, Here is your mother whom you brought to bed. Acknowledge only me, be this enough, For such as worship after shall be told A white dove sired you or a rain of gold.”"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "Said hermit monk to hermit monk, “Friend, in this island anchorage Our life has tranquilly been sunk From pious youth to pious age,"
+    },
+    {
+      "id": "s33-1",
+      "sceneId": "s33",
+      "text": "“In such clear waves of quietness, Such peace from argument or brawl That one prime virtue I confess Has never touched our hearts at all."
+    },
+    {
+      "id": "s33-2",
+      "sceneId": "s33",
+      "text": "“Forgiveness, friend! who can forgive But after anger or dissent? This never-pardoning life we live May earn God’s blackest punishment.”"
+    },
+    {
+      "id": "s33-3",
+      "sceneId": "s33",
+      "text": "His friend, resolved to find a ground For rough dispute between the two That mutual pardons might abound, With cunning from his wallet drew"
+    },
+    {
+      "id": "s33-4",
+      "sceneId": "s33",
+      "text": "A curious pebble of the beach And scowled, “This treasure is my own:” He hoped for sharp unfriendly speech Or angry snatching at the stone."
+    },
+    {
+      "id": "s33-5",
+      "sceneId": "s33",
+      "text": "But honeyed words his friend outpours, “Keep it, dear heart, you surely know Even were it mine it still were yours, This trifle that delights you so.”"
+    },
+    {
+      "id": "s33-6",
+      "sceneId": "s33",
+      "text": "The owner, acting wrath, cries, “Brother, What’s this? Are my deserts so small You’d give me trifles?” But the other Smiles, “Brother, you may take my all.”"
+    },
+    {
+      "id": "s33-7",
+      "sceneId": "s33",
+      "text": "He then enraged with one so meek, So unresponsive to his mood, Most soundly smites the martyr cheek And rends the island quietude."
+    },
+    {
+      "id": "s33-8",
+      "sceneId": "s33",
+      "text": "The martyr, who till now has feigned In third degree of craftiness That meekness is so deep ingrained No taunt or slight can make it less,"
+    },
+    {
+      "id": "s33-9",
+      "sceneId": "s33",
+      "text": "Spits out the tooth in honest wrath, “You hit too hard, old fool,” cried he. They grapple on the rocky path That zigzags downward to the sea."
+    },
+    {
+      "id": "s33-10",
+      "sceneId": "s33",
+      "text": "In rising fury strained and stiff They lunge across the narrow ground; They topple headlong from the cliff And murderously embraced are drowned."
+    },
+    {
+      "id": "s33-11",
+      "sceneId": "s33",
+      "text": "Here Peter sits: two spirits reach To sound the knocker at his Gate. They shower forgiveness each on each, Beaming triumphant and elate."
+    },
+    {
+      "id": "s33-12",
+      "sceneId": "s33",
+      "text": "But oh, their sweats, their secret fears Lest clod-souled witnesses may rise To set a tingling at their ears And bar the approach to Paradise!"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "Her hand falls helpless: thought amazements fly Far overhead, they leave no record mark-- Wild swans urged whistling across dazzled sky, Or Gabriel hounds in chorus through the dark."
+    },
+    {
+      "id": "s34-1",
+      "sceneId": "s34",
+      "text": "Yet when she prophesies, each spirit swan, Each spectral hound from memory’s windy zones, Flies back to inspire one limb-strewn skeleton Of thousands in her valley of dry bones."
+    },
+    {
+      "id": "s34-2",
+      "sceneId": "s34",
+      "text": "There as those life-restored battalions shout, Succession flags and Time goes maimed in flight: From each live gullet twenty swans glide out With hell-packs loathlier yet to amaze the night."
+    },
+    {
+      "id": "s34-3",
+      "sceneId": "s34",
+      "text": "Gabriel hounds, a spectral pack hunting the souls of the damned through the air at night: the origin of this belief some find in the strange noise made by the passage of flocks of wild geese or swans."
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "Death, kindly eager to pretend Himself my servant in the land of spears, Humble allegiance at the end Broke where the homeward track your castle nears, Let his white steed before my red steed press And rapt you from me into quietness."
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "She trod the grasses grey with dew, She hugged the unlikely head; Avenging where the warrior Jew Incontinent had fled."
+    },
+    {
+      "id": "s36-1",
+      "sceneId": "s36",
+      "text": "The bearded lips writhed ever more At this increase of shame-- Killed by a girl, pretending whore, Gone scatheless as she came!"
+    },
+    {
+      "id": "s36-2",
+      "sceneId": "s36",
+      "text": "His doom yet loathlier that he knew Hers was no nation-pride, No high religion snatched and slew Where he lay stupefied."
+    },
+    {
+      "id": "s36-3",
+      "sceneId": "s36",
+      "text": "Nebuchadnezzar’s duke enticed To pay a megrim’s fee? Assyrian valour sacrificed For a boudoir dignity?"
+    },
+    {
+      "id": "s36-4",
+      "sceneId": "s36",
+      "text": "“Only for this, that some tall knave Had scorned her welcoming bed, For this, the assault, the stroke, the grave,” Groaned Holofernes’ head."
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "The old man in his fast car Leaves Achilles lagging, The old man with his long gun Outshoots Ulysses’ bow, Nestor in his botched old age Rivals Ajax bragging, To Nestor’s honeyed courtship Could Helen say “No”?"
+    },
+    {
+      "id": "s37-1",
+      "sceneId": "s37",
+      "text": "Yet, ancient, since you borrow From youth the strength and speed, Seducing as an equal His playmates in the night, He, robbed, assumes your sceptre, He overgoes your rede, And with his brown and lively hairs Out-prophesies your white."
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "We strain our strings thus tight, Our voices pitch thus high, A song to indite That nevermore shall die."
+    },
+    {
+      "id": "s38-1",
+      "sceneId": "s38",
+      "text": "The Poet being divine Admits no social sin, Spurring with wine And lust the Muse within."
+    },
+    {
+      "id": "s38-2",
+      "sceneId": "s38",
+      "text": "Finding no use at all In arms or civic deeds, Perched on a wall Fulfilling fancy’s needs."
+    },
+    {
+      "id": "s38-3",
+      "sceneId": "s38",
+      "text": "Let parents, children, wife, Be ghosts beside his art, Be this his life To hug the snake to his heart."
+    },
+    {
+      "id": "s38-4",
+      "sceneId": "s38",
+      "text": "Sad souls, the more we stress The advantage of our crown, So much the less Our welcome by the Town,"
+    },
+    {
+      "id": "s38-5",
+      "sceneId": "s38",
+      "text": "By the gross and rootling hog Who grunts nor lifts his head, By jealous dog Or old ass thistle-fed."
+    },
+    {
+      "id": "s38-6",
+      "sceneId": "s38",
+      "text": "By so much less their praise, By so much more our glory. Grim pride outweighs The anguish of our story."
+    },
+    {
+      "id": "s38-7",
+      "sceneId": "s38",
+      "text": "We strain our strings thus tight, Our voices pitch thus high, To enforce our right Over futurity."
+    },
+    {
+      "id": "s38-8",
+      "sceneId": "s38",
+      "text": "EPIGRAMS"
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "Here ranted Isaac’s elder son, The proud shag-breasted godless one, From whom observant Smooth-Cheek stole Birthright, blessing, hunter’s soul."
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "The cottage damson laden as could be Scowls at the Manor House magnolia tree That year by year within its thoughtless powers Yields flowers and leaves and flowers and leaves and flowers, While the Magnolia shudders as in fear, “*Figurez-vous!* two sackfuls every year!”"
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "Dolon, analyst of souls, To the Graces hangs up here His shrimp-net rotting into holes And oozy from the infernal mere; He wreathes his gift around with cress, Lush harvest of the public cess."
+    },
+    {
+      "id": "s41-1",
+      "sceneId": "s41",
+      "text": "TO MY COLLATERAL ANCESTOR, REV. R. GRAVES, THE FRIEND OF THE POET SHENSTONE AND AUTHOR OF *THE SPIRITUAL QUIXOTE*: ON RECEIPT OF A PRESS-CUTTING INTENDED FOR HIM."
+    },
+    {
+      "id": "s41-2",
+      "sceneId": "s41",
+      "text": "O friend of Shenstone, do you frown In realms remote from me When Messrs Durrant send you down By inadvertency Clippings identifying you With some dim man in the moon, A Spiritual Quixote, true, But friend of S. Sassoon?"
+    },
+    {
+      "id": "s41-3",
+      "sceneId": "s41",
+      "text": "“A VEHICLE, TO WIT, A BICYCLE.”"
+    },
+    {
+      "id": "s41-4",
+      "sceneId": "s41",
+      "text": "(Dedicated, without permission, to my friend P. C. Flowers)"
+    },
+    {
+      "id": "s41-5",
+      "sceneId": "s41",
+      "text": "“My front-lamp, constable? Why, man, the moon! My rear-lamp? Shining there ten yards behind me, Warm parlour lamplight of *The Dish and Spoon*!” But for all my fancy talk, they would have fined me, Had I not set a rather sly half-crown Winking under the rays of my front lamp: Goodwill towards men disturbed the official frown, My rear-light beckoned through the evening’s damp."
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Though you read these, but understand not, curse not! Or though you read and understand, yet praise not! What poet weaves a better knot or worse knot Untangling which, your own lives you unbrace not?"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "The bearded rabbi, the meek friar, Linked by their ankles in one cell, Through joint distress of dungeon mire Learned each to love his neighbour well."
+    },
+    {
+      "id": "s43-1",
+      "sceneId": "s43",
+      "text": "When four years passed and five and six, When seven years brought them no release, The Jew embraced the crucifix, The friar assumed phylacteries."
+    },
+    {
+      "id": "s43-2",
+      "sceneId": "s43",
+      "text": "Then every Sunday, keeping score, And every Sabbath in this hymn They reconciled an age-long war Between the platter’s bowl and rim."
+    },
+    {
+      "id": "s43-3",
+      "sceneId": "s43",
+      "text": "*Together.*"
+    },
+    {
+      "id": "s43-4",
+      "sceneId": "s43",
+      "text": "Man-like he lived, but God-like died, All hatred from His thought removed, Imperfect until crucified, In crucifixion well-beloved."
+    },
+    {
+      "id": "s43-5",
+      "sceneId": "s43",
+      "text": "*The Friar.*"
+    },
+    {
+      "id": "s43-6",
+      "sceneId": "s43",
+      "text": "If they did wrong, He too did wrong, (For Love admits no contraries) In blind religion rooted strong Both Jesus and the Pharisees."
+    },
+    {
+      "id": "s43-7",
+      "sceneId": "s43",
+      "text": "“Love all men as thyself,” said He. Said they, “Be just with man or dog,” “But only loathe a Pharisee,” “But crucify this demagogue.”"
+    },
+    {
+      "id": "s43-8",
+      "sceneId": "s43",
+      "text": "He died forgiving on the Tree To make amends for earlier spite, They raised him up their God to be, And black with black accomplished white."
+    },
+    {
+      "id": "s43-9",
+      "sceneId": "s43",
+      "text": "*The Rabbi.*"
+    },
+    {
+      "id": "s43-10",
+      "sceneId": "s43",
+      "text": "When He again descends on man As chief of Scribes and Pharisees, With loathing for the Publican, The maimed and halt His enemies,"
+    },
+    {
+      "id": "s43-11",
+      "sceneId": "s43",
+      "text": "And when a not less formal fate Than Pilate’s justice and the Rood, His righteous angers expiate To make men think Him wholly good,"
+    },
+    {
+      "id": "s43-12",
+      "sceneId": "s43",
+      "text": "Then He again will have done wrong, If God be Love for every man, For lewd and lettered, weak and strong, For Pharisee or Publican,"
+    },
+    {
+      "id": "s43-13",
+      "sceneId": "s43",
+      "text": "*Together.*"
+    },
+    {
+      "id": "s43-14",
+      "sceneId": "s43",
+      "text": "But like a God He will have died, All hatred from His thought removed, Imperfect until crucified, In crucifixion well-beloved."
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "Of Love he sang, full-hearted one. But when the song was done The King demanded more, Ay, and commanded more. The boy found nothing for encore, Words, melodies, none: Ashamed the song’s glad rise and plaintive fall Had so charmed King and Queen and all."
+    },
+    {
+      "id": "s44-1",
+      "sceneId": "s44",
+      "text": "He sang the same verse once again, But urging less Love’s pain, With altered time and key He showed variety, Seemed to refresh the harmony Of his only strain, So still the glad rise and the plaintive fall Could charm the King, the Queen, and all."
+    },
+    {
+      "id": "s44-2",
+      "sceneId": "s44",
+      "text": "He of his song then wearying ceased, But was not yet released; The Queen’s request was *More*, And her behest was *More*. He played of random notes some score, He found his rhymes at least-- Then suddenly let his twangling harp down fall And fled in tears from King and Queen and all."
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "*He suddenly*, the page read as it turned, *Died*. The indignant eye discerned No sense. “Good page, turn back,” it cried (Happily evermore was cheated). *After these things he suddenly died*, The truthful page repeated."
+    },
+    {
+      "id": "s45-1",
+      "sceneId": "s45",
+      "text": "“Turn back yon earlier pages, nine or ten, To *Him she loved* and *He alone of men*. Now change the sentence, page!” But still it read *He suddenly died: they scarce had time to kiss*. “Read on, ungentle reader,” the book said, “Resign your hopes to this.”"
+    },
+    {
+      "id": "s45-2",
+      "sceneId": "s45",
+      "text": "The eye could not resign, restless in grief, But darting forward to a later leaf Found *Him she loved* and *He alone of men*. Oh, who this He was, being a second He Confused the plan; the book spoke sternly then, “Read page by page and see!”"
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "On the High Feast Day in that reverent space Between the Sacrifice and the word of Grace, I, come to town with a merry-making throng To pay my tithes and join in the season’s song, Closing my eyes, there prayed--and was hurried far Beyond what ages I know not, or what star, To a land of thought remote from the breastplate glint And the white bull’s blood that flows from the knife of flint, Then, in this movement, being not I but part In the fellowship of the universal heart, 10 I sucked a strength from the primal fount of strength, I thought and worked omnipotence. At length Hit in my high flight by some sorry thought Back to the sweat of the soil-bound I was caught And asked in pique what enemy had worked this, What folly or anger thrust against my bliss? Then I grew aware of the savour of sandal-wood With noise of a distant fluting, and one who stood Nudging my elbow breathed “Oh, miracle! See!” The folk gape wonder, urge tumultuously, 20 They fling them down on their faces every one, Some joyfully weep, others for anguish moan. Lo, the tall gilt image of God at the altar niche Wavers and stirs, we see his raiment twitch. Now he stands and signs benediction with his rod. The courtyard quakes, the fountains gush with blood. The whistling scurry and throb of spirit wings Distresses man and child. Now a bird-voice sings, And a loud throat bellows, that every creature hears, A sign to himself he must lay aside his fears. 30 It babbles an antique tongue, and threatening, pleads Prompt sacrifice and a care for priestly needs, Wholeness of heart, the putting away of wrath, A generous measure for wine, for oil, for cloth, A holding fast to the law that the Stones ordain, And the rites of the Temple watch that ye maintain Lest fire and ashes down from the mountain rain! With expectance of goodly harvest and rain in Spring To such as perform the will of the Jealous King. To his priestly servants hearken! The syllables die. 40 Now up from the congregation issues a sigh As of stopped breath slow released. But here stands one Who has kept his feet though the others fell like stone, Who prays with outstretched palms, standing alone, To a God who is speechless, not to be known by touch, By sight, sound, scent. And I cry, “Not overmuch Do I love this juggling blasphemy, O High Priest. Or do you deny your part here? Then, at least, An honest citizen of this honest town May preach these nightmare apparitions down, 50 These blundering, perfumed noises come to tell No more than a priest-instructed folk knows well. Out, meddlesome Imps, whatever Powers you be, Break not true prayer between my God and me.”"
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "You turn the unsmitten other cheek, In silence welcoming God’s grace, Disdaining, though they scourge, to speak, Smiling forgiveness face to face."
+    },
+    {
+      "id": "s47-1",
+      "sceneId": "s47",
+      "text": "You plunge your arms in tyrant flame, From ravening beasts you do not fly, Calling aloud on one sweet Name, Hosannah-singing till you die."
+    },
+    {
+      "id": "s47-2",
+      "sceneId": "s47",
+      "text": "So angered by your undefeat, Revenge through Christ they meditate, Disciples at the bishop’s feet They learn this newer sort of hate,"
+    },
+    {
+      "id": "s47-3",
+      "sceneId": "s47",
+      "text": "This unresisting meek assault On furious foe or stubborn friend, This virtue purged of every fault By furtherance of the martyr’s end,"
+    },
+    {
+      "id": "s47-4",
+      "sceneId": "s47",
+      "text": "This baffling stroke of naked pride, When satires fail and curses fail To pierce the justice’s tough hide, To abash the cynics of the jail."
+    },
+    {
+      "id": "s47-5",
+      "sceneId": "s47",
+      "text": "Oh, not less violent, not less keen And barbèd more than murder’s blade! “The brook,” you sigh, “that washes clean, The flower of love that will not fade!”"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "The dewdrop carries in its eye Snowdon and Hebog, sea and sky, Twelve lakes at least, woods, rivers, moors, And half a county’s out-of-doors: Trembling beneath a wind-flower’s shield In this remote and rocky field."
+    },
+    {
+      "id": "s48-1",
+      "sceneId": "s48",
+      "text": "But why should man in God’s Name stress The dewdrop’s inconspicuousness When to lakes, woods, the estuary, Hebog and Snowdon, sky and sea, This dewdrop falling from its leaf Can spread amazement near to grief, As it were a world distinct in mould Lost with its beauty ages old?"
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "The hunter to the husbandman Pays tribute since our love began, And to love-loyalty dedicates The phantom kills he meditates. Let me embrace, embracing you, Beauty of other shape and hue, Odd glinting graces of which none Shone more than candle to your sun, Your well-kissed hand was beckoning me In unfamiliar imagery-- Smile your forgiveness; each bright ghost Dives in love’s glory and is lost, Yielding your comprehensive pride A homage, even to suicide."
+    },
+    {
+      "id": "s49-1",
+      "sceneId": "s49",
+      "text": "MADE AND PRINTED IN GREAT BRITAIN. RICHARD CLAY & SONS, LTD. PRINTERS, BUNGAY, SUFFOLK."
+    }
+  ]
+}

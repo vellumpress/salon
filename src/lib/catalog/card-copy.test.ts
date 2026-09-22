@@ -8,7 +8,7 @@ import { countryFor, isCityHubLabel } from "./countries.ts";
 import { blurbFor, sentenceCount } from "./blurbs.ts";
 import { isBoundLocal } from "./en-rights.ts";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
-import { curatorialTrack } from "./curatorial.ts";
+import { curatorialTrack, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { FIRST_SESSION_RITUAL_IDS } from "./rituals.ts";
 
 /** Full local novels whose stub openings were deleted so Pages cannot strand readers. */
@@ -1844,4 +1844,57 @@ test("homepage examples keep country + concrete sentence", () => {
   assert.equal(countryFor(SHELF.find((w) => w.id === "gold")!), "United States");
   assert.match(blurbFor("gold"), /Michael Gold/);
   assert.doesNotMatch(blurbFor("gold"), /Yezierska/);
+});
+
+test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => {
+  const expect = {
+    whipperginny: { gutenberg: 58642, form: "poem", scenes: 50, breaths: 253 },
+    "a-book-of-ghosts": { gutenberg: 36638, form: "stories", scenes: 21, breaths: 3046 },
+    "daisy-miller": { gutenberg: 208, form: "novel", scenes: 2, breaths: 535 },
+    "marius-the-epicurean": { gutenberg: 4057, form: "novel", scenes: 14, breaths: 283 },
+    "ninety-three": { gutenberg: 49372, form: "novel", scenes: 100, breaths: 3848 },
+    "reynard-the-fox": { gutenberg: 38052, form: "poem", scenes: 2, breaths: 241 },
+    "the-american": { gutenberg: 177, form: "novel", scenes: 26, breaths: 2678 },
+    "the-way-of-all-flesh": { gutenberg: 2084, form: "novel", scenes: 86, breaths: 1509 },
+    "the-wild-knight-and-other-poems": { gutenberg: 12037, form: "poem", scenes: 27, breaths: 497 },
+    underwoods: { gutenberg: 438, form: "poem", scenes: 54, breaths: 279 },
+    "a-slav-soul": { gutenberg: 57036, form: "stories", scenes: 15, breaths: 1399 },
+    "aarons-rod": { gutenberg: 4520, form: "novel", scenes: 21, breaths: 3715 },
+    "captains-courageous": { gutenberg: 2225, form: "novel", scenes: 10, breaths: 1286 },
+    "casanovas-homecoming": { gutenberg: 9310, form: "novel", scenes: 12, breaths: 550 },
+    cosmopolis: { gutenberg: 3967, form: "novel", scenes: 12, breaths: 1043 },
+    "ditte-girl-alive": { gutenberg: 31496, form: "novel", scenes: 32, breaths: 1598 },
+    erewhon: { gutenberg: 1906, form: "novel", scenes: 29, breaths: 607 },
+    "look-back-on-happiness": { gutenberg: 8445, form: "novel", scenes: 38, breaths: 1817 },
+    "mr-britling-sees-it-through": { gutenberg: 14060, form: "novel", scenes: 11, breaths: 2602 },
+    "notre-dame-de-paris": { gutenberg: 2610, form: "novel", scenes: 59, breaths: 4033 },
+  } as const;
+  assert.equal(Object.keys(expect).length, 20);
+  assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], [
+    "the-house-of-mirth",
+    "quicksand",
+    "botchan",
+  ]);
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), true, id);
+    assert.equal(work!.form, want.form, id);
+    assert.equal(work!.gutenberg, want.gutenberg, id);
+    assert.equal(work!.breaths, want.breaths, id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /Featured|cold-open/i, id);
+    const full = textWork(id);
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    const first = (full.breaths[0]?.text ?? "").replace(/\s+/g, " ").trim();
+    assert.ok(first.startsWith(work!.opening ?? ""), id);
+    assert.ok((work!.intro ?? "").length >= 24, id);
+    assert.equal(sentenceCount(blurbFor(work!)), 1, id);
+    assert.ok(countryFor(work!), id);
+  }
 });
