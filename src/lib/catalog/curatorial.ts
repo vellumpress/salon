@@ -60,6 +60,8 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * live Derbyshire Host bind already on Next / Unwind.
  * BATCH-4 CLEAR (Sep 22) sits on Next after Tier A, before-sleep only —
  * never Featured, not For you. Cold-open stays Mirth → Quicksand → Botchan.
+ * BATCH-5 CLEAR (Sep 22) sits on Next after BATCH-4, before-sleep only —
+ * never Featured, not For you. Cold-open stays Mirth → Quicksand → Botchan.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -184,6 +186,26 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-rainbow",
   "the-sword-of-welleran",
   "time-and-the-gods",
+  "a-changed-man",
+  "ballads-of-a-bohemian",
+  "ballads-of-a-cheechako",
+  "crucial-instances",
+  "filipino-popular-tales",
+  "lost-illusions",
+  "mogens",
+  "more-songs-from-vagabondia",
+  "rhymes-of-a-red-cross-man",
+  "rhymes-of-a-rolling-stone",
+  "songs-of-travel",
+  "the-faith-of-men",
+  "the-golden-whales-of-california",
+  "the-hermit-and-the-wild-woman",
+  "the-princess-casamassima",
+  "the-son-of-the-wolf",
+  "the-stolen-bacillus",
+  "the-tragic-muse",
+  "toilers-of-the-sea",
+  "toward-the-gulf",
 ] as const;
 
 /**

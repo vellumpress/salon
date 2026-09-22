@@ -41,7 +41,7 @@ npm run build:vercel
 ## What works on Pages (no secrets)
 
 - Discover, search, form rails, rituals, shuffle, curator UI (picks fail closed without an LLM backend)
-- Chamber reader for all **664 local binds** (texts + openings stay in `src/lib/catalog/texts` and `src/lib/catalog/openings`)
+- Chamber reader for all **735 local binds** (texts + openings stay in `src/lib/catalog/texts` and `src/lib/catalog/openings`)
 - Progress, favorites, kept breaths — `localStorage` (`vellum-v1`)
 - Continue-reading on Home (header + primary resume cell) from that same local progress
 - Friends: claim an `@username`, follow Salon readers, see what they are sitting — local-first
@@ -76,7 +76,7 @@ VITE_LIVE_BACKEND=false
 
 ## Catalog
 
-664 locally bound works with full text. Years and rights notes come from the V4 shelf. English-off ids stay unlistable as full-text reads.
+735 locally bound works with full text. Years and rights notes come from the V4 shelf. English-off ids stay unlistable as full-text reads.
 
 ## Tech
 
