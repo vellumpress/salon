@@ -1,0 +1,2785 @@
+{
+  "id": "the-rime-of-the-ancient-mariner",
+  "title": "The Rime of the Ancient Mariner",
+  "author": "Samuel Taylor Coleridge",
+  "year": "1798",
+  "note": "Project Gutenberg 151",
+  "minutes": 90,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The ship was cheered, the harbour cleared,",
+      "place": "The ship was cheered, the harbour cleared,",
+      "reentry": "Merrily did we drop Below the kirk, below the hill,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s1",
+      "title": "Below the light-house top",
+      "place": "Below the light-house top",
+      "reentry": "The Sun came up upon the left,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s2",
+      "title": "Out of the sea came he!",
+      "place": "Out of the sea came he!",
+      "reentry": "And he shone bright, and on the right Went down into the sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s3",
+      "title": "Higher and higher every day,",
+      "place": "Higher and higher every day,",
+      "reentry": "Till over the mast at noon-- The Wedding-Guest here beat his breast,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s4",
+      "title": "For he heard the loud bassoon",
+      "place": "For he heard the loud bassoon",
+      "reentry": "The bride hath paced into the hall,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s5",
+      "title": "Red as a rose is she;",
+      "place": "Red as a rose is she;",
+      "reentry": "Nodding their heads before her goes The merry minstrelsy.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s6",
+      "title": "The Wedding-Guest he beat his breast,",
+      "place": "The Wedding-Guest he beat his breast,",
+      "reentry": "Yet he cannot chuse but hear; And thus spake on that ancient man,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s7",
+      "title": "The bright-eyed Mariner",
+      "place": "The bright-eyed Mariner",
+      "reentry": "And now the Storm-Blast came, and he",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s8",
+      "title": "Was tyrannous and strong:",
+      "place": "Was tyrannous and strong:",
+      "reentry": "He struck with his o'ertaking wings, And chased south along.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s9",
+      "title": "With sloping masts and dipping prow,",
+      "place": "With sloping masts and dipping prow,",
+      "reentry": "As who pursued with yell and blow Still treads the shadow of his foe",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s10",
+      "title": "And forward bends his head,",
+      "place": "And forward bends his head,",
+      "reentry": "The ship drove fast, loud roared the blast, And southward aye we fled.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s11",
+      "title": "And now there came both mist and snow,",
+      "place": "And now there came both mist and snow,",
+      "reentry": "And it grew wondrous cold: And ice, mast-high, came floating by,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s12",
+      "title": "As green as emerald",
+      "place": "As green as emerald",
+      "reentry": "And through the drifts the snowy clifts",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s13",
+      "title": "Did send a dismal sheen:",
+      "place": "Did send a dismal sheen:",
+      "reentry": "Nor shapes of men nor beasts we ken-- The ice was all between.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s14",
+      "title": "The ice was here, the ice was there,",
+      "place": "The ice was here, the ice was there,",
+      "reentry": "The ice was all around: It cracked and growled, and roared and howled,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s15",
+      "title": "Like noises in a swound!",
+      "place": "Like noises in a swound!",
+      "reentry": "At length did cross an Albatross:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s16",
+      "title": "Thorough the fog it came;",
+      "place": "Thorough the fog it came;",
+      "reentry": "As if it had been a Christian soul, We hailed it in God's name.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s17",
+      "title": "It ate the food it ne'er had eat,",
+      "place": "It ate the food it ne'er had eat,",
+      "reentry": "And round and round it flew. The ice did split with a thunder-fit;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s18",
+      "title": "The helmsman steered us through!",
+      "place": "The helmsman steered us through!",
+      "reentry": "And a good south wind sprung up behind;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s19",
+      "title": "The Albatross did follow,",
+      "place": "The Albatross did follow,",
+      "reentry": "And every day, for food or play, Came to the mariners' hollo!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s20",
+      "title": "In mist or cloud, on mast or shroud,",
+      "place": "In mist or cloud, on mast or shroud,",
+      "reentry": "It perched for vespers nine; Whiles all the night, through fog-smoke white,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s21",
+      "title": "Glimmered the white Moon-shine",
+      "place": "Glimmered the white Moon-shine",
+      "reentry": "\"God save thee, ancient Mariner!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s22",
+      "title": "From the fiends, that plague thee thus!--",
+      "place": "From the fiends, that plague thee thus!--",
+      "reentry": "Why look'st thou so?\"--With my cross-bow I shot the Albatross.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s23",
+      "title": "The Sun now rose upon the right:",
+      "place": "The Sun now rose upon the right:",
+      "reentry": "Out of the sea came he, Still hid in mist, and on the left",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s24",
+      "title": "Went down into the sea",
+      "place": "Went down into the sea",
+      "reentry": "And the good south wind still blew behind",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s25",
+      "title": "But no sweet bird did follow,",
+      "place": "But no sweet bird did follow,",
+      "reentry": "Nor any day for food or play Came to the mariners' hollo!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s26",
+      "title": "And I had done an hellish thing,",
+      "place": "And I had done an hellish thing,",
+      "reentry": "And it would work 'em woe: For all averred, I had killed the bird",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s27",
+      "title": "That made the breeze to blow",
+      "place": "That made the breeze to blow",
+      "reentry": "Ah wretch! said they, the bird to slay That made the breeze to blow!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s28",
+      "title": "Nor dim nor red, like God's own head,",
+      "place": "Nor dim nor red, like God's own head,",
+      "reentry": "The glorious Sun uprist: Then all averred, I had killed the bird",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s29",
+      "title": "That brought the fog and mist",
+      "place": "That brought the fog and mist",
+      "reentry": "'Twas right, said they, such birds to slay, That bring the fog and mist.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s30",
+      "title": "The fair breeze blew, the white foam flew,",
+      "place": "The fair breeze blew, the white foam flew,",
+      "reentry": "The furrow followed free: We were the first that ever burst",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s31",
+      "title": "Into that silent sea",
+      "place": "Into that silent sea",
+      "reentry": "Down dropt the breeze, the sails dropt down, 'Twas sad as sad could be;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s32",
+      "title": "And we did speak only to break",
+      "place": "And we did speak only to break",
+      "reentry": "The silence of the sea!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s33",
+      "title": "All in a hot and copper sky,",
+      "place": "All in a hot and copper sky,",
+      "reentry": "The bloody Sun, at noon, Right up above the mast did stand,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s34",
+      "title": "No bigger than the Moon",
+      "place": "No bigger than the Moon",
+      "reentry": "Day after day, day after day,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s35",
+      "title": "We stuck, nor breath nor motion;",
+      "place": "We stuck, nor breath nor motion;",
+      "reentry": "As idle as a painted ship Upon a painted ocean.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s36",
+      "title": "Water, water, every where,",
+      "place": "Water, water, every where,",
+      "reentry": "And all the boards did shrink; Water, water, every where,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s37",
+      "title": "Nor any drop to drink",
+      "place": "Nor any drop to drink",
+      "reentry": "The very deep did rot: O Christ!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s38",
+      "title": "That ever this should be!",
+      "place": "That ever this should be!",
+      "reentry": "Yea, slimy things did crawl with legs Upon the slimy sea.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s39",
+      "title": "About, about, in reel and rout",
+      "place": "About, about, in reel and rout",
+      "reentry": "The death-fires danced at night; The water, like a witch's oils,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s40",
+      "title": "Burnt green, and blue and white",
+      "place": "Burnt green, and blue and white",
+      "reentry": "And some in dreams assured were",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s41",
+      "title": "Of the spirit that plagued us so:",
+      "place": "Of the spirit that plagued us so:",
+      "reentry": "Nine fathom deep he had followed us From the land of mist and snow.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s42",
+      "title": "And every tongue, through utter drought,",
+      "place": "And every tongue, through utter drought,",
+      "reentry": "Was withered at the root; We could not speak, no more than if",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s43",
+      "title": "We had been choked with soot",
+      "place": "We had been choked with soot",
+      "reentry": "Ah! well a-day! what evil looks",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s44",
+      "title": "Had I from old and young!",
+      "place": "Had I from old and young!",
+      "reentry": "Instead of the cross, the Albatross About my neck was hung.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s45",
+      "title": "There passed a weary time.  Each throat",
+      "place": "There passed a weary time.  Each throat",
+      "reentry": "Was parched, and glazed each eye. A weary time! a weary time!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s46",
+      "title": "How glazed each weary eye,",
+      "place": "How glazed each weary eye,",
+      "reentry": "When looking westward, I beheld A something in the sky.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s47",
+      "title": "At first it seemed a little speck,",
+      "place": "At first it seemed a little speck,",
+      "reentry": "And then it seemed a mist: It moved and moved, and took at last",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s48",
+      "title": "A certain shape, I wist",
+      "place": "A certain shape, I wist",
+      "reentry": "A speck, a mist, a shape, I wist!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s49",
+      "title": "And still it neared and neared:",
+      "place": "And still it neared and neared:",
+      "reentry": "As if it dodged a water-sprite, It plunged and tacked and veered.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s50",
+      "title": "With throats unslaked, with black lips baked,",
+      "place": "With throats unslaked, with black lips baked,",
+      "reentry": "We could not laugh nor wail; Through utter drought all dumb we stood!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s51",
+      "title": "I bit my arm, I sucked the blood,",
+      "place": "I bit my arm, I sucked the blood,",
+      "reentry": "And cried, A sail! a sail!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s52",
+      "title": "With throats unslaked, with black lips baked,",
+      "place": "With throats unslaked, with black lips baked,",
+      "reentry": "Agape they heard me call: Gramercy! they for joy did grin,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s53",
+      "title": "And all at once their breath drew in,",
+      "place": "And all at once their breath drew in,",
+      "reentry": "As they were drinking all.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s54",
+      "title": "See! see! (I cried) she tacks no more!",
+      "place": "See! see! (I cried) she tacks no more!",
+      "reentry": "Hither to work us weal; Without a breeze, without a tide,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s55",
+      "title": "She steadies with upright keel!",
+      "place": "She steadies with upright keel!",
+      "reentry": "The western wave was all a-flame",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s56",
+      "title": "The day was well nigh done!",
+      "place": "The day was well nigh done!",
+      "reentry": "Almost upon the western wave Rested the broad bright Sun;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s57",
+      "title": "When that strange shape drove suddenly",
+      "place": "When that strange shape drove suddenly",
+      "reentry": "Betwixt us and the Sun.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s58",
+      "title": "And straight the Sun was flecked with bars,",
+      "place": "And straight the Sun was flecked with bars,",
+      "reentry": "(Heaven's Mother send us grace!) As if through a dungeon-grate he peered,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s59",
+      "title": "With broad and burning face",
+      "place": "With broad and burning face",
+      "reentry": "Alas! (thought I, and my heart beat loud)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s60",
+      "title": "How fast she nears and nears!",
+      "place": "How fast she nears and nears!",
+      "reentry": "Are those her sails that glance in the Sun, Like restless gossameres!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s61",
+      "title": "Are those her ribs through which the Sun",
+      "place": "Are those her ribs through which the Sun",
+      "reentry": "Did peer, as through a grate? And is that Woman all her crew?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s62",
+      "title": "Is that a DEATH? and are there two?",
+      "place": "Is that a DEATH? and are there two?",
+      "reentry": "Is Death that woman's mate?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s63",
+      "title": "Her lips were red, her looks were free,",
+      "place": "Her lips were red, her looks were free,",
+      "reentry": "Her locks were yellow as gold: Her skin was as white as leprosy,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s64",
+      "title": "The Night-Mare LIFE-IN-DEATH was she,",
+      "place": "The Night-Mare LIFE-IN-DEATH was she,",
+      "reentry": "Who thicks man's blood with cold.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s65",
+      "title": "The naked hulk alongside came,",
+      "place": "The naked hulk alongside came,",
+      "reentry": "And the twain were casting dice; \"The game is done! I've won! I've won!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s66",
+      "title": "Quoth she, and whistles thrice",
+      "place": "Quoth she, and whistles thrice",
+      "reentry": "The Sun's rim dips; the stars rush out:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s67",
+      "title": "At one stride comes the dark;",
+      "place": "At one stride comes the dark;",
+      "reentry": "With far-heard whisper, o'er the sea. Off shot the spectre-bark.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s68",
+      "title": "We listened and looked sideways up!",
+      "place": "We listened and looked sideways up!",
+      "reentry": "Fear at my heart, as at a cup, My life-blood seemed to sip!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s69",
+      "title": "The stars were dim, and thick the night,",
+      "place": "The stars were dim, and thick the night,",
+      "reentry": "The steersman's face by his lamp gleamed white; From the sails the dew did drip--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s70",
+      "title": "Till clombe above the eastern bar",
+      "place": "Till clombe above the eastern bar",
+      "reentry": "The horned Moon, with one bright star Within the nether tip.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s71",
+      "title": "One after one, by the star-dogged Moon",
+      "place": "One after one, by the star-dogged Moon",
+      "reentry": "Too quick for groan or sigh, Each turned his face with a ghastly pang,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s72",
+      "title": "And cursed me with his eye",
+      "place": "And cursed me with his eye",
+      "reentry": "Four times fifty living men, (And I heard nor sigh nor groan)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s73",
+      "title": "With heavy thump, a lifeless lump,",
+      "place": "With heavy thump, a lifeless lump,",
+      "reentry": "They dropped down one by one.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s74",
+      "title": "The souls did from their bodies fly,--",
+      "place": "The souls did from their bodies fly,--",
+      "reentry": "They fled to bliss or woe! And every soul, it passed me by,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s75",
+      "title": "Like the whizz of my CROSS-BOW!",
+      "place": "Like the whizz of my CROSS-BOW!",
+      "reentry": "Part THE Fourth.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s76",
+      "title": "I fear thy skinny hand!",
+      "place": "I fear thy skinny hand!",
+      "reentry": "And thou art long, and lank, and brown, As is the ribbed sea-sand.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s77",
+      "title": "And thy skinny hand, so brown.\"--",
+      "place": "And thy skinny hand, so brown.\"--",
+      "reentry": "Fear not, fear not, thou Wedding-Guest! This body dropt not down.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s78",
+      "title": "Alone, alone, all, all alone,",
+      "place": "Alone, alone, all, all alone,",
+      "reentry": "Alone on a wide wide sea! And never a saint took pity on",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s79",
+      "title": "My soul in agony",
+      "place": "My soul in agony",
+      "reentry": "The many men, so beautiful!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s80",
+      "title": "And they all dead did lie:",
+      "place": "And they all dead did lie:",
+      "reentry": "And a thousand thousand slimy things Lived on; and so did I.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s81",
+      "title": "I looked upon the rotting sea,",
+      "place": "I looked upon the rotting sea,",
+      "reentry": "And drew my eyes away; I looked upon the rotting deck,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s82",
+      "title": "And there the dead men lay",
+      "place": "And there the dead men lay",
+      "reentry": "I looked to Heaven, and tried to pray:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s83",
+      "title": "But or ever a prayer had gusht,",
+      "place": "But or ever a prayer had gusht,",
+      "reentry": "A wicked whisper came, and made my heart as dry as dust.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s84",
+      "title": "I closed my lids, and kept them close,",
+      "place": "I closed my lids, and kept them close,",
+      "reentry": "And the balls like pulses beat; For the sky and the sea, and the sea and the sky",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s85",
+      "title": "Lay like a load on my weary eye,",
+      "place": "Lay like a load on my weary eye,",
+      "reentry": "And the dead were at my feet.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s86",
+      "title": "The cold sweat melted from their limbs,",
+      "place": "The cold sweat melted from their limbs,",
+      "reentry": "Nor rot nor reek did they: The look with which they looked on me",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s87",
+      "title": "Had never passed away",
+      "place": "Had never passed away",
+      "reentry": "An orphan's curse would drag to Hell",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s88",
+      "title": "A spirit from on high;",
+      "place": "A spirit from on high;",
+      "reentry": "But oh! more horrible than that Is a curse in a dead man's eye!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s89",
+      "title": "Seven days, seven nights, I saw that curse,",
+      "place": "Seven days, seven nights, I saw that curse,",
+      "reentry": "And yet I could not die.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s90",
+      "title": "The moving Moon went up the sky,",
+      "place": "The moving Moon went up the sky,",
+      "reentry": "And no where did abide: Softly she was going up,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s91",
+      "title": "And a star or two beside",
+      "place": "And a star or two beside",
+      "reentry": "Her beams bemocked the sultry main,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s92",
+      "title": "Like April hoar-frost spread;",
+      "place": "Like April hoar-frost spread;",
+      "reentry": "But where the ship's huge shadow lay, The charmed water burnt alway",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s93",
+      "title": "A still and awful red",
+      "place": "A still and awful red",
+      "reentry": "Beyond the shadow of the ship,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s94",
+      "title": "I watched the water-snakes:",
+      "place": "I watched the water-snakes:",
+      "reentry": "They moved in tracks of shining white, And when they reared, the elfish light",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s95",
+      "title": "Fell off in hoary flakes",
+      "place": "Fell off in hoary flakes",
+      "reentry": "Within the shadow of the ship",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s96",
+      "title": "I watched their rich attire:",
+      "place": "I watched their rich attire:",
+      "reentry": "Blue, glossy green, and velvet black, They coiled and swam; and every track",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s97",
+      "title": "Was a flash of golden fire",
+      "place": "Was a flash of golden fire",
+      "reentry": "O happy living things! no tongue",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s98",
+      "title": "Their beauty might declare:",
+      "place": "Their beauty might declare:",
+      "reentry": "A spring of love gushed from my heart, And I blessed them unaware:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s99",
+      "title": "Sure my kind saint took pity on me,",
+      "place": "Sure my kind saint took pity on me,",
+      "reentry": "And I blessed them unaware.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s100",
+      "title": "The self same moment I could pray;",
+      "place": "The self same moment I could pray;",
+      "reentry": "And from my neck so free The Albatross fell off, and sank",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s101",
+      "title": "Like lead into the sea",
+      "place": "Like lead into the sea",
+      "reentry": "Part THE Fifth.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s102",
+      "title": "Oh sleep! it is a gentle thing,",
+      "place": "Oh sleep! it is a gentle thing,",
+      "reentry": "Beloved from pole to pole! To Mary Queen the praise be given!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s103",
+      "title": "She sent the gentle sleep from Heaven,",
+      "place": "She sent the gentle sleep from Heaven,",
+      "reentry": "That slid into my soul.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s104",
+      "title": "The silly buckets on the deck,",
+      "place": "The silly buckets on the deck,",
+      "reentry": "That had so long remained, I dreamt that they were filled with dew;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s105",
+      "title": "And when I awoke, it rained",
+      "place": "And when I awoke, it rained",
+      "reentry": "My lips were wet, my throat was cold,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s106",
+      "title": "My garments all were dank;",
+      "place": "My garments all were dank;",
+      "reentry": "Sure I had drunken in my dreams, And still my body drank.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s107",
+      "title": "I moved, and could not feel my limbs:",
+      "place": "I moved, and could not feel my limbs:",
+      "reentry": "I was so light--almost I thought that I had died in sleep,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s108",
+      "title": "And was a blessed ghost",
+      "place": "And was a blessed ghost",
+      "reentry": "And soon I heard a roaring wind:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s109",
+      "title": "It did not come anear;",
+      "place": "It did not come anear;",
+      "reentry": "But with its sound it shook the sails, That were so thin and sere.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s110",
+      "title": "The upper air burst into life!",
+      "place": "The upper air burst into life!",
+      "reentry": "And a hundred fire-flags sheen, To and fro they were hurried about!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s111",
+      "title": "And to and fro, and in and out,",
+      "place": "And to and fro, and in and out,",
+      "reentry": "The wan stars danced between.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s112",
+      "title": "And the coming wind did roar more loud,",
+      "place": "And the coming wind did roar more loud,",
+      "reentry": "And the sails did sigh like sedge; And the rain poured down from one black cloud;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s113",
+      "title": "The Moon was at its edge",
+      "place": "The Moon was at its edge",
+      "reentry": "The thick black cloud was cleft, and still",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s114",
+      "title": "The Moon was at its side:",
+      "place": "The Moon was at its side:",
+      "reentry": "Like waters shot from some high crag, The lightning fell with never a jag,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s115",
+      "title": "A river steep and wide",
+      "place": "A river steep and wide",
+      "reentry": "The loud wind never reached the ship,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s116",
+      "title": "Yet now the ship moved on!",
+      "place": "Yet now the ship moved on!",
+      "reentry": "Beneath the lightning and the Moon The dead men gave a groan.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s117",
+      "title": "They groaned, they stirred, they all uprose,",
+      "place": "They groaned, they stirred, they all uprose,",
+      "reentry": "Nor spake, nor moved their eyes; It had been strange, even in a dream,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s118",
+      "title": "To have seen those dead men rise",
+      "place": "To have seen those dead men rise",
+      "reentry": "The helmsman steered, the ship moved on;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s119",
+      "title": "Yet never a breeze up blew;",
+      "place": "Yet never a breeze up blew;",
+      "reentry": "The mariners all 'gan work the ropes, Where they were wont to do:",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s120",
+      "title": "They raised their limbs like lifeless tools--",
+      "place": "They raised their limbs like lifeless tools--",
+      "reentry": "We were a ghastly crew.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s121",
+      "title": "The body of my brother's son,",
+      "place": "The body of my brother's son,",
+      "reentry": "Stood by me, knee to knee: The body and I pulled at one rope,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s122",
+      "title": "But he said nought to me",
+      "place": "But he said nought to me",
+      "reentry": "\"I fear thee, ancient Mariner!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s123",
+      "title": "Be calm, thou Wedding-Guest!",
+      "place": "Be calm, thou Wedding-Guest!",
+      "reentry": "'Twas not those souls that fled in pain, Which to their corses came again,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s124",
+      "title": "But a troop of spirits blest:",
+      "place": "But a troop of spirits blest:",
+      "reentry": "For when it dawned--they dropped their arms,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s125",
+      "title": "And clustered round the mast;",
+      "place": "And clustered round the mast;",
+      "reentry": "Sweet sounds rose slowly through their mouths, And from their bodies passed.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s126",
+      "title": "Around, around, flew each sweet sound,",
+      "place": "Around, around, flew each sweet sound,",
+      "reentry": "Then darted to the Sun; Slowly the sounds came back again,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s127",
+      "title": "Now mixed, now one by one",
+      "place": "Now mixed, now one by one",
+      "reentry": "Sometimes a-dropping from the sky",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s128",
+      "title": "I heard the sky-lark sing;",
+      "place": "I heard the sky-lark sing;",
+      "reentry": "Sometimes all little birds that are, How they seemed to fill the sea and air",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s129",
+      "title": "With their sweet jargoning!",
+      "place": "With their sweet jargoning!",
+      "reentry": "And now 'twas like all instruments,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s130",
+      "title": "Now like a lonely flute;",
+      "place": "Now like a lonely flute;",
+      "reentry": "And now it is an angel's song, That makes the Heavens be mute.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s131",
+      "title": "It ceased; yet still the sails made on",
+      "place": "It ceased; yet still the sails made on",
+      "reentry": "A pleasant noise till noon, A noise like of a hidden brook",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s132",
+      "title": "In the leafy month of June,",
+      "place": "In the leafy month of June,",
+      "reentry": "That to the sleeping woods all night Singeth a quiet tune.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s133",
+      "title": "Till noon we quietly sailed on,",
+      "place": "Till noon we quietly sailed on,",
+      "reentry": "Yet never a breeze did breathe: Slowly and smoothly went the ship,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s134",
+      "title": "Moved onward from beneath",
+      "place": "Moved onward from beneath",
+      "reentry": "Under the keel nine fathom deep,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s135",
+      "title": "From the land of mist and snow,",
+      "place": "From the land of mist and snow,",
+      "reentry": "The spirit slid: and it was he That made the ship to go.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s136",
+      "title": "The sails at noon left off their tune,",
+      "place": "The sails at noon left off their tune,",
+      "reentry": "And the ship stood still also.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s137",
+      "title": "The Sun, right up above the mast,",
+      "place": "The Sun, right up above the mast,",
+      "reentry": "Had fixed her to the ocean: But in a minute she 'gan stir,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s138",
+      "title": "With a short uneasy motion--",
+      "place": "With a short uneasy motion--",
+      "reentry": "Backwards and forwards half her length With a short uneasy motion.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s139",
+      "title": "Then like a pawing horse let go,",
+      "place": "Then like a pawing horse let go,",
+      "reentry": "She made a sudden bound: It flung the blood into my head,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s140",
+      "title": "And I fell down in a swound",
+      "place": "And I fell down in a swound",
+      "reentry": "How long in that same fit I lay,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s141",
+      "title": "I have not to declare;",
+      "place": "I have not to declare;",
+      "reentry": "But ere my living life returned, I heard and in my soul discerned",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s142",
+      "title": "Two VOICES in the air",
+      "place": "Two VOICES in the air",
+      "reentry": "\"Is it he?\" quoth one, \"Is this the man?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s143",
+      "title": "By him who died on cross,",
+      "place": "By him who died on cross,",
+      "reentry": "With his cruel bow he laid full low, The harmless Albatross.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s144",
+      "title": "In the land of mist and snow,",
+      "place": "In the land of mist and snow,",
+      "reentry": "He loved the bird that loved the man Who shot him with his bow.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s145",
+      "title": "The other was a softer voice,",
+      "place": "The other was a softer voice,",
+      "reentry": "As soft as honey-dew: Quoth he, \"The man hath penance done,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s146",
+      "title": "And penance more will do.\"",
+      "place": "And penance more will do.\"",
+      "reentry": "Part THE Sixth.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s147",
+      "title": "First Voice",
+      "place": "First Voice",
+      "reentry": "But tell me, tell me! speak again,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s148",
+      "title": "Thy soft response renewing--",
+      "place": "Thy soft response renewing--",
+      "reentry": "What makes that ship drive on so fast? What is the Ocean doing?",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s149",
+      "title": "Second Voice",
+      "place": "Second Voice",
+      "reentry": "Still as a slave before his lord,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s150",
+      "title": "The OCEAN hath no blast;",
+      "place": "The OCEAN hath no blast;",
+      "reentry": "His great bright eye most silently Up to the Moon is cast--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s151",
+      "title": "If he may know which way to go;",
+      "place": "If he may know which way to go;",
+      "reentry": "For she guides him smooth or grim See, brother, see! how graciously",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s152",
+      "title": "First Voice",
+      "place": "First Voice",
+      "reentry": "But why drives on that ship so fast,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s153",
+      "title": "Second Voice",
+      "place": "Second Voice",
+      "reentry": "The air is cut away before,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s154",
+      "title": "And closes from behind",
+      "place": "And closes from behind",
+      "reentry": "Fly, brother, fly! more high, more high",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s155",
+      "title": "Or we shall be belated:",
+      "place": "Or we shall be belated:",
+      "reentry": "For slow and slow that ship will go, When the Mariner's trance is abated.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s156",
+      "title": "I woke, and we were sailing on",
+      "place": "I woke, and we were sailing on",
+      "reentry": "As in a gentle weather: 'Twas night, calm night, the Moon was high;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s157",
+      "title": "The dead men stood together",
+      "place": "The dead men stood together",
+      "reentry": "All stood together on the deck,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s158",
+      "title": "For a charnel-dungeon fitter:",
+      "place": "For a charnel-dungeon fitter:",
+      "reentry": "All fixed on me their stony eyes, That in the Moon did glitter.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s159",
+      "title": "The pang, the curse, with which they died,",
+      "place": "The pang, the curse, with which they died,",
+      "reentry": "Had never passed away: I could not draw my eyes from theirs,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s160",
+      "title": "Nor turn them up to pray",
+      "place": "Nor turn them up to pray",
+      "reentry": "And now this spell was snapt: once more",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s161",
+      "title": "I viewed the ocean green",
+      "place": "I viewed the ocean green",
+      "reentry": "And looked far forth, yet little saw Of what had else been seen--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s162",
+      "title": "Like one that on a lonesome road",
+      "place": "Like one that on a lonesome road",
+      "reentry": "Doth walk in fear and dread, And having once turned round walks on,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s163",
+      "title": "And turns no more his head;",
+      "place": "And turns no more his head;",
+      "reentry": "Because he knows, a frightful fiend Doth close behind him tread.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s164",
+      "title": "But soon there breathed a wind on me,",
+      "place": "But soon there breathed a wind on me,",
+      "reentry": "Nor sound nor motion made: Its path was not upon the sea,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s165",
+      "title": "In ripple or in shade",
+      "place": "In ripple or in shade",
+      "reentry": "It raised my hair, it fanned my cheek",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s166",
+      "title": "Like a meadow-gale of spring--",
+      "place": "Like a meadow-gale of spring--",
+      "reentry": "It mingled strangely with my fears, Yet it felt like a welcoming.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s167",
+      "title": "Swiftly, swiftly flew the ship,",
+      "place": "Swiftly, swiftly flew the ship,",
+      "reentry": "Yet she sailed softly too: Sweetly, sweetly blew the breeze--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s168",
+      "title": "On me alone it blew",
+      "place": "On me alone it blew",
+      "reentry": "Oh! dream of joy! is this indeed",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s169",
+      "title": "The light-house top I see?",
+      "place": "The light-house top I see?",
+      "reentry": "Is this the hill? is this the kirk? Is this mine own countree!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s170",
+      "title": "We drifted o'er the harbour-bar,",
+      "place": "We drifted o'er the harbour-bar,",
+      "reentry": "And I with sobs did pray-- O let me be awake, my God!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s171",
+      "title": "Or let me sleep alway",
+      "place": "Or let me sleep alway",
+      "reentry": "The harbour-bay was clear as glass,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s172",
+      "title": "So smoothly it was strewn!",
+      "place": "So smoothly it was strewn!",
+      "reentry": "And on the bay the moonlight lay, And the shadow of the moon.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s173",
+      "title": "The rock shone bright, the kirk no less,",
+      "place": "The rock shone bright, the kirk no less,",
+      "reentry": "That stands above the rock: The moonlight steeped in silentness",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s174",
+      "title": "The steady weathercock",
+      "place": "The steady weathercock",
+      "reentry": "And the bay was white with silent light,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s175",
+      "title": "Till rising from the same,",
+      "place": "Till rising from the same,",
+      "reentry": "Full many shapes, that shadows were, In crimson colours came.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s176",
+      "title": "A little distance from the prow",
+      "place": "A little distance from the prow",
+      "reentry": "Those crimson shadows were: I turned my eyes upon the deck--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s177",
+      "title": "Oh, Christ! what saw I there!",
+      "place": "Oh, Christ! what saw I there!",
+      "reentry": "Each corse lay flat, lifeless and flat,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s178",
+      "title": "And, by the holy rood!",
+      "place": "And, by the holy rood!",
+      "reentry": "A man all light, a seraph-man, On every corse there stood.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s179",
+      "title": "This seraph band, each waved his hand:",
+      "place": "This seraph band, each waved his hand:",
+      "reentry": "It was a heavenly sight! They stood as signals to the land,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s180",
+      "title": "Each one a lovely light:",
+      "place": "Each one a lovely light:",
+      "reentry": "This seraph-band, each waved his hand,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s181",
+      "title": "No voice did they impart--",
+      "place": "No voice did they impart--",
+      "reentry": "No voice; but oh! the silence sank Like music on my heart.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s182",
+      "title": "But soon I heard the dash of oars;",
+      "place": "But soon I heard the dash of oars;",
+      "reentry": "I heard the Pilot's cheer; My head was turned perforce away,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s183",
+      "title": "And I saw a boat appear",
+      "place": "And I saw a boat appear",
+      "reentry": "The Pilot, and the Pilot's boy,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s184",
+      "title": "I heard them coming fast:",
+      "place": "I heard them coming fast:",
+      "reentry": "Dear Lord in Heaven! it was a joy The dead men could not blast.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s185",
+      "title": "I saw a third--I heard his voice:",
+      "place": "I saw a third--I heard his voice:",
+      "reentry": "It is the Hermit good! He singeth loud his godly hymns",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s186",
+      "title": "That he makes in the wood",
+      "place": "That he makes in the wood",
+      "reentry": "He'll shrieve my soul, he'll wash away The Albatross's blood.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s187",
+      "title": "This Hermit good lives in that wood",
+      "place": "This Hermit good lives in that wood",
+      "reentry": "Which slopes down to the sea. How loudly his sweet voice he rears!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s188",
+      "title": "He loves to talk with marineres",
+      "place": "He loves to talk with marineres",
+      "reentry": "That come from a far countree.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s189",
+      "title": "He kneels at morn and noon and eve--",
+      "place": "He kneels at morn and noon and eve--",
+      "reentry": "He hath a cushion plump: It is the moss that wholly hides",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s190",
+      "title": "The rotted old oak-stump",
+      "place": "The rotted old oak-stump",
+      "reentry": "The skiff-boat neared: I heard them talk, \"Why this is strange, I trow!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s191",
+      "title": "Where are those lights so many and fair,",
+      "place": "Where are those lights so many and fair,",
+      "reentry": "That signal made but now?\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s192",
+      "title": "The planks looked warped! and see those sails,",
+      "place": "The planks looked warped! and see those sails,",
+      "reentry": "How thin they are and sere! I never saw aught like to them,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s193",
+      "title": "Unless perchance it were",
+      "place": "Unless perchance it were",
+      "reentry": "\"Brown skeletons of leaves that lag",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s194",
+      "title": "My forest-brook along;",
+      "place": "My forest-brook along;",
+      "reentry": "When the ivy-tod is heavy with snow, And the owlet whoops to the wolf below,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s195",
+      "title": "That eats the she-wolf's young.\"",
+      "place": "That eats the she-wolf's young.\"",
+      "reentry": "\"Dear Lord! it hath a fiendish look-- (The Pilot made reply)",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s196",
+      "title": "I am a-feared\"--\"Push on, push on!\"",
+      "place": "I am a-feared\"--\"Push on, push on!\"",
+      "reentry": "Said the Hermit cheerily.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s197",
+      "title": "The boat came closer to the ship,",
+      "place": "The boat came closer to the ship,",
+      "reentry": "But I nor spake nor stirred; The boat came close beneath the ship,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s198",
+      "title": "And straight a sound was heard",
+      "place": "And straight a sound was heard",
+      "reentry": "Under the water it rumbled on,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s199",
+      "title": "Still louder and more dread:",
+      "place": "Still louder and more dread:",
+      "reentry": "It reached the ship, it split the bay; The ship went down like lead.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s200",
+      "title": "Stunned by that loud and dreadful sound,",
+      "place": "Stunned by that loud and dreadful sound,",
+      "reentry": "Which sky and ocean smote, Like one that hath been seven days drowned",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s201",
+      "title": "My body lay afloat;",
+      "place": "My body lay afloat;",
+      "reentry": "But swift as dreams, myself I found Within the Pilot's boat.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s202",
+      "title": "Upon the whirl, where sank the ship,",
+      "place": "Upon the whirl, where sank the ship,",
+      "reentry": "The boat spun round and round; And all was still, save that the hill",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s203",
+      "title": "Was telling of the sound",
+      "place": "Was telling of the sound",
+      "reentry": "I moved my lips--the Pilot shrieked",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s204",
+      "title": "And fell down in a fit;",
+      "place": "And fell down in a fit;",
+      "reentry": "The holy Hermit raised his eyes, And prayed where he did sit.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s205",
+      "title": "I took the oars: the Pilot's boy,",
+      "place": "I took the oars: the Pilot's boy,",
+      "reentry": "Who now doth crazy go, Laughed loud and long, and all the while",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s206",
+      "title": "His eyes went to and fro",
+      "place": "His eyes went to and fro",
+      "reentry": "\"Ha! ha!\" quoth he, \"full plain I see, The Devil knows how to row.\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s207",
+      "title": "And now, all in my own countree,",
+      "place": "And now, all in my own countree,",
+      "reentry": "I stood on the firm land! The Hermit stepped forth from the boat,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s208",
+      "title": "And scarcely he could stand",
+      "place": "And scarcely he could stand",
+      "reentry": "\"O shrieve me, shrieve me, holy man!\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s209",
+      "title": "The Hermit crossed his brow",
+      "place": "The Hermit crossed his brow",
+      "reentry": "\"Say quick,\" quoth he, \"I bid thee say-- What manner of man art thou?\"",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s210",
+      "title": "Forthwith this frame of mine was wrenched",
+      "place": "Forthwith this frame of mine was wrenched",
+      "reentry": "With a woeful agony, Which forced me to begin my tale;",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s211",
+      "title": "And then it left me free",
+      "place": "And then it left me free",
+      "reentry": "Since then, at an uncertain hour,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s212",
+      "title": "That agony returns;",
+      "place": "That agony returns;",
+      "reentry": "And till my ghastly tale is told, This heart within me burns.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s213",
+      "title": "I pass, like night, from land to land;",
+      "place": "I pass, like night, from land to land;",
+      "reentry": "I have strange power of speech; That moment that his face I see,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s214",
+      "title": "I know the man that must hear me:",
+      "place": "I know the man that must hear me:",
+      "reentry": "To him my tale I teach.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s215",
+      "title": "What loud uproar bursts from that door!",
+      "place": "What loud uproar bursts from that door!",
+      "reentry": "The wedding-guests are there: But in the garden-bower the bride",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s216",
+      "title": "And bride-maids singing are:",
+      "place": "And bride-maids singing are:",
+      "reentry": "And hark the little vesper bell, Which biddeth me to prayer!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s217",
+      "title": "O Wedding-Guest! this soul hath been",
+      "place": "O Wedding-Guest! this soul hath been",
+      "reentry": "Alone on a wide wide sea: So lonely 'twas, that God himself",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s218",
+      "title": "Scarce seemed there to be",
+      "place": "Scarce seemed there to be",
+      "reentry": "O sweeter than the marriage-feast, 'Tis sweeter far to me,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s219",
+      "title": "To walk together to the kirk",
+      "place": "To walk together to the kirk",
+      "reentry": "With a goodly company!--",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s220",
+      "title": "To walk together to the kirk,",
+      "place": "To walk together to the kirk,",
+      "reentry": "And all together pray, While each to his great Father bends,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s221",
+      "title": "Old men, and babes, and loving friends,",
+      "place": "Old men, and babes, and loving friends,",
+      "reentry": "And youths and maidens gay!",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s222",
+      "title": "Farewell, farewell! but this I tell",
+      "place": "Farewell, farewell! but this I tell",
+      "reentry": "To thee, thou Wedding-Guest! He prayeth well, who loveth well",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s223",
+      "title": "Both man and bird and beast",
+      "place": "Both man and bird and beast",
+      "reentry": "He prayeth best, who loveth best",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s224",
+      "title": "All things both great and small;",
+      "place": "All things both great and small;",
+      "reentry": "For the dear God who loveth us He made and loveth all.",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s225",
+      "title": "The Mariner, whose eye is bright,",
+      "place": "The Mariner, whose eye is bright,",
+      "reentry": "Whose beard with age is hoar, Is gone: and now the Wedding-Guest",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s226",
+      "title": "Turned from the bridegroom's door",
+      "place": "Turned from the bridegroom's door",
+      "reentry": "He went like one that hath been stunned,",
+      "prompt": "What does the poem hold?"
+    },
+    {
+      "id": "s227",
+      "title": "And is of sense forlorn:",
+      "place": "And is of sense forlorn:",
+      "reentry": "A sadder and a wiser man, He rose the morrow morn.",
+      "prompt": "What does the poem hold?"
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Merrily did we drop Below the kirk, below the hill,"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The Sun came up upon the left,"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "And he shone bright, and on the right Went down into the sea."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Till over the mast at noon-- The Wedding-Guest here beat his breast,"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "The bride hath paced into the hall,"
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Nodding their heads before her goes The merry minstrelsy."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Yet he cannot chuse but hear; And thus spake on that ancient man,"
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "And now the Storm-Blast came, and he"
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "He struck with his o'ertaking wings, And chased south along."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "As who pursued with yell and blow Still treads the shadow of his foe"
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "The ship drove fast, loud roared the blast, And southward aye we fled."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "And it grew wondrous cold: And ice, mast-high, came floating by,"
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "And through the drifts the snowy clifts"
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "Nor shapes of men nor beasts we ken-- The ice was all between."
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "The ice was all around: It cracked and growled, and roared and howled,"
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "At length did cross an Albatross:"
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "As if it had been a Christian soul, We hailed it in God's name."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "And round and round it flew. The ice did split with a thunder-fit;"
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "And a good south wind sprung up behind;"
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "And every day, for food or play, Came to the mariners' hollo!"
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "It perched for vespers nine; Whiles all the night, through fog-smoke white,"
+    },
+    {
+      "id": "s21-0",
+      "sceneId": "s21",
+      "text": "\"God save thee, ancient Mariner!"
+    },
+    {
+      "id": "s22-0",
+      "sceneId": "s22",
+      "text": "Why look'st thou so?\"--With my cross-bow I shot the Albatross."
+    },
+    {
+      "id": "s22-1",
+      "sceneId": "s22",
+      "text": "Part THE Second."
+    },
+    {
+      "id": "s23-0",
+      "sceneId": "s23",
+      "text": "Out of the sea came he, Still hid in mist, and on the left"
+    },
+    {
+      "id": "s24-0",
+      "sceneId": "s24",
+      "text": "And the good south wind still blew behind"
+    },
+    {
+      "id": "s25-0",
+      "sceneId": "s25",
+      "text": "Nor any day for food or play Came to the mariners' hollo!"
+    },
+    {
+      "id": "s26-0",
+      "sceneId": "s26",
+      "text": "And it would work 'em woe: For all averred, I had killed the bird"
+    },
+    {
+      "id": "s27-0",
+      "sceneId": "s27",
+      "text": "Ah wretch! said they, the bird to slay That made the breeze to blow!"
+    },
+    {
+      "id": "s28-0",
+      "sceneId": "s28",
+      "text": "The glorious Sun uprist: Then all averred, I had killed the bird"
+    },
+    {
+      "id": "s29-0",
+      "sceneId": "s29",
+      "text": "'Twas right, said they, such birds to slay, That bring the fog and mist."
+    },
+    {
+      "id": "s30-0",
+      "sceneId": "s30",
+      "text": "The furrow followed free: We were the first that ever burst"
+    },
+    {
+      "id": "s31-0",
+      "sceneId": "s31",
+      "text": "Down dropt the breeze, the sails dropt down, 'Twas sad as sad could be;"
+    },
+    {
+      "id": "s32-0",
+      "sceneId": "s32",
+      "text": "The silence of the sea!"
+    },
+    {
+      "id": "s33-0",
+      "sceneId": "s33",
+      "text": "The bloody Sun, at noon, Right up above the mast did stand,"
+    },
+    {
+      "id": "s34-0",
+      "sceneId": "s34",
+      "text": "Day after day, day after day,"
+    },
+    {
+      "id": "s35-0",
+      "sceneId": "s35",
+      "text": "As idle as a painted ship Upon a painted ocean."
+    },
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "And all the boards did shrink; Water, water, every where,"
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "The very deep did rot: O Christ!"
+    },
+    {
+      "id": "s38-0",
+      "sceneId": "s38",
+      "text": "Yea, slimy things did crawl with legs Upon the slimy sea."
+    },
+    {
+      "id": "s39-0",
+      "sceneId": "s39",
+      "text": "The death-fires danced at night; The water, like a witch's oils,"
+    },
+    {
+      "id": "s40-0",
+      "sceneId": "s40",
+      "text": "And some in dreams assured were"
+    },
+    {
+      "id": "s41-0",
+      "sceneId": "s41",
+      "text": "Nine fathom deep he had followed us From the land of mist and snow."
+    },
+    {
+      "id": "s42-0",
+      "sceneId": "s42",
+      "text": "Was withered at the root; We could not speak, no more than if"
+    },
+    {
+      "id": "s43-0",
+      "sceneId": "s43",
+      "text": "Ah! well a-day! what evil looks"
+    },
+    {
+      "id": "s44-0",
+      "sceneId": "s44",
+      "text": "Instead of the cross, the Albatross About my neck was hung."
+    },
+    {
+      "id": "s44-1",
+      "sceneId": "s44",
+      "text": "Part THE Third."
+    },
+    {
+      "id": "s45-0",
+      "sceneId": "s45",
+      "text": "Was parched, and glazed each eye. A weary time! a weary time!"
+    },
+    {
+      "id": "s46-0",
+      "sceneId": "s46",
+      "text": "When looking westward, I beheld A something in the sky."
+    },
+    {
+      "id": "s47-0",
+      "sceneId": "s47",
+      "text": "And then it seemed a mist: It moved and moved, and took at last"
+    },
+    {
+      "id": "s48-0",
+      "sceneId": "s48",
+      "text": "A speck, a mist, a shape, I wist!"
+    },
+    {
+      "id": "s49-0",
+      "sceneId": "s49",
+      "text": "As if it dodged a water-sprite, It plunged and tacked and veered."
+    },
+    {
+      "id": "s50-0",
+      "sceneId": "s50",
+      "text": "We could not laugh nor wail; Through utter drought all dumb we stood!"
+    },
+    {
+      "id": "s51-0",
+      "sceneId": "s51",
+      "text": "And cried, A sail! a sail!"
+    },
+    {
+      "id": "s52-0",
+      "sceneId": "s52",
+      "text": "Agape they heard me call: Gramercy! they for joy did grin,"
+    },
+    {
+      "id": "s53-0",
+      "sceneId": "s53",
+      "text": "As they were drinking all."
+    },
+    {
+      "id": "s54-0",
+      "sceneId": "s54",
+      "text": "Hither to work us weal; Without a breeze, without a tide,"
+    },
+    {
+      "id": "s55-0",
+      "sceneId": "s55",
+      "text": "The western wave was all a-flame"
+    },
+    {
+      "id": "s56-0",
+      "sceneId": "s56",
+      "text": "Almost upon the western wave Rested the broad bright Sun;"
+    },
+    {
+      "id": "s57-0",
+      "sceneId": "s57",
+      "text": "Betwixt us and the Sun."
+    },
+    {
+      "id": "s58-0",
+      "sceneId": "s58",
+      "text": "(Heaven's Mother send us grace!) As if through a dungeon-grate he peered,"
+    },
+    {
+      "id": "s59-0",
+      "sceneId": "s59",
+      "text": "Alas! (thought I, and my heart beat loud)"
+    },
+    {
+      "id": "s60-0",
+      "sceneId": "s60",
+      "text": "Are those her sails that glance in the Sun, Like restless gossameres!"
+    },
+    {
+      "id": "s61-0",
+      "sceneId": "s61",
+      "text": "Did peer, as through a grate? And is that Woman all her crew?"
+    },
+    {
+      "id": "s62-0",
+      "sceneId": "s62",
+      "text": "Is Death that woman's mate?"
+    },
+    {
+      "id": "s63-0",
+      "sceneId": "s63",
+      "text": "Her locks were yellow as gold: Her skin was as white as leprosy,"
+    },
+    {
+      "id": "s64-0",
+      "sceneId": "s64",
+      "text": "Who thicks man's blood with cold."
+    },
+    {
+      "id": "s65-0",
+      "sceneId": "s65",
+      "text": "And the twain were casting dice; \"The game is done! I've won! I've won!\""
+    },
+    {
+      "id": "s66-0",
+      "sceneId": "s66",
+      "text": "The Sun's rim dips; the stars rush out:"
+    },
+    {
+      "id": "s67-0",
+      "sceneId": "s67",
+      "text": "With far-heard whisper, o'er the sea. Off shot the spectre-bark."
+    },
+    {
+      "id": "s68-0",
+      "sceneId": "s68",
+      "text": "Fear at my heart, as at a cup, My life-blood seemed to sip!"
+    },
+    {
+      "id": "s69-0",
+      "sceneId": "s69",
+      "text": "The steersman's face by his lamp gleamed white; From the sails the dew did drip--"
+    },
+    {
+      "id": "s70-0",
+      "sceneId": "s70",
+      "text": "The horned Moon, with one bright star Within the nether tip."
+    },
+    {
+      "id": "s71-0",
+      "sceneId": "s71",
+      "text": "Too quick for groan or sigh, Each turned his face with a ghastly pang,"
+    },
+    {
+      "id": "s72-0",
+      "sceneId": "s72",
+      "text": "Four times fifty living men, (And I heard nor sigh nor groan)"
+    },
+    {
+      "id": "s73-0",
+      "sceneId": "s73",
+      "text": "They dropped down one by one."
+    },
+    {
+      "id": "s74-0",
+      "sceneId": "s74",
+      "text": "They fled to bliss or woe! And every soul, it passed me by,"
+    },
+    {
+      "id": "s75-0",
+      "sceneId": "s75",
+      "text": "Part THE Fourth."
+    },
+    {
+      "id": "s75-1",
+      "sceneId": "s75",
+      "text": "\"I fear thee, ancient Mariner!"
+    },
+    {
+      "id": "s76-0",
+      "sceneId": "s76",
+      "text": "And thou art long, and lank, and brown, As is the ribbed sea-sand."
+    },
+    {
+      "id": "s76-1",
+      "sceneId": "s76",
+      "text": "\"I fear thee and thy glittering eye,"
+    },
+    {
+      "id": "s77-0",
+      "sceneId": "s77",
+      "text": "Fear not, fear not, thou Wedding-Guest! This body dropt not down."
+    },
+    {
+      "id": "s78-0",
+      "sceneId": "s78",
+      "text": "Alone on a wide wide sea! And never a saint took pity on"
+    },
+    {
+      "id": "s79-0",
+      "sceneId": "s79",
+      "text": "The many men, so beautiful!"
+    },
+    {
+      "id": "s80-0",
+      "sceneId": "s80",
+      "text": "And a thousand thousand slimy things Lived on; and so did I."
+    },
+    {
+      "id": "s81-0",
+      "sceneId": "s81",
+      "text": "And drew my eyes away; I looked upon the rotting deck,"
+    },
+    {
+      "id": "s82-0",
+      "sceneId": "s82",
+      "text": "I looked to Heaven, and tried to pray:"
+    },
+    {
+      "id": "s83-0",
+      "sceneId": "s83",
+      "text": "A wicked whisper came, and made my heart as dry as dust."
+    },
+    {
+      "id": "s84-0",
+      "sceneId": "s84",
+      "text": "And the balls like pulses beat; For the sky and the sea, and the sea and the sky"
+    },
+    {
+      "id": "s85-0",
+      "sceneId": "s85",
+      "text": "And the dead were at my feet."
+    },
+    {
+      "id": "s86-0",
+      "sceneId": "s86",
+      "text": "Nor rot nor reek did they: The look with which they looked on me"
+    },
+    {
+      "id": "s87-0",
+      "sceneId": "s87",
+      "text": "An orphan's curse would drag to Hell"
+    },
+    {
+      "id": "s88-0",
+      "sceneId": "s88",
+      "text": "But oh! more horrible than that Is a curse in a dead man's eye!"
+    },
+    {
+      "id": "s89-0",
+      "sceneId": "s89",
+      "text": "And yet I could not die."
+    },
+    {
+      "id": "s90-0",
+      "sceneId": "s90",
+      "text": "And no where did abide: Softly she was going up,"
+    },
+    {
+      "id": "s91-0",
+      "sceneId": "s91",
+      "text": "Her beams bemocked the sultry main,"
+    },
+    {
+      "id": "s92-0",
+      "sceneId": "s92",
+      "text": "But where the ship's huge shadow lay, The charmed water burnt alway"
+    },
+    {
+      "id": "s93-0",
+      "sceneId": "s93",
+      "text": "Beyond the shadow of the ship,"
+    },
+    {
+      "id": "s94-0",
+      "sceneId": "s94",
+      "text": "They moved in tracks of shining white, And when they reared, the elfish light"
+    },
+    {
+      "id": "s95-0",
+      "sceneId": "s95",
+      "text": "Within the shadow of the ship"
+    },
+    {
+      "id": "s96-0",
+      "sceneId": "s96",
+      "text": "Blue, glossy green, and velvet black, They coiled and swam; and every track"
+    },
+    {
+      "id": "s97-0",
+      "sceneId": "s97",
+      "text": "O happy living things! no tongue"
+    },
+    {
+      "id": "s98-0",
+      "sceneId": "s98",
+      "text": "A spring of love gushed from my heart, And I blessed them unaware:"
+    },
+    {
+      "id": "s99-0",
+      "sceneId": "s99",
+      "text": "And I blessed them unaware."
+    },
+    {
+      "id": "s100-0",
+      "sceneId": "s100",
+      "text": "And from my neck so free The Albatross fell off, and sank"
+    },
+    {
+      "id": "s101-0",
+      "sceneId": "s101",
+      "text": "Part THE Fifth."
+    },
+    {
+      "id": "s102-0",
+      "sceneId": "s102",
+      "text": "Beloved from pole to pole! To Mary Queen the praise be given!"
+    },
+    {
+      "id": "s103-0",
+      "sceneId": "s103",
+      "text": "That slid into my soul."
+    },
+    {
+      "id": "s104-0",
+      "sceneId": "s104",
+      "text": "That had so long remained, I dreamt that they were filled with dew;"
+    },
+    {
+      "id": "s105-0",
+      "sceneId": "s105",
+      "text": "My lips were wet, my throat was cold,"
+    },
+    {
+      "id": "s106-0",
+      "sceneId": "s106",
+      "text": "Sure I had drunken in my dreams, And still my body drank."
+    },
+    {
+      "id": "s107-0",
+      "sceneId": "s107",
+      "text": "I was so light--almost I thought that I had died in sleep,"
+    },
+    {
+      "id": "s108-0",
+      "sceneId": "s108",
+      "text": "And soon I heard a roaring wind:"
+    },
+    {
+      "id": "s109-0",
+      "sceneId": "s109",
+      "text": "But with its sound it shook the sails, That were so thin and sere."
+    },
+    {
+      "id": "s110-0",
+      "sceneId": "s110",
+      "text": "And a hundred fire-flags sheen, To and fro they were hurried about!"
+    },
+    {
+      "id": "s111-0",
+      "sceneId": "s111",
+      "text": "The wan stars danced between."
+    },
+    {
+      "id": "s112-0",
+      "sceneId": "s112",
+      "text": "And the sails did sigh like sedge; And the rain poured down from one black cloud;"
+    },
+    {
+      "id": "s113-0",
+      "sceneId": "s113",
+      "text": "The thick black cloud was cleft, and still"
+    },
+    {
+      "id": "s114-0",
+      "sceneId": "s114",
+      "text": "Like waters shot from some high crag, The lightning fell with never a jag,"
+    },
+    {
+      "id": "s115-0",
+      "sceneId": "s115",
+      "text": "The loud wind never reached the ship,"
+    },
+    {
+      "id": "s116-0",
+      "sceneId": "s116",
+      "text": "Beneath the lightning and the Moon The dead men gave a groan."
+    },
+    {
+      "id": "s117-0",
+      "sceneId": "s117",
+      "text": "Nor spake, nor moved their eyes; It had been strange, even in a dream,"
+    },
+    {
+      "id": "s118-0",
+      "sceneId": "s118",
+      "text": "The helmsman steered, the ship moved on;"
+    },
+    {
+      "id": "s119-0",
+      "sceneId": "s119",
+      "text": "The mariners all 'gan work the ropes, Where they were wont to do:"
+    },
+    {
+      "id": "s120-0",
+      "sceneId": "s120",
+      "text": "We were a ghastly crew."
+    },
+    {
+      "id": "s121-0",
+      "sceneId": "s121",
+      "text": "Stood by me, knee to knee: The body and I pulled at one rope,"
+    },
+    {
+      "id": "s122-0",
+      "sceneId": "s122",
+      "text": "\"I fear thee, ancient Mariner!\""
+    },
+    {
+      "id": "s123-0",
+      "sceneId": "s123",
+      "text": "'Twas not those souls that fled in pain, Which to their corses came again,"
+    },
+    {
+      "id": "s124-0",
+      "sceneId": "s124",
+      "text": "For when it dawned--they dropped their arms,"
+    },
+    {
+      "id": "s125-0",
+      "sceneId": "s125",
+      "text": "Sweet sounds rose slowly through their mouths, And from their bodies passed."
+    },
+    {
+      "id": "s126-0",
+      "sceneId": "s126",
+      "text": "Then darted to the Sun; Slowly the sounds came back again,"
+    },
+    {
+      "id": "s127-0",
+      "sceneId": "s127",
+      "text": "Sometimes a-dropping from the sky"
+    },
+    {
+      "id": "s128-0",
+      "sceneId": "s128",
+      "text": "Sometimes all little birds that are, How they seemed to fill the sea and air"
+    },
+    {
+      "id": "s129-0",
+      "sceneId": "s129",
+      "text": "And now 'twas like all instruments,"
+    },
+    {
+      "id": "s130-0",
+      "sceneId": "s130",
+      "text": "And now it is an angel's song, That makes the Heavens be mute."
+    },
+    {
+      "id": "s131-0",
+      "sceneId": "s131",
+      "text": "A pleasant noise till noon, A noise like of a hidden brook"
+    },
+    {
+      "id": "s132-0",
+      "sceneId": "s132",
+      "text": "That to the sleeping woods all night Singeth a quiet tune."
+    },
+    {
+      "id": "s133-0",
+      "sceneId": "s133",
+      "text": "Yet never a breeze did breathe: Slowly and smoothly went the ship,"
+    },
+    {
+      "id": "s134-0",
+      "sceneId": "s134",
+      "text": "Under the keel nine fathom deep,"
+    },
+    {
+      "id": "s135-0",
+      "sceneId": "s135",
+      "text": "The spirit slid: and it was he That made the ship to go."
+    },
+    {
+      "id": "s136-0",
+      "sceneId": "s136",
+      "text": "And the ship stood still also."
+    },
+    {
+      "id": "s137-0",
+      "sceneId": "s137",
+      "text": "Had fixed her to the ocean: But in a minute she 'gan stir,"
+    },
+    {
+      "id": "s138-0",
+      "sceneId": "s138",
+      "text": "Backwards and forwards half her length With a short uneasy motion."
+    },
+    {
+      "id": "s139-0",
+      "sceneId": "s139",
+      "text": "She made a sudden bound: It flung the blood into my head,"
+    },
+    {
+      "id": "s140-0",
+      "sceneId": "s140",
+      "text": "How long in that same fit I lay,"
+    },
+    {
+      "id": "s141-0",
+      "sceneId": "s141",
+      "text": "But ere my living life returned, I heard and in my soul discerned"
+    },
+    {
+      "id": "s142-0",
+      "sceneId": "s142",
+      "text": "\"Is it he?\" quoth one, \"Is this the man?"
+    },
+    {
+      "id": "s143-0",
+      "sceneId": "s143",
+      "text": "With his cruel bow he laid full low, The harmless Albatross."
+    },
+    {
+      "id": "s143-1",
+      "sceneId": "s143",
+      "text": "\"The spirit who bideth by himself"
+    },
+    {
+      "id": "s144-0",
+      "sceneId": "s144",
+      "text": "He loved the bird that loved the man Who shot him with his bow.\""
+    },
+    {
+      "id": "s145-0",
+      "sceneId": "s145",
+      "text": "As soft as honey-dew: Quoth he, \"The man hath penance done,"
+    },
+    {
+      "id": "s146-0",
+      "sceneId": "s146",
+      "text": "Part THE Sixth."
+    },
+    {
+      "id": "s147-0",
+      "sceneId": "s147",
+      "text": "But tell me, tell me! speak again,"
+    },
+    {
+      "id": "s148-0",
+      "sceneId": "s148",
+      "text": "What makes that ship drive on so fast? What is the Ocean doing?"
+    },
+    {
+      "id": "s149-0",
+      "sceneId": "s149",
+      "text": "Still as a slave before his lord,"
+    },
+    {
+      "id": "s150-0",
+      "sceneId": "s150",
+      "text": "His great bright eye most silently Up to the Moon is cast--"
+    },
+    {
+      "id": "s151-0",
+      "sceneId": "s151",
+      "text": "For she guides him smooth or grim See, brother, see! how graciously"
+    },
+    {
+      "id": "s152-0",
+      "sceneId": "s152",
+      "text": "But why drives on that ship so fast,"
+    },
+    {
+      "id": "s153-0",
+      "sceneId": "s153",
+      "text": "The air is cut away before,"
+    },
+    {
+      "id": "s154-0",
+      "sceneId": "s154",
+      "text": "Fly, brother, fly! more high, more high"
+    },
+    {
+      "id": "s155-0",
+      "sceneId": "s155",
+      "text": "For slow and slow that ship will go, When the Mariner's trance is abated."
+    },
+    {
+      "id": "s156-0",
+      "sceneId": "s156",
+      "text": "As in a gentle weather: 'Twas night, calm night, the Moon was high;"
+    },
+    {
+      "id": "s157-0",
+      "sceneId": "s157",
+      "text": "All stood together on the deck,"
+    },
+    {
+      "id": "s158-0",
+      "sceneId": "s158",
+      "text": "All fixed on me their stony eyes, That in the Moon did glitter."
+    },
+    {
+      "id": "s159-0",
+      "sceneId": "s159",
+      "text": "Had never passed away: I could not draw my eyes from theirs,"
+    },
+    {
+      "id": "s160-0",
+      "sceneId": "s160",
+      "text": "And now this spell was snapt: once more"
+    },
+    {
+      "id": "s161-0",
+      "sceneId": "s161",
+      "text": "And looked far forth, yet little saw Of what had else been seen--"
+    },
+    {
+      "id": "s162-0",
+      "sceneId": "s162",
+      "text": "Doth walk in fear and dread, And having once turned round walks on,"
+    },
+    {
+      "id": "s163-0",
+      "sceneId": "s163",
+      "text": "Because he knows, a frightful fiend Doth close behind him tread."
+    },
+    {
+      "id": "s164-0",
+      "sceneId": "s164",
+      "text": "Nor sound nor motion made: Its path was not upon the sea,"
+    },
+    {
+      "id": "s165-0",
+      "sceneId": "s165",
+      "text": "It raised my hair, it fanned my cheek"
+    },
+    {
+      "id": "s166-0",
+      "sceneId": "s166",
+      "text": "It mingled strangely with my fears, Yet it felt like a welcoming."
+    },
+    {
+      "id": "s167-0",
+      "sceneId": "s167",
+      "text": "Yet she sailed softly too: Sweetly, sweetly blew the breeze--"
+    },
+    {
+      "id": "s168-0",
+      "sceneId": "s168",
+      "text": "Oh! dream of joy! is this indeed"
+    },
+    {
+      "id": "s169-0",
+      "sceneId": "s169",
+      "text": "Is this the hill? is this the kirk? Is this mine own countree!"
+    },
+    {
+      "id": "s170-0",
+      "sceneId": "s170",
+      "text": "And I with sobs did pray-- O let me be awake, my God!"
+    },
+    {
+      "id": "s171-0",
+      "sceneId": "s171",
+      "text": "The harbour-bay was clear as glass,"
+    },
+    {
+      "id": "s172-0",
+      "sceneId": "s172",
+      "text": "And on the bay the moonlight lay, And the shadow of the moon."
+    },
+    {
+      "id": "s173-0",
+      "sceneId": "s173",
+      "text": "That stands above the rock: The moonlight steeped in silentness"
+    },
+    {
+      "id": "s174-0",
+      "sceneId": "s174",
+      "text": "And the bay was white with silent light,"
+    },
+    {
+      "id": "s175-0",
+      "sceneId": "s175",
+      "text": "Full many shapes, that shadows were, In crimson colours came."
+    },
+    {
+      "id": "s176-0",
+      "sceneId": "s176",
+      "text": "Those crimson shadows were: I turned my eyes upon the deck--"
+    },
+    {
+      "id": "s177-0",
+      "sceneId": "s177",
+      "text": "Each corse lay flat, lifeless and flat,"
+    },
+    {
+      "id": "s178-0",
+      "sceneId": "s178",
+      "text": "A man all light, a seraph-man, On every corse there stood."
+    },
+    {
+      "id": "s179-0",
+      "sceneId": "s179",
+      "text": "It was a heavenly sight! They stood as signals to the land,"
+    },
+    {
+      "id": "s180-0",
+      "sceneId": "s180",
+      "text": "This seraph-band, each waved his hand,"
+    },
+    {
+      "id": "s181-0",
+      "sceneId": "s181",
+      "text": "No voice; but oh! the silence sank Like music on my heart."
+    },
+    {
+      "id": "s182-0",
+      "sceneId": "s182",
+      "text": "I heard the Pilot's cheer; My head was turned perforce away,"
+    },
+    {
+      "id": "s183-0",
+      "sceneId": "s183",
+      "text": "The Pilot, and the Pilot's boy,"
+    },
+    {
+      "id": "s184-0",
+      "sceneId": "s184",
+      "text": "Dear Lord in Heaven! it was a joy The dead men could not blast."
+    },
+    {
+      "id": "s185-0",
+      "sceneId": "s185",
+      "text": "It is the Hermit good! He singeth loud his godly hymns"
+    },
+    {
+      "id": "s186-0",
+      "sceneId": "s186",
+      "text": "He'll shrieve my soul, he'll wash away The Albatross's blood."
+    },
+    {
+      "id": "s186-1",
+      "sceneId": "s186",
+      "text": "Part THE Seventh."
+    },
+    {
+      "id": "s187-0",
+      "sceneId": "s187",
+      "text": "Which slopes down to the sea. How loudly his sweet voice he rears!"
+    },
+    {
+      "id": "s188-0",
+      "sceneId": "s188",
+      "text": "That come from a far countree."
+    },
+    {
+      "id": "s189-0",
+      "sceneId": "s189",
+      "text": "He hath a cushion plump: It is the moss that wholly hides"
+    },
+    {
+      "id": "s190-0",
+      "sceneId": "s190",
+      "text": "The skiff-boat neared: I heard them talk, \"Why this is strange, I trow!"
+    },
+    {
+      "id": "s191-0",
+      "sceneId": "s191",
+      "text": "That signal made but now?\""
+    },
+    {
+      "id": "s191-1",
+      "sceneId": "s191",
+      "text": "\"Strange, by my faith!\" the Hermit said-- \"And they answered not our cheer!"
+    },
+    {
+      "id": "s192-0",
+      "sceneId": "s192",
+      "text": "How thin they are and sere! I never saw aught like to them,"
+    },
+    {
+      "id": "s193-0",
+      "sceneId": "s193",
+      "text": "\"Brown skeletons of leaves that lag"
+    },
+    {
+      "id": "s194-0",
+      "sceneId": "s194",
+      "text": "When the ivy-tod is heavy with snow, And the owlet whoops to the wolf below,"
+    },
+    {
+      "id": "s195-0",
+      "sceneId": "s195",
+      "text": "\"Dear Lord! it hath a fiendish look-- (The Pilot made reply)"
+    },
+    {
+      "id": "s196-0",
+      "sceneId": "s196",
+      "text": "Said the Hermit cheerily."
+    },
+    {
+      "id": "s197-0",
+      "sceneId": "s197",
+      "text": "But I nor spake nor stirred; The boat came close beneath the ship,"
+    },
+    {
+      "id": "s198-0",
+      "sceneId": "s198",
+      "text": "Under the water it rumbled on,"
+    },
+    {
+      "id": "s199-0",
+      "sceneId": "s199",
+      "text": "It reached the ship, it split the bay; The ship went down like lead."
+    },
+    {
+      "id": "s200-0",
+      "sceneId": "s200",
+      "text": "Which sky and ocean smote, Like one that hath been seven days drowned"
+    },
+    {
+      "id": "s201-0",
+      "sceneId": "s201",
+      "text": "But swift as dreams, myself I found Within the Pilot's boat."
+    },
+    {
+      "id": "s202-0",
+      "sceneId": "s202",
+      "text": "The boat spun round and round; And all was still, save that the hill"
+    },
+    {
+      "id": "s203-0",
+      "sceneId": "s203",
+      "text": "I moved my lips--the Pilot shrieked"
+    },
+    {
+      "id": "s204-0",
+      "sceneId": "s204",
+      "text": "The holy Hermit raised his eyes, And prayed where he did sit."
+    },
+    {
+      "id": "s205-0",
+      "sceneId": "s205",
+      "text": "Who now doth crazy go, Laughed loud and long, and all the while"
+    },
+    {
+      "id": "s206-0",
+      "sceneId": "s206",
+      "text": "\"Ha! ha!\" quoth he, \"full plain I see, The Devil knows how to row.\""
+    },
+    {
+      "id": "s207-0",
+      "sceneId": "s207",
+      "text": "I stood on the firm land! The Hermit stepped forth from the boat,"
+    },
+    {
+      "id": "s208-0",
+      "sceneId": "s208",
+      "text": "\"O shrieve me, shrieve me, holy man!\""
+    },
+    {
+      "id": "s209-0",
+      "sceneId": "s209",
+      "text": "\"Say quick,\" quoth he, \"I bid thee say-- What manner of man art thou?\""
+    },
+    {
+      "id": "s210-0",
+      "sceneId": "s210",
+      "text": "With a woeful agony, Which forced me to begin my tale;"
+    },
+    {
+      "id": "s211-0",
+      "sceneId": "s211",
+      "text": "Since then, at an uncertain hour,"
+    },
+    {
+      "id": "s212-0",
+      "sceneId": "s212",
+      "text": "And till my ghastly tale is told, This heart within me burns."
+    },
+    {
+      "id": "s213-0",
+      "sceneId": "s213",
+      "text": "I have strange power of speech; That moment that his face I see,"
+    },
+    {
+      "id": "s214-0",
+      "sceneId": "s214",
+      "text": "To him my tale I teach."
+    },
+    {
+      "id": "s215-0",
+      "sceneId": "s215",
+      "text": "The wedding-guests are there: But in the garden-bower the bride"
+    },
+    {
+      "id": "s216-0",
+      "sceneId": "s216",
+      "text": "And hark the little vesper bell, Which biddeth me to prayer!"
+    },
+    {
+      "id": "s217-0",
+      "sceneId": "s217",
+      "text": "Alone on a wide wide sea: So lonely 'twas, that God himself"
+    },
+    {
+      "id": "s218-0",
+      "sceneId": "s218",
+      "text": "O sweeter than the marriage-feast, 'Tis sweeter far to me,"
+    },
+    {
+      "id": "s219-0",
+      "sceneId": "s219",
+      "text": "With a goodly company!--"
+    },
+    {
+      "id": "s220-0",
+      "sceneId": "s220",
+      "text": "And all together pray, While each to his great Father bends,"
+    },
+    {
+      "id": "s221-0",
+      "sceneId": "s221",
+      "text": "And youths and maidens gay!"
+    },
+    {
+      "id": "s222-0",
+      "sceneId": "s222",
+      "text": "To thee, thou Wedding-Guest! He prayeth well, who loveth well"
+    },
+    {
+      "id": "s223-0",
+      "sceneId": "s223",
+      "text": "He prayeth best, who loveth best"
+    },
+    {
+      "id": "s224-0",
+      "sceneId": "s224",
+      "text": "For the dear God who loveth us He made and loveth all."
+    },
+    {
+      "id": "s225-0",
+      "sceneId": "s225",
+      "text": "Whose beard with age is hoar, Is gone: and now the Wedding-Guest"
+    },
+    {
+      "id": "s226-0",
+      "sceneId": "s226",
+      "text": "He went like one that hath been stunned,"
+    },
+    {
+      "id": "s227-0",
+      "sceneId": "s227",
+      "text": "A sadder and a wiser man, He rose the morrow morn."
+    }
+  ]
+}

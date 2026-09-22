@@ -1,0 +1,927 @@
+{
+  "id": "the-marriage-of-heaven-and-hell",
+  "title": "The Marriage of Heaven and Hell",
+  "author": "William Blake",
+  "year": "1790",
+  "note": "Project Gutenberg 45315",
+  "minutes": 40,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Voice of the Devil",
+      "place": "The Voice of the Devil",
+      "reentry": "All Bibles or sacred codes have been the cause of the following errors:--",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "A Memorable Fancy",
+      "place": "A Memorable Fancy",
+      "reentry": "As I was walking among the fires of Hell, delighted with the enjoyments of Genius, which to Angels look like torment and insanity, I collected some of their proverbs, thinking that as the sayings used in a nation mark its character, so the ",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Proverbs of Hell",
+      "place": "Proverbs of Hell",
+      "reentry": "In seed-time learn, in harvest teach, in winter enjoy.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "A Memorable Fancy",
+      "place": "A Memorable Fancy",
+      "reentry": "The Prophets Isaiah and Ezekiel dined with me, and I asked them how they dared so roundly to assert that God spoke to them, and whether they did not think at the time that they would be misunderstood, and so be the cause of imposition.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "A Memorable Fancy",
+      "place": "A Memorable Fancy",
+      "reentry": "I was in a printing-house in Hell, and saw the method in which knowledge is transmitted from generation to generation.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "A Memorable Fancy",
+      "place": "A Memorable Fancy",
+      "reentry": "An Angel came to me and said: \"O pitiable foolish young man! O horrible, O dreadful state! Consider the hot burning dungeon thou art preparing for thyself to all Eternity, to which thou art going in such career.\"",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "A Memorable Fancy",
+      "place": "A Memorable Fancy",
+      "reentry": "Once I saw a Devil in a flame of fire, who arose before an Angel that sat on a cloud, and the Devil uttered these words: \"The worship of God is, honouring His gifts in other men each according to his genius, and loving the greatest men best",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "A Song of Liberty",
+      "place": "A Song of Liberty",
+      "reentry": "1. The Eternal Female groan'd; it was heard over all the earth:",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Chorus",
+      "place": "Chorus",
+      "reentry": "Let the Priests of the Raven of Dawn, no longer in deadly black, with hoarse note curse the Sons of Joy. Nor his accepted brethren whom, tyrant, he calls free, lay the bound or build the roof. Nor pale religious lechery call that virginity ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "All Bibles or sacred codes have been the cause of the following errors:--"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "1. That man has two real existing principles, viz., a Body and a Soul."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "2. That Energy, called Evil, is alone from the Body; and that Reason, called Good, is alone from the Soul."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "3. That God will torment man in Eternity for following his Energies."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "But the following contraries to these are true:--"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "1. Man has no Body distinct from his Soul. For that called Body is a portion of Soul discerned by the five senses, the chief inlets of Soul in this age."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "2. Energy is the only life, and is from the Body; and Reason is the bound or outward circumference of Energy."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "3. Energy is Eternal Delight."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Those who restrain desire, do so because theirs is weak enough to be restrained; and the restrainer or reason usurps its place and governs the unwilling."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "And being restrained, it by degrees becomes passive, till it is only the shadow of desire."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "The history of this is written in Paradise Lost, and the Governor or Reason is called Messiah."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "And the original Archangel or possessor of the command of the heavenly host is called the Devil, or Satan, and his children are called Sin and Death."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "But in the book of Job, Milton's Messiah is called Satan."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "For this history has been adopted by both parties."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "It indeed appeared to Reason as if desire was cast out, but the Devil's account is, that the Messiah fell, and formed a heaven of what he stole from the abyss."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "This is shown in the Gospel, where he prays to the Father to send the Comforter or desire that Reason may have ideas to build on, the Jehovah of the Bible being no other than he who dwells in flaming fire. Know that after Christ's death he became Jehovah."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "But in Milton, the Father is Destiny, the Son a ratio of the five senses, and the Holy Ghost vacuum!"
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "*Note.*--The reason Milton wrote in fetters when he wrote of Angels and God, and at liberty when of Devils and Hell, is because he was a true poet, and of the Devil's party without knowing it."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "As I was walking among the fires of Hell, delighted with the enjoyments of Genius, which to Angels look like torment and insanity, I collected some of their proverbs, thinking that as the sayings used in a nation mark its character, so the proverbs of Hell show the nature of infernal wisdom better than any description of buildings or garments."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "When I came home, on the abyss of the five senses, where a flat-sided steep frowns over the present world, I saw a mighty Devil folded in black clouds hovering on the sides of the rock; with corroding fires he wrote the following sentence now perceived by the minds of men, and read by them on earth:--"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "\"How do you know but every bird that cuts the airy way Is an immense world of delight, closed by your senses five?\""
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "In seed-time learn, in harvest teach, in winter enjoy."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Drive your cart and your plough over the bones of the dead."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "The road of excess leads to the palace of wisdom."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Prudence is a rich ugly old maid courted by Incapacity."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "He who desires, but acts not, breeds pestilence."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "The cut worm forgives the plough."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Dip him in the river who loves water."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "A fool sees not the same tree that a wise man sees."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "He whose face gives no light shall never become a star."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "Eternity is in love with the productions of time."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "The busy bee has no time for sorrow."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "The hours of folly are measured by the clock, but of wisdom no clock can measure."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "All wholesome food is caught without a net or a trap."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "Bring out number, weight, and measure in a year of dearth."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "No bird soars too high if he soars with his own wings."
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "A dead body revenges not injuries."
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "The most sublime act is to set another before you."
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "If the fool would persist in his folly he would become wise."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "Folly is the cloak of knavery."
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "Shame is Pride's cloak."
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "Prisons are built with stones of law, brothels with bricks of religion."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "The pride of the peacock is the glory of God."
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "The lust of the goat is the bounty of God."
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "The wrath of the lion is the wisdom of God."
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "The nakedness of woman is the work of God."
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "Excess of sorrow laughs, excess of joy weeps."
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "The roaring of lions, the howling of wolves, the raging of the stormy sea, and the destructive sword, are portions of Eternity too great for the eye of man."
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "The fox condemns the trap, not himself."
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "Joys impregnate, sorrows bring forth."
+    },
+    {
+      "id": "s2-29",
+      "sceneId": "s2",
+      "text": "Let man wear the fell of the lion, woman the fleece of the sheep."
+    },
+    {
+      "id": "s2-30",
+      "sceneId": "s2",
+      "text": "The bird a nest, the spider a web, man friendship."
+    },
+    {
+      "id": "s2-31",
+      "sceneId": "s2",
+      "text": "The selfish smiling fool and the sullen frowning fool shall be both thought wise that they may be a rod."
+    },
+    {
+      "id": "s2-32",
+      "sceneId": "s2",
+      "text": "What is now proved was once only imagined."
+    },
+    {
+      "id": "s2-33",
+      "sceneId": "s2",
+      "text": "The rat, the mouse, the fox, the rabbit watch the roots; the lion, the tiger, the horse, the elephant watch the fruits."
+    },
+    {
+      "id": "s2-34",
+      "sceneId": "s2",
+      "text": "The cistern contains, the fountain overflows."
+    },
+    {
+      "id": "s2-35",
+      "sceneId": "s2",
+      "text": "One thought fills immensity."
+    },
+    {
+      "id": "s2-36",
+      "sceneId": "s2",
+      "text": "Always be ready to speak your mind, and a base man will avoid you."
+    },
+    {
+      "id": "s2-37",
+      "sceneId": "s2",
+      "text": "Everything possible to be believed is an image of truth."
+    },
+    {
+      "id": "s2-38",
+      "sceneId": "s2",
+      "text": "The eagle never lost so much time as when he submitted to learn of the crow."
+    },
+    {
+      "id": "s2-39",
+      "sceneId": "s2",
+      "text": "The fox provides for himself, but God provides for the lion."
+    },
+    {
+      "id": "s2-40",
+      "sceneId": "s2",
+      "text": "Think in the morning, act in the noon, eat in the evening, sleep in the night."
+    },
+    {
+      "id": "s2-41",
+      "sceneId": "s2",
+      "text": "He who has suffered you to impose on him knows you."
+    },
+    {
+      "id": "s2-42",
+      "sceneId": "s2",
+      "text": "As the plough follows words, so God rewards prayers."
+    },
+    {
+      "id": "s2-43",
+      "sceneId": "s2",
+      "text": "The tigers of wrath are wiser than the horses of instruction."
+    },
+    {
+      "id": "s2-44",
+      "sceneId": "s2",
+      "text": "Expect poison from the standing water."
+    },
+    {
+      "id": "s2-45",
+      "sceneId": "s2",
+      "text": "You never know what is enough unless you know what is more than enough."
+    },
+    {
+      "id": "s2-46",
+      "sceneId": "s2",
+      "text": "Listen to the fool's reproach; it is a kingly title."
+    },
+    {
+      "id": "s2-47",
+      "sceneId": "s2",
+      "text": "The eyes of fire, the nostrils of air, the mouth of water, the beard of earth."
+    },
+    {
+      "id": "s2-48",
+      "sceneId": "s2",
+      "text": "The weak in courage is strong in cunning."
+    },
+    {
+      "id": "s2-49",
+      "sceneId": "s2",
+      "text": "The apple tree never asks the beech how he shall grow, nor the lion the horse how he shall take his prey."
+    },
+    {
+      "id": "s2-50",
+      "sceneId": "s2",
+      "text": "The thankful receiver bears a plentiful harvest."
+    },
+    {
+      "id": "s2-51",
+      "sceneId": "s2",
+      "text": "If others had not been foolish we should have been so."
+    },
+    {
+      "id": "s2-52",
+      "sceneId": "s2",
+      "text": "The soul of sweet delight can never be defiled."
+    },
+    {
+      "id": "s2-53",
+      "sceneId": "s2",
+      "text": "When thou seest an eagle, thou seest a portion of Genius. Lift up thy head!"
+    },
+    {
+      "id": "s2-54",
+      "sceneId": "s2",
+      "text": "As the caterpillar chooses the fairest leaves to lay her eggs on, so the priest lays his curse on the fairest joys."
+    },
+    {
+      "id": "s2-55",
+      "sceneId": "s2",
+      "text": "To create a little flower is the labour of ages."
+    },
+    {
+      "id": "s2-56",
+      "sceneId": "s2",
+      "text": "Damn braces; bless relaxes."
+    },
+    {
+      "id": "s2-57",
+      "sceneId": "s2",
+      "text": "The best wine is the oldest, the best water the newest."
+    },
+    {
+      "id": "s2-58",
+      "sceneId": "s2",
+      "text": "Prayers plough not; praises reap not; joys laugh not; sorrows weep not."
+    },
+    {
+      "id": "s2-59",
+      "sceneId": "s2",
+      "text": "The head Sublime, the heart Pathos, the genitals Beauty, the hands and feet Proportion."
+    },
+    {
+      "id": "s2-60",
+      "sceneId": "s2",
+      "text": "As the air to a bird, or the sea to a fish, so is contempt to the contemptible."
+    },
+    {
+      "id": "s2-61",
+      "sceneId": "s2",
+      "text": "The crow wished everything was black; the owl that everything was white."
+    },
+    {
+      "id": "s2-62",
+      "sceneId": "s2",
+      "text": "Exuberance is Beauty."
+    },
+    {
+      "id": "s2-63",
+      "sceneId": "s2",
+      "text": "If the lion was advised by the fox, he would be cunning."
+    },
+    {
+      "id": "s2-64",
+      "sceneId": "s2",
+      "text": "Improvement makes straight roads, but the crooked roads without Improvement are roads of Genius."
+    },
+    {
+      "id": "s2-65",
+      "sceneId": "s2",
+      "text": "Sooner murder an infant in its cradle than nurse unacted desires."
+    },
+    {
+      "id": "s2-66",
+      "sceneId": "s2",
+      "text": "Where man is not, nature is barren."
+    },
+    {
+      "id": "s2-67",
+      "sceneId": "s2",
+      "text": "Truth can never be told so as to be understood and not to be believed."
+    },
+    {
+      "id": "s2-68",
+      "sceneId": "s2",
+      "text": "Enough! or Too much."
+    },
+    {
+      "id": "s2-69",
+      "sceneId": "s2",
+      "text": "The ancient poets animated all sensible objects with Gods or Geniuses, calling them by the names and adorning them with properties of woods, rivers, mountains, lakes, cities, nations, and whatever their enlarged and numerous senses could perceive. And particularly they studied the Genius of each city and country, placing it under its mental deity. Till a system was formed, which some took advantage of and enslaved the vulgar by attempting to realize or abstract the mental deities from their objects. Thus began Priesthood. Choosing forms of worship from poetic tales. And at length they pronounced that the Gods had ordered such things. Thus men forgot that all deities reside in the human breast."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "The Prophets Isaiah and Ezekiel dined with me, and I asked them how they dared so roundly to assert that God spoke to them, and whether they did not think at the time that they would be misunderstood, and so be the cause of imposition."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Isaiah answered: \"I saw no God, nor heard any, in a finite organical perception: but my senses discovered the infinite in everything; and as I was then persuaded, and remained confirmed, that the voice of honest indignation is the voice of God, I cared not for consequences, but wrote.\""
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Then I asked: \"Does a firm persuasion that a thing is so, make it so?\""
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "He replied: \"All poets believe that it does, and in ages of imagination this firm persuasion removed mountains; but many are not capable of a firm persuasion of anything.\""
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Then Ezekiel said: \"The philosophy of the East taught the first principles of human perception; some nations held one principle for the origin, and some another. We of Israel taught that the Poetic Genius (as you now call it) was the first principle, and all the others merely derivative, which was the cause of our despising the Priests and Philosophers of other countries, and prophesying that all Gods would at last be proved to originate in ours, and to be the tributaries of the Poetic Genius. It was this that our great poet King David desired so fervently, and invokes so pathetically, saying by this he conquers enemies and governs kingdoms; and we so loved our God that we cursed in His name all the deities of surrounding nations, and asserted that they had rebelled. From these opinions the vulgar came to think that all nations would at last be subject to the Jews."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "\"This,\" said he, \"like all firm persuasions, is come to pass, for all nations believe the Jews' code, and worship the Jews' God; and what greater subjection can be?\""
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "I heard this with some wonder, and must confess my own conviction. After dinner I asked Isaiah to favour the world with his lost works; he said none of equal value was lost. Ezekiel said the same of his."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "I also asked Isaiah what made him go naked and barefoot three years. He answered: \"The same that made our friend Diogenes the Grecian.\""
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "I then asked Ezekiel why he ate dung, and lay so long on his right and left side. He answered: \"The desire of raising other men into a perception of the infinite. This the North American tribes practise. And is he honest who resists his genius or conscience, only for the sake of present ease or gratification?\""
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "The ancient tradition that the world will be consumed in fire at the end of six thousand years is true, as I have heard from Hell."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "For the cherub with his flaming sword is hereby commanded to leave his guard at [the] tree of life, and when he does, the whole creation will be consumed and appear infinite and holy, whereas it now appears finite and corrupt."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "This will come to pass by an improvement of sensual enjoyment."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "But first the notion that man has a body distinct from his soul is to be expunged; this I shall do by printing in the infernal method by corrosives, which in Hell are salutary and medicinal, melting apparent surfaces away, and displaying the infinite which was hid."
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "If the doors of perception were cleansed everything would appear to man as it is, infinite."
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "For man has closed himself up, till he sees all things through narrow chinks of his cavern."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "I was in a printing-house in Hell, and saw the method in which knowledge is transmitted from generation to generation."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "In the first chamber was a dragon-man, clearing away the rubbish from a cave's mouth; within, a number of dragons were hollowing the cave."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "In the second chamber was a viper folding round the rock and the cave, and others adorning it with gold, silver, and precious stones."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "In the third chamber was an eagle with wings and feathers of air; he caused the inside of the cave to be infinite; around were numbers of eagle-like men, who built palaces in the immense cliffs."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "In the fourth chamber were lions of flaming fire raging around and melting the metals into living fluids."
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "In the fifth chamber were unnamed forms, which cast the metals into the expanse."
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "There they were received by men who occupied the sixth chamber, and took the forms of books, and were arranged in libraries."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "The Giants who formed this world into its sensual existence and now seem to live in it in chains are in truth the causes of its life and the sources of all activity, but the chains are the cunning of weak and tame minds, which have power to resist energy, according to the proverb, \"The weak in courage is strong in cunning.\""
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "Thus one portion of being is the Prolific, the other the Devouring. To the devourer it seems as if the producer was in his chains; but it is not so, he only takes portions of existence, and fancies that the whole."
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "But the Prolific would cease to be prolific unless the Devourer as a sea received the excess of his delights."
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "Some will say, \"Is not God alone the Prolific?\" I answer: \"God only acts and is in existing beings or men.\""
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "These two classes of men are always upon earth, and they should be enemies: whoever tries to reconcile them seeks to destroy existence."
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "Religion is an endeavour to reconcile the two."
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "*Note.*--Jesus Christ did not wish to unite but to separate them, as in the parable of sheep and goats; and He says: \"I came not to send peace, but a sword.\""
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "Messiah, or Satan, or Tempter, was formerly thought to be one of the antediluvians who are our Energies."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "An Angel came to me and said: \"O pitiable foolish young man! O horrible, O dreadful state! Consider the hot burning dungeon thou art preparing for thyself to all Eternity, to which thou art going in such career.\""
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "I said: \"Perhaps you will be willing to show me my eternal lot, and we will contemplate together upon it, and see whether your lot or mine is most desirable.\""
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "So he took me through a stable, and through a church, and down into the church vault, at the end of which was a mill; through the mill we went, and came to a cave; down the winding cavern we groped our tedious way, till a void boundless as a nether sky appeared beneath us, and we held by the roots of trees, and hung over this immensity; but I said: \"If you please, we will commit ourselves to this void, and see whether Providence is here also; if you will not, I will.\" But he answered: \"Do not presume, O young man; but as we here remain, behold thy lot, which will soon appear when the darkness passes away.\""
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "So I remained with him sitting in the twisted root of an oak; he was suspended in a fungus, which hung with the head downward into the deep."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "By degrees we beheld the infinite abyss, fiery as the smoke of a burning city; beneath us at an immense distance was the sun, black but shining; round it were fiery tracks on which revolved vast spiders, crawling after their prey, which flew, or rather swum, in the infinite deep, in the most terrific shapes of animals sprung from corruption; and the air was full of them, and seemed composed of them. These are Devils, and are called powers of the air. I now asked my companion which was my eternal lot. He said: \"Between the black and white spiders.\""
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "But now, from between the black and white spiders, a cloud and fire burst and rolled through the deep, blackening all beneath so that the nether deep grew black as a sea, and rolled with a terrible noise. Beneath us was nothing now to be seen but a black tempest, till looking East between the clouds and the waves, we saw a cataract of blood mixed with fire, and not many stones' throw from us appeared and sunk again the scaly fold of a monstrous serpent. At last to the East, distant about three degrees, appeared a fiery crest above the waves; slowly it reared like a ridge of golden rocks, till we discovered two globes of crimson fire, from which the sea fled away in clouds of smoke; and now we saw it was the head of Leviathan. His forehead was divided into streaks of green and purple, like those on a tiger's forehead; soon we saw his mouth and red gills hang just above the raging foam, tinging the black deeps with beams of blood, advancing toward us with all the fury of a spiritual existence."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "My friend the Angel climbed up from his station into the mill. I remained alone, and then this appearance was no more; but I found myself sitting on a pleasant bank beside a river by moonlight, hearing a harper who sung to the harp; and his theme was: \"The man who never alters his opinion is like standing water, and breeds reptiles of the mind.\""
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "But I arose, and sought for the mill, and there I found my Angel, who, surprised, asked me how I escaped."
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "I answered: \"All that we saw was owing to your metaphysics; for when you ran away, I found myself on a bank by moonlight, hearing a harper. But now we have seen my eternal lot, shall I show you yours?\" He laughed at my proposal; but I by force suddenly caught him in my arms, and flew Westerly through the night, till we were elevated above the earth's shadow; then I flung myself with him directly into the body of the sun; here I clothed myself in white, and taking in my hand Swedenborg's volumes, sunk from the glorious clime, and passed all the planets till we came to Saturn. Here I stayed to rest, and then leaped into the void between Saturn and the fixed stars."
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "\"Here,\" said I, \"is your lot; in this space, if space it may be called.\" Soon we saw the stable and the church, and I took him to the altar and opened the Bible, and lo! it was a deep pit, into which I descended, driving the Angel before me. Soon we saw seven houses of brick. One we entered. In it were a number of monkeys, baboons, and all of that species, chained by the middle, grinning and snatching at one another, but withheld by the shortness of their chains. However, I saw that they sometimes grew numerous, and then the weak were caught by the strong, and with a grinning aspect, first coupled with and then devoured by plucking off first one limb and then another till the body was left a helpless trunk; this, after grinning and kissing it with seeming fondness, they devoured too. And here and there I saw one savourily picking the flesh off his own tail. As the stench terribly annoyed us both, we went into the mill; and I in my hand brought the skeleton of a body, which in the mill was Aristotle's Analytics."
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "So the Angel said: \"Thy phantasy has imposed upon me, and thou oughtest to be ashamed.\""
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "I answered: \"We impose on one another, and it is but lost time to converse with you whose works are only Analytics.\""
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "\"I have always found that Angels have the vanity to speak of themselves as the only wise; this they do with a confident insolence sprouting from systematic reasoning."
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "\"Thus Swedenborg boasts that what he writes is new; though it is only the contents or index of already published books."
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "\"A man carried a monkey about for a show, and because he was a little wiser than the monkey, grew vain, and conceived himself as much wiser than seven men. It is so with Swedenborg; he shows the folly of churches, and exposes hypocrites, till he imagines that all are religious, and himself the single one on earth that ever broke a net."
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "\"Now hear a plain fact: Swedenborg has not written one new truth. Now hear another: he has written all the old falsehoods."
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "\"And now hear the reason: he conversed with Angels who are all religious, and conversed not with Devils who all hate religion, for he was incapable through his conceited notions."
+    },
+    {
+      "id": "s5-17",
+      "sceneId": "s5",
+      "text": "\"Thus Swedenborg's writings are a recapitulation of all superficial opinions, and an analysis of the more sublime, but no further."
+    },
+    {
+      "id": "s5-18",
+      "sceneId": "s5",
+      "text": "\"Have now another plain fact: any man of mechanical talents may from the writings of Paracelsus or Jacob Behmen produce ten thousand volumes of equal value with Swedenborg's, and from those of Dante or Shakespeare an infinite number."
+    },
+    {
+      "id": "s5-19",
+      "sceneId": "s5",
+      "text": "\"But when he has done this, let him not say that he knows better than his master, for he only holds a candle in sunshine.\""
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Once I saw a Devil in a flame of fire, who arose before an Angel that sat on a cloud, and the Devil uttered these words: \"The worship of God is, honouring His gifts in other men each according to his genius, and loving the greatest men best. Those who envy or calumniate great men hate God, for there is no other God.\""
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "The Angel hearing this became almost blue, but mastering himself he grew yellow, and at last white-pink and smiling, and then replied: \"Thou idolater, is not God One? and is not He visible in Jesus Christ? and has not Jesus Christ given His sanction to the law of ten commandments? and are not all other men fools, sinners, and nothings?\""
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "The Devil answered: \"Bray a fool in a mortar with wheat, yet shall not his folly be beaten out of him. If Jesus Christ is the greatest man, you ought to love Him in the greatest degree. Now hear how He has given His sanction to the law of ten commandments. Did He not mock at the Sabbath, and so mock the Sabbath's God? murder those who were murdered because of Him? turn away the law from the woman taken in adultery, steal the labour of others to support Him? bear false witness when He omitted making a defence before Pilate? covet when He prayed for His disciples, and when He bid them shake off the dust of their feet against such as refused to lodge them? I tell you, no virtue can exist without breaking these ten commandments. Jesus was all virtue, and acted from impulse, not from rules.\""
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "When he had so spoken, I beheld the Angel, who stretched out his arms embracing the flame of fire, and he was consumed, and arose as Elijah."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "*Note.*--This Angel, who is now become a Devil, is my particular friend; we often read the Bible together in its infernal or diabolical sense, which the world shall have if they behave well."
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "I have also the Bible of Hell, which the world shall have whether they will or no."
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "One law for the lion and ox is Oppression."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "1. The Eternal Female groan'd; it was heard over all the earth:"
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "2. Albion's coast is sick silent; the American meadows faint."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "3. Shadows of prophecy shiver along by the lakes and the rivers, and mutter across the ocean. France, rend down thy dungeon!"
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "4. Golden Spain, burst the barriers of old Rome!"
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "5. Cast thy keys, O Rome, into the deep--down falling, even to eternity down falling;"
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "6. And weep!"
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "7. In her trembling hands she took the new-born terror, howling."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "8. On those infinite mountains of light now barr'd out by the Atlantic sea, the new-born fire stood before the starry king."
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "9. Flagg'd with grey-brow'd snows and thunderous visages, the jealous wings wav'd over the deep."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "10. The speary hand burn'd aloft; unbuckled was the shield; forth went the hand of jealousy among the flaming hair, and hurl'd the new-born wonder through the starry night."
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "11. The fire, the fire is falling!"
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "12. Look up! look up! O citizen of London, enlarge thy countenance! O Jew, leave counting gold; return to thy oil and wine! O African, black African! (Go, winged thought, widen his forehead.)"
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "13. The fiery limbs, the flaming hair shot like the sinking sun into the Western sea."
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "14. Wak'd from his eternal sleep, the hoary element roaring fled away."
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "15. Down rush'd, beating his wings in vain, the jealous king, his grey-brow'd councillors, thunderous warriors, curl'd veterans, among helms and shields, and chariots, horses, elephants, banners, castles, slings, and rocks."
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "16. Falling, rushing, ruining; buried in the ruins, on Urthona's dens."
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "17. All night beneath the ruins; then their sullen flames, faded, emerge round the gloomy king."
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "18. With thunder and fire, leading his starry hosts through the waste wilderness, he promulgates his ten commandments, glancing his beamy eyelids over the deep in dark dismay."
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "19. Where the Son of Fire in his Eastern cloud, while the Morning plumes her golden breast,"
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "20. Spurning the clouds written with curses, stamps the stony law to dust, loosing the eternal horses from the dens of night, crying: \"Empire is no more! and now the lion and wolf shall cease.\""
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Let the Priests of the Raven of Dawn, no longer in deadly black, with hoarse note curse the Sons of Joy. Nor his accepted brethren whom, tyrant, he calls free, lay the bound or build the roof. Nor pale religious lechery call that virginity that wishes, but acts not!"
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "For everything that lives is holy."
+    }
+  ]
+}
