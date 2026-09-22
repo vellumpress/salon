@@ -6,7 +6,7 @@ export const Route = createFileRoute("/form")({
 });
 
 const LINES = [
-  "It was the last letter in Irene Redfield's little pile of morning mail.",
+  "It was the last letter in Irene Redfield’s little pile of morning mail.",
   "After her other ordinary and clearly directed letters the long envelope of thin Italian paper with its almost illegible scrawl seemed out of place and alien.",
   "And there was, too, something mysterious and slightly furtive about it.",
 ];
