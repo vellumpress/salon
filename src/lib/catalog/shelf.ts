@@ -100,7 +100,7 @@ export const SHELF: ShelfWork[] = [
     intro:
       "A marked man offers a human document—and asks you not to publish it until he’s dead. Machado’s attendant begins in confidence and already smells of the grave.",
   },
-  { id: "anandamath", title: "Anandamath (The Abbey of Bliss)", author: "Bankim Chandra Chatterjee (tr. Nares Chandra Sen-Gupta)", year: 1906, form: "novel", language: "English", minutes: 573, local: true, opening: "On a certain day in the year 1176 B.S-, the sun was shining hot in the village of Padachinha. The village was full of ho", breaths: 1168, intro: "A hot day in Padachinha opens the Abbey of Bliss, not Poison Tree." },
+  { id: "anandamath", title: "Anandamath (The Abbey of Bliss)", author: "Bankim Chandra Chatterjee (tr. Nares Chandra Sen-Gupta)", year: 1906, form: "novel", language: "English", minutes: 572, local: true, opening: "On a certain day in the year 1176 B.S-, the sun was shining hot in the village of Padachinha. The village was full of houses but you could find very few men there.", breaths: 1680, intro: "On a certain day in the year 1176 B.S-, the sun is hot in Padachinha and the village is nearly empty of men. Sen-Gupta’s 1906 English of Anandamath — the Abbey of Bliss — is the only bind, not Poison Tree, and no catalog number is invented. Bengali year marks and OCR quirks stay visible. The first sit is the empty market; the novel continues." },
   { id: "cecilia", title: "Cecilia Valdés", author: "Cirilo Villaverde", year: 1882, form: "novel", language: "Spanish", minutes: 2361, local: true, gutenberg: 28281, opening: "*Tal es el fruto de la culpa, Tello, cosecha de dolor.*", breaths: 3966 },
   { id: "african-farm", title: "The Story of an African Farm", author: "Olive Schreiner", year: 1883, form: "novel", language: "English", local: true, opening: "The full African moon poured down its light from the blue sky into the wide, lonely plain.", breaths: 6189, minutes: 1254, gutenberg: 1441, intro: "Skip the Preface. The full African moon poured down its light from the blue sky into the wide, lonely plain — karoo bushes, then milk-bushes. Stop after the solitary kopje and ironstones, before the farm household densifies." },
   { id: "rebours", title: "À rebours", author: "Joris-Karl Huysmans", year: 1884, form: "novel", language: "French", minutes: 160, local: true, opening: "The Floressas Des Esseintes, to judge by the various portraits preserved in the Chateau de Lourps, had originally been a family of stalwart troopers and stern cavalry men. Closely", breaths: 900, gutenberg: 12341 },
@@ -344,7 +344,7 @@ export const SHELF: ShelfWork[] = [
     intro:
       "Hermann Hesse’s Steppenwolf — a wolf of the Steppes in a bourgeois attic, then the Magic Theater. PG 75756 English, full local bind.",
   },
-  { id: "african-tragedy", title: "An African Tragedy", author: "R. R. R. Dhlomo", year: 1928, form: "novel", language: "English", minutes: 65, local: true, opening: "EVILS OF TOWN LIFE Two reasons made Robert Zulu leave teaching at Siam Village School.", breaths: 522 },
+  { id: "african-tragedy", title: "An African Tragedy", author: "R. R. R. Dhlomo", year: 1928, form: "novel", language: "English", minutes: 92, local: true, opening: "Two reasons made Robert Zulu leave teaching at Siam Village School.", breaths: 521, intro: "Two reasons made Robert Zulu leave teaching at Siam Village School. Open Chapter I on that decision, not on the bare heading Evils of Town Life. The first sit stops at the chapter boundary. Lovedale 1928’s Christian-mission frame moralizes town vice, drink, and sex-work — name those blind-spots if you Host further, and do not sanitize mid-bind." },
   { id: "home-harlem", title: "Home to Harlem", author: "Claude McKay", year: 1928, form: "novel", language: "English", minutes: 160 },
   { id: "nadja", title: "Nadja", author: "André Breton", year: 1928, form: "other", language: "French", minutes: 40 },
   { id: "orlando", title: "Orlando", author: "Virginia Woolf", year: 1928, form: "novel", language: "English", minutes: 406, local: true, opening: "He—for there could be no doubt of his sex, though the fashion of the time did something to disguise it—was in the act of slicing at the head of a Moor which swung from the rafters.", breaths: 3247 },
@@ -371,13 +371,13 @@ export const SHELF: ShelfWork[] = [
     year: 1929,
     form: "novel",
     language: "English",
-    minutes: 761,
+    minutes: 1144,
     local: true,
     opening:
       "Heaving along from side to side, like a sailor on the unsteady deck of a ship, Lincoln Agrippa Daily, familiarly known as Banjo, patrolled the magnificent length of the great breakwater of Marseilles, a banjo in his hand.",
     breaths: 6090,
     intro:
-      "Lincoln Agrippa Daily—Banjo to anyone who knows him—comes swinging down the breakwater of Marseilles with an instrument in his hand and the whole Atlantic in his walk. Beach boys from the Caribbean, Senegal, the States, and points between share wine, jokes, and the next meal on the docks of the sailor’s dream port.\n\nClaude McKay’s Banjo, first published in 1929, is a story without a plot in the best sense: vignettes of music, hunger, friendship, and the international Black life that gathered between boxcar and bistro after the Great War. For New York readers who know McKay from Harlem, this is the same restless ear turned outward—to the Mediterranean, to the “Ditch,” to a city that feels as crowded and alive as any subway platform. Open at Chapter I and meet Banjo where the land meets the sea.",
+      "Heaving along the great breakwater of Marseilles, Lincoln Agrippa Daily — Banjo — carries the instrument and the Ditch. McKay’s 1929 Marseille beach-boy vernacular stays as written: period racial diction and dialect spellings are the music. Name the Black Atlantic frame if you Host further, and do not sanitize mid-bind. Open at Chapter I.",
   },
   {
     id: "high-wind-jamaica",
@@ -1500,18 +1500,18 @@ export const SHELF: ShelfWork[] = [
   {
     id: "nacha-regules",
     title: "Nacha Regules",
-    author: "Manuel Gálvez",
+    author: "Manuel Gálvez (tr. Leo Ongley)",
     year: 1922,
     form: "novel",
     language: "English",
-    minutes: 160,
+    minutes: 974,
     local: true,
     gutenberg: 59441,
     opening:
-      "An August night! Hot with the fever of her adolescence as a national capital, Buenos Aires was ablaze…",
-    breaths: 1252,
+      "An August night! Hot with the fever of her adolescence as a national capital, Buenos Aires was ablaze with millions of lights and rejoicing in noisy revelry.",
+    breaths: 2271,
     intro:
-      "An August night — Buenos Aires ablaze for her adolescence as a capital — and the mandola underlines the tangos with long shadows of pain. First sit stops there; do not jump to the first Nacha. The novel continues.",
+      "An August night: Buenos Aires is ablaze with the fever of her adolescence as a national capital. Manuel Gálvez, in Leo Ongley’s 1922 English, opens on the Centennial cabaret. The world includes cabaret sex-work, status humiliation, and violence — ship it honestly and do not sanitize mid-bind or pitch it as light romance. The novel continues.",
   },
   { id: "lady-into-fox", title: "Lady into Fox", author: "David Garnett", year: 1922, form: "novel", language: "English", minutes: 306, local: true, opening: "Wonderful or supernatural events are not so uncommon, rather they are irregular in their incidence. ", breaths: 289, gutenberg: 10337, intro: "Wonderful events are irregular — then Mrs. Tebrick’s change into a vixen is an established fact. Rituals novella; not Next." },
   { id: "the-waste-land", title: "The Waste Land", author: "T. S. Eliot", year: 1922, form: "poem", language: "English", minutes: 90, local: true, opening: "Dull roots with spring rain. Winter kept us warm, covering", breaths: 202, gutenberg: 1321 },
@@ -1664,14 +1664,14 @@ export const SHELF: ShelfWork[] = [
     year: 1927,
     form: "novel",
     language: "English",
-    minutes: 434,
+    minutes: 833,
     local: true,
     gutenberg: 69730,
     opening:
-      "One afternoon in the autumn of 1851 a solitary horseman, followed by a pack-mule, was pushing through an arid stretch of country somewhere in central New Mexico.",
-    breaths: 3473,
+      "ONE afternoon in the autumn of 1851 a solitary horseman, followed by a pack-mule, was pushing through an arid stretch of country somewhere in central New Mexico.",
+    breaths: 3444,
     intro:
-      "A solitary horseman among uniform red sand-hills in central New Mexico, 1851 — until the country has no more changed than if he had stood still. Open on Book One New Mexico only — never the Sabine-hills Rome prologue.",
+      "ONE afternoon in the autumn of 1851 a solitary horseman, followed by a pack-mule, pushes through central New Mexico. Skip the Rome prologue and the Vicar Apostolic marker. Open Book One, The Cruciform Tree. The first sit is the closed horseman beat; the novel continues.",
   },
   { id: "the-bridge-of-san-luis-rey", title: "The Bridge of San Luis Rey", author: "Thornton Wilder", year: 1927, form: "novel", language: "English", minutes: 240, local: true, opening: "On Friday noon, July the twentieth, 1714, the finest bridge in all Peru broke and precipitated five travellers into the gulf below.", breaths: 1919, gutenberg: 69768 },
   { id: "god-s-trombones", title: "God's Trombones", author: "James Weldon Johnson", year: 1927, form: "poem", language: "English", minutes: 90 },

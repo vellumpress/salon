@@ -140,7 +140,13 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "spoon-river-anthology":
     "Masters’ village speaks from under the hill — epitaphs that refuse to flatter the living. Small-town America, voice by voice, after the fact.",
   "death-comes-for-the-archbishop":
-    "A solitary horseman among uniform red sand-hills in central New Mexico, 1851 — until the country has no more changed than if he had stood still. Open on Book One New Mexico only — never the Sabine-hills Rome prologue.",
+    "ONE afternoon in the autumn of 1851 a solitary horseman pushes through central New Mexico. Skip the Rome prologue. Open Book One, The Cruciform Tree.",
+  banjo:
+    "Heaving along the Marseilles breakwater, Banjo carries the Ditch. McKay’s 1929 beach-boy dialect stays as written — do not sanitize.",
+  anandamath:
+    "A hot day in Padachinha, 1176 B.S-. Sen-Gupta’s 1906 Abbey of Bliss, not Poison Tree. Bengali year marks stay, and no catalog number is invented.",
+  "african-tragedy":
+    "Two reasons made Robert Zulu leave teaching at Siam Village School. Stop at the end of Chapter I. Lovedale’s mission frame moralizes town life — name that blind-spot, and do not sanitize.",
   demian:
     "Two worlds pass through a little-town Latin school — home of clean clothes and Christmas, and rooms of secrecy. Childhood two-worlds map — not the later Abraxas sermon. Priday 1923 EN only.",
   "the-getting-of-wisdom":
@@ -258,7 +264,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   botchan:
     `A Tokyo kid who cannot fake manners jumps from a school window on a dare, then takes a knife to his own thumb to prove the blade is sharp. Natsume Sōseki’s 1906 novel opens on that hereditary recklessness — and the scar that will be there until his death.`,
   "nacha-regules":
-    "An August night — Buenos Aires ablaze for her adolescence as a capital — and the mandola underlines the tangos with long shadows of pain. First sit stops there; do not jump to the first Nacha. The novel continues.",
+    "An August night — Buenos Aires ablaze for the Centennial. Gálvez in Ongley’s English includes cabaret sex-work and violence; do not sanitize or pitch it as light romance.",
   krakatit:
     "With the evening the fog of the cold, damp day grew thicker on the Old Town embankment — then suddenly a pair of penetrating eyes fixed on him. Stop before the Krakatit-box densifies. The novel continues.",
   "the-peasants":
@@ -300,6 +306,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "on-the-seaboard",
       "bel-ami",
       "hadji-murad",
+      "anandamath",
       "generosity",
     ],
   },
@@ -324,6 +331,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "in-our-time",
       "casanovas-homecoming",
       "jamaica-anansi-stories",
+      "african-tragedy",
     ],
   },
   {
@@ -645,7 +653,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "korean-folk-tales",
       "smoke-and-steel",
       "gods-trombones",
-      "anandamath",
       "lady-macbeth",
       "layla",
       "conference",
@@ -663,6 +670,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "green-mansions",
       "jamaica-anansi-stories",
       "hadji-murad",
+      "death-comes-for-the-archbishop",
+      "banjo",
+      "nacha-regules",
+      "african-tragedy",
+      "anandamath",
     ],
   },
   {
@@ -692,6 +704,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-nose-cape-town",
       "seven-brothers",
       "mhudi",
+      "african-tragedy",
+      "anandamath",
     ],
   },
   {
@@ -727,6 +741,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "garden-party-barcelona",
       "a-passage-to-india",
       "of-human-bondage",
+      "death-comes-for-the-archbishop",
     ],
   },
   {
@@ -757,6 +772,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "magnhild",
       "green-mansions",
       "hadji-murad",
+      "death-comes-for-the-archbishop",
+      "banjo",
+      "nacha-regules",
     ],
   },
   {
@@ -1107,6 +1125,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "of-human-bondage": 5,
   "green-mansions": 5,
   "jamaica-anansi-stories": 5,
+  banjo: 5,
+  "african-tragedy": 5,
   generosity: 20,
 };
 

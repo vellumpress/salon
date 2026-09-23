@@ -103,7 +103,7 @@ const BLURBS: Record<string, string> = {
   "liza-of-lambeth":
     "A factory girl in Lambeth learns how little the street forgives.",
   banjo:
-    "Marseille quays, a banjo on the strap — McKay’s Black Atlantic without a neat plot.",
+    "Lincoln Agrippa Daily patrols the Marseilles breakwater with a banjo — McKay’s 1929 beach-boy dialect and the Ditch stay as written, not sanitized.",
   "in-our-time":
     "Nick Adams stories with war vignettes snapped in like news photos — Hemingway’s early cuts.",
   cheri:
@@ -228,7 +228,7 @@ const BLURBS: Record<string, string> = {
   "o-pioneers":
     "Alexandra Bergson stays with the land when everyone else wants to leave it.",
   "death-comes-for-the-archbishop":
-    "A solitary horseman among uniform red sand-hills in central New Mexico, 1851.",
+    "ONE afternoon in the autumn of 1851 a solitary horseman crosses central New Mexico — open on the Cruciform Tree, never the Rome prologue.",
   "the-bridge-of-san-luis-rey":
     "Five travellers fall from a Peruvian bridge — Wilder asks whether those lives were accident or intention.",
   "the-sun-also-rises":
@@ -323,7 +323,10 @@ const BLURBS: Record<string, string> = {
   "the-madman-his-parables-and-poems": "Gibran’s parables of a man who stepped outside the town’s mind.",
   mhudi:
     "Two centuries ago the Bechuana tribes inhabited the extensive areas between Central Transvaal and the Kalahari Desert.",
-  "african-tragedy": "Dhlomo’s short novel of a mine, a city, and a life that cannot go home clean.",
+  "african-tragedy":
+    "Two reasons made Robert Zulu leave teaching at Siam Village School — Dhlomo’s Lovedale frame moralizes town life, and the first sit stops at the end of that chapter.",
+  anandamath:
+    "A hot day in Padachinha opens Sen-Gupta’s 1906 Abbey of Bliss — Bengali year marks stay, and this is not Poison Tree.",
   "kwaidan-stories-and-studies-of-strange-things":
     "Hearn’s Japan after dark: soft-spoken ghosts, fox wives, and studies that prefer a whisper.",
   "chita-a-memory-of-last-island":
@@ -624,7 +627,7 @@ const BLURBS: Record<string, string> = {
   "imperium-in-imperio": "Griggs’ secret Black nation inside the United States — a political thought-experiment.",
   cane: "Karintha at Georgia dusk: her skin is like dusk on the eastern horizon.",
   "nacha-regules":
-    "Buenos Aires is ablaze on a Centennial August night, and a mandola underlines the tangos with long shadows of pain.",
+    "An August night finds Buenos Aires ablaze for the Centennial — Gálvez’s cabaret includes sex-work and violence in Ongley’s English, not a soft romance.",
   krakatit:
     "Evening fog thickens on the Old Town embankment until a pair of penetrating eyes fix on him.",
   "the-peasants":
