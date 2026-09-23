@@ -35,7 +35,6 @@ const FULL_NOVEL_NO_STUB = [
   "vera",
   "noli-me-tangere",
   "the-gadfly",
-  "death-comes-for-the-archbishop",
   "the-story-of-gosta-berling",
   "futility",
   "poison-tree",
@@ -45,7 +44,6 @@ const FULL_NOVEL_NO_STUB = [
   "steppenwolf",
   "shadowings",
   "brazilian-tales",
-  "nacha-regules",
   "krakatit",
   "the-peasants",
   "cane",
@@ -335,8 +333,8 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^I will begin my story with an event of the time when I was ten or eleven/,
     },
     "death-comes-for-the-archbishop": {
-      scene: /Red hills/i,
-      opening: /^One afternoon in the autumn of 1851 a solitary horseman/,
+      scene: /CRUCIFORM TREE/i,
+      opening: /^ONE afternoon in the autumn of 1851 a solitary horseman/,
     },
     "the-getting-of-wisdom": {
       scene: /Dirty sheet/i,
@@ -590,11 +588,9 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       );
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "death-comes-for-the-archbishop") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /than if he had stood still\.?$/);
-      assert.doesNotMatch(
-        packed.breaths.map((b) => b.text).join(" "),
-        /Sabine|Cardinals|Rome/i,
-      );
+      assert.match(packed.breaths[0]?.text ?? "", /^ONE afternoon in the autumn of 1851/);
+      assert.equal(packed.scenes[0]?.title, "THE CRUCIFORM TREE");
+      assert.doesNotMatch(packed.breaths[0]?.text ?? "", /Sabine|AT ROME/i);
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "the-getting-of-wisdom") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /said Pin, who was practical\.?$/);
@@ -1220,14 +1216,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       opening: /^Arthur sat in the library/,
       breaths: 6653,
     },
-    "death-comes-for-the-archbishop": {
-      gutenberg: 69730,
-      title: "Death Comes for the Archbishop",
-      author: "Willa Cather",
-      year: 1927,
-      opening: /^One afternoon in the autumn of 1851 a solitary horseman/,
-      breaths: 3473,
-    },
     "the-story-of-gosta-berling": {
       gutenberg: 56158,
       title: "The Story of Gösta Berling",
@@ -1310,17 +1298,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       breaths: 371,
       scenes: 6,
       last: /poor verses/,
-    },
-    "nacha-regules": {
-      gutenberg: 59441,
-      title: "Nacha Regules",
-      author: "Manuel Gálvez",
-      year: 1922,
-      opening: /^An August night! Hot with the fever of her adolescence as a national capital, Buenos Aires was ablaze/,
-      breaths: 1252,
-      scenes: 25,
-      last: /^THE END$/,
-      intro: /mandola/,
     },
     krakatit: {
       gutenberg: 79127,
@@ -1510,7 +1487,7 @@ test("Mira FULL-TEXT CLEAR ×4 are stamped local binds with no opening stubs", (
     "nacha-regules": {
       gutenberg: 59441,
       scenes: 25,
-      breaths: 1252,
+      breaths: 2271,
       last: /^THE END$/,
       opening: /^An August night! Hot with the fever of her adolescence as a national capital, Buenos Aires was ablaze/,
     },
@@ -1543,7 +1520,11 @@ test("Mira FULL-TEXT CLEAR ×4 are stamped local binds with no opening stubs", (
     assert.equal(isBoundLocal(work!), true, id);
     assert.equal(work!.gutenberg, want.gutenberg, id);
     assert.match(work!.opening ?? "", want.opening, id);
-    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    assert.equal(
+      existsSync(new URL(`./openings/${id}.json`, import.meta.url)),
+      id === "nacha-regules",
+      id,
+    );
     const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
       scenes: { title: string }[];
       breaths: { text: string }[];

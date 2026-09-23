@@ -107,7 +107,8 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Mirth → Quicksand → Botchan. No Project Gutenberg ids. Anandamath is the
  * 1906 Abbey of Bliss, not Poison Tree. Conference of the Birds is FitzGerald’s
  * abridged Bird Parliament. Lady Macbeth hosts the one Chamot tale. Hadji Murad
- * left this Next seat for the 6PM For you lane.
+ * left this Next seat for the 6PM For you lane. Anandamath left this Next seat
+ * for the Wed 8AM For you lane.
  * Mira 8AM CLEAR ×5 (Sep 22) — Recommend only, never Featured. Gentlemen Prefer
  * Blondes leads Next with Of One Blood and Maria Chapdelaine (Blake EN 4383,
  * not FR 13525) on before-sleep. Lady into Fox is Rituals only. Seven Brothers
@@ -145,6 +146,18 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Next, not For you. Cold-open stays Mirth → Quicksand → Botchan. Tang Poems
  * and The Bronze Horseman stay HOLD. The Painted Veil and A High Wind in
  * Jamaica stay their own books.
+ * Wed 8AM CLEAR (Sep 23) — Recommend only, never the homepage Featured band.
+ * Death Comes for the Archbishop leads this cycle’s Next append (Cruciform Tree
+ * horseman, “ONE afternoon in the autumn of 1851”, English 1927, PG 69730;
+ * skip the Rome / Sabine prologue). Banjo follows (Chapter I breakwater, 1929,
+ * no Project Gutenberg id; dialect stays). Nacha Regules is the harder Next
+ * bar (August Centennial cabaret, Ongley 1922, PG 59441). Anandamath leaves
+ * its EXTRACTABLE-8 Next seat for For you only — Sen-Gupta 1906 Abbey of Bliss,
+ * Padachinha famine, no Project Gutenberg id, not Poison Tree — after Hadji
+ * Murad and before Generosity. An African Tragedy is Rituals only: leave-
+ * teaching open, stop at the Chapter I boundary, no Project Gutenberg id, not
+ * Next, not For you. Cold-open stays Mirth → Quicksand → Botchan. Tang Poems
+ * and The Bronze Horseman stay HOLD.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -439,7 +452,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira EXTRACTABLE-8 CLEAR — after All Quiet. Never Featured. Not For you. No PG.
   "smoke-and-steel",
   "gods-trombones",
-  "anandamath",
   "lady-macbeth",
   "layla",
   "conference",
@@ -457,6 +469,10 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "of-human-bondage",
   "green-mansions",
   "nada-the-lily",
+  // Mira Wed 8AM CLEAR — Death Comes leads Next. Never Featured. Not For you.
+  "death-comes-for-the-archbishop",
+  "banjo",
+  "nacha-regules",
 ] as const;
 
 /**

@@ -39,7 +39,7 @@ export const PITCHES: Record<string, string> = {
   "liza-of-lambeth":
     "A factory girl in Lambeth learns how little the street forgives. Maugham’s early London — heat, gossip, and no soft landing.",
   banjo:
-    "Marseille quays, a banjo on the strap — McKay’s Black Atlantic without a neat plot. Dockside music, argument, and men who refuse to be finished.",
+    "Lincoln Agrippa Daily patrols the Marseilles breakwater with a banjo — McKay’s 1929 beach-boy dialect and the Ditch stay as written, not sanitized.",
   "in-our-time":
     `A drunk battery on a dark road—then a Michigan lake at dawn, and Nick Adams in a rowboat with his father. Ernest Hemingway’s 1925 American collection opens with a war vignette snapped against “Indian Camp”: spare sentences, long silences, the method already underway.`,
   "the-sun-also-rises":

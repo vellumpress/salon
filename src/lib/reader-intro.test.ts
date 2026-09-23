@@ -317,11 +317,12 @@ test("Demian uses the before-sleep two-worlds sit and names the Host frame", () 
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
-test("Death Comes for the Archbishop uses the waking red-hills sit and names the Host frame", () => {
+test("Death Comes for the Archbishop uses the Cruciform Tree sit and names the Host frame", () => {
   const copy = readerIntro(shelfAsWork("death-comes-for-the-archbishop"));
   assert.match(copy, /solitary horseman/);
   assert.match(copy, /New Mexico/);
-  assert.match(copy, /never the Sabine-hills Rome prologue/);
+  assert.match(copy, /Cruciform Tree/);
+  assert.match(copy, /Rome prologue/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 

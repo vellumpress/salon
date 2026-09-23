@@ -1,0 +1,536 @@
+{
+  "id": "anandamath",
+  "title": "Anandamath (The Abbey of Bliss)",
+  "author": "Bankim Chandra Chatterjee (tr. Nares Chandra Sen-Gupta)",
+  "year": "1906",
+  "note": "Bankim Chandra Chatterjee · tr. Nares Chandra Sen-Gupta EN 1906 (Abbey of Bliss) · Archive PD · no PG · Host: OCR/B.S. year marks OK",
+  "minutes": 572,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Part I · Chapter I",
+      "place": "Part I · Chapter I",
+      "reentry": "On a certain day in the year 1176 B.S-, the sun was shining hot in the village of Padachinha. The village was full of houses but you could find very few men there.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Part I · Chapter 1",
+      "place": "Part I · Chapter 1",
+      "reentry": "Then they began to suffer from diseases. They sold their cattle, sold their ploughs, ate up the seed grains, sold their houses and their holdings, and at last their daughters and sons and wives. Then there could not be found buyers of men, ",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Part I · Chapter I",
+      "place": "Part I · Chapter I",
+      "reentry": "the driver you have not the cattle, and if cattle is found you don't find the driven\"",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Part I · Chapter II",
+      "place": "Part I · Chapter II",
+      "reentry": "Mahendra went out. Left alone with her daughter in that lonely place and in that gloomy room, Kalyani was anxiously looking about on all sides.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Part I · Chapter III",
+      "place": "Part I · Chapter III",
+      "reentry": "the fiendish ruffians rushed out on all sides, yelling like beasts. There are times when man becomes little better than a beast of prey.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "Part I · Chapter IV",
+      "place": "Part I · Chapter IV",
+      "reentry": "The wood was very dark Kalyani could not find her way in it There was hardly any path through the thick crowd of trees, herbs and thorns. Added to that, it was intensely dark. Still Kalyani pushed her way into the forest through the trees a",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "On a certain day in the year 1176 B.S-, the sun was shining hot in the village of Padachinha. The village was full of houses but you could find very few men there."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "There were rows of shops in the market, rows of huts in the fair, and mud houses in hundreds and brick buildings, high and low, here and there. But to-day not a sound was to be heard in any one of them."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "The shops were closed and the shop-keepers gone, no one knew where. It was the market-day of the village but no market was being held."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "It was the day for giving alms, but no beggars did turn up, The weaver had left his loom and was wailing on the floor of his house ; the trader wept with his baby in arms unmindful of his trade ; alms-givers had stopped their charity ; adhyapzks had closed their schools ; and children too, it would seem, did not venture to cry."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "There were no men in the streets, no bathers in the tanks, no householders in the houses, no birds in the trees, no cows in the pasture lands, — only plenty of jackals and dogs roamed about in the mortuary."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "One big house whose huge pillars could be seen from a distance shone in that wilderness of houses like the peak of a mountain."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "There was not much of 'shining' in it however ; for its doors were shut and rooms unoccupied ; it was devoid of sound and difficult even for the wind to get in. In the rooms within, it was dark"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "even at midday and in that darkness pensively sat two human beings like a couple of full-blown flowers at midnight"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "The famine was before them."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "In 1 1 74 there was a bad harvest So food became a little dear in 1175, The people were in distress but the State realised its dues to the last penny."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Having paid down the royal dues, the poor people satisfied themselves with but one meal a day and struggled on. There was a good shower during the rains of 1175 and the people thought with joy that the gods had"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "perhaps smiled on them. The shephard began his carol again and the peasant's wife began to tease her spouse for her silver armlet."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "Suddenly the gods turned angry in Aswin, for there was not a drop of rain in that month and the crops in the field dried up into hay. Those who reaped a harvest at all had their crop bought up by the State for the support of its army."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "The people therefore starved. At first they had one meal a day, then they went on half rations, and then starved the whole day. The small Chaitra harvest that they gathered was not enough for anybody."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "But Mahommad Reza Khan, the officer in charge of the State revenue, thought that he would be a favourite of the authorities by a stroke at this time, and forthwith enhanced the assessment by 10 per cent There was a howl of grief all over Bengal."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "First, people began to beg. But soon there"
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "was none to give alms they then began to starve."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Then they began to suffer from diseases. They sold their cattle, sold their ploughs, ate up the seed grains, sold their houses and their holdings, and at last their daughters and sons and wives. Then there could not be found buyers of men, everybody wanted to sell."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "They then fed on leaves, grass and weeds for want of othe/ food ; the lower classes and wild tribes fed on dogs, mice and cats. Many fled and died of starvation away from their homes."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Those who did not fly away died from starvation or from diseases brought on by eating unwholesome food."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Diseases had a jolly time of it Fever, cholera and small pox prevailed, particularly the last People died in every house from small-pox. There was none to touch them, treat them, or give them a drink. No one looked at any body else. No one removed the dead."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "The fairest bodies lay down to rot in the mansions, When small-pox once made its appearance in a house, the householders instantly took to flight, leaving the patient behind*"
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Mahendra Singha was a very rich man of Padachinha, but rich and poor fared alike at this time. In that .dire day, his relatives and friends, his servants and retainers, had all left him. Some had died of disease and others had fled."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Of his entire household there remained now only himself, his wife and a little child — a daughter. It was of them that we were speaking."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Maheiidra's wife Kalyani ceased musing and went to the cow-shed to milk the cow herself. She then"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "warmed the milk, fed her child and went away again to give some hay and water to the cows. When she came back, Mahendra asked, M How long could we go on in this way?\""
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "\" Not very long, I am sure,\" said Kalyani, \" but we must go on as long as we can ; — so long, at any rate, as I live. You may then go away to town with our daughter.\""
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "\" If we ever have to go to town, why then should I let you suffer so much now ? Come let us go at once.\""
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "They then had a long discussion over it. \" Do you think it would be any good our going to town asked Kalyani."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "\" I am afraid/' answered Mahendra, u the town may have grown as desolate and as impossible to live in as here.\""
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "\" But perhaps,\" said Kalyani, \" we might fare better by going to Murshidabad, Cassimbazar, or Calcutta. It is by all means needful to leave this place/1"
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "Mahendra said, \" This house is full of the hoarded wealth of generations. Do you know that all this will be plundered by thieves ?,J"
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "K. \" If they really come to plunder, can we two save it? If life is lost, who will enjoy the riches ? Let us now lock up our doors and be off. If life is spared us, we shall come back to enjoy them again.\""
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "Mahendra said, \" I don't know if you will be able to go on foot as you will have to ; for Palki bearers are dead, and, as for bullock-carts, if you have"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "the driver you have not the cattle, and if cattle is found you don't find the driven\""
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "K. \" You need not fear, I shall walk all the way.\" But she thought at heart, ft If I can't, what harm ? I shall die on the road, but these two will, at any rate, be saved.'1"
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "The next morning the husband and the wife put their house under lock and key, let the cattle loose, provided themselves with some cash, took the child in their arms, and started for the capital When they were about to start, Mahendra said : t£ The road is hard and robbers are prowling about everywhere, we should not go without arms.\" So saying he went back into the house and returned with a gun and some powder and shot."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Seeing this, Kalyani said, ** Since you remind me of arms, will you just hold Sukumart awhile and let me too fetch mine?\" So saying she gave the child to Mahendra and entered the house, Mahendra observing, \" What arms are you going to have ?\""
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "Kalyani got some poison in a pil!-box and hid it under her garments. She had taken care to provide herself with it before this, not knowing what might happen to her at a time like that*"
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "It was the month of Jaistha (May-June), The sun was furious, and the earth like a furnace. The wind spread fire all round, the sky looked like a canopy of heated copper and the grains of street dust were like sparks of fire."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Kalyani perspired horribly ; she sat down to rest now under the babla and now under the date-palm"
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "* HE ABBE Y OF BLISS"
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "drank the murky water of ponds and then walked again, suffering terribly. Mahendra held the child in his arms and fanned it now and then. Once they sat down to rest under a tree decked with dense green foliage and fragrant flowers, and fondly encircled by creepers."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "Mahendra was surprised at the patience with which Kalyani roughed all this out. He soaked his cbtli in the pond which was there, and with its water drenched the face, hands and feet of Kalyani and himself,"
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "Kalyani was slightly refreshed, but they were both oppressed by hunger. This , they could stand, but the hunger and thirst of the little child they could not bear."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "Therefore they walked on and on, — they swam so to say across the torrent of fire, till at dusk they reached an inn."
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "Mahendra fondly hoped that there he would be able to refresh his wife and child with cool water and give them some food to keep them from starvation. But alas, he found no one in the inn. Big huts lay there, the men had all fled."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "Mahendra looked about He then made his wife and child He down in one of the rooms, and coming out shouted to the top of his voice."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "No one answered. Then he said to Kalyani, u Do just gather up courage to stay alone for a while ; if there is a cow in the land, Srikrishna help me, I'll get some milk/3 So saying he walked out with an earthen pitcher in hand— there were many such lying about in that place."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Mahendra went out. Left alone with her daughter in that lonely place and in that gloomy room, Kalyani was anxiously looking about on all sides."
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "She was struck with fear. There was nobody there, no trace of a human being ; the howling of dogs and jackals at intervals were the only sounds that reached her ears. ft Why did I let him go ?\" she thought, \" we might as well have borne the hunger and thirst for some time longer.'* She thought of shutting all the doors, but alas, the doors had none of them a latch."
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Thus looking about, her eyes fell on something like a shadow at the door before hen It seemed like the figure of a man, yet did not exactly look like one. Something very lank, shorn, and very dark, naked and horrid— something like such a man stood at the door."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "Presently the shadow seemed to raise a hand. It seemed to beckon to somebody with the long choppy fingers of a very long skin-and-bone hand, Kalyani's heart-blood dried up with fear."
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "Then another shadow like it— skinny, dark, tall and naked, stood beside the first Then came another and another and yet another — oh so many they were ! Slowly and silently they began to enter the room."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "The dim room became on their entrance as dreadful as a mortuary at midnight. The ghost-like beings then surrounded Kalyani and her daughter. Kalyani all but fainted away for fright The dark and skinny men then took her up"
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "I ? THE ABBE Y OF BUSS"
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "with her daughter and carried them out of the room, across the field, into a forest"
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "Mahendra came there soon after, with milk, for his wife and child, in the pitcher he had carried. But there was no one in the room."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "He looked about, and then called aloud by his daughter's name and his wife's * no answer, no trace of any human soul could be found anywhere."
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "The wood in which the outlaws laid down Kalyani was a very beautiful one. There was no light, and no eyes to appreciate the beauty of it however. It therefore remained unseen like the beauty of a poor man's heart."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "There might be no food in the country, but, for all that, the woods did not lack flowers, and the odour of these seemed to make even that darkness luminous."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "The ruffians put Kalyani and her daughter down on a clean spot covered with soft grass and themselves sat round her."
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "They then began to talk about what they might do with her, — they had of course appropriated, before this, every bit of ornament that Kalyani had on her person, A party of them were busy dividing the spoils."
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "This done, one of the robbers said : 11 What shall we do with gold and silver ? Take one of my trinkets any of you and give me a handful of rice instead."
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "I am dying with hunger. I have had nothing more than leaves to eat to-day/1 When one showed the way, all the rest began to clamour in the same strain. \" Rice\", \" Rice/1 Si Dying with hunger, don't want gold and silver \" they cried."
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "Their captain sought to assuage them, but no one would listen. Words grew hot, abuses were freely used and a fight was imminent. In a rage every body threw at the captain the trinkets that had fallen to his share."
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "The captain in his turn struck one or two, when all of"
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "THE ABBE V OF BLISS"
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "them vfcII on him and began to strike him, He was famished and weak, and so he fell dead after a few strokes. Then of the hungry, irate, excited and senseless ruffians one said, \" We have delighted in the flesh of dogs and jackals !"
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "Now that we are dying with hunger, come, let us eat this rogue to-day.\" Then every one shouted in delight li Jai Kali\"— « Bom Kali \\ To-day we will eat human flesh f So saying the lank and shorn, black and ghostly, shapes began to laugh and clap and dance like fiends."
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "One of thern set about lighting a fire to roast their captain. He got together some dry creepers and wood, and with a flint and iron set fire to the mass."
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "As the light began to glow, the green leaves of the surrounding trees— mangoe, Jemon, jack, palm, tamarind, date and others,— slowly came to view. Here a leaf caught fire, there a grass shone bright with the light ; at other places the darkness grew thicker."
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "When the fire was ready, one was about to throw the corpse into it when another said, P Tarry, my man, if live we must on the noble meat today, why then eat the stiff flesh of that old wretch ?"
+    },
+    {
+      "id": "s3-24",
+      "sceneId": "s3",
+      "text": "Let's eat what we have secured to day ; let us roast that tender girl,\" Another said, \" Roast something— anything— boys, can't bear the hunger any more.\" And they all greedily looked to the spot where Kalyani lay with her child."
+    },
+    {
+      "id": "s3-25",
+      "sceneId": "s3",
+      "text": "But lo ! the place was empty ; neither mother nor child was there. She had made good her escape while the robbers were busy quarrelling, having silenced the child by putting her to suckle. Seeing that their prey was gone"
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "the fiendish ruffians rushed out on all sides, yelling like beasts. There are times when man becomes little better than a beast of prey."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "The wood was very dark Kalyani could not find her way in it There was hardly any path through the thick crowd of trees, herbs and thorns. Added to that, it was intensely dark. Still Kalyani pushed her way into the forest through the trees and thorny bushes."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "Now and then a thorn would prick the child and the little thing would cry and the ruffians would shout with redoubled zeal. Thus did Kalyani make her way into the thick of the forest drenched with blood."
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "Then the moon rose. Till then Kalyani had fondly hoped that the outlaws would not be able to see her in the dark and would desist from the pursuit. But now that the moon was up, she could entertain such a hope no longer."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "From the sky the moon showered her silver beams on the tops of the trees and the gloom within grew softer with light. And streaks of light came through openings here and there and peeped into the dark."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "The higher the moon rose, the more light got into the forest and the gloom retired more into its depths. Kalyani with her daughter began to retire into deeper woods."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "The ruffians rushed from all sides shouting alt the more, and the child began to weep all the louder for fear. Then Kalyani stopped and would run no more."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "Sitting on a thornless and grassy plot of land under a big tree, with her daughter in her arms, she only cried, « Where art Thou Whom 1 daily"
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "worship, to Whom I daily bow and trusting; Whom J could enter even this wild forest ?"
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "Where art thou, O Madhusudan.\" Kalyani was weak with hunger and thirst, and now from the intense fervour of her devotion, she slowly lost all physical sensations and in her inner consciousness she heard in space a heavenly voice chanting the various favourite names of Vishnu."
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "From childhood Kalyani had heard in Puranas that the heavenly saint Narada wandered over the world chanting the divine name of HariX.0 the accompaniment of his harp. That vision was now conjured up in her mind."
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "Inly she saw the colossal figure of the great saint, with a complexion of faultless white and with flowing white locks and beards, passing in his white garments through the azure sky, lit with silver moonbeams and singing the name of God to the accompaniment of the Vina."
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "Slowly the music drew nearer and became more audible. It drew nearer and grew clearer still, till at last the song rang the woods to the echo just over her head."
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "Kalyani then opened her eyes. In the misty moonlight of the woods she saw standing before her the glorious form of the hoary saint with a complexion of faultless white, and with milk-white garments on, his hair and beards flowing in waves of snow."
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "Half dreaming, she thought she would bow^ her head to him, but as she lowered her head to make her salute she fell senseless on the ground."
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "Within this wood there stood a large monastery on a large piece of land with broken stones all around. Antiquarians would perhaps say that it was a Buddhist monastery in old days and was subsequently converted into a Hindu one."
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "The buildings were two-storied. Within them were many temples and in front was a canopied yard."
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "Most of the buildings were surrounded by walls and so shaded by trees outside that one would not think there was a building here, even if one looked in the daylight and from close quarters."
+    },
+    {
+      "id": "s5-17",
+      "sceneId": "s5",
+      "text": "The buildings were broken at many places but you could see by daylight that those places had been repaired of late. From the very sight of those buildings you could at once infer that there was human habitation within this deep inaccessible forest."
+    },
+    {
+      "id": "s5-18",
+      "sceneId": "s5",
+      "text": "In one of the rooms of this abbey a big log was burning, and as Kalyani first regained her consciousness in it, she saw before her, the great man of hoary hue, with milk-white garments on !"
+    },
+    {
+      "id": "s5-19",
+      "sceneId": "s5",
+      "text": "Kalyani looked again with surprise, for she could not recollect things yet Then the great man said, ts Mother, this Is a place of the gods, you need not be afraid. There is a little milk there, drink that and then I shall speak to you.\""
+    }
+  ]
+}
