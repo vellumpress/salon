@@ -158,6 +158,17 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * teaching open, stop at the Chapter I boundary, no Project Gutenberg id, not
  * Next, not For you. Cold-open stays Mirth → Quicksand → Botchan. Tang Poems
  * and The Bronze Horseman stay HOLD.
+ * Noon Wed 23 Sep 2026 CLEAR — Recommend only, never a new homepage Featured
+ * pin. Enchanted April leads this cycle’s Next append (Woman’s Club / Agony
+ * Column, 1922, PG 16389), then Quicksand (shaded lamp, 1928, no Project
+ * Gutenberg id; distinct from Passing), then Underdogs as the harder Next
+ * bar (sierra dog-bark, “That's no animal, I tell you!”, Munguía English,
+ * PG 549). April and Quicksand stay on the locked recommend list, so their
+ * track remains featured; they are not new Featured pins. Kwaidan is Rituals
+ * only: one tale, Mimi-Nashi-Hōïchi at Dan-no-ura, PG 1210, footnotes already
+ * stripped. Thaïs is For you only — Douglas English, PG 2078, Part First —
+ * The Lotus — not Next. Cold-open stays Mirth → Quicksand → Botchan. Tang
+ * Poems, The Bronze Horseman, and Inferno (wrong PG) stay HOLD.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -473,6 +484,10 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "death-comes-for-the-archbishop",
   "banjo",
   "nacha-regules",
+  // Mira Noon Wed 23 Sep CLEAR — April leads Next. Never a new Featured pin.
+  "enchanted-april",
+  "quicksand",
+  "underdogs",
 ] as const;
 
 /**

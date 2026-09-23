@@ -44,6 +44,7 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
     "bel-ami",
     "hadji-murad",
     "anandamath",
+    "thais",
     "generosity",
   ]);
   assert.equal(forYou.workIds[0], "the-house-of-mirth");
@@ -61,7 +62,6 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
     "all-quiet-on-the-western-front",
     "we",
     "the-story-of-gosta-berling",
-    "thais",
     "demian",
     "death-comes-for-the-archbishop",
     "the-getting-of-wisdom",

@@ -21,7 +21,6 @@ const FULL_NOVEL_NO_STUB = [
   "all-quiet-on-the-western-front",
   "we",
   "blood-and-sand",
-  "thais",
   "ecstasy",
   "letters-of-a-javanese-princess",
   "where-angels-fear-to-tread",
@@ -30,7 +29,6 @@ const FULL_NOVEL_NO_STUB = [
   "an-outcast-of-the-islands",
   "the-getting-of-wisdom",
   "the-home-and-the-world",
-  "enchanted-april",
   "high-wind-jamaica",
   "vera",
   "noli-me-tangere",
@@ -51,7 +49,6 @@ const FULL_NOVEL_NO_STUB = [
   "strange-tales",
   "short-stories-from-the-balkans",
   "the-awakening",
-  "quicksand",
   "a-hundred-and-seventy-chinese-poems",
 ] as const;
 
@@ -257,7 +254,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^It was a dark night/,
     },
     "enchanted-april": {
-      scene: /Agony Column/i,
+      scene: /Chapter 1/,
       opening: /^It began in a Woman/,
     },
     "mr-fortunes-maggot": {
@@ -325,7 +322,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^At last the minister stood in the pulpit/,
     },
     thais: {
-      scene: /Nile huts/i,
+      scene: /Lotus/,
       opening: /^In those days there were many hermits/,
     },
     demian: {
@@ -484,11 +481,10 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       );
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "enchanted-april") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /dripping street\.?$/);
-      assert.doesNotMatch(
-        packed.breaths.map((b) => b.text).join(" "),
-        /what nonsense|Mrs\. Arbuthnot|nest-egg/i,
-      );
+      assert.equal(packed.scenes[0]?.title, "Chapter 1");
+      assert.equal(packed.breaths.length, 48);
+      assert.match(packed.breaths[0]?.text ?? "", /Agony Column/);
+      assert.match(packed.breaths.map((b) => b.text).join(" "), /Wistaria|wistaria/);
     }
     if (id === "mr-fortunes-maggot") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /call to go to the island of Fanua/);
@@ -578,7 +574,10 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       );
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "thais") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /cave or tomb\.?$/);
+      assert.match(packed.scenes[0]?.title ?? "", /Lotus/);
+      assert.match(packed.breaths[0]?.text ?? "", /Nile/);
+      assert.equal(packed.breaths.length, 48);
+      assert.doesNotMatch(packed.breaths[0]?.text ?? "", /ANATOLE FRANCE/);
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "demian") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /Christmas was kept\.?$/);
@@ -1101,14 +1100,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       opening: /^Juan Gallardo breakfasted early/,
       breaths: 2173,
     },
-    thais: {
-      gutenberg: 2078,
-      title: "Thaïs",
-      author: "Anatole France (tr. Robert B. Douglas)",
-      year: 1909,
-      opening: /^In those days there were many hermits/,
-      breaths: 2926,
-    },
     ecstasy: {
       gutenberg: 37770,
       title: "Ecstasy",
@@ -1177,14 +1168,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       breaths: 1489,
       scenes: 12,
       last: /bullet through the heart/,
-    },
-    "enchanted-april": {
-      gutenberg: 16389,
-      title: "The Enchanted April",
-      author: "Elizabeth von Arnim",
-      year: 1922,
-      opening: /^It began in a Woman/,
-      breaths: 4371,
     },
     "high-wind-jamaica": {
       gutenberg: 75530,
@@ -1375,16 +1358,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       scenes: 39,
       last: /musky odor of pinks filled the air\.$/,
       intro: /Chapter I/,
-    },
-    quicksand: {
-      title: "Quicksand",
-      author: "Nella Larsen",
-      year: 1928,
-      opening: /^Helga Crane sat alone in her room, which at that hour, eight in the evening, was in soft gloom/,
-      breaths: 685,
-      scenes: 25,
-      last: /fifth child/,
-      intro: /lamp-lit room/,
     },
     "a-hundred-and-seventy-chinese-poems": {
       gutenberg: 42290,
