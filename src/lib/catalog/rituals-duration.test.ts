@@ -226,8 +226,8 @@ test("Enchanted April waking sit is the first-session dripping-street cut, not t
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assert.equal(estimateRitualMinutes(item), 8);
+  assert.equal(ritualDurationLabel(item), "~12 min");
 });
 
 test("Mr. Fortune’s Maggot unwind sit is the Fanua-call cut, not the novel", () => {
@@ -474,12 +474,12 @@ test("Thaïs before-sleep sit is the Nile-huts cut", () => {
   const item = work({
     id: "thais",
     form: "novel",
-    breaths: 6,
-    minutes: 2,
+    breaths: 48,
+    minutes: 8,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assert.equal(estimateRitualMinutes(item), 8);
+  assert.equal(ritualDurationLabel(item), "~12 min");
 });
 
 test("Nada the Lily before-sleep sit is the hidden-name cut", () => {

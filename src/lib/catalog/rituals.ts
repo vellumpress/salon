@@ -19,7 +19,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Yeats returns to Coole’s autumn lake and counts the swans that will not stay. The poems hold rooms, roads, and the chill of what will not come again.",
 
   "kwaidan-stories-and-studies-of-strange-things":
-    `More than seven hundred years after a drowned clan haunted the Straits of Shimonoséki, a blind minstrel named Hōïchi is about to be summoned by listeners who aren’t quite alive. Lafcadio Hearn’s 1904 ghost tale opens on that coast—demon-fires on the water, a temple built to quiet the dead, and a musician whose ears will matter more than he knows.`,
+    `One tale only: The Story of Mimi-Nashi-Hōïchi. More than seven hundred years after a drowned clan haunted the Straits of Shimonoséki, a blind minstrel named Hōïchi is about to be summoned by listeners who aren’t quite alive. Lafcadio Hearn’s 1904 ghost tale opens on Dan-no-ura—demon-fires on the water, a temple built to quiet the dead. Stop at the tale boundary.`,
  "the-listeners-and-other-poems":
     "A traveler knocks at a moonlit house that never answers. De la Mare’s poems keep the hallway listening after the footsteps fade.",
   "the-empty-house-and-other-ghost-stories":
@@ -250,7 +250,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-story-of-gosta-berling":
     `At last the priest is in the pulpit — marble-handsome — and the parish remembers him reeling out of the inn.`,
   thais:
-    `Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond. Desire, conversion, and desert zeal intensify after this atlas-like open. Warn the room if you Host into Paphnutius / Thaïs.`,
+    `Part First — The Lotus. Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond. Desire and conversion irony intensify after this atlas-like open; warn the room if you Host into Paphnutius / Thaïs.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
   "the-house-of-mirth":
@@ -307,6 +307,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "bel-ami",
       "hadji-murad",
       "anandamath",
+      "thais",
       "generosity",
     ],
   },
@@ -675,6 +676,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "nacha-regules",
       "african-tragedy",
       "anandamath",
+      "enchanted-april",
+      "quicksand",
+      "underdogs",
+      "kwaidan-stories-and-studies-of-strange-things",
+      "thais",
     ],
   },
   {
@@ -706,6 +712,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "mhudi",
       "african-tragedy",
       "anandamath",
+      "kwaidan-stories-and-studies-of-strange-things",
+      "thais",
     ],
   },
   {
@@ -722,9 +730,8 @@ export const RITUAL_LANES: RitualLane[] = [
       // Naomi is a local bind but not a short first-session sit (full novel,
       // no ritual-ready open-at). Skip until a clean short sit exists —
       // do not invent one.
-      // Enchanted April is a waking-up local sit on this shelf. Live bind
-      // is Mira’s first-session dripping-street cut (~158w). The longer
-      // agony-column Host sit is backup only — do not invent a second work id.
+      // Enchanted April also leads the noon Next append and stays a waking sit.
+      // Chapter 1 opens in the Woman’s Club; the novel continues.
       "poison-tree",
       "noli-me-tangere",
       "nacha-regules",
@@ -742,6 +749,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "a-passage-to-india",
       "of-human-bondage",
       "death-comes-for-the-archbishop",
+      "enchanted-april",
+      "underdogs",
     ],
   },
   {
@@ -775,6 +784,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "death-comes-for-the-archbishop",
       "banjo",
       "nacha-regules",
+      "enchanted-april",
+      "quicksand",
+      "underdogs",
     ],
   },
   {
@@ -799,7 +811,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-weary-blues": 5,
   "kwaidan-stories-and-studies-of-strange-things": 5,
   "the-house-of-mirth": 5,
-  "enchanted-april": 2,
+  "enchanted-april": 8,
   "mr-fortunes-maggot": 5,
   "the-bridge-of-san-luis-rey": 8,
   "carmilla": 5,
@@ -833,7 +845,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "all-quiet-on-the-western-front": 2,
   we: 2,
   "the-story-of-gosta-berling": 2,
-  thais: 2,
+  thais: 8,
+  underdogs: 8,
   demian: 2,
   "death-comes-for-the-archbishop": 2,
   "the-getting-of-wisdom": 2,

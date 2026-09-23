@@ -23,7 +23,7 @@ const BLURBS: Record<string, string> = {
   "the-story-of-gosta-berling":
     "At last the priest is in the pulpit — marble-handsome — and the parish remembers him reeling out of the inn.",
   thais:
-    "Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset.",
+    "Part First — The Lotus opens on Nile hermits in clay huts, before the turn toward Paphnutius and Alexandria.",
   manhattan: "Dos Passos cuts New York as montage: arrivals, ads, and lives slicing across each other.",
   tropic:
     "The whistle blew for eleven o'clock — Drought opens in Barbados.",
@@ -201,7 +201,7 @@ const BLURBS: Record<string, string> = {
   "post-office":
     "A sick boy keeps the village post office of the mind — Tagore’s small play of waiting.",
   underdogs:
-    "Azuela rides with Pancho Villa’s men and writes the revolution without a victory speech.",
+    "A dog barks in the sierra and Demetrio is told to hide from the soldiers.",
   rur: "A factory makes artificial workers; the workers decide they are the future.",
   "bread-givers":
     "A Hester Street daughter fights a father, a language, and the right to own her own name.",
@@ -328,7 +328,7 @@ const BLURBS: Record<string, string> = {
   anandamath:
     "A hot day in Padachinha opens Sen-Gupta’s 1906 Abbey of Bliss — Bengali year marks stay, and this is not Poison Tree.",
   "kwaidan-stories-and-studies-of-strange-things":
-    "Hearn’s Japan after dark: soft-spoken ghosts, fox wives, and studies that prefer a whisper.",
+    "One tale: Mimi-Nashi-Hōïchi at Dan-no-ura, where demon-fires burn and a blind minstrel is about to be summoned.",
   "chita-a-memory-of-last-island":
     "A Gulf storm erases a Louisiana island; a child is left in the wreckage.",
   "the-rubaiyat-of-omar-khayyam":

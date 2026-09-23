@@ -137,7 +137,7 @@ test("Locked recommend, Next, and ritual-lane works all resolve a place with a s
     "the-house-of-mirth",
     "quicksand",
   ]);
-  assert.equal(NEXT_FEATURED_TRACK_IDS.includes("quicksand"), false);
+  assert.equal(NEXT_FEATURED_TRACK_IDS.includes("quicksand"), true);
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("attendants-confession"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("rashomon"));
   assert.ok(NEXT_FEATURED_TRACK_IDS.includes("high-wind-jamaica"));

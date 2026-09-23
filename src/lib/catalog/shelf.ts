@@ -211,7 +211,21 @@ export const SHELF: ShelfWork[] = [
   },
   { id: "golem", title: "The Golem", author: "Gustav Meyrink", year: 1915, form: "novel", language: "German", minutes: 160 },
   { id: "metamorphosis", title: "The Metamorphosis", author: "Franz Kafka", year: 1915, form: "other", language: "German", minutes: 40 }, // Thea PULL EN 2026-09-15: PG 5200 Wyllie copyrighted — catalog-only
-  { id: "underdogs", title: "The Underdogs", author: "Mariano Azuela", year: 1915, form: "novel", language: "Spanish", local: true, opening: "\"How beautiful the revolution!", breaths: 2901, minutes: 363, gutenberg: 549 },
+  {
+    id: "underdogs",
+    title: "The Underdogs",
+    author: "Mariano Azuela",
+    year: 1915,
+    form: "novel",
+    language: "English",
+    local: true,
+    gutenberg: 549,
+    opening: "That's no animal, I tell you!",
+    breaths: 2899,
+    minutes: 362,
+    intro:
+      "That's no animal, I tell you — the dog is barking in the sierra, and Demetrio is told to hide. Soldiers and violence are already in this stretch; do not sanitize mid-bind. Munguía’s English is the only bind. This is the Mexican sierra, not Buenos Aires.",
+  },
   {
     id: "the-underdogs",
     title: "The Underdogs",
@@ -358,10 +372,10 @@ export const SHELF: ShelfWork[] = [
     minutes: 160,
     local: true,
     opening:
-      "Helga Crane sat alone in her room, which at that hour, eight in the evening, was in soft gloom.",
+      "Helga Crane sat alone in her room, which at that hour, eight in the evening, was in soft gloom. Only a single reading lamp, dimmed by a great black and red shade, made a pool of light on the blue Chinese carpet, on the bright covers of the books which she had taken down from their long shelves, on the white pages of the opened one selected, on the shining brass bowl crowded with many-colored nasturtiums beside her on the low table, and on the oriental silk which covered the stool at her slim feet. It was a comfortable room, furnished with rare and intensely personal taste, flooded with Southern sun in the day, but shadowy just then with the drawn curtains and single shaded light. Large, too. So large that the spot where Helga sat was a small oasis in a desert of darkness. And eerily quiet. But that was what she liked after her taxing day's work, after the hard classes, in which she gave willingly and unsparingly of herself with no apparent return. She loved this tranquillity, this quiet, following the fret and strain of the long hours spent among fellow members of a carelessly unkind and gossiping faculty, following the strenuous rigidity of conduct required in this huge educational community of which she was an insignificant part. This was her rest, this intentional isolation for a short while in the evening, this little time in her own attractive room with her own books. To the rapping of other teachers, bearing fresh scandals, or seeking information, or other more concrete favors, or merely talk, at that hour Helga Crane never opened her door.",
     breaths: 685,
     intro:
-      "Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door. Quicksand begins in intentional isolation after a taxing day among an unkind faculty.\n\nNella Larsen’s 1928 novel (Standard Ebooks / Wikisource local bind) is the full book: Chapter I through XXV, lamp-lit room first. The novel continues.",
+      "Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door. Quicksand begins in intentional isolation after a taxing day among an unkind faculty. Do not confuse this novel with Passing. Race, desire, and refusal stay in the bind; do not sanitize.\n\nNella Larsen’s 1928 novel is the full local bind: Chapter I through XXV, lamp-lit room first. The novel continues.",
   },
   { id: "ryder", title: "Ryder", author: "Djuna Barnes", year: 1928, form: "novel", language: "English", minutes: 160 },
   {
@@ -671,16 +685,17 @@ export const SHELF: ShelfWork[] = [
     id: "thais",
     title: "Thaïs",
     author: "Anatole France (tr. Robert B. Douglas)",
-    year: 1909,
+    year: 1890,
     form: "novel",
     language: "English",
-    minutes: 366,
+    minutes: 160,
     local: true,
     gutenberg: 2078,
-    opening: "In those days there were many hermits living in the desert.",
-    breaths: 2926,
+    opening:
+      "In those days there were many hermits living in the desert. On both banks of the Nile numerous huts, built by these solitary dwellers, of branches held together by clay, were scattered at a little distance from each other, so that the inhabitants could live alone, and yet help one another in case of need. Churches, each surmounted by a cross, stood here and there amongst the huts, and the monks flocked to them at each festival to celebrate the services or to partake of the Communion. There were also, here and there on the banks of the river, monasteries, where the cenobites lived in separate cells, and only met together that they might the better enjoy their solitude.",
+    breaths: 914,
     intro:
-      "Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond. Desire, conversion, and desert zeal intensify after this atlas-like open. Warn the room if you Host into Paphnutius / Thaïs.",
+      "Part First — The Lotus: Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond. Desire and conversion irony intensify after this atlas-like open. Warn the room if you Host into Paphnutius / Thaïs. Douglas’s English is the only bind.",
   },
   { id: "in-the-midst-of-life-tales-of-soldiers-and-civil", title: "In the Midst of Life: Tales of Soldiers and Civilians", author: "Ambrose Bierce", year: 1891, form: "stories", language: "English", minutes: 456, local: true, opening: "One sunny afternoon in the autumn of the year 1861 a soldier lay in a clump of laurel by the side of a road in western Virginia.", breaths: 3651, gutenberg: 13334 },
   { id: "lord-arthur-savile-s-crime", title: "Lord Arthur Savile's Crime", author: "Oscar Wilde", year: 1891, form: "stories", language: "English", minutes: 241, local: true, opening: "IT was Lady Windermere’s last reception before Easter, and Bentinck House was even more crowded than usual.", breaths: 1929, gutenberg: 773 },
@@ -967,7 +982,7 @@ export const SHELF: ShelfWork[] = [
       "More than seven hundred years ago, at Dan-no-ura, in the Straits of Shimonoséki, was fought the last battle of the long contest between the Heiké, or Taira clan, and the Genji, or Minamoto clan.",
     breaths: 1643,
     intro:
-      `More than seven hundred years after a drowned clan haunted the Straits of Shimonoséki, a blind minstrel named Hōïchi is about to be summoned by listeners who aren’t quite alive. Lafcadio Hearn’s 1904 ghost tale opens on that coast—demon-fires on the water, a temple built to quiet the dead, and a musician whose ears will matter more than he knows.`,
+      `One tale only: The Story of Mimi-Nashi-Hōïchi. More than seven hundred years after a drowned clan haunted the Straits of Shimonoséki, a blind minstrel named Hōïchi is about to be summoned by listeners who aren’t quite alive. Lafcadio Hearn’s 1904 ghost tale opens on Dan-no-ura—demon-fires on the water, a temple built to quiet the dead. Stop at the tale boundary. Footnote markers are already gone.`,
   },
   { id: "nostromo", title: "Nostromo", author: "Joseph Conrad", year: 1904, form: "novel", language: "English", minutes: 1160, gutenberg: 2021,
     local: true,
@@ -1491,10 +1506,10 @@ export const SHELF: ShelfWork[] = [
     gutenberg: 16389,
     opening:
       "It began in a Woman’s Club in London on a February afternoon—an uncomfortable club, and a miserable afternoon—when Mrs. Wilkins, who had come down from Hampstead to shop and had lunched at her club, took up *The Times* from the table in the smoking-room, and running her listless eye down the Agony Column saw this:",
-    breaths: 4371,
-    minutes: 546,
+    breaths: 1540,
+    minutes: 96,
     intro:
-      "February rain on Shaftesbury Avenue. An uncomfortable club. Mrs. Wilkins, down from Hampstead to shop, picks up The Times and lets her eye drift the Agony Column—until one notice catches: wistaria and sunshine, a small mediaeval Italian castle to let for April, servants included.\n\nElizabeth von Arnim’s The Enchanted April, first published in 1922, opens in that London gray. The Rituals first-session sit is the dripping-street open-at; the novel continues.",
+      "February rain on Shaftesbury Avenue. An uncomfortable club. Mrs. Wilkins, down from Hampstead to shop, picks up The Times and lets her eye drift the Agony Column—until one notice catches: wistaria and sunshine, a small mediaeval Italian castle to let for April, servants included.\n\nElizabeth von Arnim’s The Enchanted April (1922) opens in that London gray, Chapter 1, Woman’s Club. The novel continues into Mrs. Arbuthnot and the castle.",
   },
   { id: "the-garden-party-and-other-stories", title: "The Garden Party, and Other Stories", author: "Katherine Mansfield", year: 1922, form: "stories", language: "English", minutes: 640, local: true, opening: "Very early morning.", breaths: 5117 },
   {
