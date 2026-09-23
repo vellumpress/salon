@@ -123,8 +123,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
 
   "the-weary-blues":
     `Harlem, late night—a piano that won’t quit, and a young poet listening hard. Langston Hughes’s 1926 first book opens with Proem (“I am a Negro”), then the title poem and a short run of cabaret pieces. Blues and jazz aren’t decoration here; they’re the beat the lines move to.`,
- cheri:
-    "Colette’s aging beauty and her younger lover in a Paris of pearls and appetite. Recognition arrives late — and it doesn’t soften the exit.",
+  cheri:
+    "Léa’s wrought-iron bed; Chéri wants the pearls. Janet Flanner’s English is the only bind, with no catalog number invented. Desire and the kept boy stay in the sit — do not sanitize — and it stays soft against Bel-Ami.",
   dalloway:
     "One London day: Clarissa buys the flowers herself and walks the city awake. Parties, memory, and the war still echoing in the street.",
   "north-of-boston":
@@ -208,7 +208,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "where-angels-fear-to-tread":
     `Charing Cross chaos — Lilia laughing like royalty while Philip floods her with little towns to see: Gubbio, Pienza, Monteriano. Later the plot darkens; this open stays comic.`,
   "the-gadfly":
-    `Pisa seminary heat — a lost sermon page, a caressing *Padre*, and a fruitseller calling *Fragola!* down the street. Later violence comes after this sit.`,
+    `Pisa seminary heat — a lost sermon page, a caressing *Padre*, and a fruitseller calling *Fragola!* down the street. Later violence comes after this sit. It stays soft against Enchanted April: Risorgimento Italy, not the manners comedy.`,
   "the-immoralist":
     `Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for. The sit opens on the frame letter and stops on the freedom line.`,
   "the-hidden-force":
@@ -244,7 +244,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "nada-the-lily":
     `You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zulu epic is told through an invented oral narrator (Mopo) inside late-Victorian imperial romance — the White Man / Great Queen frame — and is not ethnographic authority or a substitute for Zulu-authored history. Name that frame for the room before you Host further, and do not sanitize mid-bind.`,
   "all-quiet-on-the-western-front":
-    `Five miles behind the front — bellies full, double sausage, and a cook who won’t stop ladling. This sit is rest and double rations five miles behind the line; later chapters bring trench violence and period enemy language. Warn the room if you Host further.`,
+    `Five miles behind the front — bellies full of beef and haricot beans, double sausage, and a cook who won’t stop ladling. This sit is the rest billet; later chapters bring trench violence and period enemy language, and you should not sanitize them. Warn the room if you Host further.`,
   we:
     `Cheeks burning — D-503 will straighten the wild curve into the wisest of lines, and call the record *We*.`,
   "the-story-of-gosta-berling":
@@ -253,6 +253,10 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Part First — The Lotus. Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond. Desire and conversion irony intensify after this atlas-like open; warn the room if you Host into Paphnutius / Thaïs.`,
   "bunner-sisters":
     `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
+  "lolly-willowes":
+    `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
+  "brazilian-tales":
+    `One tale only: The Attendant's Confession. A marked man in 1860 offers a human document and asks that it not be published until he is dead. Stop at the tale boundary — Brazil, not the Tropic rail.`,
   "the-house-of-mirth":
     `Grand Central, a Monday in early September—the afternoon rush, the heat, the crowd. Lawrence Selden notices Lily Bart standing apart from it all, vivid against the dull tints of the station. Edith Wharton’s 1905 New York novel begins with a chance meeting that doesn’t feel accidental.`,
   carmilla:
@@ -333,6 +337,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "casanovas-homecoming",
       "jamaica-anansi-stories",
       "african-tragedy",
+      "brazilian-tales",
     ],
   },
   {
@@ -681,6 +686,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "underdogs",
       "kwaidan-stories-and-studies-of-strange-things",
       "thais",
+      "lolly-willowes",
+      "cheri",
+      "all-quiet-on-the-western-front",
+      "the-gadfly",
+      "brazilian-tales",
     ],
   },
   {
@@ -714,6 +724,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "anandamath",
       "kwaidan-stories-and-studies-of-strange-things",
       "thais",
+      "brazilian-tales",
     ],
   },
   {
@@ -751,6 +762,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "death-comes-for-the-archbishop",
       "enchanted-april",
       "underdogs",
+      "lolly-willowes",
+      "cheri",
+      "all-quiet-on-the-western-front",
+      "the-gadfly",
     ],
   },
   {
@@ -787,6 +802,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "enchanted-april",
       "quicksand",
       "underdogs",
+      "lolly-willowes",
+      "cheri",
+      "all-quiet-on-the-western-front",
+      "the-gadfly",
     ],
   },
   {
@@ -812,6 +831,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "kwaidan-stories-and-studies-of-strange-things": 5,
   "the-house-of-mirth": 5,
   "enchanted-april": 8,
+  "lolly-willowes": 8,
+  cheri: 8,
+  "brazilian-tales": 8,
   "mr-fortunes-maggot": 5,
   "the-bridge-of-san-luis-rey": 8,
   "carmilla": 5,

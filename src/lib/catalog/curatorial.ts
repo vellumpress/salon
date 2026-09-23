@@ -169,6 +169,19 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * stripped. Thaïs is For you only — Douglas English, PG 2078, Part First —
  * The Lotus — not Next. Cold-open stays Mirth → Quicksand → Botchan. Tang
  * Poems, The Bronze Horseman, and Inferno (wrong PG) stay HOLD.
+ * ~4:14 Wed 23 Sep 2026 CLEAR — Recommend only, never a new homepage Featured
+ * pin. Lolly Willowes leads this cycle’s Next append (Chapter I spare-room,
+ * “Of course, you will come to us.”, PG 72223; soft against Mr. Fortune’s
+ * Maggot). Chéri follows (pearls / wrought-iron bed, Flanner English local,
+ * no Project Gutenberg id; soft against Bel-Ami). All Quiet keeps its earlier
+ * Next seat and is repeated here so this cycle reads in order (rest billet,
+ * beef and haricot beans, Wheen, PG 75011; war densify — do not sanitize).
+ * The Gadfly is the harder Next bar (Pisa seminary / Fragola, PG 3431; soft
+ * against Enchanted April’s Italy). Brazilian Tales is Rituals only: one
+ * tale, The Attendant's Confession, PG 21040, stop at the tale boundary,
+ * soft against Tropic. Cold-open stays Mirth → Quicksand → Botchan. Tang
+ * Poems, The Bronze Horseman, and Inferno (wrong PG) stay HOLD. The Painted
+ * Veil pack stays out of this ship.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -488,6 +501,12 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "enchanted-april",
   "quicksand",
   "underdogs",
+  // Mira ~4:14 Wed 23 Sep CLEAR — Lolly leads Next. Never a new Featured pin.
+  // All Quiet is already seated above; this second seat is the cycle order.
+  "lolly-willowes",
+  "cheri",
+  "all-quiet-on-the-western-front",
+  "the-gadfly",
 ] as const;
 
 /**

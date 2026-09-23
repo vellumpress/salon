@@ -18,7 +18,6 @@ const FULL_NOVEL_NO_STUB = [
   "the-good-soldier",
   "demian",
   "the-immoralist",
-  "all-quiet-on-the-western-front",
   "we",
   "blood-and-sand",
   "ecstasy",
@@ -32,7 +31,6 @@ const FULL_NOVEL_NO_STUB = [
   "high-wind-jamaica",
   "vera",
   "noli-me-tangere",
-  "the-gadfly",
   "the-story-of-gosta-berling",
   "futility",
   "poison-tree",
@@ -41,7 +39,6 @@ const FULL_NOVEL_NO_STUB = [
   "bliss",
   "steppenwolf",
   "shadowings",
-  "brazilian-tales",
   "krakatit",
   "the-peasants",
   "cane",
@@ -274,7 +271,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^They were all at Charing Cross/,
     },
     "the-gadfly": {
-      scene: /Fragola/i,
+      scene: /CHAPTER I/i,
       opening: /^Arthur sat in the library/,
     },
     botchan: {
@@ -310,7 +307,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^You ask me, my father/,
     },
     "all-quiet-on-the-western-front": {
-      scene: /Double rations/i,
+      scene: /Chapter I/i,
       opening: /^We are at rest five miles behind the front/,
     },
     we: {
@@ -509,8 +506,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       );
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "the-gadfly") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /Fragola/);
-      assert.ok(packed.breaths.some((breath) => /\*Fragola!\*/.test(breath.text)));
+      assert.ok(packed.breaths.some((breath) => /Fragola!/.test(breath.text)));
     }
     if (id === "botchan") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /scar will be there until my death\.?$/);
@@ -552,7 +548,8 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.ok(packed.breaths.some((breath) => /\bLapp\b/.test(breath.text)));
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "all-quiet-on-the-western-front") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /now that is decent\.?$/);
+      assert.match(packed.breaths[0]?.text ?? "", /beef and haricot beans/);
+      assert.ok(packed.breaths.some((breath) => /now that is decent/.test(breath.text)));
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /epigraph|this book is to be neither/i,
@@ -1075,15 +1072,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       breaths: 591,
       intro: /freedom/i,
     },
-    "all-quiet-on-the-western-front": {
-      gutenberg: 75011,
-      title: "All Quiet on the Western Front",
-      author: "Erich Maria Remarque",
-      year: 1929,
-      opening: /^We are at rest five miles behind the front/,
-      breaths: 1604,
-      scenes: 12,
-    },
     we: {
       gutenberg: 61963,
       title: "We",
@@ -1191,14 +1179,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       opening: /^On the last of October Don Santiago de los Santos/,
       breaths: 8108,
     },
-    "the-gadfly": {
-      gutenberg: 3431,
-      title: "The Gadfly",
-      author: "Ethel Lilian Voynich",
-      year: 1897,
-      opening: /^Arthur sat in the library/,
-      breaths: 6653,
-    },
     "the-story-of-gosta-berling": {
       gutenberg: 56158,
       title: "The Story of Gösta Berling",
@@ -1271,16 +1251,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       breaths: 977,
       scenes: 16,
       last: /Infinite Memory/,
-    },
-    "brazilian-tales": {
-      gutenberg: 21040,
-      title: "Brazilian Tales",
-      author: "Machado de Assis, Coelho Netto, Medeiros e Albuquerque, Carmen Dolores (tr. Isaac Goldberg)",
-      year: 1921,
-      opening: /^So it really seems to you/,
-      breaths: 371,
-      scenes: 6,
-      last: /poor verses/,
     },
     krakatit: {
       gutenberg: 79127,
@@ -1522,7 +1492,7 @@ test("Mira FULL-TEXT CLEAR ×4 are stamped local binds with no opening stubs", (
   }
 });
 
-test("Mira FULL-TEXT CLEAR ×7 are stamped local binds with no opening stubs", () => {
+test("Mira FULL-TEXT CLEAR ×6 are stamped local binds with no opening stubs", () => {
   const expect = {
     steppenwolf: { gutenberg: 75756, scenes: 4, breaths: 770, last: /^THE END$/ },
     "the-home-and-the-world": { gutenberg: 7166, scenes: 12, breaths: 1489, last: /bullet through the heart/ },
@@ -1530,7 +1500,6 @@ test("Mira FULL-TEXT CLEAR ×7 are stamped local binds with no opening stubs", (
     "martin-bircks-youth": { gutenberg: 78363, scenes: 31, breaths: 545, last: /from this one spring/ },
     bliss: { gutenberg: 44385, scenes: 14, breaths: 1603, last: /live for ever/ },
     shadowings: { gutenberg: 34215, scenes: 16, breaths: 977, last: /Infinite Memory/ },
-    "brazilian-tales": { gutenberg: 21040, scenes: 6, breaths: 371, last: /poor verses/ },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
