@@ -372,6 +372,10 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "enchanted-april",
     "quicksand",
     "underdogs",
+    "lolly-willowes",
+    "cheri",
+    "all-quiet-on-the-western-front",
+    "the-gadfly",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -391,7 +395,7 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("the-home-and-the-world"), "next");
   assert.equal(curatorialTrack("the-immoralist"), "next");
   assert.equal(curatorialTrack("where-angels-fear-to-tread"), "later");
-  assert.equal(curatorialTrack("the-gadfly"), "later");
+  assert.equal(curatorialTrack("the-gadfly"), "next");
   assert.equal(curatorialTrack("letters-of-a-javanese-princess"), "later");
   assert.equal(curatorialTrack("blood-and-sand"), "later");
   assert.equal(curatorialTrack("poison-tree"), "later");
@@ -844,9 +848,9 @@ test("The Gadfly is a local before-sleep bind on Next, behind Home and the World
   assert.ok(lane?.workIds.includes("the-gadfly"));
   assert.ok(lane!.workIds.indexOf("the-gadfly") > lane!.workIds.indexOf("the-home-and-the-world"));
   assert.ok(lane!.workIds.indexOf("the-home-and-the-world") > lane!.workIds.indexOf("quicksand"));
-  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-gadfly"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-gadfly"), true);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-gadfly"), false);
-  assert.equal(curatorialTrack("the-gadfly"), "later");
+  assert.equal(curatorialTrack("the-gadfly"), "next");
 });
 
 test("Ecstasy is a local before-sleep bind on Next, not locked recommend", () => {
@@ -3241,7 +3245,8 @@ test("Mira Wed 8AM CLEAR sits on Next, For you, and Rituals, never Featured", ()
     "banjo",
     "nacha-regules",
   ]);
-  assert.equal(bite?.workIds.at(-1), "african-tragedy");
+  assert.equal(bite?.workIds.at(-2), "african-tragedy");
+  assert.equal(bite?.workIds.at(-1), "brazilian-tales");
   const wakeEight = waking!.workIds.indexOf("african-tragedy");
   assert.equal(waking?.workIds[wakeEight + 1], "anandamath");
   assert.equal(forYou?.workIds.includes("death-comes-for-the-archbishop"), false);
@@ -3353,25 +3358,35 @@ test("Mira Noon Wed 23 Sep CLEAR sits on Next, For you, and Rituals, never a new
   const dante = SHELF.find((item) => item.id === "inferno");
   assert.equal(dante?.local, undefined);
   assert.equal(dante?.gutenberg, undefined);
-  assert.equal(next.at(-3), "enchanted-april");
-  assert.equal(next.at(-2), "quicksand");
-  assert.equal(next.at(-1), "underdogs");
+  const noonAt = next.lastIndexOf("enchanted-april");
+  assert.deepEqual(next.slice(noonAt, noonAt + 3), [
+    "enchanted-april",
+    "quicksand",
+    "underdogs",
+  ]);
+  assert.equal(next[noonAt + 3], "lolly-willowes");
   assert.ok(next.indexOf("enchanted-april") > next.indexOf("nacha-regules"));
   assert.equal(next.includes("kwaidan-stories-and-studies-of-strange-things"), false);
   assert.equal(next.includes("thais"), false);
-  assert.deepEqual(sleep?.workIds.slice(-5), [
+  const noonSleep = sleep!.workIds.lastIndexOf("enchanted-april");
+  assert.deepEqual(sleep?.workIds.slice(noonSleep, noonSleep + 5), [
     "enchanted-april",
     "quicksand",
     "underdogs",
     "kwaidan-stories-and-studies-of-strange-things",
     "thais",
   ]);
-  assert.deepEqual(walk?.workIds.slice(-3), [
+  const noonWalk = walk!.workIds.lastIndexOf("enchanted-april");
+  assert.deepEqual(walk?.workIds.slice(noonWalk, noonWalk + 3), [
     "enchanted-april",
     "quicksand",
     "underdogs",
   ]);
-  assert.deepEqual(unwind?.workIds.slice(-2), ["enchanted-april", "underdogs"]);
+  const noonUnwind = unwind!.workIds.lastIndexOf("enchanted-april");
+  assert.deepEqual(unwind?.workIds.slice(noonUnwind, noonUnwind + 2), [
+    "enchanted-april",
+    "underdogs",
+  ]);
   assert.equal(bite?.workIds.includes("kwaidan-stories-and-studies-of-strange-things"), true);
   assert.equal(forYou?.workIds.includes("enchanted-april"), false);
   assert.equal(forYou?.workIds.includes("underdogs"), false);
@@ -3510,4 +3525,212 @@ test("Mira Noon Wed 23 Sep CLEAR sits on Next, For you, and Rituals, never a new
     "utf8",
   );
   assert.equal(/\[\d+\]/.test(kwaidanText), false);
+});
+
+test("Mira ~4:14 Wed 23 Sep CLEAR sits on Next and Rituals, never a new Featured pin", () => {
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const walk = RITUAL_LANES.find((item) => item.id === "on-a-walk");
+  const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
+  const bite = RITUAL_LANES.find((item) => item.id === "bite-sized");
+  const featured = FEATURED_CAROUSEL_IDS as readonly string[];
+  const cold = ["the-house-of-mirth", "quicksand", "botchan"];
+  assert.deepEqual(forYou?.workIds.slice(0, 3), cold);
+  assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
+  assert.equal(sleep?.workIds[0], "quicksand");
+  assert.equal(forYou?.workIds.at(-1), "generosity");
+  assert.equal(forYou?.workIds.at(-2), "thais");
+  assert.equal(forYou?.workIds.at(-3), "anandamath");
+  assert.deepEqual(featured, [
+    "enchanted-april",
+    "the-bridge-of-san-luis-rey",
+    "mr-fortunes-maggot",
+    "the-house-of-mirth",
+    "quicksand",
+  ]);
+  assert.equal(next.at(-4), "lolly-willowes");
+  assert.equal(next.at(-3), "cheri");
+  assert.equal(next.at(-2), "all-quiet-on-the-western-front");
+  assert.equal(next.at(-1), "the-gadfly");
+  assert.ok(next.indexOf("all-quiet-on-the-western-front") < next.indexOf("lolly-willowes"));
+  assert.ok(next.lastIndexOf("all-quiet-on-the-western-front") > next.indexOf("cheri"));
+  assert.equal(next.includes("brazilian-tales"), false);
+  assert.equal(next.includes("the-painted-veil"), false);
+  assert.equal(next.includes("three-hundred-tang-poems"), false);
+  assert.equal(next.includes("the-bronze-horseman"), false);
+  assert.equal(next.includes("inferno"), false);
+  assert.deepEqual(sleep?.workIds.slice(-5), [
+    "lolly-willowes",
+    "cheri",
+    "all-quiet-on-the-western-front",
+    "the-gadfly",
+    "brazilian-tales",
+  ]);
+  assert.deepEqual(walk?.workIds.slice(-4), [
+    "lolly-willowes",
+    "cheri",
+    "all-quiet-on-the-western-front",
+    "the-gadfly",
+  ]);
+  assert.deepEqual(unwind?.workIds.slice(-4), [
+    "lolly-willowes",
+    "cheri",
+    "all-quiet-on-the-western-front",
+    "the-gadfly",
+  ]);
+  assert.equal(bite?.workIds.at(-1), "brazilian-tales");
+  assert.equal(bite?.workIds.at(-2), "african-tragedy");
+
+  const expect = {
+    "lolly-willowes": {
+      opening:
+        "When her father died, Laura Willowes went to live in London with her elder brother and his family.",
+      breaths: 3176,
+      scenes: 3,
+      minutes: 397,
+      year: 1926,
+      gutenberg: 72223,
+      scene: "Chapter I",
+      lane: "next",
+    },
+    cheri: {
+      opening: "“Léa. Give me your pearls.",
+      breaths: 3116,
+      scenes: 5,
+      minutes: 390,
+      year: 1920,
+      gutenberg: undefined,
+      scene: "CHAPTER I",
+      lane: "next",
+    },
+    "all-quiet-on-the-western-front": {
+      opening:
+        "We are at rest five miles behind the front. Yesterday we were relieved, and now our bellies are full of beef and haricot beans. We are satisfied and at peace. Each man has another mess-tin full for the evening; and, what is more, there is a double ration of sausage and bread. That puts a man in fine trim. We have not had such luck as this for a long time. The cook with his carroty head is begging us to eat; he beckons with his ladle to every one that passes, and spoons him out a great dollop. He does not see how he can empty his stew-pot in time for coffee. Tjaden and Müller have produced two wash-basins and had them filled up to the brim as a reserve. In Tjaden this is voracity, in Müller it is foresight. Where Tjaden puts it all is a mystery, for he is and always will be as thin as a rake.",
+      breaths: 1604,
+      scenes: 12,
+      minutes: 100,
+      year: 1929,
+      gutenberg: 75011,
+      scene: "Chapter I",
+      lane: "next",
+    },
+    "the-gadfly": {
+      opening:
+        "Arthur sat in the library of the theological seminary at Pisa, looking through a pile of manuscript sermons.",
+      breaths: 6653,
+      scenes: 26,
+      minutes: 832,
+      year: 1897,
+      gutenberg: 3431,
+      scene: "CHAPTER I.",
+      lane: "next",
+    },
+    "brazilian-tales": {
+      opening:
+        "So it really seems to you that what happened to me in 1860 is worth while writing down? Very well. I'll tell you the story, but on the condition that you do not divulge it before my death. You'll not have to wait long--a week at most; I am a marked man.",
+      breaths: 361,
+      scenes: 6,
+      minutes: 220,
+      year: 1921,
+      gutenberg: 21040,
+      scene: "The Attendant's Confession",
+      lane: "rituals",
+    },
+  } as const;
+
+  for (const [id, want] of Object.entries(expect)) {
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    assert.equal(work.local, true, id);
+    assert.equal(isBoundLocal(work), true, id);
+    assert.equal(work.opening, want.opening, id);
+    assert.equal(work.breaths, want.breaths, id);
+    assert.equal(work.minutes, want.minutes, id);
+    assert.equal(work.year, want.year, id);
+    assert.equal(work.gutenberg, want.gutenberg, id);
+    assert.equal(work.language, "English", id);
+    assert.equal(featured.includes(id), false, id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.equal((cold as readonly string[]).includes(id), false, id);
+    assert.equal(forYou?.workIds.includes(id), false, id);
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), true, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: { title: string }[];
+      breaths: { text: string }[];
+    };
+    const opened = JSON.parse(readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8")) as {
+      scenes: { title: string }[];
+      breaths: { text: string }[];
+    };
+    assert.equal(full.scenes.length, want.scenes, id);
+    assert.equal(full.breaths.length, want.breaths, id);
+    assert.equal(full.scenes[0]?.title, want.scene, id);
+    assert.equal(full.breaths[0]?.text, want.opening, id);
+    assert.equal(opened.breaths[0]?.text, want.opening, id);
+    assert.equal(JSON.stringify(full).includes("\u0000"), false, id);
+    assert.equal(JSON.stringify(opened).includes("\u0000"), false, id);
+    if (want.lane === "next") {
+      assert.equal(curatorialTrack(id), "next", id);
+      assert.equal(next.includes(id), true, id);
+    } else {
+      assert.equal(curatorialTrack(id), "later", id);
+      assert.equal(next.includes(id), false, id);
+      assert.equal(bite?.workIds.includes(id), true, id);
+      assert.equal(sleep?.workIds.includes(id), true, id);
+    }
+  }
+
+  const lolly = SHELF.find((item) => item.id === "lolly-willowes");
+  const lollyOpen = readFileSync(new URL("./openings/lolly-willowes.json", import.meta.url), "utf8");
+  assert.match(lollyOpen, /Of course,” said Caroline, “you will come to us\./);
+  assert.match(lolly?.intro ?? "", /Of course, you will come to us/);
+  assert.match(lolly?.intro ?? "", /Chapter I only/);
+  assert.match(lolly?.intro ?? "", /Maggot/);
+  const cheri = SHELF.find((item) => item.id === "cheri");
+  assert.equal(cheri?.gutenberg, undefined);
+  assert.match(cheri?.intro ?? "", /wrought-iron/);
+  assert.match(cheri?.intro ?? "", /no catalog number/);
+  assert.match(cheri?.intro ?? "", /Bel-Ami/);
+  assert.match(cheri?.intro ?? "", /do not sanitize/);
+  const quiet = SHELF.find((item) => item.id === "all-quiet-on-the-western-front");
+  assert.match(quiet?.intro ?? "", /beef and haricot beans/);
+  assert.match(quiet?.intro ?? "", /not sanitize/);
+  assert.match(quiet?.intro ?? "", /Warn the room if you Host further/);
+  assert.equal(quiet?.gutenberg, 75011);
+  const gadfly = SHELF.find((item) => item.id === "the-gadfly");
+  assert.match(gadfly?.intro ?? "", /Fragola/);
+  assert.match(gadfly?.intro ?? "", /Enchanted April/);
+  const tales = SHELF.find((item) => item.id === "brazilian-tales");
+  assert.match(tales?.intro ?? "", /One tale only/);
+  assert.match(tales?.intro ?? "", /Attendant's Confession/);
+  assert.match(tales?.intro ?? "", /tale boundary/);
+  assert.match(tales?.intro ?? "", /Tropic/);
+  const talesOpen = JSON.parse(
+    readFileSync(new URL("./openings/brazilian-tales.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string }[] };
+  assert.equal(talesOpen.scenes.length, 1);
+  assert.equal(talesOpen.scenes[0]?.title, "The Attendant's Confession");
+  for (const held of [
+    "death-comes-for-the-archbishop",
+    "banjo",
+    "nacha-regules",
+    "anandamath",
+    "african-tragedy",
+    "enchanted-april",
+    "quicksand",
+    "underdogs",
+    "kwaidan-stories-and-studies-of-strange-things",
+    "thais",
+  ]) {
+    assert.equal(featured.includes(held) && held !== "enchanted-april" && held !== "quicksand", false);
+  }
+  assert.equal(next.includes("death-comes-for-the-archbishop"), true);
+  assert.equal(next.includes("banjo"), true);
+  assert.equal(next.includes("nacha-regules"), true);
+  assert.equal(next.includes("enchanted-april"), true);
+  assert.equal(next.includes("underdogs"), true);
+  assert.equal(forYou?.workIds.includes("anandamath"), true);
+  assert.equal(forYou?.workIds.includes("thais"), true);
+  assert.equal(bite?.workIds.includes("african-tragedy"), true);
 });

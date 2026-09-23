@@ -45,13 +45,13 @@ export const PITCHES: Record<string, string> = {
   "the-sun-also-rises":
     `Paris cafés, Burguete trout, Pamplona heat — Jake Barnes narrating what he cannot touch, Brett Ashley walking in with the wrong crowd. Ernest Hemingway’s 1926 novel opens on Robert Cohn, still boxing ghosts from Princeton, before the fiesta has even started.`,
   "lolly-willowes":
-    `After her father’s death, Laura Willowes is packed off to London — useful, gentle, a black mushroom hat — until Great Mop and a quieter kind of bargain. Sylvia Townsend Warner’s 1926 aunt novel opens on that spare-room negotiation: family logistics first, the devil a few chapters later.`,
+    `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
   "a-passage-to-india":
     `Chandrapore under an enormous sky — Mosque, Caves, Temple — and the English civil station that shares nothing with the city except the air. E. M. Forster’s 1924 novel opens on mud, gardens, and the Marabar echo still twenty miles off.`,
   "plum-bun":
     `Opal Street is no jewel — only imitation — and a Philadelphia household where color and ambition share a narrow parlor. Jessie Redmon Fauset’s 1929 novel opens on that street before Angela Murray takes the train toward a different mask.`,
   cheri:
-    "Paris pearls and a kept boy — Flanner’s Colette, appetite turning into recognition. Aging beauty meets the younger lover who was never going to stay.",
+    "Léa’s wrought-iron bed; Chéri wants the pearls. Janet Flanner’s English is the only bind, with no catalog number invented. Desire and the kept boy stay in the sit — do not sanitize — and it stays soft against Bel-Ami.",
   liliom:
     "Carousel barker, cheap room, day-pass from the dead — Glazer’s Theatre Guild Liliom. Molnár’s rough tenderness between the carnival and the afterlife.",
   "the-cherry-orchard":

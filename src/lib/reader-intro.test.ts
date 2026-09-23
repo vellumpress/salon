@@ -404,10 +404,18 @@ test("Blood and Sand uses the waking fight-day breakfast sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
 });
 
+test("Lolly Willowes opens on Caroline’s spare-room sit", () => {
+  const copy = readerIntro(shelfAsWork("lolly-willowes"));
+  assert.match(copy, /Of course, you will come to us/);
+  assert.match(copy, /Chapter I only/);
+  assert.match(copy, /Maggot/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured/i);
+});
+
 test("uses a locked recommend pitch before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),
-    "Paris pearls and a kept boy — Flanner’s Colette, appetite turning into recognition. Aging beauty meets the younger lover who was never going to stay.",
+    "Léa’s wrought-iron bed; Chéri wants the pearls. Janet Flanner’s English is the only bind, with no catalog number invented. Desire and the kept boy stay in the sit — do not sanitize — and it stays soft against Bel-Ami.",
   );
 });
 

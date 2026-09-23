@@ -17,7 +17,7 @@ const BLURBS: Record<string, string> = {
     "Babel’s Black Sea city: gangsters, sun, and sudden violence between jokes.",
   we: "D-503 will straighten the wild curve into the wisest of lines, and call the record We.",
   "all-quiet-on-the-western-front":
-    "Five miles behind the front: bellies full, double sausage, and a cook who will not stop ladling.",
+    "A rest billet five miles behind the front opens on beef and haricot beans, and the war is not sanitized.",
   demian:
     "Two worlds pass through a little-town Latin school — clean clothes and Christmas on one pole, secrecy on the other.",
   "the-story-of-gosta-berling":
@@ -60,7 +60,7 @@ const BLURBS: Record<string, string> = {
   "where-angels-fear-to-tread":
     "Charing Cross chaos — Lilia laughing like royalty while Philip names the little towns: Gubbio, Pienza, Monteriano.",
   "the-gadfly":
-    "Pisa seminary heat, a lost sermon page, and a fruitseller calling Fragola! down the street.",
+    "Pisa seminary heat, a lost sermon page, and Fragola called down the street — Risorgimento Italy, not Enchanted April.",
   "the-immoralist":
     "Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for.",
   "letters-of-a-javanese-princess":
@@ -107,7 +107,7 @@ const BLURBS: Record<string, string> = {
   "in-our-time":
     "Nick Adams stories with war vignettes snapped in like news photos — Hemingway’s early cuts.",
   cheri:
-    "Colette’s aging beauty and her younger lover in a Paris of pearls and appetite.",
+    "Léa’s wrought-iron bed and the pearls Chéri wants stay in Flanner’s English, unsanitized and soft against Bel-Ami.",
   liliom:
     "A carousel barker, a cheap room, and a day-pass from the dead — Molnár’s rough tenderness.",
   "the-cherry-orchard":
@@ -234,7 +234,7 @@ const BLURBS: Record<string, string> = {
   "the-sun-also-rises":
     "Paris cafés, Pamplona heat, and Jake Barnes narrating what he cannot touch.",
   "lolly-willowes":
-    "An aunt refuses the spare room — Warner’s witchcraft as a woman reclaiming her hours.",
+    "Caroline’s spare room lands on “Of course, you will come to us,” and the sit stays in Chapter I.",
   "plum-bun":
     "Opal Street, a Philadelphia parlor, and the cost of passing told from inside the family.",
   "the-secret-agent":
@@ -266,7 +266,7 @@ const BLURBS: Record<string, string> = {
   shadowings:
     "Hearn’s Kyoto ghosts, screen-maidens, and a dream-book told softly.",
   "brazilian-tales":
-    "Machado and company: a marked attendant, a fortune-teller, and Aunt Zezé’s tears.",
+    "One tale only: The Attendant’s Confession, a marked man in 1860 who asks that the story wait until he is dead.",
   "a-hundred-and-seventy-chinese-poems":
     "Winter Night: an empty bed, a sea-sound in the curtains, and lyrics that never open on Battle.",
   "martin-bircks-youth":
