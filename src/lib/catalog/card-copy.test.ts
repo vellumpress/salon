@@ -1771,11 +1771,10 @@ const TIER_B_BATCH_7_8 = [
   "villette",
   "within-a-budding-grove",
   "yama-the-pit",
-  "zeno",
 ] as const;
 
 test("Tier B batches 7–8 are local format-min binds, never Featured", () => {
-  assert.equal(TIER_B_BATCH_7_8.length, 39);
+  assert.equal(TIER_B_BATCH_7_8.length, 38);
   assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
     "the-house-of-mirth",
     "quicksand",
@@ -2100,7 +2099,6 @@ const TIER_B_BATCH_13_14 = [
   "havelaar",
   "immensee",
   "midst-the-wild-carpathians",
-  "oblomov",
   "poor-folk",
   "the-charterhouse-of-parma",
   "the-cossacks",
@@ -2135,7 +2133,7 @@ const TIER_B_BATCH_13_14 = [
 ] as const;
 
 test("Tier B batches 13–14 are local format-min binds, never Featured", () => {
-  assert.equal(TIER_B_BATCH_13_14.length, 41);
+  assert.equal(TIER_B_BATCH_13_14.length, 40);
   assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
     "the-house-of-mirth",
     "quicksand",
@@ -2193,12 +2191,11 @@ const TIER_B_BATCH_15_16 = [
   "laxd-la-saga",
   "njala",
   "quo-vadis",
-  "the-lady-with-the-dog-and-other-stories",
   "white-nights",
 ] as const;
 
 test("Tier B batches 15–16 are local format-min binds, never Featured", () => {
-  assert.equal(TIER_B_BATCH_15_16.length, 9);
+  assert.equal(TIER_B_BATCH_15_16.length, 8);
   assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
     "the-house-of-mirth",
     "quicksand",

@@ -202,6 +202,13 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Chapter I, Finnian and Tuan, PG 2892, stop at the chapter boundary.
  * Cold-open stays Mirth → Quicksand → Botchan. Tang Poems, The Bronze
  * Horseman, Inferno, and Rudin stay off this ship.
+ * Thu eve 24 Sep 2026 CLEAR — Recommend only, never a new homepage Featured
+ * pin. Dragon’s Teeth (basilio, Serrano EN, PG 74442) leads this cycle’s Next
+ * append. Oblomov follows (Hogarth EN, PG 54700, abridged). The Lady with the
+ * Dog is Rituals only: title story, Chapter I, PG 13415, not on the late-season
+ * lane. Confessions of Zeno and The Book of Khalid are For you. Khalid opens
+ * at Chapter II. Krakatit stays off. Cold-open stays Mirth → Quicksand → Botchan.
+ * Tang Poems, The Bronze Horseman, Inferno, and Rudin stay off this ship.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -552,6 +559,11 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "a-hungarian-nabob",
   "an-iceland-fisherman",
   "the-song-of-the-blood-red-flower",
+  // Mira Thu eve 24 Sep CLEAR — Dragon’s Teeth leads Next. Never a new Featured pin.
+  // Lady with the Dog stays Rituals, title story only, off the late-season lane.
+  // Zeno and Khalid are For you. Krakatit stays off. Rudin stays off.
+  "basilio",
+  "oblomov",
 ] as const;
 
 /**

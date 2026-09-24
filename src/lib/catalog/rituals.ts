@@ -293,6 +293,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "A strawberry song and the girls’ ring — the Gazelle chase. Logger eros under the village dance; Host may name the sensual chase, and don’t sanitize.",
   "irish-fairy-tales":
     "Finnian of Moville goes after the disapproved gods, and meets Tuan mac Cairill. Chapter I only — the sit ends when Time laughs at Tuan. Christian and pagan clash, and the “magician” framing; Host OK.",
+  basilio:
+    "Lisbon breakfast, the cuckoo-clock strikes eleven, and Luiza reads that Cousin Bazilio is coming home. Serrano’s 1889 English, PG 74442, is abridged and bowdlerized. Adultery and household power; Host OK. Sit with it as Dragon’s Teeth.",
+  oblomov:
+    "Oblomov in bed on Gorokhovaya Street with a dreaded letter from his estate. Hogarth’s English, PG 54700, abridged. Serf-era master and servant (Zakhar, *barin*) and period class language; Host note, don’t sanitize.",
+  "the-lady-with-the-dog-and-other-stories":
+    "Gurov at Yalta sees the lady in the *béret*. Title story only, Chapter I per sit — Garnett’s English, PG 13415. Gurov’s contempt for women (“the lower race”) is period misogyny; Host may name it. Not the same day as the Adapted late-season remake.",
+  zeno:
+    "Zeno’s first cigarettes and the last-cigarette habit, in Trieste. De Zoete’s English; PG 79453 gives the original publication as 1930. Comic self-deception; Host OK.",
+  "the-book-of-khalid":
+    "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony; Host note, don’t sanitize.",
   cane:
     "Karintha: her skin is like dusk on the eastern horizon. Skip Waldo Frank’s foreword. First sit ends on the dusk-song refrain; the Georgia cycle continues.",
   generosity:
@@ -334,6 +344,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "thais",
       "bunner-sisters",
       "bertha-garlan",
+      "zeno",
+      "the-book-of-khalid",
       "generosity",
     ],
   },
@@ -365,6 +377,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "white-nights",
       "west-african-folk-tales",
       "irish-fairy-tales",
+      "the-lady-with-the-dog-and-other-stories",
     ],
   },
   {
@@ -737,6 +750,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "an-iceland-fisherman",
       "the-song-of-the-blood-red-flower",
       "irish-fairy-tales",
+      "basilio",
+      "oblomov",
+      "the-lady-with-the-dog-and-other-stories",
+      "zeno",
+      "the-book-of-khalid",
     ],
   },
   {
@@ -778,6 +796,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "white-nights",
       "west-african-folk-tales",
       "irish-fairy-tales",
+      "the-lady-with-the-dog-and-other-stories",
+      "zeno",
+      "the-book-of-khalid",
     ],
   },
   {
@@ -832,6 +853,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "a-hungarian-nabob",
       "an-iceland-fisherman",
       "the-song-of-the-blood-red-flower",
+      "basilio",
+      "oblomov",
     ],
   },
   {
@@ -885,6 +908,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "a-hungarian-nabob",
       "an-iceland-fisherman",
       "the-song-of-the-blood-red-flower",
+      "basilio",
+      "oblomov",
     ],
   },
   {
@@ -967,6 +992,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "a-hungarian-nabob": 8,
   "the-song-of-the-blood-red-flower": 8,
   "irish-fairy-tales": 5,
+  basilio: 8,
+  oblomov: 8,
+  "the-lady-with-the-dog-and-other-stories": 6,
+  zeno: 8,
+  "the-book-of-khalid": 8,
   cane: 2,
   "a-hero-of-our-time": 5,
   "strange-tales": 5,
