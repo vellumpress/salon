@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { listFavorites, pushFavorites } from "@/lib/account";
 import type { AppUser } from "@/lib/auth/use-current-user";
 import { liveBackendEnabled } from "@/lib/site";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 
 /** Local hearts always; merge + push when a signed-in reader is present. */
 export function useFavoriteSync(user: AppUser | null) {
-  const favorites = useVellum((s) => s.favorites) ?? [];
-  const setFavorites = useVellum((s) => s.setFavorites);
+  const favorites = useTbr((s) => s.favorites) ?? [];
+  const setFavorites = useTbr((s) => s.setFavorites);
   const [hydrated, setHydrated] = useState(false);
   const favSyncRef = useRef(false);
 
@@ -19,7 +19,7 @@ export function useFavoriteSync(user: AppUser | null) {
     void listFavorites()
       .then((remote) => {
         if (!alive) return;
-        const local = useVellum.getState().favorites ?? [];
+        const local = useTbr.getState().favorites ?? [];
         const merged = [...local];
         for (const id of remote) {
           if (!merged.includes(id)) merged.push(id);

@@ -174,7 +174,7 @@ const frame = wrap.frameLocator("iframe");
 await wrap.waitForTimeout(500);
 const iframeText = await frame.locator("body").innerText();
 notes.push(`iframe text ${JSON.stringify(iframeText.slice(0, 80).replace(/\n/g, " "))}`);
-if (!/Hour|Begin|Vellum|Mallard/i.test(iframeText)) errors.push("iframe reader empty");
+if (!/Hour|Begin|Mallard/i.test(iframeText)) errors.push("iframe reader empty");
 await wrap.screenshot({ path: "/workspace/screenshots/fix-iframe.png" });
 
 await browser.close();

@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { clubPair, shareOrCopy } from "@/lib/shuffle";
 import { fillClass, fillInk } from "@/lib/mondrian";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import {
   clubInviteUrl,
@@ -21,8 +21,8 @@ export const Route = createFileRoute("/club/invite/$token")({
 function InviteLanding() {
   const { token: raw } = Route.useParams();
   const token = asInviteToken(raw) ?? raw;
-  const joinClub = useVellum((s) => s.joinClub);
-  const rememberInvite = useVellum((s) => s.rememberInvite);
+  const joinClub = useTbr((s) => s.joinClub);
+  const rememberInvite = useTbr((s) => s.rememberInvite);
   const [state, setState] = useState<
     | { status: "loading" }
     | { status: "missing" }

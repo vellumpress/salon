@@ -4,7 +4,7 @@ import { CLUBS } from "@/lib/social";
 import { clubPair, searchFlag, shareOrCopy } from "@/lib/shuffle";
 import { ResumeLink } from "@/components/resume-link";
 import { fillClass, fillInk, type Fill } from "@/lib/mondrian";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import { isLocalBound } from "@/lib/catalog/full-pdf";
 import { shelfWork } from "@/lib/catalog/shelf";
@@ -61,13 +61,13 @@ export const Route = createFileRoute("/together")({
 
 function TogetherPage() {
   const { join, start, host } = Route.useSearch();
-  const joined = useVellum((s) => s.joined) ?? [];
-  const lastShuffle = useVellum((s) => s.lastShuffle);
-  const handle = useVellum((s) => s.handle) ?? "";
-  const hostedSits = useVellum((s) => s.hostedSits) ?? [];
-  const toggleJoin = useVellum((s) => s.toggleJoin);
-  const joinClub = useVellum((s) => s.joinClub);
-  const rememberInvite = useVellum((s) => s.rememberInvite);
+  const joined = useTbr((s) => s.joined) ?? [];
+  const lastShuffle = useTbr((s) => s.lastShuffle);
+  const handle = useTbr((s) => s.handle) ?? "";
+  const hostedSits = useTbr((s) => s.hostedSits) ?? [];
+  const toggleJoin = useTbr((s) => s.toggleJoin);
+  const joinClub = useTbr((s) => s.joinClub);
+  const rememberInvite = useTbr((s) => s.rememberInvite);
   const [hydrated, setHydrated] = useState(false);
   const [upcoming, setUpcoming] = useState<UpcomingSit[]>([]);
   const [userClubs, setUserClubs] = useState<BookClubView[]>([]);
@@ -503,7 +503,7 @@ function StartClubForm({
   onClose: () => void;
 }) {
   const clock = useMemo(() => defaultSitClock(), []);
-  const serializeNight = useVellum((s) => s.serializeNight);
+  const serializeNight = useTbr((s) => s.serializeNight);
   const boundSeries = useMemo(() => SERIALIZE_PLANS.filter(isSerializeBound), []);
   const [name, setName] = useState("");
   const [workId, setWorkId] = useState(defaultWorkId);

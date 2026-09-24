@@ -19,7 +19,7 @@ test("emailError requires a simple address", () => {
   assert.equal(emailError(""), "A real email, please.");
   assert.equal(emailError("mike"), "A real email, please.");
   assert.equal(emailError("mike@salon"), "A real email, please.");
-  assert.equal(emailError(" mike@vellum.press "), null);
+  assert.equal(emailError(" mike@example.com "), null);
 });
 
 test("passwordError requires eight characters", () => {
@@ -29,36 +29,36 @@ test("passwordError requires eight characters", () => {
 
 test("createReaderAccount hashes the password and restores a session", async () => {
   const created = await createReaderAccount(
-    { handle: "@Mina", email: "Mina@Vellum.press", password: "sitquietly" },
+    { handle: "@Mina", email: "Mina@example.com", password: "sitquietly" },
     emptyVault(),
   );
   assert.equal(created.ok, true);
   if (!created.ok) return;
   assert.equal(created.session.handle, "mina");
-  assert.equal(created.session.email, "mina@vellum.press");
+  assert.equal(created.session.email, "mina@example.com");
   const account = created.vault.accounts[0];
   assert.ok(account);
   assert.notEqual(account.hash, "sitquietly");
   assert.doesNotMatch(JSON.stringify(created.vault), /sitquietly/);
   const restored = sessionFromVault(created.vault);
   assert.equal(restored?.handle, "mina");
-  assert.equal(restored?.email, "mina@vellum.press");
+  assert.equal(restored?.email, "mina@example.com");
 });
 
 test("handle uniqueness is other local accounts, not a demo directory", async () => {
   const first = await createReaderAccount(
-    { handle: "mina", email: "mina@vellum.press", password: "sitquietly" },
+    { handle: "mina", email: "mina@example.com", password: "sitquietly" },
     emptyVault(),
   );
   assert.equal(first.ok, true);
   if (!first.ok) return;
   const formerDemo = await createReaderAccount(
-    { handle: "ada", email: "ada@vellum.press", password: "sitquietly" },
+    { handle: "ada", email: "ada@example.com", password: "sitquietly" },
     first.vault,
   );
   assert.equal(formerDemo.ok, true);
   const duplicate = await createReaderAccount(
-    { handle: "mina", email: "other@vellum.press", password: "sitquietly" },
+    { handle: "mina", email: "other@example.com", password: "sitquietly" },
     first.vault,
   );
   assert.equal(duplicate.ok, false);
@@ -66,7 +66,7 @@ test("handle uniqueness is other local accounts, not a demo directory", async ()
     assert.equal(duplicate.error, "Someone already sits as that name.");
   }
   const sameEmail = await createReaderAccount(
-    { handle: "cleo2", email: "mina@vellum.press", password: "sitquietly" },
+    { handle: "cleo2", email: "mina@example.com", password: "sitquietly" },
     first.vault,
   );
   assert.equal(sameEmail.ok, false);
@@ -77,7 +77,7 @@ test("handle uniqueness is other local accounts, not a demo directory", async ()
 
 test("existing Friends handle is allowed on first account", async () => {
   const created = await createReaderAccount(
-    { handle: "mina", email: "mina@vellum.press", password: "sitquietly" },
+    { handle: "mina", email: "mina@example.com", password: "sitquietly" },
     emptyVault(),
     ["jules"],
     "mina",
@@ -90,23 +90,23 @@ test("existing Friends handle is allowed on first account", async () => {
 
 test("sign-in checks the hash and sign-out keeps the vault", async () => {
   const created = await createReaderAccount(
-    { handle: "mina", email: "mina@vellum.press", password: "sitquietly" },
+    { handle: "mina", email: "mina@example.com", password: "sitquietly" },
     emptyVault(),
   );
   assert.equal(created.ok, true);
   if (!created.ok) return;
   const wrong = await signInReaderAccount(
-    { email: "mina@vellum.press", password: "wrongpass" },
+    { email: "mina@example.com", password: "wrongpass" },
     signOutReaderVault(created.vault),
   );
   assert.equal(wrong.ok, false);
   const missing = await signInReaderAccount(
-    { email: "ghost@vellum.press", password: "sitquietly" },
+    { email: "ghost@example.com", password: "sitquietly" },
     created.vault,
   );
   assert.equal(missing.ok, false);
   const ok = await signInReaderAccount(
-    { email: "Mina@Vellum.press", password: "sitquietly" },
+    { email: "Mina@example.com", password: "sitquietly" },
     signOutReaderVault(created.vault),
   );
   assert.equal(ok.ok, true);
@@ -121,7 +121,7 @@ test("parseVault restores a hard-refresh session and drops a stale one", () => {
   const raw = JSON.stringify({
     accounts: [
       {
-        email: "mina@vellum.press",
+        email: "mina@example.com",
         handle: "mina",
         name: "",
         salt: "aa",
@@ -130,7 +130,7 @@ test("parseVault restores a hard-refresh session and drops a stale one", () => {
         createdAt: 1,
       },
     ],
-    sessionEmail: "mina@vellum.press",
+    sessionEmail: "mina@example.com",
   });
   const vault = parseVault(raw);
   assert.equal(sessionFromVault(vault)?.handle, "mina");
@@ -143,7 +143,7 @@ test("renameVaultHandle updates only the signed-in account", () => {
   const vault = {
     accounts: [
       {
-        email: "mina@vellum.press",
+        email: "mina@example.com",
         handle: "mina",
         name: "",
         salt: "aa",
@@ -152,7 +152,7 @@ test("renameVaultHandle updates only the signed-in account", () => {
         createdAt: 1,
       },
     ],
-    sessionEmail: "mina@vellum.press",
+    sessionEmail: "mina@example.com",
   };
   const next = renameVaultHandle(vault, "@Reader");
   assert.equal(next.accounts[0]?.handle, "reader");

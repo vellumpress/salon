@@ -35,7 +35,7 @@ async function fetchOne(url: string, signal: AbortSignal) {
     signal,
     headers: {
       Accept: "text/plain,text/html;q=0.4,*/*;q=0.1",
-      "User-Agent": "Vellum/1.0 (literary reader)",
+      "User-Agent": "tbr/1.0 (literary reader)",
     },
   });
   if (!response.ok) throw new Error("This text would not come.");

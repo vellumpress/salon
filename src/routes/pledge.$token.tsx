@@ -8,7 +8,7 @@ import {
   windowLabel,
 } from "@/lib/sit-pledge";
 import { formatHandle, normalizeHandle } from "@/lib/social";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 
 export const Route = createFileRoute("/pledge/$token")({
   component: PledgePage,
@@ -18,10 +18,10 @@ function PledgePage() {
   const { token: raw } = Route.useParams();
   const token = asShareToken(raw) ?? raw;
   const hydrated = usePersistHydrated();
-  const handle = useVellum((s) => s.handle) ?? "";
-  const sitPledges = useVellum((s) => s.sitPledges) ?? [];
-  const rememberPledge = useVellum((s) => s.rememberPledge);
-  const setPledgeStatus = useVellum((s) => s.setPledgeStatus);
+  const handle = useTbr((s) => s.handle) ?? "";
+  const sitPledges = useTbr((s) => s.sitPledges) ?? [];
+  const rememberPledge = useTbr((s) => s.rememberPledge);
+  const setPledgeStatus = useTbr((s) => s.setPledgeStatus);
   const decoded = useMemo(() => decodeSitPledge(token), [token]);
   const stored = sitPledges.find((row) => row.id === decoded?.id);
   const pledge = stored ?? decoded ?? null;

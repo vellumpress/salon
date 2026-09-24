@@ -2226,7 +2226,7 @@ test("Generosity by Amber Later is For you only, never Featured", () => {
   assert.equal(work!.title, "Generosity");
   assert.equal(work!.author, "Amber Later");
   assert.equal(work!.local, true);
-  assert.equal(work!.rights, "Vellum");
+  assert.equal(work!.rights, "tbr");
   assert.equal(work!.gutenberg, undefined);
   assert.equal(work!.language, "English");
   assert.equal(work!.opening, "I should apologize.");

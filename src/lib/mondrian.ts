@@ -7,6 +7,7 @@ export const FILLS: Fill[] = ["red", "blue", "yellow", "paper", "forest"];
 /** Mondrian home mosaic: paper, yellow, red, blue, forest green — first row covers the set. */
 export const MOSAIC: Fill[] = ["paper", "yellow", "red", "blue", "forest"];
 
+/** Default seed is a stable hash. Changing the string would reshuffle the mosaic. */
 export function mosaicFills(count: number, seed = "vellum") {
   // Seeded order of the five Mondrian colors, then walk so neighbors never match.
   const bag = [...MOSAIC];

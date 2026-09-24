@@ -33,13 +33,13 @@ test("shareOrCopy invokes navigator.share with the absolute URL", async () => {
     },
   });
   const result = await shareOrCopy({
-    title: "Passing · Vellum",
+    title: "Passing · tbr",
     text: "The envelope is still unopened.",
     url: "https://vellumpress.github.io/salon/read/passing?at=1",
   });
   assert.equal(result, "shared");
   assert.equal(shared[0]?.url, "https://vellumpress.github.io/salon/read/passing?at=1");
-  assert.match(shared[0]?.title ?? "", /Vellum/);
+  assert.match(shared[0]?.title ?? "", /tbr/);
 });
 
 test("shareOrCopy copies the URL when share is missing", async () => {
@@ -52,7 +52,7 @@ test("shareOrCopy copies the URL when share is missing", async () => {
     },
   });
   const result = await shareOrCopy({
-    title: "Vellum",
+    title: "tbr",
     text: "A sitting",
     url: "https://vellumpress.github.io/salon/together",
   });
@@ -81,8 +81,8 @@ test("shareOrCopy falls back to mailto when share and clipboard fail", async () 
     body: { appendChild() {} },
   } as unknown as Document);
   const result = await shareOrCopy({
-    title: "Passing · Vellum",
-    text: "A sitting from Vellum.",
+    title: "Passing · tbr",
+    text: "A sitting from tbr.",
     url: "https://vellumpress.github.io/salon/read/passing?at=1",
   });
   assert.equal(result, "copied");
@@ -93,7 +93,7 @@ test("shareOrCopy falls back to mailto when share and clipboard fail", async () 
 
 test("mailtoShareHref carries title, line, and URL", () => {
   const href = mailtoShareHref({
-    title: "Passing · Vellum",
+    title: "Passing · tbr",
     text: "The envelope is still unopened.",
     url: "https://vellumpress.github.io/salon/read/passing?at=1",
   });

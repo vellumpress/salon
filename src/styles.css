@@ -1800,8 +1800,8 @@ html.together-compose .chat-field {
   scroll-margin-block: 0;
 }
 
-/* homepage: calm vellum entrance (clarity over spectacle) */
-@keyframes vellum-settle {
+/* homepage: calm tbr entrance (clarity over spectacle) */
+@keyframes tbr-settle {
   from {
     opacity: 0;
     transform: translateY(0.35rem);
@@ -1826,7 +1826,7 @@ html.together-compose .chat-field {
 .board-alive > .cell-adapted-intro,
 .board-alive > .cell-adapted-lane,
 .board-alive > .cell-works {
-  animation: vellum-settle 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: tbr-settle 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .board-alive > .cell-mark {
@@ -1874,7 +1874,7 @@ html.together-compose .chat-field {
 }
 
 .board-alive .rail > * {
-  animation: vellum-settle 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: tbr-settle 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .board-alive .rail > *:nth-child(1) {
@@ -2031,7 +2031,7 @@ html.together-compose .chat-field {
 }
 
 .board-alive .ritual-stack > * {
-  animation: vellum-settle 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: tbr-settle 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .board-alive .ritual-stack > *:nth-child(1) {
@@ -2117,7 +2117,7 @@ html.together-compose .chat-field {
 }
 
 .board-alive .adapted-lane > * {
-  animation: vellum-settle 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: tbr-settle 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .board-alive .adapted-lane > *:nth-child(1) {

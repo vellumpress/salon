@@ -13,6 +13,7 @@ import { cn } from "@/lib/utils";
 
 type Door = "reader" | "staff";
 
+// Real staff mailbox. The domain stays; renaming it would lock the desk.
 const STAFF_DOMAIN = "@vellum.press";
 
 export const Route = createFileRoute("/login")({
@@ -24,7 +25,7 @@ export const Route = createFileRoute("/login")({
   component: LoginPage,
 });
 
-function isVellumPressEmail(email: string): boolean {
+function isStaffEmail(email: string): boolean {
   const trimmed = email.trim().toLowerCase();
   const at = trimmed.lastIndexOf("@");
   if (at <= 0) return false;
@@ -116,7 +117,7 @@ function LoginPage() {
 
   async function withStaffEmail(staffMode: "staff-in" | "staff-up") {
     const address = staffEmail.trim().toLowerCase();
-    if (!isVellumPressEmail(address)) {
+    if (!isStaffEmail(address)) {
       setStaffError("Staff sit at vellum.press");
       return;
     }

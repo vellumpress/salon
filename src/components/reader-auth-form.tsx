@@ -96,7 +96,7 @@ export function ReaderAuthForm({
           autoComplete="email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
-          placeholder="you@vellum.press"
+          placeholder="you@email.com"
           className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-xl text-ink placeholder:text-muted focus-visible:outline-none"
         />
       </label>

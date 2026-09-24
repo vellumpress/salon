@@ -9,7 +9,7 @@ import {
   workIsComplete,
   type Work,
 } from "@/lib/works";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { fillClass, planeOf, type Fill } from "@/lib/mondrian";
 import { readerIntro } from "@/lib/reader-intro";
 import { splitEmphasis } from "@/lib/emphasized-text";
@@ -68,7 +68,7 @@ function EmphasizedText({ text }: { text: string }) {
   );
 }
 
-export function VellumReader({
+export function TbrReader({
   work,
   shuffle = false,
   sit,
@@ -88,30 +88,30 @@ export function VellumReader({
   hosted?: string;
 }) {
   const navigate = useNavigate();
-  const sittingMinutes = useVellum((s) => s.sittingMinutes);
-  const setSittingMinutes = useVellum((s) => s.setSittingMinutes);
-  const progress = useVellum((s) => s.progress[work.id]);
-  const setBreath = useVellum((s) => s.setBreath);
-  const advanceBreath = useVellum((s) => s.advanceBreath);
-  const pauseActiveRead = useVellum((s) => s.pauseActiveRead);
-  const resumeActiveRead = useVellum((s) => s.resumeActiveRead);
-  const startSitting = useVellum((s) => s.startSitting);
-  const endSitting = useVellum((s) => s.endSitting);
-  const completeSerializeNight = useVellum((s) => s.completeSerializeNight);
+  const sittingMinutes = useTbr((s) => s.sittingMinutes);
+  const setSittingMinutes = useTbr((s) => s.setSittingMinutes);
+  const progress = useTbr((s) => s.progress[work.id]);
+  const setBreath = useTbr((s) => s.setBreath);
+  const advanceBreath = useTbr((s) => s.advanceBreath);
+  const pauseActiveRead = useTbr((s) => s.pauseActiveRead);
+  const resumeActiveRead = useTbr((s) => s.resumeActiveRead);
+  const startSitting = useTbr((s) => s.startSitting);
+  const endSitting = useTbr((s) => s.endSitting);
+  const completeSerializeNight = useTbr((s) => s.completeSerializeNight);
   const serializePlan = episodeN ? serializePlanByWorkId(work.id) : undefined;
   const serializeEp =
     serializePlan && episodeN ? serializeEpisode(serializePlan, episodeN) : undefined;
   const nightChrome =
     serializePlan && serializeEp ? serializeNightChrome(serializePlan, serializeEp.n) : "";
 
-  const toggleKept = useVellum((s) => s.toggleKept);
-  const rememberTogetherKeep = useVellum((s) => s.rememberTogetherKeep);
-  const rememberHostedSit = useVellum((s) => s.rememberHostedSit);
-  const keepWithSit = useVellum((s) => s.keepWithSit);
-  const myHandle = useVellum((s) => s.handle) ?? "";
-  const complete = useVellum((s) => s.complete);
-  const ensure = useVellum((s) => s.ensure);
-  const setReadingNow = useVellum((s) => s.setReadingNow);
+  const toggleKept = useTbr((s) => s.toggleKept);
+  const rememberTogetherKeep = useTbr((s) => s.rememberTogetherKeep);
+  const rememberHostedSit = useTbr((s) => s.rememberHostedSit);
+  const keepWithSit = useTbr((s) => s.keepWithSit);
+  const myHandle = useTbr((s) => s.handle) ?? "";
+  const complete = useTbr((s) => s.complete);
+  const ensure = useTbr((s) => s.ensure);
+  const setReadingNow = useTbr((s) => s.setReadingNow);
   const echo = useMemo(
     () => (echoToken ? decodeEchoInvite(echoToken) : null),
     [echoToken],
@@ -153,17 +153,17 @@ export function VellumReader({
   useLayoutEffect(() => {
     ensure(work.id);
     if (sit !== undefined) {
-      useVellum.getState().setSittingMinutes(sit);
+      useTbr.getState().setSittingMinutes(sit);
     }
     if (booted.current) {
       return;
     }
     booted.current = true;
-    const prior = useVellum.getState().progress[work.id];
+    const prior = useTbr.getState().progress[work.id];
     const firstSit = shouldShowPreface(prior);
     setShowPreface(firstSit);
     if (shuffle) {
-      useVellum.getState().startShuffle(work.id);
+      useTbr.getState().startShuffle(work.id);
       setShowPreface(false);
       setOverlay("none");
       return;
@@ -190,7 +190,7 @@ export function VellumReader({
     const chapterAt = chapterStartIndex(work);
     const index = prior?.breathIndex ?? 0;
     if (!prior?.entered || index < chapterAt) {
-      useVellum.getState().setBreath(work.id, chapterAt);
+      useTbr.getState().setBreath(work.id, chapterAt);
     }
     // Friend already joining with pair+sit — skip the gate.
     if (pair && sit !== undefined) {
@@ -202,7 +202,7 @@ export function VellumReader({
     if (sit === undefined) {
       const shelf = shelfWork(work.id);
       if (shelf) {
-        useVellum
+        useTbr
           .getState()
           .setSittingMinutes(nearestSitPreset(estimateRitualMinutes(shelf)));
       }
@@ -1406,4 +1406,4 @@ export function VellumReader({
   );
 }
 
-export const ChamberReader = VellumReader;
+export const ChamberReader = TbrReader;

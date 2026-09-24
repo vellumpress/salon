@@ -39,7 +39,7 @@ export async function extractPage(raw: string) {
     signal: AbortSignal.timeout(20000),
     headers: {
       Accept: "text/html,application/pdf,text/plain;q=0.9,*/*;q=0.1",
-      "User-Agent": "Vellum/1.0 (literary reader)",
+      "User-Agent": "tbr/1.0 (literary reader)",
     },
   });
   if (!response.ok) {

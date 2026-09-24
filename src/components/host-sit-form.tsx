@@ -10,17 +10,17 @@ import { searchPeople } from "@/lib/friends";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { SIT_PRESETS } from "@/lib/sitting";
 import { shareOrCopy } from "@/lib/shuffle";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 const HIT_FILLS: Fill[] = ["paper", "blue", "yellow", "forest"];
 
 export function HostSitForm({ onClose }: { onClose: () => void }) {
-  const handle = useVellum((s) => s.handle) ?? "";
-  const contacts = useVellum((s) => s.contacts) ?? [];
-  const lastShuffle = useVellum((s) => s.lastShuffle);
-  const rememberHostedSit = useVellum((s) => s.rememberHostedSit);
-  const addContact = useVellum((s) => s.addContact);
+  const handle = useTbr((s) => s.handle) ?? "";
+  const contacts = useTbr((s) => s.contacts) ?? [];
+  const lastShuffle = useTbr((s) => s.lastShuffle);
+  const rememberHostedSit = useTbr((s) => s.rememberHostedSit);
+  const addContact = useTbr((s) => s.addContact);
   const search = useShelfSearch("local");
   const [workId, setWorkId] = useState(
     lastShuffle && isLocalBound(lastShuffle) ? lastShuffle : "passing",
@@ -30,7 +30,7 @@ export function HostSitForm({ onClose }: { onClose: () => void }) {
   const [invitees, setInvitees] = useState<string[]>([]);
   const [error, setError] = useState("");
   const [copied, setCopied] = useState(false);
-  const hostedSits = useVellum((s) => s.hostedSits) ?? [];
+  const hostedSits = useTbr((s) => s.hostedSits) ?? [];
   const [freshId, setFreshId] = useState<string | null>(null);
   const selected = shelfWork(workId);
   const people = useMemo(

@@ -39,7 +39,7 @@ import {
   type EveningWindow,
   type SitPledge,
 } from "@/lib/sit-pledge";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { shareOrCopy } from "@/lib/shuffle";
 import { echoInviteUrl, encodeEchoInvite } from "@/lib/together-keep";
 import type { TogetherKeep } from "@/lib/together-keep";
@@ -51,28 +51,28 @@ export const Route = createFileRoute("/friends")({
 
 function FriendsPage() {
   const hydrated = usePersistHydrated();
-  const handle = useVellum((s) => s.handle) ?? "";
-  const following = useVellum((s) => s.following) ?? [];
-  const contacts = useVellum((s) => s.contacts) ?? [];
-  const progress = useVellum((s) => s.progress);
-  const togetherKeeps = useVellum((s) => s.togetherKeeps) ?? [];
-  const hostedSits = useVellum((s) => s.hostedSits) ?? [];
-  const sitPledges = useVellum((s) => s.sitPledges) ?? [];
-  const sitHistory = useVellum((s) => s.sitHistory) ?? [];
-  const joined = useVellum((s) => s.joined) ?? [];
-  const readingMinutesByDay = useVellum((s) => s.readingMinutesByDay);
-  const advancesByDay = useVellum((s) => s.advancesByDay);
-  const sceneCrossesByDay = useVellum((s) => s.sceneCrossesByDay);
-  const keepsByDay = useVellum((s) => s.keepsByDay);
-  const worksTouchedByDay = useVellum((s) => s.worksTouchedByDay);
-  const hostOpensByDay = useVellum((s) => s.hostOpensByDay);
-  const sitsByDay = useVellum((s) => s.sitsByDay);
-  const clubTouchesByDay = useVellum((s) => s.clubTouchesByDay);
-  const setHandle = useVellum((s) => s.setHandle);
-  const addContact = useVellum((s) => s.addContact);
-  const toggleFollow = useVellum((s) => s.toggleFollow);
-  const rememberPledge = useVellum((s) => s.rememberPledge);
-  const setPledgeStatus = useVellum((s) => s.setPledgeStatus);
+  const handle = useTbr((s) => s.handle) ?? "";
+  const following = useTbr((s) => s.following) ?? [];
+  const contacts = useTbr((s) => s.contacts) ?? [];
+  const progress = useTbr((s) => s.progress);
+  const togetherKeeps = useTbr((s) => s.togetherKeeps) ?? [];
+  const hostedSits = useTbr((s) => s.hostedSits) ?? [];
+  const sitPledges = useTbr((s) => s.sitPledges) ?? [];
+  const sitHistory = useTbr((s) => s.sitHistory) ?? [];
+  const joined = useTbr((s) => s.joined) ?? [];
+  const readingMinutesByDay = useTbr((s) => s.readingMinutesByDay);
+  const advancesByDay = useTbr((s) => s.advancesByDay);
+  const sceneCrossesByDay = useTbr((s) => s.sceneCrossesByDay);
+  const keepsByDay = useTbr((s) => s.keepsByDay);
+  const worksTouchedByDay = useTbr((s) => s.worksTouchedByDay);
+  const hostOpensByDay = useTbr((s) => s.hostOpensByDay);
+  const sitsByDay = useTbr((s) => s.sitsByDay);
+  const clubTouchesByDay = useTbr((s) => s.clubTouchesByDay);
+  const setHandle = useTbr((s) => s.setHandle);
+  const addContact = useTbr((s) => s.addContact);
+  const toggleFollow = useTbr((s) => s.toggleFollow);
+  const rememberPledge = useTbr((s) => s.rememberPledge);
+  const setPledgeStatus = useTbr((s) => s.setPledgeStatus);
   const [draft, setDraft] = useState("");
   const [query, setQuery] = useState("");
   const [message, setMessage] = useState("");

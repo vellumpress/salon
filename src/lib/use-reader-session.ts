@@ -17,7 +17,7 @@ import {
 } from "@/lib/reader-account";
 import { liveAuthAvailable, withBase } from "@/lib/site";
 import { formatHandle, normalizeHandle } from "@/lib/social";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 
 export type ReaderIdentity = {
   id: string;
@@ -52,9 +52,9 @@ function identityFromSession(session: ReaderSession, source: ReaderIdentity["sou
 export function useReaderSession() {
   const { user, isPending: authPending } = useCurrentUserState();
   const liveUser = liveAuthAvailable ? liveUserOf(user) : null;
-  const storeHandle = useVellum((s) => s.handle) ?? "";
-  const contacts = useVellum((s) => s.contacts) ?? [];
-  const setHandle = useVellum((s) => s.setHandle);
+  const storeHandle = useTbr((s) => s.handle) ?? "";
+  const contacts = useTbr((s) => s.contacts) ?? [];
+  const setHandle = useTbr((s) => s.setHandle);
   const [vault, setVault] = useState<ReaderVault>(emptyVault);
   const [hydrated, setHydrated] = useState(false);
 

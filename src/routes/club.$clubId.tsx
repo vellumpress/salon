@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { getClub, getReader } from "@/lib/social";
 import { clubPair, shareOrCopy } from "@/lib/shuffle";
 import { fillClass, fillInk } from "@/lib/mondrian";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import {
   addClubSession,
@@ -109,10 +109,10 @@ function ClubFrame({
 
 function HouseClub({ clubId }: { clubId: string }) {
   const club = getClub(clubId);
-  const following = useVellum((s) => s.following) ?? [];
-  const joined = useVellum((s) => s.joined) ?? [];
-  const toggleFollow = useVellum((s) => s.toggleFollow);
-  const toggleJoin = useVellum((s) => s.toggleJoin);
+  const following = useTbr((s) => s.following) ?? [];
+  const joined = useTbr((s) => s.joined) ?? [];
+  const toggleFollow = useTbr((s) => s.toggleFollow);
+  const toggleJoin = useTbr((s) => s.toggleJoin);
   const [hydrated, setHydrated] = useState(false);
   useEffect(() => setHydrated(true), []);
 
@@ -230,11 +230,11 @@ function LiveClub({
   club: BookClubView;
   onClub: (club: BookClubView) => void;
 }) {
-  const joined = useVellum((s) => s.joined) ?? [];
-  const clubInvites = useVellum((s) => s.clubInvites) ?? {};
-  const toggleJoin = useVellum((s) => s.toggleJoin);
-  const joinClub = useVellum((s) => s.joinClub);
-  const rememberInvite = useVellum((s) => s.rememberInvite);
+  const joined = useTbr((s) => s.joined) ?? [];
+  const clubInvites = useTbr((s) => s.clubInvites) ?? {};
+  const toggleJoin = useTbr((s) => s.toggleJoin);
+  const joinClub = useTbr((s) => s.joinClub);
+  const rememberInvite = useTbr((s) => s.rememberInvite);
   const [hydrated, setHydrated] = useState(false);
   const [copied, setCopied] = useState(false);
   const [adding, setAdding] = useState(false);

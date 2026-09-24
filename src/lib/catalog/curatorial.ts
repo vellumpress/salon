@@ -115,7 +115,7 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * (Matson EN 79566) is For you only — not Next. Cold-open stays
  * Mirth → Quicksand → Botchan.
  * Generosity (Amber Later, 2026) is the Mira CLEAR local manuscript — rights
- * Vellum, no Project Gutenberg id. Recommend For you only — not Next, never Featured.
+ * tbr, no Project Gutenberg id. Recommend For you only — not Next, never Featured.
  * Story through I'm sorry, then Poem I–VII. Cold-open stays
  * Mirth → Quicksand → Botchan.
  * NOON2 CLEAR (Sep 22) — Recommend only, never Featured. African Farm joins

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { VellumReader } from "@/components/chamber-reader";
+import { TbrReader } from "@/components/chamber-reader";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { loadWork, peekWork, type Work } from "@/lib/works";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { asSittingMinutes } from "@/lib/sitting";
 import { asPairCode, searchFlag } from "@/lib/shuffle";
 
@@ -57,7 +57,7 @@ export const Route = createFileRoute("/read/$workId")({
 function ReadPage() {
   const { workId } = Route.useParams();
   const { shuffle, sit, pair, at, episode, echo, hosted } = Route.useSearch();
-  const pageWork = useVellum((s) => s.pageWork);
+  const pageWork = useTbr((s) => s.pageWork);
   const meta = workId === "page" ? pageWork : shelfWork(workId);
   const [work, setWork] = useState<Work | null | undefined>(() =>
     workId === "page" ? pageWork : (peekWork(workId) ?? undefined),
@@ -134,7 +134,7 @@ function ReadPage() {
   }
 
   return (
-    <VellumReader
+    <TbrReader
       key={`${work.id}-${pair ?? ""}-${at ?? ""}-${episode ?? ""}-${echo ?? ""}-${hosted ?? ""}`}
       work={work}
       shuffle={Boolean(shuffle)}

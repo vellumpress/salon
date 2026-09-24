@@ -14,7 +14,7 @@ import { streakLine } from "@/lib/reading-stats";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { APP_NAME, publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
 import { isPledgePending } from "@/lib/sit-pledge";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { shareOrCopy } from "@/lib/shuffle";
 import { cn } from "@/lib/utils";
 
@@ -25,25 +25,25 @@ export const Route = createFileRoute("/friends_/$handle")({
 function FriendProfilePage() {
   const { handle: rawHandle } = Route.useParams();
   const hydrated = usePersistHydrated();
-  const handle = useVellum((s) => s.handle) ?? "";
-  const following = useVellum((s) => s.following) ?? [];
-  const contacts = useVellum((s) => s.contacts) ?? [];
-  const progress = useVellum((s) => s.progress);
-  const togetherKeeps = useVellum((s) => s.togetherKeeps) ?? [];
-  const hostedSits = useVellum((s) => s.hostedSits) ?? [];
-  const sitPledges = useVellum((s) => s.sitPledges) ?? [];
-  const sitHistory = useVellum((s) => s.sitHistory) ?? [];
-  const readingMinutesByDay = useVellum((s) => s.readingMinutesByDay);
-  const advancesByDay = useVellum((s) => s.advancesByDay);
-  const sceneCrossesByDay = useVellum((s) => s.sceneCrossesByDay);
-  const keepsByDay = useVellum((s) => s.keepsByDay);
-  const worksTouchedByDay = useVellum((s) => s.worksTouchedByDay);
-  const hostOpensByDay = useVellum((s) => s.hostOpensByDay);
-  const sitsByDay = useVellum((s) => s.sitsByDay);
-  const clubTouchesByDay = useVellum((s) => s.clubTouchesByDay);
-  const addContact = useVellum((s) => s.addContact);
-  const toggleFollow = useVellum((s) => s.toggleFollow);
-  const setPledgeStatus = useVellum((s) => s.setPledgeStatus);
+  const handle = useTbr((s) => s.handle) ?? "";
+  const following = useTbr((s) => s.following) ?? [];
+  const contacts = useTbr((s) => s.contacts) ?? [];
+  const progress = useTbr((s) => s.progress);
+  const togetherKeeps = useTbr((s) => s.togetherKeeps) ?? [];
+  const hostedSits = useTbr((s) => s.hostedSits) ?? [];
+  const sitPledges = useTbr((s) => s.sitPledges) ?? [];
+  const sitHistory = useTbr((s) => s.sitHistory) ?? [];
+  const readingMinutesByDay = useTbr((s) => s.readingMinutesByDay);
+  const advancesByDay = useTbr((s) => s.advancesByDay);
+  const sceneCrossesByDay = useTbr((s) => s.sceneCrossesByDay);
+  const keepsByDay = useTbr((s) => s.keepsByDay);
+  const worksTouchedByDay = useTbr((s) => s.worksTouchedByDay);
+  const hostOpensByDay = useTbr((s) => s.hostOpensByDay);
+  const sitsByDay = useTbr((s) => s.sitsByDay);
+  const clubTouchesByDay = useTbr((s) => s.clubTouchesByDay);
+  const addContact = useTbr((s) => s.addContact);
+  const toggleFollow = useTbr((s) => s.toggleFollow);
+  const setPledgeStatus = useTbr((s) => s.setPledgeStatus);
   const [message, setMessage] = useState("");
 
   const graph = useMemo<FriendGraph>(

@@ -1,7 +1,7 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState, type DragEvent, type FormEvent } from "react";
 import { fetchPage } from "@/lib/fetch-page";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import type { Work } from "@/lib/literature";
 
 export const Route = createFileRoute("/page")({
@@ -52,8 +52,8 @@ function ImportShell() {
 
 function ImportBody() {
   const navigate = useNavigate();
-  const setPageWork = useVellum((s) => s.setPageWork);
-  const resetWork = useVellum((s) => s.resetWork);
+  const setPageWork = useTbr((s) => s.setPageWork);
+  const resetWork = useTbr((s) => s.resetWork);
   const [url, setUrl] = useState("");
   const [fileName, setFileName] = useState("");
   const [busy, setBusy] = useState<"link" | "pdf" | null>(null);

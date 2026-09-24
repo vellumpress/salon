@@ -226,7 +226,7 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "geography": "Lima / Peru, 1714 (viceregal)",
     "cadence": "Every other night or nightly; Parts Two–Four split halves (~15 min)",
     "openAt": "Begin Part One immediately after title/illustrations; no long front matter.",
-    "why": "It is already a prestige limited series: cold open disaster, then character dossiers, then philosophical finale. Contemporary audiences raised on nonlinear TV (accident first, lives in flashback) will feel at home. Questions of providence and why these five map onto modern talk about randomness and meaning. The Abbess and the Marquesa give the book a feminist aftertaste without modern jargon. At about 8 episodes it is an ideal complete-in-two-weeks Vellum object.",
+    "why": "It is already a prestige limited series: cold open disaster, then character dossiers, then philosophical finale. Contemporary audiences raised on nonlinear TV (accident first, lives in flashback) will feel at home. Questions of providence and why these five map onto modern talk about randomness and meaning. The Abbess and the Marquesa give the book a feminist aftertaste without modern jargon. At about 8 episodes it is an ideal complete-in-two-weeks tbr object.",
     "shipNotes": "Project Gutenberg #69768 1927 Wilder; confirm territory PD on board. Text and Amy Drevenstedt illustrations on PG 69768 — decide whether to ship illustrations as optional art. Do not invent chapter names inside parts.",
     "shelfWorkId": "the-bridge-of-san-luis-rey",
     "episodes": [
@@ -316,7 +316,7 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "geography": "Chicago → Harlem / New York",
     "cadence": "Nightly or every other night; 12–14 min easy",
     "openAt": "Begin Part One, Chapter 1 (the letter). Skip any modern introduction in your bound file.",
-    "why": "Passing is short, hot, and structurally perfect for serialization: letter, reunion, infiltration, disaster. Race, gender, marriage, and surveillance read as contemporary without modernization. Irene's controlled voice is premium audio — every polite sentence hides a knife. The unresolved ending is a feature for Vellum: listeners argue. Six nights fits a novella sprint product.",
+    "why": "Passing is short, hot, and structurally perfect for serialization: letter, reunion, infiltration, disaster. Race, gender, marriage, and surveillance read as contemporary without modernization. Irene's controlled voice is premium audio — every polite sentence hides a knife. The unresolved ending is a feature for tbr: listeners argue. Six nights fits a novella sprint product.",
     "shipNotes": "BOUND LOCAL / Launch shelf — NOT on Project Gutenberg (confirmed: no Larsen records). Check rights board for US PD (pub. 1929; author d. 1964). SHIP BLOCKER CANDIDATE: not on PG. Use bound local text only after board clears PD/rights. Do not invent chapter titles — parts are Encounter / Re-encounter / Finale with numbered chapters 1–4 each (Knopf 1929 convention). Word counts estimated (~27k total).",
     "shelfWorkId": "passing",
     "episodes": [
@@ -514,7 +514,7 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "geography": "Philadelphia → New York",
     "cadence": "Nightly ~12–14 min",
     "openAt": "Skip title/imprint/dedication if desired; begin Part 1 Home, Chapter I. Keep epigraph (To market, to market…) as optional pre-roll — it teaches the structure.",
-    "why": "Passing-as-plot with an artist's coming-of-age — mashup of Larsen's theme and a broader social novel. The nursery-rhyme part titles (Home / Market / Plum Bun / Home Again / Market Is Done) are ready-made season titles in the app. Contemporary listeners get colorism, class, and the feel of selling yourself to institutions. Angela is flawed and watchable; Virginia prevents a single-voice tract. Twelve nights is a standard Vellum novel length.",
+    "why": "Passing-as-plot with an artist's coming-of-age — mashup of Larsen's theme and a broader social novel. The nursery-rhyme part titles (Home / Market / Plum Bun / Home Again / Market Is Done) are ready-made season titles in the app. Contemporary listeners get colorism, class, and the feel of selling yourself to institutions. Angela is flawed and watchable; Virginia prevents a single-voice tract. Twelve nights is a standard tbr novel length.",
     "shipNotes": "BOUND LOCAL — Standard Ebooks / Wikisource (not on PG as Plum Bun; PG has Fauset's There Is Confusion #78915 only). Board must clear rights. SHIP BLOCKER CANDIDATE: not on Project Gutenberg under this title. Prefer Standard Ebooks text for chapter roman numerals matching this map (Home I–VI; Market I–VII; Plum Bun I–V; Home Again I–VI; Market Is Done I–III). Confirm PD (1928). Do not invent chapter names.",
     "shelfWorkId": "plum-bun",
     "episodes": [
@@ -946,7 +946,7 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "geography": "West Egg / East Egg / NYC / valley of ashes (Long Island Sound)",
     "cadence": "Nightly ~14–15 min; Ch. VII split across two nights",
     "openAt": "Skip TOC and Zelda dedication if desired; begin Chapter I. Keep the Thomas Parke d'Invilliers epigraph as optional pre-roll.",
-    "why": "Everyone thinks they know it — serialization makes them hear the sentences again. Nine chapters become twelve nights by splitting the long set-pieces (party, Plaza, ending). Class, hustle, and invented identity are contemporary catnip. The green light is already merch; the funeral emptiness is the gut-punch closer. Low education barrier, high prestige — core Vellum acquisition title.",
+    "why": "Everyone thinks they know it — serialization makes them hear the sentences again. Nine chapters become twelve nights by splitting the long set-pieces (party, Plaza, ending). Class, hustle, and invented identity are contemporary catnip. The green light is already merch; the funeral emptiness is the gut-punch closer. Low education barrier, high prestige — core tbr acquisition title.",
     "shipNotes": "Project Gutenberg #64317 (plain text confirmed). If board previously had PDF-only, prefer PG text for production. Earlier board note said PDF-only — outdated if PG 64317 is cleared for your territories. Still verify US storefront rights on board. Chapters are untitled beyond roman numerals — do not invent literary chapter names in product UI; use episode titles only.",
     "shelfWorkId": "gatsby",
     "episodes": [
