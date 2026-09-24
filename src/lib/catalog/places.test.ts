@@ -176,7 +176,7 @@ test("Locked recommend, Next, and ritual-lane works all resolve a place with a s
   assert.ok(RITUAL_LANES.some((lane) => lane.workIds.includes("silhouettes")));
 });
 
-test("Adapted by Salon keeps exactly three America-set remakes", () => {
+test("Adapted by tbr keeps exactly three America-set remakes", () => {
   const america = ADAPTED_BY_SALON_IDS.filter((id) => {
     const work = shelfWork(id);
     assert.ok(work, id);

@@ -1509,7 +1509,7 @@ test("Mira FULL-TEXT CLEAR ×6 are stamped local binds with no opening stubs", (
   }
 });
 
-test("Salon noon CLEAR ×5 load as local full binds on the Host open", () => {
+test("tbr noon CLEAR ×5 load as local full binds on the Host open", () => {
   const expect = {
     "a-hero-of-our-time": {
       scenes: 37,
@@ -1582,7 +1582,7 @@ test("Salon noon CLEAR ×5 load as local full binds on the Host open", () => {
   assert.equal(figs.scenes.length, 19);
 });
 
-test("Salon PM CLEAR ×5 load as local full binds on the Host open", () => {
+test("tbr PM CLEAR ×5 load as local full binds on the Host open", () => {
   const expect = {
     tropic: {
       scenes: 10,

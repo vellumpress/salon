@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Copy Mira's poem-chapter product JSON into Salon texts + ritual openings.
+ * Copy Mira's poem-chapter product JSON into tbr texts + ritual openings.
  * Usage:
  *   node --experimental-strip-types scripts/adapt-mira-poetry.ts
  */
@@ -372,7 +372,7 @@ for (const job of jobs) {
     continue;
   }
   if (!existsSync(salonPath) || !existsSync(openPath)) {
-    throw new Error(`missing Salon bind for ${job.id}`);
+    throw new Error(`missing tbr bind for ${job.id}`);
   }
   const mira = JSON.parse(readFileSync(miraPath, "utf8")) as MiraWork;
   const salon = loadWork(salonPath);

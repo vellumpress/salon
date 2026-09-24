@@ -58,7 +58,7 @@ test("paintSalonCard draws a framed card without throwing", () => {
   assert.ok(calls.includes("text"));
 });
 
-test("Salon card share opens native share before any hosted persist", () => {
+test("tbr card share opens native share before any hosted persist", () => {
   const source = readFileSync(new URL("../components/salon-card-share.tsx", import.meta.url), "utf8");
   const shareAt = source.indexOf("shareOrCopy(");
   const persistAt = source.indexOf("createSentenceShare(");

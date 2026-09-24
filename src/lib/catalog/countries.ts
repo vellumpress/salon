@@ -482,7 +482,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
 const WORK_COUNTRY: Record<string, string> = {
   // Unnamed city in the story; American texture (stoop, Sunday School). Not a biography.
   generosity: "United States",
-  // Adapted by Salon remakes (Salon original text; place-of-setting is WORK_PLACE)
+  // Adapted by tbr remakes (tbr original text; place-of-setting is WORK_PLACE)
   "miss-brill-adapted": "United States",
   "prefer-not": "United States",
   "late-season": "United States",

@@ -115,12 +115,12 @@ test("applySpaPagesFallback writes 404.html and patches index.html", () => {
   mkdirSync(dest, { recursive: true });
   writeFileSync(
     join(dest, "index.html"),
-    "<html><head><title>Salon</title></head><body>home</body></html>",
+    "<html><head><title>tbr</title></head><body>home</body></html>",
   );
   applySpaPagesFallback(dest);
   const fallback = readFileSync(join(dest, "404.html"), "utf8");
   const index = readFileSync(join(dest, "index.html"), "utf8");
   assert.equal(fallback, renderSpa404Html());
   assert.match(index, new RegExp(SPA_RESTORE_ATTR));
-  assert.match(index, /<title>Salon<\/title>/);
+  assert.match(index, /<title>tbr<\/title>/);
 });
