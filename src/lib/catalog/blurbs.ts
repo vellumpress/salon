@@ -632,7 +632,7 @@ const BLURBS: Record<string, string> = {
   krakatit:
     "Evening fog thickens on the Old Town embankment until a pair of penetrating eyes fix on him.",
   "the-peasants":
-    "Agatha and the priest meet on a Polish roadside — Praised be Jesus Christ — then she walks out into the wide world.",
+    "Agatha and the priest on the autumn road — Praised be Jesus Christ — village poverty and period speech stay in the sit.",
   "the-quest-of-the-silver-fleece": "Du Bois’ cotton novel: a crop, a school, and the northern money in it.",
   "main-travelled-roads": "Garland’s Midwest farms, without the calendar art.",
   "the-country-of-the-pointed-firs": "Jewett’s Maine harbor, visited slowly, left with the tide.",
@@ -749,7 +749,13 @@ const BLURBS: Record<string, string> = {
   "the-tower": "Yeats’s later book: a tower, a winding stair, and history at the door.",
   "the-wind-among-the-reeds": "Early Yeats: the sidhe, the reeds, a Ireland still half-myth.",
   "stories-of-red-hanrahan": "Yeats’s Hanrahan: a poet cursed into wandering his own country.",
-  "irish-fairy-tales": "Stephens retelling the old Irish cycles as if they were still in the next field.",
+  "a-hungarian-nabob":
+    "Rain on the puszta in 1822 opens on Peter Bús’s Break-’em-tear-’em csárda.",
+  "an-iceland-fisherman": "Five Breton seamen drink in a bilge-water cabin, year 1886.",
+  "the-song-of-the-blood-red-flower":
+    "A strawberry song and the girls’ ring open the Gazelle chase.",
+  "irish-fairy-tales":
+    "Finnian of Moville goes after the disapproved gods and meets Tuan mac Cairill, Chapter I only.",
   "the-crock-of-gold": "Stephens’ philosophers, leprechauns, and a policeman who wanders into myth.",
   deirdre: "Stephens’ Deirdre: the face that starts a war, told without Victorian blush.",
   "a-dreamer-s-tales": "Dunsany’s invented East and the gods who are already bored of us.",

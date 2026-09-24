@@ -1,0 +1,261 @@
+{
+  "id": "the-song-of-the-blood-red-flower",
+  "title": "The Song of the Blood-Red Flower",
+  "author": "Johannes Linnankoski",
+  "year": "1905",
+  "note": "Project Gutenberg 12935.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Gazelle",
+      "place": "Gazelle",
+      "reentry": "\"My love is like a strawberry sweet, Strawberry sweet, strawberry sweet. I'll dance with her when next we meet, Next we meet, next we meet!\"",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "\"My love is like a strawberry sweet, Strawberry sweet, strawberry sweet. I'll dance with her when next we meet, Next we meet, next we meet!\""
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The song came as a welcome from the playing-fields of the village as Olof climbed the hill; it lightened his step, forcing him to keep time."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Even the trees around seemed waving to the tune; the girls' thin summer dresses fluttered, and here and there gay ribbons in their hair."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Come in the ring, Olof, come in the ring!\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Some of the girls broke the chain, and offered their hands."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "There was Sunday merriment in the air, and all were intoxicated with spring. The stream flowed glittering through the fields, with a shimmer of heat above. The dancers quickened their pace almost to a run. The lads had pushed their hats back, the sweat stood in beads on their foreheads; the girls smiled with bright eyes, dimpled cheeks a-quiver, and heaving breast."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"My love is like a cranberry fair, A cranberry fair, a cranberry fair. For none but me she'll ever care, She'll ever care, and ever care.\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"Oh, it's too hot--let's try another game!\" cried one."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"Let's play last man out--that gives you time to breathe.\""
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"Yes--yes. Here's my partner!\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "The chain broke up, and the new game began."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"And I'm last man--go on. We'll soon find another. Last man out!\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "They raced away on either side, the last man between. It was the very place for this game, a gentle slope every way. The last man had no easy task, for the couples agreed, and tried hard to join again."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"Full speed, that's the way!\" cried the lookers-on. And the last man put on the pace, rushed towards the meeting-point like a whirlwind, and reached it in time. The girl swung round and dashed off to the left, but made too short a turn, and was caught."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "The game went on, growing fast and furious. All were in high spirits, ready to laugh at the slightest thing; every little unexpected turn and twist was greeted with shouts of glee."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Olof was last man now. He stood ready in front of the row, glancing to either side."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"Last pair off'!\""
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "The last two were ill-matched; a big broad-shouldered ditcher, and a little slender girl of barely seventeen."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "The man lumbered off in a wide curve, the girl shot away like a weasel, almost straight ahead, her red bodice like a streak of flame and her short plait straight out ahead."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"That's it--that's the way!\" cried the rest."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "The girl ran straight ahead at first, Olof hardly gaining on her at all. Then she tried a zigzag across the grass. Olof took short cuts, increasing his pace, and was almost at her heels."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"Now, now!\" cried the others behind."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "The girl gave a swift glance round, saw her pursuer already stretching out his hand, and broke away suddenly to one side."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "Olof slipped, and went down full length on the grass."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "The girl's eyes twinkled mischievously, and a shout of laughter came from the rest."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "Olof would have been furious, but he paid no heed to the laughter now, having just at that moment noticed something else. The girl's glance as she turned--heavens, what eyes! And he had never noticed her before...."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "He sprang up like a rocket and continued the pursuit."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "The broad-shouldered partner was making hopeless efforts from the other side of the course. \"Don't waste your breath!\" cried the men. \"He's got her now.\""
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "The big fellow stopped, and waited calmly for the end."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "But it was not over yet. Olof was gaining steadily on the girl; turn which way she pleased, he would have her now."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "She saw the danger, and turned to rush down the slope. But, in turning, one of her shoes came loose, and was flung high in air."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "A shout of delight went up from the playground in the rear."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "The girl stopped, at a loss now what to do. Olof, too, forgot the pursuit, and stood watching the shoe; then suddenly he sprang forward and caught it in the air as it fell."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "A fresh burst of applause came from the lookers-on. \"Bravo, bravo, that's the way!\""
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "\"Go on, go on! Never mind about the shoe!\" cried some of the girls, to urge her on."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "She dashed off again, Olof after her with the shoe in his hand."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "The chase was worth looking at now; no ordinary game this, but a contest, with victory or defeat at stake. The spectators were wild with excitement, taking sides for one or other of the two."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "The girl shot this way and that, like a shuttle in a loom, her slender body gracefully bent, her head thrown back defiantly. Her plait had come loose, and the hair streamed out behind her like a tawny mane. A glimpse of a red stocking showed now and again beneath her dress."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "For Olof, too, it had ceased to be a game. She was no longer one of a couple he had to part, but a creature fie must tame--a young wild foal with sparkling eyes and golden mane."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "They reached the edge of the course; only a few feet now between them."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "At last! thought Olof, holding himself in readiness for her next turn up the slope."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "But again she turned off downward. And as she wheeled about, Olof again was aware of something he had not marked before--the curve of her hips, her lithe, supple waist, and the splendid poise of her head. He was so close now that her hair touched his face--touched it, or was it only the air as it flew past his cheek? And from her eyes shot beams of light, challenging, beckoning, urging him on."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "Gazelle! The word flashed into his mind--a picture from some book he had once read. The eyes, the lightfoot swiftness--yes, a gazelle. He shouted the word aloud, victoriously, as he raced after her like one possessed."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "She sprang aside, and darted up a little hill just beyond the course."
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "\"Look, look!\" cried the rest. It was like running down a hare."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "A glimpse of a red stocking up on the crest of the mound, and the hunted creature vanished on the farther side, the hunter after her."
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "The final heat was but short. The girl was wearying already, and had made for the shelter of the hill on purpose to avoid being caught in sight of the rest. Olof tore madly down the slope. The girl gave one glance round, turned vaguely with an instinct of defence; next moment she felt Olof's two hands grasping her waist."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "\"You--gazelle!\" he shouted triumphantly. But the pace was too hot for a sudden stop; they lost their balance, and came down together, breast to breast and eye to eye, rolling over on the slope."
+    }
+  ]
+}
