@@ -37,6 +37,7 @@ import { Route as STokenRouteImport } from './routes/s.$token'
 import { Route as SitTokenRouteImport } from './routes/sit.$token'
 import { Route as ApiAuthSplatRouteImport } from './routes/api/auth/$'
 import { Route as ClubInviteTokenRouteImport } from './routes/club.invite.$token'
+import { Route as FriendsAuthorSlugRouteImport } from './routes/friends_.author.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -178,6 +179,11 @@ const ClubInviteTokenRoute = ClubInviteTokenRouteImport.update({
   path: '/club/invite/$token',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FriendsAuthorSlugRoute = FriendsAuthorSlugRouteImport.update({
+  id: '/friends_/author/$slug',
+  path: '/friends/author/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -208,6 +214,7 @@ export interface FileRoutesByFullPath {
   '/profile/': typeof ProfileIndexRoute
   '/api/auth/$': typeof ApiAuthSplatRoute
   '/club/invite/$token': typeof ClubInviteTokenRoute
+  '/friends/author/$slug': typeof FriendsAuthorSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -237,6 +244,7 @@ export interface FileRoutesByTo {
   '/profile': typeof ProfileIndexRoute
   '/api/auth/$': typeof ApiAuthSplatRoute
   '/club/invite/$token': typeof ClubInviteTokenRoute
+  '/friends/author/$slug': typeof FriendsAuthorSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -268,6 +276,7 @@ export interface FileRoutesById {
   '/profile/': typeof ProfileIndexRoute
   '/api/auth/$': typeof ApiAuthSplatRoute
   '/club/invite/$token': typeof ClubInviteTokenRoute
+  '/friends_/author/$slug': typeof FriendsAuthorSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -300,6 +309,7 @@ export interface FileRouteTypes {
     | '/profile/'
     | '/api/auth/$'
     | '/club/invite/$token'
+    | '/friends/author/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -329,6 +339,7 @@ export interface FileRouteTypes {
     | '/profile'
     | '/api/auth/$'
     | '/club/invite/$token'
+    | '/friends/author/$slug'
   id:
     | '__root__'
     | '/'
@@ -359,6 +370,7 @@ export interface FileRouteTypes {
     | '/profile/'
     | '/api/auth/$'
     | '/club/invite/$token'
+    | '/friends_/author/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -388,6 +400,7 @@ export interface RootRouteChildren {
   SitTokenRoute: typeof SitTokenRoute
   ApiAuthSplatRoute: typeof ApiAuthSplatRoute
   ClubInviteTokenRoute: typeof ClubInviteTokenRoute
+  FriendsAuthorSlugRoute: typeof FriendsAuthorSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -588,6 +601,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ClubInviteTokenRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/friends_/author/$slug': {
+      id: '/friends_/author/$slug'
+      path: '/friends/author/$slug'
+      fullPath: '/friends/author/$slug'
+      preLoaderRoute: typeof FriendsAuthorSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -631,6 +651,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitTokenRoute: SitTokenRoute,
   ApiAuthSplatRoute: ApiAuthSplatRoute,
   ClubInviteTokenRoute: ClubInviteTokenRoute,
+  FriendsAuthorSlugRoute: FriendsAuthorSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

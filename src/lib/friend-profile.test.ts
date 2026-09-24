@@ -220,3 +220,19 @@ test("no real friends is just this device", () => {
   assert.equal(rows.filter((row) => !row.isSelf).length, 0);
   assert.equal(listFriends(emptyGraph()).length, 0);
 });
+
+test("a followed name with no activity is waiting", () => {
+  const contact = asContact({ handle: "new.handle" });
+  assert.ok(contact);
+  const rows = listFriends(
+    emptyGraph({
+      selfHandle: "meghan",
+      contacts: [contact],
+      following: [contact.id],
+    }),
+  );
+  const row = rows.find((item) => item.handle === "new.handle");
+  assert.equal(row?.following, true);
+  assert.equal(row?.waiting, true);
+  assert.equal(row?.readingTitle, "");
+});

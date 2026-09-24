@@ -152,7 +152,7 @@ export function normalizeHandle(value: string) {
     .trim()
     .replace(/^@+/, "")
     .toLowerCase()
-    .replace(/[^a-z0-9_]/g, "")
+    .replace(/[^a-z0-9_.]/g, "")
     .slice(0, 20);
 }
 
