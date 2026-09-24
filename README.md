@@ -44,7 +44,7 @@ npm run build:vercel
 - Chamber reader for all **888 local binds** (texts + openings stay in `src/lib/catalog/texts` and `src/lib/catalog/openings`)
 - Progress, favorites, kept breaths — `localStorage` (`vellum-v1`)
 - Continue-reading on Home (header + primary resume cell) from that same local progress
-- Friends: claim an `@username`, follow people you actually add, open a profile of the activity this phone has — local-first (`/friends`, and `/friends/mina` which Pages serves as `?/friends/mina`)
+- Friends: claim an `@username`, follow people you actually add, open a profile of the activity this phone has. The page also keeps tonight-notes, sits you can join or host, together-keeps, kept lines, suggestions, and invite links — all from this device, with an empty state when nothing has arrived. Local-first (`/friends`, and `/friends/mina` which Pages serves as `?/friends/mina`)
 - Reader accounts on **You** (`/profile`) and `/login`: `@username` + email + password. First visit creates; return visits sign in. Session restores after a hard refresh from `localStorage` (`salon-reader-v1`). Password is stored as a PBKDF2 hash, never plaintext. The same `@handle` is shared with Friends so a name is not claimed twice on this phone.
 - Share links that stay on this origin (`/salon/read/…`)
 
@@ -57,7 +57,7 @@ Pages has no Node server. These stay off unless you host the app with a real bac
 | Reader sign-up / sign-in | Works offline on this device (`salon-reader-v1`) | Create account and sign in on You / login. Session survives refresh. Not synced across phones. |
 | Hosted Better Auth / staff desk | `VITE_AUTH_ENABLED=true`, `VITE_LIVE_BACKEND=true`, Better Auth secret, OAuth broker, `DATABASE_URL` | Flags stay false on Pages so the fake Dev User is not treated as signed in. When a hosted backend is on, You / login also call `authClient.signUp.email` / `signIn.email`. Staff desk stays closed here. |
 | Synced favorites / reading | Auth + Postgres / PGlite | Local only. |
-| Friends graph / `@username` | Hosted follow + handle APIs (none in this tree yet) | Local `localStorage` graph. Catalog readers are followable offline. Cross-device / other-user sync needs a live backend. |
+| Friends graph / `@username` | Hosted follow + handle APIs (none in this tree yet) | Local `localStorage` graph. People you add, invite, or share a sit with — no demo directory. Cross-device / other-user sync needs a live backend. |
 | Book clubs / invites | `VITE_LIVE_BACKEND=true` + DB | Create/list/join fail closed; cards stay local. |
 | Sit-together RTC | `/api/rtc` signaling + optional `VITE_STUN_URLS` | Room shows “needs a server”; no mesh. |
 | Curator replies | Server function + model API key | UI loads; ask fails with a quiet error. |

@@ -2,11 +2,13 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   asContact,
+  boardKeptLines,
   contactId,
   friendsFeed,
   searchPeople,
   youCard,
 } from "./friends.ts";
+import type { TogetherKeep } from "./together-keep.ts";
 import { handleError, normalizeHandle, readerByHandle } from "./social.ts";
 import type { WorkProgress } from "./store.ts";
 
@@ -50,6 +52,36 @@ test("local contacts join the friends feed", () => {
   const feed = friendsFeed([contact.id], [contact]);
   assert.equal(feed[0]?.handle, "mina");
   assert.equal(feed[0]?.workTitle, "Passing");
+});
+
+test("boardKeptLines stays empty until this phone has a real line", () => {
+  assert.deepEqual(boardKeptLines({ selfHandle: "mina" }), []);
+  assert.deepEqual(
+    boardKeptLines({
+      selfHandle: "",
+      selfLines: [
+        { workId: "passing", breathId: "b1", text: "A sentence.", title: "Passing", at: 2 },
+      ],
+    }),
+    [],
+  );
+});
+
+test("boardKeptLines keeps a together line and drops blanks", () => {
+  const pair: TogetherKeep = {
+    id: "tk1",
+    workId: "passing",
+    workTitle: "Passing",
+    author: "Nella Larsen",
+    theirs: { handle: "mina", name: "Mina", breathId: "b1", line: "The envelope.", at: 3 },
+    yours: { handle: "reader", name: "You", breathId: "b2", line: "   ", at: 4 },
+    createdAt: 1,
+  };
+  const lines = boardKeptLines({ selfHandle: "reader", togetherKeeps: [pair] });
+  assert.equal(lines.length, 1);
+  assert.equal(lines[0]?.handle, "mina");
+  assert.equal(lines[0]?.line, "The envelope.");
+  assert.equal(lines[0]?.workTitle, "Passing");
 });
 
 test("youCard uses last-read as currently sitting", () => {
