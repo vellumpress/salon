@@ -13,7 +13,13 @@ export const PITCHES: Record<string, string> = {
   manhattan:
     "Dos Passos cuts New York as montage: arrivals, ads, and lives slicing across each other. The city as newsreel you can walk through.",
   tropic:
-    "The whistle blew for eleven o'clock. Open Drought — a Barbados quarry at eleven, then the walk home through the marl. Period words for Black workers are already in this stretch; name them if you Host further. The stories continue.",
+    "The whistle blew for eleven o'clock. One tale: Drought — a white hillside quarry, then Coggins Rum, then the walk home through the marl. Stop at the tale boundary. Heat, labor, and racial violence are in the stretch; name them if you Host further, and don’t sanitize.",
+  "the-painted-veil":
+    "Shuttered Hong Kong room after tiffin; someone tries the door; Kitty whispers “Walter.” Colonial household language (*amah*, “boys”) stays, and the sit opens on “How shall I get out?” The closed sit is Chapter I only — adultery and colonial heat; Host may name them, and don’t sanitize.",
+  "growth-of-the-soil":
+    "The long moor road north; red-beard Isak with the first sack. The settler open uses the period word “Lapp” for Sámi herders on the common — Worster’s English only. Loneliness and land hunger — Host OK; if you Host further, keep that named for the room.",
+  "the-purple-land":
+    "“Three chapters in the story of my life…” opens the frame into the Banda Oriental. Soft against Green Mansions. Guerrilla and gaucho country — Host OK.",
   berlin:
     "Berlin talks through Franz Biberkopf after prison — noise, politics, and fate in Döblin’s street choir. A city that will not let a man start clean.",
   passing:

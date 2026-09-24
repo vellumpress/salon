@@ -376,6 +376,9 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "cheri",
     "all-quiet-on-the-western-front",
     "the-gadfly",
+    "the-painted-veil",
+    "growth-of-the-soil",
+    "the-purple-land",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -403,9 +406,9 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("an-outcast-of-the-islands"), "later");
   assert.equal(curatorialTrack("the-underdogs"), "later");
   assert.equal(curatorialTrack("diary-of-a-chambermaid"), "later");
-  assert.equal(curatorialTrack("the-painted-veil"), "later");
+  assert.equal(curatorialTrack("the-painted-veil"), "next");
   assert.equal(curatorialTrack("the-good-soldier"), "later");
-  assert.equal(curatorialTrack("growth-of-the-soil"), "later");
+  assert.equal(curatorialTrack("growth-of-the-soil"), "next");
   assert.equal(curatorialTrack("nada-the-lily"), "next");
   assert.equal(curatorialTrack("all-quiet-on-the-western-front"), "next");
   assert.equal(curatorialTrack("we"), "later");
@@ -959,9 +962,9 @@ test("The Painted Veil is a local before-sleep bind on Next, not locked recommen
   assert.ok(lane?.workIds.includes("the-painted-veil"));
   assert.ok(lane!.workIds.indexOf("the-painted-veil") > lane!.workIds.indexOf("ecstasy"));
   assert.ok(lane!.workIds.indexOf("the-painted-veil") > lane!.workIds.indexOf("quicksand"));
-  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-painted-veil"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-painted-veil"), true);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-painted-veil"), false);
-  assert.equal(curatorialTrack("the-painted-veil"), "later");
+  assert.equal(curatorialTrack("the-painted-veil"), "next");
 });
 
 test("The Good Soldier is a local before-sleep bind on Next, not locked recommend", () => {
@@ -985,7 +988,7 @@ test("The Good Soldier is a local before-sleep bind on Next, not locked recommen
 test("Growth of the Soil is a local waking bind on Next, not locked recommend", () => {
   const work = SHELF.find((item) => item.id === "growth-of-the-soil");
   assert.ok(work);
-  assert.equal(work.year, 1920);
+  assert.equal(work.year, 1917);
   assert.equal(work.title, "Growth of the Soil");
   assert.equal(work.author, "Knut Hamsun (tr. W. W. Worster)");
   assert.equal(work.local, true);
@@ -997,9 +1000,9 @@ test("Growth of the Soil is a local waking bind on Next, not locked recommend", 
   assert.ok(
     lane!.workIds.indexOf("growth-of-the-soil") > lane!.workIds.indexOf("diary-of-a-chambermaid"),
   );
-  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("growth-of-the-soil"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("growth-of-the-soil"), true);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("growth-of-the-soil"), false);
-  assert.equal(curatorialTrack("growth-of-the-soil"), "later");
+  assert.equal(curatorialTrack("growth-of-the-soil"), "next");
 });
 
 test("Nada the Lily is a local before-sleep bind on Next, not locked recommend", () => {
@@ -1495,15 +1498,16 @@ test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
     "quicksand",
     "botchan",
   ]);
-  assert.equal(forYou!.workIds.at(-10), "there-is-confusion");
-  assert.equal(forYou!.workIds.at(-9), "miss-lulu-bett");
-  assert.equal(forYou!.workIds.at(-8), "seven-brothers");
-  assert.equal(forYou!.workIds.at(-7), "futility");
-  assert.equal(forYou!.workIds.at(-6), "on-the-seaboard");
-  assert.equal(forYou!.workIds.at(-5), "bel-ami");
-  assert.equal(forYou!.workIds.at(-4), "hadji-murad");
-  assert.equal(forYou!.workIds.at(-3), "anandamath");
-  assert.equal(forYou!.workIds.at(-2), "thais");
+  assert.equal(forYou!.workIds.at(-11), "there-is-confusion");
+  assert.equal(forYou!.workIds.at(-10), "miss-lulu-bett");
+  assert.equal(forYou!.workIds.at(-9), "seven-brothers");
+  assert.equal(forYou!.workIds.at(-8), "futility");
+  assert.equal(forYou!.workIds.at(-7), "on-the-seaboard");
+  assert.equal(forYou!.workIds.at(-6), "bel-ami");
+  assert.equal(forYou!.workIds.at(-5), "hadji-murad");
+  assert.equal(forYou!.workIds.at(-4), "anandamath");
+  assert.equal(forYou!.workIds.at(-3), "thais");
+  assert.equal(forYou!.workIds.at(-2), "bunner-sisters");
   assert.equal(forYou!.workIds.at(-1), "generosity");
   assert.equal(sleep!.workIds[0], "quicksand");
 });
@@ -2737,11 +2741,12 @@ test("Mira NOON2 CLEAR sits on Next and For you, never Featured", () => {
   assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
   assert.equal(sleep?.workIds[0], "quicksand");
   assert.equal(forYou?.workIds.at(-1), "generosity");
-  assert.equal(forYou?.workIds.at(-2), "thais");
-  assert.equal(forYou?.workIds.at(-3), "anandamath");
-  assert.equal(forYou?.workIds.at(-4), "hadji-murad");
-  assert.equal(forYou?.workIds.at(-5), "bel-ami");
-  assert.equal(forYou?.workIds.at(-6), "on-the-seaboard");
+  assert.equal(forYou?.workIds.at(-2), "bunner-sisters");
+  assert.equal(forYou?.workIds.at(-3), "thais");
+  assert.equal(forYou?.workIds.at(-4), "anandamath");
+  assert.equal(forYou?.workIds.at(-5), "hadji-murad");
+  assert.equal(forYou?.workIds.at(-6), "bel-ami");
+  assert.equal(forYou?.workIds.at(-7), "on-the-seaboard");
 
   const farm = SHELF.find((item) => item.id === "african-farm");
   assert.ok(farm);
@@ -2833,10 +2838,11 @@ test("Mira 4PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
   assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
   assert.equal(sleep?.workIds[0], "quicksand");
   assert.equal(forYou?.workIds.at(-1), "generosity");
-  assert.equal(forYou?.workIds.at(-2), "thais");
-  assert.equal(forYou?.workIds.at(-3), "anandamath");
-  assert.equal(forYou?.workIds.at(-4), "hadji-murad");
-  assert.equal(forYou?.workIds.at(-5), "bel-ami");
+  assert.equal(forYou?.workIds.at(-2), "bunner-sisters");
+  assert.equal(forYou?.workIds.at(-3), "thais");
+  assert.equal(forYou?.workIds.at(-4), "anandamath");
+  assert.equal(forYou?.workIds.at(-5), "hadji-murad");
+  assert.equal(forYou?.workIds.at(-6), "bel-ami");
 
   const expect = {
     "a-passage-to-india": {
@@ -2992,12 +2998,13 @@ test("Mira 6PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
   assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
   assert.equal(sleep?.workIds[0], "quicksand");
   assert.equal(forYou?.workIds.at(-1), "generosity");
-  assert.equal(forYou?.workIds.at(-2), "thais");
-  assert.equal(forYou?.workIds.at(-3), "anandamath");
-  assert.equal(forYou?.workIds.at(-4), "hadji-murad");
+  assert.equal(forYou?.workIds.at(-2), "bunner-sisters");
+  assert.equal(forYou?.workIds.at(-3), "thais");
+  assert.equal(forYou?.workIds.at(-4), "anandamath");
+  assert.equal(forYou?.workIds.at(-5), "hadji-murad");
   assert.equal(featured.includes("the-painted-veil"), false);
   assert.equal(featured.includes("high-wind-jamaica"), false);
-  assert.equal(next.includes("the-painted-veil"), false);
+  assert.equal(next.includes("the-painted-veil"), true);
   assert.notEqual(
     SHELF.find((item) => item.id === "the-painted-veil")?.opening,
     SHELF.find((item) => item.id === "of-human-bondage")?.opening,
@@ -3159,8 +3166,9 @@ test("Mira Wed 8AM CLEAR sits on Next, For you, and Rituals, never Featured", ()
   assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
   assert.equal(sleep?.workIds[0], "quicksand");
   assert.equal(forYou?.workIds.at(-1), "generosity");
-  assert.equal(forYou?.workIds.at(-2), "thais");
-  assert.equal(forYou?.workIds.at(-3), "anandamath");
+  assert.equal(forYou?.workIds.at(-2), "bunner-sisters");
+  assert.equal(forYou?.workIds.at(-3), "thais");
+  assert.equal(forYou?.workIds.at(-4), "anandamath");
   assert.equal(next.includes("three-hundred-tang-poems"), false);
   assert.equal(next.includes("the-bronze-horseman"), false);
   assert.equal(sleep?.workIds.includes("three-hundred-tang-poems"), false);
@@ -3245,8 +3253,9 @@ test("Mira Wed 8AM CLEAR sits on Next, For you, and Rituals, never Featured", ()
     "banjo",
     "nacha-regules",
   ]);
-  assert.equal(bite?.workIds.at(-2), "african-tragedy");
-  assert.equal(bite?.workIds.at(-1), "brazilian-tales");
+  const biteBrazil = bite!.workIds.lastIndexOf("brazilian-tales");
+  assert.equal(bite?.workIds[biteBrazil - 1], "african-tragedy");
+  assert.equal(bite?.workIds[biteBrazil + 1], "tropic");
   const wakeEight = waking!.workIds.indexOf("african-tragedy");
   assert.equal(waking?.workIds[wakeEight + 1], "anandamath");
   assert.equal(forYou?.workIds.includes("death-comes-for-the-archbishop"), false);
@@ -3343,8 +3352,9 @@ test("Mira Noon Wed 23 Sep CLEAR sits on Next, For you, and Rituals, never a new
   assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
   assert.equal(sleep?.workIds[0], "quicksand");
   assert.equal(forYou?.workIds.at(-1), "generosity");
-  assert.equal(forYou?.workIds.at(-2), "thais");
-  assert.equal(forYou?.workIds.at(-3), "anandamath");
+  assert.equal(forYou?.workIds.at(-2), "bunner-sisters");
+  assert.equal(forYou?.workIds.at(-3), "thais");
+  assert.equal(forYou?.workIds.at(-4), "anandamath");
   assert.deepEqual(featured, [
     "enchanted-april",
     "the-bridge-of-san-luis-rey",
@@ -3540,8 +3550,9 @@ test("Mira ~4:14 Wed 23 Sep CLEAR sits on Next and Rituals, never a new Featured
   assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], cold);
   assert.equal(sleep?.workIds[0], "quicksand");
   assert.equal(forYou?.workIds.at(-1), "generosity");
-  assert.equal(forYou?.workIds.at(-2), "thais");
-  assert.equal(forYou?.workIds.at(-3), "anandamath");
+  assert.equal(forYou?.workIds.at(-2), "bunner-sisters");
+  assert.equal(forYou?.workIds.at(-3), "thais");
+  assert.equal(forYou?.workIds.at(-4), "anandamath");
   assert.deepEqual(featured, [
     "enchanted-april",
     "the-bridge-of-san-luis-rey",
@@ -3549,38 +3560,67 @@ test("Mira ~4:14 Wed 23 Sep CLEAR sits on Next and Rituals, never a new Featured
     "the-house-of-mirth",
     "quicksand",
   ]);
-  assert.equal(next.at(-4), "lolly-willowes");
-  assert.equal(next.at(-3), "cheri");
-  assert.equal(next.at(-2), "all-quiet-on-the-western-front");
-  assert.equal(next.at(-1), "the-gadfly");
+  const four = next.lastIndexOf("lolly-willowes");
+  assert.deepEqual(next.slice(four, four + 4), [
+    "lolly-willowes",
+    "cheri",
+    "all-quiet-on-the-western-front",
+    "the-gadfly",
+  ]);
+  assert.deepEqual(next.slice(four + 4), [
+    "the-painted-veil",
+    "growth-of-the-soil",
+    "the-purple-land",
+  ]);
   assert.ok(next.indexOf("all-quiet-on-the-western-front") < next.indexOf("lolly-willowes"));
   assert.ok(next.lastIndexOf("all-quiet-on-the-western-front") > next.indexOf("cheri"));
   assert.equal(next.includes("brazilian-tales"), false);
-  assert.equal(next.includes("the-painted-veil"), false);
+  assert.equal(next.includes("the-painted-veil"), true);
   assert.equal(next.includes("three-hundred-tang-poems"), false);
   assert.equal(next.includes("the-bronze-horseman"), false);
   assert.equal(next.includes("inferno"), false);
-  assert.deepEqual(sleep?.workIds.slice(-5), [
+  const sleepLolly = sleep!.workIds.lastIndexOf("lolly-willowes");
+  assert.deepEqual(sleep?.workIds.slice(sleepLolly, sleepLolly + 5), [
     "lolly-willowes",
     "cheri",
     "all-quiet-on-the-western-front",
     "the-gadfly",
     "brazilian-tales",
   ]);
-  assert.deepEqual(walk?.workIds.slice(-4), [
+  assert.deepEqual(sleep?.workIds.slice(-5), [
+    "the-painted-veil",
+    "growth-of-the-soil",
+    "tropic",
+    "bunner-sisters",
+    "the-purple-land",
+  ]);
+  const walkLolly = walk!.workIds.lastIndexOf("lolly-willowes");
+  assert.deepEqual(walk?.workIds.slice(walkLolly, walkLolly + 4), [
     "lolly-willowes",
     "cheri",
     "all-quiet-on-the-western-front",
     "the-gadfly",
   ]);
-  assert.deepEqual(unwind?.workIds.slice(-4), [
+  assert.deepEqual(walk?.workIds.slice(-3), [
+    "the-painted-veil",
+    "growth-of-the-soil",
+    "the-purple-land",
+  ]);
+  const unwindLolly = unwind!.workIds.lastIndexOf("lolly-willowes");
+  assert.deepEqual(unwind?.workIds.slice(unwindLolly, unwindLolly + 4), [
     "lolly-willowes",
     "cheri",
     "all-quiet-on-the-western-front",
     "the-gadfly",
   ]);
-  assert.equal(bite?.workIds.at(-1), "brazilian-tales");
-  assert.equal(bite?.workIds.at(-2), "african-tragedy");
+  assert.deepEqual(unwind?.workIds.slice(-3), [
+    "the-painted-veil",
+    "growth-of-the-soil",
+    "the-purple-land",
+  ]);
+  const biteBrazil = bite!.workIds.lastIndexOf("brazilian-tales");
+  assert.equal(bite?.workIds[biteBrazil - 1], "african-tragedy");
+  assert.equal(bite?.workIds[biteBrazil + 1], "tropic");
 
   const expect = {
     "lolly-willowes": {

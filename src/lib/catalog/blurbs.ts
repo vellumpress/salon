@@ -26,7 +26,7 @@ const BLURBS: Record<string, string> = {
     "Part First — The Lotus opens on Nile hermits in clay huts, before the turn toward Paphnutius and Alexandria.",
   manhattan: "Dos Passos cuts New York as montage: arrivals, ads, and lives slicing across each other.",
   tropic:
-    "The whistle blew for eleven o'clock — Drought opens in Barbados.",
+    "Drought only: the eleven o’clock whistle, a white hillside quarry, and Coggins Rum.",
   berlin:
     "Berlin talks through Franz Biberkopf after prison — noise, politics, and fate in Döblin’s street choir.",
   passing:
@@ -76,11 +76,11 @@ const BLURBS: Record<string, string> = {
   "diary-of-a-chambermaid":
     "Twelfth place in two years: a rainy September, a Figaro ad, and no interview with Madame.",
   "the-painted-veil":
-    "Someone tries the door — shuttered room, tight shoes, a kimono, and Walter’s name whispered.",
+    "A shuttered Hong Kong room after tiffin; Kitty whispers Walter, and the sit stays in Chapter I.",
   "the-good-soldier":
     "Nine seasons at Bad Nauheim — intimacy like a good glove, and still they knew nothing.",
   "growth-of-the-soil":
-    "A man with a sack, a red beard, and scars walks the ownerless moors looking for land or peace.",
+    "Red-beard Isak carries the first sack up the long moor road. Worster’s English; the period word Lapp stays named for Sámi herders.",
   "nada-the-lily":
     "You ask for the youth of Umslopogaas — Haggard’s late-Victorian imperial romance, not a substitute for Zulu-authored history.",
   madmen:
@@ -298,7 +298,8 @@ const BLURBS: Record<string, string> = {
     "Undine Spragg wants the next room, the next husband, the next New York.",
   summer: "A New England town, a librarian’s charge, and a season that will not stay innocent.",
   "the-reef": "Wharton in France: desire among people who thought they had already chosen.",
-  "bunner-sisters": "Two shopwomen on a poor New York street, and a kindness that ruins them.",
+  "bunner-sisters":
+    "A Stuyvesant Square basement shop, blotchy gold on a black sign, and horse-car pace.",
   xingu: "A ladies’ lunch where culture is a weapon and nobody has read the book.",
   "the-touchstone": "A man sells a dead woman’s letters and then has to live with the cash.",
   "madame-de-treymes": "An American in Paris learns the French family’s rules are not a romance.",
@@ -718,7 +719,8 @@ const BLURBS: Record<string, string> = {
   "for-the-term-of-his-natural-life":
     "A transported man in Van Diemen’s Land, and a sentence that is the country.",
   "the-man-from-snowy-river": "Paterson’s bush ballads: a ride, a horse, a legend already moving.",
-  "the-purple-land": "Hudson’s Uruguay: an Englishman wandering a country that is not a backdrop.",
+  "the-purple-land":
+    "Three chapters in the story of a life open into the Banda Oriental — guerrilla and gaucho country, soft against Green Mansions.",
   "malay-sketches": "Swettenham’s peninsula: colonial notes that cannot quite own the place.",
   "in-court-and-kampong": "Clifford’s Malay world: court, village, and the Englishman taking dictation.",
   "malay-annals-sejarah-melayu": "The Sejarah Melayu: kings, cities, and the peninsula remembering itself.",

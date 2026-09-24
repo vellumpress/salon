@@ -182,6 +182,16 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * soft against Tropic. Cold-open stays Mirth → Quicksand → Botchan. Tang
  * Poems, The Bronze Horseman, and Inferno (wrong PG) stay HOLD. The Painted
  * Veil pack stays out of this ship.
+ * 4pm Wed 23 Sep 2026 CLEAR — Recommend only, never a new homepage Featured
+ * pin. The Painted Veil leads this cycle’s Next append (shuttered room,
+ * Chapter I, English 1925, PG 64682; it was held and is cleared now). Growth
+ * of the Soil follows (long moor road, red-beard Isak, Worster English, PG
+ * 10984, year 1917). Tropic stays Rituals: Drought only, stop at the tale
+ * boundary, and it keeps its earlier Next seat. Bunner Sisters is For you
+ * (Stuyvesant shop-window, PG 311) and stays on bite-sized. The Purple Land
+ * is the harder Next bar (three-chapters frame, Uruguay, PG 7132), soft
+ * against Green Mansions. Cold-open stays Mirth → Quicksand → Botchan. Tang
+ * Poems, The Bronze Horseman, and Inferno stay HOLD.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -507,6 +517,11 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "cheri",
   "all-quiet-on-the-western-front",
   "the-gadfly",
+  // Mira 4pm Wed 23 Sep CLEAR — Painted Veil leads Next. Never a new Featured pin.
+  // Tropic stays Rituals (earlier Next seat kept). Bunner Sisters is For you.
+  "the-painted-veil",
+  "growth-of-the-soil",
+  "the-purple-land",
 ] as const;
 
 /**

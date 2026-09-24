@@ -49,7 +49,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-awakening":
     "A green and yellow parrot at Grand Isle keeps repeating Allez vous-en. First sit is Chapter I. The whole novel continues; adultery Host-gates later.",
   tropic:
-    "The whistle blew for eleven o'clock. Open Drought — a Barbados quarry at eleven, then the walk home through the marl. Period words for Black workers are already in this stretch; name them if you Host further. The stories continue.",
+    "The whistle blew for eleven o'clock. One tale: Drought — a white hillside quarry, then Coggins Rum, then the walk home through the marl. Stop at the tale boundary. Heat, labor, and racial violence are in the stretch; name them if you Host further, and don’t sanitize.",
   "there-is-confusion":
     "Joanna climbs onto her father’s knee and asks for a story about somebody great. The sit runs through Mammy’s chair and stops before “But alas for poor Joel!” Chapter I continues.",
   buddenbrooks:
@@ -228,11 +228,11 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "diary-of-a-chambermaid":
     `Twelfth place in two years — rainy September, *Figaro* ad, dirty souls, and no interview with Madame.`,
   "the-painted-veil":
-    `Someone tries the door — shuttered room, tight shoes, a kimono, and Walter’s name whispered. Hong Kong / treaty-port China, colonial household language (*amah*, “boys”), then cholera inland. The sit opens on “How shall I get out?” Name the frame if you Host further.`,
+    `Shuttered Hong Kong room after tiffin; someone tries the door; Kitty whispers “Walter.” Colonial household language (*amah*, “boys”) stays, and the sit opens on “How shall I get out?” The closed sit is Chapter I only — adultery and colonial heat; Host may name them, and don’t sanitize.`,
   "the-good-soldier":
     `Nine seasons at Bad Nauheim — intimacy like a good glove, and still they knew nothing.`,
   "growth-of-the-soil":
-    `Who made the road over the moors? A man with a sack, a red beard, and scars — looking for land, or peace. Hamsun’s settler open uses the period word “Lapp” for Sámi herders on the common. Historical voice; Vellum stays on the man with the sack. If you Host further, keep that named for the room.`,
+    `The long moor road north; red-beard Isak with the first sack. The settler open uses the period word “Lapp” for Sámi herders on the common — Worster’s English only. Loneliness and land hunger — Host OK; if you Host further, keep that named for the room.`,
   "of-human-bondage":
     `A club foot, a medical student, and a love that humiliates on purpose. Skip the title matter and open Chapter I on the gray morning — Wake up, Philip — and keep the first sit to that chapter only. Sit with that weather before the first breath.`,
   "green-mansions":
@@ -252,7 +252,9 @@ export const RITUAL_PITCHES: Record<string, string> = {
   thais:
     `Part First — The Lotus. Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond. Desire and conversion irony intensify after this atlas-like open; warn the room if you Host into Paphnutius / Thaïs.`,
   "bunner-sisters":
-    `Near Stuyvesant Square, on a side street already sliding toward shabbiness, two sisters keep a tiny basement shop whose fame is purely local. The window is small; the sign is blotchy gold on black. Edith Wharton’s 1916 novella begins at street level—horse-cars, lunchrooms, and a carefully stretched living—before anything outside has finished changing.`,
+    `Stuyvesant Square side-street; a basement shop; blotchy gold on a black sign; horse-car pace. Poverty and manners without ballroom gloss — Host OK. The sit stays on Part I.`,
+  "the-purple-land":
+    `“Three chapters in the story of my life…” opens the frame into the Banda Oriental. Soft against Green Mansions. Guerrilla and gaucho country — Host OK.`,
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
   "brazilian-tales":
@@ -312,6 +314,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "hadji-murad",
       "anandamath",
       "thais",
+      "bunner-sisters",
       "generosity",
     ],
   },
@@ -338,6 +341,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "jamaica-anansi-stories",
       "african-tragedy",
       "brazilian-tales",
+      "tropic",
     ],
   },
   {
@@ -691,6 +695,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "all-quiet-on-the-western-front",
       "the-gadfly",
       "brazilian-tales",
+      "the-painted-veil",
+      "growth-of-the-soil",
+      "tropic",
+      "bunner-sisters",
+      "the-purple-land",
     ],
   },
   {
@@ -725,6 +734,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "kwaidan-stories-and-studies-of-strange-things",
       "thais",
       "brazilian-tales",
+      "tropic",
+      "bunner-sisters",
     ],
   },
   {
@@ -766,6 +777,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "cheri",
       "all-quiet-on-the-western-front",
       "the-gadfly",
+      "the-painted-veil",
+      "growth-of-the-soil",
+      "the-purple-land",
     ],
   },
   {
@@ -806,6 +820,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "cheri",
       "all-quiet-on-the-western-front",
       "the-gadfly",
+      "the-painted-veil",
+      "growth-of-the-soil",
+      "the-purple-land",
     ],
   },
   {
@@ -888,6 +905,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-awakening": 5,
   "a-few-figs-from-thistles": 5,
   tropic: 5,
+  "the-purple-land": 2,
   "there-is-confusion": 5,
   buddenbrooks: 5,
   "miss-lulu-bett": 5,
