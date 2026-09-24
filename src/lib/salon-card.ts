@@ -95,7 +95,7 @@ export function paintSalonCard(
   ctx.fillStyle = fill === "yellow" || fill === "paper" ? INK : PAPER;
   ctx.font = '500 28px "Outfit", ui-sans-serif, sans-serif';
   ctx.textBaseline = "middle";
-  ctx.fillText(APP_NAME.toUpperCase(), inset, rule + 48);
+  ctx.fillText(APP_NAME, inset, rule + 48);
 
   ctx.fillStyle = INK;
   ctx.fillRect(rule, rule + 96, width - rule * 2, rule);

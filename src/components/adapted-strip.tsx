@@ -3,7 +3,7 @@ import { ADAPTED_WORKS } from "@/lib/catalog/full-pdf";
 import { APP_NAME } from "@/lib/site";
 
 /**
- * Homepage Adapted by Vellum entry — a compact gateway, not a remake carousel.
+ * Homepage Adapted by tbr entry — a compact gateway, not a remake carousel.
  * Remakes stay off the locked recommend / Next / classics Works strip.
  * The full list lives at /adapted. Rituals still lists remakes in their lanes.
  */
@@ -20,7 +20,9 @@ export function AdaptedStrip() {
       aria-label={`Adapted by ${APP_NAME} — ${sits}. Open the remake lane.`}
     >
       <span className="adapted-copy">
-        <span className="adapted-kicker type-kicker">Adapted by {APP_NAME}</span>
+        <span className="adapted-kicker type-kicker">
+          Adapted by <span className="product-name">{APP_NAME}</span>
+        </span>
         <span className="adapted-pitch type-kicker">
           {APP_NAME} remakes of older pages · {sits}
         </span>

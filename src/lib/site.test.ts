@@ -1,7 +1,10 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { readFileSync } from "node:fs";
 import {
   APP_BASE_PATH,
+  APP_DESCRIPTION,
+  APP_NAME,
   publicUrl,
   salonShareText,
   salonShareTitle,
@@ -33,9 +36,16 @@ test("publicUrl is origin + Pages base when window is present", () => {
   }
 });
 
-test("share copy keeps Vellum on the title and the body", () => {
-  assert.equal(salonShareTitle("Passing"), "Passing · Vellum");
-  assert.equal(salonShareTitle("Vellum"), "Vellum");
-  assert.match(salonShareText("The envelope is still unopened."), /Vellum/);
+test("share copy keeps tbr lowercase on the title and the body", () => {
+  assert.equal(APP_NAME, "tbr");
+  assert.equal(APP_NAME, APP_NAME.toLowerCase());
+  assert.equal(salonShareTitle("Passing"), "Passing · tbr");
+  assert.equal(salonShareTitle("tbr"), "tbr");
+  assert.match(salonShareText("The envelope is still unopened."), /tbr/);
+  assert.doesNotMatch(salonShareText("The envelope is still unopened."), /TBR|Vellum|Salon/);
   assert.match(salonShareText("The envelope is still unopened."), /envelope/);
+  const site = JSON.parse(readFileSync(new URL("./og/site.json", import.meta.url), "utf8"));
+  assert.equal(site.title, APP_NAME);
+  assert.equal(site.description, APP_DESCRIPTION);
+  assert.match(APP_DESCRIPTION, /^tbr\./);
 });
