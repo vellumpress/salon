@@ -127,7 +127,7 @@ export const SHELF: ShelfWork[] = [
     opening: "At last the minister stood in the pulpit.",
     breaths: 3122,
     intro:
-      "At last the priest is in the pulpit — marble-handsome — and the parish remembers him reeling out of the inn.",
+      "The long lake, the mist, and the Värmland plains come before Gösta enters — Flach’s English, soft against Growth of the Soil. At last the priest is in the pulpit, and the parish remembers him reeling out of the inn.",
   },
   { id: "wallpaper", title: "The Yellow Wallpaper", author: "Charlotte Perkins Gilman", year: 1892, form: "other", language: "English", minutes: 49, local: true, opening: "It is very seldom that mere ordinary people like John and myself secure ancestral halls for the summer.", breaths: 390, gutenberg: 1952 },
   { id: "bontshe", title: "Bontshe the Silent and Other Stories", author: "I. L. Peretz", year: 1894, form: "stories", language: "Yiddish", minutes: 80 },
@@ -324,7 +324,7 @@ export const SHELF: ShelfWork[] = [
     intro:
       "Cheeks burning — D-503 will straighten the wild curve into the wisest of lines, and call the record *We*.",
   },
-  { id: "bread-givers", title: "Bread Givers", author: "Anzia Yezierska", year: 1925, form: "novel", language: "English", minutes: 674, local: true, opening: "I had just begun to peel the potatoes for dinner when my oldest sister Bessie came in, her eyes far away and very tired.", breaths: 5388 },
+  { id: "bread-givers", title: "Bread Givers", author: "Anzia Yezierska", year: 1925, form: "novel", language: "English", minutes: 674, local: true, opening: "I had just begun to peel the potatoes for dinner when my oldest sister Bessie came in, her eyes far away and very tired.", breaths: 5388, intro: "Potato peel; Bessie home without work; rent hollering. Soft against Bunner Sisters. Poverty and an Old World father — Host OK." },
   { id: "manhattan", title: "Manhattan Transfer", author: "John Dos Passos", year: 1925, form: "novel", language: "English", minutes: 733, local: true, opening: "Three gulls wheel above the broken boxes, orangerinds, spoiled cabbage heads that heave between the splintered plank walls.", breaths: 11765, gutenberg: 71853 },
   { id: "dalloway", title: "Mrs Dalloway", author: "Virginia Woolf", year: 1925, form: "novel", language: "English", local: true, opening: "Mrs. Dalloway said she would buy the flowers herself.", breaths: 3342, minutes: 418, gutenberg: 71865 },
   { id: "rangbhoomi", title: "Rangbhoomi", author: "Premchand", year: 1925, form: "novel", language: "Hindi", minutes: 160 },
@@ -670,7 +670,7 @@ export const SHELF: ShelfWork[] = [
       "On the last of October Don Santiago de los Santos, popularly known as Capitan Tiago, gave a dinner.",
     breaths: 8108,
     intro:
-      "Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.",
+      "Capitan Tiago announces a dinner at the last minute in Binondo and the Walled City. The closed sit is Chapter I only — colonial friar power; Host may name it, and don’t sanitize.",
   },
   { id: "the-social-cancer-noli-me-tangere", title: "The Social Cancer (Noli Me Tangere)", author: "José Rizal", year: 1887, form: "novel", language: "Spanish", minutes: 160, gutenberg: 20228 },
   { id: "the-woodlanders", title: "The Woodlanders", author: "Thomas Hardy", year: 1887, form: "novel", language: "English", local: true, opening: "The rambler who, for old association or other reasons, should trace the forsaken coach-road running almost in a meridional line from Bristol to the south shore ", breaths: 6859, minutes: 857, gutenberg: 482 },
@@ -1421,7 +1421,7 @@ export const SHELF: ShelfWork[] = [
       `I have longed to make the acquaintance of a "modern girl," that proud, independent girl who has all my sympathy!`,
     breaths: 1484,
     intro:
-      "Kartini writes from colonial Java in 1899, hungry for the “modern girl” of Europe while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. The Rituals sit is the cloistered-arms beat; if you Host further letters, name that colonial frame for the room first.",
+      "Kartini writes from colonial Java in 1899, hungry for the modern girl while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. The Rituals sit is Letter I, the cloistered-arms beat; if you Host further, name that colonial frame for the room first.",
   },
   { id: "potterism", title: "Potterism", author: "Rose Macaulay", year: 1920, form: "novel", language: "English", minutes: 592, local: true, opening: "Johnny and Jane Potter, being twins, went through Oxford together.", breaths: 4733, gutenberg: 11163 },
   { id: "smoke-and-steel", title: "Smoke and Steel", author: "Carl Sandburg", year: 1920, form: "poem", language: "English", minutes: 361, local: true, opening: "SMOKE of the fields in spring is one,", breaths: 2064, intro: "Smoke of the fields in spring is one." },
@@ -2754,7 +2754,7 @@ export const SHELF: ShelfWork[] = [
   },
   { id: "a-diversity-of-creatures", title: "A Diversity of Creatures", author: "Rudyard Kipling", year: 1917, form: "stories", language: "English", minutes: 160, local: true, opening: "With two exceptions, the dates at the head of these stories show when they were published in magazine form. 'The Village that Voted the Earth was Flat,' and 'My Son's Wife' carry", breaths: 2807, gutenberg: 13085 },
   { id: "an-american-tragedy", title: "An American Tragedy", author: "Theodore Dreiser", year: 1925, form: "novel", language: "English", minutes: 160, local: true, opening: "Dusk--of a summer night.", breaths: 2156, gutenberg: 75181 },
-  { id: "bertha-garlan", title: "Bertha Garlan", author: "Arthur Schnitzler", year: 1901, form: "novel", language: "English", minutes: 742, local: true, gutenberg: 9955, opening: "She was walking slowly down the hill; not by the broad high road which wound its way towards the town, but by the narrow footpath between the trellises of the v", breaths: 1269, intro: "Open Chapter I as she walks slowly down the hill." },
+  { id: "bertha-garlan", title: "Bertha Garlan", author: "Arthur Schnitzler", year: 1901, form: "novel", language: "English", minutes: 742, local: true, gutenberg: 9955, opening: "She was walking slowly down the hill; not by the broad high road which wound its way towards the town, but by the narrow footpath between the trellises of the v", breaths: 1269, intro: "She takes the vine-path hillside with the boy, straw hat, near six o’clock. Widow desire — Host OK. No translator is named on this sit." },
   { id: "born-in-exile", title: "Born in Exile", author: "George Gissing", year: 1892, form: "novel", language: "English", minutes: 160, local: true, opening: "The summer day in 1874 which closed the annual session of Whitelaw College was marked by a special ceremony, preceding the wonted distribution of academic rewards. At eleven in", breaths: 3776, gutenberg: 4526 },
   { id: "calvary", title: "Calvary", author: "Octave Mirbeau (trans. Louis Rich)", year: 1886, form: "novel", language: "English", minutes: 160, local: true, opening: "I was born one evening in October at Saint-Michel-les-Hêtres, a small town in the department of Orne, and I was immediately christened by the name of Jean-François-Marie-Mintié.", breaths: 1342, gutenberg: 48773 },
   { id: "charmides-and-other-poems", title: "Charmides, and Other Poems", author: "Oscar Wilde", year: 1881, form: "poem", language: "English", minutes: 54, local: true, opening: "*This volume was first published in 1913*", breaths: 191, gutenberg: 1031 },

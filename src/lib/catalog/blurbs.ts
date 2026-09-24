@@ -21,7 +21,7 @@ const BLURBS: Record<string, string> = {
   demian:
     "Two worlds pass through a little-town Latin school — clean clothes and Christmas on one pole, secrecy on the other.",
   "the-story-of-gosta-berling":
-    "At last the priest is in the pulpit — marble-handsome — and the parish remembers him reeling out of the inn.",
+    "The long lake and the Värmland mist come before Gösta; the priest is later in the pulpit.",
   thais:
     "Part First — The Lotus opens on Nile hermits in clay huts, before the turn toward Paphnutius and Alexandria.",
   manhattan: "Dos Passos cuts New York as montage: arrivals, ads, and lives slicing across each other.",
@@ -44,7 +44,7 @@ const BLURBS: Record<string, string> = {
   "high-wind-jamaica":
     "After Emancipation, Derby Hill is swallowed by bush until a rank plant holds the front door open.",
   "noli-me-tangere":
-    "Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.",
+    "Capitan Tiago announces a dinner in Binondo — Chapter I only, and the friar power is not sanitized.",
   vera:
     "Cornwall noon heat at a garden gate: a daughter who has lost everything—and feels nothing yet.",
   "on-a-chinese-screen":
@@ -64,7 +64,7 @@ const BLURBS: Record<string, string> = {
   "the-immoralist":
     "Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for.",
   "letters-of-a-javanese-princess":
-    "She wants the modern girl — free, warm, working for more than herself — and names the arms that still hold her.",
+    "Letter I only: the modern girl, and the cloistered arms that still hold her.",
   "blood-and-sand":
     "Fight-day breakfast: meat, black coffee, a huge cigar — and a dining room that treats the matador like family glory.",
   ecstasy:
@@ -204,7 +204,7 @@ const BLURBS: Record<string, string> = {
     "A dog barks in the sierra and Demetrio is told to hide from the soldiers.",
   rur: "A factory makes artificial workers; the workers decide they are the future.",
   "bread-givers":
-    "A Hester Street daughter fights a father, a language, and the right to own her own name.",
+    "Potato peel and Bessie home without work — soft against Bunner Sisters.",
   dalloway:
     "One London day: Clarissa buys the flowers herself and walks the city awake.",
   orlando:

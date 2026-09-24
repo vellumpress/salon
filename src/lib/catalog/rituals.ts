@@ -176,7 +176,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "high-wind-jamaica":
     `This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant. Hughes’s 1929 voice already uses period racial language in this stretch, and a sharper racial gaze continues immediately after Vellum’s stop. We end at the plant on purpose so the timed sit stays bounded; if you Host further into the chapter, warn the room first. Flag — do not sanitize mid-bind.`,
   "noli-me-tangere":
-    `Capitan Tiago announces a dinner at the last minute—and all of Binondo, the Walled City, and Manila’s hangers-on begin polishing shoes and rehearsing intimacy.`,
+    `Capitan Tiago announces a dinner at the last minute in Binondo and the Walled City. The closed sit is Chapter I only — colonial friar power; Host may name it, and don’t sanitize.`,
   vera:
     `Cornwall, noon heat, a garden gate, and a daughter who has lost everything—and feels nothing yet. Same author as Enchanted April, colder register. Wemyss intensifies later; this open stays clean emptiness.`,
   "on-a-chinese-screen":
@@ -216,7 +216,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "casanovas-homecoming":
     `Casanova is in his fifty-third year, circling toward Venice like a wounded bird, and the petitions home have turned humble.`,
   "letters-of-a-javanese-princess":
-    `Kartini writes from colonial Java in 1899, hungry for the “modern girl” of Europe while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. The Rituals sit is the cloistered-arms beat; if you Host further letters, name that colonial frame for the room first.`,
+    `Kartini writes from colonial Java in 1899, hungry for the modern girl while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. The Rituals sit is Letter I, the cloistered-arms beat; if you Host further, name that colonial frame for the room first.`,
   "blood-and-sand":
     `Fight-day breakfast: meat, black coffee, a huge cigar — and a dining room that treats the matador like family glory.`,
   ecstasy:
@@ -248,11 +248,15 @@ export const RITUAL_PITCHES: Record<string, string> = {
   we:
     `Cheeks burning — D-503 will straighten the wild curve into the wisest of lines, and call the record *We*.`,
   "the-story-of-gosta-berling":
-    `At last the priest is in the pulpit — marble-handsome — and the parish remembers him reeling out of the inn.`,
+    `The long lake, the mist, and the Värmland plains come before Gösta enters — Flach’s English, soft against Growth of the Soil. At last the priest is in the pulpit, and the parish remembers him reeling out of the inn.`,
   thais:
     `Part First — The Lotus. Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond. Desire and conversion irony intensify after this atlas-like open; warn the room if you Host into Paphnutius / Thaïs.`,
   "bunner-sisters":
     `Stuyvesant Square side-street; a basement shop; blotchy gold on a black sign; horse-car pace. Poverty and manners without ballroom gloss — Host OK. The sit stays on Part I.`,
+  "bread-givers":
+    `Potato peel; Bessie home without work; rent hollering. Soft against Bunner Sisters. Poverty and an Old World father — Host OK.`,
+  "bertha-garlan":
+    `She takes the vine-path hillside with the boy, straw hat, near six o’clock. Widow desire — Host OK. No translator is named on this sit.`,
   "the-purple-land":
     `“Three chapters in the story of my life…” opens the frame into the Banda Oriental. Soft against Green Mansions. Guerrilla and gaucho country — Host OK.`,
   "lolly-willowes":
@@ -315,6 +319,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "anandamath",
       "thais",
       "bunner-sisters",
+      "bertha-garlan",
       "generosity",
     ],
   },
@@ -342,6 +347,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "african-tragedy",
       "brazilian-tales",
       "tropic",
+      "letters-of-a-javanese-princess",
     ],
   },
   {
@@ -700,6 +706,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "tropic",
       "bunner-sisters",
       "the-purple-land",
+      "bread-givers",
+      "the-story-of-gosta-berling",
+      "bertha-garlan",
+      "letters-of-a-javanese-princess",
     ],
   },
   {
@@ -736,6 +746,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "brazilian-tales",
       "tropic",
       "bunner-sisters",
+      "bertha-garlan",
+      "letters-of-a-javanese-princess",
     ],
   },
   {
@@ -780,6 +792,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-painted-veil",
       "growth-of-the-soil",
       "the-purple-land",
+      "noli-me-tangere",
+      "bread-givers",
+      "the-story-of-gosta-berling",
     ],
   },
   {
@@ -823,6 +838,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-painted-veil",
       "growth-of-the-soil",
       "the-purple-land",
+      "noli-me-tangere",
+      "bread-givers",
+      "the-story-of-gosta-berling",
     ],
   },
   {
@@ -844,6 +862,7 @@ export const RITUAL_LANES: RitualLane[] = [
 export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "passing": 5,
   "bunner-sisters": 5,
+  "bread-givers": 5,
   "the-weary-blues": 5,
   "kwaidan-stories-and-studies-of-strange-things": 5,
   "the-house-of-mirth": 5,

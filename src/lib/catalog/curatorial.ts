@@ -522,6 +522,13 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-painted-veil",
   "growth-of-the-soil",
   "the-purple-land",
+  // Mira Evening Wed 23 Sep CLEAR — Noli leads Next. Never a new Featured pin.
+  // Noli and Bertha already have earlier Next seats; these are the cycle order.
+  // Stamp id gosta is the non-local Swedish alias. The Flach bind is
+  // the-story-of-gosta-berling. Letters stay Rituals. Bertha Garlan is For you.
+  "noli-me-tangere",
+  "bread-givers",
+  "the-story-of-gosta-berling",
 ] as const;
 
 /**
