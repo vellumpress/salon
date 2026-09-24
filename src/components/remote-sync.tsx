@@ -15,7 +15,7 @@ import {
 } from "@/lib/remote-directory";
 import { normalizeHandle } from "@/lib/social";
 import { getSupabase } from "@/lib/supabase";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 
 /**
  * Best-effort bridge. Local reading stays the source of truth on this phone.
@@ -41,7 +41,7 @@ export function RemoteSync() {
     let cancel = false;
 
     const claimAndFollow = async (refreshActivity: boolean) => {
-      const state = useVellum.getState();
+      const state = useTbr.getState();
       const mine = normalizeHandle(state.handle ?? "");
       const wanted = wantedFollowHandles(mine, state.following ?? [], state.contacts ?? []);
       const signature = `${mine}|${[...wanted].sort().join(",")}`;
@@ -56,11 +56,11 @@ export function RemoteSync() {
         await pushFollows(session.user.id, wanted);
         const pulled = await pullFollows(session.user.id);
         if (cancel) return;
-        const contacts = useVellum.getState().contacts ?? [];
+        const contacts = useTbr.getState().contacts ?? [];
         for (const profile of pulled) {
           if (profile.handle === mine) continue;
           if (contacts.some((row) => row.handle === profile.handle)) continue;
-          useVellum.getState().addContact({ handle: profile.handle, name: profile.name || undefined });
+          useTbr.getState().addContact({ handle: profile.handle, name: profile.name || undefined });
         }
         const previous = seenFollows.current;
         if (previous) {
@@ -78,7 +78,7 @@ export function RemoteSync() {
     const timer = window.setInterval(() => void claimAndFollow(true), 8_000);
     const onFocus = () => void claimAndFollow(true);
     window.addEventListener("focus", onFocus);
-    const unsub = useVellum.subscribe(() => void claimAndFollow(false));
+    const unsub = useTbr.subscribe(() => void claimAndFollow(false));
     return () => {
       cancel = true;
       window.clearInterval(timer);
@@ -99,7 +99,7 @@ export function RemoteSync() {
           const { data } = await getSupabase().auth.getSession();
           const session = data.session;
           if (cancel || !session) return;
-          const state = useVellum.getState();
+          const state = useTbr.getState();
           const drafts = draftsFromLocal({
             handle: state.handle ?? "",
             progress: state.progress,
@@ -121,7 +121,7 @@ export function RemoteSync() {
     };
 
     flush();
-    const unsub = useVellum.subscribe(flush);
+    const unsub = useTbr.subscribe(flush);
     return () => {
       cancel = true;
       window.clearTimeout(timer);
