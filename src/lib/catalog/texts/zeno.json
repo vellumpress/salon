@@ -1,13 +1,20 @@
 {
   "id": "zeno",
-  "title": "Zeno's Conscience",
+  "title": "Confessions of Zeno",
   "author": "Italo Svevo",
   "year": "1923",
-  "note": "Project Gutenberg 79453",
+  "note": "Project Gutenberg 79453 (tr. Beryl De Zoete; PG original publication 1930).",
   "minutes": 160,
   "cover": "",
   "coverAlt": "",
   "scenes": [
+    {
+      "id": "s-last-cigarette",
+      "title": "The Last Cigarette",
+      "place": "The Last Cigarette",
+      "reentry": "When I spoke to the doctor about my weakness for smoking, he told me to begin my analysis by tracing the growth of that habit from the beginning.",
+      "prompt": "A word from this stretch."
+    },
     {
       "id": "s0",
       "title": "The Death of My Father",
@@ -94,6 +101,246 @@
     }
   ],
   "breaths": [
+    {
+      "id": "s-last-cigarette-0",
+      "sceneId": "s-last-cigarette",
+      "text": "When I spoke to the doctor about my weakness for smoking, he told me to begin my analysis by tracing the growth of that habit from the beginning."
+    },
+    {
+      "id": "s-last-cigarette-1",
+      "sceneId": "s-last-cigarette",
+      "text": "“Write away!” he said, “and you will see how soon you begin to get a clear picture of yourself.”"
+    },
+    {
+      "id": "s-last-cigarette-2",
+      "sceneId": "s-last-cigarette",
+      "text": "I think I can write about smoking here, at my table without sitting down to dream in that arm-chair. I don’t know how to begin. I must invoke the aid of all those many cigarettes I have smoked, identical with the one I have in my hand now."
+    },
+    {
+      "id": "s-last-cigarette-3",
+      "sceneId": "s-last-cigarette",
+      "text": "I have just made a discovery. I had quite forgotten that the first cigarettes I ever smoked are no longer on the market. They were made first in 1870 in Austria and were sold in little cardboard boxes stamped with the double-headed eagle. Wait a minute! Suddenly several people begin to collect round one of those boxes; I can distinguish their features and vaguely remember their names, but this unexpected meeting does not move me in any way. I must try and look into it more closely. I will see what the arm-chair can do. No, now they have faded away and changed into ugly, mocking caricatures."
+    },
+    {
+      "id": "s-last-cigarette-4",
+      "sceneId": "s-last-cigarette",
+      "text": "I came back discouraged to the table."
+    },
+    {
+      "id": "s-last-cigarette-5",
+      "sceneId": "s-last-cigarette",
+      "text": "One of the figures was Giuseppe, a youth of about my own age with rather a hoarse voice, and the other was a brother of mine, a year younger than me, who died some years ago. Giuseppe must have been given quite a lot of money by his father, and treated us to some of those cigarettes. But I am positive that he gave my brother more than me, and that I was therefore obliged to try and get hold of some for myself. And that was how I came to steal. In the summer my father used to leave his waistcoat on a chair in the lobby, and in the pocket there was always some change to be found; I took out the coin I needed for buying one of those precious little boxes, and smoked the ten cigarettes it contained one after the other, lest I might be betrayed if I carried about with me such a compromising booty."
+    },
+    {
+      "id": "s-last-cigarette-6",
+      "sceneId": "s-last-cigarette",
+      "text": "All this was lying dormant in my mind and so close at hand. It had never come to life before, because it is only now that I realise its possible significance. So now I have traced my bad habit back to the very beginning and (who knows?) I may be cured already. I will light one last cigarette, just to try, and probably I shall throw it away in disgust."
+    },
+    {
+      "id": "s-last-cigarette-7",
+      "sceneId": "s-last-cigarette",
+      "text": "Now I remember that my father surprised me one day whilst holding his waistcoat in my hand. With a brazenness which I should never have now and which horrifies me even so long after (perhaps this feeling of disgust is going to be very important in my cure), I told him that I had suddenly felt a great curiosity to count the buttons. My father laughed at my mathematical or sartorial bent and never noticed that I had my fingers in his waistcoat pocket. To my credit be it said, his laughing at me like that for being so innocent when I knew I was guilty was quite enough to prevent me ever stealing again. At least, I did steal afterwards, but without realising it. My father used to leave half-smoked Virginia cigars lying about on the edge of a table or of a chest of drawers. I thought it was his way of getting rid of them and I really believed that our old servant Catina used to throw them away. I began smoking them in secret. The very fact of hiding them sent a kind of shudder through me, for I knew how sick they would make me. Then I would smoke them till cold drops of perspiration stood on my forehead and I felt horribly bad inside. No one could say that as a child I lacked determination."
+    },
+    {
+      "id": "s-last-cigarette-8",
+      "sceneId": "s-last-cigarette",
+      "text": "I remember perfectly how my father cured me of that habit too. I had come back one summer’s day from a school excursion, tired and very hot. My mother helped me to undress and then made me lie down in a dressing-gown and try and go to sleep on the sofa where she was sitting sewing. I was very nearly asleep, but my eyes were still full of sunlight and I couldn’t quite get off. The delicious sensation one has at that age, when one is able to rest after being very tired, is so real to me even now that I almost feel as if I were still lying there close to her dear body."
+    },
+    {
+      "id": "s-last-cigarette-9",
+      "sceneId": "s-last-cigarette",
+      "text": "I remember the large airy room where we children used to play and which now, in these days when space is so precious, is divided in two. My brother plays no part in the scene, which surprises me because he must have been on that excursion too and would surely have been resting with me. Was he asleep, perhaps, at the other end of the great sofa? I picture the place, but it seems to be empty. All I see is myself resting there so happily, my mother, and then my father whose words still echo in my ears. He had come in without noticing I was there, for he called out aloud:"
+    },
+    {
+      "id": "s-last-cigarette-10",
+      "sceneId": "s-last-cigarette",
+      "text": "“Maria!”"
+    },
+    {
+      "id": "s-last-cigarette-11",
+      "sceneId": "s-last-cigarette",
+      "text": "My mother made a soft hushing sound and pointed to me, lying as she thought drowned in sleep, but in reality wide awake, and merely afloat upon the ocean of sleep. I was so pleased at my father having to treat me with such consideration that I kept perfectly still."
+    },
+    {
+      "id": "s-last-cigarette-12",
+      "sceneId": "s-last-cigarette",
+      "text": "My father began complaining in a low voice:"
+    },
+    {
+      "id": "s-last-cigarette-13",
+      "sceneId": "s-last-cigarette",
+      "text": "“I really think I must be going mad. I am almost sure I left half a cigar lying on that chest half an hour ago, and now I can’t find it. I must be ill. I can’t remember anything.”"
+    },
+    {
+      "id": "s-last-cigarette-14",
+      "sceneId": "s-last-cigarette",
+      "text": "Only my mother’s fear of waking me prevented her from laughing. She answered in the same low voice:"
+    },
+    {
+      "id": "s-last-cigarette-15",
+      "sceneId": "s-last-cigarette",
+      "text": "“But no one has been into this room since luncheon.”"
+    },
+    {
+      "id": "s-last-cigarette-16",
+      "sceneId": "s-last-cigarette",
+      "text": "My father muttered:"
+    },
+    {
+      "id": "s-last-cigarette-17",
+      "sceneId": "s-last-cigarette",
+      "text": "“I know that. And that is just why I think I am going mad.”"
+    },
+    {
+      "id": "s-last-cigarette-18",
+      "sceneId": "s-last-cigarette",
+      "text": "He turned on his heel and went out."
+    },
+    {
+      "id": "s-last-cigarette-19",
+      "sceneId": "s-last-cigarette",
+      "text": "I half opened my eyes and looked at my mother. She had settled down again to her work, and she still had a smile on her face. She would surely not have smiled like that at my father’s fears if she believed he was really going mad. Her smile made such a deep impression on me that I immediately recognised it when I saw it one day long afterwards on my wife’s lips."
+    },
+    {
+      "id": "s-last-cigarette-20",
+      "sceneId": "s-last-cigarette",
+      "text": "Later on, lack of money was no obstacle to my satisfying my craving, but any prohibition sufficed to excite it."
+    },
+    {
+      "id": "s-last-cigarette-21",
+      "sceneId": "s-last-cigarette",
+      "text": "I smoked continually, hidden in all sorts of secret places. I particularly remember one half-hour spent in a dark cellar, because I was so terribly unwell afterwards. I was with two other boys, but the only thing I remember about them is the childish clothes they wore: two pairs of short knickers which I see standing up quite solidly as if the limbs which once filled them had not been dissolved by time. We had a great many cigarettes and we wanted to see who could smoke most in the shortest time. I won, and stoically hid the physical distress this strange experiment caused me. Afterwards we went out into the sunshine again. I had to shut my eyes or I should have fainted on the spot. By degrees I recovered and boasted of my victory. Then one of the boys said:"
+    },
+    {
+      "id": "s-last-cigarette-22",
+      "sceneId": "s-last-cigarette",
+      "text": "“I don’t care about losing. I only smoke so long as I enjoy it.”"
+    },
+    {
+      "id": "s-last-cigarette-23",
+      "sceneId": "s-last-cigarette",
+      "text": "I remember his sensible words, but have quite forgotten the boy’s face, though it was probably turned towards me while he spoke them."
+    },
+    {
+      "id": "s-last-cigarette-24",
+      "sceneId": "s-last-cigarette",
+      "text": "But at that time I didn’t know whether I liked or hated the taste of cigarettes and the condition produced by nicotine. When I discovered that I really hated it all, it was much worse. That was when I was about twenty. For several weeks I suffered from a violent sore throat accompanied by fever. The doctor ordered me to stay in bed and to give up smoking entirely. I remember being struck by that word *entirely* which the fever made more vivid. I saw a great void, and no means of resisting the fearful oppression which emptiness always produces."
+    },
+    {
+      "id": "s-last-cigarette-25",
+      "sceneId": "s-last-cigarette",
+      "text": "When the doctor had left, my father, who was smoking a cigar, stayed on a little while to keep me company (my mother had already been dead some years). As he was going away he passed his hand gently over my feverish brow and said:"
+    },
+    {
+      "id": "s-last-cigarette-26",
+      "sceneId": "s-last-cigarette",
+      "text": "“No more smoking, mind!”"
+    },
+    {
+      "id": "s-last-cigarette-27",
+      "sceneId": "s-last-cigarette",
+      "text": "I was in a state of fearful agitation. I thought: “As it’s so bad for me I won’t smoke any more, but I must first have just one last smoke.” I lit a cigarette and at once all my excitement died down, though the fever seemed to get worse, and with every puff at the cigarette my tonsils burned as if a firebrand had touched them. I smoked my cigarette solemnly to the end as if I were fulfilling a vow. And though it caused me agony I smoked many more during that illness. My father would come and go, always with a cigar in his mouth, and say from time to time:"
+    },
+    {
+      "id": "s-last-cigarette-28",
+      "sceneId": "s-last-cigarette",
+      "text": "“Bravo! A few days more of no smoking and you will be cured!”"
+    },
+    {
+      "id": "s-last-cigarette-29",
+      "sceneId": "s-last-cigarette",
+      "text": "It only needed that phrase to make me long for him to get out of the room instantly so that I might begin smoking again at once. I would pretend to be asleep in order to get rid of him quicker."
+    },
+    {
+      "id": "s-last-cigarette-30",
+      "sceneId": "s-last-cigarette",
+      "text": "This illness was the direct cause of my second trouble: the trouble I took trying to rid myself of the first. My days became filled with cigarettes and resolutions to give up smoking, and, to make a clean sweep of it, that is more or less what they are still. The dance of the last cigarette which began when I was twenty has not reached its last figure yet. My resolutions are less drastic and, as I grow older, I become more indulgent to my weaknesses. When one is old one can afford to smile at life and all it contains. I may as well say that for some time past I have been smoking a great many cigarettes and have given up calling them the last."
+    },
+    {
+      "id": "s-last-cigarette-31",
+      "sceneId": "s-last-cigarette",
+      "text": "I find the following entry on the front page of a dictionary, beautifully written and adorned with a good many flourishes:"
+    },
+    {
+      "id": "s-last-cigarette-32",
+      "sceneId": "s-last-cigarette",
+      "text": "2 February, 1886. To-day I finish my law studies and take up chemistry. Last cigarette!!"
+    },
+    {
+      "id": "s-last-cigarette-33",
+      "sceneId": "s-last-cigarette",
+      "text": "That was a very important last cigarette. I remember by what hopes it was attended. I was irritated by Canon Law, which seemed to me so remote from life, and I fled to science in the hope of finding life itself, though imprisoned in a retort. That last cigarette was the emblem of my desire for activity (even manual) and for calm, clear, sober thought."
+    },
+    {
+      "id": "s-last-cigarette-34",
+      "sceneId": "s-last-cigarette",
+      "text": "But when I could no longer accept all the endless combinations of carbonic acid gas I went back to Law. That was a mistake, alas, and that too had to be celebrated by a last cigarette. I have come across the date on the cover of a book. That was an important one too, and I applied myself, with the utmost ardour, to the intricate problems of “mine” and “thine,” and shook off for ever the series of carbon combinations. I had proved myself unsuited to chemistry because of my lack of manual skill. How was it possible for me to have any when I went on smoking like a Turk?"
+    },
+    {
+      "id": "s-last-cigarette-35",
+      "sceneId": "s-last-cigarette",
+      "text": "While I sit here analysing myself a sudden doubt assails me: did I really love cigarettes so much because I was able to throw all the responsibility for my own incompetence on them? Who knows whether, if I had given up smoking, I should really have become the strong perfect man I imagined? Perhaps it was this very doubt which bound me to my vice, because life is so much pleasanter if one is able to believe in one’s own latent greatness. I only put this forward as a possible explanation of my youthful weakness, but without any very great conviction."
+    },
+    {
+      "id": "s-last-cigarette-36",
+      "sceneId": "s-last-cigarette",
+      "text": "Now that I am old and no one expects anything of me, I continue to pass from cigarette to resolution and back again. What is the point of such resolutions to-day? Perhaps I am like that aged dyspeptic in Goldoni, who wanted to die healthy after having been ill all his life!"
+    },
+    {
+      "id": "s-last-cigarette-37",
+      "sceneId": "s-last-cigarette",
+      "text": "Once when I was a student I changed my lodgings, and had to have the walls of my room repapered at my own expense, because I had covered them with dates. Probably I left that room just because it had become the tomb of my good resolutions, and I felt it impossible to form any fresh ones there."
+    },
+    {
+      "id": "s-last-cigarette-38",
+      "sceneId": "s-last-cigarette",
+      "text": "I am sure a cigarette has a more poignant flavour when it is the last. The others have their own special taste too, peculiar to them, but it is less poignant. The last has an aroma all its own, bestowed by a sense of victory over oneself and the sure hope of health and strength in the immediate future. The others are important too, as an assertion of one’s own freedom, and when one lights them one still has a vision of that future of health and beauty, though it has moved a little farther off."
+    },
+    {
+      "id": "s-last-cigarette-39",
+      "sceneId": "s-last-cigarette",
+      "text": "The dates on my walls displayed every variety of colour and I had painted some of them in oils. The latest resolution, renewed in the most ingenuous good faith, found appropriate expression in the violence of its colours which aimed at making those of the preceding one pale before it. I had a partiality for certain dates because their figures went well together. I remember one of last century which seemed as if it must be the final monument to my vice: “Ninth day of the ninth month, in the year 1899.” Surely a most significant date! The new century furnished me with other dates equally harmonious, though in a different way. “First day of the first month in the year 1901.” Even to-day I feel that if only that date could repeat itself I should be able to begin a new life."
+    },
+    {
+      "id": "s-last-cigarette-40",
+      "sceneId": "s-last-cigarette",
+      "text": "But there is no lack of dates in the calendar, and with a little imagination each of them might be adapted to a good resolution. I remember the following, for instance, because it seemed to me to contain an undeniable categorical imperative: “Third day of the sixth month, in the year 1912, at 24 o’clock.” It sounds as if each number doubled the one before."
+    },
+    {
+      "id": "s-last-cigarette-41",
+      "sceneId": "s-last-cigarette",
+      "text": "The year 1913 gave me a moment’s pause. The thirteenth month, which ought to have matched the year, was missing. But of course such exact mathematical correspondence is hardly necessary to set off a last cigarette. Some dates which I have put down in books or on the backs of favourite pictures arrest one’s attention by their very inconsequence. For example, the third day of the second month of the year 1905 at six o’clock! It has its own rhythm, if you come to think of it, for each figure in turn contradicts the one that went before. Many events too, in fact all from the death of Pius IX to the birth of my son, I thought deserved to be celebrated by the customary iron resolution. All my family marvel at my memory for anniversaries, grave or gay, and they attribute it to my nice sympathetic nature!"
+    },
+    {
+      "id": "s-last-cigarette-42",
+      "sceneId": "s-last-cigarette",
+      "text": "In order to make it seem a little less foolish I tried to give a philosophic content to the malady of “the last cigarette.” You strike a noble attitude, and say: “Never again!” But what becomes of the attitude if you keep your word? You can only preserve it if you keep on renewing your resolution. And then Time, for me, is not that unimaginable thing which never stops. For me, but only for me, it comes again."
+    },
+    {
+      "id": "s-last-cigarette-43",
+      "sceneId": "s-last-cigarette",
+      "text": "Ill-health is a conviction, and I was born with that conviction. I should not remember much about the illness I had when I was twenty if I had not described it to a doctor at the time. It is curious how much easier it is to remember what one has put into words, than feelings which never vibrated on the air."
+    },
+    {
+      "id": "s-last-cigarette-44",
+      "sceneId": "s-last-cigarette",
+      "text": "I went to that doctor because I had been told that he cured nervous diseases by electricity. I thought I might derive from electricity the strength necessary to give up smoking."
+    },
+    {
+      "id": "s-last-cigarette-45",
+      "sceneId": "s-last-cigarette",
+      "text": "The doctor was a stout man and his asthmatic breathing accompanied the clicking of the electrical machine which he set in motion at my very first visit. This was rather a disappointment, for I thought the doctor would make an examination of me and discover what poison it was which was polluting my blood. But he only said that my constitution was sound, and that since I complained of bad digestion and sleeplessness he supposed my stomach lacked acids and that the peristaltic action was weak; he repeated that word so many times that I have never forgotten it. He prescribed me an acid which ruined my inside, for I have suffered ever since from over-acidity."
+    },
+    {
+      "id": "s-last-cigarette-46",
+      "sceneId": "s-last-cigarette",
+      "text": "When I saw that he would never discover the nicotine in my blood himself, I thought I would help him, and suggested that my ill-health was probably due to that. He shrugged his great shoulders wearily:"
+    },
+    {
+      "id": "s-last-cigarette-47",
+      "sceneId": "s-last-cigarette",
+      "text": "“Peristaltic action--acid. It has nothing to do with nicotine!”"
+    },
     {
       "id": "s0-0",
       "sceneId": "s0",

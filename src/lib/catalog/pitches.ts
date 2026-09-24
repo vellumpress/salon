@@ -1,7 +1,15 @@
 /** Synopsis-style pitches for the reader threshold (hand-curated). */
 export const PITCHES: Record<string, string> = {
   basilio:
-    "Mary Jane Serrano’s Dragon’s Teeth (Ticknor, Boston, 1889) — the only ≤1930 English of O Primo Basílio. A bowdlerized Victorian cut, not Campbell 1953 or Jull Costa. Sit with it as Dragon’s Teeth, not as modern Cousin Basilio.",
+    "Lisbon breakfast, the cuckoo-clock strikes eleven, and Luiza reads that Cousin Bazilio is coming home. Serrano’s 1889 English, PG 74442, is abridged and bowdlerized. Adultery and household power; Host OK. Sit with it as Dragon’s Teeth.",
+  oblomov:
+    "Oblomov in bed on Gorokhovaya Street with a dreaded letter from his estate. Hogarth’s English, PG 54700, abridged. Serf-era master and servant (Zakhar, *barin*) and period class language; Host note, don’t sanitize.",
+  "the-lady-with-the-dog-and-other-stories":
+    "Gurov at Yalta sees the lady in the *béret*. Title story only, Chapter I per sit — Garnett’s English, PG 13415. Gurov’s contempt for women (“the lower race”) is period misogyny; Host may name it. Not the same day as the Adapted late-season remake.",
+  zeno:
+    "Zeno’s first cigarettes and the last-cigarette habit, in Trieste. De Zoete’s English; PG 79453 gives the original publication as 1930. Comic self-deception; Host OK.",
+  "the-book-of-khalid":
+    "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony; Host note, don’t sanitize.",
   vengeance:
     "Sholem Asch’s Yiddish theater of desire and shame: a house of pleasure that wants respectability. The room keeps score while everyone pretends the door is locked.",
   naomi:

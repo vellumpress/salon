@@ -43,6 +43,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue
+  basilio: { label: "Lisbon", region: "pt" },
+  oblomov: { label: "Petersburg", region: "ru" },
+  "the-lady-with-the-dog-and-other-stories": { label: "Yalta", region: "ru" },
+  zeno: { label: "Trieste", region: "it" },
+  "the-book-of-khalid": { label: "Baalbek", region: "lb" },
   "attendants-confession": { label: "Brazil", region: "br" },
   rashomon: { label: "Kyoto / Japan", region: "jp" },
   "high-wind-jamaica": { label: "Jamaica", region: "jm" },

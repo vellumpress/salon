@@ -8,7 +8,7 @@ const MIN_BLURB = 24;
 /** Homepage one-sentence synopses. Overrides pitch/ritual/intro when present. */
 const BLURBS: Record<string, string> = {
   basilio:
-    "Mary Jane Serrano’s 1889 Dragon’s Teeth is the only ≤1930 English of O Primo Basílio — a bowdlerized Victorian cut, not a modern Cousin Basilio.",
+    "Lisbon breakfast: the cuckoo-clock strikes eleven, and Luiza reads that Cousin Bazilio is coming home.",
   vengeance:
     "Asch’s Yiddish theater of desire and shame: a house of pleasure that wants respectability while the room keeps score.",
   naomi:
@@ -739,7 +739,13 @@ const BLURBS: Record<string, string> = {
   "west-african-folk-tales": "One tale: Anansi buys the stories from Nyankupon.",
   "sappho-one-hundred-lyrics": "Carman’s Sappho reconstructions — fragments turned into a book of desire.",
   "a-japanese-nightingale": "Winnifred Eaton’s Japan-set romance, written from a Canadian Chinese life.",
-  "the-book-of-khalid": "Rihani’s New York and Lebanon: a Khalid who will not pick one world.",
+  "the-book-of-khalid":
+    "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid.",
+  oblomov:
+    "Oblomov in bed on Gorokhovaya Street, with a dreaded letter from the estate.",
+  "the-lady-with-the-dog-and-other-stories":
+    "Gurov at Yalta sees the lady in the béret.",
+  zeno: "Zeno’s first cigarettes, and the habit of the last cigarette, in Trieste.",
   "the-red-gods": "Jean d’Esme’s Indochina adventure, imperial heat included.",
   "poems-in-prose": "Baudelaire’s Paris in Symons’ English — spleen, crowds, and the gaslight.",
   "poems-hot-houses-bernard-miall": "Maeterlinck’s hothouse poems, glassed in and breathing strangely.",

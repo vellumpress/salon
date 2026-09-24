@@ -1,9 +1,9 @@
 {
   "id": "the-lady-with-the-dog-and-other-stories",
-  "title": "The Lady with the Dog and Other Stories",
+  "title": "The Lady with the Dog",
   "author": "Anton Chekhov",
   "year": "1899",
-  "note": "Project Gutenberg 13415",
+  "note": "Project Gutenberg 13415 (tr. Constance Garnett). Title story only.",
   "minutes": 80,
   "cover": "",
   "coverAlt": "",
@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "IT was said that a new person had appeared on the sea-front: a lady with a little dog. Dmitri Dmitritch Gurov, who had by then been a fortnight at Yalta, and so was fairly at home there, had begun to take an interest in new arrivals. Sittin",
+      "reentry": "It was said that a new person had appeared on the sea-front: a lady with a little dog. Dmitri Dmitritch Gurov, who had by then been a fortnight at Yalta, and so was fairly at home ",
       "prompt": "A word from this stretch."
     },
     {
@@ -265,7 +265,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "IT was said that a new person had appeared on the sea-front: a lady with a little dog. Dmitri Dmitritch Gurov, who had by then been a fortnight at Yalta, and so was fairly at home there, had begun to take an interest in new arrivals. Sitting in Verney's pavilion, he saw, walking on the sea-front, a fair-haired young lady of medium height, wearing a *béret*; a white Pomeranian dog was running behind her."
+      "text": "It was said that a new person had appeared on the sea-front: a lady with a little dog. Dmitri Dmitritch Gurov, who had by then been a fortnight at Yalta, and so was fairly at home there, had begun to take an interest in new arrivals. Sitting in Verney's pavilion, he saw, walking on the sea-front, a fair-haired young lady of medium height, wearing a *béret*; a white Pomeranian dog was running behind her."
     },
     {
       "id": "s0-1",
