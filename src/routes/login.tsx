@@ -95,16 +95,18 @@ function LoginPage() {
   async function withReaderCreate(input: { handle: string; email: string; password: string }) {
     setBusy("reader");
     setError("");
+    setHold(true);
     try {
       const result = await createAccount(input);
       if (result.confirmEmail || result.notice) {
         setError(result.confirmEmail ? confirmEmailMessage(result.handle) : result.notice);
-        setHold(true);
         setBusy(null);
         return;
       }
+      setHold(false);
       window.location.assign(withBase("/profile"));
     } catch (err) {
+      setHold(false);
       setError(err instanceof Error ? err.message : "Could not create the account");
       setBusy(null);
     }
@@ -113,16 +115,18 @@ function LoginPage() {
   async function withReaderSignIn(input: { email: string; password: string }) {
     setBusy("reader");
     setError("");
+    setHold(true);
     try {
       const result = await signIn(input);
       if (result.confirmEmail || result.notice) {
         setError(result.confirmEmail ? confirmEmailMessage(result.handle) : result.notice);
-        setHold(true);
         setBusy(null);
         return;
       }
+      setHold(false);
       window.location.assign(withBase("/profile"));
     } catch (err) {
+      setHold(false);
       setError(err instanceof Error ? err.message : "Could not sign in");
       setBusy(null);
     }
