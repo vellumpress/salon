@@ -11,7 +11,7 @@ import {
 } from "@/lib/friend-profile";
 import { fillClass, fillInk, planeOf } from "@/lib/mondrian";
 import { streakLine } from "@/lib/reading-stats";
-import { formatHandle } from "@/lib/social";
+import { formatHandle, normalizeHandle } from "@/lib/social";
 import { APP_NAME, publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
 import { isPledgePending } from "@/lib/sit-pledge";
 import { useVellum } from "@/lib/store";
@@ -133,11 +133,30 @@ function FriendProfilePage() {
     setMessage(result === "failed" ? "The link would not copy." : "Profile link ready.");
   }
 
+  async function invite() {
+    const mine = normalizeHandle(handle);
+    if (!mine) {
+      setMessage("Claim an @name first. The invite is your profile.");
+      return;
+    }
+    const result = await shareOrCopy({
+      title: `${formatHandle(mine)} on tbr`,
+      text: `${formatHandle(mine)} invited you to sit on tbr.`,
+      url: publicUrl(friendProfilePath(mine)),
+    });
+    setMessage(result === "failed" ? "The invite would not copy." : "Invite ready.");
+  }
+
   function onFollow() {
     if (!profile || profile.isSelf) return;
     if (profile.following) {
       if (following.includes(profile.id)) toggleFollow(profile.id);
       if (following.includes(profile.handle)) toggleFollow(profile.handle);
+      return;
+    }
+    const known = contacts.some((item) => item.handle === profile.handle);
+    if (known) {
+      if (!following.includes(profile.id)) toggleFollow(profile.id);
       return;
     }
     const result = addContact({ handle: profile.handle, name: profile.name });
@@ -232,10 +251,26 @@ function FriendProfilePage() {
 
       <p className="border-b border-ink px-4 py-3 type-kicker text-muted">Activity</p>
       {activity.length === 0 ? (
-        <p className="border-b border-ink px-4 py-6 font-serif text-lg text-ink/70">
-          No sits, keeps, or tonight-notes
-          {profile.isSelf ? " yet." : " have reached this phone."}
-        </p>
+        <div className="border-b border-ink px-4 py-6">
+          <p className="font-serif text-lg leading-snug text-ink/70">
+            No sits, keeps, or tonight-notes
+            {profile.isSelf ? " yet." : " have reached this phone."}
+          </p>
+          {profile.isSelf ? null : (
+            <>
+              <p className="mt-2 font-serif text-base leading-snug text-ink/70">
+                Their activity appears once you share a sit or invite link with them.
+              </p>
+              <button
+                type="button"
+                onClick={() => void invite()}
+                className="mt-4 inline-flex h-11 items-center border border-ink px-4 font-sans text-sm"
+              >
+                Invite
+              </button>
+            </>
+          )}
+        </div>
       ) : (
         activity.map((item) => (
           <ActivityRow

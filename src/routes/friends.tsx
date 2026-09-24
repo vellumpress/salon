@@ -8,7 +8,15 @@ import {
   type FriendGraph,
   type FriendRow,
 } from "@/lib/friend-profile";
+import { useFollowedAuthors } from "@/lib/followed-authors";
 import { boardKeptLines, friendsFeed, youCard, type BoardKeptLine } from "@/lib/friends";
+import { searchHandles } from "@/lib/handle-search";
+import {
+  booksOnTbrLabel,
+  notableAuthor,
+  notableAuthors,
+  type CatalogAuthor,
+} from "@/lib/notable-authors";
 import {
   encodeHostedSit,
   hostedSitUrl,
@@ -66,8 +74,9 @@ function FriendsPage() {
   const rememberPledge = useVellum((s) => s.rememberPledge);
   const setPledgeStatus = useVellum((s) => s.setPledgeStatus);
   const [draft, setDraft] = useState("");
-  const [find, setFind] = useState("");
+  const [query, setQuery] = useState("");
   const [message, setMessage] = useState("");
+  const followedAuthors = useFollowedAuthors();
   const [pledgeTo, setPledgeTo] = useState("");
   const [pledgeWindow, setPledgeWindow] = useState<EveningWindow>("tonight");
   const kept = useKeptLines(progress, hydrated);
@@ -174,6 +183,16 @@ function FriendsPage() {
     for (const row of rows) map.set(row.handle, row.latest);
     return map;
   }, [rows]);
+  const search = useMemo(() => searchHandles(query, rows), [query, rows]);
+  const authors = useMemo(() => notableAuthors(), []);
+  const followedAuthorCards = useMemo(
+    () =>
+      followedAuthors.slugs.flatMap((slug) => {
+        const author = notableAuthor(slug);
+        return author ? [author] : [];
+      }),
+    [followedAuthors.slugs],
+  );
 
   function claim(event: FormEvent) {
     event.preventDefault();
@@ -187,15 +206,14 @@ function FriendsPage() {
     setMessage(`Sitting as ${formatHandle(result.handle)}.`);
   }
 
-  function connect(event: FormEvent) {
-    event.preventDefault();
-    const result = addContact({ handle: find });
+  function followOffer() {
+    if (!search.offer) return;
+    const result = addContact({ handle: search.offer });
     if (!result.ok) {
       setMessage(result.error);
       return;
     }
-    setFind("");
-    setMessage(`Following ${formatHandle(normalizeHandle(find) || result.id)}.`);
+    setMessage(`Following ${formatHandle(search.offer)}.`);
   }
 
   async function invite() {
@@ -266,6 +284,11 @@ function FriendsPage() {
       if (following.includes(row.handle)) toggleFollow(row.handle);
       return;
     }
+    const known = contacts.some((item) => item.handle === row.handle);
+    if (known) {
+      if (!following.includes(row.id)) toggleFollow(row.id);
+      return;
+    }
     const result = addContact({ handle: row.handle, name: row.name });
     if (!result.ok) setMessage(result.error);
   }
@@ -299,6 +322,49 @@ function FriendsPage() {
           <p className="type-kicker text-muted">On this phone</p>
           <p className="mt-1 type-lede">What friends are reading</p>
         </div>
+
+        {hydrated ? (
+          <section aria-label="Search handles">
+            <label className="flex min-w-0 items-center border-b border-ink">
+              <span className="sr-only">Search @handle</span>
+              <input
+                value={query}
+                onChange={(event) => {
+                  setQuery(event.target.value);
+                  setMessage("");
+                }}
+                placeholder="Search @handle"
+                autoCapitalize="none"
+                autoCorrect="off"
+                spellCheck={false}
+                enterKeyHint="search"
+                className="h-14 min-w-0 flex-1 border-0 bg-transparent px-4 font-serif text-xl text-ink placeholder:text-ink/40 focus-visible:outline-none"
+              />
+            </label>
+            {search.matches.map((row) => (
+              <FriendListRow key={row.handle} row={row} onFollow={() => onFollow(row)} />
+            ))}
+            {search.offer ? (
+              <button
+                type="button"
+                onClick={followOffer}
+                className="flex w-full items-start border-b border-ink px-4 py-4 text-left"
+              >
+                <span className="min-w-0 flex-1">
+                  <span className="block font-serif text-xl leading-tight">
+                    Follow {formatHandle(search.offer)}
+                  </span>
+                  <span className="mt-1 block font-serif text-sm leading-snug text-ink/70">
+                    Their activity appears once you share a sit or invite link with them.
+                  </span>
+                </span>
+              </button>
+            ) : null}
+            {search.message ? (
+              <p className="border-b border-ink px-4 py-3 font-serif text-sm text-ink/70">{search.message}</p>
+            ) : null}
+          </section>
+        ) : null}
 
         {!hydrated ? <div className="min-h-24 border-b border-ink bg-paper" /> : null}
 
@@ -342,12 +408,34 @@ function FriendsPage() {
             {withYou.map((row) => (
               <FriendListRow key={row.handle} row={row} onFollow={() => onFollow(row)} />
             ))}
+            {followedAuthorCards.map((author) => (
+              <AuthorFollowRow
+                key={author.slug}
+                author={author}
+                following
+                onFollow={() => followedAuthors.toggle(author.slug)}
+              />
+            ))}
             {friends.filter((row) => row.following).length === 0 ? (
               <EmptyCopy>
                 No friends on this phone yet. A follow, an invite, or a shared sit is what shows up here.
               </EmptyCopy>
             ) : null}
             <TextButton onClick={() => void invite()}>Invite a friend</TextButton>
+          </section>
+        ) : null}
+
+        {hydrated ? (
+          <section aria-label="Notable people to follow">
+            <SectionTitle>Notable people to follow</SectionTitle>
+            {authors.map((author) => (
+              <AuthorFollowRow
+                key={author.slug}
+                author={author}
+                following={followedAuthors.follows(author.slug)}
+                onFollow={() => followedAuthors.toggle(author.slug)}
+              />
+            ))}
           </section>
         ) : null}
 
@@ -555,36 +643,6 @@ function FriendsPage() {
 
         {hydrated ? (
           <section>
-            <SectionTitle>Follow a name</SectionTitle>
-            <form onSubmit={connect} className="flex items-stretch border-b border-ink">
-              <label className="flex min-w-0 flex-1 items-center">
-                <span className="sr-only">Handle</span>
-                <input
-                  value={find}
-                  onChange={(event) => {
-                    setFind(event.target.value);
-                    setMessage("");
-                  }}
-                  placeholder="@name"
-                  autoCapitalize="none"
-                  autoCorrect="off"
-                  spellCheck={false}
-                  className="h-14 min-w-0 flex-1 border-0 bg-transparent px-4 font-serif text-xl text-ink focus-visible:outline-none"
-                />
-              </label>
-              <button
-                type="submit"
-                className="inline-flex h-14 shrink-0 items-center border-l border-ink px-4 font-sans text-sm text-ink"
-              >
-                Follow
-              </button>
-            </form>
-            <TextButton onClick={() => void invite()}>Share your profile link</TextButton>
-          </section>
-        ) : null}
-
-        {hydrated ? (
-          <section>
             <SectionTitle>Club rooms</SectionTitle>
             {rooms.length === 0 ? (
               <>
@@ -653,6 +711,59 @@ function TextButton({ children, onClick }: { children: string; onClick: () => vo
   );
 }
 
+function AuthorFollowRow({
+  author,
+  following,
+  onFollow,
+}: {
+  author: CatalogAuthor;
+  following: boolean;
+  onFollow: () => void;
+}) {
+  const fill = planeOf(author.slug);
+  const initial = (author.name.slice(0, 1) || "?").toUpperCase();
+  return (
+    <div className="border-b border-ink">
+      <Link
+        to="/friends/author/$slug"
+        params={{ slug: author.slug }}
+        aria-label={`Open ${author.name}`}
+        className="flex min-w-0 items-center gap-3 px-4 py-3"
+      >
+        <span
+          aria-hidden
+          className={cn(
+            "flex size-11 shrink-0 items-center justify-center border border-ink font-sans text-sm",
+            fillClass(fill),
+            fillInk(fill),
+          )}
+        >
+          {initial}
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="block type-kicker text-muted">Author</span>
+          <span className="block truncate font-serif text-xl leading-tight">{author.name}</span>
+          <span className="mt-0.5 block truncate font-serif text-sm text-ink/80">
+            {booksOnTbrLabel(author.books.length)}
+          </span>
+        </span>
+        <span className="shrink-0 font-sans text-sm">Open</span>
+      </Link>
+      <button
+        type="button"
+        onClick={onFollow}
+        aria-pressed={following}
+        className={cn(
+          "flex h-11 w-full items-center border-t border-ink px-4 font-sans text-sm",
+          following ? "bg-ink text-paper" : "bg-paper text-ink",
+        )}
+      >
+        {following ? "Following" : "Follow"}
+      </button>
+    </div>
+  );
+}
+
 function FriendListRow({ row, onFollow }: { row: FriendRow; onFollow: () => void }) {
   const fill = planeOf(row.handle);
   const initial = (row.handle.slice(0, 1) || "?").toUpperCase();
@@ -684,7 +795,7 @@ function FriendListRow({ row, onFollow }: { row: FriendRow; onFollow: () => void
           <span className="block truncate font-serif text-xl leading-tight">{formatHandle(row.handle)}</span>
           <span className="mt-0.5 block truncate font-serif text-sm text-ink/80">{reading}</span>
           <span className="mt-0.5 block truncate type-kicker text-muted">
-            {row.latest || "No activity on this phone yet"}
+            {row.waiting ? "Waiting" : row.latest || "No activity on this phone yet"}
           </span>
         </span>
         <span className="shrink-0 font-sans text-sm">Open</span>

@@ -82,6 +82,8 @@ export type FriendRow = {
   readingTitle: string;
   readingAuthor: string;
   latest: string;
+  /** Followed, and this phone still has no book or activity for them. */
+  waiting: boolean;
 };
 
 /**
@@ -146,16 +148,19 @@ export function listFriends(graph: FriendGraph): FriendRow[] {
   const rows = [...people.values()].map((person) => {
     const profile = friendProfile(person.handle, graph);
     const latest = profile?.activity[0];
+    const following = person.isSelf ? false : isFollowed(person.handle, graph.following);
+    const latestLine = latest ? activityBlurb(latest, now) : "";
     return {
       id: person.id,
       handle: person.handle,
       name: person.name,
       isSelf: person.isSelf,
-      following: person.isSelf ? false : isFollowed(person.handle, graph.following),
+      following,
       place: person.isSelf ? "This device" : "",
       readingTitle: profile?.readingNow?.workTitle ?? "",
       readingAuthor: profile?.readingNow?.author ?? "",
-      latest: latest ? activityBlurb(latest, now) : "",
+      latest: latestLine,
+      waiting: following && !profile?.readingNow && !latestLine,
     };
   });
   rows.sort((a, b) => {
