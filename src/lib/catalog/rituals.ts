@@ -41,7 +41,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "a-few-figs-from-thistles":
     "My candle burns at both ends. This sit is First Fig and Recuerdo — the ferry, the apples, the subway fare — about five minutes. Each poem is its own chapter; the book continues.",
   "a-hero-of-our-time":
-    "Post from Tiflis: a dukhan crowd and a caravan of camels at the foot of Mount Koishaur. Skip the translators’ foreword. Bela densifies later — Host-gate that stretch; the novel continues.",
+    "Travelling post from Tiflis into the Koishaur Valley at sunset — a dukhan crowd and a caravan of camels. Imperial Caucasus violence in Bela; Host may name it, and don’t sanitize. Skip the translators’ foreword; the novel continues.",
   "strange-tales":
     "A Kiang-si gentleman and Mr. Chu step into a monastery and find a painted wall. Skip the Giles introduction. Close when Chu enters the painted apartment; the studio continues.",
   "short-stories-from-the-balkans":
@@ -218,7 +218,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "letters-of-a-javanese-princess":
     `Kartini writes from colonial Java in 1899, hungry for the modern girl while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. The Rituals sit is Letter I, the cloistered-arms beat; if you Host further, name that colonial frame for the room first.`,
   "blood-and-sand":
-    `Fight-day breakfast: meat, black coffee, a huge cigar — and a dining room that treats the matador like family glory.`,
+    `Gallardo’s bullfight-day breakfast: meat, black coffee, a huge cigar, and a dining room that treats the matador like family glory. Bullring gore and animal death are in the book; name them if you Host further, and don’t sanitize.`,
   ecstasy:
     `After dinner on the Scheveningen Road — rosewood, vieux-rose silk, an onyx lamp like a six-petalled flower — and a promise not to wake the boy.`,
   "an-outcast-of-the-islands":
@@ -257,6 +257,12 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Potato peel; Bessie home without work; rent hollering. Soft against Bunner Sisters. Poverty and an Old World father — Host OK.`,
   "bertha-garlan":
     `She takes the vine-path hillside with the boy, straw hat, near six o’clock. Widow desire — Host OK. No translator is named on this sit.`,
+  "after-the-divorce":
+    `A woman weeping in the Porru house’s strangers’ room. Sardinian honor and a wrongful conviction — Host OK.`,
+  "white-nights":
+    `It was a wonderful night — the dreamer’s starry Petersburg. First Night only, and not Notes from Underground.`,
+  "west-african-folk-tales":
+    `Anansi buys the stories from Nyankupon. One tale per sit — How We Got the Name ‘Spider Tales’ — soft against Jamaica Anansi.`,
   "the-purple-land":
     `“Three chapters in the story of my life…” opens the frame into the Banda Oriental. Soft against Green Mansions. Guerrilla and gaucho country — Host OK.`,
   "lolly-willowes":
@@ -348,6 +354,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "brazilian-tales",
       "tropic",
       "letters-of-a-javanese-princess",
+      "white-nights",
+      "west-african-folk-tales",
     ],
   },
   {
@@ -710,6 +718,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-story-of-gosta-berling",
       "bertha-garlan",
       "letters-of-a-javanese-princess",
+      "a-hero-of-our-time",
+      "after-the-divorce",
+      "blood-and-sand",
+      "white-nights",
+      "west-african-folk-tales",
     ],
   },
   {
@@ -748,6 +761,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "bunner-sisters",
       "bertha-garlan",
       "letters-of-a-javanese-princess",
+      "white-nights",
+      "west-african-folk-tales",
     ],
   },
   {
@@ -795,6 +810,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "noli-me-tangere",
       "bread-givers",
       "the-story-of-gosta-berling",
+      "a-hero-of-our-time",
+      "after-the-divorce",
+      "blood-and-sand",
     ],
   },
   {
@@ -841,6 +859,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "noli-me-tangere",
       "bread-givers",
       "the-story-of-gosta-berling",
+      "a-hero-of-our-time",
+      "after-the-divorce",
+      "blood-and-sand",
     ],
   },
   {
@@ -863,6 +884,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "passing": 5,
   "bunner-sisters": 5,
   "bread-givers": 5,
+  "after-the-divorce": 5,
+  "white-nights": 5,
+  "west-african-folk-tales": 5,
   "the-weary-blues": 5,
   "kwaidan-stories-and-studies-of-strange-things": 5,
   "the-house-of-mirth": 5,

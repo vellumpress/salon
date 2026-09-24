@@ -66,7 +66,7 @@ const BLURBS: Record<string, string> = {
   "letters-of-a-javanese-princess":
     "Letter I only: the modern girl, and the cloistered arms that still hold her.",
   "blood-and-sand":
-    "Fight-day breakfast: meat, black coffee, a huge cigar — and a dining room that treats the matador like family glory.",
+    "Gallardo’s bullfight-day breakfast, and the bullring gore is not sanitized.",
   ecstasy:
     "After dinner on the Scheveningen Road: rosewood, an onyx lamp, and a promise not to wake the boy.",
   "an-outcast-of-the-islands":
@@ -394,7 +394,7 @@ const BLURBS: Record<string, string> = {
   "the-family-at-gilje":
     "A Norwegian official’s household where daughters wait on other people’s decisions.",
   "after-the-divorce":
-    "Sardinia after a conviction: a marriage legally ended and still occupying the house.",
+    "A woman weeping in the Porru house’s strangers’ room, after a wrongful conviction.",
   "the-lodger":
     "A London couple take a quiet lodger and begin to wonder about the murders outside.",
   "the-king-in-yellow":
@@ -736,7 +736,7 @@ const BLURBS: Record<string, string> = {
   "hadji-murad":
     "I was returning home by the fields, midsummer, the hay in and the rye just beginning.",
   "south-african-folk-tales": "Honey’s collection of southern African tales, animals arguing like people.",
-  "west-african-folk-tales": "Gold Coast stories of spider, tortoise, and the bargain.",
+  "west-african-folk-tales": "One tale: Anansi buys the stories from Nyankupon.",
   "sappho-one-hundred-lyrics": "Carman’s Sappho reconstructions — fragments turned into a book of desire.",
   "a-japanese-nightingale": "Winnifred Eaton’s Japan-set romance, written from a Canadian Chinese life.",
   "the-book-of-khalid": "Rihani’s New York and Lebanon: a Khalid who will not pick one world.",

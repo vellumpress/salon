@@ -151,7 +151,7 @@ test("Locked recommend, Next, and ritual-lane works all resolve a place with a s
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("where-angels-fear-to-tread"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-gadfly"), true);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("letters-of-a-javanese-princess"), false);
-  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("blood-and-sand"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("blood-and-sand"), true);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("ecstasy"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("an-outcast-of-the-islands"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-underdogs"), false);

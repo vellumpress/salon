@@ -529,6 +529,12 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "noli-me-tangere",
   "bread-givers",
   "the-story-of-gosta-berling",
+  // Mira Thu 8am 24 Sep CLEAR — Hero leads Next. Never a new Featured pin.
+  // Hero already sits on Before sleep and has an earlier Next seat; this is the cycle order.
+  // White Nights and West African Folk-Tales stay Rituals. Birthright stays off.
+  "a-hero-of-our-time",
+  "after-the-divorce",
+  "blood-and-sand",
 ] as const;
 
 /**
