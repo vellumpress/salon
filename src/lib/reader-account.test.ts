@@ -45,20 +45,18 @@ test("createReaderAccount hashes the password and restores a session", async () 
   assert.equal(restored?.email, "mina@vellum.press");
 });
 
-test("handle uniqueness includes catalog readers and other local accounts", async () => {
+test("handle uniqueness is other local accounts, not a demo directory", async () => {
   const first = await createReaderAccount(
     { handle: "mina", email: "mina@vellum.press", password: "sitquietly" },
     emptyVault(),
   );
   assert.equal(first.ok, true);
   if (!first.ok) return;
-  const catalog = await createReaderAccount(
+  const formerDemo = await createReaderAccount(
     { handle: "ada", email: "ada@vellum.press", password: "sitquietly" },
     first.vault,
   );
-  assert.equal(catalog.ok, false);
-  if (catalog.ok) return;
-  assert.equal(catalog.error, "Someone already sits as that name.");
+  assert.equal(formerDemo.ok, true);
   const duplicate = await createReaderAccount(
     { handle: "mina", email: "other@vellum.press", password: "sitquietly" },
     first.vault,

@@ -44,7 +44,7 @@ npm run build:vercel
 - Chamber reader for all **888 local binds** (texts + openings stay in `src/lib/catalog/texts` and `src/lib/catalog/openings`)
 - Progress, favorites, kept breaths — `localStorage` (`vellum-v1`)
 - Continue-reading on Home (header + primary resume cell) from that same local progress
-- Friends: claim an `@username`, follow Vellum readers, see what they are sitting — local-first
+- Friends: claim an `@username`, follow people you actually add, open a profile of the activity this phone has — local-first (`/friends`, and `/friends/mina` which Pages serves as `?/friends/mina`)
 - Reader accounts on **You** (`/profile`) and `/login`: `@username` + email + password. First visit creates; return visits sign in. Session restores after a hard refresh from `localStorage` (`salon-reader-v1`). Password is stored as a PBKDF2 hash, never plaintext. The same `@handle` is shared with Friends so a name is not claimed twice on this phone.
 - Share links that stay on this origin (`/salon/read/…`)
 

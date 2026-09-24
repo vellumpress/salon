@@ -8,7 +8,7 @@ import {
   type FriendContact,
 } from "./friends.ts";
 import { handlesInVault } from "./reader-account.ts";
-import { handleError, normalizeHandle, readerByHandle, READERS } from "./social.ts";
+import { handleError, normalizeHandle } from "./social.ts";
 import {
   addSitKeep,
   mergeHostedSit,
@@ -450,7 +450,6 @@ export const useVellum = create<VellumState>()(
       setHandle: (raw) => {
         const handle = normalizeHandle(raw);
         const taken = [
-          ...READERS.map((row) => row.handle),
           ...(get().contacts ?? []).map((row) => row.handle),
           ...handlesInVault().filter((row) => row !== get().handle),
         ];
@@ -463,14 +462,6 @@ export const useVellum = create<VellumState>()(
         const handle = normalizeHandle(input.handle);
         if (handle && handle === get().handle) {
           return { ok: false as const, error: "That is already you." };
-        }
-        const catalog = readerByHandle(handle);
-        if (catalog) {
-          const following = get().following ?? [];
-          if (!following.includes(catalog.id)) {
-            set({ following: [...following, catalog.id] });
-          }
-          return { ok: true as const, id: catalog.id };
         }
         const error = handleError(handle, [
           get().handle,

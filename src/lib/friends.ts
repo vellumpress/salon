@@ -1,13 +1,6 @@
 import { lastReadProgress } from "./continuity.ts";
 import { shelfWork } from "./catalog/shelf.ts";
-import {
-  READERS,
-  formatHandle,
-  normalizeHandle,
-  readerByHandle,
-  searchReaders,
-  type Reader,
-} from "./social.ts";
+import { formatHandle, normalizeHandle } from "./social.ts";
 import type { WorkProgress } from "./store.ts";
 
 export type FriendContact = {
@@ -71,27 +64,13 @@ function workMeta(workId: string, fallbackTitle = "") {
   };
 }
 
-export function personFromReader(reader: Reader): FriendPerson {
-  return {
-    id: reader.id,
-    handle: reader.handle,
-    name: reader.name,
-    city: reader.city,
-    ...workMeta(reader.reading, reader.workTitle),
-    line: reader.line,
-    catalog: true,
-  };
-}
-
 export function personFromContact(contact: FriendContact): FriendPerson {
-  const catalog = readerByHandle(contact.handle);
-  if (catalog) return personFromReader(catalog);
   const reading = contact.reading ?? "";
   return {
     id: contact.id,
     handle: contact.handle,
     name: contact.name,
-    city: "This device",
+    city: "",
     ...workMeta(reading, contact.workTitle ?? ""),
     catalog: false,
   };
@@ -101,8 +80,6 @@ export function resolvePerson(
   idOrHandle: string,
   contacts: FriendContact[] = [],
 ): FriendPerson | undefined {
-  const reader = READERS.find((row) => row.id === idOrHandle) ?? readerByHandle(idOrHandle);
-  if (reader) return personFromReader(reader);
   const handle = normalizeHandle(idOrHandle.replace(/^local:/, ""));
   const contact = contacts.find(
     (row) => row.id === idOrHandle || row.handle === handle,
@@ -110,18 +87,15 @@ export function resolvePerson(
   return contact ? personFromContact(contact) : undefined;
 }
 
+/** Contacts on this device only. Demo salon readers are not suggestions. */
 export function searchPeople(query: string, contacts: FriendContact[] = []): FriendPerson[] {
-  const catalog = searchReaders(query).map(personFromReader);
-  const seen = new Set(catalog.map((row) => row.handle));
-  const extras = contacts
+  const q = query.trim().toLowerCase().replace(/^@+/, "");
+  return contacts
     .map(personFromContact)
     .filter((row) => {
-      if (seen.has(row.handle)) return false;
-      if (!query.trim()) return true;
-      const q = query.trim().toLowerCase().replace(/^@+/, "");
+      if (!q) return true;
       return row.handle.includes(q) || row.name.toLowerCase().includes(q);
     });
-  return [...catalog, ...extras];
 }
 
 export function friendsFeed(

@@ -8,7 +8,7 @@
  * + offline bridge.
  */
 
-import { handleError, normalizeHandle, READERS } from "./social.ts";
+import { handleError, normalizeHandle } from "./social.ts";
 
 export const READER_ACCOUNT_KEY = "salon-reader-v1";
 
@@ -119,7 +119,6 @@ export function takenHandlesForSignup(
 ) {
   const allow = normalizeHandle(allowHandle);
   const taken = [
-    ...READERS.map((row) => row.handle),
     ...vault.accounts.map((row) => row.handle),
     ...[...extras].map((row) => normalizeHandle(row)),
   ].filter((handle) => handle && handle !== allow);
