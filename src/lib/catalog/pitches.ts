@@ -30,6 +30,16 @@ export const PITCHES: Record<string, string> = {
     "She takes the vine-path hillside with the boy, straw hat, near six o’clock. Widow desire — Host OK. No translator is named on this sit.",
   "letters-of-a-javanese-princess":
     "Kartini writes from colonial Java in 1899, hungry for the modern girl while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. The Rituals sit is Letter I, the cloistered-arms beat; if you Host further, name that colonial frame for the room first.",
+  "a-hero-of-our-time":
+    "Travelling post from Tiflis into the Koishaur Valley at sunset — a dukhan crowd and a caravan of camels. Imperial Caucasus violence in Bela; Host may name it, and don’t sanitize. Skip the translators’ foreword; the novel continues.",
+  "after-the-divorce":
+    "A woman weeping in the Porru house’s strangers’ room. Sardinian honor and a wrongful conviction — Host OK.",
+  "blood-and-sand":
+    "Gallardo’s bullfight-day breakfast: meat, black coffee, a huge cigar, and a dining room that treats the matador like family glory. Bullring gore and animal death are in the book; name them if you Host further, and don’t sanitize.",
+  "white-nights":
+    "It was a wonderful night — the dreamer’s starry Petersburg. First Night only, and not Notes from Underground.",
+  "west-african-folk-tales":
+    "Anansi buys the stories from Nyankupon. One tale per sit — How We Got the Name ‘Spider Tales’ — soft against Jamaica Anansi.",
   berlin:
     "Berlin talks through Franz Biberkopf after prison — noise, politics, and fate in Döblin’s street choir. A city that will not let a man start clean.",
   passing:

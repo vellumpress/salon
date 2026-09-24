@@ -382,6 +382,9 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "noli-me-tangere",
     "bread-givers",
     "the-story-of-gosta-berling",
+    "a-hero-of-our-time",
+    "after-the-divorce",
+    "blood-and-sand",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -403,7 +406,7 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
   assert.equal(curatorialTrack("where-angels-fear-to-tread"), "later");
   assert.equal(curatorialTrack("the-gadfly"), "next");
   assert.equal(curatorialTrack("letters-of-a-javanese-princess"), "later");
-  assert.equal(curatorialTrack("blood-and-sand"), "later");
+  assert.equal(curatorialTrack("blood-and-sand"), "next");
   assert.equal(curatorialTrack("poison-tree"), "later");
   assert.equal(curatorialTrack("ecstasy"), "later");
   assert.equal(curatorialTrack("an-outcast-of-the-islands"), "later");
@@ -814,9 +817,9 @@ test("Blood and Sand is a local waking bind on Next, not locked recommend", () =
   const lane = RITUAL_LANES.find((item) => item.id === "waking-up");
   assert.ok(lane?.workIds.includes("blood-and-sand"));
   assert.ok(lane!.workIds.indexOf("blood-and-sand") > lane!.workIds.indexOf("letters-of-a-javanese-princess"));
-  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("blood-and-sand"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("blood-and-sand"), true);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("blood-and-sand"), false);
-  assert.equal(curatorialTrack("blood-and-sand"), "later");
+  assert.equal(curatorialTrack("blood-and-sand"), "next");
 });
 
 test("Where Angels Fear to Tread is a local waking bind on Next, not locked recommend", () => {

@@ -2231,8 +2231,15 @@ test("Tier B batches 15–16 are local format-min binds, never Featured", () => 
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
     assert.equal(forYou!.workIds.includes(id), false, id);
     assert.equal(coldOpen.has(id), false, id);
-    for (const lane of RITUAL_LANES) {
-      assert.equal(lane.workIds.includes(id), false, `${id} ${lane.id}`);
+    if (id === "white-nights") {
+      for (const lane of RITUAL_LANES) {
+        const onRitual = lane.id === "bite-sized" || lane.id === "before-sleep" || lane.id === "waking-up";
+        assert.equal(lane.workIds.includes(id), onRitual, `${id} ${lane.id}`);
+      }
+    } else {
+      for (const lane of RITUAL_LANES) {
+        assert.equal(lane.workIds.includes(id), false, `${id} ${lane.id}`);
+      }
     }
     assertNoStubOpening(id);
     const full = textWork(id);
