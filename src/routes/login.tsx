@@ -88,7 +88,7 @@ function LoginPage() {
     return () => window.cancelAnimationFrame(id);
   }, [door]);
 
-  if (leave && identity && !busy) {
+  if (leave && identity && !busy && !hold) {
     return <Navigate to={door === "staff" ? "/desk" : "/profile"} />;
   }
 
@@ -99,6 +99,7 @@ function LoginPage() {
     try {
       const result = await createAccount(input);
       if (result.confirmEmail || result.notice) {
+        setLeave(false);
         setError(result.confirmEmail ? confirmEmailMessage(result.handle) : result.notice);
         setBusy(null);
         return;
@@ -106,6 +107,7 @@ function LoginPage() {
       setHold(false);
       window.location.assign(withBase("/profile"));
     } catch (err) {
+      setLeave(false);
       setHold(false);
       setError(err instanceof Error ? err.message : "Could not create the account");
       setBusy(null);
@@ -119,6 +121,7 @@ function LoginPage() {
     try {
       const result = await signIn(input);
       if (result.confirmEmail || result.notice) {
+        setLeave(false);
         setError(result.confirmEmail ? confirmEmailMessage(result.handle) : result.notice);
         setBusy(null);
         return;
@@ -126,6 +129,7 @@ function LoginPage() {
       setHold(false);
       window.location.assign(withBase("/profile"));
     } catch (err) {
+      setLeave(false);
       setHold(false);
       setError(err instanceof Error ? err.message : "Could not sign in");
       setBusy(null);
