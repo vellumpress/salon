@@ -8,6 +8,7 @@ import {
 } from "@/lib/auth/client";
 import { ReaderAuthForm } from "@/components/reader-auth-form";
 import { APP_NAME, liveAuthAvailable, withBase } from "@/lib/site";
+import { confirmEmailMessage } from "@/lib/remote-auth";
 import { useReaderSession, type ReaderAuthMode } from "@/lib/use-reader-session";
 import { cn } from "@/lib/utils";
 
@@ -68,14 +69,15 @@ function LoginPage() {
   const [staffError, setStaffError] = useState("");
   const [showStaff, setShowStaff] = useState(door === "staff");
   const [leave, setLeave] = useState(false);
+  const [hold, setHold] = useState(false);
 
   useEffect(() => {
     if (hasAccounts) setMode("in");
   }, [hasAccounts]);
 
   useEffect(() => {
-    if (!isPending && identity) setLeave(true);
-  }, [identity, isPending]);
+    if (!isPending && identity && !hold) setLeave(true);
+  }, [identity, isPending, hold]);
 
   useEffect(() => {
     if (door !== "staff") return;
@@ -94,7 +96,13 @@ function LoginPage() {
     setBusy("reader");
     setError("");
     try {
-      await createAccount(input);
+      const result = await createAccount(input);
+      if (result.confirmEmail || result.notice) {
+        setError(result.confirmEmail ? confirmEmailMessage(result.handle) : result.notice);
+        setHold(true);
+        setBusy(null);
+        return;
+      }
       window.location.assign(withBase("/profile"));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not create the account");
@@ -106,7 +114,13 @@ function LoginPage() {
     setBusy("reader");
     setError("");
     try {
-      await signIn(input);
+      const result = await signIn(input);
+      if (result.confirmEmail || result.notice) {
+        setError(result.confirmEmail ? confirmEmailMessage(result.handle) : result.notice);
+        setHold(true);
+        setBusy(null);
+        return;
+      }
       window.location.assign(withBase("/profile"));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not sign in");
@@ -199,6 +213,15 @@ function LoginPage() {
           onCreate={(input) => void withReaderCreate(input)}
           onSignIn={(input) => void withReaderSignIn(input)}
         />
+        {hold ? (
+          <button
+            type="button"
+            onClick={() => window.location.assign(withBase("/profile"))}
+            className="flex h-14 w-full items-center justify-center border-b border-ink bg-paper font-sans text-sm"
+          >
+            Continue on this phone
+          </button>
+        ) : null}
 
         {showStaff ? (
           <>

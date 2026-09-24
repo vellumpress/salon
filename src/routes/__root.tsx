@@ -2,6 +2,7 @@ import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-r
 import { useEffect } from "react";
 import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
+import { RemoteSync } from "@/components/remote-sync";
 import { APP_DESCRIPTION, APP_NAME, withBase } from "@/lib/site";
 import { attachVisualViewport } from "@/lib/vvh";
 import appCss from "../styles.css?url";
@@ -54,6 +55,7 @@ export const Route = createRootRoute({
       <body>
         <PreviewHostBridge />
         <VisualViewport />
+        <RemoteSync />
         <AuthProvider>
           <Outlet />
         </AuthProvider>

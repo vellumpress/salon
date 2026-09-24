@@ -221,6 +221,65 @@ test("no real friends is just this device", () => {
   assert.equal(listFriends(emptyGraph()).length, 0);
 });
 
+test("synced activity fills a followed profile and stays off the people list otherwise", () => {
+  const contact = asContact({ handle: "mina" });
+  assert.ok(contact);
+  const graph = emptyGraph({
+    selfHandle: "meghan",
+    contacts: [contact],
+    following: [contact.id],
+    remoteActivity: {
+      mina: [
+        {
+          id: "remote:1",
+          at: NOW,
+          kind: "reading",
+          label: "Reading",
+          summary: "reading Passing",
+          workId: "passing",
+          workTitle: "Passing",
+          author: "Nella Larsen",
+        },
+        {
+          id: "remote:kept",
+          at: NOW - 1000,
+          kind: "kept",
+          label: "Kept",
+          summary: "kept a line from Passing",
+          workId: "passing",
+          workTitle: "Passing",
+          author: "Nella Larsen",
+          line: "A line.",
+        },
+      ],
+      stranger: [
+        {
+          id: "remote:2",
+          at: NOW,
+          kind: "reading",
+          label: "Reading",
+          summary: "reading Passing",
+          workId: "passing",
+          workTitle: "Passing",
+          author: "Nella Larsen",
+        },
+      ],
+    },
+  });
+  const mina = friendProfile("mina", graph);
+  assert.equal(mina?.readingNow?.workTitle, "Passing");
+  assert.equal(
+    mina?.activity.some((item) => item.kind === "reading" && item.workId === "passing"),
+    false,
+  );
+  assert.equal(mina?.activity.some((item) => item.id === "remote:kept"), true);
+  const listed = listFriends(graph).map((item) => item.handle);
+  assert.ok(listed.includes("mina"));
+  assert.equal(listed.includes("stranger"), false);
+  assert.equal(listFriends(graph).find((item) => item.handle === "mina")?.waiting, false);
+  assert.equal(listFriends(graph).find((item) => item.handle === "mina")?.readingTitle, "Passing");
+});
+
 test("a followed name with no activity is waiting", () => {
   const contact = asContact({ handle: "new.handle" });
   assert.ok(contact);

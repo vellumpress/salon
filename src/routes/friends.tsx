@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useMemo, useState, type FormEvent, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from "react";
 import { useKeptLines } from "@/components/kept-sentences";
 import { ResumeLink, usePersistHydrated } from "@/components/resume-link";
 import {
@@ -10,7 +10,10 @@ import {
 } from "@/lib/friend-profile";
 import { useFollowedAuthors } from "@/lib/followed-authors";
 import { boardKeptLines, friendsFeed, youCard, type BoardKeptLine } from "@/lib/friends";
-import { searchHandles } from "@/lib/handle-search";
+import { mergeDirectorySearch, searchHandles } from "@/lib/handle-search";
+import { withRemoteActivity } from "@/lib/remote-activity";
+import { updateHostedHandle } from "@/lib/remote-auth";
+import { refreshFollowedActivity, useRemoteBundle, useRemoteHandleSearch } from "@/lib/remote-directory";
 import {
   booksOnTbrLabel,
   notableAuthor,
@@ -28,7 +31,7 @@ import {
 import { fillClass, fillInk, planeOf } from "@/lib/mondrian";
 import { renameActiveHandle } from "@/lib/reader-account";
 import { formatHandle, getClub, handleError, normalizeHandle } from "@/lib/social";
-import { APP_NAME, liveBackendEnabled, publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
+import { APP_NAME, publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
 import {
   createSitPledge,
   EVENING_WINDOWS,
@@ -77,31 +80,42 @@ function FriendsPage() {
   const [query, setQuery] = useState("");
   const [message, setMessage] = useState("");
   const followedAuthors = useFollowedAuthors();
+  const remote = useRemoteBundle();
+  const remoteSearch = useRemoteHandleSearch(query);
+
+  useEffect(() => {
+    if (!remote.userId) return;
+    void refreshFollowedActivity(remote.userId);
+  }, [remote.userId]);
   const [pledgeTo, setPledgeTo] = useState("");
   const [pledgeWindow, setPledgeWindow] = useState<EveningWindow>("tonight");
   const kept = useKeptLines(progress, hydrated);
 
   const graph = useMemo<FriendGraph>(
-    () => ({
-      selfHandle: handle,
-      contacts,
-      following,
-      progress,
-      sitHistory,
-      togetherKeeps,
-      hostedSits,
-      sitPledges,
-      ledgers: {
-        readingMinutesByDay,
-        advancesByDay,
-        sceneCrossesByDay,
-        keepsByDay,
-        worksTouchedByDay,
-        hostOpensByDay,
-        sitsByDay,
-        clubTouchesByDay,
-      },
-    }),
+    () =>
+      withRemoteActivity(
+        {
+          selfHandle: handle,
+          contacts,
+          following,
+          progress,
+          sitHistory,
+          togetherKeeps,
+          hostedSits,
+          sitPledges,
+          ledgers: {
+            readingMinutesByDay,
+            advancesByDay,
+            sceneCrossesByDay,
+            keepsByDay,
+            worksTouchedByDay,
+            hostOpensByDay,
+            sitsByDay,
+            clubTouchesByDay,
+          },
+        },
+        remote.byHandle,
+      ),
     [
       handle,
       contacts,
@@ -119,6 +133,7 @@ function FriendsPage() {
       hostOpensByDay,
       sitsByDay,
       clubTouchesByDay,
+      remote.byHandle,
     ],
   );
   const rows = useMemo(
@@ -133,12 +148,12 @@ function FriendsPage() {
   const reading = useMemo(() => {
     if (!hydrated) return [];
     const seen = new Set<string>();
-    return friendsFeed(following, contacts).filter((row) => {
+    return friendsFeed(following, graph.contacts).filter((row) => {
       if (!row.reading || seen.has(row.handle)) return false;
       seen.add(row.handle);
       return true;
     });
-  }, [hydrated, following, contacts]);
+  }, [hydrated, following, graph.contacts]);
   const keptLines = useMemo(
     () =>
       hydrated
@@ -183,7 +198,17 @@ function FriendsPage() {
     for (const row of rows) map.set(row.handle, row.latest);
     return map;
   }, [rows]);
-  const search = useMemo(() => searchHandles(query, rows), [query, rows]);
+  const search = useMemo(
+    () =>
+      mergeDirectorySearch(
+        searchHandles(query, rows),
+        remoteSearch.hits,
+        rows,
+        handle,
+        remoteSearch.pending,
+      ),
+    [query, rows, remoteSearch.hits, remoteSearch.pending, handle],
+  );
   const authors = useMemo(() => notableAuthors(), []);
   const followedAuthorCards = useMemo(
     () =>
@@ -194,16 +219,25 @@ function FriendsPage() {
     [followedAuthors.slugs],
   );
 
-  function claim(event: FormEvent) {
+  async function claim(event: FormEvent) {
     event.preventDefault();
+    const previous = handle;
     const result = setHandle(draft || handle);
     if (!result.ok) {
       setMessage(result.error);
       return;
     }
-    renameActiveHandle(result.handle);
+    const remoteHandle = await updateHostedHandle(result.handle);
+    if (!remoteHandle.ok) {
+      if (previous) setHandle(previous);
+      setMessage(remoteHandle.error);
+      return;
+    }
+    const next = remoteHandle.handle || result.handle;
+    if (next !== result.handle) setHandle(next);
+    renameActiveHandle(next);
     setDraft("");
-    setMessage(`Sitting as ${formatHandle(result.handle)}.`);
+    setMessage(`Sitting as ${formatHandle(next)}.`);
   }
 
   function followOffer() {
@@ -371,7 +405,7 @@ function FriendsPage() {
         {hydrated ? (
           <section>
             <SectionTitle>Your @name</SectionTitle>
-            <form onSubmit={claim} className="flex items-stretch border-b border-ink">
+            <form onSubmit={(event) => void claim(event)} className="flex items-stretch border-b border-ink">
               <label className="flex min-w-0 flex-1 items-center">
                 <span className="px-4 font-sans text-sm text-muted">@</span>
                 <input
@@ -682,9 +716,9 @@ function FriendsPage() {
         ) : null}
 
         <p className="px-4 py-6 font-serif text-sm text-ink/60">
-          {liveBackendEnabled
-            ? "Handles, keeps, sits, and tonight-notes stay on this device. Live sync is not in this tree yet."
-            : `Handles, keeps, sits, and tonight-notes stay on this device. A hosted ${APP_NAME} can sync them later.`}
+          {remote.signedIn
+            ? "Signed in. Follows and reading sync with tbr. This phone keeps its own copy."
+            : "Handles, keeps, sits, and tonight-notes stay on this phone until you sign in."}
         </p>
       </div>
     </div>
