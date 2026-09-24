@@ -12,7 +12,7 @@ page.on("console", (msg) => {
 await page.goto(url, { waitUntil: "networkidle", timeout: 45000 });
 await page.waitForTimeout(500);
 const home = await page.evaluate(() => ({
-  vellum: document.body.innerText.includes("Vellum"),
+  tbr: document.body.innerText.includes("tbr"),
   search: Boolean(document.querySelector("#shelf-search")),
   count: document.querySelector("#shelf-search")?.parentElement?.innerText ?? "",
   gatsby: document.body.innerText.includes("The Great Gatsby"),

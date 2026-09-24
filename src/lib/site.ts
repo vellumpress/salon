@@ -1,5 +1,9 @@
-/** User-facing product name. Repo / Pages path are `salon`. */
-export const APP_NAME = "Vellum";
+/** User-facing product name. Always lowercase. Repo / Pages path stay `salon`. */
+export const APP_NAME = "tbr";
+
+/** Meta, Open Graph, and Twitter description. */
+export const APP_DESCRIPTION =
+  "tbr. Timed reading rituals. Public-domain sitting, on this phone.";
 
 /** GitHub Pages subdirectory (no trailing slash). */
 export const APP_BASE_PATH = "/salon";

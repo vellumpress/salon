@@ -7,7 +7,7 @@
  * HTML forbids U+0000. Chromium rewrites it to U+FFFD and keeps parsing, and
  * `hydrateSsrMatchId` already maps both U+0000 and U+FFFD back to "/", so
  * desktop hydrates. iOS Home Screen WebKit can stop that classic script at
- * the NUL, so the module tag after it never runs and the cream "Vellum"
+ * the NUL, so the module tag after it never runs and the cream "tbr"
  * shell stays on screen.
  *
  * Upstream (TanStack/router#7654) is not in the published 1.171 line. The

@@ -75,7 +75,7 @@ export function renderSpa404Html() {
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Vellum</title>
+    <title>tbr</title>
     <meta name="robots" content="noindex" />
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
@@ -101,11 +101,11 @@ export function renderSpa404Html() {
     </script>
   </head>
   <body>
-    <p>Opening this page in Vellum&hellip;</p>
+    <p>Opening this page in tbr&hellip;</p>
     <noscript>
       <p>
         JavaScript is required for this address.
-        <a href="/salon/">Open Vellum</a>
+        <a href="/salon/">Open tbr</a>
       </p>
     </noscript>
   </body>

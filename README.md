@@ -1,10 +1,10 @@
-# Vellum
+# tbr
 
-A calm, phone-first reading app for public-domain classics. This repository is the GitHub Pages build of Vellum: same catalog and chamber reader.
+A calm, phone-first reading app for public-domain classics. This repository is the GitHub Pages build of tbr: same catalog and chamber reader.
 
-The product name is **Vellum**. The GitHub repo and Pages path stay `salon` so existing links keep working.
+The product name is **tbr** (always lowercase, short for “to be read”). The GitHub repo and Pages path stay `salon` so existing links keep working.
 
-This tree is a full mirror of Vellum V4 (`c9c405`), including every local catalog text and opening (405 each). Do not thin the catalog to save size.
+This tree is a full mirror of the V4 catalog (`c9c405`), including every local catalog text and opening (405 each). Do not thin the catalog to save size.
 
 On GitHub Pages the app is a **static SPA**. Reading, shuffle, rituals, local progress, and **reader sign-up / sign-in** work in the browser. Synced accounts, clubs, and RTC sitting need a hosted backend (see below).
 
@@ -14,7 +14,7 @@ Live on GitHub Pages: **https://vellumpress.github.io/salon/**
 
 Pushes to `main` run `.github/workflows/deploy-pages.yml`. Vite/`tanstackStart` use `base` `/salon/`. Cold deep links (`/salon/read/…`, `/salon/rituals`, …) hit `404.html`, which redirects into `/salon/?/<route>`; `index.html` restores the path before the router boots ([spa-github-pages](https://github.com/rafgraph/spa-github-pages)).
 
-Add to Home Screen on iPhone and Android uses the name **Vellum** (`apple-mobile-web-app-title`, `application-name`, and the web app manifest `name` / `short_name`) and a Mondrian red / blue / green icon.
+Add to Home Screen on iPhone and Android uses the name **tbr** (`apple-mobile-web-app-title`, `application-name`, and the web app manifest `name` / `short_name`) and a Mondrian red / blue / green icon. The icon is geometry only — no wordmark.
 
 ## Local run
 

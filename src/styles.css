@@ -599,6 +599,10 @@ html.together-compose.together-kb .chat-slot {
   text-transform: uppercase;
 }
 
+.product-name {
+  text-transform: none;
+}
+
 .adapted-pitch {
   overflow: hidden;
   color: var(--color-ink);
