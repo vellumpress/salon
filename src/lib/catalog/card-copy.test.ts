@@ -40,7 +40,6 @@ const FULL_NOVEL_NO_STUB = [
   "steppenwolf",
   "shadowings",
   "krakatit",
-  "the-peasants",
   "cane",
   "a-hero-of-our-time",
   "strange-tales",
@@ -1263,17 +1262,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       last: /sweet and healing sleep/,
       intro: /penetrating eyes/,
     },
-    "the-peasants": {
-      gutenberg: 75846,
-      title: "The Peasants",
-      author: "Władysław Reymont",
-      year: 1904,
-      opening: /Praised be Jesus Christ!/,
-      breaths: 2772,
-      scenes: 12,
-      last: /END OF PART I/,
-      intro: /Agatha/,
-    },
     cane: {
       gutenberg: 60093,
       title: "Cane",
@@ -1465,7 +1453,7 @@ test("Mira FULL-TEXT CLEAR ×4 are stamped local binds with no opening stubs", (
     assert.match(work!.opening ?? "", want.opening, id);
     assert.equal(
       existsSync(new URL(`./openings/${id}.json`, import.meta.url)),
-      id === "nacha-regules",
+      id === "nacha-regules" || id === "the-peasants",
       id,
     );
     const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
@@ -2046,7 +2034,6 @@ const TIER_B_BATCH_9_10 = [
   "the-phantom-of-the-opera",
   "the-saint",
   "the-seven-who-were-hanged",
-  "the-song-of-the-blood-red-flower",
   "yiddish-tales",
   "from-a-swedish-homestead",
   "in-ghostly-japan",
@@ -2069,7 +2056,7 @@ const TIER_B_BATCH_9_10 = [
 ] as const;
 
 test("Tier B batches 9–10 are local format-min binds, never Featured", () => {
-  assert.equal(TIER_B_BATCH_9_10.length, 38);
+  assert.equal(TIER_B_BATCH_9_10.length, 37);
   assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
     "the-house-of-mirth",
     "quicksand",
@@ -2104,7 +2091,6 @@ test("Tier B batches 9–10 are local format-min binds, never Featured", () => {
 
 /** Tier B format-min CLEAR batches 13–14. Later only — never Featured, cold-open untouched. */
 const TIER_B_BATCH_13_14 = [
-  "a-hungarian-nabob",
   "a-sportsman-s-sketches",
   "bovary",
   "camille",
@@ -2149,7 +2135,7 @@ const TIER_B_BATCH_13_14 = [
 ] as const;
 
 test("Tier B batches 13–14 are local format-min binds, never Featured", () => {
-  assert.equal(TIER_B_BATCH_13_14.length, 42);
+  assert.equal(TIER_B_BATCH_13_14.length, 41);
   assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
     "the-house-of-mirth",
     "quicksand",

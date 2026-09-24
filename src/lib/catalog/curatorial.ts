@@ -192,6 +192,16 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * is the harder Next bar (three-chapters frame, Uruguay, PG 7132), soft
  * against Green Mansions. Cold-open stays Mirth → Quicksand → Botchan. Tang
  * Poems, The Bronze Horseman, and Inferno stay HOLD.
+ * Midday Thu 24 Sep 2026 CLEAR — Recommend only, never a new homepage Featured
+ * pin. The Peasants leads this cycle’s Next append (Autumn volume, PG 75846,
+ * “Praised be Jesus Christ!”). A Hungarian Nabob follows (rainy puszta, PG
+ * 20978). An Iceland Fisherman keeps its earlier Next seat and is repeated
+ * here so this cycle reads in order (cabin, five seamen, PG 2196, year 1886
+ * only). The Song of the Blood-Red Flower is the harder Next bar (strawberry
+ * song, PG 12935, no translator named). Irish Fairy Tales is Rituals only:
+ * Chapter I, Finnian and Tuan, PG 2892, stop at the chapter boundary.
+ * Cold-open stays Mirth → Quicksand → Botchan. Tang Poems, The Bronze
+ * Horseman, Inferno, and Rudin stay off this ship.
  *
  * Remakes are Salon original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -535,6 +545,13 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "a-hero-of-our-time",
   "after-the-divorce",
   "blood-and-sand",
+  // Mira midday Thu 24 Sep CLEAR — Peasants leads Next. Never a new Featured pin.
+  // Iceland already has an earlier Next seat; this is the cycle order.
+  // Irish Fairy Tales stays Rituals, Chapter I only. Rudin stays off.
+  "the-peasants",
+  "a-hungarian-nabob",
+  "an-iceland-fisherman",
+  "the-song-of-the-blood-red-flower",
 ] as const;
 
 /**

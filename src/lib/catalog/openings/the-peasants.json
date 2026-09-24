@@ -1,0 +1,261 @@
+{
+  "id": "the-peasants",
+  "title": "The Peasants",
+  "author": "Władysław Reymont",
+  "year": "1904",
+  "note": "Project Gutenberg 75846 (tr. Michael Henry Dziewicki). Autumn volume.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "“Praised be Jesus Christ!”",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "“Praised be Jesus Christ!”"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "“World without end!—What, my good Agatha? And whither be you wandering now?”"
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "“Out into the world, please your Reverence, into the wide world!” she answered, with a wave of her staff from east to west."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The priest mechanically turned his eyes in that direction, but closed them to the blinding sun in the western sky. Then he said, in a lower and somewhat hesitating tone:"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "“Have the Klembas turned you out? Or is it only a little bickering between you?”"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "She drew herself up a little and, before answering, cast her eyes around her upon the bare autumnal fields and the village roofs surrounded by fruit-gardens."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "“No, they have not turned me out: how could they? They are good folk and my close kin. And as for bickering, there was none. I myself saw that I had better leave; that’s all. ‘Better to leap into the deep than cumber another man’s wagon.’... So I had to go; there was no work for me. Winter is coming, but what of that? Are they to give me food and a corner to sleep in while I do nothing to earn it? Besides, they have just weaned their calf, and the goslings must be sheltered under their roof at night, for it is getting cold. I have to make room. Why, beasts are God’s creatures, too.... But they are kind folk; they keep me in summer-time at least, and do not begrudge me a corner of their house and a morsel of their food.... And in winter I go out into the wide world, asking alms.... I need but little, and that little good people give me. With the help of the Lord Jesus, I shall pull through till spring, and put something by into the bargain. Surely, the sweet, good Jesus will not forsake His poor.”"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "“No, that He will not,” the priest reassured her in earnest tones, quietly pressing a small silver coin into her hand."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "“Thanks, thanks, and God bless your Reverence!”"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "She bowed her shaking head as low as his knees, while big tears trickled down her face, a face rugged and furrowed like newly-ploughed autumn fields."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "The priest felt confused."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "“Go, and God speed you on your way,” he faltered, raising her up."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "With trembling hands she crossed herself, took hold of her wallet and her sharp-pointed staff, and started off along the broad and deeply rutted road toward the forest, turning now and again to glance at the village, the fields where potatoes were then being dug, and the smoke from many a herdsman’s fire, wafted low over the stubble."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "The priest, who had previously been seated upon a plough-wheel, now returned to it, took a pinch of snuff, and opened his breviary; but his eyes would stray now and then from the red print and glance over the vast landscape slumbering in autumnal peace, or gaze into the pale blue sky, or wander to his men leaning over the plough he was guiding."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "“Hey, Valek! That furrow is crooked!” he cried out, sitting up, with his eyes following every step of two sturdy grey plough-horses."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Once more he returned to his breviary, and his lips again moved, but his eyes soon unconsciously wandered to the horses, or to a flock of crows cautiously hopping, with outstretched beaks, in the newly-made furrow, and taking wing when even the whip cracked or the horses wheeled round: after which they would alight heavily in the wake of the plough, and sharpen their beaks on the hard, sun-baked clods just turned up."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "“Valek, just flick the right-hand mare a bit; she is lagging behind.”"
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "He smiled to see her draw evenly after this correction and, when the horses came to the roadside, jumped up to pat their necks—a caress to which the animals responded by stretching their noses towards his face and sniffing complacently."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "“Het—a—ah!” Valek then sang out. Pulling the silver bright share out of the furrow, he deftly lifted up the plough, swung the horses round, and thrust the shining steel into the earth again. At a crack of the whip, the horses set tugging till the cross-bar creaked again; and on they went, ploughing away at the great strip of land which, stretching out at right angles to the road, descended the slope, and, not unlike the woof of some coarse hempen stuff, ran down as far as the low-lying hamlet nestling amongst the red and yellow leaves of its orchards."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "It was near the end of autumn, but the weather was still warm and rather drowsy. The sun was still hot enough and, hanging in the south-west above the woods, made the shrubs and the pear-trees, and even the hard, dry clods, cast strong, cold shadows."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Ineffable sweetness and serenity reigned in the air, full of a golden haze of sunlit dust over the fields lately harvested; while above in the azure heaven, enormous white clouds floated here and there like great wind-tormented snow-drifts."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "Below, as far as the eye could see, lay the drab-hued fields, forming a sort of huge basin with a dark-blue rim of forest, a basin across which, like a silken skein glittering in the sunshine, a river coursed sparkling and winding among the alders and willows on its banks. In the midst of the hamlet, it spread out into a large oblong body of water, and then ran northward through a rift in the hills. At the bottom of the valley, skirting the lake, lay the village, with the sunlight playing on the many autumnal hues of its fruit gardens. Thence, even up to the very edge of the forest, ran the long bands of cultivated ground, stretches of grey fields with thread-like pathways between them, whereon pear-trees and blackthorns grew; the general ashen tint being in places variegated by patches of gold-yellow lupines with fragrant flowers, or by the dull silver of the dried-up bed of some torrent; or by quiet sandy roads, with rows of tall poplars overshadowing them, reaching upwards to the hills and woods."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "The priest was suddenly roused from the contemplation of this scene. A long, mournful lowing was heard at no great distance, making the crows take wing and fly away obliquely to the potato-diggings, their dark fluttering shadows following them over the partly sown fields. Shading his eyes with his hand, he gazed in the direction of the sun and the forest, and beheld a little girl coming towards him and leading a large red cow by a rope. As she approached, she said: “Praised be Jesus Christ!” and would have gone out of her way to kiss the priest’s hand, but the cow jerked her away and fell a-lowing anew."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "“Are you taking it to market?” the priest asked."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "“No, only to the steer at the miller’s.—Be still, you pest! Are you possessed?” she cried, out of breath, and striving to master the animal, which, however, dragged her along till both disappeared in a cloud of dust."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "Presently there came along the sandy road, trudging heavily, a Jewish ragpicker, who trundled a barrow so loaded down that he had to stop for breath every now and then."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "“What news, Moshek?” cried the priest."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "“What news? Good news to those it may concern. Potatoes, God be praised! are plentiful; there’s a good crop of rye, and cabbages will be abundant. It’s all very well for such as have potatoes and rye and cabbages.” He kissed the priest’s sleeve, adjusted the barrow-strap, and went on more lightly, his way now leading down a gentle slope. In his wake, along the middle of the road and in the haze of dust raised by his dragging feet, came a blind beggar, led by a well-fed dog at the end of a string. Then a lad carrying a bottle approached from the side of the wood. The latter, catching sight of the holy man on the road, gave him a wide berth and made for the village tavern by a short cut through the fields."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "A peasant from the next hamlet, on his way to the mill, and a Jewess driving a flock of geese, then also passed by. Each praised God; the priest exchanged some kind words and friendly looks with them, and they went on their way."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "By this time the sun was low. The priest got up and called to Valek: “You will plough as far as the birches, then home. The poor beasts are quite tired out.”"
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "Going along the path between the fields, he said his Office under his breath, looking round from time to time at the scene with fond, glistening eyes. Working-women gleamed in red rows at the potato-diggings, and the contents of their baskets rumbled into the carts. Here and there, the ground was still being ploughed for sowing. On the fallows a herd of brindled cows was feeding. The ashen-grey hue of certain lands was beginning to take on a ruddy tint from the blades of corn already sprouting there. On the close-cropped, tawny grass of the meadows, the geese showed up like white snowflakes. A cow was heard lowing afar. Fires had been lit, and long blue clouds of smoke trailed over the cornfields. Elsewhere harrows were at work, a dim cloud of dust rising in the wake of each and settling down at the foot of the hills. From beneath it, coming as it were out of a cloud, a bareheaded, barefooted peasant, with a cloth full of corn tied round his waist, was pacing leisurely, taking handfuls of grain and scattering them all over the earth with a solemn gesture, as one bestowing a blessing. On reaching the end of the ploughed fields, he would turn and slowly ascend the slope, his shock of tousled hair first appearing above the sky-line, then his shoulders, and finally his whole body, still with the same solemn gesture, the sower’s benediction, that shed forth upon the soil, a holy thing as it were—the golden seed which fell in a semicircle round him."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "The priest’s pace became more and more leisurely: now he would stop to take breath, now to look at his two grey horses, now to glance at a few boys who were throwing stones into a large pear-tree. They came running to him in a body, and, holding their hands behind them, all kissed the sleeve of his soutane."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "He stroked their flaxen heads, but added a word of warning: “Have a care not to break the branches, or you will get no pears at all next year.”"
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "“We were not throwing stones at the pears,” answered one boy, bolder than the rest; “there’s a chough’s nest up in the tree.”"
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "The priest passed on with a friendly smile and was presently among the potato-diggers."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "“God speed your work!”"
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "“May God reward you!” they replied in a chorus, and all came up to kiss their beloved pastor’s hands."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "“Our Lord has given us plenty of potatoes this year, I think,” he said, offering his open snuff-box to the men, who respectfully accepted; refraining, however, from taking snuff in his presence."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "“Aye, potatoes are as big as a cat’s head, and plenty to each plant.”"
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "“Ah, then pigs will rise in price; you will all want to have some to fatten.”"
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "“They are dear enough as it is. There was a swine plague last summer, and we have to buy them even in Prussia.”"
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "“So there was, so there was. And whose potatoes are you digging here?”"
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "“Why Boryna’s, of course.”"
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "“I don’t see him with you, so I wasn’t sure.”"
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "“Father is only at the forest with my goodman.”"
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "“Oh, there you are, Hanka? How goes it?” he said, turning to a handsome young woman who wore a red kerchief round her head. She came forward, and, her hands being soiled, threw her apron over them as she took the priest’s hand to kiss."
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "“Well, and how is your little boy whom I christened in harvest time?”"
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "“God bless your Reverence, he is well and lively.”"
+    }
+  ]
+}

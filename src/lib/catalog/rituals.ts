@@ -284,7 +284,15 @@ export const RITUAL_PITCHES: Record<string, string> = {
   krakatit:
     "With the evening the fog of the cold, damp day grew thicker on the Old Town embankment — then suddenly a pair of penetrating eyes fixed on him. Stop before the Krakatit-box densifies. The novel continues.",
   "the-peasants":
-    "Praised be Jesus Christ! — Agatha and the priest on the roadside, then out into the wide world across bare autumnal fields. Winter is coming. First sit is that Chapter I greeting; the Autumn volume continues.",
+    "Agatha and the priest on the autumn road — “Praised be Jesus Christ!” Dziewicki’s English of the Autumn volume, PG 75846. Village poverty, Catholic period speech, and a Jewish ragpicker on the road; Host may name the ethnic and period register, and don’t sanitize.",
+  "a-hungarian-nabob":
+    "Rain on the puszta, 1822 — Peter Bús’s “Break-’em-tear-’em” csárda. Bain’s English, PG 20978. Hungarian class satire and period ethnic vocabulary stay in the sit; Host OK.",
+  "an-iceland-fisherman":
+    "Five Breton seamen drink in a bilge-water cabin. Cambon’s English, PG 2196, year 1886 only. Rough marriage talk and sea-labor desire; soft against Growth of the Soil and Gösta Berling — a different country. Host may name the soft.",
+  "the-song-of-the-blood-red-flower":
+    "A strawberry song and the girls’ ring — the Gazelle chase. Logger eros under the village dance; Host may name the sensual chase, and don’t sanitize.",
+  "irish-fairy-tales":
+    "Finnian of Moville goes after the disapproved gods, and meets Tuan mac Cairill. Chapter I only — the sit ends when Time laughs at Tuan. Christian and pagan clash, and the “magician” framing; Host OK.",
   cane:
     "Karintha: her skin is like dusk on the eastern horizon. Skip Waldo Frank’s foreword. First sit ends on the dusk-song refrain; the Georgia cycle continues.",
   generosity:
@@ -356,6 +364,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "letters-of-a-javanese-princess",
       "white-nights",
       "west-african-folk-tales",
+      "irish-fairy-tales",
     ],
   },
   {
@@ -723,6 +732,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "blood-and-sand",
       "white-nights",
       "west-african-folk-tales",
+      "the-peasants",
+      "a-hungarian-nabob",
+      "an-iceland-fisherman",
+      "the-song-of-the-blood-red-flower",
+      "irish-fairy-tales",
     ],
   },
   {
@@ -763,6 +777,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "letters-of-a-javanese-princess",
       "white-nights",
       "west-african-folk-tales",
+      "irish-fairy-tales",
     ],
   },
   {
@@ -813,6 +828,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "a-hero-of-our-time",
       "after-the-divorce",
       "blood-and-sand",
+      "the-peasants",
+      "a-hungarian-nabob",
+      "an-iceland-fisherman",
+      "the-song-of-the-blood-red-flower",
     ],
   },
   {
@@ -862,6 +881,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "a-hero-of-our-time",
       "after-the-divorce",
       "blood-and-sand",
+      "the-peasants",
+      "a-hungarian-nabob",
+      "an-iceland-fisherman",
+      "the-song-of-the-blood-red-flower",
     ],
   },
   {
@@ -941,6 +964,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "nacha-regules": 2,
   krakatit: 2,
   "the-peasants": 2,
+  "a-hungarian-nabob": 8,
+  "the-song-of-the-blood-red-flower": 8,
+  "irish-fairy-tales": 5,
   cane: 2,
   "a-hero-of-our-time": 5,
   "strange-tales": 5,

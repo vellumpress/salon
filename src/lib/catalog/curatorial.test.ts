@@ -8,8 +8,10 @@ import {
   isAdaptedBySalon,
   NEXT_FEATURED_TRACK_IDS,
 } from "./curatorial.ts";
-import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES } from "./rituals.ts";
+import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES, RITUAL_PITCHES, RITUAL_SIT_MINUTES } from "./rituals.ts";
 import { SHELF } from "./shelf.ts";
+import { blurbFor } from "./blurbs.ts";
+import { STORED_PREFACES } from "./prefaces-stored.ts";
 import { isBoundLocal, isEnReadableOff } from "./en-rights.ts";
 
 test("Locked recommend order is April, Bridge, Maggot, then Mirth, then Quicksand", () => {
@@ -385,6 +387,10 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "a-hero-of-our-time",
     "after-the-divorce",
     "blood-and-sand",
+    "the-peasants",
+    "a-hungarian-nabob",
+    "an-iceland-fisherman",
+    "the-song-of-the-blood-red-flower",
   ]);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("buddenbrooks"), false);
   assert.equal(curatorialTrack("buddenbrooks"), "later");
@@ -1336,9 +1342,10 @@ test("Salon 8am CLEAR ×4 are local Next / Rituals binds, never Featured", () =>
     assert.match(work!.opening ?? "", want.opening, id);
     const lane = RITUAL_LANES.find((item) => item.id === want.lane);
     assert.ok(lane?.workIds.includes(id), `${id} ${want.lane}`);
-    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    const onNext = id === "the-peasants";
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), onNext, id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    assert.equal(curatorialTrack(id), "later", id);
+    assert.equal(curatorialTrack(id), onNext ? "next" : "later", id);
   }
   assert.ok(forYou?.workIds.includes("cane"));
   assert.deepEqual(forYou!.workIds.slice(0, 3), [
@@ -1757,7 +1764,11 @@ test("BATCH-9 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     assert.ok(at > prev, `${id} follows All Quiet on Next`);
     prev = at;
     assert.ok(sleep!.workIds.indexOf(id) > sleepAnchor, id);
-    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    assert.equal(
+      existsSync(new URL(`./openings/${id}.json`, import.meta.url)),
+      id === "an-iceland-fisherman",
+      id,
+    );
     const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
       scenes: { title: string }[];
       breaths: { text: string }[];
@@ -3782,4 +3793,162 @@ test("Mira ~4:14 Wed 23 Sep CLEAR sits on Next and Rituals, never a new Featured
   assert.equal(forYou?.workIds.includes("anandamath"), true);
   assert.equal(forYou?.workIds.includes("thais"), true);
   assert.equal(bite?.workIds.includes("african-tragedy"), true);
+});
+
+test("Mira midday Thu 24 Sep CLEAR sits on Next and Rituals, never a new Featured pin", () => {
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  const featured = FEATURED_CAROUSEL_IDS as readonly string[];
+  const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  const walk = RITUAL_LANES.find((item) => item.id === "on-a-walk");
+  const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
+  const bite = RITUAL_LANES.find((item) => item.id === "bite-sized");
+  const waking = RITUAL_LANES.find((item) => item.id === "waking-up");
+  const cold = ["the-house-of-mirth", "quicksand", "botchan"] as const;
+  assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], [...cold]);
+  assert.deepEqual(forYou?.workIds.slice(0, 3), [...cold]);
+  assert.equal(forYou?.workIds.at(-1), "generosity");
+  assert.deepEqual(featured, [
+    "enchanted-april",
+    "the-bridge-of-san-luis-rey",
+    "mr-fortunes-maggot",
+    "the-house-of-mirth",
+    "quicksand",
+  ]);
+  assert.deepEqual(next.slice(-4), [
+    "the-peasants",
+    "a-hungarian-nabob",
+    "an-iceland-fisherman",
+    "the-song-of-the-blood-red-flower",
+  ]);
+  assert.ok(next.indexOf("an-iceland-fisherman") < next.lastIndexOf("an-iceland-fisherman"));
+  assert.equal(next.includes("irish-fairy-tales"), false);
+  assert.equal(next.includes("three-hundred-tang-poems"), false);
+  assert.equal(next.includes("the-bronze-horseman"), false);
+  assert.equal(next.includes("inferno"), false);
+  const rudin = SHELF.find((item) => item.id === "rudin");
+  assert.equal(rudin?.local, undefined);
+  assert.equal(rudin?.gutenberg, 75298);
+  for (const lane of RITUAL_LANES) {
+    assert.equal(lane.workIds.includes("rudin"), false, lane.id);
+    assert.equal(lane.workIds.includes("three-hundred-tang-poems"), false, lane.id);
+    assert.equal(lane.workIds.includes("the-bronze-horseman"), false, lane.id);
+    assert.equal(lane.workIds.includes("inferno"), false, lane.id);
+  }
+  assert.deepEqual(sleep?.workIds.slice(-5), [
+    "the-peasants",
+    "a-hungarian-nabob",
+    "an-iceland-fisherman",
+    "the-song-of-the-blood-red-flower",
+    "irish-fairy-tales",
+  ]);
+  assert.deepEqual(unwind?.workIds.slice(-4), [
+    "the-peasants",
+    "a-hungarian-nabob",
+    "an-iceland-fisherman",
+    "the-song-of-the-blood-red-flower",
+  ]);
+  assert.deepEqual(walk?.workIds.slice(-4), [
+    "the-peasants",
+    "a-hungarian-nabob",
+    "an-iceland-fisherman",
+    "the-song-of-the-blood-red-flower",
+  ]);
+  assert.equal(bite?.workIds.at(-1), "irish-fairy-tales");
+  assert.equal(waking?.workIds.at(-1), "irish-fairy-tales");
+  assert.ok((waking?.workIds.indexOf("the-peasants") ?? -1) >= 0);
+  assert.equal(waking?.workIds.includes("a-hungarian-nabob"), false);
+  for (const id of [
+    "the-peasants",
+    "a-hungarian-nabob",
+    "an-iceland-fisherman",
+    "the-song-of-the-blood-red-flower",
+    "irish-fairy-tales",
+  ]) {
+    assert.equal(forYou?.workIds.includes(id), false, id);
+    assert.equal(featured.includes(id), false, id);
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), true, id);
+  }
+
+  const peasants = SHELF.find((item) => item.id === "the-peasants");
+  assert.equal(peasants?.gutenberg, 75846);
+  assert.equal(peasants?.opening, "“Praised be Jesus Christ!”");
+  assert.equal(peasants?.breaths, 2772);
+  assert.equal(curatorialTrack("the-peasants"), "next");
+  assert.equal(RITUAL_SIT_MINUTES["the-peasants"], 2);
+  const peasantsOpen = JSON.parse(
+    readFileSync(new URL("./openings/the-peasants.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.equal(peasantsOpen.breaths[0]?.text, "“Praised be Jesus Christ!”");
+
+  const nabob = SHELF.find((item) => item.id === "a-hungarian-nabob");
+  assert.equal(nabob?.gutenberg, 20978);
+  assert.equal(nabob?.opening, "An Oddity, 1822.");
+  assert.equal(nabob?.breaths, 2347);
+  assert.equal(curatorialTrack("a-hungarian-nabob"), "next");
+  assert.equal(RITUAL_SIT_MINUTES["a-hungarian-nabob"], 8);
+  const nabobOpen = JSON.parse(
+    readFileSync(new URL("./openings/a-hungarian-nabob.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  const nabobEarly = nabobOpen.breaths.slice(0, 4).map((breath) => breath.text).join("\n");
+  assert.match(nabobEarly, /\*puszta\*/);
+  assert.match(nabobEarly, /\*csárda\*/);
+  assert.doesNotMatch(nabobEarly, /_puszta_|_csárda_|_\[1\]_/);
+
+  const iceland = SHELF.find((item) => item.id === "an-iceland-fisherman");
+  assert.equal(iceland?.gutenberg, 2196);
+  assert.equal(iceland?.year, 1886);
+  assert.equal(iceland?.author, "Pierre Loti");
+  assert.equal(iceland?.breaths, 952);
+  assert.equal(curatorialTrack("an-iceland-fisherman"), "next");
+  assert.equal(RITUAL_SIT_MINUTES["an-iceland-fisherman"], 5);
+  const icelandOpen = JSON.parse(
+    readFileSync(new URL("./openings/an-iceland-fisherman.json", import.meta.url), "utf8"),
+  ) as { note?: string; breaths: { text: string }[] };
+  assert.match(icelandOpen.breaths[0]?.text ?? "", /^There they were, five huge, square-built seamen/);
+  assert.match(icelandOpen.note ?? "", /2196/);
+  assert.match(iceland?.intro ?? "", /1886 only/);
+  assert.doesNotMatch(iceland?.intro ?? "", /189\d|190\d|191\d/);
+
+  const flower = SHELF.find((item) => item.id === "the-song-of-the-blood-red-flower");
+  assert.equal(flower?.gutenberg, 12935);
+  assert.equal(flower?.author, "Johannes Linnankoski");
+  assert.equal(curatorialTrack("the-song-of-the-blood-red-flower"), "next");
+  assert.equal(RITUAL_SIT_MINUTES["the-song-of-the-blood-red-flower"], 8);
+  const flowerOpen = JSON.parse(
+    readFileSync(new URL("./openings/the-song-of-the-blood-red-flower.json", import.meta.url), "utf8"),
+  ) as { note?: string; author?: string; breaths: { text: string }[] };
+  assert.equal(flowerOpen.author, "Johannes Linnankoski");
+  assert.match(flowerOpen.breaths[0]?.text ?? "", /strawberry sweet/);
+  const flowerCopy = [
+    flower?.intro ?? "",
+    flower?.author ?? "",
+    blurbFor("the-song-of-the-blood-red-flower"),
+    RITUAL_PITCHES["the-song-of-the-blood-red-flower"] ?? "",
+    STORED_PREFACES["the-song-of-the-blood-red-flower"] ?? "",
+    flowerOpen.note ?? "",
+  ].join("\n");
+  assert.doesNotMatch(flowerCopy, /translated by|tr\./i);
+  assert.doesNotMatch(flowerCopy, /translator/i);
+
+  const irish = SHELF.find((item) => item.id === "irish-fairy-tales");
+  assert.equal(irish?.gutenberg, 2892);
+  assert.equal(curatorialTrack("irish-fairy-tales"), "later");
+  assert.equal(RITUAL_SIT_MINUTES["irish-fairy-tales"], 5);
+  const irishOpen = JSON.parse(
+    readFileSync(new URL("./openings/irish-fairy-tales.json", import.meta.url), "utf8"),
+  ) as { scenes: { title: string }[]; breaths: { text: string }[] };
+  const irishFull = JSON.parse(
+    readFileSync(new URL("./texts/irish-fairy-tales.json", import.meta.url), "utf8"),
+  ) as { scenes: { id: string; title: string }[]; breaths: { sceneId: string; text: string }[] };
+  assert.equal(irishOpen.scenes.length, 1);
+  assert.match(irishOpen.breaths[0]?.text ?? "", /^Finnian, the Abbott of Moville/);
+  const chapter = irishFull.breaths.filter((breath) => breath.sceneId === irishFull.scenes[0]?.id);
+  assert.equal(irishFull.scenes[0]?.title, "CHAPTER I");
+  assert.deepEqual(
+    irishOpen.breaths.map((breath) => breath.text),
+    chapter.map((breath) => breath.text),
+  );
+  assert.match(irishOpen.breaths.at(-1)?.text ?? "", /Tuan, the son of Cairill/);
+  assert.match(irish?.intro ?? "", /Chapter I only/);
 });

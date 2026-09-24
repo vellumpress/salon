@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "AN Oddity, 1822.",
+      "reentry": "An Oddity, 1822.",
       "prompt": "A word from this stretch."
     },
     {
@@ -223,17 +223,12 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "AN Oddity, 1822."
+      "text": "An Oddity, 1822."
     },
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "It is nasty, dirty weather outside there on the *puszta*;[1] the sky is cloudy, the earth muddy, the rain has been falling for two weeks incessantly, as if by special command. There are inundations and submersions everywhere; rushes are growing instead of wheat, the stork is ploughing, the duck is fishing all over the precious sea-like expanse. \"This judgment weather began on St. Medardus' Day, and will last now for forty days longer, but if it does last, I know not where we are to find the Noah to save man and beast from a partial deluge.\""
-    },
-    {
-      "id": "s0-2",
-      "sceneId": "s0",
-      "text": "[Footnote 1: For the meaning of this and all other Hungarian words used in the text, see the glossary at end of book.]"
+      "text": "It is nasty, dirty weather outside there on the *puszta*; the sky is cloudy, the earth muddy, the rain has been falling for two weeks incessantly, as if by special command. There are inundations and submersions everywhere; rushes are growing instead of wheat, the stork is ploughing, the duck is fishing all over the precious sea-like expanse. \"This judgment weather began on St. Medardus' Day, and will last now for forty days longer, but if it does last, I know not where we are to find the Noah to save man and beast from a partial deluge.\""
     },
     {
       "id": "s0-3",
