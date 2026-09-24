@@ -31,104 +31,14 @@ export type Club = {
   traces: Trace[];
 };
 
-export const READERS: Reader[] = [
-  {
-    id: "ada",
-    name: "Ada Voss",
-    handle: "ada",
-    city: "Fort Greene",
-    fill: "yellow",
-    reading: "passing",
-    workTitle: "Passing",
-    kept: "letter",
-    line: "The envelope is still unopened.",
-    clubs: ["drayton", "eastside", "integral"],
-  },
-  {
-    id: "jules",
-    name: "Jules Mallard",
-    handle: "jules",
-    city: "Upper West",
-    fill: "red",
-    reading: "gold",
-    workTitle: "Jews Without Money",
-    kept: "street",
-    line: "The pushcarts are out.",
-    clubs: ["eastside", "tegel"],
-  },
-  {
-    id: "nora",
-    name: "Nora Chen",
-    handle: "nora",
-    city: "Two Bridges",
-    fill: "ink",
-    reading: "we",
-    workTitle: "We",
-    kept: "glass",
-    line: "The Integral is almost finished.",
-    clubs: ["integral", "ferryslip"],
-  },
-  {
-    id: "vera",
-    name: "Vera S.",
-    handle: "vera",
-    city: "Gramercy",
-    fill: "paper",
-    reading: "naomi",
-    workTitle: "Naomi",
-    kept: "name",
-    line: "She writes it in Roman letters.",
-    clubs: ["drayton", "cellar"],
-  },
-  {
-    id: "ivo",
-    name: "Ivo Reed",
-    handle: "ivo",
-    city: "Greenpoint",
-    fill: "blue",
-    reading: "manhattan",
-    workTitle: "Manhattan Transfer",
-    kept: "ferry",
-    line: "Three gulls over the slip.",
-    clubs: ["ferryslip", "tegel", "integral"],
-  },
-  {
-    id: "cleo",
-    name: "Cleo Hart",
-    handle: "cleo",
-    city: "Harlem",
-    fill: "red",
-    reading: "tropic",
-    workTitle: "Tropic Death",
-    kept: "sun",
-    line: "The whistle has blown.",
-    clubs: ["eastside", "cellar"],
-  },
-  {
-    id: "leo",
-    name: "Leo Joyce",
-    handle: "leo",
-    city: "Inwood",
-    fill: "ink",
-    reading: "odessa",
-    workTitle: "Odessa Stories",
-    kept: "king",
-    line: "The tables go out the gate.",
-    clubs: ["tegel", "ferryslip"],
-  },
-  {
-    id: "rene",
-    name: "René Loisel",
-    handle: "rene",
-    city: "Astoria",
-    fill: "yellow",
-    reading: "madmen",
-    workTitle: "The Seven Madmen",
-    kept: "zone",
-    line: "The anguish sits two metres up.",
-    clubs: ["drayton"],
-  },
-];
+/**
+ * No demo directory. Ada Voss, Jules Mallard, Nora Chen, Vera S., Ivo Reed,
+ * Cleo Hart, Leo Joyce, and René Loisel used to live here as if they were
+ * readers you could follow. They are gone. Real people are this device's
+ * handle, contacts, and anyone who arrived on a shared sit, keep, or note.
+ * Club rooms may still name those old ids; unresolved members render as empty.
+ */
+export const READERS: Reader[] = [];
 
 export const CLUBS: Club[] = [
   {

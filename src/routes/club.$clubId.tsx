@@ -164,6 +164,9 @@ function HouseClub({ clubId }: { clubId: string }) {
             <span className="type-lede">You</span>
           </div>
         ) : null}
+        {members.length === 0 && !isIn ? (
+          <p className="font-serif text-base text-ink/70">No one from this phone is in the room yet.</p>
+        ) : null}
         {members.map((reader) => {
           if (!reader) return null;
           const isFollowed = hydrated && following.includes(reader.id);
@@ -200,15 +203,20 @@ function HouseClub({ clubId }: { clubId: string }) {
           {isIn ? (
             <p className="type-title italic text-ink/40">you</p>
           ) : null}
-          {club.traces.map((trace) => {
-            const who = getReader(trace.readerId);
-            return (
-              <div key={`${trace.readerId}-${trace.word}`}>
-                <p className="type-title italic">{trace.word}</p>
-                <p className="mt-1 type-kicker text-muted">{who?.name}</p>
-              </div>
-            );
-          })}
+          {club.traces.filter((trace) => getReader(trace.readerId)).length === 0 ? (
+            <p className="font-serif text-base text-ink/70">Keeps from people on this phone will gather here.</p>
+          ) : (
+            club.traces.map((trace) => {
+              const who = getReader(trace.readerId);
+              if (!who) return null;
+              return (
+                <div key={`${trace.readerId}-${trace.word}`}>
+                  <p className="type-title italic">{trace.word}</p>
+                  <p className="mt-1 type-kicker text-muted">{who.name}</p>
+                </div>
+              );
+            })
+          )}
         </div>
       </div>
     </ClubFrame>

@@ -35,9 +35,12 @@ test("handleError blocks reserved and taken names", () => {
   assert.equal(handleError("mina"), null);
 });
 
-test("catalog readers are findable by handle", () => {
-  assert.equal(readerByHandle("@Ada")?.id, "ada");
-  assert.ok(searchPeople("passing").some((row) => row.id === "ada"));
+test("demo salon handles are not a people directory", () => {
+  assert.equal(readerByHandle("@Ada"), undefined);
+  assert.equal(readerByHandle("nora"), undefined);
+  assert.equal(searchPeople("passing").length, 0);
+  assert.equal(searchPeople("").length, 0);
+  assert.equal(friendsFeed(["ada", "nora", "vera", "ivo", "cleo", "leo", "rene"]).length, 0);
 });
 
 test("local contacts join the friends feed", () => {
@@ -47,14 +50,6 @@ test("local contacts join the friends feed", () => {
   const feed = friendsFeed([contact.id], [contact]);
   assert.equal(feed[0]?.handle, "mina");
   assert.equal(feed[0]?.workTitle, "Passing");
-});
-
-test("catalog friends also surface a kept line to echo", () => {
-  const feed = friendsFeed(["ada"]);
-  assert.ok(feed.some((row) => row.kind === "sitting" && row.handle === "ada"));
-  const kept = feed.find((row) => row.kind === "kept" && row.handle === "ada");
-  assert.ok(kept?.line);
-  assert.equal(kept.reading, "passing");
 });
 
 test("youCard uses last-read as currently sitting", () => {

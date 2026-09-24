@@ -221,7 +221,7 @@ export function HostSitForm({ onClose }: { onClose: () => void }) {
           <input
             value={invite}
             onChange={(event) => setInvite(event.target.value)}
-            placeholder="ada"
+            placeholder="name"
             autoCapitalize="none"
             autoCorrect="off"
             spellCheck={false}

@@ -27,6 +27,7 @@ import { Route as StoresRouteImport } from './routes/stores'
 import { Route as TogetherRouteImport } from './routes/together'
 import { Route as ApiRtcRouteImport } from './routes/api/rtc'
 import { Route as ClubClubIdRouteImport } from './routes/club.$clubId'
+import { Route as FriendsHandleRouteImport } from './routes/friends_.$handle'
 import { Route as PledgeTokenRouteImport } from './routes/pledge.$token'
 import { Route as ProfileIndexRouteImport } from './routes/profile.index'
 import { Route as ProfileCollectionRouteImport } from './routes/profile.collection'
@@ -127,6 +128,11 @@ const ClubClubIdRoute = ClubClubIdRouteImport.update({
   path: '/club/$clubId',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FriendsHandleRoute = FriendsHandleRouteImport.update({
+  id: '/friends_/$handle',
+  path: '/friends/$handle',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PledgeTokenRoute = PledgeTokenRouteImport.update({
   id: '/pledge/$token',
   path: '/pledge/$token',
@@ -192,6 +198,7 @@ export interface FileRoutesByFullPath {
   '/together': typeof TogetherRoute
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
+  '/friends/$handle': typeof FriendsHandleRoute
   '/pledge/$token': typeof PledgeTokenRoute
   '/profile/collection': typeof ProfileCollectionRoute
   '/read/$workId': typeof ReadWorkIdRoute
@@ -220,6 +227,7 @@ export interface FileRoutesByTo {
   '/together': typeof TogetherRoute
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
+  '/friends/$handle': typeof FriendsHandleRoute
   '/pledge/$token': typeof PledgeTokenRoute
   '/profile/collection': typeof ProfileCollectionRoute
   '/read/$workId': typeof ReadWorkIdRoute
@@ -250,6 +258,7 @@ export interface FileRoutesById {
   '/together': typeof TogetherRoute
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
+  '/friends_/$handle': typeof FriendsHandleRoute
   '/pledge/$token': typeof PledgeTokenRoute
   '/profile/collection': typeof ProfileCollectionRoute
   '/read/$workId': typeof ReadWorkIdRoute
@@ -281,6 +290,7 @@ export interface FileRouteTypes {
     | '/together'
     | '/api/rtc'
     | '/club/$clubId'
+    | '/friends/$handle'
     | '/pledge/$token'
     | '/profile/collection'
     | '/read/$workId'
@@ -309,6 +319,7 @@ export interface FileRouteTypes {
     | '/together'
     | '/api/rtc'
     | '/club/$clubId'
+    | '/friends/$handle'
     | '/pledge/$token'
     | '/profile/collection'
     | '/read/$workId'
@@ -338,6 +349,7 @@ export interface FileRouteTypes {
     | '/together'
     | '/api/rtc'
     | '/club/$clubId'
+    | '/friends_/$handle'
     | '/pledge/$token'
     | '/profile/collection'
     | '/read/$workId'
@@ -368,6 +380,7 @@ export interface RootRouteChildren {
   TogetherRoute: typeof TogetherRoute
   ApiRtcRoute: typeof ApiRtcRoute
   ClubClubIdRoute: typeof ClubClubIdRoute
+  FriendsHandleRoute: typeof FriendsHandleRoute
   PledgeTokenRoute: typeof PledgeTokenRoute
   ReadWorkIdRoute: typeof ReadWorkIdRoute
   ReaderReaderIdRoute: typeof ReaderReaderIdRoute
@@ -505,6 +518,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ClubClubIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/friends_/$handle': {
+      id: '/friends_/$handle'
+      path: '/friends/$handle'
+      fullPath: '/friends/$handle'
+      preLoaderRoute: typeof FriendsHandleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/pledge/$token': {
       id: '/pledge/$token'
       path: '/pledge/$token'
@@ -603,6 +623,7 @@ const rootRouteChildren: RootRouteChildren = {
   TogetherRoute: TogetherRoute,
   ApiRtcRoute: ApiRtcRoute,
   ClubClubIdRoute: ClubClubIdRoute,
+  FriendsHandleRoute: FriendsHandleRoute,
   PledgeTokenRoute: PledgeTokenRoute,
   ReadWorkIdRoute: ReadWorkIdRoute,
   ReaderReaderIdRoute: ReaderReaderIdRoute,
