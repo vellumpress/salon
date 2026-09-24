@@ -1,4 +1,4 @@
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 /** Heart toggle for a work — stops navigation when nested in a Link. */
@@ -11,8 +11,8 @@ export function FavoriteMark({
   className?: string;
   compact?: boolean;
 }) {
-  const favorites = useVellum((s) => s.favorites) ?? [];
-  const toggleFavorite = useVellum((s) => s.toggleFavorite);
+  const favorites = useTbr((s) => s.favorites) ?? [];
+  const toggleFavorite = useTbr((s) => s.toggleFavorite);
   const on = favorites.includes(workId);
 
   return (

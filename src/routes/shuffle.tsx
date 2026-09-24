@@ -10,7 +10,7 @@ import {
   type SittingLength,
 } from "@/lib/shuffle";
 import { boardWork } from "@/lib/mondrian";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { APP_NAME, publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
 import { prefetchWork } from "@/lib/works";
 
@@ -29,10 +29,10 @@ type Step = "length" | "company" | "share";
 function ShufflePage() {
   const navigate = useNavigate();
   const { except, together } = Route.useSearch();
-  const lastShuffle = useVellum((s) => s.lastShuffle);
-  const taste = useVellum((s) => s.taste);
-  const setSittingMinutes = useVellum((s) => s.setSittingMinutes);
-  const setLastShuffle = useVellum((s) => s.setLastShuffle);
+  const lastShuffle = useTbr((s) => s.lastShuffle);
+  const taste = useTbr((s) => s.taste);
+  const setSittingMinutes = useTbr((s) => s.setSittingMinutes);
+  const setLastShuffle = useTbr((s) => s.setLastShuffle);
   const [step, setStep] = useState<Step>("length");
   const [sit, setSit] = useState<SittingLength>(20);
   const [workId, setWorkId] = useState("passing");
@@ -52,11 +52,11 @@ function ShufflePage() {
 
   useEffect(() => {
     const done = () => setReady(true);
-    if (useVellum.persist.hasHydrated()) {
+    if (useTbr.persist.hasHydrated()) {
       done();
       return;
     }
-    return useVellum.persist.onFinishHydration(done);
+    return useTbr.persist.onFinishHydration(done);
   }, []);
 
   function chooseLength(next: SittingLength) {

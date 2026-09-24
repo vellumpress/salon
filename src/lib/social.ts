@@ -162,7 +162,9 @@ const RESERVED_HANDLES = new Set([
   "friends",
   "admin",
   "staff",
+  // Retired product name. Kept reserved so it cannot be claimed and shown as a handle.
   "vellum",
+  "tbr",
   "profile",
 ]);
 

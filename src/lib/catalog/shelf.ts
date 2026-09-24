@@ -420,7 +420,7 @@ export const SHELF: ShelfWork[] = [
       "One of the fruits of Emancipation in the West Indian islands is the number of the ruins, either attached to the houses that remain or within a stone’s throw of them: ruined slaves’ quarters, ruined sugar-grinding houses, ruined boiling houses; often ruined mansions that were too expensive to maintain.",
     breaths: 1514,
     intro:
-      "This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant. Hughes’s 1929 voice already uses period racial language in this stretch, and a sharper racial gaze continues immediately after Vellum’s stop. We end at the plant on purpose so the timed sit stays bounded; if you Host further into the chapter, warn the room first. Flag — do not sanitize mid-bind.",
+      "This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant. Hughes’s 1929 voice already uses period racial language in this stretch, and a sharper racial gaze continues immediately after tbr’s stop. We end at the plant on purpose so the timed sit stays bounded; if you Host further into the chapter, warn the room first. Flag — do not sanitize mid-bind.",
   },
   {
     id: "all-quiet-on-the-western-front",
@@ -480,7 +480,7 @@ export const SHELF: ShelfWork[] = [
   { id: "northanger-abbey", title: "Northanger Abbey", author: "Jane Austen", year: 1817, form: "novel", language: "English", minutes: 404, local: true, opening: "This little work was finished in the year 1803, and intended for immediate publication.", breaths: 3232, gutenberg: 121 },
   { id: "don-juan", title: "Don Juan", author: "Lord Byron", year: 1819, form: "poem", language: "English", minutes: 90, local: true, opening: "Of all o’er which such love may be a ranger: If people go beyond, ’tis quite a crime,", breaths: 5569, gutenberg: 21700 },
   { id: "melmoth-the-wanderer", title: "Melmoth the Wanderer", author: "Charles Robert Maturin", year: 1820, form: "novel", language: "English", local: true, opening: "Alive again?", breaths: 2071, minutes: 259, gutenberg: 53685 },
-  { id: "malay-annals-sejarah-melayu", title: "Malay Annals (Sejarah Melayu)", author: "Anonymous Malay court chronicle; tr. John Leyden", year: 1821, form: "other", language: "English", minutes: 370, local: true, opening: "The author of this book commences with stating, that he will declare sincerely what he regards as the truth, according to the best of his information.", breaths: 2956, intro: "The Malay Annals (Sejarah Melayu) is the denser Melaka court classic — Alexander-tinged origin legends, raja genealogies, Melaka’s rise and fall, Hang Tuah’s world — the prestige chronicle behind modern Malaysia’s literary memory. John Leyden’s 1821 English (with Raffles’s introduction in the source volume) is older and heavier than Clifford’s sketches; it earns the “serious classic” slot on Thea Morse’s board, not the first-read slot for a worldly NYC shelf.\n\nSource: Internet Archive `b29336600`, Leyden 1821, CLEAR EN. Raffles introduction, publisher apparatus, and OCR front garbage stripped; body opens at the chronicle heading (Sejarah Melayu). Light OCR cleanup only — expect denser, older English and imperfect scan texture; this is a reading edition, not a critical text.\n\nRead it the New York way when you want depth after the autobiographical and Resident shelves: Melaka court heat for a long weekend, not beach reading. Keep Abdullah and Clifford ahead in the queue. Vellum Press; US public domain." },
+  { id: "malay-annals-sejarah-melayu", title: "Malay Annals (Sejarah Melayu)", author: "Anonymous Malay court chronicle; tr. John Leyden", year: 1821, form: "other", language: "English", minutes: 370, local: true, opening: "The author of this book commences with stating, that he will declare sincerely what he regards as the truth, according to the best of his information.", breaths: 2956, intro: "The Malay Annals (Sejarah Melayu) is the denser Melaka court classic — Alexander-tinged origin legends, raja genealogies, Melaka’s rise and fall, Hang Tuah’s world — the prestige chronicle behind modern Malaysia’s literary memory. John Leyden’s 1821 English (with Raffles’s introduction in the source volume) is older and heavier than Clifford’s sketches; it earns the “serious classic” slot on Thea Morse’s board, not the first-read slot for a worldly NYC shelf.\n\nSource: Internet Archive `b29336600`, Leyden 1821, CLEAR EN. Raffles introduction, publisher apparatus, and OCR front garbage stripped; body opens at the chronicle heading (Sejarah Melayu). Light OCR cleanup only — expect denser, older English and imperfect scan texture; this is a reading edition, not a critical text.\n\nRead it the New York way when you want depth after the autobiographical and Resident shelves: Melaka court heat for a long weekend, not beach reading. Keep Abdullah and Clifford ahead in the queue. tbr; US public domain." },
   { id: "the-last-man", title: "The Last Man", author: "Mary Shelley", year: 1826, form: "novel", language: "English", minutes: 828, gutenberg: 18247,
     local: true,
     opening: "I am the native of a sea-surrounded nook, a cloud-enshadowed land, which, when the surface of the globe, with its shoreless ocean and trackless continents, presents itself to my mind, appears only as an inconsiderable sp",
@@ -1304,7 +1304,7 @@ export const SHELF: ShelfWork[] = [
   { id: "free-and-other-stories", title: "Free, and Other Stories", author: "Theodore Dreiser", year: 1918, form: "stories", language: "English", minutes: 787, local: true, opening: "The large and rather comfortable apartment of Rufus Haymaker, architect, in Central Park West, was very silent.", breaths: 6296, gutenberg: 68542 },
   { id: "mashi-and-other-stories", title: "Mashi and Other Stories", author: "Rabindranath Tagore", year: 1918, form: "stories", language: "Bengali", minutes: 80, local: true, opening: "'Mashi!'[1]", breaths: 854, gutenberg: 34757 },
   { id: "south-american-jungle-tales", title: "South American Jungle Tales", author: "Horacio Quiroga", year: 1918, form: "stories", language: "Spanish", minutes: 80, local: true, opening: "He was just finishing the letter when the whole river valley began to tremble with the most frightful roars. The panthers were coming back in a large company to", breaths: 526, gutenberg: 46051 },
-  { id: "the-autobiography-of-munshi-abdullah-hikayat-abd", title: "The Autobiography of Munshi Abdullah (Hikayat Abdullah)", author: "Abdullah bin Abdul Kadir; tr. W. G. Shellabear", year: 1918, form: "other", language: "English", minutes: 258, local: true, opening: "I am about to write a story of my life, and I will call it \"The Autobiography of Abdullah\" (Hikayat Abdullah).", breaths: 2064, intro: "Munshi Abdullah bin Abdul Kadir wrote as a Straits insider — Malacca-born, Malay-literate, moving through courts, missionary colleges, and the raw founding of Singapore. Hikayat Abdullah is not a Resident’s sketch of “the Malay”; it is a first-person autobiography from the peninsula’s own literary world: traders, Raffles, Farquhar, elephants, land auctions, and the everyday bargain of living between kampong and Company.\n\nThis English text is W. G. Shellabear’s 1918 Singapore Methodist Publishing House translation (Internet Archive `autobiographyofm00abdu`), cleared CLEAR EN for Vellum by Thea Morse. Library stamps, TOC, and long front matter stripped; body opens at Chapter 1, “Abdullah’s Forefathers.” Light OCR cleanup only (soft hyphens, mojibake); Shellabear’s period spelling kept.\n\nRead it the New York way: a Malay voice on the train between stops — worldly, local, and older than the colonial shelf that usually speaks for the peninsula. Pair later with Clifford if you want Resident immersion; lead here so the shelf is not Resident-only. Vellum Press local bind." },
+  { id: "the-autobiography-of-munshi-abdullah-hikayat-abd", title: "The Autobiography of Munshi Abdullah (Hikayat Abdullah)", author: "Abdullah bin Abdul Kadir; tr. W. G. Shellabear", year: 1918, form: "other", language: "English", minutes: 258, local: true, opening: "I am about to write a story of my life, and I will call it \"The Autobiography of Abdullah\" (Hikayat Abdullah).", breaths: 2064, intro: "Munshi Abdullah bin Abdul Kadir wrote as a Straits insider — Malacca-born, Malay-literate, moving through courts, missionary colleges, and the raw founding of Singapore. Hikayat Abdullah is not a Resident’s sketch of “the Malay”; it is a first-person autobiography from the peninsula’s own literary world: traders, Raffles, Farquhar, elephants, land auctions, and the everyday bargain of living between kampong and Company.\n\nThis English text is W. G. Shellabear’s 1918 Singapore Methodist Publishing House translation (Internet Archive `autobiographyofm00abdu`), cleared CLEAR EN for tbr by Thea Morse. Library stamps, TOC, and long front matter stripped; body opens at Chapter 1, “Abdullah’s Forefathers.” Light OCR cleanup only (soft hyphens, mojibake); Shellabear’s period spelling kept.\n\nRead it the New York way: a Malay voice on the train between stops — worldly, local, and older than the colonial shelf that usually speaks for the peninsula. Pair later with Clifford if you want Resident immersion; lead here so the shelf is not Resident-only. tbr local bind." },
   { id: "the-madman-his-parables-and-poems", title: "The Madman: His Parables and Poems", author: "Kahlil Gibran", year: 1918, form: "other", language: "English", local: true, opening: "You ask me how I became a madman.", breaths: 431, minutes: 54, gutenberg: 5616 },
   { id: "what-not", title: "What Not", author: "Rose Macaulay", year: 1918, form: "novel", language: "English", local: true, opening: "After the Great War (but I do not say how long after), when the tumult and the shouting had died, and those who were left of the captains and the kings had gone", breaths: 2979, minutes: 372, gutenberg: 35198 },
   {
@@ -2255,7 +2255,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "miss-brill-adapted",
     title: "Katherine Mansfield, Miss Brill recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2269,7 +2269,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "prefer-not",
     title: "Herman Melville, Bartleby recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2283,7 +2283,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "late-season",
     title: "Anton Chekhov, The Lady with the Dog recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2298,7 +2298,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "between-the-drop-and-the-water",
     title: "Ambrose Bierce, An Occurrence at Owl Creek Bridge recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2313,7 +2313,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "he-woke-changed",
     title: "Franz Kafka, The Metamorphosis recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2328,7 +2328,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "the-pattern",
     title: "Charlotte Perkins Gilman, The Yellow Wallpaper recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2342,7 +2342,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "a-coat-worthy-of-respect",
     title: "Nikolai Gogol, The Overcoat recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2357,7 +2357,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "what-she-borrowed",
     title: "Guy de Maupassant, The Necklace recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2371,7 +2371,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "it-was-not-nervousness",
     title: "Edgar Allan Poe, The Tell-Tale Heart recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2385,7 +2385,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "during-carnival",
     title: "Edgar Allan Poe, The Cask of Amontillado recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2399,7 +2399,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "what-we-sold",
     title: "O. Henry, The Gift of the Magi recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2414,7 +2414,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "bliss-tokyo",
     title: "Katherine Mansfield, Bliss recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2428,7 +2428,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "open-window-singapore",
     title: "Saki, The Open Window recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2442,7 +2442,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "story-of-an-hour-buenos-aires",
     title: "Kate Chopin, The Story of an Hour recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2456,7 +2456,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "masque-rio",
     title: "Edgar Allan Poe, The Masque of the Red Death recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2470,7 +2470,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "boule-de-suif-istanbul",
     title: "Guy de Maupassant, Boule de Suif recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2484,7 +2484,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "happy-prince-hong-kong",
     title: "Oscar Wilde, The Happy Prince recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2499,7 +2499,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "hunger-artist-milan",
     title: "Franz Kafka, A Hunger Artist recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2514,7 +2514,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "the-nose-cape-town",
     title: "Nikolai Gogol, The Nose recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2528,7 +2528,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "queen-of-spades-paris",
     title: "Alexander Pushkin, The Queen of Spades recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2542,7 +2542,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "decapitated-chicken-lisbon",
     title: "Horacio Quiroga, The Decapitated Chicken recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2556,7 +2556,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "garden-party-barcelona",
     title: "Katherine Mansfield, The Garden Party recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2571,7 +2571,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "usher-prague",
     title: "Edgar Allan Poe, The Fall of the House of Usher recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2586,7 +2586,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "araby-seville",
     title: "James Joyce, Araby recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2601,7 +2601,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "madame-bovary-tokyo",
     title: "Gustave Flaubert, Madame Bovary recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2615,7 +2615,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "dorian-gray-shanghai",
     title: "Oscar Wilde, The Picture of Dorian Gray recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2629,7 +2629,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "anna-karenina-milan",
     title: "Leo Tolstoy, Anna Karenina recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2643,7 +2643,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "jane-eyre-singapore",
     title: "Charlotte Brontë, Jane Eyre recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2657,7 +2657,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "pride-prejudice-buenos-aires",
     title: "Jane Austen, Pride and Prejudice recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2671,7 +2671,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "dracula-istanbul",
     title: "Bram Stoker, Dracula recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2685,7 +2685,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "crime-punishment-cape-town",
     title: "Fyodor Dostoevsky, Crime and Punishment recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2699,7 +2699,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "age-of-innocence-venice",
     title: "Edith Wharton, The Age of Innocence recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2713,7 +2713,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "tess-lisbon",
     title: "Thomas Hardy, Tess of the d'Urbervilles recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2727,7 +2727,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "scarlet-letter-kyoto",
     title: "Nathaniel Hawthorne, The Scarlet Letter recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -2741,7 +2741,7 @@ export const SHELF: ShelfWork[] = [
   {
     id: "wuthering-heights-rio",
     title: "Emily Brontë, Wuthering Heights recast",
-    author: "Vellum",
+    author: "tbr",
     year: 2026,
     form: "other",
     language: "English",
@@ -3178,8 +3178,8 @@ export const SHELF: ShelfWork[] = [
   { id: "hebrew-literature", title: "Hebrew Literature", author: "Epiphanius Wilson (ed.)", year: 1901, form: "other", language: "English", minutes: 50, local: true, opening: "1. “From what time do we recite the Shemah(8) in the evening?” “From the hour the priests(9) enter (", breaths: 56, gutenberg: 28369 },
   { id: "the-history-of-yiddish-literature", title: "The History of Yiddish Literature in the Nineteenth Century", author: "Leo Wiener", year: 1899, form: "other", language: "English", minutes: 33, local: true, opening: "The literatures of the early Middle Ages were bilingual. The Catholic religion had brought with it t", breaths: 11, gutenberg: 46729 },
   { id: "korean-folk-tales", title: "Korean Folk Tales: Imps, Ghosts and Fairies", author: "Im Bang & Yi Ryuk (tr. James S. Gale)", year: 1913, form: "stories", language: "English", minutes: 48, local: true, opening: "In the days of King Sung-jong (A.D. 1488-1495) one of Korea's noted men became governor of Pyong-an ", breaths: 29, gutenberg: 51002 },
-  // Mira CLEAR — Amber Later, Generosity. Local manuscript. Rights: Vellum. No PG. For you only. Never Featured.
-  { id: "generosity", title: "Generosity", author: "Amber Later", year: 2026, form: "stories", language: "English", minutes: 33, local: true, opening: "I should apologize.", breaths: 85, rights: "Vellum", intro: "An apology begins with a box of unused baby clothes and a basement mural of identical smiles. The story keeps going until the face is only itself again." },
+  // Mira CLEAR — Amber Later, Generosity. Local manuscript. Rights: tbr. No PG. For you only. Never Featured.
+  { id: "generosity", title: "Generosity", author: "Amber Later", year: 2026, form: "stories", language: "English", minutes: 33, local: true, opening: "I should apologize.", breaths: 85, rights: "tbr", intro: "An apology begins with a box of unused baby clothes and a basement mural of identical smiles. The story keeps going until the face is only itself again." },
 ];
 
 const BY_ID = new Map(SHELF.map((item) => [item.id, item]));

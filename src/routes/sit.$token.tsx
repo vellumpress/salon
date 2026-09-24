@@ -15,7 +15,7 @@ import { salonShareText, salonShareTitle } from "@/lib/site";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { shareOrCopy } from "@/lib/shuffle";
 import { fillClass, fillInk, planeOf } from "@/lib/mondrian";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/sit/$token")({
@@ -26,11 +26,11 @@ function HostedSitPage() {
   const { token: raw } = Route.useParams();
   const token = asShareToken(raw) ?? raw;
   const hydrated = usePersistHydrated();
-  const handle = useVellum((s) => s.handle) ?? "";
-  const hostedSits = useVellum((s) => s.hostedSits) ?? [];
-  const rememberHostedSit = useVellum((s) => s.rememberHostedSit);
-  const rsvpSit = useVellum((s) => s.rsvpSit);
-  const endHostedSit = useVellum((s) => s.endHostedSit);
+  const handle = useTbr((s) => s.handle) ?? "";
+  const hostedSits = useTbr((s) => s.hostedSits) ?? [];
+  const rememberHostedSit = useTbr((s) => s.rememberHostedSit);
+  const rsvpSit = useTbr((s) => s.rsvpSit);
+  const endHostedSit = useTbr((s) => s.endHostedSit);
   const decoded = useMemo(() => decodeHostedSit(token), [token]);
   const stored = hostedSits.find((row) => row.id === decoded?.id);
   const sit = stored ?? decoded ?? null;

@@ -167,7 +167,10 @@ export function stripNulBytesInHtmlTree(destDir) {
 }
 
 export const SHELL_CACHE_ATTR = "data-shell-network";
-export const SHELL_CACHE_NAME = "vellum-shell";
+/** Current Pages shell cache. The retired name is copied in, then deleted, on activate. */
+export const SHELL_CACHE_NAME = "tbr-shell";
+/** Previous shell cache. Kept here only so activate can move offline pages across and drop it. */
+export const RETIRED_SHELL_CACHE_NAME = "vellum-shell";
 
 /** Network-first document loads. Hashed assets are not intercepted. */
 export function renderShellServiceWorker() {
@@ -176,18 +179,34 @@ self.addEventListener("install", function () {
   self.skipWaiting();
 });
 self.addEventListener("activate", function (event) {
+  var current = "${SHELL_CACHE_NAME}";
+  var retired = "${RETIRED_SHELL_CACHE_NAME}";
   event.waitUntil(
     caches
       .keys()
       .then(function (keys) {
         return Promise.all(
-          keys
-            .filter(function (key) {
-              return key !== "${SHELL_CACHE_NAME}";
-            })
-            .map(function (key) {
-              return caches.delete(key);
-            }),
+          keys.map(function (key) {
+            if (key === current) return Promise.resolve();
+            if (key === retired) {
+              return caches.open(retired).then(function (oldCache) {
+                return caches.open(current).then(function (nextCache) {
+                  return oldCache.keys().then(function (reqs) {
+                    return Promise.all(
+                      reqs.map(function (req) {
+                        return oldCache.match(req).then(function (res) {
+                          if (res) return nextCache.put(req, res);
+                        });
+                      }),
+                    );
+                  });
+                });
+              }).then(function () {
+                return caches.delete(retired);
+              });
+            }
+            return caches.delete(key);
+          }),
         );
       })
       .then(function () {

@@ -8,7 +8,7 @@ import {
   booksOnTbrLabel,
   notableAuthor,
 } from "@/lib/notable-authors";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/friends_/author/$slug")({
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/friends_/author/$slug")({
 function AuthorProfilePage() {
   const { slug } = Route.useParams();
   const hydrated = usePersistHydrated();
-  const progress = useVellum((s) => s.progress);
+  const progress = useTbr((s) => s.progress);
   const followed = useFollowedAuthors();
   const author = useMemo(() => notableAuthor(slug), [slug]);
   const read = useMemo(

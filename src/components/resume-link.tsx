@@ -3,25 +3,25 @@ import { useEffect, useState } from "react";
 import { lastReadCue, lastReadPercent, lastReadProgress } from "@/lib/continuity";
 import { boardWork } from "@/lib/mondrian";
 import { shelfWork } from "@/lib/catalog/shelf";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 export function usePersistHydrated() {
   const [hydrated, setHydrated] = useState(() =>
-    typeof window === "undefined" ? false : useVellum.persist.hasHydrated(),
+    typeof window === "undefined" ? false : useTbr.persist.hasHydrated(),
   );
   useEffect(() => {
-    if (useVellum.persist.hasHydrated()) {
+    if (useTbr.persist.hasHydrated()) {
       setHydrated(true);
       return;
     }
-    return useVellum.persist.onFinishHydration(() => setHydrated(true));
+    return useTbr.persist.onFinishHydration(() => setHydrated(true));
   }, []);
   return hydrated;
 }
 
 export function useLastRead() {
-  const progress = useVellum((s) => s.progress);
+  const progress = useTbr((s) => s.progress);
   const hydrated = usePersistHydrated();
   if (!hydrated) return null;
   const last = lastReadProgress(progress);

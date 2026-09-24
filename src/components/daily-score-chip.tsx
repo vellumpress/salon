@@ -3,7 +3,7 @@ import { useMemo } from "react";
 import { usePersistHydrated } from "@/components/resume-link";
 import { dailyScoreGlance } from "@/lib/reading-score";
 import { deriveReadingStats } from "@/lib/reading-stats";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 /**
@@ -22,22 +22,22 @@ export function DailyScoreChip({
   placement?: "mark" | "continue";
 }) {
   const hydrated = usePersistHydrated();
-  const progress = useVellum((s) => s.progress);
-  const favorites = useVellum((s) => s.favorites);
-  const readingMinutesByDay = useVellum((s) => s.readingMinutesByDay);
-  const advancesByDay = useVellum((s) => s.advancesByDay);
-  const sceneCrossesByDay = useVellum((s) => s.sceneCrossesByDay);
-  const keepsByDay = useVellum((s) => s.keepsByDay);
-  const worksTouchedByDay = useVellum((s) => s.worksTouchedByDay);
-  const hostOpensByDay = useVellum((s) => s.hostOpensByDay);
-  const sitsByDay = useVellum((s) => s.sitsByDay);
-  const clubTouchesByDay = useVellum((s) => s.clubTouchesByDay);
-  const lastActiveReadAt = useVellum((s) => s.lastActiveReadAt);
-  const sitHistory = useVellum((s) => s.sitHistory);
-  const togetherKeeps = useVellum((s) => s.togetherKeeps);
-  const hostedSits = useVellum((s) => s.hostedSits);
-  const handle = useVellum((s) => s.handle);
-  const sittingMinutes = useVellum((s) => s.sittingMinutes);
+  const progress = useTbr((s) => s.progress);
+  const favorites = useTbr((s) => s.favorites);
+  const readingMinutesByDay = useTbr((s) => s.readingMinutesByDay);
+  const advancesByDay = useTbr((s) => s.advancesByDay);
+  const sceneCrossesByDay = useTbr((s) => s.sceneCrossesByDay);
+  const keepsByDay = useTbr((s) => s.keepsByDay);
+  const worksTouchedByDay = useTbr((s) => s.worksTouchedByDay);
+  const hostOpensByDay = useTbr((s) => s.hostOpensByDay);
+  const sitsByDay = useTbr((s) => s.sitsByDay);
+  const clubTouchesByDay = useTbr((s) => s.clubTouchesByDay);
+  const lastActiveReadAt = useTbr((s) => s.lastActiveReadAt);
+  const sitHistory = useTbr((s) => s.sitHistory);
+  const togetherKeeps = useTbr((s) => s.togetherKeeps);
+  const hostedSits = useTbr((s) => s.hostedSits);
+  const handle = useTbr((s) => s.handle);
+  const sittingMinutes = useTbr((s) => s.sittingMinutes);
 
   const daily = useMemo(() => {
     if (!hydrated) return null;

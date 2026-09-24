@@ -30,7 +30,8 @@ function asRole(value: string): Role {
   return value === "staff" ? "staff" : "reader";
 }
 
-function isVellumPressEmail(email: string): boolean {
+/** Real staff mailbox domain. Leave it; a rename would reject every staff account. */
+function isStaffEmail(email: string): boolean {
   const trimmed = email.trim().toLowerCase();
   const at = trimmed.lastIndexOf("@");
   if (at <= 0) return false;
@@ -217,7 +218,7 @@ export async function loadDeskHandler(userId: string) {
 export async function claimStaffHandler(userId: string): Promise<Me> {
   const sql = await getSql();
   const email = await emailFor(sql, userId);
-  if (!isVellumPressEmail(email)) {
+  if (!isStaffEmail(email)) {
     throw new Error("Staff sit at vellum.press");
   }
   await ensureProfile(sql, userId);
@@ -278,7 +279,7 @@ export async function setRoleHandler(
   if (!target) throw new Error("No such reader");
   if (data.role === "staff") {
     const email = await emailFor(sql, data.userId);
-    if (!isVellumPressEmail(email)) {
+    if (!isStaffEmail(email)) {
       throw new Error("Staff sit at vellum.press");
     }
   }

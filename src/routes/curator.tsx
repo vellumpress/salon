@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { askCurator } from "@/lib/ask-curator";
 import { boardWork } from "@/lib/mondrian";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import type { SittingLength } from "@/lib/shuffle";
 
 export const Route = createFileRoute("/curator")({
@@ -29,13 +29,13 @@ function pinDocument() {
 function CuratorPage() {
   const navigate = useNavigate();
   const { from } = Route.useSearch();
-  const turns = useVellum((s) => s.curator);
-  const taste = useVellum((s) => s.taste);
-  const readingNow = useVellum((s) => s.readingNow);
-  const pushCurator = useVellum((s) => s.pushCurator);
-  const setTaste = useVellum((s) => s.setTaste);
-  const setSittingMinutes = useVellum((s) => s.setSittingMinutes);
-  const setLastShuffle = useVellum((s) => s.setLastShuffle);
+  const turns = useTbr((s) => s.curator);
+  const taste = useTbr((s) => s.taste);
+  const readingNow = useTbr((s) => s.readingNow);
+  const pushCurator = useTbr((s) => s.pushCurator);
+  const setTaste = useTbr((s) => s.setTaste);
+  const setSittingMinutes = useTbr((s) => s.setSittingMinutes);
+  const setLastShuffle = useTbr((s) => s.setLastShuffle);
   const [draft, setDraft] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -82,7 +82,7 @@ function CuratorPage() {
     setOffer(null);
     pushCurator({ role: "user", text: trimmed });
     setDraft("");
-    const history = [...useVellum.getState().curator].slice(-12);
+    const history = [...useTbr.getState().curator].slice(-12);
     try {
       const result = await askCurator({
         data: {

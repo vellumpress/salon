@@ -73,7 +73,7 @@ export type ReadingNow = {
   sentence: string;
 };
 
-type VellumState = {
+type TbrState = {
   theme: "paper" | "dusk";
   /** Timed sit length in minutes; 0 = open (no hourglass end). */
   sittingMinutes: number;
@@ -340,7 +340,7 @@ function applySittingClose(
   };
 }
 
-export const useVellum = create<VellumState>()(
+export const useTbr = create<TbrState>()(
   persist(
     (set, get) => ({
       theme: "paper",
@@ -763,6 +763,7 @@ export const useVellum = create<VellumState>()(
         }),
     }),
     {
+      // Persist key stays `vellum-v1`. Renaming it would wipe reading progress on this phone.
       name: "vellum-v1",
       // v2: active-advance clock. v0/v1 ledgers were open→close wall time.
       version: 2,
@@ -802,21 +803,21 @@ export const useVellum = create<VellumState>()(
   ),
 );
 
-export const useChamber = useVellum;
+export const useChamber = useTbr;
 
 if (typeof window !== "undefined") {
   window.addEventListener("pagehide", () => {
-    const progress = pauseAllAnchors(useVellum.getState().progress);
-    if (progress !== useVellum.getState().progress) {
-      useVellum.setState({ progress });
+    const progress = pauseAllAnchors(useTbr.getState().progress);
+    if (progress !== useTbr.getState().progress) {
+      useTbr.setState({ progress });
     }
     flushPersist();
   });
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden) return;
-    const progress = pauseAllAnchors(useVellum.getState().progress);
-    if (progress !== useVellum.getState().progress) {
-      useVellum.setState({ progress });
+    const progress = pauseAllAnchors(useTbr.getState().progress);
+    if (progress !== useTbr.getState().progress) {
+      useTbr.setState({ progress });
     }
     flushPersist();
   });

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { canNativeShare, shareOrCopy } from "@/lib/shuffle";
 import { APP_NAME } from "@/lib/site";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 export function ShuffleButton({
@@ -12,7 +12,7 @@ export function ShuffleButton({
   currentId?: string;
   className?: string;
 }) {
-  const endSitting = useVellum((s) => s.endSitting);
+  const endSitting = useTbr((s) => s.endSitting);
 
   return (
     <Link

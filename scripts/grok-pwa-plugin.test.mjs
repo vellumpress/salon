@@ -483,10 +483,10 @@ test("renders the manifest with the per-app name", () => {
 
 test("manifest prefers site.json title over host slug", () => {
   const manifest = JSON.parse(
-    renderWebManifest("vellumpress.grok.me", { title: "Vellum" }),
+    renderWebManifest("reading-room.grok.me", { title: "tbr" }),
   );
-  assert.equal(manifest.name, "Vellum");
-  assert.equal(manifest.short_name, "Vellum");
+  assert.equal(manifest.name, "tbr");
+  assert.equal(manifest.short_name, "tbr");
 });
 
 // Tripwires: the deployed-app path only works if Nitro scans server/ — an

@@ -1,5 +1,5 @@
 /**
- * Daily reading score (0–100) — Mike-approved pillars for live Vellum.
+ * Daily reading score (0–100) — Mike-approved pillars for live tbr.
  *
  * Focused time uses *active* sentence-tap minutes only (same ledger as
  * Today / Week after the active-read clock). Idle open time never scores.

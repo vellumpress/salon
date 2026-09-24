@@ -163,5 +163,5 @@ export function cardFileName(title: string): string {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "")
     .slice(0, 40);
-  return slug || "vellum-card";
+  return slug || "tbr-card";
 }

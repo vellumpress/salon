@@ -77,7 +77,7 @@ const CACHE = ".pg-cache";
 const TEXT_DIR = "src/lib/catalog/texts";
 const SHELF_PATH = "src/lib/catalog/shelf.ts";
 const MAX_BREATHS = 22000;
-const UA = "VellumPressSalon/1.0 (literary catalog; +https://vellumpress.github.io/salon/)";
+const UA = "tbr/1.0 (literary catalog; +https://vellumpress.github.io/salon/)";
 
 /** Slice past a preface so the host breath is the work itself. */
 const ANCHORS: Record<string, string> = {

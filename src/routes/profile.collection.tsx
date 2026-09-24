@@ -5,7 +5,7 @@ import { KeptSentences } from "@/components/kept-sentences";
 import { ResumeLink } from "@/components/resume-link";
 import { useCurrentUserState } from "@/lib/auth/use-current-user";
 import { useFavoriteSync } from "@/lib/use-favorite-sync";
-import { useVellum } from "@/lib/store";
+import { useTbr } from "@/lib/store";
 
 export const Route = createFileRoute("/profile/collection")({
   component: CollectionPage,
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/profile/collection")({
 function CollectionPage() {
   const { user } = useCurrentUserState();
   const { hydrated, favorites } = useFavoriteSync(user);
-  const progress = useVellum((s) => s.progress);
+  const progress = useTbr((s) => s.progress);
 
   useEffect(() => {
     if (!hydrated) return;

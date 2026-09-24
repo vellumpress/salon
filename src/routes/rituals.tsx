@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
-import { useVellum, type WorkProgress } from "@/lib/store";
+import { useTbr, type WorkProgress } from "@/lib/store";
 import { fillClass, fillInk, mosaicFills, type Fill } from "@/lib/mondrian";
 import type { ShelfWork } from "@/lib/catalog/shelf";
 import {
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/rituals")({
 });
 
 function RitualsPage() {
-  const progress = useVellum((s) => s.progress);
+  const progress = useTbr((s) => s.progress);
   const visit = useVisitSeed();
   const [hydrated, setHydrated] = useState(false);
   const { query, setQuery, searching, matches, poolSize } = useShelfSearch("local");
@@ -115,7 +115,7 @@ function RitualsSection({
   hydrated: boolean;
   visit: number;
 }) {
-  const serializeNight = useVellum((s) => s.serializeNight);
+  const serializeNight = useTbr((s) => s.serializeNight);
   const series = useMemo(
     () => takeShuffled(SERIALIZE_PLANS, mixSeed(visit, "ritual-serialize")),
     [visit],
