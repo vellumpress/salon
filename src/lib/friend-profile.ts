@@ -102,6 +102,11 @@ export type FriendGraph = {
   sitPledges: SitPledge[];
   ledgers?: DayLedgers;
   now?: number;
+  /**
+   * Activity synced for people this phone already follows.
+   * Keys are handles. Strangers are not added to the people list.
+   */
+  remoteActivity?: Record<string, FriendActivity[]>;
 };
 
 /**
@@ -290,12 +295,43 @@ function named(value: string | undefined, handle: string) {
   return Boolean(clean) && clean !== formatHandle(handle) && clean.toLowerCase() !== handle;
 }
 
+/** Newest open book in a synced activity list. A later finish closes that book. */
+export function openReadingFromActivity(events: FriendActivity[]): FriendReadingNow | undefined {
+  if (!events.length) return undefined;
+  const finished = new Map<string, number>();
+  for (const event of events) {
+    if (event.kind !== "finished" || !event.workId) continue;
+    finished.set(event.workId, Math.max(finished.get(event.workId) ?? 0, event.at));
+  }
+  const open = events
+    .filter((event) => event.workId && event.workTitle && event.kind !== "finished")
+    .filter((event) => {
+      const closed = finished.get(event.workId!);
+      return closed === undefined || event.at > closed;
+    })
+    .sort((a, b) => b.at - a.at);
+  const current = open.find((event) => event.kind === "reading") ?? open[0];
+  if (!current?.workId || !current.workTitle) return undefined;
+  return {
+    workId: current.workId,
+    workTitle: current.workTitle,
+    author: current.author ?? "",
+    progress: current.progress,
+    atIndex: current.atIndex,
+    at: current.at,
+  };
+}
+
 function readingNow(
   handle: string,
   graph: FriendGraph,
   isSelf: boolean,
   contact: FriendContact | undefined,
 ): FriendReadingNow | undefined {
+  if (!isSelf) {
+    const remote = openReadingFromActivity(graph.remoteActivity?.[handle] ?? []);
+    if (remote) return remote;
+  }
   if (isSelf) {
     const last = lastReadProgress(graph.progress);
     if (!last) return undefined;
@@ -378,6 +414,7 @@ function collectActivity(handle: string, graph: FriendGraph, isSelf: boolean): F
       pledgeId: pledge.id,
     });
   }
+  for (const item of graph.remoteActivity?.[handle] ?? []) items.push(item);
   return items;
 }
 

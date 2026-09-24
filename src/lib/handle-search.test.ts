@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { searchHandles } from "./handle-search.ts";
+import { mergeDirectorySearch, searchHandles } from "./handle-search.ts";
 import type { FriendRow } from "./friend-profile.ts";
 import { normalizeHandle } from "./social.ts";
 
@@ -40,4 +40,23 @@ test("search offers a follow only when the handle matches nobody known", () => {
   assert.equal(searchHandles("salon", rows).offer, null);
   assert.equal(searchHandles("@Meghan", rows).offer, null);
   assert.equal(searchHandles("@Meghan", rows).matches[0]?.isSelf, true);
+});
+
+test("hosted prefix hits replace a speculative follow offer", () => {
+  const rows = [row("meghan", { isSelf: true })];
+  const local = searchHandles("@tbrcleo", rows);
+  assert.equal(local.offer, "tbrcleo");
+  const merged = mergeDirectorySearch(
+    local,
+    [{ id: "uuid-1", handle: "tbrcleo", name: "Cleo" }],
+    rows,
+    "meghan",
+  );
+  assert.equal(merged.offer, null);
+  assert.equal(merged.matches[0]?.handle, "tbrcleo");
+  assert.equal(merged.matches[0]?.name, "Cleo");
+  assert.equal(merged.matches[0]?.isSelf, false);
+  const pending = mergeDirectorySearch(local, [], rows, "meghan", true);
+  assert.equal(pending.offer, null);
+  assert.equal(pending.message, null);
 });

@@ -29,6 +29,7 @@ import { cn } from "@/lib/utils";
 import { mixSeed, takeShuffled } from "@/lib/recommend";
 import { useFavoriteSync } from "@/lib/use-favorite-sync";
 import { liveBackendEnabled } from "@/lib/site";
+import { confirmEmailMessage } from "@/lib/remote-auth";
 import { useReaderSession, type ReaderAuthMode } from "@/lib/use-reader-session";
 import { useVisitSeed } from "@/lib/use-visit-seed";
 
@@ -134,6 +135,7 @@ function ProfileBody({
   const [authMode, setAuthMode] = useState<ReaderAuthMode>(hasAccounts ? "in" : "up");
   const [authError, setAuthError] = useState("");
   const [authBusy, setAuthBusy] = useState(false);
+  const [confirmNote, setConfirmNote] = useState("");
 
   useEffect(() => {
     if (hasAccounts) setAuthMode("in");
@@ -236,7 +238,9 @@ function ProfileBody({
     setAuthBusy(true);
     setAuthError("");
     try {
-      await createAccount(input);
+      const result = await createAccount(input);
+      if (result.confirmEmail) setConfirmNote(confirmEmailMessage(result.handle));
+      else if (result.notice) setConfirmNote(result.notice);
     } catch (err) {
       setAuthError(err instanceof Error ? err.message : "Could not create the account");
     } finally {
@@ -248,7 +252,9 @@ function ProfileBody({
     setAuthBusy(true);
     setAuthError("");
     try {
-      await signIn(input);
+      const result = await signIn(input);
+      if (result.confirmEmail) setConfirmNote(confirmEmailMessage(result.handle));
+      else if (result.notice) setConfirmNote(result.notice);
     } catch (err) {
       setAuthError(err instanceof Error ? err.message : "Could not sign in");
     } finally {
@@ -332,6 +338,10 @@ function ProfileBody({
         ) : (
           <ReadinessHero reading={reading} handle={shownHandle} name={shownName} />
         )}
+
+        {confirmNote ? (
+          <p className="border-b border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">{confirmNote}</p>
+        ) : null}
 
         {!identity ? (
           <section>

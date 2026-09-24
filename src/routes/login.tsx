@@ -8,6 +8,7 @@ import {
 } from "@/lib/auth/client";
 import { ReaderAuthForm } from "@/components/reader-auth-form";
 import { APP_NAME, liveAuthAvailable, withBase } from "@/lib/site";
+import { confirmEmailMessage } from "@/lib/remote-auth";
 import { useReaderSession, type ReaderAuthMode } from "@/lib/use-reader-session";
 import { cn } from "@/lib/utils";
 
@@ -69,14 +70,15 @@ function LoginPage() {
   const [staffError, setStaffError] = useState("");
   const [showStaff, setShowStaff] = useState(door === "staff");
   const [leave, setLeave] = useState(false);
+  const [hold, setHold] = useState(false);
 
   useEffect(() => {
     if (hasAccounts) setMode("in");
   }, [hasAccounts]);
 
   useEffect(() => {
-    if (!isPending && identity) setLeave(true);
-  }, [identity, isPending]);
+    if (!isPending && identity && !hold) setLeave(true);
+  }, [identity, isPending, hold]);
 
   useEffect(() => {
     if (door !== "staff") return;
@@ -87,17 +89,27 @@ function LoginPage() {
     return () => window.cancelAnimationFrame(id);
   }, [door]);
 
-  if (leave && identity && !busy) {
+  if (leave && identity && !busy && !hold) {
     return <Navigate to={door === "staff" ? "/desk" : "/profile"} />;
   }
 
   async function withReaderCreate(input: { handle: string; email: string; password: string }) {
     setBusy("reader");
     setError("");
+    setHold(true);
     try {
-      await createAccount(input);
+      const result = await createAccount(input);
+      if (result.confirmEmail || result.notice) {
+        setLeave(false);
+        setError(result.confirmEmail ? confirmEmailMessage(result.handle) : result.notice);
+        setBusy(null);
+        return;
+      }
+      setHold(false);
       window.location.assign(withBase("/profile"));
     } catch (err) {
+      setLeave(false);
+      setHold(false);
       setError(err instanceof Error ? err.message : "Could not create the account");
       setBusy(null);
     }
@@ -106,10 +118,20 @@ function LoginPage() {
   async function withReaderSignIn(input: { email: string; password: string }) {
     setBusy("reader");
     setError("");
+    setHold(true);
     try {
-      await signIn(input);
+      const result = await signIn(input);
+      if (result.confirmEmail || result.notice) {
+        setLeave(false);
+        setError(result.confirmEmail ? confirmEmailMessage(result.handle) : result.notice);
+        setBusy(null);
+        return;
+      }
+      setHold(false);
       window.location.assign(withBase("/profile"));
     } catch (err) {
+      setLeave(false);
+      setHold(false);
       setError(err instanceof Error ? err.message : "Could not sign in");
       setBusy(null);
     }
@@ -200,6 +222,15 @@ function LoginPage() {
           onCreate={(input) => void withReaderCreate(input)}
           onSignIn={(input) => void withReaderSignIn(input)}
         />
+        {hold ? (
+          <button
+            type="button"
+            onClick={() => window.location.assign(withBase("/profile"))}
+            className="flex h-14 w-full items-center justify-center border-b border-ink bg-paper font-sans text-sm"
+          >
+            Continue on this phone
+          </button>
+        ) : null}
 
         {showStaff ? (
           <>

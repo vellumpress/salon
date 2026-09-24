@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { useKeptLines } from "@/components/kept-sentences";
 import { usePersistHydrated } from "@/components/resume-link";
 import {
@@ -11,6 +11,8 @@ import {
 } from "@/lib/friend-profile";
 import { fillClass, fillInk, planeOf } from "@/lib/mondrian";
 import { streakLine } from "@/lib/reading-stats";
+import { withRemoteActivity } from "@/lib/remote-activity";
+import { fetchProfile, refreshFollowedActivity, useRemoteBundle, type DirectoryProfile } from "@/lib/remote-directory";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { APP_NAME, publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
 import { isPledgePending } from "@/lib/sit-pledge";
@@ -45,28 +47,50 @@ function FriendProfilePage() {
   const toggleFollow = useTbr((s) => s.toggleFollow);
   const setPledgeStatus = useTbr((s) => s.setPledgeStatus);
   const [message, setMessage] = useState("");
+  const remote = useRemoteBundle();
+  const lookedUp = normalizeHandle(rawHandle);
+  const directory = remote.profiles[lookedUp] ?? null;
+  const [fetched, setFetched] = useState<DirectoryProfile | null>(null);
+
+  useEffect(() => {
+    if (lookedUp.length < 2) return;
+    let cancel = false;
+    void fetchProfile(lookedUp).then((row) => {
+      if (!cancel) setFetched(row);
+    });
+    if (remote.userId) void refreshFollowedActivity(remote.userId);
+    return () => {
+      cancel = true;
+    };
+  }, [lookedUp, remote.userId]);
+
+  const hosted = directory ?? fetched;
 
   const graph = useMemo<FriendGraph>(
-    () => ({
-      selfHandle: handle,
-      contacts,
-      following,
-      progress,
-      sitHistory,
-      togetherKeeps,
-      hostedSits,
-      sitPledges,
-      ledgers: {
-        readingMinutesByDay,
-        advancesByDay,
-        sceneCrossesByDay,
-        keepsByDay,
-        worksTouchedByDay,
-        hostOpensByDay,
-        sitsByDay,
-        clubTouchesByDay,
-      },
-    }),
+    () =>
+      withRemoteActivity(
+        {
+          selfHandle: handle,
+          contacts,
+          following,
+          progress,
+          sitHistory,
+          togetherKeeps,
+          hostedSits,
+          sitPledges,
+          ledgers: {
+            readingMinutesByDay,
+            advancesByDay,
+            sceneCrossesByDay,
+            keepsByDay,
+            worksTouchedByDay,
+            hostOpensByDay,
+            sitsByDay,
+            clubTouchesByDay,
+          },
+        },
+        remote.byHandle,
+      ),
     [
       handle,
       contacts,
@@ -84,13 +108,18 @@ function FriendProfilePage() {
       hostOpensByDay,
       sitsByDay,
       clubTouchesByDay,
+      remote.byHandle,
     ],
   );
 
-  const profile = useMemo(
-    () => (hydrated ? localFriendProfiles.profile(rawHandle, graph) : null),
-    [hydrated, rawHandle, graph],
-  );
+  const profile = useMemo(() => {
+    if (!hydrated) return null;
+    const base = localFriendProfiles.profile(rawHandle, graph);
+    if (!base || !hosted) return base;
+    const name = hosted.name.trim();
+    if (!name || name === formatHandle(base.handle)) return base;
+    return { ...base, name };
+  }, [hydrated, rawHandle, graph, hosted]);
   const kept = useKeptLines(profile?.isSelf ? progress : {}, hydrated);
   const activity = useMemo(() => {
     if (!profile) return [];
@@ -199,10 +228,15 @@ function FriendProfilePage() {
             {initial}
           </span>
           <div className="min-w-0 flex-1">
-            <p className="type-kicker text-muted">{profile.place || "On this phone"}</p>
+            <p className="type-kicker text-muted">
+              {profile.isSelf ? "This device" : hosted ? "On tbr" : profile.place || "On this phone"}
+            </p>
             <p className="mt-1 truncate type-title">{formatHandle(profile.handle)}</p>
             {profile.name && profile.name !== formatHandle(profile.handle) ? (
               <p className="mt-1 truncate font-serif text-base text-ink/70">{profile.name}</p>
+            ) : null}
+            {hosted?.bio ? (
+              <p className="mt-2 font-serif text-base text-ink/70">{hosted.bio}</p>
             ) : null}
           </div>
         </div>
@@ -259,7 +293,13 @@ function FriendProfilePage() {
           {profile.isSelf ? null : (
             <>
               <p className="mt-2 font-serif text-base leading-snug text-ink/70">
-                Their activity appears once you share a sit or invite link with them.
+                {hosted
+                  ? profile.following
+                    ? profile.readingNow
+                      ? "The open book is synced. Sits and keeps show here when they happen."
+                      : "Nothing synced yet."
+                    : "Follow them to see what they're reading."
+                  : "Their activity appears once you share a sit or invite link with them."}
               </p>
               <button
                 type="button"
@@ -296,9 +336,11 @@ function FriendProfilePage() {
       )}
 
       <p className="px-4 py-6 font-serif text-sm text-ink/60">
-        Only what this phone already has
-        {profile.isSelf ? " — your sits, keeps, and notes." : " from a shared link or sit."} A hosted {APP_NAME} can
-        fill the rest later.
+        {profile.isSelf
+          ? "Your sits, keeps, and notes stay on this phone, and sync when you are signed in."
+          : hosted
+            ? `This profile is on ${APP_NAME}. Activity shows for people you follow.`
+            : "Only what this phone already has from a shared link or sit."}
       </p>
     </ProfileFrame>
   );
