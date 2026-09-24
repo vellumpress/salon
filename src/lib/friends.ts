@@ -1,7 +1,9 @@
 import { lastReadProgress } from "./continuity.ts";
 import { shelfWork } from "./catalog/shelf.ts";
+import type { HostedSit } from "./hosted-sit.ts";
 import { formatHandle, normalizeHandle } from "./social.ts";
 import type { WorkProgress } from "./store.ts";
+import type { TogetherKeep } from "./together-keep.ts";
 
 export type FriendContact = {
   id: string;
@@ -113,6 +115,97 @@ export function friendsFeed(
       rows.push({ ...person, kind: "kept" });
     }
   }
+  return rows;
+}
+
+/** A kept line this phone actually holds — never a catalog sentence. */
+export type BoardKeptLine = {
+  id: string;
+  handle: string;
+  name: string;
+  line: string;
+  workId: string;
+  workTitle: string;
+  atIndex: number;
+  breathId?: string;
+};
+
+/**
+ * Kept lines from this device only: the reader's own keeps, together-keeps,
+ * and lines saved on a hosted sit. Empty in, empty out.
+ */
+export function boardKeptLines(input: {
+  selfHandle: string;
+  selfName?: string;
+  selfLines?: Array<{
+    workId: string;
+    breathId: string;
+    text: string;
+    title: string;
+    at: number;
+  }>;
+  togetherKeeps?: TogetherKeep[];
+  hostedSits?: HostedSit[];
+}): BoardKeptLine[] {
+  const self = normalizeHandle(input.selfHandle);
+  const rows: BoardKeptLine[] = [];
+  const seen = new Set<string>();
+
+  function push(row: BoardKeptLine) {
+    const line = row.line.trim();
+    const handle = normalizeHandle(row.handle);
+    const workId = row.workId.trim();
+    if (!line || !workId || handle.length < 2) return;
+    const key = `${handle}|${workId}|${line}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    rows.push({ ...row, handle, line, workId });
+  }
+
+  for (const line of input.selfLines ?? []) {
+    if (!self) continue;
+    push({
+      id: `self:${line.workId}:${line.breathId}`,
+      handle: self,
+      name: (input.selfName ?? "").trim() || formatHandle(self),
+      line: line.text,
+      workId: line.workId,
+      workTitle: line.title,
+      atIndex: line.at,
+      breathId: line.breathId,
+    });
+  }
+
+  for (const pair of input.togetherKeeps ?? []) {
+    for (const side of [pair.theirs, pair.yours]) {
+      push({
+        id: `together:${pair.id}:${side.handle}:${side.breathId}`,
+        handle: side.handle,
+        name: side.name,
+        line: side.line,
+        workId: pair.workId,
+        workTitle: pair.workTitle,
+        atIndex: side.at,
+        breathId: side.breathId,
+      });
+    }
+  }
+
+  for (const sit of input.hostedSits ?? []) {
+    for (const keep of sit.keeps) {
+      push({
+        id: `sit:${sit.id}:${keep.handle}:${keep.breathId}`,
+        handle: keep.handle,
+        name: keep.name,
+        line: keep.line,
+        workId: sit.workId,
+        workTitle: sit.workTitle,
+        atIndex: keep.at,
+        breathId: keep.breathId,
+      });
+    }
+  }
+
   return rows;
 }
 
