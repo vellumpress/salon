@@ -1,7 +1,7 @@
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 
 /**
- * Locked recommend → Next → Later ranking for local binds, plus Adapted by Salon.
+ * Locked recommend → Next → Later ranking for local binds, plus Adapted by tbr.
  *
  * Live locked recommend rank (Mike A24≥9, Mira elevate Sun Sep 20):
  * Enchanted April, The Bridge of San Luis Rey, Mr. Fortune’s Maggot,
@@ -210,7 +210,7 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * at Chapter II. Krakatit stays off. Cold-open stays Mirth → Quicksand → Botchan.
  * Tang Poems, The Bronze Horseman, Inferno, and Rudin stay off this ship.
  *
- * Remakes are Salon original adaptations of PD sources. They are their own
+ * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
  */
 export type CuratorialTrack = "featured" | "next" | "later" | "adapted";
@@ -567,7 +567,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
 ] as const;
 
 /**
- * Mira pack — Adapted by Salon lane only. Do not add to locked recommend / Next.
+ * Mira pack — Adapted by tbr lane only. Do not add to locked recommend / Next.
  * Recasts are short stories only (Mike lock Sep 21). Whole-story remakes:
  * one shelf id / one read path each. Never splice a remake into waking /
  * unwind / before-sleep sibling sits (Mike lock Sep 20).

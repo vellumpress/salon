@@ -1,7 +1,7 @@
 /**
  * Active reading clock.
  *
- * Older Salon credited a sit as wall-clock from `sittingStartedAt` to
+ * Older builds credited a sit as wall-clock from `sittingStartedAt` to
  * `endSitting` (capped at 3 hours). Leaving the reader open, backgrounding
  * it, or letting the hourglass finish therefore inflated Today / Week.
  *

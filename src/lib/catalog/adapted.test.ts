@@ -253,12 +253,16 @@ test("Adapted remakes are local sits with source credit, not locked recommend", 
 
     const packed = JSON.parse(
       readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8"),
-    ) as { title: string; scenes: { title: string }[]; breaths: { text: string }[] };
+    ) as { title: string; author: string; note?: string; scenes: { title: string }[]; breaths: { text: string }[] };
     const full = JSON.parse(
       readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8"),
-    ) as { title: string; breaths: { text: string }[] };
+    ) as { title: string; author: string; note?: string; breaths: { text: string }[] };
     assert.equal(packed.title, want.title, `${id} opening title`);
     assert.equal(full.title, want.title, `${id} text title`);
+    assert.equal(packed.author, "tbr", `${id} opening byline`);
+    assert.equal(full.author, "tbr", `${id} text byline`);
+    const bindNote = [work.intro, packed.note, full.note, copy].filter(Boolean).join("\n");
+    assert.doesNotMatch(bindNote, /\bSalon\b|\bVellum\b/, `${id} bind note`);
     assert.match(packed.scenes[0]?.title ?? "", want.scene, id);
     assert.match(packed.breaths[0]?.text ?? "", want.opening, id);
     assert.match(packed.breaths.at(-1)?.text ?? "", want.last, id);

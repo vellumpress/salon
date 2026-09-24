@@ -179,7 +179,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   nana: { label: "Paris", region: "fr" },
   "after-the-divorce": { label: "Sardinia", region: "it" },
 
-  // Adapted by Salon — remakes, not locked-recommend / Next classics
+  // Adapted by tbr — remakes, not locked-recommend / Next classics
   // Mike hard rule: ≤1/3 America-set (exactly 3/14 US keepers).
   "miss-brill-adapted": { label: "Menton / French Riviera", region: "fr" },
   "prefer-not": { label: "New York", region: "us" },

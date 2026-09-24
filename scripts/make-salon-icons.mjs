@@ -86,4 +86,4 @@ writeFileSync(join(publicDir, "icon-180.png"), encodePng(180));
 writeFileSync(join(publicDir, "icon-192.png"), encodePng(192));
 writeFileSync(join(publicDir, "icon-512.png"), encodePng(512));
 writeFileSync(join(publicDir, "__grok", "icon-180.png"), encodePng(180));
-console.log("wrote Salon Mondrian icons");
+console.log("wrote tbr Mondrian icons");

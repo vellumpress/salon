@@ -464,7 +464,7 @@ test("Quicksand is a local before-sleep bind with no Gutenberg id", () => {
   );
 });
 
-test("Adapted by Salon remakes are their own track — never locked recommend or Next", () => {
+test("Adapted by tbr remakes are their own track — never locked recommend or Next", () => {
   assert.deepEqual(
     [...ADAPTED_BY_SALON_IDS],
     [
@@ -1337,7 +1337,7 @@ test("Kusamakura alias stays off Next while the CLEAR Unhuman Tour bind is live"
   }
 });
 
-test("Salon 8am CLEAR ×4 are local Next / Rituals binds, never Featured", () => {
+test("tbr 8am CLEAR ×4 are local Next / Rituals binds, never Featured", () => {
   const expect = {
     krakatit: { lane: "before-sleep", opening: /^With the evening the fog/ },
     "the-peasants": { lane: "waking-up", opening: /Praised be Jesus Christ!/ },
@@ -1368,7 +1368,7 @@ test("Salon 8am CLEAR ×4 are local Next / Rituals binds, never Featured", () =>
   assert.equal(forYou!.workIds.includes("the-peasants"), false);
 });
 
-test("Salon noon CLEAR ×5 are local Next / Rituals binds, never Featured", () => {
+test("tbr noon CLEAR ×5 are local Next / Rituals binds, never Featured", () => {
   const expect = {
     "a-hero-of-our-time": {
       track: "next",
@@ -1445,7 +1445,7 @@ test("Salon noon CLEAR ×5 are local Next / Rituals binds, never Featured", () =
   assert.equal(curatorialTrack("a-few-figs-from-thistles"), "later");
 });
 
-test("Salon PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => {
+test("tbr PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => {
   const expect = {
     tropic: {
       track: "next",
