@@ -1,0 +1,86 @@
+{
+  "id": "the-late-mattia-pascal",
+  "title": "The Late Mattia Pascal",
+  "author": "Luigi Pirandello (tr. Arthur Livingston)",
+  "year": "1923",
+  "note": "Livingston EN · E. P. Dutton NY 1923 · Archive latemattiapascal00pira_1 · US PD since 1 Jan 2019 · no US PG id (PGA AU 0300381 = same translation convenience text only)",
+  "minutes": 3,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · \"My Name Is Mattia Pascal\"",
+      "place": "Chapter I · \"My Name Is Mattia Pascal\"",
+      "reentry": "One of the few things, in fact about the only thing I was sure of was my name: Mattia Pascal. Of this I took full advantage also. Whenever one of my friends or acquaintances so far lost his head as to",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "One of the few things, in fact about the only thing I was sure of was my name: Mattia Pascal. Of this I took full advantage also. Whenever one of my friends or acquaintances so far lost his head as to come and ask me for a bit of advice on some matter of importance, I would shrug my shoulders, squint my eyes, and answer:"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"My name is Mattia Pascal!\""
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"That's very enlightening, old man! I knew that much already!\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"And you don't feel lucky to know that much?\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "There was no reason why he should that I could see. But at the time I had not realized what it meant not to be sure of even that much--not to be able to answer on occasion, as I had formerly answered:"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"My name is Mattia Pascal!\""
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Some people surely will sympathize with me (sympathy comes cheap) when they try to imagine the immense anguish a poor man must feel on suddenly discovering... well, yes... just a blank; that he knows neither who his father was, nor who his mother was, nor how, nor when, nor where, he was born--if ever he was born at all.... Just as others will be ready to criticize (criticism comes cheaper still) the immorality and viciousness of a society where an innocent child can be treated that way."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Very well! Thanks for the sympathy and the holy horror! But it is my duty to give notice in advance that it's not quite that way. Indeed, if need should arise, I could give my family tree with the origin and descent of all my house. I could prove that I know my father and my mother, and their fathers and mothers unto several generations, and the doings, through the years, of all those forebears of mine (doings not always to their untarnished credit, I must confess)."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Well then?"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Well then! It's this way. My case, not the ordinary one, by any means, is so far out of the ordinary in fact, that I have decided to recount it."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "For some two years I held a position--mouse-catcher and custodian in one--in the so-called Boccamazza library. Away back in the year 1803, a certain Monsignor Boccamazza, on departing from this life, left his books as a legacy to our village. It was always clear to me that this venerable man of the cloth knew nothing whatever about the dispositions of his fellow-citizens. I suppose he hoped that his benefaction, as time and opportunity favored, would kindle a passion for study in their souls. So far not a spark has ever glowed therein, as I may state with some authority, and with the idea of paying a compliment, rather than not, to my fellow-townsmen. Indeed, our village so little appreciated the gift of the reverend Boccamazza that it has, to this day, refused money even for putting his head, neck, and shoulders into marble; and for years and years the books he left were never removed from the damp and musty store house where they had been piled after his funeral. Eventually, however, they were transported (and imagine in what condition!) to the unused Church of Santa Maria Liberale, a building which, for some reason or other, had been secularized. There the town government entrusted them to any one of its favorites who was looking for a sinecure and who, for two lire a day, was willing to care for them (or to neglect them if he chose), and to stand the noxious odor of all that mildewed paper."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "This plum, in the course of human events, fell to me, and I must add that the first day of my incumbency gave me such a distaste for books and manuscripts in general (some of those under my charge were very precious, I am told) that I should never, never, of my own accord, have thought of increasing the number of them in the world by one. But, as I said, my case is a very strange one; and I now agree that it may prove of interest to some chance reader, who, in fulfillment of Monsignor Boccamazza's pious hope, shall some day wander into the library and stumble upon this manuscript of mine. For I am leaving it to the foundation, with the understanding that no one shall open it till fifty years after my *third, last, and final* death."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "There you have it, exactly! So far I have died twice (and the Lord knows the extent of my regret, I can assure you): the first time I died by mistake; and the second time I died... but that's-my story, as you will see...."
+    }
+  ]
+}

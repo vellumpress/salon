@@ -1,0 +1,261 @@
+{
+  "id": "the-wanderer",
+  "title": "The Wanderer",
+  "author": "Alain-Fournier (tr. Françoise Delisle)",
+  "year": "1928",
+  "note": "Delisle EN · Houghton Mifflin Boston 1928 · Archive wanderer0000alai · US PD 1 Jan 2024 · no US PG id (live meaulnes = FR PG 5781, do not overwrite)",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Chapter I · The Boarder",
+      "place": "Part I · Chapter I · The Boarder",
+      "reentry": "He arrived at our home on a Sunday of November, 189… I still say ‘our home,’ although the house no longer belongs to us. We left that part of the country nearly fifteen years ago and shall certainly n",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "He arrived at our home on a Sunday of November, 189… I still say ‘our home,’ although the house no longer belongs to us. We left that part of the country nearly fifteen years ago and shall certainly never go back to it."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "We were living in the building of the Higher Elementary Classes at Sainte-Agathe’s School. My father, whom I was in the habit of calling M. Seurel as did other pupils, was head of the Middle School and also of the Higher Elementary classes where pupils worked for the preliminary teacher’s examination. Mother taught the infants."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "At the extreme end of the small town a long red house with five glass doors and a Virginia creeper upon its walls; an immense courtyard with shelters, a washhouse and a huge gateway, on the side looking towards the village; on the north side, a small gate opening on the road leading to the station three kilometres off; on"
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "the south, at the back of the house, fields, gardens, meadows joining the outskirts...such is the simple plan of this dwelling where I spent the most troubled but the most happy days of my life — the house from which we launched our adventures and to which they returned to break themselves like waves on a bare rock."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "At the time of some new ‘appointments,’ a whim of fate, due to some inspector or to the Prefect, had led us there. Towards the end of the summer holidays, a long time ago, a peasant cart, preceding our household goods, deposited my mother and myself before the little rusty gate. Urchins who were stealing peaches in the garden silently escaped through holes in the hedge....My mother, whom we used to call Millie and who was the most methodical housekeeper I ever knew, had at once gone into the rooms full of dusty straw, and had declared with much consternation — as was her custom at each ‘removal’ — that our furniture would never fit in a house so badly built.... She had come out to impart her trouble to me. While speaking she had, with her handkerchief, gently wiped my face blackened by the journey. Then she had gone back to consider what doors and windows would have to be blocked to make the place habitable.... As for me, wearing a big straw hat with streamers, I was left alone on the gravel of that strange playground, waiting for her, prying shyly around the well and under the cart-shed."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Thus to-day I picture our arrival. For as soon as I wish to bring back the distant memory of that first evening when I waited in our playground at SainteAgathe, at once it is another kind of waiting which I recall, at once I see myself again, both hands pressed to the bars of the front gate, anxiously watching for some one who will soon come down the High Street. If I try to imagine that first night which I must have spent in my attic, amidst the lumber-rooms on the upper storey, I recall other nights; I am no longer alone in that room; a tall, restless, and friendly shadow moves along its walls and walks to and fro. And that quiet countryside — the school, old Father Martin’s field, with its three walnut trees, the garden daily invaded on the stroke of four by women paying calls — all this is, in my memory, forever stirred and transformed by the presence of him who upset all our youth and whose sudden flight even did not leave us in peace."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Yet we had already been ten years in that district when Meaulnes arrived."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "I was fifteen. It was a cold Sunday of November, the first day of autumn to make one think of winter. All day Millie had waited for the station omnibus to bring her a hat for the bad weather. That morning she missed Mass, and right up to the sermon, from my place in the choir with the other children, I looked anxiously towards"
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "the door to see her come to church wearing her new hat."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "In the afternoon, I had to go to vespers alone. ‘Anyhow,’ she said to comfort me, brushing my little suit with her hand, ‘even if it had come, this precious hat, I should have had to spend my Sunday making it up again.’"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "This is how our winter Sundays were often spent. In the early morning Father went off to some misty pond to jack-fish from a boat, and Mother retired till nightfall into her dark bedroom, to remake her simple dresses. She shut herself up in that way for fear some lady visitor, as poor as herself and as proud, might surprise her at the job. As for me, vespers over, I waited, reading in the cold dining-room, until she opened the door to show me how she was getting on."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "That Sunday, a little excitement in front of the church kept me out-of-doors after vespers. A christening, under the porch, had attracted a crowd of urchins. In the square a few villagers had put on their firemen’s jackets and piled their arms; ' stiff and stamping their feet with cold, they were listening to Boujardon, the corporal, losing himself in theory...."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "The christening bells stopped suddenly, like festive chimes at a mistaken time and place. Boujardon and his men, rifles slung over their shoulders, dragged off the"
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "1 French firemen carry rifles during drill, although the custom is now dying out in towns."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "THE BOARDER us"
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "fire engine at a slow trot, and I saw them disappear at the first turning, followed by four silent urchins, crushing under their heavy boots the twigs on the frozen road, down which I dared not follow them."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "In the village the only place left alive was the Café Daniel, from which I heard the murmurs of the drinkers’ talk rise and fall, and hugging the low wall of the big playground which separated our house from the village, I came, rather anxious at being late, to the small gate."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "It was ajar and I saw at once that something unusual was happening."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "In fact, there stood, outside the dining-room door — the nearest of the five glass doors opening on the playground — a grey-headed woman, leaning forward and trying to look through the curtains. She was small and wore a black old-fashioned velvet bonnet. Her face was thin and refined, but worn with anxiety, and, at sight of her, I do not know what misgiving made me stand still on the first step, in front of the gate."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "‘My goodness, where’s he gone!’ she was muttering to herself. ‘He was with me a moment ago. He must have gone all round the house already. Perhaps he’s run away..."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "And after each sentence she gave three barely perceptible little taps on the window-pane."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "No one came to let in the unknown visitor. Without any doubt Millie had received her hat from the station,"
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "and, hearing nothing, at the end of the red bedroom, before a bed bestrewed with old ribbons and uncurled feathers, she was stitching, undoing, and remaking her modest headgear. In fact, as soon as I came into the dining-room, followed closely by the visitor, Mother appeared with both her hands to her head, holding wires, ribbons, and feathers which were not yet perfectly secured."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "She smiled at me, from blue eyes tired with working till dusk, and exclaimed: ‘Look! I was waiting to show Vou. ae"
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "But noticing that woman sitting in the big armchair at the other end of the room, she stopped, disconcerted. She quickly removed her hat, and during the whole scene that followed, held it against her breast, inside out, like a nest resting in the bend of her right arm."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "The woman with the old-fashioned bonnet had begun to explain herself. She held between her knees an umbrella and a leather handbag, slightly nodding her head the while, and clicking her tongue as do village women when paying a call. She had regained full assurance, and when she spoke of her son she even assumed a superior and mysterious manner which puzzled us."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "They had both driven from La Ferté d’Angillon, fourteen kilometres from Sainte-Agathe. Herself a widow — and very rich, as she gave us to understand — she had lost the younger of her two children, a boy called An-"
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "toine, who had suddenly died one evening, on returning from school, after bathing with his brother in a dirty pond. She had decided to let Augustin, the elder boy, board with us, that he might take the Higher Course."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "And forthwith she began to praise this boarder whom she was bringing us. I could no longer recognise the grey-headed woman whom, only a minute ago, I had seen stooping in front of the door, with the piteous and haggard bearing of a hen who has lost the wildest chick in her brood."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "What she was relating with admiration about her son was surprising enough; he loved doing things to please her, he had often gone along the river-bank for miles barelegged, to bring her wild ducks’ and moor hens’ eggs hidden amongst the reeds... He could set nets... The other night, he had found a pheasant caught in a snare, in the wood..."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "I, who hardly dared to enter the house if I had torn my overall, looked at Millie with astonishment."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "But Mother was no longer listening. She even motioned to the woman to be quiet; and putting down her ‘nest’ on the table with great care, she got up silently as if to take some one by surprise..."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "Above us, indeed, in a box-room where the blackened remains of the last fourteenth of July fireworks were piled up, an unknown step trod confidently to and fro, shaking the ceiling, crossed the huge dark lumber-rooms"
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "of the upper storey and passed at last towards the unused assistant masters’ rooms, where lime tree leaves were put to dry and apples to ripen."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "‘A little while ago,’ said Millie in a low voice, ‘I heard that noise in the rooms downstairs; I thought it was you, Francois, come back...’"
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "No one answered. We stood, the three of us, with beating hearts; then the attic door which led to the kitchen was heard to open; some one came down, crossed the kitchen, and appeared in the dim entrance of the dining-room."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "‘Why! It is you, Augustin!’ said the visitor."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "He was a tall boy of seventeen, or thereabout. At first, as night was falling, I saw only his peasant felt hat, pushed to the back of his head, and his black overall! tightly belted in the fashion of schoolboys. I could see, too, that he was smiling..."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "He saw me, and before any one had had time to demand an explanation: ‘Aren’t you coming into the playground?’ he asked."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "I hesitated for a moment. Then, as Millie did not"
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "1 This is the traditional black overall worn by the French schoolchildren in Alain-Fournier’s youth and still to be seen in villages, though it is not so much worn in towns. This detail, and others so typically French, must not deceive the reader as to the age of the schoolboys in the book. It should be borne in mind that most of the main characters in the book, amongst the boys, are youths whose ages vary from between sixteen to past eighteen. It was the custom for boys of that age to wear the black overall."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "THE BOARDER il"
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "keep me back, I took up my cap and went towards him. We left by the kitchen door and went into the yard under the shelter where darkness was already gathering. In the dim evening light I watched, as I walked, his sharp-featured face with its straight nose and downy lip."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "‘Look,’ said he, ‘I found this in your box-rooms. You couldn’t have looked at these things.’"
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "He was holding in his hand a little wheel of blackened wood; a string of partly burnt squibs was twisted round it; evidently a Katherine wheel from the fireworks display on the fourteenth of July."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "‘Two of them didn’t go off. We will set them alight,’ said he, in the tone of voice of one who hopes to make better finds later on."
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "He threw his hat to the ground, and I saw that his hair was cropped like a peasant’s. He showed me two squib lighters with their paper tapers which the flame had singed, before going out. He stuck the axle of the wheel into the sand and—to my astonishment, as such things were strictly forbidden me — pulled out of his pocket a box of matches. Bending down with care, he lighted the squib. Then, taking hold of my hand, he quickly drew me back."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "A moment later, as she came out of the door with Meaulnes’ mother after having discussed and settled the boarding fees, my mother saw two sheaves of red-andwhite stars rising up under the shelter, hissing like bel-"
+    }
+  ]
+}

@@ -217,7 +217,10 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * 1923, no Project Gutenberg id. Summer, Jacob’s Room, The Tenant of Wildfell
  * Hall, and Herland are For you. The Last Man is later For you only. Dragon’s
  * Teeth stays covered on Next. Cold-open stays Mirth → Quicksand → Botchan.
- * Meaulnes, Late Mattia Pascal, and the HOLD shelf stay off this ship.
+ * Fri 25 Sep 2026 CLEAR — The Wanderer (Delisle 1928) is the EN Next sit after
+ * Lost Lady. French meaulnes stays catalog-only. The Late Mattia Pascal
+ * (Livingston 1923) is For you. Neither has a US Project Gutenberg id.
+ * Hotel Savoy, Envy, Nettles, Wild Geese, Santa, One No One, and Quiroga stay off.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -407,7 +410,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "hien-le-maboul",
   "knulp",
   "iracema",
-  "meaulnes",
+  // French meaulnes (PG 5781) stays catalog-only. EN sit is the-wanderer.
   "tristana",
   "niels",
   "amor-de-perdicao",
@@ -578,6 +581,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // The Last Man is later For you only. Dragon’s Teeth stays covered above.
   "blacker",
   "a-lost-lady",
+  // Mira Fri 25 Sep 2026 CLEAR — Wanderer follows Lost Lady. Never Featured.
+  // French meaulnes left the BATCH-10 Next seat. Mattia Pascal is For you.
+  "the-wanderer",
 ] as const;
 
 /**

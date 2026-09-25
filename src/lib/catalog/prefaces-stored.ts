@@ -16,6 +16,8 @@ export const STORED_PREFACES: Record<string, string> = {
   "a-laodicean": `A castle, a telegraph, and Hardy’s modern hesitation. Sit with the world a moment before the first breath.`,
   "a-london-life-and-other-tales": `James in London rooms where a scandal is already furnished. Enter one room at a time.`,
   "a-lost-lady": `Sweet Water along the Burlington — Niel’s memory of Marian Forrester when the frontier ethos dies into money. Soft against Death Comes for the Archbishop.`,
+  "the-wanderer": `He arrived at our home on a Sunday of November, 189… — Sainte-Agathe, and the schoolhouse that is no longer theirs. Delisle’s 1928 English. The year ellipsis stays; Host may leave it.`,
+  "the-late-mattia-pascal": `One of the few things he was sure of was his name: Mattia Pascal — the library at Miragno. Livingston’s 1923 English. Comic self-narration; Host OK.`,
   "a-lute-of-jade": `Various’s 1909 poems: A Lute of Jade. Let the first line arrive when you are ready.`,
   "a-night-in-acadie": `Chopin’s Louisiana: heat, Catholic rooms, and women who already know the cost. Enter one room at a time.`,
   "a-pair-of-blue-eyes": `A Pair of Blue Eyes (1873): Wessex parish weather, and a fate that looks like a neighbor. Sit with the world a moment before the first breath.`,

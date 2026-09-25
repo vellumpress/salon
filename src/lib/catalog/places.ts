@@ -46,6 +46,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   basilio: { label: "Lisbon", region: "pt" },
   blacker: { label: "Harlem", region: "us" },
   "a-lost-lady": { label: "Sweet Water", region: "us" },
+  "the-wanderer": { label: "Sainte-Agathe", region: "fr" },
+  "the-late-mattia-pascal": { label: "Miragno", region: "it" },
   "lady-macbeth": { label: "Mtsensk", region: "ru" },
   summer: { label: "North Dormer", region: "us" },
   "jacob-s-room": { label: "Cornwall", region: "gb" },
