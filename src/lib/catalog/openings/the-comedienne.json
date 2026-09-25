@@ -1,0 +1,121 @@
+{
+  "id": "the-comedienne",
+  "title": "The Comedienne",
+  "author": "Władysław Reymont (trans. Edmund Obecny)",
+  "year": "1896",
+  "note": "Project Gutenberg 25760. Host: Ch I Bukowiec / beech-pine hills (Publishers’ Note skipped). Obecny EN.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Bukowiec station",
+      "place": "Chapter I · Bukowiec station",
+      "reentry": "Bukowiec, a station on the Dombrowa railroad, lies in a beautiful spot. A winding line was cut among the beech and pine covered hills, and at the most level point, between a mighty hill towering above",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Bukowiec, a station on the Dombrowa railroad, lies in a beautiful spot. A winding line was cut among the beech and pine covered hills, and at the most level point, between a mighty hill towering above the woods with its bald and rocky summit, and a long narrow valley, glistening with pools and marshes, was placed the station. This two-story building of rough brick containing the quarters of the station-master and his assistant, a small wooden house at the side for the telegrapher and the minor employees, another similar one near the last switches for the watchman, three switch-houses at various points, and a freight-house were the only signs of human habitation."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Surrounding the station on all sides were the murmuring woods, while above, a strip of blue sky, slashed with gray clouds, extended like a wide-spreading roof."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The sun was veering toward the south and glowing ever brighter and warmer; the reddish slopes of the rocky hill, with its ragged summit gashed by spring freshets, were bathed in a flood of golden sunlight."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The calm of a spring afternoon diffused itself over all. The trees stood motionless without a murmur in their boughs. The sharp emerald leaves of the beeches drooped drowsily, as though lulled to sleep by the light, the warmth, and the silence. The twitter of birds sounded at rare intervals from the thickets, and only the cry of the water-fowls on the marshes and the somnolent hum of insects filled the air. Above the blue line of rails stretching in an endless chain of curves and zigzags, the warm air glowed with shifting hues of violet light."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Out of the office of the station-master came a short, squarely-built man with light, almost flaxen hair. He was dressed, or rather squeezed into a stylish surtout and held his hat in his hand while a workman helped him on with his overcoat."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "The station-master stood before him, stroking his grayish beard with an automatic gesture and smiling in a friendly manner. He also was stocky, strongly-knit, and broad shouldered, and in his blue eyes, flashing jovially from beneath heavy eyebrows and a square forehead, there also gleamed determination and an unbending will. His straight nose, full lips, a certain contraction of the brows, and the sharp direct glance of his eyes, that seemed like a dagger-stroke--all these typified a violent nature."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Good-bye, until to-morrow!\"... said the blonde man merrily, extending his big hand in farewell."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"Good-bye!... Oh come, let me hug you. To-morrow we'll celebrate the big event with a good drink.\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"I am a little afraid of that to-morrow.\""
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"Courage, my boy! Don't fear, I give you my word that everything will turn out all right. Ill tell Jenka all about it immediately. You will come to us to-morrow for dinner, propose to her, be accepted by her, in a month you will be married and we shall be neighbors... hey! I like you immensely, Mr. Andrew! I always dreamed of having such a son. Unfortunately I haven't any, but at least I'll have a son-in-law.\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "They kissed each other heartily; the younger jumped into a light mountain rig waiting near the platform and drove away at a swift pace along a narrow road leading through the wood. He glanced back, tipped his hat, sent a deeper bow to the windows of the second story, and disappeared in the shadow of the trees. After riding a little way, he sprang from the carriage, ordered the driver to go on, and continued his journey on foot by a short cut."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "The station-master, as soon as his guest had vanished from sight, reentered his office and busied himself with his official correspondence. He was highly satisfied that Grzesikiewicz had asked him for his daughter's hand and he had promised her to him in the certainty that she would agree."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Grzesikiewicz, although not handsome, was sensible and very rich. The woods among which stood the station and a few neighboring farmhouses were the property of his father. The elder Grzesikiewicz was primarily a peasant, who had transformed himself from an innkeeper into a trader and had made a fabulous fortune by the sale of timber and cattle-fodder."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "Many people in the neighborhood still remembered that the old man used to be called Grzesik in his youth. They often ridiculed him for it, but no one upbraided him for changing his name, for he did not pose as an aristocrat, nor did he assume an overbearing air toward others because of his wealth."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "He was a peasant, and in spite of all changes remained a peasant to the very core. His son received a thorough education and now helped his father. Two years ago he had made the acquaintance of the station-master's daughter after her return from the academy at Kielce and had fallen violently in love with her. His father offered no opposition, but told him plainly to go ahead and marry if he wanted."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Andrew met the girl quite often, became ever more deeply enamored of her, but never dared to speak to her of his love. She liked him, but at the same time her attitude was so frank and straightforward that his intended words of endearment and confessions of love always froze upon his lips before he had half uttered them. He felt that she belonged to a higher breed of women, inaccessible to such a \"churl\" as he often frankly called himself; but precisely because of his lowly origin he loved her all the more intensely."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Finally, he decided to speak to her father about it."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Orlowski received him with open arms, and in his arbitrary way, without consulting his daughter, at once gave him his word that all would be well. Grzesikiewicz was therefore thinking that Janina would not refuse him, that she must have already spoken of the matter with her father."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"Why not!\" he whispered to himself. He was young, wealthy, and well, he loved her so dearly. \"In a month our marriage will take place,\" he added hurriedly and that thought filled him with such joy that he began to run swiftly through the woods, breaking branches off the trees, kicking the rotted stumps that were in his way, knocking off the heads of spring mushrooms, whistling and smiling. And he thought, too, how glad his mother would be to hear the news."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "She was an old peasant woman, who with the exception of her dress had not changed in the least on account of her wealth. She thought of Janina as of a princess. Her one dream was to have for a daughter-in-law a real lady, an aristocrat whose beauty and high birth would dazzle her, for her husband and his money and the respect which the entire neighborhood showed him did not suffice her. She was always conscious of being a peasant and received all honors with a true peasant-like distrust."
+    }
+  ]
+}

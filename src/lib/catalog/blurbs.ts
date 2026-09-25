@@ -42,7 +42,7 @@ const BLURBS: Record<string, string> = {
   rashomon:
     "Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate.",
   "high-wind-jamaica":
-    "After Emancipation, Derby Hill is swallowed by bush until a rank plant holds the front door open.",
+    "After Emancipation, Derby Hill is swallowed by bush until a rank plant holds the front door open, and the sit runs on to Ferndale.",
   "noli-me-tangere":
     "Capitan Tiago announces a dinner in Binondo — Chapter I only, and the friar power is not sanitized.",
   vera:
@@ -50,7 +50,7 @@ const BLURBS: Record<string, string> = {
   "on-a-chinese-screen":
     "She takes a holy temple and papers it into Cheltenham—blue curtains for her eyes, pink stripes, an American stove where the Buddha sat.",
   futility:
-    "The harbour sounds the note of departure: the only thing to do was to fit all this into a book.",
+    "The Simbirsk vanishes toward Shanghai, and the hotel room still has a dirty table-cloth.",
   "poison-tree":
     "His wife makes him promise: if a storm rises, leave the boat—and on the Ganges in Joisto the weather keeps that promise.",
   "trooper-peter-halket-of-mashonaland":
@@ -665,7 +665,9 @@ const BLURBS: Record<string, string> = {
   "a-hero-of-our-time":
     "Post from Tiflis: a dukhan crowd and camels at the foot of Mount Koishaur.",
   "strange-tales":
-    "Mr. Chu steps through a monastery wall and does not come back the same.",
+    "Mr. Chu steps through a monastery wall painted with Chih Kung and a fairy, and does not come back the same.",
+  "the-comedienne":
+    "Bukowiec station, a winding line cut among beech and pine hills.",
   "short-stories-from-the-balkans":
     "Leiba Zibal waits under the roof at Podeni for a stage that is already late.",
   "the-damnation-of-theron-ware":

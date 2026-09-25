@@ -26,11 +26,8 @@ const FULL_NOVEL_NO_STUB = [
   "the-underdogs",
   "an-outcast-of-the-islands",
   "the-getting-of-wisdom",
-  "high-wind-jamaica",
-  "vera",
   "noli-me-tangere",
   "the-story-of-gosta-berling",
-  "futility",
   "poison-tree",
   "trooper-peter-halket",
   "martin-bircks-youth",
@@ -39,7 +36,6 @@ const FULL_NOVEL_NO_STUB = [
   "shadowings",
   "krakatit",
   "a-hero-of-our-time",
-  "strange-tales",
   "short-stories-from-the-balkans",
   "a-hundred-and-seventy-chinese-poems",
 ] as const;
@@ -218,7 +214,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^It was evening\./,
     },
     "high-wind-jamaica": {
-      scene: /Derby Hill/i,
+      scene: /Ferndale/i,
       opening: /^One of the fruits of Emancipation/,
     },
     "noli-me-tangere": {
@@ -226,7 +222,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^On the last of October Don Santiago de los Santos/,
     },
     vera: {
-      scene: /Cliff gate/i,
+      scene: /cliff garden/i,
       opening: /^When the doctor had gone/,
     },
     "on-a-chinese-screen": {
@@ -234,8 +230,8 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^"I really think I can make something of it," she said/,
     },
     futility: {
-      scene: /Part I/i,
-      opening: /^And then it struck me that the only thing to do was to fit all this into a book/,
+      scene: /Simbirsk/i,
+      opening: /^When the \*Simbirsk\*/,
     },
     "poison-tree": {
       scene: /storm/i,
@@ -432,11 +428,9 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       );
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "high-wind-jamaica") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /lashed permanently open by a rank plant\.?$/);
-      assert.doesNotMatch(
-        packed.breaths.map((b) => b.text).join(" "),
-        /peering|negress/i,
-      );
+      assert.match(packed.breaths.at(-1)?.text ?? "", /ready to eat snakes as ever\.?$/);
+      assert.match(packed.breaths.map((b) => b.text).join(" "), /Ferndale/);
+      assert.match(packed.breaths.map((b) => b.text).join(" "), /negress/);
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "noli-me-tangere") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /Chinese water-carrier finds it convenient\.?$/);
@@ -446,7 +440,8 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       );
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "vera") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /and she felt nothing\.?$/);
+      assert.match(packed.breaths.map((b) => b.text).join(" "), /felt nothing/);
+      assert.match(packed.breaths.at(-1)?.text ?? "", /towards the gate again\.?$/);
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /Wemyss|Everard/i,
@@ -456,7 +451,8 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.match(packed.breaths.at(-1)?.text ?? "", /Tunbridge Wells\."?$/);
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "futility") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /the only man who really mattered in the world/);
+      assert.match(packed.breaths.at(-1)?.text ?? "", /Nikolai Vasilievich/);
+      assert.match(packed.breaths.map((b) => b.text).join(" "), /table-cloth/);
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /Wharton|preface/i,
@@ -1137,21 +1133,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       opening: /^The four children were lying on the grass/,
       breaths: 3688,
     },
-    "high-wind-jamaica": {
-      gutenberg: 75530,
-      title: "A High Wind in Jamaica",
-      opening: /^One of the fruits of Emancipation/,
-      breaths: 1514,
-      intro: /period racial language/,
-    },
-    vera: {
-      gutenberg: 34366,
-      title: "Vera",
-      author: "Elizabeth von Arnim",
-      year: 1921,
-      opening: /^When the doctor had gone/,
-      breaths: 3495,
-    },
     "noli-me-tangere": {
       gutenberg: 6737,
       title: "Noli Me Tangere (The Social Cancer)",
@@ -1168,13 +1149,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       breaths: 3122,
       scenes: 36,
       last: /^THE END$/,
-    },
-    futility: {
-      gutenberg: 77253,
-      title: "Futility",
-      author: "William Gerhardie",
-      opening: /^And then it struck me that the only thing to do was to fit all this into a book/,
-      breaths: 1523,
     },
     "poison-tree": {
       gutenberg: 17455,
@@ -1253,17 +1227,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       scenes: 37,
       last: /desert harbour\?$/,
       intro: /Tiflis/,
-    },
-    "strange-tales": {
-      gutenberg: 43629,
-      title: "Strange Tales from a Chinese Studio",
-      author: "Pu Songling",
-      year: 1766,
-      opening: /^A Kiang-si gentleman, named Mêng Lung-t‘an/,
-      breaths: 470,
-      scenes: 152,
-      last: /horrid plight\.$/,
-      intro: /painted wall/i,
     },
     "short-stories-from-the-balkans": {
       gutenberg: 73663,
@@ -1487,6 +1450,7 @@ test("tbr noon CLEAR ×5 load as local full binds on the Host open", () => {
       opening: /^A Kiang-si gentleman, named Mêng Lung-t‘an/,
       scene: /^The Painted Wall$/,
       absent: /Giles’ Introduction|INTRODUCTION/i,
+      host: true,
     },
     "short-stories-from-the-balkans": {
       scenes: 13,
@@ -1517,7 +1481,16 @@ test("tbr noon CLEAR ×5 load as local full binds on the Host open", () => {
     assert.equal(work!.form === "poem" || work!.form === "novel" || work!.form === "stories", true, id);
     if (id === "a-few-figs-from-thistles") assert.equal(work!.form, "poem");
     assert.match(work!.opening ?? "", want.opening, id);
-    if (id !== "the-awakening") assertNoStubOpening(id);
+    if (id !== "the-awakening" && id !== "strange-tales") assertNoStubOpening(id);
+    if (id === "strange-tales") {
+      const opened = JSON.parse(
+        readFileSync(new URL("./openings/strange-tales.json", import.meta.url), "utf8"),
+      ) as { scenes: { title: string }[]; breaths: { text: string }[] };
+      assert.equal(opened.scenes.length, 1);
+      assert.equal(opened.scenes[0]?.title, "The Painted Wall");
+      assert.match(opened.breaths[0]?.text ?? "", want.opening);
+      assert.doesNotMatch(opened.breaths.map((breath) => breath.text).join("\n"), /Giles’ Introduction/);
+    }
     const full = textWork(id);
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);

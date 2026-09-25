@@ -37,7 +37,6 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
     "there-is-confusion",
     "miss-lulu-bett",
     "seven-brothers",
-    "futility",
     "on-the-seaboard",
     "bel-ami",
     "hadji-murad",
