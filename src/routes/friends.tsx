@@ -189,6 +189,7 @@ function FriendsPage() {
           place: club?.place ?? "On this phone",
           workTitle: club?.workTitle ?? "",
           workId: club?.workId ?? "",
+          fill: club?.fill ?? "paper",
         };
       }),
     [joined],
@@ -351,7 +352,7 @@ function FriendsPage() {
         <p className="shrink-0 border-b border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">{message}</p>
       ) : null}
 
-      <div className="min-h-0 flex-1 overflow-y-auto">
+      <div className="min-h-0 min-w-0 flex-1 overflow-x-clip overflow-y-auto">
         <div className="border-b border-ink px-4 py-5">
           <p className="type-kicker text-muted">On this phone</p>
           <p className="mt-1 type-lede">What friends are reading</p>
@@ -375,9 +376,13 @@ function FriendsPage() {
                 className="h-14 min-w-0 flex-1 border-0 bg-transparent px-4 font-serif text-xl text-ink placeholder:text-ink/40 focus-visible:outline-none"
               />
             </label>
-            {search.matches.map((row) => (
-              <FriendListRow key={row.handle} row={row} onFollow={() => onFollow(row)} />
-            ))}
+            {search.matches.length > 0 ? (
+              <Rail label="Search handles">
+                {search.matches.map((row) => (
+                  <FriendListRow key={row.handle} row={row} onFollow={() => onFollow(row)} />
+                ))}
+              </Rail>
+            ) : null}
             {search.offer ? (
               <button
                 type="button"
@@ -439,17 +444,21 @@ function FriendsPage() {
         {hydrated ? (
           <section>
             <SectionTitle>People</SectionTitle>
-            {withYou.map((row) => (
-              <FriendListRow key={row.handle} row={row} onFollow={() => onFollow(row)} />
-            ))}
-            {followedAuthorCards.map((author) => (
-              <AuthorFollowRow
-                key={author.slug}
-                author={author}
-                following
-                onFollow={() => followedAuthors.toggle(author.slug)}
-              />
-            ))}
+            {withYou.length + followedAuthorCards.length > 0 ? (
+              <Rail label="People">
+                {withYou.map((row) => (
+                  <FriendListRow key={row.handle} row={row} onFollow={() => onFollow(row)} />
+                ))}
+                {followedAuthorCards.map((author) => (
+                  <AuthorFollowRow
+                    key={author.slug}
+                    author={author}
+                    following
+                    onFollow={() => followedAuthors.toggle(author.slug)}
+                  />
+                ))}
+              </Rail>
+            ) : null}
             {friends.filter((row) => row.following).length === 0 ? (
               <EmptyCopy>
                 No friends on this phone yet. A follow, an invite, or a shared sit is what shows up here.
@@ -462,14 +471,18 @@ function FriendsPage() {
         {hydrated ? (
           <section aria-label="Notable people to follow">
             <SectionTitle>Notable people to follow</SectionTitle>
-            {authors.map((author) => (
-              <AuthorFollowRow
-                key={author.slug}
-                author={author}
-                following={followedAuthors.follows(author.slug)}
-                onFollow={() => followedAuthors.toggle(author.slug)}
-              />
-            ))}
+            {authors.length > 0 ? (
+              <Rail label="Notable people to follow">
+                {authors.map((author) => (
+                  <AuthorFollowRow
+                    key={author.slug}
+                    author={author}
+                    following={followedAuthors.follows(author.slug)}
+                    onFollow={() => followedAuthors.toggle(author.slug)}
+                  />
+                ))}
+              </Rail>
+            ) : null}
           </section>
         ) : null}
 
@@ -511,22 +524,24 @@ function FriendsPage() {
                 <TextButton onClick={() => void invite()}>Invite a friend</TextButton>
               </>
             ) : (
-              reading.map((row) => {
-                const line = keptLines.find(
-                  (item) => item.handle === row.handle && item.workId === row.reading,
-                );
-                return (
-                  <ReadingCard
-                    key={row.handle}
-                    handle={row.handle}
-                    workId={row.reading}
-                    workTitle={row.workTitle}
-                    author={row.author}
-                    latest={latestByHandle.get(row.handle) ?? ""}
-                    line={line}
-                  />
-                );
-              })
+              <Rail label="Friends are reading">
+                {reading.map((row) => {
+                  const line = keptLines.find(
+                    (item) => item.handle === row.handle && item.workId === row.reading,
+                  );
+                  return (
+                    <ReadingCard
+                      key={row.handle}
+                      handle={row.handle}
+                      workId={row.reading}
+                      workTitle={row.workTitle}
+                      author={row.author}
+                      latest={latestByHandle.get(row.handle) ?? ""}
+                      line={line}
+                    />
+                  );
+                })}
+              </Rail>
             )}
           </section>
         ) : null}
@@ -550,9 +565,11 @@ function FriendsPage() {
                 )}
               </>
             ) : (
-              keptLines.map((line) => (
-                <KeptLineCard key={line.id} line={line} onShare={() => void shareLine(line)} />
-              ))
+              <Rail label="Kept lines">
+                {keptLines.map((line) => (
+                  <KeptLineCard key={line.id} line={line} onShare={() => void shareLine(line)} />
+                ))}
+              </Rail>
             )}
           </section>
         ) : null}
@@ -563,27 +580,35 @@ function FriendsPage() {
             {pendingPledges.length === 0 ? (
               <EmptyCopy>No tonight-notes on this phone.</EmptyCopy>
             ) : (
-              pendingPledges.map((pledge) => (
-                <PledgeCard
-                  key={pledge.id}
-                  pledge={pledge}
-                  mine={me === pledge.fromHandle}
-                  onSat={() => setPledgeStatus(pledge.id, "done")}
-                  onAside={() => setPledgeStatus(pledge.id, "cancelled")}
-                />
-              ))
+              <Rail label="Tonight notes">
+                {pendingPledges.map((pledge) => (
+                  <PledgeCard
+                    key={pledge.id}
+                    pledge={pledge}
+                    mine={me === pledge.fromHandle}
+                    onSat={() => setPledgeStatus(pledge.id, "done")}
+                    onAside={() => setPledgeStatus(pledge.id, "cancelled")}
+                  />
+                ))}
+              </Rail>
             )}
             {mySits.length === 0 ? (
               <EmptyCopy>No sit to join or host on this phone.</EmptyCopy>
             ) : (
-              mySits.map((sit) => (
-                <SitCard key={sit.id} sit={sit} onShare={() => void shareSit(sit)} />
-              ))
+              <Rail label="Sits">
+                {mySits.map((sit) => (
+                  <SitCard key={sit.id} sit={sit} onShare={() => void shareSit(sit)} />
+                ))}
+              </Rail>
             )}
             {togetherKeeps.length === 0 ? (
               <EmptyCopy>No together-keeps yet.</EmptyCopy>
             ) : (
-              togetherKeeps.map((pair) => <TogetherCard key={pair.id} pair={pair} selfHandle={me} />)
+              <Rail label="Together keeps">
+                {togetherKeeps.map((pair) => (
+                  <TogetherCard key={pair.id} pair={pair} selfHandle={me} />
+                ))}
+              </Rail>
             )}
             <div className="grid grid-cols-2 border-b border-ink">
               <button
@@ -608,22 +633,22 @@ function FriendsPage() {
           <section>
             <SectionTitle>I’ll sit tonight</SectionTitle>
             <form onSubmit={sendPledge}>
-              <div className="grid grid-cols-3 border-b border-ink">
-                {EVENING_WINDOWS.map((row, index) => (
+              <Rail label="I'll sit tonight">
+                {EVENING_WINDOWS.map((row) => (
                   <button
                     key={row.id}
                     type="button"
+                    role="listitem"
                     onClick={() => setPledgeWindow(row.id)}
                     className={cn(
-                      "flex min-h-12 items-center justify-center px-2 text-center font-sans text-sm leading-tight",
-                      index > 0 && "border-l border-ink",
+                      "you-tile is-sit font-sans text-sm",
                       pledgeWindow === row.id ? "bg-ink text-paper" : "bg-paper text-ink",
                     )}
                   >
                     {row.label}
                   </button>
                 ))}
-              </div>
+              </Rail>
               <div className="flex items-stretch border-b border-ink">
                 <input
                   value={pledgeTo}
@@ -668,9 +693,11 @@ function FriendsPage() {
                 <TextButton onClick={() => void invite()}>Invite a friend</TextButton>
               </>
             ) : (
-              suggestions.map((row) => (
-                <FriendListRow key={row.handle} row={row} onFollow={() => onFollow(row)} />
-              ))
+              <Rail label="Suggestions">
+                {suggestions.map((row) => (
+                  <FriendListRow key={row.handle} row={row} onFollow={() => onFollow(row)} />
+                ))}
+              </Rail>
             )}
           </section>
         ) : null}
@@ -691,26 +718,27 @@ function FriendsPage() {
                 </Link>
               </>
             ) : (
-              rooms.map((room) => (
-                <Link
-                  key={room.id}
-                  to="/club/$clubId"
-                  params={{ clubId: room.id }}
-                  className="flex items-stretch border-b border-ink"
-                >
-                  <span className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5">
-                    <span className="type-kicker text-muted">{room.place}</span>
+              <Rail label="Club rooms">
+                {rooms.map((room) => (
+                  <Link
+                    key={room.id}
+                    to="/club/$clubId"
+                    params={{ clubId: room.id }}
+                    role="listitem"
+                    className={cn("you-tile is-wide", fillClass(room.fill), fillInk(room.fill))}
+                  >
+                    <span className="type-kicker opacity-80">{room.place}</span>
                     <span className="mt-1 type-lede">{room.name}</span>
                     {room.workTitle ? (
-                      <span className="mt-1 font-serif text-sm text-ink/70">{room.workTitle}</span>
+                      <span className="mt-1 font-serif text-sm opacity-80">{room.workTitle}</span>
                     ) : null}
-                    <span className="mt-2 font-serif text-sm text-ink/70">
+                    <span className="mt-2 font-serif text-sm opacity-75">
                       You joined. Other people appear only when they are on this phone.
                     </span>
-                  </span>
-                  <span className="inline-flex shrink-0 items-center px-4 font-sans text-sm">Open</span>
-                </Link>
-              ))
+                    <span className="mt-2 font-sans text-xs opacity-80">Open</span>
+                  </Link>
+                ))}
+              </Rail>
             )}
           </section>
         ) : null}
@@ -727,6 +755,14 @@ function FriendsPage() {
 
 function SectionTitle({ children }: { children: string }) {
   return <p className="border-b border-ink px-4 py-3 type-kicker text-muted">{children}</p>;
+}
+
+function Rail({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <div className="rail" role="list" aria-label={label}>
+      {children}
+    </div>
+  );
 }
 
 function EmptyCopy({ children }: { children: ReactNode }) {
@@ -757,40 +793,29 @@ function AuthorFollowRow({
   const fill = planeOf(author.slug);
   const initial = (author.name.slice(0, 1) || "?").toUpperCase();
   return (
-    <div className="border-b border-ink">
+    <div role="listitem" className={cn("you-tile is-wide is-flush", fillClass(fill), fillInk(fill))}>
       <Link
         to="/friends/author/$slug"
         params={{ slug: author.slug }}
         aria-label={`Open ${author.name}`}
-        className="flex min-w-0 items-center gap-3 px-4 py-3"
+        className="you-tile-link"
       >
         <span
           aria-hidden
-          className={cn(
-            "flex size-11 shrink-0 items-center justify-center border border-ink font-sans text-sm",
-            fillClass(fill),
-            fillInk(fill),
-          )}
+          className="mb-3 flex size-8 items-center justify-center border border-current font-sans text-sm"
         >
           {initial}
         </span>
-        <span className="min-w-0 flex-1">
-          <span className="block type-kicker text-muted">Author</span>
-          <span className="block truncate font-serif text-xl leading-tight">{author.name}</span>
-          <span className="mt-0.5 block truncate font-serif text-sm text-ink/80">
-            {booksOnTbrLabel(author.books.length)}
-          </span>
-        </span>
-        <span className="shrink-0 font-sans text-sm">Open</span>
+        <span className="type-kicker opacity-80">Author</span>
+        <span className="mt-1 type-lede">{author.name}</span>
+        <span className="mt-1 font-serif text-sm opacity-80">{booksOnTbrLabel(author.books.length)}</span>
+        <span className="mt-2 font-sans text-xs opacity-80">Open</span>
       </Link>
       <button
         type="button"
         onClick={onFollow}
         aria-pressed={following}
-        className={cn(
-          "flex h-11 w-full items-center border-t border-ink px-4 font-sans text-sm",
-          following ? "bg-ink text-paper" : "bg-paper text-ink",
-        )}
+        className={cn("you-tile-action", followBar(following, fill))}
       >
         {following ? "Following" : "Follow"}
       </button>
@@ -807,48 +832,45 @@ function FriendListRow({ row, onFollow }: { row: FriendRow; onFollow: () => void
       : row.readingTitle
     : "No open book on this phone";
   return (
-    <div className="border-b border-ink">
+    <div role="listitem" className={cn("you-tile is-wide is-flush", fillClass(fill), fillInk(fill))}>
       <Link
         to="/friends/$handle"
         params={{ handle: row.handle }}
         aria-label={`Open ${formatHandle(row.handle)}`}
-        className="flex min-w-0 items-center gap-3 px-4 py-3"
+        className="you-tile-link"
       >
         <span
           aria-hidden
-          className={cn(
-            "flex size-11 shrink-0 items-center justify-center border border-ink font-sans text-sm",
-            fillClass(fill),
-            fillInk(fill),
-          )}
+          className="mb-3 flex size-8 items-center justify-center border border-current font-sans text-sm"
         >
           {initial}
         </span>
-        <span className="min-w-0 flex-1">
-          <span className="block type-kicker text-muted">{row.isSelf ? "This device" : "Friend"}</span>
-          <span className="block truncate font-serif text-xl leading-tight">{formatHandle(row.handle)}</span>
-          <span className="mt-0.5 block truncate font-serif text-sm text-ink/80">{reading}</span>
-          <span className="mt-0.5 block truncate type-kicker text-muted">
-            {row.waiting ? "Waiting" : row.latest || "No activity on this phone yet"}
-          </span>
+        <span className="type-kicker opacity-80">{row.isSelf ? "This device" : "Friend"}</span>
+        <span className="mt-1 type-lede">{formatHandle(row.handle)}</span>
+        <span className="mt-1 font-serif text-sm opacity-80">{reading}</span>
+        <span className="mt-1 type-kicker opacity-70">
+          {row.waiting ? "Waiting" : row.latest || "No activity on this phone yet"}
         </span>
-        <span className="shrink-0 font-sans text-sm">Open</span>
+        <span className="mt-2 font-sans text-xs opacity-80">Open</span>
       </Link>
       {row.isSelf ? null : (
         <button
           type="button"
           onClick={onFollow}
           aria-pressed={row.following}
-          className={cn(
-            "flex h-11 w-full items-center border-t border-ink px-4 font-sans text-sm",
-            row.following ? "bg-ink text-paper" : "bg-paper text-ink",
-          )}
+          className={cn("you-tile-action", followBar(row.following, fill))}
         >
           {row.following ? "Following" : "Follow"}
         </button>
       )}
     </div>
   );
+}
+
+function followBar(following: boolean, fill: ReturnType<typeof planeOf>) {
+  if (!following) return "bg-paper text-ink";
+  if (fill === "ink") return "bg-yellow text-ink";
+  return "bg-ink text-paper";
 }
 
 function ReadingCard({
@@ -876,37 +898,28 @@ function ReadingCard({
         at: line.atIndex,
       })
     : "";
+  const fill = planeOf(handle);
   return (
-    <article className="border-b border-ink">
-      <Link
-        to="/friends/$handle"
-        params={{ handle }}
-        className="flex items-center gap-3 px-4 py-4"
-      >
-        <span className="min-w-0 flex-1">
-          <span className="block type-kicker text-muted">{formatHandle(handle)}</span>
-          <span className="mt-1 block type-lede">{workTitle || "Open book"}</span>
-          {author ? <span className="mt-1 block font-serif text-sm text-ink/70">{author}</span> : null}
-          {line ? <span className="mt-2 block font-serif text-base italic leading-snug">{line.line}</span> : null}
-          {latest ? <span className="mt-1 block truncate type-kicker text-muted">{latest}</span> : null}
-        </span>
-        <span className="shrink-0 font-sans text-sm">Open</span>
+    <article role="listitem" className={cn("you-tile is-wide is-flush", fillClass(fill), fillInk(fill))}>
+      <Link to="/friends/$handle" params={{ handle }} className="you-tile-link">
+        <span className="type-kicker opacity-80">{formatHandle(handle)}</span>
+        <span className="mt-1 type-lede">{workTitle || "Open book"}</span>
+        {author ? <span className="mt-1 font-serif text-sm opacity-80">{author}</span> : null}
+        {line ? <span className="mt-2 font-serif text-base italic leading-snug">{line.line}</span> : null}
+        {latest ? <span className="mt-1 type-kicker opacity-70">{latest}</span> : null}
+        <span className="mt-2 font-sans text-xs opacity-80">Open</span>
       </Link>
       {echo ? (
         <Link
           to="/read/$workId"
           params={{ workId }}
           search={{ echo }}
-          className="flex h-12 items-center border-t border-ink px-4 font-sans text-sm"
+          className={cn("you-tile-action", followBar(false, fill))}
         >
           Keep with them
         </Link>
       ) : (
-        <Link
-          to="/read/$workId"
-          params={{ workId }}
-          className="flex h-12 items-center border-t border-ink px-4 font-sans text-sm"
-        >
+        <Link to="/read/$workId" params={{ workId }} className={cn("you-tile-action", followBar(false, fill))}>
           Sit
         </Link>
       )}
@@ -915,31 +928,24 @@ function ReadingCard({
 }
 
 function KeptLineCard({ line, onShare }: { line: BoardKeptLine; onShare: () => void }) {
+  const fill = planeOf(line.handle);
   return (
-    <article className="border-b border-ink">
-      <Link
-        to="/friends/$handle"
-        params={{ handle: line.handle }}
-        className="block px-4 py-4"
-      >
-        <span className="type-kicker text-muted">{formatHandle(line.handle)} · Open</span>
-        <span className="mt-1 block font-serif text-lg italic leading-snug">{line.line}</span>
-        <span className="mt-1 block font-serif text-sm text-ink/70">{line.workTitle}</span>
+    <article role="listitem" className={cn("you-tile is-quote", fillClass(fill), fillInk(fill))}>
+      <Link to="/friends/$handle" params={{ handle: line.handle }} className="you-tile-link">
+        <span className="type-kicker opacity-80">{formatHandle(line.handle)} · Open</span>
+        <span className="mt-1 font-serif text-lg italic leading-snug">{line.line}</span>
+        <span className="mt-1 font-serif text-sm opacity-80">{line.workTitle}</span>
       </Link>
-      <div className="grid grid-cols-2 border-t border-ink">
+      <div className="you-tile-actions">
         <Link
           to="/read/$workId"
           params={{ workId: line.workId }}
           search={line.atIndex >= 0 ? { at: line.atIndex } : {}}
-          className="flex h-12 items-center justify-center font-sans text-sm"
+          className={followBar(false, fill)}
         >
           Read
         </Link>
-        <button
-          type="button"
-          onClick={onShare}
-          className="flex h-12 items-center justify-center border-l border-ink font-sans text-sm"
-        >
+        <button type="button" onClick={onShare} className={followBar(true, fill)}>
           Share link
         </button>
       </div>
@@ -960,33 +966,23 @@ function PledgeCard({
 }) {
   const other = mine ? pledge.toHandle : pledge.fromHandle;
   return (
-    <article className="border-b border-ink bg-yellow text-ink">
-      <Link to="/friends/$handle" params={{ handle: other }} className="flex items-stretch">
-        <span className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5">
-          <span className="type-kicker opacity-70">
-            {mine ? "You said you would sit" : "A friend will sit"}
-          </span>
-          <span className="mt-1 type-lede">
-            {mine
-              ? `${formatHandle(pledge.toHandle)} has your word`
-              : `${formatHandle(pledge.fromHandle)} · ${pledgeLine(pledge)}`}
-          </span>
+    <article role="listitem" className="you-tile is-wide is-flush bg-yellow text-ink">
+      <Link to="/friends/$handle" params={{ handle: other }} className="you-tile-link">
+        <span className="type-kicker opacity-70">
+          {mine ? "You said you would sit" : "A friend will sit"}
         </span>
-        <span className="inline-flex shrink-0 items-center px-4 font-sans text-sm">Open</span>
+        <span className="mt-1 type-lede">
+          {mine
+            ? `${formatHandle(pledge.toHandle)} has your word`
+            : `${formatHandle(pledge.fromHandle)} · ${pledgeLine(pledge)}`}
+        </span>
+        <span className="mt-2 font-sans text-xs opacity-80">Open</span>
       </Link>
-      <div className="grid grid-cols-2 border-t border-ink">
-        <button
-          type="button"
-          onClick={onSat}
-          className="flex h-12 items-center justify-center bg-ink font-sans text-sm text-paper"
-        >
+      <div className="you-tile-actions">
+        <button type="button" onClick={onSat} className="bg-ink text-paper">
           {mine ? "I sat" : "They sat"}
         </button>
-        <button
-          type="button"
-          onClick={onAside}
-          className="flex h-12 items-center justify-center border-l border-ink bg-paper font-sans text-sm text-ink"
-        >
+        <button type="button" onClick={onAside} className="bg-paper text-ink">
           Set aside
         </button>
       </div>
@@ -996,38 +992,25 @@ function PledgeCard({
 
 function SitCard({ sit, onShare }: { sit: HostedSit; onShare: () => void }) {
   const phase = sitPhase(sit);
+  const ghost = phase === "ghost";
   return (
-    <article className={cn("border-b border-ink", phase === "ghost" ? "bg-paper text-ink" : "bg-forest text-paper")}>
-      <Link
-        to="/friends/$handle"
-        params={{ handle: sit.hostHandle }}
-        className="flex items-stretch"
-      >
-        <span className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5">
-          <span className="type-kicker opacity-80">
-            {formatHandle(sit.hostHandle)} · {sitDurationLabel(sit.minutes)}
-            {phase === "ghost" ? " · replay" : ""}
-          </span>
-          <span className="mt-1 type-lede">{sit.workTitle || "A sit"}</span>
+    <article
+      role="listitem"
+      className={cn("you-tile is-wide is-flush", ghost ? "bg-paper text-ink" : "bg-forest text-paper")}
+    >
+      <Link to="/friends/$handle" params={{ handle: sit.hostHandle }} className="you-tile-link">
+        <span className="type-kicker opacity-80">
+          {formatHandle(sit.hostHandle)} · {sitDurationLabel(sit.minutes)}
+          {ghost ? " · replay" : ""}
         </span>
-        <span className="inline-flex shrink-0 items-center px-4 font-sans text-sm">Open</span>
+        <span className="mt-1 type-lede">{sit.workTitle || "A sit"}</span>
+        <span className="mt-2 font-sans text-xs opacity-80">Open</span>
       </Link>
-      <div className={cn("grid grid-cols-2 border-t", phase === "ghost" ? "border-ink" : "border-paper/40")}>
-        <Link
-          to="/sit/$token"
-          params={{ token: encodeHostedSit(sit) }}
-          className="flex h-12 items-center justify-center font-sans text-sm"
-        >
-          {phase === "ghost" ? "Replay" : "Join"}
+      <div className="you-tile-actions">
+        <Link to="/sit/$token" params={{ token: encodeHostedSit(sit) }} className={ghost ? "bg-ink text-paper" : "bg-paper text-ink"}>
+          {ghost ? "Replay" : "Join"}
         </Link>
-        <button
-          type="button"
-          onClick={onShare}
-          className={cn(
-            "flex h-12 items-center justify-center border-l font-sans text-sm",
-            phase === "ghost" ? "border-ink" : "border-paper/40",
-          )}
-        >
+        <button type="button" onClick={onShare} className={ghost ? "bg-paper text-ink" : "bg-ink text-paper"}>
           Share link
         </button>
       </div>
@@ -1040,21 +1023,22 @@ function TogetherCard({ pair, selfHandle }: { pair: TogetherKeep; selfHandle: st
     normalizeHandle(pair.theirs.handle) !== selfHandle ? pair.theirs.handle : pair.yours.handle;
   const line = pair.yours.line.trim() || pair.theirs.line.trim();
   const echo = pair.theirs.line.trim();
+  const fill = planeOf(other);
   return (
-    <article className="border-b border-ink">
-      <Link to="/friends/$handle" params={{ handle: other }} className="block px-4 py-5">
-        <span className="type-kicker text-muted">Together · {formatHandle(other)} · Open</span>
-        {line ? <span className="mt-1 block type-lede italic leading-snug">{line}</span> : null}
+    <article role="listitem" className={cn("you-tile is-quote", fillClass(fill), fillInk(fill))}>
+      <Link to="/friends/$handle" params={{ handle: other }} className="you-tile-link">
+        <span className="type-kicker opacity-80">Together · {formatHandle(other)} · Open</span>
+        {line ? <span className="mt-1 type-lede italic leading-snug">{line}</span> : null}
         {echo && echo !== line ? (
-          <span className="mt-2 block font-serif text-sm text-ink/60">{echo}</span>
+          <span className="mt-2 font-serif text-sm opacity-75">{echo}</span>
         ) : null}
-        <span className="mt-2 block type-kicker text-muted">{pair.workTitle}</span>
+        <span className="mt-2 type-kicker opacity-70">{pair.workTitle}</span>
       </Link>
       <Link
         to="/read/$workId"
         params={{ workId: pair.workId }}
         search={{ at: pair.yours.at }}
-        className="flex h-12 items-center border-t border-ink px-4 font-sans text-sm"
+        className={cn("you-tile-action", followBar(false, fill))}
       >
         Read
       </Link>

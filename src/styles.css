@@ -640,6 +640,28 @@ html.together-compose.together-kb .chat-slot {
   text-decoration: none;
 }
 
+.you-tile-actions {
+  display: grid;
+  flex-shrink: 0;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--color-ink);
+}
+
+.you-tile-actions > * {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: var(--text-chrome);
+  letter-spacing: var(--tracking-chrome);
+  text-decoration: none;
+}
+
+.you-tile-actions > * + * {
+  border-left: 1px solid var(--color-ink);
+}
+
 .you-tile:focus-visible,
 .you-tile-link:focus-visible,
 .you-tile-action:focus-visible {
