@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import { BrandSeal } from "@/components/brand-seal";
 import { DailyScoreChip } from "@/components/daily-score-chip";
 import { cn } from "@/lib/utils";
 
@@ -24,8 +23,7 @@ export function YouFriendsMark({
         Friends
       </Link>
       {showScore ? <DailyScoreChip /> : null}
-      <Link to="/profile" preload="intent" className={cn(slot, "gap-1.5", className)}>
-        <BrandSeal />
+      <Link to="/profile" preload="intent" className={cn(slot, className)}>
         You
       </Link>
     </>

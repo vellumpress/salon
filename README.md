@@ -14,7 +14,7 @@ Live on GitHub Pages: **https://vellumpress.github.io/salon/**
 
 Pushes to `main` run `.github/workflows/deploy-pages.yml`. Vite/`tanstackStart` use `base` `/salon/`. Cold deep links (`/salon/read/…`, `/salon/rituals`, …) hit `404.html`, which redirects into `/salon/?/<route>`; `index.html` restores the path before the router boots ([spa-github-pages](https://github.com/rafgraph/spa-github-pages)).
 
-Add to Home Screen on iPhone and Android uses the label **tbr** (`apple-mobile-web-app-title`, `application-name`, manifest `short_name`). The install name is the wordmark **tbr.** The home-screen icon is that wordmark on paper, oxblood full stop, with the stop dropped on the tiny favicon. The tab title is **tbr.**
+Add to Home Screen on iPhone and Android uses the name **tbr** (`apple-mobile-web-app-title`, `application-name`, and the web app manifest `name` / `short_name`) and a Mondrian red / blue / green icon. The icon is geometry only — no wordmark.
 
 ## Local run
 

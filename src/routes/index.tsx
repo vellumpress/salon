@@ -13,7 +13,7 @@ import {
 import { fillClass, fillInk, mosaicFills, type Fill } from "@/lib/mondrian";
 import { useVisitSeed } from "@/lib/use-visit-seed";
 import { prefetchWork } from "@/lib/works";
-import { Wordmark } from "@/components/wordmark";
+import { APP_NAME } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
@@ -80,8 +80,8 @@ function Home() {
       data-hydrated={last ? "1" : "0"}
     >
       <div className="cell-mark flex bg-paper">
-        <span className="flex h-full min-w-0 flex-1 items-center self-stretch bg-paper px-4 text-ink">
-          <Wordmark />
+        <span className="type-mark flex h-full min-w-0 flex-1 items-center self-stretch bg-paper px-4 text-ink">
+          {APP_NAME}
         </span>
         <ResumeLink />
         <YouFriendsMark showScore={hydrated && !showResume} />

@@ -1,12 +1,6 @@
 /** User-facing product name. Always lowercase. Repo / Pages path stay `salon`. */
 export const APP_NAME = "tbr";
 
-/**
- * Logo, including the full stop. The stop is not part of running text.
- * Home-screen labels and body copy stay on APP_NAME.
- */
-export const WORDMARK = "tbr.";
-
 /** Meta, Open Graph, and Twitter description. */
 export const APP_DESCRIPTION =
   "tbr. Timed reading rituals. Public-domain sitting, on this phone.";
