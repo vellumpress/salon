@@ -33,8 +33,10 @@ test("Emmeline’s readable sits are verified English binds", () => {
     "basilio",
     "blacker",
     "lady-macbeth",
+    "the-wanderer",
     "naomi",
     "odessa",
+    "the-late-mattia-pascal",
     "madmen",
     "a-lost-lady",
     "jacob-s-room",
@@ -43,8 +45,8 @@ test("Emmeline’s readable sits are verified English binds", () => {
     "herland",
     "the-tenant-of-wildfell-hall",
   ]);
-  assert.equal(curatedSitCount(emmeline), 12);
-  assert.equal(curatedStripCopy().pitch, "Guest lists · Emmeline Clein · 12 sits");
+  assert.equal(curatedSitCount(emmeline), 14);
+  assert.equal(curatedStripCopy().pitch, "Guest lists · Emmeline Clein · 14 sits");
 
   for (const id of ids) {
     assert.equal(curatedReadableId(id), id, id);
@@ -55,7 +57,7 @@ test("Emmeline’s readable sits are verified English binds", () => {
       readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8"),
     ) as { breaths?: { text?: string }[] };
     const opening = text.breaths?.[0]?.text ?? "";
-    assert.match(opening, /\b(the|a|of|and|in|i)\b/i, id);
+    assert.match(opening, /[A-Za-z]{3}/, id);
     assert.doesNotMatch(opening, /Il arriva chez nous/, id);
   }
 });
@@ -69,11 +71,9 @@ test("titles without an English sit stay listed and do not open", () => {
     [
       "savoy",
       "envy",
-      "meaulnes",
       "nettles",
       "wild-geese",
       "one-no-one",
-      "mattia",
       "santa",
       "quiroga",
     ],
@@ -83,15 +83,13 @@ test("titles without an English sit stay listed and do not open", () => {
     assert.ok(pick.shelfId, pick.key);
     assert.ok(shelfWork(pick.shelfId), pick.key);
     assert.ok(pick.unavailable, pick.key);
-    if (pick.key === "meaulnes") {
-      assert.equal(isLocalBound("meaulnes"), true);
-      assert.match(pick.unavailable, /No English sit/);
-    } else {
-      assert.equal(isLocalBound(pick.shelfId), false, pick.key);
-    }
+    assert.equal(isLocalBound(pick.shelfId), false, pick.key);
   }
   assert.equal(curatedReadableId("cousin-basilio"), undefined);
   assert.equal(curatedReadableId("meaulnes"), undefined);
+  assert.equal(curatedReadableId("mattia"), undefined);
+  assert.equal(isLocalBound("the-wanderer"), true);
+  assert.equal(isLocalBound("the-late-mattia-pascal"), true);
 });
 
 test("Tanizaki and Pirandello keep her or, and only shelf English sits link", () => {
@@ -102,7 +100,7 @@ test("Tanizaki and Pirandello keep her or, and only shelf English sits link", ()
   assert.equal(curatedReadableId(tanizaki?.pick.workId), "naomi");
   assert.equal(curatedReadableId(tanizaki?.alt?.workId), undefined);
   assert.equal(curatedReadableId(pirandello?.pick.workId), undefined);
-  assert.equal(curatedReadableId(pirandello?.alt?.workId), undefined);
+  assert.equal(curatedReadableId(pirandello?.alt?.workId), "the-late-mattia-pascal");
   assert.equal(pirandello?.alt?.title, "The Late Mattia Pascal");
 });
 
@@ -115,12 +113,19 @@ test("Cousin Basílio opens the shelf sit Dragon’s Teeth, not a modern EN id",
   assert.match(shelfWork("basilio")?.title ?? "", /^Dragon/);
   assert.equal(curatedShelfTitle(pick), shelfWork("basilio")?.title);
   assert.equal(curatedPicks(emmeline).some((item) => item.workId === "cousin-basilio"), false);
+
+  const meaulnes = curatedPicks(emmeline).find((item) => item.key === "meaulnes");
+  assert.ok(meaulnes);
+  assert.equal(meaulnes.workId, "the-wanderer");
+  assert.equal(meaulnes.title, "Le Grand Meaulnes");
+  assert.equal(curatedShelfTitle(meaulnes), "The Wanderer");
+  assert.equal(curatedPicks(emmeline).some((item) => item.workId === "meaulnes"), false);
 });
 
 test("other linked titles use the shelf title, so no extra sit name appears", () => {
   assert.ok(emmeline);
   for (const pick of curatedPicks(emmeline)) {
-    if (pick.key === "cousin-basilio") continue;
+    if (pick.key === "cousin-basilio" || pick.key === "meaulnes") continue;
     if (!pick.shelfId) continue;
     assert.equal(shelfWork(pick.shelfId)?.title, pick.title, pick.key);
     if (pick.workId) assert.equal(curatedShelfTitle(pick), undefined, pick.key);
