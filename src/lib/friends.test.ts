@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import {
   asContact,
@@ -94,4 +95,21 @@ test("youCard uses last-read as currently sitting", () => {
   assert.equal(you.handle, "reader");
   assert.equal(you.reading, "passing");
   assert.equal(you.workTitle, "Passing");
+});
+
+test("friends rails scroll as a block, not a flex scrollport", () => {
+  const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
+  const friends = readFileSync(new URL("../routes/friends.tsx", import.meta.url), "utf8");
+  assert.match(friends, /className="rail-clip"/);
+  assert.match(friends, /className="rail hug"/);
+  const clip = css.match(/\.rail-clip\s*\{([^}]+)\}/);
+  assert.ok(clip, "missing .rail-clip");
+  assert.match(clip[1], /overflow-x:\s*auto/);
+  assert.match(clip[1], /overflow-y:\s*hidden/);
+  assert.doesNotMatch(clip[1], /display:\s*flex/);
+  const row = css.match(/\.rail-clip > \.rail\.hug\s*\{([^}]+)\}/);
+  assert.ok(row, "missing .rail-clip > .rail.hug");
+  assert.match(row[1], /overflow:\s*visible/);
+  assert.match(row[1], /height:\s*auto/);
+  assert.match(row[1], /max-height:\s*max-content/);
 });
