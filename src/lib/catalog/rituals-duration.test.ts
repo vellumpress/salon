@@ -250,7 +250,7 @@ test("The Home and the World before-sleep sit is the mirror-prayer cut", () => {
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(estimateRitualMinutes(item), 6);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
@@ -410,7 +410,7 @@ test("A Hundred and Seventy Chinese Poems before-sleep sit is the Winter Night c
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
-test("Dubliners before-sleep sit is The Sisters cut", () => {
+test("Dubliners Rituals sit is the Araby cut", () => {
   const item = work({
     id: "dubliners",
     form: "stories",
@@ -418,8 +418,8 @@ test("Dubliners before-sleep sit is The Sisters cut", () => {
     minutes: 25,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assert.equal(estimateRitualMinutes(item), 12);
+  assert.equal(ritualDurationLabel(item), "~12 min");
 });
 
 test("Gitanjali before-sleep sit is the poem-1 cut", () => {

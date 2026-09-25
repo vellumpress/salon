@@ -112,6 +112,16 @@ export const PITCHES: Record<string, string> = {
     `On a cool, rainy evening in a small château in Brie, Colonel Delmare watches the fire. Skip the prefaces. Ives’s English of Sand’s 1832 novel. The sit stops on the dim interior. This is not the Arcade of the Pont Neuf.`,
   "the-book-of-wonder":
     `Come with me, ladies and gentlemen who are in any wise weary of London. Preface, then The Bride of the Man-Horse only — stop when the silver horn sounds the wedding bells. One story this sit; the cycle continues.`,
+  "the-hidden-force":
+    `The full moon wore the hue of tragedy that evening — a blood-red ball behind the tamarind-trees in the Lange Laan, then the Residency far back in its grounds. Skip the translator’s note. The sit stops at the town-clock. Teixeira’s English of the Java novel. This is not The Hague.`,
+  "the-home-and-the-world":
+    `Mother’s vermilion mark, a red-bordered *sari*, and a daughter furious with her mirror who wanted to be an ideal wife. The sit is Bimala’s story in the Rajah’s house. This is not Anandamath.`,
+  hunger:
+    `It was during the time I wandered about and starved in Christiania. The attic clock strikes six. Skip the introduction. Egerton’s English of the city hunger. This is not Growth of the Soil.`,
+  "jude-the-obscure":
+    `The schoolmaster was leaving the village, and everybody seemed sorry. A tilted cart out of Marygreen. Hardy’s Wessex novel continues. This is not Tess.`,
+  dubliners:
+    `North Richmond Street, being blind, was a quiet street except when the Christian Brothers’ School set the boys free. This sit is Araby only — through the bazaar, and stop when his eyes burn with anguish and anger. One story; the cycle continues — this is not Irish Fairy Tales.`,
   "theresa-raquin":
     `The Arcade of the Pont Neuf is a damp corridor of dumpy shops. Skip the translator’s preface. Vizetelly’s English of Zola’s 1867 novel continues. This is not Bel-Ami.`,
   "where-angels-fear-to-tread":

@@ -208,7 +208,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "home-world": `The Home and the World (1916): devotion as quiet attention, without a sermon. Sit with the world a moment before the first breath.`,
   "horses-and-men": `Anderson stories of animals, men, and the feeling that doesn’t speak. Enter one room at a time.`,
   "hugh-selwyn-mauberley": `Hugh Selwyn Mauberley (1920): the image left when the ornament is cut away. Let the first line arrive when you are ready.`,
-  "hunger": `Knut Hamsun’s 1890 novel Hunger. Sit with the world a moment before the first breath.`,
+  "hunger": `A Christiania attic, and the clock below striking six. Egerton’s English of Hamsun’s 1890 city hunger. Sit with that room before the first breath.`,
   "hymen": `H.D. on marriage, myth, and the body’s public ceremony. Let the first line arrive when you are ready.`,
   "idylls-of-the-king": `Alfred, Lord Tennyson’s 1859 poems: Idylls of the King. Let the first line arrive when you are ready.`,
   "immensee": `Theodor Storm’s 1850 novel Immensee. Sit with the world a moment before the first breath.`,

@@ -59,6 +59,9 @@ const BLURBS: Record<string, string> = {
     "Alone on a kopje with a fire that only quivers—Trooper Peter Halket has lost his column, and the dark starts inventing fortunes for him.",
   "the-home-and-the-world":
     "A daughter furious with her mirror, and a mother’s vermilion mark that still shames vanity.",
+  "the-hidden-force":
+    "A blood-red moon over the Lange Laan, and the Residency waiting at the end of it.",
+  hunger: "A man starves in a Christiania attic while the clock below strikes six.",
   "where-angels-fear-to-tread":
     "Charing Cross chaos — Lilia laughing like royalty while Philip names Monteriano, and the sit stops on the foot-warmer.",
   "the-gadfly":
@@ -260,7 +263,7 @@ const BLURBS: Record<string, string> = {
   "a-portrait-of-the-artist-as-a-young-man":
     "Stephen Dedalus talks his way out of church, family, and Ireland.",
   dubliners:
-    "A lighted window and the word paralysis — Joyce’s first sit is The Sisters only.",
+    "North Richmond Street is blind, and Araby is the bazaar that does not keep its promise.",
   bliss:
     "Bertha Young swallows the late-afternoon sun, then the dinner-party turn waits in the full story.",
   steppenwolf:

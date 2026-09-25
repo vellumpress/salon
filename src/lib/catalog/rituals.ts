@@ -83,7 +83,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   bliss:
     "Desire floor lands hard; the open ends on the radiant mirror. Keep the dinner-party turn in the full story — that is the knife, not homework to soft-cut. Open on title story Bliss only — never Prelude.",
   dubliners:
-    "Paralysis at a lighted window — a phone-clear city X-ray. First sit: The Sisters only — not The Dead.",
+    "North Richmond Street, being blind, was a quiet street except when the Christian Brothers’ School set the boys free. This sit is Araby only — through the bazaar, and stop when his eyes burn with anguish and anger. One story; the cycle continues — this is not Irish Fairy Tales.",
   "martin-bircks-youth":
     "Childhood dream: a green twilight garden, then the flower that turns red. Skip the Stork preface. Ship the 1930 English only.",
   "songs-of-kabir":
@@ -212,7 +212,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "trooper-peter-halket":
     `A lone Chartered Company trooper on a Mashonaland kopje, fire quivering, inventing gold companies in the dark after losing his column. Written in 1897, the open already frames colonial scouting; missionary and racial language harden after the night-watch open-at—before the stranger arrives. If you Host further, name that colonial frame up front.`,
   "the-home-and-the-world":
-    `Mother’s vermilion mark, a red-bordered *sari*, a dark face that shamed vanity — and a daughter furious with her mirror. Bimala remembers beauty, colour, and duty in a Bengal house.`,
+    `Mother’s vermilion mark, a red-bordered *sari*, and a daughter furious with her mirror who wanted to be an ideal wife. The sit is Bimala’s story in the Rajah’s house. This is not Anandamath.`,
   "where-angels-fear-to-tread":
     `Charing Cross chaos — Lilia laughing like royalty while Philip floods her with little towns to see: Gubbio, Pienza, Monteriano. The sit stops on the foot-warmer. The short novel continues.`,
   "the-gadfly":
@@ -220,7 +220,11 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-immoralist":
     `Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for. The sit opens on the frame letter and stops on the freedom line.`,
   "the-hidden-force":
-    `The full moon wore the hue of tragedy that evening — a blood-red ball behind the tamarind-trees in the Lange Laan, then stillness in a pallid sky. The first sit stops before the household dinner.`,
+    `The full moon wore the hue of tragedy that evening — a blood-red ball behind the tamarind-trees in the Lange Laan, then the Residency far back in its grounds. Skip the translator’s note. The sit stops at the town-clock. Teixeira’s English of the Java novel. This is not The Hague.`,
+  hunger:
+    `It was during the time I wandered about and starved in Christiania. The attic clock strikes six. Skip the introduction. Egerton’s English of the city hunger. This is not Growth of the Soil.`,
+  "jude-the-obscure":
+    `The schoolmaster was leaving the village, and everybody seemed sorry. A tilted cart out of Marygreen. Hardy’s Wessex novel continues. This is not Tess.`,
   "casanovas-homecoming":
     `Casanova is in his fifty-third year, circling toward Venice like a wounded bird, and the petitions home have turned humble.`,
   "letters-of-a-javanese-princess":
@@ -819,6 +823,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "pointed-roofs",
       "the-rise-of-silas-lapham",
       "indiana",
+      "the-hidden-force",
+      "the-home-and-the-world",
+      "hunger",
+      "jude-the-obscure",
     ],
   },
   {
@@ -872,6 +880,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-garden-party-and-other-stories",
       "cane",
       "the-book-of-wonder",
+      "dubliners",
     ],
   },
   {
@@ -941,6 +950,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "pointed-roofs",
       "the-rise-of-silas-lapham",
       "indiana",
+      "the-hidden-force",
+      "the-home-and-the-world",
+      "hunger",
+      "jude-the-obscure",
     ],
   },
   {
@@ -1009,6 +1022,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "pointed-roofs",
       "the-rise-of-silas-lapham",
       "indiana",
+      "the-hidden-force",
+      "the-home-and-the-world",
+      "hunger",
+      "jude-the-obscure",
     ],
   },
   {
@@ -1056,7 +1073,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   futility: 4,
   "poison-tree": 5,
   "trooper-peter-halket": 4,
-  "the-home-and-the-world": 2,
+  "the-home-and-the-world": 6,
   "where-angels-fear-to-tread": 4,
   "the-gadfly": 2,
   botchan: 5,
@@ -1081,7 +1098,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-getting-of-wisdom": 2,
   bliss: 2,
   "a-hundred-and-seventy-chinese-poems": 2,
-  dubliners: 2,
+  dubliners: 12,
+  hunger: 5,
   gitanjali: 2,
   "martin-bircks-youth": 2,
   harmonium: 2,
@@ -1190,7 +1208,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "daniel-deronda": 5,
   "day-and-night-stories": 5,
   "fifty-one-tales": 5,
-  "jude-the-obscure": 5,
+  "jude-the-obscure": 6,
   "les-villes-tentaculaires": 5,
   "neue-gedichte": 5,
   "over-the-brazier": 5,

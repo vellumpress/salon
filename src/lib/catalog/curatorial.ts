@@ -242,6 +242,17 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Never Featured. Noon Man of Property and morning Cabala stay ahead.
  * Soft guards hold: Fauset ≠ Larsen; Hanover ≠ Italy; Boston ≠ London;
  * Brie ≠ Pont Neuf; Dunsany ≠ Carmilla / Maggot.
+ * Fri 25 Sep 2026 ~7:14 evening CLEAR — The Hidden Force leads this Next
+ * append (blood-red moon / Lange Laan / Residency, Couperus 1900, Teixeira
+ * English, PG 34725; translator’s note skipped). The Home and the World
+ * follows (Bimala’s vermilion, Tagore 1916, Surendranath English, PG 7166).
+ * Hunger follows (Christiania attic, Hamsun 1890, Egerton English, PG 8387).
+ * Jude the Obscure follows (Marygreen schoolmaster, Hardy 1895, PG 153).
+ * Dubliners is Rituals only — Araby, Joyce 1914, PG 2814 — not this Next
+ * queue. Never Featured. Afternoon Confusion, noon Man of Property, and
+ * morning Cabala stay ahead. Soft guards hold: Java ≠ Hague; Bengal house
+ * ≠ Anandamath; Kristiania ≠ Growth of the Soil; Marygreen ≠ Tess;
+ * Araby ≠ Irish Fairy Tales.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -623,6 +634,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "pointed-roofs",
   "the-rise-of-silas-lapham",
   "indiana",
+  // Mira Fri 25 Sep 2026 ~7:14 evening CLEAR — Hidden Force leads Next.
+  // Home and the World, Hunger, and Jude follow. Dubliners is Rituals
+  // (Araby only), not this queue. Never Featured. Afternoon, noon, and
+  // morning packs stay ahead.
+  "the-hidden-force",
+  "the-home-and-the-world",
+  "hunger",
+  "jude-the-obscure",
 ] as const;
 
 /**
