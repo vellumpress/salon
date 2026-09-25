@@ -353,13 +353,143 @@ function FriendsPage() {
       ) : null}
 
       <div className="min-h-0 min-w-0 flex-1 overflow-x-clip overflow-y-auto">
-        <div className="border-b border-ink px-4 py-5">
-          <p className="type-kicker text-muted">On this phone</p>
-          <p className="mt-1 type-lede">What friends are reading</p>
-        </div>
+        {hydrated ? (
+          <section>
+            <SectionTitle>You</SectionTitle>
+            <p className="border-b border-ink px-4 py-5 type-title">
+              {handle ? formatHandle(handle) : "Claim an @name"}
+            </p>
+            <form onSubmit={(event) => void claim(event)} className="flex items-stretch border-b border-ink">
+              <label className="flex min-w-0 flex-1 items-center">
+                <span className="px-4 font-sans text-sm text-muted">@</span>
+                <input
+                  value={draft || handle}
+                  onChange={(event) => {
+                    setDraft(event.target.value);
+                    setMessage("");
+                  }}
+                  placeholder="name"
+                  autoCapitalize="none"
+                  autoCorrect="off"
+                  spellCheck={false}
+                  aria-label="Your @name"
+                  className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-xl text-ink focus-visible:outline-none"
+                />
+              </label>
+              <button
+                type="submit"
+                className="inline-flex h-14 shrink-0 items-center bg-ink px-5 font-sans text-sm text-paper"
+              >
+                {handle ? "Keep" : "Claim"}
+              </button>
+            </form>
+            {handleError(draft || handle || "ab") && (draft || !handle) ? (
+              <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
+                Two to twenty letters. Friends open your profile by this name.
+              </p>
+            ) : null}
+            <TextButton onClick={() => void invite()}>Invite a friend</TextButton>
+          </section>
+        ) : (
+          <div className="min-h-24 border-b border-ink bg-paper" />
+        )}
+
+        {hydrated ? (
+          <section>
+            <SectionTitle>You are reading</SectionTitle>
+            {you.reading ? (
+              <Link
+                to="/read/$workId"
+                params={{ workId: you.reading }}
+                className="flex items-stretch border-b border-ink bg-forest text-paper"
+              >
+                <span className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5">
+                  <span className="type-kicker opacity-80">{you.author || "This sitting"}</span>
+                  <span className="mt-1 type-lede">{you.workTitle || you.reading}</span>
+                </span>
+                <span className="inline-flex shrink-0 items-center px-4 font-sans text-sm">Continue</span>
+              </Link>
+            ) : (
+              <>
+                <EmptyCopy>No book open on this phone.</EmptyCopy>
+                <Link
+                  to="/"
+                  className="flex h-12 items-center border-b border-ink px-4 font-sans text-sm"
+                >
+                  Open a book
+                </Link>
+              </>
+            )}
+          </section>
+        ) : null}
+
+        {hydrated ? (
+          <section>
+            <SectionTitle>Read together</SectionTitle>
+            <div className="friends-actions">
+              <Link
+                to="/together"
+                search={{ host: true }}
+                className="friends-action bg-forest text-paper"
+              >
+                <span className="type-kicker opacity-80">A shared hour</span>
+                <span className="mt-1 type-lede">Host a sit</span>
+              </Link>
+              <Link
+                to="/together"
+                search={{ start: true }}
+                className="friends-action bg-red text-paper"
+              >
+                <span className="type-kicker opacity-80">A room people can join</span>
+                <span className="mt-1 type-lede">Start a book club</span>
+              </Link>
+              <button type="button" onClick={() => void invite()} className="friends-action bg-yellow text-ink">
+                <span className="type-kicker opacity-80">Send your @name</span>
+                <span className="mt-1 type-lede">Invite someone to sit</span>
+              </button>
+            </div>
+            <form onSubmit={sendPledge}>
+              <Rail label="I'll sit tonight">
+                {EVENING_WINDOWS.map((row) => (
+                  <button
+                    key={row.id}
+                    type="button"
+                    role="listitem"
+                    onClick={() => setPledgeWindow(row.id)}
+                    className={cn(
+                      "you-tile is-sit font-sans text-sm",
+                      pledgeWindow === row.id ? "bg-ink text-paper" : "bg-paper text-ink",
+                    )}
+                  >
+                    {row.label}
+                  </button>
+                ))}
+              </Rail>
+              <div className="flex items-stretch border-b border-ink">
+                <input
+                  value={pledgeTo}
+                  onChange={(event) => setPledgeTo(event.target.value)}
+                  placeholder="@name"
+                  autoCapitalize="none"
+                  autoCorrect="off"
+                  spellCheck={false}
+                  aria-label="Friend to sit with"
+                  className="h-14 min-w-0 flex-1 border-0 bg-transparent px-4 font-serif text-xl text-ink focus-visible:outline-none"
+                />
+                <button
+                  type="submit"
+                  className="inline-flex h-14 shrink-0 items-center border-l border-ink px-4 font-sans text-sm"
+                >
+                  Send word
+                </button>
+              </div>
+            </form>
+          </section>
+        ) : null}
 
         {hydrated ? (
           <section aria-label="Search handles">
+            <SectionTitle>Search</SectionTitle>
             <label className="flex min-w-0 items-center border-b border-ink">
               <span className="sr-only">Search @handle</span>
               <input
@@ -405,42 +535,6 @@ function FriendsPage() {
           </section>
         ) : null}
 
-        {!hydrated ? <div className="min-h-24 border-b border-ink bg-paper" /> : null}
-
-        {hydrated ? (
-          <section>
-            <SectionTitle>Your @name</SectionTitle>
-            <form onSubmit={(event) => void claim(event)} className="flex items-stretch border-b border-ink">
-              <label className="flex min-w-0 flex-1 items-center">
-                <span className="px-4 font-sans text-sm text-muted">@</span>
-                <input
-                  value={draft || handle}
-                  onChange={(event) => {
-                    setDraft(event.target.value);
-                    setMessage("");
-                  }}
-                  placeholder="name"
-                  autoCapitalize="none"
-                  autoCorrect="off"
-                  spellCheck={false}
-                  className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-xl text-ink focus-visible:outline-none"
-                />
-              </label>
-              <button
-                type="submit"
-                className="inline-flex h-14 shrink-0 items-center bg-ink px-5 font-sans text-sm text-paper"
-              >
-                {handle ? "Keep" : "Claim"}
-              </button>
-            </form>
-            {handleError(draft || handle || "ab") && (draft || !handle) ? (
-              <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-                Two to twenty letters. Friends open your profile by this name.
-              </p>
-            ) : null}
-          </section>
-        ) : null}
-
         {hydrated ? (
           <section>
             <SectionTitle>People</SectionTitle>
@@ -465,53 +559,6 @@ function FriendsPage() {
               </EmptyCopy>
             ) : null}
             <TextButton onClick={() => void invite()}>Invite a friend</TextButton>
-          </section>
-        ) : null}
-
-        {hydrated ? (
-          <section aria-label="Notable people to follow">
-            <SectionTitle>Notable people to follow</SectionTitle>
-            {authors.length > 0 ? (
-              <Rail label="Notable people to follow">
-                {authors.map((author) => (
-                  <AuthorFollowRow
-                    key={author.slug}
-                    author={author}
-                    following={followedAuthors.follows(author.slug)}
-                    onFollow={() => followedAuthors.toggle(author.slug)}
-                  />
-                ))}
-              </Rail>
-            ) : null}
-          </section>
-        ) : null}
-
-        {hydrated ? (
-          <section>
-            <SectionTitle>You are reading</SectionTitle>
-            {you.reading ? (
-              <Link
-                to="/read/$workId"
-                params={{ workId: you.reading }}
-                className="flex items-stretch border-b border-ink bg-forest text-paper"
-              >
-                <span className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5">
-                  <span className="type-kicker opacity-80">{you.author || "This sitting"}</span>
-                  <span className="mt-1 type-lede">{you.workTitle || you.reading}</span>
-                </span>
-                <span className="inline-flex shrink-0 items-center px-4 font-sans text-sm">Continue</span>
-              </Link>
-            ) : (
-              <>
-                <EmptyCopy>No book open on this phone.</EmptyCopy>
-                <Link
-                  to="/"
-                  className="flex h-12 items-center border-b border-ink px-4 font-sans text-sm"
-                >
-                  Open a book
-                </Link>
-              </>
-            )}
           </section>
         ) : null}
 
@@ -576,7 +623,7 @@ function FriendsPage() {
 
         {hydrated ? (
           <section>
-            <SectionTitle>Together</SectionTitle>
+            <SectionTitle>Sharing</SectionTitle>
             {pendingPledges.length === 0 ? (
               <EmptyCopy>No tonight-notes on this phone.</EmptyCopy>
             ) : (
@@ -610,75 +657,24 @@ function FriendsPage() {
                 ))}
               </Rail>
             )}
-            <div className="grid grid-cols-2 border-b border-ink">
-              <button
-                type="button"
-                onClick={() => void invite()}
-                className="flex h-12 items-center justify-center font-sans text-sm"
-              >
-                Invite a friend
-              </button>
-              <Link
-                to="/together"
-                search={{ host: true }}
-                className="flex h-12 items-center justify-center border-l border-ink font-sans text-sm"
-              >
-                Host a sit
-              </Link>
-            </div>
           </section>
         ) : null}
 
         {hydrated ? (
-          <section>
-            <SectionTitle>I’ll sit tonight</SectionTitle>
-            <form onSubmit={sendPledge}>
-              <Rail label="I'll sit tonight">
-                {EVENING_WINDOWS.map((row) => (
-                  <button
-                    key={row.id}
-                    type="button"
-                    role="listitem"
-                    onClick={() => setPledgeWindow(row.id)}
-                    className={cn(
-                      "you-tile is-sit font-sans text-sm",
-                      pledgeWindow === row.id ? "bg-ink text-paper" : "bg-paper text-ink",
-                    )}
-                  >
-                    {row.label}
-                  </button>
+          <section aria-label="Notable people to follow">
+            <SectionTitle>Notable people to follow</SectionTitle>
+            {authors.length > 0 ? (
+              <Rail label="Notable people to follow">
+                {authors.map((author) => (
+                  <AuthorFollowRow
+                    key={author.slug}
+                    author={author}
+                    following={followedAuthors.follows(author.slug)}
+                    onFollow={() => followedAuthors.toggle(author.slug)}
+                  />
                 ))}
               </Rail>
-              <div className="flex items-stretch border-b border-ink">
-                <input
-                  value={pledgeTo}
-                  onChange={(event) => setPledgeTo(event.target.value)}
-                  placeholder="@name"
-                  autoCapitalize="none"
-                  autoCorrect="off"
-                  spellCheck={false}
-                  aria-label="Friend to sit with"
-                  className="h-14 min-w-0 flex-1 border-0 bg-transparent px-4 font-serif text-xl text-ink focus-visible:outline-none"
-                />
-                <button
-                  type="submit"
-                  className="inline-flex h-14 shrink-0 items-center border-l border-ink px-4 font-sans text-sm"
-                >
-                  Send word
-                </button>
-              </div>
-            </form>
-            <Link
-              to="/together"
-              search={{ host: true }}
-              className="flex items-center justify-between border-b border-ink px-4 py-5"
-            >
-              <span>
-                <span className="block type-kicker text-muted">Or host the hour</span>
-                <span className="mt-1 block type-lede">Host a sit</span>
-              </span>
-              <span className="font-sans text-sm">Open</span>
-            </Link>
+            ) : null}
           </section>
         ) : null}
 
@@ -759,7 +755,7 @@ function SectionTitle({ children }: { children: string }) {
 
 function Rail({ label, children }: { label: string; children: ReactNode }) {
   return (
-    <div className="rail" role="list" aria-label={label}>
+    <div className="rail hug" role="list" aria-label={label}>
       {children}
     </div>
   );
