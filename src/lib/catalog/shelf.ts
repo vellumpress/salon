@@ -159,6 +159,7 @@ export const SHELF: ShelfWork[] = [
   { id: "murderess", title: "The Murderess", author: "Alexandros Papadiamantis", year: 1903, form: "novel", language: "Greek", minutes: 160 },
   { id: "lao-can", title: "The Travels of Lao Can", author: "Liu E", year: 1903, form: "novel", language: "Chinese", minutes: 160 },
   { id: "mattia", title: "The Late Mattia Pascal", author: "Luigi Pirandello", year: 1904, form: "novel", language: "Italian", minutes: 160 },
+  { id: "the-late-mattia-pascal", title: "The Late Mattia Pascal", author: "Luigi Pirandello (tr. Arthur Livingston)", year: 1923, form: "novel", language: "English", minutes: 1109, local: true, opening: "One of the few things, in fact about the only thing I was sure of was my name: Mattia Pascal.", breaths: 1887, intro: "One of the few things he was sure of was his name: Mattia Pascal \u2014 the library at Miragno. Livingston\u2019s 1923 English. Comic self-narration; Host OK." },
   {
     id: "the-cherry-orchard",
     title: "The Cherry Orchard",
@@ -190,6 +191,7 @@ export const SHELF: ShelfWork[] = [
   { id: "shadows", title: "Shadows of Forgotten Ancestors", author: "Mykhailo Kotsiubynsky", year: 1912, form: "novel", language: "Ukrainian", minutes: 160 },
   { id: "post-office", title: "The Post Office", author: "Rabindranath Tagore", year: 1912, form: "play", language: "Bengali", local: true, opening: "[MADHAV'S House]", breaths: 754, minutes: 96, gutenberg: 6523 },
   { id: "meaulnes", title: "Le Grand Meaulnes", author: "Alain-Fournier", year: 1913, form: "novel", language: "French", minutes: 794, local: true, gutenberg: 5781, opening: "Il arriva chez nous un dimanche de novembre 189...", breaths: 1486, intro: "He arrived at the house one Sunday in November. Open the first chapter of the first part." },
+  { id: "the-wanderer", title: "The Wanderer", author: "Alain-Fournier (tr. Françoise Delisle)", year: 1928, form: "novel", language: "English", minutes: 839, local: true, opening: "He arrived at our home on a Sunday of November, 189\u2026 I still say \u2018our home,\u2019 although the house no longer belongs to us.", breaths: 1513, intro: "He arrived at our home on a Sunday of November, 189\u2026 \u2014 Sainte-Agathe, and the schoolhouse that is no longer theirs. Delisle\u2019s 1928 English. The year ellipsis stays; Host may leave it." },
   { id: "petersburg", title: "Petersburg", author: "Andrei Bely", year: 1913, form: "novel", language: "Russian", minutes: 1517, local: true, gutenberg: 39919, opening: "Apollon Apollonowitsch Ableuchow war von höchst würdiger Abstammung: er hatte Adam zum Vorfahren geh", breaths: 4563 },
   { id: "swann", title: "Swann's Way", author: "Marcel Proust", year: 1913, form: "novel", language: "French", minutes: 160, local: true, opening: "Combray at a distance, from a twenty-mile radius, as we used to see it from the railway when we arrived there every year in Holy Week, was no more than a church", breaths: 938, gutenberg: 7178 },
   { id: "zaynab", title: "Zaynab", author: "Muhammad Husayn Haykal", year: 1913, form: "novel", language: "Arabic", minutes: 160 }, // Thea PULL EN 2026-09-16: no ≤1930 EN — catalog-only / AR

@@ -685,6 +685,8 @@ const BLURBS: Record<string, string> = {
   "an-american-tragedy": "A lake, a pregnant girl, and an American climb that needs her gone.",
   "the-song-of-the-lark": "Cather’s prairie girl becomes a singer and leaves the town that made her ears.",
   "a-lost-lady": "Sweet Water along the Burlington — Niel’s memory of Marian Forrester.",
+  "the-wanderer": "He arrived at our home on a Sunday of November, 189… — Sainte-Agathe.",
+  "the-late-mattia-pascal": "One of the few things he was sure of was his name: Mattia Pascal.",
   "the-troll-garden-and-selected-stories": "Early Cather: artists, hunger, and the Midwest watching.",
   "youth-and-the-bright-medusa": "Cather stories of artists who got away — and what they paid.",
   "my-mortal-enemy": "A woman who married for love and lives to call it the enemy.",

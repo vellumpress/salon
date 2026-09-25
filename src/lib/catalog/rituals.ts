@@ -309,6 +309,10 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "The narrator writes from memory the journey into a country of women. An idea-led utopia; Host OK.",
   "the-last-man":
     "Sea-surrounded England, and the narrator’s ruined lineage — a plague and exile epic. Heavy; a later sit.",
+  "the-wanderer":
+    "He arrived at our home on a Sunday of November, 189… — Sainte-Agathe, and the schoolhouse that is no longer theirs. Delisle’s 1928 English. The year ellipsis stays; Host may leave it.",
+  "the-late-mattia-pascal":
+    "One of the few things he was sure of was his name: Mattia Pascal — the library at Miragno. Livingston’s 1923 English. Comic self-narration; Host OK.",
   basilio:
     "Lisbon breakfast, the cuckoo-clock strikes eleven, and Luiza reads that Cousin Bazilio is coming home. Serrano’s 1889 English, PG 74442, is abridged and bowdlerized. Adultery and household power; Host OK. Sit with it as Dragon’s Teeth.",
   oblomov:
@@ -367,6 +371,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-tenant-of-wildfell-hall",
       "herland",
       "the-last-man",
+      "the-late-mattia-pascal",
       "generosity",
     ],
   },
@@ -619,7 +624,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "hien-le-maboul",
       "knulp",
       "iracema",
-      "meaulnes",
       "tristana",
       "niels",
       "amor-de-perdicao",
@@ -784,6 +788,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "jacob-s-room",
       "the-tenant-of-wildfell-hall",
       "herland",
+      "the-wanderer",
+      "the-late-mattia-pascal",
     ],
   },
   {
@@ -833,6 +839,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "jacob-s-room",
       "the-tenant-of-wildfell-hall",
       "herland",
+      "the-late-mattia-pascal",
     ],
   },
   {
@@ -891,6 +898,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "oblomov",
       "blacker",
       "a-lost-lady",
+      "the-wanderer",
     ],
   },
   {
@@ -948,6 +956,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "oblomov",
       "blacker",
       "a-lost-lady",
+      "the-wanderer",
     ],
   },
   {
@@ -1041,6 +1050,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "jacob-s-room": 8,
   "the-tenant-of-wildfell-hall": 8,
   herland: 8,
+  "the-wanderer": 8,
+  "the-late-mattia-pascal": 8,
   cane: 2,
   "a-hero-of-our-time": 5,
   "strange-tales": 5,

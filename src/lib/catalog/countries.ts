@@ -520,6 +520,8 @@ const WORK_COUNTRY: Record<string, string> = {
   "araby-seville": "United States",
   // English-language translations / binds of foreign originals
   basilio: "Portugal",
+  "the-wanderer": "France",
+  "the-late-mattia-pascal": "Italy",
   "bel-ami": "France",
   botchan: "Japan",
   cheri: "France",
