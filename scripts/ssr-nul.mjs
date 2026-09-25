@@ -167,15 +167,20 @@ export function stripNulBytesInHtmlTree(destDir) {
 }
 
 export const SHELL_CACHE_ATTR = "data-shell-network";
-/** Current Pages shell cache. The retired name is copied in, then deleted, on activate. */
-export const SHELL_CACHE_NAME = "tbr-shell";
+/**
+ * Pages shell cache. v2 starts empty so the previous document is not served
+ * while the network can still return this deploy. `tbr-shell` is kept only
+ * as an offline fallback and deleted once a v2 shell commits. `vellum-shell`
+ * is dropped on activate.
+ */
+export const SHELL_CACHE_NAME = "tbr-shell-v2";
 /**
  * Hashed js/css only. Book JSON stays on the network so a long novel cannot
  * evict the shell. The activate handler must not delete this cache.
  */
 export const SHELL_ASSET_CACHE_NAME = "tbr-assets";
-/** Previous shell cache. Kept here only so activate can move offline pages across and drop it. */
-export const RETIRED_SHELL_CACHE_NAME = "vellum-shell";
+/** Previous shell cache. Deleted on activate; do not copy it forward. */
+export const RETIRED_SHELL_CACHE_NAME = "tbr-shell";
 
 /**
  * Home Screen cold start.
@@ -185,14 +190,22 @@ export const RETIRED_SHELL_CACHE_NAME = "vellum-shell";
  * shell is one SPA document: serve the cached `/salon/` HTML for every
  * navigation under the scope (deep links included — no 404 hop), and
  * cache-first the hashed js/css. A background fetch refreshes the shell
- * without blocking paint. NUL bytes are refused so a poisoned document cannot
- * stick. Book texts are not intercepted.
+ * without blocking paint. The new document is stored only after its entry
+ * script and CSS are in the asset cache, and the previous generation of
+ * hashes is kept until the following successful update — a deploy must not
+ * leave the shell pointing at files the phone does not have. NUL bytes are
+ * refused so a poisoned document cannot stick. Book texts are not intercepted.
+ *
+ * A navigation whose query contains `__fresh=` skips the shell cache. The
+ * inline boot watch uses that once when the entry module 404s or hydration
+ * never signals `data-boot="ready"`.
  */
 export function renderShellServiceWorker() {
   return `/* tbr shell: cached HTML for repeat launches; hashed js/css are cache-first. */
 var SHELL = "${SHELL_CACHE_NAME}";
 var ASSETS = "${SHELL_ASSET_CACHE_NAME}";
-var shellFlight = null;
+var RETIRED = "${RETIRED_SHELL_CACHE_NAME}";
+var commitChain = Promise.resolve();
 
 function shellUrl() {
   return new URL("/salon/", self.location.origin).href;
@@ -238,16 +251,82 @@ function readManifest(cache) {
     }).catch(function () { return []; });
   });
 }
-function pruneReplacedShellAssets(urls) {
+function withTimeout(promise, ms) {
+  return new Promise(function (resolve) {
+    var settled = false;
+    var timer = setTimeout(function () {
+      if (settled) return;
+      settled = true;
+      resolve(null);
+    }, ms);
+    Promise.resolve(promise).then(function (value) {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+      resolve(value);
+    }, function () {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+      resolve(null);
+    });
+  });
+}
+function isServableCode(res) {
+  if (!res) return false;
+  var type = (res.headers.get("content-type") || "").toLowerCase();
+  if (type.indexOf("text/html") !== -1) return false;
+  return true;
+}
+function criticalUrls(urls) {
+  var out = [];
+  var i;
+  for (i = 0; i < urls.length; i++) {
+    if (/\\/assets\\/index-[^/]+\\.js$/.test(urls[i]) || /\\.css$/.test(urls[i])) out.push(urls[i]);
+  }
+  if (!out.length) {
+    for (i = 0; i < urls.length; i++) {
+      if (/\\.js$/.test(urls[i])) {
+        out.push(urls[i]);
+        break;
+      }
+    }
+  }
+  return out;
+}
+function warmAssets(urls) {
+  if (!urls || !urls.length) return Promise.resolve(true);
+  return caches.open(ASSETS).then(function (cache) {
+    return Promise.all(urls.map(function (url) {
+      return cache.match(url).then(function (hit) {
+        if (hit && isServableCode(hit)) return true;
+        return fetch(url, { cache: "no-cache" }).then(function (res) {
+          if (!res || !res.ok || res.type === "opaque" || !isServableCode(res)) return false;
+          var copy = res.clone();
+          return cache.put(url, copy).then(function () { return true; }, function () { return false; });
+        }).catch(function () { return false; });
+      });
+    })).then(function (flags) {
+      var i;
+      for (i = 0; i < flags.length; i++) if (!flags[i]) return false;
+      return true;
+    });
+  });
+}
+function pruneToGenerations(urls) {
   return caches.open(ASSETS).then(function (cache) {
     return readManifest(cache).then(function (prev) {
       var keep = {};
       var i;
       for (i = 0; i < urls.length; i++) keep[urls[i]] = 1;
-      return Promise.all(prev.map(function (url) {
-        if (keep[url]) return Promise.resolve();
-        return cache.delete(url);
-      })).then(function () {
+      for (i = 0; i < prev.length; i++) keep[prev[i]] = 1;
+      return cache.keys().then(function (reqs) {
+        return Promise.all(reqs.map(function (req) {
+          if (req.url === manifestUrl()) return Promise.resolve();
+          if (keep[req.url]) return Promise.resolve();
+          return cache.delete(req);
+        }));
+      }).then(function () {
         return cache.put(manifestUrl(), new Response(JSON.stringify(urls), {
           headers: { "content-type": "application/json" },
         }));
@@ -255,96 +334,114 @@ function pruneReplacedShellAssets(urls) {
     });
   });
 }
-function warmAssets(urls) {
-  if (!urls || !urls.length) return Promise.resolve();
-  return caches.open(ASSETS).then(function (cache) {
-    return Promise.all(urls.map(function (url) {
-      return cache.match(url).then(function (hit) {
-        if (hit) return;
-        return fetch(url, { cache: "force-cache" }).then(function (res) {
-          if (!res || !res.ok || res.type === "opaque") return;
-          return cache.put(url, res);
-        }).catch(function () {});
-      });
-    }));
+function commitShell(html) {
+  if (!isAppShell(html)) return Promise.resolve(false);
+  var urls = extractAssetUrls(html);
+  var critical = criticalUrls(urls);
+  if (!critical.length) return Promise.resolve(false);
+  return warmAssets(critical).then(function (ok) {
+    if (!ok) return false;
+    return caches.open(SHELL).then(function (cache) {
+      return cache.put(shellUrl(), shellResponse(html));
+    }).then(function () {
+      return caches.delete(RETIRED);
+    }).then(function () {
+      return warmAssets(urls);
+    }).then(function () {
+      return pruneToGenerations(urls);
+    }).then(function () { return true; });
   });
 }
-function readShellHtml(preload) {
-  var pending = preload && typeof preload.then === "function"
-    ? preload.then(function (res) { return res || null; }).catch(function () { return null; })
-    : Promise.resolve(null);
-  return pending.then(function (pre) {
-    var usePre = !!(pre && pre.ok && !pre.redirected);
-    if (usePre) {
-      try {
-        var path = new URL(pre.url || shellUrl()).pathname;
-        if (path !== "/salon" && path !== "/salon/" && path !== "/salon/index.html") usePre = false;
-      } catch (err) {
-        usePre = false;
-      }
+function enqueueCommit(html) {
+  var run = commitChain.then(function () { return commitShell(html); }, function () { return commitShell(html); });
+  commitChain = run.then(function () {}, function () {});
+  return run;
+}
+function readPreload(event) {
+  if (!event || !event.preloadResponse || !event.preloadResponse.then) return Promise.resolve(null);
+  return withTimeout(event.preloadResponse.then(function (res) {
+    if (!res || !res.ok || res.redirected) return null;
+    try {
+      var path = new URL(res.url || shellUrl()).pathname;
+      if (path !== "/salon" && path !== "/salon/" && path !== "/salon/index.html") return null;
+    } catch (err) {
+      return null;
     }
-    var resPromise = usePre ? Promise.resolve(pre) : fetch(shellUrl(), { cache: "no-store" });
-    return resPromise.then(function (res) {
+    return res.text();
+  }).then(function (html) {
+    return isAppShell(html) ? html : null;
+  }).catch(function () { return null; }), 1000);
+}
+function networkShell(event) {
+  return withTimeout(readPreload(event).then(function (html) {
+    if (html) return html;
+    return fetch(shellUrl(), { cache: "no-store" }).then(function (res) {
       if (!res || !res.ok) return null;
       return res.text();
+    }).then(function (text) {
+      return isAppShell(text) ? text : null;
     });
-  }).then(function (html) {
-    if (!isAppShell(html)) return null;
-    return html;
+  }).catch(function () { return null; }), 8000);
+}
+function shellFromCache(name) {
+  return caches.has(name).then(function (exists) {
+    if (!exists) return null;
+    return caches.open(name);
+  }).then(function (cache) {
+    if (!cache) return null;
+    return cache.match(shellUrl());
+  }).then(function (cached) {
+    if (!cached) return null;
+    return cached.text().then(function (html) {
+      if (!isAppShell(html)) return null;
+      return shellResponse(html);
+    });
   }).catch(function () { return null; });
 }
-function refreshShell(preload) {
-  if (shellFlight) return shellFlight;
-  shellFlight = readShellHtml(preload).then(function (html) {
-    if (!html) return null;
-    var urls = extractAssetUrls(html);
-    var saved = caches.open(SHELL).then(function (cache) {
-      return cache.put(shellUrl(), shellResponse(html));
-    });
-    var done = saved.then(function () {
-      return warmAssets(urls).then(function () { return pruneReplacedShellAssets(urls); });
-    });
-    return saved.then(function () { return { html: html, done: done }; });
-  }).then(function (result) {
-    shellFlight = null;
-    return result;
-  }, function (err) {
-    shellFlight = null;
-    throw err;
-  });
-  return shellFlight;
+function readCachedShell() {
+  return shellFromCache(SHELL);
+}
+function readRetiredShell() {
+  return shellFromCache(RETIRED);
 }
 function cacheFirstAsset(req) {
   var url = new URL(req.url);
   return caches.open(ASSETS).then(function (cache) {
     return cache.match(url.href).then(function (hit) {
-      if (hit) return hit;
-      return fetch(req).then(function (res) {
-        if (res && res.ok && res.type !== "opaque") {
-          var copy = res.clone();
-          return cache.put(req.url, copy).then(function () { return res; });
-        }
-        return res;
+      var drop = hit && !isServableCode(hit) ? cache.delete(url.href) : Promise.resolve();
+      return drop.then(function () {
+        if (hit && isServableCode(hit)) return hit;
+        return fetch(req).then(function (res) {
+          if (res && res.ok && res.type !== "opaque" && isServableCode(res)) {
+            var copy = res.clone();
+            return cache.put(req.url, copy).then(function () { return res; });
+          }
+          return res;
+        });
       });
     });
   });
 }
 function handleNavigate(event) {
-  var update = refreshShell(event.preloadResponse);
-  event.waitUntil(update.then(function (result) { return result && result.done; }));
-  return caches.open(SHELL).then(function (cache) {
-    return cache.match(shellUrl());
-  }).then(function (cached) {
-    if (!cached) {
-      return update.then(function (result) {
-        if (result && result.html) return shellResponse(result.html);
-        return fetch(event.request);
-      });
-    }
-    return cached.text().then(function (html) {
-      if (isAppShell(html)) return shellResponse(html);
-      return update.then(function (result) {
-        if (result && result.html) return shellResponse(result.html);
+  var fresh = false;
+  try { fresh = new URL(event.request.url).search.indexOf("__fresh=") !== -1; } catch (err) {}
+  if (fresh) {
+    return networkShell(event).then(function (html) {
+      if (!html) return fetch(event.request);
+      event.waitUntil(enqueueCommit(html));
+      return shellResponse(html);
+    });
+  }
+  var incoming = networkShell(event);
+  event.waitUntil(incoming.then(function (html) {
+    if (html) return enqueueCommit(html);
+  }));
+  return withTimeout(readCachedShell(), 1500).then(function (hit) {
+    if (hit) return hit;
+    return incoming.then(function (html) {
+      if (html) return shellResponse(html);
+      return readRetiredShell().then(function (old) {
+        if (old) return old;
         return fetch(event.request);
       });
     });
@@ -357,26 +454,10 @@ self.addEventListener("install", function () {
 self.addEventListener("activate", function (event) {
   var current = SHELL;
   var assets = ASSETS;
-  var retired = "${RETIRED_SHELL_CACHE_NAME}";
   event.waitUntil(
     caches.keys().then(function (keys) {
       return Promise.all(keys.map(function (key) {
-        if (key === current || key === assets) return Promise.resolve();
-        if (key === retired) {
-          return caches.open(retired).then(function (oldCache) {
-            return caches.open(current).then(function (nextCache) {
-              return oldCache.keys().then(function (reqs) {
-                return Promise.all(reqs.map(function (req) {
-                  return oldCache.match(req).then(function (res) {
-                    if (res) return nextCache.put(req, res);
-                  });
-                }));
-              });
-            });
-          }).then(function () {
-            return caches.delete(retired);
-          });
-        }
+        if (key === current || key === assets || key === RETIRED) return Promise.resolve();
         return caches.delete(key);
       }));
     }).then(function () {
@@ -388,6 +469,12 @@ self.addEventListener("activate", function (event) {
 });
 self.addEventListener("message", function (event) {
   var data = event.data || {};
+  if (data.type === "recover-shell") {
+    event.waitUntil(caches.open(SHELL).then(function (cache) {
+      return cache.delete(shellUrl());
+    }));
+    return;
+  }
   if (data.type !== "warm-assets" || !data.urls || !data.urls.length) return;
   var urls = [];
   var i;
@@ -397,7 +484,9 @@ self.addEventListener("message", function (event) {
       if (isCodeAsset(url)) urls.push(url.href);
     } catch (err) {}
   }
-  event.waitUntil(warmAssets(urls).then(function () { return refreshShell(null); }));
+  event.waitUntil(warmAssets(urls).then(function () { return networkShell(null).then(function (html) {
+    if (html) return enqueueCommit(html);
+  }); }));
 });
 self.addEventListener("fetch", function (event) {
   var req = event.request;
@@ -416,8 +505,98 @@ self.addEventListener("fetch", function (event) {
 `;
 }
 
+/** Classic script: runs even when the entry module 404s and the wordmark never hydrates. */
+export function renderBootWatchScript() {
+  return `<script data-boot-watch>
+(function () {
+  var RETRY = "tbr-boot-retry";
+  var done = false;
+  try {
+    var params = new URLSearchParams(location.search);
+    if (params.has("__fresh")) {
+      params.delete("__fresh");
+      var qs = params.toString();
+      history.replaceState(null, "", location.pathname + (qs ? "?" + qs : "") + location.hash);
+    }
+  } catch (err) {}
+  function ready() {
+    return document.documentElement.getAttribute("data-boot") === "ready";
+  }
+  function finish() {
+    done = true;
+    try { sessionStorage.removeItem(RETRY); } catch (err) {}
+  }
+  function recover() {
+    if (done || ready()) {
+      if (ready()) finish();
+      return;
+    }
+    if (navigator.onLine === false) return;
+    var now = Date.now();
+    try {
+      var at = parseInt(sessionStorage.getItem(RETRY) || "0", 10);
+      if (at && now - at < 20000) return;
+      sessionStorage.setItem(RETRY, String(now));
+    } catch (err) {}
+    done = true;
+    clearInterval(timer);
+    try {
+      if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+        navigator.serviceWorker.controller.postMessage({ type: "recover-shell" });
+      }
+    } catch (err) {}
+    try {
+      var next = new URLSearchParams(location.search);
+      next.set("__fresh", String(now));
+      location.replace(location.pathname + "?" + next.toString() + location.hash);
+    } catch (err) {
+      location.reload();
+    }
+  }
+  var timer = setInterval(function () {
+    if (!ready()) return;
+    clearInterval(timer);
+    finish();
+  }, 250);
+  var hydratedWait = false;
+  function armHydrationDeadline() {
+    if (hydratedWait) return;
+    hydratedWait = true;
+    setTimeout(function () {
+      if (!ready()) recover();
+    }, 8000);
+  }
+  window.addEventListener("error", function (ev) {
+    var node = ev.target;
+    if (!node || node.tagName !== "SCRIPT") return;
+    var src = node.src || "";
+    if (src.indexOf("/salon/assets/") === -1) return;
+    recover();
+  }, true);
+  window.addEventListener("unhandledrejection", function (ev) {
+    var reason = ev.reason;
+    var text = reason ? String(reason.message || reason) : "";
+    if (text.indexOf("module") === -1 && text.indexOf("import") === -1) return;
+    recover();
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    var nodes = document.querySelectorAll("script[src*='/salon/assets/']");
+    var i;
+    if (!nodes.length) {
+      setTimeout(function () { if (!ready()) recover(); }, 1500);
+      return;
+    }
+    for (i = 0; i < nodes.length; i++) nodes[i].addEventListener("load", armHydrationDeadline);
+    setTimeout(function () {
+      if (!ready() && !hydratedWait) recover();
+    }, 20000);
+  });
+})();
+</script>`;
+}
+
 export function renderShellNetworkHints() {
-  return `<style data-shell-paint>html,body{background:#F3F1EB;color:#111111}</style><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><script ${SHELL_CACHE_ATTR} type="module">if("serviceWorker"in navigator){navigator.serviceWorker.register("/salon/sw.js",{scope:"/salon/",updateViaCache:"none"}).then(function(reg){function collect(){var urls=[];var seen={};function add(href){if(!href||href.indexOf("/salon/assets/")===-1||seen[href])return;seen[href]=1;urls.push(href)}var nodes=document.querySelectorAll("script[src],link[rel=stylesheet][href],link[rel=modulepreload][href]");for(var i=0;i<nodes.length;i++)add(nodes[i].src||nodes[i].href||"");if(window.performance&&performance.getEntriesByType){var entries=performance.getEntriesByType("resource");for(var j=0;j<entries.length;j++)add(entries[j].name||"")}return urls}function send(){var worker=reg.active;if(!worker)return;worker.postMessage({type:"warm-assets",urls:collect()})}function whenReady(){if(reg.active)return Promise.resolve();var sw=reg.installing||reg.waiting;if(!sw)return Promise.resolve();return new Promise(function(resolve){sw.addEventListener("statechange",function(){if(sw.state==="activated")resolve()})})}function kick(){whenReady().then(send)}if(document.readyState==="complete")kick();else window.addEventListener("load",kick)}).catch(function(){})}</script>`;
+  return `<style data-shell-paint>html,body{background:#F3F1EB;color:#111111}</style><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">${renderBootWatchScript()}<script ${SHELL_CACHE_ATTR} type="module">if("serviceWorker"in navigator){navigator.serviceWorker.register("/salon/sw.js",{scope:"/salon/",updateViaCache:"none"}).then(function(reg){function collect(){var urls=[];var seen={};function add(href){if(!href||href.indexOf("/salon/assets/")===-1||seen[href])return;seen[href]=1;urls.push(href)}var nodes=document.querySelectorAll("script[src],link[rel=stylesheet][href],link[rel=modulepreload][href]");for(var i=0;i<nodes.length;i++)add(nodes[i].src||nodes[i].href||"");if(window.performance&&performance.getEntriesByType){var entries=performance.getEntriesByType("resource");for(var j=0;j<entries.length;j++)add(entries[j].name||"")}return urls}function send(){var worker=reg.active;if(!worker)return;worker.postMessage({type:"warm-assets",urls:collect()})}function whenReady(){if(reg.active)return Promise.resolve();var sw=reg.installing||reg.waiting;if(!sw)return Promise.resolve();return new Promise(function(resolve){sw.addEventListener("statechange",function(){if(sw.state==="activated")resolve()})})}function kick(){whenReady().then(send)}if(document.readyState==="complete")kick();else window.addEventListener("load",kick)}).catch(function(){})}</script>`;
 }
 
 /** @param {string} html */

@@ -6,8 +6,10 @@ import { pathToFileURL } from "node:url";
 import { test } from "node:test";
 import {
   SHELL_CACHE_ATTR,
+  SHELL_CACHE_NAME,
   applyPagesHtmlSafety,
   injectShellNetworkHints,
+  renderBootWatchScript,
   renderShellServiceWorker,
   rewriteDehydrateSsrMatchId,
   stripHtmlNulBytes,
@@ -120,4 +122,36 @@ test("pages safety strips index and 404 without touching hashed assets", () => {
   assert.match(sw, /String\.fromCharCode\(0\)/);
   assert.doesNotMatch(sw, /Hashed assets are not intercepted/);
   assert.match(sw, /\(\?:js\|mjs\|css\)/);
+  assert.match(html, /data-boot-watch/);
+  assert.match(html, /data-boot-watch[\s\S]*data-shell-network/);
+  assert.doesNotMatch(renderBootWatchScript(), /type="module"/);
+});
+
+test("a new shell is stored only after its entry assets exist", () => {
+  const sw = renderShellServiceWorker();
+  assert.equal(SHELL_CACHE_NAME, "tbr-shell-v2");
+  assert.match(sw, /tbr-shell-v2/);
+  assert.match(sw, /__fresh=/);
+  assert.match(sw, /recover-shell/);
+  assert.match(sw, /withTimeout/);
+  const commit = sw.slice(sw.indexOf("function commitShell"));
+  const warmAt = commit.indexOf("warmAssets(critical)");
+  const putAt = commit.indexOf("cache.put(shellUrl()");
+  assert.ok(warmAt > 0 && putAt > warmAt, "entry assets warm before the shell is replaced");
+  assert.match(commit, /pruneToGenerations/);
+  assert.doesNotMatch(sw, /nextCache\.put/);
+  const keepPrev = sw.slice(sw.indexOf("function pruneToGenerations"));
+  assert.match(keepPrev, /keep\[prev\[i\]\]/);
+});
+
+test("boot watch reloads once when the entry module never hydrates", () => {
+  const script = renderBootWatchScript();
+  assert.match(script, /data-boot-watch/);
+  assert.match(script, /data-boot/);
+  assert.match(script, /__fresh/);
+  assert.match(script, /history\.replaceState/);
+  assert.match(script, /recover-shell/);
+  assert.match(script, /\/salon\/assets\//);
+  assert.match(script, /20000/);
+  assert.doesNotMatch(script, /type="module"/);
 });
