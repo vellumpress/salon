@@ -2,7 +2,7 @@
   "id": "cane",
   "title": "Cane",
   "author": "Jean Toomer",
-  "year": "1923",
+  "year": 1923,
   "note": "Georgia dusk cycle — Project Gutenberg 60093 (skip Waldo Frank foreword).",
   "minutes": 80,
   "cover": "",
@@ -216,7 +216,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Her skin is like dusk on the eastern horizon, O cant you see it, O cant you see it, Her skin is like dusk on the eastern horizon ... When the sun goes down."
+      "text": "Her skin is like dusk on the eastern horizon, O cant you see it, O cant you see it, Her skin is like dusk on the eastern horizon... When the sun goes down."
     },
     {
       "id": "s0-1",
@@ -251,7 +251,7 @@
     {
       "id": "s0-7",
       "sceneId": "s0",
-      "text": "Her skin is like dusk on the eastern horizon, O cant you see it, O cant you see it, Her skin is like dusk on the eastern horizon ... When the sun goes down."
+      "text": "Her skin is like dusk on the eastern horizon, O cant you see it, O cant you see it, Her skin is like dusk on the eastern horizon... When the sun goes down."
     },
     {
       "id": "s0-8",
@@ -281,7 +281,7 @@
     {
       "id": "s3-2",
       "sceneId": "s3",
-      "text": "When the first was born, the white folks said they’d have no more to do with her. And black folks, they too joined hands to cast her out... The pines whispered to Jesus.. The railroad boss said not to say he said it, but she could live, if she wanted to, on the narrow strip of land between the railroad and the road. John Stone, who owned the lumber and the bricks, would have shot the man who told he gave the stuff to Lonnie Deacon, who stole out there at night and built the cabin. A single room held down to earth... O fly away to Jesus ... by a leaning chimney..."
+      "text": "When the first was born, the white folks said they’d have no more to do with her. And black folks, they too joined hands to cast her out... The pines whispered to Jesus.. The railroad boss said not to say he said it, but she could live, if she wanted to, on the narrow strip of land between the railroad and the road. John Stone, who owned the lumber and the bricks, would have shot the man who told he gave the stuff to Lonnie Deacon, who stole out there at night and built the cabin. A single room held down to earth... O fly away to Jesus... by a leaning chimney..."
     },
     {
       "id": "s3-3",
@@ -346,12 +346,12 @@
     {
       "id": "s6-2",
       "sceneId": "s6",
-      "text": "(The sun is hammered to a band of gold. Pine-needles, like mazda, are brilliantly aglow. No rain has come to take the rustle from the falling sweet-gum leaves. Over in the forest, across the swamp, a sawmill blows its closing whistle. Smoke curls up. Marvelous web spun by the spider sawdust pile. Curls up and spreads itself pine-high above the branch, a single silver band along the eastern valley. A black boy ... you are the most sleepiest man I ever seed, Sleeping Beauty ... cradled on a gray mule, guided by the hollow sound of cow-bells, heads for them through a rusty cotton field. From down the railroad track, the chug-chug of a gas engine announces that the repair gang is coming home. A girl in the yard of a whitewashed shack not much larger than the stack of worn ties piled before it, sings. Her voice is loud. Echoes, like rain, sweep the valley. Dusk takes the polish from the rails. Lights twinkle in scattered houses. From far away, a sad strong song. Pungent and composite, the smell of farmyards is the fragrance of the woman. She does not sing; her body is a song. She is in the forest, dancing. Torches flare .. juju men, greegree, witch-doctors .. torches go out... The Dixie Pike has grown from a goat path in Africa."
+      "text": "(The sun is hammered to a band of gold. Pine-needles, like mazda, are brilliantly aglow. No rain has come to take the rustle from the falling sweet-gum leaves. Over in the forest, across the swamp, a sawmill blows its closing whistle. Smoke curls up. Marvelous web spun by the spider sawdust pile. Curls up and spreads itself pine-high above the branch, a single silver band along the eastern valley. A black boy... you are the most sleepiest man I ever seed, Sleeping Beauty... cradled on a gray mule, guided by the hollow sound of cow-bells, heads for them through a rusty cotton field. From down the railroad track, the chug-chug of a gas engine announces that the repair gang is coming home. A girl in the yard of a whitewashed shack not much larger than the stack of worn ties piled before it, sings. Her voice is loud. Echoes, like rain, sweep the valley. Dusk takes the polish from the rails. Lights twinkle in scattered houses. From far away, a sad strong song. Pungent and composite, the smell of farmyards is the fragrance of the woman. She does not sing; her body is a song. She is in the forest, dancing. Torches flare.. juju men, greegree, witch-doctors.. torches go out... The Dixie Pike has grown from a goat path in Africa."
     },
     {
       "id": "s6-3",
       "sceneId": "s6",
-      "text": "_Night._"
+      "text": "*Night.*"
     },
     {
       "id": "s6-4",
@@ -426,7 +426,7 @@
     {
       "id": "s8-5",
       "sceneId": "s8",
-      "text": "Their voices rise .. the pine trees are guitars, Strumming, pine-needles fall like sheets of rain .. Their voices rise .. the chorus of the cane Is caroling a vesper to the stars.."
+      "text": "Their voices rise.. the pine trees are guitars, Strumming, pine-needles fall like sheets of rain.. Their voices rise.. the chorus of the cane Is caroling a vesper to the stars.."
     },
     {
       "id": "s8-6",
@@ -481,7 +481,7 @@
     {
       "id": "s12-1",
       "sceneId": "s12",
-      "text": "_Nine._"
+      "text": "*Nine.*"
     },
     {
       "id": "s12-2",
@@ -556,7 +556,7 @@
     {
       "id": "s12-16",
       "sceneId": "s12",
-      "text": "_Sixteen._"
+      "text": "*Sixteen.*"
     },
     {
       "id": "s12-17",
@@ -566,7 +566,7 @@
     {
       "id": "s12-18",
       "sceneId": "s12",
-      "text": "_Twenty-two._"
+      "text": "*Twenty-two.*"
     },
     {
       "id": "s12-19",
@@ -581,7 +581,7 @@
     {
       "id": "s12-21",
       "sceneId": "s12",
-      "text": "_Esther is twenty-seven._"
+      "text": "*Esther is twenty-seven.*"
     },
     {
       "id": "s12-22",
@@ -926,7 +926,7 @@
     {
       "id": "s16-1",
       "sceneId": "s16",
-      "text": "Seventh Street is a bastard of Prohibition and the War. A crude-boned, soft-skinned wedge of nigger life breathing its loafer air, jazz songs and love, thrusting unconscious rhythms, black reddish blood into the white and whitewashed wood of Washington. Stale soggy wood of Washington. Wedges rust in soggy wood... Split it! In two! Again! Shred it! .. the sun. Wedges are brilliant in the sun; ribbons of wet wood dry and blow away. Black reddish blood. Pouring for crude-boned soft-skinned life, who set you flowing? Blood suckers of the War would spin in a frenzy of dizziness if they drank your blood. Prohibition would put a stop to it. Who set you flowing? White and whitewash disappear in blood. Who set you flowing? Flowing down the smooth asphalt of Seventh Street, in shanties, brick office buildings, theaters, drug stores, restaurants, and cabarets? Eddying on the corners? Swirling like a blood-red smoke up where the buzzards fly in heaven? God would not dare to suck black red blood. A Nigger God! He would duck his head in shame and call for the Judgment Day. Who set you flowing?"
+      "text": "Seventh Street is a bastard of Prohibition and the War. A crude-boned, soft-skinned wedge of nigger life breathing its loafer air, jazz songs and love, thrusting unconscious rhythms, black reddish blood into the white and whitewashed wood of Washington. Stale soggy wood of Washington. Wedges rust in soggy wood... Split it! In two! Again! Shred it!.. the sun. Wedges are brilliant in the sun; ribbons of wet wood dry and blow away. Black reddish blood. Pouring for crude-boned soft-skinned life, who set you flowing? Blood suckers of the War would spin in a frenzy of dizziness if they drank your blood. Prohibition would put a stop to it. Who set you flowing? White and whitewash disappear in blood. Who set you flowing? Flowing down the smooth asphalt of Seventh Street, in shanties, brick office buildings, theaters, drug stores, restaurants, and cabarets? Eddying on the corners? Swirling like a blood-red smoke up where the buzzards fly in heaven? God would not dare to suck black red blood. A Nigger God! He would duck his head in shame and call for the Judgment Day. Who set you flowing?"
     },
     {
       "id": "s16-2",
@@ -946,12 +946,12 @@
     {
       "id": "s17-2",
       "sceneId": "s17",
-      "text": "The dead house is stuffed. The stuffing is alive. It is sinful to draw one’s head out of live stuffing in a dead house. The propped-up antennæ would cave in and the stuffing be strewn .. shredded life-pulp .. in the water. It is sinful to have one’s own head crushed. Rhobert is an upright man whose legs are banty-bowed and shaky because as a child he had rickets. The earth is round. Heaven is a sphere that surrounds it. Sink where you will. God is a Red Cross man with a dredge and a respiration-pump who’s waiting for you at the opposite periphery. God built the house. He blew His breath into its stuffing. It is good to die obeying Him who can do these things."
+      "text": "The dead house is stuffed. The stuffing is alive. It is sinful to draw one’s head out of live stuffing in a dead house. The propped-up antennæ would cave in and the stuffing be strewn.. shredded life-pulp.. in the water. It is sinful to have one’s own head crushed. Rhobert is an upright man whose legs are banty-bowed and shaky because as a child he had rickets. The earth is round. Heaven is a sphere that surrounds it. Sink where you will. God is a Red Cross man with a dredge and a respiration-pump who’s waiting for you at the opposite periphery. God built the house. He blew His breath into its stuffing. It is good to die obeying Him who can do these things."
     },
     {
       "id": "s17-3",
       "sceneId": "s17",
-      "text": "A futile something like the dead house wraps the live stuffing of the question: how long before the water will be drawn off? Rhobert does not care. Like most men who wear monstrous helmets, the pressure it exerts is enough to convince him of its practical infinity. And he cares not two straws as to whether or not he will ever see his wife and children again. Many a time he’s seen them drown in his dreams and has kicked about joyously in the mud for days after. One thing about him goes straight to the heart. He has an Adam’s-apple which strains sometimes as if he were painfully gulping great globules of air .. air floating shredded life-pulp. It is a sad thing to see a banty-bowed, shaky, ricket-legged man straining the raw insides of his throat against smooth air. Holding furtive thoughts about the glory of pulp-heads strewn in water.. He is way down. Down. Mud, coming to his banty knees, almost hides them. Soon people will be looking at him and calling him a strong man. No doubt he is for one who has had rickets. Lets give it to him. Lets call him great when the water shall have been all drawn off. Lets build a monument and set it in the ooze where he goes down. A monument of hewn oak, carved in nigger-heads. Lets open our throats, brother, and sing “Deep River” when he goes down."
+      "text": "A futile something like the dead house wraps the live stuffing of the question: how long before the water will be drawn off? Rhobert does not care. Like most men who wear monstrous helmets, the pressure it exerts is enough to convince him of its practical infinity. And he cares not two straws as to whether or not he will ever see his wife and children again. Many a time he’s seen them drown in his dreams and has kicked about joyously in the mud for days after. One thing about him goes straight to the heart. He has an Adam’s-apple which strains sometimes as if he were painfully gulping great globules of air.. air floating shredded life-pulp. It is a sad thing to see a banty-bowed, shaky, ricket-legged man straining the raw insides of his throat against smooth air. Holding furtive thoughts about the glory of pulp-heads strewn in water.. He is way down. Down. Mud, coming to his banty knees, almost hides them. Soon people will be looking at him and calling him a strong man. No doubt he is for one who has had rickets. Lets give it to him. Lets call him great when the water shall have been all drawn off. Lets build a monument and set it in the ooze where he goes down. A monument of hewn oak, carved in nigger-heads. Lets open our throats, brother, and sing “Deep River” when he goes down."
     },
     {
       "id": "s17-4",
@@ -966,7 +966,7 @@
     {
       "id": "s18-1",
       "sceneId": "s18",
-      "text": "Nothing I did seemed able to change Avey’s indifference to me. I played basket-ball, and when I’d make a long clean shot she’d clap with the others, louder than they, I thought. I’d meet her on the street, and there’d be no difference in the way she said hello. She never took the trouble to call me by my name. On the days for drill, I’d let my voice down a tone and call for a complicated maneuver when I saw her coming. She’d smile appreciation, but it was an impersonal smile, never for me. It was on a summer excursion down to Riverview that she first seemed to take me into account. The day had been spent riding merry-go-rounds, scenic-railways, and shoot-the-chutes. We had been in swimming and we had danced. I was a crack swimmer then. She didnt know how. I held her up and showed her how to kick her legs and draw her arms. Of course she didnt learn in one day, but she thanked me for bothering with her. I was also somewhat of a dancer. And I had already noticed that love can start on a dance floor. We danced. But though I held her tightly in my arms, she was way away. That college feller who lived on the top floor was somewhere making money for the next year. I imagined that she was thinking, wishing for him. Ned was along. He treated her until his money gave out. She went with another feller. Ned got sore. One by one the boys’ money gave out. She left them. And they got sore. Every one of them but me got sore. This is the reason, I guess, why I had her to myself on the top deck of the _Jane Mosely_ that night as we puffed up the Potomac, coming home. The moon was brilliant. The air was sweet like clover. And every now and then, a salt tang, a stale drift of sea-weed. It was not my mind’s fault if it went romancing. I should have taken her in my arms the minute we were stowed in that old lifeboat. I dallied, dreaming. She took me in hers. And I could feel by the touch of it that it wasnt a man-to-woman love. It made me restless. I felt chagrined. I didnt know what it was, but I did know that I couldnt handle it. She ran her fingers through my hair and kissed my forehead. I itched to break through her tenderness to passion. I wanted her to take me in her arms as I knew she had that college feller. I wanted her to love me passionately as she did him. I gave her one burning kiss. Then she laid me in her lap as if I were a child. Helpless. I got sore when she started to hum a lullaby. She wouldnt let me go. I talked. I knew damned well that I could beat her at that. Her eyes were soft and misty, the curves of her lips were wistful, and her smile seemed indulgent of the irrelevance of my remarks. I gave up at last and let her love me, silently, in her own way. The moon was brilliant. The air was sweet like clover, and every now and then, a salt tang, a stale drift of sea-weed...."
+      "text": "Nothing I did seemed able to change Avey’s indifference to me. I played basket-ball, and when I’d make a long clean shot she’d clap with the others, louder than they, I thought. I’d meet her on the street, and there’d be no difference in the way she said hello. She never took the trouble to call me by my name. On the days for drill, I’d let my voice down a tone and call for a complicated maneuver when I saw her coming. She’d smile appreciation, but it was an impersonal smile, never for me. It was on a summer excursion down to Riverview that she first seemed to take me into account. The day had been spent riding merry-go-rounds, scenic-railways, and shoot-the-chutes. We had been in swimming and we had danced. I was a crack swimmer then. She didnt know how. I held her up and showed her how to kick her legs and draw her arms. Of course she didnt learn in one day, but she thanked me for bothering with her. I was also somewhat of a dancer. And I had already noticed that love can start on a dance floor. We danced. But though I held her tightly in my arms, she was way away. That college feller who lived on the top floor was somewhere making money for the next year. I imagined that she was thinking, wishing for him. Ned was along. He treated her until his money gave out. She went with another feller. Ned got sore. One by one the boys’ money gave out. She left them. And they got sore. Every one of them but me got sore. This is the reason, I guess, why I had her to myself on the top deck of the *Jane Mosely* that night as we puffed up the Potomac, coming home. The moon was brilliant. The air was sweet like clover. And every now and then, a salt tang, a stale drift of sea-weed. It was not my mind’s fault if it went romancing. I should have taken her in my arms the minute we were stowed in that old lifeboat. I dallied, dreaming. She took me in hers. And I could feel by the touch of it that it wasnt a man-to-woman love. It made me restless. I felt chagrined. I didnt know what it was, but I did know that I couldnt handle it. She ran her fingers through my hair and kissed my forehead. I itched to break through her tenderness to passion. I wanted her to take me in her arms as I knew she had that college feller. I wanted her to love me passionately as she did him. I gave her one burning kiss. Then she laid me in her lap as if I were a child. Helpless. I got sore when she started to hum a lullaby. She wouldnt let me go. I talked. I knew damned well that I could beat her at that. Her eyes were soft and misty, the curves of her lips were wistful, and her smile seemed indulgent of the irrelevance of my remarks. I gave up at last and let her love me, silently, in her own way. The moon was brilliant. The air was sweet like clover, and every now and then, a salt tang, a stale drift of sea-weed...."
     },
     {
       "id": "s18-2",
@@ -991,7 +991,7 @@
     {
       "id": "s20-0",
       "sceneId": "s20",
-      "text": "Thunder blossoms gorgeously above our heads, Great, hollow, bell-like flowers, Rumbling in the wind, Stretching clappers to strike our ears .. Full-lipped flowers Bitten by the sun Bleeding rain Dripping rain like golden honey— And the sweet earth flying from the thunder."
+      "text": "Thunder blossoms gorgeously above our heads, Great, hollow, bell-like flowers, Rumbling in the wind, Stretching clappers to strike our ears.. Full-lipped flowers Bitten by the sun Bleeding rain Dripping rain like golden honey— And the sweet earth flying from the thunder."
     },
     {
       "id": "s21-0",
@@ -1011,7 +1011,7 @@
     {
       "id": "s21-3",
       "sceneId": "s21",
-      "text": "A pianist slips into the pit and improvises jazz. The walls awake. Arms of the girls, and their limbs, which .. jazz, jazz .. by lifting up their tight street skirts they set free, jab the air and clog the floor in rhythm to the music. (Lift your skirts, Baby, and talk t papa!) Crude, individualized, and yet .. monotonous..."
+      "text": "A pianist slips into the pit and improvises jazz. The walls awake. Arms of the girls, and their limbs, which.. jazz, jazz.. by lifting up their tight street skirts they set free, jab the air and clog the floor in rhythm to the music. (Lift your skirts, Baby, and talk t papa!) Crude, individualized, and yet.. monotonous..."
     },
     {
       "id": "s21-4",
@@ -1031,7 +1031,7 @@
     {
       "id": "s21-7",
       "sceneId": "s21",
-      "text": "Girls dance and sing. Men clap. The walls sing and press inward. They press the men and girls, they press John towards a center of physical ecstasy. Go to it, Baby! Fan yourself, and feed your papa! Put .. nobody lied .. and take .. when they said I cried over you. No lie! The glitter and color of stacked scenes, the gilt and brass and crimson of the house, converge towards a center of physical ecstasy. John’s feet and torso and his blood press in. He wills thought to rid his mind of passion."
+      "text": "Girls dance and sing. Men clap. The walls sing and press inward. They press the men and girls, they press John towards a center of physical ecstasy. Go to it, Baby! Fan yourself, and feed your papa! Put.. nobody lied.. and take.. when they said I cried over you. No lie! The glitter and color of stacked scenes, the gilt and brass and crimson of the house, converge towards a center of physical ecstasy. John’s feet and torso and his blood press in. He wills thought to rid his mind of passion."
     },
     {
       "id": "s21-8",
@@ -1226,7 +1226,7 @@
     {
       "id": "s23-0",
       "sceneId": "s23",
-      "text": "Her soul is like a little thrust-tailed dog that follows her, whimpering. She is large enough, I know, to find a warm spot for it. But each night when she comes home and closes the big outside storm door, the little dog is left in the vestibule, filled with chills till morning. Some one ... eoho Jesus ... soft as a cotton boll brushed against the milk-pod cheek of Christ, will steal in and cover it that it need not shiver, and carry it to her where she sleeps upon clean hay cut in her dreams."
+      "text": "Her soul is like a little thrust-tailed dog that follows her, whimpering. She is large enough, I know, to find a warm spot for it. But each night when she comes home and closes the big outside storm door, the little dog is left in the vestibule, filled with chills till morning. Some one... eoho Jesus... soft as a cotton boll brushed against the milk-pod cheek of Christ, will steal in and cover it that it need not shiver, and carry it to her where she sleeps upon clean hay cut in her dreams."
     },
     {
       "id": "s23-1",
@@ -1236,7 +1236,7 @@
     {
       "id": "s23-2",
       "sceneId": "s23",
-      "text": "Her soul is like a little thrust-tailed dog, that follows her, whimpering. I’ve seen it tagging on behind her, up streets where chestnut trees flowered, where dusty asphalt had been freshly sprinkled with clean water. Up alleys where niggers sat on low door-steps before tumbled shanties and sang and loved. At night, when she comes home, the little dog is left in the vestibule, nosing the crack beneath the big storm door, filled with chills till morning. Some one ... eoho Jesus ... soft as the bare feet of Christ moving across bales of southern cotton, will steal in and cover it that it need not shiver, and carry it to her where she sleeps: cradled in dream-fluted cane."
+      "text": "Her soul is like a little thrust-tailed dog, that follows her, whimpering. I’ve seen it tagging on behind her, up streets where chestnut trees flowered, where dusty asphalt had been freshly sprinkled with clean water. Up alleys where niggers sat on low door-steps before tumbled shanties and sang and loved. At night, when she comes home, the little dog is left in the vestibule, nosing the crack beneath the big storm door, filled with chills till morning. Some one... eoho Jesus... soft as the bare feet of Christ moving across bales of southern cotton, will steal in and cover it that it need not shiver, and carry it to her where she sleeps: cradled in dream-fluted cane."
     },
     {
       "id": "s24-0",
@@ -1571,17 +1571,17 @@
     {
       "id": "s24-66",
       "sceneId": "s24",
-      "text": "People come in slowly ... mutter, laughs, flutter, whishadwash, “I’ve changed my work-clothes—” ... and fill vacant seats of Lincoln Theater. Muriel, leading Bernice who is a cross between a washerwoman and a blue-blood lady, a washer-blue, a washer-lady, wanders down the right aisle to the lower front box. Muriel has on an orange dress. Its color would clash with the crimson box-draperies, its color would contradict the sweet rose smile her face is bathed in, should she take her coat off. She’ll keep it on. Pale purple shadows rest on the planes of her cheeks. Deep purple comes from her thick-shocked hair. Orange of the dress goes well with these. Muriel presses her coat down from around her shoulders. Teachers are not supposed to have bobbed hair. She’ll keep her hat on. She takes the first chair, and indicates that Bernice is to take the one directly behind her. Seated thus, her eyes are level with, and near to, the face of an imaginary man upon the stage. To speak to Berny she must turn. When she does, the audience is square upon her."
+      "text": "People come in slowly... mutter, laughs, flutter, whishadwash, “I’ve changed my work-clothes—”... and fill vacant seats of Lincoln Theater. Muriel, leading Bernice who is a cross between a washerwoman and a blue-blood lady, a washer-blue, a washer-lady, wanders down the right aisle to the lower front box. Muriel has on an orange dress. Its color would clash with the crimson box-draperies, its color would contradict the sweet rose smile her face is bathed in, should she take her coat off. She’ll keep it on. Pale purple shadows rest on the planes of her cheeks. Deep purple comes from her thick-shocked hair. Orange of the dress goes well with these. Muriel presses her coat down from around her shoulders. Teachers are not supposed to have bobbed hair. She’ll keep her hat on. She takes the first chair, and indicates that Bernice is to take the one directly behind her. Seated thus, her eyes are level with, and near to, the face of an imaginary man upon the stage. To speak to Berny she must turn. When she does, the audience is square upon her."
     },
     {
       "id": "s24-67",
       "sceneId": "s24",
-      "text": "People come in slowly ... “—for my Sunday-go-to-meeting dress. O glory God! O shout Amen!” ... and fill vacant seats of Lincoln Theater. Each one is a bolt that shoots into a slot, and is locked there. Suppose the Lord should ask, where was Moses when the light went out? Suppose Gabriel should blow his trumpet! The seats are slots. The seats are bolted houses. The mass grows denser. Its weight at first is impalpable upon the box. Then Muriel begins to feel it. She props her arm against the brass box-rail, to ward it off. Silly. These people are friends of hers: a parent of a child she teaches, an old school friend. She smiles at them. They return her courtesy, and she is free to chat with Berny. Berny’s tongue, started, runs on, and on. O washer-blue! O washer-lady!"
+      "text": "People come in slowly... “—for my Sunday-go-to-meeting dress. O glory God! O shout Amen!”... and fill vacant seats of Lincoln Theater. Each one is a bolt that shoots into a slot, and is locked there. Suppose the Lord should ask, where was Moses when the light went out? Suppose Gabriel should blow his trumpet! The seats are slots. The seats are bolted houses. The mass grows denser. Its weight at first is impalpable upon the box. Then Muriel begins to feel it. She props her arm against the brass box-rail, to ward it off. Silly. These people are friends of hers: a parent of a child she teaches, an old school friend. She smiles at them. They return her courtesy, and she is free to chat with Berny. Berny’s tongue, started, runs on, and on. O washer-blue! O washer-lady!"
     },
     {
       "id": "s24-68",
       "sceneId": "s24",
-      "text": "Muriel: Never see Dan again. He makes me feel queer. Starts things he doesnt finish. Upsets me. I am not upset. I am perfectly calm. I am going to enjoy the show. Good show. I’ve had some show! This damn tame thing. O Dan. Wont see Dan again. Not alone. Have Mrs. Pribby come in. She _was_ in. Keep Dan out. If I love him, can I keep him out? Well then, I dont love him. Now he’s out. Who is that coming in? Blind as a bat. Ding-bat. Looks like Dan. He mustnt see me. Silly. He cant reach me. He wont dare come in here. He’d put his head down like a goring bull and charge me. He’d trample them. He’d gore. He’d rape! Berny! He won’t dare come in here."
+      "text": "Muriel: Never see Dan again. He makes me feel queer. Starts things he doesnt finish. Upsets me. I am not upset. I am perfectly calm. I am going to enjoy the show. Good show. I’ve had some show! This damn tame thing. O Dan. Wont see Dan again. Not alone. Have Mrs. Pribby come in. She *was* in. Keep Dan out. If I love him, can I keep him out? Well then, I dont love him. Now he’s out. Who is that coming in? Blind as a bat. Ding-bat. Looks like Dan. He mustnt see me. Silly. He cant reach me. He wont dare come in here. He’d put his head down like a goring bull and charge me. He’d trample them. He’d gore. He’d rape! Berny! He won’t dare come in here."
     },
     {
       "id": "s24-69",
@@ -1591,7 +1591,7 @@
     {
       "id": "s24-70",
       "sceneId": "s24",
-      "text": "“A friend of yours, a _good_ friend so I hear. Mr. Daniel Moore, Lord.”"
+      "text": "“A friend of yours, a *good* friend so I hear. Mr. Daniel Moore, Lord.”"
     },
     {
       "id": "s24-71",
@@ -1721,7 +1721,7 @@
     {
       "id": "s24-96",
       "sceneId": "s24",
-      "text": "Dan: Ah, but she was some baby! And not vulgar either. Funny how some women can do those things. Muriel dancing like that! Hell. She rolled and wabbled. Her buttocks rocked. She pulled up her dress and showed her pink drawers. Baby! And then she caught my eyes. Dont know what my eyes had in them. Yes I do. God, dont I though! Sometimes I think, Dan Moore, that your eyes could burn clean ... burn clean ... BURN CLEAN!.."
+      "text": "Dan: Ah, but she was some baby! And not vulgar either. Funny how some women can do those things. Muriel dancing like that! Hell. She rolled and wabbled. Her buttocks rocked. She pulled up her dress and showed her pink drawers. Baby! And then she caught my eyes. Dont know what my eyes had in them. Yes I do. God, dont I though! Sometimes I think, Dan Moore, that your eyes could burn clean... burn clean... BURN CLEAN!.."
     },
     {
       "id": "s24-97",
@@ -1741,7 +1741,7 @@
     {
       "id": "s24-100",
       "sceneId": "s24",
-      "text": "So framed, the proposition is a mental-filler, Dentist, I want gold teeth. It should become cherished of the technical intellect. I hereby offer it to posterity as one of the important machine-age designs. P. S. It should be noted, that because it _is_ an achievement of this age, its growth and hence its causes, up to the point of maturity, antedate machinery. Ery...”"
+      "text": "So framed, the proposition is a mental-filler, Dentist, I want gold teeth. It should become cherished of the technical intellect. I hereby offer it to posterity as one of the important machine-age designs. P. S. It should be noted, that because it *is* an achievement of this age, its growth and hence its causes, up to the point of maturity, antedate machinery. Ery...”"
     },
     {
       "id": "s24-101",
@@ -1761,7 +1761,7 @@
     {
       "id": "s24-104",
       "sceneId": "s24",
-      "text": "Dan: I am going to reach up and grab the girders of this building and pull them down. The crash will be a signal. Hid by the smoke and dust Dan Moore will arise. In his right hand will be a dynamo. In his left, a god’s face that will flash white light from ebony. I’ll grab a girder and swing it like a walking-stick. Lightning will flash. I’ll grab its black knob and swing it like a crippled cane. Lightning... Some one’s flashing ... some one’s flashing... Who in hell is flashing that mirror? Take it off me, godam you."
+      "text": "Dan: I am going to reach up and grab the girders of this building and pull them down. The crash will be a signal. Hid by the smoke and dust Dan Moore will arise. In his right hand will be a dynamo. In his left, a god’s face that will flash white light from ebony. I’ll grab a girder and swing it like a walking-stick. Lightning will flash. I’ll grab its black knob and swing it like a crippled cane. Lightning... Some one’s flashing... some one’s flashing... Who in hell is flashing that mirror? Take it off me, godam you."
     },
     {
       "id": "s24-105",
@@ -1781,7 +1781,7 @@
     {
       "id": "s24-108",
       "sceneId": "s24",
-      "text": "Do not shrink. Do not be afraid of me. _Jesus_ See how my eyes look at you. _the Son of God_ I too was made in His image. _was once_— I give you the rose."
+      "text": "Do not shrink. Do not be afraid of me. *Jesus* See how my eyes look at you. *the Son of God* I too was made in His image. *was once*— I give you the rose."
     },
     {
       "id": "s24-109",
@@ -1856,12 +1856,12 @@
     {
       "id": "s26-3",
       "sceneId": "s26",
-      "text": "It would be good to see them .. crook’d, split, and iron-ring’d handles of the scythes. It would be good to see them, dust-caked and blind. I hunger."
+      "text": "It would be good to see them.. crook’d, split, and iron-ring’d handles of the scythes. It would be good to see them, dust-caked and blind. I hunger."
     },
     {
       "id": "s26-4",
       "sceneId": "s26",
-      "text": "(Dusk is a strange fear’d sheath their blades are dull’d in.) My throat is dry. And should I call, a cracked grain like the oats ... eoho—"
+      "text": "(Dusk is a strange fear’d sheath their blades are dull’d in.) My throat is dry. And should I call, a cracked grain like the oats... eoho—"
     },
     {
       "id": "s26-5",
@@ -1876,7 +1876,7 @@
     {
       "id": "s26-7",
       "sceneId": "s26",
-      "text": "It would be good to hear their songs .. reapers of the sweet-stalk’d cane, cutters of the corn .. even though their throats cracked and the strangeness of their voices deafened me."
+      "text": "It would be good to hear their songs.. reapers of the sweet-stalk’d cane, cutters of the corn.. even though their throats cracked and the strangeness of their voices deafened me."
     },
     {
       "id": "s26-8",
@@ -1901,7 +1901,7 @@
     {
       "id": "s27-1",
       "sceneId": "s27",
-      "text": "On the school gymnasium floor, young men and women are drilling. They are going to be teachers, and go out into the world .. thud, thud .. and give precision to the movements of sick people who all their lives have been drilling. One man is out of step. In step. The teacher glares at him. A girl in bloomers, seated on a mat in the corner because she has told the director that she is sick, sees that the footfalls of the men are rhythmical and syncopated. The dance of his blue-trousered limbs thrills her."
+      "text": "On the school gymnasium floor, young men and women are drilling. They are going to be teachers, and go out into the world.. thud, thud.. and give precision to the movements of sick people who all their lives have been drilling. One man is out of step. In step. The teacher glares at him. A girl in bloomers, seated on a mat in the corner because she has told the director that she is sick, sees that the footfalls of the men are rhythmical and syncopated. The dance of his blue-trousered limbs thrills her."
     },
     {
       "id": "s27-2",
@@ -1981,7 +1981,7 @@
     {
       "id": "s27-17",
       "sceneId": "s27",
-      "text": "Bona begins to feel a little dizzy and all in. She drives on. Almost hugs Paul to guard him. Near the basket, he attempts to shoot, and Bona lunges into his body and tries to beat his arms. His elbow, going up, gives her a sharp crack on the jaw. She whirls. He catches her. Her body stiffens. Then becomes strangely vibrant, and bursts to a swift life within her anger. He is about to give way before her hatred when a new passion flares at him and makes his stomach fall. Bona squeezes him. He suddenly feels stifled, and wonders why in hell the ring of silly gaping faces that’s caked about him doesnt make way and give him air. He has a swift illusion that it is himself who has been struck. He looks at Bona. Whir. Whir. They seem to be human distortions spinning tensely in a fog. Spinning .. dizzy .. spinning... Bona jerks herself free, flushes a startling crimson, breaks through the bewildered teams, and rushes from the hall."
+      "text": "Bona begins to feel a little dizzy and all in. She drives on. Almost hugs Paul to guard him. Near the basket, he attempts to shoot, and Bona lunges into his body and tries to beat his arms. His elbow, going up, gives her a sharp crack on the jaw. She whirls. He catches her. Her body stiffens. Then becomes strangely vibrant, and bursts to a swift life within her anger. He is about to give way before her hatred when a new passion flares at him and makes his stomach fall. Bona squeezes him. He suddenly feels stifled, and wonders why in hell the ring of silly gaping faces that’s caked about him doesnt make way and give him air. He has a swift illusion that it is himself who has been struck. He looks at Bona. Whir. Whir. They seem to be human distortions spinning tensely in a fog. Spinning.. dizzy.. spinning... Bona jerks herself free, flushes a startling crimson, breaks through the bewildered teams, and rushes from the hall."
     },
     {
       "id": "s27-18",
@@ -2066,7 +2066,7 @@
     {
       "id": "s27-34",
       "sceneId": "s27",
-      "text": "—or it’ll go to sleep on you. Dark blood; nigger? Thats what those jealous she-hens say. Not Bona though, or she .. from the South .. wouldnt want me to fix a date for him and her. Hell of a thing, that Paul’s dark: you’ve got to always be answering questions."
+      "text": "—or it’ll go to sleep on you. Dark blood; nigger? Thats what those jealous she-hens say. Not Bona though, or she.. from the South.. wouldnt want me to fix a date for him and her. Hell of a thing, that Paul’s dark: you’ve got to always be answering questions."
     },
     {
       "id": "s27-35",
@@ -2101,12 +2101,12 @@
     {
       "id": "s27-41",
       "sceneId": "s27",
-      "text": "Paul: He’s going to Life this time. No doubt of that. Quit your kidding. Some day, dear Art, I’m going to kick the living slats out of you, and you wont know what I’ve done it for. And your slats will bring forth Life .. beautiful woman..."
+      "text": "Paul: He’s going to Life this time. No doubt of that. Quit your kidding. Some day, dear Art, I’m going to kick the living slats out of you, and you wont know what I’ve done it for. And your slats will bring forth Life.. beautiful woman..."
     },
     {
       "id": "s27-42",
       "sceneId": "s27",
-      "text": "_Pure Food Restaurant._"
+      "text": "*Pure Food Restaurant.*"
     },
     {
       "id": "s27-43",
@@ -2261,7 +2261,7 @@
     {
       "id": "s27-73",
       "sceneId": "s27",
-      "text": "Crimson Gardens. Hurrah! So one feels. People ... University of Chicago students, members of the stock exchange, a large Negro in crimson uniform who guards the door .. had watched them enter. Had leaned towards each other over ash-smeared tablecloths and highballs and whispered: What is he, a Spaniard, an Indian, an Italian, a Mexican, a Hindu, or a Japanese? Art had at first fidgeted under their stares .. what are _you_ looking at, you godam pack of owl-eyed hyenas? .. but soon settled into his fuss with Helen, and forgot them. A strange thing happened to Paul. Suddenly he knew that he was apart from the people around him. Apart from the pain which they had unconsciously caused. Suddenly he knew that people saw, not attractiveness in his dark skin, but difference. Their stares, giving him to himself, filled something long empty within him, and were like green blades sprouting in his consciousness. There was fullness, and strength and peace about it all. He saw himself, cloudy, but real. He saw the faces of the people at the tables round him. White lights, or as now, the pink lights of the Crimson Gardens gave a glow and immediacy to white faces. The pleasure of it, equal to that of love or dream, of seeing this. Art and Bona and Helen? He’d look. They were wonderfully flushed and beautiful. Not for himself; because they were. Distantly. Who were they, anyway? God, if he knew them. He’d come in with them. Of that he was sure. Come where? Into life? Yes. No. Into the Crimson Gardens. A part of life. A carbon bubble. Would it look purple if he went out into the night and looked at it? His sudden starting to rise almost upset the table."
+      "text": "Crimson Gardens. Hurrah! So one feels. People... University of Chicago students, members of the stock exchange, a large Negro in crimson uniform who guards the door.. had watched them enter. Had leaned towards each other over ash-smeared tablecloths and highballs and whispered: What is he, a Spaniard, an Indian, an Italian, a Mexican, a Hindu, or a Japanese? Art had at first fidgeted under their stares.. what are *you* looking at, you godam pack of owl-eyed hyenas?.. but soon settled into his fuss with Helen, and forgot them. A strange thing happened to Paul. Suddenly he knew that he was apart from the people around him. Apart from the pain which they had unconsciously caused. Suddenly he knew that people saw, not attractiveness in his dark skin, but difference. Their stares, giving him to himself, filled something long empty within him, and were like green blades sprouting in his consciousness. There was fullness, and strength and peace about it all. He saw himself, cloudy, but real. He saw the faces of the people at the tables round him. White lights, or as now, the pink lights of the Crimson Gardens gave a glow and immediacy to white faces. The pleasure of it, equal to that of love or dream, of seeing this. Art and Bona and Helen? He’d look. They were wonderfully flushed and beautiful. Not for himself; because they were. Distantly. Who were they, anyway? God, if he knew them. He’d come in with them. Of that he was sure. Come where? Into life? Yes. No. Into the Crimson Gardens. A part of life. A carbon bubble. Would it look purple if he went out into the night and looked at it? His sudden starting to rise almost upset the table."
     },
     {
       "id": "s27-74",
@@ -2371,7 +2371,7 @@
     {
       "id": "s27-95",
       "sceneId": "s27",
-      "text": "Crimson Gardens. Hurrah! So one feels. The bare-back rider balances agilely on the applause which is the tail of her song. Orchestral instruments warm up for jazz. The flute is a cat that ripples its fur against the deep-purring saxophone. The drum throws sticks. The cat jumps on the piano keyboard. Hi diddle, hi diddle, the cat and the fiddle. Crimson Gardens .. hurrah! .. jumps over the moon. Crimson Gardens! Helen .. O Eliza .. rabbit-eyes sparkling, plays up to, and tries to placate what she considers to be Paul’s contempt. She always does that .. Little Liza Jane... Once home, she burns with the thought of what she’s done. She says all manner of snidy things about him, and swears that she’ll never go out again when he is along. She tries to get Art to break with him, saying, that if Paul, whom the whole dormitory calls a nigger, is more to him than she is, well, she’s through. She does not break with Art. She goes out as often as she can with Art and Paul. She explains this to herself by a piece of information which a friend of hers had given her: men like him (Paul) can fascinate. One is not responsible for fascination. Not one girl had really loved Paul; he fascinated them. Bona didnt; only thought she did. Time would tell. And of course, _she_ didnt. Liza... She plays up to, and tries to placate, Paul."
+      "text": "Crimson Gardens. Hurrah! So one feels. The bare-back rider balances agilely on the applause which is the tail of her song. Orchestral instruments warm up for jazz. The flute is a cat that ripples its fur against the deep-purring saxophone. The drum throws sticks. The cat jumps on the piano keyboard. Hi diddle, hi diddle, the cat and the fiddle. Crimson Gardens.. hurrah!.. jumps over the moon. Crimson Gardens! Helen.. O Eliza.. rabbit-eyes sparkling, plays up to, and tries to placate what she considers to be Paul’s contempt. She always does that.. Little Liza Jane... Once home, she burns with the thought of what she’s done. She says all manner of snidy things about him, and swears that she’ll never go out again when he is along. She tries to get Art to break with him, saying, that if Paul, whom the whole dormitory calls a nigger, is more to him than she is, well, she’s through. She does not break with Art. She goes out as often as she can with Art and Paul. She explains this to herself by a piece of information which a friend of hers had given her: men like him (Paul) can fascinate. One is not responsible for fascination. Not one girl had really loved Paul; he fascinated them. Bona didnt; only thought she did. Time would tell. And of course, *she* didnt. Liza... She plays up to, and tries to placate, Paul."
     },
     {
       "id": "s27-96",
@@ -2606,7 +2606,7 @@
     {
       "id": "s28-18",
       "sceneId": "s28",
-      "text": "“God Almighty, dear God, dear Jesus, do not torture me with beauty. Take it away. Give me an ugly world. Ha, ugly. Stinking like unwashed niggers. Dear Jesus, do not chain me to myself and set these hills and valleys, heaving with folk-songs, so close to me that I cannot reach them. There is a radiant beauty in the night that touches and ... tortures me. Ugh. Hell. Get up, you damn fool. Look around. Whats beautiful there? Hog pens and chicken yards. Dirty red mud. Stinking outhouse. Whats beauty anyway but ugliness if it hurts you? God, he doesnt exist, but nevertheless He is ugly. Hence, what comes from Him is ugly. Lynchers and business men, and that cockroach Hanby, especially. How come that he gets to be principal of a school? Of the school I’m driven to teach in? God’s handiwork, doubtless. God and Hanby, they belong together. Two godam moral-spouters. Oh, no, I wont let that emotion come up in me. Stay down. Stay down, I tell you. O Jesus, Thou art beautiful... Come, Ralph, pull yourself together. Curses and adoration dont come from what is sane. This loneliness, dumbness, awful, intangible oppression is enough to drive a man insane. Miles from nowhere. A speck on a Georgia hillside. Jesus, can you imagine it—an atom of dust in agony on a hillside? Thats a spectacle for you. Come, Ralph, old man, pull yourself together.”"
+      "text": "“God Almighty, dear God, dear Jesus, do not torture me with beauty. Take it away. Give me an ugly world. Ha, ugly. Stinking like unwashed niggers. Dear Jesus, do not chain me to myself and set these hills and valleys, heaving with folk-songs, so close to me that I cannot reach them. There is a radiant beauty in the night that touches and... tortures me. Ugh. Hell. Get up, you damn fool. Look around. Whats beautiful there? Hog pens and chicken yards. Dirty red mud. Stinking outhouse. Whats beauty anyway but ugliness if it hurts you? God, he doesnt exist, but nevertheless He is ugly. Hence, what comes from Him is ugly. Lynchers and business men, and that cockroach Hanby, especially. How come that he gets to be principal of a school? Of the school I’m driven to teach in? God’s handiwork, doubtless. God and Hanby, they belong together. Two godam moral-spouters. Oh, no, I wont let that emotion come up in me. Stay down. Stay down, I tell you. O Jesus, Thou art beautiful... Come, Ralph, pull yourself together. Curses and adoration dont come from what is sane. This loneliness, dumbness, awful, intangible oppression is enough to drive a man insane. Miles from nowhere. A speck on a Georgia hillside. Jesus, can you imagine it—an atom of dust in agony on a hillside? Thats a spectacle for you. Come, Ralph, old man, pull yourself together.”"
     },
     {
       "id": "s28-19",
@@ -2641,7 +2641,7 @@
     {
       "id": "s28-25",
       "sceneId": "s28",
-      "text": "“Well, I’m damned. This godam place is sure getting the best of me. Come, Ralph, old man, pull yourself together. Nights cant last forever. Thank God for that. Its Sunday already. First time in my life I’ve ever wanted Sunday to come. Hell of a day. And down here there’s no such thing as ducking church. Well, I’ll see Halsey and Layman, and get a good square meal. Thats something. And Halsey’s a damn good feller. Cant talk to him, though. Who in Christ’s world can I talk to? A hen. God. Myself... I’m going bats, no doubt of that. Come now, Ralph, go in and make yourself go to sleep. Come now .. in the door .. thats right. Put the poker down. There. All right. Slip under the sheets. Close your eyes. Think nothing .. a long time .. nothing, nothing. Dont even think nothing. Blank. Not even blank. Count. No, mustnt count Nothing .. blank .. nothing .. blank .. space without stars in it. No, nothing .. nothing.."
+      "text": "“Well, I’m damned. This godam place is sure getting the best of me. Come, Ralph, old man, pull yourself together. Nights cant last forever. Thank God for that. Its Sunday already. First time in my life I’ve ever wanted Sunday to come. Hell of a day. And down here there’s no such thing as ducking church. Well, I’ll see Halsey and Layman, and get a good square meal. Thats something. And Halsey’s a damn good feller. Cant talk to him, though. Who in Christ’s world can I talk to? A hen. God. Myself... I’m going bats, no doubt of that. Come now, Ralph, go in and make yourself go to sleep. Come now.. in the door.. thats right. Put the poker down. There. All right. Slip under the sheets. Close your eyes. Think nothing.. a long time.. nothing, nothing. Dont even think nothing. Blank. Not even blank. Count. No, mustnt count Nothing.. blank.. nothing.. blank.. space without stars in it. No, nothing.. nothing.."
     },
     {
       "id": "s28-26",
@@ -3861,7 +3861,7 @@
     {
       "id": "s28-269",
       "sceneId": "s28",
-      "text": "The two men settle on their lunch. Carrie, with hardly a glance in the direction of the hearth, as is her habit, is about to take the second basket down to the old man, when Lewis rises. In doing so he draws her unwitting attention. Their meeting is a swift sun-burst. Lewis impulsively moves towards her. His mind flashes images of her life in the southern town. He sees the nascent woman, her flesh already stiffening to cartilage, drying to bone. Her spirit-bloom, even now touched sullen, bitter. Her rich beauty fading... He wants to— He stretches forth his hands to hers. He takes them. They feel like warm cheeks against his palms. The sun-burst from her eyes floods up and haloes him. Christ-eyes, his eyes look to her. Fearlessly she loves into them. And then something happens. Her face blanches. Awkwardly she draws away. The sin-bogies of respectable southern colored folks clamor at her: “Look out! Be a _good_ girl. A _good_ girl. Look out!” She gropes for her basket that has fallen to the floor. Finds it, and marches with a rigid gravity to her task of feeding the old man. Like the glowing white ash of burned paper, Lewis’ eyelids, wavering, settle down. He stirs in the direction of the rear window. From the back yard, mules tethered to odd trees and posts blink dumbly at him. They too seem burdened with an impotent pain. Kabnis and Halsey are still busy with their lunch. They havent noticed him. After a while he turns to them."
+      "text": "The two men settle on their lunch. Carrie, with hardly a glance in the direction of the hearth, as is her habit, is about to take the second basket down to the old man, when Lewis rises. In doing so he draws her unwitting attention. Their meeting is a swift sun-burst. Lewis impulsively moves towards her. His mind flashes images of her life in the southern town. He sees the nascent woman, her flesh already stiffening to cartilage, drying to bone. Her spirit-bloom, even now touched sullen, bitter. Her rich beauty fading... He wants to— He stretches forth his hands to hers. He takes them. They feel like warm cheeks against his palms. The sun-burst from her eyes floods up and haloes him. Christ-eyes, his eyes look to her. Fearlessly she loves into them. And then something happens. Her face blanches. Awkwardly she draws away. The sin-bogies of respectable southern colored folks clamor at her: “Look out! Be a *good* girl. A *good* girl. Look out!” She gropes for her basket that has fallen to the floor. Finds it, and marches with a rigid gravity to her task of feeding the old man. Like the glowing white ash of burned paper, Lewis’ eyelids, wavering, settle down. He stirs in the direction of the rear window. From the back yard, mules tethered to odd trees and posts blink dumbly at him. They too seem burdened with an impotent pain. Kabnis and Halsey are still busy with their lunch. They havent noticed him. After a while he turns to them."
     },
     {
       "id": "s28-270",
@@ -4296,7 +4296,7 @@
     {
       "id": "s28-356",
       "sceneId": "s28",
-      "text": "Halsey: This aint th sort o thing f me, Lewis, when I got work upstairs. Nassur. You an me has got things t do. Wastin time on common low-down women—say, Lewis, look at her now—Stella—aint she a picture? Common wench—na she aint, Lewis. You know she aint. I’m only tryin t fool y. I used t love that girl. Yassur. An sometimes when th moon is thick an I hear dogs up th valley barkin an some old woman fetches out her song, an th winds seem like th Lord made them fer t fetch an carry th smell o pine an cane, an there aint no big job on foot, I sometimes get t thinkin that I still do. But I want t talk t y, Lewis, queer as y are. Y know, Lewis, I went t school once. Ya. In Augusta. But it wasnt a regular school. Na. It was a pussy Sunday-school masqueradin under a regular name. Some goody-goody teachers from th North had come down t teach th niggers. If you was nearly white, they liked y. If you was black, they didnt. But it wasnt that—I was all right, y see. I couldnt stand em messin an pawin over m business like I was a child. So I cussed em out an left. Kabnis there ought t have cussed out th old duck over yonder an left. He’d a been a better man tday. But as I was sayin, I couldnt stand their ways. So I left an came here an worked with my father. An been here ever since. He died. I set in f myself. An its always been; give me a good job an sure pay an I aint far from being satisfied, so far as satisfaction goes. Prejudice is everywheres about this country. An a nigger aint in much standin anywheres. But when it comes t pottin round an doin nothing, with nothin bigger’n an ax-handle t hold a feller down, like it was a while back befo I got this job—that beam ought t be—but tmorrow mornin early’s time enough f that. As I was sayin, I gets t thinkin. Play dumb naturally t white folks. I gets t thinkin. I used to subscribe t th _Literary Digest_ an that helped along a bit. But there werent nothing I could sink m teeth int. Theres lots I want t ask y, Lewis. Been askin y t come around. Couldnt get y. Cant get in much tnight. (He glances at the others. His mind fastens on Kabnis.) Say, tell me this, whats on your mind t say on that feller there? Kabnis’ name. One queer bird ought t know another, seems like t me."
+      "text": "Halsey: This aint th sort o thing f me, Lewis, when I got work upstairs. Nassur. You an me has got things t do. Wastin time on common low-down women—say, Lewis, look at her now—Stella—aint she a picture? Common wench—na she aint, Lewis. You know she aint. I’m only tryin t fool y. I used t love that girl. Yassur. An sometimes when th moon is thick an I hear dogs up th valley barkin an some old woman fetches out her song, an th winds seem like th Lord made them fer t fetch an carry th smell o pine an cane, an there aint no big job on foot, I sometimes get t thinkin that I still do. But I want t talk t y, Lewis, queer as y are. Y know, Lewis, I went t school once. Ya. In Augusta. But it wasnt a regular school. Na. It was a pussy Sunday-school masqueradin under a regular name. Some goody-goody teachers from th North had come down t teach th niggers. If you was nearly white, they liked y. If you was black, they didnt. But it wasnt that—I was all right, y see. I couldnt stand em messin an pawin over m business like I was a child. So I cussed em out an left. Kabnis there ought t have cussed out th old duck over yonder an left. He’d a been a better man tday. But as I was sayin, I couldnt stand their ways. So I left an came here an worked with my father. An been here ever since. He died. I set in f myself. An its always been; give me a good job an sure pay an I aint far from being satisfied, so far as satisfaction goes. Prejudice is everywheres about this country. An a nigger aint in much standin anywheres. But when it comes t pottin round an doin nothing, with nothin bigger’n an ax-handle t hold a feller down, like it was a while back befo I got this job—that beam ought t be—but tmorrow mornin early’s time enough f that. As I was sayin, I gets t thinkin. Play dumb naturally t white folks. I gets t thinkin. I used to subscribe t th *Literary Digest* an that helped along a bit. But there werent nothing I could sink m teeth int. Theres lots I want t ask y, Lewis. Been askin y t come around. Couldnt get y. Cant get in much tnight. (He glances at the others. His mind fastens on Kabnis.) Say, tell me this, whats on your mind t say on that feller there? Kabnis’ name. One queer bird ought t know another, seems like t me."
     },
     {
       "id": "s28-357",
@@ -4516,7 +4516,7 @@
     {
       "id": "s28-400",
       "sceneId": "s28",
-      "text": "Kabnis: You sit there like a black hound spiked to an ivory pedestal. An all night long I heard you murmurin that devilish word. They thought I didnt hear y, but I did. Mumblin, feedin that ornery thing thats livin on my insides. Father John. Father of Satan, more likely. What does it mean t you? Youre dead already. Death. What does it mean t you? To you who died way back there in th ’sixties. What are y throwin it in my throat for? Whats it goin t get y? A good smashin in th mouth, thats what. My fist’ll sink int y black mush face clear t y guts—if y got any. Dont believe y have. Never seen signs of none. Death. Death. Sin an Death. All night long y mumbled death. (He forgets the old man as his mind begins to play with the word and its associations.) Death ... these clammy floors ... just like th place they used t stow away th worn-out, no-count niggers in th days of slavery ... that was long ago; not so long ago ... no windows (he rises higher on his elbows to verify this assertion. He looks around, and, seeing no one but the old man, calls.) Halsey! Halsey! Gone an left me. Just like a nigger. I thought he was a nigger all th time. Now I know it. Ditch y when it comes right down t it. Damn him anyway. Godam him. (He looks and re-sees the old man.) Eh, you? T hell with you too. What do I care whether you can see or hear? You know what hell is cause youve been there. Its a feelin an its ragin in my soul in a way that’ll pop out of me an run you through, an scorch y, an burn an rip your soul. Your soul. Ha. Nigger soul. A gin soul that gets drunk on a preacher’s words. An screams. An shouts. God Almighty, how I hate that shoutin. Where’s th beauty in that? Gives a buzzard a windpipe an I’ll bet a dollar t a dime th buzzard ud beat y to it. Aint surprisin th white folks hate y so. When you had eyes, did you ever see th beauty of th world? Tell me that. Th hell y did. Now dont tell me. I know y didnt. You couldnt have. Oh, I’m drunk an just as good as dead, but no eyes that have seen beauty ever lose their sight. You aint got no sight. If you had, drunk as I am, I hope Christ will kill me if I couldnt see it. Your eyes are dull and watery, like fish eyes. Fish eyes are dead eyes. Youre an old man, a dead fish man, an black at that. Theyve put y here t die, damn fool y are not t know it. Do y know how many feet youre under ground? I’ll tell y. Twenty. An do y think you’ll ever see th light of day again, even if you wasnt blind? Do y think youre out of slavery? Huh? Youre where they used t throw th worked-out, no-count slaves. On a damp clammy floor of a dark scum-hole. An they called that an infirmary. Th sons-a... Why I can already see you toppled off that stool an stretched out on th floor beside me—not beside me, damn you, by yourself, with th flies buzzin an lickin God knows what they’d find on a dirty, black, foul-breathed mouth like yours..."
+      "text": "Kabnis: You sit there like a black hound spiked to an ivory pedestal. An all night long I heard you murmurin that devilish word. They thought I didnt hear y, but I did. Mumblin, feedin that ornery thing thats livin on my insides. Father John. Father of Satan, more likely. What does it mean t you? Youre dead already. Death. What does it mean t you? To you who died way back there in th ’sixties. What are y throwin it in my throat for? Whats it goin t get y? A good smashin in th mouth, thats what. My fist’ll sink int y black mush face clear t y guts—if y got any. Dont believe y have. Never seen signs of none. Death. Death. Sin an Death. All night long y mumbled death. (He forgets the old man as his mind begins to play with the word and its associations.) Death... these clammy floors... just like th place they used t stow away th worn-out, no-count niggers in th days of slavery... that was long ago; not so long ago... no windows (he rises higher on his elbows to verify this assertion. He looks around, and, seeing no one but the old man, calls.) Halsey! Halsey! Gone an left me. Just like a nigger. I thought he was a nigger all th time. Now I know it. Ditch y when it comes right down t it. Damn him anyway. Godam him. (He looks and re-sees the old man.) Eh, you? T hell with you too. What do I care whether you can see or hear? You know what hell is cause youve been there. Its a feelin an its ragin in my soul in a way that’ll pop out of me an run you through, an scorch y, an burn an rip your soul. Your soul. Ha. Nigger soul. A gin soul that gets drunk on a preacher’s words. An screams. An shouts. God Almighty, how I hate that shoutin. Where’s th beauty in that? Gives a buzzard a windpipe an I’ll bet a dollar t a dime th buzzard ud beat y to it. Aint surprisin th white folks hate y so. When you had eyes, did you ever see th beauty of th world? Tell me that. Th hell y did. Now dont tell me. I know y didnt. You couldnt have. Oh, I’m drunk an just as good as dead, but no eyes that have seen beauty ever lose their sight. You aint got no sight. If you had, drunk as I am, I hope Christ will kill me if I couldnt see it. Your eyes are dull and watery, like fish eyes. Fish eyes are dead eyes. Youre an old man, a dead fish man, an black at that. Theyve put y here t die, damn fool y are not t know it. Do y know how many feet youre under ground? I’ll tell y. Twenty. An do y think you’ll ever see th light of day again, even if you wasnt blind? Do y think youre out of slavery? Huh? Youre where they used t throw th worked-out, no-count slaves. On a damp clammy floor of a dark scum-hole. An they called that an infirmary. Th sons-a... Why I can already see you toppled off that stool an stretched out on th floor beside me—not beside me, damn you, by yourself, with th flies buzzin an lickin God knows what they’d find on a dirty, black, foul-breathed mouth like yours..."
     },
     {
       "id": "s28-401",
@@ -4581,7 +4581,7 @@
     {
       "id": "s28-413",
       "sceneId": "s28",
-      "text": "Kabnis: Great God Almighty, a soul like mine cant pin itself onto a wagon wheel an satisfy itself in spinnin round. Iron prongs an hickory sticks, an God knows what all ... all right for Halsey ... use him. Me? I get my life down in this scum-hole. Th old man an me—"
+      "text": "Kabnis: Great God Almighty, a soul like mine cant pin itself onto a wagon wheel an satisfy itself in spinnin round. Iron prongs an hickory sticks, an God knows what all... all right for Halsey... use him. Me? I get my life down in this scum-hole. Th old man an me—"
     },
     {
       "id": "s28-414",
@@ -4656,7 +4656,7 @@
     {
       "id": "s28-428",
       "sceneId": "s28",
-      "text": "Kabnis: Carrie! What .. how .. Baby, you shouldnt be down here. Ralph says things. Doesnt mean to. But Carrie, he doesnt know what he’s talkin about. Couldnt know. It was only a preacher’s sin they knew in those old days, an that wasnt sin at all. Mind me, th only sin is whats done against th soul. Th whole world is a conspiracy t sin, especially in America, an against me. I’m th victim of their sin. I’m what sin is. Does he look like me? Have you ever heard him say th things youve heard me say? He couldnt if he had th Holy Ghost t help him. Dont look shocked, little sweetheart, you hurt me."
+      "text": "Kabnis: Carrie! What.. how.. Baby, you shouldnt be down here. Ralph says things. Doesnt mean to. But Carrie, he doesnt know what he’s talkin about. Couldnt know. It was only a preacher’s sin they knew in those old days, an that wasnt sin at all. Mind me, th only sin is whats done against th soul. Th whole world is a conspiracy t sin, especially in America, an against me. I’m th victim of their sin. I’m what sin is. Does he look like me? Have you ever heard him say th things youve heard me say? He couldnt if he had th Holy Ghost t help him. Dont look shocked, little sweetheart, you hurt me."
     },
     {
       "id": "s28-429",
@@ -4701,7 +4701,7 @@
     {
       "id": "s28-437",
       "sceneId": "s28",
-      "text": "Father John: ... upon th white folks—"
+      "text": "Father John:... upon th white folks—"
     },
     {
       "id": "s28-438",

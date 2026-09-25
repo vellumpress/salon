@@ -47,7 +47,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "short-stories-from-the-balkans":
     "Leiba Zibal waits under the roof at Podeni for a stage that is already an hour late. Easter Candles only — never Brother Cœlestin. A later pogrom densifies; do not open there.",
   "the-awakening":
-    "A green and yellow parrot at Grand Isle keeps repeating Allez vous-en. First sit is Chapter I. The whole novel continues; adultery Host-gates later.",
+    "A green and yellow parrot at Grand Isle keeps repeating Allez vous-en. The sit is the Pontellier gallery, Chapter I. The novel continues; the selected shorts stay out.",
   tropic:
     "The whistle blew for eleven o'clock. One tale: Drought — a white hillside quarry, then Coggins Rum, then the walk home through the marl. Stop at the tale boundary. Heat, labor, and racial violence are in the stretch; name them if you Host further, and don’t sanitize.",
   "there-is-confusion":
@@ -206,7 +206,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-home-and-the-world":
     `Mother’s vermilion mark, a red-bordered *sari*, a dark face that shamed vanity — and a daughter furious with her mirror. Bimala remembers beauty, colour, and duty in a Bengal house.`,
   "where-angels-fear-to-tread":
-    `Charing Cross chaos — Lilia laughing like royalty while Philip floods her with little towns to see: Gubbio, Pienza, Monteriano. Later the plot darkens; this open stays comic.`,
+    `Charing Cross chaos — Lilia laughing like royalty while Philip floods her with little towns to see: Gubbio, Pienza, Monteriano. The sit stops on the foot-warmer. The short novel continues.`,
   "the-gadfly":
     `Pisa seminary heat — a lost sermon page, a caressing *Padre*, and a fruitseller calling *Fragola!* down the street. Later violence comes after this sit. It stays soft against Enchanted April: Risorgimento Italy, not the manners comedy.`,
   "the-immoralist":
@@ -317,6 +317,10 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Reuben Sachs was the pride of his family. His mother, safe in her investments, says he must marry money. Skip the chapter motto. Levy’s 1888 London.",
   "the-sun-also-rises":
     "Robert Cohn was once middleweight boxing champion of Princeton. Spider Kelly flattens his nose, and this sit stops there. Skip the Stein and Ecclesiastes lines. Hemingway’s 1926 novel reopens into the Paris café. This is not Blood and Sand.",
+  "the-man-of-property":
+    "Those privileged to be present at a family festival of the Forsytes have seen an upper middle-class family in full plumage. The sit runs through Aunt Ann’s grey hat. Galsworthy’s 1906 novel, Volume 1 only.",
+  "theresa-raquin":
+    "The Arcade of the Pont Neuf is a damp corridor of dumpy shops. Skip the translator’s preface. Vizetelly’s English of Zola’s 1867 novel continues. This is not Bel-Ami.",
   "trooper-peter-halket-of-mashonaland":
     "A dark night on a Mashonaland kopje, Trooper Peter Halket’s fire quivering, a burnt kraal already in the dark. Skip the glossary. Schreiner’s 1897 novella keeps the Chartered Company frame — name it, and don’t sanitize. Not the Africa novel pile.",
   "the-late-mattia-pascal":
@@ -332,7 +336,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-book-of-khalid":
     "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony; Host note, don’t sanitize.",
   cane:
-    "Karintha: her skin is like dusk on the eastern horizon. Skip Waldo Frank’s foreword. First sit ends on the dusk-song refrain; the Georgia cycle continues.",
+    "Karintha: her skin is like dusk on the eastern horizon. Skip the foreword. This sit is Karintha only — later Georgia sketches are later sits.",
   generosity:
     "An apology begins with a box of unused baby clothes and a basement mural of identical smiles. The story keeps going until the face is only itself again.",
 
@@ -359,8 +363,6 @@ export const RITUAL_LANES: RitualLane[] = [
     hint: "First sitting",
     workIds: [
       ...FIRST_SESSION_RITUAL_IDS,
-      "cane",
-      "the-awakening",
       "there-is-confusion",
       "miss-lulu-bett",
       "seven-brothers",
@@ -381,6 +383,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-last-man",
       "the-late-mattia-pascal",
       "generosity",
+      "where-angels-fear-to-tread",
     ],
   },
   {
@@ -801,6 +804,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-cabala",
       "reuben-sachs",
       "the-sun-also-rises",
+      "the-man-of-property",
+      "the-awakening",
+      "theresa-raquin",
     ],
   },
   {
@@ -852,6 +858,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "herland",
       "the-late-mattia-pascal",
       "the-garden-party-and-other-stories",
+      "cane",
     ],
   },
   {
@@ -914,6 +921,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-cabala",
       "reuben-sachs",
       "the-sun-also-rises",
+      "the-man-of-property",
+      "the-awakening",
+      "theresa-raquin",
     ],
   },
   {
@@ -975,6 +985,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-cabala",
       "reuben-sachs",
       "the-sun-also-rises",
+      "the-man-of-property",
+      "the-awakening",
+      "theresa-raquin",
     ],
   },
   {
@@ -1023,7 +1036,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "poison-tree": 5,
   "trooper-peter-halket": 4,
   "the-home-and-the-world": 2,
-  "where-angels-fear-to-tread": 2,
+  "where-angels-fear-to-tread": 4,
   "the-gadfly": 2,
   botchan: 5,
   "the-immoralist": 2,
@@ -1075,7 +1088,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-sun-also-rises": 5,
   "trooper-peter-halket-of-mashonaland": 5,
   "the-garden-party-and-other-stories": 5,
-  cane: 2,
+  cane: 4,
   "a-hero-of-our-time": 5,
   "strange-tales": 5,
   "short-stories-from-the-balkans": 5,
@@ -1125,7 +1138,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-jacket": 5,
   "the-job": 5,
   "the-magic-skin": 5,
-  "the-man-of-property": 5,
+  "the-man-of-property": 7,
   "the-napoleon-of-notting-hill": 5,
   "the-party-and-other-stories": 5,
   "the-pit": 5,

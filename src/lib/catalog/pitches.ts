@@ -100,6 +100,16 @@ export const PITCHES: Record<string, string> = {
     `The train that first carried me into Rome was late, across the Campagna in a Virgilian sigh, and this sit stops when the air of Naples generates legend. Wilder’s 1926 novel. The compartment comedy comes after. This is not The Bridge of San Luis Rey.`,
   "reuben-sachs":
     `Reuben Sachs was the pride of his family. His mother, safe in her investments, says he must marry money. Skip the chapter motto. Levy’s 1888 London.`,
+  "the-man-of-property":
+    `Those privileged to be present at a family festival of the Forsytes have seen an upper middle-class family in full plumage. The sit runs through Aunt Ann’s grey hat. Galsworthy’s 1906 novel, Volume 1 only.`,
+  "theresa-raquin":
+    `The Arcade of the Pont Neuf is a damp corridor of dumpy shops. Skip the translator’s preface. Vizetelly’s English of Zola’s 1867 novel continues. This is not Bel-Ami.`,
+  "where-angels-fear-to-tread":
+    `Charing Cross chaos — Lilia laughing like royalty while Philip floods her with little towns to see: Gubbio, Pienza, Monteriano. The sit stops on the foot-warmer. The short novel continues.`,
+  cane:
+    `Karintha: her skin is like dusk on the eastern horizon. Skip the foreword. This sit is Karintha only — later Georgia sketches are later sits.`,
+  "the-awakening":
+    `A green and yellow parrot at Grand Isle keeps repeating Allez vous-en. The sit is the Pontellier gallery, Chapter I. The novel continues; the selected shorts stay out.`,
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
   "a-passage-to-india":

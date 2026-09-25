@@ -226,6 +226,11 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * of Mashonaland and The Garden Party (At the Bay I) are Rituals only.
  * Never Featured. Bridge stays Bridge. Blood and Sand stays Spain.
  * The Africa novel pile stays off Trooper. Bliss stays off this Garden Party sit.
+ * Fri 25 Sep 2026 ~2:04 noon CLEAR — The Man of Property leads Next
+ * (Galsworthy 1906, PG 2559, Volume 1). The Awakening and Theresa Raquin
+ * follow on Next. Where Angels Fear to Tread is For you only — not Next
+ * (Italy stays off this Next append). Cane is Rituals only, Karintha.
+ * Never Featured. Emmeline stays untouched. The morning Cabala queue stays.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -595,6 +600,12 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-cabala",
   "reuben-sachs",
   "the-sun-also-rises",
+  // Mira Fri 25 Sep 2026 ~2:04 noon CLEAR — Man of Property leads Next.
+  // Awakening and Theresa follow. Angels is For you, not this queue.
+  // Cane is Rituals (Karintha), not this queue. Never Featured.
+  "the-man-of-property",
+  "the-awakening",
+  "theresa-raquin",
 ] as const;
 
 /**
