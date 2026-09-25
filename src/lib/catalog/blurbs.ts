@@ -83,8 +83,6 @@ const BLURBS: Record<string, string> = {
     "Red-beard Isak carries the first sack up the long moor road. Worster’s English; the period word Lapp stays named for Sámi herders.",
   "nada-the-lily":
     "You ask for the youth of Umslopogaas — Haggard’s late-Victorian imperial romance, not a substitute for Zulu-authored history.",
-  madmen:
-    "Arlt’s Buenos Aires invents a prophet of chaos and the men who follow him.",
   gold:
     "Michael Gold’s Lower East Side childhood: tenements, hunger, and a street that never lets a boy stay innocent.",
   crime:
