@@ -159,22 +159,18 @@ export function ReadinessHero({
 
 export function YouRings({ rings }: { rings: RingStat[] }) {
   return (
-    <div className="grid grid-cols-2 gap-px bg-ink sm:grid-cols-5">
+    <section aria-label="Reading">
+      <div className="rail" role="list" aria-label="Reading">
       {rings.map((ring) => {
         const fill = RING_FILLS[ring.id] ?? "paper";
         const size = 72;
         const r = 28;
         const c = 2 * Math.PI * r;
-        const wide = ring.id === "lanes";
         return (
           <div
             key={ring.id}
-            className={cn(
-              "flex min-h-32 flex-col justify-between p-4 sm:min-h-36",
-              wide && "col-span-2 flex-row items-end gap-4 sm:col-span-1 sm:flex-col sm:items-stretch sm:gap-0",
-              fillClass(fill),
-              fillInk(fill),
-            )}
+            role="listitem"
+            className={cn("you-tile is-spread", fillClass(fill), fillInk(fill))}
           >
             <svg
               viewBox={`0 0 ${size} ${size}`}
@@ -210,7 +206,8 @@ export function YouRings({ rings }: { rings: RingStat[] }) {
           </div>
         );
       })}
-    </div>
+      </div>
+    </section>
   );
 }
 
@@ -261,7 +258,7 @@ export function ActiveReading({ reading }: { reading: ReadingStats }) {
   return (
     <section>
       <p className="border-b border-ink px-4 py-3 type-kicker text-muted">Active reading</p>
-      <div className="grid grid-cols-2 gap-px bg-ink">
+      <div className="rail" role="list" aria-label="Active reading">
         <CountCell
           fill="yellow"
           label="Breaths today"
@@ -299,11 +296,8 @@ function StringCell({
 }) {
   return (
     <div
-      className={cn(
-        "flex min-h-28 flex-col justify-end p-4 sm:min-h-32 sm:p-5",
-        fillClass(fill),
-        fillInk(fill),
-      )}
+      role="listitem"
+      className={cn("you-tile", fillClass(fill), fillInk(fill))}
     >
       <span className="type-kicker opacity-80">{label}</span>
       <span className="mt-1 type-lede">{value}</span>
@@ -323,13 +317,13 @@ export function InsightStrip({
     .map((row) => row.label)
     .join(" · ");
   return (
-    <div className="grid grid-cols-1 gap-px bg-ink sm:grid-cols-3">
-      <div className="flex min-h-28 flex-col justify-end bg-paper p-4 text-ink sm:min-h-32 sm:p-5">
+    <div className="rail" role="list" aria-label="Rhythm">
+      <div role="listitem" className="you-tile bg-paper text-ink">
         <span className="type-kicker text-muted">Streak</span>
         <span className="mt-1 type-lede">{reading.streak || "—"}</span>
         <span className="mt-1 font-sans text-xs text-ink/65">{streakLine(reading.streak)}</span>
       </div>
-      <div className="flex min-h-28 flex-col justify-end bg-blue p-4 text-paper sm:min-h-32 sm:p-5">
+      <div role="listitem" className="you-tile bg-blue text-paper">
         <span className="type-kicker opacity-80">When</span>
         <span className="mt-1 type-lede">{hour?.label ?? "Not yet"}</span>
         <span className="mt-1 font-sans text-xs opacity-75">
@@ -338,7 +332,7 @@ export function InsightStrip({
             : "Before sleep, waking, unwind — after a sit"}
         </span>
       </div>
-      <div className="flex min-h-28 flex-col justify-end bg-forest p-4 text-paper sm:min-h-32 sm:p-5">
+      <div role="listitem" className="you-tile bg-forest text-paper">
         <span className="type-kicker opacity-80">Pace</span>
         <span className="mt-1 type-lede">{reading.pace.label}</span>
         <span className="mt-1 font-sans text-xs opacity-75">{reading.pace.detail}</span>
@@ -367,40 +361,40 @@ function CountCell({
       <span className="mt-1 font-sans text-xs opacity-70">{hint}</span>
     </>
   );
-  const className = cn(
-    "flex min-h-28 flex-col justify-end p-4 sm:min-h-32 sm:p-5",
-    fillClass(fill),
-    fillInk(fill),
-  );
+  const className = cn("you-tile", fillClass(fill), fillInk(fill));
   if (to === "/profile/collection") {
     return (
-      <Link to="/profile/collection" className={className}>
+      <Link to="/profile/collection" role="listitem" className={className}>
         {inner}
       </Link>
     );
   }
   if (to === "/friends") {
     return (
-      <Link to="/friends" preload="intent" className={className}>
+      <Link to="/friends" preload="intent" role="listitem" className={className}>
         {inner}
       </Link>
     );
   }
   if (to === "/together") {
     return (
-      <Link to="/together" className={className}>
+      <Link to="/together" role="listitem" className={className}>
         {inner}
       </Link>
     );
   }
-  return <div className={className}>{inner}</div>;
+  return (
+    <div role="listitem" className={className}>
+      {inner}
+    </div>
+  );
 }
 
 export function YouBreakdown({ reading }: { reading: ReadingStats }) {
   return (
     <section>
       <p className="border-b border-ink px-4 py-3 type-kicker text-muted">Shelf</p>
-      <div className="grid grid-cols-2 gap-px bg-ink sm:grid-cols-3">
+      <div className="rail" role="list" aria-label="Shelf">
         <CountCell
           fill="yellow"
           label="On the desk"
@@ -451,21 +445,25 @@ export function DeskStrip({ works }: { works: DeskWork[] }) {
   return (
     <section>
       <p className="border-b border-ink px-4 py-3 type-kicker text-muted">On the desk</p>
-      {works.map((work) => (
-        <Link
-          key={work.id}
-          to="/read/$workId"
-          params={{ workId: work.id }}
-          search={{ at: work.breathIndex }}
-          className="flex items-stretch border-b border-ink"
-        >
-          <span className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5">
-            <span className="type-kicker text-muted">{work.author}</span>
-            <span className="mt-1 type-lede">{work.title}</span>
-          </span>
-          <span className="flex items-center px-4 font-sans text-sm text-ink/70">Sit</span>
-        </Link>
-      ))}
+      <div className="rail" role="list" aria-label="On the desk">
+        {works.map((work, i) => {
+          const fill = WEEK_FILLS[i % WEEK_FILLS.length] ?? "paper";
+          return (
+            <Link
+              key={work.id}
+              to="/read/$workId"
+              params={{ workId: work.id }}
+              search={{ at: work.breathIndex }}
+              role="listitem"
+              className={cn("you-tile is-wide", fillClass(fill), fillInk(fill))}
+            >
+              <span className="type-kicker opacity-80">{work.author}</span>
+              <span className="mt-1 type-lede">{work.title}</span>
+              <span className="mt-2 font-sans text-xs opacity-75">Sit</span>
+            </Link>
+          );
+        })}
+      </div>
     </section>
   );
 }
@@ -488,36 +486,39 @@ export function YouActivity({
   return (
     <section>
       <p className="border-b border-ink px-4 py-3 type-kicker text-muted">Recent</p>
+      <div className="rail" role="list" aria-label="Recent">
       {items.map((item, i) => {
+        const fill = WEEK_FILLS[i % WEEK_FILLS.length] ?? "paper";
         const body = (
           <>
-            <span className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5">
-              <span className="type-kicker text-muted">
-                {KIND_LABEL[item.kind]} · {formatActivityWhen(item.at, now)}
-              </span>
-              <span className="mt-1 type-lede">{item.title}</span>
-              <span className="mt-1 font-serif text-sm text-ink/70">{item.detail}</span>
+            <span className="type-kicker opacity-80">
+              {KIND_LABEL[item.kind]} · {formatActivityWhen(item.at, now)}
             </span>
+            <span className="mt-1 type-lede">{item.title}</span>
+            <span className="mt-1 font-serif text-sm opacity-75">{item.detail}</span>
           </>
         );
+        const className = cn("you-tile is-wide", fillClass(fill), fillInk(fill));
         if (item.workId) {
           return (
             <Link
               key={`${item.kind}-${item.at}-${item.workId}-${i}`}
               to="/read/$workId"
               params={{ workId: item.workId }}
-              className="flex items-stretch border-b border-ink"
+              role="listitem"
+              className={className}
             >
               {body}
             </Link>
           );
         }
         return (
-          <div key={`${item.kind}-${item.at}-${i}`} className="flex items-stretch border-b border-ink">
+          <div key={`${item.kind}-${item.at}-${i}`} role="listitem" className={className}>
             {body}
           </div>
         );
       })}
+      </div>
     </section>
   );
 }
@@ -527,18 +528,15 @@ export function LaneStrip({ lanes }: { lanes: LaneCount[] }) {
   return (
     <section>
       <p className="border-b border-ink px-4 py-3 type-kicker text-muted">Rituals used</p>
-      <div className="flex flex-wrap gap-px bg-ink">
+      <div className="rail" role="list" aria-label="Rituals used">
         {lanes.map((lane, i) => {
           const fill = WEEK_FILLS[i % WEEK_FILLS.length] ?? "paper";
           return (
             <Link
               key={lane.id}
               to="/rituals"
-              className={cn(
-                "flex min-h-16 min-w-28 flex-1 flex-col justify-end px-4 py-3",
-                fillClass(fill),
-                fillInk(fill),
-              )}
+              role="listitem"
+              className={cn("you-tile is-lane", fillClass(fill), fillInk(fill))}
             >
               <span className="type-kicker opacity-75">{lane.count === 1 ? "1 work" : `${lane.count} works`}</span>
               <span className="mt-1 type-card">{lane.label}</span>
@@ -562,8 +560,8 @@ export function YouEmptyInvite({
   return (
     <section>
       <p className="border-b border-ink px-4 py-3 type-kicker text-muted">Begin</p>
-      <div className="grid grid-cols-1 gap-px bg-ink sm:grid-cols-2">
-        <div className="flex min-h-28 flex-col justify-end bg-yellow p-4 text-ink sm:min-h-32 sm:p-5">
+      <div className="rail" role="list" aria-label="Begin">
+        <div role="listitem" className="you-tile is-half bg-yellow text-ink">
           <span className="type-kicker opacity-80">{label}</span>
           <span className="mt-1 type-lede">{line}</span>
         </div>
@@ -571,17 +569,15 @@ export function YouEmptyInvite({
           <Link
             to="/read/$workId"
             params={{ workId }}
-            className="flex min-h-28 flex-col justify-end bg-red p-4 text-paper sm:min-h-32 sm:p-5"
+            role="listitem"
+            className="you-tile is-half bg-red text-paper"
           >
             <span className="type-kicker opacity-80">First sit</span>
             <span className="mt-1 type-lede">Open a page</span>
             <span className="mt-2 font-sans text-sm opacity-80">Sit</span>
           </Link>
         ) : (
-          <Link
-            to="/rituals"
-            className="flex min-h-28 flex-col justify-end bg-red p-4 text-paper sm:min-h-32 sm:p-5"
-          >
+          <Link to="/rituals" role="listitem" className="you-tile is-half bg-red text-paper">
             <span className="type-kicker opacity-80">Rituals</span>
             <span className="mt-1 type-lede">Open a timed sit</span>
           </Link>

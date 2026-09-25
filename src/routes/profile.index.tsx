@@ -327,7 +327,7 @@ function ProfileBody({
           </Link>
         ) : null}
       </header>
-      <div className="min-h-0 flex-1 overflow-y-auto">
+      <div className="min-h-0 min-w-0 flex-1 overflow-x-clip overflow-y-auto">
         {!hydrated ? (
           <div className="grid grid-cols-2 gap-px bg-ink sm:grid-cols-4">
             <div className="min-h-40 bg-ink sm:min-h-48" />
@@ -413,8 +413,8 @@ function ProfileBody({
               <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
                 For now
               </p>
-              <div className="grid grid-cols-1 gap-px bg-ink sm:grid-cols-2">
-                <div className="flex min-h-28 flex-col justify-end bg-yellow p-4 text-ink sm:min-h-32 sm:p-5">
+              <div className="rail" role="list" aria-label="For now">
+                <div role="listitem" className="you-tile is-half bg-yellow text-ink">
                   <span className="type-kicker opacity-80">{prompt.label}</span>
                   <span className="mt-1 type-lede">
                     {prompt.line}
@@ -424,7 +424,8 @@ function ProfileBody({
                   <Link
                     to="/read/$workId"
                     params={{ workId: prompt.work.id }}
-                    className="flex min-h-28 flex-col justify-end bg-blue p-4 text-paper sm:min-h-32 sm:p-5"
+                    role="listitem"
+                    className="you-tile is-half bg-blue text-paper"
                   >
                     <span className="type-kicker opacity-80">
                       {prompt.work.author}
@@ -437,7 +438,8 @@ function ProfileBody({
                 ) : (
                   <Link
                     to="/rituals"
-                    className="flex min-h-28 flex-col justify-end bg-blue p-4 text-paper sm:min-h-32 sm:p-5"
+                    role="listitem"
+                    className="you-tile is-half bg-blue text-paper"
                   >
                     <span className="type-kicker opacity-80">Rituals</span>
                     <span className="mt-1 type-lede">
@@ -454,6 +456,7 @@ function ProfileBody({
           ids={favorites}
           hydrated={hydrated}
           preview
+          rail
           heading="Favorites"
           empty="Heart a work while reading — it will live here."
         />
@@ -462,6 +465,7 @@ function ProfileBody({
           progress={progress}
           hydrated={hydrated}
           preview
+          rail
           empty="Tap Keep on a sentence. It will live in your collection."
         />
 
@@ -485,40 +489,39 @@ function ProfileBody({
               <span className="font-sans text-sm">Together</span>
             </Link>
           ) : (
-            mine.map((club) => (
-              <div
-                key={club.id}
-                className={cn(
-                  "flex items-stretch border-b border-ink",
-                  fillClass(club.fill),
-                  fillInk(club.fill),
-                )}
-              >
-                <Link
-                  to="/club/$clubId"
-                  params={{ clubId: club.id }}
-                  className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5"
+            <div className="rail" role="list" aria-label="Clubs">
+              {mine.map((club) => (
+                <div
+                  key={club.id}
+                  role="listitem"
+                  className={cn("you-tile is-wide is-flush", fillClass(club.fill), fillInk(club.fill))}
                 >
-                  <span className="type-kicker opacity-80">{club.place}</span>
-                  <span className="mt-1 type-lede">
-                    {club.name}
-                  </span>
-                </Link>
-                <Link
-                  to="/read/$workId"
-                  params={{ workId: club.workId }}
-                  search={{ pair: clubPair(club.id), sit: 0 }}
-                  className={cn(
-                    "inline-flex shrink-0 items-center px-4 font-sans text-sm",
-                    club.fill === "yellow" || club.fill === "paper"
-                      ? "bg-ink text-paper"
-                      : "bg-paper text-ink",
-                  )}
-                >
-                  Sit
-                </Link>
-              </div>
-            ))
+                  <Link
+                    to="/club/$clubId"
+                    params={{ clubId: club.id }}
+                    className="you-tile-link"
+                  >
+                    <span className="type-kicker opacity-80">{club.place}</span>
+                    <span className="mt-1 type-lede">
+                      {club.name}
+                    </span>
+                  </Link>
+                  <Link
+                    to="/read/$workId"
+                    params={{ workId: club.workId }}
+                    search={{ pair: clubPair(club.id), sit: 0 }}
+                    className={cn(
+                      "you-tile-action",
+                      club.fill === "yellow" || club.fill === "paper"
+                        ? "bg-ink text-paper"
+                        : "bg-paper text-ink",
+                    )}
+                  >
+                    Sit
+                  </Link>
+                </div>
+              ))}
+            </div>
           )}
         </section>
 
@@ -546,7 +549,7 @@ function ProfileBody({
             <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
               A sitting
             </p>
-            <div className="grid grid-cols-3 gap-px bg-ink sm:grid-cols-6">
+            <div className="rail" role="list" aria-label="A sitting">
               {SIT_PRESETS.map((option, i) => {
                 const fills = [
                   "bg-red text-paper",
@@ -560,9 +563,10 @@ function ProfileBody({
                   <button
                     key={option.minutes}
                     type="button"
+                    role="listitem"
                     onClick={() => setSit(option.minutes)}
                     className={cn(
-                      "flex min-h-20 flex-col justify-end p-3 text-left font-sans text-sm sm:min-h-24 sm:p-4",
+                      "you-tile is-sit font-sans text-sm",
                       fills[i % fills.length],
                       sit === option.minutes ? "opacity-100" : "opacity-55",
                     )}

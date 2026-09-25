@@ -4,7 +4,8 @@ import { CollectionHeader } from "@/components/collection-header";
 import { SalonCardShare } from "@/components/salon-card-share";
 import { keptRefs } from "@/lib/continuity";
 import { YOU_PREVIEW } from "@/lib/favorites";
-import { boardWork } from "@/lib/mondrian";
+import { boardWork, fillClass, fillInk, mosaicFills } from "@/lib/mondrian";
+import { cn } from "@/lib/utils";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { loadWork, peekWork } from "@/lib/works";
 import type { WorkProgress } from "@/lib/store";
@@ -95,6 +96,7 @@ export function KeptSentences({
   progress,
   hydrated,
   preview = false,
+  rail = false,
   heading = "Kept",
   empty = "Tap Keep on a sentence. It will live here, on You.",
   sectionId,
@@ -102,6 +104,8 @@ export function KeptSentences({
   progress: Record<string, WorkProgress>;
   hydrated: boolean;
   preview?: boolean;
+  /** You page: one horizontal snap row. The collection stays a vertical shelf. */
+  rail?: boolean;
   heading?: string;
   empty?: string;
   sectionId?: string;
@@ -113,6 +117,7 @@ export function KeptSentences({
     return keptRefs(progress, Number.POSITIVE_INFINITY).length;
   }, [hydrated, progress]);
   const hidden = preview ? Math.max(0, keptCount - lines.length) : 0;
+  const fills = mosaicFills(lines.length + (hidden > 0 ? 1 : 0), "kept");
 
   return (
     <section id={sectionId}>
@@ -127,6 +132,58 @@ export function KeptSentences({
         <p className="border-b border-ink px-4 py-5 font-serif text-lg text-ink/80">
           {empty}
         </p>
+      ) : rail ? (
+        <div className="rail" role="list" aria-label={heading}>
+          {lines.map((line, i) => {
+            const fill = fills[i] ?? "paper";
+            const ink = fill === "yellow" || fill === "paper";
+            return (
+              <div
+                key={`${line.workId}-${line.breathId}`}
+                role="listitem"
+                className={cn("you-tile is-quote", fillClass(fill), fillInk(fill))}
+              >
+                <Link
+                  to="/read/$workId"
+                  params={{ workId: line.workId }}
+                  search={{ at: line.at }}
+                  className="you-tile-link"
+                >
+                  <p className="type-lede italic leading-snug">{line.text}</p>
+                  <p className="mt-2 type-kicker opacity-80">
+                    {line.title}
+                    {line.author ? ` · ${line.author}` : ""}
+                  </p>
+                </Link>
+                <SalonCardShare
+                  workId={line.workId}
+                  at={line.at}
+                  text={line.text}
+                  title={line.title}
+                  author={line.author}
+                  className={cn(
+                    "h-12 w-full shrink-0 border-t border-ink",
+                    ink ? "bg-ink text-paper" : "bg-paper text-ink",
+                  )}
+                />
+              </div>
+            );
+          })}
+          {hidden > 0 ? (
+            <Link
+              to="/profile/collection"
+              hash="lines"
+              role="listitem"
+              className="you-tile is-quote bg-ink text-paper"
+            >
+              <span className="type-kicker opacity-80">Collection</span>
+              <span className="mt-1 type-lede">
+                {hidden === 1 ? "One more line" : `${hidden} more lines`}
+              </span>
+              <span className="mt-2 font-sans text-sm opacity-80">See all</span>
+            </Link>
+          ) : null}
+        </div>
       ) : (
         <>
           {lines.map((line) => (
