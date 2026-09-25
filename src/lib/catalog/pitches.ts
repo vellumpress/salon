@@ -95,7 +95,11 @@ export const PITCHES: Record<string, string> = {
   "in-our-time":
     `A drunk battery on a dark road—then a Michigan lake at dawn, and Nick Adams in a rowboat with his father. Ernest Hemingway’s 1925 American collection opens with a war vignette snapped against “Indian Camp”: spare sentences, long silences, the method already underway.`,
   "the-sun-also-rises":
-    `Paris cafés, Burguete trout, Pamplona heat — Jake Barnes narrating what he cannot touch, Brett Ashley walking in with the wrong crowd. Ernest Hemingway’s 1926 novel opens on Robert Cohn, still boxing ghosts from Princeton, before the fiesta has even started.`,
+    `Robert Cohn was once middleweight boxing champion of Princeton. Spider Kelly flattens his nose, and this sit stops there. Skip the Stein and Ecclesiastes lines. Hemingway’s 1926 novel reopens into the Paris café. This is not Blood and Sand.`,
+  "the-cabala":
+    `The train that first carried me into Rome was late, across the Campagna in a Virgilian sigh, and this sit stops when the air of Naples generates legend. Wilder’s 1926 novel. The compartment comedy comes after. This is not The Bridge of San Luis Rey.`,
+  "reuben-sachs":
+    `Reuben Sachs was the pride of his family. His mother, safe in her investments, says he must marry money. Skip the chapter motto. Levy’s 1888 London.`,
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
   "a-passage-to-india":

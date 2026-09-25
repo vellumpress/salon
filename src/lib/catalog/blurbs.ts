@@ -53,6 +53,8 @@ const BLURBS: Record<string, string> = {
     "The harbour sounds the note of departure: the only thing to do was to fit all this into a book.",
   "poison-tree":
     "His wife makes him promise: if a storm rises, leave the boat—and on the Ganges in Joisto the weather keeps that promise.",
+  "trooper-peter-halket-of-mashonaland":
+    "A dark night on a Mashonaland kopje, a quivering fire, and a burnt kraal already in the dark.",
   "trooper-peter-halket":
     "Alone on a kopje with a fire that only quivers—Trooper Peter Halket has lost his column, and the dark starts inventing fortunes for him.",
   "the-home-and-the-world":
@@ -230,7 +232,9 @@ const BLURBS: Record<string, string> = {
   "the-bridge-of-san-luis-rey":
     "Five travellers fall from a Peruvian bridge — Wilder asks whether those lives were accident or intention.",
   "the-sun-also-rises":
-    "Paris cafés, Pamplona heat, and Jake Barnes narrating what he cannot touch.",
+    "Robert Cohn was once Princeton’s middleweight, and the sit stops at his flattened nose.",
+  "the-cabala":
+    "The train into Rome is late across the Campagna, and the air of Naples generates legend.",
   "lolly-willowes":
     "Caroline’s spare room lands on “Of course, you will come to us,” and the sit stays in Chapter I.",
   "plum-bun":
@@ -363,7 +367,7 @@ const BLURBS: Record<string, string> = {
     "Lowell’s lacquer prints and quiet looking — Japan as color, surface, and pause.",
   silhouettes: "Symons at Dieppe and other soft-focus shores.",
   "the-garden-party-and-other-stories":
-    "Mansfield mornings: party light, then a turn toward the lane you weren’t meant to notice.",
+    "Very early morning, Crescent Bay lies under a white sea-mist until the shepherd is out of sight.",
   "bliss-and-other-stories":
     "Mansfield rooms where the furniture shimmers and then stings.",
   "body-of-this-death":
@@ -658,7 +662,7 @@ const BLURBS: Record<string, string> = {
   "the-king-of-schnorrers-grotesques-and-fantasies":
     "Zangwill’s beggar-king of London Jews — comedy with a ledger.",
   "ghetto-comedies": "More Zangwill: the East End as a theater that bills itself as life.",
-  "reuben-sachs": "Amy Levy’s Anglo-Jewish London, unsentimental about the marriage market.",
+  "reuben-sachs": "Reuben Sachs was the pride of his family, and his mother says he must marry money.",
   "the-romance-of-a-shop": "Four sisters open a photography shop and try to live by the work.",
   "the-heavenly-twins": "Sarah Grand’s New Woman novel: marriage as a public health problem.",
   "the-beth-book": "A girl artist against the available script for daughters.",

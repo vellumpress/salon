@@ -1,0 +1,36 @@
+{
+  "id": "trooper-peter-halket-of-mashonaland",
+  "title": "Trooper Peter Halket of Mashonaland",
+  "author": "Olive Schreiner",
+  "year": "1897",
+  "note": "Project Gutenberg 1431.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "It was a dark night; a chill breath was coming from the east; not enough to disturb the blaze of Trooper Peter Halket’s fire, yet enough to make it quiver. He sat alone beside it on the top of a kopje",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was a dark night; a chill breath was coming from the east; not enough to disturb the blaze of Trooper Peter Halket’s fire, yet enough to make it quiver. He sat alone beside it on the top of a kopje."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "All about was an impenetrable darkness; not a star was visible in the black curve over his head."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "He had been travelling with a dozen men who were taking provisions of mealies and rice to the next camp. He had been sent out to act as scout along a low range of hills, and had lost his way. Since eight in the morning he had wandered among long grasses, and ironstone kopjes, and stunted bush, and had come upon no sign of human habitation, but the remains of a burnt kraal, and a down-trampled and now uncultivated mealie field, where a month before the Chartered Company’s forces had destroyed a native settlement."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "the-cabala",
+  "title": "The Cabala",
+  "author": "Thornton Wilder",
+  "year": "1926",
+  "note": "Project Gutenberg 68105.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Book One · First Encounters",
+      "place": "Book One · First Encounters",
+      "reentry": "The train that first carried me into Rome was late, overcrowded and cold. There had been several unexplained waits in an open field, and midnight found us still moving slowly across the Campagna towar",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The train that first carried me into Rome was late, overcrowded and cold. There had been several unexplained waits in an open field, and midnight found us still moving slowly across the Campagna toward the faintly-colored clouds that hung above Rome. At intervals we stopped at platforms where flaring lamps lit up for a moment some splendid weather-moulded head. Darkness surrounded these platforms, save for glimpses of a road and the dim outlines of a mountain ridge. It was Virgil's country and there was a wind that seemed to rise from the fields and descend upon us in a long Virgilian sigh, for the land that has inspired sentiment in the poet ultimately receives its sentiment from him."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The train was overcrowded, because some tourists had discovered on the previous day that the beggars of Naples smelt of carbolic acid. They concluded at once that the authorities had struck a case or two of Indian cholera and were disinfecting the underworld by a system of enforced baths. The air of Naples generates legend."
+    }
+  ]
+}
