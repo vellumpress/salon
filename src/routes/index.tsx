@@ -3,7 +3,7 @@ import { useEffect, useMemo } from "react";
 import { DailyScoreChip } from "@/components/daily-score-chip";
 import { ResumeLink, useLastRead, usePersistHydrated } from "@/components/resume-link";
 import { YouFriendsMark } from "@/components/you-friends-mark";
-import { AdaptedStrip } from "@/components/adapted-strip";
+import { CuratedStrip } from "@/components/curated-strip";
 import { WorksStrip } from "@/components/works-strip";
 import {
   ShelfSearchBar,
@@ -60,7 +60,7 @@ function Home() {
   useEffect(() => {
     void router.preloadRoute({ to: "/login" });
     void router.preloadRoute({ to: "/rituals" });
-    void router.preloadRoute({ to: "/adapted" });
+    void router.preloadRoute({ to: "/curated" });
     void router.preloadRoute({ to: "/together" });
     void router.preloadRoute({ to: "/friends" });
     void router.preloadRoute({ to: "/shuffle", search: { together: true } });
@@ -156,7 +156,7 @@ function Home() {
             );
           })}
 
-          <AdaptedStrip />
+          <CuratedStrip />
           <WorksStrip />
         </>
       )}

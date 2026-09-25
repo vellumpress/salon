@@ -401,19 +401,19 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   );
 });
 
-test("homepage Adapted surface is a gateway, not a drifting remake strip", () => {
-  const src = readFileSync(new URL("../../components/adapted-strip.tsx", import.meta.url), "utf8");
+test("homepage Curated surface is a gateway; Adapted stays a deep link", () => {
+  const src = readFileSync(new URL("../../components/curated-strip.tsx", import.meta.url), "utf8");
   const home = readFileSync(new URL("../../routes/index.tsx", import.meta.url), "utf8");
   const lane = readFileSync(new URL("../../routes/adapted.tsx", import.meta.url), "utf8");
   const css = readFileSync(new URL("../../styles.css", import.meta.url), "utf8");
 
-  assert.match(src, /to=["']\/adapted["']/);
-  assert.match(src, /ADAPTED_WORKS/);
+  assert.match(src, /to=["']\/curated["']/);
+  assert.doesNotMatch(src, /to=["']\/adapted["']/);
   assert.doesNotMatch(src, /STRIP_DRIFT|stripDriftDelta|stripItems|adapted-scroller/);
   assert.doesNotMatch(src, /to=["']\/read\/\$workId["']/);
-  assert.doesNotMatch(src, /FEATURED_CAROUSEL|NEXT_FEATURED|CLASSIC_LOCAL_WORKS/);
-  assert.doesNotMatch(home, /FeaturedStrip|featured-strip|cell-featured|Featured/);
-  assert.match(home, /<AdaptedStrip \/>/);
+  assert.doesNotMatch(src, /FEATURED_CAROUSEL|NEXT_FEATURED|CLASSIC_LOCAL_WORKS|ADAPTED_WORKS/);
+  assert.doesNotMatch(home, /FeaturedStrip|featured-strip|cell-featured|Featured|AdaptedStrip/);
+  assert.match(home, /<CuratedStrip \/>/);
   assert.match(home, /Rituals/);
   assert.match(home, /Read together/);
   assert.doesNotMatch(css, /\.cell-featured|\.featured-kicker/);
