@@ -327,21 +327,23 @@ html.together-compose.together-kb .chat-slot {
   -webkit-overflow-scrolling: touch;
 }
 
-/* Friends rails hug their text. Two iPhone bugs stacked here:
-   a length flex-basis on a column tile was read as height, and a row
-   flex that is also overflow-y:hidden stretches to the friends
-   scrollport — an ink plate under the cards. The clip is the scrollport
-   (a block). The hug row is not, so its height stays the cards. */
+/* Friends carousels. `.rail` is an ink-backed flex scrollport; on iPhone that
+   row is stretched to the friends scrollport and the ink paints a void under
+   the cards. These rails are not `.rail`. The clip is the only scrollport and
+   its background is paper. The row does not scroll and does not paint ink.
+   JS pins both heights to the tallest card so the stretch cannot survive. */
 .rail-clip {
   width: 100%;
   max-width: 100%;
   min-width: 0;
+  min-height: 0;
+  height: auto;
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  background: transparent;
+  background: var(--color-paper);
   -webkit-overflow-scrolling: touch;
 }
 
@@ -349,32 +351,36 @@ html.together-compose.together-kb .chat-slot {
   display: none;
 }
 
-.rail.hug {
+.rail-hug {
+  display: flex;
+  flex-flow: row nowrap;
   align-items: flex-start;
   align-content: flex-start;
-}
-
-.rail-clip > .rail.hug {
   width: max-content;
   min-width: 100%;
   max-width: none;
   height: auto;
-  max-height: max-content;
+  min-height: 0;
   overflow: visible;
   scroll-snap-type: none;
+  background: var(--color-paper);
 }
 
-.rail.hug > .you-tile,
-.rail.hug > .you-tile:only-child {
+.rail-clip > .rail-hug > .you-tile,
+.rail-clip > .rail-hug > .you-tile:only-child {
   align-self: flex-start;
   /* Grow along the row only. A length flex-basis was read as height on iPhone. */
   flex: 1 0 auto;
   height: auto;
   min-height: 0;
-  max-height: max-content;
+  max-height: none;
 }
 
-.rail.hug > .you-tile > .you-tile-link {
+.rail-clip > .rail-hug > .you-tile + .you-tile {
+  border-left: 1px solid var(--color-ink);
+}
+
+.rail-clip > .rail-hug > .you-tile > .you-tile-link {
   flex: 0 1 auto;
   min-height: 0;
   height: auto;
