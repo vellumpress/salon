@@ -317,12 +317,32 @@ html.together-compose.together-kb .chat-slot {
   width: 100%;
   min-width: 0;
   max-width: 100%;
+  height: auto;
   overflow-x: auto;
+  overflow-y: hidden;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   background: var(--color-ink);
   -webkit-overflow-scrolling: touch;
+}
+
+/* Friends rails hug their text. A length flex-basis on a column tile was
+   read as height on iPhone and left an empty color plate. */
+.rail.hug {
+  align-items: flex-start;
+}
+
+.rail.hug > .you-tile {
+  align-self: flex-start;
+  height: auto;
+  min-height: 0;
+}
+
+.rail.hug > .you-tile > .you-tile-link {
+  flex: 0 1 auto;
+  min-height: 0;
+  height: auto;
 }
 
 .rail::-webkit-scrollbar {
@@ -612,10 +632,12 @@ html.together-compose.together-kb .chat-slot {
    the next tile peeks. */
 .you-tile {
   display: flex;
-  flex: 1 0 10.75rem;
+  flex: 1 0 auto;
   flex-direction: column;
   justify-content: flex-end;
+  width: 10.75rem;
   min-width: 10.75rem;
+  height: auto;
   min-height: 8.15rem;
   scroll-snap-align: start;
   padding: 0.9rem 1rem 1rem;
@@ -631,24 +653,25 @@ html.together-compose.together-kb .chat-slot {
 }
 
 .you-tile.is-wide {
-  flex-basis: 16.25rem;
+  width: 16.25rem;
   min-width: 16.25rem;
 }
 
 .you-tile.is-half {
-  flex: 1 0 11rem;
+  flex: 1 0 auto;
+  width: 11rem;
   min-width: 11rem;
 }
 
 .you-tile.is-lane {
-  flex-basis: 9.25rem;
+  width: 9.25rem;
   min-width: 9.25rem;
   min-height: 5.5rem;
   padding: 0.75rem 1rem;
 }
 
 .you-tile.is-sit {
-  flex-basis: 7.5rem;
+  width: 7.5rem;
   min-width: 7.5rem;
   min-height: 5.5rem;
   padding: 0.75rem;
@@ -656,11 +679,36 @@ html.together-compose.together-kb .chat-slot {
 }
 
 .you-tile.is-quote {
-  flex-basis: 17.5rem;
+  width: 17.5rem;
   min-width: 17.5rem;
   min-height: 11rem;
   justify-content: space-between;
   padding: 0;
+}
+
+.friends-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  border-bottom: 1px solid var(--color-ink);
+  background: var(--color-ink);
+}
+
+.friends-action {
+  display: flex;
+  min-height: 4.75rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 0;
+  padding: 0.85rem 1rem 1rem;
+  text-align: left;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .friends-actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .rail > .you-tile:only-child {
