@@ -253,6 +253,20 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * morning Cabala stay ahead. Soft guards hold: Java ≠ Hague; Bengal house
  * ≠ Anandamath; Kristiania ≠ Growth of the Soil; Marygreen ≠ Tess;
  * Araby ≠ Irish Fairy Tales.
+ * Mira Fri 25 Sep 2026 ~6PM CLEAR — Recommend only, never Featured.
+ * A High Wind in Jamaica leads this cycle’s Next append (Emancipation ruins,
+ * Derby Hill, then Ferndale, PG 75530, 1929). Period racial language in the
+ * sit is flagged and not sanitized. Vera follows (garden gate, PG 34366,
+ * 1921), then Futility (Simbirsk vanish and the dirty table-cloth, Wharton
+ * preface out of the bind, PG 77253, 1922), then The Comedienne (Bukowiec,
+ * Obecny English, PG 25760, PL 1896). Strange Stories from a Chinese Studio
+ * is Rituals only for this cycle — The Painted Wall, Giles English 1880,
+ * PG 43629 — and keeps its earlier Next seat. It is not For you. Futility
+ * leaves For you for this Next seat. Cold-open stays
+ * Mirth → Quicksand → Botchan. Evening Hidden Force, afternoon Confusion,
+ * noon Man of Property, morning Cabala, and Emmeline stay ahead and untouched.
+ * Soft guards hold: High Wind novel ≠ Anansi folk; Vera ≠ Enchanted April;
+ * Futility ≠ Hunger; Comedienne ≠ Peasants; Painted Wall ≠ Kwaidan.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -642,6 +656,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-home-and-the-world",
   "hunger",
   "jude-the-obscure",
+  // Mira Fri 25 Sep 2026 ~6PM CLEAR — High Wind leads Next.
+  // Vera, Futility, and The Comedienne follow. Strange Tales is Rituals
+  // (The Painted Wall only) and keeps its earlier Next seat, not this tail.
+  // Never Featured. Evening, afternoon, noon, and morning packs stay ahead.
+  "high-wind-jamaica",
+  "vera",
+  "futility",
+  "the-comedienne",
 ] as const;
 
 /**

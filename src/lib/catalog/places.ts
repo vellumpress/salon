@@ -65,7 +65,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "noli-me-tangere": { label: "Manila", region: "ph" },
   vera: { label: "Cornwall", region: "gb" },
   "on-a-chinese-screen": { label: "China", region: "cn" },
-  futility: { label: "Petersburg coast", region: "ru" },
+  futility: { label: "Simbirsk", region: "ru" },
   "poison-tree": { label: "Bengal", region: "in" },
   "trooper-peter-halket": { label: "Mashonaland", region: "za" },
   "the-home-and-the-world": { label: "Bengal", region: "in" },

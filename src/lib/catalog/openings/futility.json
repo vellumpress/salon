@@ -1,0 +1,186 @@
+{
+  "id": "futility",
+  "title": "Futility",
+  "author": "William Gerhardie",
+  "year": "1922",
+  "note": "Project Gutenberg 77253. Host: Part I Simbirsk vanish / dirty table-cloth (Wharton preface skipped).",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · hotel after Simbirsk",
+      "place": "Part I · hotel after Simbirsk",
+      "reentry": "When the *Simbirsk*, of the Russian Volunteer Fleet, had at last completely vanished, carrying away the three sisters to Shanghai, I came back to my room at the hotel. I had just moved in there. It wa",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "When the *Simbirsk*, of the Russian Volunteer Fleet, had at last completely vanished, carrying away the three sisters to Shanghai, I came back to my room at the hotel. I had just moved in there. It was a bare and dingy room in a small and shabby hostel. A bed was eventually provided, but in lieu of bed-sheets I was to lie on a dirty table-cloth which was to serve again as table-cloth next morning when I had my breakfast."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "“Is this sheet clean?” I asked."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "“Yes,” said the boy-attendant."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "“Quite clean?”"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "“Quite.”"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "“Sure nobody slept on it?”"
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "“Nobody. Only the boss.”"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Big drops like tears fell on the window-pane and instantly made room for others. A ruined writing-table stood in the corner. I sat down. I fingered a typically Russian pen with a no less typically Russian nib, such as one is likely to encounter in almost any Russian government department, and dipping it repeatedly into ink that was like syrup, I made a bold beginning."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "When night came I lay there on the table-cloth, hungry and worried by enormous hungry bugs that bit like dogs, and thought of Nina, Sonia, Vera, Nikolai Vasilievich and his unconventional family. In the morning the rain ceased."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "I paced the country, now in the embrace of autumn. I wandered in remote places by the sea, in the abandoned park that used to be a park essentially for lovers, and thought of them. Here the foliage was more dense, the corners more secluded, the disorder more magnificent. I sat on an old bench that had names and initials cut out with a pen-knife, under the trees turning gold and auburn, and shivered in the sharp autumn wind that sent the fallen yellow leaves whirling down the alley. And the vast sea of Russian life seemed to be closing over me...."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "It was somewhat in the manner of an Ibsen drama with retrospective revelations that I was initiated into the complicated affairs of the Bursanov family. I had been asked to call by the three sisters, all speaking simultaneously--a charming bouquet, the queen among whom I recognized only too well, and I called on them one evening in mid-summer at their *datcha*, at a sea-side place ten versts from Petersburg, a little bashful perhaps for I had not been invited by their elders; and I was met by the “bouquet” in the hall of the little wooden structure that hung out above the sea. They sprang out to me successively, introducing themselves in order of age."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "“Sonia!”"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "“Nina!”"
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "“Vera!”"
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "They were then sixteen, fifteen and fourteen. I think I had told them that day when I had first spoken to them that I could not for the life of me distinguish one from the other, and had deliberately mixed up their names. It was, of course, poor fun, but they, then almost children, had seemed grateful for it and giggled, possibly for want of anything better."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "I was led into a room full of people whose relationship I did not yet comprehend. By the presiding posture over the samovar I thought that I could recognize the mother, and I walked up to her, and she put me at my ease, talking Russian, I noticed, with an unmistakably German accent."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "“You don’t any of you resemble your mother very much,” I told Nina afterwards."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "“She is not our mother,” Nina said. “She is... Fanny Ivanovna.”"
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "I should not have thought that that youngish-looking, rather short but handsome man, well dressed but somewhat sluggish in his bearing, was their father, by the negligent, almost contemptuous manner in which his daughters treated him. But Nina called out “Papa!” and he turned round, and then I saw that she had his eyes, those steel-grey eyes softened by a charming, disquieting, side-long look that was hers to give; and every now and then she would look straight into your eyes--anybody’s eyes--down into your very soul, bathing her soul in your soul, causing you to feel as though you were indeed “the only man who really mattered in the world.”"
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "And Fanny Ivanovna pestered the life out of Nikolai Vasilievich (that was their father) by always asking silly questions, and Nikolai Vasilievich would look bored and sullen and would wave his hand at her as if she were a pestering fly and say:"
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "“Drop it!”"
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "Or he would imitate in an unkindly manner the preposterous way in which Fanny Ivanovna talked Russian. “*Elektrichno!* How often have I told you that it’s *elektrichestvo*?”"
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "“It’s all the same,” said she."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "Then the three sisters insisted on dancing the one-step and the hesitation-waltz, at that time just coming into vogue abroad, while Nikolai Vasilievich was ordered to play some wretched tune on the piano over and over again. And I thought to myself: What a bouquet!"
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "The ravishing experiment over, it was suggested at dinner that we should all go to the local theatre to see Chehov’s *Three Sisters*."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "“Very well,” said Fanny Ivanovna, “but Nikolai Vasilievich must come with us. That is the condition.”"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "Nikolai Vasilievich frowned."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "“You’ll be too many in the box as it is.”"
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "“We can take two boxes,” I suggested."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "“There is no excuse, Nikolai,” cried Fanny Ivanovna. And a dark shadow flitted across the handsome face of Nikolai Vasilievich. But still I did not understand."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "It was not till the end of the second act of the *Three Sisters* that I had an inkling, my first intuition, that all was not well with the Bursanov family."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "You know the manner of Chehov’s writing. You know the people in his plays. It seems as though they had all been born on the line of demarcation between comedy and tragedy--in a kind of No Man’s Land. Fanny Ivanovna and the three sisters watched the play with intense interest, as if the *Three Sisters* were indeed their own particular tragedy. I sat behind Nina, and watched with that stupid scepticism that comes from too much happiness. To me, buoyant and impatient, the people in the play appeared preposterous. They annoyed me. They distressed me intensely. Their black melancholy, their incredible inefficiency, their paralysing inertia, crept over me. How different, I thought, were those three lovable creatures who sat in our box. How careless and free they were in their own happy home. The people in the play were hopeless."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "“Good God!” I cried and grasped Nikolai Vasilievich by the arm as the curtain fell upon the second act. “How can there be such people, Nikolai Vasilievich? Think of it! They can’t do what they want. They can’t get where they want. They don’t even know what they want. They talk, talk, talk, and then go off and commit suicide or something. It is a hysterical cry for greater efforts, for higher aims--which to themselves, mind you, are vague and unintelligible--and a perpetual standstill. It’s like Faust in Gounod’s opera who takes the hand of Marguerite in prison and cries, ‘We flee! We flee!’ while making no visible effort to quit the middle of the stage. Why can’t people know what they want in life and get it? Why can’t they, Nikolai Vasilievich?”"
+    }
+  ]
+}

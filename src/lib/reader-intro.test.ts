@@ -174,10 +174,10 @@ test("On the Seaboard opens on Goosestone bay, preface skipped", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track/i);
 });
 
-test("Futility uses the harbour open, preface skipped", () => {
+test("Futility uses the Simbirsk open, preface skipped", () => {
   const copy = readerIntro(shelfAsWork("futility"));
-  assert.match(copy, /harbour/);
-  assert.match(copy, /fit all this into a book/);
+  assert.match(copy, /Simbirsk/);
+  assert.match(copy, /table-cloth/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|Wharton/i);
 });
 

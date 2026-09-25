@@ -43,7 +43,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "a-hero-of-our-time":
     "Travelling post from Tiflis into the Koishaur Valley at sunset — a dukhan crowd and a caravan of camels. Imperial Caucasus violence in Bela; Host may name it, and don’t sanitize. Skip the translators’ foreword; the novel continues.",
   "strange-tales":
-    "A Kiang-si gentleman and Mr. Chu step into a monastery and find a painted wall. Skip the Giles introduction. Close when Chu enters the painted apartment; the studio continues.",
+    "A Kiang-si gentleman and Mr. Chu step into a monastery chapel and find a painted wall: Chih Kung, and a fairy picking flowers. Skip the Giles introduction. This sit is The Painted Wall only; the studio continues.",
   "short-stories-from-the-balkans":
     "Leiba Zibal waits under the roof at Podeni for a stage that is already an hour late. Easter Candles only — never Brother Cœlestin. A later pogrom densifies; do not open there.",
   "the-awakening":
@@ -182,7 +182,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   rashomon:
     `Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate. Akutagawa’s Kyoto opens on desolation before the crime story blooms.`,
   "high-wind-jamaica":
-    `This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant. Hughes’s 1929 voice already uses period racial language in this stretch, and a sharper racial gaze continues immediately after tbr’s stop. We end at the plant on purpose so the timed sit stays bounded; if you Host further into the chapter, warn the room first. Flag — do not sanitize mid-bind.`,
+    `This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant, then Ferndale. Hughes’s 1929 voice uses period racial language in this stretch — flag, do not sanitize. Stop after the Ferndale frame so the timed sit stays bounded; if you Host further into the chapter, warn the room first.`,
   "noli-me-tangere":
     `Capitan Tiago announces a dinner at the last minute in Binondo and the Walled City. The closed sit is Chapter I only — colonial friar power; Host may name it, and don’t sanitize.`,
   vera:
@@ -190,7 +190,9 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "on-a-chinese-screen":
     `She takes a holy temple and papers it into Cheltenham—blue curtains for her eyes, pink stripes, an American stove where the Buddha sat.`,
   futility:
-    `The first sit opens on the harbour: the only thing to do was to fit all this into a book. The port sounds the note of departure, and the tall stone houses set the tone.`,
+    `When the Simbirsk of the Russian Volunteer Fleet vanishes, carrying three sisters toward Shanghai, the hotel room still has a dirty table-cloth. The preface stays out. This is not a Kristiania attic.`,
+  "the-comedienne":
+    `Bukowiec station on the Dombrowa railroad, a winding line among beech and pine hills. Skip the Publishers’ Note. Obecny’s English of Reymont. The novel continues.`,
   "african-farm":
     `The full African moon poured down its light from the blue sky into the wide, lonely plain. Stunted karoo bushes and milk-bushes follow in the white light, then a solitary kopje of ironstones. Stop before the farm household densifies.`,
   "a-passage-to-india":
@@ -378,7 +380,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "there-is-confusion",
       "miss-lulu-bett",
       "seven-brothers",
-      "futility",
       "on-the-seaboard",
       "bel-ami",
       "hadji-murad",
@@ -827,6 +828,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-home-and-the-world",
       "hunger",
       "jude-the-obscure",
+      // Mira Fri 25 Sep 2026 ~6PM CLEAR — High Wind leads. Never Featured.
+      "high-wind-jamaica",
+      "vera",
+      "futility",
+      "the-comedienne",
     ],
   },
   {
@@ -881,6 +887,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "cane",
       "the-book-of-wonder",
       "dubliners",
+      // Mira Fri 25 Sep 2026 ~6PM CLEAR — Painted Wall only. Not Kwaidan.
+      "strange-tales",
     ],
   },
   {
@@ -954,6 +962,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-home-and-the-world",
       "hunger",
       "jude-the-obscure",
+      "high-wind-jamaica",
+      "vera",
+      "futility",
+      "the-comedienne",
     ],
   },
   {
@@ -1026,6 +1038,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-home-and-the-world",
       "hunger",
       "jude-the-obscure",
+      "high-wind-jamaica",
+      "vera",
+      "futility",
+      "the-comedienne",
     ],
   },
   {
@@ -1066,11 +1082,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   quicksand: 5,
   "attendants-confession": 2,
   rashomon: 2,
-  "high-wind-jamaica": 3,
+  "high-wind-jamaica": 5,
   "noli-me-tangere": 2,
-  vera: 4,
+  vera: 6,
   "on-a-chinese-screen": 5,
-  futility: 4,
+  futility: 6,
   "poison-tree": 5,
   "trooper-peter-halket": 4,
   "the-home-and-the-world": 6,
@@ -1167,7 +1183,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-ballad-of-the-white-horse": 5,
   "the-book-of-wonder": 9,
   "the-colonel-s-dream": 5,
-  "the-comedienne": 5,
+  "the-comedienne": 6,
   "the-crux": 5,
   "the-dream": 5,
   "the-gods-of-pegana": 5,

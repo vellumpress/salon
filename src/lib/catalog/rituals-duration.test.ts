@@ -142,7 +142,7 @@ test("A High Wind in Jamaica before-sleep sit is the rank-plant cut, not the nov
     minutes: 3,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 3);
+  assert.equal(estimateRitualMinutes(item), 5);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
@@ -178,7 +178,7 @@ test("Vera before-sleep sit is the cliff-gate cut, not the novel", () => {
     minutes: 4,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 4);
+  assert.equal(estimateRitualMinutes(item), 6);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
@@ -194,7 +194,7 @@ test("On a Chinese Screen waking sit is the Parlour cut, not the book", () => {
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
-test("Futility waking sit is the sisters-bouquet cut, not the novel", () => {
+test("Futility Next sit is the Simbirsk table-cloth cut, not the novel", () => {
   const item = work({
     id: "futility",
     form: "novel",
@@ -202,7 +202,7 @@ test("Futility waking sit is the sisters-bouquet cut, not the novel", () => {
     minutes: 4,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 4);
+  assert.equal(estimateRitualMinutes(item), 6);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
