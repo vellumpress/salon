@@ -791,6 +791,23 @@ html.together-compose.together-kb .chat-slot {
   outline-offset: 3px;
 }
 
+/* Finite curator rails snap; the homepage strip stays a free scroll. */
+.works-scroller.is-snap {
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 1.35rem;
+}
+
+.works-scroller.is-snap > .works-card {
+  scroll-snap-align: start;
+}
+
+.curator-heading {
+  align-items: flex-end;
+  min-height: 3.15rem;
+  padding: 0.95rem 1.35rem 0.7rem;
+  color: var(--color-ink);
+}
+
 .works-sentinel {
   flex: 0 0 1px;
   width: 1px;

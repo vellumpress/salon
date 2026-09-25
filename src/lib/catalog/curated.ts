@@ -54,8 +54,19 @@ export type CuratedGroup = {
 export type GuestCurator = {
   slug: string;
   name: string;
+  /**
+   * Short heading on the Curated page. Falls back to `name`.
+   * Prefer a first name when that is the voice already in the UI.
+   */
+  displayName?: string;
   note: string;
   groups: CuratedGroup[];
+};
+
+/** One stacked block on /curated. Add a curator by appending another entry. */
+export type CuratorSection = {
+  curator: GuestCurator;
+  workIds: string[];
 };
 
 const NOT_YET = "Not yet an English sit";
@@ -64,6 +75,7 @@ export const GUEST_CURATORS: GuestCurator[] = [
   {
     slug: "emmeline-clein",
     name: "Emmeline Clein",
+    displayName: "Emmeline",
     note: "Geographical diversity and urban scenescapes, a contemporary tone with an eccentric edge, existential concerns, and potent openings. A second pass keeps those priorities and makes room for women writers.",
     groups: [
       {
@@ -369,6 +381,35 @@ export function curatedPicks(curator: GuestCurator): CuratedPick[] {
 export function curatedReadableId(workId: string | undefined): string | undefined {
   if (!workId || !ENGLISH_SIT_IDS.has(workId) || !isLocalBound(workId)) return undefined;
   return workId;
+}
+
+/** Heading above a curator’s carousel. Short name when the list has one. */
+export function curatorHeading(curator: Pick<GuestCurator, "name" | "displayName">): string {
+  const short = curator.displayName?.trim();
+  return short ? short : curator.name;
+}
+
+/**
+ * Stacked Curated page. Each block is a curator plus the English sits
+ * that open. A second guest is another object in `GUEST_CURATORS`.
+ */
+export function curatorSections(
+  curators: readonly GuestCurator[] = GUEST_CURATORS,
+): CuratorSection[] {
+  return curators.map((curator) => ({
+    curator,
+    workIds: curatedSitIds(curator),
+  }));
+}
+
+/** Author and title for a sit card — her pick when she named it, else the shelf. */
+export function curatedCardCopy(
+  curator: GuestCurator,
+  workId: string,
+): { title: string; author: string } | undefined {
+  const pick = curatedPicks(curator).find((item) => curatedReadableId(item.workId) === workId);
+  if (!pick) return undefined;
+  return { title: pick.title, author: pick.author };
 }
 
 export function curatedSitIds(curator?: GuestCurator): string[] {

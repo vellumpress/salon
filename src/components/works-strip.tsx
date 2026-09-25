@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { CLASSIC_LOCAL_WORKS } from "@/lib/catalog/full-pdf";
 import { useVisitSeed } from "@/lib/use-visit-seed";
@@ -10,8 +9,7 @@ import {
   stripDriftDelta,
   stripItems,
 } from "@/lib/works-strip";
-import { PlaceChip } from "@/components/place-chip";
-import { prefetchWork } from "@/lib/works";
+import { WorksCard } from "@/components/works-card";
 
 export function WorksStrip() {
   const visit = useVisitSeed();
@@ -125,19 +123,7 @@ export function WorksStrip() {
         }}
       >
         {items.map((item) => (
-          <Link
-            key={item.key}
-            to="/read/$workId"
-            params={{ workId: item.work.id }}
-            preload="intent"
-            onPointerDown={() => prefetchWork(item.work.id)}
-            onFocus={() => prefetchWork(item.work.id)}
-            className="works-card"
-          >
-            <span className="works-title">{item.work.title}</span>
-            <span className="works-author">{item.work.author}</span>
-            <PlaceChip work={item.work} tone="accent" className="works-place" />
-          </Link>
+          <WorksCard key={item.key} work={item.work} />
         ))}
         <div ref={sentinel} className="works-sentinel" aria-hidden="true" />
       </div>
