@@ -621,7 +621,6 @@ html.together-compose.together-kb .chat-slot {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  border-top: var(--spacing-rule) solid var(--color-rule);
   min-height: 3.25rem;
   padding: 0.7rem 1.2rem 0.75rem 1.35rem;
   color: var(--color-ink);
