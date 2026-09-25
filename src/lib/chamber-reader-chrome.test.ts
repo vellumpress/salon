@@ -9,6 +9,17 @@ test("reader lookback sits on scene boundaries", () => {
   assert.match(reader, /lookbackBreaths/);
 });
 
+test("a complete book opens every spine chapter", () => {
+  assert.match(reader, /spineChapters\(work, index, workIsComplete\(work\.id\)\)/);
+  const spine = reader.slice(
+    reader.indexOf('overlay === "spine"'),
+    reader.indexOf('overlay === "sitting-end"'),
+  );
+  assert.match(spine, /disabled=\{!item\.open\}/);
+  assert.doesNotMatch(spine, /start <= index/);
+  assert.doesNotMatch(reader, /disabled=\{!reached\}/);
+});
+
 test("reader turns underscore emphasis into italic markup", () => {
   assert.match(reader, /splitEmphasis/);
   assert.match(reader, /function EmphasizedText/);

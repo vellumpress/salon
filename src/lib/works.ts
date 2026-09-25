@@ -2,6 +2,7 @@ import { isLocalBound } from "./catalog/full-pdf";
 import { readableIds } from "./catalog/shelf";
 import { fetchShelfWork } from "./fetch-work";
 import type { Work } from "./literature";
+import { preferLoadedWork } from "./spine-nav";
 import { inflateWork } from "./work-shape";
 
 export type { Scene, Breath, Work } from "./literature";
@@ -85,10 +86,10 @@ function loadLocalOpening(id: string) {
   const pending = loader()
     .then((raw) => {
       if (complete.get(id)) return cache.get(id);
-      const work = raw as Work;
-      if (!cache.has(id)) cache.set(id, work);
+      const chosen = preferLoadedWork(cache.get(id), raw as Work);
+      if (chosen && cache.get(id) !== chosen) cache.set(id, chosen);
       if (!complete.has(id)) complete.set(id, false);
-      return cache.get(id) ?? work;
+      return cache.get(id) ?? chosen;
     })
     .finally(() => openingWait.delete(id));
   openingWait.set(id, pending);
@@ -132,14 +133,30 @@ export async function loadWork(
   if (typeof localLoader === "function") {
     void hydrateLocal(id);
     const opened = cached ?? (await loadLocalOpening(id));
+    // The full bind can land while the opening is parsing. Publish that,
+    // not the sit, or the reader stays on the first pages.
+    if (complete.get(id)) {
+      const ready = preferLoadedWork(opened, cache.get(id));
+      if (ready) onUpdate?.(ready);
+      return ready;
+    }
     if (opened) onUpdate?.(opened);
-    if (complete.get(id)) return cache.get(id) ?? opened;
     if (typeof requestAnimationFrame === "function") {
       await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
     }
-    const full = await hydrateLocal(id);
-    if (full) onUpdate?.(full);
-    return full ?? opened;
+    let full: Work | undefined;
+    try {
+      full = await hydrateLocal(id);
+    } catch {
+      try {
+        full = await hydrateLocal(id);
+      } catch {
+        full = undefined;
+      }
+    }
+    const next = preferLoadedWork(opened, full ?? cache.get(id));
+    if (next && next !== opened) onUpdate?.(next);
+    return next;
   }
 
   const opened = cached ?? (await loadOpening(id));
