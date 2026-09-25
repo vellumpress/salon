@@ -755,8 +755,10 @@ function SectionTitle({ children }: { children: string }) {
 
 function Rail({ label, children }: { label: string; children: ReactNode }) {
   return (
-    <div className="rail hug" role="list" aria-label={label}>
-      {children}
+    <div className="rail-clip">
+      <div className="rail hug" role="list" aria-label={label}>
+        {children}
+      </div>
     </div>
   );
 }

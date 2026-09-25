@@ -327,16 +327,51 @@ html.together-compose.together-kb .chat-slot {
   -webkit-overflow-scrolling: touch;
 }
 
-/* Friends rails hug their text. A length flex-basis on a column tile was
-   read as height on iPhone and left an empty color plate. */
-.rail.hug {
-  align-items: flex-start;
+/* Friends rails hug their text. Two iPhone bugs stacked here:
+   a length flex-basis on a column tile was read as height, and a row
+   flex that is also overflow-y:hidden stretches to the friends
+   scrollport — an ink plate under the cards. The clip is the scrollport
+   (a block). The hug row is not, so its height stays the cards. */
+.rail-clip {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  background: transparent;
+  -webkit-overflow-scrolling: touch;
 }
 
-.rail.hug > .you-tile {
+.rail-clip::-webkit-scrollbar {
+  display: none;
+}
+
+.rail.hug {
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.rail-clip > .rail.hug {
+  width: max-content;
+  min-width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: max-content;
+  overflow: visible;
+  scroll-snap-type: none;
+}
+
+.rail.hug > .you-tile,
+.rail.hug > .you-tile:only-child {
   align-self: flex-start;
+  /* Grow along the row only. A length flex-basis was read as height on iPhone. */
+  flex: 1 0 auto;
   height: auto;
   min-height: 0;
+  max-height: max-content;
 }
 
 .rail.hug > .you-tile > .you-tile-link {
