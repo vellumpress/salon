@@ -5,15 +5,20 @@ import { isEnReadableOff } from "./en-rights.ts";
 import { isLocalBound } from "./full-pdf.ts";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import { shelfWork } from "./shelf.ts";
+import { placeForId } from "./places.ts";
 import {
   GUEST_CURATORS,
+  curatedCardCopy,
   curatedPicks,
   curatedReadableId,
   curatedShelfTitle,
   curatedSitCount,
   curatedSitIds,
   curatedStripCopy,
+  curatorHeading,
+  curatorSections,
   guestCurator,
+  type GuestCurator,
 } from "./curated.ts";
 
 const emmeline = guestCurator("emmeline-clein");
@@ -22,8 +27,58 @@ test("Emmeline Clein is the first guest curator", () => {
   assert.ok(emmeline);
   assert.equal(GUEST_CURATORS.length, 1);
   assert.equal(emmeline.slug, "emmeline-clein");
+  assert.equal(emmeline.name, "Emmeline Clein");
+  assert.equal(curatorHeading(emmeline), "Emmeline");
   assert.match(emmeline.note, /urban scenescapes/);
   assert.match(emmeline.note, /women writers/);
+});
+
+test("curator sections are a stack of curator plus work ids", () => {
+  assert.ok(emmeline);
+  const live = curatorSections();
+  assert.equal(live.length, 1);
+  assert.equal(live[0]?.curator, emmeline);
+  assert.equal(curatorHeading(live[0]!.curator), "Emmeline");
+  assert.deepEqual(live[0]?.workIds, curatedSitIds(emmeline));
+
+  const ada: GuestCurator = {
+    slug: "ada",
+    name: "Ada Lovelace",
+    displayName: "Ada",
+    note: "A second list, not a one-off page.",
+    groups: [],
+  };
+  const stacked = curatorSections([emmeline, ada]);
+  assert.deepEqual(
+    stacked.map((section) => ({
+      heading: curatorHeading(section.curator),
+      workIds: section.workIds,
+    })),
+    [
+      { heading: "Emmeline", workIds: curatedSitIds(emmeline) },
+      { heading: "Ada", workIds: [] },
+    ],
+  );
+  assert.equal(curatorHeading({ name: "Only Name" }), "Only Name");
+});
+
+test("Emmeline sit cards keep her titles and a country outline", () => {
+  assert.ok(emmeline);
+  const basilio = curatedCardCopy(emmeline, "basilio");
+  assert.deepEqual(basilio, { title: "Cousin Basílio", author: "Eça de Queirós" });
+  const meaulnes = curatedCardCopy(emmeline, "the-wanderer");
+  assert.deepEqual(meaulnes, { title: "Le Grand Meaulnes", author: "Alain-Fournier" });
+  assert.equal(curatedCardCopy(emmeline, "savoy"), undefined);
+
+  for (const id of curatedSitIds(emmeline)) {
+    const place = placeForId(id);
+    assert.ok(place?.label, id);
+    assert.ok(place?.region, id);
+    const copy = curatedCardCopy(emmeline, id);
+    assert.ok(copy?.title, id);
+    assert.ok(copy?.author, id);
+    assert.ok(shelfWork(id), id);
+  }
 });
 
 test("Emmeline’s readable sits are verified English binds", () => {
@@ -143,6 +198,17 @@ test("curated guest lists do not write Recommend or the homepage classics strip"
     assert.match(file, /\/curated/);
   }
   assert.match(list, /curatedReadableId/);
+  assert.match(hub, /curatorSections/);
+  assert.match(hub, /WorksCard/);
+  assert.match(hub, /works-scroller/);
+  assert.match(hub, /curatorHeading/);
+  assert.doesNotMatch(hub, /Emmeline/);
+  const card = readFileSync(new URL("../../components/works-card.tsx", import.meta.url), "utf8");
+  const stripUi = readFileSync(new URL("../../components/works-strip.tsx", import.meta.url), "utf8");
+  assert.match(card, /works-title/);
+  assert.match(card, /works-author/);
+  assert.match(card, /PlaceChip/);
+  assert.match(stripUi, /<WorksCard /);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("madmen"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("naomi"), false);
   assert.equal(FEATURED_CAROUSEL_IDS.includes("basilio"), false);

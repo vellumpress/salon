@@ -1,12 +1,28 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { curatedSitCount, GUEST_CURATORS } from "@/lib/catalog/curated";
+import { Fragment, useEffect } from "react";
+import { WorksCard } from "@/components/works-card";
 import { ResumeLink } from "@/components/resume-link";
+import {
+  curatedCardCopy,
+  curatorHeading,
+  curatorSections,
+} from "@/lib/catalog/curated";
+import { shelfWork } from "@/lib/catalog/shelf";
+import { prefetchWork } from "@/lib/works";
 
 export const Route = createFileRoute("/curated")({
   component: CuratedHub,
 });
 
 function CuratedHub() {
+  const sections = curatorSections();
+
+  useEffect(() => {
+    for (const section of curatorSections()) {
+      for (const id of section.workIds.slice(0, 4)) prefetchWork(id);
+    }
+  }, []);
+
   return (
     <main className="board board-alive board-adapted">
       <div className="cell-mark flex bg-paper">
@@ -22,36 +38,38 @@ function CuratedHub() {
         <ResumeLink />
       </div>
 
-      <div className="cell-adapted-intro">
-        <span className="type-kicker opacity-70">Curated</span>
-        <span className="type-lede mt-1">Guest lists.</span>
-        <span className="type-pitch mt-2 max-w-xl opacity-80">
-          What readers like Emmeline chose — their notes, and the sits already
-          on the shelf.
-        </span>
-      </div>
-
-      <nav className="cell-adapted-lane" aria-label="Guest curators">
-        <div className="adapted-lane">
-          {GUEST_CURATORS.map((curator) => {
-            const sits = curatedSitCount(curator);
-            const sitLabel = sits === 1 ? "1 sit" : `${sits} sits`;
-            return (
-              <Link
-                key={curator.slug}
-                to="/curated/$slug"
-                params={{ slug: curator.slug }}
-                preload="intent"
-                className="adapted-row"
-              >
-                <span className="type-kicker opacity-70">Guest list · {sitLabel}</span>
-                <span className="type-card mt-1">{curator.name}</span>
-                <span className="type-pitch mt-1.5 opacity-75">{curator.note}</span>
-              </Link>
-            );
-          })}
-        </div>
-      </nav>
+      {sections.map((section) => {
+        const heading = curatorHeading(section.curator);
+        const headingId = `curator-${section.curator.slug}`;
+        return (
+          <Fragment key={section.curator.slug}>
+            <h2
+              id={headingId}
+              className="cell-label curator-heading type-lede"
+              data-curator={section.curator.slug}
+            >
+              {heading}
+            </h2>
+            <nav className="cell-works" aria-labelledby={headingId}>
+              <div className="works-scroller is-snap">
+                {section.workIds.map((id) => {
+                  const work = shelfWork(id);
+                  if (!work) return null;
+                  const copy = curatedCardCopy(section.curator, id);
+                  return (
+                    <WorksCard
+                      key={id}
+                      work={work}
+                      title={copy?.title}
+                      author={copy?.author}
+                    />
+                  );
+                })}
+              </div>
+            </nav>
+          </Fragment>
+        );
+      })}
     </main>
   );
 }
