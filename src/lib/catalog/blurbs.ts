@@ -285,7 +285,7 @@ const BLURBS: Record<string, string> = {
   "the-old-wives-tale": "Two sisters from the Five Towns, told across a whole ordinary century.",
   "the-man-who-was-thursday": "A poet-detective joins a council of anarchists who keep turning into jokes.",
   "the-innocence-of-father-brown": "A small priest sees the crime because he knows the sinner from the inside.",
-  "pointed-roofs": "Miriam Henderson goes to Germany as a pupil-teacher and starts a life in sentences.",
+  "pointed-roofs": "Miriam upstairs with a Saratoga trunk, leaving to speak to the Fraeulein.",
   "the-autobiography-of-an-ex-colored-man":
     "A musician chooses passing, then has to live inside the choice.",
   blacker: "Emma Lou on her luscious black complexion, and the family that trained her to mourn it.",
@@ -652,7 +652,11 @@ const BLURBS: Record<string, string> = {
   "theresa-raquin":
     "The Arcade of the Pont Neuf is a damp corridor of dumpy shops.",
   "there-is-confusion":
-    "Joanna on her father’s knee, through Mammy, and stop before poor Joel’s turn.",
+    "Joanna on her father’s knee, asking for a story about somebody great.",
+  "the-rise-of-silas-lapham":
+    "Bartley Hubbard interviews Silas Lapham for the Solid Men of Boston.",
+  indiana: "A rainy château in Brie, and Colonel Delmare by the fire.",
+  "the-book-of-wonder": "Weary of London, then a centaur’s wedding bells.",
   buddenbrooks: "And what comes next — Lübeck, Part One, Chapter I.",
   "miss-lulu-bett": "The Deacons were at supper, April in a Midwest household.",
   "a-hero-of-our-time":

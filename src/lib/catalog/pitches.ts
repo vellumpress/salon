@@ -102,6 +102,16 @@ export const PITCHES: Record<string, string> = {
     `Reuben Sachs was the pride of his family. His mother, safe in her investments, says he must marry money. Skip the chapter motto. Levy’s 1888 London.`,
   "the-man-of-property":
     `Those privileged to be present at a family festival of the Forsytes have seen an upper middle-class family in full plumage. The sit runs through Aunt Ann’s grey hat. Galsworthy’s 1906 novel, Volume 1 only.`,
+  "there-is-confusion":
+    `Joanna climbs onto her father’s knee and asks for a story about somebody great. The sit runs through Mammy’s chair and stops when she wants a man who put out a fire. Chapter I continues. Fauset’s 1924 novel.`,
+  "pointed-roofs":
+    `Miriam leaves the gaslit hall and goes slowly upstairs, the Saratoga trunk already in the firelight, deciding what she will say to the Fraeulein. Skip the Beresford introduction. The sit stops on governessing and old age. Richardson’s 1915 novel, Pilgrimage volume 1 only.`,
+  "the-rise-of-silas-lapham":
+    `When Bartley Hubbard interviews Silas Lapham for the Solid Men of Boston series, Lapham receives him in his private office. The sit stops when Bartley cuts in on the mineral paint. Howells’s 1885 novel continues.`,
+  indiana:
+    `On a cool, rainy evening in a small château in Brie, Colonel Delmare watches the fire. Skip the prefaces. Ives’s English of Sand’s 1832 novel. The sit stops on the dim interior. This is not the Arcade of the Pont Neuf.`,
+  "the-book-of-wonder":
+    `Come with me, ladies and gentlemen who are in any wise weary of London. Preface, then The Bride of the Man-Horse only — stop when the silver horn sounds the wedding bells. One story this sit; the cycle continues.`,
   "theresa-raquin":
     `The Arcade of the Pont Neuf is a damp corridor of dumpy shops. Skip the translator’s preface. Vizetelly’s English of Zola’s 1867 novel continues. This is not Bel-Ami.`,
   "where-angels-fear-to-tread":

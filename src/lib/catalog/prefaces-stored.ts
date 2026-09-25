@@ -735,7 +735,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "the-wisdom-of-father-brown": `More Father Brown: the criminal as a soul the priest can still see. Enter one room at a time.`,
   "the-woman-who-did": `Grant Allen’s heroine who will not marry, and the novel that made a scandal of it. Sit with the world a moment before the first breath.`,
   "the-woodlanders": `A woodland parish, a marriage, and the trees that outlast the people. Sit with the world a moment before the first breath.`,
-  "there-is-confusion": `Joanna climbs onto her father’s knee and asks for a story about somebody great. The sit runs through Mammy’s chair and stops before “But alas for poor Joel!”`,
+  "there-is-confusion": `Joanna climbs onto her father’s knee and asks for a story about somebody great. The sit runs through Mammy’s chair and stops when she wants a man who put out a fire. Chapter I continues. Fauset’s 1924 novel.`,
   "therese-raquin": `Émile Zola’s 1867 novel Thérèse Raquin. Sit with the world a moment before the first breath.`,
   "this-side-of-paradise": `Amory Blaine comes of age as the Jazz Age is still learning its name. Sit with the world a moment before the first breath.`,
   "three-hundred-tang-poems": `Various (incl. Let the first line arrive when you are ready.`,

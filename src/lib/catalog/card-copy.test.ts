@@ -1560,7 +1560,7 @@ test("tbr PM CLEAR ×5 load as local full binds on the Host open", () => {
     },
     "there-is-confusion": {
       scenes: 36,
-      breaths: 2014,
+      breaths: 2005,
       opening: /^Joanna’s first consciousness/,
       scene: /^Chapter I$/,
       absent: /^But alas for poor Joel!/,
@@ -1593,7 +1593,15 @@ test("tbr PM CLEAR ×5 load as local full binds on the Host open", () => {
     assert.equal(work!.local, true, id);
     assert.match(work!.opening ?? "", want.opening, id);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /Featured/i, id);
-    assertNoStubOpening(id);
+    if (id === "there-is-confusion") {
+      assert.equal(
+        existsSync(fileURLToPath(openingUrl(id))),
+        true,
+        "afternoon Host opening sits in front of the whole novel",
+      );
+    } else {
+      assertNoStubOpening(id);
+    }
     const full = textWork(id);
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
