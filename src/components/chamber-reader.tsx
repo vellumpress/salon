@@ -5,10 +5,10 @@ import {
   chapterStartIndex,
   lookbackBreaths,
   sceneOf,
-  sceneStartIndex,
   workIsComplete,
   type Work,
 } from "@/lib/works";
+import { chapterPlace, spineChapters } from "@/lib/spine-nav";
 import { useTbr } from "@/lib/store";
 import { fillClass, planeOf, type Fill } from "@/lib/mondrian";
 import { readerIntro } from "@/lib/reader-intro";
@@ -250,6 +250,11 @@ export function TbrReader({
   const index = Math.min(lastBreath, Math.max(0, progress?.breathIndex ?? 0));
   const breath = work.breaths[index];
   const scene = breath ? sceneOf(work, breath.sceneId) : work.scenes[0];
+  const placeLabel = chapterPlace(work.id, scene);
+  const spine = useMemo(
+    () => spineChapters(work, index, workIsComplete(work.id)),
+    [index, work],
+  );
   const lookback = useMemo(
     () => lookbackBreaths(work, index, LOOKBACK),
     [index, work],
@@ -618,11 +623,11 @@ export function TbrReader({
       id: work.id,
       title: work.title,
       author: work.author,
-      place: scene.place,
+      place: placeLabel,
       sentence: breath.text.slice(0, 400),
     });
     return () => setReadingNow(null);
-  }, [breath, scene, setReadingNow, work.author, work.id, work.title]);
+  }, [breath, placeLabel, scene, setReadingNow, work.author, work.id, work.title]);
 
   useLayoutEffect(() => {
     const slot = breathSlotRef.current;
@@ -797,7 +802,7 @@ export function TbrReader({
       {together && pair ? (
         <TogetherShell
           pair={pair}
-          place={nightChrome || scene.place}
+          place={nightChrome || placeLabel}
           breathIndex={index}
           onLeave={leaveTogether}
         >
@@ -818,7 +823,7 @@ export function TbrReader({
               onClick={() => setOverlay("spine")}
               className="flex min-w-0 flex-1 items-center truncate bg-paper px-2.5 type-kicker text-ink sm:px-4"
             >
-              {nightChrome || scene.place}
+              {nightChrome || placeLabel}
             </button>
             <Link
               to="/rituals"
@@ -1193,7 +1198,7 @@ export function TbrReader({
         <button type="button" onClick={beginFromReentry} className="veil bg-paper text-ink">
           <div className="veil-body text-left">
             <span className={cn("mb-4 block h-2 w-10", fillClass(plane))} />
-            <h2 className="veil-title">{scene.place}</h2>
+            <h2 className="veil-title">{placeLabel}</h2>
             <p className="veil-note">{scene.reentry}</p>
           </div>
           <span className="veil-action-full">Continue</span>
@@ -1211,33 +1216,32 @@ export function TbrReader({
             <span className="font-sans text-sm">Close</span>
           </button>
           <div className="veil-rooms">
-            {work.scenes.map((item) => {
-              const start = sceneStartIndex(work, item.id);
-              const current = item.id === breath.sceneId;
-              const reached = start <= index;
+            {spine.map((item) => {
               const word = progress?.keywords[item.id];
               return (
                 <button
                   key={item.id}
                   type="button"
-                  disabled={!reached}
+                  disabled={!item.open}
                   onClick={() => {
-                    if (!reached) return;
+                    if (!item.open) return;
                     setOverlay("none");
-                    goTo(start);
+                    goTo(item.start);
                   }}
-                  className={cn("veil-room", !reached && "opacity-40")}
+                  className={cn("veil-room", !item.open && "opacity-40")}
                 >
                   <span className="flex min-w-0 items-center gap-3">
                     <span
                       className={cn(
                         "inline-block size-2.5 shrink-0",
-                        current ? fillClass(planeOf(item.id)) : reached ? "bg-ink" : "bg-paper-deep",
+                        item.current
+                          ? fillClass(planeOf(item.id))
+                          : item.open
+                            ? "bg-ink"
+                            : "bg-paper-deep",
                       )}
                     />
-                    <span className="type-lede">
-                      {item.place}
-                    </span>
+                    <span className="type-lede">{item.place}</span>
                   </span>
                   {word && word !== "—" ? (
                     <span className="mt-1 pl-5 font-serif text-sm italic text-ink/60">{word}</span>
@@ -1252,7 +1256,7 @@ export function TbrReader({
       {overlay === "sitting-end" ? (
         <div className="veil bg-paper text-ink">
           <div className="veil-body">
-            <h2 className="veil-title">{scene.place}</h2>
+            <h2 className="veil-title">{placeLabel}</h2>
             {together ? (
               <p className="veil-note">The hour is up. Stay in the story, or hold to leave.</p>
             ) : null}
