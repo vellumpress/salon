@@ -5,7 +5,6 @@ import {
   APP_BASE_PATH,
   APP_DESCRIPTION,
   APP_NAME,
-  WORDMARK,
   publicUrl,
   salonShareText,
   salonShareTitle,
@@ -40,8 +39,6 @@ test("publicUrl is origin + Pages base when window is present", () => {
 test("share copy keeps tbr lowercase on the title and the body", () => {
   assert.equal(APP_NAME, "tbr");
   assert.equal(APP_NAME, APP_NAME.toLowerCase());
-  assert.equal(WORDMARK, "tbr.");
-  assert.equal(WORDMARK.toLowerCase(), WORDMARK);
   assert.equal(salonShareTitle("Passing"), "Passing · tbr");
   assert.equal(salonShareTitle("tbr"), "tbr");
   assert.match(salonShareText("The envelope is still unopened."), /tbr/);

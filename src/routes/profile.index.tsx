@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { getMe, pushReading, saveSettings, type Me } from "@/lib/account";
 import { SIT_PRESETS } from "@/lib/sitting";
-import { BrandSeal } from "@/components/brand-seal";
 import { FavoriteWorks } from "@/components/favorite-works";
 import { ReaderAuthForm } from "@/components/reader-auth-form";
 import { SignOutMark } from "@/components/sign-out";
@@ -80,8 +79,7 @@ function ProfilePage() {
           >
             Home
           </Link>
-          <h1 className="type-mark flex min-w-0 flex-1 items-center gap-2 px-4">
-            <BrandSeal />
+          <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
             You
           </h1>
           <ResumeLink className="h-12 border-l border-ink" />
@@ -300,8 +298,7 @@ function ProfileBody({
         >
           Home
         </Link>
-        <h1 className="type-mark flex min-w-0 flex-1 items-center gap-2 px-4">
-          <BrandSeal />
+        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
           You
         </h1>
         <ResumeLink className="h-12 border-l border-ink" />

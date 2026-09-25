@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { RemoteSync } from "@/components/remote-sync";
-import { APP_DESCRIPTION, APP_NAME, WORDMARK, withBase } from "@/lib/site";
+import { APP_DESCRIPTION, APP_NAME, withBase } from "@/lib/site";
 import { attachVisualViewport } from "@/lib/vvh";
 import appCss from "../styles.css?url";
 const FONT_HREF =
@@ -23,13 +23,13 @@ export const Route = createRootRoute({
         content:
           "width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-visual",
       },
-      { title: WORDMARK },
+      { title: APP_NAME },
       { name: "description", content: APP_DESCRIPTION },
-      { property: "og:title", content: WORDMARK },
+      { property: "og:title", content: APP_NAME },
       { property: "og:description", content: APP_DESCRIPTION },
       { property: "og:site_name", content: APP_NAME },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: WORDMARK },
+      { name: "twitter:title", content: APP_NAME },
       { name: "twitter:description", content: APP_DESCRIPTION },
       { name: "theme-color", content: "#F3F1EB" },
       { name: "apple-mobile-web-app-title", content: APP_NAME },
