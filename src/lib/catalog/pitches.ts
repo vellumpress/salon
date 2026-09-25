@@ -52,8 +52,6 @@ export const PITCHES: Record<string, string> = {
     "Berlin talks through Franz Biberkopf after prison — noise, politics, and fate in Döblin’s street choir. A city that will not let a man start clean.",
   passing:
     `Irene Redfield sorts her morning mail in Harlem and finds a thin envelope in purple ink—no return address, a hand she knows at once. Clare Kendry, the childhood friend who slipped into another world, is writing again. Nella Larsen’s 1929 New York novel opens on that letter, still unopened, and the careful life it threatens to unsettle.`,
-  madmen:
-    "Macedonio’s Buenos Aires invents a prophet of chaos and the men who follow him. Metaphysical comedy with knife-edge seriousness underneath.",
   gold:
     "Anzia Yezierska’s Lower East Side childhood told hard, funny, and without apology. Hunger, English, and the fight to own your own name.",
   crime:
