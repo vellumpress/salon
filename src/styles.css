@@ -48,11 +48,9 @@
   /* Page titles in the 3rem mark bar */
   --text-mark: 1.0625rem;
   --text-mark--line-height: 1.2;
-  /* tbr. lockup — sized to sit inside the same 3rem bar */
+  /* tbr. mark — sized to sit inside the same 3rem bar */
   --text-wordmark: 1.25rem;
   --text-wordmark--line-height: 1;
-  --text-tagline: 0.6875rem;
-  --text-tagline--line-height: 1.15;
   --text-kicker: 0.625rem;
   --text-kicker--line-height: 1.35;
   --text-chrome: 0.6875rem;
@@ -365,7 +363,7 @@ html.together-compose.together-kb .chat-slot {
   line-height: var(--text-mark--line-height);
 }
 
-/* Logo lockup. The full stop is oxblood and sits tight against the word. */
+/* Logo. The full stop is oxblood and sits tight against the word. */
 .wordmark {
   display: inline-flex;
   align-items: baseline;
@@ -386,25 +384,6 @@ html.together-compose.together-kb .chat-slot {
 .wordmark-stop {
   color: var(--color-oxblood);
   letter-spacing: 0;
-}
-
-.wordmark-lockup {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 0.05rem;
-  line-height: 1;
-}
-
-.wordmark-tagline {
-  color: var(--color-ink-soft);
-  font-family: var(--font-wordmark);
-  font-size: var(--text-tagline);
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: var(--text-tagline--line-height);
-  white-space: nowrap;
 }
 
 .type-title {
