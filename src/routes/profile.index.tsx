@@ -15,15 +15,11 @@ import { KeptSentences } from "@/components/kept-sentences";
 import { ResumeLink, useLastRead } from "@/components/resume-link";
 import {
   DeskStrip,
-  ActiveReading,
-  InsightStrip,
   LaneStrip,
   ReadinessHero,
-  WeekMinutes,
+  WeekActivity,
   YouActivity,
-  YouBreakdown,
   YouEmptyInvite,
-  YouRings,
 } from "@/components/you-stats";
 import { cn } from "@/lib/utils";
 import { mixSeed, takeShuffled } from "@/lib/recommend";
@@ -343,6 +339,25 @@ function ProfileBody({
           <p className="border-b border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">{confirmNote}</p>
         ) : null}
 
+        {hydrated ? <WeekActivity reading={reading} /> : null}
+
+        <FavoriteWorks
+          ids={favorites}
+          hydrated={hydrated}
+          preview
+          rail
+          heading="Favorites"
+          empty="Heart a work while reading — it will live here."
+        />
+
+        <KeptSentences
+          progress={progress}
+          hydrated={hydrated}
+          preview
+          rail
+          empty="Tap Keep on a sentence. It will live in your collection."
+        />
+
         {!identity ? (
           <section>
             <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
@@ -359,27 +374,6 @@ function ProfileBody({
             />
           </section>
         ) : null}
-
-        {!hydrated ? null : (
-          <>
-            <YouRings rings={reading.rings} />
-            {reading.hasSignal ? (
-              <>
-                <ActiveReading reading={reading} />
-                <WeekMinutes days={reading.weekDays} estimated={reading.minutesAreEstimated} />
-                <InsightStrip reading={reading} />
-                <YouBreakdown reading={reading} />
-                <DeskStrip works={reading.desk} />
-              </>
-            ) : (
-              <YouEmptyInvite
-                label={prompt.label}
-                line="Sit once — minutes, keeps, and a quiet rhythm will gather here."
-                workId={prompt.work?.id}
-              />
-            )}
-          </>
-        )}
 
         {last ? (
           <section>
@@ -404,6 +398,8 @@ function ProfileBody({
             </Link>
           </section>
         ) : null}
+
+        {hydrated && reading.desk.length > 0 ? <DeskStrip works={reading.desk} /> : null}
 
         {hydrated && reading.hasSignal ? (
           <>
@@ -450,24 +446,13 @@ function ProfileBody({
               </div>
             </section>
           </>
+        ) : hydrated ? (
+          <YouEmptyInvite
+            label={prompt.label}
+            line="Sit once — minutes, keeps, and a quiet rhythm will gather here."
+            workId={prompt.work?.id}
+          />
         ) : null}
-
-        <FavoriteWorks
-          ids={favorites}
-          hydrated={hydrated}
-          preview
-          rail
-          heading="Favorites"
-          empty="Heart a work while reading — it will live here."
-        />
-
-        <KeptSentences
-          progress={progress}
-          hydrated={hydrated}
-          preview
-          rail
-          empty="Tap Keep on a sentence. It will live in your collection."
-        />
 
         <section>
           <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
