@@ -10,6 +10,7 @@ import {
   ShelfSearchHits,
   useShelfSearch,
 } from "@/components/shelf-search";
+import { shelfWork } from "@/lib/catalog/shelf";
 import { fillClass, fillInk, mosaicFills, type Fill } from "@/lib/mondrian";
 import { useVisitSeed } from "@/lib/use-visit-seed";
 import { prefetchOpening } from "@/lib/prefetch-work";
@@ -53,6 +54,7 @@ function Home() {
     return mosaicFills(count, `home-doors-${visit || "pending"}`);
   }, [last, visit]);
 
+  const resumeWork = last ? shelfWork(last.id) : undefined;
   const resumeFill: Fill | undefined = last ? blockFills[0] : undefined;
   const doorFills = last ? blockFills.slice(1) : blockFills;
   const showResume = Boolean(last && resumeFill && !searching);
@@ -135,7 +137,7 @@ function Home() {
                   params={{ workId: last.id }}
                   search={{ at: last.breathIndex }}
                   preload="intent"
-                  aria-label={`Resume ${last.title} by ${last.author || "unknown"}`}
+                  aria-label={`Resume ${resumeWork?.title?.trim() || last.title} by ${last.author || "unknown"}`}
                   className="flex min-w-0 flex-1 flex-col justify-center px-5 py-4 sm:px-8 sm:py-5"
                 >
                   <span className="type-kicker opacity-80">Resume</span>
