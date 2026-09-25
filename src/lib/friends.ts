@@ -209,6 +209,19 @@ export function boardKeptLines(input: {
   return rows;
 }
 
+/**
+ * Friends rails must be exactly as tall as their cards. iOS gives an auto-height
+ * flex row inside the page scroller the scrollport's height, and `.rail`'s ink
+ * fill then paints a void under the cards. Callers pin the row to this value.
+ */
+export function fitRailHeight(cardHeights: readonly number[]): number {
+  let h = 0;
+  for (const card of cardHeights) {
+    if (card > h) h = card;
+  }
+  return h > 0 ? Math.ceil(h) : 0;
+}
+
 export function youCard(input: {
   handle: string;
   name?: string;

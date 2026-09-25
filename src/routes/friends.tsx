@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
 import { useKeptLines } from "@/components/kept-sentences";
 import { ResumeLink, usePersistHydrated } from "@/components/resume-link";
 import {
@@ -9,7 +9,7 @@ import {
   type FriendRow,
 } from "@/lib/friend-profile";
 import { useFollowedAuthors } from "@/lib/followed-authors";
-import { boardKeptLines, friendsFeed, youCard, type BoardKeptLine } from "@/lib/friends";
+import { boardKeptLines, fitRailHeight, friendsFeed, youCard, type BoardKeptLine } from "@/lib/friends";
 import { mergeDirectorySearch, searchHandles } from "@/lib/handle-search";
 import { withRemoteActivity } from "@/lib/remote-activity";
 import { updateHostedHandle } from "@/lib/remote-auth";
@@ -754,9 +754,43 @@ function SectionTitle({ children }: { children: string }) {
 }
 
 function Rail({ label, children }: { label: string; children: ReactNode }) {
+  const clipRef = useRef<HTMLDivElement>(null);
+  const rowRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    const clip = clipRef.current;
+    const row = rowRef.current;
+    if (!clip || !row) return;
+
+    const fit = () => {
+      const heights: number[] = [];
+      for (const child of row.children) {
+        heights.push(child.getBoundingClientRect().height);
+      }
+      const px = fitRailHeight(heights);
+      const next = px > 0 ? `${px}px` : "";
+      if (clip.style.height !== next) clip.style.height = next;
+      if (clip.style.maxHeight !== next) clip.style.maxHeight = next;
+      if (row.style.height !== next) row.style.height = next;
+      if (row.style.maxHeight !== next) row.style.maxHeight = next;
+    };
+
+    fit();
+    const observer = new ResizeObserver(fit);
+    for (const child of row.children) observer.observe(child);
+    let cancelled = false;
+    void document.fonts?.ready.then(() => {
+      if (!cancelled) fit();
+    });
+    return () => {
+      cancelled = true;
+      observer.disconnect();
+    };
+  }, [children]);
+
   return (
-    <div className="rail-clip">
-      <div className="rail hug" role="list" aria-label={label}>
+    <div className="rail-clip" ref={clipRef}>
+      <div className="rail-hug" role="list" aria-label={label} ref={rowRef}>
         {children}
       </div>
     </div>

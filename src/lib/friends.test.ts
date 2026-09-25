@@ -5,6 +5,7 @@ import {
   asContact,
   boardKeptLines,
   contactId,
+  fitRailHeight,
   friendsFeed,
   searchPeople,
   youCard,
@@ -97,19 +98,31 @@ test("youCard uses last-read as currently sitting", () => {
   assert.equal(you.workTitle, "Passing");
 });
 
-test("friends rails scroll as a block, not a flex scrollport", () => {
+test("friends rails hug the cards and do not paint an ink plate", () => {
   const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
   const friends = readFileSync(new URL("../routes/friends.tsx", import.meta.url), "utf8");
   assert.match(friends, /className="rail-clip"/);
-  assert.match(friends, /className="rail hug"/);
+  assert.match(friends, /className="rail-hug"/);
+  assert.doesNotMatch(friends, /className="rail hug"/);
+  assert.match(friends, /fitRailHeight/);
   const clip = css.match(/\.rail-clip\s*\{([^}]+)\}/);
   assert.ok(clip, "missing .rail-clip");
   assert.match(clip[1], /overflow-x:\s*auto/);
   assert.match(clip[1], /overflow-y:\s*hidden/);
+  assert.match(clip[1], /background:\s*var\(--color-paper\)/);
   assert.doesNotMatch(clip[1], /display:\s*flex/);
-  const row = css.match(/\.rail-clip > \.rail\.hug\s*\{([^}]+)\}/);
-  assert.ok(row, "missing .rail-clip > .rail.hug");
+  assert.doesNotMatch(clip[1], /background:\s*var\(--color-ink\)/);
+  const row = css.match(/\.rail-hug\s*\{([^}]+)\}/);
+  assert.ok(row, "missing .rail-hug");
   assert.match(row[1], /overflow:\s*visible/);
-  assert.match(row[1], /height:\s*auto/);
-  assert.match(row[1], /max-height:\s*max-content/);
+  assert.match(row[1], /background:\s*var\(--color-paper\)/);
+  assert.match(row[1], /align-items:\s*flex-start/);
+  assert.doesNotMatch(row[1], /background:\s*var\(--color-ink\)/);
+});
+
+test("fitRailHeight uses the tallest card, not a stretched row", () => {
+  assert.equal(fitRailHeight([]), 0);
+  assert.equal(fitRailHeight([0, -4]), 0);
+  assert.equal(fitRailHeight([180.2, 164]), 181);
+  assert.equal(fitRailHeight([220, 480]), 480);
 });
