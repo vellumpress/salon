@@ -34,8 +34,6 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
   const forYou = lane(FOR_YOU_LANE_ID);
   assert.deepEqual(forYou.workIds, [
     ...FIRST_SESSION_RITUAL_IDS,
-    "cane",
-    "the-awakening",
     "there-is-confusion",
     "miss-lulu-bett",
     "seven-brothers",
@@ -56,6 +54,7 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
     "the-last-man",
     "the-late-mattia-pascal",
     "generosity",
+    "where-angels-fear-to-tread",
   ]);
   assert.equal(forYou.workIds[0], "the-house-of-mirth");
   assert.equal(forYou.workIds[1], "quicksand");

@@ -22,7 +22,6 @@ const FULL_NOVEL_NO_STUB = [
   "blood-and-sand",
   "ecstasy",
   "letters-of-a-javanese-princess",
-  "where-angels-fear-to-tread",
   "diary-of-a-chambermaid",
   "the-underdogs",
   "an-outcast-of-the-islands",
@@ -40,11 +39,9 @@ const FULL_NOVEL_NO_STUB = [
   "steppenwolf",
   "shadowings",
   "krakatit",
-  "cane",
   "a-hero-of-our-time",
   "strange-tales",
   "short-stories-from-the-balkans",
-  "the-awakening",
   "a-hundred-and-seventy-chinese-poems",
 ] as const;
 
@@ -266,7 +263,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^Mother, today there comes back to mind/,
     },
     "where-angels-fear-to-tread": {
-      scene: /Charing Cross/i,
+      scene: /Chapter I/,
       opening: /^They were all at Charing Cross/,
     },
     "the-gadfly": {
@@ -498,7 +495,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.ok(packed.breaths.some((breath) => /\*sari\*/.test(breath.text)));
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "where-angels-fear-to-tread") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /Monteriano\.?"?$/);
+      assert.match(packed.breaths.at(-1)?.text ?? "", /footwarmer/);
       assert.doesNotMatch(
         packed.breaths.map((b) => b.text).join(" "),
         /Gino|baby|carriage accident/i,
@@ -1105,14 +1102,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       breaths: 1484,
       intro: /Indian world/,
     },
-    "where-angels-fear-to-tread": {
-      gutenberg: 2948,
-      title: "Where Angels Fear to Tread",
-      author: "E. M. Forster",
-      year: 1905,
-      opening: /^They were all at Charing Cross/,
-      breaths: 1302,
-    },
     "diary-of-a-chambermaid": {
       gutenberg: 44303,
       title: "The Diary of a Chambermaid",
@@ -1262,17 +1251,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       last: /sweet and healing sleep/,
       intro: /penetrating eyes/,
     },
-    cane: {
-      gutenberg: 60093,
-      title: "Cane",
-      author: "Jean Toomer",
-      year: 1923,
-      opening: /^Her skin is like dusk on the eastern horizon/,
-      breaths: 909,
-      scenes: 29,
-      last: /^THE END$/,
-      intro: /Karintha/,
-    },
     "a-hero-of-our-time": {
       gutenberg: 913,
       title: "A Hero of Our Time",
@@ -1305,17 +1283,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       scenes: 13,
       last: /^THE END$/,
       intro: /Easter Candles/,
-    },
-    "the-awakening": {
-      gutenberg: 160,
-      title: "The Awakening",
-      author: "Kate Chopin",
-      year: 1899,
-      opening: /^A green and yellow parrot, which hung in a cage outside the door/,
-      breaths: 1066,
-      scenes: 39,
-      last: /musky odor of pinks filled the air\.$/,
-      intro: /Chapter I/,
     },
     "a-hundred-and-seventy-chinese-poems": {
       gutenberg: 42290,
@@ -1453,7 +1420,7 @@ test("Mira FULL-TEXT CLEAR ×4 are stamped local binds with no opening stubs", (
     assert.match(work!.opening ?? "", want.opening, id);
     assert.equal(
       existsSync(new URL(`./openings/${id}.json`, import.meta.url)),
-      id === "nacha-regules" || id === "the-peasants",
+      id === "nacha-regules" || id === "the-peasants" || id === "cane",
       id,
     );
     const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
@@ -1554,7 +1521,7 @@ test("tbr noon CLEAR ×5 load as local full binds on the Host open", () => {
     assert.equal(work!.form === "poem" || work!.form === "novel" || work!.form === "stories", true, id);
     if (id === "a-few-figs-from-thistles") assert.equal(work!.form, "poem");
     assert.match(work!.opening ?? "", want.opening, id);
-    assertNoStubOpening(id);
+    if (id !== "the-awakening") assertNoStubOpening(id);
     const full = textWork(id);
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);

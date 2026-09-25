@@ -60,7 +60,7 @@ const BLURBS: Record<string, string> = {
   "the-home-and-the-world":
     "A daughter furious with her mirror, and a mother’s vermilion mark that still shames vanity.",
   "where-angels-fear-to-tread":
-    "Charing Cross chaos — Lilia laughing like royalty while Philip names the little towns: Gubbio, Pienza, Monteriano.",
+    "Charing Cross chaos — Lilia laughing like royalty while Philip names Monteriano, and the sit stops on the foot-warmer.",
   "the-gadfly":
     "Pisa seminary heat, a lost sermon page, and Fragola called down the street — Risorgimento Italy, not Enchanted April.",
   "the-immoralist":
@@ -632,7 +632,7 @@ const BLURBS: Record<string, string> = {
   "seven-brothers":
     "Jukola Farm on the Häme slope: seven brothers, Matson’s English, no translator’s Preface.",
   "imperium-in-imperio": "Griggs’ secret Black nation inside the United States — a political thought-experiment.",
-  cane: "Karintha at Georgia dusk: her skin is like dusk on the eastern horizon.",
+  cane: "Karintha at Georgia dusk: her skin is like dusk on the eastern horizon. This sit is Karintha only.",
   "nacha-regules":
     "An August night finds Buenos Aires ablaze for the Centennial — Gálvez’s cabaret includes sex-work and violence in Ongley’s English, not a soft romance.",
   krakatit:
@@ -646,7 +646,11 @@ const BLURBS: Record<string, string> = {
   "old-creole-days": "Cable’s New Orleans stories: French, Spanish, and the color line in the same street.",
   "a-night-in-acadie": "Chopin’s Louisiana: heat, Catholic rooms, and women who already know the cost.",
   "the-awakening":
-    "A green and yellow parrot at Grand Isle keeps repeating Allez vous-en.",
+    "A green and yellow parrot at Grand Isle keeps repeating Allez vous-en, and Mr. Pontellier is on the gallery.",
+  "the-man-of-property":
+    "Stanhope Gate in June: the Forsytes in full plumage, and Aunt Ann’s grey hat.",
+  "theresa-raquin":
+    "The Arcade of the Pont Neuf is a damp corridor of dumpy shops.",
   "there-is-confusion":
     "Joanna on her father’s knee, through Mammy, and stop before poor Joel’s turn.",
   buddenbrooks: "And what comes next — Lübeck, Part One, Chapter I.",

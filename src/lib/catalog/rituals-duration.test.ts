@@ -262,7 +262,7 @@ test("Where Angels Fear to Tread waking sit is the platform cut", () => {
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(estimateRitualMinutes(item), 4);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
@@ -554,7 +554,7 @@ test("The Peasants waking sit is the roadside greeting cut", () => {
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
-test("Cane For you sit is the Karintha dusk-song cut", () => {
+test("Cane Rituals sit is the Karintha sketch", () => {
   const item = work({
     id: "cane",
     form: "stories",
@@ -562,7 +562,7 @@ test("Cane For you sit is the Karintha dusk-song cut", () => {
     minutes: 80,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(estimateRitualMinutes(item), 4);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
