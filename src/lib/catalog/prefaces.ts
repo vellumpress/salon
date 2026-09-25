@@ -46,7 +46,7 @@ export const PREFACES: Record<string, string> = {
   "the-voyage-out":
     "A young woman sails toward a first love and does not sail home unchanged. Woolf’s 1915 first novel is ship, heat, and talk. Sit with the water before the first breath.",
   "jacob-s-room":
-    "Woolf builds a man from the rooms and people he has already left. The 1922 novel is assembled, not explained. Sit with the empty chair a moment.",
+    "Betty Flanders writing in the sand — Cornwall, then the room that will be Jacob’s. The experimental voice is the sit.",
   "the-good-soldier":
     "Nine seasons at Bad Nauheim — intimacy like a good glove, and still they knew nothing. Ford’s 1915 confession starts in the shallows. Sit with that voice before you trust it.",
   "pointed-roofs":

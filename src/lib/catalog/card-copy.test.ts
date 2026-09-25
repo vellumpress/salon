@@ -1787,7 +1787,11 @@ test("Tier B batches 7–8 are local format-min binds, never Featured", () => {
     assert.equal(isBoundLocal(work!), true, id);
     assert.equal(curatorialTrack(id), "later", id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    assertNoStubOpening(id);
+    if (id === "the-last-man") {
+      assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
+    } else {
+      assertNoStubOpening(id);
+    }
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);

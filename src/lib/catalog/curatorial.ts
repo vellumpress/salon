@@ -209,6 +209,15 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * lane. Confessions of Zeno and The Book of Khalid are For you. Khalid opens
  * at Chapter II. Krakatit stays off. Cold-open stays Mirth → Quicksand → Botchan.
  * Tang Poems, The Bronze Horseman, Inferno, and Rudin stay off this ship.
+ * Night 24–25 Sep 2026 CLEAR — Recommend only, never a new homepage Featured
+ * pin. The Blacker the Berry leads this cycle’s Next append (Emma Lou’s
+ * complexion, Thurman 1929, PG 78747). A Lost Lady follows (Sweet Water /
+ * Burlington, Cather 1923, PG 65636), soft against Death Comes. Lady Macbeth
+ * of Mtsensk leaves its EXTRACTABLE-8 Next seat for Rituals only — Chamot
+ * 1923, no Project Gutenberg id. Summer, Jacob’s Room, The Tenant of Wildfell
+ * Hall, and Herland are For you. The Last Man is later For you only. Dragon’s
+ * Teeth stays covered on Next. Cold-open stays Mirth → Quicksand → Botchan.
+ * Meaulnes, Late Mattia Pascal, and the HOLD shelf stay off this ship.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -503,7 +512,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira EXTRACTABLE-8 CLEAR — after All Quiet. Never Featured. Not For you. No PG.
   "smoke-and-steel",
   "gods-trombones",
-  "lady-macbeth",
+  // lady-macbeth left this Next seat for Rituals (Emmeline night 24–25 Sep).
   "layla",
   "conference",
   // Mira 8AM CLEAR ×5 — after EXTRACTABLE-8. Never Featured. Gentlemen leads Next.
@@ -564,6 +573,11 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Zeno and Khalid are For you. Krakatit stays off. Rudin stays off.
   "basilio",
   "oblomov",
+  // Mira night 24–25 Sep 2026 CLEAR — Blacker leads Next. Never Featured.
+  // Lady Macbeth is Rituals only. Summer through Herland are For you.
+  // The Last Man is later For you only. Dragon’s Teeth stays covered above.
+  "blacker",
+  "a-lost-lady",
 ] as const;
 
 /**

@@ -293,6 +293,22 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "A strawberry song and the girls’ ring — the Gazelle chase. Logger eros under the village dance; Host may name the sensual chase, and don’t sanitize.",
   "irish-fairy-tales":
     "Finnian of Moville goes after the disapproved gods, and meets Tuan mac Cairill. Chapter I only — the sit ends when Time laughs at Tuan. Christian and pagan clash, and the “magician” framing; Host OK.",
+  blacker:
+    "Emma Lou on her “luscious black complexion,” and the family that trained her to mourn it — a Harlem colorism sit. Period intra-community color hierarchy language is the book; Host may name it, and don’t sanitize.",
+  "a-lost-lady":
+    "Sweet Water along the Burlington — Niel’s memory of Marian Forrester when the frontier ethos dies into money. Soft against Death Comes for the Archbishop.",
+  "lady-macbeth":
+    "Katerina Lvovna is bored in her rich father-in-law’s empty house in Mtsensk. Chamot’s 1923 English. An adultery and murder novella; Host OK.",
+  summer:
+    "Charity Royall stands on the doorstep of North Dormer’s one street, in the Berkshires. Soft against Bunner Sisters.",
+  "jacob-s-room":
+    "Betty Flanders writing in the sand — Cornwall, then the room that will be Jacob’s. The experimental voice is the sit.",
+  "the-tenant-of-wildfell-hall":
+    "“You must go back with me to the autumn of 1827” — Gilbert Markham’s Yorkshire frame. A long novel; Host OK.",
+  herland:
+    "The narrator writes from memory the journey into a country of women. An idea-led utopia; Host OK.",
+  "the-last-man":
+    "Sea-surrounded England, and the narrator’s ruined lineage — a plague and exile epic. Heavy; a later sit.",
   basilio:
     "Lisbon breakfast, the cuckoo-clock strikes eleven, and Luiza reads that Cousin Bazilio is coming home. Serrano’s 1889 English, PG 74442, is abridged and bowdlerized. Adultery and household power; Host OK. Sit with it as Dragon’s Teeth.",
   oblomov:
@@ -346,6 +362,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "bertha-garlan",
       "zeno",
       "the-book-of-khalid",
+      "summer",
+      "jacob-s-room",
+      "the-tenant-of-wildfell-hall",
+      "herland",
+      "the-last-man",
       "generosity",
     ],
   },
@@ -378,6 +399,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "west-african-folk-tales",
       "irish-fairy-tales",
       "the-lady-with-the-dog-and-other-stories",
+      "lady-macbeth",
     ],
   },
   {
@@ -755,6 +777,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-lady-with-the-dog-and-other-stories",
       "zeno",
       "the-book-of-khalid",
+      "blacker",
+      "a-lost-lady",
+      "lady-macbeth",
+      "summer",
+      "jacob-s-room",
+      "the-tenant-of-wildfell-hall",
+      "herland",
     ],
   },
   {
@@ -799,6 +828,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-lady-with-the-dog-and-other-stories",
       "zeno",
       "the-book-of-khalid",
+      "lady-macbeth",
+      "summer",
+      "jacob-s-room",
+      "the-tenant-of-wildfell-hall",
+      "herland",
     ],
   },
   {
@@ -855,6 +889,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-song-of-the-blood-red-flower",
       "basilio",
       "oblomov",
+      "blacker",
+      "a-lost-lady",
     ],
   },
   {
@@ -910,6 +946,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-song-of-the-blood-red-flower",
       "basilio",
       "oblomov",
+      "blacker",
+      "a-lost-lady",
     ],
   },
   {
@@ -997,6 +1035,12 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-lady-with-the-dog-and-other-stories": 6,
   zeno: 8,
   "the-book-of-khalid": 8,
+  blacker: 8,
+  "a-lost-lady": 8,
+  summer: 8,
+  "jacob-s-room": 8,
+  "the-tenant-of-wildfell-hall": 8,
+  herland: 8,
   cane: 2,
   "a-hero-of-our-time": 5,
   "strange-tales": 5,

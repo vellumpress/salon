@@ -273,7 +273,7 @@ const BLURBS: Record<string, string> = {
     "A childhood garden of blue flowers — then the blossom turns red, and the mother is gone.",
   ulysses: "One Dublin day, walked until language itself starts to sweat.",
   "the-voyage-out": "A young woman sails toward a first love and does not sail home unchanged.",
-  "jacob-s-room": "Woolf builds a man from the rooms and people he has already left.",
+  "jacob-s-room": "Betty Flanders writing in the sand — Cornwall, then the room that will be Jacob’s.",
   "night-and-day": "London talk, two couples, and the long negotiation of who gets to want what.",
   "monday-or-tuesday": "Short Woolf pieces that catch a mind in the act of looking.",
   "of-human-bondage":
@@ -286,17 +286,17 @@ const BLURBS: Record<string, string> = {
   "pointed-roofs": "Miriam Henderson goes to Germany as a pupil-teacher and starts a life in sentences.",
   "the-autobiography-of-an-ex-colored-man":
     "A musician chooses passing, then has to live inside the choice.",
-  blacker: "Thurman on colorism inside Harlem — a dark-skinned woman and the rooms that grade her.",
+  blacker: "Emma Lou on her luscious black complexion, and the family that trained her to mourn it.",
   "hungry-hearts":
     "Yezierska’s immigrant women hungry for English, rooms, and a self that is not a sacrifice.",
   "children-of-loneliness":
     "More Yezierska stories of the jump from tenement to the lonely side of American education.",
-  herland: "Three men find a country of women and discover they are the joke.",
+  herland: "The narrator writes from memory the journey into a country of women.",
   "the-jungle": "Chicago stockyards, an immigrant family, and the machine that eats them.",
   arrowsmith: "A doctor tries to stay honest inside American medicine’s hustle.",
   "the-custom-of-the-country":
     "Undine Spragg wants the next room, the next husband, the next New York.",
-  summer: "A New England town, a librarian’s charge, and a season that will not stay innocent.",
+  summer: "Charity Royall stands on the doorstep of North Dormer’s one street, in the Berkshires.",
   "the-reef": "Wharton in France: desire among people who thought they had already chosen.",
   "bunner-sisters":
     "A Stuyvesant Square basement shop, blotchy gold on a black sign, and horse-car pace.",
@@ -487,7 +487,11 @@ const BLURBS: Record<string, string> = {
   "lady-susan": "A widow writes her way through other people’s marriages.",
   "agnes-grey": "A governess with no plot armor, only the work.",
   "the-tenant-of-wildfell-hall":
-    "A woman leaves a drunken husband and paints for a living — scandal enough.",
+    "Gilbert Markham’s Yorkshire frame opens on the autumn of 1827.",
+  "lady-macbeth":
+    "Katerina Lvovna is bored in her rich father-in-law’s empty house in Mtsensk.",
+  "the-last-man":
+    "Sea-surrounded England, and a narrator whose lineage is already a ruin.",
   "the-professor": "Charlotte Brontë’s Brussels schoolroom, before Jane Eyre made it famous.",
   romola: "Eliot’s Florence: a scholar’s daughter and a marriage that is a political error.",
   "the-nether-world": "Gissing’s Clerkenwell poor, without the usual uplifting exit.",
@@ -682,7 +686,7 @@ const BLURBS: Record<string, string> = {
   "the-titan": "Cowperwood in Chicago, buying the city as if it were a utility.",
   "an-american-tragedy": "A lake, a pregnant girl, and an American climb that needs her gone.",
   "the-song-of-the-lark": "Cather’s prairie girl becomes a singer and leaves the town that made her ears.",
-  "a-lost-lady": "A beautiful woman in a prairie town, remembered by a boy who cannot save her.",
+  "a-lost-lady": "Sweet Water along the Burlington — Niel’s memory of Marian Forrester.",
   "the-troll-garden-and-selected-stories": "Early Cather: artists, hunger, and the Midwest watching.",
   "youth-and-the-bright-medusa": "Cather stories of artists who got away — and what they paid.",
   "my-mortal-enemy": "A woman who married for love and lives to call it the enemy.",
