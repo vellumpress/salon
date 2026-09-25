@@ -11,6 +11,7 @@ export function FavoriteWorks({
   ids,
   hydrated,
   preview = false,
+  rail = false,
   heading,
   empty,
   sectionId,
@@ -18,6 +19,8 @@ export function FavoriteWorks({
   ids: string[];
   hydrated: boolean;
   preview?: boolean;
+  /** You page: one horizontal snap row. The collection stays a vertical shelf. */
+  rail?: boolean;
   heading: string;
   empty: string;
   sectionId?: string;
@@ -40,6 +43,61 @@ export function FavoriteWorks({
         <p className="border-b border-ink px-4 py-5 font-serif text-lg text-ink/80">
           {empty}
         </p>
+      ) : rail ? (
+        <div className="rail" role="list" aria-label={heading}>
+          {shown.map((work, i) => {
+            const fill = fills[i] ?? "paper";
+            return (
+              <div
+                key={work.id}
+                role="listitem"
+                className={cn("you-tile is-wide is-flush relative", fillClass(fill), fillInk(fill))}
+              >
+                <FavoriteMark
+                  workId={work.id}
+                  className="absolute right-0 top-0 z-10 h-12 w-12 border-b border-l border-ink px-0"
+                />
+                <Link
+                  to="/read/$workId"
+                  params={{ workId: work.id }}
+                  preload="intent"
+                  onPointerDown={() => prefetchWork(work.id)}
+                  onFocus={() => prefetchWork(work.id)}
+                  className="you-tile-link has-mark"
+                >
+                  {work.author ? (
+                    <span className="type-kicker opacity-80">
+                      {work.author}
+                    </span>
+                  ) : null}
+                  <PlaceChip workId={work.id} className="mt-1.5 opacity-80" />
+                  <span
+                    className={cn(
+                      "type-lede",
+                      work.author && "mt-1",
+                    )}
+                  >
+                    {work.title}
+                  </span>
+                </Link>
+              </div>
+            );
+          })}
+          {hidden > 0 ? (
+            <Link
+              to="/profile/collection"
+              hash="books"
+              role="listitem"
+              className="you-tile is-wide bg-ink text-paper"
+            >
+              <span className="type-kicker opacity-80">Collection</span>
+              <span className="mt-1 type-lede">
+                {hidden === 1 ? "One more on the shelf" : `${hidden} more on the shelf`}
+              </span>
+              <span className="mt-2 font-sans text-sm opacity-80">See all</span>
+            </Link>
+          ) : null}
+        </div>
       ) : (
         <>
           {shown.map((work, i) => {

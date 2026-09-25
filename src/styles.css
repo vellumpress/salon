@@ -314,11 +314,15 @@ html.together-compose.together-kb .chat-slot {
   display: flex;
   align-items: stretch;
   gap: var(--spacing-rule);
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   background: var(--color-ink);
+  -webkit-overflow-scrolling: touch;
 }
 
 .rail::-webkit-scrollbar {
@@ -546,6 +550,101 @@ html.together-compose.together-kb .chat-slot {
   width: 100%;
   background: currentColor;
   opacity: 0.8;
+}
+
+/* You-page Mondrian tiles inside `.rail`. Basis is the minimum width:
+   a row that fits grows to the edges; a longer row keeps that width and
+   the next tile peeks. */
+.you-tile {
+  display: flex;
+  flex: 1 0 10.75rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 10.75rem;
+  min-height: 8.15rem;
+  scroll-snap-align: start;
+  padding: 0.9rem 1rem 1rem;
+  text-decoration: none;
+}
+
+.you-tile.is-spread {
+  justify-content: space-between;
+}
+
+.you-tile.is-flush {
+  padding: 0;
+}
+
+.you-tile.is-wide {
+  flex-basis: 16.25rem;
+  min-width: 16.25rem;
+}
+
+.you-tile.is-half {
+  flex: 1 0 11rem;
+  min-width: 11rem;
+}
+
+.you-tile.is-lane {
+  flex-basis: 9.25rem;
+  min-width: 9.25rem;
+  min-height: 5.5rem;
+  padding: 0.75rem 1rem;
+}
+
+.you-tile.is-sit {
+  flex-basis: 7.5rem;
+  min-width: 7.5rem;
+  min-height: 5.5rem;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.you-tile.is-quote {
+  flex-basis: 17.5rem;
+  min-width: 17.5rem;
+  min-height: 11rem;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.rail > .you-tile:only-child {
+  flex-grow: 1;
+}
+
+.you-tile-link {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 8.15rem;
+  padding: 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.you-tile-link.has-mark {
+  padding-right: 3.25rem;
+}
+
+.you-tile-action {
+  display: flex;
+  height: 3rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-chrome);
+  letter-spacing: var(--tracking-chrome);
+  text-decoration: none;
+}
+
+.you-tile:focus-visible,
+.you-tile-link:focus-visible,
+.you-tile-action:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -3px;
 }
 
 /* Three-pillar front door (Rituals · Curator · Sit with someone) */
