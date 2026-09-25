@@ -4,6 +4,8 @@
   --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Cormorant Garamond", "Times New Roman", ui-serif, serif;
   --font-display: "Cormorant Garamond", "Times New Roman", ui-serif, serif;
+  /* Logotype only. Cochin is not licensed here; Georgia / Times is the kit fallback. */
+  --font-wordmark: Georgia, "Times New Roman", "Liberation Serif", ui-serif, serif;
   --color-ink: #111111;
   --color-ink-soft: #2a2a2a;
   --color-paper: #f3f1eb;
@@ -15,6 +17,8 @@
   --color-forest: #0f5c38;
   --color-green: var(--color-forest);
   --color-rule: #111111;
+  /* Brand full stop and hourglass seal. Not a Mondrian block. */
+  --color-oxblood: #52292a;
   --radius-sm: 0px;
   --radius-md: 0px;
   --radius-lg: 0px;
@@ -25,6 +29,8 @@
   --spacing-rule: 1px;
   --tracking-mark: 0.14em;
   --tracking-display: -0.03em;
+  /* Brand kit tracking −20 (thousandths of an em) on the logotype. */
+  --tracking-wordmark: -0.02em;
   --tracking-kicker: 0.08em;
   --tracking-chrome: 0.055em;
   --tracking-pitch: 0.008em;
@@ -39,9 +45,14 @@
   --text-lede--line-height: 1.2;
   --text-card: 1rem;
   --text-card--line-height: 1.22;
-  /* Wordmark in the 3rem mark bar */
+  /* Page titles in the 3rem mark bar */
   --text-mark: 1.0625rem;
   --text-mark--line-height: 1.2;
+  /* tbr. lockup — sized to sit inside the same 3rem bar */
+  --text-wordmark: 1.25rem;
+  --text-wordmark--line-height: 1;
+  --text-tagline: 0.6875rem;
+  --text-tagline--line-height: 1.15;
   --text-kicker: 0.625rem;
   --text-kicker--line-height: 1.35;
   --text-chrome: 0.6875rem;
@@ -352,6 +363,48 @@ html.together-compose.together-kb .chat-slot {
   font-weight: 400;
   letter-spacing: var(--tracking-display);
   line-height: var(--text-mark--line-height);
+}
+
+/* Logo lockup. The full stop is oxblood and sits tight against the word. */
+.wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  min-width: 0;
+  color: var(--color-ink);
+  font-family: var(--font-wordmark);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: var(--tracking-wordmark);
+  line-height: var(--text-wordmark--line-height);
+}
+
+.wordmark-name {
+  font-size: var(--text-wordmark);
+  white-space: nowrap;
+}
+
+.wordmark-stop {
+  color: var(--color-oxblood);
+  letter-spacing: 0;
+}
+
+.wordmark-lockup {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.05rem;
+  line-height: 1;
+}
+
+.wordmark-tagline {
+  color: var(--color-ink-soft);
+  font-family: var(--font-wordmark);
+  font-size: var(--text-tagline);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: var(--text-tagline--line-height);
+  white-space: nowrap;
 }
 
 .type-title {
