@@ -14,6 +14,17 @@ function VisualViewport() {
   return null;
 }
 
+/**
+ * The Pages boot watch (classic script in index.html) treats the shell as
+ * stuck until this is set. It only runs after hydration, on every route.
+ */
+function BootMark() {
+  useEffect(() => {
+    document.documentElement.setAttribute("data-boot", "ready");
+  }, []);
+  return null;
+}
+
 /** Apply the reading faces after first paint so they cannot block the shell. */
 function DeferredFonts() {
   useEffect(() => {
@@ -69,6 +80,7 @@ export const Route = createRootRoute({
       </head>
       <body>
         <PreviewHostBridge />
+        <BootMark />
         <VisualViewport />
         <DeferredFonts />
         <DeferredRemoteSync />
