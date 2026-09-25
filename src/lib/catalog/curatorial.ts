@@ -231,6 +231,17 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * follow on Next. Where Angels Fear to Tread is For you only — not Next
  * (Italy stays off this Next append). Cane is Rituals only, Karintha.
  * Never Featured. Emmeline stays untouched. The morning Cabala queue stays.
+ * Fri 25 Sep 2026 ~4:14 afternoon CLEAR — There Is Confusion leads this
+ * Next append (Joanna / somebody great, Fauset 1924, PG 78915). Pointed
+ * Roofs follows (Saratoga trunk / Fraeulein, Richardson 1915, PG 3019,
+ * Pilgrimage vol. 1; Beresford skipped; not For you). The Rise of Silas
+ * Lapham follows (Bartley / Solid Men of Boston, Howells 1885, PG 154).
+ * Indiana follows (rainy Brie / Delmare, Sand 1832, Ives English, PG 63445;
+ * prefaces skipped). The Book of Wonder is Rituals only — Preface plus
+ * The Bride of the Man-Horse, Dunsany 1912, PG 7477 — not this Next queue.
+ * Never Featured. Noon Man of Property and morning Cabala stay ahead.
+ * Soft guards hold: Fauset ≠ Larsen; Hanover ≠ Italy; Boston ≠ London;
+ * Brie ≠ Pont Neuf; Dunsany ≠ Carmilla / Maggot.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -296,7 +307,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "songs-and-satires",
   "tess-of-the-durbervilles",
   "the-ballad-of-the-white-horse",
-  "the-book-of-wonder",
   "the-colonel-s-dream",
   "the-comedienne",
   "the-crux",
@@ -606,6 +616,13 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-man-of-property",
   "the-awakening",
   "theresa-raquin",
+  // Mira Fri 25 Sep 2026 ~4:14 afternoon CLEAR — Confusion leads Next.
+  // Pointed Roofs, Silas Lapham, and Indiana follow. Wonder is Rituals,
+  // not this queue. Never Featured. Noon and morning packs stay ahead.
+  "there-is-confusion",
+  "pointed-roofs",
+  "the-rise-of-silas-lapham",
+  "indiana",
 ] as const;
 
 /**

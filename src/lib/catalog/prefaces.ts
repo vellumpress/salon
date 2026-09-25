@@ -50,7 +50,7 @@ export const PREFACES: Record<string, string> = {
   "the-good-soldier":
     "Nine seasons at Bad Nauheim — intimacy like a good glove, and still they knew nothing. Ford’s 1915 confession starts in the shallows. Sit with that voice before you trust it.",
   "pointed-roofs":
-    "Miriam Henderson goes to Germany as a pupil-teacher and starts a life in sentences. Richardson’s 1915 novel is attention itself. Sit with the first room, then enter.",
+    "Miriam leaves the gaslit hall and goes slowly upstairs, the Saratoga trunk already in the firelight, deciding what she will say to the Fraeulein. Skip the Beresford introduction. The sit stops on governessing and old age. Richardson’s 1915 novel, Pilgrimage volume 1 only.",
   "the-autobiography-of-an-ex-colored-man":
     "A musician chooses passing, then has to live inside the choice. Johnson’s 1912 novel is told as if to one listener. Sit with that confidence before the first breath.",
   "the-awakening":

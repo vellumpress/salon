@@ -51,7 +51,15 @@ export const RITUAL_PITCHES: Record<string, string> = {
   tropic:
     "The whistle blew for eleven o'clock. One tale: Drought — a white hillside quarry, then Coggins Rum, then the walk home through the marl. Stop at the tale boundary. Heat, labor, and racial violence are in the stretch; name them if you Host further, and don’t sanitize.",
   "there-is-confusion":
-    "Joanna climbs onto her father’s knee and asks for a story about somebody great. The sit runs through Mammy’s chair and stops before “But alas for poor Joel!” Chapter I continues.",
+    "Joanna climbs onto her father’s knee and asks for a story about somebody great. The sit runs through Mammy’s chair and stops when she wants a man who put out a fire. Chapter I continues. Fauset’s 1924 novel.",
+  "pointed-roofs":
+    "Miriam leaves the gaslit hall and goes slowly upstairs, the Saratoga trunk already in the firelight, deciding what she will say to the Fraeulein. Skip the Beresford introduction. The sit stops on governessing and old age. Richardson’s 1915 novel, Pilgrimage volume 1 only.",
+  "the-rise-of-silas-lapham":
+    "When Bartley Hubbard interviews Silas Lapham for the Solid Men of Boston series, Lapham receives him in his private office. The sit stops when Bartley cuts in on the mineral paint. Howells’s 1885 novel continues.",
+  indiana:
+    "On a cool, rainy evening in a small château in Brie, Colonel Delmare watches the fire. Skip the prefaces. Ives’s English of Sand’s 1832 novel. The sit stops on the dim interior. This is not the Arcade of the Pont Neuf.",
+  "the-book-of-wonder":
+    "Come with me, ladies and gentlemen who are in any wise weary of London. Preface, then The Bride of the Man-Horse only — stop when the silver horn sounds the wedding bells. One story this sit; the cycle continues.",
   buddenbrooks:
     "“And--and--what comes next?” Lübeck, the Mengstrasse house, Part One, Chapter I. This bind is the whole Lowe-Porter text of PG 72961. The novel continues.",
   "miss-lulu-bett":
@@ -807,6 +815,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-man-of-property",
       "the-awakening",
       "theresa-raquin",
+      "there-is-confusion",
+      "pointed-roofs",
+      "the-rise-of-silas-lapham",
+      "indiana",
     ],
   },
   {
@@ -859,6 +871,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-late-mattia-pascal",
       "the-garden-party-and-other-stories",
       "cane",
+      "the-book-of-wonder",
     ],
   },
   {
@@ -924,6 +937,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-man-of-property",
       "the-awakening",
       "theresa-raquin",
+      "there-is-confusion",
+      "pointed-roofs",
+      "the-rise-of-silas-lapham",
+      "indiana",
     ],
   },
   {
@@ -988,6 +1005,10 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-man-of-property",
       "the-awakening",
       "theresa-raquin",
+      "there-is-confusion",
+      "pointed-roofs",
+      "the-rise-of-silas-lapham",
+      "indiana",
     ],
   },
   {
@@ -1096,7 +1117,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "a-few-figs-from-thistles": 5,
   tropic: 5,
   "the-purple-land": 2,
-  "there-is-confusion": 5,
+  "there-is-confusion": 8,
+  "pointed-roofs": 4,
   buddenbrooks: 5,
   "miss-lulu-bett": 5,
   color: 5,
@@ -1112,7 +1134,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "heart-of-darkness": 5,
   "in-a-glass-darkly": 5,
   "in-the-world": 5,
-  "indiana": 5,
+  indiana: 6,
   "lady-windermeres-fan": 5,
   "pans-garden": 5,
   "peacock-pie": 5,
@@ -1125,7 +1147,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "songs-and-satires": 5,
   "tess-of-the-durbervilles": 5,
   "the-ballad-of-the-white-horse": 5,
-  "the-book-of-wonder": 5,
+  "the-book-of-wonder": 9,
   "the-colonel-s-dream": 5,
   "the-comedienne": 5,
   "the-crux": 5,
@@ -1145,7 +1167,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-poison-tree": 5,
   "the-reign-of-greed": 5,
   "the-rise-of-david-levinsky": 5,
-  "the-rise-of-silas-lapham": 5,
+  "the-rise-of-silas-lapham": 7,
   "the-road-to-the-open": 5,
   "the-romance-of-the-milky-way": 5,
   "the-three-taverns": 5,
