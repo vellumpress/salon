@@ -98,6 +98,8 @@ test("pages safety strips index and 404 without touching hashed assets", () => {
   assert.ok(js.includes(0));
   const html = index.toString("utf8");
   assert.match(html, new RegExp(SHELL_CACHE_ATTR));
+  assert.match(html, /type="module"/);
+  assert.match(html, /data-shell-paint/);
   assert.match(html, /\/salon\/sw\.js/);
   assert.match(html, /updateViaCache:"none"/);
   assert.ok(html.includes(asset));
@@ -107,9 +109,15 @@ test("pages safety strips index and 404 without touching hashed assets", () => {
   assert.equal(twice, html);
   const sw = readFileSync(join(dest, "sw.js"), "utf8");
   assert.equal(sw, renderShellServiceWorker());
+  assert.equal(sw.includes("\0"), false);
   assert.match(sw, /req\.mode !== "navigate"/);
   assert.match(sw, /cache:\s*"no-store"/);
   assert.match(sw, /cache\.put\(req\.url/);
-  assert.match(sw, /cache\.match\(req\.url\)/);
-  assert.match(sw, /Hashed assets are not intercepted/);
+  assert.match(sw, /cache\.match\(url\.href\)/);
+  assert.match(sw, /navigationPreload/);
+  assert.match(sw, /tbr-assets/);
+  assert.match(sw, /data-spa-pages-restore/);
+  assert.match(sw, /String\.fromCharCode\(0\)/);
+  assert.doesNotMatch(sw, /Hashed assets are not intercepted/);
+  assert.match(sw, /\(\?:js\|mjs\|css\)/);
 });

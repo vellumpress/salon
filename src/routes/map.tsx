@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { PLACED_WORKS, regionsFromPlaced, type PlacedWork } from "@/lib/literature-geo";
 import { TitlesMap } from "@/components/titles-map";
-import { prefetchWork } from "@/lib/works";
+import { prefetchWork } from "@/lib/prefetch-work";
 import { mixSeed, takeShuffled } from "@/lib/recommend";
 import { useVisitSeed } from "@/lib/use-visit-seed";
 

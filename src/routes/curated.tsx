@@ -8,7 +8,7 @@ import {
   curatorSections,
 } from "@/lib/catalog/curated";
 import { shelfWork } from "@/lib/catalog/shelf";
-import { prefetchWork } from "@/lib/works";
+import { prefetchWork } from "@/lib/prefetch-work";
 
 export const Route = createFileRoute("/curated")({
   component: CuratedHub,

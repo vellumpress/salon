@@ -12,7 +12,7 @@ import {
 } from "@/components/shelf-search";
 import { fillClass, fillInk, mosaicFills, type Fill } from "@/lib/mondrian";
 import { useVisitSeed } from "@/lib/use-visit-seed";
-import { prefetchWork } from "@/lib/works";
+import { prefetchOpening } from "@/lib/prefetch-work";
 import { Wordmark } from "@/components/wordmark";
 import { cn } from "@/lib/utils";
 
@@ -58,17 +58,45 @@ function Home() {
   const showResume = Boolean(last && resumeFill && !searching);
 
   useEffect(() => {
-    void router.preloadRoute({ to: "/login" });
-    void router.preloadRoute({ to: "/rituals" });
-    void router.preloadRoute({ to: "/curated" });
-    void router.preloadRoute({ to: "/together" });
-    void router.preloadRoute({ to: "/friends" });
-    void router.preloadRoute({ to: "/shuffle", search: { together: true } });
-    void router.preloadRoute({ to: "/profile" });
-  }, [router]);
-  useEffect(() => {
-    if (last) prefetchWork(last.id);
-  }, [last]);
+    let cancel = false;
+    const timers: number[] = [];
+    const warm = () => {
+      if (cancel) return;
+      const jobs = [
+        () => router.preloadRoute({ to: "/rituals" }),
+        () => router.preloadRoute({ to: "/together" }),
+        () => router.preloadRoute({ to: "/friends" }),
+        () => router.preloadRoute({ to: "/profile" }),
+        () => router.preloadRoute({ to: "/curated" }),
+        () => router.preloadRoute({ to: "/login" }),
+        () => router.preloadRoute({ to: "/shuffle", search: { together: true } }),
+        () => {
+          if (last) prefetchOpening(last.id);
+        },
+      ];
+      for (const [index, job] of jobs.entries()) {
+        timers.push(
+          window.setTimeout(() => {
+            if (!cancel) void job();
+          }, index * 80),
+        );
+      }
+    };
+    if (typeof requestIdleCallback === "function") {
+      const id = requestIdleCallback(warm, { timeout: 1600 });
+      return () => {
+        cancel = true;
+        cancelIdleCallback(id);
+        for (const timer of timers) window.clearTimeout(timer);
+      };
+    }
+    const id = window.setTimeout(warm, 700);
+    return () => {
+      cancel = true;
+      window.clearTimeout(id);
+      for (const timer of timers) window.clearTimeout(timer);
+    };
+  }, [router, last]);
 
   return (
     <main
