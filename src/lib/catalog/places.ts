@@ -47,6 +47,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   blacker: { label: "Harlem", region: "us" },
   "a-lost-lady": { label: "Sweet Water", region: "us" },
   "the-wanderer": { label: "Sainte-Agathe", region: "fr" },
+  "the-cabala": { label: "Rome", region: "it" },
+  "reuben-sachs": { label: "Lancaster Gate", region: "gb" },
   "the-late-mattia-pascal": { label: "Miragno", region: "it" },
   "lady-macbeth": { label: "Mtsensk", region: "ru" },
   summer: { label: "North Dormer", region: "us" },
@@ -135,7 +137,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   gitanjali: { label: "Bengal", region: "in" },
   "songs-of-kabir": { label: "India", region: "in" },
   "pictures-of-the-floating-world": { label: "Japan", region: "jp" },
-  "the-garden-party-and-other-stories": { label: "New Zealand", region: "nz" },
+  "the-garden-party-and-other-stories": { label: "Crescent Bay", region: "nz" },
+  "trooper-peter-halket-of-mashonaland": { label: "Mashonaland", region: "za" },
   "bliss-and-other-stories": { label: "New Zealand", region: "nz" },
   "body-of-this-death": { label: "United States", region: "us" },
   orlando: { label: "England", region: "gb" },
@@ -154,7 +157,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
 
   // Frequent shelf settings (pitches / serialize) — still not invented cities
   banjo: { label: "Marseille", region: "fr" },
-  "the-sun-also-rises": { label: "Paris", region: "fr" },
+  "the-sun-also-rises": { label: "Paris → Pamplona", region: "fr" },
   gatsby: { label: "New York", region: "us" },
   "the-age-of-innocence": { label: "New York", region: "us" },
   "liza-of-lambeth": { label: "London", region: "gb" },

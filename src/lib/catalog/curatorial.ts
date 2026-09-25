@@ -221,6 +221,11 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Lost Lady. French meaulnes stays catalog-only. The Late Mattia Pascal
  * (Livingston 1923) is For you. Neither has a US Project Gutenberg id.
  * Hotel Savoy, Envy, Nettles, Wild Geese, Santa, One No One, and Quiroga stay off.
+ * Fri 25 Sep 2026 ~10:04 CLEAR — Cabala leads Next (Wilder 1926, PG 68105).
+ * Reuben Sachs and The Sun Also Rises follow on Next. Trooper Peter Halket
+ * of Mashonaland and The Garden Party (At the Bay I) are Rituals only.
+ * Never Featured. Bridge stays Bridge. Blood and Sand stays Spain.
+ * The Africa novel pile stays off Trooper. Bliss stays off this Garden Party sit.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -250,7 +255,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "last-poems-housman",
   "the-dynamiter",
   "candide",
-  "trooper-peter-halket-of-mashonaland",
+  // Full Trooper bind is Rituals (Fri ~10:04 CLEAR), not this Next seat.
+  // The short trooper-peter-halket card stays. Africa novels stay their own pile.
   "the-toys-of-peace",
   "the-black-dog",
   "children-of-the-frost",
@@ -584,6 +590,11 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Fri 25 Sep 2026 CLEAR — Wanderer follows Lost Lady. Never Featured.
   // French meaulnes left the BATCH-10 Next seat. Mattia Pascal is For you.
   "the-wanderer",
+  // Mira Fri 25 Sep 2026 ~10:04 CLEAR — Cabala leads Next. Never Featured.
+  // Reuben and Sun follow. Trooper and Garden Party are Rituals, not this queue.
+  "the-cabala",
+  "reuben-sachs",
+  "the-sun-also-rises",
 ] as const;
 
 /**

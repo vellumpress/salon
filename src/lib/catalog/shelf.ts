@@ -1529,7 +1529,7 @@ export const SHELF: ShelfWork[] = [
     intro:
       "February rain on Shaftesbury Avenue. An uncomfortable club. Mrs. Wilkins, down from Hampstead to shop, picks up The Times and lets her eye drift the Agony Column—until one notice catches: wistaria and sunshine, a small mediaeval Italian castle to let for April, servants included.\n\nElizabeth von Arnim’s The Enchanted April (1922) opens in that London gray, Chapter 1, Woman’s Club. The novel continues into Mrs. Arbuthnot and the castle.",
   },
-  { id: "the-garden-party-and-other-stories", title: "The Garden Party, and Other Stories", author: "Katherine Mansfield", year: 1922, form: "stories", language: "English", minutes: 640, local: true, opening: "Very early morning.", breaths: 5117 },
+  { id: "the-garden-party-and-other-stories", title: "The Garden Party, and Other Stories", author: "Katherine Mansfield", year: 1922, form: "stories", language: "English", minutes: 640, local: true, gutenberg: 1429, opening: "Very early morning.", breaths: 5117, intro: "Very early morning. Crescent Bay is hidden under a white sea-mist until the shepherd is out of sight. At the Bay, part I only — one story this sit." },
   {
     id: "nacha-regules",
     title: "Nacha Regules",
@@ -1655,7 +1655,23 @@ export const SHELF: ShelfWork[] = [
     opening: "Robert Cohn was once middleweight boxing champion of Princeton.",
     breaths: 7771,
     gutenberg: 67138,
-    intro: `Paris cafés, Burguete trout, Pamplona heat — Jake Barnes narrating what he cannot touch, Brett Ashley walking in with the wrong crowd. Ernest Hemingway’s 1926 novel opens on Robert Cohn, still boxing ghosts from Princeton, before the fiesta has even started.`,
+    intro: `Robert Cohn was once middleweight boxing champion of Princeton. Spider Kelly flattens his nose, and this sit stops there — skip the Stein and Ecclesiastes lines. Hemingway’s 1926 novel reopens into the Paris café.`,
+  },
+  {
+    id: "the-cabala",
+    title: "The Cabala",
+    author: "Thornton Wilder",
+    year: 1926,
+    form: "novel",
+    language: "English",
+    minutes: 214,
+    local: true,
+    gutenberg: 68105,
+    opening:
+      "The train that first carried me into Rome was late, overcrowded and cold.",
+    breaths: 579,
+    intro:
+      "The train that first carried me into Rome was late, across the Campagna in a Virgilian sigh, and this sit stops when the air of Naples generates legend. Wilder’s 1926 novel. The compartment comedy comes after.",
   },
   {
     id: "lolly-willowes",
@@ -1778,7 +1794,7 @@ export const SHELF: ShelfWork[] = [
   { id: "romola", title: "Romola", author: "George Eliot", year: 1863, form: "novel", language: "English", local: true, opening: "The Shipwrecked Stranger.", breaths: 8420, minutes: 1053, gutenberg: 24020 },
   { id: "south-wind", title: "South Wind", author: "Norman Douglas", year: 1917, form: "novel", language: "English", local: true, opening: "The bishop was feeling rather sea-sick.", breaths: 9764, minutes: 1221, gutenberg: 4508 },
   { id: "a-london-life-and-other-tales", title: "A London Life, and Other Tales", author: "Henry James", year: 1889, form: "stories", language: "English", local: true, opening: "A LONDON LIFE", breaths: 3959, minutes: 495, gutenberg: 25500 },
-  { id: "reuben-sachs", title: "Reuben Sachs", author: "Amy Levy", year: 1888, form: "novel", language: "English", local: true, opening: "This is my beloved Son.", breaths: 1674, minutes: 209, gutenberg: 74419 },
+  { id: "reuben-sachs", title: "Reuben Sachs", author: "Amy Levy", year: 1888, form: "novel", language: "English", local: true, opening: "Reuben Sachs was the pride of his family.", breaths: 1673, minutes: 209, gutenberg: 74419, intro: "Reuben Sachs was the pride of his family. His mother, safe in her investments, says he must marry money. Skip the chapter motto. Levy’s 1888 London." },
   { id: "rivers-to-the-sea", title: "Rivers to the Sea", author: "Sara Teasdale", year: 1915, form: "stories", language: "English", local: true, opening: "THE park is filled with night and fog, The veils are drawn about the world, The drowsy lights along the paths Are dim and pearled.", breaths: 469, minutes: 59, gutenberg: 596 },
   { id: "the-black-arrow", title: "The Black Arrow", author: "Robert Louis Stevenson", year: 1888, form: "novel", language: "English", local: true, opening: "On a certain afternoon, in the late springtime, the bell upon Tunstall Moat House was heard ringing at an unaccustomed hour.", breaths: 4534, minutes: 567, gutenberg: 848 },
   { id: "the-financier", title: "The Financier", author: "Theodore Dreiser", year: 1912, form: "novel", language: "English", local: true, opening: "Chapter I", breaths: 9881, minutes: 1235, gutenberg: 1840 },

@@ -85,7 +85,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   silhouettes:
     "At Dieppe after sunset—the sea quieted, grape-flush on the clouds, a sickle moon and one gold star. Silhouettes opens on atmosphere, not argument. Arthur Symons’s 1892 seaside lyrics — a short After Sunset sit before sleep.",
   "the-garden-party-and-other-stories":
-    "Mansfield mornings: party light, then a turn toward the lane you weren’t meant to notice. Domestic brilliance with a chill underneath.",
+    "Very early morning. Crescent Bay is hidden under a white sea-mist until the shepherd is out of sight. At the Bay, part I only — one story this sit. The title story is a later sit in the same book, and this is not Bliss.",
   "bliss-and-other-stories":
     "More Mansfield rooms where the furniture shimmers and then stings. Marriage, desire, and the sentence that rearranges the afternoon.",
   "miss-brill-adapted":
@@ -311,6 +311,14 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Sea-surrounded England, and the narrator’s ruined lineage — a plague and exile epic. Heavy; a later sit.",
   "the-wanderer":
     "He arrived at our home on a Sunday of November, 189… — Sainte-Agathe, and the schoolhouse that is no longer theirs. Delisle’s 1928 English. The year ellipsis stays; Host may leave it.",
+  "the-cabala":
+    "The train that first carried me into Rome was late, across the Campagna in a Virgilian sigh, and this sit stops when the air of Naples generates legend. Wilder’s 1926 novel. The compartment comedy comes after. This is not The Bridge of San Luis Rey.",
+  "reuben-sachs":
+    "Reuben Sachs was the pride of his family. His mother, safe in her investments, says he must marry money. Skip the chapter motto. Levy’s 1888 London.",
+  "the-sun-also-rises":
+    "Robert Cohn was once middleweight boxing champion of Princeton. Spider Kelly flattens his nose, and this sit stops there. Skip the Stein and Ecclesiastes lines. Hemingway’s 1926 novel reopens into the Paris café. This is not Blood and Sand.",
+  "trooper-peter-halket-of-mashonaland":
+    "A dark night on a Mashonaland kopje, Trooper Peter Halket’s fire quivering, a burnt kraal already in the dark. Skip the glossary. Schreiner’s 1897 novella keeps the Chartered Company frame — name it, and don’t sanitize. Not the Africa novel pile.",
   "the-late-mattia-pascal":
     "One of the few things he was sure of was his name: Mattia Pascal — the library at Miragno. Livingston’s 1923 English. Comic self-narration; Host OK.",
   basilio:
@@ -790,6 +798,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "herland",
       "the-wanderer",
       "the-late-mattia-pascal",
+      "the-cabala",
+      "reuben-sachs",
+      "the-sun-also-rises",
     ],
   },
   {
@@ -840,6 +851,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-tenant-of-wildfell-hall",
       "herland",
       "the-late-mattia-pascal",
+      "the-garden-party-and-other-stories",
     ],
   },
   {
@@ -899,6 +911,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "blacker",
       "a-lost-lady",
       "the-wanderer",
+      "the-cabala",
+      "reuben-sachs",
+      "the-sun-also-rises",
     ],
   },
   {
@@ -957,6 +972,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "blacker",
       "a-lost-lady",
       "the-wanderer",
+      "the-cabala",
+      "reuben-sachs",
+      "the-sun-also-rises",
     ],
   },
   {
@@ -1052,6 +1070,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   herland: 8,
   "the-wanderer": 8,
   "the-late-mattia-pascal": 8,
+  "the-cabala": 5,
+  "reuben-sachs": 5,
+  "the-sun-also-rises": 5,
+  "trooper-peter-halket-of-mashonaland": 5,
+  "the-garden-party-and-other-stories": 5,
   cane: 2,
   "a-hero-of-our-time": 5,
   "strange-tales": 5,
