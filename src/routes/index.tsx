@@ -81,7 +81,7 @@ function Home() {
     >
       <div className="cell-mark flex bg-paper">
         <span className="flex h-full min-w-0 flex-1 items-center self-stretch bg-paper px-4 text-ink">
-          <Wordmark lockup />
+          <Wordmark />
         </span>
         <ResumeLink />
         <YouFriendsMark showScore={hydrated && !showResume} />

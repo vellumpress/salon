@@ -45,7 +45,7 @@ function LoginHeader() {
         Home
       </Link>
       <h1 className="flex min-w-0 flex-1 items-center px-4">
-        <Wordmark lockup />
+        <Wordmark />
       </h1>
       <Link
         to="/profile"

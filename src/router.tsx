@@ -11,7 +11,7 @@ export function getRouter() {
     defaultErrorComponent: AppErrorComponent,
     defaultNotFoundComponent: () => (
       <div className="flex min-h-svh flex-col justify-end bg-paper p-8 text-ink">
-        <Wordmark lockup />
+        <Wordmark />
         <p className="mt-3 type-title">This page is not on the shelf.</p>
       </div>
     ),

@@ -7,9 +7,6 @@ export const APP_NAME = "tbr";
  */
 export const WORDMARK = "tbr.";
 
-/** Italic line under the mark when a lockup is shown. */
-export const TAGLINE = "to be read";
-
 /** Meta, Open Graph, and Twitter description. */
 export const APP_DESCRIPTION =
   "tbr. Timed reading rituals. Public-domain sitting, on this phone.";
