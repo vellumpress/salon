@@ -44,6 +44,13 @@ const WORK_PLACE: Record<string, WorkPlace> = {
 
   // Next / priority Host-a-sit queue
   basilio: { label: "Lisbon", region: "pt" },
+  blacker: { label: "Harlem", region: "us" },
+  "a-lost-lady": { label: "Sweet Water", region: "us" },
+  "lady-macbeth": { label: "Mtsensk", region: "ru" },
+  summer: { label: "North Dormer", region: "us" },
+  "jacob-s-room": { label: "Cornwall", region: "gb" },
+  "the-tenant-of-wildfell-hall": { label: "Yorkshire", region: "gb" },
+  "the-last-man": { label: "England", region: "gb" },
   oblomov: { label: "Petersburg", region: "ru" },
   "the-lady-with-the-dog-and-other-stories": { label: "Yalta", region: "ru" },
   zeno: { label: "Trieste", region: "it" },

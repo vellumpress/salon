@@ -49,6 +49,11 @@ test("first-session For you stack is Mirth → Quicksand → Botchan", () => {
     "bertha-garlan",
     "zeno",
     "the-book-of-khalid",
+    "summer",
+    "jacob-s-room",
+    "the-tenant-of-wildfell-hall",
+    "herland",
+    "the-last-man",
     "generosity",
   ]);
   assert.equal(forYou.workIds[0], "the-house-of-mirth");

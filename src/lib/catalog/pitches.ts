@@ -1,5 +1,21 @@
 /** Synopsis-style pitches for the reader threshold (hand-curated). */
 export const PITCHES: Record<string, string> = {
+  blacker:
+    "Emma Lou on her “luscious black complexion,” and the family that trained her to mourn it — a Harlem colorism sit. Period intra-community color hierarchy language is the book; Host may name it, and don’t sanitize.",
+  "a-lost-lady":
+    "Sweet Water along the Burlington — Niel’s memory of Marian Forrester when the frontier ethos dies into money. Soft against Death Comes for the Archbishop.",
+  "lady-macbeth":
+    "Katerina Lvovna is bored in her rich father-in-law’s empty house in Mtsensk. Chamot’s 1923 English. An adultery and murder novella; Host OK.",
+  summer:
+    "Charity Royall stands on the doorstep of North Dormer’s one street, in the Berkshires. Soft against Bunner Sisters.",
+  "jacob-s-room":
+    "Betty Flanders writing in the sand — Cornwall, then the room that will be Jacob’s. The experimental voice is the sit.",
+  "the-tenant-of-wildfell-hall":
+    "“You must go back with me to the autumn of 1827” — Gilbert Markham’s Yorkshire frame. A long novel; Host OK.",
+  herland:
+    "The narrator writes from memory the journey into a country of women. An idea-led utopia; Host OK.",
+  "the-last-man":
+    "Sea-surrounded England, and the narrator’s ruined lineage — a plague and exile epic. Heavy; a later sit.",
   basilio:
     "Lisbon breakfast, the cuckoo-clock strikes eleven, and Luiza reads that Cousin Bazilio is coming home. Serrano’s 1889 English, PG 74442, is abridged and bowdlerized. Adultery and household power; Host OK. Sit with it as Dragon’s Teeth.",
   oblomov:
