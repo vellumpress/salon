@@ -349,12 +349,12 @@ test("A Hundred and Seventy Chinese Poems uses the Winter Night sit and names th
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
-test("Dubliners uses the before-sleep Sisters sit and names the Host frame", () => {
+test("Dubliners uses the Araby sit and names the Host frame", () => {
   const copy = readerIntro(shelfAsWork("dubliners"));
-  assert.match(copy, /paralysis/i);
-  assert.match(copy, /The Sisters only/);
-  assert.match(copy, /not The Dead/);
-  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
+  assert.match(copy, /North Richmond Street/);
+  assert.match(copy, /Araby only/);
+  assert.match(copy, /not Irish Fairy Tales/);
+  assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open|The Sisters only/i);
 });
 
 test("Gitanjali uses the before-sleep poem-1 sit and names the Host frame", () => {

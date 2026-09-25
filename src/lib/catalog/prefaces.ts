@@ -16,7 +16,7 @@ export const PREFACES: Record<string, string> = {
   ulysses:
     "One Dublin day, walked until language itself starts to sweat. Joyce’s 1922 novel does not hurry you toward a plot. Let the city arrive a sentence at a time.",
   dubliners:
-    "Paralysis at a lighted window — a phone-clear city X-ray. First sit: The Sisters only — not The Dead.",
+    "North Richmond Street is blind until the Christian Brothers’ School lets the boys out. This sit is Araby only, through the bazaar. One story; the cycle continues.",
   "sister-carrie":
     "A small-town girl arrives in Chicago and learns what the city charges for a rise. Dreiser’s 1900 novel opens on the train and the new weather. Sit with the arrival before the first breath.",
   "the-age-of-innocence":

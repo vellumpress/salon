@@ -1,0 +1,71 @@
+{
+  "id": "hunger",
+  "title": "Hunger",
+  "author": "Knut Hamsun (trans. George Egerton)",
+  "year": "1890",
+  "note": "Project Gutenberg 8387. Host: Part I Christiania / attic clock six (Björkman intro skipped).",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I",
+      "place": "Part I",
+      "reentry": "It was during the time I wandered about and starved in Christiania: Christiania, this singular city, from which no man departs without carrying away the traces of his sojourn there.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was during the time I wandered about and starved in Christiania: Christiania, this singular city, from which no man departs without carrying away the traces of his sojourn there."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "I was lying awake in my attic and I heard a clock below strike six. It was already broad daylight, and people had begun to go up and down the stairs. By the door where the wall of the room was papered with old numbers of the *Morgenbladet*, I could distinguish clearly a notice from the Director of Lighthouses, and a little to the left of that an inflated advertisement of Fabian Olsens' new-baked bread."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The instant I opened my eyes I began, from sheer force of habit, to think if I had anything to rejoice over that day. I had been somewhat hard-up lately, and one after the other of my belongings had been taken to my \"Uncle.\" I had grown nervous and irritable. A few times I had kept my bed for the day with vertigo. Now and then, when luck had favoured me, I had managed to get five shillings for a feuilleton from some newspaper or other."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "It grew lighter and lighter, and I took to reading the advertisements near the door. I could even make out the grinning lean letters of \"winding-sheets to be had at Miss Andersen's\" on the right of it. That occupied me for a long while. I heard the clock below strike eight as I got up and put on my clothes."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "I opened the window and looked out. From where I was standing I had a view of a clothes-line and an open field. Farther away lay the ruins of a burnt-out smithy, which some labourers were busy clearing away. I leant with my elbows resting on the window-frame and gazed into open space. It promised to be a clear day--autumn, that tender, cool time of the year, when all things change their colour, and die, had come to us. The ever-increasing noise in the streets lured me out. The bare room, the floor of which rocked up and down with every step I took across it, seemed like a gasping, sinister coffin. There was no proper fastening to the door, either, and no stove. I used to lie on my socks at night to dry them a little by the morning. The only thing I had to divert myself with was a little red rocking-chair, in which I used to sit in the evenings and doze and muse on all manner of things. When it blew hard, and the door below stood open, all kinds of eerie sounds moaned up through the floor and from out the walls, and the *Morgenbladet* near the door was rent in strips a span long."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "I stood up and searched through a bundle in the corner by the bed for a bite for breakfast, but finding nothing, went back to the window."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "God knows, thought I, if looking for employment will ever again avail me aught. The frequent repulses, half-promises, and curt noes, the cherished, deluded hopes, and fresh endeavours that always resulted in nothing had done my courage to death. As a last resource, I had applied for a place as debt collector, but I was too late, and, besides, I could not have found the fifty shillings demanded as security. There was always something or another in my way. I had even offered to enlist in the Fire Brigade. There we stood and waited in the vestibule, some half-hundred men, thrusting our chests out to give an idea of strength and bravery, whilst an inspector walked up and down and scanned the applicants, felt their arms, and put one question or another to them. Me, he passed by, merely shaking his head, saying I was rejected on account of my sight. I applied again without my glasses, stood there with knitted brows, and made my eyes as sharp as needles, but the man passed me by again with a smile; he had recognized me. And, worse than all, I could no longer apply for a situation in the garb of a respectable man."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "How regularly and steadily things had gone downhill with me for a long time, till, in the end, I was so curiously bared of every conceivable thing. I had not even a comb left, not even a book to read, when things grew all too sad with me. All through the summer, up in the churchyards or parks, where I used to sit and write my articles for the newspapers, I had thought out column after column on the most miscellaneous subjects. Strange ideas, quaint fancies, conceits of my restless brain; in despair I had often chosen the most remote themes, that cost me long hours of intense effort, and never were accepted. When one piece was finished I set to work at another. I was not often discouraged by the editors' \"no.\" I used to tell myself constantly that some day I was bound to succeed; and really occasionally when I was in luck's way, and made a hit with something, I could get five shillings for an afternoon's work."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Once again I raised myself from the window, went over to the washing-stand, and sprinkled some water on the shiny knees of my trousers to dull them a little and make them look a trifle newer. Having done this, I pocketed paper and pencil as usual and went out. I stole very quietly down the stairs in order not to attract my landlady's attention (a few days had elapsed since my rent had fallen due, and I had no longer anything wherewith to raise it)."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "It was nine o'clock. The roll of vehicles and hum of voices filled the air, a mighty morning-choir mingled with the footsteps of the pedestrians, and the crack of the hack-drivers' whips. The clamorous traffic everywhere exhilarated me at once, and I began to feel more and more contented. Nothing was farther from my intention than to merely take a morning walk in the open air. What had the air to do with my lungs? I was strong as a giant; could stop a dray with my shoulders. A sweet, unwonted mood, a feeling of lightsome happy-go-luckiness took possession of me. I fell to observing the people I met and who passed me, to reading the placards on the wall, noted even the impression of a glance thrown at me from a passing tram-car, let each bagatelle, each trifling incident that crossed or vanished from my path impress me."
+    }
+  ]
+}

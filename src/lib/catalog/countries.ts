@@ -437,7 +437,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Émile Verhaeren (tr. Alma Strettell)",
   ],
   Sweden: ["August Strindberg", "Hjalmar Söderberg (tr. Charles Wharton Stork)", "Selma Lagerlöf"],
-  Norway: ["Alexander Kielland", "Bjørnstjerne Bjørnson", "Henrik Ibsen", "Johan Bojer", "Jonas Lie", "Knut Hamsun", "Knut Hamsun (tr. W. W. Worster)", "Sigrid Undset"],
+  Norway: ["Alexander Kielland", "Bjørnstjerne Bjørnson", "Henrik Ibsen", "Johan Bojer", "Jonas Lie", "Knut Hamsun", "Knut Hamsun (tr. W. W. Worster)", "Knut Hamsun (trans. George Egerton)", "Sigrid Undset"],
   Denmark: ["Henrik Pontoppidan", "J. P. Jacobsen", "Jens Peter Jacobsen", "Martin Andersen Nexø"],
   Finland: ["Aleksis Kivi", "Aleksis Kivi (tr. Alex Matson)", "Elias Lönnrot", "Johannes Linnankoski"],
   Greece: [
