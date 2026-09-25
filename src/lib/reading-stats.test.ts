@@ -154,6 +154,28 @@ test("ritual lanes and time of day come from real works and sit hours", () => {
   assert.equal(hours[0]?.id, "before-sleep");
 });
 
+test("week days carry the ledger a tap should show", () => {
+  const today = dayKey(NOW);
+  const reading = deriveReadingStats({
+    progress: {},
+    readingMinutesByDay: { [today]: 30 },
+    advancesByDay: { [today]: 12 },
+    keepsByDay: { [today]: 2 },
+    sitsByDay: { [today]: 1 },
+    worksTouchedByDay: { [today]: ["passing", "dalloway"] },
+    now: NOW,
+  });
+  const day = reading.weekDays[6];
+  assert.equal(day?.key, today);
+  assert.equal(day?.minutes, 30);
+  assert.equal(day?.breaths, 12);
+  assert.equal(day?.keeps, 2);
+  assert.equal(day?.sits, 1);
+  assert.equal(day?.works, 2);
+  assert.equal(day?.score, reading.dailyScore.total);
+  assert.ok((day?.score ?? 0) > 0);
+});
+
 test("week series is seven local days ending now", () => {
   const today = dayKey(NOW);
   const days = weekMinutesSeries({ [today]: 9 }, NOW);

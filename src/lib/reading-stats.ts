@@ -8,7 +8,9 @@ import type { SitSession, WorkProgress } from "./store.ts";
 import type { TogetherKeep } from "./together-keep.ts";
 import { buildRadarAxes, type RadarAxis } from "./you-radar.ts";
 import {
+  dayScoreInput,
   deriveWindowScores,
+  scoreForDay,
   type DailyScore,
   type WindowScore,
 } from "./reading-score.ts";
@@ -37,6 +39,17 @@ export type DayMinutes = {
   key: string;
   label: string;
   minutes: number;
+};
+
+/** One day on the You week strip, including the ledger a tap reveals. */
+export type DayActivity = DayMinutes & {
+  score: number;
+  breaths: number;
+  keeps: number;
+  sits: number;
+  works: number;
+  hostOpens: number;
+  clubTouches: number;
 };
 
 export type RingStat = {
@@ -95,7 +108,7 @@ export type ReadingStats = {
   hostedSits: number;
   lanes: LaneCount[];
   hourPattern: LaneCount[];
-  weekDays: DayMinutes[];
+  weekDays: DayActivity[];
   rings: RingStat[];
   radar: RadarAxis[];
   sits: number;
@@ -602,7 +615,6 @@ export function deriveReadingStats(input: {
   const desk = deskWorks(progress);
   const lanes = ritualLanesUsed(workIds);
   const hourPattern = timeOfDayPattern(sitHistory, lanes);
-  const weekDays = weekMinutesSeries(byDay, now);
   const hostedCount = hostedSitsAttended(hostedSits, input.handle ?? "");
 
   const hasSignal =
@@ -665,20 +677,32 @@ export function deriveReadingStats(input: {
     }
   }
 
+  const ledgers = {
+    readingMinutesByDay: byDay,
+    advancesByDay,
+    sceneCrossesByDay: input.sceneCrossesByDay,
+    keepsByDay: input.keepsByDay,
+    worksTouchedByDay,
+    hostOpensByDay,
+    sitsByDay,
+    clubTouchesByDay,
+  };
   const { daily: dailyScore, weekly: weeklyScore, monthly: monthlyScore } =
-    deriveWindowScores(
-      {
-        readingMinutesByDay: byDay,
-        advancesByDay,
-        sceneCrossesByDay: input.sceneCrossesByDay,
-        keepsByDay: input.keepsByDay,
-        worksTouchedByDay,
-        hostOpensByDay,
-        sitsByDay,
-        clubTouchesByDay,
-      },
-      now,
-    );
+    deriveWindowScores(ledgers, now);
+  const weekDays: DayActivity[] = weekMinutesSeries(byDay, now).map((day) => {
+    const detail = dayScoreInput(ledgers, day.key);
+    const scored = scoreForDay(ledgers, day.key);
+    return {
+      ...day,
+      score: scored.total,
+      breaths: Math.max(0, Math.round(detail.advances) || 0),
+      keeps: Math.max(0, Math.round(detail.keeps) || 0),
+      sits: Math.max(0, Math.round(detail.sits) || 0),
+      works: detail.worksTouched,
+      hostOpens: Math.max(0, Math.round(detail.hostOpens) || 0),
+      clubTouches: Math.max(0, Math.round(detail.clubTouches) || 0),
+    };
+  });
 
   const sitTarget = sittingMinutes > 0 ? sittingMinutes : 20;
   const rings: RingStat[] = [
