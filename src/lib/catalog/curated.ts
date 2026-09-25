@@ -12,8 +12,10 @@ const ENGLISH_SIT_IDS = new Set<string>([
   "basilio",
   "blacker",
   "lady-macbeth",
+  "the-wanderer",
   "naomi",
   "odessa",
+  "the-late-mattia-pascal",
   "madmen",
   "a-lost-lady",
   "jacob-s-room",
@@ -141,8 +143,8 @@ export const GUEST_CURATORS: GuestCurator[] = [
               place: "A French town",
               blurb:
                 "A coming-of-age inside a desperate crush: adolescent desire and identity. Compared to Peter Pan and The Catcher in the Rye, with shades of The Great Gatsby. Scintillating party scenes, a stark provincial setting.",
-              shelfId: "meaulnes",
-              unavailable: "French text on the shelf. No English sit.",
+              shelfId: "the-wanderer",
+              workId: "the-wanderer",
             },
           },
           {
@@ -215,8 +217,8 @@ export const GUEST_CURATORS: GuestCurator[] = [
               place: "An Italian town",
               blurb:
                 "A laborer’s malaise is broken by a bureaucratic mistake that offers a second chance at self-definition. Meta, modern, and comic at the open.",
-              shelfId: "mattia",
-              unavailable: NOT_YET,
+              shelfId: "the-late-mattia-pascal",
+              workId: "the-late-mattia-pascal",
             },
           },
           {
