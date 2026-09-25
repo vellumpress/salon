@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AdaptedRouteImport } from './routes/adapted'
 import { Route as ClubsRouteImport } from './routes/clubs'
+import { Route as CuratedRouteImport } from './routes/curated'
 import { Route as CuratorRouteImport } from './routes/curator'
 import { Route as DeskRouteImport } from './routes/desk'
 import { Route as FormRouteImport } from './routes/form'
@@ -27,6 +28,7 @@ import { Route as StoresRouteImport } from './routes/stores'
 import { Route as TogetherRouteImport } from './routes/together'
 import { Route as ApiRtcRouteImport } from './routes/api/rtc'
 import { Route as ClubClubIdRouteImport } from './routes/club.$clubId'
+import { Route as CuratedSlugRouteImport } from './routes/curated_.$slug'
 import { Route as FriendsHandleRouteImport } from './routes/friends_.$handle'
 import { Route as PledgeTokenRouteImport } from './routes/pledge.$token'
 import { Route as ProfileIndexRouteImport } from './routes/profile.index'
@@ -52,6 +54,11 @@ const AdaptedRoute = AdaptedRouteImport.update({
 const ClubsRoute = ClubsRouteImport.update({
   id: '/clubs',
   path: '/clubs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CuratedRoute = CuratedRouteImport.update({
+  id: '/curated',
+  path: '/curated',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CuratorRoute = CuratorRouteImport.update({
@@ -129,6 +136,11 @@ const ClubClubIdRoute = ClubClubIdRouteImport.update({
   path: '/club/$clubId',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CuratedSlugRoute = CuratedSlugRouteImport.update({
+  id: '/curated_/$slug',
+  path: '/curated/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FriendsHandleRoute = FriendsHandleRouteImport.update({
   id: '/friends_/$handle',
   path: '/friends/$handle',
@@ -189,6 +201,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/adapted': typeof AdaptedRoute
   '/clubs': typeof ClubsRoute
+  '/curated': typeof CuratedRoute
   '/curator': typeof CuratorRoute
   '/desk': typeof DeskRoute
   '/form': typeof FormRoute
@@ -204,6 +217,7 @@ export interface FileRoutesByFullPath {
   '/together': typeof TogetherRoute
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
+  '/curated/$slug': typeof CuratedSlugRoute
   '/friends/$handle': typeof FriendsHandleRoute
   '/pledge/$token': typeof PledgeTokenRoute
   '/profile/collection': typeof ProfileCollectionRoute
@@ -220,6 +234,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/adapted': typeof AdaptedRoute
   '/clubs': typeof ClubsRoute
+  '/curated': typeof CuratedRoute
   '/curator': typeof CuratorRoute
   '/desk': typeof DeskRoute
   '/form': typeof FormRoute
@@ -234,6 +249,7 @@ export interface FileRoutesByTo {
   '/together': typeof TogetherRoute
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
+  '/curated/$slug': typeof CuratedSlugRoute
   '/friends/$handle': typeof FriendsHandleRoute
   '/pledge/$token': typeof PledgeTokenRoute
   '/profile/collection': typeof ProfileCollectionRoute
@@ -251,6 +267,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/adapted': typeof AdaptedRoute
   '/clubs': typeof ClubsRoute
+  '/curated': typeof CuratedRoute
   '/curator': typeof CuratorRoute
   '/desk': typeof DeskRoute
   '/form': typeof FormRoute
@@ -266,6 +283,7 @@ export interface FileRoutesById {
   '/together': typeof TogetherRoute
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
+  '/curated_/$slug': typeof CuratedSlugRoute
   '/friends_/$handle': typeof FriendsHandleRoute
   '/pledge/$token': typeof PledgeTokenRoute
   '/profile/collection': typeof ProfileCollectionRoute
@@ -284,6 +302,7 @@ export interface FileRouteTypes {
     | '/'
     | '/adapted'
     | '/clubs'
+    | '/curated'
     | '/curator'
     | '/desk'
     | '/form'
@@ -299,6 +318,7 @@ export interface FileRouteTypes {
     | '/together'
     | '/api/rtc'
     | '/club/$clubId'
+    | '/curated/$slug'
     | '/friends/$handle'
     | '/pledge/$token'
     | '/profile/collection'
@@ -315,6 +335,7 @@ export interface FileRouteTypes {
     | '/'
     | '/adapted'
     | '/clubs'
+    | '/curated'
     | '/curator'
     | '/desk'
     | '/form'
@@ -329,6 +350,7 @@ export interface FileRouteTypes {
     | '/together'
     | '/api/rtc'
     | '/club/$clubId'
+    | '/curated/$slug'
     | '/friends/$handle'
     | '/pledge/$token'
     | '/profile/collection'
@@ -345,6 +367,7 @@ export interface FileRouteTypes {
     | '/'
     | '/adapted'
     | '/clubs'
+    | '/curated'
     | '/curator'
     | '/desk'
     | '/form'
@@ -360,6 +383,7 @@ export interface FileRouteTypes {
     | '/together'
     | '/api/rtc'
     | '/club/$clubId'
+    | '/curated_/$slug'
     | '/friends_/$handle'
     | '/pledge/$token'
     | '/profile/collection'
@@ -377,6 +401,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AdaptedRoute: typeof AdaptedRoute
   ClubsRoute: typeof ClubsRoute
+  CuratedRoute: typeof CuratedRoute
   CuratorRoute: typeof CuratorRoute
   DeskRoute: typeof DeskRoute
   FormRoute: typeof FormRoute
@@ -392,6 +417,7 @@ export interface RootRouteChildren {
   TogetherRoute: typeof TogetherRoute
   ApiRtcRoute: typeof ApiRtcRoute
   ClubClubIdRoute: typeof ClubClubIdRoute
+  CuratedSlugRoute: typeof CuratedSlugRoute
   FriendsHandleRoute: typeof FriendsHandleRoute
   PledgeTokenRoute: typeof PledgeTokenRoute
   ReadWorkIdRoute: typeof ReadWorkIdRoute
@@ -424,6 +450,13 @@ declare module '@tanstack/react-router' {
       path: '/clubs'
       fullPath: '/clubs'
       preLoaderRoute: typeof ClubsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/curated': {
+      id: '/curated'
+      path: '/curated'
+      fullPath: '/curated'
+      preLoaderRoute: typeof CuratedRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/curator': {
@@ -531,6 +564,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ClubClubIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/curated_/$slug': {
+      id: '/curated_/$slug'
+      path: '/curated/$slug'
+      fullPath: '/curated/$slug'
+      preLoaderRoute: typeof CuratedSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/friends_/$handle': {
       id: '/friends_/$handle'
       path: '/friends/$handle'
@@ -628,6 +668,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AdaptedRoute: AdaptedRoute,
   ClubsRoute: ClubsRoute,
+  CuratedRoute: CuratedRoute,
   CuratorRoute: CuratorRoute,
   DeskRoute: DeskRoute,
   FormRoute: FormRoute,
@@ -643,6 +684,7 @@ const rootRouteChildren: RootRouteChildren = {
   TogetherRoute: TogetherRoute,
   ApiRtcRoute: ApiRtcRoute,
   ClubClubIdRoute: ClubClubIdRoute,
+  CuratedSlugRoute: CuratedSlugRoute,
   FriendsHandleRoute: FriendsHandleRoute,
   PledgeTokenRoute: PledgeTokenRoute,
   ReadWorkIdRoute: ReadWorkIdRoute,

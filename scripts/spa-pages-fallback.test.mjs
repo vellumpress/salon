@@ -71,6 +71,8 @@ test("encode then restore is a round trip for cold deep links", () => {
     loc("/salon/profile"),
     loc("/salon/friends"),
     loc("/salon/adapted"),
+    loc("/salon/curated"),
+    loc("/salon/curated/emmeline-clein"),
     loc("/salon/together"),
     loc("/salon/read/the-willows", "?at=12"),
     loc("/salon/s/abc", "", "#line"),
