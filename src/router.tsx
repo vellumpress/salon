@@ -1,6 +1,7 @@
 import { createRouter } from "@tanstack/react-router";
+import { Wordmark } from "@/components/wordmark";
 import { AppErrorComponent } from "@/lib/error-component";
-import { APP_BASE_PATH, APP_NAME } from "@/lib/site";
+import { APP_BASE_PATH } from "@/lib/site";
 import { routeTree } from "./routeTree.gen";
 
 export function getRouter() {
@@ -10,13 +11,13 @@ export function getRouter() {
     defaultErrorComponent: AppErrorComponent,
     defaultNotFoundComponent: () => (
       <div className="flex min-h-svh flex-col justify-end bg-paper p-8 text-ink">
-        <p className="type-kicker opacity-70">{APP_NAME}</p>
-        <p className="mt-2 type-title">This page is not on the shelf.</p>
+        <Wordmark />
+        <p className="mt-3 type-title">This page is not on the shelf.</p>
       </div>
     ),
     defaultPendingComponent: () => (
-      <div className="flex min-h-svh items-end bg-paper p-8 type-title text-ink">
-        {APP_NAME}
+      <div className="flex min-h-svh items-end bg-paper p-8 text-ink">
+        <Wordmark />
       </div>
     ),
     defaultPreload: "intent",

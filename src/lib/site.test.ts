@@ -1,10 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
+import { wordmarkInk, wordmarkStop } from "./brand.ts";
 import {
   APP_BASE_PATH,
   APP_DESCRIPTION,
   APP_NAME,
+  WORDMARK,
   publicUrl,
   salonShareText,
   salonShareTitle,
@@ -49,4 +51,27 @@ test("share copy keeps tbr lowercase on the title and the body", () => {
   assert.equal(site.title, APP_NAME);
   assert.equal(site.description, APP_DESCRIPTION);
   assert.match(APP_DESCRIPTION, /^tbr\./);
+  assert.equal(WORDMARK, "tbr.");
+});
+
+test("wordmark colors follow the sheet and the homepage mark has no gloss", () => {
+  assert.equal(wordmarkInk("paper"), "ink");
+  assert.equal(wordmarkStop("paper"), "oxblood");
+  for (const surface of ["forest", "navy", "blue", "oxblood", "ink"] as const) {
+    assert.equal(wordmarkInk(surface), "paper", surface);
+    assert.equal(wordmarkStop(surface), "olive", surface);
+  }
+  assert.equal(wordmarkInk("olive"), "ink");
+  assert.equal(wordmarkStop("olive"), "ink");
+
+  const wordmark = readFileSync(new URL("../components/wordmark.tsx", import.meta.url), "utf8");
+  const home = readFileSync(new URL("../routes/index.tsx", import.meta.url), "utf8");
+  const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
+  assert.match(wordmark, /wordmark-stop/);
+  assert.doesNotMatch(wordmark, /to be read/i);
+  assert.doesNotMatch(wordmark, /wordmark-tagline|wordmark-lockup/);
+  assert.doesNotMatch(home, /to be read/i);
+  assert.match(home, /<Wordmark/);
+  assert.match(css, /--color-oxblood:\s*#4b2a28/);
+  assert.doesNotMatch(css, /wordmark-tagline/);
 });

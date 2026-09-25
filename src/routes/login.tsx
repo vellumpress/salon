@@ -7,7 +7,8 @@ import {
   signIn as signInProvider,
 } from "@/lib/auth/client";
 import { ReaderAuthForm } from "@/components/reader-auth-form";
-import { APP_NAME, liveAuthAvailable, withBase } from "@/lib/site";
+import { Wordmark } from "@/components/wordmark";
+import { liveAuthAvailable, withBase } from "@/lib/site";
 import { confirmEmailMessage } from "@/lib/remote-auth";
 import { useReaderSession, type ReaderAuthMode } from "@/lib/use-reader-session";
 import { cn } from "@/lib/utils";
@@ -43,8 +44,8 @@ function LoginHeader() {
       >
         Home
       </Link>
-      <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
-        {APP_NAME}
+      <h1 className="flex min-w-0 flex-1 items-center px-4">
+        <Wordmark />
       </h1>
       <Link
         to="/profile"

@@ -15,6 +15,10 @@
   --color-forest: #0f5c38;
   --color-green: var(--color-forest);
   --color-rule: #111111;
+  /* Brand sheet. The square stop, and the shelf's navy / olive. */
+  --color-oxblood: #4b2a28;
+  --color-olive: #aba56d;
+  --color-navy: #333e56;
   --radius-sm: 0px;
   --radius-md: 0px;
   --radius-lg: 0px;
@@ -352,6 +356,46 @@ html.together-compose.together-kb .chat-slot {
   font-weight: 400;
   letter-spacing: var(--tracking-display);
   line-height: var(--text-mark--line-height);
+}
+
+/* tbr. lockup. The full stop is one square unit on the baseline. */
+.wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  min-width: 0;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.wordmark-name {
+  white-space: nowrap;
+}
+
+.wordmark-stop {
+  display: inline-block;
+  width: 0.18em;
+  height: 0.18em;
+  flex: none;
+  margin-left: 0.12em;
+  background: var(--color-oxblood);
+  vertical-align: baseline;
+}
+
+.wordmark[data-ink="paper"] {
+  color: var(--color-paper);
+}
+
+.wordmark[data-stop="olive"] .wordmark-stop {
+  background: var(--color-olive);
+}
+
+.wordmark[data-stop="ink"] .wordmark-stop {
+  background: var(--color-ink);
 }
 
 .type-title {
