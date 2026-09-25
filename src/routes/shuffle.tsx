@@ -12,7 +12,7 @@ import {
 import { boardWork } from "@/lib/mondrian";
 import { useTbr } from "@/lib/store";
 import { APP_NAME, publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
-import { prefetchWork } from "@/lib/works";
+import { prefetchWork } from "@/lib/prefetch-work";
 
 export const Route = createFileRoute("/shuffle")({
   validateSearch: (search: Record<string, unknown>): { except?: string; together?: boolean } => {

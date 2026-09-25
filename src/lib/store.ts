@@ -187,12 +187,41 @@ const emptyProgress = (): WorkProgress => ({
 const REENTRY_MS = 8 * 60 * 1000;
 
 let persistTimer = 0;
+let persistIdle = 0;
 let persistPending: { name: string; value: string } | null = null;
 
+function cancelScheduledPersist() {
+  if (typeof window === "undefined") return;
+  if (persistTimer) {
+    window.clearTimeout(persistTimer);
+    persistTimer = 0;
+  }
+  if (persistIdle && typeof window.cancelIdleCallback === "function") {
+    window.cancelIdleCallback(persistIdle);
+    persistIdle = 0;
+  }
+}
+
 function flushPersist() {
+  cancelScheduledPersist();
   if (!persistPending || typeof window === "undefined") return;
   window.localStorage.setItem(persistPending.name, persistPending.value);
   persistPending = null;
+}
+
+function schedulePersist() {
+  if (typeof window === "undefined") return;
+  cancelScheduledPersist();
+  const run = () => {
+    persistTimer = 0;
+    persistIdle = 0;
+    flushPersist();
+  };
+  if (typeof window.requestIdleCallback === "function") {
+    persistIdle = window.requestIdleCallback(run, { timeout: 1500 });
+    return;
+  }
+  persistTimer = window.setTimeout(run, 400);
 }
 
 const persistStorage = {
@@ -203,11 +232,11 @@ const persistStorage = {
   setItem: (name: string, value: string) => {
     if (typeof window === "undefined") return;
     persistPending = { name, value };
-    window.clearTimeout(persistTimer);
-    persistTimer = window.setTimeout(flushPersist, 220);
+    schedulePersist();
   },
   removeItem: (name: string) => {
     if (typeof window === "undefined") return;
+    cancelScheduledPersist();
     persistPending = null;
     window.localStorage.removeItem(name);
   },

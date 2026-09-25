@@ -5,7 +5,7 @@ import { PlaceChip } from "@/components/place-chip";
 import { favoriteWorks, YOU_PREVIEW } from "@/lib/favorites";
 import { fillClass, fillInk, mosaicFills } from "@/lib/mondrian";
 import { cn } from "@/lib/utils";
-import { prefetchWork } from "@/lib/works";
+import { prefetchWork } from "@/lib/prefetch-work";
 
 export function FavoriteWorks({
   ids,

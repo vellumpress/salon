@@ -6,7 +6,7 @@ import { ritualDurationLabel } from "@/lib/catalog/rituals";
 import { PlaceChip } from "@/components/place-chip";
 import { ResumeLink } from "@/components/resume-link";
 import { APP_NAME } from "@/lib/site";
-import { prefetchWork } from "@/lib/works";
+import { prefetchWork } from "@/lib/prefetch-work";
 
 export const Route = createFileRoute("/adapted")({
   component: AdaptedPage,

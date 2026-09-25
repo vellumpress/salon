@@ -3217,13 +3217,31 @@ function foldSearchText(value: string) {
   return value.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
 }
 
+/**
+ * Folded title/author/year blobs, built on the first query. Doing this at
+ * import would tax Home Screen boot; doing it on every keystroke janks the
+ * field on a phone.
+ */
+let searchBlobs: string[] | null = null;
+
+function shelfSearchBlobs() {
+  if (searchBlobs && searchBlobs.length === SHELF.length) return searchBlobs;
+  searchBlobs = SHELF.map((item) =>
+    foldSearchText(`${item.title} ${item.author} ${item.year} ${item.form} ${item.language}`),
+  );
+  return searchBlobs;
+}
+
 export function searchShelf(query: string) {
   const q = foldSearchText(query.trim());
   if (!q) return SHELF;
-  return SHELF.filter((item) => {
-    const blob = foldSearchText(
-      `${item.title} ${item.author} ${item.year} ${item.form} ${item.language}`,
-    );
-    return q.split(/\s+/).every((word) => blob.includes(word));
-  });
+  const words = q.split(/\s+/);
+  const blobs = shelfSearchBlobs();
+  const out: ShelfWork[] = [];
+  for (let i = 0; i < SHELF.length; i++) {
+    const blob = blobs[i] ?? "";
+    const item = SHELF[i];
+    if (item && words.every((word) => blob.includes(word))) out.push(item);
+  }
+  return out;
 }

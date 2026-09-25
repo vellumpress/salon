@@ -8,7 +8,7 @@ import {
   withLocalBound,
 } from "@/lib/catalog/full-pdf";
 import { PlaceChip } from "@/components/place-chip";
-import { prefetchWork } from "@/lib/works";
+import { prefetchWork } from "@/lib/prefetch-work";
 import { cn } from "@/lib/utils";
 
 export type ShelfSearchGate = "fullPdf" | "local";

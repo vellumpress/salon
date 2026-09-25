@@ -31,7 +31,7 @@ import {
   ShelfSearchHits,
   useShelfSearch,
 } from "@/components/shelf-search";
-import { prefetchWork } from "@/lib/works";
+import { prefetchWork } from "@/lib/prefetch-work";
 import { cn } from "@/lib/utils";
 import { mixSeed, takeShuffled } from "@/lib/recommend";
 import { useVisitSeed } from "@/lib/use-visit-seed";

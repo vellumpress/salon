@@ -160,6 +160,19 @@ export function prefetchWork(id: string) {
   void loadWork(id);
 }
 
+/** Opening only — enough for the first page, without parsing a full novel. */
+export function prefetchOpening(id: string) {
+  if (!id || id === "page") return;
+  if (cache.get(id)) return;
+  if (isLocalBound(id)) {
+    const loader = openings[`./catalog/openings/${id}.json`];
+    if (typeof loader !== "function") return;
+    void loadLocalOpening(id);
+    return;
+  }
+  void loadOpening(id);
+}
+
 if (typeof document !== "undefined") {
   document.addEventListener(
     "pointerdown",

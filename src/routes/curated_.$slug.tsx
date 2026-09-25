@@ -9,7 +9,7 @@ import {
   type CuratedPick,
 } from "@/lib/catalog/curated";
 import { ResumeLink } from "@/components/resume-link";
-import { prefetchWork } from "@/lib/works";
+import { prefetchWork } from "@/lib/prefetch-work";
 
 export const Route = createFileRoute("/curated_/$slug")({
   component: CuratedListPage,

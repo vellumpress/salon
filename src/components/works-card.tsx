@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { PlaceChip } from "@/components/place-chip";
 import type { ShelfWork } from "@/lib/catalog/shelf";
-import { prefetchWork } from "@/lib/works";
+import { prefetchWork } from "@/lib/prefetch-work";
 
 /**
  * Homepage carousel card: title, author, country outline.
