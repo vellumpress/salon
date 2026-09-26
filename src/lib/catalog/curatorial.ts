@@ -285,6 +285,21 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Brilliant Career Australia preferred; Plumed mystic-expat ≠ Underdogs
  * revolution; Mexico ≠ Pamplona; Red Room Stockholm ≠ Hunger Kristiania;
  * Red Room ≠ Inferno; Fortune-Teller ≠ Attendant’s Confession.
+ * Mira Sat 26 Sep 2026 MIDDAY CLEAR — Recommend only, never Featured.
+ * The Green Carnation leads this cycle’s Next append (green carnation in the
+ * evening coat, Piccadilly glass, Hichens 1894, PG 24499; credit block
+ * skipped). Soft London after Reuben Sachs and the Forsytes is absorbed as
+ * the lead. Hajji Baba follows (Kerbelai Hassan, barber of Ispahan, Morier,
+ * first 1824 / Macmillan 1895, PG 21331; Curzon introduction and Macmillan
+ * apparatus skipped). Period Orientalism stays as printed. The Purple Land
+ * follows and keeps its earlier Next seat (three chapters, Banda Oriental,
+ * Hudson, Sampson Low 1885, PG 7132; 1904 preface skipped). Uruguay is not
+ * Guyana. The Master of Ballantrae follows (Durrisdeer, 1745, Stevenson 1889,
+ * PG 864; dedication and contents rhymes skipped). A Set of Six is Rituals
+ * only — Gaspar Ruiz, Conrad 1908, PG 2305 — and is not this Next queue and
+ * not For you. Cold-open stays Mirth → Quicksand → Botchan. Sat AM Moon,
+ * Fri 6PM High Wind, evening Hidden Force, afternoon Confusion, noon Man of
+ * Property, morning Cabala, and Emmeline stay ahead and untouched.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -690,6 +705,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "my-brilliant-career",
   "the-plumed-serpent",
   "the-red-room",
+  // Mira Sat 26 Sep 2026 MIDDAY CLEAR — Green Carnation leads Next. Never Featured.
+  // Purple Land already has an earlier Next seat; this is the cycle order.
+  // A Set of Six is Rituals (Gaspar Ruiz only), not this tail.
+  // Sat AM and Fri packs stay ahead.
+  "the-green-carnation",
+  "hajji-baba",
+  "the-purple-land",
+  "the-master-of-ballantrae",
 ] as const;
 
 /**

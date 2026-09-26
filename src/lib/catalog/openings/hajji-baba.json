@@ -1,0 +1,51 @@
+{
+  "id": "hajji-baba",
+  "title": "The Adventures of Hajji Baba of Ispahan",
+  "author": "James Justinian Morier",
+  "year": "1824 / 1895",
+  "note": "Project Gutenberg 21331. Host: Ch I Kerbelai Hassan barber / Ispahan razor (Curzon intro / Macmillan apparatus skipped).",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Persia — Ispahan barber → road",
+      "place": "Chapter I · Persia — Ispahan barber → road",
+      "reentry": "My father, Kerbelai Hassan, was one of the most celebrated barbers of Ispahan. He was married, when only seventeen years of age, to the daughter of a chandler, who lived in the neighbourhood of his sh",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "My father, Kerbelai Hassan, was one of the most celebrated barbers of Ispahan. He was married, when only seventeen years of age, to the daughter of a chandler, who lived in the neighbourhood of his shop; but the connexion was not fortunate, for his wife brought him no offspring, and he, in consequence, neglected her. His dexterity in the use of a razor had gained for him, together with no little renown, such great custom, particularly among the merchants, that after twenty years' industry, he found he could afford to add a second wife to his harem; and succeeded in obtaining the daughter of a rich money-changer, whose head he had shaved, during that period, with so much success, that he made no difficulty in granting his daughter to my father. In order to get rid, for a while, of the importunities and jealousy of his first wife, and also to acquire the good opinion of his father-in-law (who, although noted for clipping money, and passing it for lawful, affected to be a saint), he undertook a pilgrimage to the tomb of Hosein, at Kerbelah. He took his new wife with him, and she was delivered of me on the road. Before the journey took place he was generally known, simply as 'Hassan the barber'; but ever after he was honoured by the epithet of Kerbelai; and I, to please my mother, who spoilt me, was called *Hajjî* or the pilgrim, a name which has stuck to me through life, and procured for me a great deal of unmerited respect; because, in fact, that honoured title is seldom conferred on any but those who have made the great pilgrimage to the tomb of the blessed Prophet of Mecca."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "My father having left his business during his absence to his chief apprentice, resumed it with increased industry on his return; and the reputation of a zealous Mussulman, which he had acquired by his journey, attracted the clergy, as well as the merchants, to his shop. It being intended that I should be brought up to the strap, I should perhaps have received no more education than was necessary to teach me my prayers, and I not been noticed by a *mollah*, (or priest), who kept a school in an adjoining mosque, whom my father (to keep up the character he had acquired of being a good man) used to shave once a week, as he was wont to explain, purely for the love of God. The holy man repaid the service by teaching me to read and write; and I made such progress under his care, that in two years I could decipher the Koran, and began to write a legible hand. When not in school I attended the shop, where I learnt the rudiments of my profession, and when there was a press of customers, was permitted to practise upon the heads of muleteers and camel-drivers, who indeed sometimes paid dear for my first essays."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "By the time I was sixteen it would be difficult to say whether I was most accomplished as a barber or a scholar. Besides shaving the head, cleaning the ears, and trimming the beard, I became famous for my skill in the offices of the bath. No one understood better than I the different modes of rubbing or shampooing, as practised in India, Cashmere, and Turkey; and I had an art peculiar to myself of making the joints to crack, and my slaps echo."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Thanks to my master, I had learnt sufficiently of our poets to enable me to enliven conversation with occasional apt quotations from Saadi, Hafiz, etc.; this accomplishment, added to a good voice, made me considered as an agreeable companion by all those whose crowns or limbs were submitted to my operation. In short, it may, without vanity, be asserted that Hajji Baba was quite the fashion among the men of taste and pleasure."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "My father's shop being situated near the Royal Caravanserai, the largest and most frequented in the city, was the common resort of the foreign, as well as of the resident, merchants; they not unfrequently gave him something over and above the usual price, for the entertainment they found in the repartees of his hopeful son. One of them, a Bagdad merchant, took great fancy to me, and always insisted that I should attend upon him, in preference even to my more experienced father. He made me converse with him in Turkish, of which I had acquired a slight knowledge, and so excited my curiosity by describing the beauties of the different cities which he had visited, that I soon felt a strong desire to travel. He was then in want of some one to keep his accounts, and as I associated the two qualifications of barber and scribe, he made me such advantageous offers, to enter into his service, that I agreed to follow him; and immediately mentioned my determination to my father. My father was very loath to lose me, and endeavoured to persuade me not to leave a certain profession for one which was likely to be attended with danger and vicissitudes; but when he found how advantageous were the merchant's offers, and that it was not impossible that I might become one myself in time, he gradually ceased to dissuade me from going; and at length gave me his blessing, accompanied by a new case of razors."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "My mother's regret for the loss of my society, and her fears for my safety, derived no alleviation from the prospect of my expected future aggrandizement; she augured no good from a career begun in the service of a *Sûni*; but still, as a mark of her maternal affection, she gave me a bag of broken biscuit, accompanied by a small tin case of a precious unguent, which, she told me, would cure all fractures, and internal complaints. She further directed me to leave the house with my face towards the door, by way of propitiating a happy return from a journey undertaken under such inauspicious circumstances."
+    }
+  ]
+}

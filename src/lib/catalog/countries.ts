@@ -192,6 +192,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Samuel Butler",
     "Robert Herrick",
     "Robert Hichens",
+    "James Justinian Morier",
     "Rudyard Kipling",
     "Rose Macaulay",
     "Saki (H. H. Munro)",

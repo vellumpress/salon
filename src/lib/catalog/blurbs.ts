@@ -471,10 +471,10 @@ const BLURBS: Record<string, string> = {
   "the-rescue": "Conrad returns to the islands: a yacht, a lagoon, and a rescue that costs.",
   "within-the-tides": "Shorter Conrad: coasts, debts, and men who arrive too late.",
   "twixt-land-and-sea": "Conrad stories of captains between a berth and a shore they cannot trust.",
-  "a-set-of-six": "Six Conrad tales of spies, duels, and the joke that isn’t.",
+  "a-set-of-six": "Gaspar Ruiz: a revolutionary war raises a strong man out of obscurity. One tale.",
   "tales-of-unrest": "Early Conrad: outposts where the climate is already an argument.",
   "new-arabian-nights": "Stevenson’s London and Paris as a game of disguises and clubs.",
-  "the-master-of-ballantrae": "Two Scottish brothers, a war, and a hatred that outlives the estate.",
+  "the-master-of-ballantrae": "The full truth of this odd matter — Durrisdeer, 1745, and the heir by the King’s bridle.",
   catriona: "David Balfour again, now in love and in Dutch and Scottish trouble.",
   "the-black-arrow": "Wars of the Roses, a young man, and a company that shoots from the woods.",
   "the-merry-men-and-other-tales-and-fables":
@@ -687,7 +687,7 @@ const BLURBS: Record<string, string> = {
   "the-beth-book": "A girl artist against the available script for daughters.",
   keynotes: "George Egerton’s New Woman stories — desire written without asking permission.",
   "the-woman-who-did": "Grant Allen’s heroine who will not marry, and the novel that made a scandal of it.",
-  "the-green-carnation": "Hichens’ satire of the Wilde circle, published while the trial was still a weather.",
+  "the-green-carnation": "A green carnation in an evening coat, and a Piccadilly glass that already knows the pose.",
   "the-sorrows-of-satan": "Corelli’s bestseller: the devil in London society, taking notes.",
   "esther-waters": "A servant has a child and keeps it — Moore’s London without the varnish.",
   "south-wind": "Capri as a talking shop: Douglas’s island of people who have already left England.",
@@ -746,8 +746,10 @@ const BLURBS: Record<string, string> = {
   "for-the-term-of-his-natural-life":
     "A transported man in Van Diemen’s Land, and a sentence that is the country.",
   "the-man-from-snowy-river": "Paterson’s bush ballads: a ride, a horse, a legend already moving.",
+  "hajji-baba":
+    "Kerbelai Hassan, barber of Ispahan, and a razor that starts the road. Period language stays.",
   "the-purple-land":
-    "Three chapters in the story of a life open into the Banda Oriental — guerrilla and gaucho country, soft against Green Mansions.",
+    "Three chapters in the story of a life open into the Banda Oriental — Uruguay, not Guyana.",
   "malay-sketches": "Swettenham’s peninsula: colonial notes that cannot quite own the place.",
   "in-court-and-kampong": "Clifford’s Malay world: court, village, and the Englishman taking dictation.",
   "malay-annals-sejarah-melayu": "The Sejarah Melayu: kings, cities, and the peninsula remembering itself.",
