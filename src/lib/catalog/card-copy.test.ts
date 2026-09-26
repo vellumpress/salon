@@ -1808,7 +1808,7 @@ test("Tier B batches 3–4 are local format-min binds, never Featured", () => {
     assert.equal(isBoundLocal(work!), true, id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal(coldOpen.has(id), false, id);
-    if (id === "my-brilliant-career") {
+    if (id === "my-brilliant-career" || id === "kim") {
       assert.equal(curatorialTrack(id), "next", id);
       assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), true, id);
       assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);

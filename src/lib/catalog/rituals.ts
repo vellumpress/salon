@@ -295,6 +295,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `The full truth of this odd matter — Durrisdeer in 1745, and the heir who should ride by his King’s bridle. Skip the dedication and the contents rhymes. Stevenson’s 1889 novel.`,
   "a-set-of-six":
     `One tale only: Gaspar Ruiz. A revolutionary war raises strange characters, and this sit stops while the detachment is still running. It does not open The Informer. Conrad’s 1908 set. Chile’s register is not the Banda Oriental.`,
+  "the-hill-of-dreams":
+    `There was a glow in the sky as if great furnace doors were opened. Lucian Taylor goes out to lose himself on the Gwent hill lane. Skip the credit block and the contents. Machen’s 1907 novel. The open stays in Gwent; later London is soft after The Green Carnation.`,
+  "the-story-of-an-african-farm":
+    `The full African moon poured down its light from the blue sky into the wide, lonely plain. Skip the preface, the glossary, and the epigraph. Schreiner’s 1883 novel, first issued as Ralph Iron. The Karoo is not Mashonaland, not Mhudi, and not Gaspar Ruiz.`,
+  "the-imperialist":
+    `It would have been idle to inquire into the antecedents of old Mother Beggarlegs. Skip the produced-by credit. Duncan’s 1904 novel, Elgin, Ontario. No score is invented for this sit. The first breath is 585 words — phone-hard, left as printed.`,
+  kim:
+    `He sat, in defiance of municipal orders, astride the gun Zam Zammah opposite the Wonder House, as the natives call the Lahore Museum. Skip the verse epigraph. Kipling’s 1901 novel. “Half-caste” and “burned black as any native” stay as printed — flag, do not sanitize. Calvary stays held.`,
+  "mogens-and-other-stories":
+    `Summer it was, in the middle of the day, in a corner of the enclosure. This sit is Mogens only, a timed cut; the whole novella is too long for one sitting. Skip the introduction. Jacobsen, in Grabow’s 1921 English of the 1882 Danish. Denmark is not Stockholm after The Red Room. The other three tales stay in the book.`,
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
   "brazilian-tales":
@@ -859,6 +869,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "hajji-baba",
       "the-purple-land",
       "the-master-of-ballantrae",
+      // Mira Sat 26 Sep 2026 AFTERNOON CLEAR — Hill of Dreams leads. Never Featured.
+      "the-hill-of-dreams",
+      "the-story-of-an-african-farm",
+      "the-imperialist",
+      "kim",
     ],
   },
   {
@@ -919,6 +934,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "brazilian-tales",
       // Mira Sat 26 Sep 2026 MIDDAY CLEAR — Gaspar Ruiz only. Not the other five.
       "a-set-of-six",
+      // Mira Sat 26 Sep 2026 AFTERNOON CLEAR — Mogens timed cut only. Not the other three.
+      "mogens-and-other-stories",
     ],
   },
   {
@@ -1005,6 +1022,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "hajji-baba",
       "the-purple-land",
       "the-master-of-ballantrae",
+      // Mira Sat 26 Sep 2026 AFTERNOON CLEAR — Hill of Dreams leads. Never Featured.
+      "the-hill-of-dreams",
+      "the-story-of-an-african-farm",
+      "the-imperialist",
+      "kim",
     ],
   },
   {
@@ -1090,6 +1112,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "hajji-baba",
       "the-purple-land",
       "the-master-of-ballantrae",
+      // Mira Sat 26 Sep 2026 AFTERNOON CLEAR — Hill of Dreams leads. Never Featured.
+      "the-hill-of-dreams",
+      "the-story-of-an-african-farm",
+      "the-imperialist",
+      "kim",
     ],
   },
   {
@@ -1207,6 +1234,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-purple-land": 6,
   "the-master-of-ballantrae": 6,
   "a-set-of-six": 6,
+  "the-hill-of-dreams": 6,
+  "the-story-of-an-african-farm": 6,
+  "the-imperialist": 7,
+  kim: 6,
+  "mogens-and-other-stories": 6,
   "there-is-confusion": 8,
   "pointed-roofs": 4,
   buddenbrooks: 5,

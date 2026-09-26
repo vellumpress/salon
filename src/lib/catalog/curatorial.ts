@@ -300,6 +300,27 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * not For you. Cold-open stays Mirth → Quicksand → Botchan. Sat AM Moon,
  * Fri 6PM High Wind, evening Hidden Force, afternoon Confusion, noon Man of
  * Property, morning Cabala, and Emmeline stay ahead and untouched.
+ * Mira Sat 26 Sep 2026 AFTERNOON CLEAR — Recommend only, never Featured.
+ * The Hill of Dreams leads this cycle’s Next append (furnace-glow sky,
+ * Lucian Taylor’s lose-himself lane, Machen 1907, PG 13969; credits and
+ * contents skipped). The open stays in Gwent; later London is soft after
+ * The Green Carnation. LEAD kept — not African Farm. The Story of an African
+ * Farm follows (full moon on the Karoo, Schreiner 1883, first issued as
+ * Ralph Iron, PG 1441; preface, glossary, and epigraph skipped). The Karoo
+ * is not Mashonaland, not Mhudi, and not Gaspar Ruiz. The earlier
+ * african-farm seat stays. The Imperialist follows (Mother Beggarlegs,
+ * Elgin, Duncan, PG text 1904 only, PG 5301; produced-by credit skipped).
+ * No score is invented. The first breath is 585 words — phone-hard, left
+ * as printed. Kim follows (Zam Zammah / Lahore Wonder House, Kipling 1901,
+ * PG 2226; verse epigraph skipped). “Half-caste” and “burned black as any
+ * native” stay as printed. Calvary stays held. Mogens, and Other Stories
+ * is Rituals only — Mogens timed cut, Jacobsen, Grabow’s 1921 English of
+ * the 1882 Danish, PG 6765 — and is not this Next queue and not For you.
+ * Denmark is not Stockholm after The Red Room. The earlier mogens seat
+ * stays. Cold-open stays Mirth → Quicksand → Botchan. Sat midday Green
+ * Carnation, Sat AM Moon, Fri 6PM High Wind, evening Hidden Force,
+ * afternoon Confusion, noon Man of Property, morning Cabala, and Emmeline
+ * stay ahead and untouched.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -713,6 +734,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "hajji-baba",
   "the-purple-land",
   "the-master-of-ballantrae",
+  // Mira Sat 26 Sep 2026 AFTERNOON CLEAR — Hill of Dreams leads Next. Never Featured.
+  // The earlier african-farm seat stays; this cycle uses the-story-of-an-african-farm.
+  // Mogens is Rituals (timed Mogens cut only), not this tail.
+  // Midday, Sat AM, and Fri packs stay ahead.
+  "the-hill-of-dreams",
+  "the-story-of-an-african-farm",
+  "the-imperialist",
+  "kim",
 ] as const;
 
 /**
