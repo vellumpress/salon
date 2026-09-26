@@ -434,7 +434,7 @@ const BLURBS: Record<string, string> = {
   "the-picture-of-dorian-gray":
     "Wilde’s beautiful face stays young while the portrait keeps the score.",
   "the-importance-of-being-earnest": "Two bunburyists, one handbag, and a name that has to be earnest.",
-  kim: "An Irish boy in India learns the Great Game between the bazaar and the hills.",
+  kim: "A boy sits astride Zam Zammah opposite Lahore’s Wonder House.",
   "plain-tales-from-the-hills":
     "Kipling’s Simla and cantonment stories — gossip with the empire still in the room.",
   she: "Ayesha waits in a lost city for a man who has already died once.",
@@ -534,7 +534,10 @@ const BLURBS: Record<string, string> = {
   "more-ghost-stories-of-an-antiquary": "Further James: more libraries, more things that follow you home.",
   "a-thin-ghost-and-others": "Later James hauntings, thinner and closer.",
   "the-great-god-pan": "A London experiment that lets something older into a girl’s nerves.",
-  "the-hill-of-dreams": "A Welsh writer ruins himself on a Roman hill and a London room.",
+  "the-hill-of-dreams": "A furnace-glow sky, and Lucian Taylor loses himself on a Gwent hill lane.",
+  "the-story-of-an-african-farm": "The full African moon pours onto a Karoo plain and a solitary kopje.",
+  "the-imperialist": "Old Mother Beggarlegs sells gingerbread in the Elgin market, and the first breath stays 585 words as printed.",
+  "mogens-and-other-stories": "Summer it was, in a corner of the enclosure, and this sit is Mogens only.",
   "the-willows": "Two men camp on a Danube island that does not want visitors.",
   "three-john-silence-stories": "Blackwood’s psychic doctor, called in when the house is the patient.",
   "incredible-adventures": "Blackwood’s longer strange journeys — less jump than a slow wrongness.",

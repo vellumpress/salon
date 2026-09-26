@@ -415,7 +415,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
   "South Africa": ["James A. Honey", "Olive Schreiner", "R. R. R. Dhlomo", "Sol Plaatje"],
   Australia: ["A. B. Paterson", "George Egerton", "Henry Handel Richardson", "Henry Lawson", "Joseph Furphy", "Marcus Clarke", "Miles Franklin", "Rolf Boldrewood"],
   "New Zealand": ["Katherine Mansfield"],
-  Canada: ["Bliss Carman", "Bliss Carman; Richard Hovey", "Frank L. Packard", "Louis Hémon", "Louis Hémon (tr. W. H. Blake)", "Onoto Watanna (Winnifred Eaton)", "Robert W. Service"],
+  Canada: ["Bliss Carman", "Bliss Carman; Richard Hovey", "Frank L. Packard", "Louis Hémon", "Louis Hémon (tr. W. H. Blake)", "Onoto Watanna (Winnifred Eaton)", "Robert W. Service", "Sara Jeannette Duncan"],
   Jamaica: ["Claude McKay", "Martha Warren Beckwith", "Walter Jekyll"],
   Guyana: ["Eric Walrond"],
   Hungary: ["Dezső Kosztolányi", "Ferenc Molnár", "Kálmán Mikszáth", "Mór Jókai"],
@@ -439,7 +439,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
   ],
   Sweden: ["August Strindberg", "August Strindberg (trans. Ellie Schleussner)", "Hjalmar Söderberg (tr. Charles Wharton Stork)", "Selma Lagerlöf"],
   Norway: ["Alexander Kielland", "Bjørnstjerne Bjørnson", "Henrik Ibsen", "Johan Bojer", "Jonas Lie", "Knut Hamsun", "Knut Hamsun (tr. W. W. Worster)", "Knut Hamsun (trans. George Egerton)", "Sigrid Undset"],
-  Denmark: ["Henrik Pontoppidan", "J. P. Jacobsen", "Jens Peter Jacobsen", "Martin Andersen Nexø"],
+  Denmark: ["Henrik Pontoppidan", "J. P. Jacobsen", "J. P. Jacobsen (trans. Anna Grabow)", "Jens Peter Jacobsen", "Martin Andersen Nexø"],
   Finland: ["Aleksis Kivi", "Aleksis Kivi (tr. Alex Matson)", "Elias Lönnrot", "Johannes Linnankoski"],
   Greece: [
     "Alexandros Papadiamantis",
@@ -573,6 +573,10 @@ const WORK_COUNTRY: Record<string, string> = {
   "constab-ballads": "Jamaica",
   // Kipling — the Indian books
   kim: "India",
+  "the-hill-of-dreams": "Wales",
+  "the-story-of-an-african-farm": "South Africa",
+  "the-imperialist": "Canada",
+  "mogens-and-other-stories": "Denmark",
   "plain-tales-from-the-hills": "India",
   "life-s-handicap-being-stories-of-mine-own-people": "India",
   "the-phantom-rickshaw-and-other-ghost-stories": "India",
