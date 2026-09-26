@@ -285,8 +285,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `It was a wonderful night — the dreamer’s starry Petersburg. First Night only, and not Notes from Underground.`,
   "west-african-folk-tales":
     `Anansi buys the stories from Nyankupon. One tale per sit — How We Got the Name ‘Spider Tales’ — soft against Jamaica Anansi.`,
+  "the-green-carnation":
+    `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
+  "hajji-baba":
+    `Kerbelai Hassan, barber of Ispahan, and the razor that starts the road. Skip the Curzon introduction and the Macmillan apparatus. First 1824; this printing is 1895. Period Orientalism stays as printed — flag, do not sanitize.`,
   "the-purple-land":
-    `“Three chapters in the story of my life…” opens the frame into the Banda Oriental. Soft against Green Mansions. Guerrilla and gaucho country — Host OK.`,
+    `“Three chapters in the story of my life…” opens the frame into the Banda Oriental. Skip the 1904 preface. Hudson’s 1885 novel. Uruguay, not Guyana. Guerrilla and gaucho country — Host OK.`,
+  "the-master-of-ballantrae":
+    `The full truth of this odd matter — Durrisdeer in 1745, and the heir who should ride by his King’s bridle. Skip the dedication and the contents rhymes. Stevenson’s 1889 novel.`,
+  "a-set-of-six":
+    `One tale only: Gaspar Ruiz. A revolutionary war raises strange characters, and this sit stops while the detachment is still running. It does not open The Informer. Conrad’s 1908 set. Chile’s register is not the Banda Oriental.`,
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
   "brazilian-tales":
@@ -793,7 +801,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "growth-of-the-soil",
       "tropic",
       "bunner-sisters",
-      "the-purple-land",
       "bread-givers",
       "the-story-of-gosta-berling",
       "bertha-garlan",
@@ -846,6 +853,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "my-brilliant-career",
       "the-plumed-serpent",
       "the-red-room",
+      // Mira Sat 26 Sep 2026 MIDDAY CLEAR — Green Carnation leads. Never Featured.
+      // Purple Land leaves its earlier seat so this cycle reads in order.
+      "the-green-carnation",
+      "hajji-baba",
+      "the-purple-land",
+      "the-master-of-ballantrae",
     ],
   },
   {
@@ -904,6 +917,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "strange-tales",
       // Mira Sat 26 Sep 2026 AM CLEAR — Fortune-Teller only. Not Attendant's Confession.
       "brazilian-tales",
+      // Mira Sat 26 Sep 2026 MIDDAY CLEAR — Gaspar Ruiz only. Not the other five.
+      "a-set-of-six",
     ],
   },
   {
@@ -947,7 +962,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-gadfly",
       "the-painted-veil",
       "growth-of-the-soil",
-      "the-purple-land",
       "noli-me-tangere",
       "bread-givers",
       "the-story-of-gosta-berling",
@@ -986,6 +1000,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "my-brilliant-career",
       "the-plumed-serpent",
       "the-red-room",
+      // Mira Sat 26 Sep 2026 MIDDAY CLEAR — Green Carnation leads. Never Featured.
+      "the-green-carnation",
+      "hajji-baba",
+      "the-purple-land",
+      "the-master-of-ballantrae",
     ],
   },
   {
@@ -1028,7 +1047,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-gadfly",
       "the-painted-veil",
       "growth-of-the-soil",
-      "the-purple-land",
       "noli-me-tangere",
       "bread-givers",
       "the-story-of-gosta-berling",
@@ -1067,6 +1085,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "my-brilliant-career",
       "the-plumed-serpent",
       "the-red-room",
+      // Mira Sat 26 Sep 2026 MIDDAY CLEAR — Green Carnation leads. Never Featured.
+      "the-green-carnation",
+      "hajji-baba",
+      "the-purple-land",
+      "the-master-of-ballantrae",
     ],
   },
   {
@@ -1179,7 +1202,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-awakening": 5,
   "a-few-figs-from-thistles": 5,
   tropic: 5,
-  "the-purple-land": 2,
+  "the-green-carnation": 6,
+  "hajji-baba": 5,
+  "the-purple-land": 6,
+  "the-master-of-ballantrae": 6,
+  "a-set-of-six": 6,
   "there-is-confusion": 8,
   "pointed-roofs": 4,
   buddenbrooks: 5,
