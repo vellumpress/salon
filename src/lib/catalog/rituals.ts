@@ -315,6 +315,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `It was pouring with rain, and Dorine van Lowe dropped in on Karel and Cateau with a wet umbrella. Skip the translator’s note. Couperus, Teixeira’s English, Dutch 1901 / 1914. The Hague is not the Java Residency.`,
   "stories-and-pictures":
     `Down here, in this world, Bontzye Shweig’s death made no impression at all. This sit is Bontzye Shweig only. Skip the preface and the other tales. Peretz, Helena Frank’s English, Yiddish 1894 / 1906. This is not the Poland theater.`,
+  "white-jacket":
+    `It was not a very white jacket, but white enough. Chapter I, The Jacket — Callao, and a US frigate bound for Cape Horn. Skip the note and the contents. Melville’s 1850 novel. A man-of-war, not Tahiti after The Moon and Sixpence. No score is invented for this sit. The lead stays this jacket.`,
+  "a-japanese-nightingale":
+    `The last rays of sunset were tingeing the land above the bay. Chapter I, The Storm Dance — a tea-house island. Skip the illustration list and the contents. Eaton’s 1901 novel, published as Onoto Watanna. Japan after Botchan and Kwaidan; the Unhuman Tour stays held. No score is invented for this sit.`,
+  "maria-chapdelaine":
+    `The door opened, and the men of the congregation began to come out of the church at Peribonka. Chapter I — April snow on the church steps. Skip the reprint table. Hémon, in Blake’s English, French 1913 / 1921. Peribonka is not Elgin, Ontario.`,
+  "the-house-by-the-medlar-tree":
+    `Once the Malavoglia were as numerous as the stones on the old road to Trezza. Chapter I — Padron ’Ntoni and the Provvidenza. Skip Howells’s introduction. Verga, in Mary A. Craig’s English, Italian 1881 / 1890. Sicily is not Rome.`,
+  "filipino-popular-tales":
+    `There was once an old woman who had an only son named Suan. This sit is Suan’s Good Luck only. Skip the preface, the other tales, and the notes. Fansler’s 1921 collection. One tale this sit; the book continues. No score is invented for this sit.`,
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
   "brazilian-tales":
@@ -568,7 +578,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-gods-of-pegana",
       "the-grand-babylon-hotel",
       "the-hidden-force",
-      "the-house-by-the-medlar-tree",
       "the-house-of-the-seven-gables",
       "the-jacket",
       "the-job",
@@ -594,7 +603,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "twilight-sleep",
       "virgin-soil",
       "wanderers",
-      "white-jacket",
       "yekl",
       "zuleika-dobson",
       "a-group-of-noble-dames",
@@ -787,7 +795,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "conference",
       "gentlemen-prefer-blondes",
       "of-one-blood",
-      "maria-chapdelaine",
       "lady-into-fox",
       "african-farm",
       "a-passage-to-india",
@@ -887,6 +894,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "calvary",
       "anna-of-the-five-towns",
       "small-souls",
+      // Mira Sat 26 Sep 2026 ~6PM CLEAR — White Jacket leads. Never Featured.
+      // Earlier seats left this lane so the cycle reads in order.
+      "white-jacket",
+      "a-japanese-nightingale",
+      "maria-chapdelaine",
+      "the-house-by-the-medlar-tree",
     ],
   },
   {
@@ -951,6 +964,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "mogens-and-other-stories",
       // Mira Sat 26 Sep 2026 EVENING CLEAR — Bontzye Shweig only. Not the other tales.
       "stories-and-pictures",
+      // Mira Sat 26 Sep 2026 ~6PM CLEAR — Suan’s Good Luck only. Not the other tales.
+      "filipino-popular-tales",
     ],
   },
   {
@@ -1047,6 +1062,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "calvary",
       "anna-of-the-five-towns",
       "small-souls",
+      // Mira Sat 26 Sep 2026 ~6PM CLEAR — White Jacket leads. Never Featured.
+      "white-jacket",
+      "a-japanese-nightingale",
+      "maria-chapdelaine",
+      "the-house-by-the-medlar-tree",
     ],
   },
   {
@@ -1142,6 +1162,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "calvary",
       "anna-of-the-five-towns",
       "small-souls",
+      // Mira Sat 26 Sep 2026 ~6PM CLEAR — White Jacket leads. Never Featured.
+      "white-jacket",
+      "a-japanese-nightingale",
+      "maria-chapdelaine",
+      "the-house-by-the-medlar-tree",
     ],
   },
   {
@@ -1304,7 +1329,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-gods-of-pegana": 5,
   "the-grand-babylon-hotel": 5,
   "the-hidden-force": 5,
-  "the-house-by-the-medlar-tree": 5,
+  "the-house-by-the-medlar-tree": 6,
   "the-house-of-the-seven-gables": 5,
   "the-jacket": 5,
   "the-job": 5,
@@ -1331,7 +1356,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "twilight-sleep": 5,
   "virgin-soil": 5,
   "wanderers": 5,
-  "white-jacket": 5,
+  "white-jacket": 4,
   "yekl": 5,
   "zuleika-dobson": 5,
   "a-group-of-noble-dames": 5,
@@ -1358,7 +1383,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "ballads-of-a-bohemian": 5,
   "ballads-of-a-cheechako": 5,
   "crucial-instances": 5,
-  "filipino-popular-tales": 5,
+  "filipino-popular-tales": 3,
   "lost-illusions": 5,
   "mogens": 5,
   "more-songs-from-vagabondia": 5,
@@ -1529,7 +1554,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "conference": 5,
   "gentlemen-prefer-blondes": 5,
   "of-one-blood": 5,
-  "maria-chapdelaine": 5,
+  "maria-chapdelaine": 6,
+  "a-japanese-nightingale": 6,
   "lady-into-fox": 5,
   "african-farm": 5,
   "a-passage-to-india": 5,

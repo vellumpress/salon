@@ -644,7 +644,7 @@ const BLURBS: Record<string, string> = {
   "lady-into-fox":
     "Wonderful events are irregular — then Mrs. Tebrick’s change into a vixen is an established fact.",
   "maria-chapdelaine":
-    "Péribonka church door on the snow road — Blake’s English of Hémon’s Quebec winter.",
+    "The church door at Peribonka opens, and the men come out into April snow.",
   "seven-brothers":
     "Jukola Farm on the Häme slope: seven brothers, Matson’s English, no translator’s Preface.",
   "imperium-in-imperio": "Griggs’ secret Black nation inside the United States — a political thought-experiment.",
@@ -774,7 +774,10 @@ const BLURBS: Record<string, string> = {
   "south-african-folk-tales": "Honey’s collection of southern African tales, animals arguing like people.",
   "west-african-folk-tales": "One tale: Anansi buys the stories from Nyankupon.",
   "sappho-one-hundred-lyrics": "Carman’s Sappho reconstructions — fragments turned into a book of desire.",
-  "a-japanese-nightingale": "Winnifred Eaton’s Japan-set romance, written from a Canadian Chinese life.",
+  "a-japanese-nightingale": "Sunset lingers over the bay, and a storm dance begins on a tea-house island.",
+  "white-jacket": "Not a very white jacket, but white enough, on a frigate leaving Callao for Cape Horn.",
+  "the-house-by-the-medlar-tree": "The Malavoglia were once as numerous as the stones on the road to Trezza.",
+  "filipino-popular-tales": "Suan’s mother sends him to school, and he climbs the tree instead.",
   "the-book-of-khalid":
     "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid.",
   oblomov:
