@@ -1,0 +1,51 @@
+{
+  "id": "calvary",
+  "title": "Calvary",
+  "author": "Octave Mirbeau (trans. Louis Rich)",
+  "year": "1886 / 1922",
+  "note": "Project Gutenberg 48773. Host: Ch I October birth / Orne / Saint-Michel-les-Hêtres / Tourouvre forest (stop before Paris desire blur).",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · France — Orne / Saint-Michel-les-Hêtres",
+      "place": "Chapter I · France — Orne / Saint-Michel-les-Hêtres",
+      "reentry": "I was born one evening in October at Saint-Michel-les-Hêtres, a small town in the department of Orne, and I was immediately christened by the name of Jean-François-Marie-Mintié. To celebrate in a fitt",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "I was born one evening in October at Saint-Michel-les-Hêtres, a small town in the department of Orne, and I was immediately christened by the name of Jean-François-Marie-Mintié. To celebrate in a fitting manner my coming into this world, my godfather, who was my uncle, distributed a lot of dainties, threw many coppers and other small coins to a crowd of country boys gathered on the church steps. One of them, while struggling with his comrades, fell so awkwardly on the sharp edge of a stone that he broke his neck and died the following day. As for my uncle, when he returned home he contracted typhoid fever and passed away a few weeks later. My governess, old Marie, often related these incidents to me with pride and admiration."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Saint-Michel-les-Hêtres is situated on the outskirts of a great national forest, the Tourouvre forest. Although it counts fifteen hundred inhabitants, it makes no more noise than is made in the fields on a calm day by the trees, the grass, the corn. A grove of giant beech trees, which turn purple in autumn, shields it from the northern winds, and the houses with pentile roofs, descending the declivity of the hill, extend far out until they meet the great valley, broad and always green, where one can see straying herds of oxen. The Huisne River, glittering under the sun, winds and loses itself in the meadows which are separated by rows of tall poplars. Dilapidated tanneries, small windmills scale its course, clearly visible among clumps of alders. On the other side of the valley are cultivated fields with straight lines of fences and apple trees scattered here and there. The horizon is enlivened by small pink farms, by hamlets one can see here and there in the midst of the verdure which appears almost black. Because of the proximity of the woods, the sky is alive with crows and yellow-beaked jackdaws coming and going at all seasons."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Our family lived on the outskirts of the town, opposite a church, very old and tottering, an ancient and curious structure which was called the Priory--an annex of an Abbey which was destroyed during the Revolution and of which were left not more than two or three faces of a crumbled wall covered with ivy. I recall clearly but without tenderness the smallest details of the places where my childhood was spent. I recall the iron gate in a neglected condition which opened with a creaking sound into a large court adorned by a scurfy grass plot, two shabby looking sorbs visited by blackbirds, some chestnut trees, very old and with such large trunks that the arms of four men could not reach around them--my father used to tell this with pride to every visitor. I recall the house with its brick walls, grim and crusty; its semi-circular steps beautified by geraniums; its irregular windows which looked like holes; its roof, very steep, ending in a weather-cock, which in a breeze made a sound like an owl. Behind the house, I remember, was a basin where muddy wake-robins were bathing or small carps with white scales were playing. I recall the sombre curtain of fir trees which hid the commons from view, the back yard, the study which my father built on the edge of the road skirting the property in such a manner that the coming and going of clients and clerks did not disturb the quiet of the household. I recall the park, its enormous trees, strangely twisted, eaten up by polypes and moss, joined together by tangled lianas, and the alleys never raked, where worn-out stone benches rose up here and there like ancient tombs. And I also remember myself, a sickly child, in a smock frock of lustring, running across this gloom of forsaken things, lacerating myself in the blackberry bush, torturing the animals in the backyard or for entire days sitting in the kitchen and watching Felix who served as our gardener, valet, and coachman."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Years and years have passed. Everything that I loved is now dead. Everything that I knew has taken on a new appearance. The church has been rebuilt. It now has an embellished doorway, arched windows, fancy gutter-spouts representing flaming mouths of demons; its new brick belfry laughs gaily into the blue; in place of the old house there now rises an elaborate Swiss cottage built by the new proprietor who, in the enclosure, has increased the number of colored glass balls, small cascades and plaster statues of Love, soiled by rain. But things and people are engraved so profoundly upon my memory that time could not apply a burnisher hard enough to erase them."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "I want, from now on, to speak of my parents not as I knew them when I was a child, but such as they would appear to me now, completed by memory, humanized, so to speak, by intimacy and revelation, in all the crudity of life, in all the immediacy of impression which the inexorable experiences of life lend to persons too unhesitatingly loved and too closely known."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "My father was a notary public. Since time immemorial it had been so with the Mintié family. It would have appeared monstrous, almost revolutionary, if a member of the Mintié family had dared to break this family tradition and had renounced the scutcheons of gilt wood which were transmitted religiously from one generation to another like some title of nobility. At Saint-Michel-les-Hêtres and the surrounding country, my father occupied a position which ancestral pride, his dignified manners of a country gentleman, and, above all, his income of twenty thousand francs rendered very important, almost unshakeable. Mayor of Saint-Michel, member of the general council, acting justice of the peace, vice president of the agricultural commission, member of numerous agronomic and forestry societies, he did not overlook any of the petty or ambitious honors which carry with them a sort of prestige and influence. He was an excellent man, very honest and very gentle,--with a mania for killing. He could not see a bird, a cat, an insect--anything at all that was alive--without being seized with a strange desire to kill it. He waged a relentless trapper's war on blackbirds, goldfinches, chaffinches and bullfinches. Felix was instructed to let my father know as soon as a bird appeared in our garden, and my father would leave everything--clients, business, his meal--to kill the bird. He would often lie in wait for hours, motionless, behind a tree on which the gardener had pointed out a little blueheaded titmouse. During his walks, every time he noticed a bird on a branch and did not have his rifle with him, he would throw his cane at it, never failing to say, \"Oh, hang it! He was there this morning!\" or \"Hang it! I must have missed him for sure, it's too far.\" These were the only thoughts which birds ever inspired in him."
+    }
+  ]
+}

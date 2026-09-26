@@ -305,6 +305,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `He sat, in defiance of municipal orders, astride the gun Zam Zammah opposite the Wonder House, as the natives call the Lahore Museum. Skip the verse epigraph. Kipling’s 1901 novel. “Half-caste” and “burned black as any native” stay as printed — flag, do not sanitize. Calvary stays held.`,
   "mogens-and-other-stories":
     `Summer it was, in the middle of the day, in a corner of the enclosure. This sit is Mogens only, a timed cut; the whole novella is too long for one sitting. Skip the introduction. Jacobsen, in Grabow’s 1921 English of the 1882 Danish. Denmark is not Stockholm after The Red Room. The other three tales stay in the book.`,
+  "the-road-to-the-open":
+    `George von Wergenthin sat at table quite alone to-day. The empty chair at the top of the table, and the September sun through the open window. Skip the title page. Schnitzler’s novel, Horace Samuel’s English, German 1908 / Latimer 1913. Soft against Bertha Garlan — a different title. The lead stays this road.`,
+  calvary:
+    `I was born one evening in October at Saint-Michel-les-Hêtres, a small town in the department of Orne. The sit stays in the Orne and the Tourouvre forest. Mirbeau, Louis Rich’s English, French 1886 / 1922. The novel continues.`,
+  "anna-of-the-five-towns":
+    `The yard was all silent and empty under the burning afternoon heat. Chapter I, The Kindling of Love — the Sunday-school yard and the prize-books. Skip the edition table, the dedication, and the epigraph. Bennett’s 1902 novel. The Five Towns, not London. No score is invented for this sit. The first breath is 371 words — phone-hard, left as printed.`,
+  "small-souls":
+    `It was pouring with rain, and Dorine van Lowe dropped in on Karel and Cateau with a wet umbrella. Skip the translator’s note. Couperus, Teixeira’s English, Dutch 1901 / 1914. The Hague is not the Java Residency.`,
+  "stories-and-pictures":
+    `Down here, in this world, Bontzye Shweig’s death made no impression at all. This sit is Bontzye Shweig only. Skip the preface and the other tales. Peretz, Helena Frank’s English, Yiddish 1894 / 1906. This is not the Poland theater.`,
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
   "brazilian-tales":
@@ -531,7 +541,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "an-american-tragedy",
       "bertha-garlan",
       "born-in-exile",
-      "calvary",
       "charmides-and-other-poems",
       "cousin-betty",
       "dauber",
@@ -548,7 +557,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "rosmersholm",
       "salome",
       "salt-water-ballads",
-      "small-souls",
       "songs-and-satires",
       "tess-of-the-durbervilles",
       "the-ballad-of-the-white-horse",
@@ -573,7 +581,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-reign-of-greed",
       "the-rise-of-david-levinsky",
       "the-rise-of-silas-lapham",
-      "the-road-to-the-open",
       "the-romance-of-the-milky-way",
       "the-three-taverns",
       "the-titan",
@@ -874,6 +881,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-story-of-an-african-farm",
       "the-imperialist",
       "kim",
+      // Mira Sat 26 Sep 2026 EVENING CLEAR — Road to the Open leads. Never Featured.
+      // Earlier seats left this lane so the cycle reads in order.
+      "the-road-to-the-open",
+      "calvary",
+      "anna-of-the-five-towns",
+      "small-souls",
     ],
   },
   {
@@ -936,6 +949,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "a-set-of-six",
       // Mira Sat 26 Sep 2026 AFTERNOON CLEAR — Mogens timed cut only. Not the other three.
       "mogens-and-other-stories",
+      // Mira Sat 26 Sep 2026 EVENING CLEAR — Bontzye Shweig only. Not the other tales.
+      "stories-and-pictures",
     ],
   },
   {
@@ -1027,6 +1042,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-story-of-an-african-farm",
       "the-imperialist",
       "kim",
+      // Mira Sat 26 Sep 2026 EVENING CLEAR — Road to the Open leads. Never Featured.
+      "the-road-to-the-open",
+      "calvary",
+      "anna-of-the-five-towns",
+      "small-souls",
     ],
   },
   {
@@ -1117,6 +1137,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-story-of-an-african-farm",
       "the-imperialist",
       "kim",
+      // Mira Sat 26 Sep 2026 EVENING CLEAR — Road to the Open leads. Never Featured.
+      "the-road-to-the-open",
+      "calvary",
+      "anna-of-the-five-towns",
+      "small-souls",
     ],
   },
   {
@@ -1239,6 +1264,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-imperialist": 7,
   kim: 6,
   "mogens-and-other-stories": 6,
+  "anna-of-the-five-towns": 6,
+  "stories-and-pictures": 12,
   "there-is-confusion": 8,
   "pointed-roofs": 4,
   buddenbrooks: 5,
@@ -1248,7 +1275,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "an-american-tragedy": 5,
   "bertha-garlan": 5,
   "born-in-exile": 5,
-  "calvary": 5,
+  "calvary": 6,
   "charmides-and-other-poems": 5,
   "cousin-betty": 5,
   "dauber": 5,
@@ -1265,7 +1292,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "rosmersholm": 5,
   "salome": 5,
   "salt-water-ballads": 5,
-  "small-souls": 5,
+  "small-souls": 7,
   "songs-and-satires": 5,
   "tess-of-the-durbervilles": 5,
   "the-ballad-of-the-white-horse": 5,
@@ -1290,7 +1317,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-reign-of-greed": 5,
   "the-rise-of-david-levinsky": 5,
   "the-rise-of-silas-lapham": 7,
-  "the-road-to-the-open": 5,
+  "the-road-to-the-open": 6,
   "the-romance-of-the-milky-way": 5,
   "the-three-taverns": 5,
   "the-titan": 5,

@@ -577,6 +577,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "the-story-of-an-african-farm": "South Africa",
   "the-imperialist": "Canada",
   "mogens-and-other-stories": "Denmark",
+  "stories-and-pictures": "Poland",
   "plain-tales-from-the-hills": "India",
   "life-s-handicap-being-stories-of-mine-own-people": "India",
   "the-phantom-rickshaw-and-other-ghost-stories": "India",

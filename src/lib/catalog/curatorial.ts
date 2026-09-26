@@ -321,6 +321,29 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Carnation, Sat AM Moon, Fri 6PM High Wind, evening Hidden Force,
  * afternoon Confusion, noon Man of Property, morning Cabala, and Emmeline
  * stay ahead and untouched.
+ * Mira Sat 26 Sep 2026 EVENING CLEAR — Recommend only, never Featured.
+ * The Road to the Open leads this cycle’s Next append (George alone, the
+ * empty father’s chair, September sun, Schnitzler, Horace Samuel’s English,
+ * German 1908 / Latimer 1913, PG 45895; title page skipped). LEAD kept —
+ * not Calvary. Soft against Bertha Garlan: same author, different title.
+ * Calvary follows (October birth at Saint-Michel-les-Hêtres, Orne, Mirbeau,
+ * Louis Rich’s English, French 1886 / 1922, PG 48773). The Host stays in
+ * the Orne and the Tourouvre forest; a later city is soft and not in the
+ * Host. The earlier calvary seat stays. Anna of the Five Towns follows
+ * (Sunday-school yard, The Kindling of Love, Bennett, Chatto 1902 only,
+ * PG 35505). No score is invented. The Potteries are not London. The first
+ * breath is 371 words — phone-hard, left as printed. Small Souls follows
+ * (Hague rain, Dorine, wet umbrella, Couperus, Teixeira’s English, Dutch
+ * 1901 / Dodd Mead 1914, PG 34021). The Hague is not the Java Residency.
+ * The earlier small-souls and road seats stay. Stories and Pictures is
+ * Rituals only — Bontzye Shweig, Peretz, Helena Frank’s English, Yiddish
+ * 1894 / 1906, PG 37242 — and is not this Next queue and not For you.
+ * Bontzye is not the Poland theater. Odessa is blocked and not stamped.
+ * The earlier bontshe-the-silent seat stays. Cold-open stays
+ * Mirth → Quicksand → Botchan. Sat afternoon Hill of Dreams, Sat midday
+ * Green Carnation, Sat AM Moon, Fri 6PM High Wind, evening Hidden Force,
+ * afternoon Confusion, noon Man of Property, morning Cabala, and Emmeline
+ * stay ahead and untouched.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -742,6 +765,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-story-of-an-african-farm",
   "the-imperialist",
   "kim",
+  // Mira Sat 26 Sep 2026 EVENING CLEAR — Road to the Open leads Next. Never Featured.
+  // Earlier seats for Road, Calvary, and Small Souls stay. This is the cycle order.
+  // Stories and Pictures is Rituals (Bontzye Shweig only), not this tail.
+  // Afternoon, midday, Sat AM, and Fri packs stay ahead.
+  "the-road-to-the-open",
+  "calvary",
+  "anna-of-the-five-towns",
+  "small-souls",
 ] as const;
 
 /**
