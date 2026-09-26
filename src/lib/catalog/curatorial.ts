@@ -267,6 +267,24 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * noon Man of Property, morning Cabala, and Emmeline stay ahead and untouched.
  * Soft guards hold: High Wind novel ≠ Anansi folk; Vera ≠ Enchanted April;
  * Futility ≠ Hunger; Comedienne ≠ Peasants; Painted Wall ≠ Kwaidan.
+ * Mira Sat 26 Sep 2026 AM CLEAR — Recommend only, never Featured.
+ * The Moon and Sixpence leads this cycle’s Next append (Strickland greatness,
+ * “He disturbs and arrests”, Maugham 1919, PG 222; title apparatus skipped).
+ * Tahiti later is not Hong Kong and not a London medical apprenticeship.
+ * My Brilliant Career follows (gum-trees / salt-shed / first recollection,
+ * Franklin 1901, PG 11620; special notice and prefaces skipped). The Plumed
+ * Serpent follows (Sunday after Easter / Kate’s heart sank, Lawrence 1926,
+ * PG 73677). The Red Room follows (Moses Height / wind over Stockholm,
+ * Strindberg, Schleussner English, Swedish 1879 / Latimer 1913, PG 37039).
+ * Brazilian Tales is Rituals only — The Fortune-Teller, Goldberg English 1921,
+ * PG 21040 — and keeps its earlier ritual seats. It is not this Next queue
+ * and not For you. Cold-open stays Mirth → Quicksand → Botchan. Fri 6PM
+ * High Wind, evening Hidden Force, afternoon Confusion, noon Man of Property,
+ * morning Cabala, and Emmeline stay ahead and untouched.
+ * Soft guards hold: Moon Tahiti ≠ Painted Veil HK / Bondage London medical;
+ * Brilliant Career Australia preferred; Plumed mystic-expat ≠ Underdogs
+ * revolution; Mexico ≠ Pamplona; Red Room Stockholm ≠ Hunger Kristiania;
+ * Red Room ≠ Inferno; Fortune-Teller ≠ Attendant’s Confession.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -664,6 +682,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "vera",
   "futility",
   "the-comedienne",
+  // Mira Sat 26 Sep 2026 AM CLEAR — Moon leads Next. Never Featured.
+  // Brilliant Career, Plumed Serpent, and Red Room follow. Brazilian Tales
+  // is Rituals (The Fortune-Teller only) and keeps its earlier ritual seats,
+  // not this tail. Fri packs stay ahead.
+  "the-moon-and-sixpence",
+  "my-brilliant-career",
+  "the-plumed-serpent",
+  "the-red-room",
 ] as const;
 
 /**

@@ -193,6 +193,14 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `When the Simbirsk of the Russian Volunteer Fleet vanishes, carrying three sisters toward Shanghai, the hotel room still has a dirty table-cloth. The preface stays out. This is not a Kristiania attic.`,
   "the-comedienne":
     `Bukowiec station on the Dombrowa railroad, a winding line among beech and pine hills. Skip the Publishers’ Note. Obecny’s English of Reymont. The novel continues.`,
+  "the-moon-and-sixpence":
+    `I confess that when first I made acquaintance with Charles Strickland I never for a moment discerned that there was in him anything out of the ordinary. Yet now few will be found to deny his greatness. The sit stops when the Rev. Robert Strickland’s biography is named as an attempt to remove misconceptions. Maugham’s 1919 novel. Tahiti later is not Hong Kong and not a London medical apprenticeship. If you Host further, the Tahiti stretch uses period racial language — flag, do not sanitize.`,
+  "my-brilliant-career":
+    `“Boo, hoo!” — the first recollection, then gum-trees and the salt-shed at Possum Gully. Skip the special notice and the England preface. Franklin’s 1901 novel. Australia, the preferred bush window. Later chapters use period words for Aboriginal people and Chinese workers — flag, do not sanitize.`,
+  "the-plumed-serpent":
+    `Sunday after Easter, the last bull-fight of the season in Mexico City, and Kate’s heart sank. Skip the contents and the reprint notes. Lawrence’s 1926 novel. Mystic-expat Mexico, not a revolution in the sierra and not Pamplona. If you Host further into the bullfight, “half-savage” and later “aboriginal” are period racial language — flag, do not sanitize.`,
+  "the-red-room":
+    `An evening in the beginning of May. The little garden on Moses Height, on the south side of Stockholm, and the wind over the town. Skip the same-author list and the contents. Schleussner’s English (Swedish 1879, Latimer 1913). Stockholm bohemia, not a Kristiania attic, and not Inferno.`,
   "african-farm":
     `The full African moon poured down its light from the blue sky into the wide, lonely plain. Stunted karoo bushes and milk-bushes follow in the white light, then a solitary kopje of ironstones. Stop before the farm household densifies.`,
   "a-passage-to-india":
@@ -282,7 +290,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
   "brazilian-tales":
-    `One tale only: The Attendant's Confession. A marked man in 1860 offers a human document and asks that it not be published until he is dead. Stop at the tale boundary — Brazil, not the Tropic rail.`,
+    `One tale only: The Fortune-Teller. Rita explains Camillo with Hamlet’s line, then the cards on Guarda-Velha Street. Stop at the tale boundary — this sit does not open The Attendant's Confession, and it is not the Tropic rail. Later tales in the volume use period racial language — flag, do not sanitize.`,
   "the-house-of-mirth":
     `Grand Central, a Monday in early September—the afternoon rush, the heat, the crowd. Lawrence Selden notices Lily Bart standing apart from it all, vivid against the dull tints of the station. Edith Wharton’s 1905 New York novel begins with a chance meeting that doesn’t feel accidental.`,
   carmilla:
@@ -833,6 +841,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "vera",
       "futility",
       "the-comedienne",
+      // Mira Sat 26 Sep 2026 AM CLEAR — Moon leads. Never Featured.
+      "the-moon-and-sixpence",
+      "my-brilliant-career",
+      "the-plumed-serpent",
+      "the-red-room",
     ],
   },
   {
@@ -889,6 +902,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "dubliners",
       // Mira Fri 25 Sep 2026 ~6PM CLEAR — Painted Wall only. Not Kwaidan.
       "strange-tales",
+      // Mira Sat 26 Sep 2026 AM CLEAR — Fortune-Teller only. Not Attendant's Confession.
+      "brazilian-tales",
     ],
   },
   {
@@ -966,6 +981,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "vera",
       "futility",
       "the-comedienne",
+      // Mira Sat 26 Sep 2026 AM CLEAR — Moon leads. Never Featured.
+      "the-moon-and-sixpence",
+      "my-brilliant-career",
+      "the-plumed-serpent",
+      "the-red-room",
     ],
   },
   {
@@ -1042,6 +1062,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "vera",
       "futility",
       "the-comedienne",
+      // Mira Sat 26 Sep 2026 AM CLEAR — Moon leads. Never Featured.
+      "the-moon-and-sixpence",
+      "my-brilliant-career",
+      "the-plumed-serpent",
+      "the-red-room",
     ],
   },
   {
@@ -1073,7 +1098,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "enchanted-april": 8,
   "lolly-willowes": 8,
   cheri: 8,
-  "brazilian-tales": 8,
+  "brazilian-tales": 12,
+  "the-moon-and-sixpence": 7,
+  "my-brilliant-career": 6,
+  "the-plumed-serpent": 6,
+  "the-red-room": 6,
   "mr-fortunes-maggot": 5,
   "the-bridge-of-san-luis-rey": 8,
   "carmilla": 5,

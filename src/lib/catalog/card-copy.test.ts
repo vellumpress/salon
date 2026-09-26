@@ -1806,10 +1806,16 @@ test("Tier B batches 3–4 are local format-min binds, never Featured", () => {
     assert.ok(work, id);
     assert.equal(work!.local, true, id);
     assert.equal(isBoundLocal(work!), true, id);
-    assert.equal(curatorialTrack(id), "later", id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal(coldOpen.has(id), false, id);
-    assertNoStubOpening(id);
+    if (id === "my-brilliant-career") {
+      assert.equal(curatorialTrack(id), "next", id);
+      assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), true, id);
+      assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
+    } else {
+      assert.equal(curatorialTrack(id), "later", id);
+      assertNoStubOpening(id);
+    }
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
@@ -1950,6 +1956,12 @@ test("Tier B batches 11–12 are local format-min binds, never Featured", () => 
       assert.equal(curatorialTrack(id), "next", id);
       assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), true, id);
       assert.equal(work!.minutes, 320, id);
+      assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
+    } else if (id === "the-red-room") {
+      assert.equal(curatorialTrack(id), "next", id);
+      assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), true, id);
+      assert.equal(work!.minutes, 493, id);
+      assert.equal(work!.language, "English", id);
       assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
     } else {
       assert.equal(curatorialTrack(id), "later", id);

@@ -271,7 +271,7 @@ const BLURBS: Record<string, string> = {
   shadowings:
     "Hearn’s Kyoto ghosts, screen-maidens, and a dream-book told softly.",
   "brazilian-tales":
-    "One tale only: The Attendant’s Confession, a marked man in 1860 who asks that the story wait until he is dead.",
+    "One tale only: The Fortune-Teller. Rita, Camillo, and the cards on Guarda-Velha Street.",
   "a-hundred-and-seventy-chinese-poems":
     "Winter Night: an empty bed, a sea-sound in the curtains, and lyrics that never open on Battle.",
   "martin-bircks-youth":
@@ -283,7 +283,8 @@ const BLURBS: Record<string, string> = {
   "monday-or-tuesday": "Short Woolf pieces that catch a mind in the act of looking.",
   "of-human-bondage":
     "The day broke gray and dull — Wake up, Philip, and keep the first sit to Chapter I.",
-  "the-moon-and-sixpence": "A stockbroker walks out of a life to paint — Maugham’s Gauguin rumor.",
+  "the-moon-and-sixpence":
+    "Strickland’s greatness, and the biographer who wants to remove the misconceptions. Tahiti later, not Hong Kong.",
   "the-magician": "Paris occult, a charlatan who might not be, and a marriage that becomes a dare.",
   "the-old-wives-tale": "Two sisters from the Five Towns, told across a whole ordinary century.",
   "the-man-who-was-thursday": "A poet-detective joins a council of anarchists who keep turning into jokes.",
@@ -579,7 +580,12 @@ const BLURBS: Record<string, string> = {
   "look-we-have-come-through": "Lawrence’s poems of a marriage that is also a war.",
   "the-white-peacock": "Lawrence’s first novel: Midlands fields and a love that will not sit.",
   "the-lost-girl": "A Midlands woman leaves for Italy and a life the town cannot name.",
-  "the-plumed-serpent": "Lawrence in Mexico, looking for a god the tourists didn’t pack.",
+  "the-plumed-serpent":
+    "Sunday after Easter in Mexico City, and Kate’s heart sank at the bull-fight.",
+  "my-brilliant-career":
+    "A first recollection at Possum Gully — gum-trees, a salt-shed, and a bush life that will not marry on the usual terms.",
+  "the-red-room":
+    "A May evening on Moses Height, and the wind over Stockholm.",
   "the-prussian-officer-and-other-stories":
     "Lawrence stories of soldiers, mines, and the body as an argument.",
   "the-longest-journey": "Forster’s Cambridge, a brother, and a life that keeps choosing the wrong loyalty.",

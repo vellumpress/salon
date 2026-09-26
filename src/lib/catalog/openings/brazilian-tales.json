@@ -1,18 +1,18 @@
 {
   "id": "brazilian-tales",
   "title": "Brazilian Tales",
-  "author": "Machado de Assis et al. (tr. Isaac Goldberg)",
+  "author": "Machado de Assis et al. (trans. Isaac Goldberg)",
   "year": "1921",
-  "note": "Project Gutenberg 21040",
-  "minutes": 8,
+  "note": "Project Gutenberg 21040. Host: The Fortune-Teller only — Rita / Camillo / Guarda-Velha cards (Goldberg intro / Attendant’s Confession / other tales skipped; cycle continues).",
+  "minutes": 12,
   "cover": "",
   "coverAlt": "",
   "scenes": [
     {
       "id": "sit-0",
-      "title": "The Attendant's Confession",
-      "place": "The Attendant's Confession",
-      "reentry": "So it really seems to you that what happened to me in 1860 is worth while writing down? Very well. I'll tell you the story, but on the condition that you do not divulge it before my death. You'll not ",
+      "title": "The Fortune-Teller · Brazil — Rio / Guarda-Velha Street",
+      "place": "The Fortune-Teller · Brazil — Rio / Guarda-Velha Street",
+      "reentry": "Hamlet observes to Horatio that there are more things in heaven and earth than are dreamt of in our philosophy. This was the selfsame explanation that was given by beautiful Rita to her lover, Camillo",
       "prompt": "A word from this stretch."
     }
   ],
@@ -20,242 +20,312 @@
     {
       "id": "sit-0-0",
       "sceneId": "sit-0",
-      "text": "So it really seems to you that what happened to me in 1860 is worth while writing down? Very well. I'll tell you the story, but on the condition that you do not divulge it before my death. You'll not have to wait long--a week at most; I am a marked man."
+      "text": "Hamlet observes to Horatio that there are more things in heaven and earth than are dreamt of in our philosophy. This was the selfsame explanation that was given by beautiful Rita to her lover, Camillo, on a certain Friday of November, 1869, when Camillo laughed at her for having gone, the previous evening, to consult a fortune-teller. The only difference is that she made her explanation in other words."
     },
     {
       "id": "sit-0-1",
       "sceneId": "sit-0",
-      "text": "I could have told you the story of my whole life, which holds many other interesting details: but for that there would be needed time, courage and paper. There is plenty of paper, indeed, but my courage is at low ebb, and as to the time that is yet left me, it may be compared to the life of a candle-flame. Soon tomorrow's sun will rise--a demon sun as impenetrable as life itself. So goodbye, my dear sir; read this and bear me no ill will; pardon me those things that will appear evil to you and do not complain too much if there is exhaled a disagreeable odor which is not exactly that of the rose. You asked me for a human document. Here it is. Ask me for neither the empire of the Great Mogul nor a photograph of the Maccabees; but request, if you will, my dead man's shoes, and I'll will them to you and no other."
+      "text": "\"Laugh, laugh. That's just like you men; you don't believe in anything. Well, let me tell you, I went there and she guessed the reason for my coming before I ever spoke a word. Scarcely had she begun to lay out the cards when she said to me: 'The lady likes a certain person...' I confessed that it was so, and then she continued to rearrange the cards in various combinations, finally telling me that I was afraid you would forget me, but that there were no grounds for my fear.\""
     },
     {
       "id": "sit-0-2",
       "sceneId": "sit-0",
-      "text": "You already know that this took place in 1860. The year before, about the month of August, at the age of forty-two, I had become a theologian--that is, I copied the theological studies of a priest at Nictheroy, an old college-chum, who thus tactfully gave me my board and lodging. In that same month of August, 1859, he received a letter from the vicar of a small town in the interior, asking if he knew of an intelligent, discreet and patient person who would be willing, in return for generous wages, to serve as attendant to the invalid Colonel Felisbert. The priest proposed that I take the place, and I accepted it eagerly, for I was tired of copying Latin quotations and ecclesiastic formulas. First I went to Rio de Janeiro to take leave of a brother who lived at the capital, and from there I departed for the little village of the interior."
+      "text": "\"She was wrong!\" interrupted Camillo with a laugh."
     },
     {
       "id": "sit-0-3",
       "sceneId": "sit-0",
-      "text": "When I arrived there I heard bad news concerning the colonel. He was pictured to me as a disagreeable, harsh, exacting fellow; nobody could endure him, not even his own friends. He had used more attendants than medicines. In fact he had broken the faces of two of them. But to all this I replied that I had no fear of persons in good health, still less of invalids. So, after first visiting the vicar, who confirmed all that I had heard and recommended to me charity and forbearance, I turned toward the colonel's residence."
+      "text": "\"Don't say that, Camillo. If you only realized in what anguish I went there, all on account of you. You know. I've told you before. Don't laugh at me; don't poke fun at me....\""
     },
     {
       "id": "sit-0-4",
       "sceneId": "sit-0",
-      "text": "I found him on the veranda of his house, stretched out on a chair and suffering greatly. He received me fairly well. At first he examined me silently, piercing me with his two feline eyes; then a kind of malicious smile spread over his features, which were rather hard. Finally he declared to me that all the attendants he had ever engaged in his service hadn't been worth a button, that they slept too much, were impudent and spent their time courting the servants; two of them were even thieves."
+      "text": "Camillo seized her hands and gazed into her eyes earnestly and long. He swore that he loved her ever so much, that her fears were childish; in any case, should she ever harbor a fear, the best fortune-teller to consult was he himself. Then he reproved her, saying that it was imprudent to visit such houses. Villela might learn of it, and then..."
     },
     {
       "id": "sit-0-5",
       "sceneId": "sit-0",
-      "text": "\"And you, are you a thief?\""
+      "text": "\"Impossible! I was exceedingly careful when I entered the place.\""
     },
     {
       "id": "sit-0-6",
       "sceneId": "sit-0",
-      "text": "\"No, sir.\""
+      "text": "\"Where is the house?\""
     },
     {
       "id": "sit-0-7",
       "sceneId": "sit-0",
-      "text": "Then he asked me my name. Scarcely had I uttered it when he made a gesture of astonishment."
+      "text": "\"Near here. On Guarda-Velha Street. Nobody was passing by at the time. Rest easy. I'm not a fool.\""
     },
     {
       "id": "sit-0-8",
       "sceneId": "sit-0",
-      "text": "\"Your name is Colombo?\""
+      "text": "Camillo laughed again."
     },
     {
       "id": "sit-0-9",
       "sceneId": "sit-0",
-      "text": "\"No, sir. My name is Procopio Jose Gomes Vallongo.\""
+      "text": "\"Do you really believe in such things?\" he asked."
     },
     {
       "id": "sit-0-10",
       "sceneId": "sit-0",
-      "text": "Vallongo?--He came to the conclusion that this was no Christian name and proposed thenceforth to call me simply Procopio. I replied that it should be just as he pleased."
+      "text": "It was at this point that she translated Hamlet into every-day speech, assuring her lover that there was many a true, mysterious thing in this world. If he was skeptical, let him have patience. One thing, however, was certain: the card reader had guessed everything. What more could he desire? The best proof was that at this moment she was at ease and content."
     },
     {
       "id": "sit-0-11",
       "sceneId": "sit-0",
-      "text": "If I recall this incident, it is not only because it seems to me to give a good picture of the colonel, but also to show you that my reply made a very good impression upon him. The next day he told the vicar so, adding that he had never had a more sympathetic attendant. The fact is, we lived a regular honeymoon that lasted one week."
+      "text": "He was about to speak, but he restrained himself. He did not wish to destroy her illusions. He, too, when a child, and even later, had been superstitious, filled with an arsenal of beliefs which his mother had instilled, and which had disappeared by the time he reached twenty. The day on which he rid himself of all this parasitic vegetation, leaving behind only the trunk of religion, he wrapped his superstition and his religion (which had both been inculcated by his mother) in the same doubt, and soon arrived at a single, total negation. Camillo believed in nothing. Why? He could not have answered; he had not a solitary reason; he was content simply to deny everything. But I express myself ill, for to deny is in a sense to affirm, and he did not formulate his unbelief. Before the great mystery he simply shrugged his shoulders and went on."
     },
     {
       "id": "sit-0-12",
       "sceneId": "sit-0",
-      "text": "From the dawn of the eighth day I knew the life of my predecessors--a dog's life. I no longer slept. I no longer thought of anything, I was showered with insults and laughed at them from time to time with an air of resignation and submission, for I had discovered that this was a way of pleasing him. His impertinences proceeded as much from his malady as from his temperament. His illness was of the most complicated: he suffered from aneurism, rheumatism and three or four minor affections. He was nearly sixty, and since he had been five years old had been accustomed to having everybody at his beck and call. That he was surly one could well forgive; but he was also very malicious. He took pleasure in the grief and the humiliation of others. At the end of three months I was tired of putting up with him and had resolved to leave; only the opportunity was lacking."
+      "text": "The lovers parted in good spirits, he more happy than she. Rita was sure that she was loved; but Camillo was not only sure that she loved him, but saw how she trembled for him and even took risks, running to fortune-tellers. However much he had reproved her for this, he could not help feeling flattered by it. Their secret meeting-place was in the old Barbonos street at the home of a woman that came from Rita's province. Rita went off through Mangueiras street, in the direction of Botafogo, where she resided; Camillo entered Guarda-Velha street, keeping his eye open, as he passed, for the home of the card reader."
     },
     {
       "id": "sit-0-13",
       "sceneId": "sit-0",
-      "text": "But that came soon enough. One day, when I was a bit late in giving him a massage, he took his cane and struck me with it two or three times. That was the last straw. I told him on the spot that I was through with him and I went to pack my trunk. He came later to my room; he begged me to remain, assured me that there wasn't anything to be angry at, that I must excuse the ill-humoredness of old age ... He insisted so much that I agreed to stay."
+      "text": "Villela, Camillo and Rita: three names, one adventure and no explanation of how it all began. Let us proceed to explain. The first two were friends since earliest childhood. Villela had entered the magistracy. Camillo found employment with the government, against the will of his father, who desired him to embrace the medical profession. But his father had died, and Camillo preferred to be nothing at all, until his mother had procured him a departmental position. At the beginning of the year 1869 Villela returned from the interior, where he had married a silly beauty; he abandoned the magistracy and came hither to open a lawyer's office. Camillo had secured a house for him near Botafogo and had welcomed him home."
     },
     {
       "id": "sit-0-14",
       "sceneId": "sit-0",
-      "text": "\"I am nearing the end, Procopio,\" he said to me that evening. \"I can't live much longer. I am upon the verge of the grave. You will go to my burial, Procopio. Under no circumstances will I excuse you. You shall go, you shall pray over my tomb. And if you don't,\" he added, laughing, \"my ghost will come at night and pull you by the legs. Do you believe in souls of the other world, Procopio?\""
+      "text": "\"Is this the gentleman?\" exclaimed Rita, offering Camillo her hand. \"You can't imagine how highly my husband thinks of you. He was always talking about you.\""
     },
     {
       "id": "sit-0-15",
       "sceneId": "sit-0",
-      "text": "\"Nonsense!\""
+      "text": "Camillo and Villela looked at each other tenderly. They were true friends. Afterwards, Camillo confessed to himself that Villela's wife did not at all belie the enthusiastic letters her husband had written to him. Really, she was most prepossessing, lively in her movements, her eyes burning, her mouth plastic and piquantly inquiring. Rita was a trifle older than both the men: she was thirty, Villela twenty-nine and Camillo twenty-six. The grave bearing of Villela gave him the appearance of being much older than his wife, while Camillo was but a child in moral and practical life.... He possessed neither experience nor intuition."
     },
     {
       "id": "sit-0-16",
       "sceneId": "sit-0",
-      "text": "\"And why don't you, you blockhead?\" he replied passionately, with distended eyes."
+      "text": "The three became closely bound. Propinquity bred intimacy. Shortly afterwards Camillo's mother died, and in this catastrophe, for such it was, the other two showed themselves to be genuine friends of his. Villela took charge of the interment, of the church services and the settlement of the affairs of the deceased; Rita dispensed consolation, and none could do it better."
     },
     {
       "id": "sit-0-17",
       "sceneId": "sit-0",
-      "text": "That is how he was in his peaceful intervals; what he was during his attacks of anger, you may well imagine!"
+      "text": "Just how this intimacy between Camillo and Rita grew to love he never knew. The truth is that he enjoyed passing the hours at her side; she was his spiritual nurse, almost a sister,--but most of all she was a woman, and beautiful. The aroma of femininity: this is what he yearned for in her, and about her, seeking to incorporate it into himself. They read the same books, they went together to the theatre or for walks. He taught her cards and chess, and they played of nights;--she badly,--he, to make himself agreeable, but little less badly. Thus much, as far as external things are concerned. And now came personal intimacies, the timorous eyes of Rita, that so often sought his own, consulting them before they questioned those of her own husband,--the touches of cold hands, and unwonted communion. On one of his birthdays he received from Villela a costly cane, and from Rita, a hastily pencilled, ordinary note expressing good wishes. It was then that he learned to read within his own heart; he could not tear his eyes away from the missive. Commonplace words, it is true; but there are sublime commonplaces,--or at least, delightful ones. The old chaise in which for the first time you rode with your beloved, snuggled together, is as good as the chariot of Apollo. Such is man, and such are the circumstances that surround him."
     },
     {
       "id": "sit-0-18",
       "sceneId": "sit-0",
-      "text": "He hit me no more with his cane, but his insults were the same, if not worse. With time I became hardened, I no longer heeded anything; I was an ignoramus, a camel, a bumpkin, an idiot, a loggerhead--I was everything! It must further be understood that I alone was favored with these pretty names. He had no relatives; there had been a nephew, but he had died of consumption. As to friends, those who came now and then to flatter him and indulge his whims made him but a short visit, five or ten minutes at the most. I alone was always present to receive his dictionary of insults. More than once I resolved to leave him; but as the vicar would exhort me not to abandon the colonel I always yielded in the end."
+      "text": "Camillo sincerely wished to flee the situation, but it was already beyond his power. Rita, like a serpent, was charming him, winding her coils about him; she was crushing his bones, darting her venomous fangs into his lips. He was helpless, overcome. Vexation, fear, remorse, desire,--all this he felt, in a strange confusion. But the battle was short and the victory deliriously intoxicating. Farewell, all scruple! The shoe now fitted snugly enough upon the foot, and there they were both, launched upon the high road, arm in arm, joyfully treading the grass and the gravel, without suffering anything more than lonesomeness when they were away from each other. As to Villela, his confidence in his wife and his esteem for his friend continued the same as before."
     },
     {
       "id": "sit-0-19",
       "sceneId": "sit-0",
-      "text": "Not only were our relations becoming very much strained, but I was in a hurry to get back to Rio de Janeiro. At forty-two years of age one does not easily accustom himself to perpetual seclusion with a brutal, snarling old invalid, in the depths of a remote village. Just to give you an idea of my isolation, let it suffice to inform you that I didn't even read the newspapers; outside of some more or less important piece of news that was brought to the colonel, I knew nothing of what was doing in the world. I therefore yearned to get back to Rio at the first opportunity, even at the cost of breaking with the vicar. And I may as well add--since I am here making a general confession--that having spent nothing of my wages, I was itching to dissipate them at the capital."
+      "text": "One day, however, Camillo received an anonymous letter, which called him immoral and perfidious, and warned him that his adventure was known to all. Camillo took fright, and, in order to ward off suspicion, began to make his visits to Villela's house more rare. The latter asked him the reason for his prolonged absence. Camillo answered that the cause was a youthful flirtation. Simplicity evolved into cunning. Camillo's absences became longer and longer, and then his visits ceased entirely. Into this course there may have entered a little self-respect,--the idea of diminishing his obligations to the husband in order to make his own actions appear less treacherous."
     },
     {
       "id": "sit-0-20",
       "sceneId": "sit-0",
-      "text": "Very probably my chance was approaching. The colonel was rapidly getting worse. He made his will, the notary receiving almost as many insults as did I. The invalid's treatment became more strict; short intervals of peace and rest became rarer than ever for me. Already I had lost the meagre measure of pity that made me forget the old invalid's excesses; within me there seethed a cauldron of aversion and hatred. At the beginning of the month of August I decided definitely to leave. The vicar and the doctor, finally accepting my explanations, asked me but a few days' more service. I gave them a month. At the end of that time I would depart, whatever might be the condition of the invalid. The vicar promised to find a substitute for me."
+      "text": "It was at this juncture that Rita, uncertain and in fear, ran to the fortune-teller to consult her upon the real reason for Camillo's actions. As we have seen, the card reader restored the wife's confidence and the young man reproved her for having done what she did. A few weeks passed. Camillo received two or three more anonymous letters, written with such passionate anger that they could not have been prompted by mere regard for virtue; surely they came from some violent rival of his. In this opinion Rita concurred, formulating, in ill-composed words of her own, this thought: virtue is indolent and niggardly, wasting neither time nor paper; only self-interest is alert and prodigal."
     },
     {
       "id": "sit-0-21",
       "sceneId": "sit-0",
-      "text": "You'll see now what happened. On the evening of the 24th of August the colonel had a violent attack of anger; he struck me, he called me the vilest names, he threatened to shoot me; finally he threw in my face a plate of porridge that was too cold for him. The plate struck the wall and broke into a thousand fragments."
+      "text": "But this did not help to ease Camillo; he now feared lest the anonymous writer should inform Villela, in which case the catastrophe would follow fast and implacably. Rita agreed that this was possible."
     },
     {
       "id": "sit-0-22",
       "sceneId": "sit-0",
-      "text": "\"You'll pay me for it, you thief!\" he bellowed."
+      "text": "\"Very well,\" she said. \"Give me the envelopes in which the letters came, so that I may compare the handwriting with that of the mail which comes to him. If any arrives with writing resembling the anonymous script, I'll keep it and tear it up...\""
     },
     {
       "id": "sit-0-23",
       "sceneId": "sit-0",
-      "text": "For a long time he grumbled. Towards eleven o'clock he gradually fell asleep. While he slept I took a book out of my pocket, a translation of an old d'Arlincourt romance which I had found lying about, and began to read it in his room, at a small distance from his bed. I was to wake him at midnight to give him his medicine; but, whether it was due to fatigue or to the influence of the book, I, too, before reaching the second page, fell asleep. The cries of the colonel awoke me with a start; in an instant I was up. He, apparently in a delirium, continued to utter the same cries; finally he seized his water-bottle and threw it at my face. I could not get out of the way in time; the bottle hit me in the left cheek, and the pain was so acute that I almost lost consciousness. With a leap I rushed upon the invalid; I tightened my hands around his neck; he struggled several moments; I strangled him."
+      "text": "But no such letter appeared. A short time after this, however, Villela commenced to grow grave, speaking very little, as if something weighed upon his mind. Rita hurried to communicate the change to her lover, and they discussed the matter earnestly. Her opinion was that Camillo should renew his visits to their home, and sound her husband; it might be that Villela would confide to him some business worry. With this Camillo disagreed; to appear after so many months was to confirm the suspicions and denunciations of the anonymous letters. It was better to be very careful, to give each other up for several weeks. They arranged means for communicating with each other in case of necessity and separated, in tears."
     },
     {
       "id": "sit-0-24",
       "sceneId": "sit-0",
-      "text": "When I beheld that he no longer breathed, I stepped back in terror. I cried out; but nobody heard me. Then, approaching the bed once more, I shook him so as to bring him back to life. It was too late; the aneurism had burst, and the colonel was dead. I went into the adjoining room, and for two hours I did not dare to return. It is impossible for me to express all that I felt during that time. It was intense stupefaction, a kind of vague and vacant delirium. It seemed to me that I saw faces grinning on the walls; I heard muffled voices. The cries of the victim, the cries uttered before the struggle and during its wild moments continued to reverberate within me, and the air, in whatever direction I turned, seemed to shake with convulsions. Do not imagine that I am inventing pictures or aiming at verbal style. I swear to you that I heard distinctly voices that were crying at me: \"Murderer; Murderer!\""
+      "text": "On the following day Camillo received at his department this letter from Villela: \"Come immediately to our house; I must talk to you without delay.\" It was past noon. Camillo left at once; as he reached the street it occurred to him that it would have been much more natural for Villela to have called him to his office; why to his house? All this betokened a very urgent matter; moreover, whether it was reality or illusion, it seemed to Camillo that the letter was written in a trembling hand. He sought to establish a connection between all these things and the news Rita had brought him the night before."
     },
     {
       "id": "sit-0-25",
       "sceneId": "sit-0",
-      "text": "All was quiet in the house. The tick-tick of the clock, very even, slow, dryly metrical, increased the silence and solitude. I put my ear to the door of the room, in hope of hearing a groan, a word, an insult, anything that would be a sign of life, that might bring back peace to my conscience; I was ready to let myself be struck ten, twenty, a hundred times, by the colonel's hand. But, nothing--all was silent. I began to pace the room aimlessly; I sat down, I brought my hands despairingly to my head; I repented ever having come to the place."
+      "text": "\"Come immediately to our house; I must talk to you without delay,\" he repeated, his eyes staring at the note."
     },
     {
       "id": "sit-0-26",
       "sceneId": "sit-0",
-      "text": "\"Cursed be the hour in which I ever accepted such a position,\" I cried. And I flamed with resentment against the priest of Nichteroy, against the doctor, the vicar--against all those who had procured the place for me and forced me to remain there so long. They, too, I convinced myself, were accomplices in my crime."
+      "text": "In his mind's eye he beheld the climax of a drama,--Rita cowed, weeping; Villela indignant, seizing his pen and dashing off the letter, certain that he, Camillo, would answer in person, and waiting to kill him as he entered. Camillo shuddered with terror; then he smiled weakly; in any event the idea of drawing back was repugnant to him. So he continued on his way. As he walked it occurred to him to step into his rooms; he might find there a message from Rita explaining everything. But he found nothing, nobody. He returned to the street, and the thought that they had been discovered grew every moment more convincing; yes, the author of the previous anonymous communications must have denounced him to the husband; perhaps by now Villela knew all. The very suspension of his calls without any apparent reason, with the flimsiest of pretexts, would confirm everything else."
     },
     {
       "id": "sit-0-27",
       "sceneId": "sit-0",
-      "text": "As the silence finally terrified me, I opened a window, in the hope of hearing at least the murmuring of the wind. But no wind was blowing. The night was peaceful. The stars were sparkling with the indifference of those who remove their hats before a passing funeral procession and continue to speak of other things. I remained at the window for some time, my elbows on the sill, my gaze seeking to penetrate the night, forcing myself to make a mental summary of my life so that I might escape the present agony. I believe it was only then that I thought clearly about the penalty of my crime. I saw myself already being accused and threatened with dire punishment. From this moment fear complicated my feeling of remorse. I felt my hair stand on end. A few minutes later I saw three or four human shapes spying at me from the terrace, where they seemed to be waiting in ambush; I withdrew; the shapes vanished into the air; it had been an hallucination."
+      "text": "Camillo walked hastily along, agitated, nervous. He did not read the letter again, but the words hovered persistently before his eyes; or else,--which was even worse--they seemed to be murmured into his ears by the voice of Villela himself. \"Come immediately to our house; I must talk to you without delay.\" Spoken thus by the voice of the other they seemed pregnant with mystery and menace. Come immediately,--why? It was now nearly one o'clock. Camillo's agitation waxed greater with each passing moment. So clearly did he imagine what was about to take place that he began to believe it a reality, to see it before his very eyes. Yes, without a doubt, he was afraid. He even considered arming himself, thinking that if nothing should happen he would lose nothing by this useful precaution. But at once he rejected the idea, angry with himself, and hastened his step towards Carioca square, there to take a tilbury. He arrived, entered and ordered the driver to be off at full speed."
     },
     {
       "id": "sit-0-28",
       "sceneId": "sit-0",
-      "text": "Before daybreak I bandaged the wounds that I had received in the face. Then only did I pluck up enough courage to return to the other room. Twice I started, only to turn back; but it must be done, so I entered. Even then, I did not at first go to the bed. My legs shook, my heart pounded. I thought of flight; but that would have been a confession of the crime.... It was on the contrary very important for me to hide all traces of it. I approached the bed. I looked at the corpse, with its widely distended eyes and its mouth gaping, as if uttering the eternal reproach of the centuries: \"Cain, what hast thou done with thy brother?\" I discovered on the neck the marks of my nails; I buttoned the shirt to the top, and threw the bed-cover up to the dead man's chin. Then I called a servant and told him that the colonel had died towards morning; I sent him to notify the vicar and the doctor."
+      "text": "\"The sooner the better,\" he thought. \"I can't stand this uncertainty.\""
     },
     {
       "id": "sit-0-29",
       "sceneId": "sit-0",
-      "text": "The first idea that came to me was to leave as soon as possible under the pretext that my brother was ill; and in reality I had received, several days before, from Rio, a letter telling me that he was not at all well. But I considered that my immediate departure might arouse suspicion, and I decided to wait. I laid out the corpse myself, with the assistance of an old, near-sighted negro. I remained continually in the room of the dead. I trembled lest something out of the way should be discovered. I wanted to assure myself that no mistrust could be read upon the faces of the others; but I did not dare to look any person in the eye. Everything made me impatient; the going and coming of those who, on tip-toe crossed the room; their whisperings; the ceremonies and the prayers of the vicar.... The hour having come, I closed the coffin, but with trembling hands, so trembling that somebody noticed it and commented upon it aloud, with pity."
+      "text": "But the very sound of the horse's clattering hoofs increased his agitation. Time was flying, and he would be face to face with danger soon enough. When they had come almost to the end of Guarda-Velha street the tilbury had to come to a stop; the thoroughfare was blocked by a coach that had broken down. Camillo surveyed the obstruction and decided to wait. After five minutes had gone by, he noticed that there at his left, at the very foot of the tilbury, was the fortune teller's house,--the very same as Rita had once consulted. Never, as at this moment, had he so desired to believe in card-reading. He looked closer, saw that the windows were closed, while all the others on the street were opened, filled with folks curious to see what was the matter. It looked for all the world like the dwelling of indifferent Fate."
     },
     {
       "id": "sit-0-30",
       "sceneId": "sit-0",
-      "text": "\"Poor Procopio! Despite what he has suffered from his master, he is strongly moved.\""
+      "text": "Camillo leaned back in his seat so as to shut all this from view. His excitement was intense, extraordinary, and from the deep, hidden recesses of his mind there began to emerge spectres of early childhood, old beliefs, banished superstitions. The coachman proposed another route; he shook his head and said that he would wait. He leaned forward to get a better look at the card-reader's house... Then he made a gesture of self-ridicule: it had entered his mind to consult the fortune-teller, who seemed to be hovering over him, far, far above, with vast, ash-colored wings; she disappeared, reappeared, and then her image was lost; then, in a few moments, the ash-colored wings stirred again, nearer, flying about him in narrowing circles... In the street men were shouting, dragging away the coach."
     },
     {
       "id": "sit-0-31",
       "sceneId": "sit-0",
-      "text": "It sounded like irony to me. I was anxious to have it all over with. We went out. Once in the street the passing from semi-obscurity to daylight dazed me and I staggered. I began to fear that it would no longer be possible for me to conceal the crime. I kept my eyes steadily fixed upon the ground and took my place in the procession. When all was over, I breathed once more. I was at peace with man. But I was not at peace with my conscience, and the first nights, naturally, I spent in restlessness and affliction. Need I tell you that I hastened to return to Rio de Janeiro, and that I dwelt there in terror and suspense, although far removed from the scene of the crime? I never smiled; I scarcely spoke; I ate very little; I suffered hallucinations and nightmares...."
+      "text": "\"There! Now! Push! That's it! Now!\""
     },
     {
       "id": "sit-0-32",
       "sceneId": "sit-0",
-      "text": "\"Let the dead rest in peace,\" they would say to me. \"It is out of all reason to show so much melancholy.\""
+      "text": "In a short while the obstruction was removed. Camillo closed his eyes, trying to think of other things; but the voice of Rita's husband whispered into his ears the words of the letter: \"Come immediately...\" And he could behold the anguish of the drama. He trembled. The house seemed to look right at him. His feet instinctively moved as if to leave the carriage and go in... Camillo found himself before a long, opaque veil... he thought rapidly of the inexplicability of so many things. The voice of his mother was repeating to him a host of extraordinary happenings; and the very sentence of the Prince of Denmark kept echoing within him:"
     },
     {
       "id": "sit-0-33",
       "sceneId": "sit-0",
-      "text": "And I was happy to find how people interpreted my symptoms, and praised the dead man highly, calling him a good soul, surly, in truth, but with a heart of gold. And as I spoke in such wise, I convinced myself, at least for a few moments at a time. Another interesting phenomenon was taking place within me--I tell it to you because you will perhaps make some useful deduction from it--and that was, although I had very little religion in me, I had a mass sung for the eternal rest of the colonel at the Church of the Blessed Sacrament. I sent out no invitations to it, I did not whisper a word of it to anybody; I went there alone. I knelt during the whole service and made many signs of the cross. I paid the priest double and distributed alms at the door, all in the name of the deceased."
+      "text": "\"There are more things in heaven and earth, Horatio, Than are dreamt of in our philosophy.\""
     },
     {
       "id": "sit-0-34",
       "sceneId": "sit-0",
-      "text": "I wished to deceive nobody. The proof of this lies in the fact that I did all this without letting any other know. To complete this incident, I may add that I never mentioned the colonel without repeating, \"May his soul rest in peace!\" And I told several funny anecdotes about him, some amusing caprices of his ..."
+      "text": "What could he lose by it, if...?"
     },
     {
       "id": "sit-0-35",
       "sceneId": "sit-0",
-      "text": "About a week after my arrival at Rio I received a letter from the vicar. He announced that the will of the colonel had been opened and that I was there designated as his sole heir. Imagine my stupefaction! I was sure that I had read wrongly; I showed it to my brother, to friends; they all read the same thing. It was there in black and white, I was really the sole heir of the colonel. Then I suddenly thought that this was a trap to catch me, but then I considered that there were other ways of arresting me, if the crime had been discovered. Moreover, I knew the vicar's honesty, and I was sure that he would not be a party to such a plan. I reread the letter five times, ten times, a hundred times; it was true. I was the colonel's sole heir!"
+      "text": "He jumped out to the pavement, just before the fortune-teller's door; he told the driver to wait for him, and hastened into the entry, ascending the stairs. There was little light, the stairs were worn away from the many feet that had sought them, the banister was smooth and sticky; but he saw and felt nothing. He stumbled up the stairs and knocked. Nobody appearing, he was about to go down; but it was too late now,--curiosity was whipping his blood and his heart beat with violent throbs; he turned back to the door, and knocked once, twice, three times. He beheld a woman; it was the card-reader. Camillo said that he had come to consult her, and she bade him enter. Thence they climbed to the attic by a staircase even worse than the first and buried in deeper gloom. At the top there was a garret, ill lighted by a small window. Old furniture, somber walls, and an air of poverty augmented, rather than destroyed, the prestige of the occupant."
     },
     {
       "id": "sit-0-36",
       "sceneId": "sit-0",
-      "text": "\"How much was he worth?\" my brother asked me."
+      "text": "The fortune-teller told him to be seated before the table, and she sat down on the opposite side with her back to the window, so that whatever little light came from without fell full upon Camillo's face. She opened a drawer and took out a pack of worn, filthy cards. While she rapidly shuffled them she peered at him closely, not so much with a direct gaze as from under her eyes. She was a woman of forty, Italian, thin and swarthy, with large, sharp, cunning eyes. She placed three cards upon the table, and said:"
     },
     {
       "id": "sit-0-37",
       "sceneId": "sit-0",
-      "text": "\"I don't know, but I know that he was very wealthy.\""
+      "text": "\"Let us first see what has brought you here. The gentleman has just received a severe shock and is in great fear...\""
     },
     {
       "id": "sit-0-38",
       "sceneId": "sit-0",
-      "text": "\"Really, he's shown that he was a very true friend to you.\""
+      "text": "Camillo, astonished, nodded affirmatively."
     },
     {
       "id": "sit-0-39",
       "sceneId": "sit-0",
-      "text": "\"He certainly was--he was....\""
+      "text": "\"And he wishes to know,\" she continued, \"whether anything will happen to him or not...\""
     },
     {
       "id": "sit-0-40",
       "sceneId": "sit-0",
-      "text": "Thus, by a strange irony of fate, all the colonel's wealth came into my hands. At first I thought of refusing the legacy. It seemed odious to take a sou of that inheritance; it seemed worse than the reward of a hired assassin. For three days this thought obsessed me; but more and more I was thrust against this consideration: that my refusal would not fail to awake suspicion. Finally I settled upon a compromise; I would accept the inheritance and would distribute it in small sums, secretly."
+      "text": "\"To me and to her,\" he explained, excitedly."
     },
     {
       "id": "sit-0-41",
       "sceneId": "sit-0",
-      "text": "This was not merely scruple on my part, it was also the desire to redeem my crime by virtuous deeds; and it seemed the only way to recover my peace of mind and feel that accounts were straight."
+      "text": "The fortune-teller did not smile; she simply told him to wait. She took the cards hastily once more and shuffled them with her long tapering fingers whose nails were so long and unclean from neglect; she shuffled them well, once, twice, thrice; then she began to lay them out. Camillo's eyes were riveted upon her in anxious curiosity."
     },
     {
       "id": "sit-0-42",
       "sceneId": "sit-0",
-      "text": "I made hurried preparations and left. As I neared the little village the sad event returned obstinately to my memory. Everything about the place, as I looked at it once again, suggested tragic deeds. At every turn in the road I seemed to see the ghost of the colonel loom. And despite myself, I evoked in my imagination his cries, his struggles, his looks on that horrible night of the crime...."
+      "text": "\"The cards tell me...\""
     },
     {
       "id": "sit-0-43",
       "sceneId": "sit-0",
-      "text": "Crime or struggle? Really, it was rather a struggle; I had been attacked, I had defended myself; and in self-defence.... It had been an unfortunate struggle, a genuine tragedy. This idea gripped me. And I reviewed all the abuse he had heaped upon me; I counted the blows, the names ... It was not the colonel's fault, that I knew well; it was his affliction that made him so peevish and even wicked. But I pardoned all, everything!... The worst of it was the end of that fatal night ... I also considered that in any case the colonel had not long to live. His days were numbered; did not he himself feel that? Didn't he say every now and then, \"How much longer have I to live? Two weeks, or one, perhaps less?\""
+      "text": "Camillo leaned forward to drink in her words one by one. Then she told him to fear nothing. Nothing would happen to him or to the other. He, the third, was aware of nought. Nevertheless, great caution was indispensable; envy and rivalry were at work. She spoke to him of the love that bound them, of Rita's beauty... Camillo was bewildered. The fortune-teller stopped talking, gathered the cards and locked them in the drawer."
     },
     {
       "id": "sit-0-44",
       "sceneId": "sit-0",
-      "text": "This was not life, it was slow agony, if one may so name the continual martyrdom of that poor man.... And who knows, who can say that the struggle and his death were not simply a coincidence? That was after all quite possible, it was even most probable; careful weighing of the matter showed that it couldn't have been otherwise. At length this idea, too, engraved itself upon my mind...."
+      "text": "\"The lady has restored peace to my spirit,\" he said, offering her his hand across the table and pressing that of the card-reader."
     },
     {
       "id": "sit-0-45",
       "sceneId": "sit-0",
-      "text": "Something tugged at my heart as I entered the village; I wanted to run back; but I dominated my emotions and I pressed forward. I was received with a shower of congratulations. The vicar communicated to me the particulars of the will, enumerated the pious gifts, and, as he spoke, praised the Christian forbearance and the faithfulness which I had shown in my care of the deceased, who, despite his temper and brutality, had so well demonstrated his gratitude."
+      "text": "She arose, laughing."
     },
     {
       "id": "sit-0-46",
       "sceneId": "sit-0",
-      "text": "\"Certainly,\" I said, looking nervously around."
+      "text": "\"Go,\" she said. \"Go, *ragazzo innamorato*...\""
     },
     {
       "id": "sit-0-47",
       "sceneId": "sit-0",
-      "text": "I was astounded. Everybody praised my conduct. Such patience, such devotion. The first formalities of the inventory detained me for a while; I chose a solicitor; things followed their course in regular fashion. During this time there was much talk of the colonel. People came and told me tales about him, but without observing the priest's moderation. I defended the memory of the colonel. I recalled his good qualities, his virtues; had he not been austere?..."
+      "text": "Italian for \"love-sick boy,\" \"young lover,\" etc."
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "And arising, she touched his head with her index finger. Camillo shuddered, as if it were the hand of one of the original sybils, and he, too, arose. The fortune-teller went to the bureau, upon which lay a plate of raisins, took a cluster of them and commenced to eat them, showing two rows of teeth that were as white as her nails were black. Even in this common action the woman possessed an air all her own. Camillo, anxious to leave, was at a loss how much to pay; he did not know her fee."
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "\"Raisins cost money,\" he said, at length, taking out his pocket-book. \"How much do you want to send for?\""
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "\"Ask your heart,\" she replied."
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "Camillo took out a note for ten milreis' and gave it to her. The eyes of the card-reader sparkled. Her usual fee was two milreis."
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "In United States money ten Brazilian milreis are equivalent to about $5.50."
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "\"I can see easily that the gentleman loves his lady very much... And well he may. For she loves the gentleman very deeply, too. Go, go in peace, with your mind at ease. And take care as you descend the staircase,--it's dark. Don't forget your hat...\""
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "The fortune-teller had already placed the note in her pocket, and accompanied him down the stairs, chatting rather gaily. At the bottom of the first flight Camillo bid her good-bye and ran down the stairs that led to the street, while the card-reader, rejoicing in her large fee, turned back to the garret, humming a barcarolle. Camillo found the tilbury waiting for him; the street was now clear. He entered and the driver whipped his horse into a fast trot."
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "To Camillo everything had now changed for the better and his affairs assumed a brighter aspect; the sky was clear and the faces of the people he passed were all so merry. He even began to laugh at his fears, which he now saw were puerile; he recalled the language of Villela's letter and perceived at once that it was most friendly and familiar. How in the world had he ever been able to read any threat of danger into those words! He suddenly realized that they were urgent, however, and that he had done ill to delay so long; it might be some very serious business affair."
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "\"Faster, faster!\" he cried to the driver."
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "And he began to think of a plausible explanation of his delay; he even contemplated taking advantage of this incident to re-establish his former intimacy in Villela's household... Together with his plans there kept echoing in his soul the words of the fortune-teller. In truth, she had guessed the object of his visit, his own state of mind, and the existence of a third; why, then, wasn't it reasonable to suppose that she had guessed the rest correctly, too? For, the unknown present is the same as the future. And thus, slowly and persistently the young man's childhood superstitions attained the upper hand and mystery clutched him in its iron claws. At times he was ready to burst into laughter, and with a certain vexation he did laugh at himself. But the woman, the cards, her dry, reassuring words, and her good-bye--\"Go, go, *ragazzo innamorato*,\" and finally, that farewell barcarolle, so lively and gracious,--such were the new elements which, together with the old, formed within him a new and abiding faith."
+    },
+    {
+      "id": "sit-0-58",
+      "sceneId": "sit-0",
+      "text": "The truth is that his heart was happy and impatient, recalling the happy hours of the past and anticipating those yet to come. As he passed through Gloria street Camillo gazed across the sea, far across where the waters and the heaven meet in endless embrace, and the sight gave him a sensation of the future,--long, long and infinite."
+    },
+    {
+      "id": "sit-0-59",
+      "sceneId": "sit-0",
+      "text": "From here it was but a moment's drive to Villela's home. He stepped out, thrust the iron garden gate open and entered. The house was silent. He ran up the six stone steps and scarcely had he had time to knock when the door opened and Villela loomed before him."
+    },
+    {
+      "id": "sit-0-60",
+      "sceneId": "sit-0",
+      "text": "\"Pardon my delay. It was impossible to come sooner. What is the matter?\""
+    },
+    {
+      "id": "sit-0-61",
+      "sceneId": "sit-0",
+      "text": "Villela made no reply. His features were distorted; he beckoned Camillo to step within. As he entered, Camillo could not repress a cry of horror:--there upon the sofa lay Rita, dead in a pool of blood. Villela seized the lover by the throat and, with two bullets, stretched him dead upon the floor."
     }
   ]
 }
