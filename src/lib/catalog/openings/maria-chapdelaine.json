@@ -1,0 +1,141 @@
+{
+  "id": "maria-chapdelaine",
+  "title": "Maria Chapdelaine",
+  "author": "Louis Hémon (trans. W. H. Blake)",
+  "year": "1913 / 1921",
+  "note": "Project Gutenberg 4383. Host: Ch I *Peribonka* — church door / April snow (Macmillan reprint table / *Ite, missa est* skipped).",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Quebec — Peribonka / Lake St. John country",
+      "place": "Chapter I · Quebec — Peribonka / Lake St. John country",
+      "reentry": "The door opened, and the men of the congregation began to come out of the church at Peribonka.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The door opened, and the men of the congregation began to come out of the church at Peribonka."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "A moment earlier it had seemed quite deserted, this church set by the roadside on the high bank of the Peribonka, whose icy snow-covered surface was like a winding strip of plain. The snow lay deep upon road and fields, for the April sun was powerless to send warmth through the gray clouds, and the heavy spring rains were yet to come. This chill and universal white, the humbleness of the wooden church and the wooden houses scattered along the road, the gloomy forest edging so close that it seemed to threaten, these all spoke of a harsh existence in a stern land. But as the men and boys passed through the doorway and gathered in knots on the broad steps, their cheery salutations, the chaff flung from group to group, the continual interchange of talk, merry or sober, at once disclosed the unquenchable joyousness of a people ever filled with laughter and good humour."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Cleophas Pesant, son of Thadee Pesant the blacksmith, was already in light-coloured summer garments, and sported an American coat with broad padded shoulders; though on this cold Sunday he had not ventured to discard his winter cap of black cloth with harelined ear-laps for the hard felt hat he would have preferred to wear. Beside him Egide Simard, and others who had come a long road by sleigh, fastened their long fur coats as they left the church, drawing them in at the waist with scarlet sashes. The young folk of the village, very smart in coats with otter collars, gave deferential greeting to old Nazaire Larouche; a tall man with gray hair and huge bony shoulders who had in no wise altered for the mass his everyday garb: short jacket of brown cloth lined with sheepskin, patched trousers, and thick woollen socks under moose-hide moccasins."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Well, Mr. Larouche, do things go pretty well across the water?\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"Not badly, my lads, not so badly.\""
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Everyone drew his pipe from his pocket, and the pig's bladder filled with tobacco leaves cut by hand, and, after the hour and a half of restraint, began to smoke with evident satisfaction. The first puffs brought talk of the weather, the coming spring, the state of the ice on Lake St. John and the rivers, of their several doings and the parish gossip; after the manner of men who, living far apart on the worst of roads, see one another but once a week."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"The lake is solid yet,\" said Cleophas Pesant, \"but the rivers are no longer safe. The ice went this week beside the sand-bank opposite the island, where there have been warm spring-holes all winter.\" Others began to discuss the chances of the crops, before the ground was even showing."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"I tell you that we shall have a lean year,\" asserted one old fellow, \"the frost got in before the last snows fell.\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "At length the talk slackened and all faced the top step, where Napoleon Laliberte was making ready, in accord with his weekly custom, to announce the parish news. He stood there motionless for a little while, awaiting quiet,--hands deep in the pockets of the heavy lynx coat, knitting his forehead and half closing his keen eyes under the fur cap pulled well over his ears; and when silence fell he began to give the news at the full pitch of his voice, in the manner of a carter who encourages his horses on a hill."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"The work on the wharf will go forward at once... I have been sent money by the Government, and those looking for a job should see me before vespers. If you want this money to stay in the parish instead of being sent back to Quebec you had better lose no time in speaking to me.\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Some moved over in his direction; others, indifferent, met his announcement with a laugh. The remark was heard in an envious undertone:--\"And who will be foreman at three dollars a day? Perhaps good old Laliberte...\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "But it was said jestingly rather than in malice, and the speaker ended by adding his own laugh."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Hands still in the pockets of his big coat, straightening himself and squaring his shoulders as he stood there upon the highest step, Napoleon Laliberte proceeded in loudest tones:--\"A surveyor from Roberval will be in the parish next week. If anyone wishes his land surveyed before mending his fences for the summer, this is to let him know.\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "The item was received without interest. Peribonka farmers are not particular about correcting their boundaries to gain or lose a few square feet, since the most enterprising among them have still two-thirds of their grants to clear,--endless acres of woodland and swamp to reclaim."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "He continued:--\"Two men are up here with money to buy furs. If you have any bear, mink, muskrat or fox you will find these men at the store until Wednesday, or you can apply to François Paradis of Mistassini who is with them. They have plenty of money and will pay cash for first-class pelts.\" His news finished, he descended the steps. A sharp-faced little fellow took his place."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"Who wants to buy a fine young pig of my breeding?\" he asked, indicating with his finger something shapeless that struggled in a bag at his feet. A great burst of laughter greeted him. They knew them well, these pigs of Hormidas' raising. No bigger than rats, and quick as squirrels to jump the fences."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"Twenty-five cents!\" one young man bid chaffingly."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"Fifty cents!\""
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"A dollar!\""
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"Don't play the fool, Jean. Your wife will never let you pay a dollar for such a pig as that.\""
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Jean stood his ground:--\"A dollar, I won't go back on it.\""
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "Hormidas Berube with a disgusted look on his face awaited another bid, but only got jokes and laughter."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "Meantime the women in their turn had begun to leave the church. Young or old, pretty or ugly, nearly all were well clad in fur cloaks, or in coats of heavy cloth; for, honouring the Sunday mass, sole festival of their lives, they had doffed coarse blouses and homespun petticoats, and a stranger might well have stood amazed to find them habited almost with elegance in this remote spot; still French to their finger-tips in the midst of the vast lonely forest and the snow, and as tastefully dressed, these peasant women, as most of the middle-class folk in provincial France."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "Cleophas Pesant waited for Louisa Tremblay who was alone, and they went off together along the wooden sidewalk in the direction of the house. Others were satisfied to exchange jocular remarks with the young girls as they passed, in the easy and familiar fashion of the country,--natural enough too where the children have grown up together from infancy."
+    }
+  ]
+}

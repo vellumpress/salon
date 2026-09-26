@@ -1,0 +1,91 @@
+{
+  "id": "filipino-popular-tales",
+  "title": "Filipino Popular Tales",
+  "author": "Dean S. Fansler (ed.)",
+  "year": "1921",
+  "note": "Project Gutenberg 8299. Host: ***Suan’s Good Luck*** only — “There was once an old woman…” (Preface / Contents / other tales / Notes skipped).",
+  "minutes": 3,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Suan’s Good Luck · Philippines — Pampanga / Suan the diviner",
+      "place": "Suan’s Good Luck · Philippines — Pampanga / Suan the diviner",
+      "reentry": "There was once an old woman who had an only son named Suan. Suan was a clever, sharp-witted boy. His mother sent him to school. Instead of going to school, however, Suan climbed up the tree that stood",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "There was once an old woman who had an only son named Suan. Suan was a clever, sharp-witted boy. His mother sent him to school. Instead of going to school, however, Suan climbed up the tree that stood by the roadside. As soon as his mother had passed by from the market, Suan hurried home ahead of her. When she reached home, he cried, \"Mother, I know what you bought in the market to-day.\" He then told her, article by article. This same thing happened so repeatedly, that his mother began to believe in his skill as a diviner."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "One day the ring of the datu's daughter disappeared. All the people in the locality searched for it, but in vain. The datu called for volunteers to find the lost ring, and he offered his daughter's hand as a prize to the one who should succeed. Suan's mother heard of the proclamation. So she went to the palace and presented Suan to the datu."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"Well, Suan, to-morrow tell me where the ring is,\" said the datu."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Yes, my lord, I will tell you, if you will give your soldiers over to me for to-night,\" Suan replied."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"You shall have everything you need,\" said the datu."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "That evening Suan ordered the soldiers to stand around him in a semicircle. When all were ready, Suan pointed at each one of them, and said, \"The ring is here, and nowhere else.\" It so happened that Suan fixed his eyes on the guilty soldier, who trembled and became pale. \"I know who has it,\" said Suan. Then he ordered them to retire."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Late in the night this soldier came to Suan, and said, \"I will get the ring you are in search of, and will give it to you if you will promise me my safety.\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"Give it to me, and you shall be safe,\" said Suan."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Very early the next morning Suan came to the palace with a turkey in his arms. \"Where is the ring?\" the datu demanded. \"Why, sir, it is in this turkey's intestines,\" Suan replied. The turkey was then killed, and the ring was found inside it."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"You have done very well, Suan. Now you shall have my daughter's hand,\" said the datu. So Suan became the princess's husband."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "One day the datu proposed a bet with any one who wished to prove Suan's skill. Accordingly another datu came. He offered to bet seven cascos of treasure that Suan could not tell the number of seeds that were in his orange. Suan did not know what to do. At midnight he went secretly to the cascos. Here he heard their conversation, and from it he learned the number of seeds in the orange."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "In the morning Suan said boastfully, \"I tell you, your orange has nine seeds.\" Thus Suan won the whole treasure."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Hoping to recover his loss, the datu came again. This time he had with him fourteen cascos full of gold. He asked Suan to tell him what was inside his golden ball. Suan did not know what to say. So in the dead of night he went out to the cascos, but he could learn nothing there. The next morning Suan was summoned into the presence of the two datus. He had no idea whatever as to what was in the ball; so he said scornfully, \"Nonsense!\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"That is right, that is right!\" shouted a man. \"The ball contains nine cents.\" Consequently Suan won the fourteen cascos full of gold. From now on, nobody doubted Suan's merit."
+    }
+  ]
+}

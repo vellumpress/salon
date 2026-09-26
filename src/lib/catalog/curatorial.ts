@@ -344,6 +344,28 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Green Carnation, Sat AM Moon, Fri 6PM High Wind, evening Hidden Force,
  * afternoon Confusion, noon Man of Property, morning Cabala, and Emmeline
  * stay ahead and untouched.
+ * Mira Sat 26 Sep 2026 ~6PM CLEAR — Recommend only, never Featured.
+ * White Jacket leads this cycle’s Next append (not a very white jacket,
+ * Callao, Cape Horn bound, Melville, New York March 1850, PG 10712; note
+ * and contents skipped). LEAD kept — not A Japanese Nightingale. Soft
+ * Pacific after The Moon and Sixpence: a Callao ship is not Tahiti. No
+ * score is invented. A Japanese Nightingale follows (sunset bay, The Storm
+ * Dance, Eaton as Onoto Watanna, Harper 1901, PG 63181; illustration list
+ * and contents skipped). Japan after Botchan and Kwaidan; the Unhuman Tour
+ * stays held. Maria Chapdelaine follows (Peribonka church door, April snow,
+ * Hémon, Blake’s English, French 1913 / Macmillan 1921, PG 4383; reprint
+ * table skipped). Peribonka is not Elgin, Ontario. The House by the
+ * Medlar-Tree follows (Malavoglia stones, Padron ’Ntoni, the Provvidenza,
+ * Verga, Mary A. Craig’s English, Italian 1881 / Harper 1890, PG 54684;
+ * Howells’s introduction skipped). Sicily is not Rome. The earlier
+ * white-jacket, chapdelaine, and medlar seats stay. Filipino Popular Tales
+ * is Rituals only — Suan’s Good Luck, Fansler, 1921, PG 8299 — and is not
+ * this Next tail and not For you. One tale this sit. The earlier
+ * filipino-popular-tales seat stays. Cold-open stays
+ * Mirth → Quicksand → Botchan. Sat evening Road to the Open, afternoon
+ * Hill of Dreams, midday Green Carnation, Sat AM Moon, Fri 6PM High Wind,
+ * evening Hidden Force, afternoon Confusion, noon Man of Property, morning
+ * Cabala, and Emmeline stay ahead and untouched.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -773,6 +795,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "calvary",
   "anna-of-the-five-towns",
   "small-souls",
+  // Mira Sat 26 Sep 2026 ~6PM CLEAR — White Jacket leads Next. Never Featured.
+  // Earlier seats for White Jacket, Chapdelaine, and Medlar stay. This is the cycle order.
+  // Filipino Popular Tales is Rituals (Suan’s Good Luck only), not this tail.
+  // Evening, afternoon, midday, Sat AM, and Fri packs stay ahead.
+  "white-jacket",
+  "a-japanese-nightingale",
+  "maria-chapdelaine",
+  "the-house-by-the-medlar-tree",
 ] as const;
 
 /**

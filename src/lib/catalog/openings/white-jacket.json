@@ -1,0 +1,86 @@
+{
+  "id": "white-jacket",
+  "title": "White Jacket",
+  "author": "Herman Melville",
+  "year": "1850",
+  "note": "Project Gutenberg 10712. Host: Ch I *The Jacket* — not a *very* white jacket / Callao / Cape Horn bound (NOTE / Contents skipped). LEAD kept.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Naval — Callao / US frigate toward Cape Horn",
+      "place": "Chapter I · Naval — Callao / US frigate toward Cape Horn",
+      "reentry": "It was not a *very* white jacket, but white enough, in all conscience, as the sequel will show.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was not a *very* white jacket, but white enough, in all conscience, as the sequel will show."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The way I came by it was this."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "When our frigate lay in Callao, on the coast of Peru—her last harbour in the Pacific—I found myself without a *grego*, or sailor’s surtout; and as, toward the end of a three years’ cruise, no pea-jackets could be had from the purser’s steward: and being bound for Cape Horn, some sort of a substitute was indispensable; I employed myself, for several days, in manufacturing an outlandish garment of my own devising, to shelter me from the boisterous weather we were so soon to encounter."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "It was nothing more than a white duck frock, or rather shirt: which, laying on deck, I folded double at the bosom, and by then making a continuation of the slit there, opened it lengthwise—much as you would cut a leaf in the last new novel. The gash being made, a metamorphosis took place, transcending any related by Ovid. For, presto! the shirt was a coat!—a strange-looking coat, to be sure; of a Quakerish amplitude about the skirts; with an infirm, tumble-down collar; and a clumsy fullness about the wristbands; and white, yea, white as a shroud. And my shroud it afterward came very near proving, as he who reads further will find."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "But, bless me, my friend, what sort of a summer jacket is this, in which to weather Cape Horn? A very tasty, and beautiful white linen garment it may have seemed; but then, people almost universally sport their linen next to their skin."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Very true; and that thought very early occurred to me; for no idea had I of scudding round Cape Horn in my shirt; for *that* would have been almost scudding under bare poles, indeed."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "So, with many odds and ends of patches—old socks, old trowser-legs, and the like—I bedarned and bequilted the inside of my jacket, till it became, all over, stiff and padded, as King James’s cotton-stuffed and dagger-proof doublet; and no buckram or steel hauberk stood up more stoutly."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "So far, very good; but pray, tell me, White-Jacket, how do you propose keeping out the rain and the wet in this quilted *grego* of yours? You don’t call this wad of old patches a Mackintosh, do you?——you don’t pretend to say that worsted is water-proof?"
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "No, my dear friend; and that was the deuce of it. Waterproof it was not, no more than a sponge. Indeed, with such recklessness had I bequilted my jacket, that in a rain-storm I became a universal absorber; swabbing bone-dry the very bulwarks I leaned against. Of a damp day, my heartless shipmates even used to stand up against me, so powerful was the capillary attraction between this luckless jacket of mine and all drops of moisture. I dripped like a turkey a roasting; and long after the rain storms were over, and the sun showed his face, I still stalked a Scotch mist; and when it was fair weather with others, alas! it was foul weather with me."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "*Me?* Ah me! Soaked and heavy, what a burden was that jacket to carry about, especially when I was sent up aloft; dragging myself up step by step, as if I were weighing the anchor. Small time then, to strip, and wring it out in a rain, when no hanging back or delay was permitted. No, no; up you go: fat or lean: Lambert or Edson: never mind how much avoirdupois you might weigh. And thus, in my own proper person, did many showers of rain reascend toward the skies, in accordance with the natural laws."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "But here be it known, that I had been terribly disappointed in carrying out my original plan concerning this jacket. It had been my intention to make it thoroughly impervious, by giving it a coating of paint, But bitter fate ever overtakes us unfortunates. So much paint had been stolen by the sailors, in daubing their overhaul trowsers and tarpaulins, that by the time I—an honest man—had completed my quiltings, the paint-pots were banned, and put under strict lock and key."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Said old Brush, the captain of the *paint-room*—“Look ye, White-Jacket,” said he, “ye can’t have any paint.”"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Such, then, was my jacket: a well-patched, padded, and porous one; and in a dark night, gleaming white as the White Lady of Avenel!"
+    }
+  ]
+}
