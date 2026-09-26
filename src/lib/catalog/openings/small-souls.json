@@ -1,0 +1,191 @@
+{
+  "id": "small-souls",
+  "title": "Small Souls",
+  "author": "Louis Couperus (trans. Alexander Teixeira de Mattos)",
+  "year": "1901 / 1914",
+  "note": "Project Gutenberg 34021. Host: Ch I Hague rain / Dorine / wet umbrella (Translator’s Note skipped).",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Netherlands — The Hague / Van Lowe clan",
+      "place": "Chapter I · Netherlands — The Hague / Van Lowe clan",
+      "reentry": "It was pouring with rain; and Dorine van Lowe was tired out when, by way of a last visit, she dropped in on Karel and Cateau just before dinner. But Dorine was pleased with herself. She had gone out i",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was pouring with rain; and Dorine van Lowe was tired out when, by way of a last visit, she dropped in on Karel and Cateau just before dinner. But Dorine was pleased with herself. She had gone out immediately after lunch and had trotted and trammed all over the Hague; she had done much, if not everything; and her tired face looked very glad and her bright black eyes sparkled."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"Have meneer and mevrouw gone in to dinner yet, Sientje?\" she asked, nervous and breathless, in a sudden fright lest she should be too late."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"No, miss, but it's just on six,\" said Sientje, severely."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Dorine van Lowe whisked through the hall and rushed upstairs, forgetting to put her wet umbrella in the stand. She clutched it in one hand, together with her skirt, which she forgot to let fall; in her arm she held a parcel pressed close to her, under her cape; in the other hand she carried her muff and her old black satin reticule; with the same hand, making a superhuman effort, she felt for her pocket-handkerchief and managed to blow her nose without dropping anything but four or five tram-tickets, which flew around her on every side."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Old Sientje followed her with her glance, severely. Then she went to the kitchen, fetched a cloth, silently wiped up a trail of rain and drops along the hall and staircase and carefully picked the tram-tickets off the stair-carpet."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Dorine walked into her brother's study. Karel van Lowe was sitting placidly by a good fire, reading; his smooth-shaven face shone pink and young. He wore his thick, glossy hair neatly combed and brushed into a fine tuft; he dyed his moustache black; and, like Dorine, he had the black eyes of the Van Lowes. His broad figure looked comfortable and well-fed in his spruce clothes; his waistcoat lay in thick creases over his stomach; and his watch-chain rose and fell with his regular breathing. He seemed calm and healthy, full of calculating prudence and quiet selfishness. He gently put aside the magazine which he was reading, as though he felt that he was in for it, that he would have to listen to his sister for a quarter of an hour at least; but he made up his mind to interrupt her pretty often. So he rubbed his large, fat, pink hands and looked at Dorine impassively; and his glance seemed to convey:"
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Go on, I'm listening, I can't help myself....\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Dorine stood near his writing-table, which was in the middle of the prim room, while he remained sitting by the fire."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"I've been to all of them!\" Dorine began triumphantly."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"To Bertha?\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"To Bertha.\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"To Gerrit?\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"To Gerrit.\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"To Adolphine?\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"And to Ernst and Paul: I've been to all of them!\" said Dorine, triumphantly. \"And they've all promised to come.\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"Dorine, would you mind putting your umbrella outside? It's so wet.\""
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Dorine put her umbrella in the passage outside the door and she now also let fall her skirt, the hem of which showed an edge of wet mud at which her brother kept staring as though hypnotized."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"And what did Bertha say?\" he asked, pretending to be interested, but giving all his attention to the wet hem."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"Well, Bertha was very nice! I must say, Bertha was very nice!\" said Dorine; and the tears, always so ready with her, came into her dark eyes. \"She was very busy with the girls, drawing up the lists of invitations for Emilie's wedding; and to-morrow they have one of their official dinners. But she said at once that, if Mamma wished it, we must all of us obey her wish and go to Mamma's to-night to meet Constance. And Van Naghel, who came in for a moment, said so too. Bertha never agreed with Mamma, about encouraging Constance to come back to Holland; but, now that things had gone as far as they had, she said she would look upon Constance as a sister again, quite as a sister.\""
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"And what did Van Naghel say?\" asked Karel van Lowe."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Karel was not really interested in what his brother-in-law, Van Naghel van Voorde, the colonial secretary, had said, but he had a methodical mind and, now that he knew Bertha's opinion, he also wanted to know her husband's opinion and the opinion of all the other brothers and sisters. Meanwhile, he continued to look at the wet hem of Dorine's skirt and longed to ask her not to touch his paper-knife and paper-weight, which she kept playing with half-nervously; but he said nothing, calculating within himself that, presently, when Dorine was gone, he would have a moment, before dinner, to put everything straight."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"Well, I gathered from what Van Naghel said that he hoped Constance would show the greatest tact and not be too pushing at first, but that, as their brother-in-law, he would welcome Van der Welcke and Constance very cordially.\""
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "Karel nodded placidly, to show that he understood what lay at the back of Van Naghel's words and that he quite agreed."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"And what did Van Saetzema and Adolphine say?\""
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"Well, of course, I had more trouble with Adolphine than with any of the others!\" cried Dorine, triumphantly waving the paper-knife, while Karel anxiously followed the movements of her hand. \"First, she didn't want to come and said that Mamma had no morals and all that sort of thing. I answered that I respected her views; that, of course, every one was free to think as he pleased; but that she must not forget that Mamma was an old woman, a very old woman, and that we ought to try and make her happy in her old age. Then I said that Constance was Mamma's child as much as any of us; and that it was only natural for Mamma to want us all to take Constance back as a sister, as it had all happened so very long ago and she had been married to Van der Welcke for fifteen years and their boy is thirteen....\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"Dorine, please, would you mind leaving the paper-weight alone? Else all those letters are sure to get mixed.... And what did Adolphine say to that?\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "\"Well, at first, Adolphine wouldn't hear of going, said she was afraid of Constance' bad influence on the girls, said she couldn't possibly take them. In fact, she talked like a fool. But, when I told her that Van Naghel and Bertha were coming and that not a word had been said about their girls--that they were coming too--then Adolphine said that she would come after all and bring her girls. And Gerrit and Ernst\"--Dorine opened Karel's stamp-box, but shut it again at once, terrified when she saw the stamps neatly arranged in the compartments, according to their values--\"I saw Gerrit and Ernst too; and Adeline spoke very nicely; and Paul....\""
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "A gong sounded."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "\"That's dinner,\" said Karel. \"I suppose you won't stay, Dorine? I don't think there's much: Cateau and I always dine so simply....\""
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"Oh, I eat very little; I should like to stay, if I may; then we can all go on to Mamma's afterwards....\""
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "Karel van Lowe gave one more look at the muddy hem; he remembered that the dining-room had been cleaned that day; and he could restrain himself no longer:"
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "\"Dorine,\" he said, in despair, \"in that case, won't you let Marie brush you down first?\""
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "Then, at last, Dorine realized that she was not fit to be seen, after trotting and tramming the whole afternoon in the rain. She looked in the glass: when she had taken off her wet cape, she would be less presentable than ever. And so she dolefully changed her mind:"
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "\"You're right, Karel, I don't look nice; and my boots are wet: I think I had better go home and change for the evening. So good-bye for the present, Karel.\""
+    }
+  ]
+}

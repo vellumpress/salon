@@ -1,0 +1,51 @@
+{
+  "id": "the-road-to-the-open",
+  "title": "The Road to the Open",
+  "author": "Arthur Schnitzler (trans. Horace Samuel)",
+  "year": "1908 / 1913",
+  "note": "Project Gutenberg 45895. Host: Ch I George alone / empty father’s chair / September sun (title page skipped).",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Austria — Vienna apartment / September light",
+      "place": "Chapter I · Austria — Vienna apartment / September light",
+      "reentry": "George von Wergenthin sat at table quite alone to-day. His elder brother Felician had chosen to dine out with friends for the first time after a longish interval. But George felt no particular inclina",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "George von Wergenthin sat at table quite alone to-day. His elder brother Felician had chosen to dine out with friends for the first time after a longish interval. But George felt no particular inclination to renew his acquaintance with Ralph Skelton, Count Schönstein or any of the other young people, whose gossip usually afforded him so much pleasure; for the time being he did not feel in the mood for any kind of society."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The servant cleared away and disappeared. George lit a cigarette and then in accordance with his habit walked up and down the big three-windowed rather low room, while he wondered how it was that this very room which had for many weeks seemed to him so gloomy was now gradually beginning to regain its former air of cheerfulness. He could not help letting his glance linger on the empty chair at the top end of the table, over which the September sun was streaming through the open window in the centre. He felt as though he had seen his father, who had died two months ago, sit there only an hour back, as he visualised with great clearness the very slightest mannerisms of the dead man, even down to his trick of pushing his coffee-cup away, adjusting his pince-nez or turning over the leaves of a pamphlet."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "George thought of one of his last conversations with his father which had occurred in the late spring before they had moved to the villa on the Veldeser Lake. George had just then come back from Sicily, where he had spent April with Grace on a melancholy and somewhat boring farewell tour before his mistress's final return to America. He had done no real work for six months or more, and had not even copied out the plaintive adagio which he had heard in the plashing of the waves on a windy morning in Palermo as he walked along the beach. George had played over the theme to his father and improvised on it with an exaggerated wealth of harmonies which almost swamped the original melody, and when he had launched into a wildly modulated variation, his father had smilingly asked him from the other end of the piano--\"Whither away, whither away?\" George had felt abashed and allowed the swell of the notes to subside, and his father had begun a discussion about his son's future with all his usual affection, but with rather more than his usual seriousness. This conversation ran through his mind to-day as though it had been pregnant with presage. He stood at the window and looked out. The park outside was fairly empty. An old woman wearing an old-fashioned cloak with glass beads sat on a seat. A nursemaid walked past holding one child by the hand while another, a little boy, in a hussar uniform, with a buckled-on sabre and a pistol in his belt, ran past, looked haughtily round and saluted a veteran who came down the path smoking. Further down the grounds were a few people sitting round the kiosk, drinking coffee and reading the papers. The foliage was still fairly thick, and the park looked depressed and dusty and altogether far more summer-like than usual for late September."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "George rested his arms on the window-sill, leant forwards and looked at the sky. He had not left Vienna since his father's death, though he had had many opportunities of so doing. He could have gone with Felician to the Schönstein estate; Frau Ehrenberg had written him a charming letter inviting him to come to Auhof; he could easily have found a companion for that long-planned cycle-tour through Carinthia and the Tyrol, which he had not the energy to undertake alone. But he preferred to stay in Vienna and occupy his time with perusing and putting in order the old family papers. He found archives which went as far back as his great-grandfather Anastasius von Wergenthin, who haled from the Rhine district and had by his marriage with a Fräulein Recco become possessed of an old castle near Bozen which had been uninhabitable for a long period. There were also documents dealing with the history of George's grandfather, a major of artillery who had fallen before Chlum in the year 1866."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "The major's son, the father of Felician and himself, had devoted himself to scientific studies, principally botany, and had taken at Innsbruck the degree of Doctor of Philosophy. At the age of twenty-four he had made the acquaintance of a young girl of an old family of Austrian officials, who had brought her up to be a singer, more with a view to rendering her independent of the limited, not to say impoverished, resources of the household, than because she had any real vocation. Baron von Wergenthin saw and heard her for the first time at a concert-performance of the Missa Solemnis and in the following May she became his wife. Three years later the health of the Baroness began to fail, and she was ordered South by the doctors. She did not recover as soon as was anticipated, with the result that the house in Vienna was given up, and the Baron and his family lived for several years a kind of hotel-life, as they travelled from one place to another. His business and studies frequently summoned the Baron to Vienna, but the sons never left their mother. The family lived in Sicily, Rome, Tunis, Corfu, Athens, Malta, Merano, the Riviera, and finally in Florence; never in very great style, but fairly well nevertheless, and without curtailing their expenditure sufficiently to prevent a substantial part of the Baron's fortune being gradually eaten up. George was eighteen when his mother died. Nine years had passed since then, but the memory of that spring evening was still as vivid as ever, when his father and brother had happened to be out, and he had stood alone and helpless by his mother's death-bed, while the talk and laughter of the passers-by had flowed in with the spring air through the hastily opened windows with all the jar of its unwelcome noise."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "The survivors took their mother's body back to Vienna. The Baron devoted himself to his studies with new and desperate zeal. He had formerly enjoyed the reputation of an aristocratic dilettante, but he now began to be taken quite seriously even in academic circles, and when he was elected honorary president of the Botanical Society he owed that distinction to something more than the accident of a noble name. Felician and George entered themselves as law students. But after some time their father himself encouraged the boys to abandon their university studies, and go in for a more general education and one more in accordance with their musical tendencies. George felt thankful and relieved at this new departure. But even in this sphere which he had chosen himself, he was by no means industrious, and he would often occupy himself for weeks on end with all manner of things that had nothing at all to do with his musical career."
+    }
+  ]
+}

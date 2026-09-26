@@ -612,7 +612,11 @@ const BLURBS: Record<string, string> = {
   "the-club-of-queer-trades": "Chesterton’s club of men who invented impossible jobs.",
   "the-wisdom-of-father-brown": "More Father Brown: the criminal as a soul the priest can still see.",
   clayhanger: "Bennett’s Five Towns again: a printer’s son and a long provincial life.",
-  "anna-of-the-five-towns": "A Methodist fortune, a girl, and the town’s idea of goodness.",
+  "anna-of-the-five-towns": "A Sunday-school yard in the Five Towns, and a first breath of 371 words left as printed.",
+  "the-road-to-the-open": "George sits alone, and the September sun falls on his father’s empty chair.",
+  calvary: "An October birth in Saint-Michel-les-Hêtres, and the sit stays in the Orne.",
+  "small-souls": "Hague rain, and Dorine van Lowe comes in with a wet umbrella.",
+  "stories-and-pictures": "Bontzye Shweig dies down here, and only heaven asks his name.",
   "riceyman-steps": "A Clerkenwell bookseller, a miser, and a marriage in a shop of dust.",
   "the-four-million": "O. Henry’s New York of clerks, cops, and the gift that arrives on time.",
   "the-trimmed-lamp-and-other-stories-of-the-four-million":
