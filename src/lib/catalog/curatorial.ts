@@ -435,6 +435,29 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Soft London, carefully. The earlier Next seat for Reginald stays. The
  * earlier Sun POST-#169 seats stay ahead. Cold-open stays
  * Mirth → Quicksand → Botchan.
+ * Mira Sun 27 Sep 2026 POST-#171 CLEAR — Recommend only, never Featured.
+ * Royal Highness leads this cycle’s Next append (Prelude, Albrechtstrasse
+ * noon, a general and a lieutenant in grey great-coats, Mann, A. Cecil
+ * Curtis’s English, German 1909 / Curtis English 1916, PG 36028; contents
+ * and the imprint skipped). LEAD SWAP — not Ramona. Soft Germany is new
+ * after three American sits. Inventory 80 is medium. No Notion or Launch
+ * rank is invented. Ramona follows carefully (Chapter I, sheep-shearing,
+ * the Senora Moreno, Felipe, Jackson, 1884, PG 2802; produced-by skipped).
+ * Soft Mission country is not Oakley, not the Midwest, and not Chicago.
+ * Inventory 80 is medium. No Notion or Launch rank is invented. Almayer’s
+ * Folly follows carefully (Chapter I, “Kaspar! Makan!”, the verandah, Pantai
+ * at sunset, Conrad, 1895, PG 720; the Amiel epigraph and the edition block
+ * skipped). Soft Conrad is not Gaspar Ruiz. Notion 71 is medium. Launch
+ * shelf is no — For you only if the shelf is already dense — do not inflate
+ * it. There is no For you seat to keep. The Crux follows (Chapter I, The
+ * Back Way, the Foote Girls, Gilman, 1911, PG 38551; the verse epigraph
+ * skipped). The Host opens in New England before Colorado. Inventory 87 is
+ * easy. No Launch rank is invented. The Black Dog is Rituals only — the
+ * title tale, Coppard, 1923, PG 61016 — and is not this Next tail. One tale
+ * this sit. Soft England village, carefully, after Reginald. Inventory 88
+ * is medium. No Launch rank is invented. The earlier Next seats for Royal
+ * Highness, The Crux, and The Black Dog stay. The earlier Sun POST-#170
+ * seats stay ahead. Cold-open stays Mirth → Quicksand → Botchan.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -897,6 +920,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "ramuntcho",
   "miss-lulu-bett",
   "the-pit",
+  // Mira Sun 27 Sep 2026 POST-#171 CLEAR — Royal Highness leads Next. Never Featured.
+  // LEAD SWAP — not Ramona. Earlier seats for Royal Highness, The Crux, and
+  // The Black Dog stay. The Black Dog is Rituals (title tale only), not this tail.
+  // Sun POST-#170 The Sport of the Gods and the earlier packs stay ahead.
+  "royal-highness",
+  "ramona",
+  "almayers-folly",
+  "the-crux",
 ] as const;
 
 /**

@@ -679,6 +679,11 @@ const BLURBS: Record<string, string> = {
   ramuntcho: "Sad curlews flee a gray squall over the Bidassoa, and the path starts in moss and rope soles.",
   "the-pit": "Laura Dearborn waits in the Auditorium vestibule while a February draught moves through Chicago.",
   reginald: "Reginald is persuaded to the McKillops’ garden-party, and the sit is that sketch only.",
+  "royal-highness": "Noon on the Albrechtstrasse: a general and a lieutenant in grey great-coats.",
+  ramona: "Sheep-shearing is late at the Senora Moreno’s Mission ranch, and Felipe is still ill.",
+  "almayers-folly": "Kaspar! Makan! — a decaying house on the Pantai at sunset.",
+  "the-crux": "The Foote Girls bustle along Margate Street, and the Host opens on the Back Way.",
+  "the-black-dog": "A freckled rustic pockets his fare, and the sit is the title tale only.",
   "a-hero-of-our-time":
     "Post from Tiflis: a dukhan crowd and camels at the foot of Mount Koishaur.",
   "strange-tales":

@@ -148,6 +148,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   ramuntcho: { label: "Bidassoa", region: "fr" },
   "the-pit": { label: "Chicago", region: "us" },
   reginald: { label: "London", region: "gb" },
+  "royal-highness": { label: "Albrechtstrasse", region: "de" },
+  ramona: { label: "Moreno Mission", region: "us" },
+  "almayers-folly": { label: "Pantai", region: "id" },
+  "the-crux": { label: "Margate", region: "us" },
+  "the-black-dog": { label: "England village", region: "gb" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples

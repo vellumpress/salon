@@ -1,0 +1,76 @@
+{
+  "id": "ramona",
+  "title": "Ramona",
+  "author": "Helen Hunt Jackson",
+  "year": "1884",
+  "note": "Project Gutenberg 2802. Host: Ch I — sheep-shearing / Senora Moreno / Felipe (Produced-by skipped). Year 1884. Inventory 80 medium — no invented Notion/Launch rank. Soft Mission ≠ Oakley/Midwest/Chicago.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · S. California — Moreno Mission ranch",
+      "place": "Chapter I · S. California — Moreno Mission ranch",
+      "reentry": "It was sheep-shearing time in Southern California, but sheep-shearing was late at the Senora Moreno's. The Fates had seemed to combine to put it off. In the first place, Felipe Moreno had been ill. He",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was sheep-shearing time in Southern California, but sheep-shearing was late at the Senora Moreno's. The Fates had seemed to combine to put it off. In the first place, Felipe Moreno had been ill. He was the Senora's eldest son, and since his father's death had been at the head of his mother's house. Without him, nothing could be done on the ranch, the Senora thought. It had been always, \"Ask Senor Felipe,\" \"Go to Senor Felipe,\" \"Senor Felipe will attend to it,\" ever since Felipe had had the dawning of a beard on his handsome face."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "In truth, it was not Felipe, but the Senora, who really decided all questions from greatest to least, and managed everything on the place, from the sheep-pastures to the artichoke-patch; but nobody except the Senora herself knew this. An exceedingly clever woman for her day and generation was Senora Gonzaga Moreno,--as for that matter, exceedingly clever for any day and generation; but exceptionally clever for the day and generation to which she belonged. Her life, the mere surface of it, if it had been written, would have made a romance, to grow hot and cold over: sixty years of the best of old Spain, and the wildest of New Spain, Bay of Biscay, Gulf of Mexico, Pacific Ocean,--the waves of them all had tossed destinies for the Senora. The Holy Catholic Church had had its arms round her from first to last; and that was what had brought her safe through, she would have said, if she had ever said anything about herself, which she never did,--one of her many wisdoms. So quiet, so reserved, so gentle an exterior never was known to veil such an imperious and passionate nature, brimful of storm, always passing through stress; never thwarted, except at peril of those who did it; adored and hated by turns, and each at the hottest. A tremendous force, wherever she appeared, was Senora Moreno; but no stranger would suspect it, to see her gliding about, in her scanty black gown, with her rosary hanging at her side, her soft dark eyes cast down, and an expression of mingled melancholy and devotion on her face. She looked simply like a sad, spiritual-minded old lady, amiable and indolent, like her race, but sweeter and more thoughtful than their wont. Her voice heightened this mistaken impression. She was never heard to speak either loud or fast. There was at times even a curious hesitancy in her speech, which came near being a stammer, or suggested the measured care with which people speak who have been cured of stammering. It made her often appear as if she did not known her own mind; at which people sometimes took heart; when, if they had only known the truth, they would have known that the speech hesitated solely because the Senora knew her mind so exactly that she was finding it hard to make the words convey it as she desired, or in a way to best attain her ends."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "About this very sheep-shearing there had been, between her and the head shepherd, Juan Canito, called Juan Can for short, and to distinguish him from Juan Jose, the upper herdsman of the cattle, some discussions which would have been hot and angry ones in any other hands than the Senora's."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Juan Canito wanted the shearing to begin, even though Senor Felipe were ill in bed, and though that lazy shepherd Luigo had not yet got back with the flock that had been driven up the coast for pasture. \"There were plenty of sheep on the place to begin with,\" he said one morning,--\"at least a thousand;\" and by the time they were done, Luigo would surely be back with the rest; and as for Senor Felipe's being in bed, had not he, Juan Canito, stood at the packing-bag, and handled the wool, when Senor Felipe was a boy? Why could he not do it again? The Senora did not realize how time was going; there would be no shearers to be hired presently, since the Senora was determined to have none but Indians. Of course, if she would employ Mexicans, as all the other ranches in the valley did, it would be different; but she was resolved upon having Indians,--\"God knows why,\" he interpolated surlily, under his breath."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"I do not quite understand you, Juan,\" interrupted Senora Moreno at the precise instant the last syllable of this disrespectful ejaculation had escaped Juan's lips; \"speak a little louder. I fear I am growing deaf in my old age.\""
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "What gentle, suave, courteous tones! and the calm dark eyes rested on Juan Canito with a look to the fathoming of which he was as unequal as one of his own sheep would have been. He could not have told why he instantly and involuntarily said, \"Beg your pardon, Senora.\""
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Oh, you need not ask my pardon, Juan,\" the Senora replied with exquisite gentleness; \"it is not you who are to blame, if I am deaf. I have fancied for a year I did not hear quite as well as I once did. But about the Indians, Juan; did not Senor Felipe tell you that he had positively engaged the same band of shearers we had last autumn, Alessandro's band from Temecula? They will wait until we are ready for them. Senor Felipe will send a messenger for them. He thinks them the best shearers in the country. He will be well enough in a week or two, he thinks, and the poor sheep must bear their loads a few days longer. Are they looking well, do you think, Juan? Will the crop be a good one? General Moreno used to say that you could reckon up the wool-crop to a pound, while it was on the sheep's backs.\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"Yes, Senora,\" answered the mollified Juan; \"the poor beasts look wonderfully well considering the scant feed they have had all winter. We'll not come many pounds short of our last year's crop, if any. Though, to be sure, there is no telling in what case that--Luigo will bring his flock back.\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "The Senora smiled, in spite of herself, at the pause and gulp with which Juan had filled in the hiatus where he had longed to set a contemptuous epithet before Luigo's name."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "This was another of the instances where the Senora's will and Juan Canito's had clashed and he did not dream of it, having set it all down as usual to the score of young Senor Felipe."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Encouraged by the Senora's smile, Juan proceeded: \"Senor Felipe can see no fault in Luigo, because they were boys together; but I can tell him, he will rue it, one of these mornings, when he finds a flock of sheep worse than dead on his hands, and no thanks to anybody but Luigo. While I can have him under my eye, here in the valley, it is all very well; but he is no more fit to take responsibility of a flock, than one of the very lambs themselves. He'll drive them off their feet one day, and starve them the next; and I've known him to forget to give them water. When he's in his dreams, the Virgin only knows what he won't do.\""
+    }
+  ]
+}

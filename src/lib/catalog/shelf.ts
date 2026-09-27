@@ -2065,10 +2065,11 @@ export const SHELF: ShelfWork[] = [
   },
   { id: "the-luck-of-roaring-camp-and-other-tales", title: "The Luck of Roaring Camp and Other Tales", author: "Bret Harte", year: 1870, form: "stories", language: "English", minutes: 80, local: true, opening: "Moral Tendency. Chapter V “Open Sesame”. Chapter VI The Trials Of Mrs. Morpher. Chapter VII The People vs John Doe Waters. Chapter VIII The Author To The Reader—Explanatory.", breaths: 2559, gutenberg: 6373 },
   { id: "poems-of-passion", title: "Poems of Passion", author: "Ella Wheeler Wilcox", year: 1883, form: "poem", language: "English", minutes: 90, local: true, opening: "Love's Language Impatience Communism", breaths: 809, gutenberg: 16776 },
-  { id: "ramona", title: "Ramona", author: "Helen Hunt Jackson", year: 1884, form: "novel", language: "English", minutes: 160, gutenberg: 2802,
+  { id: "ramona", title: "Ramona", author: "Helen Hunt Jackson", year: 1884, form: "novel", language: "English", minutes: 768, gutenberg: 2802,
     local: true,
-    opening: "IT was sheep-shearing time in Southern California, but sheep-shearing was late at the Senora Moreno's. The Fates had seemed to combine to put it off. In the first place, Felipe",
-    breaths: 2194,
+    opening: "It was sheep-shearing time in Southern California, but sheep-shearing was late at the Senora Moreno's. The Fates had seemed to combine to put it off. In the first place, Felipe",
+    breaths: 2193,
+    intro: "It was sheep-shearing time in Southern California, but sheep-shearing was late at the Senora Moreno’s. Chapter I — the Senora, Felipe, and the Mission ranch. Skip the produced-by credit. Helen Hunt Jackson’s 1884 novel. Soft Mission country is not Oakley, not the Midwest, and not Chicago. Inventory is medium. No score is invented for this sit.",
   },
   { id: "a-crystal-age", title: "A Crystal Age", author: "W. H. Hudson", year: 1887, form: "novel", language: "English", minutes: 160, local: true, opening: "I do not quite know how it happened, my recollection of the whole matter ebbing in a somewhat clouded condition. I fancy I had gone somewhere on a botanizing expedition, but", breaths: 697, gutenberg: 7401 },
   { id: "soldiers-three", title: "Soldiers Three", author: "Rudyard Kipling", year: 1888, form: "stories", language: "English", minutes: 80, gutenberg: 6120,
@@ -2805,7 +2806,7 @@ export const SHELF: ShelfWork[] = [
   { id: "the-book-of-wonder", title: "The Book of Wonder", author: "Lord Dunsany", year: 1912, form: "stories", language: "English", minutes: 113, local: true, opening: "Come with me, ladies and gentlemen who are in any wise weary of London: come with me: and those that tire at all of the world we know: for we have new worlds here.", breaths: 218, gutenberg: 7477, intro: "Come with me, ladies and gentlemen who are in any wise weary of London. Preface, then The Bride of the Man-Horse only — stop when the silver horn sounds the wedding bells. One story this sit; the cycle continues." },
   { id: "the-colonel-s-dream", title: "The Colonel's Dream", author: "Charles W. Chesnutt", year: 1905, form: "novel", language: "English", minutes: 160, local: true, opening: "Online Distributed Proofreading Team (http://www.pgdp.net/)", breaths: 1559, gutenberg: 19746 },
   { id: "the-comedienne", title: "The Comedienne", author: "Władysław Reymont (trans. Edmund Obecny)", year: 1896, form: "novel", language: "English", minutes: 458, local: true, opening: "Bukowiec, a station on the Dombrowa railroad, lies in a beautiful spot. A winding line was cut among the beech and pine covered hills, and at the most level point, between a", breaths: 3096, gutenberg: 25760, intro: "Bukowiec station on the Dombrowa railroad, a winding line among beech and pine hills. Skip the Publishers’ Note. Obecny’s English of Reymont. The novel continues." },
-  { id: "the-crux", title: "The Crux", author: "Charlotte Perkins Gilman", year: 1911, form: "novel", language: "English", minutes: 160, local: true, opening: "THE Back WAY", breaths: 1746, gutenberg: 38551 },
+  { id: "the-crux", title: "The Crux", author: "Charlotte Perkins Gilman", year: 1911, form: "novel", language: "English", minutes: 253, local: true, opening: "The \"Foote Girls\" were bustling along Margate Street with an air of united purpose that was unusual with them.", breaths: 1613, gutenberg: 38551, intro: "The Foote Girls were bustling along Margate Street. Chapter I, The Back Way — Do come on, Rebecca, and the Lane white house. Skip the verse epigraph. The Host opens in New England before Colorado. Charlotte Perkins Gilman’s 1911 novel. Soft New England moving toward Colorado, carefully. Inventory is easy. No score is invented for this sit." },
   { id: "the-dream", title: "The Dream", author: "Émile Zola (trans. Eliza E. Chase)", year: 1888, form: "novel", language: "English", minutes: 160, local: true, opening: "During the severe winter of 1860 the river Oise was frozen over and the plains of Lower Picardy were covered with deep snow. On Christmas Day, especially, a heavy squall from the", breaths: 1141, gutenberg: 9499 },
   { id: "the-gods-of-pegana", title: "The Gods of Pegana", author: "Lord Dunsany", year: 1905, form: "stories", language: "English", minutes: 77, local: true, opening: "The Sayings of Limpang-Tung", breaths: 458, gutenberg: 8395 },
   { id: "the-grand-babylon-hotel", title: "The Grand Babylon Hotel", author: "Arnold Bennett", year: 1902, form: "novel", language: "English", minutes: 160, local: true, opening: "THE Grand Babylon HÔTEL", breaths: 2034, gutenberg: 2813 },
@@ -3017,7 +3018,7 @@ export const SHELF: ShelfWork[] = [
   },
   {
     id: "the-black-dog",
-    title: "The Black Dog, and Other Stories",
+    title: "The Black Dog",
     author: "A. E. Coppard",
     year: 1923,
     form: "stories",
@@ -3027,8 +3028,8 @@ export const SHELF: ShelfWork[] = [
     gutenberg: 61016,
     opening:
       "Having pocketed his fare the freckled rustic took himself and his antediluvian cab back to the village limbo from which they had briefly emerged.",
-    breaths: 487,
-    intro: "A rustic pockets his fare and takes the old cab back to the village. Open The Black Dog.",
+    breaths: 1504,
+    intro: "Having pocketed his fare, the freckled rustic takes the old cab back to the village. This sit is the title tale only — the one-eyed porter, July noon, Loughlin. Skip the contents and the other tales. A. E. Coppard’s 1923 book. One tale this sit; the cycle continues. Soft England village, carefully, after Reginald. Inventory is medium. No score is invented for this sit.",
   },
   {
     id: "poems-by-emily-dickinson-series-one",
@@ -3112,7 +3113,7 @@ export const SHELF: ShelfWork[] = [
   { id: "les-heures-claires", title: "Les Heures Claires", author: "Émile Verhaeren", year: 1896, form: "poem", language: "French", minutes: 45, local: true, opening: "Tissée en or dans l'air de soie!", breaths: 122, gutenberg: 10061 },
   { id: "les-trophees", title: "Les Trophées", author: "José-Maria de Heredia", year: 1893, form: "poem", language: "French", minutes: 255, local: true, opening: "À Leconte de L'Isle", breaths: 664, gutenberg: 14805 },
   { id: "numa-roumestan", title: "Numa Roumestan", author: "Alphonse Daudet", year: 1881, form: "novel", language: "English", minutes: 1225, local: true, opening: "TO THE ARENA!", breaths: 1787, gutenberg: 69808 },
-  { id: "royal-highness", title: "Royal Highness", author: "Thomas Mann", year: 1909, form: "novel", language: "English", minutes: 1439, local: true, opening: "Artillery salvos were fired when the various new-fangled means of communication in the capital sprea", breaths: 1411, gutenberg: 36028 },
+  { id: "royal-highness", title: "Royal Highness", author: "Thomas Mann (trans. A. Cecil Curtis)", year: 1909, form: "novel", language: "English", minutes: 577, local: true, opening: "The scene is the Albrechtstrasse, the main artery of the capital, which runs from Albrechtsplatz and the Old Schloss to", breaths: 1407, gutenberg: 36028, intro: "The scene is the Albrechtstrasse, the main artery of the capital, at noon. A general and a lieutenant in grey great-coats. Prelude — skip the contents and the imprint. Thomas Mann, in A. Cecil Curtis’s English. German 1909, Curtis English 1916. Soft Germany is new after a run of American sits. The lead is this book, not Ramona. Inventory is medium. No score is invented for this sit." },
   { id: "the-emancipated", title: "The Emancipated", author: "George Gissing", year: 1890, form: "novel", language: "English", minutes: 1786, local: true, opening: "By a window looking from Posillipo upon the Bay of Naples sat an English lady, engaged in letter-wri", breaths: 3897, gutenberg: 4311 },
   { id: "the-great-hunger", title: "The Great Hunger", author: "Johan Bojer", year: 1916, form: "novel", language: "English", minutes: 914, local: true, opening: "For sheer havoc, there is no gale like a good northwester, when it roars in, through the long winter", breaths: 1756, gutenberg: 2943 },
   { id: "the-patrician", title: "The Patrician", author: "John Galsworthy", year: 1911, form: "novel", language: "English", minutes: 1123, local: true, opening: "Light, entering the vast room—a room so high that its carved ceiling refused itself to exact scrutin", breaths: 2176, gutenberg: 2774 },
@@ -3209,6 +3210,7 @@ export const SHELF: ShelfWork[] = [
   { id: "korean-folk-tales", title: "Korean Folk Tales: Imps, Ghosts and Fairies", author: "Im Bang & Yi Ryuk (tr. James S. Gale)", year: 1913, form: "stories", language: "English", minutes: 48, local: true, opening: "In the days of King Sung-jong (A.D. 1488-1495) one of Korea's noted men became governor of Pyong-an ", breaths: 29, gutenberg: 51002 },
   // Mira CLEAR — Amber Later, Generosity. Local manuscript. Rights: tbr. No PG. For you only. Never Featured.
   { id: "generosity", title: "Generosity", author: "Amber Later", year: 2026, form: "stories", language: "English", minutes: 33, local: true, opening: "I should apologize.", breaths: 85, rights: "tbr", intro: "An apology begins with a box of unused baby clothes and a basement mural of identical smiles. The story keeps going until the face is only itself again." },
+  { id: "almayers-folly", title: "Almayer's Folly", author: "Joseph Conrad", year: 1895, form: "novel", language: "English", minutes: 313, local: true, gutenberg: 720, opening: "\"Kaspar! Makan!\"", breaths: 844, intro: "Kaspar! Makan! Chapter I — the verandah, Pantai at sunset, and a decaying house. Skip the Amiel epigraph and the edition block. Joseph Conrad’s 1895 novel. Soft Conrad is not Gaspar Ruiz. Notion is medium. Launch shelf is no. For you only if the shelf is already dense — do not inflate it. There is no For you seat to keep." },
 ];
 
 const BY_ID = new Map(SHELF.map((item) => [item.id, item]));
