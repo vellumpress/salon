@@ -1,0 +1,51 @@
+{
+  "id": "seven-brothers",
+  "title": "Seven Brothers",
+  "author": "Aleksis Kivi (trans. Alex Matson)",
+  "year": "1870 / 1929",
+  "note": "Project Gutenberg 79566. Host: Ch I — Jukola Farm / Häme / Toukola (Faber apparatus / Preface skipped). Notion 61 thin — Next carefully.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Finland — Häme / Jukola Farm",
+      "place": "Chapter I · Finland — Häme / Jukola Farm",
+      "reentry": "Jukola Farm, in the south of the province of Häme, stands on the northern slope of a hill, near the village of Toukola. Around it the ground is bestrewn with boulders, but below this stony patch begin",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Jukola Farm, in the south of the province of Häme, stands on the northern slope of a hill, near the village of Toukola. Around it the ground is bestrewn with boulders, but below this stony patch begin the fields, where, before the farm fell into decay, heavy-eared crops used to wave. Below the fields is a meadow, rimmed with clover and cleft by a winding ditch; and richly it had yielded hay before becoming a pasturage for straying village cattle. In addition to these, the farm owns vast forests, bogs and backwoods, most of which the founder of the farm, with admirable foresight, succeeded in adding to it at the first great settlement of boundaries in former days. On that occasion the master of Jukola, with an eye more to the benefit of his descendants than his own best, had accepted as his share a forest ravaged by fire and by this means received seven times the area given his neighbours. But all signs of this fire had long ago disappeared from his holding and dense forests had replaced them. Such is the home of the seven brothers whose fortunes I am about to relate."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Their names, in order of age, are: Juhani, Tuomas, Aapo, Simeoni, Timo, Lauri and Eero. Tuomas and Aapo are twins, and so are Timo and Lauri. Juhani, the eldest, is twenty-five, while Eero, the youngest, is barely eighteen. In build they are sturdy and broad of shoulder: all of middling height except Eero, who is still very short. The tallest of them is Aapo, though perhaps not the strongest. The honours in this respect are with Tuomas, who is indeed famous for the breadth of his shoulders. A peculiarity that marks them all is the brownness of their skin and the stiff, hemplike quality of their hair, the coarseness of which is especially striking in Juhani."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Their father, a passionate hunter, met a sudden death in the prime of his life while fighting an enraged bear. Both were found dead, the shaggy king of the woods and the man, lying side by side on the bloodstained ground. The man was terribly mangled, but the bear, too, displayed the marks of a knife in its throat and side, while the keen ball of a rifle had pierced its breast. Thus perished a sturdy fellow who had killed in his time over fifty bears. But for the sake of these hunting trips he neglected the care of his farm and, bereft of a master’s guidance, it had gradually fallen into ruin. Nor were the boys better inclined towards sowing and ploughing; from their father they had inherited his keen longing for the chase. They laid traps, set gins and snares, and dug grouse-pits, to the undoing of wildfowl and hares. In such pursuits they spent the days of their boyhood, until they could handle fire-arms and dared approach the bear in its wilds."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Their mother tried, indeed, with scoldings and the rod, to turn their thoughts to work and diligence, but the brothers’ obstinacy proved equal to all her efforts. She was in all a deserving woman, known for her straightforward and upright, though perhaps a trifle harsh, nature. A fine character too, was her brother, the boys’ beloved uncle, a fearless sailor who in his youth had sailed the distant seas, seeing many peoples and lands; until losing his eyesight and becoming stone-blind, he came to live the dark days of his old age on Jukola Farm. Here, as he carved by touch such things as dippers, spoons, axe-shafts, clappers and other useful articles, he would often tell his nephews tales, and describe to them wonderful happenings in his own and other countries, and, in between, miracles and events from the Bible. To these talks of his the brothers listened attentively, impressing them deeply on their memories. With less pleasure they heard the commands and scoldings of their mother, whose often-repeated whippings failed to cure them of an affected hardness of hearing. It would also often happen that, scenting the approach of a hiding, the whole crowd would take to flight, causing their mother and others much anxiety and only making their own case worse."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "I will relate here one episode of their childhood. As the boys were well aware, there was a hen’s nest under their barn belonging to an old woman called ‘Mother Pinewood’, her little cabin standing in a clump of pines near Jukola. The thought of baked eggs coming into their minds one day, they decided to rob this nest and to set off into the forest to enjoy their plunder. Acting on this idea, they emptied the nest and fled with one accord to the woods, six of them, for Eero still crawled at that time at his mother’s feet. And when they reached a certain bubbling brook in a dark spruce-wood, they made a fire on its bank, wrapped the eggs in rags, and, after dipping them in water, set them to bake in the hissing ashes. Then when the eggs were ready they ate a tasty meal and set off home again, satisfied. But on reaching the home hill they were met by a hurricane, for in the meantime their roguery had been discovered. Mother Pinewood scolded and raged, and with angry looks their own mother came forward to meet them, a whistling rod in her hand. But the boys felt loth to face this tempest and turning, fled again to the forest for shelter, heedless of their mother’s cries."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "A day now passed and then another, but nothing was heard of the truants; and at last their absence began to cause their mother great anxiety; her anger soon changed to sorrow and tears of pity. She set out to look for them, scouring the forests in all directions, but without finding them. Whereupon the matter began to assume a more dreadful aspect, and at last called for help from the authorities. Word was sent to the Sheriff’s man, whose duty it was to organize search parties, and without delay the whole of Toukola village and its neighbourhood was called up. And now a party of old and young, men and women mingled, set out in a long line to comb the forests, with the Sheriff’s man at their head. On the first day they searched the vicinity, but without the hoped-for result; the next day they moved farther afield, and now as they breasted a hill, they saw far away on the edge of a bog a blue pillar of smoke that wound upward to the sky. Carefully marking the direction in which the smoke was seen, they pushed on towards it. And then, having drawn nearer, they heard a voice which sang:"
+    }
+  ]
+}
