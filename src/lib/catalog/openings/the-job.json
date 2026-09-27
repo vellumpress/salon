@@ -1,0 +1,76 @@
+{
+  "id": "the-job",
+  "title": "The Job",
+  "author": "Sinclair Lewis",
+  "year": "1917",
+  "note": "Project Gutenberg 25474. Host: Ch I — Captain Lew Golden / Panama Pennsylvania (Produced-by skipped). Host Una office primary after PA frame. Year 1917. Inventory 85 medium — no invented Launch rank. Soft US carefully ≠ Salem; soft NY carefully.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Panama PA → NY",
+      "place": "Chapter I · Panama PA → NY",
+      "reentry": "Captain Lew Golden would have saved any foreign observer a great deal of trouble in studying America. He was an almost perfect type of the petty small-town middle-class lawyer. He lived in Panama, Pen",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Captain Lew Golden would have saved any foreign observer a great deal of trouble in studying America. He was an almost perfect type of the petty small-town middle-class lawyer. He lived in Panama, Pennsylvania. He had never been \"captain\" of anything except the Crescent Volunteer Fire Company, but he owned the title because he collected rents, wrote insurance, and meddled with lawsuits."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "He carried a quite visible mustache-comb and wore a collar, but no tie. On warm days he appeared on the street in his shirt-sleeves, and discussed the comparative temperatures of the past thirty years with Doctor Smith and the Mansion House 'bus-driver. He never used the word \"beauty\" except in reference to a setter dog--beauty of words or music, of faith or rebellion, did not exist for him. He rather fancied large, ambitious, banal, red-and-gold sunsets, but he merely glanced at them as he straggled home, and remarked that they were \"nice.\" He believed that all Parisians, artists, millionaires, and socialists were immoral. His entire system of theology was comprised in the Bible, which he never read, and the Methodist Church, which he rarely attended; and he desired no system of economics beyond the current platform of the Republican party. He was aimlessly industrious, crotchety but kind, and almost quixotically honest."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "He believed that \"Panama, Pennsylvania, was good enough for anybody.\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "This last opinion was not shared by his wife, nor by his daughter Una."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Mrs. Golden was one of the women who aspire just enough to be vaguely discontented; not enough to make them toil at the acquisition of understanding and knowledge. She had floated into a comfortable semi-belief in a semi-Christian Science, and she read novels with a conviction that she would have been a romantic person \"if she hadn't married Mr. Golden--not but what he's a fine man and very bright and all, but he hasn't got much imagination or any, well, *romance*!\""
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "She wrote poetry about spring and neighborhood births, and Captain Golden admired it so actively that he read it aloud to callers. She attended all the meetings of the Panama Study Club, and desired to learn French, though she never went beyond borrowing a French grammar from the Episcopalian rector and learning one conjugation. But in the pioneer suffrage movement she took no part--she didn't \"think it was quite ladylike.\"... She was a poor cook, and her house always smelled stuffy, but she liked to have flowers about. She was pretty of face, frail of body, genuinely gracious of manner. She really did like people, liked to give cookies to the neighborhood boys, and--if you weren't impatient with her slackness--you found her a wistful and touching figure in her slight youthfulness and in the ambition to be a romantic personage, a Marie Antoinette or a Mrs. Grover Cleveland, which ambition she still retained at fifty-five."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "She was, in appearance, the ideal wife and mother--sympathetic, forgiving, bright-lipped as a May morning. She never demanded; she merely suggested her desires, and, if they were refused, let her lips droop in a manner which only a brute could withstand."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "She plaintively admired her efficient daughter Una."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Una Golden was a \"good little woman\"--not pretty, not noisy, not particularly articulate, but instinctively on the inside of things; naturally able to size up people and affairs. She had common sense and unkindled passion. She was a matter-of-fact idealist, with a healthy woman's simple longing for love and life. At twenty-four Una had half a dozen times fancied herself in love. She had been embraced at a dance, and felt the stirring of a desire for surrender. But always a native shrewdness had kept her from agonizing over these affairs."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "She was not--and will not be--a misunderstood genius, an undeveloped artist, an embryonic leader in feminism, nor an ugly duckling who would put on a Georgette hat and captivate the theatrical world. She was an untrained, ambitious, thoroughly commonplace, small-town girl. But she was a natural executive and she secretly controlled the Golden household; kept Captain Golden from eating with his knife, and her mother from becoming drugged with too much reading of poppy-flavored novels."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "She wanted to learn, learn anything. But the Goldens were too respectable to permit her to have a job, and too poor to permit her to go to college. From the age of seventeen, when she had graduated from the high school--in white ribbons and heavy new boots and tight new organdy--to twenty-three, she had kept house and gone to gossip-parties and unmethodically read books from the town library--Walter Scott, Richard Le Gallienne, Harriet Beecher Stowe, Mrs. Humphry Ward, *How to Know the Birds*, *My Year in the Holy Land*, *Home Needlework*, *Sartor Resartus*, and *Ships that Pass in the Night*. Her residue of knowledge from reading them was a disbelief in Panama, Pennsylvania."
+    }
+  ]
+}

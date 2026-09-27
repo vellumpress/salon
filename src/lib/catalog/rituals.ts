@@ -343,6 +343,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Midway of the Ponte Vecchio at Florence, where three arches break the lines of the little jewellers' booths. Chapter I — the Ponte Vecchio, Colville, and the yellow Arno. Skip the produced-by credit. William Dean Howells’s 1886 novel. Soft Florence, carefully. This is not Capri, Sicily, or Sardinia. Soft Howells, carefully. This is not Silas Lapham. Inventory 82 is medium. No score is invented for this sit.`,
   "a-slav-soul":
     `The farther I go back in my memory of the past, the nearer I get to childhood. This sit is A Slav Soul only — childhood, Yasha, Matsko, and Bouton. Skip the Putnam introduction, the contents, and the other stories. Stop at the end of the sketch. A. I. Kuprin, in Rosa Savary Graham’s English, 1916. One sketch this sit. Soft Russia, carefully, after The Village and Virgin Soil. Inventory 84 is easy. No score is invented for this sit.`,
+  "cabbages-and-kings":
+    `They will tell you in Anchuria, that President Miraflores, of that volatile republic, died by his own hand in the coast town of Coralio. The Proem by the Carpenter — Miraflores and the Coralio mangrove. Skip the Walrus epigraph and the Contents. O. Henry’s 1904 novel. Soft Anchuria, carefully. This is not Jamaica, Gaspar Ruiz, the Purple Land, or the Four Horsemen. The lead is this book, not The Picture of Dorian Gray, not The Job, and not The Reign of Greed. Inventory 84 is easy. No score is invented for this sit.`,
+  "picture-of-dorian-gray":
+    `The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden. Chapter I — studio roses, lilac, and Lord Henry’s laburnum. Skip the Preface. Oscar Wilde’s 1891 novel. The book year is 1891; the magazine is 1890. Soft London, carefully. This is not Tess. Soft gothic, carefully. This is not Dracula or the House of the Seven Gables. Inventory 83 is easy. No score is invented for this sit.`,
+  "the-job":
+    `Captain Lew Golden would have saved any foreign observer a great deal of trouble in studying America. Chapter I — Captain Lew Golden and Panama, Pennsylvania, with Una’s office after the Pennsylvania frame. Skip the produced-by credit. Sinclair Lewis’s 1917 novel. Soft United States, carefully. This is not Salem. Inventory 85 is medium. No score is invented for this sit.`,
+  "reign-of-greed":
+    `One morning in December the steamer Tabo was laboriously ascending the tortuous course of the Pasig. Chapter I, On the Upper Deck — the Tabo, the Pasig, and La Laguna. Skip the Translator’s Introduction. José Rizal, in Charles E. Derbyshire’s English, 1891. The Spanish year is 1891; the English is 1912. Soft Philippines, carefully. This is not Noli Me Tangere or Suan. Inventory 85 is medium. No score is invented for this sit.`,
+  "a-cross-line":
+    `The rather flat notes of a man’s voice float out into the clear air, singing the refrain of a popular music-hall ditty. This sit is A Cross Line only — a music-hall ditty, a felled tree, and spring. Skip Beardsley, the dedication, the contents, and the other stories. Stop at the end of the sketch. George Egerton’s 1894 sketch. The imprint year is 1894; the copyright is 1893. One sketch this sit. Soft England, carefully. Soft New Woman, carefully. This is not Ann Veronica, The Woman Who Did, or The Heavenly Twins. Inventory 78 is easy. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -678,7 +688,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-grand-babylon-hotel",
       "the-hidden-force",
       "the-jacket",
-      "the-job",
       "the-magic-skin",
       "the-man-of-property",
       "the-napoleon-of-notting-hill",
@@ -1071,6 +1080,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "heart-of-darkness",
       "toilers-of-the-sea",
       "indian-summer",
+      // Mira Sun 27 Sep 2026 POST-#179 CLEAR — Cabbages and Kings leads. Never Featured.
+      // LEAD kept — not Dorian Gray, not The Job, not The Reign of Greed.
+      // Earlier before-sleep inventory listing of The Job moves here so the cycle reads in order.
+      // A Cross Line is Waking up (the title sketch only).
+      "cabbages-and-kings",
+      "picture-of-dorian-gray",
+      "the-job",
+      "reign-of-greed",
     ],
   },
   {
@@ -1159,6 +1176,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-tug-of-love",
       // Mira Sun 27 Sep 2026 POST-#178 CLEAR — A Slav Soul sketch only.
       "a-slav-soul",
+      // Mira Sun 27 Sep 2026 POST-#179 CLEAR — A Cross Line sketch only.
+      "a-cross-line",
     ],
   },
   {
@@ -1332,6 +1351,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "heart-of-darkness",
       "toilers-of-the-sea",
       "indian-summer",
+      // Mira Sun 27 Sep 2026 POST-#179 CLEAR — Cabbages and Kings leads. Never Featured.
+      // LEAD kept — not Dorian Gray, not The Job, not The Reign of Greed.
+      // Earlier before-sleep inventory listing of The Job moves here so the cycle reads in order.
+      // A Cross Line is Waking up (the title sketch only).
+      "cabbages-and-kings",
+      "picture-of-dorian-gray",
+      "the-job",
+      "reign-of-greed",
     ],
   },
   {
@@ -1504,6 +1531,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "heart-of-darkness",
       "toilers-of-the-sea",
       "indian-summer",
+      // Mira Sun 27 Sep 2026 POST-#179 CLEAR — Cabbages and Kings leads. Never Featured.
+      // LEAD kept — not Dorian Gray, not The Job, not The Reign of Greed.
+      // Earlier before-sleep inventory listing of The Job moves here so the cycle reads in order.
+      // A Cross Line is Waking up (the title sketch only).
+      "cabbages-and-kings",
+      "picture-of-dorian-gray",
+      "the-job",
+      "reign-of-greed",
     ],
   },
   {
@@ -1671,7 +1706,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-house-by-the-medlar-tree": 6,
   "the-house-of-the-seven-gables": 6,
   "the-jacket": 5,
-  "the-job": 5,
+  "the-job": 4,
   "the-magic-skin": 5,
   "the-man-of-property": 7,
   "the-napoleon-of-notting-hill": 5,
@@ -1759,6 +1794,10 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   dracula: 6,
   "the-tug-of-love": 8,
   "a-slav-soul": 12,
+  "cabbages-and-kings": 4,
+  "picture-of-dorian-gray": 4,
+  "reign-of-greed": 3,
+  "a-cross-line": 12,
   "royal-highness": 4,
   ramona: 6,
   "almayers-folly": 6,
