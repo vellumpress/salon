@@ -632,7 +632,7 @@ const BLURBS: Record<string, string> = {
   "the-wife-of-his-youth-and-other-stories-of-the-color-line":
     "Chesnutt on the color line as a social science with a knife in it.",
   "the-house-behind-the-cedars": "Passing in the Carolinas, and a family that cannot both be seen.",
-  "the-marrow-of-tradition": "Wilmington 1898: a novel that remembers a massacre the papers called a riot.",
+  "the-marrow-of-tradition": "Stay here beside her, major — a Wilmington sickroom at break of day.",
   "folks-from-dixie": "Dunbar’s stories of Black life after slavery, without the plantation smile.",
   "the-complete-poems-of-paul-laurence-dunbar":
     "Dunbar’s lyrics in dialect and in the English he was told not to waste.",
@@ -646,7 +646,7 @@ const BLURBS: Record<string, string> = {
   "maria-chapdelaine":
     "The church door at Peribonka opens, and the men come out into April snow.",
   "seven-brothers":
-    "Jukola Farm on the Häme slope: seven brothers, Matson’s English, no translator’s Preface.",
+    "Jukola Farm stands on the Häme slope, near the village of Toukola.",
   "imperium-in-imperio": "Griggs’ secret Black nation inside the United States — a political thought-experiment.",
   cane: "Karintha at Georgia dusk: her skin is like dusk on the eastern horizon. This sit is Karintha only.",
   "nacha-regules":
@@ -778,6 +778,9 @@ const BLURBS: Record<string, string> = {
   "white-jacket": "Not a very white jacket, but white enough, on a frigate leaving Callao for Cape Horn.",
   "the-house-by-the-medlar-tree": "The Malavoglia were once as numerous as the stones on the road to Trezza.",
   "filipino-popular-tales": "Suan’s mother sends him to school, and he climbs the tree instead.",
+  "zuleika-dobson": "That old bell sounds through Oxford station as the undergraduates move to the platform.",
+  "eugenie-grandet": "Provincial houses in Saumur wear the melancholy of the steep street and the Grandet house.",
+  "laos-folk-lore": "Deep in the forest of the North, a jungle village honors one old woman — A Child of The Woods only.",
   "the-book-of-khalid":
     "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid.",
   oblomov:

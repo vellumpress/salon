@@ -1,0 +1,56 @@
+{
+  "id": "eugenie-grandet",
+  "title": "Eugénie Grandet",
+  "author": "Honoré de Balzac (trans. Katharine Prescott Wormeley)",
+  "year": "1833",
+  "note": "Project Gutenberg 1715. Host: Section I — provincial houses / Saumur steep street (Dedication *To Maria* skipped). FR 1833 + Wormeley EN on PG 1715 only.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Section I · France — Saumur / Grandet house",
+      "place": "Section I · France — Saumur / Grandet house",
+      "reentry": "There are houses in certain provincial towns whose aspect inspires melancholy, akin to that called forth by sombre cloisters, dreary moorlands, or the desolation of ruins. Within these houses there is",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "There are houses in certain provincial towns whose aspect inspires melancholy, akin to that called forth by sombre cloisters, dreary moorlands, or the desolation of ruins. Within these houses there is, perhaps, the silence of the cloister, the barrenness of moors, the skeleton of ruins; life and movement are so stagnant there that a stranger might think them uninhabited, were it not that he encounters suddenly the pale, cold glance of a motionless person, whose half-monastic face peers beyond the window-casing at the sound of an unaccustomed step."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Such elements of sadness formed the physiognomy, as it were, of a dwelling-house in Saumur which stands at the end of the steep street leading to the chateau in the upper part of the town. This street--now little frequented, hot in summer, cold in winter, dark in certain sections--is remarkable for the resonance of its little pebbly pavement, always clean and dry, for the narrowness of its tortuous road-way, for the peaceful stillness of its houses, which belong to the Old town and are over-topped by the ramparts. Houses three centuries old are still solid, though built of wood, and their divers aspects add to the originality which commends this portion of Saumur to the attention of artists and antiquaries."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "It is difficult to pass these houses without admiring the enormous oaken beams, their ends carved into fantastic figures, which crown with a black bas-relief the lower floor of most of them. In one place these transverse timbers are covered with slate and mark a bluish line along the frail wall of a dwelling covered by a roof *en colombage* which bends beneath the weight of years, and whose rotting shingles are twisted by the alternate action of sun and rain. In another place blackened, worn-out window-sills, with delicate sculptures now scarcely discernible, seem too weak to bear the brown clay pots from which springs the heart’s-ease or the rose-bush of some poor working-woman. Farther on are doors studded with enormous nails, where the genius of our forefathers has traced domestic hieroglyphics, of which the meaning is now lost forever. Here a Protestant attested his belief; there a Leaguer cursed Henry IV.; elsewhere some bourgeois has carved the insignia of his *noblesse de cloches*, symbols of his long-forgotten magisterial glory. The whole history of France is there."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Next to a tottering house with roughly plastered walls, where an artisan enshrines his tools, rises the mansion of a country gentleman, on the stone arch of which above the door vestiges of armorial bearings may still be seen, battered by the many revolutions that have shaken France since 1789. In this hilly street the ground-floors of the merchants are neither shops nor warehouses; lovers of the Middle Ages will here find the *ouvrouere* of our forefathers in all its naive simplicity. These low rooms, which have no shop-frontage, no show-windows, in fact no glass at all, are deep and dark and without interior or exterior decoration. Their doors open in two parts, each roughly iron-bound; the upper half is fastened back within the room, the lower half, fitted with a spring-bell, swings continually to and fro. Air and light reach the damp den within, either through the upper half of the door, or through an open space between the ceiling and a low front wall, breast-high, which is closed by solid shutters that are taken down every morning, put up every evening, and held in place by heavy iron bars."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "This wall serves as a counter for the merchandise. No delusive display is there; only samples of the business, whatever it may chance to be,--such, for instance, as three or four tubs full of codfish and salt, a few bundles of sail-cloth, cordage, copper wire hanging from the joists above, iron hoops for casks ranged along the wall, or a few pieces of cloth upon the shelves. Enter. A neat girl, glowing with youth, wearing a white kerchief, her arms red and bare, drops her knitting and calls her father or her mother, one of whom comes forward and sells you what you want, phlegmatically, civilly, or arrogantly, according to his or her individual character, whether it be a matter of two sous’ or twenty thousand francs’ worth of merchandise. You may see a cooper, for instance, sitting in his doorway and twirling his thumbs as he talks with a neighbor. To all appearance he owns nothing more than a few miserable boat-ribs and two or three bundles of laths; but below in the port his teeming wood-yard supplies all the cooperage trade of Anjou. He knows to a plank how many casks are needed if the vintage is good. A hot season makes him rich, a rainy season ruins him; in a single morning puncheons worth eleven francs have been known to drop to six. In this country, as in Touraine, atmospheric vicissitudes control commercial life. Wine-growers, proprietors, wood-merchants, coopers, inn-keepers, mariners, all keep watch of the sun. They tremble when they go to bed lest they should hear in the morning of a frost in the night; they dread rain, wind, drought, and want water, heat, and clouds to suit their fancy. A perpetual duel goes on between the heavens and their terrestrial interests. The barometer smooths, saddens, or makes merry their countenances, turn and turn about. From end to end of this street, formerly the Grand’Rue de Saumur, the words: “Here’s golden weather,” are passed from door to door; or each man calls to his neighbor: “It rains louis,” knowing well what a sunbeam or the opportune rainfall is bringing him."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "On Saturdays after midday, in the fine season, not one sou’s worth of merchandise can be bought from these worthy traders. Each has his vineyard, his enclosure of fields, and all spend two days in the country. This being foreseen, and purchases, sales, and profits provided for, the merchants have ten or twelve hours to spend in parties of pleasure, in making observations, in criticisms, and in continual spying. A housewife cannot buy a partridge without the neighbors asking the husband if it were cooked to a turn. A young girl never puts her head near a window that she is not seen by idling groups in the street. Consciences are held in the light; and the houses, dark, silent, impenetrable as they seem, hide no mysteries. Life is almost wholly in the open air; every household sits at its own threshold, breakfasts, dines, and quarrels there. No one can pass along the street without being examined; in fact formerly, when a stranger entered a provincial town he was bantered and made game of from door to door. From this came many good stories, and the nickname *copieux*, which was applied to the inhabitants of Angers, who excelled in such urban sarcasms."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "The ancient mansions of the old town of Saumur are at the top of this hilly street, and were formerly occupied by the nobility of the neighborhood. The melancholy dwelling where the events of the following history took place is one of these mansions,--venerable relics of a century in which men and things bore the characteristics of simplicity which French manners and customs are losing day by day. Follow the windings of the picturesque thoroughfare, whose irregularities awaken recollections that plunge the mind mechanically into reverie, and you will see a somewhat dark recess, in the centre of which is hidden the door of the house of Monsieur Grandet. It is impossible to understand the force of this provincial expression--the house of Monsieur Grandet--without giving the biography of Monsieur Grandet himself."
+    }
+  ]
+}

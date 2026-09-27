@@ -325,6 +325,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Once the Malavoglia were as numerous as the stones on the old road to Trezza. Chapter I — Padron ’Ntoni and the Provvidenza. Skip Howells’s introduction. Verga, in Mary A. Craig’s English, Italian 1881 / 1890. Sicily is not Rome.`,
   "filipino-popular-tales":
     `There was once an old woman who had an only son named Suan. This sit is Suan’s Good Luck only. Skip the preface, the other tales, and the notes. Fansler’s 1921 collection. One tale this sit; the book continues. No score is invented for this sit.`,
+  "the-marrow-of-tradition":
+    `Stay here beside her, major. Chapter I, At Break of Day — a Wilmington sickroom, the heat, a cicada, magnolias. Skip the contents and the Lamb epigraph. Chesnutt’s 1901 novel. The printed line “not he needed” stays. Wilmington is not Georgia after Cane. No score is invented for this sit. The lead stays this book.`,
+  "zuleika-dobson":
+    `That old bell, presage of a train, had just sounded through Oxford station. Chapter I — undergraduates on the platform, and the Warden of Judas. Skip the 1922 note. Beerbohm’s 1911 novel. Oxford is not London, and not the Potteries.`,
+  "eugenie-grandet":
+    `There are houses in certain provincial towns whose aspect inspires melancholy. Section I — Saumur’s steep street and the Grandet house. Skip the dedication to Maria. Balzac, in Katharine Prescott Wormeley’s English, French 1833. Saumur is not the Orne, and not Paris.`,
+  "seven-brothers":
+    `Jukola Farm, in the south of the province of Häme, stands on the northern slope of a hill, near the village of Toukola. Chapter I. Skip the Faber apparatus and the preface. Kivi, in Alex Matson’s English, Finnish 1870 / 1929. Thin — do not inflate it. The For you seat stays.`,
+  "laos-folk-lore":
+    `Deep in the forest of the North there is a large village of jungle people. This sit is A Child of The Woods only. Skip the introduction, the other tales, and the footnotes. Fleeson’s 1899 collection. One tale this sit; the book continues. Laos is not Pampanga after Suan.`,
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
   "brazilian-tales":
@@ -900,6 +910,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "a-japanese-nightingale",
       "maria-chapdelaine",
       "the-house-by-the-medlar-tree",
+      // Mira Sun 27 Sep 2026 AM CLEAR — Marrow of Tradition leads. Never Featured.
+      // Earlier Zuleika and Eugenie seats stay. Seven Brothers joins this tail.
+      "the-marrow-of-tradition",
+      "zuleika-dobson",
+      "eugenie-grandet",
+      "seven-brothers",
     ],
   },
   {
@@ -966,6 +982,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "stories-and-pictures",
       // Mira Sat 26 Sep 2026 ~6PM CLEAR — Suan’s Good Luck only. Not the other tales.
       "filipino-popular-tales",
+      // Mira Sun 27 Sep 2026 AM CLEAR — A Child of The Woods only. Not the other tales.
+      "laos-folk-lore",
     ],
   },
   {
@@ -1067,6 +1085,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "a-japanese-nightingale",
       "maria-chapdelaine",
       "the-house-by-the-medlar-tree",
+      // Mira Sun 27 Sep 2026 AM CLEAR — Marrow of Tradition leads. Never Featured.
+      "the-marrow-of-tradition",
+      "zuleika-dobson",
+      "eugenie-grandet",
+      "seven-brothers",
     ],
   },
   {
@@ -1167,6 +1190,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "a-japanese-nightingale",
       "maria-chapdelaine",
       "the-house-by-the-medlar-tree",
+      // Mira Sun 27 Sep 2026 AM CLEAR — Marrow of Tradition leads. Never Featured.
+      "the-marrow-of-tradition",
+      "zuleika-dobson",
+      "eugenie-grandet",
+      "seven-brothers",
     ],
   },
   {
@@ -1304,7 +1332,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "charmides-and-other-poems": 5,
   "cousin-betty": 5,
   "dauber": 5,
-  "eugenie-grandet": 5,
+  "eugenie-grandet": 6,
   "heart-of-darkness": 5,
   "in-a-glass-darkly": 5,
   "in-the-world": 5,
@@ -1358,7 +1386,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "wanderers": 5,
   "white-jacket": 4,
   "yekl": 5,
-  "zuleika-dobson": 5,
+  "zuleika-dobson": 6,
   "a-group-of-noble-dames": 5,
   "captain-craig": 5,
   "daniel-deronda": 5,
@@ -1384,6 +1412,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "ballads-of-a-cheechako": 5,
   "crucial-instances": 5,
   "filipino-popular-tales": 3,
+  "the-marrow-of-tradition": 7,
+  "laos-folk-lore": 2,
   "lost-illusions": 5,
   "mogens": 5,
   "more-songs-from-vagabondia": 5,
@@ -1489,7 +1519,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "faust-part-i": 5,
   "the-divine-comedy": 5,
   "eugene-onegin": 5,
-  "seven-brothers": 5,
+  "seven-brothers": 6,
   "gilgamesh": 5,
   "bontshe-the-silent": 5,
   "shahnameh": 5,

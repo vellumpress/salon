@@ -366,6 +366,29 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Hill of Dreams, midday Green Carnation, Sat AM Moon, Fri 6PM High Wind,
  * evening Hidden Force, afternoon Confusion, noon Man of Property, morning
  * Cabala, and Emmeline stay ahead and untouched.
+ * Mira Sun 27 Sep 2026 AM CLEAR — Recommend only, never Featured.
+ * The Marrow of Tradition leads this cycle’s Next append (Stay here beside
+ * her, major, At Break of Day, cicada, magnolias, Chesnutt, 1901, PG 11228;
+ * contents and the Lamb epigraph skipped). LEAD kept — not Zuleika Dobson.
+ * The printed line “not he needed” stays. Soft against Cane: Wilmington is
+ * not Georgia. No score is invented. Zuleika Dobson follows (that old bell,
+ * Oxford station, the Warden of Judas, Beerbohm, 1911, PG 1845; the 1922
+ * note skipped). Oxford is not London, and not the Potteries. The earlier
+ * zuleika seat stays. Eugénie Grandet follows (provincial houses, Saumur’s
+ * steep street, Balzac, Katharine Prescott Wormeley’s English, French 1833,
+ * PG 1715; the dedication to Maria skipped). No Wormeley year is invented.
+ * Saumur is not the Orne, and not Paris. The earlier eugenie seat stays.
+ * Seven Brothers follows carefully (Jukola Farm, Häme, Toukola, Kivi, Alex
+ * Matson’s English, Finnish 1870 / Faber 1929, PG 79566; Faber apparatus and
+ * the preface skipped). Notion 61 is thin — do not inflate it. The For you
+ * seat stays; this is not a new Featured path. Laos Folk-Lore is Rituals
+ * only — A Child of The Woods, Fleeson, 1899, PG 35564 — and is not this
+ * Next tail. One tale this sit. Laos is not Pampanga after Suan. The earlier
+ * laos-folk-lore-of-farther-india seat stays. Cold-open stays
+ * Mirth → Quicksand → Botchan. Sat 6PM White Jacket, evening Road to the
+ * Open, afternoon Hill of Dreams, midday Green Carnation, Sat AM Moon,
+ * Fri 6PM High Wind, evening Hidden Force, afternoon Confusion, noon Man of
+ * Property, morning Cabala, and Emmeline stay ahead and untouched.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -803,6 +826,15 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "a-japanese-nightingale",
   "maria-chapdelaine",
   "the-house-by-the-medlar-tree",
+  // Mira Sun 27 Sep 2026 AM CLEAR — Marrow of Tradition leads Next. Never Featured.
+  // Earlier seats for Zuleika and Eugenie stay. Seven Brothers joins Next
+  // carefully; the For you seat stays. Laos Folk-Lore is Rituals
+  // (A Child of The Woods only), not this tail.
+  // Sat 6PM White Jacket and the earlier packs stay ahead.
+  "the-marrow-of-tradition",
+  "zuleika-dobson",
+  "eugenie-grandet",
+  "seven-brothers",
 ] as const;
 
 /**
