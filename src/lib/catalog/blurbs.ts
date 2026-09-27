@@ -294,7 +294,7 @@ const BLURBS: Record<string, string> = {
     "A musician chooses passing, then has to live inside the choice.",
   blacker: "Emma Lou on her luscious black complexion, and the family that trained her to mourn it.",
   "hungry-hearts":
-    "Yezierska’s immigrant women hungry for English, rooms, and a self that is not a sacrifice.",
+    "“My heart chokes in me like in a prison” — Wings only, a Lower East Side basement on a May Sunday.",
   "children-of-loneliness":
     "More Yezierska stories of the jump from tenement to the lonely side of American education.",
   herland: "The narrator writes from memory the journey into a country of women.",
@@ -400,7 +400,7 @@ const BLURBS: Record<string, string> = {
   "the-family-at-gilje":
     "A Norwegian official’s household where daughters wait on other people’s decisions.",
   "after-the-divorce":
-    "A woman weeping in the Porru house’s strangers’ room, after a wrongful conviction.",
+    "Nineteen Hundred and Seven: a woman sits crying in the Porru house’s strangers’ room.",
   "the-lodger":
     "A London couple take a quiet lodger and begin to wonder about the murders outside.",
   "the-king-in-yellow":
@@ -781,6 +781,10 @@ const BLURBS: Record<string, string> = {
   "zuleika-dobson": "That old bell sounds through Oxford station as the undergraduates move to the platform.",
   "eugenie-grandet": "Provincial houses in Saumur wear the melancholy of the steep street and the Grandet house.",
   "laos-folk-lore": "Deep in the forest of the North, a jungle village honors one old woman — A Child of The Woods only.",
+  "born-in-exile": "The summer day in 1874 closes Whitelaw College under the Kingsmill smoke-canopy.",
+  "the-four-horsemen-of-the-apocalypse":
+    "In 1870 Marcelo Desnoyers is nineteen, and the sit opens on Madariaga’s Buenos Aires ranch.",
+  "virgin-soil": "At one o’clock in 1868, a shabby young man climbs the back staircase on Officers Street.",
   "the-book-of-khalid":
     "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid.",
   oblomov:

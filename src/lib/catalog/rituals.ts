@@ -280,7 +280,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "bertha-garlan":
     `She takes the vine-path hillside with the boy, straw hat, near six o’clock. Widow desire — Host OK. No translator is named on this sit.`,
   "after-the-divorce":
-    `A woman weeping in the Porru house’s strangers’ room. Sardinian honor and a wrongful conviction — Host OK.`,
+    `Nineteen Hundred and Seven. In the strangers’ room of the Porru house a woman sat crying. Chapter I — the courtyard cricket. Skip the St Luke epigraph. Deledda, in Maria Hornor Lansdale’s English, Italian 1902 / 1905. Sardinia is not Sicily. No score is invented for this sit.`,
   "white-nights":
     `It was a wonderful night — the dreamer’s starry Petersburg. First Night only, and not Notes from Underground.`,
   "west-african-folk-tales":
@@ -335,6 +335,12 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Jukola Farm, in the south of the province of Häme, stands on the northern slope of a hill, near the village of Toukola. Chapter I. Skip the Faber apparatus and the preface. Kivi, in Alex Matson’s English, Finnish 1870 / 1929. Thin — do not inflate it. The For you seat stays.`,
   "laos-folk-lore":
     `Deep in the forest of the North there is a large village of jungle people. This sit is A Child of The Woods only. Skip the introduction, the other tales, and the footnotes. Fleeson’s 1899 collection. One tale this sit; the book continues. Laos is not Pampanga after Suan.`,
+  "born-in-exile":
+    `The summer day in 1874 which closed the annual session of Whitelaw College. Part I, Chapter I — the Kingsmill statue and the smoke-canopy. Skip the Part-label apparatus. Gissing’s 1892 novel. Kingsmill is not Oxford, not London, and not the Potteries. No score is invented for this sit. The lead stays this book.`,
+  "the-four-horsemen-of-the-apocalypse":
+    `In 1870 Marcelo Desnoyers was nineteen years old. Chapter II, Madariaga, the Centaur — Buenos Aires and the ranch. Skip Chapter I, The Tryst. Blasco Ibáñez, in Charlotte Brewster Jordan’s English, Spanish 1916 / 1918. Argentina is not Uruguay, and not Gaspar Ruiz. Medium — do not inflate it.`,
+  "virgin-soil":
+    `At one o’clock in the afternoon of a spring day in the year 1868, a young man climbs the back staircase on Officers Street. Section I. Skip the epigraph and the introduction. Turgenev, in R. S. Townsend’s English, Russian 1877. No Townsend year is invented. St Petersburg after Futility — do not inflate it.`,
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
   "brazilian-tales":
@@ -344,7 +350,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   carmilla:
     `A lonely schloss in Styria. A teenage narrator with too few neighbors. And a childhood night she still can’t forget—a pretty face at the bedside, then a pain like needles. Sheridan Le Fanu’s gothic novella (serialized 1871–72; collected 1872) opens on solitude and that first fright, before any carriage has rolled in.`,
   "hungry-hearts":
-    `Basement light on a Lower East Side Sunday—and Shenah Pessah opens the window for the first spring sun. Anzia Yezierska’s 1920 story “Wings” starts with a hunger that isn’t only for bread: love, dignity, a little beauty, a life that feels like America and not just work.`,
+    `My heart chokes in me like in a prison. This sit is Wings only — a janitor’s basement on a May Sunday. Skip the contents, the other tales, and the dedication. Yezierska’s 1920 collection. One tale this sit; the book continues. The Lower East Side is not Laos.`,
   "in-our-time":
     `A drunk battery on a dark road—then a Michigan lake at dawn, and Nick Adams in a rowboat with his father. Ernest Hemingway’s 1925 American collection opens with a war vignette snapped against “Indian Camp”: spare sentences, long silences, the method already underway.`,
   botchan:
@@ -916,6 +922,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "zuleika-dobson",
       "eugenie-grandet",
       "seven-brothers",
+      // Mira Sun 27 Sep 2026 POST-#169 CLEAR — Born in Exile leads. Never Featured.
+      // Earlier Born in Exile, After the Divorce, and Virgin Soil seats stay.
+      "born-in-exile",
+      "the-four-horsemen-of-the-apocalypse",
+      "after-the-divorce",
+      "virgin-soil",
     ],
   },
   {
@@ -984,6 +996,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "filipino-popular-tales",
       // Mira Sun 27 Sep 2026 AM CLEAR — A Child of The Woods only. Not the other tales.
       "laos-folk-lore",
+      // Mira Sun 27 Sep 2026 POST-#169 CLEAR — Wings only. Not the other tales.
+      "hungry-hearts",
     ],
   },
   {
@@ -1090,6 +1104,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "zuleika-dobson",
       "eugenie-grandet",
       "seven-brothers",
+      // Mira Sun 27 Sep 2026 POST-#169 CLEAR — Born in Exile leads. Never Featured.
+      "born-in-exile",
+      "the-four-horsemen-of-the-apocalypse",
+      "after-the-divorce",
+      "virgin-soil",
     ],
   },
   {
@@ -1195,6 +1214,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "zuleika-dobson",
       "eugenie-grandet",
       "seven-brothers",
+      // Mira Sun 27 Sep 2026 POST-#169 CLEAR — Born in Exile leads. Never Featured.
+      "born-in-exile",
+      "the-four-horsemen-of-the-apocalypse",
+      "after-the-divorce",
+      "virgin-soil",
     ],
   },
   {
@@ -1234,7 +1258,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "mr-fortunes-maggot": 5,
   "the-bridge-of-san-luis-rey": 8,
   "carmilla": 5,
-  "hungry-hearts": 6,
+  "hungry-hearts": 12,
+  "the-four-horsemen-of-the-apocalypse": 7,
   "in-our-time": 9,
   quicksand: 5,
   "attendants-confession": 2,
@@ -1327,7 +1352,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "a-diversity-of-creatures": 5,
   "an-american-tragedy": 5,
   "bertha-garlan": 5,
-  "born-in-exile": 5,
+  "born-in-exile": 6,
   "calvary": 6,
   "charmides-and-other-poems": 5,
   "cousin-betty": 5,
@@ -1382,7 +1407,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "theresa-raquin": 5,
   "three-soldiers": 5,
   "twilight-sleep": 5,
-  "virgin-soil": 5,
+  "virgin-soil": 6,
   "wanderers": 5,
   "white-jacket": 4,
   "yekl": 5,

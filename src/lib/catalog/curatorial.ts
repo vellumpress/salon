@@ -389,6 +389,28 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * Open, afternoon Hill of Dreams, midday Green Carnation, Sat AM Moon,
  * Fri 6PM High Wind, evening Hidden Force, afternoon Confusion, noon Man of
  * Property, morning Cabala, and Emmeline stay ahead and untouched.
+ * Mira Sun 27 Sep 2026 POST-#169 CLEAR — Recommend only, never Featured.
+ * Born in Exile leads this cycle’s Next append (Whitelaw College, the
+ * Kingsmill statue, the smoke-canopy, Gissing, 1892, PG 4526; Part-label
+ * apparatus skipped). LEAD kept — not Four Horsemen, not After the Divorce.
+ * Kingsmill is not Oxford, not London, and not the Potteries. Inventory is
+ * medium. No Notion or Launch rank is invented. The Four Horsemen of the
+ * Apocalypse follows carefully (Chapter II, Madariaga, the Centaur, Buenos
+ * Aires and the ranch, Blasco Ibáñez, Charlotte Brewster Jordan’s English,
+ * Spanish 1916 / 1918, PG 1484; Chapter I, The Tryst, skipped). Argentina is
+ * not Uruguay, and not Gaspar Ruiz. Notion 75 is medium. Launch shelf no.
+ * After the Divorce follows (Porru strangers’ room, the courtyard cricket,
+ * Deledda, Maria Hornor Lansdale’s English, Italian 1902 / Holt 1905, PG
+ * 39834; the St Luke epigraph skipped). Sardinia is not Sicily. Inventory is
+ * medium. No Launch rank is invented. Virgin Soil follows carefully
+ * (Officers Street staircase, “Is Nejdanov at home?”, Turgenev, R. S.
+ * Townsend’s English, Russian 1877, PG 2466; the epigraph and the
+ * introduction skipped). No Townsend year is invented. St Petersburg after
+ * Futility — do not inflate it. There is no For you seat to keep. Hungry
+ * Hearts is Rituals only — Wings, Yezierska, 1920, PG 41232 — and is not
+ * this Next tail. One tale this sit. The Lower East Side is not Laos. The
+ * earlier Sun AM seats stay ahead. Cold-open stays
+ * Mirth → Quicksand → Botchan.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -835,6 +857,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "zuleika-dobson",
   "eugenie-grandet",
   "seven-brothers",
+  // Mira Sun 27 Sep 2026 POST-#169 CLEAR — Born in Exile leads Next. Never Featured.
+  // Earlier seats for Born in Exile, After the Divorce, and Virgin Soil stay.
+  // Four Horsemen joins Next carefully. Hungry Hearts is Rituals (Wings only),
+  // not this tail. Sun AM Marrow and the earlier packs stay ahead.
+  "born-in-exile",
+  "the-four-horsemen-of-the-apocalypse",
+  "after-the-divorce",
+  "virgin-soil",
 ] as const;
 
 /**

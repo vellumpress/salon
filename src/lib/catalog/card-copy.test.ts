@@ -1729,9 +1729,13 @@ test("Tier B batches 7–8 are local format-min binds, never Featured", () => {
     assert.ok(work, id);
     assert.equal(work!.local, true, id);
     assert.equal(isBoundLocal(work!), true, id);
-    assert.equal(curatorialTrack(id), "later", id);
+    assert.equal(
+      curatorialTrack(id),
+      id === "the-four-horsemen-of-the-apocalypse" ? "next" : "later",
+      id,
+    );
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    if (id === "the-last-man") {
+    if (id === "the-last-man" || id === "the-four-horsemen-of-the-apocalypse") {
       assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
     } else {
       assertNoStubOpening(id);
@@ -1739,10 +1743,26 @@ test("Tier B batches 7–8 are local format-min binds, never Featured", () => {
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(
-      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
-      `${id} shelf opening`,
-    );
+    if (id === "the-four-horsemen-of-the-apocalypse") {
+      const opened = JSON.parse(
+        readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8"),
+      ) as { breaths: { text: string }[] };
+      assert.ok((opened.breaths[0]?.text ?? "").startsWith(work!.opening ?? ""), id);
+      assert.equal(
+        (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
+        false,
+        id,
+      );
+      assert.ok(
+        full.breaths.some((breath) => (breath.text ?? "").startsWith(work!.opening ?? "\u0000")),
+        `${id} shelf opening`,
+      );
+    } else {
+      assert.ok(
+        (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
+        `${id} shelf opening`,
+      );
+    }
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });
