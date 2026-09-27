@@ -1,0 +1,66 @@
+{
+  "id": "the-village",
+  "title": "The Village",
+  "author": "Ivan Bunin (trans. Isabel Florence Hapgood)",
+  "year": "1910",
+  "note": "Project Gutenberg 59981. Host: Ch I — Krasoff Gipsy / wolf-hounds / Captain Durnovo (Hapgood preface / Secker imprint skipped). RU 1910 + Hapgood Secker EN 1923. Inventory 88 medium — For you/Later if grim-hard — do not soft-inflate. Soft Russia village ≠ Petersburg.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part One · I · Russia — Durnovka village",
+      "place": "Part One · I · Russia — Durnovka village",
+      "reentry": "The great-grandfather of the Krasoffs, known by the manor-house servants under the nickname of \"The Gipsy,\" was hunted with wolf-hounds by Cavalry Captain Durnovo. The Gipsy had lured his lord-and-mas",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The great-grandfather of the Krasoffs, known by the manor-house servants under the nickname of \"The Gipsy,\" was hunted with wolf-hounds by Cavalry Captain Durnovo. The Gipsy had lured his lord-and-master's mistress away from him. Durnovo gave orders that The Gipsy should be taken out into the fields and placed on a hillock. Then he himself went out there with a pack of hounds and shouted \"Tallyho! Go for him!\" The Gipsy, who was sitting there in a state of stupor, started to run. But there is no use in running away from wolf-hounds."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The grandfather of the Krasoffs, for some reason or other, was given a letter of enfranchisement. He went off with his family to the town--and soon distinguished himself by becoming a famous thief. He hired a tiny hovel in the Black Suburb for his wife and set her to weaving lace for sale, while he, in company with a petty burgher named Byelokopytoff, roamed about the province robbing churches. At the end of a couple of years he was caught. But at his trial he bore himself in such fashion that his replies to the judges were current for a long time thereafter. He stood before them, it appears, in a velveteen kaftan, with a silver watch and goat-hide boots, making insolent play with his cheek-bones and his eyes and, in the most respectful manner, confessing every one of his innumerable crimes, even the most insignificant: \"Yes, sir. Just so, sir.\""
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The father of the Krasoffs was a petty huckster. He roved about the county, lived for a time in Durnovka, set up a pot-house and a little shop, failed, took to drink, returned to the town, and soon died. After serving for a while in shops his sons, Tikhon and Kuzma, who were almost of an age, also took to peddling. They drove about in a peasant cart which had a carved front and a roofed, shop-like arrangement in the middle, and shouted in doleful tones: \"Wo-omen, here's merchandise! Wo-omen, here's merchandise!\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The merchandise consisted of small mirrors, cheap soap, rings, thread, kerchiefs, needles, cracknels--these in the covered shop. The open-body cart contained everything they gathered in: dead cats, eggs, heavy linen, crash, rags. But one day, after having thus travelled about for the space of several years, the brothers came near cutting each other's throats--in a dispute over the division of the profits, rumour averred--and separated to avoid a catastrophe. Kuzma hired himself to a drover. Tikhon took over a small posting-house on the metalled highway of Vorgol, five versts from Durnovka, and opened a dram-shop and a tiny \"popular\" shop.--\"I deal in small wears tea shugar tubako sigars and so furth.\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "By the time Tikhon Hitch was about forty years of age his beard resembled silver with patterns of black enamel. But he was handsome and tall, with a fine figure, as before. He was austere and swarthy of face, slightly pock-marked, with broad, lean shoulders; authoritative and abrupt of speech, quick and supple in his movements. Only--his eyebrows had begun to come closer together and his eyes to flash more frequently and more sharply than before. Business demanded it!"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Indefatigably he followed up the rural police on those dull autumnal days when taxes are collected and forced sale follows forced sale. Unweariedly he bought standing grain on the stalk from the landed proprietors and took land from them and from the peasants, in small parcels, not scorning even half a meadow. He lived for a long time with his dumb cook--\"A dumb woman can't betray anything with her chatter!\"--and had by her one child, whom she overlay and crushed in her sleep, after which he married an elderly waiting-maid of old Princess Schakhovoy. And on marrying and receiving the dowry he \"finished off\" the last scion of the impoverished Durnovo family, a fat, affable young nobleman, bald at twenty-five, but possessed of a magnificent chestnut beard. And the peasants fairly grunted with pride when Tikhon took possession of the Durnovo estate--for almost the whole of Durnovka consisted of Krasoffs!"
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "They *sh*-ed and *oh*-ed, also, over the way in which he had cunningly contrived not to ruin himself. He bargained and bought, went to the estate almost every day, kept watch with the eye of a vulture over every hand's breadth of the land. They uttered admiring exclamations and said: \"Yes, there's nothing to be done with us devils by kindness, you know! There's a master for you! You couldn't have one more just!\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "And Tikhon Ilitch dealt with them in the same spirit. When he was in an amiable mood he read them their lesson thus: \"It's all right to live--but not to squander. I shall pluck you if I get the chance! I shall bring you back. But I shall be just. I'm a Russian man, brother.\" When in an evil mood, he would say curtly, with eyes blazing: \"Pigs! There is not a juster man in the world than I am!\" \"Pigs, all right--but that's not me,\" the peasant would think, averting his eyes from that gaze. And he would mumble submissively: \"Oh, Lord, don't we know it?\" \"Yes, you know it, but you have forgotten. I don't want your property gratis, but bear this in mind: I won't give you a scrap of what's mine! There's that brother of mine: he's a rascal, a toper, but I would help him if he came and implored me. I call God as my witness that I would help him! But coddle him--! No, take note of that: I do no coddling. I'm no brainless Little Russian, brother!\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "And Nastasya Petrovna, who walked like a duck, with her toes turned inward, and waddled, thanks to her incessant pregnancies which always ended up with dead girl-babies--Nastasya Petrovna, a yellow, puffy woman with scanty whitish-blond hair, would groan and back him up: \"Okh, you are a simpleton, in my opinion! Why do you bother with him, with that stupid man? Is he a fit associate for you? You just knock some sense into him; 'twill do him no harm. Look at the way he's straddling with his legs--as if he were a bokhar of emir!\" She was \"terribly fond\" of pigs and fowls, and Tikhon Ilitch began to fatten sucking pigs, turkey chicks, hens, and geese. But his ruling passion was amassing grain. In autumn, alongside his house, which stood with one side turned toward the highway and the other toward the posting-station, the creaking of wheels arose in a groan; the wagon trains turned in from above and below. And in the farmyard horse-traders, peddlers, chicken-vendors, cracknel peddlers, scythe-vendors, and pilgrims passed the night. Every moment a pulley was squeaking--now on the door of the dram-shop, where Nastasya Petrovna bustled about; now on the approach to the shop, a dark, dirty place, reeking of soap, herrings, rank tobacco, gingerbread flavoured with peppermint, horse-collars, and kerosene. And incessantly there rang out in the dram-shop:"
+    }
+  ]
+}

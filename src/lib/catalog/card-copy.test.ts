@@ -2277,10 +2277,11 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     assert.equal(work!.form, want.form, id);
     assert.equal(work!.gutenberg, want.gutenberg, id);
     assert.equal(work!.breaths, want.breaths, id);
+    const seatedOnNext = id === "daisy-miller" || id === "ditte-girl-alive";
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), seatedOnNext, id);
     assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
-    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), seatedOnNext, id);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /Featured|cold-open/i, id);
     const full = textWork(id);
     assert.equal(full.scenes.length, want.scenes, id);
