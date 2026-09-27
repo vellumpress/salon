@@ -187,6 +187,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "toilers-of-the-sea": { label: "Guernsey", region: "fr" },
   "indian-summer": { label: "Florence", region: "it" },
   "a-slav-soul": { label: "Russia", region: "ru" },
+  "cabbages-and-kings": { label: "Anchuria", region: "gt" },
+  "picture-of-dorian-gray": { label: "London", region: "gb" },
+  "the-job": { label: "Panama, Pennsylvania", region: "us" },
+  "reign-of-greed": { label: "Pasig", region: "ph" },
+  "a-cross-line": { label: "England", region: "gb" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples

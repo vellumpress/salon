@@ -1,0 +1,41 @@
+{
+  "id": "reign-of-greed",
+  "title": "The Reign of Greed",
+  "author": "José Rizal (trans. Charles E. Derbyshire)",
+  "year": "1891",
+  "note": "Project Gutenberg 10676. Host: Ch I On the Upper Deck — Tabo / Pasig / La Laguna (Translator’s Introduction skipped). Year 1891 (ES; Derbyshire EN 1912). Charles E. Derbyshire from PG About only. Inventory 85 medium. Soft Philippines carefully ≠ Noli/Suan.",
+  "minutes": 3,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · On the Upper Deck · Philippines / Pasig",
+      "place": "Chapter I · On the Upper Deck · Philippines / Pasig",
+      "reentry": "One morning in December the steamer Tabo was laboriously ascending the tortuous course of the Pasig, carrying a large crowd of passengers toward the province of La Laguna. She was a heavily built stea",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "One morning in December the steamer Tabo was laboriously ascending the tortuous course of the Pasig, carrying a large crowd of passengers toward the province of La Laguna. She was a heavily built steamer, almost round, like the tabú from which she derived her name, quite dirty in spite of her pretensions to whiteness, majestic and grave from her leisurely motion. Altogether, she was held in great affection in that region, perhaps from her Tagalog name, or from the fact that she bore the characteristic impress of things in the country, representing something like a triumph over progress, a steamer that was not a steamer at all, an organism, stolid, imperfect yet unimpeachable, which, when it wished to pose as being rankly progressive, proudly contented itself with putting on a fresh coat of paint. Indeed, the happy steamer was genuinely Filipino! If a person were only reasonably considerate, she might even have been taken for the Ship of State, constructed, as she had been, under the inspection of Reverendos and Ilustrísimos...."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Bathed in the sunlight of a morning that made the waters of the river sparkle and the breezes rustle in the bending bamboo on its banks, there she goes with her white silhouette throwing out great clouds of smoke—the Ship of State, so the joke runs, also has the vice of smoking! The whistle shrieks at every moment, hoarse and commanding like a tyrant who would rule by shouting, so that no one on board can hear his own thoughts. She menaces everything she meets: now she looks as though she would grind to bits the salambaw, insecure fishing apparatus which in their movements resemble skeletons of giants saluting an antediluvian tortoise; now she speeds straight toward the clumps of bamboo or against the amphibian structures, karihan, or wayside lunch-stands, which, amid gumamelas and other flowers, look like indecisive bathers who with their feet already in the water cannot bring themselves to make the final plunge; at times, following a sort of channel marked out in the river by tree-trunks, she moves along with a satisfied air, except when a sudden shock disturbs the passengers and throws them off their balance, all the result of a collision with a sand-bar which no one dreamed was there."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Moreover, if the comparison with the Ship of State is not yet complete, note the arrangement of the passengers. On the lower deck appear brown faces and black heads, types of Indians, Chinese, and mestizos, wedged in between bales of merchandise and boxes, while there on the upper deck, beneath an awning that protects them from the sun, are seated in comfortable chairs a few passengers dressed in the fashion of Europeans, friars, and government clerks, each with his puro cigar, and gazing at the landscape apparently without heeding the efforts of the captain and the sailors to overcome the obstacles in the river."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The captain was a man of kindly aspect, well along in years, an old sailor who in his youth had plunged into far vaster seas, but who now in his age had to exercise much greater attention, care, and vigilance to avoid dangers of a trivial character. And they were the same for each day: the same sand-bars, the same hulk of unwieldy steamer wedged into the same curves, like a corpulent dame in a jammed throng. So, at each moment, the good man had to stop, to back up, to go forward at half speed, sending—now to port, now to starboard—the five sailors equipped with long bamboo poles to give force to the turn the rudder had suggested. He was like a veteran who, after leading men through hazardous campaigns, had in his age become the tutor of a capricious, disobedient, and lazy boy."
+    }
+  ]
+}

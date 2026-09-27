@@ -1,0 +1,876 @@
+{
+  "id": "a-cross-line",
+  "title": "A Cross Line",
+  "author": "George Egerton",
+  "year": "1894",
+  "note": "Project Gutenberg 74778. Host-only seat — ***A Cross Line*** only (Beardsley / dedication / Contents / other stories skipped). Music-hall ditty / felled tree / spring. Stop at sketch end. Year 1894 (copyright 1893). Inventory 78 easy. Soft England carefully; soft New Woman carefully.",
+  "minutes": 12,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "A Cross Line · England",
+      "place": "A Cross Line · England",
+      "reentry": "The rather flat notes of a man's voice float out into the clear air, singing the refrain of a popular music-hall ditty. There is something incongruous between the melody and the surroundings. It seems",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The rather flat notes of a man's voice float out into the clear air, singing the refrain of a popular music-hall ditty. There is something incongruous between the melody and the surroundings. It seems profane, indelicate, to bring this slangy, vulgar tune, and with it the mental picture of footlight flare and fantastic dance, into the lovely freshness of this perfect spring day."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "A woman sitting on a felled tree turns her head to meet its coming, and an expression flits across her face in which disgust and humorous appreciation are subtly blended. Her mind is nothing if not picturesque; her busy brain, with all its capabilities choked by a thousand vagrant fancies, is always producing pictures and finding associations between the most unlikely objects. She has been reading a little sketch written in the daintiest language of a fountain scene in Tanagra, and her vivid imagination has made it real to her. The slim, graceful maids grouped around it filling their exquisitely-formed earthen jars, the dainty poise of their classic heads, and the flowing folds of their draperies have been actually present with her; and now,--why, it is like the entrance of a half-typsy vagabond player bedizened in tawdry finery: the picture is blurred. She rests her head against the trunk of a pine-tree behind her, and awaits the singer. She is sitting on an incline in the midst of a wilderness of trees; some have blown down, some have been cut down, and the lopped branches lie about; moss and bracken and trailing bramble bushes, fir-cones, wild rose-bushes, and speckled red \"fairy hats\" fight for life in wild confusion. A disused quarry to the left is an ideal haunt of pike, and to the right a little river rushes along in haste to join a greater sister that is fighting a troubled way to the sea. A row of stepping-stones cross it, and if you were to stand on one you would see shoals of restless stone-loach \"beardies\" darting from side to side. The tails of several ducks can be seen above the water, and the paddle of their balancing feet and the gurgling suction of their bills as they search for larvae can be heard distinctly between the hum of insect, twitter of bird, and rustle of stream and leaf. The singer has changed his lay to a whistle, and presently he comes down the path a cool, neat, gray-clad figure, with a fishing creel slung across his back, and a trout rod held on his shoulder. The air ceases abruptly, and his cold, gray eyes scan the seated figure with its gypsy ease of attitude, a scarlet shawl that has fallen from her shoulders forming an accentuative background to the slim roundness of her waist."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Persistent study, coupled with a varied experience of the female animal, has given the owner of the said gray eyes some facility in classing her, although it has not supplied him with any definite data as to what any one of the species may do in a given circumstance. To put it in his own words, in answer to a friend who chaffed him on his untiring pursuit of women as an interesting problem,--"
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"If a fellow has had much experience of his fellow-man he may divide him into types, and given a certain number of men and a certain number of circumstances, he is pretty safe on hitting on the line of action each type will strike. 'Taint so with woman. You may always look out for the unexpected; she generally upsets a fellow's calculations, and you are never safe in laying odds on her. Tell you what, old chappie, we may talk about superior intellect; but if a woman wasn't handicapped by her affection or need of it, the cleverest chap in Christendom would be just a bit of putty in her hands. I find them more fascinating as problems than anything going. Never let an opportunity slip to get new data--never!\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "He did not now. He met the frank, unembarrassed gaze of eyes that would have looked with just the same bright inquiry at the advent of a hare or a toad, or any other object that might cross her path, and raised his hat with respectful courtesy, saying, in the drawling tone habitual with him,--"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"I hope I am not trespassing?\""
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"I can't say; you may be; so may I, but no one has ever told me so!\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "A pause. His quick glance has noted the thick wedding-ring on her slim brown hand and the flash of a diamond in its keeper. A lady decidedly. Fast?--perhaps. Original?--undoubtedly. Worth knowing?--rather."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"I am looking for a trout stream, but the directions I got were rather vague; might I--\""
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"It's straight ahead; but you won't catch anything now, at least not here,--sun's too glaring and water too low; a mile up you may in an hour's time.\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"Oh, thanks awfully for the tip. You fish then?\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"Yes, sometimes.\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"Trout run big here?\" (What odd eyes the woman has! kind of magnetic.)"
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"No, seldom over a pound; but they are very game.\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"Rare good sport, isn't it, whipping a stream? There is so much besides the mere catching of fish; the river and the trees and the quiet sets a fellow thinking; kind of sermon; makes a chap feel good, don't it?\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "She smiles assentingly, and yet what the devil is she amused at, he queries mentally. An inspiration! he acts upon it, and says eagerly,--"
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"I wonder--I don't half like to ask, but fishing puts people on a common footing, don't it? You knowing the stream, you know, would you tell me what are the best flies to use?\""
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"I tie my own, but--\""
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"Do you? How clever of you! Wish I could;\" and sitting down on the other end of the tree, he takes out his fly-book. \"But I interrupted you, you were going to say--\""
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"Only,\"--stretching out her hand, of a perfect shape but decidedly brown, for the book,--\"that you might give the local fly-tyer a trial; he'll tell you. Later on, end of next month, or perhaps later, you might try the oak-fly,--the natural fly, you know. A horn is the best thing to hold them in, they get out of anything else; and put two on at a time.\""
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"By Jove, I must try that dodge!\""
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "He watches her as she handles his book and examines the contents critically, turning aside some with a glance, fingering others almost tenderly, holding them daintily, and noting the cock of wings and the hint of tinsel, with her head on one side,--a trick of hers, he thinks."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Which do you like most, wet or dry fly?\" She is looking at some dry flies."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"Oh,\" with that rare smile, \"at the time I swear by whichever happens to catch most fish,--perhaps really dry fly. I fancy most of these flies are better for Scotland or England. Up to this, March-brown has been the most killing thing. But you might try an 'orange-grouse,'--that's always good here,--with perhaps a 'hare's ear' for a change, and put on a 'coachman' for the evenings. My husband [he steals a side look at her] brought home some beauties yesterday evening.\""
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"Lucky fellow!\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "She returns the book. There is a tone in his voice as he says this that jars on her, sensitive as she is to every inflection of a voice, with an intuition that is almost second sight. She gathers up her shawl,--she has a cream-colored woollen gown on, and her skin looks duskily foreign by contrast. She is on her feet before he can regain his, and says, with a cool little bend of her head: \"Good afternoon, I wish you a full basket!\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "Before he can raise his cap she is down the slope, gliding with easy steps that have a strange grace, and then springing lightly from stone to stone across the stream. He feels small, snubbed someway; and he sits down on the spot where she sat, and lighting his pipe says, \"Check!\""
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "She is walking slowly up the garden path; a man in his shirt-sleeves is stooping among the tender young peas; a bundle of stakes lies next him, and he whistles softly and all out of tune as he twines the little tendrils round each new support. She looks at his broad shoulders and narrow flanks; his back is too long for great strength she thinks. He hears her step, and smiles up at her from under the shadow of his broad-leafed hat."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "\"How do you feel now, old woman?\""
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"Beastly! I've got that horrid qualmish feeling again. I can't get rid of it.\""
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "He has spread his coat on the side of the path, and pats it for her to sit down."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "\"What is it?\" anxiously. \"If you were a mare I'd know what to do for you. Have a nip of whiskey?\""
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "He strides off without waiting for her reply, and comes back with it and a biscuit, kneels down and holds the glass to her lips. \"Poor little woman, buck up! You'll see that'll fix you. Then you go, by-and-by, and have a shy at the fish.\""
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "She is about to say something, when a fresh qualm attacks her and she does not. He goes back to his tying."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "\"By Jove!\" he says suddenly, \"I forgot; got something to show you!\""
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "After a few minutes he returns, carrying a basket covered with a piece of sacking; a dishevelled-looking hen, with spread wings trailing and her breast bare from sitting on her eggs, screeches after him. He puts it carefully down and uncovers it, disclosing seven little balls of yellow fluff splashed with olive-green; they look up sideways with bright round eyes, and their little spoon-bills look disproportionately large."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "\"Aren't they beauties?\" enthusiastically. \"This one is just out,\" taking up an egg; \"mustn't let it get chilled; there is a chip out of it and a piece of hanging skin. Isn't it funny?\" he asks, showing her how it is curled in the shell, with its paddles flattened and its bill breaking through the chip, and the slimy feathers sticking to its violet skin."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "She suppresses an exclamation of disgust, and looks at his fresh-tinted skin instead. He is covering basket, hen, and all."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "\"How you love young things!\" she says."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "\"Some! I had a filly once; she turned out a lovely mare! I cried when I had to sell her; I wouldn't have let any one in God's world mount her.\""
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "\"Yes, you would!\""
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "\"Who?\" with a quick look of resentment."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "\"Me!\""
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "\"I wouldn't!\""
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "\"What! you wouldn't?\""
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "\"I wouldn't!\""
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "\"I think you would if I wanted to!\" with a flash out of the tail of her eye."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "\"No, I wouldn't!\""
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "\"Then you would care more for her than for me. I would give you your choice,\" passionately, \"her or me!\""
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "\"What nonsense!\""
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "\"Maybe,\" concentrated; \"but it's lucky she isn't here to make deadly sense of it.\" A humble-bee buzzes close to her ear, and she is roused to a sense of facts, and laughs to think how nearly they have quarrelled over a mare that was sold before she knew him."
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "Some evenings later she is stretched motionless in a chair; and yet she conveys an impression of restlessness,--a sensitively nervous person would feel it. She is gazing at her husband; her brows are drawn together, and make three little lines. He is reading, reading quietly, without moving his eyes quickly from side to side of the page as she does when she reads, and he pulls away at a big pipe with steady enjoyment. Her eyes turn from him to the window, and follow the course of two clouds; then they close for a few seconds, then open to watch him again. He looks up and smiles."
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "\"Finished your book?\""
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "There is a singular, soft monotony in his voice; the organ with which she replies is capable of more varied expression."
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "\"Yes, it is a book makes one think. It would be a greater book if he were not an Englishman; he's afraid of shocking the big middle class. You wouldn't care about it.\""
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "\"Finished your smoke?\""
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "\"No, it went out; too much fag to light up again! No,\" protestingly, \"never you mind, old boy, why do you?\""
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "He has drawn his long length out of his chair, and kneeling down beside her guards a lighted match from the incoming evening air. She draws in the smoke contentedly, and her eyes smile back with a general vague tenderness."
+    },
+    {
+      "id": "sit-0-58",
+      "sceneId": "sit-0",
+      "text": "\"Thank you, dear old man!\""
+    },
+    {
+      "id": "sit-0-59",
+      "sceneId": "sit-0",
+      "text": "\"Going out again?\" Negative head-shake."
+    },
+    {
+      "id": "sit-0-60",
+      "sceneId": "sit-0",
+      "text": "\"Back aching?\" Affirmative nod, accompanied by a steadily aimed puff of smoke, that she has been carefully inhaling, into his eyes."
+    },
+    {
+      "id": "sit-0-61",
+      "sceneId": "sit-0",
+      "text": "\"Scamp! Have your booties off?\""
+    },
+    {
+      "id": "sit-0-62",
+      "sceneId": "sit-0",
+      "text": "\"Oh, don't you bother! Lizzie will do it.\""
+    },
+    {
+      "id": "sit-0-63",
+      "sceneId": "sit-0",
+      "text": "He has seized a foot from under the rocker, and sitting on his heels holds it on his knee, while he unlaces the boot; then he loosens the stocking under her toes, and strokes her foot gently. \"Now the other!\" Then he drops both boots outside the door, and fetching a little pair of slippers, past their first smartness, from the bedroom, puts one on. He examines the left foot: it is a little swollen round the ankle, and he presses his broad fingers gently round it as one sees a man do to a horse with windgalls. Then he pulls the rocker nearer to his chair, and rests the slipperless foot on his thigh. He relights his pipe, takes up his book, and rubs softly from ankle to toes as he reads."
+    },
+    {
+      "id": "sit-0-64",
+      "sceneId": "sit-0",
+      "text": "She smokes, and watches him, diverting herself by imagining him in the hats of different periods. His is a delicate skinned face, with regular features; the eyes are fine in color and shape, with the luminous clearness of a child's; his pointed beard is soft and curly. She looks at his hand,--a broad, strong hand with capable fingers; the hand of a craftsman, a contradiction to the face with its distinguished delicacy. She holds her own up, with a cigarette poised between the first and second fingers, idly pleased with its beauty of form and delicate, nervous slightness. One speculation chases the other in her quick brain: odd questions as to race arise; she dives into theories as to the why and wherefore of their distinctive natures, and holds a mental debate in which she takes both sides of the question impartially. He has finished his pipe, laid down his book, and is gazing dreamily into space, with his eyes darkened by their long lashes and a look of tender melancholy in their clear depths."
+    },
+    {
+      "id": "sit-0-65",
+      "sceneId": "sit-0",
+      "text": "\"What are you thinking of?\" There is a look of expectation in her quivering nervous little face."
+    },
+    {
+      "id": "sit-0-66",
+      "sceneId": "sit-0",
+      "text": "He turns to her, chafing her ankle again. \"I was wondering if lob-worms would do for--\""
+    },
+    {
+      "id": "sit-0-67",
+      "sceneId": "sit-0",
+      "text": "He stops: a strange look of disappointment flits across her face and is lost in an hysterical peal of laughter."
+    },
+    {
+      "id": "sit-0-68",
+      "sceneId": "sit-0",
+      "text": "\"You are the best emotional check I ever knew,\" she gasps."
+    },
+    {
+      "id": "sit-0-69",
+      "sceneId": "sit-0",
+      "text": "He stares at her in utter bewilderment, and then a slow smile creeps to his eyes and curves the thin lips under his mustache,--a smile at her. \"You seem amused, Gypsy!\""
+    },
+    {
+      "id": "sit-0-70",
+      "sceneId": "sit-0",
+      "text": "She springs out of her chair, and takes book and pipe; he follows the latter anxiously with his eyes until he sees it laid safely on the table. Then she perches herself, resting her knees against one of his legs, while she hooks her feet back under the other."
+    },
+    {
+      "id": "sit-0-71",
+      "sceneId": "sit-0",
+      "text": "\"Now I am all up, don't I look small?\""
+    },
+    {
+      "id": "sit-0-72",
+      "sceneId": "sit-0",
+      "text": "He smiles his slow smile. \"Yes, I believe you are made of gutta percha.\""
+    },
+    {
+      "id": "sit-0-73",
+      "sceneId": "sit-0",
+      "text": "She is stroking out all the lines in his face with the tip of her finger; then she runs it through his hair. He twists his head half impatiently; she desists."
+    },
+    {
+      "id": "sit-0-74",
+      "sceneId": "sit-0",
+      "text": "\"I divide all the people in the world,\" she says, \"into those who like their hair played with, and those who don't. Having my hair brushed gives me more pleasure than anything else; it's delicious. I'd *purr* if I knew how. I notice,\" meditatively, \"I am never in sympathy with those who don't like it. I am with those who do; I always get on with them.\""
+    },
+    {
+      "id": "sit-0-75",
+      "sceneId": "sit-0",
+      "text": "\"You are a queer little devil!\""
+    },
+    {
+      "id": "sit-0-76",
+      "sceneId": "sit-0",
+      "text": "\"Am I? I shouldn't have thought you would have found out I was the latter at all. I wish I were a man! I believe if I were a man, I'd be a disgrace to my family.\""
+    },
+    {
+      "id": "sit-0-77",
+      "sceneId": "sit-0",
+      "text": "\"Why?\""
+    },
+    {
+      "id": "sit-0-78",
+      "sceneId": "sit-0",
+      "text": "\"I'd go on a jolly old spree!\""
+    },
+    {
+      "id": "sit-0-79",
+      "sceneId": "sit-0",
+      "text": "He laughs: \"Poor little woman! is it so dull?\""
+    },
+    {
+      "id": "sit-0-80",
+      "sceneId": "sit-0",
+      "text": "There is a gleam of deviltry in her eyes, and she whispers solemnly,--"
+    },
+    {
+      "id": "sit-0-81",
+      "sceneId": "sit-0",
+      "text": "\"Begin with a D,\" and she traces imaginary letters across his forehead, and ending with a flick over his ear, says, \"and that is the tail of the y!\" After a short silence she queries: \"Are you fond of me?\" She is rubbing her chin up and down his face."
+    },
+    {
+      "id": "sit-0-82",
+      "sceneId": "sit-0",
+      "text": "\"Of course I am, don't you know it?\""
+    },
+    {
+      "id": "sit-0-83",
+      "sceneId": "sit-0",
+      "text": "\"Yes, perhaps I do,\" impatiently; \"but I want to be told it. A woman doesn't care a fig for a love as deep as the death-sea and as silent; she wants something that tells her it in little waves all the time. It isn't the *love*, you know, it's the *being loved*; it isn't really the *man*, it's his *loving*!\""
+    },
+    {
+      "id": "sit-0-84",
+      "sceneId": "sit-0",
+      "text": "\"By Jove, you're a rum un!\""
+    },
+    {
+      "id": "sit-0-85",
+      "sceneId": "sit-0",
+      "text": "\"I wish I wasn't, then. I wish I was as commonplace as--You don't tell me anything about myself,\" a fierce little kiss; \"you might, even if it were lies. Other men who cared for me told me things about my eyes, my hands, anything. I don't believe you notice.\""
+    },
+    {
+      "id": "sit-0-86",
+      "sceneId": "sit-0",
+      "text": "\"Yes I *do*, little one, only I think it.\""
+    },
+    {
+      "id": "sit-0-87",
+      "sceneId": "sit-0",
+      "text": "\"Yes, but I don't care a bit for your thinking; if I can't see what's in your head, what good is it to me?\""
+    },
+    {
+      "id": "sit-0-88",
+      "sceneId": "sit-0",
+      "text": "\"I wish I could understand you, dear!\""
+    },
+    {
+      "id": "sit-0-89",
+      "sceneId": "sit-0",
+      "text": "\"I wish to God you could! Perhaps if you were badder and I were gooder we'd meet half-way. *You* are an awfully good old chap; it's just men like you send women like me to the devil!\""
+    },
+    {
+      "id": "sit-0-90",
+      "sceneId": "sit-0",
+      "text": "\"But you are good,\" kissing her,--\"a real good chum! You understand a fellow's weak points; you don't blow him up if he gets on a bit. Why,\" enthusiastically, \"being married to you is like chumming with a chap! Why,\" admiringly, \"do you remember before we were married, when I let that card fall out of my pocket? Why, I couldn't have told another girl about her! she wouldn't have believed that I *was* straight; she'd have thrown me over, and you sent her a quid because she was sick. You are a great little woman!\""
+    },
+    {
+      "id": "sit-0-91",
+      "sceneId": "sit-0",
+      "text": "\"Don't see it!\" she is biting his ear. \"Perhaps I was a man last time, and some hereditary memories are cropping up in this incarnation!\""
+    },
+    {
+      "id": "sit-0-92",
+      "sceneId": "sit-0",
+      "text": "He looks so utterly at sea that she must laugh again, and, kneeling up, shuts his eyes with kisses, and bites his chin and shakes it like a terrier in her strong little teeth."
+    },
+    {
+      "id": "sit-0-93",
+      "sceneId": "sit-0",
+      "text": "\"You imp! was there ever such a woman!\""
+    },
+    {
+      "id": "sit-0-94",
+      "sceneId": "sit-0",
+      "text": "Catching her wrists, he parts his knees and drops her on to the rug; then perhaps the subtile magnetism that is in her affects him, for he stoops and snatches her up and carries her up and down, and then over to the window, and lets the fading light with its glimmer of moonshine play on her odd face with its tantalizing changes, and his eyes dilate and his color deepens as he crushes her soft little body to him and carries her off to her room."
+    },
+    {
+      "id": "sit-0-95",
+      "sceneId": "sit-0",
+      "text": "Summer is waning, and the harvest is ripe for ingathering, and the voice of the reaping machine is loud in the land. She is stretched on her back on the short, heather-mixed moss at the side of a bog stream. Rod and creel are flung aside, and the wanton breeze with the breath of coolness it has gathered in its passage over the murky dykes of black bog-water is playing with the tail-fly, tossing it to and fro with a half threat to fasten it to a prickly spine of golden gorse. Bunches of bog-wool nod their fluffy heads, and through the myriad indefinite sounds comes the regular scrape of a strickle on the scythe of a reaper in a neighboring meadow. Overhead a flotilla of clouds is steering from the south in a northeasterly direction. Her eyes follow them,--old-time galleons, she thinks, with their wealth of snowy sail spread, riding breast to breast up a wide, blue fjord after victory. The sails of the last are rose-flushed, with a silver edge. Someway she thinks of Cleopatra sailing down to meet Antony, and a great longing fills her soul to sail off somewhere too,--away from the daily need of dinner-getting and the recurring Monday with its washing, life with its tame duties and virtuous monotony. She fancies herself in Arabia on the back of a swift steed; flashing eyes set in dark faces surround her, and she can see the clouds of sand swirl, and feel the swing under her of his rushing stride; and her thoughts shape themselves into a wild song,--a song to her steed of flowing mane and satin skin, an uncouth rhythmical jingle with a feverish beat; a song to the untamed spirit that dwells in her. Then she fancies she is on the stage of an ancient theatre, out in the open air, with hundreds of faces upturned toward her. She is gauze-clad in a cobweb garment of wondrous tissue; her arms are clasped by jewelled snakes, and one with quivering diamond fangs coils round her hips; her hair floats loosely, and her feet are sandal-clad, and the delicate breath of vines and the salt freshness of an incoming sea seem to fill her nostrils. She bounds forward and dances, bends her lissome waist, and curves her slender arms, and gives to the soul of each man what he craves, be it good or evil. And she can feel now, lying here in the shade of Irish hills, with her head resting on her scarlet shawl and her eyes closed, the grand, intoxicating power of swaying all these human souls to wonder and applause. She can see herself with parted lips and panting, rounded breasts, and a dancing devil in each glowing eye, sway voluptuously to the wild music that rises, now slow, now fast, now deliriously wild, seductive, intoxicating, with a human note of passion in its strain. She can feel the answering shiver of emotion that quivers up to her from the dense audience, spellbound by the motion of her glancing feet; and she flies swifter and swifter, and lighter and lighter, till the very serpents seem alive with jewelled scintillations. One quivering, gleaming, daring bound, and she stands with outstretched arms and passion-filled eyes, poised on one slender foot, asking a supreme note to finish her dream of motion; and the men rise to a man and answer her, and cheer, cheer till the echoes shout from the surrounding hills and tumble wildly down the crags."
+    },
+    {
+      "id": "sit-0-96",
+      "sceneId": "sit-0",
+      "text": "The clouds have sailed away, leaving long feathery streaks in their wake. Her eyes have an inseeing look, and she is tremulous with excitement; she can hear yet that last grand shout, and the strain of that old-time music that she has never heard in this life of hers, save as an inner accompaniment to the memory of hidden things, born with her, not of this time."
+    },
+    {
+      "id": "sit-0-97",
+      "sceneId": "sit-0",
+      "text": "And her thoughts go to other women she has known, women good and bad, school friends, casual acquaintances, women workers,--joyless machines for grinding daily corn, unwilling maids grown old in the endeavor to get settled, patient wives who bear little ones to indifferent husbands until they wear out,--a long array. She busies herself with questioning. Have they, too, this thirst for excitement, for change, this restless craving for sun and love and motion? Stray words, half confidences, glimpses through soul-chinks of suppressed fires, actual outbreaks, domestic catastrophes,--how the ghosts dance in the cells of her memory! And she laughs, laughs softly to herself, because the denseness of man, his chivalrous, conservative devotion to the female idea he has created, blinds him, perhaps happily, to the problems of her complex nature. \"Ay,\" she mutters musingly, \"the wisest of them can only say we are enigmas; each one of them sets about solving the riddle of the *ewig weibliche*,--and well it is that the workings of our hearts are closed to them, that we are cunning enough or *great* enough to seem to be what they would have us, rather than be what we are. But few of them have had the insight to find out the key to our seeming contradictions,--the why a refined, physically fragile woman will mate with a brute, a mere male animal with primitive passions, and love him; the why strength and beauty appeal more often than the more subtly fine qualities of mind or heart; the why women (and not the innocent ones) will condone sins that men find hard to forgive in their fellows. They have all overlooked the eternal wildness, the untamed primitive savage temperament that lurks in the mildest, best woman. Deep in through ages of convention this primeval trait burns,--an untamable quantity that may be concealed but is never eradicated by culture, the keynote of woman's witchcraft and woman's strength. But it is there, sure enough, and each woman is conscious of it in her truth-telling hours of quiet self-scrutiny; and each woman in God's wide world will deny it, and each woman will help another to conceal it,--for the woman who tells the truth and is not a liar about these things is untrue to her sex and abhorrent to man, for he has fashioned a model on imaginary lines, and he has said, 'So I would have you!' and every woman is an unconscious liar, for so man loves her. And when a Strindberg or a Nietzsche arises and peers into the recesses of her nature and dissects her ruthlessly, the men shriek out louder than the women, because the truth is at all times unpalatable, and the gods they have set up are dear to them--\""
+    },
+    {
+      "id": "sit-0-98",
+      "sceneId": "sit-0",
+      "text": "\"Dreaming, or speering into futurity? You have the look of a seer. I believe you are half a witch!\" And he drops his gray-clad figure on the turf; he has dropped his drawl long ago in midsummer."
+    },
+    {
+      "id": "sit-0-99",
+      "sceneId": "sit-0",
+      "text": "\"Is not every woman that? Let us hope I'm for my friends a white one.\""
+    },
+    {
+      "id": "sit-0-100",
+      "sceneId": "sit-0",
+      "text": "\"A-ah! Have you many friends?\""
+    },
+    {
+      "id": "sit-0-101",
+      "sceneId": "sit-0",
+      "text": "\"That is a query! If you mean many correspondents, many persons who send me Christmas cards, or remember my birthday, or figure in my address book,--no.\""
+    },
+    {
+      "id": "sit-0-102",
+      "sceneId": "sit-0",
+      "text": "\"Well, grant I don't mean that!\""
+    },
+    {
+      "id": "sit-0-103",
+      "sceneId": "sit-0",
+      "text": "\"Well, perhaps, yes. Scattered over the world, if my death were belled out, many women would give me a tear, and some a prayer; and many men would turn back a page in their memory and give me a kind thought, perhaps a regret, and go back to their work with a feeling of having lost something that they never possessed. I am a creature of moments. Women have told me that I came into their lives just when they needed me; men had no need to tell me, I felt it. People have needed me more than I them. I have given freely whatever they craved from me in the way of understanding or love; I have touched sore places they showed me, and healed them,--but they never got at me. I have been for myself, and helped myself, and borne the burden of my own mistakes. Some have chafed at my self-sufficiency, and have called me fickle,--not understanding that they gave me nothing, and that when I had served them their moment was ended, and I was to pass on. I read people easily, I am written in black letter to most--\""
+    },
+    {
+      "id": "sit-0-104",
+      "sceneId": "sit-0",
+      "text": "\"To your husband?\""
+    },
+    {
+      "id": "sit-0-105",
+      "sceneId": "sit-0",
+      "text": "\"He,\" quickly,--\"we will not speak of him; it is not loyal.\""
+    },
+    {
+      "id": "sit-0-106",
+      "sceneId": "sit-0",
+      "text": "\"Do not I understand you a little?\""
+    },
+    {
+      "id": "sit-0-107",
+      "sceneId": "sit-0",
+      "text": "\"You do not misunderstand me.\""
+    },
+    {
+      "id": "sit-0-108",
+      "sceneId": "sit-0",
+      "text": "\"That is something.\""
+    },
+    {
+      "id": "sit-0-109",
+      "sceneId": "sit-0",
+      "text": "\"It is much!\""
+    },
+    {
+      "id": "sit-0-110",
+      "sceneId": "sit-0",
+      "text": "\"Is it?\" searching her face. \"It is not one grain of sand in the desert that stretches between you and me, and you are as impenetrable as a sphinx at the end of it. This,\" passionately, \"is my moment, and what have you given me?\""
+    },
+    {
+      "id": "sit-0-111",
+      "sceneId": "sit-0",
+      "text": "\"Perhaps less than other men I have known; but you want less. You are a little like me,--you can stand alone; and yet,\" her voice is shaking, \"have I given you nothing?\""
+    },
+    {
+      "id": "sit-0-112",
+      "sceneId": "sit-0",
+      "text": "He laughs, and she winces; and they sit silent, and they both feel as if the earth between them is laid with infinitesimal electric threads vibrating with a common pain. Her eyes are filled with tears that burn but don't fall; and she can see his some way through her closed lids, see their cool grayness troubled by sudden fire, and she rolls her handkerchief into a moist cambric ball between her cold palms."
+    },
+    {
+      "id": "sit-0-113",
+      "sceneId": "sit-0",
+      "text": "\"You have given me something, something to carry away with me,--an infernal want. You ought to be satisfied: I am infernally miserable. You,\" nearer, \"have the most tantalizing mouth in the world when your lips tremble like that. I--What! can you cry? You?\""
+    },
+    {
+      "id": "sit-0-114",
+      "sceneId": "sit-0",
+      "text": "\"Yes, even I can cry!\""
+    },
+    {
+      "id": "sit-0-115",
+      "sceneId": "sit-0",
+      "text": "\"You dear woman!\" pause; \"and I can't help you?\""
+    },
+    {
+      "id": "sit-0-116",
+      "sceneId": "sit-0",
+      "text": "\"You can't help me; no man can. Don't think it is because you are you I cry, but because you probe a little nearer into the real me that I feel so.\""
+    },
+    {
+      "id": "sit-0-117",
+      "sceneId": "sit-0",
+      "text": "\"Was it necessary to say that?\" reproachfully; \"do you think I don't know it? I can't for the life of me think how you, with that free gypsy nature of yours, could bind yourself to a monotonous country life, with no excitement, no change. I wish I could offer you my yacht; do you like the sea?\""
+    },
+    {
+      "id": "sit-0-118",
+      "sceneId": "sit-0",
+      "text": "\"I love it; it answers one's moods.\""
+    },
+    {
+      "id": "sit-0-119",
+      "sceneId": "sit-0",
+      "text": "\"Well, let us play pretending, as the children say. Grant that I could, I would hang your cabin with your own colors, fill it with books (all those I have heard you say you care for), make it a nest as rare as the bird it would shelter. You would reign supreme. When your highness would deign to honor her servant, I would come and humor your every whim. If you were glad, you could clap your hands and order music, and we would dance on the white deck, and we would skim through the sunshine of Southern seas on a spice-scented breeze. You make me poetical. And if you were angry, you could vent your feelings on me, and I would give in and bow my head to your mood. And we would drop anchor, and stroll through strange cities,--go far inland and glean folklore out of the beaten track of everyday tourists; and at night, when the harbor slept, we would sail out through the moonlight over silver seas. You are smiling,--you look so different when you smile; do you like my picture?\""
+    },
+    {
+      "id": "sit-0-120",
+      "sceneId": "sit-0",
+      "text": "\"Some of it!\""
+    },
+    {
+      "id": "sit-0-121",
+      "sceneId": "sit-0",
+      "text": "\"What not?\""
+    },
+    {
+      "id": "sit-0-122",
+      "sceneId": "sit-0",
+      "text": "\"You!\""
+    },
+    {
+      "id": "sit-0-123",
+      "sceneId": "sit-0",
+      "text": "\"Thank you.\""
+    },
+    {
+      "id": "sit-0-124",
+      "sceneId": "sit-0",
+      "text": "\"You asked me. Can't you understand where the spell lies? It is the freedom, the freshness, the vague danger, the unknown that has a witchery for me,--ay, for every woman!\""
+    },
+    {
+      "id": "sit-0-125",
+      "sceneId": "sit-0",
+      "text": "\"Are you incapable of affection, then?\""
+    },
+    {
+      "id": "sit-0-126",
+      "sceneId": "sit-0",
+      "text": "\"Of course not. I share,\" bitterly, \"that crowning disability of my sex; but not willingly,--I chafe under it. My God! if it were not for that, we women would master the world! I tell you, men would be no match for us! At heart we care nothing for laws, nothing for systems; all your elaborately reasoned codes for controlling morals or man do not weigh a jot with us against an impulse, an instinct. We learn those things from you,--you tamed, amenable animals; they are not natural to us. It is a wise disposition of Providence that this untamableness of ours is corrected by our affections. We forge our own chains in a moment of softness, and then,\" bitterly, \"we may as well wear them with a good grace. Perhaps many of our seeming contradictions are only the outward evidences of inward chafing. Bah! the qualities that go to make a Napoleon--superstition, want of honor, disregard of opinion, and the eternal I--are oftener to be found in a woman than a man. Lucky for the world, perhaps, that all these attributes weigh as nothing in the balance with the need to love, if she be a good woman; to be loved, if she is of a coarser fibre.\""
+    },
+    {
+      "id": "sit-0-127",
+      "sceneId": "sit-0",
+      "text": "\"I never met any one like you; you are a strange woman!\""
+    },
+    {
+      "id": "sit-0-128",
+      "sceneId": "sit-0",
+      "text": "\"No, I am merely a truthful one. Women talk to me--why? I can't say; but always they come, strip their hearts and souls naked, and let me see the hidden folds of their natures. The greatest tragedies I have ever read are child's play to those I have seen acted in the inner life of outwardly commonplace women. A woman must beware of speaking the truth to a man; he loves her the less for it. It is the elusive spirit in her, that he divines but cannot seize, that fascinates and keeps him.\""
+    },
+    {
+      "id": "sit-0-129",
+      "sceneId": "sit-0",
+      "text": "There is a long silence; the sun is waning and the scythes are silent, and overhead the crows are circling,--a croaking, irregular army, homeward bound from a long day's pillage."
+    },
+    {
+      "id": "sit-0-130",
+      "sceneId": "sit-0",
+      "text": "She has made no sign, yet so subtilely is the air charged with her that he feels but a few moments remain to him. He goes over and kneels beside her, and fixes his eyes on her odd, dark face. They both tremble, yet neither speaks. His breath is coming quickly, and the bistre stains about her eyes seem to have deepened, perhaps by contrast, as she has paled."
+    },
+    {
+      "id": "sit-0-131",
+      "sceneId": "sit-0",
+      "text": "\"Look at me!\""
+    },
+    {
+      "id": "sit-0-132",
+      "sceneId": "sit-0",
+      "text": "She turns her head right round and gazes straight into his face; a few drops of sweat glisten on his forehead."
+    },
+    {
+      "id": "sit-0-133",
+      "sceneId": "sit-0",
+      "text": "\"You witch woman! what am I to do with myself? Is my moment ended?\""
+    },
+    {
+      "id": "sit-0-134",
+      "sceneId": "sit-0",
+      "text": "\"I think so.\""
+    },
+    {
+      "id": "sit-0-135",
+      "sceneId": "sit-0",
+      "text": "\"Lord, what a mouth!\""
+    },
+    {
+      "id": "sit-0-136",
+      "sceneId": "sit-0",
+      "text": "\"Don't! oh, don't!\""
+    },
+    {
+      "id": "sit-0-137",
+      "sceneId": "sit-0",
+      "text": "\"No, I won't. But do you mean it? Am I, who understand your every mood, your restless spirit, to vanish out of your life? You can't mean it! Listen!--are you listening to me? I can't see your face; take down your hands. Go back over every chance meeting you and I have had together since I met you first by the river, and judge them fairly. To-day is Monday: Wednesday afternoon I shall pass your gate, and if--if my moment is ended, and you mean to send me away, to let me go with this weary aching--\""
+    },
+    {
+      "id": "sit-0-138",
+      "sceneId": "sit-0",
+      "text": "\"A-ah!\" she stretches out one brown hand appealingly, but he does not touch it."
+    },
+    {
+      "id": "sit-0-139",
+      "sceneId": "sit-0",
+      "text": "\"*Hang something white on the lilac-bush!*\""
+    },
+    {
+      "id": "sit-0-140",
+      "sceneId": "sit-0",
+      "text": "She gathers up creel and rod, and he takes her shawl, and wrapping it round her holds her a moment in it, and looks searchingly into her eyes, then stands back and raises his hat, and she glides away through the reedy grass."
+    },
+    {
+      "id": "sit-0-141",
+      "sceneId": "sit-0",
+      "text": "Wednesday morning she lies watching the clouds sail by. A late rose-spray nods into the open window, and the petals fall every time. A big bee buzzes in and fills the room with his bass note, and then dances out again. She can hear his footstep on the gravel. Presently he looks in over the half window,--"
+    },
+    {
+      "id": "sit-0-142",
+      "sceneId": "sit-0",
+      "text": "\"Get up and come out,--'twill do you good; have a brisk walk!\""
+    },
+    {
+      "id": "sit-0-143",
+      "sceneId": "sit-0",
+      "text": "She shakes her head languidly, and he throws a great soft, dewy rose with sure aim on her breast."
+    },
+    {
+      "id": "sit-0-144",
+      "sceneId": "sit-0",
+      "text": "\"Shall I go in and lift you out and put you, 'nighty' and all, into your tub?\""
+    },
+    {
+      "id": "sit-0-145",
+      "sceneId": "sit-0",
+      "text": "\"No!\" impatiently. \"I'll get up just now.\""
+    },
+    {
+      "id": "sit-0-146",
+      "sceneId": "sit-0",
+      "text": "The head disappears, and she rises wearily and gets through her dressing slowly, stopped every moment by a feeling of faintness. He finds her presently rocking slowly to and fro with closed eyes, and drops a leaf with three plums in it on to her lap."
+    },
+    {
+      "id": "sit-0-147",
+      "sceneId": "sit-0",
+      "text": "\"I have been watching four for the last week, but a bird, greedy beggar, got one this morning early: try them. Don't you mind, old girl, I'll pour out my own tea!\""
+    },
+    {
+      "id": "sit-0-148",
+      "sceneId": "sit-0",
+      "text": "She bites into one and tries to finish it, but cannot. \"You are a good old man!\" she says, and the tears come unbidden to her eyes, and trickle down her cheeks, dropping on to the plums, streaking their delicate bloom."
+    },
+    {
+      "id": "sit-0-149",
+      "sceneId": "sit-0",
+      "text": "He looks uneasily at her, but doesn't know what to do; and when he has finished his breakfast he stoops over her chair and strokes her hair, saying, as he leaves a kiss on the top of her head, \"Come out into the air, little woman; do you a world of good!\""
+    },
+    {
+      "id": "sit-0-150",
+      "sceneId": "sit-0",
+      "text": "And presently she hears the sharp thrust of his spade above the bee's hum, leaf rustle, and the myriad late summer sounds that thrill through the air. It irritates her almost to screaming point; there is a practical non-sympathy about it; she can distinguish the regular one, two, three, the thrust, interval, then pat, pat, on the upturned sod. To-day she wants some one, and her thoughts wander to, and she wonders what, the gray-eyed man who never misunderstands her, would say to her. Oh, she wants some one so badly to soothe her; and she yearns for the little mother who is twenty years under the daisies,--the little mother who is a faint memory strengthened by a daguerreotype in which she sits with silk-mittened hands primly crossed on the lap of her moiré gown, a diamond brooch fastening the black-velvet ribbon crossed so stiffly over her lace collar, the shining tender eyes looking steadily out, and her hair in the fashion of fifty-six. How that spade dominates over every sound! and what a sickening pain she has, an odd pain; she never felt it before. Supposing she were to die, she tries to fancy how she would look; they would be sure to plaster her curls down. He might be digging her grave--no, it is the patch where the early peas grew, the peas that were eaten with the twelve weeks' ducklings: she remembers them, little fluffy golden balls with waxen bills, and such dainty paddles,--remembers holding an egg to her ear and listening to it cheep inside before even there was a chip in the shell. Strange how things come to life! What! she sits bolt upright and holds tightly to the chair, and a questioning, awesome look comes over her face; and then the quick blood creeps up through her olive skin right up to her temples, and she buries her face in her hands and sits so a long time."
+    },
+    {
+      "id": "sit-0-151",
+      "sceneId": "sit-0",
+      "text": "The maid comes in and watches her curiously, and moves softly about. The look in her eyes is the look of a faithful dog, and she loves her with the same rare fidelity. She hesitates, then goes into the bedroom and stands thoughtfully, with her hands clasped over her breast. She is a tall, thin, flat-waisted woman, with misty blue eyes and a receding chin. Her hair is pretty. She turns as her mistress comes in, with an expectant look on her face. She has taken up a nightgown, but holds it idly."
+    },
+    {
+      "id": "sit-0-152",
+      "sceneId": "sit-0",
+      "text": "\"Lizzie, had you ever a child?\""
+    },
+    {
+      "id": "sit-0-153",
+      "sceneId": "sit-0",
+      "text": "The girl's long left hand is ringless; yet she asks it with a quiet insistence, as if she knew what the answer would be, and her odd eyes read her face with an almost cruel steadiness. The girl flushes painfully, and then whitens; her very eyes seem to pale, and her under lip twitches as she jerks out huskily,--"
+    },
+    {
+      "id": "sit-0-154",
+      "sceneId": "sit-0",
+      "text": "\"Yes!\""
+    },
+    {
+      "id": "sit-0-155",
+      "sceneId": "sit-0",
+      "text": "\"What happened to it?\""
+    },
+    {
+      "id": "sit-0-156",
+      "sceneId": "sit-0",
+      "text": "\"It died, M'am.\""
+    },
+    {
+      "id": "sit-0-157",
+      "sceneId": "sit-0",
+      "text": "\"Poor thing! Poor old Liz!\""
+    },
+    {
+      "id": "sit-0-158",
+      "sceneId": "sit-0",
+      "text": "She pats the girl's hand softly, and the latter stands dumbly and looks down at both hands, as if fearful to break the wonder of a caress. She whispers hesitatingly,--"
+    },
+    {
+      "id": "sit-0-159",
+      "sceneId": "sit-0",
+      "text": "\"Have you--have you any little things left?\""
+    },
+    {
+      "id": "sit-0-160",
+      "sceneId": "sit-0",
+      "text": "And she laughs such a soft, cooing little laugh, like the chirring of a ring-dove, and nods shyly back in reply to the tall maid's questioning look. The latter goes out, and comes back with a flat, red-painted deal box, and unlocks it. It does not hold very much, and the tiny garments are not of costly material; but the two women pore over them as a gem collector over a rare stone. She has a glimpse of thick-crested paper as the girl unties a packet of letters, and looks away until she says tenderly,--"
+    },
+    {
+      "id": "sit-0-161",
+      "sceneId": "sit-0",
+      "text": "\"Look, M'am!\""
+    },
+    {
+      "id": "sit-0-162",
+      "sceneId": "sit-0",
+      "text": "A little bit of hair inside a paper heart. It is almost white, so silky and so fine that it is more like a thread of bog-wool than a baby's hair; and the mistress, who is a wife, puts her arms round the tall maid, who has never had more than a moral claim to the name, and kisses her in her quick way."
+    },
+    {
+      "id": "sit-0-163",
+      "sceneId": "sit-0",
+      "text": "The afternoon is drawing on; she is kneeling before an open trunk, with flushed cheeks and sparkling eyes. A heap of unused, dainty lace-trimmed ribbon-decked cambric garments are scattered around her. She holds the soft, scented web to her cheek and smiles musingly; and then she rouses herself and sets to work, sorting out the finest, with the narrowest lace and tiniest ribbon, and puckers her swarthy brows, and measures lengths along her middle finger, and then gets slowly up, as if careful of herself as a precious thing, and half afraid."
+    },
+    {
+      "id": "sit-0-164",
+      "sceneId": "sit-0",
+      "text": "\"Lizzie!\""
+    },
+    {
+      "id": "sit-0-165",
+      "sceneId": "sit-0",
+      "text": "\"Yes, M'am!\""
+    },
+    {
+      "id": "sit-0-166",
+      "sceneId": "sit-0",
+      "text": "\"Wasn't it lucky they were too fine for every day? They will be so pretty. Look at this one with the tiny valenciennes edging. Why, one nightgown will make a dozen little shirts,--such elfin-shirts as they are too; and Lizzie!\""
+    },
+    {
+      "id": "sit-0-167",
+      "sceneId": "sit-0",
+      "text": "\"Yes, M'am!\""
+    },
+    {
+      "id": "sit-0-168",
+      "sceneId": "sit-0",
+      "text": "\"Just hang it out on the lilac-bush,--mind, the lilac-bush!\""
+    },
+    {
+      "id": "sit-0-169",
+      "sceneId": "sit-0",
+      "text": "\"Yes, M'am!\""
+    },
+    {
+      "id": "sit-0-170",
+      "sceneId": "sit-0",
+      "text": "\"Or, Lizzie, wait: I'll do it myself!\""
+    }
+  ]
+}

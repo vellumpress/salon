@@ -989,6 +989,15 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "heart-of-darkness",
   "toilers-of-the-sea",
   "indian-summer",
+  // Mira Sun 27 Sep 2026 POST-#179 CLEAR — Cabbages and Kings leads Next. Never Featured.
+  // LEAD kept — not Dorian Gray, not The Job, not The Reign of Greed.
+  // A Cross Line is Rituals (the title sketch only), not this tail.
+  // Earlier The Job inventory seat on Next stays. Earlier the-reign-of-greed stays on its own slug.
+  // Sun POST-#178 Seven Gables and the earlier packs stay ahead.
+  "cabbages-and-kings",
+  "picture-of-dorian-gray",
+  "the-job",
+  "reign-of-greed",
 ] as const;
 
 /**
