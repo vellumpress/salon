@@ -1,0 +1,41 @@
+{
+  "id": "indian-summer",
+  "title": "Indian Summer",
+  "author": "William Dean Howells",
+  "year": "1886",
+  "note": "Project Gutenberg 7359. Host: I — Midway Ponte Vecchio / Colville / yellow Arno (Produced-by skipped). Year 1886. Inventory 82 medium — no invented Launch rank. Soft Florence carefully ≠ Capri/Sicily/Sardinia.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Florence / Italy",
+      "place": "Chapter I · Florence / Italy",
+      "reentry": "Midway of the Ponte Vecchio at Florence, where three arches break the lines of the little jewellers' booths glittering on either hand, and open an approach to the parapet, Colville lounged against the",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Midway of the Ponte Vecchio at Florence, where three arches break the lines of the little jewellers' booths glittering on either hand, and open an approach to the parapet, Colville lounged against the corner of a shop and stared out upon the river. It was the late afternoon of a day in January, which had begun bright and warm, but had suffered a change of mood as its hours passed, and now, from a sky dimmed with flying grey clouds, was threatening rain. There must already have been rain in the mountains, for the yellow torrent that seethed and swirled around the piers of the bridge was swelling momently on the wall of the Lung' Arno, and rolling a threatening flood toward the Cascine, where it lost itself under the ranks of the poplars that seemed to file across its course, and let their delicate tops melt into the pallor of the low horizon."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The city, with the sweep of the Lung' Arno on either hand, and its domes and towers hung in the dull air, and the country with its white villas and black cypresses breaking the grey stretches of the olive orchards on its hill-sides, had alike been growing more and more insufferable; and Colville was finding a sort of vindictive satisfaction in the power to ignore the surrounding frippery of landscape and architecture. He isolated himself so perfectly from it, as he brooded upon the river, that, for any sensible difference, he might have been standing on the Main Street Bridge at Des Vaches, Indiana, looking down at the tawny sweep of the Wabash. He had no love for that stream, nor for the ambitious town on its banks, but ever since he woke that morning he had felt a growing conviction that he had been a great ass to leave them. He had, in fact, taken the prodigious risk of breaking his life sharp off from the course in which it had been set for many years, and of attempting to renew it in a direction from which it had long been diverted. Such an act could be precipitated only by a strong impulse of conscience or a profound disgust, and with Colville it sprang from disgust. He had experienced a bitter disappointment in the city to whose prosperity he had given the energies of his best years, and in whose favour he imagined that he had triumphantly established himself."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "He had certainly made the Des Vaches *Democrat-Republican* a very good paper; its ability was recognised throughout the State, and in Des Vaches people of all parties were proud of it. They liked every morning to see what Colville said; they believed that in his way he was the smartest man in the State, and they were fond of claiming that there was no such writer on any of the Indianapolis papers. They forgave some political heresies to the talent they admired; they permitted him the whim of free trade, they laughed tolerantly when he came out in favour of civil service reform, and no one had much fault to find when the *Democrat-Republican* bolted the nomination of a certain politician of its party for Congress. But when Colville permitted his own name to be used by the opposing party, the people arose in their might and defeated him by a tremendous majority. That was what the regular nominee said. It was a withering rebuke to treason, in the opinion of this gentleman; it was a good joke, anyway, with the Democratic managers who had taken Colville up, being all in the Republican family; whichever it was, it was a mortification for Colville which his pride could not brook. He stood disgraced before the community not only as a theorist and unpractical doctrinaire, but as a dangerous man; and what was worse, he could not wholly acquit himself of a measure of bad faith; his conscience troubled him even more than his pride. Money was found, and a printer bought up with it to start a paper in opposition to the *Democrat-Republican*. Then Colville contemptuously offered to sell out to the Republican committee in charge of the new enterprise, and they accepted his terms."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "In private life he found much of the old kindness returning to him; and his successful opponent took the first opportunity of heaping coals of fire on his head in the public street, when he appeared to the outer eye to be shaking hands with Colville. During the months that he remained to close up his affairs after the sale of his paper, the *Post-Democrat-Republican* (the newspaper had agglutinated the titles of two of its predecessors, after the fashion of American journals) was fulsome in its complimentary allusions to him. It politely invented the fiction that he was going to Europe for his health, impaired by his journalistic labours, and adventurously promised its readers that they might hope to hear from him from time to time in its columns. In some of its allusions to him Colville detected the point of a fine irony, of which he had himself introduced the practice in the *Democrat-Republican*; and he experienced, with a sense of personal impoverishment, the curious fact that a journalist of strong characteristics leaves the tradition of himself in such degree with the journal he has created that he seems to bring very little away. He was obliged to confess in his own heart that the paper was as good as ever. The assistants, who had trained themselves to write like him, seemed to be writing quite as well, and his honesty would not permit him to receive the consolation offered him by the friends who told him that there was a great falling off in the *Post-Democrat-Republican*. Except that it was rather more Stalwart in its Republicanism, and had turned quite round on the question of the tariff, it was very much what it had always been. It kept the old decency of tone which he had given it, and it maintained the literary character which he was proud of. The new management must have divined that its popularity, with the women at least, was largely due to its careful selections of verse and fiction, its literary news, and its full and piquant criticisms, with their long extracts from new books. It was some time since he had personally looked after this department, and the young fellow in charge of it under him had remained with the paper. Its continued excellence, which he could not have denied if he had wished, seemed to leave him drained and feeble, and it was partly from the sense of this that he declined the overtures, well backed up with money, to establish an independent paper in Des Vaches. He felt that there was not fight enough in him for the work, even if he had not taken that strong disgust for public life which included the place and its people. He wanted to get away, to get far away, and with the abrupt and total change in his humour he reverted to a period in his life when journalism and politics and the ambition of Congress were things undreamed of."
+    }
+  ]
+}

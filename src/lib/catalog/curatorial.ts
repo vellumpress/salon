@@ -980,6 +980,15 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "captains-courageous",
   "numa-roumestan",
   "dracula",
+  // Mira Sun 27 Sep 2026 POST-#178 CLEAR — The House of the Seven Gables leads Next. Never Featured.
+  // LEAD kept — not Heart of Darkness, not Toilers of the Sea, not Indian Summer.
+  // A Slav Soul is Rituals (the title sketch only), not this tail.
+  // Earlier Seven Gables, Heart, Toilers, and Indian Summer inventory seats on Next stay.
+  // Sun POST-#177 Tess and the earlier packs stay ahead.
+  "the-house-of-the-seven-gables",
+  "heart-of-darkness",
+  "toilers-of-the-sea",
+  "indian-summer",
 ] as const;
 
 /**

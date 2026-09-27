@@ -182,6 +182,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "captains-courageous": { label: "Grand Banks", region: "ca" },
   "numa-roumestan": { label: "Provence", region: "fr" },
   "the-tug-of-love": { label: "Jewish workshop", region: "gb" },
+  "the-house-of-the-seven-gables": { label: "Salem", region: "us" },
+  "heart-of-darkness": { label: "Congo river", region: "cd" },
+  "toilers-of-the-sea": { label: "Guernsey", region: "fr" },
+  "indian-summer": { label: "Florence", region: "it" },
+  "a-slav-soul": { label: "Russia", region: "ru" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples

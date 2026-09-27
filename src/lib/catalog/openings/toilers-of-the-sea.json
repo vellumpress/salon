@@ -1,0 +1,31 @@
+{
+  "id": "toilers-of-the-sea",
+  "title": "Toilers of the Sea",
+  "author": "Victor Hugo (trans. W. Moy Thomas)",
+  "year": "1866",
+  "note": "Project Gutenberg 32338. Host: Part I · I A Word Written on a White Page — Christmas snow Guernsey / St. Peter’s Port→Vale (Everyman ads / Rhys intro skipped). Year 1866. W. Moy Thomas from PG About only. Inventory 87 hard — no invented Launch rank. Soft Guernsey carefully ≠ Grand Banks.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Book I · I · A Word Written on a White Page · Guernsey / Channel Islands",
+      "place": "Part I · Book I · I · A Word Written on a White Page · Guernsey / Channel Islands",
+      "reentry": "Christmas Day in the year 182- was somewhat remarkable in the island of Guernsey. Snow fell on that day. In the Channel Islands a frosty winter is uncommon, and a fall of snow is an event.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Christmas Day in the year 182- was somewhat remarkable in the island of Guernsey. Snow fell on that day. In the Channel Islands a frosty winter is uncommon, and a fall of snow is an event."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "On that Christmas morning, the road which skirts the seashore from St. Peter's Port to the Vale was clothed in white. From midnight till the break of day the snow had been falling. Towards nine o'clock, a little after the rising of the wintry sun, as it was too early yet for the Church of England folks to go to St. Sampson's, or for the Wesleyans to repair to Eldad Chapel, the road was almost deserted. Throughout that portion of the highway which separates the first from the second tower, only three foot-passengers could be seen. These were a child, a man, and a woman. Walking at a distance from each other, these wayfarers had no visible connection. The child, a boy of about eight years old, had stopped, and was looking curiously at the wintry scene. The man walked behind the woman, at a distance of about a hundred paces. Like her he was coming from the direction of the church of St. Sampson. The appearance of the man, who was still young, was something between that of a workman and a sailor. He wore his working-day clothes--a kind of Guernsey shirt of coarse brown stuff, and trousers partly concealed by tarpaulin leggings--a costume which seemed to indicate that, notwithstanding the holy day, he was going to no place of worship. His heavy shoes of rough leather, with their soles covered with large nails, left upon the snow, as he walked, a print more like that of a prison lock than the foot of a man. The woman, on the contrary, was evidently dressed for church. She wore a large mantle of black silk, wadded, under which she had coquettishly adjusted a dress of Irish poplin, trimmed alternately with white and pink; but for her red stockings, she might have been taken for a Parisian. She walked on with a light and free step, so little suggestive of the burden of life that it might easily be seen that she was young. Her movements possessed that subtle grace which indicates the most delicate of all transitions--that soft intermingling, as it were, of two twilights--the passage from the condition of a child to that of womanhood. The man seemed to take no heed of her."
+    }
+  ]
+}

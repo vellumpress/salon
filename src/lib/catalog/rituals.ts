@@ -333,6 +333,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `3 May, Bistritz. Left Munich at 8:35 in the evening. Chapter I, Harker’s Journal — Bistritz and paprika hendl. Skip the Contents. The Host opens in Transylvania. Bram Stoker’s 1897 novel. Soft Transylvania, carefully. This is not Eseldorf in Austria. Inventory 81 is easy. No score is invented for this sit.`,
   "the-tug-of-love":
     `When Elias Goldenberg, Belcovitch’s head cutter, betrothed himself to Fanny Fersht. This sit is The Tug of Love only — Elias, Fanny, Sugarman, and the ring. Skip the ads, the contents, and the other stories. Stop at the end of the sketch. Israel Zangwill’s 1907 book. One sketch this sit; the cycle continues. Soft Zangwill, carefully. This is not The King of Schnorrers. Inventory 88 is medium. No score is invented for this sit.`,
+  "the-house-of-the-seven-gables":
+    `Halfway down a by-street of one of our New England towns stands a rusty wooden house, with seven acutely peaked gables. Chapter I, The Old Pyncheon Family — the by-street, the seven gables, and the Pyncheon Elm. Skip the Introductory Note and the Author’s Preface. Nathaniel Hawthorne’s 1851 novel. Soft Salem, carefully. Soft gothic, carefully. This is not Dracula. The lead is this book, not Heart of Darkness, not Toilers of the Sea, and not Indian Summer. Inventory 86 is medium. No score is invented for this sit.`,
+  "heart-of-darkness":
+    `The Nellie, a cruising yawl, swung to her anchor without a flutter of the sails. The opening — the Nellie, the Thames, and Gravesend, with the Congo primary after the frame. Skip the produced-by credit. Joseph Conrad’s 1902 novel. The book year is 1902; the serial is 1899. Soft Conrad, carefully. This is not Borneo. Soft Africa, carefully. Inventory 88 is medium. No score is invented for this sit.`,
+  "toilers-of-the-sea":
+    `Christmas Day in the year 182- was somewhat remarkable in the island of Guernsey. Snow fell on that day. Part I, A Word Written on a White Page — Christmas snow, St. Peter’s Port, and Vale. Skip the Everyman ads and the Rhys introduction. Victor Hugo, in W. Moy Thomas’s English, 1866. Soft Guernsey, carefully. This is not the Grand Banks. Soft France, carefully. This is not Provence or Paris. Inventory 87 is hard. No score is invented for this sit.`,
+  "indian-summer":
+    `Midway of the Ponte Vecchio at Florence, where three arches break the lines of the little jewellers' booths. Chapter I — the Ponte Vecchio, Colville, and the yellow Arno. Skip the produced-by credit. William Dean Howells’s 1886 novel. Soft Florence, carefully. This is not Capri, Sicily, or Sardinia. Soft Howells, carefully. This is not Silas Lapham. Inventory 82 is medium. No score is invented for this sit.`,
+  "a-slav-soul":
+    `The farther I go back in my memory of the past, the nearer I get to childhood. This sit is A Slav Soul only — childhood, Yasha, Matsko, and Bouton. Skip the Putnam introduction, the contents, and the other stories. Stop at the end of the sketch. A. I. Kuprin, in Rosa Savary Graham’s English, 1916. One sketch this sit. Soft Russia, carefully, after The Village and Virgin Soil. Inventory 84 is easy. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -646,7 +656,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "charmides-and-other-poems",
       "dauber",
       "eugenie-grandet",
-      "heart-of-darkness",
       "in-a-glass-darkly",
       "in-the-world",
       "indiana",
@@ -668,7 +677,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-gods-of-pegana",
       "the-grand-babylon-hotel",
       "the-hidden-force",
-      "the-house-of-the-seven-gables",
       "the-jacket",
       "the-job",
       "the-magic-skin",
@@ -732,7 +740,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-son-of-the-wolf",
       "the-stolen-bacillus",
       "the-tragic-muse",
-      "toilers-of-the-sea",
       "toward-the-gulf",
       "a-house-of-gentlefolk",
       "artists-wives",
@@ -740,7 +747,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "emaux-et-camees",
       "eves-ransom",
       "fraternity",
-      "indian-summer",
       "les-heures-claires",
       "les-trophees",
       "royal-highness",
@@ -1057,6 +1063,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "captains-courageous",
       "numa-roumestan",
       "dracula",
+      // Mira Sun 27 Sep 2026 POST-#178 CLEAR — The House of the Seven Gables leads. Never Featured.
+      // LEAD kept — not Heart of Darkness, not Toilers of the Sea, not Indian Summer.
+      // Earlier before-sleep inventory listings move here so the cycle reads in order.
+      // A Slav Soul is Waking up (the title sketch only).
+      "the-house-of-the-seven-gables",
+      "heart-of-darkness",
+      "toilers-of-the-sea",
+      "indian-summer",
     ],
   },
   {
@@ -1143,6 +1157,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-toys-of-peace",
       // Mira Sun 27 Sep 2026 POST-#177 CLEAR — The Tug of Love sketch only.
       "the-tug-of-love",
+      // Mira Sun 27 Sep 2026 POST-#178 CLEAR — A Slav Soul sketch only.
+      "a-slav-soul",
     ],
   },
   {
@@ -1308,6 +1324,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "captains-courageous",
       "numa-roumestan",
       "dracula",
+      // Mira Sun 27 Sep 2026 POST-#178 CLEAR — The House of the Seven Gables leads. Never Featured.
+      // LEAD kept — not Heart of Darkness, not Toilers of the Sea, not Indian Summer.
+      // Earlier before-sleep inventory listings move here so the cycle reads in order.
+      // A Slav Soul is Waking up (the title sketch only).
+      "the-house-of-the-seven-gables",
+      "heart-of-darkness",
+      "toilers-of-the-sea",
+      "indian-summer",
     ],
   },
   {
@@ -1472,6 +1496,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "captains-courageous",
       "numa-roumestan",
       "dracula",
+      // Mira Sun 27 Sep 2026 POST-#178 CLEAR — The House of the Seven Gables leads. Never Featured.
+      // LEAD kept — not Heart of Darkness, not Toilers of the Sea, not Indian Summer.
+      // Earlier before-sleep inventory listings move here so the cycle reads in order.
+      // A Slav Soul is Waking up (the title sketch only).
+      "the-house-of-the-seven-gables",
+      "heart-of-darkness",
+      "toilers-of-the-sea",
+      "indian-summer",
     ],
   },
   {
@@ -1637,7 +1669,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-grand-babylon-hotel": 5,
   "the-hidden-force": 5,
   "the-house-by-the-medlar-tree": 6,
-  "the-house-of-the-seven-gables": 5,
+  "the-house-of-the-seven-gables": 6,
   "the-jacket": 5,
   "the-job": 5,
   "the-magic-skin": 5,
@@ -1710,7 +1742,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-son-of-the-wolf": 5,
   "the-stolen-bacillus": 5,
   "the-tragic-muse": 5,
-  "toilers-of-the-sea": 5,
+  "toilers-of-the-sea": 2,
   "toward-the-gulf": 5,
   "a-house-of-gentlefolk": 5,
   "artists-wives": 5,
@@ -1719,13 +1751,14 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "eves-ransom": 5,
   "fraternity": 5,
   "hania": 5,
-  "indian-summer": 5,
+  "indian-summer": 6,
   "les-heures-claires": 5,
   "les-trophees": 5,
   "numa-roumestan": 6,
   "captains-courageous": 6,
   dracula: 6,
   "the-tug-of-love": 8,
+  "a-slav-soul": 12,
   "royal-highness": 4,
   ramona: 6,
   "almayers-folly": 6,
