@@ -411,6 +411,30 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
  * this Next tail. One tale this sit. The Lower East Side is not Laos. The
  * earlier Sun AM seats stay ahead. Cold-open stays
  * Mirth → Quicksand → Botchan.
+ * Mira Sun 27 Sep 2026 POST-#170 CLEAR — Recommend only, never Featured.
+ * The Sport of the Gods leads this cycle’s Next append (Chapter I, The
+ * Hamiltons, the Berry cottage, the Oakley mansion, a butler’s dignity,
+ * Dunbar, 1902, PG 17854; contents skipped; the timed sit stops before the
+ * New York chapters). LEAD kept — not Ramuntcho, not Miss Lulu Bett. Soft
+ * Southern Oakley is not Wilmington after Marrow. The Host stays in the
+ * South, after Wings on the Lower East Side. Inventory 84 is medium. No
+ * Notion or Launch rank is invented. The whole novel continues north.
+ * Ramuntcho follows carefully (Part I, Chapter I, sad curlews, the Bidassoa,
+ * Loti, Henri Pene du Bois’s English, French 1897, PG 9616; produced-by
+ * skipped). No English translator year is invented. Soft Basque is not
+ * Saumur, not the Orne, and not Paris. Inventory 74 is easy — do not
+ * inflate it. There is no For you seat to keep. Miss Lulu Bett follows
+ * (Chapter I, April, the Deacon supper, Gale, inventory Appleton 1920 / the
+ * 1921 header, PG 10429; contents skipped). Soft Midwest is new. Inventory
+ * 84 is easy. No Launch rank is invented. The earlier For you seat stays.
+ * The Pit follows (Chapter I, the Auditorium vestibule, Laura Dearborn,
+ * Norris, 1903, PG 4382; principal characters, the trilogy note, and the
+ * dedication skipped). Soft Chicago is new. Inventory 87 is medium. No
+ * Launch rank is invented. Reginald is Rituals only — the title sketch,
+ * Saki, 1904, PG 2830 — and is not this Next tail. One sketch this sit.
+ * Soft London, carefully. The earlier Next seat for Reginald stays. The
+ * earlier Sun POST-#169 seats stay ahead. Cold-open stays
+ * Mirth → Quicksand → Botchan.
  *
  * Remakes are tbr original adaptations of PD sources. They are their own
  * catalog track — never locked recommend, Next, or Later classics.
@@ -865,6 +889,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-four-horsemen-of-the-apocalypse",
   "after-the-divorce",
   "virgin-soil",
+  // Mira Sun 27 Sep 2026 POST-#170 CLEAR — The Sport of the Gods leads Next. Never Featured.
+  // Earlier seats for Miss Lulu Bett, The Pit, and Ramuntcho stay.
+  // Reginald is Rituals (title sketch only), not this tail.
+  // Sun POST-#169 Born in Exile and the earlier packs stay ahead.
+  "the-sport-of-the-gods",
+  "ramuntcho",
+  "miss-lulu-bett",
+  "the-pit",
 ] as const;
 
 /**

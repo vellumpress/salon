@@ -1,0 +1,96 @@
+{
+  "id": "the-pit",
+  "title": "The Pit",
+  "author": "Frank Norris",
+  "year": "1903",
+  "note": "Project Gutenberg 4382. Host: Ch I — Auditorium Theatre vestibule / Laura Dearborn wait / Chicago February draught (Principal Characters / trilogy note / dedication skipped). Inventory 87 medium — no invented Launch rank.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Chicago — Auditorium Theatre vestibule",
+      "place": "Chapter I · Chicago — Auditorium Theatre vestibule",
+      "reentry": "At eight o'clock in the inner vestibule of the Auditorium Theatre by the window of the box office, Laura Dearborn, her younger sister Page, and their aunt--Aunt Wess'--were still waiting for the rest ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "At eight o'clock in the inner vestibule of the Auditorium Theatre by the window of the box office, Laura Dearborn, her younger sister Page, and their aunt--Aunt Wess'--were still waiting for the rest of the theatre-party to appear. A great, slow-moving press of men and women in evening dress filled the vestibule from one wall to another. A confused murmur of talk and the shuffling of many feet arose on all sides, while from time to time, when the outside and inside doors of the entrance chanced to be open simultaneously, a sudden draught of air gushed in, damp, glacial, and edged with the penetrating keenness of a Chicago evening at the end of February."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The Italian Grand Opera Company gave one of the most popular pieces of its repertoire on that particular night, and the Cresslers had invited the two sisters and their aunt to share their box with them. It had been arranged that the party should assemble in the Auditorium vestibule at a quarter of eight; but by now the quarter was gone and the Cresslers still failed to arrive."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"I don't see,\" murmured Laura anxiously for the last time, \"what can be keeping them. Are you sure Page that Mrs. Cressler meant here--inside?\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "She was a tall young girl of about twenty-two or three, holding herself erect and with fine dignity. Even beneath the opera cloak it was easy to infer that her neck and shoulders were beautiful. Her almost extreme slenderness was, however, her characteristic; the curves of her figure, the contour of her shoulders, the swell of hip and breast were all low; from head to foot one could discover no pronounced salience. Yet there was no trace, no suggestion of angularity. She was slender as a willow shoot is slender--and equally graceful, equally erect."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Next to this charming tenuity, perhaps her paleness was her most noticeable trait. But it was not a paleness of lack of colour. Laura Dearborn's pallour was in itself a colour. It was a tint rather than a shade, like ivory; a warm white, blending into an exquisite, delicate brownness towards the throat. Set in the middle of this paleness of brow and cheek, her deep brown eyes glowed lambent and intense. They were not large, but in some indefinable way they were important. It was very natural to speak of her eyes, and in speaking to her, her friends always found that they must look squarely into their pupils. And all this beauty of pallid face and brown eyes was crowned by, and sharply contrasted with, the intense blackness of her hair, abundant, thick, extremely heavy, continually coruscating with sombre, murky reflections, tragic, in a sense vaguely portentous,--the coiffure of a heroine of romance, doomed to dark crises."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "On this occasion at the side of the topmost coil, a white aigrette scintillated and trembled with her every movement. She was unquestionably beautiful. Her mouth was a little large, the lips firm set, and one would not have expected that she would smile easily; in fact, the general expression of her face was rather serious."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Perhaps,\" continued Laura, \"they would look for us outside.\" But Page shook her head. She was five years younger than Laura, just turned seventeen. Her hair, dressed high for the first time this night, was brown. But Page's beauty was no less marked than her sister's. The seriousness of her expression, however, was more noticeable. At times it amounted to undeniable gravity. She was straight, and her figure, all immature as yet, exhibited hardly any softer outlines than that of a boy."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"No, no,\" she said, in answer to Laura's question. \"They would come in here; they wouldn't wait outside--not on such a cold night as this. Don't you think so, Aunt Wess'?\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "But Mrs. Wessels, a lean, middle-aged little lady, with a flat, pointed nose, had no suggestions to offer. She disengaged herself from any responsibility in the situation and, while waiting, found a vague amusement in counting the number of people who filtered in single file through the wicket where the tickets were presented. A great, stout gentleman in evening dress, perspiring, his cravatte limp, stood here, tearing the checks from the tickets, and without ceasing, maintaining a continuous outcry that dominated the murmur of the throng:"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"Have your tickets ready, please! Have your tickets ready.\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"Such a crowd,\" murmured Page. \"Did you ever see--and every one you ever knew or heard of. And such toilettes!\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "With every instant the number of people increased; progress became impossible, except an inch at a time. The women were, almost without exception, in light-coloured gowns, white, pale blue, Nile green, and pink, while over these costumes were thrown opera cloaks and capes of astonishing complexity and elaborateness. Nearly all were bare-headed, and nearly all wore aigrettes; a score of these, a hundred of them, nodded and vibrated with an incessant agitation over the heads of the crowd and flashed like mica flakes as the wearers moved. Everywhere the eye was arrested by the luxury of stuffs, the brilliance and delicacy of fabrics, laces as white and soft as froth, crisp, shining silks, suave satins, heavy gleaming velvets, and brocades and plushes, nearly all of them white--violently so--dazzling and splendid under the blaze of the electrics. The gentlemen, in long, black overcoats, and satin mufflers, and opera hats; their hands under the elbows of their women-folk, urged or guided them forward, distressed, preoccupied, adjuring their parties to keep together; in their white-gloved fingers they held their tickets ready. For all the icy blasts that burst occasionally through the storm doors, the vestibule was uncomfortably warm, and into this steam-heated atmosphere a multitude of heavy odours exhaled--the scent of crushed flowers, of perfume, of sachet, and even--occasionally--the strong smell of damp seal-skin."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Outside it was bitterly cold. All day a freezing wind had blown from off the Lake, and since five in the afternoon a fine powder of snow had been falling. The coachmen on the boxes of the carriages that succeeded one another in an interminable line before the entrance of the theatre, were swathed to the eyes in furs. The spume and froth froze on the bits of the horses, and the carriage wheels crunching through the dry, frozen snow gave off a shrill staccato whine. Yet for all this, a crowd had collected about the awning on the sidewalk, and even upon the opposite side of the street, peeping and peering from behind the broad shoulders of policemen--a crowd of miserables, shivering in rags and tattered comforters, who found, nevertheless, an unexplainable satisfaction in watching this prolonged defile of millionaires."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "So great was the concourse of teams, that two blocks distant from the theatre they were obliged to fall into line, advancing only at intervals, and from door to door of the carriages thus immobilised ran a score of young men, their arms encumbered with pamphlets, shouting: \"Score books, score books and librettos; score books with photographs of all the artists.\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "However, in the vestibule the press was thinning out. It was understood that the overture had begun. Other people who were waiting like Laura and her sister had been joined by their friends and had gone inside. Laura, for whom this opera night had been an event, a thing desired and anticipated with all the eagerness of a girl who had lived for twenty-two years in a second-class town of central Massachusetts, was in great distress. She had never seen Grand Opera, she would not have missed a note, and now she was in a fair way to lose the whole overture."
+    }
+  ]
+}

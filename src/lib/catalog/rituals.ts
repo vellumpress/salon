@@ -63,7 +63,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   buddenbrooks:
     "“And--and--what comes next?” Lübeck, the Mengstrasse house, Part One, Chapter I. This bind is the whole Lowe-Porter text of PG 72961. The novel continues.",
   "miss-lulu-bett":
-    "The Deacons were at supper. A tulip plant under a gas jet — April, a Midwest household. Open there; the year continues through September.",
+    "The Deacons were at supper. A tulip under the gas jet, and creamed salmon. Chapter I, April — a Midwest house. Skip the contents. Gale’s novel, inventory Appleton 1920 / the 1921 header. Soft Midwest is new. Inventory is easy. No score is invented for this sit. The For you seat stays.",
   color:
     "I doubt not God is good, well-meaning, kind. Open Yet Do I Marvel, then Incident — a Baltimore memory that speaks a slur; warn the room before that poem. Each poem is its own chapter; the book continues.",
   "songs-of-innocence-and-of-experience":
@@ -351,6 +351,14 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `A lonely schloss in Styria. A teenage narrator with too few neighbors. And a childhood night she still can’t forget—a pretty face at the bedside, then a pain like needles. Sheridan Le Fanu’s gothic novella (serialized 1871–72; collected 1872) opens on solitude and that first fright, before any carriage has rolled in.`,
   "hungry-hearts":
     `My heart chokes in me like in a prison. This sit is Wings only — a janitor’s basement on a May Sunday. Skip the contents, the other tales, and the dedication. Yezierska’s 1920 collection. One tale this sit; the book continues. The Lower East Side is not Laos.`,
+  "the-sport-of-the-gods":
+    `Fiction has said so much in regret of the old days when there were plantations and overseers and masters and slaves. Chapter I, The Hamiltons — the Berry cottage, the Oakley mansion, and a butler’s dignity. Skip the contents. This timed sit stops before the New York chapters. Dunbar’s 1902 novel. The book continues north. Soft Southern Oakley is not Wilmington after Marrow. The Host stays in the South, after Wings on the Lower East Side. Inventory is medium. No score is invented for this sit. The lead stays this book.`,
+  ramuntcho:
+    `The sad curlews, annunciators of the autumn, had just appeared in a mass in a gray squall. Part I, Chapter I — the Bidassoa, the moss path, and rope soles. Skip the produced-by credit. Loti, in Henri Pene du Bois’s English, French 1897. No English year is invented. Soft Basque is not Saumur, not the Orne, and not Paris. Inventory is easy — do not inflate it. There is no For you seat to keep.`,
+  "the-pit":
+    `At eight o’clock in the inner vestibule of the Auditorium Theatre, Laura Dearborn waits. Chapter I — a Chicago February draught. Skip the list of principal characters, the trilogy note, and the dedication. Norris’s 1903 novel. Soft Chicago is new. Inventory is medium. No score is invented for this sit.`,
+  reginald:
+    `I did it—I who should have known better. This sit is the title sketch only — the McKillop garden-party. Skip the contents and the other sketches. Saki’s 1904 book. One sketch this sit; the cycle continues. Soft London, carefully. Inventory is easy. No score is invented for this sit.`,
   "in-our-time":
     `A drunk battery on a dark road—then a Michigan lake at dawn, and Nick Adams in a rowboat with his father. Ernest Hemingway’s 1925 American collection opens with a war vignette snapped against “Indian Camp”: spare sentences, long silences, the method already underway.`,
   botchan:
@@ -928,6 +936,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-four-horsemen-of-the-apocalypse",
       "after-the-divorce",
       "virgin-soil",
+      // Mira Sun 27 Sep 2026 POST-#170 CLEAR — The Sport of the Gods leads. Never Featured.
+      // Earlier Miss Lulu Bett, The Pit, and Ramuntcho seats stay. Reginald is Waking up.
+      "the-sport-of-the-gods",
+      "ramuntcho",
+      "miss-lulu-bett",
+      "the-pit",
     ],
   },
   {
@@ -998,6 +1012,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "laos-folk-lore",
       // Mira Sun 27 Sep 2026 POST-#169 CLEAR — Wings only. Not the other tales.
       "hungry-hearts",
+      // Mira Sun 27 Sep 2026 POST-#170 CLEAR — Reginald title sketch only. Not the other sketches.
+      "reginald",
     ],
   },
   {
@@ -1109,6 +1125,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-four-horsemen-of-the-apocalypse",
       "after-the-divorce",
       "virgin-soil",
+      // Mira Sun 27 Sep 2026 POST-#170 CLEAR — The Sport of the Gods leads. Never Featured.
+      "the-sport-of-the-gods",
+      "ramuntcho",
+      "miss-lulu-bett",
+      "the-pit",
     ],
   },
   {
@@ -1219,6 +1240,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-four-horsemen-of-the-apocalypse",
       "after-the-divorce",
       "virgin-soil",
+      // Mira Sun 27 Sep 2026 POST-#170 CLEAR — The Sport of the Gods leads. Never Featured.
+      "the-sport-of-the-gods",
+      "ramuntcho",
+      "miss-lulu-bett",
+      "the-pit",
     ],
   },
   {
@@ -1347,7 +1373,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "there-is-confusion": 8,
   "pointed-roofs": 4,
   buddenbrooks: 5,
-  "miss-lulu-bett": 5,
+  "miss-lulu-bett": 6,
   color: 5,
   "a-diversity-of-creatures": 5,
   "an-american-tragedy": 5,
@@ -1390,7 +1416,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-man-of-property": 7,
   "the-napoleon-of-notting-hill": 5,
   "the-party-and-other-stories": 5,
-  "the-pit": 5,
+  "the-pit": 6,
+  "the-sport-of-the-gods": 5,
   "the-poison-tree": 5,
   "the-reign-of-greed": 5,
   "the-rise-of-david-levinsky": 5,
@@ -1519,7 +1546,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "on-the-eve": 5,
   "papeis-avulsos": 5,
   "piping-hot": 5,
-  "ramuntcho": 5,
+  "ramuntcho": 8,
+  reginald: 6,
   "smoke": 5,
   "the-fortune-of-the-rougons": 5,
   "the-paying-guest": 5,
