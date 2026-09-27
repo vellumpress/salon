@@ -32,7 +32,7 @@ export const PREFACES: Record<string, string> = {
   "sons-and-lovers":
     "A Nottingham miner’s son cannot leave his mother’s claim on him. Lawrence’s 1913 novel is close, heated, domestic. Sit with the kitchen a moment, then enter.",
   "heart-of-darkness":
-    "A steamer upriver toward a man the company still calls its agent. Conrad’s 1899 novella waits on the Thames before it leaves. Sit with the river first.",
+    "The Nellie, a cruising yawl, lies at Gravesend. The frame turns toward the Congo after the Thames. Conrad’s 1902 novel. The book year is 1902; the serial is 1899. Soft Conrad, carefully. This is not Borneo.",
   "the-time-machine":
     "A machine, a dinner table, and a future split between Eloi and Morlocks. Wells’s 1895 invention starts as talk among friends. Sit with the evening before the first leap.",
   "the-war-of-the-worlds":

@@ -243,7 +243,7 @@ const BLURBS: Record<string, string> = {
   "the-secret-agent":
     "Conrad’s London anarchists, a shop in Soho, and a bomb that lands on the wrong person.",
   "heart-of-darkness":
-    "A steamer upriver toward a man the company still calls its agent.",
+    "The Nellie lies at Gravesend, and the frame turns toward the Congo.",
   "the-island-of-doctor-moreau":
     "A Pacific island where a doctor teaches beasts to walk like men.",
   "the-time-machine":
@@ -712,6 +712,10 @@ const BLURBS: Record<string, string> = {
   "numa-roumestan": "A scorching Sunday in July fills the ancient amphitheatre at Aps for the yearly competitions.",
   dracula: "On 3 May the journal leaves Munich for Bistritz, with paprika still ahead.",
   "the-tug-of-love": "Elias Goldenberg, the head cutter, is betrothed to Fanny Fersht, and Sugarman is the exception.",
+  "the-house-of-the-seven-gables": "Halfway down a New England by-street, a rusty house keeps seven gables and the Pyncheon Elm.",
+  "toilers-of-the-sea": "Christmas snow falls on Guernsey, from St. Peter’s Port toward Vale.",
+  "indian-summer": "Midway on the Ponte Vecchio, Colville looks along the yellow Arno.",
+  "a-slav-soul": "Memory walks back to childhood, to Yasha, Matsko, and Bouton.",
   "esther-waters": "She stood on the platform watching the receding train, in a faded yellow dress.",
   "south-wind": "The bishop is confoundedly sea-sick on the way to Nepenthe.",
   "the-village": "The Krasoffs’ great-grandfather, called the Gipsy, was hunted with wolf-hounds.",

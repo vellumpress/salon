@@ -276,6 +276,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Théophile Gautier",
     "Tristan Corbière",
     "Victor Hugo",
+    "Victor Hugo (trans. W. Moy Thomas)",
     "Voltaire",
     "Villiers de l'Isle-Adam",
     "Émile Nolly",
@@ -304,6 +305,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
   ],
   Russia: [
     "A. I. Kuprin",
+    "A. I. Kuprin (trans. Rosa Savary Graham)",
     "Aleksandr Kuprin",
     "Alexander Pushkin",
     "Andrei Bely",
@@ -820,6 +822,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "the-toys-of-peace": "United Kingdom",
   "captains-courageous": "United Kingdom",
   "the-tug-of-love": "United Kingdom",
+  "a-slav-soul": "Russia",
   "dauber": "United Kingdom",
   "eugenie-grandet": "France",
   "in-a-glass-darkly": "Ireland",

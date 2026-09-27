@@ -2256,7 +2256,7 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     "the-way-of-all-flesh": { gutenberg: 2084, form: "novel", scenes: 86, breaths: 1509 },
     "the-wild-knight-and-other-poems": { gutenberg: 12037, form: "poem", scenes: 27, breaths: 497 },
     underwoods: { gutenberg: 438, form: "poem", scenes: 54, breaths: 279 },
-    "a-slav-soul": { gutenberg: 57036, form: "stories", scenes: 15, breaths: 1399 },
+    "a-slav-soul": { gutenberg: 57036, form: "stories", scenes: 1, breaths: 63 },
     "aarons-rod": { gutenberg: 4520, form: "novel", scenes: 21, breaths: 3715 },
     "captains-courageous": { gutenberg: 2225, form: "novel", scenes: 10, breaths: 1286 },
     "casanovas-homecoming": { gutenberg: 9310, form: "novel", scenes: 12, breaths: 550 },
@@ -2282,10 +2282,11 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     assert.equal(work!.gutenberg, want.gutenberg, id);
     assert.equal(work!.breaths, want.breaths, id);
     const seatedOnNext = id === "daisy-miller" || id === "ditte-girl-alive" || id === "erewhon" || id === "cosmopolis" || id === "captains-courageous";
+    const hostOpen = seatedOnNext || id === "a-slav-soul";
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), seatedOnNext, id);
     assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
-    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), seatedOnNext, id);
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), hostOpen, id);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /Featured|cold-open/i, id);
     const full = textWork(id);
     assert.equal(full.scenes.length, want.scenes, id);
