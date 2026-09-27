@@ -1,0 +1,76 @@
+{
+  "id": "family-at-gilje",
+  "title": "The Family at Gilje",
+  "author": "Jonas Lie (trans. Samuel Coffin Eastman)",
+  "year": "1883",
+  "note": "Project Gutenberg 55646. Host: Chapter I — clear cold mountain afternoon / Christmas snow / captain’s house (Olson Introduction / Preface skipped). Year 1883 (NO; Eastman EN 1920). Samuel Coffin Eastman from PG About only — ship Eastman EN 55646 only. Inventory 78 medium. Soft Norway carefully ≠ Bojer Great Hunger / Hamsun Hunger.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Norway",
+      "place": "Chapter I · Norway",
+      "reentry": "It was a clear, cold afternoon in the mountain region. The air lay blue with the frost, with light rose tints over all the sharp crests, ravines, and peaks, which, like a series of gigantic drifts, to",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was a clear, cold afternoon in the mountain region. The air lay blue with the frost, with light rose tints over all the sharp crests, ravines, and peaks, which, like a series of gigantic drifts, tower above tower, floated up towards the horizon. Below, hills and wooded mountain slopes shut the region in with white walls, constantly narrower and narrower, nearer and nearer, always more contracting."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The snow was late this year, but in return, now that the Christmas season had come, lay so heavy on fir and spruce that it bent down both needles and twigs. The groves of birches stood up to their waists in snow; the small clusters of tile-roofed houses of the district were half buried, with snow-drifts pressing down over the roofs. The entrances to the farmyards were deeply dug paths, from which the gate and fence posts stuck up here and there like the masts of sunken boats."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The snow-plough had recently gone through the highway, and on the steep red-tiled roof of the captain's house men were busy shovelling down the great frozen snow-drifts, which hung threatening over the ends of the roof."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The captain's house was specially prominent in the district. It was unpainted and built of square logs, like the greater part of that kind of houses a generation ago."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Over the garden fence and almost up under the window-frames lay the snow-drifts with tracks of sleds and skis in their icy crust, which smoked a little in the frosty north wind under the sun."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "It was the same cold, disagreeable north wind which, every time the outer door was opened, blew against the kitchen door until that opened too, and, if it was not closed again, soon after, one or another door on the next floor,--and that made the captain come down from his office, flushed and passionate, to make inquiries and fret and fume over the whole house as to who had gone there first and who had gone last. He could never understand why they did not keep the door shut, though the matter was most easily to be understood,--for the latch was old and loose, and the captain would never spend any money on the smith for a new one."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "In the common room below, between the sofa and the stove, the captain's wife, in an old brown linsey-woolsey dress, sat sewing. She had a tall, stiff figure, and a strong, but gaunt, dried-up face, and had the appearance of being anxiously occupied at present by an intricate problem--the possibility of again being able to put a new durable patch on the seat of Jörgen's trousers; they were always bottomless--almost to desperation."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "She had just seized the opportunity for this, while Jäger was up in his office, and the children were gone to the post-office; for she went about all day long like a horse grinding clay in a brickyard."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "The mahogany sewing-table inlaid with mother-of-pearl and several different kinds of wood, which stood open before her, must have been a family heirloom; in its condition of faded antiquity, it reminded one not a little of her, and in any event did not at all correspond either with the high-backed, rickety, leather armchair, studded with brass nails, in which she sat, nor with the long birchen sofa covered with green linsey-woolsey, which stood like a solitary deserted land against the wall, and seemed to look longingly over to the brown, narrow folding-table, which, with its leaves let down, stood equally solitary and abandoned between the two windows."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "The brown case with the four straight legs against the farther wall, with a heap of papers, books, hats, and the spy-glass upon it, was an old clavichord, which, with great trouble, she had had transported up into the mountain region, out of the effects of her home, and on which she had faithfully practised with her children the same pieces which she herself had learned."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "The immense every-day room, with the bare timber walls, the unpainted sanded floor, and the small panes with short curtains fastened up in the middle, was in its whole extent extremely scantily furnished; it was half a mile from chair to chair, and everything had a rural meagreness such as one could often see in the homes of officials in the mountain districts in the forties. In the middle of the inner wall, before the great white fire-wall, the antique stove with the Naes iron-works stamp and the knotty wooden logs under it jutted out into the room like a mighty giant. Indeed, nothing less than such a mass of iron was needed to succeed in warming up the room; and in the woods of the captain's farm there was plenty of fuel."
+    }
+  ]
+}

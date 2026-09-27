@@ -192,6 +192,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-job": { label: "Panama, Pennsylvania", region: "us" },
   "reign-of-greed": { label: "Pasig", region: "ph" },
   "a-cross-line": { label: "England", region: "gb" },
+  "shadow-of-the-cathedral": { label: "Toledo", region: "es" },
+  "way-of-all-flesh": { label: "England", region: "gb" },
+  "family-at-gilje": { label: "Norway", region: "no" },
+  resurrection: { label: "Russia", region: "ru" },
+  widdershins: { label: "England", region: "gb" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples
