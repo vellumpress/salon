@@ -369,6 +369,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `The Foote Girls were bustling along Margate Street. Chapter I, The Back Way — Do come on, Rebecca, and the Lane white house. Skip the verse epigraph. The Host opens in New England before Colorado. Charlotte Perkins Gilman’s 1911 novel. Soft New England moving toward Colorado, carefully. Inventory is easy. No score is invented for this sit.`,
   "the-black-dog":
     `Having pocketed his fare, the freckled rustic takes the old cab back to the village. This sit is the title tale only — the one-eyed porter, July noon, Loughlin. Skip the contents and the other tales. A. E. Coppard’s 1923 book. One tale this sit; the cycle continues. Soft England village, carefully, after Reginald. Inventory is medium. No score is invented for this sit.`,
+  "daisy-miller":
+    `At the little town of Vevey, in Switzerland, there is a particularly comfortable hotel. Opening — lake hotels, Winterbourne, and the American tourist climate. Skip the produced-by credit. The Host opens in Vevey; Rome comes later in the book. Henry James’s 1878 novella. Soft Switzerland clears a harder place after Sicily and Sardinia. The lead is this book, not South Wind. Inventory is easy. No score is invented for this sit.`,
+  "south-wind":
+    `The bishop was feeling rather sea-sick. Chapter I — Bampopo in Africa, then the approach to Nepenthe. Skip the imprint. Norman Douglas’s 1917 novel. Soft Capri is not Sicily and not Sardinia. Notion is medium. Launch shelf is no — do not inflate it.`,
+  "the-village":
+    `The great-grandfather of the Krasoffs, called the Gipsy, was hunted with wolf-hounds. Chapter I — Captain Durnovo and Durnovka. Skip the preface and the imprint. Ivan Bunin, in Isabel Florence Hapgood’s English. Russian 1910, Secker English 1923. Soft village Russia is not Petersburg. Inventory is medium. Later is all right if the sit is grim — do not inflate it. No score is invented for this sit.`,
+  "ditte-girl-alive":
+    `It has always been considered a sign of good birth to count one’s ancestors for centuries back. Chapter I, Ditte’s Family Tree — Ditte Child o’ Man stood at the top of the tree. Skip the contents. Martin Andersen Nexø, in Asta and Rowland Kenney’s English. Danish 1917, Holt English 1920. Soft Denmark is not Mogens. Inventory is medium. No score is invented for this sit.`,
+  "flappers-and-philosophers":
+    `After dark on Saturday night one could stand on the first tee of the golf-course. This sit is Bernice Bobs Her Hair only — yellow club windows and the wicker balcony. Skip the contents and the other tales. F. Scott Fitzgerald’s 1920 book. One tale this sit; the cycle continues. Soft Jazz Age America, carefully, after The Black Dog and Reginald. Notion is easy. Launch shelf is no.`,
   "in-our-time":
     `A drunk battery on a dark road—then a Michigan lake at dawn, and Nick Adams in a rowboat with his father. Ernest Hemingway’s 1925 American collection opens with a war vignette snapped against “Indian Camp”: spare sentences, long silences, the method already underway.`,
   botchan:
@@ -959,6 +969,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "ramona",
       "almayers-folly",
       "the-crux",
+      // Mira Sun 27 Sep 2026 POST-#172 CLEAR — Daisy Miller leads. Never Featured.
+      // LEAD SWAP — not South Wind. Earlier Village seat stays.
+      // Flappers and Philosophers is Waking up (Bernice only).
+      "daisy-miller",
+      "south-wind",
+      "the-village",
+      "ditte-girl-alive",
     ],
   },
   {
@@ -1033,6 +1050,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "reginald",
       // Mira Sun 27 Sep 2026 POST-#171 CLEAR — The Black Dog title tale only. Not the other tales.
       "the-black-dog",
+      // Mira Sun 27 Sep 2026 POST-#172 CLEAR — Bernice Bobs Her Hair only. Not the other tales.
+      "flappers-and-philosophers",
     ],
   },
   {
@@ -1155,6 +1174,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "ramona",
       "almayers-folly",
       "the-crux",
+      // Mira Sun 27 Sep 2026 POST-#172 CLEAR — Daisy Miller leads. Never Featured.
+      // LEAD SWAP — not South Wind. Flappers and Philosophers is Waking up.
+      "daisy-miller",
+      "south-wind",
+      "the-village",
+      "ditte-girl-alive",
     ],
   },
   {
@@ -1276,6 +1301,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "ramona",
       "almayers-folly",
       "the-crux",
+      // Mira Sun 27 Sep 2026 POST-#172 CLEAR — Daisy Miller leads. Never Featured.
+      // LEAD SWAP — not South Wind. Flappers and Philosophers is Waking up.
+      "daisy-miller",
+      "south-wind",
+      "the-village",
+      "ditte-girl-alive",
     ],
   },
   {
@@ -1460,7 +1491,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-titan": 5,
   "the-town-down-the-river": 5,
   "the-veil-and-other-poems": 5,
-  "the-village": 5,
+  "the-village": 6,
+  "daisy-miller": 6,
+  "south-wind": 7,
+  "ditte-girl-alive": 9,
+  "flappers-and-philosophers": 12,
   "the-wolves-of-god": 5,
   "the-wonderful-adventures-of-nils": 5,
   "theresa-raquin": 5,

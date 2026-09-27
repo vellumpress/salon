@@ -928,6 +928,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "ramona",
   "almayers-folly",
   "the-crux",
+  // Mira Sun 27 Sep 2026 POST-#172 CLEAR — Daisy Miller leads Next. Never Featured.
+  // LEAD SWAP — not South Wind. Earlier Village seat stays. Flappers and
+  // Philosophers is Rituals (Bernice Bobs Her Hair only), not this tail.
+  // Sun POST-#171 Royal Highness and the earlier packs stay ahead.
+  "daisy-miller",
+  "south-wind",
+  "the-village",
+  "ditte-girl-alive",
 ] as const;
 
 /**
