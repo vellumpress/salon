@@ -1,0 +1,191 @@
+{
+  "id": "captains-courageous",
+  "title": "Captains Courageous",
+  "author": "Rudyard Kipling",
+  "year": "1897",
+  "note": "Project Gutenberg 2225. Host: Ch I — weather door / North Atlantic fog / Cheyne boy (Produced-by skipped). Year 1897. Inventory 84 easy. Soft Grand Banks carefully ≠ Melville naval / Kim / Quebec.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Grand Banks / Newfoundland",
+      "place": "Chapter I · Grand Banks / Newfoundland",
+      "reentry": "The weather door of the smoking-room had been left open to the North Atlantic fog, as the big liner rolled and lifted, whistling to warn the fishing-fleet.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The weather door of the smoking-room had been left open to the North Atlantic fog, as the big liner rolled and lifted, whistling to warn the fishing-fleet."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"That Cheyne boy's the biggest nuisance aboard,\" said a man in a frieze overcoat, shutting the door with a bang. \"He isn't wanted here. He's too fresh.\""
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "A white-haired German reached for a sandwich, and grunted between bites: \"I know der breed. Ameriga is full of dot kind. I dell you you should imbort ropes' ends free under your dariff.\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Pshaw! There isn't any real harm to him. He's more to be pitied than anything,\" a man from New York drawled, as he lay at full length along the cushions under the wet skylight. \"They've dragged him around from hotel to hotel ever since he was a kid. I was talking to his mother this morning. She's a lovely lady, but she don't pretend to manage him. He's going to Europe to finish his education.\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"Education isn't begun yet.\" This was a Philadelphian, curled up in a corner. \"That boy gets two hundred a month pocket-money, he told me. He isn't sixteen either.\""
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Railroads, his father, aind't it?\" said the German."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Yep. That and mines and lumber and shipping. Built one place at San Diego, the old man has; another at Los Angeles; owns half a dozen railroads, half the lumber on the Pacific slope, and lets his wife spend the money,\" the Philadelphian went on lazily. \"The West don't suit her, she says. She just tracks around with the boy and her nerves, trying to find out what'll amuse him, I guess. Florida, Adirondacks, Lakewood, Hot Springs, New York, and round again. He isn't much more than a second-hand hotel clerk now. When he's finished in Europe he'll be a holy terror.\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"What's the matter with the old man attending to him personally?\" said a voice from the frieze ulster."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"Old man's piling up the rocks. 'Don't want to be disturbed, I guess. He'll find out his error a few years from now. 'Pity, because there's a heap of good in the boy if you could get at it.\""
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"Mit a rope's end; mit a rope's end!\" growled the German."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Once more the door banged, and a slight, slim-built boy perhaps fifteen years old, a half-smoked cigarette hanging from one corner of his mouth, leaned in over the high footway. His pasty yellow complexion did not show well on a person of his years, and his look was a mixture of irresolution, bravado, and very cheap smartness. He was dressed in a cherry-coloured blazer, knickerbockers, red stockings, and bicycle shoes, with a red flannel cap at the back of the head. After whistling between his teeth, as he eyed the company, he said in a loud, high voice: \"Say, it's thick outside. You can hear the fish-boats squawking all around us. Say, wouldn't it be great if we ran down one?\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"Shut the door, Harvey,\" said the New Yorker. \"Shut the door and stay outside. You're not wanted here.\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"Who'll stop me?\" he answered deliberately. \"Did you pay for my passage, Mister Martin? 'Guess I've as good right here as the next man.\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "He picked up some dice from a checker-board and began throwing, right hand against left."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"Say, gen'elmen, this is deader'n mud. Can't we make a game of poker between us?\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "There was no answer, and he puffed his cigarette, swung his legs, and drummed on the table with rather dirty fingers. Then he pulled out a roll of bills as if to count them."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"How's your mamma this afternoon?\" a man said. \"I didn't see her at lunch.\""
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"In her state-room, I guess. She's 'most always sick on the ocean. I'm going to give the stewardess fifteen dollars for looking after her. I don't go down more 'n I can avoid. It makes me feel mysterious to pass that butler's-pantry place. Say, this is the first time I've been on the ocean.\""
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"Oh, don't apologise, Harvey.\""
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"Who's apologising? This is the first time I've crossed the ocean, gen'elmen, and, except the first day, I haven't been sick one little bit. No, sir!\" He brought down his fist with a triumphant bang, wetted his finger, and went on counting the bills."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"Oh, you're a high-grade machine, with the writing in plain sight,\" the Philadelphian yawned. \"You'll blossom into a credit to your country if you don't take care.\""
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"I know it. I'm an American--first, last, and all the time. I'll show 'em that when I strike Europe. Pif! My cig's out. I can't smoke the truck the steward sells. Any gen'elman got a real Turkish cig on him?\""
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "The chief engineer entered for a moment, red, smiling, and wet. \"Say, Mac,\" cried Harvey, cheerfully, \"how are we hitting it?\""
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"Vara much in the ordinary way,\" was the grave reply. \"The young are as polite as ever to their elders, an' their elders are e'en tryin' to appreciate it.\""
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "A low chuckle came from a corner. The German opened his cigar-case and handed a skinny black cigar to Harvey."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"Dot is der broper apparatus to smoke, my young friendt,\" he said. \"You vill dry it? Yes? Den you vill be efer so happy.\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "Harvey lit the unlovely thing with a flourish: he felt that he was getting on in grown-up society."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "\"It would take more 'n this to keel me over,\" he said, ignorant that he was lighting that terrible article, a Wheeling 'stogie'."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "\"Dot we shall bresently see,\" said the German. \"Where are we now, Mr. Mactonal'?\""
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"Just there or thereabouts, Mr. Schaefer,\" said the engineer. \"We'll be on the Grand Bank to-night; but in a general way o' speakin', we're all among the fishing-fleet now. We've shaved three dories an' near skelped the boom off a Frenchman since noon, an' that's close sailin', ye may say.\""
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "\"You like my cigar, eh?\" the German asked, for Harvey's eyes were full of tears."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "\"Fine, full flavour,\" he answered through shut teeth. \"Guess we've slowed down a little, haven't we? I'll skip out and see what the log says.\""
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "\"I might if I vhas you,\" said the German."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "Harvey staggered over the wet decks to the nearest rail. He was very unhappy; but he saw the deck-steward lashing chairs together, and, since he had boasted before the man that he was never seasick, his pride made him go aft to the second-saloon deck at the stern, which was finished in a turtle-back. The deck was deserted, and he crawled to the extreme end of it, near the flagpole. There he doubled up in limp agony, for the Wheeling \"stogie\" joined with the surge and jar of the screw to sieve out his soul. His head swelled; sparks of fire danced before his eyes; his body seemed to lose weight, while his heels wavered in the breeze. He was fainting from seasickness, and a roll of the ship tilted him over the rail on to the smooth lip of the turtle-back. Then a low, grey mother-wave swung out of the fog, tucked Harvey under one arm, so to speak, and pulled him off and away to leeward; the great green closed over him, and he went quietly to sleep."
+    }
+  ]
+}

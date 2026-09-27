@@ -96,8 +96,6 @@ const BLURBS: Record<string, string> = {
     "Wilde’s beautiful face stays young while the portrait keeps the score.",
   bovary:
     "Provincial longing, debt, and the romance novels that ruin a life.",
-  dracula:
-    "Letters and journals track a count who crosses into England hungry.",
   anna: "Passion against the grain of society — and the train that waits at the end.",
   underground:
     "A spiteful man talks himself into a corner and will not leave.",
@@ -709,6 +707,11 @@ const BLURBS: Record<string, string> = {
   "the-king-of-schnorrers": "Lord George Gordon’s London opens on a synagogue stream, a canvas bag, and spring sunshine.",
   hania: "Old Mikolai’s death-bed leaves Hania to a sixteen-year-old’s conscience, with snow on the wind.",
   "the-toys-of-peace": "Eleanor Bope hands her brother a morning-paper cutting about children’s toys and the National Peace Council.",
+  "tess-of-the-durbervilles": "A May evening walk from Shaston toward Marlott, and a parson who calls the haggler Sir John.",
+  "captains-courageous": "The weather door of the smoking-room stands open to the North Atlantic fog as the liner rolls.",
+  "numa-roumestan": "A scorching Sunday in July fills the ancient amphitheatre at Aps for the yearly competitions.",
+  dracula: "On 3 May the journal leaves Munich for Bistritz, with paprika still ahead.",
+  "the-tug-of-love": "Elias Goldenberg, the head cutter, is betrothed to Fanny Fersht, and Sugarman is the exception.",
   "esther-waters": "She stood on the platform watching the receding train, in a faded yellow dress.",
   "south-wind": "The bishop is confoundedly sea-sick on the way to Nepenthe.",
   "the-village": "The Krasoffs’ great-grandfather, called the Gipsy, was hunted with wolf-hounds.",

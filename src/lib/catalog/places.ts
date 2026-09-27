@@ -32,7 +32,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   bovary: { label: "France", region: "fr" },
   odessa: { label: "Odessa", region: "ua" },
   naomi: { label: "Tokyo", region: "jp" },
-  dracula: { label: "England", region: "gb" },
+  dracula: { label: "Transylvania", region: "ro" },
   gold: { label: "New York", region: "us" },
 
   // Locked recommend order (live front door)
@@ -178,6 +178,10 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-king-of-schnorrers": { label: "London Sephardi", region: "gb" },
   hania: { label: "Poland", region: "pl" },
   "the-toys-of-peace": { label: "England", region: "gb" },
+  "tess-of-the-durbervilles": { label: "Wessex", region: "gb" },
+  "captains-courageous": { label: "Grand Banks", region: "ca" },
+  "numa-roumestan": { label: "Provence", region: "fr" },
+  "the-tug-of-love": { label: "Jewish workshop", region: "gb" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples

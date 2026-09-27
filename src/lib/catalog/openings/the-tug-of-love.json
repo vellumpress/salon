@@ -1,0 +1,476 @@
+{
+  "id": "the-tug-of-love",
+  "title": "The Tug of Love",
+  "author": "Israel Zangwill",
+  "year": "1907",
+  "note": "Project Gutenberg 28982. Host-only seat — ***The Tug of Love*** only (ads / Contents / other stories skipped). Elias / Fanny / Sugarman / ring. Stop at sketch end. Year 1907. Inventory 88 medium. Soft Zangwill Rituals carefully ≠ Schnorrers.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "The Tug of Love · Jewish workshop",
+      "place": "The Tug of Love · Jewish workshop",
+      "reentry": "When Elias Goldenberg, Belcovitch's head cutter, betrothed himself to Fanny Fersht, the prettiest of the machinists, the Ghetto blessed the match, always excepting Sugarman the *Shadchan* (whom love m",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "When Elias Goldenberg, Belcovitch's head cutter, betrothed himself to Fanny Fersht, the prettiest of the machinists, the Ghetto blessed the match, always excepting Sugarman the *Shadchan* (whom love matches shocked), and Goldenberg's relatives (who considered Fanny flighty and fond of finery)."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "'That Fanny of yours was cut out for a rich man's wife,' insisted Goldenberg's aunt, shaking her pious wig."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "'He who marries Fanny *is* rich,' retorted Elias."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "'\"Pawn your hide, but get a bride,\"' quoted the old lady savagely."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "As for the slighted marriage-broker, he remonstrated almost like a relative."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "'But I didn't want a negotiated marriage,' Elias protested."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "'A love marriage I could also have arranged for you,' replied Sugarman indignantly."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "But Elias was quite content with his own arrangement, for Fanny's glance was melting and her touch transporting. To deck that soft warm hand with an engagement-ring, a month's wages had not seemed disproportionate, and Fanny flashed the diamond bewitchingly. It lit up the gloomy workshop with its signal of felicity. Even Belcovitch, bent over his press-iron, sometimes omitted to rebuke Fanny's badinage."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "The course of true love seemed to run straight to the Canopy--Fanny had already worked the bridegroom's praying shawl--when suddenly a storm broke. At first the cloud was no bigger than a man's hand--in fact, it was a man's hand. Elias espied it groping for Fanny's in the dim space between the two machines. As Fanny's fingers fluttered towards it, her other hand still guiding the cloth under the throbbing needle, Elias felt the needle stabbing his heart up and down, through and through. The very finger that held his costly ring lay in this alien paw gratis."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "The shameless minx! Ah, his relatives were right. He snapped the scissors savagely like a dragon's jaw."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "'Fanny, what dost thou?' he gasped in Yiddish."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Fanny's face flamed; her guilty fingers flew back."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "'I thought thou wast on the other side,' she breathed."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "Elias snorted incredulously."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "As soon as Sugarman heard of the breaking of the engagement he flew to Elias, his blue bandanna streaming from his coat-tail."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "'If you had come to me,' he crowed, 'I should have found you a more reliable article. However, Heaven has given you a second helping. A well-built wage-earner like you can look as high as a greengrocer's daughter even.'"
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "'I never wish to look upon a woman again,' Elias groaned."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "'*Schtuss!*' said the great marriage-broker. 'Three days after the Fast of Atonement comes the Feast of Tabernacles. The Almighty, blessed be He, who created both light and darkness, has made obedient females as well as pleasure-seeking jades.' And he blew his nose emphatically into his bandanna."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "'Yes; but she won't return me my ring,' Elias lamented."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "'What!' Sugarman gasped. 'Then she considers herself still engaged to you.'"
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "'Not at all. She laughs in my face.'"
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "'And she has given you back your promise?'"
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "'My promise--yes. The ring--no.'"
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "'But on what ground?'"
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "'She says I gave it to her.'"
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "Sugarman clucked his tongue. 'Tututu! Better if we had followed our old custom, and the man had worn the engagement-ring, not the woman!'"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "'In the workshop,' Elias went on miserably, 'she flashes it in my eyes. Everybody makes mock. Oh, the Jezebel!'"
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "'I should summons her!'"
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "'It would only cost me more. Is it not true I gave her the ring?'"
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "Sugarman mopped his brow. His vast experience was at fault. No maiden had ever refused to return his client's ring; rather had she flung it in the wooer's false teeth."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "'This comes of your love matches!' he cried sternly. 'Next time there must be a proper contract.'"
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "'Next time!' repeated Elias. 'Why how am I to afford a new ring? Fanny was ruinous in cups of chocolate and the pit of the Pavilion Theatre!'"
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "'I should want my fee down!' said Sugarman sharply."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "Elias shrugged his shoulders. 'If you bring me the ring.'"
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "'I do not get old rings but new maidens,' Sugarman reminded him haughtily. 'However, as you are a customer----' and crying 'Five per cent. on the greengrocer's daughter,' he hurried away ere Elias had time to dissent from the bargain."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "Donning his sealskin vest to overawe the Fershts, Sugarman ploughed his way up the dark staircase to their room. His attire was wasted on the family, for Fanny herself opened the door."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "'Peace to you,' he cried. 'I have come on behalf of Elias Goldenberg.'"
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "'It is useless. I will not have him.' And she was shutting the door. Her misconception, wilful or not, scattered all Sugarman's prepared diplomacies. 'He does not want you, he wants the ring,' he cried hastily."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "Fanny indecorously put a finger to her nose. The diamond glittered mockingly on it. Then she turned away giggling. 'But look at this photograph!' panted Sugarman desperately through the closing door."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "Surprise and curiosity brought her eyes back. She stared at the sheepish features of a frock-coated stranger."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "'Four pounds a week all the year round, head cutter at S. Cohn's,' said Sugarman, pursuing this advantage. 'A good old English family; Benjamin Beckenstein is his name, and he is dying to step into Elias's shoes.'"
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "'His feet are too large!' And she flicked the photograph floorwards with her bediamonded finger."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "'But why waste the engagement-ring?' pleaded Sugarman, stooping to pick up the suitor."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "'What an idea! A new man, a new ring!' And Fanny slammed the door."
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "'Impudence-face! Would you become a jewellery shop?' the baffled *Shadchan* shrieked through the woodwork."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "He returned to Elias, brooding darkly."
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "'Well?' queried Elias."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "'O, your love matches!' And Sugarman shook them away with shuddersome palms."
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "'Then she won't----'"
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "'No, she won't. Ah, how blessed you are to escape from that daughter of Satan! The greengrocer's daughter now----'"
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "'Speak me no more matches. I risk no more rings.'"
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "'I will get you one on the hire system.'"
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "'A maiden?'"
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "'Guard your tongue! A ring, of course.'"
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "Elias shook an obdurate head. 'No. I must have the old ring back.'"
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "'That is impossible--unless you marry her to get it back. Stay! Why should I not arrange that for you?'"
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "'Leave me in peace! Heaven has opened my eyes.'"
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "'Then see how economical she is!' urged Sugarman. 'A maiden who sticks to a ring like that is not likely to be wasteful of your substance.'"
+    },
+    {
+      "id": "sit-0-58",
+      "sceneId": "sit-0",
+      "text": "'You have not seen her swallow \"stuffed monkeys,\"' said Elias grimly. 'Make an end! I have done with her.'"
+    },
+    {
+      "id": "sit-0-59",
+      "sceneId": "sit-0",
+      "text": "'No, you have not! You can still give yourself a counsel.' And Sugarman looked a conscious sphinx. 'You may yet get back the ring.'"
+    },
+    {
+      "id": "sit-0-60",
+      "sceneId": "sit-0",
+      "text": "'How?'"
+    },
+    {
+      "id": "sit-0-61",
+      "sceneId": "sit-0",
+      "text": "'Of course, I have the next disposal of it?' said Sugarman."
+    },
+    {
+      "id": "sit-0-62",
+      "sceneId": "sit-0",
+      "text": "'Yes, yes. Go on.'"
+    },
+    {
+      "id": "sit-0-63",
+      "sceneId": "sit-0",
+      "text": "'To-morrow in the workshop pretend to steal loving glances all day long when she's not looking. When she catches you----'"
+    },
+    {
+      "id": "sit-0-64",
+      "sceneId": "sit-0",
+      "text": "'But she won't be looking!'"
+    },
+    {
+      "id": "sit-0-65",
+      "sceneId": "sit-0",
+      "text": "'Oh, yes, she will. When she catches you, you must blush.'"
+    },
+    {
+      "id": "sit-0-66",
+      "sceneId": "sit-0",
+      "text": "'But I can't blush at will,' Elias protested."
+    },
+    {
+      "id": "sit-0-67",
+      "sceneId": "sit-0",
+      "text": "'I know it is hard. Well, look foolish. That will be easier for you.'"
+    },
+    {
+      "id": "sit-0-68",
+      "sceneId": "sit-0",
+      "text": "'But why shall I look foolish?'"
+    },
+    {
+      "id": "sit-0-69",
+      "sceneId": "sit-0",
+      "text": "'To make her think you are in love with her after all.'"
+    },
+    {
+      "id": "sit-0-70",
+      "sceneId": "sit-0",
+      "text": "'I should look foolish if I were.'"
+    },
+    {
+      "id": "sit-0-71",
+      "sceneId": "sit-0",
+      "text": "'Precisely. That is the idea. When she leaves the workshop in the evening follow her, and as she passes the cake-shop, sigh and ask her if she will not eat a \"stuffed monkey\" for the sake of peace-be-upon-him times.'"
+    },
+    {
+      "id": "sit-0-72",
+      "sceneId": "sit-0",
+      "text": "'But she won't.'"
+    },
+    {
+      "id": "sit-0-73",
+      "sceneId": "sit-0",
+      "text": "'Why not? She is still in love.'"
+    },
+    {
+      "id": "sit-0-74",
+      "sceneId": "sit-0",
+      "text": "'With stuffed monkeys,' said Elias cynically."
+    },
+    {
+      "id": "sit-0-75",
+      "sceneId": "sit-0",
+      "text": "'With you, too.'"
+    },
+    {
+      "id": "sit-0-76",
+      "sceneId": "sit-0",
+      "text": "Elias blushed quite easily. 'How do you know?'"
+    },
+    {
+      "id": "sit-0-77",
+      "sceneId": "sit-0",
+      "text": "'I offered her another man, and she slammed the door in my face!'"
+    },
+    {
+      "id": "sit-0-78",
+      "sceneId": "sit-0",
+      "text": "'You--you offered----' Elias stuttered angrily."
+    },
+    {
+      "id": "sit-0-79",
+      "sceneId": "sit-0",
+      "text": "'Only to test her,' said Sugarman soothingly. He continued: 'Now, when she has eaten the cake and drunk a cup of chocolate, too (for one must play high with such a ring at stake), you must walk on by her side, and when you come to a dark corner, take her hand and say \"My treasure\" or \"My angel,\" or whatever nonsense you modern young men babble to your maidens--with the results you see!--and while she is drinking it all in like more chocolate, her fingers in yours, give a sudden tug, and off comes the ring!'"
+    },
+    {
+      "id": "sit-0-80",
+      "sceneId": "sit-0",
+      "text": "Elias gazed at him in admiration. 'You are as crafty as Jacob, our father.'"
+    },
+    {
+      "id": "sit-0-81",
+      "sceneId": "sit-0",
+      "text": "'Heaven has not denied everybody brains,' replied Sugarman modestly. 'Be careful to seize the left hand.'"
+    },
+    {
+      "id": "sit-0-82",
+      "sceneId": "sit-0",
+      "text": "The admiring Elias followed the scheme to the letter."
+    },
+    {
+      "id": "sit-0-83",
+      "sceneId": "sit-0",
+      "text": "Even the blush he had boggled at came to his cheeks punctually whenever his sheep's-eyes met Fanny's. He was so surprised to find his face burning that he looked foolish into the bargain."
+    },
+    {
+      "id": "sit-0-84",
+      "sceneId": "sit-0",
+      "text": "They dallied long in the cake-shop, Elias trying to summon up courage for the final feint. He would get a good grip on the ring finger. The tug-of-war should be brief."
+    },
+    {
+      "id": "sit-0-85",
+      "sceneId": "sit-0",
+      "text": "Meantime the couple clinked chocolate cups, and smiled into each other's eyes."
+    },
+    {
+      "id": "sit-0-86",
+      "sceneId": "sit-0",
+      "text": "'The good-for-nothing!' thought Elias hotly. 'She will make the same eyes at the next man.'"
+    },
+    {
+      "id": "sit-0-87",
+      "sceneId": "sit-0",
+      "text": "And he went on gorging her, every speculative 'stuffed monkey' increasing his nervous tension. Her white teeth, biting recklessly into the cake, made him itch to slap her rosy cheek. Confectionery palled at last, and Fanny led the way out. Elias followed, chattering with feverish gaiety. Gradually he drew up even with her."
+    },
+    {
+      "id": "sit-0-88",
+      "sceneId": "sit-0",
+      "text": "They turned down the deserted Fishmonger's Alley, lit by one dull gas-lamp. Elias's limbs began to tremble with the excitement of the critical moment. He felt like a footpad. Hither and thither he peered--nobody was about. But--was he on the right side of her? 'The right is the left,' he told himself, trying to smile, but his pulses thumped, and in the tumult of heart and brain he was not sure he knew her right hand from her left. Fortunately he caught the glitter of the diamond in the gloom, and instinctively his robber hand closed upon it."
+    },
+    {
+      "id": "sit-0-89",
+      "sceneId": "sit-0",
+      "text": "But as he felt the warm responsive clasp of those soft fingers, that ancient delicious thrill pierced every vein. Fool that he had been to doubt that dear hand! And it was wearing his ring still--she could not part with it! O blundering male ingrate!"
+    },
+    {
+      "id": "sit-0-90",
+      "sceneId": "sit-0",
+      "text": "'My treasure! My angel!' he murmured ecstatically."
+    }
+  ]
+}

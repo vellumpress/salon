@@ -323,6 +323,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `When old Mikolai on his death-bed left Hania to my guardianship and conscience. This sit is the Hania novella only — Chapter I, a Byzantine chapel, and snow on the wind. Skip the Prologue and the other pieces. Henryk Sienkiewicz, in Jeremiah Curtin’s English, Polish 1876 / English 1897. Soft Poland, carefully. This is not The Peasants. Inventory is medium. No score is invented for this sit.`,
   "the-toys-of-peace":
     `Harvey, said Eleanor Bope, handing her brother a cutting from a London morning paper. This sit is The Toys of Peace only — the National Peace Council and the peace toys. Skip the memoir, the contents, and the other papers. Stop at the end of the sketch. Saki’s 1919 book. One sketch this sit; the cycle continues. Soft Saki, carefully. This is not Reginald. Inventory is easy. No score is invented for this sit.`,
+  "tess-of-the-durbervilles":
+    `On an evening in the latter part of May a middle-aged man was walking homeward from Shaston to the village of Marlott. Phase the First, Chapter I — the Vale, Sir John, and Durbeyfield. Skip the Prefaces and the Explanatory Note. Thomas Hardy’s 1891 novel. Soft Wessex, carefully. This is not Jude. The lead is this book, not Captains Courageous, not Numa Roumestan, and not Dracula. Inventory 91 is medium. No score is invented for this sit.`,
+  "captains-courageous":
+    `The weather door of the smoking-room had been left open to the North Atlantic fog. Chapter I — the weather door, the fog, and the Cheyne boy. Skip the produced-by credit. Rudyard Kipling’s 1897 novel. Soft Grand Banks, carefully. This is not Melville’s naval fiction, not Kim, and not Quebec. Inventory 84 is easy. No score is invented for this sit.`,
+  "numa-roumestan":
+    `That Sunday was a scorching hot Sunday in July, at the yearly competitions. Chapter I, To the Arena — the amphitheatre at Aps, the July festival, and Numa. Skip the frontispiece copyright notes. Alphonse Daudet, in Charles De Kay’s English, French 1881. Soft Provence, carefully. This is not Cousin Betty’s Paris. Inventory 82 is medium. No score is invented for this sit.`,
+  dracula:
+    `3 May, Bistritz. Left Munich at 8:35 in the evening. Chapter I, Harker’s Journal — Bistritz and paprika hendl. Skip the Contents. The Host opens in Transylvania. Bram Stoker’s 1897 novel. Soft Transylvania, carefully. This is not Eseldorf in Austria. Inventory 81 is easy. No score is invented for this sit.`,
+  "the-tug-of-love":
+    `When Elias Goldenberg, Belcovitch’s head cutter, betrothed himself to Fanny Fersht. This sit is The Tug of Love only — Elias, Fanny, Sugarman, and the ring. Skip the ads, the contents, and the other stories. Stop at the end of the sketch. Israel Zangwill’s 1907 book. One sketch this sit; the cycle continues. Soft Zangwill, carefully. This is not The King of Schnorrers. Inventory 88 is medium. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -649,7 +659,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "salome",
       "salt-water-ballads",
       "songs-and-satires",
-      "tess-of-the-durbervilles",
       "the-ballad-of-the-white-horse",
       "the-book-of-wonder",
       "the-colonel-s-dream",
@@ -734,7 +743,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "indian-summer",
       "les-heures-claires",
       "les-trophees",
-      "numa-roumestan",
       "royal-highness",
       "the-emancipated",
       "the-great-hunger",
@@ -1041,6 +1049,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-sorrows-of-satan",
       "the-king-of-schnorrers",
       "hania",
+      // Mira Sun 27 Sep 2026 POST-#177 CLEAR — Tess of the d’Urbervilles leads. Never Featured.
+      // LEAD kept — not Captains Courageous, not Numa Roumestan, not Dracula.
+      // Earlier before-sleep inventory listings of Tess and Numa move here so the cycle reads in order.
+      // The Tug of Love is Waking up (the title sketch only).
+      "tess-of-the-durbervilles",
+      "captains-courageous",
+      "numa-roumestan",
+      "dracula",
     ],
   },
   {
@@ -1125,6 +1141,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "malay-sketches",
       // Mira Sun 27 Sep 2026 POST-#176 CLEAR — The Toys of Peace sketch only.
       "the-toys-of-peace",
+      // Mira Sun 27 Sep 2026 POST-#177 CLEAR — The Tug of Love sketch only.
+      "the-tug-of-love",
     ],
   },
   {
@@ -1282,6 +1300,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-sorrows-of-satan",
       "the-king-of-schnorrers",
       "hania",
+      // Mira Sun 27 Sep 2026 POST-#177 CLEAR — Tess of the d’Urbervilles leads. Never Featured.
+      // LEAD kept — not Captains Courageous, not Numa Roumestan, not Dracula.
+      // Earlier before-sleep inventory listings of Tess and Numa move here so the cycle reads in order.
+      // The Tug of Love is Waking up (the title sketch only).
+      "tess-of-the-durbervilles",
+      "captains-courageous",
+      "numa-roumestan",
+      "dracula",
     ],
   },
   {
@@ -1438,6 +1464,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-sorrows-of-satan",
       "the-king-of-schnorrers",
       "hania",
+      // Mira Sun 27 Sep 2026 POST-#177 CLEAR — Tess of the d’Urbervilles leads. Never Featured.
+      // LEAD kept — not Captains Courageous, not Numa Roumestan, not Dracula.
+      // Earlier before-sleep inventory listings of Tess and Numa move here so the cycle reads in order.
+      // The Tug of Love is Waking up (the title sketch only).
+      "tess-of-the-durbervilles",
+      "captains-courageous",
+      "numa-roumestan",
+      "dracula",
     ],
   },
   {
@@ -1591,7 +1625,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "salt-water-ballads": 5,
   "small-souls": 7,
   "songs-and-satires": 5,
-  "tess-of-the-durbervilles": 5,
+  "tess-of-the-durbervilles": 6,
   "the-ballad-of-the-white-horse": 5,
   "the-book-of-wonder": 9,
   "the-colonel-s-dream": 5,
@@ -1688,7 +1722,10 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "indian-summer": 5,
   "les-heures-claires": 5,
   "les-trophees": 5,
-  "numa-roumestan": 5,
+  "numa-roumestan": 6,
+  "captains-courageous": 6,
+  dracula: 6,
+  "the-tug-of-love": 8,
   "royal-highness": 4,
   ramona: 6,
   "almayers-folly": 6,

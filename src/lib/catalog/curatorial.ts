@@ -971,6 +971,15 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-sorrows-of-satan",
   "the-king-of-schnorrers",
   "hania",
+  // Mira Sun 27 Sep 2026 POST-#177 CLEAR — Tess of the d’Urbervilles leads Next. Never Featured.
+  // LEAD kept — not Captains Courageous, not Numa Roumestan, not Dracula.
+  // The Tug of Love is Rituals (the title sketch only), not this tail.
+  // Earlier Tess and Numa inventory seats on Next stay.
+  // Sun POST-#176 Cousin Betty and the earlier packs stay ahead.
+  "tess-of-the-durbervilles",
+  "captains-courageous",
+  "numa-roumestan",
+  "dracula",
 ] as const;
 
 /**
