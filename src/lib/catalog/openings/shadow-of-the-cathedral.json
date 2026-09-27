@@ -1,0 +1,61 @@
+{
+  "id": "shadow-of-the-cathedral",
+  "title": "The Shadow of the Cathedral",
+  "author": "Vicente Blasco Ibáñez (trans. Mrs. W. A. Gillespie)",
+  "year": "1903",
+  "note": "Project Gutenberg 12041. Host: Ch I — Gabriel Luna dawn / Piazza del Ayuntamiento / del Perdon (Howells Introduction skipped). Year 1903 (ES; Gillespie EN 1909). Mrs. W. A. Gillespie from PG About only. Inventory 84 medium — no invented Launch rank. LEAD kept. Soft Spain carefully ≠ Four Horsemen Argentina; soft Blasco carefully ≠ Four Horsemen; soft SA carefully ≠ Toledo.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Toledo Spain",
+      "place": "Chapter I · Toledo Spain",
+      "reentry": "The dawn was just rising when Gabriel Luna arrived in front of the Cathedral, but in the narrow street of Toledo it was still night. The silvery morning light that had scarcely begun to touch the eave",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The dawn was just rising when Gabriel Luna arrived in front of the Cathedral, but in the narrow street of Toledo it was still night. The silvery morning light that had scarcely begun to touch the eaves and roofs, spread out more freely in the little Piazza del Ayuntamiento, bringing out of the shadows the ugly front of the Archbishop's Palace, and the towers of the municipal buildings capped with black slate, a sombre erection of the time of Charles V."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Gabriel walked for some time up and down the deserted square, wrapping himself up to his eyes in the muffler of his cloak, while at intervals his hollow cough shook him painfully. Without daring to stop walking on account of the bitter cold, he looked at the great doorway called \"del Perdon,\" the only part of the church able to present a really imposing aspect. He recalled other famous cathedrals, isolated, occupying commanding situations, showing themselves freely in the full pride of their beauty, and he compared them with this Cathedral of Toledo, the mother-church of Spain, smothered by the swarm of poverty-stricken buildings that surrounded it, clinging closely to its walls, permitting it to display none of its exterior beauties, beyond what could be seen from the narrow streets that closed it in on every side. Gabriel, who was acquainted with its interior magnificence, thought of the deceptive oriental houses, outwardly squalid and miserable, but inwardly rich in alabasters and traceries. Jews and Moors had not lived in Toledo for centuries in vain, their aversion to outward show seemed to have influenced the building of the Cathedral, now suffocated by the miserable hovels, pushed and piled up against it, as though seeking its protection."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The little Piazza del Ayuntamiento was the only open space that allowed the Christian monument to display any of its grandeur; under this little patch of open sky the early morning light showed the three immense Gothic arches of its principal front, the hugely massive bell tower, with its salient angles, ornamented by the cap of the Alcuzon, a sort of black tiara, with three crowns, almost lost in the grey mist of the wintry dawn."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Gabriel looked affectionately at the closed and silent fane, where his family lived, and where he himself had spent the happiest days of his life. How many years had passed since he had last seen it! And now he waited anxiously for the opening of its doorways."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "He had arrived in Toledo by train the previous night from Madrid. Before shutting himself up in his miserable little room in the Posada del Sangre (the ancient Messon del Sevillano, inhabited by Cervantes) he had felt a feverish desire to revisit the Cathedral, and had spent nearly an hour walking round it, listening to the barking of the Cathedral watch-dog, who growled suspiciously, hearing the sound of footsteps in the surrounding streets. He had been unable to sleep; the fact of returning to his native town after so many years of misery and adventures had taken from him all desire to rest, and, while it was still night, he again stole out to await near the Cathedral the moment that it should be opened."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "To while away the time he paced up and down the front, admiring again the beauties of the porch, and noting its defects aloud, as though he wished to call the stone benches of the Piazza and its wretched little trees as witnesses to his criticisms."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "An iron grating surmounted by urns of the seventeenth century ran in front of the porch, enclosing a wide, flagged space, where in former times the sumptuous processions of the Chapter had assembled, and where the multitude could admire the grotesque giants on high days and festivals."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "The first storey of the façade was broken in the centre by the great Puerta del Perdon, an enormous and very deeply-recessed Gothic arch, which narrowed as it receded by the gradations of its mouldings, adorned by statues of apostles, under open-worked canopies, and by shields emblazoned with lions and castles. On the pillar dividing the doorway stood Jesus in kingly crown and mantle, thin and drawn out, with the look of emaciation and misery that the imagination of the Middle Ages conceived necessary for the expression of Divine sublimity. In the tympanum a relievo represented the Virgin surrounded by angels, robed in the habit of St. Ildefonso, a pious legend repeated in various parts of the building as though it were one of its chief glories."
+    }
+  ]
+}

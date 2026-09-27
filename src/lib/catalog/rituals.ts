@@ -353,6 +353,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `One morning in December the steamer Tabo was laboriously ascending the tortuous course of the Pasig. Chapter I, On the Upper Deck — the Tabo, the Pasig, and La Laguna. Skip the Translator’s Introduction. José Rizal, in Charles E. Derbyshire’s English, 1891. The Spanish year is 1891; the English is 1912. Soft Philippines, carefully. This is not Noli Me Tangere or Suan. Inventory 85 is medium. No score is invented for this sit.`,
   "a-cross-line":
     `The rather flat notes of a man’s voice float out into the clear air, singing the refrain of a popular music-hall ditty. This sit is A Cross Line only — a music-hall ditty, a felled tree, and spring. Skip Beardsley, the dedication, the contents, and the other stories. Stop at the end of the sketch. George Egerton’s 1894 sketch. The imprint year is 1894; the copyright is 1893. One sketch this sit. Soft England, carefully. Soft New Woman, carefully. This is not Ann Veronica, The Woman Who Did, or The Heavenly Twins. Inventory 78 is easy. No score is invented for this sit.`,
+  "shadow-of-the-cathedral":
+    `The dawn was just rising when Gabriel Luna arrived in front of the Cathedral, but in the narrow street of Toledo it was still night. Chapter I — Gabriel Luna, the Piazza del Ayuntamiento, and del Perdon. Skip the Howells Introduction. Vicente Blasco Ibáñez, in Mrs. W. A. Gillespie’s English, 1903. The Spanish year is 1903; the English is 1909. Soft Spain, carefully. This is not the Four Horsemen. Soft Blasco, carefully. This is not the Four Horsemen. The lead is this book, not The Way of All Flesh, not The Family at Gilje, and not Resurrection. Inventory 84 is medium. No score is invented for this sit.`,
+  "way-of-all-flesh":
+    `When I was a small boy at the beginning of the century I remember an old man who wore knee-breeches and worsted stockings. Chapter I — Pontifex, Paleham, and knee-breeches. Skip the Streatfeild Preface. Samuel Butler’s 1903 novel. Soft England, carefully. This is not Dorian Gray or A Cross Line. Soft Butler, carefully. This is not Erewhon. Inventory 85 is medium. No score is invented for this sit.`,
+  "family-at-gilje":
+    `It was a clear, cold afternoon in the mountain region. Chapter I — a cold mountain afternoon, Christmas snow, and the captain’s house. Skip the Olson Introduction and the Preface. Jonas Lie, in Samuel Coffin Eastman’s English, 1883. The Norwegian year is 1883; the English is 1920. Soft Norway, carefully. This is not Bojer or Hamsun. Inventory 78 is medium. No score is invented for this sit.`,
+  resurrection:
+    `Though hundreds of thousands had done their very best to disfigure the small piece of land on which they were crowded together. Chapter I — spring in the town, the prison office, and 28 April. Skip the Translator’s Preface. Leo Tolstoy, in Louise Maude’s English, 1899. Soft Russia, carefully. This is not A Slav Soul, The Village, or Virgin Soil. Soft Tolstoy, carefully. This is not Hadji Murad. Inventory 85 is medium. No score is invented for this sit.`,
+  widdershins:
+    `The three or four “To Let” boards had stood within the low paling as long as the inhabitants of the little triangular “Square” could remember. This sit is The Beckoning Fair One only — To Let boards and an old red brick square. Skip the Contents and the other stories. Stop at the end of the tale. Oliver Onions’s 1911 tale. One tale this sit. Soft gothic, carefully. This is not Dracula or the House of the Seven Gables. Soft England, carefully. Inventory 83 is easy. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -673,7 +683,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "pans-garden",
       "peacock-pie",
       "prosas-profanas",
-      "resurrection",
       "rosmersholm",
       "salome",
       "salt-water-ballads",
@@ -1088,6 +1097,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "picture-of-dorian-gray",
       "the-job",
       "reign-of-greed",
+      // Mira Sun 27 Sep 2026 POST-#180 CLEAR — The Shadow of the Cathedral leads. Never Featured.
+      // LEAD kept — not The Way of All Flesh, not The Family at Gilje, not Resurrection.
+      // Earlier before-sleep inventory listing of Resurrection moves here so the cycle reads in order.
+      // The Beckoning Fair One is Waking up (the title tale only).
+      "shadow-of-the-cathedral",
+      "way-of-all-flesh",
+      "family-at-gilje",
+      "resurrection",
     ],
   },
   {
@@ -1178,6 +1195,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "a-slav-soul",
       // Mira Sun 27 Sep 2026 POST-#179 CLEAR — A Cross Line sketch only.
       "a-cross-line",
+      // Mira Sun 27 Sep 2026 POST-#180 CLEAR — The Beckoning Fair One only.
+      "widdershins",
     ],
   },
   {
@@ -1359,6 +1378,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "picture-of-dorian-gray",
       "the-job",
       "reign-of-greed",
+      // Mira Sun 27 Sep 2026 POST-#180 CLEAR — The Shadow of the Cathedral leads. Never Featured.
+      // LEAD kept — not The Way of All Flesh, not The Family at Gilje, not Resurrection.
+      // Earlier before-sleep inventory listing of Resurrection moves here so the cycle reads in order.
+      // The Beckoning Fair One is Waking up (the title tale only).
+      "shadow-of-the-cathedral",
+      "way-of-all-flesh",
+      "family-at-gilje",
+      "resurrection",
     ],
   },
   {
@@ -1539,6 +1566,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "picture-of-dorian-gray",
       "the-job",
       "reign-of-greed",
+      // Mira Sun 27 Sep 2026 POST-#180 CLEAR — The Shadow of the Cathedral leads. Never Featured.
+      // LEAD kept — not The Way of All Flesh, not The Family at Gilje, not Resurrection.
+      // Earlier before-sleep inventory listing of Resurrection moves here so the cycle reads in order.
+      // The Beckoning Fair One is Waking up (the title tale only).
+      "shadow-of-the-cathedral",
+      "way-of-all-flesh",
+      "family-at-gilje",
+      "resurrection",
     ],
   },
   {
@@ -1686,7 +1721,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "pans-garden": 5,
   "peacock-pie": 5,
   "prosas-profanas": 5,
-  "resurrection": 5,
+  "resurrection": 4,
   "rosmersholm": 5,
   "salome": 5,
   "salt-water-ballads": 5,
@@ -1798,6 +1833,10 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "picture-of-dorian-gray": 4,
   "reign-of-greed": 3,
   "a-cross-line": 12,
+  "shadow-of-the-cathedral": 4,
+  "way-of-all-flesh": 4,
+  "family-at-gilje": 4,
+  widdershins: 12,
   "royal-highness": 4,
   ramona: 6,
   "almayers-folly": 6,

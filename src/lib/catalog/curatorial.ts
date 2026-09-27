@@ -998,6 +998,16 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "picture-of-dorian-gray",
   "the-job",
   "reign-of-greed",
+  // Mira Sun 27 Sep 2026 POST-#180 CLEAR — The Shadow of the Cathedral leads Next. Never Featured.
+  // LEAD kept — not The Way of All Flesh, not The Family at Gilje, not Resurrection.
+  // The Beckoning Fair One is Rituals (the title tale only), not this tail.
+  // Earlier Resurrection inventory seat on Next stays. Earlier the-shadow-of-the-cathedral,
+  // the-way-of-all-flesh, and the-family-at-gilje stay on their own slugs.
+  // Sun POST-#179 Cabbages and the earlier packs stay ahead.
+  "shadow-of-the-cathedral",
+  "way-of-all-flesh",
+  "family-at-gilje",
+  "resurrection",
 ] as const;
 
 /**
