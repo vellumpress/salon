@@ -168,6 +168,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-great-hunger": { label: "Norway fjord", region: "no" },
   "the-mysterious-stranger": { label: "Eseldorf", region: "at" },
   "children-of-the-frost": { label: "Yukon", region: "ca" },
+  "the-poison-tree": { label: "Bengal", region: "in" },
+  cosmopolis: { label: "Rome", region: "it" },
+  "the-woman-who-did": { label: "Surrey", region: "gb" },
+  "billy-budd": { label: "British man-of-war", region: "gb" },
+  "malay-sketches": { label: "Malaya", region: "my" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples

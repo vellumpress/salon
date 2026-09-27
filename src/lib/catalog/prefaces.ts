@@ -58,7 +58,7 @@ export const PREFACES: Record<string, string> = {
   "lord-jim":
     "A jump from a ship, and a life spent trying to outrun it. Conrad’s 1900 novel begins in rumor. Sit with the story before you meet the man.",
   "billy-budd":
-    "A handsome sailor, a ship’s law, and a blow that cannot be taken back. Melville’s late tale is deck, duty, and light. Sit with the sea a moment.",
+    "In the time before steamships, a stroller along the docks would notice the Handsome Sailor. This sit is Billy Budd, Foretopman only — Chapter I. Skip the other pieces. Herman Melville’s 1924 novella. Soft Melville, carefully. This is not White Jacket. Inventory is medium. No score is invented for this sit.",
   "elmer-gantry":
     "American professions as a hustle you can still try to stay honest inside. Lewis’s 1927 preacher novel is heat, tents, and appetite. Sit with the noise before the first breath.",
   "the-painted-veil":

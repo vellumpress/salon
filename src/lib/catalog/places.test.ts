@@ -248,7 +248,7 @@ test("former no-place shelf rows now resolve a country chip", () => {
     "kim-van-kieu-tan-truyen-the-tale-of-kieu": { label: "Vietnam", region: "vn" },
     "the-purple-land": { label: "Uruguay", region: "uy" },
     azul: { label: "Nicaragua", region: "ni" },
-    "malay-sketches": { label: "Malaysia", region: "my" },
+    "malay-sketches": { label: "Malaya", region: "my" },
     "in-court-and-kampong": { label: "Malaysia", region: "my" },
     "laos-folk-lore-of-farther-india": { label: "Laos", region: "la" },
     "the-literature-of-arabia": { label: "Iraq", region: "iq" },

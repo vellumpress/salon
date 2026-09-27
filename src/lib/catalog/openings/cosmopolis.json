@@ -1,0 +1,56 @@
+{
+  "id": "cosmopolis",
+  "title": "Cosmopolis",
+  "author": "Paul Bourget",
+  "year": "1892",
+  "note": "Project Gutenberg 3967. Host: Ch I *A Dilettante and a Believer* — Ribalta stall / Place d'Espagne / “In Rome” (Lemaître/Author intro skipped). FR 1892. No invent translator (PG About has no Translator line). Inventory 84 medium. Soft Italy carefully ≠ Capri/Sicily/Sardinia.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · A Dilettante and a Believer · Rome",
+      "place": "Chapter I · A Dilettante and a Believer · Rome",
+      "reentry": "Although the narrow stall, flooded with heaped-up books and papers, left the visitor just room enough to stir, and although that visitor was one of his regular customers, the old bookseller did not de",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Although the narrow stall, flooded with heaped-up books and papers, left the visitor just room enough to stir, and although that visitor was one of his regular customers, the old bookseller did not deign to move from the stool upon which he was seated, while writing on an unsteady desk. His odd head, with its long, white hair, peeping from beneath a once black felt hat with a broad brim, was hardly raised at the sound of the opening and shutting of the door. The newcomer saw an emaciated, shriveled face, in which, from behind spectacles, two brown eyes twinkled slyly. Then the hat again shaded the paper, which the knotty fingers, with their dirty nails, covered with uneven lines traced in a handwriting belonging to another age, and from the thin, tall form, enveloped in a greenish, worn-out coat, came a faint voice, the voice of a man afflicted with chronic laryngitis, uttering as an apology, with a strong Italian accent, this phrase in French:"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"One moment, Marquis, the muse will not wait.\""
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"Very well, I will; I am no muse. Listen to your inspiration comfortably, Ribalta,\" replied, with a laugh, he whom the vendor of old books received with such original unconstraint. He was evidently accustomed to the eccentricities of the strange merchant. In Rome--for this scene took place in a shop at the end of one of the most ancient streets of the Eternal City, a few paces from the Place d'Espagne, so well known to tourists--in the city which serves as a confluent for so many from all points of the world, has not that sense of the odd been obliterated by the multiplicity of singular and anomalous types stranded and sheltering there? You will find there revolutionists like boorish Ribalta, who is ending in a curiosity-shop a life more eventful than the most eventful of the sixteenth century."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Descended from a Corsican family, this personage came to Rome when very young, about 1835, and at first became a seminarist. On the point of being ordained a priest, he disappeared only to return, in 1849, so rabid a republican that he was outlawed at the time of the reestablishment of the pontifical government. He then served as secretary to Mazzini, with whom he disagreed for reasons which clashed with Ribalta's honor. Would passion for a woman have involved him in such extravagance? In 1870 Ribalta returned to Rome, where he opened, if one may apply such a term to such a hole, a book-shop. But he is an amateur bookseller, and will refuse you admission if you displease him. Having inherited a small income, he sells or he does not, following his fancy or the requirements of his own purchases, to-day asking you twenty francs for a wretched engraving for which he paid ten sous, to-morrow giving you at a low price a costly book, the value of which he knows. Rabid Gallophobe, he never pardoned his old general the campaign of Dijon any more than he forgave Victor Emmanuel for having left the Vatican to Pius IX. \"The house of Savoy and the papacy,\" said he, when he was confidential, \"are two eggs which we must not eat on the same dish.\" And he would tell of a certain pillar of St. Peter's hollowed into a staircase by Bernin, where a cartouch of dynamite was placed. If you were to ask him why he became a book collector, he would bid you step over a pile of papers, of boarding and of folios. Then he would show you an immense chamber, or rather a shed, where thousands of pamphlets were piled up along the walls: \"These are the rules of all the convents suppressed by Italy. I shall write their history.\" Then he would stare at you, for he would fear that you might be a spy sent by the king with the sole object of learning the plans of his most dangerous enemy--one of those spies of whom he has been so much in awe that for twenty years no one has known where he slept, where he ate, where he hid when the shutters of his shop in the Rue Borgognona were closed. He expected, on account of his past, and his secret manner, to be arrested at the time of the outrage of Passanante as one of the members of those Circoli Barsanti, to whom a refractory corporal gave his name."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "But, on examining the dusty cartoons of the old book-stall, the police discovered nothing except a prodigious quantity of grotesque verses directed against the Piedmontese and the French, against the Germans and the Triple Alliance, against the Italian republicans and the ministers, against Cavour and Signor Crispi, against the University of Rome and the Inquisition, against the monks and the capitalists! It was, no doubt, one of those pasquinades which his customers watched him at work upon, thinking, as he did so, how Rome abounded in paradoxical meetings."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "For, in 1867, that same old Garibaldian exchanged shots at Mentana with the Pope's Zouaves, among whom was Marquis de Montfanon, for so was called the visitor awaiting Ribalta's pleasure. Twenty-three years had sufficed to make of the two impassioned soldiers of former days two inoffensive men, one of whom sold old volumes to the other! And there is a figure such as you will not find anywhere else--the French nobleman who has come to die near St. Peter's."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Would you believe, to see him with his coarse boots, dressed in a simple coat somewhat threadbare, a round hat covering his gray head, that you have before you one of the famous Parisian dandies of 1864? Listen to this other history. Scruples of devoutness coming in the wake of a serious illness cast at one blow the frequenter of the 'Cafe Anglais' and gay suppers into the ranks of the pontifical zouaves. A first sojourn in Rome during the last four years of the government of Pius IX, in that incomparable city to which the presentiment of the approaching termination of a secular rule, the advent of the Council, and the French occupation gave a still more peculiar character, was enchantment. All the germs of piety instilled in the nobleman by the education of the Jesuits of Brughetti ended by reviving a harvest of noble virtues, in the days of trial which came only too quickly. Montfanon made the campaign of France with the other zouaves, and the empty sleeve which was turned up in place of his left arm attested with what courage he fought at Patay, at the time of that sublime charge when the heroic General de Sonis unfurled the banner of the Sacred Heart. He had been a duelist, sportsman, gambler, lover, but to those of his old companions of pleasure whom chance brought to Rome he was only a devotee who lived economically, notwithstanding the fact that he had saved the remnants of a large fortune for alms, for reading and for collecting."
+    }
+  ]
+}

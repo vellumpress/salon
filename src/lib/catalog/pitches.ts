@@ -78,6 +78,16 @@ export const PITCHES: Record<string, string> = {
     "It was in 1590—winter. Austria was far away from the world, and asleep. Chapter 1 — Eseldorf. Skip the other tales. Mark Twain’s 1916 novella only. Soft Austria, carefully. This is not Schnitzler’s Vienna. Notion is easy. Launch shelf is no — do not inflate it.",
   "children-of-the-frost":
     "Old Koskoosh listened greedily. This sit is The Law of Life only — Old Koskoosh, Sit-cum-to-ha, the dogs, and a camp that must be broken. Skip the contents and the other tales. Jack London’s 1902 book. One tale this sit; the cycle continues. Soft Yukon, carefully, after the earlier American sits. Inventory is easy. No score is invented for this sit.",
+  "the-poison-tree":
+    "Nagendra Natha Datta is about to travel by boat. It is the month Joisto, the time of storms. Chapter I, Nagendra’s Journey by Boat — Surja Mukhi and the boat to Calcutta. Skip the Arnold preface. Bankim Chandra Chatterjee, in Miriam S. Knight’s English, Bengali 1873 / English 1884. Soft Bengal domestic, carefully. This is not Tagore’s Home and the World. The lead is this book, not Cosmopolis, not The Woman Who Did, and not Billy Budd. Inventory is medium. No score is invented for this sit.",
+  cosmopolis:
+    "Although the narrow stall, flooded with heaped-up books and papers, left the visitor just room enough to stir. Chapter I, A Dilettante and a Believer — Ribalta, the Place d’Espagne, and Rome. Skip the Lemaître introduction and the author’s introduction. Paul Bourget’s 1892 novel. Soft Rome, carefully. This is not Capri. No translator is invented for this sit. Inventory is medium. No score is invented for this sit.",
+  "the-woman-who-did":
+    "Mrs Dewsbury’s lawn was held by those who knew it the loveliest in Surrey. Chapter I — yellow clover and the oak-clad Weald. Skip the preface. Grant Allen’s 1895 novel. Soft England free-love, carefully. This is not Ann Veronica. Inventory is easy. No score is invented for this sit.",
+  "billy-budd":
+    "In the time before steamships, a stroller along the docks would notice the Handsome Sailor. This sit is Billy Budd, Foretopman only — Chapter I. Skip the other pieces. Herman Melville’s 1924 novella. Soft Melville, carefully. This is not White Jacket. Inventory is medium. No score is invented for this sit.",
+  "malay-sketches":
+    "A quarter of a century ago there lived on the bank of a broad river, just where stream meets tide, a Malay Raja and his youthful wife. This sit is A Malay Romance only — Raja Maimûnah and the stream that meets the tide. Skip the contents and the other sketches. Frank Swettenham’s 1895 book; the printing is 1903. One tale this sit; the cycle continues. Soft Malaya, carefully. Colonial administration stays as printed. Notion is easy. Launch shelf is no — do not inflate it.",
   berlin:
     "Berlin talks through Franz Biberkopf after prison — noise, politics, and fate in Döblin’s street choir. A city that will not let a man start clean.",
   passing:

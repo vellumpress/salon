@@ -953,6 +953,15 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "ann-veronica",
   "the-great-hunger",
   "the-mysterious-stranger",
+  // Mira Sun 27 Sep 2026 POST-#175 CLEAR — The Poison Tree leads Next. Never Featured.
+  // LEAD kept — not Cosmopolis, not The Woman Who Did, not Billy Budd.
+  // Malay Sketches is Rituals (A Malay Romance only), not this tail.
+  // Earlier Poison Tree inventory seat on Next stays. The Later poison-tree unwind seat stays.
+  // Sun POST-#174 Erewhon and the earlier packs stay ahead.
+  "the-poison-tree",
+  "cosmopolis",
+  "the-woman-who-did",
+  "billy-budd",
 ] as const;
 
 /**
