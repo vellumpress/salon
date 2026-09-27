@@ -1909,7 +1909,7 @@ test("Tier B batches 5–6 are local format-min binds, never Featured", () => {
     assert.ok(work, id);
     assert.equal(work!.local, true, id);
     assert.equal(isBoundLocal(work!), true, id);
-    if (id === "ramona") {
+    if (id === "ramona" || id === "iola-leroy") {
       assert.equal(curatorialTrack(id), "next", id);
       assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), true, id);
       assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);

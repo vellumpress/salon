@@ -284,7 +284,15 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "white-nights":
     `It was a wonderful night — the dreamer’s starry Petersburg. First Night only, and not Notes from Underground.`,
   "west-african-folk-tales":
-    `Anansi buys the stories from Nyankupon. One tale per sit — How We Got the Name ‘Spider Tales’ — soft against Jamaica Anansi.`,
+    `In the olden days all the stories which men told were stories of Nyankupon, the chief of the gods. This sit is How We Got the Name ‘Spider Tales’ only — Nyankupon, Anansi, and a jar of bees. Skip the contents, the introduction, and the other tales. W. H. Barker and Cecilia Sinclair’s 1917 book. One tale this sit; the cycle continues. Soft Gold Coast, carefully. This is not Caribbean Anansi. Notion is easy. Launch shelf is no.`,
+  candide:
+    `In a castle of Westphalia, belonging to the Baron of Thunder-ten-Tronckh, lived a youth. Chapter I — the castle, Thunder-ten-Tronckh, and Candide expelled. Skip the Modern Library introduction and the Beerbohm cartoon note. Voltaire’s 1759 novel. Soft Westphalia is not the Mann court. The lead is this book, not Aphrodite and not Iola Leroy. Inventory is easy. No translator is invented for this sit. No score is invented for this sit.`,
+  "iola-leroy":
+    `"Good mornin', Bob; how's butter dis mornin'?" Chapter I — market speech, butter fresh, and the prayer-meeting. Skip the dedication. Frances E. W. Harper’s novel, 1892; the title page says 1893. Soft US South toward the North, carefully, after Bernice and the earlier American sits. This is not Dunbar and not Chesnutt. Inventory is medium. No score is invented for this sit.`,
+  "esther-waters":
+    `She stood on the platform watching the receding train. Chapter I — the platform, the receding train, and a faded yellow dress. Skip the produced-by credit. George Moore’s novel, 1894; the imprint says 1899. Soft England servant life, carefully. This is not The Heavenly Twins. Inventory is medium. No score is invented for this sit.`,
+  aphrodite:
+    `On the quay at Alexandria a singing-girl was standing singing. Book I, Chapter II — the quay, the flute-girls, and the white parapet. Skip the author’s preface and the denser first chapter. Pierre Louÿs’s 1896 novel. Soft Alexandria. No translator is invented for this sit. Inventory is medium. Later is all right if the sit is sensual — do not inflate it. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -976,6 +984,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "south-wind",
       "the-village",
       "ditte-girl-alive",
+      // Mira Sun 27 Sep 2026 MIDDAY CLEAR — Candide leads. Never Featured.
+      // LEAD kept — not Aphrodite, not Iola Leroy. Earlier Candide and Aphrodite seats stay.
+      // Spider Tales is Waking up.
+      "candide",
+      "iola-leroy",
+      "esther-waters",
+      "aphrodite",
     ],
   },
   {
@@ -1052,6 +1067,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-black-dog",
       // Mira Sun 27 Sep 2026 POST-#172 CLEAR — Bernice Bobs Her Hair only. Not the other tales.
       "flappers-and-philosophers",
+      // Mira Sun 27 Sep 2026 MIDDAY CLEAR — How We Got the Name ‘Spider Tales’ only.
+      "west-african-folk-tales",
     ],
   },
   {
@@ -1180,6 +1197,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "south-wind",
       "the-village",
       "ditte-girl-alive",
+      // Mira Sun 27 Sep 2026 MIDDAY CLEAR — Candide leads. Never Featured.
+      // LEAD kept — not Aphrodite, not Iola Leroy. Spider Tales is Waking up.
+      "candide",
+      "iola-leroy",
+      "esther-waters",
+      "aphrodite",
     ],
   },
   {
@@ -1307,6 +1330,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "south-wind",
       "the-village",
       "ditte-girl-alive",
+      // Mira Sun 27 Sep 2026 MIDDAY CLEAR — Candide leads. Never Featured.
+      // LEAD kept — not Aphrodite, not Iola Leroy. Spider Tales is Waking up.
+      "candide",
+      "iola-leroy",
+      "esther-waters",
+      "aphrodite",
     ],
   },
   {
@@ -1331,7 +1360,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "bread-givers": 5,
   "after-the-divorce": 5,
   "white-nights": 5,
-  "west-african-folk-tales": 5,
+  "west-african-folk-tales": 2,
   "the-weary-blues": 5,
   "kwaidan-stories-and-studies-of-strange-things": 5,
   "the-house-of-mirth": 5,
@@ -1607,7 +1636,10 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "pepita-jimenez": 5,
   "a-illustre-casa-de-ramires": 5,
   "an-iceland-fisherman": 5,
-  "aphrodite": 5,
+  "aphrodite": 10,
+  candide: 4,
+  "iola-leroy": 8,
+  "esther-waters": 6,
   "azul": 5,
   "contes-cruels": 5,
   "les-amours-jaunes": 5,

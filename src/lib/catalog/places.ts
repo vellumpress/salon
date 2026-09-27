@@ -158,6 +158,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-village": { label: "Durnovka", region: "ru" },
   "ditte-girl-alive": { label: "Denmark", region: "dk" },
   "flappers-and-philosophers": { label: "Country club", region: "us" },
+  "candide": { label: "Westphalia", region: "de" },
+  "iola-leroy": { label: "US South", region: "us-south" },
+  "esther-waters": { label: "England", region: "gb" },
+  "aphrodite": { label: "Alexandria", region: "eg" },
+  "west-african-folk-tales": { label: "Gold Coast", region: "gh" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples
