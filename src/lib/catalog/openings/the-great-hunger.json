@@ -1,0 +1,101 @@
+{
+  "id": "the-great-hunger",
+  "title": "The Great Hunger",
+  "author": "Johan Bojer (trans. W. J. Alexander Worster and C. Archer)",
+  "year": "1916",
+  "note": "Project Gutenberg 2943. Host: Ch I — northwester gale / spindrift / rocky fjord / fisher huts (Produced-by skipped). NO 1916; Worster & Archer from PG About only. Inventory 82 medium. Soft Norway carefully ≠ Hamsun Hunger.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Book I · Chapter I · Norway fjord",
+      "place": "Book I · Chapter I · Norway fjord",
+      "reentry": "For sheer havoc, there is no gale like a good northwester, when it roars in, through the long winter evenings, driving the spindrift before it between the rocky walls of the fjord. It churns the water",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "For sheer havoc, there is no gale like a good northwester, when it roars in, through the long winter evenings, driving the spindrift before it between the rocky walls of the fjord. It churns the water to a froth of rushing wave crests, while the boats along the beach are flung in somersaults up to the doors of the grey fisher huts, and solid old barn gangways are lifted and sent flying like unwieldy birds over the fields. \"Mercy on us!\" cry the maids, for it is milking-time, and they have to fight their way on hands and knees across the yard to the cowshed, dragging a lantern that WILL go out and a milk-pail that WON'T be held. And \"Lord preserve us!\" mutter the old wives seated round the stove within doors--and their thoughts are far away in the north with the Lofoten fishermen, out at sea, maybe, this very night."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "But on a calm spring day, the fjord just steals in smooth and shining by ness and bay. And at low water there is a whole wonderland of strange little islands, sand-banks, and weed-fringed rocks left high and dry, with clear pools between, where bare-legged urchins splash about, and tiny flat-fish as big as a halfpenny dart away to every side. The air is filled with a smell of salt sea-water and warm, wet beach-waste, and the sea-pie, see-sawing about on a big stone in the water, lifts his red beak cheerily sunwards and pipes: \"Kluip, kluip! the spring has come!\""
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "On just such a day, two boys of fourteen or thereabouts came hurrying out from one of the fishermen's huts down towards the beach. Boys are never so busy as when they are up to some piece of mischief, and evidently the pair had business of this sort in hand. Peer Troen, fair-haired and sallow-faced, was pushing a wheelbarrow; his companion, Martin Bruvold, a dark youth with freckles, carried a tub. And both talked mysteriously in whispers, casting anxious glances out over the water."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Peer Troen was, of course, the ringleader. That he always was: the forest fire of last year was laid at his door. And now he had made it clear to some of his friends that boys had just as much right to lay out deep-sea lines as men. All through the winter they had been kept at grown-up work, cutting peat and carrying wood; why should they be left now to fool about with the inshore fishing, and bring home nothing better than flounders and coal-fish and silly codlings? The big deep-sea line they were forbidden to touch--that was so--but the Lofoten fishery was at its height, and none of the men would be back till it was over. So the boys had baited up the line on the sly down at the boathouse the day before, and laid it out across the deepest part of the fjord."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Now the thing about a deep-sea line is that it may bring to the surface fish so big and so fearsome that the like has never been seen before. Yesterday, however, there had been trouble of a different sort. To their dismay, the boys had found that they had not sinkers enough to weight the shore end of the line; and it looked as if they might have to give up the whole thing. But Peer, ever ready, had hit on the novel idea of making one end fast to the trunk of a small fir growing at the outermost point of the ness, and carrying the line from there out over the open fjord. Then a stone at the farther end, and with the magic words, \"Fie, fish!\" it was paid out overboard, vanishing into the green depths. The deed was done. True, there were a couple of hooks dangling in mid-air at the shore end, between the tree and the water, and, while they might serve to catch an eider duck, or a guillemot, if any one should chance to come rowing past in the dark and get hung up--why, the boys might find they had made a human catch. No wonder, then, that they whispered eagerly and hurried down to the boat."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Here comes Peter Ronningen,\" cried Martin suddenly."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "This was the third member of the crew, a lanky youth with whitish eyebrows and a foolish face. He stammered, and made a queer noise when he laughed: \"Chee-hee-hee.\" Twice he had been turned down in the confirmation classes; after all, what was the use of learning lessons out of a book when nobody ever had patience to wait while he said them?"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Together they ran the boat down to the water's edge, got it afloat, and scrambled in, with much waving of patched trouser legs. \"Hi!\" cried a voice up on the beach, \"let me come too!\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"There's Klaus,\" said Martin. \"Shall we take him along?\""
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"No,\" said Peter Ronningen."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"Oh yes, let's,\" said Peer."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Klaus Brock, the son of the district doctor, was a blue-eyed youngster in knickerbockers and a sailor blouse. He was playing truant, no doubt--Klaus had his lessons at home with a private tutor--and would certainly get a thrashing from his father when he got home."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"Hurry up,\" called Peer, getting out an oar. Klaus clambered in, and the white-straked four-oar surged across the bay, rocking a little as the boys pulled out of stroke. Martin was rowing at the bow, his eyes fixed on Peer, who sat in the stern in command with his eyes dancing, full of great things to be done. Martin, poor fellow, was half afraid already; he never could understand why Peer, who was to be a parson when he grew up, was always hitting upon things to do that were evidently sinful in the sight of the Lord."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "Peer was a town boy, who had been put out to board with a fisherman in the village. His mother had been no better than she should be, so people said, but she was dead now, and the father at any rate must be a rich gentleman, for he sent the boy a present of ten whole crowns every Christmas, so that Peer always had money in his pocket. Naturally, then, he was looked up to by the other boys, and took the lead in all things as a chieftain by right."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "The boat moved on past the grey rocks, the beach and the huts above it growing blue and faint in the distance. Up among the distant hills a red wooden farm-house on its white foundation wall stood out clear."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Here was the ness at last, and there stood the fir. Peer climbed up and loosed the end of the line, while the others leaned over the side, watching the cord where it vanished in the depths. What would it bring to light when it came up?"
+    }
+  ]
+}

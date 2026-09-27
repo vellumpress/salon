@@ -944,6 +944,15 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "iola-leroy",
   "esther-waters",
   "aphrodite",
+  // Mira Sun 27 Sep 2026 POST-#174 CLEAR — Erewhon leads Next. Never Featured.
+  // LEAD kept — not Ann Veronica, not The Great Hunger, not The Mysterious Stranger.
+  // Children of the Frost is Rituals (The Law of Life only), not this tail.
+  // Earlier Erewhon, Great Hunger, and Children of the Frost seats stay.
+  // Sun MIDDAY Candide and the earlier packs stay ahead.
+  "erewhon",
+  "ann-veronica",
+  "the-great-hunger",
+  "the-mysterious-stranger",
 ] as const;
 
 /**

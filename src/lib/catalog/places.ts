@@ -163,6 +163,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "esther-waters": { label: "England", region: "gb" },
   "aphrodite": { label: "Alexandria", region: "eg" },
   "west-african-folk-tales": { label: "Gold Coast", region: "gh" },
+  erewhon: { label: "New Zealand", region: "nz" },
+  "ann-veronica": { label: "Morningside Park", region: "gb" },
+  "the-great-hunger": { label: "Norway fjord", region: "no" },
+  "the-mysterious-stranger": { label: "Eseldorf", region: "at" },
+  "children-of-the-frost": { label: "Yukon", region: "ca" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples

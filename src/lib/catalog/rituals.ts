@@ -293,6 +293,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `She stood on the platform watching the receding train. Chapter I — the platform, the receding train, and a faded yellow dress. Skip the produced-by credit. George Moore’s novel, 1894; the imprint says 1899. Soft England servant life, carefully. This is not The Heavenly Twins. Inventory is medium. No score is invented for this sit.`,
   aphrodite:
     `On the quay at Alexandria a singing-girl was standing singing. Book I, Chapter II — the quay, the flute-girls, and the white parapet. Skip the author’s preface and the denser first chapter. Pierre Louÿs’s 1896 novel. Soft Alexandria. No translator is invented for this sit. Inventory is medium. Later is all right if the sit is sensual — do not inflate it. No score is invented for this sit.`,
+  erewhon:
+    `If the reader will excuse me, I will say nothing of my antecedents. Chapter I, Waste Lands — a sheep-farm, waste crown-land, and leaving his native country. Skip the 1901 preface. Samuel Butler’s 1872 novel. Soft New Zealand, a nowhere-colony, after Westphalia. This is not Candide’s world-tour. The lead is this book, not Ann Veronica, not The Great Hunger, and not The Mysterious Stranger. Inventory is medium. No score is invented for this sit.`,
+  "ann-veronica":
+    `One Wednesday afternoon in late September, Ann Veronica Stanley came down from London. Chapter I — the Wednesday train, Morningside Park, and a father confrontation. Skip the produced-by credit. H. G. Wells’s 1909 novel. Soft England New Woman, carefully. This is not Esther Waters. Notion is easy. Launch shelf is no — do not inflate it.`,
+  "the-great-hunger":
+    `For sheer havoc, there is no gale like a good northwester. Chapter I — the gale, spindrift, a rocky fjord, and fisher huts. Skip the produced-by credit. Johan Bojer’s novel, in W. J. Alexander Worster and C. Archer’s English, Norway 1916. Soft Norway, carefully. This is not Hamsun. Inventory is medium. No score is invented for this sit.`,
+  "the-mysterious-stranger":
+    `It was in 1590—winter. Austria was far away from the world, and asleep. Chapter 1 — Eseldorf. Skip the other tales. Mark Twain’s 1916 novella only. Soft Austria, carefully. This is not Schnitzler’s Vienna. Notion is easy. Launch shelf is no — do not inflate it.`,
+  "children-of-the-frost":
+    `Old Koskoosh listened greedily. This sit is The Law of Life only — Old Koskoosh, Sit-cum-to-ha, the dogs, and a camp that must be broken. Skip the contents and the other tales. Jack London’s 1902 book. One tale this sit; the cycle continues. Soft Yukon, carefully, after the earlier American sits. Inventory is easy. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -991,6 +1001,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "iola-leroy",
       "esther-waters",
       "aphrodite",
+      // Mira Sun 27 Sep 2026 POST-#174 CLEAR — Erewhon leads. Never Featured.
+      // LEAD kept — not Ann Veronica, not The Great Hunger, not The Mysterious Stranger.
+      // Earlier Great Hunger seat stays where it already sits. Law of Life is Waking up.
+      "erewhon",
+      "ann-veronica",
+      "the-great-hunger",
+      "the-mysterious-stranger",
     ],
   },
   {
@@ -1069,6 +1086,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "flappers-and-philosophers",
       // Mira Sun 27 Sep 2026 MIDDAY CLEAR — How We Got the Name ‘Spider Tales’ only.
       "west-african-folk-tales",
+      // Mira Sun 27 Sep 2026 POST-#174 CLEAR — The Law of Life only.
+      "children-of-the-frost",
     ],
   },
   {
@@ -1203,6 +1222,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "iola-leroy",
       "esther-waters",
       "aphrodite",
+      // Mira Sun 27 Sep 2026 POST-#174 CLEAR — Erewhon leads. Never Featured.
+      // LEAD kept — not Ann Veronica, not The Great Hunger, not The Mysterious Stranger.
+      // Earlier Great Hunger seat stays where it already sits. Law of Life is Waking up.
+      "erewhon",
+      "ann-veronica",
+      "the-great-hunger",
+      "the-mysterious-stranger",
     ],
   },
   {
@@ -1336,6 +1362,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "iola-leroy",
       "esther-waters",
       "aphrodite",
+      // Mira Sun 27 Sep 2026 POST-#174 CLEAR — Erewhon leads. Never Featured.
+      // LEAD kept — not Ann Veronica, not The Great Hunger, not The Mysterious Stranger.
+      // Earlier Great Hunger seat stays where it already sits. Law of Life is Waking up.
+      "erewhon",
+      "ann-veronica",
+      "the-great-hunger",
+      "the-mysterious-stranger",
     ],
   },
   {
@@ -1592,7 +1625,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   ramona: 6,
   "almayers-folly": 6,
   "the-emancipated": 5,
-  "the-great-hunger": 5,
+  "the-great-hunger": 6,
+  erewhon: 6,
+  "ann-veronica": 6,
+  "the-mysterious-stranger": 6,
+  "children-of-the-frost": 12,
   "the-patrician": 5,
   "the-price-of-love": 5,
   "the-private-papers-of-henry-ryecroft": 5,
