@@ -359,6 +359,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `At eight o’clock in the inner vestibule of the Auditorium Theatre, Laura Dearborn waits. Chapter I — a Chicago February draught. Skip the list of principal characters, the trilogy note, and the dedication. Norris’s 1903 novel. Soft Chicago is new. Inventory is medium. No score is invented for this sit.`,
   reginald:
     `I did it—I who should have known better. This sit is the title sketch only — the McKillop garden-party. Skip the contents and the other sketches. Saki’s 1904 book. One sketch this sit; the cycle continues. Soft London, carefully. Inventory is easy. No score is invented for this sit.`,
+  "royal-highness":
+    `The scene is the Albrechtstrasse, the main artery of the capital, at noon. A general and a lieutenant in grey great-coats. Prelude — skip the contents and the imprint. Thomas Mann, in A. Cecil Curtis’s English. German 1909, Curtis English 1916. Soft Germany is new after a run of American sits. The lead is this book, not Ramona. Inventory is medium. No score is invented for this sit.`,
+  ramona:
+    `It was sheep-shearing time in Southern California, but sheep-shearing was late at the Senora Moreno’s. Chapter I — the Senora, Felipe, and the Mission ranch. Skip the produced-by credit. Helen Hunt Jackson’s 1884 novel. Soft Mission country is not Oakley, not the Midwest, and not Chicago. Inventory is medium. No score is invented for this sit.`,
+  "almayers-folly":
+    `Kaspar! Makan! Chapter I — the verandah, Pantai at sunset, and a decaying house. Skip the Amiel epigraph and the edition block. Joseph Conrad’s 1895 novel. Soft Conrad is not Gaspar Ruiz. Notion is medium. Launch shelf is no. For you only if the shelf is already dense — do not inflate it. There is no For you seat to keep.`,
+  "the-crux":
+    `The Foote Girls were bustling along Margate Street. Chapter I, The Back Way — Do come on, Rebecca, and the Lane white house. Skip the verse epigraph. The Host opens in New England before Colorado. Charlotte Perkins Gilman’s 1911 novel. Soft New England moving toward Colorado, carefully. Inventory is easy. No score is invented for this sit.`,
+  "the-black-dog":
+    `Having pocketed his fare, the freckled rustic takes the old cab back to the village. This sit is the title tale only — the one-eyed porter, July noon, Loughlin. Skip the contents and the other tales. A. E. Coppard’s 1923 book. One tale this sit; the cycle continues. Soft England village, carefully, after Reginald. Inventory is medium. No score is invented for this sit.`,
   "in-our-time":
     `A drunk battery on a dark road—then a Michigan lake at dawn, and Nick Adams in a rowboat with his father. Ernest Hemingway’s 1925 American collection opens with a war vignette snapped against “Indian Camp”: spare sentences, long silences, the method already underway.`,
   botchan:
@@ -942,6 +952,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "ramuntcho",
       "miss-lulu-bett",
       "the-pit",
+      // Mira Sun 27 Sep 2026 POST-#171 CLEAR — Royal Highness leads. Never Featured.
+      // LEAD SWAP — not Ramona. Earlier Royal Highness and The Crux seats stay.
+      // The Black Dog is Waking up.
+      "royal-highness",
+      "ramona",
+      "almayers-folly",
+      "the-crux",
     ],
   },
   {
@@ -1014,6 +1031,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "hungry-hearts",
       // Mira Sun 27 Sep 2026 POST-#170 CLEAR — Reginald title sketch only. Not the other sketches.
       "reginald",
+      // Mira Sun 27 Sep 2026 POST-#171 CLEAR — The Black Dog title tale only. Not the other tales.
+      "the-black-dog",
     ],
   },
   {
@@ -1130,6 +1149,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "ramuntcho",
       "miss-lulu-bett",
       "the-pit",
+      // Mira Sun 27 Sep 2026 POST-#171 CLEAR — Royal Highness leads. Never Featured.
+      // LEAD SWAP — not Ramona. The Black Dog is Waking up.
+      "royal-highness",
+      "ramona",
+      "almayers-folly",
+      "the-crux",
     ],
   },
   {
@@ -1245,6 +1270,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "ramuntcho",
       "miss-lulu-bett",
       "the-pit",
+      // Mira Sun 27 Sep 2026 POST-#171 CLEAR — Royal Highness leads. Never Featured.
+      // LEAD SWAP — not Ramona. The Black Dog is Waking up.
+      "royal-highness",
+      "ramona",
+      "almayers-folly",
+      "the-crux",
     ],
   },
   {
@@ -1404,6 +1435,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-colonel-s-dream": 5,
   "the-comedienne": 6,
   "the-crux": 5,
+  "the-black-dog": 12,
   "the-dream": 5,
   "the-gods-of-pegana": 5,
   "the-grand-babylon-hotel": 5,
@@ -1492,7 +1524,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "les-heures-claires": 5,
   "les-trophees": 5,
   "numa-roumestan": 5,
-  "royal-highness": 5,
+  "royal-highness": 4,
+  ramona: 6,
+  "almayers-folly": 6,
   "the-emancipated": 5,
   "the-great-hunger": 5,
   "the-patrician": 5,

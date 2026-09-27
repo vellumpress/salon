@@ -288,6 +288,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Theodor Fontane",
     "Theodor Storm",
     "Thomas Mann",
+    "Thomas Mann (trans. A. Cecil Curtis)",
   ],
   Austria: [
     "Arthur Schnitzler",
@@ -830,6 +831,9 @@ const WORK_COUNTRY: Record<string, string> = {
   "the-colonel-s-dream": "United States",
   "the-comedienne": "Poland",
   "the-crux": "United States",
+  ramona: "United States",
+  "the-black-dog": "United Kingdom",
+  "almayers-folly": "United Kingdom",
   "the-dream": "France",
   "the-gods-of-pegana": "Ireland",
   "the-grand-babylon-hotel": "United Kingdom",

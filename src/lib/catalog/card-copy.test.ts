@@ -1909,9 +1909,16 @@ test("Tier B batches 5–6 are local format-min binds, never Featured", () => {
     assert.ok(work, id);
     assert.equal(work!.local, true, id);
     assert.equal(isBoundLocal(work!), true, id);
-    assert.equal(curatorialTrack(id), "later", id);
+    if (id === "ramona") {
+      assert.equal(curatorialTrack(id), "next", id);
+      assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), true, id);
+      assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
+    } else {
+      assert.equal(curatorialTrack(id), "later", id);
+      assertNoStubOpening(id);
+      assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
+    }
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    assertNoStubOpening(id);
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
@@ -1919,7 +1926,6 @@ test("Tier B batches 5–6 are local format-min binds, never Featured", () => {
       (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
       `${id} shelf opening`,
     );
-    assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });
