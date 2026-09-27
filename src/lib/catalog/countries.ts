@@ -266,6 +266,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Paul Verlaine (tr. Gertrude Hall)",
     "Pierre Choderlos de Laclos",
     "Pierre Loti",
+    "Pierre Loti (trans. Henri Pene du Bois)",
     "Pierre Louÿs",
     "Romain Rolland",
     "Stendhal",

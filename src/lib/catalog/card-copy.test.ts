@@ -1545,7 +1545,7 @@ test("tbr PM CLEAR ×5 load as local full binds on the Host open", () => {
       scenes: 6,
       breaths: 1712,
       opening: /^The Deacons were at supper\./,
-      scene: /^April$/,
+      scene: /^Chapter I · April$/,
       absent: /Project Gutenberg/,
     },
     color: {
@@ -1562,11 +1562,11 @@ test("tbr PM CLEAR ×5 load as local full binds on the Host open", () => {
     assert.equal(work!.local, true, id);
     assert.match(work!.opening ?? "", want.opening, id);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /Featured/i, id);
-    if (id === "there-is-confusion") {
+    if (id === "there-is-confusion" || id === "miss-lulu-bett") {
       assert.equal(
         existsSync(fileURLToPath(openingUrl(id))),
         true,
-        "afternoon Host opening sits in front of the whole novel",
+        "Host opening sits in front of the whole novel",
       );
     } else {
       assertNoStubOpening(id);
@@ -1599,8 +1599,8 @@ test("tbr PM CLEAR ×5 load as local full binds on the Host open", () => {
   const budden = textWork("buddenbrooks");
   assert.ok(budden.breaths.some((breath) => breath.text === "END OF VOLUME I"));
   const lulu = textWork("miss-lulu-bett");
-  assert.equal(lulu.scenes[0]?.title, "April");
-  assert.equal(lulu.scenes.at(-1)?.title, "September");
+  assert.equal(lulu.scenes[0]?.title, "Chapter I · April");
+  assert.equal(lulu.scenes.at(-1)?.title, "Chapter VI · September");
 });
 
 /** Tier B format-min CLEAR batches 1–2. Later only — never Featured, cold-open untouched. */
@@ -1828,7 +1828,7 @@ test("Tier B batches 3–4 are local format-min binds, never Featured", () => {
     assert.equal(isBoundLocal(work!), true, id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal(coldOpen.has(id), false, id);
-    if (id === "my-brilliant-career" || id === "kim") {
+    if (id === "my-brilliant-career" || id === "kim" || id === "the-sport-of-the-gods") {
       assert.equal(curatorialTrack(id), "next", id);
       assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), true, id);
       assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);

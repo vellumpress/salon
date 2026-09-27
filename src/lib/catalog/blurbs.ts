@@ -636,7 +636,8 @@ const BLURBS: Record<string, string> = {
   "folks-from-dixie": "Dunbar’s stories of Black life after slavery, without the plantation smile.",
   "the-complete-poems-of-paul-laurence-dunbar":
     "Dunbar’s lyrics in dialect and in the English he was told not to waste.",
-  "the-sport-of-the-gods": "A Black family north to New York, and the city that was supposed to be better.",
+  "the-sport-of-the-gods":
+    "Berry Hamilton’s cottage sits back from the Oakley mansion, and the butler’s dignity opens the sit.",
   "iola-leroy": "A woman of mixed race after the war, choosing a people instead of a pass.",
   "of-one-blood": "Hopkins’ Boston and Meroe: a mystery of race that goes underground.",
   "gentlemen-prefer-blondes":
@@ -674,7 +675,10 @@ const BLURBS: Record<string, string> = {
   indiana: "A rainy château in Brie, and Colonel Delmare by the fire.",
   "the-book-of-wonder": "Weary of London, then a centaur’s wedding bells.",
   buddenbrooks: "And what comes next — Lübeck, Part One, Chapter I.",
-  "miss-lulu-bett": "The Deacons were at supper, April in a Midwest household.",
+  "miss-lulu-bett": "The Deacons were at supper, a tulip under the gas jet in an April Midwest house.",
+  ramuntcho: "Sad curlews flee a gray squall over the Bidassoa, and the path starts in moss and rope soles.",
+  "the-pit": "Laura Dearborn waits in the Auditorium vestibule while a February draught moves through Chicago.",
+  reginald: "Reginald is persuaded to the McKillops’ garden-party, and the sit is that sketch only.",
   "a-hero-of-our-time":
     "Post from Tiflis: a dukhan crowd and camels at the foot of Mount Koishaur.",
   "strange-tales":

@@ -144,6 +144,10 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-book-of-wonder": { label: "Shepperalk", region: "ie" },
   buddenbrooks: { label: "Lübeck", region: "de" },
   "miss-lulu-bett": { label: "Midwest", region: "us" },
+  "the-sport-of-the-gods": { label: "Oakley", region: "us-south" },
+  ramuntcho: { label: "Bidassoa", region: "fr" },
+  "the-pit": { label: "Chicago", region: "us" },
+  reginald: { label: "London", region: "gb" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples
