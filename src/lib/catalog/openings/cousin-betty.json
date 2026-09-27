@@ -1,0 +1,141 @@
+{
+  "id": "cousin-betty",
+  "title": "Cousin Betty",
+  "author": "Honoré de Balzac (trans. James Waring)",
+  "year": "1846",
+  "note": "Project Gutenberg 1749. Host: Opening — July 1838 milord / Rue de l’Université / National Guard captain (Cajetani dedication skipped). FR 1846; Waring from PG About only. Inventory 87 medium — no invented Launch rank. LEAD kept. Paris cousin ≠ Eugénie Saumur soft-not-hard.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Opening · Paris",
+      "place": "Opening · Paris",
+      "reentry": "One day, about the middle of July 1838, one of the carriages, then lately introduced to Paris cabstands, and known as *Milords*, was driving down the Rue de l'Universite, conveying a stout man of midd",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "One day, about the middle of July 1838, one of the carriages, then lately introduced to Paris cabstands, and known as *Milords*, was driving down the Rue de l'Universite, conveying a stout man of middle height in the uniform of a captain of the National Guard."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Among the Paris crowd, who are supposed to be so clever, there are some men who fancy themselves infinitely more attractive in uniform than in their ordinary clothes, and who attribute to women so depraved a taste that they believe they will be favorably impressed by the aspect of a busby and of military accoutrements."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The countenance of this Captain of the Second Company beamed with a self-satisfaction that added splendor to his ruddy and somewhat chubby face. The halo of glory that a fortune made in business gives to a retired tradesman sat on his brow, and stamped him as one of the elect of Paris--at least a retired deputy-mayor of his quarter of the town. And you may be sure that the ribbon of the Legion of Honor was not missing from his breast, gallantly padded *a la Prussienne*. Proudly seated in one corner of the *milord*, this splendid person let his gaze wander over the passers-by, who, in Paris, often thus meet an ingratiating smile meant for sweet eyes that are absent."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The vehicle stopped in the part of the street between the Rue de Bellechasse and the Rue de Bourgogne, at the door of a large, newly-build house, standing on part of the court-yard of an ancient mansion that had a garden. The old house remained in its original state, beyond the courtyard curtailed by half its extent."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Only from the way in which the officer accepted the assistance of the coachman to help him out, it was plain that he was past fifty. There are certain movements so undisguisedly heavy that they are as tell-tale as a register of birth. The captain put on his lemon-colored right-hand glove, and, without any question to the gatekeeper, went up the outer steps to the ground of the new house with a look that proclaimed, \"She is mine!\""
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "The *concierges* of Paris have sharp eyes; they do not stop visitors who wear an order, have a blue uniform, and walk ponderously; in short, they know a rich man when they see him."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "This ground floor was entirely occupied by Monsieur le Baron Hulot d'Ervy, Commissary General under the Republic, retired army contractor, and at the present time at the head of one of the most important departments of the War Office, Councillor of State, officer of the Legion of Honor, and so forth."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "This Baron Hulot had taken the name of d'Ervy--the place of his birth--to distinguish him from his brother, the famous General Hulot, Colonel of the Grenadiers of the Imperial Guard, created by the Emperor Comte de Forzheim after the campaign of 1809. The Count, the elder brother, being responsible for his junior, had, with paternal care, placed him in the commissariat, where, thanks to the services of the two brothers, the Baron deserved and won Napoleon's good graces. After 1807, Baron Hulot was Commissary General for the army in Spain."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Having rung the bell, the citizen-captain made strenuous efforts to pull his coat into place, for it had rucked up as much at the back as in front, pushed out of shape by the working of a piriform stomach. Being admitted as soon as the servant in livery saw him, the important and imposing personage followed the man, who opened the door of the drawing-room, announcing:"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"Monsieur Crevel.\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "On hearing the name, singularly appropriate to the figure of the man who bore it, a tall, fair woman, evidently young-looking for her age, rose as if she had received an electric shock."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"Hortense, my darling, go into the garden with your Cousin Betty,\" she said hastily to her daughter, who was working at some embroidery at her mother's side."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "After curtseying prettily to the captain, Mademoiselle Hortense went out by a glass door, taking with her a withered-looking spinster, who looked older than the Baroness, though she was five years younger."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"They are settling your marriage,\" said Cousin Betty in the girl's ear, without seeming at all offended at the way in which the Baroness had dismissed them, counting her almost as zero."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "The cousin's dress might, at need, have explained this free-and-easy demeanor. The old maid wore a merino gown of a dark plum color, of which the cut and trimming dated from the year of the Restoration; a little worked collar, worth perhaps three francs; and a common straw hat with blue satin ribbons edged with straw plait, such as the old-clothes buyers wear at market. On looking down at her kid shoes, made, it was evident, by the veriest cobbler, a stranger would have hesitated to recognize Cousin Betty as a member of the family, for she looked exactly like a journeywoman sempstress. But she did not leave the room without bestowing a little friendly nod on Monsieur Crevel, to which that gentleman responded by a look of mutual understanding."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"You are coming to us to-morrow, I hope, Mademoiselle Fischer?\" said he."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"You have no company?\" asked Cousin Betty."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"My children and yourself, no one else,\" replied the visitor."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"Very well,\" replied she; \"depend on me.\""
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"And here am I, madame, at your orders,\" said the citizen-captain, bowing again to Madame Hulot."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "He gave such a look at Madame Hulot as Tartuffe casts at Elmire--when a provincial actor plays the part and thinks it necessary to emphasize its meaning--at Poitiers, or at Coutances."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"If you will come into this room with me, we shall be more conveniently placed for talking business than we are in this room,\" said Madame Hulot, going to an adjoining room, which, as the apartment was arranged, served as a cardroom."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "It was divided by a slight partition from a boudoir looking out on the garden, and Madame Hulot left her visitor to himself for a minute, for she thought it wise to shut the window and the door of the boudoir, so that no one should get in and listen. She even took the precaution of shutting the glass door of the drawing-room, smiling on her daughter and her cousin, whom she saw seated in an old summer-house at the end of the garden. As she came back she left the cardroom door open, so as to hear if any one should open that of the drawing-room to come in."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "As she came and went, the Baroness, seen by nobody, allowed her face to betray all her thoughts, and any one who could have seen her would have been shocked to see her agitation. But when she finally came back from the glass door of the drawing-room, as she entered the cardroom, her face was hidden behind the impenetrable reserve which every woman, even the most candid, seems to have at her command."
+    }
+  ]
+}
