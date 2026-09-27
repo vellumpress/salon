@@ -1,0 +1,196 @@
+{
+  "id": "tess-of-the-durbervilles",
+  "title": "Tess of the d’Urbervilles",
+  "author": "Thomas Hardy",
+  "year": "1891",
+  "note": "Project Gutenberg 110. Host: Phase the First Ch I — evening May walk / Marlott Vale / “Sir John” / Durbeyfield (Prefaces / Explanatory Note skipped). Year 1891. Inventory 91 medium — no invented Launch rank. LEAD kept. Soft Wessex carefully ≠ Jude.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Phase the First · Chapter I · Wessex / England",
+      "place": "Phase the First · Chapter I · Wessex / England",
+      "reentry": "On an evening in the latter part of May a middle-aged man was walking homeward from Shaston to the village of Marlott, in the adjoining Vale of Blakemore, or Blackmoor. The pair of legs that carried h",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "On an evening in the latter part of May a middle-aged man was walking homeward from Shaston to the village of Marlott, in the adjoining Vale of Blakemore, or Blackmoor. The pair of legs that carried him were rickety, and there was a bias in his gait which inclined him somewhat to the left of a straight line. He occasionally gave a smart nod, as if in confirmation of some opinion, though he was not thinking of anything in particular. An empty egg-basket was slung upon his arm, the nap of his hat was ruffled, a patch being quite worn away at its brim where his thumb came in taking it off. Presently he was met by an elderly parson astride on a gray mare, who, as he rode, hummed a wandering tune."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"Good night t'ee,\" said the man with the basket."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"Good night, Sir John,\" said the parson."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The pedestrian, after another pace or two, halted, and turned round."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"Now, sir, begging your pardon; we met last market-day on this road about this time, and I said 'Good night,' and you made reply '*Good night, Sir John*,' as now.\""
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"I did,\" said the parson."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"And once before that—near a month ago.\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"I may have.\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"Then what might your meaning be in calling me 'Sir John' these different times, when I be plain Jack Durbeyfield, the haggler?\""
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "The parson rode a step or two nearer."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"It was only my whim,\" he said; and, after a moment's hesitation: \"It was on account of a discovery I made some little time ago, whilst I was hunting up pedigrees for the new county history. I am Parson Tringham, the antiquary, of Stagfoot Lane. Don't you really know, Durbeyfield, that you are the lineal representative of the ancient and knightly family of the d'Urbervilles, who derive their descent from Sir Pagan d'Urberville, that renowned knight who came from Normandy with William the Conqueror, as appears by Battle Abbey Roll?\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"Never heard it before, sir!\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"Well it's true. Throw up your chin a moment, so that I may catch the profile of your face better. Yes, that's the d'Urberville nose and chin—a little debased. Your ancestor was one of the twelve knights who assisted the Lord of Estremavilla in Normandy in his conquest of Glamorganshire. Branches of your family held manors over all this part of England; their names appear in the Pipe Rolls in the time of King Stephen. In the reign of King John one of them was rich enough to give a manor to the Knights Hospitallers; and in Edward the Second's time your forefather Brian was summoned to Westminster to attend the great Council there. You declined a little in Oliver Cromwell's time, but to no serious extent, and in Charles the Second's reign you were made Knights of the Royal Oak for your loyalty. Aye, there have been generations of Sir Johns among you, and if knighthood were hereditary, like a baronetcy, as it practically was in old times, when men were knighted from father to son, you would be Sir John now.\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"Ye don't say so!\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"In short,\" concluded the parson, decisively smacking his leg with his switch, \"there's hardly such another family in England.\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"Daze my eyes, and isn't there?\" said Durbeyfield. \"And here have I been knocking about, year after year, from pillar to post, as if I was no more than the commonest feller in the parish.... And how long hev this news about me been knowed, Pa'son Tringham?\""
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "The clergyman explained that, as far as he was aware, it had quite died out of knowledge, and could hardly be said to be known at all. His own investigations had begun on a day in the preceding spring when, having been engaged in tracing the vicissitudes of the d'Urberville family, he had observed Durbeyfield's name on his waggon, and had thereupon been led to make inquiries about his father and grandfather till he had no doubt on the subject."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"At first I resolved not to disturb you with such a useless piece of information,\" said he. \"However, our impulses are too strong for our judgement sometimes. I thought you might perhaps know something of it all the while.\""
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"Well, I have heard once or twice, 'tis true, that my family had seen better days afore they came to Blackmoor. But I took no notice o't, thinking it to mean that we had once kept two horses where we now keep only one. I've got a wold silver spoon, and a wold graven seal at home, too; but, Lord, what's a spoon and seal?... And to think that I and these noble d'Urbervilles were one flesh all the time. 'Twas said that my gr't-granfer had secrets, and didn't care to talk of where he came from.... And where do we raise our smoke, now, parson, if I may make so bold; I mean, where do we d'Urbervilles live?\""
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"You don't live anywhere. You are extinct—as a county family.\""
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"That's bad.\""
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"Yes—what the mendacious family chronicles call extinct in the male line—that is, gone down—gone under.\""
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Then where do we lie?\""
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"At Kingsbere-sub-Greenhill: rows and rows of you in your vaults, with your effigies under Purbeck-marble canopies.\""
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"And where be our family mansions and estates?\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"You haven't any.\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "\"Oh? No lands neither?\""
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "\"None; though you once had 'em in abundance, as I said, for your family consisted of numerous branches. In this county there was a seat of yours at Kingsbere, and another at Sherton, and another in Millpond, and another at Lullstead, and another at Wellbridge.\""
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "\"And shall we ever come into our own again?\""
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"Ah—that I can't tell!\""
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "\"And what had I better do about it, sir?\" asked Durbeyfield, after a pause."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "\"Oh—nothing, nothing; except chasten yourself with the thought of 'how are the mighty fallen.' It is a fact of some interest to the local historian and genealogist, nothing more. There are several families among the cottagers of this county of almost equal lustre. Good night.\""
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "\"But you'll turn back and have a quart of beer wi' me on the strength o't, Pa'son Tringham? There's a very pretty brew in tap at The Pure Drop—though, to be sure, not so good as at Rolliver's.\""
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "\"No, thank you—not this evening, Durbeyfield. You've had enough already.\" Concluding thus, the parson rode on his way, with doubts as to his discretion in retailing this curious bit of lore."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "When he was gone, Durbeyfield walked a few steps in a profound reverie, and then sat down upon the grassy bank by the roadside, depositing his basket before him. In a few minutes a youth appeared in the distance, walking in the same direction as that which had been pursued by Durbeyfield. The latter, on seeing him, held up his hand, and the lad quickened his pace and came near."
+    }
+  ]
+}

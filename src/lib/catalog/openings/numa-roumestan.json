@@ -1,0 +1,146 @@
+{
+  "id": "numa-roumestan",
+  "title": "Numa Roumestan",
+  "author": "Alphonse Daudet (trans. Charles De Kay)",
+  "year": "1881",
+  "note": "Project Gutenberg 69808. Host: Ch I To the Arena! — Aps amphitheatre / July festival / Numa (frontispiece copyright notes skipped; Host Provence first). FR 1881; De Kay from PG About only (EN 1899–1900). Inventory 82 medium. Soft Provence carefully ≠ Paris Cousin Betty.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · To the Arena · Provence / France",
+      "place": "Chapter I · To the Arena · Provence / France",
+      "reentry": "That Sunday--it was a scorching hot Sunday in July at the time of the yearly competitions for the department--there was a great open-air festival held in the ancient amphitheatre of Aps in Provence. A",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "That Sunday--it was a scorching hot Sunday in July at the time of the yearly competitions for the department--there was a great open-air festival held in the ancient amphitheatre of Aps in Provence. All the town was there--the weavers from the New Road, the aristocrats of the Calade quarter, and some people even came all the way from Beaucaire."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"Fifty thousand persons at the lowest estimate,\" said the *Forum* in its account the next day; but then we must allow for Provençal puffing."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The truth was that an enormous crowd was crushed together upon the sun-baked stone benches of the old amphitheatre, just as in the palmy days of the Antonines, and it was evident that the meet of the Society of Agriculture was far from being the main attraction to this overflow of the folk. Something more than the Landes horse-races was needed, or the prize-fights for men and \"half men,\" the athletic games of \"strangle the cat\" and \"jump the swineskin,\" or the contests for fifers and tabor-players, as old a story to the townspeople as the ancient red stones of the Arena; something more was needed to keep this multitude standing for two hours under that blinding, murderous sun, upon those burning flags, breathing in an atmosphere of flame and dust flavored with gunpowder, risking blindness, sunstroke, fevers and all the other dangers and tortures attendant on what is called down there in Provence an open-air festival."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The grand attraction of the annual competitions was Numa Roumestan."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Ah, well; the proverb \"No man is a prophet\" etc. is certainly true when applied to painters and poets, whose fellow-countrymen in fact are always the last to acknowledge their claims to superiority for whatever is ideal and lacking in tangible results; but it does not apply to statesmen, to political or industrial celebrities, those mighty advertised fames whose currency consists of favors and influence, fames that reflect their glory on city and townsmen in the form of benefits of every sort and kind."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "For the last ten years Numa, the great Numa, leader and Deputy representing all the professions, has been the prophet of Provence; for ten years the town of Aps has shown toward her illustrious son the tender care and effusiveness of a mother, one of those mothers of the South quick in her expressions, lively in her exclamations and gesticulatory caresses."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "When he comes each summer during the vacation of the Chamber of Deputies, the ovation begins as soon as he appears at the station! There are the Orpheons swelling out their embroidered banners as they intone their heroic choral songs. The railway porters are in waiting, seated on the steps until the ancient family coach which always comes for the \"leader\" has made a few turns of its big wheels down the alley of big plane-trees on the Avenue Berchère; then they take the horses out and put themselves into the shafts and draw the great man with their own hands, amid the shouts of the populace and the waving of hats, as far as the Portal mansion, where he gets out. This enthusiasm has so completely passed into the stage of tradition in the rites of his arrival that the horses now stop of themselves, like a team in a post-chaise, at the exact corner where they are accustomed to be taken out by the porters; no amount of beating could induce them to go a step farther."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "From the first day the whole city has changed its appearance. Here is no longer that melancholy palace of the prefect where long siestas are lulled by the strident note of the locusts in the parched trees on the Cours. Even in the hottest part of the day the esplanade is alive and the streets are filled with hurrying people arrayed in solemn black suits and hats of ceremony, all sharply defined in the brilliant sunlight, the shadows of their epileptic gestures cut in black against the white walls."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "The carriages of the Bishop and the President shake the highroad; then delegations arrive from the aristocratic Faubourg where Roumestan is adored because of his royalist convictions; next deputations from the women warpers march in bands the width of the street, their heads held high under their Arlesian caps."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "The inns overflow with the country people, farmers from the Camargue or the Crau, whose unhitched wagons crowd the small squares and streets as on a market day. In the evening the cafés crowded with people remain open well on into the night, and the windows of the club of the \"Whites,\" lighted up until an impossible hour, vibrate with the peals of a voice that belongs to the popular god."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Not a prophet in his own country? 'Twas only necessary to look at the Arena under the intense blue sky of that Sunday of July 1875, note the indifference of the crowd to the games going on in the circus below, and all the faces turned in the same direction, toward the municipal platform, where Roumestan was seated surrounded by braided coats and sunshades for festivals and gay dresses of many-colored silks. 'Twas only necessary to listen to the talk and cries of ecstasy and the simple words of admiration coming in loud voices from this good people of Aps, some expressed in Provençal and some in a barbarous kind of French well rubbed with garlic, but all uttered with an accent as implacable as is the sun down there, an accent which cuts out and gives its own to every syllable and will not so much as spare us the dot over an \"i.\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"*Diou! qu'es bèou!* God! how beautiful he is!\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"He is a bit stouter than he was last year.\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"That makes him look all the more imposing.\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"Don't push so! there is room for everybody!\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"Look at him, my son; there's our Numa. When you are grown up you can say that you have seen him, *qué!*\""
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"His Bourbon nose is all there! and not one of his teeth missing!\""
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"Not a single gray hair, either!\""
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"*Té*, I should say not! he is not so very old yet. He was born in '32--the year that Louis Philippe pulled down the mission crosses, *pecaïré!*\""
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"That scoundrel of a Philippe!\""
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"They scarcely show, those forty-three years of his.\""
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"Sure enough, they certainly don't.... *Té!* here, great star--\""
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "And with a bold gesture a big girl with burning eyes throws a kiss toward him from afar that resounds through the air like the cry of a bird."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"Take care, Zette--suppose his wife should see you.\""
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"The one in blue, is that his wife?\""
+    }
+  ]
+}

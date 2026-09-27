@@ -98,6 +98,16 @@ export const PITCHES: Record<string, string> = {
     "When old Mikolai on his death-bed left Hania to my guardianship and conscience. This sit is the Hania novella only — Chapter I, a Byzantine chapel, and snow on the wind. Skip the Prologue and the other pieces. Henryk Sienkiewicz, in Jeremiah Curtin’s English, Polish 1876 / English 1897. Soft Poland, carefully. This is not The Peasants. Inventory is medium. No score is invented for this sit.",
   "the-toys-of-peace":
     "Harvey, said Eleanor Bope, handing her brother a cutting from a London morning paper. This sit is The Toys of Peace only — the National Peace Council and the peace toys. Skip the memoir, the contents, and the other papers. Stop at the end of the sketch. Saki’s 1919 book. One sketch this sit; the cycle continues. Soft Saki, carefully. This is not Reginald. Inventory is easy. No score is invented for this sit.",
+  "tess-of-the-durbervilles":
+    "On an evening in the latter part of May a middle-aged man was walking homeward from Shaston to the village of Marlott. Phase the First, Chapter I — the Vale, Sir John, and Durbeyfield. Skip the Prefaces and the Explanatory Note. Thomas Hardy’s 1891 novel. Soft Wessex, carefully. This is not Jude. The lead is this book, not Captains Courageous, not Numa Roumestan, and not Dracula. Inventory 91 is medium. No score is invented for this sit.",
+  "captains-courageous":
+    "The weather door of the smoking-room had been left open to the North Atlantic fog. Chapter I — the weather door, the fog, and the Cheyne boy. Skip the produced-by credit. Rudyard Kipling’s 1897 novel. Soft Grand Banks, carefully. This is not Melville’s naval fiction, not Kim, and not Quebec. Inventory 84 is easy. No score is invented for this sit.",
+  "numa-roumestan":
+    "That Sunday was a scorching hot Sunday in July, at the yearly competitions. Chapter I, To the Arena — the amphitheatre at Aps, the July festival, and Numa. Skip the frontispiece copyright notes. Alphonse Daudet, in Charles De Kay’s English, French 1881. Soft Provence, carefully. This is not Cousin Betty’s Paris. Inventory 82 is medium. No score is invented for this sit.",
+  dracula:
+    "3 May, Bistritz. Left Munich at 8:35 in the evening. Chapter I, Harker’s Journal — Bistritz and paprika hendl. Skip the Contents. The Host opens in Transylvania. Bram Stoker’s 1897 novel. Soft Transylvania, carefully. This is not Eseldorf in Austria. Inventory 81 is easy. No score is invented for this sit.",
+  "the-tug-of-love":
+    "When Elias Goldenberg, Belcovitch’s head cutter, betrothed himself to Fanny Fersht. This sit is The Tug of Love only — Elias, Fanny, Sugarman, and the ring. Skip the ads, the contents, and the other stories. Stop at the end of the sketch. Israel Zangwill’s 1907 book. One sketch this sit; the cycle continues. Soft Zangwill, carefully. This is not The King of Schnorrers. Inventory 88 is medium. No score is invented for this sit.",
   berlin:
     "Berlin talks through Franz Biberkopf after prison — noise, politics, and fate in Döblin’s street choir. A city that will not let a man start clean.",
   passing:
@@ -110,8 +120,6 @@ export const PITCHES: Record<string, string> = {
     "Wilde’s beautiful face stays young while the portrait keeps the score. London drawing rooms, opium dens, and a bargain that looks like taste.",
   bovary:
     "Provincial longing, debt, and the romance novels that ruin a life. Flaubert’s Emma wants a finer plot than the town will sell her.",
-  dracula:
-    "Letters and journals track a count who crosses into England hungry. Stoker’s paperwork of dread — trains, telegrams, and blood under polite roofs.",
   anna:
     "Passion against the grain of society — and the train that waits at the end. Tolstoy’s Anna wants a life the salon cannot hold.",
   underground:
