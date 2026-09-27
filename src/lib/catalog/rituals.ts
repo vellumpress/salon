@@ -303,6 +303,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `It was in 1590—winter. Austria was far away from the world, and asleep. Chapter 1 — Eseldorf. Skip the other tales. Mark Twain’s 1916 novella only. Soft Austria, carefully. This is not Schnitzler’s Vienna. Notion is easy. Launch shelf is no — do not inflate it.`,
   "children-of-the-frost":
     `Old Koskoosh listened greedily. This sit is The Law of Life only — Old Koskoosh, Sit-cum-to-ha, the dogs, and a camp that must be broken. Skip the contents and the other tales. Jack London’s 1902 book. One tale this sit; the cycle continues. Soft Yukon, carefully, after the earlier American sits. Inventory is easy. No score is invented for this sit.`,
+  "the-poison-tree":
+    `Nagendra Natha Datta is about to travel by boat. It is the month Joisto, the time of storms. Chapter I, Nagendra’s Journey by Boat — Surja Mukhi and the boat to Calcutta. Skip the Arnold preface. Bankim Chandra Chatterjee, in Miriam S. Knight’s English, Bengali 1873 / English 1884. Soft Bengal domestic, carefully. This is not Tagore’s Home and the World. The lead is this book, not Cosmopolis, not The Woman Who Did, and not Billy Budd. Inventory is medium. No score is invented for this sit.`,
+  cosmopolis:
+    `Although the narrow stall, flooded with heaped-up books and papers, left the visitor just room enough to stir. Chapter I, A Dilettante and a Believer — Ribalta, the Place d’Espagne, and Rome. Skip the Lemaître introduction and the author’s introduction. Paul Bourget’s 1892 novel. Soft Rome, carefully. This is not Capri. No translator is invented for this sit. Inventory is medium. No score is invented for this sit.`,
+  "the-woman-who-did":
+    `Mrs Dewsbury’s lawn was held by those who knew it the loveliest in Surrey. Chapter I — yellow clover and the oak-clad Weald. Skip the preface. Grant Allen’s 1895 novel. Soft England free-love, carefully. This is not Ann Veronica. Inventory is easy. No score is invented for this sit.`,
+  "billy-budd":
+    `In the time before steamships, a stroller along the docks would notice the Handsome Sailor. This sit is Billy Budd, Foretopman only — Chapter I. Skip the other pieces. Herman Melville’s 1924 novella. Soft Melville, carefully. This is not White Jacket. Inventory is medium. No score is invented for this sit.`,
+  "malay-sketches":
+    `A quarter of a century ago there lived on the bank of a broad river, just where stream meets tide, a Malay Raja and his youthful wife. This sit is A Malay Romance only — Raja Maimûnah and the stream that meets the tide. Skip the contents and the other sketches. Frank Swettenham’s 1895 book; the printing is 1903. One tale this sit; the cycle continues. Soft Malaya, carefully. Colonial administration stays as printed. Notion is easy. Launch shelf is no — do not inflate it.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -648,7 +658,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-napoleon-of-notting-hill",
       "the-party-and-other-stories",
       "the-pit",
-      "the-poison-tree",
       "the-reign-of-greed",
       "the-rise-of-david-levinsky",
       "the-rise-of-silas-lapham",
@@ -1008,6 +1017,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "ann-veronica",
       "the-great-hunger",
       "the-mysterious-stranger",
+      // Mira Sun 27 Sep 2026 POST-#175 CLEAR — The Poison Tree leads. Never Featured.
+      // LEAD kept — not Cosmopolis, not The Woman Who Did, not Billy Budd.
+      // Earlier before-sleep inventory listing of The Poison Tree moves here so the cycle reads in order.
+      // Malay Sketches is Waking up (A Malay Romance only).
+      "the-poison-tree",
+      "cosmopolis",
+      "the-woman-who-did",
+      "billy-budd",
     ],
   },
   {
@@ -1088,6 +1105,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "west-african-folk-tales",
       // Mira Sun 27 Sep 2026 POST-#174 CLEAR — The Law of Life only.
       "children-of-the-frost",
+      // Mira Sun 27 Sep 2026 POST-#175 CLEAR — A Malay Romance only.
+      "malay-sketches",
     ],
   },
   {
@@ -1229,6 +1248,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "ann-veronica",
       "the-great-hunger",
       "the-mysterious-stranger",
+      // Mira Sun 27 Sep 2026 POST-#175 CLEAR — The Poison Tree leads. Never Featured.
+      // LEAD kept — not Cosmopolis, not The Woman Who Did, not Billy Budd.
+      // Earlier before-sleep inventory listing of The Poison Tree moves here so the cycle reads in order.
+      // Malay Sketches is Waking up (A Malay Romance only).
+      "the-poison-tree",
+      "cosmopolis",
+      "the-woman-who-did",
+      "billy-budd",
     ],
   },
   {
@@ -1369,6 +1396,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "ann-veronica",
       "the-great-hunger",
       "the-mysterious-stranger",
+      // Mira Sun 27 Sep 2026 POST-#175 CLEAR — The Poison Tree leads. Never Featured.
+      // LEAD kept — not Cosmopolis, not The Woman Who Did, not Billy Budd.
+      // Earlier before-sleep inventory listing of The Poison Tree moves here so the cycle reads in order.
+      // Malay Sketches is Waking up (A Malay Romance only).
+      "the-poison-tree",
+      "cosmopolis",
+      "the-woman-who-did",
+      "billy-budd",
     ],
   },
   {
@@ -1543,7 +1578,6 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-party-and-other-stories": 5,
   "the-pit": 6,
   "the-sport-of-the-gods": 5,
-  "the-poison-tree": 5,
   "the-reign-of-greed": 5,
   "the-rise-of-david-levinsky": 5,
   "the-rise-of-silas-lapham": 7,
@@ -1630,6 +1664,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "ann-veronica": 6,
   "the-mysterious-stranger": 6,
   "children-of-the-frost": 12,
+  "the-poison-tree": 9,
+  cosmopolis: 6,
+  "the-woman-who-did": 6,
+  "billy-budd": 6,
+  "malay-sketches": 12,
   "the-patrician": 5,
   "the-price-of-love": 5,
   "the-private-papers-of-henry-ryecroft": 5,

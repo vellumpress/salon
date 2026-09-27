@@ -1661,9 +1661,13 @@ test("Tier B batches 1–2 are local format-min binds, never Featured", () => {
     assert.ok(work, id);
     assert.equal(work!.local, true, id);
     assert.equal(isBoundLocal(work!), true, id);
-    assert.equal(curatorialTrack(id), "later", id);
+    assert.equal(curatorialTrack(id), id === "billy-budd" ? "next" : "later", id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    assertNoStubOpening(id);
+    if (id === "billy-budd") {
+      assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
+    } else {
+      assertNoStubOpening(id);
+    }
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
@@ -2256,7 +2260,7 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     "aarons-rod": { gutenberg: 4520, form: "novel", scenes: 21, breaths: 3715 },
     "captains-courageous": { gutenberg: 2225, form: "novel", scenes: 10, breaths: 1286 },
     "casanovas-homecoming": { gutenberg: 9310, form: "novel", scenes: 12, breaths: 550 },
-    cosmopolis: { gutenberg: 3967, form: "novel", scenes: 12, breaths: 1043 },
+    cosmopolis: { gutenberg: 3967, form: "novel", scenes: 12, breaths: 1041 },
     "ditte-girl-alive": { gutenberg: 31496, form: "novel", scenes: 32, breaths: 1598 },
     erewhon: { gutenberg: 1906, form: "novel", scenes: 29, breaths: 607 },
     "look-back-on-happiness": { gutenberg: 8445, form: "novel", scenes: 38, breaths: 1817 },
@@ -2277,7 +2281,7 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     assert.equal(work!.form, want.form, id);
     assert.equal(work!.gutenberg, want.gutenberg, id);
     assert.equal(work!.breaths, want.breaths, id);
-    const seatedOnNext = id === "daisy-miller" || id === "ditte-girl-alive" || id === "erewhon";
+    const seatedOnNext = id === "daisy-miller" || id === "ditte-girl-alive" || id === "erewhon" || id === "cosmopolis";
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), seatedOnNext, id);
     assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);

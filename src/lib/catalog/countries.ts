@@ -396,6 +396,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
   India: [
     "Bankim Chandra Chatterjee",
     "Bankim Chandra Chatterjee (tr. Miriam S. Knight)",
+    "Bankim Chandra Chatterjee (trans. Miriam S. Knight)",
     "Bankim Chandra Chatterjee (tr. Nares Chandra Sen-Gupta)",
     "Bibhutibhushan Bandyopadhyay",
     "Kabir (tr. Rabindranath Tagore)",

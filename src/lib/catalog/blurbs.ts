@@ -702,7 +702,7 @@ const BLURBS: Record<string, string> = {
   "the-heavenly-twins": "Sarah Grand’s New Woman novel: marriage as a public health problem.",
   "the-beth-book": "A girl artist against the available script for daughters.",
   keynotes: "George Egerton’s New Woman stories — desire written without asking permission.",
-  "the-woman-who-did": "Grant Allen’s heroine who will not marry, and the novel that made a scandal of it.",
+  "the-woman-who-did": "Mrs Dewsbury’s lawn in Surrey is yellow clover, and the oak-clad Weald opens beyond it.",
   "the-green-carnation": "A green carnation in an evening coat, and a Piccadilly glass that already knows the pose.",
   "the-sorrows-of-satan": "Corelli’s bestseller: the devil in London society, taking notes.",
   "esther-waters": "She stood on the platform watching the receding train, in a faded yellow dress.",
@@ -768,7 +768,7 @@ const BLURBS: Record<string, string> = {
     "Kerbelai Hassan, barber of Ispahan, and a razor that starts the road. Period language stays.",
   "the-purple-land":
     "Three chapters in the story of a life open into the Banda Oriental — Uruguay, not Guyana.",
-  "malay-sketches": "Swettenham’s peninsula: colonial notes that cannot quite own the place.",
+  "malay-sketches": "A quarter of a century ago, where stream meets tide, this sit is A Malay Romance only.",
   "in-court-and-kampong": "Clifford’s Malay world: court, village, and the Englishman taking dictation.",
   "malay-annals-sejarah-melayu": "The Sejarah Melayu: kings, cities, and the peninsula remembering itself.",
   "the-autobiography-of-munshi-abdullah-hikayat-abdullah":
@@ -789,6 +789,9 @@ const BLURBS: Record<string, string> = {
   erewhon: "The narrator leaves home for waste crown-land and a sheep-farm across the range.",
   "the-great-hunger": "A northwester gale drives spindrift across a rocky Norwegian fjord and the fisher huts.",
   "children-of-the-frost": "Old Koskoosh listens while the camp must be broken and the dogs wait on the Yukon.",
+  "the-poison-tree": "Nagendra Natha Datta is about to travel by boat in Joisto, and Surja Mukhi makes him promise to leave if a storm rises.",
+  cosmopolis: "A narrow bookstall in Rome leaves the visitor just room enough to stir.",
+  "billy-budd": "Before steamships, a stroller on the docks meets the Handsome Sailor in Billy Budd, Foretopman.",
   "sappho-one-hundred-lyrics": "Carman’s Sappho reconstructions — fragments turned into a book of desire.",
   "a-japanese-nightingale": "Sunset lingers over the bay, and a storm dance begins on a tea-house island.",
   "white-jacket": "Not a very white jacket, but white enough, on a frigate leaving Callao for Cape Horn.",
