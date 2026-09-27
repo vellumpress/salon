@@ -1008,6 +1008,15 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "way-of-all-flesh",
   "family-at-gilje",
   "resurrection",
+  // Mira Sun 27 Sep 2026 POST-#181 CLEAR — Typee leads Next. Never Featured.
+  // LEAD kept — not Kangaroo, not Casanova’s Homecoming, not The Mother.
+  // Lord Arthur Savile’s Crime is Rituals (the title tale only), not this tail.
+  // Earlier Typee, Kangaroo, and Casanova’s Homecoming shelf rows keep these slugs.
+  // Sun POST-#180 Shadow of the Cathedral and the earlier packs stay ahead.
+  "typee",
+  "kangaroo",
+  "casanovas-homecoming",
+  "the-mother",
 ] as const;
 
 /**

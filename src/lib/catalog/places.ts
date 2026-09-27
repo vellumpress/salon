@@ -197,6 +197,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "family-at-gilje": { label: "Norway", region: "no" },
   resurrection: { label: "Russia", region: "ru" },
   widdershins: { label: "England", region: "gb" },
+  typee: { label: "Marquesas", region: "ws" },
+  kangaroo: { label: "Sydney", region: "au" },
+  "casanovas-homecoming": { label: "Vienna", region: "at" },
+  "the-mother": { label: "Sardinia", region: "it" },
+  "lord-arthur-saviles-crime": { label: "England", region: "gb" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples

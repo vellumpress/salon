@@ -236,7 +236,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "jude-the-obscure":
     `The schoolmaster was leaving the village, and everybody seemed sorry. A tilted cart out of Marygreen. Hardy’s Wessex novel continues. This is not Tess.`,
   "casanovas-homecoming":
-    `Casanova is in his fifty-third year, circling toward Venice like a wounded bird, and the petitions home have turned humble.`,
+    `Casanova was in his fifty-third year. Though no longer driven by the lust of adventure that had spurred him in his youth, he was still hunted athwart the world. The opening — the fifty-third year, a wounded bird, and the Supreme Council. Skip the front matter. Arthur Schnitzler, in Eden and Cedar Paul’s English, 1918. The German year is 1918; the English is 1922. Soft Vienna, carefully. This is not The Road to the Open or Bertha Garlan. Inventory 84 is medium. No score is invented for this sit.`,
   "letters-of-a-javanese-princess":
     `Kartini writes from colonial Java in 1899, hungry for the modern girl while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. The Rituals sit is Letter I, the cloistered-arms beat; if you Host further, name that colonial frame for the room first.`,
   "blood-and-sand":
@@ -363,6 +363,14 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Though hundreds of thousands had done their very best to disfigure the small piece of land on which they were crowded together. Chapter I — spring in the town, the prison office, and 28 April. Skip the Translator’s Preface. Leo Tolstoy, in Louise Maude’s English, 1899. Soft Russia, carefully. This is not A Slav Soul, The Village, or Virgin Soil. Soft Tolstoy, carefully. This is not Hadji Murad. Inventory 85 is medium. No score is invented for this sit.`,
   widdershins:
     `The three or four “To Let” boards had stood within the low paling as long as the inhabitants of the little triangular “Square” could remember. This sit is The Beckoning Fair One only — To Let boards and an old red brick square. Skip the Contents and the other stories. Stop at the end of the tale. Oliver Onions’s 1911 tale. One tale this sit. Soft gothic, carefully. This is not Dracula or the House of the Seven Gables. Soft England, carefully. Inventory 83 is easy. No score is invented for this sit.`,
+  typee:
+    `Six months at sea! Yes, reader, as I live, six months out of sight of land. Chapter One — the Marquesas and Nukuheva. Skip the Preface. Herman Melville’s 1846 novel. Soft Pacific, carefully. This is not Tahiti after The Moon and Sixpence. Soft Melville, carefully. This is not White Jacket or Billy Budd. The lead is this book, not Kangaroo, not Casanova’s Homecoming, and not The Mother. Inventory 81 is medium. No score is invented for this sit.`,
+  kangaroo:
+    `A bunch of workmen were lying on the grass of the park beside Macquarie Street, in the dinner hour. Chapter I — Macquarie Street, a cream taxi, and the Torestin bungalow. Skip the Contents. D. H. Lawrence’s 1923 novel. Soft Australia, carefully. This is not the bush of My Brilliant Career or the Mexico of The Plumed Serpent. Soft Lawrence, carefully. Inventory 83 is medium. No score is invented for this sit.`,
+  "the-mother":
+    `To-night again Paul was preparing to go out, it seemed. Chapter I — Paul preparing, the wind barricade, and the orchard’s little door. Skip the Translator’s Note and the Preface. Grazia Deledda, in Mary G. Steegmann’s English, 1920. The Italian year is 1920; the English is 1923. Soft Sardinia, carefully. This is not Florence, Capri, or Rome. Soft Deledda, carefully. This is not After the Divorce. Inventory 79 is medium. No score is invented for this sit.`,
+  "lord-arthur-saviles-crime":
+    `It was Lady Windermere’s last reception before Easter, and Bentinck House was even more crowded than usual. This sit is Lord Arthur Savile’s Crime only — Lady Windermere’s last reception and Bentinck House. Skip the Contents and the other stories. Stop at the end of the tale. Oscar Wilde’s 1891 tale. One tale this sit. Soft Wilde, carefully. This is not Dorian Gray. Soft England, carefully. This is not The Way of All Flesh or A Cross Line. Soft gothic, carefully. This is not The Beckoning Fair One, Dracula, or the House of the Seven Gables. Inventory 79 is easy. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1105,6 +1113,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "way-of-all-flesh",
       "family-at-gilje",
       "resurrection",
+      // Mira Sun 27 Sep 2026 POST-#181 CLEAR — Typee leads. Never Featured.
+      // LEAD kept — not Kangaroo, not Casanova’s Homecoming, not The Mother.
+      // Earlier shelf rows for Typee, Kangaroo, and Casanova’s Homecoming keep these slugs.
+      // Casanova’s Homecoming also stays on Bite-sized. Lord Arthur Savile’s Crime is Waking up (the title tale only).
+      "typee",
+      "kangaroo",
+      "casanovas-homecoming",
+      "the-mother",
     ],
   },
   {
@@ -1197,6 +1213,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "a-cross-line",
       // Mira Sun 27 Sep 2026 POST-#180 CLEAR — The Beckoning Fair One only.
       "widdershins",
+      // Mira Sun 27 Sep 2026 POST-#181 CLEAR — Lord Arthur Savile’s Crime only.
+      "lord-arthur-saviles-crime",
     ],
   },
   {
@@ -1386,6 +1404,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "way-of-all-flesh",
       "family-at-gilje",
       "resurrection",
+      // Mira Sun 27 Sep 2026 POST-#181 CLEAR — Typee leads. Never Featured.
+      // LEAD kept — not Kangaroo, not Casanova’s Homecoming, not The Mother.
+      // Earlier shelf rows for Typee, Kangaroo, and Casanova’s Homecoming keep these slugs.
+      // Casanova’s Homecoming also stays on Bite-sized. Lord Arthur Savile’s Crime is Waking up (the title tale only).
+      "typee",
+      "kangaroo",
+      "casanovas-homecoming",
+      "the-mother",
     ],
   },
   {
@@ -1574,6 +1600,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "way-of-all-flesh",
       "family-at-gilje",
       "resurrection",
+      // Mira Sun 27 Sep 2026 POST-#181 CLEAR — Typee leads. Never Featured.
+      // LEAD kept — not Kangaroo, not Casanova’s Homecoming, not The Mother.
+      // Earlier shelf rows for Typee, Kangaroo, and Casanova’s Homecoming keep these slugs.
+      // Casanova’s Homecoming also stays on Bite-sized. Lord Arthur Savile’s Crime is Waking up (the title tale only).
+      "typee",
+      "kangaroo",
+      "casanovas-homecoming",
+      "the-mother",
     ],
   },
   {
@@ -1837,6 +1871,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "way-of-all-flesh": 4,
   "family-at-gilje": 4,
   widdershins: 12,
+  typee: 10,
+  kangaroo: 9,
+  "casanovas-homecoming": 5,
+  "the-mother": 7,
+  "lord-arthur-saviles-crime": 12,
   "royal-highness": 4,
   ramona: 6,
   "almayers-folly": 6,
