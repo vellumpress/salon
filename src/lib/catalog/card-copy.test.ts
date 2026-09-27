@@ -1735,11 +1735,11 @@ test("Tier B batches 7–8 are local format-min binds, never Featured", () => {
     assert.equal(isBoundLocal(work!), true, id);
     assert.equal(
       curatorialTrack(id),
-      id === "the-four-horsemen-of-the-apocalypse" ? "next" : "later",
+      id === "the-four-horsemen-of-the-apocalypse" || id === "typee" ? "next" : "later",
       id,
     );
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    if (id === "the-last-man" || id === "the-four-horsemen-of-the-apocalypse") {
+    if (id === "the-last-man" || id === "the-four-horsemen-of-the-apocalypse" || id === "typee") {
       assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
     } else {
       assertNoStubOpening(id);
@@ -2259,7 +2259,7 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     "a-slav-soul": { gutenberg: 57036, form: "stories", scenes: 1, breaths: 63 },
     "aarons-rod": { gutenberg: 4520, form: "novel", scenes: 21, breaths: 3715 },
     "captains-courageous": { gutenberg: 2225, form: "novel", scenes: 10, breaths: 1286 },
-    "casanovas-homecoming": { gutenberg: 9310, form: "novel", scenes: 12, breaths: 550 },
+    "casanovas-homecoming": { gutenberg: 9310, form: "novel", scenes: 12, breaths: 544 },
     cosmopolis: { gutenberg: 3967, form: "novel", scenes: 12, breaths: 1041 },
     "ditte-girl-alive": { gutenberg: 31496, form: "novel", scenes: 32, breaths: 1598 },
     erewhon: { gutenberg: 1906, form: "novel", scenes: 29, breaths: 607 },
@@ -2281,7 +2281,7 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     assert.equal(work!.form, want.form, id);
     assert.equal(work!.gutenberg, want.gutenberg, id);
     assert.equal(work!.breaths, want.breaths, id);
-    const seatedOnNext = id === "daisy-miller" || id === "ditte-girl-alive" || id === "erewhon" || id === "cosmopolis" || id === "captains-courageous";
+    const seatedOnNext = id === "daisy-miller" || id === "ditte-girl-alive" || id === "erewhon" || id === "cosmopolis" || id === "captains-courageous" || id === "casanovas-homecoming";
     const hostOpen = seatedOnNext || id === "a-slav-soul";
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), seatedOnNext, id);
@@ -2314,7 +2314,7 @@ test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => 
     "against-the-grain": { gutenberg: 12341, form: "novel", scenes: 16, breaths: 900 },
     "doctor-pascal": { gutenberg: 10720, form: "novel", scenes: 14, breaths: 1848 },
     "hilda-lessways": { gutenberg: 10658, form: "novel", scenes: 36, breaths: 2117 },
-    kangaroo: { gutenberg: 59848, form: "novel", scenes: 18, breaths: 3425 },
+    kangaroo: { gutenberg: 59848, form: "novel", scenes: 18, breaths: 3401 },
     "news-from-nowhere": { gutenberg: 3261, form: "novel", scenes: 32, breaths: 1113 },
     "sketches-by-boz": { gutenberg: 882, form: "stories", scenes: 56, breaths: 3412 },
     sulamith: { gutenberg: 33444, form: "novel", scenes: 12, breaths: 434 },
@@ -2337,9 +2337,10 @@ test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => 
     assert.equal(work!.gutenberg, want.gutenberg, id);
     assert.equal(work!.breaths, want.breaths, id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    const seatedOnNext = id === "kangaroo";
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), seatedOnNext, id);
     assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
-    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
+    assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), seatedOnNext, id);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /Featured|cold-open/i, id);
     const full = textWork(id);
     assert.equal(full.scenes.length, want.scenes, id);

@@ -1,0 +1,46 @@
+{
+  "id": "casanovas-homecoming",
+  "title": "Casanova’s Homecoming",
+  "author": "Arthur Schnitzler (trans. Eden and Cedar Paul)",
+  "year": "1918",
+  "note": "Project Gutenberg 9310. Host: Casanova fifty-third year / wounded bird / Supreme Council (front matter skipped). Year 1918 (DE; EN 1922). Eden and Cedar Paul from PG About only. Inventory 84 medium — no invented Launch rank. Soft Schnitzler carefully ≠ Road/Bertha.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter One · Vienna",
+      "place": "Chapter One · Vienna",
+      "reentry": "Casanova was in his fifty-third year. Though no longer driven by the lust of adventure that had spurred him in his youth, he was still hunted athwart the world, hunted now by a restlessness due to the",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Casanova was in his fifty-third year. Though no longer driven by the lust of adventure that had spurred him in his youth, he was still hunted athwart the world, hunted now by a restlessness due to the approach of old age. His yearning for Venice, the city of his birth, grew so intense that, like a wounded bird slowly circling downwards in its death flight, he began to move in ever-narrowing circles. Again and again, during the last ten years of his exile, he had implored the Supreme Council for leave to return home. Erstwhile, in the drafting of these petitions--a work in which he was a past master--a defiant, wilful spirit seemed to have guided his pen; at times even he appeared to take a grim delight in his forwardness. But of late his requests had been couched in humble, beseeching words which displayed, ever more plainly, the ache of homesickness and genuine repentance."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The sins of his earlier years (the most unpardonable to the Venetian councillors was his free-thinking, not his dissoluteness, or quarrelsomeness, or rather sportive knavery) were by degrees passing into oblivion, and so Casanova had a certain amount of confidence that he would receive a hearing. The history of his marvellous escape from The Leads of Venice, which he had recounted on innumerable occasions at the courts of princes, in the palaces of nobles, at the supper tables of burghers, and in houses of ill fame, was beginning to make people forget any disrepute which had attached to his name. Moreover, in letters to Mantua, where he had been staying for two months, persons of influence had conveyed hope to the adventurer, whose inward and outward lustre were gradually beginning to fade, that ere long there would come a favorable turn in his fortunes."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Since his means were now extremely slender, Casanova had decided to await the expected pardon in the modest but respectable inn where he had stayed in happier years. To make only passing mention of less spiritual amusements, with which he could not wholly dispense--he spent most of his time in writing a polemic against the slanderer Voltaire, hoping that the publication of this document would serve, upon his return to Venice, to give him unchallenged position and prestige in the eyes of all well-disposed citizens."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "One morning he went out for a walk beyond the town limits to excogitate the final touches for some sentences that were to annihilate the infidel Frenchman. Suddenly he fell prey to a disquiet that almost amounted to physical distress. He turned over in his mind the life he had been leading for the last three months. It had grown wearisomely familiar--the morning walks into the country, the evenings spent in gambling for petty stakes with the reputed Baron Perotti and the latter's pock-marked mistress. He thought of the affection lavished upon himself by his hostess, a woman ardent but no longer young. He thought of how he had passed his time over the writings of Voltaire and over the composition of an audacious rejoinder which until that moment had seemed to him by no means inadequate. Yet now, in the dulcet atmosphere of a morning in late summer, all these things appeared stupid and repulsive."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Muttering a curse without really knowing upon whose head he wished it to alight, gripping the hilt of his sword, darting angry glances in all directions as if invisible scornful eyes were watching him in the surrounding solitude, he turned on his heel and retraced his steps back to the town, determined to make arrangements that very hour for immediate departure. He felt convinced that a more genial mood would possess him were he to diminish even by a few miles the distance that separated him from the home for which he longed. It was necessary to hasten, so that he might be sure of booking a place in the diligence. It was to leave at eventide by the eastward road. There was little else to do, for he really need not bother to pay a farewell visit to Baron Perotti. Half an hour would suffice for the packing of all his possessions. He thought of the two suits, the shabbier of which he was wearing at that moment; of the much darned, though once elegant, underlinen. With two or three snuffboxes, a gold watch and chain, and a few books, these comprised his whole worldly wealth. He called to mind past splendors, when he had travelled as a man of distinction, driving in a fine carriage; when he had been well furnished both with necessaries and with superfluities; when he had even had his own servingman--who had usually, of course, been a rogue. These memories brought impotent anger in their train, and his eyes filled with tears. A young woman drove towards him, whip in hand. In her little cart, amid sacks and various odds and ends, lay her husband, drunk and snoring. Casanova strode by beneath the chestnut trees that lined the highway, his face working with wrath, unintelligible phrases hissing from between his clenched teeth. The woman glanced at him inquisitively and mockingly at first, then, on encountering an angry glare, with some alarm, and finally, after she had passed, there was amorous invitation in the look she gave him over her shoulder. Casanova, who was well aware that rage and hatred can assume the semblance of youth more readily than can gentleness and amiability, was prompt to realize that a bold response on his part would bring the cart to a standstill, and that the young woman would be ready to give him any assignation he pleased. Nevertheless, although the recognition of this fact put him in a better humor for the nonce, it seemed hardly worth while to waste minutes upon so trivial an adventure. He was content, therefore, to allow the peasant woman to drive her cart and all its contents unimpeded through the dust of the roadway."
+    }
+  ]
+}
