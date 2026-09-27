@@ -68,6 +68,16 @@ export const PITCHES: Record<string, string> = {
     "It was a wonderful night — the dreamer’s starry Petersburg. First Night only, and not Notes from Underground.",
   "west-african-folk-tales":
     "In the olden days all the stories which men told were stories of Nyankupon, the chief of the gods. This sit is How We Got the Name ‘Spider Tales’ only — Nyankupon, Anansi, and a jar of bees. Skip the contents, the introduction, and the other tales. One tale this sit; the cycle continues. Soft Gold Coast, carefully. This is not Caribbean Anansi. Notion is easy. Launch shelf is no.",
+  erewhon:
+    "If the reader will excuse me, I will say nothing of my antecedents. Chapter I, Waste Lands — a sheep-farm, waste crown-land, and leaving his native country. Skip the 1901 preface. Samuel Butler’s 1872 novel. Soft New Zealand, a nowhere-colony, after Westphalia. This is not Candide’s world-tour. The lead is this book, not Ann Veronica, not The Great Hunger, and not The Mysterious Stranger. Inventory is medium. No score is invented for this sit.",
+  "ann-veronica":
+    "One Wednesday afternoon in late September, Ann Veronica Stanley came down from London. Chapter I — the Wednesday train, Morningside Park, and a father confrontation. Skip the produced-by credit. H. G. Wells’s 1909 novel. Soft England New Woman, carefully. This is not Esther Waters. Notion is easy. Launch shelf is no — do not inflate it.",
+  "the-great-hunger":
+    "For sheer havoc, there is no gale like a good northwester. Chapter I — the gale, spindrift, a rocky fjord, and fisher huts. Skip the produced-by credit. Johan Bojer’s novel, in W. J. Alexander Worster and C. Archer’s English, Norway 1916. Soft Norway, carefully. This is not Hamsun. Inventory is medium. No score is invented for this sit.",
+  "the-mysterious-stranger":
+    "It was in 1590—winter. Austria was far away from the world, and asleep. Chapter 1 — Eseldorf. Skip the other tales. Mark Twain’s 1916 novella only. Soft Austria, carefully. This is not Schnitzler’s Vienna. Notion is easy. Launch shelf is no — do not inflate it.",
+  "children-of-the-frost":
+    "Old Koskoosh listened greedily. This sit is The Law of Life only — Old Koskoosh, Sit-cum-to-ha, the dogs, and a camp that must be broken. Skip the contents and the other tales. Jack London’s 1902 book. One tale this sit; the cycle continues. Soft Yukon, carefully, after the earlier American sits. Inventory is easy. No score is invented for this sit.",
   berlin:
     "Berlin talks through Franz Biberkopf after prison — noise, politics, and fate in Döblin’s street choir. A city that will not let a man start clean.",
   passing:
