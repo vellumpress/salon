@@ -1,0 +1,311 @@
+{
+  "id": "virgin-soil",
+  "title": "Virgin Soil",
+  "author": "Ivan Turgenev (trans. R. S. Townsend)",
+  "year": "1877",
+  "note": "Project Gutenberg 2466. Host: Section I — Officers Street staircase / “Is Nejdanov at home?” (epigraph / Introduction skipped). RU 1877 + Townsend EN on PG 2466 only — no invented Townsend year. Inventory 86 medium — do not soft-inflate.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Section I · Russia — St Petersburg / Officers Street",
+      "place": "Section I · Russia — St Petersburg / Officers Street",
+      "reentry": "At one o’clock in the afternoon of a spring day in the year 1868, a young man of twenty-seven, carelessly and shabbily dressed, was toiling up the back staircase of a five-storied house on Officers St",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "At one o’clock in the afternoon of a spring day in the year 1868, a young man of twenty-seven, carelessly and shabbily dressed, was toiling up the back staircase of a five-storied house on Officers Street in St. Petersburg. Noisily shuffling his down-trodden goloshes and slowly swinging his heavy, clumsy figure, the man at last reached the very top flight and stopped before a half-open door hanging off its hinges. He did not ring the bell, but gave a loud sigh and walked straight into a small, dark passage."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "“Is Nejdanov at home?” he called out in a deep, loud voice."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "“No, he’s not. I’m here. Come in,” an equally coarse woman’s voice responded from the adjoining room."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "“Is that Mashurina?” asked the new-comer."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "“Yes, it is I. Are you Ostrodumov?”"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "“Pemien Ostrodumov,” he replied, carefully removing his goloshes, and hanging his shabby coat on a nail, he went into the room from whence issued the woman’s voice."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "It was a narrow, untidy room, with dull green coloured walls, badly lighted by two dusty windows. The furnishings consisted of an iron bedstead standing in a corner, a table in the middle, several chairs, and a bookcase piled up with books. At the table sat a woman of about thirty. She was bareheaded, clad in a black stuff dress, and was smoking a cigarette. On catching sight of Ostrodumov she extended her broad, red hand without a word. He shook it, also without saying anything, dropped into a chair and pulled a half-broken cigar out of a side pocket. Mashurina gave him a light, and without exchanging a single word, or so much as looking at one another, they began sending out long, blue puffs into the stuffy room, already filled with smoke."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "There was something similar about these two smokers, although their features were not a bit alike. In these two slovenly figures, with their coarse lips, teeth, and noses (Ostrodumov was even pock-marked), there was something honest and firm and persevering."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "“Have you seen Nejdanov?” Ostrodumov asked."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "“Yes. He will be back directly. He has gone to the library with some books.”"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Ostrodumov spat to one side."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "“Why is he always rushing about nowadays? One can never get hold of him.”"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Mashurina took out another cigarette."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "“He’s bored,” she remarked, lighting it carefully."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "“Bored!” Ostrodumov repeated reproachfully. “What self-indulgence! One would think we had no work to do. Heaven knows how we shall get through with it, and he complains of being bored!”"
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "“Have you heard from Moscow?” Mashurina asked after a pause."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "“Yes. A letter came three days ago.”"
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "“Have you read it?”"
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "Ostrodumov nodded his head."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "“Well? What news?”"
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "“Some of us must go there soon.”"
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "Mashurina took the cigarette out of her mouth."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "“But why?” she asked. “They say everything is going on well there.”"
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "“Yes, that is so, but one man has turned out unreliable and must be got rid of. Besides that, there are other things. They want you to come too.”"
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "“Do they say so in the letter?”"
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "“Yes.”"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "Mashurina shook back her heavy hair, which was twisted into a small plait at the back, and fell over her eyebrows in front."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "“Well,” she remarked; “if the thing is settled, then there is nothing more to be said.”"
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "“Of course not. Only one can’t do anything without money, and where are we to get it from?”"
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "Mashurina became thoughtful."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "“Nejdanov must get the money,” she said softly, as if to herself."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "“That is precisely what I have come about,” Ostrodumov observed."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "“Have you got the letter?” Mashurina asked suddenly."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "“Yes. Would you like to see it?”"
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "“I should rather. But never mind, we can read it together presently.”"
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "“You need not doubt what I say. I am speaking the truth,” Ostrodumov grumbled."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "“I do not doubt it in the least.” They both ceased speaking and, as before, clouds of smoke rose silently from their mouths and curled feebly above their shaggy heads."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "A sound of goloshes was heard from the passage."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "“There he is,” Mashurina whispered."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "The door opened slightly and a head was thrust in, but it was not the head of Nejdanov."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "It was a round head with rough black hair, a broad wrinkled forehead, bright brown eyes under thick eyebrows, a snub nose and a humorously-set mouth. The head looked round, nodded, smiled, showing a set of tiny white teeth, and came into the room with its feeble body, short arms, and bandy legs, which were a little lame. As soon as Mashurina and Ostrodumov caught sight of this head, an expression of contempt mixed with condescension came over their faces, as if each was thinking inwardly, “What a nuisance!” but neither moved nor uttered a single word. The newly arrived guest was not in the least taken aback by this reception, however; on the contrary it seemed to amuse him."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "“What is the meaning of this?” he asked in a squeaky voice. “A duet? Why not a trio? And where’s the chief tenor?”"
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "“Do you mean Nejdanov, Mr. Paklin?” Ostrodumov asked solemnly."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "“Yes, Mr. Ostrodumov.”"
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "“He will be back directly, Mr. Paklin.”"
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "“I am glad to hear that, Mr. Ostrodumov.”"
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "The little cripple turned to Mashurina. She frowned, and continued leisurely puffing her cigarette."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "“How are you, my dear... my dear... I am so sorry. I always forget your Christian name and your father’s name.”"
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "Mashurina shrugged her shoulders."
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "“There is no need for you to know it. I think you know my surname. What more do you want? And why do you always keep on asking how I am? You see that I am still in the land of the living!”"
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "“Of course!” Paklin exclaimed, his face twitching nervously. “If you had been elsewhere, your humble servant would not have had the pleasure of seeing you here, and of talking to you! My curiosity is due to a bad, old-fashioned habit. But with regard to your name, it is awkward, somehow, simply to say Mashurina. I know that even in letters you only sign yourself Bonaparte! I beg pardon, Mashurina, but in conversation, however—”"
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "“And who asks you to talk to me, pray?”"
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "Paklin gave a nervous, gulpy laugh."
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "“Well, never mind, my dear. Give me your hand. Don’t be cross. I know you mean well, and so do I.... Well?”"
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "Paklin extended his hand, Mashurina looked at him severely and extended her own."
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "“If you really want to know my name,” she said with the same expression of severity on her face, “I am called Fiekla.”"
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "“And I, Pemien,” Ostrodumov added in his bass voice."
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "“How very instructive! Then tell me, Oh Fiekla! and you, Oh Pemien! why you are so unfriendly, so persistently unfriendly to me when I—”"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "born-in-exile",
+  "title": "Born in Exile",
+  "author": "George Gissing",
+  "year": "1892",
+  "note": "Project Gutenberg 4526. Host: Part I Ch I — Whitelaw College / Kingsmill statue / smoke-canopy (Part-label apparatus skipped). LEAD kept. Inventory 85 medium — no invented Notion/Launch rank.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Chapter I · England — Kingsmill / Whitelaw College",
+      "place": "Part I · Chapter I · England — Kingsmill / Whitelaw College",
+      "reentry": "The summer day in 1874 which closed the annual session of Whitelaw College was marked by a special ceremony, preceding the wonted distribution of academic rewards. At eleven in the morning (just as a ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The summer day in 1874 which closed the annual session of Whitelaw College was marked by a special ceremony, preceding the wonted distribution of academic rewards. At eleven in the morning (just as a heavy shower fell from the smoke-canopy above the roaring streets) the municipal authorities, educational dignitaries, and prominent burgesses of Kingsmill assembled on an open space before the College to unveil a statue of Sir Job Whitelaw. The honoured baronet had been six months dead. Living, he opposed the desire of his fellow-citizens to exhibit even on canvas his gnarled features and bald crown; but when his modesty ceased to have a voice in the matter, no time was lost in raising a memorial of the great manufacturer, the self-made millionaire, the borough member in three Parliaments, the enlightened and benevolent founder of an institute which had conferred humane distinction on the money-making Midland town. Beneath such a sky, orations were necessarily curtailed; but Sir Job had always been impatient of much talk. An interval of two or three hours dispersed the rain-clouds and bestowed such grace of sunshine as Kingsmill might at this season temperately desire; then, whilst the marble figure was getting dried,--with soot-stains which already foretold its negritude of a year hence,--again streamed towards the College a varied multitude, official, parental, pupillary. The students had nothing distinctive in their garb, but here and there flitted the cap and gown of Professor or lecturer, signal for doffing of beavers along the line of its progress."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Among the more deliberate of the throng was a slender, upright, ruddy-cheeked gentleman of middle age, accompanied by his wife and a daughter of sixteen. On alighting from a carriage, they first of all directed their steps towards the statue, conversing together with pleasant animation. The father (Martin Warricombe, Esq. of Thornhaw, a small estate some five miles from Kingsmill,) had a countenance suggestive of engaging qualities--genial humour, mildness, a turn for meditation, perhaps for study. His attire was informal, as if he disliked abandoning the freedom of the country even when summoned to urban ceremonies. He wore a grey felt hat, and a light jacket which displayed the straightness of his shoulders. Mrs. Warricombe and her daughter were more fashionably equipped, with taste which proclaimed their social standing. Save her fresh yet delicate complexion the lady had no particular personal charm. Of the young girl it could only be said that she exhibited a graceful immaturity, with perchance a little more earnestness than is common at her age; her voice, even when she spoke gaily, was seldom audible save by the person addressed."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Coming to a pause before Sir Job, Mr. Warricombe put on a pair of eyeglasses which had dangled against his waistcoat, and began to scrutinise carefully the sculptured lineaments. He was addressing certain critical remarks to his companions when an interruption appeared in the form of a young man whose first words announced his relation to the group."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "'I say, you're very late! There'll be no getting a decent seat, if you don't mind. Leave Sir Job till afterwards.'"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "'The statue somehow disappoints me,' observed his father, placidly."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "'Oh, it isn't bad, I think,' returned the youth, in a voice not unlike his father's, save for a note of excessive self-confidence. He looked about eighteen; his comely countenance, with its air of robust health and habitual exhilaration, told of a boyhood passed amid free and joyous circumstances. It was the face of a young English plutocrat, with more of intellect than such visages are wont to betray; the native vigour of his temperament had probably assimilated something of the modern spirit. 'I'm glad,' he continued, 'that they haven't stuck him in a toga, or any humbug of that sort. The old fellow looks baggy, but so he was. They ought to have kept his chimney-pot, though. Better than giving him those scraps of hair, when everyone knows he was as bald as a beetle.'"
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "'Sir Job should have been granted Caesar's privilege,' said Mr. Warricombe, with a pleasant twinkle in his eyes."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "'What was that?' came from the son, with abrupt indifference."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "'For shame, Buckland!'"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "'What do I care for Caesar's privileges? We can't burden our minds with that antiquated rubbish nowadays. You would despise it yourself, father, if it hadn't got packed into your head when you were young.'"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "The parent raised his eyebrows in a bantering smile."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "'I have lived to hear classical learning called antiquated rubbish. Well, well!--Ha! there is Professor Gale.'"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "The Professor of Geology, a tall man, who strode over the pavement as if he were among granite hills, caught sight of the party and approached. His greeting was that of a familiar friend; he addressed young Warricombe and his sister by their Christian names, and inquired after certain younger members of the household. Mr Warricombe, regarding him with a look of repressed eagerness, laid a hand on his arm, and spoke in the subdued voice of one who has important news to communicate."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "'If I am not much mistaken, I have chanced on a new species of *homalonotus*!'"
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "'Indeed!--not in your kitchen garden, I presume?'"
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "'Hardly. Dr Pollock sent me a box of specimens the other day'--"
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Buckland saw with annoyance the likelihood of prolonged discussion."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "'I don't know whether you care to remain standing all the afternoon,' he said to his mother. 'At this rate we certainly shan't get seats.'"
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "'We will walk on, Martin,' said the lady, glancing at her husband."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "'We come! we come!' cried the Professor, with a wave of his arm."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "The palaeontological talk continued as far as the entrance of the assembly hall. The zest with which Mr. Warricombe spoke of his discovery never led him to raise his voice above the suave, mellow note, touched with humour, which expressed a modest assurance. Mr Gale was distinguished by a blunter mode of speech; he discoursed with open-air vigour, making use now and then of a racy colloquialism which the other would hardly have permitted himself."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "As young Warricombe had foreseen, the seats obtainable were none too advantageous; only on one of the highest rows of the amphitheatre could they at length establish themselves."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "'Buckland will enjoy the more attention when he marches down to take his prizes,' observed the father. 'He must sit at the end here, that he mayn't have a struggle to get out.'"
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "'Don't, Martin, don't!' urged his wife, considerately."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "'Oh, it doesn't affect me,' said Buckland, with a laugh."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "'I feel pretty sure I have got the Logic and the Chemistry, and those are what I care most about. I dare say Peak has beaten me in Geology.'"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "The appearance in the lower part of the hall of a dark-robed procession, headed by the tall figure of the Principal, imposed a moment's silence, broken by outbursts of welcoming applause. The Professors of Whitelaw College were highly popular, not alone with the members of their classes, but with all the educated inhabitants of Kingsmill; and deservedly, for several of them bore names of wide recognition, and as a body they did honour to the institution which had won their services. With becoming formality they seated themselves in face of the public. On tables before them were exposed a considerable number of well-bound books, shortly to be distributed among the collegians, who gazed in that direction with speculative eyes."
+    }
+  ]
+}
