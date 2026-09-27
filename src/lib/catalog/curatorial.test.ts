@@ -7989,7 +7989,7 @@ test("Mira POST-#175 CLEAR is Next lead The Poison Tree, then Cosmopolis, The Wo
     ) as PackedSit & { scenes: { id?: string; title?: string }[]; year?: string; author?: string };
     const full = JSON.parse(
       readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8"),
-    ) as PackedSit & {
+    ) as {
       scenes: { id?: string; title?: string }[];
       year?: string;
       author?: string;
