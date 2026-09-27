@@ -1,0 +1,156 @@
+{
+  "id": "in-the-world",
+  "title": "In the World",
+  "author": "Maksim Gorky (trans. Gertrude M. Foakes)",
+  "year": "1916",
+  "note": "Project Gutenberg 55502. Host: CHAPTER I — shop-boy fashionable boot-shop / green teeth / watery eyes (front matter skipped). Year 1916 (RU; EN 1917). Gertrude M. Foakes from PG About only. Inventory 86 medium — no invented Launch rank. Soft Russia carefully ≠ Resurrection carceral / Slav Soul / Village / Virgin Soil.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Russia",
+      "place": "Chapter I · Russia",
+      "reentry": "I went out into the world as \"shop-boy\" at a fashionable boot-shop in the main street of the town. My master was a small, round man. He had a brown, rugged face, green teeth, and watery, mud-colored e",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "I went out into the world as \"shop-boy\" at a fashionable boot-shop in the main street of the town. My master was a small, round man. He had a brown, rugged face, green teeth, and watery, mud-colored eyes. At first I thought he was blind, and to see if my supposition was correct, I made a grimace."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"Don't pull your face about!\" he said to me gently, but sternly. The thought that those dull eyes could see me was unpleasant, and I did not want to believe that this was the case. Was it not more than probable that he had guessed I was making grimaces?"
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"I told you not to pull your face about,\" he said again, hardly moving his thick lips."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Don't scratch your hands,\" his dry whisper came to me, as it were, stealthily. \"You are serving in a first-class shop in the main street of the town, and you must not forget it. The door-boy ought to stand like a statue.\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "I did not know what a statue was, and I could n't help scratching my hands, which were covered with red pimples and sores, for they had been simply devoured by vermin."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"What did you do for a living when you were at home?\" asked my master, looking at my hands."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "I told him, and he shook his round head, which was closely covered with gray hair, and said in a shocked voice:"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"Rag-picking! Why, that is worse than begging or stealing!\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "I informed him, not without pride:"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"But I stole as well.\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "At this he laid his hands on his desk, looking just like a cat with her paws up, and fixed his eyes on my face with a terrified expression as he whispered:"
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"Wha--a--t? How did you steal?\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "I explained how and what I had stolen."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"Well, well, I look upon that as nothing but a prank. But if you rob me of boots or money, I will have you put in prison, and kept there for the rest of your life.\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "He said this quite calmly, and I was frightened, and did not like him any more."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Besides the master, there were serving in the shop my cousin, Sascha Jaakov, and the senior assistant, a competent, unctuous person with a red face. Sascha now wore a brown frock-coat, a false shirt-front, a cravat, and long trousers, and was too proud to take any notice of me."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "When grandfather had brought me to my master, he had asked Sascha to help me and to teach me. Sascha had frowned with an air of importance as he said warning:"
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"He will have to do what I tell him, then.\""
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "Laying his hand on my head, grandfather had forced me to bend my neck."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"You are to obey him; he is older than you both in years and experience.\""
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "And Sascha said to me, with a nod:"
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"Don't forget what grandfather has said.\" He lost no time in profiting by his seniority."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Kashirin, don't look so goggle-eyed,\" his master would advise him."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"I--I'm all right,\" Sascha would mutter, putting his head down. But the master would not leave him alone."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"Don't butt; the customers will think you are a goat.\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "The assistant smiled respectfully, the master stretched his lips in a hideous grin, and Sascha, his face flushing, retreated behind the counter. I did not like the tone of these conversations. Many of the words they used were unintelligible to me, and sometimes they seemed to be speaking in a strange language. When a lady customer came in, the master would take his hands out of his pockets, tug at his mustache, and fix a sweet smile upon his face--a smile which wrinkled his cheeks, but did not change the expression of his dull eyes. The assistant would draw himself up, with his elbows pressed closely against his sides, and his wrists respectfully dangling. Sascha would blink shyly, trying to hide his protruding eyes, while I would stand at the door, surreptitiously scratching my hands, and observing the ceremonial of selling."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "Kneeling before the customer, the assistant would try on shoes with wonderfully deft fingers. He touched the foot of the woman so carefully that his hands trembled, as if he were afraid of breaking her leg. But the leg was stout enough. It looked like a bottle with sloping shoulders, turned neck downward."
+    }
+  ]
+}

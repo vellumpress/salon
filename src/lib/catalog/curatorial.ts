@@ -1017,6 +1017,15 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "kangaroo",
   "casanovas-homecoming",
   "the-mother",
+  // Mira Sun 27 Sep 2026 POST-#182 CLEAR — Three Soldiers leads Next. Never Featured.
+  // LEAD kept — not Doctor Pascal, not In the World, not Leila.
+  // Earlier Next inventory seats for Three Soldiers and In the World stay.
+  // CHARAN is Rituals (the title tale only), not this tail.
+  // Sun POST-#181 Typee and the earlier packs stay ahead.
+  "three-soldiers",
+  "doctor-pascal",
+  "in-the-world",
+  "leila",
 ] as const;
 
 /**

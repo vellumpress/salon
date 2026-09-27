@@ -1,0 +1,146 @@
+{
+  "id": "leila",
+  "title": "Leila",
+  "author": "Antonio Fogazzaro (trans. Mary Prichard Agnetti)",
+  "year": "1910",
+  "note": "Project Gutenberg 78258. Host: CHAPTER I A MYSTIC PRELUDE — Signorina Leila dining-room / chestnut grove / Priaforà / distant train (Contents skipped). Year 1910 (IT; EN 1911). Mary Prichard Agnetti from PG About only. Inventory 83 medium — no invented Launch rank. Soft Italy carefully ≠ The Mother Sardinia / Florence / Capri / Rome.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · A Mystic Prelude · Italy",
+      "place": "Chapter I · A Mystic Prelude · Italy",
+      "reentry": "\"Signorina!\" called Giovanni the footman, entering the dining-room breathlessly, after looking for her in the garden, in the drawing-room, and in her own chamber. It was nine o'clock, and his master a",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "\"Signorina!\" called Giovanni the footman, entering the dining-room breathlessly, after looking for her in the garden, in the drawing-room, and in her own chamber. It was nine o'clock, and his master and Signorina Leila had finished dinner before eight. The master had withdrawn to his study almost immediately; the Signorina had gone into the garden. But now she was in the dining-room again by the window."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Her eyes were fixed on the grove of chestnuts to the east, over beyond the ravine, where a brawling stream makes its way from a small lake hidden behind the green shoulders of the lofty peak of Priaforà. But she was straining her ear to catch a far-away sound that rose and fell--the rumbling of a distant train speeding towards the Val d'Astico above which the villa is situated. She turned suddenly at the servant's call, crushing a letter in her hands."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"What is the matter?\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"The master is unwell.\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Leila uttered an exclamation."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "The fellow gazed stupidly at her. She started forward, then, pausing, spoke again to the slow-witted footman."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Where is he?\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"In the study, I think.\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Leila ran towards the salon and met the maid Teresina coming towards her with outstretched hands."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"It is nothing--nothing,\" Teresina said quietly, diverting Leila's attention to a locket that had fallen open from her belt. The girl chafed with impatience while the maid carefully closed it for her. Nevertheless, the action calmed her."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"Giovanni, go and prepare the guests' room,\" said Teresina, addressing the footman, who stood listening, half dazed, half curious."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Leila trembled. \"Is there something Giovanni must not know?\" she asked."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"No, Signorina, no!\" said Teresina, speaking with the accent of her native Trent."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "But it struck Leila that the maid was deliberately delaying her explanation."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"Why don't you speak?\" she burst out."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Teresina cast a quick glance towards the study door. She was anxious to spare the Signorina, who was delicate and nervous, and so easily excited."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"If he should come out,\" she whispered, \"and find us here talking, he might suspect something. We had better go away.\""
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Followed by Teresina, Leila hurried across the salon and entered the dining-room. Anxious though she was to hear the maid's story, she listened a moment to the whistle of the train, wondering whether it was signalling from San Giorgio or from the station of Seghe. Then...."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"Tell me!\" she demanded."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Well, as usual, Teresina had carried the master's letters to him in his study. From the threshold she had seen him bend his head first backwards and then towards his left shoulder, close his eyes, open them with a wild stare, and again close them, only to strain them wide once more, so that the balls showed white. She had sprinkled some water upon his face and had sent the footman in search of the Signorina, for, to tell the truth, she had really felt somewhat startled at first. Meanwhile the master had sighed deeply and had muttered something about a sudden drowsiness. Then he had opened his letters and papers, and seeing that she was hesitating whether to leave the room or to remain, he had dismissed her. Outside she had listened, but had heard only the rustle of papers. So...."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "A bell sounded twice."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"The master!\" Teresina exclaimed, and hurried away."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "Leila followed her a few steps, but stopped in the drawing-room, watching the maid's retreating figure, watching the billiard-room door, that closed softly behind her, listening, and waiting for Teresina to come back."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "Meanwhile the train was whistling beneath the heights of Santa Maria, just before running into the terminus station of Arsiero. From the station it was a walk of some ten minutes to \"La Montanina,\" the villa, so called because, with its gabled roofs and its back to the hill, among groves and fields that stretch downwards to the deep Posina, it is so like one of those peasant women who come wearily down from the steeps of Priaforà, and pause to rest awhile upon the bundle of wood they have gathered in the forests. In this villa lived Leila and Signor Marcello Trento."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "Teresina, as devoted to Signor Marcello as she had been for twenty years to his wife, who had now been dead two years, knocked at the study door, trembling lest her master might have been seized again with illness. Encouraged by the sound of his \"Come in!\" she entered, smiling, that he might not notice any signs of her recent fright."
+    }
+  ]
+}

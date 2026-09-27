@@ -1,0 +1,71 @@
+{
+  "id": "doctor-pascal",
+  "title": "Doctor Pascal",
+  "author": "Émile Zola (trans. Mary J. Serrano)",
+  "year": "1893",
+  "note": "Project Gutenberg 10720. Host: Ch I — July afternoon blinds / Dr. Pascal press papers (Contents skipped). Year 1893. Mary J. Serrano from PG About only. Inventory 83 medium — no invented Launch rank. Soft Zola carefully ≠ Theresa; soft France carefully after Three Soldiers this fire (Plassans ≠ WWI).",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · France Plassans",
+      "place": "Chapter I · France Plassans",
+      "reentry": "In the heat of the glowing July afternoon, the room, with blinds carefully closed, was full of a great calm. From the three windows, through the cracks of the old wooden shutters, came only a few scat",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "In the heat of the glowing July afternoon, the room, with blinds carefully closed, was full of a great calm. From the three windows, through the cracks of the old wooden shutters, came only a few scattered sunbeams which, in the midst of the obscurity, made a soft brightness that bathed surrounding objects in a diffused and tender light. It was cool here in comparison with the overpowering heat that was felt outside, under the fierce rays of the sun that blazed upon the front of the house."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Standing before the press which faced the windows, Dr. Pascal was looking for a paper that he had come in search of. With doors wide open, this immense press of carved oak, adorned with strong and handsome mountings of metal, dating from the last century, displayed within its capacious depths an extraordinary collection of papers and manuscripts of all sorts, piled up in confusion and filling every shelf to overflowing. For more than thirty years the doctor had thrown into it every page he wrote, from brief notes to the complete texts of his great works on heredity. Thus it was that his searches here were not always easy. He rummaged patiently among the papers, and when he at last found the one he was looking for, he smiled."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "For an instant longer he remained near the bookcase, reading the note by a golden sunbeam that came to him from the middle window. He himself, in this dawnlike light, appeared, with his snow-white hair and beard, strong and vigorous; although he was near sixty, his color was so fresh, his features were so finely cut, his eyes were still so clear, and he had so youthful an air that one might have taken him, in his close-fitting, maroon velvet jacket, for a young man with powdered hair."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Here, Clotilde,\" he said at last, \"you will copy this note. Ramond would never be able to decipher my diabolical writing.\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "And he crossed the room and laid the paper beside the young girl, who stood working at a high desk in the embrasure of the window to the right."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Very well, master,\" she answered."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "She did not even turn round, so engrossed was her attention with the pastel which she was at the moment rapidly sketching in with broad strokes of the crayon. Near her in a vase bloomed a stalk of hollyhocks of a singular shade of violet, striped with yellow. But the profile of her small round head, with its short, fair hair, was clearly distinguishable; an exquisite and serious profile, the straight forehead contracted in a frown of attention, the eyes of an azure blue, the nose delicately molded, the chin firm. Her bent neck, especially, of a milky whiteness, looked adorably youthful under the gold of the clustering curls. In her long black blouse she seemed very tall, with her slight figure, slender throat, and flexible form, the flexible slenderness of the divine figures of the Renaissance. In spite of her twenty-five years, she still retained a childlike air and looked hardly eighteen."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"And,\" resumed the doctor, \"you will arrange the press a little. Nothing can be found there any longer.\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"Very well, master,\" she repeated, without raising her head; \"presently.\""
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Pascal had turned round to seat himself at his desk, at the other end of the room, before the window to the left. It was a plain black wooden table, and was littered also with papers and pamphlets of all sorts. And silence again reigned in the peaceful semi-obscurity, contrasting with the overpowering glare outside. The vast apartment, a dozen meters long and six wide, had, in addition to the press, only two bookcases, filled with books. Antique chairs of various kinds stood around in disorder, while for sole adornment, along the walls, hung with an old *salon* Empire paper of a rose pattern, were nailed pastels of flowers of strange coloring dimly visible. The woodwork of three folding-doors, the door opening on the hall and two others at opposite ends of the apartment, the one leading to the doctor's room, the other to that of the young girl, as well as the cornice of the smoke-darkened ceiling, dated from the time of Louis XV."
+    }
+  ]
+}

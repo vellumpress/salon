@@ -2301,7 +2301,7 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
 
 test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => {
   const expect = {
-    leila: { gutenberg: 78258, form: "novel", scenes: 17, breaths: 2320 },
+    leila: { gutenberg: 78258, form: "novel", scenes: 17, breaths: 2322 },
     "the-temptation-of-st-anthony": { gutenberg: 52225, form: "novel", scenes: 7, breaths: 1725 },
     sanctuary: { gutenberg: 7517, form: "novel", scenes: 12, breaths: 541 },
     "the-angels-of-mons": { gutenberg: 14044, form: "stories", scenes: 4, breaths: 133 },
@@ -2337,7 +2337,7 @@ test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => 
     assert.equal(work!.gutenberg, want.gutenberg, id);
     assert.equal(work!.breaths, want.breaths, id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    const seatedOnNext = id === "kangaroo";
+    const seatedOnNext = id === "kangaroo" || id === "doctor-pascal" || id === "leila";
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), seatedOnNext, id);
     assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
     assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), seatedOnNext, id);

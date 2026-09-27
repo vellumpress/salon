@@ -371,6 +371,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `To-night again Paul was preparing to go out, it seemed. Chapter I — Paul preparing, the wind barricade, and the orchard’s little door. Skip the Translator’s Note and the Preface. Grazia Deledda, in Mary G. Steegmann’s English, 1920. The Italian year is 1920; the English is 1923. Soft Sardinia, carefully. This is not Florence, Capri, or Rome. Soft Deledda, carefully. This is not After the Divorce. Inventory 79 is medium. No score is invented for this sit.`,
   "lord-arthur-saviles-crime":
     `It was Lady Windermere’s last reception before Easter, and Bentinck House was even more crowded than usual. This sit is Lord Arthur Savile’s Crime only — Lady Windermere’s last reception and Bentinck House. Skip the Contents and the other stories. Stop at the end of the tale. Oscar Wilde’s 1891 tale. One tale this sit. Soft Wilde, carefully. This is not Dorian Gray. Soft England, carefully. This is not The Way of All Flesh or A Cross Line. Soft gothic, carefully. This is not The Beckoning Fair One, Dracula, or the House of the Seven Gables. Inventory 79 is easy. No score is invented for this sit.`,
+  "three-soldiers":
+    `The company stood at attention, each man looking straight before him at the empty parade ground. Part One, I — the company, the empty parade ground, and cinder piles in a purple evening. Skip the Contents. John Dos Passos’s 1921 novel. Soft France, carefully. This is not Provence or Paris. Soft Dos Passos, carefully. The lead is this book, not Doctor Pascal, not In the World, and not Leila. Inventory 86 is medium. No score is invented for this sit.`,
+  "doctor-pascal":
+    `In the heat of the glowing July afternoon, the room, with blinds carefully closed, was full of a great calm. Chapter I — July blinds and Dr. Pascal’s press papers. Skip the Contents. Émile Zola, in Mary J. Serrano’s English, 1893. Soft Zola, carefully. This is not Theresa Raquin. Soft France, carefully. Plassans is not the war, and not Provence or Paris. Inventory 83 is medium. No score is invented for this sit.`,
+  "in-the-world":
+    `I went out into the world as shop-boy at a fashionable boot-shop in the main street of the town. Chapter I — the shop-boy, green teeth, and watery eyes. Skip the front matter. Maksim Gorky, in Gertrude M. Foakes’s English, 1916. The Russian year is 1916; the English is 1917. Soft Russia, carefully. This is not Resurrection, A Slav Soul, The Village, or Virgin Soil. Soft Gorky, carefully. Inventory 86 is medium. No score is invented for this sit.`,
+  "leila":
+    `Giovanni the footman calls Signorina from the dining-room, breathless, after the garden and the house. Chapter I, A Mystic Prelude — Signorina Leila, the chestnut grove, and Priaforà. Skip the Contents. Antonio Fogazzaro, in Mary Prichard Agnetti’s English, 1910. The Italian year is 1910; the English is 1911. Soft Italy, carefully. This is not The Mother, and not Sardinia, Florence, Capri, or Rome. Soft Fogazzaro, carefully. Inventory 83 is medium. No score is invented for this sit.`,
+  "charan":
+    `In the days of King Sung-jong one of Korea’s noted men became governor of Pyong-an Province. This sit is CHARAN only — Pyong-an Province, the dancing girl Charan, and the Governor’s son. Skip the Contents and the other tales. Stop at the end of the tale. Im Bang and Yi Ryuk, in James S. Gale’s English, 1913. One tale this sit. Soft Korea, carefully. This is not Laos, China, or Japan. Soft gothic, carefully. This is not The Beckoning Fair One. Soft England, carefully. This is not Lord Arthur Savile’s Crime. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -685,7 +695,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "dauber",
       "eugenie-grandet",
       "in-a-glass-darkly",
-      "in-the-world",
       "indiana",
       "lady-windermeres-fan",
       "pans-garden",
@@ -722,7 +731,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-wolves-of-god",
       "the-wonderful-adventures-of-nils",
       "theresa-raquin",
-      "three-soldiers",
       "twilight-sleep",
       "virgin-soil",
       "wanderers",
@@ -1121,6 +1129,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "kangaroo",
       "casanovas-homecoming",
       "the-mother",
+      // Mira Sun 27 Sep 2026 POST-#182 CLEAR — Three Soldiers leads. Never Featured.
+      // LEAD kept — not Doctor Pascal, not In the World, not Leila.
+      // Earlier before-sleep inventory listings of Three Soldiers and In the World move here so the cycle reads in order.
+      // CHARAN is Waking up (the title tale only).
+      "three-soldiers",
+      "doctor-pascal",
+      "in-the-world",
+      "leila",
     ],
   },
   {
@@ -1215,6 +1231,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "widdershins",
       // Mira Sun 27 Sep 2026 POST-#181 CLEAR — Lord Arthur Savile’s Crime only.
       "lord-arthur-saviles-crime",
+      // Mira Sun 27 Sep 2026 POST-#182 CLEAR — CHARAN only.
+      "charan",
     ],
   },
   {
@@ -1412,6 +1430,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "kangaroo",
       "casanovas-homecoming",
       "the-mother",
+      // Mira Sun 27 Sep 2026 POST-#182 CLEAR — Three Soldiers leads. Never Featured.
+      // LEAD kept — not Doctor Pascal, not In the World, not Leila.
+      // Earlier before-sleep inventory listings of Three Soldiers and In the World move here so the cycle reads in order.
+      // CHARAN is Waking up (the title tale only).
+      "three-soldiers",
+      "doctor-pascal",
+      "in-the-world",
+      "leila",
     ],
   },
   {
@@ -1608,6 +1634,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "kangaroo",
       "casanovas-homecoming",
       "the-mother",
+      // Mira Sun 27 Sep 2026 POST-#182 CLEAR — Three Soldiers leads. Never Featured.
+      // LEAD kept — not Doctor Pascal, not In the World, not Leila.
+      // Earlier before-sleep inventory listings of Three Soldiers and In the World move here so the cycle reads in order.
+      // CHARAN is Waking up (the title tale only).
+      "three-soldiers",
+      "doctor-pascal",
+      "in-the-world",
+      "leila",
     ],
   },
   {
@@ -1749,7 +1783,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "eugenie-grandet": 6,
   "heart-of-darkness": 5,
   "in-a-glass-darkly": 5,
-  "in-the-world": 5,
+  "in-the-world": 4,
   indiana: 6,
   "lady-windermeres-fan": 5,
   "pans-garden": 5,
@@ -1799,7 +1833,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-wolves-of-god": 5,
   "the-wonderful-adventures-of-nils": 5,
   "theresa-raquin": 5,
-  "three-soldiers": 5,
+  "three-soldiers": 4,
   "twilight-sleep": 5,
   "virgin-soil": 6,
   "wanderers": 5,
@@ -1876,6 +1910,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "casanovas-homecoming": 5,
   "the-mother": 7,
   "lord-arthur-saviles-crime": 12,
+  "doctor-pascal": 4,
+  leila: 4,
+  charan: 12,
   "royal-highness": 4,
   ramona: 6,
   "almayers-folly": 6,

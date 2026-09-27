@@ -1,0 +1,126 @@
+{
+  "id": "three-soldiers",
+  "title": "Three Soldiers",
+  "author": "John Dos Passos",
+  "year": "1921",
+  "note": "Project Gutenberg 6362. Host: PART ONE / I — company at attention / empty parade ground / cinder piles purple evening (Contents skipped). Year 1921. Inventory 86 medium — no invented Launch rank. LEAD kept. Soft France carefully ≠ Provence/Paris; soft Dos Passos carefully.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part One · I · France WWI",
+      "place": "Part One · I · France WWI",
+      "reentry": "The company stood at attention, each man looking straight before him at the empty parade ground, where the cinder piles showed purple with evening. On the wind that smelt of barracks and disinfectant ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The company stood at attention, each man looking straight before him at the empty parade ground, where the cinder piles showed purple with evening. On the wind that smelt of barracks and disinfectant there was a faint greasiness of food cooking. At the other side of the wide field long lines of men shuffled slowly into the narrow wooden shanty that was the mess hall. Chins down, chests out, legs twitching and tired from the afternoon's drilling, the company stood at attention. Each man stared straight in front of him, some vacantly with resignation, some trying to amuse themselves by noting minutely every object in their field of vision,--the cinder piles, the long shadows of the barracks and mess halls where they could see men standing about, spitting, smoking, leaning against clapboard walls. Some of the men in line could hear their watches ticking in their pockets."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Someone moved, his feet making a crunching noise in the cinders."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The sergeant's voice snarled out: \"You men are at attention. Quit yer wrigglin' there, you!\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The men nearest the offender looked at him out of the corners of their eyes."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Two officers, far out on the parade ground, were coming towards them. By their gestures and the way they walked, the men at attention could see that they were chatting about something that amused them. One of the officers laughed boyishly, turned away and walked slowly back across the parade ground. The other, who was the lieutenant, came towards them smiling. As he approached his company, the smile left his lips and he advanced his chin, walking with heavy precise steps."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Sergeant, you may dismiss the company.\" The lieutenant's voice was pitched in a hard staccato."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "The sergeant's hand snapped up to salute like a block signal. \"Companee dis...missed,\" he rang out."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "The row of men in khaki became a crowd of various individuals with dusty boots and dusty faces. Ten minutes later they lined up and marched in a column of fours to mess. A few red filaments of electric lights gave a dusty glow in the brownish obscurity where the long tables and benches and the board floors had a faint smell of garbage mingled with the smell of the disinfectant the tables had been washed off with after the last meal. The men, holding their oval mess kits in front of them, filed by the great tin buckets at the door, out of which meat and potatoes were splashed into each plate by a sweating K.P. in blue denims."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"Don't look so bad tonight,\" said Fuselli to the man opposite him as he hitched his sleeves up at the wrists and leaned over his steaming food. He was sturdy, with curly hair and full vigorous lips that he smacked hungrily as he ate."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"It ain't,\" said the pink flaxen-haired youth opposite him, who wore his broad-brimmed hat on the side of his head with a certain jauntiness:"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"I got a pass tonight,\" said Fuselli, tilting his head vainly."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"Goin' to tear things up?\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"Man...I got a girl at home back in Frisco. She's a good kid.\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"Yer right not to go with any of the girls in this goddam town.... They ain't clean, none of 'em.... That is if ye want to go overseas.\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "The flaxen-haired youth leaned across the table earnestly."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"I'm goin' to git some more chow: Wait for me, will yer?\" said Fuselli."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"What yer going to do down town?\" asked the flaxen-haired youth when Fuselli came back."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"Dunno,--run round a bit an' go to the movies,\" he answered, filling his mouth with potato."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"Gawd, it's time fer retreat.\" They overheard a voice behind them."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Fuselli stuffed his mouth as full as he could and emptied the rest of his meal reluctantly into the garbage pail."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "A few moments later he stood stiffly at attention in a khaki row that was one of hundreds of other khaki rows, identical, that filled all sides of the parade ground, while the bugle blew somewhere at the other end where the flag-pole was. Somehow it made him think of the man behind the desk in the office of the draft board who had said, handing him the papers sending him to camp, \"I wish I was going with you,\" and had held out a white bony hand that Fuselli, after a moment's hesitation, had taken in his own stubby brown hand. The man had added fervently, \"It must be grand, just grand, to feel the danger, the chance of being potted any minute. Good luck, young feller.... Good luck.\" Fuselli remembered unpleasantly his paper-white face and the greenish look of his bald head; but the words had made him stride out of the office sticking out his chest, brushing truculently past a group of men in the door. Even now the memory of it, mixing with the strains of the national anthem made him feel important, truculent."
+    }
+  ]
+}

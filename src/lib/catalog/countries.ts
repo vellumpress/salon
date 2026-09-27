@@ -281,6 +281,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Villiers de l'Isle-Adam",
     "Émile Nolly",
     "Émile Zola",
+    "Émile Zola (trans. Mary J. Serrano)",
   ],
   Germany: [
     "Alfred Döblin",
@@ -322,6 +323,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Leo Tolstoy (tr. Aylmer Maude)",
     "Leo Tolstoy (trans. Louise Maude)",
     "Maxim Gorky",
+    "Maksim Gorky (trans. Gertrude M. Foakes)",
     "Mikhail Artsybashev",
     "Mikhail Bulgakov",
     "Mikhail Lermontov",
@@ -363,6 +365,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
   Italy: [
     "Alessandro Manzoni",
     "Antonio Fogazzaro",
+    "Antonio Fogazzaro (trans. Mary Prichard Agnetti)",
     "Dante Alighieri",
     "Dante Alighieri (tr. Longfellow)",
     "Gabriele D'Annunzio",
@@ -469,7 +472,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
   Turkey: ["Halide Edib Adıvar"],
   Ukraine: ["Lesya Ukrainka", "Mykhailo Kotsiubynsky", "Sholem Aleichem"],
   Romania: ["Liviu Rebreanu", "Mateiu Caragiale", "Various (tr. Lucy Byng)"],
-  Korea: ["Yi Kwang-su"],
+  Korea: ["Yi Kwang-su", "Im Bang & Yi Ryuk (trans. James S. Gale)"],
   Egypt: ["Muhammad Husayn Haykal", "Ibn Tufail"],
   Lebanon: ["Ameen Rihani", "Kahlil Gibran"],
   Malaysia: [
@@ -1027,6 +1030,9 @@ const WORK_COUNTRY: Record<string, string> = {
   "hebrew-literature": "Palestine",
   "the-history-of-yiddish-literature": "Poland",
   "korean-folk-tales": "Korea",
+  "doctor-pascal": "France",
+  leila: "Italy",
+  charan: "Korea",
 };
 
 const AUTHOR_COUNTRY: Record<string, string> = (() => {
