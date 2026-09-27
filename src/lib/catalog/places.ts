@@ -202,6 +202,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "casanovas-homecoming": { label: "Vienna", region: "at" },
   "the-mother": { label: "Sardinia", region: "it" },
   "lord-arthur-saviles-crime": { label: "England", region: "gb" },
+  "three-soldiers": { label: "France WWI", region: "fr" },
+  "doctor-pascal": { label: "Plassans", region: "fr" },
+  "in-the-world": { label: "Russia", region: "ru" },
+  leila: { label: "Italy", region: "it" },
+  charan: { label: "Korea", region: "kr" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples
