@@ -88,6 +88,16 @@ export const PITCHES: Record<string, string> = {
     "In the time before steamships, a stroller along the docks would notice the Handsome Sailor. This sit is Billy Budd, Foretopman only — Chapter I. Skip the other pieces. Herman Melville’s 1924 novella. Soft Melville, carefully. This is not White Jacket. Inventory is medium. No score is invented for this sit.",
   "malay-sketches":
     "A quarter of a century ago there lived on the bank of a broad river, just where stream meets tide, a Malay Raja and his youthful wife. This sit is A Malay Romance only — Raja Maimûnah and the stream that meets the tide. Skip the contents and the other sketches. Frank Swettenham’s 1895 book; the printing is 1903. One tale this sit; the cycle continues. Soft Malaya, carefully. Colonial administration stays as printed. Notion is easy. Launch shelf is no — do not inflate it.",
+  "cousin-betty":
+    "One day, about the middle of July 1838, a carriage known as Milords was driving down the Rue de l’Université. Opening — a National Guard captain. Skip the Cajetani dedication. Honoré de Balzac, in James Waring’s English, 1846. Soft Paris, carefully. This is not Eugénie Grandet’s Saumur. The lead is this book, not The Sorrows of Satan, not The King of Schnorrers, and not Hania. Inventory is medium. No score is invented for this sit.",
+  "the-sorrows-of-satan":
+    "Do you know what it is to be poor? Section I — a threadbare suit and an upper-class carriage. Skip the Methuen edition list. Marie Corelli’s 1895 novel. Soft England, a Faustian story, carefully. This is not The Woman Who Did. Inventory is easy. No score is invented for this sit.",
+  "the-king-of-schnorrers":
+    "In the days when Lord George Gordon became a Jew, and was suspected of insanity. Chapter I — Grobstock, the synagogue stream, a canvas bag, and spring sunshine. Skip the Foreword. Israel Zangwill’s 1894 picaresque, the King only. Soft London Sephardi, carefully. This is not Pale Bontzye. Inventory is medium. No score is invented for this sit.",
+  hania:
+    "When old Mikolai on his death-bed left Hania to my guardianship and conscience. This sit is the Hania novella only — Chapter I, a Byzantine chapel, and snow on the wind. Skip the Prologue and the other pieces. Henryk Sienkiewicz, in Jeremiah Curtin’s English, Polish 1876 / English 1897. Soft Poland, carefully. This is not The Peasants. Inventory is medium. No score is invented for this sit.",
+  "the-toys-of-peace":
+    "Harvey, said Eleanor Bope, handing her brother a cutting from a London morning paper. This sit is The Toys of Peace only — the National Peace Council and the peace toys. Skip the memoir, the contents, and the other papers. Stop at the end of the sketch. Saki’s 1919 book. One sketch this sit; the cycle continues. Soft Saki, carefully. This is not Reginald. Inventory is easy. No score is invented for this sit.",
   berlin:
     "Berlin talks through Franz Biberkopf after prison — noise, politics, and fate in Döblin’s street choir. A city that will not let a man start clean.",
   passing:

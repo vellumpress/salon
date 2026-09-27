@@ -313,6 +313,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `In the time before steamships, a stroller along the docks would notice the Handsome Sailor. This sit is Billy Budd, Foretopman only — Chapter I. Skip the other pieces. Herman Melville’s 1924 novella. Soft Melville, carefully. This is not White Jacket. Inventory is medium. No score is invented for this sit.`,
   "malay-sketches":
     `A quarter of a century ago there lived on the bank of a broad river, just where stream meets tide, a Malay Raja and his youthful wife. This sit is A Malay Romance only — Raja Maimûnah and the stream that meets the tide. Skip the contents and the other sketches. Frank Swettenham’s 1895 book; the printing is 1903. One tale this sit; the cycle continues. Soft Malaya, carefully. Colonial administration stays as printed. Notion is easy. Launch shelf is no — do not inflate it.`,
+  "cousin-betty":
+    `One day, about the middle of July 1838, a carriage known as Milords was driving down the Rue de l’Université. Opening — a National Guard captain. Skip the Cajetani dedication. Honoré de Balzac, in James Waring’s English, 1846. Soft Paris, carefully. This is not Eugénie Grandet’s Saumur. The lead is this book, not The Sorrows of Satan, not The King of Schnorrers, and not Hania. Inventory is medium. No score is invented for this sit.`,
+  "the-sorrows-of-satan":
+    `Do you know what it is to be poor? Section I — a threadbare suit and an upper-class carriage. Skip the Methuen edition list. Marie Corelli’s 1895 novel. Soft England, a Faustian story, carefully. This is not The Woman Who Did. Inventory is easy. No score is invented for this sit.`,
+  "the-king-of-schnorrers":
+    `In the days when Lord George Gordon became a Jew, and was suspected of insanity. Chapter I — Grobstock, the synagogue stream, a canvas bag, and spring sunshine. Skip the Foreword. Israel Zangwill’s 1894 picaresque, the King only. Soft London Sephardi, carefully. This is not Pale Bontzye. Inventory is medium. No score is invented for this sit.`,
+  hania:
+    `When old Mikolai on his death-bed left Hania to my guardianship and conscience. This sit is the Hania novella only — Chapter I, a Byzantine chapel, and snow on the wind. Skip the Prologue and the other pieces. Henryk Sienkiewicz, in Jeremiah Curtin’s English, Polish 1876 / English 1897. Soft Poland, carefully. This is not The Peasants. Inventory is medium. No score is invented for this sit.`,
+  "the-toys-of-peace":
+    `Harvey, said Eleanor Bope, handing her brother a cutting from a London morning paper. This sit is The Toys of Peace only — the National Peace Council and the peace toys. Skip the memoir, the contents, and the other papers. Stop at the end of the sketch. Saki’s 1919 book. One sketch this sit; the cycle continues. Soft Saki, carefully. This is not Reginald. Inventory is easy. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -624,7 +634,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "bertha-garlan",
       "born-in-exile",
       "charmides-and-other-poems",
-      "cousin-betty",
       "dauber",
       "eugenie-grandet",
       "heart-of-darkness",
@@ -722,7 +731,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "emaux-et-camees",
       "eves-ransom",
       "fraternity",
-      "hania",
       "indian-summer",
       "les-heures-claires",
       "les-trophees",
@@ -1025,6 +1033,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "cosmopolis",
       "the-woman-who-did",
       "billy-budd",
+      // Mira Sun 27 Sep 2026 POST-#176 CLEAR — Cousin Betty leads. Never Featured.
+      // LEAD kept — not The Sorrows of Satan, not The King of Schnorrers, not Hania.
+      // Earlier before-sleep inventory listings of Cousin Betty and Hania move here so the cycle reads in order.
+      // The Toys of Peace is Waking up (the title sketch only).
+      "cousin-betty",
+      "the-sorrows-of-satan",
+      "the-king-of-schnorrers",
+      "hania",
     ],
   },
   {
@@ -1107,6 +1123,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "children-of-the-frost",
       // Mira Sun 27 Sep 2026 POST-#175 CLEAR — A Malay Romance only.
       "malay-sketches",
+      // Mira Sun 27 Sep 2026 POST-#176 CLEAR — The Toys of Peace sketch only.
+      "the-toys-of-peace",
     ],
   },
   {
@@ -1256,6 +1274,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "cosmopolis",
       "the-woman-who-did",
       "billy-budd",
+      // Mira Sun 27 Sep 2026 POST-#176 CLEAR — Cousin Betty leads. Never Featured.
+      // LEAD kept — not The Sorrows of Satan, not The King of Schnorrers, not Hania.
+      // Earlier before-sleep inventory listings of Cousin Betty and Hania move here so the cycle reads in order.
+      // The Toys of Peace is Waking up (the title sketch only).
+      "cousin-betty",
+      "the-sorrows-of-satan",
+      "the-king-of-schnorrers",
+      "hania",
     ],
   },
   {
@@ -1404,6 +1430,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "cosmopolis",
       "the-woman-who-did",
       "billy-budd",
+      // Mira Sun 27 Sep 2026 POST-#176 CLEAR — Cousin Betty leads. Never Featured.
+      // LEAD kept — not The Sorrows of Satan, not The King of Schnorrers, not Hania.
+      // Earlier before-sleep inventory listings of Cousin Betty and Hania move here so the cycle reads in order.
+      // The Toys of Peace is Waking up (the title sketch only).
+      "cousin-betty",
+      "the-sorrows-of-satan",
+      "the-king-of-schnorrers",
+      "hania",
     ],
   },
   {
@@ -1540,7 +1574,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "born-in-exile": 6,
   "calvary": 6,
   "charmides-and-other-poems": 5,
-  "cousin-betty": 5,
+  "cousin-betty": 6,
   "dauber": 5,
   "eugenie-grandet": 6,
   "heart-of-darkness": 5,
@@ -1669,6 +1703,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-woman-who-did": 6,
   "billy-budd": 6,
   "malay-sketches": 12,
+  "the-sorrows-of-satan": 7,
+  "the-king-of-schnorrers": 6,
+  "the-toys-of-peace": 9,
   "the-patrician": 5,
   "the-price-of-love": 5,
   "the-private-papers-of-henry-ryecroft": 5,

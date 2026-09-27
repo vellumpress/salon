@@ -1,0 +1,61 @@
+{
+  "id": "hania",
+  "title": "Hania",
+  "author": "Henryk Sienkiewicz (trans. Jeremiah Curtin)",
+  "year": "1897",
+  "note": "Project Gutenberg 36583. Host-only seat — *Hania* novella only (Prologue / other pieces skipped). Host: Ch I — Mikolai death-bed / Byzantine chapel / snow wind. PL 1876 / EN 1897; Curtin from PG About only. Inventory 82 medium. Soft Poland carefully ≠ Peasants.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Poland",
+      "place": "Chapter I · Poland",
+      "reentry": "When old Mikolai on his death-bed left Hania to my guardianship and conscience, I was sixteen years of age; she was younger by almost a year, and was also just emerging from childhood.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "When old Mikolai on his death-bed left Hania to my guardianship and conscience, I was sixteen years of age; she was younger by almost a year, and was also just emerging from childhood."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "I had to lead her from the bed of her dead grandfather almost by force, and we both went to my father's domestic chapel. The doors of the chapel were open, and before the old Byzantine image of the Mother of God two candles were burning. The gleam of these lighted but faintly the darkness on the altar. We knelt down, one at the side of the other. She, broken by sorrow, wearied by sobbing, sleeplessness, and grief, rested her poor little head on my arm, and so we remained there in silence. The hour was late; in the hall adjoining the chapel, the cuckoo called hoarsely on the old Dantiz clock the second hour after midnight. Deep silence everywhere, broken only by the painful sighs of Hania, and by the distant sound of the snow-bearing wind, which at times shook the leaden window-sash in the chapel. I did not dare to speak one word of solace; I merely drew her toward me, as her guardian, or her elder brother. But I could not pray; a thousand impressions and feelings shook my heart and head, various images swept before my eyes, but gradually out of that whirlpool one thought and one feeling emerged,--namely, that this pale face with closed eyes, this defenceless, poor little creature resting on my arm, had become to me now a dear sister for whose sake I would give my life, and for whose sake, should the need come, I would throw down the gauntlet to the whole world."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "My brother, Kazio, appeared now and knelt down behind us, next Father Ludvik and a few of the servants. We said our evening prayers, according to daily custom: Father Ludvik read the prayers aloud, we repeated them, or answered the litany; the dark face of the Mother of God, with two sabre-cuts on her cheek, looked at us kindly. She seemed to take part in our family cares and afflictions, in our happiness or misfortune, and bless all who were assembled at her feet."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "During prayers, when Father Ludvik began to commemorate the dead, for whom we repeated usually \"Eternal rest,\" and connected with them the name of Mikolai, Hania sobbed aloud again; and I made a vow in my soul, that I would accomplish sacredly the duties which the deceased had imposed on me, even had I to accomplish them at the cost of the greatest sacrifice."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "This was the vow of a young enthusiast who did not understand yet either the possible greatness of the sacrifices or the responsibility, but who was not without noble impulses and sensitive transports of soul."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "After evening prayer we parted to go to rest. On the old housekeeper, Vengrosia, I imposed the duty of conducting Hania to the chamber which she was to occupy in future,--not to the wardrobe chamber, as hitherto,--and to stay the whole night with her. Kissing the orphan affectionately, I went to the business house, where I, Kazio, and Father Ludvik had rooms, and which in the main house we called the station. I undressed and lay down in bed. In spite of my grief for Mikolai, whom I had loved sincerely, I felt proud and almost happy in my rôle of guardian. It raised me in my own eyes, that I, a boy of sixteen, was to be the support of a weak and helpless being. I felt full grown. \"Thou wert not mistaken, thou honest old soldier,\" thought I, \"in thy young lord and the heir; in good hands hast thou placed the future of thy grandchild, and thou mayst rest quietly in thy grave.\""
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "In truth, I was at peace touching Hania's future. The thought that she would grow up in time, and that I should have to give her in marriage, did not come to my head then. I thought that she would stay with me always, surrounded with attention as a sister, beloved as a sister, sad perhaps, but in peace. According to ancient custom the first son received more than five times as much property as younger members of the family. The younger sons and daughters on their part respected this custom, and never rebelled against it. Though in our family there was no legal primogeniture, I was the first son of the family, and therefore the greater part of the property would be mine; hence, though only a student yet, I looked on the property as my own. My father was among the richest proprietors of that region. Our family was not distinguished, it is true, by the wealth of magnates, but by that large oldtime nobility-wealth which gave bread to be waded through; a calm life and plenty in the native nest until death. I was to be comparatively wealthy, hence I looked with calmness both on my future and Hania's, knowing that whatever fate was awaiting her she would always find refuge and support with me whenever she needed them."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "I fell asleep with these thoughts. On the following morning I began to give effect to the guardianship. But in what a ridiculous and childish manner I did it! Still when I recall the whole matter to-day I cannot resist a certain feeling of tenderness."
+    }
+  ]
+}

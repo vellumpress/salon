@@ -173,6 +173,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-woman-who-did": { label: "Surrey", region: "gb" },
   "billy-budd": { label: "British man-of-war", region: "gb" },
   "malay-sketches": { label: "Malaya", region: "my" },
+  "cousin-betty": { label: "Paris", region: "fr" },
+  "the-sorrows-of-satan": { label: "England", region: "gb" },
+  "the-king-of-schnorrers": { label: "London Sephardi", region: "gb" },
+  hania: { label: "Poland", region: "pl" },
+  "the-toys-of-peace": { label: "England", region: "gb" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples

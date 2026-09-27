@@ -962,6 +962,15 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "cosmopolis",
   "the-woman-who-did",
   "billy-budd",
+  // Mira Sun 27 Sep 2026 POST-#176 CLEAR — Cousin Betty leads Next. Never Featured.
+  // LEAD kept — not The Sorrows of Satan, not The King of Schnorrers, not Hania.
+  // The Toys of Peace is Rituals (the title sketch only), not this tail.
+  // Earlier Cousin Betty and Hania inventory seats on Next stay.
+  // Sun POST-#175 Poison Tree and the earlier packs stay ahead.
+  "cousin-betty",
+  "the-sorrows-of-satan",
+  "the-king-of-schnorrers",
+  "hania",
 ] as const;
 
 /**
