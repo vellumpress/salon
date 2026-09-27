@@ -936,6 +936,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "south-wind",
   "the-village",
   "ditte-girl-alive",
+  // Mira Sun 27 Sep 2026 MIDDAY CLEAR — Candide leads Next. Never Featured.
+  // LEAD kept — not Aphrodite, not Iola Leroy. Earlier Candide and Aphrodite
+  // seats stay. West African Folk-Tales is Rituals (Spider Tales only),
+  // not this tail. Sun POST-#172 Daisy Miller and the earlier packs stay ahead.
+  "candide",
+  "iola-leroy",
+  "esther-waters",
+  "aphrodite",
 ] as const;
 
 /**

@@ -1,0 +1,561 @@
+{
+  "id": "aphrodite",
+  "title": "Aphrodite",
+  "author": "Pierre Louÿs",
+  "year": "1896",
+  "note": "Project Gutenberg 36378. Host: Book I Ch II *On the Quay at Alexandria* — singing-girl / flute-girls / white parapet (Author's Preface / denser Ch I skipped). Year FR 1896 — no invent translator. Inventory 78 medium — Later/For you OK if sensual-hard — do not soft-inflate.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Book I · Chapter II · On the Quay at Alexandria · Egypt",
+      "place": "Book I · Chapter II · On the Quay at Alexandria · Egypt",
+      "reentry": "On the quay at Alexandria a singing-girl was standing singing. By her side were two flute-girls, seated on the white parapet.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "On the quay at Alexandria a singing-girl was standing singing. By her side were two flute-girls, seated on the white parapet."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The satyrs pursue in the woods The light-Footed oreads. They chase the nymphs upon the mountains, They fill their eyes with affright, They seize their hair in the wind, They grasp their breasts in the chase, And throw their warm bodies backwards Upon the green dew-covered moss, And the beautiful bodies, their beautiful bodies half divine, Writhe with the agony... O women! Eros makes your lips cry aloud With dolorous, sweet Desire."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The flute-players repeated:"
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Eros! Eros!\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "and wailed in their twin reeds."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Cybele pursues across the plain Attys, beautiful as Apollo. Eros has smitten her to the heart, and for him, O Totoi! but not him for her, Instead of love, cruel god, wicked Eros, Thou counsellest but hatred... Across the meads, the vast distant plains, Cybele chases Attys; And because she adores the scorned, She infuses into his veins The great cold breath, the breath of death. O dolorous, sweet Desire!"
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Eros! Eros!\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Shrill wailings poured from the flutes."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "The Goat-foot pursues to the river Syrinx, the daughter of the fountain; Pale Eros, that loves the taste of tears, Kissed her as she ran, check to cheek; And the frail shadow of the drowned maiden Shivers, reeds, upon the waters. But Eros kings it over the world and the gods. He kings it over death itself. On the watery tomb he gathered for us All the reeds, and with them made the flute, 'Tis a dead soul that weeps here, women, Dolorous, sweet Desire."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Whilst the flute prolonged the slow chant of the last line, the singer held out her hand to the passers-by standing around her in a circle, and collected four obols, which she slipped into her shoe."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "The crowd gradually melted away, innumerable, curious of itself and watching its own movements. The noise of footsteps and voices drowned even the sound of the sea. Sailors hauled their boats upon the quay with bowed shoulders. Fruit-sellers passed to and fro with teeming baskets upon their arms. Beggars begged for alms with trembling hand. Asses, laden with leathern bottles, trotted in front of the goads of their drivers. But it was the hour of sunset; and the crowd of idlers, more numerous than the crowd bent on affairs, covered the quay. Groups formed in places, and women wandered amongst them. The names of well-known characters passed from mouth to mouth. The young men looked at the philosophers, and the philosophers looked at the courtesans."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "The latter were of every kind and condition, from the most celebrated, dressed in fine silks and wearing shoes of gilded leather, to the most miserable, who walked barefooted. The poor ones were no less beautiful than the others, but less fortunate only, and the attention of the sages was fixed by preference upon those whose natural grace was not disfigured by the artifice of girdles and weighty jewels. As it was the day before the Aphrodisiæ, these women had every license to choose the dress which suited them the best, and some of the youngest had even ventured to wear nothing at all. But their nudity shocked nobody, for they would not thus have exposed all the details of their bodies to the sun if they had possessed the slightest defect which might have rendered them the laughing-stock of the married women."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"Tryphera! Tryphera!\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "And a young courtesan of joyful mien elbowed her way through the crowd to join a friend of whom she had just caught sight."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"Tryphera! are you invited?\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"Where, Seso?\""
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"To Bacchis's.\""
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"Not yet. She is giving a dinner?\""
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"A dinner? A banquet, my dear. She is to liberate her most beautiful slave, Aphrodisia, on the second day of the feast.\""
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"At last! She has perceived at last that people came to see her only for the sake of her slave.\""
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"I think she has seen nothing. It is a whim of old Cheres, the ship-owner on the quay. He wanted to buy the girl for ten minæ. Bacchis refused. Twenty minæ; she refused again.\""
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"She must be crazy.\""
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Why, pray? It was her ambition to have a freed-woman. Besides, she was quite right to bargain. Cheres will give thirty-five minæ, and at that price the girl becomes a freed-woman.\""
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"Thirty-five minæ? Three thousand five hundred drachmæ? Three thousand five hundred drachmæ for a negress?\""
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"She is a white man's daughter.\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"But her mother is black.\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "\"Bacchis declared that she would not part with her for less, and old Cheres is so amorous that he consented.\""
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "\"I hope he is invited at any rate.\""
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "\"No! Aphrodisia is to be served up at the banquet as the last dish, after the fruit. Everybody will taste of it at pleasure, and it is only on the morrow that she is to be handed over to Cheres; but I am much afraid she will be tired...\""
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"Don't pity her. With him she will have time to recover. I know him, Seso. I have watched him sleep.\""
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "They laughed together at Cheres. Then they complimented one another. \"You have a pretty robe,\" said Seso. \"Did you have it trimmed at home?\""
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "Tryphera's robe was of fine sea-green stuff entirely trimmed with flowering iris. A carbuncle set in gold gathered it up into a spindle-shaped pleat over the left shoulder; the robe fell slantingly between the two breasts, leaving the entire right side of her body naked down to the metal girdle; a narrow slit, that opened and closed at every step, alone revealed the whiteness of the leg."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "\"Seso!\" said another voice. \"Seso and Tryphera, come with me if you don't know what to do. I am going to the Ceramic Wall to see whether my name is written up.\""
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "\"Mousarion! Where have you come from, my dear?\""
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "\"From Pharos. There is nobody there.\""
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "\"What do you mean? There is nothing to do but fish, it is so full.\""
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "\"No turbots for me. I am off to the wall. Come.\""
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "On the way, Seso told them about the projected banquet at Bacchis's over again."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "\"Ah! at Bacchis's!\" cried Mousarion. \"You remember the last dinner, Tryphera, and all the stories about Chrysis?\""
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "\"You must not repeat them. Seso is her friend.\""
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "Mousarion bit her lips; but Seso had already taken the alarm."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "\"What did they say about her?\""
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "\"Oh! various ill-natured things.\""
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "\"Let people talk,\" declared Seso. \"We three together are not worth Chrysis. The day she decides to leave her quarter and shew herself at Brouchion, I know of some of our lovers whom we shall never see again.\""
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "\"Oh! Oh!\""
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "\"Certainly. I would commit any folly for that woman. Be sure that there is none here more beautiful than she.\""
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "The three girls had now arrived in front of the Ceramic Wall. Inscriptions written in black succeeded one another along the whole length of its immense white surface. When a lover desired to present himself to a courtesan, he had merely to write up their two names, with the price he offered; if the man and the money were approved of, the woman remained standing under the notice until the lover re-appeared."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "\"Look, Seso,\" said Tryphera, laughing."
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "\"Who is the practical joker who has written that?\""
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "And they read in huge letters:"
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "Bacchis Thersies 2 OBOLS"
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "\"It ought not to be allowed to make fun of the women like that. If I were the rhymarch, I should already have held an enquiry.\""
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "But further on, Seso stopped before an inscription more to the point:"
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "Seso OF CNIDOS TIMON THE SON OF LYSIAS 1 MINA"
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "She turned slightly pale."
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "\"I stay,\" she said."
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "And she leaned her back against the wall under the envious glances of the women that passed by."
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "A few steps further on Mousarion found an acceptable offer, if not as generous an one. Tryphera returned to the quay alone."
+    },
+    {
+      "id": "sit-0-58",
+      "sceneId": "sit-0",
+      "text": "As the hour was advanced, the crowd had become less compact. But the three musicians were still singing and playing the flute."
+    },
+    {
+      "id": "sit-0-59",
+      "sceneId": "sit-0",
+      "text": "Catching sight of a stranger whose clothes and rotundity were slightly ridiculous, Tryphera tapped him on the shoulder."
+    },
+    {
+      "id": "sit-0-60",
+      "sceneId": "sit-0",
+      "text": "\"I say! Papa! I wager that you are not an Alexandrian, eh?\""
+    },
+    {
+      "id": "sit-0-61",
+      "sceneId": "sit-0",
+      "text": "\"No indeed, my girl,\" answered the honest fellow. \"And you have guessed rightly. I am quite astounded at the town and the people.\""
+    },
+    {
+      "id": "sit-0-62",
+      "sceneId": "sit-0",
+      "text": "\"You are from Boubastis?\""
+    },
+    {
+      "id": "sit-0-63",
+      "sceneId": "sit-0",
+      "text": "\"No. From Cabasa. I came here to sell grain, and I am going back again to-morrow, richer by fifty-two minæ. Thanks be to the gods! it has been a good year.\""
+    },
+    {
+      "id": "sit-0-64",
+      "sceneId": "sit-0",
+      "text": "Tryphera suddenly began to take an great interest in this merchant."
+    },
+    {
+      "id": "sit-0-65",
+      "sceneId": "sit-0",
+      "text": "\"My child,\" he resumed timidly, \"you can give me a great joy. I don't want to return to Cabasa to-morrow without being able to tell my wife and three daughters that I have seen some celebrated men, You probably know some celebrated men?\""
+    },
+    {
+      "id": "sit-0-66",
+      "sceneId": "sit-0",
+      "text": "\"Some few,\" she said, laughing."
+    },
+    {
+      "id": "sit-0-67",
+      "sceneId": "sit-0",
+      "text": "\"Good. Name them to me when they pass. I am sure that during the last two days I have met the most influential functionaries. I am in despair at not knowing them by sight.\""
+    },
+    {
+      "id": "sit-0-68",
+      "sceneId": "sit-0",
+      "text": "\"You shall have your wish. This is Naucrates.\""
+    },
+    {
+      "id": "sit-0-69",
+      "sceneId": "sit-0",
+      "text": "\"Who is Naucrates?\""
+    },
+    {
+      "id": "sit-0-70",
+      "sceneId": "sit-0",
+      "text": "\"A philosopher.\""
+    },
+    {
+      "id": "sit-0-71",
+      "sceneId": "sit-0",
+      "text": "\"And what does he teach?\""
+    },
+    {
+      "id": "sit-0-72",
+      "sceneId": "sit-0",
+      "text": "\"Silence.\""
+    },
+    {
+      "id": "sit-0-73",
+      "sceneId": "sit-0",
+      "text": "\"By Zeus, that is a doctrine that does not require much genius, and this philosopher does not please me at all.\""
+    },
+    {
+      "id": "sit-0-74",
+      "sceneId": "sit-0",
+      "text": "\"That is Phrasilas.\""
+    },
+    {
+      "id": "sit-0-75",
+      "sceneId": "sit-0",
+      "text": "\"Who is Phrasilas?\""
+    },
+    {
+      "id": "sit-0-76",
+      "sceneId": "sit-0",
+      "text": "\"A fool.\""
+    },
+    {
+      "id": "sit-0-77",
+      "sceneId": "sit-0",
+      "text": "\"Then why do you mention him?\""
+    },
+    {
+      "id": "sit-0-78",
+      "sceneId": "sit-0",
+      "text": "\"Because others consider him to be eminent.\""
+    },
+    {
+      "id": "sit-0-79",
+      "sceneId": "sit-0",
+      "text": "\"And what does he say?\""
+    },
+    {
+      "id": "sit-0-80",
+      "sceneId": "sit-0",
+      "text": "\"He says everything with a smile, and that enables him to pass off his errors as international and common-places as subtile. He has all the advantage. People have allowed themselves to be duped.\""
+    },
+    {
+      "id": "sit-0-81",
+      "sceneId": "sit-0",
+      "text": "\"All this is beyond me, and I don't quite understand. Besides, the face of this Phrasilas is marked by hypocrisy.\""
+    },
+    {
+      "id": "sit-0-82",
+      "sceneId": "sit-0",
+      "text": "\"This is Philodemos.\""
+    },
+    {
+      "id": "sit-0-83",
+      "sceneId": "sit-0",
+      "text": "\"The strategist?\""
+    },
+    {
+      "id": "sit-0-84",
+      "sceneId": "sit-0",
+      "text": "\"No. A Latin poet who writes in Greek.\""
+    },
+    {
+      "id": "sit-0-85",
+      "sceneId": "sit-0",
+      "text": "\"My dear, he is an enemy. I am sorry to have seen him.\""
+    },
+    {
+      "id": "sit-0-86",
+      "sceneId": "sit-0",
+      "text": "At this point a flutter of excitement ran through the crowd and a murmur of voices pronounced the same name:"
+    },
+    {
+      "id": "sit-0-87",
+      "sceneId": "sit-0",
+      "text": "\"Demetrios... Demetrios...\""
+    },
+    {
+      "id": "sit-0-88",
+      "sceneId": "sit-0",
+      "text": "Tryphera mounted upon a street post, and she too said to the merchant:"
+    },
+    {
+      "id": "sit-0-89",
+      "sceneId": "sit-0",
+      "text": "\"Demetrios... That is Demetrios. You were anxious to see celebrated men.\""
+    },
+    {
+      "id": "sit-0-90",
+      "sceneId": "sit-0",
+      "text": "\"Demetrios? the Queen's lover? Is it possible?\""
+    },
+    {
+      "id": "sit-0-91",
+      "sceneId": "sit-0",
+      "text": "\"Yes, you are in luck. He never leaves his house. This is the first time I have seen him on the quay since I have been at Alexandria.\""
+    },
+    {
+      "id": "sit-0-92",
+      "sceneId": "sit-0",
+      "text": "\"Where is he?\""
+    },
+    {
+      "id": "sit-0-93",
+      "sceneId": "sit-0",
+      "text": "\"That's he, bending over to look at the harbour.\""
+    },
+    {
+      "id": "sit-0-94",
+      "sceneId": "sit-0",
+      "text": "\"There are two men leaning over.\""
+    },
+    {
+      "id": "sit-0-95",
+      "sceneId": "sit-0",
+      "text": "\"It is the one in blue.\""
+    },
+    {
+      "id": "sit-0-96",
+      "sceneId": "sit-0",
+      "text": "\"I cannot see him very well. His back is turned to me.\""
+    },
+    {
+      "id": "sit-0-97",
+      "sceneId": "sit-0",
+      "text": "\"Know you not? he is the sculptor to whom the queen offered herself for a model when he carved the Aphrodite in the temple.\""
+    },
+    {
+      "id": "sit-0-98",
+      "sceneId": "sit-0",
+      "text": "\"They say he is the royal lover. They say he is the master of Egypt.\""
+    },
+    {
+      "id": "sit-0-99",
+      "sceneId": "sit-0",
+      "text": "\"And he is as beautiful as Apollo.\""
+    },
+    {
+      "id": "sit-0-100",
+      "sceneId": "sit-0",
+      "text": "\"Ah! he has turned round. I am very glad that I came. I shall say that I have seen him. I have heard so much about him. It seems that no woman has ever resisted him. He has had many love adventures, has he not? How is it that the queen has not heard of them?\""
+    },
+    {
+      "id": "sit-0-101",
+      "sceneId": "sit-0",
+      "text": "\"The queen knows of them as well as we do. She loves him too much to speak of them. She is afraid of his returning to Rhodes, to his master, Pherecrates. He is as powerful as she is, and it is she who desired him.\""
+    },
+    {
+      "id": "sit-0-102",
+      "sceneId": "sit-0",
+      "text": "\"He does not look happy. Why does he look so sad? I think I should be happy if I were in his place. I should like to be he, were it only for an evening.\""
+    },
+    {
+      "id": "sit-0-103",
+      "sceneId": "sit-0",
+      "text": "The sun had set. The women gazed at this man, their common dream. He, without appearing to be conscious of the stir he created, remained leaning over the parapet, listening to the flute-girls."
+    },
+    {
+      "id": "sit-0-104",
+      "sceneId": "sit-0",
+      "text": "The little musicians made another collection; then, they softly threw their light flutes over their backs. The singing-girl placed her arms round their necks and all three returned to the town."
+    },
+    {
+      "id": "sit-0-105",
+      "sceneId": "sit-0",
+      "text": "At night-fall, the other women went back into immense Alexandria in little groups, and the herd of men followed them; but all turned round as they walked, and looked at Demetrios."
+    },
+    {
+      "id": "sit-0-106",
+      "sceneId": "sit-0",
+      "text": "The last girl who passed softly cast her yellow flowers at him, and laughed."
+    },
+    {
+      "id": "sit-0-107",
+      "sceneId": "sit-0",
+      "text": "Night fell upon the quays."
+    }
+  ]
+}

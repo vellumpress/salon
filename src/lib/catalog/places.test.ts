@@ -256,7 +256,7 @@ test("former no-place shelf rows now resolve a country chip", () => {
     "cantos-de-vida-y-esperanza": { label: "Nicaragua", region: "ni" },
     "the-book-of-the-birds-paksi-pakaranam": { label: "Thailand", region: "th" },
     "the-epic-of-gilgamesh": { label: "Iraq", region: "iq" },
-    "west-african-folk-tales": { label: "Ghana", region: "gh" },
+    "west-african-folk-tales": { label: "Gold Coast", region: "gh" },
     "south-american-jungle-tales": { label: "Uruguay", region: "uy" },
     "the-autobiography-of-munshi-abdullah-hikayat-abd": { label: "Malaysia", region: "my" },
     "letters-of-a-javanese-princess": { label: "Java — Japara", region: "id" },

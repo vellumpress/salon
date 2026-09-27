@@ -67,7 +67,7 @@ export const PITCHES: Record<string, string> = {
   "white-nights":
     "It was a wonderful night — the dreamer’s starry Petersburg. First Night only, and not Notes from Underground.",
   "west-african-folk-tales":
-    "Anansi buys the stories from Nyankupon. One tale per sit — How We Got the Name ‘Spider Tales’ — soft against Jamaica Anansi.",
+    "In the olden days all the stories which men told were stories of Nyankupon, the chief of the gods. This sit is How We Got the Name ‘Spider Tales’ only — Nyankupon, Anansi, and a jar of bees. Skip the contents, the introduction, and the other tales. One tale this sit; the cycle continues. Soft Gold Coast, carefully. This is not Caribbean Anansi. Notion is easy. Launch shelf is no.",
   berlin:
     "Berlin talks through Franz Biberkopf after prison — noise, politics, and fate in Döblin’s street choir. A city that will not let a man start clean.",
   passing:

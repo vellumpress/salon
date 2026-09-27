@@ -1,1 +1,46 @@
-{"id":"west-african-folk-tales","title":"West African Folk-Tales","author":"W. H. Barker and Cecilia Sinclair","year":"1917","note":"Project Gutenberg 66923","minutes":5,"cover":"","coverAlt":"","scenes":[{"id":"sit-0","title":"How We Got the Name ‘Spider Tales’","place":"How We Got the Name ‘Spider Tales’","reentry":"In the olden days all the stories which men told were stories of Nyankupon, the chief of the gods.","prompt":"A word from this stretch."}],"breaths":[{"id":"sit-0-0","sceneId":"sit-0","text":"In the olden days all the stories which men told were stories of Nyankupon, the chief of the gods."},{"id":"sit-0-1","sceneId":"sit-0","text":"Spider, who was very conceited, wanted the stories to be told about him."},{"id":"sit-0-2","sceneId":"sit-0","text":"wanted the stories to be told about him."},{"id":"sit-0-3","sceneId":"sit-0","text":"In the olden days all the stories which men told were stories of Nyankupon, the chief of the gods."},{"id":"sit-0-4","sceneId":"sit-0","text":"Spider, who was very conceited, wanted the stories to be told about him."},{"id":"sit-0-5","sceneId":"sit-0","text":"Accordingly, one day he went to Nyankupon and asked that, in future, all tales told by men might be Anansi stories, instead of Nyankupon stories."},{"id":"sit-0-6","sceneId":"sit-0","text":"Nyankupon agreed, on one condition."},{"id":"sit-0-7","sceneId":"sit-0","text":"He told Spider (or Anansi) that he must bring him three things: the first was a jar full of live bees, the second was a boa-constrictor, and the third a tiger."},{"id":"sit-0-8","sceneId":"sit-0","text":"Spider gave his promise."},{"id":"sit-0-9","sceneId":"sit-0","text":"He took an earthen vessel and set out for a place where he knew were numbers of bees."},{"id":"sit-0-10","sceneId":"sit-0","text":"When he came in sight of the bees he began saying to himself, “They will not be able to fill this jar”—“Yes, they will be able”—“No, they will not be able,” until the bees came up to him and said, “What are you talking about, Mr Anansi?”"},{"id":"sit-0-11","sceneId":"sit-0","text":"He thereupon explained to them that Nyankupon and he had had a great dispute."},{"id":"sit-0-12","sceneId":"sit-0","text":"Nyankupon had said the bees could not fly into the jar—Anansi had said they could."},{"id":"sit-0-13","sceneId":"sit-0","text":"The bees immediately declared that of course they could fly into the jar—which they at once did."},{"id":"sit-0-14","sceneId":"sit-0","text":"As soon as they were safely inside, Anansi sealed up the jar and sent it off to Nyankupon."},{"id":"sit-0-15","sceneId":"sit-0","text":"Next day he took a long stick and set out in search of a boa-constrictor."},{"id":"sit-0-16","sceneId":"sit-0","text":"When he arrived at the place where one lived he began speaking to himself again."},{"id":"sit-0-17","sceneId":"sit-0","text":"“He will just be as long as this stick”—“No, he will not be so long as this”—“Yes, he will be as long as this.”"},{"id":"sit-0-18","sceneId":"sit-0","text":"These words he repeated several times, till the boa came out and asked him what was the matter."},{"id":"sit-0-19","sceneId":"sit-0","text":"“Oh, we have been having a dispute in Nyankupon’s town about you."},{"id":"sit-0-20","sceneId":"sit-0","text":"Nyankupon’s people say you are not as long as this stick."},{"id":"sit-0-21","sceneId":"sit-0","text":"I say you are."},{"id":"sit-0-22","sceneId":"sit-0","text":"Please let me measure you by it.”"},{"id":"sit-0-23","sceneId":"sit-0","text":"The boa innocently laid himself out straight, and Spider lost no time in tying him on to the stick from end to end."},{"id":"sit-0-24","sceneId":"sit-0","text":"He then sent him to Nyankupon."},{"id":"sit-0-25","sceneId":"sit-0","text":"The third day he took a needle and thread and sewed up his eye."},{"id":"sit-0-26","sceneId":"sit-0","text":"He then set out for a den where he knew a tiger lived."},{"id":"sit-0-27","sceneId":"sit-0","text":"As he approached the place he began to shout and sing so loudly that the tiger came out to see what was the matter."},{"id":"sit-0-28","sceneId":"sit-0","text":"“Can you not see?” said Spider."},{"id":"sit-0-29","sceneId":"sit-0","text":"“My eye is sewn up and now I can see such wonderful things that I must sing about them.”"},{"id":"sit-0-30","sceneId":"sit-0","text":"“Sew up my eyes,” said the tiger, “then I too can see these surprising sights.”"},{"id":"sit-0-31","sceneId":"sit-0","text":"Spider immediately did so."},{"id":"sit-0-32","sceneId":"sit-0","text":"Having thus made the tiger helpless, he led him straight to Nyankupon’s house."},{"id":"sit-0-33","sceneId":"sit-0","text":"Nyankupon was amazed at Spider’s cleverness in fulfilling the three conditions."},{"id":"sit-0-34","sceneId":"sit-0","text":"He immediately gave him permission for the future to call all the old tales Anansi tales."}]}
+{
+  "id": "west-african-folk-tales",
+  "title": "West African Folk-Tales",
+  "author": "W. H. Barker and Cecilia Sinclair",
+  "year": "1917",
+  "note": "Project Gutenberg 66923. Host: ***How We Got the Name 'Spider Tales'*** only — Nyankupon / Anansi / jar of bees (Contents / Introduction / other tales skipped). Notion 71 easy · Launch shelf NO.",
+  "minutes": 2,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "How We Got the Name 'Spider Tales' · West Africa — Gold Coast / Akan",
+      "place": "How We Got the Name 'Spider Tales' · West Africa — Gold Coast / Akan",
+      "reentry": "In the olden days all the stories which men told were stories of Nyankupon, the chief of the gods. Spider, who was very conceited, wanted the stories to be told about him.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "In the olden days all the stories which men told were stories of Nyankupon, the chief of the gods. Spider, who was very conceited, wanted the stories to be told about him."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Accordingly, one day he went to Nyankupon and asked that, in future, all tales told by men might be Anansi stories, instead of Nyankupon stories. Nyankupon agreed, on one condition. He told Spider (or Anansi) that he must bring him three things: the first was a jar full of live bees, the second was a boa-constrictor, and the third a tiger. Spider gave his promise."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "He took an earthen vessel and set out for a place where he knew were numbers of bees. When he came in sight of the bees he began saying to himself, \"They will not be able to fill this jar\"—\"Yes, they will be able\"—\"No, they will not be able,\" until the bees came up to him and said, \"What are you talking about, Mr Anansi?\" He thereupon explained to them that Nyankupon and he had had a great dispute. Nyankupon had said the bees could not fly into the jar—Anansi had said they could. The bees immediately declared that of course they could fly into the jar—which they at once did. As soon as they were safely inside, Anansi sealed up the jar and sent it off to Nyankupon."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Next day he took a long stick and set out in search of a boa-constrictor. When he arrived at the place where one lived he began speaking to himself again. \"He will just be as long as this stick\"—\"No, he will not be so long as this\"—\"Yes, he will be as long as this.\" These words he repeated several times, till the boa came out and asked him what was the matter. \"Oh, we have been having a dispute in Nyankupon's town about you. Nyankupon's people say you are not as long as this stick. I say you are. Please let me measure you by it.\" The boa innocently laid himself out straight, and Spider lost no time in tying him on to the stick from end to end. He then sent him to Nyankupon."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "The third day he took a needle and thread and sewed up his eye. He then set out for a den where he knew a tiger lived. As he approached the place he began to shout and sing so loudly that the tiger came out to see what was the matter. \"Can you not see?\" said Spider. \"My eye is sewn up and now I can see such wonderful things that I must sing about them.\" \"Sew up my eyes,\" said the tiger, \"then I too can see these surprising sights.\" Spider immediately did so. Having thus made the tiger helpless, he led him straight to Nyankupon's house. Nyankupon was amazed at Spider's cleverness in fulfilling the three conditions. He immediately gave him permission for the future to call all the old tales Anansi tales."
+    }
+  ]
+}

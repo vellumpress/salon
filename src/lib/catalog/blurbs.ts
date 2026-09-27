@@ -638,7 +638,7 @@ const BLURBS: Record<string, string> = {
     "Dunbar’s lyrics in dialect and in the English he was told not to waste.",
   "the-sport-of-the-gods":
     "Berry Hamilton’s cottage sits back from the Oakley mansion, and the butler’s dignity opens the sit.",
-  "iola-leroy": "A woman of mixed race after the war, choosing a people instead of a pass.",
+  "iola-leroy": "\"Good mornin', Bob\" — the butter is fresh, and a prayer-meeting is already being planned.",
   "of-one-blood": "Hopkins’ Boston and Meroe: a mystery of race that goes underground.",
   "gentlemen-prefer-blondes":
     "March 16th at the Ritz — Lorelei’s diary opens on diamonds, brains, and the joke that starts the sit.",
@@ -705,7 +705,7 @@ const BLURBS: Record<string, string> = {
   "the-woman-who-did": "Grant Allen’s heroine who will not marry, and the novel that made a scandal of it.",
   "the-green-carnation": "A green carnation in an evening coat, and a Piccadilly glass that already knows the pose.",
   "the-sorrows-of-satan": "Corelli’s bestseller: the devil in London society, taking notes.",
-  "esther-waters": "A servant has a child and keeps it — Moore’s London without the varnish.",
+  "esther-waters": "She stood on the platform watching the receding train, in a faded yellow dress.",
   "south-wind": "The bishop is confoundedly sea-sick on the way to Nepenthe.",
   "the-village": "The Krasoffs’ great-grandfather, called the Gipsy, was hunted with wolf-hounds.",
   "ditte-girl-alive": "Ditte Child o’ Man stood at the top of the family tree.",
@@ -783,7 +783,9 @@ const BLURBS: Record<string, string> = {
   "hadji-murad":
     "I was returning home by the fields, midsummer, the hay in and the rye just beginning.",
   "south-african-folk-tales": "Honey’s collection of southern African tales, animals arguing like people.",
-  "west-african-folk-tales": "One tale: Anansi buys the stories from Nyankupon.",
+  "west-african-folk-tales": "In the olden days the stories belonged to Nyankupon, and this sit is Spider Tales only.",
+  "candide": "In a castle of Westphalia, Candide is expelled from the house of Thunder-ten-Tronckh.",
+  "aphrodite": "On the quay at Alexandria a singing-girl stands with two flute-girls on the white parapet.",
   "sappho-one-hundred-lyrics": "Carman’s Sappho reconstructions — fragments turned into a book of desire.",
   "a-japanese-nightingale": "Sunset lingers over the bay, and a storm dance begins on a tea-house island.",
   "white-jacket": "Not a very white jacket, but white enough, on a frigate leaving Callao for Cape Horn.",
