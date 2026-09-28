@@ -1045,6 +1045,15 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "niels-lyhne",
   "the-emancipated",
   "germinal",
+  // Mira Mon 28 Sep 2026 POST-#185 CLEAR — Kipps leads Next. Never Featured.
+  // LEAD kept — not The Professor, not A Room with a View, not Martin Eden.
+  // Earlier shelf rows for these four keep their slugs. They were not on Next.
+  // Madame Heurtebise is Rituals (the title sketch only), not this tail.
+  // Mon POST-#184 Smoke and the earlier packs stay ahead.
+  "kipps",
+  "the-professor",
+  "a-room-with-a-view",
+  "martin-eden",
 ] as const;
 
 /**

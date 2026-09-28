@@ -100,7 +100,7 @@ const BLURBS: Record<string, string> = {
   underground:
     "A spiteful man talks himself into a corner and will not leave.",
   "a-room-with-a-view":
-    "Florence light, English manners, and a kiss that rearranges a carefully planned life.",
+    "Miss Bartlett says the Signora had no business to give them anything but south rooms with a view.",
   "liza-of-lambeth":
     "A factory girl in Lambeth learns how little the street forgives.",
   banjo:
@@ -238,6 +238,8 @@ const BLURBS: Record<string, string> = {
     "A man walks the Marchiennes road to Montsou under a sky as dark as ink.",
   "our-lady-of-the-pillar":
     "In 1474 a young knight comes to Segovia and the church of Our Lady of the Pillar.",
+  "madame-heurtebise":
+    "A jeweller’s-shop wife marries the poet Heurtebise, and the shop glitter is the life she keeps.",
   falcon:
     "Spade keeps the falcon, the lies, and the one rule he will not break for a woman.",
   "winesburg-ohio":
@@ -423,7 +425,7 @@ const BLURBS: Record<string, string> = {
     "A play that ruins its readers, and stories that catch the yellow stain.",
   mcteague: "A Polk Street dentist, gold, and a marriage that turns to greed and heat.",
   "the-sea-wolf": "A ferry wreck, a sealing schooner, and a captain who philosophizes with his fists.",
-  "martin-eden": "A sailor educates himself into a writer and finds the prize is hollow.",
+  "martin-eden": "A latch-key opens the hall, and a young fellow in sea-smacked clothes comes in behind.",
   "the-iron-heel": "London’s oligarchy of the future, told as a warning already coming true.",
   "the-open-boat-and-other-stories":
     "Crane’s men in a dinghy, and other stories that refuse a consoling shore.",
@@ -514,7 +516,7 @@ const BLURBS: Record<string, string> = {
     "Katerina Lvovna is bored in her rich father-in-law’s empty house in Mtsensk.",
   "the-last-man":
     "Sea-surrounded England, and a narrator whose lineage is already a ruin.",
-  "the-professor": "Charlotte Brontë’s Brussels schoolroom, before Jane Eyre made it famous.",
+  "the-professor": "An old school letter from Eton opens on Crimsworth, the outsider, before Brussels.",
   romola: "Eliot’s Florence: a scholar’s daughter and a marriage that is a political error.",
   "the-nether-world": "Gissing’s Clerkenwell poor, without the usual uplifting exit.",
   "the-odd-women": "Women who will not marry on the available terms, and the men who mind.",
@@ -532,7 +534,7 @@ const BLURBS: Record<string, string> = {
   "far-from-the-madding-crowd": "A farm, three men, and a woman who will not be a prize quietly.",
   "the-mayor-of-casterbridge": "A man sells his wife at a fair and spends a life trying to unbuy it.",
   "the-return-of-the-native": "Egdon Heath, a reddleman, and a woman who wanted a larger stage.",
-  "kipps": "A draper’s assistant comes into money and does not know which fork is the trap.",
+  "kipps": "A New Romney aunt and uncle raise Kipps, and a white dress is what he remembers of his mother.",
   "tono-bungay": "A patent medicine fortune, and Wells taking England apart from the inside.",
   "ann-veronica": "One Wednesday afternoon in late September, Ann Veronica Stanley comes down from London to face her father.",
   "the-history-of-mr-polly": "A shopkeeper who was not built for shopkeeping, and the day he leaves.",
