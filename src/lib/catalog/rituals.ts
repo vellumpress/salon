@@ -439,6 +439,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `'NOW, what I want is, Facts. Teach these boys and girls nothing but Facts. Facts alone are wanted in life. Book the First, Chapter I, The One Thing Needful — a Facts school-room and Gradgrind. Skip the table of contents if the phone is tight. Charles Dickens’s 1854 novel. Soft Dickens, carefully. Soft England, carefully. This is not Kipps in Folkestone, not The Father of Yoto in Limehouse, and not Antic Hay. Coketown is primary. Inventory 76 is medium. No score is invented for this sit.`,
   "great-god-pan":
     `"I am glad you came, Clarke; very glad indeed. I was not sure you could spare the time." This sit is The Great God Pan only — Clarke and the Experiment. Skip the Contents and the other matter. Stop at the end of the novella. Arthur Machen’s 1894 novella. One novella this sit. Soft Machen, carefully. This is not The Hill of Dreams. Soft London, carefully. This is not The Father of Yoto in Limehouse. This is not The Bottle Imp in Hawaii. Inventory 93 is medium. No score is invented for this sit.`,
+  "manalive":
+    `A wind sprang high in the west, like a wave of unreasonable happiness, and tore eastward across England, trailing with it the frosty scent of forests and the cold intoxication of the sea. Part I, Chapter I — a great wind, unreasonable happiness, and Beacon House. Skip the Contents if the phone is tight. G. K. Chesterton’s 1912 novel. Soft Chesterton, carefully. Soft London, carefully. This is not The Great God Pan, and not Limehouse. Soft England, carefully. This is not Coketown, and not Folkestone. Beacon House is primary. Soft densify, carefully, against Venice, a Midwest pulpit, Clarendon, Coketown, and London occult, and against Petersburg, Ireland, the Lower East Side, Australia, and Hawaii, and against Normandy, Nebraska, Norway, Nauheim, and Limehouse, and against Folkestone, Brussels, Florence, Oakland, and Paris. The lead is this book, not Captain Blood, not The Monomaniac, and not Tartarin de Tarascon. PG reading-ease 77.9 is easy. No score is invented for this sit. The first breath is 337 words — phone-hard, left as printed.`,
+  "captain-blood":
+    `Peter Blood, bachelor of medicine and several other things besides, smoked a pipe and tended the geraniums boxed on the sill of his window above Water Lane in the town of Bridgewater. Chapter I, The Messenger — Bridgewater, Water Lane, and geraniums. Skip the Contents if the phone is tight. Rafael Sabatini’s 1922 novel. Soft Sabatini, carefully. Soft Caribbean, carefully. The Bridgewater open is careful. This is not an England-weighted lead. The Caribbean and the Spanish Main are primary. PG reading-ease 81.2 is easy. No score is invented for this sit.`,
+  "the-monomaniac":
+    `Roubaud, on entering the room, placed the loaf, the pâté, and the bottle of white wine on the table. Chapter I — Roubaud, the Impasse d’Amsterdam, and a station window. Skip the Vizetelly Preface and the Contents if the phone is tight. Émile Zola, in Edward Vizetelly’s English, 1890. Vizetelly is named in the About only. Soft Zola, carefully. This is not Germinal, not Doctor Pascal, and not L’Assommoir. Soft Paris, carefully. This is not Madame Heurtebise. The Jacques Lantier railway is primary. PG reading-ease 78.5 is easy. No score is invented for this sit.`,
+  "tartarin-de-tarascon":
+    `Although it is now some twelve or fifteen years since my first meeting with Tartarin de Tarascon, the memory of the encounter remains as fresh as if it had been yesterday. Chapter 1 — a Tarascon villa on the Avignon road, and an exotic garden. Skip the Introduction if the phone is tight. Alphonse Daudet, in Oliver C. Colt’s English, 1872. Colt is named in the About only. Soft Daudet, carefully. This is not Madame Heurtebise. Soft Provence, carefully. Soft Algeria, carefully. This is not Peter Halket in Mashonaland. Algeria is primary. PG reading-ease 78.0 is easy. No score is invented for this sit.`,
+  "the-time-machine":
+    `The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. This sit is The Time Machine only — the Time Traveller, a fire, and silver lilies. Skip the Contents. Stop at the end of the novel. H. G. Wells’s 1895 novel. One short novel this sit. Soft Wells, carefully. This is not Kipps. Soft England, carefully. This is not Coketown, not Limehouse, not Folkestone, and not London occult. PG reading-ease is easy. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1242,6 +1252,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "elmer-gantry",
       "colonels-dream",
       "hard-times",
+      // Mira Mon 28 Sep 2026 POST-#189 CLEAR — Manalive leads. Never Featured.
+      // LEAD kept — not Captain Blood, not The Monomaniac, not Tartarin de Tarascon.
+      // The Time Machine is Waking up (the whole short novel only).
+      "manalive",
+      "captain-blood",
+      "the-monomaniac",
+      "tartarin-de-tarascon",
     ],
   },
   {
@@ -1350,6 +1367,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "bottle-imp",
       // Mira Mon 28 Sep 2026 POST-#188 CLEAR — The Great God Pan only.
       "great-god-pan",
+      // Mira Mon 28 Sep 2026 POST-#189 CLEAR — The Time Machine only.
+      "the-time-machine",
     ],
   },
   {
@@ -1606,6 +1625,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "elmer-gantry",
       "colonels-dream",
       "hard-times",
+      // Mira Mon 28 Sep 2026 POST-#189 CLEAR — Manalive leads. Never Featured.
+      // LEAD kept — not Captain Blood, not The Monomaniac, not Tartarin de Tarascon.
+      // The Time Machine is Waking up (the whole short novel only).
+      "manalive",
+      "captain-blood",
+      "the-monomaniac",
+      "tartarin-de-tarascon",
     ],
   },
   {
@@ -1861,6 +1887,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "elmer-gantry",
       "colonels-dream",
       "hard-times",
+      // Mira Mon 28 Sep 2026 POST-#189 CLEAR — Manalive leads. Never Featured.
+      // LEAD kept — not Captain Blood, not The Monomaniac, not Tartarin de Tarascon.
+      // The Time Machine is Waking up (the whole short novel only).
+      "manalive",
+      "captain-blood",
+      "the-monomaniac",
+      "tartarin-de-tarascon",
     ],
   },
   {
@@ -1940,6 +1973,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "colonels-dream": 5,
   "hard-times": 5,
   "great-god-pan": 12,
+  manalive: 5,
+  "captain-blood": 5,
+  "the-monomaniac": 5,
+  "tartarin-de-tarascon": 5,
+  "the-time-machine": 12,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
   "all-quiet-on-the-western-front": 2,

@@ -1084,6 +1084,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "elmer-gantry",
   "colonels-dream",
   "hard-times",
+  // Mira Mon 28 Sep 2026 POST-#189 CLEAR — Manalive leads Next. Never Featured.
+  // LEAD kept — not Captain Blood, not The Monomaniac, not Tartarin de Tarascon.
+  // The Time Machine is Rituals (the whole short novel only), not this tail.
+  // Mon POST-#188 Death in Venice and the earlier packs stay ahead.
+  "manalive",
+  "captain-blood",
+  "the-monomaniac",
+  "tartarin-de-tarascon",
 ] as const;
 
 /**
