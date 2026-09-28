@@ -252,7 +252,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-painted-veil":
     `Shuttered Hong Kong room after tiffin; someone tries the door; Kitty whispers “Walter.” Colonial household language (*amah*, “boys”) stays, and the sit opens on “How shall I get out?” The closed sit is Chapter I only — adultery and colonial heat; Host may name them, and don’t sanitize.`,
   "the-good-soldier":
-    `Nine seasons at Bad Nauheim — intimacy like a good glove, and still they knew nothing.`,
+    `This is the saddest story I have ever heard. Part I, Chapter I — the Ashburnhams and nine seasons at Nauheim. Skip the Contents. Ford Madox Ford’s 1915 novel. Soft England, carefully. This is not Kipps, and not Antic Hay. Soft Germany, carefully. This is not Smoke. Nauheim is primary. Inventory 72 is medium. No score is invented for this sit.`,
   "growth-of-the-soil":
     `The long moor road north; red-beard Isak with the first sack. The settler open uses the period word “Lapp” for Sámi herders on the common — Worster’s English only. Loneliness and land hunger — Host OK; if you Host further, keep that named for the room.`,
   "of-human-bondage":
@@ -411,6 +411,14 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `The one opened the door with a latch-key and went in, followed by a young fellow who awkwardly removed his cap. Chapter I — a latch-key hall, sea-smacked rough clothes, and a rolling gait. Skip the Contents. Jack London’s 1909 novel. Soft London, carefully. This is not The Law of Life. Soft United States, carefully. This is not Sister Carrie. Oakland is primary. Inventory 75 is easy. No score is invented for this sit.`,
   "madame-heurtebise":
     `She was certainly not intended for an artist's wife, above all for such an artist as this outrageous fellow. This sit is Madame Heurtebise only — a jeweller’s-shop wife and the poet Heurtebise. Skip the translator preface and the other sketches. Stop at the end of the sketch. Alphonse Daudet, in Laura Ensor’s English, 1874. One sketch this sit. Soft Daudet, carefully. This is not Numa Roumestan or The Nabob. Soft France, carefully. This is not Germinal, Doctor Pascal, or Three Soldiers. Inventory 80 is easy. No score is invented for this sit.`,
+  "une-vie":
+    `The weather was most distressing. It had rained all night. Chapter I, The Home by the Sea — Jeanne free of the convent, rain gutters, and an 1819 calendar. Skip the Introduction, the Contents, and the other stories. Guy de Maupassant, in Albert M. C. McMaster and A. E. Henderson’s English, 1883. The imprint names them; no separate Translator is listed. Soft Maupassant, carefully. This is not Bel-Ami. Soft France, carefully. This is not Artists’ Wives in Paris, Germinal, Doctor Pascal, or Three Soldiers. Normandy is primary. The lead is this book, not My Ántonia, not Look Back on Happiness, and not The Good Soldier. Inventory 81 is medium. No score is invented for this sit. The first breath is 582 words — phone-hard, left as printed.`,
+  "my-antonia":
+    `I first heard of Ántonia on what seemed to me an interminable journey across the great midland plain of North America. Book I, Chapter I — the midland plain, Jake Marpole, and Nebraska grandparents. Skip the Introduction and the Contents. Willa Cather’s 1918 novel. Soft Cather, carefully. This is not Death Comes for the Archbishop. Soft United States, carefully. This is not Martin Eden, and not Sister Carrie. Inventory 79 is easy. No score is invented for this sit.`,
+  "look-back-on-happiness":
+    `I have gone to the forest. Chapter I — the forest, overfed success, and a hair-shirt. Skip the Contents. Knut Hamsun, in Paula Wiking’s English, 1912. Soft Hamsun, carefully. This is not The Family at Gilje, Hunger, or Wanderers. Soft Scandinavia, carefully. This is not Niels Lyhne. Inventory 84 is medium. No score is invented for this sit.`,
+  "father-of-yoto":
+    `Sweet human hearts—a tale of carnival, moon-haunted nights. This sit is The Father of Yoto only — Marigold Vassiloff, Tai Ling, and West India Dock Road. Skip the Contents and the other sketches. Stop at the end of the sketch. Thomas Burke’s 1916 sketch. One sketch this sit. Soft Burke, carefully. Soft England, carefully. This is not Kipps, and not Antic Hay. This is not Madame Heurtebise in Paris. Inventory 76 is medium. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -688,7 +696,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-gadfly",
       "ecstasy",
       "the-painted-veil",
-      "the-good-soldier",
       "nada-the-lily",
       "all-quiet-on-the-western-front",
       "the-story-of-gosta-berling",
@@ -1188,6 +1195,15 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-professor",
       "a-room-with-a-view",
       "martin-eden",
+      // Mira Mon 28 Sep 2026 POST-#186 CLEAR — Une Vie leads. Never Featured.
+      // LEAD kept — not My Ántonia, not Look Back on Happiness, not The Good Soldier.
+      // Earlier shelf rows for My Ántonia, Look Back on Happiness, and The Good Soldier keep these slugs.
+      // The earlier before-sleep listing of The Good Soldier moves here so the cycle reads in order.
+      // The Father of Yoto is Waking up (the title sketch only).
+      "une-vie",
+      "my-antonia",
+      "look-back-on-happiness",
+      "the-good-soldier",
     ],
   },
   {
@@ -1290,6 +1306,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "our-lady-of-the-pillar",
       // Mira Mon 28 Sep 2026 POST-#185 CLEAR — Madame Heurtebise only.
       "madame-heurtebise",
+      // Mira Mon 28 Sep 2026 POST-#186 CLEAR — The Father of Yoto only.
+      "father-of-yoto",
     ],
   },
   {
@@ -1519,6 +1537,15 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-professor",
       "a-room-with-a-view",
       "martin-eden",
+      // Mira Mon 28 Sep 2026 POST-#186 CLEAR — Une Vie leads. Never Featured.
+      // LEAD kept — not My Ántonia, not Look Back on Happiness, not The Good Soldier.
+      // Earlier shelf rows for My Ántonia, Look Back on Happiness, and The Good Soldier keep these slugs.
+      // The earlier before-sleep listing of The Good Soldier moves here so the cycle reads in order.
+      // The Father of Yoto is Waking up (the title sketch only).
+      "une-vie",
+      "my-antonia",
+      "look-back-on-happiness",
+      "the-good-soldier",
     ],
   },
   {
@@ -1747,6 +1774,15 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-professor",
       "a-room-with-a-view",
       "martin-eden",
+      // Mira Mon 28 Sep 2026 POST-#186 CLEAR — Une Vie leads. Never Featured.
+      // LEAD kept — not My Ántonia, not Look Back on Happiness, not The Good Soldier.
+      // Earlier shelf rows for My Ántonia, Look Back on Happiness, and The Good Soldier keep these slugs.
+      // The earlier before-sleep listing of The Good Soldier moves here so the cycle reads in order.
+      // The Father of Yoto is Waking up (the title sketch only).
+      "une-vie",
+      "my-antonia",
+      "look-back-on-happiness",
+      "the-good-soldier",
     ],
   },
   {
@@ -1811,7 +1847,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-underdogs": 2,
   "diary-of-a-chambermaid": 2,
   "the-painted-veil": 2,
-  "the-good-soldier": 2,
+  "the-good-soldier": 4,
+  "une-vie": 5,
+  "my-antonia": 5,
+  "look-back-on-happiness": 3,
+  "father-of-yoto": 12,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
   "all-quiet-on-the-western-front": 2,

@@ -271,10 +271,10 @@ test("The Painted Veil uses the before-sleep door sit and names the frame", () =
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
-test("The Good Soldier uses the before-sleep glove sit", () => {
+test("The Good Soldier uses the Nauheim sit", () => {
   const copy = readerIntro(shelfAsWork("the-good-soldier"));
-  assert.match(copy, /Bad Nauheim/);
-  assert.match(copy, /glove/);
+  assert.match(copy, /Nauheim/);
+  assert.match(copy, /saddest story/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 

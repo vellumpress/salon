@@ -39,12 +39,18 @@ export const PREFACES: Record<string, string> = {
     "The one opened the door with a latch-key and went in, followed by a young fellow who awkwardly removed his cap. Chapter I — a latch-key hall, sea-smacked rough clothes, and a rolling gait. Skip the Contents. Jack London’s 1909 novel. Soft London, carefully. This is not The Law of Life. Soft United States, carefully. This is not Sister Carrie. Oakland is primary. Inventory 75 is easy. No score is invented for this sit.",
   "madame-heurtebise":
     "She was certainly not intended for an artist's wife, above all for such an artist as this outrageous fellow. This sit is Madame Heurtebise only — a jeweller’s-shop wife and the poet Heurtebise. Skip the translator preface and the other sketches. Stop at the end of the sketch. Alphonse Daudet, in Laura Ensor’s English, 1874. One sketch this sit. Soft Daudet, carefully. This is not Numa Roumestan or The Nabob. Soft France, carefully. This is not Germinal, Doctor Pascal, or Three Soldiers. Inventory 80 is easy. No score is invented for this sit.",
+  "une-vie":
+    "The weather was most distressing. It had rained all night. Chapter I, The Home by the Sea — Jeanne free of the convent, rain gutters, and an 1819 calendar. Skip the Introduction, the Contents, and the other stories. Guy de Maupassant, in Albert M. C. McMaster and A. E. Henderson’s English, 1883. The imprint names them; no separate Translator is listed. Soft Maupassant, carefully. This is not Bel-Ami. Soft France, carefully. This is not Artists’ Wives in Paris, Germinal, Doctor Pascal, or Three Soldiers. Normandy is primary. The lead is this book, not My Ántonia, not Look Back on Happiness, and not The Good Soldier. Inventory 81 is medium. No score is invented for this sit. The first breath is 582 words — phone-hard, left as printed.",
+  "look-back-on-happiness":
+    "I have gone to the forest. Chapter I — the forest, overfed success, and a hair-shirt. Skip the Contents. Knut Hamsun, in Paula Wiking’s English, 1912. Soft Hamsun, carefully. This is not The Family at Gilje, Hunger, or Wanderers. Soft Scandinavia, carefully. This is not Niels Lyhne. Inventory 84 is medium. No score is invented for this sit.",
+  "father-of-yoto":
+    "Sweet human hearts—a tale of carnival, moon-haunted nights. This sit is The Father of Yoto only — Marigold Vassiloff, Tai Ling, and West India Dock Road. Skip the Contents and the other sketches. Stop at the end of the sketch. Thomas Burke’s 1916 sketch. One sketch this sit. Soft Burke, carefully. Soft England, carefully. This is not Kipps, and not Antic Hay. This is not Madame Heurtebise in Paris. Inventory 76 is medium. No score is invented for this sit.",
   "the-age-of-innocence":
     "Old New York marries correctly and then spends a lifetime paying for it. Wharton’s 1920 drawing rooms are already watching. Sit with the manners before anyone speaks.",
   "ethan-frome":
     "A Starkfield winter, a sick wife, and a sled that does not forgive a wish. Wharton’s 1911 novella is cold on purpose. Give the snow a moment, then enter.",
   "my-antonia":
-    "Nebraska prairie, immigrant labor, and a girl who outlasts the men who remember her. Cather’s 1918 novel opens on land before it opens on love. Sit with the grass a moment.",
+    "I first heard of Ántonia on what seemed to me an interminable journey across the great midland plain of North America. Book I, Chapter I — the midland plain, Jake Marpole, and Nebraska grandparents. Skip the Introduction and the Contents. Willa Cather’s 1918 novel. Soft Cather, carefully. This is not Death Comes for the Archbishop. Soft United States, carefully. This is not Martin Eden, and not Sister Carrie. Inventory 79 is easy. No score is invented for this sit.",
   "winesburg-ohio":
     "A Midwest town speaks in grotesques — people who almost said the true thing. Anderson’s 1919 stories ask you to listen in small rooms. Enter one voice at a time.",
   "howards-end":
@@ -68,7 +74,7 @@ export const PREFACES: Record<string, string> = {
   "jacob-s-room":
     "Betty Flanders writing in the sand — Cornwall, then the room that will be Jacob’s. The experimental voice is the sit.",
   "the-good-soldier":
-    "Nine seasons at Bad Nauheim — intimacy like a good glove, and still they knew nothing. Ford’s 1915 confession starts in the shallows. Sit with that voice before you trust it.",
+    "This is the saddest story I have ever heard. Part I, Chapter I — the Ashburnhams and nine seasons at Nauheim. Skip the Contents. Ford Madox Ford’s 1915 novel. Soft England, carefully. This is not Kipps, and not Antic Hay. Soft Germany, carefully. This is not Smoke. Nauheim is primary. Inventory 72 is medium. No score is invented for this sit.",
   "pointed-roofs":
     "Miriam leaves the gaslit hall and goes slowly upstairs, the Saratoga trunk already in the firelight, deciding what she will say to the Fraeulein. Skip the Beresford introduction. The sit stops on governessing and old age. Richardson’s 1915 novel, Pilgrimage volume 1 only.",
   "the-autobiography-of-an-ex-colored-man":

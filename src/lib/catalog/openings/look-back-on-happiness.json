@@ -1,0 +1,71 @@
+{
+  "id": "look-back-on-happiness",
+  "title": "Look Back on Happiness",
+  "author": "Knut Hamsun (trans. Paula Wiking)",
+  "year": "1912",
+  "note": "Project Gutenberg 8445. Host: Ch I — forest / overfed success / hair-shirt (Contents skipped). Year NO 1912. Paula Wiking from PG About only. Inventory 84 medium — no invented Launch rank. Soft Hamsun carefully ≠ Gilje / Hunger / Wanderers; soft Scandinavia carefully ≠ Niels Denmark.",
+  "minutes": 3,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Norway forest",
+      "place": "Chapter I · Norway forest",
+      "reentry": "I have gone to the forest.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "I have gone to the forest."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Not because I am offended about anything, or very unhappy about men's evil ways; but since the forest will not come to me, I must go to it. That is all. I have not gone this time as a slave and a vagabond. I have money enough and am overfed, stupefied with success and good fortune, if you understand that. I have left the world as a sultan leaves rich food and harems and flowers, and clothes himself in a hair shirt."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Really, I could make quite a song and dance about it. For I mean to roam and think and make great irons red-hot. Nietzsche no doubt would have spoken thus: The last word I spake unto men achieved their praise, and they nodded. But it was my last word; and I went into the forest. For then did I comprehend the truth, that my speech must needs be dishonest or foolish.... But I said nothing of the kind; I simply went to the forest."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "You must not believe that nothing ever happens here. The snowflakes drift down just as they do in the city, and the birds and beasts scurry about from morning till night, and from night till morning. I could send solemn stories from this place, but I do not. I have sought the forest for solitude and for the sake of my great irons; for I have great irons which lie within me and grow red-hot. So I deal with myself accordingly. Suppose I were to meet a buck reindeer one day, then I might say to myself:"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"Great heavens, this is a buck reindeer, he's dangerous!\""
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "But if then I should be too frightened, I might tell myself a comforting lie and say it was a calf or some feathered beast."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "You say nothing happens here?"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "One day I saw two Lapps meet. A boy and a girl. At first they behaved as people do. \"*Boris!*\" they said to each other and smiled. But immediately after, both fell at full length in the snow and were gone from my sight. After a quarter of an hour had passed, I thought, \"You'd better see to them; they may be smothered in the snow.\" But then they got up and went their separate ways."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "In all my weatherbeaten days, I have never seen such a greeting as that."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Day and night I live in a deserted hut of peat into which I must crawl on my hands and knees. Someone must have built it long ago and used it, for lack of a better,--perhaps a man who was in hiding, a man who concealed himself here for a few autumn days. There are two of us in the hut, that is if you regard Madame as a person; otherwise there is only one. Madame is a mouse I live with, to whom I have given this honorary title. She eats everything I put aside for her in the nooks and corners, and sometimes she sits watching me."
+    }
+  ]
+}

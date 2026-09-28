@@ -302,15 +302,15 @@ test("The Painted Veil before-sleep sit is the door cut", () => {
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 
-test("The Good Soldier before-sleep sit is the glove cut", () => {
+test("The Good Soldier before-sleep sit is the Nauheim cut", () => {
   const item = work({
     id: "the-good-soldier",
     form: "novel",
     breaths: 6,
-    minutes: 2,
+    minutes: 4,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
+  assert.equal(estimateRitualMinutes(item), 4);
   assert.equal(ritualDurationLabel(item), "~5 min");
 });
 

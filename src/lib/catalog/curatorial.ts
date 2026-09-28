@@ -1054,6 +1054,16 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-professor",
   "a-room-with-a-view",
   "martin-eden",
+  // Mira Mon 28 Sep 2026 POST-#186 CLEAR — Une Vie leads Next. Never Featured.
+  // LEAD kept — not My Ántonia, not Look Back on Happiness, not The Good Soldier.
+  // Earlier shelf rows for My Ántonia, Look Back on Happiness, and The Good Soldier keep these slugs.
+  // The earlier before-sleep listing of The Good Soldier moves onto this tail.
+  // The Father of Yoto is Rituals (the title sketch only), not this tail.
+  // Mon POST-#185 Kipps and the earlier packs stay ahead.
+  "une-vie",
+  "my-antonia",
+  "look-back-on-happiness",
+  "the-good-soldier",
 ] as const;
 
 /**
