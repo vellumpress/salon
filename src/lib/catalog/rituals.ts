@@ -401,6 +401,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Over the open plain, beneath a starless sky as dark and thick as ink, a man walked alone along the highway from Marchiennes to Montsou. Part One, Chapter I — the Marchiennes–Montsou highway, a starless sky, and beetroot fields. Skip the Ellis introduction. Émile Zola, in Havelock Ellis’s English, 1885. Soft Zola, carefully. This is not Doctor Pascal, Theresa Raquin, or L’Assommoir. Soft France, carefully. Montsou is not the war of Three Soldiers. Inventory 71 is medium. No score is invented for this sit.`,
   "our-lady-of-the-pillar":
     `In 1474, a year abounding in divine favours for all Christendom, when King Henry IV. reigned in Castile, there came to live in the city of Segovia a youthful knight named Don Ruy de Cardenas. This sit is Our Lady of the Pillar only — 1474 Segovia and Don Ruy de Cardenas. Skip To the Reader and the translator preface. Stop at the end of the tale. Eça de Queirós, in Edgar Prestage’s English, 1906. One tale this sit. Soft Eça, carefully. This is not Dragon’s Teeth. Soft Spain, carefully. This is not Toledo. No wider inventory score. No score is invented for this sit.`,
+  kipps:
+    `Until he was nearly arrived at adolescence it did not become clear to Kipps how it was that he was under the care of an aunt and uncle instead of having a father and mother like other boys. Book I, Chapter I — the New Romney little shop, an aunt and uncle, and a white-dress mother. Skip the Contents. H. G. Wells’s 1905 novel. The Scribner imprint is 1906. Soft Wells, carefully. This is not Ann Veronica. Soft England, carefully. This is not Antic Hay. New Romney is primary. The lead is this book, not The Professor, not A Room with a View, and not Martin Eden. Inventory 79 is easy. No score is invented for this sit.`,
+  "the-professor":
+    `The other day, in looking over my papers, I found in my desk the following copy of a letter, sent by me a year since to an old school acquaintance. Chapter I, Introductory — an Eton letter and Crimsworth the outsider. Skip the Preface and the Contents. Charlotte Brontë’s 1857 novel. Soft Brontë, carefully. This is not Wildfell. Inventory 77 is medium. No score is invented for this sit.`,
+  "a-room-with-a-view":
+    `"The Signora had no business to do it," said Miss Bartlett, "no business at all." Part One, Chapter I — the Bertolini, south rooms with a view, and a Cockney accent. Skip the Contents. E. M. Forster’s 1908 novel. Soft Forster, carefully. This is not Where Angels Fear. Soft Italy, carefully. This is not Naples, and not Leila. Florence is primary. Inventory 75 is medium. No score is invented for this sit.`,
+  "martin-eden":
+    `The one opened the door with a latch-key and went in, followed by a young fellow who awkwardly removed his cap. Chapter I — a latch-key hall, sea-smacked rough clothes, and a rolling gait. Skip the Contents. Jack London’s 1909 novel. Soft London, carefully. This is not The Law of Life. Soft United States, carefully. This is not Sister Carrie. Oakland is primary. Inventory 75 is easy. No score is invented for this sit.`,
+  "madame-heurtebise":
+    `She was certainly not intended for an artist's wife, above all for such an artist as this outrageous fellow. This sit is Madame Heurtebise only — a jeweller’s-shop wife and the poet Heurtebise. Skip the translator preface and the other sketches. Stop at the end of the sketch. Alphonse Daudet, in Laura Ensor’s English, 1874. One sketch this sit. Soft Daudet, carefully. This is not Numa Roumestan or The Nabob. Soft France, carefully. This is not Germinal, Doctor Pascal, or Three Soldiers. Inventory 80 is easy. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1170,6 +1180,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "niels-lyhne",
       "the-emancipated",
       "germinal",
+      // Mira Mon 28 Sep 2026 POST-#185 CLEAR — Kipps leads. Never Featured.
+      // LEAD kept — not The Professor, not A Room with a View, not Martin Eden.
+      // Earlier shelf rows for Kipps, The Professor, A Room with a View, and Martin Eden keep these slugs.
+      // Madame Heurtebise is Waking up (the title sketch only).
+      "kipps",
+      "the-professor",
+      "a-room-with-a-view",
+      "martin-eden",
     ],
   },
   {
@@ -1270,6 +1288,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "hungry-stones",
       // Mira Mon 28 Sep 2026 POST-#184 CLEAR — Our Lady of the Pillar only.
       "our-lady-of-the-pillar",
+      // Mira Mon 28 Sep 2026 POST-#185 CLEAR — Madame Heurtebise only.
+      "madame-heurtebise",
     ],
   },
   {
@@ -1491,6 +1511,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "niels-lyhne",
       "the-emancipated",
       "germinal",
+      // Mira Mon 28 Sep 2026 POST-#185 CLEAR — Kipps leads. Never Featured.
+      // LEAD kept — not The Professor, not A Room with a View, not Martin Eden.
+      // Earlier shelf rows for Kipps, The Professor, A Room with a View, and Martin Eden keep these slugs.
+      // Madame Heurtebise is Waking up (the title sketch only).
+      "kipps",
+      "the-professor",
+      "a-room-with-a-view",
+      "martin-eden",
     ],
   },
   {
@@ -1711,6 +1739,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "niels-lyhne",
       "the-emancipated",
       "germinal",
+      // Mira Mon 28 Sep 2026 POST-#185 CLEAR — Kipps leads. Never Featured.
+      // LEAD kept — not The Professor, not A Room with a View, not Martin Eden.
+      // Earlier shelf rows for Kipps, The Professor, A Room with a View, and Martin Eden keep these slugs.
+      // Madame Heurtebise is Waking up (the title sketch only).
+      "kipps",
+      "the-professor",
+      "a-room-with-a-view",
+      "martin-eden",
     ],
   },
   {
@@ -2063,6 +2099,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "smoke": 6,
   "niels-lyhne": 5,
   germinal: 4,
+  kipps: 4,
+  "the-professor": 4,
+  "a-room-with-a-view": 4,
+  "martin-eden": 4,
+  "madame-heurtebise": 11,
   "the-fortune-of-the-rougons": 5,
   "the-paying-guest": 5,
   "the-triumph-of-death": 5,

@@ -241,6 +241,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Alexandre Dumas fils",
     "Alphonse Daudet",
     "Alphonse Daudet (trans. Charles De Kay)",
+    "Alphonse Daudet (trans. Laura Ensor)",
     "Anatole France",
     "André Breton",
     "André Gide",
@@ -1041,6 +1042,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "niels-lyhne": "Denmark",
   germinal: "France",
   "our-lady-of-the-pillar": "Portugal",
+  "madame-heurtebise": "France",
 };
 
 const AUTHOR_COUNTRY: Record<string, string> = (() => {

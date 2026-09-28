@@ -216,6 +216,10 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-emancipated": { label: "Posillipo", region: "it" },
   germinal: { label: "Montsou", region: "fr" },
   "our-lady-of-the-pillar": { label: "Segovia", region: "es" },
+  kipps: { label: "New Romney", region: "gb" },
+  "the-professor": { label: "Brussels", region: "be" },
+  "martin-eden": { label: "Oakland", region: "us" },
+  "madame-heurtebise": { label: "Paris", region: "fr" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples
