@@ -1,0 +1,156 @@
+{
+  "id": "prisoner-of-zenda",
+  "title": "The Prisoner of Zenda",
+  "author": "Anthony Hope",
+  "year": "1894",
+  "note": "Project Gutenberg 95. Host: Ch 1 — Rassendyll breakfast / Elphberg hair / doing nothing (Contents skipped if phone-tight). Year 1894. PG reading-ease 90.1 very easy — no invented Launch rank. LEAD kept. Host Strelsau/Zenda primary after England breakfast open. Soft Ruritania carefully NEW ≠ Caribbean Blood / Australia; soft Hope carefully.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter 1 · Rassendylls · Elphbergs · Strelsau/Zenda",
+      "place": "Chapter 1 · Rassendylls · Elphbergs · Strelsau/Zenda",
+      "reentry": "\"I wonder when in the world you're going to do anything, Rudolf?\" said my brother's wife.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "\"I wonder when in the world you're going to do anything, Rudolf?\" said my brother's wife."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"My dear Rose,\" I answered, laying down my egg-spoon, \"why in the world should I do anything? My position is a comfortable one. I have an income nearly sufficient for my wants (no one's income is ever quite sufficient, you know), I enjoy an enviable social position: I am brother to Lord Burlesdon, and brother-in-law to that charming lady, his countess. Behold, it is enough!\""
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"You are nine-and-twenty,\" she observed, \"and you've done nothing but--\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Knock about? It is true. Our family doesn't need to do things.\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "This remark of mine rather annoyed Rose, for everybody knows (and therefore there can be no harm in referring to the fact) that, pretty and accomplished as she herself is, her family is hardly of the same standing as the Rassendylls. Besides her attractions, she possessed a large fortune, and my brother Robert was wise enough not to mind about her ancestry. Ancestry is, in fact, a matter concerning which the next observation of Rose's has some truth."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Good families are generally worse than any others,\" she said."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Upon this I stroked my hair: I knew quite well what she meant."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"I'm so glad Robert's is black!\" she cried."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "At this moment Robert (who rises at seven and works before breakfast) came in. He glanced at his wife: her cheek was slightly flushed; he patted it caressingly."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"What's the matter, my dear?\" he asked."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"She objects to my doing nothing and having red hair,\" said I, in an injured tone."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"Oh! of course he can't help his hair,\" admitted Rose."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"It generally crops out once in a generation,\" said my brother. \"So does the nose. Rudolf has got them both.\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"I wish they didn't crop out,\" said Rose, still flushed."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"I rather like them myself,\" said I, and, rising, I bowed to the portrait of Countess Amelia."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "My brother's wife uttered an exclamation of impatience."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"I wish you'd take that picture away, Robert,\" said she."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"My dear!\" he cried."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"Good heavens!\" I added."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"Then it might be forgotten,\" she continued."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"Hardly--with Rudolf about,\" said Robert, shaking his head."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"Why should it be forgotten?\" I asked."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Rudolf!\" exclaimed my brother's wife, blushing very prettily."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "I laughed, and went on with my egg. At least I had shelved the question of what (if anything) I ought to do. And, by way of closing the discussion--and also, I must admit, of exasperating my strict little sister-in-law a trifle more--I observed:"
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"I rather like being an Elphberg myself.\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "When I read a story, I skip the explanations; yet the moment I begin to write one, I find that I must have an explanation. For it is manifest that I must explain why my sister-in-law was vexed with my nose and hair, and why I ventured to call myself an Elphberg. For eminent as, I must protest, the Rassendylls have been for many generations, yet participation in their blood of course does not, at first sight, justify the boast of a connection with the grander stock of the Elphbergs or a claim to be one of that Royal House. For what relationship is there between Ruritania and Burlesdon, between the Palace at Strelsau or the Castle of Zenda and Number 305 Park Lane, W.?"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "Well then--and I must premise that I am going, perforce, to rake up the very scandal which my dear Lady Burlesdon wishes forgotten--in the year 1733, George II. sitting then on the throne, peace reigning for the moment, and the King and the Prince of Wales being not yet at loggerheads, there came on a visit to the English Court a certain prince, who was afterwards known to history as Rudolf the Third of Ruritania. The prince was a tall, handsome young fellow, marked (maybe marred, it is not for me to say) by a somewhat unusually long, sharp and straight nose, and a mass of dark-red hair--in fact, the nose and the hair which have stamped the Elphbergs time out of mind. He stayed some months in England, where he was most courteously received; yet, in the end, he left rather under a cloud. For he fought a duel (it was considered highly well bred of him to waive all question of his rank) with a nobleman, well known in the society of the day, not only for his own merits, but as the husband of a very beautiful wife. In that duel Prince Rudolf received a severe wound, and, recovering therefrom, was adroitly smuggled off by the Ruritanian ambassador, who had found him a pretty handful. The nobleman was not wounded in the duel; but the morning being raw and damp on the occasion of the meeting, he contracted a severe chill, and, failing to throw it off, he died some six months after the departure of Prince Rudolf, without having found leisure to adjust his relations with his wife--who, after another two months, bore an heir to the title and estates of the family of Burlesdon. This lady was the Countess Amelia, whose picture my sister-in-law wished to remove from the drawing-room in Park Lane; and her husband was James, fifth Earl of Burlesdon and twenty-second Baron Rassendyll, both in the peerage of England, and a Knight of the Garter. As for Rudolf, he went back to Ruritania, married a wife, and ascended the throne, whereon his progeny in the direct line have sat from then till this very hour--with one short interval. And, finally, if you walk through the picture galleries at Burlesdon, among the fifty portraits or so of the last century and a half, you will find five or six, including that of the sixth earl, distinguished by long, sharp, straight noses and a quantity of dark-red hair; these five or six have also blue eyes, whereas among the Rassendylls dark eyes are the commoner."
+    }
+  ]
+}

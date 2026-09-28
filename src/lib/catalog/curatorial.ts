@@ -1092,6 +1092,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "captain-blood",
   "the-monomaniac",
   "tartarin-de-tarascon",
+  // Mira Mon 28 Sep 2026 POST-#190 CLEAR — The Prisoner of Zenda leads Next. Never Featured.
+  // LEAD kept — not Kidnapped, not The Revolt of the Angels, not Children of the Soil.
+  // The Invisible Man is Rituals (the whole short novel only), not this tail.
+  // Mon POST-#189 Manalive and the earlier packs stay ahead.
+  "prisoner-of-zenda",
+  "kidnapped",
+  "revolt-of-the-angels",
+  "children-of-the-soil",
 ] as const;
 
 /**
