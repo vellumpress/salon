@@ -1998,6 +1998,12 @@ test("Tier B batches 11–12 are local format-min binds, never Featured", () => 
       assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), true, id);
       assert.equal(work!.language, "English", id);
       assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
+    } else if (id === "germinal") {
+      assert.equal(curatorialTrack(id), "next", id);
+      assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), true, id);
+      assert.equal(work!.language, "English", id);
+      assert.equal(work!.minutes, 885, id);
+      assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
     } else {
       assert.equal(curatorialTrack(id), "later", id);
       assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);

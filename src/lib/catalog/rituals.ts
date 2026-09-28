@@ -391,6 +391,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `They were close to each other in the dining-room, which had been turned into a dressing-room. Chapter I — Frédérique van Erlevoort, the mirror, and the azalea guests. Skip the Gosse introduction. Louis Couperus, in J. T. Grein’s English, 1889. The Dutch year is 1889; the English is 1892. Soft Couperus, carefully. This is not Small Souls or The Hidden Force. Inventory 67 is medium, carefully thinner. No score is invented for this sit.`,
   "hungry-stones":
     `My kinsman and myself were returning to Calcutta from our Puja trip when we met the man in a train. This sit is The Hungry Stones only — a Calcutta Puja train and an up-country Mahomedan. Skip the Contents and the other tales. Stop at the end of the tale. Rabindranath Tagore’s 1916 tale. One tale this sit. Soft Bengal, carefully. This is not CHARAN or The Poison Tree. The preface is several hands. No translator is invented. Inventory 71 is medium. No score is invented for this sit. The first breath is 277 words — phone-hard, left as printed.`,
+  smoke:
+    `On the 10th of August 1862, at four o'clock in the afternoon, a great number of people were thronging before the well-known Konversation in Baden-Baden. Chapter I — the Konversation, Baden-Baden, and holiday sunshine. Skip the Introduction and the Illustrations list. Ivan Turgenev, in Constance Garnett’s English, 1867. The Russian year is 1867; the English is 1906. Soft Russia, carefully. This is not In the World, Resurrection, or Virgin Soil. Baden is primary. Soft Turgenev, carefully. The lead is this book, not Niels Lyhne, not The Emancipated, and not Germinal. Inventory 76 is medium. No score is invented for this sit.`,
+  "niels-lyhne":
+    `She had the black, luminous eyes of the Blid family. Chapter I — Bartholine, poetry and faith, and Lönborggaard. Skip the Foundation and the translator introduction. J. P. Jacobsen, in Hanna Astrup Larsen’s English, 1880. The Danish year is 1880; the English is 1919. Soft Jacobsen, carefully. This is not Mogens. Soft Scandinavia, carefully. This is not The Family at Gilje, The Great Hunger, or Ditte. Inventory 67 is medium, carefully thinner. No score is invented for this sit.`,
+  "the-emancipated":
+    `By a window looking from Posillipo upon the Bay of Naples sat an English lady, engaged in letter-writing. Part I, Chapter I — Posillipo, a widow’s letter, and November sunlight. Skip the Contents. George Gissing’s 1890 novel. Soft Gissing, carefully. This is not Born in Exile. Soft Italy, carefully. This is not Leila. Naples is secular. Inventory 81 is medium. No score is invented for this sit. The first breath is 251 words — phone-hard, left as printed.`,
+  germinal:
+    `Over the open plain, beneath a starless sky as dark and thick as ink, a man walked alone along the highway from Marchiennes to Montsou. Part One, Chapter I — the Marchiennes–Montsou highway, a starless sky, and beetroot fields. Skip the Ellis introduction. Émile Zola, in Havelock Ellis’s English, 1885. Soft Zola, carefully. This is not Doctor Pascal, Theresa Raquin, or L’Assommoir. Soft France, carefully. Montsou is not the war of Three Soldiers. Inventory 71 is medium. No score is invented for this sit.`,
+  "our-lady-of-the-pillar":
+    `In 1474, a year abounding in divine favours for all Christendom, when King Henry IV. reigned in Castile, there came to live in the city of Segovia a youthful knight named Don Ruy de Cardenas. This sit is Our Lady of the Pillar only — 1474 Segovia and Don Ruy de Cardenas. Skip To the Reader and the translator preface. Stop at the end of the tale. Eça de Queirós, in Edgar Prestage’s English, 1906. One tale this sit. Soft Eça, carefully. This is not Dragon’s Teeth. Soft Spain, carefully. This is not Toledo. No wider inventory score. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -794,7 +804,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "les-heures-claires",
       "les-trophees",
       "royal-highness",
-      "the-emancipated",
       "the-great-hunger",
       "the-patrician",
       "the-price-of-love",
@@ -847,7 +856,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "papeis-avulsos",
       "piping-hot",
       "ramuntcho",
-      "smoke",
       "the-fortune-of-the-rougons",
       "the-paying-guest",
       "the-triumph-of-death",
@@ -884,7 +892,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "tragic-sense-of-life",
       "white-buildings",
       "three-plays",
-      "our-lady-of-the-pillar",
       "the-sweet-miracle",
       "red-oleanders",
       "stories-from-tagore",
@@ -1155,6 +1162,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "antic-hay",
       "spring-time-case",
       "eline-vere",
+      // Mira Mon 28 Sep 2026 POST-#184 CLEAR — Smoke leads. Never Featured.
+      // LEAD kept — not Niels Lyhne, not The Emancipated, not Germinal.
+      // Earlier before-sleep inventory listings of Smoke and The Emancipated move here so the cycle reads in order.
+      // Our Lady of the Pillar is Waking up (the title tale only).
+      "smoke",
+      "niels-lyhne",
+      "the-emancipated",
+      "germinal",
     ],
   },
   {
@@ -1253,6 +1268,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "charan",
       // Mira Mon 28 Sep 2026 POST-#183 CLEAR — The Hungry Stones only.
       "hungry-stones",
+      // Mira Mon 28 Sep 2026 POST-#184 CLEAR — Our Lady of the Pillar only.
+      "our-lady-of-the-pillar",
     ],
   },
   {
@@ -1466,6 +1483,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "antic-hay",
       "spring-time-case",
       "eline-vere",
+      // Mira Mon 28 Sep 2026 POST-#184 CLEAR — Smoke leads. Never Featured.
+      // LEAD kept — not Niels Lyhne, not The Emancipated, not Germinal.
+      // Earlier before-sleep inventory listings of Smoke and The Emancipated move here so the cycle reads in order.
+      // Our Lady of the Pillar is Waking up (the title tale only).
+      "smoke",
+      "niels-lyhne",
+      "the-emancipated",
+      "germinal",
     ],
   },
   {
@@ -1678,6 +1703,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "antic-hay",
       "spring-time-case",
       "eline-vere",
+      // Mira Mon 28 Sep 2026 POST-#184 CLEAR — Smoke leads. Never Featured.
+      // LEAD kept — not Niels Lyhne, not The Emancipated, not Germinal.
+      // Earlier before-sleep inventory listings of Smoke and The Emancipated move here so the cycle reads in order.
+      // Our Lady of the Pillar is Waking up (the title tale only).
+      "smoke",
+      "niels-lyhne",
+      "the-emancipated",
+      "germinal",
     ],
   },
   {
@@ -1957,7 +1990,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "royal-highness": 4,
   ramona: 6,
   "almayers-folly": 6,
-  "the-emancipated": 5,
+  "the-emancipated": 4,
   "the-great-hunger": 6,
   erewhon: 6,
   "ann-veronica": 6,
@@ -2027,7 +2060,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "piping-hot": 5,
   "ramuntcho": 8,
   reginald: 6,
-  "smoke": 5,
+  "smoke": 6,
+  "niels-lyhne": 5,
+  germinal: 4,
   "the-fortune-of-the-rougons": 5,
   "the-paying-guest": 5,
   "the-triumph-of-death": 5,
@@ -2065,7 +2100,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "tragic-sense-of-life": 5,
   "white-buildings": 5,
   "three-plays": 5,
-  "our-lady-of-the-pillar": 5,
+  "our-lady-of-the-pillar": 12,
   "the-sweet-miracle": 5,
   "red-oleanders": 5,
   "stories-from-tagore": 5,

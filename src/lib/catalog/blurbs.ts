@@ -228,6 +228,16 @@ const BLURBS: Record<string, string> = {
     "Frédérique van Erlevoort stands at a mirror while the azalea guests gather.",
   "hungry-stones":
     "On the Puja train back to Calcutta, a kinsman meets an up-country Mahomedan.",
+  smoke:
+    "A throng gathers before the Konversation in Baden-Baden on an August afternoon in 1862.",
+  "niels-lyhne":
+    "Bartholine Blid’s black eyes, and a faith in poetry at Lönborggaard.",
+  "the-emancipated":
+    "An English widow writes at a window in Posillipo, looking over the Bay of Naples.",
+  germinal:
+    "A man walks the Marchiennes road to Montsou under a sky as dark as ink.",
+  "our-lady-of-the-pillar":
+    "In 1474 a young knight comes to Segovia and the church of Our Lady of the Pillar.",
   falcon:
     "Spade keeps the falcon, the lies, and the one rule he will not break for a woman.",
   "winesburg-ohio":

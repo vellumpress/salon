@@ -1,0 +1,46 @@
+{
+  "id": "the-emancipated",
+  "title": "The Emancipated",
+  "author": "George Gissing",
+  "year": "1890",
+  "note": "Project Gutenberg 4311. Host: PART I Ch I — Posillipo widow letter / Bay of Naples / November sunlight (Contents skipped). Year 1890. Inventory 81 medium — no invented Launch rank. Soft Gissing carefully ≠ Born in Exile; soft Italy carefully ≠ Leila Catholic (secular Naples).",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Chapter I · Naples Posillipo",
+      "place": "Part I · Chapter I · Naples Posillipo",
+      "reentry": "By a window looking from Posillipo upon the Bay of Naples sat an English lady, engaged in letter-writing. She was only in her four-and-twentieth year, but her attire of subdued mourning indicated wido",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "By a window looking from Posillipo upon the Bay of Naples sat an English lady, engaged in letter-writing. She was only in her four-and-twentieth year, but her attire of subdued mourning indicated widowhood already at the stage when it is permitted to make quiet suggestion of freedom rather than distressful reference to loss; the dress, however, was severely plain, and its grey coldness, which would well have harmonized with an English sky in this month of November, looked alien in the southern sunlight. There was no mistaking her nationality; the absorption, the troubled earnestness with which she bent over her writing, were peculiar to a cast of features such as can be found only in our familiar island; a physiognomy not quite pure in outline, vigorous in general effect and in detail delicate; a proud young face, full of character and capacity, beautiful in chaste control. Sorrowful it was not, but its paleness and thinness expressed something more than imperfect health of body; the blue-grey eyes, when they wandered for a moment in an effort of recollection, had a look of weariness, even of ennui; the lips moved as if in nervous impatience until she had found the phrase or the thought for which her pen waited. Save for these intervals, she wrote with quick decision, in a large clear hand, never underlining, but frequently supplying the emphasis of heavy stroke in her penning of a word. At the end of her letters came a signature excellent in individuality: \"Miriam Baske.\""
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The furniture of her room was modern, and of the kind demanded by wealthy *forestieri* in the lodgings they condescend to occupy. On the variegated tiles of the floor were strewn rugs and carpets; the drapery was bright, without much reference to taste in the ordering of hues; a handsome stove served at present to support leafy plants, a row of which also stood on the balcony before the window. Round the ceiling ran a painted border of foliage and flowers. The chief ornament of the walls was a large and indifferent copy of Raphael's \"St. Cecilia;\" there were, too, several *gouache* drawings of local scenery: a fiery night-view of Vesuvius, a panorama of the Bay, and a very blue Blue Grotto. The whole was blithe, sunny, Neapolitan; sufficiently unlike a sitting-room in Redbeck House, Bartles, Lancashire, which Mrs. Baske had in her mind as she wrote."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "A few English books lay here and there, volumes of unattractive binding, and presenting titles little suggestive of a holiday in Campania; works which it would be misleading to call theological; the feeblest modern echoes of fierce old Puritans, half shame-faced modifications of logic which, at all events, was wont to conceal no consequence of its savage premises. More noticeable were some architectural plans unrolled upon a settee; the uppermost represented the elevation of a building designed for religious purposes, painfully recognizable by all who know the conventicles of sectarian England. On the blank space beneath the drawing were a few comments, lightly pencilled."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Having finished and addressed some half a dozen brief letters, Mrs. Baske brooded for several minutes before she began to write on the next sheet of paper. It was intended for her sister-in-law, a lady of middle age, who shared in the occupancy of Redbeck House. At length she penned the introductory formula, but again became absent, and sat gazing at the branches of a pine-tree which stood in strong relief against cloudless blue. A sigh, an impatient gesture, and she went on with her task."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"It is very kind of you to be so active in attending to the things which you know I have at heart. You say I shall find everything as I could wish it on my return, but you cannot think what a stranger to Bartles I already feel. It will soon be six months since I lived my real life there; during my illness I might as well have been absent, then came those weeks in the Isle of Wight, and now this exile. I feel it as exile, bitterly. To be sure Naples is beautiful, but it does not interest me. You need not envy me the bright sky, for it gives me no pleasure. There is so much to pain and sadden; so much that makes me angry. On Sunday I was miserable. The Spences are as kind as any one could be, but--I won't write about it; no doubt you understand me."
+    }
+  ]
+}

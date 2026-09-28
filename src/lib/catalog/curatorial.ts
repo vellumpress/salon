@@ -707,7 +707,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "tragic-sense-of-life",
   "white-buildings",
   "three-plays",
-  "our-lady-of-the-pillar",
+  // our-lady-of-the-pillar leaves this inventory seat for Rituals (POST-#184, Host-only).
   "the-sweet-miracle",
   "red-oleanders",
   "stories-from-tagore",
@@ -1035,6 +1035,16 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "antic-hay",
   "spring-time-case",
   "eline-vere",
+  // Mira Mon 28 Sep 2026 POST-#184 CLEAR — Smoke leads Next. Never Featured.
+  // LEAD kept — not Niels Lyhne, not The Emancipated, not Germinal.
+  // Earlier Next inventory seats for Smoke and The Emancipated stay where they sit.
+  // Germinal’s earlier shelf row keeps this slug and was not on Next.
+  // Our Lady of the Pillar is Rituals (the title tale only), not this tail.
+  // Mon POST-#183 Sister Carrie and the earlier packs stay ahead.
+  "smoke",
+  "niels-lyhne",
+  "the-emancipated",
+  "germinal",
 ] as const;
 
 /**

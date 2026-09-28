@@ -211,6 +211,11 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "spring-time-case": { label: "Yeddo", region: "jp" },
   "eline-vere": { label: "The Hague", region: "nl" },
   "hungry-stones": { label: "Bengal", region: "in" },
+  smoke: { label: "Baden-Baden", region: "de" },
+  "niels-lyhne": { label: "Jutland", region: "dk" },
+  "the-emancipated": { label: "Posillipo", region: "it" },
+  germinal: { label: "Montsou", region: "fr" },
+  "our-lady-of-the-pillar": { label: "Segovia", region: "es" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples
