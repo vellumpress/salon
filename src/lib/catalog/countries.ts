@@ -1038,6 +1038,9 @@ const WORK_COUNTRY: Record<string, string> = {
   "spring-time-case": "Japan",
   "eline-vere": "Netherlands",
   "hungry-stones": "India",
+  "niels-lyhne": "Denmark",
+  germinal: "France",
+  "our-lady-of-the-pillar": "Portugal",
 };
 
 const AUTHOR_COUNTRY: Record<string, string> = (() => {
