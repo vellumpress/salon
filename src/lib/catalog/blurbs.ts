@@ -447,7 +447,11 @@ const BLURBS: Record<string, string> = {
   "wuthering-heights": "Two houses on the moor, and a love that does not stay in its grave.",
   "great-expectations": "A boy is told he has prospects, and the source of them is the point.",
   "crime-and-punishment":
-    "A student tests the right to kill — and cannot live with the answer.",
+    "On an exceptionally hot July evening a young man leaves a Petersburg garret and walks toward the bridge.",
+  "rise-of-david-levinsky":
+    "A cloak-and-suit man looks back at four cents in his pocket and the metamorphosis that followed.",
+  "bottle-imp":
+    "Keawe of Hawaii buys a bottle between Honaunau and the Hamakua coast, and this sit stops when that story ends.",
   "the-brothers-karamazov": "A father, three sons, and a murder the family has been rehearsing.",
   "war-and-peace": "Napoleon enters Russia; a dozen lives refuse to be a single plot.",
   "the-metamorphosis": "Gregor Samsa wakes as an insect and the family starts adjusting the furniture.",
@@ -464,7 +468,7 @@ const BLURBS: Record<string, string> = {
   she: "Ayesha waits in a lost city for a man who has already died once.",
   "the-monk": "A Madrid abbey, a holy man, and the devil’s long patience.",
   carmilla: "A lonely schloss, a guest who arrives by carriage wreck, and a thirst.",
-  "uncle-silas": "A ward sent to a gloomy uncle, and a house that is already a plot.",
+  "uncle-silas": "Winter gusts rattle the windows at Knowl, where Austin Ruthyn sits by a fire under ivied chimneys.",
   "the-turn-of-the-screw": "A governess, two children, and figures on the far side of the glass.",
   "washington-square": "A plain heiress, a handsome fortune-hunter, and a father who will not blink.",
   "the-bostonians": "Boston reformers, a Southern cousin, and a fight over a woman’s voice.",
@@ -817,7 +821,7 @@ const BLURBS: Record<string, string> = {
   "the-getting-of-wisdom":
     "Four children on the grass: a fairy-tale princess, and a silk dress already dirty at the hem.",
   "for-the-term-of-his-natural-life":
-    "A transported man in Van Diemen’s Land, and a sentence that is the country.",
+    "In the breathless stillness of a tropical afternoon the shadow of the Malabar lies on the glittering sea.",
   "the-man-from-snowy-river": "Paterson’s bush ballads: a ride, a horse, a legend already moving.",
   "hajji-baba":
     "Kerbelai Hassan, barber of Ispahan, and a razor that starts the road. Period language stays.",
