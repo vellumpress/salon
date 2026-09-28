@@ -512,7 +512,11 @@ const BLURBS: Record<string, string> = {
   "kidnapped": "A kidnapped heir walks Scotland with an outlaw who will not shut up.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
-  "hard-times": "Coketown, facts, and a circus that knows more than the school.",
+  "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",
+  "death-in-venice": "On a spring afternoon Gustav Aschenbach leaves the Prinzregentenstrasse in Munich, and the sit is already turning toward Venice.",
+  "elmer-gantry": "Elmer Gantry leans, eloquently drunk, against the bar of the Old Home Sample Room in Cato, Missouri.",
+  "colonels-dream": "Two gentlemen sit in French and Company’s private office on lower Broadway, and Clarendon in the South is where the dream turns.",
+  "great-god-pan": "Clarke comes for the experiment, and this sit stops when the novella ends.",
   "little-dorrit": "A child of the Marshalsea, a family of prisoners who are not all inside.",
   "our-mutual-friend": "A drowned man, a dust heap, and London’s money in the river.",
   "the-mystery-of-edwin-drood": "A cathedral town, an opium habit, and a nephew who disappears.",

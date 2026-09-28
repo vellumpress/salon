@@ -195,7 +195,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "hajji-baba": `Kerbelai Hassan, barber of Ispahan, and the razor that starts the road. Skip the Curzon introduction and the Macmillan apparatus. First 1824; this printing is 1895. Period Orientalism stays as printed — flag, do not sanitize.`,
   "handan": `Halide Edib Adıvar’s 1912 novel Handan. Sit with the world a moment before the first breath.`,
   "hands-around-reigen": `Arthur Schnitzler’s 1903 play Hands Around (Reigen). The house is still dark.`,
-  "hard-times": `Coketown, facts, and a circus that knows more than the school. Sit with the world a moment before the first breath.`,
+  "hard-times": `'NOW, what I want is, Facts. Teach these boys and girls nothing but Facts. Facts alone are wanted in life. Book the First, Chapter I, The One Thing Needful — a Facts school-room and Gradgrind. Skip the table of contents if the phone is tight. Charles Dickens’s 1854 novel. Soft Dickens, carefully. Soft England, carefully. This is not Kipps in Folkestone, not The Father of Yoto in Limehouse, and not Antic Hay. Coketown is primary. Inventory 76 is medium. No score is invented for this sit.`,
   "harmonium": `Stevens’ first book: Florida light, Hartford mind, the jar on the hill. Let the first line arrive when you are ready.`,
   "havelaar": `Multatuli’s 1860 novel Max Havelaar. Sit with the world a moment before the first breath.`,
   "hayy": `Ibn Tufail’s 1160 work Hayy ibn Yaqzan. Sit with the world a moment before the first breath.`,

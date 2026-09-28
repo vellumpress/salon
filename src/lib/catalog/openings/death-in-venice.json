@@ -1,0 +1,46 @@
+{
+  "id": "death-in-venice",
+  "title": "Death in Venice",
+  "author": "Thomas Mann (trans. Kenneth Burke)",
+  "year": "1912",
+  "note": "Project Gutenberg 66073. Host: Ch I — spring afternoon / Prinzregentenstrasse / Aschenbach (Contents skipped if phone-tight). Year DE 1912. Kenneth Burke from PG About only. Inventory 76 medium — no invented Launch rank. LEAD kept. Host Venice primary after Munich open.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Munich · Venice",
+      "place": "Chapter I · Munich · Venice",
+      "reentry": "On a spring afternoon of the year 19--, when our continent lay under such threatening weather for whole months, Gustav Aschenbach, or von Aschenbach as his name read officially after his fiftieth birt",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "On a spring afternoon of the year 19--, when our continent lay under such threatening weather for whole months, Gustav Aschenbach, or von Aschenbach as his name read officially after his fiftieth birthday, had left his apartment on the Prinzregentenstrasse in Munich and had gone for a long walk. Overwrought by the trying and precarious work of the forenoon--which had demanded a maximum wariness, prudence, penetration, and rigour of the will--the writer had not been able even after the noon meal to break the impetus of the productive mechanism within him, that *motus animi continuus* which constitutes, according to Cicero, the foundation of eloquence; and he had not attained the healing sleep which--what with the increasing exhaustion of his strength--he needed in the middle of each day. So he had gone outdoors soon after tea, in the hopes that air and movement would restore him and prepare him for a profitable evening."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "It was the beginning of May, and after cold, damp weeks a false midsummer had set in. The English Gardens, although the foliage was still fresh and sparse, were as pungent as in August, and in the parts nearer the city had been full of conveyances and promenaders. At the Aumeister, which he had reached by quieter and quieter paths, Aschenbach had surveyed for a short time the Wirtsgarten with its lively crowds and its border of cabs and carriages. From here, as the sun was sinking, he had started home, outside the park, across the open fields; and since he felt tired and a storm was threatening from the direction of Föhring, he waited at the North Cemetery for the tram which would take him directly back to the city."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "It happened that he found no one in the station or its vicinity. There was not a vehicle to be seen, either on the paved Ungererstrasse, with its solitary glistening rails stretching out towards Schwabing, or on the Föhringer Chaussee. Behind the fences of the stone-masons' establishments, where the crosses, memorial tablets, and monuments standing for sale formed a second, uninhabited burial ground, there was no sign of life; and opposite him the Byzantine structure of the Funeral Hall lay silent in the reflection of the departing day; its façade, ornamented in luminous colours with Greek crosses and hieratic paintings, above which were displayed inscriptions symmetrically arranged in gold letters, and texts chosen to bear on the life beyond; such as, \"They enter into the dwelling of the Lord,\" or, \"The light of eternity shall shine upon them.\" And for some time as he stood waiting he found a grave diversion in spelling out the formulas and letting his mind's eye lose itself in their transparent mysticism, when, returning from his reveries, he noticed in the portico, above the two apocalyptic animals guarding the steps, a man whose somewhat unusual appearance gave his thoughts an entirely new direction."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Whether he had just now come out from the inside through the bronze door, or had approached and mounted from the outside unobserved, remained uncertain. Aschenbach, without applying himself especially to the matter, was inclined to believe the former. Of medium height, thin, smooth-shaven, and noticeably pug-nosed, the man belonged to the red-haired type and possessed the appropriate fresh milky complexion. Obviously, he was not of Bavarian extraction, since at least the white and straight-brimmed straw hat that covered his head gave his appearance the stamp of a foreigner, of someone who had come from a long distance. To be sure, he was wearing the customary knapsack strapped across his shoulders, and a belted suit of rough yellow wool; his left arm was resting on his thigh, and his grey storm cape was thrown across it. In his right hand he held a cane with an iron ferrule, which he had stuck diagonally into the ground, and, with his feet crossed, was leaning his hip against the crook. His head was raised so that the Adam's-apple protruded hard and bare on a scrawny neck emerging from a loose sport-shirt. And he was staring sharply off into the distance, with colourless, red-lidded eyes between which stood two strong, vertical wrinkles peculiarly suited to his short, turned-up nose. Thus--and perhaps his elevated position helped to give the impression--his bearing had something majestic and commanding about it, something bold, or even savage. For whether he was grimacing because he was blinded by the setting sun, or whether it was a case of a permanent distortion of the physiognomy, his lips seemed too short, they were so completely pulled back from his teeth that these were exposed even to the gums, and stood out white and long."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "It is quite possible that Aschenbach, in his half-distracted, half-inquisitive examination of the stranger, had been somewhat inconsiderate, for he suddenly became aware that his look was being answered, and indeed so militantly, so straight in the eye, so plainly with the intention of driving the thing through to the very end and compelling him to capitulate, that he turned away uncomfortably and began walking along by the fences, deciding casually that he would pay no further attention to the man. The next minute he had forgotten him. But perhaps the exotic element in the stranger's appearance had worked on his imagination; or a new physical or spiritual influence of some sort had come into play. He was quite astonished to note a peculiar inner expansion, a kind of roving unrest, a youthful longing after far-off places: a feeling so vivid, so new, or so long dormant and neglected, that, with his hands behind his back and his eyes on the ground, he came to a sudden stop, and examined into the nature and purport of this emotion."
+    }
+  ]
+}
