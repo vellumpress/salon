@@ -18,7 +18,7 @@ export const PREFACES: Record<string, string> = {
   dubliners:
     "North Richmond Street is blind until the Christian Brothers’ School lets the boys out. This sit is Araby only, through the bazaar. One story; the cycle continues.",
   "sister-carrie":
-    "A small-town girl arrives in Chicago and learns what the city charges for a rise. Dreiser’s 1900 novel opens on the train and the new weather. Sit with the arrival before the first breath.",
+    "When Caroline Meeber boarded the afternoon train for Chicago, her total outfit consisted of a small trunk and four dollars. Chapter I — Caroline Meeber, the afternoon train, and August 1889. Skip the Contents. Theodore Dreiser’s 1900 novel. Soft United States, carefully. This is not The Pit. Chicago is primary. Soft Dreiser, carefully. The lead is this book, not Antic Hay, not A spring-time case, and not Eline Vere. Inventory 80 is easy. No score is invented for this sit.",
   "the-age-of-innocence":
     "Old New York marries correctly and then spends a lifetime paying for it. Wharton’s 1920 drawing rooms are already watching. Sit with the manners before anyone speaks.",
   "ethan-frome":

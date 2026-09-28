@@ -1026,6 +1026,15 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "doctor-pascal",
   "in-the-world",
   "leila",
+  // Mira Mon 28 Sep 2026 POST-#183 CLEAR — Sister Carrie leads Next. Never Featured.
+  // LEAD kept — not Antic Hay, not A spring-time case, not Eline Vere.
+  // Earlier catalog rows for Sister Carrie, Antic Hay, and Eline Vere keep these slugs.
+  // Earlier a-spring-time-case stays on its own slug. The Hungry Stones is Rituals (the title tale only).
+  // Sun POST-#182 Three Soldiers and the earlier packs stay ahead.
+  "sister-carrie",
+  "antic-hay",
+  "spring-time-case",
+  "eline-vere",
 ] as const;
 
 /**

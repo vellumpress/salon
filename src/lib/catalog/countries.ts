@@ -1033,6 +1033,11 @@ const WORK_COUNTRY: Record<string, string> = {
   "doctor-pascal": "France",
   leila: "Italy",
   charan: "Korea",
+  "sister-carrie": "United States",
+  "antic-hay": "United Kingdom",
+  "spring-time-case": "Japan",
+  "eline-vere": "Netherlands",
+  "hungry-stones": "India",
 };
 
 const AUTHOR_COUNTRY: Record<string, string> = (() => {
