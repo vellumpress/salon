@@ -1064,6 +1064,16 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "my-antonia",
   "look-back-on-happiness",
   "the-good-soldier",
+  // Mira Mon 28 Sep 2026 POST-#187 CLEAR — Crime and Punishment leads Next. Never Featured.
+  // LEAD kept — not Uncle Silas, not The Rise of David Levinsky, not For the Term of His Natural Life.
+  // Earlier shelf rows for Uncle Silas and For the Term of His Natural Life keep these slugs.
+  // The earlier inventory seat the-rise-of-david-levinsky stays on its own slug.
+  // The Bottle Imp is Rituals (the title tale only), not this tail.
+  // Mon POST-#186 Une Vie and the earlier packs stay ahead.
+  "crime-and-punishment",
+  "uncle-silas",
+  "rise-of-david-levinsky",
+  "for-the-term-of-his-natural-life",
 ] as const;
 
 /**

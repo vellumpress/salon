@@ -1,0 +1,66 @@
+{
+  "id": "rise-of-david-levinsky",
+  "title": "The Rise of David Levinsky",
+  "author": "Abraham Cahan",
+  "year": "1917",
+  "note": "Project Gutenberg 2803. Host: Book I Ch I — four cents / cloak-and-suit / metamorphosis (Contents skipped if phone-tight). Year 1917. Inventory 90 medium — no invented Launch rank. Soft NY carefully ≠ Hungry Hearts; soft US carefully ≠ Ántonia/Carrie/Martin Eden. Host LES primary.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Book I · Chapter I · New York LES",
+      "place": "Book I · Chapter I · New York LES",
+      "reentry": "Sometimes, when I think of my past in a superficial, casual way, the metamorphosis I have gone through strikes me as nothing short of a miracle. I was born and reared in the lowest depths of poverty a",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Sometimes, when I think of my past in a superficial, casual way, the metamorphosis I have gone through strikes me as nothing short of a miracle. I was born and reared in the lowest depths of poverty and I arrived in America--in 1885--with four cents in my pocket. I am now worth more than two million dollars and recognized as one of the two or three leading men in the cloak-and-suit trade in the United States. And yet when I take a look at my inner identity it impresses me as being precisely the same as it was thirty or forty years ago. My present station, power, the amount of worldly happiness at my command, and the rest of it, seem to be devoid of significance."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "When I was young I used to think that middle-aged people recalled their youth as something seen through a haze. I know better now. Life is much shorter than I imagined it to be. The last years that I spent in my native land and my first years in America come back to me with the distinctness of yesterday. Indeed, I have a better recollection of many a trifle of my childhood days than I have of some important things that occurred to me recently. I have a good memory for faces, but I am apt to recognize people I have not seen for a quarter of a century more readily than I do some I used to know only a few years ago."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "I love to brood over my youth. The dearest days in one's life are those that seem very far and very near at once. My wretched boyhood appeals to me as a sick child does to its mother."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "I was born in Antomir, in the Northwestern Region, Russia, in 1865. All I remember of my father is his tawny beard, a huge yellow apple he once gave me at the gate of an orchard where he was employed as watchman, and the candle which burned at his head his body lay under a white shroud on the floor. I was less than three years old when he died, so my mother would carry me to the synagogue in her arms to have somebody say the Prayer for the Dead with me. I was unable fully to realize the meaning of the ceremony, of course, but its solemnity and pathos were not altogether lost upon me. There is a streak of sadness in the blood of my race. Very likely it is of Oriental origin. If it is, it has been amply nourished by many centuries of persecution."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Left to her own resources, my mother strove to support herself and me by peddling pea mush or doing odds and ends of jobs. She had to struggle hard for our scanty livelihood and her trials and loneliness came home to me at an early period."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "I was her all in all, though she never poured over me those torrents of senseless rhapsody which I heard other Jewish mothers shower over their children. The only words of endearment I often heard from her were, \"My little bean,\" and, \"My comfort.\" Sometimes, when she seemed to be crushed by the miseries of her life, she would call me, \"My poor little orphan.\" Otherwise it was, \"Come here, my comfort,\" \"Are you hungry, my little bean?\" or, \"You are a silly little dear, my comfort.\" These words of hers and the sonorous contralto in which they were uttered are ever alive in my heart, like the Flame Everlasting in a synagogue."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Mamma, why do you never beat me like other mammas do?\" I once asked her."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "She laughed, kissed me, and said, \"Because God has punished you hard enough as it is, poor orphan mine.\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "I scarcely remembered my father, yet I missed him keenly. I was ever awake to the fact that other little boys had fathers and that I was a melancholy exception; that most married women had husbands, while my mother had to bear her burden unaided. In my dim childish way I knew that there was a great blank in our family nest, that it was a widow's nest; and the feeling of it seemed to color all my other feelings. When I was a little older and would no longer sleep with my mother, a rusty old coat of my deceased father's served me as a quilt. At night, before falling asleep, I would pull it over my head, shut my eyes tight, and evoke a flow of fantastic shapes, bright, beautifully tinted, and incessantly changing form and color. While the play of these figures and hues was going on before me I would see all sorts of bizarre visions, which at times seemed to have something to do with my father's spirit."
+    }
+  ]
+}

@@ -419,6 +419,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `I have gone to the forest. Chapter I — the forest, overfed success, and a hair-shirt. Skip the Contents. Knut Hamsun, in Paula Wiking’s English, 1912. Soft Hamsun, carefully. This is not The Family at Gilje, Hunger, or Wanderers. Soft Scandinavia, carefully. This is not Niels Lyhne. Inventory 84 is medium. No score is invented for this sit.`,
   "father-of-yoto":
     `Sweet human hearts—a tale of carnival, moon-haunted nights. This sit is The Father of Yoto only — Marigold Vassiloff, Tai Ling, and West India Dock Road. Skip the Contents and the other sketches. Stop at the end of the sketch. Thomas Burke’s 1916 sketch. One sketch this sit. Soft Burke, carefully. Soft England, carefully. This is not Kipps, and not Antic Hay. This is not Madame Heurtebise in Paris. Inventory 76 is medium. No score is invented for this sit.`,
+  "crime-and-punishment":
+    `On an exceptionally hot evening early in July a young man came out of the garret in which he lodged in S. Place and walked slowly, as though in hesitation, towards K. bridge. Part One, Chapter I — a hot July garret, the landlady’s kitchen, and K. bridge. Skip the Contents if the phone is tight. Fyodor Dostoevsky, in Constance Garnett’s English, 1866. Garnett is named in the About only. Soft Russia, carefully. This is not Smoke in Baden, not Resurrection, and not In the World. Petersburg is primary. Soft densify, carefully, against Folkestone, Brussels, Florence, Oakland, and Paris, and against Normandy, Nebraska, Norway, Nauheim, and Limehouse. The lead is this book, not Uncle Silas, not The Rise of David Levinsky, and not For the Term of His Natural Life. Inventory 79 is medium. No score is invented for this sit.`,
+  "uncle-silas":
+    `It was winter--that is, about the second week in November--and great gusts were rattling at the windows, and wailing and thundering among our tall trees and ivied chimneys. Chapter I — Austin Ruthyn of Knowl, a winter fire, and ivied chimneys. Skip the Contents if the phone is tight. Joseph Sheridan Le Fanu’s 1864 novel. Soft Ireland, carefully. This is not Irish Fairy Tales. Soft gothic, carefully. This is not Widdershins. This is not The Professor in Brussels. Inventory 73 is medium. No score is invented for this sit.`,
+  "rise-of-david-levinsky":
+    `Sometimes, when I think of my past in a superficial, casual way, the metamorphosis I have gone through strikes me as nothing short of a miracle. Book I, Chapter I — four cents, the cloak-and-suit trade, and a metamorphosis. Skip the Contents if the phone is tight. Abraham Cahan’s 1917 novel. Soft New York, carefully. This is not Hungry Hearts. This is not a New York-weighted lead. Soft United States, carefully. This is not My Ántonia in Nebraska, not Sister Carrie in Chicago, and not Martin Eden in Oakland. The Lower East Side is primary. Inventory 90 is medium. No score is invented for this sit.`,
+  "for-the-term-of-his-natural-life":
+    `In the breathless stillness of a tropical afternoon, when the air was hot and heavy, and the sky brazen and cloudless, the shadow of the Malabar lay solitary on the surface of the glittering sea. Book I, Chapter I, The Prison Ship — the Malabar in the tropics, and a poop-deck awning. Skip the Hampstead prologue and the Contents. Marcus Clarke’s 1874 novel. Soft Australia, carefully. This is not My Brilliant Career, and not Kangaroo. This is not Martin Eden in Oakland. The sit is longer, carefully. The Prison Ship is primary. Inventory 70 is medium. No score is invented for this sit.`,
+  "bottle-imp":
+    `There was a man of the Island of Hawaii, whom I shall call Keawe; for the truth is, he still lives, and his name must be kept secret. This sit is The Bottle Imp only — Keawe in Hawaii, Honaunau, and the Hamakua coast. Skip the Note, the Contents, The Beach of Falesá, and The Isle of Voices. Stop at the end of the story. Robert Louis Stevenson’s 1893 tale. One story this sit. Soft Stevenson, carefully. This is not The Master of Ballantrae. Soft Pacific, carefully. This is not Typee. This is not The Father of Yoto in Limehouse. Inventory 78 is easy. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1204,6 +1214,15 @@ export const RITUAL_LANES: RitualLane[] = [
       "my-antonia",
       "look-back-on-happiness",
       "the-good-soldier",
+      // Mira Mon 28 Sep 2026 POST-#187 CLEAR — Crime and Punishment leads. Never Featured.
+      // LEAD kept — not Uncle Silas, not The Rise of David Levinsky, not For the Term of His Natural Life.
+      // Earlier shelf rows for Uncle Silas and For the Term of His Natural Life keep these slugs.
+      // The earlier inventory seat the-rise-of-david-levinsky stays on its own slug.
+      // The Bottle Imp is Waking up (the title tale only).
+      "crime-and-punishment",
+      "uncle-silas",
+      "rise-of-david-levinsky",
+      "for-the-term-of-his-natural-life",
     ],
   },
   {
@@ -1308,6 +1327,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "madame-heurtebise",
       // Mira Mon 28 Sep 2026 POST-#186 CLEAR — The Father of Yoto only.
       "father-of-yoto",
+      // Mira Mon 28 Sep 2026 POST-#187 CLEAR — The Bottle Imp only.
+      "bottle-imp",
     ],
   },
   {
@@ -1546,6 +1567,15 @@ export const RITUAL_LANES: RitualLane[] = [
       "my-antonia",
       "look-back-on-happiness",
       "the-good-soldier",
+      // Mira Mon 28 Sep 2026 POST-#187 CLEAR — Crime and Punishment leads. Never Featured.
+      // LEAD kept — not Uncle Silas, not The Rise of David Levinsky, not For the Term of His Natural Life.
+      // Earlier shelf rows for Uncle Silas and For the Term of His Natural Life keep these slugs.
+      // The earlier inventory seat the-rise-of-david-levinsky stays on its own slug.
+      // The Bottle Imp is Waking up (the title tale only).
+      "crime-and-punishment",
+      "uncle-silas",
+      "rise-of-david-levinsky",
+      "for-the-term-of-his-natural-life",
     ],
   },
   {
@@ -1783,6 +1813,15 @@ export const RITUAL_LANES: RitualLane[] = [
       "my-antonia",
       "look-back-on-happiness",
       "the-good-soldier",
+      // Mira Mon 28 Sep 2026 POST-#187 CLEAR — Crime and Punishment leads. Never Featured.
+      // LEAD kept — not Uncle Silas, not The Rise of David Levinsky, not For the Term of His Natural Life.
+      // Earlier shelf rows for Uncle Silas and For the Term of His Natural Life keep these slugs.
+      // The earlier inventory seat the-rise-of-david-levinsky stays on its own slug.
+      // The Bottle Imp is Waking up (the title tale only).
+      "crime-and-punishment",
+      "uncle-silas",
+      "rise-of-david-levinsky",
+      "for-the-term-of-his-natural-life",
     ],
   },
   {
@@ -1852,6 +1891,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "my-antonia": 5,
   "look-back-on-happiness": 3,
   "father-of-yoto": 12,
+  "crime-and-punishment": 5,
+  "uncle-silas": 5,
+  "rise-of-david-levinsky": 4,
+  "for-the-term-of-his-natural-life": 4,
+  "bottle-imp": 12,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
   "all-quiet-on-the-western-front": 2,
