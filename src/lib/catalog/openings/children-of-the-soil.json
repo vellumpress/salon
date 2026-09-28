@@ -1,0 +1,101 @@
+{
+  "id": "children-of-the-soil",
+  "title": "Children of the Soil",
+  "author": "Henryk Sienkiewicz (trans. Jeremiah Curtin)",
+  "year": "1895",
+  "note": "Project Gutenberg 44939. Host: Ch I — Kremen July midnight mist / Pan Stanislav approach (Curtin dedication / Introductory Statement skipped if phone-tight). Year EN Curtin Copyright 1895. Jeremiah Curtin from PG About only. PG reading-ease 77.3 fairly easy — no invented Launch rank. Host Poland estate primary. Soft Sienkiewicz carefully ≠ Hania / Quo Vadis; soft Poland carefully ≠ Comedienne.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Kremen · July midnight mist · Poland estate",
+      "place": "Chapter I · Kremen · July midnight mist · Poland estate",
+      "reentry": "It was the first hour after midnight when Pan Stanislav Polanyetski was approaching the residence in Kremen. During years of childhood he had been twice in that village, when his mother, a distant rel",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was the first hour after midnight when Pan Stanislav Polanyetski was approaching the residence in Kremen. During years of childhood he had been twice in that village, when his mother, a distant relative of the present owner of Kremen, was taking him home for vacation. Pan Stanislav tried to remember the place, but to do so was difficult. At night, by the light of the moon, everything took on an uncertain form. Over the bushes, fields, and meadows, a white mist was lying low, changing the whole region about into a shoreless lake, as it were,--an illusion increased by choruses of frogs in the mist."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "It was a July night, very calm and perfectly bright. At moments, when the frogs became silent, landrails were heard playing in the dew; and at times, from afar, from muddy ponds, hidden behind reeds, the call of the bittern sounded as if coming from under the earth."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Pan Stanislav could not resist the charm of that night. It seemed to him familiar in some way; and that familiarity he felt all the more, since he had returned only the previous year from abroad, where he had spent his first youth and had become engaged afterward in mercantile matters. Now, while entering that sleeping village, he recalled his childhood, memorable through his mother, now five years dead, and because the bitterness and cares of that childhood, compared with the present, seemed perfect bliss to him."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "At last the brichka rolled up toward the village, which began with a cross standing on a sand mound. The cross, inclining greatly, seemed ready to fall. Pan Stanislav remembered it because in his time under that mound had been buried a man found hanging from a limb in the neighboring forest, and afterward people were afraid to pass by that spot in the night-time."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Beyond the cross were the first cottages, but the people were sleeping; there was no light in any window. As far as the eye could reach, only roofs of cottages were gleaming on the night background of the sky, lighted up by the moon, and the roofs appeared silvery and blue. Some cottages were washed with lime and seemed bright green; others, hidden in plum orchards, in thickets of sunflowers or pole beans, barely came out of the shadow. In the yards, dogs barked, but in their sleep, as it were, accompanying the croaking of frogs, the calling of landrails and bitterns, and all those sounds with which a summer night speaks, and which strengthen the impression of silence still more."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "The brichka, moving slowly along the soft sandy road, entered at last a dark alley, spotted only here and there by the moonlight, which pushed in between the leaves. Beyond the alley, night watches whistled; and in the open was seen a white dwelling, in which some windows were lighted. When the brichka rattled up to the entrance, a serving-man hurried out of the house and began to assist Pan Stanislav to alight; but in addition the night watch appeared and two white dogs, evidently very young and friendly, for, instead of barking, they began to fawn and to spring on the guest, showing such delight at his coming that the watch had to moderate their effusiveness with a stick."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "The man took Pan Stanislav's things from the brichka, and after a moment the guest found himself in a dining-room where tea was waiting. Nothing had changed from the time of his childhood. At one wall was a sideboard in walnut; at one end of this a clock with heavy weights and a cuckoo; at the other were two badly painted portraits of women in robes of the eighteenth century; in the centre of the room stood a table with a white cloth, and surrounded by chairs with high arms. That room, lighted brightly, full of steam rising from a samovar, seemed rather hospitable and gladsome."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Pan Stanislav began to walk along the side of the table; but the squeaking of his boots struck him in that silence, therefore he went to the window and looked through the panes at the yard filled with moonlight. Over this yard the two white dogs, which had greeted him so effusively, were chasing each other."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "After a time the door of the next room opened, and a young lady entered in whom Pan Stanislav divined the daughter of the master of Kremen by his second wife; at sight of her he stepped from the window curtains, and, approaching the table in his squeaking boots, bowed, and announced his name. The young lady extended her hand, and said,--"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"We learned of your arrival from the despatch. Father is a trifle ill, and was obliged to lie down; but he will be glad to see you in the morning.\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"I am not to blame for coming so late,\" answered Pan Stanislav; \"the train reaches Chernyov only at eleven.\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"And from Chernyov it is ten miles to Kremen. Father tells me that this is not your first visit.\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"I came here with my mother when you were not in the world yet.\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"I know. You are a relative of my father.\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"I am a relative of Pan Plavitski's first wife.\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"Father esteems family connections very highly, even the most distant,\" said the young lady; and she began to pour out tea, pushing aside from time to time the steam, which, rising from the samovar, veiled her eyes. When conversation halted, only the tick of the clock was heard. Pan Stanislav, who was interested by young ladies, looked at Panna Plavitski carefully. She was a person of medium height, rather slender; she had dark hair, a face calm, but subdued, as it were, a complexion sunburnt somewhat, blue eyes, and a most shapely mouth. Altogether it was the face of a self-possessed and delicate woman. Pan Stanislav, to whom she seemed not ill-looking, but also not beautiful, thought that she was rather attractive; that she might be good; and that under that exterior, not too brilliant, she might have many of those various qualities which young ladies in the country have usually. Though he was young, life had taught him one truth,--that in general women gain on near acquaintance, while in general men lose. He had heard also touching Panna Plavitski, that the whole management in Kremen--a place, by the way, almost ruined--lay on her mind, and that she was one of the most overworked persons on earth. With reference to those cares, which must weigh on her, she seemed calm and unmoved; still he thought that surely she must wish to sleep. This was evident, indeed, by her eyes, which blinked in spite of her, under the light of the hanging lamp."
+    }
+  ]
+}

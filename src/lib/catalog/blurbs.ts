@@ -277,7 +277,7 @@ const BLURBS: Record<string, string> = {
   "the-war-of-the-worlds":
     "Martians land in the Home Counties and London learns it is not the center.",
   "the-invisible-man":
-    "A chemist disappears — then the bandages, and the terror, come off.",
+    "A stranger reaches the Coach and Horses through Bramblehurst snow, and this sit is the whole short novel.",
   "sons-and-lovers":
     "A Nottingham miner’s son cannot leave his mother’s claim on him.",
   "women-in-love":
@@ -509,7 +509,10 @@ const BLURBS: Record<string, string> = {
     "Stevenson tales of wreckers, islands, and weather that wants a share.",
   "island-nights-entertainments": "South Sea stories: a bottle, a beach, and a bargain.",
   "treasure-island": "A map, a mutiny, and a boy who keeps the ship’s accounts in his head.",
-  "kidnapped": "A kidnapped heir walks Scotland with an outlaw who will not shut up.",
+  "kidnapped": "David Balfour leaves Essendean on a June morning with a key, and the Highlands are where the sit turns.",
+  "prisoner-of-zenda": "Rudolf’s sister-in-law asks when he will do anything, and the red Elphberg hair is already the trouble.",
+  "revolt-of-the-angels": "Under St. Sulpice the d’Esparvieu mansion stands among chestnut trees, and the angel revolt is where the sit turns.",
+  "children-of-the-soil": "Pan Stanislav comes toward Kremen in the midnight mist, and the Poland estate is where the sit turns.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",
