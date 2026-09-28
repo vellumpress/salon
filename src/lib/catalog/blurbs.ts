@@ -273,7 +273,7 @@ const BLURBS: Record<string, string> = {
   "the-island-of-doctor-moreau":
     "A Pacific island where a doctor teaches beasts to walk like men.",
   "the-time-machine":
-    "A machine, a dinner table, and a future split between Eloi and Morlocks.",
+    "The Time Traveller talks by the fire among silver lilies, and this sit is the whole short novel.",
   "the-war-of-the-worlds":
     "Martians land in the Home Counties and London learns it is not the center.",
   "the-invisible-man":
@@ -517,6 +517,10 @@ const BLURBS: Record<string, string> = {
   "elmer-gantry": "Elmer Gantry leans, eloquently drunk, against the bar of the Old Home Sample Room in Cato, Missouri.",
   "colonels-dream": "Two gentlemen sit in French and Company’s private office on lower Broadway, and Clarendon in the South is where the dream turns.",
   "great-god-pan": "Clarke comes for the experiment, and this sit stops when the novella ends.",
+  manalive: "A wind of unreasonable happiness tears into Beacon House, and the boarding-house garden is already a pantomime.",
+  "captain-blood": "Peter Blood tends the geraniums on Water Lane in Bridgewater, and the Caribbean is where the sit turns.",
+  "the-monomaniac": "Roubaud sets the loaf and the white wine on the table, and the Paris–Le Havre railway is already in the window.",
+  "tartarin-de-tarascon": "Tartarin’s villa on the Avignon road keeps an exotic garden, and Algeria is where the boast turns.",
   "little-dorrit": "A child of the Marshalsea, a family of prisoners who are not all inside.",
   "our-mutual-friend": "A drowned man, a dust heap, and London’s money in the river.",
   "the-mystery-of-edwin-drood": "A cathedral town, an opium habit, and a nephew who disappears.",
