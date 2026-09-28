@@ -381,6 +381,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Giovanni the footman calls Signorina from the dining-room, breathless, after the garden and the house. Chapter I, A Mystic Prelude — Signorina Leila, the chestnut grove, and Priaforà. Skip the Contents. Antonio Fogazzaro, in Mary Prichard Agnetti’s English, 1910. The Italian year is 1910; the English is 1911. Soft Italy, carefully. This is not The Mother, and not Sardinia, Florence, Capri, or Rome. Soft Fogazzaro, carefully. Inventory 83 is medium. No score is invented for this sit.`,
   "charan":
     `In the days of King Sung-jong one of Korea’s noted men became governor of Pyong-an Province. This sit is CHARAN only — Pyong-an Province, the dancing girl Charan, and the Governor’s son. Skip the Contents and the other tales. Stop at the end of the tale. Im Bang and Yi Ryuk, in James S. Gale’s English, 1913. One tale this sit. Soft Korea, carefully. This is not Laos, China, or Japan. Soft gothic, carefully. This is not The Beckoning Fair One. Soft England, carefully. This is not Lord Arthur Savile’s Crime. No score is invented for this sit.`,
+  "sister-carrie":
+    `When Caroline Meeber boarded the afternoon train for Chicago, her total outfit consisted of a small trunk and four dollars. Chapter I — Caroline Meeber, the afternoon train, and August 1889. Skip the Contents. Theodore Dreiser’s 1900 novel. Soft United States, carefully. This is not The Pit. Chicago is primary. Soft Dreiser, carefully. The lead is this book, not Antic Hay, not A spring-time case, and not Eline Vere. Inventory 80 is easy. No score is invented for this sit.`,
+  "antic-hay":
+    `Gumbril, Theodore Gumbril Junior, B.A. Oxon., sat in his oaken stall on the north side of the School Chapel. Chapter I — the oaken stall, the School Chapel, and the First Lesson. Skip the Phoenix Library list. Aldous Huxley’s 1923 novel. Soft England, carefully. This is not The Way of All Flesh or Lord Arthur Savile’s Crime. Soft Huxley, carefully. Inventory 84 is medium. No score is invented for this sit.`,
+  "spring-time-case":
+    `It was around the tolling of the fifth hour in the early evening that a fish monger sped into the pawn-shop of Suruga-ya. Part I — the fifth hour, the fish monger, and Suruga-ya. Skip the Translator introductions. Jun’ichirō Tanizaki, in Z. Tamotsu Iwado’s English, 1927. Soft Japan, carefully. This is not Naomi, A Japanese Nightingale, Kwaidan, or CHARAN. Soft Tanizaki, carefully. No wider inventory score. No score is invented for this sit.`,
+  "eline-vere":
+    `They were close to each other in the dining-room, which had been turned into a dressing-room. Chapter I — Frédérique van Erlevoort, the mirror, and the azalea guests. Skip the Gosse introduction. Louis Couperus, in J. T. Grein’s English, 1889. The Dutch year is 1889; the English is 1892. Soft Couperus, carefully. This is not Small Souls or The Hidden Force. Inventory 67 is medium, carefully thinner. No score is invented for this sit.`,
+  "hungry-stones":
+    `My kinsman and myself were returning to Calcutta from our Puja trip when we met the man in a train. This sit is The Hungry Stones only — a Calcutta Puja train and an up-country Mahomedan. Skip the Contents and the other tales. Stop at the end of the tale. Rabindranath Tagore’s 1916 tale. One tale this sit. Soft Bengal, carefully. This is not CHARAN or The Poison Tree. The preface is several hands. No translator is invented. Inventory 71 is medium. No score is invented for this sit. The first breath is 277 words — phone-hard, left as printed.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1137,6 +1147,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "doctor-pascal",
       "in-the-world",
       "leila",
+      // Mira Mon 28 Sep 2026 POST-#183 CLEAR — Sister Carrie leads. Never Featured.
+      // LEAD kept — not Antic Hay, not A spring-time case, not Eline Vere.
+      // Earlier catalog rows for Sister Carrie, Antic Hay, and Eline Vere keep these slugs.
+      // Earlier a-spring-time-case stays on its own slug. The Hungry Stones is Waking up (the title tale only).
+      "sister-carrie",
+      "antic-hay",
+      "spring-time-case",
+      "eline-vere",
     ],
   },
   {
@@ -1233,6 +1251,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "lord-arthur-saviles-crime",
       // Mira Sun 27 Sep 2026 POST-#182 CLEAR — CHARAN only.
       "charan",
+      // Mira Mon 28 Sep 2026 POST-#183 CLEAR — The Hungry Stones only.
+      "hungry-stones",
     ],
   },
   {
@@ -1438,6 +1458,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "doctor-pascal",
       "in-the-world",
       "leila",
+      // Mira Mon 28 Sep 2026 POST-#183 CLEAR — Sister Carrie leads. Never Featured.
+      // LEAD kept — not Antic Hay, not A spring-time case, not Eline Vere.
+      // Earlier catalog rows for Sister Carrie, Antic Hay, and Eline Vere keep these slugs.
+      // Earlier a-spring-time-case stays on its own slug. The Hungry Stones is Waking up (the title tale only).
+      "sister-carrie",
+      "antic-hay",
+      "spring-time-case",
+      "eline-vere",
     ],
   },
   {
@@ -1642,6 +1670,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "doctor-pascal",
       "in-the-world",
       "leila",
+      // Mira Mon 28 Sep 2026 POST-#183 CLEAR — Sister Carrie leads. Never Featured.
+      // LEAD kept — not Antic Hay, not A spring-time case, not Eline Vere.
+      // Earlier catalog rows for Sister Carrie, Antic Hay, and Eline Vere keep these slugs.
+      // Earlier a-spring-time-case stays on its own slug. The Hungry Stones is Waking up (the title tale only).
+      "sister-carrie",
+      "antic-hay",
+      "spring-time-case",
+      "eline-vere",
     ],
   },
   {
@@ -1913,6 +1949,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "doctor-pascal": 4,
   leila: 4,
   charan: 12,
+  "sister-carrie": 4,
+  "antic-hay": 4,
+  "spring-time-case": 4,
+  "eline-vere": 4,
+  "hungry-stones": 12,
   "royal-highness": 4,
   ramona: 6,
   "almayers-folly": 6,

@@ -1661,9 +1661,9 @@ test("Tier B batches 1–2 are local format-min binds, never Featured", () => {
     assert.ok(work, id);
     assert.equal(work!.local, true, id);
     assert.equal(isBoundLocal(work!), true, id);
-    assert.equal(curatorialTrack(id), id === "billy-budd" ? "next" : "later", id);
+    assert.equal(curatorialTrack(id), id === "billy-budd" || id === "antic-hay" ? "next" : "later", id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    if (id === "billy-budd") {
+    if (id === "billy-budd" || id === "antic-hay") {
       assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
     } else {
       assertNoStubOpening(id);
@@ -1991,6 +1991,11 @@ test("Tier B batches 11–12 are local format-min binds, never Featured", () => 
       assert.equal(curatorialTrack(id), "next", id);
       assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), true, id);
       assert.equal(work!.minutes, 493, id);
+      assert.equal(work!.language, "English", id);
+      assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
+    } else if (id === "eline-vere") {
+      assert.equal(curatorialTrack(id), "next", id);
+      assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), true, id);
       assert.equal(work!.language, "English", id);
       assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
     } else {

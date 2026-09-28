@@ -219,7 +219,15 @@ const BLURBS: Record<string, string> = {
   "ethan-frome":
     "A Starkfield winter, a sick wife, and a sled that does not forgive a wish.",
   "sister-carrie":
-    "A small-town girl arrives in Chicago and learns what the city charges for a rise.",
+    "Caroline Meeber boards the afternoon train for Chicago with a small trunk and four dollars.",
+  "antic-hay":
+    "Gumbril sits in an oaken stall in the School Chapel and waits through the First Lesson.",
+  "spring-time-case":
+    "A fish monger, flushed with drink, speeds into the Suruga-ya pawn-shop at the fifth hour.",
+  "eline-vere":
+    "Frédérique van Erlevoort stands at a mirror while the azalea guests gather.",
+  "hungry-stones":
+    "On the Puja train back to Calcutta, a kinsman meets an up-country Mahomedan.",
   falcon:
     "Spade keeps the falcon, the lies, and the one rule he will not break for a woman.",
   "winesburg-ohio":

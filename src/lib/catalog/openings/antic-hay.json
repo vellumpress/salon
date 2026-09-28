@@ -1,0 +1,81 @@
+{
+  "id": "antic-hay",
+  "title": "Antic Hay",
+  "author": "Aldous Huxley",
+  "year": "1923",
+  "note": "Project Gutenberg 60483. Host: CHAPTER I — Gumbril oaken stall School Chapel / First Lesson (Phoenix Library list skipped). Year 1923. Inventory 84 medium — no invented Launch rank. Soft England carefully ≠ Way of All Flesh / Lord Arthur; soft Huxley carefully.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Postwar London",
+      "place": "Chapter I · Postwar London",
+      "reentry": "Gumbril, Theodore Gumbril Junior, B.A. Oxon., sat in his oaken stall on the north side of the School Chapel and wondered, as he listened through the uneasy silence of half a thousand schoolboys to the",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Gumbril, Theodore Gumbril Junior, B.A. Oxon., sat in his oaken stall on the north side of the School Chapel and wondered, as he listened through the uneasy silence of half a thousand schoolboys to the First Lesson, pondered, as he looked up at the vast window opposite, all blue and jaundiced and bloody with nineteenth-century glass, speculated in his rapid and rambling way about the existence and the nature of God."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Standing in front of the spread brass eagle and fortified in his convictions by the sixth chapter of Deuteronomy (for this first Sunday of term was the Fifth after Easter), the Reverend Pelvey could speak of these things with an enviable certainty. \"Hear, O Israel,\" he was booming out over the top of the portentous Book: \"the Lord our God is one Lord.\""
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "One Lord; Mr. Pelvey knew; he had studied theology. But if theology and theosophy, then why not theography and theometry, why not theognomy, theotrophy, theotomy, theogamy? Why not theophysics and theo-chemistry? Why not that ingenious toy, the theotrope or wheel of gods? Why not a monumental theodrome?"
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "In the great window opposite, young David stood like a cock, crowing on the dunghill of a tumbled giant. From the middle of Goliath's forehead there issued, like a narwhal's budding horn, a curious excrescence. Was it the embedded pebble? Or perhaps the giant's married life?"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"... with all thine heart,\" declaimed the Reverend Pelvey, \"and with all thy soul, and with all thy might.\""
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "No, but seriously, Gumbril reminded himself, the problem was very troublesome indeed. God as a sense of warmth about the heart, God as exultation, God as tears in the eyes, God as a rush of power or thought—that was all right. But God as truth, God as 2 + 2 = 4—that wasn't so clearly all right. Was there any chance of their being the same? Were there bridges to join the two worlds? And could it be that the Reverend Pelvey, M.A., fog-horning away from behind the imperial bird, could it be that he had an answer and a clue? That was hardly believable. Particularly if one knew Mr. Pelvey personally. And Gumbril did."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"And these words which I command thee this day,\" retorted Mr. Pelvey, \"shall be in thine heart.\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Or in the heart, or in the head? Reply, Mr. Pelvey, reply. Gumbril jumped between the horns of the dilemma and voted for other organs."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"And thou shalt teach them diligently to thy children, and shalt talk of them when thou sittest in thine house, and when thou walkest by the way, and when thou liest down, and when thou risest up.\""
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Diligently to thy children.... Gumbril remembered his own childhood; they had not been very diligently taught to him. 'Beetles, black beetles'—his father had a really passionate feeling about the clergy. Mumbojumbery was another of his favourite words. An atheist and an anti-clerical of the strict old school he was. Not that, in any case, he gave himself much time to think about these things; he was too busy being an unsuccessful architect. As for Gumbril's mother, her diligence had not been dogmatic. She had just been diligently good, that was all. Good; good? It was a word people only used nowadays with a kind of deprecating humorousness. Good. Beyond good and evil? We are all that nowadays. Or merely below them, like earwigs? I glory in the name of earwig. Gumbril made a mental gesture and inwardly declaimed. But good in any case, there was no getting out of that, good she had been. Not nice, not merely *molto simpatica*—how charmingly and effectively these foreign tags assist one in the great task of calling a spade by some other name!—but good. You felt the active radiance of her goodness when you were near her.... And that feeling, was that less real and valid than two plus two?"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "The Reverend Pelvey had nothing to reply. He was reading with a holy gusto of \"houses full of all good things, which thou filledst not, and wells digged, which thou diggedst not, vineyards and olive trees, which thou plantedst not.\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "She had been good and she had died when he was still a boy; died—but he hadn't been told that till much later—of creeping and devouring pain. Malignant disease—oh, *caro nome*!"
+    }
+  ]
+}

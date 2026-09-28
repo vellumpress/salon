@@ -1,0 +1,61 @@
+{
+  "id": "spring-time-case",
+  "title": "A spring-time case",
+  "author": "Jun’ichirō Tanizaki (trans. Z. Tamotsu Iwado)",
+  "year": "1927",
+  "note": "Project Gutenberg 73132. Host: PART I — tolling fifth hour / fish monger / Suruga-ya pawn-shop (Translator introductions skipped). Year EN 1927. Z. Tamotsu Iwado from PG About only. No wider-1000 inventory score — cite PG only. Soft Japan carefully ≠ Naomi / Nightingale / Kwaidan / CHARAN; soft Tanizaki carefully.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Japan Yeddo / Suruga-ya",
+      "place": "Part I · Japan Yeddo / Suruga-ya",
+      "reentry": "It was around the tolling of the fifth hour in the early evening that a fish monger, of the next street, in a flush of drink and a rush of self-imposed urgency, sped into the pawn-broking shop of Suru",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was around the tolling of the fifth hour in the early evening that a fish monger, of the next street, in a flush of drink and a rush of self-imposed urgency, sped into the pawn-broking shop of Suruga-ya on one of his visits, which were more regular than his financial programme ever seemed to be. He jingled money in his breast pocket, singled forth two silver pieces, quite bright and new, just given him, as he explained, by an officer living in the Ginza way, and asked back such of his dress things as he was evidently to need for the New Year's holidays,—livery coat, outer gown, and so forth, now neglected for three months in pledge. After he left, the business part of the Suruga-ya, usually so lively, was again to remain quiet without a single more caller to break the stillness, a thing probably accountable by the bad weather that evening. Shinsuké who had been buried in reading, his face between his hands, just behind the counter railing, literature served in a yellow paper cover of no more importance than its author, now remembered the little brazier under his nose and, trying to stir up the fire, well-nigh gone out, muttered to himself, \"What a cold evening!\" Then, reaching out his hand to the apprentice boy, sitting two or three feet off, dozing away in an undisturbed nap, Shinsuké pulled his ear."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"Shota, wake up for a moment. Sorry to send you out in this sleeting miserable weather, but I want you to run over like a good boy to the macaroni house, on the Muramatsu-cho, and tell them to bring two bowls of hot boiled macaroni with fried fish for me,—and take for yourself whatever you like, too; it's our bargain.\""
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"That's fine! Now that I'm awake, I feel cold and a little hungry. Before the Master comes back, I'll let you treat me to something warm and nice.\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The youngster bestirred himself, tucking up the lower part of his clothes and, snatching down a broad-brimmed rain hat hung near the entrance, sailed out into the sleet and cold."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "In the meantime, Shinsuké straightened up the things on the counter, put the padlock on the store-house, and closed the main entrance door on the street. \"We shall be late coming home to-night, may even have to stay over till to-morrow morning;—see carefully that the doors are all fastened, and everything is in order\": said his master in the early evening, when he was leaving with his wife, on their visit to a relative over in Yotsuya, just gone into mourning. Remembering this parting order, Shinsuké, a lantern in hand, set out looking carefully around, from the kitchen door to the back entrance gate, up the flight of steps leading from the maids' quarters, to the doors on the balcony perched on the roof for clothes line, making sure of bars and bolts everywhere. As he retraced his way down the steps, his lantern threw its dim light bringing out of the darkness the faces of two servant maids, slumbering away so comfortably under heavy bed-clothes."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Are you already asleep, O-Tami don?\" His query, though voiced in a tone raised above the ordinary, received no response. Softening his footfalls even more carefully, through the hallway, whose wood floor was so cold for his bare feet to hug, he came round to look over a train of sliding panels that screened the verandah from a space of inner garden."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "The verandah led to one of the best rooms of the house, where a bed-room lantern shed an elfish light upon the paper doors. It was generally used by the master and mistress for their living room, fitted as it was, with the family mortuary shrine, a large sized brazier, a tea cupboard, and other articles of household ♦paraphernalia. To-night, Tsuya, the young mistress, had evidently taken it for herself and gone to bed there."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"Ah, how warm and snug it must be in that room there!\" As the thought flashed through his mind, suddenly he seemed to find himself face to face with the miseries of his own wretched self, of the life meted out to a man in menial servitude; his eyes, aglow with envy, lingered on the soft glow on the paper."
+    }
+  ]
+}

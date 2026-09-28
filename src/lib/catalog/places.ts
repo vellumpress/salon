@@ -207,6 +207,10 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "in-the-world": { label: "Russia", region: "ru" },
   leila: { label: "Italy", region: "it" },
   charan: { label: "Korea", region: "kr" },
+  "antic-hay": { label: "Postwar London", region: "gb" },
+  "spring-time-case": { label: "Yeddo", region: "jp" },
+  "eline-vere": { label: "The Hague", region: "nl" },
+  "hungry-stones": { label: "Bengal", region: "in" },
   color: { label: "US lyric", region: "us" },
 
   // Named examples
