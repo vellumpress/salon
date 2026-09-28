@@ -1652,9 +1652,9 @@ test("Tier B batches 1–2 are local format-min binds, never Featured", () => {
     assert.ok(work, id);
     assert.equal(work!.local, true, id);
     assert.equal(isBoundLocal(work!), true, id);
-    assert.equal(curatorialTrack(id), id === "billy-budd" || id === "antic-hay" ? "next" : "later", id);
+    assert.equal(curatorialTrack(id), id === "billy-budd" || id === "antic-hay" || id === "elmer-gantry" ? "next" : "later", id);
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    if (id === "billy-budd" || id === "antic-hay") {
+    if (id === "billy-budd" || id === "antic-hay" || id === "elmer-gantry") {
       assert.equal(existsSync(fileURLToPath(openingUrl(id))), true, id);
     } else {
       assertNoStubOpening(id);

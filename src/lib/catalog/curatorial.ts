@@ -1074,6 +1074,16 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "uncle-silas",
   "rise-of-david-levinsky",
   "for-the-term-of-his-natural-life",
+  // Mira Mon 28 Sep 2026 POST-#188 CLEAR — Death in Venice leads Next. Never Featured.
+  // LEAD kept — not Elmer Gantry, not The Colonel’s Dream, not Hard Times.
+  // Earlier shelf rows for Elmer Gantry and Hard Times keep these slugs and move onto this tail.
+  // The earlier inventory seats the-colonels-dream and the-great-god-pan stay on their own slugs.
+  // The Great God Pan is Rituals (the title novella only), not this tail.
+  // Mon POST-#187 Crime and Punishment and the earlier packs stay ahead.
+  "death-in-venice",
+  "elmer-gantry",
+  "colonels-dream",
+  "hard-times",
 ] as const;
 
 /**

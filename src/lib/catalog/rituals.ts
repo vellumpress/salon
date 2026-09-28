@@ -429,6 +429,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `In the breathless stillness of a tropical afternoon, when the air was hot and heavy, and the sky brazen and cloudless, the shadow of the Malabar lay solitary on the surface of the glittering sea. Book I, Chapter I, The Prison Ship — the Malabar in the tropics, and a poop-deck awning. Skip the Hampstead prologue and the Contents. Marcus Clarke’s 1874 novel. Soft Australia, carefully. This is not My Brilliant Career, and not Kangaroo. This is not Martin Eden in Oakland. The sit is longer, carefully. The Prison Ship is primary. Inventory 70 is medium. No score is invented for this sit.`,
   "bottle-imp":
     `There was a man of the Island of Hawaii, whom I shall call Keawe; for the truth is, he still lives, and his name must be kept secret. This sit is The Bottle Imp only — Keawe in Hawaii, Honaunau, and the Hamakua coast. Skip the Note, the Contents, The Beach of Falesá, and The Isle of Voices. Stop at the end of the story. Robert Louis Stevenson’s 1893 tale. One story this sit. Soft Stevenson, carefully. This is not The Master of Ballantrae. Soft Pacific, carefully. This is not Typee. This is not The Father of Yoto in Limehouse. Inventory 78 is easy. No score is invented for this sit.`,
+  "death-in-venice":
+    `On a spring afternoon of the year 19--, when our continent lay under such threatening weather for whole months, Gustav Aschenbach, or von Aschenbach as his name read officially after his fiftieth birthday, had left his apartment on the Prinzregentenstrasse in Munich and had gone for a long walk. Chapter I — a spring afternoon, the Prinzregentenstrasse, and Aschenbach. Skip the Contents if the phone is tight. Thomas Mann, in Kenneth Burke’s English, 1912. Burke is named in the About only. Soft Mann, carefully. This is not Royal Highness. Soft Italy, carefully. This is not A Room with a View in Florence, not The Emancipated in Naples, and not Leila. Venice is primary after the Munich open. Soft densify, carefully, against Petersburg, Ireland, the Lower East Side, Australia, and Hawaii, and against Normandy, Nebraska, Norway, Nauheim, and Limehouse, and against Folkestone, Brussels, Florence, Oakland, and Paris. The lead is this book, not Elmer Gantry, not The Colonel’s Dream, and not Hard Times. Inventory 76 is medium. No score is invented for this sit.`,
+  "elmer-gantry":
+    `Elmer Gantry was drunk. He was eloquently drunk, lovingly and pugnaciously drunk. He leaned against the bar of the Old Home Sample Room, the most gilded and urbane saloon in Cato, Missouri. Chapter I — Cato, Missouri, the Old Home Sample Room, and a man eloquently drunk. Skip the Contents if the phone is tight. Sinclair Lewis’s 1927 novel. Soft Lewis, carefully. This is not The Job. Soft United States, carefully. This is not The Rise of David Levinsky on the Lower East Side, not My Ántonia in Nebraska, not Sister Carrie in Chicago, and not Martin Eden in Oakland. Inventory 81 is medium. No score is invented for this sit.`,
+  "colonels-dream":
+    `Two gentlemen were seated, one March morning in 189--, in the private office of French and Company, Limited, on lower Broadway. Chapter One — Broadway, French and Company, and an electric clock, then Clarendon in the South. Skip the Cast and the Contents if the phone is tight. Charles W. Chesnutt’s 1905 novel. Soft Chesnutt, carefully. This is not The Marrow of Tradition. Soft United States South, carefully, after Elmer Gantry. The Broadway open is careful after The Rise of David Levinsky. This is not a New York-weighted lead. Clarendon in the South is primary. Inventory 85 is medium. No score is invented for this sit.`,
+  "hard-times":
+    `'NOW, what I want is, Facts. Teach these boys and girls nothing but Facts. Facts alone are wanted in life. Book the First, Chapter I, The One Thing Needful — a Facts school-room and Gradgrind. Skip the table of contents if the phone is tight. Charles Dickens’s 1854 novel. Soft Dickens, carefully. Soft England, carefully. This is not Kipps in Folkestone, not The Father of Yoto in Limehouse, and not Antic Hay. Coketown is primary. Inventory 76 is medium. No score is invented for this sit.`,
+  "great-god-pan":
+    `"I am glad you came, Clarke; very glad indeed. I was not sure you could spare the time." This sit is The Great God Pan only — Clarke and the Experiment. Skip the Contents and the other matter. Stop at the end of the novella. Arthur Machen’s 1894 novella. One novella this sit. Soft Machen, carefully. This is not The Hill of Dreams. Soft London, carefully. This is not The Father of Yoto in Limehouse. This is not The Bottle Imp in Hawaii. Inventory 93 is medium. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1223,6 +1233,15 @@ export const RITUAL_LANES: RitualLane[] = [
       "uncle-silas",
       "rise-of-david-levinsky",
       "for-the-term-of-his-natural-life",
+      // Mira Mon 28 Sep 2026 POST-#188 CLEAR — Death in Venice leads. Never Featured.
+      // LEAD kept — not Elmer Gantry, not The Colonel’s Dream, not Hard Times.
+      // Earlier shelf rows for Elmer Gantry and Hard Times keep these slugs and move onto this tail.
+      // The earlier inventory seats the-colonels-dream and the-great-god-pan stay on their own slugs.
+      // The Great God Pan is Waking up (the title novella only).
+      "death-in-venice",
+      "elmer-gantry",
+      "colonels-dream",
+      "hard-times",
     ],
   },
   {
@@ -1329,6 +1348,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "father-of-yoto",
       // Mira Mon 28 Sep 2026 POST-#187 CLEAR — The Bottle Imp only.
       "bottle-imp",
+      // Mira Mon 28 Sep 2026 POST-#188 CLEAR — The Great God Pan only.
+      "great-god-pan",
     ],
   },
   {
@@ -1576,6 +1597,15 @@ export const RITUAL_LANES: RitualLane[] = [
       "uncle-silas",
       "rise-of-david-levinsky",
       "for-the-term-of-his-natural-life",
+      // Mira Mon 28 Sep 2026 POST-#188 CLEAR — Death in Venice leads. Never Featured.
+      // LEAD kept — not Elmer Gantry, not The Colonel’s Dream, not Hard Times.
+      // Earlier shelf rows for Elmer Gantry and Hard Times keep these slugs and move onto this tail.
+      // The earlier inventory seats the-colonels-dream and the-great-god-pan stay on their own slugs.
+      // The Great God Pan is Waking up (the title novella only).
+      "death-in-venice",
+      "elmer-gantry",
+      "colonels-dream",
+      "hard-times",
     ],
   },
   {
@@ -1822,6 +1852,15 @@ export const RITUAL_LANES: RitualLane[] = [
       "uncle-silas",
       "rise-of-david-levinsky",
       "for-the-term-of-his-natural-life",
+      // Mira Mon 28 Sep 2026 POST-#188 CLEAR — Death in Venice leads. Never Featured.
+      // LEAD kept — not Elmer Gantry, not The Colonel’s Dream, not Hard Times.
+      // Earlier shelf rows for Elmer Gantry and Hard Times keep these slugs and move onto this tail.
+      // The earlier inventory seats the-colonels-dream and the-great-god-pan stay on their own slugs.
+      // The Great God Pan is Waking up (the title novella only).
+      "death-in-venice",
+      "elmer-gantry",
+      "colonels-dream",
+      "hard-times",
     ],
   },
   {
@@ -1896,6 +1935,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "rise-of-david-levinsky": 4,
   "for-the-term-of-his-natural-life": 4,
   "bottle-imp": 12,
+  "death-in-venice": 5,
+  "elmer-gantry": 5,
+  "colonels-dream": 5,
+  "hard-times": 5,
+  "great-god-pan": 12,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
   "all-quiet-on-the-western-front": 2,
