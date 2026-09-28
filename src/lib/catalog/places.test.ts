@@ -33,7 +33,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "the-underdogs": { label: "Mexico — sierra", region: "mx" },
     "diary-of-a-chambermaid": { label: "Paris", region: "fr" },
     "the-painted-veil": { label: "Hong Kong orbit", region: "cn" },
-    "the-good-soldier": { label: "Bad Nauheim", region: "de" },
+    "the-good-soldier": { label: "Nauheim", region: "de" },
     "growth-of-the-soil": { label: "Norway", region: "no" },
     "nada-the-lily": { label: "Zululand", region: "za" },
     "all-quiet-on-the-western-front": { label: "Western Front", region: "fr" },
@@ -160,7 +160,7 @@ test("Locked recommend, Next, and ritual-lane works all resolve a place with a s
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-underdogs"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("diary-of-a-chambermaid"), false);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-painted-veil"), true);
-  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-good-soldier"), false);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("the-good-soldier"), true);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("growth-of-the-soil"), true);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("nada-the-lily"), true);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("all-quiet-on-the-western-front"), true);

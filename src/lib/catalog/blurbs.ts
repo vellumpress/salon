@@ -83,7 +83,7 @@ const BLURBS: Record<string, string> = {
   "the-painted-veil":
     "A shuttered Hong Kong room after tiffin; Kitty whispers Walter, and the sit stays in Chapter I.",
   "the-good-soldier":
-    "Nine seasons at Bad Nauheim — intimacy like a good glove, and still they knew nothing.",
+    "This is the saddest story: nine seasons with the Ashburnhams at Nauheim.",
   "growth-of-the-soil":
     "Red-beard Isak carries the first sack up the long moor road. Worster’s English; the period word Lapp stays named for Sámi herders.",
   "nada-the-lily":
@@ -245,7 +245,13 @@ const BLURBS: Record<string, string> = {
   "winesburg-ohio":
     "A Midwest town speaks in grotesques — people who almost said the true thing.",
   "my-antonia":
-    "Nebraska prairie, immigrant labor, and a girl who outlasts the men who remember her.",
+    "Jim Burden first hears of Ántonia on the long journey across the midland plain to his Nebraska grandparents.",
+  "une-vie":
+    "Rain gutters roar through the deserted streets, and Jeanne is free of the convent in Normandy.",
+  "look-back-on-happiness":
+    "The narrator has gone to the forest, away from overfed success and into a hair-shirt.",
+  "father-of-yoto":
+    "Marigold Vassiloff and Tai Ling meet on West India Dock Road under a carnival moon.",
   "o-pioneers":
     "Alexandra Bergson stays with the land when everyone else wants to leave it.",
   "death-comes-for-the-archbishop":

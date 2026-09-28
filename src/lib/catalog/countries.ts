@@ -257,6 +257,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Guillaume Apollinaire",
     "Gustave Flaubert",
     "Guy de Maupassant",
+    "Guy de Maupassant (trans. Albert M. C. McMaster / A. E. Henderson)",
     "Henri Barbusse",
     "Honoré de Balzac",
     "Honoré de Balzac (trans. James Waring)",
@@ -462,7 +463,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Émile Verhaeren (tr. Alma Strettell)",
   ],
   Sweden: ["August Strindberg", "August Strindberg (trans. Ellie Schleussner)", "Hjalmar Söderberg (tr. Charles Wharton Stork)", "Selma Lagerlöf"],
-  Norway: ["Alexander Kielland", "Bjørnstjerne Bjørnson", "Henrik Ibsen", "Johan Bojer", "Jonas Lie", "Jonas Lie (trans. Samuel Coffin Eastman)", "Knut Hamsun", "Knut Hamsun (tr. W. W. Worster)", "Knut Hamsun (trans. George Egerton)", "Sigrid Undset"],
+  Norway: ["Alexander Kielland", "Bjørnstjerne Bjørnson", "Henrik Ibsen", "Johan Bojer", "Jonas Lie", "Jonas Lie (trans. Samuel Coffin Eastman)", "Knut Hamsun", "Knut Hamsun (tr. W. W. Worster)", "Knut Hamsun (trans. George Egerton)", "Knut Hamsun (trans. Paula Wiking)", "Sigrid Undset"],
   Denmark: ["Henrik Pontoppidan", "J. P. Jacobsen", "J. P. Jacobsen (trans. Anna Grabow)", "Jens Peter Jacobsen", "Martin Andersen Nexø"],
   Finland: ["Aleksis Kivi", "Aleksis Kivi (tr. Alex Matson)", "Elias Lönnrot", "Johannes Linnankoski"],
   Greece: [
@@ -610,6 +611,10 @@ const WORK_COUNTRY: Record<string, string> = {
   "nada-the-lily": "South Africa",
   "the-painted-veil": "United Kingdom",
   "the-good-soldier": "United Kingdom",
+  "une-vie": "France",
+  "my-antonia": "United States",
+  "look-back-on-happiness": "Norway",
+  "father-of-yoto": "United Kingdom",
   "growth-of-the-soil": "Norway",
   // Folklore / anonymous / compiled
   njala: "Iceland",

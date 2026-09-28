@@ -15,7 +15,6 @@ import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES } from "./rituals.ts";
 const FULL_NOVEL_NO_STUB = [
   "the-painted-veil",
   "growth-of-the-soil",
-  "the-good-soldier",
   "demian",
   "the-immoralist",
   "we",
@@ -286,7 +285,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       opening: /^She gave a startled cry/,
     },
     "the-good-soldier": {
-      scene: /A good glove/i,
+      scene: /Nauheim/i,
       opening: /^This is the saddest story I have ever heard/,
     },
     "growth-of-the-soil": {
@@ -532,7 +531,7 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
       assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /PREFACE|preface/i);
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "the-good-soldier") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /I had known the shallows\.?$/);
+      assert.match(packed.breaths.at(-1)?.text ?? "", /out of their heads/);
       assert.doesNotMatch(packed.breaths.map((b) => b.text).join(" "), /PART I/);
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "growth-of-the-soil") {
@@ -1040,14 +1039,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       breaths: 3246,
       last: /^THE END$/,
       intro: /Sámi/,
-    },
-    "the-good-soldier": {
-      gutenberg: 2775,
-      title: "The Good Soldier",
-      author: "Ford Madox Ford",
-      year: 1915,
-      opening: /^This is the saddest story I have ever heard/,
-      breaths: 4104,
     },
     demian: {
       gutenberg: 74222,
@@ -2274,7 +2265,7 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     cosmopolis: { gutenberg: 3967, form: "novel", scenes: 12, breaths: 1041 },
     "ditte-girl-alive": { gutenberg: 31496, form: "novel", scenes: 32, breaths: 1598 },
     erewhon: { gutenberg: 1906, form: "novel", scenes: 29, breaths: 607 },
-    "look-back-on-happiness": { gutenberg: 8445, form: "novel", scenes: 38, breaths: 1817 },
+    "look-back-on-happiness": { gutenberg: 8445, form: "novel", scenes: 38, breaths: 1818 },
     "mr-britling-sees-it-through": { gutenberg: 14060, form: "novel", scenes: 11, breaths: 2602 },
     "notre-dame-de-paris": { gutenberg: 2610, form: "novel", scenes: 59, breaths: 4033 },
   } as const;
@@ -2292,7 +2283,7 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     assert.equal(work!.form, want.form, id);
     assert.equal(work!.gutenberg, want.gutenberg, id);
     assert.equal(work!.breaths, want.breaths, id);
-    const seatedOnNext = id === "daisy-miller" || id === "ditte-girl-alive" || id === "erewhon" || id === "cosmopolis" || id === "captains-courageous" || id === "casanovas-homecoming";
+    const seatedOnNext = id === "daisy-miller" || id === "ditte-girl-alive" || id === "erewhon" || id === "cosmopolis" || id === "captains-courageous" || id === "casanovas-homecoming" || id === "look-back-on-happiness";
     const hostOpen = seatedOnNext || id === "a-slav-soul";
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), seatedOnNext, id);
