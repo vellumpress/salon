@@ -1415,6 +1415,17 @@ html.together-compose.together-kb .chat-slot {
   mask-image: linear-gradient(transparent 0%, #000 18%);
 }
 
+.section-break {
+  display: flex;
+  justify-content: center;
+  margin: 0.85rem 0 0.35rem;
+  color: currentColor;
+  opacity: 0.55;
+  letter-spacing: 0.42em;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
 .look-line,
 .breath-now {
   margin: 0;

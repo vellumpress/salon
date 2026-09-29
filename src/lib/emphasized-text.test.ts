@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { splitEmphasis } from "./emphasized-text.ts";
+import { isSectionBreak, splitEmphasis } from "./emphasized-text.ts";
 
 test("underscore, star, and em markup become italic parts", () => {
   for (const text of [
@@ -40,4 +40,22 @@ test("unpaired emphasis marks are dropped and paired italics stay", () => {
     { type: "em", value: "this" },
     { type: "text", value: " star" },
   ]);
+});
+
+test("em dashes and double em dashes stay dashes", () => {
+  for (const text of ["a pause — then", "the blanks (——) stay", "—— and — together"]) {
+    assert.equal(
+      splitEmphasis(text).map((part) => part.value).join(""),
+      text,
+    );
+    assert.equal(isSectionBreak(text), false);
+  }
+});
+
+test("asterisk rows are section breaks, not italics", () => {
+  for (const text of ["* * *", "* * * * *", "  ***  "]) {
+    assert.equal(isSectionBreak(text), true, text);
+  }
+  assert.equal(isSectionBreak("*this*"), false);
+  assert.equal(isSectionBreak("keep *this* star"), false);
 });

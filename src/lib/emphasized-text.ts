@@ -5,6 +5,16 @@ export type EmphasisPart =
 /** PG `_italics_`, markdown `*italics*`, or `<em>` → parts. */
 const EMPHASIS_RE = /<em>([\s\S]*?)<\/em>|_([^_\n]+)_|\*([^*\n]+)\*/g;
 
+/**
+ * A printed scene break (`* * *`, or the house `* * * * *`).
+ * Asterisks here are the ornament, not italics and not a strikethrough.
+ */
+const SECTION_BREAK_RE = /^(?:\*\s*){2,}\*$/;
+
+export function isSectionBreak(text: string) {
+  return SECTION_BREAK_RE.test(text.trim());
+}
+
 /** Leftover emphasis marks that never found a mate (`house_.`, a lone opening `_`). */
 function stripUnpairedMarks(value: string) {
   return value.replace(/[_*]/g, "");

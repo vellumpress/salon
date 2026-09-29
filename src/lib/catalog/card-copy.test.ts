@@ -149,6 +149,11 @@ test("known origin overrides", () => {
     krakatit: "Czechia",
     "the-peasants": "Poland",
     cane: "United States",
+    "a-farewell-to-arms": "United States",
+    "alice-adams": "United States",
+    quartet: "France",
+    "song-of-songs-sudermann": "Germany",
+    "its-wavering-image": "United States",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);

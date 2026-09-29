@@ -1,0 +1,281 @@
+{
+  "id": "song-of-songs-sudermann",
+  "title": "The Song of Songs",
+  "author": "Hermann Sudermann (trans. Thomas Seltzer)",
+  "year": "1909",
+  "note": "Project Gutenberg 34791 (tr. Thomas Seltzer, per PG). Whole novel (Part I Ch I–XXIII, Part II Ch I–XXII; labelled 'Part I · Chapter n' / 'Part II · Chapter n' so no title repeats). Producer line, the 1926 Viking title page and the printing history out. Host: Part I · Ch I — \"Lilly was fourteen years old when her father…\" (whole chapter). EN 1909 (copyright 1909, published November 20, 1909, per the PG text; published in Germany November 21, 1908; this is the 1926 Viking printing). PG reading-ease 81.4 — no invented Launch rank. Place: Germany (a garrison town and a West Prussian estate → Berlin). Long (~12 h) — carefully. Sits: unwind / before sleep. Host intro: A few things to know going in. This is a long read, about twelve hours. It is frank, for 1908, about seduction, adultery and a woman kept by one man after another. And it carries the period's antisemitic phrasing and one racial slur in a story someone tells. Those are the book's attitudes, not ours. The chapters are labelled Part I and Part II because the numbering starts again.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Chapter I · The music-master's flight · Germany (garrison town)",
+      "place": "Part I · Chapter I · The music-master's flight · Germany (garrison town)",
+      "reentry": "Lilly was fourteen years old when her father, Kilian Czepanek, the music-master, suddenly disappeared.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Lilly was fourteen years old when her father, Kilian Czepanek, the music-master, suddenly disappeared."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "It happened in this way. He had been giving piano lessons the whole day, in the interim swearing and drinking Moselle and Selters, for it was intensely hot. Occasionally he had slipped into the dining-room to take a cognac or arrange his Windsor necktie. He had pulled Lilly's brown curls as she sat labouring over her French vocabulary, and had disappeared again into the best room, where the girl pupils changed from hour to hour, and only the dissonances and the curses remained."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "When the last victim had stumbled through her lesson and closed the hall door behind her, Czepanek failed to reappear in his usual bad temper and with his usual appetite. He remained in the front room, where this day he neither whistled nor whined nor played out his rage on the keyboard, as he sometimes did after a day's labour. In fact, he gave scarcely a sign of life. Now and then a deep sigh—that was all."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Lilly, who took warm interest in everything her handsome father did or did not do, let her French textbook slip from her lap, and stole up to the keyhole."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Through it she saw him standing before the large pier-glass, absorbed in a close study of himself. From time to time he raised his left hand and pressed it as if in despair against his soft, silky, dark artist's curls, which Lilly's mother devotedly fostered every day with bay-rum and French oils."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "He and his reflection gazed at each other's moist red face with wild, eager eyes, and Lilly's heart expanded in love of her adored papa."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "To Lilly his standing before the mirror was a familiar sight. It was his manner of squaring accounts for his lost life and wasted love, his manner of charming back the great world, in which duchesses and prima donnas yearningly cherished the memory of their vanished idol."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "He stood there like an elderly god of love, with small alcoholic puffs under his eyes, and a tendency toward a paunch."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Both mama and Lilly cared for him with unremitting zeal. They regarded him as a sort of bird of paradise, who by a lucky chance had been caught between the walls of a room, and who required the greatest effort, the utmost circumspection, to keep him safe in the cage."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "By right, Lilly should long ago have been sitting at the piano, for in the house of Czepanek a quiet keyboard was a waste of time and a sin before the Lord. She had to practice four or five hours every day. Often when her father was seized by the holy spirit of creativeness and forgot the time set aside for her practicing, she did not begin until nearly midnight. Then she sat at the piano frozen, with heavy eyes, striking out in all directions until the small hours of the morning. Sometimes her mother found her the next day lying with her arms crossed on the keyboard in that profound child's sleep from which there is almost no rousing."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Thus it happened that she cared little for the artistic future for which her father's ambition had destined her. She preferred to dally with some old forbidden book, and often drove her father to despair by a false pretence at cleverness in playing at first sight. But to-day she had the Sonata Pathetique to do, and there is no trifling with that, as any babe in arms knows."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "So she was just about to interrupt her father as he stood there plunged in dreamy self-observation, when she heard a click at the door from the kitchen. She bounded away from the keyhole with one great leap of her long legs, and the next instant her mother entered, carrying the supper dishes."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "The mother's prematurely faded cheeks were now glowing from the heat of the kitchen fire. She held her lean figure erect, taut as a whip cord, which seemed to be tied in a knot at the abdomen by a protrusion, the result of abortive child-bearing. Dull marital sorrow had long ago transformed her eyes, once beautiful, into two lustreless slits. But at this moment they were beaming with pride and expectation."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "For to-day Mrs. Czepanek hoped to satisfy her lord and his palate."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "At the clatter of the plates on the table, the door to the parlour opened, and papa's dark curly head, about which the evening sunlight cast a halo, appeared in the bright opening."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"The deuce, supper already?\" he said, and his eyes wandered with a peculiar, confused gaze."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"In ten minutes,\" the mother replied, joy at the surprise in store for him playing about her parched, chapped lips like secret bliss."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "He entered the room, took a few deep breaths, and said with the air of a man to whom speech comes hard:"
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"I've just noticed that one of the straps of my hand-bag is torn.\""
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"Why, do you want it?\" asked his wife."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"One's hand-bag must always be kept in readiness,\" he answered, his eyes continuing to rove about the room. \"Suppose I were suddenly to be called to act as substitute somewhere. I must have my bag ready.\""
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "As a matter of fact, he had been called upon the previous winter to take the place of a Berlin virtuoso, who had undertaken to \"do\" the towns in eastern Germany and whose train had been snow-bound near Bromberg. The committee telegraphed to papa requesting him to play in his stead. But now, in midsummer, when the concert season was dead, such an emergency was scarcely within the realm of the possible."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"I'll tell Minna to take it to the saddler's right after supper,\" said mama, who took good care not to contradict her choleric husband."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "He nodded meditatively and walked into his bedroom, while the mother ran to the kitchen to do the final honours in her own person to the titbit she had prepared for him."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "A few minutes later he returned with the bag in his hand. It looked rather bulgy. He stopped before the linen chest."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"Lilly, dear,\" he said, \"I wonder whether the score would go into the grip crosswise? In case I am called to a concert, you know—\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "The score of the Song of Songs was kept in the linen chest, so that, should fire break out during papa's absence, anyone in the family might easily get at this greatest of treasures."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "Lilly looked for the keys, but could not find them."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "\"I'll go ask mama,\" she said."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"No, no,\" he cried hastily, and a shiver went through his body, such as Lilly had often noticed when mother was mentioned to him. \"I'll first take this old thing to the saddler.\""
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "Lilly was shocked at the idea that her celebrated father should himself go to the saddler's dingy workshop."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "\"Mercy!\" she cried, and reached out for the handle of the bag. She would take it to the saddler herself."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "But he warded her off."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "\"You're too grown up now for such things, my girl,\" he said, and his eyes lighted up as they scanned her tall, virginal body, her hips and bosom, already beginning to show delicate curves. \"Why, you're almost a *signora*.\""
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "He patted her cheeks and pulled a little at the lock of the linen chest, gnawing his lips the while in intense bitterness. Then suddenly he shook himself, and with a shy, contemptuous look toward the kitchen—Lilly knew that look, too—went quickly out of the room."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "He went and never came back."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "* * * * *"
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "The night following that red summer evening remained graven in Lilly's memory hour by hour."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "Her mother sat on the window-sill in her nightgown, and her fervid, anxious eyes kept glancing up and down the street. Whenever she heard steps at a distance knocking on the pavement, she would start and cry:"
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "\"There he is.\""
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "Lilly felt there was no need to bother about the Pathetique to-day. A dull oppression in her left breast determined her to turn to St. Joseph, to whom she had stood in tender relations since her confirmation. She had already passed many a dreamy, idle hour before his altar at St. Anne's—right front, second chapel—and secretly sent up many an abstract sigh to the dear, good face with the beautiful beard. But to-night he failed her utterly. She could get no consolation from him, and vexed and disillusioned, she dismissed him."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "At twelve o'clock the last vehicle passed the house."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "At one the pedestrians, too, grew less frequent."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "At half-past two a dusty wind arose, smelling of sand and threatening to blow out the lamp."
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "Between two and three only the night watchman was heard shuffling along the narrow, echoing street."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "At three the early delivery wagons began to rattle, and it grew light."
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "Between three and four Lilly prepared a boiling hot cup of coffee for her mother, and ate up all the cold supper. Long waiting and crying had made her ravenously hungry."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "Between four and five a band of young night revellers passed by, throwing kisses to her mother, and when their importunities forced her to withdraw from the window they serenaded her. Fine, pure voices, Lilly had to admit despite her grief; rendition good and precise, without that pedantic stop-like effect which papa so detested in the singing societies. Perhaps they were even pupils of his who did not know his residence."
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "Scarcely were they gone when the mother was again at her post."
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "Lilly struggled against sleep."
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "She saw as through a veil the thin blond hair waving over her mother's forehead in the morning breeze, saw the pointed nose, red with weeping, turn now to the right, now to the left, according to the direction from which a sound came; saw the nightgown fluttering like a white flag, and the lean legs incessantly rubbing against each other in nervous agitation. Then she had to retell, perhaps for the hundredth time, the story of the hand-bag and the linen chest, but her eyes closed."
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "And then suddenly she started up with a cry; her mother had dropped back in a swoon, and lay supine on the floor like a log of wood."
+    }
+  ]
+}

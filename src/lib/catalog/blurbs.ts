@@ -531,6 +531,16 @@ const BLURBS: Record<string, string> = {
     "Nina Balatka of Prague loves a Jew, and the city’s prejudice is the story.",
   "la-lupa":
     "The village calls her the she-wolf, and this one Sicilian story ends on an axe.",
+  "a-farewell-to-arms":
+    "In the late summer of that year they lived in a village across the river from the mountains.",
+  "alice-adams":
+    "An old-fashioned patient hates the open windows, and the Midwestern night is already turning toward Alice.",
+  "quartet":
+    "Marya Zelli leaves the Café Lavenue at half-past five, and Montparnasse is where the sit turns.",
+  "song-of-songs-sudermann":
+    "Lilly was fourteen when the music-master disappeared, and the road runs from a garrison town to Berlin.",
+  "its-wavering-image":
+    "Pan, half white and half Chinese, keeps her father’s bazaar on Dupont Street until the story comforts her.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",
