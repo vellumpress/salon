@@ -52,6 +52,8 @@ export interface P2PRoomOptions {
   onMessage?: (from: string, data: unknown, channel: "state" | "reliable") => void;
   /** Fires once, on the first successful signaling poll (registration). */
   onConnected?: () => void;
+  /** Signaling route is missing (static Pages 404/405). Stop polling. */
+  onUnavailable?: () => void;
 }
 
 interface PeerSlot {
@@ -143,6 +145,7 @@ export class P2PRoom {
     if (this.pingTimer) clearInterval(this.pingTimer);
     for (const slot of this.peers.values()) slot.pc.close();
     this.peers.clear();
+    if (this.signalingGone) return;
     // Leaving the roster is the teardown broadcast: everyone's next poll
     // drops this peer and closes their side of the pair.
     void fetch(rtcHref(), {
@@ -210,6 +213,7 @@ export class P2PRoom {
     if (this.closed) return;
     if (res.status === 404 || res.status === 405) {
       this.signalingGone = true;
+      this.opts.onUnavailable?.();
       throw new Error(`signaling poll failed: ${res.status}`);
     }
     if (!res.ok) throw new Error(`signaling poll failed: ${res.status}`);

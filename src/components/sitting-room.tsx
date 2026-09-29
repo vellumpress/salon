@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { useP2PRoom, type PeerInfo } from "@/lib/multiplayer";
+import { ComingSoon } from "@/components/coming-soon";
 import { fillClass, hashSeed, type Fill } from "@/lib/mondrian";
 import { HoldLeave } from "@/components/hourglass";
+import { liveBackendEnabled } from "@/lib/site";
 import { enterTogetherCompose, exitTogetherCompose } from "@/lib/vvh";
 import { cn } from "@/lib/utils";
 
@@ -152,7 +154,11 @@ export function useSittingLock(onLeave: () => void) {
 }
 
 export function useSittingChat(pair: string, place: string, breathIndex: number) {
-  const p2p = useP2PRoom({ room: `sit-${pair}`.slice(0, 64), name: "" });
+  const p2p = useP2PRoom({
+    room: `sit-${pair}`.slice(0, 64),
+    name: "",
+    enabled: liveBackendEnabled,
+  });
   const [lines, setLines] = useState<ChatLine[]>([]);
   const [here, setHere] = useState<Record<string, HereNote>>({});
   const [draft, setDraft] = useState("");
@@ -265,6 +271,7 @@ export function useSittingChat(pair: string, place: string, breathIndex: number)
     selfId: p2p.selfId,
     peers: p2p.peers,
     joined: p2p.joined,
+    unavailable: !liveBackendEnabled || p2p.unavailable,
     lines,
     here,
     draft,
@@ -327,7 +334,9 @@ export function TogetherShell({
   }, []);
 
   const present = chat.peers.filter((peer) => isPresent(peer, chat.here, chat.lines));
-  const status = presenceLabel(chat.joined, present.length, chat.peers, offline);
+  const status = chat.unavailable
+    ? ""
+    : presenceLabel(chat.joined, present.length, chat.peers, offline);
   const elsewhere = [
     ...new Set(
       present
@@ -363,12 +372,17 @@ export function TogetherShell({
                 />
               ))
             : null}
-          {status ? (
+          {chat.unavailable ? (
+            <span className="type-kicker">Coming soon</span>
+          ) : status ? (
             <span className="type-kicker text-muted">{status}</span>
           ) : null}
         </div>
       </header>
       {children}
+      {chat.unavailable ? (
+        <ComingSoon detail="A live room with a friend is coming soon. This page is still yours to read." />
+      ) : (
       <div
         ref={dockRef}
         className="together-dock"
@@ -419,6 +433,7 @@ export function TogetherShell({
           </button>
         </form>
       </div>
+      )}
     </>
   );
 }

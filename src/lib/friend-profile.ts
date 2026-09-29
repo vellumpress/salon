@@ -185,6 +185,8 @@ export function friendProfile(rawHandle: string, graph: FriendGraph): FriendProf
   const self = normalizeHandle(graph.selfHandle);
   const isSelf = Boolean(self) && handle === self;
   const contact = graph.contacts.find((row) => row.handle === handle);
+  const followed = isFollowed(handle, graph.following);
+  if (!isSelf && !contact && !followed && !knownPeople(graph).has(handle)) return null;
   const name = displayName(handle, graph, contact);
   const current = readingNow(handle, graph, isSelf, contact);
   const activity = collectActivity(handle, graph, isSelf)

@@ -32,6 +32,48 @@ function emailRedirectTo() {
   return `${window.location.origin}${withBase("/login")}`;
 }
 
+export const RESET_EMAIL_SUCCESS =
+  "If an account exists for that email, a reset link is on its way.";
+
+export const RESET_EMAIL_RATE = "Too many requests, try again in a bit";
+
+export type ResetEmailNotice = { tone: "success" | "rate"; text: string };
+
+/** Neutral success unless Supabase is rate-limiting the reset mail. */
+export function resetEmailNotice(
+  error: { code?: string; message?: string } | null | undefined,
+): ResetEmailNotice {
+  const code = error?.code ?? "";
+  const message = error?.message ?? "";
+  if (code === "over_email_send_rate_limit" || /over_email_send_rate_limit|rate limit/i.test(`${code} ${message}`)) {
+    return { tone: "rate", text: RESET_EMAIL_RATE };
+  }
+  return { tone: "success", text: RESET_EMAIL_SUCCESS };
+}
+
+export type RecoveryLinkKind = "pending" | "invalid";
+
+/**
+ * Recovery links arrive as `#access_token&type=recovery` (implicit, kept by
+ * the Pages 404 shim) or `?code=` (PKCE). Anything else is not a live link.
+ */
+export function recoveryLinkKind(search: string, hash: string): RecoveryLinkKind {
+  const query = new URLSearchParams(search.startsWith("?") ? search.slice(1) : search);
+  const hashParams = new URLSearchParams(hash.startsWith("#") ? hash.slice(1) : hash);
+  const errorCode =
+    query.get("error_code") || query.get("error") || hashParams.get("error_code") || hashParams.get("error");
+  if (errorCode) return "invalid";
+  if (hashParams.get("type") === "recovery" && hashParams.get("access_token")) return "pending";
+  if (query.get("code")) return "pending";
+  return "invalid";
+}
+
+/** Don't sign the recovery session out while the new password is being set. */
+export function shouldPreserveRecoverySession(event: string | null | undefined, pathname: string) {
+  if (event === "PASSWORD_RECOVERY") return true;
+  return pathname.replace(/\/+$/, "").endsWith("/reset-password");
+}
+
 export function isNetworkError(error: unknown) {
   if (error instanceof TypeError) return true;
   const message = error instanceof Error ? error.message : String(error ?? "");

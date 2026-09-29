@@ -26,6 +26,13 @@ test("reader turns underscore emphasis into italic markup", () => {
   assert.match(reader, /<em key=\{i\}>/);
 });
 
+test("a tap on the reading text brings the Keep bar back", () => {
+  assert.match(reader, /data-reader-text/);
+  assert.match(reader, /data-turn/);
+  assert.match(reader, /closest\("\[data-reader-text\]"\)/);
+  assert.match(reader, /setStill\(false\)/);
+});
+
 test("reader mark always keeps You linked to /profile", () => {
   const header = reader.slice(
     reader.indexOf("reader-mark relative"),

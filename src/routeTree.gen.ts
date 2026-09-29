@@ -15,6 +15,7 @@ import { Route as ClubsRouteImport } from './routes/clubs'
 import { Route as CuratedRouteImport } from './routes/curated'
 import { Route as CuratorRouteImport } from './routes/curator'
 import { Route as DeskRouteImport } from './routes/desk'
+import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
 import { Route as FormRouteImport } from './routes/form'
 import { Route as FriendsRouteImport } from './routes/friends'
 import { Route as GlassRouteImport } from './routes/glass'
@@ -22,6 +23,7 @@ import { Route as LoginRouteImport } from './routes/login'
 import { Route as MapRouteImport } from './routes/map'
 import { Route as PageRouteImport } from './routes/page'
 import { Route as ProfileRouteImport } from './routes/profile'
+import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as RitualsRouteImport } from './routes/rituals'
 import { Route as ShuffleRouteImport } from './routes/shuffle'
 import { Route as StoresRouteImport } from './routes/stores'
@@ -71,6 +73,11 @@ const DeskRoute = DeskRouteImport.update({
   path: '/desk',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
+  id: '/forgot-password',
+  path: '/forgot-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FormRoute = FormRouteImport.update({
   id: '/form',
   path: '/form',
@@ -104,6 +111,11 @@ const PageRoute = PageRouteImport.update({
 const ProfileRoute = ProfileRouteImport.update({
   id: '/profile',
   path: '/profile',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResetPasswordRoute = ResetPasswordRouteImport.update({
+  id: '/reset-password',
+  path: '/reset-password',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RitualsRoute = RitualsRouteImport.update({
@@ -204,6 +216,7 @@ export interface FileRoutesByFullPath {
   '/curated': typeof CuratedRoute
   '/curator': typeof CuratorRoute
   '/desk': typeof DeskRoute
+  '/forgot-password': typeof ForgotPasswordRoute
   '/form': typeof FormRoute
   '/friends': typeof FriendsRoute
   '/glass': typeof GlassRoute
@@ -211,6 +224,7 @@ export interface FileRoutesByFullPath {
   '/map': typeof MapRoute
   '/page': typeof PageRoute
   '/profile': typeof ProfileRouteWithChildren
+  '/reset-password': typeof ResetPasswordRoute
   '/rituals': typeof RitualsRoute
   '/shuffle': typeof ShuffleRoute
   '/stores': typeof StoresRoute
@@ -237,12 +251,14 @@ export interface FileRoutesByTo {
   '/curated': typeof CuratedRoute
   '/curator': typeof CuratorRoute
   '/desk': typeof DeskRoute
+  '/forgot-password': typeof ForgotPasswordRoute
   '/form': typeof FormRoute
   '/friends': typeof FriendsRoute
   '/glass': typeof GlassRoute
   '/login': typeof LoginRoute
   '/map': typeof MapRoute
   '/page': typeof PageRoute
+  '/reset-password': typeof ResetPasswordRoute
   '/rituals': typeof RitualsRoute
   '/shuffle': typeof ShuffleRoute
   '/stores': typeof StoresRoute
@@ -270,6 +286,7 @@ export interface FileRoutesById {
   '/curated': typeof CuratedRoute
   '/curator': typeof CuratorRoute
   '/desk': typeof DeskRoute
+  '/forgot-password': typeof ForgotPasswordRoute
   '/form': typeof FormRoute
   '/friends': typeof FriendsRoute
   '/glass': typeof GlassRoute
@@ -277,6 +294,7 @@ export interface FileRoutesById {
   '/map': typeof MapRoute
   '/page': typeof PageRoute
   '/profile': typeof ProfileRouteWithChildren
+  '/reset-password': typeof ResetPasswordRoute
   '/rituals': typeof RitualsRoute
   '/shuffle': typeof ShuffleRoute
   '/stores': typeof StoresRoute
@@ -305,6 +323,7 @@ export interface FileRouteTypes {
     | '/curated'
     | '/curator'
     | '/desk'
+    | '/forgot-password'
     | '/form'
     | '/friends'
     | '/glass'
@@ -312,6 +331,7 @@ export interface FileRouteTypes {
     | '/map'
     | '/page'
     | '/profile'
+    | '/reset-password'
     | '/rituals'
     | '/shuffle'
     | '/stores'
@@ -338,12 +358,14 @@ export interface FileRouteTypes {
     | '/curated'
     | '/curator'
     | '/desk'
+    | '/forgot-password'
     | '/form'
     | '/friends'
     | '/glass'
     | '/login'
     | '/map'
     | '/page'
+    | '/reset-password'
     | '/rituals'
     | '/shuffle'
     | '/stores'
@@ -370,6 +392,7 @@ export interface FileRouteTypes {
     | '/curated'
     | '/curator'
     | '/desk'
+    | '/forgot-password'
     | '/form'
     | '/friends'
     | '/glass'
@@ -377,6 +400,7 @@ export interface FileRouteTypes {
     | '/map'
     | '/page'
     | '/profile'
+    | '/reset-password'
     | '/rituals'
     | '/shuffle'
     | '/stores'
@@ -404,6 +428,7 @@ export interface RootRouteChildren {
   CuratedRoute: typeof CuratedRoute
   CuratorRoute: typeof CuratorRoute
   DeskRoute: typeof DeskRoute
+  ForgotPasswordRoute: typeof ForgotPasswordRoute
   FormRoute: typeof FormRoute
   FriendsRoute: typeof FriendsRoute
   GlassRoute: typeof GlassRoute
@@ -411,6 +436,7 @@ export interface RootRouteChildren {
   MapRoute: typeof MapRoute
   PageRoute: typeof PageRoute
   ProfileRoute: typeof ProfileRouteWithChildren
+  ResetPasswordRoute: typeof ResetPasswordRoute
   RitualsRoute: typeof RitualsRoute
   ShuffleRoute: typeof ShuffleRoute
   StoresRoute: typeof StoresRoute
@@ -473,6 +499,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DeskRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/forgot-password': {
+      id: '/forgot-password'
+      path: '/forgot-password'
+      fullPath: '/forgot-password'
+      preLoaderRoute: typeof ForgotPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/form': {
       id: '/form'
       path: '/form'
@@ -520,6 +553,13 @@ declare module '@tanstack/react-router' {
       path: '/profile'
       fullPath: '/profile'
       preLoaderRoute: typeof ProfileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reset-password': {
+      id: '/reset-password'
+      path: '/reset-password'
+      fullPath: '/reset-password'
+      preLoaderRoute: typeof ResetPasswordRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/rituals': {
@@ -671,6 +711,7 @@ const rootRouteChildren: RootRouteChildren = {
   CuratedRoute: CuratedRoute,
   CuratorRoute: CuratorRoute,
   DeskRoute: DeskRoute,
+  ForgotPasswordRoute: ForgotPasswordRoute,
   FormRoute: FormRoute,
   FriendsRoute: FriendsRoute,
   GlassRoute: GlassRoute,
@@ -678,6 +719,7 @@ const rootRouteChildren: RootRouteChildren = {
   MapRoute: MapRoute,
   PageRoute: PageRoute,
   ProfileRoute: ProfileRouteWithChildren,
+  ResetPasswordRoute: ResetPasswordRoute,
   RitualsRoute: RitualsRoute,
   ShuffleRoute: ShuffleRoute,
   StoresRoute: StoresRoute,

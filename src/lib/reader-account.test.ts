@@ -10,6 +10,7 @@ import {
   READER_ACCOUNT_KEY,
   renameVaultHandle,
   sessionFromVault,
+  rehashVaultPassword,
   signInReaderAccount,
   signOutReaderVault,
   takenHandlesForSignup,
@@ -137,6 +138,30 @@ test("parseVault restores a hard-refresh session and drops a stale one", () => {
   assert.equal(parseVault('{"accounts":[],"sessionEmail":"ghost@x.com"}').sessionEmail, null);
   assert.equal(parseVault("not-json").accounts.length, 0);
   assert.equal(READER_ACCOUNT_KEY, "salon-reader-v1");
+});
+
+test("rehashVaultPassword lets the new password sign in", async () => {
+  const created = await createReaderAccount(
+    { handle: "mina", email: "mina@example.com", password: "sitquietly" },
+    emptyVault(),
+  );
+  assert.equal(created.ok, true);
+  if (!created.ok) return;
+  const next = await rehashVaultPassword(signOutReaderVault(created.vault), "Mina@example.com", "newsecret");
+  const oldPassword = await signInReaderAccount(
+    { email: "mina@example.com", password: "sitquietly" },
+    next,
+  );
+  assert.equal(oldPassword.ok, false);
+  if (!oldPassword.ok) assert.equal(oldPassword.error, "That password does not match.");
+  const signed = await signInReaderAccount(
+    { email: "mina@example.com", password: "newsecret" },
+    signOutReaderVault(next),
+  );
+  assert.equal(signed.ok, true);
+  if (!signed.ok) return;
+  assert.equal(signed.session.handle, "mina");
+  assert.equal(signed.vault.sessionEmail, "mina@example.com");
 });
 
 test("renameVaultHandle updates only the signed-in account", () => {

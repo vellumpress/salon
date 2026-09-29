@@ -206,13 +206,14 @@ test("another person only shows what a shared sit or note brought in", () => {
   assert.equal(handles.includes("nora"), false);
 });
 
-test("an unknown handle opens an empty profile instead of invented activity", () => {
+test("an unknown handle is not a profile", () => {
   const profile = friendProfile("ada", emptyGraph({ selfHandle: "meghan" }));
-  assert.ok(profile);
-  assert.equal(profile.activity.length, 0);
-  assert.equal(profile.readingNow, undefined);
+  assert.equal(profile, null);
   assert.equal(listFriends(emptyGraph({ selfHandle: "meghan" })).some((row) => row.handle === "ada"), false);
   assert.equal(friendProfile("a", emptyGraph()), null);
+  const followed = friendProfile("nora", emptyGraph({ selfHandle: "meghan", following: ["nora"] }));
+  assert.ok(followed);
+  assert.equal(followed.activity.length, 0);
 });
 
 test("no real friends is just this device", () => {

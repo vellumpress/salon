@@ -67,7 +67,6 @@ export const Route = createRootRoute({
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "preload", href: FONT_HREF, as: "style" },
-      { rel: "manifest", href: withBase("/__grok/manifest.webmanifest") },
       { rel: "manifest", href: withBase("/manifest.webmanifest") },
       { rel: "apple-touch-icon", href: withBase("/icon-180.png") },
       { rel: "apple-touch-icon", sizes: "192x192", href: withBase("/icon-192.png") },

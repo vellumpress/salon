@@ -265,6 +265,48 @@ export function renameVaultHandle(vault: ReaderVault, handle: string): ReaderVau
   };
 }
 
+/**
+ * After a hosted password reset, the phone vault must accept the new password.
+ * Replaces the stored PBKDF2 hash and opens the session for that email.
+ */
+export async function rehashVaultPassword(
+  vault: ReaderVault,
+  email: string,
+  password: string,
+): Promise<ReaderVault> {
+  const address = normalizeEmail(email);
+  if (!address || passwordError(password)) return vault;
+  const secret = await hashPassword(password);
+  const existing = accountByEmail(vault, address);
+  if (existing) {
+    return {
+      accounts: vault.accounts.map((row) =>
+        row.email === address
+          ? { ...row, salt: secret.salt, hash: secret.hash, iterations: secret.iterations }
+          : row,
+      ),
+      sessionEmail: address,
+    };
+  }
+  const handle = normalizeHandle(address.split("@")[0] ?? "");
+  if (handle.length < 2) return vault;
+  return {
+    accounts: [
+      ...vault.accounts,
+      {
+        email: address,
+        handle,
+        name: "",
+        salt: secret.salt,
+        hash: secret.hash,
+        iterations: secret.iterations,
+        createdAt: Date.now(),
+      },
+    ],
+    sessionEmail: address,
+  };
+}
+
 export function openSessionForEmail(vault: ReaderVault, email: string, handle?: string): ReaderVault {
   const address = normalizeEmail(email);
   if (!address) return vault;

@@ -20,6 +20,7 @@ import {
   confirmEmailMessage,
   connectHostedAccount,
   ensureProfile,
+  shouldPreserveRecoverySession,
   signOutHosted,
   updateHostedHandle,
 } from "@/lib/remote-auth";
@@ -138,12 +139,17 @@ export function useReaderSession() {
   useEffect(() => {
     if (!hydrated) return;
     let ignore = false;
-    const apply = async (session: { user: { email?: string | null; user_metadata?: Record<string, unknown> } } | null) => {
+    const apply = async (
+      session: { user: { email?: string | null; user_metadata?: Record<string, unknown> } } | null,
+      event?: string,
+    ) => {
       if (ignore || !session?.user.email) return;
       const email = normalizeEmail(session.user.email);
       const vault = readReaderVault();
       const local = sessionFromVault(vault);
       if (local && local.email !== email) {
+        const path = typeof window === "undefined" ? "" : window.location.pathname;
+        if (shouldPreserveRecoverySession(event, path)) return;
         try {
           await getSupabase().auth.signOut();
         } catch {
@@ -164,8 +170,8 @@ export function useReaderSession() {
     void getSupabase()
       .auth.getSession()
       .then(({ data }) => apply(data.session));
-    const { data } = getSupabase().auth.onAuthStateChange((_event, session) => {
-      void apply(session);
+    const { data } = getSupabase().auth.onAuthStateChange((event, session) => {
+      void apply(session, event);
     });
     return () => {
       ignore = true;

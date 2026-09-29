@@ -1,4 +1,5 @@
 import { useEffect, useState, type FormEvent } from "react";
+import { Link } from "@tanstack/react-router";
 import { formatHandle, handleError, normalizeHandle } from "@/lib/social";
 import { cn } from "@/lib/utils";
 import type { ReaderAuthMode } from "@/lib/use-reader-session";
@@ -123,6 +124,15 @@ export function ReaderAuthForm({
         <p className="border-b border-ink px-4 py-3 font-sans text-sm text-ink/70">
           Friends will find you as {formatHandle(shown)}.
         </p>
+      ) : null}
+
+      {mode === "in" ? (
+        <Link
+          to="/forgot-password"
+          className="flex h-12 items-center justify-center border-b border-ink bg-paper font-sans text-sm text-ink"
+        >
+          Forgot password?
+        </Link>
       ) : null}
 
       {error ? (
