@@ -2655,7 +2655,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     "the-hesperides-and-noble-numbers": {
       opening:
         "I sing of brooks, of blossoms, birds and bowers, Of April, May, of June and July-flowers; I sing of May-poles, hock-carts, wassails, wakes, Of bridegrooms, brides and of their bridal cakes; I write of youth, of love, and",
-      breaths: 6877,
+      breaths: 6876,
       scenes: 504,
       gutenberg: 22421,
     },
@@ -3612,7 +3612,7 @@ test("Mira Noon Wed 23 Sep CLEAR sits on Next, For you, and Rituals, never a new
       minutes: 362,
       year: 1915,
       gutenberg: 549,
-      scene: "Chapter I",
+      scene: "Part One · Chapter I",
       lane: "next",
     },
     "kwaidan-stories-and-studies-of-strange-things": {
