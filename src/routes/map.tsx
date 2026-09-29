@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
+import { catalogCount } from "@/lib/catalog";
 import { PLACED_WORKS, regionsFromPlaced, type PlacedWork } from "@/lib/literature-geo";
 import { TitlesMap } from "@/components/titles-map";
 import { prefetchWork } from "@/lib/prefetch-work";
@@ -67,7 +68,7 @@ function MapPage() {
         <aside className="min-h-0 flex-1 overflow-y-auto border-t border-ink md:h-full md:w-[22rem] md:flex-none md:border-t-0 md:border-l">
           <div className="border-b border-ink px-4 py-3">
             <p className="type-kicker text-muted">
-              {works.length} titles · by literary geography
+              {(place === "All" && !onlyReadable ? catalogCount() : works.length)} titles · by literary geography
             </p>
             <div className="mt-2 flex flex-wrap gap-1.5">
               <button

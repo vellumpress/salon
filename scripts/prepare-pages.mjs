@@ -9,7 +9,9 @@ import {
   copyFileSync,
   cpSync,
   existsSync,
+  mkdirSync,
   mkdtempSync,
+  readFileSync,
   rmSync,
   writeFileSync,
 } from "node:fs";
@@ -69,4 +71,47 @@ applySpaPagesFallback(dest);
 const safety = applyPagesHtmlSafety(dest);
 writeFileSync(join(dest, ".nojekyll"), "");
 console.log(`[prepare-pages] html files=${safety.files} nul-bytes-removed=${safety.removed}`);
+
+/** Top-level routes plus /read/<catalog id>, so GitHub Pages returns 200. */
+const STATIC_ROUTES = [
+  "login",
+  "forgot-password",
+  "reset-password",
+  "friends",
+  "profile",
+  "profile/collection",
+  "you",
+  "map",
+  "together",
+  "curator",
+  "page",
+  "rituals",
+  "adapted",
+  "clubs",
+  "shuffle",
+  "curated",
+  "glass",
+  "stores",
+  "desk",
+  "form",
+];
+
+function emitStaticRoutes(destDir, indexHtml) {
+  const shellHtml = existsSync(join(destDir, "index.html"))
+    ? join(destDir, "index.html")
+    : indexHtml;
+  const stamp = (rel) => {
+    const dir = join(destDir, rel);
+    mkdirSync(dir, { recursive: true });
+    copyFileSync(shellHtml, join(dir, "index.html"));
+  };
+  for (const route of STATIC_ROUTES) stamp(route);
+  const shelf = readFileSync(join(root, "src/lib/catalog/shelf.ts"), "utf8");
+  const ids = new Set();
+  for (const match of shelf.matchAll(/\bid:\s*"([^"]+)"/g)) ids.add(match[1]);
+  for (const id of ids) stamp(`read/${id}`);
+  console.log(`[prepare-pages] static routes=${STATIC_ROUTES.length} read=${ids.size}`);
+}
+
+emitStaticRoutes(dest, join(dest, "index.html"));
 console.log("[prepare-pages] ready");

@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
+import { chdir } from "node:process";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
 import {
@@ -20,6 +21,9 @@ import {
 import { renderInstallPage } from "./grok-pwa-plugin.mjs";
 
 const TEMPLATE_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+// Injector defaults read site.json from cwd. Isolate so this app's card
+// does not change template assertions that omit an explicit site.
+chdir(mkdtempSync(join(tmpdir(), "grok-pwa-cwd-")));
 
 test("injects before </head>", () => {
   const out = injectGrokPwaHead("<html><head><title>x</title></head><body></body></html>");

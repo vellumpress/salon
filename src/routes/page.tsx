@@ -1,8 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState, type DragEvent, type FormEvent } from "react";
-import { ComingSoon } from "@/components/coming-soon";
 import { fetchPage } from "@/lib/fetch-page";
-import { liveBackendEnabled, staticActionMiss } from "@/lib/site";
 import { useTbr } from "@/lib/store";
 import type { Work } from "@/lib/literature";
 
@@ -60,7 +58,6 @@ function ImportBody() {
   const [fileName, setFileName] = useState("");
   const [busy, setBusy] = useState<"link" | "pdf" | null>(null);
   const [error, setError] = useState("");
-  const [soon, setSoon] = useState(false);
   const [over, setOver] = useState(false);
 
   async function sitWith(work: Work) {
@@ -73,20 +70,13 @@ function ImportBody() {
     e.preventDefault();
     const next = url.trim();
     if (next.length < 8 || busy) return;
-    if (!liveBackendEnabled) {
-      setSoon(true);
-      setError("");
-      return;
-    }
     setBusy("link");
     setError("");
-    setSoon(false);
     try {
-      const work = await fetchPage({ data: { url: next } });
+      const work = await fetchPage({ url: next });
       await sitWith(work);
     } catch (err) {
-      if (staticActionMiss(err)) setSoon(true);
-      else setError(err instanceof Error ? err.message : "This page would not come.");
+      setError(err instanceof Error ? err.message : "This page would not come.");
       setBusy(null);
     }
   }
@@ -160,9 +150,7 @@ function ImportBody() {
             className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-xl text-ink placeholder:text-muted focus-visible:outline-none"
           />
         </label>
-        {!liveBackendEnabled || soon ? (
-          <ComingSoon detail="Importing a link is coming soon. A PDF still opens on this phone." />
-        ) : error ? (
+        {error ? (
           <p className="border-t border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">{error}</p>
         ) : null}
         <button

@@ -5,12 +5,13 @@
  * changing `room`/`name` requires a remount (key the component on them).
  */
 import { useCallback, useEffect, useRef, useState } from "react";
-import { P2PRoom, type PeerInfo } from "./p2p";
+import type { PeerInfo } from "./p2p";
+import { RealtimeSitRoom } from "./realtime-room";
 
 export interface UseP2PRoomOptions {
   room?: string;
   name?: string;
-  /** False on the static build — do not poll /api/rtc. */
+  /** False skips the Realtime channel (tests and offline shells). */
   enabled?: boolean;
 }
 
@@ -19,7 +20,7 @@ export interface P2PRoomHandle {
   room: string;
   peers: PeerInfo[];
   joined: boolean;
-  /** Live room cannot be reached from this build. */
+  /** Realtime channel failed to open. */
   unavailable: boolean;
   broadcast: (data: unknown) => void;
   send: (data: unknown, peerId?: string) => void;
@@ -41,14 +42,14 @@ export function useP2PRoom(options: UseP2PRoomOptions = {}): P2PRoomHandle {
   const [peers, setPeers] = useState<PeerInfo[]>([]);
   const [joined, setJoined] = useState(false);
   const [unavailable, setUnavailable] = useState(!enabled);
-  const roomRef = useRef<P2PRoom | null>(null);
+  const roomRef = useRef<RealtimeSitRoom | null>(null);
   const listeners = useRef(
     new Set<(from: string, data: unknown, channel: "state" | "reliable") => void>(),
   );
 
   useEffect(() => {
     if (!enabled) return;
-    const p2p = new P2PRoom({
+    const p2p = new RealtimeSitRoom({
       room,
       selfId,
       name,
@@ -60,7 +61,7 @@ export function useP2PRoom(options: UseP2PRoomOptions = {}): P2PRoomHandle {
       onUnavailable: () => setUnavailable(true),
     });
     roomRef.current = p2p;
-    void p2p.join();
+    p2p.join();
     return () => {
       roomRef.current = null;
       p2p.close();

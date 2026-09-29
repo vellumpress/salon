@@ -93,7 +93,13 @@ export function placeWork(item: ShelfWork): PlacedWork {
   };
 }
 
-export const PLACED_WORKS: PlacedWork[] = SHELF.map(placeWork);
+const placedSeen = new Set<string>();
+export const PLACED_WORKS: PlacedWork[] = [];
+for (const item of SHELF) {
+  if (placedSeen.has(item.id)) continue;
+  placedSeen.add(item.id);
+  PLACED_WORKS.push(placeWork(item));
+}
 
 export function regionsFromPlaced(works: PlacedWork[] = PLACED_WORKS) {
   const counts = new Map<string, number>();

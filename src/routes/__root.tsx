@@ -62,6 +62,7 @@ export const Route = createRootRoute({
       { name: "application-name", content: APP_NAME },
     ],
     links: [
+      { rel: "icon", href: withBase("/favicon.ico"), sizes: "32x32" },
       { rel: "icon", type: "image/svg+xml", href: withBase("/favicon.svg") },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

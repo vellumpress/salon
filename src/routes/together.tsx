@@ -31,7 +31,7 @@ import {
 } from "@/lib/clubs";
 import { defaultSitClock, etWallToIso, formatClubWhen, formatClubWhenLong } from "@/lib/club-time";
 import { enterClubCompose, exitClubCompose, syncVisualViewport } from "@/lib/vvh";
-import { liveBackendEnabled, salonShareText, salonShareTitle, staticActionMiss } from "@/lib/site";
+import { salonShareText, salonShareTitle, staticActionMiss } from "@/lib/site";
 import { useShelfSearch } from "@/components/shelf-search";
 import { HostSitForm } from "@/components/host-sit-form";
 import { encodeHostedSit, sitDurationLabel, sitInvolves, sitPhase } from "@/lib/hosted-sit";
@@ -76,8 +76,8 @@ function TogetherPage() {
   const [hydrated, setHydrated] = useState(false);
   const [upcoming, setUpcoming] = useState<UpcomingSit[]>([]);
   const [userClubs, setUserClubs] = useState<BookClubView[]>([]);
-  const [creating, setCreating] = useState(Boolean(start) && liveBackendEnabled);
-  const [clubSoon, setClubSoon] = useState(Boolean(start) && !liveBackendEnabled);
+  const [creating, setCreating] = useState(Boolean(start));
+  const [boardNote, setBoardNote] = useState("");
   const [hosting, setHosting] = useState(Boolean(host));
   const [created, setCreated] = useState<BookClubView | null>(null);
   const [welcome, setWelcome] = useState<BookClubView | null>(null);
@@ -86,17 +86,15 @@ function TogetherPage() {
   useEffect(() => setHydrated(true), []);
 
   useEffect(() => {
-    if (!liveBackendEnabled) {
-      setUpcoming([]);
-      return;
-    }
     let live = true;
     void listUpcomingSessions()
       .then((rows) => {
         if (live) setUpcoming(Array.isArray(rows) ? rows : []);
       })
-      .catch(() => {
-        if (live) setUpcoming([]);
+      .catch((err) => {
+        if (!live) return;
+        setUpcoming([]);
+        setBoardNote(err instanceof Error ? err.message : "");
       });
     return () => {
       live = false;
@@ -110,12 +108,8 @@ function TogetherPage() {
       setUserClubs([]);
       return;
     }
-    if (!liveBackendEnabled) {
-      setUserClubs([]);
-      return;
-    }
     let live = true;
-    void listBookClubs({ data: { ids } })
+    void listBookClubs(ids)
       .then((rows) => {
         if (live) setUserClubs(Array.isArray(rows) ? rows : []);
       })
@@ -133,13 +127,8 @@ function TogetherPage() {
       setJoinMissing(false);
       return;
     }
-    if (!liveBackendEnabled) {
-      setWelcome(null);
-      setJoinMissing(true);
-      return;
-    }
     let live = true;
-    void getClubByInvite({ data: { token: join } })
+    void getClubByInvite(join)
       .then(async (club) => {
         if (!live) return;
         if (!club) {
@@ -152,15 +141,16 @@ function TogetherPage() {
         setWelcome(club);
         setJoinMissing(false);
         try {
-          await joinClubByInvite({ data: { token: club.inviteToken } });
+          await joinClubByInvite(club.inviteToken);
         } catch {
           /* logged-out join still holds locally */
         }
       })
-      .catch(() => {
+      .catch((err) => {
         if (live) {
           setJoinMissing(true);
           setWelcome(null);
+          setBoardNote(err instanceof Error ? err.message : "");
         }
       });
     return () => {
@@ -217,20 +207,6 @@ function TogetherPage() {
 
       {hosting ? (
         <HostSitForm onClose={() => setHosting(false)} />
-      ) : clubSoon ? (
-        <div className="flex min-h-0 flex-1 flex-col">
-          <div className="flex shrink-0 items-stretch border-b border-ink">
-            <p className="type-kicker flex min-w-0 flex-1 items-center px-5">New club</p>
-            <button
-              type="button"
-              onClick={() => setClubSoon(false)}
-              className="flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 font-sans text-sm text-paper"
-            >
-              Close
-            </button>
-          </div>
-          <ComingSoon detail="Starting a book club is coming soon. A sit with a friend still shares from this phone." />
-        </div>
       ) : creating ? (
         <StartClubForm
           defaultWorkId={defaultWork}
@@ -259,12 +235,6 @@ function TogetherPage() {
               Share a link. Name a night. The room holds both of you — two phones, one hour,
               live chat on the page.
             </p>
-            {!liveBackendEnabled ? (
-              <p className="type-pitch mt-2.5 max-w-xl text-paper/70">
-                This Pages build has no live backend. Clubs, invites, and RTC sitting stay
-                local until auth and `/api/rtc` are hosted.
-              </p>
-            ) : null}
           </div>
 
           <div className="grid grid-cols-1 border-b border-ink sm:grid-cols-3">
@@ -287,10 +257,6 @@ function TogetherPage() {
               type="button"
               onClick={() => {
                 setCreated(null);
-                if (!liveBackendEnabled) {
-                  setClubSoon(true);
-                  return;
-                }
                 setCreating(true);
               }}
               className="flex h-14 items-center justify-center border-t border-ink bg-yellow font-sans text-sm text-ink sm:border-l"
@@ -330,15 +296,15 @@ function TogetherPage() {
             </section>
           ) : null}
 
+          {boardNote ? (
+            <p className="border-b border-ink bg-yellow px-5 py-3 font-sans text-sm text-ink">{boardNote}</p>
+          ) : null}
+
           {joinMissing ? (
-            liveBackendEnabled ? (
-              <div className="border-b border-ink bg-paper px-5 py-6 sm:px-8">
-                <p className="type-kicker text-muted">Invite</p>
-                <p className="mt-2 type-lede">This invite would not come</p>
-              </div>
-            ) : (
-              <ComingSoon detail="Club invites are coming soon." />
-            )
+            <div className="border-b border-ink bg-paper px-5 py-6 sm:px-8">
+              <p className="type-kicker text-muted">Invite</p>
+              <p className="mt-2 type-lede">This invite would not come</p>
+            </div>
           ) : null}
 
           {welcome && welcome.id !== created?.id ? (
@@ -607,28 +573,20 @@ function StartClubForm({
       setError("Pick a day and time in Eastern time.");
       return;
     }
-    if (!liveBackendEnabled) {
-      setError("");
-      onClose();
-      return;
-    }
     setSaving(true);
     setError("");
     try {
       const club = await createClub({
-        data: {
-          name: title,
-          workId,
-          startsAt,
-          note: note.trim() || undefined,
-          serializePlanId: serializePlanId ?? undefined,
-          startEpisode: serializePlanId ? startEpisode : undefined,
-        },
+        name: title,
+        workId,
+        startsAt,
+        note: note.trim() || undefined,
+        serializePlanId: serializePlanId ?? undefined,
+        startEpisode: serializePlanId ? startEpisode : undefined,
       });
       onCreated(club);
     } catch (err) {
-      if (staticActionMiss(err)) setError("Coming soon. Book clubs need a hosted room.");
-      else setError(err instanceof Error ? err.message : "The club would not open");
+      setError(err instanceof Error ? err.message : "The club would not open");
     } finally {
       setSaving(false);
     }

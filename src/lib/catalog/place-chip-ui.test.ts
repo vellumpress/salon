@@ -7,7 +7,7 @@ function read(rel: string) {
 }
 
 test("place chip is wired on home, shelf, rituals, Adapted, You, and reader preface", () => {
-  const strip = read("../../components/works-strip.tsx");
+  const strip = read("../../components/works-card.tsx");
   const search = read("../../components/shelf-search.tsx");
   const rituals = read("../../routes/rituals.tsx");
   const adapted = read("../../routes/adapted.tsx");

@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from "react";
 import { getClub, getReader } from "@/lib/social";
 import { clubPair, shareOrCopy } from "@/lib/shuffle";
 import { fillClass, fillInk } from "@/lib/mondrian";
@@ -9,7 +9,11 @@ import {
   addClubSession,
   getBookClub,
   joinClubByInvite,
+  listClubMessages,
+  postClubMessage,
+  subscribeClubMessages,
   type BookClubView,
+  type ClubMessage,
   clubInviteUrl,
 } from "@/lib/clubs";
 import { defaultSitClock, etWallToIso, formatClubWhenLong } from "@/lib/club-time";
@@ -33,7 +37,7 @@ function ClubPage() {
     }
     let alive = true;
     setLoaded(false);
-    void getBookClub({ data: { id: clubId } })
+    void getBookClub(clubId)
       .then((club) => {
         if (!alive) return;
         setLive(club);
@@ -247,7 +251,7 @@ function LiveClub({
   useEffect(() => {
     rememberInvite(club.id, club.inviteToken);
     joinClub(club.id);
-    void joinClubByInvite({ data: { token: club.inviteToken } }).catch(() => undefined);
+    void joinClubByInvite(club.inviteToken).catch(() => undefined);
   }, [club.id, club.inviteToken, joinClub, rememberInvite]);
 
   const isIn = hydrated && joined.includes(club.id);
@@ -275,7 +279,7 @@ function LiveClub({
     setSaving(true);
     setError("");
     try {
-      const next = await addClubSession({ data: { token, startsAt } });
+      const next = await addClubSession({ token, startsAt });
       onClub(next);
       setAdding(false);
     } catch (err) {
@@ -331,6 +335,7 @@ function LiveClub({
           <p className="type-lede">{club.note}</p>
         </div>
       ) : null}
+      <ClubThread clubId={club.id} />
       <div className="border-b border-ink px-5 py-5 sm:px-8">
         <p className="mb-4 type-kicker text-muted">Sittings</p>
         {club.sessions.length === 0 ? (
@@ -407,6 +412,82 @@ function LiveClub({
         </p>
       </div>
     </ClubFrame>
+  );
+}
+
+function ClubThread({ clubId }: { clubId: string }) {
+  const [lines, setLines] = useState<ClubMessage[]>([]);
+  const [draft, setDraft] = useState("");
+  const [note, setNote] = useState("");
+  const [sending, setSending] = useState(false);
+
+  useEffect(() => {
+    let live = true;
+    void listClubMessages(clubId)
+      .then((rows) => {
+        if (live) setLines(rows);
+      })
+      .catch((err) => {
+        if (live) setNote(err instanceof Error ? err.message : "");
+      });
+    const stop = subscribeClubMessages(clubId, (message) => {
+      setLines((prev) => (prev.some((row) => row.id === message.id) ? prev : [...prev, message]));
+    });
+    return () => {
+      live = false;
+      stop();
+    };
+  }, [clubId]);
+
+  async function send(event: FormEvent) {
+    event.preventDefault();
+    const text = draft.trim();
+    if (!text || sending) return;
+    setSending(true);
+    setNote("");
+    try {
+      const message = await postClubMessage(clubId, text);
+      setLines((prev) => (prev.some((row) => row.id === message.id) ? prev : [...prev, message]));
+      setDraft("");
+    } catch (err) {
+      setNote(err instanceof Error ? err.message : "The line would not send.");
+    } finally {
+      setSending(false);
+    }
+  }
+
+  return (
+    <div className="border-b border-ink">
+      <p className="px-5 pt-5 type-kicker text-muted sm:px-8">The room</p>
+      <div className="flex flex-col gap-3 px-5 py-4 sm:px-8">
+        {lines.length === 0 ? (
+          <p className="font-serif text-lg text-ink/70">No lines yet. Members can write here.</p>
+        ) : (
+          lines.slice(-12).map((line) => (
+            <p key={line.id} className="font-serif text-lg leading-snug">
+              {line.body}
+            </p>
+          ))
+        )}
+      </div>
+      {note ? <p className="bg-yellow px-5 py-3 font-sans text-sm text-ink">{note}</p> : null}
+      <form onSubmit={(event) => void send(event)} className="flex items-stretch border-t border-ink">
+        <input
+          value={draft}
+          onChange={(event) => setDraft(event.target.value)}
+          maxLength={500}
+          placeholder="A line for the club"
+          className="h-14 min-w-0 flex-1 border-0 bg-transparent px-5 font-serif text-lg text-ink placeholder:text-muted focus-visible:outline-none"
+        />
+        <button
+          type="submit"
+          disabled={sending || draft.trim().length === 0}
+          className="shrink-0 bg-ink px-4 font-sans text-sm text-paper disabled:opacity-40"
+        >
+          Send
+        </button>
+      </form>
+    </div>
   );
 }
 

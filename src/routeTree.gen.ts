@@ -28,6 +28,7 @@ import { Route as RitualsRouteImport } from './routes/rituals'
 import { Route as ShuffleRouteImport } from './routes/shuffle'
 import { Route as StoresRouteImport } from './routes/stores'
 import { Route as TogetherRouteImport } from './routes/together'
+import { Route as YouRouteImport } from './routes/you'
 import { Route as ApiRtcRouteImport } from './routes/api/rtc'
 import { Route as ClubClubIdRouteImport } from './routes/club.$clubId'
 import { Route as CuratedSlugRouteImport } from './routes/curated_.$slug'
@@ -138,6 +139,11 @@ const TogetherRoute = TogetherRouteImport.update({
   path: '/together',
   getParentRoute: () => rootRouteImport,
 } as any)
+const YouRoute = YouRouteImport.update({
+  id: '/you',
+  path: '/you',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiRtcRoute = ApiRtcRouteImport.update({
   id: '/api/rtc',
   path: '/api/rtc',
@@ -229,6 +235,7 @@ export interface FileRoutesByFullPath {
   '/shuffle': typeof ShuffleRoute
   '/stores': typeof StoresRoute
   '/together': typeof TogetherRoute
+  '/you': typeof YouRoute
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
   '/curated/$slug': typeof CuratedSlugRoute
@@ -263,6 +270,7 @@ export interface FileRoutesByTo {
   '/shuffle': typeof ShuffleRoute
   '/stores': typeof StoresRoute
   '/together': typeof TogetherRoute
+  '/you': typeof YouRoute
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
   '/curated/$slug': typeof CuratedSlugRoute
@@ -299,6 +307,7 @@ export interface FileRoutesById {
   '/shuffle': typeof ShuffleRoute
   '/stores': typeof StoresRoute
   '/together': typeof TogetherRoute
+  '/you': typeof YouRoute
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
   '/curated_/$slug': typeof CuratedSlugRoute
@@ -336,6 +345,7 @@ export interface FileRouteTypes {
     | '/shuffle'
     | '/stores'
     | '/together'
+    | '/you'
     | '/api/rtc'
     | '/club/$clubId'
     | '/curated/$slug'
@@ -370,6 +380,7 @@ export interface FileRouteTypes {
     | '/shuffle'
     | '/stores'
     | '/together'
+    | '/you'
     | '/api/rtc'
     | '/club/$clubId'
     | '/curated/$slug'
@@ -405,6 +416,7 @@ export interface FileRouteTypes {
     | '/shuffle'
     | '/stores'
     | '/together'
+    | '/you'
     | '/api/rtc'
     | '/club/$clubId'
     | '/curated_/$slug'
@@ -441,6 +453,7 @@ export interface RootRouteChildren {
   ShuffleRoute: typeof ShuffleRoute
   StoresRoute: typeof StoresRoute
   TogetherRoute: typeof TogetherRoute
+  YouRoute: typeof YouRoute
   ApiRtcRoute: typeof ApiRtcRoute
   ClubClubIdRoute: typeof ClubClubIdRoute
   CuratedSlugRoute: typeof CuratedSlugRoute
@@ -590,6 +603,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TogetherRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/you': {
+      id: '/you'
+      path: '/you'
+      fullPath: '/you'
+      preLoaderRoute: typeof YouRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/rtc': {
       id: '/api/rtc'
       path: '/api/rtc'
@@ -724,6 +744,7 @@ const rootRouteChildren: RootRouteChildren = {
   ShuffleRoute: ShuffleRoute,
   StoresRoute: StoresRoute,
   TogetherRoute: TogetherRoute,
+  YouRoute: YouRoute,
   ApiRtcRoute: ApiRtcRoute,
   ClubClubIdRoute: ClubClubIdRoute,
   CuratedSlugRoute: CuratedSlugRoute,

@@ -305,7 +305,6 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "liza-of-lambeth": { label: "London", region: "gb" },
   "a-passage-to-india": { label: "India", region: "in" },
   "lolly-willowes": { label: "England", region: "gb" },
-  "the-bridge-of-san-luis-rey": { label: "Peru", region: "pe" },
   "the-cherry-orchard": { label: "Russia", region: "ru" },
   "bel-ami": { label: "Paris", region: "fr" },
   liliom: { label: "Budapest", region: "hu" },

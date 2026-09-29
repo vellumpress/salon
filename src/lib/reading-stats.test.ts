@@ -158,6 +158,7 @@ test("week days carry the ledger a tap should show", () => {
   const today = dayKey(NOW);
   const reading = deriveReadingStats({
     progress: {},
+    favorites: [],
     readingMinutesByDay: { [today]: 30 },
     advancesByDay: { [today]: 12 },
     keepsByDay: { [today]: 2 },
@@ -267,6 +268,8 @@ test("breath progress does not invent minutes", () => {
   assert.equal(reading.minutesAreEstimated, false);
   assert.equal(reading.breaths, 400);
   assert.equal(reading.rings[0]?.unit, "active min");
+  assert.equal(reading.sits, 0);
+  assert.equal(reading.streak, 0);
 });
 
 test("advances today stay separate from all-time breaths", () => {
