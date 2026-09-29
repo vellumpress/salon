@@ -5,6 +5,11 @@ export type EmphasisPart =
 /** PG `_italics_`, markdown `*italics*`, or `<em>` → parts. */
 const EMPHASIS_RE = /<em>([\s\S]*?)<\/em>|_([^_\n]+)_|\*([^*\n]+)\*/g;
 
+/** Leftover emphasis marks that never found a mate (`house_.`, a lone opening `_`). */
+function stripUnpairedMarks(value: string) {
+  return value.replace(/[_*]/g, "");
+}
+
 export function splitEmphasis(text: string): EmphasisPart[] {
   const parts: EmphasisPart[] = [];
   let last = 0;
@@ -16,5 +21,10 @@ export function splitEmphasis(text: string): EmphasisPart[] {
     last = index + match[0].length;
   }
   if (last < text.length) parts.push({ type: "text", value: text.slice(last) });
-  return parts.length > 0 ? parts : [{ type: "text", value: text }];
+  const cleaned = parts
+    .map((part) =>
+      part.type === "text" ? { ...part, value: stripUnpairedMarks(part.value) } : part,
+    )
+    .filter((part) => part.value.length > 0);
+  return cleaned.length > 0 ? cleaned : [{ type: "text", value: stripUnpairedMarks(text) }];
 }

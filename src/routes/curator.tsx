@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { ComingSoon } from "@/components/coming-soon";
 import { askCurator } from "@/lib/ask-curator";
 import { boardWork } from "@/lib/mondrian";
+import { liveBackendEnabled, staticActionMiss } from "@/lib/site";
 import { useTbr } from "@/lib/store";
 import type { SittingLength } from "@/lib/shuffle";
 
@@ -39,6 +41,7 @@ function CuratorPage() {
   const [draft, setDraft] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
+  const [soon, setSoon] = useState(!liveBackendEnabled);
   const [offer, setOffer] = useState<{ workId: string; minutes: SittingLength } | null>(null);
   const log = useRef<HTMLDivElement>(null);
   const turnCount = turns.length;
@@ -77,6 +80,10 @@ function CuratorPage() {
   async function send(text: string) {
     const trimmed = text.trim().slice(0, 400);
     if (!trimmed || busy) return;
+    if (!liveBackendEnabled) {
+      setSoon(true);
+      return;
+    }
     setBusy(true);
     setError("");
     setOffer(null);
@@ -104,8 +111,9 @@ function CuratorPage() {
             : 20;
         setOffer({ workId: result.workId, minutes });
       }
-    } catch {
-      setError("The curator could not answer.");
+    } catch (err) {
+      if (staticActionMiss(err)) setSoon(true);
+      else setError("The curator could not answer.");
     } finally {
       setBusy(false);
     }
@@ -172,9 +180,16 @@ function CuratorPage() {
                   ? "Tell the curator how you like to sit."
                   : "Length, weather, what you keep."}
               </p>
-              {error ? <p className="mt-4 font-sans text-sm text-red">{error}</p> : null}
+              {soon ? (
+                <ComingSoon
+                  className="mt-6 border border-ink"
+                  detail="The curator is coming soon. The shelf is still here."
+                />
+              ) : error ? (
+                <p className="mt-4 font-sans text-sm text-red">{error}</p>
+              ) : null}
             </div>
-            {showStarters ? (
+            {showStarters && liveBackendEnabled ? (
               <div className="-mx-5 mt-6 flex shrink-0 flex-col gap-rule border-t border-ink bg-ink sm:-mx-8">
                 {STARTERS.map((item) => (
                   <button
@@ -204,7 +219,11 @@ function CuratorPage() {
               </p>
             ))}
             {busy ? <p className="type-kicker text-muted">Listening.</p> : null}
-            {error ? <p className="font-sans text-sm text-red">{error}</p> : null}
+            {soon ? (
+              <ComingSoon detail="The curator is coming soon. The shelf is still here." />
+            ) : error ? (
+              <p className="font-sans text-sm text-red">{error}</p>
+            ) : null}
           </div>
         )}
       </div>

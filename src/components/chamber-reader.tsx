@@ -541,6 +541,21 @@ export function TbrReader({
   }, [still, overlay, together, navReveal]);
 
   useEffect(() => {
+    if (!still || together || overlay !== "none") return;
+    const reveal = (event: PointerEvent) => {
+      const node = event.target as HTMLElement | null;
+      if (!node?.closest("[data-reader-text]")) return;
+      setStill(false);
+      if (node.closest("[data-turn]")) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    };
+    window.addEventListener("pointerdown", reveal, true);
+    return () => window.removeEventListener("pointerdown", reveal, true);
+  }, [still, together, overlay]);
+
+  useEffect(() => {
     function onKey(e: KeyboardEvent) {
       const target = e.target as HTMLElement | null;
       if (
@@ -716,6 +731,7 @@ export function TbrReader({
 
   const pane = (
     <div
+      data-reader-text
       className="relative flex min-h-0 flex-1"
       onTouchStart={(e) => {
         const t = e.changedTouches[0];
@@ -735,6 +751,7 @@ export function TbrReader({
     >
       <button
         type="button"
+        data-turn=""
         tabIndex={-1}
         aria-label="Previous sentence"
         className={cn(
@@ -747,6 +764,7 @@ export function TbrReader({
       />
       <button
         type="button"
+        data-turn=""
         tabIndex={-1}
         aria-label="Next sentence"
         className={cn(

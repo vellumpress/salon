@@ -41,6 +41,16 @@ export const liveBackendEnabled = viteEnv().VITE_LIVE_BACKEND === "true";
 export const liveAuthAvailable =
   liveBackendEnabled && viteEnv().VITE_AUTH_ENABLED !== "false";
 
+/**
+ * Hosted POSTs (`/_serverFn`, `/api/rtc`) 404 or 405 on the static Pages build.
+ * Those should read as "coming soon", never as a raw invariant.
+ */
+export function staticActionMiss(error: unknown, live = liveBackendEnabled) {
+  if (!live) return true;
+  const message = error instanceof Error ? error.message : String(error ?? "");
+  return /invariant failed|_serverFn|method not allowed|\b405\b|\b404\b/i.test(message);
+}
+
 function viteBase(): string {
   const value = viteEnv().BASE_URL;
   if (typeof value === "string" && value.length > 0) return value;

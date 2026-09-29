@@ -10,6 +10,7 @@ import {
   publicUrl,
   salonShareText,
   salonShareTitle,
+  staticActionMiss,
   withBase,
 } from "./site.ts";
 
@@ -74,4 +75,11 @@ test("wordmark colors follow the sheet and the homepage mark has no gloss", () =
   assert.match(home, /<Wordmark/);
   assert.match(css, /--color-oxblood:\s*#4b2a28/);
   assert.doesNotMatch(css, /wordmark-tagline/);
+});
+
+test("a missing hosted action reads as a static miss", () => {
+  assert.equal(staticActionMiss(new Error("Invariant failed"), true), true);
+  assert.equal(staticActionMiss(new Error("405"), true), true);
+  assert.equal(staticActionMiss(new Error("The club would not open"), true), false);
+  assert.equal(staticActionMiss(new Error("anything"), false), true);
 });

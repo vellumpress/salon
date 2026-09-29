@@ -6,9 +6,12 @@ import {
   compactWhen,
   friendProfilePath,
   localFriendProfiles,
+  openReadingFromActivity,
   type FriendActivity,
   type FriendGraph,
+  type FriendProfile,
 } from "@/lib/friend-profile";
+import { contactId } from "@/lib/friends";
 import { fillClass, fillInk, planeOf } from "@/lib/mondrian";
 import { streakLine } from "@/lib/reading-stats";
 import { withRemoteActivity } from "@/lib/remote-activity";
@@ -51,12 +54,16 @@ function FriendProfilePage() {
   const lookedUp = normalizeHandle(rawHandle);
   const directory = remote.profiles[lookedUp] ?? null;
   const [fetched, setFetched] = useState<DirectoryProfile | null>(null);
+  const [lookup, setLookup] = useState<"pending" | "done">("pending");
 
   useEffect(() => {
     if (lookedUp.length < 2) return;
     let cancel = false;
+    setLookup("pending");
     void fetchProfile(lookedUp).then((row) => {
-      if (!cancel) setFetched(row);
+      if (cancel) return;
+      setFetched(row);
+      setLookup("done");
     });
     if (remote.userId) void refreshFollowedActivity(remote.userId);
     return () => {
@@ -115,11 +122,15 @@ function FriendProfilePage() {
   const profile = useMemo(() => {
     if (!hydrated) return null;
     const base = localFriendProfiles.profile(rawHandle, graph);
-    if (!base || !hosted) return base;
-    const name = hosted.name.trim();
-    if (!name || name === formatHandle(base.handle)) return base;
-    return { ...base, name };
-  }, [hydrated, rawHandle, graph, hosted]);
+    if (base) {
+      if (!hosted) return base;
+      const name = hosted.name.trim();
+      if (!name || name === formatHandle(base.handle)) return base;
+      return { ...base, name };
+    }
+    if (!hosted) return null;
+    return profileFromDirectory(hosted, following, remote.byHandle[hosted.handle] ?? []);
+  }, [hydrated, rawHandle, graph, hosted, following, remote.byHandle]);
   const kept = useKeptLines(profile?.isSelf ? progress : {}, hydrated);
   const activity = useMemo(() => {
     if (!profile) return [];
@@ -139,12 +150,30 @@ function FriendProfilePage() {
     );
   }
 
-  if (!profile) {
+  if (lookedUp.length < 2) {
     return (
       <ProfileFrame title="Friend">
         <div className="px-4 py-8">
           <p className="type-lede">That name is not a profile.</p>
           <p className="mt-2 font-serif text-base text-ink/70">Use at least two letters.</p>
+        </div>
+      </ProfileFrame>
+    );
+  }
+
+  if (!profile) {
+    if (lookup !== "done") {
+      return (
+        <ProfileFrame title="Friend">
+          <div className="min-h-24 bg-paper" />
+        </ProfileFrame>
+      );
+    }
+    return (
+      <ProfileFrame title="Friend">
+        <div className="px-4 py-8">
+          <p className="type-lede">Not found.</p>
+          <p className="mt-2 font-serif text-base text-ink/70">No one sits at this name.</p>
         </div>
       </ProfileFrame>
     );
@@ -344,6 +373,29 @@ function FriendProfilePage() {
       </p>
     </ProfileFrame>
   );
+}
+
+function profileFromDirectory(
+  hosted: DirectoryProfile,
+  following: string[],
+  events: FriendActivity[],
+): FriendProfile {
+  const handle = hosted.handle;
+  const readingNow = openReadingFromActivity(events);
+  return {
+    id: hosted.id,
+    handle,
+    name: hosted.name.trim() || formatHandle(handle),
+    place: "",
+    isSelf: false,
+    following:
+      following.includes(handle) ||
+      following.includes(hosted.id) ||
+      following.includes(contactId(handle)),
+    readingNow,
+    score: null,
+    activity: events.filter((item) => !(item.kind === "reading" && item.workId === readingNow?.workId)),
+  };
 }
 
 function ProfileFrame({
