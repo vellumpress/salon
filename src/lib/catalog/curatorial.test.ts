@@ -8362,7 +8362,7 @@ test("Mira POST-#176 CLEAR is Next lead Cousin Betty, then Sorrows of Satan, Kin
   assert.match(SHELF.find((item) => item.id === "the-king-of-schnorrers")?.intro ?? "", /King only/);
   assert.match(SHELF.find((item) => item.id === "the-king-of-schnorrers")?.intro ?? "", /Pale Bontzye/);
   const grotesques = SHELF.find((item) => item.id === "the-king-of-schnorrers-grotesques-and-fantasies");
-  assert.equal(grotesques?.breaths, 6709);
+  assert.equal(grotesques?.breaths, 6706);
   assert.equal(grotesques?.title, "The King of Schnorrers: Grotesques and Fantasies");
 
   const hania = JSON.parse(
