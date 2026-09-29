@@ -1811,7 +1811,7 @@ export const SHELF: ShelfWork[] = [
   },
   { id: "new-grub-street", title: "New Grub Street", author: "George Gissing", year: 1891, form: "novel", language: "English", minutes: 160, gutenberg: 1709,
     local: true,
-    opening: "Part Three",
+    opening: "As the Milvains sat down to breakfast the clock of Wattleborough parish church struck eight",
     breaths: 5444,
   },
   { id: "roderick-hudson", title: "Roderick Hudson", author: "Henry James", year: 1875, form: "novel", language: "English", minutes: 160, local: true, opening: "Mallet had made his arrangements to sail for Europe on the first of September, and having in the interval a fortnight to spare, he determined to spend it with his cousin Cecilia,", breaths: 2276, gutenberg: 176 },
