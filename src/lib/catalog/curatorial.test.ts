@@ -2623,7 +2623,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     "hugh-selwyn-mauberley": {
       opening:
         'FOR three years, out of key with his time, He strove to resuscitate the dead art Of poetry; to maintain "the sublime" In the old sense.',
-      breaths: 89,
+      breaths: 88,
       scenes: 11,
       gutenberg: 23538,
     },
@@ -2651,7 +2651,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     "the-hesperides-and-noble-numbers": {
       opening:
         "I sing of brooks, of blossoms, birds and bowers, Of April, May, of June and July-flowers; I sing of May-poles, hock-carts, wassails, wakes, Of bridegrooms, brides and of their bridal cakes; I write of youth, of love, and",
-      breaths: 6884,
+      breaths: 6877,
       scenes: 504,
       gutenberg: 22421,
     },
@@ -3052,7 +3052,7 @@ test("Mira 4PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
     },
     "bel-ami": {
       opening: "After changing his five-franc piece Georges Duroy left the restaurant.",
-      breaths: 4034,
+      breaths: 4028,
       scenes: 22,
       minutes: 639,
       year: 1885,
@@ -3217,7 +3217,7 @@ test("Mira 6PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
     },
     "jamaica-anansi-stories": {
       opening: "One great hungry time.",
-      breaths: 9042,
+      breaths: 9041,
       scenes: 347,
       minutes: 1356,
       year: 1924,
@@ -3350,7 +3350,7 @@ test("Mira Wed 8AM CLEAR sits on Next, For you, and Rituals, never Featured", ()
     "death-comes-for-the-archbishop": {
       opening:
         "ONE afternoon in the autumn of 1851 a solitary horseman, followed by a pack-mule, was pushing through an arid stretch of country somewhere in central New Mexico.",
-      breaths: 3411,
+      breaths: 3410,
       scenes: 23,
       minutes: 833,
       year: 1927,
@@ -3393,7 +3393,7 @@ test("Mira Wed 8AM CLEAR sits on Next, For you, and Rituals, never Featured", ()
     },
     "african-tragedy": {
       opening: "Two reasons made Robert Zulu leave teaching at Siam Village School.",
-      breaths: 521,
+      breaths: 520,
       scenes: 5,
       minutes: 92,
       year: 1928,
@@ -4210,7 +4210,7 @@ test("Mira Thu eve 24 Sep CLEAR sits on Next, Rituals, and For you, never a new 
     "the-book-of-khalid": {
       title: "The Book of Khalid",
       gutenberg: 29257,
-      breaths: 4508,
+      breaths: 4507,
       opening: "The City of Baal, or Baalbek, is between the desert and the deep sea.",
       em: "they",
     },
@@ -4532,7 +4532,7 @@ test("Mira Fri ~10:04 CLEAR is Next lead Cabala, then Reuben and Sun, with Troop
     "reuben-sachs": {
       gutenberg: 74419,
       year: 1888,
-      breaths: 1671,
+      breaths: 1670,
       opening: "Reuben Sachs was the pride of his family.",
       stop: "must marry money.",
     },
