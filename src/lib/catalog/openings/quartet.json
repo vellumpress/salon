@@ -1,0 +1,436 @@
+{
+  "id": "quartet",
+  "title": "Quartet",
+  "author": "Jean Rhys",
+  "year": "1928",
+  "note": "Project Gutenberg 78572. Whole novel (Chapter One–Twenty-Three); the R. C. Dunning epigraph is the Epigraph scene (s0) and the open starts at s1. Title lines and the Transcriber's note out. Host: Chapter One — \"It was about half-past five on an October afternoon…\" (whole chapter). Year 1928 (first published as Postures, per the PG note). No reading-ease score on the PG page, so none cited. Place: Paris (Montparnasse, Montmartre). Sits: unwind. Single-quote dialogue set in double quotes (nested quotes single); * * * scene breaks kept; 'She begun' kept as printed. Host intro: Before you start: this is a bleak book. Marya is stranded and broke in Paris, and the couple who take her in turn her into a kept woman under the wife's eye. It is also a 1928 novel with the period's antisemitic phrasing, in the narration and in dialogue, and one racial slur. Those are the book's voices, not ours. The dialogue is set in double quotes here; \"She begun\" is as printed.",
+  "minutes": 11,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter One · Café Lavenue, Boulevard du Montparnasse · Paris",
+      "place": "Chapter One · Café Lavenue, Boulevard du Montparnasse · Paris",
+      "reentry": "It was about half-past five on an October afternoon when Marya Zelli came out of the Café Lavenue, which is a dignified and comparatively expensive establishment on the Boulevard du Montparnasse. She ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was about half-past five on an October afternoon when Marya Zelli came out of the Café Lavenue, which is a dignified and comparatively expensive establishment on the Boulevard du Montparnasse. She had been sitting there for nearly an hour and a half, and during that time she had drunk two glasses of black coffee, smoked six caporal cigarettes and read the week's *Candide*."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Marya was a blonde girl, not very tall, slender-waisted. Her face was short, high cheek-boned, full-lipped; her long eyes slanted upwards towards the temples and were gentle and oddly remote in expression. Often on the Boulevards St Michel and Montparnasse shabby youths would glide up to her and address her hopefully in unknown and spitting tongues. When they were very shabby she would smile in a distant manner and answer in English:"
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"I'm very sorry; I don't understand what you are saying.\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "She crossed the boulevard and turned down the Rue de Rennes. As she walked along she was thinking: \"This street is very like the Tottenham Court Road—own sister to the Tottenham Court Road.\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "The idea depressed her, and to distract herself she stopped to look at a red felt hat in a shop window. Someone behind her said:"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Hello, Madam Zelli, what are you doing in this part of the world?\""
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Miss Esther De Solla, tall, gaunt, broad-shouldered, stood looking downwards at her with a protective expression. When Marya answered: \"Hello! Nothing. I was feeling melancholy, to tell you the truth,\" she proposed:"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"Come along to my studio for a bit.\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Miss De Solla, who was a painter and ascetic to the point of fanaticism, lived in a street at the back of the Lion de Belfort. Her studio was hidden behind a grim building where the housewives of the neighbourhood came to wash their clothes. It was a peaceful place, white-walled, smelling strongly of decayed vegetables. The artist explained that a *marchande des quatre saisons* kept her stock in the courtyard, and that as the woman was the concierge's sister-in-law, complaints were useless."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"Though the smell's pretty awful sometimes. Sit near the stove. It's cold today.\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "She opened a massive cupboard and produced a bottle of gin, another of vermouth, two glasses and a cardboard case containing drawings."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"I bought these this morning. What do you think of them?\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Marya, helped by the alcohol, realized that the drawings were beautiful. Groups of women. Masses of flesh arranged to form intricate and absorbing patterns."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"That man's a Hungarian,\" explained Miss De Solla. \"He's just over the way in the house where Trotzky used to live. He's a discovery of Heidler's. You know Heidler, the English picture-dealer man, of course.\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "Marya answered: \"I don't know any of the English people in Paris.\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"Don't you?\" said Miss De Solla, shocked. Then she added hastily: \"How perfectly lovely for you!\""
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"D'you think so?\" asked Marya dubiously."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Miss De Solla assured her that it was."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"I do think that one ought to make an effort to get away from the Anglo-Saxons in Paris, or what on earth is the good of being here at all? And it isn't an easy thing to do, either. Not easy for a woman, anyhow. But, of course, your husband's French, isn't he?\""
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"No,\" said Marya. \"He's a Pole.\""
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "The other looked across at her and thought: \"Is she really married to the Zelli man, I wonder? She's a decorative little person—decorative but strangely pathetic. I must get her to sit to me.\""
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "She begun to argue that there was something unreal about most English people."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"They touch life with gloves on. They're pretending about something all the time. Pretending quite nice and decent things, of course. But still....\""
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"Everybody pretends,\" Marya was thinking. \"French people pretend every bit as much, only about different things and not so obviously. She'll know that when she's been here as long as I have.\""
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"As long as I have.\" The four years she had spent in Paris seemed to stretch into infinity."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"English people...\" continued Miss De Solla in a dogmatic voice."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "The drone of a concertina sounded from the courtyard of the studio. The man was really trying to play \"Yes, we have no bananas\". But it was an unrecognizable version, and listening to it gave Marya the same feeling of melancholy pleasure as she had when walking along the shadowed side of one of those narrow streets full of shabby *parfumeries*, second-hand book-stalls, cheap hat-shops, bars frequented by gaily-painted ladies and loud-voiced men, midwives' premises...."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "Montparnasse was full of these streets and they were often inordinately long. You could walk for hours. The Rue Vaugirard, for instance. Marya had never yet managed to reach the end of the Rue Vaugirard, which was a very respectable thoroughfare on the whole. But if you went far enough towards Grenelle and then turned down side streets...."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "Only the day before she had discovered, in this way, a most attractive restaurant. There was no *patronne*, but the *patron* was beautifully made up. Crimson was where crimson should be, and rose-colour where rose-colour. He talked with a lisp. The room was full of men in caps who bawled intimacies at each other; a gramophone played without ceasing; a beautiful white dog under the counter, which everybody called Zaza and threw bones to, barked madly."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "But Stephan objected with violence to these wanderings in sordid streets. And though Marya considered that he was extremely inconsistent, she generally gave way to his inconsistencies and spent hours alone in the bedroom of the Hôtel de l'Univers. Not that she objected to solitude. Quite the contrary. She had books, thank Heaven, quantities of books. All sorts of books."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "Still, there were moments when she realized that her existence, though delightful, was haphazard. It lacked, as it were, solidity; it lacked the necessary fixed background. A bedroom, balcony and *cabinet de toilette* in a cheap Montmartre hotel cannot possibly be called a solid background."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "Miss De Solla, who had by this time pretty well exhausted her fascinating subject, stopped talking."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "Marya said: \"Yes, but it's pretty lonely, not knowing any English people.\""
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "\"Well,\" Miss De Solla answered, \"if that's what you're pining for. What are you doing this evening? Come along to Lefranc's and meet the Heidlers. You must have heard of Heidler.\""
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "\"Never.\""
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "\"Hugh Heidler?\" protested Miss De Solla."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "She proceeded to explain Mr Heidler, who was a very important person in his way, it seemed. He made discoveries; he helped the young men, he had a flair."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "\"I believe they intend to settle in France for good now—Provence in the winter and Montparnasse for the rest of the year—you know the sort of thing. He's had a kind of nervous breakdown. Of course, people say—\""
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "Miss De Solla stopped."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "\"I like Mrs Heidler anyway; she's a very sensible woman; no nonsense there. She's one of the few people in Montparnasse whom I do like. Most of them.... But abuse isn't any good, and it's better to be clean than kind.\""
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "\"Much better!\" agreed Marya."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "\"Not that they are mad on baths or nailbrushes, either,\" said the other. \"Never mind.\" She got up and lit a cigarette. \"Mrs Heidler paints, too. It's pretty awful to think of the hundreds of women round here painting away, and all that, isn't it?\""
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "She looked round her austere studio, and the Jewess's hunger for the softness and warmth of life was naked in her eyes."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "\"Well,\" said Marya, \"I'd like to come, but I must telephone to Stephan, to my husband. Where can I telephone from?\""
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "\"From the Café Buffalo. Wait a minute, I've got to stand on a chair to put my gas out. My shark of a landlady won't put in electric light. Mind you, I'm fond of this place, though the smell is really awful sometimes. That head over there doesn't look so bad in this light, does it?\" said Miss De Solla, wistfully."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "* * * * *"
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "Lefranc's is a small restaurant half-way up the Boulevard du Montparnasse. It is much frequented by the Anglo-Saxons of the quarter, and by a meagre sprinkling of Scandinavians and Dutch."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "The *patron* is provincial and affable. The *patronne*, who sits beaming behind the counter, possesses a mildly robust expression and the figure and coiffure of the nineties; her waist goes in, her hips come out, her long black hair is coiled into a smooth bun on the top of her round head. She is very restful to the tired eye."
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "The Heidlers were sitting at the table at the end of the room."
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "\"Good evening,\" said Mrs Heidler in the voice of a well-educated young male. Her expression was non-committal."
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "\"*Encore deux vermouths-cassis!*\" said Mr Heidler to the waitress."
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "They were fresh, sturdy people. Mr Heidler, indeed, was so very sturdy that it was difficult to imagine him suffering from a nervous breakdown of any kind whatever. He looked as if nothing could break him down. He was a tall, fair man of perhaps forty-five. His shoulders were tremendous, his nose arrogant, his hands short, broad and so plump that the knuckles were dimpled. The wooden expression of his face was carefully striven for. His eyes were light blue and intelligent, but with a curious underlying expression of obtuseness—even of brutality."
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "\"I expect he's awfully fussy,\" thought Marya."
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "Mrs Heidler was a good deal younger than her husband, plump and dark, country with a careful dash of Chelsea, and wore with assurance a drooping felt hat which entirely hid the upper part of her face. She sat in silence for some time listening to Miss De Solla's conversation about the dearth of studios, and then suddenly remarked to Marya:"
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "\"H. J. and I have quite made up our minds that eating is the greatest pleasure in life. Well, I mean, it is, isn't it? At any rate, it's one of the few pleasures that never let you down.\""
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "Her eyes were beautiful, clearly brown, the long lashes curving upwards, but there was a suspicious, almost a deadened look in them."
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "\"I'm a well-behaved young woman,\" they said, \"and you're not going to catch me out, so don't think it.\" Or perhaps, thought Marya, she's just thoroughly enjoying her pilaff."
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "Miss De Solla, looking more ascetic than ever, agreed that eating was jolly. They discussed eating, cooking, England and, finally, Marya, whom they spoke of in the third person as if she were a strange animal or at any rate a strayed animal—one not quite of the fold."
+    },
+    {
+      "id": "sit-0-58",
+      "sceneId": "sit-0",
+      "text": "* * * * *"
+    },
+    {
+      "id": "sit-0-59",
+      "sceneId": "sit-0",
+      "text": "\"But you are English—or aren't you?\" asked Heidler."
+    },
+    {
+      "id": "sit-0-60",
+      "sceneId": "sit-0",
+      "text": "He was walking along the boulevard by her side, his head carefully thrown back."
+    },
+    {
+      "id": "sit-0-61",
+      "sceneId": "sit-0",
+      "text": "Marya assured him that she was. \"But I left England four years ago.\""
+    },
+    {
+      "id": "sit-0-62",
+      "sceneId": "sit-0",
+      "text": "He asked: \"And you've been all the time in Paris?\" Then, without waiting for her to answer, he added fussily: \"Where have Lois and Miss De Solla got to? Oh, there they are! I'll just go and see if Guy is in here, Lois.\""
+    },
+    {
+      "id": "sit-0-63",
+      "sceneId": "sit-0",
+      "text": "He disappeared into the Café du Dôme."
+    },
+    {
+      "id": "sit-0-64",
+      "sceneId": "sit-0",
+      "text": "\"It's a dreadful place, isn't it?\" said Mrs Heidler."
+    },
+    {
+      "id": "sit-0-65",
+      "sceneId": "sit-0",
+      "text": "Marya, looking through the door at the mournful and tightly packed assembly, agreed that it was rather dreadful."
+    },
+    {
+      "id": "sit-0-66",
+      "sceneId": "sit-0",
+      "text": "Heidler emerged, puffing slightly, and announced in a worried tone:"
+    },
+    {
+      "id": "sit-0-67",
+      "sceneId": "sit-0",
+      "text": "\"He's not here. We'll sit on the terrace and wait for him.\""
+    },
+    {
+      "id": "sit-0-68",
+      "sceneId": "sit-0",
+      "text": "The terrace was empty and cold, but without argument they all sat down and ordered coffee and liqueur brandies."
+    },
+    {
+      "id": "sit-0-69",
+      "sceneId": "sit-0",
+      "text": "Marya, who was beginning to shiver, drank her brandy and found herself staring eagerly and curiously at Mrs Heidler."
+    },
+    {
+      "id": "sit-0-70",
+      "sceneId": "sit-0",
+      "text": "A strong, dark woman, her body would be duskily solid like her face. There was something of the earth about her, something of the peasant. Her mouth was large and thick-lipped, but not insensitive, and she had an odd habit of wincing when Heidler spoke to her sharply. A tremor would screw up one side of her face so that for an instant she looked like a hurt animal."
+    },
+    {
+      "id": "sit-0-71",
+      "sceneId": "sit-0",
+      "text": "\"I bet that man is a bit of brute sometimes,\" thought Marya. And as she thought it, she felt his hand lying heavily on her knee."
+    },
+    {
+      "id": "sit-0-72",
+      "sceneId": "sit-0",
+      "text": "He looked kind, peaceful and exceedingly healthy. His light, calm eyes searched the faces of the people passing on the Boulevard Montparnasse, and his huge hand lay possessively, heavy as lead, on her knee."
+    },
+    {
+      "id": "sit-0-73",
+      "sceneId": "sit-0",
+      "text": "Ridiculous sort of thing to do. Ridiculous, not frightening. Why frightening?"
+    },
+    {
+      "id": "sit-0-74",
+      "sceneId": "sit-0",
+      "text": "She made a cautious but decided movement and the hand was withdrawn."
+    },
+    {
+      "id": "sit-0-75",
+      "sceneId": "sit-0",
+      "text": "\"It's very cold here,\" said Heidler in his gentle voice. \"Let's go on to the Select Bar, shall we?\""
+    },
+    {
+      "id": "sit-0-76",
+      "sceneId": "sit-0",
+      "text": "* * * * *"
+    },
+    {
+      "id": "sit-0-77",
+      "sceneId": "sit-0",
+      "text": "At a little after midnight Marya got back to the Hôtel de l'Univers, Rue Cauchois. She mounted five flights of steep, uncarpeted stairs, felt her way along an unlighted passage, flung her bedroom door open and embraced her husband violently. He looked so thin after the well-fed Heidlers."
+    },
+    {
+      "id": "sit-0-78",
+      "sceneId": "sit-0",
+      "text": "\"*Tiens, Mado*,\" he said. \"You're very late.\""
+    },
+    {
+      "id": "sit-0-79",
+      "sceneId": "sit-0",
+      "text": "The room was large and low-ceilinged, the striped wallpaper faded to inoffensiveness. A huge dark wardrobe faced a huge dark bed. The rest of the furniture shrank away into corners, battered, and apologetic. A narrow door on the left led into small, very dark dressing-room. There was no carpet on the floor."
+    },
+    {
+      "id": "sit-0-80",
+      "sceneId": "sit-0",
+      "text": "\"I've just this minute got back,\" remarked Stephan."
+    },
+    {
+      "id": "sit-0-81",
+      "sceneId": "sit-0",
+      "text": "Marya said: \"Well, was everything all right?\" And when he answered, \"Yes,\" she asked no further questions."
+    },
+    {
+      "id": "sit-0-82",
+      "sceneId": "sit-0",
+      "text": "Stephan disliked being questioned and, when closely pressed, he lied. He just lied. Not plausibly or craftily, but impatiently and absent-mindedly. So Marya had long ago stopped questioning. For she was reckless, lazy, a vagabond by nature, and for the first time in her life she was very near to being happy."
+    }
+  ]
+}

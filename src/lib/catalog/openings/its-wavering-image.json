@@ -1,0 +1,322 @@
+{
+  "id": "its-wavering-image",
+  "title": "\"Its Wavering Image\"",
+  "author": "Sui Sin Far",
+  "year": "1912",
+  "note": "Project Gutenberg 62940 (Mrs. Spring Fragrance). Host-only Rituals seat — \"Its Wavering Image\" only (PG l.2307–2562), from \"Pan was a half white, half Chinese girl.\" to \"…was comforted.\" Title printed in quotation marks, kept. Sections I–IV as printed; the * * * before the coda kept; the 8-line song kept as verse (lines joined ' / '), unattributed in the text, so no credit added. 'Mun You' / 'Man You' and thou/thee/wilt kept as printed. Year 1912 (A. C. McClurg, per the PG text). PG reading-ease 80.9 (whole volume) — no invented Launch rank. Place: San Francisco (Chinatown). Minutes ~8 per the brief. Sits: unwind / before sleep. Host intro: Eight minutes, one story. It's from 1912 and it uses the words of its time: Pan is called \"half white, half Chinese\", and Chinatown is framed as picturesque and quaint, the way the white reporter sees it. The story is on Pan's side, and it knows exactly what that gaze costs her.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Section I",
+      "place": "Section I",
+      "reentry": "Pan was a half white, half Chinese girl. Her mother was dead, and Pan lived with her father who kept an Oriental Bazaar on Dupont Street. All her life had Pan lived in Chinatown, and if she were diffe",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "sit-1",
+      "title": "Section II",
+      "place": "Section II",
+      "reentry": "It was a cool, quiet evening, after a hot day. A new moon was in the sky.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "sit-2",
+      "title": "Section III",
+      "place": "Section III",
+      "reentry": "\"Cursed be his ancestors,\" bayed Man You.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "sit-3",
+      "title": "Section IV",
+      "place": "Section IV",
+      "reentry": "Mark Carson, back in the city after an absence of two months, thought of Pan. He would see her that very evening. Dear little Pan, pretty Pan, clever Pan, amusing Pan; Pan, who was always so frankly g",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Pan was a half white, half Chinese girl. Her mother was dead, and Pan lived with her father who kept an Oriental Bazaar on Dupont Street. All her life had Pan lived in Chinatown, and if she were different in any sense from those around her, she gave little thought to it. It was only after the coming of Mark Carson that the mystery of her nature began to trouble her."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "They met at the time of the boycott of the Sam Yups by the See Yups. After the heat and dust and unsavoriness of the highways and byways of Chinatown, the young reporter who had been sent to find a story, had stepped across the threshold of a cool, deep room, fragrant with the odor of dried lilies and sandalwood, and found Pan."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "She did not speak to him, nor he to her. His business was with the spectacled merchant, who, with a pointed brush, was making up accounts in brown paper books and rolling balls in an abacus box. As to Pan, she always turned from whites. With her father's people she was natural and at home; but in the presence of her mother's she felt strange and constrained, shrinking from their curious scrutiny as she would from the sharp edge of a sword."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "When Mark Carson returned to the office, he asked some questions concerning the girl who had puzzled him. What was she? Chinese or white? The city editor answered him, adding: \"She is an unusually bright girl, and could tell more stories about the Chinese than any other person in this city—if she would.\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Mark Carson had a determined chin, clever eyes, and a tone to his voice which easily won for him the confidence of the unwary. In the reporter's room he was spoken of as \"a man who would sell his soul for a story.\""
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "After Pan's first shyness had worn off, he found her bewilderingly frank and free with him; but he had all the instincts of a gentleman save one, and made no ordinary mistake about her. He was Pan's first white friend. She was born a Bohemian, exempt from the conventional restrictions imposed upon either the white or Chinese woman; and the Oriental who was her father mingled with his affection for his child so great a respect for and trust in the daughter of the dead white woman, that everything she did or said was right to him. And Pan herself! A white woman might pass over an insult; a Chinese woman fail to see one. But Pan! He would be a brave man indeed who offered one to childish little Pan."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "All this Mark Carson's clear eyes perceived, and with delicate tact and subtlety he taught the young girl that, all unconscious until his coming, she had lived her life alone. So well did she learn this lesson that it seemed at times as if her white self must entirely dominate and trample under foot her Chinese."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Meanwhile, in full trust and confidence, she led him about Chinatown, initiating him into the simple mystery and history of many things, for which she, being of her father's race, had a tender regard and pride. For her sake he was received as a brother by the yellow-robed priest in the joss house, the Astrologer of Prospect Place, and other conservative Chinese. The Water Lily Club opened its doors to him when she knocked, and the Sublimely Pure Brothers' organization admitted him as one of its honorary members, thereby enabling him not only to see but to take part in a ceremony in which no American had ever before participated. With her by his side, he was welcomed wherever he went. Even the little Chinese women in the midst of their babies, received him with gentle smiles, and the children solemnly munched his candies and repeated nursery rhymes for his edification."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "He enjoyed it all, and so did Pan. They were both young and light-hearted. And when the afternoon was spent, there was always that high room open to the stars, with its China bowls full of flowers and its big colored lanterns, shedding a mellow light."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Sometimes there was music. A Chinese band played three evenings a week in the gilded restaurant beneath them, and the louder the gongs sounded and the fiddlers fiddled, the more delighted was Pan. Just below the restaurant was her father's bazaar. Occasionally Mun You would stroll upstairs and inquire of the young couple if there was anything needed to complete their felicity, and Pan would answer: \"Thou only.\" Pan was very proud of her Chinese father. \"I would rather have a Chinese for a father than a white man,\" she often told Mark Carson. The last time she had said that he had asked whom she would prefer for a husband, a white man or a Chinese. And Pan, for the first time since he had known her, had no answer for him."
+    },
+    {
+      "id": "sit-1-0",
+      "sceneId": "sit-1",
+      "text": "It was a cool, quiet evening, after a hot day. A new moon was in the sky."
+    },
+    {
+      "id": "sit-1-1",
+      "sceneId": "sit-1",
+      "text": "\"How beautiful above! How unbeautiful below!\" exclaimed Mark Carson involuntarily."
+    },
+    {
+      "id": "sit-1-2",
+      "sceneId": "sit-1",
+      "text": "He and Pan had been gazing down from their open retreat into the lantern-lighted, motley-thronged street beneath them."
+    },
+    {
+      "id": "sit-1-3",
+      "sceneId": "sit-1",
+      "text": "\"Perhaps it isn't very beautiful,\" replied Pan, \"but it is here I live. It is my home.\" Her voice quivered a little."
+    },
+    {
+      "id": "sit-1-4",
+      "sceneId": "sit-1",
+      "text": "He leaned towards her suddenly and grasped her hands."
+    },
+    {
+      "id": "sit-1-5",
+      "sceneId": "sit-1",
+      "text": "\"Pan,\" he cried, \"you do not belong here. You are white—white.\""
+    },
+    {
+      "id": "sit-1-6",
+      "sceneId": "sit-1",
+      "text": "\"No! no!\" protested Pan."
+    },
+    {
+      "id": "sit-1-7",
+      "sceneId": "sit-1",
+      "text": "\"You are,\" he asserted. \"You have no right to be here.\""
+    },
+    {
+      "id": "sit-1-8",
+      "sceneId": "sit-1",
+      "text": "\"I was born here,\" she answered, \"and the Chinese people look upon me as their own.\""
+    },
+    {
+      "id": "sit-1-9",
+      "sceneId": "sit-1",
+      "text": "\"But they do not understand you,\" he went on. \"Your real self is alien to them. What interest have they in the books you read—the thoughts you think?\""
+    },
+    {
+      "id": "sit-1-10",
+      "sceneId": "sit-1",
+      "text": "\"They have an interest in me,\" answered faithful Pan. \"Oh, do not speak in that way any more.\""
+    },
+    {
+      "id": "sit-1-11",
+      "sceneId": "sit-1",
+      "text": "\"But I must,\" the young man persisted. \"Pan, don't you see that you have got to decide what you will be—Chinese or white? You cannot be both.\""
+    },
+    {
+      "id": "sit-1-12",
+      "sceneId": "sit-1",
+      "text": "\"Hush! Hush!\" bade Pan. \"I do not love you when you talk to me like that.\""
+    },
+    {
+      "id": "sit-1-13",
+      "sceneId": "sit-1",
+      "text": "A little Chinese boy brought tea and saffron cakes. He was a picturesque little fellow with a quaint manner of speech. Mark Carson jested merrily with him, while Pan holding a tea-bowl between her two small hands laughed and sipped."
+    },
+    {
+      "id": "sit-1-14",
+      "sceneId": "sit-1",
+      "text": "When they were alone again, the silver stream and the crescent moon became the objects of their study. It was a very beautiful evening."
+    },
+    {
+      "id": "sit-1-15",
+      "sceneId": "sit-1",
+      "text": "After a while Mark Carson, his hand on Pan's shoulder, sang:"
+    },
+    {
+      "id": "sit-1-16",
+      "sceneId": "sit-1",
+      "text": "\"And forever, and forever, / As long as the river flows, / As long as the heart has passions, / As long as life has woes, / The moon and its broken reflection, / And its shadows shall appear, / As the symbol of love in heaven, / And its wavering image here.\""
+    },
+    {
+      "id": "sit-1-17",
+      "sceneId": "sit-1",
+      "text": "Listening to that irresistible voice singing her heart away, the girl broke down and wept. She was so young and so happy."
+    },
+    {
+      "id": "sit-1-18",
+      "sceneId": "sit-1",
+      "text": "\"Look up at me,\" bade Mark Carson. \"Oh, Pan! Pan! Those tears prove that you are white.\""
+    },
+    {
+      "id": "sit-1-19",
+      "sceneId": "sit-1",
+      "text": "Pan lifted her wet face."
+    },
+    {
+      "id": "sit-1-20",
+      "sceneId": "sit-1",
+      "text": "\"Kiss me, Pan,\" said he. It was the first time."
+    },
+    {
+      "id": "sit-1-21",
+      "sceneId": "sit-1",
+      "text": "Next morning Mark Carson began work on the special-feature article which he had been promising his paper for some weeks."
+    },
+    {
+      "id": "sit-2-0",
+      "sceneId": "sit-2",
+      "text": "\"Cursed be his ancestors,\" bayed Man You."
+    },
+    {
+      "id": "sit-2-1",
+      "sceneId": "sit-2",
+      "text": "He cast a paper at his daughter's feet and left the room."
+    },
+    {
+      "id": "sit-2-2",
+      "sceneId": "sit-2",
+      "text": "Startled by her father's unwonted passion, Pan picked up the paper, and in the clear passionless light of the afternoon read that which forever after was blotted upon her memory."
+    },
+    {
+      "id": "sit-2-3",
+      "sceneId": "sit-2",
+      "text": "\"Betrayed! Betrayed! Betrayed to be a betrayer!\""
+    },
+    {
+      "id": "sit-2-4",
+      "sceneId": "sit-2",
+      "text": "It burnt red hot; agony unrelieved by words, unassuaged by tears."
+    },
+    {
+      "id": "sit-2-5",
+      "sceneId": "sit-2",
+      "text": "So till evening fell. Then she stumbled up the dark stairs which led to the high room open to the stars and tried to think it out. Someone had hurt her. Who was it? She raised her eyes. There shone: \"Its Wavering Image.\" It helped her to lucidity. He had done it. Was it unconsciously dealt—that cruel blow? Ah, well did he know that the sword which pierced her through others, would carry with it to her own heart, the pain of all those others. None knew better than he that she, whom he had called \"a white girl, a white woman,\" would rather that her own naked body and soul had been exposed, than that things, sacred and secret to those who loved her, should be cruelly unveiled and ruthlessly spread before the ridiculing and uncomprehending foreigner. And knowing all this so well, so well, he had carelessly sung her heart away, and with her kiss upon his lips, had smilingly turned and stabbed her. She, who was of the race that remembers."
+    },
+    {
+      "id": "sit-3-0",
+      "sceneId": "sit-3",
+      "text": "Mark Carson, back in the city after an absence of two months, thought of Pan. He would see her that very evening. Dear little Pan, pretty Pan, clever Pan, amusing Pan; Pan, who was always so frankly glad to have him come to her; so eager to hear all that he was doing; so appreciative, so inspiring, so loving. She would have forgotten that article by now. Why should a white woman care about such things? Her true self was above it all. Had he not taught her *that* during the weeks in which they had seen so much of one another? True, his last lesson had been a little harsh, and as yet he knew not how she had taken it; but even if its roughness had hurt and irritated, there was a healing balm, a wizard's oil which none knew so well as he how to apply."
+    },
+    {
+      "id": "sit-3-1",
+      "sceneId": "sit-3",
+      "text": "But for all these soothing reflections, there was an undercurrent of feeling which caused his steps to falter on his way to Pan. He turned into Portsmouth Square and took a seat on one of the benches facing the fountain erected in memory of Robert Louis Stevenson. Why had Pan failed to answer the note he had written telling her of the assignment which would keep him out of town for a couple of months and giving her his address? Would Robert Louis Stevenson have known why? Yes—and so did Mark Carson. But though Robert Louis Stevenson would have boldly answered himself the question, Mark Carson thrust it aside, arose, and pressed up the hill."
+    },
+    {
+      "id": "sit-3-2",
+      "sceneId": "sit-3",
+      "text": "\"I knew they would not blame you, Pan!\""
+    },
+    {
+      "id": "sit-3-3",
+      "sceneId": "sit-3",
+      "text": "\"Yes.\""
+    },
+    {
+      "id": "sit-3-4",
+      "sceneId": "sit-3",
+      "text": "\"And there was no word of you, dear. I was careful about that, not only for your sake, but for mine.\""
+    },
+    {
+      "id": "sit-3-5",
+      "sceneId": "sit-3",
+      "text": "Silence."
+    },
+    {
+      "id": "sit-3-6",
+      "sceneId": "sit-3",
+      "text": "\"It is mere superstition anyway. These things have got to be exposed and done away with.\""
+    },
+    {
+      "id": "sit-3-7",
+      "sceneId": "sit-3",
+      "text": "Still silence."
+    },
+    {
+      "id": "sit-3-8",
+      "sceneId": "sit-3",
+      "text": "Mark Carson felt strangely chilled. Pan was not herself tonight. She did not even look herself. He had been accustomed to seeing her in American dress. Tonight she wore the Chinese costume. But for her clear-cut features she might have been a Chinese girl. He shivered."
+    },
+    {
+      "id": "sit-3-9",
+      "sceneId": "sit-3",
+      "text": "\"Pan,\" he asked, \"why do you wear that dress?\""
+    },
+    {
+      "id": "sit-3-10",
+      "sceneId": "sit-3",
+      "text": "Within her sleeves Pan's small hands struggled together; but her face and voice were calm."
+    },
+    {
+      "id": "sit-3-11",
+      "sceneId": "sit-3",
+      "text": "\"Because I am a Chinese woman,\" she answered."
+    },
+    {
+      "id": "sit-3-12",
+      "sceneId": "sit-3",
+      "text": "\"You are not,\" cried Mark Carson, fiercely. \"You cannot say that now, Pan. You are a white woman—white. Did your kiss not promise me that?\""
+    },
+    {
+      "id": "sit-3-13",
+      "sceneId": "sit-3",
+      "text": "\"A white woman!\" echoed Pan her voice rising high and clear to the stars above them. \"I would not be a white woman for all the world. *You* are a white man. And *what* is a promise to a white man!\""
+    },
+    {
+      "id": "sit-3-14",
+      "sceneId": "sit-3",
+      "text": "* * * * *"
+    },
+    {
+      "id": "sit-3-15",
+      "sceneId": "sit-3",
+      "text": "When she was lying low, the element of Fire having raged so fiercely within her that it had almost shriveled up the childish frame, there came to the house of Man You a little toddler who could scarcely speak. Climbing upon Pan's couch, she pressed her head upon the sick girl's bosom. The feel of that little head brought tears."
+    },
+    {
+      "id": "sit-3-16",
+      "sceneId": "sit-3",
+      "text": "\"Lo!\" said the mother of the toddler. \"Thou wilt bear a child thyself some day, and all the bitterness of this will pass away.\""
+    },
+    {
+      "id": "sit-3-17",
+      "sceneId": "sit-3",
+      "text": "And Pan, being a Chinese woman, was comforted."
+    }
+  ]
+}

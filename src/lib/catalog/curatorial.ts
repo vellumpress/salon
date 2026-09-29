@@ -1116,6 +1116,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-woman-of-andros",
   "bella-donna",
   "nina-balatka",
+  // Mira Tue 29 Sep 2026 POST-#197 CLEAR — A Farewell to Arms leads Next. Never Featured.
+  // LEAD kept — not Alice Adams, not Quartet, not The Song of Songs.
+  // Its Wavering Image is Rituals only (the one story), not this tail.
+  // Tue POST-#192 Yen and the earlier packs stay ahead.
+  "a-farewell-to-arms",
+  "alice-adams",
+  "quartet",
+  "song-of-songs-sudermann",
 ] as const;
 
 /**

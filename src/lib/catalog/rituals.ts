@@ -479,6 +479,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Nina Balatka was a maiden of Prague, born of Christian parents, and herself a Christian—but she loved a Jew; and this is her story. Volume I, Chapter I — the Kleinseite, Prague. The copyrighted 2003 introduction is out of this bind and out of this open. Anthony Trollope’s 1866 novel. A note on what you are about to read: prejudice against Jews is the subject, not the backdrop. Nina’s family and neighbours say ugly things about Anton and his people, openly and often. Those are the characters’ voices; the narrator is on the lovers’ side. Some of the long paragraphs have been broken into shorter screens; every word is as Trollope wrote it. Soft Trollope, carefully. Soft Prague, carefully. Prague is primary. PG reading-ease 88.4 is easy. No score is invented for this sit.`,
   "la-lupa":
     `She was tall and lean; but she had a firm, full bust, and yet she was no longer young. This sit is La Lupa only — harvest fields under Etna, and the village that calls her the she-wolf. Stop when Nanni stammers. Giovanni Verga, in Nathan Haskell Dole’s English. Dole is named in the About only. The English year is 1896. One story this sit. It ends on an axe, so save it for unwinding or a walk rather than the last thing before sleep. Soft Verga, carefully. This is not I Malavoglia. Soft Sicily, carefully. PG reading-ease 80.0, for the whole volume, is easy. No score is invented for this sit.`,
+  "a-farewell-to-arms":
+    `In the late summer of that year we lived in a house in a village that looked across the river and the plain to the mountains. Book I, Chapters I and II — a village across the river from the mountains, on the Italian front. Skip the book list, the half-titles, and the illustration tags; the dedication is out. Ernest Hemingway’s 1929 novel. “BOOK 1” is set as Book I, to match Books II–V. The 25 blanks (——) are the 1929 edition’s own and stay as printed. A heads-up before you start: the soldiers’ banter includes ethnic slurs for Italians, and Frederic uses a racial slur once, late in the book. Those are the book’s 1929 voices. Some of the long paragraphs have been broken into shorter screens; every word is as Hemingway wrote it. Soft Hemingway, carefully. Soft Italy, carefully. Italy is primary. The lead is this book, not Alice Adams, not Quartet, and not The Song of Songs. PG reading-ease 95.8 is very easy. No score is invented for this sit.`,
+  "alice-adams":
+    `The patient, an old-fashioned man, thought the nurse made a mistake in keeping both of the windows open, and her sprightly disregard of his protests added something to his hatred of her. Chapter I — Virgil Adams’s sleepless night in a smoky Midwestern city; Alice comes in with Chapter II. Skip the producer line. Booth Tarkington’s 1921 novel. The year is from the Wikipedia page the PG page links to; neither the PG page nor the PG text prints one. Words printed in capitals for emphasis are set in italics. A heads-up before you start: this is a 1921 novel and it uses the period’s racial language, including an old slur for Black people a few times, and a scene at the dance leans on a stereotype of the Black cloakroom staff. Those are the book’s attitudes. Soft Tarkington, carefully. Soft Midwest, carefully. The US Midwest is primary. PG reading-ease 82.0 is easy. No score is invented for this sit.`,
+  "quartet":
+    `It was about half-past five on an October afternoon when Marya Zelli came out of the Café Lavenue, which is a dignified and comparatively expensive establishment on the Boulevard du Montparnasse. Chapter One — the Café Lavenue and the Boulevard du Montparnasse, Paris. The R. C. Dunning epigraph is the Epigraph and stays in the book; this open starts at Chapter One. Jean Rhys’s 1928 novel, first published as Postures. The dialogue is set in double quotes; “She begun” stays as printed. Before you start: this is a bleak book about a stranded woman kept inside a cruel triangle. It carries the period’s antisemitic phrasing, in the narration and in dialogue, and one racial slur. Those are the book’s 1928 voices. Soft Rhys, carefully. Soft Paris, carefully. Paris is primary. No reading-ease score is on the page, so none is cited. No score is invented for this sit.`,
+  "song-of-songs-sudermann":
+    `Lilly was fourteen years old when her father, Kilian Czepanek, the music-master, suddenly disappeared. Part I, Chapter I — the music-master’s flight, in a garrison town in eastern Germany. Skip the producer line, the 1926 Viking title page, and the printing history. Hermann Sudermann, in Thomas Seltzer’s English. Seltzer is named in the About only. The English year is 1909. The chapters are labelled Part I and Part II, because the numbering starts again. A few things to know going in: it is frank, for its day, about seduction, adultery, and a woman kept by one man after another, and it carries the period’s antisemitic phrasing and one racial slur in a story someone tells. Those are the book’s attitudes. Soft Sudermann, carefully. This is not the Song of Songs from the Bible. Soft Germany, carefully, from the garrison town to Berlin. Germany is primary. Long, carefully. PG reading-ease 81.4 is easy. No score is invented for this sit.`,
+  "its-wavering-image":
+    `Pan was a half white, half Chinese girl. This sit is “Its Wavering Image” only — Chinatown, San Francisco, from her father’s bazaar on Dupont Street to a high room open to the stars. Stop when Pan is comforted. Sui Sin Far’s 1912 story, from Mrs. Spring Fragrance. One story this sit. The four numbered sections, the song, and the break before the last scene stay as printed. A light note: the story uses the words of its time, “half white, half Chinese”, and frames Chinatown as picturesque and quaint the way the white reporter sees it; the story is on Pan’s side. Soft Sui Sin Far, carefully. This is not the title story, Mrs. Spring Fragrance. Soft San Francisco, carefully. San Francisco is primary. PG reading-ease 80.9, for the whole volume, is easy. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1308,6 +1318,11 @@ export const RITUAL_LANES: RitualLane[] = [
       // La Lupa is Unwind and On a walk, not before-sleep.
       "the-woman-of-andros",
       "bella-donna",
+      // Mira Tue 29 Sep 2026 POST-#197 CLEAR — A Farewell to Arms leads Next, and is not on this lane.
+      // Quartet is unwind only. Alice Adams, The Song of Songs, and Its Wavering Image sit here.
+      "alice-adams",
+      "song-of-songs-sudermann",
+      "its-wavering-image",
     ],
   },
   {
@@ -1708,6 +1723,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-woman-of-andros",
       "bella-donna",
       "la-lupa",
+      // Mira Tue 29 Sep 2026 POST-#197 CLEAR — A Farewell to Arms leads. Never Featured.
+      // LEAD kept — not Alice Adams, not Quartet, not The Song of Songs.
+      // Its Wavering Image is the Host-only story and sits here and before sleep, not on a walk.
+      "a-farewell-to-arms",
+      "alice-adams",
+      "quartet",
+      "song-of-songs-sudermann",
+      "its-wavering-image",
     ],
   },
   {
@@ -1989,6 +2012,9 @@ export const RITUAL_LANES: RitualLane[] = [
       // Nina Balatka is Waking up only, not this lane. La Lupa sits here and on Unwind, not before-sleep.
       "the-bitter-tea-of-general-yen",
       "la-lupa",
+      // Mira Tue 29 Sep 2026 POST-#197 CLEAR — A Farewell to Arms leads. Never Featured.
+      // Alice Adams, Quartet, The Song of Songs, and Its Wavering Image are not on this lane.
+      "a-farewell-to-arms",
     ],
   },
   {
@@ -2088,6 +2114,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "bella-donna": 8,
   "nina-balatka": 8,
   "la-lupa": 9,
+  "a-farewell-to-arms": 10,
+  "alice-adams": 10,
+  "quartet": 11,
+  "song-of-songs-sudermann": 9,
+  "its-wavering-image": 8,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
   "all-quiet-on-the-western-front": 2,

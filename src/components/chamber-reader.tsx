@@ -12,7 +12,7 @@ import { chapterPlace, spineChapters } from "@/lib/spine-nav";
 import { useTbr } from "@/lib/store";
 import { fillClass, planeOf, type Fill } from "@/lib/mondrian";
 import { readerIntro } from "@/lib/reader-intro";
-import { splitEmphasis } from "@/lib/emphasized-text";
+import { isSectionBreak, splitEmphasis } from "@/lib/emphasized-text";
 import { shouldShowPreface } from "@/lib/reader-threshold";
 import { FavoriteMark } from "@/components/favorite-mark";
 import { PlaceChip } from "@/components/place-chip";
@@ -63,6 +63,13 @@ type Overlay =
 const LOOKBACK = 12;
 
 function EmphasizedText({ text }: { text: string }) {
+  if (isSectionBreak(text)) {
+    return (
+      <span className="section-break" role="separator" aria-label="Section break">
+        <span aria-hidden="true">· · ·</span>
+      </span>
+    );
+  }
   return splitEmphasis(text).map((part, i) =>
     part.type === "em" ? <em key={i}>{part.value}</em> : part.value,
   );
