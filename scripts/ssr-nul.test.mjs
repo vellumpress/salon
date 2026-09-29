@@ -129,11 +129,18 @@ test("pages safety strips index and 404 without touching hashed assets", () => {
 
 test("a new shell is stored only after its entry assets exist", () => {
   const sw = renderShellServiceWorker();
-  assert.equal(SHELL_CACHE_NAME, "tbr-shell-v2");
+  assert.equal(SHELL_CACHE_NAME, "tbr-shell-v3");
+  assert.match(sw, /tbr-shell-v3/);
   assert.match(sw, /tbr-shell-v2/);
   assert.match(sw, /__fresh=/);
   assert.match(sw, /recover-shell/);
   assert.match(sw, /withTimeout/);
+  assert.match(sw, /SHELL_RACE_MS = 600/);
+  assert.match(sw, /sameAssetSet/);
+  assert.match(sw, /__sw_live/);
+  assert.match(sw, /skipWaiting/);
+  assert.match(sw, /clients\.claim/);
+  assert.match(sw, /reloadOpenClients/);
   const commit = sw.slice(sw.indexOf("function commitShell"));
   const warmAt = commit.indexOf("warmAssets(critical)");
   const putAt = commit.indexOf("cache.put(shellUrl()");
@@ -142,6 +149,15 @@ test("a new shell is stored only after its entry assets exist", () => {
   assert.doesNotMatch(sw, /nextCache\.put/);
   const keepPrev = sw.slice(sw.indexOf("function pruneToGenerations"));
   assert.match(keepPrev, /keep\[prev\[i\]\]/);
+  assert.match(keepPrev, /keep\[live\[i\]\]/);
+  const asset = sw.slice(sw.indexOf("function cacheFirstAsset"), sw.indexOf("function handleNavigate"));
+  const goodReturn = asset.indexOf("if (goodHit) return hit");
+  const fetchAt = asset.indexOf("return fetch(req");
+  assert.ok(goodReturn > 0 && fetchAt > goodReturn, "a good cached module is served without waiting");
+  assert.match(asset, /plainMiss/);
+  assert.match(asset, /text\/html/);
+  assert.match(asset, /cache:\s*"no-cache"/);
+  assert.match(asset, /!res\.ok \|\| type\.indexOf\("text\/html"\)/);
 });
 
 test("boot watch reloads once when the entry module never hydrates", () => {

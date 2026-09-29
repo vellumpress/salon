@@ -168,19 +168,18 @@ export function stripNulBytesInHtmlTree(destDir) {
 
 export const SHELL_CACHE_ATTR = "data-shell-network";
 /**
- * Pages shell cache. v2 starts empty so the previous document is not served
- * while the network can still return this deploy. `tbr-shell` is kept only
- * as an offline fallback and deleted once a v2 shell commits. `vellum-shell`
- * is dropped on activate.
+ * Pages shell cache. v3 starts empty. `tbr-shell-v2` is the offline fallback
+ * until a v3 document commits, then it is deleted. Older names (`tbr-shell`,
+ * `vellum-shell`) are dropped on activate.
  */
-export const SHELL_CACHE_NAME = "tbr-shell-v2";
+export const SHELL_CACHE_NAME = "tbr-shell-v3";
 /**
  * Hashed js/css only. Book JSON stays on the network so a long novel cannot
  * evict the shell. The activate handler must not delete this cache.
  */
 export const SHELL_ASSET_CACHE_NAME = "tbr-assets";
-/** Previous shell cache. Deleted on activate; do not copy it forward. */
-export const RETIRED_SHELL_CACHE_NAME = "tbr-shell";
+/** Previous shell cache. Kept as an offline fallback until a v3 shell commits. */
+export const RETIRED_SHELL_CACHE_NAME = "tbr-shell-v2";
 
 /**
  * Home Screen cold start.
@@ -188,30 +187,40 @@ export const RETIRED_SHELL_CACHE_NAME = "tbr-shell";
  * GitHub Pages sends `cache-control: max-age=600` even for hashed files, so a
  * phone that slept past ten minutes re-fetches the whole boot graph. The
  * shell is one SPA document: serve the cached `/salon/` HTML for every
- * navigation under the scope (deep links included — no 404 hop), and
- * cache-first the hashed js/css. A background fetch refreshes the shell
- * without blocking paint. The new document is stored only after its entry
- * script and CSS are in the asset cache, and the previous generation of
- * hashes is kept until the following successful update — a deploy must not
- * leave the shell pointing at files the phone does not have. NUL bytes are
- * refused so a poisoned document cannot stick. Book texts are not intercepted.
+ * navigation under the scope (deep links included — no 404 hop). Hashed
+ * js/css stay cache-first when the cached bytes are real code. A cached HTML
+ * body or 404 is never returned for those URLs until the network has been
+ * tried. NUL bytes are refused so a poisoned document cannot stick. Book
+ * texts are not intercepted.
  *
- * A navigation whose query contains `__fresh=` skips the shell cache. The
- * inline boot watch uses that once when the entry module 404s or hydration
- * never signals `data-boot="ready"`.
+ * Repeat launches paint the cached shell. The network is given a short race
+ * (`SHELL_RACE_MS`). If that response's asset list differs from the cached
+ * shell — the build manifest — the new document is painted immediately.
+ * A slower response still commits, and open clients are sent through `__fresh`
+ * once so a stale shell cannot keep lazy-importing deleted chunks. The new
+ * service worker takes over with skipWaiting and clients.claim. Hashes the
+ * cached shell still references, including lazy chunks recorded while it was
+ * current, stay in the asset cache until that shell is replaced.
+ *
+ * A navigation whose query contains `__fresh=` skips the shell cache.
  */
 export function renderShellServiceWorker() {
-  return `/* tbr shell: cached HTML for repeat launches; hashed js/css are cache-first. */
+  return `/* tbr shell: cached HTML for repeat launches; hashed js/css are cache-first. A new deploy swaps the shell when its asset manifest differs. */
 var SHELL = "${SHELL_CACHE_NAME}";
 var ASSETS = "${SHELL_ASSET_CACHE_NAME}";
 var RETIRED = "${RETIRED_SHELL_CACHE_NAME}";
+var SHELL_RACE_MS = 600;
 var commitChain = Promise.resolve();
+var reloadedClients = {};
 
 function shellUrl() {
   return new URL("/salon/", self.location.origin).href;
 }
 function manifestUrl() {
   return new URL("/salon/__sw_manifest", self.location.origin).href;
+}
+function liveUrl() {
+  return new URL("/salon/__sw_live", self.location.origin).href;
 }
 function hasNul(text) {
   return text.indexOf(String.fromCharCode(0)) !== -1;
@@ -243,13 +252,24 @@ function shellResponse(html) {
     headers: { "content-type": "text/html; charset=utf-8" },
   });
 }
-function readManifest(cache) {
-  return cache.match(manifestUrl()).then(function (res) {
+function readManifest(cache, url) {
+  return cache.match(url || manifestUrl()).then(function (res) {
     if (!res) return [];
     return res.json().then(function (data) {
       return Array.isArray(data) ? data : [];
     }).catch(function () { return []; });
   });
+}
+function rememberAsset(url) {
+  if (!url) return Promise.resolve();
+  return caches.open(ASSETS).then(function (cache) {
+    return readManifest(cache, liveUrl()).then(function (list) {
+      var i;
+      for (i = 0; i < list.length; i++) if (list[i] === url) return;
+      list.push(url);
+      return cache.put(liveUrl(), jsonResponse(list));
+    });
+  }).catch(function () {});
 }
 function withTimeout(promise, ms) {
   return new Promise(function (resolve) {
@@ -273,10 +293,33 @@ function withTimeout(promise, ms) {
   });
 }
 function isServableCode(res) {
-  if (!res) return false;
+  if (!res || !res.ok || res.type === "opaque") return false;
   var type = (res.headers.get("content-type") || "").toLowerCase();
   if (type.indexOf("text/html") !== -1) return false;
   return true;
+}
+function plainMiss(status) {
+  return new Response("", {
+    status: status || 404,
+    headers: { "content-type": "text/plain; charset=utf-8" },
+  });
+}
+function jsonResponse(data) {
+  return new Response(JSON.stringify(data), {
+    headers: { "content-type": "application/json" },
+  });
+}
+function sameAssetSet(a, b) {
+  if (!a || !b || !a.length || a.length !== b.length) return false;
+  var seen = {};
+  var i;
+  for (i = 0; i < a.length; i++) seen[a[i]] = 1;
+  for (i = 0; i < b.length; i++) if (!seen[b[i]]) return false;
+  return true;
+}
+function shellAssetsDiffer(prevHtml, nextHtml) {
+  if (!prevHtml || !nextHtml) return true;
+  return !sameAssetSet(extractAssetUrls(prevHtml), extractAssetUrls(nextHtml));
 }
 function criticalUrls(urls) {
   var out = [];
@@ -315,21 +358,32 @@ function warmAssets(urls) {
 }
 function pruneToGenerations(urls) {
   return caches.open(ASSETS).then(function (cache) {
-    return readManifest(cache).then(function (prev) {
+    return Promise.all([readManifest(cache), readManifest(cache, liveUrl())]).then(function (lists) {
+      var prev = lists[0];
+      var live = lists[1];
       var keep = {};
       var i;
+      var hasLive = live.length > 0;
       for (i = 0; i < urls.length; i++) keep[urls[i]] = 1;
       for (i = 0; i < prev.length; i++) keep[prev[i]] = 1;
+      for (i = 0; i < live.length; i++) keep[live[i]] = 1;
       return cache.keys().then(function (reqs) {
         return Promise.all(reqs.map(function (req) {
-          if (req.url === manifestUrl()) return Promise.resolve();
+          if (req.url === manifestUrl() || req.url === liveUrl()) return Promise.resolve();
           if (keep[req.url]) return Promise.resolve();
+          // No live generation yet: the previous manifest listed only the
+          // HTML urls. Keep lazy chunks the cached shell still imports.
+          if (!hasLive) {
+            return cache.match(req).then(function (res) {
+              if (res && !isServableCode(res)) return cache.delete(req);
+            });
+          }
           return cache.delete(req);
         }));
       }).then(function () {
-        return cache.put(manifestUrl(), new Response(JSON.stringify(urls), {
-          headers: { "content-type": "application/json" },
-        }));
+        return cache.put(manifestUrl(), jsonResponse(urls)).then(function () {
+          return cache.put(liveUrl(), jsonResponse(urls));
+        });
       });
     });
   });
@@ -404,19 +458,61 @@ function readCachedShell() {
 function readRetiredShell() {
   return shellFromCache(RETIRED);
 }
+function readCachedShellHtml() {
+  return caches.has(SHELL).then(function (exists) {
+    if (!exists) return null;
+    return caches.open(SHELL);
+  }).then(function (cache) {
+    if (!cache) return null;
+    return cache.match(shellUrl());
+  }).then(function (cached) {
+    if (!cached) return null;
+    return cached.text();
+  }).then(function (html) {
+    return isAppShell(html) ? html : null;
+  }).catch(function () { return null; });
+}
+function reloadOpenClients() {
+  return self.clients.matchAll({ type: "window", includeUncontrolled: true }).then(function (list) {
+    var now = Date.now();
+    return Promise.all(list.map(function (client) {
+      if (!client) return Promise.resolve();
+      var recent = reloadedClients[client.id] || 0;
+      if (recent && now - recent < 5000) return Promise.resolve();
+      var url;
+      try { url = new URL(client.url); } catch (err) { return Promise.resolve(); }
+      if (url.origin !== self.location.origin) return Promise.resolve();
+      if (url.pathname !== "/salon" && url.pathname.indexOf("/salon/") !== 0) return Promise.resolve();
+      if (url.search.indexOf("__fresh=") !== -1) return Promise.resolve();
+      reloadedClients[client.id] = now;
+      url.searchParams.set("__fresh", String(now));
+      if (!client.navigate) return Promise.resolve();
+      return client.navigate(url.href);
+    }));
+  }).catch(function () {});
+}
 function cacheFirstAsset(req) {
   var url = new URL(req.url);
   return caches.open(ASSETS).then(function (cache) {
     return cache.match(url.href).then(function (hit) {
-      var drop = hit && !isServableCode(hit) ? cache.delete(url.href) : Promise.resolve();
+      var goodHit = isServableCode(hit);
+      var drop = !goodHit && hit ? cache.delete(url.href).catch(function () {}) : Promise.resolve();
+      if (goodHit) return hit;
       return drop.then(function () {
-        if (hit && isServableCode(hit)) return hit;
-        return fetch(req).then(function (res) {
-          if (res && res.ok && res.type !== "opaque" && isServableCode(res)) {
+        return fetch(req, { cache: "no-cache" }).then(function (res) {
+          if (isServableCode(res)) {
             var copy = res.clone();
-            return cache.put(req.url, copy).then(function () { return res; });
+            return cache.put(req.url, copy).then(function () {
+              return rememberAsset(url.href);
+            }).then(function () { return res; }, function () { return res; });
+          }
+          var type = res && res.headers ? (res.headers.get("content-type") || "").toLowerCase() : "";
+          if (!res || !res.ok || type.indexOf("text/html") !== -1) {
+            return plainMiss(res && res.status ? res.status : 404);
           }
           return res;
+        }).catch(function () {
+          return plainMiss(504);
         });
       });
     });
@@ -425,24 +521,40 @@ function cacheFirstAsset(req) {
 function handleNavigate(event) {
   var fresh = false;
   try { fresh = new URL(event.request.url).search.indexOf("__fresh=") !== -1; } catch (err) {}
+  var incoming = networkShell(event);
   if (fresh) {
-    return networkShell(event).then(function (html) {
+    return incoming.then(function (html) {
       if (!html) return fetch(event.request);
       event.waitUntil(enqueueCommit(html));
       return shellResponse(html);
     });
   }
-  var incoming = networkShell(event);
-  event.waitUntil(incoming.then(function (html) {
-    if (html) return enqueueCommit(html);
-  }));
-  return withTimeout(readCachedShell(), 1500).then(function (hit) {
-    if (hit) return hit;
-    return incoming.then(function (html) {
-      if (html) return shellResponse(html);
+  return readCachedShellHtml().then(function (prevHtml) {
+    return withTimeout(incoming, SHELL_RACE_MS).then(function (html) {
+      if (html && shellAssetsDiffer(prevHtml, html)) {
+        event.waitUntil(enqueueCommit(html));
+        return shellResponse(html);
+      }
+      if (html && prevHtml) {
+        event.waitUntil(enqueueCommit(html));
+        return shellResponse(prevHtml);
+      }
+      // Network missed the short race. Paint the cached shell so a cold
+      // start stays short, then swap once if the later body is a new build.
+      event.waitUntil(incoming.then(function (later) {
+        if (!later) return;
+        var changed = shellAssetsDiffer(prevHtml, later);
+        return enqueueCommit(later).then(function () {
+          if (changed) return reloadOpenClients();
+        });
+      }));
+      if (prevHtml) return shellResponse(prevHtml);
       return readRetiredShell().then(function (old) {
         if (old) return old;
-        return fetch(event.request);
+        return incoming.then(function (later) {
+          if (later) return shellResponse(later);
+          return fetch(event.request);
+        });
       });
     });
   });
@@ -464,15 +576,31 @@ self.addEventListener("activate", function (event) {
       if (self.registration.navigationPreload) return self.registration.navigationPreload.enable();
     }).then(function () {
       return self.clients.claim();
+    }).then(function () {
+      return networkShell(null).then(function (html) {
+        if (!html) return;
+        return readCachedShellHtml().then(function (prev) {
+          var changed = shellAssetsDiffer(prev, html);
+          return enqueueCommit(html).then(function () {
+            if (changed) return reloadOpenClients();
+          });
+        });
+      });
     }),
   );
 });
 self.addEventListener("message", function (event) {
   var data = event.data || {};
+  if (data.type === "skip-waiting") {
+    self.skipWaiting();
+    return;
+  }
   if (data.type === "recover-shell") {
-    event.waitUntil(caches.open(SHELL).then(function (cache) {
-      return cache.delete(shellUrl());
-    }));
+    event.waitUntil(Promise.all([SHELL, RETIRED].map(function (name) {
+      return caches.open(name).then(function (cache) {
+        return cache.delete(shellUrl());
+      });
+    })));
     return;
   }
   if (data.type !== "warm-assets" || !data.urls || !data.urls.length) return;
