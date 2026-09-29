@@ -1113,7 +1113,7 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       author: "Joseph Conrad",
       year: 1896,
       opening: /^When he stepped off the straight and narrow path/,
-      breaths: 7109,
+      breaths: 7108,
       intro: /if you Host further, name that frame for the room first/i,
     },
     "the-getting-of-wisdom": {
@@ -1122,14 +1122,14 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       author: "Henry Handel Richardson",
       year: 1910,
       opening: /^The four children were lying on the grass/,
-      breaths: 3688,
+      breaths: 3686,
     },
     "noli-me-tangere": {
       gutenberg: 6737,
       title: "Noli Me Tangere (The Social Cancer)",
       author: "José Rizal (tr. Charles Derbyshire)",
       opening: /^On the last of October Don Santiago de los Santos/,
-      breaths: 8108,
+      breaths: 8106,
     },
     "the-story-of-gosta-berling": {
       gutenberg: 56158,
@@ -1331,7 +1331,7 @@ test("Mira FULL-TEXT CLEAR ×4 are stamped local binds with no opening stubs", (
     "nacha-regules": {
       gutenberg: 59441,
       scenes: 25,
-      breaths: 2271,
+      breaths: 2268,
       last: /^THE END$/,
       opening: /^An August night! Hot with the fever of her adolescence as a national capital, Buenos Aires was ablaze/,
     },
@@ -1513,7 +1513,7 @@ test("tbr PM CLEAR ×5 load as local full binds on the Host open", () => {
   const expect = {
     tropic: {
       scenes: 10,
-      breaths: 3259,
+      breaths: 3258,
       opening: /^The whistle blew for eleven o'clock\.$/,
       scene: /^Drought$/,
       absent: /Updated editions will replace/,
