@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
 import { Link, createRouter } from "@tanstack/react-router";
 import { Wordmark } from "@/components/wordmark";
+import { installChunkReloadGuard } from "@/lib/chunk-reload";
 import { AppErrorComponent } from "@/lib/error-component";
 import { APP_BASE_PATH } from "@/lib/site";
 import { routeTree } from "./routeTree.gen";
+
+// Before lazy route and catalog chunks. A stale shell fails those imports
+// after hydration, which the boot watch no longer treats as a stuck boot.
+installChunkReloadGuard();
 
 /**
  * The Pages shell prerenders this mark. The first client paint of a missing
