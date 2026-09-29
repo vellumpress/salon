@@ -14,7 +14,7 @@ export async function loadShelfWork(id: string, opening: boolean): Promise<Packe
         id: entry.id,
         title: entry.title,
         author: entry.author,
-        year: String(entry.year),
+        year: entry.year == null ? "" : String(entry.year),
         minutes: entry.minutes,
         gutenberg: entry.gutenberg,
       };

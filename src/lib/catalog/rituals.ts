@@ -459,6 +459,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `It was the first hour after midnight when Pan Stanislav Polanyetski was approaching the residence in Kremen. Chapter I — Kremen, a July midnight mist, and Pan Stanislav. Skip the Curtin dedication and the Introductory Statement if the phone is tight. Henryk Sienkiewicz, in Jeremiah Curtin’s English, 1895. Curtin is named in the About only. The English year is the Curtin copyright, 1895. Soft Sienkiewicz, carefully. This is not Hania, and not Quo Vadis. Soft Poland, carefully. This is not The Comedienne. The estate is primary. PG reading-ease 77.3 is fairly easy. No score is invented for this sit.`,
   "the-invisible-man":
     `The stranger came early in February, one wintry day, through a biting wind and a driving snow, the last snowfall of the year, over the down, walking from Bramblehurst railway station, and carrying a little black portmanteau in his thickly gloved hand. This sit is The Invisible Man only — the Coach and Horses, and Bramblehurst snow. Skip the Contents. Stop at the end of the novel. H. G. Wells’s 1897 novel. One short novel this sit. Soft Wells, carefully. This is not The Time Machine, and not Kipps. Soft England, carefully. This is not Beacon House, not Coketown, not Limehouse, not Folkestone, not Richmond, and not London occult. PG reading-ease 83.2 is easy. No score is invented for this sit.`,
+  "the-village-in-the-jungle":
+    `The village was called Beddagama, which means the village in the jungle. Chapter I — Beddagama, Ceylon. A katty is a chopping knife, a kind of billhook, used to cut back the undergrowth, and a chena is a patch of jungle cleared, burned and sown for a season’s crop. Be warned that this is a violent book with a grim ending. Skip the dedication ‘To V. W.’ if the phone is tight. Leonard Woolf’s 1913 novel. Soft Woolf, carefully. Soft Ceylon, carefully. This is not Mr. Fortune’s Maggot. Beddagama is primary. The lead is this book, not The Joy of Captain Ribot, not Saracinesca, and not The Torrents of Spring. PG reading-ease 82.0 is easy. No score is invented for this sit.`,
+  "the-joy-of-captain-ribot":
+    `In Malaga they cook it not at all badly; in Vigo better yet; in Bilbao I have eaten it deliciously seasoned on more than one occasion. Chapter I — the Gijón wharf, with Valencia to come. Skip the Sylvester Baxter Introduction if the phone is tight. It stays in the book and is not in the open. Armando Palacio Valdés, in Minna Caroline Smith’s English, 1900. Smith is named in the About only. The English year is 1900. Soft Palacio Valdés, carefully. Soft Spain, carefully. This is not Blood and Sand. Valencia is primary. Accents stay on Señor, Señora, Señorita, and Capitán. Marti is printed as Marti. PG reading-ease 70.8 is fairly easy. No score is invented for this sit.`,
+  "saracinesca":
+    `The hour was six o'clock, and the rooms of the Embassy were as full as they were likely to be that day. Chapter II — the Embassy rooms, Rome. Chapter I stays in the book and is not the open. Skip the author’s Note if the phone is tight. F. Marion Crawford’s 1887 novel. Soft Crawford, carefully. Soft Rome, carefully. Reputation, marriage, and gossip in Roman high society. Rome is primary. PG reading-ease 69.4 is medium. No score is invented for this sit. The first breath is 334 words — phone-hard, left as printed.`,
+  "the-torrents-of-spring":
+    `… At two o'clock in the night he had gone back to his study. The frame, then Chapter I — the summer of 1840, in Frankfort as printed. Skip the epigraph if the phone is tight. Ivan Turgenev, in Constance Garnett’s English, 1897. Garnett is named in the About only. The English year is 1897. This is The Torrents of Spring only. It ends at preparing to go to America. First Love is not in this book, and Mumu is not in this book. Soft Turgenev, carefully. This is not Smoke. Soft Germany, carefully. Frankfort is primary. PG reading-ease 79.5 is fairly easy. No score is invented for this sit.`,
+  "the-bet":
+    `It was a dark autumn night. This sit is The Bet only — a banker’s house and garden lodge. No city is named. No year is cited. Stop at the fireproof safe. Anton Chekhov, in Constance Garnett’s English. Garnett is named in the About only. One story this sit. Soft Chekhov, carefully. This is not In Exile. Soft Russia, carefully. PG reading-ease 80.2, for the whole volume, is easy. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1276,6 +1286,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "kidnapped",
       "revolt-of-the-angels",
       "children-of-the-soil",
+      // Mira Tue 29 Sep 2026 POST-#191 CLEAR — The Village in the Jungle leads Next, and is not on this lane.
+      // Violent, grim ending. The Joy of Captain Ribot, Saracinesca, and The Torrents of Spring sit here.
+      // The Bet is Rituals only (the one story), after them.
+      "the-joy-of-captain-ribot",
+      "saracinesca",
+      "the-torrents-of-spring",
+      "the-bet",
     ],
   },
   {
@@ -1658,6 +1675,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "kidnapped",
       "revolt-of-the-angels",
       "children-of-the-soil",
+      // Mira Tue 29 Sep 2026 POST-#191 CLEAR — The Village in the Jungle leads. Never Featured.
+      // LEAD kept — not The Joy of Captain Ribot, not Saracinesca, not The Torrents of Spring.
+      // The Bet is before-sleep Rituals only. The Village is not before-sleep.
+      "the-village-in-the-jungle",
+      "the-joy-of-captain-ribot",
+      "saracinesca",
+      "the-torrents-of-spring",
     ],
   },
   {
@@ -1927,6 +1951,13 @@ export const RITUAL_LANES: RitualLane[] = [
       "kidnapped",
       "revolt-of-the-angels",
       "children-of-the-soil",
+      // Mira Tue 29 Sep 2026 POST-#191 CLEAR — The Village in the Jungle leads. Never Featured.
+      // LEAD kept — not The Joy of Captain Ribot, not Saracinesca, not The Torrents of Spring.
+      // The Bet is before-sleep Rituals only. The Village is not before-sleep.
+      "the-village-in-the-jungle",
+      "the-joy-of-captain-ribot",
+      "saracinesca",
+      "the-torrents-of-spring",
     ],
   },
   {
@@ -2016,6 +2047,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "revolt-of-the-angels": 5,
   "children-of-the-soil": 6,
   "the-invisible-man": 12,
+  "the-village-in-the-jungle": 7,
+  "the-joy-of-captain-ribot": 7,
+  saracinesca: 9,
+  "the-torrents-of-spring": 8,
+  "the-bet": 12,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
   "all-quiet-on-the-western-front": 2,

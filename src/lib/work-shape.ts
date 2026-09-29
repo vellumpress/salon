@@ -18,7 +18,9 @@ export type PackedWork = Omit<Work, "scenes" | "breaths"> & {
 export function doorWork(entry: ShelfWork): Work {
   const bound = Boolean(entry.gutenberg);
   const lines = [
-    `${entry.title} came in ${entry.year}.`,
+    entry.year == null
+      ? `${entry.title} is on this shelf.`
+      : `${entry.title} came in ${entry.year}.`,
     `${entry.author} wrote it in ${entry.language}.`,
     `It is a ${entry.form} on this shelf of public-domain work.`,
     bound
@@ -30,7 +32,7 @@ export function doorWork(entry: ShelfWork): Work {
     id: entry.id,
     title: entry.title,
     author: entry.author,
-    year: String(entry.year),
+    year: entry.year == null ? "" : String(entry.year),
     note: entry.form,
     minutes: 8,
     cover: "",

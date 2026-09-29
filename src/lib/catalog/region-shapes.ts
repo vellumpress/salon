@@ -71,7 +71,8 @@ export type PlaceRegion =
   | "cl"
   | "ch"
   | "cd"
-  | "dz";
+  | "dz"
+  | "lk";
 
 export type RegionShape = {
   viewBox: string;
@@ -351,6 +352,11 @@ export const REGION_SHAPES: Record<PlaceRegion, RegionShape> = {
     viewBox: "0 0 36 28",
     d: "M2.8 10.4 8.6 6.2 16.4 4.2 24.8 3.6 32.2 6.8 34.4 11.6 30.2 16.8 22.6 20.4 14.2 21.6 6.8 18.8 3.2 14.6Z",
   },
+  /** Ceylon / Sri Lanka — a pear, narrow at the north. Original simplification. */
+  lk: {
+    viewBox: "0 0 22 36",
+    d: "M10.4 1.8 13.2 4.6 12.2 8.8 14.8 12.4 16.6 17.6 15.8 23.2 13.4 28.6 10.2 32.8 7.2 29.4 5.6 23.8 6.8 17.8 8.2 12.2 9.2 7.2Z",
+  },
 };
 
 /** Quiet Mondrian accent when the chip sits on paper / yellow. */
@@ -423,4 +429,5 @@ export const REGION_TONE: Record<PlaceRegion, "ink" | "red" | "blue" | "forest">
   ch: "red",
   cd: "forest",
   dz: "forest",
+  lk: "forest",
 };

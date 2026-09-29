@@ -1,0 +1,51 @@
+{
+  "id": "the-village-in-the-jungle",
+  "title": "The Village in the Jungle",
+  "author": "Leonard Woolf",
+  "year": "1913",
+  "note": "Project Gutenberg 60627. Whole novel (Ch I–X; dedication 'To V. W.' kept in bind; Contents and PG footnotes out). Host: Ch I — \"The village was called Beddagama…\" Year 1913. PG reading-ease 82.0 — no invented Launch rank. Place: Ceylon (Beddagama). Sits: unwind / walk. Host intro: Two words you'll meet early on: a katty is a chopping knife, a kind of billhook, used to cut back the undergrowth, and a chena is a patch of jungle cleared, burned and sown for a season's crop. Be warned that this is a violent book with a grim ending.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Beddagama · Ceylon",
+      "place": "Chapter I · Beddagama · Ceylon",
+      "reentry": "The village was called Beddagama, which means the village in the jungle. It lay in the low country or plains, midway between the sea and the great mountains which seem, far away to the north, to rise ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The village was called Beddagama, which means the village in the jungle. It lay in the low country or plains, midway between the sea and the great mountains which seem, far away to the north, to rise like a long wall straight up from the sea of trees. It was in, and of, the jungle; the air and smell of the jungle lay heavy upon it—the smell of hot air, of dust, and of dry and powdered leaves and sticks. Its beginning and its end was in the jungle, which stretched away from it on all sides unbroken, north and south and east and west, to the blue line of the hills and to the sea. The jungle surrounded it, overhung it, continually pressed in upon it. It stood at the door of the houses, always ready to press in upon the compounds and open spaces, to break through the mud huts, and to choke up the tracks and paths. It was only by yearly clearing with axe and katty that it could be kept out. It was a living wall about the village, a wall which, if the axe were spared, would creep in and smother and blot out the village itself."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "There are people who will tell you that they have no fear of the jungle, that they know it as well as the streets of Maha Nuwara or their own compounds. Such people are either liars and boasters, or they are fools, without understanding or feeling for things as they really are. I knew such a man once, a hunter and tracker of game, a little man with hunched-up shoulders and peering, cunning little eyes, and a small dark face all pinched and lined, for he spent his life crouching, slinking, and peering through the undergrowth and the trees. He was more silent than the leopard and more cunning than the jackal: he knew the tracks better than the doe who leads the herd. He would boast that he could see a buck down wind before it could scent him, and a leopard through the thick undergrowth before it could see him. 'Why should I fear the jungle?' he would say. 'I know it better than my own compound. A few trees and bushes and leaves, and some foolish beasts. There is nothing to fear there.' One day he took his axe in his hand, and the sandals of deer-hide to wear in thorny places, and he went out to search for the shed horns of deer, which he used to sell to traders from the towns. He never returned to the village again, and months afterwards in thick jungle I found his bones scattered upon the ground, beneath some thorn-bushes, gnawed by the wild pig and the jackal, and crushed and broken by the trampling of elephants. And among his bones lay a bunch of peacock feathers that he had collected and tied together with a piece of creeper, and his betel-case, and the key of his house, and the tattered fragments of his red cloth. In the fork of one of the thorn-bushes hung his axe: the massive wooden handle had been snapped in two. I do not know how he died; but I know that he had boasted that there was no fear in the jungle, and in the end the jungle took him."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "All jungles are evil, but no jungle is more evil than that which lay about the village of Beddagama. If you climb one of the bare rocks that jut up out of it, you will see the jungle stretched out below you for mile upon mile on all sides. It looks like a great sea, over which the pitiless hot wind perpetually sends waves unbroken, except where the bare rocks, rising above it, show like dark smudges against the grey-green of the leaves. For ten months of the year the sun beats down and scorches it; and the hot wind in a whirl of dust tears over it, tossing the branches and scattering the leaves. The trees are stunted and twisted by the drought, by the thin and sandy soil, by the dry wind. They are scabrous, thorny trees, with grey leaves whitened by the clouds of dust which the wind perpetually sweeps over them: their trunks are grey with hanging, stringy lichen. And there are enormous cactuses, evil-looking and obscene, with their great fleshy green slabs, which put out immense needle-like spines. More evil-looking still are the great leafless trees, which look like a tangle of gigantic spiders' legs—smooth, bright green, jointed together—from which, when they are broken, oozes out a milky, viscous fluid."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "And between the trees are the bushes which often knit the whole jungle together into an impenetrable tangle of thorns. On the ground beneath the trees it is very still and very hot; for the sterile earth is covered with this thorny matted undergrowth, through which the wind cannot force its way. The sound of the great wind rushing over the tree-tops makes the silence below seem more heavy. The air is heavy with the heat-beating up from the earth, and with the smell of dead leaves. All the bushes and trees seem to be perpetually dying for ten months of the year, the leaves withering, and the twigs and branches decaying and dropping off, to be powdered over the ground among the coarse withered grass and the dead and blackened shrubs. And yet every year, when the rains come, the whole jungle bursts out again into green; and it forces its way forward into any open space, upon the tracks, into villages and compounds, striving to blot out everything in its path."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "If you walk all day through the jungle along its tangled tracks, you will probably see no living thing. It is so silent and still there that you might well believe that nothing lives in it. You might perhaps in the early morning hear the trumpeting and squealing of a herd of elephants, or the frightened bark of the spotted deer, or the deeper bark of the sambur, or the blaring call of the peacock. But as the day wore on, and the heat settled down upon the trees, you would hear no sound but the rush of the wind overhead, and the grating of dry branches against one another. Yet the shadows are full of living things, moving very silently, themselves like shadows, between the trees, slinking under the bushes and peering through the leaves."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "For the rule of the jungle is first fear, and then hunger and thirst. There is fear everywhere: in the silence and in the shrill calls and the wild cries, in the stir of the leaves and the grating of branches, in the gloom, in the startled, slinking, peering beasts. And behind the fear is always the hunger and the thirst, and behind the hunger and the thirst fear again. The herd of deer must come down to drink at the water-hole. They come down driven by their thirst, very silently through the deep shadows of the trees to the water lying white under the moon. They glide like shadows out of the shadows, into the moonlight, hesitating, tiptoeing, throwing up their heads to stare again into the darkness, leaping back only to be goaded on again by their thirst, ears twitching to catch a sound, and nostrils quivering to catch a scent of danger. And when the black muzzles go down into the water, it is only for a moment; and then with a rush the herd scatters back again terror-stricken into the darkness. And behind the herd comes the leopard, slinking through the undergrowth. Whom has he to fear? Yet there is fear in his eyes and in his slinking feet, fear in his pricked ears and in the bound with which he vanishes into the shadows at the least suspicious sound."
+    }
+  ]
+}

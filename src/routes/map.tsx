@@ -99,8 +99,12 @@ function MapPage() {
               </p>
               <p className="mt-1 font-serif text-sm text-muted">
                 {active.author}
-                <span aria-hidden="true"> · </span>
-                {active.year}
+                {active.year != null ? (
+                  <>
+                    <span aria-hidden="true"> · </span>
+                    {active.year}
+                  </>
+                ) : null}
                 <span aria-hidden="true"> · </span>
                 {active.language}
               </p>
