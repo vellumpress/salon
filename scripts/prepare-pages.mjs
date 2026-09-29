@@ -100,10 +100,12 @@ function emitStaticRoutes(destDir, indexHtml) {
   const shellHtml = existsSync(join(destDir, "index.html"))
     ? join(destDir, "index.html")
     : indexHtml;
+  // A sibling `login.html` is served at /login with HTTP 200.
+  // `login/index.html` makes Pages answer /login with a 301 to /login/.
   const stamp = (rel) => {
-    const dir = join(destDir, rel);
-    mkdirSync(dir, { recursive: true });
-    copyFileSync(shellHtml, join(dir, "index.html"));
+    const file = join(destDir, `${rel}.html`);
+    mkdirSync(dirname(file), { recursive: true });
+    copyFileSync(shellHtml, file);
   };
   for (const route of STATIC_ROUTES) stamp(route);
   const shelf = readFileSync(join(root, "src/lib/catalog/shelf.ts"), "utf8");
