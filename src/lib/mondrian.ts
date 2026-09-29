@@ -133,7 +133,7 @@ export function boardWork(id: string): BoardCell | undefined {
       author: entry.author,
       opening: entry.opening,
       breaths: entry.breaths,
-      year: entry.year,
+      year: entry.year ?? undefined,
     };
   }
   return BOARD.find((cell) => cell.id === id);

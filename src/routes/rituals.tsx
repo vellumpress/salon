@@ -469,7 +469,7 @@ function BookCell({
       <span className="type-kicker opacity-70">{duration}</span>
       <span className="mt-1 type-kicker opacity-70">
         {item.author}
-        <span className="opacity-60"> · {item.year}</span>
+        {item.year != null ? <span className="opacity-60"> · {item.year}</span> : null}
       </span>
       <PlaceChip work={item} className="mt-1.5 opacity-80" />
       <span className="type-card mt-1">

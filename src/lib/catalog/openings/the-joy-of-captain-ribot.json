@@ -1,0 +1,236 @@
+{
+  "id": "the-joy-of-captain-ribot",
+  "title": "The Joy of Captain Ribot",
+  "author": "Armando Palacio Valdés (trans. Minna Caroline Smith)",
+  "year": "1900",
+  "note": "Project Gutenberg 38293. Whole novel (Ch I–XVIII; Sylvester Baxter Introduction kept in bind as front matter, not in the open). Host: Ch I — \"In Malaga they cook it not at all badly…\" EN translation 1900 (Brentano's). Translator Minna Caroline Smith. PG reading-ease 70.8 — no invented Launch rank. Place: Valencia, Spain (opens at Gijón wharf). Accents restored on titles only (Señor/Señora/Señorita/Capitán); proper names as printed (Marti).",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Gijón wharf · Valencia to come",
+      "place": "Chapter I · Gijón wharf · Valencia to come",
+      "reentry": "In Malaga they cook it not at all badly; in Vigo better yet; in Bilbao I have eaten it deliciously seasoned on more than one occasion. But there is no comparison between any of these, or the way I hav",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "In Malaga they cook it not at all badly; in Vigo better yet; in Bilbao I have eaten it deliciously seasoned on more than one occasion. But there is no comparison between any of these, or the way I have had it served in any of the other ports where I have been wont to touch, and the cooking of a Señora Ramona in a certain shop for wines and edibles called El Cometa, situated on the wharf at Gijon."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Therefore, when that most intelligent woman hears that the *Urano* has entered port, she begins to get her stewpans ready for my reception. I prefer to go alone and at night, like the selfish and luxurious being that I am. She sets my table for me in a corner of the back shop; and there, at my ease, I enjoy pleasures ineffable and have taken more than one indigestion."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "I arrived the 9th of February, at eleven in the morning, and according to my custom I ate little, preparing myself by healthful abstinence for the ceremony of the evening. God willed otherwise. A little before the striking of the hour a heathen of a sailor broke a lantern; the burning wick fell upon a cask of petroleum and started a fire, which we got the better of by throwing the barrel overboard with several others. But the pilot-house was burned, together with much of the rigging and some of the upper works of the steamer. In short, the consequences kept us busy and on our feet nearly all night."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "And this was the reason why I did not go to eat my dish of tripe at the Señora Ramona's, but notified her, by means of the speaking trumpet, to be ready for me that evening without fail."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "It was about ten o'clock. Peaceful and contented, I descended the ladder of the Urano, jumped into a boat, and in four strokes of my boat-man's oars I was taken to the wharf, which stood deserted and shadowy. The hulls of the vessels could hardly be made out and absolute silence reigned on board them. Only the silhouette of the guards on their rounds or that of some melancholy-looking passer-by was vaguely outlined in the gloom. But the obscurity, that the few street-lamps were insufficient to dissipate, was soon enlivened by the wave of light that proceeded from the two open doorways of El Cometa. I fluttered away in that direction like an eager butterfly. There were only three or four customers left in the shop; the others had departed—some spontaneously, some because of intimations, each time more or less peremptory, given by Señora Ramona, who always closed up promptly at half after ten."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "This woman greeted my appearance with a peal of laughter. I cannot say what curious and mysterious titillation affected her nerves in my presence; but I can affirm that she never saw me after an absence more or less prolonged without being violently shaken by merriment, which in turn inevitably resulted in severe attacks of coughing, inflaming her cheeks and transforming them from their hue of grainy red to violet. Yet I was profoundly gratified by that peal of laughter and that attack of coughing, considering them a pledge of unalterable friendship, and that I could count, in life and in death, upon her culinary accomplishments. On such occasions it was my duty to double my spine, shake my head, and laugh boisterously until Dame Ramona recovered herself. And I complied therewith religiously."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Ay, but how good it was yesterday, Don Julian!\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"And why not to-day?\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"Because yesterday was yesterday, and to-day is to-day.\""
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Before this invincible reason I grew serious, and a sigh escaped me. Dame Ramona went off in a fresh fit of laughter, followed by a corresponding attack of asthmatic coughing. When at last she recovered herself she finished washing the glass in her hands, and called to three or four sailors chatting in a corner:"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"Come, up with you! I am going to lock up.\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "One of them ventured to say:"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"Wait a bit, Dame Ramona. We'll go when that gentleman does.\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "The hostess, frowning grimly, volunteered in solemn accents:"
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"This gentleman has come to eat some stewed tripe, and the table is set for him.\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Thereupon the customers, feeling the weight of this hint, and comprehending the gravity of the occasion, lost no time in rising to depart. Gazing at me for an instant with a mixture of respect and admiration they went out, wishing us good-night."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"Well, Don Julian!\" exclaimed Dame Ramona, her face brightening again, \"that tripe of yesterday fairly was of a kind to make one's mouth water with delight.\""
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "My face must have expressed the most profound despair."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"And that of to-day—won't it do anything?\" I inquired in tones of woe."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"To-day—to-day—you will see for yourself.\""
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "She waved her fat hand in a way calculated to leave me submerged in a sea of doubt."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "While she was giving the last touches to her work, I took some absinthe to prepare my stomach adequately for its task, at the same time meditating upon the serious words that I had heard."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "Would it, or would it not, be so well seasoned, piquant, and aromatic as my imagination depicted?"
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "But when I had seated myself at the table; when I saw the dish before me and felt its bland fragrance penetrating my nostrils, a ray of light illumining my brain dissipated that dark spectral doubt. My heart began to palpitate with inexplicable pleasure. I comprehended that the gods still held in reserve some moments of happiness in this world."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "Dame Ramona divined the emotion that overpowered my soul, and smiled with maternal benevolence."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"What's that, Dame Ramona?\" I exclaimed, pausing with my fork held motionless in the air. \"Did you hear it?\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "\"Yes, señor; I heard a scream.\""
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "\"It called 'Help!'\""
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "\"Out on the wharf.\""
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"Another scream!\""
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "I threw down the fork and rushed to the door, followed by my hostess. When I opened it I heard a sound of incoherent lamentation."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "\"My mother! Help! For God's sake! She is drowning!\""
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "In two jumps I leaped over the rampart between me and the wharf, and made out the figure of a woman waving her arms convulsively and uttering piteous screams."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "I saw what had happened, and, running to her, I asked:"
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "\"Who has fallen in?\""
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "\"My mother! Save her! Save her!\""
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "\"Where?\""
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "\"Here!\""
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "And she pointed out the narrow space in the water between a lighter and the wharf."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "Although narrow, it was too wide for me to reach the craft. I plucked up courage, however, and sprang for the rigging rather than the deck, managing to grasp a cable. In this way I dropped to the deck. Seizing the first rope I came across, I made it fast and slid down to the water's edge. Happily, the woman had also grasped the rope and so kept herself afloat. When I got to her I endeavored to seize her by the head. But only a wig remained in my hand! I made another attempt, and this time caught her arm. I drew her to the side of the vessel. Then I saw that it would be impossible to get her out without help. How could I climb the rope with one hand only? Fortunately the cries of the daughter, together with my own, aroused the crew of a lighter, composed of four sailors, and they easily got us out. There were some planks at hand, and so we reached the wharf with her and took her to an apothecary's near by, where she was at last restored to consciousness."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "While the apothecary was attending her, the daughter, pale and silent, bent over her, her face bathed with tears. She was a young lady of good stature, slender, pale, her hair black and wavy; her whole personality, if not of supreme beauty, attractive and interesting. She was dressed with elegance, her mother also; and I inferred that they were persons distinguished in the town. But one of the throng that had pressed into the shop informed me that they were strangers, and had been but a few days in Gijon."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "When I found that she was neither dead nor hurt to any serious extent, and feeling the chill of the bath penetrating me and making me shiver, I wished them good-night."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "The young lady raised her head, came towards me with animation, and seizing my hands cordially, looked into my eyes with tearful earnestness, and murmured with emotion:"
+    }
+  ]
+}

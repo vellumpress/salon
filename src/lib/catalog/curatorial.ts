@@ -1100,6 +1100,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "kidnapped",
   "revolt-of-the-angels",
   "children-of-the-soil",
+  // Mira Tue 29 Sep 2026 POST-#191 CLEAR — The Village in the Jungle leads Next. Never Featured.
+  // LEAD kept — not The Joy of Captain Ribot, not Saracinesca, not The Torrents of Spring.
+  // The Bet is before-sleep Rituals only (the one story), not this tail.
+  // Mon POST-#190 Zenda and the earlier packs stay ahead.
+  "the-village-in-the-jungle",
+  "the-joy-of-captain-ribot",
+  "saracinesca",
+  "the-torrents-of-spring",
 ] as const;
 
 /**

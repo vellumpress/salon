@@ -513,6 +513,16 @@ const BLURBS: Record<string, string> = {
   "prisoner-of-zenda": "Rudolf’s sister-in-law asks when he will do anything, and the red Elphberg hair is already the trouble.",
   "revolt-of-the-angels": "Under St. Sulpice the d’Esparvieu mansion stands among chestnut trees, and the angel revolt is where the sit turns.",
   "children-of-the-soil": "Pan Stanislav comes toward Kremen in the midnight mist, and the Poland estate is where the sit turns.",
+  "the-village-in-the-jungle":
+    "Beddagama means the village in the jungle, and the sit opens on that name. A violent book, with a grim ending.",
+  "the-joy-of-captain-ribot":
+    "In Malaga they cook it not at all badly, and the captain’s sit opens there, with Valencia still to come.",
+  saracinesca:
+    "Six o’clock at the Embassy in Rome, and the rooms are as full as they are likely to be.",
+  "the-torrents-of-spring":
+    "At two o’clock in the night he goes back to his study, and Frankfort is where the sit turns.",
+  "the-bet":
+    "A dark autumn night, an old banker in his study, and one story through the fireproof safe.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",
@@ -1123,21 +1133,29 @@ function shortAuthor(author: string) {
   return author.replace(/\s*\([^)]*tr\.[\s\S]*$/i, "").replace(/;.*$/, "").trim();
 }
 
+function yearPhrase(work: ShelfWork) {
+  return work.year == null ? "" : `${work.year} `;
+}
+
 function generatedBlurb(work: ShelfWork): string {
   const hook = AUTHOR_HOOK[work.author];
-  if (hook) return oneSentence(`${work.title} (${work.year}): ${hook}.`);
+  if (hook) {
+    const dated = work.year == null ? work.title : `${work.title} (${work.year})`;
+    return oneSentence(`${dated}: ${hook}.`);
+  }
   const who = shortAuthor(work.author);
   const form = formPhrase(work.form);
+  const year = yearPhrase(work);
   if (work.form === "stories") {
-    return oneSentence(`${who}’s ${work.year} ${form}, gathered as ${work.title}.`);
+    return oneSentence(`${who}’s ${year}${form}, gathered as ${work.title}.`);
   }
   if (work.form === "poem") {
-    return oneSentence(`${who}’s ${work.year} poems: ${work.title}.`);
+    return oneSentence(`${who}’s ${year}poems: ${work.title}.`);
   }
   if (work.form === "play") {
-    return oneSentence(`${who}’s ${work.year} play ${work.title}.`);
+    return oneSentence(`${who}’s ${year}play ${work.title}.`);
   }
-  return oneSentence(`${who}’s ${work.year} ${form} ${work.title}.`);
+  return oneSentence(`${who}’s ${year}${form} ${work.title}.`);
 }
 
 export function blurbFor(work: ShelfWork | string): string {

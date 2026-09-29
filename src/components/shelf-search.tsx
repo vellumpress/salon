@@ -110,7 +110,7 @@ function ShelfSearchHit({ item }: { item: ShelfWork }) {
     >
       <span className="type-kicker opacity-70">
         {item.author}
-        <span className="opacity-60"> · {item.year}</span>
+        {item.year != null ? <span className="opacity-60"> · {item.year}</span> : null}
       </span>
       <PlaceChip work={item} tone="accent" className="mt-1.5" />
       <span className="type-lede mt-1">

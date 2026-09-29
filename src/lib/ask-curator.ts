@@ -8,7 +8,7 @@ const READABLE: ShelfWork[] = LOCAL_WORKS;
 
 const catalog = READABLE.map(
   (item) =>
-    `${item.id} | ${item.title} | ${item.author} | ${item.year} | ${item.form} | ${item.minutes} min`,
+    `${item.id} | ${item.title} | ${item.author} | ${item.year ?? ""} | ${item.form} | ${item.minutes} min`,
 ).join("\n");
 
 const ids = new Set(READABLE.map((item) => item.id));
