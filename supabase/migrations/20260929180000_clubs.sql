@@ -95,10 +95,27 @@ begin
 end;
 $$;
 
+-- Membership checks must not query club_members under the caller's RLS.
+-- An inline exists() on club_members from club_members_select recurses forever.
+create or replace function public.is_club_member(p_club text)
+returns boolean
+language sql
+stable
+security definer
+set search_path = public
+as $$
+  select exists (
+    select 1 from public.club_members m
+    where m.club_id = p_club and m.user_id = auth.uid()
+  );
+$$;
+
 revoke all on function public.club_by_invite(text) from public;
 revoke all on function public.join_club_by_invite(text) from public;
+revoke all on function public.is_club_member(text) from public;
 grant execute on function public.club_by_invite(text) to anon, authenticated;
 grant execute on function public.join_club_by_invite(text) to authenticated;
+grant execute on function public.is_club_member(text) to anon, authenticated, service_role;
 
 grant select, insert, update on public.clubs to authenticated;
 grant select on public.club_members to authenticated;
@@ -109,10 +126,7 @@ create policy clubs_select on public.clubs
   for select to authenticated
   using (
     owner_id = auth.uid()
-    or exists (
-      select 1 from public.club_members m
-      where m.club_id = clubs.id and m.user_id = auth.uid()
-    )
+    or public.is_club_member(clubs.id)
   );
 
 drop policy if exists clubs_insert on public.clubs;
@@ -125,17 +139,11 @@ create policy clubs_update on public.clubs
   for update to authenticated
   using (
     owner_id = auth.uid()
-    or exists (
-      select 1 from public.club_members m
-      where m.club_id = clubs.id and m.user_id = auth.uid()
-    )
+    or public.is_club_member(clubs.id)
   )
   with check (
     owner_id = auth.uid()
-    or exists (
-      select 1 from public.club_members m
-      where m.club_id = clubs.id and m.user_id = auth.uid()
-    )
+    or public.is_club_member(clubs.id)
   );
 
 drop policy if exists club_members_select on public.club_members;
@@ -143,31 +151,20 @@ create policy club_members_select on public.club_members
   for select to authenticated
   using (
     user_id = auth.uid()
-    or exists (
-      select 1 from public.club_members mine
-      where mine.club_id = club_members.club_id and mine.user_id = auth.uid()
-    )
+    or public.is_club_member(club_members.club_id)
   );
 
 drop policy if exists club_messages_select on public.club_messages;
 create policy club_messages_select on public.club_messages
   for select to authenticated
-  using (
-    exists (
-      select 1 from public.club_members m
-      where m.club_id = club_messages.club_id and m.user_id = auth.uid()
-    )
-  );
+  using (public.is_club_member(club_messages.club_id));
 
 drop policy if exists club_messages_insert on public.club_messages;
 create policy club_messages_insert on public.club_messages
   for insert to authenticated
   with check (
     user_id = auth.uid()
-    and exists (
-      select 1 from public.club_members m
-      where m.club_id = club_messages.club_id and m.user_id = auth.uid()
-    )
+    and public.is_club_member(club_messages.club_id)
   );
 
 do $$

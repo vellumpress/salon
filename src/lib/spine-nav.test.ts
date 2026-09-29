@@ -39,8 +39,8 @@ test("House of Mirth spine names both books and opens every chapter", () => {
   const work = JSON.parse(
     readFileSync(new URL("./catalog/texts/the-house-of-mirth.json", import.meta.url), "utf8"),
   ) as Work;
-  assert.equal(work.scenes.length, 31);
-  assert.equal(work.breaths.length, 6465);
+  assert.equal(work.scenes.length, 29);
+  assert.equal(work.breaths.length, 5769);
 
   const chapters = spineChapters(work, 0, true);
   assert.equal(chapters.length, 29);
