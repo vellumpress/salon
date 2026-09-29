@@ -469,6 +469,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `… At two o'clock in the night he had gone back to his study. The frame, then Chapter I — the summer of 1840, in Frankfort as printed. Skip the epigraph if the phone is tight. Ivan Turgenev, in Constance Garnett’s English, 1897. Garnett is named in the About only. The English year is 1897. This is The Torrents of Spring only. It ends at preparing to go to America. First Love is not in this book, and Mumu is not in this book. Soft Turgenev, carefully. This is not Smoke. Soft Germany, carefully. Frankfort is primary. PG reading-ease 79.5 is fairly easy. No score is invented for this sit.`,
   "the-bet":
     `It was a dark autumn night. This sit is The Bet only — a banker’s house and garden lodge. No city is named. No year is cited. Stop at the fireproof safe. Anton Chekhov, in Constance Garnett’s English. Garnett is named in the About only. One story this sit. Soft Chekhov, carefully. This is not In Exile. Soft Russia, carefully. PG reading-ease 80.2, for the whole volume, is easy. No score is invented for this sit.`,
+  "the-bitter-tea-of-general-yen":
+    `Megan, drawing her chair over to the window, saw that the rain had given an air of transience to the solid Chinese earth. Chapter I — a rainy road by the French Concession, Shanghai. Skip the title page, the dedication ‘To Eleanor’, and the illustration tags. Grace Zaring Stone’s 1930 novel. The printed word “transcience” in the first sentence is corrected to “transience”. A heads-up before you start: this is a 1930 novel and it sounds like one. The word “coolie” turns up often, and one American character uses a racial slur in dialogue. The book also looks at China and at General Yen through a Western, Orientalist lens, which is partly what the story is about and partly its own blind spot. Soft Stone, carefully. Soft Shanghai, carefully. Shanghai is primary. The lead is this book, not The Woman of Andros, not Bella Donna, and not Nina Balatka. No reading-ease score is on the page, so none is cited. No score is invented for this sit.`,
+  "the-woman-of-andros":
+    `The earth sighed as it turned in its course; the shadow of night crept gradually along the Mediterranean, and Asia was left in darkness. Section I — nightfall over the Mediterranean, Brynos. The Terence and Menander note is the Epigraph and stays in the book; this open starts at Section I. Skip the Transcriber’s Note and the illustration tags. Thornton Wilder’s 1930 novel. The eight sections are unnumbered in print and labelled Section I–VIII here. Soft Wilder, carefully. Soft Greece, carefully. Brynos is primary. No reading-ease score is on the page, so none is cited. No score is invented for this sit.`,
+  "bella-donna":
+    `Doctor Meyer Isaacson had got on as only a modern Jew whose home is London can get on, with a rapidity that was alarming. Chapter I — Doctor Meyer Isaacson, London, with Egypt to come from Chapter XI. Skip the fifth-edition front matter if the phone is tight. Robert Hichens’s 1908 novel. Two things to know going in. The very first sentence sums Dr. Isaacson up as “a modern Jew” who has got on in London, the kind of sweeping generalization about Jewish people that was common in 1908, even about a character the book admires. Once the story reaches Egypt, Baroudi and the Egyptians around him are painted in a heavily Orientalist way: exotic, sensual, and menacing. Both are the book’s attitudes. Soft Hichens, carefully. Soft Egypt, carefully, after the London open. Egypt is primary. Long, carefully. PG reading-ease 83.2 is easy. No score is invented for this sit.`,
+  "nina-balatka":
+    `Nina Balatka was a maiden of Prague, born of Christian parents, and herself a Christian—but she loved a Jew; and this is her story. Volume I, Chapter I — the Kleinseite, Prague. The copyrighted 2003 introduction is out of this bind and out of this open. Anthony Trollope’s 1866 novel. A note on what you are about to read: prejudice against Jews is the subject, not the backdrop. Nina’s family and neighbours say ugly things about Anton and his people, openly and often. Those are the characters’ voices; the narrator is on the lovers’ side. Some of the long paragraphs have been broken into shorter screens; every word is as Trollope wrote it. Soft Trollope, carefully. Soft Prague, carefully. Prague is primary. PG reading-ease 88.4 is easy. No score is invented for this sit.`,
+  "la-lupa":
+    `She was tall and lean; but she had a firm, full bust, and yet she was no longer young. This sit is La Lupa only — harvest fields under Etna, and the village that calls her the she-wolf. Stop when Nanni stammers. Giovanni Verga, in Nathan Haskell Dole’s English. Dole is named in the About only. The English year is 1896. One story this sit. It ends on an axe, so save it for unwinding or a walk rather than the last thing before sleep. Soft Verga, carefully. This is not I Malavoglia. Soft Sicily, carefully. PG reading-ease 80.0, for the whole volume, is easy. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1293,6 +1303,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "saracinesca",
       "the-torrents-of-spring",
       "the-bet",
+      // Mira Tue 29 Sep 2026 POST-#192 CLEAR — The Bitter Tea of General Yen leads Next, and is not on this lane.
+      // The Woman of Andros and Bella Donna sit here. Nina Balatka is Waking up and On a walk.
+      // La Lupa is Unwind and On a walk, not before-sleep.
+      "the-woman-of-andros",
+      "bella-donna",
     ],
   },
   {
@@ -1405,6 +1420,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-time-machine",
       // Mira Mon 28 Sep 2026 POST-#190 CLEAR — The Invisible Man only.
       "the-invisible-man",
+      // Mira Tue 29 Sep 2026 POST-#192 CLEAR — Nina Balatka. Waking up exists, so she sits here and on a walk.
+      "nina-balatka",
     ],
   },
   {
@@ -1682,6 +1699,15 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-joy-of-captain-ribot",
       "saracinesca",
       "the-torrents-of-spring",
+      // Mira Tue 29 Sep 2026 POST-#192 CLEAR — The Bitter Tea of General Yen leads. Never Featured.
+      // LEAD kept — not The Woman of Andros, not Bella Donna, not Nina Balatka.
+      // Nina Balatka is Waking up and On a walk, not this lane.
+      // La Lupa is Rituals only (the one story) and sits here and on a walk, not before-sleep.
+      // Tue POST-#191 Village and the earlier packs stay ahead.
+      "the-bitter-tea-of-general-yen",
+      "the-woman-of-andros",
+      "bella-donna",
+      "la-lupa",
     ],
   },
   {
@@ -1958,6 +1984,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-joy-of-captain-ribot",
       "saracinesca",
       "the-torrents-of-spring",
+      // Mira Tue 29 Sep 2026 POST-#192 CLEAR — The Bitter Tea of General Yen leads. Never Featured.
+      // The Woman of Andros and Bella Donna are not on this lane.
+      // Nina Balatka sits here and on Waking up. La Lupa sits here and on Unwind, not before-sleep.
+      "the-bitter-tea-of-general-yen",
+      "nina-balatka",
+      "la-lupa",
     ],
   },
   {
@@ -2052,6 +2084,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   saracinesca: 9,
   "the-torrents-of-spring": 8,
   "the-bet": 12,
+  "the-bitter-tea-of-general-yen": 8,
+  "the-woman-of-andros": 11,
+  "bella-donna": 8,
+  "nina-balatka": 8,
+  "la-lupa": 9,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
   "all-quiet-on-the-western-front": 2,

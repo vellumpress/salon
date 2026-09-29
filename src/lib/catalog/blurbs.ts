@@ -521,6 +521,16 @@ const BLURBS: Record<string, string> = {
     "At two o’clock in the night he goes back to his study, and Frankfort is where the sit turns.",
   "the-bet":
     "A dark autumn night, an old banker in his study, and one story through the fireproof safe.",
+  "the-bitter-tea-of-general-yen":
+    "Megan draws her chair to the rainy window, and the solid Chinese earth looks transient.",
+  "the-woman-of-andros":
+    "Night creeps along the Mediterranean toward Brynos, and Chrysis keeps a house the island will not quite keep.",
+  "bella-donna":
+    "Doctor Isaacson has got on in London with alarming speed, and the Nile is where the sit turns.",
+  "nina-balatka":
+    "Nina Balatka of Prague loves a Jew, and the city’s prejudice is the story.",
+  "la-lupa":
+    "The village calls her the she-wolf, and this one Sicilian story ends on an axe.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",

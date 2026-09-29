@@ -1,0 +1,121 @@
+{
+  "id": "bella-donna",
+  "title": "Bella Donna",
+  "author": "Robert Hichens",
+  "year": "1908",
+  "note": "Project Gutenberg 17698. Whole novel (Ch I–XLIV); FIFTH EDITION / A. L. Burt front matter and [Illustration] tags out. Host: Ch I — \"Doctor Meyer Isaacson had got on…\" Year 1908. PG reading-ease 83.2 — no invented Launch rank. Place: London → Egypt (Cairo, Luxor, Nile); Egypt from Ch XI. Long (~11–12 h) — carefully. Sits: unwind / before sleep. Host intro: Two things to know going in. The very first sentence sums up Dr. Isaacson as \"a modern Jew\" who has got on in London, the kind of sweeping generalization about Jewish people that was common in 1908, even about a character the book admires. And once the story reaches Egypt, Baroudi and the Egyptians around him are painted in a heavily Orientalist way: exotic, sensual and menacing. Both are the book's attitudes, not ours.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Doctor Meyer Isaacson · London",
+      "place": "Chapter I · Doctor Meyer Isaacson · London",
+      "reentry": "Doctor Meyer Isaacson had got on as only a modern Jew whose home is London can get on, with a rapidity that was alarming. He seemed to have arrived as a bullet arrives in a body. He was not in the hea",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Doctor Meyer Isaacson had got on as only a modern Jew whose home is London can get on, with a rapidity that was alarming. He seemed to have arrived as a bullet arrives in a body. He was not in the heart of success, and lo! he was in the heart of success. And no one had marked his journey. Suddenly every one was speaking of him—was talking of the cures he had made, was advising every one else to go to him. For some mysterious reason his name—a name not easily to be forgotten once it had been heard—began to pervade the conversations that were held in the smart drawing-rooms of London. Women who were well, but had not seen him, abruptly became sufficiently unwell to need a consultation. \"Where does he live? In Harley Street, I suppose?\" was a constant question."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "But he did not live in Harley Street. He was not the man to lose himself in an avenue of brass plates of fellow practitioners. \"Cleveland Square, St. James's,\" was the startling reply; and his house was detached, if you please, and marvellously furnished."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The winged legend flew that he was rich, and that he had gone into practice as a doctor merely because he was intellectually interested in disease. His gift for diagnosis was so remarkable that he was morally forced to exercise it. And he had a greedy passion for studying humanity. And who has such opportunities for the study of humanity as the doctor and the priest? Patients who had been to him spoke enthusiastically of his observant eyes. His personality always made a great impression. \"There's no one just like him,\" was a frequent comment upon Doctor Meyer Isaacson. And that phrase is a high compliment upon the lips of London, the city of parrots and of monkeys."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "His age was debated, and so was his origin. Most people thought he was \"about forty\"; a very safe age, young enough to allow of almost unlimited expectation, old enough to make results achieved not quite unnatural, though possibly startling. Yes, he must be \"about forty.\" And his origin? \"Meyer\" suggested Germany. As to \"Isaacson,\" it allowed the ardent imagination free play over denationalized Israel. Someone said that he \"looked as if he came from the East,\" to which a cynic made answer, \"The East End.\" There was, perhaps, a hint of both in the Doctor of Cleveland Square. Certain it is that in the course of a walk down Brick Lane, or the adjacent thoroughfares, one will encounter men of his type; men of middle height, of slight build, with thick, close-growing hair strongly curling, boldly curving lips, large nostrils, prominent cheek-bones, dark eyes almost fiercely shining; men who are startlingly un-English. Doctor Meyer Isaacson was like these men. Yet he possessed something which set him apart from them."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "He looked intensely vital—almost unnaturally vital—when he was surrounded by English people, but he did not look fierce and hungry. One could conceive of him doing something bizarre, but one could not conceive of him doing anything low. There was sometimes a light in his eyes which suggested a moral distinction rarely to be found in those who dwell in and about Brick Lane. His slight, nervous hands, dark in colour, recalled the hands of high-bred Egyptians. Like so many of his nation, he was by nature artistic. An instinctive love of what was best in the creations of man ran in his veins with his blood. He cared for beautiful things, and he knew what things were beautiful and what were not. The second-rate never made any appeal to him. The first-rate found in him a welcoming enthusiast. He never wearied of looking at fine pictures, at noble statues, at bronzes, at old jewelled glass, at delicate carvings, at perfect jewels. He was genuinely moved by great architecture. And to music he was almost fanatically devoted, as are many Jews."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "It has been said of the Jew that he is nearly always possessed of a streak of femininity, not effeminacy. In Doctor Meyer Isaacson this streak certainly existed. His intuitions were feminine in their quickness, his sympathies and his antipathies almost feminine in their ardour. He understood women instinctively, as generally only other women understand them. Often he knew, without knowing why he knew. Such knowledge of women is, perhaps fortunately, rare in men. Where most men stumble in the dark, Doctor Meyer Isaacson walked in the light. He was unmarried."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Bachelorhood is considered by many to detract from a doctor's value and to stand in the way of his career. Doctor Meyer Isaacson did not find this so. Although he was not a nerve specialist, his waiting-room was always full of patients. If he had been married, it could not have been fuller. Indeed, he often thought it would have been less full."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Suddenly he became the fashion, and he went on being the fashion."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "He had no special peculiarity of manner. He did not attract the world of women by elaborate brutalities, or charm it by silly suavities. He seemed always very natural, intelligent, alive, and thoroughly interested in the person with whom he was. That he was a man of the world was certain. He was seen often at concerts, at the opera, at dinners, at receptions, occasionally even at a great ball."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Early in the morning he rode in the Park. Once a week he gave a dinner in Cleveland Square. And people liked to go to his house. They knew they would not be bored and not be poisoned there. Men appreciated him as well as women, despite the reminiscence of Brick Lane discoverable in him. His directness, his cleverness, and his apparent good-will soon overcame any dawning instinct summoned up in John Bull by his exotic appearance."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Only the unyielding Jew-hater hated him. And so the lines of the life of Doctor Meyer Isaacson seemed laid in pleasant places. And not a few thought him one of the fortunate of this world."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "One morning of June the doctor was returning to Cleveland Square from his early ride in the Park. He was alone. The lively bay horse he rode—an animal that seemed almost as full of nervous vitality as he was—had had a good gallop by the Serpentine, and now trotted gently towards Buckingham Palace, snuffing in the languid air through its sensitive nostrils. The day was going to be hot. This fact inclined the Doctor to idleness, made him suddenly realise the bondage of work. In a few minutes he would be in Cleveland Square; and then, after a bath, a cup of coffee, a swift glance through the *Times* and the *Daily Mail*, there would start the procession that until evening would be passing steadily through his consulting-room."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "He sighed, and pulled in his horse to a walk. To-day he was reluctant to encounter that procession."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "And yet each day it brought interest into his life, this procession of his patients."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "Generally he was a keen man. He had no need to feign an ardour that he really felt. He had a passion for investigation, and his profession enabled him to gratify it. Very modern, as a rule, were those who came to him, one by one, admitted each in turn by his Jewish man-servant; complex, caught fast in the net of civilized life. He liked to sit alone with them in his quiet chamber, to seek out the hidden links which united the physical to the mental man in each, to watch the pull of soul on body, of body on soul. But to-day he recoiled from work. Deep down in his nature, hidden generally beneath his strong activity, there was something that longed to sit in the sunshine and dream away the hours, leaving all fates serenely, or perhaps indifferently, between the hands of God."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"I will take a holiday some day,\" he said to himself, \"a long holiday. I will go far away from here, to the land where I am really at home, where I am in my own place.\""
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "As he thought this, he looked up, and his eyes rested upon the brown facade of the King's Palace, upon the gilded railings that separated it from the public way, upon the sentries who were on guard, fresh-faced, alert, staring upon London with their calmly British eyes."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"In my own place,\" he repeated to himself."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "And now his lips and his eyes were smiling. And he saw the great drama of London as something that a schoolboy could understand at a glance."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Was it really idleness he longed for? He did not know why, but abruptly his desire had changed. And he found himself wishing for events, tragic, tremendous, horrible even—anything, if they were unusual, were such as to set the man who was involved in them apart from his fellows. The foreign element in him woke up, called, perhaps, from repose by the unusually languid air, and London seemed meaningless to him, a city where a man of his type could neither dream, nor act, with all the languor, or all the energy, that was within him. And he imagined, as sometimes clever children do, a distant country where all romances unwind their shining coils, where he would find the incentive which he needed to call all his secret powers—the powers whose exercise would make his life complete—into supreme activity."
+    }
+  ]
+}
