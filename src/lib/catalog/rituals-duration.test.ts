@@ -56,7 +56,7 @@ test("long novel becomes several sittings", () => {
   const item = work({
     id: "orlando",
     form: "novel",
-    breaths: 3247,
+    breaths: 3244,
     minutes: 406,
     local: true,
   });
@@ -90,7 +90,7 @@ test("bite-sized ritual sits use short overrides", () => {
   const item = work({
     id: "passing",
     form: "novel",
-    breaths: 3034,
+    breaths: 3032,
     minutes: 197,
     local: true,
   });
@@ -162,7 +162,7 @@ test("Botchan first-session sit is the scar beat, not the novel", () => {
   const item = work({
     id: "botchan",
     form: "novel",
-    breaths: 3074,
+    breaths: 3043,
     minutes: 384,
     local: true,
   });
@@ -234,7 +234,7 @@ test("Mr. Fortune’s Maggot unwind sit is the Fanua-call cut, not the novel", (
   const item = work({
     id: "mr-fortunes-maggot",
     form: "novel",
-    breaths: 2629,
+    breaths: 2625,
     minutes: 329,
     local: true,
   });
@@ -510,7 +510,7 @@ test("The Gadfly before-sleep sit is the Fragola cut, not the novel", () => {
   const item = work({
     id: "the-gadfly",
     form: "novel",
-    breaths: 6653,
+    breaths: 6645,
     minutes: 832,
     local: true,
   });

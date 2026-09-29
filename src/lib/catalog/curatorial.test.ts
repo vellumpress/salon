@@ -1580,7 +1580,7 @@ test("tbr PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => {
     tropic: {
       track: "next",
       opening: /^The whistle blew for eleven o'clock\.$/,
-      breaths: 3259,
+      breaths: 3258,
       forYou: false,
     },
     "there-is-confusion": {
@@ -2609,7 +2609,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     "black-spirits-and-white-a-book-of-ghost-stories": {
       opening:
         "When in May, 1886, I found myself at last in Paris, I naturally determined to throw myself on the charity of an old chum of mine, Eugene Marie d'Ardeche, who had forsaken Boston a year or more ago on receiving word of th",
-      breaths: 1305,
+      breaths: 1300,
       scenes: 40,
       gutenberg: 26687,
     },
@@ -2644,14 +2644,14 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     "the-heart-of-happy-hollow": {
       opening:
         "The law is usually supposed to be a stern mistress, not to be lightly wooed, and yielding only to the most ardent pursuit.",
-      breaths: 2559,
+      breaths: 2558,
       scenes: 2,
       gutenberg: 24716,
     },
     "the-hesperides-and-noble-numbers": {
       opening:
         "I sing of brooks, of blossoms, birds and bowers, Of April, May, of June and July-flowers; I sing of May-poles, hock-carts, wassails, wakes, Of bridegrooms, brides and of their bridal cakes; I write of youth, of love, and",
-      breaths: 6886,
+      breaths: 6884,
       scenes: 504,
       gutenberg: 22421,
     },
@@ -2664,7 +2664,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     },
     "the-mystery-of-choice": {
       opening: "The Purple Emperor watched me in silence.",
-      breaths: 3864,
+      breaths: 3863,
       scenes: 36,
       gutenberg: 46581,
     },
@@ -3020,7 +3020,7 @@ test("Mira 4PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
     "a-passage-to-india": {
       opening:
         "Except for the Marabar Caves—and they are twenty miles off—the city of Chandrapore presents nothing extraordinary.",
-      breaths: 6962,
+      breaths: 6951,
       scenes: 37,
       minutes: 1254,
       year: 1924,
@@ -3052,7 +3052,7 @@ test("Mira 4PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
     },
     "bel-ami": {
       opening: "After changing his five-franc piece Georges Duroy left the restaurant.",
-      breaths: 4163,
+      breaths: 4034,
       scenes: 22,
       minutes: 639,
       year: 1885,
@@ -3185,7 +3185,7 @@ test("Mira 6PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
   const expect = {
     "of-human-bondage": {
       opening: "The day broke gray and dull.",
-      breaths: 16207,
+      breaths: 16199,
       scenes: 116,
       minutes: 3241,
       year: 1915,
@@ -3196,7 +3196,7 @@ test("Mira 6PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
     "green-mansions": {
       opening:
         "Now that we are cool, he said, and regret that we hurt each other, I am not sorry that it happened.",
-      breaths: 2257,
+      breaths: 2256,
       scenes: 22,
       minutes: 1063,
       year: 1904,
@@ -3217,7 +3217,7 @@ test("Mira 6PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
     },
     "jamaica-anansi-stories": {
       opening: "One great hungry time.",
-      breaths: 9059,
+      breaths: 9042,
       scenes: 347,
       minutes: 1356,
       year: 1924,
@@ -3228,7 +3228,7 @@ test("Mira 6PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
     "hadji-murad": {
       opening:
         "I was returning home by the fields. It was midsummer; the hay harvest was over, and they were just beginning to reap the rye.",
-      breaths: 1595,
+      breaths: 1594,
       scenes: 25,
       minutes: 583,
       year: 1912,
@@ -3350,7 +3350,7 @@ test("Mira Wed 8AM CLEAR sits on Next, For you, and Rituals, never Featured", ()
     "death-comes-for-the-archbishop": {
       opening:
         "ONE afternoon in the autumn of 1851 a solitary horseman, followed by a pack-mule, was pushing through an arid stretch of country somewhere in central New Mexico.",
-      breaths: 3444,
+      breaths: 3411,
       scenes: 23,
       minutes: 833,
       year: 1927,
@@ -3372,7 +3372,7 @@ test("Mira Wed 8AM CLEAR sits on Next, For you, and Rituals, never Featured", ()
     "nacha-regules": {
       opening:
         "An August night! Hot with the fever of her adolescence as a national capital, Buenos Aires was ablaze with millions of lights and rejoicing in noisy revelry.",
-      breaths: 2271,
+      breaths: 2268,
       scenes: 25,
       minutes: 974,
       year: 1922,
@@ -3383,7 +3383,7 @@ test("Mira Wed 8AM CLEAR sits on Next, For you, and Rituals, never Featured", ()
     anandamath: {
       opening:
         "On a certain day in the year 1176 B.S-, the sun was shining hot in the village of Padachinha. The village was full of houses but you could find very few men there.",
-      breaths: 1680,
+      breaths: 1679,
       scenes: 47,
       minutes: 572,
       year: 1906,
@@ -3801,7 +3801,7 @@ test("Mira ~4:14 Wed 23 Sep CLEAR sits on Next and Rituals, never a new Featured
     "lolly-willowes": {
       opening:
         "When her father died, Laura Willowes went to live in London with her elder brother and his family.",
-      breaths: 3176,
+      breaths: 3174,
       scenes: 3,
       minutes: 397,
       year: 1926,
@@ -3833,7 +3833,7 @@ test("Mira ~4:14 Wed 23 Sep CLEAR sits on Next and Rituals, never a new Featured
     "the-gadfly": {
       opening:
         "Arthur sat in the library of the theological seminary at Pisa, looking through a pile of manuscript sermons.",
-      breaths: 6653,
+      breaths: 6645,
       scenes: 26,
       minutes: 832,
       year: 1897,
@@ -4210,7 +4210,7 @@ test("Mira Thu eve 24 Sep CLEAR sits on Next, Rituals, and For you, never a new 
     "the-book-of-khalid": {
       title: "The Book of Khalid",
       gutenberg: 29257,
-      breaths: 4509,
+      breaths: 4508,
       opening: "The City of Baal, or Baalbek, is between the desert and the deep sea.",
       em: "they",
     },
@@ -4532,7 +4532,7 @@ test("Mira Fri ~10:04 CLEAR is Next lead Cabala, then Reuben and Sun, with Troop
     "reuben-sachs": {
       gutenberg: 74419,
       year: 1888,
-      breaths: 1673,
+      breaths: 1671,
       opening: "Reuben Sachs was the pride of his family.",
       stop: "must marry money.",
     },
@@ -4553,7 +4553,7 @@ test("Mira Fri ~10:04 CLEAR is Next lead Cabala, then Reuben and Sun, with Troop
     "the-garden-party-and-other-stories": {
       gutenberg: 1429,
       year: 1922,
-      breaths: 5117,
+      breaths: 5115,
       opening: "Very early morning.",
       stop: "out of sight.",
     },
@@ -5841,7 +5841,7 @@ test("Mira Sat AFTERNOON CLEAR is Next lead Hill of Dreams, then African Farm, T
     "the-hill-of-dreams": {
       gutenberg: 13969,
       year: 1907,
-      breaths: 444,
+      breaths: 443,
       scenes: 7,
       minutes: 6,
       opening: "There was a glow in the sky as if great furnace doors were opened",
@@ -8362,7 +8362,7 @@ test("Mira POST-#176 CLEAR is Next lead Cousin Betty, then Sorrows of Satan, Kin
   assert.match(SHELF.find((item) => item.id === "the-king-of-schnorrers")?.intro ?? "", /King only/);
   assert.match(SHELF.find((item) => item.id === "the-king-of-schnorrers")?.intro ?? "", /Pale Bontzye/);
   const grotesques = SHELF.find((item) => item.id === "the-king-of-schnorrers-grotesques-and-fantasies");
-  assert.equal(grotesques?.breaths, 6711);
+  assert.equal(grotesques?.breaths, 6709);
   assert.equal(grotesques?.title, "The King of Schnorrers: Grotesques and Fantasies");
 
   const hania = JSON.parse(
@@ -10871,7 +10871,7 @@ test("Mira POST-#187 CLEAR is Next lead Crime and Punishment, then Uncle Silas, 
     "rise-of-david-levinsky": {
       gutenberg: 2803,
       year: 1917,
-      breaths: 4014,
+      breaths: 3990,
       scenes: 93,
       minutes: 4,
       opening: "metamorphosis",
@@ -11085,7 +11085,7 @@ test("Mira POST-#188 CLEAR is Next lead Death in Venice, then Elmer Gantry, The 
   assert.equal(SHELF.filter((item) => item.id === "the-colonels-dream").length, 1);
   assert.equal(SHELF.filter((item) => item.id === "the-great-god-pan").length, 1);
   assert.equal(SHELF.find((item) => item.id === "the-colonels-dream")?.local, undefined);
-  assert.equal(SHELF.find((item) => item.id === "the-great-god-pan")?.breaths, 1040);
+  assert.equal(SHELF.find((item) => item.id === "the-great-god-pan")?.breaths, 1038);
   assert.equal(SHELF.find((item) => item.id === "the-great-god-pan")?.minutes, 130);
 
   const opens = {
