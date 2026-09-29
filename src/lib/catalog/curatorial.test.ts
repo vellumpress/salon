@@ -2806,8 +2806,8 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
     },
     "the-lonely-way": {
       opening: "*The little garden attached to Professor Wegrat's house. It is almost surrounded by buildings, so that no outlook of any kind is to be had. At the right in the ",
-      breaths: 3085,
-      scenes: 9,
+      breaths: 2743,
+      scenes: 12,
       gutenberg: 29745,
     },
   } as const;
