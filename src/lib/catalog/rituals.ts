@@ -1304,7 +1304,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-torrents-of-spring",
       "the-bet",
       // Mira Tue 29 Sep 2026 POST-#192 CLEAR — The Bitter Tea of General Yen leads Next, and is not on this lane.
-      // The Woman of Andros and Bella Donna sit here. Nina Balatka is Waking up and On a walk.
+      // The Woman of Andros and Bella Donna sit here. Nina Balatka is Waking up only.
       // La Lupa is Unwind and On a walk, not before-sleep.
       "the-woman-of-andros",
       "bella-donna",
@@ -1420,7 +1420,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-time-machine",
       // Mira Mon 28 Sep 2026 POST-#190 CLEAR — The Invisible Man only.
       "the-invisible-man",
-      // Mira Tue 29 Sep 2026 POST-#192 CLEAR — Nina Balatka. Waking up exists, so she sits here and on a walk.
+      // Mira Tue 29 Sep 2026 POST-#192 CLEAR — Nina Balatka. Waking up only (walk seat removed).
       "nina-balatka",
     ],
   },
@@ -1701,7 +1701,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-torrents-of-spring",
       // Mira Tue 29 Sep 2026 POST-#192 CLEAR — The Bitter Tea of General Yen leads. Never Featured.
       // LEAD kept — not The Woman of Andros, not Bella Donna, not Nina Balatka.
-      // Nina Balatka is Waking up and On a walk, not this lane.
+      // Nina Balatka is Waking up only, not this lane.
       // La Lupa is Rituals only (the one story) and sits here and on a walk, not before-sleep.
       // Tue POST-#191 Village and the earlier packs stay ahead.
       "the-bitter-tea-of-general-yen",
@@ -1986,9 +1986,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-torrents-of-spring",
       // Mira Tue 29 Sep 2026 POST-#192 CLEAR — The Bitter Tea of General Yen leads. Never Featured.
       // The Woman of Andros and Bella Donna are not on this lane.
-      // Nina Balatka sits here and on Waking up. La Lupa sits here and on Unwind, not before-sleep.
+      // Nina Balatka is Waking up only, not this lane. La Lupa sits here and on Unwind, not before-sleep.
       "the-bitter-tea-of-general-yen",
-      "nina-balatka",
       "la-lupa",
     ],
   },
