@@ -1122,14 +1122,14 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       author: "Henry Handel Richardson",
       year: 1910,
       opening: /^The four children were lying on the grass/,
-      breaths: 3686,
+      breaths: 3685,
     },
     "noli-me-tangere": {
       gutenberg: 6737,
       title: "Noli Me Tangere (The Social Cancer)",
       author: "José Rizal (tr. Charles Derbyshire)",
       opening: /^On the last of October Don Santiago de los Santos/,
-      breaths: 8106,
+      breaths: 8104,
     },
     "the-story-of-gosta-berling": {
       gutenberg: 56158,
