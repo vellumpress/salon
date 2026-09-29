@@ -1,0 +1,66 @@
+{
+  "id": "nina-balatka",
+  "title": "Nina Balatka",
+  "author": "Anthony Trollope",
+  "year": "1866",
+  "note": "Project Gutenberg 8897. Whole novel (Volume I–II, Ch I–XVI), bound from \"NINA BALATKA / VOLUME I / CHAPTER I\" to the end. The copyrighted 2003 introduction in the PG file and the e-text credit are OUT. Host: Ch I — \"Nina Balatka was a maiden of Prague…\" Year 1866. PG reading-ease 88.4 — no invented Launch rank. Place: Prague, Czech lands. Sits: waking / walk. Phone fix: paragraphs over ~350 words soft-broken at sentence ends into ~120–250-word screens; no words changed. Host intro: A note on what you're about to read: prejudice against Jews isn't background here, it's the subject. Nina's family and neighbours say ugly things about Anton and his people, openly and often. Those are the characters' voices; Trollope's narrator is on the lovers' side. Some of the long paragraphs have been broken into shorter screens for your phone; every word is as Trollope wrote it.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Volume I · Chapter I · The Kleinseite · Prague",
+      "place": "Volume I · Chapter I · The Kleinseite · Prague",
+      "reentry": "Nina Balatka was a maiden of Prague, born of Christian parents, and herself a Christian—but she loved a Jew; and this is her story.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Nina Balatka was a maiden of Prague, born of Christian parents, and herself a Christian—but she loved a Jew; and this is her story."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Nina Balatka was the daughter of one Josef Balatka, an old merchant of Prague, who was living at the time of this story; but Nina's mother was dead. Josef, in the course of his business, had become closely connected with a certain Jew named Trendellsohn, who lived in a mean house in the Jews' quarter in Prague—habitation in that one allotted portion of the town having been the enforced custom with the Jews then, as it still is now. In business with Trendellsohn, the father, there was Anton, his son; and Anton Trendellsohn was the Jew whom Nina Balatka loved. Now it had so happened that Josef Balatka, Nina's father, had drifted out of a partnership with Karil Zamenoy, a wealthy Christian merchant of Prague, and had drifted into a partnership with Trendellsohn. How this had come to pass needs not to be told here, as it had all occurred in years when Nina was an infant. But in these shiftings Balatka became a ruined man, and at the time of which I write he and his daughter were almost penniless. The reader must know that Karil Zamenoy and Josef Balatka had married sisters."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Josef's wife, Nina's mother, had long been dead, having died—so said Sophie Zamenoy, her sister—of a broken heart; of a heart that had broken itself in grief, because her husband had joined his fortunes with those of a Jew. Whether the disgrace of the alliance or its disastrous result may have broken the lady's heart, or whether she may have died of a pleurisy, as the doctors said, we need not inquire here. Her soul had been long at rest, and her spirit, we may hope, had ceased to fret itself in horror at contact with a Jew. But Sophie Zamenoy was alive and strong, and could still hate a Jew as intensely as Jews ever were hated in those earlier days in which hatred could satisfy itself with persecution. In her time but little power was left to Madame Zamenoy to persecute the Trendellsohns other than that which nature had given to her in the bitterness of her tongue. She could revile them behind their back, or, if opportunity offered, to their faces; and both she had done often, telling the world of Prague that the Trendellsohns had killed her sister, and robbed her foolish brother-in-law."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "But hitherto the full vial of her wrath had not been emptied, as it came to be emptied afterwards; for she had not yet learned the mad iniquity of her niece. But at the moment of which I now speak, Nina herself knew her own iniquity, hardly knowing, however, whether her love did or did not disgrace her. But she did know that any thought as to that was too late. She loved the man, and had told him so; and were he gipsy as well as Jew, it would be required of her that she should go out with him into the wilderness. And Nina Balatka was prepared to go out into the wilderness. Karil Zamenoy and his wife were prosperous people, and lived in a comfortable modern house in the New Town. It stood in a straight street, and at the back of the house there ran another straight street. This part of the city is very little like that old Prague, which may not be so comfortable, but which, of all cities on the earth, is surely the most picturesque."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Here lived Sophie Zamenoy; and so far up in the world had she mounted, that she had a coach of her own in which to be drawn about the thoroughfares of Prague and its suburbs, and a stout little pair of Bohemian horses—ponies they were called by those who wished to detract somewhat from Madame Zamenoy's position. Madame Zamenoy had been at Paris, and took much delight in telling her friends that the carriage also was Parisian; but, in truth, it had come no further than from Dresden. Josef Balatka and his daughter were very, very poor; but, poor as they were, they lived in a large house, which, at least nominally, belonged to old Balatka himself, and which had been his residence in the days of his better fortunes. It was in the Kleinseite, that narrow portion of the town, which lies on the other side of the river Moldau—the further side, that is, from the so-called Old and New Town, on the western side of the river, immediately under the great hill of the Hradschin. The Old Town and the New Town are thus on one side of the river, and the Kleinseite and the Hradschin on the other."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "To those who know Prague, it need not here be explained that the streets of the Kleinseite are wonderful in their picturesque architecture, wonderful in their lights and shades, wonderful in their strange mixture of shops and palaces— and now, alas! also of Austrian barracks—and wonderful in their intricacy and great steepness of ascent. Balatka's house stood in a small courtyard near to the river, but altogether hidden from it, somewhat to the right of the main street of the Kleinseite as you pass over the bridge. A lane, for it is little more, turning from the main street between the side walls of what were once two palaces, comes suddenly into a small square, and from a corner of this square there is an open stone archway leading into a court. In this court is the door, or doors, as I may say, of the house in which Balatka lived with his daughter Nina. Opposite to these two doors was the blind wall of another residence. Balatka's house occupied two sides of the court, and no other window, therefore, besides his own looked either upon it or upon him."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "The aspect of the place is such as to strike with wonder a stranger to Prague—that in the heart of so large a city there should be an abode so sequestered, so isolated, so desolate, and yet so close to the thickest throng of life. But there are others such, perhaps many others such, in Prague; and Nina Balatka, who had been born there, thought nothing of the quaintness of her abode. Immediately over the little square stood the palace of the Hradschin, the wide-spreading residence of the old kings of Bohemia, now the habitation of an ex-emperor of the House of Hapsburg, who must surely find the thousand chambers of the royal mansion all too wide a retreat for the use of his old age. So immediately did the imperial hill tower over the spot on which Balatka lived, that it would seem at night, when the moon was shining as it shines only at Prague, that the colonnades of the palace were the upper storeys of some enormous edifice, of which the broken merchant's small courtyard formed a lower portion."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "The long rows of windows would glimmer in the sheen of the night, and Nina would stand in the gloom of the archway counting them till they would seem to be uncountable, and wondering what might be the thoughts of those who abode there. But those who abode there were few in number, and their thoughts were hardly worthy of Nina's speculation. The windows of kings' palaces look out from many chambers. The windows of the Hradschin look out, as we are told, from a thousand. But the rooms within have seldom many tenants, nor the tenants, perhaps, many thoughts. Chamber after chamber, you shall pass through them by the score, and know by signs unconsciously recognised that there is not, and never has been, true habitation within them. Windows almost innumerable are there, that they may be seen from the outside—and such is the use of palaces. But Nina, as she would look, would people the rooms with throngs of bright inhabitants, and would think of the joys of happy girls who were loved by Christian youths, and who could dare to tell their friends of their love."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "But Nina Balatka was no coward, and she had already determined that she would at once tell her love to those who had a right to know in what way she intended to dispose of herself. As to her father, if only he could have been alone in the matter, she would have had some hope of a compromise which would have made it not absolutely necessary that she should separate herself from him for ever in giving herself to Anton Trendellsohn. Josef Balatka would doubtless express horror, and would feel shame that his daughter should love a Jew—though he had not scrupled to allow Nina to go frequently among these people, and to use her services with them for staving off the ill consequences of his own idleness and ill-fortune; but he was a meek, broken man, and was so accustomed to yield to Nina that at last he might have yielded to her even in this. There was, however, that Madame Zamenoy, her aunt—her aunt with the bitter tongue; and there was Ziska Zamenoy, her cousin—her rich and handsome cousin, who would so soon declare himself willing to become more than cousin, if Nina would but give him one nod of encouragement, or half a smile of welcome."
+    }
+  ]
+}

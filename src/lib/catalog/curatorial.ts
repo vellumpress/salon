@@ -1108,6 +1108,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-joy-of-captain-ribot",
   "saracinesca",
   "the-torrents-of-spring",
+  // Mira Tue 29 Sep 2026 POST-#192 CLEAR — The Bitter Tea of General Yen leads Next. Never Featured.
+  // LEAD kept — not The Woman of Andros, not Bella Donna, not Nina Balatka.
+  // La Lupa is Rituals only (the one story), not this tail.
+  // Tue POST-#191 Village and the earlier packs stay ahead.
+  "the-bitter-tea-of-general-yen",
+  "the-woman-of-andros",
+  "bella-donna",
+  "nina-balatka",
 ] as const;
 
 /**
