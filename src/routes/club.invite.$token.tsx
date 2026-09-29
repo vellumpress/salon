@@ -37,7 +37,7 @@ function InviteLanding() {
       setState({ status: "missing" });
       return;
     }
-    void getClubByInvite({ data: { token: invite } })
+    void getClubByInvite(invite)
       .then(async (club) => {
         if (!live) return;
         if (!club) {
@@ -48,7 +48,7 @@ function InviteLanding() {
         rememberInvite(club.id, club.inviteToken);
         setState({ status: "ready", club });
         try {
-          await joinClubByInvite({ data: { token: club.inviteToken } });
+          await joinClubByInvite(club.inviteToken);
         } catch {
           /* local join still holds */
         }

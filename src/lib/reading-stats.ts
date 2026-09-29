@@ -607,7 +607,15 @@ export function deriveReadingStats(input: {
     kept += item.kept?.length ?? 0;
   }
 
-  const streak = Math.max(progressStreak(progress, now), minutesStreak(byDay, now));
+  const ledgerSits = Object.values(input.sitsByDay ?? {}).reduce(
+    (sum, n) => sum + Math.max(0, Math.round(n) || 0),
+    0,
+  );
+  const sitsRecorded = Math.max(sitHistory.length, ledgerSits);
+  // Opening a book stamps lastOpenedAt. That is not a sit, so a day with
+  // zero sits does not start a streak of 1.
+  const streak =
+    sitsRecorded > 0 ? Math.max(progressStreak(progress, now), minutesStreak(byDay, now)) : 0;
   const forms = topForms([...workIds], progress, favSet, minutesByWork);
   const origins = topOrigins([...workIds], progress, favSet, minutesByWork);
   const pace = paceFrom(sitHistory, progress, minutesAll, avgGapSec);

@@ -84,7 +84,9 @@ test("A Hundred and Seventy Chinese Poems is one poem per scene", () => {
   assert.match(winterBreaths.at(-1)?.text ?? "", /carry me back to you!$/);
   assert.doesNotMatch(winterBreaths.map((b) => b.text).join(" "), /\bBattle\b/);
   for (const scene of full!.scenes) {
-    const lines = full!.breaths.filter((b) => b.sceneId === scene.id).map((b) => b.text);
+    const lines: string[] = full!.breaths
+      .filter((b) => b.sceneId === scene.id)
+      .map((b) => b.text);
     const last = lines.at(-1) ?? "";
     assert.equal(
       /^(Chapter|Part)\s+[IVXLCDM\d]+$|^Introduction$|^Two Poems$/i.test(last.trim()),

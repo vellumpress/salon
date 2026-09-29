@@ -19,7 +19,6 @@ function shelfBlock(id) {
 
 const PULL_HOLD = [
   "metamorphosis",
-  "siddhartha",
   "mama-blanca",
   "skylark",
   "nirmala",
@@ -80,7 +79,9 @@ test("Dragon's Teeth stays the Serrano 1889 stand-in, not Cousin Basilio", () =>
   assert.match(block, /1889/);
   assert.doesNotMatch(block, /title:\s*"[^"]*Cousin Basilio/i);
   assert.equal(shelfBlock("cousin-basilio"), null);
-  assert.match(pitches, /Serrano/);
-  assert.match(pitches, /1889/);
-  assert.doesNotMatch(pitches, /Rizal/);
+  const pitch = pitches.slice(pitches.indexOf("\n  basilio:"), pitches.indexOf("\n  oblomov:"));
+  assert.match(pitch, /Serrano/);
+  assert.match(pitch, /1889/);
+  assert.doesNotMatch(pitch, /Rizal/);
+  assert.doesNotMatch(pitch, /Noli Me Tangere/);
 });

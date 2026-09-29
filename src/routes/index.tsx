@@ -10,6 +10,7 @@ import {
   ShelfSearchHits,
   useShelfSearch,
 } from "@/components/shelf-search";
+import { catalogCount } from "@/lib/catalog";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { fillClass, fillInk, mosaicFills, type Fill } from "@/lib/mondrian";
 import { useVisitSeed } from "@/lib/use-visit-seed";
@@ -45,7 +46,7 @@ function Home() {
   const last = useLastRead();
   const hydrated = usePersistHydrated();
   const visit = useVisitSeed();
-  const { query, setQuery, searching, matches, poolSize } = useShelfSearch("local");
+  const { query, setQuery, searching, matches } = useShelfSearch("local");
 
   // Fresh Mondrian palette every full open/reload (visit seed).
   // Order: [resume?, door0, door1] — neighbors avoid the same fill.
@@ -195,7 +196,7 @@ function Home() {
         id="home-shelf-search"
         query={query}
         setQuery={setQuery}
-        count={searching ? matches.length : poolSize}
+        count={searching ? matches.length : catalogCount()}
       />
     </main>
   );

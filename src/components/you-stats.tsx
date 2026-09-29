@@ -39,6 +39,12 @@ export function ReadinessHero({
   const caption = radarCaption(reading.radar);
   const peak = Math.max(0, ...reading.radar.map((axis) => axis.score));
   const daily = reading.dailyScore;
+  const begun = reading.opened > 0 || reading.inProgress > 0;
+  const label = daily.label === "Unopened" && begun ? "Opened" : daily.label;
+  const line =
+    daily.label === "Unopened" && begun
+      ? "The book is open. A few attentive minutes will score the day."
+      : daily.line;
   const scoreDisplay = Number.isFinite(daily.total) ? String(daily.total) : "—";
 
   return (
@@ -49,7 +55,7 @@ export function ReadinessHero({
             viewBox={`0 0 ${layout.size} ${layout.size}`}
             className="h-full w-full"
             role="img"
-            aria-label={`Daily reading score ${scoreDisplay}, ${daily.label}. Week ${reading.weeklyScore.total}. Month ${reading.monthlyScore.total}. ${caption}`}
+            aria-label={`Daily reading score ${scoreDisplay}, ${label}. Week ${reading.weeklyScore.total}. Month ${reading.monthlyScore.total}. ${caption}`}
           >
             <rect width={layout.size} height={layout.size} fill="var(--color-paper)" />
             {layout.grids.map((d, i) => (
@@ -109,9 +115,9 @@ export function ReadinessHero({
           <p className="type-kicker text-muted">
             {handle || "This sitting"}
           </p>
-          <p className="mt-2 type-title">{daily.label}</p>
+          <p className="mt-2 type-title">{label}</p>
           <p className="type-pitch mt-2.5 max-w-xl text-ink/75">
-            {daily.line}
+            {line}
           </p>
           <p className="mt-4 font-sans text-xs tracking-chrome text-ink/55">
             <span className="text-ink/70">Week {reading.weeklyScore.total}</span>

@@ -244,8 +244,7 @@ export function useReaderSession() {
       });
       if (
         local.ok &&
-        (remote.status === "invalid" ||
-          (remote.status === "error" && /already sits/i.test(remote.message)))
+        remote.status === "error" && /already sits/i.test(remote.message)
       ) {
         remote = await connectHostedAccount({
           mode: "up",

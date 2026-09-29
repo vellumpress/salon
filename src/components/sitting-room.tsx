@@ -3,7 +3,6 @@ import { useP2PRoom, type PeerInfo } from "@/lib/multiplayer";
 import { ComingSoon } from "@/components/coming-soon";
 import { fillClass, hashSeed, type Fill } from "@/lib/mondrian";
 import { HoldLeave } from "@/components/hourglass";
-import { liveBackendEnabled } from "@/lib/site";
 import { enterTogetherCompose, exitTogetherCompose } from "@/lib/vvh";
 import { cn } from "@/lib/utils";
 
@@ -157,7 +156,6 @@ export function useSittingChat(pair: string, place: string, breathIndex: number)
   const p2p = useP2PRoom({
     room: `sit-${pair}`.slice(0, 64),
     name: "",
-    enabled: liveBackendEnabled,
   });
   const [lines, setLines] = useState<ChatLine[]>([]);
   const [here, setHere] = useState<Record<string, HereNote>>({});
@@ -271,7 +269,7 @@ export function useSittingChat(pair: string, place: string, breathIndex: number)
     selfId: p2p.selfId,
     peers: p2p.peers,
     joined: p2p.joined,
-    unavailable: !liveBackendEnabled || p2p.unavailable,
+    unavailable: p2p.unavailable,
     lines,
     here,
     draft,
