@@ -159,6 +159,11 @@ test("known origin overrides", () => {
     "guest-the-one-eyed": "Iceland",
     "the-blind-musician": "Ukraine",
     "magnolia-flower": "United States",
+    "in-the-mountains": "Switzerland",
+    "the-two-countesses": "Austria",
+    "el-ombu": "Argentina",
+    "halil-the-pedlar": "Turkey",
+    "the-white-sand-path": "Belgium",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);

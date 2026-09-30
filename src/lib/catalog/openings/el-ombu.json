@@ -1,0 +1,66 @@
+{
+  "id": "el-ombu",
+  "title": "El Ombú",
+  "author": "W. H. Hudson",
+  "year": "1902",
+  "note": "Project Gutenberg 60541. Whole book, four tales and the Appendix: El Ombú (PG l.133–1460; parts labelled I–IV, VI–VIII as printed, the text has no V), Story of a Piebald Horse (l.1461), Niño Diablo (l.1881), Marta Riquelme (l.2630, parts I–V) and the Appendix to El Ombú (l.3540–3701). Transcriber's box, series advert, title page and verse epigraph, imprint, dedication, the author's bibliographical note and the contents out. 1902 ('First Published 1902', per the PG text, l.73). PG reading-ease 71.1 — no invented Launch rank. Place: Argentina, the pampas near Chascomús (the text spells it Chascomus). Sits: unwind. Host intro: Four tales of the Argentine pampas and an appendix. The title tale is an old gaucho's history of one house and the people who lived under its great ombú tree. A heads-up: it includes a frontier massacre of an Indigenous camp, told plainly by a soldier who took part, and the period's word for Indigenous people, which is not today's.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "El Ombú · I · The pampas near Chascomús, Argentina",
+      "place": "El Ombú · I · The pampas near Chascomús, Argentina",
+      "reentry": "*This history of a house that had been was told in the shade, one summer's day, by Nicandro, that old man to whom we all loved to listen, since he could remember and properly narrate the life of every",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "*This history of a house that had been was told in the shade, one summer's day, by Nicandro, that old man to whom we all loved to listen, since he could remember and properly narrate the life of every person he had known in his native place, near to the lake of Chascomus, on the southern pampas of Buenos Ayres.*"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "In all this district, though you should go twenty leagues to this way and that, you will not find a tree as big as this ombú, standing solitary, where there is no house; therefore it is known to all as \"the ombú,\" as if but one existed; and the name of all this estate, which is now ownerless and ruined, is El Ombú. From one of the higher branches, if you can climb, you will see the lake of Chascomus, two thirds of a league away, from shore to shore, and the village on its banks. Even smaller things will you see on a clear day; perhaps a red line moving across the water—a flock of flamingos flying in their usual way. A great tree standing alone, with no house near it; only the old brick foundations of a house, so overgrown with grass and weeds that you have to look closely to find them. When I am out with my flock in the summer time, I often come here to sit in the shade."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "It is near the main road; travellers, droves of cattle, the diligence, and bullock-carts pass in sight. Sometimes, at noon, I find a traveller resting in the shade, and if he is not sleeping we talk and he tells me the news of that great world my eyes have never seen. They say that sorrow and at last ruin comes upon the house on whose roof the shadow of the ombú tree falls; and on that house which now is not, the shadow of this tree came every summer day when the sun was low. They say, too, that those who sit much in the ombú shade become crazed. Perhaps, sir, the bone of my skull is thicker than in most men, since I have been accustomed to sit here all my life, and though now an old man I have not yet lost my reason. It is true that evil fortune came to the old house in the end; but into every door sorrow must enter—sorrow and death that comes to all men; and every house must fall at last."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Do you hear the mangangá, the carpenter bee, in the foliage over our heads? Look at him, like a ball of shining gold among the green leaves, suspended in one place, humming loudly! Ah, señor, the years that are gone, the people that have lived and died, speak to me thus audibly when I am sitting here by myself. These are memories; but there are other things that come back to us from the past; I mean ghosts. Sometimes, at midnight, the whole tree, from its great roots to its topmost leaves, is seen from a distance shining like white fire. What is that fire, seen of so many, which does not scorch the leaves? And, sometimes, when a traveller lies down here to sleep the siesta, he hears sounds of footsteps coming and going, and noises of dogs and fowls, and of children shouting and laughing, and voices of people talking; but when he starts up and listens, the sounds grow faint, and seem at last to pass away into the tree with a low murmur as of wind among the leaves."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "As a small boy, from the time when I was able, at the age of about six years, to climb on to a pony and ride, I knew this tree. It was then what it is now; five men with their arms stretched to their utmost length could hardly encircle it. And the house stood there, where you see a bed of nettles—a long, low house, built of bricks, when there were few brick houses in this district, with a thatched roof."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "The last owner was just touching on old age. Not that he looked aged; on the contrary, he looked what he was, a man among men, a head taller than most, with the strength of an ox; but the wind had blown a little sprinkling of white ashes into his great beard and his hair, which grew to his shoulders like the mane of a black horse. That was Don Santos Ugarte, known to all men in this district as the White Horse, on account of the whiteness of his skin where most men look dark; also because of that proud temper and air of authority which he had. And for still another reason—the number of children in this neighbourhood of which he was said to be the father. In all houses, for many leagues around, the children were taught to reverence him, calling him \"uncle,\" and when he appeared they would run and, dropping on their knees before him, cry out \"*Bendicion mi tio.*\" He would give them his blessing; then, after tweaking a nose and pinching an ear or two, he would flourish his whip over their heads to signify that he had done with them, and that they must quickly get out of his way."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "These were children of the wind, as the saying is, and the desire of his heart was for a legitimate son, an Ugarte by name, who would come after him at El Ombú, as he had come after his father. But though he had married thrice, there was no son born, and no child. Some thought it a mystery that one with so many sons should yet be without a son. The mystery, friend, was only for those who fail to remember that such things are not determined by ourselves. We often say, that He who is above us is too great to concern Himself with our small affairs. There are so many of us; and how shall He, seated on his throne at so great a distance, know all that passes in his dominions! But Santos was no ordinary person, and He who was greater than Santos had doubtless had his attention drawn to this man; and had considered the matter, and had said, \"You shall not have your desire; for though you are a devout man, one who gives freely of his goods to the church and my poor, I am not wholly satisfied with you.\" And so it came to pass that he had no son and heir."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "His first two wives had died, so it was said, because of his bitterness against them. I only knew the third—Doña Mericie, a silent, sad woman, who was of less account than any servant, or any slave in the house. And I, a simple boy, what could I know of the secrets of her heart? Nothing! I only saw her pale and silent and miserable, and because her eyes followed me, I feared her, and tried always to keep out of her way. But one morning, when I came to El Ombú and went into the kitchen, I found her there alone, and before I could escape she caught me in her arms, and lifting me off my feet strained me against her breast, crying, *hijo de mi alma*, and I knew not what beside; and calling God's blessing on me, she covered my face with kisses. Then all at once, hearing Santo's voice without, she dropped me and remained like a woman of stone, staring at the door with scared eyes."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "She, too, died in a little while, and her disappearance made no difference in the house, and if Santos wore a black band on his arm, it was because custom demanded it and not because he mourned for her in his heart."
+    }
+  ]
+}

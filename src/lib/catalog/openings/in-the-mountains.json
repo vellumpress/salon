@@ -1,0 +1,121 @@
+{
+  "id": "in-the-mountains",
+  "title": "In the Mountains",
+  "author": "Elizabeth von Arnim",
+  "year": "1920",
+  "note": "Project Gutenberg 35072. Whole book: the 71 dated entries, July 22nd (PG l.57) to October 15th (l.6506–6558), each a scene titled by its date. PG header, e-text credits, the title page ('The Author of \"Elizabeth and Her German Garden\"') and imprint out. Credited as Elizabeth von Arnim. Print fix: 'carolling blacks bird' → 'carolling blackbird' (l.259). The quoted Henry James letterhead is one line. British single-quote dialogue kept as printed. 1920 (Macmillan, London, per the PG text imprint). PG reading-ease 80.0 — no invented Launch rank. Place: Switzerland, a mountainside chalet (the valley is never named). Sits: unwind / before sleep. Host intro: A diary, from July to October 1919. A woman worn out by the war years climbs back alone to her chalet in the Swiss mountains to be quiet, and two English sisters come to stay. Grief with wit, in easy prose. Each entry is headed by its date.",
+  "minutes": 11,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "July 22nd to July 29th · Mountainside chalet, Switzerland",
+      "place": "July 22nd to July 29th · Mountainside chalet, Switzerland",
+      "reentry": "I want to be quiet now.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "I want to be quiet now."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "I crawled up here this morning from the valley like a sick ant,—struggled up to the little house on the mountain side that I haven't seen since the first August of the war, and dropped down on the grass outside it, too tired even to be able to thank God that I had got home."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Here I am once more, come back alone to the house that used to be so full of happy life that its little wooden sides nearly burst with the sound of it. I never could have dreamed that I would come back to it alone. Five years ago, how rich I was in love; now how poor, how stripped of all I had. Well, it doesn't matter. Nothing matters. I'm too tired. I want to be quiet now. Till I'm not so tired. If only I can be quiet...."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Yesterday all day long I lay on the grass in front of the door and watched the white clouds slowly passing one after the other at long, lazy intervals over the tops of the delphiniums,—the row of delphiniums I planted all those years ago. I didn't think of anything; I just lay there in the hot sun, blinking up and counting the intervals between one spike being reached and the next. I was conscious of the colour of the delphiniums, jabbing up stark into the sky, and of how blue they were; and yet not so blue, so deeply and radiantly blue, as the sky. Behind them was the great basin of space filled with that other blue of the air, that lovely blue with violet shades in it; for the mountain I am on drops sharply away from the edge of my tiny terrace-garden, and the whole of the space between it and the mountains opposite brims all day long with blue and violet light. At night the bottom of the valley looks like water, and the lamps in the little town lying along it like quivering reflections of the stars."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "I wonder why I write about these things. As if I didn't know them! Why do I tell myself in writing what I already so well know? Don't I know about the mountain, and the brimming cup of blue light? It is because, I suppose, it's lonely to stay inside oneself. One has to come out and talk. And if there is no one to talk to one imagines someone, as though one were writing a letter to somebody who loves one, and who will want to know, with the sweet eagerness and solicitude of love, what one does and what the place one is in looks like. It makes one feel less lonely to think like this,—to write it down, as if to one's friend who cares. For I'm afraid of loneliness; shiveringly, terribly afraid. I don't mean the ordinary physical loneliness, for here I am, deliberately travelled away from London to get to it, to its spaciousness and healing. I mean that awful loneliness of spirit that is the ultimate tragedy of life. When you've got to that, really reached it, without hope, without escape, you die. You just can't bear it, and you die."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "It's queer the urge one has to express oneself, to get one's self into words. If I weren't alone I wouldn't write, of course, I would talk. But nearly everything I wanted to say would be things I couldn't say. Not unless it was to some wonderful, perfect, all-understanding listener,—the sort one used to imagine God was in the days when one said prayers. Not quite like God though either, for this listener would sometimes say something kind and gentle, and sometimes, stroke one's hand a little to show that he understood. Physically, it is most blessed to be alone. After all that has happened, it is most blessed. Perhaps I shall grow well here, alone. Perhaps just sitting on these honey-scented grass slopes will gradually heal me. I'll sit and lick my wounds. I do so dreadfully want to get mended! I do so dreadfully want to get back to confidence in goodness."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "For three days now I've done nothing but lie in the sun, except when meals are put in the open doorway for me. Then I get up reluctantly, like some sleepy animal, and go and eat them and come out again."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "In the evening it is too cold and dewy here for the grass, so I drag a deep chair into the doorway and sit and stare at the darkening sky and the brightening stars. At ten o'clock Antoine, the man of all work who has looked after the house in its years of silence during the war, shuts up everything except this door and withdraws to his own room and his wife; and presently I go in too, bolting the door behind me, though there is nothing really to shut out except the great night, and I creep upstairs and fall asleep the minute I'm in bed. Indeed, I don't think I'm much more awake in the day than in the night. I'm so tired that I want to sleep and sleep; for years and years; for ever and ever."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "There was no unpacking to do. Everything was here as I left it five years ago. We only took, five years ago, what each could carry, waving goodbye to the house at the bend of the path and calling to it as the German soldiers called to their disappearing homes, 'Back for Christmas!' So that I came again to it with only what I could carry, and had nothing to unpack. All I had to do was to drop my little bag on the first chair I found and myself on to the grass, and in that position we both stayed till bedtime."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Antoine is surprised at nothing. He usedn't to be surprised at my gaiety, which yet might well have seemed to him, accustomed to the sobriety of the peasant women here, excessive; and nor is he now surprised at my silence. He has made a few inquiries as to the health and whereabouts of the other members of that confident group that waved goodbyes five years ago, and showed no surprise when the answer, at nearly every name, was 'Dead.' He has married since I went away, and hasn't a single one of the five children he might have had, and he doesn't seem surprised at that either. I am. I imagined the house, while I was away, getting steadily fuller, and used to think that when I came back I would find little Swiss babies scattered all over it; for, after all, there quite well might have been ten, supposing Antoine had happened to possess a natural facility in twins."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "The silence here is astonishing. There are hardly any birds. There is hardly any wind, so that the leaves are very still and the grass scarcely stirs. The crickets are busy, and the sound of the bells on distant cows pasturing higher up on the mountains floats down to me; but else there is nothing but a great, sun-flooded silence."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "When I left London it was raining. The Peace Day flags, still hanging along the streets, drooped heavy with wet in what might have been November air, it was so dank and gloomy. I was prepared to arrive here in one of the mountain mists that settle down on one sometimes for days,—vast wet stretches of grey stuff like some cold, sodden blanket, muffling one away from the mountains opposite, and the valley, and the sun. Instead I found summer: beautiful clear summer, fresh and warm together as only summer up on these honey-scented slopes can be, with the peasants beginning to cut the grass,—for things happen a month later here than down in the valley, and if you climb higher you can catch up June, and by climbing higher and higher you can climb, if you want to, right back into the spring. But you don't want to if you're me. You don't want to do anything but stay quiet where you are."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "If only I don't think—if only I don't think and remember—how can I not get well again here in the beauty and the gentleness? There's all next month, and September, and perhaps October too may be warm and golden. After that I must go back, because the weather in this high place while it is changing from the calms of autumn to the calms of the exquisite alpine winter is a disagreeable, daunting thing. But I have two whole months; perhaps three. Surely I'll be stronger, tougher, by then? Surely I'll at least be better? I couldn't face the winter in London if this desperate darkness and distrust of life is still in my soul. I don't want to talk about my soul. I hate to. But what else am I to call the innermost *Me,* the thing that has had such wounds, that is so much hurt and has grown so dim that I'm in terror lest it should give up and go under, go quite out, and leave me alone in the dark?"
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "It is dreadful to be so much like Job."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "Like him I've been extraordinarily stripped of all that made life lovely. Like him I've lost, in a time that is very short to have been packed so full of disasters, nearly everything I loved. And it wasn't only the war. The war passed over me, as it did over everybody, like some awful cyclone, flattening out hope and fruitfulness, leaving blood and ruins behind it; but it wasn't only that. In the losses of the war, in the anguish of losing one's friends, there was the grisly comfort of companionship in grief; but beyond and besides that life has been devastated for me. I do feel like Job, and I can't bear it. It is so humiliating, being so much stricken. I feel ridiculous as well as wretched; as if somebody had taken my face and rubbed it in dust."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "And still, like Job, I cling on to what I can of trust in goodness, for if I let that go I know there would be nothing left but death."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Oh, what is all this talk of death? To-day I suddenly noticed that each day since I've been here what I've written down has been a whine, and that each day while I whined I was in fact being wrapped round by beautiful things, as safe and as perfectly cared for *really* as a baby fortunate enough to have been born into the right sort of family. Oughtn't I to be ashamed? Of course I ought; and so I am. For, looking at the hours, each hour as I get to it, they are all good. Why should I spoil them, the ones I'm at now, by the vivid remembrance, the aching misery, of those black ones behind me? They, anyhow, are done with; and the ones I have got to now are plainly good. And as for Job who so much haunted me yesterday, I can't really be completely like him, for at least I've not yet had to take a potsherd and sit down somewhere and scrape. But perhaps I had better touch wood over that, for one has to keep these days a wary eye on God."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Mrs. Antoine, small and twenty-five, who has been provided by Antoine, that expert in dodging inconveniences, with a churn suited to her size out of which she produces little pats of butter suited to my size every day, Switzerland not having any butter in it at all for sale,—Mrs. Antoine looked at me to-day when she brought out food at dinner time, and catching my eye she smiled at me; and so I smiled at her, and instantly she began to talk."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "Up to now she has crept about softly on the tips of her toes as if she were afraid of waking me, and I had supposed it to be her usual fashion of moving and that it was natural to her to be silent; but to-day, after we had smiled at each other, she stood over me with a dish in one hand and a plate in the other, and held forth at length with the utmost blitheness, like some carolling blackbird, about her sufferings, and the sufferings of Antoine, and the sufferings of everybody during the war. The worse the sufferings she described had been the blither became her carollings; and with a final chirrup of the most flute-like cheerfulness she finished this way:"
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "*'Ah, ma foi, oui—il y avait un temps où il a fallu se fier entièrement au bon Dieu. C'était affreux.*'"
+    }
+  ]
+}

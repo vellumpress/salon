@@ -1132,6 +1132,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "sunshine-sketches-of-a-little-town",
   "guest-the-one-eyed",
   "the-blind-musician",
+  // Mira Wed 30 Sep 2026 POST-#206 CLEAR — In the Mountains leads Next. Never Featured.
+  // LEAD kept — not The Two Countesses, not El Ombú, not Halil the Pedlar.
+  // The White Sand-Path is Rituals only (the one story), not this tail.
+  // Wed POST-#204 Java Head and the earlier packs stay ahead.
+  "in-the-mountains",
+  "the-two-countesses",
+  "el-ombu",
+  "halil-the-pedlar",
 ] as const;
 
 /**

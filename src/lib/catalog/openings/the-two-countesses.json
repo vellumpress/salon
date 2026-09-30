@@ -1,0 +1,236 @@
+{
+  "id": "the-two-countesses",
+  "title": "The Two Countesses",
+  "author": "Marie von Ebner-Eschenbach (tr. Ellen Waugh)",
+  "year": "1893",
+  "note": "Project Gutenberg 76750 (tr. Ellen Waugh, per PG; the title page reads 'Translated by Mrs. Waugh'). Whole book: Countess Muschi (six letters, PG l.166–913), Countess Paula (l.919–2978, with 'My Memoirs' from l.948) and the Epilogue (l.2989–3126). The transcriber's notes, the colophon, 'The \"Unknown\" Library' series list, the title and imprint pages, the five decorative [Illustration] tags and 'The End' out. Right-set datelines and sign-offs set as Note: lines; the two datelines that read 1883 are as printed. '*milias res*' kept as printed (Muschi's malapropism). EN 1893 (Cassell, New York, per the PG page). No reading-ease score on the PG page, so none cited. Place: Austria, Sebenberg Castle and Vienna. Sits: walk / unwind. Host intro: Two short novels and an epilogue, from Vienna society in the 1880s. First, Countess Muschi's letters to a friend about the Swabian count her parents hope she'll marry; they give away more than she means. Then Countess Paula's memoirs, which turn into a diary. Light and quick. Each letter's place and date is a Note line at its head.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Countess Muschi · Letters 1–2 · Sebenberg Castle, Austria",
+      "place": "Countess Muschi · Letters 1–2 · Sebenberg Castle, Austria",
+      "reentry": "Note: Sebenberg Castle, November, 1882.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Note: Sebenberg Castle, November, 1882."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The shooting season is over; all our guests have left the castle; we are as dull as ditch water, and I at length have time to write to you, dear Nesti."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Poor Fred, too, has gone. He was awfully kind and amusing, but woefully unhappy. I am truly sorry for him, poor fellow, but I cannot help it. His estate up in the mountains brings in next to nothing; and we could not live upon air, first-rate as it seems to be up there."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "But I have something much more interesting to tell you about, and will plunge you at once in *milias res*—Latin, my love; comes from *milieu*. Where did I pick that up? Heaven only knows. I am awfully quick at learning, as my poor old governess Nagel, whom I have brought up, solemnly avers to this day."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "So, now, prick up your ears!"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Yesterday, while engaged in collecting postage stamps—you must know that one million stamps procures one a little Chinese baby; no humbug! You may trust my word for it, and send me a few thousands if you happen to have them by you—I suddenly came upon one from Würtemberg."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Who is our correspondent in Würtemberg, mamma?\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"That is a secret,\" answers mamma, and I see that she is burning to tell me. A few minutes later I know all about it. As a young man, papa had served in the same regiment with a Count Aich-Kronburg. Both fell in love with the same girl, a rich heiress; the Swabian was the successful lover, papa the first to congratulate him. So they remained friends. Now their son and heir, the young count, is on his travels, and is to stop at Sebenberg to do the agreeable to papa and mamma and—whom else? Mamma made me guess, and then embraced me, as our mothers have a way of doing when they hope soon to be rid of us."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "So my probable lord and master is a Swabian! If only I knew what he was like, and that he has not great clod-hopping feet on which to stump off to drink beer with his steward and people through the long hours of the afternoon!"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "But, oh, my dear girl, after supper it was so deadly dull that I began to think if he had feet like an elephant I would accept him! An evening in which we are condemned to our own society, as sometimes happens now at Sebenberg, is quite too ghastly. Papa persuades himself that he is reading the *Sporting Times*, and goes fast asleep over it. Mamma knits white wraps, the patterns of which are decided by the form of her cigar ash as it falls. My uncle plays tactics with the singing-mistress, and Aunt Julia devotes herself to word-making with Fräulein Nagel."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"The fifty-seventh word, Fräulein?\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"A village in Servia.\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"In Servia?\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"Yes. It begins with a K and ends with an E.\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"Kindly pass me Meyer.\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"I have looked there, and cannot find it.\""
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"Then Ritter.\""
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "And they fall to studying Ritter. There you have table No. 1."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "At table No. 2, at the far end of the drawing room, the little ones are playing games with the nursery governess, and I sit on the *causeuse* in solitary state, betwixt youth and age, like Dido upon Naxos."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Dear me! another classical allusion. You really must overlook it; I am so bored I am growing quite stupid. My bulldog gives a stretch and yawns at me."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"*Venez*,\" I say to her, \"let us go out on to the balcony. Perhaps a bat may fly by for our amusement.\""
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "As I gracefully recline upon the parapet I hear a manly tread behind me. It is papa. He, too, leans upon the balcony, and at first says nothing. Then suddenly:"
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Pussy!\""
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"What, papa?\""
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"What are you doing?\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"Questioning the bats, papa.\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "He laughs."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "\"I'll tell you something, but, mind, no chattering.\""
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "\"Oh, no, papa.\""
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"You won't say a word?\""
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "\"No, papa.\""
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "He looks straight into my eyes. \"Not even to mamma?\" And then he told me all about the young count's coming visit."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "I merely asked did the Kronburgs keep a racing stud? Papa did not know—thought most probably not. Alas!"
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "Note: Your Muschi."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "Note: Sebenberg Castle, November 10, 1882."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "Dear Nesti: Do not be so impatient. I cannot sit all day long at my writing table keeping you informed as to our doings. We are not nearly so far advanced as you imagine; there is no talk of \"congratulations\" at present, and I beg above all things that you will not indulge in sentimentalities. The name of the *fiancé*—how ridiculous you are, child—is Carl, like our groom of the chambers, who, ever since the count's arrival, has been called by his surname. He is not so tall as papa, though a very good height, and would have quite presentable feet if only he had a better bootmaker. But he wears square-toed boots that are simply hideous."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "He arrived in a kind of cloth tunic, which the poor fellow apparently had made expressly for traveling. I must find out who is his tailor, that I may duly warn all my friends against him. It is unfortunate, too, that he wears gloves like any commercial traveler, or one of the *jeunesse dorée* of a German novel."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "Understand from this, Nesti, that I have not, by any means, made up my mind yet."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "The amusing part of it is the intense amiability displayed by papa and mamma toward him. It is irresistibly funny. Papa even kept quite wide awake last evening; and he, who usually takes no interest in talking to people about anything but their horses or dogs, began inquiring all about the laws of forestry in Swabia; whether land was farmed out there; if owners lived much upon their estates; what kind of hunting there was, et-z-r-a (which stands for \"and so on.\" I am afraid it is not the right way to write it, but, to tell truth, I never could do it properly)."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "The count answered very nicely, only he is rather shy, and that gives him a somewhat pedantic manner. About nine o'clock it began to get decidedly tame, when, to my surprise and delight, Fred unexpectedly appeared with his brother and the two Hockhaus. They were on their way to the military steeple chase at Raigern, and came to beg quarters for the night. I at once got up a circus entertainment, sent for a four-in-hand driving whip, and trotted Fred out first as the thoroughbred mare Arabi. It sent us into fits to see how he sprang over chairs, and backed, and reared, and finally picked up my handkerchief from the floor with his teeth. Then we made Nagel sit down to the piano and play a set of quadrilles for the four to dance. They did it splendidly; they are such dear boys. The youngest Hockhaus is so good-natured, and he really has a face like a horse. At last Fred, jumping upon his brother's back, introduced himself as Mlle. Pimpernelle upon her splendidly trained horse Rob Roy. If only you could have seen him—the coquettish glances he gave, his mincing airs, and the farewell kisses of the hand he sent back in all directions as he was gayly trotted off. I never saw anything so funny. We were immensely amused, papa and mamma as much, as any of us. But the count looked on stiff as buckram, until I thought to myself, \"My good sir, if you happened to be stolen. I'd not be the one to send the crier after you.\" The best thing of all in our circus was when the noble steed, having had more than enough of Mlle. Pimpernelle's riding whip, suddenly took to rearing and plunging, and rolled over with his fair rider."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "We were so overheated from laughing that, to cool down, I proposed a *jeu d'esprit* of my own invention. The whole company sat round a table, a saucer of pounded sugar was brought in, and each one in turn had to dip his nose in it. Then, when all were ready, I gave the word—one, two, three—and everyone had to try to lick away the sugar from the tip of his nose. The one who did it first was the winner. Oh, to see the grimaces and contortions we made, and how indignant my dear old Nagel was, and yet had to join in it! description fails me."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "Papa was the first winner, then Kuni Hockhaus, then I; and Fred only, with his dear little *retroussé* nose, could not accomplish it; he was thoroughly beaten, poor fellow! He is such a dear old boy."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "Note: Your Muschi."
+    }
+  ]
+}
