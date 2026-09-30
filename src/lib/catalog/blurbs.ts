@@ -551,6 +551,16 @@ const BLURBS: Record<string, string> = {
     "At the hour of midnight a child is born, and his mother is the first to notice.",
   "magnolia-flower":
     "The brook laughed and sang, and the river tells one story until the old couple come back.",
+  "in-the-mountains":
+    "I want to be quiet now, and a Swiss mountainside chalet is where the diary turns.",
+  "the-two-countesses":
+    "The shooting season is over at Sebenberg Castle, and Countess Muschi writes more than she means.",
+  "el-ombu":
+    "An old gaucho tells the history of one house under the ombú, on the pampas near Chascomús.",
+  "halil-the-pedlar":
+    "Time out of mind the Shiites and the Sunnites have quarrelled, and a pedlar walks the lanes of Stambul.",
+  "the-white-sand-path":
+    "A boy shut in the loft watches the white sand road until the path looks like a life.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",
