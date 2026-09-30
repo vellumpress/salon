@@ -12772,7 +12772,7 @@ test("Mira POST-#204 CLEAR is Next lead Java Head, then Sunshine Sketches, Guest
     assert.equal(opened.breaths[0]?.text.trim().split(/\s+/).length, want.firstWords, id);
     const slice = full.breaths.slice(want.openAt, want.openAt + opened.breaths.length);
     assert.equal(slice.length, opened.breaths.length, id);
-    const norm = (value: string) => value.replace(/\[\d+\]/g, "").trim();
+    const norm = (value: string) => value.replace(/\[\d+\]/g, "").replace(/^Note: /, "").trim();
     for (let i = 0; i < opened.breaths.length; i += 1) {
       const left = opened.breaths[i]?.text ?? "";
       const right = slice[i]?.text ?? "";
@@ -12847,7 +12847,8 @@ test("Mira POST-#204 CLEAR is Next lead Java Head, then Sunshine Sketches, Guest
   assert.equal(blind.scenes[0]?.title, "Chapter I · The Blind Infant. The Family · § I");
   assert.equal(blind.scenes[2]?.title, "Chapter I · The Blind Infant. The Family · § III");
   assert.equal(blind.scenes.at(-1)?.title, "Epilogue");
-  assert.equal(blind.breaths.filter((breath) => /\[\d+\]/.test(breath.text)).length > 0, true);
+  assert.equal(blind.breaths.some((breath) => /\[\d+\]/.test(breath.text)), false);
+  assert.equal(blind.breaths.filter((breath) => breath.text.startsWith("Note: ")).length, 17);
 
   const flower = JSON.parse(
     readFileSync(new URL("./texts/magnolia-flower.json", import.meta.url), "utf8"),
