@@ -26,7 +26,7 @@
       "id": "s2",
       "title": "Chap. Ii",
       "place": "Chap. Ii",
-      "reentry": "In those days were there great troubles in Norway. Harald the Unshorn,[6] son of Halfdan the Black, was pushing forth for the kingdom. Before that he was King of the Uplands; then he went north through the land, and had many battles there, ",
+      "reentry": "In those days were there great troubles in Norway. Harald the Unshorn, son of Halfdan the Black, was pushing forth for the kingdom. Before that he was King of the Uplands; then he went north through the land, and had many battles there, and",
       "prompt": "A word from this stretch."
     },
     {
@@ -844,27 +844,27 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "There was a man named Onund, who was the son of Ufeigh Clubfoot, the son of Ivar the Smiter; Onund was brother of Gudbiorg, the mother of Gudbrand Ball, the father of Asta, the mother of King Olaf the Saint. Onund was an Uplander by the kin of his mother; but the kin of his father dwelt chiefly about Rogaland and Hordaland. He was a great viking, and went harrying west over the Sea.[4] Balk of Sotanes, the son of Blaeng, was with him herein, and Orm the Wealthy withal, and Hallvard was the name of the third of them. They had five ships, all well manned, and therewith they harried in the South-isles;[5] and when they came to Barra, they found there a king, called Kiarval, and he, too, had five ships. They gave him battle, and a hard fray there was. The men of Onund were of the eagerest, and on either side many fell; but the end of it was that the king fled with only one ship. So there the men of Onund took both ships and much wealth, and abode there through the winter. For three summers they harried throughout Ireland and Scotland, and thereafter went to Norway."
+      "text": "There was a man named Onund, who was the son of Ufeigh Clubfoot, the son of Ivar the Smiter; Onund was brother of Gudbiorg, the mother of Gudbrand Ball, the father of Asta, the mother of King Olaf the Saint. Onund was an Uplander by the kin of his mother; but the kin of his father dwelt chiefly about Rogaland and Hordaland. He was a great viking, and went harrying west over the Sea. Balk of Sotanes, the son of Blaeng, was with him herein, and Orm the Wealthy withal, and Hallvard was the name of the third of them. They had five ships, all well manned, and therewith they harried in the South-isles; and when they came to Barra, they found there a king, called Kiarval, and he, too, had five ships. They gave him battle, and a hard fray there was. The men of Onund were of the eagerest, and on either side many fell; but the end of it was that the king fled with only one ship. So there the men of Onund took both ships and much wealth, and abode there through the winter. For three summers they harried throughout Ireland and Scotland, and thereafter went to Norway."
     },
     {
       "id": "s1-1",
       "sceneId": "s1",
-      "text": "[Footnote 4: \"West over the Sea,\" means in the Sagas the British isles, and the islands about them--the Hebrides, Orkneys, &c.]"
+      "text": "Note: \"West over the Sea,\" means in the Sagas the British isles, and the islands about them—the Hebrides, Orkneys, &c."
     },
     {
       "id": "s1-2",
       "sceneId": "s1",
-      "text": "[Footnote 5: South-isles are the Hebrides, and the other islands down to Man.]"
+      "text": "Note: South-isles are the Hebrides, and the other islands down to Man."
     },
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "In those days were there great troubles in Norway. Harald the Unshorn,[6] son of Halfdan the Black, was pushing forth for the kingdom. Before that he was King of the Uplands; then he went north through the land, and had many battles there, and ever won the day. Thereafter he harried south in the land, and wheresoever he came, laid all under him; but when he came to Hordaland, swarms of folk came thronging against him; and their captains were Kiotvi the Wealthy, and Thorir Longchin, and those of South Rogaland, and King Sulki. Geirmund Helskin was then in the west over the Sea; nor was he in that battle, though he had a kingdom in Hordaland."
+      "text": "In those days were there great troubles in Norway. Harald the Unshorn, son of Halfdan the Black, was pushing forth for the kingdom. Before that he was King of the Uplands; then he went north through the land, and had many battles there, and ever won the day. Thereafter he harried south in the land, and wheresoever he came, laid all under him; but when he came to Hordaland, swarms of folk came thronging against him; and their captains were Kiotvi the Wealthy, and Thorir Longchin, and those of South Rogaland, and King Sulki. Geirmund Helskin was then in the west over the Sea; nor was he in that battle, though he had a kingdom in Hordaland."
     },
     {
       "id": "s2-1",
       "sceneId": "s2",
-      "text": "[Footnote 6: \"Harald the Unshorn:\" he was so called at first because he made a vow not to cut his hair till he was sole king of Norway. When he had attained to this, and Earl Rognvald had taken him to the bath and trimmed his hair, he was called \"Fair-hair,\" from its length and beauty.]"
+      "text": "Note: \"Harald the Unshorn:\" he was so called at first because he made a vow not to cut his hair till he was sole king of Norway. When he had attained to this, and Earl Rognvald had taken him to the bath and trimmed his hair, he was called \"Fair-hair,\" from its length and beauty."
     },
     {
       "id": "s2-2",
@@ -1039,12 +1039,12 @@
     {
       "id": "s6-3",
       "sceneId": "s6",
-      "text": "The daughters of Thormod were these: Thorvor, mother of Thorod the Godi[7] of Hailti, and Thora, mother of Thorstein, the Godi, the father of Biarni the Sage."
+      "text": "The daughters of Thormod were these: Thorvor, mother of Thorod the Godi of Hailti, and Thora, mother of Thorstein, the Godi, the father of Biarni the Sage."
     },
     {
       "id": "s6-4",
       "sceneId": "s6",
-      "text": "[Footnote 7: \"Godi\" is the name for the rulers of the thirty-nine districts into which the republic of Iceland was anciently divided. While the ancient religion lasted, their office combined in itself the highest civil and sacerdotal functions.]"
+      "text": "Note: \"Godi\" is the name for the rulers of the thirty-nine districts into which the republic of Iceland was anciently divided. While the ancient religion lasted, their office combined in itself the highest civil and sacerdotal functions."
     },
     {
       "id": "s6-5",
@@ -1769,12 +1769,12 @@
     {
       "id": "s18-26",
       "sceneId": "s18",
-      "text": "\"Otherwise would matters be, When this shouting Haflidi Ate in house at Reydarfell Curdled milk, and deemed it well; He who decks the reindeer's side That 'twixt ness and ness doth glide, Twice in one day had his fill Of the feast of dart shower shrill.\"[8]"
+      "text": "\"Otherwise would matters be, When this shouting Haflidi Ate in house at Reydarfell Curdled milk, and deemed it well; He who decks the reindeer's side That 'twixt ness and ness doth glide, Twice in one day had his fill Of the feast of dart shower shrill.\""
     },
     {
       "id": "s18-27",
       "sceneId": "s18",
-      "text": "[Footnote 8: This is about as obscure as the original, which seems to allude to some event not mentioned in the Saga.]"
+      "text": "Note: This is about as obscure as the original, which seems to allude to some event not mentioned in the Saga."
     },
     {
       "id": "s18-28",
@@ -1919,12 +1919,12 @@
     {
       "id": "s19-15",
       "sceneId": "s19",
-      "text": "Everything in their way was kicked out of place, the barrow-wight setting on with hideous eagerness; Grettir gave back before him for a long time, till at last it came to this, that he saw it would not do to hoard his strength any more; now neither spared the other, and they were brought to where the horse-bones were, and thereabout they wrestled long. And now one, now the other, fell on his knee; but the end of the strife was, that the barrow-dweller fell over on his back with huge din. Then ran Audun from the holding of the rope, and deemed Grettir dead. But Grettir drew the sword, 'Jokul's gift,' and drave it at the neck of the barrow-bider so that it took off his head, and Grettir laid it at the thigh of him.[9] Then he went to the rope with the treasure, and lo, Audun was clean gone, so he had to get up the rope by his hands; he had tied a line to the treasure, and therewith he now haled it up."
+      "text": "Everything in their way was kicked out of place, the barrow-wight setting on with hideous eagerness; Grettir gave back before him for a long time, till at last it came to this, that he saw it would not do to hoard his strength any more; now neither spared the other, and they were brought to where the horse-bones were, and thereabout they wrestled long. And now one, now the other, fell on his knee; but the end of the strife was, that the barrow-dweller fell over on his back with huge din. Then ran Audun from the holding of the rope, and deemed Grettir dead. But Grettir drew the sword, 'Jokul's gift,' and drave it at the neck of the barrow-bider so that it took off his head, and Grettir laid it at the thigh of him. Then he went to the rope with the treasure, and lo, Audun was clean gone, so he had to get up the rope by his hands; he had tied a line to the treasure, and therewith he now haled it up."
     },
     {
       "id": "s19-16",
       "sceneId": "s19",
-      "text": "[Footnote 9: The old belief was that by this means only could a ghost be laid.]"
+      "text": "Note: The old belief was that by this means only could a ghost be laid."
     },
     {
       "id": "s19-17",
@@ -2364,12 +2364,12 @@
     {
       "id": "s22-2",
       "sceneId": "s22",
-      "text": "Now one day Thorkel bade his men to follow him, and search for the lair of the bear. They found it in sheer sea-rocks; there was a high rock and a cave before it down below, but only one track to go up to it: under the cave were scarped rocks, and a heap of stones down by the sea, and sure death it was to all who might fall down there. The bear lay in his lair by day, but went abroad as soon as night fell; no fold could keep sheep safe from him, nor could any dogs be set on him: and all this men thought the heaviest trouble. Biorn, Thorkel's kinsman, said that the greatest part had been done, as the lair had been found. \"And now I shall try,\" said he, \"what sort of play we[10] namesakes shall have together.\" Grettir made as if he knew not what Biorn said on this matter."
+      "text": "Now one day Thorkel bade his men to follow him, and search for the lair of the bear. They found it in sheer sea-rocks; there was a high rock and a cave before it down below, but only one track to go up to it: under the cave were scarped rocks, and a heap of stones down by the sea, and sure death it was to all who might fall down there. The bear lay in his lair by day, but went abroad as soon as night fell; no fold could keep sheep safe from him, nor could any dogs be set on him: and all this men thought the heaviest trouble. Biorn, Thorkel's kinsman, said that the greatest part had been done, as the lair had been found. \"And now I shall try,\" said he, \"what sort of play we namesakes shall have together.\" Grettir made as if he knew not what Biorn said on this matter."
     },
     {
       "id": "s22-3",
       "sceneId": "s22",
-      "text": "[Footnote 10: Biorn is Icelandic for bear.]"
+      "text": "Note: Biorn is Icelandic for bear."
     },
     {
       "id": "s22-4",
@@ -2924,12 +2924,12 @@
     {
       "id": "s29-17",
       "sceneId": "s29",
-      "text": "Grettir said, \"<i>Many a man stretches round the door to the lock</i>; and meseems it lies more in thy way to avenge thy brother Hall[12] than to meddle in the dealings betwixt me and Audun.\""
+      "text": "Grettir said, \"<i>Many a man stretches round the door to the lock</i>; and meseems it lies more in thy way to avenge thy brother Hall than to meddle in the dealings betwixt me and Audun.\""
     },
     {
       "id": "s29-18",
       "sceneId": "s29",
-      "text": "[Footnote 12: Who was killed in Norway by the sons of Harek, and whose revenge is told of in the Saga of the Heath slayings (existing in fragment).]"
+      "text": "Note: Who was killed in Norway by the sons of Harek, and whose revenge is told of in the Saga of the Heath slayings (existing in fragment)."
     },
     {
       "id": "s29-19",
@@ -3059,12 +3059,12 @@
     {
       "id": "s31-1",
       "sceneId": "s31",
-      "text": "Thorbiorn was the name of a man who dwelt at Thorodstead in Ramfirth; he was the son of Arnor Hay-nose,[13] the son of Thorod, who had settled Ramfirth on that side out as far as Bank was on the other."
+      "text": "Thorbiorn was the name of a man who dwelt at Thorodstead in Ramfirth; he was the son of Arnor Hay-nose, the son of Thorod, who had settled Ramfirth on that side out as far as Bank was on the other."
     },
     {
       "id": "s31-2",
       "sceneId": "s31",
-      "text": "[Footnote 13: In the Landnáma he is called 'Hy-nef;' the meaning is doubtful, but it seems that the author of this history means to call him Hay-nose.]"
+      "text": "Note: In the Landnáma he is called 'Hy-nef;' the meaning is doubtful, but it seems that the author of this history means to call him Hay-nose."
     },
     {
       "id": "s31-3",
@@ -3074,12 +3074,12 @@
     {
       "id": "s31-4",
       "sceneId": "s31",
-      "text": "There was a man hight Thorir, the son of Thorkel of Boardere. He farmed first at Meals in Ramfirth; his daughter was Helga, whom Sleita-Helgi had to wife, but after the man-slaying in Fairslope Thorir set up for himself his abode south in Hawkdale, and farmed at the Pass, and sold the land at Meals to Thorhall, son of Gamli the Vendlander.[14] His son was Gamli, who had to wife Ranveig, daughter of Asmund the Greyhaired, and Grettir's sister. They dwelt at that time at Meals, and had good hap. Thorir of the Pass had two sons, one hight Gunnar, the other Thorgeir; they were both hopeful men, and had then taken the farm after their father, yet were for ever with Thorbiorn Oxmain, and were growing exceeding unruly."
+      "text": "There was a man hight Thorir, the son of Thorkel of Boardere. He farmed first at Meals in Ramfirth; his daughter was Helga, whom Sleita-Helgi had to wife, but after the man-slaying in Fairslope Thorir set up for himself his abode south in Hawkdale, and farmed at the Pass, and sold the land at Meals to Thorhall, son of Gamli the Vendlander. His son was Gamli, who had to wife Ranveig, daughter of Asmund the Greyhaired, and Grettir's sister. They dwelt at that time at Meals, and had good hap. Thorir of the Pass had two sons, one hight Gunnar, the other Thorgeir; they were both hopeful men, and had then taken the farm after their father, yet were for ever with Thorbiorn Oxmain, and were growing exceeding unruly."
     },
     {
       "id": "s31-5",
       "sceneId": "s31",
-      "text": "[Footnote 14: Ed. 1853 has the \"Wide-landed, Viðlendings,\" which here is altered agreeably to the correction in ch. 14, p. 29.]"
+      "text": "Note: Ed. 1853 has the \"Wide-landed, Viðlendings,\" which here is altered agreeably to the correction in ch. 14, p. 29."
     },
     {
       "id": "s31-6",
@@ -3104,12 +3104,12 @@
     {
       "id": "s31-10",
       "sceneId": "s31",
-      "text": "Thereafter either side rode home, nor did they settle peace after these slayings. Thorbiorn the Tardy made much mocking at all this, therefore things began to worsen betwixt the men of Biarg and Thorbiorn Oxmain, so that therefrom fell much ill-will as came to be known after. No boot was bidden to Atli for his house-carle, but he made as if he knew it not. Grettir sat at home at Biarg until Twainmonth.[15] Nor is it said in story that he and Kormak met ever again after these things betid."
+      "text": "Thereafter either side rode home, nor did they settle peace after these slayings. Thorbiorn the Tardy made much mocking at all this, therefore things began to worsen betwixt the men of Biarg and Thorbiorn Oxmain, so that therefrom fell much ill-will as came to be known after. No boot was bidden to Atli for his house-carle, but he made as if he knew it not. Grettir sat at home at Biarg until Twainmonth. Nor is it said in story that he and Kormak met ever again after these things betid."
     },
     {
       "id": "s31-11",
       "sceneId": "s31",
-      "text": "[Footnote 15: The second month in the year, corresponding to our September.]"
+      "text": "Note: The second month in the year, corresponding to our September."
     },
     {
       "id": "s32-0",
@@ -3504,12 +3504,12 @@
     {
       "id": "s34-15",
       "sceneId": "s34",
-      "text": "The bonder went out and came to the cows, which were goring one another; so he thought it not good to go in there, but went in to the hay-barn. There he saw where lay the neatherd, and had his head in one boose[16] and his feet in the other; and he lay cast on his back. The bonder went up to him, and felt him all over with his hand, and finds soon that he was dead, and the spine of him broken asunder; it had been broken over the raised stone-edge of a boose."
+      "text": "The bonder went out and came to the cows, which were goring one another; so he thought it not good to go in there, but went in to the hay-barn. There he saw where lay the neatherd, and had his head in one boose and his feet in the other; and he lay cast on his back. The bonder went up to him, and felt him all over with his hand, and finds soon that he was dead, and the spine of him broken asunder; it had been broken over the raised stone-edge of a boose."
     },
     {
       "id": "s34-16",
       "sceneId": "s34",
-      "text": "[Footnote 16: Boose, a cow-stall.]"
+      "text": "Note: Boose, a cow-stall."
     },
     {
       "id": "s34-17",
@@ -5404,12 +5404,12 @@
     {
       "id": "s57-15",
       "sceneId": "s57",
-      "text": "\"To the Kettle's side Now will I ride, Where the waters fall From the great ice-wall; If thou hast mind There mayest thou find With little stone[17] Fist's land alone.\""
+      "text": "\"To the Kettle's side Now will I ride, Where the waters fall From the great ice-wall; If thou hast mind There mayest thou find With little stone Fist's land alone.\""
     },
     {
       "id": "s57-16",
       "sceneId": "s57",
-      "text": "[Footnote 17: Hall, a \"stone\": mund, is hand, and by periphrasis \"land of fist\"; so that Hallmund is meant by this couplet, and that was the real name of \"Air,\" who is not a mere man, but a friendly spirit of the mountains.]"
+      "text": "Note: Hall, a \"stone\": mund, is hand, and by periphrasis \"land of fist\"; so that Hallmund is meant by this couplet, and that was the real name of \"Air,\" who is not a mere man, but a friendly spirit of the mountains."
     },
     {
       "id": "s57-17",
@@ -7639,12 +7639,12 @@
     {
       "id": "s85-10",
       "sceneId": "s85",
-      "text": "\"From the sword's edge and the spears From my many waylayers, While might was, and my good day, Often did I snatch away; Now a hag, whose life outworn Wicked craft and ill hath borne, Meet for death lives long enow, Grettir's might to overthrow.\"[18]"
+      "text": "\"From the sword's edge and the spears From my many waylayers, While might was, and my good day, Often did I snatch away; Now a hag, whose life outworn Wicked craft and ill hath borne, Meet for death lives long enow, Grettir's might to overthrow.\""
     },
     {
       "id": "s85-11",
       "sceneId": "s85",
-      "text": "[Footnote 18: This song is obviously incomplete, and the second and third stanzas speak of matters that do not come into this story.]"
+      "text": "Note: This song is obviously incomplete, and the second and third stanzas speak of matters that do not come into this story."
     },
     {
       "id": "s85-12",
@@ -7814,12 +7814,12 @@
     {
       "id": "s87-13",
       "sceneId": "s87",
-      "text": "\"Pied-belly[19] is knocking hard at the door, brother,\" says Illugi."
+      "text": "\"Pied-belly is knocking hard at the door, brother,\" says Illugi."
     },
     {
       "id": "s87-14",
       "sceneId": "s87",
-      "text": "[Footnote 19: 'Pied-belly,' the name of the tame ram told of before.]"
+      "text": "Note: 'Pied-belly,' the name of the tame ram told of before."
     },
     {
       "id": "s87-15",
@@ -8849,12 +8849,12 @@
     {
       "id": "s99-11",
       "sceneId": "s99",
-      "text": "P. 169. Hallmund. Our saga is one among the historic sagas of Iceland which deals with traditions of ancient belief in the spirits of the unknown regions of the land that are interested in the well-being of the mere men who dwell near them. Hallmund and the giant Thorir are the representatives of these powers in our saga. Of these Hallmund is the more interesting of the two, both for his human sympathies, his tragic end, and the poetry ascribed to him. At one time or other he has had a great name in the Icelandic folk-lore among the spirits of the land, the so-called land wights <i>(land-voetir)</i>, and there is still existing a poem of ancient type, the refrain of which is closely similar to that of Grettir's song on Hallmund, but which is stated to be by some cave-wight that lived in a deep and gloomy cavern somewhere in Deepfirth, on the north side of Broadfirth. In the so-called Bergbúaþáttr or cave-dweller's tale (Edited by G. Vigfússon in Nordiske Old-skrifter, xxvii., pp. 123-128, and 140-143, Copenhagen, 1860), this song is said to have been heard by two men, who, on their way to church, had lost their road, and were overtaken by the darkness of night, and, in order to escape straying too far out of their way, sought shelter under the lee of a sheer rock which chanced to be on their way. They soon found a mouth of a cave where they knew not that any cave was to be looked for, whereupon one of the wayfarers set up a cross-mark in the door of the cave, and then with his fellow-traveller sat down on two stones at the mouth of the cave, as they did not dare to risk themselves too far in the gloomy abode away from the cross. When the first third part of the night was spent they heard something come along from within the cave doorwards out to them.[20] They signed themselves with the sign of the cross, and prayed God's mercy to be on them, for they thought the doings within the deep of the cavern now grew big enough. On looking into the darkness they saw a sight like unto two full-moons, or huge targets, with some monstrous figure (unreadable in the MS.) between them. They thought this was nothing but two eyes, and that nowise narrow of face might he be who bore such torches. Next they heard a chanting of a monstrous kind and in a big voice. A lay there was sung of twelve staves, with the final refrain of each twice repeated."
+      "text": "P. 169. Hallmund. Our saga is one among the historic sagas of Iceland which deals with traditions of ancient belief in the spirits of the unknown regions of the land that are interested in the well-being of the mere men who dwell near them. Hallmund and the giant Thorir are the representatives of these powers in our saga. Of these Hallmund is the more interesting of the two, both for his human sympathies, his tragic end, and the poetry ascribed to him. At one time or other he has had a great name in the Icelandic folk-lore among the spirits of the land, the so-called land wights <i>(land-voetir)</i>, and there is still existing a poem of ancient type, the refrain of which is closely similar to that of Grettir's song on Hallmund, but which is stated to be by some cave-wight that lived in a deep and gloomy cavern somewhere in Deepfirth, on the north side of Broadfirth. In the so-called Bergbúaþáttr or cave-dweller's tale (Edited by G. Vigfússon in Nordiske Old-skrifter, xxvii., pp. 123-128, and 140-143, Copenhagen, 1860), this song is said to have been heard by two men, who, on their way to church, had lost their road, and were overtaken by the darkness of night, and, in order to escape straying too far out of their way, sought shelter under the lee of a sheer rock which chanced to be on their way. They soon found a mouth of a cave where they knew not that any cave was to be looked for, whereupon one of the wayfarers set up a cross-mark in the door of the cave, and then with his fellow-traveller sat down on two stones at the mouth of the cave, as they did not dare to risk themselves too far in the gloomy abode away from the cross. When the first third part of the night was spent they heard something come along from within the cave doorwards out to them. They signed themselves with the sign of the cross, and prayed God's mercy to be on them, for they thought the doings within the deep of the cavern now grew big enough. On looking into the darkness they saw a sight like unto two full-moons, or huge targets, with some monstrous figure (unreadable in the MS.) between them. They thought this was nothing but two eyes, and that nowise narrow of face might he be who bore such torches. Next they heard a chanting of a monstrous kind and in a big voice. A lay there was sung of twelve staves, with the final refrain of each twice repeated."
     },
     {
       "id": "s99-12",
       "sceneId": "s99",
-      "text": "[Footnote 20: <i>Innan eptir</i>, as here rendered, is the reading of the MS. from which Bergbua páttr is edited. <i>Innar eptir</i>, as the aforesaid edition of the tale has it, is wrong.]"
+      "text": "Note: <i>Innan eptir</i>, as here rendered, is the reading of the MS. from which Bergbua páttr is edited. <i>Innar eptir</i>, as the aforesaid edition of the tale has it, is wrong."
     },
     {
       "id": "s99-13",
@@ -8899,12 +8899,12 @@
     {
       "id": "s99-21",
       "sceneId": "s99",
-      "text": "Nevertheless, it is worth observing that blunders of scribes may have in a measure been at work here. If we are not mistaken most of the existing MSS. of our saga state that when he fell (p. 243) 'he was one winter short of--<i>var hánum vetri fátt á</i>'--whatever number of years they give as his age. And we venture the suggestion that originally the passage ran thus: var hánum vetri fátt á hálf iv{tugum},[21] <i>i.e.</i>, he lacked one winter of thirty-five years, when he was slain. If a subsequent scribe committed the easy blunder of dropping I before V, the reading of our original (Edition, 53) would be the natural result, and an offspring of that same blunder would also as easily be the other reading, common to one class of the Grettir MSS.: var hánum vetri fátt í v{tugum} or í hinum v. tug, by dropping the syllable 'hálf.'"
+      "text": "Nevertheless, it is worth observing that blunders of scribes may have in a measure been at work here. If we are not mistaken most of the existing MSS. of our saga state that when he fell (p. 243) 'he was one winter short of—<i>var hánum vetri fátt á</i>'—whatever number of years they give as his age. And we venture the suggestion that originally the passage ran thus: var hánum vetri fátt á hálf iv{tugum}, <i>i.e.</i>, he lacked one winter of thirty-five years, when he was slain. If a subsequent scribe committed the easy blunder of dropping I before V, the reading of our original (Edition, 53) would be the natural result, and an offspring of that same blunder would also as easily be the other reading, common to one class of the Grettir MSS.: var hánum vetri fátt í v{tugum} or í hinum v. tug, by dropping the syllable 'hálf.'"
     },
     {
       "id": "s99-22",
       "sceneId": "s99",
-      "text": "[Footnote 21: A man of twenty, thirty, forty, &c., is in the Icelandic expressed by the adjective <i>tvítugr, prítugr, fertugr</i>; a man twenty-five, thirty-five, &c., is <i>hálf-prítugr, hálf-fertugr</i>, &c.; the units beyond the tens are expressed by the particle <i>um</i>, a man of twenty-one, thirty-seven, or forty-nine, is said to have <i>einn</i> (<i>i.e.</i>, vetr. winter) um = beyond, tvítugt, sjö um þrítugt, níu um fertugt, &c.]"
+      "text": "Note: A man of twenty, thirty, forty, &c., is in the Icelandic expressed by the adjective <i>tvítugr, prítugr, fertugr</i>; a man twenty-five, thirty-five, &c., is <i>hálf-prítugr, hálf-fertugr</i>, &c.; the units beyond the tens are expressed by the particle <i>um</i>, a man of twenty-one, thirty-seven, or forty-nine, is said to have <i>einn</i> (<i>i.e.</i>, vetr. winter) um = beyond, tvítugt, sjö um þrítugt, níu um fertugt, &c."
     },
     {
       "id": "s99-23",
