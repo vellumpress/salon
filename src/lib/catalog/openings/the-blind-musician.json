@@ -1,0 +1,171 @@
+{
+  "id": "the-blind-musician",
+  "title": "The Blind Musician",
+  "author": "Vladimir Korolenko (tr. Aline Delano)",
+  "year": "1891",
+  "note": "Project Gutenberg 59497 (tr. Aline Delano, per PG). Whole novel, Chapter I–VII + Epilogue, labelled 'Chapter n · <title> · § n' (chapters and sections are both numbered I., II. in print). Producer line, title/imprint page, the translator's Preface and Anagnos letter, Contents, Kennan's Introduction and the 26 [Illustration] tags out; the book's 17 footnotes kept, each after its paragraph. Host: Chapter I §§ I–III — \"At the hour of midnight…\". EN 1891 (Little, Brown, Boston; ©1890, per the PG text). PG reading-ease 67.1 — no invented Launch rank. Place: Ukraine, Volhynia (the text: 'the southwestern part of Russia'; Kiev; footnote 4 'Volynia, a province of Russia'). Sits: unwind / before sleep. Host intro: A quiet book, and a short one. It was translated in 1890 and it has that century's feeling for the blind, tender and sometimes sentimental. The book calls its setting \"the southwestern part of Russia\"; it is the Ukraine, and the notes say so. The chapters and their parts were both numbered I, II, III in print, so they are labelled chapter and section here.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · The Blind Infant. The Family · §§ I–III · Volhynia",
+      "place": "Chapter I · The Blind Infant. The Family · §§ I–III · Volhynia",
+      "reentry": "At the hour of midnight, in a wealthy family living in the southwestern part of Russia, a child was born. As the first faint, pitiful cry of the baby echoed through the room, the young mother, who had",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "At the hour of midnight, in a wealthy family living in the southwestern part of Russia, a child was born. As the first faint, pitiful cry of the baby echoed through the room, the young mother, who had been lying with closed eyes, unconscious to all appearances, stirred uneasily in the bed. She murmured a word or two in a low whispering tone, while her pallid face, with its sweet and almost childlike features, was disfigured by an expression of impatience,—like that of a spoiled child, who resents the unwonted suffering as something new to her experience. The nurse bent low to catch the inarticulate sounds that fell from her whispering lips."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"Why, why does he—?\" murmured the invalid in the same impatient whisper."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The nurse did not understand the question. Again the child cried out, and again the same shadow of sharp pain darkened the face of the mother, while large tears rolled down from her closed eyes."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Why, why,\" she repeated in a whisper."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "At last the meaning of her question seemed to occur to the nurse, who answered quite calmly,—"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Oh, you mean why does the child cry? Babies always do. You must not agitate yourself.\""
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "But the mother was not to be pacified. She started every time the little one cried, and kept repeating in tones of angry impatience, \"Why—why—so dreadfully?\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "To the nurse there seemed nothing unusual in the cries of the infant; and supposing the mother to be either unconscious or simply delirious, she left her, and busied herself with the child."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "The young mother said no more, but from time to time an anguish too deep for expression brought the tears to her eyes. They forced their way through the thick black eye-lashes, and slowly rolled down her pale marble-like cheeks. Perchance her mother's heart was torn by a presentiment of some dark, abiding misery hanging like a heavy cloud over the infant's crib, and destined to accompany him through life even unto the grave. These signs of emotion, on the other hand, were very likely nothing more than the wanderings of delirium. But however this may have been, the child was indeed born blind."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "At first no one perceived it. The boy had that vague way of looking at objects common to all very young infants. As the days went by, the life of the new-born man could soon be reckoned by weeks. His eyes grew clearer; the thin film that had overspread them disappeared, and the pupil became defined. But the child was never seen to turn his head, to follow the bright sunbeams that found their way into the room; nor did the merry chirping of the birds, nor the rustling of the branches of the green beech-trees in the shaded garden beneath the windows, attract his notice."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "The mother, who had now recovered, was the first one to mark with anxiety the strange immobility of the child's expression, so invariably calm and serious. With pitiful eyes, like a frightened dove, she would question those about her: \"Tell me what makes him look so unnatural?\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"What do you mean?\" strangers would reply in tones of indifference; \"he looks like all other children of his age.\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"But watch him! See how oddly he fumbles with his hands!\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"The child cannot yet regulate the movements of his hands by the impressions which his eyes receive,\" replied the doctor."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"Why does he look constantly in one direction? He is—blind!\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "As the dread suspicion found utterance in words, not one of them could calm the mother's agitation. The doctor took the child in his arms, and turning him suddenly toward the light, looked into his eyes. An expression of alarm passed over his countenance, and after a few vague remarks he took his leave, promising to return in two days. The mother moaned and fluttered like a wounded bird, pressing the child to her bosom, while the boy's eyes kept ever the same steadfast and rigid stare."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "The doctor did return in two days, bringing with him an ophthalmoscope. After lighting a candle, he proceeded to test the eyes of the infant by flashing it suddenly before them and as suddenly withdrawing it; finally, with an expression of distress, he said,—"
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"It grieves me deeply, Madam, but I am forced to admit that you have divined the truth. The boy indeed is blind,—irremediably blind.\""
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "Sadly, but without agitation, the mother listened to this announcement. \"I knew it long ago,\" she softly murmured."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "The family into which this blind child was born was a small one. Its other two members were the father and \"Uncle Maxim,\" so called not only by his own people, but also by friends and acquaintances. The father was a fair example of the landowners in the southwestern district. He was good-natured, even kindly, probably an excellent overseer of the workmen, fond of building and making alterations in his mills. These occupations consumed all his time; hence his voice was seldom heard in the house except at the regular hours for dinner, lunch, or other events of a similar character. At such times he never failed to ask his customary question of his wife, \"Are you feeling well, my dove?\" After which he would seat himself at the table, and make no further remarks save perhaps an occasional observation on the subject of cylinders or pinions. It might be expected that his quiet and simple existence would find a pale reflection in the nature of his son."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Uncle Maxim was of quite a different temperament. Ten years previous to the events we are about to describe, he had been famed for his quarrelsome temper, not only in the vicinity of his own estate, but even in Kiev and at the Contracts. No one could understand the existence of such a brother in a family so respectable as that of Pani Popèlska, née Yatzènko. Amicable relations with such a man were out of the question, for it was impossible to please him. He insolently repelled the advances of the Pans, and overlooked an amount of wilfulness and impertinence on the part of the peasants, which would have been punished with blows by even the mildest among the nobility. Finally, to the great joy of all respectable persons, Uncle Maxim for reasons best known to himself became very much displeased with the Austrians, and departed for Italy. There he joined Garibaldi, a heathen soldier, who like himself delighted in fighting,—and who, as it was rumored among the Pan-landlords, was in league with the devil, and showed no reverence for the Pope. By such actions Maxim of course imperilled forever his restless, heretical soul; but on the occasion of the Contracts fewer scandals took place, and many an excellent mother felt more at ease concerning the welfare of her sons."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "A local name for the formerly famous fairs in Kiev."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Lady,\" \"madam,\"—a word used in Poland and in the southwest of Russia.—Tr."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"Gentlemen.\"—Tr."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "The Austrians, on their part, were doubtless angry with Uncle Maxim. Now and then his name appeared in the \"Courier,\"—a favorite old paper of the Pan-landlords,—united with those of Garibaldi's most daring comrades; and one day the Pans read in the same \"Courier\" that Uncle Maxim had fallen with his horse on the battle-field. The enraged Austrians, who had long been waiting for a chance to attack this desperate Volynian, who in the opinion of his countrymen was Garibaldi's mainstay and support, chopped him in pieces like cabbage. \"Maxim's was a sad end,\" said the Pans, and ascribed it to the immediate interposition of Saint Peter in behalf of his representative on earth. Maxim was reckoned among the dead. Subsequently, however, it became known that the Austrian sabres had no power to expel Maxim's obstinate spirit, and that it still dwelt in his considerably damaged body. The Garibaldians, rescuing their worthy comrade from the fray, had carried him to some hospital, and, lo! after a few years Maxim unexpectedly appeared in his sister's house, where he ever after remained."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "Volynia, a province of Russia."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "But Maxim could fight no more duels. He had lost his right foot, and was obliged to use a crutch, while his left leg was so injured as to require him to use also a cane. On the whole he had lost much of his former excitability, and it was only occasionally that his sharp tongue did duty for his sword. He ceased to visit the Contracts, seldom appeared in society, and spent most of his time in the library reading; but in regard to the contents of the books, save for the *a priori* supposition that they must be atheistic, no one had the faintest idea. He also wrote from time to time; but as his compositions never appeared in the \"Courier,\" they were supposed to be quite insignificant."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "About the time when the little new being entered upon its career in the country house, one might have noticed streaks of silver gray in Uncle Maxim's closely cropped hair. From the constant use of crutch and cane he had grown high shouldered, which gave to his figure a certain square effect. His peculiar aspect, his knitted brows, the clatter of his crutch and cane, and the clouds of tobacco smoke in which he was constantly enveloped, since he never took the pipe from his mouth,—all these things intimidated strangers, and only those who lived with him knew that his crippled body held a warm and kind heart, and that his large square head covered with thick bristling hair was the seat of constant mental activity."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "But those who were nearer to him had but a vague notion of the problems that perplexed and absorbed Uncle Maxim's mind at this time. They only knew that he would sit motionless for hours at a time, enveloped in a cloud of blue smoke, with knitted eye-brows and a far-away look in his eyes. Meanwhile this crippled warrior was pondering upon the battle of life, and feeling that there was no room in it for invalids. He pictured himself as having left the ranks forever, and he felt like a man encumbering the hospital ambulance. He was like a knight, unseated and overthrown in the conflict of life. Did it not show a lack of courage to crawl in the dust like a crushed worm? Would it not be a coward's part to grasp the stirrup of the conqueror, and beg for the sorry remnant of his own life?"
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "While Uncle Maxim was calmly considering this vital question with all its *pros* and *cons*, a new being appeared before his eyes, whose fate it was to enter life an invalid from his very birth. At first Maxim paid but little heed to the blind child, but as time went on, the singular likeness between the boy's fate and his own interested him. \"Hm! Hm!\" he thoughtfully muttered to himself as he looked at the child from the corner of his eyes, \"this chap is also an invalid. If we two could be put together, one useful man might be made of us.\" And after that he gazed at the child more and more frequently."
+    }
+  ]
+}

@@ -1124,6 +1124,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "alice-adams",
   "quartet",
   "song-of-songs-sudermann",
+  // Mira Wed 30 Sep 2026 POST-#204 CLEAR — Java Head leads Next. Never Featured.
+  // LEAD kept — not Sunshine Sketches, not Guest the One-Eyed, not The Blind Musician.
+  // Magnolia Flower is Rituals only (the one story), not this tail.
+  // Tue POST-#197 Farewell and the earlier packs stay ahead.
+  "java-head",
+  "sunshine-sketches-of-a-little-town",
+  "guest-the-one-eyed",
+  "the-blind-musician",
 ] as const;
 
 /**

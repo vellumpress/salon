@@ -541,6 +541,16 @@ const BLURBS: Record<string, string> = {
     "Lilly was fourteen when the music-master disappeared, and the road runs from a garrison town to Berlin.",
   "its-wavering-image":
     "Pan, half white and half Chinese, keeps her father’s bazaar on Dupont Street until the story comforts her.",
+  "java-head":
+    "Very late in May, Laurel Ammidon lies considering the chairs, and Salem is already the morning.",
+  "sunshine-sketches-of-a-little-town":
+    "If you know Canada at all you know Mariposa, and the lake town is where the sketches turn.",
+  "guest-the-one-eyed":
+    "Snow, snow, snow, and a poor man comes home to the farm at Borg with an empty sack.",
+  "the-blind-musician":
+    "At the hour of midnight a child is born, and his mother is the first to notice.",
+  "magnolia-flower":
+    "The brook laughed and sang, and the river tells one story until the old couple come back.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",
