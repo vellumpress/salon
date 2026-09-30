@@ -317,12 +317,12 @@
     {
       "id": "s0-30",
       "sceneId": "s0",
-      "text": "--Frise donc tes moustaches de *nuoc-mâm*[5]."
+      "text": "--Frise donc tes moustaches de *nuoc-mâm*."
     },
     {
       "id": "s0-31",
       "sceneId": "s0",
-      "text": "[5] Sauce épicée, très employée dans la cuisine annamite."
+      "text": "Note: Sauce épicée, très employée dans la cuisine annamite."
     },
     {
       "id": "s0-32",
@@ -342,12 +342,12 @@
     {
       "id": "s0-35",
       "sceneId": "s0",
-      "text": "--Mais non! mais non! C’est un *ma-couï*[6]!"
+      "text": "--Mais non! mais non! C’est un *ma-couï*!"
     },
     {
       "id": "s0-36",
       "sceneId": "s0",
-      "text": "[6] Diable."
+      "text": "Note: Diable."
     },
     {
       "id": "s0-37",
@@ -1302,12 +1302,12 @@
     {
       "id": "s4-3",
       "sceneId": "s4",
-      "text": "La «classe supérieure», les intellectuels, assemblés devant un tableau noir reçoivent d’un sous-officier les premières notions d’écriture française et de *quôc-ngù*[7]. Aux classes moyennes on enseigne de courtes phrases très usuelles et d’où les professeurs annamites éliminent tout ornement superflu:"
+      "text": "La «classe supérieure», les intellectuels, assemblés devant un tableau noir reçoivent d’un sous-officier les premières notions d’écriture française et de *quôc-ngù*. Aux classes moyennes on enseigne de courtes phrases très usuelles et d’où les professeurs annamites éliminent tout ornement superflu:"
     },
     {
       "id": "s4-4",
       "sceneId": "s4",
-      "text": "[7] Prononciation figurée de la langue annamite."
+      "text": "Note: Prononciation figurée de la langue annamite."
     },
     {
       "id": "s4-5",
@@ -1317,12 +1317,12 @@
     {
       "id": "s4-6",
       "sceneId": "s4",
-      "text": "--Moi y en a faire rizière[8]."
+      "text": "--Moi y en a faire rizière."
     },
     {
       "id": "s4-7",
       "sceneId": "s4",
-      "text": "[8] «Je cultive des rizières»."
+      "text": "Note: «Je cultive des rizières»."
     },
     {
       "id": "s4-8",
@@ -1472,12 +1472,12 @@
     {
       "id": "s4-37",
       "sceneId": "s4",
-      "text": "Tout d’abord et pour se conformer aux rites immuables du protocole annamite, l’Aïeul s’abstint de traiter de l’objet de sa visite et ses hôtes évitèrent de lui adresser quelque demande impolie à ce propos. Il loua la saveur du thé brûlant, but une deuxième tasse, et continua de disserter pendant un quart d’heure sur une foule de questions singulièrement intéressantes, telles que le cours du *paddy*[9], le prix des jeunes poulets, la rareté des ananas sur le marché."
+      "text": "Tout d’abord et pour se conformer aux rites immuables du protocole annamite, l’Aïeul s’abstint de traiter de l’objet de sa visite et ses hôtes évitèrent de lui adresser quelque demande impolie à ce propos. Il loua la saveur du thé brûlant, but une deuxième tasse, et continua de disserter pendant un quart d’heure sur une foule de questions singulièrement intéressantes, telles que le cours du *paddy*, le prix des jeunes poulets, la rareté des ananas sur le marché."
     },
     {
       "id": "s4-38",
       "sceneId": "s4",
-      "text": "[9] Riz non décortiqué."
+      "text": "Note: Riz non décortiqué."
     },
     {
       "id": "s4-39",
@@ -1857,12 +1857,12 @@
     {
       "id": "s6-17",
       "sceneId": "s6",
-      "text": "Chaque gradé dressa la liste de ses ouvriers, en fit l’appel, les avertit de leurs fonctions nouvelles. Ce fut un moment de tapage étourdissant, de numéros matricules vociférés à plein gosier auxquels répondaient des «Présent!» non moins vigoureux. Puis le calme et l’ordre se rétablirent, et, dans le silence profond qui suivit, le sergent Cang annonça que l’Aïeul, en l’honneur de sa prise du commandement, offrait à chaque escouade une bouteille de *choum-choum*[10], et les rangs furent enfin rompus, avec des cris et des gambades folles."
+      "text": "Chaque gradé dressa la liste de ses ouvriers, en fit l’appel, les avertit de leurs fonctions nouvelles. Ce fut un moment de tapage étourdissant, de numéros matricules vociférés à plein gosier auxquels répondaient des «Présent!» non moins vigoureux. Puis le calme et l’ordre se rétablirent, et, dans le silence profond qui suivit, le sergent Cang annonça que l’Aïeul, en l’honneur de sa prise du commandement, offrait à chaque escouade une bouteille de *choum-choum*, et les rangs furent enfin rompus, avec des cris et des gambades folles."
     },
     {
       "id": "s6-18",
       "sceneId": "s6",
-      "text": "[10] Alcool de riz."
+      "text": "Note: Alcool de riz."
     },
     {
       "id": "s6-19",
@@ -3717,12 +3717,12 @@
     {
       "id": "s14-6",
       "sceneId": "s14",
-      "text": "Entre les éventaires s’attardent des paysans en longues tuniques garance, teintes au *cu-nao*; accoutumés au silence profond des rizières jaunissantes où pataugent les buffles muets, tout ce mouvement et tout ce bruit les épouvantent. Les habitants de la ville les étonnent singulièrement par leur luxe et leur liberté d’allures: au passage d’un boy chaussé de bottines vernies, les rustres s’écartent précipitamment, les mains prêtes aux *lay*[11] et les yeux ronds d’admiration naïve, convaincus que le passant est un important mandarin ou tout au moins un gros richard. D’autres mandarins de même rang, cuisiniers de fonctionnaires français, se carrent sur les tabourets d’un rôtisseur, fument les cigares de leurs patrons qu’ils ont pris soin de ne pas dépouiller de leurs bagues écarlates et font de grands éclats de rire entre deux assiettes de riz, que paieront tout à l’heure les piastres des maîtres."
+      "text": "Entre les éventaires s’attardent des paysans en longues tuniques garance, teintes au *cu-nao*; accoutumés au silence profond des rizières jaunissantes où pataugent les buffles muets, tout ce mouvement et tout ce bruit les épouvantent. Les habitants de la ville les étonnent singulièrement par leur luxe et leur liberté d’allures: au passage d’un boy chaussé de bottines vernies, les rustres s’écartent précipitamment, les mains prêtes aux *lay* et les yeux ronds d’admiration naïve, convaincus que le passant est un important mandarin ou tout au moins un gros richard. D’autres mandarins de même rang, cuisiniers de fonctionnaires français, se carrent sur les tabourets d’un rôtisseur, fument les cigares de leurs patrons qu’ils ont pris soin de ne pas dépouiller de leurs bagues écarlates et font de grands éclats de rire entre deux assiettes de riz, que paieront tout à l’heure les piastres des maîtres."
     },
     {
       "id": "s14-7",
       "sceneId": "s14",
-      "text": "[11] Salut cérémonieux que l’on adresse aux personnages de marque et qui se fait avec les deux mains réunies sur la poitrine."
+      "text": "Note: Salut cérémonieux que l’on adresse aux personnages de marque et qui se fait avec les deux mains réunies sur la poitrine."
     },
     {
       "id": "s14-8",
