@@ -1,0 +1,151 @@
+{
+  "id": "java-head",
+  "title": "Java Head",
+  "author": "Joseph Hergesheimer",
+  "year": "1918",
+  "note": "Project Gutenberg 9865. Whole novel (Section I–X, the book's only headings; no chapter titles added). The Chwang-Tze epigraph is the Epigraph scene (s0) and the open starts at s1; producer line, title lines and the dedication out. Host: Section I — \"Very late indeed in May…\" to \"…an hour at your piano scales instead of a half.\" Year 1918 (PG text title page; the PG page has no original-publication field). PG reading-ease 69.6 — no invented Launch rank. Place: Salem, Massachusetts (the 1840s China trade). Sits: unwind. Print fixes: 'rerepeated' → 'repeated' (PG l.104); missing period after 'instead of Sidsall' (PG l.256). '--' → —, _x_ → *x*. Host intro: A heads-up before you start: this is a 1918 novel about a Manchu woman brought home to Salem, and it talks the way 1840s Salem talked. There are period slurs and labels for Chinese people, one racial slur for Black people in a character's mouth, and a lot of Orientalist framing of Taou Yuen. The book's ending turns on opium. Those are the book's attitudes, not ours.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Section I · Laurel Ammidon and the chairs, a May morning · Salem",
+      "place": "Section I · Laurel Ammidon and the chairs, a May morning · Salem",
+      "reentry": "Very late indeed in May, but early in the morning, Laurel Ammidon lay in bed considering two widely different aspects of chairs. The day before she had been eleven, and the comparative maturity of tha",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Very late indeed in May, but early in the morning, Laurel Ammidon lay in bed considering two widely different aspects of chairs. The day before she had been eleven, and the comparative maturity of that age had filled her with a moving disdain for certain fanciful thoughts which had given her extreme youth a decidedly novel if not an actually adventurous setting. Until yesterday, almost, she had regarded the various chairs of the house as beings endowed with life and character; she had held conversations with some, and, with a careless exterior not warranted by an inner dread, avoided others in gloomy dusks. All this, now, she contemptuously discarded. Chairs were—chairs, things to sit on, wood and stuffed cushions."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Yet she was slightly melancholy at losing such a satisfactory lot of reliable familiars: unlike older people, victims of the most disconcerting moods and mysterious changes, chairs could always be counted on to remain secure in their individual peculiarities."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "She could see by her fireplace the elaborately carved teakwood chair that her grandfather had brought home from China, which had never varied from the state of a brown and rather benevolent dragon; its claws were always claws, the grinning fretted mouth was perpetually fixed for a cloud of smoke and a mild rumble of complaint. The severe waxed hickory beyond with the broad arm for writing, a source of special pride, had been an accommodating and precise old gentleman. The spindling gold chairs in the drawingroom were supercilious creatures at a king's ball; the graceful impressive formality of the Heppelwhites in the dining room belonged to the loveliest of Boston ladies. Those with difficult haircloth seats in the parlor were deacons; others in the breakfast room talkative and unpretentious; while the deep easy-chair before the library fire was a ship. There were mahogany stools, dwarfs of dark tricks; angry high-backed things in the hall below; and a terrifying shape of gleaming red that, without question, stirred hatefully and reached out curved and dripping hands."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Anyhow, such they had all seemed. But lately she had felt a growing secrecy about it, an increasing dread of being laughed at; and now, definitely eleven, she recognized the necessity of dropping such pretense even with herself. They were just chairs, she repeated; there was an end of that."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "The tall clock with the brass face outside her door, after a premonitory whirring, loudly and firmly struck seven, and Laurel wondered whether her sisters, in the room open from hers, were awake. She listened attentively but there was no sound of movement. She made a noise in her throat, that might at once have appeared accidental and been successful in its purpose of arousing them; but there was no response. She would have gone in and frankly waked Janet, who was not yet thirteen and reasonable; but experience had shown her that Camilla, reposing in the eminence and security of two years more, would permit no such light freedom with her slumbers."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Sidsall, who had been given a big room for herself on the other side of their parents, would greet anyone cheerfully no matter how tightly she might have been asleep. And Sidsall, the oldest of them all, was nearly sixteen and had stayed for part of their cousin Lucy Saltonstone's dance, where no less a person than Roger Brevard had asked her for a quadrille."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Laurel's thoughts grew so active that she was unable to remain any longer in bed; she freed herself from the enveloping linen and crossed the room to a window through which the sun was pouring in a sharp bright angle. She had never known the world to smell so delightful—it was one of the notable Mays in which the lilacs blossomed—and she stood responding with a sparkling life to the brilliant scented morning, the honey-sweet perfume of the lilacs mingled with the faintly pungent odor of box wet with dew."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "She could see, looking back across a smooth green corner of the Wibirds' lawn next door, the enclosure of their own back yard, divided from the garden by a white lattice fence and row of prim grayish poplars. At the farther wall her grandfather, in a wide palm leaf hat, was stirring about his pear trees, tapping the ground and poking among the branches with his ivory headed cane."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Laurel exuberantly performed her morning toilet, half careless, in her soaring spirits, of the possible effect of numerous small ringings of pitcher on basin, the clatter of drawers, upon Camilla. Yesterday she had worn a dress of light wool delaine; but this morning, she decided largely, summer had practically come; and, on her own authority, she got an affair of thin pineapple cloth out of the yellow camphorwood chest. She hurriedly finished weaving her heavy chestnut hair into two gleaming plaits, fastened a muslin guimpe at the back, and slipped into her dress. Here, however, she twisted her face into an expression of annoyance—her years were affronted by the length of pantalets that hung below her skirt. Such a show of their narrow ruffles might do for a very small girl, but not for one of eleven; and she caught them up until only the merest fulled edge was visible. Then she made a buoyant descent to the lower hall, left the house by a side door to the bricked walk and an arched gate into the yard, and joined her grandfather."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"Six bells in the morning watch,\" he announced, consulting a thick gold timepiece. \"Head pump rigged and deck swabbed down?\" Secure in her knowledge of the correct answers for these sudden interrogations Laurel impatiently replied, \"Yes, sir.\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"Scuttle butt filled?\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"Yes, sir.\" She frowned and dug a heel in the soft ground."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"Then splice the keel and heave the galley overboard.\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "This last she recognized as a sally of humor, and contrived a fleeting perfunctory smile. Her grandfather turned once more to the pears. \"See the buds on those Ashton Towns,\" he commented. Laurel gazed critically: the varnished red buds were bursting with white blossom, the new leaves unrolling, tender green and sticky. \"But the jargonelles—\" he drew in his lips doubtfully. She studied him with the profound interest his sheer being always invoked: she was absorbed in his surprising large roundness of body, like an enormous pudding; in the deliberate care with which he moved and planted his feet; but most of all by the fact that when he was angry his face got quite purple, the color of her mother's paletot or a Hamburg grape."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "They crossed the yard to where the vines of the latter, and of white Chasselas—Laurel was familiar with these names from frequent horticultural questionings—had been laid down in cold frames for later transplanting; and from them the old man, her palm tightly held in his, trod ponderously to the currant bushes massed against the closed arcade of the stables, the wood and coal and store houses, across the rear of the place."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "At last, with frequent disconcerting mutterings and explosive breaths, he finished his inspection and turned toward the house. Laurel, conscious of her own superiority of apparel, surveyed her companion in a frowning attitude exactly caught from her mother. He had on that mussy suit of yellow Chinese silk, and there was a spot on the waistcoat straining at its pearl buttons. She wondered, maintaining the silent mimicry of elder remonstrance, why he would wear those untidy old things when his chests were heaped with snowy white linen and English broadcloths. It was very improper in an Ammidon, particularly in one who had been captain of so many big ships, and in court dress with a cocked hat met the Emperor of Russia."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "They did not retrace Laurel's steps, but passed through a narrow wicket to the garden that lay directly behind the house. The enclosure was full of robin-song and pouring sunlight; the lilac trees on either side of the summer-house against the gallery of the stable were blurred with their new lavender flowering; the thorned glossy foliage of the hedge of June roses on Briggs Street glittered with diamonds of water; and the rockery in the far corner showed a quiver of arbutus among its strange and lacy ferns and mosses."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Laurel sniffed the fragrant air, filled with a tumult of energy; every instinct longed to skip; she thought of jouncing as high as the poplars, right over the house and into Washington Square beyond. \"Miss Fidget!\" her grandfather exclaimed, exasperated, releasing her hand. \"You're like holding on to a stormy petrel.\""
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"I don't think that's very nice,\" she replied."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"God bless me,\" he said, turning upon her his steady blue gaze; \"what have we got here, all dressed up to go ashore?\" She sharply elevated a shoulder and retorted, \"Well, I'm eleven.\" His look, which had seemed quite fierce, grew kindly again. \"Eleven,\" he echoed with a satisfactory amazement; \"that will need some cumshaws and kisses.\" The first, she knew, was a word of pleasant import, brought from the East, and meant gifts; and, realizing that the second was unavoidably connected with it, she philosophically held up her face. Lifting her over his expanse of stomach he kissed her loudly. She didn't object, really, or rather she wouldn't at all but for a strong odor of Manilla cheroots and the Medford rum he took at stated periods."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "After this they moved on, through the bay window of the drawing-room that opened on the garden, where a woman was brushing with a nodding feather duster, under the white arch that framed the main stairway, and turned aside to where breakfast was being laid. Laurel saw that her father was already seated at the table, intent upon the tall, thickly printed sheet of the Salem *Register*. He paused to meet her dutiful lips; then with a \"Good morning, father,\" returned to his reading. Camilla entered at Laurel's heels; and the latter, in a delight slightly tempered by doubt, saw that she had been before her sister in a suitable dress for such a warm day. Camilla still wore her dark merino; and she gazed with mingled surprise and annoyance at Laurel's airy garb."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"Did mother say you might put that on?\" she demanded. \"Because if she didn't I expect you will have to go right up from breakfast and change. It isn't a dress at all for so early in the morning. Why, I believe it's one of your very best.\" The look of critical disapproval suddenly became doubly accusing."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Laurel Ammidon, wherever are your pantalets?\""
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"I'm too big to have pantalets hanging down over my shoetops,\" she replied defiantly, \"and so I just hitched them up. You can still see the frill.\" Janet had come into the room, and stood behind her. \"Don't you notice Camilla,\" she advised; \"she's not really grown up.\" They turned at the appearance of their mother. \"Dear me, Camilla,\" the latter observed, \"you are getting too particular for any comfort. What has upset you now?\""
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"Look at Laurel,\" Camilla replied; \"that's all you need to do. You'd think she went to dances instead of Sidsall.\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "Laurel painfully avoided her mother's comprehensive glance. \"Very beautiful,\" the elder said in a tone of palpable pleasure. Laurel advanced her lower lip ever so slightly in the direction of Camilla. \"But you have taken a great deal into your own hands.\" She shifted apparently to another topic. \"There will be no lessons to-day for I have to send Miss Gomes into Boston.\" At this announcement Laurel was flooded with a joy that obviously belonged to her former, less dignified state. \"However,\" her mother continued addressing her, \"since you have dressed yourself like a lady I shall expect you to behave appropriately; no soiled or torn skirts, and an hour at your piano scales instead of a half.\""
+    }
+  ]
+}

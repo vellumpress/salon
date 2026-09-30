@@ -1,0 +1,466 @@
+{
+  "id": "guest-the-one-eyed",
+  "title": "Guest the One-Eyed",
+  "author": "Gunnar Gunnarsson (tr. W. W. Worster)",
+  "year": "1922",
+  "note": "Project Gutenberg 62455 (translated from the Danish; translator credited as W. W. Worster, as on the 1922 title page — the PG Translator field reads W. J. Alexander Worster). Whole novel, Books I–IV (Ormarr Ørlygsson · The Danish Lady at Hof · Guest the One-Eyed · The Young Eagle), labelled 'Book n · <book title> · Chapter n' so no title repeats. 'By the same author' advert, title and imprint pages, contents, the illustration and the transcriber's note out. Host: Book I · Ch I — \"Snow, snow, snow!\" (whole chapter). EN 1922 (Knopf; Danish original ©1915, Af Borgslægtens Historie, per the PG text). PG reading-ease 81.9 — no invented Launch rank. Place: Iceland (the farm at Borg and the fjord country; a Copenhagen interlude). Long (~9 h) — carefully. Sits: unwind. Paragraphs over 350 words soft-broken at sentence ends. Host intro: A few things to know going in. This is a long family saga, about nine hours, in a 1922 translation, and it moves at the pace of the weather: two generations of the farm at Borg, with a spell in Copenhagen. It is plain and easy to read. The thee and thou are only in the prayers and scripture. Some of the long paragraphs have been broken into shorter screens; no words are changed.",
+  "minutes": 12,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Book I · Ormarr Ørlygsson · Chapter I · Christmas snow on the heights · Borg, Iceland",
+      "place": "Book I · Ormarr Ørlygsson · Chapter I · Christmas snow on the heights · Borg, Iceland",
+      "reentry": "Snow, snow, snow!",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Snow, snow, snow!"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Below and above—here, there, and everywhere! Up to his knees in snow, Pall à Seyru struggled across the wind-swept heights. The snow whirled down in great downy flakes, making it impossible to see more than a few yards ahead. Stooping, with heavy, weary steps, he tramped on, an empty sack slung across his shoulders."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "He had come from the trading station, and was on his way home to his own hut in the mountains; the store-keeper had refused to grant him further credit, and in consequence, he had chosen to return by this lonely track across the hills, where he was sure of meeting no one on his way. It was hard to come home at Christmas-time with empty hands to empty pots and hungry mouths."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "His only comfort was the snow. It fell so thickly as to shut out all around, and seemed to numb even the poor peasant's despair within the dismal prison of his mind."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Now and again he heard a sound—the whir and cackle of ptarmigan flying overhead."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Suddenly a gust of wind sent the snow flying over the ground. Another—and then gust followed gust, growing at last to a veritable hurricane, that swept the very snow-clouds from the sky. And as if by magic, a vast plain of snow lay open to his eyes."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "All Hofsfjordur was suddenly visible. Pall turned, and saw the last of the clouds sweep down into the dark blue-green of the sea. To the south-east, the peaks of the Hof Mountains rose out of the water, and over the eastern landscape towered a long range of rocky mountains that gradually merged into the great south-western plateau. His eye rested for a moment on the vicarage farm of Hof—a few straggling buildings clinging to the mountain-side, among which the black church itself loomed out, right at the mouth of the fjord. The houses of the trading station he could not see; they lay beyond, on the northern shore of the fjord, safely sheltered behind the rocky walls of the islets that offered such fine harbourage—to any ship that managed to reach so far."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "The parish itself lay between him and the Hof Mountains. A valley two miles farther up was divided into two narrow dales by the Borgasfjall, a steep and rocky height. The rivulets from the two valleys—now but streaks of smooth ice—met lower down, making part of the valley into a peninsula. The southern stream was named Hofsa, and its valley Hofsardalur; the northernmost Borgara, and its valley Borgardalur; but the rivulets, from their confluence to the outflow into Hofsfjordur, still went by the name of Borgara, and the broad valley was called Borgardalur."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "To the north, on the farther side of a narrow valley, likewise belonging to the parish, were the faint outlines of broad, slowly rising hills—the Dark Mountains. The ridge where Pall now stood was Borgarhals, and ran for a long way between Borgardalur and Nordurdalen, in the heart of the mountains, leading to the little glen where his cottage lay, close to a brook, and not far from the lake. There were trout in the water there, to be taken by net in summer, and in winter by fishing with lines through holes in the ice. Wild geese, swans, and ducks were there in plenty, from early spring to late autumn."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "But Pall's thoughts had wandered far from all this, settling, as did his glance, on a row of stately gables that rose above a low hill in the centre of the peninsula, formed by the waters of Borgara and Hofsa."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "From three of the chimneys a kindly smoke ascended. The storm had abated, and folk were beginning to move about here and there among the outbuildings round the large walled farmyard. Already flocks of sheep were on their way to the winter pasture at the foot of the hills, where some dwarfed growth was still to be found."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "This was Borg, the home of Ørlygur the Rich, as he was called. It was by no means uncommon for folk to speak of him as \"the King,\" for he ruled over scores of servants, and owned hundreds of cattle and horses and thousands of sheep."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Suddenly Pall's cheeks flushed with a happy thought. It had crossed his mind that he might call at Borg. All knew that Ørlygur the Rich never sent a poor man empty away. But then he realized that today was not the first time the thought had come to him. No, better to give it up; he had turned for help to Borg too many times before; he could not well ask again."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "With bowed head, and face grey as before, he dragged himself along the almost impassable track; he was exhausted; his limbs seemed heavy as if in chains."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "From early morning to about ten o'clock, while the storm raged, the farm hands and servants of Borg gathered in the women's hall upstairs. The men had come from their quarters, and sat about on the beds waiting for the storm to abate before starting out to their work. The cowman alone was forced to brave the elements and tend his cattle."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Ørlygur had opened the door to his own room. He sat with his two-year-old son Ketill on his knees, and talked quietly with his men, exchanging views, or giving them advice about the work of the place. He always treated them as his equals. The men sat with their breakfast-plates on their knees, eating as they talked. Some of the womenfolk went to and fro with food or heavy outdoor clothing; others were darning socks or mending shoes."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Ormarr, who was nearing his fourteenth year, sat in his father's room, on the edge of the bed, facing Ørlygur. It was in his mind that things were beginning to be like they had been before his mother's death, two years ago. He sat with his hands on his knees, swinging his legs by way of accompaniment to his thoughts."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Never before had he missed his mother so sorely as this morning, when every one else seemed to have forgotten her; never before had he felt her loss so keenly. He sighed, checked the swinging of his legs, and sat motionless for a while. Tears rose to his eyes. He felt he must go out, or he would be crying openly in a minute, and disturb the comfort of the rest. For a moment he sat pondering where to go, then he remembered that the cowman would by now have finished work in the shed, and taking down an old violin from a rack, he left the room."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "Reaching the cowshed, he sat down in his accustomed place, on a board between two empty chests, and commenced tuning his instrument. It was an old thing that had been in the family for generations, but no one could remember having heard it played. Then, seven years before, Ormarr had been taught the rudiments of music by a wandering fiddler, an adventurous soul, who tramped the country with his fiddle slung over his shoulder in a calfskin bag. Since then, Ormarr had given all his spare time to the music."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "His father had marked with grief how this one interest had gradually swallowed up all else; the boy cared nothing for the management of the estate, or indeed for any other work. Possibly it was this which had led Ørlygur, in spite of the doctor's advice, to wish for another son. And his wife had sacrificed her life in giving him what he wished."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Hard and self-willed as he was in many ways, Ørlygur had yet a profound belief in the right of every human being to determine his own life, to follow his own nature and develop his gifts as long as it involved no actual harm to others. And he made no attempt to coerce the boy; Ormarr had his way."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "* * * * *"
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "About ten o'clock, when the snow had ceased, Ormarr slung his gun across his shoulder and walked off toward Borgarhals to shoot ptarmigan."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "On the way, he met Einar à Gili, a troublesome fellow, who, in defiance of the general feeling, had so little respect for the uncrowned king of Borg that he had several times thrashed his son Ormarr without the slightest provocation. It was the more unpardonable, since Einar was about ten years older, and strong as a giant. And now, at sight of him, Ormarr's fingers fumbled in passionate helplessness at the trigger of his gun."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "Einar hailed him, to all appearance innocent as could be. \"Hey, Ormarr, out shooting? Let's go together?\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "Ormarr had no desire to go out shooting with Einar, but was curious to know why the other had suggested it."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "\"Then we can see who's the best shot.\""
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "This was irresistible. Einar was a proverbially bad shot with a gun, and Ormarr knew it. He made no protest, and they went on together."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "Every time he fired, Ormarr brought down two or three birds. Einar got at the most one bird at a shot, and often sent the birds fluttering away with broken wings."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "Nevertheless, Einar picked up all the birds that fell, and stuffed them into his own bag. Ormarr demanded his share."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "\"Oh, you've no bag, and there's no sense wasting time tying your birds together at every shot. Wait till we've done.\""
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "Ormarr had his suspicions, but said nothing."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "After a while they came to a good-sized rock, with two paths round. Ormarr knew that the paths to the south was the longer."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "\"Let's go round and meet on the other side. I'll go this way,\" he said, taking the northern path. And Einar agreed."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "When they met, neither had any more birds to show."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "\"But you fired, I heard you,\" said Einar."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "\"I missed,\" said Ormarr shortly. Einar laughed, but he took no notice."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "\"Look, there's one sitting on that rock,\" said Ormarr suddenly, pointing to a boulder some hundred yards away. \"I'll take him.\""
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "\"No hurry,\" said Einar; \"I'll bag that one myself. We needn't go on any longer—I'm going home now.\""
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "\"How many have we got?\""
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "\"Oh, twenty.\""
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "\"Good, then give me mine.\""
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "\"Ah, yes—next time we meet! I'm off. My love to the cattle at home.\""
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "Somewhat to his disappointment, Ormarr did not seem to be greatly annoyed, but merely walked off, calling quietly over his shoulder: \"Mind you don't miss that bird, Mr. Clever-with-your-gun.\""
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "Einar turned round angrily. \"Don't shout like that—you'll scare it away. That's my twenty-first.\""
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "\"All right. It's too frightened of you to move. Go and see.\""
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "Einar took careful aim—his hand shook a little, but only because he was inwardly chuckling over the trick he had played Ormarr, and the thought of telling what he had done. Though, indeed, he might get little credit for it all; people were rather apt to side with the lordly folk from Borg. Still, it was good to have fooled that brat Ormarr again."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "The bird was sitting close on the rock. Einar fired, and, raising his gun, saw that the bird was still in the same position. Seeing no feathers fly, he thought he must have missed, and loaded again. Then creeping cautiously forward, he rested his gun on a stone, and fired again. The ptarmigan did not move. Einar felt sure his shot must have taken effect. He went right up to it. The bird was dead enough, but what was more, it was cold. And lifting it, he saw a piece of paper tied to one of its legs, with a few words in pencil. \"Clever shot, aren't you? Thanks for a pleasant day's sport.—Ormarr.\""
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "\"Curse the little jackanapes!\""
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "Einar never told any one after all how he had scored off Ormarr that day."
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "* * * * *"
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "Ormarr hurried along up hill and down, firing and reloading rapidly, scarcely seeming to take aim at all, but never missing his bird. His narrow sunburnt face was flushed with exertion, and drops of perspiration trickled down from his forehead. His eyes searched eagerly about for game, and in a very short time he had a bag of twenty-seven. Then suddenly, coming round the corner of a rock, he stood face to face with Pall à Seyru. Pall tried to avoid him, but Ormarr called him back. He sat down, wiped the perspiration from his face, and smiled as Pall came up."
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "\"Puh—I'm warm enough, for all it's fifteen degrees of frost. You look half frozen.\""
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "Pall muttered something, and tried to hide his empty sack, which had the effect of drawing Ormarr's attention to it."
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "\"What's that—going back home with an empty bag? Won't Bjarni let you have things any more?\""
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "\"I'm in debt there already. And I couldn't promise to pay before next autumn.\""
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "\"But at Christmas-time—and you're not a rich man.\""
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "\"That makes but little difference in his books.\""
+    },
+    {
+      "id": "sit-0-58",
+      "sceneId": "sit-0",
+      "text": "\"Ho—who says that—you?\""
+    },
+    {
+      "id": "sit-0-59",
+      "sceneId": "sit-0",
+      "text": "\"'Twas Bjarni said so.\""
+    },
+    {
+      "id": "sit-0-60",
+      "sceneId": "sit-0",
+      "text": "\"And you had to go and ask him—beg of him—like that?\""
+    },
+    {
+      "id": "sit-0-61",
+      "sceneId": "sit-0",
+      "text": "\"Our cow didn't calve, and we've no milk. And there's no food in the place beyond.\""
+    },
+    {
+      "id": "sit-0-62",
+      "sceneId": "sit-0",
+      "text": "\"H'm. What were you going this way round for? 'Tisn't any short way home.\""
+    },
+    {
+      "id": "sit-0-63",
+      "sceneId": "sit-0",
+      "text": "\"I didn't want to meet anyone.\""
+    },
+    {
+      "id": "sit-0-64",
+      "sceneId": "sit-0",
+      "text": "\"And going back empty-handed? Why didn't you come to us?\""
+    },
+    {
+      "id": "sit-0-65",
+      "sceneId": "sit-0",
+      "text": "\"I've been a burden to many this long time—to your folk more than any. And I'll not ask for help from the parish.\""
+    },
+    {
+      "id": "sit-0-66",
+      "sceneId": "sit-0",
+      "text": "Something in the man's face made Ormarr catch his breath. The blood left his cheeks, and in a hushed voice he asked:"
+    },
+    {
+      "id": "sit-0-67",
+      "sceneId": "sit-0",
+      "text": "\"You mean—you'd....\""
+    },
+    {
+      "id": "sit-0-68",
+      "sceneId": "sit-0",
+      "text": "Pall nodded. \"Yes. There's times when it seems better than living on this way.\""
+    },
+    {
+      "id": "sit-0-69",
+      "sceneId": "sit-0",
+      "text": "Ormarr sprang to his feet."
+    },
+    {
+      "id": "sit-0-70",
+      "sceneId": "sit-0",
+      "text": "\"Pall... here, take these birds—just from me. And come home and talk to father. You must. He'll be just as glad to do anything as you could be for it. As for Bjarni, he's a cur. You can tell him so from me next time you see him.\""
+    },
+    {
+      "id": "sit-0-71",
+      "sceneId": "sit-0",
+      "text": "Pall was silenced, and tears rose to his eyes. Ormarr understood, and said no more. They divided the birds into two lots, though Ormarr would gladly have carried the whole, and in silence they started off down the slope."
+    },
+    {
+      "id": "sit-0-72",
+      "sceneId": "sit-0",
+      "text": "* * * * *"
+    },
+    {
+      "id": "sit-0-73",
+      "sceneId": "sit-0",
+      "text": "Ormarr slept in a bed next to his father's. It had been his mother's bed. When the light was put out that night, Ormarr had not yet found courage to tell what he had been thinking of since his meeting with Pall that day. Nor did he know what had passed between his father and Pall."
+    },
+    {
+      "id": "sit-0-74",
+      "sceneId": "sit-0",
+      "text": "Half an hour later, perceiving that his father was still awake, he managed to whisper, softly and unsteadily:"
+    },
+    {
+      "id": "sit-0-75",
+      "sceneId": "sit-0",
+      "text": "\"Father!\""
+    },
+    {
+      "id": "sit-0-76",
+      "sceneId": "sit-0",
+      "text": "It was as if Ørlygur had been waiting for this. He rose, and seated himself at the boy's bedside."
+    },
+    {
+      "id": "sit-0-77",
+      "sceneId": "sit-0",
+      "text": "\"'Twas well you met Pall this morning, lad. His wife and two little children were waiting for him to come home.\""
+    },
+    {
+      "id": "sit-0-78",
+      "sceneId": "sit-0",
+      "text": "The words gave Ormarr the courage he had lacked."
+    },
+    {
+      "id": "sit-0-79",
+      "sceneId": "sit-0",
+      "text": "\"Father, may I give him Blesa? His cow won't calve for six weeks, and they've no milk.\""
+    },
+    {
+      "id": "sit-0-80",
+      "sceneId": "sit-0",
+      "text": "\"I've promised Pall to send him Skjalda, and a few loads of hay the first fine day the roads are passable. And I am going to take little Gudrun to live here—they've enough to do as it is.\""
+    },
+    {
+      "id": "sit-0-81",
+      "sceneId": "sit-0",
+      "text": "Ormarr's heart was full of thankfulness to his father for his kindness to Pall. But he was shy of speaking; words might say less than he meant. And there must be no misunderstanding between his father and himself—this thought was always in Ormarr's mind, for he loved his father deeply. Now in the darkness of the room, he could hardly distinguish his features, but in his mind's eye he saw him clearly, sitting there on the bedside. He knew every line in the calm, composed face, finely framed in the dark hair and brown beard. Often he had been told that there was not a handsomer man to be found than his father. He had the physique of an athlete, and Ormarr knew his every movement and attitude. He strove now to breathe all his love towards the loved figure, vaguely seen in reality, yet clear as ever to his mind. He felt that his father could not fail to perceive the mute expression of his loving gratitude."
+    },
+    {
+      "id": "sit-0-82",
+      "sceneId": "sit-0",
+      "text": "For a while both were silent. Then Ørlygur rose, and smoothing his son's hair, he said:"
+    },
+    {
+      "id": "sit-0-83",
+      "sceneId": "sit-0",
+      "text": "\"You know, Ormarr, that all I possess will in time belong to you and your brother. Then you will be able to give away more than trifles. At present, you have little to use in charity, but what you have, you may do with as you please. Remember that it is our duty to help those who are poorer wherever we can. And when you hear of any one that needs a helping hand, always come to me. Wealth is not lost by charity. And now good-night—it is time we were asleep.\""
+    },
+    {
+      "id": "sit-0-84",
+      "sceneId": "sit-0",
+      "text": "He went back to his bed, and a moment after, spoke again."
+    },
+    {
+      "id": "sit-0-85",
+      "sceneId": "sit-0",
+      "text": "\"Ormarr, you remember how generous your mother always was. You seem to grow more like her every day. I think she would have been very happy tonight.\""
+    },
+    {
+      "id": "sit-0-86",
+      "sceneId": "sit-0",
+      "text": "Ormarr burst into tears, hiding his face in the pillow to make no sound. And after a little while, he fell asleep."
+    },
+    {
+      "id": "sit-0-87",
+      "sceneId": "sit-0",
+      "text": "When he awoke next morning, he felt for the first time since his mother's death as if she were invisibly present among them—as a link between his father and himself."
+    },
+    {
+      "id": "sit-0-88",
+      "sceneId": "sit-0",
+      "text": "And he was filled with a proud sense of having entered into a secret covenant with his father; it gave him a feeling of manhood, of responsibility."
+    }
+  ]
+}
