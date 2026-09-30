@@ -145,7 +145,7 @@
       "id": "s19",
       "title": "Chapter VII",
       "place": "Chapter VII",
-      "reentry": "THE JUS Ligatum.[55]",
+      "reentry": "THE JUS Ligatum.",
       "prompt": "A word from this stretch."
     },
     {
@@ -259,12 +259,12 @@
     {
       "id": "s3-11",
       "sceneId": "s3",
-      "text": "They have not long to wait. A cavalcade, with a few attendant pages, descends the hill. Foremost rides a tall, muscular man--the lord of the manor--the rest, as if involuntarily, linger some little way behind him. His broad shoulders and superbly-arched chest indicate herculean strength; his sun-burnt features are wonderfully well preserved, not a wrinkle is to be seen on them; his short clipped beard and his shaggy moustache, which is twisted sharply upwards, give his face a martial expression, and his very pronounced aquiline nose and coal-black, bushy eyebrows lend him a haughty, dictatorial air; while the dreamy cut of his lips, his mild, oval, blue eyes and high, smooth forehead throw a poetic shimmer over his peculiarly chivalrous countenance. A round, unembroidered hat, surmounted by an eagle's plume, covers his closely-cropped hair; his upper garment is a simple green, shaggy jacket, which he wears open, thus allowing you a glance at his under-garment, a white buckskin dolman,[1] trimmed with silver braid. By his side hangs a broad scimitar in an ivory sheath, and the mother-of-pearl handle of a crooked Turkish dagger peeps forth from a scarlet girdle richly set with precious stones."
+      "text": "They have not long to wait. A cavalcade, with a few attendant pages, descends the hill. Foremost rides a tall, muscular man—the lord of the manor—the rest, as if involuntarily, linger some little way behind him. His broad shoulders and superbly-arched chest indicate herculean strength; his sun-burnt features are wonderfully well preserved, not a wrinkle is to be seen on them; his short clipped beard and his shaggy moustache, which is twisted sharply upwards, give his face a martial expression, and his very pronounced aquiline nose and coal-black, bushy eyebrows lend him a haughty, dictatorial air; while the dreamy cut of his lips, his mild, oval, blue eyes and high, smooth forehead throw a poetic shimmer over his peculiarly chivalrous countenance. A round, unembroidered hat, surmounted by an eagle's plume, covers his closely-cropped hair; his upper garment is a simple green, shaggy jacket, which he wears open, thus allowing you a glance at his under-garment, a white buckskin dolman, trimmed with silver braid. By his side hangs a broad scimitar in an ivory sheath, and the mother-of-pearl handle of a crooked Turkish dagger peeps forth from a scarlet girdle richly set with precious stones."
     },
     {
       "id": "s3-12",
       "sceneId": "s3",
-      "text": "[Footnote 1: *Dolman.* An Hungarian pelisse. A more magnificent kind, worn only on state occasions, is called the *attila*.]"
+      "text": "Note: *Dolman.* An Hungarian pelisse. A more magnificent kind, worn only on state occasions, is called the *attila*."
     },
     {
       "id": "s3-13",
@@ -274,12 +274,12 @@
     {
       "id": "s3-14",
       "sceneId": "s3",
-      "text": "The youth has smiling, gentle, pallid features; rich chestnut-brown locks fall over his shoulders; a slight moustache just shades his upper lip; an eternal smile, nonchalance, not to say levity, are mirrored in his bright blue eyes; but for his brawny arms and his stalwart frame, the iron muscles of which protrude at the slightest movement through his tight-fitting dolman, you might take him for a child. His head is covered by a kalpag[2] of marten skin with a heron's plume in it; his dress is of heavy twisted silk stuff; down from his shoulders hangs a splendid tiger's skin, the claws meeting together round his neck in a gorgeous sapphire agraffe. He rides a pitch-black Turkish stallion, whose shabrack, richly embroidered with golden butterflies, is plainly the work of a gentle lady's hand."
+      "text": "The youth has smiling, gentle, pallid features; rich chestnut-brown locks fall over his shoulders; a slight moustache just shades his upper lip; an eternal smile, nonchalance, not to say levity, are mirrored in his bright blue eyes; but for his brawny arms and his stalwart frame, the iron muscles of which protrude at the slightest movement through his tight-fitting dolman, you might take him for a child. His head is covered by a kalpag of marten skin with a heron's plume in it; his dress is of heavy twisted silk stuff; down from his shoulders hangs a splendid tiger's skin, the claws meeting together round his neck in a gorgeous sapphire agraffe. He rides a pitch-black Turkish stallion, whose shabrack, richly embroidered with golden butterflies, is plainly the work of a gentle lady's hand."
     },
     {
       "id": "s3-15",
       "sceneId": "s3",
-      "text": "[Footnote 2: *Kalpag* or *Calpak*. A tall, skin cap of Tartar origin, part of the Hungarian national costume.]"
+      "text": "Note: *Kalpag* or *Calpak*. A tall, skin cap of Tartar origin, part of the Hungarian national costume."
     },
     {
       "id": "s3-16",
@@ -419,12 +419,12 @@
     {
       "id": "s3-43",
       "sceneId": "s3",
-      "text": "\"Not in vain does my blood flow in her veins! Ha, ha! For valour I'll match her with the best of men. Have no fear for her! The time is coming when she will face greater perils than any of to-day, and still hold her own.\"[3]"
+      "text": "\"Not in vain does my blood flow in her veins! Ha, ha! For valour I'll match her with the best of men. Have no fear for her! The time is coming when she will face greater perils than any of to-day, and still hold her own.\""
     },
     {
       "id": "s3-44",
       "sceneId": "s3",
-      "text": "[Footnote 3: The Amazon was Helen Zrinyi. She married first the young cavalier with whom we now meet her, Francis Rakoczy, and subsequently the famous Emerich Tököly, whose acquaintance we shall make presently. Her spirited defence of the fortress of Mohacz, 1689, against the Emperor is well known.]"
+      "text": "Note: The Amazon was Helen Zrinyi. She married first the young cavalier with whom we now meet her, Francis Rakoczy, and subsequently the famous Emerich Tököly, whose acquaintance we shall make presently. Her spirited defence of the fortress of Mohacz, 1689, against the Emperor is well known."
     },
     {
       "id": "s3-45",
@@ -549,12 +549,12 @@
     {
       "id": "s3-69",
       "sceneId": "s3",
-      "text": "At that moment the blast of a horn was heard in the distance. The hero had brought down the stag. The other horsemen, who now overtook the leaders of the chase (but only after making a wide circuit), welcomed the hero of the day with loud cries of \"Eljen!\"[4]"
+      "text": "At that moment the blast of a horn was heard in the distance. The hero had brought down the stag. The other horsemen, who now overtook the leaders of the chase (but only after making a wide circuit), welcomed the hero of the day with loud cries of \"Eljen!\""
     },
     {
       "id": "s3-70",
       "sceneId": "s3",
-      "text": "[Footnote 4: *Eljen!* = Long live!]"
+      "text": "Note: *Eljen!* = Long live!"
     },
     {
       "id": "s3-71",
@@ -734,12 +734,12 @@
     {
       "id": "s3-106",
       "sceneId": "s3",
-      "text": "At that moment the report of a gun[5] resounded somewhere in the wood. The down-trodden boar suddenly seemed to feel that the pressure of his opponent's hands and knees was slackening, and rallying all his remaining strength, threw off his assailant and dealt him one last blow with his tusks, and that blow was fatal, for it ripped open the man's throat."
+      "text": "At that moment the report of a gun resounded somewhere in the wood. The down-trodden boar suddenly seemed to feel that the pressure of his opponent's hands and knees was slackening, and rallying all his remaining strength, threw off his assailant and dealt him one last blow with his tusks, and that blow was fatal, for it ripped open the man's throat."
     },
     {
       "id": "s3-107",
       "sceneId": "s3",
-      "text": "[Footnote 5: Some pretend that this shot was fired by a secret assassin sent from Vienna. Many doubt whether a shot was fired at all.]"
+      "text": "Note: Some pretend that this shot was fired by a secret assassin sent from Vienna. Many doubt whether a shot was fired at all."
     },
     {
       "id": "s3-108",
@@ -779,12 +779,12 @@
     {
       "id": "s3-115",
       "sceneId": "s3",
-      "text": "Thus died Nicolas Zrinyi[6] the younger, his country's greatest poet and bravest son."
+      "text": "Thus died Nicolas Zrinyi the younger, his country's greatest poet and bravest son."
     },
     {
       "id": "s3-116",
       "sceneId": "s3",
-      "text": "[Footnote 6: It is not without reason that Jókai alludes to Zrinyi as \"the hero.\" He was one of the greatest warriors of his day (1618-1666), and his victories over the Turks were many and brilliant. As a poet he stands high, even judged by a modern standard. His chief works are his great epic, *Szigeti veszedelem*, and his religious poems, *Keresztre*, \"On the Cross!\"]"
+      "text": "Note: It is not without reason that Jókai alludes to Zrinyi as \"the hero.\" He was one of the greatest warriors of his day (1618-1666), and his victories over the Turks were many and brilliant. As a poet he stands high, even judged by a modern standard. His chief works are his great epic, *Szigeti veszedelem*, and his religious poems, *Keresztre*, \"On the Cross!\""
     },
     {
       "id": "s3-117",
@@ -864,17 +864,17 @@
     {
       "id": "s4-12",
       "sceneId": "s4",
-      "text": "\"Alas! God only knows,\" replied the old dame, sighing. \"How can I tell when the poor fellow will be released from his captivity? I always had a presentiment that it would come to this, and I said so, but no one heeded me. It happened in this wise. In the days when our Prince George[7] of blessed memory, not content with his own land, must needs set out to conquer Poland at the head of the Hungarian chivalry, our good master, Sir Michael, went with him. Oh, how I tried--and our lady too--to keep him back. They were a newly-wedded couple then, and the good gentleman himself had little heart for war--he always preferred to sit at home among his books, his water-mills, and his fruit trees--but honour called him and he went. I begged him to at least take my son Andy with him. God gave me that thought, for otherwise we should never have heard again of our gracious master, for when his Highness, our Sovereign Prince George, beheld the bestial hordes of Tartars marching out against him, he himself galloped off home, leaving his nobility captives in the hands of the heathen, who dragged them off in fetters to Tartary. My son Andy, who was of no use to them, for he was badly wounded in the thigh, and therefore could not work, they sent home; he brought the tidings that Sir Michael was sickening in sad confinement, and the Tartars, perceiving how high he stood in the esteem of his fellow-prisoners, took him for their prince, and set upon his head such a frightfully high ransom, that all his property turned into gold could not have paid it off. Nevertheless our noble lady rejoiced exceedingly when she heard that her husband was still alive, and ran hither and thither and left no stone unturned to raise the money. But neither her kind friends nor her dear relations would lend her anything--no, not on the best security, for no one willingly lends on land in time of war. So she sold her treasures, her bridal dower which her mother had given her; all the beautiful silver plate, jewelled bracelets, and embossed gold and pearl ornaments which her ancestors had handed down to her; her large satin-trimmed, fur-embroidered mantle and her filagreed *mente*[8]; her rings, agraffes, and hairpins; her carbuncle bracelets and orient pearls; her diamond ear-rings--in short, everything which could be turned into money. Yet even all that came to not one-half of what the Tartar demanded, so what does she do but farm the estates of her sisters, plough up the fallow-lands, and cut down the forests to make way for corn-fields. To find time for more work, she turned night into day. No sort of husbandry whereby money could be made escaped her attention. At one time she laid down clay-pits and dug out quarries, the products of which found customers in the neighbourhood. At another time she bred prize oxen and sold them to the Armenian herdsmen. She visited all the markets in person; carried her wine as far as Poland, her corn to Hermannstadt, her honey, wax, and preserved fruits to Kronstadt--nay, in order to obtain a fair price for her wools, she crossed the border and took them as far as Debreczin. And how frugally she fared all the time! It is true she never stinted her servants in anything, but she seemed to weigh every morsel that went into her own mouth. At harvest time she would have nothing cooked for herself at home for weeks together, so that she might remain in the fields all day. A piece of bread which would have been too little for a child was all she ate, and her drink was a bowl of spring water; yet, believe me, Clara, we never once saw her in a bad humour, and never did a single bitter tear fall upon the dry bread which her loyalty to her husband constrained her to live upon.\""
+      "text": "\"Alas! God only knows,\" replied the old dame, sighing. \"How can I tell when the poor fellow will be released from his captivity? I always had a presentiment that it would come to this, and I said so, but no one heeded me. It happened in this wise. In the days when our Prince George of blessed memory, not content with his own land, must needs set out to conquer Poland at the head of the Hungarian chivalry, our good master, Sir Michael, went with him. Oh, how I tried—and our lady too—to keep him back. They were a newly-wedded couple then, and the good gentleman himself had little heart for war—he always preferred to sit at home among his books, his water-mills, and his fruit trees—but honour called him and he went. I begged him to at least take my son Andy with him. God gave me that thought, for otherwise we should never have heard again of our gracious master, for when his Highness, our Sovereign Prince George, beheld the bestial hordes of Tartars marching out against him, he himself galloped off home, leaving his nobility captives in the hands of the heathen, who dragged them off in fetters to Tartary. My son Andy, who was of no use to them, for he was badly wounded in the thigh, and therefore could not work, they sent home; he brought the tidings that Sir Michael was sickening in sad confinement, and the Tartars, perceiving how high he stood in the esteem of his fellow-prisoners, took him for their prince, and set upon his head such a frightfully high ransom, that all his property turned into gold could not have paid it off. Nevertheless our noble lady rejoiced exceedingly when she heard that her husband was still alive, and ran hither and thither and left no stone unturned to raise the money. But neither her kind friends nor her dear relations would lend her anything—no, not on the best security, for no one willingly lends on land in time of war. So she sold her treasures, her bridal dower which her mother had given her; all the beautiful silver plate, jewelled bracelets, and embossed gold and pearl ornaments which her ancestors had handed down to her; her large satin-trimmed, fur-embroidered mantle and her filagreed *mente*; her rings, agraffes, and hairpins; her carbuncle bracelets and orient pearls; her diamond ear-rings—in short, everything which could be turned into money. Yet even all that came to not one-half of what the Tartar demanded, so what does she do but farm the estates of her sisters, plough up the fallow-lands, and cut down the forests to make way for corn-fields. To find time for more work, she turned night into day. No sort of husbandry whereby money could be made escaped her attention. At one time she laid down clay-pits and dug out quarries, the products of which found customers in the neighbourhood. At another time she bred prize oxen and sold them to the Armenian herdsmen. She visited all the markets in person; carried her wine as far as Poland, her corn to Hermannstadt, her honey, wax, and preserved fruits to Kronstadt—nay, in order to obtain a fair price for her wools, she crossed the border and took them as far as Debreczin. And how frugally she fared all the time! It is true she never stinted her servants in anything, but she seemed to weigh every morsel that went into her own mouth. At harvest time she would have nothing cooked for herself at home for weeks together, so that she might remain in the fields all day. A piece of bread which would have been too little for a child was all she ate, and her drink was a bowl of spring water; yet, believe me, Clara, we never once saw her in a bad humour, and never did a single bitter tear fall upon the dry bread which her loyalty to her husband constrained her to live upon.\""
     },
     {
       "id": "s4-13",
       "sceneId": "s4",
-      "text": "[Footnote 7: George Rakoczy I., Prince of Transylvania, 1630-1648.]"
+      "text": "Note: George Rakoczy I., Prince of Transylvania, 1630-1648."
     },
     {
       "id": "s4-14",
       "sceneId": "s4",
-      "text": "[Footnote 8: *Mente.* A fur pelisse.]"
+      "text": "Note: *Mente.* A fur pelisse."
     },
     {
       "id": "s4-15",
@@ -1419,17 +1419,17 @@
     {
       "id": "s5-58",
       "sceneId": "s5",
-      "text": "\"But how am I to send out the writs? for, excepting the land of the Szeklers,[9] Kemeny[10] holds every place.\""
+      "text": "\"But how am I to send out the writs? for, excepting the land of the Szeklers, Kemeny holds every place.\""
     },
     {
       "id": "s5-59",
       "sceneId": "s5",
-      "text": "[Footnote 9: *Szeklers* (Siculi). The Szeklers were originally a military colony placed, at the beginning of the twelfth century, in the waste lands of Transylvania, which they engaged to defend against the incursions of the pagan Pechenegs, on being exempted from every other obligation.]"
+      "text": "Note: *Szeklers* (Siculi). The Szeklers were originally a military colony placed, at the beginning of the twelfth century, in the waste lands of Transylvania, which they engaged to defend against the incursions of the pagan Pechenegs, on being exempted from every other obligation."
     },
     {
       "id": "s5-60",
       "sceneId": "s5",
-      "text": "[Footnote 10: John Kemeny, Prince of Transylvania, 1661-1662.]"
+      "text": "Note: John Kemeny, Prince of Transylvania, 1661-1662."
     },
     {
       "id": "s5-61",
@@ -1619,12 +1619,12 @@
     {
       "id": "s5-98",
       "sceneId": "s5",
-      "text": "When Ali Pasha came out of his tent, he went towards the deputies, took Apafi by the hand in the presence of them all, threw over his shoulders a broad, new green velvet mente,[11] put an ermine embroidered cap on his head, and explained to the assembled crowd that henceforth they were to regard him as their legitimate Prince; whereupon the Szeklers roared out deafening \"Eljens,\" raised Apafi on their shoulders, and hoisted him on to a daïs covered with velvet which Ali Pasha had expressly provided for the occasion."
+      "text": "When Ali Pasha came out of his tent, he went towards the deputies, took Apafi by the hand in the presence of them all, threw over his shoulders a broad, new green velvet mente, put an ermine embroidered cap on his head, and explained to the assembled crowd that henceforth they were to regard him as their legitimate Prince; whereupon the Szeklers roared out deafening \"Eljens,\" raised Apafi on their shoulders, and hoisted him on to a daïs covered with velvet which Ali Pasha had expressly provided for the occasion."
     },
     {
       "id": "s5-99",
       "sceneId": "s5",
-      "text": "[Footnote 11: *Mente.* See Note 2, p. 21.]"
+      "text": "Note: *Mente.* See Note 2, p. 21."
     },
     {
       "id": "s5-100",
@@ -2044,17 +2044,17 @@
     {
       "id": "s7-10",
       "sceneId": "s7",
-      "text": "\"My brave fellows,\"--the Pasha addresses his troops in a hard, sharp voice--\"you will pitch your tents here! Every one will remain in his place hard by his saddled horse, without laying aside arms or armour. Ferhad Aga[14] with twelve men will go into the village and respectfully ask the magistrate to send hither forty hundredweights of bread, just as much flesh, and double as much hay and oats, at the average price of four asper[15] per pound, neither more nor less.\""
+      "text": "\"My brave fellows,\"—the Pasha addresses his troops in a hard, sharp voice—\"you will pitch your tents here! Every one will remain in his place hard by his saddled horse, without laying aside arms or armour. Ferhad Aga with twelve men will go into the village and respectfully ask the magistrate to send hither forty hundredweights of bread, just as much flesh, and double as much hay and oats, at the average price of four asper per pound, neither more nor less.\""
     },
     {
       "id": "s7-11",
       "sceneId": "s7",
-      "text": "[Footnote 14: *Aga.* An honorary title among the Turks, here equivalent to lieutenant.]"
+      "text": "Note: *Aga.* An honorary title among the Turks, here equivalent to lieutenant."
     },
     {
       "id": "s7-12",
       "sceneId": "s7",
-      "text": "[Footnote 15: *Asper.* A small silver coin worth about fifteen to twenty kreutzers.]"
+      "text": "Note: *Asper.* A small silver coin worth about fifteen to twenty kreutzers."
     },
     {
       "id": "s7-13",
@@ -2494,12 +2494,12 @@
     {
       "id": "s7-100",
       "sceneId": "s7",
-      "text": "\"Not at all. I lead the centre. He too will give a good account of himself. When I was his age I already wore the Nishan[16] order on my breast, and I hope that this time he will not return home without having at least deserved it.\""
+      "text": "\"Not at all. I lead the centre. He too will give a good account of himself. When I was his age I already wore the Nishan order on my breast, and I hope that this time he will not return home without having at least deserved it.\""
     },
     {
       "id": "s7-101",
       "sceneId": "s7",
-      "text": "[Footnote 16: *Nishan Order.* A Turkish order of merit for valour, instituted by Selim III. It consisted of a gold medallion bearing the Sultan's effigy.]"
+      "text": "Note: *Nishan Order.* A Turkish order of merit for valour, instituted by Selim III. It consisted of a gold medallion bearing the Sultan's effigy."
     },
     {
       "id": "s7-102",
@@ -3189,12 +3189,12 @@
     {
       "id": "s9-31",
       "sceneId": "s9",
-      "text": "\"Should I not also call out the provincial banderia[17]?\" inquired Apafi."
+      "text": "\"Should I not also call out the provincial banderia?\" inquired Apafi."
     },
     {
       "id": "s9-32",
       "sceneId": "s9",
-      "text": "[Footnote 17: *Banderia.* The mounted gentry of the county.]"
+      "text": "Note: *Banderia.* The mounted gentry of the county."
     },
     {
       "id": "s9-33",
@@ -3534,12 +3534,12 @@
     {
       "id": "s9-100",
       "sceneId": "s9",
-      "text": "\"Be easy on that score. The commanders of the Turkish troops in Transylvania have received firmans[18] ordering them to instantly rejoin the army of the Grand Vizier at Érsekújvár. Kucsuk too has doubtless received such a firman.\""
+      "text": "\"Be easy on that score. The commanders of the Turkish troops in Transylvania have received firmans ordering them to instantly rejoin the army of the Grand Vizier at Érsekújvár. Kucsuk too has doubtless received such a firman.\""
     },
     {
       "id": "s9-101",
       "sceneId": "s9",
-      "text": "[Footnote 18: *Firman.* A decree issued by the Sultan and proclaimed by the Grand Vizier.]"
+      "text": "Note: *Firman.* A decree issued by the Sultan and proclaimed by the Grand Vizier."
     },
     {
       "id": "s9-102",
@@ -3549,12 +3549,12 @@
     {
       "id": "s9-103",
       "sceneId": "s9",
-      "text": "\"A similar mandate is already on its way to you from the Divan,[19] and by pretending that this mandate has already reached you, it will be easy to induce the Pasha in a friendly way to raise the siege of Klausenburg.\""
+      "text": "\"A similar mandate is already on its way to you from the Divan, and by pretending that this mandate has already reached you, it will be easy to induce the Pasha in a friendly way to raise the siege of Klausenburg.\""
     },
     {
       "id": "s9-104",
       "sceneId": "s9",
-      "text": "[Footnote 19: *Divan.* The Sultan's council.]"
+      "text": "Note: *Divan.* The Sultan's council."
     },
     {
       "id": "s9-105",
@@ -3769,12 +3769,12 @@
     {
       "id": "s9-147",
       "sceneId": "s9",
-      "text": "\"We have commanded our treasurer,\" said the Prince, \"to pay to you out of our privy purse three *marias*[20] for the work which you have handed to us.\""
+      "text": "\"We have commanded our treasurer,\" said the Prince, \"to pay to you out of our privy purse three *marias* for the work which you have handed to us.\""
     },
     {
       "id": "s9-148",
       "sceneId": "s9",
-      "text": "[Footnote 20: *Maria.* An old Hungarian coin worth about thirty-five kreutzers.]"
+      "text": "Note: *Maria.* An old Hungarian coin worth about thirty-five kreutzers."
     },
     {
       "id": "s9-149",
@@ -4184,12 +4184,12 @@
     {
       "id": "s10-59",
       "sceneId": "s10",
-      "text": "Stretched out to her full length upon the ottoman lies Corsar Beg's favourite odalisk[21] Azrael. Beneath her snow-white elbows, left bare by the loose-falling, laced sleeves of her ample kaftan, lies a living panther, like a bright speckled cushion, licking his glossy skin, and playing like a young kitten with his mistress's jasper-black locks which descend upon his head."
+      "text": "Stretched out to her full length upon the ottoman lies Corsar Beg's favourite odalisk Azrael. Beneath her snow-white elbows, left bare by the loose-falling, laced sleeves of her ample kaftan, lies a living panther, like a bright speckled cushion, licking his glossy skin, and playing like a young kitten with his mistress's jasper-black locks which descend upon his head."
     },
     {
       "id": "s10-60",
       "sceneId": "s10",
-      "text": "[Footnote 21: *Odalisk*, from Turkish Odalyk = chamber-maid. Applied particularly to the chief concubines of the Sultan.]"
+      "text": "Note: *Odalisk*, from Turkish Odalyk = chamber-maid. Applied particularly to the chief concubines of the Sultan."
     },
     {
       "id": "s10-61",
@@ -4239,12 +4239,12 @@
     {
       "id": "s10-70",
       "sceneId": "s10",
-      "text": "\"Are we weary then?\" said the beldame to the beautiful odalisk, with a confidential leer, displaying a row of jagged fangs black from sugar-sucking and betel-chewing. \"We find no joy in anything, eh? What! have not the Bayaderes[22] danced amidst a circle of burning tapers? Or has that also lost its charm? Are the Persian silks already shabby and threadbare? Is there no longer any flavour in the honeycomb or any perfume in the pine-apple? Have the pearls of Ceylon lost their lustre? Do the songs of the Italian eunuchs vex and weary? And has the mirror nothing beautiful to show? Wherefore is the Sun of suns so moody and so impatient? Why should a cloud obscure the heaven of Damanhour? Shall I delight her of the alabaster forehead with a tale? Shall I tell the story of the captive lion which Medzsnun, the immortal poet, has written?\""
+      "text": "\"Are we weary then?\" said the beldame to the beautiful odalisk, with a confidential leer, displaying a row of jagged fangs black from sugar-sucking and betel-chewing. \"We find no joy in anything, eh? What! have not the Bayaderes danced amidst a circle of burning tapers? Or has that also lost its charm? Are the Persian silks already shabby and threadbare? Is there no longer any flavour in the honeycomb or any perfume in the pine-apple? Have the pearls of Ceylon lost their lustre? Do the songs of the Italian eunuchs vex and weary? And has the mirror nothing beautiful to show? Wherefore is the Sun of suns so moody and so impatient? Why should a cloud obscure the heaven of Damanhour? Shall I delight her of the alabaster forehead with a tale? Shall I tell the story of the captive lion which Medzsnun, the immortal poet, has written?\""
     },
     {
       "id": "s10-71",
       "sceneId": "s10",
-      "text": "[Footnote 22: *Bayaderes.* Indian singing and dancing girls. A Portuguese word.]"
+      "text": "Note: *Bayaderes.* Indian singing and dancing girls. A Portuguese word."
     },
     {
       "id": "s10-72",
@@ -4524,12 +4524,12 @@
     {
       "id": "s10-127",
       "sceneId": "s10",
-      "text": "\"Oglan,[23] thou shalt go with us and keep watch, and if we fall in with a wild beast, thou shalt defend us.\""
+      "text": "\"Oglan, thou shalt go with us and keep watch, and if we fall in with a wild beast, thou shalt defend us.\""
     },
     {
       "id": "s10-128",
       "sceneId": "s10",
-      "text": "[Footnote 23: *Oglan*, the Turkish for boy.]"
+      "text": "Note: *Oglan*, the Turkish for boy."
     },
     {
       "id": "s10-129",
@@ -4644,12 +4644,12 @@
     {
       "id": "s11-1",
       "sceneId": "s11",
-      "text": "Several years have elapsed since Apafi became a Prince. We have reached that period when the unexpected death of Nicolas Zrinyi dissolved the faction of the malcontent Hungarians, compelling most of them to emigrate into Transylvania, which land, owing to the ceaseless antagonism of the German Emperor and the Turkish Sultan, was allowed to enjoy an independent government. It paid indeed a tribute to the Sublime Porte; but it adopted what measures it chose in its own Diet, and if the Tartars occasionally reduced a few villages to ashes, that was only another proof that they no longer regarded the land as their own property. All the strongholds were in the hands of the Prince. He could keep as many soldiers as his purse would pay for, wage war with whomsoever he could cope, and hoodwink the Turks whenever it pleased him so to do. The Turk had nothing to find fault with, either in the constitution of the land, its peculiar privileges, its patriarchal aristocracy, its Latin language, and its Hungarian dolman; or, again, in its manifold religions and its three distinct[24] and self-governing nationalities. All these things did not trouble him in the least. At most he pitied the poor gentlemen who made such a muddle of affairs of state; but he never made the slightest attempt to initiate them into his own much simpler political system."
+      "text": "Several years have elapsed since Apafi became a Prince. We have reached that period when the unexpected death of Nicolas Zrinyi dissolved the faction of the malcontent Hungarians, compelling most of them to emigrate into Transylvania, which land, owing to the ceaseless antagonism of the German Emperor and the Turkish Sultan, was allowed to enjoy an independent government. It paid indeed a tribute to the Sublime Porte; but it adopted what measures it chose in its own Diet, and if the Tartars occasionally reduced a few villages to ashes, that was only another proof that they no longer regarded the land as their own property. All the strongholds were in the hands of the Prince. He could keep as many soldiers as his purse would pay for, wage war with whomsoever he could cope, and hoodwink the Turks whenever it pleased him so to do. The Turk had nothing to find fault with, either in the constitution of the land, its peculiar privileges, its patriarchal aristocracy, its Latin language, and its Hungarian dolman; or, again, in its manifold religions and its three distinct and self-governing nationalities. All these things did not trouble him in the least. At most he pitied the poor gentlemen who made such a muddle of affairs of state; but he never made the slightest attempt to initiate them into his own much simpler political system."
     },
     {
       "id": "s11-2",
       "sceneId": "s11",
-      "text": "[Footnote 24: *Viz.* the Saxons, the Szeklers, and the Magyars. The Wallachs simply cultivated the soil.]"
+      "text": "Note: *Viz.* the Saxons, the Szeklers, and the Magyars. The Wallachs simply cultivated the soil."
     },
     {
       "id": "s11-3",
@@ -4779,12 +4779,12 @@
     {
       "id": "s11-28",
       "sceneId": "s11",
-      "text": "\"Yes; there can be no doubt about it,\" continued the Prince. \"I recollect reading somewhere--in Dion Cassius, I think--that the Romans, after the fall of Decebalus,[25] had commemorative medallions struck off with Dacian inscriptions, and the figure of a decapitated man on the reverse. Don't you see the emblem?\""
+      "text": "\"Yes; there can be no doubt about it,\" continued the Prince. \"I recollect reading somewhere—in Dion Cassius, I think—that the Romans, after the fall of Decebalus, had commemorative medallions struck off with Dacian inscriptions, and the figure of a decapitated man on the reverse. Don't you see the emblem?\""
     },
     {
       "id": "s11-29",
       "sceneId": "s11",
-      "text": "[Footnote 25: *Decebalus*. King of Dacia during the reigns of Domitian, Nerva, and Trajan.]"
+      "text": "Note: *Decebalus*. King of Dacia during the reigns of Domitian, Nerva, and Trajan."
     },
     {
       "id": "s11-30",
@@ -4849,12 +4849,12 @@
     {
       "id": "s11-42",
       "sceneId": "s11",
-      "text": "\"My master, the gracious Kuban Khan, bids me say to thee, O Prince of the Giaours, that thou art a perjured, false, and faithless man. Thou didst swear by thy honour that we should be good neighbours, and how hast thou kept thy word? It chanced last year that we traversed the Saxon[26] land, and visited those towns whose names no true believer can pronounce, to collect the usual yearly tribute. They were ever good payers, but some among them chancing to lag behind with their contributions were, by the order of the most gracious Khan, instantly reduced to ashes that they might learn to behave better another time. And perchance thou dost fancy that they amended their evil ways? Not at all. For when we visited them again this year, we found the charred and naked walls as we had left them the year before: the unbelieving dogs had traitorously fled away. Wherefore my gracious master, the mighty Kuban Khan, bids me ask thee what manner of prince thou art that dost suffer these unbelieving dogs to so forsake their towns and make fools of us. When we came at other times, the hay was housed, the corn thrashed, the cattle stalled--and this time we find nought but weeds, and therein hares and other unclean beasts which ye unbelievers delight to eat, and none of the towns built up again, so that we could take no vengeance. Look to it, then, if thou wouldst not draw down upon thy head the wrath of the mighty Khan, look to it that thou commandest this runaway people to return to its towns that we may reckon with them; and in the meantime bid the remaining Saxon towns, which have faithlessly environed their houses with impregnable walls, that they open their gates to us, otherwise we will visit thee in Klausenburg itself with fire and sword, and will not leave thee one stone upon another.\""
+      "text": "\"My master, the gracious Kuban Khan, bids me say to thee, O Prince of the Giaours, that thou art a perjured, false, and faithless man. Thou didst swear by thy honour that we should be good neighbours, and how hast thou kept thy word? It chanced last year that we traversed the Saxon land, and visited those towns whose names no true believer can pronounce, to collect the usual yearly tribute. They were ever good payers, but some among them chancing to lag behind with their contributions were, by the order of the most gracious Khan, instantly reduced to ashes that they might learn to behave better another time. And perchance thou dost fancy that they amended their evil ways? Not at all. For when we visited them again this year, we found the charred and naked walls as we had left them the year before: the unbelieving dogs had traitorously fled away. Wherefore my gracious master, the mighty Kuban Khan, bids me ask thee what manner of prince thou art that dost suffer these unbelieving dogs to so forsake their towns and make fools of us. When we came at other times, the hay was housed, the corn thrashed, the cattle stalled—and this time we find nought but weeds, and therein hares and other unclean beasts which ye unbelievers delight to eat, and none of the towns built up again, so that we could take no vengeance. Look to it, then, if thou wouldst not draw down upon thy head the wrath of the mighty Khan, look to it that thou commandest this runaway people to return to its towns that we may reckon with them; and in the meantime bid the remaining Saxon towns, which have faithlessly environed their houses with impregnable walls, that they open their gates to us, otherwise we will visit thee in Klausenburg itself with fire and sword, and will not leave thee one stone upon another.\""
     },
     {
       "id": "s11-43",
       "sceneId": "s11",
-      "text": "[Footnote 26: *Saxons*. Geza II. (1141-1161) planted in Transylvania a German colony to clear the forests and till the lands. These so-called Saxons have survived to the present day, and reside chiefly at Hermannstadt.]"
+      "text": "Note: *Saxons*. Geza II. (1141-1161) planted in Transylvania a German colony to clear the forests and till the lands. These so-called Saxons have survived to the present day, and reside chiefly at Hermannstadt."
     },
     {
       "id": "s11-44",
@@ -5134,12 +5134,12 @@
     {
       "id": "s11-99",
       "sceneId": "s11",
-      "text": "Apafi carefully examined all the corners of the handkerchief one after the other. Each had a different device embroidered on it--here a wreath of oak-leaves, there a trophy, in the third a Turkish scimitar, an Hungarian sabre, and a French sword bound together by a ribbon. At last he came to the fourth corner, where, beneath a princely coronet, was embroidered the word *Apafiné*.[27]"
+      "text": "Apafi carefully examined all the corners of the handkerchief one after the other. Each had a different device embroidered on it—here a wreath of oak-leaves, there a trophy, in the third a Turkish scimitar, an Hungarian sabre, and a French sword bound together by a ribbon. At last he came to the fourth corner, where, beneath a princely coronet, was embroidered the word *Apafiné*."
     },
     {
       "id": "s11-100",
       "sceneId": "s11",
-      "text": "[Footnote 27: *Apafiné* = Lady Apafi. The \"né\" is a feminine suffix.]"
+      "text": "Note: *Apafiné* = Lady Apafi. The \"né\" is a feminine suffix."
     },
     {
       "id": "s11-101",
@@ -5329,12 +5329,12 @@
     {
       "id": "s11-138",
       "sceneId": "s11",
-      "text": "\"Have I then spoken one word to the Prince?\" asked Banfi, shrugging his shoulders. \"How can I even reach his Highness when you are always standing in the way? I am and always will be the enemy of those who have no right whatever to stand on the steps of the throne, and you are one of them, Master Michael Teleki. Oh, don't imagine that the reasons which make you so enthusiastic in the Hungarian cause are hidden from me. You are not content with being the first in Transylvania after the Prince; you would fain become Palatine of Hungary[28] as well. Ha! ha! how you all befool one another. The French promise aid to the Hungarians; the Hungarians promise Teleki the dignity of Palatine; Teleki promises Apafi a kingly crown, and ye lie, the whole lot of you; ye deceive and are deceived.\""
+      "text": "\"Have I then spoken one word to the Prince?\" asked Banfi, shrugging his shoulders. \"How can I even reach his Highness when you are always standing in the way? I am and always will be the enemy of those who have no right whatever to stand on the steps of the throne, and you are one of them, Master Michael Teleki. Oh, don't imagine that the reasons which make you so enthusiastic in the Hungarian cause are hidden from me. You are not content with being the first in Transylvania after the Prince; you would fain become Palatine of Hungary as well. Ha! ha! how you all befool one another. The French promise aid to the Hungarians; the Hungarians promise Teleki the dignity of Palatine; Teleki promises Apafi a kingly crown, and ye lie, the whole lot of you; ye deceive and are deceived.\""
     },
     {
       "id": "s11-139",
       "sceneId": "s11",
-      "text": "[Footnote 28: *Palatine* (Hungarian: \"*Nador*\"). The Palatine was the highest dignitary in Hungary after the King. The dignity was instituted soon after the year 1000, but since 1848 has been found incompatible with modern parliamentary government.]"
+      "text": "Note: *Palatine* (Hungarian: \"*Nador*\"). The Palatine was the highest dignitary in Hungary after the King. The dignity was instituted soon after the year 1000, but since 1848 has been found incompatible with modern parliamentary government."
     },
     {
       "id": "s11-140",
@@ -6019,12 +6019,12 @@
     {
       "id": "s14-3",
       "sceneId": "s14",
-      "text": "From time to time they met a Wallachian peasant reviling the team of sluggish oxen spanned to his huge wagon, and vainly endeavouring to make them quicken their pace; then there were ponds to be waded, where half-naked gipsy bands, in picturesque rags, were washing gold-dust out of the sand, and stared at the Tartar as if he were a wild beast; here and there, in the mossy hollow of a wayside tree, stood an icon, the pale, weather-worn gilding of which being all that remained of its once gorgeous colouring; in the worm-eaten niche stood the *pomana*,[30] a pitcher of pure spring water which the traditional piety of the young Wallachian maidens had placed there for the refreshment of thirsty travellers."
+      "text": "From time to time they met a Wallachian peasant reviling the team of sluggish oxen spanned to his huge wagon, and vainly endeavouring to make them quicken their pace; then there were ponds to be waded, where half-naked gipsy bands, in picturesque rags, were washing gold-dust out of the sand, and stared at the Tartar as if he were a wild beast; here and there, in the mossy hollow of a wayside tree, stood an icon, the pale, weather-worn gilding of which being all that remained of its once gorgeous colouring; in the worm-eaten niche stood the *pomana*, a pitcher of pure spring water which the traditional piety of the young Wallachian maidens had placed there for the refreshment of thirsty travellers."
     },
     {
       "id": "s14-4",
       "sceneId": "s14",
-      "text": "[Footnote 30: *Pomana*, or *pomena*. An alms, a voluntary free succour. The etymology is obscure. Some opine that it is a corruption of *per* and *manus*.]"
+      "text": "Note: *Pomana*, or *pomena*. An alms, a voluntary free succour. The etymology is obscure. Some opine that it is a corruption of *per* and *manus*."
     },
     {
       "id": "s14-5",
@@ -6049,12 +6049,12 @@
     {
       "id": "s14-9",
       "sceneId": "s14",
-      "text": "\"Hi! you up there! *ungye méra ista via?*\"[31] cried Clement, in a jargon which was half Latin and half Wallachian."
+      "text": "\"Hi! you up there! *ungye méra ista via?*\" cried Clement, in a jargon which was half Latin and half Wallachian."
     },
     {
       "id": "s14-10",
       "sceneId": "s14",
-      "text": "[Footnote 31: *Ungye méra ista via?* \"Whither goes this road?\" The first two words are Roumanian.]"
+      "text": "Note: *Ungye méra ista via?* \"Whither goes this road?\" The first two words are Roumanian."
     },
     {
       "id": "s14-11",
@@ -6079,12 +6079,12 @@
     {
       "id": "s14-15",
       "sceneId": "s14",
-      "text": "Around the men twined a wreath of young girls, holding one another by the hand, and twirling in a contrary direction. These young and charming forms, with their black, plaited tresses interwoven with pearls and ribbons; their flowered petticoats, cambric smocks, and broad, striped aprons; their tinkling gold spangles, or strings of silver coins about their round necks and their tiny, high-heeled shoes, formed a pleasant contrast to the wild, ferocious figures of the men, with their high sheepskin hats perched upon their shaggy, unkempt hair, their sunburnt, naked necks, greasy *köduröns*,[32] broad brass buckles, and large ox-hide sandals."
+      "text": "Around the men twined a wreath of young girls, holding one another by the hand, and twirling in a contrary direction. These young and charming forms, with their black, plaited tresses interwoven with pearls and ribbons; their flowered petticoats, cambric smocks, and broad, striped aprons; their tinkling gold spangles, or strings of silver coins about their round necks and their tiny, high-heeled shoes, formed a pleasant contrast to the wild, ferocious figures of the men, with their high sheepskin hats perched upon their shaggy, unkempt hair, their sunburnt, naked necks, greasy *köduröns*, broad brass buckles, and large ox-hide sandals."
     },
     {
       "id": "s14-16",
       "sceneId": "s14",
-      "text": "[Footnote 32: *Ködurön.* A rough, fur jacket.]"
+      "text": "Note: *Ködurön.* A rough, fur jacket."
     },
     {
       "id": "s14-17",
@@ -6094,12 +6094,12 @@
     {
       "id": "s14-18",
       "sceneId": "s14",
-      "text": "When the pyre had nearly burnt itself out, the dancers suddenly dispersed, dragged forward a female effigy stuffed with straw and clothed in rags, placed it on two poles, and with loud cries of \"Marcze Záre! Marcze Záre!\"[33] held it over the fire; then, exclaiming in chorus--\"Burn to ashes, accursed Wednesday-evening witch!\" they threw it into the glowing embers. The girls then danced round the fire with cries of joy till the witch was burned, when the men, with a wild yell, rushed among the embers and trod them out."
+      "text": "When the pyre had nearly burnt itself out, the dancers suddenly dispersed, dragged forward a female effigy stuffed with straw and clothed in rags, placed it on two poles, and with loud cries of \"Marcze Záre! Marcze Záre!\" held it over the fire; then, exclaiming in chorus—\"Burn to ashes, accursed Wednesday-evening witch!\" they threw it into the glowing embers. The girls then danced round the fire with cries of joy till the witch was burned, when the men, with a wild yell, rushed among the embers and trod them out."
     },
     {
       "id": "s14-19",
       "sceneId": "s14",
-      "text": "[Footnote 33: *Marcze Záre* = Wednesday witch, hags possessing peculiar power on Wednesday evenings, according to the Wallachs.]"
+      "text": "Note: *Marcze Záre* = Wednesday witch, hags possessing peculiar power on Wednesday evenings, according to the Wallachs."
     },
     {
       "id": "s14-20",
@@ -6184,12 +6184,12 @@
     {
       "id": "s14-36",
       "sceneId": "s14",
-      "text": "\"Yes, there used to be an old witch here, worshipful sir,\" said the village elder obsequiously. \"We called her Dainitsa.[34] She had long molested mankind, for her eyes were red. She could, when she chose, bring down such storms upon the village that the wind would take off the roofs of the houses. Once she brought a hailstorm upon us, and God's thunderbolt smote the village in three places. Thereupon the women here grew furious, seized her, and threw her into the pond. But even there the witch railed upon them and said--'Take heed! You will live to beg of me the water which you now give me to drink!' Then the women fished up her dead body from the bottom of the pond, thrust a dart through her heart, buried her in the valley, and rolled a large stone over her grave. But the very next year the witch's curse came upon us. Throughout the summer not a drop of rain fell in our district. Everything was withered up, and our cattle carried off by the murrain. Dainitsa had drunk up all the rain and dew. So we went to her grave, bored a large hole therein, and filled the grave with water till it ran over, shouting at the same time--'Drink thy fill, accursed hag! but lap not up all our rain and dew!' And so at last the great drought came to an end.\""
+      "text": "\"Yes, there used to be an old witch here, worshipful sir,\" said the village elder obsequiously. \"We called her Dainitsa. She had long molested mankind, for her eyes were red. She could, when she chose, bring down such storms upon the village that the wind would take off the roofs of the houses. Once she brought a hailstorm upon us, and God's thunderbolt smote the village in three places. Thereupon the women here grew furious, seized her, and threw her into the pond. But even there the witch railed upon them and said—'Take heed! You will live to beg of me the water which you now give me to drink!' Then the women fished up her dead body from the bottom of the pond, thrust a dart through her heart, buried her in the valley, and rolled a large stone over her grave. But the very next year the witch's curse came upon us. Throughout the summer not a drop of rain fell in our district. Everything was withered up, and our cattle carried off by the murrain. Dainitsa had drunk up all the rain and dew. So we went to her grave, bored a large hole therein, and filled the grave with water till it ran over, shouting at the same time—'Drink thy fill, accursed hag! but lap not up all our rain and dew!' And so at last the great drought came to an end.\""
     },
     {
       "id": "s14-37",
       "sceneId": "s14",
-      "text": "[Footnote 34: *Dainitsa.* She who sings in a low voice, *i. e.* she who mutters spells. From Roumanian *daina*, which is derived from the Hungarian *danolni*, to sing.]"
+      "text": "Note: *Dainitsa.* She who sings in a low voice, *i. e.* she who mutters spells. From Roumanian *daina*, which is derived from the Hungarian *danolni*, to sing."
     },
     {
       "id": "s14-38",
@@ -6344,12 +6344,12 @@
     {
       "id": "s14-68",
       "sceneId": "s14",
-      "text": "\"I know it, sir, I know that it does not concern you; but I must tell you that the pretty Floriza, the belle of the village, was in love with my son. There was not a lovelier maiden in all Wallachia. Such black eyes, such locks reaching down to her feet, such rosy cheeks, such a slim waist were not to be found anywhere else. And then she was so diligent, and she loved my son so dearly! In her chest she had sixteen embroidered chemises which she herself had woven and spun, and round her neck she wore a string of two hundred silver and twenty gold pieces. Sange Moarte never so much as looked at the girl. Vainly did Floriza make him posies, he would not put them in his hat; vainly did she give him kerchiefs, he would not wear them in his breast. Whenever he passed by, the girl would sing such beautiful songs as she sat by the hearth; but Sange Moarte for all that did not linger at her threshold, and yet she loved him so dearly. Often she said to him, when they met together in the lane--'Thou dost never come to see me; perchance thou wouldst not even look at me if I were dead?' Sange Moarte replied--'Then indeed I would look at thee.'--'Then I will soon die,' said the maiden sorrowfully. 'And then will I also visit thee,' said Sange Moarte, and went his way. Does all this weary you, good sir? I shall soon have done. Pretty Floriza lies dead. Her heart broke for grief. There she lies on her bier; the funereal *armindenu*[35] stands in front of the house. When Sange Moarte sees it he will know that Floriza is dead, and will come forth from the woods to look upon his dead sweetheart, as he promised her, for he always keeps his word. Then you can speak with him.\""
+      "text": "\"I know it, sir, I know that it does not concern you; but I must tell you that the pretty Floriza, the belle of the village, was in love with my son. There was not a lovelier maiden in all Wallachia. Such black eyes, such locks reaching down to her feet, such rosy cheeks, such a slim waist were not to be found anywhere else. And then she was so diligent, and she loved my son so dearly! In her chest she had sixteen embroidered chemises which she herself had woven and spun, and round her neck she wore a string of two hundred silver and twenty gold pieces. Sange Moarte never so much as looked at the girl. Vainly did Floriza make him posies, he would not put them in his hat; vainly did she give him kerchiefs, he would not wear them in his breast. Whenever he passed by, the girl would sing such beautiful songs as she sat by the hearth; but Sange Moarte for all that did not linger at her threshold, and yet she loved him so dearly. Often she said to him, when they met together in the lane—'Thou dost never come to see me; perchance thou wouldst not even look at me if I were dead?' Sange Moarte replied—'Then indeed I would look at thee.'—'Then I will soon die,' said the maiden sorrowfully. 'And then will I also visit thee,' said Sange Moarte, and went his way. Does all this weary you, good sir? I shall soon have done. Pretty Floriza lies dead. Her heart broke for grief. There she lies on her bier; the funereal *armindenu* stands in front of the house. When Sange Moarte sees it he will know that Floriza is dead, and will come forth from the woods to look upon his dead sweetheart, as he promised her, for he always keeps his word. Then you can speak with him.\""
     },
     {
       "id": "s14-69",
       "sceneId": "s14",
-      "text": "[Footnote 35: *Armindenu.* A green branch placed in front of houses on the 1st of May and at funerals. Compare Latin *Alimentale*.]"
+      "text": "Note: *Armindenu.* A green branch placed in front of houses on the 1st of May and at funerals. Compare Latin *Alimentale*."
     },
     {
       "id": "s14-70",
@@ -6479,12 +6479,12 @@
     {
       "id": "s14-95",
       "sceneId": "s14",
-      "text": "\"In the Gradina Dracului.\"[36]"
+      "text": "\"In the Gradina Dracului.\""
     },
     {
       "id": "s14-96",
       "sceneId": "s14",
-      "text": "[Footnote 36: *Gradina Dracului*. Garden of the Devil (Roumanian).]"
+      "text": "Note: *Gradina Dracului*. Garden of the Devil (Roumanian)."
     },
     {
       "id": "s14-97",
@@ -7094,12 +7094,12 @@
     {
       "id": "s15-7",
       "sceneId": "s15",
-      "text": "Shortly afterwards the Lord-Lieutenant arrived, escorted by the banderia of half-a-dozen counties. Before and behind him trotted squadrons of horsemen, whose arms and caparisons gleamed with all the colours of the rainbow. There were to be seen horses of every race and every hue--Arabian stallions, Transylvanian full-bloods, little Wallachian ponies, slim English racers, and light-footed Barbary steeds. There were horses with flesh-coloured manes, jewelled bits, variegated reins, and embroidered schabracks. There were all the weapons with which the art of war was then familiar--the slender Damascus blade, the toothed morning-star, the curved *csakany*,[37] the serpentine crease, and those long, gorgeously-fashioned fire-arms which could seldom be discharged more than once; here and there, too, was visible a specimen of those three-edged, six feet long Turkish scimitars, which were just then coming into vogue."
+      "text": "Shortly afterwards the Lord-Lieutenant arrived, escorted by the banderia of half-a-dozen counties. Before and behind him trotted squadrons of horsemen, whose arms and caparisons gleamed with all the colours of the rainbow. There were to be seen horses of every race and every hue—Arabian stallions, Transylvanian full-bloods, little Wallachian ponies, slim English racers, and light-footed Barbary steeds. There were horses with flesh-coloured manes, jewelled bits, variegated reins, and embroidered schabracks. There were all the weapons with which the art of war was then familiar—the slender Damascus blade, the toothed morning-star, the curved *csakany*, the serpentine crease, and those long, gorgeously-fashioned fire-arms which could seldom be discharged more than once; here and there, too, was visible a specimen of those three-edged, six feet long Turkish scimitars, which were just then coming into vogue."
     },
     {
       "id": "s15-8",
       "sceneId": "s15",
-      "text": "[Footnote 37: *Csakany.* An ancient weapon, half hook, half battle-axe, of Tartar origin.]"
+      "text": "Note: *Csakany.* An ancient weapon, half hook, half battle-axe, of Tartar origin."
     },
     {
       "id": "s15-9",
@@ -7139,12 +7139,12 @@
     {
       "id": "s15-16",
       "sceneId": "s15",
-      "text": "\"But just look! just look! how the worthy *armalists*[38] raise him on high and carry him on their shoulders to the door. 'Tis well they do not set him on a litter like a sovereign prince--as if, forsooth, feeding them at his table made him their lord and master!\""
+      "text": "\"But just look! just look! how the worthy *armalists* raise him on high and carry him on their shoulders to the door. 'Tis well they do not set him on a litter like a sovereign prince—as if, forsooth, feeding them at his table made him their lord and master!\""
     },
     {
       "id": "s15-17",
       "sceneId": "s15",
-      "text": "[Footnote 38: *Armalists.* Noblemen who could show *literae armales* in support of their nobility.]"
+      "text": "Note: *Armalists.* Noblemen who could show *literae armales* in support of their nobility."
     },
     {
       "id": "s15-18",
@@ -8234,12 +8234,12 @@
     {
       "id": "s16-71",
       "sceneId": "s16",
-      "text": "The Hungarian forces ranged themselves in battle array, with their backs to the churchyard wall, and awaited the attack. From the end of the street a glittering array of horsemen was seen approaching; it consisted of a picked corps of Spahis[39] on stately Arabs, whose emerald-set saddles sparkled in the firelight. In their midst rode Ali on a slender, snow-white Barbary steed, in his hand flashed a diamond-hilted scimitar; on his head he wore a turbaned helmet; his long black beard fell down over his silver breastplate. On coming within gunshot of Banfi's host, he halted and marshalled his squadrons."
+      "text": "The Hungarian forces ranged themselves in battle array, with their backs to the churchyard wall, and awaited the attack. From the end of the street a glittering array of horsemen was seen approaching; it consisted of a picked corps of Spahis on stately Arabs, whose emerald-set saddles sparkled in the firelight. In their midst rode Ali on a slender, snow-white Barbary steed, in his hand flashed a diamond-hilted scimitar; on his head he wore a turbaned helmet; his long black beard fell down over his silver breastplate. On coming within gunshot of Banfi's host, he halted and marshalled his squadrons."
     },
     {
       "id": "s16-72",
       "sceneId": "s16",
-      "text": "[Footnote 39: *Spahis.* Light Turkish cavalry.]"
+      "text": "Note: *Spahis.* Light Turkish cavalry."
     },
     {
       "id": "s16-73",
@@ -8869,12 +8869,12 @@
     {
       "id": "s17-39",
       "sceneId": "s17",
-      "text": "\"If we are to be the judges in this case,\" interrupted the learned Master Csekalusi, taking up his glass, \"allow me to inform you that the necessary preliminaries[40] have already been observed.\""
+      "text": "\"If we are to be the judges in this case,\" interrupted the learned Master Csekalusi, taking up his glass, \"allow me to inform you that the necessary preliminaries have already been observed.\""
     },
     {
       "id": "s17-40",
       "sceneId": "s17",
-      "text": "[Footnote 40: A banquet was the usual prelude to judicial as to all other public proceedings in Hungary.]"
+      "text": "Note: A banquet was the usual prelude to judicial as to all other public proceedings in Hungary."
     },
     {
       "id": "s17-41",
@@ -8934,12 +8934,12 @@
     {
       "id": "s17-52",
       "sceneId": "s17",
-      "text": "\"It is possible,\" returned Banfi, laughing--for a Hungarian gentleman may jest with his guests but never be rude to them, however much they offend him--\"it is possible that this panther is a descendant of those which came into the land with Árpád,[41] and may therefore be called ancestral panthers.\""
+      "text": "\"It is possible,\" returned Banfi, laughing—for a Hungarian gentleman may jest with his guests but never be rude to them, however much they offend him—\"it is possible that this panther is a descendant of those which came into the land with Árpád, and may therefore be called ancestral panthers.\""
     },
     {
       "id": "s17-53",
       "sceneId": "s17",
-      "text": "[Footnote 41: Árpád, the primeval ancestor of the Hungarian princes, who first led the Magyars into the plains of Hungary. He died in 907. With Hungarians, to come in with Árpád is like our coming over with the Conqueror.]"
+      "text": "Note: Árpád, the primeval ancestor of the Hungarian princes, who first led the Magyars into the plains of Hungary. He died in 907. With Hungarians, to come in with Árpád is like our coming over with the Conqueror."
     },
     {
       "id": "s17-54",
@@ -9164,17 +9164,17 @@
     {
       "id": "s18-5",
       "sceneId": "s18",
-      "text": "A new and mightier race came into it; the former inhabitants were buried beneath the ruins of their palaces and temples, and instead of the proprætor's palace, the gilded and enamelled dwelling of Duke Gyula,[42] with its skittle-shaped roof, towered up like an enchanted castle from the Thousand and One Nights, and on the ruins of the temple of Vesta the pagan forefathers of the Magyars built altars under the open sky, where they worshipped the sun, the stars, and a naked sword. Then the town was called Gyula-Fehervár.[43]"
+      "text": "A new and mightier race came into it; the former inhabitants were buried beneath the ruins of their palaces and temples, and instead of the proprætor's palace, the gilded and enamelled dwelling of Duke Gyula, with its skittle-shaped roof, towered up like an enchanted castle from the Thousand and One Nights, and on the ruins of the temple of Vesta the pagan forefathers of the Magyars built altars under the open sky, where they worshipped the sun, the stars, and a naked sword. Then the town was called Gyula-Fehervár."
     },
     {
       "id": "s18-6",
       "sceneId": "s18",
-      "text": "[Footnote 42: *Gyula* = Julius. The heathen Prince of Transylvania at the end of the tenth century.]"
+      "text": "Note: *Gyula* = Julius. The heathen Prince of Transylvania at the end of the tenth century."
     },
     {
       "id": "s18-7",
       "sceneId": "s18",
-      "text": "[Footnote 43: *Gyula-Fehervár.* White Julius' town.]"
+      "text": "Note: *Gyula-Fehervár.* White Julius' town."
     },
     {
       "id": "s18-8",
@@ -9184,22 +9184,22 @@
     {
       "id": "s18-9",
       "sceneId": "s18",
-      "text": "What sort of church was it?--Nobody can now tell! Two centuries later the Tartars came, levelled town and church with the ground, and put the population to the sword. On their departure they gave to the town the scornful nickname Nigra-Julia.[44]"
+      "text": "What sort of church was it?—Nobody can now tell! Two centuries later the Tartars came, levelled town and church with the ground, and put the population to the sword. On their departure they gave to the town the scornful nickname Nigra-Julia."
     },
     {
       "id": "s18-10",
       "sceneId": "s18",
-      "text": "[Footnote 44: *Nigra Julia.* Black Julia.]"
+      "text": "Note: *Nigra Julia.* Black Julia."
     },
     {
       "id": "s18-11",
       "sceneId": "s18",
-      "text": "Our nation's greatest man, John Hunniady, rebuilt it. Traces of his huge Gothic arches may still be found there. In the crypt, built at the same time, all the Princes of Transylvania were buried in richly-carved sarcophagi. Here *rested* Hunniady himself and his headless son Ladislaus.[45] They *rested* here, but only for a time. Robber-hordes came and scattered the sacred relics, and devastated the church, and the succeeding princes who patched it up again during the Turkish dominion, added to the Gothic groundwork the peculiarities of Arab architecture, serpentine columns, and Moorish arabesques."
+      "text": "Our nation's greatest man, John Hunniady, rebuilt it. Traces of his huge Gothic arches may still be found there. In the crypt, built at the same time, all the Princes of Transylvania were buried in richly-carved sarcophagi. Here *rested* Hunniady himself and his headless son Ladislaus. They *rested* here, but only for a time. Robber-hordes came and scattered the sacred relics, and devastated the church, and the succeeding princes who patched it up again during the Turkish dominion, added to the Gothic groundwork the peculiarities of Arab architecture, serpentine columns, and Moorish arabesques."
     },
     {
       "id": "s18-12",
       "sceneId": "s18",
-      "text": "[Footnote 45: *Ladislaus Hunniady.* The eldest son of the great hero, treacherously beheaded in 1456.]"
+      "text": "Note: *Ladislaus Hunniady.* The eldest son of the great hero, treacherously beheaded in 1456."
     },
     {
       "id": "s18-13",
@@ -9214,22 +9214,22 @@
     {
       "id": "s18-15",
       "sceneId": "s18",
-      "text": "They call it now Karoly-Fehervár.[46]"
+      "text": "They call it now Karoly-Fehervár."
     },
     {
       "id": "s18-16",
       "sceneId": "s18",
-      "text": "[Footnote 46: *Karoly-Fehervár.* White Charles' town. German: Karlsburg.]"
+      "text": "Note: *Karoly-Fehervár.* White Charles' town. German: Karlsburg."
     },
     {
       "id": "s18-17",
       "sceneId": "s18",
-      "text": "At the time in which our story is laid, this town was the place where the Princes of Transylvania used to be consecrated and the Diets to be held. Where the episcopal palace now stands stood then the Prince's residence, restored by John Sigismund,[47] with marble inlaid chambers, and walls covered with battle-pieces in fresco. The great hall where the Diet met was separated from the surrounding chambers by a balustrade of tinted marble. Round about the walls hung the busts of princes and woywodes interspersed with trophies. In front stood the throne covered with purple, and round about it a triumphal baldachin made of banners, shields, and morning-stars."
+      "text": "At the time in which our story is laid, this town was the place where the Princes of Transylvania used to be consecrated and the Diets to be held. Where the episcopal palace now stands stood then the Prince's residence, restored by John Sigismund, with marble inlaid chambers, and walls covered with battle-pieces in fresco. The great hall where the Diet met was separated from the surrounding chambers by a balustrade of tinted marble. Round about the walls hung the busts of princes and woywodes interspersed with trophies. In front stood the throne covered with purple, and round about it a triumphal baldachin made of banners, shields, and morning-stars."
     },
     {
       "id": "s18-18",
       "sceneId": "s18",
-      "text": "[Footnote 47: John Sigismund Zapolya (1540-1571), with whom the line of the Transylvanian princes began.]"
+      "text": "Note: John Sigismund Zapolya (1540-1571), with whom the line of the Transylvanian princes began."
     },
     {
       "id": "s18-19",
@@ -9349,17 +9349,17 @@
     {
       "id": "s18-42",
       "sceneId": "s18",
-      "text": "\"Worshipful and valiant Orders and Estates! The recent events in Hungary are well known to you all, and if you did not know them, you need only cast a glance around you, and the sad, despairing faces with which your assembly has been augmented would tell their own tale. These are our unfortunate Hungarian brethren, once the flower of the nation, now its withered leaves, which the storm has scattered far and wide. You have not denied your kinsmen in their adversity; you have shared hearth and home with them; you have mingled your tears with theirs. But oh! they have not turned to us for the bread of charity, or for womanly lamentations. Thou, Bocskai,[48] thou, Bethlen,[49] whose images now look down upon us from these walls with dumb reproaches; whose victorious, dust-stained banners wave around the throne, why can you not rise up again in our midst to seize those banners, and thunder in the ears of an irresolute generation--The banished beg of you a country, the houseless a home?\""
+      "text": "\"Worshipful and valiant Orders and Estates! The recent events in Hungary are well known to you all, and if you did not know them, you need only cast a glance around you, and the sad, despairing faces with which your assembly has been augmented would tell their own tale. These are our unfortunate Hungarian brethren, once the flower of the nation, now its withered leaves, which the storm has scattered far and wide. You have not denied your kinsmen in their adversity; you have shared hearth and home with them; you have mingled your tears with theirs. But oh! they have not turned to us for the bread of charity, or for womanly lamentations. Thou, Bocskai, thou, Bethlen, whose images now look down upon us from these walls with dumb reproaches; whose victorious, dust-stained banners wave around the throne, why can you not rise up again in our midst to seize those banners, and thunder in the ears of an irresolute generation—The banished beg of you a country, the houseless a home?\""
     },
     {
       "id": "s18-43",
       "sceneId": "s18",
-      "text": "[Footnote 48: Stephan Bocskai, Prince of Transylvania, 1605-1606. A great statesman and warrior.]"
+      "text": "Note: Stephan Bocskai, Prince of Transylvania, 1605-1606. A great statesman and warrior."
     },
     {
       "id": "s18-44",
       "sceneId": "s18",
-      "text": "[Footnote 49: Gabriel Bethlen, the wisest of all the Transylvanian princes. He reigned 1601-1629.]"
+      "text": "Note: Gabriel Bethlen, the wisest of all the Transylvanian princes. He reigned 1601-1629."
     },
     {
       "id": "s18-45",
@@ -9394,27 +9394,27 @@
     {
       "id": "s18-51",
       "sceneId": "s18",
-      "text": "\"As for Sobieski,\" continued Banfi, \"depend upon it he will not attack his present ally the Emperor for our sweet sakes; nor will the Sultan break his oath as lightly as Master Michael Teleki seems to imagine. What then remains for us to do? Call the nomadic Tartars into Hungary, I suppose! The poor Hungarian population would certainly express their gratitude for such assistance as that! Your ideal Hungarian, Nicolas Zrinyi, used to tell a tale which deserves to be handed down to our latest posterity. The devil was carrying a Szekler away on his back. The Szekler's neighbour met and thus accosted him: 'Whither away, gossip?' 'I am being carried to hell,' said he. 'Eh! but that is a very bad job,' returned the other. 'Yes, but it might be much worse,' replied the rogue. 'Just fancy if he were to sit on my back, dig his spurs into me, and compel me to carry him instead!'--Let every one apply this fable as he thinks best. For my part, I cannot quite decide which I fear the most, the enmity of the Emperor or the amity of the Sultan. For, tell me, what will be the end of this war? If we conquer with the aid of the Sultan, Transylvania will become a Turkish Pachalic; if we are conquered, we shall sink into an Austrian province, while now we are a free and independent State by the grace of God! In any case Hungary's fate is bound to improve, and that fate touches my heart quite as much as theirs who fancy they can heal the sick man with the sword. But nothing is to be won in that way. How much blood has not already been shed without the slightest result? Let us try some other way. Surely the Magyar has sense enough to subdue by his intellectual superiority those whom he cannot overcome by force of arms? Subdue your conquerors, I say. You who are second to none in sense, energy, wealth, and the beauty of manliness, why do you not take the highest posts which belong to you of right? If you were to sit where the Pázmáns[50] and the Esterhazys[51] have sat, there would be no room left for a Lobkovich.[52] If instead of fighting petty, fruitless battles now and then, you were to use your intellects and your influence, you might make your land happy without costing her a drop of blood. It rests with you to restore once more the age of Louis the Great,[53] that foreign prince who became enamoured of his adopted people, turned Magyar, and made the nation as great and as powerful as the nation made him. The Estates of Transylvania will undertake to mediate between Hungary and the Emperor, and so get you back your privileges and your possessions. I will be the first to stretch out a helping hand, and assuredly Master Michael Teleki will be the second. If, however, you do not accept this offer, then, I say, beware of what you do. As to the prophecy--Our turn to-day, yours to-morrow! I'll only say, Fear nothing for Transylvania. I'll be bold to say, that whoever invades her by force of arms, will always find a host of equal strength ready to meet him; but let me tell you, that that same host will never be so foolhardy as to invade a foreign land.\""
+      "text": "\"As for Sobieski,\" continued Banfi, \"depend upon it he will not attack his present ally the Emperor for our sweet sakes; nor will the Sultan break his oath as lightly as Master Michael Teleki seems to imagine. What then remains for us to do? Call the nomadic Tartars into Hungary, I suppose! The poor Hungarian population would certainly express their gratitude for such assistance as that! Your ideal Hungarian, Nicolas Zrinyi, used to tell a tale which deserves to be handed down to our latest posterity. The devil was carrying a Szekler away on his back. The Szekler's neighbour met and thus accosted him: 'Whither away, gossip?' 'I am being carried to hell,' said he. 'Eh! but that is a very bad job,' returned the other. 'Yes, but it might be much worse,' replied the rogue. 'Just fancy if he were to sit on my back, dig his spurs into me, and compel me to carry him instead!'—Let every one apply this fable as he thinks best. For my part, I cannot quite decide which I fear the most, the enmity of the Emperor or the amity of the Sultan. For, tell me, what will be the end of this war? If we conquer with the aid of the Sultan, Transylvania will become a Turkish Pachalic; if we are conquered, we shall sink into an Austrian province, while now we are a free and independent State by the grace of God! In any case Hungary's fate is bound to improve, and that fate touches my heart quite as much as theirs who fancy they can heal the sick man with the sword. But nothing is to be won in that way. How much blood has not already been shed without the slightest result? Let us try some other way. Surely the Magyar has sense enough to subdue by his intellectual superiority those whom he cannot overcome by force of arms? Subdue your conquerors, I say. You who are second to none in sense, energy, wealth, and the beauty of manliness, why do you not take the highest posts which belong to you of right? If you were to sit where the Pázmáns and the Esterhazys have sat, there would be no room left for a Lobkovich. If instead of fighting petty, fruitless battles now and then, you were to use your intellects and your influence, you might make your land happy without costing her a drop of blood. It rests with you to restore once more the age of Louis the Great, that foreign prince who became enamoured of his adopted people, turned Magyar, and made the nation as great and as powerful as the nation made him. The Estates of Transylvania will undertake to mediate between Hungary and the Emperor, and so get you back your privileges and your possessions. I will be the first to stretch out a helping hand, and assuredly Master Michael Teleki will be the second. If, however, you do not accept this offer, then, I say, beware of what you do. As to the prophecy—Our turn to-day, yours to-morrow! I'll only say, Fear nothing for Transylvania. I'll be bold to say, that whoever invades her by force of arms, will always find a host of equal strength ready to meet him; but let me tell you, that that same host will never be so foolhardy as to invade a foreign land.\""
     },
     {
       "id": "s18-52",
       "sceneId": "s18",
-      "text": "[Footnote 50: Cardinal Peter Pázmán (1570-1637), a famous Hungarian patriot and statesman.]"
+      "text": "Note: Cardinal Peter Pázmán (1570-1637), a famous Hungarian patriot and statesman."
     },
     {
       "id": "s18-53",
       "sceneId": "s18",
-      "text": "[Footnote 51: The celebrated Nicholas Esterhazy of Galanta, Palatine of Hungary.]"
+      "text": "Note: The celebrated Nicholas Esterhazy of Galanta, Palatine of Hungary."
     },
     {
       "id": "s18-54",
       "sceneId": "s18",
-      "text": "[Footnote 52: Lobkovich (Eusebius Vincent), Leopold I.'s prime minister (1670-73), who attempted to make the Emperor absolute in Hungary.]"
+      "text": "Note: Lobkovich (Eusebius Vincent), Leopold I.'s prime minister (1670-73), who attempted to make the Emperor absolute in Hungary."
     },
     {
       "id": "s18-55",
       "sceneId": "s18",
-      "text": "[Footnote 53: Louis the Great, King of Hungary, 1342-1381.]"
+      "text": "Note: Louis the Great, King of Hungary, 1342-1381."
     },
     {
       "id": "s18-56",
@@ -9604,12 +9604,12 @@
     {
       "id": "s18-93",
       "sceneId": "s18",
-      "text": "\"A King of Hungary, eh?\"[54]"
+      "text": "\"A King of Hungary, eh?\""
     },
     {
       "id": "s18-94",
       "sceneId": "s18",
-      "text": "[Footnote 54: Tököli (Emerich), the most extraordinary Hungarian of his day, famous for his marvellous courage and beauty, his adventures and vicissitudes. In 1682 the Turks proclaimed him Prince of Hungary, and for the next five years he disputed possession of that country with the Emperor. After being twice thrown in prison by the Sultan, he was released and proclaimed Prince of Transylvania, but, after many successes, was finally obliged to fly to Turkey. He was excluded by name from the general amnesty at the Peace of Lovicz, 1697, between the Turks and the Emperor; but the Sultan made him Count of Widdin and one of his chief counsellors. He died in 1705 at Nicomedia in Bithynia. He married Helen Zrinyi, who accompanied him everywhere with heroic fidelity.]"
+      "text": "Note: Tököli (Emerich), the most extraordinary Hungarian of his day, famous for his marvellous courage and beauty, his adventures and vicissitudes. In 1682 the Turks proclaimed him Prince of Hungary, and for the next five years he disputed possession of that country with the Emperor. After being twice thrown in prison by the Sultan, he was released and proclaimed Prince of Transylvania, but, after many successes, was finally obliged to fly to Turkey. He was excluded by name from the general amnesty at the Peace of Lovicz, 1697, between the Turks and the Emperor; but the Sultan made him Count of Widdin and one of his chief counsellors. He died in 1705 at Nicomedia in Bithynia. He married Helen Zrinyi, who accompanied him everywhere with heroic fidelity."
     },
     {
       "id": "s18-95",
@@ -9619,12 +9619,12 @@
     {
       "id": "s19-0",
       "sceneId": "s19",
-      "text": "THE JUS Ligatum.[55]"
+      "text": "THE JUS Ligatum."
     },
     {
       "id": "s19-1",
       "sceneId": "s19",
-      "text": "[Footnote 55: *Jus ligatum.* The right of conspiring secretly against an offender unreachable by the ordinary law.]"
+      "text": "Note: *Jus ligatum.* The right of conspiring secretly against an offender unreachable by the ordinary law."
     },
     {
       "id": "s19-2",
@@ -12269,12 +12269,12 @@
     {
       "id": "s22-35",
       "sceneId": "s22",
-      "text": "The Princess impatiently followed him with her eyes till he was out of sight, and then went up to her room again; but unable to rest there long, she came down once more, sent for her faithful old servant Andrew, and giving him an old piece of green velvet,[56] set him on horseback and sent him after the pantler."
+      "text": "The Princess impatiently followed him with her eyes till he was out of sight, and then went up to her room again; but unable to rest there long, she came down once more, sent for her faithful old servant Andrew, and giving him an old piece of green velvet, set him on horseback and sent him after the pantler."
     },
     {
       "id": "s22-36",
       "sceneId": "s22",
-      "text": "[Footnote 56: Green velvet was the symbol of the princely dignity in Transylvania.]"
+      "text": "Note: Green velvet was the symbol of the princely dignity in Transylvania."
     },
     {
       "id": "s22-37",
@@ -12289,12 +12289,12 @@
     {
       "id": "s22-39",
       "sceneId": "s22",
-      "text": "The same hour, perhaps at the self-same moment, Michael Teleki pressed the hand of his future son-in-law Tököli, and whispered in his ear, \"We are a step nearer.\" And beneath the pressure of the youth's iron hand, the engagement ring which knitted him to Teleki's daughter snapped in two, and Teleki took it as an omen[57] that, one day, the hand of this youth would be stronger than his own."
+      "text": "The same hour, perhaps at the self-same moment, Michael Teleki pressed the hand of his future son-in-law Tököli, and whispered in his ear, \"We are a step nearer.\" And beneath the pressure of the youth's iron hand, the engagement ring which knitted him to Teleki's daughter snapped in two, and Teleki took it as an omen that, one day, the hand of this youth would be stronger than his own."
     },
     {
       "id": "s22-40",
       "sceneId": "s22",
-      "text": "[Footnote 57: The omen was justified when, nearly thirty years later, Tököli defeated and slew Teleki at the battle of Zernyes, 1691.]"
+      "text": "Note: The omen was justified when, nearly thirty years later, Tököli defeated and slew Teleki at the battle of Zernyes, 1691."
     },
     {
       "id": "s22-41",
@@ -12374,12 +12374,12 @@
     {
       "id": "s22-56",
       "sceneId": "s22",
-      "text": "\"*Surge Domine! sententia lethalis adest!*\"[58]"
+      "text": "\"*Surge Domine! sententia lethalis adest!*\""
     },
     {
       "id": "s22-57",
       "sceneId": "s22",
-      "text": "[Footnote 58: Arise, sir, the death-warrant has come!]"
+      "text": "Note: Arise, sir, the death-warrant has come!"
     },
     {
       "id": "s22-58",
@@ -12529,12 +12529,12 @@
     {
       "id": "s22-87",
       "sceneId": "s22",
-      "text": "The tide of history brings other shapes and other leaders to the surface. The fate, the fashion, and the history of Transylvania are no longer the same.[59] The sword-stroke which slew Banfi cut short an epoch only half begun. The body of that dominating form reposes in the crypt of the church at Bethlen, and no one has inherited his spirit."
+      "text": "The tide of history brings other shapes and other leaders to the surface. The fate, the fashion, and the history of Transylvania are no longer the same. The sword-stroke which slew Banfi cut short an epoch only half begun. The body of that dominating form reposes in the crypt of the church at Bethlen, and no one has inherited his spirit."
     },
     {
       "id": "s22-88",
       "sceneId": "s22",
-      "text": "[Footnote 59: The subsequent fortunes of Apafi, Csaky, Teleki, Tököli, Azrael, and Feriz are related in Jokai's second historical novel, *Törökvilag Magyarorzagbán* (*The Turks in Hungary*), which is a sequel to the present story, and ends with the collapse of the Turkish power in Hungary.]"
+      "text": "Note: The subsequent fortunes of Apafi, Csaky, Teleki, Tököli, Azrael, and Feriz are related in Jokai's second historical novel, *Törökvilag Magyarorzagbán* (*The Turks in Hungary*), which is a sequel to the present story, and ends with the collapse of the Turkish power in Hungary."
     },
     {
       "id": "s22-89",
