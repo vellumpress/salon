@@ -561,6 +561,16 @@ const BLURBS: Record<string, string> = {
     "Time out of mind the Shiites and the Sunnites have quarrelled, and a pedlar walks the lanes of Stambul.",
   "the-white-sand-path":
     "A boy shut in the loft watches the white sand road until the path looks like a life.",
+  "liliecronas-home":
+    "On Christmas Day a stubborn girl from a Värmland croft fights a gale toward the parsonage feast.",
+  "doctor-luke-of-the-labrador":
+    "A cluster of islands shelters a Labrador outport, and a doctor comes off the mail boat.",
+  "morrina":
+    "A heads-up before you start: the son seduces the maid, and the book ends with her implied suicide.",
+  "a-happy-boy":
+    "Oyvind, a cotter's son, loves a proud farmer's granddaughter and earns his way across the line.",
+  "the-desjardins":
+    "In the oldest house in Viger, a brother stands up at supper and says he is the Great Napoleon.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",

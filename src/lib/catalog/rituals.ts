@@ -509,6 +509,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Time out of mind, for hundreds and hundreds of years, the struggle between the Shiites and the Sunnites has divided the Moslem World. Chapter I, The Pedlar — the old quarrel of Shiites and Sunnites, and a stranger led through the lanes of Stambul after dark. Skip the title page, the motto, the contents, the translator’s introduction and the publisher’s list; they are out. Mór Jókai, in R. Nisbet Bain’s English. This is the 1901 third edition, as the PG text prints it; no first-edition year is claimed. Thirteen chapters, each with its printed title. The book’s own notes stay, each after its paragraph. Some long paragraphs have been broken into shorter screens; no words are changed. A heads-up before you start: harem and eunuch scenes, the Orientalist framing of its day, a character’s scornful line about Jews, and executions in Chapter VII, “Tulip-Bulbs and Human Heads”. Those are the book’s voices. Soft Jókai, carefully. Soft Stambul, carefully. Istanbul is primary. PG reading-ease 77.2 is fairly easy. No score is invented for this sit.`,
   "the-white-sand-path":
     `I was a devil of a scapegrace in my time. This sit is “The White Sand-Path” only — a boy shut in the loft for his mischief watches the sand road from the window until the path looks like a life. Stop when he is never shut up again. Stijn Streuvels, in Alexander Teixeira de Mattos’s English, from The Path of Life; the English year is 1915. One story this sit. The heading’s “I.” is dropped. “’Twas” and the italic murder stay as printed. A light heads-up: his father beats him with birch rods and a poker, and the boy tells it as bravado. It ends quietly, so it suits bedtime. Soft Streuvels, carefully. Soft Flanders, carefully. Belgium is primary. PG reading-ease 85.5 is for the whole volume. No score is invented for this sit.`,
+  "liliecronas-home":
+    "On Christmas Day, 1880, a pitiless storm raged over Lövsjö (Green Lake) District in Värmland. Chapter I, The Storm-Wind — on Christmas Day a stubborn girl from a Värmland croft drags her mother and brother through a gale toward the parsonage feast. The title page, the frontispiece and the contents are out; the book starts at Chapter I. Selma Lagerlöf, in Anna Barwell’s English; the English year is 1914. Eighteen chapters, each with its printed title. The year 1880 in the first line is as printed. The book’s two small notes stay, each after its paragraph. Some long paragraphs have been broken into shorter screens; no words are changed. A household saga of a pastor, his daughter, a stepmother and the fiddler Liliecrona’s home, told by a storyteller who talks straight to you. Soft Lagerlöf, carefully. Soft Värmland, carefully. Sweden is primary. The lead is this book, not Doctor Luke, not Morriña, and not A Happy Boy. PG reading-ease 85.6 is easy. No score is invented for this sit.",
+  "doctor-luke-of-the-labrador":
+    "A cluster of islands, lying off the cape, made the shelter of our harbour. Chapter I, Our Harbour — three islands and a cape shelter a Labrador outport that its folk love because they know no kinder land. Skip the frontispiece, the sketch map, the dedication, the note to the reader and the publisher’s ads; they are out. Norman Duncan’s 1904 novel; the year is the copyright line in the text. Twenty-eight chapters, each with its printed title: a boy’s memory of his mother, old Skipper Tommy’s fairy tales, and the doctor who comes off the mail boat and stays. The outport talk stays as printed. Very easy, with sea weather all through. Soft Duncan, carefully. Soft Labrador, carefully. Canada is primary. PG reading-ease 89.8 is easy. No score is invented for this sit.",
+  "morrina":
+    "A heads-up before you start: the son seduces the maid, and the book ends with her implied suicide. A Madrid flat in the 1880s: a doting mother, her student son, and the homesick Galician maid who comes to serve them. Pardo Bazán tells it with worldly irony.",
+  "a-happy-boy":
+    "His name was Oyvind, and he cried when he was born. Chapter I — Oyvind is born in a cotter’s house under a cliff, with a goat on the roof, and meets Marit on the hill. Skip the publisher’s note and the translator’s preface; they are out. Bjørnstjerne Bjørnson wrote it in 1859–60; this is Rasmus B. Anderson’s English of 1881. Twelve chapters. The songs keep their lines, the credits for their English are dropped, and the book’s two notes stay, each after its paragraph. Some long paragraphs have been broken into shorter screens; no words are changed. A cotter’s son earns his way toward a proud farmer’s granddaughter. Soft Bjørnson, carefully. Soft valley, carefully. Norway is primary. PG reading-ease 86.8 is easy. No score is invented for this sit.",
+  "the-desjardins":
+    "Just at the foot of the hill, where the bridge crossed the Blanche, stood one of the oldest houses in Viger. This sit is “The Desjardins” only — in the oldest house in Viger, a brother stands up at supper and says he is the Great Napoleon, and his brother and sister decide to be the last of their race. Stop at his winter preparations for the invasion of Russia. Duncan Campbell Scott, from In the Village of Viger; the year is 1896. One story this sit. The small-caps “JUST” is set as “Just”. His madness is treated with tenderness, and it ends quietly, so it suits bedtime. Soft Scott, carefully. Soft Viger, carefully. Canada is primary. PG reading-ease 79.7 is for the whole volume. No score is invented for this sit.",
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1353,6 +1363,12 @@ export const RITUAL_LANES: RitualLane[] = [
       // The White Sand-Path is the Host-only story and sits here only.
       "in-the-mountains",
       "the-white-sand-path",
+      // Mira Wed 30 Sep 2026 POST-#210 CLEAR — Liliecrona's Home leads Next, and sits here.
+      // Doctor Luke and Morriña are not before-sleep. Morriña's ending stays off this lane.
+      // A Happy Boy sits here. The Desjardins is the Host-only story and sits here only.
+      "liliecronas-home",
+      "a-happy-boy",
+      "the-desjardins",
     ],
   },
   {
@@ -1776,6 +1792,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-two-countesses",
       "el-ombu",
       "halil-the-pedlar",
+      // Mira Wed 30 Sep 2026 POST-#210 CLEAR — Liliecrona's Home leads. Never Featured.
+      // LEAD kept — not Doctor Luke, not Morriña, not A Happy Boy.
+      // A Happy Boy is walk and before-sleep. The Desjardins is before-sleep only.
+      "liliecronas-home",
+      "doctor-luke-of-the-labrador",
+      "morrina",
     ],
   },
   {
@@ -2068,6 +2090,11 @@ export const RITUAL_LANES: RitualLane[] = [
       // The Two Countesses and Halil the Pedlar sit here.
       "the-two-countesses",
       "halil-the-pedlar",
+      // Mira Wed 30 Sep 2026 POST-#210 CLEAR — Liliecrona's Home leads Next, and is not on this lane.
+      // Morriña is unwind only. The Desjardins is before-sleep only.
+      // Doctor Luke and A Happy Boy sit here.
+      "doctor-luke-of-the-labrador",
+      "a-happy-boy",
     ],
   },
   {
@@ -2182,6 +2209,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "el-ombu": 7,
   "halil-the-pedlar": 8,
   "the-white-sand-path": 10,
+  "liliecronas-home": 10,
+  "doctor-luke-of-the-labrador": 4,
+  "morrina": 8,
+  "a-happy-boy": 7,
+  "the-desjardins": 10,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
   "all-quiet-on-the-western-front": 2,

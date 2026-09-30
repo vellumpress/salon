@@ -1,0 +1,101 @@
+{
+  "id": "morrina",
+  "title": "Morriña (Homesickness)",
+  "author": "Emilia Pardo Bazán (tr. Mary J. Serrano)",
+  "year": "1891",
+  "note": "Project Gutenberg 54742 (tr. Mary J. Serrano, per PG). Whole novel, Chapter I–XXIII (PG l.72–4991). Title page, imprint, the 30 illustration tags and their captions, 'The End' and the publisher's list out; the sentence the first caption split (l.82–86) is rejoined. The book's footnote [A] kept as a Note: line after its paragraph. Spanish words kept in italics. Long paragraphs soft-broken into separate screens; no words changed. EN 1891 (PG text: Cassell, New York, 'Copyright, 1891'). PG reading-ease 68.3 — no invented Launch rank. Place: Madrid, Spain (Calle Ancha de San Bernardo). Sits: unwind. Host intro: A Madrid flat in the 1880s: a doting mother, her student son, and the homesick Galician maid who comes to serve them. Pardo Bazán tells it with worldly irony. A heads-up before you start: the son seduces the maid, and the book ends with her implied suicide.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Madrid, Spain",
+      "place": "Chapter I · Madrid, Spain",
+      "reentry": "If the apartment which Doña Nogueira de Pardiñas and her only son Rogelio occupied in Madrid was neither the sunniest nor the most spacious to be found in the city, it possessed, on the other hand, th",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "If the apartment which Doña Nogueira de Pardiñas and her only son Rogelio occupied in Madrid was neither the sunniest nor the most spacious to be found in the city, it possessed, on the other hand, the inestimable advantage of being situated in the Calle Ancha de San Bernardo, so close to the Central University that to live in it was, as one might say, the same as living in the university itself."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Seated in her leather-covered easy-chair by the window, widening and narrowing the stocking she was knitting without once looking at it, Señora de Pardiñas would follow her adored boy with her gaze, which, traversing space and passing through the solid substance of the walls, accompanied him to the very lecture-room of the university. She saw him when he went in and when he came out—she noticed whether he stopped to chat with any one, whom he talked to, whether he laughed; she knew who his companions were, whom he liked and whom he disliked; who were the industrious students and whom the idle ones; who were regular and who were irregular in their attendance. She was familiar, too, with the faces of the professors, and made a study of their expression and their manner of returning the salutations of the pupils, drawing from external signs important psychological deductions bearing on the problem of the examinations: \"Ah, there comes old Contreras already, the Professor of Procedure. How amiable he looks! what a saint-like face he has. How slowly he walks, poor man."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "'Tis easy to see that he suffers from rheumatism as I do. The more's the pity! I like him on that account, and not on that account alone, but because I know that he is indulgent and that he will give Rogelio a good mark in his examination. Now comes Ruiz del Monte, so stiff and so conceited. He looks as if he were made all in one piece. Poor us! Neither favor nor influence nor anything else is of any use with him. He would have the boys know the studies as well as he does himself. If he wants that let him give them his place in the college—and the pay as well. Ah, here we have Señor de Lastra. He stoops a little. What comical caricatures the boys make of him in the class! And he is familiar to a fault. There he is now clapping Benito Diaz, Rogelio's great friend, on the back. He looks to me like a good easy-going man. My blessing upon him! I don't know what there is to be gained by torturing poor boys and distressing their parents.\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Pausing in her soliloquy, the good lady ran her knitting needle through the coil of her hair, now turning gray, and scratched her head lightly with it. Suddenly her withered cheek flushed brightly as if a breath of youth had blown across it."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"Ah, there is Rogelio,\" she cried."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "The student emerged from the building, wrapped in his crimson plush cloak, his low, broad-brimmed hat slightly tipped to one side, his glance fixed, from the first moment, on the window at which his mother was sitting. Generally he would give her a smile, but sometimes, assuming a serious air, he would raise his hand to his hat, and, with the stiff movement of a marionette, mimic the salutation of the dandies of the Retiro. The mother would return his salutation, shaking her hand threateningly at him, convulsed with laughter, as if this were not a jest of almost daily repetition. Then the boy would stop to chat for a few minutes with some of his fellow-students; he would exchange a word in passing with the match-vender, the ticket-vender, the orange-girl at the corner, and the clerks of the neighboring shops, winding up with some half-jesting compliment to the servants who stood chatting at the doors; and finally he would ascend the steps of his own house, where Doña Aurora was already waiting for him in the hall. His first words were generally in the following strain:"
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"*Mater amabilis*, set quickly before your offspring corporeal sustenance. I have an appetite that I don't know where I got it. Ah-h-h! If the beefsteak does not soon make its appearance, dreadful scenes of cannibalism will be enacted.\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"Yes,\" his mother would answer, smiling, \"and it will all amount to your eating a couple of olives and a morsel of meat. Go away with you, you humbug! You have the appetite of a bird.\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "The room in which they liked best to sit was neither the parlor—which was almost always solitary and deserted,—nor Rogelio's study, nor his mother's room; it was the dining-room, which adjoined the reception-room. Here was the clock which informed Rogelio, negligent about winding his watch, when it was time to go to college; here the little table on which stood the work-basket with the unfinished stocking buried under a pile of numbers of *Madrid Comico*, *Los Madriles*, and all the *Ilustraciones* that had ever been published; here the low, broad, comfortable sofa and the capacious easy-chairs; here, on the sideboard, refreshments for the inner man—a bottle of sherry and some biscuits, or, in summer, fruits, which the boy ate with enjoyment; here, in a glass, the branch of fresh lilacs, or the pinks which he wore in his button-hole; here the earthen water jar exuding moisture from its sides, and the bottle of syrup of iron, and the Japanese fan, and the unfinished novel, with the marker between the leaves, and the text-book, worn more by the ill-humor and displeasure with which it was handled than by use; and finally, the little fireplace that had so good a draught, which made up for the icy class-rooms, and the dilapidated courts and passages of the temple of Minerva. With what enjoyment did Rogelio go to warm himself by the fire before taking off his cloak when he came in from college, stretching out his hands, cold as icicles, to the blaze. The genial heat thawed his stiffened muscles, quickened his impoverished blood, and gave him strength to ask, with a comical pretense at scolding and coaxing entreaties mingled, for his breakfast, almost regretting the promptness with which it was served, since it left him a subject the less for his humorous jests. Before it had crossed the threshold of the door, Doña Aurora was already crying out:"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"Fausta! Pepa! Here is the señorito; bring the breakfast. Quick! Hurry! Child, your syrup of iron. Shall I count your bitter drops for you!\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"What more bitterness do I want than the pangs of starvation! Here, you who preside over the culinary department, may I be permitted to know with what delicacies you intend to assuage to-day the pangs of hunger that are gnawing my vitals? Have you prepared for me celestial ambrosia, nectar from the calyxes of the flowers, or tripe and snails from the Petit Fornos? Relieve me from this cruel uncertainty?"
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "(Suppressed laughter in the kitchen.)"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"Bring this crazy boy his breakfast, so that he may hold his tongue!\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "Mother and son being seated at the table, the drops counted out and drank, the steaming soup was set before them, followed by the couple of fried eggs, round and crisp-edged, and the beefsteak, invariably sent in from the neighboring *café*. Only on this condition would Rogelio eat it. No matter what pains Fausta, the Biscayan, might take, she could never succeed in supplanting the cook of the *café*. The succulent piece of underdone steak would come between two plates, with its accompaniment of fried potatoes, tender, juicy, and appetizing. While Rogelio cut and ate the meat, his mother watched him eagerly and anxiously, as if she had never before seen this delicate youth, so different from the ideal of a Galician mother. Twenty summers run to seed, a pale, dull complexion, eyes black and sparkling, but with the eyelids drooping, and surrounded by purple rings, a sarcastic mouth, the lips delicately curved and somewhat pale, shaded by a light mustache, hair smooth and silky, a head narrow at the temples, a slender throat, the back of the neck slightly hollowed in, flat wrists and a graceful shape made up a figure still immature, interrupted in its development by the *chlorosis* which is the result of a hothouse existence in which the plant that requires the pure, free air, dwindles and wilts."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "So that Doña Aurora did not enjoy a moment's peace of mind because of this son who, if not exactly sickly, was of a nervous and delicate constitution, as was evidenced by his moods of childlike gayety followed by periods of causeless gloom. Therefore it was that she watched him at his meals as eagerly as if every mouthful he swallowed were entering her own stomach after a two days' fast. In thought she said to the succulent meat: Go, strengthen the child. Give him muscle, give him blood, give him bone. Make him robust, manly, independent. Make him grow to be like a young bull—although he should have all the savageness of one. No matter, all the better, I only wish it might be so! Consider that all there is left me in the world now to love, is that puny boy. And she would say aloud to Rogelio:"
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"Eat, child, eat; flesh makes flesh.\""
+    }
+  ]
+}
