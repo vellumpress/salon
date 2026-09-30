@@ -33,7 +33,7 @@
       "id": "s3",
       "title": "By the Roadside the Child Stood",
       "place": "By the Roadside the Child Stood",
-      "reentry": "The time is Christmas Eve. Before the close of the afternoon Reinhard and some other students were sitting together at an old oak table in the Ratskeller.[2]",
+      "reentry": "The time is Christmas Eve. Before the close of the afternoon Reinhard and some other students were sitting together at an old oak table in the Ratskeller.",
       "prompt": "A word from this stretch."
     },
     {
@@ -158,12 +158,12 @@
     {
       "id": "s1-7",
       "sceneId": "s1",
-      "text": "So they both went in and sat down on the new bench. Elisabeth took the little seed-rings out of her apron and strung them on long threads. Reinhard began his tale: \"There were once upon a time three spinning-women...\"[1]"
+      "text": "So they both went in and sat down on the new bench. Elisabeth took the little seed-rings out of her apron and strung them on long threads. Reinhard began his tale: \"There were once upon a time three spinning-women...\""
     },
     {
       "id": "s1-8",
       "sceneId": "s1",
-      "text": "[1] The beginning of one of the best known of Grimm's fairy tales."
+      "text": "Note: The beginning of one of the best known of Grimm's fairy tales."
     },
     {
       "id": "s1-9",
@@ -578,12 +578,12 @@
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "The time is Christmas Eve. Before the close of the afternoon Reinhard and some other students were sitting together at an old oak table in the Ratskeller.[2]"
+      "text": "The time is Christmas Eve. Before the close of the afternoon Reinhard and some other students were sitting together at an old oak table in the Ratskeller."
     },
     {
       "id": "s3-1",
       "sceneId": "s3",
-      "text": "[2] The basement of the Rathaus or Town Hall. This, in almost every German town of importance, has become a restaurant and place of refreshment."
+      "text": "Note: The basement of the Rathaus or Town Hall. This, in almost every German town of importance, has become a restaurant and place of refreshment."
     },
     {
       "id": "s3-2",
@@ -908,12 +908,12 @@
     {
       "id": "s4-10",
       "sceneId": "s4",
-      "text": "\"That a month ago Eric took over his father's second estate by the Immensee.\"[3]"
+      "text": "\"That a month ago Eric took over his father's second estate by the Immensee.\""
     },
     {
       "id": "s4-11",
       "sceneId": "s4",
-      "text": "[3] *i.e.* the 'Lake of the Bees'"
+      "text": "Note: *i.e.* the 'Lake of the Bees'"
     },
     {
       "id": "s4-12",
@@ -1203,12 +1203,12 @@
     {
       "id": "s6-14",
       "sceneId": "s6",
-      "text": "\"God's greeting to you[4], Eric, and thank you for your welcome,\" replied the other."
+      "text": "\"God's greeting to you, Eric, and thank you for your welcome,\" replied the other."
     },
     {
       "id": "s6-15",
       "sceneId": "s6",
-      "text": "[4] This form of salutation is especially common in the south of Germany."
+      "text": "Note: This form of salutation is especially common in the south of Germany."
     },
     {
       "id": "s6-16",
@@ -1433,12 +1433,12 @@
     {
       "id": "s7-4",
       "sceneId": "s7",
-      "text": "To begin with he read some Tyrolese ditties[5] and as he read on he would now and then hum one or other of the lively melodies. A general feeling of cheeriness pervaded the little party."
+      "text": "To begin with he read some Tyrolese ditties and as he read on he would now and then hum one or other of the lively melodies. A general feeling of cheeriness pervaded the little party."
     },
     {
       "id": "s7-5",
       "sceneId": "s7",
-      "text": "[5] Dialectal for *Schnitterhuepfen*, *i.e.* 'reapers' dances,' sung especially in the Tyrol and in Bavaria."
+      "text": "Note: Dialectal for *Schnitterhuepfen*, *i.e.* 'reapers' dances,' sung especially in the Tyrol and in Bavaria."
     },
     {
       "id": "s7-6",
@@ -1453,22 +1453,22 @@
     {
       "id": "s7-8",
       "sceneId": "s7",
-      "text": "Reinhard said: \"They are not made; they grow, they drop from the clouds, they float over the land like gossamer, hither and thither, and are sung in a thousand places at the same time.[6] We discover in these songs our very inmost activities and sufferings: it is as if we all had helped to write them.\""
+      "text": "Reinhard said: \"They are not made; they grow, they drop from the clouds, they float over the land like gossamer, hither and thither, and are sung in a thousand places at the same time. We discover in these songs our very inmost activities and sufferings: it is as if we all had helped to write them.\""
     },
     {
       "id": "s7-9",
       "sceneId": "s7",
-      "text": "[6] These fine cobwebs, produced by field-spiders, have always in the popular mind been connected with the gods. After the advent of Christianity they were connected with the Virgin Mary. The shroud in which she was wrapped after her death was believed to have been woven of the very finest thread, which during her ascent to Heaven frayed away from her body."
+      "text": "Note: These fine cobwebs, produced by field-spiders, have always in the popular mind been connected with the gods. After the advent of Christianity they were connected with the Virgin Mary. The shroud in which she was wrapped after her death was believed to have been woven of the very finest thread, which during her ascent to Heaven frayed away from her body."
     },
     {
       "id": "s7-10",
       "sceneId": "s7",
-      "text": "He took up another sheet: \"I stood on the mountain height...\"[7]"
+      "text": "He took up another sheet: \"I stood on the mountain height...\""
     },
     {
       "id": "s7-11",
       "sceneId": "s7",
-      "text": "[7] An ancient folk-song which treats of a beautiful but poor maiden, who, being unable to marry 'the young count,' retired to a convent."
+      "text": "Note: An ancient folk-song which treats of a beautiful but poor maiden, who, being unable to marry 'the young count,' retired to a convent."
     },
     {
       "id": "s7-12",
@@ -1503,12 +1503,12 @@
     {
       "id": "s7-18",
       "sceneId": "s7",
-      "text": "\"Yes,\" said Eric, \"it is Casper the herdsman; he is driving the heifers home.\"[8]"
+      "text": "\"Yes,\" said Eric, \"it is Casper the herdsman; he is driving the heifers home.\""
     },
     {
       "id": "s7-19",
       "sceneId": "s7",
-      "text": "[8] *Starke* is the southern dialect word for *Faerse*, 'young cow,' 'heifer.'"
+      "text": "Note: *Starke* is the southern dialect word for *Faerse*, 'young cow,' 'heifer.'"
     },
     {
       "id": "s7-20",
@@ -1753,12 +1753,12 @@
     {
       "id": "s8-27",
       "sceneId": "s8",
-      "text": "The morning twilight yet brooded in every corner; the big house-cat stretched its limbs on the straw mat and arched its back against Reinhard's hand, which he unthinkingly held out to it. Outside in the garden the sparrows were already chirping their patter from among the branches, and giving notice to all that the night was now past.[9]"
+      "text": "The morning twilight yet brooded in every corner; the big house-cat stretched its limbs on the straw mat and arched its back against Reinhard's hand, which he unthinkingly held out to it. Outside in the garden the sparrows were already chirping their patter from among the branches, and giving notice to all that the night was now past."
     },
     {
       "id": "s8-28",
       "sceneId": "s8",
-      "text": "[9] Literally, \"sang out pompously, like priests.\" The word seems to have been coined by the author. The English 'patter' is derived from *Pater noster*, and seems an appropriate translation."
+      "text": "Note: Literally, \"sang out pompously, like priests.\" The word seems to have been coined by the author. The English 'patter' is derived from *Pater noster*, and seems an appropriate translation."
     },
     {
       "id": "s8-29",
