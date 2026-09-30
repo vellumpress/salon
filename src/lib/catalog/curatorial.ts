@@ -1140,6 +1140,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-two-countesses",
   "el-ombu",
   "halil-the-pedlar",
+  // Mira Wed 30 Sep 2026 POST-#210 CLEAR — Liliecrona's Home leads Next. Never Featured.
+  // LEAD kept — not Doctor Luke of the Labrador, not Morriña, not A Happy Boy.
+  // The Desjardins is Rituals only (the one story), not this tail.
+  // Wed POST-#206 In the Mountains and the earlier packs stay ahead.
+  "liliecronas-home",
+  "doctor-luke-of-the-labrador",
+  "morrina",
+  "a-happy-boy",
 ] as const;
 
 /**

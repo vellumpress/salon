@@ -1,0 +1,201 @@
+{
+  "id": "liliecronas-home",
+  "title": "Liliecrona's Home",
+  "author": "Selma Lagerlöf (tr. Anna Barwell)",
+  "year": "1914",
+  "note": "Project Gutenberg 76681 (tr. Anna Barwell, per PG). Whole novel, Chapter I–XVIII (PG l.150–7085), each labelled 'Chapter n · <title>' from the contents. Title page, frontispiece, imprint, contents, 'Finis', the printer's line and the transcriber's notes out. The book's two footnotes kept as Note: lines after their paragraphs. '1880' (l.155) kept as printed. Long paragraphs soft-broken into separate screens; no words changed. EN 1914 (E. P. Dutton, New York, per the PG page; the title page reads MCMXIV). PG reading-ease 85.6 — no invented Launch rank. Place: Värmland, Sweden (the Lövsjö district). Sits: unwind / before sleep. Host intro: A household saga from Värmland in Sweden. On Christmas Day a stubborn girl drags her mother and brother through a gale toward the parsonage feast. From there the book follows a pastor, his daughter, a stepmother, and the fiddler Liliecrona's home. The storyteller talks straight to you. Easy and warm.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · The Storm-Wind · Värmland, Sweden",
+      "place": "Chapter I · The Storm-Wind · Värmland, Sweden",
+      "reentry": "On Christmas Day, 1880, a pitiless storm raged over Lövsjö (Green Lake) District in Värmland. It seemed as though the heavens meant to tear up everything on earth and make a clean sweep of it all.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "On Christmas Day, 1880, a pitiless storm raged over Lövsjö (Green Lake) District in Värmland. It seemed as though the heavens meant to tear up everything on earth and make a clean sweep of it all."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Now, do not say that no doubt there have been storms as bad both before and since, and, above all, do not let any of the Lövsjö dwellers hear you, for they have known from their earliest childhood that the like of this storm could never even be imagined."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "They can still count up all the fences that were torn down, all the thatched roofs snatched off, all the cow-houses blown over, so that for days the poor beasts lay buried in the ruins. And they can point to all the places where fire broke out and was fanned by the wind until the whole village was in ashes. And they have been on all the heights and mountain-tops where tree after tree fell, until they stood naked and bare as they are to-day."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "We know, indeed, the common proverb that it is an ill wind that blows nobody good, but no one could believe that it was true of this Christmas storm, for, indeed, it was plainly to be seen that it only brought with it one misfortune after another."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "And I fancy that the one least ready of all to believe that anything good could come from the storm was the \"Little-Maid\" from Koltorp. She was not to be trifled with, this little lass, as she stood that Christmas morning on the edge of the forest, and saw how the air in the valley beneath her was thick and dark with snow and dust and all that the wind was driving before it. Never in all her life, and she was thirteen past, had she met with such a disappointment. As a rule, she could keep up her spirits in toil and trouble, but this was almost more than she could bear. A very little more and the tears would start from the large bright eyes and trickle down over the pale thin little face."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Little-Maid had gone a little beyond the edge of the forest to see what the storm was like, and the wind tore at the handkerchief over her head, buffeted her short white sheepskin jacket, and whipped her homespun skirt so sharply round her legs that it nearly knocked her over."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "She was not alone, her Mother and \"Little-Lad\" were there as well. Both were dressed like Little-Maid, in short white sheepskin jackets and skirts of stiff black homespun. Nor could it well be otherwise, for Little-Maid inherited her clothes from her Mother, and Little-Lad came into possession after her. But there was this difference between them and Little-Maid that, although their clothes were just as warm as hers, they had not gone outside the forest, but still stood in its shelter."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "The Mother and Little-Lad had just the same thin pinched faces as Little-Maid, and the same clever, bright eyes, and they too thought what a misfortune this storm was, and were not far off tears of disappointment either. But they did not look nearly so desperate as she did."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "For you must know she was standing just on the high ground above Beckgorden in the Bro parish, and could follow the long twists and curves of the road leading down to Bro Church. And she saw how the peasant folk who had started to go to church turned back home again. This was all she needed to understand that it would be quite impossible for her Mother and the Little-Lad to walk twelve miles down to Nugord in the Svartsjö parish, where they had meant to eat their Christmas dinner."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "She really couldn't help clenching her fist inside her glove when she realised it. If it had only not been so quiet in the forest, where they lived. If only they had known what the weather was like before they came to the edge of the trees. Then they would never have started from home, and that would have pleased her much better."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "For, you see, there was nothing she felt so contemptible as to turn back, and not be able to go where she wanted."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "If only she had not all the year reckoned on this Christmas Day in Nugord! If only she had not seen before her eyes this minute the big steaming pans, the long tables with their white cloths, and the great dishes stacked high with wild geese. If only she and the Little-Lad had not said to each other whenever Mother had no food to give them: \"When we go to Uncle's Christmas feast in Nugord we shall have as much as we can eat.\" Only to think that they were boiling sweet soup with raisins in it down there, that there was rice-porridge and cakes, jam, coffee, and pastry, and she was not to taste one of them!"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "She was so angry that she really wished she had someone there to vent her anger on. She thought to herself that the storm-wind might have known better than to come just then. It was a holiday, so he was not wanted to turn the mill, and winter, too, when no one wanted his help out on the lake, so he might just as well have taken a rest. But what was the good of telling a storm-wind that?"
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "It was the worst piece of road that she had before her now—down past Helgesäter and up the Broby Hills right on to Löven and the church with the great Parsonage grounds—for the road there went across an open, treeless stretch of land. If they could only get over that and struggle up the Hedeby Hills, all the danger would be over, for, after that, it was nothing but forest."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "It did not look so dreadfully far. She thought they might at least try, for at the worst they could but fail."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "So she was glad whilst her Mother stood thinking, for it was always possible that she might decide to go on. But then she noticed that her Mother turned to go into the forest, and Little-Lad, of course, turned too."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Then Little-Maid began to go in the opposite direction, straight out on to the hill, at first very slowly, but then more and more quickly, for the wind came behind her and almost forced her to run."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "She took good care not to look back for fear her Mother and Little-Lad should beckon to her to turn. She was almost sure they had stopped, and were calling to her, but that need not trouble her, for now that she was really out in the tempest there was such a din and racket that she could hear nothing clearly."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "It was impossible for Mother to run and catch her up, for she had to keep hold of Little-Lad's hand to save him from being blown away, so that she could not get on quickly at all."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "It was not that Little-Maid wanted to turn, for such a thought never entered her head, but she was obliged to confess to herself that she had never dreamt the weather was so bad as this. Over her head there flew great dark birds with fluttering wings that the wind was driving before it with such force that body and wings were swept asunder. She thought she had never seen anything so horrible, until she found out that they were great bundles of straw torn from some roof or other."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "If she took a step against the wind, it rose like a prancing horse and threatened to throw her down, while, if she took a step with it, it shot after her, so that she had to bend knees and back too to stand against its force. She grew so weary of the continual battle that she felt as if she had been dragging a heavy load."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "From the north it came too, as cold as though it had been dancing with death, so strong and sharp that it pierced through sheepskin and homespun and laid its icy fingers on her skin. And although she did not heed such trifles, she felt her toes grow stiff inside her waxed boots and her fingers numb in the woollen gloves, whilst her ears tingled under her kerchief. But, heedless of all, on she went right down the long hill-side. When she reached the valley she stopped and waited for the others."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "When at last they came in sight she went to meet them."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "It would certainly, she said, be best to turn and go home again, it was quite impossible to get on to Nugord."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "But now Mother was angry and Little-Lad as well. They said to themselves that this young lass was not going to order them about, and say when they were to go forward and when back."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"No,\" said Mother, \"we are not going back to suit you. Since you are so anxious for your Christmas feast, you can just trudge on for it.\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "\"Yes,\" said Little-Lad, \"you can have wind enough blown into you to last you for many a week.\""
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "And with that Mother and Little-Lad began to walk on, leaving Little-Maid to come after as best she might."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "When they came down to Uvgorden they met Gipsy-Lotta and Beggar-Jon. And these two who roamed about the district, week-day and Sunday, in fair and foul weather, put their hands to their mouths like a trumpet, and shouted to them to go home for any sake, or they would be frozen to death down by the cold lake-side."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "Mother and Little-Lad went on, however. They were still angry with Little-Maid, and determined that she should feel right well what sort of weather it was."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "They met Erik of Falla's horse coming along with an empty sledge behind him, for Erik's hat had blown off, and whilst he was running across fields, climbing over fences and creeping along ditches to catch it again, his horse had grown tired of standing in the wind, and trotted off home."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "But Mother and Little-Lad looked as though there was nothing wonderful in that, and trudged on and on. Away they struggled, until they reached the top of Broby Hill. But then they came upon a great crowd of people standing with sledges and horses and unable to get on farther. For the great Broby pine, tall enough to be seen for miles around, had been blown down and lay across the road. And there stood Gullosa-Jan and Kringosa-Britta, who were to have been wedded that day in Bro Church. And there stood old Jan Jansa of Gullosa and old Mother from Kringosa, friends and relatives, Player-Jons and beautiful Gunnar of Hogsjö, and many another who was going to the wedding."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "They shouted and explained that twice before their road had been stopped by overblown trees. Those they had managed to move, but there was no doing anything with this one. And old Father from Gullosa went round offering brandy, but that didn't bring them on any farther. And the bride had got out of her sledge and stood there crying over the difficulties that had barred her way to church. And the wind tore the red muslin roses and green silk leaves from the edge of her dress, so that travellers who, later in the day, came through the parish, could think no other than that the storm-wind had found a wild rose bush in some fairy forest, and carried off its flowers and leaves to scatter them over ditch and field."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "But Mother and Little-Lad did not stop for any pine tree across the road, but crept under and went steadily on. They considered that Little-Maid had not had enough of the storm by a long way yet. And just think; they went on to the cross-roads and Broby inn."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "There they met Madam Samzelius driving along in her covered sledge drawn by two horses. Then indeed they realised what the storm must be, when Madam Samzelius, who never heeded the weather, had a roof above her. She shook her fist at them as she cried, \"Be off home, Marit of Koltorp. What are you doing out with your young ones, when even I have to drive under cover?\""
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "But Mother and Little-Lad thought Little-Maid might still be the better of another buffet or two from the storm-wind."
+    }
+  ]
+}

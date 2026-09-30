@@ -1,0 +1,311 @@
+{
+  "id": "a-happy-boy",
+  "title": "A Happy Boy",
+  "author": "Bjørnstjerne Bjørnson (tr. Rasmus B. Anderson)",
+  "year": "1881",
+  "note": "Project Gutenberg 12633 (tr. Rasmus B. Anderson, per PG). Whole novel, Chapter I–XII (PG l.96–4130), ending on its own line 'Here endeth the story of A Happy Boy.' Title page, the publisher's note, the translator's preface and the transcriber's note out. Double spaces collapsed; songs kept line by line, joined ' / '. The seven song-translation credits dropped; the two glosses kept as Note: lines after their paragraphs. Long paragraphs soft-broken into separate screens; no words changed. Written 1859–60 (translator's preface, l.68); this English edition 1881 (the preface is dated November 1881, l.86–87). PG reading-ease 86.8 — no invented Launch rank. Place: Norway, a mountain-valley farm and parish (the valley is not named). Sits: walk / before sleep. Host intro: A short Norwegian novel written in 1859–60. Oyvind, a cotter's son, loves Marit, a proud farmer's granddaughter, and has to earn his way across the line between them. Spare and bright, with songs. Easy.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Norway",
+      "place": "Chapter I · Norway",
+      "reentry": "His name was Oyvind, and he cried when he was born. But no sooner did he sit up on his mother's lap than he laughed, and when the candle was lit in the evening the room rang with his laughter, but he ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "His name was Oyvind, and he cried when he was born. But no sooner did he sit up on his mother's lap than he laughed, and when the candle was lit in the evening the room rang with his laughter, but he cried when he was not allowed to reach it."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"Something remarkable will come of that boy!\" said the mother."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "A barren cliff, not a very high one, though, overhung the house where he was born; fir and birch looked down upon the roof, the bird-cherry strewed flowers over it. And on the roof was a little goat belonging to Oyvind; it was kept there that it might not wander away, and Oyvind bore leaves and grass up to it. One fine day the goat leaped down and was off to the cliff; it went straight up and soon stood where it had never been before. Oyvind did not see the goat when he came out in the afternoon, and thought at once of the fox. He grew hot all over, and gazing about him, cried,—"
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Killy-killy-killy-killy-goat!\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"Ba-a-a-a!\" answered the goat, from the brow of the hill, putting its head on one side and peering down."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "At the side of the goat there was kneeling a little girl."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Is this goat yours?\" asked she."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Oyvind opened wide his mouth and eyes, thrust both hands into his pants and said,—"
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"Who are you?\""
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"I am Marit, mother's young one, father's fiddle, the hulder of the house, granddaughter to Ola Nordistuen of the Heidegards, four years old in the autumn, two days after the frost nights—I am!\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"Is that who you are?\" cried he, drawing a long breath, for he had not ventured to take one while she was speaking."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"Is this goat yours?\" she again inquired."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"Ye-es!\" replied he, raising his eyes."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"I have taken such a liking to the goat;—you will not give it to me?\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"No, indeed I will not.\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "She lay kicking up her heels and staring down at him, and presently she said: \"But if I give you a twisted bun for the goat, can I have it then?\""
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Oyvind was the son of poor people; he had tasted twisted bun only once in his life, that was when grandfather came to his house, and he had never eaten anything equal to it before or since. He fixed his eyes on the girl."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"Let me see the bun first?\" said he."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "She was not slow in producing a large twisted bun that she held in her hand."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"Here it is!\" cried she, and tossed it down to him."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"Oh! it broke in pieces!\" exclaimed the boy, picking up every fragment with the utmost care. He could not help tasting of the very smallest morsel, and it was so good that he had to try another piece, and before he knew it himself he had devoured the whole bun."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"Now the goat belongs to me,\" said the girl."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "The boy paused with the last morsel in his mouth; the girl lay there laughing, and the goat stood by her side, with its white breast and shining brown hair, giving sidelong glances down."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"Could you not wait a while,\" begged the boy,—his heart beginning to throb. Then the girl laughed more than ever, and hurriedly got up on her knees."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"No, the goat is mine,\" said she, and threw her arms about it, then loosening one of her garters she fastened it around its neck. Oyvind watched her. She rose to her feet and began to tug at the goat; it would not go along with her, and stretched its neck over the edge of the cliff toward Oyvind."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"Ba-a-a-a!\" said the goat."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "Then the little girl took hold of its hair with one hand, pulled at the garter with the other, and said prettily: \"Come, now, goat, you shall go into the sitting-room and eat from mother's dish and my apron.\""
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "And then she sang,—"
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "\"Come, boy's pretty goatie, / Come, calf, my delight, / Come here, mewing pussie, / In shoes snowy white, / Yellow ducks, from your shelter, / Come forth, helter-skelter. / Come, doves, ever beaming, / With soft feathers gleaming! / The grass is still wet, / But sun 't will soon get; / Now call, though early 't is in the summer, / And autumn will be the new-comer.\""
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "There the boy stood."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "He had taken care of the goat ever since winter, when it was born, and it had never occurred to him that he could lose it; but now it was gone in an instant, and he would never see it again."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "The mother came trolling up from the beach, with some wooden pails she had been scouring; she saw the boy sitting on the grass, with his legs crossed under him, crying, and went to him."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "\"What makes you cry?\""
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "\"Oh, my goat—my goat!\""
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "\"Why, where is the goat?\" asked the mother, glancing up at the roof."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "\"It will never come back any more,\" said the boy."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "\"Dear me! how can *that* be?\""
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "Oyvind would not confess at once."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "\"Has the fox carried it off?\""
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "\"Oh, I wish it were the fox!\""
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "\"You must have lost your senses!\" cried the mother. \"What has become of the goat?\""
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "\"Oh—oh—oh! I was so unlucky. I sold it for a twisted bun!\""
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "The moment he uttered the words he realized what it was to sell the goat for a bun; he had not thought about it before. The mother said,—"
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "\"What do you imagine the little goat thinks of you now, since you were willing to sell it for a twisted bun?\""
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "The boy reflected upon this himself, and felt perfectly sure that he never could know happiness more in *this* world—nor in heaven either, he thought, afterwards."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "He was so overwhelmed with sorrow that he promised himself that he would never do anything wrong again,—neither cut the cord of the spinning-wheel, nor let the sheep loose, nor go down to the sea alone. He fell asleep lying there, and he dreamed that the goat had reached heaven. There the Lord was sitting, with a long beard, as in the Catechism, and the goat stood munching at the leaves of a shining tree; but Oyvind sat alone on the roof, and, could get no higher. Then something wet was thrust right against his ear, and he started up. \"Ba-a-a-a!\" he heard, and it was the goat that had returned to him."
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "\"What! have you come back again?\" With these words he sprang up, seized it by the two fore-legs, and danced about with it as if it were a brother. He pulled it by the beard, and was on the point of going in to his mother with it, when he heard some one behind him, and saw the little girl sitting on the greensward beside him. Now he understood the whole thing, and he let go of the goat."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "\"Is it you who have brought the goat?\""
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "She sat tearing up the grass with her hands, and said, \"I was not allowed to keep it; grandfather is up there waiting.\""
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "While the boy stood staring at her, a sharp voice from the road above called, \"Well!\""
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "Then she remembered what she had to do: she rose, walked up to Oyvind, thrust one of her dirt-covered hands into his, and, turning her face away, said, \"I beg your pardon.\""
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "But then her courage forsook her, and, flinging herself on the goat, she burst into tears."
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "\"I believe you had better keep the goat,\" faltered Oyvind, looking away."
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "\"Make haste, now!\" said her grandfather, from the hill; and Marit got up and walked, with hesitating feet, upward."
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "\"You have forgotten your garter,\" Oyvind shouted after her. She turned and bestowed a glance, first on the garter, then on him. Finally she formed a great resolve, and replied, in a choked voice, \"You may keep it.\""
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "He walked up to her, took her by the hand, and said, \"I thank you!\""
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "\"Oh, there is nothing to thank me for,\" she answered, and, drawing a piteous sigh, went on."
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "Oyvind sat down on the grass again, the goat roaming about near him; but he was no longer as happy with it as before."
+    }
+  ]
+}
