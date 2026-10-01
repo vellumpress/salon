@@ -18,6 +18,7 @@ import { shouldShowPreface } from "@/lib/reader-threshold";
 import { FavoriteMark } from "@/components/favorite-mark";
 import { PlaceChip } from "@/components/place-chip";
 import { Hourglass } from "@/components/hourglass";
+import { closedReaderBar, reduceReaderBar, type ReaderBarState } from "@/lib/reader-chrome";
 import { TogetherShell } from "@/components/sitting-room";
 import { estimateRitualMinutes } from "@/lib/catalog/rituals";
 import { shelfWork } from "@/lib/catalog/shelf";
@@ -135,12 +136,13 @@ export function TbrReader({
   const [sendBusy, setSendBusy] = useState(false);
   const [sendResult, setSendResult] = useState<"shared" | "copied" | null>(null);
   const [canShare, setCanShare] = useState(false);
-  const [still, setStill] = useState(true);
+  const [bar, setBar] = useState<ReaderBarState>(closedReaderBar);
+  const still = bar.still;
+  const navReveal = bar.navReveal;
   const [overflows, setOverflows] = useState(false);
   const [atEnd, setAtEnd] = useState(true);
   const [lookbackPx, setLookbackPx] = useState(0);
   const [sandCue, setSandCue] = useState(false);
-  const [navReveal, setNavReveal] = useState(false);
   const [customSit, setCustomSit] = useState("");
   /** threshold: full = length+company; length = pair already set, sit missing; share = invite friend */
   const [gateMode, setGateMode] = useState<"full" | "length" | "share">("full");
@@ -309,7 +311,6 @@ export function TbrReader({
       const crossedScene = Boolean(from && to && from.sceneId !== to.sceneId);
       advanceBreath(work.id, next, { crossedScene });
     } else setBreath(work.id, next);
-    if (!together) setStill(true);
   }
 
   function advance() {
@@ -442,17 +443,16 @@ export function TbrReader({
     const n = Number.parseInt(raw, 10);
     if (!Number.isFinite(n)) return;
     chooseSit(n, restart);
-    setNavReveal(false);
+    closeNavReveal();
   }
 
   function toggleNavReveal() {
-    setStill(false);
     haptic(12);
-    setNavReveal((open) => !open);
+    setBar((state) => reduceReaderBar(state, "hourglass"));
   }
 
   function closeNavReveal() {
-    setNavReveal(false);
+    setBar(closedReaderBar);
   }
 
   function jumpKept(breathId: string) {
@@ -539,20 +539,24 @@ export function TbrReader({
 
   useEffect(() => {
     if (together || overlay !== "none") {
-      setStill(false);
-      setNavReveal(false);
-      return;
+      setBar((state) =>
+        !state.still && !state.navReveal ? state : { still: false, navReveal: false },
+      );
     }
   }, [together, overlay]);
 
   useEffect(() => {
     if (together || overlay !== "none" || still || navReveal) return;
-    let t = window.setTimeout(() => setStill(true), 3200);
+    let t = window.setTimeout(() => {
+      setBar((state) => (state.still ? state : { ...state, still: true }));
+    }, 3200);
     const poke = (event: PointerEvent) => {
       const node = event.target as HTMLElement | null;
       if (!node?.closest(".chrome-fade, .reader-glass, .nav-reveal")) return;
       window.clearTimeout(t);
-      t = window.setTimeout(() => setStill(true), 3200);
+      t = window.setTimeout(() => {
+        setBar((state) => (state.still ? state : { ...state, still: true }));
+      }, 3200);
     };
     window.addEventListener("pointerdown", poke);
     return () => {
@@ -561,20 +565,21 @@ export function TbrReader({
     };
   }, [still, overlay, together, navReveal]);
 
+  // Page / breath taps never open the bar. A tap outside an open bar closes
+  // it and still bubbles so the sentence buttons turn the page.
   useEffect(() => {
-    if (!still || together || overlay !== "none") return;
-    const reveal = (event: PointerEvent) => {
+    if (together || overlay !== "none") return;
+    const onOutside = (event: MouseEvent) => {
       const node = event.target as HTMLElement | null;
-      if (!node?.closest("[data-reader-text]")) return;
-      setStill(false);
-      if (node.closest("[data-turn]")) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
+      if (!node?.closest) return;
+      // Veil controls (Send's Dismiss) stay in the detached sheet for this
+      // click, after the overlay has already closed. They are not page taps.
+      if (node.closest(".chrome-fade, .reader-glass, .nav-reveal, .veil")) return;
+      setBar((state) => reduceReaderBar(state, "page"));
     };
-    window.addEventListener("pointerdown", reveal, true);
-    return () => window.removeEventListener("pointerdown", reveal, true);
-  }, [still, together, overlay]);
+    window.addEventListener("click", onOutside);
+    return () => window.removeEventListener("click", onOutside);
+  }, [together, overlay]);
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -605,7 +610,7 @@ export function TbrReader({
         if (now === "none") keepRef.current();
       } else if (e.key === "Escape") {
         if (navReveal) {
-          setNavReveal(false);
+          setBar(closedReaderBar);
           return;
         }
         if (sandCue) {
@@ -768,6 +773,7 @@ export function TbrReader({
         if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy)) return;
         if (dx < 0) advance();
         else retreat();
+        setBar((state) => reduceReaderBar(state, "page"));
       }}
     >
       <button
@@ -974,7 +980,10 @@ export function TbrReader({
               </label>
             </div>
           ) : null}
-          <footer className="relative z-30 flex shrink-0 items-stretch">
+          <footer
+            className="relative z-30 flex shrink-0 items-stretch"
+            data-reader-bar={still ? "closed" : "open"}
+          >
             <div className="chrome-fade flex min-w-0 flex-1 items-stretch">
             <button
               type="button"
