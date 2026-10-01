@@ -5,6 +5,11 @@ export type Scene = {
   reentry: string;
   prompt: string;
   wash?: string;
+  /**
+   * Optional. A leading scene marked front is skipped on a fresh Sit.
+   * Catalog files do not set this; callers may.
+   */
+  front?: boolean;
 };
 
 export type Breath = {
