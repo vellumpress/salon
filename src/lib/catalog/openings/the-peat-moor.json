@@ -1,0 +1,241 @@
+{
+  "id": "the-peat-moor",
+  "title": "The Peat Moor",
+  "author": "Alexander Kielland",
+  "year": "1891",
+  "note": "Project Gutenberg 8663 (Tales of Two Countries; tr. William Archer, per PG). Host-only Rituals seat — \"The Peat Moor\" only (PG l.1427–1595), from \"High over the heathery wastes flew a wise old raven.\" to \"…to unearth a sow's ear which it had buried.\" The bracketed translator's note on the Norwegian mile kept as a Note: line after its paragraph; double hyphens (and one single hyphen, l.1518) set as em dashes; 'gentlemenly' kept as printed. Boyesen's introduction and the other stories out. EN 1891 (Boyesen's introduction signed 'New York, May 15, 1891'). PG reading-ease 77.1 (for the whole volume) — no invented Launch rank. Place: a peat moor on the Norwegian coast. Sits: before sleep. Host intro: One short story before sleep. A wise old raven, once a manor-house pet with a French phrase or two, flies westward to the last wild peat moor on the Norwegian coast to dig up a sow's ear he buried long ago, and finds men digging out even the ancient roots. Wry and a little sad, and it ends gently.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "The Peat Moor · Norwegian coast",
+      "place": "The Peat Moor · Norwegian coast",
+      "reentry": "High over the heathery wastes flew a wise old raven.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "High over the heathery wastes flew a wise old raven."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "He was bound many miles westward, right out to the sea-coast, to unearth a sow’s ear which he had buried in the good times."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "It was now late autumn, and food was scarce."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "When you see one raven, says Father Brehm, you need only look round to discover a second."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "But you might have looked long enough where this wise old raven came flying; he was, and remained, alone. And without troubling about anything or uttering a sound, he sped on his strong coal-black wings through the dense rain-mist, steering due west."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "But as he flew, evenly and meditatively, his sharp eyes searched the landscape beneath, and the old bird was full of chagrin."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Year by year the little green and yellow patches down there increased in number and size; rood after rood was cut out of the heathery waste, little houses sprang up with red-tiled roofs and low chimneys breathing oily peat-reek. Men and their meddling everywhere!"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "He remembered how, in the days of his youth—several winters ago, of course—this was the very place for a wide-awake raven with a family: long, interminable stretches of heather, swarms of leverets and little birds, eider-ducks on the shore with delicious big eggs, and tidbits of all sorts abundant as heart could desire."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Now he saw house upon house, patches of yellow corn-land and green meadows; and food was so scarce that a gentlemanly old raven had to fly miles and miles for a paltry sow’s ear."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Oh, those men! those men! The old bird knew them."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "He had grown up among men, and, what was more, among the aristocracy. He had passed his childhood and youth at the great house close to the town."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "But now, whenever he passed over the house, he soared high into the air, so as not to be recognized. For when he saw a female figure down in the garden, he thought it was the young lady of the house, wearing powdered hair and a white head-dress; whereas it was in reality her daughter, with snow-white curls and a widow’s cap."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Had he enjoyed his life among the aristocracy? Oh, that’s as you please to look at it. There was plenty to eat and plenty to learn; but, after all, it was captivity. During the first years his left wing was clipped, and afterwards, as his old master used to say, he was upon *parole d’honneur*."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "This parole he had broken one spring when a glossy-black young she-raven happened to fly over the garden."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "Some time afterwards—a few winters had slipped away—he came back to the house. But some strange boys threw stones at him; the old master and the young lady were not at home."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "“No doubt they are in town,” thought the old raven; and he came again some time later. But he met with just the same reception."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Then the gentlemenly old bird—for in the meantime he had grown old—felt hurt, and now he flew high over the house. He would have nothing more to do with men, and the old master and the young lady might look for him as long as they pleased. That they did so he never doubted."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "And he forgot all that he had learned, both the difficult French words which the young lady taught him in the drawing-room, and the incomparably easier expletives which he had picked up on his own account in the servants’ hall."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "Only two human sounds clung to his memory, the last relics of his vanished learning. When he was in a thoroughly good humor, he would often say, “Bonjour, madame!” But when he was angry, he shrieked, “Go to the devil!”"
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Through the dense rain-mist he sped swiftly and unswervingly; already he saw the white wreath of surf along the coast. Then he descried a great black waste stretching out beneath him. It was a peat moor."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "It was encircled with farms on the heights around; but on the low plain—it must have been over a mile long—there was no trace of human meddling; only a few stacks of peat on the outskirts, with black hummocks and gleaming water-holes between them."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "Note: One Norwegian mile is equal to seven English miles."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "“Bonjour, madame!” cried the old raven, and began to wheel in great circles over the moor. It looked so inviting that he settled downward, slowly and warily, and alighted upon a tree-root in the midst of it."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "Here it was just as in the old days—a silent wilderness. On some scattered patches of drier soil there grew a little short heather and a few clumps of rushes. They were withered; but on their stiff stems there still hung one or two tufts—black, and sodden by the autumn rain. For the most part the soil was fine, black, and crumbling—wet and full of water-holes. Gray and twisted tree-roots stuck up above the surface, interlaced like a gnarled net-work."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "The old raven well understood all that he saw. There had been trees here in the old times, before even his day."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "The wood had disappeared; branches, leaves, everything was gone. Only the tangled roots remained, deep down in the soft mass of black fibres and water."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "But further than this, change could not possibly go; so it must endure, and here, at any rate, men would have to stint their meddling."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "The old bird held himself erect. The farms lay so far away that he felt securely at home, here in the middle of the bottomless morass. One relic, at least, of antiquity must remain undisturbed. He smoothed his glossy black feathers, and said several times, “Bonjour, madame!”"
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "But down from the nearest farm came a couple of men with a horse and cart; two small boys ran behind. They took a crooked course among the hummocks, but made as though to cross the morass."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "“They must soon stop,” thought the raven."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "But they drew nearer and nearer; the old bird turned his head uneasily from side to side; it was strange that they should venture so far out."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "At last they stopped, and the men set to work with spades and axes. The raven could see that they were struggling with a huge root which they wanted to loosen."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "“They will soon tire of that,” thought the raven."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "But they did not tire, they hacked with their axes—the sharpest the raven had ever seen—they dug and hauled, and at last they actually got the huge stem turned over on its side, so that the whole tough net-work of roots stood straight up in the air."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "The small boys wearied of digging canals between the water-holes. “Look at that great big crow over there,” said one of them."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "They armed themselves with a stone in each hand, and came sneaking forward behind the hummocks."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "The raven saw them quite well. But that was not the worst thing it saw."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "Not even out on the morass was antiquity to be left in peace. He had now seen that even the gray tree-roots, older than the oldest raven, and firmly inwoven into the deep, bottomless morass—that even they had to yield before the sharp axes."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "And when the boys had got so near that they were on the point of opening fire, he raised his heavy wings and soared aloft."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "But as he rose into the air and looked down upon the toiling men and the stupid boys, who stood gaping at him with a stone in each hand, a great wrath seized the old bird."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "He swooped down upon the boys like an eagle, and while his great wings flounced about their ears, he shrieked in a terrible voice, “Go to the devil!”"
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "The boys gave a yell and threw themselves down upon the ground. When they presently ventured to look up again, all was still and deserted as before. Far away, a solitary blackbird winged to the westward."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "But till they grew to be men—aye, even to their dying day—they were firmly convinced that the Evil One himself had appeared to them out on the black morass, in the form of a monstrous black bird with eyes of fire."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "But it was only an old raven, flying westward to unearth a sow’s ear which it had buried."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "id": "doom-castle",
+  "title": "Doom Castle",
+  "author": "Neil Munro",
+  "year": "1901",
+  "note": "Project Gutenberg 21333. Whole novel, Chapter I–XLI (PG l.140–10606), each labelled 'Chapter n · <title>' with the printed heads set in sentence case. Produced-by credit, title page, copyright line and contents out. Three print slips mended ('dul-ness', 'his, austere', one 'Montàiglon'); 'gamingtables' kept as printed. Gaelic, Scots and French words kept in italics; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. 1901 (PG text: 'Copyright, 1900, 1901, by Doubleday, Page & Co.'). PG reading-ease 76.0 — no invented Launch rank. Place: Argyll, the Scottish Highlands. Sits: commute / unwind. Host intro: The Scottish Highlands in the 1750s, on the shores of Argyll. Count Victor, a Frenchman from Paris, rides alone into the silent glens, is chased by robbers for his silver lace, and lands in a crumbling castle full of secrets and a spy plot round the Duke of Argyll. A chase with wry comedy in the middle of it; the Frenchman's view of the Highlanders is his, not the book's last word.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Count Victor comes to a strange country · Argyll, Scottish Highlands",
+      "place": "Chapter I · Count Victor comes to a strange country · Argyll, Scottish Highlands",
+      "reentry": "It was an afternoon in autumn, with a sound of wintry breakers on the shore, the tall woods copper-colour, the thickets dishevelled, and the nuts, in the corries of Ardkinglas, the braes of Ardno, dro",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was an afternoon in autumn, with a sound of wintry breakers on the shore, the tall woods copper-colour, the thickets dishevelled, and the nuts, in the corries of Ardkinglas, the braes of Ardno, dropping upon bracken burned to gold. Until he was out of the glen and into the open land, the traveller could scarcely conceive that what by his chart was no more than an arm of the ocean could make so much ado; but when he found the incoming tide fretted here and there by black rocks, and elsewhere, in little bays, the beaches strewn with massive boulders, the high rumour of the sea-breakers in that breezy weather seemed more explicable. And still, for him, it was above all a country of appalling silence in spite of the tide thundering."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Fresh from the pleasant rabble of Paris, the tumult of the streets, the unending gossip of the faubourgs that were at once his vexation and his joy, and from the eager ride that had brought him through Normandy when its orchards were busy from morning till night with cheerful peasants plucking fruit, his ear had not grown accustomed to the still of the valleys, the terrific hush of the mountains, in whose mist or sunshine he had ridden for two days. The woods, with leaves that fell continually about him, seemed in some swoon of nature, with no birds carolling on the boughs; the cloisters were monastic in their silence. A season of most dolorous influences, a land of sombre shadows and ravines, a day of sinister solitude; the sun slid through scudding clouds, high over a world blown upon by salt airs brisk and tonic, but man was wanting in those weary valleys, and the heart of Victor Jean, Comte de Montaiglon, was almost sick for very loneliness."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Thus it came as a relief to his ear, the removal of an oppression little longer to be endured, when he heard behind him what were apparently the voices of the odd-looking uncouth natives he had seen a quarter of an hour ago lurking, silent but alert and peering, phantoms of old story rather than humans, in the fir-wood near a defile made by a brawling cataract. They had wakened no suspicions in his mind. It was true they were savage-looking rogues in a ragged plaid-cloth of a dull device, and they carried arms he had thought forbidden there by law. To a foreigner fresh from gentle lands there might well be a menace in their ambuscade, but he had known men of their race, if not of so savage an aspect, in the retinues of the Scots exiles who hung about the side-doors of Saint Germains, passed mysterious days between that domicile of tragic comedy and Avignon or Rome, or ruffled it on empty pockets at the gamingtables, so he had no apprehension. Besides, he was in the country of the Argyll, at least on the verge of it, a territory accounted law-abiding even to dulness by every Scot he had known since he was a child at Cammercy, and snuff-strewn conspirators, come to meet his uncles, took him on their knees when a lull in the cards or wine permitted, and recounted their adventures for his entertainment in a villainous French: he could not guess that the gentry in the wood behind him had taken a fancy to his horse, that they were broken men (as the phrase of the country put it), and that when he had passed them at the cataract—a haughty, well-setup *duine uasail* all alone with a fortune of silk and silver lace on his apparel and the fob of a watch dangling at his groin most temptingly—they had promptly put a valuation upon himself and his possessions, and decided that the same were sent by Providence for their enrichment."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Ten of them ran after him clamouring loudly to give the impression of larger numbers; he heard them with relief when oppressed by the inhuman solemnity of the scenery that was too deep in its swoon to give back even an echo to the breaker on the shore, and he drew up his horse, turned his head a little and listened, flushing with annoyance when the rude calls of his pursuers became, even in their unknown jargon, too plainly peremptory and meant for him."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "“Dogs!” said he, “I wish I had a chance to open school here and teach manners,” and without more deliberation he set his horse to an amble, designed to betray neither complacency nor a poltroon's terrors."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "“*Stad! stad!*” cried a voice closer than any of the rest behind him; he knew what was ordered by its accent, but no Montaiglon stopped to an insolent summons. He put the short rowels to the flanks of the sturdy lowland pony he bestrode, and conceded not so little as a look behind."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "There was the explosion of a bell-mouthed musket, and something smote the horse spatteringly behind the rider's left boot. The beast swerved, gave a scream of pain, fell lumberingly on its side. With an effort, Count Victor saved himself from the falling body and clutched his pistols. For a moment he stood bewildered at the head of the suffering animal. The pursuing shouts had ceased. Behind him, short hazel-trees clustering thick with nuts, reddening bramble, and rusty bracken, tangled together in a coarse rank curtain of vegetation, quite still and motionless (but for the breeze among the upper leaves), and the sombre distance, dark with pine, had the mystery of a vault. It was difficult to believe his pursuers harboured there, perhaps reloading the weapon that had put so doleful a conclusion to his travels with the gallant little horse he had bought on the coast of Fife. That silence, that prevailing mystery, seemed to be the essence and the mood of this land, so different from his own, where laughter was ringing in the orchards and a myriad towns and clamant cities brimmed with life."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Nobody who had acquaintance with Victor de Montaiglon would call him coward. He had fought with De Grammont, and brought a wound from Dettingen under circumstances to set him up for life in a repute for valour, and half a score of duels were at his credit or discredit in the chronicles of Paris society."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "And yet, somehow, standing there in an unknown country beside a brute companion wantonly struck down by a robber's shot, and the wood so still around, and the thundering sea so unfamiliar, he felt vastly uncomfortable, with a touch of more than physical apprehension. If the enemy would only manifest themselves to the eye and ear as well as to the unclassed senses that inform the instinct, it would be much more comfortable. Why did they not appear? Why did they not follow up their assault upon his horse? Why were they lurking in the silence of the thicket, so many of them, and he alone and so obviously at their mercy? The pistols he held provided the answer."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "“What a rare delicacy!” said Count Victor, applying himself to the release of his mail from the saddle whereto it was strapped. “They would not interrupt my regretful tears. But for the true élan of the trade of robbery, give me old Cartouche picking pockets on the Pont Neuf.”"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "While he loosened the bag with one hand, with the other he directed at the thicket one of the pistols that seemed of such wholesome influence. Then he slung the bag upon his shoulder and encouraged the animal to get upon its legs, but vainly, for the shot was fatal."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "“Ah!” said he regretfully, “I must sacrifice my bridge and my good comrade. This is an affair!”"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Twice—three times, he placed the pistol at the horse's head and as often withdrew it, reluctant, a man, as all who knew him wondered at, gentle to womanliness with a brute, though in a cause against men the most bitter and sometimes cruel of opponents."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "A rustle in the brake at last compelled him. “Allons!” said he impatiently with himself, “I do no more than I should have done with me in the like case,” and he pulled the trigger."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "Then having deliberately charged the weapon anew, he moved off in the direction he had been taking when the attack was made."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "It was still, he knew, some distance to the castle. Half an hour before his rencontre with those broken gentry, now stealing in his rear with the cunning and the bloodthirstiness of their once native wolves (and always, remember, with the possibility of the blunderbuss for aught that he could tell), he had, for the twentieth time since he left the port of Dysart, taken out the rude itinerary, written in ludicrous Scoto-English by Hugh Bethune, one time secretary to the Lord Marischal in exile, and read:—"
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "... and so on to the Water of Leven (the brewster-wife at the howff near Loch Lomond mouth keeps a good glass of *aqua*) then by Luss (with an eye on the Gregarach), there after a bittock to Glencroe and down upon the House of Ardkinglas, a Hanoverian rat whom 'ware. Round the loch head and three miles further the Castle o' the Baron. Give him my devoirs and hopes to challenge him to a Bowl when Yon comes off which God kens there seems no hurry."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "By that showing the castle of Baron Lamond must be within half an hour's walk of where he now moved without show of eagerness, yet quickly none the less, from a danger the more alarming because the extent of it could not be computed."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "In a little the rough path he followed bent parallel with the sea. A tide at the making licked ardently upon sand-spits strewn with ware, and at the forelands, overhung by harsh and stunted seaside shrubs, the breakers rose tumultuous. On the sea there was utter vacancy; only a few screaming birds slanted above the wave, and the coast, curving far before him, gave his eye no sign at first of the castle to which he had got the route from M. Hugh Bethune."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Then his vision, that had been set for something more imposing, for the towers and embrasures of a stately domicile, if not for a Chantilly, at least for the equal of the paternal château in the Meuse valley, with multitudinous chimneys and the incense of kind luxuriant hearths, suave parks, gardens, and gravelled walks, contracted with dubiety and amazement upon a dismal tower perched upon a promontory."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Revealed against the brown hills and the sombre woods of the farther coast, it was scarcely a wonder that his eye had failed at first to find it. Here were no pomps of lord or baron; little luxuriance could prevail behind those eyeless gables; there could be no suave pleasance about those walls hanging over the noisy and inhospitable wave. No pomp, no pleasant amenities; the place seemed to jut into the sea, defying man's oldest and most bitter enemy, its gable ends and one crenelated bastion or turret betraying its sinister relation to its age, its whole aspect arrogant and unfriendly, essential of war. Caught suddenly by the vision that swept the fretted curve of the coast, it seemed blackly to perpetuate the spirit of the land, its silence, its solitude and terrors."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "These reflections darted through the mind of Count Victor as he sped, monstrously uncomfortable with the burden of the bag that bobbed on his back, not to speak of the indignity of the office. It was not the kind of castle he had looked for, but a castle, in the narrow and squalid meaning of a penniless refugee like Bethune, it doubtless was, the only one apparent on the landscape, and therefore too obviously the one he sought."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "“Very well, God is good!” said Count Victor, who, to tell all and leave no shred of misunderstanding, was in some regards the frankest of pagans, and he must be jogging on for its security."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "But as he hurried, the ten broken men who had been fascinated by his too ostentatious fob and the extravagance of his embroidery, and inspired furthermore by a natural detestation of any foreign *duine uasail* apparently bound for the seat of MacCailen Mor, gathered boldness, and soon he heard the thicket break again behind him."
+    }
+  ]
+}
